@@ -5,12 +5,12 @@
  -------- | ----- 
  Total Files | 1229
 [ Handoff Failed Files ](#handoff-failed-list)| 2
-[ Handoff Success Files ](#handoff-success-list)| 996
+[ Handoff Success Files ](#handoff-success-list)| 989
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 6
+[ In Sync Handback Files ](#insync-handback-success-list)| 13
 [ Ignored Files ](#ignored-list)| 225
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -481,9 +481,7 @@
  [InTuneDocs\includes\accessibility10_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility10_md.md) | HandedOffSuccess | [Details](#bd86629f830d9cea39e290305cd10032efb8cc55528)
  [InTuneDocs\includes\accessibility11.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11.md) | HandedOffSuccess | [Details](#d2d2c4f3fbe181d1d8adcec1667b30b3a1b7719d541)
  [InTuneDocs\includes\accessibility11_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11_md.md) | HandedOffSuccess | [Details](#b6835d4d9c12000dbf0c7cff2f1468832aeca9ad542)
- [InTuneDocs\includes\accessibility11-a.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-a.md) | HandedOffSuccess | [Details](#18bb09579287c7c558485362790a89212fdead13529)
  [InTuneDocs\includes\accessibility11-a_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-a_md.md) | HandedOffSuccess | [Details](#3d58defb5b2334d6b039085ad024d097fb3629e0530)
- [InTuneDocs\includes\accessibility11-b.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-b.md) | HandedOffSuccess | [Details](#ceba79bcc1d750e82a97db2ecd4e267b7005430d531)
  [InTuneDocs\includes\accessibility11-b_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-b_md.md) | HandedOffSuccess | [Details](#9f2c5a213db0c9124bbec8641f0d860f9a2225fe532)
  [InTuneDocs\includes\accessibility11-c.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-c.md) | HandedOffSuccess | [Details](#ca8f47caac0f2a1744ca4f85426bb068faad40c8533)
  [InTuneDocs\includes\accessibility11-d.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-d.md) | HandedOffSuccess | [Details](#82375cf4028a8e505aaed37746ee881784655804535)
@@ -494,13 +492,10 @@
  [InTuneDocs\includes\accessibility11-f_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-f_md.md) | HandedOffSuccess | [Details](#6722b74ba9ab0dcb5a0fb74121f4c2c53b44a9f3540)
  [InTuneDocs\includes\accessibility12.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility12.md) | HandedOffSuccess | [Details](#bf20d3df144eed21166ea7235e9e3f1a45cbc7cd543)
  [InTuneDocs\includes\accessibility12_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility12_md.md) | HandedOffSuccess | [Details](#6a53bb33f107679e333a9728c8e709f47a2a0cbe544)
- [InTuneDocs\includes\accessibility13.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility13.md) | HandedOffSuccess | [Details](#d64ab436a4fd522c988668574a966d76c2ed7bb6545)
  [InTuneDocs\includes\accessibility13_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility13_md.md) | HandedOffSuccess | [Details](#dc9a83c3b47b21b3a38bfa737ad97aa992eb11a6546)
- [InTuneDocs\includes\accessibility14.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility14.md) | HandedOffSuccess | [Details](#34b72160db4cc4964cecd827a3a564001a57e2e2547)
  [InTuneDocs\includes\accessibility14_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility14_md.md) | HandedOffSuccess | [Details](#a94c8709ede3ec7fbfced448ab01b04dd7352371548)
  [InTuneDocs\includes\accessibility15.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility15.md) | HandedOffSuccess | [Details](#abe200b5848d30d96b4cddf5a01b021b3ab5dac9549)
  [InTuneDocs\includes\accessibility15_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility15_md.md) | HandedOffSuccess | [Details](#d589c3627a9794bcaaf3f92c795576604374af7a550)
- [InTuneDocs\includes\accessibility16.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility16.md) | HandedOffSuccess | [Details](#9052b406bb1f59ee9e9d493b21756da8ea385475551)
  [InTuneDocs\includes\accessibility16_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility16_md.md) | HandedOffSuccess | [Details](#74eb5b1b7f0162c783145dfd7e1134b794448176552)
  [InTuneDocs\includes\accessibility17.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility17.md) | HandedOffSuccess | [Details](#004701452c79f4fb9996428c23597ae459da71d9553)
  [InTuneDocs\includes\accessibility17_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility17_md.md) | HandedOffSuccess | [Details](#ec300e64342ef3c9f5e340088eee2046e1897bb8554)
@@ -541,7 +536,6 @@
  [InTuneDocs\includes\nextref_client_7_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_client_7_md.md) | HandedOffSuccess | [Details](#5a88e825af76116076861b06d70cbaa235c21980591)
  [InTuneDocs\includes\nextref_server_7.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_server_7.md) | HandedOffSuccess | [Details](#402065bc55a9ab0d65c464cf0f29bd75c40dfb7a592)
  [InTuneDocs\includes\nextref_server_7_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_server_7_md.md) | HandedOffSuccess | [Details](#4cbb5695d57f7e07523eab7e4db7a7c8f05a0bcc593)
- [InTuneDocs\includes\nextref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_vista.md) | HandedOffSuccess | [Details](#0e0d453a927f125a58d1b307ba93e97993ed8a9c594)
  [InTuneDocs\includes\sccmshortname.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/sccmshortname.md) | HandedOffSuccess | [Details](#cad3187986387bfe5f86110f478472b563645089596)
  [InTuneDocs\includes\sccmshortname_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/sccmshortname_md.md) | HandedOffSuccess | [Details](#20a783276163d706389339c9aac1f842a67b9530597)
  [InTuneDocs\includes\sco_dm_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/sco_dm_2.md) | HandedOffSuccess | [Details](#fc2812773cc47aea0a10db21ce53670c3a0dd87c598)
@@ -573,7 +567,6 @@
  [InTuneDocs\includes\wit_icp_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_icp_2.md) | HandedOffSuccess | [Details](#bce3f1e2a789f94fb10243094b3d779fde464233624)
  [InTuneDocs\includes\wit_icp_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_icp_2_md.md) | HandedOffSuccess | [Details](#c3427869b1071ba8d679362c29b3918c1b65cf70625)
  [InTuneDocs\includes\wit_iwportal_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_1.md) | HandedOffSuccess | [Details](#abe8d8c9c6a458e6695a008b37b6339f354c0911626)
- [InTuneDocs\includes\wit_iwportal_1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_1_md.md) | HandedOffSuccess | [Details](#f034b6b5261956e629cc7368e51c7dbb1d355ba9627)
  [InTuneDocs\includes\wit_iwportal_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_2.md) | HandedOffSuccess | [Details](#a135ff34ca5c676bc4ee7640fa49d7e95da4170e628)
  [InTuneDocs\includes\wit_iwportal_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_2_md.md) | HandedOffSuccess | [Details](#a02631ded74ee9e772dae5142675a9493b653577629)
  [InTuneDocs\includes\wit_nextref.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_nextref.md) | HandedOffSuccess | [Details](#eb4b64a8db5b5bb2eea586ca46d0c3f6da4eac88630)
@@ -1031,9 +1024,16 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [InTuneDocs\includes\accessibility1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility1_md.md) | InSyncHandedBackSuccess | [Details](#1b484f283bacee97d6a181351aeef2a6366d0943555)
+ [InTuneDocs\includes\accessibility11-a.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-a.md) | InSyncHandedBackSuccess | [Details](#18bb09579287c7c558485362790a89212fdead13529)
+ [InTuneDocs\includes\accessibility11-b.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-b.md) | InSyncHandedBackSuccess | [Details](#ceba79bcc1d750e82a97db2ecd4e267b7005430d531)
  [InTuneDocs\includes\accessibility11-c_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-c_md.md) | InSyncHandedBackSuccess | [Details](#c58380143deb78c0f9405620f2ef78bffd072441534)
+ [InTuneDocs\includes\accessibility13.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility13.md) | InSyncHandedBackSuccess | [Details](#d64ab436a4fd522c988668574a966d76c2ed7bb6545)
+ [InTuneDocs\includes\accessibility14.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility14.md) | InSyncHandedBackSuccess | [Details](#34b72160db4cc4964cecd827a3a564001a57e2e2547)
+ [InTuneDocs\includes\accessibility16.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility16.md) | InSyncHandedBackSuccess | [Details](#9052b406bb1f59ee9e9d493b21756da8ea385475551)
  [InTuneDocs\includes\accessibility3.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility3.md) | InSyncHandedBackSuccess | [Details](#def903812590af80e8c3368a1849c03f826ddd1f558)
+ [InTuneDocs\includes\nextref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_vista.md) | InSyncHandedBackSuccess | [Details](#0e0d453a927f125a58d1b307ba93e97993ed8a9c594)
  [InTuneDocs\includes\nextref_vista_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_vista_md.md) | InSyncHandedBackSuccess | [Details](#44e64345682fc26ddae6f1bc70290bd2bf84369d595)
+ [InTuneDocs\includes\wit_iwportal_1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_1_md.md) | InSyncHandedBackSuccess | [Details](#f034b6b5261956e629cc7368e51c7dbb1d355ba9627)
  [InTuneDocs\includes\wit_tools.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_tools.md) | InSyncHandedBackSuccess | [Details](#a5449ddcc028ac379a4e6bbaff0432e8968879ec633)
  [InTuneDocs\includes\wps_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wps_2.md) | InSyncHandedBackSuccess | [Details](#e9096a16bdd11b30f840ceba6f1cb16bd4cf25e8635)
 
@@ -7839,15 +7839,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='18bb09579287c7c558485362790a89212fdead13529'></a> Source: [InTuneDocs\includes\accessibility11-a.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-a.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\accessibility11-a.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/5e93b83ffc6190fe557c7b58cc45f40428ac1230/InTuneDocs/includes/accessibility11-a.md)
 * Handoff File: [accessibility11-a.a97a53f42a651378ee87f80ca8acbc181af0a468.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility11-a.a97a53f42a651378ee87f80ca8acbc181af0a468.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [accessibility11-a.a97a53f42a651378ee87f80ca8acbc181af0a468.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/2a4fba136359f1c5409b88bd1f4360124845ce94/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility11-a.a97a53f42a651378ee87f80ca8acbc181af0a468.tr-tr.xlf)
+* Handback Datetime: 2016-05-24 05:23:13
 * [Back to Top](#report-top)
 
 ##### <a name='3d58defb5b2334d6b039085ad024d097fb3629e0530'></a> Source: [InTuneDocs\includes\accessibility11-a_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-a_md.md)
@@ -7863,15 +7863,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='ceba79bcc1d750e82a97db2ecd4e267b7005430d531'></a> Source: [InTuneDocs\includes\accessibility11-b.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-b.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\accessibility11-b.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/5e93b83ffc6190fe557c7b58cc45f40428ac1230/InTuneDocs/includes/accessibility11-b.md)
 * Handoff File: [accessibility11-b.fa15bfe84e5b8e09518d5e418376602f8717cae3.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility11-b.fa15bfe84e5b8e09518d5e418376602f8717cae3.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [accessibility11-b.fa15bfe84e5b8e09518d5e418376602f8717cae3.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/2a4fba136359f1c5409b88bd1f4360124845ce94/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility11-b.fa15bfe84e5b8e09518d5e418376602f8717cae3.tr-tr.xlf)
+* Handback Datetime: 2016-05-24 05:23:13
 * [Back to Top](#report-top)
 
 ##### <a name='9f2c5a213db0c9124bbec8641f0d860f9a2225fe532'></a> Source: [InTuneDocs\includes\accessibility11-b_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility11-b_md.md)
@@ -8007,15 +8007,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='d64ab436a4fd522c988668574a966d76c2ed7bb6545'></a> Source: [InTuneDocs\includes\accessibility13.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility13.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\accessibility13.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/5e93b83ffc6190fe557c7b58cc45f40428ac1230/InTuneDocs/includes/accessibility13.md)
 * Handoff File: [accessibility13.e919c7473701c1d843afbe2776a58619c80c973e.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility13.e919c7473701c1d843afbe2776a58619c80c973e.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [accessibility13.e919c7473701c1d843afbe2776a58619c80c973e.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/2a4fba136359f1c5409b88bd1f4360124845ce94/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility13.e919c7473701c1d843afbe2776a58619c80c973e.tr-tr.xlf)
+* Handback Datetime: 2016-05-24 05:23:13
 * [Back to Top](#report-top)
 
 ##### <a name='dc9a83c3b47b21b3a38bfa737ad97aa992eb11a6546'></a> Source: [InTuneDocs\includes\accessibility13_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility13_md.md)
@@ -8031,15 +8031,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='34b72160db4cc4964cecd827a3a564001a57e2e2547'></a> Source: [InTuneDocs\includes\accessibility14.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility14.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\accessibility14.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/5e93b83ffc6190fe557c7b58cc45f40428ac1230/InTuneDocs/includes/accessibility14.md)
 * Handoff File: [accessibility14.ca1f57707e6f88c6c78b2e361b691a16f8aa91d8.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility14.ca1f57707e6f88c6c78b2e361b691a16f8aa91d8.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [accessibility14.ca1f57707e6f88c6c78b2e361b691a16f8aa91d8.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/2a4fba136359f1c5409b88bd1f4360124845ce94/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility14.ca1f57707e6f88c6c78b2e361b691a16f8aa91d8.tr-tr.xlf)
+* Handback Datetime: 2016-05-24 05:23:13
 * [Back to Top](#report-top)
 
 ##### <a name='a94c8709ede3ec7fbfced448ab01b04dd7352371548'></a> Source: [InTuneDocs\includes\accessibility14_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility14_md.md)
@@ -8079,15 +8079,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='9052b406bb1f59ee9e9d493b21756da8ea385475551'></a> Source: [InTuneDocs\includes\accessibility16.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility16.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\accessibility16.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/5e93b83ffc6190fe557c7b58cc45f40428ac1230/InTuneDocs/includes/accessibility16.md)
 * Handoff File: [accessibility16.17d771f055df8f502108b4deb92b885cd671d3a0.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility16.17d771f055df8f502108b4deb92b885cd671d3a0.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [accessibility16.17d771f055df8f502108b4deb92b885cd671d3a0.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/2a4fba136359f1c5409b88bd1f4360124845ce94/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/accessibility16.17d771f055df8f502108b4deb92b885cd671d3a0.tr-tr.xlf)
+* Handback Datetime: 2016-05-24 05:23:13
 * [Back to Top](#report-top)
 
 ##### <a name='74eb5b1b7f0162c783145dfd7e1134b794448176552'></a> Source: [InTuneDocs\includes\accessibility16_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility16_md.md)
@@ -8583,15 +8583,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='0e0d453a927f125a58d1b307ba93e97993ed8a9c594'></a> Source: [InTuneDocs\includes\nextref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_vista.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\nextref_vista.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/5e93b83ffc6190fe557c7b58cc45f40428ac1230/InTuneDocs/includes/nextref_vista.md)
 * Handoff File: [nextref_vista.a273a6621b667e77255b0628bbc2e3d20d67a6e8.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/nextref_vista.a273a6621b667e77255b0628bbc2e3d20d67a6e8.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [nextref_vista.a273a6621b667e77255b0628bbc2e3d20d67a6e8.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/2a4fba136359f1c5409b88bd1f4360124845ce94/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/nextref_vista.a273a6621b667e77255b0628bbc2e3d20d67a6e8.tr-tr.xlf)
+* Handback Datetime: 2016-05-24 05:23:13
 * [Back to Top](#report-top)
 
 ##### <a name='44e64345682fc26ddae6f1bc70290bd2bf84369d595'></a> Source: [InTuneDocs\includes\nextref_vista_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_vista_md.md)
@@ -8979,15 +8979,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='f034b6b5261956e629cc7368e51c7dbb1d355ba9627'></a> Source: [InTuneDocs\includes\wit_iwportal_1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_1_md.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\wit_iwportal_1_md.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/5e93b83ffc6190fe557c7b58cc45f40428ac1230/InTuneDocs/includes/wit_iwportal_1_md.md)
 * Handoff File: [wit_iwportal_1_md.3ae2351f05353a5d3b020c807fa87c9fd0d6c573.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/wit_iwportal_1_md.3ae2351f05353a5d3b020c807fa87c9fd0d6c573.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [wit_iwportal_1_md.3ae2351f05353a5d3b020c807fa87c9fd0d6c573.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/2a4fba136359f1c5409b88bd1f4360124845ce94/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/wit_iwportal_1_md.3ae2351f05353a5d3b020c807fa87c9fd0d6c573.tr-tr.xlf)
+* Handback Datetime: 2016-05-24 05:23:13
 * [Back to Top](#report-top)
 
 ##### <a name='a135ff34ca5c676bc4ee7640fa49d7e95da4170e628'></a> Source: [InTuneDocs\includes\wit_iwportal_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_2.md)
