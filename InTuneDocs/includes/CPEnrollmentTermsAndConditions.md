@@ -1,0 +1,5 @@
+<Token xmlns:xlink="http://www.w3.org/1999/xlink"><maml:para address="BKMK_TAC" xmlns:maml="http://ddue.schemas.microsoft.com/authoring/2003/5"> <maml:embeddedLabel>Hüküm ve Koşulları Ayarlama</maml:embeddedLabel> <maml:br/>Kullanıcılarınızın şirket portalını herhangi bir cihazdan (cihazın kayıtlı olup olmadığına bakılmaksızın) ilk kez kullandığında göreceği hüküm ve koşullar yayımlayabilirsiniz. Kullanıcılar portala erişmek için söz konusu hükümleri kabul etmek zorundadır.  Hüküm ve koşullarda önemli güncelleştirmeleri yaptığınızda kullanıcıların bunları görüp kabul etmesini isterseniz, yeni hüküm ve koşulları yeni sürüm olarak işaretleyebilirsiniz; böylece kullanıcılar portalı ziyaret ettikleri bir sonraki durumda aynı işlemden geçer.  </maml:para><maml:para xmlns:maml="http://ddue.schemas.microsoft.com/authoring/2003/5"><maml:externalLink><maml:linkText>Microsoft Intune yönetim konsolunda</maml:linkText><maml:linkUri>http://manage.microsoft.com</maml:linkUri></maml:externalLink> <maml:embeddedLabel>Şirket Portalı</maml:embeddedLabel> &gt; <maml:embeddedLabel>Hüküm ve Koşullar</maml:embeddedLabel>’a tıklayın.</maml:para></Token>
+
+<!--HONumber=May16_HO2-->
+
+

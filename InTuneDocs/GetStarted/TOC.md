@@ -1,35 +1,45 @@
-# [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
+# [Anlama ve Keşfetme](/intune/understand-explore/introduction-to-microsoft-intune)
 
-# [Get Started](what-to-know-before-you-start-microsoft-intune.md)
-## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
-### [Supported web browsers](supported-web-browsers.md)
-### [Network infrastructure requirements](network-infrastructure-requirements-for-microsoft-intune.md)
-### [Administrative accounts, websites, and permissions](administrative-accounts-websites-perms.md)
-### [Company Portal](microsoft-intune-company-portal.md)
-### [Integration with Microsoft cloud services and products](integration-with-cloud-services.md)
-### [Network bandwidth usage](network-bandwidth-use.md)
-### [Domain names](domain-names-for-microsoft-intune.md)
+# [Başlat](what-to-know-before-you-start-microsoft-intune.md)
+## [Başlamadan önce bilmeniz gerekenler](what-to-know-before-you-start-microsoft-intune.md)
+### [Desteklenen web tarayıcıları](supported-web-browsers.md)
+### [Ağ altyapısı gereksinimleri](network-infrastructure-requirements-for-microsoft-intune.md)
+### [Yönetim hesapları, web siteleri ve izinler](administrative-accounts-websites-perms.md)
+### [Şirket Portalı](microsoft-intune-company-portal.md)
+### [Microsoft bulut hizmetleri ve ürünleriyle tümleştirme](integration-with-cloud-services.md)
+### [Ağ bant genişliği kullanımı](network-bandwidth-use.md)
+### [Etki alanı adları](domain-names-for-microsoft-intune.md)
 
-## [Start with a paid subscription](start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
-### [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
-### [Organize users and devices](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
-### [Create policies and publish an app](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
-### [Customize the Company Portal](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Enroll mobile devices & install an app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
-### [Post configuration tasks](post-configuration-tasks.md)
+## [Intune hızlı başlangıç kılavuzu](start-with-a-paid-subscription-to-microsoft-intune.md)
+### [Intune'da oturum açma](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
+### [Özel bir etki alanı adı yapılandırma](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [AD’yi eşitleme ve kullanıcıları ekleme](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
+### [Intune lisanslarını yönetme](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Kullanıcıları ve cihazları düzenleme](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
+### [İlke oluşturma ve uygulama yayımlama](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
+### [Şirket Portalı'nı özelleştirme](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
+### [Mobil cihazları kaydetme ve uygulama yükleme](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Yapılandırma sonrası görevleri](post-configuration-tasks.md)
 
+<!--
+## [Choose how to manage devices](choose-how-to-manage-devices.md)
+### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md)
+-->
 
-## [Rollout phases for Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
-### [Project scope](project-scope.md)
-### [Proof of concept](proof-of-concept.md)
+## [Intune dağıtımlarının aşamaları](rollout-phases-for-microsoft-intune-deployment.md)
+### [Proje kapsamı](project-scope.md)
+### [Kavram kanıtı](proof-of-concept.md)
 ### [Pilot](pilot.md)
-### [Enterprise rollout](enterprise-rollout.md)
-### [Operations and maintenance](operations-and-maintenance.md)
+### [Kurumsal dağıtım](enterprise-rollout.md)
+### [İşlemler ve bakım](operations-and-maintenance.md)
 
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
-# [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Dağıtma ve Kullanma](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Sorunları Giderme](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+
+
+<!--HONumber=May16_HO1-->
+
+
