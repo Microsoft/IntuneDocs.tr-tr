@@ -63,11 +63,12 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydolduğunda karşıla
 - [BT yöneticinize kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [Cihaz, gerekli en düşük işletim sistemi sürümüne sahip değil](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [Cihazınızın kökü belirtilmiş ve bağlanamıyorsunuz](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Cihazınızda gerekli bir sertifika eksik](your-device-is-missing-a-required-certificate-android.md)
+- [Cihazınızın kökü belirtilmiş ve bağlanamıyorsunuz](your-device-is-rooted-and-you-cant-connect-android.md)</br>
+- [Cihazınızda gerekli bir sertifika eksik](your-device-is-missing-a-required-certificate-android.md)</br>
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=May16_HO3-->
 
 

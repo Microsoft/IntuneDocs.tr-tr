@@ -21,11 +21,9 @@
 ### [Mobil cihazları kaydetme ve uygulama yükleme](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Yapılandırma sonrası görevleri](post-configuration-tasks.md)
 
-<!--
-## [Choose how to manage devices](choose-how-to-manage-devices.md)
-### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md)
--->
+## [Cihazların nasıl yönetileceğini seçme](choose-how-to-manage-devices.md)
+### [Mobil cihaz yönetimi özellikleri](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Windows bilgisayarı yönetim özellikleri](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Intune dağıtımlarının aşamaları](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Proje kapsamı](project-scope.md)
@@ -34,12 +32,12 @@
 ### [Kurumsal dağıtım](enterprise-rollout.md)
 ### [İşlemler ve bakım](operations-and-maintenance.md)
 
-
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Dağıtma ve Kullanma](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-# [Sorunları Giderme](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
+# [Sorunları Gider](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

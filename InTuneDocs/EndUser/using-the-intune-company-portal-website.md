@@ -51,10 +51,10 @@ ms.suite: ems
 **Şirket Portalı web sitesinde** , cihazınıza yüklediğiniz **Şirket Portalı uygulamasını** kullanarak gerçekleştirdiğiniz görevlerin çoğunu gerçekleştirebilirsiniz. Şirket Portalı uygulaması, Intune’da cihaz kaydetme ve daha birçok konuda daha fazlasını öğrenmek için, sahip olduğunuz cihaz türünün bağlantısına dokunun:
 
 - [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
-- [iOS veya Mac OS X cihazınızı Intune ile kullanma](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Android cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
+- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 
