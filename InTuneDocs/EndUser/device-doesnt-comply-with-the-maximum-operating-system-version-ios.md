@@ -31,7 +31,7 @@ ms.suite: ems
 iOS cihazınız BT yöneticinizin en yüksek işletim sistemi sürümüne yönelik ilkesiyle uyumlu değildir. Yardım almak için BT yöneticinize başvurun.
 
 ### Ayrıca bkz.
-[iOS veya Mac OS X cihazınızı Intune ile kullanma](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 <!--HONumber=May16_HO1-->

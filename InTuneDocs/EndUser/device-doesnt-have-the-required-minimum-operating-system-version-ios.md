@@ -31,7 +31,7 @@ ms.suite: ems
 iOS cihazınız, BT bölümünüzün gerektirdiği en düşük işletim sistemi sürümünü karşılamıyor.  Cihazınızı güncelleştirmeden önce **Ayarlar** &gt; **Hakkında** öğesine dokunarak geçerli işletim sisteminizi denetleyin. Cihazınızı son sürüme yükseltmek için **Ayarlar** &gt; **Genel** &gt; **Yazılım Güncelleştirme**’ye dokunun..
 
 ### Ayrıca bkz.
-[iOS veya Mac OS X cihazınızı Intune ile kullanma](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 <!--HONumber=May16_HO1-->
 

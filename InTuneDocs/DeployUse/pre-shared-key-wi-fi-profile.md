@@ -188,13 +188,13 @@ Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
 
 ## İlkeyi dağıtın
 
-1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın
+1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
 
 2.   **Dağıtımı Yönet** iletişim kutusunda:
 
     -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'a tıklayın.
 
-    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**'e tıklayın
+    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**'e tıklayın.
 
 Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağıtım hakkında daha fazla bilgi görüntüleyebilirsiniz.
 

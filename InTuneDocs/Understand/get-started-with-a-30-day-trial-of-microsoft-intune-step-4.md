@@ -37,7 +37,7 @@ Bu adımlarda, bir mobil cihaz yapılandırma ilkesi ve bir Windows bilgisayar g
 
 ## Bir mobil cihaz yapılandırma ilkesi oluşturma ve dağıtma
 
-1.  [Intune yönetim konsolu](https://manage.microsoft.com/)'nu açın
+1.  [Intune yönetim konsolu](https://manage.microsoft.com/)'nu açın.
 
 2.  Sol bölmede **İlke** simgesini seçin.
 

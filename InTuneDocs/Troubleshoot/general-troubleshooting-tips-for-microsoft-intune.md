@@ -51,7 +51,7 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerini
 -   Cihaz günlükleri. Cihaz günlüklerinin nasıl toplanacağını öğrenin:
   - [Android tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-  - [BT yöneticinize Android kayıt hataları gönderin](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+  - [BT yöneticinize Android kayıt hatalarını gönderme](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
   - [BT yöneticinize iOS kayıt hataları gönderin](/intune/enduser/send-errors-to-your-it-admin-ios.md)
 
 -   Örneğin, ilke uygulama sorunlarına yönelik yönetici konsolu verileri için [Microsoft Intune ile kullanıcı ve cihazları yönetmek için grupları kullanma](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) bölümünde açıklandığı gibi amaçlanan ilkeyi ve ilgili ilkenin durumunu incelemeniz gerekir.
