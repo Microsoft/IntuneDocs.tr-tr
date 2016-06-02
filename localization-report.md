@@ -2188,9 +2188,9 @@
 * Archive Datetime: 2016-06-02 02:55:25
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
-* Current Handback File: [manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.83911e723be0212c26740e6fd98288b612720528.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.83911e723be0212c26740e6fd98288b612720528.tr-tr.xlf)
-* Current Handback Datetime: 2016-06-01 01:54:19
+* Current Target File: [InTuneDocs\DeployUse\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
+* Current Handback File: [manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.83911e723be0212c26740e6fd98288b612720528.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.83911e723be0212c26740e6fd98288b612720528.tr-tr.xlf)
+* Current Handback Datetime: 2016-06-02 05:49:59
 * [Back to Top](#report-top)
 
 ##### <a name='bfe9ff488a272d2f68769bfa374fff7a52a6cca668'></a> Source: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0c9d70371a33a4d481d3c24398fd191355e19597/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
@@ -2203,33 +2203,33 @@
 * Archive Datetime: 2016-06-02 02:55:25
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
-* Current Handback File: [manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.tr-tr.xlf)
-* Current Handback Datetime: 2016-06-01 01:54:19
+* Current Target File: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
+* Current Handback File: [manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.tr-tr.xlf)
+* Current Handback Datetime: 2016-06-02 05:49:59
 * [Back to Top](#report-top)
 
 ##### <a name='2521500820d769bfe7c5742cf035e5eee8f2aacc69'></a> Source: [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
+* Target File: [InTuneDocs\DeployUse\manage-data-transfer-between-ios-apps-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 * Handoff File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.tr-tr.xlf)
-* Handback Datetime: 2016-06-01 01:54:19
+* Handback File: [manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-data-transfer-between-ios-apps-with-microsoft-intune.4d7d42c1c13c5828eddcc758ffdd84e3d34f1a88.tr-tr.xlf)
+* Handback Datetime: 2016-06-02 05:49:59
 * [Back to Top](#report-top)
 
 ##### <a name='3de3b55426636dad69e527e186ff27cb2cd3cb5070'></a> Source: [InTuneDocs\DeployUse\manage-internet-access-using-managed-browser-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/manage-internet-access-using-managed-browser-policies.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\manage-internet-access-using-managed-browser-policies.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/manage-internet-access-using-managed-browser-policies.md)
+* Target File: [InTuneDocs\DeployUse\manage-internet-access-using-managed-browser-policies.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-internet-access-using-managed-browser-policies.md)
 * Handoff File: [manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.tr-tr.xlf)
-* Handback Datetime: 2016-06-01 01:54:19
+* Handback File: [manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.tr-tr.xlf)
+* Handback Datetime: 2016-06-02 05:49:59
 * [Back to Top](#report-top)
 
 ##### <a name='1492b99c8ff674d23b78ac311ff1cd07371bfd2971'></a> Source: [InTuneDocs\DeployUse\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/6a232475ebd6fb301ba04c00d2c12b7111fa8976/InTuneDocs/DeployUse/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -2242,9 +2242,9 @@
 * Archive Datetime: 2016-06-02 02:55:25
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-* Current Handback File: [manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.tr-tr.xlf)
-* Current Handback Datetime: 2016-06-01 01:54:19
+* Current Target File: [InTuneDocs\DeployUse\manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
+* Current Handback File: [manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.f9e8ca963ea5a467aaf74c0d069524daac3affe9.tr-tr.xlf)
+* Current Handback Datetime: 2016-06-02 05:49:59
 * [Back to Top](#report-top)
 
 ##### <a name='575b8525b8b99d06358a911b8deb24ee5de48fe172'></a> Source: [InTuneDocs\DeployUse\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
@@ -2257,9 +2257,9 @@
 * Archive Datetime: 2016-06-02 02:55:25
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
-* Current Handback File: [manage-license-agreements-for-windows-pc-software-in-microsoft-intune.634687cbedd4fc649377288e24861c7fdf812b52.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.634687cbedd4fc649377288e24861c7fdf812b52.tr-tr.xlf)
-* Current Handback Datetime: 2016-06-01 01:54:19
+* Current Target File: [InTuneDocs\DeployUse\manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
+* Current Handback File: [manage-license-agreements-for-windows-pc-software-in-microsoft-intune.634687cbedd4fc649377288e24861c7fdf812b52.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.634687cbedd4fc649377288e24861c7fdf812b52.tr-tr.xlf)
+* Current Handback Datetime: 2016-06-02 05:49:59
 * [Back to Top](#report-top)
 
 ##### <a name='31eb1b31fa86b3c1898722ca7f2bf63f5e91e0af73'></a> Source: [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8e911193075d2a621ef94f2917b2126501ea2100/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -2272,33 +2272,33 @@
 * Archive Datetime: 2016-06-02 02:55:25
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-* Current Handback File: [manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.tr-tr.xlf)
-* Current Handback Datetime: 2016-06-01 01:54:19
+* Current Target File: [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+* Current Handback File: [manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.tr-tr.xlf)
+* Current Handback Datetime: 2016-06-02 05:49:59
 * [Back to Top](#report-top)
 
 ##### <a name='0b8da55b81040fd20e8234303ac4da384de954d874'></a> Source: [InTuneDocs\DeployUse\manage-volume-purchased-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/manage-volume-purchased-apps-in-microsoft-intune.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\manage-volume-purchased-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/manage-volume-purchased-apps-in-microsoft-intune.md)
+* Target File: [InTuneDocs\DeployUse\manage-volume-purchased-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-volume-purchased-apps-in-microsoft-intune.md)
 * Handoff File: [manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.tr-tr.xlf)
-* Handback Datetime: 2016-06-01 01:54:19
+* Handback File: [manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.tr-tr.xlf)
+* Handback Datetime: 2016-06-02 05:49:59
 * [Back to Top](#report-top)
 
 ##### <a name='92f4ddde3336fd4cf07c701596f5ebe4c0aeb49f75'></a> Source: [InTuneDocs\DeployUse\manage-windows-pcs-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0335b80afa8e330263baad054f0e902f019f75bb/InTuneDocs/DeployUse/manage-windows-pcs-with-microsoft-intune.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\manage-windows-pcs-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/manage-windows-pcs-with-microsoft-intune.md)
+* Target File: [InTuneDocs\DeployUse\manage-windows-pcs-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-windows-pcs-with-microsoft-intune.md)
 * Handoff File: [manage-windows-pcs-with-microsoft-intune.93c09a3bb20b139ee045e0d1ce23c9a136c9282f.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/4386a61012403c44211ca369d441de28475e6b0e/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/manage-windows-pcs-with-microsoft-intune.93c09a3bb20b139ee045e0d1ce23c9a136c9282f.tr-tr.xlf)
 * Handoff Datetime: 2016-05-13 16:51:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [manage-windows-pcs-with-microsoft-intune.93c09a3bb20b139ee045e0d1ce23c9a136c9282f.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-windows-pcs-with-microsoft-intune.93c09a3bb20b139ee045e0d1ce23c9a136c9282f.tr-tr.xlf)
-* Handback Datetime: 2016-06-01 01:54:19
+* Handback File: [manage-windows-pcs-with-microsoft-intune.93c09a3bb20b139ee045e0d1ce23c9a136c9282f.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-windows-pcs-with-microsoft-intune.93c09a3bb20b139ee045e0d1ce23c9a136c9282f.tr-tr.xlf)
+* Handback Datetime: 2016-06-02 05:49:59
 * [Back to Top](#report-top)
 
 ##### <a name='755db60abb7859af5065e2c5ddfbfc6cfb7aeeda76'></a> Source: [InTuneDocs\DeployUse\md.style](https://github.com/Microsoft/IntuneDocs-pr/blob/826a195a4d1854114af25bfdcecfafb726ef9b5a/InTuneDocs/DeployUse/md.style)
