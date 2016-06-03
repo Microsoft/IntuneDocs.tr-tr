@@ -1,11 +1,45 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/71077d9f86a53cc66536928e4799fa4b1a51cdf0/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#86d3b7894eca70454fa82393c4d06eab5a99246f47)
+ [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/abe03bc69c2c156bce5c8683798bc27fe9e9f4e4/InTuneDocs/DeployUse/manage-corporate-owned-devices.md) | OutofSyncHandedBackSuccess | [Details](#271446485e01d7e89b6438ead4e9f484ad63703b68)
 
 ## Item Details
+##### <a name='86d3b7894eca70454fa82393c4d06eab5a99246f47'></a> Source: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/71077d9f86a53cc66536928e4799fa4b1a51cdf0/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/1df0fb85a7521fc36ead6e2bd910168c8e0f0667/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf)
+* Handoff Datetime: 2016-06-03 21:35:07
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/78db6d9fafac228d17de920a3ffb0ac55c3ef1bb/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
+* Current Handback File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/442de7e44eb5d6ac992e4dd65ca9c7abb3801061/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf)
+* Current Handback Datetime: 2016-06-02 06:46:19
+* [Back to Top](#report-top)
+
+##### <a name='271446485e01d7e89b6438ead4e9f484ad63703b68'></a> Source: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/abe03bc69c2c156bce5c8683798bc27fe9e9f4e4/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/1df0fb85a7521fc36ead6e2bd910168c8e0f0667/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.tr-tr.xlf)
+* Handoff Datetime: 2016-06-03 21:35:07
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\DeployUse\manage-corporate-owned-devices.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/a446766bdff12512da9c929f701e6f3a346050b2/InTuneDocs/DeployUse/manage-corporate-owned-devices.md)
+* Current Handback File: [manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/dc494e06d2a338aa4ec3bd41b277d9da9ba605fe/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/manage-corporate-owned-devices.865c6a0e2c92ad75f207f32281351fc87b2074b4.tr-tr.xlf)
+* Current Handback Datetime: 2016-06-02 05:49:59
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
