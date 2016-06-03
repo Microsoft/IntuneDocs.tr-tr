@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: ada223d7-2a80-4415-bd85-5bdf9eca7ace
+ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
 
 # optional metadata
 
-ROBOTS:
+#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,12 +28,11 @@ ms.suite: ems
 
 # Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil
 
-iOS cihazınız BT yöneticinizin en yüksek işletim sistemi sürümüne yönelik ilkesiyle uyumlu değildir. Yardım almak için BT yöneticinize başvurun.
+BT yöneticiniz Windows cihazınızda çalıştırmanıza izin verilen en yüksek işletim sistemi sürümünü ayarladı, ancak cihazınız bu ayarla uyumlu değil. Cihazınızda izin verilen en yüksek işletim sistemi sürümünü bulmak için, BT yöneticinize başvurmalısınız.
 
 ### Ayrıca bkz.
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 
