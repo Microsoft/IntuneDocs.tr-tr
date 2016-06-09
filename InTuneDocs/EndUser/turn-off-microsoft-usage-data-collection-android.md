@@ -18,7 +18,7 @@ ms.assetid: df53feab-4f5e-46ae-b1e8-9adb048711e5
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,6 +32,6 @@ Microsoft, ürün ve hizmetlerini geliştirmek için Şirket Portalı uygulamas�
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 
