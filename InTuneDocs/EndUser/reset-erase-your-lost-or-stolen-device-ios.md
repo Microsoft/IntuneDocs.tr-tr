@@ -15,7 +15,7 @@ ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,10 +28,10 @@ ms.suite: ems
 
 # Kaybolan veya çalınan cihazınızı sıfırlama (silme)
 
-Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir cihazdan Şirket Portalı uygulamasını kullanarak veya [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanarak cihazı varsayılan fabrika ayarlarına sıfırlayabilirsiniz..
+Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir cihazdan Şirket Portalı uygulamasını kullanarak veya [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanarak cihazı varsayılan fabrika ayarlarına sıfırlayabilirsiniz.
 
 > [!WARNING]
-> Bir cihazı fabrika varsayılanlarına sıfırlamak hem kişisel hem de iş ile ilgili bilgilerinizi cihazdan kaldırır. Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için bkz. [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)..
+> Bir cihazı fabrika varsayılanlarına sıfırlamak hem kişisel hem de iş ile ilgili bilgilerinizi cihazdan kaldırır. Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için bkz. [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 
 Şirket Portalı uygulamasını kullanarak cihazınızı sıfırlamak için:
 
@@ -44,12 +44,11 @@ Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir 
 1.  [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) silmek istediğiniz cihazı seçin.
 
 2.  **Sıfırla** &gt; **Sıfırla**’ya dokunun.
-> [!NOTE]
-> Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin.
+> [!NOTE] Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin.
 
 ### Ayrıca bkz.
-[iOS veya Mac OS X cihazınızı Intune ile kullanma](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

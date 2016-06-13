@@ -48,20 +48,23 @@ Intune aşağıdaki bağlantı türlerini kullanan VPN profillerini oluşturmay�
 
 
 
-Bağlantı türü |iOS ve Mac OS X  |Android  |Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Masaüstü ve Mobile |
----------|---------|---------|---------|---------|---------
-Cisco AnyConnect |Evet |Evet   |Hayır    |     Hayır    |Hayır  |Hayır    | Evet, (OMA-URI, yalnızca Mobile)|     
-Pulse Secure |Evet  |Evet |Evet   |Hayır  |Evet  |Evet| Evet|        
-F5 Edge Client |Evet |Evet |Evet |Hayır  |Evet  |   Evet |  Evet|   
-Dell SonicWALL Mobile Connect |Evet |Evet |Evet |Hayır  |Evet |Evet |Evet|         
-CheckPoint Mobile VPN |Evet |Evet |Evet |Evet |Evet|Evet|Evet|
-
-
+Bağlantı türü |iOS ve Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Masaüstü ve Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Cisco AnyConnect|Evet |Evet   |Hayır    |     Hayır    |Hayır  |Hayır    | Evet, (OMA-URI, yalnızca Mobile)|     
+Pulse Secure|Evet  |Evet |Evet   |Hayır  |Evet  |Evet| Evet|        
+F5 Edge Client|Evet |Evet |Evet |Hayır  |Evet  |   Evet |  Evet|   
+Dell SonicWALL Mobile Connect|Evet |Evet |Evet |Hayır  |Evet |Evet |Evet|         
+CheckPoint Mobile VPN|Evet |Evet |Evet |Evet |Evet|Evet|Evet|
+Microsoft SSL (SSTP)|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Hayır|
+Microsoft Automatic|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
+IKEv2|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
+PPTP|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
+L2TP|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
 
 
 > [!IMPORTANT] Bir cihaza dağıtılan VPN profillerini kullanmadan önce profil için geçerli VPN uygulamasını yüklemeniz gerekir. İlgili uygulamayı Intune kullanarak dağıtmanıza yardımcı olması için, [Microsoft Intune'da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md) konusunda verilen bilgileri kullanabilirsiniz.  
 
- [VPN profilleri için özel yapılandırmalar](custom-configurations-for-vpn-profiles.md) konu başlığı altında, URI ayarlarını kullanarak özel VPN profilleri oluşturmayı öğrenin..     
+ [VPN profilleri için özel yapılandırmalar](custom-configurations-for-vpn-profiles.md) konu başlığı altında, URI ayarlarını kullanarak özel VPN profilleri oluşturmayı öğrenin.     
 
 ## VPN profilleri nasıl güvenli hale getirilir?
 
@@ -73,7 +76,7 @@ VPN profilini oluştururken, Intune’da önceden oluşturduğunuz bir SCEP veya
 
 Bu, kimlik sertifikası olarak bilinir ve kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için oluşturduğunuz bir güvenilir sertifika profiline (veya kök sertifikaya) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, VPN bağlantısının kimliğini doğrulayan bilgisayara dağıtılır. Bu, genellikle VPN sunucusudur.
 
-Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md)..
+Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md).
 
 ### Kullanıcı adı ve parola
 
@@ -81,7 +84,7 @@ Kullanıcı, kullanıcı adı ve parolasını sağlayarak VPN sunucusunda kimli�
 
 ## VPN profili oluşturma
 
-1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke > İlke Ekle**'ye tıklayın..
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke > İlke Ekle**’yi seçin.
 2. İlgili cihaz türünü genişleterek yeni ilke için bir şablon seçin, sonra ilgili cihaz için VPN profilini belirleyin:
     * **VPN Profili (Android 4 ve üzeri)**
     * **VPN Profili (iOS 7.1 ve üzeri)**
@@ -102,15 +105,15 @@ Ayar adı  |Daha fazla bilgi
 **Bağlantı türü**     |  VPN profilinde kullanmak için aşağıdaki bağlantı türlerinden birini seçin: **Cisco AnyConnect** (Windows 8.1 ve Windows Phone 8.1’de kullanılamaz), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**
 **VPN sunucusu açıklaması**     | Cihazların bağlanacağı VPN sunucusu için bir açıklama belirtin. **Örnek:** Contoso VPN Sunucusu. Bağlantı türü **F5 Edge Client** olduğunda, sunucu açıklamaları ve IP adreslerini içeren bir liste belirtmek için **Sunucu listesi** alanını belirtin.
 **Sunucu IP adresi veya FQDN**    |Cihazların bağlanacağı VPN sunucusunun IP adresi veya tam etki alanı adını sağlayın. **Örnekler:** 192.168.1.1, vpn.contoso.com.  Bağlantı türü **F5 Edge Client** olduğunda, sunucu açıklamaları ve IP adreslerini içeren bir liste belirtmek için **Sunucu listesi** alanını belirtin.         |         
-**Sunucu listesi**     |VPN bağlantısı için kullanmak üzere yeni bir VPN sunucusu eklemek için **Ekle**'ye tıklayın. Ayrıca, hangi sunucunun bağlantı için varsayılan sunucu olacağını belirtebilirsiniz. Bu seçenek yalnızca bağlantı türü **F5 Edge İstemcisi** olduğunda görüntülenir..         
+**Sunucu listesi**     |VPN bağlantısı için kullanmak üzere yeni bir VPN sunucusu eklemek için **Ekle**'yi seçin. Ayrıca, hangi sunucunun bağlantı için varsayılan sunucu olacağını belirtebilirsiniz. Bu seçenek yalnızca bağlantı türü **F5 Edge Client** olduğunda görüntülenir.         
 **Tüm ağ trafiğini VPN bağlantısı üzerinden gönder**     |Bu seçeneği belirlerseniz, tüm ağ trafiği VPN bağlantısı üzerinden gönderilir. Bu seçeneği belirlemezseniz, istemci 3. taraf VPN sunucusuna bağlandığında bölünmüş tünel için rotaları dinamik olarak belirler. Yalnızca şirket ağına bağlantılar VPN tünelinden gönderilir. İnternet üzerindeki kaynaklara bağlandığınızda VPN tüneli kullanılmaz.
 **Kimlik doğrulama yöntemi**| VPN bağlantısı tarafından kullanılan kimlik doğrulama yöntemini seçin: **Sertifikalar** veya **Kullanıcı Adı ve Parola**. (Kullanıcı adı ve Parola, bağlantı türü Cisco AnyConnect olduğunda kullanılamaz.) **Kimlik doğrulama yöntemi** seçeneği Windows 8.1 için kullanılamaz.
 **Her oturum açmada kullanıcı kimlik bilgilerini hatırla**|Kullanıcının her bağlantı kurulduğunda kimlik bilgilerini girmek zorunda kalmaması için kullanıcı kimlik bilgilerinin hatırlanmasını sağlamak üzere bu seçeneği belirleyin.
-**İstemci kimlik doğrulaması (Kimlik Sertifikası) için bir istemci sertifikası seçin**|VPN bağlantısı kimlik doğrulaması için kullanılacak önceden oluşturduğunuz istemci SCEP sertifikasını seçin. Intune’da sertifika profillerini kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md). Bu seçenek yalnızca kimlik doğrulama yöntemi **Sertifikalar** olduğunda görüntülenir..
-**Rol**| Bu bağlantıya erişimi olan kullanıcı rolünün adı belirtin. Bir kullanıcı rolü seçenekleri ve kişisel ayarlarını tanımlar ve belirli özellikleri erişimi etkinleştirir veya devre dışı bırakır. Bu seçenek yalnızca bağlantı türü **Pulse Secure** olduğunda görüntülenir..
-**Bölge**|Kullanmak istediğiniz kimlik doğrulaması bölgesi için ad belirtin. Bir kimlik doğrulaması bölgesi, Pulse Secure bağlantı türü tarafından kullanılan bir kimlik doğrulaması kaynakları gruplandırmasıdır. Bu seçenek yalnızca bağlantı türü **Pulse Secure** olduğunda görüntülenir..
-**Oturum açma grubu veya etki alanı**|Bağlanmak istediğiniz oturum açma grubu veya etki alanı adını belirtin. Bu seçenek yalnızca bağlantı türü **Dell SonicWALL Mobile Connect** olduğunda görüntülenir..
-**Parmak izi**|VPN sunucusunun güvenilir olduğunu doğrulamak için kullanılacak bir dize, örneğin "Contoso Parmak İzi Kodu", belirtin. Parmak izi: Bağlanırken aynı parmak izini sunan herhangi bir sunucuya güvenmesi için istemciye gönderilebilir. Cihazda parmak izi zaten yoksa, parmak izini göstererek kullanıcıdan bağlandığı VPN sunucusuna güvenmesini ister (kullanıcı parmak izini el ile doğrular ve bağlanmak için **güven** seçeneğine tıklar). Bu seçenek yalnızca bağlantı türü **CheckPoint Mobile VPN** olduğunda görüntülenir..
+**İstemci kimlik doğrulaması (Kimlik Sertifikası) için bir istemci sertifikası seçin**|VPN bağlantısı kimlik doğrulaması için kullanılacak önceden oluşturduğunuz istemci SCEP sertifikasını seçin. Intune’da sertifika profillerini kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md). Bu seçenek yalnızca kimlik doğrulama yöntemi **Sertifikalar** olduğunda görüntülenir.
+**Rol**| Bu bağlantıya erişimi olan kullanıcı rolünün adı belirtin. Bir kullanıcı rolü seçenekleri ve kişisel ayarlarını tanımlar ve belirli özellikleri erişimi etkinleştirir veya devre dışı bırakır. Bu seçenek yalnızca bağlantı türü **Pulse Secure** olduğunda görüntülenir.
+**Bölge**|Kullanmak istediğiniz kimlik doğrulaması bölgesi için ad belirtin. Bir kimlik doğrulaması bölgesi, Pulse Secure bağlantı türü tarafından kullanılan bir kimlik doğrulaması kaynakları gruplandırmasıdır. Bu seçenek yalnızca bağlantı türü **Pulse Secure** olduğunda görüntülenir.
+**Oturum açma grubu veya etki alanı**|Bağlanmak istediğiniz oturum açma grubu veya etki alanı adını belirtin. Bu seçenek yalnızca bağlantı türü **Dell SonicWALL Mobile Connect** olduğunda görüntülenir.
+**Parmak izi**|VPN sunucusunun güvenilir olduğunu doğrulamak için kullanılacak bir dize, örneğin "Contoso Parmak İzi Kodu", belirtin. Parmak izi: Bağlanırken aynı parmak izini sunan herhangi bir sunucuya güvenmesi için istemciye gönderilebilir. Cihazda parmak izi zaten yoksa, parmak izini gösterirken kullanıcıdan bağlandığı VPN sunucusuna güvenmesini ister (kullanıcı parmak izini el ile doğrular ve bağlanmak için **güven**’i seçer). Bu seçenek yalnızca bağlantı türü **CheckPoint Mobile VPN** olduğunda görüntülenir.
 **Uygulama Başına VPN**|Bu VPN bağlantısını bir Mac OS X iOS uygulamasıyla ilişkilendirerek bağlantının uygulama her çalıştırıldığında açılmasını sağlamak bu seçeneği belirleyin. Yazılım dağıtımı yaparken VPN profilini bir uygulamayla ilişkilendirebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md).
 **Proxy ayarlarını otomatik olarak algıla** (yalnızca iOS, Mac OS X, Windows 8.1 ve Windows Phone 8.1)|VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, cihazların bağlantı ayarlarını otomatik olarak algılamasını isteyip istemediğinizi belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
 **Otomatik yapılandırma betiği kullan** (yalnızca iOS, Mac OS X, Windows 8.1 ve Windows Phone 8.1)|VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, ayarları tanımlamak için bir otomatik yapılandırma betiği isteyip istemediğinizi belirtin ve ardından ayarları içeren dosyaya bir URL belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
@@ -131,6 +134,8 @@ Ayar adı  |Daha fazla bilgi
 **İlişkili uygulamalar**     | VPN bağlantısını otomatik olarak kullanacak uygulamaların listesini sağlayabilirsiniz. Uygulamanın türü uygulama tanımlayıcısını belirler. Evrensel uygulamalar için Paket Ailesi Adı belirtin ve masaüstü uygulamaları için uygulamanın dosya yolunu belirtin.          
 
 
+> [!IMPORTANT] Uygulama başına VPN yapılandırmasında kullanılması için derlediğiniz tüm uygulama listelerini güvenlik altına almanızı öneririz. Yetkisiz bir kullanıcı listenizde değişiklik yaparsa ve bunu uygulama başına VPN uygulama listesine aktarırsanız, erişimi olmaması gereken uygulamalara VPN erişimi yetkisi verme olasılığınız vardır. Uygulama listelerini güvenlik altına almanın yollarından biri, erişim denetim listesi (ACL) kullanmaktır.
+
 Kuruluş sınırları ayarlarını kullanmak isteyeceğiniz durumların bir örneği burada verilmiştir. VPN’yi yalnızca uzak masaüstü için etkinleştirmek istiyorsanız 3996 dış bağlantı noktasında 27 numaralı protokol için trafiğe izin veren bir ağ trafik kuralı oluşturursunuz. Başka hiçbir trafik VPN’yi kullanmaz.
 
 VPN bağlantı türünüz bölünmüş tünelde trafiğin nasıl işleneceğini tanımlamanıza izin vermiyorsa kuruluş sınırlarında rotaları tanımlamak faydalıdır. Bu durumda, VPN’i kullanacak rotaları listelemek için **Rotalar**’ı kullanın.
@@ -141,21 +146,24 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 
 ## İlkeyi dağıtma
 
-1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın..
+1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi ve ardından **Dağıtımı Yönet**’i seçin.
 
 2.   **Dağıtımı Yönet** iletişim kutusunda:
 
-    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'a tıklayın..
+    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'ı seçin.
 
-    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**'e tıklayın..
+    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**’i seçin.
 
 
 Başarılı bir şekilde dağıtıldıktan sonra, kullanıcılar VPN bağlantıları listesinde belirttiğiniz VPN bağlantısı adını cihazlarında görür.
 
  **İlke** çalışma alanının **Genel Bakış** sayfasında, bir durum özeti ve uyarılar ilkeyle ilgili işlem yapmanız gereken durumları tanımlar. Ayrıca, Pano çalışma alanında bir durum özeti görüntülenir.
 
+### Ayrıca bkz.
+[VPN profilleri için özel yapılandırmalar](Custom-configurations-for-VPN-profiles.md)
+[Android Pulse Secure için uygulama başına VPN](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO5-->
 
 
