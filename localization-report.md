@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 2
 [ Handoff Success Files ](#handoff-success-list)| 612
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 4
+[ Archive Success Files ](#archive-success-list)| 3
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 148
-[ In Sync Handback Files ](#insync-handback-success-list)| 250
+[ In Sync Handback Files ](#insync-handback-success-list)| 251
 [ Ignored Files ](#ignored-list)| 227
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -643,7 +643,6 @@
  [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-cpwebsite.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98ba0968653ceaf13ab5422468040f8e2ce50422/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-cpwebsite.md) | ArchivedSuccess | [Details](#3bbc8ebd8484f7a99f0a7996fccf03547a53f1cb458)
  [InTuneDocs\GetStarted\choose-how-to-enroll-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9bdf751f0525e56b06355ef9413b1f9c31dca1c7/InTuneDocs/GetStarted/choose-how-to-enroll-devices.md) | ArchivedSuccess | [Details](#b9213a6a62379a531b87f63eeedae0fe20e6e2d0488)
  [InTuneDocs\GetStarted\supported-mobile-devices-and-computers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/65769fade08dea34b3e788628e578d58f90389f3/InTuneDocs/GetStarted/supported-mobile-devices-and-computers.md) | ArchivedSuccess | [Details](#7bd3129c6884fc1c59d467bc60f00c2fe95ab1e7531)
- [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/includes/mdm-supported-devices.md) | ArchivedSuccess | [Details](#fb8b5453664b3b60d801ddb372114eb2d0d67704600)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
 
@@ -976,6 +975,7 @@
  [InTuneDocs\includes\Intune-feedback-footer.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/Intune-feedback-footer.md) | InSyncHandedBackSuccess | [Details](#d9fdbbe0d10fcd31299c021749df2ea6dc55d199597)
  [InTuneDocs\includes\longhornshort.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/longhornshort.md) | InSyncHandedBackSuccess | [Details](#7541052b56e8a04bca42cc6721a4f92814f8db96598)
  [InTuneDocs\includes\longhornshort_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/longhornshort_md.md) | InSyncHandedBackSuccess | [Details](#2504575346cece1887f998d2d76408a38af5141e599)
+ [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/includes/mdm-supported-devices.md) | InSyncHandedBackSuccess | [Details](#fb8b5453664b3b60d801ddb372114eb2d0d67704600)
  [InTuneDocs\includes\nextref_client_7.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_client_7.md) | InSyncHandedBackSuccess | [Details](#fb4c7817eac9a4569076492c3d678228adfa9cdf601)
  [InTuneDocs\includes\nextref_client_7_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_client_7_md.md) | InSyncHandedBackSuccess | [Details](#5a88e825af76116076861b06d70cbaa235c21980602)
  [InTuneDocs\includes\nextref_server_7.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_server_7.md) | InSyncHandedBackSuccess | [Details](#402065bc55a9ab0d65c464cf0f29bd75c40dfb7a603)
@@ -4568,9 +4568,9 @@
 * Archive Datetime: 2016-06-09 02:21:16
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\vpn-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/DeployUse/vpn-connections-in-microsoft-intune.md)
-* Current Handback File: [vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.tr-tr.xlf)
-* Current Handback Datetime: 2016-06-01 01:54:19
+* Current Target File: [InTuneDocs\DeployUse\vpn-connections-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/93a5fb36098760c6f299342d5cf6246881e1893f/InTuneDocs/DeployUse/vpn-connections-in-microsoft-intune.md)
+* Current Handback File: [vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/510fbf482a1ac855d8b2871b46e96928df329c26/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/vpn-connections-in-microsoft-intune.fb1020834695c6cc29b0f170f5683cc0f44eee15.tr-tr.xlf)
+* Current Handback Datetime: 2016-06-13 11:34:46
 * [Back to Top](#report-top)
 
 ##### <a name='e8860142f163fbea4f766422477b1458dd4dee19256'></a> Source: [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/36d0af2f2221404410d9b7c7837fca062dadea1c/InTuneDocs/DeployUse/whats-coming-in-intune.md)
@@ -6815,9 +6815,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/9fcddaadae98bf1c93b4bfbffe1d8e1200ed975f/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-ios.md)
-* Current Handback File: [reset-erase-your-lost-or-stolen-device-ios.83a7d457b3370aeeea969000242a32db70152754.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/e587f01acccb559234794ced2083aeb40359de80/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/reset-erase-your-lost-or-stolen-device-ios.83a7d457b3370aeeea969000242a32db70152754.tr-tr.xlf)
-* Current Handback Datetime: 2016-06-01 01:54:19
+* Current Target File: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/93a5fb36098760c6f299342d5cf6246881e1893f/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-ios.md)
+* Current Handback File: [reset-erase-your-lost-or-stolen-device-ios.83a7d457b3370aeeea969000242a32db70152754.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/510fbf482a1ac855d8b2871b46e96928df329c26/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/reset-erase-your-lost-or-stolen-device-ios.83a7d457b3370aeeea969000242a32db70152754.tr-tr.xlf)
+* Current Handback Datetime: 2016-06-13 11:34:46
 * [Back to Top](#report-top)
 
 ##### <a name='2b2790826e46e6af43f3bdeeede6dc834845a83b423'></a> Source: [InTuneDocs\EndUser\reset-erase-your-lost-or-stolen-device-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-windows.md)
@@ -9111,15 +9111,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='fb8b5453664b3b60d801ddb372114eb2d0d67704600'></a> Source: [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/753e9a45db4758edcdba84286f0fa0b50962a08f/InTuneDocs/includes/mdm-supported-devices.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\mdm-supported-devices.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/93a5fb36098760c6f299342d5cf6246881e1893f/InTuneDocs/includes/mdm-supported-devices.md)
 * Handoff File: [mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/fe0ab55754d8432723d30a1c9cb8a48ff54f1d06/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.tr-tr.xlf)
 * Handoff Datetime: 2016-05-25 00:03:59
 * Handoff Reason: Include
 * Archive File: [mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/d7e0eb6704d8bff621576b1f5510939079d38765/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.tr-tr.xlf)
 * Archive Datetime: 2016-06-02 02:55:25
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/510fbf482a1ac855d8b2871b46e96928df329c26/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/mdm-supported-devices.30fa9f58a86de021264522ce25575107201385f0.tr-tr.xlf)
+* Handback Datetime: 2016-06-13 11:34:46
 * [Back to Top](#report-top)
 
 ##### <a name='fb4c7817eac9a4569076492c3d678228adfa9cdf601'></a> Source: [InTuneDocs\includes\nextref_client_7.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/nextref_client_7.md)
