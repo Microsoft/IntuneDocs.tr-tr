@@ -42,6 +42,7 @@ Bu bölümdeki bilgiler, Windows cihazlarında Intune Şirket Portalı yüklemes
 Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydolduktan sonra yapabileceğiniz işlemlerde size yardımcı olur.
 
 - [Cihazınızı şifreleme](encrypt-your-device-windows.md)</br>
+- [Parolanızı ayarlama veya değiştirme](set-or-change-your-password-windows.md)</br>
 - [Kaybolan veya çalınan cihazınızı sıfırlama (silme)](reset-erase-your-lost-or-stolen-device-windows.md)</br>
 - [Cihazınızın Intune kaydını kaldırma](unenroll-your-device-from-intune-windows.md)</br>
 - [Cihazınızın Intune kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
@@ -54,7 +55,7 @@ Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydolduktan sonra yapab
 Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydolduğunda karşılaşabileceğiniz sorunların çözümünde size yardımcı olur.
 
 - [Cihaz, gerekli en düşük işletim sistemi sürümüne sahip değil](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](device-doesnt-comply with-maximum-operating-system-version-windows.md)</br>
+- [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
 - [Cihazda BitLocker etkin değil](device-doesnt-have-bitlocker-enabled-windows.md)</br>
 - [Cihazda kötü amaçlı yazılımdan koruma yazılımı etkin değil](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
 - [Cihazda Güvenli Önyükleme etkin değil](device-doesnt-have-secure-boot-enabled-windows.md)</br>
@@ -63,6 +64,6 @@ Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydolduğunda karşıla
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

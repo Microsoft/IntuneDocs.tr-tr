@@ -34,8 +34,8 @@ Mobil uygulama yönetimi ilkeleri desteği:
 
 -   iOS 7 ve üzeri çalıştıran cihazlar.
 
-> Mobil uygulama yönetimi ilkeleri Intune kaydı yapılmış cihazları destekler.
-> 
+> [!TIP] Mobil uygulama yönetimi ilkeleri Intune kaydı yapılmış cihazları destekler.
+>
 > Intune tarafından yönetilmeyen cihazlar için uygulama yönetimi ilkeleri oluşturma hakkında bilgi arıyorsanız bkz. [Microsoft Intune ile mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 Diğer Intune ilkelerinden farklı olarak, mobil uygulama yönetimi ilkeleri doğrudan dağıtılmaz. Bunun yerine, ilke kısıtlamak istediğiniz uygulamayla ilişkilendirilir. Uygulama dağıtılıp cihazlara yüklendiğinde, belirttiğiniz ayarlar geçerli olur.
@@ -56,7 +56,7 @@ iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar **bir
 
 -   Kullanılan şirket hesabı, cihazı Intune hizmetine kaydetmek için kullanılan hesapla aynı olmalıdır.
 
-> Intune’u Configuration Manager ile birlikte kullanıyorsanız, bkz. [Configuration Manager’da Mobil Uygulama Yönetim İlkeleri Kullanılarak Uygulamaları Denetleme](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP] Intune’u Configuration Manager ile birlikte kullanıyorsanız, bkz. [Configuration Manager’da Mobil Uygulama Yönetim İlkeleri Kullanılarak Uygulamaları Denetleme](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Mobil uygulama yönetimi ilkesiyle uygulama oluşturma ve dağıtma
 
@@ -87,9 +87,9 @@ Yönetilen bir uygulama yayımladığınızda, ilkeyle yönetilen bir uygulama v
 
 1.  Uygulamayı bulut depolama alanınıza yüklemeye hazır olduğunuzda [Microsoft Intune’da mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md) konu başlığı altında verilen yönergeleri izleyin.
 
-2.  iOS uygulamaları için **Bu yazılımın cihazlar için kullanılabilir duruma nasıl getirileceğini seçin** altında **Uygulama Mağazası'ndan Yönetilen iOS Uygulaması**’nı seçin.
+2.  iOS uygulamaları için **Bu yazılımın cihazlara nasıl sunulacağını seçin**altında **App Store'dan Yönetilen iOS Uygulaması**seçeneğini belirleyin.
 
-    Android uygulamaları için **Dış bağlantı**’yı seçin.
+    Android uygulamaları için **Dış bağlantı**seçeneğini belirleyin.
 
 3.   **URL'yi belirtin**altında, daha önce not ettiğiniz ilkeyle yönetilen uygulama için URL'yi girin.
 
@@ -101,7 +101,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra, 3. adı
 
 1.  Uygulamayı bulut depolama alanınıza yüklemeye hazır olduğunuzda [Microsoft Intune’da mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md) konu başlığı altında verilen yönergeleri izleyin.
 
-2.  **Bu yazılımın cihazlar için kullanılabilir duruma nasıl getirileceğini seçin** alanında **Yazılım Yükleyici**'yi seçin.
+2.   **Bu yazılımın cihazlara nasıl sunulacağını seçin**altında **Yazılım Yükleyici**'yi seçin.
 
 3.  **Yazılım yükleyicisi dosya türü** altında **iOS için uygulama paketi (&#42;.ipa dosyası)** öğesini seçin.
 
@@ -111,7 +111,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra, 3. adı
 
 ## **3. Adım:** Mobil uygulama yönetimi ilkesi oluşturma
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **İlke** &gt; **Genel bakış** &gt; **İlke Ekle**’yi seçin.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Genel Bakış** &gt; **İlke Ekle**’ye tıklayın.
 
 2.  Uygulamaları yapılandırmak istediğiniz cihaz türüne bağlı olarak, şu **Yazılım** ilkelerinden birini yapılandırın ve dağıtın:
 
@@ -139,7 +139,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra, 3. adı
     |**Erişim için kurumsal ilkeyle cihaz uyumluluğu gerektir**|Uygulamanın yalnızca cihazın güvenliği kırılmamışsa kullanılmasına izin verilir.|
     |**Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)**| **Zaman aşımı** alanında, uygulama için erişim gereksinimlerinin uygulama başlatıldıktan sonra yeniden denetleneceği zaman aralığını belirtin.|
     |**Çevrimdışı kullanım süresi**|Cihaz çevrimdışı ise, uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını belirtin.|
-    |**Uygulama verilerini şifreleme**|SD kartlar gibi harici olarak depolanan veriler dahil uygulamayla ilişkili tüm verilerin şifreleneceğini belirtir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalar için, veriler işletim sistemi tarafından sağlanan cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu, BT yöneticisi tarafından ayarlanması gereken cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesi ayarlarına göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS 7 tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/en-us/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalar için, şifreleme Microsoft tarafından sağlanır. Veriler mobil uygulama yönetimi ilkesi ayarına göre G/Ç işlemleri sırasında eşzamanlı olarak şifrelenir. Android'de yönetilen uygulamalar, platform şifreleme kitaplıklarını kullanarak CBC modunda AES-128 şifrelemesi kullanır. Şifreleme yöntemi FIPS 140-2 sertifikalı değildir. Cihaz depolamasındaki içerik her zaman şifrelenir.|
+    |**Uygulama verilerini şifreleme**|SD kartlar gibi harici olarak depolanan veriler dahil uygulamayla ilişkili tüm verilerin şifreleneceğini belirtir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalar için, veriler işletim sistemi tarafından sağlanan cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu, BT yöneticisi tarafından ayarlanması gereken cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesi ayarlarına göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS 7 tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/en-us/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalar için, şifreleme Microsoft tarafından sağlanır. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir.  Cihaz depolamasındaki içerik her zaman şifrelenir. Şifreleme yöntemi FIPS 140-2 sertifikalı değildir.|
     |**Ekran yakalamayı engelle** (yalnızca Android cihazlar)|Bu uygulama kullanılırken cihazın ekran yakalama özelliklerinin engellendiğini belirtir.|
 
 4.  İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.
@@ -151,8 +151,8 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 
 Ayrıntılar için bkz. [Microsoft Intune'da uygulamaları dağıtma](deploy-apps.md).
 
-> iOS 7.1'den önceki işletim sistemlerini çalıştıran cihazlar için, uygulama kaldırıldığında ilişkili ilke kaldırılmaz.
-> 
+> [!IMPORTANT] iOS 7.1'den önceki işletim sistemlerini çalıştıran cihazlar için, uygulama kaldırıldığında ilişkili ilke kaldırılmaz.
+>
 > Cihazın Intune kaydı kaldırılırsa, ilkeler uygulamalardan kaldırılmaz; ilkenin geçerli olduğu uygulamalarda, uygulama kaldırılıp yeniden yüklense bile ilke ayarları korunur.
 
 ### Bir uygulama cihazlarda zaten dağıtıldıysa yapılacaklar
@@ -162,7 +162,7 @@ Bu durumda, yapılandırdığınız yönetilen sürümün yüklenebilmesi için 
 
 Ancak, iOS 9 ve üstü sürümleri çalıştıran cihazlarda Intune, kullanıcıdan mevcut uygulamanın yönetimini almak için otomatik olarak izin ister. Kullanıcının kabul etmesi durumunda uygulama Intune tarafından yönetilir hale gelir ve uygulamayla ilişkilendirdiğiniz tüm mobil uygulama yönetimi ilkeleri de geçerli olur.
 
-> Cihaz denetimli moddaysa, Intune kullanıcıdan izin istemeden mevcut uygulamanın yönetimini devralır.
+> [!TIP] Cihaz denetimli moddaysa, Intune kullanıcıdan izin istemeden mevcut uygulamanın yönetimini devralır.
 
 ## **5. Adım:** Uygulama dağıtımını izleme.
 Bir mobil uygulama yönetimi ilkesiyle ilişkili bir uygulama oluşturup dağıttıktan sonra, uygulamayı izlemek ve ilke çakışmalarını çözmek için aşağıdaki yordamları kullanın.
@@ -197,9 +197,6 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 -   Cihaza hiçbir ilke dağıtılmadıysa ve çakışan iki ayar dağıtılırsa, cihazda yerleşik olarak bulunan varsayılan ayar kullanılır.
 
 
-
-
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

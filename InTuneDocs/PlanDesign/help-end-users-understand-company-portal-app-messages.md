@@ -45,7 +45,7 @@ Bu iletiler hakkındaki ayrıntılar için ve son kullanıcılarınıza bunlarla
 > [!NOTE]
 > **Şirket Portalı uygulaması hiçbir zaman telefon çağrıları yapmaz veya çağrıları yönetmez!** İleti metni Google tarafından denetlenir ve değiştirilemez.
 
-**Donanım** sayfasını görmek için, **Gruplar** > **Tüm mobil cihazlar** > **Cihazlar**’a gidin. Kullanıcının cihazını seçin ve **Özellikleri Görüntüle** > **Donanım**’a gidin..
+**Donanım** sayfasını görmek için, **Gruplar** > **Tüm mobil cihazlar** > **Cihazlar**’a gidin. Kullanıcının cihazını seçin ve **Özellikleri Görüntüle** > **Donanım**’a gidin.
 
 ### Kullanıcılar erişime izin verirse veya erişimi reddederse ne olur
 Kullanıcılar erişime izin verirse, cihazın telefon numarası ile IMEI numarası, Yönetim konsolundaki Donanım sayfasında görüntülenir.
@@ -55,7 +55,7 @@ Kullanıcılar erişimi reddederse, Şirket Portalı uygulamasını kullanmaya v
 Kullanıcılar erişime izin verip daha sonra erişimi reddederse ileti, kullanıcılar kayıt işleminin ardından Şirket Portalı uygulamasında bir sonraki sefer oturum açtığında görüntülenir.</br></br>Kullanıcılar daha sonra erişime izin vermeye karar verirse, **Ayarlar** > **Uygulamalar** > **Şirket Portalı** > **İzinler** > **Telefon**’a gidebilir ve ardından izni etkinleştirebilirler.
 
 ### Daha fazla bilgi için kullanıcılarınızın gönderileceği yer
-[Şirket Portalı uygulamasında oturum açma](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+[Android cihazınızı Intune’a kaydetme](/Intune/EndUser/enroll-your-device-in-intune-android) konusunun 5. adımı
 
 ## Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?
 
@@ -83,6 +83,6 @@ Kullanıcılar, erişimi reddettikten sonra Şirket Portalı uygulamasında ikin
 [Son kullanıcılarınıza Intune kullanma hakkında söylemeniz gerekenler](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

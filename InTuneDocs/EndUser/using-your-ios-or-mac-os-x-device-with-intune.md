@@ -15,7 +15,7 @@ ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -40,9 +40,10 @@ Bu bölümdeki bilgiler, iOS cihazlarında Intune Şirket Portalı yüklemesi ve
 
 ## Cihazınız Intune’a kaydolduğunda yapabilecekleriniz
 
-Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydolduktan sonra yapabileceğiniz işlemlerde size yardımcı olur.
+Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydolduktan sonra yapabileceğiniz işlemlerde size yardımcı olur.
 
 - [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)</br>
+- [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)</br>
 - [Kaybolan veya çalınan cihazınızı sıfırlama (silme)](reset-erase-your-lost-or-stolen-device-ios.md)</br>
 - [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-ios.md)</br>
 - [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-ios.md)</br>
@@ -65,6 +66,6 @@ Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydolduğunda karşılaşab
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

@@ -15,7 +15,7 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,9 +28,9 @@ ms.suite: ems
 
 # Mac OS X cihazınızı Intune’a kaydetme
 
-Mac OS X cihazınızın Intune’a kaydedilmesi, şirketin ağına, iş e-postanıza ve çalışma dosyalarınıza erişmenize olanak tanır ve şirket uygulamalarını alabilmenizi sağlar. Cihazınızı kaydettiğinizde neler olduğu hakkında daha fazla bilgi için, bkz. [Şirket Portalı uygulamasını yüklediğinizde ve cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Mac OS X cihazınızın Intune’a kaydedilmesi, şirketin ağına, iş e-postanıza ve çalışma dosyalarınıza erişmenize olanak tanır ve şirket uygulamalarını alabilmenizi sağlar. Cihazınızı kaydettiğinizde neler olduğu hakkında daha fazla bilgi için, bkz. [Şirket Portalı uygulamasını yüklediğinizde ve cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-Bir iOS cihazı kaydetmeye çalışıyorsanız, bkz. [iOS cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-ios.md).
+iOS cihazı kaydetmeye çalışıyorsanız, bkz. [iOS cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-ios.md).
 
 
 Mac OS X cihazınızı kaydetmek için
@@ -45,7 +45,7 @@ Mac OS X cihazınızı kaydetmek için
 
     ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
 
-4.  **Yönetim Profilini Yükle** iletişim kutusunda **Yükle**’ye dokunun. Kimlik bilgilerinizi girmenizi isteyen bir iletişim kutusu görüntülenirse, kullanıcı adınızı ve parolanızı girin ve ardından **Devam** &gt; **Yükle**’ye dokunun.
+4.  **Yönetim Profilini Yükle** iletişim kutusunda **Yükle**’ye dokunun. Kimlik bilgilerinizi girmenizi isteyen bir iletişim kutusu görüntülenirse kullanıcı adı ve parolanızı girin ve ardından **Devam** &gt; **Yükle**’ye dokunun.
 
     ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
 
@@ -56,6 +56,6 @@ Mac OS X cihazınızı kaydetmek için
 ### Ayrıca bkz.
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

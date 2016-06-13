@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’da Windows bilgisayarı yazılımları için lisans sözleşmelerini yönetme | Microsoft Intune
+title: Windows bilgisayarı yazılımları için lisans sözleşmelerini yönetme | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -45,15 +45,14 @@ Intune yönetim konsolunun **Lisanslar** çalışma alanında şunları yapabili
 
 Buna ek olarak, yazılım başlıkları için yükleme ve lisans sayılarını gösteren lisans raporları da oluşturabilirsiniz. Lisans raporları, Microsoft yazılımı ve Microsoft olmayan yazılım başlıkları için tam lisans konumunuzu değerlendirmenize yardımcı olabilir.
 
-> [!TIP]
-> **Lisanslar** çalışma alanının yönetici konsolunda gösterilmesi için, Intune Windows bilgisayar istemcisiyle en az bir Windows bilgisayarını yönetmeniz gerekir.
+> [!TIP] **Lisanslar** çalışma alanının yönetici konsolunda gösterilmesi için, Intune Windows bilgisayar istemcisiyle en az bir Windows bilgisayarını yönetmeniz gerekir.
 
 ## Microsoft Toplu Lisanslama sözleşmelerini ekleme
-Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri ile satın alınan yazılımlar için lisans bilgileri sağlar. Eşleşen anlaşma numarası çiftleri sağlayarak Intune’a Microsoft Toplu Lisanslama anlaşmaları ekleyebilirsiniz. Sözleşme veya yetkilendirme sayıları, doğru lisans ya da kayıt sayılarıyla eşleşmelidir. [Toplu Lisanslama Hizmet Merkezi (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842) içinden lisans sözleşmelerini satın aldığınızda anlaşma numarası çiftleri elde edilir..
+Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri ile satın alınan yazılımlar için lisans bilgileri sağlar. Eşleşen anlaşma numarası çiftleri sağlayarak Intune’a Microsoft Toplu Lisanslama anlaşmaları ekleyebilirsiniz. Sözleşme veya yetkilendirme sayıları, doğru lisans ya da kayıt sayılarıyla eşleşmelidir. [Toplu Lisanslama Hizmet Merkezi (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)içinden lisans sözleşmelerini satın aldığınızda anlaşma numarası çiftleri elde edilir.
 
-1.  [Microsoft Intune yönetici konsolunda](https://account.manage.microsoft.com/admin/default.aspx) **Lisanslar**’a tıklayın..
+1.  [Microsoft Intune yönetici konsolunda](https://account.manage.microsoft.com/admin/default.aspx) **Lisanslar**’a tıklayın.
 
-2.  **Anlaşma Ekle** sayfasındaki **Anlaşma Türünü Seç**’in altında **Toplu Lisanslama anlaşması**’nı seçin..
+2.  **Anlaşma Ekle** sayfasındaki **Anlaşma Türünü Seç**’in altında **Toplu Lisanslama anlaşması**’nı seçin.
 
 3.  **Anlaşma Ayrıntıları Ekle** bölümünde aşağıdakilerden birini seçin:
 
@@ -65,7 +64,7 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
         -   Yalnızca ASCII karakterleri desteklenir.
 
-        -   Sözleşme adında şu karakterlere izin verilmez: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Adda boşluklara izin verilir.
+        -   Anlaşma adında şu karakterlere izin verilmez: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Adda boşluklara izin verilir.
 
         -   Dosya adı 128 karakterden uzun olmamalıdır.
 
@@ -97,8 +96,7 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
         -   **Lisans/Kayıt/Müşteri numarası** - Lisans çiftinin lisans/kayıt/müşteri numarasını girin.
 
-        > [!NOTE]
-        > Birkaç anlaşma numarası çifti eklerseniz, Intune belirttiğiniz adla tek bir anlaşma oluşturur ve eklediğiniz tüm çiftler bu anlaşmanın bir parçası olur.
+        > [!NOTE] Birkaç anlaşma numarası çifti eklerseniz, Intune belirttiğiniz adla tek bir anlaşma oluşturur ve eklediğiniz tüm çiftler bu anlaşmanın bir parçası olur.
 
     Başka bir anlaşma numarası çift eklemek için **+** öğesine veya daha önce girdiğiniz bir anlaşma numarası çiftini kaldırmak için **-** öğesine tıklayabilirsiniz.
 
@@ -110,14 +108,13 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
     -   **Anlaşmaları var olan bir lisans grubuna ekle** - **Grup adı** listesinde, anlaşmaları eklemek istediğiniz lisans grubunu seçin.
 
-5.  **Tamam**'a tıklayın..
+5.  **Tamam**'ı tıklatın.
 
 **Tüm Anlaşmalar** görünümü gösterilir ve Intune, sağladığınız anlaşma numarası çiftlerini doğrulamak için Microsoft Toplu Lisanslama Hizmeti Merkezi’ne bağlanır.
 
-Intune’da lisans sözleşmelerini ekledikten sonra toplu lisans bilgilerini güncelleştirmek için, **Lisanslara Genel Bakış** sayfasında **Şimdi Yenile**‘ye tıklayın. Bu eylem, [Microsoft Toplu Lisanslama Hizmet Merkezi’nden (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842) geçerli lisans bilgilerini alır..
+Intune’da lisans sözleşmelerini ekledikten sonra toplu lisans bilgilerini güncelleştirmek için, **Lisanslara Genel Bakış** sayfasında **Şimdi Yenile**‘ye tıklayın. Bu eylem, [Microsoft Toplu Lisanslama Hizmet Merkezi (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)içinden geçerli lisans bilgilerini alır.
 
-> [!IMPORTANT]
-> Toplu lisanslama bilgilerini yenileyinceye kadar, **Anlaşmalara Genel Bakış** sayfasında yetkilendirme bilgilerini ve anlaşma listesinde farklı bilgiler görebilirsiniz.
+> [!IMPORTANT] Toplu lisanslama bilgilerini yenileyinceye kadar, **Anlaşmalara Genel Bakış** sayfasında yetkilendirme bilgilerini ve anlaşma listesinde farklı bilgiler görebilirsiniz.
 
 Toplu lisans bilgilerini yeniledikten sonra lisans bilgilerini, **Uygulamalar** çalışma alanındaki algılanan Microsoft yazılımınızla karşılaştırabilirsiniz. Aşağıdaki lisans raporlarını da çalıştırabilirsiniz:
 
@@ -125,8 +122,7 @@ Toplu lisans bilgilerini yeniledikten sonra lisans bilgilerini, **Uygulamalar** 
 
 -   **Lisans Yükleme Raporları** - Lisans sözleşmenizin kapsamının yeterli olup olmadığını saptamanıza yardımcı olur.
 
-> [!NOTE]
-> Tüm Microsoft Toplu Lisans anlaşmaları için görüntülenen **Ürün Başlığı** **Kullanılamaz** sözcüğüdür..
+> [!NOTE] Tüm Microsoft Toplu Lisans anlaşmaları için görüntülenen **Ürün Başlığı** **Kullanılamaz** sözcüğüdür.
 
 ## Diğer yazılım lisansı anlaşmalarını ekleme ve düzenleme
 Intune’a, Microsoft Toplu Lisanslama sözleşmelerinin yanı sıra, başka türlerde lisans sözleşmeleri de ekleyebilirsiniz. Bu sözleşmeler, bir perakendeciden satın alınan Microsoft olmayan yazılımları veya Microsoft yazılımlarını içerebilir.
@@ -136,7 +132,7 @@ Intune’a, Microsoft Toplu Lisanslama sözleşmelerinin yanı sıra, başka tü
 
 ### Diğer yazılım anlaşmalarını eklemek için
 
-1.  [Microsoft Intune yönetici konsolunda](https://account.manage.microsoft.com/admin/default.aspx) **Lisanslar**’a tıklayın..
+1.  [Microsoft Intune yönetici konsolunda](https://account.manage.microsoft.com/admin/default.aspx) **Lisanslar**’a tıklayın.
 
 2.  **Diğer Yazılım Lisanslama Anlaşmaları** bölümünde **Anlaşma Ekle** ‘ye tıklayın.
 
@@ -149,11 +145,11 @@ Intune’a, Microsoft Toplu Lisanslama sözleşmelerinin yanı sıra, başka tü
     -   **Yayımcı** (gerekli). Bir yayımcı adı yazmaya başladığınızda hizmet yazdığınız harfleri içeren tüm yayımcı adlarını getirir. Örneğin, "soft" yazarsanız hizmet, adında “soft” geçen tüm yayımcı adlarını getirir; örneğin, “Microsoft" ve "Microsoft Research". Yayımcı adları, Yazılım Varlığı Kataloğundan alınır. Ürün başlığını girebilmeniz için önce yayımcıyı seçmeniz gerekir.
 
         > [!IMPORTANT]
-        > Eklemek istediğiniz şirket bu listede gösterilmiyor olabilir. Yalnızca yazılım varlık kataloğunda zaten var olan şirketler için yazılım anlaşmaları ekleyebilirsiniz. Bununla birlikte, Microsoft en popüler yazılım başlıklarını eklemek için sürekli çalışmaktadır. Bir şirketin bu listeye eklenmesine yönelik bir istek göndermek isterseniz, [Intune Uservoice sitesinde](https://microsoftintune.uservoice.com/) bunu yapabilirsiniz..
+        > Eklemek istediğiniz şirket bu listede gösterilmiyor olabilir. Yalnızca yazılım varlık kataloğunda zaten var olan şirketler için yazılım anlaşmaları ekleyebilirsiniz. Bununla birlikte, Microsoft en popüler yazılım başlıklarını eklemek için sürekli çalışmaktadır. Bir şirketin bu listeye eklenmesine yönelik bir istek göndermek isterseniz, [Intune Uservoice sitesinde](https://microsoftintune.uservoice.com/)bunu yapabilirsiniz.
 
-    -   **Ürün başlığı** (gerekli). Bir ürün başlığı yazmaya başladığınızda hizmet yazdığınız harfleri içeren tüm ürün başlıklarını getirir. **Ürün başlığı**’nı belirtebilmeniz için önce bir **Yayımcı**’yı belirtmeniz gerekir..
+    -   **Ürün başlığı** (zorunlu). Bir ürün başlığı yazmaya başladığınızda hizmet yazdığınız harfleri içeren tüm ürün başlıklarını getirir. Bir **Ürün başlığı** belirtebilmeniz için önce bir **Yayımcı**belirtmeniz gerekir.
 
-    -   **Lisans sayısı** (gerekli). Satın alınan lisans sayısını girin.
+    -   **Lisans sayısı** (zorunlu). Satın alınan lisans sayısını girin.
 
     -   **Lisans başlangıç tarihi**. Lisans kapsamı başlangıç tarihini girin.
 
@@ -169,7 +165,7 @@ Intune’a, Microsoft Toplu Lisanslama sözleşmelerinin yanı sıra, başka tü
 
     -   Yeni anlaşmaları varolan bir lisans grubuna eklemek için **Anlaşmaları var olan bir lisans grubuna ekle** öğesini seçin. **Grup adı** listesinde, anlaşmaları eklemek istediğiniz lisans grubunu seçin.
 
-6.  **Tamam**'a tıklayın..
+6.  **Tamam**'ı tıklatın.
 
 **Tüm Anlaşmalar** liste görünümü görüntülenir.
 
@@ -182,12 +178,12 @@ Yazılım lisanslama anlaşmaları, lisans gruplarına eklenebilir. Lisans sözl
 |Lisans grubu oluşturma|**Lisanslar** çalışma alanının **Genel Bakış** sayfasındaki **Görevler** menüsünde **Lisans Grubu Oluştur** ’a tıklayın. **Not:** Toplamda en fazla 500 lisans grubu oluşturabilirsiniz.|
 |Lisans grubunu yeniden adlandırma|**Lisanslar** çalışma alanında bir lisans grubu seçin ve ardından **Görevler** menüsünde **Lisans Grubunu Düzenle** ’ye tıklayın.|
 |Lisans grubunu silme|**Lisanslar** çalışma alanında bir lisans grubu seçin ve ardından **Görevler** menüsünde **Lisans Grubunu Sil** ’e tıklayın. **İpucu:** Silinen grubun içindeki tüm lisanslar **Atanmamış anlaşmalar** lisans grubuna taşınır.|
-|Lisans sözleşmesini silme|**Lisanslar** çalışma alanında bir anlaşma seçin ve **Sil**’e tıklayın. **İpucu:** Toplu Lisanslama anlaşmalarını sildikten sonra, lisans bilgilerini güncelleştirmek için, belirli bir lisans grubunun **Genel** sekmesinde veya **Lisanslara Genel Bakış** sayfasında **Şimdi Yenile**‘ye tıklayın.|
+|Lisans sözleşmesini silme|**Lisanslar** çalışma alanında bir anlaşma seçin ve sonra da **Sil**’e tıklayın. **İpucu:** Toplu Lisanslama anlaşmalarını sildikten sonra, lisans bilgilerini güncelleştirmek için, belirli bir lisans grubu için **Genel** sekmesinde veya **Lisanslara Genel Bakış** sayfasında **Şimdi Yenile**‘ye tıklayın.|
 
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

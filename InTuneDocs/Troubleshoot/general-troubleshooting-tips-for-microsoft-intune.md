@@ -6,7 +6,7 @@ description:
 keywords:
 author: nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerinizle ilgili sorunlarla karşılaşabilirsiniz. Aşağıdaki kaynaklar, sorunu çözebilmek amacıyla sorunun nedenini bulmanıza yardımcı olabilir.
 
 > [!NOTE]
-> Destek isteği oluşturmak veya mevcut bir isteği görüntülemek üzere Office 365 yönetim merkezini ziyaret etmek için [buraya](https://portal.office.com/admin/default.aspx) tıklayın. Destek seçenekleri hakkında daha fazla bilgi için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
+> Destek isteği oluşturmak veya mevcut isteği görüntülemek için [Office 365 yönetim merkezini ziyaret edin](https://portal.office.com/admin/default.aspx). Destek seçenekleri hakkında daha fazla bilgi için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 ## Sorunu tanımlama
 
 -   Davranış nedir?
@@ -45,6 +45,8 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerini
 -   Bu sorun ne sıklıkla oluşuyor ve aralıklı mı, sürekli mi?
 
 -   Kullanıcı bir kimlik doğrulama sorunu yaşıyor olabilir mi? Böyle bir olasılık varsa kullanıcının Azure Active Directory kullanan diğer hizmetlerde oturum açıp açamadığını denetleyin. Ayrıca, kullanıcının farklı bir cihazdan oturum açıp açamadığına bakın.
+
+-   Hizmet durumunu denetlediniz mi? [Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) Intune hizmet durumunu izleyebilirsiniz. Sol bölmede **Hizmet Durumu**’nu seçin. 
 
 ## Kullanılabilir verileri topla
 
@@ -64,7 +66,7 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerini
 
 -   Bir destek isteği açabilirsiniz. Sorunu tanımlayıp kullanılabilir verileri topladığınızda Intune Desteği sorunu çözmenize daha iyi yardımcı olabilecektir.
 
-    Destek isteği oluşturmak üzere Office 365 yönetim merkezini ziyaret etmek için [buraya](https://portal.office.com/admin/default.aspx) tıklayın. Destek seçenekleri hakkında daha fazla bilgi için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
+    Destek isteği oluşturmak için [Office 365 yönetim merkezini ziyaret edin](https://portal.office.com/admin/default.aspx). Destek seçenekleri hakkında daha fazla bilgi için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
 ## Topluluk kaynakları
 Bu topluluk kaynaklarında başka yararlı bilgiler bulabilirsiniz.
@@ -77,8 +79,8 @@ Bu topluluk kaynaklarında başka yararlı bilgiler bulabilirsiniz.
 
 -   [Intune forumları](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-## Sonraki adımlar
-Aşağıda listelenen konular, belirli konular için sorun giderme yardımına sahiptir. Bu bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) kısmında açıklandığı gibi Microsoft Destek ile iletişim kurun.
+### Sonraki adımlar
+Aşağıda listelenen konular, belirli konular için sorun giderme yardımına sahiptir. Bu bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
@@ -93,9 +95,8 @@ Aşağıda listelenen konular, belirli konular için sorun giderme yardımına s
 [Microsoft Intune’da istemci kurulumu sorunlarını giderme](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Microsoft Intune’da yazılım güncelleştirmesi sorunlarını giderme](troubleshoot-software-updates-in-microsoft-intune.md)
-g
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

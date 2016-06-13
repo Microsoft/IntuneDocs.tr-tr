@@ -29,10 +29,10 @@ ms.suite: ems
 
 Intune cihaz yaşam döngüsü cihazın ilk kaydıyla başlar ve çeşitli adımlarda ilerleyerek cihazın artık gerekli olmadığı aşamada son bulur.
 
-![Cihaz yaşam döngüsü](./media/devicelifecycle_nobg.png "the Intune device lifecycle")
+![Cihaz yaşam döngüsü](./media/device-lifecycle.png "the Intune device lifecycle")
 
 ## Kaydetme
-Günümüzün mobil cihaz yönetimi (MDM) stratejileri, çeşitli telefonlar ve tabletler ve bilgisayarlarla (iOS, Android, Windows ve Mac OS X) ilgilenir. Şirkete ait cihazlarda çoğunlukla söz konusu olduğu gibi cihazı yönetebilmeniz gerekiyorsa, ilk adım [cihaz kaydını ayarlamaktır](enroll-devices-in-microsoft-intune.md). Windows bilgisayarları da Intune’a (MDM) kaydederek veya [Intune istemci yazılımını yükleyerek](manage-windows-pcs-with-microsoft-intune.md) yönetebilirsiniz..
+Günümüzün mobil cihaz yönetimi (MDM) stratejileri, çeşitli telefonlar ve tabletler ve bilgisayarlarla (iOS, Android, Windows ve Mac OS X) ilgilenir. Şirkete ait cihazlarda çoğunlukla söz konusu olduğu gibi cihazı yönetebilmeniz gerekiyorsa, ilk adım [cihaz kaydını ayarlamaktır](enroll-devices-in-microsoft-intune.md). Windows bilgisayarları da Intune’a (MDM) kaydederek veya [Intune istemci yazılımını yükleyerek](manage-windows-pcs-with-microsoft-intune.md) yönetebilirsiniz.
 
 ## Yapılandırma
 Cihazlarınızın kaydını yaptırmak yalnızca ilk adımdır. Tüm bu Intune tekliflerinden yararlanmak, ayrıca cihazlarınızın güvenli ve şirket standartlarıyla uyumlu olduğundan emin olmak için, yönetilen cihazların çalışmasını neredeyse her açıdan yapılandırmanıza olanak tanıyan çok çeşitli **ilkeler** arasından seçim yapabilirsiniz. Örneğin, kullanıcılar şirket verilerini içeren cihazlarda parola kullanmalı mı? Bir parola gerektirebilirsiniz. Kurumsal Wifi bağlantınız var mı? Otomatik olarak yapılandırabilirsiniz. Aşağıdaki türlerde yapılandırma seçenekleri sağlanır:
@@ -51,6 +51,6 @@ Modern BT dünyasında cihazları yetkisiz erişime karşı korumak, yerine geti
 Cihaz kaybolduğunda veya çalındığında, değiştirilmesi gerektiğinde veya kullanıcılar başka bir pozisyona geçtiğinde, çoğunlukla cihazı [devre dışı bırakmanın veya temizlemenin](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) zamanı gelmiştir. Cihazı sıfırlamaktan yönetimden kaldırmaya veya üzerindeki şirket verilerini temizlemeye kadar değişen çok çeşitli yollarla bunu yapabilirsiniz.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

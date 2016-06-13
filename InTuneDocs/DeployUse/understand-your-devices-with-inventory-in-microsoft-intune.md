@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’da envanterle cihazlarınızı anlama | Microsoft Intune
+title: Envanterle cihazlarınızı anlama | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,8 +66,7 @@ Mobil cihazlar tarafından toplanan envanteri görüntülemek için, [Mobil Ciha
 |**Şifreleme Etkin**|Tüm cihazlar|
 
 ## Windows bilgisayarlarından ne toplanır
-> [!IMPORTANT]
-> Bu bölüm yalnızca Intune Windows bilgisayarı istemci yazılımı çalıştıran Windows bilgisayarları için geçerlidir.
+> [!IMPORTANT] Bu bölüm yalnızca Intune Windows bilgisayarı istemci yazılımı çalıştıran Windows bilgisayarları için geçerlidir.
 
 Windows bilgisayarları tarafından toplanan envanteri görüntülemek için, [Bilgisayar Envanter Raporları](understand-microsoft-intune-operations-by-using-reports.md)’nı çalıştırın. Intune, Windows bilgisayarlarından aşağıdaki envanteri toplar:
 
@@ -113,11 +112,12 @@ Windows bilgisayarları tarafından toplanan envanteri görüntülemek için, [B
 
 -   **Son Güncelleştirme**
 
-### Ayrıca Bkz.
-[Microsoft Intune ile izleme ve raporlama](monitoring-and-reports-with-microsoft-intune.md)
+<!-- this section below belongs in the planning journey
+### See Also
+[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+-->
 
 
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

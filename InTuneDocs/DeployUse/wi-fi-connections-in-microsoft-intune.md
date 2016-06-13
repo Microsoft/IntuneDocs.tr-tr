@@ -48,7 +48,7 @@ Windows 8.1 ve üzeri bir sürümü çalıştıran cihazlar için daha önce bir
 
 ## Wi-Fi profili oluşturma
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’ye tıklayın
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**'ye tıklayın.
 
 2.  İlke türlerinden birini seçin ve ardından **İlke Oluştur**'a tıklayın:
 
@@ -64,85 +64,91 @@ Windows 8.1 ve üzeri bir sürümü çalıştıran cihazlar için daha önce bir
 
 4.  **Ağ Bağlantıları** değerlerini belirtin:
 
-  | Ayar| Daha fazla bilgi| **Ağ adı**|Kablosuz ağ için açıklayıcı bir ad belirtin. Bu ad, kullanıcının cihazında bir kablosuz ağ seçildiğinde görüntülenen addır.|
+  |Ayar|Daha fazla bilgi| |-----------|--------------------|
+|**Ağ adı**|Kablosuz ağ için açıklayıcı bir ad belirtin. Bu ad, kullanıcının cihazında kablosuz ağ seçildiğinde görüntülenen addır.| |**SSID (Hizmet Kümesi Tanımlayıcısı)**|Cihazların bağlanmasını istediğiniz kablosuz ağın SSID bilgisini belirtin. SSID büyük/küçük harfe duyarlıdır ve kullanıcılara gösterilmez.| |**Bu ağ erişim alanına girdiğinde otomatik olarak bağlan**|Cihazlar erişim alanına girdiğinde bunları kablosuz ağa otomatik olarak bağlamak için bu seçeneği belirtin.| |**Ağ kendi adını (SSID) yayımlamadığında bağlan**|Cihazlar ağ listesinde görünmediğinde (gizlendiği ve adı yayınlanmadığı için) bu cihazların ağa bağlanmasına izin vermek için bu seçeneği belirtin.|
 
-5. **SSID (Hizmet Kümesi Tanımlayıcısı)**|Cihazların bağlanmasını istediğiniz kablosuz ağın (SSID) bilgisini belirtin. SSID'yi büyük/küçük harfe duyarlıdır ve kullanıcılara gösterilmez.|
+5. Seçilen platform için **Güvenlik Ayarları** 'nı yapılandırın. Kullanılabilir ayarlar seçtiğiniz güvenlik türlerine bağlıdır.
 
-  #### **Bu ağ aralık içinde olduğunda otomatik olarak bağlan**|Aralıkta olduğunda kablosuz ağa cihazları otomatik olarak bağlamak için bu seçeneği belirleyin.|
+  #### Android cihazlar için
 
-  **Ağ adını yayınlamadığında bağlan (SSID)**|Cihazların, ağ listesinde görünmediğinde (gizli olduğu veya adını yayınlamadığı için) ağa bağlanmasına izin vermek istiyorsanız bu seçeneği belirleyin.<br /><br />-   **Seçilen platform için **Güvenlik Ayarları** 'nı yapılandırın.**<br />-   Kullanılabilir ayarlar seçtiğiniz güvenlik türlerine bağlıdır.<br /><br />-   **Android cihazlar için**<br />-   **| Ayar adı| Daha fazla bilgi | Şu durumlarda kullanın:|**<br />-   **Güvenlik türü**|Kablosuz ağ için güvenlik protokolü seçin: WPA-Kuruluş/WPA2-Kuruluş<br /><br />-   **Kimlik doğrulama yok (Açık)**, ağ güvenli değilse.|Her zaman|<br />-   **EAP Tipi**|Güvenli kablosuz bağlantıların kimliğini doğrulamak için kullanılan Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü seçin:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   ****EAP-TTLS**|**WPA-Kuruluşu/WPA2-Kuruluşu** güvenlik türünü seçtiğinizde.|**<br />-   ****Sunucu doğrulaması için kök sertifikaları seçin**|**Seç**’e tıklayın, ardından bağlantı kimliğini doğrulamak için kullanılan güvenilir kök sertifika profilini seçin.**<br />-   ****Önemli:** Güvenilen kök sertifika profilini oluşturmak için, bkz. [Kaynak erişimini sertifika profilleriyle güvenli hale getirme](secure-resource-access-with-certificate-profiles.md).|Herhangi bir **EAP Türü** seçildiğinde.|**<br /><br />**Kimlik doğrulama yöntemi**|Bağlantı için kimlik doğrulama yöntemini seçin: İstemci sertifikasını belirtmek için**Sertifikalar**  **Kullanıcı adı ve Parola**, kimlik doğrulama için farklı bir yöntem belirtmek amacıyla |**EAP türü**, **PEAP** veya **EAP-TTLS** olduğunda **Kimlik doğrulaması (İç kimlik) için EAP olmayan bir yöntem seçin**| Bağlantı kimliğini nasıl doğrulayacağınızı seçin:
+  |Ayar adı|Daha fazla bilgi|Şu durumlarda kullanın:| |----------------|--------------------|-------------|
+|**Güvenlik türü**|Kablosuz ağ için güvenlik protokolünü seçin:<br /><br />-   **WPA-Kuruluş/WPA2-Kuruluş**<br />-   **Kimlik doğrulama yok (Açık)** Ağ güvenli olmadığında.|Her zaman| |**EAP Tipi**|Güvenli kablosuz bağlantıların kimliğini doğrulamak için kullanılan Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü seçin:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|**WPA-Kuruluş/WPA2-Kuruluş** güvenlik türünü seçtiğinizde.| |**Sunucu doğrulaması için kök sertifikaları seçin**|**Seç**’e tıklayın, ardından bağlantı kimliğini doğrulamak için kullanılan güvenilir kök sertifika profilini seçin. **Önemli:** Güvenilen kök sertifika profilini oluşturmak için, bkz. [Kaynak erişimini sertifika profilleriyle güvenli hale getirme](secure-resource-access-with-certificate-profiles.md).|Herhangi bir **EAP Türü** seçildiğinde.| |**Kimlik doğrulama yöntemi**|Bağlantının kimlik doğrulama yöntemini seçin:<br /><br />-   İstemci sertifikasını belirtmek için**Sertifikalar** <br />-   **Kullanıcı adı ve Parola**, kimlik doğrulamada farklık bir yöntem belirtmek için|**EAP türü** **PEAP** veya **EAP-TTLS** olduğunda.| |**Kimlik doğrulaması için EAP olmayan bir yöntem seçin (İç kimlik)**|Bağlantıda nasıl kimlik doğrulaması yapacağınızı seçin:<br /><br />-   **Yok.**<br />-   **Şifrelenmemiş parola (PAP)**<br />-   **Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**<br /><br />Kullanılabilir seçenekler, seçtiğiniz EAP türüne bağlıdır.|**Kimlik doğrulama yöntemi** **Kullanıcı adı ve Parola** olduğunda.| |**Kimlik gizliliğini etkinleştirin (Dış kimlik)**|EAP kimlik isteğine yanıt olarak gönderilecek metni belirtin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında, başlangıçta bu anonim kimlik doğrulaması gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.|**EAP türü** **PEAP** veya**EAP-TTLS** olduğunda.| |**İstemci kimlik doğrulaması için bir istemci sertifikası seçin (Kimlik Sertifikası)**|**Seç**’e tıklayın, sonra da bağlantıda kimlik doğrulaması yapmak için kullanılan SCEP sertifika profilini seçin. **Önemli:** Bir SCEP sertifika profili oluşturmak için, bkz. [Sertifika profilleriyle kaynak erişimini güvenli hale getirin](secure-resource-access-with-certificate-profiles.md). | Güvenlik türü **WPA-Kuruluş/WPA2-Kuruluş** olduğunda ve herhangi bir **EAP türü** seçildiğinde.|
 
-  #### Yok.
+  #### iOS ve Mac OS X cihazlar için
 
-  Şifrelenmemiş parola (PAP)<br /><br />-   **Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**<br />-   Kullanılabilir seçenekler, seçtiğiniz EAP türüne bağlıdır.|**Kimlik doğrulama yöntemi**, **kullanıcı adı ve Parola** olduğunda<br /><br />-   ****Kimlik gizliliğini etkinleştirin (Dış Kimlik)**|Bir EAP kimlik isteğine yanıt olarak gönderilen metni belirtin.**<br />-   **Bu metin herhangi bir değer olabilir.**<br />-   **Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.|**EAP türü,** **PEAP** veya **EAP-TTLS** olduğunda**<br />-   ****İstemci kimlik doğrulaması için bir istemci sertifikası seçin (Kimlik Sertifikası)**|**Seç**’e tıklayın, ardından bağlantı kimliğini doğrulamak için kullanılan SCEP sertifika profilini seçin.**<br />-   ****Önemli:** Bir SCEP sertifika profili oluşturmak için, bkz. [Sertifika profilleriyle kaynak erişimini güvenli hale getirin](secure-resource-access-with-certificate-profiles.md). | Güvenlik türü **WPA-Kuruluş/WPA2-Kuruluş** olduğunda ve herhangi bir **EAP türü** seçildiğinde.|**<br />-   iOS ve Mac OS X cihazlar için | Ayar adı| Daha fazla bilgi | Şu durumlarda kullanın:| **Güvenlik türü**|Kablosuz ağ güvenlik protokolünü seçin:<br /><br />WPA-Kişisel/WPA2-Kişisel<br /><br /><ul><li>WPA-Kuruluş/WPA2-Kuruluş</li><li>WEP<br /><br /><ul><li>****Kimlik doğrulama yok (Açık)**, ağ güvenli değilse.|Her zaman|**</li><li>****EAP Tipi**|Güvenli kablosuz bağlantıların kimliğini doğrulamak için kullanılan Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü seçin:**</li><li>**EAP-TLS**</li><li>**PEAP**</li><li>**EAP-TLS**</li><li>**EAP-AST**</li></ul></li></ul>LEAP **EAP-SIM**|**WPA-Kuruluş/WPA2-Kuruluş** güvenlik türünü seçtiğinizde **Güvenilir sunucu sertifika adları**|Bağlantı kimliğini doğrulamak için kullanılan güvenilir kök sertifika profilini seçin.<br /><br />**Önemli:** Güvenilen kök sertifika profilini oluşturmak için, bkz. [Kaynak erişimini sertifika profilleriyle güvenli hale getirme](secure-resource-access-with-certificate-profiles.md).|EAP türü olarak **EAP-TLS**, **PEAP**, **EAP-TTLS** veya **EAP-FAST** seçtiğinde
+  |Ayar adı|Daha fazla bilgi|Şu durumlarda kullanın:| |----------------|--------------------|-------------|
+|**Güvenlik türü**|Kablosuz ağ güvenlik protokolünü seçin:<br /><br />-   **WPA-Kişisel/WPA2-Kişisel**<br />-   **WPA-Kuruluş/WPA2-Kuruluş**<br />-   **WEP**<br />-   **Kimlik doğrulama yok (Açık)** Ağ güvenli olmadığında.|Her zaman| |**EAP Tipi**|Güvenli kablosuz bağlantıların kimliğini doğrulamak için kullanılan Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü seçin:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|**WPA-Kuruluş/WPA2-Kuruluş** güvenlik türünü seçtiğinizde.| |**Güvenilir sunucu sertifika adları**|Bağlantı kimliğini doğrulamak için kullanılan güvenilir kök sertifika profilini seçin. **Önemli:** Güvenilen kök sertifika profilini oluşturmak için, bkz. [Kaynak erişimini sertifika profilleriyle güvenli hale getirme](secure-resource-access-with-certificate-profiles.md).|EAP türü olarak **EAP-TLS**, **PEAP**, **EAP-TTLS** veya **EAP-FAST** seçtiğinizde.| |**Korumalı Erişim Kimlik Bilgileri (PAC) Kullan**|İstemciyle kimlik doğrulama sunucusu arasında kimliği doğrulanmış bir tünel oluşturmak için korumalı erişim kimlik bilgilerini kullanın. Varsa, mevcut PAC dosyası kullanılır.|**EAP-türü** **EAP-FAST** olduğunda.| |**PAC Sağla**|PAC dosyasını cihazlarınıza gönderir.<br /><br />Kullanıldığında, PAC dosyasının sunucu kimliği doğrulanmadan sağlanması için **PAC Dosyasını Anonim Olarak Sağla** öğesini de seçebilirsiniz.|**Korumalı Erişim Kimlik Bilgileri (PAC) Kullan** seçildiğinde.| |**Kimlik doğrulama yöntemi**|Bağlantıda kullanılan kimlik doğrulama yöntemini seçin:<br /><br /><ul><li>İstemci sertifikasını belirtmek için**Sertifikalar** </li><li>Kimlik doğrulaması (İç kimlik olarak da bilinir) için aşağıdaki EAP olmayan yöntemlerden birini belirtmek üzere **Kullanıcı Adı ve Parola**:<br /><br /><ul><li>**Yok.**</li><li>**Şifrelenmemiş parola (PAP)**</li><li>**Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP Sürüm 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|**EAP türü** **PEAP** veya **EAP-TTLS** olduğunda.| |**İstemci kimlik doğrulaması için bir istemci sertifikası seçin (Kimlik Sertifikası)**|Bağlantı kimliğini doğrulamak için kullanılan SCEP sertifika profilini seçin. **Önemli:** SCEP sertifika profili oluşturmak için, bkz. [Sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|Güvenlik türü **WPA-Kuruluş/WPA2-Kuruluş** ve **EAP türü** **EAP-TLS**, **PEAP** veya **EAP-TTLS** olduğunda.| |**Kimlik gizliliğini etkinleştirin (Dış kimlik)**|EAP kimlik isteğine yanıt olarak gönderilen metni belirtin. Bu metin herhangi bir değer olabilir.<br /><br />Kimlik doğrulaması sırasında, başlangıçta bu anonim kimlik gönderilir, ardından güvenli bir tünelde gerçek kimlik gönderilir.|**EAP türü,** **PEAP**, **EAP-TTLS** veya **EAP-FAST** olarak ayarlandığında.|
 
-6. **Korumalı Erişim Kimlik Bilgisi (PAC) kullanın**|İstemci ile kimlik doğrulama sunucusu arasında kimliği doğrulanmış bir tünel oluşturmak için korumalı erişim kimlik bilgilerini kullanmayı seçin.
+6. (yalnızca iOS ve MAC OS X) **Proxy Ayarlarını** Yapılandırma
 
-    |Varsa mevcut bir PAC dosyası kullanılır.|**EAP-türü** **EAP-FAST** olduğunda|**PAC gönder**|PAC dosyasını cihazlarınıza gönderir.|Kullanıldığında, PAC dosyasının sunucu kimliği doğrulanmadan sağlanması için **PAC Dosyasını Anonim Olarak Sağla** öğesini de seçebilirsiniz.|**Korumalı Erişim Kimlik Bilgisi (PAC) kullanın** seçildiğinde.||
+    |Ayar adı|Daha fazla bilgi|Şu durumlarda kullanın:|
     |----------------|-------------------|-------------|
-    |****Kimlik doğrulama yöntemi**|Bağlantı için kullanılan kimlik doğrulama yöntemini seçin:**|İstemci sertifikasını belirtmek için**Sertifikalar** <br /><br />-   Kimlik doğrulaması (İç kimlik olarak da bilinir) için aşağıdaki EAP olmayan yöntemlerden birini belirtmek üzere **Kullanıcı Adı ve Parola**:<br />-   Yok.<br />-   Şifrelenmemiş parola (PAP)|Karşılıklı Kimlik Doğrulama Protokolü (CHAP)|
-    |Microsoft CHAP (MS-CHAP)|Microsoft CHAP Sürüm 2 (MS-CHAP v2)|EAP-TLS|
-    |**|**EAP türü**, **PEAP** veya **EAP-TTLS** olduğunda**|**İstemci kimlik doğrulaması için bir istemci sertifikası seçin (Kimlik Sertifikası)**|Bağlantı kimliğini doğrulamak için kullanılan SCEP sertifika profilini seçin.|**Önemli:** Bir SCEP sertifika profili oluşturmak için, bkz. [Sertifika profilleriyle kaynak erişimini güvenli hale getirin](secure-resource-access-with-certificate-profiles.md). | Güvenlik türü **WPA-Kuruluş/WPA2-Kuruluş** olduğunda ve **EAP türü**, **EAP-TLS**, **PEAP** veya **EAP-TTLS** olduğunda|
+    |**Bu Wi-Fi bağlantısı için proxy ayarları**|Proxy ayarları türünü seçin:<br /><br />-   **Hiçbiri** (varsayılan)<br />-   **El ile** - Proxy sunucusunun URL ve bağlantı noktası numarasını el ile belirtin.<br />-   **Otomatik** – Proxy sunucusunu yapılandırmak için bir yapılandırma dosyası kullanın.|Her zaman|
+    |**Proxy sunucu adresi** ve **Bağlantı noktası numarası**|Proxy sunucusunun URL ve bağlantı noktası numarasını belirtin.|**Bu Wi-Fi bağlantısı için proxy ayarları** değeri **El ile** olarak ayarlanır|
+    |**Proxy Sunucusu URL'si**|Proxy sunucusu ayarlarını içeren dosyanın URL'sini belirtin.|**Bu Wi-Fi bağlantısı için proxy ayarları** değeri **Otomatik** olarak ayarlanır|
 
-7.  **Kimlik gizliliğini etkinleştirin (Dış Kimlik)**|Bir EAP kimlik isteğine yanıt olarak gönderilen metni belirtin.
+7.  Wi-Fi profilini kaydetme
 
-Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında, başlangıçta bu anonim kimlik gönderilir, ardından güvenli bir tünelde gerçek kimlik gönderilir.|**EAP türü,** **PEAP**, **EAP-TTLS** veya **EAP-FAST** olarak ayarlandığında
+Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğümünde görüntülenir. Profili dağıtma hakkında bilgi için, bkz. **Sonraki adımlar**
 
-## (yalnızca iOS ve MAC OS X) **Proxy Ayarlarını** Yapılandırma
+## Wi-Fi yapılandırma profilini dışarı aktarma veya içeri aktarma (yalnızca Windows 8.1 ve üzeri)
 
-### Ayar adı
-Daha fazla bilgi Şu durumlarda kullanın:
+### Bir Wi-Fi profilini dışarı aktarma
+Windows'ta **netsh wlan** yardımcı programını kullanarak var olan bir Wi-Fi profilini Intune tarafından okunabilen bir XML dosyasına aktarabilirsiniz. Gerekli WiFi profilinin zaten yüklü olduğu bir Windows bilgisayarda bu aşağıdaki yordamı izleyin.
 
-1.  Bu Wi-Fi bağlantısı için proxy ayarları
+1.  Dışarı aktarılan W-Fi-profilleri için c:\WiFi gibi bir yerel klasör oluşturun
 
-2.  Proxy ayarları türünü seçin:
+2.  Yönetici olarak bir Komut İstemi açın.
 
-3.  **Hiçbiri** (varsayılan)  **El ile** - Proxy sunucusunun URL ve bağlantı noktası numarasını el ile belirtin.
+3.  `netsh wlan show profiles` komutunu çalıştırın ve dışarı aktarmak istediğiniz profilin adını not edin.  Bu örnekte profil adı *WiFiName* şeklindedir.
 
-4.  **Otomatik** – Proxy sunucusunu yapılandırmak için bir yapılandırma dosyası kullanın.
+4.  Şu komutu çalıştırın: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Bunun yapılması hedef klasörünüzde "Wi-Fi-WiFiName.xml" adlı bir Wi-Fi profili dosyası oluşturur.
 
-## Her zaman
-**Proxy sunucu adresi** ve **Bağlantı noktası numarası** Proxy sunucusunun URL ve bağlantı noktası numarasını belirtin.
+## Bir Wi-Fi profilini içeri aktarma
+Daha sonra gerekli kullanıcı veya cihaz grubuna dağıtabileceğiniz bir dizi Wi-Fi ayarını içeri aktarmak için **Windows Wi-Fi İçeri Aktarma İlkesi**'ni kullanın. Bir Wi-Fi profilini dışarı aktarma yordamı için bkz.
 
-1.  **Bu Wi-Fi bağlantısı için proxy ayarları** değeri **El ile** olarak ayarlanır
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**'ye tıklayın.
 
-2.  Proxy Sunucusu URL'si
+2.  **Windows** &gt; **Windows Wi-Fi İçeri Aktarma İlkesi** türünde bir ilke yapılandırın.
 
-    Proxy sunucusu ayarlarını içeren dosyanın URL'sini belirtin. **Bu Wi-Fi bağlantısı için proxy ayarları** değeri **Otomatik** olarak ayarlanır
+    Yalnızca özel bir Windows Wi-Fi içeri aktarma ilkesi oluşturup dağıtabilirsiniz. Önerilen ayarlar kullanılamaz.
 
-3.  Wi-Fi profilini kaydetme
+3.  Windows Wi-Fi İçeri Aktarma İlkesi için aşağıdaki genel değerleri belirtin:
 
-    |Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğümünde görüntülenir.|Profili dağıtma hakkında bilgi için, bkz. **Sonraki adımlar**|
+    |Ayar adı|Daha fazla bilgi|
     |----------------|--------------------|
-    |**Wi-Fi yapılandırma profilini dışarı aktarma veya içeri aktarma (yalnızca Windows 8.1 ve üzeri)**|Bir Wi-Fi profilini dışarı aktarma|
-    |**Windows'ta **netsh wlan** yardımcı programını kullanarak var olan bir Wi-Fi profilini Intune tarafından okunabilen bir XML dosyasına aktarabilirsiniz.**|Gerekli WiFi profilinin zaten yüklü olduğu bir Windows bilgisayarda bu aşağıdaki yordamı izleyin.|
+    |**Ad**|Wi-Fi profilini Intune konsolunda tanımlamak üzere benzersiz bir ad girin.|
+    |**Açıklama**|Wi-Fi profiline ve onu bulmanıza yardımcı olan diğer ilgili bilgilere ilişkin bir açıklama belirtin.|
 
-4.  Dışarı aktarılan W-Fi-profilleri için c:\WiFi gibi bir yerel klasör oluşturun
+4.  **Özel Wi-Fi Profili** üst bilgisi altında aşağıdaki değerleri belirtin:
 
-    |Yönetici olarak bir Komut İstemi açın.|`netsh wlan show profiles` komutunu çalıştırın ve dışarı aktarmak istediğiniz profilin adını not edin.|
+    |Ayar adı|Daha fazla bilgi|
     |----------------|--------------------|
-    |**Bu örnekte profil adı *WiFiName* şeklindedir.**|Şu komutu çalıştırın: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Bunun yapılması hedef klasörünüzde "Wi-Fi-WiFiName.xml" adlı bir Wi-Fi profili dosyası oluşturur.|
-    |**Bir Wi-Fi profilini içeri aktarma**|Daha sonra gerekli kullanıcı veya cihaz grubuna dağıtabileceğiniz bir dizi Wi-Fi ayarını içeri aktarmak için **Windows Wi-Fi İçeri Aktarma İlkesi**'ni kullanın.|
-    |**Bir Wi-Fi profilini dışarı aktarma yordamı için bkz.**|[Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’ye tıklayın|
+    |**Yapılandırma profili dosyası**|Intune içine aktarmak istediğiniz Wi-Fi profili ayarlarını içeren XML dosyasını seçmek için **İçeri Aktar**'a tıklayın.|
+    |**Özel yapılandırma profili adı (kullanıcılara gösterilir)**|Wi-Fi yapılandırma profilinin cihazlarda kullanıcılara gösterilen adını görüntüler.|
+    |**Yapılandırma profili ayrıntıları**|Seçtiğiniz yapılandırma profili için XML kodunu görüntüler.|
 
-5.  **Windows** &gt; **Windows Wi-Fi İçeri Aktarma İlkesi** türünde bir ilke yapılandırın
+5.  İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.
 
-6.  Yalnızca özel bir Windows Wi-Fi içeri aktarma ilkesi oluşturup dağıtabilirsiniz.
+6.  Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğümünde görüntülenir.
 
-## Önerilen ayarlar kullanılamaz.
+## İlkeyi dağıtma
 
-1.  Windows Wi-Fi İçeri Aktarma İlkesi için aşağıdaki genel değerleri belirtin:
+1.   **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
 
-2.  Ayar adı
+2.   **Dağıtımı Yönet** iletişim kutusunda:
 
-    -   Daha fazla bilgi
+    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'a tıklayın.
 
-    -   Ad
-
-
-Wi-Fi profilini Intune konsolunda tanımlamak üzere benzersiz bir ad girin. Açıklama
+    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**'e tıklayın.
 
 
-<!--HONumber=May16_HO2-->
+ **İlke** çalışma alanının **Genel Bakış** sayfasında, bir durum özeti ve uyarılar ilkeyle ilgili işlem yapmanız gereken durumları tanımlar. Ayrıca, Pano çalışma alanında bir durum özeti görüntülenir.
+
+### Ayrıca bkz.
+Önceden paylaşılan anahtarla bir Wi-Fi profilinin nasıl oluşturulduğunu, [Önceden paylaşılan anahtar Wi-Fi profili](pre-shared-key-wi-fi-profile.md) başlığı altında öğrenebilirsiniz.
+
+
+<!--HONumber=May16_HO3-->
 
 

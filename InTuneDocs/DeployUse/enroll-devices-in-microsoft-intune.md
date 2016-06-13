@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cihazları Microsoft Intune’a kaydetme | Microsoft Intune
+title: Cihazları kaydetme | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # Cihazları yönetim için Intune’a kaydetme
 Microsoft Intune mobil cihaz yönetimi (MDM), cihazları yönetime getirmek ve kaynaklara erişim izin vermek için, kayıt olma kullanır. Cihazları kaydetme biçiminiz, cihaz türüne, sahipliğine ve gereken yönetim seviyesine bağlıdır. "Kendi cihazını getir" (BYOD) ve şirkete ait cihaz (COD) senaryoları bir kayıt işlemi gerektirir. Şirket içinde veya bulutta barındırılan Exchange ActiveSync kullanan kuruluşlar, kayıt gereksinimleri olmadan daha hafif yönetim etkinleştirebilir. Windows bilgisayarlar, Intune istemci yazılımı kullanılarak da yönetilebilir.
+
+###  Desteklenen cihaz platformları
+
+Intune aşağıdaki cihaz platformlarını yönetebilir:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## Cihaz kaydını etkinleştirme  
  Kayıt, kullanıcıların kişisel cihazlarında şirket kaynaklarına erişmesini ve yöneticinin, bu cihazların şirket kaynaklarını koruyan ilkelerle uyumluluğunu sağlamasına olanak tanır. Intune ile "kendi cihazını getir" senaryolarını etkinleştirmenin en iyi yolu budur. Yönetici, kaydı Intune konsolunda etkinleştirilmelidir, bu, cihaz ve kullanıcılara lisanslar atama arasında bir güven ilişkisi oluşturulmasını gerektirebilir. Cihaz ardından, genellikle kullanıcıların iş veya okul kimlik bilgilerini girmesiyle kaydedilir. Cihaz ardından Intune'dan ilke alır ve kaynaklara erişim kazanır.
@@ -58,6 +64,6 @@ Intune istemci yazılımıyla yönetilen bilgisayarlar, seçilerek silinemez vey
 [Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

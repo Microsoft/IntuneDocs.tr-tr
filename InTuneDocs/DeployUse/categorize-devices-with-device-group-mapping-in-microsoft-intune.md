@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cihazları Microsoft Intune’da cihaz grubu eşleme ile kategorilere ayırma | Microsoft Intune
+title: Cihaz grubu eşleme ile cihazları kategorilere ayırma | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -45,19 +45,19 @@ Kategori örnekleri:
 Öte yandan, istediğiniz tüm kategorileri yapılandırabilirsiniz.
 
 ## Cihaz grubu eşlemeyi yapılandırma
-1. Kullanmak istediğiniz her cihaz kategorisi için, bir Intune cihaz grubu oluşturun. Grupları oluşturma hakkında bilgi için bkz. [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)..
-2. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’ye tıklayın..
-3. **Yönetim** çalışma alanında, **Mobil Cihaz Yönetimi**’ni genişletin ve **Cihaz Grubu Eşleme**’ye tıklayın..
+1. Kullanmak istediğiniz her cihaz kategorisi için, bir Intune cihaz grubu oluşturun. Grupları oluşturma hakkında bilgi için bkz. [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+2. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’ye tıklayın.
+3. **Yönetim** çalışma alanında, **Mobil Cihaz Yönetimi**’ni genişletin ve **Cihaz Grubu Eşleme**’ye tıklayın.
 4. **Cihaz Grubu Eşleme** sayfasında cihaz grubu eşlemeyi etkinleştirin.
 5. Yeni eşleme kuralı oluşturmak için **Ekle**’ye tıklayın.
 6. **Cihaz grubu eşleme kuralı ekle** iletişim kutusunda, oluşturmak istediğiniz kategorinin adını girin ve ardından açılan listede bu kategoriyi eşlemek istediğiniz cihaz koleksiyonunu seçin. İşiniz bittiğinde **Ekle**’ye tıklayın.
-7. Kategorileri ve grupları eklemeyi tamamladığınızda **Kaydet**’e tıklayın..
+7. Kategorileri ve grupları eklemeyi tamamladığınızda **Kaydet**’e tıklayın.
 
 Artık, kullanıcılar cihazlarını kaydettiklerinde onlara sizin yapılandırdığınız kategori listesi gösterilir. Kategoriyi seçip kaydı tamamladıktan sonra, cihazları seçtikleri kategoriye karşılık gelen cihaz grubuna eklenir.
 
 ### Ayrıca bkz.
 [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

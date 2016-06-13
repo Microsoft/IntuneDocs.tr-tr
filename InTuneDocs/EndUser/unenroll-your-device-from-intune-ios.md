@@ -15,7 +15,7 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -34,7 +34,7 @@ Cihazınızın Intune kaydını kaldırmak için aşağıdaki adımları kullan�
 
 1.  Şirket Portalı uygulamasındaki **Cihazlarım** bölümünden kaydını kaldırmak istediğiniz cihazı seçin.
 
-2.  **Kaldır** &gt; **Kaldır** öğesine dokunun..
+2.  **Kaldır** &gt; **Kaldır**’a dokunun.
 
 Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 
@@ -55,8 +55,8 @@ Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 -   Yalnızca e-posta için yapılandırılan cihazlar artık Şirket Portalı uygulamasında veya web sitesinde gösterilmez.
 
 ### Ayrıca bkz.
-[iOS veya Mac OS X cihazınızı Intune ile kullanma](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

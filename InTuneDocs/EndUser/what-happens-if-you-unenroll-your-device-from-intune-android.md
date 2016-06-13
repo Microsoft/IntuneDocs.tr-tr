@@ -30,21 +30,23 @@ ms.suite: ems
 
 Android cihazınızın Intune kaydını sildiğinizde:
 
+-   Cihazınızın Intune kaydını silersiniz ve bu da BT yöneticinizin artık cihazınızı yönetmeyeceği anlamına gelir. 
+
+-   Şirket verilerine ve kaynaklarına erişimi kaybedersiniz.
+
 -   Cihazınız artık Şirket Portalı’nda gösterilmez.
 
 -   Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
 -   Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.
 
--   Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
-
 Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve cihazınızın kaydını silerseniz cihaz Şirket Portalı'nda görünmez. 
 
-Kaydın nasıl silineceği hakkında yönergeler için bkz. [Şirket Portalı uygulamasını kullanarak cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md)
+Kaydın nasıl silineceği hakkında yönergeler için bkz. [Şirket Portalı uygulamasını kullanarak cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md).
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

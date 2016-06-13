@@ -42,7 +42,7 @@ Mobil cihazlarda yapılandırabileceğiniz ayarların listesi için bkz.:
 
 -   [Configuration Manager'da Mobil Cihazlar için genel ayarlar](https://technet.microsoft.com/en-us/library/dn376523.aspx)
 
-System Center 2012 R2 Configuration Manager hakkında bilgi için bkz. [System Center 2012 Configuration Manager için Belge Kitaplığı](https://technet.microsoft.com/library/gg682041.aspx)..
+System Center 2012 R2 Configuration Manager hakkında bilgi için bkz. [System Center 2012 Configuration Manager için Belge Kitaplığı](https://technet.microsoft.com/library/gg682041.aspx).
 
 ## Intune hizmet güncelleştirmelerinin size nasıl etkileyeceğini anlama
 Intune çevrimiçi bir hizmet olduğundan Microsoft bu hizmeti düzenli aralıklarla güncelleştirebilir.
@@ -51,7 +51,9 @@ Bu hizmet güncelleştirmelerinin sıklığını ve hizmetin kullanımını etki
 
 Intune hizmetindeki değişiklikler hakkında bilgi edinmek için bkz. [Microsoft Intune’daki yenilikler](/intune/deploy-use/Whats-new-in-microsoft-intune.md). [Microsoft Intune Blogu](http://blogs.technet.com/b/microsoftintune/)’nda da hizmetteki değişiklikler tartışılır ve Intune’dan en iyi şekilde yararlanmanıza olanak tanıyacak yararlı ipuçları sağlanır.
 
-Ayrıca, önemli hizmet güncelleştirmeleri doğrudan Intune konsolundaki bildirim panosundan size duyurulacaktır.
+Önemli hizmet güncelleştirmeleri de [Office 365 yönetim portalı](https://portal.office.com/Admin/Default.aspx) İleti Merkezi’nde size bildirilir. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz.
+
+> [!NOTE] [Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) Intune hizmet durumunu izleyebilirsiniz. Sol bölmede **Hizmet Durumu**’nu seçin.  
 
 Microsoft’un Intune hizmeti hakkında sağladığı bildirim türleri şunlardır:
 -   Hizmet değişikliklerini planlamanıza yardımcı olmak için, değişikliğin etkisine bağlı olarak, hizmet yükseltmesinden en az 30-90 gün önce. Bu, bildirim panosu uyarıları gibi ürün içi iletişim kanalları kullanılarak yapılır. Bu değişiklikler şunlar olabilir:
@@ -60,7 +62,7 @@ Microsoft’un Intune hizmeti hakkında sağladığı bildirim türleri şunlard
 * Yeni eklenen veya değiştirilen API’ler – Özel uygulamaların geriye dönük uyumluluğundan emin olmak için test yapmanız gerektiği bildirilir
 * Sistem gereksinimlerindeki değişiklikler; örneğin, gereken en düşük tarayıcı sürümü
 * Özellikte yapılan ve özelliği etkinleştirmek veya hizmet kesintisini önlemek için işlem yapmanızı gerektiren güncelleştirmeler.
--   Microsoft, aylık hizmet güncelleştirmemizdeki yeni özellikler, yeni işlevler ve var olan özelliklerde yapılan iyileştirmeler hakkında bilgi sağlar. Microsoft hizmet güncelleştirmelerini genel olarak her ayın ortalarında dağıtır. Güncelleştirmeler [Microsoft Intune’daki yenilikler](/intune/deploy-use/whats-new-in-microsoft-intune.md) bölümünde açıklanmıştır..
+-   Microsoft, aylık hizmet güncelleştirmemizdeki yeni özellikler, yeni işlevler ve var olan özelliklerde yapılan iyileştirmeler hakkında bilgi sağlar. Microsoft hizmet güncelleştirmelerini genel olarak her ayın ortalarında dağıtır. Güncelleştirmeler [Microsoft Intune’daki yenilikler](/intune/deploy-use/whats-new-in-microsoft-intune.md) bölümünde açıklanmıştır.
 -   Intune hizmetinin devre dışı bırakılması durumunda, 12 ay önce bu durum size bildirilecektir.
 
 ## Sizin için uygun olan yönetim çözümünü seçin
@@ -86,6 +88,6 @@ Intune hakkında daha fazla bilgi edinmek için bu kaynakları kullanın:
 [Microsoft Intune'daki yenilikler](/intune/deploy-use/whats-new-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Cihazınızın Intune kaydını sildiğinizde ne olur?
 
-Şirket Portalı uygulamasını cihazınızdan kaldırdığınızda, cihazınızın Intune kaydı da kaldırılır. Neler olduğu hakkında ek bilgi için, kullanmakta olduğunuz cihaz türü ile eşleşen bağlantıyı kullanın.
+Şirket Portalı uygulamasını cihazınızdan kaldırdığınızda, cihazınızın Intune kaydı da kaldırılır. Neler olduğu hakkında ek bilgi için, yukarıdaki “Bu Makalede” bölümünde gösterilen ve kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın.
 
 - [Windows 10 mobil, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 veya Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -43,7 +43,7 @@ ms.suite: ems
 
 -   Intune Endpoint Protection yazılımı bilgisayarınızdan kaldırılır. Bilgisayarınızda başka bir virüsten koruma yazılımı yüklüyse ve yazılım devre dışıysa, Intune Endpoint Protection kaldırıldıktan sonra bu yazılım yeniden etkinleştirilebilir. Şirket Portalı’ndan kaldırdıktan sonra bilgisayarınızı kontrol etmelisinizdir.
 
-    > Diğer bir virüsten koruma yazılımı yeniden etkinleştirilmediyse veya bir virüsten koruma yazılımı yüklü değilse, bilgisayarınız virüs ve kötü amaçlı yazılımlara açık halde olabilir.
+    > [!IMPORTANT] Diğer bir virüsten koruma yazılımı yeniden etkinleştirilmediyse veya bir virüsten koruma yazılımı yüklü değilse, bilgisayarınız virüs ve kötü amaçlı yazılımlara açık halde olabilir.
 
 -   Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak gibi ayarlar geçerliliğini kaybeder.
 
@@ -96,6 +96,6 @@ Windows RT cihazınızı kaldırdığınızda şunlar olur:
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

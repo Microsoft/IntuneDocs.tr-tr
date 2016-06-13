@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Cihazınızı el ile eşitleme
-Uygulama yüklemeniz fazla uzun sürüyorsa, Windows cihazınızı el ile eşitlemek için aşağıdaki yönergeleri izleyin. Bu işlem, yüklemenin hızlanmasına yardımcı olabilir. Sahip olduğunuz cihazın türüyle eşleşen yönergeleri kullanın:
+Uygulama yüklemeniz fazla uzun sürüyorsa, Windows cihazınızı el ile eşitlemek için aşağıdaki yönergeleri izleyin. Bu işlem, yüklemenin hızlanmasına yardımcı olabilir. Yalnızca listelenen sürümler desteklenir. Yukarıdaki "Bu Makalede" bölümünde gösterilen ve sahip olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Masaüstü](#windows-10-desktop)
@@ -37,11 +37,11 @@ Uygulama yüklemeniz fazla uzun sürüyorsa, Windows cihazınızı el ile eşitl
 ## Windows 10 Mobile
 Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 Mobile cihazınızı el ile eşitlemek için:
 
-1. **Tüm uygulamalar** > **Ayarlar** > **Hesaplar**’a gidin..
+1. **Tüm uygulamalar** > **Ayarlar** > **Hesaplar**’a gidin.
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
     
-2. **İş yeri erişimi**’ne dokunun..
+2. **İş yeri erişimi**’ne dokunun.
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
     
@@ -58,15 +58,15 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 
 ## Windows 10 masaüstü
 Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 masaüstü cihazınızı el ile eşitlemek için:
 
-1. Aşağıda gösterildiği gibi **Başlat** düğmesini seçin ve sonra da **Ayarlar**’ı seçin..
+1. Aşağıda gösterildiği gibi **Başlat** düğmesini seçin ve sonra da **Ayarlar**’ı seçin.
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
-2. **Ayarlar** sayfasında **Hesaplar**’ı seçin..
+2. **Ayarlar** sayfasında **Hesaplar**’ı seçin.
  
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
     
-3. **Hesaplar** sayfasında **İş yeri erişimi**’ni seçin..
+3. **Hesaplar** sayfasında **İş yeri erişimi**’ni seçin.
     
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
     
@@ -83,7 +83,7 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 
 ## Windows Phone 8.1
 Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows Phone 8.1 cihazınızı el ile eşitlemek için:
 
-1. **Tüm uygulamalar** > **Ayarlar** > **çalışma alanı**’na gidin..
+1. **Tüm uygulamalar** > **Ayarlar** > **çalışma alanı**’na gidin.
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
     
@@ -102,6 +102,6 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows Pho
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

@@ -28,9 +28,9 @@ ms.suite: ems
 
 # Cihazınızın Intune kaydını silme
 
-Intune’a kaydolduysanız, ancak artık iş veya okul için Windows cihazınızı kullanmak istemiyorsanız ve iş veya okul e-postalarına, uygulamalarına veya diğer kaynaklara erişmeye ihtiyacınız yoksa cihazınızın kaydını silmeniz gerekir.   Cihazınızın Intune kaydını kaldırdıktan sonra artık bu kaynaklara erişemezsiniz. Cihazınızın kaydını sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+Intune’a kaydolduysanız, ancak artık iş veya okul için Windows cihazınızı kullanmak istemiyorsanız ve iş veya okul e-postalarına, uygulamalarına veya diğer kaynaklara erişmeye ihtiyacınız yoksa cihazınızın kaydını silmeniz gerekir. Cihazınızın Intune kaydını kaldırdıktan sonra artık bu kaynaklara erişemezsiniz. Cihazınızın kaydını sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
-Cihazınızın kaydını silmek için kullandığınız cihazla eşleşen adımları kullanın.
+Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde gösterilen ve kullandığınız cihaz türüyle eşleşen bağlantıyı kullanın:
 
 -   [Windows 10 cihazınızın kaydını silme](#unenroll-your-windows-10-device)
 -   [Windows 8.1 bilgisayarınızın kaydını silme](#unenroll-your-windows-8-1-computer)
@@ -69,6 +69,6 @@ Cihazınızın kaydını silmek için kullandığınız cihazla eşleşen adıml
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

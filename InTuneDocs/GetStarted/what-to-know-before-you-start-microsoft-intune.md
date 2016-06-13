@@ -26,11 +26,22 @@ ms.suite: ems
 ---
 
 # Microsoft Intune'u başlatmadan önce bilinmesi gerekenler
+
 ## Genel cihaz ve uygulama yönetim özellikleri
-[!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] kurulumuna başlamadan önce, [Intune’a giriş](/intune/understand-explore/introduction-to-microsoft-intune)’i gözden geçirmeniz ve bu bölümde açıklanan [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] özelliklerine aşina olmanız gerekir. Intune özelliklerine aşina olduktan sonra, ücretli aboneliğinizi ayarlamak için hazır olmanız gerekir. Bir deneme aboneliği ile başladıysanız, bunu daha sonra tam aboneliğe dönüştürebilirsiniz. Bkz. [Microsoft Intune satın alma](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx)
+Microsoft Intune kurulumuna başlamadan önce, [Intune’a giriş](/intune/understand-explore/introduction-to-microsoft-intune) bölümünü gözden geçirmeniz ve bu bölümde açıklanan Intune özelliklerine aşina olmanız gerekir. Intune özelliklerine aşina olduktan sonra, ücretli aboneliğinizi ayarlamak için hazır olmanız gerekir. Bir deneme aboneliği ile başladıysanız, bunu daha sonra tam aboneliğe dönüştürebilirsiniz. Bkz. [Microsoft Intune’u satın alma](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
 
 ### Mobil cihazları ve bilgisayarları, sunucu ya da intranet gereklilikleri olmadan yönetin
-Mobil cihazları ve bilgisayarları bir etki alanına katılmamaları veya şirkete getirilmemeleri durumunda bile yönetebilirsiniz. Bu özelliği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetini mobil veya coğrafi olarak dağılmış bir iş gücü için ideal hale getirir.
+Aşağıdaki mobil cihazları ve bilgisayarları yönetebilirsiniz:
+
+-   Apple iOS 7.1 ve üzeri
+-   Google Android 4.0 ve üzeri (Samsung KNOX dahil)
+-   Windows Phone 8.0 ve üzeri
+-   Windows RT ve Windows 8.1 RT
+-   Windows 8.1 çalıştıran bilgisayarlar
+-   Windows 10 (Home, Pro, Education ve Enterprise sürümleri) çalıştıran bilgisayarlar
+-   Mac OS X 10.9 ve üzeri
+
+Bu cihazları ve bilgisayarları, bir etki alanına katılmasalar veya şirkete getirilmeseler bile yönetebilirsiniz. Bu özellik Intune’u mobil veya coğrafi olarak dağılmış bir iş gücü için ideal hale getirir. Cihazları yönetme hakkında daha fazla bilgi için bkz. [Cihazların nasıl yönetileceğini seçme](/Intune/Deploy-use/choose-how-to-manage-devices).
 
 ### Mobil cihazlar ve bilgisayarların şifrelenmesini gerektirir
 Şifrelemeyi destekleyen mobil cihazların bu özelliği kullanması için şifrelenmesi gerektirilebilir. Ayrıca bunu kullanmak için BitLocker sürücü şifrelemesini destekleyen bilgisayarlar isteyebilirsiniz. Şifreleme içeren bir mobil cihaz veya bilgisayar kaybolur ya da çalınırsa, cihazın depolama ortamındaki veriler okunamaz ve böylece veriler hırsızlığa karşı korunur.
@@ -45,10 +56,10 @@ Bir mobil cihaz veya bilgisayarla ilgili sorun olduğunda bildirimde bulunacak u
 Kullanıcılar Şirket Portalını kullanarak cihazları kaydedebilir, şirket içinde lisanslanan yazılımları yükleyebilir veya BT yöneticileri için iletişim bilgilerini bulabilir.
 
 ### Çok faktörlü kimlik doğrulamasını destekler
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] çok faktörlü kimlik doğrulamasını (MFA) desteklemektedir. Ayrıntılar için bkz. [Çok faktörlü kimlik doğrulaması ile Windows cihazlarını koruma](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)
+Intune, çok faktörlü kimlik doğrulamasını (MFA) destekler. Ayrıntılar için bkz. [Çok faktörlü kimlik doğrulaması ile Windows cihazlarını koruma](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)
 
 ### Birden çok dilde kullanılabilir
-Intune şu dillerde kullanılabilir: Çince (Basitleştirilmiş ve Geleneksel), Çekçe, Danca, Felemenkçe, İngilizce, Fince, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Japonca, Korece, Norveççe, Lehçe, Portekizce, Rumence, Rusça, İspanyolca, İsveççe, Türkçe. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetinin desteklendiği ülkelerin listesi için, bkz. [Uluslararası kullanılabilirlik durumu](https://products.office.com/en-us/business/international-availability)
+Intune şu dillerde kullanılabilir: Çince (Basitleştirilmiş ve Geleneksel), Çekçe, Danca, Felemenkçe, İngilizce, Fince, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Japonca, Korece, Norveççe, Lehçe, Portekizce, Rumence, Rusça, İspanyolca, İsveççe, Türkçe. Intune hizmetinin desteklendiği ülkelerin listesi için, bkz. [Uluslararası kullanılabilirlik durumu](https://products.office.com/en-us/business/international-availability).
 
 ## Ek gereksinimler ve özellikler   
 Bu genel özelliklerin yanı sıra, aşağıdaki özelliklere de aşinalık kazanmalısınız:
@@ -62,6 +73,6 @@ Bu genel özelliklerin yanı sıra, aşağıdaki özelliklere de aşinalık kaza
 - [Microsoft Intune için etki alanı adları](domain-names-for-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

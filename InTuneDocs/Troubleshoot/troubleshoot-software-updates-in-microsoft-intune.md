@@ -249,8 +249,8 @@ Aşağıdaki tabloda Intune **Güncelleştirme Aracısı** hata kodları listele
 - Aniden Microsoft yönetim konsoluna raporlamayı durduruyorlar.  
 - Yüksek CPU kullanımıyla karşılaşıyorlar.
 - Intune portalı aracılığıyla yüklenen uygulamalar yavaş yükleniyor. 
-- Microsoft Intune Center şu hatayı tetikliyor: *Bilgisayarınız güncelleştirilirken bir hata oluştu. Hata bulundu: Kod 0x800705b4*
-- Intune Yönetim Konsolu > Gruplar > Tüm Cihazlar’ın altındaki durum alanında şu görüntüleniyor: *Bu bilgisayarda yüklü olan bir veya daha çok aracıda hatalar var. Bu bilgisayarla ilgili bilgiler doğru veya güncel olmayabilir.*
+- Microsoft Intune Center şu hatayı tetikliyor: *Bilgisayarınız güncelleştirilirken bir hata oluştu. Hata bulundu: Kod 0x800705b4*.
+- Intune Yönetim Konsolu > Gruplar > Tüm Cihazlar’ın altındaki durum alanında şu görüntüleniyor: *Bu bilgisayarda yüklü olan bir veya daha çok aracıda hatalar var. Bu bilgisayarla ilgili bilgiler doğru veya güncel olmayabilir*.
 
 Yenisiyle değiştirilmiş güncelleştirmeler uzun bir süre reddedilmezse, bu sorun ortaya çıkabilir. Uygulama yükleme gibi bazı işlemler sırasında Windows yenisiyle değiştirilmiş tüm güncelleştirmeleri sırayla denetler; böylelikle güncelleştirmeler ve ardılları doğru bir şekilde eşlenir. Yenisiyle değiştirilen güncelleştirmeler listesi çok fazla büyürse, işlem yükü ve gereken süre nedeniyle bu denetim görevi yüksek CPU kullanımına neden olabilir. Bu sorun öncelikle Windows 7 çalıştıran istemcileri etkiler çünkü Windows 7 için yenisiyle değiştirilmiş çok fazla sayıda güncelleştirme vardır. Windows 8 ve sonraki işletim sistemlerinin yenisiyle değiştirilmiş o kadar çok güncelleştirmesi olmadığından, bu sorundan fazla etkilenmez.
 
@@ -261,13 +261,13 @@ Yenisiyle değiştirilmiş güncelleştirmeler uzun bir süre reddedilmezse, bu 
 4. Windows 7’ye veya etkilenen istemcilere yüklenmiş olan uygulamalara (örneğin, Microsoft Office) uygulanabilecek, yenisiyle değiştirilmiş tüm güncelleştirmeleri reddedin. 
 5. Etkilenen istemcileri yeniden başlatın.
 
-Buna ek olarak, Windows 7 çalıştırıyorsanız şu güncelleştirmeyi yüklediğinizden emin olun:[3050265 Windows 7 için Windows Update İstemcisi: Haziran 2015](https://support.microsoft.com/kb/3050265)
+Buna ek olarak, Windows 7 çalıştırıyorsanız şu güncelleştirmeyi yüklediğinizden emin olun:[3050265 Windows 7 için Windows Update İstemcisi: Haziran 2015](https://support.microsoft.com/kb/3050265).
 
 ### Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

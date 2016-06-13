@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Microsoft Intune için ağ altyapısı gereksinimleri
-Microsoft Intune’u ayarlamadan önce bu konuyu ve [Microsoft Intune’u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md) başlığı altında listelenen diğer gereksinimleri gözden geçirin..
+Microsoft Intune’u ayarlamadan önce bu konuyu ve [Microsoft Intune’u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md) başlığı altında listelenen diğer gereksinimleri gözden geçirin.
 
 Bu konu başlığı altında, ağ altyapınızın yönettiğiniz cihazlar ve Intune aboneliğinizi yönetmek için kullandığınız cihazlarla bulut tabanlı hizmetin kullandığı İnternet üzerindeki web siteleri arasında iletişime geçirmesini sağlar gereksinimler listelenir.
 
@@ -169,20 +169,10 @@ Tek bir istemci bilgisayarın proxy sunucu ayarlarını değiştirebilir veya Gr
 Ayrıca Intune istemcileri tarafından kullanılan [ağ bant genişliğini azaltmak üzere](network-bandwidth-use.md) içeriği önbelleğe alan bir proxy sunucu kullanabilirsiniz.
 
 
-
-## Hizmetten Hizmete bağlayıcı gereksinimleri
-Hizmetten Hizmete bağlayıcı yalnızca bulut tabanlı Exchange'i destekler ve şirket içi altyapıyla ilgili bir gereksinimi yoktur.
-
-Bu bağlayıcıyı kullanmak için aşağıdakilerin geçerli olması gerekir:
-
--   Exchange Server 2013 kiracısına sahip bir Office 365 aboneliğinizin olması. Kiracı Exchange Server 2013 olduğu sürece, bağlayıcının aynı ortamda Exchange Server 2010'u desteklemesi.
-
--   Şirket İçi bağlayıcıyı yüklemek için kullandığınız kullanıcı hesabının, Intune için kiracı yöneticisi ve Exchange kiracısı içinde Exchange Server 2013'te kullanılacak lisansa sahip bir yönetici olması.
-
 ### Ayrıca bkz.
 [Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

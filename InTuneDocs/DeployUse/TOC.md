@@ -1,5 +1,5 @@
 # [Anlama ve Keşfetme](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Başlarken](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Başlat](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
 # [Dağıtma ve Kullanma](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -30,7 +30,7 @@
 
 ### [İlkelerle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS ayarları](ios-policy-settings-in-microsoft-intune.md)
-#### [Android ayarları](android-policy-settings-in-microsoft-intune.md)
+#### [Android be Samsung KNOX ayarları](android-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 ve Windows 8.1 ayarları](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 ayarları](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 masaüstü ve Mobile ayarları](windows-10-policy-settings-in-microsoft-intune.md)
@@ -106,6 +106,7 @@
 ### [İş kolu uygulamalarını MAM için hazırlama](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [iOS uygulamalarını sarmalama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Android uygulamalarını sarmalama](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Intune tarafından yönetilmeyen cihazlardaki LOB uygulamaları](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Uygulama yazarken SDK'yı kullanma](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
@@ -120,9 +121,11 @@
 
 ## [Yenilikler](whats-new-in-microsoft-intune.md)
 
+# [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
+
 # [Sorunları Gider](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

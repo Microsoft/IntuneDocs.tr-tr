@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Şirket Portalı Sık Sorulan Sorular | Microsoft Intune
+title: Şirket Portalı hakkında | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -25,80 +25,85 @@ ms.suite: ems
 
 ---
 
-# Şirket Portalı Sık Sorulan Sorular
+# Şirket Portalı hakkında
 
+## Şirket Portalı nedir ve bununla ne yapabilirsiniz?
+Microsoft Intune Şirket Portalı, şirketinizin veya okulunuzun verilerine ve uygulamalarına erişmenizi sağlar. Şirket Portalı’nı iki farklı yolla alabilirsiniz:
 
+- Cihazınıza Şirket Portalı uygulamasını yükleyerek. Normalde Şirket Portalı uygulamasını cihazınızın uygulama mağazasına giderek alabilirsiniz, ama BT yöneticiniz de farklı yöntemler kullanarak Şirket Portalı uygulamasını yükleyebilir.
+- BT yöneticinizin kurduğu [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek. 
 
-## Şirket Portalı nedir?
-Şirket Portalı, şirketinizin iş bilgisayarlarını ve cihazlarını yönetmenize veya iş için kullanmayı seçtiğiniz kişisel bilgisayarları veya cihazları yönetmenize imkan tanıyan arabirimidir.  Şirket Portalı ziyaret ettiğiniz bir web sitesi veya cihazınıza yüklediğiniz bir uygulama olabilir.
+Şirket Portalı uygulamasıyla Şirket Portalı web sitesi arasında birkaç önemsiz fark vardır, ama birinde gerçekleştirdiğiniz görevlerden çoğunu diğerinde de gerçekleştirebilirsiniz. Bazı örnekler:
 
-## Şirket Portalı’yla ne yapabilirim?
-Bilgisayarınızı veya cihazınızı Şirket Portalı’na ekledikten sonra yüklenecek şirket uygulamalarına göz atabilir, eklediğiniz diğer cihazları yönetebilir ve BT yöneticinizin iletişim bilgilerini bulabilirsiniz.
+- Cihazlarınızı kaydetme
+- Cihazlarınızın durumuna bakma
+- Şirketinizin veya okulunuzun sizin kullanımınıza sunduğu uygulamaları indirme
+- Cihazınızı yeniden adlandırma
+- PIN’inizi veya parolanızı sıfırlama
+- Yardım için BT bölümünüze başvurma
+
+Şirket Portalı web sitesiyle yapabileceklerinizi cihazınızdaki Şirket Portalı uygulamasını kullanarak yapabileceklerinizle karşılaştırmak için, aşağıdaki bağlantılardan birini seçin:
+
+> [!div class="op_single_selector"]
+- [Android](using-your-android-device-with-intune.md)
+- [iOS ve Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Windows](using-your-windows-device-with-intune.md)
+- [Şirket Portalı web sitesi](using-the-intune-company-portal-website.md)
 
 ## Şirket Portalı’na bir bilgisayar veya cihaz eklediğim zaman ne olur?
-Şirket Portalı’na bir bilgisayar veya cihaz eklediğinizde bazı yazılımlar yüklenebilir ya da bir uygulama indirilebilir (cihaza bağlı olarak).  Aynı zamanda, BT yöneticinize cihazınızdaki şirket bilgilerinin korunmasına yardımcı olmak için cihazınızı yönetme izni vermiş olursunuz.  
+Şirket Portalı’na bir bilgisayar veya cihaz eklediğinizde bazı yazılımlar yüklenebilir ya da bir uygulama indirilebilir (cihaza bağlı olarak).  Aynı zamanda, BT yöneticinize cihazınızdaki şirket bilgilerinin korunmasına yardımcı olmak için cihazınızı yönetme izni vermiş olursunuz.
+
+BT yöneticinizin cihazınızda neleri görebileceğini, neleri göremeyeceğini öğrenmek için, kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
+
+> [!div class="op_single_selector"]
+- [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [iOS ve Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Şirket Portalı’na ne tür bilgisayarları veya cihazları ekleyebilirim?
 
--   Windows 10 Mobile
-
--   Windows 10 Masaüstü
-
--   Windows Phone 8.1
-
--   Windows 8.1
-
--   Windows RT cihazları
-
--   Windows Phone 8
-
 -   iPhone’lar, iPad’ler ve Mac OS X
 
--   Android cihazlar
+-   Android mobil cihazlar
 
-## Şirket Portalı uygulaması desteklenmiyor
-Şirket Portalı’nın bu sürümü artık kullanım dışı bırakılmıştır. Devam etmek için Windows Mağazası'ndan **Şirket Portalı** uygulamasını indirin.
+-   Windows cihazları
+    -   10 Mobile
+    -   Windows 10 Masaüstü
+    -   Windows Phone 8.1
+    -   Windows 8.1
+    -   Windows RT cihazları
+    -   Windows Phone 8
+    -   iPhone’lar, iPad’ler ve Mac OS X
+    -   Android mobil cihazlar
+
 
 ## Bir bilgisayarı veya cihazı Şirket Portalı’ndan kaldırabilir miyim?
-Evet, bir bilgisayarı veya cihazı Şirket Portalı’ndan kaldırabilir ya da sıfırlayabilirsiniz.  **Kaldırma** ile **sıfırlama** işlemi birbirinden farklıdır:
+Evet, bir bilgisayarı veya cihazı Şirket Portalı’ndan kaldırabilir ya da sıfırlayabilirsiniz. **Kaldırma** ile **sıfırlama** işlemi birbirinden farklıdır:
 
--   Bir bilgisayarı veya cihazı kaldırdığınızda Şirket Portalı’na artık bu cihazdan erişemezsiniz ve bazı şirket verileri cihazınızdan kaldırılabilir.
+Bir bilgisayarı veya cihazı *kaldırdığınızda*, cihazınızın Intune kaydını kaldırmış olursunuz. Kaydını kaldırdıktan sonra, Şirket Portalı’na artık bu cihazdan erişemezsiniz ve bazı şirket verileri cihazınızdan kaldırılabilir. Cihazınızı Şirket Portalı’ndan nasıl kaldıracağınızı görmek için, aşağıdaki bağlantılardan birini seçin:
 
--   Bir bilgisayarı veya cihazı sıfırladığınızda Şirket Portalı bilgisayarınızı veya cihazınızı üreticinin varsayılan ayarlarına geri döndürmeye çalışır.  Bunun yapılması şirket verileri ve kişisel veriler dahil olmak üzere tüm verilerin kaldırılmasıyla sonuçlanır.
+> [!div class="op_single_selector"]
+- [Android](unenroll-your-device-from-intune-android.md)
+- [iOS ve Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [Windows](unenroll-your-device-from-intune-windows.md)
+
+Bilgisayarı veya cihazı *sıfırladığınızda* Şirket Portalı bilgisayarınızı veya cihazınızı üreticinin varsayılan ayarlarına geri döndürmeye çalışır. Cihazınız sıfırlandığında, tüm şirket verileriyle kişisel veriler cihazdan kaldırılır! Cihazınızı kaybettiyseniz, cihazı Şirket Portalı web sitesinden uzaktan da sıfırlayabilirsiniz.
+
+Cihazınızı nasıl sıfırlayacağınızı görmek için, aşağıdaki bağlantılardan birini seçin:
+
+> [!div class="op_single_selector"]
+- [Android](reset-erase-your-lost-or-stolen-device-android.md)
+- [iOS ve Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
+- [Şirket Portalı web sitesinden cihazınızı sıfırlama](reset-your-device-cpwebsite.md)
 
 ## Şirket Portalı’nda cihazlarımın tümünü görmüyorum
 Bir cihazı görmeniz için Şirket Portalı’na eklenmesi gerekir. Şirket Portalı’na yöneticinizin yönergelerine uygun olarak göz atın ve cihazınıza ilişkin adımları izleyin. Ayrıca, sahibi ve yönetimi şirketinize ait olan cihazları görmezsiniz.
 
-## Şirket Portalı’nın yeni bir sürümünü yüklemem gerekiyor
-Şirket Portalı sürümünüz artık desteklenmiyorsa veya Şirket Portalı’nın daha yeni bir sürümü mevcutsa cihazınızı güncelleştirmek için aşağıdaki yordamları kullanın.
-
-### Windows cihazınızı güncelleştirmek için
-
-1.  Windows Mağazası'na gidin ve **şirket portalı** için arama yapın..
-
-2.  Yükleme yönergelerini izleyin.
-
-    > [!NOTE]
-    > Windows Mağazası'na erişemiyorsanız yöneticinize başvurun.
-
-### iOS cihazınızı güncelleştirmek için
-
-Şirket Portalı’nın yeni bir sürümü kullanılabilir olduğunda Apple AppStore sizi uyarır. Cihazınızı güncelleştirmek için uyarıdaki yönergeleri izleyin.
-
-## Bilgisayarımın zaten kayıtlı olduğuna yönelik bir hata alıyorum
-Bu durum bilgisayarınızın Şirket Portalı’na daha önce eklendiği, ancak kullanıcı hesabınızla henüz ilişkilendirilmediği anlamına gelir. Bilgisayarınızı kullanıcı hesabınıza bağlamak ve işlemi tamamlamak için bu yordamı izleyin.
-
-### Bilgisayarınızı bağlamak için
-
-1.  Hesabınıza bağlamak istediğiniz bilgisayarda **Başlangıç** ve ardından **Microsoft Intune Merkezi**'ne tıklayın..
-
-2.  Şirket Portalı’nı açın.
-
-3.  Bilgisayarı kullanıcı hesabınıza bağlama yönergelerini izleyin.
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

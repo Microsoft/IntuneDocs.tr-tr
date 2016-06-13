@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune için Etkinleştirme Kilidi’ni atlama ile iOS cihazlarının korunmasına yardımcı olma | Microsoft Intune
+title: Etkinleştirme Kilidi’ni atlama ile iOS cihazlarının korunmasına yardımcı olma | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -49,7 +49,7 @@ Apple bu sorunların çözülmesine yardımcı olmak için iOS 7.1’de Etkinle�
 > iOS cihazları için denetimli mod, Apple Yapılandırıcı Aracı’nı kullanarak bir cihazın işlevselliğini işe dönük belirli amaçlarla sınırlandırmak için bir cihazı kilitlemenize imkan tanır. Denetimli mod genellikle yalnızca şirkete ait cihazlar içindir.
 
 ## Intune, Etkinleştirme Kilidi’ni yönetmenize nasıl yardımcı olur
-Intune, iOS 7.1 ve sonraki sürümleri çalıştıran hem denetimli hem de denetimsiz cihazların Etkinleştirme Kilidi durumunu isteyebilir. Intune, denetlenen cihazlar için Etkinleştirme Kilidi atlama kodunu alabilir ve doğrudan cihaza gönderebilir. Cihaz silinmişse, kodu kullanıcı adı gibi kullanarak, parolayı da boş bırakarak cihaza doğrudan erişebilirsiniz.
+Intune, iOS 7.1 ve sonraki sürümleri çalıştıran hem denetimli hem de denetimsiz cihazların Etkinleştirme Kilidi durumunu isteyebilir. Intune, yalnızca denetlenen cihazlar için Etkinleştirme Kilidi atlama kodunu alabilir ve doğrudan cihaza gönderebilir. Cihaz silinmişse, kodu kullanıcı adı gibi kullanarak, parolayı da boş bırakarak cihaza doğrudan erişebilirsiniz.
 
 **Bu özelliğin işletme açısından faydaları şunlardır:**
 
@@ -61,9 +61,9 @@ Intune, iOS 7.1 ve sonraki sürümleri çalıştıran hem denetimli hem de denet
 > [!IMPORTANT]
 > Bir cihazda Etkinleştirme Kilidi’ni atladıktan sonra iPhone’umu Bul Uygulaması açılırsa cihaz otomatik olarak yeni bir etkinleştirme kilidi uygular. Bu nedenle, **bu yordamı izlemeden önce cihaza fiziksel olarak sahip olmanız gerekir**.
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirkete Ait Tüm Cihazlar** öğesini seçin..
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirkete Ait Tüm Cihazlar** öğesini seçin.
 
-2.  Etkinleştirme Kilidi’ni atlamak istediğiniz cihazı seçin. **Etkinleştirme Kilidini Atlama**’yı seçin..
+2.  Etkinleştirme Kilidi’ni atlamak istediğiniz cihazı seçin. **Etkinleştirme Kilidini Atlama**’yı seçin.
 
 3.  Uyarı iletisini okuyun. Devam etmek için **Evet**’i seçin.
 
@@ -90,9 +90,9 @@ Hangi cihazların Etkinleştirme Kilidi kullandığını iki yolla görebilirsin
 
 ### Ayrıca bkz.
 [Cihazları devre dışı bırakma](retire-devices-from-microsoft-intune-management.md)
-[Uzak kilitleme ve parola sıfırlama ile cihazlarınızı korumaya yardımcı olma](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
+[Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

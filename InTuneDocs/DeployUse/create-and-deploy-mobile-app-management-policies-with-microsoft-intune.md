@@ -28,14 +28,14 @@ ms.suite: ems
 # Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma
 Mobil uygulama yönetimi (MAM) ilkeleri, Intune tarafından yönetilen veya yönetilmeyen cihazlarda çalışan uygulamalara uygulanabilir. MAM ilkelerinin çalışmasıyla ve Intune MAM ilkeleri tarafından desteklenen senaryolarla ilgili daha ayrıntılı bir açıklama için, [Mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) konusunu okuyun.
 
-Bu konu başlığı altında, **Azure portalında** MAM ilkesi oluşturma işlemi açıklanır. Azure portalında oluşturduğunuz MAM ilkesi, tüm MAM senaryolarında desteklenir:
+Bu konu başlığı altında, **Azure portalında** MAM ilkesi oluşturma işlemi açıklanır. Azure portalı, MAM ilkelerinin oluşturulacağı yeni yönetim konsoludur ve MAM ilkelerini oluşturmak için bu portalı kullanmanızı öneririz. Azure portalı, aşağıdaki MAM senaryolarını destekler:
 - Intune'a kayıtlı cihazlar
 - Üçüncü taraf MDM çözümleri tarafından yönetilen cihazlar
 - Hiçbir MDM çözümü tarafından yönetilmeyen cihazlar (KGC).
 
-Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilen cihazlar için uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
+Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilen cihazlar için olan uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
 >[!IMPORTANT]
-> Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur.
+> Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur. Hem Intune yönetim konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalındaki ilke uygulanır ve kullanıcılara bu ilke dağıtılır.
 
 Android ve iOS platformlarında desteklenen ilke ayarları listesini görmek için, aşağıdakilerden birini seçin:
 
@@ -49,7 +49,7 @@ MAM ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-
 
     ![Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > Azure portalını ilk kez kullanıyorsanız, portalı tanımak için öncelikle [Microsoft Intune MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md) konusunu okuyun.
+    > [!TIP] Azure portalını ilk kez kullanıyorsanız, portalı tanımak için öncelikle [Microsoft Intune MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md) konusunu okuyun.
 
 2.  **Ayarlar** dikey penceresinde **Uygulama ilkesi**’ni seçin.  Yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama ilkesi** dikey penceresi açılır.
 
@@ -65,7 +65,7 @@ MAM ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-
 
 5.  Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**’ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçebilirsiniz. Uygulamaları seçtikten sonra, seçiminizi kaydetmek için **Uygulamalar** dikey penceresinin altındaki **Seç** düğmesini kullanın.
 
-    > Bir ilke oluşturmak için en az bir uygulama seçmeniz gerekir.
+    > [!IMPORTANT] İlke oluşturmak için en az bir uygulama seçmeniz gerekir.
 
 6.  **İlke ekle dikey penceresinde** **Gerekli ayarları yapılandır**’ı seçerek ilke ayarları dikey penceresini açın.
 
@@ -167,6 +167,6 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerde
 [MAM etkin uygulamalar için son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

@@ -30,7 +30,7 @@ ms.suite: ems
 
 Intune’a kaydettiğiniz bir cihazın PIN kodunu veya parolasını kaybederseniz, sıfırlamak için [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanabilirsiniz. Şirket Portalı web sitesi, Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek ve Şirket Portalı uygulamasını kullanırken gerçekleştirebileceğiniz görevlerin çoğunu yapmak için kullanabileceğiniz bir web sayfasıdır.
 
-> [!NOTE] BT yöneticinizin Intune’u nasıl yapılandırdığına bağlı olarak, Şirket Portalı web sitesinde Parolayı Sıfırla düğmesini görmeyebilirsiniz. Windows 8.1 ve Windows RT cihazlarında Geçiş Kodu Sıfırlama desteklenmez.
+> [!NOTE] BT yöneticinizin Intune’u nasıl yapılandırdığına bağlı olarak, Şirket Portalı web sitesinde Geçiş Kodunu Sıfırla düğmesini görmeyebilirsiniz. Windows 8.1 ve Windows RT cihazlarında Geçiş Kodu Sıfırlama desteklenmez.
 
 Geçiş kodunuzu sıfırlamak için:
 
@@ -65,6 +65,6 @@ Geçiş kodunuzu sıfırlamak için:
 ### Ayrıca bkz.
 [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

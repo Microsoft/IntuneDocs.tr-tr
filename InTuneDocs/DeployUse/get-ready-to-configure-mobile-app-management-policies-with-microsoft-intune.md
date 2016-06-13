@@ -27,9 +27,19 @@ ms.suite: ems
 
 # Microsoft Intune ile mobil uygulama yönetimi ilkelerinizi yapılandırmak için hazırlama
 Bu konuda, Azure portalında mobil uygulama yönetimi ilkeleri (MAM) oluşturabilmek için yapmanız gerekenler açıklanmaktadır
-Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolu** kullanıyorsanız, [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilen cihazlar için uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz
+
+Azure portalı, MAM ilkelerinin oluşturulacağı yeni yönetim konsoludur ve MAM ilkelerini oluşturmak için bu portalı kullanmanızı öneririz. Azure portalı, aşağıdaki MAM senaryolarını destekler:
+- Intune'a kayıtlı cihazlar
+- Üçüncü taraf MDM çözümleri tarafından yönetilen cihazlar
+- Hiçbir MDM çözümü tarafından yönetilmeyen cihazlar (KGC).
+
+Azure portalını yeni kullanmaya başladıysanız, hızlı genel bakış bilgileri almak için [Microsoft Intune MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md) konusunu okuyun.
+
+Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, **Intune yönetici konsolu** kullanılarak Intune’a kaydedilen cihazlar için uygulamaları destekleyen bir MAM ilkeleri oluşturabilirsiniz. Ancak, Intune’a kaydedilen cihazlar için bile Azure portalını kullanmanızı öneririz. Intune yönetim konsolunu kullanarak MAM ilkesi oluşturma yönergeleri için, [buraya](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) bakın.
+
 >[!IMPORTANT]
-> Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur.
+> Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Hem Intune yönetim konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalındaki ilke uygulanır ve kullanıcılara bu ilke dağıtılır.
+
 
 ##  Desteklenen platformlar
 - iOS 8.1 veya üzeri
@@ -37,27 +47,31 @@ Bu konuda, Azure portalında mobil uygulama yönetimi ilkeleri (MAM) oluşturabi
 - Android 4 veya üzeri
 
 ##  Desteklenen uygulamalar
-Desteklenen uygulamaların tam listesi görmek için, Microsoft Intune uygulama iş ortakları sayfasında [Microsoft Intune mobil uygulama galerisine](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) gidin.
-Desteklenen senaryoları, platformları ve uygulamanın çoklu kimliği destekleyip desteklemediğini görmek için uygulamaya tıklayın.
+* **Microsoft uygulamaları:** Bu uygulamalarda Intune App SDK’sı yerleşik olarak bulunur ve MAM ilkeleri uygulanmadan önce başka işlem yapmak gerekmez.
+Desteklenen Microsoft uygulamalarının tam listesi görmek için, Microsoft Intune uygulama iş ortakları sayfasında [Microsoft Intune mobil uygulama galerisine](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) gidin. Desteklenen senaryoları, platformları ve uygulamanın çoklu kimliği destekleyip desteklemediğini görmek için, uygulamaya tıklayın.
+* Şirket içi yerleşik **İş kolu uygulamalarınız:** Bunlar, MAM ilkelerini uygulamadan önce Intune Uygulama SDK’sını içerecek şekilde uygulamayı hazırlamanızı gerektirir.
+
+  * Intune tarafından yönetilen cihazlar için, bkz. [MAM için uygulamaların nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+  * Çalışana ait cihazlar gibi yönetilmeyen cihazlar veya üçüncü taraf bir mobil cihaz yönetim çözümü tarafından yönetilen cihazlar için, bkz. [Intune’a kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
 MAM ilkelerini yapılandırmadan **önce** aşağıdakilere ihtiyacınız olacak:
 
 -   **Microsoft Intune için bir abonelik**.    Son kullanıcıların uygulamaları MAM ilkesiyle edinebilmesi için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisanslarına sahip olması gerekir.
 
--   Cihazlarınızı yönetmek için yalnızca Intune veya Intune ile tümleşik Configuration Manager kullanmanıza bağlı olarak, **mobil cihaz yönetimi yetkilisi** **Intune** veya **Configuration manager** olarak ayarlanmalıdır. O365 yerleşik mobil cihaz yönetimi kullanıyorsanız bir Intune aboneliği satın almanız ve [mobil cihaz yönetimi yetkilisini Intune olarak ayarlamanız](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) gerekir
 -   Aşağıdakiler için gerekli bir **Office 365 (O365)** aboneliği:
   - Çoklu kimliği desteği olan uygulamalara MAM ilkeleri uygulamak için.
   - SharePoint Online ve Exchange Online iş hesaplarını oluşturmak için. Exchange Şirket İçi ve SharePoint şirket içi desteklenmez.
+-    **Skype Kurumsal Çevrimiçi** için **modern kimlik doğrulamasını etkinleştirin**. Modern kimlik doğrulama programına kaydolmak için Microsoft Connect’te oturum açın ve [bu formu](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) doldurun.
 
 
 - Kullanıcılar oluşturmak için **Azure Active Directory (Azure AD)**. Son kullanıcı uygulamayı başlatıp iş kimlik bilgilerini girdiğinde Azure AD, kullanıcının kimliğini doğrular.
 
-    > [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konsolunu kullanarak kullanıcıları ayarlıyorsanız, MAM ilke yapılandırmasının ileride Azure portalına taşınacağını ve bu portalı kullanmak için Office 365 portalı aracılığıyla Azure AD kullanıcı grupları ayarlamanız gerektiğini unutmayın.
+    > [!NOTE] [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konsolunu kullanarak kullanıcıları ayarlıyorsanız, MAM ilke yapılandırmasının ileride Azure portalına taşınacağını ve bu portalı kullanmak için Office 365 portalı aracılığıyla Azure AD kullanıcı grupları ayarlamanız gerektiğini unutmayın.
 
 
 ## Kullanıcılar oluşturma ve Microsoft Intune lisansları atama
 
-1. Intune aboneliğine ihtiyacınız vardır: Şu anda cihazlarınızı yönetmek için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanıyorsanız [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz zaten var demektir.  Ayrıca, bir EMS lisansı satın aldıysanız da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz vardır. MAM özelliklerini kullanıma almak için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uygulamasını deniyorsanız [buradan](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)bir deneme hesabı alabilirsiniz
+1. Intune aboneliğine ihtiyacınız vardır: Şu anda cihazlarınızı yönetmek için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanıyorsanız [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz zaten var demektir.  Ayrıca, bir EMS lisansı satın aldıysanız da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz vardır. MAM özelliklerini kullanıma almak için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uygulamasını deniyorsanız [buradan](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) bir deneme hesabı alabilirsiniz.
 
     [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğinizin olup olmadığını denetlemek için Faturalama sayfasına gidin.  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] seçeneğini abonelikler altında **Etkin** olarak görmeniz gerekir.
 
@@ -86,16 +100,16 @@ Aşağıdaki tabloda yönetici kullanıcılara atayabileceğiniz rol ve izinler 
 
 ## Bir kullanıcıya katkıda bulunan rolü atama
 
-**Genel yöneticiler** Azure portalına erişebilir.  Diğer yönetici kullanıcıların ilkeleri yapılandırabilmesini ve diğer mobil uygulama yönetim görevlerini yapabilmesini istiyorsanız **katkıda bulunan rolü** ’nü kullanıcıya aşağıda açıklandığı gibi atayabilirsiniz:
+**Genel yöneticiler** [Azure portalına](https://portal.azure.com) erişebilir.  Diğer yönetici kullanıcıların ilkeleri yapılandırabilmesini ve diğer mobil uygulama yönetim görevlerini yapabilmesini istiyorsanız **katkıda bulunan rolü** ’nü kullanıcıya aşağıda açıklandığı gibi atayabilirsiniz:
 
 
-1.  **Ayarlar** dikey penceresindeki **Kaynak yönetimi** bölümünde **Kullanıcılar**’a tıklayın
+1.  **Ayarlar** dikey penceresindeki **Kaynak yönetimi** bölümünde **Kullanıcılar**’a tıklayın.
 
     ![Azure portalındaki Kullanıcılar dikey ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_AddUsers.png)
 
 2.   **Erişim ekle** dikey penceresini açmak için **Ekle** ‘ye tıklayın.
 
-3.  **Bir rol seçin**’e, ardından **Katkıda bulunan rolü**’ne tıklayın.
+3.   **Bir rol seçin**ve **Katkıda bulunan rolü**’ne tıklayın.
 
     ![Azure portalındaki Bir rol seçin dikey ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_AddRole.png)
 
@@ -103,12 +117,12 @@ Aşağıdaki tabloda yönetici kullanıcılara atayabileceğiniz rol ve izinler 
 
     ![Azure portalındaki Kullanıcı ekle dikey ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_AddusertoRole.png)
 
-    > [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisansı atanmamış bir kullanıcı seçerseniz, kullanıcı bu portala erişemez.
+    > [!IMPORTANT] [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisansı atanmamış bir kullanıcı seçerseniz, kullanıcı bu portala erişemez.
 
 ## Sonraki adımlar
 [Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

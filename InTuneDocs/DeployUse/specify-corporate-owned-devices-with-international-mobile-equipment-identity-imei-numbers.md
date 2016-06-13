@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # Uluslararası mobil donanım kimliği (IMEI) numaralarıyla şirkete ait cihazları belirtme
-Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamaya yardımcı olmak üzere bir IMEI numarasına sahip mobil cihazlar için uluslararası mobil donanım kimliği (IMEI) numaralarını içeri aktarmasını sağlar. Intune’a kaydedildikten sonra, içeri aktarılan IMEI numaralarına sahip cihazlar kişiye ait cihazlara uygulananlardan farklı ilkeleri uygulamak için kullanılabilecek Şirket cihazları olarak etiketlenir.
+Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamaya yardımcı olmak üzere bir IMEI numarasına sahip mobil cihazlar için uluslararası mobil donanım kimliği (IMEI) numaralarını içeri aktarmasını sağlar. Intune’a kaydedildikten sonra, IMEI numaraları içeri aktarılan cihazlar, **Gruplar** > **Genel bakış** > **Tüm Cihazlar** > **Kurumsal Ön kayıtlı cihazlar** > **IMEI’ye Göre (Tüm platformlar)** altında görülebilir.
 
-1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Kurumsal Ön Kayıtlı Cihazlar** &gt; **IMEI’ye Göre (Tüm platformlar)** öğesine gidin ve ardından **Cihaz ekle…** öğesine tıklayın. İki yolla cihaz ekleyebilirsiniz:
+1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Kurumsal Ön Kayıtlı Cihazlar** &gt; **IMEI’ye Göre (Tüm platformlar)** öğesine gidin ve ardından **Cihaz ekle…** öğesini seçin. İki yolla cihaz ekleyebilirsiniz:
 
     -   **Seri numaraları içeren bir CSV dosyası yükleme** – Üst bilgi içermeyen iki sütunun virgülle ayrılmış değer (.csv) listesini oluşturun ve csv dosyası başına 5000 cihaz veya 5 MB ile sınırlayın.
 
@@ -47,13 +47,13 @@ Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamaya yard
 
    *Ayrıntılar*, bir cihazın hangi IMEI numarasıyla ilişkili olduğunu belirleyebilmeniz için yönetim kullanımına yöneliktir. Bu bilgiler cihaza gönderilmez, ancak Intune konsolunda görünür.
 
-2.   **İleri**’ye tıklayın.
-3.  **Cihazları Gözden Geçir** bölmesinde hangi cihaz IMEI numaralarının içeri aktarıldığını onaylayabilirsiniz. Ayrıca, yeniden içeri aktarılmakta olan IMEI numaraları için **Ayrıntılar**’ın üzerine yazabilirsiniz. Geçerli ayrıntıları korumak için **Üzerine Yaz** onay kutusunun işaretini kaldırabilirsiniz. IMEI numaralarını içeri aktarmak için **Son**’a tıklayın.
+2.   **İleri**’yi seçin.
+3.  **Cihazları Gözden Geçir** bölmesinde hangi cihaz IMEI numaralarının içeri aktarıldığını onaylayabilirsiniz. Ayrıca, yeniden içeri aktarılmakta olan IMEI numaraları için **Ayrıntılar**’ın üzerine yazabilirsiniz. Geçerli ayrıntıları korumak için **Üzerine Yaz** onay kutusunun işaretini kaldırabilirsiniz. IMEI numaralarını içeri aktarmak için **Son**’u seçin.
 4.  Eklenen IMEI numaraları ve açıklamalar **IMEI’ye Göre (Tüm platformlar)** listesine eklenir.
 
 İlgili IMEI numarasına sahip cihaz kaydedilirken, genellikle bir kullanıcı Şirket Portalı uygulamasını yükleyip kayıt işlemini tamamladığında, cihaz Şirkete ait olarak etiketlenir ve **IMEI Cihazları** grubunda kayıtlı olarak görünür.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO5-->
 
 

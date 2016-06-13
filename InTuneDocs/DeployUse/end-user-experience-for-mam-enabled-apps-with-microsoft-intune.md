@@ -48,11 +48,11 @@ Mobil uygulama yönetimi (MAM) ilkeleri, yalnızca uygulamalar çalışma bağla
 
     ![OneDrive uygulamasının PIN istenen ekran görüntüsü](../media/AppManagement/iOS_AppPINPrompt.png)
 
-5.  PIN kodunu girip onayladıktan sonra **OneDrive İş** üzerindeki dosyalarınıza erişebilirsiniz.
+5.  PIN’i ayarlayıp onayladıktan sonra **OneDrive for Business**üzerindeki dosyalara erişebilirsiniz.
 
     ![Varolan dosyaların listesiyle açık dosya konumunu gösteren ekran görüntüsü](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > Dağıtılan bir ilkeyi değiştirirseniz, değişiklikler uygulamayı bir sonraki açışınızda uygulanır.
+    > [!NOTE] Dağıtılan bir ilkeyi değiştirirseniz, değişiklikler uygulamayı bir sonraki açışınızda uygulanır.
 
 ##  OneDrive’a Android cihazında erişme
 
@@ -105,13 +105,13 @@ Microsoft Word, bu senaryo için örnek olarak kullanılır.
 
     ![Bir Word belgesinde yazılmış bir cümlenin ekran görüntüsü](../media/AppManagement/iOS_WordCreateCompanyDoc.PNG)
 
-5.  İş konumunuza kaydettiğiniz belgeyi açın.  Metni kopyalayın, kişisel**Facebook** hesabınızı açın ve kopyalanan metni yapıştırmayı deneyin.  İçeriği yeni Facebook gönderisine yapıştıramıyor olmalısınız. Yapıştırma seçeneği devre dışı değildir, ancak **Yapıştır**’a bastığınızda hiçbir şey olmaz.
+5.  İş konumunuza kaydettiğiniz belgeyi açın.  Metni kopyalayın, kişisel**Facebook** hesabınızı açın ve kopyalanan metni yapıştırmayı deneyin.  İçeriği yeni Facebook gönderisine yapıştıramıyor olmalısınız. Yapıştır seçeneği devre dışı değildir, ancak **Yapıştır**’a bastığınızda hiçbir şey olmaz.
 
     ![Kes, kopyala ve yapıştır seçeneklerini gösteren ekran görüntüsü](../media/AppManagement/iOS_WordCopyCompany.png)
 
     ![Facebook gönderisine veri yapıştırılmadığını gösteren ekran görüntüsü](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  Şimdi, 2. ve 3. adımları tekrarlayarak başka bir yeni belge oluşturun, tercih ettiğiniz bir cümle yazın ve çalışmanızı kaydetmek yerine **OneDrive - kişisel** gibi bir kişisel konumunuza kaydedin.
+6.  Şimdi, 2. ve 3. adımları yineleyerek başka bir yeni belge oluşturun, istediğiniz bir tümceyi yazın ve bunu çalışmanıza kaydetmek yerine **OneDrive - kişisel** gibi kişisel bir konumunuza kaydedin.
 
     ![Kopyalanmak üzere seçilen cümleyle kes, kopyala ve yapıştır seçeneği ekran görüntüsü](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -133,27 +133,35 @@ Bir cihazda, MAM ilkeleri dağıtılmadan önce birden çok kullanıcı hesabı 
 
 Birden çok kullanıcı hesabının nasıl ele alındığını daha iyi anlamak için aşağıdaki örnek senaryoyu okuyun.
 
-Kullanıcı A, iki şirkette çalışıyor - **Şirket X** ve **Şirket Y**. Kullanıcı A’nın, her şirket için bir iş hesabı var ve ikisi de MAM ilkelerini dağıtmak için Intune kullanıyor. **Şirket X**, MAM ilkelerini  **Şirket Y**’den **önce** dağıtıyor. **Şirket X** ile ilişkili hesap MAM ilkesini alır, ancak Şirket Y ile ilişkili hesap almaz. Şirket Y ile ilişkili kullanıcı hesabının MAM ilkeleri tarafından yönetilmesini istiyorsanız, Şirket X ile ilişkili kullanıcı hesabını kaldırmanız gerekir.
+Kullanıcı A, iki şirkette çalışıyor - **Şirket X** ve **Şirket Y**. Kullanıcı A’nın, her şirket için bir iş hesabı var ve ikisi de MAM ilkelerini dağıtmak için Intune kullanıyor. **Şirket X**, MAM ilkelerini **Şirket Y**’den **önce** dağıtıyor. **Şirket X** ile ilişkili hesap MAM ilkesini alır, ancak Şirket Y ile ilişkili hesap almaz. Şirket Y ile ilişkili kullanıcı hesabının MAM ilkeleri tarafından yönetilmesini istiyorsanız, Şirket X ile ilişkili kullanıcı hesabını kaldırmanız gerekir.
 ### İkinci hesap ekleme
 #### IOS
-iOS cihazı kullanıyorsanız, aynı cihaza ikinci bir iş hesabı eklemeye çalıştığınızda engelleme iletisi görebilirsiniz.  Ayrıca, mevcut hesabı kaldırıp yenisini ekleme seçeneğini görürsünüz. **Evet**’e tıklayarak bu işlemi yapabilirsiniz
+iOS cihazı kullanıyorsanız, aynı cihaza ikinci bir iş hesabı eklemeye çalıştığınızda engelleme iletisi görebilirsiniz.  Ayrıca, mevcut hesabı kaldırıp yenisini ekleme seçeneğini görürsünüz. **Evet**’e tıklayarak bu işlemi yapabilirsiniz.
 
 ![Engelleme iletisi ve Evet ile Hayır seçenekleri bulunan iletişim kutusunun ekran görüntüsü](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-Android cihaz kullanıyorsanız, mevcut hesabı kaldırıp yenisini eklemeye ilişkin yönergeler bulunan bir engelleme iletisi görebilirsiniz.  Android cihazlarda, mevcut hesabı kaldırın, **Ayarlar &gt; Genel &gt; Uygulama Yöneticisi &gt; Şirket Portalı’na gidin ve "Verileri Temizle"’yi seçin**
+Android cihaz kullanıyorsanız, mevcut hesabı kaldırıp yenisini eklemeye ilişkin yönergeler bulunan bir engelleme iletisi görebilirsiniz.  Android cihazlarda, mevcut hesabı kaldırın, **Ayarlar &gt;Genel &gt;Uygulama Yöneticisi &gt;Şirket Portalı’na gidin ve "Verileri Temizle"’yi seçin**.
 
 ![Hata iletisi ve hesabı kaldırma yönergeleri ekran görüntüsü](../media/AppManagement/Android_SwitchUser.png)
 
 ##  Rights Management paylaşım uygulamasıyla medya dosyalarını görüntüleme
-Şirket AV, PDF ve resim dosyalarını Android cihazlarda görüntülemek için, [Microsoft Rights Management (RMS) paylaşım uygulamasını](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) kullanın
+Şirket AV, PDF ve resim dosyalarını Android cihazlarda görüntülemek için, [Microsoft Rights Management (RMS) paylaşım uygulamasını](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) kullanın.
 
 Bu uygulamayı Google Play mağazasından indirin.  Uygulama cihazınıza yüklendikten sonra, uygulamayı başlatın ve şirket kimlik bilgilerinizle kimlik doğrulayın. Şimdi, ilke ile yönetilen diğer uygulamalardan korumasız ve korumalı dosyaları görüntüleyebiliyor olmalısınız.
+
+**Intune’a kaydedilmeyen Android cihazları**
+
+Intune tarafından yönetilen diğer uygulamalardan dosyaları görüntülemek amacıyla RMS paylaşım uygulamasını kullanabilmeniz için, önce RMS uygulamasını başlatın ve iş hesabınızla kimliğinizi doğrulayın.  Oturum açtığınızda, **yalnızca bir RMS lisansınız olmadığı durumlarda** aşağıdaki iletiyi görürsünüz:
+
+**Kimlik Doğrulaması Başarılı – Şimdi şirket dosyalarını görüntüleyebilirsiniz, ancak kuruluşunuz dosyaları korumanıza izin verecek şekilde ayarlanmamıştır. Diğer ayrıntılar için BT yöneticinize başvurun.**
+
+Bu, şirket dosyalarını görüntülemek için RMS paylaşım uygulamasını kullanmanızı engellemez. Intune tarafından yönetilen diğer uygulamalardan şirket dosyalarını yine açabilir ve görüntüleyebilirsiniz, ayrıca MAM ilkeleri de yine uygulanır.  Bu ileti, RMS paylaşım uygulamasının sağladığı ek koruma özelliklerini ekleyemeyeceğinizi bildirir.  Dosyalarınıza koruma eklemek için RMS lisansınız olmalıdır. RMS dosya koruma özellikleri hakkında daha fazla bilgi edinmek için bkz. [Cihazdaki dosyayı koruma](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) ve [E-postayla paylaştığınız dosyayı koruma](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Ayrıca bkz.
 [Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

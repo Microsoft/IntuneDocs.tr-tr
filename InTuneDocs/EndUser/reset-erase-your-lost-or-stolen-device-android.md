@@ -28,17 +28,17 @@ ms.suite: ems
 
 # Kaybolan veya çalınan cihazınızı sıfırlama (silme)
 
-Telefonunuz çalındıysa veya kaybolduysa, Şirket Portalı uygulamasından veya web sitesinden onu fabrika ayarlarına sıfırlayabilirsiniz. Şirket Portalı kullanmayla ilgili yönergeler için, aşağıdaki adımları kullanın veya bu [videoyu](http://aka.ms/ly1x17) izleyin. Ayrıca, [Şirket Portalı web sitesini kullanarak cihazınızı sıfırlayabilirsiniz](reset-your-device-cpwebsite.md)
+Android telefonunuz çalındıysa veya kaybolduysa, Şirket Portalı uygulamasından veya web sitesinden onu fabrika ayarlarına sıfırlayabilirsiniz. Şirket Portalı kullanmayla ilgili yönergeler için, aşağıdaki adımları kullanın veya bu [videoyu](http://aka.ms/ly1x17) izleyin. Ayrıca, [Şirket Portalı web sitesini kullanarak cihazınızı sıfırlayabilirsiniz](reset-your-device-cpwebsite.md).
 
 Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için, bkz. [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 
-> Bir cihazı fabrika varsayılanlarına sıfırlamak hem kişisel hem de iş ile ilgili bilgilerinizi cihazdan kaldırır.
+> [!WARNING] Cihazı fabrika varsayılanlarına sıfırlamak hem kişisel hem de iş ile ilgili bilgilerinizi cihazdan kaldırır.
 
 1.  Tarayıcınızda [Şirket Portalı web sitesi](http://portal.manage.microsoft.com)’ni açın iş hesabınızda oturum açın.
 
 2.  **Cihazlarım**’a dokunun ve kaybolan veya çalınan cihazın adını seçin.
 
-3.  **Sıfırla** &gt; **Sıfırla**’ya tıklayın
+3.  **Sıfırla** &gt; **Sıfırla**’ya tıklayın.
 
 Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin.
 
@@ -47,6 +47,6 @@ Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden 
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

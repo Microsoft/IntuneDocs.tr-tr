@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek
 
 ### BT İletişim bilgileri şirket portalında yoksa
 
-1.  Intune yönetim konsolunda **Yönetici** &gt; **Şirket Portalı**’na tıklayın.
+1.  Intune yönetim konsolunda **Yönetici**&gt;**Şirket Portalı**’nı seçin.
 
 2.   **BT İletişimi** ayrıntılarını ayarlayın.
 
@@ -63,7 +63,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek
 
 4.  iOS uygulaması indirme ilerleme çubuğu tamamlanır ancak uygulama yükleme başarısız olursa, sağladığınız uygulama dosyalarıyla ilgili bir sorun olabilir.
 
-### Bir iOS uygulamasına tıkladığınızda iTunes App Store'da önceki konumlardan birine geri dönüyorsanız
+### iOS uygulamasının bağlantısı sizi iTunes App Store'daki önceki konumlardan birine geri döndürüyorsa
 
 1.  Geçerli iTunes App Store oturumu önceki uygulama sayfasına açılıyor.
 
@@ -109,6 +109,6 @@ Aşağıdaki tabloda Intune uygulama dağıtımı sırasında oluşabilecek yayg
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

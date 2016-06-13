@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’da Windows ilke ayarları | Microsoft Intune
+title: Windows ilke ayarları | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -26,7 +26,13 @@ ms.suite: ems
 ---
 
 # Microsoft Intune’da Windows ilke ayarları
-Kayıtlı Windows 8 ve Windows 8.1 cihazlarının ayarlarını yapılandırmak için Microsoft Intune **Windows genel yapılandırma ilkesini** kullanın:
+Kayıtlı Windows 8.1 ve Windows 8 cihazlarının ayarlarını yapılandırmak için Microsoft Intune **Windows genel yapılandırma ilkesini (Windows 8.1 ve üstü)** kullanın:
+
+## Uygulanabilirlik ayarları
+
+|Ayar adı|Ayrıntılar|
+|----------------|----------------------------------|
+|**Tüm yapılandırmaları Windows 10'a uygula**|Bu ilkedeki ayarların Windows 8 ve Windows 8.1 cihazlarına ek olarak Windows 10 cihazlarına da uygulanmasına izin verir.|
 
 ## Güvenlik ayarları
 
@@ -37,7 +43,7 @@ Kayıtlı Windows 8 ve Windows 8.1 cihazlarının ayarlarını yapılandırmak i
 |**Minimum parola uzunluğu**<sup>1</sup>|Cihazlarda parola için gereken minimum uzunluğu (karakter cinsinden) yapılandırır.|Evet|Evet|
 |**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Bu sayıda oturum açma girişimi başarısız olursa cihaz silinir.|Evet|Evet|
 |**Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı**|Kilidini açmak için parola gerekmeden önce cihazın ne kadar süreyle boşta kalacağını seçin.| Evet|Evet|
-|**Parola geçerlilik süresi (gün)**|Parolanın değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
+|**Parola geçerlilik süresi (gün)**|Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
 |**Parola geçmişini anımsa**|Kullanıcının önceden kullanılmış parolaları yapılandırıp yapılandıramayacağını belirtir.|Evet|Evet|
 |**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.|Evet|Evet|
 |**Resimli parolaya veya PIN’e izin ver**|Cihazda resimli parola veya PIN kullanımına izin verir. Resimli parola, resimdeki hareketlerle oturum açmasına olanak tanır. PIN, kullanıcıların 4 basamaklı bir kod kullanarak hızla oturum açmalarına olanak tanır.|Evet|Evet|
@@ -47,7 +53,7 @@ Kayıtlı Windows 8 ve Windows 8.1 cihazlarının ayarlarını yapılandırmak i
 
 |Ayar adı|Ayrıntılar|Windows 8.1 ve Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Mobil cihazda şifreleme iste**<sup>1</sup>|Cihazdaki dosyaların şifrelenmesini gerektirir.<br>Windows Phone 8 cihazları için bunu **Evet** olarak ayarlamanız gerekir..|Evet|Hayır|
+|**Mobil cihazda şifreleme iste**<sup>1</sup>|Cihazdaki dosyaların şifrelenmesini gerektirir.<br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.|Evet|Hayır|
 <sup>1</sup> Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
 -   Windows 8.1 çalıştıran cihazlarda şifrelemeyi zorlamak için her bir cihaza [Windows için Aralık 2014 MDM istemci güncelleştirmesi](http://support.microsoft.com/kb/3013816) ’ni yüklemeniz gerekir.
@@ -119,6 +125,6 @@ Kayıtlı Windows 8 ve Windows 8.1 cihazlarının ayarlarını yapılandırmak i
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

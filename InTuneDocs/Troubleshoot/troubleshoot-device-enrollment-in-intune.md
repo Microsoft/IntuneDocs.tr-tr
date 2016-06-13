@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,11 +56,11 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 ### Azure Active Directory portalında cihazları silmek için
 
-1.  [http://aka.ms/accessaad](http://aka.ms/accessaad) bağlantısına göz atın veya [https://portal.office.com](https://portal.office.com) sitesinde **Yönetici** &gt; **Azure AD**’ye tıklayın.
+1.  [Http://aka.ms/accessaad](http://aka.ms/accessaad) bağlantısına göz atın veya [https://portal.office.com](https://portal.office.com) adresinde **Yönetici** &gt; **Azure AD**’yi seçin.
 
 2.  Sayfanın sol tarafındaki bağlantıyı kullanarak Kuruluş Kimliğinizle oturum açın.
 
-3.  Azure Aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez ( **Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısına tıklayın).
+3.  Azure Aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez (**Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
 
 4.   **Active Directory** ’yi ve sonra da kuruluşunuzu seçin.
 
@@ -68,7 +68,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 6.  Cihazlarını silmek istediğiniz kullanıcıyı seçin.
 
-7.  **Cihazlar**’a tıklayın.
+7.  **Cihazlar**’ı seçin.
 
 8.  Artık kullanımda olmayan veya tanımları yanlış olan cihazlar gibi uygun cihazları kaldırın.
 
@@ -111,9 +111,9 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 ### MDM yetkilisi tanımlı değil hatasını giderme
 
-1.  MDM Yetkilisinin kullandığınız Intune hizmetinin, yani Intune, O365 MDM veya Intune ile System Center Configuration Manager için uygun bir şekilde ayarlandığını doğrulayın. Intune için, MDM Yetkilisi **Yönetici** &gt; **Mobil Cihaz Yönetimi**’nde ayarlanır. Intune ile Configuration Manager için, Intune bağlayıcısını yapılandırırken ayarlarsınız ve O365’te bur bir ayardır (**Mobil Cihazlar**).
+1.  MDM Yetkilisinin kullandığınız Intune hizmetinin, yani Intune, O365 MDM veya Intune ile System Center Configuration Manager için uygun bir şekilde ayarlandığını doğrulayın. Intune için, MDM Yetkilisi **Yönetici** &gt; **Mobil Cihaz Yönetimi**’nde ayarlanır. Intune ile Configuration Manager için, Intune bağlayıcısını yapılandırırken ayarlarsınız ve O365’te bu bir ayardır (**Mobil Cihazlar**).
 
-    > MDM yetkilisini ayarladıktan sonra, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) bölümünde açıklandığı gibi yalnızca Desteğe başvurarak değiştirebilirsiniz.
+    > [!NOTE] MDM yetkilisini ayarladıktan sonra, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) bölümünde açıklandığı gibi yalnızca Desteğe başvurarak değiştirebilirsiniz.
 
 2.  Kullanıcının kimlik bilgilerinin Azure Active Directory’yle doğru eşitlendiğinden emin olun. Bunun için UPN değerlerinin Hesap Portalı’ndaki Active Directory bilgileriyle eşleşip eşleşmediğini denetleyin.
     UPN Active Directory bilgileriyle eşleşmiyorsa:
@@ -134,13 +134,13 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
     3.  Veritabanları klasörünü açın ve **CM_DBName** klasörünü bulup açın; burada DBName, müşteri veritabanının adıdır.
 
-    4.  En üstte Yeni Sorgu’ya tıklayın ve aşağıdaki sorguları yürütün:
+    4.  En üstte **Yeni Sorgu**’yu seçin ve aşağıdaki sorguları yürütün:
 
-        -   Tüm kullanıcıları görmek için:
+        -   Tüm kullanıcıları görmek için: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Belirli Kullanıcıları görmek için bu sorguyu kullanın; burada %testuser1%, aramak istediğiniz kullanıcının kullanıcıadı@etkialanı.com değerini temsil eder:
+        -   Belirli Kullanıcıları görmek için bu sorguyu kullanın; burada %testuser1%, aramak istediğiniz kullanıcının kullanıcıadı@etkialanı.com değerini temsil eder: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        Sorguyu yazdıktan sonra **!Execute** öğesine tıklayın.
+        Sorguyu yazdıktan sonra **!Execute** öğesini seçin.
         Sonuçlar döndürüldüğünde, bulut kullanıcı kimliğine bakın.  Hiç kimlik bulunmazsa, kullanıcının Intune’u kullanma lisansı yok demektir.
 
 ## Intune ile System Center Configuration Manager kullanırken mobil cihazlar kayboluyor
@@ -172,7 +172,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 **Çözüm:** Aşağıdaki adımları uygulayın:
 
 1. Windows Intune Bağlayıcısı’nın içinden iOS’u devre dışı bırakın. 
-    1. Intune aboneliğine sağ tıklayın ve "Özellikler"i seçin.
+    1. Intune aboneliğine sağ tıklayın ve **Özellikler**’i seçin.
     1. "iOS" sekmesinde "iOS kaydını etkinleştir" seçeneğinin işaretini kaldırın.
 
 
@@ -194,7 +194,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 
 ## Makine zaten kaydoldu - Hata hr 0x8007064c
-**Sorun:** Kayıt işlemi **Makine zaten kaydoldu** hatasıyla başarısız oluyor. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor
+**Sorun:** Kayıt işlemi **Makine zaten kaydoldu** hatasıyla başarısız oluyor. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.
   
 Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilgisayarın kopyalanmış görüntüsünü içermesi olabilir. Önceki hesabın hesap sertifikası hala bilgisayarda duruyordur.
 
@@ -202,14 +202,14 @@ Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilg
 
 **Çözüm:** 
 
-1. **Başlat** menüsünde **Çalıştır** -> **MMC** 
-1. **Dosya** -> **Ek Bileşen Ekle/Kaldır**
+1. **Başlat** menüsünde **Çalıştır** -> **MMC**. 
+1. **Dosya** -> **Ek Bileşen Ekle/Kaldır**.
 1. **Sertifikalar**’a çift tıklayın, **Bilgisayar hesabı**’nı, **İleri**’yi ve **Yerel Bilgisayar**’ı seçin.
 1. **Sertifikalar (Yerel bilgisayar)** seçeneğine çift tıklayın, **Kişisel/ Sertifikalar**’ı seçin. 
 1. Sc_Online_Issuing tarafından verilen Intune sertifikasını arayın ve bulursanız silin
 1. Varsa şu kayıt defteri anahtarını ve tüm alt anahtarlarını silin: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
 1. Yeniden kaydetmeyi deneyin. 
-1. Makine yine kaydedilmiyorsa, şu anahtarı arayın ve bulursanız silin: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95** 
+1. Makine yine kaydedilmiyorsa, şu anahtarı arayın ve bulursanız silin: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
 1. Yeniden kaydetmeyi deneyin. 
 
     > [!IMPORTANT]
@@ -239,7 +239,7 @@ Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilg
 |0x80240438, 0x80CF0438|Internet Explorer ve Yerel Sistem proxy ayarları yapılandırılmadı.|Intune hizmetine bağlanılamıyor. İstemci proxy ayarlarını denetleyin ve istemci bilgisayardaki proxy yapılandırmasının Intune tarafından desteklendiğinden ve istemci bilgisayarın İnternet erişimi olduğundan emin olun.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|Kayıt paketi güncel değil.|Yönetim çalışma alanından güncel istemci yazılımı paketini indirin ve yükleyin.|
 |0x80043002, 0x80CF3002|Hesap bakım modunda.|Hesap bakım modunda olduğunda yeni istemci bilgisayarlar kaydedilemez. Hesap ayarlarınızı görüntülemek için hesabınızda oturum açın.|
-|0x80043003, 0x80CF3003|Hesap silindi.|Hesabınızın ve Intune aboneliğinizin hala etki olduğunu doğrulayın. Hesap ayarlarınızı görüntülemek için hesabınızda oturum açın.|
+|0x80043003, 0x80CF3003|Hesap silindi.|Hesabınızın ve Intune aboneliğinizin hala etkin olduğunu doğrulayın. Hesap ayarlarınızı görüntülemek için hesabınızda oturum açın.|
 |0x80043005, 0x80CF3005|İstemci bilgisayar devre dışı bırakıldı.|Birkaç saat bekleyin, bilgisayardan istemci yazılımının daha eski sürümlerini kaldırın ve ardından istemci yazılımı yükleme işlemini yeniden deneyin.|
 |0x80043006, 0x80CF3006|İzin verilen maksimum bilgisayar lisansı sayısına ulaşıldı.|Kuruluşunuzun hizmete daha fazla istemci bilgisayar kaydedebilmek için ek bilgisayar lisansları satın alması gerekir.|
 |0x80043007, 0x80CF3007|Yükleyici programla aynı klasörde sertifika dosyası bulunamadı.|Yüklemeyi başlatmadan önce tüm dosyaları ayıklayın. Ayıklanan dosyaları yeniden adlandırmayın veya yerini değiştirmeyin: tüm dosyalar aynı klasörde bulunmalıdır; aksi takdirde yükleme başarısız olur.|
@@ -256,9 +256,9 @@ Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilg
 Diğer iOS kayıt hatalarının listesi, cihaz-kullanıcı belgelerimizdeki [Cihazınızı Intune'a kaydetmeye çalışırken hatalar görüyorsunuz](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) bölümünde verilmiştir.
 
 ### Sonraki adımlar
-Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) bölümünde açıklandığı gibi Microsoft Desteği ile iletişim kurun.
+Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

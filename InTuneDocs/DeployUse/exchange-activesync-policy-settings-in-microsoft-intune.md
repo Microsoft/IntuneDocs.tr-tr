@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’da Exchange ActiveSync ilke ayarları | Microsoft Intune
+title: Exchange ActiveSync ilkesi ayarları | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -47,8 +47,8 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 
 |Ayar adı|Ayrıntılar|
 |----------------|
-|**Mobil cihazda şifreleme iste**<sup>1</sup>|Desteklendiği durumlarda cihazdaki verilerin şifrelenmesini zorunlu tutar.<br>Windows Phone 8 cihazları için bunu **Evet** olarak ayarlamanız gerekir..<br /><br />iOS cihazlarında şifrelemeyi etkinleştirmek için **Mobil cihazların kilidini açmak için parola iste** ayarını etkinleştirin..|
-|**Depolama kartlarında şifreleme iste**|SD kartı gibi dış depolama alanlarında depolanan verilerin şifrelenmesini zorunlu tutar (desteklenen cihazlarda).
+|**Mobil cihazda şifreleme iste**<sup>1</sup>|Desteklendiği durumlarda cihazdaki verilerin şifrelenmesini zorunlu tutar.<br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için **Mobil cihazların kilidini açmak için parola iste**ayarını etkinleştirin.|
+|**Depolama kartlarında şifrelemeyi gerektir**|SD kartı gibi dış depolama alanlarında depolanan verilerin şifrelenmesini zorunlu tutar (desteklenen cihazlarda).
 <sup>1</sup> Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
 -   Windows 8.1 çalıştıran cihazlarda şifrelemeyi zorlamak için her bir cihaza [Windows için Aralık 2014 MDM istemci güncelleştirmesi](http://support.microsoft.com/kb/3013816) ’ni yüklemeniz gerekir.
@@ -86,6 +86,6 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

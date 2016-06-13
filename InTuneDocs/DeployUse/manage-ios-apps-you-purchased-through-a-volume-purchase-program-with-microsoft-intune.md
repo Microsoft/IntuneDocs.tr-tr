@@ -49,7 +49,7 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve bunu Intune hesabını
 
 ## Apple VPP belirtecini almak ve karşıya yüklemek için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici** &gt; **iOS ve Mac OS X** &gt;  **Toplu Satın Alma Programı**’na tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici** &gt; **iOS ve Mac OS X** &gt; **Toplu Satın Alma Programı**’na tıklayın.
 
 2.  **Apple VPP Hesabı** bağlantısına tıklayın ve henüz yapmadıysanız İş için Toplu Satın Alma Programı’na kaydolun. Kaydolduktan sonra hesabınıza yönelik Apple VPP belirtecini indirin.
 
@@ -63,11 +63,11 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve bunu Intune hesabını
 
 **Şimdi eşitle**’ye tıklayarak, Apple tarafından tutulan verileri Intune’la dilediğiniz zaman eşitleyebilirsiniz.
 
-## Toplu satın alınmış bir uygulamayı karşıya yüklemek ve dağıtmak için
+## Toplu satın alınmış bir uygulamayı dağıtmak için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Uygulamalar** &gt; **Yönetilen Yazılımlar** &gt; **Toplu Satın Alınan Uygulamalar**’a tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Uygulamalar** &gt; **Yönetilen Yazılım** &gt; **Toplu Satın Alınan Uygulamalar**’a tıklayın. Bu listede, Apple VPP hizmetinden eşitlenmiş olan tüm uygulamalar gösterilir.
 
-2.  Uygulamanın karşıya yüklenmesini, oluşturulmasını ve dağıtımını tamamlamak için [Microsoft Intune’da mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md) konusundaki yönergeleri kullanın.
+2.  Dağıtmak istediğiniz uygulamayı seçin, **Dağıtımı Yönet**’e tıklayın, ardından uygulamanın karşıya yüklenmesini, oluşturulmasını ve dağıtımını tamamlamak için [Microsoft Intune’da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md) konu başlığı altında verilen yönergeleri kullanın.
 
 Uygulamayı **Gerekli** yükleme olarak dağıttığınızda uygulamayı yükleyen her kullanıcı tarafından bir lisans kullanılır.
 
@@ -75,20 +75,20 @@ Bir lisansı geri kazanmak için dağıtım eylemini **Kaldır** olarak değişt
 
 Uygun cihaza sahip bir kullanıcı ilk olarak bir VPP uygulaması yüklemeye çalıştığında kullanıcıdan Apple Toplu Satın Alma programına katılması istenir. Uygulama yüklemesi devam etmeden önce bunu yapmaları gerekir.
 
-> Uygulamanın dağıtıldığı her kullanıcının kabul durumunu görmek için **VPP Koşulları Durumu** sütununa bakın.
+> [!TIP] Uygulamanın dağıtıldığı her kullanıcının kabul durumunu görmek için **VPP Koşulları Durumu** sütununa bakın.
 
 Başka bir lisans yoksa dağıtım başarısız olur.
 
 ## Apple VPP uygulamalarını izlemek için
-Hangi VPP uygulamalarının dağıtıldığını ve kaç tane lisansın kullanıldığını **Uygulamalar** çalışma alanındaki **Yönetilen Yazılım** &gt; **Toplu Satın Alınan Uygulamalar** düğümünde izleyebilirsiniz.
+Hangi VPP uygulamalarının dağıtıldığını ve kaç tane lisansın kullanıldığını **Yönetilen Yazılım** &gt; **Toplu Satın Alma Uygulamaları** düğümündeki **Uygulamalar** çalışma alanından izleyebilirsiniz.
 
-> Her bir uygulama yüklemesinin durumunu incelemek için uygulama **Filtreleri**’ni de kullanabilirsiniz.
+> [!TIP] Her uygulama yüklemesinin durumunu incelemek için uygulama **Filtrelerini** de kullanabilirsiniz.
 
 ### Ayrıca Bkz.
-[Microsoft Intune'da mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md)
+[Microsoft Intune'da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

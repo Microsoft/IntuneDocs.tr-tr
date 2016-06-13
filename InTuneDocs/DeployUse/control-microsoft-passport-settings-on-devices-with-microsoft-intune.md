@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune ile cihazlarda Microsoft Passport ayarlarını denetleme | Microsoft Intune
+title: Cihazlarda Microsoft Passport ayarlarını denetleme | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,7 +34,7 @@ Intune, İş için Passport ile iki şekilde tümleştirilir:
 
 -   Kullanıcıların oturum açarken hangi hareketleri kullanabileceğini ve kullanamayacağını denetlemek için Intune ilkesini kullanabilirsiniz.
 
--   Kimlik doğrulama sertifikalarını İş için Passport anahtar depolama sağlayıcısına (KSP) depolayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md)..
+-   Kimlik doğrulama sertifikalarını İş için Passport anahtar depolama sağlayıcısına (KSP) depolayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).
 
 ## İş için Passport ilkesi oluşturma
 
@@ -47,7 +47,7 @@ Intune, İş için Passport ile iki şekilde tümleştirilir:
     - **Kayıtlı cihazlarda İş için Passport’u etkinleştir** - Tüm Windows 10 cihazlarında İş için Passport ayarlarını yapılandırmak istiyorsanız bu ayarı seçin.
     - **Yapılandırılmadı** - İş için Passport ayarlarını denetlemek için Intune’u kullanmak istemiyorsanız bu ayarı seçin. Windows 10 cihazlarındaki mevcut İş için Passport ayarlarının hiçbiri değiştirilmez. Ekrandaki tüm diğer ayarlar devre dışı bırakılır.
 3.  **Kayıtlı cihazlarda İş için Passport’u etkinleştir** ayarını seçtiyseniz, tüm kayıtlı Windows 10 ve Windows 10 Mobile cihazlarına uygulanması gereken ayarları yapılandırın.
-3.  İşiniz bittiğinde **Kaydet**’e tıklayın..
+3.  İşiniz bittiğinde **Kaydet**’e tıklayın.
 
 ## İş İçin Passport: PIN ayarları
 
@@ -57,8 +57,7 @@ Intune, İş için Passport ile iki şekilde tümleştirilir:
     - **İzin verildi** - Kullanıcılar PIN kodlarında karakter türü kullanabilir ancak bu zorunlu değildir.
     - **Gerekli** - Kullanıcılar PIN kodlarında karakter türlerinden en az birini bulundurmalıdır. Örneğin, yaygın uygulama en az bir büyük harfin ve bir özel karakterin zorunlu olmasıdır.
     - **İzin verilmedi** (varsayılan) - Kullanıcılar PIN kodlarında bu karakter türlerini kullanmamalıdır (ayar yapılandırılmadığında da bu davranış geçerli olur).
-    > [!TIP]
-    > Özel karakterler şunlardır: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP] Özel karakterler şunlardır: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **PIN süre sonu (gün)** - Sonrasında kullanıcıların PIN’i değiştirmesini zorunlu tutmak için PIN’e bir süre sonu belirtmek iyi bir uygulamadır. Varsayılan değer 41 gündür. 
 - **PIN geçmişini anımsa** - Daha önce kullanılan PIN kodlarının yeniden kullanımını kısıtlamak için bu ayarı kullanın. Varsayılan olarak, kullanılan son 5 PIN kodunun yeniden kullanılamaz.
 
@@ -80,6 +79,6 @@ Microsoft Passport hakkında daha fazla bilgi için, Windows 10 belgelerinde [k�
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

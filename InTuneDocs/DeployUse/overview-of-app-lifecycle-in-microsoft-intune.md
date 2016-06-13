@@ -29,11 +29,11 @@ ms.suite: ems
 
 Intune uygulama yaşam döngüsü, bir uygulama eklendiğinde başlar, ek aşamalardan geçerek siz uygulamayı kaldırama kadar devam eder.
 
-![Uygulama yaşam döngüsü](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![Uygulama yaşam döngüsü](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Ekleme
 
-Uygulama dağıtımında ilk adım, yönetmek ve dağıtmak istediğiniz uygulamayı Intune’a eklemektir. Çalışabileceğiniz birçok farklı uygulama türü olmasına karşın, temel yordamlar aynıdır. Intune hem [kayıtlı cihazlar](add-apps-for-mobile-devices-in-microsoft-intune.md) için, hem de [Intune istemci yazılımıyla yönettiğiniz Windows bilgisayarları](add-apps-for-windows-pcs-in-microsoft-intune.md) için uygulama eklemenize olanak tanır..
+Uygulama dağıtımında ilk adım, yönetmek ve dağıtmak istediğiniz uygulamayı Intune’a eklemektir. Çalışabileceğiniz birçok farklı uygulama türü olmasına karşın, temel yordamlar aynıdır. Intune hem [kayıtlı cihazlar](add-apps-for-mobile-devices-in-microsoft-intune.md) için, hem de [Intune istemci yazılımıyla yönettiğiniz Windows bilgisayarları](add-apps-for-windows-pcs-in-microsoft-intune.md) için uygulama eklemenize olanak tanır.
 
 ## Dağıtma
 
@@ -53,9 +53,9 @@ Intune, uygulamalarınızdaki verileri korumaya yardımcı olmanın yollarını 
 
 ## Devre Dışı Bırakma
 
-Sonunda, büyük olasılıkla dağıttığınız uygulamalar eskir ve kaldırılmaları gerekir. Intune, [uygulamaları hizmette devre dışı bırakmayı](retire-apps-using-microsoft-intune.md) kolaylaştırır..
+Sonunda, büyük olasılıkla dağıttığınız uygulamalar eskir ve kaldırılmaları gerekir. Intune, [uygulamaları hizmette devre dışı bırakmayı](retire-apps-using-microsoft-intune.md) kolaylaştırır.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

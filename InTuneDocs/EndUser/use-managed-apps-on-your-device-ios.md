@@ -15,7 +15,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -79,8 +79,8 @@ BT bölümünüzün yönetebileceği bazı ortak uygulamalar şunlardır:
 Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöneticinizle iletişim kurun.
 
 ### Ayrıca bkz.
-[iOS veya Mac OS X cihazınızı Intune ile kullanma](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

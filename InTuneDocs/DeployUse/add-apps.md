@@ -29,11 +29,11 @@ ms.suite: ems
 Microsoft Intune’la uygulamaları dağıtmaya başlamadan önce, biraz zaman ayırın ve bu konu başlığı altında tanıtılan kavramları öğrenin. Bunlar, hangi uygulamaları hangi platforma dağıtabileceğinizi anlamanıza ve bunu yapmadan önce karşılanması gereken önkoşulları öğrenmenize yardımcı olur.
 
 ## Intune’la dağıtabileceğiniz uygulama türleri
-Uygulamaları, Intune tarafından desteklenen tüm cihaz türlerine dağıtabilirsiniz. Dağıtmak istediğiniz uygulamanın türüne bağlı olarak, süreç ve desteklenen cihazlar farklılık gösterir. Neleri dağıtabileceğinizi ve neleri dağıtamayacağınızı anlamanıza yardımcı olması için aşağıdaki tabloyu kullanın:
+Uygulamaları, Intune tarafından desteklenen tüm cihaz türlerine dağıtabilirsiniz. Dağıtmak istediğiniz uygulamanın türüne bağlı olarak, süreç ve desteklenen cihazlar farklılık gösterir. Neleri dağıtabileceğinizi ve neleri dağıtamayacağınızı anlamanıza yardımcı olması için aşağıdaki bilgileri kullanın:
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- Bu uygulama türü, kullanıcı girişi gerektirmeyen sessiz yüklemeyi desteklemelidir. Uygulama belgelerinizde, uygulamayı sessiz yüklemek için uygun komut satırı seçenekleri verilmiş olmalıdır (örneğin, **/q**)
+- Bu uygulama türü, kullanıcı girişi gerektirmeyen sessiz yüklemeyi desteklemelidir. Uygulama belgelerinizde, uygulamayı sessiz yüklemek için uygun komut satırı seçenekleri verilmiş olmalıdır (örneğin, **/q**). Yaygın komut satırı seçeneklerinin listesini [burada](https://support.microsoft.com/en-us/kb/227091) bulabilirsiniz.
 - Uygulamanın kurulum programının gerektirdiği tüm ek dosya ve klasörler, uygulama kurulum dosyaları için belirttiğiniz konumda bulunmalıdır.
 - Genellikle Windows Installer (.msi) ve Windows Installer Patch (.msp) dosyalarının Intune tarafından yüklenmesi için herhangi bir komut satırı bağımsız değişkeni gerekmez. Uygulama belgelerinize bakın. Komut satırı bağımsız değişkenleri gerekiyorsa, bu bağımsız değişkenler Ad=Değer çiftleri halinde girilmelidir (örneğin, TRANSFORMS=custom_transform.mst).
 
@@ -49,7 +49,7 @@ Bu uygulama türü bulut depolama alanınıza yüklenir.
 
 Bu uygulama türü bulut depolama alanınıza yüklenir.
 
-Şu anda son kullanıcılar iOS için Intune Şirket Portalı uygulamasından şirket uygulamaları yükleyememektedir. Bunun nedeni iOS App Store'da yayımlanan uygulamalara getirilen kısıtlamalardır (bkz. [App Store Gözden Geçirme Yönergeleri](https://developer.apple.com/app-store/review/guidelines/)). Kullanıcılar, cihazlarında Şirket Portalı uygulamasını başlatarak ve tarayıcıyı açıp Intune Web Portalı'na yönlendiren Şirket Uygulamaları kutucuğuna dokunarak şirket uygulamalarına (yönetilen App Store uygulamaları ve iş kolu uygulama paketleri dahil) erişebilir.
+Şu anda son kullanıcılar iOS için Intune Şirket Portalı uygulamasından doğrudan şirket uygulamaları yükleyememektedir. Bunun nedeni iOS App Store'da yayımlanan uygulamalara getirilen kısıtlamalardır (bkz. [App Store Gözden Geçirme Yönergeleri](https://developer.apple.com/app-store/review/guidelines/)). Kullanıcılar, cihazlarında Şirket Portalı uygulamasını başlatarak ve tarayıcıyı açıp Intune Web Portalı'na yönlendiren Şirket Uygulamaları kutucuğuna dokunarak şirket uygulamalarına (yönetilen App Store uygulamaları ve iş kolu uygulama paketleri dahil) erişebilir.
 
 ### **Windows Phone uygulama paketi (&#42;.xap, .appx, .appxbundle)**
 - Uygulamaları dağıtmak için, bir kurumsal mobil kod imzalama sertifikası gerekir. Ayrıntılar için bkz. [Microsoft Intune ile Windows Phone yönetimini ayarlama](set-up-windows-phone-management-with-microsoft-intune.md).
@@ -81,7 +81,7 @@ Kullanılması için aşağıdakilere sahip olmanız gerekir:
 Dış bağlantılara dayalı uygulamalar, Intune bulut depolama alanınızda depolanmaz.
 ### **Uygulama mağazasından yönetilen iOS uygulaması**
 Uygulama mağazasından ücretsiz olarak sağlanan iOS uygulamalarını yönetmenizi ve dağıtmanızı sağlar. Ayrıca, [mobil uygulama yönetim ilkelerini](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) [uyumlu uygulamalarla](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) ilişkilendirmenize ve yönetici konsolunda bunların durumunu gözden geçirmenize de olanak tanır.<br /><br />Yönetilen iOS uygulamaları Intune bulut depolama alanınızda depolanmaz.
-> Intune’u [Mobil Cihaz Yönetimi Yetkilisi](get-ready-to-enroll-devices-in-microsoft-intune.md) olarak ayarlamadığınız sürece, mobil cihazlara yönelik seçenekler kullanılamaz.
+> [!TIP] Intune’u [Mobil Cihaz Yönetimi Yetkilisi olarak ayarlamadığınız](get-ready-to-enroll-devices-in-microsoft-intune.md) sürece, mobil cihazlara yönelik seçenekler kullanılamaz.
 
 ## Evrensel Windows Platformu (UWP) uygulamaları desteği
 Windows 10 cihazlarında iş kolu uygulamalarını yüklemek için dışarıdan yükleme anahtarı gerekmez. Bununla birlikte, dışarıdan yüklemeyi etkinleştirmek için, **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** kayıt defteri anahtarının değeri **1** olmalıdır.
@@ -96,6 +96,6 @@ Windows 10 Mobile cihazlarında, evrensel **.appx** uygulamalarını imzalamak i
 
 Bundan sonra, uygulamaları dağıtabilmek için önce Intune konsoluna eklemeniz gerekir. [Kayıtlı cihazlar](add-apps-for-mobile-devices-in-microsoft-intune.md) için veya [Intune istemci yazılımıyla yönettiğiniz Windows bilgisayarları](add-apps-for-windows-pcs-in-microsoft-intune.md) için uygulamalar ekleyebilirsiniz.
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

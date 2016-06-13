@@ -29,10 +29,9 @@ ms.suite: ems
 # Microsoft Intune ile Windows Phone ve Windows 10 Mobile yönetimini ayarlama
 Windows 10 Mobile veya Windows Phone cihazlarını Microsoft Intune’la yönetebilmeniz için, önce cihazların Intune’la iletişim kurabilmesi gerekir. Bunu basitleştirmek için bir DNS kaydı oluşturabilirsiniz ve bu sayede kullanıcıların sunucu adresini girmesi gerekmez. Aşağıdaki adımlar, kullanıcılar için kaydın nasıl basitleştirileceğini açıklar.  
 
-Çoğu senaryoda, kullanıcılar Şirket Portalı uygulamasını Windows Mağazası’ndan yükleyebilir. Windows Phone 8.0 cihazlarını yönetiyorsanız veya Windows Phone cihazlarına Şirket Portalı’nı dağıtmanız gerekiyorsa, Şirket Portalı uygulamasını da indirmeli ve imzalamalısınız. Bkz. [Windows Phone 8.0 yönetimini ayarlama](set-up-windows-phone-8.0-management-with-microsoft-intune.md)..
+Çoğu senaryoda, kullanıcılar Şirket Portalı uygulamasını Windows Mağazası’ndan yükleyebilir. Windows Phone 8.0 cihazlarını yönetiyorsanız veya Windows Phone cihazlarına Şirket Portalı’nı dağıtmanız gerekiyorsa, Şirket Portalı uygulamasını da indirmeli ve imzalamalısınız. Bkz. [Windows Phone 8.0 yönetimini ayarlama](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
 
-1.  **Intune’u ayarlama**
-    Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
+1.  **Intune’u ayarlama** Henüz bu işlemi yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
 
 2.  **Kayıt sunucusu adresi için bir DNS diğer adı ayarlama** (isteğe bağlı)
 
@@ -51,17 +50,17 @@ Windows 10 Mobile veya Windows Phone cihazlarını Microsoft Intune’la yönete
 
       **EnterpriseRegistration.windows.net** – İş veya okul hesabı kullanılarak Azure Active Directory’ye kaydolacak Windows 8.1 ve Windows 10 Mobile cihazlarını destekler.
 
-    2.  [Intune yönetim konsolunda](http://manage.microsoft.com) **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows Phone**’a tıklayın..
+    2.  [Intune yönetim konsolunda](http://manage.microsoft.com), **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows Phone**’a tıklayın.
 
       ![Windows için mobil cihaz yönetimini ayarlama iletişim kutusu](../media/windows-device-enrollment.png)
 
-    3.  **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin doğrulanmış etki alanının URL'sini yazın ve ardından **Otomatik Algılamayı Sına**'ya tıklayın..
+    3.  **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin doğrulanmış etki alanının URL'sini yazın ve ardından **Otomatik Algılamayı Sına**'ya tıklayın.
 
 
 
-Cihazlara Şirket Portalı’nı dağıtmayacaksanız, başka bir işlem yapmak gerekmez.  Yönetim konsolundaki 2., 3. ve 4. adımlar rahatça yoksayılabilir.
+Cihazlara Şirket Portalı’nı dağıtmayacaksanız, başka bir işlem yapmak gerekmez.  Yönetim konsolundaki 2. ve 3. adımlar rahatça yoksayılabilir.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

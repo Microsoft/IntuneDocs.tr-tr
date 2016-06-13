@@ -46,11 +46,11 @@ Cihazınızı kilitlemek için Uzaktan Kilitleme kullanmak için:
 
 1.  [Şirket Portalı web sitesinde,](http://portal.manage.microsoft.com) kilitlemek istediğiniz cihazın adına dokunun.
 
-2.  **Uzaktan Kilitleme**’ye dokunun
+2.  **Uzaktan Kilitleme**’ye dokunun.
 
     **Uzaktan Kilitleme**’ye dokunduğunuzda, "Uzaktan kilitleme bekliyor" durumu görünür.  Uzaktan Kilitleme başarılı olduğunda, durum "Uzaktan kilitleme için başarılı." olarak değişir.
 
-    Durum üç yerde görüntülenir:
+    Uzaktan Kilitleme durumu üç yerde görüntülenir:
 
     * Web sitesinin bildirimler alanı. 
     * Cihaz için Ayrıntılar sayfası.
@@ -64,6 +64,6 @@ Cihazınızı kilitlemek için Uzaktan Kilitleme kullanmak için:
 ### Ayrıca bkz.
 [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

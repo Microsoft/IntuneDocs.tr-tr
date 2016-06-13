@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’da mobil cihaz güvenliği ilkesi ayarları | Microsoft Intune
+title: Mobil cihaz güvenliği ilkesi ayarları | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -72,7 +72,7 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıtmayı aya
 
 |Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android be Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Mobil cihazda şifreleme iste**<sup>1</sup><br /><br />Windows Phone 8 cihazları için bunu **Evet** olarak ayarlamanız gerekir..<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için **Mobil cihazların kilidini açmak için parola iste** ayarını etkinleştirin..|Evet|Hayır|Evet|Hayır|Evet|
+|**Mobil cihazda şifreleme iste**<sup>1</sup><br /><br />Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için **Mobil cihazların kilidini açmak için parola iste**ayarını etkinleştirin.|Evet|Hayır|Evet|Hayır|Evet|
 |**Depolama kartlarında şifrelemeyi gerektir**<br /><br />Exchange ActiveSync tarafından yönetilen cihazlar için de geçerlidir.|yok|yok|yok (uygulamalar ve ilişkili veriler otomatik olarak şifrelenir)|yok|Evet|
 Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
@@ -217,6 +217,6 @@ Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

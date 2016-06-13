@@ -37,7 +37,7 @@ Intune yönetim konsolunu kullanarak kiracı yöneticisi bilgilerini görüntül
 ## Bireysel kullanıcı hesapları ekleme
 Değerlendirme kiracınızda ek kullanıcı hesapları oluşturmak için aşağıdaki adımları kullanın. Eklediğiniz her bir kullanıcı hesabının, Intune ücretsiz değerlendirmeniz kapsamında aldığınız 100 lisanstan düşüldüğünü unutmayın.
 
-1.  [Office 365 yönetim merkezinde](http://go.microsoft.com/fwlink/p/?LinkId=698854), **Kullanıcı Ekle** &gt; **Yeni**&gt; **Kullanıcı**’yı seçerek **Yeni kullanıcılar** sihirbazını başlatın.
+1.  [Office 365 yönetim merkezinde](http://go.microsoft.com/fwlink/?LinkID=787455), **Kullanıcı Ekle** &gt; **Yeni**&gt; **Kullanıcı**’yı seçerek **Yeni kullanıcılar** sihirbazını başlatın.
 
 2.  **Ayrıntılar** sayfasında, gerekli alanları doldurun.
 
@@ -51,14 +51,14 @@ Değerlendirme kiracınızda ek kullanıcı hesapları oluşturmak için aşağ�
 
 7.  Yeni kullanıcı, Office 365 yönetim merkezinde göründüğünde, yeni kullanıcının başarılı şekilde oluşturulduğunu doğrulayın:
 
-    1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **Şirket Portalı**’nı seçin ve ardından ekranın alt kısmına kaydırın. **Intune Şirket Portalı** altında gözüken URL'yi kopyalayın
+    1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **Şirket Portalı**’nı seçin ve ardından ekranın alt kısmına kaydırın. **Intune Şirket Portalı** altında gösterilen URL'yi kopyalayın.
 
     2.  “Gizlilik modunda” yeni bir tarayıcı penceresi açın (Internet Explorer'da **Araçlar** &gt; **InPrivate Gözatma**’yı seçin) veya farklı bir cihaz üzerinde yeni bir tarayıcı penceresi açın ve ardından önceki adımda kopyaladığınız URL'ye gidin. Kullanıcılar ilk kez oturum açtığında, hesap için yeni bir parola sağlamaları gerekir.
 
 ## Toplu olarak kullanıcı ekleme
-Intune’a toplu olarak kullanıcı eklemek için, **Toplu olarak kullanıcı ekleme** sihirbazını kullanarak, kullanıcı verilerinizi içeren bir virgülle ayrılmış değerler (CSV) dosyasını karşıya yükleyin. Sihirbazdaki bağlantıları kullanarak boş bir şablon ve örnek CSV dosyası indirebilirsiniz. CSV dosyanızın ilk satırı, her bir kullanıcı veri sütunu etiketini doğru sırayla içermelidir. Ardından, CSV dosyasındaki her bir kullanıcı için **kullanıcı adı** (örneğin **bob@contoso.com**) ve bir **görünen ad** (örneğin **Bob Kelly**) eklemeniz gerekir
+Intune’a toplu olarak kullanıcı eklemek için, **Toplu olarak kullanıcı ekleme** sihirbazını kullanarak, kullanıcı verilerinizi içeren bir virgülle ayrılmış değerler (CSV) dosyasını karşıya yükleyin. Sihirbazdaki bağlantıları kullanarak boş bir şablon ve örnek CSV dosyası indirebilirsiniz. CSV dosyanızın ilk satırı, her bir kullanıcı veri sütunu etiketini doğru sırayla içermelidir. Ardından, CSV dosyasındaki her bir kullanıcı için **kullanıcı adı** (örneğin **bob@contoso.com**) ve bir **görünen ad** (örneğin **Bob Kelly**) eklemeniz gerekir.
 
-1.  [Office 365 yönetim merkezinde](http://go.microsoft.com/fwlink/p/?LinkId=698854), **Kullanıcılar** &gt; **Yeni**’yi seçin
+1.  [Office 365 yönetim merkezinde](http://go.microsoft.com/fwlink/?LinkID=787455), **Kullanıcılar** &gt; **Yeni**’yi seçin.
 
 2.  Toplu kullanıcı ekleme sihirbazını başlatmak için **Toplu ekle**'yi seçin.
 
@@ -84,6 +84,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 2. adımını
 >[&larr; **Değerlendirme için kaydolun**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Gruplar oluşturun** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

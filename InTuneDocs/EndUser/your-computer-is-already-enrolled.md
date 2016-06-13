@@ -27,72 +27,19 @@ ms.suite: ems
 
 
 # Bilgisayarınız zaten kayıtlı
-Intune istemci yazılımı için Kurulum'u çalıştırdığınız için bu sayfayı görüyorsunuz. Ancak, yazılım bilgisayarınızda zaten yüklü ve Kurulum devam edemiyor.
 
-Bunun nedeni şunlardan biri olabilir:
+Bilgisayarınızın zaten kayıtlı olduğunu bildiren bir hata alırsanız, bilgisayarınız zaten Şirket Portalı’na eklenmiştir ama henüz kullanıcı hesabınıza bağlanmamıştır. Bilgisayarınızı kullanıcı hesabınıza bağlamak ve işlemi tamamlamak için bu yordamı izleyin.
 
--   İstemci yazılımı daha önce yüklenmiştir ve Kurulum tekrar çalıştırılmıştır.
+Bilgisayarınızı bağlamak için:
 
--   Kurulum, bir BT yöneticisi cihazınızı Intune’da devre dışı bıraktıktan sonra çalıştırılmıştır. Cihazınız kullanımdan kaldırıldıktan sonra istemci yazılımının bilgisayarınızdan kaldırılması birkaç saat sürebilir.
+1.  Hesabınıza bağlamak istediğiniz bilgisayarda **Başlangıç** ve ardından **Microsoft Intune Merkezi**'ne tıklayın.
 
--   Kurulum, kısa bir süre önce gerçekleşen başarısız bir yükleme algılamıştır veya istemci yazılımı kaldıramamıştır.
+2.  Şirket Portalı’nı açın.
 
-## Kurulum bilgisayarınıza ne yükler
-Kurulum, Intune istemcisini yükler. Kurulum tamamlandıktan sonra, istemci yazılımı arka planda çalışmaya devam ederek bilgisayarınızı Intune’la kullanım için yapılandırır. Bu işlemin tamamlanması biraz zaman alabilir ve şunları içerir:
-
--   Bilgisayarınızı Intune’a kaydetme
-
--   Bilgisayar donanımı ve yüklü yazılımlar hakkında envanter gönderme
-
--   Endpoint Protection'ın yüklenmesi (yapılandırıldıysa) de dahil olmak üzere Intune ilkesini yapılandırma
-
--   Intune Center’ı yükleme
-
-Intune Center yüklendikten sonra, bunu kullanarak şirket portalına erişebilir ve burada bilgisayarınızı iş hesabınıza bağlayabilirsiniz.
-
-## Microsoft Intune Center
-Intune Center, istemci yazılımı başarıyla yüklendikten sonra bilgisayarınızda bir uygulama olarak yüklenir ve bilgisayarınızı Intune’a kaydeder. Intune Center’ı kullanarak şunları yapabilirsiniz:
-
--   **Şirket portalından uygulamalara erişme** - BT yöneticiniz tarafından dağıtılan uygulamaları bulun ve yükleyin. Şirket portalına yeni kaydedilen bir bilgisayarda ilk kez oturum açtığınızda, iş hesabınızı bu bilgisayara bağlama seçeneğine sahip olursunuz.
-
--   **Yazılım güncelleştirmelerini denetleme** – Intune yöneticiniz tarafından dağıtılan yazılım güncelleştirmelerini bulun.
-
--   **Bilgisayarınızın bir Endpoint Protection taramasını başlatma** – Bilgisayarınızda kötü amaçlı yazılım taraması başlatabilirsiniz.
-
--   **Uzaktan yardım isteme** – Bu seçenek, yalnızca, bilgisayarınızın işletim sistemi uzaktan yardımı destekliyorsa kullanılabilir.
-
-## İstemci yazılımının yüklü veya kaldırılmış olduğunu doğrulama
-**İstemci yüklü olduğunu doğrulama:**
-Intune istemci yüklemesi, aşağıdaki uygulamalar bilgisayarda kullanılabilir hale geldiğinde tamamlanır:
-
--   **Intune Center**
-
--   **Intune Endpoint Protection** (BT yöneticiniz tarafından Endpoint Protection etkinleştirildiyse)
-
-Görev Yöneticisi'ni rahatça kullanabiliyorsanız, çalışıyor olması gereken Intune istemci hizmetini arayabilirsiniz:
-
--   **OmcSvc**
-
-**İstemcinin kaldırıldığını doğrulama:**
-Intune istemcisi bir bilgisayardan kaldırıldıktan sonra, Intune Center da dahil olmak üzere istemci yüklenirken yüklenen uygulamalar kaldırılır.
-
-Intune istemci hizmeti **OmcSvc** kaldırılır.
-
-## İstemci yazılımı bilgisayardan kaldırma
-Varsayılan olarak, BT yöneticiniz bilgisayarınızı Intune yönetim konsolundan kaldırdıktan sonra, Intune istemci yazılımı kaldırılır.
-
-Intune istemci yazılımını bir bilgisayardan el ile kaldırmak için, kaldırmayı zorlamak üzere aşağıdaki adımları kullanabilirsiniz:
-
-1.  Bilgisayarı açın, yönetici modunda bir komut istemi açın.
-
-2.  **%programfiles%\Microsoft\OnlineManagement\Common** klasörüne gidin.
-
-3.  Şu komutu çalıştırın: **ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune**
-
-Bu, istemci yazılımın kaldırılmasını zamanlar.
+3.  Bilgisayarı kullanıcı hesabınıza bağlama yönergelerini izleyin.
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

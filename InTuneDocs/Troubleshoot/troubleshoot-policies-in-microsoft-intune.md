@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,18 +53,18 @@ Aşağıdaki ekran görüntüsünde, iki anlaşılır örnek gösterilmektedir:
 
 ![Intune cihaz ilkesi](../media/Intune-Device-Policy-v.2.jpg)
 
-> Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
+> [!NOTE] Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
 
 ## İlke yenileme ve güncelleştirme aralıkları
 İlkelerin düzenli aralıklarla yenilendiğinden ve güncelleştirildiğinden emin olun. Genel olarak, ilkeler bir değişiklik yapmanızdan sonraki 15 dakika içinde kaydedilmelidir. İlke yenileme için düzenli aralıklar hakkında daha fazla ayrıntı aşağıda verilmiştir:
 
 -   **MDM için kayıtlı Windows cihazı**: Cihazda yerel saatle 03:00'daki zamanlanmış bir görevle tetiklenir ve her gün gerçekleşir.
 
--   **Windows Phone**: İlke her 8 saatte bir güncelleştirilir. Şirket Portalı’ndaki **Ayarlar** altında bir yenileme yapılarak zorlanabilir.
+-   **Windows Phone**: İlke her 8 saatte bir güncelleştirilir. Şirket Portalı’ndaki **Ayarlar** altında bir yenileme ile zorlanabilir.
 
--   **iOS**: İlke günde bir kez rastgele bir zaman aralığında güncelleştirilir. Bu da Şirket Portalı açılarak, cihaz seçilerek ve **Eşitle**’ye tıklanarak zorlanabilir.
+-   **iOS**: İlke günde bir kez rastgele bir zaman aralığında güncelleştirilir. Bu da Şirket Portalı açılarak, cihaz seçilerek ve sonra da **Eşitle** seçilerek zorlanabilir.
 
--   **Android**: İlke günde bir kez rastgele bir zaman aralığında güncelleştirilir. Bu da Şirket Portalı açılarak, cihaz seçilerek ve **Eşitle**’ye tıklanarak zorlanabilir.
+-   **Android**: İlke günde bir kez rastgele bir zaman aralığında güncelleştirilir. Bu da Şirket Portalı açılarak, cihaz seçilerek ve sonra da **Eşitle** seçilerek zorlanabilir.
 
 ## policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
 MDM olmayan Windows cihazları için policyplatform.log dosyasındaki ilke hataları cihazdaki Windows Kullanıcı Hesabı Denetimi’nde (UAC) bulunan varsayılan olmayan ayarların sonucu olabilir. Varsayılan olmayan bazı UAC ayarları Microsoft Intune istemci yüklemelerini ve ilke yürütmesini etkileyebilir.
@@ -75,7 +75,7 @@ MDM olmayan Windows cihazları için policyplatform.log dosyasındaki ilke hatal
 
 2.  İstemci yazılımının kaldırılması için 20 dakika bekleyin.
 
-    > İstemciyi Programlar ve Özellikler menüsünden kaldırmaya çalışmayın.
+    > [!NOTE] İstemciyi Programlar ve Özellikler menüsünden kaldırmaya çalışmayın.
 
 3.  Başlat menüsünde **UAC** yazarak Kullanıcı Hesabı Denetimi ayarlarını açın.
 
@@ -100,8 +100,8 @@ Bu sorunu çözmek için yerel sistem saatini İnternet saatine veya ağ üzerin
 Windows Phone ve Windows RT cihazlarında, MDM veya EAS yoluyla ayarlamış olduğunuz güvenlik ilkelerinin azaltılmasına izin verilmez. Örneğin, **Parolanın karakter sayısı alt sınırı** olarak 8 ayarlayın ve sonra bunu 4’e indirmeyi deneyin. Cihaza zaten daha kısıtlayıcı bir ilke uygulanmıştır.
 
 Cihaz platformuna bağlı olarak, ilkeyi daha az güvenli bir değerle değiştirmek isterseniz, güvenlik ilkelerini sıfırlamanız gerekebilir.
-Örneğin Windows RT’de, masaüstünde sağdan içeri doğru çekerek **Düğmeler** çubuğunu açın ve **Ayarlar** &gt; **Denetim Masası**’na tıklayın.   **Kullanıcı Hesapları** uygulamasını seçin.
-Sol taraftaki gezinti menüsünde, en altta bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır. O bağlantıya tıklayın ve ardından **İlkeleri Sıfırla** düğmesine tıklayın.
+Örneğin Windows RT’de, masaüstünde sağdan içeri doğru çekerek **Düğmeler** çubuğunu açın ve **Ayarlar** &gt; **Denetim Masası**’nı seçin.   **Kullanıcı Hesapları** uygulamasını seçin.
+Sol taraftaki gezinti menüsünde, en altta bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır. O bağlantıyı seçin ve ardından **İlkeleri Sıfırla** düğmesini seçin.
 Android, Windows Phone 8.1 ve üstü ve iOS gibi diğer MDM cihazlarında, daha az kısıtlayıcı bir ilkeyi uygulayabilmeniz için cihazın devre dışı bırakılması ve sonra hizmete yeniden kaydedilmesi gerekebilir.
 
 ## Android cihazları son kullanıcı Kabul etmeden Güvenlik İlkesi Değişikliklerini zorunlu tutmaz
@@ -116,6 +116,6 @@ Android MDM, hizmetin cihazlarda ilke değişikliğini zorunlu tutmasına diğer
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

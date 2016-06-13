@@ -28,13 +28,13 @@ ms.suite: ems
 
 # Cihazınızı el ile eşitleme
 
-Uygulama yüklemeniz fazla uzun sürüyorsa, cihazınızı el ile eşitlemeyi deneyebilirsiniz ve bu işlem yüklemenin hızlanmasına yardımcı olabilir. Sahip olduğunuz cihazın türüyle eşleşen yönergeleri kullanın:
+Uygulama yüklemeniz fazla uzun sürüyorsa, cihazınızı el ile eşitlemeyi deneyebilirsiniz ve bu işlem yüklemenin hızlanmasına yardımcı olabilir. Aşağıda, sahip olduğunuz cihazın türüyle veya Windows sürümüyle eşleşen yönergeleri kullanın: Yalnızca listelenen sürümler desteklenir.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Masaüstü](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
 * [iOS](sync-your-device-manually-ios.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

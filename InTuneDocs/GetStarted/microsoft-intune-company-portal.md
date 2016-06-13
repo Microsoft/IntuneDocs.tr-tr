@@ -31,14 +31,12 @@ ms.suite: ems
 
 Intune Şirket Portalı, kullanıcıların şirket verilerine ve uygulamalarına erişmesini sağlayan bir araçtır. Şirket Portalı iki biçimde sağlanır:
 
--   **Şirket portalı uygulaması**: [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile yönettiğiniz cihazlarda kullanılabilen bir uygulama. [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+-   **Şirket portalı uygulaması**: [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile yönettiğiniz cihazlarda kullanılabilen bir uygulama. [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) ve [Windows](/Intune/EndUser/using-your-windows-device-with-intune) için Şirket Portalı uygulamaları hakkında daha fazla bilgi edinin.
 
 
-- ve [Windows](/Intune/EndUser/using-your-windows-device-with-intune) için Şirket Portalı uygulamaları hakkında daha fazla bilgi edinin. **Şirket Portalı web sitesi**: [Desteklenen bir tarayıcıdan](supported-web-browsers.md) erişim sağlayan bir web sitesi. URL’si [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)’dur.
+- **Şirket Portalı web sitesi**: [Desteklenen bir tarayıcıdan](supported-web-browsers.md) erişim sağlayan bir web sitesi. URL, [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx)’tir. [Intune Şirket Portalı web sitesini kullanma](/Intune/EndUser/using-the-intune-company-portal-website) konusu, bu web sitesi hakkında daha fazla bilgi sağlar.
 
-[Intune Şirket Portalı web sitesini kullanma](/Intune/EndUser/using-the-intune-company-portal-website) konusu, bu web sitesi hakkında daha fazla bilgi sağlar.
-
--   Kullanıcıların Şirket Portalı’nda yerine getirebilecekleri görevlerden bazıları:
+Kullanıcıların Şirket Portalı’nda yerine getirebilecekleri görevlerden bazıları:
 
 -   Cihazları kaydetme
 
@@ -52,12 +50,14 @@ Intune Şirket Portalı, kullanıcıların şirket verilerine ve uygulamalarına
 
 -   Kuruluşunuz tarafından dağıtılan yazılımları indirme
 
-Destek için BT bölümüne başvurun Kullanıcıların Şirket Portalı’na erişebilmesi için, önce kullanıcı hesabına [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanma lisansı verilmiş olmalı ve hesabın oturum açma durumu **İzin Verildi** olmalıdır. Aboneliğiniz için [kullanıcı ekleme](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) ve [lisans atama](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) hakkında daha fazla bilgi edinin. Ayrıca, şirketinizin logosunu, Kullanım Koşullarını ve başka malzemeleri kullanarak [Şirket Portalı web sitesini özelleştirebilirsiniz](start-with-a-paid-subscription-to-microsoft-intune-step-7.md).
+-   Destek için BT bölümüne başvurun
 
-### Kullanıcılar, web sitesine gidip iş veya okul hesaplarıyla oturum açarak Şirket Portalı web sitesine erişebilir.
-[Ayrıca bkz.](what-to-know-before-you-start-microsoft-intune.md)
+Kullanıcıların Şirket Portalı’na erişebilmesi için, önce kullanıcı hesabına [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanma lisansı verilmiş olmalı ve hesabın oturum açma durumu **İzin Verildi** olmalıdır. Aboneliğiniz için [kullanıcı ekleme](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) ve [lisans atama](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) hakkında daha fazla bilgi edinin. Ayrıca, şirketinizin logosunu, Kullanım Koşullarını ve başka malzemeleri kullanarak [Şirket Portalı web sitesini özelleştirebilirsiniz](start-with-a-paid-subscription-to-microsoft-intune-step-7.md). Kullanıcılar, web sitesine gidip iş veya okul hesaplarıyla oturum açarak Şirket Portalı web sitesine erişebilir.
+
+### Ayrıca bkz.
+[Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

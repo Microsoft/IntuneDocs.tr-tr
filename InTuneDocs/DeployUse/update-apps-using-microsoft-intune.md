@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’u kullanarak uygulamaları güncelleştirme | Microsoft Intune
+title: Uygulamaları güncelleştirme | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,18 +34,18 @@ Dağıttığınız bir uygulamanın yeni sürümü yayımlandığında, Intune u
 > [!IMPORTANT]
 > Bir uygulamayı **Zorunlu yükleme** dağıtım eylemiyle dağıtıp daha sonra dağıtım eylemini **Kullanılabilir yükleme**olarak değiştirdiğinizde, dağıtım değişikliği yapılmadığı sürece uygulama güncelleştirmeleri uygulamanın yüklü olduğu cihazlara otomatik olarak yüklenmez. Bu sorunu gidermek için aşağıdakileri yapabilirsiniz:
 > 
-> -   Cihaz kullanıcısının şirket portalına gitmesini, yüklü uygulamayı seçmesini ve **Yükle**'ye tıklamasını isteyin..
-> -   Dağıtım eylemini **Kaldır** olarak değiştirin ve uygulama kaldırıldıktan sonra uygulamayı **Kullanılabilir yükleme** dağıtım eylemiyle yeniden dağıtın..
+> -   Cihaz kullanıcısının şirket portalına gitmesini, yüklü uygulamayı seçmesini ve **Yükle**'ye tıklamasını isteyin.
+> -   Dağıtım eylemini **Kaldır**olarak değiştirin ve uygulama kaldırıldıktan sonra uygulamayı **Kullanılabilir yükleme**dağıtım eylemiyle yeniden dağıtın.
 
 ### Bir uygulamayı güncelleştirmek için
 
-1.  [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Uygulamalar** &gt; **Uygulamalar**’a tıklayın..
+1.  [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Uygulamalar** &gt; **Uygulamalar**’a tıklayın.
 
-2.  **Uygulamalar** listesinde güncelleştirmek istediğiniz uygulamayı seçin ve ardından **Düzenle**'ye tıklayın..
+2.  **Uygulamalar** listesinde güncelleştirmek istediğiniz uygulamayı seçin ve ardından **Düzenle**'ye tıklayın.
 
 3.  **Yazılım Düzenleme** sihirbazında uygulama paketinin yeni ayrıntılarını belirtin.
 
-4.  İşiniz bittiğinde **Güncelleştir**'e tıklayın..
+4.  İşiniz bittiğinde **Güncelleştir**'e tıklayın.
 
 Cihazlar kullanılabilir uygulamaları bir daha denetlediğinde uygulama en son sürüme otomatik olarak güncelleştirilecektir.
 
@@ -53,6 +53,6 @@ Cihazlar kullanılabilir uygulamaları bir daha denetlediğinde uygulama en son 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

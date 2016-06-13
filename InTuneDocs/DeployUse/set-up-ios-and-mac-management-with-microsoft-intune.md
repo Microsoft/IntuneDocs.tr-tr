@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune ile iOS ve Mac yönetimini ayarlama | Microsoft Intune
+title: iOS ve Mac yönetimini ayarlama | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # iOS ve Mac yönetimini ayarlama
-Microsoft Intune kullanarak, iPhone, iPad ve Mac kullanıcılarının şirket e-postasına ve uygulamalarına erişmesini sağlamak için iOS ve Mac OS X cihaz kaydında KCG’yi ("kendi cihazını getir") etkinleştirebilirsiniz. Kayıt yapıldıktan sonra, kullanıcılar Şirket Portalı uygulamasını yükleyebilir ve Intune yönetim konsolu kullanılarak ilkede cihazları hedeflenebilir.
+Microsoft Intune kullanarak, iPhone, iPad ve Mac kullanıcılarının şirket e-postasına ve uygulamalarına erişmesini sağlamak için iOS ve Mac OS X cihaz kaydında KCG’yi ("kendi cihazını getir") etkinleştirebilirsiniz. Etkinleştirildikten sonra, kullanıcılar Şirket Portalı uygulamasını yükleyebilir ve Intune yönetim konsolu kullanılarak ilkede cihazları hedeflenebilir.
 
 iOS cihazlarını Intune’la yönetebilmeniz için, önce cihazların Intune’la iletişim kurabilmesi gerekir. Apple, Apple Anında İletilen Bildirim Servisi (APNs) sertifikasını içeri aktararak Intune’la bir güven ilişkisi kurulmasını gerektirir.
 
@@ -44,17 +44,17 @@ iOS cihazlarını Intune’la yönetebilmeniz için, önce cihazların Intune’
     APNs (.pem) sertifikasını indirin ve dosyayı yerel olarak kaydedin. Bu Apple kimliği gelecekte APNs sertifikanızı yenilemek için kullanılır.
 
 4.  **APNs sertifikasını Intune'a ekleme**<br>
-    [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com), **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS ve Mac OS X** &gt; **APNs Sertifikasını Karşıya Yükle**’ye gidin, **APNs sertifikasını karşıya yükle**. **Gözat**’a tıklayarak sertifika (.pem) dosyasına göz atın, **Aç**’a tıklayın ve sonra da **Apple Kimliğinizi** girin. APNs sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir. Kullanıcılara şirket portalı ile şirket kaynaklarına nasıl erişeceklerini anlatın
+    [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS ve Mac OS X** &gt; **APNs Sertifikasını Karşıya Yükle**'ye gidin ve **APNs sertifikasını karşıya yükle**’ye tıklayın. **Gözat** ile sertifika (.pem) dosyasına gidin ve **Aç** 'a tıklayarak **Apple Kimliğinizi**girin. APNs sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir.
 
-5.  **Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir.**<br>
-    Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler [Şirketiniz veya kuruluşunuz kullanıcılarına iOS cihazları satın aldıysa, bu cihazlar [şirkete ait iOS cihazları](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) olarak yönetime kaydedilebilir.](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+5.  **Kullanıcılara şirket portalı ile şirket kaynaklarına nasıl erişeceklerini anlatın**<br>
+    Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir. [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-Ayrıca Bkz.
+Şirketiniz veya kuruluşunuz kullanıcılarına iOS cihazları satın aldıysa, bu cihazlar [şirkete ait iOS cihazları](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) olarak yönetime kaydedilebilir.
 
-### Microsoft Intune’da cihazları kaydetmeye hazırlanma
-[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### Ayrıca Bkz.
+[Microsoft Intune’da cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

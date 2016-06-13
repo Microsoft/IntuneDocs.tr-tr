@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma | Microsoft Intune
+title: iOS uygulamalarını mobil uygulama yapılandırma ilkeleriyle yapılandırma | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -42,19 +42,18 @@ Mobil uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalı�
 
 Bu ilkeleri doğrudan kullanıcılara ve cihazlara dağıtmazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirilir, ardından uygulamayı dağıtırsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde (genellikle ilk çalıştırıldığında) kullanılır.
 
-> [!TIP]
-> Bu ilke türü şu anda yalnızca iOS 7.1 ve üzerini çalıştıran cihazlarda desteklenir ve aşağıdaki uygulama yükleme türlerini destekler:
+> [!TIP] Bu ilke türü şu anda yalnızca iOS 7.1 ve üzerini çalıştıran cihazlarda desteklenir ve aşağıdaki uygulama yükleme türlerini destekler:
 > 
 > -   **Uygulama mağazasından yönetilen iOS uygulaması**
 > -   **iOS için uygulama paketi**
 > 
-> Uygulama yükleme türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları dağıtma](deploy-apps.md)..
+> Uygulama yükleme türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları dağıtma](deploy-apps.md).
 
 ## Mobil uygulama yapılandırma ilkesi yapılandırma
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **İlke** &gt; **Genel bakış** &gt; **İlke Ekle**’yi seçin..
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Genel Bakış** &gt; **İlke Ekle**’ye tıklayın.
 
-2.  İlkeler listesinde **iOS**’u genişletin, **Mobil Uygulama Yapılandırma**’ya ve ardından **İlke Oluştur**’a tıklayın..
+2.  İlkeler listesinde **iOS**’u genişletin, **Mobil Uygulama Yapılandırma**’ya ve ardından **İlke Oluştur**’a tıklayın.
 
     > [!TIP]
     > Bu ilke türü için yalnızca özel ayarlar yapılandırabilirsiniz. Önerilen ayarlar kullanılamaz.
@@ -63,8 +62,7 @@ Bu ilkeleri doğrudan kullanıcılara ve cihazlara dağıtmazsınız. Bunun yeri
 
 4.  Sayfanın **Mobil Uygulama Yapılandırma İlkesi** bölümünde, kutunun içine istediğiniz uygulama yapılandırma ayarlarını girin veya bunları içeren bir XML özellik listesini yapıştırın.
 
-    > [!TIP]
-    > XML özellik listeleri hakkında daha fazla bilgi için iOS Geliştirici Kitaplığı’ndaki [XML Özellik Listelerini Anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
+    > [!TIP] XML özellik listeleri hakkında daha fazla bilgi için iOS Geliştirici Kitaplığı’ndaki [XML Özellik Listelerini Anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
     > 
     > XML özellik listesinin biçimi, yapılandırdığınız uygulamaya bağlı olarak değişir. Kullanılacak tam biçim hakkında ayrıntılı bilgi için uygulamanın sağlayıcısına başvurun.
     > 
@@ -81,15 +79,7 @@ Bu ilkeleri doğrudan kullanıcılara ve cihazlara dağıtmazsınız. Bunun yeri
     >
         > Ayrıca, Intune özellik listesinde aşağıdaki belirteç türlerini destekler:
     >    
-    > \{\{userprincipalname\}\} - (Örnek: **Ali@contoso.com**)
-    > \{\{mail\}\} - (Örnek: **Ali@contoso.com**)
-    > \{\{partialupn\}\} - (Örnek: **Ali**)
-    > \{\{accountid\}\} - (Örnek: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-    > \{\{deviceid\}\} - (Örnek: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-    > \{\{userid\}\} - (Örnek: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-    > \{\{username\}\} - (Örnek: **Ali Kara**)
-    > \{\{serialnumber\}\} - iOS cihazları için (Örnek: **F4KN99ZUG5V2**)
-    > \{\{serialnumberlast4digits\}\} - iOS cihazları için (Örnek: **G5V2**)
+    > \{\{userprincipalname\}\} - (Örnek: **Ahmet@contoso.com**) \{\{mail\}\} - (Örnek: **Ahmet@contoso.com**) \{\{partialupn\}\} - (Örnek: **Ahmet**) \{\{accountid\}\} - (Örnek: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**) \{\{deviceid\}\} - (Örnek: **b9841cd9-9843-405f-be28-b2265c59ef97**) \{\{userid\}\} - (Örnek: **3ec2c00f-b125-4519-acf0-302ac3761822**) \{\{username\}\} - (Örnek: **Ahmet Kara**) \{\{serialnumber\}\} - (Örnek: **F4KN99ZUG5V2**) iOS cihazları için \{\{serialnumberlast4digits\}\} - (Örnek: **G5V2**) iOS cihazları için
 >
 > \{\{ ve \}\} karakterleri yalnızca belirteç türleri tarafından kullanılır ve başka bir amaçla kullanılmamalıdır.
 
@@ -101,7 +91,7 @@ Bu ilkeleri doğrudan kullanıcılara ve cihazlara dağıtmazsınız. Bunun yeri
     > [!IMPORTANT]
     > **Doğrula**’ya tıkladığınızda, Intune girdiğiniz XML kodunun geçerli bir biçimde olup olmadığını denetler. XML özellik listesinin ilişkilendirildiği uygulama ile çalışıp çalışmayacağını denetlemez.
 
-6.  İşiniz bittiğinde **İlkeyi Kaydet**‘e tıklayın..
+6.  İşiniz bittiğinde **İlkeyi Kaydet**‘e tıklayın.
 
 Yeni ilke **Yapılandırma İlkeleri** düğümünde görüntülenir.
 
@@ -114,8 +104,7 @@ Ardından, uygulamayı her zamanki gibi dağıtma ve izleme aşamasına geçin.
 
 Dağıtılan uygulama bir cihazda çalıştırıldığında, mobil uygulama yapılandırma ilkesinde yapılandırdığınız ayarlarla çalışır.
 
-> [!TIP]
-> Mobil uygulama yapılandırma ilkelerinden biri veya daha fazlası çakışırsa ilkelerin hiçbiri uygulanmaz ve çakışma, Intune yönetim konsolunun **Pano** bölümünde raporlanır..
+> [!TIP] Mobil uygulama yapılandırma ilkelerinden biri veya daha fazlası çakışırsa ilkelerin hiçbiri uygulanmaz ve çakışma, Intune yönetim konsolunun **Pano** bölümünde raporlanır.
 
 ## Mobil uygulama yapılandırma XML dosyası için örnek biçim
 
@@ -150,6 +139,6 @@ Bir mobil uygulama yapılandırma dosyası oluşturduğunuzda bu biçimi kullana
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -28,12 +28,15 @@ ms.suite: ems
 
 # Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?
 
-Şirket Portalı’nı kullanarak Android cihazınızı sıfırladığınızda, bazı kişisel bilgileriniz de dahil olmak üzere cihazınızdaki bazı uygulamalar ve ayarlar silinebilir. Her cihazda ne olacağı, aşağıdaki tabloda açıklandığı gibi sahip olduğunuz cihaz türüne ve cihazı nasıl kullandığınıza bağlıdır.
+Android cihazınızı sıfırlamak için Şirket Portalı’nı kullandığınızda, cihazınızdaki tüm uygulamalar, ayarlar ve kişisel veriler silinir; cihazınız fabrika varsayılan ayarlarına geri döndürülür.
 
-|Cihaz yapılandırması ve yönetimi|Cihaz türü|
-|---------------------------------------|---------------|
-|Mobil cihazınızı BT yöneticiniz yönetir|Android cihazınızı sıfırladığınızda cihazınız artık Şirket Portalı’nda görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.|
-|Cihazınız yalnızca şirket e-postalarına erişebilir|Android cihazınızı sıfırladığınızda cihazınız artık Şirket Portalı’nda görünmez ve Şirket Portalı, cihazı üreticinin varsayılan ayarlarına geri döndürmeyi dener. Tüm kişisel verileriniz ve ayarlarınız kaldırılır.|
+Samsung Knox cihazınız varsa, Şirket Portalı’ndan **cihaz kaldırma** seçeneğini kullanarak "seçmeli temizleme" yapabilirsiniz. Seçmeli temizleme yalnızca aşağıdakileri kaldırır:
+
+- BT yöneticinizin kullanımınıza sunduğu iş uygulamaları
+- E-posta, VPN ve WiFi
+- BT yöneticinizin bazı ayarları zorunlu tutma becerisi
+
+
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)

@@ -15,7 +15,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -98,11 +98,11 @@ Cihazınız kaydolduğunda, BT yöneticiniz şunları yapabilir:
 
 -   Dolaşım modundayken, cihazınızda otomatik dosya eşitlemesini etkinleştirebilir veya devre dışı bırakabilir. Otomatik dosya eşitlemesine izin verildiyse, dolaşım ücrete tabi olabilir.
 
-Cihazınızı kaydetme adımları için bkz. [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-mac-os-x.md)..
+Cihazınızı kaydetme adımları için bkz. [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-mac-os-x.md).
 
 ### Ayrıca bkz.
-[iOS veya Mac OS X cihazınızı Intune ile kullanma](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

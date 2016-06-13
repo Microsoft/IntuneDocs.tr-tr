@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Microsoft Intune ile mobil uygulama yönetimi ilkelerini izleme
-MAM ilkesini yapılandırdıktan ve kullanıcılara uyguladıktan sonra, Azure portalında uyumluluk durumunu izleyebilirsiniz. Azure portalında, ilkeden etkilenen kullanıcılar hakkında bilgiler, uyumluluk durumu ve son kullanıcılarınızın karşılaşmış olabileceği sorunlar bulunur.
+MAM ilkesini yapılandırdıktan ve kullanıcılara uyguladıktan sonra, [Azure portalında](https://portal.azure.com) uyumluluk durumunu izleyebilirsiniz. Azure portalında, ilkeden etkilenen kullanıcılar hakkında bilgiler, uyumluluk durumu ve son kullanıcılarınızın karşılaşmış olabileceği sorunlar bulunur.
 ## Özet görünümü
 **Intune mobil uygulama yönetimi** dikey penceresinde, aşağıda açıklandığı gibi uyumluluk durumunun özetini görebilirsiniz:
 
@@ -77,6 +77,6 @@ Ayrıntılı görünümde hata iletisi, hata oluştuğunda erişilmiş olan uygu
 [MAM etkin uygulamalar için son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

@@ -32,8 +32,7 @@ Intune’u ayarlamadan önce bu konuyu ve [Başlamadan önce bilinmesi gerekenle
 |Intune özelliği |Desteklenen tarayıcılar|
 |---------|---------|
 |Intune Yönetici konsolu     |  Internet Explorer 10 veya üstü<br /><br />Google Chrome (42. sürümden önceki sürümler)<br /><br />Mozilla Firefox <br /><br />**Not:** Edge şu anda Yönetim konsolu için desteklenmiyor.                      
-|Intune Hesap portalı     | Internet Explorer 10 veya üstü<br /><br />Google Chrome <br /><br />Mozilla Firefox<br /><br />**Not:** Intune Hesap portalının yerine geçen Office 365 Yönetici Portalını kullanıyorsanız tarayıcıların listesi için aşağıdaki “Office 365 Yönetici Portalı” bölümüne bakın.    
-|Office 365 Yönetici Portalı     |Internet Explorer 10 veya üstü<br /><br />Google Chrome<br /><br />Mozilla Firefox <br /><br />Microsoft Edge  |
+|Office 365 Yönetici Portalı     |Web tarayıcıları  |
 |Şirket Portalı web sitesi     |**Mobil cihazlarda:** desteklenen her platform için varsayılan web tarayıcısını kullanın   <br /><br />**Windows bilgisayarlarında:** Internet Explorer 10 veya üstü ya da Microsoft Edge<br /><br />**Mac OS X 10.9 veya sonraki sürümlerde:** Apple Safari    |
 
 
@@ -43,6 +42,6 @@ Intune’u ayarlamadan önce bu konuyu ve [Başlamadan önce bilinmesi gerekenle
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

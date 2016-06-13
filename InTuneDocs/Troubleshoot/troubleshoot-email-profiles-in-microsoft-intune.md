@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ Otomatik olarak yapılandırılan e-posta hesaplarına sahip kullanıcılar, cih
 
 1.  Microsoft Intune Yönetim Konsolu’nu açın, **İlke** iş yükü &gt; **Yapılandırma İlkesi**’ni seçin.
 
-2.  E-posta profilini seçin ve **Düzenle**’ye tıklayın.
+2.  E-posta profilini seçin ve **Düzenle**’yi seçin.
 
 3.  **Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver**’i seçin.
 
@@ -47,7 +47,7 @@ Otomatik olarak yapılandırılan e-posta hesaplarına sahip kullanıcılar, cih
 
 1.  Configuration Manager konsolu &gt; **Varlıklar ve Uyum**'u açın.
 
-2.  **Genel Bakış** -&gt; **Uyumluluk Ayarları** -&gt; **Şirket Kaynağına Erişim**’i genişletin ve **E-posta Profilleri**’ni seçin.
+2.  **Genel Bakış** -&gt;**Uyumluluk Ayarları** -&gt; **Şirket Kaynağına Erişim**’i genişletin ve **E-posta Profilleri**’ni seçin.
 
 3.  E-posta profiline sağ tıklayın ve **Özellikler**’i açın.
 
@@ -57,6 +57,6 @@ Otomatik olarak yapılandırılan e-posta hesaplarına sahip kullanıcılar, cih
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

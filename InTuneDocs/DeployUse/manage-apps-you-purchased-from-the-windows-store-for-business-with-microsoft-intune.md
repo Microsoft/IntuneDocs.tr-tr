@@ -39,25 +39,27 @@ ms.suite: ems
 * İş İçin Windows Mağazası hesabını Intune’la ilişkilendirdikten sonra, gelecekte farklı bir hesaba geçemezsiniz.
 * Mağazadan satın alınan uygulamalar Intune’a el ile eklenemez veya Intune’dan el ile silinemez. Bunlar yalnızca İş İçin Windows Mağazası’yla eşitlenebilir.
 * Intune yalnızca İş İçin Windows Mağazası’ndan satın almış olduğunuz çevrimiçi lisanslı uygulamaları eşitler.
+* Bu özelliğin kullanılabilmesi için cihazların Active Directory Etki Alanı’na katılmış veya Çalışma Alanı’na katılmış olması gerekir.
+* Kaydedilen cihazlar Windows 10’un 1511 sürümünü kullanıyor olmalıdır.
 
 ## İş İçin Windows Mağazası hesabınızı Intune’la ilişkilendirme
 Intune konsolunda eşitlemeyi etkinleştirmek için, önce mağaza hesabınızı yönetim aracı olarak Intune’u kullanacak şekilde yapılandırmanız gerekir:
 1. İş İçin Windows Mağazası’nda oturum açarken, Intune’da oturum açtığınız kiracı hesabının aynısını kullandığınızdan emin olun.
-2. İş İçin Windows Mağazası’nda, **Ayarlar** > **Yönetim araçları**’nı seçin..
+2. İş İçin Windows Mağazası’nda, **Ayarlar** > **Yönetim araçları**’nı seçin.
 3. Yönetim araçları sayfasında, **Yönetim aracı ekle**’yi ve sonra da Microsoft Intune’u seçin.
 
 Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 ## Eşitlemeyi yapılandırma
 
-1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’ye tıklayın..
-2. **Yönetim** çalışma alanında, **Mobil Cihaz Yönetimi**’ni genişletin ve **İş İçin Mağaza**’ya tıklayın..
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’ye tıklayın.
+2. **Yönetim** çalışma alanında, **Mobil Cihaz Yönetimi**’ni genişletin ve **İş İçin Mağaza**’ya tıklayın.
 3. **İş İçin Windows Mağazası** sayfasında aşağıdakileri yapın:
 * Henüz yapmadıysanız, İş İçin Windows Mağazası’na kaydolma bağlantısına tıklayın.
 * Kaydolduktan sonra, **Eşitleme Yapılandır**’a tıklayın.
-4. **İş İçin Windows Mağazası uygulamasının eşitlenmesini yapılandır** iletişim kutusunda **İş İçin Windows Mağazası eşitlemesini etkinleştirin** öğesini seçin..
+4. **İş İçin Windows Mağazası uygulamasının eşitlenmesini yapılandır** iletişim kutusunda **İş İçin Windows Mağazası eşitlemesini etkinleştirin** öğesini seçin.
 5. **Dil** açılan listesinde, İş İçin Windows Mağazası’ndan gelen uygulamaların Intune konsolunda görüntüleneceği dili seçin. Görüntülendikleri dilinden bağımsız olarak, bunlar uygun olduğunda son kullanıcının dilinde yüklenir.
-6. **Tamam**'a tıklayın..
+6. **Tamam**'ı tıklatın.
 
 ## Uygulamaları eşitleme
 
@@ -67,7 +69,7 @@ Bu düğümdeki uygulamalar, sahip olduğunuz toplam lisans sayısı ve kullanı
 
 ## Uygulama dağıtma
 
-Mağazadan alınan uygulamaları, diğer tüm Intune uygulamalarıyla aynı şekilde dağıtırsınız. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md)..
+Mağazadan alınan uygulamaları, diğer tüm Intune uygulamalarıyla aynı şekilde dağıtırsınız. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md).
 İş İçin Windows Mağazası uygulamasını dağıttığınızda, uygulamayı yükleyen her kullanıcı bir lisans kullanır. Dağıtılan uygulamanın tüm kullanılabilir lisanslarını kullandıysanız, artık başka kopya dağıtamazsınız ve aşağıdaki işlemlerden birini yapmanız gerekir:
 * Uygulamayı bazı cihazlardan kaldırma
 * Geçerli dağıtımın kapsamını, yalnızca lisanslarınızın yeterli olduğu kullanıcıları hedefleyecek şekilde daraltma
@@ -80,6 +82,6 @@ Mağazadan alınan uygulamaları, diğer tüm Intune uygulamalarıyla aynı şek
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -38,13 +38,13 @@ Intune’un İOS veya Android mobil uygulamalarınızdaki bazı özellikleri yö
 
 SDK’yı kullanmak için uygulamanın kaynak koduna erişmeniz gerekir, ama uygulamanın davranışını değiştirmek zorunda kalmadan SDK özelliklerinin çoğunu etkinleştirebilirsiniz.
 
-SDK’ya genel bakış için [Genel bakış](https://msdn.microsoft.com/en-us/library/mt627767.aspx) sayfasına bakın. Intune Uygulama SDK'sını kullanmaya başlamak için bkz. [Microsoft Intune Uygulama SDK’sını Kullanmaya Başlama](https://msdn.microsoft.com/library/mt627766.aspx).
+SDK’ya genel bakış için [Genel bakış](/intune/develop/intune-app-sdk) sayfasına bakın. Intune Uygulama SDK'sını kullanmaya başlamak için bkz. [Microsoft Intune Uygulama SDK’sını Kullanmaya Başlama](/intune/develop/intune-app-sdk-get-started).
 
 ### Ayrıca bkz.
 [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

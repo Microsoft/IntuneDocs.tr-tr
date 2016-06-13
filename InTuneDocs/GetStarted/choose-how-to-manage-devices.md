@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’la cihazların nasıl yönetileceğini seçme | Microsoft Intune
+title: Cihazların nasıl yönetileceğini seçme | Microsoft Intune
 description:
 keywords:
 author: jeffgilb
@@ -31,12 +31,7 @@ ms.suite: ems
 ## Mobil cihazları yönetmenin yolları
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Aşağıdaki cihaz platformları yönetebilir:
 
-- Apple iOS 7.1 ve üzeri
-- Google Android 4.0 ve üzeri (Samsung KNOX dahil)
-- Windows Phone 8.0 ve üzeri
-- Windows RT ve Windows 8.1 RT
-- Windows 8.1 ve üzerini çalıştıran bilgisayarlar
-- Mac OS X 10.9 ve üzeri
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 <div class="alert alert-tip">
   <h5><span class="icon-tip"></span> İpucu</h5>
@@ -80,16 +75,16 @@ Aşağıdakileri yapmak istediğinizde Intune bilgisayar istemcisini kullanmayı
 ## Exchange ActiveSync yönetimi
 Cihazları Exchange ActiveSync kullanarak da yönetebilirsiniz. Bunun için Şirket İçi Bağlayıcı'yı yüklemeniz ya da yerleşik Hizmetten Hizmete Bağlayıcı'yı kullanarak Exchange Server'a bağlanmanız gerekir.
 
-Şirket İçi Bağlayıcı'yı yüklemeye ilişkin donanım ve yazılım gereksinimleri hakkında bilgi almak için bkz. [Şirket İçi Bağlayıcı Gereksinimleri](/Intune/network-infrastructure-requirements-for-microsoft-intune.md)..
+Şirket İçi Bağlayıcı'yı yüklemeye ilişkin donanım ve yazılım gereksinimleri hakkında bilgi almak için bkz. [Şirket İçi Bağlayıcı Gereksinimleri](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
 
-Şirket İçi Bağlayıcı veya Hizmetten Hizmete Bağlayıcı’yı Exchange ile kullanma hakkında bilgi edinmek için bkz. [Exchange ActiveSync ve Microsoft Intune ile mobil cihaz yönetimi](/Intune/get-started/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)..
+Şirket İçi Bağlayıcı veya Hizmetten Hizmete Bağlayıcı’yı Exchange ile kullanma hakkında bilgi edinmek için bkz. [Exchange ActiveSync ve Microsoft Intune ile mobil cihaz yönetimi](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
 
 
 ## Sonraki adımlar
-Artık cihazlarınızı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’a kaydettiğinizde kullanabileceğiniz özelliklerden bazılarını keşfettiğinize göre, [cihazlarınızı kaydetmeye hazır olmalısınız](/Intune/get-started/get-ready-to-enroll-devices-in-microsoft-intune.md). Cihazlarınızı kaydettikten sonra, bu konu başlığı altında okuduğunuz tüm özelliklerden yararlanabilirsiniz. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+Artık cihazlarınızı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’a kaydettiğinizde kullanabileceğiniz özelliklerden bazılarını keşfettiniz. Bundan sonra, [cihazlarınızı kaydetmelisiniz](../deploy-use/enroll-devices-in-microsoft-intune). Cihazlarınızı kaydettikten sonra, bu konu başlığı altında okuduğunuz tüm özelliklerden yararlanabilirsiniz. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

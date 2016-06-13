@@ -67,11 +67,11 @@ Görevlerde çalışanlar mobil teknolojileri giderek daha fazla kullanmaktadır
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## Çalışanlarınızın yönetilmeyen genel bir bilgi noktasından Office 365’e güvenle erişmesini sağlama
-Bazen çalışanlarınızın sergi alanlarında ve otel lobilerindeki genel kullanıma açık bilgisayarlar gibi yönetemediğiniz cihazları, uygulamaları veya tarayıcıları kullanması gerekebilir.  Çalışanlarınızın buralardan şirket e-postasına erişmesine izin vermeli misiniz?  Intune ve kurumsal mobil çalışma paketiyle bazı seçeneklere sahipsiniz.  Yanıt basitçe “hayır” olabilir ve e-posta erişimini kuruluşunuz tarafından yönetilen cihazlarla sınırlandırırsınız.  Alternatif olarak, bu güvenilmeyen bilgisayarlara sınırlı erişim vermeyi seçerek çok faktörlü kimlik doğrulamasını zorunlu tutabilir ve tarayıcı erişimine (Outlook Web Access) yalnızca dosyaların (örneğin, e-posta eklerinin) indirilemeyeceği bir modda izin verebilirsiniz.  Bu da, sağlam bir şekilde kimliği doğrulanmış çalışanınızın güvenilmeyen bir bilgisayara şirket verilerini bırakmamasını güvence altına alır.
+Bazen çalışanlarınızın sergi alanlarında ve otel lobilerindeki genel kullanıma açık bilgisayarlar gibi yönetemediğiniz cihazları, uygulamaları veya tarayıcıları kullanması gerekebilir. Çalışanlarınızın buralardan şirket e-postasına erişmesine izin vermeli misiniz? Intune ve kurumsal mobil çalışma paketiyle, <!--you have choices. The--> yanıt basitçe “hayır” olabilir ve e-posta erişimini kuruluşunuz tarafından yönetilen cihazlarla sınırlandırırsınız.  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  Bu da, sağlam bir şekilde kimliği doğrulanmış çalışanınızın güvenilmeyen bir bilgisayara şirket verilerini bırakmamasını güvence altına alır.
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

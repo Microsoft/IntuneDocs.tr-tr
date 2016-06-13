@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune'da Windows bilgisayarı yönetim özellikleri | Microsoft Intune
+title: Windows bilgisayarı yönetim özellikleri | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,7 +34,7 @@ ms.suite: ems
 
 -   **Kötü amaçlı yazılımdan koruma** - Intune, bilgisayarlarınızın kötü amaçlı yazılımlara karşı korunmasına yardımcı olan Endpoint Protection’ı içerir.
 
--   **Uzaktan yardım** - Intune kullanıcıların BT destek personeliyle bağlantı kurmasına olanak tanır ve onlar da Intune’la birlikte gelen uzak masaüstü özelliğini kullanarak yardım sağlayabilir.
+-   **Uzaktan yardım** - Intune kullanıcıların BT destek personeliyle bağlantı kurmasına olanak tanır ve onlar da Intune’la birlikte gelen uzak masaüstü özelliğini kullanarak yardım sağlayabilir (TeamViewer yazılımı gerekir).
 
 -   **Yazılım lisansı yönetimi** - Kullanılabilir yazılım lisanslarının sayısını ve bunlardan kaç tanesinin kullanıldığını izleyin.
 -   **Uygulama dağıtımı** - Yönettiğiniz bilgisayarlarda yazılım dağıtımı yapın. Bilgisayarları istemci yazılımıyla yönettiğinizde bazı uygulama yönetimi özellikleri kullanılamaz.
@@ -46,11 +46,13 @@ Intune, aşağıdaki Windows sürümlerini çalıştıran bilgisayarları yönet
 
 -   **Windows Vista**: Business, Enterprise ve Ultimate sürümleri.
 
--   **Windows 7**: Professional, Enterprise ve Ultimate sürümleri (hizmet paketi yüklü olmayan veya SP1 yüklü).
+-   **Windows 7**: Pro, Enterprise ve Ultimate sürümleri (hizmet paketi yüklü olmayan veya SP1 yüklü).
 
--   **Windows 8**: Professional ve Enterprise sürümleri.
+-   **Windows 8**: Pro ve Enterprise sürümleri.
 
--   **Windows 8.1**: Professional ve Enterprise sürümleri.
+-   **Windows 8.1**: Pro ve Enterprise sürümleri.
+
+- **Windows 10** - Home, Pro, Education ve Enterprise sürümleri.
 
 
 ## En düşük donanım gereksinimleri
@@ -72,9 +74,9 @@ Intune bilgisayar istemcisini yüklemeye yönelik yazılım gereksinimleri aşa�
 |Uyumsuz istemci yazılımını kaldırma|Intune bilgisayar istemcisi yazılımını yüklemeden önce aşağıdaki istemci yazılımlarını ilgili bilgisayardan kaldırmanız gerekir:<br /><br />-   Configuration Manager’ın herhangi bir sürümü<br />-   Microsoft Systems Management Server’ın herhangi bir sürümü (SMS)|
 
 ### Ayrıca bkz.
-[Microsoft Intune'da mobil cihaz yönetimi özellikleri](/intune/understand/mobile-device-management-capabilties-in-microsoft-intune.md)
+[Microsoft Intune'da mobil cihaz yönetimi özellikleri](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

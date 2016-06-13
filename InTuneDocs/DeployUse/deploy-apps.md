@@ -61,9 +61,11 @@ Uygulamaları dağıtırken aşağıdaki dağıtım eylemlerden birini seçebili
 
 -   **Gerekli yükleme** – Uygulama herhangi bir son kullanıcı müdahalesi gerekmeden cihaza yüklenir.
 
-    > Denetimli modda olmayan iOS cihazları ve tüm Android cihazları için kullanıcı yükleme öncesinde uygulama teklifini kabul etmelidir.
+    > [!TIP] Denetimli modda olmayan iOS cihazları ve tüm Android cihazları için kullanıcı yükleme öncesinde uygulama teklifini kabul etmelidir.
     >
     > Artık iOS 7.1’den önceki işletim sistemlerini çalıştıran iOS cihazlarına yeni uygulama dağıtımları oluşturamazsınız. iOS 7.1’den önceki işletim sistemlerini çalıştıran cihazlara yönelik var olan tüm uygulama dağıtımları çalışmaya ve Intune tarafından yönetilmeye devam edecektir.
+    > 
+    >  Son kullanıcı gerekli bir yükleme olarak dağıttığınız bir uygulamayı kaldırırsa, Intune normalde 7 günde bir gerçekleştirilen bir sonraki envanter döngüsünden sonra uygulamayı otomatik olarak yeniden yükler.
 
 -   **Kullanılabilir yükleme** – Uygulama şirket portalında gösterilir ve son kullanıcılar tarafından isteğe bağlı olarak yüklenebilir.
 
@@ -85,7 +87,7 @@ Uygulamaları dağıtırken aşağıdaki dağıtım eylemlerden birini seçebili
 |Dış bağlantı (bir cihaz grubuna dağıtılır)|Hayır|Hayır|Hayır|Hayır|
 |Uygulama mağazasından yönetilen iOS uygulaması (bir kullanıcı grubuna dağıtılır)|Evet|Evet|Evet|Evet|
 |Uygulama mağazasından yönetilen iOS uygulaması (bir cihaz grubuna dağıtılır)|Evet|Hayır|Evet|Evet|
-> Uygulamaları dağıtırken hem kullanıcı hem de cihaz gruplarını seçerseniz, uygulamayı yalnızca **Kullanılabilir yükleme** olarak dağıtabilirsiniz.
+> [!TIP] Uygulamaları dağıtırken hem kullanıcı hem de cihaz gruplarını seçerseniz, uygulamayı yalnızca **Kullanılabilir yükleme** olarak dağıtabilirsiniz.
 
 ## Dağıtım çakışmaları
 Bir cihaz tarafından aynı dağıtım eylemiyle iki dağıtım alındığında aşağıdaki kurallar geçerli olur:
@@ -103,6 +105,6 @@ Bir cihaz tarafından aynı dağıtım eylemiyle iki dağıtım alındığında 
 
 [Microsoft Intune'da uygulamaları dağıtmayı](deploy-apps-in-microsoft-intune.md) öğrenin.
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

@@ -65,6 +65,7 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
 
     **Varsayılan değer = Evet**
 - **Uygulama verilerini şifrele:** Şifrelemeyi etkinleştirmek için **Evet**’i seçin. Bu ayar etkinleştirildiğinde, mobil uygulama yönetimi ilkesiyle ilişkili uygulamalar için, şifreleme Microsoft tarafından sağlanır. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolama alanındaki içerik her zaman şifrelenir.
+  >[!NOTE] Şifreleme yöntemi FIPS 140-2 sertifikalı değildir
 
   **Varsayılan değer = Evet**
 
@@ -75,12 +76,13 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
 ##  Android erişim ilkesi ayarları
 **İlkeyle yönetilen uygulamalar** terimi, MAM ilkeleriyle yapılandırılan uygulamalar için kullanılır.
 
-- **Erişim için basit PIN iste:** İlkeyle yönetilen uygulamalarda kullanmak üzere bir PIN istemek için **Evet**’i seçin. Kullanıcıdan, uygulamayı iş bağlamında ilk kez çalıştırdığında bunu ayarlaması istenir.
+- **Erişim için PIN iste:** İlkeyle yönetilen uygulamalarda kullanmak üzere bir PIN istemek için **Evet**’i seçin. Kullanıcıdan, uygulamayı iş bağlamında ilk kez çalıştırdığında bunu ayarlaması istenir.
 
  **Varsayılan değer = Evet**
-- **PIN sıfırlanmadan önceki deneme sayısı:** Kaç PIN girişi denemesinden sonra kullanıcının PIN'i sıfırlaması gerekeceğini belirtin.
 
- **Bu ayarın varsayılan değeri yoktur.**
+ -  **Basit PIN’e izin ver:** Kullanıcıların 1234 veya 1111 gibi basit PIN dizileri kullanmasına izin verilip verilmeyeceğini belirtin. **Varsayılan değer = Evet**.
+ - **PIN Uzunluğu:** PIN’deki basamak sayısı alt sınırını belirtin. **Varsayılan değer = 4**
+ - **PIN sıfırlanmadan önceki deneme sayısı:** Kaç PIN girişi denemesinden sonra kullanıcının PIN'i sıfırlaması gerekeceğini belirtin. **Bu ayarın varsayılan değeri yoktur.**
 - **Erişim için kuruluş kimlik bilgilerini gerektir:** Uygulama erişiminde PIN yerine şirket kimlik bilgilerinin istenmesi için **Evet**’i seçin.  **Evet** olarak ayarlarsanız, bu ayar PIN veya Touch ID gereksinimlerini geçersiz kılar.  Kullanıcıdan şirket kimlik bilgilerini belirtmesi istenir.
 
   **Varsayılan değer = Hayır**
@@ -98,6 +100,6 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
 - **Ekran görüntüsü yakalamayı ve Android Assistant uygulamasını engelle (Android 6 Marshmallow veya üstü):** Bu uygulamayı kullanırken cihazın ekran görüntüsü yakalama ve **Android Assistant** özelliklerini engellemek için **Evet**’i seçin.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

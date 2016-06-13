@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune’da uygulamaları dağıtma | Microsoft Intune
+title: Uygulamaları dağıtma | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -19,9 +19,9 @@ Bu yordamda, uygulamayı seçilen cihazlara veya kullanıcılara dağıtacaksın
 
 ### Uygulamayı dağıtmak için
 
-1. Yönettiğiniz uygulamaları listesini görmek için, [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Uygulamalar** &gt; **Uygulamalar**’a tıklayın.
+1. Yönettiğiniz uygulamaların listesini görmek için, [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Uygulamalar** &gt; **Uygulamalar**’a tıklayın.
 
-2.  Dağıtmak istediğiniz uygulamayı seçin ve **Dağıtımı Yönet**'e tıklayın..
+2.  Dağıtmak istediğiniz uygulamayı seçin ve **Dağıtımı Yönet**'e tıklayın.
 
 3.  İlk olarak, *&lt;uygulama adı&gt;* iletişim kutusunun **Grupları Seç** sayfasında, uygulamayı dağıtmak istediğiniz kullanıcı veya cihaz gruplarını seçin.
 
@@ -39,7 +39,7 @@ Bu yordamda, uygulamayı seçilen cihazlara veya kullanıcılara dağıtacaksın
     [Hangi Microsoft uygulamalarının mobil uygulama yönetimi ilkeleriyle uyumlu olduğuna bakın.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Dağıttığınız uygulama Intune VPN profilleriyle uyumluysa, **VPN Profili** sayfası görüntülenir. Bu sayfada, iOS uygulamalarını dağıttığınız bir VPN profiliyle ilişkilendirmeyi seçebilirsiniz. Uygulama başlatıldığında VPN bağlantısı otomatik olarak açılır. Bir VPN profilini kullanıma sunmak için **Uygulama Başına VPN** profil ayarının etkinleştirilmesi gerekir.
- Profilleri uygulamalarla ilişkilendirme desteği dahil olmak üzere VPN profillerini yapılandırma hakkında bilgi için bkz. [Kullanıcıların Microsoft Intune ile VPN profilleri kullanarak işlerine bağlanmasına yardımcı olun](vpn-connections-in-microsoft-intune.md)..
+ Profilleri uygulamalarla ilişkilendirme desteği dahil olmak üzere VPN profillerini yapılandırma hakkında bilgi için bkz. [Kullanıcıların Microsoft Intune ile VPN profilleri kullanarak işlerine bağlanmasına yardımcı olun](vpn-connections-in-microsoft-intune.md).
 
 ## Örnek
 
@@ -52,9 +52,9 @@ Uygulamayı bir iOS cihazına **Gerekli** olarak dağıttıysanız, kullanıcı 
 
 ## Sonraki adımlar
 
-Uygulamayı dağıttıktan sonra, ilerleme durumunu izlemek istersiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları izleme](monitor-apps-in-microsoft-intune.md)..
+Uygulamayı dağıttıktan sonra, ilerleme durumunu izlemek istersiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları izleme](monitor-apps-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

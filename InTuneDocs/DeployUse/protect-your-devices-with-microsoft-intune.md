@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cihazları Microsoft Intune ile koruma | Microsoft Intune
+title: Cihazları koruma | Microsoft Intune
 description:
 keywords:
 author: Robstackmsft
@@ -44,6 +44,6 @@ Intune, bir parola, akıllı kart ya da sanal akıllı kartı değiştirmek içi
 Intune, kaydolmadığınız ancak Intune bilgisayar istemci yazılımıyla yönettiğiniz Windows bilgisayarlar için güvenlik ilkelerini desteklemeye devam etmektedir. Bu ilkelerin, Windows bilgisayarlarınızı güvenli hale getirmenize nasıl yardımcı olabileceğini öğrenmek için, bkz. [Intune istemci yazılımını çalıştıran Windows bilgisayarları korumanıza yardımcı olması için ilkeler kullanma](policies-to-protect-windows-pcs-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 
