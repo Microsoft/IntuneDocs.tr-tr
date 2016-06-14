@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’da Windows Phone 8.1 ilke ayarları | Microsoft Intune
+title: Windows Phone 8.1 ilke ayarları | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,11 +29,17 @@ ms.suite: ems
 
 ## Genel yapılandırma ayarları
 
-Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Microsoft Intune **Windows Phone genel yapılandırma ilkesini** kullanın:
+Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Microsoft Intune **Windows Phone genel yapılandırma ilkesini (Windows Phone 8.1 ve üstü)** kullanın:
 
 -   **Mobil cihaz güvenliği ayarları** – Cihazda bir dizi özelliği ve işlevi denetlemenize olanak tanıyan önceden tanımlı ayarlar listesinden seçim yapın.
 
 -   **Uyumlu ve uyumsuz uygulamalar** - Şirketinizdeki uyumlu veya uyumsuz uygulamaların listesini gösterir. Windows Phone cihazları, bu uygulamaların yüklenmesini engelleyebilir veya bu uygulamaların yüklenmesine izin verebilir.
+
+### Uygulanabilirlik ayarları
+
+|Ayar adı|Ayrıntılar|
+|----------------|----------------------------------|
+|**Tüm yapılandırmaları Windows 10'a uygula**|Bu ilkedeki ayarların Windows Phone 8.1 cihazlarına ek olarak Windows 10 Mobile cihazlarına da uygulanmasına izin verir.|
 
 ### Parola ayarları
 
@@ -46,7 +52,7 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 |**Basit parolalara izin ver**|Basit parolalar '0000' ve '1234' şeklindedir|Evet|Evet|
 |**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Aygıt temizlenmeden önce kullanıcının girdiği hatalı parolanın kaç kez anımsanabileceğini belirtir.|Evet|Evet|
 |**Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı**|Ekran otomatik olarak kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.|Evet|Evet|
-|**Parola geçerlilik süresi (gün)**|Parolanın değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
+|**Parola geçerlilik süresi (gün)**|Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
 |**Parola geçmişini anımsa**|Kullanıcıların daha önce kullanılmış olan parolaları yeniden kullanmasını önlemek için önceden kullanılmış parolaların anımsanıp anımsanmayacağını belirtir.|Evet|Evet|
 |**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılmış olan kaç parolanın anımsanacağını belirtir.|Evet|Evet|
 
@@ -54,7 +60,7 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Cihazda şifrelemeyi gerektir**|Desteklenen mobil cihazlarda verilerin şifrelenmesini zorunlu tutar.<br>Windows Phone 8 cihazları için bunu **Evet** olarak ayarlamanız gerekir..|Evet|Evet|
+|**Cihazda şifrelemeyi gerektir**|Desteklenen mobil cihazlarda verilerin şifrelenmesini zorunlu tutar.<br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.|Evet|Evet|
 
 ### Sistem ayarları
 
@@ -121,8 +127,7 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 |**Uygulamaları İçeri Aktar**|Virgülle ayrılmış bir değerler dosyasında belirttiğiniz uygulamaların listesini içeri aktarır. Dosyadaki biçim, uygulama adı, yayımcı, uygulama URL'sini kullanın.|
 |**Düzenle**|Seçilen uygulamanın adını, yayımcısını ve URL'sini düzenlemenize imkan tanır.|
 |**Sil**|Seçilen uygulamayı listeden siler.|
-> [!IMPORTANT]
-> Windows Phone 8.1 cihazları için izin verilen uygulamaların bir listesini belirtirseniz, Şirket Portalı uygulamasını bu listeye ekleyin, aksi takdirde engellenir.
+> [!IMPORTANT] Windows Phone 8.1 cihazları için izin verilen uygulamalar listesi belirtiyorsanız, Şirket Portalı uygulamasını bu listeye ekleyin, yoksa engellenir.
 
 
 ### Uyumlu ve uyumlu olmayan uygulamalar için başvuru bilgileri
@@ -134,14 +139,14 @@ Uyumlu veya uyumlu olmayan uygulama listesinde bir uygulama URL'si belirtmek iç
 
 Uygulamanın sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu uyumlu uygulamalar listesinde veya uyumsuz uygulamalar listesinde gerekli URL olarak kullanabilirsiniz.
 
-**Örnek:** Mağazada Skype uygulamasını arayın. Kullandığınız URL **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51** olacaktır..
+**Örnek:** Mağazada Skype uygulamasını arayın. Kullandığınız URL **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51** olacaktır.
 
 ## Özel ilke ayarları 
 **Windows 8.1 cihazlarındaki** özellikleri denetlerken kullanılabilen OMA-URI (Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı) ayarlarını dağıtmak için Microsoft Intune **Windows Phone özel yapılandırma ilkesini** kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
 
-Bu özellik, Intune genel yapılandırma ilkesiyle, yapılandırılabilir olmayan Windows Phone ayarlarını dağıtmanıza olanak sağlamak için tasarlanmıştır. Bu ilkelerle yapılandırabileceğiniz ayarlar hakkında daha fazla bilgi için bkz. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+Bu özellik, Intune genel yapılandırma ilkesiyle, yapılandırılabilir olmayan Windows Phone ayarlarını dağıtmanıza olanak sağlamak için tasarlanmıştır. Bu ilkelerle yapılandırabileceğiniz ayarlar hakkında daha fazla bilgi için bkz. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-Windows Phone cihazlarında OMA-URI ayarlarını oluşturmanıza yardımcı olması için bkz. [Windows Phone 8.1 MDM protokolü belgeleri](http://technet.microsoft.com/library/dn499787.aspx)..
+Windows Phone cihazlar için OMA-URI ayarlarını oluşturmanıza yardımcı olması için bkz. [Windows Phone 8.1 MDM protokolü belgeleri](http://technet.microsoft.com/library/dn499787.aspx).
 
 ### Genel ayarlar
 
@@ -169,6 +174,6 @@ Windows Phone cihazlarında OMA-URI ayarlarını oluşturmanıza yardımcı olma
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’da iOS ilke ayarları | Microsoft Intune
+title: iOS ilke ayarları | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -38,7 +38,7 @@ Microsoft Intune **iOS genel yapılandırma ilkesini** kullanarak aşağıdaki a
 -   **Uyumlu ve uyumsuz uygulamalar** - Şirketinizdeki uyumlu veya uyumsuz uygulamaların listesini gösterir. Android ve iOS cihazlarında, **Uyumlu Olmayan Uygulamalar Raporu** ile listede belirttiğiniz uygulamalarla kullanıcıların yüklemiş olduğu uygulamalar karşılaştırılarak uyumlu olup olmadığı görüntülenebilir (ancak uygulamanın yüklenmesi engellenemez).
 
 > [!TIP]
-> Kullanıcılarınızın kişisel uygulamalar dahil olmak üzere cihazlarındaki uygulamaların değerlendirileceğini ve uyumsuz uygulamaların engelleneceğini ya da uyumsuz olarak bildirileceğini anladığından emin olmak kullanıcılara yönelik hüküm ve koşullar yapılandırabilirsiniz. Kullanıcılar, uygulamalara erişmek üzere cihazlarını kaydedip şirket portalını kullanmadan önce bu hüküm ve koşulları kabul etmelidir. Hüküm ve koşulları kullanma hakkında daha fazla bilgi için bkz. [Microsoft Intune’da hüküm ve koşullar ilkesi ayarları](terms-and-condition-policy-settings-in-microsoft-intune.md)..
+> Kullanıcılarınızın kişisel uygulamalar dahil olmak üzere cihazlarındaki uygulamaların değerlendirileceğini ve uyumsuz uygulamaların engelleneceğini ya da uyumsuz olarak bildirileceğini anladığından emin olmak kullanıcılara yönelik hüküm ve koşullar yapılandırabilirsiniz. Kullanıcılar, uygulamalara erişmek üzere cihazlarını kaydedip şirket portalını kullanmadan önce bu hüküm ve koşulları kabul etmelidir. Hüküm ve koşulları kullanma hakkında daha fazla bilgi için bkz. [Microsoft Intune’da hüküm ve koşullar ilkesi ayarları](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yapılandırıcı Aracı](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)'nı kullanarak oluşturduğunuz ayarları içeri aktarmanızı sağlayan bir iOS özel ilkesi kullanarak bu özelliği oluşturabilirsiniz. Daha fazla bilgi için, bu konunun devamındaki **Özel ilke ayarları** bölümüne bakın.
 
@@ -160,7 +160,7 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 |**Ses açma/kapama düğmesine izin ver**|Cihazda ses açma/kapama (sessiz) düğmesini etkinleştirir veya devre dışı bırakır.|
 |**Açma/kapatma düğmesine izin ver**|Cihazın açma/kapatma düğmesini etkinleştirir veya devre dışı bırakır.|
 |**Otomatik kilide izin ver**|Cihazın otomatik olarak kilitlenmesini etkinleştirir veya devre dışı bırakır.|
-|**Mono sesi etkinleştir**|**Mono Ses** erişilebilirlik ayarını etkinleştirir veya devre dışı bırakır..|
+|**Mono sesi etkinleştir**| **Mono Ses**erişilebilirlik ayarını etkinleştirir veya devre dışı bırakır.|
 |**Seslendirmeyi etkinleştir**|Cihazın ekranındaki metinleri sesli olarak okuyan **VoiceOver** erişilebilirlik ayarını etkinleştirir veya devre dışı bırakır.|
 |**Seslendirme ayarlarını etkinleştir**|VoiceOver işlevini ayarlamanıza izin veren seslendirme ayarlarını (örneğin, ekran üzerindeki metnin ne kadar hızlı okunacağı) etkinleştirir veya devre dışı bırakır.|
 |**Yakınlaştırmayı etkinleştir**|Cihazın ekranını dokunarak yakınlaştırmanıza olanak sağlayan **Yakınlaştırma** erişilebilirlik ayarını etkinleştirir veya devre dışı bırakır.|
@@ -170,8 +170,7 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 |**Yardımcı dokunmayı etkinleştir**|Ekran hareketlerini gerçekleştirmekte zorlanabilecek kullanıcıların bunları yapmasına yardımcı olan **Yardımcı Dokunma** erişilebilirlik ayarını etkinleştirir veya devre dışı bırakır.|
 |**Yardımcı dokunma ayarlarını etkinleştir**|Yardımcı dokunma işlevini ayarlamanıza olanak veren yardımcı dokunma ayarlarını etkinleştirir veya devre dışı bırakır.|
 |**Seçimi seslendirmeyi etkinleştir**|Seçtiğiniz metni sesli okuyabilen **Seçimi Seslendir** erişilebilirlik ayarını etkinleştirir veya devre dışı bırakır.|
-> [!NOTE]
-> aşağıdaki notlar, iOS cihazlarda bilgi noktası modu ayarları için geçerlidir:
+> [!NOTE] Aşağıdaki notlar, iOS cihazlarında bilgi noktası modu ayarları için geçerlidir:
 > 
 > -   Bir iOS cihazını bilgi noktası modu için yapılandırmadan önce, [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) 'u veya cihaz kayıt yöneticisini kullanarak cihazı denetimli moduna almanız gerekir. Apple Configurator Tool hakkında daha fazla bilgi için Apple belgelerinize bakın.
 > -   Belirttiğiniz iOS uygulaması yapılandırma ilkesini dağıttıktan sonra yüklendiyse, cihaz yeniden başlatılana kadar bilgi noktası moduna girmez.
@@ -183,9 +182,9 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 
 ##### Uyumlu Olmayan Uygulamalar Raporu'nu çalıştırmak için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Raporlar** &gt; **Uyumsuz Uygulamalar Raporları**’na tıklayın..
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Raporlar** &gt; **Uyumsuz Uygulamalar Raporu** öğesine tıklayın.
 
-2.  Denetlenmesini istediğiniz cihaz gruplarını seçin, uyumlu uygulamaları mı, uyumsuz uygulamaları mı yoksa her ikisini birden mi denetlemek istediğinizi seçin ve ardından **Raporu Görüntüle**'ye tıklayın..
+2.  Denetlenmesini istediğiniz cihaz gruplarını seçin, uyumlu uygulamaları mı, uyumsuz uygulamaları mı yoksa her ikisini birden mi kontrol etmek istediğinizi seçin, ardından **Raporu Görüntüle**'ye tıklayın.
 
 #### Uygulama mağazalarının URL'lerini belirtme
 Uyumlu ve uyumsuz uygulamalar listesinde veya **Cihaz bilgi noktası modundayken çalışmasına izin verilecek bir yönetilen uygulama seçin** seçeneğinde (yalnızca iOS) bir uygulamanın URL'sini belirtmek için aşağıdaki biçimi kullanın:
@@ -194,10 +193,9 @@ Bir arama motorunu kullanarak iTunes App Store'dan kullanmak istediğiniz uygula
 
 Sayfanın URL'sini kopyalayın ve bunu uyumlu veya uyumsuz uygulamalar listesini ya da bilgi noktası modunda çalıştırmak istediğiniz uygulamayı yapılandırmak için gereken URL olarak kullanın.
 
-**Örnek:**  **iPad için Microsoft Word**ifadesini aratın. Kullandığınız URL **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** olacaktır..
+**Örnek:**  **iPad için Microsoft Word**ifadesini aratın. Kullandığınız URL **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** olacaktır.
 
-> [!NOTE]
-> iTunes yazılımını kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL'sini alabilirsiniz.
+> [!NOTE] iTunes yazılımını kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL'sini alabilirsiniz.
 
 
 ## Özel ilke ayarları
@@ -232,6 +230,6 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 
