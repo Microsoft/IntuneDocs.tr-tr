@@ -1330,9 +1330,6 @@
   "c082a47dd0bc348ce4b5e6e8c23a5d1ce9d01547": [
     "InTuneDocs\\DeployUse\\previous-intune-releases.md"
   ],
-  "c197695fe61874c3781996cca8745fd5474204f6": [
-    "InTuneDocs\\DeployUse\\previous-intune-releases.md"
-  ],
   "902d8a8962bcadbe9fb10845bb80023781cb8b3c": [
     "InTuneDocs\\EndUser\\device-doesnt-comply-with-maximum-operating-system-version-android.md"
   ],
@@ -2528,13 +2525,7 @@
   "e614ffc58110c62ea661f394d4b96b811ebe83dc": [
     "InTuneDocs\\DeployUse\\ios-policy-settings-in-microsoft-intune.md"
   ],
-  "650ca8f928fc99e7ab50e896be1a0f49bdacad54": [
-    "InTuneDocs\\DeployUse\\ios-policy-settings-in-microsoft-intune.md"
-  ],
   "c31ee9bb3aafa6b54068adda5b14f2c1cacacd31": [
-    "InTuneDocs\\DeployUse\\mac-os-x-policy-settings-in-microsoft-intune.md"
-  ],
-  "9c287c8c6e78f51ebccfeabac41b2ae005f0c43c": [
     "InTuneDocs\\DeployUse\\mac-os-x-policy-settings-in-microsoft-intune.md"
   ],
   "0f2bdbf972ab953ff8a403c6eb9f484bb0a409a9": [
@@ -2547,12 +2538,6 @@
     "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
   ],
   "fe685da41bb5379526bdc28c2f9cceb6b7800703": [
-    "InTuneDocs\\DeployUse\\windows-phone-8-1-policy-settings-in-microsoft-intune.md"
-  ],
-  "ce22379454d33fe211bd476e6f2870f89437d4cb": [
-    "InTuneDocs\\DeployUse\\windows-phone-8-1-policy-settings-in-microsoft-intune.md"
-  ],
-  "a289ba11c4a481de951dba0db5308b9b0d9d1d05": [
     "InTuneDocs\\DeployUse\\windows-phone-8-1-policy-settings-in-microsoft-intune.md"
   ],
   "7e5d48d35e8216bac2fae8e2f9a1ba82d3493acc": [
