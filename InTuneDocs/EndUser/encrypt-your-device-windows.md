@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,32 +27,21 @@ ms.suite: ems
 
 
 # Windows cihazınızı şifreleme
-Şirket veya okul verilerinizi korumak için BT yöneticinizin Windows cihazınızı şifrelemenizi gerektirebilir. Şifreleme yapmanız gerektiğini belirten bir ileti görürseniz, BT yöneticiniz cihazınızı şifrelemek için aşağıdaki adımlardan hangisinin kullanılacağını size söyleyecektir.
 
-Cihazınızı bir Microsoft hesabı ekleyerek veya BitLocker’ı etkinleştirerek şifreleyebilirsiniz.
+Şirket veya okul verilerinizi korumak için BT yöneticinizin Windows cihazınızı şifrelemenizi gerektirebilir. Windows Phone cihazınız varsa ve kaydettiyseniz, şifreleme gerekiyorsa cihazınız otomatik olarak şifrelenir.
 
-**Seçenek 1: Microsoft hesabı ekleme**
-
-1.  **PC Ayarları** uygulamasını arayın ve ardından başlatın.
-
-2.  **Hesaplar** &gt; **Hesabınıza** dokunun ve ardından **Microsoft hesabına bağlan**’a dokunun
-
-3.  Gösterilen yönergeleri izleyin.
-
-4.  [Windows cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-windows.md) kısmındaki yönergeleri takip ederek cihazınızın Intune kaydının yapıldığından emin olun
-
-**Seçenek 2: BitLocker'ı etkinleştirme**
+Bir masaüstü cihazınız varsa, cihazı şifrelemek için aşağıdaki yönergeleri izleyin. 
 
 1.  **BitLocker'ı Yönet** uygulamasını arayın ve ardından başlatın.
 
 2.  **BitLocker'ı Aç**'a tıklayın ve ardından sürücülerinizin her birini şifrelemek için gösterilen yönergeleri izleyin.
 
-3.  [Windows cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-windows.md) kısmındaki yönergeleri takip ederek cihazınızın Intune kaydının yapıldığından emin olun
-
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
+[Windows cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-windows.md)</br>
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

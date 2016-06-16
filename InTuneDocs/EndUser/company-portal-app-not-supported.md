@@ -18,7 +18,7 @@ ms.assetid: dea37b91-33fa-4d4a-ac44-560b450c02a6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,10 +26,12 @@ ms.suite: ems
 ---
 
 # Şirket Portalı uygulaması desteklenmiyor
-Şirket portalının bu sürümü artık kullanılamaz. Devam etmek için Windows Mağazası'ndan **Şirket Portalı** uygulamasını indirin.
+Şirket Portalı’nın bu sürümü artık kullanım dışı bırakılmıştır. Devam etmek için Windows Mağazası'ndan en yeni **Şirket Portalı** uygulamasını indirin.
 
 
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO2-->
 
 

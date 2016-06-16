@@ -18,7 +18,7 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,19 +48,20 @@ Intune aşağıdaki bağlantı türlerini kullanan VPN profillerini oluşturmay�
 
 
 
-Bağlantı türü |iOS ve Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Masaüstü ve Mobile |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Bağlantı türü |iOS ve Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Masaüstü ve Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Evet |Evet   |Hayır    |     Hayır    |Hayır  |Hayır    | Evet, (OMA-URI, yalnızca Mobile)|     
 Pulse Secure|Evet  |Evet |Evet   |Hayır  |Evet  |Evet| Evet|        
 F5 Edge Client|Evet |Evet |Evet |Hayır  |Evet  |   Evet |  Evet|   
 Dell SonicWALL Mobile Connect|Evet |Evet |Evet |Hayır  |Evet |Evet |Evet|         
 CheckPoint Mobile VPN|Evet |Evet |Evet |Evet |Evet|Evet|Evet|
-Microsoft SSL (SSTP)|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Hayır|
-Microsoft Automatic|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
-IKEv2|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
-PPTP|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
-L2TP|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
+Microsoft SSL (SSTP)|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|VPNv1 OMA-URI*|
+Microsoft Automatic|Hayır |Hayır |Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
+IKEv2|iOS Özel İlkesi|Hayır |Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
+PPTP|iOS Özel İlkesi|Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
+L2TP|iOS Özel İlkesi|Hayır |Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
 
+\* Normalde Windows 10’da bulunan ek ayarlar olmadan.
 
 > [!IMPORTANT] Bir cihaza dağıtılan VPN profillerini kullanmadan önce profil için geçerli VPN uygulamasını yüklemeniz gerekir. İlgili uygulamayı Intune kullanarak dağıtmanıza yardımcı olması için, [Microsoft Intune'da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md) konusunda verilen bilgileri kullanabilirsiniz.  
 
@@ -164,6 +165,6 @@ Başarılı bir şekilde dağıtıldıktan sonra, kullanıcılar VPN bağlantıl
 [Android Pulse Secure için uygulama başına VPN](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,10 +36,10 @@ Zaten bir şirket e-posta hesabınız var. Şirket e-postasına bağlanmaya deva
 
 3.  Yeni e-posta ayarlarının cihazınıza otomatik olarak uygulanması için kısa bir süre bekleyin.
 
-Yeni e-posta ayarları bir süre sonra gösterilmezse, BT yöneticinize başvurun.
+Yeni e-posta ayarları bir süre sonra gösterilmezse, BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

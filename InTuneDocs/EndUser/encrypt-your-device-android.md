@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,26 +28,31 @@ ms.suite: ems
 
 # Cihazınızı şifreleme
 
-Şirketiniz veya kuruluşunuz şirket dosyaları, e-postaları veya verilerine erişmek için Android cihazınızı şifrelemenizi gerektiriyorsa, cihazınızı şifrelemek için aşağıdaki adımları izleyin:
+Şirketiniz veya kuruluşunuz şirket dosyaları, e-postaları veya verilerine erişmek için Android cihazınızı şifrelemenizi gerektiriyorsa, cihazınızı şifrelemek için aşağıdaki adımları izleyin. BT yöneticiniz gerekli kılmışsa, şifrelemeden önce bir PIN veya parola ayarlamanız istenebilir.
 
-1.  Cihazınızın şarj cihazına bağlı olduğundan emin olun.
+Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır. 
 
-2.  **Ara**’ya dokunun. Arama kutusuna **şirket portalı** yazın
+1.  Cihazınız için bir ekran kilidi PIN veya parolasının ayarlandığından emin olun. 
 
-3.  Cihazınız için bir ekran kilidi PIN veya parolasının ayarlandığından emin olun.
+2.  **Ayarlar**’da, **Güvenlik** &gt; **Telefonu Şifrele**’ye tıklayın.
+    (Bazı telefonlarda, "Şifrele" seçeneğini bulmak için **Depolama** &gt; **Depolama şifresi** veya **Depolama** &gt; **Kilit ekranı ve güvenlik** &gt; **Diğer güvenlik ayarları**’na tıklamanız gerekebilir).
 
-4.  Ayarlar’da, **Güvenlik** &gt; **Telefonu Şifrele**’ye tıklayın
-    (Bazı telefonlarda **Depolama** &gt; **Depolama şifreleme**'ye tıklamanız gerekir
+3.  Ekrandaki yönergeleri takip edin. Şifreleme sırasında, cihazınız birkaç kere yeniden başlatılabilir.
 
-5.  Ekrandaki yönergeleri takip edin. Şifreleme sırasında, cihazınız birkaç kere yeniden başlatılabilir.
+### Sorunlarınız varsa yapmanız gerekenler
+**Sorun**: Cihazınızı zaten şifrelediyseniz ve aşağıdakilerden biriyle karşılaşıyorsanız: -  Şifreleme düğmesi devre dışıdır.
+-  Yine de şifrelemeniz gerektiğini bildiren bir iletiyle karşılaşırsınız.
+-  Şirket Portalı uygulamasını kullanmaya çalışırken hatayla karşılaşıyorsunuz.
 
-6.  Cihazınızın Microsoft Intune’a kaydedilmesi için [Cihazınızı Microsoft Intune’a kaydetme](enroll-your-device-in-Intune-android.md) yönergelerini izleyin.
+**Yapılacak işlem**: Cihazınızda bir PIN veya parola ayarladığınızdan emin olun.
+
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

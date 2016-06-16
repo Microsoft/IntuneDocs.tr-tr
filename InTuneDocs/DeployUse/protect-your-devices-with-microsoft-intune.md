@@ -18,7 +18,7 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,10 +40,13 @@ Mobil cihazlarda şirket verilerini korumanın ilk adımı cihazı kullanmak iç
 ## Windows cihazlarda Microsoft Passport ayarlarını denetleme
 Intune, bir parola, akıllı kart ya da sanal akıllı kartı değiştirmek için Windows 10 ve üzerinde Active Directory veya bir Azure Active Directory hesabı kullanan alternatif bir oturum açma yöntemi olan [İş İçin Microsoft Passport](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)’u tümleştirmenize olanak sağlar.
 
+## iOS’de Etkinleştirme Kilidini Atlama
+Etkinleştirme Kilidi, cihazlarını silmeden veya yeniden etkinleştirmeden önce kullanıcılardan Apple kimliklerini ve parolalarını girmelerini isteyerek bu cihazları korumaya yardımcı olan bir özelliktir. Ancak, bu, örneğin kullanıcının kilidi kaldırmadan şirketten ayrılması durumunda sorunlara yol açabilir. [iOS Etkinleştirme Kilidi atlama](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md), denetimli iOS cihazlarından kilidi kaldırarak bu cihazları yeniden kullanıma almanıza veya silmenize yardımcı olabilir.
+
 ## Intune istemcisiyle yönetilen Windows bilgisayarları koruma
 Intune, kaydolmadığınız ancak Intune bilgisayar istemci yazılımıyla yönettiğiniz Windows bilgisayarlar için güvenlik ilkelerini desteklemeye devam etmektedir. Bu ilkelerin, Windows bilgisayarlarınızı güvenli hale getirmenize nasıl yardımcı olabileceğini öğrenmek için, bkz. [Intune istemci yazılımını çalıştıran Windows bilgisayarları korumanıza yardımcı olması için ilkeler kullanma](policies-to-protect-windows-pcs-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

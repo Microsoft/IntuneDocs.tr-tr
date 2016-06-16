@@ -18,7 +18,7 @@ ms.assetid: 01247881-452c-4da8-93ca-66b5e65c5317
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre 
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,8 +28,10 @@ ms.suite: ems
 # Cihazınız değerlendirilirken bekleyin
 Cihazınızın uyumluluğu şu anda değerlendiriliyor. Uyumluluk denetiminin tamamlanması için birkaç dakika daha bekleyin.
 
+Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO1-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
 ROBOTS: noindex
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # iOS cihazınızı Intune’a kaydetmeye çalışırken hata görüyorsunuz
 
-Aşağıdaki tabloda iOS cihazlarınızı Intune’a kaydederken görebileceğiniz hatalar listelenmektedir. Bu bağlantıyı BT yöneticinizle paylaşın. 
+Aşağıdaki tabloda iOS cihazlarınızı Intune’a kaydederken görebileceğiniz hatalar listelenmektedir. Bu bağlantıyı BT yöneticinizle paylaşın. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
 
 |Hata iletisi|Sorun|BT yöneticinize söylemeniz gerekenler|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -42,6 +42,6 @@ Aşağıdaki tabloda iOS cihazlarınızı Intune’a kaydederken görebileceğin
 ### Ayrıca bkz.
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

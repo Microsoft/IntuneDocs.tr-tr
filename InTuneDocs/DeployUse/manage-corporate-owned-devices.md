@@ -25,23 +25,23 @@ ms.suite: ems
 
 ---
 
-# Microsoft Intune'la kuruluşa ait cihazları kaydetme
+# Microsoft Intune'la şirketin sahip olduğu cihazları kaydetme
 Kuruluşa ait cihazlar (COD), cihaza, nasıl satın alındığına ve kuruluşun gereksinimlerine bağlı olarak Intune tarafından çeşitli yollarla yönetime getirilebilir.
 
-## Kuruluşa ait iOS cihazları
+## Şirketin sahip olduğu iOS cihazları
 Bu kayıt yöntemleri, kuruluşun kullanıcılar için cihaz satın aldığı ancak cihazın yönetimini elinde tutmak istediği "Kendi cihazını seç" (KCS) senaryolarına uygundur. Kuruluşunuz iOS cihazları satın aldıysa, cihazın kullanıcı tarafından ilk kez açılmasından başlayarak yönetilebilmesi için, kaydı önceden yapılandırabilirsiniz. Intune, [Apple'ın Cihaz Kayıt Programı (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) aracılığıyla ya da [doğrudan](ios-direct-enrollment-in-microsoft-intune.md) veya [Kurulum Yardımcısı](ios-setup-assistant-enrollment-in-microsoft-intune.md) kaydı için Mac bilgisayarda çalışan Apple Configurator aracı kullanılarak kayıt yapılmasını destekler.
 
-[Kuruluşa ait iOS cihazlarını kaydetme](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+[Şirketin sahip olduğu iOS cihazlarını kaydetme](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 
 ## Cihaz kayıt yöneticisi
 Kuruluşlar, cihaz kayıt yöneticisi hesabı olarak adlandırılan tek bir kullanıcı hesabıyla çok sayıda mobil cihazı yönetmek için Intune'u kullanabilir. Cihaz kayıt yöneticisi hesabı oluşturulduktan sonra, bu hesap bir yönetici tarafından, normal kullanıcılara varsayılan olarak izin verilen standart beş cihazdan fazlasını kaydetmek için kullanılabilir. Cihazları cihaz kayıt yöneticisi hesabıyla kaydetme işlemi yalnızca belirli bir kullanıcı tarafından kullanılmayan cihazlarda çalışır. Bu cihazlar örneğin satış noktası veya kamu hizmeti uygulamalarına uygundur ancak e-postaya veya şirket kaynaklarına erişmesi gereken kullanıcılar için uygun değildir.
 
-[Kuruluşa ait cihazları cihaz kayıt yöneticisi ile kaydetme](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+[Şirket ait cihazları cihaz kayıt yöneticisi ile kaydetme](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
 ## Uluslararası mobil donanım kimliği (IMEI)
-Benzersiz uluslararası mobil donanım kimliği (IMEI) numaraları, birçok mobil cihaz üreticisi için ortak cihaz özelliğidir. Intune yöneticileri şirketin sahip olduğu cihazlar için IMEI numaralarını içeri aktarabilir. Cihaz Intune tarafından yönetilir hale geldiğinde, kuruluşa ait cihaz olarak etiketlenebilir ve uygun ilkede hedeflenebilir.
+Benzersiz uluslararası mobil donanım kimliği (IMEI) numaraları, birçok mobil cihaz üreticisi için ortak cihaz özelliğidir. Intune yöneticileri şirketin sahip olduğu cihazlar için IMEI numaralarını içeri aktarabilir. Cihaz Intune tarafından yönetilir hale geldiğinde, şirkete ait cihaz olarak etiketlenebilir ve uygun ilkede hedeflenebilir.
 
-[Uluslararası mobil donanım kimliği (IMEI) numaralarıyla kuruluşa ait cihazları belirtme](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[Uluslararası mobil donanım kimliği (IMEI) numaralarıyla şirkete ait cihazları belirtme](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
 ## Kuruluşa ait cihaz kayıt yöntemlerine genel bakış
 
@@ -49,9 +49,9 @@ Aşağıdaki tabloda kuruluşa ait cihaz kayıt yöntemleri ve bunların avantaj
 
 **iOS Kayıt Yöntemleri**
 
-| **Yöntem** |  **[Sıfırlama](#Reset)** |   **[Benzeşim](#Affinity)**   |   **[Kilitli](#Locked)** |
+| **Yöntem** |  **[Sıfırla](#Reset)** |   **[Benzeşim](#Affinity)**   |   **[Kilitli](#Locked)** |
 |:---:|:---:|:---:|:---:|
-|**[KCG](#BYOD)** | Hayır|    Evet |   Hayır |
+|**[BYOD](#BYOD)** | Hayır|    Evet |   Hayır |
 |**[DEM](#DEM)**|   Hayır |Hayır |Hayır  |
 |**[DEP](#DEP)**|   Evet |   Seçenek |   Seçenek|
 |**[USB-SA](#USB-SA)**| Evet |   Seçenek |   Hayır|
@@ -61,13 +61,13 @@ Aşağıdaki tabloda kuruluşa ait cihaz kayıt yöntemleri ve bunların avantaj
 
 | **Yöntem** |  **[Silme](#Wipe)** | **[Kullanıcı](#User)**   |   **[Kilitli](#Locked)** |
 |:---:|:---:|:---:|:---:|
-|**[KCG](#BYOD)** | Hayır|    Evet |   Hayır |
+|**[BYOD](#BYOD)** | Hayır|    Evet |   Hayır |
 |**[DEM](#DEM)**|   Hayır |Hayır |Hayır  |
 
 **Kuruluşa ait cihazlar için kayıt yöntemleri**
 
-### KCG
-“Kendi Cihazını Getir.” Şirket Portalı uygulamasını kullanıcılar yükler ve cihazlarını kaydeder. Cihazı Şirket Portalı’na kaydetmek cihazın çalışma alanına katılmasını sağlar. iOS cihazlarını Şirket Portalı’na kaydetmek için Apple Kimliği gerekir. Kuruluşa ait cihazlarda KCG ek yapılandırma gerektirmez. [Cihaz yönetimini ayarlama](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md) adımlarına bakın.
+### BYOD
+“Kendi Cihazını Getir.” Şirket Portalı uygulamasını kullanıcılar yükler ve cihazlarını kaydeder. Cihazı Şirket Portalı’na kaydetmek cihazın çalışma alanına katılmasını sağlar. iOS cihazlarını Şirket Portalı’na kaydetmek için Apple Kimliği gerekir. Kuruluşa ait cihazlarda KCG ek yapılandırma gerektirmez. [Cihaz yönetimini ayarlama](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md) adımlarına bakın. ([Tabloya dön](#overview-of corporate-owned-device-enrollment-methods))
 
 ### DEM
 Cihaz kayıt yöneticisi. DEM hesaplarını yönetici oluşturur. Bundan sonra, yöneticiler Şirket Portalı’nı yükleyebilir ve kullanıcısı olmayan birçok cihazı kaydedebilir. [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. ([Tabloya dön](#overview-of corporate-owned-device-enrollment-methods))
@@ -95,7 +95,7 @@ Doğrudan kayıt. Yönetici Intune ilkesini oluşturur ve bunu Apple Configurato
 
 **Kuruluşa ait mobil cihazların davranışı**
 
-### Sıfırlama
+### Sıfırla
 Cihazı kaydetmek için cihazın fabrika ayarlarına sıfırlanması, cihazdan tüm veriler kaldırılarak ilk durumuna döndürülmesi gerekip gerekmediğini belirtir.
 ([Tabloya dön](#overview-of corporate-owned-device-enrollment-methods))
 
@@ -105,7 +105,7 @@ Kayıt yönteminin, cihazı belirli bir kullanıcıya bağlayan “Kullanıcı B
   - E-postaya ve şirket verilerine koşullu erişim
   - Şirket Portalı uygulaması
 
-([Tabloya dön](#overview-of corporate-owned-device-enrollment-methods)) ([Tabloya dön](#overview-of corporate-owned-device-enrollment-methods))
+([Tabloya dön](#overview-of corporate-owned-device-enrollment-methods))
 
 ### Kilitle
 Kullanıcının Intune ilkesini kaldırıp cihazı etkili bir şekilde yönetimden kaldırmasını önlemek için cihazın kilitlenip kilitlenemeyeceğini belirtir. iOS cihazlarında, cihazın kilitlenmesi için cihaz Denetimli modda olmalıdır.

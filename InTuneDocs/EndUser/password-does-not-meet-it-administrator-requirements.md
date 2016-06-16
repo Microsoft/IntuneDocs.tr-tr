@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -19,7 +19,7 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: chrisgre
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 
 # Parola BT yöneticisinin gereksinimlerini karşılamıyor
 
-Parolanız, BT yöneticinizin cihazınız için ayarladığı bir veya birden çok gereksinimi karşılamıyor. BT yöneticinizin oluşturduğu ilkelere bağlı olarak, şu sorunlarından biriyle veya bir bileşimiyle karşılayabilirsiniz:
+Şirket veya okul kaynaklarınıza erişmek için kullandığınız parola, BT yöneticinizin cihazınız için ayarladığını bir veya birkaç gereksinimi karşılamıyor. BT yöneticinizin oluşturduğu ilkelere bağlı olarak, şu sorunlarından biriyle veya bir bileşimiyle karşılayabilirsiniz:
 
 - Parola karmaşık karakterler içermiyor
 - Parola fazla basit ve yeterince güvenli değil
@@ -38,14 +38,14 @@ Parolanız, BT yöneticinizin cihazınız için ayarladığı bir veya birden ç
 - Parola çok kısa süre önce kullanıldı
 - Parola, gereksinimlerini karşılamaya yetecek kadar karmaşık değil
 
-Parolanızı gereksinimlerle uyumlu hale getirme konusunda sorun yaşıyorsanız, BT yöneticinize başvurun.
-
 PIN’inizi veya parolanızı ayarlama hakkında ya da cihazınızda gerçekleştirebileceğiniz diğer görevlerle ilgili bilgi için, sahip olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
 
-- [PIN veya parolanızı ayarlama](set-your-pin-or-password-android.md)</br>
-- [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)</br>
-- - [Parolanızı ayarlama veya değiştirme](set-or-change-your-password-windows.md)
+- [Android cihazınızın PIN kodunu veya parolasını ayarlama](set-your-pin-or-password-android.md)
+- [iOS cihazınızın geçiş kodunu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
+- [Windows cihazınızın parolasını ayarlama veya değiştirme](set-or-change-your-password-windows.md)
 
-<!--HONumber=May16_HO4-->
+Parolanızı gereksinimlerle uyumlu hale getirme konusunda sorun yaşıyorsanız, BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+
+<!--HONumber=Jun16_HO1-->
 
 

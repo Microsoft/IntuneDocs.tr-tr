@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 796297c4-02a1-4d7a-aec1-bae63727ffd3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,8 +28,11 @@ ms.suite: ems
 
 # Cihaz uyumluluk durumu bilinmiyor
 
-Cihazınızda "Uyumluluk durumu bilinmiyor" iletisini görüyorsanız, bu Intune’un cihazınızın şirket ilkeleriyle uyumlu olup olmadığını denetlemeye çalıştığı anlamına gelir. Bu denetim yapılırken, e-posta gibi şirket kaynaklarına erişmeniz engellenebilir. Birkaç dakika uyumluluk denetiminin bitmesini bekleyin ve ardından şirket kaynaklarına erişmeyi yeniden deneyin. Şirket kaynaklarına hala erişemiyorsanız, BT yöneticinize başvurun.
+Cihazınızda "Uyumluluk durumu bilinmiyor" iletisini görüyorsanız, bu Intune’un cihazınızın şirket ilkeleriyle uyumlu olup olmadığını denetlemeye çalıştığı anlamına gelir. Bu denetim yapılırken, e-posta gibi şirket kaynaklarına erişmeniz engellenebilir. Birkaç dakika uyumluluk denetiminin bitmesini bekleyin ve ardından şirket kaynaklarına erişmeyi yeniden deneyin. 
 
-<!--HONumber=May16_HO2-->
+Şirket kaynaklarına hala erişemiyorsanız, BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+
+
+<!--HONumber=Jun16_HO2-->
 
 

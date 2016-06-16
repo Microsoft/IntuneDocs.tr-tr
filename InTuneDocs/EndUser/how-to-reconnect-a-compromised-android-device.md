@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 
 # Ele geçirilen bir Android cihazı yeniden bağlama
-BT yöneticiniz kökü belirtilmiş bir cihaz kullandığınızı belirledi. Bu yapılandırma, güvenliği tehlikeye atabilir ve şirket kaynaklarınız için bir tehdit olabilir.
+BT yöneticiniz kökü belirtilmiş bir cihaz kullandığınızı belirledi. "Köke erişildi" ifadesi, cihazın, güvenliği tehlikeye atabilecek ve şirketinizin kaynakları için tehdit oluşturabilecek şekilde işletim sistemine erişim için değiştirildiğini anlatır. Bu söz konusu olduğunda, cihazınız artık şirket kaynaklarına erişemez.
 
-Cihazınızı yeniden bağlamanıza yardımcı olması için BT yöneticinize başvurun.
+Cihazınızı yeniden bağlaması için BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

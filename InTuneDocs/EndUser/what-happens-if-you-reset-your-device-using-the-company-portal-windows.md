@@ -18,7 +18,7 @@ ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,9 +36,11 @@ ms.suite: ems
 |Cihazınız yalnızca şirket e-postalarına erişebilir|**Windows Phone 8.1 ve Windows Phone 8**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows RT**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows 7 veya Windows Vista Bilgisayarlar**<br />Windows 7 veya daha önceki bir sürümünü çalıştıran ve yalnızca e-postalar için kullanılan bir bilgisayarı sıfırlayamazsınız.<br /><br />**Windows 8.1 ve Windows 8 Bilgisayarlar**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.|
 |Masaüstü ve dizüstü bilgisayarlar|**Windows 8.1 ve Windows 8 Bilgisayarlar**<br />Windows 8 veya Windows 8.1 çalıştıran bilgisayarları yalnızca e-postalar için kullanıldıkları sürece sıfırlayamazsınız.<br /><br />**Windows 7 veya Windows Vista Bilgisayarlar**<br />Windows 7 veya önceki bir sürümünü çalıştıran bilgisayarları sıfırlayamazsınız.|
 
+Sorularınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

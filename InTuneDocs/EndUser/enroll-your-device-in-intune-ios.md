@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: iOS cihazınızı Intune’a kaydetme | Microsoft Itune
+title: iOS cihazınızı Intune’a kaydetme | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,6 +31,7 @@ ms.suite: ems
 Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için iOS cihazınızı kaydedebilirsiniz. Cihazlarınızı kaydetme, BT departmanınızın bu iş veya okul kaynaklarını yönetmenize ve bunları güvenli halde tutmanıza olanak tanırken, işlerinizi için tamamlamak için, tercih ettiğiniz cihazı kullanma özgürlüğünü sağlar. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
 Mac OS X cihazı kaydetmeye çalışıyorsanız, bkz. [Mac OS X cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-mac-os-x.md).
+
 
 
 **iOS cihazınızı kaydetmek için:**
@@ -89,13 +90,11 @@ Mac OS X cihazı kaydetmeye çalışıyorsanız, bkz. [Mac OS X cihazınızı In
 
 Cihazınız artık Intune'a kaydedilmiştir ve sonra Şirket Portalı uygulamasına geri götürülürsünüz.
 
-    
-
-  
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

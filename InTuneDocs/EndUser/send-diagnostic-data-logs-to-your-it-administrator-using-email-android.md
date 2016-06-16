@@ -18,7 +18,7 @@ ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,17 +34,19 @@ Ayrıntılı günlük özelliğini açmak için:
 
 1.  Şirket Portalı uygulamasını açın.
 
-2.  **Menü** &gt;  **Ayarlar**’a dokunun
+2.  **Menü** &gt;  **Ayarlar**’a dokunun.
 
+    > [!NOTE] 
     > **Menü**, Android cihazınızın türüne bağlı olarak bir yazılım düğmesi veya donanım düğmesi olabilir.
 
-3.  **Tanılama Verileri** altında **Veri Gönder**’e dokunun
+3.  **Tanılama Verileri** altında **Veri Gönder**’e dokunun.
 
-    > **Yalnızca Android 6.0 veya üzeri cihazlar kullanıyorsanız:** **Veri Gönder**’e dokunduğunuzda **Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?** iletisini görürsünüz 
+    > [!NOTE]
+    > **Yalnızca Android 6.0 veya üzeri cihazlar kullanıyorsanız:**  **Veri Gönder**'e dokunduğunuzda, **Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?** iletisini görürsünüz. 
 
     Bu ileti yanıltıcıdır, çünkü **Microsoft hiçbir zaman cihazınızdaki fotoğraflara, medyaya veya dosyalara erişmez!** İleti metnini Google denetlediği için Microsoft tarafından değiştirilememektedir.  Erişim izni verdiğinizde tüm yaptığınız, cihazınıza cihaz SD kartına veri günlüklerini yazma izni vermektir; böylece bu günlükleri bir USB kablosu kullanarak taşıyabilirsiniz.
 
-    Erişimi reddederseniz **Veri Gönder** öğesine dokunduğunuz sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** onay kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz.  Daha sonra erişime izin vermeye karar verirseniz **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Depolama**’ya gidin ve izni etkinleştirin.
+    Erişimi reddederseniz **Veri Gönder** öğesine dokunduğunuz sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** onay kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz.  Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Depolama**’ya giderek izni açın.
 
 4.  Bilgi istemlerini izleyerek, günlükleri BT yöneticinize göndermek için kullanılacak e-posta uygulamasını seçin. Uygulama tüm günlüklerin eklendiği, adresi önceden girilmiş bir e-posta oluşturur.
 
@@ -52,6 +54,6 @@ Ayrıntılı günlük özelliğini açmak için:
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

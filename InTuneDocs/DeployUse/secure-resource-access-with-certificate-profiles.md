@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune ile sertifika profillerini kullanarak şirket kaynaklarına erişimi etkinleştirme | Microsoft Intune
+title: Sertifika profillerini kullanarak şirket kaynaklarına erişimi etkinleştir |Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -18,7 +18,7 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -61,6 +61,6 @@ Her platform için ayrı bir profil oluşturmanız gerekir. Profili oluştururke
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

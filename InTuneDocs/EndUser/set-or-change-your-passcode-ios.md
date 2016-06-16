@@ -18,7 +18,7 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: esmich
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,14 +41,16 @@ Geçiş kodu gereksinimlerinin tümüne uyan bir geçiş kodu ayarlama konusunda
 
 ## Geçiş kodunuzu değiştirmek için:
 
-1. **Ayarlar** > **Touch ID ve Geçiş Kodu**’na dokunun.
+1. **Ayarlar** > **Dokunma Kimliği ve Geçiş Kodu**’na dokunun.
 2. Geçiş kodunuzu girin. Touch ID ve Geçiş Kodu menüsü açılır.
 2. **Geçiş Kodunu Değiştir**’e dokunun ve eski geçiş kodunuzu girin.
 3. BT yöneticinizin gereksinimlerini karşılayan yeni bir geçiş kodu girin ve ardından doğrulamak için bu geçiş kodunu yeniden girin.
 
+Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+
 ### Ayrıca bkz.
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

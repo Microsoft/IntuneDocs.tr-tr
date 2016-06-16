@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Microsoft Intune Şirket Portalı
 
-[!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]’u ayarlamadan önce bu konuyu ve [Microsoft Intune’u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md) başlığı altında listelenen diğer gereksinimleri gözden geçirin.
+Intune’u ayarlamadan önce bu konuyu ve [Microsoft Intune’a başlamadan önce bilmeniz gerekenler](what-to-know-before-you-start-microsoft-intune.md) konusunda listelenen gereksinimleri gözden geçirin.
 
 Intune Şirket Portalı, kullanıcıların şirket verilerine ve uygulamalarına erişmesini sağlayan bir araçtır. Şirket Portalı iki biçimde sağlanır:
 
@@ -58,6 +58,6 @@ Kullanıcıların Şirket Portalı’na erişebilmesi için, önce kullanıcı h
 [Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

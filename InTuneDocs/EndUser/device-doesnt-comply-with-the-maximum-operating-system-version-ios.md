@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ada223d7-2a80-4415-bd85-5bdf9eca7ace
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,12 +28,12 @@ ms.suite: ems
 
 # Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil
 
-iOS cihazınız BT yöneticinizin en yüksek işletim sistemi sürümüne yönelik ilkesiyle uyumlu değildir. Yardım almak için BT yöneticinize başvurun.
+iOS cihazınız BT yöneticinizin en yüksek işletim sistemi sürümüne yönelik ilkesiyle uyumlu değildir. BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

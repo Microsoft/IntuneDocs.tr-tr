@@ -34,6 +34,8 @@ Bu bağlantıları ve bilgileri aşağıdakiler için kullanın:
 - Kullanıcılarınızın Intune'da farklı görevler gerçekleştirmek için izlediği adımları anlayın.
 - Görevleri tamamlamalarına ve Intune kullanırken yaşadıkları sorunları çözmelerine yardımcı olmak üzere kullanıcılarınıza verin.
 
+İhtiyaç duyarlarsa kullanıcılarınızın yardım alabilmesi için [Şirket Portalını özelleştirirken](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) BT yöneticisinin iletişim bilgilerini eklemeyi unutmayın.
+
 
 ## Son kullanıcılarınızın sık kullanılan görevler hakkında bilgi bulabileceği yerler
 
@@ -61,9 +63,9 @@ Son kullanıcılarınızın uygulamalarını nasıl aldığını anlamak için, 
 
 ## Son kullanıcıların Şirket Portalı uygulama iletilerini anlamasına yardımcı olma
 
-Kullanıcılarınızın Şirket Portalı’nı kullandıklarında yaşayabileceği sorunları çözmelerine yardımcı olmak için, [Şirket Portalı’nda kullanıcıların görebileceği bir iletiler listesini](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages) gözden geçirebilirsiniz
+Kullanıcılarınızın Şirket Portalı’nı kullandıklarında yaşayabileceği sorunları çözmelerine yardımcı olmak için, [Şirket Portalı’nda kullanıcıların görebileceği bir iletiler listesini](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages) gözden geçirebilirsiniz.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

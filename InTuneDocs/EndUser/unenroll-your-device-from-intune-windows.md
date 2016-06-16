@@ -18,7 +18,7 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Cihazınızın Intune kaydını silme
 
-Intune’a kaydolduysanız, ancak artık iş veya okul için Windows cihazınızı kullanmak istemiyorsanız ve iş veya okul e-postalarına, uygulamalarına veya diğer kaynaklara erişmeye ihtiyacınız yoksa cihazınızın kaydını silmeniz gerekir. Cihazınızın Intune kaydını kaldırdıktan sonra artık bu kaynaklara erişemezsiniz. Cihazınızın kaydını sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+Intune’a kaydolduysanız, ancak artık iş veya okul için Windows cihazınızı kullanmak istemiyorsanız ve iş veya okul e-postalarına, uygulamalarına veya diğer kaynaklara erişmeye ihtiyacınız yoksa cihazınızın kaydını silmeniz gerekir. Cihazınızın Intune kaydını kaldırdıktan sonra artık bu kaynaklara erişemezsiniz. Cihazınızın kaydını sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
 Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde gösterilen ve kullandığınız cihaz türüyle eşleşen bağlantıyı kullanın:
 
@@ -66,9 +66,11 @@ Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde g�
 
 4.  **Hesabı sil** iletişim kutusunda **Sil**’e dokunun.
 
+Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

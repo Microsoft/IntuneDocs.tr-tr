@@ -18,7 +18,7 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ Microsoft Intune Center kullanıcıların şunları yapmasını sağlar:
 
 -   Microsoft Intune Endpoint Protection’ı yönetme
 
--   Uzaktan yardım isteyin.
+<!--- -   Request remote assistance.--->
 
 Microsoft Intune Center, tüm yönetilen bilgisayarlarda yüklüdür. Intune ilkesinde aşağıdaki ayarları yapılandırabilirsiniz ve bunlar Microsoft Intune Center’da kullanıcılara gösterilir:
 
@@ -164,59 +164,59 @@ Bir kullanıcı için yazılım dağıtmadan önce kullanıcıyı bir bilgisayar
 
 > [!TIP] Son kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtlamak istiyorsanız, **Microsoft Intune Aracı Ayarları** ilkesinde **Kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtla** seçeneğini etkinleştirin.
 
-## Intune istemci yazılımı çalıştıran Windows bilgisayarlara uzaktan yardım isteme ve yardım sağlama
+<!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
 > [!IMPORTANT]
-> Intune yönetim konsolunda uzaktan yardım için TeamViewer tümleştirmesini yapılandırma seçeneklerini görmüyor olabilirsiniz. Bu özellik şu anda tüm müşterilerin kullanımına sunulmamıştır, ancak kısa süre içinde daha yaygın olarak dağıtımı yapılacaktır.
+> You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
      
 
-Microsoft Intune, Intune istemci yazılımını çalıştıran bilgisayarların kullanıcılarına sizden uzaktan yardım alma olanağı tanımak için [TeamViewer](https://www.teamviewer.com) yazılımını kullanabilir. Kullanıcı Microsoft Intune Center’dan yardım isteğinde bulunduğunda, bu durum bir uyarıyla size bildirilir; siz bu isteği kabul edebilir ve yardım sağlarsınız.
-Bu işlevsellik, Intune’da var olan Windows Uzaktan Yardım işlevselliğinin yerini alır.
+Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
+This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
 
-### Başlamadan önce
+### Before you start
 
-Uzaktan yardım isteklerine hazırlanmaya ve bu istekleri yanıtlamaya başlayabilmeniz için, önce aşağıdaki önkoşulların karşılandığından emin olmalısınız:
+Before you can begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
 
-- TeamViewer web sitesinde oturum açmak için [bir TeamViewer hesabına kaydolmuş](https://login.teamviewer.com/LogOn#register) olmanız gerekir.
-- Yönetmek istediğiniz Windows bilgisayarların [Windows bilgisayar istemcisiyle yönetiliyor](manage-windows-pcs-with-microsoft-intune.md) olması gerekir.
-- Intune tarafından desteklenen tüm Windows bilgisayarı işletim sistemleri yönetilebilir.
+- You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log into the TeamViewer website.
+- Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
+- All Windows PC operating systems supported by Intune can be administered.
 
-### TeamViewer Bağlayıcısı'nı yapılandırma
+### Configure the TeamViewer Connector
 
-1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’yi seçin.
-2. **Yönetici** çalışma alanında **TeamViewer**’ı seçin.
-3. **TeamViewer** sayfasındaki **TeamViewer Bağlayıcısı**’nın altında **Etkinleştir**’i seçin.
-4. **TeamViewer’ı Etkinleştir** iletişim kutusunda lisans koşullarını görüntüleyin ve **Kabul Et**’i seçin. Zaten bir TeamViewer lisansınız yoksa, **TeamViewer lisansı satın alın** öğesini seçin.
-5. TeamViewer tarayıcı penceresi açıldıktan sonra, TeamViewer kimlik bilgilerinizle sitede oturum açın.
-6. TeamViewer sitesinde, Intune’un TeamViewer’a bağlanmasına izin verme seçeneklerini okuyun ve sonra da kabul edin.
-7. Intune konsolunda, **TeamViewer Bağlayıcısı** öğesinin **Etkin** durumda gösterildiğinden emin olun.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
+2. In the **Admin** workspace, choose **TeamViewer**.
+3. On the **TeamViewer** page, under **TeamViewer Connector**, choose **Enable**.
+4. In the **Enable TeamViewer** dialog box, view, then **Accept** the license terms. If you don't already own a TeamViewer license, choose **Purchase a TeamViewer license**.
+5. After the TeamViewer browser window opens, sign into the site with your TeamViewer credentials.
+6. On the TeamViewer site, read, then accept the options to allow Intune to connect with TeamViewer.
+7. In the Intune console, verify that the **TeamViewer Connector** item shows as **Enabled**.
 
 
-### Uzaktan yardım isteği açma (son kullanıcı)
+### Open a remote assistance request (end user)
 
-1. İstemci Windows bilgisayarında **Microsoft Intune Center**’ı açın.
-2. **Uzaktan Yardım**’ın altında **Uzaktan Yardım İste**’yi seçin.
-3. Siz isteği onayladıktan sonra (aşağıya bakın), istemcide TeamViewer açılır. Kullanıcı, web tarayıcısının TeamViewer uygulamasını açmaya çalıştığını bildiren tüm iletileri kabul etmelidir.
-4. Kullanıcı, bilgisayarını denetleyip denetleyemeyeceğinizi soran bir ileti görür. Devam etmek için bu iletiyi kabul etmesi gerekir.
-5. Uzaktan yardım oturumu boyunca, kullanıcı sizin bağlı olduğunuzu gösteren bir pencere görür. Bu pencereyi kapatırsa, uzak oturum sona erer.
+1. On a client Windows PC, open the **Microsoft Intune Center**.
+2. Under **Remote Assistance**, choose **Request Remote Assistance**.
+3. After you approve the request (see below), TeamViewer opens on the client. The user must accept any messages indicating that the web browser is trying to open the TeamViewer application.
+4. The user sees a message asking if you can control their PC. They must accept this message to continue.
+5. During the remote assistance session, the user sees a window that shows them you are connected. If they close this window, the remote session ends.
 
-### Uzaktan yardım isteğini yanıtlama
+### Respond to a remote assistance request
 
-1. Kullanıcı bir uzaktan yardım isteği gönderdiğinde, bu isteği **Uyarılar** çalışma alanındaki **İzleme** > **Uzaktan Yardım**’ın altında görebilirsiniz. Örneğin:
-> ![Uzaktan yardım isteğinin ekran görüntüsü](./media/team-viewer.png)
+1. When a user submits a remote assistance request, you can view it in the **Alerts** workspace, under **Monitoring** > **Remote Assistance**. For example:
+> ![Screenshot of a remote assistance request](./media/team-viewer.png)
 
-<br>İstek 4 saatten uzun süre yanıtlanmadan kalırsa, kaldırılır.
-2. İsteği kabul etmek için, **İsteği onaylayın ve Uzaktan Yardım’ı başlatın** öğesini seçin.
-3. **Yeni Bir Uzaktan Yardım İsteği Bekliyor** iletişim kutusunda **Uzaktan yardım isteğini kabul et**’i seçin. Zaten yüklü değilse, TeamViewer tüm gerekli uygulamaları bilgisayarınıza yükler.
-4. Ardından TeamViewer, bilgisayarının denetimini almak istediğinizi son kullanıcıya bildirir. Kullanıcı isteği kabul ettikten sonra, TeamViewer penceresi açılır ve bilgisayarın denetimini alabilirsiniz. 
+<br>If a request goes unanswered for more than 4 hours, it is removed.
+2. To accept the request, choose **Approve request and launch Remote Assistance**.
+3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
+4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
  
-Uzaktan yardım oturumu sırasında, uzak bilgisayarı denetlemek için tüm sağlanan TeamViewer komutlarını kullanabilirsiniz. Bu komutlar hakkında yardım için, TeamViewer web sitesinden [Uzaktan kontrol kılavuzu](http://www.teamviewer.com/en/support/documents/)’nu indirin.
+While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
 
-### Uzaktan yardım oturumunu kapatma
+### Close the remote assistance session
 
-**TeamViewer** penceresinin **Eylemler** penceresinde **Oturumu Sonlandır**’ı seçin.
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ ms.suite: ems
 
 -   [Yavaş uygulama yüklemelerini hızlandırmak için cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)
 
--   BT yöneticiniz kişi bilgilerini yapılandırdıysa, BT yöneticinizin kişi bilgilerini bulma
+-   BT yöneticiniz kişi bilgilerini yapılandırdıysa, BT yöneticinizin kişi bilgilerini bulun. Bulmakta güçlük çekiyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenip listelenmediğine bakın.
 
 -   Cihazınız hakkındaki ayrıntıları, cihazın şirket veya okulunuzun ilkeleriyle uyumlu olup olmadığını görme
 
@@ -55,6 +55,6 @@ ms.suite: ems
 - [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,15 +42,17 @@ Parola gereksinimlerinin tümüne uyan bir parola ayarlama konusunda sorun yaş�
 
 ## Windows Phone 8 veya 8.1’de parolanızı değiştirmek için:
 
-1. **Giriş** ekranında **Ayarlar**’a dokunun ve ardından **kilit ekranı**’nı seçin.
+1. **Giriş** ekranında **Ayarlar**’a dokunun ve ardından **ekranı kilitle**’yi seçin.
 2. Ekranı aşağı kaydırarak **Parola**’ya gelin ve **parola değiştir**’e dokunun.
 3. **Geçerli parola** alanına geçerli parolanızı girin.
 4. **Yeni parola** alanına yeni parolanızı girin ve **Parolayı onayla** alanına yeni parolayı bir kez daha girin.
 4. **Bitti**’ye dokunun.
 
+Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

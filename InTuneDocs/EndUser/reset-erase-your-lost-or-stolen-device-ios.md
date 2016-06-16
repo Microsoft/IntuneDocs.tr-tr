@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,7 +31,7 @@ ms.suite: ems
 Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir cihazdan Şirket Portalı uygulamasını kullanarak veya [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanarak cihazı varsayılan fabrika ayarlarına sıfırlayabilirsiniz.
 
 > [!WARNING]
-> Bir cihazı fabrika varsayılanlarına sıfırlamak hem kişisel hem de iş ile ilgili bilgilerinizi cihazdan kaldırır. Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için bkz. [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+> Bir cihazı fabrika varsayılanlarına sıfırlamak hem kişisel hem de iş ile ilgili bilgilerinizi cihazdan kaldırır. Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için bkz. [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md).
 
 Şirket Portalı uygulamasını kullanarak cihazınızı sıfırlamak için:
 
@@ -44,11 +44,12 @@ Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir 
 1.  [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) silmek istediğiniz cihazı seçin.
 
 2.  **Sıfırla** &gt; **Sıfırla**’ya dokunun.
-> [!NOTE] Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin.
+> [!NOTE]
+> Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
 
 ### Ayrıca bkz.
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

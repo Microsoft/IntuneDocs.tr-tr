@@ -18,7 +18,7 @@ ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,17 +34,19 @@ Cihazınızı kaldırırsanız, Şirket Portalı’nda daha fazla listelenmez ve
 
 Cihazınızı kaldırmak için:
 
-1.  [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) açın ve adını değiştirmek istediğiniz cihaza dokunun.
+1.  [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) açın ve sıfırlamak istediğiniz cihaza dokunun.
 
-2.  **Kaldır**’a dokunun
+2.  **Kaldır**’a dokunun.
 
     ![remove-device](./media/iwp-1-tap-reset-passcode.png)
 
 Cihazınız artık kaldırılmıştır.
 
+Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+
 ### Ayrıca bkz.
 [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

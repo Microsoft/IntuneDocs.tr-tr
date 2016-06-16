@@ -18,7 +18,7 @@ ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,13 +34,15 @@ Mobil cihaz yerine bilgisayar kullanıyorsanız ve BT yöneticinizin sorunu anla
 
 2.  Android cihazınızı bir bilgisayara bağlamak için USB kablosu kullanın.
 
-3.  Bilgisayarda, telefonunuzun adına sahip bir dizini arayın. Söz konusu dizinde, &lt;Android Cihazı&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\ yolunu bulun.\.
+3.  Bilgisayarda, telefonunuzun adına sahip bir dizini arayın. Söz konusu dizinde, &lt;Android Cihazı&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\ yolunu bulun\.
 
 4.  Dosyaların tümünü bir e-postaya ekleyin ve bunları BT yöneticinize gönderin.
+
+BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,15 +30,17 @@ ms.suite: ems
 
 BT yöneticiniz şirketinizin kaynaklarına bağlanmanıza imkan sağlamak için bir VPN uygulaması yapılandırdıysa, Android cihazınızda bir VPN uygulaması yüklemeniz gerektiğini belirten bir bildirim görürsünüz. VPN uygulamasını yüklemek için bu adımları uygulayın.
 
-1.  Bildirim çekmecesini aşağıya çekin ve **Bu gerekli uygulamayı yüklemek için dokunun** seçeneğine dokunun
+1.  Bildirim çekmecesini aşağıya çekin ve **Bu gerekli uygulamayı yüklemek için dokunun** seçeneğine dokunun.
 
 2.  **Play Store**’da **YÜKLE**’ye tıklayın ve uygulamayı yüklemek için istemleri izleyin.
 
 3.  **Kuruluş VPN profilini yükle**’ye dokunun, yönergeleri izleyerek uygulamayı kabul edin ve etkinleştirin.
 
+Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

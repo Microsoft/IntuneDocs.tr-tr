@@ -18,7 +18,7 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -69,11 +69,11 @@ Ayrıca, raporları aşağıdaki eylemleri destekler:
 |**Yükleme**|Daha önceden kaydedilen tüm rapor parametreleri kümelerini almak için **Yeni Rapor Oluştur** sayfasında **Yükle** 'ye tıklayın.|
 |**Sil**| **Raporlar** çalışma alanında, istenen rapor türü seçin, **Yükle**'ye tıklayın ve ardından rapor listesinde, raporun yanındaki sil (x) simgesine tıklayın.|
 
-## Ayrıca Bkz.
+### Ayrıca bkz.
 [Microsoft Intune ile izleme ve raporlama](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

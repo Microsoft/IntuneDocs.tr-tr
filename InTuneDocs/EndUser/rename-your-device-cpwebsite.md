@@ -18,7 +18,7 @@ ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,17 +32,19 @@ Cihazınızı yeniden adlandırmaya karar verirseniz, bunu [Şirket Portalı web
 
 Cihazınızı yeniden adlandırmak için:
 
-1.  [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) açın ve adını değiştirmek istediğiniz cihaza dokunun.
+1.  [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) açın ve sıfırlamak istediğiniz cihaza dokunun.
 
-2.  **Yeniden Adlandır**’a dokunun
+2.  **Yeniden Adlandır**’a dokunun.
 
     ![rename-device](./media/iwp-1-tap-reset-passcode.png)
 
 3.  Geçerli cihaz adınızın göründüğü kutuda, cihazınız için yeni adı yazın ve ardından **Yeniden adlandır** düğmesine dokunun. Cihazınız artık yeni adıyla görünür.
 
+Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+
 ### Ayrıca bkz.
 [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

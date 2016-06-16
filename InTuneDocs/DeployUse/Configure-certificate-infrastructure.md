@@ -18,7 +18,7 @@ ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -47,8 +47,8 @@ Kuruluş Sertifika Yetkilisine ek olarak .PFX Sertifika profillerini de kullanma
 
 -    **Active Directory etki alanı**: Bu bölümde listelenen tüm sunucular (Web Uygulaması Ara Sunucusu hariç), Active Directory etki alanınıza katılmalıdır.
 
--  **Sertifika Yetkilisi** (CA): Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Kuruluş Sertifika Yetkilisi (CA). Tek Başına CA desteklenmez. Sertifika Yetkilisini ayarlama hakkında bilgi edinmek için bkz. [Sertifika Yetkilisini yükleme](http://technet.microsoft.com/library/jj125375.aspx).
-    CA'nız Windows Server 2008 R2 çalıştırıyorsa, [KB2483564 ile gelen düzeltmeyi yüklemeniz](http://support.microsoft.com/kb/2483564/) gerekir.
+-  **Sertifika Yetkilisi** (CA): Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Kuruluş Sertifika Yetkilisi (CA). Tek Başına CA desteklenmez. Bir Sertifika Yetkilisi'ni nasıl ayarlayacağınız hakkında bilgi edinmek için bkz. [Sertifika Yetkilisi'ni Yükleme](http://technet.microsoft.com/library/jj125375.aspx).
+    CA'nız Windows Server 2008 R2 çalıştırıyorsa, [KB2483564 ile gelen düzeltmeyi yüklemeniz](http://support.microsoft.com/kb/2483564/)gerekir.
 
 -  **NDES Sunucusu** (yalnızca SCEP): Windows Server 2012 R2 veya üstünü çalıştıran bir sunucuya Ağ Cihazı Kayıt Hizmeti’ni (NDES) kurmalısınız. Intune, Kuruluş CA ile aynı sunucuda çalıştırılan NDES’nin kullanımını desteklemez. Windows Server 2012 R2’yi Ağ Cihazı Kayıt Hizmeti’ni barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](http://technet.microsoft.com/library/hh831498.aspx).|
 -  **Sertifika Yetkilisiyle iletişim kurabilen bilgisayar** (yalnızca .PFX): Alternatif olarak, Sertifika Yetkisi bilgisayarının kendisini kullanın.
@@ -58,9 +58,9 @@ Kuruluş Sertifika Yetkilisine ek olarak .PFX Sertifika profillerini de kullanma
     -  Cihazlar sertifikaları almak ve yenilemek için İnternet üzerinden bağlanıyorsa güvenlik açısından önerilir.
 
 > [!NOTE]           
-> -    WAP'ı barındıran sunucular, Ağ Cihazı Kayıt Hizmeti tarafından kullanılan uzun URL'ler için destek sağlayan [bir güncelleştirmeyi yüklemelidir](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) . Bu güncelleştirme [Aralık 2014 güncelleştirme paketiyle](http://support.microsoft.com/kb/3013769) birlikte veya [KB3011135](http://support.microsoft.com/kb/3011135)’ten tek başına sağlanır.
+> -    WAP'ı barındıran sunucular, Ağ Cihazı Kayıt Hizmeti tarafından kullanılan uzun URL'ler için destek sağlayan [bir güncelleştirmeyi yüklemelidir](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) . Bu güncelleştirmeyi [Aralık 2014 güncelleştirme paketi](http://support.microsoft.com/kb/3013769)ile birlikte veya [KB3011135](http://support.microsoft.com/kb/3011135)güncelleştirmesinden tek başına edinebilirsiniz.
 >-  Ayrıca, WAP’yi barındıran sunucuda, dış istemcilere yayımlanan adla eşleşen bir SSL sertifikası olmalı ve NDES sunucusunda kullanılan SSL sertifikasına güvenilmelidir. Bu sertifikalar, WAP sunucusunun istemcilerden gelen SSL bağlantıyı sonlandırmasına ve NDES sunucusuna yeni bir SSL bağlantı oluşturmasına imkan sağlar.
-    WAP sertifikaları hakkında bilgi için, [Web Uygulaması Ara Sunucusu Kullanarak Uygulama Yayınlamayı Planlama](https://technet.microsoft.com/library/dn383650.aspx) konusunun **Sertifikaları planlama** bölümüne bakın. WAP sunucuları hakkında genel bilgi için bkz. [Web Uygulaması Ara Sunucusu ile çalışma](http://technet.microsoft.com/library/dn584113.aspx).
+WAP sertifikaları hakkında bilgi için, [Web Uygulaması Ara Sunucusu Kullanarak Uygulama Yayınlamayı Planlama](https://technet.microsoft.com/library/dn383650.aspx) konusunun **Sertifikaları planlama** bölümüne bakın. WAP sunucuları hakkında genel bilgi için bkz. [Web Uygulaması Ara Sunucusu ile çalışma](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
 ### Sertifikalar ve Şablonlar
@@ -94,7 +94,7 @@ Bu görevde şunları yapacaksınız:
 
 -   NDES hizmet hesabı oluşturma
 
-    > Sertifikaları iptal etmek için, NDES hizmet hesabının sertifika profili tarafından kullanılan her sertifika şablonu üzerinde *Sertifikaları Yayımlama ve Yönetme* hakları olmalıdır.
+    > [!NOTE] Sertifikaları iptal etmek için, NDES hizmet hesabının sertifika profili tarafından kullanılan her sertifika şablonu üzerinde *Sertifikaları Yayımlama ve Yönetme* hakları olmalıdır.
 
 -   NDES için bir sertifika şablonu yapılandırma
 
@@ -112,15 +112,15 @@ Bu görevde şunları yapacaksınız:
 
     -   **Konu Adı** sekmesinde, **İstekte sağla**'yı seçin. (Güvenlik, NDES için Intune ilke modülü tarafından zorunlu tutulur).
 
-    -   **Uzantılar** sekmesinde, **Uygulama İlkeleri Açıklaması**'nın **İstemci Kimlik Doğrulaması**'nı içerdiğinden emin olun.
+    -   **Uzantılar** sekmesinde, **Uygulama İlkeleri Açıklaması** 'nın **İstemci Kimlik Doğrulaması**'nı içerdiğinden emin olun.
 
-        > iOS ve Mac OS X sertifika şablonları için, **Uzantılar** sekmesinde **Anahtar Kullanımı**'nı düzenleyin ve **İmza kaynağın delilidir** öğesinin seçili olmadığından emin olun.
+        > [!IMPORTANT] iOS ve Mac OS X sertifika şablonları için, **Uzantılar** sekmesinde **Anahtar Kullanımı**'nı düzenleyin ve **İmza kaynağın delilidir** öğesinin seçili olmadığından emin olun.
 
     -   **Güvenlik** sekmesinde, NDES hizmet hesabını ekleyin ve bu hesaba şablon üzerinde **Kaydetme** izinleri verin.
 
 3.  Şablonun **Genel** sekmesindeki **Geçerlilik süresi** 'ni gözden geçirin. Varsayılan olarak, Intune şablonda yapılandırılan değeri kullanır. Ancak, CA'yı istekte bulunan kişinin farklı bir değer belirtmesine izin verecek şekilde yapılandırma seçeneğiniz vardır ve bu değeri Intune yönetim konsolundan ayarlayabilirsiniz. Her zaman şablondaki değeri kullanmak istiyorsanız, bu adımın geri kalanını atlayın.
 
-    > iOS ve Mac OS X platformları, yaptığınız diğer yapılandırmalar ne olursa olsun, her zaman şablonda ayarlanan değeri kullanır.
+    > [!IMPORTANT] iOS ve Mac OS X platformları, yaptığınız diğer yapılandırmalar ne olursa olsun, her zaman şablonda ayarlanan değeri kullanır.
 
     CA'yı istekte bulunan kişinin geçerlilik süresini belirlemesine izin verecek şekilde yapılandırmak için CA'da aşağıdaki komutları çalıştırın:
 
@@ -132,7 +132,7 @@ Bu görevde şunları yapacaksınız:
 
 4.  Sertifika veren CA'da, sertifika şablonunu yayımlamak için Sertifika Yetkilisi ek bileşenini kullanın.
 
-    1.  **Sertifika Şablonları** düğümünü seçin, **Eylem**-&gt; **Yeni** &gt; **Verilecek Sertifika Şablonu**’na tıklayın ve ardından 2. adımda oluşturduğunuz şablonu seçin.
+    1.  **Sertifika Şablonları** düğümünü seçin, **Eylem**--&gt; **Yeni** &gt; **Verilecek Sertifika Şablonu** öğesine tıklayın ve ardından 2. adımda oluşturduğunuz şablonu seçin.
 
     2.  Şablonu **Sertifika Şablonları** klasöründe görüntüleyerek yayımlandığını doğrulayın.
 
@@ -172,7 +172,7 @@ Bu görevde şunları yapacaksınız:
 
 3.  NDES hizmet hesabının SPN'sini ayarlamak için şu komutu çalıştırın:
 
-    -   **setspn -s http/&lt;NDES Sunucusunun DNS adı&gt; &lt;Etki alanı adı&gt;\&lt;NDES Hizmet hesabı adı&gt;**
+    -   **setspn -s http/&lt;NDES Sunucusunun DNS adı&gt; &lt;Etki alanı adı&gt;\&lt;NDES Hizmeti hesap adı&gt;**
 
     Örneğin, NDES Sunucunuzun adlı **Server01**, etki alanınız **Contoso.com**ve hizmet hesabını **NDESService**ise, şunu kullanın:
 
@@ -194,7 +194,7 @@ Bu görevde şunları yapacaksınız:
     > [!TIP]
     > Önceki görevde bulunan bağlantıya tıkladıysanız bu sihirbaz zaten açıktır. Aksi takdirde, Active Directory Sertifika Hizmetleri için dağıtım sonrası yapılandırmaya erişmek için Sunucu Yöneticisi'ni açın.
 
-    -   **Rol Hizmetleri** sayfasında **Ağ Cihazı Kayıt Hizmeti**'ni seçin.
+    -   **Rol Hizmetleri** Sayfasında, **Ağ Cihazı Kayıt Hizmeti**'ni seçin.
 
     -   **NDES için Hizmet Hesabı** sayfasında, NDES Hizmet Hesabı'nı belirtin.
 
@@ -206,7 +206,7 @@ Bu görevde şunları yapacaksınız:
 
 2.  Sihirbaz tamamlandıktan sonra, NDES Sunucusu'nda aşağıdaki kayıt defteri anahtarını düzenleyin:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\*\**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\**
 
     Bu anahtarı düzenlemek için sertifika şablonunun **Amaç** değerini, anahtarın **İstek İşleme** sekmesinde bulunan değerle tanımlayın ve ardından, kayıt defterindeki mevcut verileri sertifika şablonunun Görev 1'de belirttiğiniz adıyla (şablonun görünen adı değil) değiştirerek kayıt defterinde ilgili girişi düzenleyin. Aşağıdaki tabloda, sertifika şablonu amacı ile kayıt defterindeki değerler eşleştirilmiştir:
 
@@ -232,7 +232,7 @@ Bu görevde şunları yapacaksınız:
 
     3.  **SSL sertifikası**için sunucu kimlik doğrulama sertifikasını belirtin.
 
-        > NDES sunucusu tek bir ağ adresi için hem iç hem de dış ad kullanıyorsa, sunucu kimlik doğrulama sertifikasının bir dış genel sunucu adına sahip bir **Konu Adı** ve iç sunucu adını içeren bir **Konu Diğer Adı** olmalıdır.
+        > [!NOTE] NDES sunucusu tek bir ağ adresi için hem iç hem de dış ad kullanıyorsa, sunucu kimlik doğrulama sertifikasının dış genel sunucu adına sahip bir **Konu Adı** ve iç sunucu adını içeren bir **Konu Diğer Adı** olmalıdır.
 
 2.  NDES Sunucunuzda, iç CA'nızdan ya da genel bir sertifika yetkilisinden bir **istemci kimlik doğrulaması** sertifikası isteyin ve yükleyin. Bu sertifika, her iki özelliği de içeriyorsa sunucu kimlik doğrulama sertifikası ile aynı sertifika olabilir.
 
@@ -244,7 +244,7 @@ Bu görevde şunları yapacaksınız:
 
 ##### IIS İstek Filtreleme'yi yapılandırmak için
 
-1.  NDES Sunucusu'nda **IIS Yöneticisi**'ni açın, **Bağlantılar** bölmesinden **Varsayılan Web Sitesi**'ni seçin ve ardından **İstek Filtreleme**'yi açın.
+1.  NDES Sunucusu'nda **IIS Yöneticisi**'ni açın, **Bağlantılar** bölmesinden **Varsayılan Web Sitesi** 'ni seçin ve ardından **İstek Filtreleme**'yi açın.
 
 2.  **Özellik Ayarlarını Düzenle**'ye tıklayın ve ardından aşağıdakileri ayarlayın:
 
@@ -281,7 +281,7 @@ NDES Sunucusu'nda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandı
 
 ##### Sertifika Bağlayıcısı'nı indirmek, yüklemek ve yapılandırmak için
 
-1.  [Intune yönetim konsolunu](https://manage.microsoft.com) açın ve ardından **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **Sertifika Bağlayıcısı** &gt; **Sertifika Bağlayıcısını İndir**’e tıklayın.
+1.  [Intune yönetim konsolunu açın](https://manage.microsoft.com) ve ardından **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **Sertifika Bağlayıcısı** &gt; **Sertifika Bağlayıcısı’nı İndir**’e tıklayın.
 
 2.  Yükleme tamamlandıktan sonra, indirilen yükleyiciyi (**ndesconnectorssetup.exe**) çalıştırın:
 
@@ -296,11 +296,11 @@ NDES Sunucusu'nda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandı
 
 3.  Sertifika Bağlayıcısı için istemci sertifikası istendiğinde, **Seç**'e tıklayıp Görev 3'te NDES Sunucunuza yüklediğiniz **istemci kimlik doğrulaması** sertifikasını seçin.
 
-    İstemci kimlik doğrulaması sertifikasını seçtikten sonra, **Microsoft Intune Sertifika Bağlayıcısı için İstemci Sertifikası** yüzeyine dönersiniz. Seçtiğiniz sertifika gösterilmese de bu sertifikanın özelliklerini görüntülemek **İleri** 'ye tıklayın. Ardından **İleri**'ye ve sonra da **Yükle**'ye tıklayın.
+    İstemci kimlik doğrulaması sertifikasını seçtikten sonra, **Microsoft Intune Sertifika Bağlayıcısı için İstemci Sertifikası** yüzeyine dönersiniz. Seçtiğiniz sertifika gösterilmese de bu sertifikanın özelliklerini görüntülemek **İleri** 'ye tıklayın. Ardından **İleri**'ye ve **Yükle**'ye tıklayın.
 
-4.  Sihirbaz tamamlandığında, sihirbazı kapatmadan önce **Sertifika Bağlayıcısı Kullanıcı Arabirimini Başlat**'a tıklayın.
+4.  Sihirbaz tamamlandıktan sonra, sihirbazı kapatmadan önce, **Sertifika Bağlayıcısı Kullanıcı Arabirimini Başlat**'a tıklayın.
 
-    > Sertifika Bağlayıcısı Kullanıcı Arabirimi'ni başlatmadan sihirbazı kapatırsanız, aşağıdaki komutu çalıştırarak yeniden açabilirsiniz:
+    > [!TIP] Sertifika Bağlayıcısı Kullanıcı Arabirimi'ni başlatmadan sihirbazı kapatırsanız, aşağıdaki komutu çalıştırarak yeniden açabilirsiniz:
     >
     > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -310,11 +310,11 @@ NDES Sunucusu'nda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandı
 
     Kuruluşunuz bir ara sunucu kullanıyorsa ve NDES sunucusunun İnternet'e erişmesi için ara sunucu gerekliyse, **Ara sunucuyu kullan**'a tıklayın ve bağlanmak için ara sunucu adını, bağlantı noktasını ve hesap kimlik bilgilerini girin.
 
-    **Gelişmiş** sekmesini seçin ve ardından, sertifikayı veren Sertifika Yetkilisinde **Sertifikaları Yayımla ve Yönet** iznine sahip olan bir hesabın kimlik bilgilerini sağlayın, ardından **Uygula**'ya tıklayın.
+    **Gelişmiş** sekmesini seçin ve ardından, Sertifika Verme Yetkilisi'nde **Sertifika Ver ve Yönet** iznine sahip olan bir hesabın kimlik bilgilerini sağlayın ve **Uygula**'ya tıklayın.
 
     Şimdi Sertifika Bağlayıcısı kullanıcı arabirimini kapatabilirsiniz.
 
-6.  Bir komut istemi açıp **services.msc** yazın ve **Enter** tuşuna basın, sonra **Sertifika Bağlayıcısı Hizmeti**'ne sağ tıklayın ve **Yeniden Başlat**'a tıklayın.
+6.  Bir komut istemi açıp **services.msc** yazın ve **Enter** tuşuna basın, sonra **Intune Bağlayıcı Hizmeti**'ne sağ tıklayın ve **Yeniden Başlat**'a tıklayın.
 
 Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403** hatası döndürmesi gereken aşağıdaki URL'yi girin:
 
@@ -324,6 +324,6 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403
 Artık, [Sertifika profillerini yapılandırma](configure-intune-certificate-profiles.md) konusunda açıklandığı gibi sertifika profillerinizi yapılandırmaya hazırsınız.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

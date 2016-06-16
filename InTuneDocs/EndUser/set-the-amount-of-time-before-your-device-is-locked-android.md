@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 5f365c7d-5889-4072-a994-613ce3c26ce4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,16 +30,18 @@ ms.suite: ems
 
 Android cihazınızdaki verileri daha güvenli tutmak için, BT yöneticiniz cihazınızın otomatik olarak kilitlenmeden önce ne kadar süreyle boşta durabileceğini belirlemenizi zorunlu tutan bir ilke ayarlayabilir. Cihazınızın kilitlenmeden önce bekleyeceği süreyi ayarlamak için bu adımları izleyin.
  
-1.  Cihazınızın **Ayarlar** bölümünden **Güvenlik** &gt; **Otomatik Olarak Kilitle**’ye tıklayın (bu, bazı cihazlarda **Şu kadar süre işlem yapılmadığında telefonu kilitle** olarak görünür).
+1.  Cihazınızın **Ayarlar** bölümünden **Güvenlik** &gt; **Otomatik Olarak Kilitle** (bu, bazı cihazlarda **Şu kadar işlem yapılmadığında telefonu kilitle** olarak görünür).
 
 2.  Parola zaman aşımı değerini belirtin.
 
 3.  Cihazınızın Intune’a kaydedilmesi için [Cihazınızı Intune’a kaydetme](enroll-your-device-in-Intune-android.md) yönergelerini izleyin.
 
+Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

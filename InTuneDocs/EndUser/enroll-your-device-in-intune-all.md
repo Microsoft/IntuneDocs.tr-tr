@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Cihazınızı Intune’a kaydetme | Microsoft Itune
+title: Cihazınızı Intune’a kaydetme | Microsoft Intune
 description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -42,6 +42,6 @@ Kayıt yönergelerini görmek için, kullanmakta olduğunuz cihaz türüyle eşl
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
 - [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

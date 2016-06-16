@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,10 +31,10 @@ Cihazınız bir veya birden çok şirket ilkenizle uyumsuz bulunmuştur ve cihaz
 
 Bu sorunu çözmek için, birkaç dakika bekleyin ve ardından **Uyumluluğu Denetle**’ye dokunun.
 
-Sorun devam ederse BT yöneticinize başvurun.
+Sorun devam ederse BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

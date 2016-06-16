@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [Pulse Secure kullanılarak Android için uygulama başına VPN | Microsoft Intune]
+title: Pulse Secure kullanılarak Android için uygulama başına VPN | Microsoft Intune
 description:
 keywords:
-author: [nbigman]
-manager: [jeffgilb]
+author: nbigman
+manager: jeffgilb
 ms.date: 05/08/2016
 ms.topic: article
 ms.prod:
@@ -18,7 +18,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: chrisbal
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Intune tarafından yönetilen Android cihazları için uygulama başına VPN pro
 4. VPN profilini tamamlayın ve kaydedin. VPN profilleri hakkındaki diğer ayrıntılar için bkz. [VPN profilleri](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md).
 
 > [!NOTE]
-Sonraki adımda kullanmak üzere VPN profili adını not edin. Örneğin, **UygulamamVpnProfili**.
+Sonraki adımda kullanmak üzere VPN profili adını not edin. Örneğin, **UygulamaVpnProfilim**.
    
 ### 2. Adım: Özel yapılandırma ilkesi oluşturma
     
@@ -47,7 +47,7 @@ Sonraki adımda kullanmak üzere VPN profili adını not edin. Örneğin, **Uygu
    3. **OMA-URI ayarları**’nın altında **Ekle**’ye tıklayın.
    4. Bir ayar adı sağlayın.
    5. **Veri türü** olarak **Dize** belirtin.
-   6. **OMA-URI** için şu dizeyi belirtin: **./Vendor/MSFT/VPN/Profile/*Ad*/PackageList**; burada *Ad*, 1. Adım’da not ettiğiniz VPN profili adıdır. Bizim örneğimizde, dize şöyle olabilir: **./Vendor/MSFT/VPN/Profile/UygulamamVpnProfili/PackageList**.
+   6. **OMA-URI** için şu dizeyi belirtin: **./Vendor/MSFT/VPN/Profile/*Ad*/PackageList**; burada *Ad*, 1. Adım’da not ettiğiniz VPN profili adıdır. Bizim örneğimizde, dize şöyle olabilir: **./Vendor/MSFT/VPN/Profile/UygulamaVpnProfilim/PakatListesi**.
    7.   **Değer** alanında, profille ilişkilendirilecek paketlerin noktalı virgülle ayrılmış listesini sağlayın.  Örneğin, Excel’in ve Google Chrome tarayıcısının VPN bağlantısını kullanmasını istiyorsanız, şunu girebilirsiniz: **com.microsoft.office.excel;com.android.chrome**.
   
 
@@ -82,6 +82,6 @@ Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve *yalnızca* belirt
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

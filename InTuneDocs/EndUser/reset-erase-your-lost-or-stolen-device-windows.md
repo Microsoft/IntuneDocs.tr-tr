@@ -18,7 +18,7 @@ ms.assetid: cefb485f-f555-4da9-b4bf-d569cc4d5581
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Kaybolan veya çalınan cihazınızı sıfırlama (silme)
 
-Kayıtlı Windows cihazınız çalındıysa veya kaybolduysa, fabrika ayarlarına sıfırlayabilirsiniz. Bu adımlarda, Şirket Portalı uygulamasını kullanarak cihazınızın nasıl sıfırlanacağı açıklanır. Ayrıca, [Şirket Portalı web sitesinden de cihazınızı sıfırlayabilirsiniz](reset-your-device-cpwebsite.md)
+Kayıtlı Windows cihazınız çalındıysa veya kaybolduysa, fabrika ayarlarına sıfırlayabilirsiniz. Bu adımlarda, Şirket Portalı uygulamasını kullanarak cihazınızın nasıl sıfırlanacağı açıklanır. Ayrıca, [cihazını Şirket Portalı web sitesinden de sıfırlayabilirsiniz](reset-your-device-cpwebsite.md).
 
 
 > [!WARNING]
@@ -40,11 +40,12 @@ Kayıtlı Windows cihazınız çalındıysa veya kaybolduysa, fabrika ayarların
 
 3.  **Sıfırla** &gt; **Sıfırla**’ya dokunun.
 
-> Kaybolan veya çalınan cihazınızı sıfırlayamıyorsanız, sizin yerinize sıfırlaması için BT yöneticinize danışın.
+> [!NOTE]
+> Kaybolan veya çalınan cihazınızı sıfırlayamıyorsanız, sizin yerinize sıfırlaması için BT yöneticinize danışın. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
 
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

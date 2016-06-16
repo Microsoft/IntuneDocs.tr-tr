@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,19 @@ ms.suite: ems
 ---
 
 # Windows cihazınızı şifreleme
-Çalışmanıza yeniden bağlanmak için bu yönergeleri takip ederek cihazınızı şifrelemeniz gerekir:
 
-## Seçenek 1 – Microsoft hesabı ekleyin
+Şirket veya okul verilerinizi korumak için BT yöneticinizin Windows cihazınızı şifrelemenizi gerektirebilir. Windows Phone cihazınız varsa ve kaydettiyseniz, şifreleme gerekiyorsa cihazınız otomatik olarak şifrelenir.
 
-1.   **PC Ayarları** uygulamasını arayın ve sonra başlatın.
+Bir masaüstü cihazınız varsa, cihazı şifrelemek için aşağıdaki yönergeleri izleyin. 
 
-2.  **Hesaplar** &gt; **Hesabınıza** tıklayın ve ardından **Microsoft hesabına bağlan** öğesine tıklayın.
+1.  **BitLocker'ı Yönet** uygulamasını arayın ve ardından başlatın.
 
-3.  Gösterilen yönergeleri izleyin.
+2.  **BitLocker'ı Aç**'a tıklayın ve ardından sürücülerinizin her birini şifrelemek için gösterilen yönergeleri izleyin.
 
-4.  [Cihazınızı iş yerinde kullanmak için kaydetme](http://go.microsoft.com/fwlink/?LinkId=519071) başlığı altında verilen yönergeleri izleyerek cihazınızı Intune’a kaydettiğinizden emin olun.
-
-## Seçenek 2 – BitLocker'ı etkinleştirin:
-
-1.   **BitLocker'ı Yönet** uygulamasını arayın ve sonra başlatın.
-
-2.   **BitLocker'ı Aç**'a tıklayın ve ardından sürücülerinizin her birini şifrelemek için gösterilen yönergeleri izleyin.
-
-3.  [Cihazınızı iş yerinde kullanmak için kaydetme](http://go.microsoft.com/fwlink/?LinkId=519071) başlığı altında verilen yönergeleri izleyerek cihazınızı Intune’a kaydettiğinizden emin olun.
+Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

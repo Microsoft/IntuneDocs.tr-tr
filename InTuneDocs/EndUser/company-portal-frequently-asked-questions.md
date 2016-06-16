@@ -100,10 +100,14 @@ Cihazınızı nasıl sıfırlayacağınızı görmek için, aşağıdaki bağlan
 ## Şirket Portalı’nda cihazlarımın tümünü görmüyorum
 Bir cihazı görmeniz için Şirket Portalı’na eklenmesi gerekir. Şirket Portalı’na yöneticinizin yönergelerine uygun olarak göz atın ve cihazınıza ilişkin adımları izleyin. Ayrıca, sahibi ve yönetimi şirketinize ait olan cihazları görmezsiniz.
 
+## Sorularınız varsa BT yöneticinizle iletişime geçin
+Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Jun16_HO2-->
 
 
