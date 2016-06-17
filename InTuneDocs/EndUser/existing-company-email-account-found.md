@@ -36,10 +36,10 @@ Zaten bir şirket e-posta hesabınız var. Şirket e-postasına bağlanmaya deva
 
 3.  Yeni e-posta ayarlarının cihazınıza otomatik olarak uygulanması için kısa bir süre bekleyin.
 
-Yeni e-posta ayarları bir süre sonra gösterilmezse, BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Yeni e-posta ayarları bir süre sonra gösterilmezse, BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

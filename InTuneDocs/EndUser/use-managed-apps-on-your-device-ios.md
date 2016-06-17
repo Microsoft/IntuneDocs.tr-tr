@@ -64,23 +64,12 @@ BT yöneticinizin bir uygulamada yönetebileceği ve cihazınızdaki şirket ver
 
 -   Veri şifreleme gereksinimleri
 
-BT bölümünüzün yönetebileceği bazı ortak uygulamalar şunlardır:
 
--   Yönetilen web tarayıcısı
-
--   Yönetilen resim görüntüleyici
-
--   Yönetilen PDF görüntüleyici
-
--   Yönetilen AV player
-
--   Microsoft Word, Excel, PowerPoint
-
-Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöneticinizle iletişim kurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöneticinizle iletişim kurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -28,10 +28,10 @@ ms.suite: ems
 # Ele geçirilen bir Android cihazı yeniden bağlama
 BT yöneticiniz kökü belirtilmiş bir cihaz kullandığınızı belirledi. "Köke erişildi" ifadesi, cihazın, güvenliği tehlikeye atabilecek ve şirketinizin kaynakları için tehdit oluşturabilecek şekilde işletim sistemine erişim için değiştirildiğini anlatır. Bu söz konusu olduğunda, cihazınız artık şirket kaynaklarına erişemez.
 
-Cihazınızı yeniden bağlaması için BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Cihazınızı yeniden bağlaması için BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

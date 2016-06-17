@@ -28,10 +28,10 @@ ms.suite: ems
 # Ele geçirilen bir iOS cihazını yeniden bağlama
 BT yöneticiniz kısıtlamaları kaldırılmış bir cihaz kullandığınızı saptadı. "Kilidini kırma," iOS tarafından dayatılan yazılım kısıtlamalarının şirketin kaynakları için tehdit oluşturabilecek şekilde kaldırıldığı anlamına gelir. Bu söz konusu olduğunda, cihazınız artık şirket kaynaklarına erişemez.
 
-Cihazınızı yeniden bağlaması için BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

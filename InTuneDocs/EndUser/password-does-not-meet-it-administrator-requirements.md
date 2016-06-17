@@ -44,8 +44,8 @@ PIN’inizi veya parolanızı ayarlama hakkında ya da cihazınızda gerçekleş
 - [iOS cihazınızın geçiş kodunu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
 - [Windows cihazınızın parolasını ayarlama veya değiştirme](set-or-change-your-password-windows.md)
 
-Parolanızı gereksinimlerle uyumlu hale getirme konusunda sorun yaşıyorsanız, BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Parolanızı gereksinimlerle uyumlu hale getirme konusunda sorun yaşıyorsanız, BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

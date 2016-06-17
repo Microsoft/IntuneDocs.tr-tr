@@ -36,8 +36,8 @@ ms.suite: ems
 
 3.  [Cihazınızı iş yerinde kullanmak için kaydetme](http://go.microsoft.com/fwlink/?LinkId=519071) başlığı altında verilen yönergeleri izleyerek cihazınızı Intune’a kaydettiğinizden emin olun.
 
-Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

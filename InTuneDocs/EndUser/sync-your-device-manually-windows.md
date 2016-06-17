@@ -97,11 +97,12 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows Pho
     
    Cihazınızın eşitlenmesi bitene kadar, ekranın en üstünde “Hesabınızı senkronize ediyoruz” iletisi görüntülenir.
 
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

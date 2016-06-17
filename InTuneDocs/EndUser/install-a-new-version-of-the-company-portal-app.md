@@ -47,7 +47,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
     > [!NOTE] Windows Mağazası'na erişemiyorsanız BT yöneticinize başvurun.
 
 
-Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 Cihazınızda gerçekleştirebileceğiniz diğer görevlerle ilgili bilgi için, sahip olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
 
@@ -57,6 +57,6 @@ Cihazınızda gerçekleştirebileceğiniz diğer görevlerle ilgili bilgi için,
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

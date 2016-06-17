@@ -83,7 +83,6 @@ Apple Cihaz Kaydı Programı. DEP ile satın alınan iOS cihazları için ilkeyi
 
 ### USB-SA
 USB bağlantılı, Kurulum Yardımcısı kaydı. Yönetici Intune ilkesini oluşturur ve bunu Apple Configurator’a aktarır. USB bağlantılı cihazlar Intune ilkesiyle hazırlanır. Yöneticinin her cihazı el ile kaydetmesi gerekir. Kullanıcılar cihazlarını alır ve Kurulum Yardımcısı7nı çalıştırarak cihazlarını kaydederler. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod şunlara olanak tanır:
-  - Kilitli kayıt
   - Koşullu erişim
   - Kaçış algılama
   - Mobil uygulama yönetimi
@@ -112,6 +111,6 @@ Kullanıcının Intune ilkesini kaldırıp cihazı etkili bir şekilde yönetimd
 ([Tabloya dön](#overview-of corporate-owned-device-enrollment-methods)) ([Tabloya dön](#overview-of corporate-owned-device-enrollment-methods))
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

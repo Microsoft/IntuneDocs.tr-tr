@@ -41,11 +41,11 @@ Kayıtlı Windows cihazınız çalındıysa veya kaybolduysa, fabrika ayarların
 3.  **Sıfırla** &gt; **Sıfırla**’ya dokunun.
 
 > [!NOTE]
-> Kaybolan veya çalınan cihazınızı sıfırlayamıyorsanız, sizin yerinize sıfırlaması için BT yöneticinize danışın. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+> Kaybolan veya çalınan cihazınızı sıfırlayamıyorsanız, sizin yerinize sıfırlaması için BT yöneticinize danışın. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

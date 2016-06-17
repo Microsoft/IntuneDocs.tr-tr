@@ -42,7 +42,7 @@ ms.suite: ems
 
 -   [Yavaş uygulama yüklemelerini hızlandırmak için cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)
 
--   BT yöneticiniz kişi bilgilerini yapılandırdıysa, BT yöneticinizin kişi bilgilerini bulun. Bulmakta güçlük çekiyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenip listelenmediğine bakın.
+-   BT yöneticiniz kişi bilgilerini yapılandırdıysa, BT yöneticinizin kişi bilgilerini bulun. 
 
 -   Cihazınız hakkındaki ayrıntıları, cihazın şirket veya okulunuzun ilkeleriyle uyumlu olup olmadığını görme
 
@@ -55,6 +55,6 @@ ms.suite: ems
 - [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

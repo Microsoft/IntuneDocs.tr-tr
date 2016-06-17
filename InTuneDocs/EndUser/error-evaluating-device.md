@@ -31,10 +31,10 @@ Cihazınız bir veya birden çok şirket ilkenizle uyumsuz bulunmuştur ve cihaz
 
 Bu sorunu çözmek için, birkaç dakika bekleyin ve ardından **Uyumluluğu Denetle**’ye dokunun.
 
-Sorun devam ederse BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Sorun devam ederse BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
