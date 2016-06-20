@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d506cda103893489aa4b3e657ac9223ecc6d39c8/InTuneDocs/index.md) | InSyncHandedBackSuccess | [Details](#8aa2bcd921254083fc05ad2768c0a69f9d96ba4f649)
 
 ## Item Details
-##### <a name='8aa2bcd921254083fc05ad2768c0a69f9d96ba4f649'></a> Source: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d506cda103893489aa4b3e657ac9223ecc6d39c8/InTuneDocs/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/8a2b439a2501a6fa19ab211dd3490b663a23d301/InTuneDocs/index.md)
-* Handoff File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/0016b6c1fc9cbbf630f6d4f29b9247c5292ed768/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.tr-tr.xlf)
-* Handoff Datetime: 2016-06-14 17:09:39
-* Handoff Reason: Include
-* Archive File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/b01c8d7a7138af67dd480a3d25c5b794ad1424cf/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/index.404579aeff405d27d9820f60e5e015fb7352d33a.tr-tr.xlf)
-* Archive Datetime: 2016-06-16 01:51:06
-* Handback File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/840c0021198f24dcda1a2d0be11e80f3a8119c6a/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.tr-tr.xlf)
-* Handback Datetime: 2016-06-20 12:46:39
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
