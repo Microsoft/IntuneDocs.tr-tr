@@ -53,7 +53,7 @@ Aşağıdaki adımlar, bir mobil cihaz yapılandırma ilkesi ve bir Windows bilg
 
 4.  İlke listesinde, ilke oluşturmak istediğiniz platformu genişletin ve ardından **Genel Yapılandırma** > **Önerilen Ayarlarla İlke Oluştur ve Dağıt** > **İlke Oluştur**’u seçin.
 
-5.  **Bu ilkeyi dağıtmak istediğiniz grupları seçmeniz** istendiğinde, kullanılabilir gruplar listesinden **Intune Kullanıcıları**’nı (önceki adımda oluşturulan grup) seçin, ardından da **Ekle** > **Tamam**’ı seçin.
+5.  **Bu ilkeyi dağıtmak istediğiniz grupları seçmeniz** istendiğinde, kullanılabilir gruplar listesinden bir grup seçin ve sonra **Ekle** > **Tamam**’ı seçin.
 
 İlkeniz, yapılandırma ilkeleri listesinde görüntülenir ve **Intune Kullanıcıları** grubuna dağıtılmış olur. Ayarlarını görüntülemek için ilkeye çift tıklayın.
 
@@ -114,6 +114,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 6. adımını tamamlamış
 >[&larr; **Kullanıcıları ve cihazları düzenleme**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Şirket Portalı’nı özelleştirme** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 

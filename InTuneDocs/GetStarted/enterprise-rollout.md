@@ -79,40 +79,40 @@ Burada, **Kurumsal dağıtım** aşamasına başlama adımlarının listesi veri
 
 -   Hedeflenen iletişim ve eğitim gerektirebilecek grupları tanımlayın.
 
--   E-posta iletişimini özelleştirin, intranet sitesini güncelleştirin.
-
--   İletişim/kaynak güncelleştirme işlemlerinin sürekli sahibi olacak kişileri tanımlayın.
+-   E-posta iletişimini özelleştirin, intranet sitesini güncelleştirin ve iletişim/kaynak güncelleştirme işlemlerinin sürekli sahibi olacak kişileri tanımlayın.
 
 -   Kullanacağınız eğitim yöntemlerinin ana hatlarını belirleyin.
-    Kullanıcılar için bir Başlangıç denetim listesi ve kayıt kılavuzu oluşturun.
-    -  Şu kullanım kılavuzlarını başlangıç noktası olarak kullanın:
-    -  [Windows cihazınızı Intune’a kaydetme](/intune/enduser/enroll-your-device-in-intune-windows]
-    -  [Android cihazınızı Intune’a kaydetme](/intune/enduser/enroll-your-device-in-intune-android]
-    -  [iOS cihazınızı Intune’a kaydetme](/intune/enduser/enroll-your-device-in-intune-ios]
 
--   [Mac OS X cihazınızı Intune’a kaydetme](/intune/enduser/enroll-your-device-in-intune-mac-os-x]
+-   Kullanıcılar için bir Başlangıç denetim listesi ve kayıt kılavuzu oluşturun.
+    Şu kullanım kılavuzlarını başlangıç noktası olarak kullanın:
+    -  [Windows cihazınızı Intune'a kaydetme](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Android cihazınızı Intune’a kaydetme](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [iOS cihazınızı Intune'a kaydetme](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Mac OS X cihazınızı Intune’a kaydetme](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Gerektiğinde eğitim malzemelerini güncelleştirmek için bir süreç tanımlayın.
 
-## Geniş dağıtım planını uygulayın.
-Sık karşılaşılan zorluklar
+-   Geniş dağıtım planını uygulayın.
 
--   **Kurumsal dağıtım** aşamasında karşılaşabileceğiniz bazı zorluklar aşağıda verilmiştir.
+## Sık karşılaşılan zorluklar
+**Kurumsal dağıtım** aşamasında karşılaşabileceğiniz bazı zorluklar aşağıda verilmiştir.
 
-    **Zorluk:** E-postalar gönderildi ancak benimsenme oranı sınırlı kaldı. **Hafifletme:** Kullanıcıların her gün yüzlerce, hatta belki de binlerce e-posta aldığını unutmayın.
+-   **Zorluk:** E-postalar gönderildi ancak benimsenme oranı sınırlı kaldı.
 
--   Mesajınızın duyulmasına yardımcı olmak için: (1) ilk iletiyi yönetim kadrosundan bir sponsorun göndermesini sağlayın, (2) e-postanızı kısa tutun ve değer teklifine odaklanın, (3) net bir eylem planınız olsun ve (4) birkaç farklı farkındalık oluşturma taktiği kullanın: örneğin, kafeteryaya kullanıcıların gelen kutularına bakmalarını sağlayacak posterler asın.
+    **Hafifletme:** Kullanıcıların her gün yüzlerce, hatta belki de binlerce e-posta aldığını unutmayın. Mesajınızın duyulmasına yardımcı olmak için: (1) ilk iletiyi yönetim kadrosundan bir sponsorun göndermesini sağlayın, (2) e-postanızı kısa tutun ve değer teklifine odaklanın, (3) net bir eylem planınız olsun ve (4) birkaç farklı farkındalık oluşturma taktiği kullanın: örneğin, kafeteryaya kullanıcıların gelen kutularına bakmalarını sağlayacak posterler asın.
 
-    **Zorluk:** Kullanıcılar değişikliğe karşı direnç gösterir ve yeni teknolojiyi kullanmayı ertelerler.
+-   **Zorluk:** Kullanıcılar değişikliğe karşı direnç gösterir ve yeni teknolojiyi kullanmayı ertelerler.
 
--   **Hafifletme:** Intune tarafından yönetilen cihazların kullanıcılarını teşvik etmek için pilot kullanıcılarınızın olumlu deneyimlerini kullanın.
+    **Hafifletme:** Intune tarafından yönetilen cihazların kullanıcılarını teşvik etmek için pilot kullanıcılarınızın olumlu deneyimlerini kullanın.
 
-    **Zorluk:** Kullanıcılar, eğitim almaları gerektiğine göre çözümün kullanılmasının zor olduğunu düşünürler. **Hafifletme:** Herkesin öğrenme hızı farklıdır. Bazıları hiçbir yönergeye gerek kalmadan yeni teknolojiyi alırken, diğerlerine biraz yol göstermek veya cesaretlendirmek gerekebilir. Eğitim, kullanıcıların çözümden en iyi şekilde yararlanmalarına yönelik ipuçları sağlayabilir ve kullanıcıları bunaltmamak veya fazla ayrıntılı görünmesini önlemek için küçük paketlere bölünebilir ya da bölümlere göre ayrılabilir. Eğitimi değer katan bir şey olarak konumlandırın ve bölümlere ayrılmış küçük eğitim paketleri sağlayın.
+-   **Zorluk:** Kullanıcılar, eğitim almaları gerektiğine göre çözümün kullanılmasının zor olduğunu düşünürler.
 
-### Kullanıcının öğrenmesini ve benimsemesini en üst düzeye çıkarmak için, planınızda çeşitli eğitim yöntemlerini bir araya getirin.
-[Sonraki adımlar](operations-and-maintenance.md)
+    **Hafifletme:** Herkesin öğrenme hızı farklıdır. Bazıları hiçbir yönergeye gerek kalmadan yeni teknolojiyi alırken, diğerlerine biraz yol göstermek veya cesaretlendirmek gerekebilir. Eğitim, kullanıcıların çözümden en iyi şekilde yararlanmalarına yönelik ipuçları sağlayabilir ve kullanıcıları bunaltmamak veya fazla ayrıntılı görünmesini önlemek için küçük paketlere bölünebilir ya da bölümlere göre ayrılabilir. Eğitimi değer katan bir şey olarak konumlandırın ve bölümlere ayrılmış küçük eğitim paketleri sağlayın. Kullanıcının öğrenmesini ve benimsemesini en üst düzeye çıkarmak için, planınızda çeşitli eğitim yöntemlerini bir araya getirin.
+
+### Sonraki adımlar
+[İşlemler ve bakım](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
