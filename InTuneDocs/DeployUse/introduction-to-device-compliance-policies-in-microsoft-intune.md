@@ -18,7 +18,7 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 Şirket verilerini korumak için, şirket uygulamalarına ve verilerine erişmek için kullanılan cihazların bazı kurallara (cihaza erişim için PIN kullanma ve cihazda depolanan verileri şifreleme gibi) uyduğundan emin olmanız gerekir. Bu tür bir kurallar kümesine uyumluluk ilkesi adı verilir.
 
 ## Uyumluluk ilkelerini nasıl kullanmalıyım?
-Uyumluluk ilkelerini koşullu erişim ilkeleriyle birlikte kullanarak, uyumluluk ilkesi kurallarına uyan cihazlara erişimi kısıtlayabilirsiniz. İki ilkenin nasıl birlikte kullanılabileceğini anlamak için [E-postaya ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
+E-postaya ve diğer hizmetlere yalnızca uyumluluk ilkesi kurallarıyla uyumlu olan cihazların erişmesine izin vermek için uyumluluk ilkelerini koşullu erişim ilkeleri ile kullanabilirsiniz. İki ilkenin nasıl birlikte kullanılabileceğini anlamak için [E-postaya ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
 
 Uyumluluk ilkelerini, koşullu erişimden bağımsız olarak da kullanabilirsiniz. Bağımsız olarak kullanıldığında, hedeflenen cihazlar değerlendirilir ve uyumluluk durumları raporlanır. Örneğin, kaç cihazın şifrelenmediğini ya da hangi cihazların yazılım kilidinin kırıldığını veya kökünün belirtildiğini raporlamak isteyebilirsiniz. Öte yandan, bunlar bağımsız kullanıldığında, şirket kaynaklarına yönelik erişim kısıtlaması olmaz.
 
@@ -67,6 +67,6 @@ Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyum
 [E-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

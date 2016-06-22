@@ -18,7 +18,7 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Hedeflenen bir kullanıcı kendi cihazında Skype Kurumsal Çevrimiçi’ni kull
 
 Skype Kurumsal Çevrimiçi için koşullu erişim ilkesini yapılandırmadan **önce**:
 - **Skype Kurumsal Çevrimiçi aboneliğiniz** olmalı ve kullanıcılara Skype Kurumsal Çevrimiçi lisansı atamalısınız.
-- **Enterprise Mobility Suite** veya **Azure Active Directory Premium** aboneliğiniz olmalıdır.
+- **Enterprise Mobility Suite** veya **Azure Active Directory Premium** için bir aboneliğiniz olmalıdır.
 -   Skype Kurumsal Çevrimiçi için **modern kimlik doğrulamasını etkinleştirmelisiniz**. Modern kimlik doğrulama programına kaydolmak için Microsoft Connect’te oturum açın ve [bu formu](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) doldurun.
 -  Tüm son kullanıcılarınız **Skype Kurumsal Çevrimiçi** kullanıyor olmalıdır. Hem Skype Kurumsal Çevrimiçi hem de Skype Kurumsal şirket içi kullanılan bir dağıtımınız varsa, son kullanıcılara koşullu erişim ilkesi uygulanmaz.
 
@@ -46,7 +46,7 @@ Skype Kurumsal Çevrimiçi için koşullu erişim ilkesini yapılandırmadan **�
 
 -   **Android** veya **iOS** cihazı olmalıdır.
 
--   Intune’a **kayıtlı** olmalıdır.
+-   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetine **kayıtlı** olmalıdır.
 
 -   Dağıtılan tüm [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uyumluluk ilkelerine **uymalıdır**.
 
@@ -73,12 +73,12 @@ Skype Kurumsal ilkesinde kullanmak üzere iki grup türü belirtebilirsiniz:
 Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 
 ### 2. Adım: Uyumluluk ilkesi yapılandırma ve dağıtma
-Bir uyumluluk ilkesi [oluşturun](create-a-device-compliance-policy-in-microsoft-intune.md) ve ilkeden etkilenecek olan tüm cihazlara [dağıtın](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md). Bunlar, **Hedeflenen gruplar** içindeki kullanıcılar tarafından kullanılan tüm cihazlar olabilir.
+Bir uyumluluk ilkesi [oluşturun](create-a-device-compliance-policy-in-microsoft-intune.md) ve ilkeden etkilenecek olan tüm cihazlara [dağıtın](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md). Bunlar, **Hedeflenen gruplar**’daki kullanıcılar tarafından kullanılan tüm cihazlar olacaktır.
 
-> Uyumluluk ilkeleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
+> [!NOTE] Uyumluluk ilkeleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
 
 
-> Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak kabul edilir.
+> [!IMPORTANT] Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak değerlendirilir.
 
 Hazır olduğunuzda **3. Adım**’a ilerleyin.
 
@@ -86,7 +86,7 @@ Hazır olduğunuzda **3. Adım**’a ilerleyin.
 İlkeyi yalnızca yönetilen ve uyumlu cihazların Skype Kurumsal Çevrimiçi’ne erişebileceği şekilde yapılandırın. Bu ilke Azure Active Directory’de depolanır.
 
 ####
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **Skype Kurumsal Çevrimiçi İlkesi**’ne tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **Skype Kurumsal Çevrimiçi Sürüm**’e tıklayın.
 
 ![Skype Kurumsal Çevrimiçi koşullu erişim ilkesi sayfasının ekran görüntüsü](./media/conditional_access_SFBPolicy.png)
 
@@ -119,6 +119,6 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 * **AAD ile kaydedilen ve uyumlu olan cihazlar** – Bu cihazlar Skype Kurumsal Çevrimiçi’ne erişebilir.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

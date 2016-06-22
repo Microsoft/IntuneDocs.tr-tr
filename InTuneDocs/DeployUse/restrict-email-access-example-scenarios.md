@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -70,7 +70,7 @@ Hangi cihazların Exchange’e erişebileceğine karar vermek için aşağıdaki
 ## Hiçbir Android cihazı Şirket İçi Exchange’e erişemez.
 ### Senaryo gereksinimleri
 - Tüm Android cihazlarının Exchange’e erişimi engellenmelidir.
-- Diğer tüm desteklenen cihazlar, Intune tarafından yönetildikleri sürece Exchange’e erişebilir.
+- Desteklenen diğer tüm cihazlar, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] tarafından yönetildikleri sürece Exchange’e erişebilir.
 
 Bunu başarmak için, Şirket İçi Exchange için aşağıdaki ayarlarla bir koşullu erişim ilkesi yapılandırın:
 
@@ -86,6 +86,6 @@ Hangi cihazların Exchange’e erişebileceğine karar vermek için aşağıdaki
 ![Cihaz erişim akışı](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

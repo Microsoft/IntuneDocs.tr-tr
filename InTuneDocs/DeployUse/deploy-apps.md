@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ Intune için bulut tabanlı ek depolama alanı satın alma işleminde şu kurall
 
 -   Ek depolama alanı satın almak için etkin bir ücretli aboneliğinizin olması gerekir.
 
--   Intune hesap portalı üzerinden yalnızca Microsoft Online Services faturalama yöneticileri veya genel yöneticileri ek depolama alanı satın alabilir. Bu yöneticileri eklemek, silmek veya yönetmek için bir genel yönetici olmanız ve Intune hesap portalında oturum açmanız gerekir.
+-   Yalnızca Microsoft Online Service’inizin faturalama yöneticileri veya genel yöneticileri Office 365 Yönetim Portalı aracılığıyla ek depolama alanı satın alabilir. Bu yöneticileri eklemek, silmek veya yönetmek için bir genel yönetici olmanız ve Office 365 Yönetim Portalı’nda oturum açmış olmanız gerekir.
 
 -   Intune’u veya Microsoft Intune Eklentisini kurumsal anlaşma ile satın almış bir toplu lisans müşterisiyseniz, fiyatlandırma konusunda bilgi edinmek ve ek depolama alanı satın almak için Microsoft Kurumsal Müşteri Yöneticiniz veya Microsoft İş Ortağınız ile iletişim kurun.
 
@@ -105,6 +105,6 @@ Bir cihaz tarafından aynı dağıtım eylemiyle iki dağıtım alındığında 
 
 [Microsoft Intune'da uygulamaları dağıtmayı](deploy-apps-in-microsoft-intune.md) öğrenin.
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

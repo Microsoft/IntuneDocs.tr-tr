@@ -29,9 +29,11 @@ ms.suite: ems
 # Microsoft kullanım verilerini toplamayı devre dışı bırakma
 Microsoft, ürün ve hizmetlerini geliştirmek için Şirket Portalı uygulamasının güvenilirliği, performansı ve nasıl kullanıldığı hakkında anonim verileri otomatik olarak toplar. Şirket Portalı uygulamasındaki **Kullanım Verileri** ayarını kullanarak Android cihazınızda söz konusu verilerin toplanmasını kapatabilirsiniz. BT yöneticileri bu verilerin toplanması üzerinde denetim sahibi değildir ve bu ayar için yaptığınız seçimi değiştiremez.
 
-### Ayrıca bkz.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. İletişim bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+
+### Ayrıca bkz:
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

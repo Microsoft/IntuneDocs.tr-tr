@@ -18,7 +18,7 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,11 +40,15 @@ Mobil uygulama yönetimi ilkeleri desteği:
 
 Diğer Intune ilkelerinden farklı olarak, mobil uygulama yönetimi ilkeleri doğrudan dağıtılmaz. Bunun yerine, ilke kısıtlamak istediğiniz uygulamayla ilişkilendirilir. Uygulama dağıtılıp cihazlara yüklendiğinde, belirttiğiniz ayarlar geçerli olur.
 
-Bir uygulamaya kısıtlamalar getirmek için, uygulama Microsoft Uygulaması Yazılım Geliştirme Seti'ni (SDK) içermelidir. Böyle bir uygulamayı almanın iki yolu bulunmaktadır:
+Bir uygulamaya kısıtlamalar uygulamak için, uygulamanın Microsoft Intune Uygulama SDK’sini içermesi gerekir. Bu tür bir uygulamayı edinmenin üç yolu vardır:
 
 -   **İlkeyle yönetilen bir uygulama kullanma** – Yerleşik Uygulama SDK’sına sahiptir. Bu uygulama türünü eklemek için, iTunes mağazası veya Google Play gibi bir uygulama mağazasından uygulamaya yönlendiren bir bağlantı belirtirsiniz. Bu uygulama türü için başka bir işleme gerek yoktur. [Microsoft Intune mobil uygulama yönetimi ilkeleri ile kullanabileceğiniz uygulamalar](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) listesine bakın.
 
 -   **‘Sarmalanan’ bir uygulama kullanma** - **Microsoft Intune Uygulaması Sarmalama Aracı** kullanılarak Uygulama SDK'sı eklenip yeniden paketlenmiş uygulamalardır. Bu araç genellikle şirket içinde oluşturulan şirket uygulamalarını işlemek için kullanılır. Uygulama mağazasından yüklenen uygulamaları işlemek için kullanılamaz. Bkz. [iOS uygulamalarını Microsoft Intune Uygulaması Sarmalama Aracı ile mobil uygulama yönetimine hazırlama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) ve [Android uygulamalarını Microsoft Intune Uygulaması Sarmalama Aracı ile mobil uygulama yönetimine hazırlama](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+
+- **Intune Uygulama SDK’sını içeren kendi uygulamanızı yazma** - Intune Uygulama SDK’sı, siz yazdığınız sırada uygulama yönetim özelliklerini ekler. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına Genel Bakış](/develop/intune-app-sdk)
+
+Uygulama paketleme aracı ile Intune Uygulama SDK’sı arasında yapılacak seçim konusunda yardım almak için bkz. [Microsoft Intune ile uygulamaların mobil uygulama yönetimine nasıl hazırlanacağına karar verme](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
 
 iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar **birden çok kimliği** destekler. Başka bir deyişle Intune yalnızca uygulamadaki şirket hesaplarına veya verilere yönetim ayarlarını uygular.
 
@@ -60,7 +64,7 @@ iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar **bir
 
 ## Mobil uygulama yönetimi ilkesiyle uygulama oluşturma ve dağıtma
 
--   **1. Adım:** İlkeyle yönetilen bir uygulamanın bağlantısını alma ve sarmalanan bir uygulama oluşturma.
+-   **1. Adım:** İlkeyle yönetilen bir uygulamaya bir bağlantı alma, sarmalanmış bir uygulama oluşturma veya MAM özellikli uygulama yazmak için Intune Uygulama SDK’sını kullanma.
 
 -   **2. Adım:** Uygulamayı bulut depolama alanınıza yayımlama.
 
@@ -70,15 +74,12 @@ iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar **bir
 
 -   **5. Adım:** Uygulama dağıtımını izleme.
 
-## **1. Adım:** İlkeyle yönetilen bir uygulamanın bağlantısını alma ve sarmalanmış bir uygulama oluşturma.
+## **1. Adım:** İlkeyle yönetilen bir uygulamaya bir bağlantı alma, sarmalanmış bir uygulama oluşturma veya MAM özellikli uygulama yazmak için Intune Uygulama SDK’sını kullanma.
 
--   **İlkeyle yönetilen bir uygulamanın bağlantısını almak için** - Uygulama mağazasında, dağıtmak istediğiniz ilkeyle yönetilen uygulamanın URL'sini bulun ve not edin.
+-   **Uygulama mağazasındaki, ilkeyle yönetilen bir uygulamaya bağlantı almak için** - Uygulama mağazasından, dağıtmak istediğiniz ilkeyle yönetilen uygulamayı bulun ve uygulamanın URL’sini not edin.
 
     Örneğin, iPad için Microsoft Word uygulamasının URL'si şöyledir: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**
 
--   **Sarmalanmış uygulama oluşturmak için** - Sarmalanmış bir uygulama oluşturmak için [iOS uygulamalarını Microsoft Intune Uygulaması Sarmalama Aracı ile mobil uygulama yönetimine hazırlama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) ve [Android uygulamalarını Microsoft Intune Uygulaması Sarmalama Aracı ile mobil uygulama yönetimine hazırlama](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) konularındaki bilgileri kullanın.
-
-    Araç, uygulamayı bulut depolama alanınızda yayımladığınızda kullanacağınız işlenmiş bir uygulama oluşturur.
 
 ## **2. Adım:** Uygulamayı bulut depolama alanınıza yayımlama
 Yönetilen bir uygulama yayımladığınızda, ilkeyle yönetilen bir uygulama veya iOS için Microsoft Intune Uygulama Sarmalama Aracı kullanılarak işlenmiş bir uygulama yayımlamanıza bağlı olarak farklı yordamlar kullanılır.
@@ -111,7 +112,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra, 3. adı
 
 ## **3. Adım:** Mobil uygulama yönetimi ilkesi oluşturma
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Genel Bakış** &gt; **İlke Ekle**’ye tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **İlke** &gt; **Genel Bakış** &gt; **İlke Ekle**’yi seçin.
 
 2.  Uygulamaları yapılandırmak istediğiniz cihaz türüne bağlı olarak, şu **Yazılım** ilkelerinden birini yapılandırın ve dağıtın:
 
@@ -169,15 +170,15 @@ Bir mobil uygulama yönetimi ilkesiyle ilişkili bir uygulama oluşturup dağıt
 
 #### Dağıtım durumunu görüntülemek için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Gruplar** &gt; **Genel bakış**’a tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Gruplar** &gt; **Genel Bakış**’ı seçin.
 
 2.  Aşağıdaki adımlardan birini gerçekleştirin:
 
-    -   **Tüm Kullanıcılar**'a tıklayın ve ardından cihazlarını incelemek istediğiniz kullanıcıya çift tıklayın. **Kullanıcı Özellikleri** sayfasında **Cihazlar**'a tıklayın ve ardından incelemek istediğiniz cihaza çift tıklayın.
+    -   **Tüm Kullanıcılar**’ı seçin, sonra cihazlarını incelemek istediğiniz kullanıcıya çift tıklayın. **Kullanıcı Özellikleri** sayfasında, **Cihazlar**’ı seçin, sonra incelemek istediğiniz cihaza çift tıklayın.
 
-    -   **Tüm Cihazlar** &gt; **Tüm Mobil Cihazlar**’a tıklayın. **Cihaz Grubu Özellikleri** sayfasında **Cihazlar**'a tıklayın ve ardından incelemek istediğiniz cihaza çift tıklayın.
+    -   **Tüm Cihazlar** &gt; **Tüm Mobil Cihazlar**’ı seçin. **Cihaz Grubu Özellikleri** sayfasında, **Cihazlar**’ı seçin, sonra incelemek istediğiniz cihaza çift tıklayın.
 
-3.   **Mobil Cihaz Özellikleri** sayfasında, cihaza dağıtılan mobil uygulama yönetimi ilkelerinin bir listesini görmek için **İlke** 'ye tıklayın.
+3.  **Mobil Cihaz Özellikleri** sayfasında, cihaza dağıtılmış mobil uygulama yönetim ilkelerinin bir listesini görmek için **İlke**’yi seçin.
 
 4.  Durumunu görüntülemek istediğiniz mobil uygulama yönetimi ilkesini seçin. İlkenin ayrıntılarını alt bölmede görüntüleyebilir ve ayarlarını görüntülemek için düğümü genişletebilirsiniz.
 
@@ -197,6 +198,6 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 -   Cihaza hiçbir ilke dağıtılmadıysa ve çakışan iki ayar dağıtılırsa, cihazda yerleşik olarak bulunan varsayılan ayar kullanılır.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

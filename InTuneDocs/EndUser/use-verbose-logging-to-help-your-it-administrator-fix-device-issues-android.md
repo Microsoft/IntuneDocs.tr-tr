@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ Android cihazınız Intune’a kaydolduğunda, Şirket Portalı uygulamasının 
 
 **Ayrıntılı Günlük** özelliğini açmak veya kapatmak için, iş veya okul kimlik bilgilerinizi kullanarak Şirket Portalı uygulamasında oturum açın, **Ayarlar**’a dokunun ve sonra da **Ayrıntılı Günlük** ayarının yanındaki açık/kapalı düğmesine dokunun.
 
-### Ayrıca bkz.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. İletişim bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+
+### Ayrıca bkz:
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

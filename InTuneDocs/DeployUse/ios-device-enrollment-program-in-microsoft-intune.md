@@ -18,7 +18,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,7 +56,7 @@ Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla satın alınmı�
 5.  **Kurumsal Cihaz Kayıt İlkesi Ekleme** [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**'ye tıklayın.
 
     **Ad** ve **Açıklama** dahil olmak üzere **Genel** ayrıntıları sağlayın, profile atanmış cihazların kullanıcı benzeşimine sahip olduğunu veya bir gruba ait olduğunu belirtin.
-      - **Kullanıcı benzeşimi sor**: Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Böylece, cihazın şirket verilerine ve e-postalara bu kullanıcı aracılığıyla erişmesine izin verilebilir.  DEP tarafından yönetilen kullanıcılara ait olan ve şirket portalını kullanması gereken (örneğin, uygulama yüklemek için) cihazlarda **kullanıcı benzeşimi** yapılandırılmalıdır. 
+      - **Kullanıcı benzeşimi sor**: Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Böylece, cihazın şirket verilerine ve e-postalara bu kullanıcı aracılığıyla erişmesine izin verilebilir.  DEP tarafından yönetilen kullanıcılara ait olan ve şirket portalını kullanması gereken (örneğin, uygulama yüklemek için) cihazlarda **kullanıcı benzeşimi** yapılandırılmalıdır.
       - **Kullanıcı benzeşimi yok**: Cihaz bir kullanıcıya bağlı değil. Bu ilişkiyi, yerel kullanıcı verilerine erişmeden görevleri yerine getiren cihazlar için kullanın. İş kolu uygulamalarını yüklemek için kullanılan Şirket Portalı uygulaması da içinde olmak üzere, kullanıcı benzeşimi gerektiren uygulamalar çalışmaz.
 
     Ardından, DEP’i desteklemek için **Bu ilke için Cihaz Kayıt Programı ayarlarını yapılandırın** seçeneği etkinleştirin.
@@ -78,16 +78,8 @@ Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla satın alınmı�
         - **Konum Hizmetleri** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında hizmeti sorar
         - **Geri Yükle** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında iCloud yedeklemesini sorar
         - **Apple Kimliği** - Intune tarafından yüklenenler de içinde olmak üzere, iOS Uygulama Mağazası uygulamalarını indirmek için Apple Kimliği gerekir. Etkinleştirilirse, Intune kimlik girilmeden bir uygulama yüklemeyi denediğinde iOS kullanıcılardan Apple Kimliği ister.
-        - **Hüküm ve Koşullar** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında kullanıcılardan Apple’ın hüküm ve koşullarını kabul etmelerini ister
-        - **Touch ID** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar
-        - **Apple Pay** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar
-        - **Zoom** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar
-        - **Siri** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar
-        - **Apple’a tanılama verileri gönder** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar
-     -  **Ek Apple Configurator yönetimini etkinleştir** - Dosyaların Apple Configurator üzerinden iTunes ile veya yönetimle eşitlenmesini önlemek için **İzin Verme**olarak ayarlayın. Microsoft, bu ayarı kullanarak sertifikalı veya sertifikasız el ile dağıtıma izin vermek yerine, **İzin Verme** olarak ayarlamanızı, diğer yapılandırmaları Apple Configurator’dan dışarı aktarmanızı ve ardından Intune üzerinden Özel iOS yapılandırma profili olarak dağıtmanızı önerir.
-        - **İzin Verme** - Cihazın USB üzerinden iletişim kurmasını önler (eşlemeyi devre dışı bırakır)
-        - **İzin Ver** - Herhangi bir PC veya Mac bilgisayar için cihazın USB bağlantısı üzerinden iletişim kurmasına izin verir
-        - **Sertifika gerektir** - Kayıt profiline aktarılan bir sertifika kullanılarak Mac bilgisayarla eşlemeye izin verir
+        - **Hüküm ve Koşullar** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında kullanıcılardan Apple’ın hüküm ve koşullarını kabul etmesini ister - **Touch ID** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar - **Apple Pay** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar - **Yakınlaştırma** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar - **Siri** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar - **Apple’a tanılama verileri gönder** - Etkinleştirilirse, Kurulum Yardımcısı etkinleştirme sırasında bu hizmeti sorar -  **Ek Apple Configurator yönetimini etkinleştir** - Dosyaların iTunes ile eşitlenmesini veya Apple Configurator üzerinden yönetimi engellemek için **İzin Verme** olarak ayarlayın. Microsoft, bu ayarı kullanarak sertifikalı veya sertifikasız el ile dağıtıma izin vermek yerine, **İzin Verme** olarak ayarlamanızı, diğer yapılandırmaları Apple Configurator’dan dışarı aktarmanızı ve ardından Intune üzerinden Özel iOS yapılandırma profili olarak dağıtmanızı önerir.
+        - **İzin Verme** - Cihazın USB aracılığıyla iletişim kurmasını engeller (eşlemeyi devre dışı bırakır) - **İzin Ver** - Cihazın herhangi bir PC ya da Mac ile USB bağlantısı üzerinden iletişim kurmasına izin verir - **Sertifika gerektir** - Kayıt profiline aktarılmış sertifikaya sahip bir Mac ile eşlemeye izin verir
 
 6.  **Yönetim için DEP Cihazları Atama** [Cihaz Kayıt Programı Portalı](https://deploy.apple.com)’na (https://deploy.apple.com) gidin ve şirketinizin Apple kimliğiyle oturum açın. **Dağıtım Programı** &gt; **Cihaz Kayıt Programı** &gt; **Cihazları Yönet**’e gidin.  **Cihaz Seç**bölümünden cihaz tercihinizi yapın, cihaz bilgilerini belirtin ve **Seri Numarası**, **Sipariş Numarası**bilgileriyle veya **CSV Dosyasını Karşıya Yükle**seçeneğiyle cihaz ayrıntılarını belirtin. Ardından, **Sunucuya Ata**’yı ve Microsoft Intune için belirtilen &lt;SunucuAdı&gt; öğesini seçip **Tamam**'a tıklayın.
 
@@ -105,6 +97,6 @@ Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla satın alınmı�
 [Cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

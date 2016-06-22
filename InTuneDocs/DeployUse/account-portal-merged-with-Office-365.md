@@ -29,7 +29,7 @@ ms.assetid: 80f7d796-ad0e-4a50-a6e2-cdc52e7eb57e
 
 Geçen yıl, Intune Hesap Portalı işlevselliğini Office 365 yönetim portalına taşımaya başlamıştık. Bu taşıma işlemi şimdi tamamlandı ve Intune hesap portalı kullanımdan kaldırıldı.
 
-Kullanıcılar ve Gruplar uygun adlandırılmış sekmelerle yönetilirken, satın alma ve abonelik yönetimi artık Faturalama’nın altında yer alır.
+Kullanıcılar ve gruplar artık sırasıyla **Kullanıcılar** ve **Gruplar** sekmelerinde yönetilir; satın alma ve abonelik yönetimiyse [Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) oturum açılarak **Faturalama** bölümünde yapılır. Office 365 portalında oturum açmak için, mevcut Intune kimlik bilgilerinizi kullanın.
 
 Nasıl satın aldığınıza bağlı olarak, yazılım indirmelerine Toplu Lisans portalında veya [Microsoft Online Services Müşteri Portalı](http://go.microsoft.com/fwlink/?LinkId=259567)’nda erişirsiniz.
 
@@ -38,6 +38,6 @@ Yer işaretlerinizi güncelleştirdiğinizden emin olun.
 [Microsoft Intune blogumuzda](https://blogs.technet.microsoft.com/microsoftintune/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal/) taşıma işlemi hakkında daha fazla bilgi bulabilirsiniz veya var olan kimlik bilgilerinizle doğrudan https://portal.office.com/Admin/Default.aspx adresindeki [Office 365 yönetim portalına](https://portal.office.com/Admin/Default.aspx) gidin.
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

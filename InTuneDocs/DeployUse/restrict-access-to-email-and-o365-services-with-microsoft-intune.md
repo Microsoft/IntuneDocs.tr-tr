@@ -18,7 +18,7 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Tipik bir koşullu erişim akışı:
 ![Cihazın hizmete erişimine izin verilmesini veya bu erişimin engellenmesini belirlemek için kullanılan karar noktalarının gösterildiği diyagram](./media/ConditionalAccess4.png)
 
 ## Koşullu erişim ilkesi nasıl yapılandırılır?
-Microsoft **Şirket İçi Exchange**’e, **Exchange Online**’a, **Ayrılmış Exchange Online**’a, **SharePoint Online**’a ve **Skype Kurumsal Çevrimiçi**’ne erişimi yönetmek için koşullu erişim kullanın.
+Microsoft **Şirket İçi Exchange**’e, **Exchange Online**’a, **Ayrılmış Exchange Online**’a, **SharePoint Online**’a ve **Skype Kurumsal Çevrimiçi Sürüm**’e erişimi yönetmek için koşullu erişim kullanın.
 
 Koşullu erişimi ayarlamak için, bir cihaz uyumluluk ilkesi ve bir de koşullu erişim ilkesi ayarlayın.
 
@@ -69,6 +69,6 @@ Diğer Intune ilkelerinden farklı olarak, koşullu erişim ilkelerini dağıtma
   - [Skype Kurumsal Çevrimiçi için koşullu erişim ilkesi oluşturma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

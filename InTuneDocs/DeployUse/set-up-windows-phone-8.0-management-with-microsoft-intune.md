@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Microsoft Intune ile Windows Phone 8.0 yönetimini ayarlama | Microsoft Intune
+title: Windows Phone 8.0 yönetimini ayarlama | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,6 +28,8 @@ ms.suite: ems
 # Windows Phone 8.0 için cihaz yönetimini ayarlama
 
 Windows Phone 8.0’da, Intune Şirket Portalı uygulamasının yüklenebilmesi ve cihaz yönetimine izin verilmesi için bir Symantec sertifikasının yüklenmesi gerekir. İş kolu uygulamalarını imzalamak için de bir sertifika gereklidir. Aşağıdaki konu yalnızca Windows Phone 8.0’a yöneliktir. Windows Phone 8.1 veya üstünü (Windows 10 Mobile da dahil) yönetmek için bkz. [Windows Phone kaydını ayarlama](set-up-windows-phone-management-with-microsoft-intune.md).
+
+> [!IMPORTANT] Eylül 2016’dan başlayarak Windows 8.0 ve Windows Phone 8.0 için Şirket Portalı uygulaması artık indirilemeyecektir.
 
 -   **Windows Phone 8** - Sertifika gerekir
 -   **Windows Phone 8.1 ve Windows 10 Mobile**’a yalnızca aşağıdaki durumlarda sertifika gerekir:
@@ -184,6 +186,6 @@ Windows Phone mobil cihaz yönetimi için kurulum gereksinimleri cihazları nas�
     > -   Dışarıdan yüklenen uygulamaların yüklenmesi gerekiyorsa ve Windows Phone 8.0 cihazlarının kaydolması ve ssp.xap'ı alması gerekiyorsa, ssp.xap'ın yeni bir yazılım dağıtımını oluşturun ve **Kaldır** eylemiyle dağıtın. Windows Phone 8.0 cihazları, uygulamaların zorla yüklenmesini veya kaldırılmasını desteklemediğinden, dağıtımı görmezden gelir. Windows Phone 8.1 cihazları, kaldırma eyleminin destekler ve ssp.xap'ı kaldırır.
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

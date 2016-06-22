@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,17 +50,17 @@ Intune ilkelerinin tam listesi için bkz. [Microsoft Intune ilke başvurusu](mic
 
 ## Yapılandırma ilkesi oluşturma
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **İlke** &gt; **Yapılandırma İlkeleri** &gt; **Ekle**’ye tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **İlke** &gt; **Yapılandırma İlkeleri** &gt; **Ekle**’yi seçin.
 
 2.  İstediğiniz ilkeyi seçin, ilke için önerilen ayarları (varsa; bu ayarları daha sonra değiştirebilirsiniz) kullanmayı veya kendi ayarlarınızla özel bir ilke oluşturmayı seçin.
 
     > [!TIP] Doğru ilkeyi seçerken yardım almak için bkz. [Microsoft Intune ilke başvurusu](microsoft-intune-policy-reference.md).
 
-3.  Hazır olduğunuzda **İlke Oluştur**’a tıklayın.
+3.  Hazır olduğunuzda **İlke Oluştur**’u seçin.
 
 4.   **İlke Oluştur** ekranında ilke için bir ad ve isteğe bağlı bir açıklama yapılandırın.
 
-5.  Gerekli ilke ayarlarını yapılandırın, ardından **İlkeyi Kaydet**’e tıklayın.
+5.  Gerekli ilke ayarlarını yapılandırdıktan sonra **İlkeyi Kaydet**’i seçin.
 
     İlke ayarlarından herhangi birinde yardıma gerek duyarsanız, aşağıdaki listeden ilkenizin türünü seçin:
 
@@ -72,11 +72,11 @@ Intune ilkelerinin tam listesi için bkz. [Microsoft Intune ilke başvurusu](mic
     - [Windows Team cihazları için ayarlar](windows-team-configuration-policy-settings-in-microsoft-intune.md)
     - [Windows sürüm yükseltme için ayarlar](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Mac OS X cihazları için ayarlar](mac-os-x-policy-settings-in-microsoft-intune.md)
-    - [Exchange ActiveSync için ayarlar](exchange-activesync-policy-settings-in-microsoft-intune.md)
-    - [Hüküm ve koşullar ilkesi için ayarlar](terms-and-condition-policy-settings-in-microsoft-intune.md)
+    - [Exchange ActiveSync ayarları](exchange-activesync-policy-settings-in-microsoft-intune.md)
+    - [Hüküm ve koşullar ilkesi ayarları](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Mobil cihazlar için genel ayarlar (eski)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  Onay iletişim kutusunda, ilkeyi hemen dağıtmak için **Evet** 'e veya ilkeyi dağıtmadan oluşturmak için **Hayır** 'a tıklayın.
+4.  Onay iletişim kutusunda, ilkeyi şimdi dağıtmak için **Evet**’i, dağıtmadan bir ilke oluşturmak için **Hayır**’ı seçin.
 
  **İlke** çalışma alanından her ilke türünün bölümlerine göz atarak yeni ilkeyi görüntüleyebilir ve düzenleyebilirsiniz.
 
@@ -89,35 +89,26 @@ Artık bir ilke oluşturduğunuza göre, genellikle ilkeyi bir veya daha fazla k
 
 ## Yapılandırma ilkesini dağıtma
 
-1.   **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
+1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi ve ardından **Dağıtımı Yönet**’i seçin.
 
 2.   **Dağıtımı Yönet** iletişim kutusunda:
 
-    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'a tıklayın.
+    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'ı seçin.
 
-    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**'e tıklayın.
+    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**’i seçin.
 
 Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağıtım hakkında daha fazla bilgi görüntüleyebilirsiniz.
 
 ## İlkeleri yönetme
 
-1.   [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **İlke**'ye tıklayın ve ardından yönetmek istediğiniz ilkeye giderek bu ilkeyi seçin.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **İlke**’yi seçin, sonra yönetmek istediğiniz ilkeye giderek bu ilkeyi seçin.
 
 2.  Aşağıdaki eylemlerden birini seçin:
 
 - **Düzenle** - Değişiklik yapmanızı sağlamak için seçili ilkenin özelliklerini açar.
 - **Sil** - Seçili ilkeyi siler.<br>Bir ilkeyi sildiğinizde, dağıtıldığı tüm gruplardan kaldırılır.
-- **Dağıtımı Yönet** - İlkeyi dağıtmak istediğiniz grubu seçin ve **Ekle**'ye tıklayın.
+- **Dağıtımı Yönet** - İlkeyi dağıtmak istediğiniz grubu seçin ve **Ekle**’yi seçin.
 
-## Intune ilkeleri için görevler
-
-### Cihazınızdaki ilkeleri yenileyerek bunların güncelliğinden emin olmak için (yalnızca Intune istemci yazılımını çalıştıran Windows bilgisayarları için geçerlidir)
-
-1.   [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar**'a tıklayın ve bir cihaz grubu seçin.
-
-2.  İlkeleri yenilemek istediğiniz cihazları seçin ve ardından **Uzak Görevler** &gt; **İlkeleri Yenile**'ye tıklayın.
-
-3.  Görev durumunu denetlemek için, Intune yönetim konsolunun sağ alt köşesinde **Uzak Görevler**'e tıklayın.
 
 ## Intune ilkeleri hakkında sık sorulan sorular
 
@@ -187,25 +178,7 @@ Bir ilkeyi sildiğinizde veya bir cihazı ilkenin dağıtıldığı bir gruptan 
         - Gerekli parola türü
         - Parola geçerlilik süresi (gün)
         - Parola geçmişini anımsa
-        - Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı
-        - Parola gerekmeden önce etkin olmama süresi (dakika)
-        - Gerekli parola türü – minimum karakter kümesi sayısı
-        - Kameraya izin ver
-        - Cihazda şifrelemeyi gerektir
-        - Çıkarılabilir depolama birimine izin ver
-        - Web tarayıcısına izin ver
-        - Uygulama depolamaya izin ver
-        - Ekran yakalamaya izin ver
-        - Coğrafi konuma izin ver
-        - Microsoft Hesabına izin ver
-        - Kopyalama ve yapıştırmaya izin ver
-        - Wi-Fi İnternet paylaşımına izin ver
-        - Ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmaya izin ver
-        - Wi-Fi etkin noktası bildirimine izin ver
-        - Fabrika sıfırlamasına izin ver
-        - Bluetooth'a izin ver
-        - NFC'ye izin ver
-        - Wi-Fi'a izin ver
+        - Cihaz temizlenmeden önce izin verilecek yinelenen başarısız oturum açma sayısı - Parola gerektirmeden önce işlem yapılmadan geçen süre (dakika) - Gerekli parola türü – karakter kümesi sayısı alt sınırı - Kameraya izin ver - Mobil cihazda şifreleme gerektir - Çıkarılabilir depolama birimine izin ver - Web tarayıcısına izin ver - Uygulama mağazasına izin ver - Ekran yakalamaya izin ver - Coğrafi konuma izin ver - Microsoft Hesabına izin ver - Kopyalama ve yapıştırmaya izin ver - Wi-Fi İnternet paylaşımına izin ver - Ücretsiz Wi-Fi etkin noktalarına otomatik bağlanmaya izin ver - Wi-Fi etkin noktası raporlamaya izin ver - Fabrika sıfırlamasına izin ver - Bluetooth’a izin ver - NFC’ye izin ver - Wi-Fi’ye izin ver
     
     - **iOS** - Aşağıdakiler dışında tüm ayarlar kaldırılır:
         - Sesli dolaşıma izin ver
@@ -220,9 +193,16 @@ Bir ilkeyi sildiğinizde veya bir cihazı ilkenin dağıtıldığı bir gruptan 
 - **Windows Güvenlik Duvarı ayarları** - Ayarlar bilgisayar işletim sistemi için varsayılanlara sıfırlanır. Ayrıntılar için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
+### Güncel olmalarını sağlamak için cihazdaki ilkeleri nasıl yenilerim (yalnızca Intune istemci yazılımını çalıştıran Windows bilgisayarları için geçerlidir)
+
+1.  Herhangi bir cihaz grubunda, üzerindeki ilkeleri yenilemek istediğiniz cihazları seçin, sonra **Uzak Görevler** &gt; **İlkeleri Yenile**’yi seçin.
+2.  Görev durumunu denetlemek için, Intune yönetim konsolunun sağ alt köşesindeki **Uzak Görevler**’i seçin.
+
+### İlkelerle ilgili sorunları giderme hakkında nereden yardım bulabilirim?
+
+Bkz. [Microsoft Intune’da ilke sorunlarını giderme](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md).
 
 
-
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

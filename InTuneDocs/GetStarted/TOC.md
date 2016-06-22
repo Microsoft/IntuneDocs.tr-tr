@@ -2,6 +2,7 @@
 
 # [Başlat](what-to-know-before-you-start-microsoft-intune.md)
 ## [Başlamadan önce bilmeniz gerekenler](what-to-know-before-you-start-microsoft-intune.md)
+### [Desteklenen mobil cihazlar ve bilgisayarlar](supported-mobile-devices-and-computers.md)
 ### [Desteklenen web tarayıcıları](supported-web-browsers.md)
 ### [Ağ altyapısı gereksinimleri](network-infrastructure-requirements-for-microsoft-intune.md)
 ### [Yönetim hesapları, web siteleri ve izinler](administrative-accounts-websites-perms.md)
@@ -38,6 +39,6 @@
 # [Sorunları Gider](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

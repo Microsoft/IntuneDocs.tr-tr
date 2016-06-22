@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -84,7 +84,7 @@ Uygulama mağazasından ücretsiz olarak sağlanan iOS uygulamalarını yönetme
 > [!TIP] Intune’u [Mobil Cihaz Yönetimi Yetkilisi olarak ayarlamadığınız](get-ready-to-enroll-devices-in-microsoft-intune.md) sürece, mobil cihazlara yönelik seçenekler kullanılamaz.
 
 ## Evrensel Windows Platformu (UWP) uygulamaları desteği
-Windows 10 cihazlarında iş kolu uygulamalarını yüklemek için dışarıdan yükleme anahtarı gerekmez. Bununla birlikte, dışarıdan yüklemeyi etkinleştirmek için, **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** kayıt defteri anahtarının değeri **1** olmalıdır.
+Windows 10 bilgisayarları, iş kolu uygulamalarını yüklemek için dışarıdan yükleme anahtarı gerektirmez. Bununla birlikte, dışarıdan yüklemeyi etkinleştirmek için, **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** kayıt defteri anahtarının değeri **1** olmalıdır.
 
 Bu kayıt defteri anahtarı yapılandırılmazsa, cihaza ilk kez uygulama dağıttığınızda Intune bu değeri otomatik olarak **1**’e ayarlar. Bu değeri **0** olarak ayarlarsanız, Intune değeri otomatik olarak değiştiremez ve iş kolu uygulamalarının dağıtımı başarısız olur.
 
@@ -96,6 +96,6 @@ Windows 10 Mobile cihazlarında, evrensel **.appx** uygulamalarını imzalamak i
 
 Bundan sonra, uygulamaları dağıtabilmek için önce Intune konsoluna eklemeniz gerekir. [Kayıtlı cihazlar](add-apps-for-mobile-devices-in-microsoft-intune.md) için veya [Intune istemci yazılımıyla yönettiğiniz Windows bilgisayarları](add-apps-for-windows-pcs-in-microsoft-intune.md) için uygulamalar ekleyebilirsiniz.
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

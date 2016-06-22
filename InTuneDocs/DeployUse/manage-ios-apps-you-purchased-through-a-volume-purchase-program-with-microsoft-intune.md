@@ -18,7 +18,7 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,28 +46,29 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve bunu Intune hesabını
 * Varsayılan olarak Intune, Apple VPP hizmetiyle günde iki kez eşitlenir. Ancak, dilediğiniz zaman elle eşitleme başlatabilirsiniz.
 * VPP belirtecini Intune'a içe aktardıktan sonra aynı belirteci başka bir cihaz yönetimi çözümüne aktarmayın. Bunun yapılması lisans atama ve kullanıcı kayıtlarının kaybına neden olabilir.
 * Intune ile iOS VPP kullanmaya başlamadan önce diğer MDM satıcıları ile oluşturulan tüm var olan VPP kullanıcı hesaplarını kaldırın. Intune bu kullanıcı hesaplarını bir güvenlik önlemi olarak Intune ile eşitlemez. Intune yalnızca Intune tarafından oluşturulan Apple VPP hizmetinden verileri eşitler. 
+* iOS VPP uygulamalarını Cihaz Kayıt Protokolü (DEP) kullanarak kaydedilen cihazlara dağıtamazsınız.
 
 ## Apple VPP belirtecini almak ve karşıya yüklemek için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici** &gt; **iOS ve Mac OS X** &gt; **Toplu Satın Alma Programı**’na tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Yönetim** &gt; **iOS ve Mac OS X** &gt; **Volume Purchase Program**’ı seçin.
 
-2.  **Apple VPP Hesabı** bağlantısına tıklayın ve henüz yapmadıysanız İş için Toplu Satın Alma Programı’na kaydolun. Kaydolduktan sonra hesabınıza yönelik Apple VPP belirtecini indirin.
+2.  **Apple VPP Hesabı** bağlantısını seçin ve henüz kaydolmadıysanız Volume Purchase Program for Business’a kaydolun. Kaydolduktan sonra hesabınıza yönelik Apple VPP belirtecini indirin.
 
-3.  Intune konsolunun **Apple Toplu Satın Alma Programı’nı (VPP) Yönet** sayfasında **VPP belirtecini karşıya yükle**’ye tıklayın.
+3.  Intune konsolunun **Apple Volume Purchase Program (VPP) Yönetimi** sayfasında **VPP belirtecini karşıya yükle**’yi seçin.
 
-4.  **VPP belirtecini karşıya yükle** iletişim kutusunda VPP belirtecinin adını ve Apple Kimliğinizi girin veya yapıştırın ve ardından **Karşıya Yükle**’ye tıklayın.
+4.  **VPP belirtecini karşıya yükle** iletişim kutusunda, VPP belirteç adını ve Apple Kimliğinizi girin veya yapıştırın, sonra **Karşıya Yükle**’yi seçin.
 
-5.  Uyarı iletişim kutusunda daha sonra farklı VPP hesabına geçemeyeceğinizi anladığınızı belirten onay kutusuna ve ardından **Evet**’e tıklayın.
+5.  Uyarı iletişim kutusunda, ileride başka bir VPP hesabına geçemeyeceğinizi anladığınızı gösteren onay kutusunu işaretleyin, sonra **Evet**’i seçin.
 
 **Toplu Satın Alma Programı** sayfasında bundan böyle Apple VPP hakkında en son ne zaman güncelleştirildiği, ne zaman sona ereceği ve Intune ile en son ne zaman eşitlendiği gibi bilgileri görüntüleyebilirsiniz.
 
-**Şimdi eşitle**’ye tıklayarak, Apple tarafından tutulan verileri Intune’la dilediğiniz zaman eşitleyebilirsiniz.
+İstediğiniz zaman **Şimdi eşitle**’yi seçerek Apple tarafından tutulan verileri Intune ile eşitleyebilirsiniz.
 
 ## Toplu satın alınmış bir uygulamayı dağıtmak için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Uygulamalar** &gt; **Yönetilen Yazılım** &gt; **Toplu Satın Alınan Uygulamalar**’a tıklayın. Bu listede, Apple VPP hizmetinden eşitlenmiş olan tüm uygulamalar gösterilir.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Uygulamalar** &gt; **Yönetilen Yazılım** &gt; **Toplu Satın Alınmış uygulamalar**’ı seçin. Bu listede, Apple VPP hizmetinden eşitlenmiş olan tüm uygulamalar gösterilir.
 
-2.  Dağıtmak istediğiniz uygulamayı seçin, **Dağıtımı Yönet**’e tıklayın, ardından uygulamanın karşıya yüklenmesini, oluşturulmasını ve dağıtımını tamamlamak için [Microsoft Intune’da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md) konu başlığı altında verilen yönergeleri kullanın.
+2.  Dağıtmak istediğiniz uygulamayı seçin, **Dağıtımı Yönet**’i seçin, sonra uygulamayı karşıya yüklemeyi, oluşturmayı ve dağıtmayı tamamlamak için [Microsoft Intune’da uygulama dağıt](deploy-apps-in-microsoft-intune.md) konusundaki yönergeleri kullanın.
 
 Uygulamayı **Gerekli** yükleme olarak dağıttığınızda uygulamayı yükleyen her kullanıcı tarafından bir lisans kullanılır.
 
@@ -84,11 +85,11 @@ Hangi VPP uygulamalarının dağıtıldığını ve kaç tane lisansın kullanı
 
 > [!TIP] Her uygulama yüklemesinin durumunu incelemek için uygulama **Filtrelerini** de kullanabilirsiniz.
 
-### Ayrıca Bkz.
+### Ayrıca bkz:
 [Microsoft Intune'da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

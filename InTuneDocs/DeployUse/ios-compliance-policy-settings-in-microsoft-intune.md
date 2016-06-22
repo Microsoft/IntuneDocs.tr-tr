@@ -18,7 +18,7 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -37,53 +37,54 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 ## Sistem güvenliği ayarları
 ### Parola
-- **Mobil cihazların kilidini açmak için parola iste:**    Kullanıcıların cihazlarına erişmeden önce parola girmelerini zorunlu tutmak için bunu **Evet** olarak ayarlayın.
+- **Mobil cihazların kilidini açmak için parola gerektir:** Kullanıcıların cihazlarına erişebilmek üzere bir parola girmelerini gerektirmek için bunu **Evet** olarak ayarlayın. Parola kullanan iOS cihazları şifrelenir.
 
-- Parola kullanan iOS cihazları şifrelenir.
+- **Basit parolalara izin ver:** Kullanıcıların ‘**1234**’ veya ‘**1111**’ gibi basit parolalar oluşturmalarına izin vermek için bunu **Evet** olarak ayarlayın.
 
--  **Basit parolalara izin ver:**   Kullanıcıların
-- ‘**1234**’ veya
+-  **Minimum parola uzunluğu:** Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
+- **Gerekli parola türü:** Kullanıcının oluşturacağı parolanın **Alfasayısal** mı, yoksa **Sayısal** mı olacağını belirtin.
 
-- ‘**1111**’ gibi basit parolalar oluşturmasına izin vermek için **Evet** olarak ayarlayın. Minimum parola uzunluğu:
-  -   Kullanıcı parolasının içermesi gereken
-  -   minimum rakam veya karakter sayısını belirtin.
-  -   **Gerekli parola türü:** Kullanıcının
-  -   **Alfasayısal** parola mı yoksa **Sayısal** parola mı oluşturması gerektiğini belirtin.
+- **Karakter kümesi sayısı alt sınırı:** **Gerekli parola türü** **Alfasayısal** olarak ayarlandıysa, bu ayar, parolanın içermesi gereken karakter kümesi sayısı alt sınırını belirtir. Dört karakter kümesi şunlardır:
+  -   Küçük harfler
+  -   Büyük harfler
+  -   Simgeler
+  -   Sayılar
 
-  **Minimum karakter kümesi sayısı:** **Gerekli parola türü**’nü
+  Bu ayar için daha yüksek bir sayı ayarlandığında, kullanıcıların daha karmaşık parolalar oluşturması zorunlu tutulur.
 
-  **Alfasayısal** olarak ayarladıysanız, parolanın içermesi gereken
-- minimum karakter kümesi sayısını belirtmek için bu ayarı kullanın.
+  iOS cihazları için bu ayar, parolaya eklenmesi gereken özel karakterlerin (örneğin, **!**, **#**, **&amp;**) sayısını gösterir.
+- **Parola istenmeden önceki bekleme süresi (dakika olarak:**  Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi belirtin.
 
-- Dört karakter kümesi şunlardır:
+- **Parola kullanım süresi (gün):** Kullanıcı parolasının süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
 
-- Küçük harfler
+- **Parola geçmişini anımsa:** Kullanıcının önceden kullanılan parolaları oluşturmasını engellemek için bu ayarı **Önceki parolaların yeniden kullanılmasını engelle** ile birlikte kullanın.
 
-- Büyük harfler
+- **Önceki parolaların yeniden kullanılmasını engelle:** **Parola geçmişini anımsa** seçeneği belirlenirse, önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin.
 
-- Simgeler Sayılar
+- **Cihaz boşta durumundan çıkarken parola gerektir:** Bu ayar, **Parola gerektirmeden önce işlem yapılmadan geçen süre (dakika)** ayarıyla birlikte kullanılmalıdır. **Parola istenmeden önceki bekleme süresi (dakika olarak)** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için son kullanıcılardan bir parola girmesi istenir.
 
-### Bu ayar için daha yüksek bir sayı ayarlandığında, kullanıcıların daha karmaşık parolalar oluşturması zorunlu tutulur.
-- iOS cihazlar için bu ayar, parolaya eklenmesi gereken özel karakterlerin (örneğin, **!**, **#**, **&amp;**) sayısını gösterir. **Parola istenmeden önceki bekleme süresi (dakika olarak:**  Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi belirtin.
-  - **Parola kullanım süresi (gün olarak):** Kullanıcının parolasının süresi dolmadan ve yenisini oluşturması istenmeden
-  - önce geçecek gün sayısını seçin. **Parola geçmişini anımsa:** Kullanıcının önceden kullanılmış olan parolaları yeniden kullanmasını kısıtlamak için bu ayarı **Önceki parolaların yeniden kullanılmasını engelle** ayarıyla birlikte kullanın.
-
-
-- **Önceki parolaların yeniden kullanılmasını engelle:** **Parola geçmişini anımsa** seçildiyse, önceden kullanılmış olan parolalardan kaç tanesinin yeniden kullanılamayacağını belirtin.
-
-     Cihaz boş bir durumdan döndürüldüğünde parola iste:
-
-## Bu ayar **Parola istenmeden önce geçen işlem yapılmayan dakika sayısı** ayarı ile birlikte kullanılmalıdır.
-
-- Son kullanıcılardan,
-
-##  **Parola istenmeden önceki bekleme süresi (dakika olarak)** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için bir parola girmesi istenir.
-- E-posta profili
-**E-posta hesabı Intune tarafından yönetilmelidir:** Bu seçenek **Evet** olarak ayarlandığında, cihazın kendisine dağıtılan uyumsuz e-postayı kullanması gerekir. Aşağıdaki durumlarda cihaz uyumsuz olarak kabul edilir:
-
-- Uyumluluk ilkesi tarafından hedeflenen kullanıcı grubuna e-posta profilinin de dağıtılması gerekir, yoksa kullanıcıların cihazları uyumsuz olarak kabul edilir. Kullanıcı cihazda zaten bir e-posta hesabı ayarlamışsa ve bu hesap cihaza dağıtılan Intune e-posta profiliyle eşleşiyorsa, cihazın uyumsuz olduğu raporlanır.
+### E-posta profili
+- **E-posta hesabı Intune tarafından yönetilmelidir:** Bu seçenek **Evet** olarak ayarlandığında, cihazın kendisine dağıtılan uyumsuz e-postayı kullanması gerekir. Aşağıdaki durumlarda cihaz uyumsuz olarak kabul edilir:
+  - Uyumluluk ilkesi tarafından hedeflenen kullanıcı grubuna e-posta profilinin de dağıtılması gerekir, yoksa kullanıcıların cihazları uyumsuz olarak kabul edilir.
+  - Kullanıcı cihazda zaten bir e-posta hesabı ayarlamışsa ve bu hesap cihaza dağıtılan Intune e-posta profiliyle eşleşiyorsa, cihazın uyumsuz olduğu raporlanır. Intune, kullanıcı tarafından sağlanan profilin üzerine yazamaz ve bu nedenle yönetemez. Uyumluluk sağlamak için kullanıcı varolan e-posta ayarları kaldırmalıdır, böylece Intune yönetilen e-posta profilini yükleyebilir.
 
 
-<!--HONumber=May16_HO2-->
+- **Intune tarafından yönetilmesi gereken e-posta profilini seçin:**
+   **E-posta hesabı Intune tarafından yönetilmelidir** ayarı seçildiyse, Intune e-posta profilini belirtmek için **Seçin**’i işaretleyin. E-posta profili cihazda mevcut olmalıdır.
+
+     E-posta profilleri hakkında ayrıntılı bilgi için bkz. [Microsoft Intune ile e-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
+
+## Cihaz durumu ayarları
+
+- **Cihazda jailbreak uygulanmamış veya kök erişim izni verilmemiş olmalıdır:** Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumlu olmaz.
+
+##  Cihaz özellikleri
+- **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir.
+Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
+
+- **İzin verilen en yüksek işletim sistemi sürümü:** Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir ve kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
+
+
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,7 +29,7 @@ ms.suite: ems
 Bu konu başlığı altında, bir cihazın uyumlu olarak kabul edilmek için uyması gereken bir uyumluluk ilkesi oluştururken kullanabileceğiniz adımlar açıklanır.
 
 ##  1. Adım: Yeni bir ilke ekleme
-  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Uyumluluk İlkeleri** &gt; **Ekle**’yi seçin.
+  [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda, **İlke** &gt; **Uyumluluk İlkeleri** &gt; **Ekle**’yi seçin.
 
   ![Intune yönetim konsolunda uyumluluk ilkesi sayfasını ve sayfanın en üstündeki menüde ekle seçeneğini gösteren ekran görüntüsü](./media/intune-sa-3a-add-compliance-policy.png)
 
@@ -84,6 +84,6 @@ Her platformda desteklenen uyumluluk ayarları hakkında daha fazla bilgi edinme
 [Cihaz uyumluluk ilkelerine giriş](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: [Kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma | Microsoft Intune]
+title: Kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma | Microsoft Intune
 description:
 keywords:
-author: [karthikaraman]
-manager: [jeffgilb]
+author: karthikaraman
+manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
+ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke]
-#ms.suite: ems
+ms.reviewer: joglocke
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -52,6 +52,11 @@ Uygulamaya MAM ilkelerini uygulayabilmek için, önce Microsoft Intune Uygulama 
 
 ## 3. Adım: MAM ilkelerini uygulama
 Uygulama meta verileri hizmete yüklendikten sonra, bu uygulama uygulamalar listesinde gösterilir.  Artık [yeni ilke oluşturabilir veya var olan ilkeyi kullanabilir](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) ve 2. adımda eklediğiniz iş kolu uygulamasına bunu uygulayabilirsiniz.
+
+>[!IMPORTANT]
+>MAM ilkesiyle, sarmalanan uygulamayı kullanacak olan kullanıcıları hedeflemelisiniz.  Kendilerine bu ilke dağıtılmayan kullanıcılar, uygulamayı kullanamaz.
+
+
   ![Yeni iş kolu uygulamasının gösterildiği Hedeflenen uygulamalar listesi dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-lob-on-targeted-app-list.png)
 ## 4. Adım: Uygulamayı dağıtma
 Uygulamaları son kullanıcılarınıza aşağıdaki yollarla dağıtabilirsiniz:
@@ -75,6 +80,6 @@ Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz.  Bu işlem 
   Bu işlem, uygulamaları iş kolu uygulamaları listesinden ve MAM ilkesindeki Hedeflenen uygulamalar listesinden kaldırır.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

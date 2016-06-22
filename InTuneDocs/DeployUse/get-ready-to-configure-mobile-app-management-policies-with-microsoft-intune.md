@@ -18,7 +18,7 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,6 +46,7 @@ Azure portalını yeni kullanmaya başladıysanız, hızlı genel bakış bilgil
 
 - Android 4 veya üzeri
 
+Windows cihazları şu anda desteklenmez.
 ##  Desteklenen uygulamalar
 * **Microsoft uygulamaları:** Bu uygulamalarda Intune App SDK’sı yerleşik olarak bulunur ve MAM ilkeleri uygulanmadan önce başka işlem yapmak gerekmez.
 Desteklenen Microsoft uygulamalarının tam listesi görmek için, Microsoft Intune uygulama iş ortakları sayfasında [Microsoft Intune mobil uygulama galerisine](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) gidin. Desteklenen senaryoları, platformları ve uygulamanın çoklu kimliği destekleyip desteklemediğini görmek için, uygulamaya tıklayın.
@@ -123,6 +124,6 @@ Aşağıdaki tabloda yönetici kullanıcılara atayabileceğiniz rol ve izinler 
 [Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

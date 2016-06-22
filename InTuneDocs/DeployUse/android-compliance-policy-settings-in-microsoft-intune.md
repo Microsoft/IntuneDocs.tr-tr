@@ -18,7 +18,7 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -37,43 +37,42 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 ## Sistem güvenliği ayarları
 ### Parola
-- **Mobil cihazların kilidini açmak için parola iste:** Kullanıcıların cihazlarına erişmeden önce parola girmelerini zorunlu tutmak için bunu **Evet**
+- **Mobil cihazların kilidini açmak için parola gerektir:** Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini gerektirmek için bunu **Evet** olarak ayarlayın.
 
--  olarak ayarlayın.
+-  **Minimum parola uzunluğu:** Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
 
-- **Minimum parola uzunluğu:** Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin. **Parola kalitesi:** Android cihazlarda parola gereksinimlerini yapılandırmak için bu ayarı etkinleştirin.
-  -   **Aşağıdakilerden birini seçin:**
-  - **Düşük güvenlik biyometriği**
-  -   **Gerekli**
+- **Parola kalitesi:** Android cihazlarda parola gereksinimlerini yapılandırmak için bu ayarı etkinleştirin. Aşağıdakilerden birini seçin:
+  -   **Düşük güvenlik biyometriği**
+  - **Gerekli**
   -   **En az sayısal**
   -   **En az alfabetik**
   -   **En az alfasayısal**
-
-- Simgelerle alfasayısal
+  -   **Simgelerle alfasayısal**
 
 - **Parola istenmeden önceki bekleme süresi (dakika olarak:**  Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi belirtir.
 
-- **Parola kullanım süresi (gün olarak):** Kullanıcının parolasının süresi dolmadan ve yenisini oluşturması istenmeden
+- **Parola kullanım süresi (gün):** Kullanıcı parolasının süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
 
-- önce geçecek gün sayısını seçin.
+- **Parola geçmişini anımsa:** Kullanıcının önceden kullanılan parolaları oluşturmasını engellemek için bu ayarı **Önceki parolaların yeniden kullanılmasını engelle** ile birlikte kullanın.
 
-- **Parola geçmişini anımsa:** Kullanıcının önceden kullanılmış olan parolaları yeniden kullanmasını kısıtlamak için bu ayarı **Önceki parolaların yeniden kullanılmasını engelle** ayarıyla birlikte kullanın.
+- **Önceki parolaların yeniden kullanılmasını engelle:** **Parola geçmişini anımsa** seçeneği belirlenirse, önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin.
 
-### **Önceki parolaların yeniden kullanılmasını engelle:** **Parola geçmişini anımsa** seçildiyse,
-- önceden kullanılmış olan parolalardan kaç tanesinin yeniden kullanılamayacağını belirtin. Cihaz boş bir durumdan döndürüldüğünde parola iste:
+- **Cihaz boşta durumundan çıkarken parola gerektir:** Bu ayar, **Parola gerektirmeden önce işlem yapılmadan geçen süre (dakika)** ayarıyla birlikte kullanılmalıdır. **Parola gerektirmeden önce işlem yapılmadan geçen süre (dakika)** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için son kullanıcılardan bir parola girmesi istenir.
 
-## Bu ayar **Parola istenmeden önce geçen işlem yapılmayan dakika sayısı** ayarı ile birlikte kullanılmalıdır.
+### Şifreleme
+- **Mobil cihazda şifreleme gerektir:** Cihazın kaynaklara bağlanmak için şifrelenmesini gerektirmek için bunu **Evet** olarak ayarlayın. **Mobil cihazların kilidini açmak için parola gerektir** ayarını yapılandırdığınızda cihazlar şifrelenir.
 
-- Son kullanıcılardan,
+## Cihaz durumu ayarları
 
-## **Parola istenmeden önceki bekleme süresi (dakika olarak)** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için son kullanıcılardan bir parola girmesi istenir.
-- Şifreleme
-  **Mobil cihazda şifreleme iste:** Cihazın kaynaklara bağlanabilmek amacıyla şifrelenmesini zorunlu tutmak için **Evet** olarak ayarlayın.
+- **Cihazda jailbreak uygulanmamış veya kök erişim izni verilmemiş olmalıdır:** Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
 
-- Cihazların şifrelenmesi için, **Mobil cihazların kilidini açmak
-  için parola iste** ayarı yapılandırılmalıdır.
+## Cihaz özelliği ayarları
+- **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir.
+  Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
+
+- **İzin verilen en yüksek işletim sistemi sürümü:** Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir ve kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

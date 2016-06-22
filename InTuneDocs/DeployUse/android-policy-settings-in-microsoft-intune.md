@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune’da Android yapılandırma ilkesi ayarları | Microsoft Intune
+title: Android ve Samsung KNOX yapılandırma ilkesi ayarları | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -18,14 +18,14 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Microsoft Intune’da Android ilke ayarları
+# Microsoft Intune’daki Android ve Samsung KNOX ilke ayarları
 
 ## Genel yapılandırma ilkesi
 
@@ -38,7 +38,7 @@ Microsoft Intune **Android genel yapılandırma ilkesini** kullanarak aşağıda
 -   **Uyumlu ve uyumsuz uygulamalar** - Şirketinizdeki uyumlu veya uyumsuz uygulamaların listesini gösterir. Android ve iOS cihazlarında, **Uyumlu Olmayan Uygulamalar Raporu** ile listede belirttiğiniz uygulamalarla kullanıcıların yüklemiş olduğu uygulamalar karşılaştırılarak uyumlu olup olmadığı görüntülenebilir (ancak uygulamanın yüklenmesi engellenemez).
 
 > [!TIP]
-> Kullanıcılarınızın kişisel uygulamalar dahil olmak üzere cihazlarındaki uygulamaların değerlendirileceğini ve uyumsuz uygulamaların engelleneceğini ya da uyumsuz olarak bildirileceğini anladığından emin olmak kullanıcılara yönelik hüküm ve koşullar yapılandırabilirsiniz. Kullanıcılar, uygulamalara erişmek üzere cihazlarını kaydedip şirket portalını kullanmadan önce bu hüküm ve koşulları kabul etmelidir. Hüküm ve koşulları kullanma hakkında daha fazla bilgi için bkz. [Microsoft Intune’da hüküm ve koşullar ilkesi ayarları](terms-and-condition-policy-settings-in-microsoft-intune.md)..
+> Kullanıcılarınızın kişisel uygulamalar dahil olmak üzere cihazlarındaki uygulamaların değerlendirileceğini ve uyumsuz uygulamaların engelleneceğini ya da uyumsuz olarak bildirileceğini anladığından emin olmak kullanıcılara yönelik hüküm ve koşullar yapılandırabilirsiniz. Kullanıcılar, uygulamalara erişmek üzere cihazlarını kaydedip şirket portalını kullanmadan önce bu hüküm ve koşulları kabul etmelidir. Hüküm ve koşulları kullanma hakkında daha fazla bilgi için bkz. [Microsoft Intune’da hüküm ve koşullar ilkesi ayarları](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetlemek için OMA-URI ayarlarını kullanmanıza olanak sağlayan bir Android özel ilkesini kullanarak bu ayarı oluşturabilirsiniz. Daha fazla bilgi için, bu konunun devamındaki **Özel ilke ayarları** bölümüne bakın.
 
@@ -138,8 +138,8 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
-|**Kullanıcılar listelenen uygulamaları yüklediğinde uyumsuzluk bildir**|Kullanıcıların yüklemesine ve çalıştırmasına için izin verilmeyen, Intune tarafından yönetilmeyen uygulamaları listeler.|
-|**Kullanıcılar listelenen uygulamaları yüklediğinde uyumsuzluk bildirme**|Kullanıcıların yüklemesine izin verilen uygulamaları listeler. Uyumluluğun korunması için kullanıcılar listelenmeyen uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.|
+|**Kullanıcılar listelenen uygulamaları yüklediğinde uyumsuzluk bildir**|Kullanıcıların yükleyip çalıştırmasını istemediğiniz, Intune tarafından yönetilmeyen uygulamaları listeleyin. Kullanıcılar bu uygulamalardan birini yüklerse, uygulama uyumsuz uygulamalar raporunda listelenir.|
+|**Kullanıcılar listelenen uygulamaları yüklediğinde uyumsuzluk bildirme**|Şirketinizde izin vermek istediğiniz uygulamaları listeler. Uyumluluğun korunması için, kullanıcılar listelenmeyen uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.|
 |**Ekle**|Seçili listeye bir uygulama ekler. Tercih ettiğiniz bir ad (isteğe bağlı olarak uygulama yayımcısı) ve uygulamanın uygulama mağazasındaki URL'sini belirtin.<br /><br />Yardım için, bu konunun Uygulama mağazalarının URL’lerini belirtme bölümüne bakın.|
 |**Uygulamaları İçeri Aktar**|Virgülle ayrılmış bir değerler dosyasında belirttiğiniz uygulamaların listesini içeri aktarır. Dosyadaki biçim, uygulama adı, yayımcı, uygulama URL'sini kullanın.|
 |**Düzenle**|Seçilen uygulamanın adını, yayımcısını ve URL'sini düzenlemenize imkan tanır.|
@@ -150,7 +150,7 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
-|**Cihaz bilgi noktası modundayken çalışmasına izin verilecek yönetilen bir uygulama seçin**|**Gözat**'a tıklayın, ardından cihaz bilgi noktası modundayken çalışmasına izin verilecek bir yönetilen uygulama veya mağaza uygulaması seçin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.<br /><br />Yardım için, bu konunun Uygulama mağazalarının URL’lerini belirtme bölümüne bakın.|
+|**Cihaz bilgi noktası modundayken çalışmasına izin verilecek yönetilen bir uygulama seçin**|**Gözat**’ı seçin, sonra cihaz bilgi noktası modundayken çalışmasına izin verilecek yönetilen uygulamaları seçin (mağazaya bir bağlantı olarak belirtilen uygulamalar henüz desteklenmez). Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.|
 |**Ses düğmelerine izin ver**|Cihazdaki ses düğmelerinin kullanımını etkinleştirir veya devre dışı bırakır.|
 |**Açma/kapatma düğmesine izin ver**|Cihazın açma/kapatma düğmesini etkinleştirir veya devre dışı bırakır.|
 
@@ -161,26 +161,25 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 ###### Uyumlu Olmayan Uygulamalar Raporu'nu çalıştırmak için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Raporlar** &gt; **Uyumsuz Uygulamalar Raporları**’na tıklayın..
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Raporlar** &gt; **Uyumsuz Uygulamalar Raporu**’nu seçin.
 
-2.  Denetlenmesini istediğiniz cihaz gruplarını seçin, uyumlu uygulamaları mı, uyumsuz uygulamaları mı yoksa her ikisini birden mi denetlemek istediğinizi seçin ve ardından **Raporu Görüntüle**'ye tıklayın..
+2.  Denetlemek istediğiniz cihaz gruplarını seçin, uyumlu uygulamaları, uyumsuz uygulamaları veya her ikisini birden denetlemek istediğinizi belirtin ve sonra **Raporu Görüntüle**’yi seçin.
 
 #### Uygulama mağazalarının URL'lerini belirtme
-Uyumlu ve uyumsuz uygulamalar listesinde veya **Cihaz bilgi noktası modundayken çalışmasına izin verilecek bir yönetilen uygulama seçin** seçeneğinde (yalnızca iOS) bir uygulamanın URL'sini belirtmek için aşağıdaki biçimi kullanın:
+Uyumlu veya uyumlu olmayan uygulama listesinde bir uygulama URL'si belirtmek için aşağıdaki biçimi kullanın:
 
 [Google Play'in uygulamalar bölümünde](https://play.google.com/store/apps) kullanmak istediğiniz uygulamayı arayın.
 
 Uygulama için yükleme sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu uyumlu uygulamalar listesinde veya uyumsuz uygulamalar listesinde gerekli URL olarak kullanabilirsiniz.
 
-**Örnek:** Google Play'de Microsoft Office Mobile uygulamasını arayın. Kullandığınız URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub** olacaktır..
+**Örnek:** Google Play'de Microsoft Office Mobile uygulamasını arayın. Kullandığınız URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub** olacaktır.
 
 ## Özel ilke ayarları
 Android cihazlardaki özellikleri denetlemek için kullanılabilen OMA-URI (Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı) ayarlarını dağıtmak için Microsoft Intune **Android özel yapılandırma ilkesini** kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
 
-Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarlarını dağıtmanıza olanak sağlamak için tasarlanmıştır. Bu ilkelerle yapılandırabileceğiniz ayarlar hakkında daha fazla bilgi için bkz. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarlarını dağıtmanıza olanak sağlamak için tasarlanmıştır.
 
-> [!NOTE]
-> Şu anda Android özel ilkeleri yalnızca önceden paylaşılan bir anahtar içeren Android cihazlar için Wi-Fi ayarlarının yapılandırılmasını destekler. Daha fazla bilgi için, bu konunun devamındaki Önceden paylaşılan anahtarla özel bir Wi-Fi profili yapılandırma bölümüne bakın.
+> [!NOTE] Şu anda Android özel ilkeleri yalnızca önceden paylaşılan bir anahtar içeren Android cihazlar için Wi-Fi ayarlarının yapılandırılmasını destekler.
 
 ### Genel ayarlar
 
@@ -195,7 +194,7 @@ Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarları
     |--------|--------------------|
     |**Ayar adı**|Ayarlar listesinde tanımanıza yardımcı olması için OMA-URI ayarı için benzersiz bir ad girin.|
     |**Ayar açıklaması**|Ayara genel bir bakış ve ayarı bulmanıza yardımcı olacak diğer ek bilgileri içeren bir açıklama sağlayın.|
-    |**Veri türü**|Bu OMA-URI ayarını belirteceğiniz tarih türünü seçin. **Dize, Dize (XML), Tarih ve saat, Tamsayı, Kayan nokta** veya **Boole değeri** seçeneklerinden birini belirleyin..|
+    |**Veri türü**|Bu OMA-URI ayarını belirteceğiniz tarih türünü seçin. **Dize, Dize (XML), Tarih ve saat, Tamsayı, Kayan nokta** veya **Boole değeri** seçeneklerinden birini belirleyin.|
     |**OMA-URI (büyük küçük harf duyarlı)**|Bir ayar için sağlamak istediğiniz OMA-URI’yi belirtin.|
     |**Değer**|Önceden belirttiğiniz OMA-URI ile ilişkilendirilecek değeri belirtin.|
 
@@ -212,7 +211,7 @@ Intune, Android cihazlar için Wi-Fi profillerini desteklese de bu özellik şu 
 |----------------|--------------------|
 |**Ayar adı**|Ayar için tercih ettiğiniz bir ad belirtin.|
 |**Ayar açıklaması**|Ayar için bir açıklama belirtin.|
-|**Veri türü**|**Dize (XML)** öğesini seçin..|
+|**Veri türü**|**Dize (XML)** öğesini seçin.|
 |**OMA URI**|Şunu girin: ./Vendor/MSFT/WiFi/Profile/*&lt;Wi-Fi profiliniz&gt;*/Settings|
 
 3.  **Değer** için aşağıdaki XML kodunu kopyalayıp yapıştırın:
@@ -258,6 +257,6 @@ Intune, Android cihazlar için Wi-Fi profillerini desteklese de bu özellik şu 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

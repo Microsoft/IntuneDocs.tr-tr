@@ -18,7 +18,7 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıld�
 
     ![Özet kutucuğunu içeren Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  **Yeni temizleme istekleri**’ni seçin.
+2.  **Yeni silme istekleri**’ni seçin.
 
     ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -60,12 +60,12 @@ Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıld�
 
 2.   **Silme isteği** dikey penceresinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz.  Sistem, cihazda çalışan her korumalı uygulama için bir silme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz.  Durum, silme isteğinin **bekliyor**, **başarısız**veya **başarılı** olup olmadığını gösterir.
 
-### Ayrıca bkz.
+### Ayrıca bkz:
 [Mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Azure portalını kullanma](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

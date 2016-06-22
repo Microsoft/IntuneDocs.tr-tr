@@ -18,7 +18,7 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ Kullanıcı cihazında OneDrive gibi desteklenen bir uygulama kullanarak bir dos
 >[!IMPORTANT]
 >Modern kimlik doğrulamasının kullanıldığı uygulamalar bulunan bilgisayarlar ve Windows 10 Mobile cihazları için koşullu erişim özelliği, şu anda tüm Intune müşterilerine sağlanmaz. Bu özellikleri zaten kullanıyorsanız, herhangi bir işlem yapmanız gerekmez. Kullanmaya devam edebilirsiniz.
 
->Bilgisayarlarda veya Windows 10 Mobile cihazlarda modern kimlik doğrulamasının kullanıldığı uygulamalar için koşullu erişim ilkeleri oluşturmadıysanız ve bunu yapmak istiyorsanız, bir istek göndermeniz gerekir.  [Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472), hem bilinen sorunlar hem de bu özelliği nasıl erişebileceğiniz hakkında daha fazla bilgi bulabilirsiniz.
+>Bilgisayarlarda veya Windows 10 Mobile cihazlarda modern kimlik doğrulamasının kullanıldığı uygulamalar için koşullu erişim ilkeleri oluşturmadıysanız ve bunu yapmak istiyorsanız, bir istek göndermeniz gerekir.  [Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472) bilinen sorunlar ve bu özelliğe erişim elde etme hakkında daha fazla bilgi bulabilirsiniz.
 
 SharePoint Online için koşullu erişim ilkesini yapılandırmadan **önce**:
 - **SharePoint Online aboneliğiniz** olmalıdır ve kullanıcılar SharePoint Online lisansına sahip olmalıdır.
@@ -48,7 +48,7 @@ SharePoint Online için koşullu erişim ilkesini yapılandırmadan **önce**:
   Gerekli dosyalara bağlanmak için, cihazın:
 -   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’a **kaydedilmesi** veya etki alanına katılmış bir bilgisayar olması gerekir.
 
--   Cihazı Azure Active Directory’ye **kaydedin** (cihaz Intune’a kaydedildiğinde bu otomatik olarak gerçekleşir).
+-   Azure Active Directory’ye **cihazı kaydedin** (cihaz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetine kaydedildiğinde bu otomatik olarak gerçekleşir).
 
 
 -   Dağıtılan tüm [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uyumluluk ilkelerine uyması gerekir.
@@ -78,7 +78,7 @@ AAD DRS, Intune ve Office 365 müşterileri için otomatik olarak etkinleştiril
   - İlke etki alanına katılmayı veya uyumluluğu gerektirecek şekilde ayarlandıysa ve bilgisayar iki gereksinimi de karşılamıyorsa, Şirket Portalı uygulamasını yükleme ve kaydetme yönergelerini içeren bir ileti görüntülenir.
 -    [Office 365 modern kimlik doğrulamasının etkin olması](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) ve en son Office güncelleştirmelerine sahip olması gerekir.
 
-    Modern kimlik doğrulaması, Office 2013 Windows istemcileri için Active Directory Authentication Library (ADAL) tabanlı oturum açma özelliği sunar ve **çok faktörlü kimlik doğrulaması** ile **sertifika tabanlı kimlik doğrulaması** gibi daha üst düzey güvenlik sağlar.
+    Modern kimlik doğrulama, Office 2013 Windows istemcileri için Active Directory Authentication Library (ADAL) tabanlı oturum açma özelliği sunar ve **çok faktörlü kimlik doğrulaması** ile **sertifika tabanlı kimlik doğrulaması** gibi daha üst düzey güvenlik sağlar.
 
 
 ## SharePoint Online için koşullu erişimi yapılandırma
@@ -97,11 +97,11 @@ Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 ### Adım 2: Uyumluluk ilkesi yapılandırma ve dağıtma
 Bunu zaten yapmadıysanız, bir uyumluluk ilkesi oluşturun ve bu ilkeyi SharePoint Online ilkesinde hedeflenecek olan kullanıcılara dağıtın.
 
-> Uyumluluk ilkeleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
+> [!NOTE] Uyumluluk ilkeleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
 
-Uyumluluk ilkesini yapılandırma ayrıntıları için bkz. [Uyumluluk ilkesi oluşturma](create-a-device-compliance-policy-in-microsoft-intune.md).
+Uyumluluk ilkesini yapılandırma ayrıntıları için bkz. [uyumluluk ilkesi oluşturma](create-a-device-compliance-policy-in-microsoft-intune.md).
 
-> Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak kabul edilir.
+> [!IMPORTANT] Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak değerlendirilir.
 
 Hazır olduğunuzda **3. Adım**’a ilerleyin.
 
@@ -121,7 +121,7 @@ Hazır olduğunuzda **3. Adım**’a ilerleyin.
 
         Bu seçenek, **SharePoint Online**’a erişmek için kullanılan tüm cihazların Intune’a kaydedilmesini ve ilkelerle uyumlu olmasını gerektirir.  **Modern kimlik doğrulaması** kullanan tüm istemci uygulamaları, koşullu erişim ilkesine bağlıdır. Platform şu anda Intune tarafından desteklenmiyorsa, **SharePoint Online**’a erişim engellenir.
         >[!TIP]
-        >Bilgisayarlar için koşullu erişimi zaten kullanıyorsanız, bu seçeneği görmeyebilirsiniz.  Bunun yerine **Belirli platformlar**’ı kullanın. Bilgisayarlar için koşullu erişim şu anda tüm Intune müşterilerine sağlanmamaktadır.   [Microsoft Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472), hem bilinen sorunlar hem de bu özelliği nasıl erişebileceğiniz hakkında daha fazla bilgi bulabilirsiniz.
+        >Bilgisayarlar için koşullu erişimi zaten kullanıyorsanız, bu seçeneği görmeyebilirsiniz.  Bunun yerine **Belirli platformlar**’ı kullanın. Bilgisayarlar için koşullu erişim şu anda tüm Intune müşterilerine sağlanmamaktadır.   [Microsoft Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472), bilinen sorunların yanı sıra bu özelliğe nasıl erişebileceğiniz hakkında daha fazla bilgi bulabilirsiniz.
 
     -   **Belirli platformlar**
 
@@ -129,7 +129,7 @@ Hazır olduğunuzda **3. Adım**’a ilerleyin.
 
      Windows bilgisayarları için, bilgisayar etki alanına katılmış veya [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’a kaydedilmiş ve uyumlu olmalıdır. Aşağıdaki gereksinimleri ayarlayabilirsiniz:
 
-     -   **Cihazlar bir etki alanına katılmış veya uyumlu olmalıdır.** Bilgisayarların etki alanına katılmış veya [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’da ayarlanan ilkelerle uyumlu olmasını istiyorsanız bu seçeneği belirtin. Bilgisayar bu iki gereksinimi de karşılamıyorsa, kullanıcıdan cihazı Intune’a kaydetmesi istenir.
+     -   **Cihazlar bir etki alanına katılmış veya uyumlu olmalıdır.** Bilgisayarların etki alanına katılmış veya [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’da ayarlanan ilkelerle uyumlu olmasını istiyorsanız bu seçeneği belirtin. Bilgisayar bu iki gereksinimi de karşılamıyorsa, kullanıcıdan cihazı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetine kaydetmesi istenir.
 
      -   **Cihazlar bir etki alanına katılmış olmalıdır.** Bilgisayarların Exchange Online'a erişmek için etki alanına katılmış olmasını zorunlu tutmak için bu seçeneği belirtin. Bilgisayar etki alanına katılmadıysa, e-posta erişimi engellenir ve kullanıcıdan BT yöneticisine başvurması istenir.
 
@@ -158,6 +158,6 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 [Microsoft Intune ile e-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

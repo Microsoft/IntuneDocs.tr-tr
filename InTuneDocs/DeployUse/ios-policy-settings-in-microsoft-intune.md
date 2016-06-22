@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -99,7 +99,7 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 |**Uygulama depolamaya izin ver**|Cihazın uygulama mağazasına erişmesine izin verir.|Evet|
 |**Uygulama deposuna erişim için parola iste**|Evet|
 |**Uygulama içi satın almalara izin ver**|Çalışan bir uygulamanın içinden mağazada alışveriş yapılmasına izin verir.|Evet|
-|**Diğer yönetilmeyen uygulamalardaki yönetilen belgelere izin ver**|Şirket belgelerinin herhangi bir uygulamada görüntülenmesine izin verir.|OS 7.1 ve üzeri|
+|**Diğer yönetilmeyen uygulamalardaki yönetilen belgelere izin ver**|Şirket belgelerinin herhangi bir uygulamada görüntülenmesine izin verir.<br>**Örnek:** Kullanıcıların OneDrive uygulamasından Dropbox’a dosya kaydetmesini engellemek istiyorsunuz. Bu ayarı hayır olarak yapılandırın. Cihaz ilkeyi aldıktan (örneğin, yeniden başlatıldıktan) sonra artık kaydetmeye izin vermez.|iOS 7.1 ve üzeri|
 |**Diğer yönetilen uygulamalardaki yönetilmeyen belgelere izin ver**|Tüm belgelerin şirketin yönetilen uygulamalarında görüntülenmesine izin verin.|iOS 7.1 ve üzeri|
 |**Görüntülü konferansa izin ver**|Cihazda Facetime gibi görüntülü konferans uygulamalarına izin verir.|Evet|
 |**Medya mağazasında yetişkinlere yönelik içeriğe izin ver**|Cihazın mağazadaki yetişkinlere yönelik olarak derecelendirilmiş içeriğe erişmesine izin verin.|Evet|
@@ -153,7 +153,7 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
-|**Cihaz bilgi noktası modundayken çalışmasına izin verilecek yönetilen bir uygulama seçin**| **Gözat**'a tıklayın, ardından cihaz bilgi noktası modundayken olduğunda çalışmasına izin verilecek bir yönetilen uygulamayı veya mağaza uygulamasını belirtin. Cihazda başka hiçbir uygulamanın çalıştırılmasına izin verilmez. Daha fazla yardım için bu konunun devamındaki **Uygulama mağazalarının URL’lerini belirtme** bölümüne bakın.|
+|**Cihaz bilgi noktası modundayken çalışmasına izin verilecek yönetilen bir uygulama seçin**|**Gözat**’ı seçtikten sonra yönetilen uygulamayı veya cihaz bilgi noktası modundayken çalışmasına izin verilecek mağaza uygulamasını belirtin. Cihazda başka hiçbir uygulamanın çalıştırılmasına izin verilmez. Daha fazla yardım için bu konunun devamındaki **Uygulama mağazalarının URL’lerini belirtme** bölümüne bakın.|
 |**Dokunmatik ekrana izin ver**|Cihazda dokunmatik ekranı etkinleştirir veya devre dışı bırakır.|
 |**Ekran döndürmeye izin ver**|Cihazı döndürdüğünüzde ekran yönünü değiştirmeyi etkinleştirir veya devre dışı bırakır.|
 |**Ses düğmelerine izin ver**|Cihazdaki ses düğmelerinin kullanımını etkinleştirir veya devre dışı bırakır.|
@@ -182,9 +182,9 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 
 ##### Uyumlu Olmayan Uygulamalar Raporu'nu çalıştırmak için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Raporlar** &gt; **Uyumsuz Uygulamalar Raporu** öğesine tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Raporlar** &gt; **Uyumsuz Uygulamalar Raporu**’nu seçin.
 
-2.  Denetlenmesini istediğiniz cihaz gruplarını seçin, uyumlu uygulamaları mı, uyumsuz uygulamaları mı yoksa her ikisini birden mi kontrol etmek istediğinizi seçin, ardından **Raporu Görüntüle**'ye tıklayın.
+2.  Denetlemek istediğiniz cihaz gruplarını seçin, uyumlu uygulamaları, uyumsuz uygulamaları veya her ikisini birden denetlemek istediğinizi belirtin ve sonra **Raporu Görüntüle**’yi seçin.
 
 #### Uygulama mağazalarının URL'lerini belirtme
 Uyumlu ve uyumsuz uygulamalar listesinde veya **Cihaz bilgi noktası modundayken çalışmasına izin verilecek bir yönetilen uygulama seçin** seçeneğinde (yalnızca iOS) bir uygulamanın URL'sini belirtmek için aşağıdaki biçimi kullanın:
@@ -222,7 +222,7 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 |Ayar adı|Ayrıntılar|
     |----------------|--------------------|
 |**Özel yapılandırma profili adı (kullanıcılara gösterilir)**|Cihazda ve Intune ilke raporlarında görüntülenecek şekilde ilke için bir ad sağlayın.|
-|**Yapılandırma profili dosyası**| **İçeri aktar**‘a tıklayın, ardından Apple Configurator’ı kullanarak oluşturduğunuz yapılandırma profiline göz atın. **Not:** Apple Configurator aracından dışarı aktardığınız ayarların, iOS özel ilkesini dağıttığınız cihazlardaki iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların nasıl çözümleneceği hakkında bilgi için, [Apple Developer](https://developer.apple.com/) web sitesinde **Yapılandırma Profili Başvurusu** ve **Mobil Cihaz Yönetim Protokolü Başvurusu** öğesini arayın.|
+|**Yapılandırma profili dosyası**|**İçeri aktar**’ı seçin, sonra Apple Configurator’ı kullanarak oluşturduğunuz yapılandırma profiline gidin. **Not:** Apple Configurator aracından dışarı aktardığınız ayarların, iOS özel ilkesini dağıttığınız cihazlardaki iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların nasıl çözümleneceği hakkında bilgi için, [Apple Developer](https://developer.apple.com/) web sitesinde **Yapılandırma Profili Başvurusu** ve **Mobil Cihaz Yönetim Protokolü Başvurusu** öğesini arayın.|
     |**Yapılandırma profili ayrıntıları**|İçeri aktardığınız yapılandırma profili için xml kodunu görüntüler.|
 
 ### Ayrıca bkz.
@@ -230,6 +230,6 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

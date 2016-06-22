@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,7 +41,7 @@ MAM ilkeleri, aşağıdakilerde çalışan uygulamaları destekler:
 
 -   **Yönetilen ve üçüncü taraf mobil cihaz yönetimi çözümüne kaydedilen cihazlar**.   Bu kategorideki cihazlar tipik olarak, şirkete ait cihazlardır.
 
-  > mobil uygulama yönetimi ilkeleri, üçüncü taraf mobil uygulama yönetimi veya güvenli kapsayıcı çözümleri ile birlikte kullanılmamalıdır.
+  > [!NOTE] Mobil uygulama yönetimi ilkeleri üçüncü taraf mobil uygulama yönetimi ya da güvenli kapsayıcı çözümleri ile birlikte kullanılmamalıdır.
 
 -   **Yönetilmeyen cihazlar**.  Bu kategorideki cihazlar genellikle, Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
 
@@ -63,6 +63,7 @@ MDM’yi MAM ilkeleriyle kullanmanın başka avantajları vardır ve şirketler,
 
 -   Android 4 veya üzeri
 
+Windows cihazları şu anda desteklenmez.
 ##  MAM ilkeleri, uygulama verilerini nasıl korur?
 
 ####  MAM ilkeleri olmayan uygulamalar:
@@ -76,66 +77,66 @@ Uygulamalar kısıtlama olmadan kullanıldığında, şirket verileri ile kişis
 ![MAM ilkeleri uygulandığında şirket verilerinin nasıl korunduğunu gösteren resim ](../media/Apps_with_mobile_app_policies.png)
 
 MAM ilkelerini, şirket verilerinin cihazın yerel depolama birimine kaydedilmesini önlemek için ve MAM ilkeleriyle korunmayan diğer uygulamalara veri hareketini kısıtlamak için kullanabilirsiniz. MAM ilkesi ayarları aşağıdakileri içerir:
-- Aşağıdaki gibi veri yeniden konumlandırma ilkeleri
-- **Farklı Kaydetmeyi Önle**, **Kesme, kopyalama ve yapıştırmayı kısıtla**
+- **Farklı Kaydetmeyi Engelle**, **Kesme, kopyalama ve yapıştırma işlemlerini kısıtla** gibi veri yer değiştirme ilkeleri.
+- **Erişim için basit PIN gerektir**, **Jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda, yönetilen uygulamaların çalışmasını engelle** gibi erişim ilkesi ayarları.
 
-### **Erişim için basit PIN iste**, **Yönetilen uygulamaların, işletim sistemi kısıtlamaları kaldırılmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelle** gibi erişim ilkesi ayarları
+### Bir MDM çözümüyle yönetilen cihazlarda MAM ilkeleriyle veri koruması:
 
-![Bir MDM çözümüyle yönetilen cihazlarda MAM ilkeleriyle veri koruması:](../media/MAM_BYOD_November.png)
+![MAM ilkelerinin BYOD cihazlarda nasıl çalıştığını gösteren resim](../media/MAM_BYOD_November.png)
 
-**MAM ilkelerinin BYOD cihazlarda nasıl çalıştığını gösteren resim**-
-
-Bir MDM çözümüne kaydedilen cihazlar için
+**Bir MDM çözümüne kaydedilen cihazlar için**-
 
 Yukarıdaki çizimde, MDM ve MAM ilkelerinin birlikte sunduğu koruma katmanları gösterilmektedir.
 
--   MDM çözümü:
+MDM çözümü:
 
 -   Cihazı kaydeder
 
 -   Uygulamaları cihaza dağıtır
 
-**Sürekli cihaz uyumluluğu ve yönetimi sağlar**
+-   Sürekli cihaz uyumluluğu ve yönetimi sağlar
 
--   MAM ilkeleri, aşağıdakileri yaparak katkıda bulunur:
+**MAM ilkeleri, aşağıdakileri yaparak katkıda bulunur:**
 
 -   Şirket verilerinin tüketici uygulamalarına ve hizmetlerini sızmasını önlemeye yardımcı olma
 
 -   Mobil uygulamalara kısıtlamalar (farklı kaydet, pano, PIN, vs.) uygulama
 
+-   Uygulamaları cihazdan kaldırmadan şirket verilerini uygulamalardan silme
 
-### Uygulamaları cihazdan kaldırmadan şirket verilerini uygulamalardan silme
 
-![Kaydolmamış cihazlar için MAM ilkeleriyle veri koruması](../media/MAM_ManagedDevices_November.png)
+### Kaydolmamış cihazlar için MAM ilkeleriyle veri koruması
 
-MAM ilkelerinin yönetilen cihazlarda nasıl çalıştığını gösteren resim
+![MAM ilkelerinin yönetilen cihazlarda nasıl çalıştığını gösteren resim](../media/MAM_ManagedDevices_November.png)
 
 Yukarıdaki şemada, veri koruma ilkelerinin uygulama düzeyinde MDM olmadan nasıl çalıştığı gösterilmektedir.
+
 MAM ilkeleri, herhangi bir MDM çözümüne kayıtlı olmayan KCG cihazları için şirket verilerinin uygulama düzeyinde korunmasına yardımcı olabilir.
+Ancak, dikkat edilmesi gereken bazı sınırlamalar vardır, örneğin:
 
--   Ancak, dikkat edilmesi gereken bazı sınırlamalar vardır, örneğin:  Uygulamaları cihaza dağıtamazsınız.
-
--   Son kullanıcı, uygulamaları mağazadan almak zorundadır.
+-   Uygulamaları cihaza dağıtamazsınız.  Son kullanıcı, uygulamaları mağazadan almak zorundadır.
 
 -   Bu cihazlarda sertifika profillerini sağlayamazsınız.
 
+-   Bu cihazlarda şirket Wi-Fi ve VPN ayarlarını sağlayamazsınız.
 
-## Bu cihazlarda şirket Wi-Fi ve VPN ayarlarını sağlayamazsınız.
 
-Çoklu kimlik  
+## Çoklu kimlik
 
-Çoklu kimliği destekleyen uygulamalar, uygulamalar iş bağlamında kullanıldığında MAM ilkelerinin uygulandığı uygulamaların aynısına erişmek için farklı hesaplar kullanma (iş ve kişisel) yeteneği sağlar. Örneğin, son kullanıcı kendi iş hesabını kullanarak OneDrive uygulamasını başlattığında, dosyaları bir kişisel depolama konumuna taşıyamaz.  
+Çoklu kimliği destekleyen uygulamalar, uygulamalar iş bağlamında kullanıldığında MAM ilkelerinin uygulandığı uygulamaların aynısına erişmek için farklı hesaplar kullanma (iş ve kişisel) yeteneği sağlar.  
 
-Ancak, son kullanıcı kendi kişisel hesabıyla OneDrive kullandığında, kişisel Onedrive’larından kısıtlama olmadan veri kopyalayabilir ve taşıyabilir.
+Örneğin, son kullanıcı kendi iş hesabını kullanarak OneDrive uygulamasını başlattığında, dosyaları bir kişisel depolama konumuna taşıyamaz. Ancak, son kullanıcı kendi kişisel hesabıyla OneDrive kullandığında, kişisel Onedrive’larından kısıtlama olmadan veri kopyalayabilir ve taşıyabilir.  
 
 MAM ilkeleriyle ilişkili uygulamaları kullanma deneyimine dair ve Çoklu kimliği olan uygulamaların yalnızca iş bağlamında MAM ilkeleri uygulanmasını sağlamayı nasıl desteklediğine dair ayrıntılı bir açıklama için, bkz. [çoklu kimlik desteği olan uygulamaları kullanma](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)
 
-##  Tüm Office mobil uygulamaları çoklu kimliği destekler.
-[Sonraki Adımlar](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+Tüm Office mobil uygulamaları çoklu kimliği destekler.
 
-[Mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlanma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+##  Sonraki adımlar
+[Mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlanma](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+
+[Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,50 +32,50 @@ ms.suite: ems
 1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi ve ardından **Dağıtımı Yönet**’i seçin.
 ![En üstte Dağıtımı Yönet menü seçeneğinin gösterildiği uyumluluk ilkesi sayfasının ekran görüntüsü](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
-2.  **Dağıtımı Yönet** iletişim kutusunda ilkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle > Tamam**'a tıklayın.
-![Dağıtımı Yönet iletişim kutusunun ekran görüntüsü Uyumluluk ilkesini kullanıcılara ve/veya cihazlara dağıtabilirsiniz. Daha önce oluşturduğunuz ve Intune ile eşitlenen Active Directory gruplarını kullanın ya da Intune konsolunda bu grupları el ile oluşturun.
+2.  **Dağıtımı Yönet** iletişim kutusunda ilkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin, sonra **Ekle > Tamam**’ı seçin.
+![Dağıtımı yönetme iletişim kutusunun ekran görüntüsü](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Kullanıcılara ve/veya cihazlara bir uyumluluk ilkesi dağıtabilirsiniz. Daha önce oluşturduğunuz ve Intune ile eşitlenen Active Directory gruplarını kullanın ya da Intune konsolunda bu grupları el ile oluşturun. İlke dağıtma hakkında daha fazla bilgi için, bkz. [yapılandırma ilkesi dağıtma](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-İlkeleri dağıtma hakkında daha fazla bilgi edinmek için, bkz. [Yapılandırma ilkesini dağıtma](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) Dikkat etmeniz gereken ilkeyle ilgili sorunları belirlemek için **İlke** çalışma alanının **Genel Bakış** sayfasında durum özeti ve uyarılarını kullanın.
+Dikkat etmeniz gereken ilkeyle ilgili sorunları belirlemek için **İlke** çalışma alanının **Genel Bakış** sayfasında durum özeti ve uyarılarını kullanın. Ayrıca, **Pano** çalışma alanında bir durum özeti görüntülenir.
 
-> [!IMPORTANT]Ayrıca, **Pano** çalışma alanında bir durum özeti görüntülenir.
+> [!IMPORTANT]Bir uyumluluk ilkesi dağıtmadıysanız ve sonra bir Exchange koşullu erişim ilkesini etkinleştirirseniz, tüm hedeflenen cihazların erişimine izin verilir.
 
-## Bir uyumluluk ilkesi dağıtmadıysanız ve sonra bir Exchange koşullu erişim ilkesini etkinleştirirseniz, tüm hedeflenen cihazların erişimine izin verilir.
-Intune ilke çakışmalarını çözümleme Bir cihaza birden çok Intune ilkesi uygulandığında ilke çakışmaları olabilir.
-
--   İlke ayarları çakışırsa, Intune tüm çakışmaları aşağıdaki kuralları kullanarak çözer:
+## Intune ilke çakışmalarını çözümleme
+Bir cihaza birden çok Intune ilkesi uygulandığında ilke çakışmaları olabilir. İlke ayarları çakışırsa, Intune tüm çakışmaları aşağıdaki kuralları kullanarak çözer:
 
 -   Çakışan ayarlar bir Intune yapılandırma ilkesine ve bir uyumluluk ilkesine aitse, yapılandırma ilkesindeki ayarlar daha güvenli olsa bile uyumluluk ilkesindeki ayarlar yapılandırma ilkesindeki ayarlara göre önceliklidir.
 
-## Birden çok uyumluluk ilkesi dağıttıysanız bu ilkelerin en güvenli olanı kullanılır.
+-   Birden çok uyumluluk ilkesi dağıttıysanız bu ilkelerin en güvenli olanı kullanılır.
 
-#### Uyumluluk ilkesini izleme
+## Uyumluluk ilkesini izleme
 
-1.  Uyumluluk ilkesine uymayan cihazları görüntülemek için
+#### Uyumluluk ilkesine uymayan cihazları görüntülemek için
 
-2.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Gruplar > Tüm Cihazlar**’ı seçin.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Gruplar > Tüm Cihazlar** öğesini seçin.
 
-3.  Cihazlar listesinde bir cihazın adına çift tıklayın.
+2.  Cihazlar listesinde bir cihazın adına çift tıklayın.
 
-4.  İlgili cihaza ilişkin ilkelerin listesini görmek için **İlke** sekmesini seçin.
-![**Filtreler** açılan listesinden **Uyumluluk ilkesine uygun değil** öğesini seçin.](./media/intune-sa-3e-view-device-noncompliance.png)
+3.  İlgili cihaza ilişkin ilkelerin listesini görmek için **İlke** sekmesini seçin.
 
-#### Filtreler listesindeki seçenekleri gösteren ekran görüntüsü
+4.  **Filtreler** açılır listesinden **Uyumluluk ilkesine uygun değil** öğesini seçin.
+![Filtreler listesindeki seçenekleri gösteren ekran görüntüsü](./media/intune-sa-3e-view-device-noncompliance.png)
 
-1.  Durum Kanıtlama Raporlarını görüntülemek için
+#### Durum Kanıtlama Raporlarını görüntülemek için
 
-2.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Raporlar**’ı seçin. **Durum Kanıtlama Raporu - Yeni rapor oluştur** sayfasında Intune tarafından toplanan tüm Windows 10 durum kanıtlama verileriyle birlikte bir raporu görüntüleyebilirsiniz. Ayrıca filtreleri kullanarak verilerin bir alt kümesi ile rapor oluşturabilirsiniz.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Raporlar**’ı seçin.
 
-
-## Filtreler cihaz türüne, işletim sistemine veya yalnızca bir veri noktaları alt kümesine göre uygulanabilir.
-Sonraki adımlar
-
-[Kuruluşunuzdaki hizmetlere erişimi denetlemek için artık koşullu erişim ilkeleriyle birlikte uyumluluk ilkesini kullanabilirsiniz.](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+2.  **Durum Kanıtlama Raporu - Yeni rapor oluştur** sayfasında Intune tarafından toplanan tüm Windows 10 durum kanıtlama verileriyle birlikte bir raporu görüntüleyebilirsiniz. Ayrıca filtreleri kullanarak verilerin bir alt kümesi ile rapor oluşturabilirsiniz. Filtreler cihaz türüne, işletim sistemine veya yalnızca bir veri noktaları alt kümesine göre uygulanabilir.
 
 
-### E-posta ve O365 hizmetlerine erişimi kısıtlama
-[Ayrıca bkz.](introduction-to-device-compliance-policies-in-microsoft-intune.md)
+## Sonraki adımlar
+Kuruluşunuzdaki hizmetlere erişimi denetlemek için artık koşullu erişim ilkeleriyle birlikte uyumluluk ilkesini kullanabilirsiniz.
+
+[E-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+### Ayrıca bkz.
+[Intune’da cihaz uyumluluk ilkelerine giriş](introduction-to-device-compliance-policies-in-microsoft-intune.md)
+
+
+<!--HONumber=Jun16_HO2-->
 
 
