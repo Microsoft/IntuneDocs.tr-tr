@@ -200,9 +200,9 @@ Bir ilkeyi sildiğinizde veya bir cihazı ilkenin dağıtıldığı bir gruptan 
 
 ### İlkelerle ilgili sorunları giderme hakkında nereden yardım bulabilirim?
 
-Bkz. [Microsoft Intune’da ilke sorunlarını giderme](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md).
+Bkz. [Microsoft Intune’da ilke sorunlarını giderme](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
