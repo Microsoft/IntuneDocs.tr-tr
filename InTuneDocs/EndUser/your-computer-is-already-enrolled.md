@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Bilgisayarınız zaten kayıtlı
 
-Bilgisayarınızın zaten kayıtlı olduğunu bildiren bir hata alırsanız, bilgisayarınız zaten Şirket Portalı’na eklenmiştir ama henüz kullanıcı hesabınıza bağlanmamıştır. Bilgisayarınızı kullanıcı hesabınıza bağlamak ve işlemi tamamlamak için bu yordamı izleyin.
+Bilgisayarınızın zaten kayıtlı olduğunu bildiren bir hata alırsanız, bilgisayarınız zaten Şirket Portalı’na eklenmiştir ama henüz kullanıcı hesabınıza bağlanmamıştır. Bilgisayarınızı kullanıcı hesabınıza bağlamak ve işlemi tamamlamak için bu yordamı izleyin.  
 
 Bilgisayarınızı bağlamak için:
 
@@ -38,8 +38,10 @@ Bilgisayarınızı bağlamak için:
 
 3.  Bilgisayarı kullanıcı hesabınıza bağlama yönergelerini izleyin.
 
-Yardıma ihtiyacınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Cihazınızın kaydını kaldırmayı tercih ederseniz, cihaz türünüze yönelik yönergeleri kullanın: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) veya [Windows](unenroll-your-device-from-intune-windows.md).
 
-<!--HONumber=Jun16_HO1-->
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+
+<!--HONumber=Jun16_HO2-->
 
 

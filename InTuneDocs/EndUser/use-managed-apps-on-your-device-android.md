@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,22 +66,22 @@ BT yöneticinizin bir uygulamada yönetebileceği ve cihazınızdaki şirket ver
 
 BT bölümünüzün yönetebileceği bazı ortak uygulamalar şunlardır:
 
--   Yönetilen web tarayıcısı
+-   Intune Yönetilen Tarayıcı
 
--   Yönetilen resim görüntüleyici
+-   Intune image Viewer
 
--   Yönetilen PDF görüntüleyici
+-   Intune PDF Görüntüleyicisi
 
--   Yönetilen AV player
+-   Intune AV player
 
 -   Microsoft Word, Excel, PowerPoint
 
-Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöneticinizle iletişim kurun. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöneticinizle iletişim kurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

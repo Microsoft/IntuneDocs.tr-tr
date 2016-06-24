@@ -44,11 +44,11 @@ Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve c
 
 Kaydın nasıl silineceği hakkında yönergeler için bkz. [Şirket Portalı uygulamasını kullanarak cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md).
 
-Sorularınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme
 
-Android cihazınızda okul veya şirket uygulamalarınızla çalışırken hata alırsanız, BT yöneticinizin hatayı anlamasına ve gidermesine yardımcı olmak için tanılama veri günlüklerini gönderebilirsiniz. BT yöneticinizin sorunu anlamasını kolaylaştıracak şekilde günlüklere tüm ayrıntıların eklenmesi için, Ayrıntılı Günlük özelliğini açın.
+Android cihazınızda okul veya şirket uygulamalarınızla çalışırken hata alırsanız, BT yöneticinizin hatayı anlamasına ve gidermesine yardımcı olmak için tanılama veri günlüklerini gönderebilirsiniz. BT yöneticinizin sorunu anlamasını kolaylaştıracak şekilde günlüklere tüm ayrıntıların eklenmesi için, Ayrıntılı Günlük özelliğini açın. [ayrıntılı günlük kaydı](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) hakkında daha fazla bilgi edinebilirsiniz.
 
 Ayrıntılı günlük özelliğini açmak için:
 
@@ -54,6 +54,6 @@ Ayrıntılı günlük özelliğini açmak için:
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ ms.suite: ems
 
 -   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz
 
-Android cihazınızı eklediğinizde, BT yöneticinize cihazınıza erişim hakkı vermiş olursunuz. Yönetici cihazda şu gibi şeyler yapabilir:
+Android cihazınızı kaydettiğinizde, BT yöneticinize cihazınıza erişim hakkı vermiş olursunuz. Yönetici cihazda şu gibi şeyler yapabilir:
 
 -   Cihazınızı üretici varsayılan ayarlarına geri döndürebilir. Cihaz çalındıysa veya kaybolduysa bu yararlıdır.
 
@@ -60,11 +60,11 @@ Android cihazınızı eklediğinizde, BT yöneticinize cihazınıza erişim hakk
 
     -   Tüm şirket uygulaması envanteri güncelleştirmelerini (bu güncelleştirmeler kişisel bilgi içermez) gönderebilir.
 
-Sorularınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -31,7 +31,7 @@ Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarınd
 
 ## Genel yapılandırma ilkesi ayarları
 
-Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarlarını yapılandırmak isterseniz, Windows 10 için Microsoft Intune **genel yapılandırma ilkesini** kullanın:
+Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarlarını yapılandırmak isterseniz, Windows 10 için Microsoft Intune **genel yapılandırma ilkesini** kullanın. Windows 10 bilgisayarlarını Intune istemci yazılımıyla yönetirken bu ilkeyi kullanamazsınız.
 
 
 ### Parola
@@ -332,6 +332,6 @@ Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kay
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

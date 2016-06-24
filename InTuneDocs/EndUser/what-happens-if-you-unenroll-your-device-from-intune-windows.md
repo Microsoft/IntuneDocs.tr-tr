@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Cihazınızın Intune kaydını sildiğinizde ne olur?
 
-Şirket Portalı uygulamasını cihazınızdan kaldırdığınızda, cihazınızın Intune kaydı da kaldırılır. Neler olduğu hakkında ek bilgi için, yukarıdaki “Bu Makalede” bölümünde gösterilen ve kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın.
+Neler olduğu hakkında ek bilgi için, yukarıdaki “Bu Makalede” bölümünde gösterilen ve kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın.
 
 - [Windows 10 mobil, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 veya Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -92,11 +92,11 @@ Windows RT cihazınızı kaldırdığınızda şunlar olur:
 
 -   Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.
 
-Sorularınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

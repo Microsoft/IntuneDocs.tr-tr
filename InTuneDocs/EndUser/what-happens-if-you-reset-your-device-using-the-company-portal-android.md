@@ -36,11 +36,11 @@ Samsung Knox cihazınız varsa, Şirket Portalı’ndan **cihaz kaldırma** seç
 - E-posta, VPN ve WiFi
 - BT yöneticinizin bazı ayarları zorunlu tutma becerisi
 
-Sorularınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

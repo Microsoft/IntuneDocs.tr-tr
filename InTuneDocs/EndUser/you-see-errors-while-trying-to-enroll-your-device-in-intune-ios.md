@@ -28,11 +28,11 @@ ms.suite: ems
 
 # iOS cihazınızı Intune’a kaydetmeye çalışırken hata görüyorsunuz
 
-Aşağıdaki tabloda iOS cihazlarınızı Intune’a kaydederken görebileceğiniz hatalar listelenmektedir. Bu bağlantıyı BT yöneticinizle paylaşın. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Aşağıdaki tabloda iOS cihazlarınızı Intune’a kaydederken görebileceğiniz hatalar listelenmektedir. Bu bağlantıyı BT yöneticinizle paylaşın. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 |Hata iletisi|Sorun|BT yöneticinize söylemeniz gerekenler|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|DeviceCapReached|Daha önce çok fazla sayıda mobil cihaz kaydettiniz.|Kullanıcı başka bir cihaz kaydetmeden önce o anda Şirket Portalı’na kayıtlı mobil cihazlarından birini kaldırmalıdır.|
+|DeviceCapReached|Daha önce çok fazla sayıda mobil cihaz kaydettiniz.|Kullanıcı başka bir cihaz kaydetmeden önce o anda Şirket Portalı’na kayıtlı mobil cihazlarından birini kaldırmalıdır. Kullanmakta olduğunuz cihaz türüne yönelik yönergelere bakın: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios), [Windows](unenroll-your-device-from-intune-windows).|
 |APNSCertificateNotValid|Mobil cihazınızın şirket ağınızla iletişim kurmasına imkan tanıyan sertifika ile ilgili bir sorun var.<br /><br />IT yöneticilerinize başvurun ve mobil cihazınızı kaydederken **APNSCertificateNotValid** iletisini aldığınızı ve bu tablodaki çözüme bakmalarını söyleyin.|Apple Anında İletilen Bildirim Servisi (APNS) kayıtlı iOS cihazlara ulaşmak için bir kanal sağlar. APNS sertifikasını alma adımları uygulanmadıysa veya APNS sertifikasının süresi dolduysa kayıt denemeleri başarısız olur ve bu ileti görüntülenir.<br /><br />[Active Directory’yi eşitleme ve Intune’a kullanıcıları ekleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ve [Kullanıcıları ve cihazları düzenleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) konu başlıkları altında kullanıcıları ayarlamayla ilgili bilgileri gözden geçirin.|
 |AccountNotOnboarded|Mobil cihazınızın şirket ağınızla iletişim kurmasına imkan tanıyan sertifika ile ilgili bir sorun var.<br /><br />IT yöneticilerinize başvurun ve mobil cihazınızı kaydederken **APNSNotOnboarded** iletisini aldığınızı ve bu tablodaki çözüme bakmalarını söyleyin.|Apple Anında İletilen Bildirim Servisi (APNS) kayıtlı iOS cihazlara ulaşmak için bir kanal sağlar. APNS sertifikasını alma adımları uygulanmadıysa veya APNS sertifikasının süresi dolduysa kayıt denemeleri başarısız olur ve bu ileti görüntülenir.<br /><br />Daha fazla bilgi için, [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](/Intune/Deployuse/set-up-ios-and-mac-management-with-microsoft-intune) konusunu gözden geçirin.|
 |DeviceTypeNotSupported|iOS olmayan bir cihaz kullanarak kaydolmayı denediniz. Kaydetmeye çalıştığınız mobil cihaz türü desteklenmemektedir.<br /><br />Cihazınızın iOS sürüm 7.1 veya üzerini çalıştırdığından emin olun.<br /><br />IT yöneticilerinize başvurun ve mobil cihazınızı kaydederken **DeviceTypeNotSupported** iletisini aldığınızı ve bu tablodaki çözüme bakmalarını söyleyin.|Kullanıcı cihazının iOS sürüm 7.1 veya üzerini çalıştırdığından emin olun.|
@@ -42,6 +42,6 @@ Aşağıdaki tabloda iOS cihazlarınızı Intune’a kaydederken görebileceğin
 ### Ayrıca bkz.
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

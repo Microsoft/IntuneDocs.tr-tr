@@ -125,12 +125,12 @@ Bir bilgisayarı eklediğinizde:
 
 -   BT yöneticiniz bilgisayarınızda ilkelerin uygulanmasını şart koşabilir. Örneğin, çok sayıda hatalı parola girişi yapıldığında, bilgisayardan çıkmanıza yol açabilecek bir parola veya PIN kodu ayarlamanız veya bilgisayarınızın sabit sürücüsündeki tüm bilgileri silmeniz gerekebilir.
 
-Sorularınız varsa ve BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/20/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,21 +32,21 @@ Android telefonunuz çalındıysa veya kaybolduysa, Şirket Portalı uygulaması
 
 Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için, bkz. [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] Cihazı fabrika varsayılanlarına sıfırlamak hem kişisel hem de iş ile ilgili bilgilerinizi cihazdan kaldırır.
+> [!WARNING] Cihaz fabrika varsayılanlarına sıfırlandığında hem kişisel hem de iş veya okul ile ilgili bilgileriniz cihazdan kaldırılır.
 
-1.  Tarayıcınızda [Şirket Portalı web sitesi](http://portal.manage.microsoft.com)’ni açın iş hesabınızda oturum açın.
+1.  Tarayıcınızda [Şirket Portalı web sitesi](http://portal.manage.microsoft.com)’ni açıp iş veya okul hesabınızda oturum açın.
 
 2.  **Cihazlarım**’a dokunun ve kaybolan veya çalınan cihazın adını seçin.
 
 3.  **Sıfırla** &gt; **Sıfırla**’ya tıklayın.
 
-Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin. BT yöneticinizin iletişim bilgilerini bulamıyorsanız, [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) listelenmiş olup olmadığına bakın.
+Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

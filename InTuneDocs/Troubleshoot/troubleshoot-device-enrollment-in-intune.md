@@ -144,29 +144,6 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 **Çözüm:** AD FS 2.0 aracılığıyla çoklu oturum açmayı (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, @contoso.com veya @fabrikam.com) Microsoft Office 365 müşterilerinin, her sonek için ayrı AD FS 2.0 Federasyon Hizmeti örneği dağıtmaları gerekir.  Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, **SupportMultipleDomain** anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu bloga](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
 
-### Makine zaten kaydoldu - Hata hr 0x8007064c
-**Sorun:** Kayıt işlemi **Makine zaten kaydoldu** hatasıyla başarısız oluyor. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.
-  
-Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilgisayarın kopyalanmış görüntüsünü içermesi olabilir. Önceki hesabın hesap sertifikası hala bilgisayarda duruyordur.
-
-
-
-**Çözüm:** 
-
-1. **Başlat** menüsünde **Çalıştır** -> **MMC**. 
-1. **Dosya** -> **Ek Bileşen Ekle/Kaldır**.
-1. **Sertifikalar**’a çift tıklayın, **Bilgisayar hesabı**’nı, **İleri**’yi ve **Yerel Bilgisayar**’ı seçin.
-1. **Sertifikalar (Yerel bilgisayar)** seçeneğine çift tıklayın, **Kişisel/ Sertifikalar**’ı seçin. 
-1. Sc_Online_Issuing tarafından verilen Intune sertifikasını arayın ve bulursanız silin
-1. Varsa, şu kayıt defteri anahtarını ve tüm alt anahtarlarını silin: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
-1. Yeniden kaydetmeyi deneyin. 
-1. Makine yine kaydedilmiyorsa, şu anahtarı arayın ve bulursanız silin: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Yeniden kaydetmeyi deneyin. 
-
-    > [!IMPORTANT]
-    > Bu bölüm, yöntem veya görev kayıt defterinde nasıl değişiklik yapacağınızı gösteren adımlar içerir. Bununla birlikte, kayıt defterinde yanlış değişiklikler yaparsanız ciddi sorunlar çıkabilir. Bu nedenle, bu adımları dikkatle izlediğinizden emin olun. Ek bir koruma için, değişiklikleri yapmadan önce kayıt defterini yedekleyin. Böylece bir sorun ortaya çıktığında kayıt defterini geri yükleyebilirsiniz.
-    > Kayıt defterini yedekleme ve geri yükleme hakkında daha fazla bilgi için, [Windows’da kayıt defterini yedekleme ve geri yükleme](https://support.microsoft.com/en-us/kb/322756) konusunu okuyun.
-
 
 ## Android sorunları
 ### Profil yüklemesi başarısız oldu
@@ -248,6 +225,31 @@ Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilg
 
 ### Diğer iOS kayıt hataları
 iOS kayıt hatalarının bir listesi, cihaz-kullanıcı belgelerimizdeki [Cihazınızı Intune'a kaydetmeye çalışırken hatalar görüyorsunuz](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) bölümünde verilmiştir.
+
+## PC Sorunları
+
+### Makine zaten kaydoldu - Hata hr 0x8007064c
+**Sorun:** Kayıt işlemi **Makine zaten kaydoldu** hatasıyla başarısız oluyor. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.
+  
+Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilgisayarın kopyalanmış görüntüsünü içermesi olabilir. Önceki hesabın hesap sertifikası hala bilgisayarda duruyordur.
+
+
+
+**Çözüm:** 
+
+1. **Başlat** menüsünde **Çalıştır** -> **MMC**. 
+1. **Dosya** -> **Ek Bileşen Ekle/Kaldır**.
+1. **Sertifikalar**’a çift tıklayın, **Bilgisayar hesabı**’nı, **İleri**’yi ve **Yerel Bilgisayar**’ı seçin.
+1. **Sertifikalar (Yerel bilgisayar)** seçeneğine çift tıklayın, **Kişisel/ Sertifikalar**’ı seçin. 
+1. Sc_Online_Issuing tarafından verilen Intune sertifikasını arayın ve bulursanız silin
+1. Varsa, şu kayıt defteri anahtarını ve tüm alt anahtarlarını silin: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
+1. Yeniden kaydetmeyi deneyin. 
+1. Makine yine kaydedilmiyorsa, şu anahtarı arayın ve bulursanız silin: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Yeniden kaydetmeyi deneyin. 
+
+    > [!IMPORTANT]
+    > Bu bölüm, yöntem veya görev kayıt defterinde nasıl değişiklik yapacağınızı gösteren adımlar içerir. Bununla birlikte, kayıt defterinde yanlış değişiklikler yaparsanız ciddi sorunlar çıkabilir. Bu nedenle, bu adımları dikkatle izlediğinizden emin olun. Ek bir koruma için, değişiklikleri yapmadan önce kayıt defterini yedekleyin. Böylece bir sorun ortaya çıktığında kayıt defterini geri yükleyebilirsiniz.
+    > Kayıt defterini yedekleme ve geri yükleme hakkında daha fazla bilgi için, [Windows’da kayıt defterini yedekleme ve geri yükleme](https://support.microsoft.com/en-us/kb/322756) konusunu okuyun.
 
 ## Genel kayıt hata kodları
 
