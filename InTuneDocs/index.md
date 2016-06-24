@@ -21,7 +21,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
     <section id="hero-content">
       <h1>Microsoft Intune Belgeleri</h1>
       <h2>Bir mobil cihaz ve uygulama yönetim hizmeti olan Microsoft Intune’u nasıl dağıtıp yöneteceğinizi öğrenin.</h2>
-      <h3>Intune’u Configuration Manager ile yönetme? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">Configuration Manager Belgelerini görüntüleme &rarr;</a></h3>
+      <h3>Intune’u Configuration Manager ile yönetme? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Configuration Manager Belgelerini görüntüleme &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Öne Çıkan İçerik</h2>
@@ -280,6 +280,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 </article>
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
