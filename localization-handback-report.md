@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/71077d9f86a53cc66536928e4799fa4b1a51cdf0/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#86d3b7894eca70454fa82393c4d06eab5a99246f45)
+ [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md) | InSyncHandedBackSuccess | [Details](#c089b36676feb4caa7064738d6ef4b709139ab49304)
 
 ## Item Details
+##### <a name='86d3b7894eca70454fa82393c4d06eab5a99246f45'></a> Source: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/71077d9f86a53cc66536928e4799fa4b1a51cdf0/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/cbb7ac3a64d43cf6d941e8a3d28221efc918841b/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
+* Handoff File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/063e6c46be5d3456f6268ec515ca0eb801efc1d1/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf)
+* Handoff Datetime: 2016-06-27 12:04:08
+* Handoff Reason: Include
+* Archive File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/08555ede17c3e0411fbc15f408adec97b69246fb/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf)
+* Archive Datetime: 2016-07-02 01:50:01
+* Handback File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/df378b892cfd693f2e0a8f40bad061efb011a377/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf)
+* Handback Datetime: 2016-07-02 13:21:04
+* [Back to Top](#report-top)
+
+##### <a name='c089b36676feb4caa7064738d6ef4b709139ab49304'></a> Source: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/cbb7ac3a64d43cf6d941e8a3d28221efc918841b/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md)
+* Handoff File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/063e6c46be5d3456f6268ec515ca0eb801efc1d1/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf)
+* Handoff Datetime: 2016-06-27 12:04:08
+* Handoff Reason: Include
+* Archive File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/08555ede17c3e0411fbc15f408adec97b69246fb/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf)
+* Archive Datetime: 2016-07-02 01:50:01
+* Handback File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/df378b892cfd693f2e0a8f40bad061efb011a377/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf)
+* Handback Datetime: 2016-07-02 13:21:04
+* [Back to Top](#report-top)
+
 
 ## Error Details
 

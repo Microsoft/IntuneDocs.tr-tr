@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 9
 [ Handback Failed Files ](#handback-failed-list)| 39
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 584
-[ In Sync Handback Files ](#insync-handback-success-list)| 179
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 582
+[ In Sync Handback Files ](#insync-handback-success-list)| 181
 [ Ignored Files ](#ignored-list)| 224
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -345,7 +345,6 @@
  [InTuneDocs\DeployUse\find-a-pfn-for-per-app-vpn.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e32cbcd54220cf36d6770ee16897d27e1d2d71db/InTuneDocs/DeployUse/find-a-pfn-for-per-app-vpn.md) | OutofSyncHandedBackSuccess | [Details](#21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae42)
  [InTuneDocs\DeployUse\get-notified-by-alerts.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e929a95d95b71e22d46e124f1a423af7046b0539/InTuneDocs/DeployUse/get-notified-by-alerts.md) | OutofSyncHandedBackSuccess | [Details](#f1dd166b7b1278003ac8785b8be07c29396dfe8c43)
  [InTuneDocs\DeployUse\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0a38b0ef301559209acab0611cfe3da69b468ff7/InTuneDocs/DeployUse/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#36a814c250b70d8743b4209b87f7e78dfaa4539144)
- [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/71077d9f86a53cc66536928e4799fa4b1a51cdf0/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#86d3b7894eca70454fa82393c4d06eab5a99246f45)
  [InTuneDocs\DeployUse\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/496679a196dc3e84c6b16ad0d3b830c81f12631b/InTuneDocs/DeployUse/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#7bbd761b13f110297959a036ec15cafe1396377e46)
  [InTuneDocs\DeployUse\help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#9f338efe3ef40da3db40c12d1a18c4122e65dc5d47)
  [InTuneDocs\DeployUse\help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9b96e6c49ec9122961588156d77bf94cdbccd787/InTuneDocs/DeployUse/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#b1b1cc90672903ac0336151373272b5e20e5616548)
@@ -511,7 +510,6 @@
  [InTuneDocs\EndUser\existing-company-email-account-found.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/existing-company-email-account-found.md) | OutofSyncHandedBackSuccess | [Details](#02a07a6017ed2bb569dd9d3756f84b7b8078f630301)
  [InTuneDocs\EndUser\how-do-i-find-the-serial-number-on-my-device-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-do-i-find-the-serial-number-on-my-device-ios.md) | OutofSyncHandedBackSuccess | [Details](#afd6c6c12c76f5bf8f561f062df65a625cc19a3d302)
  [InTuneDocs\EndUser\how-to-encrypt-your-windows-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-encrypt-your-windows-device.md) | OutofSyncHandedBackSuccess | [Details](#8291a96487ee84ce0214d7054236941c3cf37a6d303)
- [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md) | OutofSyncHandedBackSuccess | [Details](#c089b36676feb4caa7064738d6ef4b709139ab49304)
  [InTuneDocs\EndUser\how-to-reconnect-a-compromised-ios-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-ios-device.md) | OutofSyncHandedBackSuccess | [Details](#4b83e426e440928fea5308223764716a4ee77456305)
  [InTuneDocs\EndUser\how-to-set-the-period-before-your-android-device-is-locked.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-set-the-period-before-your-android-device-is-locked.md) | OutofSyncHandedBackSuccess | [Details](#00fca8673ff1b52535fb6c06a02b38b7879f204f306)
  [InTuneDocs\EndUser\install-and-sign-in-to-the-intune-company-portal-app-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/install-and-sign-in-to-the-intune-company-portal-app-ios.md) | OutofSyncHandedBackSuccess | [Details](#d59ee373d4b5b90442bdf0a282cf37e76c013e44308)
@@ -893,6 +891,7 @@
 ## <a name='insync-handback-success-list'></a> In Sync Handback File Success List
  Source File | Status | Details 
  ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/71077d9f86a53cc66536928e4799fa4b1a51cdf0/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#86d3b7894eca70454fa82393c4d06eab5a99246f45)
  [InTuneDocs\DeployUse\media\AzurePortal_MAM_AddingPolicyNotification.png](https://github.com/Microsoft/IntuneDocs-pr/blob/5aa7c22cfcc25a19ba3649840b267261d0f4ffd8/InTuneDocs/DeployUse/media/AzurePortal_MAM_AddingPolicyNotification.png) | InSyncHandedBackSuccess | [Details](#ebf6bb2ff4fcbc499ac9d4a7a965387574ed8c88102)
  [InTuneDocs\DeployUse\media\AzurePortal_MAM_AddPolicy_only.png](https://github.com/Microsoft/IntuneDocs-pr/blob/5aa7c22cfcc25a19ba3649840b267261d0f4ffd8/InTuneDocs/DeployUse/media/AzurePortal_MAM_AddPolicy_only.png) | InSyncHandedBackSuccess | [Details](#c8d451276ca8c9f70260bd38c2648fe9b6490275104)
  [InTuneDocs\DeployUse\media\AzurePortal_MAM_AddRole.png](https://github.com/Microsoft/IntuneDocs-pr/blob/5aa7c22cfcc25a19ba3649840b267261d0f4ffd8/InTuneDocs/DeployUse/media/AzurePortal_MAM_AddRole.png) | InSyncHandedBackSuccess | [Details](#30e17a1ae02f8a5658bd353d375ebd447e10f5c7105)
@@ -929,6 +928,7 @@
  [InTuneDocs\DeployUse\understand-your-devices-with-inventory-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/understand-your-devices-with-inventory-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#55b99e326e4f22aee62b207eb2e976a8d52e70c3248)
  [InTuneDocs\DeployUse\windows-team-configuration-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/windows-team-configuration-policy-settings-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#b08d52289b94429b1328a7470469a7efdf4d46a7265)
  [InTuneDocs\DeployUse\wipe-managed-company-app-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/wipe-managed-company-app-data-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#ebc83611679f5128df45e4ca6b2f3b745f47061d267)
+ [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md) | InSyncHandedBackSuccess | [Details](#c089b36676feb4caa7064738d6ef4b709139ab49304)
  [InTuneDocs\EndUser\media\and-enroll-2-cp-sign-in.png](https://github.com/Microsoft/IntuneDocs-pr/blob/59cb9c26f96352831d7190ea50e4d7c48c16d4f9/InTuneDocs/EndUser/media/and-enroll-2-cp-sign-in.png) | InSyncHandedBackSuccess | [Details](#e256cb6a104706c8e1d861dc565b88abb00e6652322)
  [InTuneDocs\EndUser\media\and-enroll-3-accept-terms.png](https://github.com/Microsoft/IntuneDocs-pr/blob/59cb9c26f96352831d7190ea50e4d7c48c16d4f9/InTuneDocs/EndUser/media/and-enroll-3-accept-terms.png) | InSyncHandedBackSuccess | [Details](#e9fd27ac80a101d2e8b5bbd65249913b45111a16323)
  [InTuneDocs\EndUser\media\ios-sync-1-comp-portal-apps.png](https://github.com/Microsoft/IntuneDocs-pr/blob/b3acbff3298f713674640eeb09d0ecf7845706ae/InTuneDocs/EndUser/media/ios-sync-1-comp-portal-apps.png) | InSyncHandedBackSuccess | [Details](#d8af5ef230df2c7112247a21ab7a8047bbb527db376)
@@ -1900,15 +1900,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='86d3b7894eca70454fa82393c4d06eab5a99246f45'></a> Source: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/71077d9f86a53cc66536928e4799fa4b1a51cdf0/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/c2685df05082f6829872ec4cc0361be4bd6c2c10/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\get-ready-to-enroll-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/cbb7ac3a64d43cf6d941e8a3d28221efc918841b/InTuneDocs/DeployUse/get-ready-to-enroll-devices-in-microsoft-intune.md)
 * Handoff File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/063e6c46be5d3456f6268ec515ca0eb801efc1d1/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf)
 * Handoff Datetime: 2016-06-27 12:04:08
 * Handoff Reason: Include
 * Archive File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/08555ede17c3e0411fbc15f408adec97b69246fb/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf)
 * Archive Datetime: 2016-07-02 01:50:01
-* Handback File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/1f227a808dff7647c42b22453489ff7a1a1cea9e/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf)
-* Handback Datetime: 2016-06-16 16:08:46
+* Handback File: [get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/df378b892cfd693f2e0a8f40bad061efb011a377/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/get-ready-to-enroll-devices-in-microsoft-intune.1c1d777cd24a140ea97642e8404647eb99f16625.tr-tr.xlf)
+* Handback Datetime: 2016-07-02 13:21:04
 * [Back to Top](#report-top)
 
 ##### <a name='7bbd761b13f110297959a036ec15cafe1396377e46'></a> Source: [InTuneDocs\DeployUse\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/496679a196dc3e84c6b16ad0d3b830c81f12631b/InTuneDocs/DeployUse/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
@@ -5244,15 +5244,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='c089b36676feb4caa7064738d6ef4b709139ab49304'></a> Source: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/1c917354703ae532451e11b001ff5984f83e7a93/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/cbb7ac3a64d43cf6d941e8a3d28221efc918841b/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md)
 * Handoff File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/063e6c46be5d3456f6268ec515ca0eb801efc1d1/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf)
 * Handoff Datetime: 2016-06-27 12:04:08
 * Handoff Reason: Include
 * Archive File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/08555ede17c3e0411fbc15f408adec97b69246fb/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf)
 * Archive Datetime: 2016-07-02 01:50:01
-* Handback File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/2a9b25e73ef4a1af1e6465e053b77f9dec92fb13/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf)
-* Handback Datetime: 2016-06-17 12:29:03
+* Handback File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/df378b892cfd693f2e0a8f40bad061efb011a377/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.tr-tr.xlf)
+* Handback Datetime: 2016-07-02 13:21:04
 * [Back to Top](#report-top)
 
 ##### <a name='4b83e426e440928fea5308223764716a4ee77456305'></a> Source: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-ios-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-ios-device.md)
