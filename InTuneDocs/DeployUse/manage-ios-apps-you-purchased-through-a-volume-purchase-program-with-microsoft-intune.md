@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Toplu satın alma programıyla satın aldığınız iOS uygulamalarını yönetme | Microsoft Intune
-description:
-keywords:
+title: "Toplu satın alma programıyla satın aldığınız iOS uygulamalarını yönetme | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Bir lisansı geri kazanmak için dağıtım eylemini **Kaldır** olarak değişt
 
 Uygun cihaza sahip bir kullanıcı ilk olarak bir VPP uygulaması yüklemeye çalıştığında kullanıcıdan Apple Toplu Satın Alma programına katılması istenir. Uygulama yüklemesi devam etmeden önce bunu yapmaları gerekir.
 
-> [!TIP] Uygulamanın dağıtıldığı her kullanıcının kabul durumunu görmek için **VPP Koşulları Durumu** sütununa bakın.
+> [!TIP]
+> Uygulamanın dağıtıldığı her kullanıcının kabul durumunu görmek için **VPP Koşulları Durumu** sütununa bakın.
 
 Başka bir lisans yoksa dağıtım başarısız olur.
 
 ## Apple VPP uygulamalarını izlemek için
 Hangi VPP uygulamalarının dağıtıldığını ve kaç tane lisansın kullanıldığını **Yönetilen Yazılım** &gt; **Toplu Satın Alma Uygulamaları** düğümündeki **Uygulamalar** çalışma alanından izleyebilirsiniz.
 
-> [!TIP] Her uygulama yüklemesinin durumunu incelemek için uygulama **Filtrelerini** de kullanabilirsiniz.
+> [!TIP]
+> Her bir uygulama yüklemesinin durumunu incelemek için uygulama **Filtreleri**’ni de kullanabilirsiniz.
 
-### Ayrıca bkz:
+### Ayrıca bkz.
 [Microsoft Intune'da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

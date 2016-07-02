@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune ile Windows 10 Mobile ve Windows Phone yönetimini ayarlama | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune ile Windows 10 Mobile ve Windows Phone yönetimini ayarlama | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
+ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+
 
 ---
 
@@ -61,6 +55,7 @@ Windows 10 Mobile veya Windows Phone cihazlarını Microsoft Intune’la yönete
 Cihazlara Şirket Portalı’nı dağıtmayacaksanız, başka bir işlem yapmak gerekmez.  Yönetim konsolundaki 2. ve 3. adımlar rahatça yoksayılabilir.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

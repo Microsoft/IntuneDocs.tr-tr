@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows bilgisayarı yazılımları için lisans sözleşmelerini yönetme | Microsoft Intune
-description:
-keywords:
+title: "Windows bilgisayarı yazılımları için lisans sözleşmelerini yönetme | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 575b8525b8b99d06358a911b8deb24ee5de48fe1
+
 
 ---
 
@@ -45,7 +39,8 @@ Intune yönetim konsolunun **Lisanslar** çalışma alanında şunları yapabili
 
 Buna ek olarak, yazılım başlıkları için yükleme ve lisans sayılarını gösteren lisans raporları da oluşturabilirsiniz. Lisans raporları, Microsoft yazılımı ve Microsoft olmayan yazılım başlıkları için tam lisans konumunuzu değerlendirmenize yardımcı olabilir.
 
-> [!TIP] **Lisanslar** çalışma alanının yönetici konsolunda gösterilmesi için, Intune Windows bilgisayar istemcisiyle en az bir Windows bilgisayarını yönetmeniz gerekir.
+> [!TIP]
+> **Lisanslar** çalışma alanının yönetici konsolunda gösterilmesi için, Intune Windows bilgisayar istemcisiyle en az bir Windows bilgisayarını yönetmeniz gerekir.
 
 ## Microsoft Toplu Lisanslama sözleşmelerini ekleme
 Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri ile satın alınan yazılımlar için lisans bilgileri sağlar. Eşleşen anlaşma numarası çiftleri sağlayarak Intune’a Microsoft Toplu Lisanslama anlaşmaları ekleyebilirsiniz. Sözleşme veya yetkilendirme sayıları, doğru lisans ya da kayıt sayılarıyla eşleşmelidir. [Toplu Lisanslama Hizmet Merkezi (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)içinden lisans sözleşmelerini satın aldığınızda anlaşma numarası çiftleri elde edilir.
@@ -96,7 +91,8 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
         -   **Lisans/Kayıt/Müşteri numarası** - Lisans çiftinin lisans/kayıt/müşteri numarasını girin.
 
-        > [!NOTE] Birkaç anlaşma numarası çifti eklerseniz, Intune belirttiğiniz adla tek bir anlaşma oluşturur ve eklediğiniz tüm çiftler bu anlaşmanın bir parçası olur.
+        > [!NOTE]
+        > Birkaç anlaşma numarası çifti eklerseniz, Intune belirttiğiniz adla tek bir anlaşma oluşturur ve eklediğiniz tüm çiftler bu anlaşmanın bir parçası olur.
 
     Başka bir anlaşma numarası çift eklemek için **+** öğesine veya daha önce girdiğiniz bir anlaşma numarası çiftini kaldırmak için **-** öğesine tıklayabilirsiniz.
 
@@ -114,7 +110,8 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
 Intune’da lisans sözleşmelerini ekledikten sonra toplu lisans bilgilerini güncelleştirmek için, **Lisanslara Genel Bakış** sayfasında **Şimdi Yenile**‘ye tıklayın. Bu eylem, [Microsoft Toplu Lisanslama Hizmet Merkezi (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)içinden geçerli lisans bilgilerini alır.
 
-> [!IMPORTANT] Toplu lisanslama bilgilerini yenileyinceye kadar, **Anlaşmalara Genel Bakış** sayfasında yetkilendirme bilgilerini ve anlaşma listesinde farklı bilgiler görebilirsiniz.
+> [!IMPORTANT]
+> Toplu lisanslama bilgilerini yenileyinceye kadar, **Anlaşmalara Genel Bakış** sayfasında yetkilendirme bilgilerini ve anlaşma listesinde farklı bilgiler görebilirsiniz.
 
 Toplu lisans bilgilerini yeniledikten sonra lisans bilgilerini, **Uygulamalar** çalışma alanındaki algılanan Microsoft yazılımınızla karşılaştırabilirsiniz. Aşağıdaki lisans raporlarını da çalıştırabilirsiniz:
 
@@ -122,7 +119,8 @@ Toplu lisans bilgilerini yeniledikten sonra lisans bilgilerini, **Uygulamalar** 
 
 -   **Lisans Yükleme Raporları** - Lisans sözleşmenizin kapsamının yeterli olup olmadığını saptamanıza yardımcı olur.
 
-> [!NOTE] Tüm Microsoft Toplu Lisans anlaşmaları için görüntülenen **Ürün Başlığı** **Kullanılamaz** sözcüğüdür.
+> [!NOTE]
+> Tüm Microsoft Toplu Lisans anlaşmaları için görüntülenen **Ürün Başlığı** **Kullanılamaz**.
 
 ## Diğer yazılım lisansı anlaşmalarını ekleme ve düzenleme
 Intune’a, Microsoft Toplu Lisanslama sözleşmelerinin yanı sıra, başka türlerde lisans sözleşmeleri de ekleyebilirsiniz. Bu sözleşmeler, bir perakendeciden satın alınan Microsoft olmayan yazılımları veya Microsoft yazılımlarını içerebilir.
@@ -184,6 +182,7 @@ Yazılım lisanslama anlaşmaları, lisans gruplarına eklenebilir. Lisans sözl
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

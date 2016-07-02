@@ -18,9 +18,9 @@
 
 # [Dağıtma ve Kullanma](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
-# [Sorunları Gider](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

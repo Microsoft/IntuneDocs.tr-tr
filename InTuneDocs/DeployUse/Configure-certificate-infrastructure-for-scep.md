@@ -1,26 +1,21 @@
 ---
-title: SCEP için sertifika altyapısını yapılandırma |Microsoft Intune|
-description:
-keywords:
+title: "SCEP için sertifika altyapısını yapılandırma |Microsoft Intune|"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0ca06fa26127935e08f35006730dd367fb8f6669
+ms.openlocfilehash: 942bdc4e1629a9d7e16d0994f27dab4424670a4f
+
 ---
 # SCEP için sertifika altyapısını yapılandırma
 Bu konu başlığı altında, sertifika profillerini oluşturmak ve dağıtmak için hangi altyapıya ihtiyacınız olduğu açıklanır.
@@ -42,7 +37,7 @@ I
  > [!NOTE]           
 > -    WAP'ı barındıran sunucular, Ağ Cihazı Kayıt Hizmeti tarafından kullanılan uzun URL'ler için destek sağlayan [bir güncelleştirmeyi yüklemelidir](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) . Bu güncelleştirmeyi [Aralık 2014 güncelleştirme paketi](http://support.microsoft.com/kb/3013769)ile birlikte veya [KB3011135](http://support.microsoft.com/kb/3011135)güncelleştirmesinden tek başına edinebilirsiniz.
 >-  Ayrıca, WAP’yi barındıran sunucuda, dış istemcilere yayımlanan adla eşleşen bir SSL sertifikası olmalı ve NDES sunucusunda kullanılan SSL sertifikasına güvenilmelidir. Bu sertifikalar, WAP sunucusunun istemcilerden gelen SSL bağlantıyı sonlandırmasına ve NDES sunucusuna yeni bir SSL bağlantı oluşturmasına imkan sağlar.
-WAP sertifikaları hakkında bilgi için, [Web Uygulaması Ara Sunucusu Kullanarak Uygulama Yayınlamayı Planlama](https://technet.microsoft.com/library/dn383650.aspx) konusunun **Sertifikaları planlama** bölümüne bakın. WAP sunucuları hakkında genel bilgi için bkz. [Web Uygulaması Ara Sunucusu ile çalışma](http://technet.microsoft.com/library/dn584113.aspx).|
+    WAP sertifikaları hakkında bilgi için, [Web Uygulaması Ara Sunucusu Kullanarak Uygulama Yayınlamayı Planlama](https://technet.microsoft.com/library/dn383650.aspx) konusunun **Sertifikaları planlama** bölümüne bakın. WAP sunucuları hakkında genel bilgi için bkz. [Web Uygulaması Ara Sunucusu ile çalışma](http://technet.microsoft.com/library/dn584113.aspx).|
 
 ### Ağ gereksinimleri
 
@@ -107,15 +102,18 @@ Bu görevde şunları yapacaksınız:
 
     -   **Uzantılar** sekmesinde, **Uygulama İlkeleri Açıklaması** 'nın **İstemci Kimlik Doğrulaması**'nı içerdiğinden emin olun.
 
-        > [!IMPORTANT] iOS ve Mac OS X sertifika şablonları için, **Uzantılar** sekmesinde **Anahtar Kullanımı**'nı düzenleyin ve **İmza kaynağın delilidir** öğesinin seçili olmadığından emin olun.
+        > [!IMPORTANT]
+        > iOS ve Mac OS X sertifika şablonları için, **Uzantılar** sekmesinde **Anahtar Kullanımı**'nı düzenleyin ve **İmza kaynağın delilidir** öğesinin seçili olmadığından emin olun.
 
     -   **Güvenlik** sekmesinde, NDES hizmet hesabını ekleyin ve bu hesaba şablon üzerinde **Kaydetme** izinleri verin. SCEP profillerini oluşturacak olan Intune yöneticilerinin, SCEP profillerini oluştururken şablona göz atabilmeleri için **Okuma** hakları olmalıdır.
     
-    > [!NOTE] Sertifikaları iptal etmek için, NDES hizmet hesabının sertifika profili tarafından kullanılan her sertifika şablonu üzerinde *Sertifikaları Yayımlama ve Yönetme* hakları olmalıdır.
+    > [!NOTE]
+    > Sertifikaları iptal etmek için, NDES hizmet hesabının sertifika profili tarafından kullanılan her sertifika şablonu üzerinde *Sertifikaları Yayımlama ve Yönetme* hakları olmalıdır.
 
 3.  Şablonun **Genel** sekmesindeki **Geçerlilik süresi** 'ni gözden geçirin. Varsayılan olarak, Intune şablonda yapılandırılan değeri kullanır. Ancak, CA'yı istekte bulunan kişinin farklı bir değer belirtmesine izin verecek şekilde yapılandırma seçeneğiniz vardır ve bu değeri Intune yönetim konsolundan ayarlayabilirsiniz. Her zaman şablondaki değeri kullanmak istiyorsanız, bu adımın geri kalanını atlayın.
 
-    > [!IMPORTANT] iOS ve Mac OS X platformları, yaptığınız diğer yapılandırmalar ne olursa olsun, her zaman şablonda ayarlanan değeri kullanır.
+    > [!IMPORTANT]
+    > iOS ve Mac OS X platformları, yaptığınız diğer yapılandırmalar ne olursa olsun, her zaman şablonda ayarlanan değeri kullanır.
 
 Burada, örnek şablon yapılandırmasının ekran görüntüleri verilmiştir.
 
@@ -260,7 +258,8 @@ Bu görevde şunları yapacaksınız:
 
     3.  **SSL sertifikası**için sunucu kimlik doğrulama sertifikasını belirtin.
 
-        > [!NOTE] NDES sunucusu tek bir ağ adresi için hem iç hem de dış ad kullanıyorsa, sunucu kimlik doğrulama sertifikasının dış genel sunucu adına sahip bir **Konu Adı** ve iç sunucu adını içeren bir **Konu Diğer Adı** olmalıdır.
+        > [!NOTE]
+        > NDES sunucusu tek bir ağ adresi için hem iç hem de dış ad kullanıyorsa, sunucu kimlik doğrulama sertifikasının bir dış genel sunucu adına sahip bir **Konu Adı** ve iç sunucu adını içeren bir **Konu Diğer Adı** olmalıdır.
 
 2.  NDES Sunucunuzda, iç CA'nızdan ya da genel bir sertifika yetkilisinden bir **istemci kimlik doğrulaması** sertifikası isteyin ve yükleyin. Bu sertifika, her iki özelliği de içeriyorsa sunucu kimlik doğrulama sertifikası ile aynı sertifika olabilir.
 
@@ -322,7 +321,8 @@ NDES Sunucusu'nda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandı
 
 4.  Sihirbaz tamamlandıktan sonra, sihirbazı kapatmadan önce, **Sertifika Bağlayıcısı Kullanıcı Arabirimini Başlat**'a tıklayın.
 
-    > [!TIP] Sertifika Bağlayıcısı Kullanıcı Arabirimi'ni başlatmadan sihirbazı kapatırsanız, aşağıdaki komutu çalıştırarak yeniden açabilirsiniz:
+    > [!TIP]
+    > Sertifika Bağlayıcısı Kullanıcı Arabirimi'ni başlatmadan sihirbazı kapatırsanız, aşağıdaki komutu çalıştırarak yeniden açabilirsiniz:
     >
     > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -346,6 +346,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403
 Artık, [Sertifika profillerini yapılandırma](Configure-Intune-certificate-profiles.md) konusunda açıklandığı gibi sertifika profillerinizi yapılandırmaya hazırsınız.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

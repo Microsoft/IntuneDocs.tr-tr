@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: İlke oluşturma ve uygulama yayımlama | Microsoft Intune
-description:
-keywords:
+title: "İlke oluşturma ve uygulama yayımlama | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
+ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+
 
 ---
 
@@ -63,7 +57,8 @@ Aşağıdaki adımlar, bir mobil cihaz yapılandırma ilkesi ve bir Windows bilg
 
     ![admin-console-apps-workspace](./media/apps.png)
 
-    > [!NOTE] **Intune Software Publisher**'ı ilk kez başlattığınızda, uygulama yüklenirken kısa bir gecikme oluşur.
+    > [!NOTE]
+    > **Intune Software Publisher** 'ı ilk kez başlattığınızda, uygulama yüklenirken kısa bir gecikme oluşur.
 
 2.  Güvenlik uyarısını gözden geçirin ve **Çalıştır**'ı seçin.
 
@@ -114,6 +109,7 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 6. adımını tamamlamış
 >[&larr; **Kullanıcıları ve cihazları düzenleme**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Şirket Portalı’nı özelleştirme** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
