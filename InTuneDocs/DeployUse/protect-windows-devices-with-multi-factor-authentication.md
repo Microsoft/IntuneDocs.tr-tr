@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows cihazlarını Multi Factor Authentication ile koruma | Microsoft Intune
-description:
-keywords:
+title: "Windows cihazlarını Multi Factor Authentication ile koruma | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
+ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+
 
 ---
 
@@ -40,7 +34,8 @@ Yukarıda listelenen tüm sunucular, [Windows Server 2012 R2 için Sistem Gereks
 #### Intune ile MFA
 Kuruluşunuzun Active Directory Federasyon Hizmetleri (ADFS) olan bir Active Directory etki alanını içeren şirket içi BT altyapısı varsa, federasyon sunucunuzda MFA'yı yapılandırabilir ve ardından Intune kaydı için MFA’yı etkinleştirebilirsiniz. Intune’da MFA yapılandırarak, kullanıcıların kayıt sırasında bir kez kimlik doğrulamasına, ardından MFA işlemini her seferinde tekrarlamadan olmadan şirket kaynaklarına erişebilmesine olanak sağlarsınız.
 
->[!NOTE] MFA, ADFS sunucusunda kullanıcı başına veya grup başına temelinde gerekli olabilir.  
+>[!NOTE]
+>MFA, ADFS sunucusunda kullanıcı başına veya grup başına temelinde gerekli olabilir.  
 
 #### Intune olmadan MFA
 MFA’yı federasyon sunucunuzda yapılandırır ancak Intune’da kayıt için yapılandırmazsanız, kullanıcıların şirket kaynaklarına erişirken her seferinde MFA’yı kullanmaları gerekir (yalnızca cihaz kaydında değil).
@@ -60,6 +55,7 @@ ADFS'de MFA'yı etkinleştirme hakkında bilgi için bkz. [Hassas Uygulamalar i�
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

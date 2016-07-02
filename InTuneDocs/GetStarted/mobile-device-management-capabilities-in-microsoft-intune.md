@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Mobil cihaz yönetimi özellikleri | Microsoft Intune
-description:
-keywords:
+title: "Mobil cihaz yönetimi özellikleri | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+
 
 ---
 # Microsoft Intune'da mobil cihaz yönetimi özellikleri
@@ -66,13 +60,14 @@ Yönetim, envanter, uygulama dağıtımı, sağlama ve kullanımdan kaldırma, I
 
 |Özellik|Ayrıntılar|Daha fazla bilgi|
 |--------------|-----------|--------------------|
-|Envanter ve raporlama|Yönettiğiniz cihazlar ve kullandıkları yazılım hakkında bilgiler bulun.|[Microsoft Intune’da envanterle cihazlarınızı anlama](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|Envanter ve raporlama|Yönettiğiniz cihazlar ve kullandıkları yazılım hakkında bilgiler bulun.|[Microsoft Intune’da envanterle cihazlarınızı anlama](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
 ### Ayrıca bkz.
-[Microsoft Intune'da Windows bilgisayarı yönetim özellikleri](./windows-pc-management-capabilities-in-microsoft-intune.md)
+[Microsoft Intune'da Windows bilgisayarı yönetim özellikleri](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

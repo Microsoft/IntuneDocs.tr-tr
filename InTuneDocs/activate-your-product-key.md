@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Ürün Anahtarınızı Etkinleştirme | Microsoft Intune
-description:
-keywords:
+title: "Ürün Anahtarınızı Etkinleştirme | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 844c2ca8-2721-4f72-b1dd-be9b1da1f220
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d575d77a5f951311dc0d94abc96767952111b146
+
 
 ---
 
@@ -35,7 +29,8 @@ Bir abonelik almak veya mevcut bir aboneliğe kullanıcı eklemek için bir ür�
 
 -   Bir Enterprise Mobility Suite ürün anahtarını etkinleştiriyorsanız [buraya](http://www.microsoft.com/ems/open) gidin.
 
-> [!NOTE] Ürün anahtarınızı kaybederseniz, anahtarı satın aldığınız iş ortağına veya satıcıya başvurun.
+> [!NOTE]
+> Ürün anahtarınızı kaybederseniz, anahtarı satın aldığınız iş ortağı veya satıcıya başvurun.
 
 ## System Center Configuration Manager Yazılımınızı İndirin
 System Center Configuration Manager yazılımını indirmek için [Toplu Lisans Hizmet Merkezi](http://go.microsoft.com/fwlink/?LinkID=232300)’ne gidin.
@@ -56,6 +51,7 @@ System Center Configuration Manager yazılımını indirmek için [Toplu Lisans 
 |**Ne yazık ki siparişinizi işleyemiyoruz**.|Kiracı oluşturuldu fakat ürün anahtarları kullanılmadı. Ürün anahtarlarınızı yukarıda verilen bağlantıyla yeniden kullanmayı deneyin. Sorun devam ederse lütfen [Desteğe](http://go.microsoft.com/fwlink/?LinkID=394189) başvurun.|
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune Uygulama SDK'sına Genel Bakış | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune Uygulama SDK'sına Genel Bakış | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+
 
 ---
 
@@ -53,7 +47,7 @@ BT yöneticileri, bağlantılar Intune ile yönetilen uygulamaların içinden a�
 BT yöneticileri, Intune ile yönetilen bir uygulama başlatıldığında PIN ilkesini zorunlu kılabilir. Bu ilke, cihazlarını Microsoft Intune’a kaydeden son kullanıcıların uygulamaları başlatan kişiler olduğundan emin olmaya yardımcı olur. Son kullanıcılar PIN kodlarını yapılandırdığında, Intune Uygulama SDK'sı Azure Active Directory kullanarak son kullanıcıların kimlik bilgilerini cihaz kaydı kimlik bilgilerine göre doğrular. 
 
 ## Kullanıcıların uygulamaları başlatabilmesi için kimlik bilgisi girmesini zorunlu kılma
-BT yöneticileri, kullanıcıların Intune ile yönetilen bir uygulamayı başlatmadan önce kimlik bilgilerini girmelerini isteyebilir. Intune Uygulama SDK'sı, girilen kimlik bilgilerinin sonraki oturumlar için yeniden kullanıldığı çoklu oturum açma deneyimini sağlamak üzere Azure Active Directory’i kullanır. Ayrıca [Azure Active Directory ile şirket dışı](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx) kimlik yönetimi çözümlerinin kimlik doğrulama yöntemleri desteklenir. 
+BT yöneticileri, kullanıcıların Intune ile yönetilen bir uygulamayı başlatmadan önce kimlik bilgilerini girmelerini isteyebilir. Intune Uygulama SDK'sı, girilen kimlik bilgilerinin sonraki oturumlar için yeniden kullanıldığı çoklu oturum açma deneyimini sağlamak üzere Azure Active Directory’i kullanır. Ayrıca [Azure Active Directory ile federasyon uygulanmış](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx) kimlik yönetimi çözümlerinin kimlik doğrulama yöntemleri desteklenir. 
 
 ## Cihaz durumunu ve uyumluluğunu denetleme
 BT yöneticileri, son kullanıcıların Intune ile yönetilen uygulamalara erişmesinden önce cihazın durumunu ve şirket ilkeleriyle uyumluluğunu denetleyebilir. iOS platformunda bu ilke, cihaza jailbreak uygulanmış olup olmadığını denetler. Android platformunda bu ilke, cihaza kök erişimi verilip verilmediğini denetler.  
@@ -61,6 +55,7 @@ BT yöneticileri, son kullanıcıların Intune ile yönetilen uygulamalara eriş
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

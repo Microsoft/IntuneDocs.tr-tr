@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune lisanslarını PowerShell kullanarak yönetme | Microsoft Intune
-description:
-keywords:
+title: "Intune lisanslarını PowerShell kullanarak yönetme | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
+ms.openlocfilehash: e0eca2ecc9948c7caf15d5df5e6e106428b8b964
+
 
 ---
 
@@ -36,7 +30,7 @@ Yalnızca istenen hizmet planları için geçerli olan yeni bir lisans SKU tanı
 
 Intune hizmet planını hariç tutmak için aşağıdaki komutu çalıştırabilirsiniz. Güvenlik grubunun tamamına yayılmak için aynı yöntemi kullanabileceğiniz gibi, daha ayrıntılı filtreler de kullanabilirsiniz. 
 
-**Örnek 1** Komut satırında yeni kullanıcı oluşturun ve lisansın Intune bölümünü etkinleştirmeden bir EMS lisansı atayın:
+**Örnek 1** Komut satırında yeni bir kullanıcı oluşturun ve lisansın Intune bölümünü etkinleştirmeden bir EMS lisansı atayın:
 
     Connect-MsolService 
         
@@ -69,9 +63,10 @@ Intune hizmet planını hariç tutmak için aşağıdaki komutu çalıştırabil
 Tebrikler! *Intune hızlı başlangıç kılavuzunun* 4. adımını tamamladınız.
 >[!div class="step-by-step"]
 
->[&larr; **Kullanıcıları Intune’a senkronize etme**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Kullanıcıları ve cihazları düzenleme** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr;**Kullanıcıları Intune ile eşitleme**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md) [**Kullanıcıları ve cihazları düzenleme**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

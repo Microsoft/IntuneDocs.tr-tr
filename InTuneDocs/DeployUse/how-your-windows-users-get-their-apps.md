@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows kullanıcılarınız uygulamalarını nasıl alır | Microsoft Intune
-description:
-keywords:
+title: "Windows kullanıcılarınız uygulamalarını nasıl alır | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9d867202b8b3cc5e6ed77d97bcfddce2beabdd40
+ms.openlocfilehash: f226ea2a7be64ef759f61c61903bb0dc964c1410
+
 
 ---
 
@@ -38,10 +32,12 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları son kullanıc
 
 **Yönetilmeyen uygulamalar** - İlkeler aracılığıyla yönetilebilen ve Intune tarafından sarmalanmamış veya Intune MAM SDK’sini içermeyen uygulamalar. Uygulama ilkeleri bu uygulamalara uygulanamaz.
 
-###Ayrıca bkz. [Android kullanıcılarınız uygulamalarını nasıl alır](how-your-android-users-get-their-apps.md)</br>
+###Ayrıca bkz.
+[Android kullanıcılarınız uygulamalarını nasıl alır](how-your-android-users-get-their-apps.md)</br>
 [iOS kullanıcılarınız uygulamalarını nasıl alır](how-your-ios-users-get-their-apps.md)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

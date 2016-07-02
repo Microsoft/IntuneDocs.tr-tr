@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Genel Windows bilgisayarı yönetim görevleri | Microsoft Intune
-description:
-keywords:
+title: "Genel Windows bilgisayarı yönetim görevleri | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 530bf3234001946776593ae0257ea72a06c8612f
+ms.openlocfilehash: 222b9aac19993f184ff68800a00f8d9df8b36237
+
 
 ---
 
@@ -139,7 +133,8 @@ Bir bilgisayarı kullanımdan çıkardığınızda:
 
 -   Yapılandırmaya bağlı olarak, kullanımdan çıkarılan bilgisayarlar Windows Server Update Services, Windows Update veya Microsoft Update'i kullanarak güncelleştirmeleri almaya devam edebilir.
 
-    > [!IMPORTANT] İstemci yazılımı bir Grup İlkesi Nesnesi (GPO) kullanılarak yüklendiyse, yazılımın yeniden yüklenmesini önlemek için istemci yazılımı kaldırmadan önce Grup İlkesi Nesnesi'ni (GPO) kaldırmanız gerekir.
+    > [!IMPORTANT]
+    > İstemci yazılımı bir Grup İlkesi Nesnesi (GPO) kullanılarak yüklendiyse, yazılımın yeniden yüklenmesini önlemek için istemci yazılımı kaldırmadan önce Grup İlkesi Nesnesi'ni (GPO) kaldırmanız gerekir.
 
     İstemciyi kaldırma işlemi başarısız olursa daha fazla yardım için [Endpoint Protection’da sorun giderme](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) konusunu okuyun.
 
@@ -162,7 +157,8 @@ Bir kullanıcı için yazılım dağıtmadan önce kullanıcıyı bir bilgisayar
 
     -   Bilgisayarı yeni bir kullanıcıya bağlamak için, **Tüm kullanıcılar** listesinde bir kullanıcı seçin. Kullanıcı verilerinin doğru olduğundan emin olun ve ardından **Tamam**'ı seçin.
 
-> [!TIP] Son kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtlamak istiyorsanız, **Microsoft Intune Aracı Ayarları** ilkesinde **Kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtla** seçeneğini etkinleştirin.
+> [!TIP]
+> Son kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtlamak istiyorsanız, **Microsoft Intune Aracı Ayarları** ilkesinde **Kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtla** seçeneğini etkinleştirin.
 
 <!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
@@ -217,6 +213,7 @@ While in a remote assistance session, you can use all available TeamViewer comma
 
 From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
