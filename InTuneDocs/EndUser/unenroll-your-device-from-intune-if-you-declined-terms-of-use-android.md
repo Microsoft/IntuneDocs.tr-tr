@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Kullanım Koşulları’nı reddettiyseniz cihazınızın Intune kaydını silme | Microsoft Intune
-description:
-keywords:
+title: "Kullanım Koşulları’nı reddettiyseniz cihazınızın Intune kaydını silme | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisbal
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: abcb7dbe4f3423fcba108a7ea0c4b2efa295c970
+
 
 ---
 
@@ -49,6 +43,7 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

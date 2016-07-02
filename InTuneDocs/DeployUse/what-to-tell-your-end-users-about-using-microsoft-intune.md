@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler | Microsoft Intune
-description:
-keywords:
+title: "Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 83f029c97cf34b6c96c6b2ef16cc65ab839c1d55
+ms.openlocfilehash: 893e896fc52e6e883fcd151db2c47030113502a2
+
 
 ---
 
@@ -66,6 +60,7 @@ Son kullanıcılarınızın uygulamalarını nasıl aldığını anlamak için, 
 Kullanıcılarınızın Şirket Portalı’nı kullandıklarında yaşayabileceği sorunları çözmelerine yardımcı olmak için, [Şirket Portalı’nda kullanıcıların görebileceği bir iletiler listesini](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages) gözden geçirebilirsiniz.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
