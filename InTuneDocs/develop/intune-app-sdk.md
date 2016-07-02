@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Intune App SDK’sının yararları | Microsoft Intune
-description:
-keywords:
+title: "Intune App SDK’sının yararları | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 3abf566831348de11f718370d6267e3ff4355bfb
+
 
 ---
 
 # Intune Uygulama SDK'sına genel bakış
-Intune Uygulama SDK'sı hem iOS hem de Android platformu için kullanılabilir ve Microsoft Intune ile mobil uygulama yönetim özelliklerini etkinleştirir. Ayrıca, geliştiricilerin yapması gereken kod değişikliği miktarının azaltılması konusunda da çalışmalar yapılmaktadır. Uygulamanızın davranışını değiştirmeden SDK özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için, API’lerimizi kullanarak uygulamanızın davranışını uygulama katılımınızı gerektiren özelliklere göre özelleştirebilirsiniz. 
-Uygulamanızı etkinleştirdikten sonra BT yöneticileri, ilkeleri Intune ile yönetilen uygulamalara dağıtabilir ve kurumsal verileri korumak için bu özelliklerden yararlanabilir.
+Intune Uygulama SDK'sı hem iOS hem de Android platformu için kullanılabilir ve Microsoft Intune ile mobil uygulama yönetim özelliklerini etkinleştirir. Ayrıca, geliştiricilerin yapması gereken kod değişikliği miktarının azaltılması konusunda da çalışmalar yapılmaktadır. Uygulamanızın davranışını değiştirmeden SDK özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için, API’lerimizi kullanarak uygulamanızın davranışını uygulama katılımınızı gerektiren özelliklere göre özelleştirebilirsiniz. Uygulamanızı etkinleştirdikten sonra BT yöneticileri, ilkeleri Intune ile yönetilen uygulamalara dağıtabilir ve kurumsal verileri korumak için bu özelliklerden yararlanabilir.
 
 ## Normal Özellikler
 
@@ -77,6 +70,7 @@ Cihaz kaydı olmadan uygulama yönetimi, Microsoft Intune hizmetinin MAM ilkesin
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
