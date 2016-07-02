@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Uygulamaları ve verileri koruma | Microsoft Intune
-description:
-keywords:
+title: "Uygulamaları ve verileri koruma | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+
 
 ---
 
@@ -56,6 +50,7 @@ Ayrıca, MAM ilkeleriyle kullanmak üzere, [özel oluşturulan iş kolu uygulama
 Veri hareketini kısıtlamaya ek olarak, bir cihaz kaybedilirse veya çalınırsa ya da kullanıcı artık şirketinizde çalışmıyorsa, [şirket verilerini seçmeli olarak temizleyerek](wipe-managed-company-app-data-with-microsoft-intune.md), yalnızca kişisel verileri bırakabilirsiniz.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

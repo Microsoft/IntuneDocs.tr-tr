@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Kullanıcı ve cihaz gruplarınızı planlama | Microsoft Intune
-description:
-keywords:
+title: "Kullanıcı ve cihaz gruplarınızı planlama | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,7 +152,8 @@ Gözden geçirin ve ardından **Son**’u seçerek grubu oluşturmayı tamamlay�
 
 Örneğimizde MEA adlı bir Orta Doğu ve Asya grubu da oluşturulmuştur.
 
-> [!NOTE] Grup üyeliği, güvenlik grubu üyeliğine göre doldurulmazsa bu üyelere Intune lisansları atayıp atamadığınızı denetleyin.
+> [!NOTE]
+> Grup üyeliği güvenlik grubu üyeliğine göre doldurulmazsa bu üyelere Intune lisansları atayıp atamadığınızı denetleyin.
 
 ### Belirli donanımlara yönelik gruplar
 Kuruluşunuzda belirli donanım türlerine uygulanacak ilkeler gerekiyorsa, bu gereksinimi temel alan gruplar oluşturabilirsiniz. Bunları, şirket içi AD’nizde önceden oluşturmuş olduğunuz belirli gruplara dayandırabilir ve Azure AD’ye eşitleyebilirsiniz. Ayrıca bu grupları doğrudan Azure AD’de de oluşturabilirsiniz. Bu örnekte **Dizüstü Bilgisayar Kullanıcıları** grubunun üst grubu olarak **ABD Kullanıcı Grubu** kullanılmaktadır.
@@ -174,7 +169,8 @@ Kuruluşunuzda Android, iOS veya Windows gibi belirli işletim sistemlerine uygu
 
 Önceki örneklerle aynı yöntemi izleyerek, belirli işletim sistemi platformlarını kullanan kullanıcıların <!--devices?--> temel alındığı gruplar oluşturabiliriz.
 
-> [!NOTE] Birden çok mobil platform/işletim sistemi kullanan kullanıcılarınız varsa ve bunları Android kullanıcıları, iOS kullanıcıları ya da Windows kullanıcıları şeklinde kategorilerine ayırmak için otomatik bir yönteminiz yoksa, ilkeleri cihaz düzeyinde uygulamanız önerilir. Bu, işletim sistemine özel ilkeleri uygularken size daha fazla esneklik sunar.
+> [!NOTE]
+> Birden çok mobil platform/işletim sistemi kullanan kullanıcılarınız varsa ve kullanıcıları ve Android kullanıcıları, iOS kullanıcıları ya da Windows kullanıcıları kategorilerine ayırmak için otomatik bir yönteminiz yoksa ilkeleri işletim sistemine özel ilke uygulamada daha fazla esneklik sağlayan cihaz düzeyinde uygulamayı düşünün.
 >
 > Cihazın işletim sistemini dinamik olarak temel alan gruplar sağlayamazsınız. Bunu yapmak için AD veya AAD güvenlik gruplarını kullanın.
 
@@ -218,6 +214,7 @@ Kullanıcı grubu hiyerarşisine benzer bir cihaz grubu hiyerarşisi elde edene 
 [Grup oluşturma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

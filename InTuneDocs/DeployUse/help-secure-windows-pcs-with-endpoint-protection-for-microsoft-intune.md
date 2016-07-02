@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows bilgisayarlar için Endpoint Protection | Microsoft Intune
-description:
-keywords:
+title: "Windows bilgisayarlar için Endpoint Protection | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
@@ -52,7 +46,8 @@ Geçerli uç nokta koruma uygulamanızdan Microsoft Intune Endpoint Protection�
 
     -   Üçüncü taraf uç nokta koruma uygulamasını el ile kaldırma.
 
-> [!NOTE] Intune, üçüncü taraf uç nokta koruma uygulamalarını otomatik olarak kaldırmaz.
+> [!NOTE]
+> Intune, üçüncü taraf uç nokta koruma uygulamalarını otomatik olarak kaldırmaz.
 
 ## Microsoft Intune Endpoint Protection nasıl yapılandırılır
 Aşağıdaki adımlar, Microsoft Intune için Endpoint Protection’ı yapılandırmada size yardımcı olacaktır.
@@ -162,7 +157,8 @@ Bir uzak görevin durumunu, Intune konsolunun sağ alt köşesindeki **Uzak Gör
   - **Özellikleri Görüntüle** – Seçili kötü amaçlı yazılım hakkında daha fazla bilgi içeren bir sayfa açar.
   - **Bu Kötü Amaçlı Yazılım Hakkında Bilgi Edin** – Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi'nden kötü amaçlı yazılım hakkında daha fazla bilgi içeren bir konuyu açar.
 
-> [!IMPORTANT] **Koruma** çalışma alanı, istemciyi yükleyene ve en az bir bilgisayar istemcisini yönetene kadar yönetici konsolunda görüntülenmez.
+> [!IMPORTANT]
+> **Endpoint Protection** çalışma alanı, istemciyi yükleyene ve en az bir bilgisayar istemcisini yönetene kadar yönetici konsolunda görüntülenmez.
 
   ![Endpoint Protection’ı izleme](./media/pol-sa-ep-monitor.png)
 
@@ -181,7 +177,7 @@ Intune, Intune istemcisiyle yüklenmiş uzaktan yönetilen bir bilgisayarda Endp
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** > **Genel Bakış** > **Tüm Cihazlar** > **Tüm Bilgisayarlar**’a gidin ve hedeflemek istediğiniz bilgisayarı seçin.
 
 2. **Uzak Görevler** açılan listesine tıklayın ve görevi seçin. Uzak bilgisayarda çalıştırılacak görev.
-![Uzaktan kötü amaçlı yazılım taraması çalıştırma](../media/ep_sa_malwarescan.png)
+
 
 
 
@@ -192,6 +188,7 @@ Daha fazla yardım ve destek için bkz. [Microsoft Intune Endpoint Protection’
 [Windows bilgisayarları koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

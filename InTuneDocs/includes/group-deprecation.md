@@ -6,6 +6,6 @@
 >Azure Active Directory’de, Kurumsal Kayıt Profili adına göre yeni dinamik cihaz grupları ataması tanımlanabilir. Bu işlem bir cihaz grubuna önceden atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. Diğer ayrıntılar yakında yayımlanacaktır.
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

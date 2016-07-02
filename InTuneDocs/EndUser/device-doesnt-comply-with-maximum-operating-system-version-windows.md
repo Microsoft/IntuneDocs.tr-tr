@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil | Microsoft Intune
-description:
-keywords:
+title: "Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 06/03/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 524501f8680eab35f7d773d47c9c2396ece30509
+
 
 ---
 
@@ -33,6 +27,7 @@ BT yöneticiniz Windows cihazınızda çalıştırmanıza izin verilen en yükse
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

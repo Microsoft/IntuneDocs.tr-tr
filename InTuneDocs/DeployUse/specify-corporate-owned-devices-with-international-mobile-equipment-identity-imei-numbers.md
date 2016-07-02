@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Uluslararası mobil donanım kimliği (IMEI) numaralarıyla şirkete ait cihazları belirtme | Microsoft Intune
-description:
-keywords:
+title: "Uluslararası mobil donanım kimliği (IMEI) numaralarıyla şirkete ait cihazları belirtme | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 398d93d4e2317d00a2f9d5f89966aaec3b942504
+ms.openlocfilehash: af4b87eb8082ee5ff11cd2d42b788ad17b334bcb
+
 
 ---
 
@@ -39,8 +32,8 @@ Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamaya yard
         Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki gibi görünür:
 
         ```
-        AA-BBBBBB-CCCCCC-D,PO 1234
-        AA-BBBBBB-CCCCCC-E,PO 1234
+        AABBBBBBCCCCCCD,PO 1234
+        AABBBBBBCCCCCCE,PO 1234
         ```
 
     -   **Cihaz ayrıntılarını el ile ekle** - En fazla beş cihazın IMEI numarasını ve cihaz ayrıntılarını girin
@@ -54,6 +47,7 @@ Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamaya yard
 İlgili IMEI numarasına sahip cihaz kaydedilirken, genellikle bir kullanıcı Şirket Portalı uygulamasını yükleyip kayıt işlemini tamamladığında, cihaz Şirkete ait olarak etiketlenir ve **IMEI Cihazları** grubunda kayıtlı olarak görünür.
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO3-->
 
 

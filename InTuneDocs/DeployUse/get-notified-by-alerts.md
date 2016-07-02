@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Uyarılarla bilgi edinin | Microsoft Intune
-description:
-keywords:
+title: "Uyarılarla bilgi edinin | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e929a95d95b71e22d46e124f1a423af7046b0539
+ms.openlocfilehash: f1dd166b7b1278003ac8785b8be07c29396dfe8c
+
 
 ---
 
@@ -83,12 +77,14 @@ Intune uyarıları şu durumlara kadar etkin kalır:
 
 -   Uyarının oluşturulmasının üzerinden 45 gün geçtiğinde
 
-> [!TIP] Farklı işletim sistemleri çalıştıran cihazlarda aynı uyarı oluşturulduysa, uyarılar listesinde aynı uyarının birden fazla sürümünü görebilirsiniz.
+> [!TIP]
+> Farklı işletim sistemleri çalıştıran cihazlarda aynı uyarı oluşturulduysa, uyarılar listesinde aynı uyarının birden fazla sürümünü görebilirsiniz.
 
 ### Ayrıca bkz.
 [Microsoft Intune ile izleme ve raporlama](monitoring-and-reports-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO4-->
 
 

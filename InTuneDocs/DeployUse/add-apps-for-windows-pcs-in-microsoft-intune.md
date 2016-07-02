@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows bilgisayarları için uygulamaları ekleme | Microsoft Intune
-description:
-keywords:
+title: "Windows bilgisayarları için uygulamaları ekleme | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
+ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+
 
 ---
 
@@ -38,7 +32,8 @@ Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve u
 
 1.  Intune yazılım yayımcısını başlatmak için [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda **Uygulamalar** &gt; **Uygulama Ekle**‘yi seçin.
 
-    > [!TIP] Yayımcının başlatılması için önce Intune kullanıcı adınızı ve parolanızı girmeniz gerekebilir.
+    > [!TIP]
+    > Yayımcının başlatılması için önce Intune kullanıcı adınızı ve parolanızı girmeniz gerekebilir.
 
 
 
@@ -94,6 +89,7 @@ Uygulama, **Uygulamalar** çalışma alanının **Uygulamalar** düğümünde g�
 
 Uygulamayı oluşturmayı tamamladığınızda, bir sonraki adım dağıtmaktır. Daha fazla bilgi bulmak için bkz. [Microsoft Intune’da uygulamaları dağıtma](deploy-apps.md).
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

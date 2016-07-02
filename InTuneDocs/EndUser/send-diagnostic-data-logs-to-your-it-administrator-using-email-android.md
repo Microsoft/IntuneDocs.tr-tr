@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme | Microsoft Intune
-description:
-keywords:
+title: "Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+
 
 ---
 
@@ -42,7 +36,7 @@ Ayrıntılı günlük özelliğini açmak için:
 3.  **Tanılama Verileri** altında **Veri Gönder**’e dokunun.
 
     > [!NOTE]
-    > **Yalnızca Android 6.0 veya üzeri cihazlar kullanıyorsanız:**  **Veri Gönder**'e dokunduğunuzda, **Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?** iletisini görürsünüz. 
+    > **Yalnızca Android 6.0 veya üzeri cihazlar kullanıyorsanız:** **Veri Gönder**’e dokunduğunuzda **Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?** iletisini görürsünüz. 
 
     Bu ileti yanıltıcıdır, çünkü **Microsoft hiçbir zaman cihazınızdaki fotoğraflara, medyaya veya dosyalara erişmez!** İleti metnini Google denetlediği için Microsoft tarafından değiştirilememektedir.  Erişim izni verdiğinizde tüm yaptığınız, cihazınıza cihaz SD kartına veri günlüklerini yazma izni vermektir; böylece bu günlükleri bir USB kablosu kullanarak taşıyabilirsiniz.
 
@@ -54,6 +48,7 @@ Ayrıntılı günlük özelliğini açmak için:
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
