@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista.md) | InSyncHandedBackSuccess | [Details](#13ff460ac519f9cd49ce1cf25a819cea78e2772f600)
- [InTuneDocs\includes\win8RT_client_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8RT_client_1.md) | InSyncHandedBackSuccess | [Details](#14b0d8220b2f0ea1bbcc86aad21a64a532db5d96621)
 
 ## Item Details
-##### <a name='13ff460ac519f9cd49ce1cf25a819cea78e2772f600'></a> Source: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/4d250a73755cfabb31ad1cfce1603615724c60dd/InTuneDocs/includes/firstref_vista.md)
-* Handoff File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/063e6c46be5d3456f6268ec515ca0eb801efc1d1/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.tr-tr.xlf)
-* Handoff Datetime: 2016-06-27 12:04:08
-* Handoff Reason: Include
-* Archive File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/08555ede17c3e0411fbc15f408adec97b69246fb/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.tr-tr.xlf)
-* Archive Datetime: 2016-07-02 01:50:01
-* Handback File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/55f6632b9216b35d706d6f36a8f4638fe1128347/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.tr-tr.xlf)
-* Handback Datetime: 2016-07-03 00:36:06
-* [Back to Top](#report-top)
-
-##### <a name='14b0d8220b2f0ea1bbcc86aad21a64a532db5d96621'></a> Source: [InTuneDocs\includes\win8RT_client_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8RT_client_1.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\win8RT_client_1.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/4d250a73755cfabb31ad1cfce1603615724c60dd/InTuneDocs/includes/win8RT_client_1.md)
-* Handoff File: [win8RT_client_1.50c0d914a5ffaf9c32351fd3e42b5baaf3dd30b5.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/063e6c46be5d3456f6268ec515ca0eb801efc1d1/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/win8RT_client_1.50c0d914a5ffaf9c32351fd3e42b5baaf3dd30b5.tr-tr.xlf)
-* Handoff Datetime: 2016-06-27 12:04:08
-* Handoff Reason: Include
-* Archive File: [win8RT_client_1.50c0d914a5ffaf9c32351fd3e42b5baaf3dd30b5.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/08555ede17c3e0411fbc15f408adec97b69246fb/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/win8RT_client_1.50c0d914a5ffaf9c32351fd3e42b5baaf3dd30b5.tr-tr.xlf)
-* Archive Datetime: 2016-07-02 01:50:01
-* Handback File: [win8RT_client_1.50c0d914a5ffaf9c32351fd3e42b5baaf3dd30b5.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/55f6632b9216b35d706d6f36a8f4638fe1128347/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/win8RT_client_1.50c0d914a5ffaf9c32351fd3e42b5baaf3dd30b5.tr-tr.xlf)
-* Handback Datetime: 2016-07-03 00:36:06
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
