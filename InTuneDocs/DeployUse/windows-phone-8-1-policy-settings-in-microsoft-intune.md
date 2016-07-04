@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows Phone 8.1 ilke ayarları | Microsoft Intune
-description:
-keywords:
+title: "Windows Phone 8.1 ilke ayarları | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
+ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+
 
 ---
 
@@ -127,7 +121,8 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 |**Uygulamaları İçeri Aktar**|Virgülle ayrılmış bir değerler dosyasında belirttiğiniz uygulamaların listesini içeri aktarır. Dosyadaki biçim, uygulama adı, yayımcı, uygulama URL'sini kullanın.|
 |**Düzenle**|Seçilen uygulamanın adını, yayımcısını ve URL'sini düzenlemenize imkan tanır.|
 |**Sil**|Seçilen uygulamayı listeden siler.|
-> [!IMPORTANT] Windows Phone 8.1 cihazları için izin verilen uygulamalar listesi belirtiyorsanız, Şirket Portalı uygulamasını bu listeye ekleyin, yoksa engellenir.
+> [!IMPORTANT]
+> Windows Phone 8.1 cihazları için izin verilen uygulamaların bir listesini belirtirseniz, Şirket Portalı uygulamasını bu listeye ekleyin, aksi takdirde engellenir.
 
 
 ### Uyumlu ve uyumlu olmayan uygulamalar için başvuru bilgileri
@@ -174,6 +169,7 @@ Windows Phone cihazlar için OMA-URI ayarlarını oluşturmanıza yardımcı olm
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
