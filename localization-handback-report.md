@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md) | InSyncHandedBackSuccess | [Details](#a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4455)
 
 ## Item Details
+##### <a name='a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4455'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\EndUser\what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/e3b53b19f6aaf8321e0d7e2d0abfd065dba7f743/InTuneDocs/EndUser/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
+* Handoff File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/063e6c46be5d3456f6268ec515ca0eb801efc1d1/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.tr-tr.xlf)
+* Handoff Datetime: 2016-06-27 12:04:08
+* Handoff Reason: Include
+* Archive File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/08555ede17c3e0411fbc15f408adec97b69246fb/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.tr-tr.xlf)
+* Archive Datetime: 2016-07-02 01:50:01
+* Handback File: [what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/da21e0ffe36264c5a028579cfa2d49656c3196b2/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.05d200d6414577fbe7990993c203876f39cb7e73.tr-tr.xlf)
+* Handback Datetime: 2016-07-04 07:50:29
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
