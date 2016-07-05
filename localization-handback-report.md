@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\how-your-ios-users-get-their-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/how-your-ios-users-get-their-apps.md) | InSyncHandedBackSuccess | [Details](#f36bc73d3397fef5bebe6896d91bcffcd5507cfc50)
 
 ## Item Details
-##### <a name='f36bc73d3397fef5bebe6896d91bcffcd5507cfc50'></a> Source: [InTuneDocs\DeployUse\how-your-ios-users-get-their-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/how-your-ios-users-get-their-apps.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\how-your-ios-users-get-their-apps.md](https://github.com/Microsoft/IntuneDocs-pr.tr-tr/blob/c964ae3de07b9c13e33b3020a33fcc8162097a75/InTuneDocs/DeployUse/how-your-ios-users-get-their-apps.md)
-* Handoff File: [how-your-ios-users-get-their-apps.c36b2a60086e86751957f1c5e090f457be1b6450.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/063e6c46be5d3456f6268ec515ca0eb801efc1d1/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/how-your-ios-users-get-their-apps.c36b2a60086e86751957f1c5e090f457be1b6450.tr-tr.xlf)
-* Handoff Datetime: 2016-06-27 12:04:08
-* Handoff Reason: Include
-* Archive File: [how-your-ios-users-get-their-apps.c36b2a60086e86751957f1c5e090f457be1b6450.tr-tr.xlf](https://github.com/Microsoft/EM.handoff/blob/08555ede17c3e0411fbc15f408adec97b69246fb/ol-handoff/Microsoft/IntuneDocs-pr.tr-tr/master/archive/how-your-ios-users-get-their-apps.c36b2a60086e86751957f1c5e090f457be1b6450.tr-tr.xlf)
-* Archive Datetime: 2016-07-02 01:50:01
-* Handback File: [how-your-ios-users-get-their-apps.c36b2a60086e86751957f1c5e090f457be1b6450.tr-tr.xlf](https://github.com/Microsoft/EM.handback/blob/2650b2d4e1f0f6aa11045795a09439b7cda45fbf/ol-handback/Microsoft/IntuneDocs-pr.tr-tr/master/how-your-ios-users-get-their-apps.c36b2a60086e86751957f1c5e090f457be1b6450.tr-tr.xlf)
-* Handback Datetime: 2016-07-05 15:04:49
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
