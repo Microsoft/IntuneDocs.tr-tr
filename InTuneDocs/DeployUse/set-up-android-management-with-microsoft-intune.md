@@ -26,7 +26,7 @@ Daha fazla bilgi edinmek için aşağıdaki cihaz platformu seçenekleri arasın
 
 > [!div class="op_single_selector"]
 - [Microsoft Intune ile Android yönetimini ayarlama](set-up-android-management-with-microsoft-intune.md)
-- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Microsoft Intune ile Windows Phone yönetimin ayarlama](set-up-windows-phone-management-with-microsoft-intune.md)
 - [Microsoft Intune ile Windows cihazı yönetimini ayarlama](set-up-windows-device-management-with-microsoft-intune.md)
 
