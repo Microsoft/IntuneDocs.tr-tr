@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Raporları kullanarak işlemlerini anlayın | Microsoft Intune
-description:
-keywords:
+title: "Raporları kullanarak işlemlerini anlayın | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
+ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+
 
 ---
 
@@ -45,6 +38,7 @@ Intune raporları, kuruluşunuzdaki yazılımlar, donanımlar ve yazılım lisan
 |**Uyumsuz Uygulamalar raporları**|Uyumlu ve uyumsuz uygulamalar listelerinizdeki uygulamaları yükleyen kullanıcılar hakkında bilgi gösterir. Şirket uygulama ilkeleriniz ile uyumlu olmayan kullanıcıları ve cihazları bulmak için bu raporu kullanın.|
 |**Sertifika Uyumluluğu raporları**|SCEP veya PKCS #12 (.PFX) aracılığıyla kullanıcılara ve cihazlara hangi sertifikaların verildiğini gösterir. Verilen, süresi dolan ve iptal edilen sertifikaları bulmak için bu raporu kullanın.|
 |**Cihaz Geçmişi raporları**|Kullanımdan kaldır, temizle ve sil eylemlerinin geçmişe dönük bir günlüğünü gösterir. Geçmişte cihazda eylemleri kimin başlattığını görmek için bu raporu kullanın.|
+|**Cihaz durumu kanıtlama raporları**|Mobil cihazların durumunu gösterir.|
 |**Mac OS X Donanım Raporu**|Seçtiğiniz gruplarda kayıtlı olan tüm Mac OS X cihazları için donanım ayrıntılarını görüntüler. Bu cihazlardan toplanan donanım envanteri hakkında bilgi için bkz. [Microsoft Intune’da envanterle cihazlarınızı anlama](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Mac OS X Yazılım Raporu**|Seçtiğiniz gruplardaki tüm Mac OS X cihazlarında yüklü yazılımları görüntüler. Raporda yazılım adı (paket kimliği olarak), kısa sürüm adı (veya kolay ad), sürüm ve yazılımın yüklü olduğu cihaz sayısı listelenir.|
 
@@ -74,6 +68,7 @@ Ayrıca, raporları aşağıdaki eylemleri destekler:
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

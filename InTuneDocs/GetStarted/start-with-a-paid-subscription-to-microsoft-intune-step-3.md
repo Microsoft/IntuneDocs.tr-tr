@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Active Directory’yi eşitleme ve Intune’a kullanıcı ekleme | Microsoft Intune
-description:
-keywords:
+title: "Active Directory’yi eşitleme ve Intune’a kullanıcı ekleme | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 70a2d32de67f0a69bbc29ca68a1c831c9cf38796
+
 
 ---
 
@@ -40,7 +34,7 @@ Kullanıcı hesaplarınızı Azure AD ile eşitlemek için ihtiyacınız olan te
 ## Yönetici izinleri verme
 Intune aboneliğinize kullanıcılar ekledikten sonra, birkaç kullanıcı hesabına [yönetici kimlik bilgileri](administrative-accounts-websites-perms.md) vermenizi öneririz. Yönetici kimlik bilgilerini atamak için kullandığınız konsol atamak istediğiniz yönetici türüne bağlıdır:
 
--   **Kiracı yöneticisi**: Faturalandırma, bulut depolama ve kullanıcıları yönetme gibi abonelik özelliklerini yönetmek üzere bu yönetici türünü atamak için **[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]** kullanın.
+-   **Kiracı yöneticisi**: Faturalandırma, bulut depolama ve [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanabilecek kullanıcıları yönetme gibi, aboneliğinizin özelliklerini yönetmesi için bu tür yöneticiyi atamak amacıyla **[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]** kullanın.
 
 -   **Hizmet yöneticisi**: Mobil cihaz veya bilgisayar yönetimi, ilke veya yazılım dağıtma ve raporları çalıştırma gibi günlük görevler için bir yönetici atamak için **[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]** kullanın.
 
@@ -53,6 +47,7 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 3. adımını tamamlamış
 >[&larr; **Etki alanı ayarları**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Intune lisanslarını yönetme** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

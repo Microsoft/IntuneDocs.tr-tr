@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Kullanıcıları ve cihazları düzenlemek için grup oluşturma | Microsoft Intune
-description:
-keywords:
+title: "Kullanıcıları ve cihazları düzenlemek için grup oluşturma | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 00ac59ffe219109dd48c47e59de9ecf588f07344
+
 
 ---
 
@@ -34,13 +28,14 @@ Hem cihaz hem de kullanıcı grupları Intune yönetim konsolunun GRUPLAR çalı
 ![Yönetim konsolu gruplar çalışma alanı](./media/groups.png)
 
 
-> Grupları kullanma hakkında daha fazla bilgi için bkz. [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)
+> [!TIP]
+> Grupları kullanma hakkında daha fazla bilgi için, bkz. [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 
 ## Bir cihaz grubu oluşturma
 Uygulamalar ve güncelleştirmeler dağıtmak ve diğer özellikleri yapılandırmak için cihaz gruplarını kullanın. Örneğin, aşağıdaki adımları kullanarak bir "Cihazlarım" grubu oluşturun:
 
-1.  [Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** > **Genel bakış** > **Grup Oluştur**’u seçin.
+1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar** > **Genel Bakış** > **Grup Oluştur**’u seçin.
 
 2.  **Grup adı** olarak "Cihazlarım" yazın, üst grup listesinden **Tüm Cihazlar**'ı seçin ve ardından **İleri**'yi seçin.
 
@@ -55,11 +50,11 @@ Uygulamalar ve güncelleştirmeler dağıtmak ve diğer özellikleri yapılandı
 ## Bir kullanıcı grubu oluşturma
 Yazılım ve cihaz ilkelerini dağıtmak için kullanıcı gruplarını kullanın. Örneğin, aşağıdaki adımları kullanarak bir "Intune Kullanıcıları" grubu oluşturun:
 
-1.  [Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** > **Genel bakış** > **Grup Oluştur**’u seçin.
+1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar** > **Genel Bakış** > **Grup Oluştur**’u seçin.
 
 2.  **Grup adı** olarak "Intune Kullanıcıları" yazın, üst grup listesinden **Tüm Kullanıcılar**'ı seçin ve ardından **İleri**'yi seçin.
 
-3.  **Üyelik Ölçütlerini Tanımla** sayfasında **Şununla grup üyeliği başlat:** seçeneğini **Üst gruptaki tüm kullanıcılar** olarak ayarlayın.
+3.  **Üyelik Ölçütlerini Tanımla** sayfasında **Şununla grup üyeliği başlat:** seçeneğini **Üst gruptaki tüm kullanıcılar**olarak ayarlayın.
 
 4.  **Şu güvenlik gruplarındaki üyeleri çıkar:**seçeneğinin yanında **Gözat**’ı seçin ve ardından **Şirket Yöneticisi**'ni seçin. Bu dışlama, Şirket Yöneticisi hesabını (kiracı yönetici olarak da bilinir) etkilemeden Intune Kullanıcıları grubunu yönetmenize olanak verir.
 
@@ -79,6 +74,7 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 5. adımını tamamlamış
 >[&larr; **Intune lisanslarını yönetme**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**İlkeler ve uygulamalar oluşturma** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

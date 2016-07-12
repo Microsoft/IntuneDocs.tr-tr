@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Şirket kaynaklarına erişimi etkinleştirme | Microsoft Intune
-description:
-keywords:
+title: "Şirket kaynaklarına erişimi etkinleştirme | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 556b9ea5ac5edcc1126dbcc6310ab7dfa917cb56
+
 
 ---
 
@@ -50,7 +43,8 @@ Kuruluşunuzdaki cihazlarda yerel e-posta istemcisi ayarlarını oluşturun, da�
 |Windows 8.1 ve üzeri|Windows Phone 8.1 ve üzeri|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
 |Hayır|Evet|Evet|Hayır|Evet|
-> [Bu Intune ekibi blog gönderisi](http://blogs.technet.com/b/microsoftintune/archive/2015/02/23/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1.aspx), OMA-URI kullanarak Windows Phone 8.1 Wi-Fi profilinin nasıl yapılandırılacağı hakkında bilgi verir.
+> [!NOTE]
+> [Bu Intune ekibi blog gönderisi](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/), OMA-URI kullanarak Windows Phone 8.1 Wi-Fi profilinin nasıl yapılandırılacağı hakkında bilgi verir.
 
 ## [Sertifika profilleri](secure-resource-access-with-certificate-profiles.md) ve desteklenen platformlar
 Kablosuz ağlar ve VPN bağlantıları gibi şirket kaynaklarına güvenli erişime yardımcı olur.
@@ -60,6 +54,7 @@ Kablosuz ağlar ve VPN bağlantıları gibi şirket kaynaklarına güvenli eriş
 |Evet|Evet|Evet|Evet|Evet|
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

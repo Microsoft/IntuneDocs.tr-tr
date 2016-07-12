@@ -47,6 +47,7 @@
 #### [Intune’da VPN bağlantıları](vpn-connections-in-microsoft-intune.md)
 #### [Intune’da e-posta profilleri](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+### [Cihazları gruplarla eşleme](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Envanterle cihazlarınızı anlama ](understand-your-devices-with-inventory-in-microsoft-intune.md)
 ### [Genel bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
@@ -86,14 +87,19 @@
 #### [Windows ve Windows Phone için](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Cihaz uyumluluk ilkesini dağıtma](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [E-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [E-posta, O365 hizmetlerine ve diğer hizmetlere erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+
+
 #### [Exchange Online ve yeni Dağıtılmış Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Şirket İçi Exchange ve eski Dağıtılmış Exchange Online](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype Kurumsal Çevrimiçi](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+#### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [E-posta erişimini kısıtlama: örnekler](restrict-email-access-example-scenarios.md)
 
-### [Uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+### [Ağlara erişimi kısıtlama (Cisco ISE)](restrict-access-to-networks.md)
+
+### [Uygulama verilerini MAM ile koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md)
 #### [MAM ilkelerini yapılandırmaya hazırlanma](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM ilkelerini oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
@@ -102,6 +108,7 @@
 #### [İlke uyumluluğunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS uygulamaları arasında veri aktarımını yönetme](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [Son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+#### [MAM ilkeleri için Intune yönetim konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [İş kolu uygulamalarını MAM için hazırlama](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [iOS uygulamalarını sarmalama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
@@ -123,9 +130,9 @@
 
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
 
-# [Sorunları Gider](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO5-->
 
 

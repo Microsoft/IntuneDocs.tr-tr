@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Cihazları kaydetme | Microsoft Intune
-description:
-keywords:
+title: "Cihazları kaydetme | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
+ms.openlocfilehash: 930cbc806d8fd1185cf33fd64d866b88ec9a6a04
+
 
 ---
 
@@ -33,6 +27,73 @@ Microsoft Intune mobil cihaz yönetimi (MDM), cihazları yönetime getirmek ve k
 Intune aşağıdaki cihaz platformlarını yönetebilir:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+
+## Cihaz kayıt yöntemlerine genel bakış
+
+Aşağıdaki tabloda kuruluşa ait cihaz kayıt yöntemleri ve bunların avantajları gösterilir.
+
+**iOS Kayıt Yöntemleri**
+
+| **Yöntem** |  **[Silme](#Wipe)** | **[Benzeşim](#Affinity)**   |   **[Kilitli](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | Hayır|    Evet |   Hayır |
+|**[DEM](#DEM)**|   Hayır |Hayır |Hayır  |
+|**[DEP](#DEP)**|   Evet |   Seçenek |   Seçenek|
+|**[USB-SA](#USB-SA)**| Evet |   Seçenek |   Hayır|
+|**[USB-Direct](#USB-Direct)**| Hayır |    Hayır  | Hayır|
+
+**Windows ve Android Kayıt Yöntemleri**
+
+| **Yöntem** |  **[Silme](#Wipe)** | **[Benzeşim](#Affinity)**   |   **[Kilitli](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | Hayır|    Evet |   Hayır |
+|**[DEM](#DEM)**|   Hayır |Hayır |Hayır  |
+
+**Kuruluşa ait cihazlar için kayıt yöntemleri**
+
+### BYOD
+“Kendi Cihazını Getir.” Şirket Portalı uygulamasını kullanıcılar yükler ve cihazlarını kaydeder. Cihazı Şirket Portalı’na kaydetmek cihazın çalışma alanına katılmasını sağlar. iOS cihazlarını Şirket Portalı’na kaydetmek için Apple Kimliği gerekir. Kuruluşa ait cihazlarda KCG ek yapılandırma gerektirmez. [Cihaz yönetimini ayarlama](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management) adımlarına bakın. ([Tabloya dön](#overview-of-corporate-owned-device-enrollment-methods))
+
+### DEM
+Cihaz kayıt yöneticisi. Yönetici, şirkete ait cihazları yönetmek için DEM hesapları oluşturur. Bundan sonra, yöneticiler Şirket Portalı’nı yükleyebilir ve kullanıcısı olmayan birçok cihazı kaydedebilir. [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. ([Tabloya dön](#overview-of-corporate-owned-device-enrollment-methods))
+
+### DEP
+Apple Cihaz Kaydı Programı. DEP yönetilen ve satın alınan iOS cihazları için, “uzaktan” ilkesini oluşturur ve dağıtır. Kullanıcı iOS Kurulum Yardımcısı’nı çalıştırdığında, cihaz kaydedilir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod şunlara olanak tanır:
+  - Kilitli kayıt
+  - Koşullu erişim
+  - Kaçış algılama
+  - Mobil uygulama yönetimi
+
+[DEP](ios-device-enrollment-program-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. ([Tabloya dön](#overview-of-corporate-owned-device-enrollment-methods))
+
+### USB-SA
+USB bağlantılı, Kurulum Yardımcısı kaydı. Yönetici Intune ilkesini oluşturur ve bunu Apple Configurator’a aktarır. USB bağlantılı, şirkete ait cihazlar Intune ilkesiyle hazırlanır. Yöneticinin her cihazı el ile kaydetmesi gerekir. Kullanıcılar cihazlarını alır ve Kurulum Yardımcısını çalıştırarak cihazlarını kaydederler. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod şunlara olanak tanır:
+  - Koşullu erişim
+  - Kaçış algılama
+  - Mobil uygulama yönetimi
+
+[Apple Configurator ile Kurulum Yardımcısı kaydı](ios-setup-assistant-enrollment-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. ([Tabloya dön](#overview-of-corporate-owned-device-enrollment-methods))
+
+### USB-Direct
+Doğrudan kayıt. Yönetici Intune ilkesini oluşturur ve bunu Apple Configurator’a aktarır. USB bağlantılı, şirkete ait cihazlar fabrika sıfırlamasına gerek kalmadan doğrudan kaydedilir. Yöneticinin her cihazı el ile kaydetmesi gerekir. Cihazlar, kullanıcısız cihaz olarak yönetilir. Bunlar kilitli veya denetimli değildir ve koşullu erişimi, kaçış algılamasını, mobil uygulama yönetimini destekleyemez. [Apple Configurator ile doğrudan kayıt](ios-direct-enrollment-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. ([Tabloya dön](#overview-of-corporate-owned-device-enrollment-methods))
+
+**Kuruluşa ait mobil cihazların davranışı**
+
+### Silme
+Cihazı kaydetmek için cihazın fabrika ayarlarına sıfırlanması, cihazdan tüm veriler kaldırılarak ilk durumuna döndürülmesi gerekip gerekmediğini belirtir.
+([Tabloya dön](#overview-of-corporate-owned-device-enrollment-methods))
+
+### Benzeşim
+Kayıt yönteminin, cihazı belirli bir kullanıcıya bağlayan “Kullanıcı Benzeşimi” özelliğini destekleyip desteklemediğini belirtir. “Seçenek” ile işaretli cihazlar kullanıcı benzeşimiyle veya benzeşim olmadan kaydedilebilir. Aşağıdakileri desteklemek için kullanıcı benzeşimi gereklidir:
+  - Mobil uygulama yönetimi (MAM) uygulamaları
+  - E-postaya ve şirket verilerine koşullu erişim
+  - Şirket Portalı uygulaması
+
+([Tabloya dön](#overview-of-corporate-owned-device-enrollment-methods))
+
+### Kilitle
+Kullanıcının Intune ilkesini kaldırıp cihazı etkili bir şekilde yönetimden kaldırmasını önlemek için cihazın kilitlenip kilitlenemeyeceğini belirtir. iOS cihazlarında, cihazın kilitlenmesi için cihaz Denetimli modda olmalıdır.
+([Tabloya dön](#overview-of-corporate-owned-device-enrollment-methods)) ([Tabloya dön](#overview-of-corporate-owned-device-enrollment-methods))
 
 ## Cihaz kaydını etkinleştirme  
  Kayıt, kullanıcıların kişisel cihazlarında şirket kaynaklarına erişmesini ve yöneticinin, bu cihazların şirket kaynaklarını koruyan ilkelerle uyumluluğunu sağlamasına olanak tanır. Intune ile "kendi cihazını getir" senaryolarını etkinleştirmenin en iyi yolu budur. Yönetici, kaydı Intune konsolunda etkinleştirilmelidir, bu, cihaz ve kullanıcılara lisanslar atama arasında bir güven ilişkisi oluşturulmasını gerektirebilir. Cihaz ardından, genellikle kullanıcıların iş veya okul kimlik bilgilerini girmesiyle kaydedilir. Cihaz ardından Intune'dan ilke alır ve kaynaklara erişim kazanır.
@@ -64,6 +125,7 @@ Intune istemci yazılımıyla yönetilen bilgisayarlar, seçilerek silinemez vey
 [Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

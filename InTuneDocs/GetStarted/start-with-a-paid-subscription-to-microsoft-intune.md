@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune hızlı başlangıç kılavuzu | Microsoft Intune
-description:
-keywords:
+title: "Intune hızlı başlangıç kılavuzu | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: ca0ca74357b59d9cc6fbf4ec7eb237dff972c411
+
 
 ---
 
@@ -57,6 +51,7 @@ Başlamaya hazır mısınız? Ücretli Intune aboneliğinizi kullanmaya başlark
 ### Silverlight etkin web tarayıcısı olan bir cihaz
 Cihazları, uygulamaları ve ilkeleri yöneteceğiniz Intune yönetim konsoluna erişmek için bu gereklidir. Ayrıca, mobil cihazdan şirket portalı uygulamasına erişilmediğinde, web tabanlı şirket portalına erişmek için de bir web tarayıcısı gerekir. İşleri kolaylaştırmak için, Intune yönetiminde kullandığınız tarayıcının “gizlilik modu” ayarını kullanabilirsiniz (örneğin: Internet Explorer’da **Araçlar** &gt; **InPrivate Gözatma**’ya tıklayabilirsiniz).
 
+>[!TIP]
 >Bu gereksinimden dolayı, Intune yönetim konsoluna erişmek için Microsoft Edge tarayıcısının kullanılması desteklenmez.
 
 
@@ -66,7 +61,7 @@ Intune ile iOS veya Windows Phone cihazlarını yönetiyorsanız, sertifikalar v
 - Şirket portalı uygulamasını Mağaza’dan yükleyen **Windows Phone 8.1** kullanıcıları için sertifika gerekmez. Öte yandan, **Windows Phone 8.0** için veya Intune kullanarak şirket portalı uygulamasını Windows Phone 8.1 cihazlarına dağıtmak için [Symantec kod imzalama sertifikası](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do) gerekir.
 
 >[!NOTE]
->Bu hızlı başlangıç kılavuzunda, kullanıcılarınızın Şirket Portalı uygulamasını Windows Phone 8.1 veya üzeri bir cihazda Mağaza’dan aldığı varsayılır. Windows Phone 8.0 desteği hakkında daha fazla bilgi için, bkz. [Microsoft Intune ile Windows Phone 8.0 yönetimini ayarlama](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune)
+>Bu hızlı başlangıç kılavuzunda, kullanıcılarınızın Şirket Portalı uygulamasını Windows Phone 8.1 veya üzeri bir cihazda Mağaza’dan aldığı varsayılır. Windows Phone 8.0 desteği hakkında daha fazla bilgi için, bkz. [Microsoft Intune ile Windows Phone 8.0 yönetimini ayarlama](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
 
 - Windows bilgisayarlarını cihaz olarak kaydederken veya [Microsoft Intune için Windows bilgisayar istemcisini yüklerken](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune), **Windows bilgisayarlarına** veya **Windows RT cihazlarına** yönelik sertifika gereksinimi yoktur.
 
@@ -76,8 +71,10 @@ Intune ile iOS veya Windows Phone cihazlarını yönetiyorsanız, sertifikalar v
 Intune hızlı başlangıç kılavuzuyla çalışmaya başlamanın tam zamanı!
 
 >[!div class="step-by-step"]
+[**Intune'da oturum açma** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

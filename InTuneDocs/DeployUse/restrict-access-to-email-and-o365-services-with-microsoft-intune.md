@@ -1,31 +1,24 @@
 ---
-# required metadata
-
-title: E-posta ve O365 hizmetlerine erişimi kısıtlama | Microsoft Intune
-description:
-keywords:
+title: "E-posta ve O365 hizmetlerine erişimi kısıtlama | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
+ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+
 
 ---
 
-# Microsoft Intune ile e-posta ve O365 hizmetlerine erişimi kısıtlama
+# Microsoft Intune ile e-posta, O365 hizmetleri ve diğer hizmetlere erişimi kısıtlama
 Intune’un koşullu erişimiyle, şirket e-postanıza ve O365 hizmetlerine erişimi kısıtlayabilirsiniz. Intune'un koşullu erişim özelliği, şirketinizin e-postasına ve O365 hizmetlerine erişimin, ayarladığınız kurallara uyan cihazlarla sınırlı olduğundan emin olmanızı sağlar.
 ## Koşullu erişim nasıl çalışır?
 Uyumluluk ilkesi ayarları kullanılarak cihazın uyumluluğunu değerlendirilir. Koşullu erişim, belirli bir hizmete erişimi kısıtlamak veya erişim izni vermek için bu değerlendirmeyi kullanır. Koşullu erişim ilkesi uyumluluk ilkesiyle birlikte kullanıldığında, yalnızca uyumlu cihazların hizmete erişmesine izin verilir.
@@ -37,7 +30,7 @@ Cihazlar ilkelerde ayarlanan koşulları karşılamadığında, kullanıcı ciha
 
 Tipik bir koşullu erişim akışı:
 
-![Cihazın hizmete erişimine izin verilmesini veya bu erişimin engellenmesini belirlemek için kullanılan karar noktalarının gösterildiği diyagram](./media/ConditionalAccess4.png)
+![Şemada, bir cihazın hizmete erişimine izin verilmesini veya bu erişimin engellenmesini belirlemek için kullanılan karar noktaları gösterilmektedir](../media/ConditionalAccess4.png)
 
 ## Koşullu erişim ilkesi nasıl yapılandırılır?
 Microsoft **Şirket İçi Exchange**’e, **Exchange Online**’a, **Ayrılmış Exchange Online**’a, **SharePoint Online**’a ve **Skype Kurumsal Çevrimiçi Sürüm**’e erişimi yönetmek için koşullu erişim kullanın.
@@ -67,8 +60,10 @@ Diğer Intune ilkelerinden farklı olarak, koşullu erişim ilkelerini dağıtma
   - [Eski Ayrılmış Exchange Online için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [SharePoint Online için koşullu erişim ilkesi oluşturma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Skype Kurumsal Çevrimiçi için koşullu erişim ilkesi oluşturma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Dynamics CRM Online için koşullu erişim ilkesi oluşturma](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 
