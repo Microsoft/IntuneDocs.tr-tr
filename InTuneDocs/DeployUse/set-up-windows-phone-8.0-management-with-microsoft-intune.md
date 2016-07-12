@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows Phone 8.0 yönetimini ayarlama | Microsoft Intune
-description:
-keywords:
+title: "Windows Phone 8.0 yönetimini ayarlama | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: eed5855f3e27460146703ddf40fd935229a974e5
+ms.openlocfilehash: 02f9b7c7abe2daf942299015bfdfb052755ec2de
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 Windows Phone 8.0’da, Intune Şirket Portalı uygulamasının yüklenebilmesi ve cihaz yönetimine izin verilmesi için bir Symantec sertifikasının yüklenmesi gerekir. İş kolu uygulamalarını imzalamak için de bir sertifika gereklidir. Aşağıdaki konu yalnızca Windows Phone 8.0’a yöneliktir. Windows Phone 8.1 veya üstünü (Windows 10 Mobile da dahil) yönetmek için bkz. [Windows Phone kaydını ayarlama](set-up-windows-phone-management-with-microsoft-intune.md).
 
-> [!IMPORTANT] Eylül 2016’dan başlayarak Windows 8.0 ve Windows Phone 8.0 için Şirket Portalı uygulaması artık indirilemeyecektir.
+> [!IMPORTANT]
+> Eylül 2016’dan başlayarak Windows 8.0 ve Windows Phone 8.0 için Şirket Portalı uygulaması artık indirilemeyecektir.
 
 -   **Windows Phone 8** - Sertifika gerekir
 -   **Windows Phone 8.1 ve Windows 10 Mobile**’a yalnızca aşağıdaki durumlarda sertifika gerekir:
@@ -41,7 +36,8 @@ Windows Phone 8.0’da, Intune Şirket Portalı uygulamasının yüklenebilmesi 
 
 ![Sertifika gereksinimleri diyagramı](../media/wpcertreqs.png)
 
-  > [!IMPORTANT] Belirli Windows ve Windows Phone mobil cihazlarını yönetmek için kullanılan Symantec sertifikasının [düzenli aralıklarla yenilenmesi gerekir](renew-a-symantec-code-signing-certificate.md).
+  > [!IMPORTANT]
+  > Belirli Windows ve Windows Phone mobil cihazlarını yönetmek için kullanılan Symantec sertifikasının [düzenli aralıklarla yenilenmesi gerekir](renew-a-symantec-code-signing-certificate.md).
 
 Windows Phone mobil cihaz yönetimi için kurulum gereksinimleri cihazları nasıl yöneteceğinize bağlıdır.  Şirketinizin DNS kaydında iki CNAME ayarlamak kullanıcıların kaydolmasını kolaylaştırır. Kullanıcılarınız Şirket Portalı uygulamasını Mağaza’dan indirecekse, DNS ayarlarını yapılandırdıktan sonra yalnızca Şirket Portalı’nı ayarlayıp kullanıcılara nasıl kaydolacaklarını söylemeniz yeterlidir.  Şirket Portalı’nı dağıtacağınız Windows Phone 8.0 veya Windows Phone 8.1 cihazları için, uygulamanın kodunu imzalamak amacıyla bir Symantec sertifikasına ihtiyacınız vardır.
 
@@ -140,7 +136,7 @@ Windows Phone mobil cihaz yönetimi için kurulum gereksinimleri cihazları nas�
 
 3.  **AETX dosyası oluşturma** Windows Phone SDK 8.0’ın parçası olan AETGenerator.exe dosyasını kullanarak Symantec PFX dosyasından bir uygulama kaydı belirteci (.aetx) dosyası oluşturun. AETX dosyasının nasıl oluşturulacağına ilişkin yönergeler için bkz. [Windows Phone için uygulama kaydı belirteci oluşturma](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
 
-4.  **Windows 8.1 için Windows SDK’sını indirme** [Windows Phone SDK’sını](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525) indirin ve yükleyin. Şirket Portalı uygulamasına dahil edilen PowerShell betiğinin varsayılan yükleme konumunu ( `${env:ProgramFiles(x86)}\Windows Kits\8.1`) kullandığını unutmayın. Başka bir yere yüklerseniz, bir cmdlet parametresinde konumu eklemeniz gerekir.
+4.  **Windows 8.1 için Windows SDK’sını indirme** [Windows Phone SDK’sını](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525) indirin ve yükleyin. Şirket Portalı uygulamasına dahil edilen PowerShell betiğinin varsayılan yükleme konumunu (`${env:ProgramFiles(x86)}\Windows Kits\8.1`) kullandığını unutmayın. Başka bir yere yüklerseniz, bir cmdlet parametresinde konumu eklemeniz gerekir.
 
 5.  **PowerShell kullanarak uygulama kodunu imzalama** Yönetici olarak, Windows SDK’sı ve Symantec Kurumsal Mobil Kod İmzalama Sertifikası yüklenmiş ana bilgisayarda **Windows PowerShell**’i açın, Sign-WinPhoneCompanyPortal.ps1 dosyasına gidin ve betiği çalıştırın.
 
@@ -186,6 +182,7 @@ Windows Phone mobil cihaz yönetimi için kurulum gereksinimleri cihazları nas�
     > -   Dışarıdan yüklenen uygulamaların yüklenmesi gerekiyorsa ve Windows Phone 8.0 cihazlarının kaydolması ve ssp.xap'ı alması gerekiyorsa, ssp.xap'ın yeni bir yazılım dağıtımını oluşturun ve **Kaldır** eylemiyle dağıtın. Windows Phone 8.0 cihazları, uygulamaların zorla yüklenmesini veya kaldırılmasını desteklemediğinden, dağıtımı görmezden gelir. Windows Phone 8.1 cihazları, kaldırma eyleminin destekler ve ssp.xap'ı kaldırır.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

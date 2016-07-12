@@ -1,37 +1,33 @@
 ---
-# required metadata
-
-title: iOS ilke ayarları | Microsoft Intune
-description:
-keywords:
+title: "iOS ilke ayarları | Microsoft Intune"
+description: "Intune ile yönettiğiniz iOS cihazlarında ayarları ve özellikleri denetleyen ilkeler oluşturun."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9a492a16605130743b943f6aa49d1d633eb97d4
+ms.openlocfilehash: 3292df922eeb53108f2b34d4113b0b6c5a114564
+
 
 ---
 
 # Microsoft Intune’da iOS ilke ayarları
 
+Intune, iOS cihazlarda yapılandırabileceğiniz çeşitli yerleşik genel ayarlar sağlar. Ayrıca, Intune'dan kullanılamayan özel ayarları oluşturmak için Apple Configurator aracını kullanabilirsiniz.
+
 ## Genel yapılandırma ilkesi ayarları
 
 Microsoft Intune **iOS genel yapılandırma ilkesini** kullanarak aşağıdaki ayarları yapılandırabilirsiniz:
 
--   **Mobil cihaz güvenliği ayarları** – Cihazda bir dizi özelliği ve işlevi denetlemenize olanak tanıyan önceden tanımlı ayarlar listesinden seçim yapın.
+-   **Genel cihaz ve güvenlik ayarları** – Cihazda bir dizi özelliği ve işlevi denetlemenize olanak tanıyan önceden tanımlı ayarlar listesinden seçim yapın.
 
 -   **Bilgi noktası modu** -Bir cihazı yalnızca belirli özellikleri çalışacak şekilde kilitler. Örneğin, bir cihazın yalnızca belirttiğiniz bir yönetilen uygulamayı çalıştırmasına izin verebilir veya bir cihazdaki ses düğmelerini devre dışı bırakabilirsiniz. Bu ayarlar, bir cihazın tanıtım modeli için veya satış noktası cihazı gibi yalnızca bir işlevi gerçekleştirmeye ayrılan bir cihaz için kullanılabilir.
 
@@ -47,15 +43,15 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 |Ayar adı|Ayrıntılar|iOS|
 |----------------|-------|
 |**Mobil cihazların kilidini açmak için bir parola gerektir**|Kullanıcıların cihazlarına erişmek için parola girmelerinin gerekip gerekmediğini belirtin.|Evet|
-|**Gerekli parola türü**|Gerekli parola türünü belirtir. Örneğin, yalnızca sayısal veya alfasayısal olabilir.|Evet|
-|**Gerekli parola türü – Minimum karakter kümesi sayısı**|Küçük harfler, büyük harfler, rakamlar ve semboller şeklinde dört karakter kümesi vardır. Bu ayar parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir). Ancak iOS cihazları için bu ayar, parolanın içermesi gereken sembol karakterlerinin sayısını belirtir)|Evet|
+|**Gerekli parola türü**|Gerekli parola türünü belirtir (yalnızca sayısal veya alfasayısal gibi).|Evet|
+|**Gerekli parola türü – Minimum karakter kümesi sayısı**|Parolaya içermesi gereken sembol karakterlerinin sayısını belirtir (**#** veya **@** gibi).|Evet|
 |**Minimum parola uzunluğu**|Parolada bulunacak minimum karakter sayısını belirtir.|Evet|
 |**Basit parolalara izin ver**|‘0000’ ve ‘1234’ gibi basit parolalara izin verin.|Evet|
 |**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Bu sayıda oturum açma denemesi başarısız olursa cihazı temizler.|Evet|
 |**Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı**<sup>1</sup>|Cihazın ekranı kapatılmadan önce beklenecek dakika sayısını belirtin.|Evet|
 |**Parola geçerlilik süresi (gün)**|Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|
 |**Parola geçmişini anımsa**|Kullanıcının önceden kullanmış olduğu parolaları kullanıp kullanamayacağını belirtir.|Evet|
-|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.|Evet|
+|**Parola geçmişini anımsa** – **Önceki parolaların yeniden kullanılmasını önle**|Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.|Evet|
 |**Parola istenmeden önce geçen işlem yapılmayan dakika sayısı**<sup>1</sup>|Kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalabileceğini belirtir.|Evet|
 |**Parmak izi ile kilit açmaya izin ver**|Parmak izi kullanarak cihaz kilidini açmaya izin verin.|iOS 7.1 ve üzeri|
 <sup>1</sup> iOS cihazlarında **Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı** ve **Parola istenmeden önce geçen işlem yapılmayan dakika sayısı** ayarlarını sırayla uygulayarak yapılandırın. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
@@ -77,7 +73,7 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 |Ayar adı|Ayrıntılar|iOS|
 |----------------|-------|
 |**iCloud'a yedeklemeye izin ver**|Kullanıcının cihazı iCloud’a yedeklemesine izin verir.|Evet|
-|**iCloud'a belge eşitlemeye izin ver**|iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verin.Evet|
+|**iCloud'a belge eşitlemeye izin ver**|iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verin.|Evet|
 |**iCloud'a Fotoğraf Akışını eşitlemeye izin ver**|Cihazdaki fotoğrafların iCloud’a eşitlenmesine izin verin.|Evet|
 |**Şifreli yedekleme iste**|Tüm cihaz yedeklemelerinin şifrelenmesini zorunlu tutar.|Evet|
 
@@ -97,7 +93,7 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 |Ayar adı|Ayrıntılar|iOS|
 |----------------|-------|
 |**Uygulama depolamaya izin ver**|Cihazın uygulama mağazasına erişmesine izin verir.|Evet|
-|**Uygulama deposuna erişim için parola iste**|Evet|
+|**Uygulama deposuna erişim için parola iste**|Kullanıcının, uygulama mağazası ziyaret edebilmesi için önce bir parola girmesini gerektirir.|Evet|
 |**Uygulama içi satın almalara izin ver**|Çalışan bir uygulamanın içinden mağazada alışveriş yapılmasına izin verir.|Evet|
 |**Diğer yönetilmeyen uygulamalardaki yönetilen belgelere izin ver**|Şirket belgelerinin herhangi bir uygulamada görüntülenmesine izin verir.<br>**Örnek:** Kullanıcıların OneDrive uygulamasından Dropbox’a dosya kaydetmesini engellemek istiyorsunuz. Bu ayarı hayır olarak yapılandırın. Cihaz ilkeyi aldıktan (örneğin, yeniden başlatıldıktan) sonra artık kaydetmeye izin vermez.|iOS 7.1 ve üzeri|
 |**Diğer yönetilen uygulamalardaki yönetilmeyen belgelere izin ver**|Tüm belgelerin şirketin yönetilen uygulamalarında görüntülenmesine izin verin.|iOS 7.1 ve üzeri|
@@ -135,7 +131,7 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 
 
 ### Uyumlu ve uyumlu olmayan uygulamalar için ayarlar
-**Uyumlu ve Uyumsuz Uygulamalar** listesinde, aşağıdaki bilgileri kullanarak uyumlu veya uyumsuz uygulamalar listesini belirtin:
+**Uyumlu &amp; Uyumsuz Uygulamalar** listesinde, aşağıdaki bilgileri kullanarak uyumlu veya uyumsuz uygulamalar listesini belirtin:
 
 > [!NOTE]
 > Tek bir ilke, yalnızca uyumlu uygulamaların veya uyumsuz uygulamaların listesini içerebilir. İkisi de aynı ilkede belirtemezsiniz.
@@ -170,7 +166,8 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Yap
 |**Yardımcı dokunmayı etkinleştir**|Ekran hareketlerini gerçekleştirmekte zorlanabilecek kullanıcıların bunları yapmasına yardımcı olan **Yardımcı Dokunma** erişilebilirlik ayarını etkinleştirir veya devre dışı bırakır.|
 |**Yardımcı dokunma ayarlarını etkinleştir**|Yardımcı dokunma işlevini ayarlamanıza olanak veren yardımcı dokunma ayarlarını etkinleştirir veya devre dışı bırakır.|
 |**Seçimi seslendirmeyi etkinleştir**|Seçtiğiniz metni sesli okuyabilen **Seçimi Seslendir** erişilebilirlik ayarını etkinleştirir veya devre dışı bırakır.|
-> [!NOTE] Aşağıdaki notlar, iOS cihazlarında bilgi noktası modu ayarları için geçerlidir:
+> [!NOTE]
+> aşağıdaki notlar, iOS cihazlarda bilgi noktası modu ayarları için geçerlidir:
 > 
 > -   Bir iOS cihazını bilgi noktası modu için yapılandırmadan önce, [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) 'u veya cihaz kayıt yöneticisini kullanarak cihazı denetimli moduna almanız gerekir. Apple Configurator Tool hakkında daha fazla bilgi için Apple belgelerinize bakın.
 > -   Belirttiğiniz iOS uygulaması yapılandırma ilkesini dağıttıktan sonra yüklendiyse, cihaz yeniden başlatılana kadar bilgi noktası moduna girmez.
@@ -195,7 +192,8 @@ Sayfanın URL'sini kopyalayın ve bunu uyumlu veya uyumsuz uygulamalar listesini
 
 **Örnek:**  **iPad için Microsoft Word**ifadesini aratın. Kullandığınız URL **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** olacaktır.
 
-> [!NOTE] iTunes yazılımını kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL'sini alabilirsiniz.
+> [!NOTE]
+> iTunes yazılımını kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL'sini alabilirsiniz.
 
 
 ## Özel ilke ayarları
@@ -230,6 +228,7 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

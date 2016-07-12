@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: E-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma | Microsoft Intune
-description:
-keywords:
+title: "E-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/05/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
+ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+
 
 ---
 
@@ -89,9 +83,10 @@ E-posta profilinde parola yer almadığı için e-postaya bağlanırken kullanı
     |**Eşitleme zamanlaması** (Samsung KNOX, Windows Phone 8 ve üstü, Windows 10)|Cihazların Exchange Server'dan verileri eşitleyeceği zamanlamayı seçin. Ayrıca, verileri ulaşır ulaşmaz eşitleyen **İletiler geldiğinde** seçeneğini veya eşitlemenin cihaz kullanıcısı tarafından başlatılması gereken **El ile** seçeneğini belirleyebilirsiniz.|
     |**SSL Kullan**|E-posta gönderirken, e-posta alırken ve Exchange Server ile iletişim kurarken Güvenli Yuva Katmanı (SSL) iletişimini kullanın.<br /><br />Samsung KNOX 4.0 veya üzeri bir sürümü çalıştıran cihazlarda Exchange Server’ın SSL sertifikasını dışarı aktarmanız ve Intune’da bunu Android Güvenilir Sertifika Profili olarak dağıtmanız gerekir. Intune, Exchange Server'a başka yollarla yüklenirse bu sertifikaya erişimi desteklemez.|
     |**Eşitlenecek içerik türü**|Cihazlara eşitlemek için istediğiniz içerik türlerini seçin.| 
-    |**Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver** (yalnızca iOS)|Üçüncü taraf uygulamaların yerel e-posta uygulamasında e-postayı açmasına izin verin (örneğin e-postaya dosya eklemek için).|
+    |**Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver** (yalnızca iOS)|Kullanıcının, bu profili, e-posta göndermek için varsayılan hesap olarak seçmesini sağlayın ve üçüncü taraf uygulamalarının, yerel e-posta uygulamasında e-posta açmasına izin verin (örneğin e-postaya dosya eklemek için).|
 
-    > [!IMPORTANT] Bir e-posta profilini dağıttıktan sonra **konak** veya **E-posta adresi** değerlerini değiştirmek isterseniz mevcut e-posta profilini silmeniz ve gerekli değerlerle yeni bir tane oluşturmanız gerekir.
+    > [!IMPORTANT]
+    > Bir e-posta profilini dağıttıktan sonra **konak** veya **E-posta adresi** değerlerini değiştirmek isterseniz mevcut e-posta profilini silmeniz ve gerekli değerlerle yeni bir tane oluşturmanız gerekir.
 
 4.  İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.
 
@@ -109,11 +104,13 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 
  **İlke** çalışma alanının **Genel Bakış** sayfasında, bir durum özeti ve uyarılar ilkeyle ilgili işlem yapmanız gereken durumları tanımlar. Ayrıca, Pano çalışma alanında bir durum özeti görüntülenir.
 
-> [!NOTE] Bir cihazdan e-posta profilini kaldırmak isterseniz, dağıtımı düzenleyin ve cihazın üye olduğu tüm grupları kaldırın.
+> [!NOTE]
+> Bir cihazdan e-posta profilini kaldırmak isterseniz, dağıtımı düzenleyin ve cihazın üye olduğu tüm grupları kaldırın.
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

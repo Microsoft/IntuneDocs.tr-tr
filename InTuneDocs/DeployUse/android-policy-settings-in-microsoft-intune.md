@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android ve Samsung KNOX yapılandırma ilkesi ayarları | Microsoft Intune
-description:
-keywords:
+title: "Android ve Samsung KNOX yapılandırma ilkesi ayarları | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
+ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+
 
 ---
 
@@ -52,9 +46,10 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 |**Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı**|Cihazın otomatik olarak kilitlenmesinden önce beklenecek dakika sayısını belirtin.|Evet|Evet|
 |**Parola geçerlilik süresi (gün)**|Parolanın değiştirilmesi gerekmeden önce geçmesi gereken gün sayısı.|Evet|Evet|
 |**Parola geçmişini anımsa**|Daha önce kullanılmış olan parolalardan burada belirtilen sayıda parola anımsanır.|Evet|Evet|
-|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılan parolaların yeniden kullanılmasını önler.|Evet|Evet|
+|**Parola geçmişini anımsa** – **Önceki parolaların yeniden kullanılmasını önle**|Önceden kullanılan parolaların yeniden kullanılmasını önler.|Evet|Evet|
 |**Parola kalitesi**|Gereken parola karmaşıklık düzeyini ve biyometrik cihazların kullanılıp kullanılamayacağını seçin.|Evet|Evet|
 |**Parmak izi ile kilit açmaya izin ver**|Cihaz kilidini açmak için parmak izi kullanılmasına izin verin.|Hayır|Evet|
+|**Akıllı Kilit ve diğer güven aracılarına izin ver**<br>(Android 5 ve üzeri)|Uyumlu Android cihazlarda Akıllı Kilit özelliğini denetlemenizi sağlar. Güven aracıları olarak da bilinen bu telefon özelliği, cihaz belirli bir Bluetooth cihazına bağlı olmak ya da bir NFC etiketinin yakınında olmak gibi güvenilir bir konumda bulunduğunda, cihaz kilit ekranı parolasının devre dışı bırakılmasına veya atlanmasına olanak sağlar. Son kullanıcıların Akıllı Kilit’i yapılandırmasını önlemek için bu ayarı kullanabilirsiniz.|Evet|Hayır|
 
 ### Şifreleme ayarları
 
@@ -73,7 +68,7 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 ### Bulut ayarları – belgeler ve veriler
 
-|Ayar adı|Ayrıntılar|Android be Samsung KNOX|Android 4.0+|
+|Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Google yedeklemesine izin ver**|Google yedeklemesinin kullanılmasına izin verir.|Hayır|Evet|
 
@@ -95,7 +90,7 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 ### Uygulama ayarları - uygulamalar
 
-|Ayar adı|Android 4.0+|Samsung KNOX|
+|Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Google Play mağazasına izin ver**|Kullanıcının cihazda Google Play mağazasına erişmesine izin verin.|Hayır|Evet|
 
@@ -131,7 +126,7 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 |**YouTube'a izin ver**|Cihazda YouTube’un kullanımına izin verin.|Hayır|Evet|
 
 ### Uyumlu ve uyumlu olmayan uygulamalar için ayarlar
-**Uyumlu ve Uyumsuz Uygulamalar** listesinde, aşağıdaki bilgileri kullanarak uyumlu veya uyumsuz uygulamalar listesini belirtin:
+**Uyumlu &amp; Uyumsuz Uygulamalar** listesinde, aşağıdaki bilgileri kullanarak uyumlu veya uyumsuz uygulamalar listesini belirtin:
 
 > [!NOTE]
 > Tek bir ilke, yalnızca uyumlu uygulamaların veya uyumsuz uygulamaların listesini içerebilir. İkisi de aynı ilkede belirtemezsiniz.
@@ -179,7 +174,8 @@ Android cihazlardaki özellikleri denetlemek için kullanılabilen OMA-URI (Open
 
 Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarlarını dağıtmanıza olanak sağlamak için tasarlanmıştır.
 
-> [!NOTE] Şu anda Android özel ilkeleri yalnızca önceden paylaşılan bir anahtar içeren Android cihazlar için Wi-Fi ayarlarının yapılandırılmasını destekler.
+> [!NOTE]
+> Şu anda Android özel ilkeleri yalnızca önceden paylaşılan bir anahtar içeren Android cihazlar için Wi-Fi ayarlarının yapılandırılmasını destekler.
 
 ### Genel ayarlar
 
@@ -257,6 +253,7 @@ Intune, Android cihazlar için Wi-Fi profillerini desteklese de bu özellik şu 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune ilke başvurusu | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune ilke başvurusu | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 Cihazlarınızı yönetirken hangi Microsoft Intune ilkesine ihtiyaç duyduğunuza karar vermek için bu konu başlığı altındaki bilgileri kullanın.
 
-> İlkeleri kullanma hakkında daha ayrıntılı bilgi için bkz. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+> [!TIP]
+> İlkeleri kullanma hakkında daha ayrıntılı bilgi için bkz. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 
 ## Android yapılandırma ilkeleri
@@ -42,7 +37,7 @@ Cihazlarınızı yönetirken hangi Microsoft Intune ilkesine ihtiyaç duyduğunu
 |**PKCS #12 (.PFX) Sertifika Profili (Android 4 ve üzeri)**|Cihaz sertifika istekleri için PFX ayarları oluşturmak ve dağıtmak istiyorsanız bu profili kullanın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**SCEP Sertifika Profili (Android 4 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için güvenilen bir mobil cihaz sertifikasıyla birlikte kullanılabilen bir Basit Sertifika Kaydı Protokolü yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**Güvenilir Sertifika Profili (Android 4 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için kullanılabilen bir güvenilir mobil cihaz sertifikası yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
-|**VPN Profili (Android 4 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
+|**VPN Profili (Android 4 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune.md’de VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi Profili (Android 4 ve üzeri)**|Kablosuz ağ ayarlarını yapılandırın ve kuruluşunuzdaki kullanıcılara dağıtın. Bu ayarları dağıtarak kablosuz ağa bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da Wi-Fi bağlantıları](wi-fi-connections-in-microsoft-intune.md).|
 
 ## iOS yapılandırma ilkeleri
@@ -54,7 +49,7 @@ Cihazlarınızı yönetirken hangi Microsoft Intune ilkesine ihtiyaç duyduğunu
 |**Genel Yapılandırma (iOS 7.1 ve üzeri)**|Mobil cihaz güvenliği ve işlev ayarlarını yapılandırın.<br />-   Uyumlu veya uyumsuz olan uygulamaları belirtin ve bunların ne zaman kullanıldığını bildirin.<br />Cihazı yalnızca belirli özellikleri çalışacak şekilde kilitleyen (örneğin, cihazın yalnızca bir uygulama çalıştırmasına izin vermek veya ses düğmelerini devre dışı bırakmak) bilgi noktası modunu yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da iOS ilke ayarları](ios-policy-settings-in-microsoft-intune.md).|
 |**SCEP Sertifika Profili (iOS 7.1 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için güvenilen bir mobil cihaz sertifikasıyla birlikte kullanılabilen bir Basit Sertifika Kaydı Protokolü yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**Güvenilir Sertifika Profili (iOS 7.1 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için kullanılabilen bir güvenilir mobil cihaz sertifikası yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
-|**VPN Profili (iOS 7.1 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
+|**VPN Profili (iOS 7.1 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune.md’de VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi Profili (iOS 7.1 ve üzeri)**|Kablosuz ağ ayarlarını yapılandırın ve kuruluşunuzdaki kullanıcılara dağıtın. Bu ayarları dağıtarak kablosuz ağa bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da Wi-Fi bağlantıları](wi-fi-connections-in-microsoft-intune.md).|
 |**Mobil Uygulama Yapılandırma İlkesi (iOS 7.1 ve üzeri)**|Kullanıcı bir iOS uygulaması çalıştırdığında gerekebilecek ayarları otomatik olarak sağlamak için mobil uygulama yapılandırma ilkelerini kullanın.<br /><br />Ayrıntılar için bkz. [iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
 
@@ -66,7 +61,7 @@ Cihazlarınızı yönetirken hangi Microsoft Intune ilkesine ihtiyaç duyduğunu
 |**Genel Yapılandırma (Mac OS X 10.9 ve üzeri)**|Mobil cihaz güvenliği ve işlev ayarlarını yapılandırın.<br />Uyumlu veya uyumsuz olan uygulamaları belirtin ve bunların ne zaman kullanıldığını bildirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da Mac OS X ilke ayarları](mac-os-x-policy-settings-in-microsoft-intune.md).|
 |**SCEP Sertifika Profili (Mac OS X 10.9 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için güvenilen bir mobil cihaz sertifikasıyla birlikte kullanılabilen bir Basit Sertifika Kaydı Protokolü yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**Güvenilir Sertifika Profili (Mac OS X 10.9 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için kullanılabilen bir güvenilir mobil cihaz sertifikası yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
-|**VPN Profili (Mac OS X 10.9 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
+|**VPN Profili (Mac OS X 10.9 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune.md’de VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi Profili (Mac OS X 10.9 ve üzeri)**|Kablosuz ağ ayarlarını yapılandırın ve kuruluşunuzdaki kullanıcılara dağıtın. Bu ayarları dağıtarak kablosuz ağa bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da Wi-Fi bağlantıları](wi-fi-connections-in-microsoft-intune.md).|
 
 ## Windows yapılandırma ilkeleri
@@ -85,7 +80,7 @@ Yalnızca Windows Phone ve kayıtlı Windows cihazları için geçerlidir.
 |**PKCS #12 (.PFX) Sertifika Profili (Windows 10 Masaüstü ve Mobile ile üzeri)**|Cihaz sertifika istekleri için PFX ayarları oluşturmak ve dağıtmak istiyorsanız bu profili kullanın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**SCEP Sertifika Profili (Windows 8.1 ve üzeri)**<br /><br />**SCEP Sertifikası Profili (Windows Phone 8.1 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için güvenilen bir mobil cihaz sertifikasıyla birlikte kullanılabilen bir Basit Sertifika Kaydı Protokolü yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**Güvenilir Sertifika Profili (Windows 8.1 ve üzeri)**<br /><br />**Güvenilir Sertifika Profili (Windows Phone 8.1 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için kullanılabilen bir güvenilir mobil cihaz sertifikası yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
-|**VPN Profili (Windows 10 Masaüstü ve Mobile ile üzeri)**<br /><br />**VPN Profili (Windows 8.1 ve üzeri)**<br /><br />**VPN Profili (Windows Phone 8.1 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
+|**VPN Profili (Windows 10 Masaüstü ve Mobile ile üzeri)**<br /><br />**VPN Profili (Windows 8.1 ve üzeri)**<br /><br />**VPN Profili (Windows Phone 8.1 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune.md’de VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi Üzerinden İçeri Aktarma**|Önceden bir dosyaya aktardığınız Windows Wi-Fi yapılandırmalarını içeri aktarın ve dağıtın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da Wi-Fi bağlantıları](wi-fi-connections-in-microsoft-intune.md).|
 
 ## Yazılım ilkeleri
@@ -93,7 +88,7 @@ Yalnızca Windows Phone ve kayıtlı Windows cihazları için geçerlidir.
 |İlke adı|Şunları yapmak istediğinizde kullanın|
 |---------------|------------------------|
 |**Yönetilen Tarayıcı İlkesi (Android 4 ve üzeri)**<br /><br />**Yönetilen Tarayıcı İlkesi (iOS 7.1 ve üzeri)**|Kullanıcıların yönetilen tarayıcı uygulamasını kullanırken erişebileceği ve erişemeyeceği web sitelerini belirtin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme](manage-internet-access-using-managed-browser-policies.md).|
-|**Mobil Uygulama Yönetimi İlkesi (Android 4 ve üzeri)**<br /><br />**Mobil Uygulama Yönetim İlkesi (iOS 7.1 ve üzeri)**|Dağıttığınız uygulamaları şirket uyumluluk ve güvenlik ilkeleriyle uyumlu hale getirmeye yardımcı olmak için uygulamaların işlevlerini değiştirin. Örneğin, yönetilen bir uygulama içinde kesme, kopyalama ve yapıştırma işlemlerini kısıtlayabilir veya bir uygulamayı tüm web bağlantılarını yönetilen tarayıcıda açmak için yapılandırabilirsiniz.<br /><br />Ayrıntılar için bkz. [Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).|
+|**Mobil Uygulama Yönetimi İlkesi (Android 4 ve üzeri)**<br /><br />**Mobil Uygulama Yönetimi İlkesi (iOS 7.1 ve üzeri)**|Dağıttığınız uygulamaları şirket uyumluluk ve güvenlik ilkeleriyle uyumlu hale getirmeye yardımcı olmak için uygulamaların işlevlerini değiştirin. Örneğin, yönetilen bir uygulama içinde kesme, kopyalama ve yapıştırma işlemlerini kısıtlayabilir veya bir uygulamayı tüm web bağlantılarını yönetilen tarayıcıda açmak için yapılandırabilirsiniz.<br /><br />Ayrıntılar için bkz. [Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).|
 
 ## Ortak Mobil Cihaz Ayarları
 
@@ -109,8 +104,8 @@ Yalnızca Windows Phone ve kayıtlı Windows cihazları için geçerlidir.
 |İlke adı|Şunları yapmak istediğinizde kullanın|
 |---------------|------------------------|
 |**Exchange Online İlkesi**<br /><br />**Exchange Şirket İçi İlkesi**|Microsoft Exchange e-postasına Intune tarafından yönetilmeyen veya oluşturduğunuz bir uyumluluk ilkesiyle uyumlu olmayan cihazlar üzerinden erişimi yönetin.<br /><br />Ayrıntılar için bkz. [Intune ile Exchange Online’a ve yeni Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama](restrict-access-to-exchange-online-with-microsoft-intune.md).|
-|**SharePoint Online İlkesi**|SharePoint Online'a Intune tarafından yönetilmeyen veya oluşturduğunuz bir uyumluluk ilkesiyle uyumlu olmayan cihazlar üzerinden erişimi yönetin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’la SharePoint Online’a erişimi kısıtlama](restrict-access-to-sharepoint-online-with-microsoft-intune.md)|
-|**Skype Kurumsal**|Skype Kurumsal’a Intune tarafından yönetilmeyen veya oluşturduğunuz bir uyumluluk ilkesiyle uyumlu olmayan cihazlar üzerinden erişimi yönetin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’la Skype Kurumsal’a erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)|
+|**SharePoint Online İlkesi**|SharePoint Online'a Intune tarafından yönetilmeyen veya oluşturduğunuz bir uyumluluk ilkesiyle uyumlu olmayan cihazlar üzerinden erişimi yönetin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’la SharePoint Online’a erişimi kısıtlama](restrict-access-to-sharepoint-online-with-microsoft-intune.md).|
+|**Skype Kurumsal**|Skype Kurumsal’a Intune tarafından yönetilmeyen veya oluşturduğunuz bir uyumluluk ilkesiyle uyumlu olmayan cihazlar üzerinden erişimi yönetin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’la Skype Kurumsal’a erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md).|
 > [!NOTE]
 > Koşullu erişim ilkeleri kullanıcı ve cihazlara dağıtılmaz. Bunun yerine, gerekli ilkeyi yapılandırırsınız ve ilkede hedeflenen tüm gruplar için geçerli olur.
 
@@ -124,8 +119,8 @@ Yalnızca Windows Phone ve kayıtlı Windows cihazları için geçerlidir.
 
 |İlke adı|Şunları yapmak istediğinizde kullanın|
 |---------------|------------------------|
-|**Microsoft Intune Aracısı Ayarları**|Aşağıdakilerle ilgili ayarlar dahil olmak üzere bilgisayarlarda Intune bilgisayar istemcisini yapılandırın:<br /><br />-   Endpoint Protection<br />-   Yazılım güncelleştirmeleri<br />-   İlke denetimi zamanlaması<br /><br />Bu tür bir ilke yalnızca cihaz gruplarına dağıtılabilir.<br /><br />Intune istemcileri yeni ve güncelleştirilmiş ilkeyi varsayılan olarak 8 saat olan **Güncelleştirme ve uygulama algılama sıklığı** ayarına göre indirir. Ancak, istediğiniz zaman bilgisayarlarda ilke yenileme uygulayabilirsiniz.<br /><br />Ayrıntılar için bkz. [Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
-|**Microsoft Intune Center Ayarları**|Yönetilen bilgisayarlarda, Microsoft Intune Merkezi'nde gösterilen ayrıntıları yapılandırın.<br /><br />Bu tür bir ilke yalnızca cihaz gruplarına dağıtılabilir.<br /><br />Ayrıntılar için bkz. [Microsoft Intune bilgisayar istemcisi ile genel Windows bilgisayarı yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
+|**Microsoft Intune Aracısı Ayarları**|Aşağıdakilerle ilgili ayarlar dahil olmak üzere bilgisayarlarda Intune bilgisayar istemcisini yapılandırın:<br /><br />-   Endpoint Protection<br />-   Yazılım güncelleştirmeleri<br />-   İlke denetimi zamanlaması<br /><br />Bu tür bir ilke yalnızca cihaz gruplarına dağıtılabilir.<br /><br />Intune istemcileri yeni ve güncelleştirilmiş ilkeyi varsayılan olarak 8 saat olan **Güncelleştirme ve uygulama algılama sıklığı** ayarına göre indirir. Ancak, istediğiniz zaman bilgisayarlarda ilke yenileme uygulayabilirsiniz.<br /><br />Ayrıntılar için bkz. [Microsoft Intune'da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
+|**Microsoft Intune Center Ayarları**|Yönetilen bilgisayarlarda, Microsoft Intune Merkezi'nde gösterilen ayrıntıları yapılandırın.<br /><br />Bu tür bir ilke yalnızca cihaz gruplarına dağıtılabilir.<br /><br />Ayrıntılar için bkz. [Microsoft Intune bilgisayar istemcisiyle ortak Windows bilgisayarı yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Windows Güvenlik Duvarı Ayarları**|Bilgisayarlarda aşağıdakiler dahil Windows Güvenlik Duvarı ayarları ve ortak ağ iletişimi için özel durumları yapılandırır:<br /><br />-   BranchCache<br />-   Uzaktan Yardım<br />-   Medya paylaşımı<br /><br />Bu tür bir ilke yalnızca cihaz gruplarına dağıtılabilir.<br /><br />Ayrıntılar için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 
 ### Ayrıca Bkz.
@@ -134,6 +129,7 @@ Yalnızca Windows Phone ve kayıtlı Windows cihazları için geçerlidir.
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

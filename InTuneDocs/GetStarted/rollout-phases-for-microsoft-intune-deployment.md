@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune dağıtımında dağıtım aşamaları | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune dağıtımında dağıtım aşamaları | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 9f3fcead3c41506734508d588ad180d17cc901ee
+
 
 ---
 
@@ -29,17 +23,28 @@ ms.suite: ems
 # Microsoft Intune için dağıtım aşamaları
 Teknik dağıtımın tipik aşamaları Proje Kapsamı, Kavram Kanıtı, Pilot, Kurumsal Dağıtım ve Çalıştırma Durumudur. Bunlar burada kısaca tanımlanmış ve her aşamada nasıl ilerleyeceğiniz hakkında daha fazla bilgi ve önerilerin bağlantıları verilmiştir.
 
-<!--these phase descriptions below are way too short -->
+-   [Proje kapsamı](project-scope.md): Hedeflerinizi, zaman çizelgenizi ve başarı ölçümlerinizi ana hatlarıyla belirtecek, kilit organizasyonel hazırlık etkenlerini tanımlayacak, proje ekibinizin derleyecek ve kuruluşunuzda Microsoft Intune’u başarılı şekilde sunmaya yönelik tüm aşamalar için ilk hazırlıklara başlayacaksınız.
+     > [!NOTE]           
+       Bu şablonlar, proje kapsamında çalışırken kullanışlı olabilir:
+        
+    >- [Intune mu yoksa Configuration Manager ile Intune mu karar şablonu](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+    >- [Mobil uygulamalar için planlama şablonu](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+    >- [Genel cihaz yönetimini planlama şablonu](https://gallery.technet.microsoft.com/General-device-management-334c3792)
+    
 
--   [Proje kapsamı](project-scope.md): Hedefleri, dağıtımı ve dağıtım stratejisini anlayın.
+-   [Kavram kanıtı](proof-of-concept.md): Teknik dağıtım ve ağ mimarisini sınayın ve dağıtımınızın, şirketinizin gereksinimlerini karşılama becerisini belirleyin. Bu aşama, belirli teknik senaryoları doğrulamak üzere tasarlanmış basit bir topolojiyi içerir.  
 
--   [Kavram kanıtı](proof-of-concept.md): Teknik dağıtımı ve ağ mimarisini test edin.
-
--   [Pilot](pilot.md): Geniş kapsamlı dağıtıma hazırlı olarak az sayıda kullanıcıyla ve örnek bir kayıtlı cihaz grubu kullanarak senaryoları, kaynakları ve dağıtım planlarını doğrulayın.
-
--   [Kurumsal dağıtım](enterprise-rollout.md): Tüm bölümler ve kullanıcı grupları genelinde dağıtımı başlatın.
+-   [Pilot](pilot.md): Geniş kapsamlı dağıtıma hazırlı olarak az sayıda kullanıcıyla ve örnek bir kayıtlı cihaz grubu kullanarak senaryoları, kaynakları ve dağıtım planlarını doğrulayın.  Bu aşamada, teknik uygulama, iletişim planı ve eğitim ile destek planlarını da sınayacaksınız.
+-   [Kurumsal sunum](enterprise-rollout.md): İletişimler, eğitim ve destek faaliyetleri de dahil olmak üzere geniş sunum stratejinizi planlayacak ve yürüteceksiniz, ardından tüm departmanlarda ve kullanıcı gruplarında başlatacaksınız.
 
 -   [İşlemler ve bakım](operations-and-maintenance.md): Kullanıcıların benimseme oranı sürekli artarken, tüm önemli aşamalar/odaklanma alanları için işlemleri planlama.
+
+### Ayrıca bkz.
+
+[Sunum ilkeleri](policy-rollout.md)
+
+[Sunum uygulamaları](application-rollout.md)
+
 
 <!--
 These should be linked to topics in the plan & design section once it is back in the TOC
@@ -56,6 +61,7 @@ These topics will help you plan for the rollout of new policies and apps:
 >[**Proje kapsamı** &rarr;](project-scope.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

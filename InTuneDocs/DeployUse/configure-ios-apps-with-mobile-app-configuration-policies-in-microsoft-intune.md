@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS uygulamalarını mobil uygulama yapılandırma ilkeleriyle yapılandırma | Microsoft Intune
-description:
-keywords:
+title: "iOS uygulamalarını mobil uygulama yapılandırma ilkeleriyle yapılandırma | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+
 
 ---
 
@@ -42,7 +36,8 @@ Mobil uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalı�
 
 Bu ilkeleri doğrudan kullanıcılara ve cihazlara dağıtmazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirilir, ardından uygulamayı dağıtırsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde (genellikle ilk çalıştırıldığında) kullanılır.
 
-> [!TIP] Bu ilke türü şu anda yalnızca iOS 7.1 ve üzerini çalıştıran cihazlarda desteklenir ve aşağıdaki uygulama yükleme türlerini destekler:
+> [!TIP]
+> Bu ilke türü şu anda yalnızca iOS 7.1 ve üzerini çalıştıran cihazlarda desteklenir ve aşağıdaki uygulama yükleme türlerini destekler:
 > 
 > -   **Uygulama mağazasından yönetilen iOS uygulaması**
 > -   **iOS için uygulama paketi**
@@ -62,7 +57,8 @@ Bu ilkeleri doğrudan kullanıcılara ve cihazlara dağıtmazsınız. Bunun yeri
 
 4.  Sayfanın **Mobil Uygulama Yapılandırma İlkesi** bölümünde, kutunun içine istediğiniz uygulama yapılandırma ayarlarını girin veya bunları içeren bir XML özellik listesini yapıştırın.
 
-    > [!TIP] XML özellik listeleri hakkında daha fazla bilgi için iOS Geliştirici Kitaplığı’ndaki [XML Özellik Listelerini Anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
+    > [!TIP]
+    > XML özellik listeleri hakkında daha fazla bilgi için iOS Geliştirici Kitaplığı’ndaki [XML Özellik Listelerini Anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
     > 
     > XML özellik listesinin biçimi, yapılandırdığınız uygulamaya bağlı olarak değişir. Kullanılacak tam biçim hakkında ayrıntılı bilgi için uygulamanın sağlayıcısına başvurun.
     > 
@@ -104,7 +100,8 @@ Ardından, uygulamayı her zamanki gibi dağıtma ve izleme aşamasına geçin.
 
 Dağıtılan uygulama bir cihazda çalıştırıldığında, mobil uygulama yapılandırma ilkesinde yapılandırdığınız ayarlarla çalışır.
 
-> [!TIP] Mobil uygulama yapılandırma ilkelerinden biri veya daha fazlası çakışırsa ilkelerin hiçbiri uygulanmaz ve çakışma, Intune yönetim konsolunun **Pano** bölümünde raporlanır.
+> [!TIP]
+> Mobil uygulama yapılandırma ilkelerinden biri veya daha fazlası çakışırsa ilkelerin hiçbiri uygulanmaz ve çakışma, Intune yönetim konsolunun **Pano** bölümünde raporlanır.
 
 ## Mobil uygulama yapılandırma XML dosyası için örnek biçim
 
@@ -139,6 +136,7 @@ Bir mobil uygulama yapılandırma dosyası oluşturduğunuzda bu biçimi kullana
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

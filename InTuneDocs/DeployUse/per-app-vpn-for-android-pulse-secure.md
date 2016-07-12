@@ -1,27 +1,18 @@
 ---
-# required metadata
-
-title: Pulse Secure kullanılarak Android için uygulama başına VPN | Microsoft Intune
-description:
-keywords:
+title: "Pulse Secure kullanılarak Android için uygulama başına VPN | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/08/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
+ms.sourcegitcommit: 40e5602a4675bd92a85001827fb43426c41ed1e3
+ms.openlocfilehash: fc58e71a9b2279200dee2630aab7dbab727ea128
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: chrisbal
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -35,7 +26,7 @@ Intune tarafından yönetilen Android cihazları için uygulama başına VPN pro
 2. **Android**’i genişleterek yeni ilke için bir şablon seçin ve sonra da **VPN Profili (Android 4 ve üstü)** öğesini seçin.
 
 3. Şablonda, **Bağlantı türü** olarak **Pulse Secure** seçin.
-4. VPN profilini tamamlayın ve kaydedin. VPN profilleri hakkındaki diğer ayrıntılar için bkz. [VPN profilleri](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md).
+4. VPN profilini tamamlayın ve kaydedin. VPN profilleri hakkında daha fazla bilgi için bkz. [VPN bağlantıları](vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
 Sonraki adımda kullanmak üzere VPN profili adını not edin. Örneğin, **UygulamaVpnProfilim**.
@@ -82,6 +73,7 @@ Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve *yalnızca* belirt
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

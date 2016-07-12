@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: MAM etkin uygulamalar için son kullanıcı deneyimi | Microsoft Intune
-description:
-keywords:
+title: "MAM etkin uygulamalar için son kullanıcı deneyimi | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+
 
 ---
 
@@ -41,6 +34,7 @@ Mobil uygulama yönetimi (MAM) ilkeleri, yalnızca uygulamalar çalışma bağla
     ![O365 oturum açma sayfasının ekran görüntüsü](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Kimlik bilgileriniz Azure AD tarafından başarıyla doğrulandıktan sonra MAM ilkeleri uygulanır ve **OneDrive** uygulamasını yeniden başlatmanız istenir.
+  >[NOT!] Yeniden başlatma gerekli iletişim kutusu yalnızca, Intune’da kayıtlı olmayan cihazlarda görüntülenir.
 
     ![Yeniden başlatma gerekli iletişim kutusunun ekran görüntüsü](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -79,7 +73,7 @@ Mobil uygulama yönetimi (MAM) ilkeleri, yalnızca uygulamalar çalışma bağla
 
     ![Şirket portalı uygulamasının ekran görüntüsü](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  Yüklemeyi tamamladıktan sonra koşulları kabul etmek için **Kabul Et** ’e tıklayın.
+5.  Yüklemeyi tamamladıktan sonra koşulları kabul etmek için **Kabul Et** ’i seçin.
 
 6.  **OneDrive** uygulaması otomatik olarak başlatılır.
 
@@ -136,7 +130,7 @@ Birden çok kullanıcı hesabının nasıl ele alındığını daha iyi anlamak 
 Kullanıcı A, iki şirkette çalışıyor - **Şirket X** ve **Şirket Y**. Kullanıcı A’nın, her şirket için bir iş hesabı var ve ikisi de MAM ilkelerini dağıtmak için Intune kullanıyor. **Şirket X**, MAM ilkelerini **Şirket Y**’den **önce** dağıtıyor. **Şirket X** ile ilişkili hesap MAM ilkesini alır, ancak Şirket Y ile ilişkili hesap almaz. Şirket Y ile ilişkili kullanıcı hesabının MAM ilkeleri tarafından yönetilmesini istiyorsanız, Şirket X ile ilişkili kullanıcı hesabını kaldırmanız gerekir.
 ### İkinci hesap ekleme
 #### IOS
-iOS cihazı kullanıyorsanız, aynı cihaza ikinci bir iş hesabı eklemeye çalıştığınızda engelleme iletisi görebilirsiniz.  Ayrıca, mevcut hesabı kaldırıp yenisini ekleme seçeneğini görürsünüz. **Evet**’e tıklayarak bu işlemi yapabilirsiniz.
+iOS cihazı kullanıyorsanız, aynı cihaza ikinci bir iş hesabı eklemeye çalıştığınızda engelleme iletisi görebilirsiniz.  Ayrıca, mevcut hesabı kaldırıp yenisini ekleme seçeneğini görürsünüz. **Evet**’i seçerek bu işlemi yapabilirsiniz.
 
 ![Engelleme iletisi ve Evet ile Hayır seçenekleri bulunan iletişim kutusunun ekran görüntüsü](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +143,18 @@ Android cihaz kullanıyorsanız, mevcut hesabı kaldırıp yenisini eklemeye ili
 
 Bu uygulamayı Google Play mağazasından indirin.  Uygulama cihazınıza yüklendikten sonra, uygulamayı başlatın ve şirket kimlik bilgilerinizle kimlik doğrulayın. Şimdi, ilke ile yönetilen diğer uygulamalardan korumasız ve korumalı dosyaları görüntüleyebiliyor olmalısınız.
 
+Aşağıdaki dosya türleri desteklenir:
+
+* **Ses:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (gelişmiş AAC+), AAC ELD (gelişmiş düşük gecikme AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
+* **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
+* **Resim:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
+* PDF, PPDF
+
+------------
+|**pfile**|**metin**|
+|----|----|
+|Pfile, korumalı dosyalar için, şifrelenmiş içerik ve RMS lisanslarını kapsayan genel bir "sarmalayıcı" biçimidir ve herhangi bir dosya türünü korumak üzere kullanılabilir.|XML, CSV, vb. gibi metin dosyaları, korumalı olduklarında dahi uygulamada görüntülenmek üzere açılabilir. Dosya türleri: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+---------------
 **Intune’a kaydedilmeyen Android cihazları**
 
 Intune tarafından yönetilen diğer uygulamalardan dosyaları görüntülemek amacıyla RMS paylaşım uygulamasını kullanabilmeniz için, önce RMS uygulamasını başlatın ve iş hesabınızla kimliğinizi doğrulayın.  Oturum açtığınızda, **yalnızca bir RMS lisansınız olmadığı durumlarda** aşağıdaki iletiyi görürsünüz:
@@ -162,6 +168,7 @@ Bu, şirket dosyalarını görüntülemek için RMS paylaşım uygulamasını ku
 [Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Cihaz yaşam döngüsüne genel bakış | Microsoft Intune
-description:
-keywords:
+title: "MDM yaşam döngüsüne genel bakış | Microsoft Intune"
+description: "Kayıt, yapılandırma ve son olarak kullanımdan kaldırma süreçleri boyunca Intune’un cihazları yönetmenize nasıl yardımcı olduğu konusunda bilgi edinin."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
+
 
 ---
 
 # Mobil cihaz yönetimi (MDM) yaşam döngüsüne genel bakış
 
-Intune cihaz yaşam döngüsü cihazın ilk kaydıyla başlar ve çeşitli adımlarda ilerleyerek cihazın artık gerekli olmadığı aşamada son bulur.
+Yönettiğiniz tüm cihazlarda, *yaşam döngüsü* adı verilen bir unsur vardır. Intune, kayıt işleminden başlanarak, artık gerekli olmadığında cihazın kullanımdan kaldırılmasına kadar süreçte bu yaşam döngüsünü yönetmenize yardımcı olabilir:
 
 ![Cihaz yaşam döngüsü](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -51,6 +44,7 @@ Modern BT dünyasında cihazları yetkisiz erişime karşı korumak, yerine geti
 Cihaz kaybolduğunda veya çalındığında, değiştirilmesi gerektiğinde veya kullanıcılar başka bir pozisyona geçtiğinde, çoğunlukla cihazı [devre dışı bırakmanın veya temizlemenin](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) zamanı gelmiştir. Cihazı sıfırlamaktan yönetimden kaldırmaya veya üzerindeki şirket verilerini temizlemeye kadar değişen çok çeşitli yollarla bunu yapabilirsiniz.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

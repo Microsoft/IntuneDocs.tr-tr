@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Windows 10 ilke ayarları | Microsoft Intune
-description:
-keywords:
+title: "Windows 10 ilke ayarları | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
+ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+
 
 ---
 
@@ -39,7 +32,7 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|
 |**Cihazların kilidini açmak için parola gerektir**|Desteklenen cihazlarda bir parola gerektir.|
-|**Gerekli parola türü**|Gerekli parola türünü belirtir. Örneğin, yalnızca sayısal ya da alfasayısal olabilir.|
+|**Gerekli parola türü**|Gerekli parola türünü belirtir (yalnızca sayısal veya alfasayısal gibi).|
 |**Gerekli parola türü** - **Minimum karakter kümesi sayısı**|Küçük harfler, büyük harfler, rakamlar ve semboller şeklinde dört karakter kümesi vardır. Bu ayar parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir.|
 |**Minimum parola uzunluğu**|Cihaz parolasının içermesi gereken minimum karakter sayısını belirtir.<br>(Yalnızca Windows 10 Mobile)|
 |**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Bu sayıda oturum açma denemesi başarısız olursa cihazı temizler.|
@@ -168,6 +161,7 @@ Tüm ayarlar yalnızca Windows 10 masaüstüne yöneliktir.
 |**İmza güncelleştirme aralığı**|Defender’ın yeni imza dosyalarını denetleme aralığını belirtin.|
 |**Bulut korumasına izin ver**|Microsoft Etkin Koruma Hizmeti’nin yönettiğiniz cihazlardan kötü amaçlı yazılım etkinliğiyle ilgili bilgi almasına izin verin veya bunu engelleyin. Bu bilgi gelecekte hizmeti geliştirmek için kullanılır.|
 |**Kullanıcılardan örnek göndermelerini iste**|Kötü amaçlı olup olmadıklarını saptamak için Microsoft tarafından daha fazla çözümlenmesi gerekebilecek dosyaların Microsoft’a otomatik olarak gönderilip gönderilmeyeceğini denetler.|
+|**Olası İstenmeyen Uygulama Algılama**|Bu ayar, kayıtlı Windows masaüstü bilgisayarlarını, Windows Defender tarafından olası istenmeyen yazılım şeklinde sınıflandırılan yazılımları çalıştırmaya karşı korumak üzere kullanılabilir. Bu uygulamaların çalıştırılmasına karşı koruma sağlayabilir veya istenmeyebilecek bir uygulama yüklendiğinde raporlanması için denetim modunu kullanabilirsiniz.|
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak dosya ve klasörler**|Dışlama listesinde **C:\Yol** veya **%ProgramFiles%\Yol\dosyaadı.exe** gibi bir veya birden çok dosya ve klasör ekleyin. Bu dosya ve klasörler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.|
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak dosya uzantıları**|Dışlama listesine **jpg** veya **txt** gibi bir veya birden çok dosya uzantısı ekleyin. Bu uzantıya sahip dosyaların hiçbiri gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.|
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak işlemler**|Dışlama listesine **.exe**, **.com** veya **.scr** türünde bir veya birden çok işlem ekleyin. Bu işlemler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.| 
@@ -321,7 +315,7 @@ Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kay
 |**SendIntranetTraffictoInternetExplorer**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0**: Devre dışı (intranet sitelerini Edge tarayıcısında aç - varsayılan)<br>**1**: Etkin (intranet sitelerini Internet Explorer'da aç).|
 |**Do Not Track’e İzin Verme**<br>(masaüstü ve mobil)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – Devre dışı (DNT gönderilmez - varsayılan)<br>**1** – Etkin (DNT gönder)|
 |**SmartScreen’i Yapılandırma**<br>(masaüstü ve mobil)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – İzin verme<br>**1** – İzin ver (varsayılan)|
-|**Açılır Pencerelere İzin Verme**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – Açılır pencereleri engelle (varsayılan)<br>**1** – Açılan pencerelere izin ver|
+|**Açılır Pencerelere İzin Ver**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – Açılır pencereleri engelle (varsayılan)<br>**1** – Açılır pencerelere izin ver|
 |**Tanımlama Bilgilerine İzin Verme**<br>(masaüstü ve mobil)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowCookies<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – Engelleme. Tüm web sitelerinin tanımlama bilgilerine izin ver (varsayılan)<br>**1** – Yalnızca üçüncü taraf tanımlama bilgilerini engelle<br>**2** – Tüm tanımlama bilgilerini engelle|
 |**Parola Kaydetmeye İzin Verme**<br>(masaüstü ve mobil)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – Parola yöneticisi devre dışı; <br>**1** – Parola yöneticisi etkin (varsayılan)|
 |**Otomatik Doldurma’ya izin ver**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – Devre dışı (varsayılan)<br>**1** – Etkin|
@@ -332,6 +326,7 @@ Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kay
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

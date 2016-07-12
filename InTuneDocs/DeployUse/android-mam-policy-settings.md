@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android MAM ilke ayarları | Microsoft Intune
-description:
-keywords:
+title: "Android MAM ilke ayarları | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -54,7 +48,7 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
   -   **Engellendi:** İlkeyle yönetilen uygulamalar arasında kesme, kopyalama ve yapıştırma işlemlerine izin verilmez.
   -   **İlke ile Yönetilen Uygulamalar:** Yalnızca ilkeyle yönetilen uygulamalar arasında kesme, kopyalama ve yapıştırma işlemlerine izin verilir.
   -   **Yapıştırma seçeneğiyle İlke ile Yönetilen Uygulamalar**: İlkeyle yönetilen uygulamalar arasında kesme veya kopyalama işlemine izin verilir. Herhangi bir uygulamadan kesilen veya kopyalanan verilerin bu uygulamaya yapıştırılmasına izin verilir.
-  -   **Herhangi Bir Uygulama**: Uygulamalar arasında kesme, kopyalama ve yapıştırma işlemleriyle ilgili bir kısıtlama yoktur.
+  -   **Herhangi Bir Uygulama**: Uygulamalar arasında kesme, kopyalama ve yapıştırma işlemleriyle ilgili bir kısıtlama olmaz.
 
     **Varsayılan değer = Yapıştırma seçeneğiyle ilke ile yönetilen uygulamalar**
 -   **Web içeriğinin Managed Browser'da görüntülenmesini kısıtla:** Bu ayar etkinleştirildiğinde, uygulamadaki tüm bağlantılar Managed Browser’da açılır.
@@ -65,11 +59,12 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
 
     **Varsayılan değer = Evet**
 - **Uygulama verilerini şifrele:** Şifrelemeyi etkinleştirmek için **Evet**’i seçin. Bu ayar etkinleştirildiğinde, mobil uygulama yönetimi ilkesiyle ilişkili uygulamalar için, şifreleme Microsoft tarafından sağlanır. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolama alanındaki içerik her zaman şifrelenir.
-  >[!NOTE] Şifreleme yöntemi FIPS 140-2 sertifikalı değildir
+  >[!NOTE]
+  >Şifreleme yöntemi FIPS 140-2 sertifikalı değildir
 
   **Varsayılan değer = Evet**
 
-- **KişiEşitlemeDevreDışı:** Kişi bilgilerinin cihazdaki yerel adres defteri uygulamasıyla eşitlenmesini önlemek için **Evet**’i seçin. **Hayır**’ı seçerseniz, uygulama kişi bilgilerini cihazdaki adres defteri uygulamasına kaydeder.<br/>Şirket verilerini kaldırmak amacıyla seçmeli temizleme işlemi yaptığınızda, doğrudan uygulamadan yerel adres defterine eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. Şu anda bu özellik yalnızca **Microsoft Outlook** uygulaması için geçerlidir.
+- **Kişi eşitleme devre dışı:** Kişi bilgilerinin cihazdaki yerel adres defteri uygulamasıyla eşitlenmesini önlemek için **Evet**’i seçin. **Hayır**’ı seçerseniz, uygulama kişi bilgilerini cihazdaki adres defteri uygulamasına kaydeder.<br/>Şirket verilerini kaldırmak amacıyla seçmeli temizleme işlemi yaptığınızda, doğrudan uygulamadan yerel adres defterine eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. Şu anda bu özellik yalnızca **Microsoft Outlook** uygulaması için geçerlidir.
 
   **Varsayılan değer = Evet**
 
@@ -100,6 +95,7 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
 - **Ekran görüntüsü yakalamayı ve Android Assistant uygulamasını engelle (Android 6 Marshmallow veya üstü):** Bu uygulamayı kullanırken cihazın ekran görüntüsü yakalama ve **Android Assistant** özelliklerini engellemek için **Evet**’i seçin.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

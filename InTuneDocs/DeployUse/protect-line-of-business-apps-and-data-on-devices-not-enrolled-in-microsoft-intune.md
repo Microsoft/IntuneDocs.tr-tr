@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma | Microsoft Intune
-description:
-keywords:
+title: "Kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ Uygulamaları son kullanıcılarınıza aşağıdaki yollarla dağıtabilirsiniz
 * Hiçbir MDM çözümüyle yönetilmeyen cihazlar için, özel bir çözüme ihtiyacınız vardır. Son kullanıcıların uygulamayı cihazlarına indirmeleri ve yüklemeleri gerekir.
 
 ## Meta verileri değiştirme
-Uygulamanın adı veya Paket tanımlayıcısı gibi uygulama ayrıntılarını değiştirmeniz gerekiyorsa, [uygulamayı kaldırmalı](#remove-apps) ve yeni meta verilerle [eklemelisiniz](#add-the-app).
+Uygulamanın adı veya Paket tanımlayıcısı gibi uygulama ayrıntılarını değiştirmeniz gerekiyorsa, [uygulamayı kaldırmalı](#remove-apps) ve yeni meta verilerle [eklemelisiniz](#step-2-add-the-app).
 
 ##  Uygulamaları kaldırma
 Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz.  Bu işlem uygulamayı listeden kaldırır ve MAM ilkeleriyle ilişkisini kaldırır ama uygulamayı son kullanıcının cihazından kaldırmaz.  
@@ -80,6 +73,7 @@ Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz.  Bu işlem 
   Bu işlem, uygulamaları iş kolu uygulamaları listesinden ve MAM ilkesindeki Hedeflenen uygulamalar listesinden kaldırır.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

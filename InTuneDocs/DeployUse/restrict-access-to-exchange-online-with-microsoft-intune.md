@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Exchange Online’a ve yeni Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama| Microsoft Intune
-description:
-keywords:
+title: "Exchange Online’a ve yeni Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama| Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 87663f2677a006e5db525f8897fea4bf05cb5912
+
 
 ---
 
@@ -30,7 +24,7 @@ ms.suite: ems
 Ayrılmış Exchange Online ortamınız varsa ve bunun yapılandırmasının yeni mi yoksa eski mi olduğunu bulmanız gerekiyorsa, hesap yöneticinize başvurun.
 
 Exchange Online’a veya yeni Ayrılmış Exchange Online ortamına e-posta erişimini denetlemek için, Intune’da Exchange Online’a koşullu erişim yapılandırın.
-Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için, [E-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
+Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için, [E-posta, O365 hizmetlerine ve diğer hizmetlere erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
 
 >[!IMPORTANT]
 >Modern kimlik doğrulamasının kullanıldığı uygulamalar bulunan bilgisayarlar ve Windows 10 Mobile cihazları için koşullu erişim özelliği, şu anda tüm Intune müşterilerine sağlanmaz. Bu özellikleri zaten kullanıyorsanız, herhangi bir işlem yapmanız gerekmez. Kullanmaya devam edebilirsiniz.
@@ -43,7 +37,8 @@ Koşullu erişimi yapılandırabilmeniz için **önce**:
 
 -  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’u Microsoft Exchange Online’a bağlayan ve [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konsolu aracılığıyla cihaz bilgilerini yönetmenize yardımcı olan isteğe bağlı **Microsoft Intune hizmetten hizmete bağlayıcısını** yapılandırmayı göz önünde bulundurmalısınız. Uyumluluk ilkeleri veya koşullu erişim ilkelerini kullanmak için bağlayıcıyı kullanmanıza gerek yoktur, ancak koşullu erişimin etkisini değerlendirmeye yardımcı olan raporları çalıştırmak için bu gereklidir.
 
-   > [!NOTE] Hem Exchange Online hem de Şirket İçi Exchange için koşullu erişim kullanmak istiyorsanız, hizmetten hizmete bağlayıcıyı yapılandırmayın
+   > [!NOTE]
+   > Koşullu erişimi hem Exchange Online hem de Şirket İçi Exchange için kullanmak istiyorsanız, hizmetten hizmete bağlayıcısını yapılandırmayın.
 
    Bağlayıcıyı yapılandırma yönergeleri için bkz. [Intune hizmetten hizmete bağlayıcısı](intune-service-to-service-exchange-connector.md)
 
@@ -75,9 +70,23 @@ Aşağıdaki diyagramda, Exchange Online için koşullu erişim ilkeleri tarafı
 - iOS 7.1 ve üzeri
 - Windows Phone 8.1 ve üzeri
 
- **Modern k+imlik doğrulaması**, Active Directory Authentication Library (ADAL) tabanlı oturum açmayı Microsoft Office istemcilerine getirir.
+**Modern k+imlik doğrulaması**, Active Directory Authentication Library (ADAL) tabanlı oturum açmayı Microsoft Office istemcilerine getirir.
 
-> -   ADAL tabanlı kimlik doğrulaması, Office istemcilerinin tarayıcı tabanlı kimlik doğrulaması (pasif kimlik doğrulama olarak da bilinir) gerçekleştirmesine imkan sağlar.  Kullanıcı, kimlik doğrulamak için bir oturum açma web sayfasına yönlendirilir. Bu yeni oturum açma yöntemi, **çok faktörlü kimlik doğrulaması** ve **sertifika tabanlı kimlik doğrulaması** gibi daha iyi güvenlik seçeneklerine olanak tanır. Bu [makalede](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) modern kimlik doğrulamanın nasıl çalıştığı hakkında daha ayrıntılı bilgiler bulunmaktadır.
+-   ADAL tabanlı kimlik doğrulaması, Office istemcilerinin tarayıcı tabanlı kimlik doğrulaması (pasif kimlik doğrulama olarak da bilinir) gerçekleştirmesine imkan sağlar.  Kullanıcı, kimlik doğrulamak için bir oturum açma web sayfasına yönlendirilir. Bu yeni oturum açma yöntemi, **çok faktörlü kimlik doğrulaması** ve **sertifika tabanlı kimlik doğrulaması** gibi daha iyi güvenlik önlemlerine olanak tanır.
+Bu [makalede](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517), modern kimlik doğrulamasının nasıl çalıştığıyla ilgili daha ayrıntılı bilgi sağlanmıştır.
+Modern olmayan kimlik doğrulama protokollerini engellemek için ADFS talep kurallarını ayarlayın. [O365’e tarayıcı tabanlı uygulamalar dışındaki tüm erişimi engelleme](https://technet.microsoft.com/library/dn592182.aspx) adlı 3. senaryoda ayrıntılı yönergeler verilmiştir.
+
+Exchange Online’da, **iOS** ve **Android** cihazlarda bir tarayıcıdan erişildiğinde **Outlook Web Access (OWA)** erişimini kısıtlayabilirsiniz.  Erişime yalnızca uyumlu cihazlarda, yalnızca desteklenen tarayıcılardan izin verilir:
+
+* Safari (iOS)
+* Chrome (Android)
+* Yönetilen Tarayıcı (iOS ve Android)
+
+**Desteklenmeyen tarayıcılarda engellenir**.
+
+iOS ve Android için OWA uygulamaları desteklenmez.  ADFS talep kurallarıyla engelleneceklerdir.
+
+
 
 
 Aşağıdaki platformlarda yerleşik **Exchange ActiveSync e-posta istemcisinden** Exchange e-postasına erişimi kısıtlayabilirsiniz:
@@ -108,10 +117,11 @@ Aşağıdaki gereksinimleri karşılayan bilgisayarlar için **Exchange Online**
 
 ## Koşullu erişimi yapılandırma
 ### 1. Adım: Uyumluluk ilkesi yapılandırma ve dağıtma
-Koşullu erişim ilkesini alacak olan kulanıcı grupları için de uyumluluk ilkesi [oluşturduğunuzdan](create-a-device-compliance-policy-in-microsoft-intune.md) ve [dağıttığınızdan](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) emin olun.
+Koşullu erişim ilkesini alacak olan kullanıcı grupları için de uyumluluk ilkesi [oluşturduğunuzdan](create-a-device-compliance-policy-in-microsoft-intune.md) ve [dağıttığınızdan](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) emin olun.
 
 
-> [!IMPORTANT] Uyumluluk ilkesi dağıtmadıysanız, cihazlar uyumlu olarak değerlendirilir ve Exchange’e erişimlerine izin verilir.
+> [!IMPORTANT]
+> Uyumluluk ilkesi dağıtmadıysanız, cihazlar uyumlu kabul edilir ve Exchange’e erişim izni alırlar.
 
 ### 2 Adım: Koşullu erişim ilkesinin etkisini değerlendirme
 Koşullu erişim ilkesini yapılandırdıktan sonra Exchange’e erişimi engellenebilecek cihazları belirlemek üzere **Mobil Cihaz Envanter Raporları**’nı kullanabilirsiniz.
@@ -135,7 +145,8 @@ Raporu çalıştırdıktan sonra kullanıcının engellenip engellenmeyeceğini 
 
 -   **Exchange ActiveSync Kimliği** – iOS ve Android cihazların Exchange ActiveSync kimliklerinin Azure Active Directory'deki cihaz kaydı ile ilişkilendirilmiş olması gerekir. Kullanıcı karantina e-postasında **E-postayı Etkinleştir** bağlantısını seçtiğinde bu durum ortaya çıkar.
 
-    > [!NOTE] Windows Phone cihazları her zaman bu sütunda bir değer görüntüler.
+    > [!NOTE]
+    > Windows Phone cihazları her zaman bu sütunda bir değer görüntüler.
 
 Sütun değerleri aşağıdaki tabloda listelenenlerle eşleşmiyorsa, hedeflenen bir grubun parçası olan cihazların Exchange’e erişmesi engellenir:
 
@@ -165,11 +176,12 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 ### 4. Adım: Koşullu erişim ilkesini yapılandırma
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **Exchange Online İlkesi**’ni seçin.
-![Exchange Online koşullu erişim ilkesi sayfasının ekran görüntüsü](../media/IntuneSA5dExchangeOnlinePolicy.png)
+![Exchange Online koşullu erişim ilkesi sayfasının ekran görüntüsü](../media/mdm-ca-exo-policy-configuration.png)
 
 2.   **Exchange Online İlkesi** sayfasında, **Exchange Online için koşullu erişim ilkesini etkinleştir**’i seçin.
 
-    > [!NOTE] Uyumluluk İlkesi dağıtmadıysanız cihazlar uyumlu olarak değerlendirilir.
+    > [!NOTE]
+    > Uyumluluk İlkesi dağıtmadıysanız cihazlar uyumlu olarak kabul edilir.
     >
     > Uyumluluk durumuna bakılmaksızın, ilke tarafından hedeflenen tüm kullanıcıların cihazlarını [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetine kaydetmeleri gerekir.
 
@@ -178,6 +190,11 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
     -   **Tüm platformlar**
 
         Bu seçenek **Exchange Online**’a erişmek için kullanılan tüm cihazların Intune’a kaydedilmesini ve ilkelerle uyumlu olmasını gerektirir.  **Modern kimlik doğrulaması** kullanan tüm istemci uygulamaları koşullu erişim ilkesine tabidir ve platform o sırada Intune tarafından desteklenmiyorsa **Exchange Online**’a erişim engellenir.
+
+        **Tüm platformlar** seçeneğinin belirlenmesi, Azure Active Directory’nin bu ilkeyi, istemci uygulaması tarafından bildirilen platformdan bağımsız olarak tüm kimlik doğrulama isteklerine uygulayacağı anlamına gelir.  Aşağıdakiler dışında tüm platformların kaydolması ve uyumlu hale gelmesi gerekir:
+        *   Windows cihazlarının, kaydolması ve uyumlu hale gelmesi, şirket içi Active Directory ile etki alanı birleşik olması veya her ikisi gerekir
+        * Mac OS gibi desteklenmeyen platformlar.  Ancak, bu platformlarından gelen, modern kimlik doğrulaması kullanan uygulamalar yine de engellenir.
+
         >[!TIP]
            Bilgisayarlar için koşullu erişimi zaten kullanıyorsanız, bu seçeneği görmeyebilirsiniz.  Bunun yerine **Belirli platformlar**’ı kullanın. Bilgisayarlar için koşullu erişim şu anda tüm Intune müşterilerine sağlanmamaktadır.   [Microsoft Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472), bilinen sorunların yanı sıra bu özelliğe nasıl erişebileceğiniz hakkında daha fazla bilgi bulabilirsiniz.
 
@@ -185,12 +202,30 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
          Koşullu erişim ilkesi, belirttiğiniz cihaz platformlarında **modern kimlik doğrulaması** kullanan tüm istemci uygulamaları için geçerlidir.
 
-4.  **Exchange ActiveSync uygulamaları**’nın altında, uyumsuz cihazların Exchange Online’a erişmesini engellemeyi seçebilirsiniz. Cihaz desteklenen bir platformda çalıştırılmadığında e-posta erişimine izin vermeyi veya bu erişimi engellemeyi de seçebilirsiniz. Desteklenen platformlar Android, iOS, Windows ve Windows Phone’dur.
+4. **Outlook web access (OWA)** altında, yalnızca desteklenen tarayıcılar üzerinden Exchange Online'a erişime izin vermeyi seçebilirsiniz: Safari (iOS) ve Chrome (Android). Diğer tarayıcılardan erişim engellenir. Outlook için Uygulama erişimi için seçtiğiniz platform kısıtlamaları burada da geçerli olur.
 
+  **Android** cihazlarda, kullanıcılar tarayıcı erişimini etkinleştirmelidir.  Bunu yapmak için, son kullanıcı kaydolan cihazda "Tarayıcı Erişimini Etkinleştir" seçeneğini etkinleştirmelidir:
+  1.    **Şirket Portal uygulamasını** başlatın.
+  2.    Üç nokta (...) veya donanım menüsü düğmesinden **Ayarlar** sayfasına gidin.
+  3.    **Tarayıcı Erişimi Etkinleştir** düğmesine basın.
+  4.    Chrome tarayıcıda, Office 365 oturumunu kapatın ve Chrome’u yeniden başlatın.
 
-5.   **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Active Directory güvenliği kullanıcı gruplarını seçin. Tüm kullanıcıları veya seçili bir kullanıcı grupları listesini hedeflemeyi seçebilirsiniz.
+  **iOS ve Android** platformlarında, Cihazın hizmete erişmek için kullanıldığını belirlemek için, Azure Active Directory, cihaza bir Aktarım katmanı güvenliği (TLS) sertifikası yayımlar.  Cihaz, sertifikayı, aşağıdaki ekran görüntülerinde görüleceği gibi son kullanıcıya sertifikayı seçmesi için bir istemle ekrana getirir. Son kullanıcı, tarayıcıyı kullanmaya devam edebilmesi için önce bu sertifikayı seçmelidir.
+
+  **iOS**
+
+  ![ipad cihazında sertifika istemi ekran görüntüsü](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![Android cihazda sertifika istemi ekran görüntüsü](../media/mdm-browser-ca-android-cert-prompt.png)
+
+5.  **Exchange ActiveSync uygulamaları**’nın altında, uyumsuz cihazların Exchange Online’a erişmesini engellemeyi seçebilirsiniz. Cihaz desteklenen bir platformda çalıştırılmadığında e-posta erişimine izin vermeyi veya bu erişimi engellemeyi de seçebilirsiniz. Desteklenen platformlar Android, iOS, Windows ve Windows Phone’dur.
+
+6.   **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Active Directory güvenliği kullanıcı gruplarını seçin. Tüm kullanıcıları veya seçili bir kullanıcı grupları listesini hedeflemeyi seçebilirsiniz.
 ![Hedeflenen ve Muaf Tutulan grup seçeneklerinin gösterildiği Exchange Online koşullu erişim ilkesi sayfasının ekran görüntüsü](../media/IntuneSA5eTargetedExemptedGroups.PNG)
-    > [!NOTE] **Hedeflenen gruplarda** bulunan kullanıcılar için Intune ilkeleri Exchange kurallarının ve ilkelerinin yerini alır.
+    > [!NOTE]
+    > **Hedeflenen gruplar**’da bulunan kullanıcılar için Intune ilkeleri, Exchange kurallarının ve ilkelerinin yerini alır.
     >
     > Exchange, şu durumlarda yalnızca Exchange izin verme, engelleme ve karantinaya alma kurallarını ve Exchange ilkelerini uygular:
     >
@@ -224,6 +259,7 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 [Skype Kurumsal Çevrimiçi’ne erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

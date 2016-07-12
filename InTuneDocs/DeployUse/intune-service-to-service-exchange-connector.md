@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Barındırılan Exchange için Microsoft Intune Exchange bağlayıcısını yapılandırma | Microsoft Intune
-description:
-keywords:
+title: "Barındırılan Exchange için Microsoft Intune Exchange bağlayıcısını yapılandırma | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
+ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+
 
 ---
 
@@ -57,7 +51,7 @@ Intune Exchange Bağlayıcı tarafından kullanılan bir Exchange Online kullan�
 2.  Çalışma alanı kısayol bölmesinde **YÖNETİCİ**’yi seçin ve sonra **Mobil Cihaz Yönetimi** > **Microsoft Exchange** > **Exchange Bağlantısını Ayarla**’ya gidin.
 ![Hizmetten hizmete bağlayıcıyı ayarlama sayfası](../media/intunesa5cservicetoserviceconnector.png)
 
-3.  **Exchange Bağlantısını Ayarla** sayfasında **Hizmetten Hizmete Bağlayıcısını Ayarla**'ya tıklayın.
+3.  **Exchange Bağlantısını Ayarla** sayfasında, **Hizmet Bağlayıcısı'nı Ayarla**'ya tıklayın.
 
 
 Hizmetten Hizmete Bağlayıcısı otomatik olarak yapılandırılır ve Barındırılan Exchange ortamınızla eşitlenir.
@@ -69,6 +63,7 @@ Exchange Bağlayıcısı’nı başarıyla yapılandırdıktan sonra, Intune yö
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

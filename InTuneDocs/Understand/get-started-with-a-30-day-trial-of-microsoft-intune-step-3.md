@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Değerlendirme aboneliği kullanıcılarını ve cihazlarını düzenlemek için gruplar oluşturun | Microsoft Intune
-description:
-keywords:
+title: "Değerlendirme aboneliği kullanıcılarını ve cihazlarını düzenlemek için gruplar oluşturun | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: f438b2b5e53d9bc119341effae1533d26cc9a47b
+
 
 ---
 
@@ -31,7 +25,7 @@ Intune’daki gruplar, cihazlarınızı ve kullanıcılarınızı yönetmek içi
 ## Bir cihaz grubu oluşturma
 Yazılım ve güncelleştirme dağıtmak ve Microsoft Intune Aracısı Ayarları ile Windows Güvenlik Duvarı Ayarları ilkelerini yapılandırmak için cihaz gruplarını kullanabilirsiniz. Örneğin, aşağıdaki adımları kullanarak bir "Deneme Cihazlarım" grubu oluşturun:
 
-1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Genel Bakış** &gt; **Grup Oluştur**’u seçin
+1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Genel Bakış** &gt; **Grup Oluştur**’u seçin.
 
 2.  **Grup adı**için, “Deneme Cihazlarım” yazın, üst grup listesinden **Tüm Cihazlar**'ı seçin ve ardından **İleri**'yi seçin.
 
@@ -46,11 +40,11 @@ Yeni oluşturulan grubu **Gruplar** çalışma alanının **Tüm Cihazlar** böl
 ## Bir kullanıcı grubu oluşturma
 Yazılım ve cihaz ilkelerini dağıtmak için kullanıcı gruplarını kullanın. Örneğin, aşağıdaki adımları kullanarak bir "Deneme Kullanıcılarım" grubu oluşturun:
 
-1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Genel Bakış** &gt; **Grup Oluştur**’u seçin
+1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Genel Bakış** &gt; **Grup Oluştur**’u seçin.
 
 2.  **Grup adı** için, “Deneme Kullanıcılarım” yazın, üst grup listesinden **Tüm Kullanıcılar**’ı seçin ve ardından **İleri**’yi seçin.
 
-3.  **Üyelik Ölçütlerini Tanımla** sayfasında **Şununla grup üyeliği başlat:** seçeneğini **Üst gruptaki tüm kullanıcılar**olarak ayarlayın
+3.  **Üyelik Ölçütlerini Tanımla** sayfasında **Şununla grup üyeliği başlat:** seçeneğini **Üst gruptaki tüm kullanıcılar**olarak ayarlayın.
 
 4.  **Şu güvenlik gruplarındaki üyeleri çıkar:**seçeneğinin yanında **Gözat**’ı seçin ve ardından **Şirket Yöneticisi**'ni seçin. Bu dışlama, Şirket Yöneticisi hesabını (kiracı yönetici olarak da bilinir) etkilenmeden Deneme Kullanıcılarım grubunu yönetmenize olanak verir.
 
@@ -60,7 +54,7 @@ Yazılım ve cihaz ilkelerini dağıtmak için kullanıcı gruplarını kullanı
 
 Yeni oluşturulan grubu **Gruplar** çalışma alanının **Tüm Kullanıcılar** bölümündeki **Gruplar**listesinde bulabilirsiniz. Ayrıca, buradan grubu düzenleyebilir veya silebilirsiniz.
 
-Grupları kullanma hakkında daha fazla bilgi için, bkz. [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](/Intune/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune)
+Grupları kullanma hakkında daha fazla bilgi için, bkz. [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](/Intune/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### Sonraki adımlar
 Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 3. adımını tamamladınız.
@@ -70,6 +64,7 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 3. adımını
 >[&larr; **Kullanıcı ekleme**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)     [**İlkeler oluşturma** &larr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

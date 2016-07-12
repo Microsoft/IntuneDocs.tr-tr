@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Mobil uygulama yönetimi ilkelerinizi yapılandırmak için hazırlama | Microsoft Intune
-description:
-keywords:
+title: "Mobil uygulama yönetimi ilkelerinizi yapılandırmak için hazırlama | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -36,6 +29,8 @@ Azure portalı, MAM ilkelerinin oluşturulacağı yeni yönetim konsoludur ve MA
 Azure portalını yeni kullanmaya başladıysanız, hızlı genel bakış bilgileri almak için [Microsoft Intune MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md) konusunu okuyun.
 
 Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, **Intune yönetici konsolu** kullanılarak Intune’a kaydedilen cihazlar için uygulamaları destekleyen bir MAM ilkeleri oluşturabilirsiniz. Ancak, Intune’a kaydedilen cihazlar için bile Azure portalını kullanmanızı öneririz. Intune yönetim konsolunu kullanarak MAM ilkesi oluşturma yönergeleri için, [buraya](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) bakın.
+
+Intune yönetici konsolunda oluşturulan MAM ilkeleri, Azure portalına aktarılamaz.  MAM ilkeleri, Azure portalında yeniden oluşturulmalıdır.
 
 >[!IMPORTANT]
 > Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Hem Intune yönetim konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalındaki ilke uygulanır ve kullanıcılara bu ilke dağıtılır.
@@ -62,7 +57,7 @@ MAM ilkelerini yapılandırmadan **önce** aşağıdakilere ihtiyacınız olacak
 -   Aşağıdakiler için gerekli bir **Office 365 (O365)** aboneliği:
   - Çoklu kimliği desteği olan uygulamalara MAM ilkeleri uygulamak için.
   - SharePoint Online ve Exchange Online iş hesaplarını oluşturmak için. Exchange Şirket İçi ve SharePoint şirket içi desteklenmez.
--    **Skype Kurumsal Çevrimiçi** için **modern kimlik doğrulamasını etkinleştirin**. Modern kimlik doğrulama programına kaydolmak için Microsoft Connect’te oturum açın ve [bu formu](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) doldurun.
+-    **Skype Kurumsal Çevrimiçi Sürüm** için [modern kimlik doğrulamasını etkinleştirin](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md).
 
 
 - Kullanıcılar oluşturmak için **Azure Active Directory (Azure AD)**. Son kullanıcı uygulamayı başlatıp iş kimlik bilgilerini girdiğinde Azure AD, kullanıcının kimliğini doğrular.
@@ -124,6 +119,7 @@ Aşağıdaki tabloda yönetici kullanıcılara atayabileceğiniz rol ve izinler 
 [Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

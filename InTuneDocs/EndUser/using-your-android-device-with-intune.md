@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android cihazınızı Intune ile kullanma | Microsoft Intune
-description:
-keywords:
+title: "Android cihazınızı Intune ile kullanma | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
+ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
+
 
 ---
 
@@ -52,6 +46,7 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildikten sonra ger
 - [Kullanım Koşulları’nı reddettiyseniz cihazınızın kaydını silme](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Cihazınızın Intune kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Şirket Portalı uygulamasını kullanarak Android cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
 ## Cihazınızla ilgili sorunları giderme
 
@@ -65,10 +60,16 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşı
 - [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 - [Cihazınızın kökü belirtilmiş ve bağlanamıyorsunuz](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Cihazınızda gerekli bir sertifika eksik](your-device-is-missing-a-required-certificate-android.md)
+- [Bilinmeyen kaynakları kapatmanız istenir](you-are-asked-to-turn-off-unknown-sources-android.md)
+- [USB hata ayıklamayı kapatmanız istenir](you-are-asked-to-turn-off-usb-debugging-android.md)
+- [Cihazı güvenlik tehditleri için taramayı açmanız istenir](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Cihazınız en düşük güvenlik düzeltme ekini karşılamıyor](your-device-does-not-meet-the-minimum-security-patch-android.md)
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO5-->
 
 

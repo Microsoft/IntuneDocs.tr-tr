@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: iOS uygulamaları arasında veri aktarımını yönetme | Microsoft Intune
-description:
-keywords:
+title: "iOS uygulamaları arasında veri aktarımını yönetme | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
+ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+
 
 ---
 
@@ -51,9 +44,9 @@ Mobil uygulama yönetimi (MAM) ilkeleri iOS **Yönetimde açma** özelliğiyle b
 Bu yapılandırma bir üçüncü taraf MDM çözümü tarafından yönetilen cihazlar için gereklidir. Aşağıda açıklanan yordam, UPN ayarının nasıl uygulanacağı ve ortaya çıkan son kullanıcı deneyimi hakkında genel bir akış sunar:
 
 
-1.  iOS platformu için bir mobil uygulama yönetimi ilkesi yapılandırın. İlke ayarlarını şirket gereksinimlerinize göre yapılandırın ve bu ilkeye sahip olacak uygulamaları seçin.
+1.  Azure portalında, iOS platformu için [bir mobil uygulama yönetimi ilkesi yapılandırın](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md). İlke ayarlarını şirket gereksinimlerinize göre yapılandırın ve bu ilkeye sahip olacak uygulamaları seçin.
 
-2.  3. ve 4. adımlarda açıklanan ayarı kullanarak, üçüncü taraf MDM çözümünüz aracılığıyla yönetilmesini istediğiniz uygulamaları ve e-posta profilini dağıtın.
+2.  3. ve 4. adımlarda açıklanan ayarı kullanarak, **üçüncü taraf MDM çözümünüz aracılığıyla** yönetilmesini istediğiniz uygulamaları ve e-posta profilini dağıtın.
 
 3.  Uygulamayı şu yapılandırma ayarlarıyla dağıtın: key=IntuneMAMUPN, Value=<kullanıcıadı@şirket.com> [örnek: ‘IntuneMAMUPN’, ‘alikara@microsoft.com’]
 
@@ -69,6 +62,7 @@ Bu yapılandırma bir üçüncü taraf MDM çözümü tarafından yönetilen cih
 
 4.  Word uygulaması başlatıldığında son kullanıcıdan kendi iş hesabını kullanarak oturum açması istenir.  İstendiğinde son kullanıcının girdiği bu iş hesabı, Microsoft Word uygulaması için uygulama yapılandırma ayarlarında belirttiğiniz hesapla eşleşmelidir.
 
+    > [!NOTE]
     > Son kullanıcı kişisel çalışmaları için Word’e başka kişisel hesaplar ekleyebilir ve Word uygulamasını kişisel bağlamda kullanırken MAM ilkelerinden etkilenmez.
 
 5.  Oturum açma başarılı olduğunda uygulama ilkesi ayarları Word uygulamasına uygulanır.
@@ -79,6 +73,7 @@ Bu yapılandırma bir üçüncü taraf MDM çözümü tarafından yönetilen cih
 [Microsoft Intune ile mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

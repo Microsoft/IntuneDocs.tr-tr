@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune ile kullanmak için bir Symantec enterprise kod imzalama sertifikasını yenileme | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune ile kullanmak için bir Symantec enterprise kod imzalama sertifikasını yenileme | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+
 
 ---
 
@@ -41,9 +35,9 @@ Belirli Windows ve Windows Phone mobil cihazlarını yönetmek için kullanılan
 
 ## Windows Phone 8.0 için güncelleştirilmiş sertifika yükleme
 
-1.  Burada bulunan en son Windows Phone Şirket Portalı’nı indirip imzalayın: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)
+1.  Burada bulunan en son Windows Phone Şirket Portalı’nı indirip imzalayın: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Intune Yönetim Konsolu'nuzu ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) açın ve **Yönetim**, **Mobil Cihaz Yönetimi** &gt; **Windows Phone** bölümüne gidip **İmzalı Uygulamayı Karşıya Yükle**’ye tıklayın
+2.  Intune Yönetim Konsolu'nuzu ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) açın ve **Yönetici**, **Mobil Cihaz Yönetimi** &gt; **Windows Phone** bölümüne gidip **İmzalı Uygulamayı Karşıya Yükle**’ye tıklayın.
 
 3.  Yeni imzalanan Şirket Portalı'nı karşıya yükleyin. Yeni imzalanan SSP.xap ile Symantec'ten aldığınız yeni .PFX dosyasına ya da bu yeni .PFX dosyasıyla oluşturulmuş uygulama kayıt belirtecine ihtiyacınız olacaktır.
 
@@ -55,9 +49,9 @@ Güncelleştirilmiş kod imzalama sertifikasını sağlamanın şu an için tek 
 
 ## Windows Phone 8.1 ve üstü cihazlar için güncelleştirilmiş sertifika yükleme
 
-1.  Burada bulunan İndirme Merkezi’nden en son Windows Phone Şirket Portalı’nı indirip imzalayın: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)
+1.  Burada bulunan İndirme Merkezi’nden en son Windows Phone Şirket Portalı’nı indirip imzalayın: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  [Intune Yönetim Konsolu](https://admin.manage.microsoft.com)'nuzu (https://admin.manage.microsoft.com) açın ve **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows Phone** bölümüne gidip **İmzalı Uygulamayı Karşıya Yükle**’ye tıklayın.
+2.  [Intune Yönetim Konsolu'nuzu](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) açın ve **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows Phone** bölümüne gidip **İmzalı Uygulamayı Karşıya Yükle**’ye tıklayın.
 
 3.  Yeni imzalanan Şirket Portalı'nı karşıya yükleyin. Yeni imzalanan SSP.xap ile Symantec'ten aldığınız yeni .PFX dosyasına ya da bu yeni .PFX dosyasıyla oluşturulmuş uygulama kayıt belirtecine ihtiyacınız olacaktır.
 
@@ -67,9 +61,11 @@ Güncelleştirilmiş kod imzalama sertifikasını sağlamanın şu an için tek 
 
 
 ### Ayrıca bkz.
-Windows Phone 8.0 yönetimini ayarlama
+[Windows Phone 8.0 yönetimini ayarlama](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+[Windows Phone yönetimini ayarlama](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

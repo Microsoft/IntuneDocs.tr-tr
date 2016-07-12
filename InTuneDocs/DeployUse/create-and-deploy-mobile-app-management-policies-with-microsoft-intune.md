@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: MAM ilkelerini oluşturma ve dağıtma | Microsoft Intune
-description:
-keywords:
+title: "MAM ilkelerini oluşturma ve dağıtma | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
+ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+
 
 ---
 
@@ -34,6 +27,8 @@ Bu konu başlığı altında, **Azure portalında** MAM ilkesi oluşturma işlem
 - Hiçbir MDM çözümü tarafından yönetilmeyen cihazlar (KGC).
 
 Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilen cihazlar için olan uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
+Intune yönetici konsolunda oluşturulan MAM ilkeleri, Azure portalına aktarılamaz.  MAM ilkeleri, Azure portalında yeniden oluşturulmalıdır.
+
 >[!IMPORTANT]
 > Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur. Hem Intune yönetim konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalındaki ilke uygulanır ve kullanıcılara bu ilke dağıtılır.
 
@@ -49,7 +44,8 @@ MAM ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-
 
     ![Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP] Azure portalını ilk kez kullanıyorsanız, portalı tanımak için öncelikle [Microsoft Intune MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md) konusunu okuyun.
+    > [!TIP]
+    > Azure portalını ilk kez kullanıyorsanız, portalı tanımak için öncelikle [Microsoft Intune MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md) konusunu okuyun.
 
 2.  **Ayarlar** dikey penceresinde **Uygulama ilkesi**’ni seçin.  Yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama ilkesi** dikey penceresi açılır.
 
@@ -65,7 +61,8 @@ MAM ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-
 
 5.  Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**’ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçebilirsiniz. Uygulamaları seçtikten sonra, seçiminizi kaydetmek için **Uygulamalar** dikey penceresinin altındaki **Seç** düğmesini kullanın.
 
-    > [!IMPORTANT] İlke oluşturmak için en az bir uygulama seçmeniz gerekir.
+    > [!IMPORTANT]
+    > Bir ilke oluşturmak için en az bir uygulama seçmeniz gerekir.
 
 6.  **İlke ekle dikey penceresinde** **Gerekli ayarları yapılandır**’ı seçerek ilke ayarları dikey penceresini açın.
 
@@ -108,7 +105,8 @@ MAM ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-
 
 Yalnızca [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisansları atanmış kullanıcılar ilkeden etkilenir.  Seçtiğiniz güvenlik grubunda olan ve atanmış [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisansı bulunmayan kullanıcılar etkilenmez.
 
-iOS ve Android cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır.  Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
+>[!IMPORTANT]
+> iOS ve Android cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır.  Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
 Son kullanıcılar uygulamaları App store veya Google Play’den indirebilir. MAM’nin cihazdaki şirket verilerini nasıl koruduğu konusunda ayrıntılı yönergeler için, [MAM etkin uygulamalar için son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) konusuna bakın.
 
@@ -167,6 +165,7 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerde
 [MAM etkin uygulamalar için son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

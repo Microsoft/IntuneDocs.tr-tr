@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Uygulamaları ekleme | Microsoft Intune
-description:
-keywords:
+title: "Uygulamaları ekleme | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+
 
 ---
 
@@ -83,6 +76,32 @@ Dış bağlantılara dayalı uygulamalar, Intune bulut depolama alanınızda dep
 Uygulama mağazasından ücretsiz olarak sağlanan iOS uygulamalarını yönetmenizi ve dağıtmanızı sağlar. Ayrıca, [mobil uygulama yönetim ilkelerini](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) [uyumlu uygulamalarla](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) ilişkilendirmenize ve yönetici konsolunda bunların durumunu gözden geçirmenize de olanak tanır.<br /><br />Yönetilen iOS uygulamaları Intune bulut depolama alanınızda depolanmaz.
 > [!TIP] Intune’u [Mobil Cihaz Yönetimi Yetkilisi olarak ayarlamadığınız](get-ready-to-enroll-devices-in-microsoft-intune.md) sürece, mobil cihazlara yönelik seçenekler kullanılamaz.
 
+## Intune yazılım yayımcısı
+**Microsoft Intune Yazılım Yayımcısı**, Microsoft Intune yönetici konsolundan uygulama eklediğinizde veya değiştirdiğinizde başlatılır. Yayımcıyı kullanarak, Intune bulut depolama alanında depolanacak uygulamaları (bilgisayarlar için programlar veya mobil cihazlar için uygulamalar) karşıya yükleyecek veya bir çevrimiçi mağaza ya da web uygulaması ile bağlantı kuracak türde bir yazılım yükleyicisi seçebilir ve yapılandırabilirsiniz.
+
+### Gereksinimler
+Microsoft Intune Yazılım Yayımcısı'nı kullanmaya başlamadan önce [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851)'ın tam sürümünü yüklemeniz gerekir. Yüklemeden sonra Yazılım Yayımcısı'nın doğru şekilde açılması için bilgisayarınızı yeniden başlatmanız gerekebilir.
+
+## Bulut depolama alanı
+Yazılım yükleyicisi yükleme türünü kullanarak oluşturduğunuz tüm uygulamalar (örneğin, bir iş kolu uygulaması), paketlenir ve Microsoft Intune bulut depolama alanına yüklenir. Intune deneme aboneliği, yönetilen uygulamaları ve güncelleştirmeleri depolamak için kullanılan 2 gigabayt (GB) bulut tabanlı depolama alanı içerir. Ücretli abonelikler 20 GB içerir ve ek depolama alanı satın alma seçeneği de sağlanır.
+
+**Yönetici** çalışma alanının **Depolama Kullanımı** düğümünde ne kadar alan kullandığınızı görebilir ve daha fazla depolama satın alabilirsiniz.
+
+Intune için bulut tabanlı ek depolama alanı satın alma işleminde şu kurallar geçerlidir:
+
+-   Ek depolama alanı satın almak için etkin bir ücretli aboneliğinizin olması gerekir.
+
+-   Yalnızca Microsoft Online Service’inizin faturalama yöneticileri veya genel yöneticileri Office 365 Yönetim Portalı aracılığıyla ek depolama alanı satın alabilir. Bu yöneticileri eklemek, silmek veya yönetmek için bir genel yönetici olmanız ve Office 365 Yönetim Portalı’nda oturum açmış olmanız gerekir.
+
+-   Intune’u veya Microsoft Intune Eklentisini kurumsal anlaşma ile satın almış bir toplu lisans müşterisiyseniz, fiyatlandırma konusunda bilgi edinmek ve ek depolama alanı satın almak için Microsoft Kurumsal Müşteri Yöneticiniz veya Microsoft İş Ortağınız ile iletişim kurun.
+
+#### Bulut depolama alanı gereksinimleri
+
+-   Tüm uygulama yükleme dosyalarının aynı klasörde olduğundan emin olun.
+
+-   Karşıya yüklediğiniz her dosya için dosya boyutu üst sınırı 2 GB'dir.
+
+
 ## Evrensel Windows Platformu (UWP) uygulamaları desteği
 Windows 10 bilgisayarları, iş kolu uygulamalarını yüklemek için dışarıdan yükleme anahtarı gerektirmez. Bununla birlikte, dışarıdan yüklemeyi etkinleştirmek için, **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** kayıt defteri anahtarının değeri **1** olmalıdır.
 
@@ -96,6 +115,8 @@ Windows 10 Mobile cihazlarında, evrensel **.appx** uygulamalarını imzalamak i
 
 Bundan sonra, uygulamaları dağıtabilmek için önce Intune konsoluna eklemeniz gerekir. [Kayıtlı cihazlar](add-apps-for-mobile-devices-in-microsoft-intune.md) için veya [Intune istemci yazılımıyla yönettiğiniz Windows bilgisayarları](add-apps-for-windows-pcs-in-microsoft-intune.md) için uygulamalar ekleyebilirsiniz.
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 

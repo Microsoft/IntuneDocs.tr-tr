@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: İlke dağıtımı | Microsoft Intune
-description:
-keywords:
+title: "İlke dağıtımı | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
 # İlke dağıtımı
 Bu konu başlığı altında, Microsoft Intune’da ilkelerin aşamalı dağıtımına yönelik belirli öneriler sağlanır. Bu yaklaşım, yeni Intune dağıtımına uyguladığınız ilk ilkeler veya mevcut dağıtıma eklediğiniz ilkeler için geçerlidir.
 
-Dağıtım aşamaları hakkında genel bilgi için bkz. [Microsoft Intune dağıtımı için dağıtım aşamaları](rollout-phases-for-microsoft-intune-deployment.md)
+Dağıtım aşamaları hakkında genel bilgi için bkz. [Microsoft Intune dağıtımı için dağıtım aşamaları](rollout-phases-for-microsoft-intune-deployment.md).
 
 ### İlke dağıtımının aşamaları
 İlke dağıtımının aşamaları şunlardır:
@@ -97,11 +91,12 @@ Pilot aşamasında, ilkeyi test kullanıcıları ve cihazlarından oluşan küç
 
 
 ### Ayrıca bkz.
-[Microsoft Intune ile mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlanma](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+[Microsoft Intune ile mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlama](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
 
 [Microsoft Intune’da ilke sorunlarını giderme](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

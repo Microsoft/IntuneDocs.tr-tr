@@ -1,33 +1,28 @@
 ---
-# required metadata
-
-title: iOS için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu | Microsoft Intune
-description:
-keywords:
+title: "iOS için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+
 
 ---
 
 # iOS için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu
 
-> [!NOTE] Öncelikle, desteklenen platformlarda tümleştirme için nasıl hazırlık yapıldığını açıklayan [Intune Uygulama SDK’sını Kullanmaya Başlama Kılavuzu](intune-app-sdk-get-started.md)’nu okumanız önerilir. 
+> [!NOTE]
+> Öncelikle, desteklenen platformlarda tümleştirme için nasıl hazırlık yapıldığını açıklayan [Intune Uygulama SDK’sını Kullanmaya Başlama Kılavuzu](intune-app-sdk-get-started.md)’nu okumanız önerilir.* 
 
 iOS için Microsoft Intune Uygulama SDK’sı, Intune Mobil Uygulama Yönetimi’ni (MAM) iOS uygulamanıza eklemenizi sağlar. MAM özellikli bir uygulama, Intune Uygulama SDK'sı ile tümleşiktir ve uygulama etkin bir şekilde yönetildiğinde, BT yöneticilerinin ilkeleri mobil uygulamanıza dağıtmasını sağlar.
 
@@ -197,7 +192,7 @@ ADALRedirectUri  | Dize  | Uygulamanın AAD yeniden yönlendirme URI'si. | Uygul
 AppGroupIdentifier | Dize Dizisi  | Uygulamanın yetkilendirme dosyasının com.apple.security.application bölümündeki uygulama grupları dizisi. | Uygulama, uygulama grupları kullanıyorsa gereklidir.
 ContainingAppBundleId  | Dize | Uzantıyı içeren uygulamanın paket kimliğini belirtir. | iOS uzantıları için gereklidir.
 MainNibFile<br>MainNibFile~ipad  | Dize  | Bu ayar, uygulamanın ana nib dosya adını içerir.  | Uygulama info.plist dosyasında MainNibFile tanımlıyorsa gereklidir.
-MainStoryboardFile<br>MainStoryboardFile~ipad  | Dize  | Bu ayar, uygulamanın ana ana film şeridi dosya adını içerir. | Uygulama info.plist dosyasında UIMainStoryboardFile tanımlıyorsa gereklidir
+MainStoryboardFile<br>MainStoryboardFile~ipad  | Dize  | Bu ayar, uygulamanın ana film şeridi dosya adını içerir. | Uygulama info.plist dosyasında UIMainStoryboardFile tanımlıyorsa gereklidir
 SplashIconFile <br>SplashIconFile~ipad  | Dize  | Intune giriş simge dosyasını belirtir. Daha fazla bilgi için burada bulunan "Başlangıçtaki Görüntü Dosyaları" bölümüne bakın. | İsteğe bağlı.
 SplashDuration | Sayı | Intune Giriş ekranının uygulama başlatılırken gösterileceği en kısa süre miktarı (saniye cinsinden). Varsayılan olarak 1,5’tir. | İsteğe bağlı.
 ADALLogOverrideDisabled | Boole değeri  | SDK’nın tüm ADAL günlüklerini (varsa, uygulamadan gelen ADAL çağrıları dahil) kendi günlük dosyasına yönlendirip yönlendirmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. Uygulamanın kendi ADAL günlüğü geri aramasını ayarlamasını istiyorsanız EVET olarak ayarlayın. | İsteğe bağlı.
@@ -232,7 +227,8 @@ MAM özellikli uygulamanızı Microsoft Intune ile test etmeden önce, Xcode’d
 
 * Uygulamayı başlatın (Xcode içinde veya dışında). PIN kodunun beklendiği gibi çalıştığını doğrulayın.
 
-> [!NOTE] Ayarları etkinleştirmek ve açmak/kapatmak için artık "Ayarlar -> Uygulamanızın-Adı -> Test İlkelerini Etkinleştir" seçeneğini kullanabilirsiniz.
+> [!NOTE]
+> Ayarları etkinleştirmek ve açmak/kapatmak için artık "Ayarlar -> Uygulamanızın-Adı -> Test İlkelerini Etkinleştir" seçeneğini kullanabilirsiniz.
 
 # iOS için Önerilen En İyi Uygulamalar
 
@@ -244,6 +240,7 @@ Xcode `libIntuneMAM.a`dosyasını bulamıyorsa, bu kitaplığın yolunu bağlay�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

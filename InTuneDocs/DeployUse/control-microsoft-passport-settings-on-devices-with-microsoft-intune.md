@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Cihazlarda Microsoft Passport ayarlarını denetleme | Microsoft Intune
-description:
-keywords:
+title: "Cihazlarda Microsoft Passport ayarlarını denetleme | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+
 
 ---
 
@@ -57,7 +51,8 @@ Intune, İş için Passport ile iki şekilde tümleştirilir:
     - **İzin verildi** - Kullanıcılar PIN kodlarında karakter türü kullanabilir ancak bu zorunlu değildir.
     - **Gerekli** - Kullanıcılar PIN kodlarında karakter türlerinden en az birini bulundurmalıdır. Örneğin, yaygın uygulama en az bir büyük harfin ve bir özel karakterin zorunlu olmasıdır.
     - **İzin verilmedi** (varsayılan) - Kullanıcılar PIN kodlarında bu karakter türlerini kullanmamalıdır (ayar yapılandırılmadığında da bu davranış geçerli olur).
-    > [!TIP] Özel karakterler şunlardır: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP]
+    > Özel karakterler şunlardır: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **PIN süre sonu (gün)** - Sonrasında kullanıcıların PIN’i değiştirmesini zorunlu tutmak için PIN’e bir süre sonu belirtmek iyi bir uygulamadır. Varsayılan değer 41 gündür. 
 - **PIN geçmişini anımsa** - Daha önce kullanılan PIN kodlarının yeniden kullanımını kısıtlamak için bu ayarı kullanın. Varsayılan olarak, kullanılan son 5 PIN kodunun yeniden kullanılamaz.
 
@@ -79,6 +74,7 @@ Microsoft Passport hakkında daha fazla bilgi için, Windows 10 belgelerinde [k�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

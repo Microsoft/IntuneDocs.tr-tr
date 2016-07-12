@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Genel sorun giderme ipuçları | Microsoft Intune
-description:
-keywords:
+title: "Genel sorun giderme ipuçları | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
+ms.openlocfilehash: 6b2d1d5eecb543e45fca5fbb8aa1854c88ec4f9c
+
 
 ---
 
@@ -46,7 +40,7 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerini
 
 -   Kullanıcı bir kimlik doğrulama sorunu yaşıyor olabilir mi? Böyle bir olasılık varsa kullanıcının Azure Active Directory kullanan diğer hizmetlerde oturum açıp açamadığını denetleyin. Ayrıca, kullanıcının farklı bir cihazdan oturum açıp açamadığına bakın.
 
--   Hizmet durumunu denetlediniz mi? [Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) Intune hizmet durumunu izleyebilirsiniz. Sol bölmede **Hizmet Durumu**’nu seçin. 
+-   Hizmet durumunu denetlediniz mi? [Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) Intune hizmet durumunu izleyebilirsiniz. Sol bölmede **Hizmet Durumu**’nu seçin.
 
 ## Kullanılabilir verileri topla
 
@@ -54,9 +48,9 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerini
   - [Android tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [BT yöneticinize Android kayıt hatalarını gönderme](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-  - [BT yöneticinize iOS kayıt hataları gönderin](/intune/enduser/send-errors-to-your-it-admin-ios.md)
+  - [BT yöneticinize iOS kayıt hataları gönderin](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   Örneğin, ilke uygulama sorunlarına yönelik yönetici konsolu verileri için [Microsoft Intune ile kullanıcı ve cihazları yönetmek için grupları kullanma](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) bölümünde açıklandığı gibi amaçlanan ilkeyi ve ilgili ilkenin durumunu incelemeniz gerekir.
+-   Örneğin, ilke uygulama sorunlarına yönelik yönetici konsolu verileri için [Microsoft Intune ile kullanıcı ve cihazları yönetmek için grupları kullanma](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) bölümünde açıklandığı gibi amaçlanan ilkeyi ve ilgili ilkenin durumunu incelemeniz gerekir.
 
 ## Çözümü arayın
 
@@ -97,6 +91,7 @@ Aşağıda listelenen konular, belirli konular için sorun giderme yardımına s
 [Microsoft Intune’da yazılım güncelleştirmesi sorunlarını giderme](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

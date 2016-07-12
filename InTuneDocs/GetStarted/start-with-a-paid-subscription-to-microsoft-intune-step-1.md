@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune'a kaydolma veya Intune’da oturum açma | Microsoft Intune
-description:
-keywords:
+title: "Intune'a kaydolma veya Intune’da oturum açma | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 1a67e22ef8f2b9d0c8bf0c816c774a15acc24f35
+
 
 ---
 
@@ -31,6 +25,7 @@ Intune’a kaydolabilmek veya Intune’da oturum açabilmek için, önce kurulu�
 
 Zaten bir iş veya okul hesabınız varsa, Intune’u önceden var olan abonelik ortamınıza eklemek için yalnızca o hesapla **oturum açabilirsiniz**. Bunun dışındaki durumlarda, kuruluşunuzda Intune’u yönetirken kullanılacak yeni bir hesap oluşturmak için **kaydolmanız** gerekir.
 
+>[!WARNING]
 >Yeni bir hesap için kaydolursanız, daha sonra aboneliğinizi yönetmek için var olan bir iş veya okul hesabını kullanamaz ya da bu hesabı var olan toplu lisans sözleşmeleri ile birleştiremezsiniz.
 
 ## Intune'a kaydolma veya Intune’da oturum açma
@@ -44,7 +39,8 @@ Yeni abonelik için kaydolursanız, kayıt işlemi sırasında sağladığınız
 
 Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığıyla kullanıcıları eklemek ve onlara lisans atamak için kullanılan bir sayfaya yönlendirilirsiniz. Yalnızca varsayılan onmicrosoft.com etki alanı adınızın kullanıldığı bulut tabanlı hesaplarınız olacaksa, devam edip bu noktada kullanıcıları ekleyebilir ve lisansları atayabilirsiniz. Öte yandan, kuruluşunuzun özel etki alanı adını kullanacaksanız veya şirket içi Active Directory’den kullanıcı hesabı bilgilerini eşitlemek istiyorsanız, bu tarayıcı penceresini kapatabilir ve bu hızlı başlangıç kılavuzunun 2. adımına geçebilirsiniz.
 
->Intune’da bir sonraki oturum açışınızda otomatik olarak Intune yönetim konsoluna yönlendirilirsiniz.
+>[!TIP]
+> Intune’da bir sonraki oturum açışınızda otomatik olarak Intune yönetim konsoluna yönlendirilirsiniz.
 
 ### Sonraki adımlar
 Tebrikler! *Intune hızlı başlangıç kılavuzunun* 1. adımını tamamlamış oldunuz.
@@ -54,6 +50,7 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 1. adımını tamamlamış
 >[&larr; **Başlarken**](.\start-with-a-paid-subscription-to-microsoft-intune.md)     [**Etki alanı ayarları** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

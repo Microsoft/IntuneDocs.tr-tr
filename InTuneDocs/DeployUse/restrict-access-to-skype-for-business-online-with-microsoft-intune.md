@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Skype Kurumsal Çevrimiçi’ne erişimi kısıtlama | Microsoft Intune
-description:
-keywords:
+title: "Skype Kurumsal Çevrimiçi’ne erişimi kısıtlama | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
+ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+
 
 ---
 
@@ -39,7 +32,7 @@ Hedeflenen bir kullanıcı kendi cihazında Skype Kurumsal Çevrimiçi’ni kull
 Skype Kurumsal Çevrimiçi için koşullu erişim ilkesini yapılandırmadan **önce**:
 - **Skype Kurumsal Çevrimiçi aboneliğiniz** olmalı ve kullanıcılara Skype Kurumsal Çevrimiçi lisansı atamalısınız.
 - **Enterprise Mobility Suite** veya **Azure Active Directory Premium** için bir aboneliğiniz olmalıdır.
--   Skype Kurumsal Çevrimiçi için **modern kimlik doğrulamasını etkinleştirmelisiniz**. Modern kimlik doğrulama programına kaydolmak için Microsoft Connect’te oturum açın ve [bu formu](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) doldurun.
+-   Skype Kurumsal Çevrimiçi Sürüm için [modern kimlik doğrulamasını etkinleştirin](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune). 
 -  Tüm son kullanıcılarınız **Skype Kurumsal Çevrimiçi** kullanıyor olmalıdır. Hem Skype Kurumsal Çevrimiçi hem de Skype Kurumsal şirket içi kullanılan bir dağıtımınız varsa, son kullanıcılara koşullu erişim ilkesi uygulanmaz.
 
     Skype Kurumsal Çevrimiçi’ne erişmesi gereken cihaz:
@@ -119,6 +112,7 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 * **AAD ile kaydedilen ve uyumlu olan cihazlar** – Bu cihazlar Skype Kurumsal Çevrimiçi’ne erişebilir.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

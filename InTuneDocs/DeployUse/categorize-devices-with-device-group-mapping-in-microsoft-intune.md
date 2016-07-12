@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Cihaz grubu eşleme ile cihazları kategorilere ayırma | Microsoft Intune
-description:
-keywords:
+title: "Cihaz grubu eşleme ile cihazları kategorilere ayırma | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: sumitp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: bb30b8e61a768b15e2f09993f4dceae8f4e1bd8a
+ms.openlocfilehash: 55f811153bf37048a4fcdfc6da301a5f181700c3
+
 
 ---
 
@@ -46,18 +39,19 @@ Kategori örnekleri:
 
 ## Cihaz grubu eşlemeyi yapılandırma
 1. Kullanmak istediğiniz her cihaz kategorisi için, bir Intune cihaz grubu oluşturun. Grupları oluşturma hakkında bilgi için bkz. [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
-2. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’ye tıklayın.
-3. **Yönetim** çalışma alanında, **Mobil Cihaz Yönetimi**’ni genişletin ve **Cihaz Grubu Eşleme**’ye tıklayın.
+2. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’yi seçin.
+3. **Yönetim** çalışma alanında, **Mobil Cihaz Yönetimi**’ni genişletin ve ardından **Cihaz Grubu Eşleme**’yi seçin.
 4. **Cihaz Grubu Eşleme** sayfasında cihaz grubu eşlemeyi etkinleştirin.
-5. Yeni eşleme kuralı oluşturmak için **Ekle**’ye tıklayın.
-6. **Cihaz grubu eşleme kuralı ekle** iletişim kutusunda, oluşturmak istediğiniz kategorinin adını girin ve ardından açılan listede bu kategoriyi eşlemek istediğiniz cihaz koleksiyonunu seçin. İşiniz bittiğinde **Ekle**’ye tıklayın.
-7. Kategorileri ve grupları eklemeyi tamamladığınızda **Kaydet**’e tıklayın.
+5. Yeni eşleme kuralı oluşturmak için **Ekle**’yi seçin.
+6. **Cihaz grubu eşleme kuralı ekle** iletişim kutusunda, oluşturmak istediğiniz kategorinin adını girin ve ardından açılan listede bu kategoriyi eşlemek istediğiniz cihaz koleksiyonunu seçin. Bitirdiğinizde, **Ekle**’yi seçin.
+7. Kategorileri ve grupları eklemeyi tamamladığınızda **Kaydet**’i seçin.
 
 Artık, kullanıcılar cihazlarını kaydettiklerinde onlara sizin yapılandırdığınız kategori listesi gösterilir. Kategoriyi seçip kaydı tamamladıktan sonra, cihazları seçtikleri kategoriye karşılık gelen cihaz grubuna eklenir.
 
 ### Ayrıca bkz.
 [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

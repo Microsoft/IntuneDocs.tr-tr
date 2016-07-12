@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS MAM ilke ayarları | Microsoft Intune
-description:
-keywords:
+title: "iOS MAM ilke ayarları | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+
 
 ---
 
@@ -83,7 +77,7 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
   Bu ayarı etkinleştirdiğinizde son kullanıcının cihazına erişmesi için bir PIN ayarlaması ve bu PIN’i kullanması gerekir.  Cihaz erişimi için PIN ayarlanmadıysa uygulamalar başlatılmaz ve “Şirketiniz, bu uygulamaya erişmek için öncelikle bir cihaz PIN’i etkinleştirmenizi gerektiriyor” iletisiyle birlikte son kullanıcıdan bir PIN ayarlaması istenir.
 
   **Varsayılan değer - Şifreleme seçeneği belirlenmez.**
-- **KişiEşitlemeDevreDışı:**  Kişi bilgilerinin cihazdaki yerel adres defteri uygulamasıyla eşitlenmesini önlemek için **Evet**’i seçin. **Hayır**’ı seçerseniz, uygulama kişi bilgilerini cihazdaki adres defteri uygulamasına kaydeder.
+- **Kişi eşitleme devre dışı:** Kişi bilgilerinin cihazdaki yerel adres defteri uygulamasıyla eşitlenmesini önlemek için **Evet**’i seçin. **Hayır**’ı seçerseniz, uygulama kişi bilgilerini cihazdaki adres defteri uygulamasına kaydeder.
 
   Şirket verilerini kaldırmak amacıyla seçmeli temizleme işlemi yaptığınızda, doğrudan uygulamadan yerel adres defterine eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. Şu anda bu özellik yalnızca **Microsoft Outlook** uygulaması için geçerlidir.
 
@@ -102,7 +96,7 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
 iOS cihazlarında kullanıcının, kendini tanıtmak için numaralandırılmış PIN yerine kendini parmak izi kullanmasına izin verebilirsiniz. Son kullanıcı, iş hesabını kullanarak bu uygulamaya erişmeyi denediğinde, PIN numarası girmek yerine parmak izi kimliğini vermesi istenir.
 
     **Varsayılan değer = Evet**
-- **Erişim için kuruluş kimlik bilgilerini gerektir:** Uygulama erişiminde PIN yerine şirket kimlik bilgilerinin istenmesi için **Evet**’i seçin. **Bu ayar Evet olarak belirlenirse PIN veya Touch ID gereksinimlerini geçersiz kılar.** Kullanıcıdan şirket kimlik bilgilerini belirtmesi istenir.
+- **Erişim için kuruluş kimlik bilgilerini gerektir:** Uygulama erişiminde PIN yerine şirket kimlik bilgilerinin istenmesi için **Evet**’i seçin. **Evet olarak ayarlarsanız, bu ayar PIN veya Touch ID gereksinimlerini geçersiz kılar.** Kullanıcıdan şirket kimlik bilgilerini belirtmesi istenir.
 
   **Varsayılan değer = Hayır**
 - **Yönetilen uygulamaların işletim sistemi kısıtlamaları kaldırılmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelle:** Uygulamaların yazılım kilidi kırılmış veya kök erişim izni verilmiş cihazlarda çalıştırılmasını engellemek için **Evet**’i seçin. Kullanıcı kişisel görevler için uygulamaları kullanmaya devam edebilir, ancak iş için farklı bir cihaz kullanması gerekir.
@@ -112,11 +106,12 @@ iOS cihazlarında kullanıcının, kendini tanıtmak için numaralandırılmış
   -   **Çevrimdışı tanınan süre:** Cihaz çevrimdışıyken uygulama için erişim gereksinimleri yeniden denetlenmeden önce geçmesi gereken süreyi (dakika olarak) belirtin.
 
   **Varsayılan değer = 30 dakikalık zaman aşımı ve 720 dakikalık çevrimdışı tanınan süre**
-  - **Uygulama verileri temizlenmeden önce geçen çevrimdışı süre (gün cinsinden):** Cihaz belirli bir süre için çevrimdışı kaldıysa şirket verilerini silebilirsiniz.  Cihazın kaç gün çevrimdışı kaldıktan sonra içindeki şirket verilerinin silineceğini belirtin. **0 değerinin girilmesi bu ayarı kapatır**.
+  - **Uygulama verileri temizlenmeden önce geçen çevrimdışı süre (gün cinsinden):** Cihaz belirli bir süre için çevrimdışı kaldığında şirket verilerinin temizlenmesini seçebilirsiniz.  Cihazın kaç gün çevrimdışı kaldıktan sonra içindeki şirket verilerinin silineceğini belirtin. **0 değerinin girilmesi bu ayarı kapatır**.
 
   **Varsayılan değer = 90 gün**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

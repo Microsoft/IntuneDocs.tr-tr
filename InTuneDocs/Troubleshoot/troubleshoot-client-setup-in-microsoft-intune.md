@@ -1,38 +1,32 @@
 ---
-# required metadata
-
-title: İstemci kurulumu sorunlarını giderme | Microsoft Intune
-description:
-keywords:
+title: "İstemci kurulumu sorunlarını giderme | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c8409d58e3e7a1038e4d030d88a9ffe7d29bc1b6
+ms.openlocfilehash: 78fa086f2e7e6c836aa74acb303d9a6564ed0993
+
 
 ---
 
 # Microsoft Intune’da istemci kurulumu sorunlarını giderme
-Sık karşılaşılan istemci kurulum sorunlarını gidermenize yardımcı olması için aşağıdaki bilgileri kullanın. Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
+Sık karşılaşılan istemci kurulum sorunlarını gidermenize yardımcı olması için aşağıdaki bilgileri kullanın. Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
 ## İstemci yüklemesi başarısız oldu
 
 -   [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) bilgisayar için hiç istemci yazılım dağıtımı uyarısı görüntülemezse, bilgisayarın İnternet bağlantısı ve proxy yapılandırmasını denetleyin, ayrıca bilgisayarın hizmet URL'si ([https://manage.microsoft.com](https://manage.microsoft.com/)) ile iletişim kurabildiğinden emin olun. Ardından İstemci yazılımını yüklemeyi yeniden deneyin.
 
--    **Yönetici** çalışma alanında bir bildirim kuralı yapılandırarak bir istemci yazılımı dağıtım hatası oluşursa seçili alıcılara bir e-posta gönderilmesini sağlayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune Uyarıları ile bilgi edinin](/intune/deploy-use/get-notified-by-microsoft-intune-alerts).
+-    **Yönetici** çalışma alanında bir bildirim kuralı yapılandırarak bir istemci yazılımı dağıtım hatası oluşursa seçili alıcılara bir e-posta gönderilmesini sağlayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune Uyarıları ile bilgi edinin](/intune/deploy-use/get-notified-by-alerts).
 
 -   İstemci yazılımı dağıtılamazsa, Intune **İstemci Yazılımı Dağıtım Hatası** kritik uyarısını gösterir. Bu uyarı, [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Sisteme Genel Bakış** sayfası ve **Uyarılar** sayfalarında gösterilir. Uyarılar şöyle denetlenir:
 
@@ -56,23 +50,23 @@ Sık karşılaşılan istemci kurulum sorunlarını gidermenize yardımcı olmas
 
 ## Bilgisayar kayıt paketi indirilmedi
 **Sorun:** Bilgisayarı kaydetmeyi denerken aşağıdaki durumla karşılaştınız:
--  Kayıt paketi indirilemedi 
+-  Kayıt paketi indirilemedi
 -  İndirme iletişim kutusu görüntüleniyor ancak zaman aşımına uğruyor
 
 **Çözüm:** İndirme işleminde kullandığınız tarayıcıda, indirme süresi için indirme işlemlerinin etkinleştirildiğinden ve şifrelenmiş dosyaların yerel diskinize kaydedilebildiğinden emin olun.
 
 ## İstemci yüklemesi 0x80040154 hata koduyla kilitleniyor
 **Sorun:**
- 
+
 -  İstemci yüklemesi kayıt sırasında kilitleniyor
 
--  Cihaz kaydedilemiyor 
+-  Cihaz kaydedilemiyor
 
 -  WindowsUpdate.log dosyasında 0x80040154 hatası
 
 Bilgisayarda kritik yazılım güncelleştirmelerinin eksik olması buna neden olabilir.
 
-**Çözüm:** [Microsoft Intune'da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutun](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) konu başlığı altında açıklandığı gibi, yazılım güncelleştirme ilkenizin kritik güncelleştirmelerin yüklenmesine olanak tanıdığından emin olun. 
+**Çözüm:** [Microsoft Intune'da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutun](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) konu başlığı altında açıklandığı gibi, yazılım güncelleştirme ilkenizin kritik güncelleştirmelerin yüklenmesine olanak tanıdığından emin olun.
 
 
 ## policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
@@ -84,7 +78,8 @@ MDM olmayan Windows cihazları için policyplatform.log dosyasındaki ilke hatal
 
 2.  İstemci yazılımının kaldırılması için 20 dakika bekleyin.
 
-    > [!NOTE] İstemciyi Programlar ve Özellikler menüsünden kaldırmaya çalışmayın.
+    > [!NOTE]
+    > İstemciyi Programlar ve Özellikler menüsünden kaldırmaya çalışmayın.
 
 3.  Başlat menüsünde **UAC** yazarak Kullanıcı Hesabı Denetimi ayarlarını açın.
 
@@ -130,6 +125,7 @@ Yükleme sorunu devam ediyorsa, [Microsoft Intune için destek alma](how-to-get-
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

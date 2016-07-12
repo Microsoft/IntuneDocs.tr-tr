@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune’u kullanmanın yaygın yolları | Microsoft Intune
-description:
-keywords:
+title: "Intune’u kullanmanın yaygın yolları | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9cb6894cefad1da14332f9994fdf45fe2d1e9b9c
+ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
+
 
 ---
 
@@ -72,6 +66,7 @@ Bazen çalışanlarınızın sergi alanlarında ve otel lobilerindeki genel kull
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

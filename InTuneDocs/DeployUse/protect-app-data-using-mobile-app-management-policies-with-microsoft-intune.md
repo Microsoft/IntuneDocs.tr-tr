@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma | Microsoft Intune
-description:
-keywords:
+title: "Mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+
 
 ---
 
@@ -33,15 +27,16 @@ ms.suite: ems
 Şirketinizin verilerini korumaya yardımcı olmak için Intune mobil uygulama yönetimi (MAM) ilkelerini kullanabilirsiniz. Intune MAM ilkeleri, herhangi bir mobil cihaz yönetimi (MDM) çözümünden bağımsız olarak kullanılabildiğinden, bunu, cihazları bir cihaz yönetimi çözümüne kaydederek veya kaydetmeden, şirketinizin verilerini korumak üzere kullanabilirsiniz. **Uygulama düzeyinde ilkeler** uygulayarak, şirket kaynaklarına erişimi kısıtlayabilir ve verileri BT departmanınızın kapsamında tutabilirsiniz.
 
 MAM ilkeleri, aşağıdakilerde çalışan uygulamaları destekler:
+> [!IMPORTANT]
+> Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. MAM ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan uygulamalar için desteklenmez.
 
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] içinde **yönetilen ve kayıtlı cihazlar.** Bu kategorideki cihazlar tipik olarak, şirkete ait cihazlardır.
 
-  > [!IMPORTANT]
-  > iOS ve Android cihazları yönetmek için Intune kullanıyorsanız, Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. MAM ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan uygulamalar için desteklenmez.
+- **Microsoft Intune’da yönetilen ve kaydedilen cihazlar**. Bu kategorideki cihazlar tipik olarak, şirkete ait cihazlardır.
 
 -   **Yönetilen ve üçüncü taraf mobil cihaz yönetimi çözümüne kaydedilen cihazlar**.   Bu kategorideki cihazlar tipik olarak, şirkete ait cihazlardır.
 
-  > [!NOTE] Mobil uygulama yönetimi ilkeleri üçüncü taraf mobil uygulama yönetimi ya da güvenli kapsayıcı çözümleri ile birlikte kullanılmamalıdır.
+  > [!NOTE]
+  > mobil uygulama yönetimi ilkeleri, üçüncü taraf mobil uygulama yönetimi veya güvenli kapsayıcı çözümleri ile birlikte kullanılmamalıdır.
 
 -   **Yönetilmeyen cihazlar**.  Bu kategorideki cihazlar genellikle, Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
 
@@ -132,11 +127,12 @@ MAM ilkeleriyle ilişkili uygulamaları kullanma deneyimine dair ve Çoklu kimli
 Tüm Office mobil uygulamaları çoklu kimliği destekler.
 
 ##  Sonraki adımlar
-[Mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlanma](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlama](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

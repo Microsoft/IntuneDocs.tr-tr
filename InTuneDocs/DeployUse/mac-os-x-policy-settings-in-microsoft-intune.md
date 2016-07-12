@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Mac OS X ilkesi ayarları | Microsoft Intune
-description:
-keywords:
+title: "Mac OS X ilkesi ayarları | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: bbbb666fdc34a82d247d760d156d48c5ac72374c
+
 
 ---
 
@@ -48,11 +41,11 @@ Aradığınız özellik bu listede görünmüyorsa, Apple Configurator Aracını
 |**Basit parolalara izin ver**|'**0000**' veya '**1234**' gibi basit parolaların kullanımına izin verir.|
 |**Parola gerekmeden önce etkin olmama süresi (dakika)**|Bilgisayar ne kadar süreyle etkinlik dışı kaldıktan sonra kilidinin açılması için bir parolanın gerekli olacağını belirtir.|
 |**Parola geçerlilik süresi (gün)**|Kullanıcının kaç gün geçtikten sonra parolayı değiştirmesi gerekeceğini belirtir (**1** - **255** gün arasında).|
-|**Parola geçmişini anımsa**|Bu ayar, kullanıcının önceden kullanılmış bir parolayı kullanmasını engellemeye yöneliktir. Ayarlandığında, önceden kullanılmış olan parolalardan yeniden kullanılamayacak olanların sayısını belirtmek için **Önceki parolaların yeniden kullanılmasını engelle** seçeneğini de ayarlayabilirsiniz (**1** - **24** arasında).|
+|**Parola geçmişini anımsa**|Bu ayar, kullanıcının önceden kullanılmış bir parolayı kullanmasını engellemeye yöneliktir. Ayarlandığında, önceden kullanılmış olan parolalardan yeniden kullanılamayacak olanların sayısını belirtmek için **Önceki parolaların yeniden kullanılmasını önle** seçeneğini de ayarlayabilirsiniz (**1** - **24** arasında).|
 |**Ekran koruyucu etkinleştirilmeden önce işlem yapılmadan geçen süre**|Ekran koruyucu etkinleştirilmeden önce bilgisayarın boşta bekleyeceği süreyi belirtir.|
 
 ### Uyumlu ve uyumlu olmayan uygulamalar için ayarlar
-**Mac OS X için Uyumlu Olan ve Olmayan Uygulamalar** listesinde, **Cihazlar için yönetilen ayarlar**’ı etkinleştirin ve sonra aşağıdaki bilgileri kullanarak uyumlu veya uyumsuz uygulamalar listesini belirtin:
+**Mac OS X için Uyumlu &amp; Uyumsuz Uygulamalar** listesinde, **Cihazlar için yönetilen ayarlar**’ı etkinleştirin ve sonra aşağıdaki bilgileri kullanarak uyumlu veya uyumsuz uygulamalar listesini belirtin:
 
 > [!NOTE]
 > Tek bir ilke, yalnızca uyumlu uygulamaların veya uyumsuz uygulamaların listesini içerebilir. İkisi de aynı ilkede belirtemezsiniz.
@@ -67,7 +60,8 @@ Aradığınız özellik bu listede görünmüyorsa, Apple Configurator Aracını
 |**Uygulamaları İçeri Aktar**|Virgülle ayrılmış bir değerler dosyasında belirttiğiniz uygulamaların listesini içeri aktarır. Dosyadaki biçimi, uygulama adını, yayımcıyı ve uygulama paketi kimliğini kullanın.|
 |**Düzenle**|Seçilen uygulamanın adını, yayımcısını ve uygulama paket kimliğini düzenlemenize olanak tanır.|
 |**Sil**|Seçilen uygulamayı listeden siler.|
-> [!TIP] Intune raporları hakkında daha fazla bilgi için bkz. [Raporları kullanarak Microsoft Intune işlemlerini anlama](understand-microsoft-intune-operations-by-using-reports.md).
+> [!TIP]
+> Intune raporları hakkında daha fazla bilgi için bkz. [Raporları kullanarak Microsoft Intune işlemlerini anlama](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Mac OS X cihazı Uyku modundayken, ilkeler ve profiller teslim edilemez veya envantere kaydedilemez. Sonuç olarak, cihazın Uyku modundan bir sonraki çıkarılışına kadar Intune konsolu geçici olarak **Hatalı ilke ayarları** durumunu görüntüleyebilir.
@@ -105,7 +99,7 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 |Ayar adı|Ayrıntılar|
     |----------------|--------------------|
     |**Özel yapılandırma profili adı (kullanıcılara gösterilir)**|Cihazda ve Intune ilke raporlarında görüntülenecek şekilde ilke için bir ad sağlayın.|
-    |**Yapılandırma profili dosyası**| **İçeri aktar**‘a tıklayın, ardından Apple Configurator’ı kullanarak oluşturduğunuz yapılandırma profiline göz atın. **İpucu:** Yapılandırma profilini oluştururken yardımcı olması için, bu konunun [Yapılandırma profili dosyası oluşturma](#BKMK_Prof) bölümüne bakın.|
+    |**Yapılandırma profili dosyası**| **İçeri aktar**‘a tıklayın, ardından Apple Configurator’ı kullanarak oluşturduğunuz yapılandırma profiline göz atın. **İpucu:** Yapılandırma profilini oluştururken yardımcı olması için, bu konunun **Yapılandırma profili dosyası oluşturma** bölümüne bakın.|
     |**Yapılandırma profili ayrıntıları**|İçeri aktardığınız yapılandırma profili için xml kodunu görüntüler.|
 
 
@@ -126,6 +120,7 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Kullanıcı ve cihazları yönetmek için grupları kullanma | Microsoft Intune
-description:
-keywords:
+title: "Kullanıcı ve cihazları yönetmek için grupları kullanma | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
+ms.openlocfilehash: a1f6dfc7629481403c40a1ce927b588f67e5fa74
+
 
 ---
 
@@ -43,14 +37,14 @@ Ayrıca, seçili grubun üyeleri için sorunları tanımlamanıza ve çözmenize
 >
 > Büyük ihtimalle şirketinizin temel uyumluluk gereksinimlerini belirlemek için tüm gruplara ve cihazlara uygulanan varsayılan bir ilke oluşturmak istersiniz. Daha sonra, en geniş kullanıcı ve cihaz kategorileri için daha özel ilkler oluşturabilirsiniz; örneğin, cihaz işletim sistemlerinin her biri için e-posta ilkeleri.
 >
-> İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırmaya dikkat edin. Örneğin, **Tüm Şirket için WP E-posta İlkesi** iyi ve açıklayıcı bir ilke adı olabilir.
+> İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırmaya dikkat edin. Örneğin, iyi bir açıklayıcı ilke adı **Tüm Şirket için WP E-posta İlkesi**olabilir.
 >
 > Her kısıtlayıcı ilke oluşturduğunuzda bunu kullanıcılarınıza iletmek istersiniz; bu nedenle daha genel gruplar ve ilkeler oluşturduktan sonra gereksiz iletişimi azaltmak için nasıl daha küçük gruplar oluşturabileceğinize dikkat edin.
 
 
 ## Bir cihaz grubu oluşturma
 
-1.  Intune yönetim konsolunda **Gruplar** &gt; **Genel bakış** &gt; **Grup Oluştur**’u seçin.
+1.  Intune yönetim konsolunda, **Gruplar** &gt; **Genel Bakış** &gt; **Grup Oluştur**’u seçin.
 
 2.  Grup için bir ad ve isteğe bağlı açıklama sağlayın, üst grup olarak bir cihaz grubunu seçin. **İleri**’yi seçin.
 
@@ -71,7 +65,7 @@ Yeni oluşturulan grubu **Gruplar** çalışma alanının **Gruplar** listesinde
 
 ## Bir kullanıcı grubu oluşturma
 
-1.  Intune yönetim konsolunda **Gruplar** &gt; **Genel bakış** &gt; **Grup Oluştur**’u seçin.
+1.  Intune yönetim konsolunda, **Gruplar** &gt; **Genel Bakış** &gt; **Grup Oluştur**’u seçin.
 
 2.  Grup için bir ad ve isteğe bağlı açıklama sağlayın, üst grup olarak bir kullanıcı grubunu seçin. **İleri**’yi seçin.
 
@@ -123,11 +117,11 @@ Bir hizmet yöneticisi için filtrelenen grup görünümlerini yapılandırdığ
 
 ### Filtrelenen grup görünümlerini yapılandırma
 
-1.  Intune yönetim konsolunda **Yönetici** &gt; **Yönetici Yönetimi** &gt; **Hizmet Yöneticileri**’ni seçin.
+1.  Intune yönetim konsolunda, **Yönetici** &gt; **Yönetici Yönetimi** &gt; **Hizmet Yöneticileri**’ni seçin.
 
 2.  Grupları filtrelemek istediğiniz hizmet yöneticisini seçin ve ardından **Grupları Yönet**'e tıklayın.
 
-3.  **Bu hizmet yöneticisinin görebileceği grupları seçin** iletişim kutusunda, seçili hizmet yöneticisinin erişebileceği grupları ekleyin ve ardından **Tamam**'a tıklayın.
+3.   **Bu hizmet yöneticisi için görünür olacak grupları seçin** iletişim kutusunda, seçili hizmet yöneticisinin erişebileceği grupları ekleyin ve ardından **Tamam**'a tıklayın.
 
 Filtrelenen grup görünümlerini yapılandırdıktan sonra, BT yöneticisi yalnızca seçtiğiniz grupları görebilir ve seçebilir.
 
@@ -154,9 +148,11 @@ Her ilkenin bir **Amaçlanan Değer** ‘i ve bir de **Durum**‘u vardır. Ama�
 
 -   Benzer şekilde, bu cihaz bir Android cihazı olduğundan **iOS cihazları için e-posta ayarları** genişletilmiş ilke öğesi bu cihaza uygulanmaz.
 
+> [!NOTE]
 > Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

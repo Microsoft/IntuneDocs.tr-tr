@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Değerlendirme mobil cihazlarını kaydetme | Microsoft Intune
-description:
-keywords:
+title: "Değerlendirme mobil cihazlarını kaydetme | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: f26b64015f483eb5b6a6efbaa6fe6730dde7dac9
+
 
 ---
 
@@ -38,11 +32,11 @@ Intune ile mobil cihaz yönetimi ayarlamak için, önce mobil cihaz yönetimi ye
 
     Yönetmek istediğiniz cihaz platformu için mobil cihaz yönetimini etkinleştirin. Platforma bağlı olarak farklı gereksinimler bulunur:
 
-    -   **iOS ve Mac OS X**: bkz. [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)
+    -   **iOS ve Mac OS X**: bkz. [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).
 
     -   **Android**: Android mobil cihazlar kullanıcıların Google Play’den erişilebilen Şirket Portalı uygulamasını kullanarak kendi kendilerine kaydolmalarına olanak tanır. Intune’da ek yapılandırma gerekmez.
 
-    -   **Windows Phone**: bkz. [Microsoft Intune ile Windows Phone yönetimini ayarlama](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)
+    -   **Windows Phone**: bkz. [Microsoft Intune ile Windows Phone yönetimini ayarlama](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).
 
 ## Test cihazlarını kaydetme
 
@@ -64,16 +58,17 @@ Kullanıcılar, Windows Phone mağazasından erişilebilen Microsoft Corporation
 ## Daha önce dağıtılan uygulamayı yükleme
 Mobil cihazda Şirket Portalı’nı açın, **Uygulamalar**'ı seçin ve ardından **Microsoft Skype**'ı yükleyin.
 
-Intune kullanarak mobil cihaz yönetimi hakkında daha fazla bilgi için, bkz. [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+Intune kullanarak mobil cihaz yönetimi hakkında daha fazla bilgi için, bkz. [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
 
 ### Sonraki adımlar
 Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 5. adımını tamamladınız.
 
 >[!div class="step-by-step"]
 
->[&larr; **İlke Oluşturma**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**seçenekler ve ek özellikler** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
+>[&larr; **İlke Oluşturma**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**Seçenekler ve ek özellikler** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

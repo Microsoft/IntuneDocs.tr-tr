@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune ile Windows bilgisayarı istemcisini yükleme | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune ile Windows bilgisayarı istemcisini yükleme | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -50,7 +44,7 @@ Bir bilgisayarı artık Intune’la yönetmeniz gerekmiyorsa, bilgisayarı devre
 
 ### İstemci yazılımını indirmek için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Yönetim** &gt; **İstemci Yazılımını İndir**'e tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **İstemci Yazılımını İndir**’e tıklayın
 
   ![Intune bilgisayar istemcisini indirme](./media/pc-SA-client-download.png)
 
@@ -61,12 +55,14 @@ Bir bilgisayarı artık Intune’la yönetmeniz gerekmiyorsa, bilgisayarı devre
 
 3.  Yükleme paketinin içeriğini ağınızda güvenli bir konuma ayıklayın.
 
+    > [!IMPORTANT]
     > Ayıklanan **ACCOUNTCERT** dosyasını yeniden adlandırmayın veya kaldırmayın, aksi takdirde istemci yazılımının yüklenmesi başarısız olur.
 
 ### İstemci yazılımını el ile dağıtmak için
 
 1.  Bir bilgisayarda, istemci yazılımı yükleme dosyalarının bulunduğu klasöre göz atın ve ardından, istemci yazılımını yüklemek için **Microsoft_Intune_Setup.exe**'yi çalıştırın.
 
+    > [!NOTE]
     > İstemci bilgisayarın görev çubuğundaki simgenin üzerine geldiğinizde yükleme durumu görüntülenir.
 
 ### İstemci yazılımını Grup İlkesi kullanarak otomatik olarak dağıtmak için
@@ -79,6 +75,7 @@ Bir bilgisayarı artık Intune’la yönetmeniz gerekmiyorsa, bilgisayarı devre
 
 2.  **Microsoft_Intune_x86.msi** dosyasını, **Microsoft_Intune_x64.msi** dosyasını ve **MicrosoftIntune.accountcert** dosyasını, istemci yazılımın yükleneceği tüm bilgisayarlar tarafından erişilebilen bir ağ konumuna kopyalayın.
 
+    > [!IMPORTANT]
     > Dosyaları ayırmayın veya yeniden adlandırmayın, aksi takdirde yazılım yüklemesi başarısız olur.
 
 3.  Yazılımı ağınızdaki bilgisayarlara dağıtmak için Grup İlkesi'ni kullanın.
@@ -99,9 +96,9 @@ Intune Şirket Portalı üzerinden, son kullanıcılar sahip oldukları her bilg
 
 1.  Kaydetmek istediğiniz bilgisayardan şirket portalında oturum açın.
 
-2.  **Cihaz Ekle**'ye tıklayın.
+2.   **Cihaz Ekle**'ye tıklayın.
 
-3.  **Yazılım İndir**'e ve ardından **Çalıştır**'a tıklayın.
+3.   **Yazılım İndir** 'e ve ardından **Çalıştır**'a tıklayın.
 
 4.  Microsoft Intune Kurulum Sihirbazı'nı başlatmak için **İleri**'ye tıklayın.
 
@@ -142,7 +139,7 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
 
 ### Microsoft Intune yönetici konsolundan istemci yazılımının yüklendiğini doğrulamak için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Bilgisayarlar**'a tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Bilgisayarlar**’a tıklayın.
 
 2.  Intune’la iletişim kuran yönetilen bilgisayarları bulmak için bilgisayar listesini aşağı kaydırın veya **Cihazlarda ara** kutusuna bilgisayar adının tamamını ya da bir kısmını yazarak belirli bir yönetilen bilgisayarı arayın.
 
@@ -150,12 +147,13 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
 
 ### Tüm kayıtlı bilgisayarları görüntülemek üzere bir bilgisayar envanteri raporu oluşturmak için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Raporlar** &gt; **Bilgisayar Envanteri Raporları**’na tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Raporlar** &gt; **Bilgisayar Envanteri Raporları**’na tıklayın.
 
-2.  **Yeni Rapor Oluştur** sayfasında, tüm alanları varsayılan değerleriyle bırakın (filtre uygulamak istemediğiniz sürece) ve **Raporu Görüntüle**'ye tıklayın.
+2.   **Yeni Rapor Oluştur** sayfasında, tüm alanları varsayılan değerleriyle bırakın (filtre uygulamak istemediğiniz sürece) ve **Raporu Görüntüle**'ye tıklayın.
 
 3.  **Bilgisayar Envanteri Raporu** sayfası, Intune’a başarılı bir şekilde kaydedilen tüm bilgisayarların görüntülendiği yeni bir pencerede açılır.
 
+    > [!TIP]
     > Raporu herhangi bir sütunun içeriğine göre sıralamak için sütun başlığına tıklayın.
 
 
@@ -163,6 +161,7 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
 [Microsoft Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

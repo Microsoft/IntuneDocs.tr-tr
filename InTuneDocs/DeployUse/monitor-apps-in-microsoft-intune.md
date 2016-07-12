@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Uygulama dağıtımlarını izleme | Microsoft Intune
-description:
-keywords:
+title: "Uygulama dağıtımlarını izleme | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: c92b7de51de0ac0115dd53e421d4852bed8d729a
+
 
 ---
 
@@ -32,10 +26,11 @@ ms.suite: ems
 Intune yönetim konsolunda, yönettiğiniz uygulamaları ve tüm dağıtımların durumunu görebilirsiniz.
 
 ### Yönettiğiniz uygulamaları ve bunların durumunu görüntülemek için
-**Uygulamalar** çalışma alanında **Uygulamalar** düğümüne ve sonra da **Uygulamalar**’a tıklayın.
+**Uygulamalar** çalışma alanında, **Uygulamalar** düğümüne ve ardından **Uygulamalar**’a tıklayın.
 
 Yönettiğiniz uygulamaların listesi görüntülenir. Herhangi bir uygulamaya tıklayarak, yükleme durumunun konsol pencerelerinin alt bölmesinde gösterilmesini sağlayabilirsiniz. Diğer ayrıntıları görmek için bu duruma tıklayın. Örneğin, durum olarak **1 kullanıcı bu yazılımı kullanabilir** gösteriliyorsa, iletiye tıklayarak kullanıcının adını görebilirsiniz.
 
+> [!TIP]
 > Yalnızca belirttiğiniz ölçütlere uyan uygulamaları, örneğin yüklenemeyen uygulamaları veya başarılı bir şekilde dağıtılan uygulamaları görüntülemek için **Filtreler** açılan listesini kullanabilirsiniz.
 > 
 > ![Uygulama filtreleri örneği](./media/app-filters.png)
@@ -53,6 +48,7 @@ Daha önce olduğu gibi, sekmelerin her birinde gösterilen değerleri yapıland
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

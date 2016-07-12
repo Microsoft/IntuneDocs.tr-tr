@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Intune'a geçiş | Microsoft Intune
-description:
-keywords:
+title: "Intune'a geçiş | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+
 
 ---
 
@@ -34,7 +27,7 @@ Mevcut kurumsal mobil yönetim çözümünüzden Intune’a geçiş, genel olara
 
 ## Kullanıcılara bildirme
 
-Intune pilot dağıtımının gereksinimlerinizi karşıladığı konusunda içiniz rahat olduğunda, kullanıcılarınızı cihazlarının yakında Intune’a geçirileceği konusunda bilgilendirin. E-posta iletileri, [yönergeler](http://www.microsoft.com/en-us/download/details.aspx?id=46398) ve [posterler](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) beklentileri belirlemeye ve kullanıcıların şirket kaynaklarıyla uygulamalarına kesintisiz bağlantıyı sürdürmek için izlemeleri gereken adımlarla ilgili kayıt ayrıntılarını sağlamaya yardımcı olabilir. Destek ekibinizin geçiş sürecinde kullanıcılara yardım etmeye hazır olmasını sağlayın.
+Intune pilot dağıtımının gereksinimlerinizi karşıladığı konusunda içiniz rahat olduğunda, kullanıcılarınızı cihazlarının yakında Intune’a geçirileceği konusunda bilgilendirin. E-posta iletileri, yönergeler ve [posterler](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) beklentileri belirlemeye ve kullanıcıların şirket kaynaklarıyla uygulamalarına kesintisiz bağlantıyı sürdürmek için izlemeleri gereken adımlarla ilgili kayıt ayrıntılarını sağlamaya yardımcı olabilir. Destek ekibinizin geçiş sürecinde kullanıcılara yardım etmeye hazır olmasını sağlayın.
 
 ## Mevcut kurumsal mobil yönetim çözümünüzü değiştirme
 
@@ -78,6 +71,7 @@ Intune’a geçişinizle ilgili ek yardım gerekiyor mu? Sorunsuz geçiş yapman
 Bu kılavuzun tamamının indirilebilir bir kopyasını almak için [TechNet Galerisi](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387)’ni ziyaret edin.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

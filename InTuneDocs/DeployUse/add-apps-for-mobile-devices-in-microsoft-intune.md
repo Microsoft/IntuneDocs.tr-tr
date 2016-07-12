@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Mobil cihazlar için uygulama ekleme | Microsoft Intune
-description:
-keywords:
+title: "Kaydolmuş cihazlar için uygulama ekleme | Microsoft Intune"
+description: "Bir uygulamayı dağıtabilmeniz için, onu önce Intune'a eklemeniz gerekir. Ardından Intune konsolunda kullanılabilir hale gelir, buradan onu dağıtabilir ve yönetebilirsiniz."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 795843f012434e1a50cd6abab05b6af2c811cf3e
+
 
 ---
 
-# Microsoft Intune'da mobil cihazlar için uygulama ekleme
+# Kaydolmuş cihazlar için Intune’a uygulamalar ekleme
 
-Uygulamaları dağıtmadan önce Intune’a eklemeyi öğrenmek için bu konu başlığı altında verilen bilgileri kullanın.
+Bir uygulamayı dağıtabilmeniz veya yönetebilmeniz için, onu önce Microsoft Intune’a eklemeniz gerekir. Bu konuda, kayıtlı cihazlar için nasıl uygulama ekleyeceğiniz gösterilir.
 
 
 > [!IMPORTANT]
@@ -36,14 +29,15 @@ Uygulamaları dağıtmadan önce Intune’a eklemeyi öğrenmek için bu konu ba
 ## Uygulama ekleme
 Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve uygulamayı bulut depolama alanınıza yüklemek için (uygunsa) Intune Yazılım Yayımcısı’nı kullanacaksınız.
 
-1.  Intune yazılım yayımcısını başlatmak için, [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Uygulamalar** &gt; **Uygulama Ekle**’ye tıklayın.
+1.  Intune yazılım yayımcısını başlatmak için [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda **Uygulamalar** &gt; **Uygulama Ekle**‘yi seçin.
 
-    > [!TIP] Yayımcının başlatılması için önce Intune kullanıcı adınızı ve parolanızı girmeniz gerekebilir.
+    > [!TIP]
+    > Yayımcının başlatılması için önce Intune kullanıcı adınızı ve parolanızı girmeniz gerekebilir.
 
 2.  Yazılım yayımcısının **Yazılım kurulumu** sayfasında, **Bu yazılımın cihazlar için kullanılabilir duruma nasıl getirileceğini seçin** alanında aşağıdaki seçeneklerden birini belirtin:
     - **Yazılım yükleyicisi**; uzantısı **.msi** veya **.exe** olan uygulamalar için aşağıdakileri belirtin:
         - **Yazılım yükleyicisi dosya türünü seçin** - Bu, dağıtmak istediğiniz yazılımın türünü gösterir. Örneğin bir iOS uygulamasını yüklemek istiyorsanız, **iOS için Uygulama Paketi (&#42;.ipa dosyası)** öğesini seçin.
-        - **Yazılım kurulum dosyalarının konumunu belirtin** - Yükleme dosyalarının konumu girin veya **Gözat**’a tıklayarak listeden bir konum seçin.
+        - **Yazılım kurulum dosyalarının konumunu belirtin** - Yükleme dosyalarının konumu girin veya konumu bir listeden seçmek için **Gözat**’ı seçin.
         - **Aynı klasörden başka dosya veya alt klasör ekle** - Yalnızca **Windows Installer** dosya türü için.<br>Windows Installer’ı kullanan bazı yazılımlar için, normalde yükleme dosyalarıyla aynı klasörde yer alan destek dosyaları gerekir. Bu dosyaları dağıtmak istiyorsanız bu seçeneği belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın bir bölümü kullanılır.
 
   -   **Dış bağlantı**; uygulama mağazasının bağlantısını belirterek oluşturmak istediğiniz uygulamalar için aşağıdakileri belirtin:
@@ -64,7 +58,8 @@ Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve u
 
 3.  **Yazılım açıklaması** sayfasında aşağıdakileri yapılandırın:
 
-    > [!TIP] Kullanmakta olduğunuz yükleyici türüne bağlı olarak, bu değerlerden bazıları otomatik olarak girilmiş olabilir.
+    > [!TIP]
+    > Kullanmakta olduğunuz yükleyici türüne bağlı olarak, bu değerlerden bazıları otomatik olarak girilmiş olabilir.
 
     - **Yayımcı** - Uygulamanın yayımcısının adını girin.
     - **Ad** - Uygulamanın şirket portalında görüntülenecek olan adını girin.<br>Kullandığınız tüm uygulama adlarının benzersiz olmasına dikkat edin. Aynı uygulama adı iki kez kullanılmışsa, uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
@@ -81,13 +76,14 @@ Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve u
 
 4.  **Gereksinimler** sayfasında uygulamanın cihaza yüklenmesini başlatabilmek için karşılanması gereken gereksinimleri belirtin. Örneğin iOS için bir uygulama paketinde, gereken en düşük iOS sürümünü, bunun çalıştırıldığı cihaz türünü (iPhone veya iPad gibi) seçebilirsiniz.
 
-    > [!TIP] **Gereksinimler** sayfası tüm uygulama türleri için görüntülenmez.
+    > [!TIP]
+    > **Gereksinimler** sayfası tüm uygulama türleri için görüntülenmez.
 
 5.  **Windows Installer** dosya türünü seçtiğinizde başka sihirbaz sayfaları da görüntülenir. Windows 10 veya sonrasını çalıştıran ve Intune’a kayıtlı bilgisayarlara yazılım dağıttığınızda bu dosya türü kullanılır.
 
-6.  **Özet** sayfasında, belirttiğiniz bilgileri gözden geçirin. Hazır olduğunuzda **Karşıya Yükle**’ye tıklayın.
+6.  **Özet** sayfasında, belirttiğiniz bilgileri gözden geçirin. Hazır olduğunuzda **Karşıya Yükle**’yi seçin.
 
-7.  Tamamlamak için **Kapat**’a tıklayın.
+7.  Bitirmek için **Kapat**’a tıklayın.
 
 Uygulama, **Uygulamalar** çalışma alanının **Uygulamalar** düğümünde görüntülenir.
 
@@ -106,6 +102,7 @@ Uygulamayı oluşturmayı tamamladığınızda, bir sonraki adım dağıtmaktır
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

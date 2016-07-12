@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows bilgisayarlar için güvenlik duvarı ilkeleri | Microsoft Intune
-description:
-keywords:
+title: "Windows bilgisayarlar için güvenlik duvarı ilkeleri | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
@@ -36,10 +30,11 @@ Windows bilgisayarlarda Windows Güvenlik Duvarı ilkelerini yapılandırmanıza
 Windows Güvenlik Duvarı ilkesi, yönetilen bilgisayarlarda Windows Güvenlik Duvarı'nı denetleyen ayarları oluşturmanıza ve dağıtmanıza olanak tanır. Windows Güvenlik Duvarı için özel durumları yönetemezsiniz ve bu ayarlar üçüncü taraf güvenlik duvarları etkilemez.
 
 > [!NOTE]
-> Microsoft Intune ilkesi ve Grup İlkesi, bilgisayarda aynı ayarı yönetecek biçimde yapılandırıldıysa, Grup İlkesi ayarı Microsoft Intune ilkesini geçersiz kılar. Intune ilkeleri ve Grup İlkesi arasındaki çakışmaları önleme hakkında daha fazla bilgi için, bkz. [GPO ve Microsoft Intune ilkesi çakışmalarını çözümleme](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+> Microsoft Intune ilkesi ve Grup İlkesi, bilgisayarda aynı ayarı yönetecek biçimde yapılandırıldıysa, Grup İlkesi ayarı Microsoft Intune ilkesini geçersiz kılar. Intune ilkeleri ve Grup İlkesi arasındaki çakışmaları önleme hakkında daha fazla bilgi için, bkz. [GPO ve Microsoft Intune ilkesi çakışmalarını çözümleme](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
 > Windows Vista çalıştıran bilgisayarlara Windows Güvenlik Duvarı ayarlarını dağıtmak istiyorsanız, önce bu bilgisayarlarda [Düzeltme KB971800](http://support2.microsoft.com/kb/971800) 'ü yüklemelisiniz.
 
+> [!IMPORTANT]
 > Windows Güvenlik Duvarı'nı Intune hizmetini kullanarak yönetmek için, aşağıdaki iki hizmetin yöneteceğiniz bilgisayarlarda etkin olduğundan emin olmanız gerekir:
 >
 > -   Windows Güvenlik Duvarı
@@ -49,7 +44,7 @@ Windows Güvenlik Duvarı ilkesi, yönetilen bilgisayarlarda Windows Güvenlik D
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **İlke** &gt; **İlke Ekle**’yi seçin.
 
-2.  Bir **Windows Güvenlik Duvarı Ayarları** ilkesi yapılandırın ve dağıtın. Önerilen ayarları kullanabilir veya ayarları özelleştirebilirsiniz. İlke oluşturma ve dağıtma hakkında daha fazla bilgi için, bkz. [Microsoft Intune bilgisayar istemcisi ile genel Windows bilgisayarı yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+2.  Bir **Windows Güvenlik Duvarı Ayarları** ilkesi yapılandırın ve dağıtın. Önerilen ayarları kullanabilir veya ayarları özelleştirebilirsiniz. İlke oluşturma ve dağıtma hakkında daha fazla bilgi için, bkz. [Microsoft Intune bilgisayar istemcisi ile genel Windows bilgisayarı yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     Aşağıdaki bölümde, ilkede yapılandırabileceğiniz değerlerin yanı sıra, ilkeyi özelleştirmediğinizde kullanılacak varsayılan değerler listelenmektedir.
 
@@ -67,6 +62,7 @@ Bu ilke ayarları, bir etki alanına (örneğin, çalışma alanı), bir özel a
 
 Bu ilke ayarları, Windows Güvenlik Duvarı'nı, yönetilen bilgisayar bir etki alanına (örneğin, çalışma alanı), bir özel (güvenilen) ağa (ev ağı gibi) veya güvenilir olmayan, bir ortak ağa (örneğin, bir kafeterya) bağlı olduğunda, gelen ağ trafiğini engellemek üzere yapılandırır. Bu ayarların her biri için varsayılan değer **Evet**’tir, bu en güvenli değerdir 
 
+> [!IMPORTANT]
 > Ortamınızda hizmet paketi yüklü olmayan Windows Vista çalıştıran yönetilen bilgisayarlar varsa, Microsoft Bilgi Bankası'nda [makale 971800](http://go.microsoft.com/fwlink/?LinkId=188405) ile ilişkili güncelleştirmeyi yüklemeniz ya da bu bilgisayarlara dağıtılan ilkelerdeki **Tüm gelen bağlantıları engelle** ilke ayarlarını devre dışı bırakmanız gerekir.
 
 ### Windows Güvenlik Duvarı yeni bir programı engellediğinde kullanıcıya bildirme
@@ -114,14 +110,15 @@ Yukarıdaki temel değerleri yapılandırdıktan sonra, belirli ağ trafiğine y
 |**Windows Toplantı Alanı**|Kullanıcıların ağ üzerinden işbirliği yaparak belge, program veya masaüstü paylaşmasına izin verir. Bu ayar DFSR ve P2P kullanır.|
 |**Windows Eşler Arası İşbirliği Altyapısı**|Bunların bağlanmasına imkan sağlayacak çeşitli eşler arası programlar ve teknolojiler yapılandırır. Bu ayar SSDP ve PNRP kullanır.|
 |**Windows Uzaktan Yönetim (Uyumluluk)**|İşletim sistemleri ve cihazların uzaktan yönetimi için Web hizmeti tabanlı bir protokol olan WS-Management'ı kullanarak yönetilen bilgisayarların uzaktan yönetilmesine izin verir.|
-|**Windows Uzaktan Yönetim**<br>(Windows 8 veya üstü).|İşletim sistemleri ve cihazların uzaktan yönetimi için Web hizmeti tabanlı bir protokol olan WS-Management'ı kullanarak yönetilen bilgisayarların uzaktan yönetilmesine izin verir.|
+|**Windows Uzaktan Yönetim**<br>(Windows 8 veya üzeri).|İşletim sistemleri ve cihazların uzaktan yönetimi için Web hizmeti tabanlı bir protokol olan WS-Management'ı kullanarak yönetilen bilgisayarların uzaktan yönetilmesine izin verir.|
 |**Windows Virtual PC**<br>(Windows 7 veya üzeri)|Sanal makinelerin diğer bilgisayarlarla iletişim kurmasına olanak sağlar.|
 |**Taşınabilir Kablosuz Cihazlar**|Medya Aktarım Protokolü'nü (MTP) kullanarak ağ bağlantısı etkin kamera veya medya cihazı verilerinin yönetilen bilgisayarlara aktarılmasına imkan sağlar. Bu ayar SSDP ve UPnP ağ protokollerini kullanır.|
 
 ### Ayrıca bkz.
-[Windows bilgisayarları koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)
+[Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

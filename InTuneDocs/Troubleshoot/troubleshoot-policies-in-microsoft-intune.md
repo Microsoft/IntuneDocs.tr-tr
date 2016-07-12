@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: İlke sorunlarını giderme | Microsoft Intune
-description:
-keywords:
+title: "İlke sorunlarını giderme | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
+ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+
 
 ---
 
@@ -58,7 +51,7 @@ Aşağıdaki ekran görüntüsünde, iki anlaşılır örnek gösterilmektedir:
 ## İlke yenileme ve güncelleştirme aralıkları
 İlkelerin düzenli aralıklarla yenilendiğinden ve güncelleştirildiğinden emin olun. Genel olarak, ilkeler bir değişiklik yapmanızdan sonraki 15 dakika içinde kaydedilmelidir. İlke yenileme için düzenli aralıklar hakkında daha fazla ayrıntı aşağıda verilmiştir:
 
--   **MDM için kayıtlı Windows cihazı**: Cihazda yerel saatle 03:00'daki zamanlanmış bir görevle tetiklenir ve her gün gerçekleşir.
+-   **MDM için kayıtlı Windows cihazı**: İlke, Windows 8.1 ve Windows 10 cihazları için 8 saatte bir ve Windows RT cihazları için 24 saatte bir güncelleştirilir.
 
 -   **Windows Phone**: İlke her 8 saatte bir güncelleştirilir. Şirket Portalı’ndaki **Ayarlar** altında bir yenileme ile zorlanabilir.
 
@@ -116,6 +109,7 @@ Android MDM, hizmetin cihazlarda ilke değişikliğini zorunlu tutmasına diğer
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

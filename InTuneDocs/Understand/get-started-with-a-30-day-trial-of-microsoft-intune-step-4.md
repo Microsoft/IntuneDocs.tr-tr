@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: İlke oluşturma ve değerlendirme kullanıcılarına bir uygulama yayımlama | Microsoft Intune
-description:
-keywords:
+title: "İlke oluşturma ve değerlendirme kullanıcılarına bir uygulama yayımlama | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+
 
 ---
 
 
 # İlke oluşturma ve değerlendirme kullanıcılarına bir uygulama yayımlama
-Intune ilkeleri, mobil cihazlarda güvenlik ayarlarını denetlemenize, bilgisayarlar için Windows Güvenlik Duvarı ve Endpoint Protection ayarlarını korumanıza ve uygulamaları dağıtmanıza yardımcı olan ayarlar sağlar. Değerlendirme sonrasında Intune’u üretim için yapılandırdığınız cihazlar için kullanmayı planlıyorsanız, [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) ve [Windows Bilgisayarları Microsoft Intune için Uç Nokta Korumasıyla Güvenli Hale Getirmeye Yardımcı Olma](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) kısmındaki yönergeleri izlemeniz kesinlikle gereklidir
+Intune ilkeleri, mobil cihazlarda güvenlik ayarlarını denetlemenize, bilgisayarlar için Windows Güvenlik Duvarı ve Endpoint Protection ayarlarını korumanıza ve uygulamaları dağıtmanıza yardımcı olan ayarlar sağlar. Değerlendirme sonrasında Intune’u üretim için yapılandırdığınız cihazlar için kullanmayı planlıyorsanız, [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) ve [Windows Bilgisayarları Microsoft Intune için Uç Nokta Korumasıyla Güvenli Hale Getirmeye Yardımcı Olma](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) kısmındaki yönergeleri izlemeniz kesinlikle gereklidir.
 
 Intune kullanarak iki uygulama yükleme türü gerçekleştirebilirsiniz. İlki, uygulamayı yönetilen bilgisayarlara otomatik olarak dağıtan **gerekli yüklemedir**. Diğeri, bir uygulamayı veya uygulama bağlantısını kullanıcıların uygulamayı bilgisayarlarına veya mobil cihazlarına yükleyip yüklememeyi seçebilmeleri için Intune Şirket Portalı’na dağıtan **kullanılabilir yüklemedir**.
 
@@ -37,11 +31,11 @@ Bu adımlarda, bir mobil cihaz yapılandırma ilkesi ve bir Windows bilgisayar g
 
 ## Bir mobil cihaz yapılandırma ilkesi oluşturma ve dağıtma
 
-1.  [Intune yönetim konsolu](https://manage.microsoft.com/)'nu açın.
+1.  [Intune Yönetim Konsolu](https://manage.microsoft.com/)'nu açın.
 
 2.  Sol bölmede **İlke** simgesini seçin.
 
-3.  **İlkeye Genel Bakış** sayfasındaki **Görevler** listesinde, **İlke Ekle**'yi seçin
+3.  **İlkeye Genel Bakış** sayfasındaki **Görevler** listesinde, **İlke Ekle**'yi seçin.
 
 4.  İlke listesinde, ilke oluşturmak istediğiniz platformu genişletin, **Genel Yapılandırma**’yı seçin, **Önerilen Ayarlarla İlke Oluştur ve Dağıt**’ı seçin ve ardından **İlkeyi Oluştur**’u seçin.
 
@@ -53,13 +47,14 @@ Bu adımlarda, bir mobil cihaz yapılandırma ilkesi ve bir Windows bilgisayar g
 
 1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Uygulamalar** simgesini ve sonra **Uygulamalar** &gt; **Uygulama Ekle**’yi seçin. İstenirse, Intune kimlik bilgilerinizi girin.
 
+    > [!NOTE]
     > **Intune Software Publisher** 'ı ilk kez başlattığınızda, uygulama yüklenirken kısa bir gecikme oluşur.
 
-2.  Güvenlik uyarısını gözden geçirin ve **Çalıştır**'ı seçin
+2.  Güvenlik uyarısını gözden geçirin ve **Çalıştır**'ı seçin.
 
-3.  **Başlamadan önce** sayfasında, **İleri**'yi seçin
+3.  **Başlamadan önce** sayfasında **İleri**'yi seçin.
 
-4.  **Yazılım kurulumu** sayfasındaki **Bu yazılımın cihazlar için nasıl kullanılabilir hale getirileceğini seçin**bölümünden **Dış bağlantı**'yı seçin
+4.  **Yazılım kurulumu** sayfasındaki **Bu yazılımın cihazlar için nasıl kullanılabilir hale getirileceğini seçin**bölümünden **Dış bağlantı**'yı seçin.
 
 5.  **URL'yi belirtin**bölümünde, yazılıma ait dış bağlantıyı girin ve ardından **İleri**'yi seçin. URL’nin başına **https://** yazdığınızdan emin olun. Skype uygulaması için, kullandığınız mobil cihaz platformuyla eşleşen aşağıdaki bağlantıyı kullanın:
 
@@ -85,13 +80,13 @@ Bu adımlarda, bir mobil cihaz yapılandırma ilkesi ve bir Windows bilgisayar g
 
 7.  **Özet** sayfasında, yazılım bilgilerini doğrulayın ve ardından **Karşıya yükle**'yi seçin. Sihirbazdan çıkmak için **Kapat**’ı seçin.
 
-8.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Uygulamalar** &gt; **Uygulamalar** &gt; **Skype** &gt; **Dağıtımı Yönet**’i seçin
+8.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Uygulamalar** &gt; **Uygulamalar** &gt; **Skype** &gt; **Dağıtımı Yönet**’i seçin.
 
-9. **Grup Seç** sayfasında, **Deneme Kullanıcılarım**’ı seçerek yazılımı bu kullanıcı grubuna dağıtın ve ardından **Ekle** &gt; **İleri**’yi seçin
+9. **Grup Seç** sayfasında, **Deneme Kullanıcılarım**’ı seçerek yazılımı bu kullanıcı grubuna dağıtın ve ardından **Ekle** &gt; **İleri**’yi seçin.
 
 10. **Dağıtım Eylemi** sayfasında, **Onay** sütunundan grubunuz için **Kullanılabilir Yükleme** 'yi seçin.
 
-11. **Son**’u seçin
+11. **Son**’u seçin.
 
 Skype uygulaması artık Şirket Portalı’ndan mobil cihazlara yüklenebilir, ancak önce Intune yazılımını bilgisayarlara ve mobil cihazlara yüklemeniz gerekir.
 
@@ -100,9 +95,10 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 4. adımını
 
 >[!div class="step-by-step"]
 
->[&larr; **Grup Oluşturma**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Cihazları Kaydetme** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
+>[&larr; **Gruplar Oluşturma**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Cihazları Kaydetme** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

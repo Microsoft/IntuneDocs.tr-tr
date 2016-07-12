@@ -1,38 +1,32 @@
 ---
-# required metadata
-
-title: Android için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu | Microsoft Intune
-description:
-keywords:
+title: "Android için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # Android için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu
 
-> [!NOTE] Öncelikle, SDK’nın geçerli özelliklerini kapsayan ve desteklenen her platformda tümleştirmeye nasıl hazırlandığını açıklayan [Intune Uygulama SDK’sına genel bakış](intune-app-sdk.md) bölümünü okumanız önerilir. 
+> [!NOTE]
+> Öncelikle, SDK’nın geçerli özelliklerini kapsayan ve desteklenen her platformda tümleştirmeye nasıl hazırlandığını açıklayan [Intune Uygulama SDK’sına genel bakış](intune-app-sdk.md) bölümünü okumanız önerilir. 
 
 # SDK’nın kapsamı 
 
-Android için Intune Uygulama SDK'sı dış bağımlılıkları olmayan standart bir Android kitaplığıdır. 
-SDK şunlardan oluşur:  
+Android için Intune Uygulama SDK'sı dış bağımlılıkları olmayan standart bir Android kitaplığıdır. SDK şunlardan oluşur:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: Bir uygulamada MAM özelliğini etkinleştirmenin yanı sıra Microsoft Intune Şirket Portalı ile birlikte çalışabilirliği sağlamak için gereken arabirimler. Uygulamalar bunu bir Android kitaplığı başvurusu olarak belirtmelidir.
 
@@ -66,7 +60,7 @@ Daha önce belirtildiği gibi, SDK, uygulama yönetimi ilkelerini etkinleştirme
 
 ## Sınıfları, yöntemleri ve etkinlikleri MAM eşdeğerleriyle değiştirme (Zorunlu) 
 
-* Android temel sınıfları,i MAM eşdeğerleriyle değiştirilmelidir. Bunu yapmak için, aşağıdaki tabloda listelenen sınıfların tüm örneklerini bulun ve bunları Intune Uygulama SDK'sındaki eşdeğerleriyle değiştirin.  
+* Android temel sınıfları, MAM eşdeğerleriyle değiştirilmelidir. Bunu yapmak için, aşağıdaki tabloda listelenen sınıfların tüm örneklerini bulun ve bunları Intune Uygulama SDK'sındaki eşdeğerleriyle değiştirin.  
 
     | Android Sınıfı | Intune Uygulama SDK'sı Karşılığı |
     |--|--|
@@ -114,7 +108,7 @@ Daha önce belirtildiği gibi, SDK, uygulama yönetimi ilkelerini etkinleştirme
     |android.support.v7.app.ActionBarActivity | MAMActionBarActivity |
 
 
-* MAM eşdeğeri tarafından geçersiz kılınmış bir Android giriş noktası kullanılırken, giriş noktası yaşam döngüsünün alternatif bir sürümü kullanılmalıdır ( `MAMApplication`sınıfı hariç).
+* MAM eşdeğeri tarafından geçersiz kılınmış bir Android giriş noktası kullanılırken, giriş noktası yaşam döngüsünün alternatif bir sürümü kullanılmalıdır (`MAMApplication`sınıfı hariç).
 
     Örneğin, `MAMActivity`’i geçersiz kılıp `onCreate` çağırmak yerine `super.onCreate`’den türetilirken, Etkinlik `onMAMCreate` ’i geçersiz kılmalı ve s`uper.onMAMCreate`. Bunun yapılması, Etkinlik başlatma işleminin (diğerlerinin arasında) belirli durumlarla kısıtlanmasını sağlar. 
 
@@ -220,7 +214,7 @@ Aşağıdaki bildirimler uygulamaya gönderilir ve bazıları uygulama katılım
 
 ## Bekleyen Amaçlar ve yöntemler 
 
-MAM giriş noktalarından birinden türettikten sonra Context nesnesini, Etkinlikleri başlatmak için normalde kullandığınız gibi ( `PackageManager`, vb. kullanarak) kullanabilirsiniz.  `PendingIntents` bu kural için bir özel durumdur. Bu tür sınıflar çağrılırken, sınıf adını değiştirmeniz gerekir. Örneğin, `PendingIntent.get*` yerine `MAMPendingIntents.get*` kullanılmalıdır. 
+MAM giriş noktalarından birinden türettikten sonra Context nesnesini, Etkinlikleri başlatmak için normalde kullandığınız gibi (`PackageManager`, vb. kullanarak) kullanabilirsiniz.  `PendingIntents` bu kural için bir özel durumdur. Bu tür sınıflar çağrılırken, sınıf adını değiştirmeniz gerekir. Örneğin, `PendingIntent.get*` yerine `MAMPendingIntents.get*` kullanılmalıdır. 
 
 Bazı durumlarda, Android sınıfında kullanılabilir olan bir metot, MAM değiştirme sınıfında kesin olarak işaretlenmiştir. Bu durumda, MAM değiştirme sınıfı benzer ada sahip olup (genellikle "MAM" son ekini alır) geçersiz kılınması gereken bir metot sağlar. Örneğin, `ContentProvider.query`yerine `MAMContentProvider.queryMAM`. Java derleyicisi, MAM eşdeğeri yerine özgün metodun yanlışlıkla geçersiz kılınmasını önleyen kesin kısıtlamalar uygulamalıdır. 
 
@@ -370,6 +364,7 @@ Android’de, Dalvik yürütülebilir dosya biçimine ilişkin sınırlamalar, P
 * Herhangi bir API'yi belirsiz bir şekilde kullanmaktan kaçının. Örneğin, requestCode denetlenmeden `Activity.startActivityForResult/onActivityResult` işlemi garip davranışlara neden olur.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,31 +1,25 @@
 ---
-# required metadata
-
-title: Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+
 
 ---
 
-# Configure and deploy mobile application management policies in the Microsoft Intune console
+# Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma
 Microsoft Intune’da mobil uygulama yönetimi ilkeleri, dağıttığınız uygulamaların şirketinizin uyumluluk ve güvenlik ilkelerine uygun hale gelmesi için, bunların işlevselliğini değiştirmenize olanak tanır. Örneğin, yönetilen bir uygulama içinde kesme, kopyalama ve yapıştırma işlemlerini kısıtlayabilir veya bir uygulamayı tüm web bağlantılarını yönetilen bir tarayıcıda açmak üzere yapılandırabilirsiniz.
 
 Mobil uygulama yönetimi ilkeleri desteği:
@@ -34,7 +28,8 @@ Mobil uygulama yönetimi ilkeleri desteği:
 
 -   iOS 7 ve üzeri çalıştıran cihazlar.
 
-> [!TIP] Mobil uygulama yönetimi ilkeleri Intune kaydı yapılmış cihazları destekler.
+> [!TIP]
+> Mobil uygulama yönetimi ilkeleri Intune kaydı yapılmış cihazları destekler.
 >
 > Intune tarafından yönetilmeyen cihazlar için uygulama yönetimi ilkeleri oluşturma hakkında bilgi arıyorsanız bkz. [Microsoft Intune ile mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -46,9 +41,9 @@ Bir uygulamaya kısıtlamalar uygulamak için, uygulamanın Microsoft Intune Uyg
 
 -   **‘Sarmalanan’ bir uygulama kullanma** - **Microsoft Intune Uygulaması Sarmalama Aracı** kullanılarak Uygulama SDK'sı eklenip yeniden paketlenmiş uygulamalardır. Bu araç genellikle şirket içinde oluşturulan şirket uygulamalarını işlemek için kullanılır. Uygulama mağazasından yüklenen uygulamaları işlemek için kullanılamaz. Bkz. [iOS uygulamalarını Microsoft Intune Uygulaması Sarmalama Aracı ile mobil uygulama yönetimine hazırlama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) ve [Android uygulamalarını Microsoft Intune Uygulaması Sarmalama Aracı ile mobil uygulama yönetimine hazırlama](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
-- **Intune Uygulama SDK’sını içeren kendi uygulamanızı yazma** - Intune Uygulama SDK’sı, siz yazdığınız sırada uygulama yönetim özelliklerini ekler. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına Genel Bakış](/develop/intune-app-sdk)
+- **Intune Uygulama SDK’sını içeren kendi uygulamanızı yazma** - Intune Uygulama SDK’sı, siz yazdığınız sırada uygulama yönetim özelliklerini ekler. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına Genel Bakış](/intune/develop/intune-app-sdk)
 
-Uygulama paketleme aracı ile Intune Uygulama SDK’sı arasında yapılacak seçim konusunda yardım almak için bkz. [Microsoft Intune ile uygulamaların mobil uygulama yönetimine nasıl hazırlanacağına karar verme](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+Uygulama paketleme aracı ile Intune Uygulama SDK’sı arasında yapılacak seçim konusunda yardım almak için bkz. [Microsoft Intune ile uygulamaların mobil uygulama yönetimine nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar **birden çok kimliği** destekler. Başka bir deyişle Intune yalnızca uygulamadaki şirket hesaplarına veya verilere yönetim ayarlarını uygular.
 
@@ -60,7 +55,8 @@ iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar **bir
 
 -   Kullanılan şirket hesabı, cihazı Intune hizmetine kaydetmek için kullanılan hesapla aynı olmalıdır.
 
-> [!TIP] Intune’u Configuration Manager ile birlikte kullanıyorsanız, bkz. [Configuration Manager’da Mobil Uygulama Yönetim İlkeleri Kullanılarak Uygulamaları Denetleme](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP]
+> Intune’u Configuration Manager ile birlikte kullanıyorsanız, bkz. [ Configuration Manager’da Mobil Uygulama Yönetim İlkeleri Kullanılarak Uygulamaları Denetleme](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Mobil uygulama yönetimi ilkesiyle uygulama oluşturma ve dağıtma
 
@@ -152,7 +148,8 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 
 Ayrıntılar için bkz. [Microsoft Intune'da uygulamaları dağıtma](deploy-apps.md).
 
-> [!IMPORTANT] iOS 7.1'den önceki işletim sistemlerini çalıştıran cihazlar için, uygulama kaldırıldığında ilişkili ilke kaldırılmaz.
+> [!IMPORTANT]
+> iOS 7.1'den önceki işletim sistemlerini çalıştıran cihazlar için, uygulama kaldırıldığında ilişkili ilke kaldırılmaz.
 >
 > Cihazın Intune kaydı kaldırılırsa, ilkeler uygulamalardan kaldırılmaz; ilkenin geçerli olduğu uygulamalarda, uygulama kaldırılıp yeniden yüklense bile ilke ayarları korunur.
 
@@ -163,7 +160,8 @@ Bu durumda, yapılandırdığınız yönetilen sürümün yüklenebilmesi için 
 
 Ancak, iOS 9 ve üstü sürümleri çalıştıran cihazlarda Intune, kullanıcıdan mevcut uygulamanın yönetimini almak için otomatik olarak izin ister. Kullanıcının kabul etmesi durumunda uygulama Intune tarafından yönetilir hale gelir ve uygulamayla ilişkilendirdiğiniz tüm mobil uygulama yönetimi ilkeleri de geçerli olur.
 
-> [!TIP] Cihaz denetimli moddaysa, Intune kullanıcıdan izin istemeden mevcut uygulamanın yönetimini devralır.
+> [!TIP]
+> Cihaz denetimli moddaysa, Intune kullanıcıdan izin istemeden mevcut uygulamanın yönetimini devralır.
 
 ## **5. Adım:** Uygulama dağıtımını izleme.
 Bir mobil uygulama yönetimi ilkesiyle ilişkili bir uygulama oluşturup dağıttıktan sonra, uygulamayı izlemek ve ilke çakışmalarını çözmek için aşağıdaki yordamları kullanın.
@@ -198,6 +196,7 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 -   Cihaza hiçbir ilke dağıtılmadıysa ve çakışan iki ayar dağıtılırsa, cihazda yerleşik olarak bulunan varsayılan ayar kullanılır.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

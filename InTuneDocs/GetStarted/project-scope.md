@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Proje kapsamı | Microsoft Intune
-description:
-keywords:
+title: "Proje kapsamı | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9218b1f58032c07eddf84f04a667e2c56b5463ed
+ms.openlocfilehash: cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e
+
 
 ---
 
@@ -63,6 +57,14 @@ Bu bölümü, sunumunuzun bu belirtilen aşaması için odak alanı etkinlikleri
 ### Planlama
 
 Kapsam aşamasında çalışmalarınızı çoğunluğu, planlama ve hazırlık ile ilgilidir. Projenizin kapsamını belirlerken, teknoloji ile organizasyonel konuları ve kullanıcıların bugün nasıl çalıştığı ile gereken davranış değişikliğini göz önünde bulundurun. "Büyük resimdeki" son hedefi aklınıza tutarak başlayın, ardından sonraki aşamalarda, doğru yolda olmak için, daha küçük hedefler belirleyin.
+
+
+ > [!NOTE]
+ > 
+ > Bu şablonlar, proje kapsamında çalışırken kullanışlı olabilir:
+ > > - [Intune mu yoksa Configuration Manager ile Intune mu karar şablonu](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [Mobil uygulamalar için planlama şablonu](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [Genel cihaz yönetimini planlama şablonu](https://gallery.technet.microsoft.com/General-device-management-334c3792)
 
 ### Yardım masası
 Bilgi çalışanlarının, üretken Intune deneyiminden yararlanması için, yardım masası iyi hazırlıklı olmalıdır. Projenizin kapsamını oluşturduğunuzda, yardım masasının her aşamada oynayacağı rolü ve son kullanıcıları desteklemek üzere yardım masanızın hazır olmasını sağlamak ve yardım masanızı işletmek için ihtiyacınız olan kaynakları göz önünde bulundurun.
@@ -110,6 +112,7 @@ Artık, uzun vadeli planınızın ana hatlarını belirleme zamanı. Operasyon p
 [Kavram kanıtı](proof-of-concept.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

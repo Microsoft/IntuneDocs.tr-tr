@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Şirket Portalı’nı özelleştirme | Microsoft Intune
-description:
-keywords:
+title: "Şirket Portalı’nı özelleştirme | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 45f574a975c94338c4543c0cdbc3aef549030601
+
 
 ---
 
@@ -29,6 +23,7 @@ ms.suite: ems
 # Şirket Portalı'nı özelleştirme
 [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] kullanıcıların şirket verilerine eriştiği ve cihaz kaydetmek, uygulama yüklemek ve BT departmanınızdan yardım için bilgi bulmak gibi genel görevleri gerçekleştirebilecekleri yerdir.
 
+> [!TIP]
 > Şirket Portalı’nı özelleştirdiğinizde, yapılandırmalar hem Şirket Portalı web sitesi hem de Şirket Portalı uygulamaları için geçerli olur.
 
 Şirket Portalı’nı özelleştirmek, son kullanıcılarınız için tanıdık ve yararlı bir deneyim sağlamaya yardımcı olur. Bunu yapmak için, bir kiracı veya hizmet yöneticisi olarak [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) oturum açmanız, **Yönetici** &gt; **Şirket Portalı**’nı seçmeniz ve Şirket Portalı ayarlarını yapılandırmanız yeterli olur.
@@ -71,9 +66,10 @@ Değişiklikleri kaydettikten sonra, Şirket Portalı web sitesini görüntülem
 Tebrikler! *Intune hızlı başlangıç kılavuzunun* 7. adımını tamamlamış oldunuz.
 >[!div class="step-by-step"]
 
->[&larr; **İlkeleri ve uygulamaları oluşturma**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Cihazları kaydetme** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr; **İlkeler ve uygulamalar oluşturma**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Cihazları kaydetme** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

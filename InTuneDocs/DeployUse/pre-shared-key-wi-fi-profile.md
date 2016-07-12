@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: PSK Kullanarak Wi-Fi | Microsoft Intune
 description: 
-keywords:
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
+ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+
 
 
 ---
@@ -182,13 +176,13 @@ NOT. Bu ilke yalnızca kullanıcı gruplarına dağıtılabilir
 Her cihaz daha sonra denetlediğinde, ilke uygulanır ve cihazda bir Wi-Fi profili oluşturulur. Cihaz ağa otomatik olarak bağlanabilecektir.
 ## XML dosyasını mevcut bir Wi-Fi bağlantısından oluşturun
 Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
-1.     Kablosuz ağa bağlanmış veya bir kablosuz ağa yakın zamanda bağlanmış bir bilgisayarda şu klasörü açın: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}. Doğru olanı bulmak için her profili aramanız gerekeceğinden, birçok kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir.
+1.     Kablosuz ağa bağlanmış veya bir kablosuz ağa yakın zamanda bağlanmış bir bilgisayarda şu klasörü açın: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid. Doğru olanı bulmak için her profili aramanız gerekeceğinden, birçok kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir.
 3.     Doğru ada sahip olanı bulmak üzere XML dosyalarını arayın.
 4.     Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının Veri alanına yapıştırın.
 
-## İlkeyi dağıtın
+## İlkeyi dağıtma
 
-1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
+1.   **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
 
 2.   **Dağıtımı Yönet** iletişim kutusunda:
 
@@ -202,6 +196,7 @@ Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağ
 [Microsoft Intune’da Wi-Fi bağlantıları](wi-fi-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

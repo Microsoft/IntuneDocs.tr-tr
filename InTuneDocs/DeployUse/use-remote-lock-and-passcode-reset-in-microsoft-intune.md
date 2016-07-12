@@ -1,25 +1,19 @@
 ---
-title: Uzaktan kilitlemeyi ve geçiş kodu sıfırlamayı kullanma | Microsoft Intune
-description:
-keywords:
+title: "Uzaktan kilitlemeyi ve geçiş kodu sıfırlamayı kullanma | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+translationtype: Human Translation
+ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
+ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 ---
 # Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
 Microsoft Intune hem uzaktan kilitleme hem de geçiş kodu sıfırlama özelliklerini sağlar.
@@ -39,7 +33,7 @@ Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Aşa
 
 ### Bir mobil cihazı Intune konsolu üzerinden uzaktan kilitlemek için
 
-1.  [Intune yönetici konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Mobil Cihazlar**’ı seçin.
+1.  [Intune yönetici konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Mobil Cihazlar** öğelerini seçin.
 
 2.  Intune’a kayıtlı cihazlar için **Doğrudan Yönetilen Tüm Cihazlar**’ı veya **Exchange ActiveSync Tarafından Yönetilen Tüm Cihazlar**’ı seçin.
 
@@ -62,7 +56,7 @@ Bir kullanıcı geçiş kodunu unutursa, bir cihazdan geçiş kodunu kaldırarak
 
 ### Geçiş kodunu sıfırlamak için
 
-1.  [Intune yönetici konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Mobil Cihazlar**’ı seçin.
+1.  [Intune yönetici konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Mobil Cihazlar** öğelerini seçin.
 
 2.  Intune’a kayıtlı cihazlar için **Doğrudan Yönetilen Tüm Cihazlar**’ı veya **Exchange ActiveSync Tarafından Yönetilen Tüm Cihazlar**’ı seçin.
 
@@ -73,9 +67,11 @@ Bir kullanıcı geçiş kodunu unutursa, bir cihazdan geçiş kodunu kaldırarak
 
 
 ### Ayrıca bkz.
-Cihazları devre dışı bırakma
+[Cihazları kullanımdan kaldırma](retire-devices-from-microsoft-intune-management.md)
+[Cihaz Veri Yönetimi için Windows Seçmeli Silme](http://technet.microsoft.com/library/dn486874.aspx)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

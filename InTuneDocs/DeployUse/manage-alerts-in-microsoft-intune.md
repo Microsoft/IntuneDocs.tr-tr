@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Uyarıları yönetme | Microsoft Intune
-description:
-keywords:
+title: "Uyarıları yönetme | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+
 
 ---
 
@@ -36,6 +31,7 @@ Kuruluşunuzdaki cihazların genel durumunu değerlendirmek ve sorunları belirl
 
     -   **Uyarılarla ilgili özet bilgileri görüntülemek için**, **Uyarılar &gt; Genel Bakış**’a tıklayın. **Uyarılara Genel Bakış** sayfasındaki **Uyarı Türü Özeti** alanında uyarıların bir özeti görüntülenir. Kritik uyarılar önce görüntülenir. Daha ayrıntılı bilgilerle detaya geçmek için bu uyarılardaki bağlantılara tıklayabilirsiniz.
 
+        > [!NOTE]
         > Bazı durumlarda, bir uyarı türü **Uyarılar Türü Özeti** listesinde birden fazla kez görünebilir.
         > 
         > Örneğin, Mantıksal Boş Disk Alanı uyarı türünün şu örnekleri listede görünebilir:
@@ -107,10 +103,11 @@ Kapatıldı olarak işaretlenen uyarılar 90 gün sonra kalıcı olarak silinir.
 3.  Seçili uyarıyı yeniden etkinleştirmek için **Uyarıyı Yeniden Etkinleştir**'e tıklayın.
 
 ### Ayrıca bkz.
-[Microsoft Intune Uyarıları ile bilgi edinin](get-notified-by-microsoft-intune-alerts.md)
+[Microsoft Intune Uyarıları ile bilgi edinin](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

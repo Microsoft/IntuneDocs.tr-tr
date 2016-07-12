@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune denemesi başlatma ve iOS PIN ilkesi dağıtma | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune denemesi başlatma ve iOS PIN ilkesi dağıtma | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+
 
 ---
 
@@ -39,9 +33,10 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 -   Deneme hesabına kaydolma sırasında kimliğinizi doğrulamak için telefon
 
 ## Ücretsiz bir Intune deneme hesabı oluşturma
+> [!NOTE]
 > Intune aboneliğiniz zaten varsa bu bölüm atlayın ve sonraki bölüme gidin.
 
-1.  Windows bilgisayarı kullanarak **Internet Explorer** (IE) öğesine sağ tıklayın ve **InPrivate Gözatma**’yı seçin.
+1.  Bir Windows PC kullanarak **Internet Explorer** (IE) öğesine sağ tıklayın ve **InPrivate Gözatma**’yı seçin.
 
     ![InPrivate gözatmayı başlatın](../media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
 
@@ -105,11 +100,11 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
 2.  iOS cihazlarının kaydını etkinleştirin. Bu işlem Apple Anında İletilen Bildirim Servisi (APN) ile Intune aboneliğiniz arasında güvenilen bir sertifika ayarlar.
 
-    1.  **iOS ve Mac OS X platformunu etkinleştir**’e tıklayın.
+    1.  **iOS ve Mac OS X platformunu etkinleştir** öğesine tıklayın.
 
         ![iOS ve Mac OS X kaydını etkinleştirin](../media/30-day-trial-walkthrus/30day-cfg-pol-13-enbl-ios-plat.png)
 
-    2.  **APNs Sertifika İsteğini İndir**’e tıklayın.
+    2.  **APNs Sertifika İsteğini İndir** öğesine tıklayın.
 
         ![APNs sertifikasını indirin](../media/30-day-trial-walkthrus/30day-cfg-pol-14-dwnld-cert-reqst.png)
 
@@ -129,7 +124,7 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
         ![APNs sertifikası oluşturun](../media/30-day-trial-walkthrus/30day-cfg-pol-18-create-cert.png)
 
-    7.  Apple’ın Kullanım Koşullarını okuyun, onay kutusunu işaretleyin ve **Kabul Et**’e tıklayın.
+    7.  Apple’ın Kullanım Koşulları’nı okuyun, onay kutusunu işaretleyin ve **Kabul Et**’e tıklayın.
 
         ![Koşulları kabul edin](../media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
 
@@ -157,11 +152,11 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
         ![Sayfa yönlendirilmezse İptal edin](../media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
 
-    13. Yeni oluşturduğunuz sertifika dosyasını almak için **İndir**’e tıklayın.
+    13. Yeni oluşturduğunuz sertifikayı almak için **İndir**’e tıklayın.
 
         ![Sertifikayı indirin](../media/30-day-trial-walkthrus/30day-cfg-pol-26-dwnld-retrv-cert.png)
 
-    14. PEM dosyasını indirmeniz istendiğinde **Farklı Kaydet**’e tıklayın.
+    14. PEM dosyası indirmeniz istendiğinde **Farklı Kaydet**’e tıklayın.
 
         ![PEM dosyasını indirin](../media/30-day-trial-walkthrus/30day-cfg-pol-27-pem-saveas.png)
 
@@ -169,11 +164,11 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
         ![PEM dosyasını kaydedin](../media/30-day-trial-walkthrus/30day-cfg-pol-28-pem-save-loc.png)
 
-    16. Intune Yönetim Konsolu sekmesine dönün ve **APNs Sertifikasını Karşıya Yükle**’ye tıklayın.
+    16. Intune Yönetim Konsolu sekmesine geri dönün ve **APN Sertifikalarını Karşıya Yükle** öğesine tıklayın.
 
         ![APNs sertifikasını karşıya yükleyin](../media/30-day-trial-walkthrus/30day-cfg-pol-29-upld-cert.png)
 
-    17. Apple kimliğinizi girin ve **Gözat**’a tıklayın.
+    17. Apple Kimliğinizi girin ve **Gözat**’a tıklayın.
 
         ![Apple kimliğinizi girin](../media/30-day-trial-walkthrus/30day-cfg-pol-30-app-id-browse.png)
 
@@ -181,7 +176,7 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
         ![PEM dosyasını açın](../media/30-day-trial-walkthrus/30day-cfg-pol-31-sel-pem-open.png)
 
-    19. **Karşıya Yükle**’ye tıklayın.
+    19. Tamamlamak için **Karşıya Yükle**.
 
         ![PEM dosyasını karşıya yükleyin](../media/30-day-trial-walkthrus/30day-cfg-pol-32-pem-upload.png)
 
@@ -195,7 +190,7 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
         ![Gruplar’ı açın](../media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
 
-    2.  Sağ uçta **Grup Oluştur**’a tıklayın.
+    2.  En sağdaki **Grup Oluştur**’a tıklayın.
 
         ![Bir grup oluşturun](../media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
 
@@ -213,7 +208,7 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
         ![İlke çalışma alanını açın](../media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
 
-    2.  Sağ uçta **İlke Ekle**’ye tıklayın.
+    2.  En sağdaki **İlke Ekle**’ye tıklayın.
 
         ![İlke ekleyin](../media/30-day-trial-walkthrus/30day-cfg-pol-39-add-policy.png)
 
@@ -221,7 +216,7 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
         ![iOS genel yapılandırma ilkesi oluşturma](../media/30-day-trial-walkthrus/30day-cfg-pol-40-gen_cfg_pol.png)
 
-    4.  İlke için bir ad yazın, **Mobil cihazların kilidini açmak için parola iste** ayarını açın ve **Minimum parola uzunluğu**’nu **4** olarak ayarlayın.
+    4.  İlke için bir ad yazın, **Mobil cihazların kilidini açmak için bir parola gerektir** seçeneğini açın ve **En az parola uzunluğu**’nu **4** olarak ayarlayın.
 
         ![Parola ayarlarını yapılandırın](../media/30-day-trial-walkthrus/30day-cfg-pol-41-name-policy.png)
 
@@ -229,7 +224,7 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
         ![İlkeyi dağıtın](../media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
 
-    6.  Daha önce oluşturulan kullanıcı grubuna tıklayın, ardından **Ekle**’ye ve **Tamam**’a tıklayın.
+    6.  Daha önce oluşturulan kullanıcı grubuna, **Ekle** ve **Tamam**’a tıklayın.
 
         ![İlke için grup seçin](../media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
 
@@ -243,7 +238,7 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
     ![Şirket portalını yükleyin](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
 
-2.  Test kullanıcı hesabınızın adını ve parolasını girin ve **Oturum Aç**’a dokunun.
+2.  Test kullanıcı hesabı adını ve parolasını girin ve **Oturum Aç**’a dokunun.
 
     ![Kimlik bilgilerinizi sağlayın](../media/30-day-trial-walkthrus/30day-cfg-pol-46-cportal-signin.png)
 
@@ -251,19 +246,19 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 
     ![Kayda başlayın](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
-4.  **Profil Yükle** ekranında **Yükle**’ye dokunun.
+4.  **Profil Yükle** ekranında **Yükle** öğesine dokunun.
 
     ![Profil yükleyin](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
-5.  **Profil Yükle** iletişim kutusunda **Yükle**’ye dokunun.
+5.  **Profil Yükle** iletişim kutusunda **Yükle** öğesine dokunun.
 
     ![Profil yüklemeye devam edin](../media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
 
-6.  **Uyarı** ekranında **Yükle**’ye dokunun.
+6.  **Uyarı** ekranında **Yükle** öğesine dokunun.
 
     ![Uyarı iletisini kabul edin](../media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.png)
 
-7.  **Uzaktan Yönetim** iletişim kutusunda **Güven**’e dokunun.
+7.  **Uzak Yönetim** iletişim kutusunda **Güven**’e dokunun.
 
     ![Uzaktan yönetime güvenin](../media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
 
@@ -289,6 +284,7 @@ Bu adım adım yönergeler bir Intune denemesi ayarlamanıza ve iOS cihazları i
 [Intune değerlendirme kılavuzu](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

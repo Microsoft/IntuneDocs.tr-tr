@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Şirket İçi Exchange’e ve eski Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama | Microsoft Intune
-description:
-keywords:
+title: "Şirket İçi Exchange’e ve eski Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+
 
 ---
 
@@ -75,7 +69,8 @@ Aşağıdaki çizelgede, Şirket İçi Exchange’e yönelik koşullu erişim il
 -   iOS’ta yerel e-posta uygulaması.
 
 -   Android 4 veya üzerinde yerel e-posta uygulaması
-> [!NOTE] Android ve iOS için Microsoft Outlook uygulaması desteklenmez.
+> [!NOTE]
+> Android ve iOS için Microsoft Outlook uygulaması desteklenmez.
 
 ## Bilgisayarlar için destek
 
@@ -104,7 +99,8 @@ Windows 8 ve üstündeki **Mail** uygulaması ([!INCLUDE[wit_nextref](../include
 >Amacınız e-postaya erişim vermeden önce tüm cihazları engellemekse, Erişimi engelle’yi veya Karantina kuralı’nı seçin. Varsayılan kural tüm cihaz türleri için geçerli olacaktır, böylece platform özel durumları olarak yapılandırdığınız ve [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] tarafından desteklenmeyen cihaz türleri de etkilenir.
 
   - **Kullanıcı Bildirimi:** Exchange’den gönderilen bildirim e-postasına ek olarak Intune, cihazın engelini kaldırma adımlarını içeren bir e-posta gönderir. Gereksinimlerinize göre özelleştirmek için, varsayılan iletiyi düzenleyebilirsiniz. Çözümleme yönergelerini içeren Intune bildirim e-postası kullanıcının Exchange posta kutusuna teslim edildiğinden, kullanıcı cihazının e-posta iletisini almadan önce engellenmesi durumunda kullanıcı, Exchange’e erişmek ve iletiyi görüntülemek için engellenmemiş bir cihaz ya da başka yöntemler kullanabilir. Bu özellikle, **Varsayılan Kural** engellemek veya karantinaya almak üzere ayarlandıysa geçerlidir.  Bu durumda, son kullanıcının uygulama mağazasına gitmesi, Microsoft Şirket Portalı uygulamasını indirmesi ve cihazını kaydetmesi gerekir. Bu iOS, Windows ve Samsung KNOX cihazları için geçerlidir.  Samsung KNOX çalıştırmayan cihazlarda, karantina e-postasını alternatif bir e-posta hesabına göndermeniz gerekir. Daha sonra son kullanıcı kayıt ve uyumluluk işlemini tamamlamak için bunu engellenen cihazına kopyalamalıdır.|
-  > [!NOTE] Exchange’in bildirim e-postası gönderebilmesi için, bildirim e-postasını göndermek için kullanılacak hesabı belirtmeniz gerekir.
+  > [!NOTE]
+  > Exchange’in bildirim e-postası gönderebilmesi için, bildirim e-postasını göndermek için kullanılacak hesabı belirtmeniz gerekir.
   >
   > Ayrıntılar için bkz. [Şirket içi veya barındırılan Exchange için Şirket İçi Exchange bağlayıcısını yapılandırma](intune-on-premises-exchange-connector.md).
 
@@ -126,6 +122,7 @@ Windows 8 ve üstündeki **Mail** uygulaması ([!INCLUDE[wit_nextref](../include
 [Skype Kurumsal Çevrimiçi’ne erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

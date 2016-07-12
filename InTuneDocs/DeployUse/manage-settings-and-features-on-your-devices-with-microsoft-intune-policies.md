@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: İlkelerle cihazlarınızda ayarları ve özellikleri yönetme | Microsoft Intune
-description:
-keywords:
+title: "İlkelerle cihazlarınızda ayarları ve özellikleri yönetme | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Intune ilkelerinin tam listesi için bkz. [Microsoft Intune ilke başvurusu](mic
 
 2.  İstediğiniz ilkeyi seçin, ilke için önerilen ayarları (varsa; bu ayarları daha sonra değiştirebilirsiniz) kullanmayı veya kendi ayarlarınızla özel bir ilke oluşturmayı seçin.
 
-    > [!TIP] Doğru ilkeyi seçerken yardım almak için bkz. [Microsoft Intune ilke başvurusu](microsoft-intune-policy-reference.md).
+    > [!TIP]
+    > Doğru ilkeyi seçerken yardım almak için bkz. [Microsoft Intune ilke başvurusu](microsoft-intune-policy-reference.md).
 
 3.  Hazır olduğunuzda **İlke Oluştur**’u seçin.
 
@@ -72,8 +67,8 @@ Intune ilkelerinin tam listesi için bkz. [Microsoft Intune ilke başvurusu](mic
     - [Windows Team cihazları için ayarlar](windows-team-configuration-policy-settings-in-microsoft-intune.md)
     - [Windows sürüm yükseltme için ayarlar](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Mac OS X cihazları için ayarlar](mac-os-x-policy-settings-in-microsoft-intune.md)
-    - [Exchange ActiveSync ayarları](exchange-activesync-policy-settings-in-microsoft-intune.md)
-    - [Hüküm ve koşullar ilkesi ayarları](terms-and-condition-policy-settings-in-microsoft-intune.md)
+    - [Exchange ActiveSync için ayarlar](exchange-activesync-policy-settings-in-microsoft-intune.md)
+    - [Hüküm ve koşullar ilkesi için ayarlar](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Mobil cihazlar için genel ayarlar (eski)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
 4.  Onay iletişim kutusunda, ilkeyi şimdi dağıtmak için **Evet**’i, dağıtmadan bir ilke oluşturmak için **Hayır**’ı seçin.
@@ -119,7 +114,7 @@ Bir cihaz ilk bildirim gönderildikten sonra ilkeyi almak üzere giriş yapmazsa
 
 Bu durumda cihaz, ilkeyi bir sonraki zamanlanmış Intune hizmeti girişinde aşağıdaki gibi alır:
 
-- iOS - 6 saatte bir
+- iOS ve Mac OS X - 6 saatte bir
 - Android - 8 saate bir
 - Windows Phone - 8 saatte bir
 - Kayıtlı Windows RT cihazları - 24 saatte bir
@@ -127,10 +122,10 @@ Bu durumda cihaz, ilkeyi bir sonraki zamanlanmış Intune hizmeti girişinde aş
 
 Cihaz daha yeni kaydedilmişse, giriş sıklığı aşağıda gösterildiği gibi daha sık olacaktır:
 
-- iOS - 6 saat boyunca 15 dakikada bir, daha sonra 6 saatte bir
+- iOS ve Mac OS X - 6 saat boyunca 15 dakikada bir ve daha sonra 6 saatte bir
 - Android - 15 dakika boyunca 3 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir
 - Windows Phone - 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir
-- Cihaz olarak kaydedilen Windows bilgisayarları - 30 dakika boyunca 3 dakikada bir, daha sonra 24 saatte bir
+- Cihaz olarak kaydedilen Windows bilgisayarları - 30 dakika boyunca 3 dakikada bir ve daha sonra 8 saatte bir
 
 Ayrıca, kullanıcılar ilkeyi istedikleri zaman denetlemek için Şirket Portalı uygulamasını başlatıp cihazı eşitleyebilir.
 
@@ -149,7 +144,7 @@ Aynı kullanıcı veya cihaza iki veya daha fazla ilke dağıtıldığında, han
 
 -   Farklı bir uyumluluk ilkesindeki aynı ayarla karşılaştırılarak değerlendirildiğinde, en kısıtlayıcı uyumluluk ilkesi ayarı uygulanır
 
--   Farklı bir yapılandırma ilkesindeki aynı ayarla karşılaştırılarak değerlendirildiğinde, en kısıtlayıcı yapılandırma ilkesi ayarı uygulanır
+-   Bir yapılandırma ilkesi ayarı, farklı bir yapılandırma ilkesindeki bir ayarla çakışıyorsa, bu çakışma Intune konsolunda görüntülenir. Bu gibi çakışmaları el ile çözümlemeniz gerekir.
 
 ### Mobil uygulama yönetimi (MAM) ilkeleri birbiriyle çakıştığında ne olur? Uygulamaya hangisi uygulanır?
 Çakışma değerleri, bir mobil uygulama yönetim ilkesinde sayı giriş alanları (sıfırlamadan önce PIN denemesi sayısı gibi) dışında en kısıtlayıcı ayarlardır.  Sayı giriş alanları, konsolda önerilen ayarlar seçeneğini kullanarak bir MAM ilkesi oluşturduğunuzda alacağı değerlerle aynı değerlere ayarlanır.
@@ -178,7 +173,25 @@ Bir ilkeyi sildiğinizde veya bir cihazı ilkenin dağıtıldığı bir gruptan 
         - Gerekli parola türü
         - Parola geçerlilik süresi (gün)
         - Parola geçmişini anımsa
-        - Cihaz temizlenmeden önce izin verilecek yinelenen başarısız oturum açma sayısı - Parola gerektirmeden önce işlem yapılmadan geçen süre (dakika) - Gerekli parola türü – karakter kümesi sayısı alt sınırı - Kameraya izin ver - Mobil cihazda şifreleme gerektir - Çıkarılabilir depolama birimine izin ver - Web tarayıcısına izin ver - Uygulama mağazasına izin ver - Ekran yakalamaya izin ver - Coğrafi konuma izin ver - Microsoft Hesabına izin ver - Kopyalama ve yapıştırmaya izin ver - Wi-Fi İnternet paylaşımına izin ver - Ücretsiz Wi-Fi etkin noktalarına otomatik bağlanmaya izin ver - Wi-Fi etkin noktası raporlamaya izin ver - Fabrika sıfırlamasına izin ver - Bluetooth’a izin ver - NFC’ye izin ver - Wi-Fi’ye izin ver
+        - Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı
+        - Parola istenmeden önce geçen işlem yapılmayan dakika sayısı
+        - Gerekli parola türü – minimum karakter kümesi sayısı
+        - Kameraya izin ver
+        - Cihazda şifrelemeyi gerektir
+        - Çıkarılabilir depolama birimine izin ver
+        - Web tarayıcısına izin ver
+        - Uygulama depolamaya izin ver
+        - Ekran yakalamaya izin ver
+        - Coğrafi konuma izin ver
+        - Microsoft Hesabına izin ver
+        - Kopyalama ve yapıştırmaya izin ver
+        - Wi-Fi İnternet paylaşımına izin ver
+        - Ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmaya izin ver
+        - Wi-Fi etkin noktası bildirimine izin ver
+        - Fabrika sıfırlamasına izin ver
+        - Bluetooth'a izin ver
+        - NFC'ye izin ver
+        - Wi-Fi'a izin ver
     
     - **iOS** - Aşağıdakiler dışında tüm ayarlar kaldırılır:
         - Sesli dolaşıma izin ver
@@ -200,9 +213,10 @@ Bir ilkeyi sildiğinizde veya bir cihazı ilkenin dağıtıldığı bir gruptan 
 
 ### İlkelerle ilgili sorunları giderme hakkında nereden yardım bulabilirim?
 
-Bkz. [Microsoft Intune’da ilke sorunlarını giderme](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
+Bkz. [Microsoft Intune’da ilke sorunlarını giderme](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
