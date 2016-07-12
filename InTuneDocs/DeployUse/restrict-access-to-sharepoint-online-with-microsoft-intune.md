@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: SharePoint Online’a erişimi kısıtlama | Microsoft Intune
-description:
-keywords:
+title: "SharePoint Online’a erişimi kısıtlama | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+
 
 ---
 
@@ -30,7 +24,7 @@ SharePoint Online’da bulunan dosyalara erişimi denetlemek için [!INCLUDE[wit
 Koşullu erişim iki bileşenden oluşur:
 - Cihazın uyumlu kabul edilmesi için uyması gereken cihaz uyumluluk ilkesi.
 - Cihazın hizmete erişebilmek için uyması gereken koşulları sizin belirlediğiniz koşullu erişim ilkesi.
-Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için, [E-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) konusunu okuyun.
+Koşullu erişimin nasıl çalıştığıyla ilgili bilgi almak için, [e-posta, O365 hizmetleri ve diğer hizmetlere erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) konusunu okuyun.
 
 Kullanıcı cihazında OneDrive gibi desteklenen bir uygulama kullanarak bir dosyaya bağlanmaya çalıştığında, aşağıdaki değerlendirme yapılır:
 
@@ -66,6 +60,13 @@ Bir koşul karşılanmazsa, oturum açtığında kullanıcıya şu iletilerden b
 - Android 4.0 ve üzeri ile Samsung KNOX Standard 4.0 veya üzeri
 - Windows Phone 8.1 ve üzeri
 
+**iOS** ve **Android** cihazlarda bir tarayıcıdan erişildiğinde SharePoint Online’a erişimi kısıtlayabilirsiniz.  Erişime yalnızca uyumlu cihazlarda, yalnızca desteklenen tarayıcılardan izin verilir:
+* Safari (iOS)
+* Chrome (Android)
+* Yönetilen Tarayıcı (iOS ve Android)
+
+**Desteklenmeyen tarayıcılar engellenir**.
+
 ## Bilgisayarlar için destek
 - Windows 8.1 ve üzeri (Intune’a kaydedildiğinde)
 - Windows 7.0 veya Windows 8.1 (etki alanına katıldığında)
@@ -97,11 +98,13 @@ Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 ### Adım 2: Uyumluluk ilkesi yapılandırma ve dağıtma
 Bunu zaten yapmadıysanız, bir uyumluluk ilkesi oluşturun ve bu ilkeyi SharePoint Online ilkesinde hedeflenecek olan kullanıcılara dağıtın.
 
-> [!NOTE] Uyumluluk ilkeleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
+> [!NOTE]
+> Uyumluluk ilkeleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
 
 Uyumluluk ilkesini yapılandırma ayrıntıları için bkz. [uyumluluk ilkesi oluşturma](create-a-device-compliance-policy-in-microsoft-intune.md).
 
-> [!IMPORTANT] Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak değerlendirilir.
+> [!IMPORTANT]
+> Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak kabul edilir.
 
 Hazır olduğunuzda **3. Adım**’a ilerleyin.
 
@@ -110,8 +113,8 @@ Hazır olduğunuzda **3. Adım**’a ilerleyin.
 
 #### <a name="bkmk_spopolicy"></a>
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **SharePoint Online İlkesi**’ne tıklayın.
-![SharePoint Online İlkesi sayfasının ekran görüntüsü](../media/IntuneSASharePointOnlineCAPolicy.png)
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **SharePoint Online İlkesi**’ni seçin.
+![SharePoint Online İlkesi sayfasının ekran görüntüsü](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  **SharePoint Online için koşullu erişim ilkesini etkinleştir**’i seçin.
 
@@ -120,6 +123,10 @@ Hazır olduğunuzda **3. Adım**’a ilerleyin.
     -   **Tüm platformlar**
 
         Bu seçenek, **SharePoint Online**’a erişmek için kullanılan tüm cihazların Intune’a kaydedilmesini ve ilkelerle uyumlu olmasını gerektirir.  **Modern kimlik doğrulaması** kullanan tüm istemci uygulamaları, koşullu erişim ilkesine bağlıdır. Platform şu anda Intune tarafından desteklenmiyorsa, **SharePoint Online**’a erişim engellenir.
+
+        **Tüm platformlar** seçeneğinin belirlenmesi, Azure Active Directory’nin bu ilkeyi, istemci uygulaması tarafından bildirilen platformdan bağımsız olarak tüm kimlik doğrulama isteklerine uygulayacağı anlamına gelir.  Aşağıdakiler dışında tüm platformların kaydolması ve uyumlu hale gelmesi gerekir:
+        *   Windows cihazlarının, kaydolması ve uyumlu hale gelmesi, şirket içi Active Directory ile etki alanı birleşik olması veya her ikisi gerekir
+        * Mac gibi desteklenmeyen platformlar.  Ancak, bu platformlarından gelen, modern kimlik doğrulaması kullanan uygulamalar yine de engellenir.
         >[!TIP]
         >Bilgisayarlar için koşullu erişimi zaten kullanıyorsanız, bu seçeneği görmeyebilirsiniz.  Bunun yerine **Belirli platformlar**’ı kullanın. Bilgisayarlar için koşullu erişim şu anda tüm Intune müşterilerine sağlanmamaktadır.   [Microsoft Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472), bilinen sorunların yanı sıra bu özelliğe nasıl erişebileceğiniz hakkında daha fazla bilgi bulabilirsiniz.
 
@@ -135,11 +142,28 @@ Hazır olduğunuzda **3. Adım**’a ilerleyin.
 
      -   **Cihazlar uyumlu olmalıdır.** Bilgisayarların [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ’a kaydedilmiş ve uyumlu olmalısını zorunlu tutmak için bu seçeneği belirtin. Bilgisayar kayıtlı değilse, kaydetme yönergelerini içeren bir ileti görüntülenir.
 
-4.   **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Azure Active Directory güvenlik gruplarını seçmek için **Değiştir** ’e tıklayın. Bunu tüm kullanıcılara veya yalnızca seçilmiş bir kullanıcı grubuna hedefleyebilirsiniz.
+4.   SharePoint Online ve OneDrive İş’e **Tarayıcı erişimi** altında, Exchange Online’a yalnızca desteklenen tarayıcılar üzerinden erişime izin vermeyi seçebilirsiniz: Safari (iOS) ve Chrome (Android). Diğer tarayıcılardan erişim engellenir.  OneDrive için Uygulama erişimi için seçtiğiniz platform kısıtlamaları burada da geçerli olur.
 
-5.   **Muaf Tutulan Gruplar**altında, bu ilkeden muaf tutulan Active Directory güvenlik gruplarını seçmek için isteğe bağlı olarak **Değiştir** ’e tıklayın.
+  **Android** cihazlarda, kullanıcılar tarayıcı erişimini etkinleştirmelidir.  Bunu yapmak için, son kullanıcı kaydolan cihazda "Tarayıcı Erişimini Etkinleştir" seçeneğini etkinleştirmelidir:
+  1.    **Şirket Portal uygulamasını** başlatın.
+  2.    Üç nokta (...) veya donanım menüsü düğmesinden **Ayarlar** sayfasına gidin.
+  3.    **Tarayıcı Erişimi Etkinleştir** düğmesine basın.
+  4.  Chrome tarayıcıda, Office 365 oturumunu kapatın ve Chrome’u yeniden başlatın.
 
-6.  İşiniz bittiğinde **Kaydet**‘e tıklayın.
+  **iOS ve Android** platformlarında, Cihazın hizmete erişmek için kullanıldığını belirlemek için, Azure Active Directory, cihaza bir Aktarım katmanı güvenliği (TLS) sertifikası yayımlar.  Cihaz, sertifikayı, aşağıdaki ekran görüntülerinde görüleceği gibi son kullanıcıya sertifikayı seçmesi için bir istemle ekrana getirir. Son kullanıcı, tarayıcıyı kullanmaya devam edebilmesi için önce bu sertifikayı seçmelidir.
+
+  **iOS**
+
+  ![ipad cihazında sertifika istemi ekran görüntüsü](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![Android cihazda sertifika istemi ekran görüntüsü](../media/mdm-browser-ca-android-cert-prompt.png)
+5.  **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Azure Active Directory güvenlik gruplarını seçmek için **Değiştir**’i seçin. Bunu tüm kullanıcılara veya yalnızca seçilmiş bir kullanıcı grubuna hedefleyebilirsiniz.
+
+6.  **Muaf Tutulan Gruplar**altında, bu ilkeden muaf tutulan Active Directory güvenlik gruplarını seçmek için isteğe bağlı olarak **Değiştir**’i seçin.
+
+6.  İşiniz bittiğinde **Kaydet**’i seçin.
 
 Koşullu erişim ilkesini dağıtmanız gerekmez, hemen geçerli olur.
 
@@ -158,6 +182,7 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 [Microsoft Intune ile e-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
