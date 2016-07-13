@@ -94,6 +94,6 @@ Son geliştirmelerin ayrıntıları için bkz. [Microsoft Intune’daki Yenilikl
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
