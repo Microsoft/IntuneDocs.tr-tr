@@ -33,6 +33,6 @@ Yükseltme yapmak için, aşağıdaki, kullanmakta olduğunuz cihazın türüne 
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
