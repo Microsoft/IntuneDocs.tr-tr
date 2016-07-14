@@ -28,6 +28,7 @@ Uygulamaları dağıtırken aşağıdaki dağıtım eylemlerden birini seçebili
 
 -   **Gerekli yükleme** – Uygulama herhangi bir son kullanıcı müdahalesi gerekmeden cihaza yüklenir.
 
+    > [!TIP]
     > [!TIP] Denetimli modda olmayan iOS cihazları ve tüm Android cihazları için kullanıcı yükleme öncesinde uygulama teklifini kabul etmelidir.
     > 
     >  Son kullanıcı gerekli bir yükleme olarak dağıttığınız bir uygulamayı kaldırırsa, Intune normalde 7 günde bir gerçekleştirilen bir sonraki envanter döngüsünden sonra uygulamayı otomatik olarak yeniden yükler.
@@ -52,6 +53,7 @@ Uygulamaları dağıtırken aşağıdaki dağıtım eylemlerden birini seçebili
 |Dış bağlantı (bir cihaz grubuna dağıtılır)|Hayır|Hayır|Hayır|Hayır|
 |Uygulama mağazasından yönetilen iOS uygulaması (bir kullanıcı grubuna dağıtılır)|Evet|Evet|Evet|Evet|
 |Uygulama mağazasından yönetilen iOS uygulaması (bir cihaz grubuna dağıtılır)|Evet|Hayır|Evet|Evet|
+> [!TIP]
 > [!TIP] Uygulamaları dağıtırken hem kullanıcı hem de cihaz gruplarını seçerseniz, uygulamayı yalnızca **Kullanılabilir yükleme** olarak dağıtabilirsiniz.
 
 ## Dağıtım çakışmaları
@@ -70,6 +72,6 @@ Bir cihaz tarafından aynı dağıtım eylemiyle iki dağıtım alındığında 
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

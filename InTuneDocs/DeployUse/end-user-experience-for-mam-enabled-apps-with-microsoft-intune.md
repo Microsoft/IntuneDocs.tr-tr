@@ -46,6 +46,7 @@ Mobil uygulama yönetimi (MAM) ilkeleri, yalnızca uygulamalar çalışma bağla
 
     ![Varolan dosyaların listesiyle açık dosya konumunu gösteren ekran görüntüsü](../media/AppManagement/iOS_OneDriveSuccess.png)
 
+    > [!NOTE]
     > [!NOTE] Dağıtılan bir ilkeyi değiştirirseniz, değişiklikler uygulamayı bir sonraki açışınızda uygulanır.
 
 ##  OneDrive’a Android cihazında erişme
@@ -169,6 +170,6 @@ Bu, şirket dosyalarını görüntülemek için RMS paylaşım uygulamasını ku
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
