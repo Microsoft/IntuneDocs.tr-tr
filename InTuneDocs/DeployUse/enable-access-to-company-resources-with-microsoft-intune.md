@@ -55,6 +55,6 @@ Kablosuz ağlar ve VPN bağlantıları gibi şirket kaynaklarına güvenli eriş
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
