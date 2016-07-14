@@ -91,6 +91,6 @@ Bir cihaz kayıt yöneticisinin silinmesi, kaydedilen cihazları etkilemez. Bir 
 -   Silinen cihaz kayıt yöneticisinin hesabı ile kayıtlı cihazlar arasındaki ilişkisi devam eder, ancak başka bir cihaz kaydedilemez
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

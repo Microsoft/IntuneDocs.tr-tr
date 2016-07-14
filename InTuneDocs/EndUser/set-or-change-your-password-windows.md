@@ -10,6 +10,7 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 19f06b1fc58584b42af7740384c9a927a20d0b6e
 
