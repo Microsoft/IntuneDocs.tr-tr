@@ -420,10 +420,10 @@ Bu sürümde şirket portalı uygulamalarında şu değişiklikler yapılmışt�
 
 >[!div class="step-by-step"]
 
->[&larr; **Intune’daki yenilikler**](whats-new-in-microsoft-intune.md)    
+>[&larr; **[!div class="step-by-step"]**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
