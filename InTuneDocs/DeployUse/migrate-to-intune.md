@@ -72,6 +72,6 @@ Bu kılavuzun tamamının indirilebilir bir kopyasını almak için [TechNet Gal
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
