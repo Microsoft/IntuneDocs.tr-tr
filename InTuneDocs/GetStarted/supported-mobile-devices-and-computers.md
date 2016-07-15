@@ -33,6 +33,6 @@ Bu cihazları ve bilgisayarları, bir etki alanına katılmasalar veya şirkete 
 [Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

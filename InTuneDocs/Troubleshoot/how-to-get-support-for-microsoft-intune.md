@@ -34,6 +34,7 @@ Intune’da kendi kendine yardım için, [Microsoft Intune için genel sorun gid
 
     -   Diğer tüm Intune sorunları için **Mobil cihaz yönetimi**’ni seçin. Bu seçenek Office 365 MDM’yi ve Intune ile System Center Configuration Manager’ı da kapsar.
 
+    > [!NOTE]
     > [!NOTE] Kategorilerin tümünü görmek için listenin en sonunda **diğer** öğesine tıklamanız gerekebilir.
 
 3.  **Sorunu tanımla** sayfasında yardıma ihtiyaç duyduğunuz **Özellik** ve **Belirti**’yi seçin. **Sorun özeti** ve **Sorun ayrıntıları** sağlamanız istenir.
@@ -51,7 +52,8 @@ Intune’da kendi kendine yardım için, [Microsoft Intune için genel sorun gid
 İsteklerinizi izlemek için [Office 365 yönetim merkezine](https://portal.office.com/admin/default.aspx) gidin. **Hizmet isteği oluştur** listesinin altındaki **Tüm destek biletlerini göster**’e tıklayın. Varsayılan olarak, açık durumdaki tüm hizmet isteklerinizi görebilirsiniz. Hangi hizmet isteklerinin gösterileceğini değiştirmek, örneğin kapalı istekleri görmek için, üst gezintideki filtre simgesine tıklayın ve tercih ettiğiniz görünümü seçin.
 
 > [!NOTE]
-> **Microsoft System Center Configuration Manager** veya **Microsoft System Center Endpoint Protection** kullanıyorsanız: Configuration Manager veya Endpoint Protection ile ilgili teknik destek için iş ortağınızla iletişim kurun veya [Microsoft System Center Configuration Manager ve System Center Endpoint Protection Çözüm Merkezi](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)'ni ziyaret ederek çevrimiçi ya da telefon üzerinden destek isteği açma seçeneğini içeren zengin yardım malzemelerini bulun.
+> [!NOTE]
+**Microsoft System Center Configuration Manager** veya **Microsoft System Center Endpoint Protection** kullanıyorsanız: Configuration Manager veya Endpoint Protection ile ilgili teknik destek için iş ortağınızla iletişim kurun veya [Microsoft System Center Configuration Manager ve System Center Endpoint Protection Çözüm Merkezi](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)'ni ziyaret ederek çevrimiçi ya da telefon üzerinden destek isteği açma seçeneğini içeren zengin yardım malzemelerini bulun.
 >
 > System Center Configuration Manager veya System Center Endpoint Protection için teknik destek, ödeme gerektirir ya da var olan lisansınızdan veya Premier Destek sözleşmelerinden düşülür.
 
@@ -138,6 +140,6 @@ Bizim rolümüz:
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 

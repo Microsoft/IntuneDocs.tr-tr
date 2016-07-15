@@ -13,6 +13,7 @@ ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 7c6e3e0f008f084a63288eec66f7161a1edb9ffe
 
