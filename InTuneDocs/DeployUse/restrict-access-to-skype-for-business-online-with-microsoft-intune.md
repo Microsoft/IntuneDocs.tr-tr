@@ -68,9 +68,11 @@ Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 ### 2. Adım: Uyumluluk ilkesi yapılandırma ve dağıtma
 Bir uyumluluk ilkesi [oluşturun](create-a-device-compliance-policy-in-microsoft-intune.md) ve ilkeden etkilenecek olan tüm cihazlara [dağıtın](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md). Bunlar, **Hedeflenen gruplar**’daki kullanıcılar tarafından kullanılan tüm cihazlar olacaktır.
 
+> [!NOTE]
 > [!NOTE] Uyumluluk ilkeleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
 
 
+> [!IMPORTANT]
 > [!IMPORTANT] Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak değerlendirilir.
 
 Hazır olduğunuzda **3. Adım**’a ilerleyin.
@@ -113,6 +115,6 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
