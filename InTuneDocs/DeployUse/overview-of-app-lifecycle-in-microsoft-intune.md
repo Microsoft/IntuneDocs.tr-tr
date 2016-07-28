@@ -1,27 +1,27 @@
 ---
 title: "Uygulama yaşam döngüsüne genel bakış | Microsoft Intune"
-description: 
+description: "Intune yönetilen uygulamalarının, eklenmesinden başlayıp sonunda devre dışı bırakılmasına kadar tüm yaşam döngüsü hakkında bilgi edinin."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b
-ms.openlocfilehash: 882f0aa030d1d9e03ca50baed3f618f7a719b5b5
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 86d9de9992003ffd163291035174c8d1e822929a
 
 
 ---
 
 # Uygulama yaşam döngüsüne genel bakış
 
-Intune uygulama yaşam döngüsü, bir uygulama eklendiğinde başlar, ek aşamalardan geçerek siz uygulamayı kaldırama kadar devam eder.
+Intune uygulama yaşam döngüsü, bir uygulama eklendiğinde başlar, ek aşamalardan geçerek siz uygulamayı kaldırana kadar devam eder.
 
 ![Uygulama yaşam döngüsü](./media/app-lifecycle.png "the Intune app lifecycle")
 
@@ -51,6 +51,6 @@ Sonunda, büyük olasılıkla dağıttığınız uygulamalar eskir ve kaldırıl
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

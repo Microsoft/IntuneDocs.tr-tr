@@ -3,18 +3,19 @@ title: "Şirketinizin Sanal Özel Ağını (VPN) yükleme | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: d4c0e05002b3d6f2785b401159c2872d93313524
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 73fee953e10336fe659e271b49d96a518b2730aa
 
 
 ---
@@ -28,7 +29,9 @@ BT yöneticiniz şirketinizin kaynaklarına bağlanmanıza imkan sağlamak için
 
 2.  **Play Store**’da **YÜKLE**’ye tıklayın ve uygulamayı yüklemek için istemleri izleyin.
 
-3.  **Kuruluş VPN profilini yükle**’ye dokunun, yönergeleri izleyerek uygulamayı kabul edin ve etkinleştirin.
+3.  **Kuruluş VPN profilini yükle**’ye dokunun, yönergeleri izleyin. Şirketinizin kullandığı VPN sağlayıcısına bağlı olarak, yükleme adımları biraz farklı olabilir.
+
+
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
@@ -36,6 +39,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Cihazlarda Microsoft Passport ayarlarını denetleme | Microsoft Intune"
-description: 
+description: "Intune’un parola, akıllı kart ya da sanal akıllı kartı değiştirmek için Active Directory veya bir Azure Active Directory hesabının kullanıldığı alternatif bir oturum açma yöntemi olan **İş için Microsoft Passport** ile nasıl tümleşik çalıştığını öğrenin."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+ms.sourcegitcommit: ada366e91806c6f443ac4548af99c587ac218ec9
+ms.openlocfilehash: 934ae78edf4de2003d62179fa38269d97e6d7ef6
 
 
 ---
@@ -23,6 +23,9 @@ ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
 Microsoft Intune bir parola, akıllı kart ya da sanal akıllı kartı değiştirmek için Active Directory veya bir Azure Active Directory hesabı kullanan alternatif bir oturum açma yöntemi olan **İş için Microsoft Passport** ile tümleştirmenize olanak sağlar.
 
 Passport oturum açmak için parola yerine **kullanıcı hareketi** kullanmanıza imkan tanır. Kullanıcı hareketi basit bir PIN, Windows Hello gibi bir biyometrik kimlik doğrulaması ya da parmak izi okuyucu gibi harici bir cihaz olabilir.
+
+>[!TIP]
+>İş için Microsoft Passport artık İş için Windows Hello olarak adlandırılıyor. Intune konsolu, önümüzdeki güncelleştirmelerden birinde bu değişikliği yansıtacak şekilde güncelleştirilecektir.
 
 Intune, İş için Passport ile iki şekilde tümleştirilir:
 
@@ -75,6 +78,6 @@ Microsoft Passport hakkında daha fazla bilgi için, Windows 10 belgelerinde [k�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

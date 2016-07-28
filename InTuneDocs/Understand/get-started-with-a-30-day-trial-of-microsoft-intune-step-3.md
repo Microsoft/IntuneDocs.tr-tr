@@ -1,9 +1,9 @@
 ---
-title: "Değerlendirme aboneliği kullanıcılarını ve cihazlarını düzenlemek için gruplar oluşturun | Microsoft Intune"
-description: 
+title: "Kullanıcıları ve cihazları düzenlemek için grup oluşturma | Microsoft Intune"
+description: "Intune’un ücretsiz, 30 günlük değerlendirmesine kaydolduğunuzda, cihaz grupları ve kullanıcı grupları nasıl oluşturulur"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
-ms.openlocfilehash: f438b2b5e53d9bc119341effae1533d26cc9a47b
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 8045703bf7eb0f03906f44303509a4b81ae62270
 
 
 ---
@@ -65,6 +65,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 3. adımını
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

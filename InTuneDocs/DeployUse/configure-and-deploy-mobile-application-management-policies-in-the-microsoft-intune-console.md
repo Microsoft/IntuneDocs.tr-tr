@@ -1,10 +1,10 @@
 ---
-title: "Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma | Microsoft Intune"
-description: 
+title: "Intune konsolunda MAM ilkelerini yapılandırma | Microsoft Intune"
+description: "Microsoft Intune’da mobil uygulama yönetimi ilkeleri, dağıttığınız uygulamaların şirketinizin uyumluluk ve güvenlik ilkelerine uygun hale gelmesi için, bunların işlevselliğini değiştirmenize olanak tanır."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: df75c3512091dff55ace65ef6106dc2cbc503bd2
 
 
 ---
@@ -126,7 +126,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra, 3. adı
     |**Açıklama**|İsteğe bağlı olarak, bu ilke için bir açıklama belirtin.|
     |**Web içeriğini kurumsal olarak yönetilen bir tarayıcıda görüntülemek üzere kısıtlayın**|Bu ayar etkinleştirildiğinde, uygulamadaki tüm bağlantılar Yönetilen Tarayıcıda açılır. Bu seçeneğin çalışması için bu uygulamayı cihazlara dağıtmış olmanız gerekir.|
     |**Android yedeklemelerini engelle** veya **iTunes ve iCloud yedeklemelerini engelle**|Uygulamadaki bilgilerin yedeklenmesini devre dışı bırakır.|
-    |**Uygulamanın diğer uygulamalara veri aktarmasına izin ver**|Bu uygulamanın veri gönderebileceği uygulamaları belirtir. Hiçbir uygulamaya veri aktarmaya izin vermemeyi, yalnızca diğer yönetilen uygulamalara aktarmaya izin vermeyi veya tüm uygulamalara aktarmaya izin vermeyi seçebilirsiniz. Bu ayar, mobil cihazlardaki **Birlikte Aç** özelliğinin kullanımını denetlemez.<br /><br />Örneğin, veri aktarımı izin vermezseniz SMS iletisi, kişilere görüntü atama ve Facebook veya Twitter'da paylaşma gibi hizmetler için veri aktarımını sınırlamış olursunuz.<br /><br />iOS cihazlar için yönetilen ve yönetilmeyen uygulamalar arasında belge aktarımını önlemek için **Diğer yönetilmeyen uygulamalardaki yönetilen belgelere izin ver** ayarını devre dışı bırakan bir mobil cihaz güvenlik ilkesi de yapılandırıp dağıtmanız gerekir. Yalnızca diğer yönetilen uygulamalara aktarıma izin vermeyi seçerseniz ilgili türlerin içeriğini açmak için Intune PDF ve resim görüntüleyiciler (dağıtılmışsa) kullanılır.<br /><br />Ayrıca, bu seçeneği **İlke ile Yönetilen Uygulamalar** veya **Hiçbiri** olarak ayarlarsanız uygulamaların içindeki verileri aramak için Spotlight Arama özelliğine imkan tanıyan iOS 9 özelliği engellenir.|
+    |**Uygulamanın diğer uygulamalara veri aktarmasına izin ver**|Bu uygulamanın veri gönderebileceği uygulamaları belirtir. Hiçbir uygulamaya veri aktarmaya izin vermemeyi, yalnızca diğer yönetilen uygulamalara aktarmaya izin vermeyi veya tüm uygulamalara aktarmaya izin vermeyi seçebilirsiniz. Bu ayar, mobil cihazlardaki **Birlikte Aç** özelliğinin kullanımını denetlemez.<br /><br />Örneğin, veri aktarımı izin vermezseniz SMS iletisi, kişilere görüntü atama ve Facebook veya Twitter'da paylaşma gibi hizmetler için veri aktarımını sınırlamış olursunuz.<br /><br />iOS cihazlar için yönetilen ve yönetilmeyen uygulamalar arasında belge aktarımını önlemek için **Diğer yönetilmeyen uygulamalardaki yönetilen belgelere izin ver** ayarını devre dışı bırakan bir mobil cihaz güvenlik ilkesi de yapılandırıp dağıtmanız gerekir. Yalnızca diğer yönetilen uygulamalara aktarıma izin vermeyi seçerseniz ilgili türlerin içeriğini açmak için Intune PDF ve resim görüntüleyiciler (dağıtılmışsa) kullanılır.<br /><br />Ayrıca, bu seçeneği **İlke ile Yönetilen Uygulamalar** veya **Hiçbiri** olarak ayarlarsanız uygulamaların içindeki verileri aramak için Spotlight Arama özelliğine imkan tanıyan iOS 9 özelliği engellenir.<br><br>**Bu ayar, mobil cihazlardaki Birlikte Aç özelliğinin kullanımını denetlemez. Birlikte Aç özelliğini yönetmek için [buraya](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)** bakın.|
     |**Uygulamanın diğer uygulamalardan veri almasına izin ver**|Bu uygulamanın veri alabileceği uygulamaları belirtir. Hiçbir uygulamadan veri aktarmaya izin vermemeyi, yalnızca diğer yönetilen uygulamalardan aktarmaya izin vermeyi veya tüm uygulamalardan aktarmaya izin vermeyi seçebilirsiniz.<br /><br />Çoklu kimliği destekleyen iOS uygulamaları için (burada Intune yönetim ayarlarını yalnızca şirket hesaplarına veya uygulamadaki verilere uygular), mobil uygulama yönetimi ilkesinin uygulandığı bir kayıtlı cihazda kullanıcı bir mobil uygulama yönetimi ilkesi tarafından yönetilmeyen bir uygulamadan verilere eriştiğinde, veriler şirket verisi olarak kabul edilir ve ilke tarafından korunur.|
     |**“Farklı Kaydet”i önleme**|Kişisel bulut depolama konumlarına (OneDrive Personal veya Dropbox gibi) veri kaydetmeyi sağlayan **Farklı Kaydet** seçeneğinin kullanımını devre dışı bırakır.|
     |**Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtlama**|Uygulamayla kesme, kopyalama ve yapıştırma işlemlerinin nasıl kullanılacağını belirtir. Aşağıdakilerden birini seçin:<br /><br />**Engellendi** – Bu uygulama ve diğer uygulama arasında kesme, kopyalama ve yapıştırma işlemlerine izin verilmez.<br /><br />**İlkeyle Yönetilen Uygulamalar** – Yalnızca bu uygulama ve diğer yönetilen uygulamalar arasında kesme, kopyalama ve yapıştırma işlemlerine izin verilir.<br /><br />**İçine Yapıştırmayla İlke ile Yönetilen Uygulamalar** – Bu uygulamadan kesilen veya kopyalanan verilerin yalnızca diğer yönetilen uygulamalara yapıştırılmasına izin verilir. Herhangi bir uygulamadan kesilen veya kopyalanan verilerin bu uygulamaya yapıştırılmasına izin verilir.<br /><br />**Herhangi Bir Uygulama** – Bu uygulamaya veya bu uygulamadan kesme, kopyalama ve yapıştırma işlemleriyle ilgili bir kısıtlama yoktur.<br /><br />Yönetilen uygulamalar arasında veri kopyalama ve yapıştırma işlemi yapılabilmesi için her iki uygulamada da **İlke ile Yönetilen Uygulamalar** veya **İçine Yapıştırmayla İlke ile Yönetilen Uygulamalar** ayarlarının yapılandırılmış olması gerekir.|
@@ -197,6 +197,6 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

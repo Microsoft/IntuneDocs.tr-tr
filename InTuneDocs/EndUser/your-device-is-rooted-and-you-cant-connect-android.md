@@ -3,18 +3,19 @@ title: "Android cihazınızın kökü belirtilmiş ve bağlanamıyorsunuz | Micr
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: c94414ee28e8fa808ba08a5c97624d3d9b95fecb
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 32ddb1865ac1fc8cbc0e51aaa380a5d561f8d203
 
 
 ---
@@ -22,14 +23,19 @@ ms.openlocfilehash: c94414ee28e8fa808ba08a5c97624d3d9b95fecb
 
 # Android cihazınızın kökü belirtilmiş ve bağlanamıyorsunuz
 
-Android cihazınızın kökü belirtildiğinde cihazını şirket kaynaklarını ve güvenliğini tehlikeye atabilecek bazı özellikleri etkinleştirecek şekilde değiştirilmiş demektir. Cihazınızın kökü belirtildiğinde şirket kaynaklarına erişemezsiniz ve şirket kaynaklarına yeniden erişmenize yardımcı olması için BT yöneticinizle iletişim kurmanız gerekir.
+Android cihazınızın kökü belirtildiğinde cihazını şirket kaynaklarını ve güvenliğini tehlikeye atabilecek bazı özellikleri etkinleştirecek şekilde değiştirilmiş demektir. Bu iletiyi görüyorsanız, sorun çözülene kadar şirket kaynaklarına erişemezsiniz. 
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bilerek cihazınızın kökünü belirtmek için bir şey yaptığınıza inanmıyorsanız, cihazınızın neden kökü belirtilmiş duruma geldiğini anlamak için şu diğer nedenleri gözden geçirin:
+
+- Cihazınıza, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir uygulama yüklemiş olabilirsiniz. Bir uygulama yükledikten sonra bu iletiyi görürseniz, yararı olup olmayacağını görmek için uygulamayı kaldırmayı deneyebilirsiniz.
+
+- Cihazınızın üreticisi, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir yazılım yüklemiş olabilir. Yardım için BT yöneticinize başvurmalısınız. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

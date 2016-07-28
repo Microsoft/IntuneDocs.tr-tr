@@ -1,19 +1,20 @@
 ---
 title: "Uygulama başına VPN için paket aile adı (PFN) bulma | Microsoft Intune"
-description: 
+description: "Uygulama başına VPN’yi yapılandırabilmek için bir PFN bulun."
 keywords: 
 author: nbigman
-manager:
-- ALIAS
-ms.date: 05/10/2016
+manager: Arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
+ms.reviewer: tycast
+ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e32cbcd54220cf36d6770ee16897d27e1d2d71db
-ms.openlocfilehash: 21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae
+ms.sourcegitcommit: 9a049127d79098bfb8992055a0a8b20fbfafd8c9
+ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
 
 
 ---
@@ -66,7 +67,7 @@ OneNote için şu bilgiler alınır:
 
 ## Uygulama bilgisayarda yüklü olmadığında bir PFN bulma
 
-1.  Https://www.microsoft.com/en-us/store/apps adresine gidin
+1.  https://www.microsoft.com/en-us/store/apps adresine gidin
 2.  Arama çubuğuna uygulamanın adını girin. Bizim örneğimizde, OneNote için arama yapın.
 3.  Uygulamanın bağlantısına tıklayın. Eriştiğiniz URL’nin sonunda bir dizi harf olduğuna dikkat edin. Bizim örneğimizde, URL şöyle görünür:
 `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
@@ -85,6 +86,6 @@ Edge’de istediğiniz bilgi görüntülenir; Internet Explorer’da bilgileri g
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

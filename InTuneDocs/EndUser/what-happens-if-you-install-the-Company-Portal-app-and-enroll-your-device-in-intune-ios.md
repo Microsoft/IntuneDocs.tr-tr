@@ -1,27 +1,27 @@
 ---
-title: "Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur? | Microsoft Intune"
+title: "Şirket Portalı uygulamasını yüklerseniz ve iOS veya Mac OS X cihazınızı Intune’a kaydederseniz ne olur? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: f07eaf82a3bd8fc7fb47032642b30850fcbbb30d
 
 
 ---
 
 
-# Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?
+# Şirket Portalı uygulamasını yüklerseniz ve iOS veya Mac OS X cihazınızı Intune’a kaydederseniz ne olur?
 
 Şirket Portalı uygulamasını yüklediğinizde ve iOS veya Mac OS X cihazınızı Intune’a kaydettiğinizde, Şirket Portalı uygulamasını kullanarak şunları yapabilirsiniz:
 
@@ -29,9 +29,9 @@ ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
 
 -   Şirket Portalı üzerinden şirket uygulamalarını alabilirsiniz
 
--   Şirket e-posta hesabınızı otomatik olarak yapılandırabilirsiniz
+-   Telefonunuz kaybolur veya çalınırsa uzaktan fabrika ayarlarına sıfırlayabilirsiniz
 
--   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz
+-   Şirket e-posta hesabınızı otomatik olarak yapılandırabilirsiniz
 
 Cihazınızı Intune’a kaydettikten sonra, BT yöneticinize cihazınızdaki şirket bilgilerinin korunmasına yardımcı olmak için cihazınızı yönetme izni vermiş olursunuz.
 
@@ -64,8 +64,6 @@ Cihazınızı Intune’a kaydettikten sonra, BT yöneticinize cihazınızdaki ş
 -   Sahip
 
 -   Cihaz adı
-
--   Üretici
 
 Cihazınız kaydolduğunda, BT yöneticiniz şunları yapabilir:
 
@@ -101,6 +99,6 @@ Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "İlke sorunlarını giderme | Microsoft Intune"
-description: 
+description: "İlke yapılandırma sorunlarını giderin."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
 
 
 ---
@@ -46,7 +47,8 @@ Aşağıdaki ekran görüntüsünde, iki anlaşılır örnek gösterilmektedir:
 
 ![Intune cihaz ilkesi](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE] Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
+> [!NOTE]
+> Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
 
 ## İlke yenileme ve güncelleştirme aralıkları
 İlkelerin düzenli aralıklarla yenilendiğinden ve güncelleştirildiğinden emin olun. Genel olarak, ilkeler bir değişiklik yapmanızdan sonraki 15 dakika içinde kaydedilmelidir. İlke yenileme için düzenli aralıklar hakkında daha fazla ayrıntı aşağıda verilmiştir:
@@ -68,7 +70,8 @@ MDM olmayan Windows cihazları için policyplatform.log dosyasındaki ilke hatal
 
 2.  İstemci yazılımının kaldırılması için 20 dakika bekleyin.
 
-    > [!NOTE] İstemciyi Programlar ve Özellikler menüsünden kaldırmaya çalışmayın.
+    > [!NOTE]
+    > İstemciyi Programlar ve Özellikler menüsünden kaldırmaya çalışmayın.
 
 3.  Başlat menüsünde **UAC** yazarak Kullanıcı Hesabı Denetimi ayarlarını açın.
 
@@ -110,6 +113,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Uyarılarla bilgi edinin | Microsoft Intune"
-description: 
+description: "Uyarıların, Microsoft Intune’da olup bitenlerden haberdar olmanızı nasıl sağladığını öğrenin."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e929a95d95b71e22d46e124f1a423af7046b0539
-ms.openlocfilehash: f1dd166b7b1278003ac8785b8be07c29396dfe8c
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: b56854664e90fe74a6a63aa52c645ba0b53476d0
 
 
 ---
@@ -85,6 +85,6 @@ Intune uyarıları şu durumlara kadar etkin kalır:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

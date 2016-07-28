@@ -1,26 +1,26 @@
 ---
-title: "Microsoft Intune’da yönetilen mobil cihazlar için Exchange erişim kuralları | Microsoft Intune"
-description: 
+title: "Mobil cihazlar için Exchange erişim kuralları | Microsoft Intune"
+description: "Mobil cihaz yönetimi (MDM) için Exchange ActiveSync erişim kuralları, bu cihazların Exchange’e erişim düzeylerini belirler."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f69c086333e359f7d1bf202a8d13667779bd3c86
 
 
 ---
 
 # Mobil cihazlar için Exchange Erişim kuralları
-Mobil cihazlar için Exchange erişim kuralları, bu cihazların Exchange’e erişim düzeylerini belirler. Bu ayar, Microsoft Intune’a kaydedilmemiş cihazlar da dahil olmak üzere tüm mobil cihazları etkiler. Özel bir kural uygulanmayan tüm mobil cihazlar için geçerli olan bir **Varsayılan Kural** tanımlayarak başlayabilirsiniz. Aşağıdaki tablo, Exchange ActiveSync tarafından yönetilen erişim düzeylerini içerir:
+Mobil cihazlar için Exchange erişim kuralları, bu cihazların Exchange ActiveSync’e erişim düzeylerini belirler. Bu ayar, Microsoft Intune’a kaydedilmemiş cihazlar da dahil olmak üzere tüm mobil cihazları etkiler. Özel bir kural uygulanmayan tüm mobil cihazlar için geçerli olan bir **Varsayılan Kural** tanımlayarak başlayabilirsiniz. Aşağıdaki tablo, Exchange ActiveSync tarafından yönetilen erişim düzeylerini içerir:
 
 |Erişim düzeyi|Açıklama|
 |----------------|---------------|
@@ -53,6 +53,6 @@ Aşağıdaki yordamda özel bir kuralın nasıl oluşturulacağı açıklanmakta
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

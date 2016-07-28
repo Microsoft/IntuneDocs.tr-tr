@@ -3,37 +3,44 @@ title: "Şirket Portalı uygulamasının yeni sürümünü yükleme | Microsoft 
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 529d8020ffda5ffe32542b670a75fd0faa5d6ffe
 
 
 ---
 
 # Şirket Portalı uygulamasının yeni sürümünü yükleme
 
-Şirket Portalı sürümünüz artık desteklenmiyorsa veya Şirket Portalı’nın daha yeni bir sürümü mevcutsa cihazınızı güncelleştirmek için aşağıdaki yordamları kullanın.
+Şirket Portalı sürümünüz artık desteklenmiyorsa veya Şirket Portalı’nın daha yeni bir sürümü kullanıma sunulduysa, Şirket Portalı uygulamasını yeni sürüme güncelleştirmelisiniz. Aşağıda, sahip olduğunuz cihazın türüne uygun adımları kullanın.
 
-## Android cihazınızı güncelleştirmek için
+## Android cihazınıza Şirket Portalı uygulamasını yüklemek için
 
 Şirket Portalı’nın yeni bir sürümü kullanılabilir olduğunda Play Store sizi uyarır. Şirket Portalı’nda ise bilgi istemi gösterilmez. Cihazınızı güncelleştirmek için uyarıdaki yönergeleri izleyin.
 
-## iOS cihazınızı güncelleştirmek için
+## iOS cihazınıza Şirket Portalı uygulamasını yüklemek için
 
-Şirket Portalı’nın yeni bir sürümü kullanılabilir olduğunda Apple AppStore sizi uyarır. Cihazınızı güncelleştirmek için uyarıdaki yönergeleri izleyin.
+Şirket Portalı uygulamasının yeni bir sürümü sağlandığında App Store sizi uyarır. 
 
-## Windows cihazınızı güncelleştirmek için
+Şirket Portalı uygulamasını güncelleştirmek için:
+
+1. App Store’u açın ve **intune** için arama yapın.
+
+2. Uygulamayı bulduğunuzda, uygulama adının sağ tarafındaki **güncelleştir** düğmesine dokunun.
+
+## Windows cihazınıza Şirket Portalı uygulamasını yüklemek için
 
 1.  Windows Mağazası'na gidin ve **şirket portalı** için arama yapın.
 
-2.  Yükleme yönergelerini izleyin.
+2.  Yükleme adımlarını izleyin.
 
     > [!NOTE]
     > Windows Mağazası'na erişemiyorsanız BT yöneticinize başvurun.
@@ -50,6 +57,6 @@ Cihazınızda gerçekleştirebileceğiniz diğer görevlerle ilgili bilgi için,
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

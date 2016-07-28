@@ -1,10 +1,10 @@
 ---
-title: "Mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma | Microsoft Intune"
-description: 
+title: MAM ilkelerini kullanarak uygulama verilerini koruma | Microsoft Intune
+description: "Bu konu başlığı altında, mobil uygulama yönetimi ilkelerinin şirket verilerinizi korumaya, veri kaybını önlemeye ve kişisel bilgilerle iş bilgilerini birbirinden ayırmaya nasıl yardımcı olabileceği açıklanır."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
+ms.openlocfilehash: 0ba8e40b06452002f33b09b37e399c62da54c352
 
 
 ---
@@ -24,21 +24,21 @@ ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
 ## Uygulama verilerinizi nasıl koruyabilirsiniz?
 Çalışanlarınız hem kişisel hem de iş amaçlı görevler için mobil cihazlar kullanır.  Bir yandan çalışanlarınızın üretken olmasını sağlarken diğer yandan, isteyerek ve istemeyerek yaşanabilecek veri kayıplarını önlemek isteyebilirsiniz.  Ayrıca, tarafınızdan yönetilmediği durumda dahi cihazları kullanarak erişilen şirket verilerini koruma becerisine sahip olmak istersiniz.
 
-Şirketinizin verilerini korumaya yardımcı olmak için Intune mobil uygulama yönetimi (MAM) ilkelerini kullanabilirsiniz. Intune MAM ilkeleri, herhangi bir mobil cihaz yönetimi (MDM) çözümünden bağımsız olarak kullanılabildiğinden, bunu, cihazları bir cihaz yönetimi çözümüne kaydederek veya kaydetmeden, şirketinizin verilerini korumak üzere kullanabilirsiniz. **Uygulama düzeyinde ilkeler** uygulayarak, şirket kaynaklarına erişimi kısıtlayabilir ve verileri BT departmanınızın kapsamında tutabilirsiniz.
+Şirketinizin verilerini korumaya yardımcı olmak için Intune mobil uygulama yönetimi (MAM) ilkelerini kullanabilirsiniz. Intune MAM ilkeleri, **herhangi bir mobil cihaz yönetimi (MDM) çözümünden bağımsız olarak** kullanılabildiğinden, bunu, cihazları bir cihaz yönetimi çözümüne kaydederek veya kaydetmeden, şirketinizin verilerini korumak üzere kullanabilirsiniz. **Uygulama düzeyinde ilkeler** uygulayarak, şirket kaynaklarına erişimi kısıtlayabilir ve verileri BT departmanınızın kapsamında tutabilirsiniz.
 
-MAM ilkeleri, aşağıdakilerde çalışan uygulamaları destekler:
-> [!IMPORTANT]
-> Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. MAM ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan uygulamalar için desteklenmez.
+Aşağıdaki özelliklere sahip cihazlarda çalıştırılan uygulama için MAM ilkeleri yapılandırılabilir:
 
+- **Microsoft Intune’a kayıtlı:** Bu kategorideki cihazlar normalde şirkete ait cihazlardır.
 
-- **Microsoft Intune’da yönetilen ve kaydedilen cihazlar**. Bu kategorideki cihazlar tipik olarak, şirkete ait cihazlardır.
-
--   **Yönetilen ve üçüncü taraf mobil cihaz yönetimi çözümüne kaydedilen cihazlar**.   Bu kategorideki cihazlar tipik olarak, şirkete ait cihazlardır.
+-   **Bir üçüncü taraf mobil cihaz Yönetimi (MDM) çözümde kayıtlı:**   Bu kategorideki cihazlar normalde şirkete ait cihazlardır.
 
   > [!NOTE]
   > mobil uygulama yönetimi ilkeleri, üçüncü taraf mobil uygulama yönetimi veya güvenli kapsayıcı çözümleri ile birlikte kullanılmamalıdır.
 
--   **Yönetilmeyen cihazlar**.  Bu kategorideki cihazlar genellikle, Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
+-   **Herhangi bir mobil cihaz yönetimi çözümünde kayıtlı değil:** Bu kategorideki cihazlar normalde Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
+
+> [!IMPORTANT]
+> Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. MAM ilkeleri, şirket içi Exchange, Skype Kurumsal veya SharePoint hizmetlerine bağlanan uygulamalar için desteklenmez.
 
 **MAM ilkelerini kullanmanın önemli avantajları şunlardır:**
 
@@ -133,6 +133,6 @@ Tüm Office mobil uygulamaları çoklu kimliği destekler.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

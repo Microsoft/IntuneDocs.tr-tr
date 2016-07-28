@@ -1,20 +1,20 @@
 ---
-title: "Etkinleştirme Kilidi’ni atlama ile iOS cihazlarının korunmasına yardımcı olma | Microsoft Intune"
-description: 
+title: "Cihazlarda iOS Etkinleştirme Kilidi’ni yönetme | Microsoft Intune"
+description: "Microsoft Intune, iOS 7.1 ve daha sonraki sürümlere sahip cihazlar için iPhone’umu Bul uygulamasının bir özelliği olan iOS Etkinleştirme Kilidi’ni yönetmenize yardımcı olabilir."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 496679a196dc3e84c6b16ad0d3b830c81f12631b
-ms.openlocfilehash: 7bbd761b13f110297959a036ec15cafe1396377e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: 724186bdff1ae40e956c1f1c49476d80c7e1d657
 
 
 ---
@@ -82,12 +82,16 @@ Hangi cihazların Etkinleştirme Kilidi kullandığını iki yolla görebilirsin
 
     **Şirkete Ait Tüm Cihazlar** düğümündeki bir cihazı seçerseniz ve cihaz için Etkinleştirme Kilidi etkinleştirilmişse atlama kodunu da görebilirsiniz. Bu kod kullanılarak el ile Etkinleştirme Kilidi’ni atlama komutu gönderilebilir.
 
+    > [!IMPORTANT]
+    >Intune, Etkinleştirme Kilidi için her 7 günde bir cihazlardan envanter alır. Bu nedenle, Intune konsolunda cihazların Etkinleştirme Kilidi durumu hemen görüntülenmeyebilir.
+
+
 ### Ayrıca bkz.
 [Cihazları devre dışı bırakma](retire-devices-from-microsoft-intune-management.md)
 [Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

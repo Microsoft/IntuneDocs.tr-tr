@@ -1,10 +1,10 @@
 ---
 title: "Windows ilke ayarları | Microsoft Intune"
-description: 
+description: "Kayıtlı Windows 8 ve Windows 8.1 cihazlarının ayarlarını yapılandırmak için Intune Windows genel yapılandırma ilkesini (Windows 8.1 ve üstü) kullanın."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
-ms.openlocfilehash: aa62528e588b0579669ab8d115766efd72e6f9b2
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: a70b81e490a5c55d9ce11bd8dbdfc42ab364273c
 
 
 ---
 
 # Microsoft Intune’da Windows ilke ayarları
-Kayıtlı Windows 8.1 ve Windows 8 cihazlarının ayarlarını yapılandırmak için Microsoft Intune **Windows genel yapılandırma ilkesini (Windows 8.1 ve üstü)** kullanın:
+Kayıtlı Windows 8.1 ve Windows 8 cihazlarının aşağıdaki ayarlarını yapılandırmak için Microsoft Intune **Windows genel yapılandırma ilkesini (Windows 8.1 ve üstü)** kullanın:
 
 ## Uygulanabilirlik ayarları
 
@@ -39,7 +39,7 @@ Kayıtlı Windows 8.1 ve Windows 8 cihazlarının ayarlarını yapılandırmak i
 |**Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı**|Kilidini açmak için parola gerekmeden önce cihazın ne kadar süreyle boşta kalacağını seçin.| Evet|Evet|
 |**Parola geçerlilik süresi (gün)**|Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
 |**Parola geçmişini anımsa**|Kullanıcının önceden kullanılmış parolaları yapılandırıp yapılandıramayacağını belirtir.|Evet|Evet|
-|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.|Evet|Evet|
+|**Parola geçmişini anımsa** – **Önceki parolaların yeniden kullanılmasını önle**|Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.|Evet|Evet|
 |**Resimli parolaya veya PIN’e izin ver**|Cihazda resimli parola veya PIN kullanımına izin verir. Resimli parola, resimdeki hareketlerle oturum açmasına olanak tanır. PIN, kullanıcıların 4 basamaklı bir kod kullanarak hızla oturum açmalarına olanak tanır.|Evet|Evet|
 <sup>1</sup> Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıtmayı ayarladığınızda, kullanıcılar geçerli parolaları ilke gereksinimlerine uysa bile parolalarını sıfırlamaya zorlanır.
 
@@ -120,6 +120,6 @@ Kayıtlı Windows 8.1 ve Windows 8 cihazlarının ayarlarını yapılandırmak i
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

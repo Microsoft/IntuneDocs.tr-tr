@@ -1,26 +1,27 @@
 ---
-title: "Cihazınızı el ile eşitleme| Microsoft Intune"
+title: "iOS cihazınızı el ile eşitleme | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 3cb6b8236afc227df9df34848cb81bcbe82a612e
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: bec18af35f3907299bfcbbae9c0e1998a3ce2507
 
 
 ---
 
 
-# Cihazınızı el ile eşitleme
+# iOS cihazınızı el ile eşitleme
 
 Uygulama yüklemeniz fazla uzun sürüyorsa, iOS cihazınızı el ile eşitlemek için aşağıdaki yönergeleri izleyin. Bu işlem, yüklemenin hızlanmasına yardımcı olabilir. Eşitleme özelliği yalnızca iOS için geçerlidir; Mac OS X için geçerli değildir.
 
@@ -42,6 +43,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Intune'u başlatmadan önce bilinmesi gerekenler | Microsoft Intune"
-description: 
+description: "Intune önkoşullarını ve gereksinimlerini içeren bağlantıların bulunduğu sayfa"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/08/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 09caaa76d08f99b0d455d291fbd4002289f2f11c
-ms.openlocfilehash: fe2ebc32005d04e92b93fd817981aa2a632c2288
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 77de74a7847557893c5489492ef049b324b2f137
 
 
 ---
@@ -30,7 +30,7 @@ Microsoft Intune’u kurmaya başlamadan önce, aşağıdaki gereksinimlerin her
 - [Microsoft Intune Şirket Portalı](microsoft-intune-company-portal.md)
 - [Microsoft bulut hizmetleri ve ürünleriyle Intune tümleştirmesi](integration-with-cloud-services.md)
 - [Intune ağ bant genişliğini kullanma](network-bandwidth-use.md)
-- [Microsoft Intune ile özel etki alanlarını yönetme](domain-names-for-microsoft-intune.md)
+- [Microsoft Intune ile özel etki alanları](domain-names-for-microsoft-intune.md)
 
 
 Intune’u kullanmadan önce, [Intune mobil cihaz yönetimi özelliklerini](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) de gözden geçirmek isteyebilirsiniz. Bir deneme aboneliği ile başladıysanız, bunu daha sonra tam aboneliğe dönüştürebilirsiniz. Bkz. [Microsoft Intune’u satın alma](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
@@ -42,6 +42,6 @@ Intune’u kullanmadan önce, [Intune mobil cihaz yönetimi özelliklerini](/int
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

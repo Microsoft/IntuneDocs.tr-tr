@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS uygulamalarını Uygulama Sarmalama Aracı’yla yönetim için hazırlama | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: "iOS uygulamalarını Uygulama Sarmalama Aracı’yla sarmalama | Microsoft Intune"
+description: "iOS uygulamalarınızı, uygulamanın kendi kodunda değişiklik yapmadan sarmalamayı öğrenmek için bu konu başlığı altındaki bilgileri kullanın. Mobil uygulama yönetimi ilkelerini uygulayabilmek için uygulamaları hazırlayın."
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+
 
 ---
 
@@ -47,7 +41,7 @@ Aracı indirmek için bkz. [iOS için Microsoft Intune Uygulama Sarmalama Aracı
 
 1.  [Microsoft İndirme Merkezi](https://www.microsoft.com/download/details.aspx?id=45218)’nin **iOS için Microsoft Intune Uygulama Sarmalama Aracı** sayfasından, uygulama sarmalama aracının yükleme dosyasını bir Mac bilgisayara indirin.
 
-2.  Mac bilgisayarda, **Microsoft Intune App Wrapping Tool for iOS.dmg** adlı yükleme dosyasına çift tıklayın.
+2.  Mac bilgisayarında, **Microsoft Intune App Wrapping Tool for iOS.dmg** adlı yükleme dosyasına çift tıklayın.
 
 3.  Son Kullanıcı Lisans Sözleşmesi'ni (EULA) kabul etmek için **Kabul et**’i seçin. Yükleyici bağlanır ve Mac bilgisayarda görüntülenir.
 
@@ -59,7 +53,7 @@ Aracı indirmek için bkz. [iOS için Microsoft Intune Uygulama Sarmalama Aracı
 
 1.  Mac bilgisayarda, bir Terminal penceresi açın ve dosyaları kaydettiğiniz klasöre gidin. Yürütülebilir dosya paketin içinde olduğundan, komutu aşağıdaki şekilde çalıştırmanız gerekir:
 ```
-    ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
@@ -126,7 +120,7 @@ Uygulama sarmalama aracı kullanılarak sarmalanan uygulamalar, iOS istemci ciha
 
 1.  Uygulamayı çalıştırarak sorunu yeniden oluşturun.
 
-2.  Apple tarafından sunulan [Dağıtılan iOS Uygulamalarının Hatalarını Ayıklama](https://developer.apple.com/library/ios/qa/qa1747/_index.html) yönergelerini izleyerek konsol çıkışını alın.
+2.  Apple tarafından sunulan [Dağıtılan iOS Uygulamalarının Hatalarını Ayıklama](https://developer.apple.com/library/ios/qa/qa1747/_index.html)yönergelerini izleyerek konsol çıkışını alın.
 
 3.  Konsola aşağıdaki betiği girerek Uygulama Kısıtlamaları çıkışı için kaydedilen günlükleri filtreleyin:
 
@@ -135,6 +129,7 @@ Uygulama sarmalama aracı kullanılarak sarmalanan uygulamalar, iOS istemci ciha
     ```
     Filtrelenmiş günlükleri Microsoft'a gönderebilirsiniz.
 
+    > [!NOTE]
     > Günlük dosyasında, 'yapı sürümü' öğesi, Xcode yapı sürümünü temsil eder.
 
     Sarmalanan uygulamalar, mevcut kullanıcılara da uygulama kilitlendikten sonra doğrudan cihazdan e-posta yoluyla günlükleri gönderme seçeneği sunar. Kullanıcılar, incelemeniz ve gerekiyorsa Microsoft'a iletmeniz için günlüğü size gönderebilir.
@@ -169,7 +164,7 @@ ADAL kullanan uygulamalar, uygulama için iki benzersiz tanımlayıcı elde etme
 
     2.  Azure Active Directory'de **var olan iş kolu uygulaması kaydı** 'na tıklayın.
 
-    3.  Yapılandır bölümünde, **Diğer uygulamalardaki Web API'lerine Erişimi Yapılandır**'ı seçin.
+    3.  Yapılandırma bölümünde, **Diğer uygulamalardaki Web API'lerine Erişimi Yapılandır**'ı seçin.
 
     4.  **Diğer uygulamalara izinler** bölümünde, ilk açılan listeden **Intune Mobil Uygulama Yönetimi**'ni seçin.
 
@@ -229,7 +224,7 @@ Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek
 
     1.  Apple Geliştirici Üye Merkezi’nde oturum açın.
 
-    2.  Uygulamanız için bir sağlama profili oluşturun. Yönergeler için bkz. [iOS için Intune Uygulama Sarmalama Aracı’nın Önkoşulları Nasıl Elde Edilir](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx).
+    2.  Uygulamanız için bir sağlama profili oluşturun. Yönergeler için bkz. [iOS için Intune Uygulama Sarmalama Aracı’nın Önkoşulları Nasıl Elde Edilir](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
     3.  Sağlama profilinizde, uygulamanızda sahip olduğunuz yetkilendirmelerle aynı yetkilendirmeleri etkinleştirin. Uygulamanızın geliştirilmesi sırasında belirttiğiniz kimliklerle aynı kimlikleri sağlamanız gerekir.
 
@@ -270,7 +265,7 @@ iOS için Uygulama Sarmalama Aracı yetkilendirme hatası gösterirse, aşağıd
 Bu komut, uygulamada etkinleştirilmiş olan ve yetkilendirmeler dosyasında yer almayan tüm yetenekleri kaldırır. Uygulama tarafından kullanılmakta olan yetenekleri kaldırırsanız, uygulamanız bozulabilir. Eksik yetenekleri kaldırabileceğiniz durumlara örnek olarak, tüm yeteneklere varsayılan olarak sahip olan, satıcı tarafından oluşturulmuş bir uygulama verilebilir.
 
 ```
-./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
 ## Uygulama sarmalama aracı için güvenlik ve gizlilik
@@ -296,6 +291,7 @@ Uygulama sarmalama aracını kullanırken, güvenlik ve gizlilik açısından a�
 - [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

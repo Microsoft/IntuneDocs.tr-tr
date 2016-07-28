@@ -1,9 +1,9 @@
 ---
 title: "İlke oluşturma ve uygulama yayımlama | Microsoft Intune"
-description: 
+description: "Intune aboneliğiniz için ilkeleri nasıl oluşturacağınız ve örnek bir uygulamayı nasıl yayımlayacağınız anlatılır."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d079452cb41ca8b37c292d75a606eb72ba5304df
 
 
 ---
@@ -23,11 +23,6 @@ ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
 Intune ilkeleri, mobil cihazlarda güvenlik ayarlarını denetlemenize, bilgisayarlar için Windows Güvenlik Duvarı ve Endpoint Protection ayarlarını korumanıza ve uygulamaları dağıtmanıza yardımcı olan ayarlar sağlar. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) ve [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) konu başlıkları altında daha fazla bilgi bulabilirsiniz.
 
 Intune kullanarak iki uygulama yükleme türü gerçekleştirebilirsiniz. İlki, uygulamayı yönetilen bilgisayarlara otomatik olarak dağıtan **gerekli yüklemedir**. Diğeri, bir uygulamayı veya uygulama bağlantısını kullanıcıların uygulamayı bilgisayarlarına veya mobil cihazlarına yükleyip yüklememeyi seçebilmeleri için Intune Şirket Portalı’na dağıtan **kullanılabilir yüklemedir**.
-
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
 
 Aşağıdaki adımlar, bir mobil cihaz yapılandırma ilkesi ve bir Windows bilgisayar güvenlik duvarı ilkesi ayarlamanıza ve Skype’ı mobil cihazlar kaydolduktan sonra kullanılabilir bir yükleme olarak yapılandırmanıza yardımcı olur.
 
@@ -46,6 +41,10 @@ Aşağıdaki adımlar, bir mobil cihaz yapılandırma ilkesi ve bir Windows bilg
 3.  **İlkeye Genel Bakış** sayfasındaki **Görevler** listesinde, **İlke Ekle**'yi seçin.
 
 4.  İlke listesinde, ilke oluşturmak istediğiniz platformu genişletin ve ardından **Genel Yapılandırma** > **Önerilen Ayarlarla İlke Oluştur ve Dağıt** > **İlke Oluştur**’u seçin.
+
+> [!NOTE]
+> Cihaz yapılandırma ilkeleri için önerilen ayarlar sağlanmaz çünkü aralarından seçim yapabileceğiniz birçok seçenek vardır. Özel bir cihaz yapılandırma ilkesi oluşturmanız gerekir.
+
 
 5.  **Bu ilkeyi dağıtmak istediğiniz grupları seçmeniz** istendiğinde, kullanılabilir gruplar listesinden bir grup seçin ve sonra **Ekle** > **Tamam**’ı seçin.
 
@@ -110,6 +109,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 6. adımını tamamlamış
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

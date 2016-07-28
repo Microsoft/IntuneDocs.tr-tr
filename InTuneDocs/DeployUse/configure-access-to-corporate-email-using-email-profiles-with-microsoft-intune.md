@@ -1,10 +1,10 @@
 ---
-title: "E-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma | Microsoft Intune"
-description: 
+title: "E-posta profilleriyle şirket e-postasına erişim | Microsoft Intune"
+description: "E-posta profili ayarları, mobil cihazlarda belirli e-posta istemcilerinin e-posta erişim ayarlarını yapılandırmak için kullanılır."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: Arob98
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
 
 
 ---
@@ -24,7 +24,7 @@ Birçok mobil platformda, işletim sisteminin parçası olarak gönderilen bir *
 
 Ek veri kaybı önleme (DLP) özelliğine gerek duyuyorsanız, yerel e-posta istemcileri de dahil olmak üzere tüm e-posta istemcileri için kullanıcının posta kutusuna erişimi denetleyen [Koşullu erişim](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)’i seçin.
 
-E-posta profili ayarları, mobil cihazlarda belirli e-posta istemcilerinin e-posta erişim ayarlarını yapılandırmak için kullanılır.   Çoğu mobil platformda, işletim sisteminin parçası olarak gönderilen bir *yerel* e-posta istemcisi bulunur.  Desteklenen platformlarda, kullanıcıların herhangi bir kurulum yapmadan kişisel cihazlarda şirket e-postasına erişebilmelerini sağlamak için, yerel e-posta istemcileri Microsoft Intune tarafından yapılandırılabilir.  
+E-posta profili ayarları, mobil cihazlarda belirli e-posta istemcilerinin e-posta erişim ayarlarını yapılandırmak için kullanılır. Çoğu mobil platformda, işletim sisteminin parçası olarak gönderilen bir *yerel* e-posta istemcisi bulunur.  Desteklenen platformlarda, kullanıcıların herhangi bir kurulum yapmadan kişisel cihazlarda şirket e-postasına erişebilmelerini sağlamak için, yerel e-posta istemcileri Microsoft Intune tarafından yapılandırılabilir.  
 
 BT yöneticileri veya kullanıcılar, Android ve iOS için Microsoft Outlook gibi alternatif e-posta istemcileri yüklemeyi de seçebilirler.  Bu e-posta istemcileri e-posta profillerini destekleyemeyebilir ve Microsoft Intune e-posta profilleri kullanılarak yapılandırılamaz.  
 
@@ -111,6 +111,6 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

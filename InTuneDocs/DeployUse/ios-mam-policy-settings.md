@@ -1,10 +1,10 @@
 ---
 title: "iOS MAM ilke ayarları | Microsoft Intune"
-description: 
+description: "Bu konu başlığı altında, iOS cihazları için mobil uygulama yönetimi ilkesi ayarları açıklanır."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+ms.sourcegitcommit: 09bf7d1343580f7688671bf94d83f40f0a3405c5
+ms.openlocfilehash: e0db92b6ecf7a552589ea805f6507ca59e6554b1
 
 
 ---
@@ -37,6 +37,8 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
   - **Hiçbiri**: İlkeyle yönetilen diğer uygulamalar da dahil olmak üzere hiçbir uygulamaya veri aktarmaya izin verilmez.
 
   Ayrıca, bu seçeneği **İlke ile Yönetilen Uygulamalar** veya **Hiçbiri** olarak ayarlarsanız uygulamaların içindeki verileri aramak için Spotlight Arama özelliğine imkan tanıyan iOS 9 özelliği engellenir.
+
+  **Bu ayar, mobil cihazlardaki Birlikte Aç özelliğinin kullanımını denetlemez. Birlikte Aç özelliğini yönetmek için [buraya](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)** bakın.
 
   **Varsayılan değer = İlke ile yönetilen uygulamalar**
 
@@ -112,6 +114,6 @@ iOS cihazlarında kullanıcının, kendini tanıtmak için numaralandırılmış
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

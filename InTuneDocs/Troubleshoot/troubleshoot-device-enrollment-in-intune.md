@@ -1,6 +1,6 @@
 ---
 title: "Cihaz kaydıyla ilgili sorunları giderme | Microsoft Intune"
-description: 
+description: "Cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
-ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 
 ---
@@ -160,8 +160,29 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 2.  Cihazın zaten başka bir MDM sağlayıcısıyla kaydedilmediğini ve cihaza önceden bir yönetim profili yüklenmediğini doğrulayın.
 
-
 4.  Android için Chrome’un varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
+
+### Android sertifika sorunları
+
+**Sorun**: Kullanıcı cihazda şu iletiyi alıyor: *Cihazınızda gerekli bir sertifika eksik olduğundan oturum açamazsınız.*
+
+**Çözüm**: 
+
+- Kullanıcı [bu yönergeleri](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) izleyerek eksik sertifikayı alabilir.
+- Kullanıcı sertifikayı alamazsa, ADFS sunucunuzda ara sertifikalarınız eksik olabilir. Ara sertifikalar, Android’in sunucuya güvenmesi için gereklidir. 
+
+Sertifikaları ADFS sunucusundaki veya proxy sunucularındaki ara depoya aşağıda gösterildiği gibi aktarabilirsiniz:
+
+1.  ADFS sunucusunda **Microsoft Yönetim Konsolu**’nu başlatın ve **Bilgisayar hesabı** için Sertifikalar ek bileşenini ekleyin. 
+5.  ADFS hizmetinizin kullandığı sertifikayı bulun ve üst sertifikasını görüntüleyin.
+6.  Üst sertifikayı kopyalayın ve bunu **Computer\Intermediate Certification Authorities\Certificates** altına yapıştırın.
+7.  ADFS, ADFS Şifre Çözme ve ADFS İmzalama sertifikalarınızı kopyalayın ve bunları ADFS hizmetinin Kişisel Deposuna yapıştırın.
+8.  ADFS sunucularını yeniden başlatın.
+
+Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum açabilmelidir.
+
+
+
 ## iOS sorunları
 ### Profil yüklemesi başarısız oldu
 **Sorun:** Bir kullanıcı, bir iOS cihazında **Profil yüklemesi başarısız oldu** hatasını alıyor.
@@ -285,6 +306,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

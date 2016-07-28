@@ -1,10 +1,10 @@
 ---
 title: "Uygulamaları ve verileri koruma | Microsoft Intune"
 description: 
-keywords: 
+keywords: "Bu konu başlığı altında, şirket uygulamalarınızı ve verilerinizi korumanıza yardımcı olmak için sağlanan çeşitli Intune özellikleri ve yetenekleri açıklanır."
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
 
 
 ---
@@ -39,7 +39,9 @@ Intune, şirket verilerini birden çok teknoloji katmanıyla korur.  Kimlik katm
 - PIN/geçiş kodu veya kurumsal kimlik bilgileri gerektirerek güvenli uygulama erişimi.
 - Intune Yönetilen Tarayıcı içinde tüm web bağlantılarının açık olmasını sağlama.
 
-Bu kurallar kümesine, [mobil uygulama yönetimi (MAM) ilkeleri](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) adı verilir.  MAM ilkeleri, sizin tarafınızdan yönetilen veya yönetilmeyen cihazlarda çalışan uygulamalara uygulanabilir.  Intune’a kaydedilmiş cihazlar, başka bir üçüncü taraf MDM tarafından yönetilen ve kaydedilmiş cihazlar veya çalışana ait cihazlar gibi sizin tarafınızdan yönetilmeyebilecek bir cihaz için MAM ilkeleri kullanarak şirket verilerinizi koruyabilirsiniz.
+Bu kurallar kümesine, [mobil uygulama yönetimi (MAM) ilkeleri](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) adı verilir.  MAM ilkeleri, sizin tarafınızdan yönetilen veya yönetilmeyen cihazlarda çalışan uygulamalara uygulanabilir.  
+
+**Intune’a kaydedilmiş cihazlar**, **başka bir üçüncü taraf MDM tarafından kaydedilmiş ve yönetilen cihazlar** veya çalışana ait cihazlar gibi **hiçbir MDM çözümüne kaydedilmemiş** cihazlar için MAM ilkelerini kullanarak, şirket verilerinizi koruyabilirsiniz.
 
 Bir uygulamayı bir MAM ilkesiyle ilişkilendirmek için, uygulama Microsoft Intune Uygulaması Yazılım Geliştirme Seti’ni (SDK) içermelidir veya Uygulama sarmalama aracını kullanmalıdır.
 
@@ -51,6 +53,6 @@ Veri hareketini kısıtlamaya ek olarak, bir cihaz kaybedilirse veya çalınırs
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

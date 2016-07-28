@@ -1,20 +1,20 @@
 ---
 title: "Kullanıcı ve cihazları yönetmek için grupları kullanma | Microsoft Intune"
-description: 
+description: "Gruplar çalışma alanını kullanarak grupları oluşturun ve yönetin."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 06/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
-ms.reviewer: jeffgilb
+ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
-ms.openlocfilehash: a1f6dfc7629481403c40a1ce927b588f67e5fa74
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 42328ee749517fd5abf923db35e7b13747e9f14b
 
 
 ---
@@ -153,6 +153,6 @@ Her ilkenin bir **Amaçlanan Değer** ‘i ve bir de **Durum**‘u vardır. Ama�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

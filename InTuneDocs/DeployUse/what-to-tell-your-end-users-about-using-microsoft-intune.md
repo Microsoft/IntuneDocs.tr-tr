@@ -1,9 +1,9 @@
 ---
-title: "Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler | Microsoft Intune"
-description: 
+title: "Son kullanıcılarınıza Intune’u kullanma hakkında söylemeniz gerekenler | Microsoft Intune"
+description: "Son kullanıcılarınızla paylaşacağınız bilgilerin bağlantıları"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 83f029c97cf34b6c96c6b2ef16cc65ab839c1d55
-ms.openlocfilehash: 893e896fc52e6e883fcd151db2c47030113502a2
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 1d3d218212dc4cefbbf6237fefb0ec369fb6903b
 
 
 ---
@@ -61,6 +61,6 @@ Kullanıcılarınızın Şirket Portalı’nı kullandıklarında yaşayabilece�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

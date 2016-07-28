@@ -1,20 +1,20 @@
 ---
-title: "Microsoft Intune ile Windows bilgisayarı istemcisini yükleme | Microsoft Intune"
-description: 
+title: "Windows bilgisayarı istemcisini yükleme | Microsoft Intune"
+description: "Windows bilgisayarlarınızın Microsoft Intune istemci yazılımıyla yönetilmesini sağlamanıza yardımcı olması için bu kılavuzu kullanın."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
-ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 3cb693eff7545fe4de8e5c082cfa3ab088c005db
 
 
 ---
@@ -35,8 +35,6 @@ Ardından, istemcinin yüklenmesini sağlamak için aşağıdaki yöntemlerden b
 -   [İstemci yazılımını el ile dağıtmak için](#to-manually-deploy-the-client-software)
 
 -   [İstemci yazılımını Grup İlkesi kullanarak otomatik olarak dağıtmak için](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Kullanıcılar kendi bilgisayarlarını kendileri nasıl kaydedebilir](#how-users-can-self-enroll-their-computers)
 
 -   [Microsoft Intune istemci yazılımını bir görüntünün parçası olarak yükleme](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
@@ -81,28 +79,6 @@ Bir bilgisayarı artık Intune’la yönetmeniz gerekmiyorsa, bilgisayarı devre
 3.  Yazılımı ağınızdaki bilgisayarlara dağıtmak için Grup İlkesi'ni kullanın.
 
     Otomatik olarak yazılım dağıtmak için Grup İlkesi'ni kullanma hakkında daha fazla bilgi için Windows Server belgelerinize bakın.
-
-### Kullanıcılar kendi bilgisayarlarını kendileri nasıl kaydedebilir
-Intune Şirket Portalı üzerinden, son kullanıcılar sahip oldukları her bilgisayarı kendileri kaydedebilir. Kaydedilen her bilgisayar, istemci yazılımını yüklemek için kullanılan kullanıcı hesabına bağlıdır.
-
-> [!NOTE]
-> -   Kullanıcının istemci yazılımını yükleyebilmesi için bilgisayarda yönetici olması gerekir.
-> -   Kendi kendine kayıt, istemci bilgisayarda Internet Explorer'ın yüklü olmasını gerektirir.
-> -   Kullanıcı, kendi kendine kaydettiği her bilgisayar için bir Intune lisansı kullanır.
-> -   Bilgisayarı kendi kendinize kaydetmeniz için bir iş veya okul hesabı kullanmanız gerekir. Bir Microsoft hesabı kullanarak bir bilgisayarı kendi kendinize kaydedemezsiniz.
-> -   İstemci yazılımı bir bilgisayarda zaten yüklüyse, son kullanıcı bir hata alır.
-
-### Bir bilgisayarı kendi kendinize kaydetmek için (son kullanıcılar için bilgilendirme)
-
-1.  Kaydetmek istediğiniz bilgisayardan şirket portalında oturum açın.
-
-2.   **Cihaz Ekle**'ye tıklayın.
-
-3.   **Yazılım İndir** 'e ve ardından **Çalıştır**'a tıklayın.
-
-4.  Microsoft Intune Kurulum Sihirbazı'nı başlatmak için **İleri**'ye tıklayın.
-
-5.  Kurulum sihirbazı tamamlandığında, **Son**'a tıklayın.
 
 ### Microsoft Intune istemci yazılımını bir görüntünün parçası olarak yükleme
 Aşağıdaki örnek yordamı temel olarak kullanabilir ve Intune istemci yazılımını bir işletim sistemi görüntüsünün parçası olarak bilgisayarlara dağıtabilirsiniz:
@@ -159,9 +135,10 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
 
 ### Ayrıca Bkz.
 [Microsoft Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md)
+[İstemci kurulumu sorunlarını giderme](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

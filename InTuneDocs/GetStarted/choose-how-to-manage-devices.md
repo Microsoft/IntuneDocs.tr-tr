@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+ms.sourcegitcommit: 4a7c6d8f4e47f050888e9fcf5edfa586c4a24065
+ms.openlocfilehash: 502a08c1bf49057220917d929a8ffe0b98d3de2a
 
 
 ---
@@ -69,7 +69,7 @@ Aşağıdakileri yapmak istediğinizde Intune bilgisayar istemcisini kullanmayı
 ## Exchange ActiveSync yönetimi
 Cihazları Exchange ActiveSync kullanarak da yönetebilirsiniz. Bunun için Şirket İçi Bağlayıcı'yı yüklemeniz ya da yerleşik Hizmetten Hizmete Bağlayıcı'yı kullanarak Exchange Server'a bağlanmanız gerekir.
 
-Şirket İçi Bağlayıcı'yı yüklemeye ilişkin donanım ve yazılım gereksinimleri hakkında bilgi almak için bkz. [Şirket İçi Bağlayıcı Gereksinimleri](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect).
+Şirket İçi Bağlayıcı'yı yüklemeye ilişkin donanım ve yazılım gereksinimlerini öğrenmek için bkz. [Şirket İçi Bağlayıcı Gereksinimleri](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
 
 Şirket İçi Bağlayıcı veya Hizmetten Hizmete Bağlayıcı’yı Exchange ile kullanma hakkında bilgi edinmek için bkz. [Exchange ActiveSync ve Microsoft Intune ile mobil cihaz yönetimi](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
@@ -80,6 +80,6 @@ Artık cihazlarınızı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

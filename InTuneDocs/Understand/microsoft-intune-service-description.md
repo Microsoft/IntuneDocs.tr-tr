@@ -1,6 +1,6 @@
 ---
 title: "Hizmet Açıklaması | Microsoft Intune"
-description: 
+description: "Intune, Windows bilgisayarlarla iOS, Mac OS X, Android ve Windows mobil cihazları yönetmenize yardımcı olan bulut tabanlı bir hizmettir."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
-ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 98a5013ef42732e6a1a541e128986bedbb004611
 
 
 ---
@@ -34,7 +34,7 @@ Mobil cihazlarda yapılandırabileceğiniz ayarların listesi için bkz.:
 
 -   [Microsoft Intune'da mobil cihaz yönetimi özellikleri](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
--   [Configuration Manager'da Mobil Cihazlar için genel ayarlar](https://technet.microsoft.com/en-us/library/dn376523.aspx)
+-   [Configuration Manager'da Mobil Cihazlar için genel ayarlar](https://technet.microsoft.com/library/dn376523.aspx)
 
 System Center 2012 R2 Configuration Manager hakkında bilgi için bkz. [System Center 2012 Configuration Manager için Belge Kitaplığı](https://technet.microsoft.com/library/gg682041.aspx).
 
@@ -45,9 +45,10 @@ Bu hizmet güncelleştirmelerinin sıklığını ve hizmetin kullanımını etki
 
 Intune hizmetindeki değişiklikler hakkında bilgi edinmek için bkz. [Microsoft Intune’daki yenilikler](/intune/deploy-use/Whats-new-in-microsoft-intune.md). [Microsoft Intune Blogu](http://blogs.technet.com/b/microsoftintune/)’nda da hizmetteki değişiklikler tartışılır ve Intune’dan en iyi şekilde yararlanmanıza olanak tanıyacak yararlı ipuçları sağlanır.
 
-Önemli hizmet güncelleştirmeleri de [Office 365 yönetim portalı](https://portal.office.com/Admin/Default.aspx) İleti Merkezi’nde size bildirilir. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz.
+Önemli hizmet güncelleştirmeleri de [Office 365 yönetim portalı](https://portal.office.com/Admin/Default.aspx) İleti Merkezi’nde size bildirilir. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz.
 
-> [!NOTE] [Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) Intune hizmet durumunu izleyebilirsiniz. Sol bölmede **Hizmet Durumu**’nu seçin.  
+> [!NOTE]
+> [Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) Intune hizmet durumunu izleyebilirsiniz. Sol bölmede **Hizmet Durumu**’nu seçin.  
 
 Microsoft’un Intune hizmeti hakkında sağladığı bildirim türleri şunlardır:
 -   Hizmet değişikliklerini planlamanıza yardımcı olmak için, değişikliğin etkisine bağlı olarak, hizmet yükseltmesinden en az 30-90 gün önce. Bu, bildirim panosu uyarıları gibi ürün içi iletişim kanalları kullanılarak yapılır. Bu değişiklikler şunlar olabilir:
@@ -82,6 +83,6 @@ Intune hakkında daha fazla bilgi edinmek için bu kaynakları kullanın:
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

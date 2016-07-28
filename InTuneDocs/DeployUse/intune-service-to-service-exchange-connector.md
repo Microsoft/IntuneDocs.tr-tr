@@ -1,20 +1,20 @@
 ---
-title: "Barındırılan Exchange için Microsoft Intune Exchange bağlayıcısını yapılandırma | Microsoft Intune"
-description: 
+title: "Barındırılan Exchange için Exchange bağlayıcısı | Microsoft Intune"
+description: "Exchange ActiveSync mobil cihaz yönetimini (MDM) desteklemek için Intune’u Office 365 Exchange hizmetine bağlayın."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
 
 
 ---
@@ -58,12 +58,12 @@ Hizmetten Hizmete Bağlayıcısı otomatik olarak yapılandırılır ve Barınd�
 
 ## Exchange bağlantınızı doğrulama
 
-Exchange Bağlayıcısı’nı başarıyla yapılandırdıktan sonra, Intune yönetim konsolunda **YÖNETİCİ** çalışma alanını seçin, **Mobile Cihaz Yönetimi** > **Microsoft Exchange**’e gidin, sonra da sizin sağladığınız ve **Exchange Bağlayıcısı Bilgileri** altında gösterilen ayrıntıları doğrulayın.
+Exchange Bağlayıcısı’nı başarıyla yapılandırdıktan sonra, [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Yönetici**’yi seçin, **Mobile Cihaz Yönetimi** > **Microsoft Exchange**’e gidin, sonra da sizin sağladığınız ve **Exchange Bağlayıcısı Bilgileri** altında gösterilen ayrıntıları doğrulayın.
 
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Sertifika profillerini kullanarak şirket kaynaklarına erişimi etkinleştir |Microsoft Intune"
-description: 
+title: "Kaynak erişimi için sertifika profilleri |Microsoft Intune"
+description: "Her kullanıcı cihazına yüklenen bir sertifikayla Güvenli VPN, Wi-Fi ve e-posta erişimi."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c8158b6a54347f6bec1008142eed44daca8946d0
 
 
 ---
@@ -47,7 +47,7 @@ Her platform için ayrı bir profil oluşturmanız gerekir. Profili oluştururke
 > -    Kuruluş sertifika yetkiliniz yoksa bir tane oluşturmanız gerekir.
 >- Cihaz platformlarınıza bağlı olarak Basitleştirilmiş Sertifika Kayıt Protokolü (SCEP) profili kullanmaya karar verirseniz ayrıca bir Ağ Cihazı Kayıt Hizmeti (NDES) sunucusunu yapılandırmanız gerekir.
 >-  SCEP veya .PFX profilleri kullanmayı planlıyorsanız Microsoft Intune Sertifika Bağlayıcısı'nı indirip yapılandırmanız gerekir.
-> Tüm bunların yapılandırılması [Sertifika altyapısını yapılandırma](configure-certificate-infrastructure.md) konusunda açıklanmaktadır.
+> Bunların tümünün yapılandırması, [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md) ve [PFX için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-pfx.md) konularında açıklanır.
 
 ### Sonraki adımlar
 - [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ Her platform için ayrı bir profil oluşturmanız gerekir. Profili oluştururke
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

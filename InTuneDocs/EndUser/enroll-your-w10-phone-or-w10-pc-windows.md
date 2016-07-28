@@ -1,9 +1,9 @@
 ---
-title: "Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune'a kaydetme| Microsoft Intune"
-description: 
+title: "Windows 10 cihazınızı Intune’a kaydetme | Microsoft Intune"
+description: "Windows 10 mobil veya masaüstü cihazının Intune’a nasıl kaydedildiği açıklanır."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: 543f0acd6fb3691ba31e9da6fec49b3f30f67613
+ms.sourcegitcommit: 018d8936fe9158ebd85920cac978844e6949fb64
+ms.openlocfilehash: fff0a6205e7f9b02886a28c1266cf756ff0fc597
 
 
 ---
@@ -68,6 +68,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

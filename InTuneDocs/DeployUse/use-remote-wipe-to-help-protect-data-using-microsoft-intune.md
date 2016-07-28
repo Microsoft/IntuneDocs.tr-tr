@@ -13,8 +13,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa4dc77c66a34d9d50b83d072ed5e03674b4d293
-ms.openlocfilehash: bfb82684d8c4347297c3ed8659cc44e70ad4706c
+ms.sourcegitcommit: 06f144693fe4e535b2ed423c95f5431e391f316f
+ms.openlocfilehash: 077f35afc5084b0381fd330236e45d62e1242484
 
 
 ---
@@ -29,6 +29,9 @@ Aynı cihazlarda olduğu gibi, bir noktada bilgisayarlara ve mobil cihazlara da�
 
 
 **Tam temizleme**, tüm şirket ve kullanıcı verileriyle ayarlarını kaldırarak cihazı fabrika varsayılan ayarlarına geri yükler. Cihaz Intune’dan kaldırılır. Cihazı yeni bir kullanıcıya vermeden önce sıfırlamak için ya da cihazın kaybolması veya çalınması durumunda, tam temizleme yararlı olur.  **Tam temizlemeyi seçerken dikkatli olun. Cihazdaki veriler kurtarılamaz**.
+
+> [!Warning]
+> 4 GB’tan az RAM’i olan Windows 10 RTM cihazları (Windows 10 sürüm 1511’den önceki cihazlar), temizlendiğinde erişilemez duruma gelebilir. Yanıt vermemeye başlayan Windows 10 cihazına erişmek için, cihazı bir USB sürücüsünden yeniden başlatabilir veya benzer bir geçici çözüm kullanabilirsiniz.
 
 ## Seçmeli temizleme
 
@@ -55,7 +58,7 @@ Aynı cihazlarda olduğu gibi, bir noktada bilgisayarlara ve mobil cihazlara da�
 |Yönetilmeyen Google Play uygulamaları|Uygulamalar ve veriler yüklü kalır|Uygulamalar ve veriler yüklü kalır|
 |Yönetilmeyen iş kolu uygulamaları|Uygulamalar ve veriler yüklü kalır|Uygulamalar kaldırılır ve sonuç olarak uygulamada bulunan veriler kaldırılır. Uygulama dışındaki hiçbir veri (örn. SD kart) kaldırılmaz.|
 |Yönetilen Google Play uygulamaları|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (ör. SD kart) MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ancak kaldırılmaz.|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (ör. SD kart) MAM şifrelemesi ile korunan veriler şifrelenmiş olarak kalır, ancak kaldırılmaz.|
-|Yönetilen iş kolu uygulamaları|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (ör. SD kart) MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ancak kaldırılmaz.|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (ör. SD kart) MAM şifrelemesi ile korunan veriler şifrelenmiş olarak kalır, ancak kaldırılmaz.|
+|Yönetilen iş kolu uygulamaları|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (ör. SD kart) MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ancak kaldırılmaz.|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (ör. SD kart) MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ancak kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|
 |Wi-Fi ve VPN profili ayarları|Kaldırılır|Kaldırılır|
 |Sertifika profili ayarları|Sertifikaları iptal edilir, ancak kaldırılmaz.|Sertifikalar kaldırılır ve iptal edilir.|
@@ -139,6 +142,6 @@ Devre dışı bırakılan veya silinen cihazlara ve eylemi gerçekleştiren kiş
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

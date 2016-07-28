@@ -1,9 +1,9 @@
 ---
 title: "PFX için sertifika altyapısını yapılandırma |Microsoft Intune|"
-description: 
+description: ".PFX sertifika profillerini oluşturun ve dağıtın."
 keywords: 
 author: nbigman
-manager: jeffgilb
+manager: Arob98
 ms.date: 05/16/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6edb37708d26033358af30c47e955b20caedb6fd
-ms.openlocfilehash: 51def9dc80043bbf5a71578fb44cae9259fd48b1
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: f654dba31198115851feeeec90f04b8ad767e549
 
 
 
 ---
 # Sertifika altyapısını yapılandırma
-Bu konu başlığı altında, sertifika profillerini oluşturmak ve dağıtmak için nelere ihtiyacınız olduğu açıklanır.
+Bu konu başlığı altında, .PFX sertifika profillerini oluşturmak ve dağıtmak için nelere ihtiyacınız olduğu açıklanır.
 
 Kuruluşunuzda sertifika tabanlı kimlik doğrulamaları yapmak için, bir Kuruluş Sertifika Yetkiliniz olmalıdır.
 
@@ -158,6 +158,6 @@ Artık, [Sertifika profillerini yapılandırma](Configure-Intune-certificate-pro
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

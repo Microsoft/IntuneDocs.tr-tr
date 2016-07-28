@@ -1,6 +1,6 @@
 ---
 title: "Endpoint Protection sorunlarını giderme | Microsoft Intune"
-description: 
+description: "Microsoft Intune Endpoint Protection’ı kullanarak sorunları çözün."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,13 +13,13 @@ ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
-ms.openlocfilehash: 0f4d8c49eb87ef94a1ddfdebd7dcd40c41b9a5a0
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 40d4c602064f0e16d541948ceb284dcde50e2339
 
 
 ---
 
-# Microsoft Intune’da Endpoint Protection sorunlarını giderme
+# Troubleshoot Endpoint Protection in Microsoft Intune
 
 Microsoft Intune Endpoint Protection kullanırken karşılaşabileceğiniz sorunları gidermek için bu bölümdeki bilgileri kullanın.
 
@@ -49,6 +49,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Intune değerlendirme abonelikleri için diğer seçenekler ve ek özellikler | Microsoft Intune"
-description: 
+title: "Intune değerlendirmeleri için diğer seçenekler ve ek özellikler | Microsoft Intune"
+description: "Intune’un 30 günlük ücretsiz değerlendirmesi kaydolurken bilmeniz gereken uyarılar, bildirimler, raporlar ve genel Intune özellikleri açıklanır."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0574891a021d43f54ef78ded20d6cf19c18eb25b
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 30ed78b967d8669999f59046d610eca6c78260a1
 
 
 ---
@@ -58,6 +58,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesini tamamladınız
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

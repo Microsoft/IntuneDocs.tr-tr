@@ -1,20 +1,20 @@
 ---
-title: "iOS uygulamalarını mobil uygulama yapılandırma ilkeleriyle yapılandırma | Microsoft Intune"
-description: 
+title: "iOS mobil uygulama yapılandırma ilkelerini kullanma | Microsoft Intune"
+description: "Kullanıcı bir iOS uygulamasını çalıştırdığında gerekebilecek ayarları sağlamak için, Intune’daki mobil uygulama yapılandırma ilkelerini kullanın."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: faf65ddbb4772f8c0ce0a4125bb108b3b1bcfb5c
 
 
 ---
@@ -137,6 +137,6 @@ Bir mobil uygulama yapılandırma dosyası oluşturduğunuzda bu biçimi kullana
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

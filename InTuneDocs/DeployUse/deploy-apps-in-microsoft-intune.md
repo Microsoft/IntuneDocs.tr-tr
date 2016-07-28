@@ -1,10 +1,10 @@
 ---
 title: "Uygulamaları dağıtma | Microsoft Intune"
-description: 
+description: "Bu konu başlığı altındaki bilgileri, uygulamaları Microsoft Intune’la dağıtmanıza yardımcı olması için kullanın."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+ms.sourcegitcommit: 5ef1d2d69acfeea9670324f580d33b191001ffa9
+ms.openlocfilehash: 8ab2517a11ecb6ae5395814472dfbb3e83da132b
 
 ---
 # Microsoft Intune'da uygulamaları dağıtma
 
-Bu konu başlığı altındaki bilgileri, Microsoft Intune uygulamalarını dağıtmanıza yardımcı olması için kullanın.
+Bu konu başlığı altındaki bilgileri, uygulamaları Microsoft Intune’la dağıtmanıza yardımcı olması için kullanın.
 
 
 ## Uygulamayı dağıtma
-Bu yordamda, uygulamayı seçilen cihazlara veya kullanıcılara dağıtacaksınız.
+Bu yordamda, uygulamayı seçilen cihaz veya kullanıcı gruplarına dağıtacaksınız.
 
 ### Uygulamayı dağıtmak için
 
@@ -52,11 +52,11 @@ Bu yordamda, uygulamayı seçilen cihazlara veya kullanıcılara dağıtacaksın
 ## Örnek
 
 Bu örnekte, uygulamayı bir iOS cihazına **Kullanılabilir** olarak dağıtıyorsunuz.
-Uygulama kullanıcıların cihazında şirket portalında görüntülenir ve kullanıcılar uygulamayı oradan yükleyebilir. Örneğin bu ekran görüntüsünde, iOS için Bing uygulaması **Dış Bağlantı** yükleme türü kullanılarak dağıtılmıştır, özel bir simgesi vardır ve **Bunu özel bir uygulama olarak görüntüle ve şirket portalında vurgula** seçeneği belirtilmiştir.
-    ![iOS kullanılabilir uygulaması](./media/available-install-on-iOS.png)
+Uygulama kullanıcıların cihazında şirket portalında görüntülenir ve kullanıcılar uygulamayı oradan yükleyebilir. Örneğin bu ekran görüntüsünde, iOS için Bing uygulaması **Dış Bağlantı** yükleme türü kullanılarak dağıtılmıştır, özel bir simgesi vardır ve **Bunu özel bir uygulama olarak görüntüle ve şirket portalında vurgula** seçeneği belirtilmiştir.  
+![iOS kullanılabilir uygulaması](./media/available-install-on-iOS.png)
 
-Uygulamayı bir iOS cihazına **Gerekli** olarak dağıttıysanız, kullanıcı bir uygulamanın yüklemeye hazır olduğuna ilişkin bir bildirim alır. Örneğin bu ekran görüntüsünde, iOS için Çalışma Klasörleri uygulaması **Uygulama mağazasından yönetilen iOS uygulaması** yükleme türü kullanılarak dağıtılmıştır.
-    ![iOS gerekli uygulaması](./media/iOS-Required-install.PNG)
+Uygulamayı bir iOS cihazına **Gerekli** olarak dağıttıysanız, kullanıcı bir uygulamanın yüklemeye hazır olduğuna ilişkin bir bildirim alır. Örneğin bu ekran görüntüsünde, iOS için Çalışma Klasörleri uygulaması **Uygulama mağazasından yönetilen iOS uygulaması** yükleme türü kullanılarak dağıtılmıştır.  
+![iOS gerekli uygulaması](./media/iOS-Required-install.PNG)
 
 ## Sonraki adımlar
 
@@ -64,6 +64,6 @@ Uygulamayı dağıttıktan sonra, ilerleme durumunu izlemek istersiniz. Daha faz
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

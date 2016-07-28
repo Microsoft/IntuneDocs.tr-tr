@@ -1,20 +1,20 @@
 ---
 title: "Windows bilgisayarlar için Endpoint Protection | Microsoft Intune"
-description: 
+description: "Kötü amaçlı yazılım tehditlerine karşı gerçek zamanlı koruma getiren Endpoint Protection ile, yönetilen bilgisayarlarınızın güvenliğini sağlayın."
 keywords: 
 author: NathBarn
-manager: muhosabe
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
-ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 2e0abfb92ef9ecc302e686ea9f30584b9f38d3b0
 
 
 ---
@@ -189,6 +189,6 @@ Daha fazla yardım ve destek için bkz. [Microsoft Intune Endpoint Protection’
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

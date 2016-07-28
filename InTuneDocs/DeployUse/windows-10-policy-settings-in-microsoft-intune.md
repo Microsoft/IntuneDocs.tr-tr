@@ -1,10 +1,10 @@
 ---
 title: "Windows 10 ilke ayarları | Microsoft Intune"
-description: 
+description: "Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında yerleşik ve özel ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 01356d08257cf381d1a981f749702800c173de33
+ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 
 
 ---
 
 # Microsoft Intune’da Windows 10 ilke ayarları
 
-Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın.
+Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında yerleşik ve özel ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın.
+
+> [!IMPORTANT]
+> Windows 10 bilgisayarlarını iki yolla yönetebilirsiniz: bunları kaydederek veya Intune bilgisayar istemcisi yazılımını yükleyerek. Her yöntem farklı özellikler sunar. (Daha fazla bilgi için bkz. [Cihazların nasıl yönetileceğini seçme](/intune/get-started/choose-how-to-manage-devices).)
+> Windows 10 bilgisayarlarınızı Intune bilgisayar istemcisi yazılımıyla yönettiğinizde, bu konu başlığı altında ayrıntıları verilen ilkeleri ve ayarları kullanamazsınız. Bu ayarların uygulanması için, Windows 10 cihazlarınızın Intune’a kayıtlı olması gerekir.
 
 ## Genel yapılandırma ilkesi ayarları
 
-Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarlarını yapılandırmak isterseniz, Windows 10 için Microsoft Intune **genel yapılandırma ilkesini** kullanın. Windows 10 bilgisayarlarını Intune istemci yazılımıyla yönetirken bu ilkeyi kullanamazsınız.
+Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarlarını yapılandırmak isterseniz, Windows 10 için Microsoft Intune **genel yapılandırma ilkesini** kullanın. 
 
 
 ### Parola
@@ -161,7 +166,7 @@ Tüm ayarlar yalnızca Windows 10 masaüstüne yöneliktir.
 |**İmza güncelleştirme aralığı**|Defender’ın yeni imza dosyalarını denetleme aralığını belirtin.|
 |**Bulut korumasına izin ver**|Microsoft Etkin Koruma Hizmeti’nin yönettiğiniz cihazlardan kötü amaçlı yazılım etkinliğiyle ilgili bilgi almasına izin verin veya bunu engelleyin. Bu bilgi gelecekte hizmeti geliştirmek için kullanılır.|
 |**Kullanıcılardan örnek göndermelerini iste**|Kötü amaçlı olup olmadıklarını saptamak için Microsoft tarafından daha fazla çözümlenmesi gerekebilecek dosyaların Microsoft’a otomatik olarak gönderilip gönderilmeyeceğini denetler.|
-|**Olası İstenmeyen Uygulama Algılama**|Bu ayar, kayıtlı Windows masaüstü bilgisayarlarını, Windows Defender tarafından olası istenmeyen yazılım şeklinde sınıflandırılan yazılımları çalıştırmaya karşı korumak üzere kullanılabilir. Bu uygulamaların çalıştırılmasına karşı koruma sağlayabilir veya istenmeyebilecek bir uygulama yüklendiğinde raporlanması için denetim modunu kullanabilirsiniz.|
+|**Olası İstenmeyen Uygulama Algılama**|Bu ayar, kayıtlı Windows masaüstü cihazlarını, Windows Defender tarafından olası istenmeyen yazılım şeklinde sınıflandırılan yazılımları çalıştırmaya karşı korumak üzere kullanılabilir. Bu uygulamaların çalıştırılmasına karşı koruma sağlayabilir veya istenmeyebilecek bir uygulama yüklendiğinde raporlanması için denetim modunu kullanabilirsiniz.|
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak dosya ve klasörler**|Dışlama listesinde **C:\Yol** veya **%ProgramFiles%\Yol\dosyaadı.exe** gibi bir veya birden çok dosya ve klasör ekleyin. Bu dosya ve klasörler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.|
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak dosya uzantıları**|Dışlama listesine **jpg** veya **txt** gibi bir veya birden çok dosya uzantısı ekleyin. Bu uzantıya sahip dosyaların hiçbiri gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.|
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak işlemler**|Dışlama listesine **.exe**, **.com** veya **.scr** türünde bir veya birden çok işlem ekleyin. Bu işlemler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.| 
@@ -327,6 +332,6 @@ Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kay
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

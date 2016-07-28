@@ -1,6 +1,6 @@
 ---
 title: "MAM ilkelerini oluşturma ve dağıtma | Microsoft Intune"
-description: 
+description: "Mobil uygulama yönetimi ilkelerini oluşturmak ve dağıtmak için, bu konu başlığı altında verilen adım adım yönergeleri kullanın."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
-ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
-ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+translationtype: Human Translation
+ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
+ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
 
 
 ---
@@ -26,10 +27,12 @@ Bu konu başlığı altında, **Azure portalında** MAM ilkesi oluşturma işlem
 - Üçüncü taraf MDM çözümleri tarafından yönetilen cihazlar
 - Hiçbir MDM çözümü tarafından yönetilmeyen cihazlar (KGC).
 
-Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilen cihazlar için olan uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
+>[!IMPORTANT]
+
+> Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilen cihazlar için olan uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
 Intune yönetici konsolunda oluşturulan MAM ilkeleri, Azure portalına aktarılamaz.  MAM ilkeleri, Azure portalında yeniden oluşturulmalıdır.
 
->[!IMPORTANT]
+
 > Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur. Hem Intune yönetim konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalındaki ilke uygulanır ve kullanıcılara bu ilke dağıtılır.
 
 Android ve iOS platformlarında desteklenen ilke ayarları listesini görmek için, aşağıdakilerden birini seçin:
@@ -155,8 +158,8 @@ Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama otu
 iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerden birini seçin:
 
 > [!div class="op_single_selector"]
-  - [iOS ilkeleri](ios-mam-policy-settings.md)
-  - [Android ilkeleri](android-mam-policy-settings.md)
+- [iOS ilkeleri](ios-mam-policy-settings.md)
+- [Android ilkeleri](android-mam-policy-settings.md)
 
 ## Sonraki adımlar
 [Uyumluluğu ve kullanıcı durumunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
@@ -166,6 +169,6 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerde
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

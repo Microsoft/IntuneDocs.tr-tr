@@ -1,10 +1,10 @@
 ---
-title: "Microsoft Intune ile iOS cihazları için Kurulum Yardımcısı kaydı | Microsoft Intune"
-description: 
+title: "iOS cihazlarını Kurulum Yardımcısı ile kaydetme | Microsoft Intune"
+description: "Şirkete ait iOS cihazlarını fabrika ayarlarına sıfırlamak ve Kurulum Yardımcısı’nı çalıştırmaya hazırlamak için, Apple Configurator aracını kullanarak kaydedin."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
-ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
 
 
 ---
@@ -27,6 +27,7 @@ Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.mi
 Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve cihazın yeni kullanıcısı tarafından kuruluma hazırlayabilirsiniz.  Bu yöntem, kurumsal kayıt kurulumu için iOS cihazını USB ile bir Mac bilgisayara bağlamanızı gerektirir ve Apple Configurator 2.0 kullandığınızı varsayar. Çoğu senaryoda, Intune Şirket Portalı uygulamasını etkinleştirmek için iOS cihazına uygulanmış olan ilkenin *kullanıcı benzeşimi* içermesi gerekir.
 
 **Önkoşullar**
+* APNs sertifikası yüklenerek [iOS kaydı etkinleştirilir](set-up-ios-and-mac-management-with-microsoft-intune.md)
 * iOS cihazlara fiziksel erişim - Parola koruması olmadan cihaz yapılandırması kaldırılmış olmalıdır (fabrika ayarı)
 * Cihaz seri numaraları - [iOS seri numarası alma](https://support.apple.com/en-us/HT204308)
 * USB bağlantı kabloları
@@ -36,8 +37,6 @@ Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve
 1.  **Mobil cihaz grubu oluşturma** (İsteğe bağlı) Şirketiniz mobil cihaz yönetimine yardımcı olması için cihaz grupları oluşturulmasını gerektiriyorsa, bu grupları oluşturun. [Microsoft Intune ile kullanıcı ve cihazları yönetmek için grupları kullanın](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 2.  **Cihazlar için profil oluştur** Cihaz kayıt profili, bir cihaz grubuna uygulanan ayarları tanımlar. Henüz yapmadıysanız, Apple Configurator kullanarak kaydedilmiş iOS cihazları için bir cihaz kayıt profili oluşturun.
-
-    ###### Bir profil oluşturmak için
 
     1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Şirkete Ait Cihazlar**’a gidin ve **Ekle…**’ye tıklayın.
 
@@ -62,8 +61,7 @@ Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve
 
         -   **Cihaz grubu ön ataması** – Bu profili dağıtan tüm cihazlar başlangıçta bu gruba ait olur. Cihazları kayıttan sonra yeniden atayabilirsiniz.
 
-        >[!Important]
-        >Grup atamaları, Intune'dan Azure Active Directory'ye taşınır. [Daha fazlasını öğrenin](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **Cihaz Kayıt Programı** - Apple Cihaz Kayıt Programı (DEP), Kurulum Yardımcısı kaydıyla birlikte kullanılamaz. Düğmenin **kapalı** olarak ayarlandığından emin olun.
 
@@ -153,6 +151,6 @@ Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

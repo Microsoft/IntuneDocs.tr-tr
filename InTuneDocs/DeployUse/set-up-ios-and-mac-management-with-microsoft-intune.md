@@ -1,28 +1,26 @@
 ---
 title: "iOS ve Mac yönetimini ayarlama | Microsoft Intune"
-description: 
+description: "Microsoft Intune’la, iPad, iPhone ve Mac OS X cihazları gibi iOS cihazlarınız için mobil uygulama yönetimini (MDM) etkinleştirin."
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb44d53c87bec1b6892bf49a65f3df684199ed08
-ms.openlocfilehash: 9766b6e64259d809b04e6f6004c25ed88ad72659
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f393f2f34658d9c4c341f1c961e9dd527fcec4b1
 
 
 ---
 
 # iOS ve Mac yönetimini ayarlama
-Microsoft Intune kullanarak, iPhone, iPad ve Mac kullanıcılarının şirket e-postasına ve uygulamalarına erişmesini sağlamak için iOS ve Mac OS X cihaz kaydında KCG’yi ("kendi cihazını getir") etkinleştirebilirsiniz. Etkinleştirildikten sonra, kullanıcılar Şirket Portalı uygulamasını yükleyebilir ve Intune yönetim konsolu kullanılarak ilkede cihazları hedeflenebilir.
-
-iOS cihazlarını Intune’la yönetebilmeniz için, önce cihazların Intune’la iletişim kurabilmesi gerekir. Apple, Apple Anında İletilen Bildirim Servisi (APNs) sertifikasını içeri aktararak Intune’la bir güven ilişkisi kurulmasını gerektirir.
+Intune iPad’ler, iPhone’lar ve Mac OS X cihazları için mobil uygulama yönetimini etkinleştirir ve şirket e-postasıyla uygulamalarına erişim sağlar. Intune’un iOS ve Mac cihazlarını yönetebilmesi için Apple Anında İletim Bildirimi hizmeti (APNs) sertifikası gerekir. Sertifika Intune’a eklendikten sonra, kullanıcılar cihazlarını kaydetmek için Şirket Portalı uygulamasını yükleyebilir veya yönetici [şirkete ait iOS cihazı yönetimini](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) ayarlayabilir.
 
 1.  **Intune’u ayarlama**<br>
     Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
@@ -50,6 +48,6 @@ iOS cihazlarını Intune’la yönetebilmeniz için, önce cihazların Intune’
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
