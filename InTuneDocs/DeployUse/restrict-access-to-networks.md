@@ -3,59 +3,61 @@ title: "Cisco ISE ile ağlara erişimi kısıtlama| Microsoft Intune"
 description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olması adına, Intune ile Cisco ISE kullanabilirsiniz."
 keywords: 
 author: nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
+ms.reviewer: muhosabe
+ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 78945498a951e7b897164ae6f33c4e87d521ca5b
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: c516cffe416559d1d239010605227eda76c32c1b
 
 
 ---
 
 # Microsoft Intune ile Cisco ISE kullanma
-Intune’un Cisco ISE ile entegrasyonu, Intune cihaz kaydı ve uyum durumunu kullanarak ISE ortamınızda ağ ilkeleri yazmanızı sağlar. Bu ilkeler, şirket ağınıza erişimin, Intune tarafından yönetilen ve Intune ilkeleriyle uyumlu cihazlarla kısıtlanmasını sağlamaya yarayabilir. 
+Intune’un Cisco ISE ile entegrasyonu, Intune cihaz kaydı ve uyum durumunu kullanarak ISE ortamınızda ağ ilkeleri yazmanızı sağlar. Bu ilkeler, şirket ağınıza erişimin, Intune tarafından yönetilen ve Intune ilkeleriyle uyumlu cihazlarla kısıtlanmasını sağlamaya yarayabilir.
 
 ## Yapılandırma
 
-Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar yapmanız gerekmez. Intune kiracınıza erişmek için, Cisco ISE sunucunuza izinler sağlamanız gerekir ve bu yapıldığında, kurulumun kalan kısmı Cisco ISE sunucunuzda gerçekleşir. Bu makalede, ISE sunucunuza, Intune kiracınıza erişim izinleri sağlamayla ilgili yönergeler sağlanır. 
+Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar yapmanız gerekmez. Intune kiracınıza erişmek için, Cisco ISE sunucunuza izinler sağlamanız gerekir ve bu yapıldığında, kurulumun kalan kısmı Cisco ISE sunucunuzda gerçekleşir. Bu makalede, ISE sunucunuza, Intune kiracınıza erişim izinleri sağlamayla ilgili yönergeler sağlanır.
 
 ### 1. Adım: Sertifikaları yönetme
-1. Azure Active Directory (AAD) konsolunda, sertifikayı dışa aktarın. 
+1. Azure Active Directory (AAD) konsolunda, sertifikayı dışa aktarın.
 
     #### Internet Explorer 11
-        
+
     a. Internet Explorer'ı yönetici olarak çalıştırın ve AAD konsoluna oturum açın.
-  
+
     b. Adres çubuğunda kilit simgesini seçin ve seçin **Sertifikaları görüntüle**’yi seçin
-    
+
     c. Sertifika özelliklerinin **Ayrıntılar** sekmesinde, **Dosyaya kopyala**’yı seçin.
 
-    d. **Sertifika dışa aktarma sihirbazı** karşılama sayfasında, **İleri**’yi seçin. 
+    d. **Sertifika dışa aktarma sihirbazı** karşılama sayfasında, **İleri**’yi seçin.
 
     e. **Dışa aktarma dosya biçimi** sayfasında, varsayılan **DER ile kodlanmış ikili x.509 (.CER)** ayarını bırakın ve **İleri**’yi seçin.  
 
     f. **Dışa aktarılacak dosya** sayfasında, dosyanın kaydedileceği bir konum seçmek üzere **Gözat**’ı seçin ve bir dosya adı sağlayın. Dışa aktarılacak bir dosya seçiyor gibi gözükseniz de, aslında dışa aktarılan sertifikanın kaydedileceği dosyayı yeniden adlandırıyorsunuz. **İleri** &gt; **Son**’u seçin.
 
     #### Safari
-    
+
     a. AAD konsoluna oturum açın.
 
     b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
-    
+
     c. **Sertifika görüntüle** &gt; **Ayrıntılar**’ı seçin.
 
     d. Sertifikayı seçin ve ardından **Dışa aktar**’ı seçin.  
 
 
-> [!IMPORTANT]
-> Sertifikanın son kullanma tarihini denetleyin, bunun süresi dolduğunda yeni bir sertifika dışa aktarmanız ve içe aktarmanız gerekecektir.
+    > [!IMPORTANT]
+    > Sertifikanın son kullanma tarihini denetleyin, bunun süresi dolduğunda yeni bir sertifika dışa aktarmanız ve içe aktarmanız gerekecektir.
 
-    
+
 
 2. ISE konsolunda, Intune sertifikasını (dışa aktardığınız dosya) **Güvenilen Sertifikalar** deposuna aktarın.
 3. ISE konsolunuzda, **Yönetim** > **Sertifikalar** > **Sistem Sertifikaları**’na gidin.
@@ -74,7 +76,7 @@ Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar
 6. Uygulamanıza, Microsoft Graph ve Microsoft Intune API için izinler sağlayın.
     1. Microsoft Graph için, aşağıdakileri seçin
         - **Uygulama izinleri**: Dizin verilerini oku
-        - **Temsilci izinleri**: 
+        - **Temsilci izinleri**:
             - Kullanıcının verilerine istendiği zaman eriş
           - Kullanıcıların oturumunu açma
    2. Microsoft Intune API'si için, **Uygulama izinlerinde**, **Intune'dan cihaz durumunu ve uyumluluğunu al**’ı seçin.
@@ -88,8 +90,8 @@ Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar
 |Kodunuzu, İstemci kimliğinizle güncelleştirme|İstemci Kimliği|
 
 
-### 3. Adım: ISE Ayarlarını Yapılandırma 
-2. ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın: 
+### 3. Adım: ISE Ayarlarını Yapılandırma
+2. ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın:
   - **Sunucu Türü**: Mobil cihaz Yöneticisi
   - **Kimlik doğrulama türü**: OAuth – İstemci Kimlik Bilgileri
   - **Otomatik Bulma**: Evet
@@ -110,12 +112,12 @@ Bu tabloda, Intune tarafından yönetilen cihazlar için, Intune kiracınız ve 
 |serialNumber|Cihazın seri numarası. Yalnızca iOS Cihazları için geçerlidir.|
 |imei|IMEI (15 ondalık basamak: 14 basamak, artı bir onay basamağı) veya IMEISV (16 basamak) cihaz kökeni, modeli ve seri numarasını hakkında bilgi içerir. IMEI/SV yapısını 3GPP TS 23.003 içinde belirtilir. Yalnızca SIM kartlı cihazlar için geçerlidir.)|
 |udid|Benzersiz cihaz tanımlayıcısı, iOS cihazlara özgü 40 harf ve rakamdan oluşan dizi.|
-|meid|Mobil donanım kimliği, CDMA mobil istasyonu ekipmanının fiziksel bir parçasını tanımlayan genel olarak benzersiz bir numara. Numara biçimi 3GPP2 rapor S. R0048 ile tanımlanır, ancak pratikte, onaltılık basamaklı bir IMEI olarak görülebilir. Bir MEID 56 bit uzunluktadır (14 onaltılık basamak). Üç alandan oluşur, 8 bitlik bölgesel kod (RR), 24 bit üretici kodu ve 24 bit üreticisi tarafından atanmış seri numarası.| 
+|meid|Mobil donanım kimliği, CDMA mobil istasyonu ekipmanının fiziksel bir parçasını tanımlayan genel olarak benzersiz bir numara. Numara biçimi 3GPP2 rapor S. R0048 ile tanımlanır, ancak pratikte, onaltılık basamaklı bir IMEI olarak görülebilir. Bir MEID 56 bit uzunluktadır (14 onaltılık basamak). Üç alandan oluşur, 8 bitlik bölgesel kod (RR), 24 bit üretici kodu ve 24 bit üreticisi tarafından atanmış seri numarası.|
 |osVersion| Cihazın işletim sistemi sürümü.
 |model|Cihaz modeli.
 |üretici|Cihaz üreticisi.
 |azureDeviceId| Azure Active Directory ile iş yerine birleştirildikten sonraki cihaz kimliği. Birleştirilmemiş cihazlar için boş bir guid olacaktır.|
-|lastContactTimeUtc|Cihazın, Intune yönetim hizmetiyle son denetlendiği tarih ve saat. 
+|lastContactTimeUtc|Cihazın, Intune yönetim hizmetiyle son denetlendiği tarih ve saat.
 
 
 ## Kullanıcı deneyimleri
@@ -126,10 +128,10 @@ Bir kullanıcı kayıtsız cihaz kullanarak kaynaklara erişmeye çalıştığı
 
 Kullanıcı kaydolmayı seçtiğinde, Intune kayıt işlemine yönlendirilir. Intune için kullanıcı kayıt deneyimi aşağıdaki konularda açıklanmıştır:
 
-- [Android cihazınızı Intune’a kaydetme](/intune/end-user/enroll-your-device-in-Intune-android)</br>
-- [iOS cihazınızı Intune'a kaydetme](/intune/end-user/enroll-your-device-in-intune-ios)</br>
-- [Mac OS X cihazınızı Intune’a kaydetme](/intune/end-user/enroll-your-device-in-intune-mac-os-x)</br>
-- [Windows cihazınızı Intune'a kaydetme](/intune/end-user/enroll-your-device-in-intune-windows)</br> 
+- [Android cihazınızı Intune’a kaydetme](/intune/enduser/enroll-your-device-in-Intune-android)</br>
+- [iOS cihazınızı Intune'a kaydetme](/intune/enduser/enroll-your-device-in-intune-ios)</br>
+- [Mac OS X cihazınızı Intune’a kaydetme](/intune/enduser/enroll-your-device-in-intune-mac-os-x)</br>
+- [Windows cihazınızı Intune'a kaydetme](/intune/enduser/enroll-your-device-in-intune-windows)</br>
 
 Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere kullanabileceğiniz, [indirilebilir kayıt yönergeleri grubu](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) da vardır.
 
@@ -140,7 +142,6 @@ Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere k
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

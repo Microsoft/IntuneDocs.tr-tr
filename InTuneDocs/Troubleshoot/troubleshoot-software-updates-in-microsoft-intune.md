@@ -3,7 +3,7 @@ title: "Yazılım güncelleştirmesi sorunlarını giderme | Microsoft Intune"
 description: "Microsoft Intune’da yazılım güncelleştirmesi sorunlarını çözün."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 1615f564891ddf720dc42b18a599921572fb2157
 
 
 ---
@@ -244,7 +244,7 @@ Aşağıdaki tabloda Intune **Güncelleştirme Aracısı** hata kodları listele
 **Sorun**: Microsoft Intune istemcilerinin aşağıdaki belirtilerden en az biriyle karşılaştığı durumlar yaşayabilirsiniz:
 - Aniden Microsoft yönetim konsoluna raporlamayı durduruyorlar.  
 - Yüksek CPU kullanımıyla karşılaşıyorlar.
-- Intune portalı aracılığıyla yüklenen uygulamalar yavaş yükleniyor. 
+- Intune portalı aracılığıyla yüklenen uygulamalar yavaş yükleniyor.
 - Microsoft Intune Center şu hatayı tetikliyor: *Bilgisayarınız güncelleştirilirken bir hata oluştu. Hata bulundu: Kod 0x800705b4*.
 - Intune Yönetim Konsolu > Gruplar > Tüm Cihazlar’ın altındaki durum alanında şu görüntüleniyor: *Bu bilgisayarda yüklü olan bir veya daha çok aracıda hatalar var. Bu bilgisayarla ilgili bilgiler doğru veya güncel olmayabilir*.
 
@@ -254,7 +254,7 @@ Yenisiyle değiştirilmiş güncelleştirmeler uzun bir süre reddedilmezse, bu 
 1. [Intune yönetim konsolunda](https://manage.microsoft.com) oturum açın.
 2. **Güncelleştirmeler** > **Tüm Güncelleştirmeler**’i seçin.
 3. Yenisiyle değiştirilen güncelleştirmeleri filtrelemek için, üst araç çubuğundaki filtre seçeneğini kullanın.
-4. Windows 7’ye veya etkilenen istemcilere yüklenmiş olan uygulamalara (örneğin, Microsoft Office) uygulanabilecek, yenisiyle değiştirilmiş tüm güncelleştirmeleri reddedin. 
+4. Windows 7’ye veya etkilenen istemcilere yüklenmiş olan uygulamalara (örneğin, Microsoft Office) uygulanabilecek, yenisiyle değiştirilmiş tüm güncelleştirmeleri reddedin.
 5. Etkilenen istemcileri yeniden başlatın.
 
 Buna ek olarak, Windows 7 çalıştırıyorsanız şu güncelleştirmeyi yüklediğinizden emin olun:[3050265 Windows 7 için Windows Update İstemcisi: Haziran 2015](https://support.microsoft.com/kb/3050265).
@@ -264,7 +264,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

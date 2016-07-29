@@ -1,10 +1,10 @@
 ---
 title: "Microsoft Intune dağıtımında dağıtım aşamaları | Microsoft Intune"
-description: 
+description: "Teknik dağıtımın tipik aşamaları Proje Kapsamı, Kavram Kanıtı, Pilot, Kurumsal Dağıtım ve Çalıştırma Durumudur."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 9f3fcead3c41506734508d588ad180d17cc901ee
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: fda1e32c2b1be260c1d2c1b26f2415105d3fc10a
 
 
 ---
@@ -26,11 +26,11 @@ Teknik dağıtımın tipik aşamaları Proje Kapsamı, Kavram Kanıtı, Pilot, K
 -   [Proje kapsamı](project-scope.md): Hedeflerinizi, zaman çizelgenizi ve başarı ölçümlerinizi ana hatlarıyla belirtecek, kilit organizasyonel hazırlık etkenlerini tanımlayacak, proje ekibinizin derleyecek ve kuruluşunuzda Microsoft Intune’u başarılı şekilde sunmaya yönelik tüm aşamalar için ilk hazırlıklara başlayacaksınız.
      > [!NOTE]           
        Bu şablonlar, proje kapsamında çalışırken kullanışlı olabilir:
-        
+
     >- [Intune mu yoksa Configuration Manager ile Intune mu karar şablonu](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
     >- [Mobil uygulamalar için planlama şablonu](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
     >- [Genel cihaz yönetimini planlama şablonu](https://gallery.technet.microsoft.com/General-device-management-334c3792)
-    
+
 
 -   [Kavram kanıtı](proof-of-concept.md): Teknik dağıtım ve ağ mimarisini sınayın ve dağıtımınızın, şirketinizin gereksinimlerini karşılama becerisini belirleyin. Bu aşama, belirli teknik senaryoları doğrulamak üzere tasarlanmış basit bir topolojiyi içerir.  
 
@@ -62,6 +62,6 @@ These topics will help you plan for the rollout of new policies and apps:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "Kaybolan veya çalınan Windows cihazınızı sıfırlama (silme) | Micr
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: dec9fd3d2711513b4a99ca4bec586f72402cb619
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 15db6064b9136be5a68bf5e414b0bcb6036fbc1e
 
 
 ---
@@ -42,6 +42,7 @@ Kaybolan veya çalınan cihazınızı sıfırlayamıyorsanız, sizin yerinize s�
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

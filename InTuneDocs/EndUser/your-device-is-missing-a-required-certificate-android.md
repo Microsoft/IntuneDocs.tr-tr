@@ -3,7 +3,7 @@ title: "Cihazınızda gerekli bir sertifika eksik | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 220d877763352e62c4057494b69633356ef081c6
 
 
 ---
@@ -74,7 +74,7 @@ Bu sorunu çözmek ve gerekli sertifikayı almak için, uygulamanız gereken iki
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. **Sertifika** iletişim kutusunun **Sertifika yolu** sekmesine tıklayın ve ardından İnternet’ten almanız gereken sertifikayı belirleyin. Size gereken sertifikanın adı, yukarıdaki örnek ekran görüntüsünde vurgulanan sertifikayla aynı konumda olacaktır. 
+5. **Sertifika** iletişim kutusunun **Sertifika yolu** sekmesine tıklayın ve ardından İnternet’ten almanız gereken sertifikayı belirleyin. Size gereken sertifikanın adı, yukarıdaki örnek ekran görüntüsünde vurgulanan sertifikayla aynı konumda olacaktır.
 
 ### Eksik sertifikayı Android mobil cihazınıza indirme ve yükleme
 
@@ -94,12 +94,13 @@ Bu sorunu çözmek ve gerekli sertifikayı almak için, uygulamanız gereken iki
 
 7. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin.
 
-Yukarıda gösterilenle aynı "eksik sertifika" iletisini görüyorsanız ve yukarıdaki adımları zaten izlediyseniz, bunun anlamı büyük olasılıkla BT yöneticinizin yüklemenize yardımcı olmak için gerekli olduğunu belirttiği bir sertifika daha olduğudur. BT yöneticinize başvurun ve sorunu çözmeye yardımcı olacak adımların bulunduğu bu [bağlantıyı](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) ona verin. 
+Yukarıda gösterilenle aynı "eksik sertifika" iletisini görüyorsanız ve yukarıdaki adımları zaten izlediyseniz, bunun anlamı büyük olasılıkla BT yöneticinizin yüklemenize yardımcı olmak için gerekli olduğunu belirttiği bir sertifika daha olduğudur. BT yöneticinize başvurun ve sorunu çözmeye yardımcı olacak adımların bulunduğu bu [bağlantıyı](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) ona verin.
 
 ### Ayrıca bkz.
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

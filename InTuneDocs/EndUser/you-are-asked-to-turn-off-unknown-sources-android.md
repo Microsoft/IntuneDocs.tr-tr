@@ -3,7 +3,7 @@ title: "Bilinmeyen kaynakları kapatmanız istenir | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
-ms.openlocfilehash: 0a4bf23b547a4f02db663049b84e77365509aeaf
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 61910d5571e143b12af7b44895d80575cb9e4a70
 
 
 ---
 
 # Bilinmeyen kaynakları kapatmanız istenir
 
-"Bilinmeyen kaynaklardan yüklemelerin devre dışı bırakılması gerekir" iletisini görürseniz, **Ayarlar** > **Güvenlik** bölümüne gitmeli (bazı cihazlarda bu, **Kilit ekranı ve güvenlik** bölümü olabilir) ve **Bilinmeyen kaynaklar**’ı kapatmalısınız. 
+"Bilinmeyen kaynaklardan yüklemelerin devre dışı bırakılması gerekir" iletisini görürseniz, **Ayarlar** > **Güvenlik** bölümüne gitmeli (bazı cihazlarda bu, **Kilit ekranı ve güvenlik** bölümü olabilir) ve **Bilinmeyen kaynaklar**’ı kapatmalısınız.
 
 BT yöneticiniz, Android cihazınızdaki şirket verilerini korumak bu ayarın kapatılmasını gerektirir. **Bilinmeyen kaynaklar** açık olduğunda, bilinmeyen kaynaklardan uygulamalar yüklemenize izin verilir, bu da bir güvenlik riski oluşturabilir.
 
@@ -33,6 +33,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

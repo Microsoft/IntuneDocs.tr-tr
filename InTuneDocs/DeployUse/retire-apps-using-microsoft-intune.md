@@ -3,7 +3,7 @@ title: "Uygulamaları devre dışı bırakma | Microsoft Intune"
 description: "Intune’u kullanarak uygulamaların nasıl devre dışı bırakılacağını veya kaldırılacağını öğrenin."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 2af2e139d2d1ca969095067a2d9ec111d3d7127f
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: fca1e1becb36bec2310c905ea8f65263c303b2c2
 
 
 ---
@@ -38,6 +38,6 @@ Cihaz veya bilgisayar tarafından gerçekleştirilen bir sonraki uygulama deneti
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

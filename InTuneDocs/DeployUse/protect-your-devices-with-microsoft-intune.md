@@ -3,7 +3,7 @@ title: "Cihazları koruma | Microsoft Intune"
 description: "Intune’un cihazlarınızı yetkisiz erişime veya diğer tehditlere karşı korumanıza yardımcı olabileceği yollardan bazılarını öğrenin."
 keywords: 
 author: Robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 53201c36e7a210c1c62d3ed3183093ed8e63dc53
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 2b33330f8ec8b46e3b4c6886463e8d3588410ab7
 
 
 ---
@@ -42,6 +42,6 @@ Intune, kaydolmadığınız ancak Intune bilgisayar istemci yazılımıyla yöne
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

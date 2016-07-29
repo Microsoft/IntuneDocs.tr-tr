@@ -3,7 +3,7 @@ title: "Ağ altyapısı gereksinimleri | Microsoft Intune"
 description: "Intune güvenlik duvarı, bağlantı noktası, etki alanı ve proxy sunucusu gereksinimleri"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 8088765d726a9042b69fb12235994320e732459b
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 4080e98333662b3e27de4be2da6425d65abb367d
 
 
 ---
@@ -168,6 +168,6 @@ Ayrıca Intune istemcileri tarafından kullanılan [ağ bant genişliğini azalt
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

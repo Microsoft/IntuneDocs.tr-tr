@@ -3,16 +3,17 @@ title: "Geçiş kodunuzu ayarlama veya değiştirme | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 5/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 94c2282688e73a8ab95599b1f7beb05e98eb103a
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a
 
 iOS cihazınız BT yöneticinizin geçiş kodu ilkesiyle uyumlu değilse, sorunu kısaca açıklayan ve geçiş kodunuzun gereksinimlere uymasını sağlamak için yapmanız gerekenleri anlatan bir ileti görüntülenir.
 
-BT yöneticiniz birden çok geçiş kodu gereksinimi ayarlayabilir. Örneğin, geçiş kodunun belirli sayıda karakter içermesi veya sayılarla harflerin karışımından oluşması gerekebilir. Birden çok gereksinim ayarlanabildiğinden, bu yönergelerde yalnızca geçiş kodunuzu nasıl ayarlayacağınız veya değiştireceğiniz açıklanır. Mümkün olan tüm gereksinim bileşimleri açıklanmaz. 
+BT yöneticiniz birden çok geçiş kodu gereksinimi ayarlayabilir. Örneğin, geçiş kodunun belirli sayıda karakter içermesi veya sayılarla harflerin karışımından oluşması gerekebilir. Birden çok gereksinim ayarlanabildiğinden, bu yönergelerde yalnızca geçiş kodunuzu nasıl ayarlayacağınız veya değiştireceğiniz açıklanır. Mümkün olan tüm gereksinim bileşimleri açıklanmaz.
 
 Geçiş kodu gereksinimlerinin tümüne uyan bir geçiş kodu ayarlama konusunda sorun yaşıyorsanız, yardım için BT yöneticinize başvurun.
 
@@ -44,6 +45,7 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

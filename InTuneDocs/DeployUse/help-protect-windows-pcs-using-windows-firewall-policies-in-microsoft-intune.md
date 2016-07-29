@@ -3,7 +3,7 @@ title: "Windows bilgisayarlar için güvenlik duvarı ilkeleri | Microsoft Intun
 description: "Intune, Intune istemcisiyle yönettiğiniz bilgisayarları, Windows Güvenlik Duvarı ayarlarını yapılandırmak da dahil olmak üzere, çeşitli yollarla güvenli hale getirmenize yardımcı olabilir."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 826bdcd4db11b0eca94a250d6cb95f76e22569bf
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 20970051e0be6cd1b700691ec87ecdd4c536a0c6
 
 
 ---
@@ -119,6 +119,6 @@ Yukarıdaki temel değerleri yapılandırdıktan sonra, belirli ağ trafiğine y
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

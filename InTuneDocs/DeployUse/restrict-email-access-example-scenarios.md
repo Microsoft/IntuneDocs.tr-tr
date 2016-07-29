@@ -3,7 +3,7 @@ title: "E-postaya erişimi kısıtlama örnek senaryoları | Microsoft Intune"
 description: "Birkaç örnek senaryo ve bunların koşullu erişimle nasıl gerçekleştirilebileceği konusunda bilgi."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: bef94f44767347bcdb944eadf63ce673ffc1b7f3
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: d9b9f602a8d1ca1f47b27b9048910fe7148848eb
 
 
 ---
@@ -81,6 +81,6 @@ Hangi cihazların Exchange’e erişebileceğine karar vermek için aşağıdaki
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

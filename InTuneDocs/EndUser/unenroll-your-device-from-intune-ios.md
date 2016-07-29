@@ -3,7 +3,7 @@ title: "iOS cihazınızın Intune kaydını silme | Microsoft Intune"
 description: "iOS cihazının Intune kaydını nasıl silebileceğiniz açıklanır."
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e8572d873ca83f4fad7a1e1e01f60ece3f1319a6
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 940cf1a54ef91be14f7290bc303ee386d48a3147
 
 
 ---
@@ -27,7 +27,7 @@ iOS cihazınızın Intune kaydını sildiğinizde, cihazınız artık şirket ka
 
 Cihazınızın Intune kaydını silmek için aşağıdaki adımları kullanın veya bu videoyu izleyin:
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
 
 
 1.  Şirket Portalı uygulamasındaki **Cihazlarım** bölümünden kaydını kaldırmak istediğiniz cihazı seçin.
@@ -58,6 +58,7 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

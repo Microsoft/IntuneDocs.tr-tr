@@ -3,7 +3,7 @@ title: "Microsoft bulut hizmetleriyle Intune tümleştirmesi | Microsoft Intune"
 description: "Microsoft bulut hizmetleri ve ürünleriyle, ayrıca diğer Microsoft ürünleriyle Intune tümleştirmesi"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e20293f431e0a9ff385f82276d25e71d460230de
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 6523c731e8351b121cba46f6c5d2ef46db656c2c
 
 
 ---
@@ -42,6 +42,7 @@ Daha fazla bilgi için [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 belg
 [Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

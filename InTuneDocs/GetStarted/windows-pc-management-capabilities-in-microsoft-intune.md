@@ -3,7 +3,7 @@ title: "Windows bilgisayarı yönetim özellikleri | Microsoft Intune"
 description: "Windows bilgisayarlarını Intune istemci yazılımıyla yönetirken sağlanan Intune özelliklerini öğrenin."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 28eebfc49eeff6b070ac32a7d2c4bbec59a527b9
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: b2e5b04df846db1a0076da7db63a5906fbd25558
 
 
 ---
@@ -74,6 +74,6 @@ Intune bilgisayar istemcisini yüklemeye yönelik yazılım gereksinimleri aşa�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

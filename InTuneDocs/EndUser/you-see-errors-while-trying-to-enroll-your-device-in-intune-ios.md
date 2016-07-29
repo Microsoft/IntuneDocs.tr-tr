@@ -3,19 +3,19 @@ title: "iOS cihazınızı Intune’a kaydetmeye çalışırken hata görüyorsun
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
-ROBOTS: noindex
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0708fcca562a1547840c2a382c397265a0e46a44
-ms.openlocfilehash: bd63e69f59c6e19aed92fc997f047cfe3f00717a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: acb8d018b23753ad0a414d0222468caad3284325
 
 
 ---
@@ -40,6 +40,6 @@ Aşağıdaki tabloda iOS cihazlarınızı Intune’a kaydederken görebileceğin
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

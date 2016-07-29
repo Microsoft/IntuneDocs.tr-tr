@@ -3,7 +3,7 @@ title: "Android cihazınızın Intune kaydını sildiğinizde ne olur? | Microso
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3bb5d0dd3fbb48a2645922b550b2ffff295bec59
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 
 Android cihazınızın Intune kaydını sildiğinizde:
 
--   Cihazınızın Intune kaydını silersiniz ve bu da BT yöneticinizin artık cihazınızı yönetmeyeceği anlamına gelir. 
+-   Cihazınızın Intune kaydını silersiniz ve bu da BT yöneticinizin artık cihazınızı yönetmeyeceği anlamına gelir.
 
 -   Şirket verilerine ve kaynaklarına erişimi kaybedersiniz.
 
@@ -35,17 +35,18 @@ Android cihazınızın Intune kaydını sildiğinizde:
 
 -   Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.
 
-Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve cihazınızın kaydını silerseniz cihaz Şirket Portalı'nda görünmez. 
+Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve cihazınızın kaydını silerseniz cihaz Şirket Portalı'nda görünmez.
 
 Kaydın nasıl silineceği hakkında yönergeler için bkz. [Şirket Portalı uygulamasını kullanarak cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md).
 
 Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
 
 
-### Ayrıca bkz:
+### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

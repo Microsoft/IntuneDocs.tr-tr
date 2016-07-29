@@ -3,7 +3,7 @@ title: Beklenenler | Microsoft Intune
 description: 
 keywords: 
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/07/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 35ee5d0c8898c95898c0527a623cf13c454387f2
-ms.openlocfilehash: 831cec6cd0e02a94c1a3f67d4adf5a5dcbb01449
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 9b536372623632b609433c49991a8bdc70e6da49
 
 
 ---
@@ -79,7 +79,7 @@ Koşullu erişim kullanırken, Workplace Join (WPJ) hatasıyla karşılaşan son
 Performansı ve ölçeği artırmak için, Intune artık iOS Şirket Portalı uygulamasının Cihazlarım bölmesinde Cihaz Kayıt Yöneticileri (DEM) cihazlarını göstermeyecektir. Yalnızca uygulamayı çalıştıran yerel cihaz, yalnızca Şirket Portalı uygulaması aracılığıyla kaydedilmişse gösterilir. DEM kullanıcısı, yerel cihazda eylemler gerçekleştirebilir, ancak diğer kayıtlı cihazların uzaktan yönetimi yalnızca Intune yönetici konsolundan gerçekleştirilecektir.  Ayrıca Intune, Apple Cihaz Kayıt Programı veya Apple Configurator aracıyla DEM hesaplarını kullanımdan kaldırmaktadır. Her iki kayıt yöntemi, paylaşılan iOS cihazları için kullanıcısız kaydı zaten desteklemektedir. Yalnızca, paylaşılan cihazlar için kullanıcısız kayıt kullanılamadığında DEM hesapları kullanın.
 <!---TFS 1233681--->
 ### Dışarıdan uygulama yüklemelerini kayıtlı Android cihazlarıyla kısıtlama
-Android için Intune Şirket Portalı uygulaması kullanılarak Intune’a kaydedilmeyen Android cihazları, artık Şirket Portalı web sitesi üzerinden uygulama yükleyemezler. 
+Android için Intune Şirket Portalı uygulaması kullanılarak Intune’a kaydedilmeyen Android cihazları, artık Şirket Portalı web sitesi üzerinden uygulama yükleyemezler.
 <!---TFS 1299082--->
 
 ## Hizmeti kullanımdan kaldırma
@@ -113,6 +113,6 @@ Son geliştirmelerin ayrıntıları için bkz. [Microsoft Intune’daki Yenilikl
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

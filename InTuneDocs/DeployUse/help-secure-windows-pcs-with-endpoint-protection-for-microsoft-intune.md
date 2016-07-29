@@ -4,7 +4,7 @@ description: "Kötü amaçlı yazılım tehditlerine karşı gerçek zamanlı ko
 keywords: 
 author: NathBarn
 manager: arob98
-ms.date: 04/28/2016
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: 2e0abfb92ef9ecc302e686ea9f30584b9f38d3b0
+ms.sourcegitcommit: 1f6f98d582ce9a686ca02682a9066d8b2162d6ab
+ms.openlocfilehash: 2a856be9ea303eab48f3f39845d4467eaa04c32e
 
 
 ---
@@ -189,6 +189,6 @@ Daha fazla yardım ve destek için bkz. [Microsoft Intune Endpoint Protection’
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
