@@ -2,7 +2,7 @@
 title: "Koşullu erişim sorunlarını giderme | Microsoft Intune"
 description: "Kullanıcıların, kaynaklara Intune koşullu erişimi üzerinden erişemediklerinde ne yapacakları açıklanır."
 keywords: 
-author: nbigman
+author: karaman
 manager: angrobe
 ms.date: 07/24/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: f5feb4d660693344cf7df38402f14c60007284b4
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 
 
 ---
@@ -158,6 +158,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

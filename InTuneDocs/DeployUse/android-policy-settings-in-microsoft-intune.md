@@ -5,7 +5,7 @@ description: "Intune ile yönettiğiniz Android cihazlarında ayarları ve özel
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
-ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
+ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
+ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
 
 
 ---
@@ -197,65 +197,16 @@ Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarları
     |**OMA-URI (büyük küçük harf duyarlı)**|Bir ayar için sağlamak istediğiniz OMA-URI’yi belirtin.|
     |**Değer**|Önceden belirttiğiniz OMA-URI ile ilişkilendirilecek değeri belirtin.|
 
-### Örnek: Önceden paylaşılan anahtar ile özel bir Wi-Fi profili yapılandırma
-Intune, Android cihazlar için Wi-Fi profillerini desteklese de bu özellik şu anda yapılandırmaya önceden paylaşılan anahtar eklenmesini desteklemez. Bu örnekte, Android cihazda önceden paylaşılan anahtar ile Wi-Fi profili oluşturan bir Android özel ilkesinin nasıl oluşturulacağını öğreneceksiniz.
+### Örnekler
 
-#### Önceden paylaşılan anahtar ile Wi-Fi profili oluşturmak için
-
-1.  Kullanıcılarınızın Android için [Intune Şirket Portalı](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’nın en son sürümünü kullandığından emin olun.
-
-2.  Bir Android özel ilkesi oluşturun ve aşağıdaki ayarları ekleyin:
-
-|Ayar adı|Ayrıntılar|
-|----------------|--------------------|
-|**Ayar adı**|Ayar için tercih ettiğiniz bir ad belirtin.|
-|**Ayar açıklaması**|Ayar için bir açıklama belirtin.|
-|**Veri türü**|**Dize (XML)** öğesini seçin.|
-|**OMA URI**|Şunu yazın: ./Vendor/MSFT/WiFi/Profile/*&lt;Wi-Fi profiliniz&gt;*/Settings|
-
-3.  **Değer** için aşağıdaki XML kodunu kopyalayıp yapıştırın:
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile
-                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  İşiniz bittiğinde ilkeyi kaydedin ve gerekli Android cihazlarına dağıtın. Yeni Wi-Fi profili, cihazdaki bağlantılar listesinde görüntülenir.
+- [Önceden paylaşılan anahtar ile Wi-Fi profili oluşturma](pre-shared-key-wi-fi-profile.md)
+- [Özel ilke kullanarak Android cihazları için uygulama başına VPN profili oluşturma](per-app-vpn-for-android-pulse-secure.md)
 
 ### Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
