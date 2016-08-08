@@ -3,8 +3,8 @@ title: "MAM ilkeleri için Azure portalı | Microsoft Intune"
 description: "Azure portalını kullanarak mobil uygulama yönetimi ilkeleri oluşturun. Burada oluşturduğunuz ilkeler, Intune’da kaydı olan veya olmayan cihazlara uygulanabilir."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 22aea1a9a2ff55ae7a8a115fae31b1358305a4a5
 
 
 ---
@@ -40,13 +40,13 @@ Azure portalı, aşağıdakiler için MAM ilkeleri oluşturmayı destekler:
 
     ![Azure portalı oturum açma sayfasının ekran görüntüsü](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  Oturumunuz başarıyla açıldıktan sonra **Pano**’yu görürsünüz. **Pano** sayfası, sayfayı özelleştirmek için kaldırabileceğiniz ve yenilerini ekleyebileceğiniz bir dizi varsayılan kutucukla birlikte gelir.
+2.  Oturumunuz başarıyla açıldıktan sonra **Pano**’yu görürsünüz. **Pano** sayfası özelleştirilebilir.
 
     ![Azure portalı panosunun ekran görüntüsü](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  **Gözat** menüsünde **Intune**’u bulun.![Intune’un vurgulandığı Gözat menüsünün ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  **Intune > Intune mobil uygulama yönetimi > Ayarlar**‘a tıklayın.
+4.  **Intune > Intune mobil uygulama yönetimi > Ayarlar**‘ı seçin.
 
     ![Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -61,6 +61,6 @@ Azure portalı, aşağıdakiler için MAM ilkeleri oluşturmayı destekler:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

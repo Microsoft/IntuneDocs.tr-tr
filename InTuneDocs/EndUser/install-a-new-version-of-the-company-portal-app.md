@@ -3,8 +3,8 @@ title: "Şirket Portalı uygulamasının yeni sürümünü yükleme | Microsoft 
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 05/30/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 529d8020ffda5ffe32542b670a75fd0faa5d6ffe
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: f15f3efc10936a964a72718daf8219f5b9c1e24a
 
 
 ---
@@ -22,13 +22,13 @@ ms.openlocfilehash: 529d8020ffda5ffe32542b670a75fd0faa5d6ffe
 
 Şirket Portalı sürümünüz artık desteklenmiyorsa veya Şirket Portalı’nın daha yeni bir sürümü kullanıma sunulduysa, Şirket Portalı uygulamasını yeni sürüme güncelleştirmelisiniz. Aşağıda, sahip olduğunuz cihazın türüne uygun adımları kullanın.
 
-## Android cihazınıza Şirket Portalı uygulamasını yüklemek için
+## Android cihazınızda Intune Şirket Portalı uygulamasını güncelleştirmek için
 
 Şirket Portalı’nın yeni bir sürümü kullanılabilir olduğunda Play Store sizi uyarır. Şirket Portalı’nda ise bilgi istemi gösterilmez. Cihazınızı güncelleştirmek için uyarıdaki yönergeleri izleyin.
 
-## iOS cihazınıza Şirket Portalı uygulamasını yüklemek için
+## iOS cihazınızda Intune Şirket Portal uygulamasını güncelleştirmek için
 
-Şirket Portalı uygulamasının yeni bir sürümü sağlandığında App Store sizi uyarır. 
+Yeni bir sürüm çıktığında, yüklü uygulamalar listenizde uygulamaya bakarken “güncelleştir” seçeneğini görürsünüz.  
 
 Şirket Portalı uygulamasını güncelleştirmek için:
 
@@ -36,7 +36,7 @@ ms.openlocfilehash: 529d8020ffda5ffe32542b670a75fd0faa5d6ffe
 
 2. Uygulamayı bulduğunuzda, uygulama adının sağ tarafındaki **güncelleştir** düğmesine dokunun.
 
-## Windows cihazınıza Şirket Portalı uygulamasını yüklemek için
+## Windows cihazınızda Intune Şirket Portalı uygulamasını güncelleştirmek için
 
 1.  Windows Mağazası'na gidin ve **şirket portalı** için arama yapın.
 
@@ -56,7 +56,6 @@ Cihazınızda gerçekleştirebileceğiniz diğer görevlerle ilgili bilgi için,
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

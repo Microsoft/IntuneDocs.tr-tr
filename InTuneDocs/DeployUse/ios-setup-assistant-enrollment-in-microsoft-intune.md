@@ -3,7 +3,7 @@ title: "iOS cihazlarını Kurulum Yardımcısı ile kaydetme | Microsoft Intune"
 description: "Şirkete ait iOS cihazlarını fabrika ayarlarına sıfırlamak ve Kurulum Yardımcısı’nı çalıştırmaya hazırlamak için, Apple Configurator aracını kullanarak kaydedin."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 01d87b95d2599f75161c9a95ff4cf94375eedb60
 
 
 ---
@@ -38,8 +38,7 @@ Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve
 
 2.  **Cihazlar için profil oluştur** Cihaz kayıt profili, bir cihaz grubuna uygulanan ayarları tanımlar. Henüz yapmadıysanız, Apple Configurator kullanarak kaydedilmiş iOS cihazları için bir cihaz kayıt profili oluşturun.
 
-    1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Şirkete Ait Cihazlar**’a gidin ve **Ekle…**’ye tıklayın.
-
+    1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle…**’ye tıklayın.
     ![Cihaz kayıt profili oluşturma](../media/pol-sa-corp-enroll.png)
 
     2.  Cihaz profillerinin ayrıntılarını girin:
@@ -50,14 +49,9 @@ Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve
 
         -   **Kayıt Ayrıntıları** – Cihazların nasıl kaydedildiğini belirtir.
 
-            -   **Kullanıcı benzeşimi istemi** – iOS cihazı ilk kurulum sırasında bir kullanıcıyla ilişkilendirilebilir ve daha sonra şirket verilerine ve e-postalara bu kullanıcı gibi erişmesine izin verilebilir. Çoğu Kurulum Yardımcısı senaryosu için **Kullanıcı benzeşimi istemi**’ni kullanın.
-            Bu mod birkaç senaryoyu destekler:
+            -   **Kullanıcı benzeşimi istemi** – Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Böylece, cihazın şirket verilerine ve e-postalara bu kullanıcı aracılığıyla erişmesine izin verilebilir. DEP tarafından yönetilen kullanıcılara ait olan ve şirket portalını kullanması gereken (örneğin, uygulama yüklemek için) cihazlarda **kullanıcı benzeşimi** yapılandırılmalıdır.
 
-                -   **Şirketin sahip olduğu kişisel cihaz** – “Kendi Cihazını Seç” (CYOD) Kişinin sahip olduğu veya kişisel cihazlara benzer; ancak yönetici, cihazı silme, sıfırlama, yönetme ve kaydını kaldırma izni dahil belirli ayrıcalıklara sahiptir. Cihazın kullanıcısı uygulama yükleyebilir ve yönetim ilkesi tarafından engellenmeyen diğer birçok cihaz kullanım iznine sahiptir.
-
-                -   **Cihaz kaydı yönetici hesabı** – Cihaz özel bir Intune yönetici hesabı kullanılarak kaydedilir. Özel hesap olarak yönetilebilir, ancak yalnızca yönetici kimlik bilgilerini bilen bir kullanıcı uygulama yükleyebilir, cihazı silebilir, sıfırlayabilir, yönetebilir ve kaydını kaldırabilir. Ortak bir hesap üzerinden çok sayıda kullanıcının paylaştığı bir cihazı kaydetme hakkında bilgi için bkz. [Şirkete ait cihazları Microsoft Intune’da Cihaz Kayıt Yöneticisi ile kaydetme](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
-
-            -   **Kullanıcı benzeşimi yok** – Cihaz kullanıcı içermez. Bu ilişkiyi, yerel kullanıcı verilerine erişmeden görevleri yerine getiren cihazlar için kullanın. Kullanıcı ilişkisinin devre dışı bırakılmasını gerektiren uygulamalar devre dışı bırakılır veya çalışmaz.
+            -   **Kullanıcı benzeşimi yok** – Cihaz bir kullanıcıya bağlı değil. Bu ilişkiyi, yerel kullanıcı verilerine erişmeden görevleri yerine getiren cihazlar için kullanın. İş kolu uygulamalarını yüklemek için kullanılan Şirket Portalı uygulaması da içinde olmak üzere, kullanıcı benzeşimi gerektiren uygulamalar çalışmaz.
 
         -   **Cihaz grubu ön ataması** – Bu profili dağıtan tüm cihazlar başlangıçta bu gruba ait olur. Cihazları kayıttan sonra yeniden atayabilirsiniz.
 
@@ -121,26 +115,24 @@ Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve
 
     3. MDM sunucusu için yukarıda 6. Adımda verilen **Ad** ve **Kayıt URL’si** değerlerini girin. Kayıt URL’si olarak Intune’dan dışarı aktarılan kayıt profili URL’sini girin. **İleri**’yi seçin.  
 
-       Apple TV ile ilgili güven profili gereksinimleri hakkında bir uyarı alırsanız, gri “X” işaretini seçerek **Güven Profili** seçeneğini iptal edebilirsiniz. Ayrıca tüm Anchor sertifika uyarılarını da göz ardı edebilirsiniz. Devam etmek için, sihirbaz tamamlanana kadar **İleri**’yi seçin.
+       “Sunucu URL'si doğrulanmadı” uyarısı alırsanız, uyarıyı göz ardı edebilirsiniz. Devam etmek için, sihirbaz tamamlanana kadar **İleri**’yi seçin.
 
-    4.  **Sunucular** bölmesinde, yeni sunucu profilinin yanındaki “Düzenle”yi seçin. Kayıt URL’sinin, Intune’dan dışarı aktarılan URL’yle tam olarak eşleştiğinden emin olun. Bunlar farklıysa özgün URL’yi yeniden girin ve Intune’dan dışarı aktarılan kayıt profilini **kaydedin**.
-
-    5.  iOS mobil cihazları bir USB bağdaştırıcısı ile Apple bilgisayara bağlayın.
+    4.  iOS mobil cihazları bir USB bağdaştırıcısı ile Apple bilgisayara bağlayın.
 
         > [!WARNING]
         > Cihazlar kayıt işlemi sırasında fabrika yapılandırmalarına sıfırlanır. En iyi uygulama olarak cihazı sıfırlayın ve açın. En iyi yöntem olarak, Kurulum Yardımcısı’nı başlattığınızda cihazlar **Hello** ekranında olmalıdır.
 
-    6.  **Hazırla**’yı seçin. **iOS Cihazını Hazırla** bölmesinde, **El ile**’yi, sonra **İleri**’yi seçin.
+    5.  **Hazırla**’yı seçin. **iOS Cihazını Hazırla** bölmesinde, **El ile**’yi, sonra **İleri**’yi seçin.
 
-    7. **MDM Sunucusuna kaydol** bölmesinde, oluşturduğunuz sunucunun adını, sonra **İleri**’yi seçin.
+    6. **MDM Sunucusuna kaydol** bölmesinde, oluşturduğunuz sunucunun adını, sonra **İleri**’yi seçin.
 
-    8. **Cihazları Denetle** bölmesinde, denetim düzeyini seçin, sonra **İleri**’yi seçin.
+    7. **Cihazları Denetle** bölmesinde, denetim düzeyini seçin, sonra **İleri**’yi seçin.
 
-    9. **Kuruluş Oluştur** bölmesinde, **Kuruluş**’u seçin veya yeni bir kuruluş oluşturun, sonra **İleri**’yi seçin.
+    8. **Kuruluş Oluştur** bölmesinde, **Kuruluş**’u seçin veya yeni bir kuruluş oluşturun, sonra **İleri**’yi seçin.
 
-    10. **iOS Kurulum Yardımcısı’nı Yapılandır** bölmesinde, kullanıcıya sunulan adımları seçin, sonra **Hazırla**’yı seçin. İstenirse, güven ayarlarını güncelleştirmek için kimlik doğrulaması yapın.  
+    9. **iOS Kurulum Yardımcısı’nı Yapılandır** bölmesinde, kullanıcıya sunulan adımları seçin, sonra **Hazırla**’yı seçin. İstenirse, güven ayarlarını güncelleştirmek için kimlik doğrulaması yapın.  
 
-    11. iOS cihazı hazırlanmayı tamamladığında USB kablosunun bağlantısını kesebilirsiniz.  
+    10. iOS cihazı hazırlanmayı tamamladığında USB kablosunun bağlantısını kesebilirsiniz.  
 
 8.  **Cihazları dağıtma** Cihazlar artık kurumsal kayıt için hazırdır. Cihazları kapatın ve kullanıcılara dağıtın. Cihaz açıldığında Kurulum Yardımcısı başlar.
 
@@ -151,6 +143,6 @@ Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

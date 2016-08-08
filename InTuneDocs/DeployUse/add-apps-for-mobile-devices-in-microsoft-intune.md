@@ -1,9 +1,9 @@
 ---
 title: "Kaydolmuş cihazlar için uygulama ekleme | Microsoft Intune"
-description: "Bir uygulamayı dağıtabilmeniz için, onu önce Intune'a eklemeniz gerekir. Ardından Intune konsolunda kullanılabilir hale gelir, buradan onu dağıtabilir ve yönetebilirsiniz."
+description: "Bir uygulamayı dağıtabilmeniz için, onu önce Intune'a eklemeniz gerekir. Ardından Intune konsolunda kullanılabilir hale gelir, buradan dağıtabilir ve yönetebilirsiniz."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 6d21db0557b43574a03070804af97ef4d13c2e1b
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 72d2974b5aa9ca334b59d8a1d28a175b190ba533
 
 
 ---
@@ -25,36 +25,36 @@ Bir uygulamayı dağıtabilmeniz veya yönetebilmeniz için, onu önce Microsoft
 
 
 > [!IMPORTANT]
-> Bu konu başlığı altında verilen bilgiler, kayıtlı cihazlara ve kayıtlı Windows bilgisayarlarına dağıtmak istediğiniz uygulamaları eklemenize yardımcı olur. Uygulamaları, Intune istemci yazılımını kullanarak yönettiğiniz Windows bilgisayarlarına eklemek istiyorsanız, bkz. [Microsoft Intune’da Windows bilgisayarları için uygulama ekleme](add-apps-for-windows-pcs-in-microsoft-intune.md).
+> Bu konu başlığı altında verilen bilgiler, kayıtlı cihazlara ve kayıtlı Windows bilgisayarlarına dağıtmak istediğiniz uygulamaları eklemenize yardımcı olur. Uygulamaları, Intune istemci yazılımını kullanarak yönettiğiniz Windows bilgisayarlarına eklemek istiyorsanız, [Microsoft Intune’da Windows bilgisayarları için uygulama ekleme](add-apps-for-windows-pcs-in-microsoft-intune.md) konusuna göz atın.
 
 ## Uygulama ekleme
-Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve uygulamayı bulut depolama alanınıza yüklemek için (uygunsa) Intune Yazılım Yayımcısı’nı kullanacaksınız.
+Uygulamanın özelliklerini yapılandırmak ve uygulamayı bulut depolama alanınıza yüklemek için (uygunsa) Intune Yazılım Yayımcısı’nı kullanacaksınız. Aşağıdaki yordamı kullanın:
 
-1.  Intune yazılım yayımcısını başlatmak için [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda **Uygulamalar** &gt; **Uygulama Ekle**‘yi seçin.
+1.  Intune Yazılım Yayımcısını başlatmak için [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda **Uygulamalar** &gt; **Uygulama Ekle**‘yi seçin.
 
     > [!TIP]
     > Yayımcının başlatılması için önce Intune kullanıcı adınızı ve parolanızı girmeniz gerekebilir.
 
-2.  Yazılım yayımcısının **Yazılım kurulumu** sayfasında, **Bu yazılımın cihazlar için kullanılabilir duruma nasıl getirileceğini seçin** alanında aşağıdaki seçeneklerden birini belirtin:
-    - **Yazılım yükleyicisi**; uzantısı **.msi** veya **.exe** olan uygulamalar için aşağıdakileri belirtin:
-        - **Yazılım yükleyicisi dosya türünü seçin** - Bu, dağıtmak istediğiniz yazılımın türünü gösterir. Örneğin bir iOS uygulamasını yüklemek istiyorsanız, **iOS için Uygulama Paketi (&#42;.ipa dosyası)** öğesini seçin.
-        - **Yazılım kurulum dosyalarının konumunu belirtin** - Yükleme dosyalarının konumu girin veya konumu bir listeden seçmek için **Gözat**’ı seçin.
-        - **Aynı klasörden başka dosya veya alt klasör ekle** - Yalnızca **Windows Installer** dosya türü için.<br>Windows Installer’ı kullanan bazı yazılımlar için, normalde yükleme dosyalarıyla aynı klasörde yer alan destek dosyaları gerekir. Bu dosyaları dağıtmak istiyorsanız bu seçeneği belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın bir bölümü kullanılır.
+2.  Yayımcının **Yazılım kurulumu** sayfasında, **Bu yazılımın cihazlar için kullanılabilir duruma nasıl getirileceğini seçin** alanında aşağıdaki seçeneklerden birini belirtin:
+    - Uzantısı **.msi** veya **.exe** olan uygulamalar için **Yazılım yükleyicisi**:
+        - **Yazılım yükleyicisi dosya türünü seçin**. Bu, dağıtmak istediğiniz yazılım türünü belirtir. Örneğin bir iOS uygulamasını yüklemek istiyorsanız, **iOS için Uygulama Paketi (&#42;.ipa dosyası)** öğesini seçin.
+        - **Yazılım kurulum dosyalarının konumunu belirtin**. Yükleme dosyalarının konumunu girin veya **Gözat**’ı seçerek bir listeden konumu seçin.
+        - **Aynı klasörden başka dosya ve alt klasör ekleme**. Bu seçenek yalnızca **Windows Installer** dosya türü içindir.<br>Windows Installer’ı kullanan bazı yazılımlar için genellikle yükleme dosyalarıyla aynı klasörde yer alan destek dosyaları gerekir. Bu dosyaları dağıtmak istiyorsanız bu seçeneği belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın bir bölümü kullanılır.
 
-  -   **Dış bağlantı**; uygulama mağazasının bağlantısını belirterek oluşturmak istediğiniz uygulamalar için aşağıdakileri belirtin:
+  -   **Dış bağlantı**; uygulama mağazasının bağlantısını belirterek oluşturmak istediğiniz uygulamalar için:
 
-        - **URL belirt** - Aşağıdakilerden birinin URL’sini belirtin:
-            - Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’si. Örneğin, Android için Microsoft Uzak Masaüstü uygulamasını dağıtmak istiyorsanız **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** belirtin. Uygulamanın URL’sini bulmak için, bir arama motoru kullanarak uygulamayı içeren mağaza sayfasını bulun. Örneğin, Uzak Masaüstü uygulamasını bulmak için **Microsoft Uzak Masaüstü Android** araması yapabilirsiniz.
+        - **URL’yi belirtin**. Aşağıdakilerden birinin URL'sini belirtin:
+            - Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’si. Örneğin, Android için Microsoft Uzak Masaüstü uygulamasını dağıtmak istiyorsanız **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** belirtin.<br>Uygulamanın URL’sini bulmak için bir arama motoru kullanarak uygulamayı içeren mağaza sayfasını bulun. Örneğin, Uzak Masaüstü uygulamasını bulmak için **Microsoft Uzak Masaüstü Android** araması yapabilirsiniz.
             - Bir web sitesi. Intune, cihaza sitenin bir kısayol simgesini (web klibi olarak bilinir) dağıtır.
             - Web üzerinde bir uygulama. Intune, cihaza uygulamanın bir kısayol simgesini dağıtır.
-        - **Bu bağlantının açılması için Managed Browser uygulamasını zorunlu kıl (yalnızca Android ve iOS)** - Kullanıcılara bir web sitesi veya web uygulamasının bağlantısını dağıttığınızda bunu yalnızca cihazlarında yüklü olması gereken Intune yönetilen tarayıcısında açabilirler.<br>Yönetilen tarayıcı hakkında daha fazla bilgi için bkz. [Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme](manage-internet-access-using-managed-browser-policies.md).<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
+        - **Bu bağlantıyı açmak için yönetilen bir tarayıcı isteyin (yalnızca Android ve iOS için)**. Kullanıcılara bir web sitesi veya web uygulamasının bağlantısını dağıttığınızda bunu yalnızca Intune ile yönetilen tarayıcıda açabilirler. Bu tarayıcı cihazlarında yüklü olmalıdır.<br>Yönetilen tarayıcı hakkında daha fazla bilgi için bkz. [Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme](manage-internet-access-using-managed-browser-policies.md).<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
 
-  -   **Uygulama mağazasından yönetilen iOS uygulaması**; iTunes mağazasından ücretsiz sağlanan ve MAM ilkeleriyle yönetmek istediğiniz uygulamalar için aşağıdakileri belirtin:
+  -   **Uygulama mağazasından yönetilen iOS uygulaması**; iTunes mağazasından ücretsiz sağlanan ve mobil uygulama yönetimi MAM ilkeleriyle yönetmek istediğiniz uygulamalar için aşağıdakileri belirtin:
 
-        - **URL belirt** - Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’sini girin. Örneğin, iOS için Microsoft Çalışma Klasörleri uygulamasını dağıtmak istiyorsanız **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
+        - **URL’yi belirtin**. Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’sini girin. Örneğin, iOS için Microsoft Çalışma Klasörleri uygulamasını dağıtmak istiyorsanız **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
 
         Örneğin, cihazlara iTunes mağazasından Microsoft Word uygulamasını dağıtmak istiyorsanız, sayfa şuna benzer görünür:
-        
+
         ![Intune Software Publisher](./media/publisher-for-mobile.png)
 
 3.  **Yazılım açıklaması** sayfasında aşağıdakileri yapılandırın:
@@ -62,20 +62,20 @@ Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve u
     > [!TIP]
     > Kullanmakta olduğunuz yükleyici türüne bağlı olarak, bu değerlerden bazıları otomatik olarak girilmiş olabilir.
 
-    - **Yayımcı** - Uygulamanın yayımcısının adını girin.
-    - **Ad** - Uygulamanın şirket portalında görüntülenecek olan adını girin.<br>Kullandığınız tüm uygulama adlarının benzersiz olmasına dikkat edin. Aynı uygulama adı iki kez kullanılmışsa, uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
-    - **Açıklama** - Uygulama için bir açıklama girin. Bu, şirket portalında kullanıcılara görüntülenir.
-    - **Yazılım bilgileri URL’si** - Yalnızca **Yazılım yükleyicisi**’ni seçtiğinizde kullanılabilir. İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Gizlilik URL’si** - Yalnızca **Yazılım yükleyicisi**’ni seçtiğinizde kullanılabilir. İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Kategori** - (isteğe bağlı) Yerleşik uygulama kategorilerinden birini seçin. Bu, kullanıcıların şirket portalına göz atarken uygulamaları daha kolay bulabilmesini sağlar.
-    - **Bunu özel bir uygulama olarak görüntüle ve şirket portalında vurgula** - Kullanıcılar uygulamalara göz attığında bu uygulamayı şirket portalının ana sayfasında göze çarpacak şekilde görüntüleyin.
-    - **Simge** - (isteğe bağlı) Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek olan simgedir.
+    - **Yayımcı**. Uygulama yayımcısının adını girin.
+    - **Ad**. Uygulamanın şirket portalında görüntülenecek olan adını girin.<br>Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa, uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
+    - **Açıklama**. Uygulama için bir açıklama girin. Bu, şirket portalında kullanıcılara görüntülenir.
+    - **Yazılım bilgileri URL'si**. Yalnızca **Yazılım yükleyicisini** seçtiğinizde kullanılabilir. İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Gizlilik URL’si**. Yalnızca **Yazılım yükleyicisini** seçtiğinizde kullanılabilir. İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Kategori** (isteğe bağlı). Yerleşik uygulama kategorilerinden birini seçin. Bu, kullanıcıların şirket portalına göz atarken uygulamaları daha kolay bulabilmesini sağlar.
+    - **Şirket portalında bu uygulamayı öne çıkan uygulama olarak görüntüleyin ve vurgulayın.**. Kullanıcılar uygulamalara göz attığında, uygulamayı şirket portalının ana sayfasında önce çıkacak şekilde görüntüleyin.
+    - **Simge** (isteğe bağlı). Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek olan simgedir.
 
         Bu örnekte, iOS için Microsoft Word uygulamasının açıklamasını yapılandırdınız:
 
         ![Yazılım açıklaması örneği](./media/ios-software-description.png)
 
-4.  **Gereksinimler** sayfasında uygulamanın cihaza yüklenmesini başlatabilmek için karşılanması gereken gereksinimleri belirtin. Örneğin iOS için bir uygulama paketinde, gereken en düşük iOS sürümünü, bunun çalıştırıldığı cihaz türünü (iPhone veya iPad gibi) seçebilirsiniz.
+4.  **Gereksinimler** sayfasında uygulamanın cihaza yüklenmesinden önce karşılanması gereken gereksinimleri belirtin. Örneğin, iOS uygulama paketi için gerekli en düşük iOS sürümünü seçebilirsiniz. Ayrıca uygulamanın yükleneceği cihazı seçebilirsiniz (iPhone ya da iPad gibi).
 
     > [!TIP]
     > **Gereksinimler** sayfası tüm uygulama türleri için görüntülenmez.
@@ -88,22 +88,17 @@ Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve u
 
 Uygulama, **Uygulamalar** çalışma alanının **Uygulamalar** düğümünde görüntülenir.
 
-## Örnekler
-
-### Windows 10 cihazlarına MSI uygulamalarını dağıtma
-Bu dört dakikalık videoda, Windows 10 çalıştıran kayıtlı cihazlara Microsoft Installer (msi) uygulamalarının nasıl dağıtıldığını öğreneceksiniz.<br><br>
+## Örnek - Windows 10 cihazlarına .msi uygulamalarını dağıtma
+Bu dört dakikalık videoda, Windows 10 çalıştıran kayıtlı cihazlar için Windows Installer (.msi) uygulamaların nasıl dağıtılacağı hakkında bilgi edineceksiniz.<br><br>
 
 <iframe src="https://channel9.msdn.com/Series/How-to-Control-the-Uncontrolled/6--How-to-Deploy-MSI-Applications-to-Windows-10-Using-Intune-and-Mobile-Device-Management-MDM/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
 ## Sonraki adımlar
 
-Uygulamayı oluşturmayı tamamladığınızda, bir sonraki adım dağıtmaktır. Daha fazla bilgi bulmak için bkz. [Microsoft Intune’da uygulamaları dağıtma](deploy-apps.md).
+Bir uygulama oluşturduktan sonra, sonraki adım uygulamayı dağıtmaktır. Daha fazlası için [Microsoft Intune’da uygulamaları dağıtma](deploy-apps.md) konusuna göz atın.
 
 
 
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

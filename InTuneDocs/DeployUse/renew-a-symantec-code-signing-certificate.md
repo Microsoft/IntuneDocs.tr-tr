@@ -1,20 +1,20 @@
 ---
-title: "Microsoft Intune ile kullanmak için bir Symantec enterprise kod imzalama sertifikasını yenileme | Microsoft Intune"
-description: 
+title: "Intune ile kullanılacak Symantec kurumsal kod imzalama sertifikasını yenileme | Microsoft Intune"
+description: "Belirli Windows ve Windows Phone mobil cihazlarını yönetmek için kullanılan Symantec sertifikalarını yenileme rehberi"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
 
 
 ---
@@ -66,6 +66,6 @@ Güncelleştirilmiş kod imzalama sertifikasını sağlamanın şu an için tek 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "Kuruluşa ait cihazları yönetme | Microsoft Intune"
 description: "Şirkete ait cihazları (COD), cihaza, nasıl satın alındığına ve kuruluşun gereksinimlerine bağlı olarak, çeşitli yollarla yönetime getirin."
 keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
-ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
 
 
 ---
 
 # Microsoft Intune'la şirketin sahip olduğu cihazları kaydetme
-Kuruluşa ait cihazlar (COD), cihaza, nasıl satın alındığına ve kuruluşun gereksinimlerine bağlı olarak Intune tarafından çeşitli yollarla yönetime getirilebilir.
+Kuruluşa ait cihazlar (COD), cihaza, nasıl satın alındığına ve kuruluşun gereksinimlerine bağlı olarak Intune tarafından çeşitli yollarla yönetime getirilebilir. Şirkete ait cihazlar, ayrıca, “kendi cihazını getir” (BYOD) senaryolarında olduğu gibi Şirket Portalı uygulamaları yüklenerek de kaydedilebilir ve yönetilebilir.
 
 ## Şirketin sahip olduğu iOS cihazları
 Bu kayıt yöntemleri, kuruluşun kullanıcılar için cihaz satın aldığı ancak cihazın yönetimini elinde tutmak istediği "Kendi cihazını seç" (KCS) senaryolarına uygundur. Kuruluşunuz iOS cihazları satın aldıysa, cihazın kullanıcı tarafından ilk kez açılmasından başlayarak yönetilebilmesi için, kaydı önceden yapılandırabilirsiniz. Intune, [Apple'ın Cihaz Kayıt Programı (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) aracılığıyla ya da [doğrudan](ios-direct-enrollment-in-microsoft-intune.md) veya [Kurulum Yardımcısı](ios-setup-assistant-enrollment-in-microsoft-intune.md) kaydı için Mac bilgisayarda çalışan Apple Configurator aracı kullanılarak kayıt yapılmasını destekler.
@@ -53,6 +53,6 @@ Benzersiz uluslararası mobil donanım kimliği (IMEI) numaraları, birçok mobi
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

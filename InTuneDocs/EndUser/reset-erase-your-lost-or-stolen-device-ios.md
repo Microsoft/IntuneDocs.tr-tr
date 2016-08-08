@@ -3,8 +3,8 @@ title: "Kaybolan veya çalınan iOS cihazınızı sıfırlama (silme) | Microsof
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/09/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: f6e7e40973428762995feceac109a8367813dadd
 
 
 ---
@@ -30,7 +30,7 @@ Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir 
 
 ## Şirket Portalı uygulamasını kullanarak cihazınızı sıfırlamak için
 
-1.  Tarayıcınızda Şirket Portalı’nıza gidin ve iş hesabınızda oturum açın.
+1.  Kayıtlı başka bir cihazdan Şirket Portalı uygulamasını açın ve iş veya okul hesabınızı kullanarak giriş yapın.
 
 2.  **Cihazlarım** altında kayıp veya çalıntı cihaz seçeneğini belirleyin.
 
@@ -40,7 +40,7 @@ Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir 
 
 Aşağıdaki adımları kullanabilir veya bu videoyu izleyebilirsiniz:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/3rrXe8XmtgU" frameborder="0" allowfullscreen></iframe>
 
 1.  [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) silmek istediğiniz cihazı seçin.
 
@@ -52,6 +52,7 @@ Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

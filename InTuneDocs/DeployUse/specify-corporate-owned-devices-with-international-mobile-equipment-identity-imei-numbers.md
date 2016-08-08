@@ -1,25 +1,26 @@
 ---
-title: "Uluslararası mobil donanım kimliği (IMEI) numaralarıyla şirkete ait cihazları belirtme | Microsoft Intune"
-description: 
+title: "IMEI numaralarını belirtme | Microsoft Intune"
+description: "Microsoft Intune, şirkete ait mobil cihazları tanımaya yardımcı olmak için yöneticilerin mobil cihaz platformu IMEI numaralarını içeri aktarmasına izin verir"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-ms.sourcegitcommit: 398d93d4e2317d00a2f9d5f89966aaec3b942504
-ms.openlocfilehash: af4b87eb8082ee5ff11cd2d42b788ad17b334bcb
+translationtype: Human Translation
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 4e2092182dbda4523c19afeabc34aa0166962c40
 
 
 ---
 
 # Uluslararası mobil donanım kimliği (IMEI) numaralarıyla şirkete ait cihazları belirtme
-Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamaya yardımcı olmak üzere bir IMEI numarasına sahip mobil cihazlar için uluslararası mobil donanım kimliği (IMEI) numaralarını içeri aktarmasını sağlar. Intune’a kaydedildikten sonra, IMEI numaraları içeri aktarılan cihazlar, **Gruplar** > **Genel bakış** > **Tüm Cihazlar** > **Kurumsal Ön kayıtlı cihazlar** > **IMEI’ye Göre (Tüm platformlar)** altında görülebilir.
+Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamaya yardımcı olmak üzere bir IMEI numarasına sahip mobil cihazlar için uluslararası mobil donanım kimliği (IMEI) numaralarını içeri aktarmasını sağlar. Intune’a kaydolduktan sonra içeri aktarılmış IMEI numarası olan cihazlar **Gruplar** > **Genel Bakış** > **Tüm Cihazlar**’ın altından görüntülenebilir. **Cihaz grubu** listeleri, içeri aktarılmış IMEI numarası olan cihazları **Sahibi** sütununda **Şirket** olarak görüntüler.
 
 1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Kurumsal Ön Kayıtlı Cihazlar** &gt; **IMEI’ye Göre (Tüm platformlar)** öğesine gidin ve ardından **Cihaz ekle…** öğesini seçin. İki yolla cihaz ekleyebilirsiniz:
 
@@ -48,6 +49,6 @@ Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamaya yard
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

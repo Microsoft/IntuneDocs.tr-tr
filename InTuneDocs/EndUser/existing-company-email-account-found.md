@@ -3,18 +3,19 @@ title: "Mevcut şirket e-posta hesabı bulundu | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 02a07a6017ed2bb569dd9d3756f84b7b8078f630
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 05a0f33fa62d3f614437a54441dcb796c51c0f91
 
 
 ---
@@ -26,7 +27,7 @@ Zaten bir şirket e-posta hesabınız var. Şirket e-postasına bağlanmaya deva
 
     Örneğin, iOS cihazında **Ayarlar** &gt; **Posta, Kişiler, Takvim**’e dokunun. İş e-posta hesabınızı seçin ve ardından **Sil**’e tıklayın.
 
-2.  Cihazınızda şirket portalı uygulamasını açın ve **Uyumluluğu Denetle**’ye dokunun.
+2.  Cihazınızda Şirket Portalı uygulamasını açın ve **Uyumluluğu Denetle**’ye dokunun.
 
 3.  Yeni e-posta ayarlarının cihazınıza otomatik olarak uygulanması için kısa bir süre bekleyin.
 
@@ -34,7 +35,6 @@ Yeni e-posta ayarları bir süre sonra gösterilmezse, BT yöneticinize başvuru
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

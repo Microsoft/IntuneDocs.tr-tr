@@ -3,8 +3,8 @@ title: "Kaybolan veya çalınan Android cihazınızı sıfırlama (silme) | Micr
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 05/31/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 9797eb4b7b18527d13fc1f0a9cbcc900d76dc54f
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: d9f31b48fb1b44a0bdf07a6eee3fe5b19f7bf610
 
 
 ---
@@ -27,12 +27,12 @@ Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir 
 
 Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için, bkz. [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] 
+> [!WARNING]
 > Cihaz fabrika varsayılanlarına sıfırlandığında hem kişisel hem de iş veya okul ile ilgili bilgileriniz cihazdan kaldırılır.
 
 ## Cihazınızı Şirket Portalı uygulamasından sıfırlamak için
 
-1.  Tarayıcınızda [Şirket Portalı web sitesi](http://portal.manage.microsoft.com)’ni açıp iş veya okul hesabınızda oturum açın.
+1.  Kayıtlı başka bir cihazdan Şirket Portalı uygulamasını açın ve iş veya okul hesabınızı kullanarak giriş yapın.
 
 2.  **Cihazlarım**’a dokunun ve kaybolan veya çalınan cihazın adını seçin.
 
@@ -42,7 +42,7 @@ Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için
 
 Aşağıdaki adımları kullanabilir veya bu videoyu izleyebilirsiniz:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=K-Vi7lNfaMk&feature=youtu.be" frameborder="0" allowfullscreen></iframe> 
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6e73o7f8gxE" frameborder="0" allowfullscreen></iframe>
 
 1.  Tarayıcınızda [Şirket Portalı web sitenizi](http://portal.manage.microsoft.com) açın ve iş hesabınızda oturum açın.
 
@@ -57,7 +57,6 @@ Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden 
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

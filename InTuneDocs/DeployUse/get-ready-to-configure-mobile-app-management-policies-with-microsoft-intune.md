@@ -3,8 +3,8 @@ title: "MAM ilkelerini yapılandırmaya hazırlanma | Microsoft Intune"
 description: "Bu konu başlığı altında, mobil uygulama yönetimi ilkelerini oluşturabilmeniz için gereken önkoşullar ve kullanıcıları ayarlama işlemleri açıklanır."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: ca84a9ce4a1a418c1107f11dbb66cf64362a77f5
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
 
 
 ---
@@ -79,11 +79,13 @@ MAM ilkelerini yapılandırabilmeniz için *önceden* gerekenler:
 
     ![Office portalında Etkin Kullanıcılar sayfası](../media/AppManagement/OfficePortal_AddUsers.png)
 
+    ![Office portalında kullanıcı sayfasını düzenleme](../media/AppManagement/OfficePortal_AssignLicenses.png)
+
 4.  Bir kullanıcıya Office portalı, Azure AD portalı ve Azure önizleme portalı erişimi vermek için, kullanıcıya **Genel yönetici rolü** atayın.
 
     ![Office portalında kullanıcı rollerini düzenleme sayfası](../media/AppManagement/OfficePortal_AddRoletoUser.png)
 
-5.  MAM ilkeleri Azure Active Directory'deki kullanıcı gruplarına dağıtılır. MAM ilkelerinize kullanıcı grupları oluşturmak için, Office portalındaki **Gruplar** sayfasına gidin ve **+** simgesine tıklayarak yeni bir güvenlik grubu oluşturun.  Bir ad ve açıklama yazıp **Oluştur**’a tıklayın. Grup oluşturulduğunda, **Üyeleri düzenle** ‘ye tıklayarak kullanıcıyı gruba ekleyebilirsiniz. Azure Active Directory’de güvenlik grubu oluşturulur.
+5.  MAM ilkeleri Azure Active Directory'deki kullanıcı gruplarına dağıtılır. MAM ilkelerinizden kullanıcı grupları oluşturmak için, Office portalındaki **Gruplar** sayfasına gidin ve yeni bir güvenlik grubu oluşturmak için en üst menüdeki **Grup seçeneği ekle**’yi seçin.  Bir ad ve açıklama yazıp **Oluştur**’a tıklayın. Grup oluşturulduğunda, **Üyeleri düzenle** ‘ye tıklayarak kullanıcıyı gruba ekleyebilirsiniz. Azure Active Directory’de güvenlik grubu oluşturulur.
 
     ![Office portalında güvenlik grupları sayfası](../media/AppManagement/OfficePortal_CreateGroups.png)
 
@@ -123,6 +125,6 @@ Genel yöneticiler [Azure portalına](https://portal.azure.com) erişebilir.  Di
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

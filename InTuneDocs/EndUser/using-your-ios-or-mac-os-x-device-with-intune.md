@@ -3,8 +3,8 @@ title: "iOS veya Mac OS X cihazınızı Intune ile kullanma | Microsoft Intune"
 description: "iOS veya Mac OS X mobil cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Şirketiniz Microsoft Intune kullanıyorsa iOS veya Mac OS X cihazınızda gerçekleştirmeniz gereken görevler için bu adımları kullanın.
+Bu sayfa, son kullanıcıların Intune tarafından yönetilen cihazlarında yapabileceği görevlerin tümüne bağlantılar içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettikleri adımları görmek için bu bilgiye başvurabilir. Bu görevler kayıt ile ilgili bilgiler, yönetim görevleri ve uyumluluk sorunları gibi kategorilere ayrılır.
 
 ## Şirket Portalı uygulaması yüklemesi ve Intune kaydı
 
@@ -61,8 +61,6 @@ Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydolduğunda karşılaşab
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

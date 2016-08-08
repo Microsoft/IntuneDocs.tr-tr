@@ -3,8 +3,8 @@ title: "Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize g�
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6cd0c267dc93d08369ecfb10939af8140b3c57e9
 
 
 ---
@@ -23,9 +23,11 @@ ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 # Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme
 
-Bir sorunla ilgili yardım almak için BT yöneticinize veri günlüğü göndermek istiyorsanız, günlükleri mobil cihazdan göndermek yerine bir bilgisayar ve USB kablosu kullanarak gönderebilirsiniz. Şöyle yapılır:
+Bir sorunla ilgili yardım almak için BT yöneticinize veri günlükleri göndermek istiyorsanız, günlükleri mobil cihazınız yerine bir bilgisayar ve bir USB kablosu kullanarak gönderebilirsiniz. Şöyle yapılır:
 
-1.  Başlamadan önce, BT yöneticinizin e-posta adresini bildiğinizden emin olun. Normalde bu e-posta adresi Şirket Portalı web sitenizde veya Şirket Portalı uygulamanızda listelenir.
+1.  Hata ekranında **Bilgi Gönder**’e dokunun. Günlükleri göndermek için hangi yöntemi kullanmak istediğinizi soran bir ileti gördüğünüzde, dosyaları cihazınıza kaydedecek seçeneği işaretleyin.
+
+2.  Başlamadan önce BT yöneticinizin, çoğunlukla [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) veya Şirket Portalı uygulamanızda listelenen e-posta adresini bildiğinizden emin olun.
 
 2.  Android cihazınızı bir bilgisayara bağlamak için USB kablosu kullanın.
 
@@ -39,6 +41,7 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

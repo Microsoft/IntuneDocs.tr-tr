@@ -3,8 +3,8 @@ title: "Windows cihazınızı Intune ile kullanma | Microsoft Intune"
 description: "Windows cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 018d8936fe9158ebd85920cac978844e6949fb64
-ms.openlocfilehash: c1fe0db8967ad2c483718bdc908097967be8b459
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 85e6b4c4e507b83ba4a5f104e552e5a4f1fd68f2
 
 
 ---
 
 # Windows cihazınızı Intune ile kullanma
 
-Şirketinizde Microsoft Intune kullanılıyorsa, Windows cihazınızda veya bilgisayarınızda gerçekleştirmeniz gereken görevler için bu adımları kullanın.
+Bu sayfa, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlere bağlantılar içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettikleri adımları görmek için bu bilgiye başvurabilir. Bu görevler kayıt ile ilgili bilgiler, yönetim görevleri ve uyumluluk sorunları gibi kategorilere ayrılır.
 
 ## Şirket Portalı uygulaması yüklemesi ve Intune kaydı
 
@@ -57,8 +57,6 @@ Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydolduğunda karşıla
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

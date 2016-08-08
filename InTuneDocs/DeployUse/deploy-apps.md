@@ -3,7 +3,7 @@ title: "Uygulamaları dağıtma | Microsoft Intune"
 description: "Bu konu başlığı altında, Intune’la uygulamaları dağıtmaya başlamadan önce anlamanız gereken kavramlar açıklanır."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
+ms.sourcegitcommit: c4a760b6362356a6bafa8b6acc69299647a5e0f3
+ms.openlocfilehash: 377597aabc03c020060e2851c6fc25e0c780ea51
 
 
 ---
@@ -27,14 +27,14 @@ Bu konu başlığı altında, Microsoft Intune’la uygulamaları dağıtmaya ba
 ## Uygulama dağıtım eylemleri
 Uygulamaları dağıtırken aşağıdaki dağıtım eylemlerden birini seçebilirsiniz:
 
--   **Gerekli yükleme** – Uygulama herhangi bir son kullanıcı müdahalesi gerekmeden cihaza yüklenir.
+-   **Gerekli yükleme** – Uygulama herhangi bir kullanıcı müdahalesi gerekmeden cihaza yüklenir.
 
     > [!TIP]
     > Denetimli modda olmayan iOS cihazları ve tüm Android cihazları için kullanıcı yükleme öncesinde uygulama teklifini kabul etmelidir.
-    > 
-    >  Son kullanıcı gerekli bir yükleme olarak dağıttığınız bir uygulamayı kaldırırsa, Intune normalde 7 günde bir gerçekleştirilen bir sonraki envanter döngüsünden sonra uygulamayı otomatik olarak yeniden yükler.
+    >
+    >  Bir kullanıcı gerekli yükleme olarak dağıttığınız bir uygulamayı kaldırırsa, Intune genelde yedi günde bir gerçekleştirilen bir sonraki envanter döngüsünden sonra uygulamayı otomatik olarak yeniden yükler.
 
--   **Kullanılabilir yükleme** – Uygulama şirket portalında gösterilir ve son kullanıcılar tarafından isteğe bağlı olarak yüklenebilir.
+-   **Kullanılabilir yükleme** – Uygulama şirket portalında gösterilir ve kullanıcılar tarafından isteğe bağlı olarak yüklenebilir.
 
 -   **Kaldır** – Uygulama cihazdan kaldırılır.
 
@@ -60,11 +60,11 @@ Uygulamaları dağıtırken aşağıdaki dağıtım eylemlerden birini seçebili
 ## Dağıtım çakışmaları
 Bir cihaz tarafından aynı dağıtım eylemiyle iki dağıtım alındığında aşağıdaki kurallar geçerli olur:
 
--   Cihaz grubuna yapılan dağıtımlar, kullanıcı grubuna yapılan dağıtımlara göre önceliklidir. Ancak, bir uygulama **Kullanılabilir** dağıtım eylemiyle bir kullanıcı grubuna dağıtılır ve aynı uygulama aynı zamanda **Geçerli Değil**dağıtım eylemiyle bir cihaz grubuna dağıtılırsa, uygulama şirket portalında kullanıcılar tarafından yüklenebilir.
+-   Cihaz grubuna yapılan dağıtımlar, kullanıcı grubuna yapılan dağıtımlara göre önceliklidir. Ancak bir uygulama **Kullanılabilir** dağıtım eylemiyle bir kullanıcı grubuna dağıtılır ve aynı uygulama aynı zamanda **Geçerli Değil** dağıtım eylemiyle bir cihaz grubuna dağıtılırsa, uygulama şirket portalında kullanıcılar tarafından yüklenebilir.
 
 -   Yükleme eylemi, kaldırma eylemine göre önceliklidir.
 
--   Bir cihaz tarafından hem zorunlu hem de kullanılabilir bir yükleme alınırsa, eylemler birleştirilir (uygulama hem zorunlu hem de kullanılabilir olur - başka bir deyişle, son kullanıcı, zorunlu yükleme başlamadan önce kullanıcı onu şirket portalından yükleyebilir).
+-   Cihaz tarafından hem gerekli yükleme hem de kullanılabilir yükleme alınırsa, eylemler birleştirilir. Başka bir deyişle, kullanıcı, gerekli yüklemeye başlamadan önce şirket portalından kullanılabilir uygulamayı yükleyebilir.
 
 
 ## Sonraki adımlar
@@ -73,6 +73,6 @@ Bir cihaz tarafından aynı dağıtım eylemiyle iki dağıtım alındığında 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

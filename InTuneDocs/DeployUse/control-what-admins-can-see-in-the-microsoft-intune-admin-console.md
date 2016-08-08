@@ -3,7 +3,7 @@ title: "Konsol görünümlerini yönetici rolleri için özelleştirme | Microso
 description: "Intune yönetim konsolu görünümünü filtreleyerek, yöneticilerinize yalnızca rolleri için gereken öğelerin gösterilmesini sağlamanıza yardımcı olmak için bu konuyu kullanın."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,16 +13,16 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
+ms.sourcegitcommit: 217655d3c33ac88672f0739302f182cf6a6ae335
+ms.openlocfilehash: dc9bb2992d3e3ed8134cfa2146295e16edf4e459
 
 
 ---
 
 # Intune konsol görünümlerini yönetici rollerine göre özelleştirme
-Microsoft Intune yönetim konsolu görünümünü filtreleyerek, yöneticilerinize yalnızca rolleri için görmeleri gereken öğelerin gösterilmesini sağlayabilirsiniz. Örneğin, yalnızca yönetici konsolu kullanıcılarının kötü amaçlı yazılım tanımlarını güncelleştirebilmesine veya cihazlardaki şifreyi sıfırlamasına izin verebilirsiniz. Bunu, belirli kullanıcılara atadığınız, önceden ayarlanmış **belirtimler** kullanılarak yaparsınız. Bu kullanıcılar yönetici konsoluna eriştiğinde yalnızca belirtimlerine özgü öğeleri görürler.
+Yöneticilerinizin yalnızca rolleri için görmeleri gereken öğeleri görmelerini sağlamak için Microsoft Intune yönetim konsolu görünümünü filtreleyebilirsiniz. Örneğin, yalnızca yönetici konsolu kullanıcılarının kötü amaçlı yazılım tanımlarını güncelleştirebilmesine veya cihazlardaki şifreyi sıfırlamasına izin verebilirsiniz. Bunu, belirli kullanıcılara atadığınız, önceden ayarlanmış **belirtimler** kullanılarak yaparsınız. Bu kullanıcılar yönetim konsoluna eriştiklerinde, yalnızca belirtimlerine özgü öğeleri görebilir.
 
-## Özel görünüm oluşturma
+## Özel bir görünüm oluşturmak için
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetim** &gt; **Hizmet Yöneticileri**’ni seçin.
 
@@ -64,10 +64,10 @@ Microsoft Intune yönetim konsolu görünümünü filtreleyerek, yöneticilerini
 
         -   Geçiş kodu sıfırlama
 
-Yapılandırdığınız yöneticiye, Intune yönetim konsolunu bir sonraki defa açtığında onun için belirttiğiniz erişim düzeyi verilir.
+Yapılandırdığınız yöneticiye, Intune yönetim konsolunu bir sonraki açısında kendisine onun için belirttiğiniz erişim düzeyi verilir.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
