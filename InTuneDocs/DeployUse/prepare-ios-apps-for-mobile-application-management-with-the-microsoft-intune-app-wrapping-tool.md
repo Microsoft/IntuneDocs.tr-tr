@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
-ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ Bir uygulama, bir uygulama etrafında 'sarıcı' oluşturan bir Mac OS komut sat
 Aracı indirmek için bkz. [iOS için Microsoft Intune Uygulama Sarmalama Aracı](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## 1. Adım Uygulama sarmalama aracını kullanmak için önkoşulları karşılama
+Ön koşullar ve bunları nasıl ayarlayacağınız hakkında bilgi edinmek için [bu blog gönderisini](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) okuyun.
 
 |Gereksinim|Daha fazla bilgi|
 |---------------|--------------------------------|
 |Desteklenen işletim sistemi ve araç takımı|Uygulama sarmalama aracını, XCode araç takımının sürüm 5 veya üzerinin yüklü olduğu OS X 10.8.5 ya da üzerini çalıştıran bir Mac bilgisayarda çalıştırmalısınız.|
 |İmzalama sertifikası ve sağlama profili|Bir Apple imzalama sertifikanız ve sağlama profiliniz olmalıdır. [Apple geliştirici belgelerinize](https://developer.apple.com/) bakın.|
-|Uygulama Sarmalama Aracı’yla bir uygulamayı işleme|Uygulamalar şirketiniz veya bağımsız bir yazılım satıcısı (ISV) tarafından geliştirilmiş ve imzalanmış olmalıdır. Bu aracı Apple Store'dan edinilen uygulamaları işlemek için kullanamazsınız. Uygulamalar iOS 7.0 veya üzeri için yazılmış olmalıdır. Ayrıca uygulamalar Konumdan Bağımsız Yürütülebilir (PIE) biçiminde olmalıdır. PIE biçimi hakkında daha fazla bilgi için Apple geliştirici belgelerinize bakın. Son olarak, uygulamanın uzantısı **.app** veya **.ipa** olmalıdır.|
+|Uygulama Sarmalama Aracı’yla bir uygulamayı işleme|Uygulamalar şirketiniz veya bağımsız bir yazılım satıcısı (ISV) tarafından geliştirilmiş ve imzalanmış olmalıdır. Bu aracı Apple Store'dan edinilen uygulamaları işlemek için kullanamazsınız. Uygulamalar iOS 7.1 veya üzeri için yazılmış olmalıdır. Ayrıca uygulamalar Konumdan Bağımsız Yürütülebilir (PIE) biçiminde olmalıdır. PIE biçimi hakkında daha fazla bilgi için Apple geliştirici belgelerinize bakın. Son olarak, uygulamanın uzantısı **.app** veya **.ipa** olmalıdır.|
 |Sarmalama aracının işleyemediği uygulamalar|Şifrelenmiş uygulamalar, imzalanmamış uygulamalar ve genişletilmiş dosya öznitelikleri olan uygulamalar.|
 |Azure Active Directory Library’yi (ADAL) kullanan uygulamalar|Uygulamanız ADAL kullanıyorsa, uygulama 1.0.2 veya daha büyük bir ADAL sürümü içermelidir ve geliştirici kendi uygulama erişimini Intune Mobil Uygulama Yönetimi kaynağına vermelidir.<br /><br />ADAL’ın kullanımı hakkındaki ayrıntılar için bu makalede [Azure Active Directory Library’yi kullanan uygulamalarla ilgili bilgiler](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) bölümüne bakın.|
 |Uygulamanız için yetkilendirmeleri ayarlama|Uygulamayı sarmalamadan önce, uygulamaya normal olarak verilenlerin ötesinde ek izinler ve yetenekler veren yetkilendirmeler ayarlamanız gerekir. Yönergeler için bkz. [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements).|
@@ -292,6 +293,6 @@ Uygulama sarmalama aracını kullanırken, güvenlik ve gizlilik açısından a�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

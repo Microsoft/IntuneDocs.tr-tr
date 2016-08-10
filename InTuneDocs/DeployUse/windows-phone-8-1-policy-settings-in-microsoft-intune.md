@@ -4,7 +4,7 @@ description: "Intune, Windows Phone 8.1 cihazlarında yapılandırabileceğiniz 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 04fca72cd426ee4718e100cb2633ca2c967b4c05
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -109,11 +109,11 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 |----------------|-----------------------------------------|
 |**Kopyalama ve yapıştırmaya izin ver**|Cihazda kopyalama ve yapıştırma işlevine izin verin.|Hayır|Evet|
 
-### Uyumlu ve uyumlu olmayan uygulamalar için ayarlar
-**Uyumlu &amp; Uyumsuz Uygulamalar** listesinde, aşağıdaki bilgileri kullanarak uyumlu veya uyumsuz uygulamalar listesini belirtin:
+### İzin verilen ve engellenen uygulamalar için ayarlar
+**İzin verilen ve engellenen uygulamalar** listesinde, aşağıdaki bilgileri kullanarak izin vermek ya da engellemek istediğiniz uygulamaların bir listesini belirtin:
 
 > [!NOTE]
-> Tek bir ilke, yalnızca uyumlu uygulamaların veya uyumsuz uygulamaların listesini içerebilir. İkisi de aynı ilkede belirtemezsiniz.
+> Tek bir ilke yalnızca izin verilen uygulamaların veya engellenen uygulamaların bir listesini içerebilir. İkisi de aynı ilkede belirtemezsiniz.
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 > Windows Phone 8.1 cihazları için izin verilen uygulamaların bir listesini belirtirseniz, Şirket Portalı uygulamasını bu listeye ekleyin, aksi takdirde engellenir.
 
 
-### Uyumlu ve uyumlu olmayan uygulamalar için başvuru bilgileri
+### İzin verilen ve engellenen uygulamalar için başvuru bilgileri
 
 #### Uygulama mağazalarının URL'lerini belirtme
-Uyumlu veya uyumlu olmayan uygulama listesinde bir uygulama URL'si belirtmek için aşağıdaki biçimi kullanın:
+İzin verilen veya engellenen uygulamalar listesinde bir uygulama URL'si belirtmek için aşağıdaki biçimi kullanın:
 
  [Windows Phone Uygulamaları + Oyunlar sayfasından](http://www.windowsphone.com/en-us/store/overview) , kullanmak istediğiniz uygulamayı arayın.
 
-Uygulamanın sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu uyumlu uygulamalar listesinde veya uyumsuz uygulamalar listesinde gerekli URL olarak kullanabilirsiniz.
+Uygulamanın sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu izin verilen veya engellenen uygulamalar listesinde URL olarak kullanabilirsiniz.
 
 **Örnek:** Mağazada Skype uygulamasını arayın. Kullandığınız URL **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51** olacaktır.
 
@@ -172,6 +172,6 @@ Windows Phone cihazlar için OMA-URI ayarlarını oluşturmanıza yardımcı olm
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,13 +13,15 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 79377078bf5b4c6dad0a3dc4a07a2e84aa2563f8
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: fae2aa496ec38d9ddc2cb6800bed10ccb32fd154
 
 
 ---
 
 # Windows cihaz yönetimini ayarlama
+Windows cihazınızı ayarlamak için [buradan](../enduser/using-your-windows-device-with-intune.md) yardım bulabilirsiniz.
+
 Intune’la, şirket e-postasına ve uygulamalarına erişim sağlamak üzere Windows bilgisayarları için KCG ("kendi cihazını getir") cihaz kaydını etkinleştirebilirsiniz. Azure Active Directory ile kullanılan bu özellik ayrıca, yeni Windows 10 cihazlarını yönetime getirmenin ve bilgisayarın görüntüsünü yeniden oluşturmak zorunda kalmadan şirket kaynaklarına erişim kazanmanın hızlı ve müdahale gerektirmeyen bir yolunu sağlar. Kayıt yapıldıktan sonra, kullanıcılar oturum açabilir ve Intune yönetim konsolu kullanılarak ilkeler, uygulamalar ve ayarlarda cihazları hedeflenebilir. Ayrıca, [Microsoft Intune’la Windows Phone yönetimini ayarlamak](set-up-windows-phone-management-with-microsoft-intune.md) veya Intune istemcisini kullanarak [Intune istemci yazılımıyla bilgisayarları yönetmek](manage-windows-pcs-with-microsoft-intune.md) isteyebilirsiniz.
 
 DNS CNAME oluşturmak, kullanıcıların sunucu adı girmeden bağlantı kurmalarına ve Intune’a kaydolmalarına yardımcı olur.
@@ -41,15 +43,20 @@ DNS CNAME oluşturmak, kullanıcıların sunucu adı girmeden bağlantı kurmala
 
   **EnterpriseRegistration.windows.net** – İş veya okul hesabı kullanılarak Azure Active Directory’ye kaydolacak Windows 8.1 ve Windows 10 Mobile cihazlarını destekler.
 
-  2.  [Intune yönetim konsolunda](http://manage.microsoft.com), **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows** öğelerine tıklayın.
+  2.  [Intune yönetim konsolunda](http://manage.microsoft.com), **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows**’a tıklayın.
   ![Windows cihaz yönetimi iletişim kutusu](../media/enroll-intune-winenr.png)
+
   3.  **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin doğrulanmış etki alanının URL'sini yazın ve ardından **Otomatik Algılamayı Sına**'ya tıklayın.
+
+  4.  Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir.
+      - [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+      - [Windows cihazlar için son kullanıcı kılavuzu](../enduser/using-your-windows-device-with-intune.md)
 
 ### Ayrıca bkz.
 [Microsoft Intune’da cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

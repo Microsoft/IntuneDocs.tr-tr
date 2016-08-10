@@ -13,8 +13,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: d6d929b83b967cc4efdc84ecc3262c5c1f509351
+ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
+ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 
 ---
@@ -22,6 +22,11 @@ ms.openlocfilehash: d6d929b83b967cc4efdc84ecc3262c5c1f509351
 # Özel ilke kullanarak Android cihazları için uygulama başına VPN profili oluşturma
 
 Intune tarafından yönetilen Android cihazları için uygulama başına VPN profili oluşturabilirsiniz. Öncelikle, Pulse Secure bağlantı türünü kullanan bir VPN profili oluşturursunuz ve sonra da bu profili belirli uygulamalarla ilişkilendiren özel bir yapılandırma ilkesi oluşturursunuz. Bu ilkeleri Android cihaz veya kullanıcı gruplarınıza dağıttıktan sonra, belirtilen uygulamalardan birinin söz konusu cihazlarda açılması, bu uygulama için VPN bağlantısını açar.
+
+> [NOT]
+> 
+> Bu profil için yalnızca Pulse Secure bağlantı türü desteklenir.
+
 
 ### 1. Adım: VPN profili oluşturma
 
@@ -76,6 +81,6 @@ Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve *yalnızca* belirt
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

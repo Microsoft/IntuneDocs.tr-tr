@@ -4,7 +4,7 @@ description: "Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobi
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,7 +45,6 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |**Parola geçerlilik süresi (gün)**|Cihaz parolasının ne kadar süre sonra değiştirilmesi gerektiğini belirtir.|
 |**Parola geçmişini anımsa**|Son kullanıcının daha önce kullanılmış parolalar oluşturmasını kısıtlamak isteyip istemediğinizi belirtir.|
 |**Parola geçmişini anımsa** - **Önceki parolaların yeniden kullanılmasını önle**|Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.|
-|**Resimli parolaya veya PIN’e izin ver**|Oturum açmak için bir resim üzerinde basit hareketler veya basit bir PIN kullanmanıza olanak sağlar.<br>(Yalnızca Windows 10 masaüstü)|
 |**Cihaz boş bir durumdan döndürüldüğünde parola iste**|Etkinleştirilirse, boşta durumundaki bir cihazın kilidini açmak için kullanıcının parola girmesi gerekir.<br>(Yalnızca Windows 10 Mobile)|
 
 ### Şifreleme
@@ -71,14 +70,6 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |**Microsoft Hesabına izin ver**|Kullanıcının bir Microsoft hesabını cihazla ilişkilendirmesine olanak sağlar.|
 |**Microsoft olmayan hesapların elle eklenmesine izin ver**|Kullanıcının cihaza bir Microsoft hesabıyla ilişkilendirilmemiş e-posta hesapları eklemesine olanak sağlar.|
 |**Microsoft hesapları için ayarları eşitlemeye izin ver**|Microsoft hesabıyla ilişkilendirilmiş cihaz ve uygulama ayarlarının cihazlar arasında eşitlenmesine izin verin.|
-
-### E-posta ayarları
-
-|Ayar adı|Ayrıntılar|
-|----------------|----------------------|---------------------|
-|**Microsoft hesabını Windows Mail uygulamasında isteğe bağlı hale getir**|Windows Mail uygulamasında Microsoft hesabı gereksinimini kaldırmak için bunu yapılandırın.<br>Yalnızca Windows 10 masaüstü|
-
-
 
 ### Microsoft Edge
 
@@ -127,7 +118,6 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |**Bluetooth'a izin ver**|Cihazda Bluetooth özelliklerinin kullanılmasına izin verir.|
 |**Bluetooth bulunabilirlik moduna izin ver**|Bu cihazın diğer Bluetooth özellikli cihazlar tarafından bulunabilmesine olanak sağlar.|
 |**Bluetooth reklamlarına izin ver**|Cihazların Bluetooth üzerinden reklam almasına izin verir.|
-|**Bluetooth bağlanılabilirlik moduna izin ver**|**Önemli:** Bu ayar Windows 10’da artık desteklenmez ve bir süre sonra kaldırılacaktır.|
 |**Telefon sıfırlamaya izin ver**|Kullanıcının cihazını fabrika ayarlarına sıfırlayıp sıfırlayamayacağını denetler.|
 |**USB bağlantısına izin ver**|Cihazların USB bağlantısı aracılığıyla dış depolama cihazlarına erişip erişemeyeceğini denetler.|
 |**AntiTheft modunu etkinleştir**|Windows AntiTheft modunun etkin olup olmadığını yapılandırın.|
@@ -177,6 +167,7 @@ Tüm ayarlar yalnızca Windows 10 masaüstüne yöneliktir.
 |Ayar adı|Ayrıntılar|
 |----------------|---------------|
 |**Otomatik güncelleştirmelere izin ver**|Otomatik güncelleştirmelere izin vermek bu ayarı etkinleştirin. Ardından, güncelleştirme davranışını denetlemek için aşağıdaki ayarlardan birini yapılandırın:<br /><br />**İndirmeyi bildir**<br /><br />**Bakım sırasında otomatik olarak yükle**<br /><br />**Bakım sırasında otomatik olarak yükle ve yeniden başlat**<br /><br />**Zamanlanan tarihte otomatik yükle ve yeniden başlat** **Not:** Bu seçenek belirtildiğinde şu ayarları yapılandırabilirsiniz: **Son kullanıcıya bildirimi önle** ve **Zamanlanmış güncelleştirmeler için yükleme gününü tanımla**.<br>(Yalnızca Windows 10 masaüstü)|
+|**Yayın öncesi özelliklere izin ver**|Microsoft’un Windows 10 cihazlara sürüm öncesi ayarlar ve özellikler dağıtmasına imkan tanır. Yalnızca ayarlara izin vermeyi tercih edebilirsiniz; aksi takdirde tüm sürüm öncesi ayarlar ve özellikler yüklenir.|
 
 ## Özel ilke ayarları
 Windows 10 ve Windows 10 Mobile cihazlarındaki özellikleri denetlemek için kullanılabilen OMA-URI (Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı) ayarlarını dağıtmak üzere Windows 10 ve Windows 10 Mobile cihazları için Microsoft Intune **özel yapılandırma ilkesini** kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
@@ -332,6 +323,6 @@ Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kay
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

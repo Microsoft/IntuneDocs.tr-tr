@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 3980d1a498ccab3eb5683e03e0cce252959b89dc
+ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
+ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
 
 
 ---
 
 # Microsoft Intune için Etkinleştirme Kilidi’ni atlama ile iOS cihazlarının korunmasına yardımcı olma
-Microsoft Intune, iOS 7.1 ve daha sonraki sürümlere sahip cihazlar için iPhone’umu Bul uygulamasının bir özelliği olan iOS Etkinleştirme Kilidi’ni yönetmenize yardımcı olabilir. Bir cihazda iPhone’umu Bul uygulaması kullanıldığında Etkinleştirme Kilidi otomatik olarak etkinleştirilir. Bu özellik etkinleştirildikten sonra şunların yapılabilmesi için Apple kimliği ve parolasının girilmesi gerekir:
+Microsoft Intune, iOS 7.1 ve daha sonraki sürümlere sahip cihazlar için iPhone’umu Bul uygulamasının bir özelliği olan iOS Etkinleştirme Kilidi’ni yönetmenize yardımcı olabilir. Bir cihazda kullanıcı tarafından iPhone’umu Bul uygulaması açıldığında Etkinleştirme Kilidi otomatik olarak etkinleştirilir. Bu özellik etkinleştirildikten sonra şunların yapılabilmesi için Apple kimliği ve parolasının girilmesi gerekir: 
 
 -   iPhone’umu Bul özelliğini kapatma
 
@@ -29,31 +29,31 @@ Microsoft Intune, iOS 7.1 ve daha sonraki sürümlere sahip cihazlar için iPhon
 -   Cihazı yeniden etkinleştirme
 
 ## Etkinleştirme Kilidi sizi nasıl etkiler
-Etkinleştirme Kilidi iOS cihazlarının korunmasına yardımcı olur ve cihazın kaybolması ya da çalınması durumunda bulunmasını kolaylaştırır, ancak bir BT yöneticisi olarak size belirli zorluklar çıkarabilir. Örneğin:
+Etkinleştirme Kilidi iOS cihazlarının korunmasına yardımcı olmasına ve kaybolan ya da çalınan cihazların bulunma ihtimalini artırmasına rağmen, bir BT yöneticisi olarak size belirli zorluklar çıkarabilir. Örneğin:
 
--   Kullanıcılarınızdan biri, bir cihazda Etkinleştirme Kilidi’ni ayarlar. Daha sonra kullanıcı şirketten ayrılır ve cihazı iade eder. Kullanıcının Apple Kimliği ve parolası olmadan cihazı yeniden etkinleştirmenin yolu yoktur.
+-   Bir kullanıcı bir cihazda Etkinleştirme Kilidi’ni ayarlar. Daha sonra kullanıcı şirketten ayrılır ve cihazı iade eder. Kullanıcının Apple Kimliği ve parolası olmadan cihazı yeniden etkinleştirmenin yolu yoktur.
 
 -   Etkinleştirme Kilidi’nin etkinleştirildiği tüm cihazların raporunu almanız gerekir.
 
--   Kurumunuzda bir cihaz yenileme işlemi sırasında bazı cihazları farklı bir birime atamak istiyorsunuz. Yalnızca Etkinleştirme Kilidi etkin olmayan cihazları yeniden atayabilirsiniz.
+-   Kurumunuzda cihaz yenileme işlemi sırasında bazı cihazları farklı bir birime atamak istiyorsunuz. Yalnızca Etkinleştirme Kilidi etkin olmayan cihazları yeniden atayabilirsiniz.
 
 Apple bu sorunların çözülmesine yardımcı olmak için iOS 7.1’de Etkinleştirme Kilidi’ni atlama özelliğini kullanıma sunmuştur. Bu özellik, denetlenen cihazların Etkinleştirme Kilidi’ni kullanıcının Apple kimliği ve parolası olmadan kaldırmanıza imkan sağlar. Denetlenen cihazlar, Apple’ın etkinleştirme sunucusunda depolanan, cihaza özgü bir Etkinleştirme Kilidi’ni atlama kodu oluşturabilir.
 
 > [!TIP]
-> iOS cihazları için denetimli mod, Apple Yapılandırıcı Aracı’nı kullanarak bir cihazın işlevselliğini işe dönük belirli amaçlarla sınırlandırmak için bir cihazı kilitlemenize imkan tanır. Denetimli mod genellikle yalnızca şirkete ait cihazlar içindir.
+> iOS cihazları için denetimli mod, Apple Configurator’ı kullanarak bir cihazı kilitlemenize ve cihaz işlevselliğini işe dönük belirli amaçlarla sınırlandırmanıza imkan tanır. Denetimli mod genellikle yalnızca şirkete ait cihazlar içindir.
 
 ## Intune, Etkinleştirme Kilidi’ni yönetmenize nasıl yardımcı olur
-Intune, iOS 7.1 ve sonraki sürümleri çalıştıran hem denetimli hem de denetimsiz cihazların Etkinleştirme Kilidi durumunu isteyebilir. Intune, yalnızca denetlenen cihazlar için Etkinleştirme Kilidi atlama kodunu alabilir ve doğrudan cihaza gönderebilir. Cihaz silinmişse, kodu kullanıcı adı gibi kullanarak, parolayı da boş bırakarak cihaza doğrudan erişebilirsiniz.
+Intune, iOS 7.1 ve sonraki sürümleri çalıştıran hem denetimli hem de denetimsiz cihazların Etkinleştirme Kilidi durumunu isteyebilir. Intune, yalnızca denetlenen cihazlar için Etkinleştirme Kilidi atlama kodunu alabilir ve doğrudan cihaza gönderebilir. Cihaz silinmişse, kodu kullanıcı adı gibi kullanıp parolayı boş bırakarak cihaza doğrudan erişebilirsiniz.
 
 **Bu özelliğin işletme açısından faydaları şunlardır:**
 
 -   Kullanıcı, iPhone’umu Bul Uygulamasının sunduğu güvenlik avantajlarından yararlanır.
 
--   Kullanıcının kendi işlerini yapmasına imkan tanırken, cihazın başka bir amaçla kullanılması gerektiğinde cihazı devre dışı bırakabileceğinizi veya cihazın kilidini açabileceğinizi bilirsiniz.
+-   Kullanıcıların kendi işlerini yapmasına imkan tanıyabilir ve cihazın başka bir amaçla kullanılması gerektiğinde cihazı devre dışı bırakabileceğinizi ya da cihazın kilidini açabileceğinizi bilirsiniz.
 
 ## Intune yönetim konsolundan Etkinleştirme Kilidi’ni atlama özelliğini kullanma
 > [!IMPORTANT]
-> Bir cihazda Etkinleştirme Kilidi’ni atladıktan sonra iPhone’umu Bul Uygulaması açılırsa cihaz otomatik olarak yeni bir etkinleştirme kilidi uygular. Bu nedenle, **bu yordamı izlemeden önce cihaza fiziksel olarak sahip olmanız gerekir**.
+> Bir cihazda Etkinleştirme Kilidi’ni atladıktan sonra iPhone’umu Bul Uygulaması’nı açarsanız cihaza otomatik olarak yeni bir etkinleştirme kilidi uygulanır. Bu nedenle, **bu yordamı izlemeden önce cihaza fiziksel olarak sahip olmanız gerekir**.
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirkete Ait Tüm Cihazlar** öğesini seçin.
 
@@ -66,7 +66,7 @@ Cihaz ayrıntıları sayfasında kilit açma isteğinin durumunu inceleyebilirsi
 ## Hangi cihazların etkinleştirme kilidi kullandığını görme
 Hangi cihazların Etkinleştirme Kilidi kullandığını iki yolla görebilirsiniz:
 
--    **Mobil Cihaz Envanteri Raporları**’nı çalıştırın. Bu rapor, cihazların durumunu göstermek için **Etkinleştirme Kilidi Durumu** ve **Denetimli** sütunlarını görüntüler.  **Denetimli** sütunundaki değerler **Evet** veya **Hayır**, **Etkinleştirme Kilidi Durumu** sütunundakilerse şunlardır:
+-    **Mobil Cihaz Envanteri Raporları**’nı çalıştırın. Bu rapor, cihazların durumunu belirtmek için **Etkinleştirme Kilidi Durumu** ve **Denetimli** sütunlarını gösterir.  **Denetimli** sütunundaki değerler **Evet** veya **Hayır**, **Etkinleştirme Kilidi Durumu** sütunundakilerse şunlardır:
 
     -   Atlama koduyla etkinleştirildi
 
@@ -76,14 +76,14 @@ Hangi cihazların Etkinleştirme Kilidi kullandığını iki yolla görebilirsin
 
     -   Etkin değil
 
-     **Etkinleştirme Kilidi Durumu** alanı, iOS 7.1 veya sonraki sürümleri çalıştırmayan cihazlar için boştur.
+    **Etkinleştirme Kilidi Durumu** kutusu, iOS 7.1 veya sonraki sürümleri çalıştırmayan cihazlar için boştur.
 
--   Bir grup görünümünde bir cihaz seçtiğinizde, cihaz ayrıntıları bölmesinde Etkinleştirme Kilidi durumunu görebilirsiniz.
+-   Cihaz ayrıntıları bölmesinde Etkinleştirme Kilidi durumunu görmek için grup görünümünde bir cihaz seçin.
 
     **Şirkete Ait Tüm Cihazlar** düğümündeki bir cihazı seçerseniz ve cihaz için Etkinleştirme Kilidi etkinleştirilmişse atlama kodunu da görebilirsiniz. Bu kod kullanılarak el ile Etkinleştirme Kilidi’ni atlama komutu gönderilebilir.
 
     > [!IMPORTANT]
-    >Intune, Etkinleştirme Kilidi için her 7 günde bir cihazlardan envanter alır. Bu nedenle, Intune konsolunda cihazların Etkinleştirme Kilidi durumu hemen görüntülenmeyebilir.
+    >Intune, Etkinleştirme Kilidi için her yedi günde bir cihazlardan envanter alır. Bu nedenle, Intune konsolunda cihazların Etkinleştirme Kilidi durumu hemen görüntülenmeyebilir.
 
 
 ### Ayrıca bkz.
@@ -92,6 +92,6 @@ Hangi cihazların Etkinleştirme Kilidi kullandığını iki yolla görebilirsin
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,65 +13,65 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 0779fca11a692ce6843ef2ebf1c6a459273fc7cc
+ms.sourcegitcommit: 72e6bcd3fd480c1ed8558fefd3958b4bbf3184c2
+ms.openlocfilehash: 39a844db56edf18f25996c1aaf52223ac80f8071
 
 
 ---
 
 # Microsoft Intune’da Exchange ActiveSync ilkesi ayarları
-Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevleri denetlemenize olanak sağlayan ayarları yapılandırmak için Microsoft Intune **Exchange ActiveSync** ilkesini kullanın.
+Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevleri denetleyen ayarları yapılandırmak için Microsoft Intune **Exchange ActiveSync** ilkesini kullanın.
 
 
 ## Parola ayarları
 
 |Ayar adı|Ayrıntılar
 |----------------|
-|**Mobil cihazların kilidini açmak için bir parola gerektir**|Cihazların parola kullanılarak kilitlenip kilitlenmeyeceğini belirtir.<br>(Windows RT çalıştıran cihazlara uygulanamaz)|
+|**Mobil cihazların kilidini açmak için bir parola gerektir**|Cihazların parola kullanılarak kilitlenip kilitlenmeyeceğini belirtir.<br>(Windows RT çalıştıran cihazlara uygulanamaz).|
 |**Gerekli parola türü**|Gerekli parola türünü belirtir (yalnızca sayısal veya alfasayısal gibi).|
-|**Minimum parola uzunluğu**|Cihaz parolasında bulunması gereken minimum karakter sayısını belirtir.|
-|**Basit parolalara izin ver**|Basit parolalar '0000' ve '1234' şeklindedir.|
-|**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Cihaz temizlenmeden önce doğru parolayı girmek için burada belirtilen sayıda girişimde bulunulmasına izin verir.|
+|**Minimum parola uzunluğu**|Cihaz parolasında bulunması gereken en az karakter sayısını belirtir.|
+|**Basit parolalara izin ver**|‘0000’ ve ‘1234’ gibi basit parolalar kullanıp kullanamayacağınızı belirtir.|
+|**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Cihaz temizlenmeden önce bir kullanıcının kaç kez hatalı parola girebileceğini belirtir.|
 |**Parola geçerlilik süresi (gün)**|Cihaz parolasının kaç gün sonra değiştirilmesi gerektiğini belirtir.
 |**Parola geçmişini anımsa**|Önceden kullanılmış parolaların kullanımına izin verilip verilmeyeceğini belirtir.|
-|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılmış olan parolalardan kaç tanesinin yeniden kullanılamayacağını belirtir.|
-|**Parola gerekmeden önce etkin olmama süresi (dakika)**|Ekran kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.
+|**Parola geçmişini anımsa** – **Önceki parolaların yeniden kullanılmasını önle**|Daha önce kullanılan kaç parolanın yeniden kullanılamayacağını belirtir.|
+|**Parola gerekmeden önce etkin olmama süresi (dakika)**|Ekran kilitlenmeden önce cihazın boşta beklemesi gereken süreyi belirtir.
 
 ## Şifreleme ayarları
 
 |Ayar adı|Ayrıntılar|
 |----------------|
-|**Mobil cihazda şifreleme iste**<sup>1</sup>|Desteklendiği durumlarda cihazdaki verilerin şifrelenmesini zorunlu tutar.<br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için **Mobil cihazların kilidini açmak için parola iste**ayarını etkinleştirin.|
-|**Depolama kartlarında şifrelemeyi gerektir**|SD kartı gibi dış depolama alanlarında depolanan verilerin şifrelenmesini zorunlu tutar (desteklenen cihazlarda).
+|**Mobil cihazda şifreleme iste**<sup>1</sup>|Desteklendiği durumlarda bir cihazdaki verilerin şifrelenmesini zorunlu kılar.<br><br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için **Mobil cihazların kilidini açmak için parola iste** ayarını etkinleştirin.|
+|**Depolama kartlarında şifrelemeyi gerektir**|SD kartı gibi dış depolama alanlarında depolanan verilerin şifrelenmesini zorunlu kılar (desteklenen cihazlarda).
 <sup>1</sup> Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
--   Windows 8.1 çalıştıran cihazlarda şifrelemeyi zorlamak için her bir cihaza [Windows için Aralık 2014 MDM istemci güncelleştirmesi](http://support.microsoft.com/kb/3013816) ’ni yüklemeniz gerekir.
+-   Windows 8.1 çalıştıran cihazlarda şifrelemeyi zorunlu kılmak istiyorsanız [Windows için Aralık 2014 MDM istemci güncelleştirmesi](http://support.microsoft.com/kb/3013816)’ni her bir cihaza yüklemeniz gerekir.
 
--   Windows 8.1 cihazları için bu ayarı etkinleştirirseniz, cihazın tüm kullanıcılarının bir Microsoft Hesabının olması gerekir.
+-   Windows 8.1 cihazları için bu ayarı etkinleştirirseniz, cihazın tüm kullanıcılarının bir Microsoft hesabı olmalıdır.
 
--   Şifrelemenin çalışması için cihazın, Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) donanım sertifika gereksinimlerini karşılaması gerekir.
+-   Şifrelemenin Windows 8.1 cihazlarda çalışmasını istiyorsanız cihazın Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) donanım sertifika gereksinimlerini karşılaması gerekir.
 
--   Bir cihazda şifrelemeyi zorunlu tuttuğunuzda kurtarma anahtarına yalnızca kullanıcıların OneDrive hesabından eriştikleri Microsoft Hesabından erişilebilir. Bu anahtarı bir kullanıcı adına kurtaramazsınız.
+-   Bir Windows 8.1 cihazda şifrelemeyi zorunlu kılarsanız kurtarma anahtarına yalnızca kullanıcının OneDrive hesabına erişmek için gerekli olan Microsoft Hesabından erişilebilir. Bu anahtarı bir kullanıcı adına kurtaramazsınız.
 
 ## E-posta ayarları
 
 |Ayar adı|Ayrıntılar
 |----------------|
 |**Kullanıcıların e-posta eklerini indirmesine izin ver**|E-posta eklerinin cihaza indirilip indirilmeyeceğini belirtir.|
-|**E-posta eşitleme dönemi**|Alınan e-postanın cihazla eşitlenmesi için gün sayısını seçin.
+|**E-posta eşitleme dönemi**|Alınan e-postaların cihazla kaç gün boyunca eşitleneceğini belirtir.
 |**Exchange ActiveSync ayarlarını tam olarak desteklemeyen mobil cihazların Exchange ile eşitleme yapmasına izin ver**|Bir veya birden çok Exchange ActiveSync ayarını desteklemeyen cihazlarda Exchange erişimine izin verilip verilmeyeceğini belirtir.
 
 ## Tarayıcı ayarları
 
 |Ayar adı|Ayrıntılar
 |----------------|-
-|**Web tarayıcısına izin ver**|Cihazda web tarayıcısının kullanılıp kullanılamayacağını belirtir.<br>(Windows RT veya Windows Phone’da kullanılamaz)
+|**Web tarayıcısına izin ver**|Cihazda web tarayıcısının kullanılıp kullanılamayacağını belirtir.<br>(Windows RT veya Windows Phone’da kullanılamaz).
 
 ## Donanım ayarları
 
 |Ayar adı|Ayrıntılar
 |----------------|
-|**Kameraya izin ver**|Cihazdaki kameranın kullanılıp kullanılamayacağını belirtir.<br>(Windows RT veya Windows Phone’da kullanılamaz)
+|**Kameraya izin ver**|Cihazdaki kameranın kullanılıp kullanılamayacağını belirtir.<br>(Windows RT veya Windows Phone’da kullanılamaz).
 
 
 
@@ -80,7 +80,6 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 
