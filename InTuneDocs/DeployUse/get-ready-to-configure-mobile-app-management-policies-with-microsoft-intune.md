@@ -3,7 +3,7 @@ title: "MAM ilkelerini yapılandırmaya hazırlanma | Microsoft Intune"
 description: "Bu konu başlığı altında, mobil uygulama yönetimi ilkelerini oluşturabilmeniz için gereken önkoşullar ve kullanıcıları ayarlama işlemleri açıklanır."
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: aeaa64124384a71126eeca7339416b80d395d07d
 
 
 ---
@@ -58,7 +58,7 @@ MAM ilkelerini yapılandırabilmeniz için *önceden* gerekenler:
 -   Aşağıdakiler için gereken bir Office 365 aboneliği:
   - Birden çok kimliği destekleyen uygulamalara MAM ilkeleri uygulamak için.
   - SharePoint Online ve Exchange Online iş hesaplarını oluşturmak için. Exchange şirket içi ve SharePoint şirket içi desteklenmez.
--   Modern kimlik doğrulaması için Skype Kurumsal Çevrimiçi Sürüm. Daha fazla bilgi için bkz. [Modern kimlik doğrulamasını etkinleştirme](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md).
+-   Modern kimlik doğrulaması için Skype Kurumsal Çevrimiçi Sürüm. Daha fazla bilgi için bkz. [Modern kimlik doğrulamayı etkinleştirme](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Kullanıcıları oluşturmak için Azure Active Directory (Azure AD). Azure AD, uygulamayı açan ve iş kimlik bilgilerini giren kullanıcıların kimliğini doğrular.
@@ -125,6 +125,6 @@ Genel yöneticiler [Azure portalına](https://portal.azure.com) erişebilir.  Di
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

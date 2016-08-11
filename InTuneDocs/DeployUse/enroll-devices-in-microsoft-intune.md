@@ -3,7 +3,7 @@ title: "Cihazları kaydetme | Microsoft Intune"
 description: "Mobil cihaz yönetimi (MDM), kaydı, cihazları yönetime getirmek ve kaynaklara erişim izni vermek için kullanır."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6256b1ed5edb72bf9f623555a4c6e3fddb864b32
-ms.openlocfilehash: 71f0637a1cb6fdafb590ca274fcc0f80707ed6ce
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: 15f4af1f870d619f4fd51e88d1aef91b0b45e66d
 
 
 ---
@@ -89,7 +89,7 @@ Kayıt yönteminin, cihazı belirli bir kullanıcıya bağlayan “Kullanıcı B
   - E-postaya ve şirket verilerine koşullu erişim
   - Şirket Portalı uygulaması
 
-[Kullanıcı Benzeşimi](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#user-affinity-for-ios-corporate-owned-devices-using-the-company-portal) ([Tabloya dön](#overview-of-device-enrollment-methods))
+[Kullanıcı Benzeşimi](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices) ([Tabloya dön](#overview-of-device-enrollment-methods))
 
 ### Kilitle
 Kullanıcının Intune ilkesini kaldırıp cihazı etkili bir şekilde yönetimden kaldırmasını önlemek için cihazın kilitlenip kilitlenemeyeceğini belirtir. iOS cihazlarında, cihazın kilitlenmesi için cihaz Denetimli modda olmalıdır.
@@ -124,6 +124,6 @@ Intune istemci yazılımıyla yönetilen bilgisayarlar, seçilerek silinemez vey
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
 
 
 ---
 
 
 # Microsoft Intune ile Windows Phone ve Windows 10 Mobile yönetimini ayarlama
+Windows cihazınızı ayarlamak için [buradan](../enduser/using-your-windows-device-with-intune.md) yardım alabilirsiniz.
+
 Windows 10 Mobile veya Windows Phone cihazlarını Microsoft Intune’la yönetebilmeniz için, önce cihazların Intune’la iletişim kurabilmesi gerekir. Bunu basitleştirmek için bir DNS kaydı oluşturabilirsiniz ve bu sayede kullanıcıların sunucu adresini girmesi gerekmez. Aşağıdaki adımlar, kullanıcılar için kaydın nasıl basitleştirileceğini açıklar.  
 
 Çoğu senaryoda, kullanıcılar Şirket Portalı uygulamasını Windows Mağazası’ndan yükleyebilir. Windows Phone 8.0 cihazlarını yönetiyorsanız veya Windows Phone cihazlarına Şirket Portalı’nı dağıtmanız gerekiyorsa, Şirket Portalı uygulamasını da indirmeli ve imzalamalısınız. Bkz. [Windows Phone 8.0 yönetimini ayarlama](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
@@ -50,12 +52,16 @@ Windows 10 Mobile veya Windows Phone cihazlarını Microsoft Intune’la yönete
 
     3.  **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin doğrulanmış etki alanının URL'sini yazın ve ardından **Otomatik Algılamayı Sına**'ya tıklayın.
 
+    4.  Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir.
+        - [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Windows cihazları için son kullanıcı rehberi](../enduser/using-your-windows-device-with-intune.md)
+
 
 
 Cihazlara Şirket Portalı’nı dağıtmayacaksanız, başka bir işlem yapmak gerekmez.  Yönetim konsolundaki 2. ve 3. adımlar rahatça yoksayılabilir.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

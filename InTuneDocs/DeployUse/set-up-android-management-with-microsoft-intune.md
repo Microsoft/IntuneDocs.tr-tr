@@ -13,13 +13,15 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 147765f6e8225e8e1d9d8e64473e8b6988256b03
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: e42f49558ea9744b59693be873aa5130c7e1a0c3
 
 
 ---
 
 # Android cihaz yönetimini ayarlama
+Windows cihazınızı ayarlamak için [buradan](../enduser/using-your-android-device-with-intune.md) yardım alabilirsiniz.
+
 Microsoft Intune ile, platform için başka çalışma yapmaya gerek kalmadan Android cihazlar için KCG’yi ("kendi cihazını getir") etkinleştirebilirsiniz.
 
 Daha fazla bilgi edinmek için aşağıdaki cihaz platformu seçenekleri arasından seçim yapın:
@@ -41,11 +43,15 @@ Android mobil cihazlar kullanıcıların Google Play’den erişilebilen Şirket
 3.  **Kullanıcılara şirket portalı ile şirket kaynaklarına nasıl erişeceklerini anlatın**<br>
     Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir. [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
+4.  Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir.
+        - [Son kullanıcılarınıza Microsoft Intune kullanımı hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Windows cihazları için son kullanıcı rehberi](../enduser/using-your-android-device-with-intune.md)
+
 ### Ayrıca bkz.
 [Microsoft Intune’da cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

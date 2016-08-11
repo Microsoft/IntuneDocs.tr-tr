@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
@@ -27,7 +27,7 @@ Intune, Windows Server Active Directory Etki Alanı Hizmetleri (AD DS) Grup İlk
 Intune istemcisi, yazılım güncelleştirmelerini, Windows güvenlik duvarını ve Endpoint Protection’ı yöneterek [bilgisayarları korumaya yardımcı olan ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md) desteklerken, diğer Intune ilkeleri Intune istemcisiyle yönetilen bilgisayarları hedefleyemez.
 
 > [!NOTE]
-> Windows 8.1 çalıştıran cihazlar Intune istemcisi kullanılarak yönetilebilir veya mobil cihaz olarak kaydedilebilir. Aşağıdaki bilgiler, Intune istemcisini çalıştıran bilgisayarlar için geçerlidir. Hem Intune bilgisayar istemcisini yüklemek hem de mobil cihaz yönetimi için Windows cihazını kaydetmek desteklenmez.
+> Windows 8.1 veya daha sonraki sürümleri çalıştıran cihazlar, Intune istemcisi kullanılarak yönetilebilir veya mobil cihaz olarak kaydedilebilir. Aşağıdaki bilgiler, Intune istemcisini çalıştıran bilgisayarlar için geçerlidir. Hem Intune bilgisayar istemcisini yüklemek hem de mobil cihaz yönetimi için Windows cihazını kaydetmek desteklenmez.
 
 ## Intune bilgisayar istemcisi yönetimi gereksinimleri
 
@@ -86,6 +86,6 @@ Intune istemci aracısı genellikle fazla kullanıcı etkileşimi veya sorun gid
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Exchange ActiveSync Cihaz Yönetimi | Microsoft Intune"
-description: "Kullanıcıların Exchange ActiveSync (EAS) yönetimine kaydetmediği mobil cihazları Exchange bağlayıcısını kullanarak doğrudan yönetin"
+description: "Exchange bağlayıcısını kullanarak Exchange ActiveSync (EAS) yönetimi ile mobil cihaz yönetme"
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: f545c7db4c29690a72c5a84dfcab6f179cbe72a2
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 96d8911dafe7897458297867ddfef97206fdfc9c
 
 
 ---
 
-# Exchange ActiveSync ve Microsoft Intune ile mobil cihaz yönetimi
-Mobil cihazların Microsoft Intune tarafından doğrudan yönetilebilmesi için kullanıcıların cihazları Intune’a kaydetmeleri gerekir. Kullanıcıların kaydetmediği mobil cihazlar için Exchange bağlayıcısını kullanarak Exchange ActiveSync (EAS) yönetimini etkinleştirebilirsiniz. Cihazları hem Şirket İçi Exchange sunucularda hem de Microsoft Office 365'te bulutta barındırılan Exchange’de yönetilebilir.
+# Microsoft Intune ile Exchange ActiveSync mobil cihaz yönetimi
+Microsoft Intune’un mobil cihazları doğrudan yönetebilmesi için, cihazların [Intune’da kayıtlı](get-ready-to-enroll-devices-in-microsoft-intune.md) olması gerekir. Alternatif olarak yöneticiler, Exchange ActiveSync (EAS) yönetimini Exchange bağlayıcısıyla kullanan, daha kısıtlı bir yönetim çözümü etkinleştirebilir. Cihazlar, şirket içi Exchange sunucularıyla veya Office 365 kullanılarak Exchange Online ile yönetilebilir. Intune, abonelik başına herhangi bir türde tek bir Exchange bağlayıcısı bağlantısını destekler.
 
 ## Mobil cihazlar için Exchange erişim kuralları ##
 
@@ -31,11 +31,12 @@ Exchange’e, mobil cihazlar EAS’a bağlanmaya çalıştığında ne olacağı
 ## Exchange bağlayıcısını yükleme
 Exchange bağlayıcısı, Intune konsolunda Exchange dağıtımınızı yönetmenize olanak tanır. Öncelikle uygun Intune-Exchange bağlayıcısını yüklemeli ve yapılandırmalısınız. Exchange sunucunuzun şirket içinde mi yoksa hizmet olarak bulutta mı barındırıldığına bağlı olarak, uygun seçeneği belirtin:
 
--   [Şirket İçi Exchange için Intune bağlayıcısını yükleme](intune-on-premises-exchange-connector.md)
--   [Barındırılan Exchange için Intune Hizmetten Hizmete bağlayıcısını yapılandırma](intune-service-to-service-exchange-connector.md)
+-   [Exchange Online için Intune veya yeni Exchange Online Ayrılmış ortamları yapılandırma](intune-service-to-service-exchange-connector.md)
+-   [Şirket içi Exchange sunucuları ve eski Exchange Online Ayrılmış ortamları için Intune bağlayıcısını yükleme](intune-on-premises-exchange-connector.md)
+
 
 ## Exchange tarafından yönetilen mobil cihazlara ilke uygulama
-İlke ayarları Intune konsolu aracılığıyla uygulanabilir. Bkz. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Belirli mobil cihazlar tarafından desteklenen Exchange ActiveSync ilke ayarları ve özelliklerinin listesi için, bkz. [Exchange ActiveSync İstemci Karşılaştırma Tablosu](http://go.microsoft.com/fwlink/?LinkId=247270).
+Intune konsolu, [EAS ilke ayarlarını](exchange-activesync-policy-settings-in-microsoft-intune.md) yönetmek ve [şirket kaynaklarına erişimi kısıtlamak](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) için kullanılabilir. Belirli mobil cihazlar tarafından desteklenen Exchange ActiveSync ilke ayarları ve özelliklerinin listesi için, bkz. [Exchange ActiveSync İstemci Karşılaştırma Tablosu](http://go.microsoft.com/fwlink/?LinkId=247270).
 
 > [!NOTE]
 > Intune’u Microsoft Exchange ortamına bağladıktan sonra, Intune içinde daha belirgin bir ilke tanımlanmadığı sürece, tüm kullanıcılar için Intune aracılığıyla yönetilen EAS ilkesi Microsoft Exchange sunucusundaki geçerli varsayılan ilkeye sıfırlanır.
@@ -45,6 +46,6 @@ Son olarak, şirket verileri artık kullanılmıyorsa ya da cihazlar kaybolur ve
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 
