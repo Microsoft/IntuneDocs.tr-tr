@@ -2,9 +2,9 @@
 title: "Kullanıcıları ve cihazları düzenlemek için grup oluşturma | Microsoft Intune"
 description: "Intune’un ücretsiz, 30 günlük değerlendirmesine kaydolduğunuzda, cihaz grupları ve kullanıcı grupları nasıl oluşturulur"
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 4c0ccb2d27d90c4a3aeebb3129b9b13a707b26a0
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 6cab173d7ef4a1d7bcea3193265e0729c93a214e
 
 
 ---
@@ -31,7 +31,7 @@ Yazılım ve güncelleştirme dağıtmak ve Microsoft Intune Aracısı Ayarları
 
 3.  **Üyelik Ölçütlerini Tanımla** sayfasında, **Tüm cihazlar** 'ı seçerek grubun hem mobil cihazları hem bilgisayarları içerdiğini belirtin.
 
-4.  **Doğrudan Üyeliği Tanımla** sayfasında, **İleri**'yi seçin. Önceden tüm cihazları içermeyen bir grup oluşturduysanız ve yeni grubunuza belirli cihazları eklemek istiyorsanız, bunu burada yapabilirsiniz.
+4.  **Doğrudan Üyeliği Tanımla** sayfasında **İleri**'yi seçin. Önceden tüm cihazları içermeyen bir grup oluşturduysanız ve yeni grubunuza belirli cihazları eklemek istiyorsanız, bunu burada yapabilirsiniz.
 
 5.  **Özet** sayfasında, gerçekleştirilecek eylemleri gözden geçirin ve ardından **Son**'u seçin.
 
@@ -65,6 +65,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 3. adımını
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

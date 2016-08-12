@@ -13,8 +13,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
-ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
+ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
+ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 Intune tarafından yönetilen Android cihazları için uygulama başına VPN profili oluşturabilirsiniz. Öncelikle, Pulse Secure bağlantı türünü kullanan bir VPN profili oluşturursunuz ve sonra da bu profili belirli uygulamalarla ilişkilendiren özel bir yapılandırma ilkesi oluşturursunuz. Bu ilkeleri Android cihaz veya kullanıcı gruplarınıza dağıttıktan sonra, belirtilen uygulamalardan birinin söz konusu cihazlarda açılması, bu uygulama için VPN bağlantısını açar.
 
-> [NOT]
+> [!NOTE]
 > 
 > Bu profil için yalnızca Pulse Secure bağlantı türü desteklenir.
 
@@ -37,7 +37,8 @@ Intune tarafından yönetilen Android cihazları için uygulama başına VPN pro
 4. VPN profilini tamamlayın ve kaydedin. VPN profilleri hakkında daha fazla bilgi için bkz. [VPN bağlantıları](vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
-Sonraki adımda kullanmak üzere VPN profili adını not edin. Örneğin, **UygulamaVpnProfilim**.
+> 
+> Sonraki adımda kullanmak üzere VPN profili adını not edin.   Örneğin, **UygulamaVpnProfilim**.
 
 ### 2. Adım: Özel yapılandırma ilkesi oluşturma
 
@@ -81,6 +82,6 @@ Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve *yalnızca* belirt
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
