@@ -145,7 +145,7 @@ Tasarım Değişikliği İstekleri (DCR) veya hatalar dahil olmak üzere Microso
 * [Microsoft Intune ile yönetilen şirket uygulama verilerini silme](https://technet.microsoft.com/library/mt627826.aspx): Şirket uygulama verilerini nasıl kaldırabileceğiniz.
 
 **Güncelleştirilmiş içerik**
-* [Microsoft Intune’da Windows 10 yapılandırma ilkesi ayarları](https://technet.microsoft.com/library/mt404697.aspx): Yeni Edge tarayıcısı ayarları eklendi.
+* [Microsoft Intune’da Windows 10 yapılandırma ilkesi ayarları](https://technet.microsoft.com/library/mt404697.aspx): Yeni Microsoft Edge tarayıcısı ayarları eklendi.
 * [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](http://technet.microsoft.com/library/dn408185.aspx): Mac OS X cihazlarının nasıl kaydedileceği hakkında bilgiler eklendi.
 * [Microsoft Intune’da envanterle cihazlarınızı anlama](https://technet.microsoft.com/library/jj733634.aspx): Mac OS X cihazlarından toplanan envanter hakkında bilgiler eklendi. Ayrıca, tüm cihaz platformları için en son bilgilerle konu güncelleştirildi.
 * [Raporları kullanarak Microsoft Intune işlemlerini anlayın](https://technet.microsoft.com/library/dn646977.aspx): Yönetilen Mac OS X cihazlarınızla ilgili bilgileri görüntülemek için kullanılan iki yeni rapor hakkında bilgiler eklendi.
