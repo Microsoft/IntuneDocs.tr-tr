@@ -302,7 +302,7 @@ Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kay
 |**ExcludedPaths**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Veri türü:** Dize<br /><br />**İzin verilen değerler:**<br /><br />*&lt;noktalı virgülle ayrılmış yollar listesi&gt;*<br /><br />Örnek: **c:\test;c:\test1.exe**<br /><br />**Varsayılan değer:** Hiçbir yol dışlanmaz|
 |**ExcludedProcesses**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Veri türü:** Dize<br /><br />**İzin verilen değerler:**<br>*&lt;noktalı virgülle ayrılmış yollar listesi&gt;*<br>Örnek: **c:\test.exe;c:\test1.exe**<br>**Varsayılan değer:** Hiçbir işlem dışlanmaz|
 
-## - Edge tarayıcı
+## - Microsoft Edge tarayıcı
 
 |İlke adı|Ayrıntılar|
 |---------------|------------|-----------|
