@@ -13,8 +13,8 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 5e163cf4e8190d0bc967415f1d907465e4e13f36
+ms.sourcegitcommit: ffc9a753f2f5ff2aa98a589b752936d67a0888b5
+ms.openlocfilehash: cefe90cdb0cda5ada259576af7cf477642860446
 
 
 ---
@@ -26,7 +26,7 @@ Microsoft Intune, uygulama güncelleştirmelerini yönetmenize yardımcı olabil
 Dağıttığınız bir uygulamanın yeni sürümü yayımlandığında, Intune uygulamanın yeni sürümünü güncelleştirip dağıtmanıza imkan tanır. Bir dağıtımı yalnızca aynı uygulamanın daha yeni bir sürümüyle değiştirebilirsiniz (aynı tanımlayıcıyı kullanarak). Bir dağıtımı farklı bir uygulama paketiyle güncelleştirmek için uygulama güncelleştirmelerini kullanamazsınız.
 
 ### Uygulama tanımlayıcıları
-Uygulama tanımlayıcısı, uygulamayı benzersiz olarak tanımlayan bir özelliktir. Tanımlayıcısı aynı olan birden çok uygulama kopyasını yükleyemezsiniz. Örneğin:
+Uygulama tanımlayıcısı, uygulamayı benzersiz olarak tanımlayan bir özelliktir. Tanımlayıcısı aynı olan birden çok uygulama kopyasını yükleyemezsiniz. Aşağıda uygulama tanımlayıcısının bazı örnekleri verilmiştir:
 
 - **iOS** - Paket kimliği (örneğin: com.microsoft.excel)
 - **Android** - Paket kimliği (örneğin: com.microsoft.excel)
@@ -37,7 +37,7 @@ Uygulama tanımlayıcısı, uygulamayı benzersiz olarak tanımlayan bir özelli
 
 > [!IMPORTANT]
 > Bir uygulamayı **Zorunlu yükleme** dağıtım eylemiyle dağıtıp daha sonra dağıtım eylemini **Kullanılabilir yükleme**olarak değiştirdiğinizde, dağıtım değişikliği yapılmadığı sürece uygulama güncelleştirmeleri uygulamanın yüklü olduğu cihazlara otomatik olarak yüklenmez. Bu sorunu gidermek için aşağıdakileri yapabilirsiniz:
-> 
+>
 > -   Cihaz kullanıcısının şirket portalına gitmesini, yüklü uygulamayı seçmesini ve **Yükle**'yi seçmesini isteyin.
 > -   Dağıtım eylemini **Kaldır**olarak değiştirin ve uygulama kaldırıldıktan sonra uygulamayı **Kullanılabilir yükleme**dağıtım eylemiyle yeniden dağıtın.
 
@@ -53,13 +53,11 @@ Uygulama tanımlayıcısı, uygulamayı benzersiz olarak tanımlayan bir özelli
 
 Cihazlar kullanılabilir uygulamaları bir daha denetlediğinde uygulama en son sürüme otomatik olarak güncelleştirilecektir.
 Bir uygulama paketinden yüklenen uygulamalar için (iş koşu uygulamaları), uygulamanın aynı tanımlayıcısı olduğu sürece, hem zorunlu hem de kullanılabilir uygulamalar için uygulama otomatik olarak yükseltilir.
+
 Bir mağaza bağlantısı olarak dağıtılan uygulamalar için, güncelleştirme uygulamanın çıktığı mağaza tarafından yönetilir.
 
 
 
-
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

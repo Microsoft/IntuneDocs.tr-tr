@@ -13,8 +13,8 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 59c5cf28a7be2d1b4b9071dd889803e18f31f83b
+ms.sourcegitcommit: bbe2f13b2c41478181c396c4e16e5f3f9180e551
+ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
 
 
 ---
@@ -32,7 +32,7 @@ Uyarılar, Microsoft Intune’da olup bitenlerden haberdar olmanızı sağlar.
 
 
 ## Uyarılar nasıl çalışır?
-Uyarılar, Intune içinde yerleşik olarak bulunan önceden yapılandırılmış bir kural kümesi olan **uyarı türlerine** göre oluşturulur. Örneğin, **Bulut depolamada %10 veya daha az boş alan var** uyarı türü, uygulamalarınızı bulutta depolamak için kullandığınız alan bitmeye yaklaştığında sizi uyarır. Her uyarı türünü etkinleştirebilir veya devre dışı bırakabilir ve uyarı türlerinin özelliklerini yapılandırabilirsiniz. Örneğin, yukarıdaki uyarı türünü kullanarak şunları yapılandırabilirsiniz:
+Uyarılar, Intune içinde yerleşik olarak bulunan önceden yapılandırılmış bir kural kümesi olan **uyarı türlerine** göre oluşturulur. Örneğin, **Bulut depolama alanında %10 veya daha az boş alan var** uyarı türü, uygulamalarınızı bulutta depolamak için kullandığınız alan bitmeye yaklaştığında sizi uyarır. Uyarı türlerini etkinleştirebilir veya devre dışı bırakabilir ve her uyarı türünün özelliklerini yapılandırabilirsiniz. Örneğin, yukarıdaki uyarı türünü kullanarak şunları yapılandırabilirsiniz:
 
 -   **Durum:** Bu uyarı türünün etkin veya devre dışı olduğu
 
@@ -45,27 +45,27 @@ Uyarılar, Intune içinde yerleşik olarak bulunan önceden yapılandırılmış
     |![Uyarı bildirimi](../media/Warning-Alert.jpg)|Şu anda ciddi olmayan, ancak ilgilenmezseniz önemli hale gelebilecek bir sorun (örneğin, güvenlik güncelleştirmelerinin yüklenmesi bekleniyor) olduğunu gösterir.|
     |![Bilgilendirme uyarısı](../media/Informational-Alert.jpg)|İşlemleriniz için kritik olmayan bilgileri (örneğin, Exchange Connector’ın yeni bir sürümünün kullanılabilir olduğu) gösterir.|
 
-Diğer uyarı türleri, bir uyarı oluşturulmadan önce etkilenmesi gereken cihazların yüzdesi gibi yapılandırabileceğiniz farklı öğeler içerebilir.
+Diğer uyarı türlerinde, bir uyarı oluşturulmadan önce etkilenmesi gereken cihazların yüzdesi gibi, yapılandırabileceğiniz farklı öğeler bulunabilir.
 
-**Bir uyarı türündeki ölçütler karşılandığında, Intune yönetim konsolunda bir uyarı oluşturulur ve görüntülenir.**
+**Uyarı türündeki ölçütler karşılandığında, Intune yönetici konsolunda bir uyarı oluşturulur ve gösterilir.**
 
 Ayrıca, Intune’u, bir uyarı oluşturulduğunda sizi e-posta ile bilgilendirmek üzere yapılandırabilirsiniz
 
-## Uyarıları yapılandırma
-[Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetim** &gt; **Uyarılar ve Bildirimler**’i seçin ve sonra da aşağıdaki yapılandırma görevlerinden birini seçin:
+## Uyarıları ayarlama
+[Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Yönetim** &gt; **Uyarılar ve Bildirimler**’i seçin ve sonra da aşağıdaki görevlerden birini seçin:
 
 |Görev|Açıklama|
 |--------|---------------|
-|**Uyarı Türleri**|Yapılandırmak istediğiniz uyarı türünü seçin, ardından aşağıdakilerden birini yapın:<br /><br />**Yapılandır**’ı seçin. **Uyarı Türünü Yapılandır** iletişim kutusunda istediğiniz ayarları yapılandırın ve ardından **Tamam**’ı seçin.<br /><br />Uyarı için **Etkinleştir** veya **Devre Dışı Bırak** seçeneğini belirleyin.<br /><br />Yalnızca belirli bir kategorideki uyarı türlerini görüntülemek için **Uyarı Türleri** düğümünü genişletin ve bir kategori seçin.|
-|**Alıcılar**|Yapılandırdığınız e-posta bildirimlerini alacak yeni bir e-posta adresi eklemek için **Ekle**’yi seçin.<br /><br />Ayrıca, mevcut alıcıları **Düzenleyebilir** veya **Silebilirsiniz** .<br /><br />Bildirimleri almak için bu e-posta adresini **Bildirim Kuralları** bölümünde bir alıcı olarak da eklemelisiniz.|
-|**Bildirim Kuralları**|Bir e-posta uyarısının kime gönderileceğini tanımlayan kuralları yapılandırır. Şunlardan birini yapabilirsiniz:<br /><br />**Mevcut kuralı seçme** - Bir kural seçin ve sonra da **Alıcıları Seç**’i seçin. Daha sonra, bu kurala uygun bir uyarı oluşturulduğunda bir e-posta alacak tüm alıcıları seçebilirsiniz.<br /><br />**Yeni kural oluşturma** - kural için bir ad girin, kurallar için geçerli olan uyarı kategorilerini ve uyarı önem derecesini seçin, kuralın geçerli olacağı cihaz gruplarını belirleyin ve bir uyarı oluşturulduğunda e-posta alacak kullanıcıları seçin.<br /><br />Ayrıca, mevcut bir kuralı **Etkinleştirebilir**, **Devre dışı bırakabilir**, **Düzenleyebilir**veya **Silebilirsiniz** .|
+|**Uyarı Türleri**|Yapılandırmak istediğiniz uyarı türünü seçin ve aşağıdakilerden birini yapın:<br /><br />**Yapılandır**’ı seçin. **Uyarı Türünü Yapılandır** iletişim kutusunda istediğiniz ayarları yapılandırın ve ardından **Tamam**’ı seçin.<br /><br />Uyarı için **Etkinleştir** veya **Devre Dışı Bırak** seçeneğini belirleyin.<br /><br />Yalnızca belirli bir kategorideki uyarı türlerini görüntülemek için, **Uyarı Türleri** düğümünü genişletin ve o kategoriyi seçin.|
+|**Alıcılar**|Ayarladığınız e-posta bildirimlerini alacak yeni bir e-posta adresi eklemek için **Ekle**’yi seçin.<br /><br />Ayrıca, mevcut alıcıları **Düzenleyebilir** veya **Silebilirsiniz** .<br /><br />Bildirimleri almak için bu e-posta adresini **Bildirim Kuralları** bölümünde bir alıcı olarak da eklemelisiniz.|
+|**Bildirim Kuralları**|Bir e-posta uyarısının kime gönderileceğini tanımlayan kuralları yapılandırır. Şunlardan birini yapabilirsiniz:<br /><br />**Mevcut kuralı seçme** - Bir kural seçin ve sonra da **Alıcıları Seç** öğesini seçin. Daha sonra, bu kurala uygun bir uyarı oluşturulduğunda bir e-posta alacak tüm alıcıları seçebilirsiniz.<br /><br />**Yeni kural oluşturma** - kural için bir ad girin, kurallar için geçerli olan uyarı kategorilerini ve uyarı önem derecesini seçin, kuralın geçerli olacağı cihaz gruplarını belirleyin ve bir uyarı oluşturulduğunda e-posta alacak kullanıcıları seçin.<br /><br />Ayrıca, mevcut bir kuralı **Etkinleştirebilir**, **Devre dışı bırakabilir**, **Düzenleyebilir**veya **Silebilirsiniz** .|
 
 ## Uyarılarla çalışma
 Intune Yönetim Konsolu'nda uyarılar üzerine çalışmanıza yardımcı olan aşağıdaki seçenekleri kullanın.
 
 |Seçenek|Açıklama|
 |----------|---------------|
-|**Etkin uyarıları görüntüleme**|Aşağıdakilerden birini seçin:<br /><br />**Uyarı özetini görüntüleme**: **Pano** çalışma alanındaki Uyarılar bölmesinde en önemli hatalar görüntülenir. Daha ayrıntılı bilgi için bölmeyi seçin.<br /><br />Ayrıca, **Uyarılar** çalışma alanının **Genel Bakış** sayfasında uyarıların bir özetini görüntüleyebilirsiniz.<br /><br />**Tüm uyarıları görüntüleme** - **Uyarılar** çalışma alanında **Tüm Uyarılar**’ı seçin.|
+|**Etkin uyarıları görüntüleme**|Aşağıdakilerden birini seçin:<br /><br />**Uyarı özetini görüntüleme** - **Pano** çalışma alanındaki Uyarılar bölmesinde en önemli hatalar gösterilir. Daha ayrıntılı bilgi için bölmeyi seçin.<br /><br />Ayrıca, **Uyarılar** çalışma alanının **Genel Bakış** sayfasında uyarıların bir özetini görüntüleyebilirsiniz.<br /><br />**Tüm uyarıları görüntüleme** - **Uyarılar** çalışma alanında **Tüm Uyarılar**’ı seçin.|
 |**Bildirimleri görüntüleme**|Aşağıdakilerden birini seçin:<br /><br />**Pano** çalışma alanında **Bildirimler**’i seçin.<br /><br />**Uyarılar** çalışma alanında **Tüm Uyarılar** &gt; **Bildirimler**’i seçin.|
 |**Bir uyarıyı kapatma**|Uyarı listesinden kapatılacak uyarıyı seçin ve sonra da **Uyarıyı Kapat**’ı seçin.<br /><br />Kapatılan uyarılar 90 gün sonra kalıcı olarak silinir.|
 |**Kapatılan bir uyarıyı yeniden etkinleştirme**|Uyarı listesindeki **Filtreler** açılır menüsünü **Kapalı** olarak ayarlayın.<br /><br />Kapatılan uyarılar listesinde yeniden etkinleştirmek istediğiniz uyarıyı seçin ve sonra da **Uyarıyı Yeniden Etkinleştir**’i seçin.|
@@ -85,6 +85,6 @@ Intune uyarıları şu durumlara kadar etkin kalır:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

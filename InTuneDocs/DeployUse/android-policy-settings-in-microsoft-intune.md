@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
-ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 31c91609b913034ad3aaae0950145d4db5f59a0a
 
 
 ---
@@ -201,12 +201,13 @@ Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarları
 
 - [Önceden paylaşılan anahtar ile Wi-Fi profili oluşturma](pre-shared-key-wi-fi-profile.md)
 - [Özel ilke kullanarak Android cihazları için uygulama başına VPN profili oluşturma](per-app-vpn-for-android-pulse-secure.md)
+- [Özel ilkeler kullanarak Samsung KNOX cihazları için uygulamalara izin verme veya bunları engelleme](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 
 ### Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

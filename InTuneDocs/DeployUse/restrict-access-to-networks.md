@@ -1,6 +1,6 @@
 ---
 title: "Cisco ISE ile ağlara erişimi kısıtlama| Microsoft Intune"
-description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olması adına, Intune ile Cisco ISE kullanabilirsiniz."
+description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olmasını sağlamak için, Intune ile Cisco ISE kullanabilirsiniz."
 keywords: 
 author: nbigman
 manager: angrobe
@@ -13,39 +13,40 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: c516cffe416559d1d239010605227eda76c32c1b
+ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
+ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
 
 
 ---
 
 # Microsoft Intune ile Cisco ISE kullanma
-Intune’un Cisco ISE ile entegrasyonu, Intune cihaz kaydı ve uyum durumunu kullanarak ISE ortamınızda ağ ilkeleri yazmanızı sağlar. Bu ilkeler, şirket ağınıza erişimin, Intune tarafından yönetilen ve Intune ilkeleriyle uyumlu cihazlarla kısıtlanmasını sağlamaya yarayabilir.
+Intune’un Cisco Identity Services Engine (ISE) ile tümleştirmesi, Intune cihaz kaydı ve uyum durumunu kullanarak ISE ortamınızda ağ ilkeleri yazmanızı sağlar. Bu ilkeleri kullanarak, şirket ağınıza erişimin, Intune tarafından yönetilen ve Intune ilkeleriyle uyumlu cihazlarla kısıtlandığından emin olabilirsiniz.
 
-## Yapılandırma
+## Yapılandırma adımları
 
-Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar yapmanız gerekmez. Intune kiracınıza erişmek için, Cisco ISE sunucunuza izinler sağlamanız gerekir ve bu yapıldığında, kurulumun kalan kısmı Cisco ISE sunucunuzda gerçekleşir. Bu makalede, ISE sunucunuza, Intune kiracınıza erişim izinleri sağlamayla ilgili yönergeler sağlanır.
+Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar yapmanız gerekmez. Intune kiracınıza erişebilmesi için Cisco ISE sunucunuza izinler sağlamanız gerekir. Bu yapıldıktan sonra, kurulumun kalan bölümü Cisco ISE sunucunuzda gerçekleştirilir. Bu makalede, ISE sunucunuza, Intune kiracınıza erişim izinleri sağlamayla ilgili yönergeler sağlanır.
 
 ### 1. Adım: Sertifikaları yönetme
-1. Azure Active Directory (AAD) konsolunda, sertifikayı dışa aktarın.
+1. Azure Active Directory (Azure AD) konsolunda, sertifikayı dışarı aktarın.
 
     #### Internet Explorer 11
 
-    a. Internet Explorer'ı yönetici olarak çalıştırın ve AAD konsoluna oturum açın.
 
-    b. Adres çubuğunda kilit simgesini seçin ve seçin **Sertifikaları görüntüle**’yi seçin
+    a. Internet Explorer'ı yönetici olarak çalıştırın ve Azure AD konsoluna oturum açın.
+
+    b. Adres çubuğunda kilit simgesini seçin ve **Sertifikaları görüntüle**’yi seçin.
 
     c. Sertifika özelliklerinin **Ayrıntılar** sekmesinde, **Dosyaya kopyala**’yı seçin.
 
-    d. **Sertifika dışa aktarma sihirbazı** karşılama sayfasında, **İleri**’yi seçin.
+    d. **Sertifika dışarı aktarma sihirbazı** karşılama sayfasında, **İleri**’yi seçin.
 
-    e. **Dışa aktarma dosya biçimi** sayfasında, varsayılan **DER ile kodlanmış ikili x.509 (.CER)** ayarını bırakın ve **İleri**’yi seçin.  
+    e. **Dışarı aktarma dosya biçimi** sayfasında, varsayılan **DER ile kodlanmış ikili x.509 (.CER)** ayarını bırakın ve **İleri**’yi seçin.  
 
-    f. **Dışa aktarılacak dosya** sayfasında, dosyanın kaydedileceği bir konum seçmek üzere **Gözat**’ı seçin ve bir dosya adı sağlayın. Dışa aktarılacak bir dosya seçiyor gibi gözükseniz de, aslında dışa aktarılan sertifikanın kaydedileceği dosyayı yeniden adlandırıyorsunuz. **İleri** &gt; **Son**’u seçin.
+    f. **Dışarı aktarılacak dosya** sayfasında, dosyanın kaydedileceği bir konum seçmek üzere **Gözat**’ı seçin ve bir dosya adı sağlayın. Dışarı aktarılacak bir dosya seçiyor gibi gözükseniz de, aslında dışarı aktarılan sertifikanın kaydedileceği dosyayı yeniden adlandırıyorsunuz. **İleri** &gt; **Son**’u seçin.
 
     #### Safari
 
-    a. AAD konsoluna oturum açın.
+    a. Azure AD konsolunda oturum açın.
 
     b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
 
@@ -53,37 +54,40 @@ Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar
 
     d. Sertifikayı seçin ve ardından **Dışa aktar**’ı seçin.  
 
-
     > [!IMPORTANT]
-    > Sertifikanın son kullanma tarihini denetleyin, bunun süresi dolduğunda yeni bir sertifika dışa aktarmanız ve içe aktarmanız gerekecektir.
+    > Sertifikanın son kullanma tarihini denetleyin, bunun süresi dolduğunda yeni bir sertifika dışarı aktarmanız ve içeri aktarmanız gerekecektir.
 
 
-
-2. ISE konsolunda, Intune sertifikasını (dışa aktardığınız dosya) **Güvenilen Sertifikalar** deposuna aktarın.
-3. ISE konsolunuzda, **Yönetim** > **Sertifikalar** > **Sistem Sertifikaları**’na gidin.
-4. ISE sertifikasını seçin ve ardından **Dışa aktar**’ı seçin.
-5. Bir metin düzenleyicide, dışa aktarılan sertifikayı düzenleyin:
+2. ISE konsolunda, Intune sertifikasını (dışarı aktardığınız dosya) **Güvenilen Sertifikalar** deposuna aktarın.
+### ISE’den otomatik olarak imzalanan sertifika alma 
+1.  ISE konsolunda, **Yönetim** > **Sertifikalar** > **Sistem Sertifikaları** > **Otomatik Olarak İmzalanan Sertifika Oluştur**’a gidin.  
+2.       Otomatik olarak imzalanan sertifikayı dışarı aktarın.
+3. Metin düzenleyicisinde, dışarı aktarılan sertifikayı düzenleyin: [comment]: <> I'd rather not put a period at the end of these two statements, I think it could be confusing.
  - ** -----BEGIN CERTIFICATE-----** metnini silin
  - ** -----END CERTIFICATE-----** metnini silin
- - Tüm metnin tek bir satırda olduğundan emin olun
+ 
+Tüm metnin tek bir satırda olduğundan emin olun
 
-### 2. Adım: AAD kiracınızda ISE için uygulama oluşturma
-1. Azure Active Directory (AAD) konsolunda, **Uygulamalar** > **Uygulama Ekleme** > **Kuruluşumun geliştirmekte olduğu bir uygulama ekle**’yi seçin.
+
+### 2. Adım: Azure AD kiracınızda ISE için uygulama oluşturma
+1. Azure AD konsolunda, **Uygulamalar** > **Uygulama Ekleme** > **Kuruluşumun geliştirmekte olduğu bir uygulama ekle**’yi seçin.
 2. Uygulama için bir ad ve URL belirtin. URL, şirketinizin web sitesi olabilir.
 3. Uygulama bildirimini (bir JSON dosyası) indirin.
 4. Bildirim JSON dosyasını düzenleyin. **keyCredentials** adlı ayarda, 1. Adımdan düzenlenen sertifika metnini, ayar değeri olarak sağlayın.
 5. Dosyayı, adını değiştirmeden kaydedin.
 6. Uygulamanıza, Microsoft Graph ve Microsoft Intune API için izinler sağlayın.
-    1. Microsoft Graph için, aşağıdakileri seçin
-        - **Uygulama izinleri**: Dizin verilerini oku
-        - **Temsilci izinleri**:
-            - Kullanıcının verilerine istendiği zaman eriş
-          - Kullanıcıların oturumunu açma
-   2. Microsoft Intune API'si için, **Uygulama izinlerinde**, **Intune'dan cihaz durumunu ve uyumluluğunu al**’ı seçin.
+
+ a. Microsoft Graph için, aşağıdakileri seçin:
+    - **Uygulama izinleri**: Dizin verilerini oku
+    - **Temsilci izinleri**:
+        - Kullanıcının verilerine istendiği zaman eriş
+        - Kullanıcıların oturumunu açma
+
+ b. Microsoft Intune API'si için, **Uygulama izinlerinde**, **Intune'dan cihaz durumunu ve uyumluluğunu al**’ı seçin.
 
 7. **Uç Noktalarını Görüntüle**’yi seçin ve ISE ayarlarını yapılandırmada kullanmak için aşağıdaki değerleri kopyalayın:
 
-|AAD portalında değer|ISE portalında karşılık gelen alan|
+|Azure AD portalındaki değer|ISE portalında karşılık gelen alan|
 |-------------------|---------------------------------|
 |Microsoft Azure AD Graph API uç noktası|Otomatik Bulma URL’si|
 |Oauth 2.0 Belirteç uç noktası|Belirteci Veren URL|
@@ -91,13 +95,13 @@ Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar
 
 
 ### 3. Adım: ISE Ayarlarını Yapılandırma
-2. ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın:
+ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın:
   - **Sunucu Türü**: Mobil cihaz Yöneticisi
   - **Kimlik doğrulama türü**: OAuth – İstemci Kimlik Bilgileri
   - **Otomatik Bulma**: Evet
-  - **Otomatik Bulma URL’si**: 1. Adımdan değer girin
-  - **İstemci Kimliği**: 1. Adımdan değer girin
-  - **Belirteç veren URL**: 1. Adımdan değer girin
+  - **Otomatik Bulma URL’si**: *1. Adımdaki değeri girin.*
+  - **İstemci Kimliği**: *1. Adımdaki değeri girin.*
+  - **Belirteç veren URL**: *1. Adımdaki değeri girin.*
 
 
 
@@ -106,23 +110,23 @@ Bu tabloda, Intune tarafından yönetilen cihazlar için, Intune kiracınız ve 
 
 |Özellik|  Açıklama|
 |---------------|------------------------------------------------------------|
-|complianceState|   True veya false, cihazın uyumlu veya uyumsuz olduğunu belirtir (dize).|
-|isManaged| True veya false (istemcinin Intune ile yönetilip yönetilmediğini belirtir).|
-|macAddress|Cihazın MAC Adresi.|
-|serialNumber|Cihazın seri numarası. Yalnızca iOS Cihazları için geçerlidir.|
-|imei|IMEI (15 ondalık basamak: 14 basamak, artı bir onay basamağı) veya IMEISV (16 basamak) cihaz kökeni, modeli ve seri numarasını hakkında bilgi içerir. IMEI/SV yapısını 3GPP TS 23.003 içinde belirtilir. Yalnızca SIM kartlı cihazlar için geçerlidir.)|
-|udid|Benzersiz cihaz tanımlayıcısı, iOS cihazlara özgü 40 harf ve rakamdan oluşan dizi.|
-|meid|Mobil donanım kimliği, CDMA mobil istasyonu ekipmanının fiziksel bir parçasını tanımlayan genel olarak benzersiz bir numara. Numara biçimi 3GPP2 rapor S. R0048 ile tanımlanır, ancak pratikte, onaltılık basamaklı bir IMEI olarak görülebilir. Bir MEID 56 bit uzunluktadır (14 onaltılık basamak). Üç alandan oluşur, 8 bitlik bölgesel kod (RR), 24 bit üretici kodu ve 24 bit üreticisi tarafından atanmış seri numarası.|
-|osVersion| Cihazın işletim sistemi sürümü.
+|complianceState|Cihazın uyumlu veya uyumsuz olduğunu belirten true veya false dizesi.|
+|isManaged|İstemcinin Intune tarafından yönetildiğini veya yönetilmediğini belirten true veya false dizesi.|
+|macAddress|Cihazın MAC adresi.|
+|serialNumber|Cihazın seri numarası. Yalnızca iOS cihazları için geçerlidir.|
+|imei|IMEI (15 ondalık basamak: 14 basamak, artı bir denetleme basamağı) veya IMEISV (16 basamak) numarası cihaz kökeni, modeli ve seri numarasını hakkında bilgi içerir. Bu numaranın yapısı 3GPP TS 23.003 içinde belirtilir. Yalnızca SIM kartlı cihazlar için geçerlidir.|
+|udid|40 harf ve rakamlık bir dizi olan Benzersiz Cihaz Tanımlayıcısı. iOS cihazlarına özgüdür.|
+|meid|CDMA mobil istasyonu ekipmanının fiziksel bir parçasını tanımlayan ve genel olarak benzersiz bir numara olan mobil donanım kimliği. Numaranın biçimi 3GPP2 rapor S. R0048 tarafından tanımlanır.. Bununla birlikte, pratikte bunun onaltılı basamaklar içeren bir IMEI olduğu düşünülebilir. Bir MEID 56 bit uzunluktadır (14 onaltılık basamak). Üç alandan oluşur, 8 bitlik bölgesel kod (RR), 24 bit üretici kodu ve 24 bit üreticisi tarafından atanmış seri numarası.|
+|osVersion|Cihazın işletim sistemi sürümü.
 |model|Cihaz modeli.
 |üretici|Cihaz üreticisi.
-|azureDeviceId| Azure Active Directory ile iş yerine birleştirildikten sonraki cihaz kimliği. Birleştirilmemiş cihazlar için boş bir guid olacaktır.|
+|azureDeviceId|Azure AD ile iş yerine katıldıktan sonraki cihaz kimliği. Katılmamış cihazlar için bu boş bir GUID olacaktır.|
 |lastContactTimeUtc|Cihazın, Intune yönetim hizmetiyle son denetlendiği tarih ve saat.
 
 
 ## Kullanıcı deneyimleri
 
-Bir kullanıcı kayıtsız cihaz kullanarak kaynaklara erişmeye çalıştığında, aşağıda gösterildiği gibi bir kaydetme istemi alır:
+Kullanıcı kayıtsız cihaz kullanarak kaynaklara erişmeye çalıştığında, aşağıda gösterildiği gibi bir kaydetme istemi alır:
 
 ![Kayıt istemi örneği](../media/cisco-ise-user-iphone.png)
 
@@ -142,6 +146,6 @@ Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere k
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

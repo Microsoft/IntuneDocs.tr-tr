@@ -3,18 +3,18 @@ title: "VPN profilleri için özel yapılandırmalar | Microsoft Intune"
 description: "Intune’da VPN profillerini oluşturmak için özel yapılandırmalar kullanın."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: b61a4c90cfed9922df151a6c1ac93e276db18623
+ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
+ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 
 ---
@@ -24,28 +24,28 @@ ms.openlocfilehash: b61a4c90cfed9922df151a6c1ac93e276db18623
 ## Özel yapılandırma oluşturma
 Intune’da VPN profillerini oluşturmak için özel yapılandırmalar kullanabilirsiniz. Özel yapılandırma oluşturmak için:
 
-   1. Intune yönetim konsolunda **İlke** -> **İlke Ekle** -> *<Expand platform>* -> **Özel yapılandırma** -> **İlke Oluştur**’a tıklayın.
+   1. Intune yönetici konsolunda **İlke** > **İlke Ekle** > *<Expand platform>* > **Özel yapılandırma** > **İlke Oluştur**’a tıklayın.
    2. İlke için bir ad sağlayın.
-   3. Her URI ayarı için, **Ekle**’ye tıklayın ve istenen bilgileri sağlayın. Örnek:
+   3. Her URI ayarı için, **Ekle**’yi seçin ve istenen bilgileri sağlayın. Örnek:
 
    ![VPN profili özel yapılandırması iletişim kutusu](./media/Intune_Add_VPN_URI.png)
 
-   4.  URI ayarlarının tümünü girdikten sonra **İlkeyi kaydet**’e tıklayın ve ilkeyi dağıtın.
+   4.  URI ayarlarının tümünü girdikten sonra **İlkeyi kaydet**’i seçin ve ilkeyi dağıtın.
 
 ## Yapılandırma ilkesini dağıtma
 
-1.   **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
+1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
 
 2.   **Dağıtımı Yönet** iletişim kutusunda:
 
-    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'a tıklayın.
+    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**’a tıklayın.
 
-    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**'e tıklayın.
+    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**’i seçin.
 
 Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağıtım hakkında daha fazla bilgi görüntüleyebilirsiniz.
 
 ##Özel VPN profili yapılandırması için örnek URI ayarları
-Burada, Contoso adlı kurgusal bir şirkette VPN’e özel yapılandırma oluşturmak için örnek URI değerleri girdileri verilmiştir. Her girdinin veri türü gibi daha fazla bilgi edinmek için, bkz. [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+Burada, Contoso adlı kurgusal bir şirkette VPN’e özel yapılandırma oluşturmak için örnek URI değerleri girdileri verilmiştir. Her girdinin veri türü gibi daha fazla bilgi edinmek için, bkz. [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -83,22 +83,22 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyla ilgili ek ayrıntılar için, müşteriler CSP belgelerine bakabilir: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+Bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyla ilgili ek ayrıntılar için, müşteriler yapılandırma servisi sağlayıcısı (CSP) belgelerine bakabilir: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## PulseSecure üzerinde Android uygulaması başına VPN için URI ayarları
-### PAKET LİSTESİ İÇİN ÖZEL URI 
+### PAKET LİSTESİ İÇİN ÖZEL URI
 -  Veri türü = String
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
 -  Değer = Sınırlayıcıyla ayrılmış paket listesi.
    - Sınırlayıcılar:  noktalı virgül (;), iki nokta (:), virgül (,), dikey çizgi (|)
 
-Örnekler: 
+Örnekler:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
 ### MOD İÇİN ÖZEL URI (İSTEĞE BAĞLI)
 - Veri Türü = String
-- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode 
+- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
 > Notlar
 > - Özel profile atadığınız adla aynı *adı* kullanın.
@@ -112,6 +112,6 @@ Bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyl
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

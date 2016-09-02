@@ -4,7 +4,7 @@ description: "iOS veya Mac OS X mobil cihazınız Intune’a kaydolduğunda ciha
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,20 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Bu sayfa, son kullanıcıların Intune tarafından yönetilen cihazlarında yapabileceği görevlerin tümüne bağlantılar içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettikleri adımları görmek için bu bilgiye başvurabilir. Bu görevler kayıt ile ilgili bilgiler, yönetim görevleri ve uyumluluk sorunları gibi kategorilere ayrılır.
+Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlerin bağlantılarını içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettiği ve aşağıdaki kategorilere ayrılan adımları görmek için bu bilgiye başvurabilir: 
+- Şirket portalı uygulamasının yüklenmesi ve Intune kaydı 
+- Kayıt sonrası yönetim görevleri
+- Uyumluluk sorunları
 
-## Şirket Portalı uygulaması yüklemesi ve Intune kaydı
+## Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
 
 Bu bölümdeki bilgiler, iOS cihazlarında Intune Şirket Portalı yüklemesi ve cihaz kaydı işlemlerinizde size yardımcı olur.
 
@@ -35,7 +38,7 @@ Bu bölümdeki bilgiler, iOS cihazlarında Intune Şirket Portalı yüklemesi ve
 
 ## Cihazınız Intune’a kaydolduğunda yapabilecekleriniz
 
-Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydolduktan sonra yapabileceğiniz işlemlerde size yardımcı olur.
+Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydedildikten sonra yapabileceğiniz işlemlerde size yardımcı olur.
 
 - [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)
 - [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
@@ -48,7 +51,7 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydolduktan sonra yapab
 
 ## Cihazınızla ilgili sorunları giderme
 
-Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydolduğunda karşılaşabileceğiniz sorunların çözümünde size yardımcı olur.
+Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydedildiğinde karşılaşabileceğiniz sorunların çözümünde size yardımcı olur.
 
 - [Ele geçirilen bir iOS cihazını yeniden bağlama](how-to-reconnect-a-compromised-ios-device.md)
 - [BT yöneticinize hataları gönderme](send-errors-to-your-it-admin-ios.md)
@@ -61,6 +64,6 @@ Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydolduğunda karşılaşab
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

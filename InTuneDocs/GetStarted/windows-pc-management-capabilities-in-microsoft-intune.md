@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
-ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
+ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
+ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
 
 
 ---
@@ -22,9 +22,9 @@ ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 # Windows bilgisayarı yönetim özellikleri (Microsoft Intune bilgisayar istemcisiyle)
 Çoğu senaryoda, cihazlarınızı Microsoft Intune’a kaydedersiniz ve bu da Intune bilgisayar istemcisinden daha büyük bir özellik kümesi sağlar. Bununla birlikte bilgisayarlarınızı yönetmek için aşağıdaki özellikleri sağlayan Intune bilgisayar istemcisini de kullanabilirsiniz:
 
--   **Yazılım güncelleştirmelerini yönetme** - Bilgisayarları güncel tutup, güncelleştirmelerin ne zaman uygulanacağını yönetebilirsiniz.
+-   **Yazılım güncelleştirmelerini yönetme** - Bilgisayarları güncel tutup, güncelleştirmelerin ne zaman uygulanacağına karar verebilirsiniz.
 
--   **Windows Güvenlik Duvarı ilkesi** - Bu özellik şirketinizin kullandığı hiçbir bilgisayarın devre dışı veya yanlış yapılandırılmış bir Windows Güvenlik Duvarı’na sahip olmamasını sağlamaya yardımcı olur.
+-   **Windows Güvenlik Duvarı ilkesi** - Bu özellik şirketinizde kullanılan hiçbir bilgisayarın devre dışı veya yanlış yapılandırılmış bir Windows Güvenlik Duvarı’na sahip olmamasını sağlamaya yardımcı olur.
 
 -   **Kötü amaçlı yazılımdan koruma** - Intune, bilgisayarlarınızın kötü amaçlı yazılımlara karşı korunmasına yardımcı olan Endpoint Protection’ı içerir.
 
@@ -37,18 +37,18 @@ ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 Intune, 7000 adede kadar Windows cihazında bilgisayar istemci yazılımı yüklenmesini destekler.
 
 ## İşletim sistemi gereksinimleri
-Intune, aşağıdaki Windows sürümlerini çalıştıran bilgisayarları yönetebilir (hem x86 hem de x64):
+Intune, aşağıdaki Windows sürümlerini çalıştıran bilgisayarları yönetebilir (hem 32 bit hem de 64 bit):
 
 
--   **Windows Vista**: Business, Enterprise ve Ultimate sürümleri.
+-   **Windows Vista** - Business, Enterprise ve Ultimate sürümleri
 
--   **Windows 7**: Pro, Enterprise ve Ultimate sürümleri (hizmet paketi yüklü olmayan veya SP1 yüklü).
+-   **Windows 7** - Pro, Enterprise ve Ultimate sürümleri (hizmet paketi yüklü olmayan veya SP1 yüklü)
 
--   **Windows 8**: Pro ve Enterprise sürümleri.
+-   **Windows 8** - Pro ve Enterprise sürümleri
 
--   **Windows 8.1**: Pro ve Enterprise sürümleri.
+-   **Windows 8.1** - Pro ve Enterprise sürümleri
 
-- **Windows 10** - Pro, Education ve Enterprise sürümleri.
+- **Windows 10** - Pro, Education ve Enterprise sürümleri
 
 
 ## En düşük donanım gereksinimleri
@@ -57,7 +57,7 @@ Intune bilgisayar istemcisini yüklemeye yönelik en düşük donanım gereksini
 |Gereksinim|Ayrıntılar|
 |---------------|--------------------|
 |Ağ|İstemci, bilgisayarınızın İnternet bağlantısının olmasını gerektirir.|
-|İşlemci ve Bellek|Bilgisayarın işletim sistemine ait işlemci ve RAM gereksinimlerine bakın.|
+|İşlemci ve bellek|Bilgisayarın işletim sistemine ait işlemci ve RAM gereksinimlerine bakın.|
 |Disk alanı|İstemci yazılımı yüklenmeden önce 200 MB kullanılabilir disk alanı.|
 
 ## Diğer gereksinimler
@@ -65,8 +65,8 @@ Intune bilgisayar istemcisini yüklemeye yönelik yazılım gereksinimleri aşa�
 
 |Gereksinim|Ayrıntılar|
 |---------------|--------------------|
-|Yönetim izinleri|İstemci yazılımını yükleyen hesabın bu bilgisayarda yerel yönetici izinleri olmalıdır.|
-|Windows Installer 3.1|Bilgisayarda en azından Windows Installer 3.1 yüklü olmalıdır.|
+|Yönetim izinleri|İstemci yazılımını yükleyen hesabın bu bilgisayar için yerel yönetici izinleri olmalıdır.|
+|Windows Installer 3.1|Bilgisayarda en azından Windows Installer 3.1 olmalıdır.|
 |Uyumsuz istemci yazılımını kaldırma|Intune bilgisayar istemcisi yazılımını yüklemeden önce aşağıdaki istemci yazılımlarını ilgili bilgisayardan kaldırmanız gerekir:<br /><br />-   Configuration Manager’ın herhangi bir sürümü<br />-   Microsoft Systems Management Server’ın herhangi bir sürümü (SMS)|
 
 ### Ayrıca bkz.
@@ -74,6 +74,6 @@ Intune bilgisayar istemcisini yüklemeye yönelik yazılım gereksinimleri aşa�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
