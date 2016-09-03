@@ -3,18 +3,19 @@ title: "Cihazda Kod Bütünlüğü etkin değil | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: 793a3eb17aaa5e04c27a31302d93bfc46ff71cac
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: bb167905334886306b0abc9241f378216fc201d7
 
 
 ---
@@ -22,11 +23,11 @@ ms.openlocfilehash: 793a3eb17aaa5e04c27a31302d93bfc46ff71cac
 
 # Cihazda Kod Bütünlüğü etkin değil
 
-Kuruluşunuz, cihazınızdaki sürücüleri ve sistem dosyalarını denetleyerek güvenli olduklarından emin olan Windows Kod Bütünlüğü adlı özelliği etkinleştirmenizi istemektedir. 
+Kuruluşunuz, cihazınızdaki sürücüleri ve sistem dosyalarını denetleyerek güvenli olduklarından emin olan Windows Kod Bütünlüğü adlı özelliği etkinleştirmenizi istemektedir.
 
-Windows Kod Bütünlüğü’nü etkinleştirmek için Güvenli Önyükleme özelliğini etkinleştirin. Kod Bütünlüğü özelliği daha sonra otomatik olarak açılır. 
+Windows Kod Bütünlüğü’nü etkinleştirmek için Güvenli Önyükleme özelliğini etkinleştirin. Kod Bütünlüğü özelliği daha sonra otomatik olarak açılır.
 
-Güvenli Önyükleme özelliğinin etkinleştirilmesi gelişmiş bir görevdir. Mobil cihaz kullanıyorsanız, yardım için BT yöneticinize başvurun. 
+Güvenli Önyükleme özelliğinin etkinleştirilmesi gelişmiş bir görevdir. Mobil cihaz kullanıyorsanız, yardım için BT yöneticinize başvurun.
 
 Bilgisayar kullanıyorsanız BT yöneticinize başvurabilir veya [Güvenli Önyüklemeyi Devre Dışı Bırakma](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) sayfasındaki “Güvenli Önyüklemeyi yeniden etkinleştirmek için” bölümüne bakarak Güvenli Önyüklemeyi etkinleştirmeyi kendiniz deneyebilirsiniz.
 
@@ -36,6 +37,7 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

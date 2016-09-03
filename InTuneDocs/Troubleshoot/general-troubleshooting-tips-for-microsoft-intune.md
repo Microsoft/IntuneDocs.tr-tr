@@ -13,8 +13,8 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: d321930262a9bcf9542c757fdf0b945d0419930c
+ms.sourcegitcommit: ab7ccf4c72f8e8f3c67c65d99563fe6fbfdd42b9
+ms.openlocfilehash: 94c761071f4b578440297859662102b2b3080899
 
 
 ---
@@ -24,6 +24,7 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerini
 
 > [!NOTE]
 > Destek isteği oluşturmak veya mevcut isteği görüntülemek için [Office 365 yönetim merkezini ziyaret edin](https://portal.office.com/admin/default.aspx). Destek seçenekleri hakkında daha fazla bilgi için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
+
 ## Sorunu tanımlama
 
 -   Davranış nedir?
@@ -48,7 +49,7 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerini
   - [Android tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [BT yöneticinize Android kayıt hatalarını gönderme](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-  - [BT yöneticinize iOS kayıt hataları gönderin](/intune/enduser/send-errors-to-your-it-admin-ios)
+  - [BT yöneticinize iOS kayıt hatalarını gönderin](/intune/enduser/send-errors-to-your-it-admin-ios)
 
 -   Örneğin, ilke uygulama sorunlarına yönelik yönetici konsolu verileri için [Microsoft Intune ile kullanıcı ve cihazları yönetmek için grupları kullanma](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) bölümünde açıklandığı gibi amaçlanan ilkeyi ve ilgili ilkenin durumunu incelemeniz gerekir.
 
@@ -92,6 +93,6 @@ Aşağıda listelenen konular, belirli konular için sorun giderme yardımına s
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

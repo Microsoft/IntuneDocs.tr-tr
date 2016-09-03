@@ -2,7 +2,7 @@
 title: "Intune hızlı başlangıç kılavuzu | Microsoft Intune"
 description: "Intune aboneliğinizi kullanmaya başlamak için gereksinimler ve önkoşullar"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: d10bb6ce48ba000154d117b2481690a198d25e49
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 735889feb1c3234c0c063048601715a3f8aa4719
 
 
 ---
@@ -26,7 +26,7 @@ Bu hızlı başlangıç kılavuzu, kuruluşunuzda kullanılan mobil cihazları v
 >[!NOTE]
 >Bu makale, Intune’u tek başına bir hizmet olarak ayarlamaya odaklanır. Alternatif olarak, şu anda bilgisayarlar ve sunucuları yönetmek için Microsoft System Center Configuration Manager’ı kullanıyorsanız, [Configuration Manager’ın kapsamını mobil cihazları da yönetecek şekilde genişletebilirsiniz](https://technet.microsoft.com/library/jj884158.aspx). Bunu, karma bir mobil cihaz yönetimi (MDM) dağıtımında Intune’a Configuration Manager ile bağlanarak yapabilirsiniz.
 
-Bu hızlı başlangıç kılavuzundaki adımlar, [Intune değerlendirme kılavuzu](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) içinde yer alan birçok adımla aynıdır. Öte yandan, değerlendirmenizi bitirdiğinizde mobil cihazlarınızı yönetmeye başlamak için hazır olduğunuzda, bazı ek gereksinimleri de karşılamanız gerekir:
+Bu hızlı başlangıç kılavuzu, [Intune değerlendirme kılavuzu](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) içinde yer alan birçok adımla aynıdır. Öte yandan, değerlendirmenizi bitirdiğinizde mobil cihazlarınızı yönetmeye başlamak için hazır olduğunuzda, bazı ek gereksinimleri de karşılamanız gerekir:
 
 -   Şirket içi Active Directory hesaplarını Intune ve Azure Active Directory ile eşitleyin.
 
@@ -75,6 +75,6 @@ Intune hızlı başlangıç kılavuzuyla çalışmaya başlamanın tam zamanı!
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

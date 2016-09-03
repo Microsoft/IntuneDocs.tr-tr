@@ -8,9 +8,6 @@
 ### [Mobil cihazları kaydetme ve uygulama yükleme](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
 ### [Diğer seçenekler ve ek özellikler](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Sonraki adımlar](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-## [Intune ortak değerlendirme görevleri](common-microsoft-intune-evaluation-tasks.md)
-### [Deneme başlatma ve iOS PIN ilkesini dağıtma](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [iOS cihazları için e-posta erişimi ayarlama](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Yaygın senaryolar](common-ways-to-use-intune.md)
 ## [Hızlı başlangıç kılavuzları](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -25,6 +22,6 @@
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
