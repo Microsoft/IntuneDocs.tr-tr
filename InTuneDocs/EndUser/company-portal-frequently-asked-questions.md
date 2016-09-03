@@ -3,18 +3,19 @@ title: "Şirket Portalı hakkında | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: 56edeafa9221b3574ceaba269891dfb92df44408
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: fcc0395815499f3a46dafa55c0c74834e37bed97
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: 56edeafa9221b3574ceaba269891dfb92df44408
 Microsoft Intune Şirket Portalı, şirketinizin veya okulunuzun verilerine ve uygulamalarına erişmenizi sağlar. Şirket Portalı’nı iki farklı yolla alabilirsiniz:
 
 - Cihazınıza Şirket Portalı uygulamasını yükleyerek. Normalde Şirket Portalı uygulamasını cihazınızın uygulama mağazasına giderek alabilirsiniz, ama BT yöneticiniz de farklı yöntemler kullanarak Şirket Portalı uygulamasını yükleyebilir.
-- BT yöneticinizin kurduğu [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek. 
+- BT yöneticinizin kurduğu [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek.
 
 Şirket Portalı uygulamasıyla Şirket Portalı web sitesi arasında birkaç önemsiz fark vardır, ama birinde gerçekleştirdiğiniz görevlerden çoğunu diğerinde de gerçekleştirebilirsiniz. Bazı örnekler:
 
@@ -99,10 +100,6 @@ Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin. Kişi bilgile
 
 
 
-
-
-
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
