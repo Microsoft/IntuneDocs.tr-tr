@@ -3,18 +3,19 @@ title: "Cihazda BitLocker etkin değil | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: dcc3872c4237023c80324ee3dca927e5095b87be
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 44b9d572956250da916fb72afdddc8a90860025a
 
 
 ---
@@ -28,6 +29,7 @@ Kuruluşunuz, sürücünüzü şifreleyen ve verilerinizi korumaya yardımcı ol
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 
