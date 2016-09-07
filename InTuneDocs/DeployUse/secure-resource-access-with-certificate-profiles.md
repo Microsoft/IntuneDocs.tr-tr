@@ -13,41 +13,41 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 98c32f924b60734d9a592ebdd7e00429dc32af26
+ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
+ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
 
 
 ---
 
 # Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi
-VPN, Wi-Fi veya e-posta profilleri aracılığıyla şirket kaynaklarına erişimi etkinleştirdiğinizde her kullanıcı cihazına yüklü bir sertifika ile bu erişimin güvenliğini sağlama seçeneğine sahip olursunuz. Şu şekilde çalışır:
+VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılara şirket kaynaklarına erişim izni verdiğinizde, her kullanıcı cihazında yüklü bir sertifika kullanarak erişim güvenliğini sağlayabilirsiniz. Şu şekilde çalışır:
 
-1. [Sertifika altyapısını SCEP için yapılandırma](configure-certificate-infrastructure-for-scep.md) veya [Sertifika altyapısını PFX için yapılandırma](configure-certificate-infrastructure-for-pfx.md) konu başlığı altında açıklandığı gibi, doğru sertifika altyapısına sahip olduğunuzdan emin olun.
+1. [Sertifika altyapısını SCEP için yapılandırma](configure-certificate-infrastructure-for-scep.md) ve [Sertifika altyapısını PFX için yapılandırma](configure-certificate-infrastructure-for-pfx.md) konuları altında açıklandığı gibi, doğru sertifika altyapısına sahip olduğunuzdan emin olun.
 
-2. Cihazın Sertifika Yetkilinizin meşruluğunu tanıması için her cihaza bir kök sertifika (veya ara CA sertifikası) yükleyin. Bunu yapmak için bir **Güvenilen Kök Sertifikası** oluşturun ve dağıtın. Bu profili dağıttığınızda Intune ile yönettiğiniz cihazlar kök sertifikayı ister ve alır. Her platform için ayrı bir profil oluşturmanız gerekir. Şu platformlar için **Güvenilen Sertifika Profili** sağlanır:
+2. Her cihaza bir kök sertifika veya ara Sertifika Yetkilisi (CA) sertifikası yükleyerek cihazın Sertifika Yetkilinizin meşruluğunu tanımasını sağlayın. Bunu yapmak için **Güvenilen Sertifika Profili** oluşturun ve dağıtın. Bu profili dağıttığınızda Intune ile yönettiğiniz cihazlar kök sertifikayı ister ve alır. Her platform için ayrı bir profil oluşturmanız gerekir. Şu platformlar için **Güvenilen Sertifika Profili** sağlanır:
  -  iOS 7.1 ve üzeri
  -  Mac OS X 10.9 ve üzeri
  -  Android 4.0 ve üzeri
  -  Windows 8.1 ve üzeri
  -  Windows Phone 8.1 ve üzeri
 
-3. [Intune sertifika profillerini yapılandırma](configure-intune-certificate-profiles.md) konu başlığı altında açıklandığı gibi, her cihazın e-posta, VPN ve Wi-Fi erişimi kimlik doğrulaması için kullanılacak bir sertifika istemesini sağlayın. Bu platformlardaki cihazlar için **PKCS #12 (.PFX) Sertifika Profili** veya **SCEP Sertifika Profili** oluşturabilir ve dağıtabilirsiniz:
+3. [Intune sertifika profillerini yapılandırma](configure-intune-certificate-profiles.md) konusunda açıklandığı gibi, cihazların VPN, Wi-Fi ve e-posta erişimi kimlik doğrulaması için kullanılacak bir sertifika istemelerini sağlamak için sertifika profilleri oluşturun. Aşağıdaki platformları çalıştıran cihazlar için **PKCS #12 (.PFX) Sertifika Profili** *veya* **SCEP Sertifika Profili** oluşturabilir ve dağıtabilirsiniz:
 
--  Android 4.0 ve üzeri
--  iOS 7.1 ve üzeri
--  Windows 10 (masaüstü ve Mobile) ve üzeri
+  -  iOS 7.1 ve üzeri
+  -  Android 4.0 ve üzeri
+  -  Windows 10 (masaüstü ve Mobile) ve üzeri
 
-Aşağıdakiler için **SCEP Sertifika Profili** kullanın:
--   Mac OS X 10.9 ve üzeri
--   Windows Phone 8.1 ve üzeri
+  Aşağıdaki platformları çalıştıran cihazlar için bir **SCEP Sertifika Profili** kullanın:
+    -   Mac OS X 10.9 ve üzeri
+    -   Windows Phone 8.1 ve üzeri
 
-Her platform için ayrı bir profil oluşturmanız gerekir. Profili oluştururken daha önce oluşturduğunuz **Güvenilen Kök Sertifika profili** ile ilişkilendirin.
+Her platform için ayrı profil oluşturmanız gerekir. Profili oluştururken daha önce oluşturduğunuz **Güvenilen Kök Sertifika Profili** ile ilişkilendirin.
 
 > [!NOTE]           
-> -    Kuruluş sertifika yetkiliniz yoksa bir tane oluşturmanız gerekir.
+> - Kuruluş Sertifika Yetkiliniz yoksa oluşturmanız gerekir.
 >- Cihaz platformlarınıza bağlı olarak Basitleştirilmiş Sertifika Kayıt Protokolü (SCEP) profili kullanmaya karar verirseniz ayrıca bir Ağ Cihazı Kayıt Hizmeti (NDES) sunucusunu yapılandırmanız gerekir.
 >-  SCEP veya .PFX profilleri kullanmayı planlıyorsanız Microsoft Intune Sertifika Bağlayıcısı'nı indirip yapılandırmanız gerekir.
-> Bunların tümünün yapılandırması, [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md) ve [PFX için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-pfx.md) konularında açıklanır.
+>-  Tüm gerekli hizmetlerin nasıl yapılandırılacağını [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md) veya [PFX için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-pfx.md) konularında öğrenebilirsiniz.
 
 ### Sonraki adımlar
 - [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ Her platform için ayrı bir profil oluşturmanız gerekir. Profili oluştururke
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
 
 
 ---
@@ -35,7 +35,7 @@ Kullanıcı cihazında OneDrive gibi desteklenen bir uygulama kullanarak bir dos
 >[!IMPORTANT]
 >Modern kimlik doğrulamasının kullanıldığı uygulamalar bulunan bilgisayarlar ve Windows 10 Mobile cihazları için koşullu erişim özelliği, şu anda tüm Intune müşterilerine sağlanmaz. Bu özellikleri zaten kullanıyorsanız, herhangi bir işlem yapmanız gerekmez. Kullanmaya devam edebilirsiniz.
 
->Bilgisayarlarda veya Windows 10 Mobile cihazlarda modern kimlik doğrulamasının kullanıldığı uygulamalar için koşullu erişim ilkeleri oluşturmadıysanız ve bunu yapmak istiyorsanız, bir istek göndermeniz gerekir.  [Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472) bilinen sorunlar ve bu özelliğe erişim elde etme hakkında daha fazla bilgi bulabilirsiniz.
+>Modern kimlik doğrulaması kullanan uygulamalar için bilgisayarlar ve Windows 10 Mobile’da koşullu erişim ilkeleri oluşturmadıysanız ve oluşturmak istiyorsanız, Intune ile yönetilen cihazlar veya etki alanına katılmış Windows bilgisayarları için cihaza dayalı koşullu erişim içeren Azure Active Directory genel önizlemesine kaydolun. Daha fazla bilgi edinmek için [bu blog gönderisini](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) okuyun.
 
 SharePoint Online için koşullu erişim ilkesini yapılandırmadan **önce**:
 - **SharePoint Online aboneliğiniz** olmalıdır ve kullanıcılar SharePoint Online lisansına sahip olmalıdır.
@@ -134,7 +134,7 @@ Hazır olduğunuzda **3. Adım**’a ilerleyin.
         *   Windows cihazlarının, kaydolması ve uyumlu hale gelmesi, şirket içi Active Directory ile etki alanı birleşik olması veya her ikisi gerekir
         * Mac gibi desteklenmeyen platformlar.  Ancak, bu platformlarından gelen, modern kimlik doğrulaması kullanan uygulamalar yine de engellenir.
         >[!TIP]
-        >Bilgisayarlar için koşullu erişimi zaten kullanıyorsanız, bu seçeneği görmeyebilirsiniz.  Bunun yerine **Belirli platformlar**’ı kullanın. Bilgisayarlar için koşullu erişim şu anda tüm Intune müşterilerine sağlanmamaktadır.   [Microsoft Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472), bilinen sorunların yanı sıra bu özelliğe nasıl erişebileceğiniz hakkında daha fazla bilgi bulabilirsiniz.
+        >Bilgisayarlar için koşullu erişimi zaten kullanıyorsanız, bu seçeneği görmeyebilirsiniz.  Bunun yerine **Belirli platformlar**’ı kullanın. Bilgisayarlar için koşullu erişim şu anda tüm Intune müşterilerine sağlanmamaktadır.   Bu özelliğe nasıl erişebileceğinize ilişkin daha fazla bilgiyi [bu blog gönderisinde](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) bulabilirsiniz.
 
     -   **Belirli platformlar**
 
@@ -189,6 +189,6 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

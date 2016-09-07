@@ -1,10 +1,10 @@
 ---
-title: "Windows bilgisayarı yönetim özellikleri | Microsoft Intune"
-description: "Windows bilgisayarlarını Intune istemci yazılımıyla yönetirken sağlanan Intune özelliklerini öğrenin."
+title: "Intune bilgisayar yazılım istemcisi özellikleri | Microsoft Intune"
+description: "Windows bilgisayarlarını Intune yazılım istemcisiyle yönetirken sağlanan Intune özelliklerini öğrenin."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
-ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
+ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
+ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 
 
 ---
 
-# Windows bilgisayarı yönetim özellikleri (Microsoft Intune bilgisayar istemcisiyle)
-Çoğu senaryoda, cihazlarınızı Microsoft Intune’a kaydedersiniz ve bu da Intune bilgisayar istemcisinden daha büyük bir özellik kümesi sağlar. Bununla birlikte bilgisayarlarınızı yönetmek için aşağıdaki özellikleri sağlayan Intune bilgisayar istemcisini de kullanabilirsiniz:
+# Intune yazılım istemcisi kullandığınızda Windows PC yönetimi özellikleri)
+Çoğu senaryoda, cihazlarınızı Microsoft Intune’a kaydeder ve böylece daha büyük bir özellik kümesine sahip olursunuz. Bununla birlikte, bilgisayarlarınızı yönetmek için aşağıdaki özellikleri sağlayan Intune yazılım istemcisini de kullanabilirsiniz:
 
 -   **Yazılım güncelleştirmelerini yönetme** - Bilgisayarları güncel tutup, güncelleştirmelerin ne zaman uygulanacağına karar verebilirsiniz.
 
@@ -31,10 +31,10 @@ ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
 -   **Uzaktan yardım** - Intune kullanıcıların BT destek personeliyle bağlantı kurmasına olanak tanır ve onlar da Intune’la birlikte gelen uzak masaüstü özelliğini kullanarak yardım sağlayabilir (TeamViewer yazılımı gerekir).
 
 -   **Yazılım lisansı yönetimi** - Kullanılabilir yazılım lisanslarının sayısını ve bunlardan kaç tanesinin kullanıldığını izleyin.
--   **Uygulama dağıtımı** - Yönettiğiniz bilgisayarlarda yazılım dağıtımı yapın. Bilgisayarları istemci yazılımıyla yönettiğinizde bazı uygulama yönetimi özellikleri kullanılamaz.
+-   **Uygulama dağıtımı** - Yönettiğiniz bilgisayarlarda yazılım dağıtımı yapın. Bilgisayarları yazılım istemcisiyle yönettiğinizde bazı uygulama yönetimi özellikleri kullanılamaz.
 
 
-Intune, 7000 adede kadar Windows cihazında bilgisayar istemci yazılımı yüklenmesini destekler.
+Intune, 7.000’e kadar Windows cihazında yazılım istemcisinin yüklenmesini destekler.
 
 ## İşletim sistemi gereksinimleri
 Intune, aşağıdaki Windows sürümlerini çalıştıran bilgisayarları yönetebilir (hem 32 bit hem de 64 bit):
@@ -52,7 +52,7 @@ Intune, aşağıdaki Windows sürümlerini çalıştıran bilgisayarları yönet
 
 
 ## En düşük donanım gereksinimleri
-Intune bilgisayar istemcisini yüklemeye yönelik en düşük donanım gereksinimleri aşağıda verilmiştir:
+Intune yazılım istemcisini yüklemeye yönelik en düşük donanım gereksinimleri aşağıda verilmiştir:
 
 |Gereksinim|Ayrıntılar|
 |---------------|--------------------|
@@ -61,7 +61,7 @@ Intune bilgisayar istemcisini yüklemeye yönelik en düşük donanım gereksini
 |Disk alanı|İstemci yazılımı yüklenmeden önce 200 MB kullanılabilir disk alanı.|
 
 ## Diğer gereksinimler
-Intune bilgisayar istemcisini yüklemeye yönelik yazılım gereksinimleri aşağıda verilmiştir:
+Intune yazılım istemcisini yüklemeye yönelik yazılım gereksinimleri aşağıda verilmiştir:
 
 |Gereksinim|Ayrıntılar|
 |---------------|--------------------|
@@ -70,10 +70,10 @@ Intune bilgisayar istemcisini yüklemeye yönelik yazılım gereksinimleri aşa�
 |Uyumsuz istemci yazılımını kaldırma|Intune bilgisayar istemcisi yazılımını yüklemeden önce aşağıdaki istemci yazılımlarını ilgili bilgisayardan kaldırmanız gerekir:<br /><br />-   Configuration Manager’ın herhangi bir sürümü<br />-   Microsoft Systems Management Server’ın herhangi bir sürümü (SMS)|
 
 ### Ayrıca bkz.
-[Microsoft Intune'da mobil cihaz yönetimi özellikleri](./mobile-device-management-capabilities-in-microsoft-intune.md)
+[Microsoft Intune’un kayıtlı cihaz yönetimi özellikleri](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

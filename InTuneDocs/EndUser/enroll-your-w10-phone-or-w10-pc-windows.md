@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 8dd807aa18f7e5729ae1ab1435c3196e324ffe44
+ms.sourcegitcommit: 02287eb01598c28906045fd8def9e8b4660e3da5
+ms.openlocfilehash: 8806231f8d02885a192053a35559694a8984d2f5
 
 
 ---
@@ -29,25 +29,64 @@ Windows 10 Mobile veya Windows 10 masaüstü cihazınızı kaydetmek için:
 
 1.  Windows **Ayarlar**’a gidin ve **Hesaplar**’a dokunun.
 
-    ![settings-accounts](./media/W10-enroll-1-settings-accounts.png)
+    ![settings-accounts](./media/w10-enroll-rs1-settings-accounts.png)
+
+2.  Sonraki iki ekrana bakarak kendi cihazınızda gördüğünüze benzeyeni bulun. Cihazınızda gördüğünüz ekrana uyan ekranın yanında yer alan adımları uygulayın.
+
+    Bu ekranı görürseniz, [İşe veya okula erişim seçeneğini görüyorsanız izlenecek adımlar](#steps-to-follow-if-you-see-access-work-or-school) kısmındaki adımları uygulayın.
+
+    ![connect-to-work-or-school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    Bu ekranı görürseniz, [Hesabınızı görüyorsanız uygulanacak adımlar](#steps-to-follow-if-you-see-your-account) bölümündeki adımları uygulayın.
+
+    ![your-account](./media/w10-enroll-2-accounts-your-account.png)
+
+## İşe veya okula erişim seçeneğini görüyorsanız izlenecek adımlar
+
+1.  **İşe veya okula erişim**’e tıklayın.
+
+    ![tap-access-work-school-account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2.  İş veya okul e-postanızı girin ve **İleri**’ye dokunun.
+
+    ![enter-your-work-or-school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+
+3. İş veya okul hesabınızı kullanarak Intune’da oturum açın.
+
+    ![add-work-school-account](./media/w10-enroll-rs1-enter-your-credentials.png)
+
+    Şirketinizin veya okulunuzun cihazını kaydettiğini belirten bir mesaj görürsünüz.
+
+4. **Tamamen hazırsınız!** sayfasını gördüğünüzde, **Kapat**’a dokunun. İşlem tamamlandı.
+
+  ![tap-close-on-you-are-all-set-screen](./media/w10-enroll-rs1-youre-all-set.png)
+
+5. Bağlantınızın doğru olup olmadığını bir kez daha kontrol etmek isterseniz, **Ayarlar**’a geri dönerek iş veya okul hesabınızın listelendiğini görebilirsiniz.
+
+    ![validate-that-connection-was-set-up-correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+
+Yukarıdaki adımları uygulamanıza rağmen iş veya okul e-postanıza ve dosyalarınıza erişemiyorsanız, [İşe veya okula erişim görüyorsanız izlenecek sorun giderme adımları](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) bölümündeki adımları uygulayın.
+
+
+## Hesabınızı görüyorsanız uygulanacak adımlar
+
+1.  Windows **Ayarlar**’a gidin ve **Hesaplar**’a dokunun.
+
+    ![go-to-settings-accounts](./media/W10-enroll-1-settings-accounts.png)
 
 2.  **Hesabınız**’a dokunun.
 
-    ![your-account](./media/W10-enroll-2-accounts-your-account.png)
+    ![tap-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
 3.  **İş veya okul hesabı ekle**’ye dokunun.
 
-    ![add-work-school-account](./media/W10-enroll-3-add-work-school-acct.png)
+    ![add-work-or-school-account](./media/w10-enroll-3-add-work-school-acct.png)
 
 4.  İş veya okul kimlik bilgilerinizle oturum açın.
 
     ![sign-in](./media/W10-enroll-4-sign-in.png)
 
-Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza, dosyalarınıza ve diğer verilerinize erişemiyorsanız **Hesaplar**’a dönün ve **İş erişimi**’ne dokunun.
-
--   İş veya okul hesabınızı görüyorsanız, tebrikler. Bağlandınız.
-
--   İş veya okul hesabınızı görmüyorsanız **Bağlan**’a dokunun ve ardından iş veya okul kimlik bilgilerinizle oturum açın.
+Yukarıdaki adımları uygulamanıza rağmen iş veya okul e-postanıza, dosyalarınıza ve diğer verilere erişemiyorsanız, [Hesabınızı görüyorsanız izlenecek sorun giderme adımları](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) bölümündeki adımları uygulamayı deneyin.
 
 Ayrıca sizinle ve rolünüzle ilgili olan şirket uygulamalarını kolayca belirleyip edinmenizi sağlayan Şirket Portalı uygulamasını yüklemenizi öneririz. Şirketinizin Intune’u nasıl yapılandırdığına bağlı olarak, Şirket Portalı uygulaması kayıt sürecinizin parçası olarak yüklenmiş olabilir. Uygulamaya sahip olup olmadığınızı denetlemek için uygulama listenizde **Şirket Portalı**’nı arayın. Uygulama listenizde Şirket Portalı’nı görmüyorsanız, yüklemek için aşağıdaki adımları izleyin.
 
@@ -62,11 +101,10 @@ Ayrıca sizinle ve rolünüzle ilgili olan şirket uygulamalarını kolayca beli
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
-[Windows cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-windows.md)</br>
 [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

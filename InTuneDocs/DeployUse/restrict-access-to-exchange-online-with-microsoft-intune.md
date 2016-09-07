@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 ---
@@ -29,7 +29,7 @@ Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek iç
 >[!IMPORTANT]
 >Modern kimlik doğrulamasının kullanıldığı uygulamalar bulunan bilgisayarlar ve Windows 10 Mobile cihazları için koşullu erişim özelliği, şu anda tüm Intune müşterilerine sağlanmaz. Bu özellikleri zaten kullanıyorsanız, herhangi bir işlem yapmanız gerekmez. Kullanmaya devam edebilirsiniz.
 
->Bilgisayarlarda veya Windows 10 Mobile cihazlarda modern kimlik doğrulamasının kullanıldığı uygulamalar için koşullu erişim ilkeleri oluşturmadıysanız ve bunu yapmak istiyorsanız, bir istek göndermeniz gerekir.  [Microsoft Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472), hem bilinen sorunlar hem de bu özelliğe nasıl erişebileceğiniz hakkında daha fazla bilgi bulabilirsiniz.
+>Modern kimlik doğrulaması kullanan uygulamalar için bilgisayarlar ve Windows 10 Mobile’da koşullu erişim ilkeleri oluşturmadıysanız ve oluşturmak istiyorsanız, Intune ile yönetilen cihazlar veya etki alanına katılmış Windows bilgisayarları için cihaza dayalı koşullu erişim içeren Azure Active Directory genel önizlemesine kaydolun. Daha fazla bilgi edinmek için [bu blog gönderisini](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) okuyun.  
 
 Koşullu erişimi yapılandırabilmeniz için **önce**:
 
@@ -196,7 +196,7 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
         * Mac OS gibi desteklenmeyen platformlar.  Ancak, bu platformlarından gelen, modern kimlik doğrulaması kullanan uygulamalar yine de engellenir.
 
         >[!TIP]
-           Bilgisayarlar için koşullu erişimi zaten kullanıyorsanız, bu seçeneği görmeyebilirsiniz.  Bunun yerine **Belirli platformlar**’ı kullanın. Bilgisayarlar için koşullu erişim şu anda tüm Intune müşterilerine sağlanmamaktadır.   [Microsoft Connect sitesinde](http://go.microsoft.com/fwlink/?LinkId=761472), bilinen sorunların yanı sıra bu özelliğe nasıl erişebileceğiniz hakkında daha fazla bilgi bulabilirsiniz.
+           Bilgisayarlar için koşullu erişimi zaten kullanıyorsanız, bu seçeneği görmeyebilirsiniz.  Bunun yerine **Belirli platformlar**’ı kullanın. Bilgisayarlar için koşullu erişim şu anda tüm Intune müşterilerine sağlanmamaktadır.   Bu özelliğe nasıl erişebileceğinize ilişkin daha fazla bilgiyi [Bu web günlüğü gönderisinde](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) bulabilirsiniz.
 
     -   **Belirli platformlar**
 
@@ -260,6 +260,6 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 
