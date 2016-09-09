@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/15/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e8b6da8348f9c4d8ba1b85687510388cd40eac8a
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: e2493f93c08aaf7c10c47a0835de498349799e28
 
 
 ---
@@ -35,11 +35,10 @@ Aşağıdaki tabloda iOS cihazlarınızı Intune’a kaydederken görebileceğin
 |UserLicenseTypeInvalid|Kullanıcı hesabınız henüz gerekli bir kullanıcı grubuna üye olmadığı için mobil cihazınızı kaydedemiyorsunuz.<br /><br />BT yöneticilerinize başvurun ve mobil cihazınızı kaydederken **UserLicenseTypeInvalid** iletisini aldığınızı ve bu tablodaki çözüme bakmalarını söyleyin.|Kullanıcıların cihazlarını kaydedebilmesi için doğru kullanıcı grubunun üyesi olmaları gerekir. Bu ileti kullanıcının belirlenen mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin, mobil cihaz yönetimi yetkilisi olarak Intune belirlendiyse ve kullanıcı bir System Center 2012 R2 Configuration Manager lisansı kullanıyorsa bu hatayı alır.<br /><br />Daha fazla bilgi için aşağıdakileri gözden geçirin:<br /><br />[Microsoft Intune’la iOS ve Mac yönetimini ayarlama](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) konusunu, [Sync Active Directory’de kullanıcıları ayarlama ve Intune’a kullanıcı kaydetme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3 ayrıca [kullanıcıları ve cihazları düzenleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) bilgilerini gözden geçirin.|
 |MdmAuthorityNotDefined|Bu mesaj BT yöneticinizin şirketinizdeki mobil cihazların yönetilme şeklini yapılandırması gerektiğini belirtir.<br /><br />BT yöneticilerinize başvurun ve mobil cihazınızı kaydederken **MdmAuthorityNotDefined** iletisini aldığınızı ve bu tablodaki çözüme bakmalarını söyleyin.|Intune’da mobil cihaz yönetimi yetkilisi belirlenmemiştir.<br /><br />[30 günlük Microsoft Intune denemesini başlatın](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) bölümündeki “6. Adım: Mobil cihazları kaydetme ve uygulama yükleme” kısmında madde 1’i gözden geçirin.|
 
-### Ayrıca bkz.
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

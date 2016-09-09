@@ -3,8 +3,8 @@ title: "Windows cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Windows cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 55b73604efcbaf9d2c833031189f02a527a2122e
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 35cc0e04c1f57ccd5db9e2ba05083d75711600c0
 
 
 ---
@@ -26,19 +26,18 @@ ms.openlocfilehash: 55b73604efcbaf9d2c833031189f02a527a2122e
 
 Kaydolmak için, kullandığınız cihaza karşılık gelen bağlantıyı kullanın:
 
-- [Windows 10 Mobile ve Windows 10 masaüstü](enroll-your-w10-phone-or-w10-pc-windows.md)</br>
-- [Windows 8.1 veya Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)</br>
-- [Windows RT](enroll-your-rt-windows.md)</br>
-- [Windows Phone 8.1](enroll-your-wp81-windows.md)</br>
-- [Windows Phone 8](enroll-your-wp8-windows.md)
 
 
-### Ayrıca bkz.
-[Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
-
+-  [Windows 10 Mobile ve Windows 10 masaüstü](enroll-your-w10-phone-or-w10-pc-windows.md)
+-  [Windows 8.1 veya Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
+-  [Windows RT](enroll-your-rt-windows.md)
+-  [Windows Phone 8.1](enroll-your-wp81-windows.md)
+-  [Windows Phone 8](enroll-your-wp8-windows.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

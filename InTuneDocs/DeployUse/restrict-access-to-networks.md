@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
-ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
+ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
+ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
 
 
 ---
@@ -29,33 +29,34 @@ Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar
 ### 1. Adım: Sertifikaları yönetme
 1. Azure Active Directory (Azure AD) konsolunda, sertifikayı dışarı aktarın.
 
-    #### Internet Explorer 11
+#### Internet Explorer 11
 
 
-    a. Internet Explorer'ı yönetici olarak çalıştırın ve Azure AD konsoluna oturum açın.
+   a. Internet Explorer'ı yönetici olarak çalıştırın ve Azure AD konsoluna oturum açın.
 
-    b. Adres çubuğunda kilit simgesini seçin ve **Sertifikaları görüntüle**’yi seçin.
+   b. Adres çubuğunda kilit simgesini seçin ve **Sertifikaları görüntüle**’yi seçin.
 
-    c. Sertifika özelliklerinin **Ayrıntılar** sekmesinde, **Dosyaya kopyala**’yı seçin.
+   c. Sertifika özelliklerinin **Ayrıntılar** sekmesinde, **Dosyaya kopyala**’yı seçin.
 
-    d. **Sertifika dışarı aktarma sihirbazı** karşılama sayfasında, **İleri**’yi seçin.
+   d. **Sertifika dışarı aktarma sihirbazı** karşılama sayfasında, **İleri**’yi seçin.
 
-    e. **Dışarı aktarma dosya biçimi** sayfasında, varsayılan **DER ile kodlanmış ikili x.509 (.CER)** ayarını bırakın ve **İleri**’yi seçin.  
+   e. **Dışarı aktarma dosya biçimi** sayfasında, varsayılan **DER ile kodlanmış ikili x.509 (.CER)** ayarını bırakın ve **İleri**’yi seçin.  
 
-    f. **Dışarı aktarılacak dosya** sayfasında, dosyanın kaydedileceği bir konum seçmek üzere **Gözat**’ı seçin ve bir dosya adı sağlayın. Dışarı aktarılacak bir dosya seçiyor gibi gözükseniz de, aslında dışarı aktarılan sertifikanın kaydedileceği dosyayı yeniden adlandırıyorsunuz. **İleri** &gt; **Son**’u seçin.
+   f. **Dışarı aktarılacak dosya** sayfasında, dosyanın kaydedileceği bir konum seçmek üzere **Gözat**’ı seçin ve bir dosya adı sağlayın. Dışarı aktarılacak bir dosya seçiyor gibi gözükseniz de, aslında dışarı aktarılan sertifikanın kaydedileceği dosyayı yeniden adlandırıyorsunuz. **İleri** &gt; **Son**’u seçin.
 
-    #### Safari
+#### Safari
 
-    a. Azure AD konsolunda oturum açın.
+ a. Azure AD konsolunda oturum açın.
 
-    b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
+b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
 
-    c. **Sertifika görüntüle** &gt; **Ayrıntılar**’ı seçin.
+   c. **Sertifika görüntüle** &gt; **Ayrıntılar**’ı seçin.
 
-    d. Sertifikayı seçin ve ardından **Dışa aktar**’ı seçin.  
+   d. Sertifikayı seçin ve ardından **Dışa aktar**’ı seçin.  
 
-    > [!IMPORTANT]
-    > Sertifikanın son kullanma tarihini denetleyin, bunun süresi dolduğunda yeni bir sertifika dışarı aktarmanız ve içeri aktarmanız gerekecektir.
+> [!IMPORTANT]
+>
+> Sertifikanın son kullanma tarihini denetleyin, bunun süresi dolduğunda yeni bir sertifika dışarı aktarmanız ve içeri aktarmanız gerekecektir.
 
 
 2. ISE konsolunda, Intune sertifikasını (dışarı aktardığınız dosya) **Güvenilen Sertifikalar** deposuna aktarın.
@@ -146,6 +147,6 @@ Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere k
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
