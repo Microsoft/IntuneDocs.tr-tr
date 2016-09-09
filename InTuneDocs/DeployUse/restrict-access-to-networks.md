@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
-ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
+ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
+ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
 
 ---
@@ -60,7 +60,10 @@ b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
 
 
 2. ISE konsolunda, Intune sertifikasını (dışarı aktardığınız dosya) **Güvenilen Sertifikalar** deposuna aktarın.
+
+
 ### ISE’den otomatik olarak imzalanan sertifika alma 
+
 1.  ISE konsolunda, **Yönetim** > **Sertifikalar** > **Sistem Sertifikaları** > **Otomatik Olarak İmzalanan Sertifika Oluştur**’a gidin.  
 2.       Otomatik olarak imzalanan sertifikayı dışarı aktarın.
 3. Metin düzenleyicisinde, dışarı aktarılan sertifikayı düzenleyin: [comment]: <> I'd rather not put a period at the end of these two statements, I think it could be confusing.
@@ -147,6 +150,6 @@ Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere k
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

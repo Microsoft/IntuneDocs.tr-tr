@@ -13,8 +13,8 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
-ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 6b2d805561067d2dc0de70d93c45622a951e5981
 
 
 ---
@@ -31,7 +31,7 @@ Kayıtlı Windows 8.1 ve Windows 8 cihazlarının aşağıdaki ayarlarını yap�
 ## Güvenlik ayarları
 
 |Ayar adı|Ayrıntılar|Windows 8.1 ve Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Gerekli parola türü**|Gerekli parola türünü belirtir (alfasayısal veya yalnızca sayısal gibi).|Evet|Evet|
 |**Gerekli parola türü – Minimum karakter kümesi sayısı**|Parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir. Dört karakter kümesi vardır: küçük harfler, büyük harfler, rakamlar ve simgeler. Bununla birlikte, iOS cihazları için bu ayar, parolanın içermesi gereken simgelerin sayısını belirtir.|Evet|Evet|
 |**Minimum parola uzunluğu**<sup>1</sup>|Parola için gereken minimum uzunluğu (karakter cinsinden) yapılandırır.|Evet|Evet|
@@ -46,7 +46,7 @@ Kayıtlı Windows 8.1 ve Windows 8 cihazlarının aşağıdaki ayarlarını yap�
 ## Şifreleme ayarları
 
 |Ayar adı|Ayrıntılar|Windows 8.1 ve Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Mobil cihazda şifreleme iste**<sup>1</sup>|Cihazdaki dosyaların şifrelenmesini gerektirir.<br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.|Evet|Hayır|
 <sup>1</sup> Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
@@ -61,14 +61,14 @@ Kayıtlı Windows 8.1 ve Windows 8 cihazlarının aşağıdaki ayarlarını yap�
 ## Kötü amaçlı yazılım ayarları
 
 |Ayar adı|Ayrıntılar|Windows 8.1 ve Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Ağ güvenlik duvarı iste**|Windows Güvenlik Duvarı’nın açık olmasını gerektirir.|Evet|Hayır|
 |**SmartScreen’i etkinleştir**|Windows SmartScreen'in kullanılmasını gerektirir.|Evet|Hayır|
 
 ## Sistem ayarları
 
 |Ayar adı|Ayrıntılar|Windows 8.1 ve Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-------|---------------------------|--------------|
 |**Otomatik güncelleştirmeleri zorunlu kıl**|Cihazlarda otomatik güncelleştirmeler ayarını açar.|Evet|Hayır|
 |**Otomatik güncelleştirmeleri zorunlu kıl - Otomatik olarak yüklenecek güncelleştirmelerin minimum sınıflandırması**|Otomatik olarak yüklenecek güncelleştirmelerin sınıflandırmasını seçer:<br /><br />-   **Önemli** – Önemli olarak sınıflandırılan tüm güncelleştirmeleri yükler.<br />-   **Önerilen** – Önemli veya önerilen olarak sınıflandırılan tüm güncelleştirmeleri yükler.|Evet|Hayır|
 |**Kullanıcı Hesap Denetimi**|Cihazlarda Kullanıcı Hesap Denetimi’nin (UAC) kullanılmasını zorunlu tutar.|Evet|Hayır|
@@ -78,19 +78,19 @@ Kayıtlı Windows 8.1 ve Windows 8 cihazlarının aşağıdaki ayarlarını yap�
 ## Bulut ayarları – belgeler ve veriler
 
 |Ayar adı|Ayrıntılar|Windows 8.1 ve Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**İş Klasörleri URL**|Belgelerin cihazlar arasında eşitlenmesine izin vermek için iş klasörünün URL’sini ayarlar.|Evet|Hayır|
 
 ## E-posta ayarları
 
 |Ayar adı|Ayrıntılar|Windows 8.1 ve Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Microsoft hesabını Windows Mail uygulamasında isteğe bağlı hale getir**|Microsoft hesabı olmadan Windows Mail uygulamasına erişimi etkinleştirir.|Evet|Hayır|
 
 ## Uygulama ayarları - tarayıcı
 
 |Ayar adı|Ayrıntılar|Windows 8.1 ve Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Otomatik doldurmaya izin ver**|Kullanıcıların tarayıcıdaki otomatik tamamlama ayarlarını değiştirmesine olanak tanır.|Evet|Hayır|
 |**Açılır pencere engelleyicisine izin ver**|Açılır pencere engelleyicisini etkinleştirir veya devre dışı bırakır.|Evet|Hayır|
 |**Eklentilere izin ver**|Kullanıcıların Internet Explorer’a eklenti ekleyebilmesine olanak tanır.|Evet|Hayır|
@@ -109,7 +109,7 @@ Kayıtlı Windows 8.1 ve Windows 8 cihazlarının aşağıdaki ayarlarını yap�
 ## Cihaz özellikleri ayarları - cep telefonu
 
 |Ayar adı|Ayrıntılar|Windows 8.1 ve Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|----|------------------------------|--------------|
 |**Veri dolaşımına izin ver**|Cihaz cep telefonu şebekesindeyken veri dolaşımını etkinleştirir.|Evet|Hayır|
 
 
@@ -119,6 +119,6 @@ Kayıtlı Windows 8.1 ve Windows 8 cihazlarının aşağıdaki ayarlarını yap�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

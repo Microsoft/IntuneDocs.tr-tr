@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 ## Parola ayarları
 
 |Ayar adı|Ayrıntılar
-|----------------|
+|----------------|---|
 |**Mobil cihazların kilidini açmak için bir parola gerektir**|Cihazların parola kullanılarak kilitlenip kilitlenmeyeceğini belirtir.<br>(Windows RT çalıştıran cihazlara uygulanamaz).|
 |**Gerekli parola türü**|Gerekli parola türünü belirtir (yalnızca sayısal veya alfasayısal gibi).|
 |**Minimum parola uzunluğu**|Cihaz parolasında bulunması gereken en az karakter sayısını belirtir.|
@@ -40,7 +40,7 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 ## Şifreleme ayarları
 
 |Ayar adı|Ayrıntılar|
-|----------------|
+|----------------|---|
 |**Mobil cihazda şifreleme iste**<sup>1</sup>|Desteklendiği durumlarda bir cihazdaki verilerin şifrelenmesini zorunlu kılar.<br><br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için **Mobil cihazların kilidini açmak için parola iste** ayarını etkinleştirin.|
 |**Depolama kartlarında şifrelemeyi gerektir**|SD kartı gibi dış depolama alanlarında depolanan verilerin şifrelenmesini zorunlu kılar (desteklenen cihazlarda).
 <sup>1</sup> Windows 8.1 çalıştıran cihazlar için ek bilgiler
@@ -56,7 +56,7 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 ## E-posta ayarları
 
 |Ayar adı|Ayrıntılar
-|----------------|
+|----------------|---|
 |**Kullanıcıların e-posta eklerini indirmesine izin ver**|E-posta eklerinin cihaza indirilip indirilmeyeceğini belirtir.|
 |**E-posta eşitleme dönemi**|Alınan e-postaların cihazla kaç gün boyunca eşitleneceğini belirtir.
 |**Exchange ActiveSync ayarlarını tam olarak desteklemeyen mobil cihazların Exchange ile eşitleme yapmasına izin ver**|Bir veya birden çok Exchange ActiveSync ayarını desteklemeyen cihazlarda Exchange erişimine izin verilip verilmeyeceğini belirtir.
@@ -64,13 +64,13 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 ## Tarayıcı ayarları
 
 |Ayar adı|Ayrıntılar
-|----------------|-
+|----------------|---|
 |**Web tarayıcısına izin ver**|Cihazda web tarayıcısının kullanılıp kullanılamayacağını belirtir.<br>(Windows RT veya Windows Phone’da kullanılamaz).
 
 ## Donanım ayarları
 
 |Ayar adı|Ayrıntılar
-|----------------|
+|----------------|---|
 |**Kameraya izin ver**|Cihazdaki kameranın kullanılıp kullanılamayacağını belirtir.<br>(Windows RT veya Windows Phone’da kullanılamaz).
 
 
@@ -80,6 +80,6 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

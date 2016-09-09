@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4279ecd098ddaa6d6eb239ee71f9c3f7d450ab3f
-ms.openlocfilehash: f2ccc52ceae6bbb63ea76ff4391922099c69f4dd
+ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
+ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
 
 
 ---
@@ -40,7 +40,7 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 ### Parola ayarları
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Mobil cihazların kilidini açmak için bir parola gerektir**|Kullanıcıların cihazlarına erişmek için parola girmelerinin gerekip gerekmediğini belirtir.|Evet|Evet|
 |**Gerekli parola türü**|Gerekli parola türünü belirtir (alfasayısal veya yalnızca sayısal gibi).|Evet|Evet|
 |**Gerekli parola türü – Minimum karakter kümesi sayısı**|Parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir. Dört karakter kümesi vardır: küçük harfler, büyük harfler, rakamlar ve simgeler. Bununla birlikte, iOS cihazları için bu ayar, parolanın içermesi gereken simgelerin sayısını belirtir.|Evet|Evet|
@@ -55,44 +55,44 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 ### Şifreleme ayarları
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|------|-----------------------------|
 |**Cihazda şifrelemeyi gerektir**|Desteklenen mobil cihazlarda verilerin şifrelenmesini zorunlu tutar.<br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.|Evet|Evet|
 
 ### Sistem ayarları
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Ekran yakalamaya izin ver**|Kullanıcının ekran içeriğini bir resim dosyası olarak yakalamasına olanak tanır.|Hayır|Evet|
 |**Tanılama verilerinin gönderimine izin ver**|Cihazın Microsoft’a tanılama bilgileri göndermesini etkinleştirir.|Hayır|Evet|
 
 ### Bulut ayarları – hesaplar ve eşitleme
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Microsoft Hesabına izin ver**|Microsoft hesabının cihazla ilişkilendirilmesine olanak tanır.|Hayır|Evet|
 
 ### E-posta ayarları
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Özel e-posta hesaplarına izin ver**|Cihazın Microsoft olmayan e-posta hesaplarına bağlanmasına olanak tanır.|Hayır|Evet|
 
 ### Uygulama ayarları - tarayıcı
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Web tarayıcısına izin ver**|Cihazlarda yerleşik web tarayıcısını etkinleştirir veya engeller.|Hayır|Evet|
 
 ### Uygulama ayarları - uygulamalar
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Uygulama mağazasına izin ver**|Kullanıcıların cihazdan uygulama mağazasına bağlanmasına olanak tanır.|Hayır|Evet|
 
 ### Cihaz özellikleri ayarları - donanım
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|----|--------------------------------|
 |**Kameraya izin ver**|Cihazın kamerasını etkinleştirir veya engeller.|Hayır|Evet|
 |**Çıkarılabilir depolama birimine izin ver**|Cihazın SD kartları gibi çıkarılabilir depolama birimi kullanmasına olanak tanır.|Evet|Evet|
 |**Wi-Fi'a izin ver**|Cihazda Wi-Fi işlevselliğini etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
@@ -106,7 +106,7 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 ### Cihaz özellikleri ayarları - özellikler
 
 |Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|----|------|-------------------------------|
 |**Kopyalama ve yapıştırmaya izin ver**|Cihazda kopyalama ve yapıştırma işlevlerini etkinleştirir.|Hayır|Evet|
 
 ### İzin verilen ve engellenen uygulamalar için ayarlar
@@ -171,6 +171,6 @@ Windows Phone cihazlar için OMA-URI ayarlarını oluşturmanıza yardımcı olm
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 
