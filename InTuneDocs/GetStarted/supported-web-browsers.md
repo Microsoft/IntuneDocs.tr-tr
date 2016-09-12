@@ -2,9 +2,9 @@
 title: "Microsoft Intune tarafından desteklenen web tarayıcıları | Microsoft Intune"
 description: "Intune’un desteklediği web tarayıcıları"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 05/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: b9b37433ec4cc06b85ae79728a180f61478394ec
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 7d2852c2ae18ff09eddd99bc76a1e1800546d304
 
 
 ---
@@ -35,6 +35,6 @@ Intune’u ayarlamadan önce bu konuyu ve [Başlamadan önce bilinmesi gerekenle
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

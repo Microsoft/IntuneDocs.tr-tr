@@ -3,7 +3,7 @@ title: "Şirket kaynaklarına erişimi etkinleştirme | Microsoft Intune"
 description: "Wi-Fi, VPN ve e-posta profilleri, kullanıcılarınızın gereken dosyalara ve kaynaklara erişim kazanmasına yardımcı olmak için birlikte çalışır."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,18 +13,18 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 9448b5fd9121a3bce33b947c79fee7290d2a43f9
+ms.sourcegitcommit: 167db9027e69dd6419d5deec758a8a0a0b119a97
+ms.openlocfilehash: 8605a665a0033fdc9b05ba452f5bf966e76699ca
 
 
 ---
 
 # Microsoft Intune ile şirket kaynaklarına erişimi etkinleştirme
-Microsoft Intune Wi-Fi, VPN ve e-posta profilleri, kullanıcılarınızın nerede olurlarsa olsunlar, işlerini başarıyla gerçekleştirmek için ihtiyaç duydukları dosyalara ve kaynaklara erişim kazanmasına yardımcı olmak için birlikte çalışır. Sertifika profilleri bu erişimin güvenliğini sağlamaya yardımcı olur.
+Microsoft Intune Wi-Fi, VPN ve e-posta profilleri, kullanıcılarınızın nerede olurlarsa olsunlar, işlerini gerçekleştirmek için ihtiyaç duydukları dosyalara ve kaynaklara erişim kazanmalarına yardımcı olmak için birlikte çalışır. Sertifika profilleri bu erişimin güvenliğini sağlamaya yardımcı olur.
 
 ## [Wi-Fi profilleri](wi-fi-connections-in-microsoft-intune.md) ve desteklenen platformlar
 
-Kablosuz ağ ayarlarını kullanıcılarınıza dağıtın. Bu ayarları dağıtarak kurumsal ağa bağlanmak için gereken son kullanıcı çabasını en aza indirin.
+Kablosuz ağ ayarlarını kullanıcılarınıza dağıtın. Bu ayarlar, kullanıcılarınızın şirket ağına bağlanmalarını kolaylaştırır.
 #### Desteklenen platformlar
 
 |Windows 8.1 ve üzeri|Windows Phone 8.1 ve üzeri|iOS|Android|Samsung KNOX|
@@ -32,7 +32,7 @@ Kablosuz ağ ayarlarını kullanıcılarınıza dağıtın. Bu ayarları dağıt
 |Evet (Windows Wi-Fi profilini içeri alabilirsiniz)|Evet (OMA-URI’yi yapılandırabilirsiniz) |Evet|Evet|Evet|
 
 ## [VPN profilleri](vpn-connections-in-microsoft-intune.md) ve desteklenen platformlar
-Sanal Özel Ağ (VPN) ayarları kullanıcılarınıza dağıtın. Bu ayarları dağıtarak, kurumsal ağdaki kaynaklara bağlanmak için gereken son kullanıcı çabasını en aza indirirsiniz.
+Sanal özel ağ (VPN) ayarlarını kullanıcılarınıza dağıtın. Bu ayarlar, kullanıcıların şirket ağındaki kaynaklara bağlanmalarını kolaylaştırır.
 
 |Windows 8.1 ve üzeri|Windows Phone 8.1 ve üzeri|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
@@ -56,6 +56,6 @@ Kablosuz ağlar ve VPN bağlantıları gibi şirket kaynaklarına güvenli eriş
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

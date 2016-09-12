@@ -1,6 +1,6 @@
 # [Anlama ve Keşfetme](/intune/understand-explore/introduction-to-microsoft-intune)
 
-# [Başlat](what-to-know-before-you-start-microsoft-intune.md)
+# [Başlarken](what-to-know-before-you-start-microsoft-intune.md)
 ## [Başlamadan önce bilmeniz gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 ### [Desteklenen mobil cihazlar ve bilgisayarlar](supported-mobile-devices-and-computers.md)
 ### [Desteklenen web tarayıcıları](supported-web-browsers.md)
@@ -23,8 +23,8 @@
 ### [Yapılandırma sonrası görevleri](post-configuration-tasks.md)
 
 ## [Cihazların nasıl yönetileceğini seçme](choose-how-to-manage-devices.md)
-### [Mobil cihaz yönetimi özellikleri](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Windows bilgisayarı yönetim özellikleri](windows-pc-management-capabilities-in-microsoft-intune.md)
+### [Kayıtlı cihaz yönetimi özellikleri](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Intune bilgisayar yazılımı istemcisi özellikleri](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Intune dağıtımlarının aşamaları](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Proje kapsamı](project-scope.md)
@@ -39,6 +39,6 @@
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

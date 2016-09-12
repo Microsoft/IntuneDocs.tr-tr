@@ -2,9 +2,9 @@
 title: "İlke sorunlarını giderme | Microsoft Intune"
 description: "İlke yapılandırma sorunlarını giderin."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,15 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
+ms.sourcegitcommit: 1f133d31311706365888cf33ceb4c4412deec333
+ms.openlocfilehash: a8afc681b8b12e1e760dea3f784e4beac4697242
 
 
 ---
 
 # Microsoft Intune’da ilke sorunlarını giderme
 
-Burada, Microsoft Intune ilke yapılandırmanızdan kaynaklanabilecek bazı sorunlar ve bu sorunları gidermeye yönelik öneriler listelenir.
-
-Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
-
+Intune ile ilkelerinizi dağıtma ve yönetme konusunda sorun yaşıyorsanız buradan başlayın. Bu konuda, karşılaşabileceğiniz bazı yaygın sorunlar çözümleriyle birlikte sunulmuştur.
 
 ## İlke cihazınıza uygulandı mı?
 **Sorun:** Belirli bir ilkenin cihaza uygulanıp uygulanmadığı net değil veya cihaz ilkede belirtilenin tersine bir davranış gösteriyor.
@@ -49,17 +46,6 @@ Aşağıdaki ekran görüntüsünde, iki anlaşılır örnek gösterilmektedir:
 
 > [!NOTE]
 > Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
-
-## İlke yenileme ve güncelleştirme aralıkları
-İlkelerin düzenli aralıklarla yenilendiğinden ve güncelleştirildiğinden emin olun. Genel olarak, ilkeler bir değişiklik yapmanızdan sonraki 15 dakika içinde kaydedilmelidir. İlke yenileme için düzenli aralıklar hakkında daha fazla ayrıntı aşağıda verilmiştir:
-
--   **MDM için kayıtlı Windows cihazı**: İlke, Windows 8.1 ve Windows 10 cihazları için 8 saatte bir ve Windows RT cihazları için 24 saatte bir güncelleştirilir.
-
--   **Windows Phone**: İlke her 8 saatte bir güncelleştirilir. Şirket Portalı’ndaki **Ayarlar** altında bir yenileme ile zorlanabilir.
-
--   **iOS**: İlke günde bir kez rastgele bir zaman aralığında güncelleştirilir. Bu da Şirket Portalı açılarak, cihaz seçilerek ve sonra da **Eşitle** seçilerek zorlanabilir.
-
--   **Android**: İlke günde bir kez rastgele bir zaman aralığında güncelleştirilir. Bu da Şirket Portalı açılarak, cihaz seçilerek ve sonra da **Eşitle** seçilerek zorlanabilir.
 
 ## policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
 MDM olmayan Windows cihazları için policyplatform.log dosyasındaki ilke hataları cihazdaki Windows Kullanıcı Hesabı Denetimi’nde (UAC) bulunan varsayılan olmayan ayarların sonucu olabilir. Varsayılan olmayan bazı UAC ayarları Microsoft Intune istemci yüklemelerini ve ilke yürütmesini etkileyebilir.
@@ -96,9 +82,6 @@ Cihaz platformuna bağlı olarak, ilkeyi daha az güvenli bir değerle değişti
 Sol taraftaki gezinti menüsünde, en altta bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır. O bağlantıyı seçin ve ardından **İlkeleri Sıfırla** düğmesini seçin.
 Android, Windows Phone 8.1 ve üstü ve iOS gibi diğer MDM cihazlarında, daha az kısıtlayıcı bir ilkeyi uygulayabilmeniz için cihazın devre dışı bırakılması ve sonra hizmete yeniden kaydedilmesi gerekebilir.
 
-## Android cihazları son kullanıcı Kabul etmeden Güvenlik İlkesi Değişikliklerini zorunlu tutmaz
-Android MDM, hizmetin cihazlarda ilke değişikliğini zorunlu tutmasına diğer platformlar gibi izin vermez. Bunun nedeni Android işlevselliğidir; Intune hizmetiyle ilgili değildir. Android cihazları, bildirim penceresi yoluyla ilgili ilke değişikliğini (Parola, Şifreleme, vb.) son kullanıcıya sorar.  Son kullanıcının soruyu yanıtlaması ve ilkenin uygulanmasını kabul etmesi gerekir.
-
 ## Şirket adı özel karakterler içeriyorsa ilke oluşturulamaz veya istemciler kaydedilemez.
 **Sorun:** İlke oluşturamıyor veya istemcileri kaydedemiyorsunuz.
 
@@ -109,6 +92,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

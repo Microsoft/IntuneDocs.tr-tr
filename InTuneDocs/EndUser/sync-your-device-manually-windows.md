@@ -4,18 +4,18 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 05/18/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 7ec8496317f354b5a2f0c3a214f457612c3105de
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: afe5beb508796244b914d6b0bae59eaa571e9c3a
 
 
 ---
@@ -94,11 +94,10 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows Pho
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: e539e95a92a9076ea3bab5df65c33cafcf2536d7
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 71edc1891b43a437307dce062ddc8ea95fd29ce3
 
 
 ---
@@ -29,11 +29,10 @@ Microsoft, ürün ve hizmetlerini geliştirmek için Şirket Portalı uygulamas�
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

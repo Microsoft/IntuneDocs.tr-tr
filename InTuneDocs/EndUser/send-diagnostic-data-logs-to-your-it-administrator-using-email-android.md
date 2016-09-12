@@ -4,18 +4,18 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 00e23b0094ee03c2a54bf6d12295e9f38781373f
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 9446df0381a2b2a1a6322f8f59523ce78406f25a
 
 
 ---
@@ -46,11 +46,8 @@ Ayrıntılı günlük özelliğini açmak için:
 4.  Bilgi istemlerini izleyerek, günlükleri BT yöneticinize göndermek için kullanılacak e-posta uygulamasını seçin. Uygulama tüm günlüklerin eklendiği, adresi önceden girilmiş bir e-posta oluşturur.
 
 
-### Ayrıca bkz.
-[Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

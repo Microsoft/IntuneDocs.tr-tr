@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # Microsoft Intune’da cihaz uyumluluk ilkesini dağıtma ve izleme
 ## Uyumluluk ilkesini dağıtma
-[Oluşturduğunuz](create-a-device-compliance-policy-in-microsoft-intune.md) uyumluluk ilkesini kuruluşunuzdaki bir veya daha fazla kullanıcı ya da cihaz grubuna dağıtın.
+[Oluşturduğunuz](create-a-device-compliance-policy-in-microsoft-intune.md) uyumluluk ilkesini kuruluşunuzdaki bir veya daha fazla kullanıcı grubuna dağıtın. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının cihazlarında uyumluluk denetimi yapılır.
 
 1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi ve ardından **Dağıtımı Yönet**’i seçin.
 ![En üstte Dağıtımı Yönet menü seçeneğinin gösterildiği uyumluluk ilkesi sayfasının ekran görüntüsü](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  **Dağıtımı Yönet** iletişim kutusunda ilkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin, sonra **Ekle > Tamam**’ı seçin.
-![Dağıtımı yönetme iletişim kutusunun ekran görüntüsü](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Kullanıcılara ve/veya cihazlara bir uyumluluk ilkesi dağıtabilirsiniz. Daha önce oluşturduğunuz ve Intune ile eşitlenen Active Directory gruplarını kullanın ya da Intune konsolunda bu grupları el ile oluşturun. İlke dağıtma hakkında daha fazla bilgi için, bkz. [yapılandırma ilkesi dağıtma](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+![Dağıtımı yönetme iletişim kutusunun ekran görüntüsü](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Kullanıcılara uyumluluk ilkesi dağıtabilirsiniz. Daha önce oluşturduğunuz ve Intune ile eşitlenen Active Directory gruplarını kullanın ya da Intune konsolunda bu grupları el ile oluşturun. İlke dağıtma hakkında daha fazla bilgi için, bkz. [yapılandırma ilkesi dağıtma](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 Dikkat etmeniz gereken ilkeyle ilgili sorunları belirlemek için **İlke** çalışma alanının **Genel Bakış** sayfasında durum özeti ve uyarılarını kullanın. Ayrıca, **Pano** çalışma alanında bir durum özeti görüntülenir.
 
@@ -72,6 +72,6 @@ Kuruluşunuzdaki hizmetlere erişimi denetlemek için artık koşullu erişim il
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

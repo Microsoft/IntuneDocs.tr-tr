@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: affcca7ea406ea8a9d60f29add4385998b0ae29d
 
 
 ---
@@ -99,13 +99,13 @@ Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla “uzaktan” sa
 
 ## Intune grubu atamalarına değişiklikler
 
-Eylül ayından başlayarak cihaz yönetimi Azure Active Directory’ye taşınacaktır. Azure Active Directory gruplarına geçişten sonra grup ataması **Kurumsal Kayıt Profili** seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Azure Active Directory’de, Kurumsal Kayıt Profili adına göre yeni dinamik cihaz grupları ataması tanımlanabilir. Bu işlem bir cihaz grubuna önceden atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. [Azure Active Directory grupları hakkında daha fazla bilgi edinin.](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Ekim ayından başlayarak cihaz yönetimi Azure Active Directory’ye taşınacaktır. Azure Active Directory gruplarına geçişten sonra grup ataması **Kurumsal Kayıt Profili** seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Yeni portala geçildikten sonra, Kurumsal Kayıt Profili adlarını temel alan dinamik cihaz grubu atamaları tanımlanabilir. Bu işlem bir cihaz grubuna önceden atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. [Azure Active Directory grupları hakkında daha fazla bilgi edinin.](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Ayrıca bkz.
 [Cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

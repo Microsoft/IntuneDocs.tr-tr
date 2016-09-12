@@ -4,7 +4,7 @@ description: "Android cihazının Intune kaydını nasıl silebileceğiniz açı
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 1586e72eef5afdc0baefde8e5a3c105af22edb62
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 8ae9b8b128408d6afe56f99886a70155e858c9e8
 
 
 ---
@@ -45,11 +45,9 @@ Cihazınızın Intune kaydını silmek ve Şirket Portalı uygulamasını kaldı
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
 
 
-### Ayrıca bkz.
-[Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

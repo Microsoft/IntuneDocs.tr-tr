@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 4fab2d71b7cf2557b73810e5f05b82fb9ba1c36b
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 552217a59b7bfd9d75f8be1ce4c401d015ba84f7
 
 
 ---
@@ -34,7 +34,7 @@ Geçiş kodunuzu sıfırlamak için:
 
 2.  **Geçiş Kodunu Sıfırla**’ya dokunun.
 
-    !resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  **Oturumu kapat**’a dokunun ve ardından iş veya okul kimlik bilgilerinizi kullanarak yeniden oturum açın. Beş dakika içinde yeniden oturum açmanız gerekir.
 
@@ -60,11 +60,10 @@ Geçiş kodunuzu sıfırlamak için:
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

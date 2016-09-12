@@ -5,7 +5,7 @@ description: "Intune ile yönettiğiniz Android cihazlarında ayarları ve özel
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
-ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 870d735644f08e3eca8c72bca2b156947d798cb5
 
 
 ---
@@ -57,14 +57,14 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 ### Şifreleme ayarları
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Cihazda şifrelemeyi gerektir**|Mobil cihazdaki dosyaların şifrelenmesini gerektirir.|Evet|Evet|
 |**Depolama kartlarında şifrelemeyi gerektir**|Cihaz depolama kartını şifrelemenin gerekip gerekmediğini belirtir.|Hayır|Evet|
 
 ### Sistem ayarları
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Ekran yakalamaya izin ver**|Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.|Hayır|Evet|
 |**Tanılama verilerinin gönderimine izin ver**|Cihazın Google’a tanılama bilgileri göndermesine izin verir.|Hayır|Evet|
 |**Fabrika sıfırlamasına izin ver**|Kullanıcının cihazda fabrika sıfırlaması gerçekleştirmesine izin verir.|Hayır|Evet|
@@ -72,19 +72,19 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 ### Bulut ayarları - belgeler ve veriler
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**Google yedeklemesine izin ver**|Google yedeklemesi kullanmaya izin verir.|Hayır|Evet|
 
 ### Bulut ayarları - hesaplar ve eşitleme
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Google hesabı otomatik eşitlemesine izin ver**|Google hesabı ayarlarının otomatik olarak eşitlenmesine izin verir.|Hayır|Evet|
 
 ### Uygulama ayarları - tarayıcı
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Web tarayıcısına izin ver**|Cihazın varsayılan web tarayıcısının kullanılıp kullanılamayacağını belirtir.|Hayır|Evet|
 |**Otomatik doldurmaya izin ver**|Kullanılacak web tarayıcısının otomatik doldurma işlevine izin verir.|Hayır|Evet|
 |**Açılır pencere engelleyicisine izin ver**|Web tarayıcısında açılır pencere engelleyicisinin kullanılmasına izin verir.|Hayır|Evet|
@@ -94,13 +94,13 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 ### Uygulama ayarları - uygulamalar
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Google Play mağazasına izin ver**|Kullanıcının cihazda Google Play mağazasına erişmesine izin verir.|Hayır|Evet|
 
 ### Cihaz özellikleri ayarları - donanım
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Kameraya izin ver**|Cihaz kamerasının kullanılmasına izin verir.|Evet|Evet|
 |**Çıkarılabilir depolama birimine izin ver**|Cihazda SD kartı gibi çıkarılabilir depolama birimi kullanılmasına izin verir.|Hayır|Evet|
 |**Wi-Fi'a izin ver**|Cihazın Wi-Fi özelliklerinin kullanımına izin verir.|Hayır|Evet|
@@ -113,7 +113,7 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 ### Cihaz özellikleri ayarları - cep telefonu
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Sesli dolaşıma izin ver**|Cihaz cep telefonu şebekesindeyken ses dolaşımına izin verir.|Hayır|Evet|
 |**Veri dolaşımına izin ver**|Cihaz cep telefonu şebekesindeyken veri dolaşımına izin verir.|Hayır|Evet|
 |**SMS/MMS iletilerine izin ver**|Cihazda SMS ve MMS mesajlaşması kullanımına izin verir.|Hayır|Evet|
@@ -121,7 +121,7 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 ### Cihaz özellikleri ayarları - özellikler
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Sesli yardımcıya izin ver**|Cihazda sesli yardım yazılımının kullanımına izin verir.|Hayır|Evet|
 |**Sesli aramaya izin ver**|Cihazda sesli arama özelliğinin kullanımını etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
 |**Kopyalama ve yapıştırmaya izin ver**|Cihazda kopyalama ve yapıştırma işlevine izin verir.|Hayır|Evet|
@@ -201,12 +201,13 @@ Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarları
 
 - [Önceden paylaşılan anahtar ile Wi-Fi profili oluşturma](pre-shared-key-wi-fi-profile.md)
 - [Özel ilke kullanarak Android cihazları için uygulama başına VPN profili oluşturma](per-app-vpn-for-android-pulse-secure.md)
+- [Özel ilkeler kullanarak Samsung KNOX cihazları için uygulamalara izin verme veya bunları engelleme](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 
 ### Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 3342ee86179348dbff880cb5884bf2975d26b50d
 
 
 ---
@@ -25,6 +25,11 @@ ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
 Bu konu başlığı altında, hizmet isteğini nasıl açacağınız ve birçok dilde telefon desteğini nasıl arayacağınız anlatılır.
 
 Intune’da kendi kendine yardım için, [Microsoft Intune için genel sorun giderme ipuçları](general-troubleshooting-tips-for-microsoft-intune.md) konusuna veya belirli sorunlara yönelik olarak sağlanan ve bu konunun **Ayrıca bkz.** bölümünde listelenen sorun giderme konularına bakın.
+
+>[!NOTE]
+>
+>Premier müşterileri, [Premier destek sayfasında](https://support.microsoft.com/en-us/premier/contacts) bir Intune destek bileti açabilir.
+
 ## Çevrimiçi hizmet isteği oluşturma
 
 1.  Intune kimlik bilgilerinizle [Office 365 yönetim merkezi](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage)’nde oturum açın.
@@ -140,6 +145,6 @@ Bizim rolümüz:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -4,18 +4,18 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 05/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: a46333c8346ef5289738dc9c6eaad40a51cc2877
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 5db6e8e4b27a00ce159fb700139db45a45e48b02
 
 
 ---
@@ -31,11 +31,10 @@ iOS veya Mac OS X cihazınızı Intune’a kaydetmeye çalışırken cihazınız
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

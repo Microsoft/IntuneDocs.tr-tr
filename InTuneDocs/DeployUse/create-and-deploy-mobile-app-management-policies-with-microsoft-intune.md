@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
+ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
+ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 
 
 ---
@@ -28,12 +28,16 @@ Bu konu başlığı altında, **Azure portalında** MAM ilkesi oluşturma işlem
 - Hiçbir MDM çözümü tarafından yönetilmeyen cihazlar (KGC).
 
 >[!IMPORTANT]
+Şu anda cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, aşağıdakileri göz önünde bulundurun:
 
-> Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilen cihazlar için olan uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
-Intune yönetici konsolunda oluşturulan MAM ilkeleri, Azure portalına aktarılamaz.  MAM ilkeleri, Azure portalında yeniden oluşturulmalıdır.
+> * [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilmiş cihazlara yönelik uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
+> * Intune yönetici konsolunda oluşturulan MAM ilkeleri, Azure portalına aktarılamaz.  MAM ilkeleri, Azure portalında yeniden oluşturulmalıdır.
 
+> * Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur.
 
-> Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur. Hem Intune yönetim konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalındaki ilke uygulanır ve kullanıcılara bu ilke dağıtılır.
+> * Yönetilen uygulamaları dağıtmak için, Intune yönetici konsolunda bir MAM ilkesi oluşturmalısınız. Bu durumda, hem Intune yönetici konsolunda hem de Azure portalında MAM ilkeleri oluşturmak isteyebilirsiniz: yönetilen uygulamaları dağıtabileceğinizden emin olmak için Intune yönetici konsolunda ve tüm MAM ilkesi ayarlarını barındıran yeni yönetici konsolu olduğu için Azure portalında.
+
+> * Hem Intune yönetici konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalında oluşturulan ilke uygulanır.
 
 Android ve iOS platformlarında desteklenen ilke ayarları listesini görmek için, aşağıdakilerden birini seçin:
 
@@ -165,6 +169,6 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerde
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

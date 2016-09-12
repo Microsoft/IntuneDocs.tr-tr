@@ -4,18 +4,18 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 05/11/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: b8e8bc72012a19b309a7db6c8c562ff2cbec0933
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 178d46860774d2595f06316f84fd1940c12c025f
 
 
 ---
@@ -62,11 +62,10 @@ BT yöneticinizin bir uygulamada yönetebileceği ve cihazınızdaki şirket ver
 
 Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöneticinizle iletişim kurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

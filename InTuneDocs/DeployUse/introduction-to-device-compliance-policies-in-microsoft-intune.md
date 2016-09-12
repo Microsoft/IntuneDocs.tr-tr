@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
+ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
+ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 ---
@@ -35,7 +35,7 @@ Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyum
 --------------
 
 |İlke Ayarı| Windows 8.1 ve üzeri| Windows Phone 8.1 ve üzeri| iOS 6.0 ve üzeri|Android 4.0 ve üzeri<br/>Samsung KNOX Standard 4.0 ve üzeri|
-|-----|----|----|----|
+|-----|----|----|----|----|
 |**PIN veya Parola Yapılandırması** |Çözümlendi|Çözümlendi|Çözümlendi|Karantinaya Alındı|
 |**Cihaz şifrelemesi**|Yok|Çözümlendi|Çözümlendi (PIN ayarlanarak)|Karantinaya Alındı|
 |**Güvenliği kırılmış veya kökü belirtilen cihaz**|Yok|Yok|Karantinaya Alındı (ayar değil)|Karantinaya Alındı (ayar değil)|
@@ -62,6 +62,6 @@ Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyum
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

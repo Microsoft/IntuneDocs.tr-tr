@@ -4,7 +4,7 @@ description: "Yönettiğiniz cihazların donanımı hakkındaki bilgileri görü
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
+ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
+ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 ---
@@ -42,9 +42,9 @@ Mobil cihazlar tarafından toplanan envanteri görüntülemek için, [Mobil Ciha
 |**Exchange ActiveSync Kimliği**|Tüm cihazlar|
 |**Yazılım Kilidi Kırılmış veya Kökü Belirtilen**|Yalnızca iOS ve Android cihazları|
 |**Benzersiz Cihaz Kimliği**|Exchange ActiveSync dışında tüm cihazlar|
-|**Seri numarası**|iOS, Mac OS X, Android, Windows 8.1, Windows 10 cihazları|
-|**Toplam Depolama Alanı**|iOS, Mac OS X, Windows 8.1, Windows 10 cihazları|
-|**Boş Depolama Alanı**|iOS, Mac OS X, Windows 8.1, Windows 10 cihazları|
+|**Seri numarası**|iOS, Mac OS X, Android, Windows 8.1 ve Windows 10 cihazları|
+|**Toplam Depolama Alanı**|iOS, Mac OS X, Windows 8.1 ve Windows 10 cihazları|
+|**Boş Depolama Alanı**|iOS, Mac OS X, Windows 8.1 ve Windows 10 cihazları|
 |**Telefon Numarası**<br>Örneğin bir mobil cihaz envanter raporu çalıştırdığınızda, şirket olarak sınıflandırılmış telefonlar artık tam telefon numaralarıyla tanımlanır. KCG telefon numaraları, &#42; ile maskelenir ve yalnızca son 4 rakamları görüntülenir.|iOS, Android ve Windows Phone cihazları|
 |**IMEI**|Exchange ActiveSync, iOS, Android ve Windows Phone cihazları|
 |**MEID**<br>Mobil Donanım Kimliği|Yalnızca iOS cihazları|
@@ -59,7 +59,7 @@ Mobil cihazlar tarafından toplanan envanteri görüntülemek için, [Mobil Ciha
 |**Etkinleştirme Kilidi Etkin**|Yalnızca iOS cihazları|
 |**Şifreleme Etkin**|Tüm cihazlar|
 
-## Windows bilgisayarlarından ne toplanır
+## Windows bilgisayarlarından ne toplanır?
 > [!IMPORTANT]
 > Bu bölüm yalnızca Intune Windows bilgisayarı istemci yazılımı çalıştıran Windows bilgisayarları için geçerlidir.
 
@@ -114,6 +114,6 @@ Windows bilgisayarları tarafından toplanan envanteri görüntülemek için, [B
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

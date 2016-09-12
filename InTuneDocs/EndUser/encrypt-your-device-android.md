@@ -4,7 +4,7 @@ description: "Android cihazının nasıl şifreleneceği açıklanır"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 06/07/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
 
 
 ---
@@ -40,15 +40,30 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 - Yine de şifrelemeniz gerektiğini bildiren bir iletiyle karşılaşıyorsunuz.
 - Şirket Portalı uygulamasını kullanmaya çalışırken hatayla karşılaşıyorsunuz.
 
-**Yapılacak işlem**: Cihazınızda bir PIN veya parola ayarladığınızdan emin olun.
+**Bunları deneyin**: 
+
+1. Cihazınızın şarjının dolu olduğundan ve prize takılı olduğundan emin olun.
+
+2. Cihazınızda bir PIN veya parola ayarladığınızdan emin olun.
+
+3. Cihazınızda zaten bir PIN veya parola ayarladıysanız, cihazınızı daha güvenli hale getirmek için BT yöneticinizin yapmanızı şart koşabileceği aşağıdaki adımları deneyin. Sahip olduğunuz Android cihazın türüne bağlı olarak menü adları adımlarda gördüğünüzden biraz farklı olabilir.
+
+    a. **Ayarlar** > **Güvenlik** > **Ekran kilidi**’ne gidin. Geçerli PIN veya parolanızı onaylayın.
+
+    b. **Ekran kilidi seç** ekranında, kullanmak istediğiniz ekran kilidi türünü seçin.
+
+    c. **Güvenli başlatma** ekranında **Cihazı başlatmak için PIN gerektir**’e ve **Devam**’a dokunun.
+
+    d. Bir PIN seçin (daha önce girdiğiniz kodun aynısını girebilirsiniz) ve **PIN’inizi onaylayın**’a dokunun.
+
+    e. Cihazınızda Şirket Portalı uygulamasını açın ve **Uyumluluğu Denetle**’yi seçin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
 
-### Ayrıca bkz.
-[Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+
+<!--HONumber=Aug16_HO5-->
 
 

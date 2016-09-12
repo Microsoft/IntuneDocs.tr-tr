@@ -3,8 +3,8 @@ title: "Android cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Android cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
 
 
 ---
@@ -44,7 +44,27 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     ![android-şirket-portalı-oturum-açma](./media/and-enroll-3-accept-terms.png)
 
-5.  Android 6.0 veya üzeri kullanıyorsanız, bu adımı uygulayın. Aksi halde, sonraki adıma geçin. 
+5.  İş veya okul hesabınızla parolanızı kullanarak Şirket Portalı uygulamasına oturum açın ve **Oturum aç**’a dokunun.
+
+    ![android-şirket-portalı-oturum-açma](./media/and-enroll-2-cp-sign-in.png)
+
+6.  **Şirket Erişimi Kurulumu** ekranında **BAŞLA**’ya dokunun.
+
+    ![Şirket erişimi kurulum ekranı](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  **Cihazınızı neden kaydetmelisiniz?** ekranında, cihazınızı kaydettiğinizde neler yapabileceğinizi okuyun ve sonra **DEVAM**’a dokunun.
+
+    ![Cihazınız neden kaydetmelisiniz ekranı](./media/and-enroll-4b-why-enroll.png)
+
+8.  BT yöneticinizin cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirin ve **DEVAM**’a dokunun.
+
+    ![Gizlilik ayarları](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  **Sıradaki** ekranında kayıt sırasında ne olduğunu okuyun ve ardından **KAYDET**’e dokunun.
+
+    ![Sıradaki ekranı](./media/and-enroll-4d-what-comes-next.png)
+
+10.  Android 6.0 veya üzeri kullanıyorsanız, bu adımı uygulayın. Aksi halde, sonraki adıma geçin.
 
     BT yöneticiniz belirli ilkeleri ayarladıysa, aşağıdaki iletileri görebilirsiniz:
     -   **Şirket Portalı’nın telefon çağrıları yapmasına ve çağrıları yönetmesine izin verilsin mi?**
@@ -63,26 +83,6 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     Erişimi reddederseniz, **Veri Gönder** öğesine dokunduğunuz sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** onay kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Depolama**’ya giderek izni açın.
 
-6.  İş veya okul hesabınızla parolanızı kullanarak Şirket Portalı uygulamasına oturum açın ve **Oturum aç**’a dokunun.
-
-    ![android-şirket-portalı-oturum-açma](./media/and-enroll-2-cp-sign-in.png)
-
-7.  **Şirket Erişimi Kurulumu** ekranında **BAŞLA**’ya dokunun.
-
-    ![Şirket erişimi kurulum ekranı](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  **Cihazınızı neden kaydetmelisiniz?** ekranında, cihazınızı kaydettiğinizde neler yapabileceğinizi okuyun ve sonra **DEVAM**’a dokunun.
-
-    ![Cihazınız neden kaydetmelisiniz ekranı](./media/and-enroll-4b-why-enroll.png)
-
-9.  BT yöneticinizin cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirin ve **DEVAM**’a dokunun.
-
-    ![Gizlilik ayarları](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  **Sıradaki** ekranında kayıt sırasında ne olduğunu okuyun ve ardından **KAYDET**’e dokunun.
-
-    ![Sıradaki ekranı](./media/and-enroll-4d-what-comes-next.png)
-
 11.  **Cihaz yöneticisini etkinleştir** ekranında **Etkinleştir**’e dokunun.
 
     ![Cihaz yöneticisini etkinleştirin ekranı](./media/and-enroll-5-activate.png)
@@ -91,17 +91,11 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     ![PIN veya parola girin](./media/and-enroll-6-PIN-native.png)
 
-13.  Aşağıda, kullanmakta olduğunuz cihaz türüyle eşleşen yönergeleri izleyin (yerel Android veya Samsung Knox) Samsung Knox cihazınızın olup olmadığını belirlemek için **Ayarlar** &gt; **Cihaz hakkında** seçeneğine gidin. Bu listede "KNOX sürümü" ifadesini görmüyorsanız yerel bir Android cihazına sahipsinizdir.
-
-    -   Yerel (Samsung Knox harici) cihaz: **Sertifikayı adlandır** ekranında **Tamam**’a dokunarak varsayılan sertifikayı kabul edin.
-
-    ![Sertifikayı adlandır ekranı](./media/and-enroll-7-cert-native.png)
-
-    -   Samsung Knox cihazı: Gizlilik ilkesini kabul edin ve **ONAYLA**’ya dokunun.
+13.  Bir Samsung Knox cihazı kullanıyorsanız **Onayla**’ya dokunduğunuzda cihazınızın kaydedildiğini belirten bir ileti görürsünüz. Yerel bir Android cihaz kullanıyorsanız cihazınızın kaydedildiğini gösteren alttaki ekranı fark etmeniz yeterlidir.
 
     ![Samsung KNOX gizlilik ilkesi](./media/and-enroll-7-knox-privacy-policy.png)
 
-    Intune cihazınızı kaydederken, ekranınızda aşağıdaki iletiyi görürsünüz.
+    Bu ekran, cihazınızın kaydedilmekte olduğunu gösterir.
 
     ![Cihazı kaydetme ekranı](./media/and-enroll-8-device-enrolling.png)
 
@@ -118,11 +112,10 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
 
 
-### Ayrıca bkz.
-[Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO5-->
 
 

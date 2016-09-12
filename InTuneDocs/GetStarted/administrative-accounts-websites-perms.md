@@ -2,9 +2,9 @@
 title: "Yönetim hesapları, web siteleri ve izinler | Microsoft Intune"
 description: "yönetim hesapları izinler web siteleri"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: e174cb6706e7910d511d5f39836cec6b9a98403d
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 29d6f9cd31e6fbf287ae30fb2171bf752ff71157
 
 
 ---
@@ -94,6 +94,6 @@ Yalnızca hizmet yöneticisi izinlerine sahip olan veya genel yönetici rolüne 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

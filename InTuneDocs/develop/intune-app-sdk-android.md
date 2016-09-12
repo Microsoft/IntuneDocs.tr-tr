@@ -13,8 +13,8 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51f7734e2acced469ec3520d74a8079dac8223f2
-ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
+ms.sourcegitcommit: 63d94a83a3a5ad9520abab3ef25e8d9690c26ce7
+ms.openlocfilehash: 090b295ee8bf4aadb17bc58bf0282e87daf67a40
 
 
 ---
@@ -24,13 +24,13 @@ ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
 > [!NOTE]
 > Öncelikle, SDK’nın geçerli özelliklerini kapsayan ve desteklenen her platformda tümleştirmeye nasıl hazırlandığını açıklayan [Intune Uygulama SDK’sına genel bakış](intune-app-sdk.md) bölümünü okumanız önerilir. 
 
-# SDK’nın kapsamı 
+## SDK’nın kapsamı 
 
 Android için Intune Uygulama SDK'sı dış bağımlılıkları olmayan standart bir Android kitaplığıdır. SDK şunlardan oluşur:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: Bir uygulamada MAM özelliğini etkinleştirmenin yanı sıra Microsoft Intune Şirket Portalı ile birlikte çalışabilirliği sağlamak için gereken arabirimler. Uygulamalar bunu bir Android kitaplığı başvurusu olarak belirtmelidir.
 
-*  **`Microsoft.Intune.MAM.SDK.Support.v4.jar`**: Android v4 destek kitaplığından yararlanan uygulamalarda MAM özelliğini etkinleştirmek için gereken arabirimler.  Bu desteğe ihtiyaç duyan uygulamalar jar dosyasına doğrudan başvurmalıdır. 
+* **`Microsoft.Intune.MAM.SDK.Support.v4.jar`**: Android v4 destek kitaplığından yararlanan uygulamalarda MAM özelliğini etkinleştirmek için gereken arabirimler.  Bu desteğe ihtiyaç duyan uygulamalar jar dosyasına doğrudan başvurmalıdır. 
 
 * **`Microsoft.Intune.MAM.SDK.Support.v7.jar`**: Android v7 destek kitaplığından yararlanan uygulamalarda MAM özelliğini etkinleştirmek için gereken arabirimler.   Bu desteğe ihtiyaç duyan uygulamalar jar dosyasına doğrudan başvurmalıdır
 
@@ -42,11 +42,11 @@ Android için Intune Uygulama SDK'sı dış bağımlılıkları olmayan standart
 
 * **`THIRDPARTYNOTICES.TXT`**: Uygulamanıza derlenecek 3. taraf ve/veya OSS kodunu tanıyan bir öznitelik bildirimi. 
 
-# Gereksinimler 
+## Gereksinimler 
 
 Intune Uygulama SDK'sı, derlenmiş bir Android projesidir. Sonuç olarak, uygulamanın en düşük veya hedef API sürümleri için kullandığı Android sürümünden büyük ölçüde bağımsızdır. SDK; Android API 14 (Android 4.0+) ile Android 24 arasındaki sürümleri destekler. 
 
-# Intune Uygulama SDK’sı nasıl çalışır? 
+## Intune Uygulama SDK’sı nasıl çalışır? 
 
 Intune Uygulama SDK'sı, uygulama yönetimi ilkelerini etkinleştirmek için bir uygulamanın kaynak kodunda değişiklik yapılmasını gerektirir. Bu işlem, Android temel sınıflarının, belgede `MAM`. SDK sınıfları, Android temel sınıfı ile uygulamanın söz konusu sınıftan türettiği sürüm arasında çalışır.  Örnek olarak bir etkinlik kullanıldığında elde edilen devralma hiyerarşisi şunun gibi görünür: `Activity ->MAMActivity->AppSpecificActivity`.
 
@@ -54,11 +54,11 @@ Intune Uygulama SDK'sı, uygulama yönetimi ilkelerini etkinleştirmek için bir
 
 Android için Intune Uygulama SDK’sı, MAM ilkelerini etkinleştirmek için cihazda Şirket Portalı uygulamasının varlığına bağımlıdır. Şirket Portalı uygulaması mevcut olmadığında, MAM özellikli uygulamanın davranışı değiştirilmez ve uygulama, diğer mobil uygulamalar gibi hareket eder. Şirket Portalı yüklendiğinde ve kullanıcı için ilkelere sahip olduğunda, SDK giriş noktaları zaman uyumsuz olarak başlatılır. Başlatma işlemi yalnızca, işlem başlangıçta Android tarafından oluşturulduğunda gereklidir. Başlatma sırasında Şirket Portalı uygulamasıyla bir bağlantı oluşturulur ve uygulama kısıtlama ilkesi indirilir.  
 
-# Intune Uygulama SDK'sı ile tümleştirme
+## Intune Uygulama SDK'sı ile tümleştirme
  
 Daha önce belirtildiği gibi, SDK, uygulama yönetimi ilkelerini etkinleştirmek için bir uygulamanın kaynak kodunda değişiklik yapılmasını gerektirir. Uygulamanızda MAM özelliğini etkinleştirmek için gereken adımlar şunlardır: 
 
-## Sınıfları, yöntemleri ve etkinlikleri MAM eşdeğerleriyle değiştirme (Zorunlu) 
+### Sınıfları, yöntemleri ve etkinlikleri MAM eşdeğerleriyle değiştirme (Zorunlu) 
 
 * Android temel sınıfları, MAM eşdeğerleriyle değiştirilmelidir. Bunu yapmak için, aşağıdaki tabloda listelenen sınıfların tüm örneklerini bulun ve bunları Intune Uygulama SDK'sındaki eşdeğerleriyle değiştirin.  
 
@@ -112,7 +112,7 @@ Daha önce belirtildiği gibi, SDK, uygulama yönetimi ilkelerini etkinleştirme
 
     Örneğin, `MAMActivity`’i geçersiz kılıp `onCreate` çağırmak yerine `super.onCreate`’den türetilirken, Etkinlik `onMAMCreate` ’i geçersiz kılmalı ve s`uper.onMAMCreate`. Bunun yapılması, Etkinlik başlatma işleminin (diğerlerinin arasında) belirli durumlarla kısıtlanmasını sağlar. 
 
-# Uygulama katılımı gerektiren özellikleri etkinleştirme 
+### Uygulama katılımı gerektiren özellikleri etkinleştirme 
 
 SDK’nın kendi başına uygulayamayacağı bazı ilkeler vardır. Uygulamanın bu özellikler için davranışını denetlemesini sağlamak amacıyla, aşağıda verilen `AppPolicy` içinde bulabileceğiniz API’leri kullanabilirsiniz.  
 
@@ -152,7 +152,7 @@ SDK’nın kendi başına uygulayamayacağı bazı ilkeler vardır. Uygulamanın
         boolean getIsManagedBrowserRequired();
     }
 
-## Uygulama kaydetme davranışı üzerinde BT yöneticisi denetimini etkinleştirme
+### Uygulama kaydetme davranışı üzerinde BT yöneticisi denetimini etkinleştirme
 
 Birçok uygulama, son kullanıcının dosyaları yerel olarak veya başka bir hizmete kaydetmesine olanak tanıyan özellikler uygular. Intune Uygulama SDK’sı, BT yöneticilerinin kuruluşlarında uygun gördüğü durumlarda ilke kısıtlamaları uygulayarak veri sızıntısına karşı koruma sağlamasına olanak tanır.  Yöneticinin denetleyebileceği ilkelerden biri, son kullanıcının kişisel bir veri deposuna kayıt yapıp yapamayacağıdır. Buna yerel konuma, SD karta veya yedekleme hizmetlerine kaydetme dahildir. Özelliği etkinleştirmek için uygulama katılımı gereklidir. Uygulamanız kişisel konumlara veya bulut konumlarına doğrudan uygulama üzerinden kaydetmeye izin veriyorsa, BT yöneticisinin bir konuma kaydetmeye izin verilip verilmediğini denetleyebildiğinden emin olmak için bu özelliği uygulamanız gerekir. Aşağıdaki API, uygulamanın, geçerli yönetici ilkesi tarafından kişisel bir depolama alanına kaydetmeye izin verilip verilmediğini bilmesini sağlar. Uygulama, son kullanıcının uygulama üzerinden kullanabildiği kişisel veri depolama alanını bildiği için bundan sonra ilkeyi uygulayabilir.  
 
@@ -162,7 +162,7 @@ Birçok uygulama, son kullanıcının dosyaları yerel olarak veya başka bir hi
 
 **Not**: Cihaz veya uygulama yönetim altında olsa bile MAMComponents.get(AppPolicy.class) her zaman null olmayan bir Uygulama İlkesi döndürür. 
 
-## Uygulamanın, PIN İlkesi’nin gerekli olup olmadığını algılamasına izin verme
+### Uygulamanın, PIN İlkesi’nin gerekli olup olmadığını algılamasına izin verme
  
  Uygulamanın, Intune Uygulama SDK'sındaki işlevleri yinelememek için bazı işlevlerini devre dışı bırakmasını gerektirebilecek ek ilkeler bulunur. Örneğin, uygulama kendi PIN kullanıcı deneyimine sahipse, SDK’nın son kullanıcıdan PIN girmesini isteyecek şekilde yapılandırılması durumunda bunu devre dışı bırakmak isteyebilir. 
 
@@ -170,7 +170,7 @@ PIN ilkesinin düzenli aralıklarla PIN girişi isteyecek şekilde yapılandır�
 
     MAMComponents.get(AppPolicy.class).getIsPinRequired();
 
-## SDK’dan gelen bildirimlere kaydolma  
+### SDK’dan gelen bildirimlere kaydolma  
 
 Intune Uygulama SDK'sı, uygulamanızın, BT yöneticisi tarafından uzaktan silme gibi bazı ilkelerin kullanıldığı durumlarda davranış üzerinde denetime sahip olmasını sağlar. Bunu yapmak için, `MAMNotificationReceiver` sınıfını oluşturup `MAMNotificationReceiverRegistry`. Bu işlem, aşağıdaki örnekte gösterildiği gibi alıcı ve alıcının  `App.onCreate`öğesine almak istediği bildirim türü belirtilerek yapılır:
  
@@ -212,17 +212,17 @@ Aşağıdaki bildirimler uygulamaya gönderilir ve bazıları uygulama katılım
 
 * **`REFRESH_POLICY` bildirimi**: Bu bildirim bir MAMNotification içinde ek bir bilgi olmadan gönderilir. Bu bildirim alındığında, önbelleğe alınan tüm ilkelerin artık geçersiz olduğu kabul edilmeli ve dolayısıyla ilkenin ne olduğu denetlenmelidir. Bu işlem genellikle SDK tarafından yapılır, ancak ilke kalıcı olarak kullanılıyorsa, uygulama tarafından yapılması gerekir. 
 
-## Bekleyen Amaçlar ve yöntemler 
+### Bekleyen Amaçlar ve yöntemler 
 
 MAM giriş noktalarından birinden türettikten sonra Context nesnesini, Etkinlikleri başlatmak için normalde kullandığınız gibi (`PackageManager`, vb. kullanarak) kullanabilirsiniz.  `PendingIntents` bu kural için bir özel durumdur. Bu tür sınıflar çağrılırken, sınıf adını değiştirmeniz gerekir. Örneğin, `PendingIntent.get*` yerine `MAMPendingIntents.get*` kullanılmalıdır. 
 
 Bazı durumlarda, Android sınıfında kullanılabilir olan bir metot, MAM değiştirme sınıfında kesin olarak işaretlenmiştir. Bu durumda, MAM değiştirme sınıfı benzer ada sahip olup (genellikle "MAM" son ekini alır) geçersiz kılınması gereken bir metot sağlar. Örneğin, `ContentProvider.query`yerine `MAMContentProvider.queryMAM`. Java derleyicisi, MAM eşdeğeri yerine özgün metodun yanlışlıkla geçersiz kılınmasını önleyen kesin kısıtlamalar uygulamalıdır. 
 
-# Yedekleme verilerini koruma 
+## Yedekleme verilerini koruma 
 
 Android Marshmallow (API 23) sürümünden itibaren Android’deki bir uygulama, verileri iki yolla yedekleyebilir. Bu seçenekler, uygulamanızda kullanılabilir ve MAM veri korumasının uygun şekilde uygulanması için farklı adımlar gerektirir. Doğru veri koruma davranışı için gerekli olan ilgili eylemlere hızlı bir genel bakış için aşağıdaki tabloyu gözden geçirebilirsiniz.  Android yedekleme hakkında daha fazla bilgi için [Android Geliştirici Veri Yedekleme Kılavuzu](http://developer.android.com/guide/topics/data/backup.html)’na da bakabilirsiniz. 
 
-## Otomatik tam yedekleme
+### Otomatik tam yedekleme
 
 Android M sürümünde Android, bir Android M cihazında çalıştırılan uygulamalara hedef API’den bağımsız olarak otomatik tam yedekleme sunmaya başlamıştır. `android:allowBackup` özniteliği false olmadığı sürece, uygulama tam ve filtrelenmemiş yedeklemeler alır. Bu durum veri sızıntısı riski oluşturur. Bu nedenle SDK, veri korumasının uygulandığından emin olmak için aşağıdaki tabloda ana hatlarıyla verilen değişiklikleri gerektirir.  Müşteri verilerini düzgün bir şekilde korumak için aşağıda açıklanan yönergeleri izlemeniz önemlidir.  `android:allowBackup=false` ayarını yaparsanız, uygulamanız işletim sistemi tarafından hiçbir zaman yedekleme sırasına alınmaz ve yedekleme olmadığı için MAM ile ilgili başka bir işleminiz olmaz
  
@@ -230,44 +230,44 @@ Android M sürümünde Android, bir Android M cihazında çalıştırılan uygul
 
 Tüm API'lerde kullanılabilen bu seçenek `BackupAgent` ve `BackupAgentHelper`. 
 
-### BackupAgentHelper kullanma
+#### BackupAgentHelper kullanma
 
 `BackupAgentHelper` bunun uygulanması, hem yerel Android işlevselliği hem de MAM tümleştirmesi bakımından `BackupAgent`‘ın uygulanmasından çok daha kolaydır. `BackupAgentHelper` geliştiricinin tüm dosyaları ve paylaşılan tercihleri sırasıyla bir `FileBackupHelper` veya `SharedPreferencesBackupHelper`’a kaydetmesine olanak tanır. Bunlar da, oluşturma sonrasında `BackupAgentHelper`’a eklenir. 
 
-### BackupAgent kullanma
+#### BackupAgent kullanma
 
 `BackupAgent` hangi verilerin yedeklendiği konusunda çok daha net olmanızı sağlar. Ancak, bu seçenekleri kullanırsanız Android yedekleme çerçevesinden yararlanamazsınız.  Uygulama sorumluluğunun büyük bölümü size ait olduğundan, MAM aracılığıyla uygun veri korumasını sağlamak için daha fazla adım gerekir. MAM tümleştirme işlerinin büyük bölümü geliştirici olarak size gönderildiğinden, MAM tümleştirmesi biraz daha karmaşıktır. 
 
-#### Uygulama, bir yedekleme aracısına sahip değil
+##### Uygulama, bir yedekleme aracısına sahip değil
   
 `Android:allowbBackup =true` olduğunda geliştirici seçenekleri şunlardır:
 
-##### Bir yapılandırma dosyasına göre tam yedekleme: 
+###### Bir yapılandırma dosyasına göre tam yedekleme: 
 
 Bildiriminizdeki `com.microsoft.intune.mam.FullBackupContent` meta veri etiketi altında bir kaynak belirtin. Örneğin:
     `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />`
 
 `<application>` etiketine şu özniteliği ekleyin: `android:fullBackupContent="@xml/my_scheme"`; burada `my_scheme`, uygulamanızdaki bir XML kaynağıdır. 
 
-##### Dışlamalar olmadan tam yedekleme 
+###### Dışlamalar olmadan tam yedekleme 
 
 Bildirim dosyasında şöyle bir etiket sağlar: `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />` 
  
 Aşağıdaki özniteliği `<application>` etiketine ekleyin: `android:fullBackupContent="true"`.
 
-#### Uygulamanın yedekleme aracısı var
+##### Uygulamanın yedekleme aracısı var
 
 Yukarıda ana hatlarıyla verilen `BackupAgent` ve `BackupAgentHelper` bölümlerindeki önerileri izleyin 
 
 Android M’de kolay yedekleme sağlayan `MAMDefaultFullBackupAgent`’ı kullanmaya geçmeniz önerilir. 
 
-### Yedeklemeden önce
+#### Yedeklemeden önce
 
 Yedekleme işlemine başlamadan önce, yedeklemeyi planladığınız dosyaların veya veri arabelleklerinin yedeklenmesine izin verildiğinden emin olmanız gerekir. Bunu belirlemek için size `isBackupAllowed` ve `MAMFileProtectionManager` ve `MAMDataProtectionManager` işlevi sunulmuştur. Dosya veya veri arabelleğinin yedeklenmesine izin verilmiyorsa, bunu yedeklemede kullanmaya çalışmamanız gerekir.
 
 Yedeklemenin belirli bir noktasında, 1. adımda iade ettiğiniz dosyaların kimliklerini isterseniz verileri ayıklamayı planladığınız dosyalarla birlikte `backupMAMFileIdentity(BackupDataOutput data, File … files)` öğesini çağırmanız gerekir. Bu, otomatik olarak yeni yedekleme varlıkları oluşturur ve bunları sizin için `BackupDataOutput` ’a yazar. Bu varlıklar geri yükleme sonrasında otomatik olarak kullanılır. 
 
-## Azure Directory Kimlik Doğrulama Kitaplığı’nı (ADAL) Yapılandırma  
+### Azure Directory Kimlik Doğrulama Kitaplığı’nı (ADAL) Yapılandırma  
 
 SDK; kimlik doğrulama ve koşullu başlatma senaryolarında, uygulamaların bir miktar Azure Active Directory yapılandırmasına sahip olmasını gerektiren ADAL özelliğini kullanır. Yapılandırma değerleri, `AndroidManifest` meta verileri üzerinden SDK’ya iletilir. Uygulamanızı yapılandırmak ve uygun kimlik doğrulamasını sağlamak için `AndroidManifest`. Bu yapılandırmalardan bazıları, yalnızca uygulamanız genel olarak kimlik doğrulaması için ADAL kullanıyorsa gereklidir; bu durumda, uygulamanızın kendisini AAD’ye kaydetmek için kullandığı değerleri kullanmanız gerekir. Bu işlem, AAD’nin iki ayrı kayıt değerini (biri uygulamadan, biri SDK’dan) tanıması nedeniyle son kullanıcıdan kimlik doğrulamasının iki kez istenmesini önlemek amacıyla yapılır. 
 
@@ -286,17 +286,17 @@ SDK; kimlik doğrulama ve koşullu başlatma senaryolarında, uygulamaların bir
 
 GUID'lerin önünde veya sonunda süslü ayraç olması beklenmez.
 
-### Yaygın ADAL yapılandırmaları 
+#### Yaygın ADAL yapılandırmaları 
 
 Yukarıda açıklanan değerler için yaygın yapılandırma aşağıda verilmiştir. 
 
-#### Uygulama ADAL ile tümleştirilmezse
+##### Uygulama ADAL ile tümleştirilmezse
 
 * Yetkili, AAD hesaplarının yapılandırılmış olduğu istenen ortama ayarlanmalıdır.
 
 * SkipBroker true olarak ayarlanmalıdır.
 
-#### Uygulama ADAL ile tümleştirilirse
+##### Uygulama ADAL ile tümleştirilirse
 
 * Yetkili, AAD hesaplarının yapılandırılmış olduğu istenen ortama ayarlanmalıdır.
 
@@ -309,7 +309,7 @@ Yukarıda açıklanan değerler için yaygın yapılandırma aşağıda verilmi�
 
 * AAD, aracı yeniden yönlendirme URI'sini kabul edecek şekilde yapılandırılmalıdır.
 
-#### Uygulama ADAL ile tümleştirilir, ancak AAD Doğrulayıcı uygulamasını desteklemezse.
+##### Uygulama ADAL ile tümleştirilir, ancak AAD Doğrulayıcı uygulamasını desteklemezse.
 
 * Yetkili, AAD hesaplarının yapılandırılmış olduğu istenen ortama ayarlanmalıdır.
 
@@ -319,13 +319,13 @@ Yukarıda açıklanan değerler için yaygın yapılandırma aşağıda verilmi�
 
     * Veya `urn:ietf:wg:oauth:2.0:oob` geçerli bir AAD yeniden yönlendirme URI’si olarak yapılandırılmalıdır.
 
-## SDK’da günlüğü etkinleştirme 
+### SDK’da günlüğü etkinleştirme 
 
 Günlüğe kaydetme, `java.util.logging` çerçevesi aracılığıyla yapılır. Günlükleri almak için [Java teknik kılavuzu](http://docs.oracle.com/javase/6/docs/technotes/guides/logging/overview.html). Uygulamaya bağlı olarak, `App.onCreate` genellikle günlüğe kaydetmeyi başlatmak için en iyi yerdir. Günlük iletileri sınıf adına göre anahtarlanır ve sınıf adı, gizlenmiş olabilir.
 
-# Bilinen Platform Sınırlamaları 
+## Bilinen Platform Sınırlamaları 
 
-## Dosya Boyutu Sınırlamaları 
+### Dosya Boyutu Sınırlamaları 
 
 Android’de, Dalvik yürütülebilir dosya biçimine ilişkin sınırlamalar, ProGuard olmadan çalışan büyük kod temelleri için sorun oluşturabilir. Özellikle aşağıdaki sınırlamalar görülebilir: 
 
@@ -341,7 +341,7 @@ Android’de, Dalvik yürütülebilir dosya biçimine ilişkin sınırlamalar, P
 
 * Tüm gereksiz ve kullanılmayan kitaplıkları kaldırın (örneğin, `android.support.v4`)
 
-## İlke Zorlama Sınırlamaları
+### İlke Zorlama Sınırlamaları
 
 **Ekran Yakalama**: SDK, Activity.onCreate öğesinden zaten geçmiş olan Etkinliklerde yeni bir ekran yakalama ayar değeri uygulayamaz. Bu durum, uygulama ekran görüntülerini devre dışı bırakacak şekilde yapılandırıldığı halde ekran görüntülerinin alınabildiği bir zaman dilimine yol açabilir.
 
@@ -351,7 +351,7 @@ Android’de, Dalvik yürütülebilir dosya biçimine ilişkin sınırlamalar, P
 
 **Dışarı Aktarılan Hizmetler**: Intune Uygulama SDK’sına dahil edilen `AndroidManifest.xml` dosyası, `MAMNotificationReceiverService`öğesini içerir. Bu öğenin, Şirket Portalı’nın kullanan bir uygulamaya bildirim göndermesine izin vermek üzere dışarı aktarılan bir hizmet olması gerekir. Hizmet, yalnızca Şirket Portalı’nın bildirim göndermesine izin verildiğinden emin olmak için çağıranı denetler. 
 
-# Android için Önerilen En İyi Uygulamalar 
+## Android için Önerilen En İyi Uygulamalar 
 
 İlkeleri zorunlu kılma işlemi sonucunda hata koşulları daha sık tetiklenebilir, ancak Intune SDK’sı, Android API’si tarafından sağlanan sözleşmeyi korur. Aşağıda belirtilen Android’e yönelik en iyi uygulamalar, hata olasılığını azaltır: 
 
@@ -365,6 +365,6 @@ Android’de, Dalvik yürütülebilir dosya biçimine ilişkin sınırlamalar, P
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

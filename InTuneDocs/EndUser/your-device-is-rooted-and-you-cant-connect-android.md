@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 6d4d9a1eaa326b5738aeac1f9e78b51dbd25e5c9
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: b8bc9cca66d35147b5bb235f2e01c3867104d1ee
 
 
 ---
@@ -32,11 +32,9 @@ Bilerek cihazınızın kökünü belirtmek için bir şey yaptığınıza inanm�
 - Cihazınızın üreticisi, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir yazılım yüklemiş olabilir. Yardım için BT yöneticinize başvurmalısınız. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
-### Ayrıca bkz.
-[Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO5-->
 
 

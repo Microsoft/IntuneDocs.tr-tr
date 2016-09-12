@@ -13,13 +13,59 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 31e36fdb77916841e30b0e7276ef62850df45d12
+ms.sourcegitcommit: 57570fcf2f738b68a01bb1c5fc8962c7ef117920
+ms.openlocfilehash: 43546721245f92309d86c496dbcde7900a598ed0
 
 
 ---
 
 # Önceki Intune sürümleri
+## Temmuz 2016
+### Uygulama yönetimi
+#### Uygulama sağlama profili güncelleştirme deneyimini geliştirme
+Apple iOS iş kolu mobil uygulamaları, eklenen ve sertifika kullanılarak kodla imzalanan bir sağlama profiliyle oluşturulur. Uygulama iOS cihazında çalıştırıldığında, iOS uygulamanın bütünlüğünü onaylar ve sağlama profiliyle tanımlanan ilkeleri zorunlu tutar.
+
+Uygulamaları imzalamak için kullandığınız kurumsal imzalama sertifikasının süresi normalde 3 yıldır. Öte yandan, 1 yıl sonra sağlama profilinin süresi dolar. Bu güncelleştirmeyle Intune size, sertifikası hala geçerli olduğu halde süresi dolmak üzere olan uygulamaların bulunduğu cihazlara, yeni sağlama profili ilkesini önceden dağıtmak için araçlar getirir. Daha fazla bilgi için bkz. [İş kolu uygulamalarınızın güncel kalmasını sağlamak için iOS mobil sağlama profili ilkelerini kullanma](/intune/deploy-use/ios-mobile-app-provisioning-profiles).
+<!--- TFS 1280247--->
+#### Intune uygulamaları için Xamarin SDK sağlanır
+Intune Uygulaması SDK Xamarin bileşeni, Xamarin ile oluşturulan mobil iOS ve Android uygulamalarınızda Intune mobil uygulama yönetimi özelliklerini etkinleştirmenize olanak tanır. Bileşeni [Xamarin mağazasında](https://components.xamarin.com/view/Microsoft.Intune.MAM) veya [Microsoft Intune Github sayfasında](https://github.com/msintuneappsdk) bulabilirsiniz.
+<!--- TFS 1061478 --->
+
+### Cihaz yönetimi
+#### Cihaz kayıt sınırlarında artış
+Intune, yapılandırılabilir cihaz kayıt sayısı üst sınırını kullanıcı başına 5 cihazdan 15 cihaza çıkardı.
+<!---TFS 1289896 --->
+
+#### Intune istemci yazılımını çalıştıran Windows bilgisayarları için TeamViewer Tümleştirmesi
+Intune istemcisini çalıştıran Windows bilgisayarlarında [TeamViewer](https://www.teamviewer.com) tümleştirmesi, son kullanıcı yardım masası departmanlarını desteklemek için Windows bilgisayarlarıyla uzaktan yardım oturumları oluşturmanıza imkan tanır. Bu, Windows 7, 8, 8.1 ve Windows 10’u içerir. Ayrıntılar için bkz. [Microsoft Intune bilgisayar istemcisiyle ortak Windows bilgisayarı yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+<!---TFS 1284856--->
+
+### Şirket portalı güncelleştirmeleri
+#### Şirket Portalı web sitesi
+- **Windows cihazlarını kaydetme işleminde geliştirilmiş son kullanıcı deneyimi**<br/>
+Koşullu erişim kullanırken, Şirket Portalı web sitesindeki Windows 8.1, Windows 10 Masaüstü ve Windows 10 Mobile için kayıt adımları netleştirilmiştir. Kullanıcılara artık birbirinden ayrı “Cihaz kaydı” ve “Workplace Join” adımları gösterilir. Böylelikle cihazlarının durumunu daha kolay görebilir ve Workplace Join (WPJ) hatasıyla karşılaşırlarsa işlemi tamamlayabilirler. Ayrı adımların, BT yöneticileri için sorun giderme işlemini de basitleştirmesi beklenmektedir. Daha önce, son kullanıcılar cihazı kaydetmeyi denerken WPJ dışındaki tüm kayıt adımları başarılı olduğunda, kaydedilen cihaz kullanıcıların belirleyebilmesi için cihaz listesinde gösterilmeyebiliyor ve kullanıcılarda kafa karışıklığına neden oluyordu.
+
+#### Android
+- **Android Şirket Portalı uygulaması**<br/>
+Android son kullanıcıları cihazlarında gerekli bir sertifikanın eksik olduğunu bildiren bir hata iletisi görürlerse, eksik sertifikayı yükleme [adımlarına](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) ulaşmak için “Bu nasıl çözülür” düğmesine dokunabilirler. Kullanıcılar adımları tamamladıkları halde bir “eksik sertifika” hata iletisi daha görürlerse, BT yöneticilerine başvurmaları ve bu [bağlantıyı](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) sağlamaları istenir. Bu bağlantı, BT yöneticilerinin sertifika sorununu çözmek için kullanabilecekleri adımları içerir.
+
+- **Dışarıdan uygulama yüklemelerini kayıtlı cihazlarla kısıtlama**<br/>
+Android için Intune Şirket Portalı uygulaması kullanılarak Intune’a kaydedilmeyen Android cihazları, artık Şirket Portalı web sitesi üzerinden uygulama yükleyemezler.
+<!---TFS 1299082--->
+
+#### iOS
+- **iOS Şirket Portalı uygulamasında Cihaz Kayıt Yöneticileri hesaplarında yapılan değişiklikler**<br/>
+Performansı ve ölçeği artırmak için, Intune artık iOS Şirket Portalı uygulamasının **Cihazlarım** bölmesinde Cihaz Kayıt Yöneticileri (DEM) cihazlarını görüntülemez. Yalnızca uygulamayı çalıştıran yerel cihaz, yalnızca Şirket Portalı uygulaması aracılığıyla kaydedilmişse görüntülenir.
+
+DEM kullanıcısı, yerel cihazda eylemler gerçekleştirebilir, ancak diğer kaydedilen cihazların uzaktan yönetimi yalnızca Intune yönetici konsolundan gerçekleştirilebilir. Ayrıca Intune, Apple Cihaz Kayıt Programı veya Apple Configurator aracıyla DEM hesaplarını kullanımdan kaldırmaktadır. Her iki kayıt yöntemi, paylaşılan iOS cihazları için kullanıcısız kaydı zaten desteklemektedir.
+
+Yalnızca, paylaşılan cihazlar için kullanıcısız kayıt kullanılamadığında DEM hesapları kullanın. Daha fazla bilgi için bkz. [Şirket ait cihazları Microsoft Intune'da Cihaz Kayıt Yöneticisi ile kaydetme](https://docs.microsoft.com/en-us/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+<!---TFS 1233681--->
+
+### Windows özelliklerinde ad değişiklikleri
+- [Windows için Microsoft Passport](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) artık **İş için Windows Hello** olarak adlandırılıyor.
+- [Kurumsal veri koruma](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) artık **Windows Bilgi Koruması** olarak adlandırılıyor.
+
 ## Haziran 2016
 ### Intune hizmet durumu
 Intune’un hizmet durumu bilgileri, diğer Microsoft hizmetleriyle birlikte merkezi bir konuma taşındı. Artık bu bilgileri Office 365 yönetim portalında, Hizmet Durumu’nun altında bulabilirsiniz. Daha fazla bilgi için [bu blog gönderisine](https://blogs.technet.microsoft.com/enterprisemobility/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/) bakın.
@@ -81,9 +127,9 @@ Daha fazla bilgi için [bu blog gönderisine](https://blogs.technet.microsoft.co
 
 
 ### Uygulama yönetimi
-- **MAM SDK’sı: PIN uzunluğu yapılandırmasını destekler.** Cihaz PIN’ine benzer şekilde MAM uygulamalarının PIN’i için de uzunluğu belirtebileceksiniz. Bunun için son kullanıcıların sizin ayarladığınız yeni kısıtlamalara uyması gerekecektir. Daha uzun girişi kabul eden biraz değiştirilmiş bir PIN ekranı görecekler. Ayrıntılar için bkz. [Android için MAM ilkesi ayarları](/intune/deploy-use/android-mam-policy-settings) ve [iOS için MAM ilkesi ayarları](/intune/deploy-use/ios-mam-policy-settings).
+- **MAM SDK’sı: PIN uzunluğu yapılandırmasını destekler.** Cihaz PIN’ine benzer şekilde MAM uygulamalarının PIN’i için de uzunluğu belirtebileceksiniz. Bunun için son kullanıcıların sizin ayarladığınız yeni kısıtlamalara uyması gerekecektir. Daha uzun girişi kabul eden biraz değiştirilmiş bir PIN ekranı görecekler. Ayrıntılar için bkz. [Android için MAM ilkesi ayarları](android-mam-policy-settings.md) ve [iOS için MAM ilkesi ayarları](ios-mam-policy-settings.md).
 
-- **iOS ve Android için Skype Kurumsal.** Artık [kayıt ilkeleri olmadan MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) ile Skype Kurumsal’ı hedefleyebilirsiniz. Kullanıcılar oturum açtığında, MAM ilkeleri uygulanır.
+- **iOS ve Android için Skype Kurumsal.** Artık [kayıt ilkeleri olmadan MAM](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) ile Skype Kurumsal’ı hedefleyebilirsiniz. Kullanıcılar oturum açtığında, MAM ilkeleri uygulanır.
 
 - **MAM ilkeleriyle yönetim için yeni uygulamalar sağlanmıştır.** Android için Microsoft Word, Excel ve PowerPoint uygulamaları artık Intune’a kayıtlı olmayan cihazlarda MAM ilkeleriyle ilişkilendirilebilir. Desteklenen uygulamaların tam listesi için, [Microsoft Intune uygulama iş ortakları](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) sayfasında Microsoft Intune mobil uygulama galerisine gidin.
 
@@ -311,6 +357,6 @@ Internet Explorer 9, Şubat 2016 tarihinden itibaren Microsoft Intune şirket po
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 220d877763352e62c4057494b69633356ef081c6
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 6740962e55b1232330c6fab43ce1250a54e3a97b
 
 
 ---
@@ -96,11 +96,10 @@ Bu sorunu çözmek ve gerekli sertifikayı almak için, uygulamanız gereken iki
 
 Yukarıda gösterilenle aynı "eksik sertifika" iletisini görüyorsanız ve yukarıdaki adımları zaten izlediyseniz, bunun anlamı büyük olasılıkla BT yöneticinizin yüklemenize yardımcı olmak için gerekli olduğunu belirttiği bir sertifika daha olduğudur. BT yöneticinize başvurun ve sorunu çözmeye yardımcı olacak adımların bulunduğu bu [bağlantıyı](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) ona verin.
 
-### Ayrıca bkz.
-[Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 
