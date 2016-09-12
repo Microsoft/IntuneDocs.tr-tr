@@ -4,7 +4,7 @@ description: "Intune’un yardımcı olduğu en yaygın altı görevi listeler"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
+ms.sourcegitcommit: 2ebb8fcf348cfdc7600c37b40824f5bba37a7f36
+ms.openlocfilehash: 4614c13d98c4b05882bbeabfbbd7de83d9bea2da
 
 
 ---
@@ -26,10 +26,14 @@ Uygulama görevleri konusuna girmeden önce, şirketinizde kurumsal mobil çalı
 >[!NOTE]
 >Microsoft çalışanlarının mobil cihazlarından şirket kaynaklarına erişmesine olanak tanırken şirket verilerinin de güvenliğini korumak için Microsoft BT’sinin Intune’u nasıl kullandığını bilmek ister misiniz? Microsoft BT’sinin Intune’u ve diğer hizmetleri kullanarak kimlikleri, cihazları, uygulamaları ve verileri nasıl yönettiğini ayrıntılarıyla görmek için [bu teknik olay incelemesini okuyun](https://www.microsoft.com/itshowcase/Article/Content/588).  
 
+>[!IMPORTANT]
+>Mobil cihazların güncel kalmasını sağlama<br>
+>Yakın zamanda iOS cihazlarına yapılan "Trident" kötü amaçlı yazılım saldırılarından sonra, Intune’un cihazınızı güvenli ve güncel tutmaya yardımcı olabileceği farklı yolları göstermek için [Microsoft Intune kullanarak mobil cihazların güncel kalmasını sağlama](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) adında yeni bir blog gönderisi yayımladık.
+
 ## Şirket içi e-postanızı ve verilerinizi güvenlik altına alarak mobil cihazların bunlara güvenle erişmesini sağlama
 Kurumsal mobil çalışma stratejilerinin çoğu çalışanların mobil cihazlarıyla dışarıdan, İnternet üzerinden e-postaya güvenli erişimini sağlama planıyla başlar. Birçok kuruluşun hala kurumsal ağlarında barındırdıkları Microsoft Exchange gibi şirket içi veri ve uygulama sunucuları vardır. Intune ve Enterprise Mobility Suite’in (EMS) Exchange Server için sağladığı benzersiz bir şekilde tümleştirilmiş [koşullu erişim çözümüyle](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) cihaz Intune’a kaydolmadıkça hiçbir mobil uygulamanın e-postaya erişememesi güvence altına alınır ve bunun için şirket ağınızın ucuna hiçbir ağ geçidi makinesinin kurulması gerekmez!
 
-E-postanın ötesinde, Intune bir iş kolu uygulama sunucusu gibi şirket içi verilere güvenli erişim gerektiren mobil uygulamalara erişim sağlamayı da destekler.  Bu tipik olarak, erişim denetimi için [Intune tarafından yönetilen sertifikaları](/en-us/intune/deploy-use/secure-resource-access-with-certificate-profiles) çevredeki standart bir VPN ağ geçidi veya ara sunucusuyla, örneğin Microsoft Azure AD Uygulama Ara Sunucusu’yla birlikte kullanarak gerçekleştirilir.  Böyle durumlarda, şirket verilerine erişmenin tek yolu cihazı yönetime kaydetmektir.  Kaydedildikten sonra, yönetim sistemi şirket verilerine erişen cihazların ilkelerinizle uyumlu olmasını güvence altına alır.  Buna ek olarak, erişilen verilerin iş kolu uygulamanız içinde tutulmasına ve böylelikle şirket verilerinin tüketici uygulamalarına veya hizmetlerine geçirilememesine yardımcı olmak için Intune’un [Uygulama Kaydırma Aracı ve Uygulama SDK’sı](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) kullanılabilir.
+E-postanın ötesinde, Intune bir iş kolu uygulama sunucusu gibi şirket içi verilere güvenli erişim gerektiren mobil uygulamalara erişim sağlamayı da destekler.  Bu tipik olarak, erişim denetimi için [Intune tarafından yönetilen sertifikaları](/intune/deploy-use/secure-resource-access-with-certificate-profiles) çevredeki standart bir VPN ağ geçidi veya ara sunucusuyla, örneğin Microsoft Azure AD Uygulama Ara Sunucusu’yla birlikte kullanarak gerçekleştirilir.  Böyle durumlarda, şirket verilerine erişmenin tek yolu cihazı yönetime kaydetmektir.  Kaydedildikten sonra, yönetim sistemi şirket verilerine erişen cihazların ilkelerinizle uyumlu olmasını güvence altına alır.  Buna ek olarak, erişilen verilerin iş kolu uygulamanız içinde tutulmasına ve böylelikle şirket verilerinin tüketici uygulamalarına veya hizmetlerine geçirilememesine yardımcı olmak için Intune’un [Uygulama Kaydırma Aracı ve Uygulama SDK’sı](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) kullanılabilir.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
@@ -68,6 +72,6 @@ Bazen çalışanlarınızın sergi alanlarında ve otel lobilerindeki genel kull
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
