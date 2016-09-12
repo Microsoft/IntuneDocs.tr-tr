@@ -3,8 +3,8 @@ title: "Yardımlı Telefon Desteği ile İletişim Kurun | Microsoft Intune"
 description: 
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
-ms.openlocfilehash: de00d31ab32916f29a111c93b39a578f82524f80
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: de00d31ab32916f29a111c93b39a578f82524f80
 |Avusturya|7 x 24|Pazartesi - Cuma<br /><br />09:00 – 17:00 CET (UTC +1)|Almanca&#42;, İngilizce|800080650|1206091578|
 |Azerbaycan|7 x 24|Pazartesi - Cuma<br /><br />09:00 – 17:00 MSK (UTC +4)|Rusça&#42;, İngilizce||01 24 37 35 55<br /><br />1. Adım: 9 seçeneğini belirleyin<br /><br />2. Adım: Kodu girin: 7706|
 |Bahreyn|7 x 24|Pazar - Perşembe<br /><br />09:00 – 19:00 AST (UTC +2)|İngilizce|800 81 250||
-|Beyaz Rusya|7 x 24|Pazartesi - Cuma<br /><br />09:00 – 17:00 MSK (UTC +4)|Rusça&#42;, İngilizce|8 820 0071 0003<br /><br />1. Adım: 9 seçeneğini belirleyin<br /><br />2. Adım: Kodu girin: 7707||
+|Belarus|7 x 24|Pazartesi - Cuma<br /><br />09:00 – 17:00 MSK (UTC +4)|Rusça&#42;, İngilizce|8 820 0071 0003<br /><br />1. Adım: 9 seçeneğini belirleyin<br /><br />2. Adım: Kodu girin: 7707||
 |Belçika|7 x 24|Pazartesi - Cuma<br /><br />09:00 – 17:00 CET (UTC +1)|Felemenkçe&#42;, Fransızca&#42;, İngilizce|80081174|022008884|
 |Brezilya|7 x 24|Pazartesi - Cuma<br /><br />09:00 – 17:00 BRT (UTC -2)|Portekizce (Brezilya)&#42;, İngilizce|08007621146|1147001999|
 |Bulgaristan|7 x 24|Pazartesi - Cuma<br /><br />09:00 – 17:00 EET (UTC +2)|Bulgarca&#42;, İngilizce|008001184446||
@@ -117,7 +117,6 @@ ms.openlocfilehash: de00d31ab32916f29a111c93b39a578f82524f80
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

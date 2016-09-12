@@ -1,10 +1,10 @@
 ---
 title: "Mobil cihaz yönetimi özellikleri | Microsoft Intune"
-description: 
+description: "Intune’un, hizmete kaydettiğiniz mobil cihazlarınızı yönetmeye nasıl yardımcı olabildiğini öğrenmek için bu konuyu okuyun."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 720112c7c20883200557510da2a42ee402eff50a
 
 
 ---
@@ -42,7 +42,8 @@ Yönetim, envanter, uygulama dağıtımı, sağlama ve kullanımdan kaldırma, I
 |Uygulama dağıtımı ve yönetimi|Mobil uygulamaları kurulum dosyalarından ve uygulama mağazalarından uygulama dağıtma, uygulama durumunun ayrıntılı bir şekilde izlenmesi ve uygulama kaldırma dahil yaşam döngüsü boyunca yönetmenize yardımcı olmak için çeşitli araçlar sağlar.|[Microsoft Intune'da uygulamaları dağıtma](/intune/deploy-use/deploy-apps)|
 |Uyumlu ve uyumlu olmayan uygulamalar|Uyumlu uygulamaların (kullanıcıların yüklemesine izin verilir) ve uyumlu olmayan uygulamaların (kullanıcılar tarafından yüklenmemelidir) listelerini belirtmenizi sağlar.|[Microsoft Intune’da iOS ilke ayarları](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 |Mobil uygulama yönetimi|Mobil uygulama yönetimini kullanarak, hem Intune’la yönettiğiniz hem de Intune’la yönetilmeyen cihazlarda uygulamalar için kısıtlamaları yapılandırın. Bu kopyalama ve yapıştırma, verilerin dış yedeğini oluşturma ve uygulamalar arasında veri aktarma gibi işlemleri kısıtlayarak şirket verilerinizin güvenliğini artırmaya yardımcı olur.|[Configure and deploy mobile application management policies in the Microsoft Intune console](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[Microsoft Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını mobil uygulama yönetimi için hazırlama](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[Microsoft Intune Uygulaması Sarmalama Aracı ile Android uygulamaları mobil uygulama yönetimi için hazırlama](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
-|Mobil uygulama yapılandırması|Kullanıcı uygulamayı çalıştırdığında, iOS uygulamaları için gerekebilecek ayarları sağlamak için mobil uygulama yapılandırma ilkelerini kullanın. Örneğin, uygulama kullanıcının oturum açma bilgilerinin bağlantı noktası numarasını belirtmesini isteyebilir. Bu, uygulama yapılandırmasını kolaylaştırmaya ve yardım masasına yapılan aramaların sayısını azaltmaya yardımcı olabilir.|[iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|iOS mobil uygulama yapılandırması|Kullanıcı uygulamayı çalıştırdığında, iOS uygulamaları için gerekebilecek ayarları sağlamak için mobil uygulama yapılandırma ilkelerini kullanın. Örneğin, uygulama kullanıcının oturum açma bilgilerinin bağlantı noktası numarasını belirtmesini isteyebilir. Bu, uygulama yapılandırmasını kolaylaştırmaya ve yardım masasına yapılan aramaların sayısını azaltmaya yardımcı olabilir.|[iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|iOS mobil uygulaması sağlama profilleri|Intune, süresi dolmak üzere olan iOS uygulamalarına önceden sağlama profilleri dağıtmanızı sağlayan araçlar verir.|[Uygulamalarınızın süresinin dolmasını engellemek için iOS mobil sağlama profili ilkelerini kullanma](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Yönetilen tarayıcı|Yönetilen tarayıcıyı kullanıcılarınıza dağıttıktan sonra, ziyaret edebilecekleri web sitelerini denetlemek için bir yönetilen tarayıcı ilkesi yapılandırabilirsiniz. Ayrıca, yönetilen tarayıcıya mobil uygulama yönetimi ilkeleri de uygulayabilirsiniz.|[Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
 |Microsoft Passport|Intune, parolayı, akıllı kartı ya da sanal akıllı kartı değiştirmek için Windows 10’da Active Directory veya bir Azure Active Directory hesabının kullanıldığı alternatif bir oturum açma yöntemi olan İş İçin Microsoft Passport’u tümleştirmenize olanak tanır.|[Microsoft Intune ile cihazlarda Microsoft Passport ayarlarını denetleme](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 
@@ -68,6 +69,6 @@ Yönetim, envanter, uygulama dağıtımı, sağlama ve kullanımdan kaldırma, I
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Windows Phone 8.1 cihazınızı Intune’a kaydetme | Microsoft Intune"
-description: 
+description: "Windows Phone 8.1 cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: cc427327897084d6366ade896f7d760603d86eb7
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: a03c3a3b6a284dc8f24eef2f111f526eedcc962f
 
 
 ---
@@ -90,7 +90,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

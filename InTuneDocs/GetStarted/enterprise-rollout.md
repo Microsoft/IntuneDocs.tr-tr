@@ -1,10 +1,10 @@
 ---
 title: "Kurumsal dağıtım | Microsoft Intune"
-description: 
+description: "Intune dağıtımının kurumsal dağıtım aşamasıyla ilgili öneriler."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 588d37ac5524c80da9082ee5b1af0e897e925ef9
+ms.sourcegitcommit: 0fff944e180bda99d70caafebe4ae69b6bd05b1b
+ms.openlocfilehash: aae62850d35aab6908cae2841988822911989a40
 
 
 ---
@@ -73,7 +73,9 @@ Burada, **Kurumsal dağıtım** aşamasına başlama adımlarının listesi veri
 
 -   Hedeflenen iletişim ve eğitim gerektirebilecek grupları tanımlayın.
 
--   E-posta iletişimini özelleştirin, intranet sitesini güncelleştirin ve iletişim/kaynak güncelleştirme işlemlerinin sürekli sahibi olacak kişileri tanımlayın.
+-   E-posta iletişimini özelleştirin, intranet sitesini güncelleştirin.
+
+-   İletişim/kaynak güncelleştirme işlemlerinin sürekli sahibi olacak kişileri tanımlayın.
 
 -   Kullanacağınız eğitim yöntemlerinin ana hatlarını belirleyin.
 
@@ -108,6 +110,6 @@ Burada, **Kurumsal dağıtım** aşamasına başlama adımlarının listesi veri
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

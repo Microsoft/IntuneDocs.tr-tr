@@ -1,10 +1,10 @@
 ---
 title: "iOS veya Mac OS X cihazınızı Intune ile kullanma | Microsoft Intune"
-description: 
+description: "iOS veya Mac OS X mobil cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 
 ---
 
-# iOS veya Mac OS X cihazınızı Intune ile kullanma
+# Using your iOS or Mac OS X device with Intune
 
-Şirketiniz Microsoft Intune kullanıyorsa iOS veya Mac OS X cihazınızda gerçekleştirmeniz gereken görevler için bu adımları kullanın.
+Bu sayfa, son kullanıcıların Intune tarafından yönetilen cihazlarında yapabileceği görevlerin tümüne bağlantılar içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettikleri adımları görmek için bu bilgiye başvurabilir. Bu görevler kayıt ile ilgili bilgiler, yönetim görevleri ve uyumluluk sorunları gibi kategorilere ayrılır.
 
 ## Şirket Portalı uygulaması yüklemesi ve Intune kaydı
 
@@ -50,7 +50,7 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydolduktan sonra yapab
 
 Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydolduğunda karşılaşabileceğiniz sorunların çözümünde size yardımcı olur.
 
-- [Ele geçirilen bir iOS cihazını yeniden bağlama](how-to-reconnect-a-compromised-ios-device)
+- [Ele geçirilen bir iOS cihazını yeniden bağlama](how-to-reconnect-a-compromised-ios-device.md)
 - [BT yöneticinize hataları gönderme](send-errors-to-your-it-admin-ios.md)
 - [Şirket Portalı uygulamasını kullanırken bir hata iletisi alıyorsunuz](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Cihazınızı Intune’a kaydetmeye çalışırken hata görüyorsunuz](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
@@ -61,8 +61,6 @@ Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydolduğunda karşılaşab
 
 
 
-
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

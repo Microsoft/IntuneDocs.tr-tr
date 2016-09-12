@@ -1,10 +1,10 @@
 ---
-title: "E-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma | Microsoft Intune"
-description: 
+title: "E-posta profilleriyle şirket e-postasına erişim | Microsoft Intune"
+description: "E-posta profili ayarları, mobil cihazlarda belirli e-posta istemcilerinin e-posta erişim ayarlarını yapılandırmak için kullanılır."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: angrobe
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: cddc1a68b14520774555416dcd496a06a0f89385
 
 
 ---
@@ -24,7 +24,7 @@ Birçok mobil platformda, işletim sisteminin parçası olarak gönderilen bir *
 
 Ek veri kaybı önleme (DLP) özelliğine gerek duyuyorsanız, yerel e-posta istemcileri de dahil olmak üzere tüm e-posta istemcileri için kullanıcının posta kutusuna erişimi denetleyen [Koşullu erişim](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)’i seçin.
 
-E-posta profili ayarları, mobil cihazlarda belirli e-posta istemcilerinin e-posta erişim ayarlarını yapılandırmak için kullanılır.   Çoğu mobil platformda, işletim sisteminin parçası olarak gönderilen bir *yerel* e-posta istemcisi bulunur.  Desteklenen platformlarda, kullanıcıların herhangi bir kurulum yapmadan kişisel cihazlarda şirket e-postasına erişebilmelerini sağlamak için, yerel e-posta istemcileri Microsoft Intune tarafından yapılandırılabilir.  
+E-posta profili ayarları, mobil cihazlarda belirli e-posta istemcilerinin e-posta erişim ayarlarını yapılandırmak için kullanılır. Çoğu mobil platformda, işletim sisteminin parçası olarak gönderilen bir *yerel* e-posta istemcisi bulunur.  Desteklenen platformlarda, kullanıcıların herhangi bir kurulum yapmadan kişisel cihazlarda şirket e-postasına erişebilmelerini sağlamak için, yerel e-posta istemcileri Microsoft Intune tarafından yapılandırılabilir.  
 
 BT yöneticileri veya kullanıcılar, Android ve iOS için Microsoft Outlook gibi alternatif e-posta istemcileri yüklemeyi de seçebilirler.  Bu e-posta istemcileri e-posta profillerini destekleyemeyebilir ve Microsoft Intune e-posta profilleri kullanılarak yapılandırılamaz.  
 
@@ -36,6 +36,18 @@ Aşağıdaki cihaz türlerinde yerel e-posta istemcisini yapılandırmak için e
 
 
 Cihazda bir e-posta hesabı yapılandırmaya ek olarak, ne kadar e-postanın eşitleneceği ve cihaz türüne bağlı olarak eşitlenecek içerik türleri gibi eşitleme ayarlarını da yapılandırabilirsiniz.
+>[!NOTE]
+>
+>Intune tarafından profil sağlanmadan önce kullanıcı bir e-posta profili yüklediyse, Intune e-posta profili dağıtımının sonucu cihaz platformuna bağlıdır:
+
+>-**iOS**: Intune, konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğunu algılar. Kullanıcı tarafından oluşturulmuş yinelenen e-posta profili, Intune yöneticisinin oluşturduğu bir profili engeller. Bu, iOS kullanıcıları genellikle bir e-posta profili oluşturduğundan, ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, kullanıcıyı, el ile yapılandırılmış e-posta profilleri nedeniyle uyumlu olmadıkları konusunda bilgilendirir ve kullanıcıdan, o profili kaldırmasını ister. Kullanıcı, Intune profilinin dağıtılabilmesi için, e-posta profilini kaldırmalıdır. Bu sorunun önüne geçmek için, kullanıcılarınızdan bir e-posta profili yüklemeden önce kaydolmalarını ve Intune’un profili dağıtmasına izin vermelerini isteyin.
+
+>-**Windows**: Intune, konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğunu algılar. Intune kullanıcı tarafından oluşturulmuş var olan e-posta profilinin üzerine yazar.
+
+>-**Samsung KNOX**: Intune, e-posta adresini temel alan yinelenen bir e-posta hesabı olduğunu algılar ve Intune profilini bunun üzerine yazar. Kullanıcı bu hesabı yapılandırırsa, Intune profili tarafından hesabın yeniden üzerine yazılır. Hesap yapılandırmasının üzerine yazılan kullanıcı için bu durumun kafa karıştırıcı olabileceğini unutmayın.
+
+>Samsung KNOX’un profili algılamak için konak adını kullanmaması nedeniyle, farklı konaklarda aynı e-posta adresine dağıtmak üzere birden çok e-posta profili oluşturursanız bunlar birbirinin üzerine yazılacağından, bunu yapmamanızı öneririz.
+    
 
 ## E-posta profillerinin güvenliğini sağlama
 E-posta profillerinin güvenliği sağlamak için iki yöntemden biri kullanabilirsiniz:
@@ -82,7 +94,7 @@ E-posta profilinde parola yer almadığı için e-postaya bağlanırken kullanı
     |**E-posta eşitlemek için gün sayısı**|Eşitlemek istediğiniz e-posta sayısı; tüm kullanılabilir e-postaları eşitlemek için **Sınırsız**’ı seçin.|
     |**Eşitleme zamanlaması** (Samsung KNOX, Windows Phone 8 ve üstü, Windows 10)|Cihazların Exchange Server'dan verileri eşitleyeceği zamanlamayı seçin. Ayrıca, verileri ulaşır ulaşmaz eşitleyen **İletiler geldiğinde** seçeneğini veya eşitlemenin cihaz kullanıcısı tarafından başlatılması gereken **El ile** seçeneğini belirleyebilirsiniz.|
     |**SSL Kullan**|E-posta gönderirken, e-posta alırken ve Exchange Server ile iletişim kurarken Güvenli Yuva Katmanı (SSL) iletişimini kullanın.<br /><br />Samsung KNOX 4.0 veya üzeri bir sürümü çalıştıran cihazlarda Exchange Server’ın SSL sertifikasını dışarı aktarmanız ve Intune’da bunu Android Güvenilir Sertifika Profili olarak dağıtmanız gerekir. Intune, Exchange Server'a başka yollarla yüklenirse bu sertifikaya erişimi desteklemez.|
-    |**Eşitlenecek içerik türü**|Cihazlara eşitlemek için istediğiniz içerik türlerini seçin.| 
+    |**Eşitlenecek içerik türü**|Cihazlara eşitlemek için istediğiniz içerik türlerini seçin.|
     |**Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver** (yalnızca iOS)|Kullanıcının, bu profili, e-posta göndermek için varsayılan hesap olarak seçmesini sağlayın ve üçüncü taraf uygulamalarının, yerel e-posta uygulamasında e-posta açmasına izin verin (örneğin e-postaya dosya eklemek için).|
 
     > [!IMPORTANT]
@@ -109,8 +121,6 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 
 
 
-
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

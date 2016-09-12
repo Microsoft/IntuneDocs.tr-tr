@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+translationtype: Human Translation
+ms.sourcegitcommit: 317b8cc277eb8dffc1cb29739f3f78cfa3241602
+ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
 
 
 ---
@@ -43,7 +44,7 @@ Cihazlar Intune’a kaydolmadan önce, mevcut kurumsal mobil yönetim çözümü
 
 ## Cihazları Intune'a kaydetme
 
-Geçiş için zamanlanmış kullanıcılar, şirket kaynaklarına, e-postasına ve uygulamalarına yeniden erişim kazanmak veya erişimi kaybetmemek için Intune’a hemen kaydolmalıdır. Koşullu erişim yapılandırdıysanız ve kullanıcıları Intune’a kaydolmadan e-postaya bağlanmayı denerse, erişimleri engellenir ve kayıt e-postasıyla karşılanırlar. Bu e-posta, cihazlarını Intune’a kaydetmeleri için onlara yol gösterecektir.  Alternatif olarak, kullanıcılar Intune Şirke Portalı uygulaması yoluyla veya Windows 8.1 ve Windows 10 Mobile’da işletim sistemi aracılığıyla Intune’da kaydolabilirler. Her platform için kayıt adımlarıyla ilgili diğer yönergeleri, [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md) başlığı altında bulabilirsiniz.
+Geçiş için zamanlanmış kullanıcılar, şirket kaynaklarına, e-postasına ve uygulamalarına yeniden erişim kazanmak veya erişimi kaybetmemek için Intune’a hemen kaydolmalıdır. Koşullu erişim yapılandırdıysanız ve kullanıcılar Intune’a kaydolmadan e-postaya bağlanmayı denerse, erişimleri engellenir ve bir kayıt e-postasıyla karşılanırlar. Bu e-posta, cihazlarını Intune’a kaydetmeleri için kullanıcılara yol gösterir.  Alternatif olarak, kullanıcılar Intune Şirke Portalı uygulaması yoluyla veya Windows 8.1 ve Windows 10 Mobile’da işletim sistemi aracılığıyla Intune’da kaydolabilirler. Her platform için kayıt adımlarıyla ilgili diğer yönergeleri, [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md) başlığı altında bulabilirsiniz.
 
 ## Intune koşullu erişimini yapılandırma (isteğe bağlı)
 
@@ -72,6 +73,6 @@ Bu kılavuzun tamamının indirilebilir bir kopyasını almak için [TechNet Gal
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO1-->
 
 

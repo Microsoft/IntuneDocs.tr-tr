@@ -1,6 +1,6 @@
 ---
 title: "Uygulama dağıtımı | Microsoft Intune"
-description: 
+description: "Microsoft Intune’da aşamalı uygulama dağıtımına yönelik öneriler."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+ms.sourcegitcommit: 2427768c0ca73d20140462946ba2984b7999d864
+ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
 
 
 ---
@@ -44,7 +44,7 @@ Aşağıdakileri göz önünde bulundurun:
 
 -   Seçtiğiniz uygulamanın yükleyicisinin, [Microsoft Intune’la uygulamaları ekleme](/intune/deploy-use/add-apps) konusunda açıklandığı gibi Intune uygulama dağıtımı tarafından desteklenip desteklenmediğini denetleyin.
 
--   Uygulama dağıtımı önkoşullarının yüklü olduğundan emin olun. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   Uygulama dağıtımı önkoşullarının yüklü olduğundan emin olun. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   Uygulama türünün Intune tarafından desteklenip desteklenmediğini saptayın.
 
@@ -95,6 +95,6 @@ Pilot aşamasında, uygulamayı test kullanıcıları ve cihazlarından oluşan 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

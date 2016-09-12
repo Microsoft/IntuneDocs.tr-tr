@@ -1,51 +1,58 @@
 ---
-title: "Kaybolan veya çalınan cihazınızı sıfırlama (silme) | Microsoft Intune"
+title: "Kaybolan veya çalınan iOS cihazınızı sıfırlama (silme) | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 05/09/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7c6e3e0f008f084a63288eec66f7161a1edb9ffe
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: f6e7e40973428762995feceac109a8367813dadd
 
 
 ---
 
 
-# Kaybolan veya çalınan cihazınızı sıfırlama (silme)
+# Kaybolan veya çalınan iOS cihazınızı sıfırlama (silme)
 
 Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir cihazdan Şirket Portalı uygulamasını kullanarak veya [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanarak cihazı varsayılan fabrika ayarlarına sıfırlayabilirsiniz.
 
 > [!WARNING]
 > Bir cihazı fabrika varsayılanlarına sıfırlamak hem kişisel hem de iş ile ilgili bilgilerinizi cihazdan kaldırır. Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için bkz. [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md).
 
-Şirket Portalı uygulamasını kullanarak cihazınızı sıfırlamak için:
+## Şirket Portalı uygulamasını kullanarak cihazınızı sıfırlamak için
 
-1.  Şirket Portalı uygulamasındaki **Cihazlarım** bölümünden silmek istediğiniz cihazı seçin.
+1.  Kayıtlı başka bir cihazdan Şirket Portalı uygulamasını açın ve iş veya okul hesabınızı kullanarak giriş yapın.
 
-2.  **Sıfırla** &gt; **Sıfırla**’ya dokunun.
+2.  **Cihazlarım** altında kayıp veya çalıntı cihaz seçeneğini belirleyin.
 
-Şirket Portalı web sitesini kullanarak cihazınızı sıfırlamak için aşağıdaki adımları kullanın veya bu [videoyu](http://aka.ms/jhdjak) izleyin:
+3.  **Sıfırla** &gt; **Sıfırla**’ya dokunun.
+
+## Cihazınızı Şirket Portalı web sitesini kullanarak sıfırlamak için
+
+Aşağıdaki adımları kullanabilir veya bu videoyu izleyebilirsiniz:
+
+<iframe width="675" height="379" src="https://www.youtube.com/embed/3rrXe8XmtgU" frameborder="0" allowfullscreen></iframe>
 
 1.  [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) silmek istediğiniz cihazı seçin.
 
 2.  **Sıfırla** &gt; **Sıfırla**’ya dokunun.
-> [!NOTE]
-> Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+
+Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 ### Ayrıca bkz.
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

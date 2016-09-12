@@ -15,7 +15,8 @@
 ## [Yazılım güncelleştirmesi sorunlarını giderme](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [E-posta profilleriyle ilgili sorunları giderme](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [Koşullu erişim sorunlarını giderme](troubleshoot-conditional-access.md)
+## [Exchange bağlayıcısı sorunlarını giderme](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune için etki alanı adları | Microsoft Intune"
-description: 
+description: "Intune için etki alanı adı ekleme"
 keywords: 
 author: andredm7
 manager: swadhwa
@@ -13,15 +13,15 @@ ms.assetid: c3c136f0-330d-432a-a91f-16f7dd097e55
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d99669f90fe7ebec7854b7a800b09b0685c314e
-ms.openlocfilehash: aaede1500f28c6eb8c2a21924d7c3b7f633eca26
+ms.sourcegitcommit: 32723f5b2c92073dda43a0b1f36a48ded0e13ba3
+ms.openlocfilehash: 2adbe1e4a92af5302550a8b78069bc49d725dbc3
 
 
 ---
 
 
 
-# Microsoft Intune ile özel etki alanlarını yönetme
+# Microsoft Intune ile özel etki alanı adları
 
 Özel bir etki alanı ekleme ve doğrulama adımları alternatif olarak [Azure Active Directory'de gerçekleştirilebilir](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
 
@@ -37,15 +37,11 @@ Bu ilk etki alanı adını yeniden adlandırılamaz veya kaldıramazsınız. Anc
 2. Gezinme bölmesinde, **Ayarlar** &gt; **Etki alanları** öğelerini seçin.
 3. **Etki alanı ekle**’yi seçin ve özel etki alanı adınızı yazın.
 4. **Etki alanını doğrula** iletişim kutusu açılarak, DNS barındırma sağlayıcınızdaki TXT kaydını oluşturmak için değerleri verir.
-    > [!TIP]
-    > Office 365 Yönetim portalı, bir GoDaddy etki alanı kullanırken sizi GoDaddy'nin oturum açma sayfasına yönlendirir. TXT kaydı, kimlik bilgilerinizi girdikten ve etki alanı değiştirme izni sözleşmesini kabul ettikten sonra otomatik olarak oluşturulur.
-    > 
-    > Alternatif olarak, bu adımda sağlanan değerlere göre, [GoDaddy etki alanı kullanırken TXT kaydını el ile oluşturabilirsiniz](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US).
+    - **GoDaddy kullanıcıları**: Office 365 Yönetim portalı, sizi GoDaddy'nin oturum açma sayfasına yönlendirir. Kimlik bilgilerinizi girdikten ve etki alanı değiştirme izni sözleşmesini kabul ettikten sonra, TXT kaydı otomatik olarak oluşturulur. Alternatif olarak, kendiniz [TXT kaydını oluşturabilirsiniz](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US).
+    - **Register.com kullanıcıları**: TXT kaydını oluşturmak için [adım adım yönergeleri](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) izleyin.
 
-    > [!NOTE]
-    > Bu adımda sağlanan değerlere göre, bir Register.com etki alanı kullanırken TXT kaydını oluşturmak için, [adım adım yönergeleri](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) izleyin.
-
-5. DNS barındırma sağlayıcınızda değişiklikler yaparken, [Windows cihazları kaydı](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) için bir DNS diğer adı oluşturduğunuzdan (CNAME) emin olun.
+    > [!TIP] 
+    > DNS barındırma sağlayıcınızda değişiklikler yaparken, [Windows cihazları kaydı](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) için bir DNS diğer adı (CNAME) oluşturduğunuzdan emin olun.
 
 Bir karma bulut senaryosunda, özel etki alanı adınızı ekledikten sonra ve kuruluşunuzun onun sahibi olduğu doğrulandıktan sonra, şirket içi Active Directory'de kullanıcı hesaplarınızı yönetmeye devam edebilirsiniz, ardından onu Azure AD ile eşitleyebilirsiniz.
 
@@ -60,10 +56,10 @@ Bir karma bulut senaryosunda, özel etki alanı adınızı ekledikten sonra ve k
 
 [Office 365'te, ilk onmicrosoft.com etki alanınız hakkında](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
 
-[Microsoft Intune'u kullanmaya başlamadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
+[Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

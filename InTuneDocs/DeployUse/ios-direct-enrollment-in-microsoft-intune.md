@@ -1,10 +1,10 @@
 ---
 title: "iOS cihazları için doğrudan kayıt | Microsoft Intune"
-description: 
+description: "Şirkete ait cihazları Mac bilgisayarına USB ile bağlayarak önceden yapılandırılmış bir ilkeyle doğrudan kaydetmek için, Apple Configurator aracını kullanın."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,16 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+ms.sourcegitcommit: aabe68a3621a02b8f3142ab3f593190cc23053dd
+ms.openlocfilehash: 17836bc826bc89e3f041f7b369be09c1cce9ea4f
 
 
 ---
 
 # Apple Configurator’ı kullanarak iOS cihazlarını doğrudan kaydetme
-Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) aracı kullanarak şirketin sahip olduğu iOS cihazlarının kaydedilmesini destekler. Bu işlem cihazı fabrika ayarlarına sıfırlamaz ve önceden tanımlanmış bir ilkeyle kaydeder. Bu yöntem, **Kullanıcı benzeşimi yok** ayarına sahip cihazlar içindir ve kurumsal kayıt kurulumu için iOS cihazını USB ile bir Mac bilgisayara bağlamanızı gerektirir. Şirket Portalı uygulaması doğrudan kayıtlı cihazlar için desteklenmez. Bu kılavuz bir Mac bilgisayarda Apple Configurator 2.0 kullandığınızı varsayar.
+Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) aracı kullanarak şirketin sahip olduğu iOS cihazlarının kaydedilmesini destekler. Bu işlem cihazı fabrika ayarlarına sıfırlamaz ve önceden tanımlanmış bir ilkeyle kaydeder. Bu yöntem, **Kullanıcı benzeşimi yok** ayarına sahip cihazlar içindir ve kurumsal kayıt kurulumu için iOS cihazını USB ile bir Mac bilgisayara bağlamanızı gerektirir. iOS cihazlarını doğrudan kaydederken, cihazın seri numarasını almadan kayıt işlemini yapabilirsiniz. Ayrıca Intune kayıt sırasında cihaz adını yakalamadan önce, cihazı tanımlama amacıyla adlandırabilirsiniz. Şirket Portalı uygulaması doğrudan kayıtlı cihazlar için desteklenmez. Bu kılavuz bir Mac bilgisayarda Apple Configurator 2.0 kullandığınızı varsayar.
 
 1.  **Cihazlar için profil oluşturma** Cihaz kayıt profili, cihazlara uygulanan ayarları tanımlar. Henüz yapmadıysanız, Apple Configurator kullanarak kaydedilmiş iOS cihazları için bir cihaz kayıt profili oluşturun.
-
-    #### Bir profil oluşturmak için
 
     1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle…**’ye tıklayın.
 
@@ -40,8 +38,8 @@ Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.mi
 
         -   **Cihaz grubu ön ataması** – Bu profili dağıtan tüm cihazlar başlangıçta bu gruba ait olur. Cihazları kayıttan sonra yeniden atayabilirsiniz.
 
-        >[!Important]
-        >Grup atamaları, Intune'dan Azure Active Directory'ye taşınır. [Daha fazlasını öğrenin](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+
     3.  Profili eklemek için **Profili Kaydet**’i seçin.
 
 5.  **Bir profili iOS cihazlarına dağıtmak için .mobileconfig olarak dışarı aktarma** Oluşturduğunuz cihaz profilini seçin. **Dışarı Aktar...**’ı seçin öğesine tıklayın. **Profili indir**’i seçin ve indirilen .mobileconfig dosyasını kaydedin.
@@ -61,8 +59,6 @@ Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.mi
 
 8.  **Profili yükleme** Profili iOS cihazına yüklemeye hazırsınız. Cihaz, Kurulum Yardımcısı’nı zaten tamamlamış ve hazır olmalıdır.  Kayıt için uygulama dağıtımları gerekiyorsa, uygulama dağıtımları App Store için imzalanmış bir Apple Kimliğiniz olmasını gerektireceğinden cihazda bir Apple Kimliği ayarlanmış olmalıdır.
 
-    ###### Denetimsiz iOS cihazlar için profil kabulünü tamamlama
-
     1.  iOS cihazının kilidini açın.
 
     2.  **Yönetim profili**’nin **Profili yükle** iletişim kutusunda **Yükle**’ye dokunun.
@@ -81,11 +77,7 @@ Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.mi
 10. **Cihazları dağıtma** iOS cihazı artık Intune’a kaydedilmiştir ve Intune tarafından yönetilmektedir.
 
 
-### Ayrıca bkz:
-[Cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO1-->
 
 

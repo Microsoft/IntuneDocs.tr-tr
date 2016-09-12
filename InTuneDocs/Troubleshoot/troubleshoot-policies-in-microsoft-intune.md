@@ -1,19 +1,20 @@
 ---
 title: "İlke sorunlarını giderme | Microsoft Intune"
-description: 
+description: "İlke yapılandırma sorunlarını giderin."
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+author: robstack
+manager: angrobe
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
 
 
 ---
@@ -46,7 +47,8 @@ Aşağıdaki ekran görüntüsünde, iki anlaşılır örnek gösterilmektedir:
 
 ![Intune cihaz ilkesi](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE] Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
+> [!NOTE]
+> Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
 
 ## İlke yenileme ve güncelleştirme aralıkları
 İlkelerin düzenli aralıklarla yenilendiğinden ve güncelleştirildiğinden emin olun. Genel olarak, ilkeler bir değişiklik yapmanızdan sonraki 15 dakika içinde kaydedilmelidir. İlke yenileme için düzenli aralıklar hakkında daha fazla ayrıntı aşağıda verilmiştir:
@@ -68,16 +70,13 @@ MDM olmayan Windows cihazları için policyplatform.log dosyasındaki ilke hatal
 
 2.  İstemci yazılımının kaldırılması için 20 dakika bekleyin.
 
-    > [!NOTE] İstemciyi Programlar ve Özellikler menüsünden kaldırmaya çalışmayın.
+    > [!NOTE]
+    > İstemciyi Programlar ve Özellikler menüsünden kaldırmaya çalışmayın.
 
 3.  Başlat menüsünde **UAC** yazarak Kullanıcı Hesabı Denetimi ayarlarını açın.
 
 4.  Bildirim kaydırıcısını varsayılan ayara getirin.
 
-## KNOX cihazı için 0x87D1FDE8 hatası
-**Sorun**: Çeşitli Android cihazlarda Samsung KNOX için Exchange Active Sync e-posta profilini oluşturduktan ve dağıttıktan sonra, cihazların özellikler &gt; ilke sekmesinde **0x87D1FDE8** hatası veya **düzeltme başarısız** hatası bildirilir.
-
-Samsung KNOX için EAS profili yapılandırmanızı ve kaynak ilkeyi gözden geçirin. Samsung Notes eşitleme seçeneği artık desteklenmez ve profilinizde bu seçenek belirtilmemelidir. Cihazların ilkeyi işlemesi için yeterli bir süre beklendiğinden (24 saate kadar) emin olun.
 
 ## Uyarı: Erişim Kuralları Exchange’e Kaydedilemedi
 **Sorun**: Yönetici konsolunda **Erişim Kuralları Exchange’e Kaydedilemedi**  hatasını alıyorsunuz.
@@ -110,6 +109,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Android kullanıcılarınız uygulamalarını nasıl alır | Microsoft Intune"
-description: 
+description: "Android uygulamalarını son kullanıcılara sağlama yöntemleri"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,33 +13,43 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3bcf89636f9da8fd8bfa5cc52391742a9ce9f92
-ms.openlocfilehash: 25571ce1b214c927f3dc2ea3968d00970621e474
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 90f50d14fac0e335f3b7c5e0825b0bb243b7a532
 
 
 ---
 
 
 # Android kullanıcılarınız uygulamalarını nasıl alır
-Microsoft Intune aracılığıyla dağıttığınız uygulamaları son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın. 
+Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın. Yerel Android cihazlarıyla Samsung Knox cihazlarına yönelik bilgiler farklı olabilir.
 
-**Gerekli uygulamalar** - Platforma bağlı olarak yönetici tarafından gerekli kılınan ve minimum kullanıcı katılımıyla cihaza yüklenen uygulamalar.
- 
-- **Samsung Knox cihazları**: gereken bir uygulamayı Samsung Knox cihazlarına dağıtırsanız, uygulama, cihazlarına otomatik olarak ve sessiz şekilde yüklenir.
-- **Yerel (Samsung Knox olmayan cihazlar)**: gereken bir uygulamayı Samsung Knox olmayan cihazlara dağıtırsanız, kullanıcıların cihazlarına otomatik olarak yüklenmez. Bunun yerine, kullanıcılardan, uygulamayı yüklemeleri istenir. Komut istemlerini kabul ettikten sonra, uygulama indirilir ve ardından kullanıcılar, onu yüklemeleri gerektiğini gösteren bir bildirim alır. 
+## Yerel (Samsung Knox olmayan) Android cihazları
 
-**Kullanılabilir uygulamalar** - Şirket Portalı uygulama listesinde sağlanan ve kullanıcıların isteğe bağlı olarak yüklemeyi seçebileceği uygulamalar.
+| Uygulama türü | İş kolu (LOB) uygulamaları | Play Store uygulamaları  |
+| ------------- |-------------| -----|
+| Kullanılabilir uygulamalar      | Kullanıcılar Şirket Portalı’nda **yükle**’ye dokunur. Bir bildirim görüntülenir ve kullanıcılar buna dokunarak yüklemeyi başlatır. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. | Kullanıcılar Şirket Portalı’nda uygulamaya dokunur ve Play Store’da uygulamanın sayfasına ulaşır; burada yüklemeyi başlatabilirler.|
+| Gerekli uygulamalar      | Kullanıcılara bir bildirim gösterilir. Bu bildirimi kapatamazlar ve bu, uygulamayı yüklemeleri gerektiğini gösterir. Kullanıcılar yüklemeyi başlatmak için bildirime dokunur. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır.    | Kullanıcılara bir bildirim gösterilir. Bu bildirimi kapatamazlar ve bu, uygulamayı yüklemeleri gerektiğini gösterir. Kullanıcılar bildirime dokunur ve Play Store’da uygulamanın sayfasına ulaşır; burada yüklemeyi başlatabilirler. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. |
+
+## Samsung Knox Android cihazları
+
+| Uygulama türü | İş kolu (LOB) uygulamaları | Play Store uygulamaları  |
+| ------------- |-------------| -----|
+| Kullanılabilir uygulamalar      | Kullanıcılar Şirket Portalı’nda **yükle**’ye dokunur. Uygulama, başka kullanıcı müdahalesi olmadan yüklenir. | Kullanıcılar Şirket Portalı’nda uygulamaya dokunur ve Play Store’da uygulamanın sayfasına ulaşır; burada yüklemeyi başlatabilirler.|
+| Gerekli uygulamalar      | Uygulama, hiçbir kullanıcı müdahalesi olmadan yüklenir.    | Kullanıcılara bir bildirim gösterilir. Bu bildirimi kapatamazlar ve bu, uygulamayı yüklemeleri gerektiğini gösterir. Kullanıcılar bildirime dokunur ve Play Store’da uygulamanın sayfasına ulaşır; burada yüklemeyi başlatabilirler. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. |
+
+Uygulamalar, aşağıda açıklandığı gibi yönetilebilir veya yönetilmeyebilir. Uygulamaları yönetilen uygulama yapma işlemi, tüm Android cihaz türlerinde aynıdır.
 
 **Yönetilen uygulamalar** - İlkeler aracılığıyla yönetilebilen ve Intune tarafından “sarmalanmış" veya Intune Mobil Uygulama Yönetimi (MAM) Yazılım Geliştirme Seti (SDK) ile oluşturulmuş uygulamalar. Bu uygulamalar Intune tarafından yönetilebilir ve uygulama ilkeleri uygulanabilir.
 
 **Yönetilmeyen uygulamalar** - İlkeler aracılığıyla yönetilebilen ve Intune tarafından sarmalanmamış veya Intune MAM SDK’sini içermeyen uygulamalar. Uygulama ilkeleri bu uygulamalara uygulanamaz.
 
-###Ayrıca bkz.
+### Ayrıca bkz.
 [Microsoft Intune ile uygulamalar ekleme](/intune/deploy-use/add-apps)
 [IOS kullanıcılarınız uygulamalarını nasıl alır](how-your-ios-users-get-their-apps.md)
 [Windows kullanıcılarınız uygulamalarını nasıl alır](how-your-windows-users-get-their-apps.md)
 
 
-<!--HONumber=Jul16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

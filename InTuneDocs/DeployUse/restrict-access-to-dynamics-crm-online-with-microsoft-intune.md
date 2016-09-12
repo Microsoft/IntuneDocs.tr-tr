@@ -1,10 +1,10 @@
 ---
 title: "Dynamics CRM Online’a erişimi kısıtlama | Microsoft Intune"
-description: 
+description: "Dynamics CRM’i korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 89e522a99687fc9b6e82db9f721858d17afdce6a
-ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 875da922b311b06fa8a1eb8ba7207108684825d5
 
 
 ---
@@ -55,10 +56,10 @@ Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 Bir uyumluluk ilkesi [oluşturun](create-a-device-compliance-policy-in-microsoft-intune.md) ve ilkeden etkilenecek olan tüm cihazlara [dağıtın](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md). Bunlar, Hedeflenen gruplardaki kullanıcılar tarafından kullanılan tüm cihazlar olacaktır.
 
 > [!NOTE]
-> [!NOTE] Uyumluluk ilkeleri Microsoft Intune gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına hedeflenir.
+> Uyumluluk ilkeleri Microsoft Intune gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına hedeflenir.
 
 > [!IMPORTANT]
-> [!IMPORTANT] Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak değerlendirilir.
+> Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak kabul edilir.
 
 Hazır olduğunuzda 3. Adım‘a ilerleyin.
 ### Adım 3: Dynamics CRM ilkesi yapılandırma
@@ -96,6 +97,6 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Microsoft Intune’un 30 günlük değerlendirmesi için kaydolun | Microsoft Intune"
-description: 
+description: "Intune’un ücretsiz, 30 günlük değerlendirmesine nasıl kaydolabilirsiniz ve kaydolmadan önce hangi noktaları dikkate almanız gerekir"
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fe1587bead9e4cd350f5ffcf925fe04afd824ea0
-ms.openlocfilehash: f97b619d2b82556685cf0e247700d1fd8c8d4369
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
 
 
 ---
@@ -61,6 +61,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 1. adımını
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

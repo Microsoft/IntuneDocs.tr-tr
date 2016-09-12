@@ -1,10 +1,10 @@
 ---
 title: "Android cihazınızı Intune ile kullanma | Microsoft Intune"
-description: 
+description: "Android mobil cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi"
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
 
 # Android cihazınızı Intune ile kullanma
 
-Şirketiniz Microsoft Intune kullanıyorsa Android cihazınızda gerçekleştirmeniz gereken görevler için bu adımları kullanın.
+Bu sayfa, son kullanıcıların Intune tarafından yönetilen cihazlarında yapabileceği görevlerin tümüne bağlantılar içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettikleri adımları görmek için bu bilgiye başvurabilir. Bu görevler kayıt ile ilgili bilgiler, yönetim görevleri ve uyumluluk sorunları gibi kategorilere ayrılır.
 
 ## Şirket Portalı uygulaması yüklemesi ve Intune kaydı
 
@@ -67,9 +67,6 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşı
 
 
 
-
-
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

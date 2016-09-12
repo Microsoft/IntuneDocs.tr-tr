@@ -1,26 +1,27 @@
 ---
-title: "Cihazınızdaki yönetilen uygulamaları kullanma | Microsoft Intune"
+title: "Android cihazınızdaki yönetilen uygulamaları kullanma | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 5a25d845113ef6a3cb402923ef451fab63138979
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9e6ef6d4daf8507ed00cb5fa4a1d88f44a05068c
 
 
 ---
 
 
-# Cihazınızdaki yönetilen uygulamaları kullanma
+# Android cihazınızdaki yönetilen uygulamaları kullanma
 
 Yönetilen uygulamalar, BT yöneticinizin ilgili uygulamada erişebildiğiniz şirket verilerini korumak üzere yapılandırabildiği uygulamalardır. Android cihazınızdaki yönetilen bir uygulamada bulunan şirket verilerine eriştiğinizde uygulamanın beklediğinizden biraz farklı çalıştığını fark edebilirsiniz. Örneğin, korunan şirket verilerini kopyalayıp yapıştıramayabilir veya bu verileri belirli konumlara kaydedemeyebilirsiniz.
 
@@ -77,6 +78,7 @@ Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöne
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

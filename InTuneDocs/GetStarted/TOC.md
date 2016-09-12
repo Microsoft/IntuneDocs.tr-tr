@@ -9,7 +9,7 @@
 ### [Şirket Portalı](microsoft-intune-company-portal.md)
 ### [Microsoft bulut hizmetleri ve ürünleriyle tümleştirme](integration-with-cloud-services.md)
 ### [Ağ bant genişliği kullanımı](network-bandwidth-use.md)
-### [Etki alanı adları](domain-names-for-microsoft-intune.md)
+### [Özel etki alanı adları](domain-names-for-microsoft-intune.md)
 
 ## [Intune hızlı başlangıç kılavuzu](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Intune'da oturum açma](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -39,6 +39,6 @@
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

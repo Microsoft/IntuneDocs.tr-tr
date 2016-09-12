@@ -1,10 +1,10 @@
 ---
-title: "Windows cihazlarını Multi Factor Authentication ile koruma | Microsoft Intune"
-description: 
+title: "Windows için Multi Factor Authentication | Microsoft Intune"
+description: "Intune, şirket kaynaklarınızı güvenli hale getirmenize yardımcı olmak için, Multi Factor Authentication’ı (MFA) tümleştirir."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
-ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: c1f9c60a1c79d23bab62617ed237ad982e82c39d
 
 
 ---
 
-# Protect Windows devices with multi-factor authentication
-Microsoft Intune, şirket kaynaklarınızı güvenli hale getirmenize yardımcı olmak için, Multi Factor Authentication’ı (MFA) tümleştirir. MFA, metin kimlik doğrulamasının yanı sıra kullanıcı adları ve parolalar gibi kimlik doğrulama faktörleri gerektirir. Intune, Windows 8.1 veya üzerinde, Windows Phone 8.1 veya Windows 10 Masaüstü ve Mobil cihazlarının kaydı sırasında MFA kullanımını destekler. 
+# Windows cihazlarını Multi-Factor Authentication ile koruma
+Microsoft Intune, şirket kaynaklarınızı güvenli hale getirmenize yardımcı olmak için, Multi Factor Authentication’ı (MFA) tümleştirir. MFA, metin kimlik doğrulamasının yanı sıra kullanıcı adları ve parolalar gibi kimlik doğrulama faktörleri gerektirir. Intune, Windows 8.1 veya üzerinde, Windows Phone 8.1 veya Windows 10 Masaüstü ve Mobil cihazlarının kaydı sırasında MFA kullanımını destekler.
 
 ## ADFS MFA için şirket içi altyapı gereksinimleri
 Multi Factor Authentication'ı kurmak için şunlar gerekir:
@@ -55,7 +55,6 @@ ADFS'de MFA'yı etkinleştirme hakkında bilgi için bkz. [Hassas Uygulamalar i�
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Sertifika profillerini yapılandırma | Microsoft Intune"
-description: 
+description: "Intune sertifika profilinin nasıl oluşturulacağını öğrenin."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
-ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
+ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
 
 
 ---
@@ -54,7 +54,18 @@ Bir SCEP veya .PFX sertifika profili oluşturabilmeniz için önce bir **Güveni
 
     Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Android, iOS, Mac OS X, Windows 8.1 veya Windows Phone 8.1'e yönelik güvenilen sertifika profili ayarlarını yapılandırmak için gerekli bilgileri sağlayın. **Sertifika dosyası** ayarında, sertifika veren CA’nızdan dışarı aktardığınız Güvenilen Kök CA sertifikasını (**.cer**) içeri aktarın. **Hedef depo** ayarı yalnızca Windows 8.1 ve üstünü çalıştıran cihazlara, cihazın birden çok hedef deposu olması durumunda uygulanır.
+3.  Android, iOS, Mac OS X, Windows 8.1 veya Windows Phone 8.1'e yönelik güvenilen sertifika profili ayarlarını yapılandırmak için gerekli bilgileri sağlayın. 
+
+    - **Sertifika dosyası** ayarında, sertifika veren CA’nızdan dışarı aktardığınız Güvenilen Kök CA sertifikasını (**.cer**) içeri aktarın. **Hedef depo** ayarı yalnızca Windows 8.1 ve üstünü çalıştıran cihazlara, cihazın birden çok hedef deposu olması durumunda uygulanır.
+
+    
+    - **Konu adı biçimi** altında, **Özel**’i seçerek özel bir konu adı biçimi sağlayın.  
+
+        Özel biçim için şu an desteklenen iki değişken **Ortak Ad (CN)** ve **E-posta (E)**’dır. Bu değişkenlerin ve statik dizelerin bir bileşimini kullanarak aşağıdaki örnekte görüldüğü gibi özel bir konu adı biçimi oluşturabilirsiniz:  
+
+        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+        Örnekte yönetici, CN ve E değişkenlerinin yanı sıra Kuruluş Birimi, Kuruluş, Konum, Durum ve Ülke dizeleri kullanan bir konu adı biçimi oluşturmuştur. Desteklenen dizelerin listesi [CertStrToName işlevi](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx). konusunda verilmiştir.  
 
 
 4.  İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.
@@ -83,6 +94,15 @@ Güvenilen CA sertifika profilini oluşturduktan sonra, kullanmak istediğiniz h
     Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  SCEP sertifika profili ayarlarını yapılandırmak için, profil yapılandırma sayfasındaki yönergeleri izleyin.
+    > [!NOTE]
+    > 
+    > **Konu adı biçimi** altında **Özel**’i seçerek özel bir konu adı biçimi sağlayın.
+    > 
+    >  Özel biçim için şu an desteklenen iki değişken Ortak Ad (CN) ve E-posta (E)’dır. Bu değişkenlerin ve statik dizelerin bir bileşimini kullanarak aşağıdaki örnekte görüldüğü gibi özel bir konu adı biçimi oluşturabilirsiniz:
+    
+    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    
+    >    Örnekte yönetici, *CN* ve *E* değişkenlerinin yanı sıra Kuruluş Birimi, Kuruluş, Konum, Durum ve Ülke dizeleri kullanan bir konu adı biçimi oluşturmuştur. Desteklenen dizelerin listesi [CertStrToName işlevi](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) konusunda verilmiştir.
 
 4.  İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.
 
@@ -145,6 +165,6 @@ Artık e-posta, Wi-Fi ve VPN profillerinin güvenliğini sağlamaya yardımcı o
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

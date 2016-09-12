@@ -1,10 +1,10 @@
 ---
-title: "30 günlük Microsoft Intune değerlendirmenize kullanıcılar ekleyin | Microsoft Intune"
-description: 
+title: "30 günlük Intune değerlendirmenize kullanıcıları ekleme | Microsoft Intune"
+description: "Intune’un ücretsiz, 30 günlük değerlendirmesine kaydolduğunuzda, kullanıcılar tek tek veya toplu olarak nasıl eklenir"
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cb729533107d511fa0cc863ec6ab842e7624982
-ms.openlocfilehash: 15e641f4f5f60c4a3eb3a7b09cab8cb9ef788cba
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 4276d0fed0fc30490a640a067d78096ff0cf78ae
 
 
 ---
@@ -79,6 +79,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 2. adımını
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -1,19 +1,20 @@
 ---
 title: Destek alma | Microsoft Intune
-description: 
+description: "Hem ücretli hem de deneme abonelikleri için çevrimiçi ve telefonla destek mevcuttur."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
-ms.reviewer: jeffgilb
+ms.reviewer: cacamp
 ms.suite: ems
-ms.sourcegitcommit: 632115d1010217f927e20a7e9532311d48f2b106
-ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
+translationtype: Human Translation
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
 
 
 ---
@@ -26,34 +27,33 @@ Bu konu başlığı altında, hizmet isteğini nasıl açacağınız ve birçok 
 Intune’da kendi kendine yardım için, [Microsoft Intune için genel sorun giderme ipuçları](general-troubleshooting-tips-for-microsoft-intune.md) konusuna veya belirli sorunlara yönelik olarak sağlanan ve bu konunun **Ayrıca bkz.** bölümünde listelenen sorun giderme konularına bakın.
 ## Çevrimiçi hizmet isteği oluşturma
 
-1.  Intune’da oturum açın ve ardından [Office 365 yönetim merkezini](https://portal.office.com/Support/SupportEntry.aspx) ziyaret edin.
+1.  Intune kimlik bilgilerinizle [Office 365 yönetim merkezi](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage)’nde oturum açın.
 
-2.  **Hizmet isteği oluştur** başlığı altından oluşturacağınız bilet için bir sorun kategorisi seçin:
+2.  **Hizmet isteği oluştur** alanında, oluşturacağınız bilet için bir sorun kategorisi seçin:
 
-    -   Faturalama ve lisans sorunları için **Faturalama ve ürün bilgileri**’ni seçin.
+    -   Faturalama, lisans ve hesap sorunları için **Faturalama ve ürün bilgileri**’ni seçin.
 
-    -   Diğer tüm Intune sorunları için **Mobil cihaz yönetimi**’ni seçin. Bu seçenek Office 365 MDM’yi ve Intune ile System Center Configuration Manager’ı da kapsar.
+    -   Diğer tüm Intune sorunları için **Mobil cihaz yönetimi**’ni seçin.
 
     > [!NOTE]
-    > [!NOTE] Kategorilerin tümünü görmek için listenin en sonunda **diğer** öğesine tıklamanız gerekebilir.
+    > Kategorilerin tümünü görmek için listenin en sonunda **diğer** öğesini seçmeniz gerekebilir.
 
 3.  **Sorunu tanımla** sayfasında yardıma ihtiyaç duyduğunuz **Özellik** ve **Belirti**’yi seçin. **Sorun özeti** ve **Sorun ayrıntıları** sağlamanız istenir.
 
-4.  **Önerileri gözden geçir** sayfasında, sorunu kendi başınıza çözmenize yardımcı olabilecek içeriğin bağlantılarını bulabilirsiniz.  Sorunu çözemezseniz, sayfanın en altındaki **Evet, devam et** bağlantısına tıklayarak hizmet isteğinizi gönderebilirsiniz.
+4.  **Önerileri gözden geçir** sayfasında, sorunu kendi başınıza çözmenize yardımcı olabilecek içeriğin bağlantılarını bulabilirsiniz.  Sorunu çözemezseniz, sayfanın en altındaki **Evet, devam et** bağlantısını seçerek hizmet isteğinizi gönderebilirsiniz.
 
-5.  **Ayrıntıları ekle** sayfasında istenen bilgileri sağlayın. **Dosya ekle**’ye tıklayarak ekran görüntüleri veya başka belgeler ekleyebilirsiniz.
+5.  **Ayrıntıları ekle** sayfasında istenen bilgileri sağlayın. **Dosya ekle**’yi seçerek ekran görüntüleri veya başka belgeler ekleyebilirsiniz.
 
-6.  **Onayla ve gönder** sayfasında kişi bilgilerini sağlayın, isteğinizi gözden geçirin ve **İstek gönder**’e tıklayın. İstek gönderildikten sonra, hizmet istekleri listenize gelirsiniz.
+6.  **Onayla ve gönder** sayfasında kişi bilgilerini sağlayın, isteğinizi gözden geçirin ve **İstek gönder**’i seçin. İstek gönderildikten sonra, hizmet istekleri listenize gelirsiniz.
 
 ## Telefonla destek
 Ülke ve bölgeye göre destek telefon numaralarını, destek saatlerini ve her bölgede desteklenen dilleri gösteren liste için bkz. [Microsoft Intune için Yardımlı Telefon Desteği ile İletişim Kurun](contact-assisted-phone-support-for-microsoft-intune.md).
 
 ## Hizmet isteklerinizi izleyin
-İsteklerinizi izlemek için [Office 365 yönetim merkezine](https://portal.office.com/admin/default.aspx) gidin. **Hizmet isteği oluştur** listesinin altındaki **Tüm destek biletlerini göster**’e tıklayın. Varsayılan olarak, açık durumdaki tüm hizmet isteklerinizi görebilirsiniz. Hangi hizmet isteklerinin gösterileceğini değiştirmek, örneğin kapalı istekleri görmek için, üst gezintideki filtre simgesine tıklayın ve tercih ettiğiniz görünümü seçin.
+İsteklerinizi izlemek için [Office 365 yönetim merkezine](https://portal.office.com/admin/default.aspx) gidin. **Hizmet isteği oluştur** listesinin altındaki **Tüm destek biletlerini göster**’i seçin. Varsayılan olarak, açık durumdaki tüm hizmet isteklerinizi görebilirsiniz. Hangi hizmet isteklerinin gösterileceğini değiştirmek, örneğin kapalı istekleri görmek için, üst gezintideki filtre simgesini seçin ve sonra da tercih ettiğiniz görünümü seçin.
 
 > [!NOTE]
-> [!NOTE]
-**Microsoft System Center Configuration Manager** veya **Microsoft System Center Endpoint Protection** kullanıyorsanız: Configuration Manager veya Endpoint Protection ile ilgili teknik destek için iş ortağınızla iletişim kurun veya [Microsoft System Center Configuration Manager ve System Center Endpoint Protection Çözüm Merkezi](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)'ni ziyaret ederek çevrimiçi ya da telefon üzerinden destek isteği açma seçeneğini içeren zengin yardım malzemelerini bulun.
+> **Microsoft System Center Configuration Manager** veya **Microsoft System Center Endpoint Protection kullanıyorsanız:** Configuration Manager veya Endpoint Protection ile ilgili teknik destek için iş ortağınızla iletişim kurun veya [Microsoft System Center Configuration Manager ve System Center Endpoint Protection Çözüm Merkezi](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)'ni ziyaret ederek çevrimiçi ya da telefon üzerinden destek isteği açma seçeneğini içeren zengin yardım malzemelerini bulun.
 >
 > System Center Configuration Manager veya System Center Endpoint Protection için teknik destek, ödeme gerektirir ya da var olan lisansınızdan veya Premier Destek sözleşmelerinden düşülür.
 
@@ -140,6 +140,6 @@ Bizim rolümüz:
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: PSK Kullanarak Wi-Fi | Microsoft Intune
-description: 
+description: "Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için Özel Yapılandırma’yı kullanın."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
-ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
+ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 
 
 
@@ -40,12 +40,15 @@ Not:
 
    c.   **Veri Türü**: "String(XML)" olarak ayarlayın
 
-   d.   **OMA-URI**: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI**: 
+        
+- **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+- **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
 Not: Başına nokta karakterini eklediğinizden emin olun.
 
 SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin,
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e.    Değer Alanı: buraya XML kodunuzu yapıştırırsınız. Bir örneğe bakalım. Her değer, ağ ayarlarınıza uyarlanmış olmalıdır. Bazı işaretçiler için kodun açıklamalar bölümüne bakın.
 
@@ -197,6 +200,6 @@ Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağ
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

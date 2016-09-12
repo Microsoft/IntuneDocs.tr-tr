@@ -1,10 +1,10 @@
 ---
-title: "Microsoft Intune ile Android yönetimini ayarlama | Microsoft Intune"
-description: 
+title: "Android yönetimini kurma | Microsoft Intune"
+description: "Microsoft Intune ile, Android ve KNOX cihazları için mobil cihaz yönetimini (MDM) etkinleştirin."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,15 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1dc713099c982d6e32c87b814dd3f55b1656eda
-ms.openlocfilehash: 5f65887345c1a650c6d80863e42f447035c789f7
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: 947a7ba62d817e6b02d8a6bb0a0d0bddf53e7d4e
 
 
 ---
 
 # Android cihaz yönetimini ayarlama
+Windows cihazınızı ayarlamak için [buradan](../enduser/using-your-android-device-with-intune.md) yardım alabilirsiniz.
+
 Microsoft Intune ile, platform için başka çalışma yapmaya gerek kalmadan Android cihazlar için KCG’yi ("kendi cihazını getir") etkinleştirebilirsiniz.
 
 Daha fazla bilgi edinmek için aşağıdaki cihaz platformu seçenekleri arasından seçim yapın:
@@ -41,11 +43,15 @@ Android mobil cihazlar kullanıcıların Google Play’den erişilebilen Şirket
 3.  **Kullanıcılara şirket portalı ile şirket kaynaklarına nasıl erişeceklerini anlatın**<br>
     Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir. [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
+4.  Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir.
+  - [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Windows cihazlar için son kullanıcı kılavuzu](../enduser/using-your-android-device-with-intune.md)
+
 ### Ayrıca bkz.
 [Microsoft Intune’da cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

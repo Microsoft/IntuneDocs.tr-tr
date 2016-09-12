@@ -1,28 +1,26 @@
 ---
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: Microsoft Intune Belgeleri
+title: Intune Belgeleri - MDM belgeleri | Microsoft Belgeleri
 description: "Microsoft Intune için teknik belgeler - Mobil Cihaz ve Uygulama Yönetimi"
-keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
+keywords: "intune belgeleri, MDM belgeleri, Mobil Cihaz Yönetimi Belgeleri, Mobil Cihaz ve Uygulama Yönetimi Belgeleri"
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage
-ms.prod: 
 ms.service: microsoft-intune
-ms.technology: 
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: e8f9d974947835d5ec5a356bea6b4261960277ef
-ms.openlocfilehash: b6e3e5189a1567dd5b13017d275ff4bd548e5fa1
+ms.sourcegitcommit: c200c191168a8c5ae9382d62b3a25e9cfd1db3ac
+ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
 
 
 ---
-# Microsoft Intune Belgeleri
+# Intune Belgeleri
 <article id="main">
     <section id="hero-content">
-      <h1>Microsoft Intune Belgeleri</h1>
+      <h1>Intune Belgeleri</h1>
       <h2>Bir mobil cihaz ve uygulama yönetim hizmeti olan Microsoft Intune’u nasıl dağıtıp yöneteceğinizi öğrenin.</h2>
       <h3>Intune’u Configuration Manager ile yönetme? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Configuration Manager Belgelerini görüntüleme &rarr;</a></h3>
     </section>
@@ -284,6 +282,6 @@ ms.openlocfilehash: b6e3e5189a1567dd5b13017d275ff4bd548e5fa1
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

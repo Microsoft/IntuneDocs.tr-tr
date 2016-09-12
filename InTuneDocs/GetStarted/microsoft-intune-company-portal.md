@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Intune Şirket Portalı | Microsoft Intune"
-description: 
+description: "Intune Şirket Portalı’nı ayarlama"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65769fade08dea34b3e788628e578d58f90389f3
-ms.openlocfilehash: 815e36569e17bde750b49c7d7b10744a9b614635
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 743be083ca9e8bed989982092f103b18f8f73582
 
 
 ---
@@ -28,7 +28,7 @@ Intune Şirket Portalı, kullanıcıların şirket verilerine ve uygulamalarına
 -   **Şirket portalı uygulaması**: [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile yönettiğiniz cihazlarda kullanılabilen bir uygulama. [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) ve [Windows](/Intune/EndUser/using-your-windows-device-with-intune) için Şirket Portalı uygulamaları hakkında daha fazla bilgi edinin.
 
 
-- **Şirket Portalı web sitesi**: [Desteklenen bir tarayıcıdan](supported-web-browsers.md) erişim sağlayan bir web sitesi. URL, [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx)’tir. [Intune Şirket Portalı web sitesini kullanma](/Intune/EndUser/using-the-intune-company-portal-website) konusu, bu web sitesi hakkında daha fazla bilgi sağlar.
+- **Şirket Portalı web sitesi**: [Desteklenen bir tarayıcıdan](supported-web-browsers.md) erişilen, son kullanıcıların platforma özgü Şirket Portalı uygulamalarından yapabilecekleri şeylerin çoğunu yapmalarını sağlayan bir web sitesi. URL’si: [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). [Intune Şirket Portalı web sitesini kullanma](/Intune/EndUser/using-the-intune-company-portal-website) konusu, bu web sitesi hakkında daha fazla bilgi sağlar.
 
 Kullanıcıların Şirket Portalı’nda yerine getirebilecekleri görevlerden bazıları:
 
@@ -53,6 +53,6 @@ Kullanıcıların Şirket Portalı’na erişebilmesi için, önce kullanıcı h
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

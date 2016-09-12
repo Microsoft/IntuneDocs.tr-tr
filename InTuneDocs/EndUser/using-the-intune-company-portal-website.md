@@ -1,9 +1,9 @@
 ---
 title: "Intune Şirket Portalı web sitesini kullanma | Microsoft Intune"
-description: 
+description: "Şirket Portalı web sitesini açıklar ve web sitesinde gerçekleştirebileceğiniz görevlerin adımlarını içeren bağlantılar sağlar."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 79e8d7da83997dc9c89b95097ca50493af1f9f6b
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: bfce55b6d23554d1c3df2b62d6bf5fdd4607974b
 
 
 ---
@@ -24,19 +24,19 @@ ms.openlocfilehash: 79e8d7da83997dc9c89b95097ca50493af1f9f6b
 
 Şirket Portalı web sitesini kullanarak şunları yapabilirsiniz:
 
--   [Cihaz geçiş kodunuzu sıfırlama](reset-your-passcode-cpwebsite.md)
-
 -   [Cihazınızı yeniden adlandırma](rename-your-device-cpwebsite.md)
 
 -   [Cihazınızı kaldırma](remove-your-device-cpwebsite.md)
 
 -   [Cihazınızı sıfırlama](reset-your-device-cpwebsite.md)
 
+-   [Cihaz geçiş kodunuzu sıfırlama](reset-your-passcode-cpwebsite.md)
+
 -   [Cihazı uzaktan kilitleme](remote-lock-your-device-cpwebsite.md)
 
 -   [Yavaş uygulama yüklemelerini hızlandırmak için cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)
 
--   BT yöneticiniz kişi bilgilerini yapılandırdıysa, BT yöneticinizin kişi bilgilerini bulun. 
+-   BT yöneticiniz kişi bilgilerini yapılandırdıysa, BT yöneticinizin kişi bilgilerini bulun.
 
 -   Cihazınız hakkındaki ayrıntıları, cihazın şirket veya okulunuzun ilkeleriyle uyumlu olup olmadığını görme
 
@@ -50,6 +50,6 @@ ms.openlocfilehash: 79e8d7da83997dc9c89b95097ca50493af1f9f6b
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

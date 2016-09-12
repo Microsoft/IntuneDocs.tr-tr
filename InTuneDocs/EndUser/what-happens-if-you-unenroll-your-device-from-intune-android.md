@@ -1,30 +1,31 @@
 ---
-title: "Cihazınızın Intune kaydını sildiğinizde ne olur? | Microsoft Intune"
+title: "Android cihazınızın Intune kaydını sildiğinizde ne olur? | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: f0465d4302bda3df82c994043df52c27761a8345
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 140ccb4626f04b2397c63186a38310e74720f1b2
 
 
 ---
 
 
-# Cihazınızın Intune kaydını sildiğinizde ne olur?
+# Android cihazınızın Intune kaydını sildiğinizde ne olur?
 
 Android cihazınızın Intune kaydını sildiğinizde:
 
--   Cihazınızın Intune kaydını silersiniz ve bu da BT yöneticinizin artık cihazınızı yönetmeyeceği anlamına gelir. 
+-   Cihazınızın Intune kaydını silersiniz ve bu da BT yöneticinizin artık cihazınızı yönetmeyeceği anlamına gelir.
 
 -   Şirket verilerine ve kaynaklarına erişimi kaybedersiniz.
 
@@ -34,16 +35,18 @@ Android cihazınızın Intune kaydını sildiğinizde:
 
 -   Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.
 
-Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve cihazınızın kaydını silerseniz cihaz Şirket Portalı'nda görünmez. 
+Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve cihazınızın kaydını silerseniz cihaz Şirket Portalı'nda görünmez.
 
 Kaydın nasıl silineceği hakkında yönergeler için bkz. [Şirket Portalı uygulamasını kullanarak cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md).
 
-Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
+
 
 ### Ayrıca bkz.
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO1-->
 
 

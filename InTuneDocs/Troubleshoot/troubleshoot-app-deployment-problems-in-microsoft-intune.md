@@ -1,10 +1,10 @@
 ---
 title: "Uygulama dağıtımı sorunlarını giderme | Microsoft Intune"
-description: 
+description: "Bu konu, Microsoft Intune’la uygulama dağıtımı sorunlarını çözmenize yardımcı olur."
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+author: robstack
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
-ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+translationtype: Human Translation
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
 
 
 ---
@@ -80,7 +81,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek
 
 ### Hata: Yayımcı yok
 Üçüncü taraf lisans sözleşmesini eklemek için **Başka Yazılım Anlaşması Ekle**’yi kullanıyorsunuz. Yayıncıyı **Diğer yazılım lisanslama anlaşmaları** sayfasından eklemeyi deniyorsunuz. Sayfa, mevcut yayımcıların alfabetik olarak sıralanmış listesini sağlar.
-Eksik yayımcıyı giriyorsunuz ancak **Yayımcı yok** hatasını alıyorsunuz. 
+Eksik yayımcıyı giriyorsunuz ancak **Yayımcı yok** hatasını alıyorsunuz.
 
 Bu, bilinçli olarak böyle tasarlanmıştır. Intune, yalnızca popüler yazılım markaları için lisans izleme sağlar. Intune’da, yazılımın lisanslama iş yükünde bir seçenek olarak sağlanabilmesi için en az 4 ayrı hesap tarafından raporlanması gerekir.
 
@@ -104,6 +105,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO1-->
 
 

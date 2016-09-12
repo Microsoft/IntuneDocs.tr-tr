@@ -1,9 +1,9 @@
 ---
 title: "Ağ altyapısı gereksinimleri | Microsoft Intune"
-description: 
+description: "Intune güvenlik duvarı, bağlantı noktası, etki alanı ve proxy sunucusu gereksinimleri"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
-ms.openlocfilehash: b551aca6994780591dabe042420d5f23d98b218b
+ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
+ms.openlocfilehash: 5f92ecf7d2590150c5341d81a1a976c71518e2fd
 
 
 ---
@@ -135,6 +135,7 @@ Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hiz
 |status.manage.microsoft.com|80 ve 443|157.55.99.170
 |swda01.manage.microsoft.com<br>swda02.manage.microsoft.com<br>swdb01.manage.microsoft.com<br>swdb02.manage.microsoft.com<br>swdc01.manage.microsoft.com<br>swdc02.manage.microsoft.com|80 ve 443|93.184.215.200
 |*.microsoftonline-p.com|80 ve 443||
+|has.spserv.microsoft.com<br>Cihaz sistem durumu kanıtlama hizmeti için gerekli|443||
 |*.microsoftonline-p.net|80 ve 443||
 |*.portal.office.com|80 ve 443||
 |*.spynet2.microsoft.com|443||
@@ -168,6 +169,6 @@ Ayrıca Intune istemcileri tarafından kullanılan [ağ bant genişliğini azalt
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

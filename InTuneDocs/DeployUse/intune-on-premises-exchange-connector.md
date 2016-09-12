@@ -1,19 +1,20 @@
 ---
-title: "Şirket İçi Exchange için Microsoft Intune Exchange bağlayıcısını yükleme | Microsoft Intune"
-description: 
+title: "Şirket içi EAS için Exchange bağlayıcısı | Microsoft Intune"
+description: "Bağlayıcı aracını kullanarak, Exchange ActiveSync MDM için Intune yönetim konsoluyla şirket içi Exchange Server arasında iletişimi etkinleştirin."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
 # Intune Şirket İçi Exchange Bağlayıcısı’nı yükleme
 
 
-Microsoft Intune’la mobil cihazların posta kutularını barındıran Exchange Server'ın iletişim kurmasını sağlayan bir bağlantı ayarlamak için, Intune yönetici konsolundan Şirket İçi Bağlayıcı aracını indirip yapılandırmanız gerekir.
+Microsoft Intune’la mobil cihazların posta kutularını barındıran Exchange Server'ın iletişim kurmasını sağlayan bir bağlantı ayarlamak için, Intune yönetici konsolundan Şirket İçi Bağlayıcı aracını indirip yapılandırmanız gerekir. Intune, abonelik başına herhangi bir türde tek bir Exchange bağlayıcısı bağlantısını destekler.
 
 ## Şirket İçi Bağlayıcı Gereksinimleri
 Aşağıdaki tabloda Şirket İçi Exchange Bağlayıcısı’nı yüklediğiniz bilgisayara ilişkin gereksinimler listelenmiştir.
@@ -29,14 +30,13 @@ Aşağıdaki tabloda Şirket İçi Exchange Bağlayıcısı’nı yüklediğiniz
 |Gereksinim|Daha fazla bilgi|
 |---------------|--------------------|
 |İşletim sistemleri|Intune; Windows Server 2008 SP2 64 bit, Windows Server 2008 R2, Windows Server 2012 veya Windows Server 2012 R2’nin herhangi bir sürümünü çalıştıran bilgisayarlarda Şirket İçi Exchange Bağlayıcısı’nı destekler.<br /><br />Bağlayıcı hiçbir Sunucu Çekirdeği yüklemesinde desteklenmez.|
-|Microsoft Exchange sürümü|Şirket İçi Bağlayıcı, Microsoft Exchange 2010 SP1 veya üstünü gerektirir.|
+|Microsoft Exchange sürümü|Her iki şirket içi Bağlayıcı için de Microsoft Exchange 2010 SP1 veya üstü ya da eski Exchange Online Dedicated gerekir. Exchange Online Dedicated ortamınızın **yeni** yapılandırmada mı yoksa **eski** yapılandırmada mı olduğunu belirlemek için hesap yöneticinize başvurun.|
 |Mobil cihaz yönetimi yetkilisi| [Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
 |Donanım|Bağlayıcıyı yüklediğiniz bilgisayar 2 GB ram ve 10 GB boş disk alanı en düşük donanımı ile birlikte 1,6 GHz CPU gerektirir.|
 |Active Directory Eşitlemesi|Intune’u Exchange Server'a bağlamak üzere herhangi bir bağlayıcıyı kullanabilmeniz için, yerel kullanıcılarınızın ve güvenlik gruplarınızın Azure Active Directory örneğinizle eşitlenebilmesi amacıyla [Active Directory eşitlemesini](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ayarlamanız gerekir.|
 |Ek yazılım|Bağlayıcıyı barındıran bilgisayara Microsoft .NET Framework 4 ve Windows PowerShell 2.0 tam yüklemesi yapılmalıdır.|
 |Ağ|Bağlayıcıyı yüklediğiniz bilgisayar, Exchange Server'ı barındıran etki alanı ile güven ilişkisi olan bir etki alanında olmalıdır.<br /><br />Bilgisayar, 80 ve 443 numaralı Bağlantı Noktaları üzerinden güvenlik duvarları ve proxy sunucular aracılığıyla Intune hizmetine erişmesine olanak sağlayacak yapılandırmalar gerektirir. Intune tarafından kullanılan etki alanları manage.microsoft.com, &#42;manage.microsoft.com ve &#42;.manage.microsoft.com’dur.|
 |Barındırılan Exchange yapılandırılmış ve çalışıyor|Daha fazla bilgi için bkz. [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx). |
-|Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama|[Mobil cihaz yönetimi yetkiliniz olarak Intune’u ayarlama](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Exchange cmdlet gereksinimleri
 
@@ -58,16 +58,14 @@ Intune Exchange Bağlayıcısı tarafından kullanılacak bir Active Directory k
 
 ## Şirket İçi Exchange Bağlayıcısı yazılım yükleme paketini indirme
 
-1. Şirket İçi Exchange Bağlayıcısı için desteklenen bir işletim sisteminde, Exchange kiracısında yönetici olan ve Exchange Server’ı kullanma lisansı bulunan bir kullanıcı hesabıyla [Microsoft Intune yönetim konsolunu](http://manage.microsoft.com) (http://manage.microsoft.com) açın.
+1. Şirket İçi Exchange Bağlayıcısı için desteklenen bir Windows Server işletim sisteminde, Exchange kiracısında yönetici olan ve Exchange Server’ı kullanma lisansı bulunan bir kullanıcı hesabıyla [Microsoft Intune yönetim konsolunu](http://manage.microsoft.com) (http://manage.microsoft.com) açın.
 ![Exchange Bağlantısını Ayarla sayfasını açın](../media/ExchangeConnector.gif)
 
-2.  Çalışma alanı kısayolları bölmesinde **YÖNETİCİ**'yi seçin.
+2.  Çalışma alanı kısayol bölmesinde **Yönetici**’yi seçin, **Mobil Cihaz Yönetimi** > **Microsoft Exchange**’i seçin ve sonra da **Exchange Bağlantısını Ayarla**’yı seçin.
 
-3.  Gezinme bölmesindeki **Mobil Cihaz Yönetimi**’nin altında **Microsoft Exchange**'i genişletin ve ardından **Exchange Bağlantısı Ayarla**'yı seçin.
+3.  **Exchange Bağlantısı Ayarla** sayfasında **Şirket İçi Bağlayıcı'yı İndir**'i seçin.
 
-4.  **Exchange Bağlantısı Ayarla** sayfasında **Şirket İçi Bağlayıcı'yı İndir**'i seçin.
-
-5.  Şirket İçi Exchange Bağlayıcısı, açılabilen veya kaydedilebilen sıkıştırılmış (.zip) bir klasörde yer alır. **Dosya İndirme** iletişim kutusunda **Kaydet**'i seçerek sıkıştırılmış klasörü güvenli bir konuma depolayın.
+4.  Şirket İçi Exchange Bağlayıcısı, açılabilen veya kaydedilebilen sıkıştırılmış (.zip) bir klasörde yer alır. **Dosya İndirme** iletişim kutusunda **Kaydet**'i seçerek sıkıştırılmış klasörü güvenli bir konuma depolayın.
 
 > [!IMPORTANT]
 > Şirket İçi Exchange Bağlayıcısı klasöründeki dosyaları yeniden adlandırmayın veya taşımayın. Klasörün içeriğini taşımak veya yeniden adlandırmak, yüklemenin çalışmamasına neden olur.
@@ -133,6 +131,6 @@ Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirs
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO5-->
 
 

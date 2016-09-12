@@ -1,10 +1,10 @@
 ---
 title: "Cihaz kaydıyla ilgili sorunları giderme | Microsoft Intune"
-description: 
+description: "Cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler."
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+author: nathbarn
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
-ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
 
 
 ---
@@ -144,7 +144,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 **Çözüm:** [Office 365 yönetim merkezinde](https://portal.office.com/), şirket adından özel karakterleri kaldırın ve şirket bilgilerini kaydedin.
 
 ### Birden çok doğrulanmış etki alanınız olduğunda oturum açılamaz veya cihazlar kaydedilemez
-**Sorun:** AD FS’nize ikinci bir doğrulanmış etki alanı eklediğinizde, ikinci etki alanının kullanıcı asıl adı (UPN) sonekini taşıyan kullanıcılar portallarda oturum açamayabilir veya cihaz kaydedemeyebilir. 
+**Sorun:** AD FS’nize ikinci bir doğrulanmış etki alanı eklediğinizde, ikinci etki alanının kullanıcı asıl adı (UPN) sonekini taşıyan kullanıcılar portallarda oturum açamayabilir veya cihaz kaydedemeyebilir.
 
 
 **Çözüm:** AD FS 2.0 aracılığıyla çoklu oturum açmayı (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, @contoso.com veya @fabrikam.com) Microsoft Office 365 müşterilerinin, her sonek için ayrı AD FS 2.0 Federasyon Hizmeti örneği dağıtmaları gerekir.  Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, **SupportMultipleDomain** anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu bloga](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
@@ -160,8 +160,29 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 2.  Cihazın zaten başka bir MDM sağlayıcısıyla kaydedilmediğini ve cihaza önceden bir yönetim profili yüklenmediğini doğrulayın.
 
-
 4.  Android için Chrome’un varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
+
+### Android sertifika sorunları
+
+**Sorun**: Kullanıcı cihazda şu iletiyi alıyor: *Cihazınızda gerekli bir sertifika eksik olduğundan oturum açamazsınız.*
+
+**Çözüm**:
+
+- Kullanıcı [bu yönergeleri](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) izleyerek eksik sertifikayı alabilir.
+- Kullanıcı sertifikayı alamazsa, ADFS sunucunuzda ara sertifikalarınız eksik olabilir. Ara sertifikalar, Android’in sunucuya güvenmesi için gereklidir.
+
+Sertifikaları ADFS sunucusundaki veya proxy sunucularındaki ara depoya aşağıda gösterildiği gibi aktarabilirsiniz:
+
+1.  ADFS sunucusunda **Microsoft Yönetim Konsolu**’nu başlatın ve **Bilgisayar hesabı** için Sertifikalar ek bileşenini ekleyin.
+5.  ADFS hizmetinizin kullandığı sertifikayı bulun ve üst sertifikasını görüntüleyin.
+6.  Üst sertifikayı kopyalayın ve bunu **Computer\Intermediate Certification Authorities\Certificates** altına yapıştırın.
+7.  ADFS, ADFS Şifre Çözme ve ADFS İmzalama sertifikalarınızı kopyalayın ve bunları ADFS hizmetinin Kişisel Deposuna yapıştırın.
+8.  ADFS sunucularını yeniden başlatın.
+
+Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum açabilmelidir.
+
+
+
 ## iOS sorunları
 ### Profil yüklemesi başarısız oldu
 **Sorun:** Bir kullanıcı, bir iOS cihazında **Profil yüklemesi başarısız oldu** hatasını alıyor.
@@ -179,34 +200,34 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 ### Intune’la birlikte System Center Configuration Manager kullanıldığında kayıtlı iOS cihazı konsolda gösterilmiyor
 **Sorun:** Kullanıcı iOS cihazını kaydediyor ancak cihaz Configuration Manager yönetici konsolunda gösterilmiyor. Cihaz kayıtlı olduğunu göstermiyor. Olası nedenler:
 
-- Intune Bağlayıcınızı bir hesaba kaydettikten sonra bunu başka bir hesaba kaydetmiş olabilirsiniz. 
+- Intune Bağlayıcınızı bir hesaba kaydettikten sonra bunu başka bir hesaba kaydetmiş olabilirsiniz.
 - MDM sertifikasını bir hesaptan indirip başka bir hesapla kullanmış olabilirsiniz.
 
 
 **Çözüm:** Aşağıdaki adımları uygulayın:
 
-1. Windows Intune Bağlayıcısı’nın içinden iOS’u devre dışı bırakın. 
+1. Windows Intune Bağlayıcısı’nın içinden iOS’u devre dışı bırakın.
     1. Intune aboneliğine sağ tıklayın ve **Özellikler**’i seçin.
     1. "iOS" sekmesinde "iOS kaydını etkinleştir" seçeneğinin işaretini kaldırın.
 
 
 
 1. SQL’de, CAS DB’de aşağıdaki adımları çalıştırın
-  
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. delete from MDMPolicy where PolicyType = 7 
+
+    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. delete from MDMPolicy where PolicyType = 7
     1. delete from MDMPolicyAssignment where PolicyType = 7
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. delete from MDMPolicy where PolicyType = 11 
-    1. delete from MDMPolicyAssignment where PolicyType = 11 
+    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. delete from MDMPolicy where PolicyType = 11
+    1. delete from MDMPolicyAssignment where PolicyType = 11
     1. DELETE Drs_Signals
-1. SMS Executive Hizmeti’ni yeniden başlatın veya CM Sunucusu’nu yeniden başlatın 
+1. SMS Executive Hizmeti’ni yeniden başlatın veya CM Sunucusu’nu yeniden başlatın
 
 
 
 1. Yeni bir APN sertifikası alın ve bunu karşıya yükleyin: Configuration Manager’ın sol bölmesinde Intune aboneliğine sağ tıklayın. **APNs sertifikası isteği oluştur**’u seçin ve yönergeleri izleyin.
 ## System Center Configuration Manager’ı Intune kullanırken oluşan sorunlar
-### Mobil cihazlar kayboluyor 
+### Mobil cihazlar kayboluyor
 **Sorun:** Mobil cihazı Configuration Manager’a başarıyla kaydettikten sonra, bu cihaz mobil cihaz koleksiyonundan kayboluyor; ancak hala Yönetim Profili var ve CSS Ağ Geçidi’nde listeleniyor.
 
 **Çözüm:** Etki alanına katılmayan cihazları kaldıran özel bir işleminiz varsa veya kullanıcı cihazı abonelikten devre dışı bırakırsa bu durum ortaya çıkabilir. Configuration Manager konsolunda cihazı hangi işlemin veya kullanıcı hesabının kaldırdığını denetlemek ve doğrulamak için, aşağıdaki adımları izleyin.
@@ -235,22 +256,22 @@ iOS kayıt hatalarının bir listesi, cihaz-kullanıcı belgelerimizdeki [Cihaz�
 
 ### Makine zaten kaydoldu - Hata hr 0x8007064c
 **Sorun:** Kayıt işlemi **Makine zaten kaydoldu** hatasıyla başarısız oluyor. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.
-  
+
 Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilgisayarın kopyalanmış görüntüsünü içermesi olabilir. Önceki hesabın hesap sertifikası hala bilgisayarda duruyordur.
 
 
 
-**Çözüm:** 
+**Çözüm:**
 
-1. **Başlat** menüsünde **Çalıştır** -> **MMC**. 
+1. **Başlat** menüsünde **Çalıştır** -> **MMC**.
 1. **Dosya** -> **Ek Bileşen Ekle/Kaldır**.
 1. **Sertifikalar**’a çift tıklayın, **Bilgisayar hesabı**’nı, **İleri**’yi ve **Yerel Bilgisayar**’ı seçin.
-1. **Sertifikalar (Yerel bilgisayar)** seçeneğine çift tıklayın, **Kişisel/ Sertifikalar**’ı seçin. 
+1. **Sertifikalar (Yerel bilgisayar)** seçeneğine çift tıklayın, **Kişisel/ Sertifikalar**’ı seçin.
 1. Sc_Online_Issuing tarafından verilen Intune sertifikasını arayın ve bulursanız silin
 1. Varsa, şu kayıt defteri anahtarını ve tüm alt anahtarlarını silin: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**.
-1. Yeniden kaydetmeyi deneyin. 
-1. Makine yine kaydedilmiyorsa, şu anahtarı arayın ve bulursanız silin: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Yeniden kaydetmeyi deneyin. 
+1. Yeniden kaydetmeyi deneyin.
+1. Makine yine kaydedilmiyorsa, şu anahtarı arayın ve bulursanız silin: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Yeniden kaydetmeyi deneyin.
 
     > [!IMPORTANT]
     > Bu bölüm, yöntem veya görev kayıt defterinde nasıl değişiklik yapacağınızı gösteren adımlar içerir. Bununla birlikte, kayıt defterinde yanlış değişiklikler yaparsanız ciddi sorunlar çıkabilir. Bu nedenle, bu adımları dikkatle izlediğinizden emin olun. Ek bir koruma için, değişiklikleri yapmadan önce kayıt defterini yedekleyin. Böylece bir sorun ortaya çıktığında kayıt defterini geri yükleyebilirsiniz.
@@ -285,6 +306,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Exchange Online’a ve yeni Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama| Microsoft Intune"
-description: 
+title: "Exchange Online’a e-posta erişimini kısıtlama | Microsoft Intune"
+description: "Exchange Online’da şirket e-postasını korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: 87663f2677a006e5db525f8897fea4bf05cb5912
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
 
 
 ---
@@ -260,6 +260,6 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

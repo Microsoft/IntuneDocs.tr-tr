@@ -1,10 +1,10 @@
 ---
 title: "SCEP için sertifika altyapısını yapılandırma |Microsoft Intune|"
-description: 
+description: "SCEP sertifika profillerini oluşturmaya veya dağıtmaya yönelik altyapı."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 05/16/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ca06fa26127935e08f35006730dd367fb8f6669
-ms.openlocfilehash: 942bdc4e1629a9d7e16d0994f27dab4424670a4f
+ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
+ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
 
 ---
 # SCEP için sertifika altyapısını yapılandırma
-Bu konu başlığı altında, sertifika profillerini oluşturmak ve dağıtmak için hangi altyapıya ihtiyacınız olduğu açıklanır.
+Bu konu başlığı altında, SCEP sertifika profillerini oluşturmak ve dağıtmak için hangi altyapıya ihtiyacınız olduğu açıklanır.
 
 ### Şirket içi altyapı
 
@@ -44,6 +44,8 @@ I
 İnternet’ten çevre ağına, İnternet’te tüm konaklardan/IP adreslerinden NDES sunucusuna bağlantı noktası 443’e izin verin.
 
 Çevre ağından güvenilen ağa, etki alanına katılmış NDES sunucusunda etki alanı erişimi için gereken tüm bağlantı noktalarına ve protokollere izin verin. NDES sunucusunun sertifika sunucularına, DNS sunucularına, Configuration Manager sunucularına ve etki alanı denetleyicilerine erişimi olmalıdır.
+
+NDES sunucusunun [Azure AD uygulama proxy’si](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Erişim Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx)’si veya üçüncü taraf bir proxy gibi bir proxy aracılığıyla yayımlanmasını öneririz.
 
 
 ### <a name="BKMK_CertsAndTemplates"></a>Sertifikalar ve Şablonlar
@@ -347,6 +349,6 @@ Artık, [Sertifika profillerini yapılandırma](Configure-Intune-certificate-pro
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

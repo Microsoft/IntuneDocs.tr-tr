@@ -1,27 +1,27 @@
 ---
-title: "Microsoft Intune ilke başvurusu | Microsoft Intune"
-description: 
+title: "Yapılandırma ilkesi başvurusu | Microsoft Intune"
+description: "Cihazlarınızı yönetirken hangi Microsoft Intune ilkesine ihtiyaç duyduğunuza karar vermek için bu konu başlığı altındaki bilgileri kullanın."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 50bfa96a334f2253550e1344179dc99b8ac68817
 
 
 ---
 
 # Microsoft Intune ilke başvurusu
 
-Cihazlarınızı yönetirken hangi Microsoft Intune ilkesine ihtiyaç duyduğunuza karar vermek için bu konu başlığı altındaki bilgileri kullanın.
+Cihazlarınızı yönetirken hangi Microsoft Intune yapılandırma ilkesine ihtiyaç duyduğunuza karar vermek için bu konu başlığı altındaki bilgileri kullanın.
 
 > [!TIP]
 > İlkeleri kullanma hakkında daha ayrıntılı bilgi için bkz. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
@@ -47,11 +47,14 @@ Cihazlarınızı yönetirken hangi Microsoft Intune ilkesine ihtiyaç duyduğunu
 |**Özel Yapılandırma (iOS 7.1 ve üzeri)**|Apple Configurator aracını kullanarak oluşturduğunuz yapılandırma profillerini iOS cihazlara dağıtın. Bu işlem, ihtiyacınız olan ayarın yapılandırma ilkesinde bulunmaması durumunda faydalı olur.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da iOS ilke ayarları](ios-policy-settings-in-microsoft-intune.md).|
 |**E-posta Profili (iOS 7.1 ve üzeri)**|Yönetilen cihazlarda Exchange ActiveSync e-posta ayarları oluşturun, dağıtın ve izleyin. Bu, kullanıcıların herhangi bir ayar yapmasına gerek kalmadan kişisel cihazlarından kurumsal e-postalara erişmelerini sağlar.<br /><br />Ayrıntılar için bkz. [Microsoft Intune ile e-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Genel Yapılandırma (iOS 7.1 ve üzeri)**|Mobil cihaz güvenliği ve işlev ayarlarını yapılandırın.<br />-   Uyumlu veya uyumsuz olan uygulamaları belirtin ve bunların ne zaman kullanıldığını bildirin.<br />Cihazı yalnızca belirli özellikleri çalışacak şekilde kilitleyen (örneğin, cihazın yalnızca bir uygulama çalıştırmasına izin vermek veya ses düğmelerini devre dışı bırakmak) bilgi noktası modunu yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da iOS ilke ayarları](ios-policy-settings-in-microsoft-intune.md).|
+|**Mobil Uygulama Yapılandırma İlkesi (iOS 7.1 ve üzeri)**|Kullanıcı bir iOS uygulaması çalıştırdığında gerekebilecek ayarları otomatik olarak sağlamak için mobil uygulama yapılandırma ilkelerini kullanın.<br /><br />Ayrıntılar için bkz. [iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+|**Mobil Sağlama Profili İlkesi (iOS 7.1 ve üstü)**|Apple iOS iş kolu mobil uygulamaları, eklenen ve sertifika kullanılarak kodla imzalanan bir sağlama profiliyle oluşturulur. Uygulama iOS cihazında çalıştırıldığında, iOS uygulamanın bütünlüğünü onaylar ve sağlama profiliyle tanımlanan ilkeleri zorunlu tutar.<br><br>Uygulamaları imzalamak için kullandığınız kurumsal imzalama sertifikasının süresi normalde 3 yıldır. Öte yandan, 1 yıl sonra sağlama profilinin süresi dolar. Sertifikası hala geçerli olduğu halde süresi dolmak üzere olan uygulamaların bulunduğu cihazlara, yeni sağlama profili ilkesini önceden dağıtmak için bu ilkeyi kullanın.<br><br>Ayrıntılar için bkz. [Uygulamalarınızın süresinin dolmasını engellemek için iOS mobil sağlama profili ilkelerini kullanma](ios-mobile-app-provisioning-profiles.md).|
+|**PKCS #12 (.PFX) Sertifika Profili (iOS 7.1 ve üstü)**|Cihaz sertifika istekleri için PFX ayarları oluşturmak ve dağıtmak istiyorsanız bu profili kullanın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**SCEP Sertifika Profili (iOS 7.1 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için güvenilen bir mobil cihaz sertifikasıyla birlikte kullanılabilen bir Basit Sertifika Kaydı Protokolü yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**Güvenilir Sertifika Profili (iOS 7.1 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için kullanılabilen bir güvenilir mobil cihaz sertifikası yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**VPN Profili (iOS 7.1 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune.md’de VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi Profili (iOS 7.1 ve üzeri)**|Kablosuz ağ ayarlarını yapılandırın ve kuruluşunuzdaki kullanıcılara dağıtın. Bu ayarları dağıtarak kablosuz ağa bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da Wi-Fi bağlantıları](wi-fi-connections-in-microsoft-intune.md).|
-|**Mobil Uygulama Yapılandırma İlkesi (iOS 7.1 ve üzeri)**|Kullanıcı bir iOS uygulaması çalıştırdığında gerekebilecek ayarları otomatik olarak sağlamak için mobil uygulama yapılandırma ilkelerini kullanın.<br /><br />Ayrıntılar için bkz. [iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+
 
 ## Mac OS X yapılandırma ilkeleri
 
@@ -80,8 +83,10 @@ Yalnızca Windows Phone ve kayıtlı Windows cihazları için geçerlidir.
 |**PKCS #12 (.PFX) Sertifika Profili (Windows 10 Masaüstü ve Mobile ile üzeri)**|Cihaz sertifika istekleri için PFX ayarları oluşturmak ve dağıtmak istiyorsanız bu profili kullanın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**SCEP Sertifika Profili (Windows 8.1 ve üzeri)**<br /><br />**SCEP Sertifikası Profili (Windows Phone 8.1 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için güvenilen bir mobil cihaz sertifikasıyla birlikte kullanılabilen bir Basit Sertifika Kaydı Protokolü yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
 |**Güvenilir Sertifika Profili (Windows 8.1 ve üzeri)**<br /><br />**Güvenilir Sertifika Profili (Windows Phone 8.1 ve üzeri)**|Mobil cihazların Wi-Fi ve VPN profilleri tarafından yapılandırılanlar gibi ağ kaynaklarına erişmesine izin vermek üzere kimliklerini doğrulamak için kullanılabilen bir güvenilir mobil cihaz sertifikası yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).|
-|**VPN Profili (Windows 10 Masaüstü ve Mobile ile üzeri)**<br /><br />**VPN Profili (Windows 8.1 ve üzeri)**<br /><br />**VPN Profili (Windows Phone 8.1 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune.md’de VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
+|**VPN Profili (Windows 10 Masaüstü ve Mobile ile üzeri)**<br /><br />**VPN Profili (Windows 8.1 ve üzeri)**<br /><br />**VPN Profili (Windows Phone 8.1 ve üzeri)**|Kullanıcıların mobil cihazlarından şirket ağınıza güvenli bir şekilde erişmesini sağlamak için ayarları yapılandırın ve dağıtın. Bu ayarları dağıtarak işlerine bağlanmak için gereken son kullanıcı çabasını en aza indirin.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da VPN bağlantıları](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi Üzerinden İçeri Aktarma**|Önceden bir dosyaya aktardığınız Windows Wi-Fi yapılandırmalarını içeri aktarın ve dağıtın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da Wi-Fi bağlantıları](wi-fi-connections-in-microsoft-intune.md).|
+|**Windows Bilgi Koruması**<br>(eski adı kurumsal veri koruma)|Kuruluşta çalışanlara ait cihazlar arttıkça, kuruluşun denetimi dışında kalan e-posta, sosyal medya ve genel bulut gibi uygulamalar ve hizmetler aracılığıyla yanlışlıkla veri sızıntıları yaşama riski de artar. Örneğin, bir çalışan en son mühendislik çalışmalarının resimlerini kişisel e-posta hesabından gönderebilir, ürün bilgilerini bir tweet’e kopyalayıp yapıştırabilir veya hazırlanması devam eden satış raporunu genel bulut depolama alanına kaydedebilir.<br><br>Windows Bilgi Koruması, çalışanın deneyimine başka hiçbir şekilde müdahale etmeden bu olası veri sıkıntılarına karşı korumaya yardımcı olur. Ayrıca, ortamınızda veya diğer uygulamalarda değişiklik yapmaya gerek kalmadan, kuruluşa ait cihazlarda ve çalışanların iş yerine getirdiği kişisel cihazlarda yanlışlıkla ortaya çıkabilecek veri sızıntılarına karşı kurumsal uygulamaları ve verileri korumaya da yardımcı olur.<br><br>Bu Intune ilkesi, Windows Bilgi Koruması tarafından korunan uygulamalar listesini, kurumsal ağ konumlarını, koruma düzeyini ve şifreleme ayarlarını yönetir.<br><br>Daha fazla bilgi için bkz. [Windows Bilgi Koruması’nı kullanarak kurumsal verilerinizi koruma](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp).|
+
 
 ## Yazılım ilkeleri
 
@@ -129,7 +134,6 @@ Yalnızca Windows Phone ve kayıtlı Windows cihazları için geçerlidir.
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

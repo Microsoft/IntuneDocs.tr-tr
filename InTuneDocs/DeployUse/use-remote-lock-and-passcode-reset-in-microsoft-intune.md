@@ -1,18 +1,19 @@
 ---
 title: "Uzaktan kilitlemeyi ve geçiş kodu sıfırlamayı kullanma | Microsoft Intune"
-description: 
+description: "Intune uzaktan kilitleme ve geçiş kodu sıfırlama özellikleri sunar."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
-ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
 
 ---
 # Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
@@ -25,7 +26,7 @@ Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Aşa
 |------------|---------------|
 |iOS|Desteklenir|
 |Android|Desteklenir|
-|Windows 10 Mobile|Desteklenir|
+|Windows 10 ve Windows 10 Mobile|Desteklenir|
 |Windows Phone 8 ve Windows Phone 8.1|Desteklenir|
 |Windows RT 8.1 ve Windows RT|Cihazın geçerli kullanıcısı, cihazı kaydeden kullanıcı ile aynıysa desteklenir.|
 |Windows 8.1|Cihazın geçerli kullanıcısı, cihazı kaydeden kullanıcı ile aynıysa desteklenir.|
@@ -72,6 +73,6 @@ Bir kullanıcı geçiş kodunu unutursa, bir cihazdan geçiş kodunu kaldırarak
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

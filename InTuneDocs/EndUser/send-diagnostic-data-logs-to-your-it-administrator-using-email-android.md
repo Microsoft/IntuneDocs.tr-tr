@@ -3,18 +3,19 @@ title: "Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönde
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 00e23b0094ee03c2a54bf6d12295e9f38781373f
 
 
 ---
@@ -30,13 +31,13 @@ Ayrıntılı günlük özelliğini açmak için:
 
 2.  **Menü** &gt;  **Ayarlar**’a dokunun.
 
-    > [!NOTE] 
+    > [!NOTE]
     > **Menü**, Android cihazınızın türüne bağlı olarak bir yazılım düğmesi veya donanım düğmesi olabilir.
 
 3.  **Tanılama Verileri** altında **Veri Gönder**’e dokunun.
 
     > [!NOTE]
-    > **Yalnızca Android 6.0 veya üzeri cihazlar kullanıyorsanız:** **Veri Gönder**’e dokunduğunuzda **Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?** iletisini görürsünüz. 
+    > **Yalnızca Android 6.0 veya üzeri cihazlar kullanıyorsanız:** **Veri Gönder**’e dokunduğunuzda **Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?** iletisini görürsünüz.
 
     Bu ileti yanıltıcıdır, çünkü **Microsoft hiçbir zaman cihazınızdaki fotoğraflara, medyaya veya dosyalara erişmez!** İleti metnini Google denetlediği için Microsoft tarafından değiştirilememektedir.  Erişim izni verdiğinizde tüm yaptığınız, cihazınıza cihaz SD kartına veri günlüklerini yazma izni vermektir; böylece bu günlükleri bir USB kablosu kullanarak taşıyabilirsiniz.
 
@@ -49,6 +50,7 @@ Ayrıntılı günlük özelliğini açmak için:
 [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

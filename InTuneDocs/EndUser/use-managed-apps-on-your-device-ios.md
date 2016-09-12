@@ -1,27 +1,27 @@
 ---
-title: "Cihazınızdaki yönetilen uygulamaları kullanma | Microsoft Intune"
+title: "iOS cihazınızdaki yönetilen uygulamaları kullanma | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 8feb4b293a021efd1f4cd26c43be76355d947143
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: b8e8bc72012a19b309a7db6c8c562ff2cbec0933
 
 
 ---
 
 
-# Cihazınızdaki yönetilen uygulamaları kullanma
+# iOS cihazınızdaki yönetilen uygulamaları kullanma
 
 Yönetilen uygulamalar, BT yöneticinizin ilgili uygulamada erişebildiğiniz şirket verilerini korumak üzere yapılandırabildiği uygulamalardır. iOS cihazınızdaki yönetilen bir uygulamada bulunan şirket verilerine eriştiğinizde uygulamanın beklediğinizden biraz farklı çalıştığını fark edebilirsiniz. Örneğin, korunan şirket verilerini kopyalayıp yapıştıramayabilir veya bu verileri belirli konumlara kaydedemeyebilirsiniz.
 
@@ -66,6 +66,7 @@ Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöne
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

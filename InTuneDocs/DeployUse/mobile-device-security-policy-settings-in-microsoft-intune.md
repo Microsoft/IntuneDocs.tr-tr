@@ -1,20 +1,20 @@
 ---
 title: "Mobil cihaz güvenliği ilkesi ayarları | Microsoft Intune"
-description: 
+description: "Kuruluşunuzdaki yönetilen cihazlara dağıtabileceğiniz çeşitli ayarları yapılandırmak için Intune’u kullanın."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: 8b7dac0bef8505567a9d0485fe6e952a3f6aa305
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 648cc02b47682a58195ee927560763818b6d32ac
 
 
 ---
@@ -212,6 +212,6 @@ Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

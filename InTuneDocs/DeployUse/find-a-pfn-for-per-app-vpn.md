@@ -1,19 +1,20 @@
 ---
 title: "Uygulama başına VPN için paket aile adı (PFN) bulma | Microsoft Intune"
-description: 
+description: "Uygulama başına VPN’yi yapılandırabilmek için bir PFN bulun."
 keywords: 
 author: nbigman
-manager:
-- ALIAS
-ms.date: 05/10/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
+ms.reviewer: tycast
+ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e32cbcd54220cf36d6770ee16897d27e1d2d71db
-ms.openlocfilehash: 21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: 21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae
 
 Uygulama başına VPN’yi yapılandırabilmek için bir PFN bulmanın iki yolu vardır.
 
-## Windows 10 bilgisayarında yüklü bir uygulama için PFN bulma 
+## Windows 10 bilgisayarında yüklü bir uygulama için PFN bulma
 
 Üzerinde çalıştığınız uygulama zaten bir Windows 10 bilgisayarında yüklüyse, PFN’yi almak için [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) PowerShell cmdlet’ini kullanabilirsiniz.
 
@@ -72,8 +73,8 @@ OneNote için şu bilgiler alınır:
 `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
 4.  Başka bir sekmede, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata` URL’sini yapıştırın; `<app id>` bölümü https://www.microsoft.com/en-us/store/apps adresinden aldığınız uygulama kimliğiyle değiştirin (3. adımındaki URL’nin sonunda yer alan harf serisi). Bizim Outlook örneğimizde, şunu yapıştırırsınız: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
-Edge’de istediğiniz bilgi görüntülenir; Internet Explorer’da bilgileri görmek için **Aç**’a tıklayın. PFN değeri ilk satırda verilir. Bizim örneğimizde sonuçlar şöyle görünür:
- 
+Microsoft Edge’de istediğiniz bilgi görüntülenir; Internet Explorer’da bilgileri görmek için **Aç**’a tıklayın. PFN değeri ilk satırda verilir. Bizim örneğimizde sonuçlar şöyle görünür:
+
 
 `{`
 `  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",`
@@ -84,7 +85,6 @@ Edge’de istediğiniz bilgi görüntülenir; Internet Explorer’da bilgileri g
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

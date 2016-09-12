@@ -1,10 +1,10 @@
 ---
-title: "Şirket ait cihazları Microsoft Intune'da Cihaz Kayıt Yöneticisi ile kaydetme | Microsoft Intune"
-description: 
+title: "Cihaz Kayıt Yöneticisi ile kaydetme | Microsoft Intune"
+description: "Cihaz kayıt yöneticisi (DEM) hesabı, çok sayıda paylaşılan, şirkete ait mobil cihazı tek bir kullanıcı hesabı ile yönetebilir."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.sourcegitcommit: 7b0154d73ab540e7543fab9088463ed8b61b45a0
-ms.openlocfilehash: 74ff3209d00dee0b5ddd14e107b5544b364d08f7
+translationtype: Human Translation
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 450a5764005643a2f890780530d1f2880a4e517b
 
 
 ---
@@ -91,6 +92,7 @@ Bir cihaz kayıt yöneticisinin silinmesi, kaydedilen cihazları etkilemez. Bir 
 -   Silinen cihaz kayıt yöneticisinin hesabı ile kayıtlı cihazlar arasındaki ilişkisi devam eder, ancak başka bir cihaz kaydedilemez
 
 
-<!--HONumber=Jul16_HO2-->
+
+<!--HONumber=Jul16_HO5-->
 
 

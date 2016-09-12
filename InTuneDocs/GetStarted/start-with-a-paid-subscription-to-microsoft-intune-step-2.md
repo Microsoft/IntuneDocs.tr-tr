@@ -1,9 +1,9 @@
 ---
 title: "Özel bir etki alanı adı yapılandırma | Microsoft Intune"
-description: 
+description: "Intune aboneliğiniz için özel etki alanı ekleme işlemi açıklanır"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
-ms.openlocfilehash: a202f06fef0bc8b7eec730728ec10e5fbf234902
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 1be1e1846281d930fadcf7eadaa6afe77146f0a2
 
 
 ---
@@ -40,6 +40,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 2. adımını tamamlamış
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

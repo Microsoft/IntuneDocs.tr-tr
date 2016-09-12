@@ -1,21 +1,21 @@
 ---
-title: "Microsoft kullanım verilerini toplamayı devre dışı bırakma | Microsoft Intune"
+title: "iOS için Microsoft kullanım verilerini toplamayı devre dışı bırakma | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 99e60934ecd280b5dd38ebe65f5a60fee576f77f
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 835cab1f6d72d7a8621791f537c7807e2ed35045
 
 
 ---
@@ -23,9 +23,11 @@ ms.openlocfilehash: 99e60934ecd280b5dd38ebe65f5a60fee576f77f
 
 # Microsoft kullanım verilerini toplamayı devre dışı bırakma
 
-Microsoft, ürün ve hizmetlerini geliştirmek için Şirket Portalı uygulamasının güvenilirliği, performansı ve nasıl kullanıldığı hakkında anonim verileri otomatik olarak toplar. 
+Microsoft, ürün ve hizmetlerini geliştirmek için Şirket Portalı uygulamasının güvenilirliği, performansı ve nasıl kullanıldığı hakkında anonim verileri otomatik olarak toplar.
 
-Şirket Portalı uygulamasındaki **Kullanım Verileri** ayarını kullanarak iOS cihazınızda söz konusu verilerin toplanmasını kapatabilirsiniz. BT yöneticileri bu verilerin toplanması üzerinde denetim sahibi değildir ve bu ayar için yaptığınız seçimi değiştiremez.
+iOS cihazınızdak kullanım verileri toplamayı kapatmak için **Ayarlar**’a gidin, **Şirket Portalı**’na dokunun, sonra **Kullanım Verileri** ayarını kapatın.
+
+BT yöneticileri bu verilerin toplanması üzerinde denetim sahibi değildir ve bu ayar için yaptığınız seçimi değiştiremez.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
@@ -33,6 +35,7 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

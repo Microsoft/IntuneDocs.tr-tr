@@ -1,10 +1,10 @@
 ---
 title: "Windows 10 ilke ayarları | Microsoft Intune"
-description: 
+description: "Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında yerleşik ve özel ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,22 +12,27 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
 
 # Microsoft Intune’da Windows 10 ilke ayarları
 
-Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın.
+Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında yerleşik ve özel ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın.
+
+> [!IMPORTANT]
+> Windows 10 bilgisayarlarını iki yolla yönetebilirsiniz: bunları kaydederek veya Intune bilgisayar istemcisi yazılımını yükleyerek. Her yöntem farklı özellikler sunar. (Daha fazla bilgi için bkz. [Cihazların nasıl yönetileceğini seçme](/intune/get-started/choose-how-to-manage-devices).)
+> Windows 10 bilgisayarlarınızı Intune bilgisayar istemcisi yazılımıyla yönettiğinizde, bu konu başlığı altında ayrıntıları verilen ilkeleri ve ayarları kullanamazsınız. Bu ayarların uygulanması için, Windows 10 cihazlarınızın Intune’a kayıtlı olması gerekir.
 
 ## Genel yapılandırma ilkesi ayarları
 
-Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarlarını yapılandırmak isterseniz, Windows 10 için Microsoft Intune **genel yapılandırma ilkesini** kullanın. Windows 10 bilgisayarlarını Intune istemci yazılımıyla yönetirken bu ilkeyi kullanamazsınız.
+Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarlarını yapılandırmak isterseniz, Windows 10 için Microsoft Intune **genel yapılandırma ilkesini** kullanın. 
 
 
-### Parola
+## - Parola
 
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|
@@ -40,16 +45,15 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |**Parola geçerlilik süresi (gün)**|Cihaz parolasının ne kadar süre sonra değiştirilmesi gerektiğini belirtir.|
 |**Parola geçmişini anımsa**|Son kullanıcının daha önce kullanılmış parolalar oluşturmasını kısıtlamak isteyip istemediğinizi belirtir.|
 |**Parola geçmişini anımsa** - **Önceki parolaların yeniden kullanılmasını önle**|Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.|
-|**Resimli parolaya veya PIN’e izin ver**|Oturum açmak için bir resim üzerinde basit hareketler veya basit bir PIN kullanmanıza olanak sağlar.<br>(Yalnızca Windows 10 masaüstü)|
 |**Cihaz boş bir durumdan döndürüldüğünde parola iste**|Etkinleştirilirse, boşta durumundaki bir cihazın kilidini açmak için kullanıcının parola girmesi gerekir.<br>(Yalnızca Windows 10 Mobile)|
 
-### Şifreleme
+## - Şifreleme
 
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|
 |**Cihazda şifrelemeyi gerektir**|Hedeflenen cihazlarda şifrelemeyi etkinleştirir.<br>(Yalnızca Windows 10 Mobile)|
 
-### Sistem
+## - Sistem
 
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|
@@ -59,7 +63,7 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |**Microsoft'a tanılama ve kullanım verilerinin gönderilmesine izin ver**|Cihazlardan Microsoft’a gönderilecek tanılama ve kullanım verilerinin miktarını belirler.<br><br>**Hayır** - Microsoft’a hiç veri gönderilmez<br>**Temel** -Cihaz Microsoft’a yalnızca sınırlı miktarda bilgi gönderir.<br>**Gelişmiş** - Microsoft’a gelişmiş tanılama bilgileri gönderilir<br>**Tam (önerilen)** - **Gelişmiş** ayarıyla aynı veriler, artı olarak cihazın durumuyla ilgili ek veriler gönderilir|
 
 
-### Hesap ve eşitleme
+## - Hesap ve eşitleme
 
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|---------------------|
@@ -67,31 +71,23 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |**Microsoft olmayan hesapların elle eklenmesine izin ver**|Kullanıcının cihaza bir Microsoft hesabıyla ilişkilendirilmemiş e-posta hesapları eklemesine olanak sağlar.|
 |**Microsoft hesapları için ayarları eşitlemeye izin ver**|Microsoft hesabıyla ilişkilendirilmiş cihaz ve uygulama ayarlarının cihazlar arasında eşitlenmesine izin verin.|
 
-### E-posta ayarları
-
-|Ayar adı|Ayrıntılar|
-|----------------|----------------------|---------------------|
-|**Microsoft hesabını Windows Mail uygulamasında isteğe bağlı hale getir**|Windows Mail uygulamasında Microsoft hesabı gereksinimini kaldırmak için bunu yapılandırın.<br>Yalnızca Windows 10 masaüstü|
-
-
-
-### Microsoft Edge
+## - Microsoft Edge
 
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|
-|**Web tarayıcısına izin ver**|Cihazda Edge web tarayıcısının kullanılmasına izin verin.<br>(Yalnızca Windows 10 Mobile)|
+|**Web tarayıcısına izin ver**|Cihazda Microsoft Edge web tarayıcısının kullanılmasına izin verin.<br>(Yalnızca Windows 10 Mobile)|
 |**Adres çubuğunda arama önerilerine izin ver**|Siz arama tümcecikleri yazarken arama motorunuzun site önerilerinde bulunmasına olanak sağlar.|
 |**Internet Explorer'a intranet trafiği göndermeye izin ver**|Kullanıcıların Internet Explorer’da intranet web siteleri açmasına olanak sağlar.<br>(Yalnızca Windows 10 masaüstü)|
-|**İzleme özelliğine izin ver**|Edge tarayıcısını, kullanıcıların ziyaret ettiği web sitelerine Do Not Track (İzleme) üst bilgileri gönderecek şekilde yapılandırır.|
+|**İzleme özelliğine izin ver**|Microsoft Edge tarayıcısını, kullanıcıların ziyaret ettiği web sitelerine Do Not Track (İzleme) üst bilgileri gönderecek şekilde yapılandırır.|
 |**SmartScreen’i etkinleştir**|Cihazlarda SmartScreen tarayıcı ayarını etkinleştirir.|
-|**Etkin betik yazmaya izin ver**|Edge tarayıcısında Javascript gibi betiklerin çalıştırılmasına izin verir.|
+|**Etkin betik yazmaya izin ver**|Microsoft Edge tarayıcısında Javascript gibi betiklerin çalıştırılmasına izin verir.|
 |**Açılır pencerelere izin ver**|Açılır pencere engelleyicisini etkinleştirir veya devre dışı bırakır.<br>(Yalnızca Windows 10 masaüstü)|
 |**Tanımlama bilgilerine izin ver**|Tanımlama bilgilerine izin verin veya bunları devre dışı bırakın.|
 |**Otomatik Doldurma’ya izin ver**|Kullanıcıların tarayıcıdaki otomatik tamamlama ayarlarını değiştirmesine izin verin.<br>(Yalnızca Windows 10 masaüstü)|
-|**Parola Yöneticisi’ne izin ver**|Edge Parola Yöneticisi özelliğini etkinleştirin veya devre dışı bırakın.|
+|**Parola Yöneticisi’ne izin ver**|Microsoft Edge Parola Yöneticisi özelliğini etkinleştirin veya devre dışı bırakın.|
 |**Kurumsal Mod site listesi konumu**|Kurumsal modda açılacak web siteleri listesinin nerede olduğunu belirtir. Kullanıcılar bu listeyi düzenleyemez.<br>(Yalnızca Windows 10 masaüstü)|
 
-### Uygulamalar
+## - Uygulamalar
 
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|---------------------|
@@ -99,7 +95,7 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 
 
 
-### Hücresel
+## - Hücresel
 
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|---------------------|
@@ -107,7 +103,7 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |**Hücresel veri üzerinden VPN'ye izin ver**|Cihazın cep telefonu şebekesine bağlandığında VPN bağlantılarına erişip erişemeyeceğini denetler.|
 |**Hücresel veri üzerinden VPN dolaşımına izin ver**|Cihazın cep telefonu şebekesinde dolaşımı sırasında VPN bağlantılarına erişip erişemeyeceğini denetler.|
 
-### Donanım
+## - Donanım
 
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|
@@ -122,12 +118,11 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |**Bluetooth'a izin ver**|Cihazda Bluetooth özelliklerinin kullanılmasına izin verir.|
 |**Bluetooth bulunabilirlik moduna izin ver**|Bu cihazın diğer Bluetooth özellikli cihazlar tarafından bulunabilmesine olanak sağlar.|
 |**Bluetooth reklamlarına izin ver**|Cihazların Bluetooth üzerinden reklam almasına izin verir.|
-|**Bluetooth bağlanılabilirlik moduna izin ver**|**Önemli:** Bu ayar Windows 10’da artık desteklenmez ve bir süre sonra kaldırılacaktır.|
 |**Telefon sıfırlamaya izin ver**|Kullanıcının cihazını fabrika ayarlarına sıfırlayıp sıfırlayamayacağını denetler.|
 |**USB bağlantısına izin ver**|Cihazların USB bağlantısı aracılığıyla dış depolama cihazlarına erişip erişemeyeceğini denetler.|
 |**AntiTheft modunu etkinleştir**|Windows AntiTheft modunun etkin olup olmadığını yapılandırın.|
 
-### Özellikler
+## - Özellikler
 
 |Ayar adı|Ayrıntılar|
 |----------------|----------------------|---------------------|
@@ -136,7 +131,7 @@ Kayıtlı Windows 10 masaüstü ve Windows 10 Mobile cihazların genel ayarları
 |**Cortana’ya izin ver**|Cortana sesli yardımcısını etkinleştirin veya devre dışı bırakın.|
 |**İşlem merkezi bildirimlerine izin ver**|Cihaz kilit ekranında işlem merkezi bildirimlerini etkinleştirin veya devre dışı bırakın.<br>(Yalnızca Windows 10 Mobile)|
 
-### Defender
+## - Windows Defender
 
 Tüm ayarlar yalnızca Windows 10 masaüstüne yöneliktir.
 
@@ -161,17 +156,18 @@ Tüm ayarlar yalnızca Windows 10 masaüstüne yöneliktir.
 |**İmza güncelleştirme aralığı**|Defender’ın yeni imza dosyalarını denetleme aralığını belirtin.|
 |**Bulut korumasına izin ver**|Microsoft Etkin Koruma Hizmeti’nin yönettiğiniz cihazlardan kötü amaçlı yazılım etkinliğiyle ilgili bilgi almasına izin verin veya bunu engelleyin. Bu bilgi gelecekte hizmeti geliştirmek için kullanılır.|
 |**Kullanıcılardan örnek göndermelerini iste**|Kötü amaçlı olup olmadıklarını saptamak için Microsoft tarafından daha fazla çözümlenmesi gerekebilecek dosyaların Microsoft’a otomatik olarak gönderilip gönderilmeyeceğini denetler.|
-|**Olası İstenmeyen Uygulama Algılama**|Bu ayar, kayıtlı Windows masaüstü bilgisayarlarını, Windows Defender tarafından olası istenmeyen yazılım şeklinde sınıflandırılan yazılımları çalıştırmaya karşı korumak üzere kullanılabilir. Bu uygulamaların çalıştırılmasına karşı koruma sağlayabilir veya istenmeyebilecek bir uygulama yüklendiğinde raporlanması için denetim modunu kullanabilirsiniz.|
+|**Olası İstenmeyen Uygulama Algılama**|Bu ayar, kayıtlı Windows masaüstü cihazlarını, Windows Defender tarafından olası istenmeyen yazılım şeklinde sınıflandırılan yazılımları çalıştırmaya karşı korumak üzere kullanılabilir. Bu uygulamaların çalıştırılmasına karşı koruma sağlayabilir veya istenmeyebilecek bir uygulama yüklendiğinde raporlanması için denetim modunu kullanabilirsiniz.|
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak dosya ve klasörler**|Dışlama listesinde **C:\Yol** veya **%ProgramFiles%\Yol\dosyaadı.exe** gibi bir veya birden çok dosya ve klasör ekleyin. Bu dosya ve klasörler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.|
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak dosya uzantıları**|Dışlama listesine **jpg** veya **txt** gibi bir veya birden çok dosya uzantısı ekleyin. Bu uzantıya sahip dosyaların hiçbiri gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.|
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak işlemler**|Dışlama listesine **.exe**, **.com** veya **.scr** türünde bir veya birden çok işlem ekleyin. Bu işlemler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.| 
 
 
-### Güncelleştirme ayarları
+## - Güncelleştirmeler
 
 |Ayar adı|Ayrıntılar|
 |----------------|---------------|
 |**Otomatik güncelleştirmelere izin ver**|Otomatik güncelleştirmelere izin vermek bu ayarı etkinleştirin. Ardından, güncelleştirme davranışını denetlemek için aşağıdaki ayarlardan birini yapılandırın:<br /><br />**İndirmeyi bildir**<br /><br />**Bakım sırasında otomatik olarak yükle**<br /><br />**Bakım sırasında otomatik olarak yükle ve yeniden başlat**<br /><br />**Zamanlanan tarihte otomatik yükle ve yeniden başlat** **Not:** Bu seçenek belirtildiğinde şu ayarları yapılandırabilirsiniz: **Son kullanıcıya bildirimi önle** ve **Zamanlanmış güncelleştirmeler için yükleme gününü tanımla**.<br>(Yalnızca Windows 10 masaüstü)|
+|**Yayın öncesi özelliklere izin ver**|Microsoft’un Windows 10 cihazlara sürüm öncesi ayarlar ve özellikler dağıtmasına imkan tanır. Yalnızca ayarlara izin vermeyi tercih edebilirsiniz; aksi takdirde tüm sürüm öncesi ayarlar ve özellikler yüklenir.|
 
 ## Özel ilke ayarları
 Windows 10 ve Windows 10 Mobile cihazlarındaki özellikleri denetlemek için kullanılabilen OMA-URI (Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı) ayarlarını dağıtmak üzere Windows 10 ve Windows 10 Mobile cihazları için Microsoft Intune **özel yapılandırma ilkesini** kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
@@ -180,14 +176,14 @@ Bu özellik, Intune genel yapılandırma ilkesiyle, yapılandırılabilir olmaya
 
 
 
-### Özel ilke genel ayarları
+## - Genel
 
 |Ayar adı|Ayrıntılar|
     |----------------|--------------------|
     |**Ad**|Intune konsolunda tanımanıza yardımcı olması için benzersiz bir ad girin.|
     |**Açıklama**|İlkeye genel bir bakış ve ilkeyi bulmanıza yardımcı olacak diğer ek bilgileri içeren bir açıklama sağlayın.|
 
-### Özel ilke OMA-URI ayarları
+## - OMA-URI ayarları
 
 |Ayar adı|Ayrıntılar|
     |--------|--------------------|
@@ -198,12 +194,12 @@ Bu özellik, Intune genel yapılandırma ilkesiyle, yapılandırılabilir olmaya
     |**Değer**|Önceden belirttiğiniz OMA-URI ile ilişkilendirilecek değeri belirtin.|
 
 
-## Windows 10 cihazlar için özel URI ayarları
+## Windows 10 URI ayarları
 Bu konu başlığı altında, Microsoft Intune **Windows 10 Özel İlkesi**’nde Windows 10 ve Windows 10 Mobile cihazları için yapılandırabileceğiniz ayarlar listelenir.
 
 Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kaydedilmelidir.
 
-### İlke URI ayarları
+## - İlke
 
 |İlke adı|Ayrıntılar|
 |---------------|------------|-----------|
@@ -276,7 +272,7 @@ Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kay
 |**Update/DeferUpgradePeriod**<br>(masaüstü ve mobil)|**Açıklama**: Özellik yükseltmelerini 8 aya kadar erteleme ilkesi<br /><br />**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0**: Güncelleştirmeleri hemen uygula (varsayılan)<br>**1**-**8**: Özellik yükseltmelerinin erteleneceği ay sayısı.<br /><br />Daha fazla bilgi için bkz.:<br>[Windows 10 hizmetlerine giriş](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 dağıtımını planlama](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>(masaüstü ve mobil)|**Açıklama**: Bir CBB makinesinin 5 hafta boyunca güncelleştirme ve yükseltme almayı durdurmasını sağlar. Bu, güncelleştirmelerin birinde sorun olması durumunda kullanılmalıdır.<br /><br />**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0**: Güncelleştirmeleri hemen uygula (varsayılan)<br>**1**: Güncelleştirmeleri ve yükseltmeleri duraklat (5 hafta sonra süresi dolar)|
 
-### Windows Defender URI’si ayarları
+## - Windows Defender
 
 |İlke adı|Ayrıntılar|
 |---------------|-----------|
@@ -306,13 +302,13 @@ Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kay
 |**ExcludedPaths**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Veri türü:** Dize<br /><br />**İzin verilen değerler:**<br /><br />*&lt;noktalı virgülle ayrılmış yollar listesi&gt;*<br /><br />Örnek: **c:\test;c:\test1.exe**<br /><br />**Varsayılan değer:** Hiçbir yol dışlanmaz|
 |**ExcludedProcesses**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Veri türü:** Dize<br /><br />**İzin verilen değerler:**<br>*&lt;noktalı virgülle ayrılmış yollar listesi&gt;*<br>Örnek: **c:\test.exe;c:\test1.exe**<br>**Varsayılan değer:** Hiçbir işlem dışlanmaz|
 
-### Edge tarayıcı URI’si ayarları
+## - Microsoft Edge tarayıcı
 
 |İlke adı|Ayrıntılar|
 |---------------|------------|-----------|
 |**Tarayıcıya İzin Verme**<br>(yalnızca mobil)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0**: tarama kapalı<br>**1**: tarama açık (varsayılan)|
 |**AllowSearchSuggestionsinAddressBar**<br>(masaüstü ve mobil)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0**: – Arama önerileri gösterme<br>**1**: Arama önerileri göster (varsayılan)|
-|**SendIntranetTraffictoInternetExplorer**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0**: Devre dışı (intranet sitelerini Edge tarayıcısında aç - varsayılan)<br>**1**: Etkin (intranet sitelerini Internet Explorer'da aç).|
+|**SendIntranetTraffictoInternetExplorer**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0**: Devre dışı (intranet sitelerini Microsoft Edge tarayıcısında aç - varsayılan)<br>**1**: Etkin (intranet sitelerini Internet Explorer'da aç).|
 |**Do Not Track’e İzin Verme**<br>(masaüstü ve mobil)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – Devre dışı (DNT gönderilmez - varsayılan)<br>**1** – Etkin (DNT gönder)|
 |**SmartScreen’i Yapılandırma**<br>(masaüstü ve mobil)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – İzin verme<br>**1** – İzin ver (varsayılan)|
 |**Açılır Pencerelere İzin Ver**<br>(yalnızca masaüstü)|**URI tam yolu:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Veri türü:** Tamsayı<br /><br />**İzin verilen değerler:**<br>**0** – Açılır pencereleri engelle (varsayılan)<br>**1** – Açılır pencerelere izin ver|
@@ -327,6 +323,6 @@ Windows Özel URI İlkesini kullanmak istiyorsanız tüm cihazlar Intune’a kay
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

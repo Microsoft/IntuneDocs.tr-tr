@@ -1,21 +1,21 @@
 ---
 title: "Uyarıları yönetme | Microsoft Intune"
-description: 
+description: "Kuruluşunuzdaki cihazların genel durumunu değerlendirmek için Uyarılar çalışma alanını kullanın."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 54dd8c6bae6c02e7dde3582b439d106261bc490b
 
 
 ---
@@ -33,12 +33,12 @@ Kuruluşunuzdaki cihazların genel durumunu değerlendirmek ve sorunları belirl
 
         > [!NOTE]
         > Bazı durumlarda, bir uyarı türü **Uyarılar Türü Özeti** listesinde birden fazla kez görünebilir.
-        > 
+        >
         > Örneğin, Mantıksal Boş Disk Alanı uyarı türünün şu örnekleri listede görünebilir:
-        > 
+        >
         > -   3 Mantıksal Boş Disk Alanı
         > -   2 Mantıksal Boş Disk Alanı
-        > 
+        >
         > Bu davranış, farklı işletim sistemleri çalıştıran cihazlar için aynı uyarı türü oluşturulduğunda gerçekleşir. Örnekte, Mantıksal Boş Disk Alanı uyarı türünün ilk örneği, yani 3 Mantıksal Boş Disk Alanı, Windows® 7 çalıştıran bilgisayarlar tarafından oluşturulmuş olabilir. Mantıksal Boş Disk Alanı uyarı türünün ikinci örneği, Windows Vista® çalıştıran bilgisayarlar tarafından oluşturulmuş olabilir.
 
     -   **Tüm etkin uyarıları görüntülemek için**, **Uyarılar &gt; Tüm Uyarılar**’a tıklayın. **Uyarılar** sayfasında, aşağıdaki sütunlarla tüm etkin uyarıların listesi görüntülenir:
@@ -107,7 +107,6 @@ Kapatıldı olarak işaretlenen uyarılar 90 gün sonra kalıcı olarak silinir.
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "MAM ilkelerini oluşturma ve dağıtma | Microsoft Intune"
-description: 
+description: "Mobil uygulama yönetimi ilkelerini oluşturmak ve dağıtmak için, bu konu başlığı altında verilen adım adım yönergeleri kullanın."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
-ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
-ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
 
 
 ---
@@ -26,10 +27,12 @@ Bu konu başlığı altında, **Azure portalında** MAM ilkesi oluşturma işlem
 - Üçüncü taraf MDM çözümleri tarafından yönetilen cihazlar
 - Hiçbir MDM çözümü tarafından yönetilmeyen cihazlar (KGC).
 
-Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilen cihazlar için olan uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
+>[!IMPORTANT]
+
+> Şu anda, cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilen cihazlar için olan uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
 Intune yönetici konsolunda oluşturulan MAM ilkeleri, Azure portalına aktarılamaz.  MAM ilkeleri, Azure portalında yeniden oluşturulmalıdır.
 
->[!IMPORTANT]
+
 > Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur. Hem Intune yönetim konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalındaki ilke uygulanır ve kullanıcılara bu ilke dağıtılır.
 
 Android ve iOS platformlarında desteklenen ilke ayarları listesini görmek için, aşağıdakilerden birini seçin:
@@ -47,24 +50,20 @@ MAM ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-
     > [!TIP]
     > Azure portalını ilk kez kullanıyorsanız, portalı tanımak için öncelikle [Microsoft Intune MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md) konusunu okuyun.
 
-2.  **Ayarlar** dikey penceresinde **Uygulama ilkesi**’ni seçin.  Yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama ilkesi** dikey penceresi açılır.
-
-    ![Mevcut ilkelerin listesini gösteren Uygulama ilkesi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  **İlke ekle**‘yi seçin.
+2.  **Ayarlar** dikey penceresinde **Uygulama ilkesi**’ni seçin.  Yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama ilkesi** dikey penceresi açılır. **İlke ekle**‘yi seçin.
 
     ![İlke ekle menü seçeneğinin vurgulandığı Uygulama ilkesi dikey penceresinin ekran görüntüsü ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  İlke için bir ad yazın, kısa bir açıklama ekleyin ve iOS veya Android için ilke oluşturmak üzere platform türünü seçin.  Her platform için birden çok ilke oluşturabilirsiniz.
+3.  İlke için bir ad yazın, kısa bir açıklama ekleyin ve iOS veya Android için ilke oluşturmak üzere platform türünü seçin.  Her platform için birden çok ilke oluşturabilirsiniz.
 
     ![İlke ekle dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**’ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçebilirsiniz. Uygulamaları seçtikten sonra, seçiminizi kaydetmek için **Uygulamalar** dikey penceresinin altındaki **Seç** düğmesini kullanın.
+4.  Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**’ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçebilirsiniz. Uygulamaları seçtikten sonra, seçiminizi kaydetmek için **Uygulamalar** dikey penceresinin altındaki **Seç** düğmesini kullanın.
 
     > [!IMPORTANT]
     > Bir ilke oluşturmak için en az bir uygulama seçmeniz gerekir.
 
-6.  **İlke ekle dikey penceresinde** **Gerekli ayarları yapılandır**’ı seçerek ilke ayarları dikey penceresini açın.
+5.  **İlke ekle dikey penceresinde** **Gerekli ayarları yapılandır**’ı seçerek ilke ayarları dikey penceresini açın.
 
     İlke ayarlarının iki kategorisi vardır: **Veri konumu değiştirme** ve **Erişim**.  Veri konumu değiştirme ilkeleri, uygulama içindeki ve dışındaki veri hareketleri için geçerlidir. Erişim ilkeleri ise son kullanıcının uygulamalara iş bağlamında nasıl eriştiğini belirler.
     Başlamanıza yardımcı olması için ilke ayarlarına varsayılan değerler atanmıştır.  Varsayılan değerler gereksinimlerinizi karşılıyorsa değişiklik yapmanız gerekmez.
@@ -74,11 +73,11 @@ MAM ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-
 
     ![Ayarlar dikey penceresiyle İlke ekle dikey penceresinin birlikte ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin.   **İlke ekle** dikey penceresine geri dönersiniz. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
+6.  Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin.   **İlke ekle** dikey penceresine geri dönersiniz. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
 
     ![Uygulamaların ve Ayarların yapılandırıldığını gösteren İlke ekle dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![İlke ekleniyor bildiriminin bulunduğu Uygulama ilkesi dikey penceresinin ekran görüntüsü ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 İlke oluşturmayı önceki yordamda açıklandığı şekilde tamamladığınızda, ilke kullanıcılara dağıtılmaz.  İlkeyi dağıtmak için aşağıda açıklanan adımları izleyin.
 
@@ -155,8 +154,8 @@ Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama otu
 iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerden birini seçin:
 
 > [!div class="op_single_selector"]
-  - [iOS ilkeleri](ios-mam-policy-settings.md)
-  - [Android ilkeleri](android-mam-policy-settings.md)
+- [iOS ilkeleri](ios-mam-policy-settings.md)
+- [Android ilkeleri](android-mam-policy-settings.md)
 
 ## Sonraki adımlar
 [Uyumluluğu ve kullanıcı durumunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
@@ -166,6 +165,6 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerde
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune için sürüm notları | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune için sürüm notları | Microsoft Intune"
+description: "Intune sürüm notları"
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: d4961042d3fbd1d6467fa784db5adef6ed5f7f1f
+
 
 ---
 
@@ -65,7 +59,7 @@ Yukarıdaki her iki durumda, bir kullanıcının e-postaya veya istemcinin SCEP 
 
 1.  Windows 8.1 cihazında **Internet Explorer**’ı açın.
 
-2.  Proxy sunucusu kimlik bilgileri istendiğinde, kimlik bilgilerini girin ve **Kimlik bilgilerimi anımsa**seçeneğini belirleyin
+2.  Proxy sunucusu kimlik bilgileri istendiğinde, kimlik bilgilerini girin ve **Kimlik bilgilerimi anımsa**seçeneğini belirleyin.
 
 3.  Cihazı kaydedin.
 
@@ -78,7 +72,7 @@ Yukarıdaki her iki durumda, bir kullanıcının e-postaya veya istemcinin SCEP 
 ## Android için Microsoft Intune Uygulaması Kaydırma Aracı’nın yerleşik bir kaldırma yeteneği yoktur
 **Sorun:** **Android için Microsoft Intune Uygulaması Kaydırma Aracı**’nın yerleşik bir aracı kaldırma işlevi yoktur.
 
-**Geçici çözüm:** Aracın yükleneceği konuma göz atın ve dizini silin. Varsayılan yükleme konumu: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. Uygulama kaydırma aracı hakkında daha fazla bilgi için, bkz. [Android uygulamalarını Uygulama Kaydırma Aracı ile yönetim için hazırlama](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+**Geçici çözüm:** Aracın yükleneceği konuma göz atın ve dizini silin. Varsayılan yükleme konumu: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. Uygulama kaydırma aracı hakkında daha fazla bilgi için, bkz. [Android uygulamalarını Uygulama Kaydırma Aracı ile yönetim için hazırlama](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool).
 
 ## Windows 8 veya Windows 8.1 çalıştıran bilgisayarlarda uzaktan yardım kullanılamıyor
 **Sorun:** Bu sürümde, Windows 8 veya Windows 8.1 çalıştıran bilgisayarlarda uzaktan yardım özelliği kullanılamaz.
@@ -96,6 +90,7 @@ Azure önizleme portalı, yeni bir platformda inşa edilmiştir ve şu dilleri d
 Intune Yönetici Konsolu ve son kullanıcıya yönelik mobil deneyimler, Azure Önizleme portalının desteklediği tüm dillere ek olarak, Danca, Yunanca, Fince, Norveççe ve Rumence destekler.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO4-->
 
 

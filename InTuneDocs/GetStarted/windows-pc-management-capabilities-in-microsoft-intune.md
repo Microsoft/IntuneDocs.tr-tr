@@ -1,10 +1,10 @@
 ---
 title: "Windows bilgisayarı yönetim özellikleri | Microsoft Intune"
-description: 
+description: "Windows bilgisayarlarını Intune istemci yazılımıyla yönetirken sağlanan Intune özelliklerini öğrenin."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
-ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
 
 -   **Kötü amaçlı yazılımdan koruma** - Intune, bilgisayarlarınızın kötü amaçlı yazılımlara karşı korunmasına yardımcı olan Endpoint Protection’ı içerir.
 
--   **Uzaktan yardım** - Intune kullanıcıların BT destek personeliyle bağlantı kurmasına olanak tanır ve onlar da Intune <!--- (requires TeamViewer software)---> ile birlikte gelen uzak masaüstü özelliğini kullanarak yardım sağlayabilir.
+-   **Uzaktan yardım** - Intune kullanıcıların BT destek personeliyle bağlantı kurmasına olanak tanır ve onlar da Intune’la birlikte gelen uzak masaüstü özelliğini kullanarak yardım sağlayabilir (TeamViewer yazılımı gerekir).
 
 -   **Yazılım lisansı yönetimi** - Kullanılabilir yazılım lisanslarının sayısını ve bunlardan kaç tanesinin kullanıldığını izleyin.
 -   **Uygulama dağıtımı** - Yönettiğiniz bilgisayarlarda yazılım dağıtımı yapın. Bilgisayarları istemci yazılımıyla yönettiğinizde bazı uygulama yönetimi özellikleri kullanılamaz.
@@ -48,7 +48,7 @@ Intune, aşağıdaki Windows sürümlerini çalıştıran bilgisayarları yönet
 
 -   **Windows 8.1**: Pro ve Enterprise sürümleri.
 
-- **Windows 10** - Home, Pro, Education ve Enterprise sürümleri.
+- **Windows 10** - Pro, Education ve Enterprise sürümleri.
 
 
 ## En düşük donanım gereksinimleri
@@ -74,6 +74,6 @@ Intune bilgisayar istemcisini yüklemeye yönelik yazılım gereksinimleri aşa�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

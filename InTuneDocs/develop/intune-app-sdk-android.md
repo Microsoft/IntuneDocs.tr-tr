@@ -13,8 +13,8 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
-ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+ms.sourcegitcommit: 51f7734e2acced469ec3520d74a8079dac8223f2
+ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
 
 
 ---
@@ -220,7 +220,7 @@ Bazı durumlarda, Android sınıfında kullanılabilir olan bir metot, MAM deği
 
 # Yedekleme verilerini koruma 
 
-Android Marshmallow (API 23) sürümünden itibaren Android’deki bir uygulama, verileri iki yolla yedekleyebilir. Bu seçenekler, uygulamanızda kullanılabilir ve MAM veri korumasının uygun şekilde uygulanması için farklı adımlar gerektirir. Doğru veri koruma davranışı için gerekli olan ilgili eylemlere hızlı bir genel bakış için aşağıdaki tabloyu gözden geçirebilirsiniz.  Android yedekleme hakkında daha fazla bilgiyi ayrıca [Android Geliştirici Veri Yedekleme Kılavuzu](http://developer.android.com/guide/topics/data/backup.html.). 
+Android Marshmallow (API 23) sürümünden itibaren Android’deki bir uygulama, verileri iki yolla yedekleyebilir. Bu seçenekler, uygulamanızda kullanılabilir ve MAM veri korumasının uygun şekilde uygulanması için farklı adımlar gerektirir. Doğru veri koruma davranışı için gerekli olan ilgili eylemlere hızlı bir genel bakış için aşağıdaki tabloyu gözden geçirebilirsiniz.  Android yedekleme hakkında daha fazla bilgi için [Android Geliştirici Veri Yedekleme Kılavuzu](http://developer.android.com/guide/topics/data/backup.html)’na da bakabilirsiniz. 
 
 ## Otomatik tam yedekleme
 
@@ -365,6 +365,6 @@ Android’de, Dalvik yürütülebilir dosya biçimine ilişkin sınırlamalar, P
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

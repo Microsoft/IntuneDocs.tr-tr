@@ -1,10 +1,10 @@
 ---
-title: "Microsoft Intune’da cihaz uyumluluk ilkesi oluşturma | Microsoft Intune"
-description: 
+title: "Cihaz uyumluluk ilkesi oluşturma | Microsoft Intune"
+description: "Şirket verilerinize erişirken kullanılan mobil cihazların ve bilgisayarların güvenliğini sağlamaya yardımcı olması için bir uyumluluk ilkesi oluşturun."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
 
 
 ---
@@ -32,12 +32,20 @@ Bu konu başlığı altında, bir cihazın uyumlu olarak kabul edilmek için uym
   -   Parola ve şifreleme gibi Sistem güvenlik ayarları
   -   Cihazın yazılım kilidinin kırılmış olup olmadığı veya Windows cihaz durumu kanıtlama hizmeti tarafından sağlıklı olarak raporlanıp raporlanmadığı gibi cihaz durumu ayarları.
   -   Gerekli en düşük işletim sistemi sürümü veya izin verilen en yüksek işletim sistemi sürümü gibi cihaz özelliği ayarları.
-![İlke Oluştur sayfası Genel sekmesinin ekran görüntüsü ](./media/intune-sa-3b-create-policy.png)
+![İlke Oluştur sayfasının Genel sekmesi ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  3. Adım: İlkeyi kaydetme
 İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.
 
 İlkeyi kaydettikten hemen sonra dağıtma seçeneği sağlanır veya daha sonra dağıtmayı seçebilirsiniz. Yeni ilke, **İlke** çalışma alanının **Uyumluluk İlkeleri** düğümünde görüntülenir.
+
+##  4. Adım: Uyumluluk durumu geçerlilik süresini ayarlama
+Cihaz uyumsuz olarak kabul edilmeden önce cihazın iade edilmesi gereken zamanı belirtmek için, uyumluluk ilkesi ayarlarına gidin ve süreyi güncelleştirin.  Varsayılan olarak 30 güne ayarlanmıştır.
+
+![ilke menü çubuğunda uyumluluk ilkesi ayarları seçeneği](../media/mdm-compliance-policy-settings.png)
+
+![uyumluluk ilkesi iletişim kutusu](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## Desteklenen ilke ayarları
 Aşağıdaki tabloda uyumluluk ilkesi ayarları ve bunların desteklendiği platformlar listelenir.
@@ -79,6 +87,6 @@ Her platformda desteklenen uyumluluk ayarları hakkında daha fazla bilgi edinme
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

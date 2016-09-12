@@ -1,10 +1,10 @@
 ---
 title: "Android MAM ilke ayarları | Microsoft Intune"
-description: 
+description: "Bu konu başlığı altında, Android cihazları için mobil uygulama yönetimi ilkesi ayarları açıklanır."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
 
 
 ---
@@ -96,6 +96,6 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

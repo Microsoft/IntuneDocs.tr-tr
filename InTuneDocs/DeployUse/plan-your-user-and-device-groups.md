@@ -1,20 +1,20 @@
 ---
 title: "Kullanıcı ve cihaz gruplarınızı planlama | Microsoft Intune"
-description: 
+description: "Grupları, kurumsal gereksinimlerinizi karşılayacak şekilde planlayın."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-ms.reviewer: jeffgilb
+ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
-ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 73909ebf2226b4fa50ad39b095a7cc1d73460c65
 
 
 ---
@@ -215,6 +215,6 @@ Kullanıcı grubu hiyerarşisine benzer bir cihaz grubu hiyerarşisi elde edene 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

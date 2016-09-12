@@ -1,10 +1,10 @@
 ---
 title: "SharePoint Online’a erişimi kısıtlama | Microsoft Intune"
-description: 
+description: "SharePoint Online’daki şirket verilerini korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
 
 
 ---
@@ -25,6 +25,8 @@ Koşullu erişim iki bileşenden oluşur:
 - Cihazın uyumlu kabul edilmesi için uyması gereken cihaz uyumluluk ilkesi.
 - Cihazın hizmete erişebilmek için uyması gereken koşulları sizin belirlediğiniz koşullu erişim ilkesi.
 Koşullu erişimin nasıl çalıştığıyla ilgili bilgi almak için, [e-posta, O365 hizmetleri ve diğer hizmetlere erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) konusunu okuyun.
+
+Uyumluluk ve koşullu erişim ilkeleri kullanıcıya dağıtılır. Kullanıcının hizmetlere erişirken kullandığı her cihaz, ilkelerle uyumluluk açısından denetlenir.
 
 Kullanıcı cihazında OneDrive gibi desteklenen bir uygulama kullanarak bir dosyaya bağlanmaya çalıştığında, aşağıdaki değerlendirme yapılır:
 
@@ -55,6 +57,10 @@ Bir koşul karşılanmazsa, oturum açtığında kullanıcıya şu iletilerden b
 
 -   Cihaz uyumlu değilse, kullanıcıyı sorunla ve sorunun nasıl çözüleceğiyle ilgili bilgileri bulabileceği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Şirket Portalı web sitesine yönlendiren bir ileti görüntülenir.
 
+**Koşullu erişim, tüm SharePoint siteleri genelinde zorunlu tutulur ve dış paylaşım engellenir.**
+
+>[!NOTE]
+>SharePoint Online için koşullu erişimi etkinleştirirseniz, [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) konu başlığı altında açıklandığı gibi listede etki alanını devre dışı bırakmanızı öneririz.  
 ## Mobil cihaz desteği
 - iOS 7.1 ve üzeri
 - Android 4.0 ve üzeri ile Samsung KNOX Standard 4.0 veya üzeri
@@ -183,6 +189,6 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

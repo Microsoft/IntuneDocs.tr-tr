@@ -1,10 +1,10 @@
 ---
 title: "Android cihazları için uyumluluk ilkesi ayarları | Microsoft Intune"
-description: 
+description: "Bu konu başlığı altında, Android cihazları için cihaz uyumluluk ilkesi ayarları açıklanır."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
-ms.openlocfilehash: dd3369cf59ea972f1ecc4953881ddbbede9a99c8
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
 
 
 ---
@@ -46,18 +47,26 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 - **Parola kullanım süresi (gün):** Kullanıcı parolasının süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
 
-- **Parola geçmişini anımsa:** Kullanıcının önceden kullanılan parolaları oluşturmasını engellemek için bu ayarı **Önceki parolaların yeniden kullanılmasını engelle** ile birlikte kullanın.
+- **Parola geçmişini anımsa:** Kullanıcının önceden kullanılan parolaları oluşturmasını engellemek için bu ayarı **Önceki parolaların yeniden kullanılmasını önle** ile birlikte kullanın.
 
-- **Önceki parolaların yeniden kullanılmasını engelle:** **Parola geçmişini anımsa** seçeneği belirlenirse, önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin.
+- **Önceki parolaların yeniden kullanılmasını önle:** **Parola geçmişini anımsa** seçeneği belirlenirse, önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin.
 
 - **Cihaz boşta durumundan çıkarken parola gerektir:** Bu ayar, **Parola gerektirmeden önce işlem yapılmadan geçen süre (dakika)** ayarıyla birlikte kullanılmalıdır. **Parola gerektirmeden önce işlem yapılmadan geçen süre (dakika)** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için son kullanıcılardan bir parola girmesi istenir.
 
 ### Şifreleme
 - **Mobil cihazda şifreleme gerektir:** Cihazın kaynaklara bağlanmak için şifrelenmesini gerektirmek için bunu **Evet** olarak ayarlayın. **Mobil cihazların kilidini açmak için parola gerektir** ayarını yapılandırdığınızda cihazlar şifrelenir.
 
-## Cihaz durumu ayarları
+## Cihaz sistem durumu ve güvenlik ayarları
 
 - **Cihazda jailbreak uygulanmamış veya kök erişim izni verilmemiş olmalıdır:** Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
+- **Cihazların bilinmeyen kaynaklardan uygulama yüklemeyi önlemesini iste (Android 4.0 veya sonrası)** Üzerinde **Güvenlik > Bilinmeyen kaynaklar** etkinleştirilmiş cihazları engellemek için bu ayarı etkinleştirin ve **Evet** olarak işaretleyin.  
+>[!IMPORTANT]
+>Dışarıdan uygulama yükleme, **Bilinmeyen kaynaklar** ayarının etkinleştirilmesini gerektirir.  Bu uyumluluk ilkesini yalnızca cihazlara dışarıdan Android uygulaması yüklemiyorsanız zorlamalısınız.
+
+- **USB hata ayıklamanın devre dışı bırakılmasını isteyin (Android 4.2 veya sonrası)**: Bu ayar, cihazdaki USB hata ayıklama seçeneğinin etkin olup olmadığının algılanması gerektiğini belirtir.
+- **Cihazların güvenlik tehditleri için taramayı etkinleştirmesini isteyin (Android 4.2-4.4)**: Bu ayar, **Uygulamaları doğrula** özelliğinin cihazda etkinleştirilmesinin gerektiğini belirtir.
+- **En düşük Android güvenlik düzeltme eki düzeyi (Android 6.0 veya sonrası)**: En düşük Android düzeltme eki düzeyini belirtmek için bu ayarı kullanın.  En az bu düzeltme eki düzeyinde olmayan cihazlar uyumsuz kabul edilir. Tarih GG-AA-YYYY biçiminde belirtilmelidir.
+
 
 ## Cihaz özelliği ayarları
 - **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir.
@@ -67,6 +76,6 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "E-posta ve O365 hizmetlerine erişimi kısıtlama | Microsoft Intune"
-description: 
+description: "Bu konu başlığı altında, SharePoint Online’daki ve diğer hizmetlerdeki şirket e-postasına ve şirket verilerine yalnızca uyumlu cihazların erişmesine izin vermek için koşullu erişimin nasıl kullanılabileceği açıklanır."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
-ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 536d34e618efdc78b3103a3b1b36f13fb784781c
 
 
 ---
@@ -21,9 +22,9 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 # Microsoft Intune ile e-posta, O365 hizmetleri ve diğer hizmetlere erişimi kısıtlama
 Intune’un koşullu erişimiyle, şirket e-postanıza ve O365 hizmetlerine erişimi kısıtlayabilirsiniz. Intune'un koşullu erişim özelliği, şirketinizin e-postasına ve O365 hizmetlerine erişimin, ayarladığınız kurallara uyan cihazlarla sınırlı olduğundan emin olmanızı sağlar.
 ## Koşullu erişim nasıl çalışır?
-Uyumluluk ilkesi ayarları kullanılarak cihazın uyumluluğunu değerlendirilir. Koşullu erişim, belirli bir hizmete erişimi kısıtlamak veya erişim izni vermek için bu değerlendirmeyi kullanır. Koşullu erişim ilkesi uyumluluk ilkesiyle birlikte kullanıldığında, yalnızca uyumlu cihazların hizmete erişmesine izin verilir.
+Uyumluluk ilkesi ayarları kullanılarak cihazın uyumluluğunu değerlendirilir. Koşullu erişim, belirli bir hizmete erişimi kısıtlamak veya erişim izni vermek için bu değerlendirmeyi kullanır. Koşullu erişim ilkesi uyumluluk ilkesiyle birlikte kullanıldığında, yalnızca uyumlu cihazların hizmete erişmesine izin verilir. Uyumluluk ilkesi ve koşullu erişim ilkesi kullanıcıya dağıtılır. Kullanıcının hizmetlere erişirken kullandığı her cihaz, ilkelerle uyumluluk açısından denetlenir.
 
-Cihazın uyumluluğunun değerlendirilebilmesi için, cihazı kullanan kullanıcıya da dağıtılmış bir uyumluluk ilkesi olması gerektiğini unutmayın.
+Cihazın uyumluluğunun değerlendirilebilmesi için, cihazı kullanan kullanıcıya dağıtılmış bir uyumluluk ilkesi olması gerektiğini unutmayın.
 Kullanıcıya hiçbir uyumluluk ilkesi dağıtılmadıysa, cihaz uyumlu olarak kabul edilir ve hiçbir erişim kısıtlaması uygulanmaz.
 
 Cihazlar ilkelerde ayarlanan koşulları karşılamadığında, kullanıcı cihazı kaydetme ve cihazın uyumlu olmasını önleyen sorunu düzeltme sürecinde yönlendirilir.
@@ -64,6 +65,6 @@ Diğer Intune ilkelerinden farklı olarak, koşullu erişim ilkelerini dağıtma
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

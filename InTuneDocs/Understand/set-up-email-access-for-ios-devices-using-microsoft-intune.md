@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Intune kullanarak iOS cihazları için e-posta erişimi ayarlama | Microsoft Intune"
-description: 
+title: "iOS cihazları için e-posta erişimi ayarlama | Microsoft Intune"
+description: "Intune kullanarak iOS cihazları için e-posta erişimi ayarlama"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: f132266939b70e87ce7fb36e42ef8b8c0777d55d
 
 
 ---
@@ -40,7 +40,7 @@ E-posta profilinin kullanılması, kayıtlı cihazlarda e-posta erişimini otoma
 Bu yönergelerde, deneme aboneliğiyle birlikte gelen barındırılan Exchange sunucusunu kullanacağız.
 1. Intune konsolunda **İlke**’ye tıklayın ve sonra da **İlke Ekle**’ye tıklayın.
 ![<add-policy>](./media/Email-Walkthrough/Email-Walkthrough-1.png)
-2. **Yeni İlke Oluştur** iletişim kutusunda **iOS**’u genişletin, **E-posta Profili**’ni seçin ve ardından **İlke Oluştur**’a tıklayın.
+2. **Yeni İlke Oluştur** iletişim kutusunda **iOS**’u genişletin, **E-posta Profili**’ni seçin ve ardından **İlke Oluştur**’a tıklayın.  
 ![<ios-email-profile-policy>](./media/Email-Walkthrough/Email-Walkthrough-2.png)
 3. İlke oluştur sayfasında, ilke için bir ad (örneğin, **iOS e-posta profili - kullanıcı parolası**) ve açıklama girin. Farklı cihaz türleri ve farklı kimlik doğrulama yöntemleri için birden çok e-posta profiliniz olabileceğinden, profilin neye yönelik olduğunu göstermek için adını kullanabilirsiniz.
 4. Exchange konak adını girin. Azure üzerinde barındırılan bir Exchange sunucusu kullandığımızdan, konak adı olarak basitçe şunu giriyoruz: **outlook.office365.com**
@@ -51,21 +51,23 @@ Bu yönergelerde, deneme aboneliğiyle birlikte gelen barındırılan Exchange s
 8. **İlkeyi Kaydet**’e tıklayın.
 9. İlkeyi şimdi dağıtmak isteyip istemediğinizi soran bir iletişim kutusu görüntülenir. **Evet**’e tıklayın.
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
-10. Ardından görüntülenen pencerede, e-posta profilini dağıtmak istediğiniz kullanıcı grubunu seçin, **Ekle**’ye ve sonra da **Tamam**’a tıklayın.
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)**Tamam**’a tıkladıktan sonra, bir veya iki dakika içinde ilkenin kayıtlı cihazlara akışı başlatılır.
+10. Ardından görüntülenen pencerede, e-posta profilini dağıtmak istediğiniz kullanıcı grubunu seçin, **Ekle**’ye ve sonra da **Tamam**’a tıklayın.  
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)  
+**Tamam**’a tıkladıktan sonra, bir veya iki dakika içinde ilkenin kayıtlı cihazlara akışı başlatılır.
 
 ## Profilin başarıyla uygulandığını doğrulama adımları
 
 Profilin uygulandığını doğrulamak için, e-posta profilini dağıttığınız cihazlardan birine erişmelisiniz.
 1. iOS cihazında Posta uygulamasını açın.
-Uygulama sizden kullanıcının e-posta kullanıcı adını ve parolasını girmenizi ister.
+Uygulama sizden kullanıcının e-posta kullanıcı adını ve parolasını girmenizi ister.  
 ![<verify-policy-add-password>](./media/Email-Walkthrough/Email-Walkthrough-6.png)
 2. Kullanıcın Exchange e-posta hesabının kullanıcı adını ve parolasını girin, ardından **Tamam**’a dokunun.
  Posta uygulaması Exchange hesabını açar ve e-posta cihazla eşitlenmeye başlar.
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. Posta uygulamasının hesap ayarlarını denetleyin ve hesap adının e-posta profiline girdiğiniz adla aynı olduğundan (örneğin, **Contoso Posta**), eşitleme ayarlarının doğru belirlendiğinden emin olun.
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png) E-posta profili cihaza otomatik olarak uygulanmamış gibi görünüyorsa, cihazdaki Şirket Portalı uygulamasını kullanarak ilkeyi kendiniz uygulayabilirsiniz.
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
+  E-posta profili cihaza otomatik olarak uygulanmamış gibi görünüyorsa, cihazdaki Şirket Portalı uygulamasını kullanarak ilkeyi kendiniz uygulayabilirsiniz.
 1. Şirket Portalı uygulamasını açın.
 2. **Cihazlarım**’a dokunun.
 3. Cihazınızın adına dokunun.
@@ -78,6 +80,6 @@ Uygulama sizden kullanıcının e-posta kullanıcı adını ve parolasını girm
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

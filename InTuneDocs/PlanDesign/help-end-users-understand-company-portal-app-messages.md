@@ -1,9 +1,9 @@
 ---
-title: "Son kullanıcıların Şirket Portalı uygulama iletilerini anlamasına yardımcı olma | Microsoft Intune"
-description: 
+title: "Kullanıcıların görebileceği Şirket Portalı uygulaması iletileri | Microsoft Intune"
+description: "Intune son kullanıcılarının görebileceği Şirket Portalı uygulaması iletileri"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 40f2ead80326a451dfd59a4969191009dc35deef
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: 7cd6c67d875f9d8fcc1e6774b84afc2c526511a9
 
 
 ---
@@ -78,6 +78,6 @@ Kullanıcılar, erişimi reddettikten sonra Şirket Portalı uygulamasında ikin
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

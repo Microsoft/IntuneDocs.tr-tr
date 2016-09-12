@@ -1,10 +1,11 @@
 ---
-title: "Android ve Samsung KNOX yapılandırma ilkesi ayarları | Microsoft Intune"
-description: 
+
+title: "Android ve Samsung KNOX ilke ayarları | Microsoft Intune"
+description: "Intune ile yönettiğiniz Android cihazlarında ayarları ve özellikleri denetleyen ilkeler oluşturun."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,43 +14,45 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
-ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
+ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
 
 
 ---
 
 # Microsoft Intune’daki Android ve Samsung KNOX ilke ayarları
 
+Intune, Android cihazlarda yapılandırabileceğiniz bir dizi yerleşik genel ayar sunar. Buna ek olarak, Intune’da bulunmayan özel ayarlar oluşturmak için Açık Mobil Ortaklığı Tekdüzen Kaynak Tanımlayıcısı (OMA-URI) değerleri belirtebilirsiniz.
+
 ## Genel yapılandırma ilkesi
 
-Microsoft Intune **Android genel yapılandırma ilkesini** kullanarak aşağıdaki ayarları yapılandırabilirsiniz:
+Aşağıdakilerin ayarlarını yapılandırmak için Intune **Android genel yapılandırma ilkesini** kullanın:
 
--   **Mobil cihaz güvenliği ayarları** – Cihazda bir dizi özelliği ve işlevi denetlemenize olanak tanıyan önceden tanımlı ayarlar listesinden seçim yapın.
+-   **Mobil cihaz güvenliği ayarları** - Cihazda bir dizi özelliği ve işlevi denetlemenize olanak tanıyan önceden tanımlanmış ayarlar listesinden seçim yapın.
 
--   **Bilgi noktası modu** (yalnızca Samsung KNOX cihazlar için) - Bir cihazı yalnızca belirli özelliklerin çalışmasına olanak verecek şekilde kilitleyin. Örneğin, bir cihazın yalnızca belirttiğiniz bir yönetilen uygulamayı çalıştırmasına izin verebilir veya bir cihazdaki ses düğmelerini devre dışı bırakabilirsiniz. Bu ayarlar, bir cihazın tanıtım modeli için veya satış noktası cihazı gibi yalnızca bir işlevi gerçekleştirmeye ayrılan bir cihaz için kullanılabilir.
+-   **Bilgi noktası modu** (yalnızca Samsung KNOX cihazlar için) - Bir cihazı, yalnızca belirli özelliklerin çalışmasına izin verecek şekilde kilitleyin. Örneğin, cihazın yalnızca belirttiğiniz bir yönetilen uygulamayı çalıştırmasına izin verebilir veya cihazdaki ses düğmelerini devre dışı bırakabilirsiniz. Bu ayarlar, bir cihazın tanıtım modeli için veya satış noktası cihazı gibi yalnızca tek bir işlevi gerçekleştirmeye ayrılmış bir cihaz için kullanılabilir.
 
--   **Uyumlu ve uyumsuz uygulamalar** - Şirketinizdeki uyumlu veya uyumsuz uygulamaların listesini gösterir. Android ve iOS cihazlarında, **Uyumlu Olmayan Uygulamalar Raporu** ile listede belirttiğiniz uygulamalarla kullanıcıların yüklemiş olduğu uygulamalar karşılaştırılarak uyumlu olup olmadığı görüntülenebilir (ancak uygulamanın yüklenmesi engellenemez).
+-   **Uyumlu ve uyumsuz uygulamalar** - Şirketinizdeki uyumlu veya uyumsuz uygulamaların bir listesini belirtin. Android ve iOS cihazlarında, **Uyumsuz Uygulamalar Raporu**, listede belirttiğiniz uygulamaların kullanıcıların yüklemiş olduğu uygulamalara karşılık uyumluluğunu görmek için kullanılabilir. Rapor, uygulamanın yüklemesini engelleyemez.
 
 > [!TIP]
-> Kullanıcılarınızın kişisel uygulamalar dahil olmak üzere cihazlarındaki uygulamaların değerlendirileceğini ve uyumsuz uygulamaların engelleneceğini ya da uyumsuz olarak bildirileceğini anladığından emin olmak kullanıcılara yönelik hüküm ve koşullar yapılandırabilirsiniz. Kullanıcılar, uygulamalara erişmek üzere cihazlarını kaydedip şirket portalını kullanmadan önce bu hüküm ve koşulları kabul etmelidir. Hüküm ve koşulları kullanma hakkında daha fazla bilgi için bkz. [Microsoft Intune’da hüküm ve koşullar ilkesi ayarları](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Kullanıcılarınızın kişisel uygulamalar dahil cihazlarındaki tüm uygulamaların değerlendirileceğini ve uyumsuz uygulamaların engelleneceğini ya da uyumsuz olarak bildirileceğini anladığından emin olmak için kullanıcılara yönelik hüküm ve koşullar yapılandırabilirsiniz. Kullanıcılar, uygulamalara erişmek üzere cihazlarını kaydedip şirket portalını kullanmadan önce bu hüküm ve koşulları kabul etmelidir. Hüküm ve koşulları kullanma hakkında daha fazla bilgi için bkz. [Microsoft Intune’da hüküm ve koşullar ilkesi ayarları](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
-Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetlemek için OMA-URI ayarlarını kullanmanıza olanak sağlayan bir Android özel ilkesini kullanarak bu ayarı oluşturabilirsiniz. Daha fazla bilgi için, bu konunun devamındaki **Özel ilke ayarları** bölümüne bakın.
+Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ayarları kullanmanıza izin veren bir Android özel ilkesi kullanarak ayar oluşturabilirsiniz. Daha fazla bilgi için bu konunun devamındaki [Özel ilke ayarları](#custom-policy-settings)’na gidin.
 
 ### Parola ayarları
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
 |----------------|-|----------------|----------------|
-|**Mobil cihazların kilidini açmak için bir parola gerektir**|Desteklenen cihazlarda bir parola gerektir.|Evet|Evet|
-|**Minimum parola uzunluğu**|Parola için minimum uzunluk.|Evet|Evet|
-|**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Bu sayıda oturum açma denemesi başarısız olursa cihazı temizler.|Evet|Evet|
-|**Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı**|Cihazın otomatik olarak kilitlenmesinden önce beklenecek dakika sayısını belirtin.|Evet|Evet|
-|**Parola geçerlilik süresi (gün)**|Parolanın değiştirilmesi gerekmeden önce geçmesi gereken gün sayısı.|Evet|Evet|
-|**Parola geçmişini anımsa**|Daha önce kullanılmış olan parolalardan burada belirtilen sayıda parola anımsanır.|Evet|Evet|
-|**Parola geçmişini anımsa** – **Önceki parolaların yeniden kullanılmasını önle**|Önceden kullanılan parolaların yeniden kullanılmasını önler.|Evet|Evet|
-|**Parola kalitesi**|Gereken parola karmaşıklık düzeyini ve biyometrik cihazların kullanılıp kullanılamayacağını seçin.|Evet|Evet|
-|**Parmak izi ile kilit açmaya izin ver**|Cihaz kilidini açmak için parmak izi kullanılmasına izin verin.|Hayır|Evet|
-|**Akıllı Kilit ve diğer güven aracılarına izin ver**<br>(Android 5 ve üzeri)|Uyumlu Android cihazlarda Akıllı Kilit özelliğini denetlemenizi sağlar. Güven aracıları olarak da bilinen bu telefon özelliği, cihaz belirli bir Bluetooth cihazına bağlı olmak ya da bir NFC etiketinin yakınında olmak gibi güvenilir bir konumda bulunduğunda, cihaz kilit ekranı parolasının devre dışı bırakılmasına veya atlanmasına olanak sağlar. Son kullanıcıların Akıllı Kilit’i yapılandırmasını önlemek için bu ayarı kullanabilirsiniz.|Evet|Hayır|
+|**Mobil cihazların kilidini açmak için bir parola gerektir**|Desteklenen cihazlarda bir parola istenip istenmeyeceğini belirtir.|Evet|Evet|
+|**Minimum parola uzunluğu**|Minimum parola uzunluğunu belirtir.|Evet|Evet|
+|**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Cihaz silinmeden önce başarısız oturum açma sayısını belirtir.|Evet|Evet|
+|**Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı**|Cihaz otomatik olarak kilitlenmeden önce işlem yapılmayan dakika sayısını belirtir.|Evet|Evet|
+|**Parola geçerlilik süresi (gün)**|Parola değiştirilmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
+|**Parola geçmişini anımsa**|Daha önce kullanılan parolalardan kaç tanesinin hatırlanacağını belirtir.|Evet|Evet|
+|**Parola geçmişini anımsa** - **Önceki parolaların yeniden kullanılmasını önle**|Önceki parolaların yeniden kullanılmasını engeller.|Evet|Evet|
+|**Parola kalitesi**|Gereken parola karmaşıklık düzeyini ve biyometrik cihaz kullanılıp kullanılamayacağını belirtir.|Evet|Evet|
+|**Parmak izi ile kilit açmaya izin ver**|Cihaz kilidini açmak için parmak izi kullanılmasına izin verir.|Hayır|Evet|
+|**Akıllı Kilit ve diğer güven aracılarına izin ver**<br>(Android 5 ve üzeri)|Uyumlu Android cihazlarda Akıllı Kilitleme özelliğini denetlemenize izin verir. Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken (örneğin, belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda) cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.|Evet|Hayır|
 
 ### Şifreleme ayarları
 
@@ -62,17 +65,17 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Ekran yakalamaya izin ver**|Kullanıcının ekran içeriğini bir resim olarak yakalamasına olanak sağlar.|Hayır|Evet|
+|**Ekran yakalamaya izin ver**|Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.|Hayır|Evet|
 |**Tanılama verilerinin gönderimine izin ver**|Cihazın Google’a tanılama bilgileri göndermesine izin verir.|Hayır|Evet|
-|**Fabrika sıfırlamasına izin ver**|Kullanıcının cihazda bir fabrika sıfırlaması gerçekleştirmesine izin verin.|Hayır|Evet|
+|**Fabrika sıfırlamasına izin ver**|Kullanıcının cihazda fabrika sıfırlaması gerçekleştirmesine izin verir.|Hayır|Evet|
 
-### Bulut ayarları – belgeler ve veriler
+### Bulut ayarları - belgeler ve veriler
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
-|**Google yedeklemesine izin ver**|Google yedeklemesinin kullanılmasına izin verir.|Hayır|Evet|
+|**Google yedeklemesine izin ver**|Google yedeklemesi kullanmaya izin verir.|Hayır|Evet|
 
-### Bulut ayarları – hesaplar ve eşitleme
+### Bulut ayarları - hesaplar ve eşitleme
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
@@ -82,17 +85,17 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Web tarayıcısına izin ver**|Cihaz web tarayıcısının kullanılıp kullanılamayacağını belirtir.|Hayır|Evet|
-|**Otomatik doldurmaya izin ver**|Kullanılacak web tarayıcısının Otomatik Doldurma işlevine izin verin.|Hayır|Evet|
+|**Web tarayıcısına izin ver**|Cihazın varsayılan web tarayıcısının kullanılıp kullanılamayacağını belirtir.|Hayır|Evet|
+|**Otomatik doldurmaya izin ver**|Kullanılacak web tarayıcısının otomatik doldurma işlevine izin verir.|Hayır|Evet|
 |**Açılır pencere engelleyicisine izin ver**|Web tarayıcısında açılır pencere engelleyicisinin kullanılmasına izin verir.|Hayır|Evet|
-|**Tanımlama bilgilerine izin ver**|Cihazın web tarayıcısının tanımlama bilgilerini kullanmasına izin verin.|Hayır|Evet|
-|**Etkin betik yazmaya izin ver**|Cihazın web tarayıcısının etkin betik kullanmasına izin verin.|Hayır|Evet|
+|**Tanımlama bilgilerine izin ver**|Cihazın web tarayıcısının tanımlama bilgileri kullanmasına izin verir.|Hayır|Evet|
+|**Etkin betik yazmaya izin ver**|Cihazın web tarayıcısının etkin betik kullanmasına izin verir.|Hayır|Evet|
 
 ### Uygulama ayarları - uygulamalar
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Google Play mağazasına izin ver**|Kullanıcının cihazda Google Play mağazasına erişmesine izin verin.|Hayır|Evet|
+|**Google Play mağazasına izin ver**|Kullanıcının cihazda Google Play mağazasına erişmesine izin verir.|Hayır|Evet|
 
 ### Cihaz özellikleri ayarları - donanım
 
@@ -111,9 +114,9 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Sesli dolaşıma izin ver**|Cihaz cep telefonu şebekesindeyken sesli dolaşıma izin verin.|Hayır|Evet|
-|**Veri dolaşımına izin ver**|Cihaz cep telefonu şebekesindeyken veri dolaşımına izin verin.|Hayır|Evet|
-|**SMS/MMS iletilerine izin ver**|Cihazda SMS ve MMS mesajlaşmasının kullanımına izin verin.|Hayır|Evet|
+|**Sesli dolaşıma izin ver**|Cihaz cep telefonu şebekesindeyken ses dolaşımına izin verir.|Hayır|Evet|
+|**Veri dolaşımına izin ver**|Cihaz cep telefonu şebekesindeyken veri dolaşımına izin verir.|Hayır|Evet|
+|**SMS/MMS iletilerine izin ver**|Cihazda SMS ve MMS mesajlaşması kullanımına izin verir.|Hayır|Evet|
 
 ### Cihaz özellikleri ayarları - özellikler
 
@@ -121,23 +124,23 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 |----------------|----------------|----------------|
 |**Sesli yardımcıya izin ver**|Cihazda sesli yardım yazılımının kullanımına izin verir.|Hayır|Evet|
 |**Sesli aramaya izin ver**|Cihazda sesli arama özelliğinin kullanımını etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
-|**Kopyalama ve yapıştırmaya izin ver**|Cihazda kopyalama ve yapıştırma işlevine izin verin.|Hayır|Evet|
-|**Uygulamalar arasında pano paylaşımına izin ver**|Uygulamalar arasında kopyalama ve yapıştırma için panoyu kullanın.|Hayır|Evet|
-|**YouTube'a izin ver**|Cihazda YouTube’un kullanımına izin verin.|Hayır|Evet|
+|**Kopyalama ve yapıştırmaya izin ver**|Cihazda kopyalama ve yapıştırma işlevine izin verir.|Hayır|Evet|
+|**Uygulamalar arasında pano paylaşımına izin ver**|Uygulamalar arasında kopyalama ve yapıştırma için panonun kullanılmasına izin verir.|Hayır|Evet|
+|**YouTube'a izin ver**|Cihazda YouTube kullanılmasına izin verir.|Hayır|Evet|
 
 ### Uyumlu ve uyumlu olmayan uygulamalar için ayarlar
-**Uyumlu &amp; Uyumsuz Uygulamalar** listesinde, aşağıdaki bilgileri kullanarak uyumlu veya uyumsuz uygulamalar listesini belirtin:
+**Uyumlu &amp; Uyumsuz Uygulamalar** listesinde, aşağıdaki bilgileri kullanan uyumlu veya uyumsuz uygulamaların bir listesini belirtin:
 
 > [!NOTE]
-> Tek bir ilke, yalnızca uyumlu uygulamaların veya uyumsuz uygulamaların listesini içerebilir. İkisi de aynı ilkede belirtemezsiniz.
+> Tek bir ilke, yalnızca uyumlu uygulamaların veya uyumsuz uygulamaların bir listesini içerebilir. İkisi de aynı ilkede belirtemezsiniz.
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
-|**Kullanıcılar listelenen uygulamaları yüklediğinde uyumsuzluk bildir**|Kullanıcıların yükleyip çalıştırmasını istemediğiniz, Intune tarafından yönetilmeyen uygulamaları listeleyin. Kullanıcılar bu uygulamalardan birini yüklerse, uygulama uyumsuz uygulamalar raporunda listelenir.|
-|**Kullanıcılar listelenen uygulamaları yüklediğinde uyumsuzluk bildirme**|Şirketinizde izin vermek istediğiniz uygulamaları listeler. Uyumluluğun korunması için, kullanıcılar listelenmeyen uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.|
-|**Ekle**|Seçili listeye bir uygulama ekler. Tercih ettiğiniz bir ad (isteğe bağlı olarak uygulama yayımcısı) ve uygulamanın uygulama mağazasındaki URL'sini belirtin.<br /><br />Yardım için, bu konunun Uygulama mağazalarının URL’lerini belirtme bölümüne bakın.|
-|**Uygulamaları İçeri Aktar**|Virgülle ayrılmış bir değerler dosyasında belirttiğiniz uygulamaların listesini içeri aktarır. Dosyadaki biçim, uygulama adı, yayımcı, uygulama URL'sini kullanın.|
-|**Düzenle**|Seçilen uygulamanın adını, yayımcısını ve URL'sini düzenlemenize imkan tanır.|
+|**Kullanıcılar listelenen uygulamaları yüklediğinde uyumsuzluk bildir**|Intune tarafından yönetilmeyen ve kullanıcıların yükleyip çalıştırmasını istemediğiniz uygulamaları listeler. Kullanıcılar bu uygulamalardan birini yüklerse, uygulama uyumsuz uygulamalar raporunda listelenir.|
+|**Kullanıcılar listelenen uygulamaları yüklediğinde uyumsuzluk bildirme**|İzin vermek istediğiniz uygulamaları listeler. Uyumluluğun korunması için, kullanıcılar listelenmeyen uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.|
+|**Ekle**|Seçili listeye bir uygulama ekler. Uygulamanın adını, uygulama yayımcısını (isteğe bağlı) ve uygulamanın uygulama mağazasındaki URL’sini belirtin.<br /><br />Daha fazla bilgi için bu konunun devamındaki [Uygulama mağazalarının URL’lerini belirtme](#specify-urls-to-app-stores) bölümüne bakın.|
+|**Uygulamaları İçeri Aktar**|Belirttiğiniz uygulamaların virgülle ayrılmış bir listesini içeri aktarır. Dosyadaki biçimi, uygulama adını, yayımcıyı ve uygulama URL'sini kullanın.|
+|**Düzenle**|Seçilen uygulamanın adını, yayımcısını ve URL'sini düzenlemenize izin verir.|
 |**Sil**|Seçilen uygulamayı listeden siler.|
 
 ### Bilgi noktası modu ayarları
@@ -145,7 +148,7 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
-|**Cihaz bilgi noktası modundayken çalışmasına izin verilecek yönetilen bir uygulama seçin**|**Gözat**’ı seçin, sonra cihaz bilgi noktası modundayken çalışmasına izin verilecek yönetilen uygulamaları seçin (mağazaya bir bağlantı olarak belirtilen uygulamalar henüz desteklenmez). Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.|
+|**Cihaz bilgi noktası modundayken çalışabilecek yönetilen bir uygulama seçme**|**Gözat**’ı seçin, sonra cihaz bilgi noktası modundayken çalışabilecek yönetilen uygulamayı seçin (mağazaya bir bağlantı olarak belirtilen uygulamalar henüz desteklenmemektedir). Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.|
 |**Ses düğmelerine izin ver**|Cihazdaki ses düğmelerinin kullanımını etkinleştirir veya devre dışı bırakır.|
 |**Açma/kapatma düğmesine izin ver**|Cihazın açma/kapatma düğmesini etkinleştirir veya devre dışı bırakır.|
 
@@ -158,19 +161,19 @@ Aradığınız ayar bu konu başlığı altında görünmüyorsa, cihazı denetl
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Raporlar** &gt; **Uyumsuz Uygulamalar Raporu**’nu seçin.
 
-2.  Denetlemek istediğiniz cihaz gruplarını seçin, uyumlu uygulamaları, uyumsuz uygulamaları veya her ikisini birden denetlemek istediğinizi belirtin ve sonra **Raporu Görüntüle**’yi seçin.
+2.  Denetlemek istediğiniz cihaz gruplarını seçin. Sonra uyumlu uygulamaları mı, uyumsuz uygulamaları mı, her ikisini birden mi denetlemek istediğinizi belirleyin. Son olarak, **Raporu Görüntüle**’yi seçin.
 
 #### Uygulama mağazalarının URL'lerini belirtme
-Uyumlu veya uyumlu olmayan uygulama listesinde bir uygulama URL'si belirtmek için aşağıdaki biçimi kullanın:
+Uyumlu veya uyumsuz uygulama listesinde bir uygulama URL'si belirtmek için aşağıdaki adımları uygulayın:
 
 [Google Play'in uygulamalar bölümünde](https://play.google.com/store/apps) kullanmak istediğiniz uygulamayı arayın.
 
-Uygulama için yükleme sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu uyumlu uygulamalar listesinde veya uyumsuz uygulamalar listesinde gerekli URL olarak kullanabilirsiniz.
+Uygulamanın yükleme sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu uyumlu uygulamalar listesinde veya uyumsuz uygulamalar listesinde gerekli URL olarak kullanabilirsiniz.
 
-**Örnek:** Google Play'de Microsoft Office Mobile uygulamasını arayın. Kullandığınız URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub** olacaktır.
+Örnek: Microsoft Office Mobile için Google Play'i arayın. Kullandığınız URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub** olacaktır.
 
 ## Özel ilke ayarları
-Android cihazlardaki özellikleri denetlemek için kullanılabilen OMA-URI (Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı) ayarlarını dağıtmak için Microsoft Intune **Android özel yapılandırma ilkesini** kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
+Android cihazlardaki özellikleri denetlemek için kullanılabilen OMA-URI ayarlarını dağıtmak için Microsoft Intune **Android özel yapılandırma ilkesini** kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
 
 Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarlarını dağıtmanıza olanak sağlamak için tasarlanmıştır.
 
@@ -190,70 +193,20 @@ Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarları
     |--------|--------------------|
     |**Ayar adı**|Ayarlar listesinde tanımanıza yardımcı olması için OMA-URI ayarı için benzersiz bir ad girin.|
     |**Ayar açıklaması**|Ayara genel bir bakış ve ayarı bulmanıza yardımcı olacak diğer ek bilgileri içeren bir açıklama sağlayın.|
-    |**Veri türü**|Bu OMA-URI ayarını belirteceğiniz tarih türünü seçin. **Dize, Dize (XML), Tarih ve saat, Tamsayı, Kayan nokta** veya **Boole değeri** seçeneklerinden birini belirleyin.|
+    |**Veri türü**|Bu OMA-URI ayarını belirteceğiniz veri türünü seçin. **Dize, Dize (XML), Tarih ve saat, Tamsayı, Kayan nokta** veya **Boole değeri** seçeneklerinden birini belirleyin.|
     |**OMA-URI (büyük küçük harf duyarlı)**|Bir ayar için sağlamak istediğiniz OMA-URI’yi belirtin.|
     |**Değer**|Önceden belirttiğiniz OMA-URI ile ilişkilendirilecek değeri belirtin.|
 
-### Örnek: Önceden paylaşılan anahtar ile özel bir Wi-Fi profili yapılandırma
-Intune, Android cihazlar için Wi-Fi profillerini desteklese de bu özellik şu anda yapılandırmaya önceden paylaşılan anahtar eklenmesini desteklemez. Bu örnekte, Android cihazda önceden paylaşılan anahtar ile Wi-Fi profili oluşturan bir Android özel ilkesinin nasıl oluşturulacağını öğreneceksiniz.
+### Örnekler
 
-#### Önceden paylaşılan anahtar ile Wi-Fi profili oluşturmak için
-
-1.  Kullanıcılarınızın Android için [Intune Şirket Portalı](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’nın en son sürümünü kullandığından emin olun.
-
-2.  Bir Android özel ilkesi oluşturun ve aşağıdaki ayarları ekleyin:
-
-|Ayar adı|Ayrıntılar|
-|----------------|--------------------|
-|**Ayar adı**|Ayar için tercih ettiğiniz bir ad belirtin.|
-|**Ayar açıklaması**|Ayar için bir açıklama belirtin.|
-|**Veri türü**|**Dize (XML)** öğesini seçin.|
-|**OMA URI**|Şunu girin: ./Vendor/MSFT/WiFi/Profile/*&lt;Wi-Fi profiliniz&gt;*/Settings|
-
-3.  **Değer** için aşağıdaki XML kodunu kopyalayıp yapıştırın:
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile 
-                    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile 
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  İşiniz bittiğinde ilkeyi kaydedin ve gerekli Android cihazlarına dağıtın. Yeni Wi-Fi profili, cihazdaki bağlantılar listesinde görüntülenir.
+- [Önceden paylaşılan anahtar ile Wi-Fi profili oluşturma](pre-shared-key-wi-fi-profile.md)
+- [Özel ilke kullanarak Android cihazları için uygulama başına VPN profili oluşturma](per-app-vpn-for-android-pulse-secure.md)
 
 ### Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO1-->
 
 

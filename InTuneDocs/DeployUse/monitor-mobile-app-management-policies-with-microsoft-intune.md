@@ -1,10 +1,10 @@
 ---
-title: "Microsoft Intune ile mobil uygulama yönetimi ilkelerini izleme | Microsoft Intune"
-description: 
+title: Microsoft Intune ile MAM ilkelerini izleme | Microsoft Intune
+description: "Kaç kullanıcının ilkeyi kullandığını görün, diğer ayrıntıları öğrenmek için detaya gidin."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
+ms.sourcegitcommit: 644860abcd351d24f08d7a517a3a4b5f44824689
+ms.openlocfilehash: 1d22d26c1a1c52dda4f9b01658d22f8de8187f0f
 
 
 ---
@@ -49,6 +49,9 @@ Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumuna bakabi
 
   **Giriş yapmadı**: B, ilkenin kullanıcıya dağıtıldığı, ancak o zaman beri uygulamanın iş bağlamında kullanılmadığı anlamına gelir.
 
+>[!NOTE]
+> Aradığınız kullanıcıya MAM ilkesi dağıtılmamışsa, kullanıcının hiçbir uygulama ilkesinde hedeflenmediğini bildiren bir ileti görürsünüz.
+
 Kullanıcının raporlamasını görmek için şu adımları izleyin:
 
 **1. Adım:**  Kullanıcı seçmek için, Özet kutucuğuna tıklayın ve aşağıda gösterildiği gibi **Ayarlar** dikey penceresinde **KULLANICI TARAFINDAN UYGULAMA RAPORLAMA**’yı seçin:
@@ -72,6 +75,6 @@ Ayrıntılı görünümde hata iletisi, hata oluştuğunda erişilmiş olan uygu
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

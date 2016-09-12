@@ -1,10 +1,10 @@
 ---
 title: "Wi-Fi bağlantıları | Microsoft Intune"
-description: 
+description: "VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için VPN profillerini kullanın."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 910ccd7c91593114ddf57c842c0bf9c9ffa54fdc
-ms.openlocfilehash: 1282ec1214a2c499166299a0a13b0bd3bfc7f3b2
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 271d2be675ab808365cd6869c69d386058f76ae8
 
 
 ---
@@ -125,8 +125,8 @@ Daha sonra gerekli kullanıcı veya cihaz grubuna dağıtabileceğiniz bir dizi 
 
 2.  **Windows** &gt; **Wi-Fi İçeri Aktarma (Windows 8.1 ve üstü)** türünde bir ilke yapılandırın.
 
-    Bu ilke Windows 8.1 ve Windows 10 Masaüstü ve mobil cihazlarına uygulanabilir. 
-    
+    Bu ilke Windows 8.1 ve Windows 10 Masaüstü ve mobil cihazlarına uygulanabilir.
+
     Yalnızca *özel* bir Windows Wi-Fi içeri aktarma ilkesi oluşturup dağıtabilirsiniz. Önerilen ayarlar kullanılamaz.
 
 3.  Windows Wi-Fi İçeri Aktarma İlkesi için aşağıdaki genel değerleri belirtin:
@@ -166,6 +166,6 @@ Daha sonra gerekli kullanıcı veya cihaz grubuna dağıtabileceğiniz bir dizi 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

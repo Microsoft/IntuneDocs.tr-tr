@@ -1,10 +1,10 @@
 ---
 title: "Windows RT cihazınızı Intune’a kaydetme | Microsoft Intune"
-description: 
+description: "Windows RT cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ca6519e8-d0da-4314-b0bc-1753784d7969
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: 47341626bceaa5d4ad0775c3d22d80985ce699cc
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: ddbe0bd7b9a69a92d5bf4681bf8c897d7712acee
 
 
 ---
@@ -53,7 +53,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

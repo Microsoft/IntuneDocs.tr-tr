@@ -3,25 +3,25 @@ title: "Cihaz günlüklerini toplama| Microsoft Intune"
 description: 
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac5c66f57194a84580aa495a58e5281683aa1cca
-ms.openlocfilehash: 4fc08fcea6cea897b9ddc3d0c00f2d83069f639d
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: fb4bc718212480b9e44dc964b432dc2e37b3e531
 
 
 ---
 
 # Cihaz günlükleri
 
-Sorun giderme çalışmalarınız kapsamında, kullanıcı cihazlarından günlükleri toplamak isteyebilirsiniz. Günlükleri toplama yönergeleri burada açıklanmaktadır. Normalde, cihaza erişmeniz veya kullanıcıdan günlükleri toplayıp size göndermesini istemeniz gerekebilir. 
+Sorun giderme çalışmalarınız kapsamında, kullanıcı cihazlarından günlükleri toplamak isteyebilirsiniz. Günlükleri toplama yönergeleri burada açıklanmaktadır. Normalde, cihaza erişmeniz veya kullanıcıdan günlükleri toplayıp size göndermesini istemeniz gerekebilir.
 
 ### Android günlüğü konumu
 Android günlükleri *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files* yolunda yer alır. [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android) konu başlığı altında açıklandığı gibi, kullanıcı günlük dosyalarını size e-postayla da gönderebilir.
@@ -46,6 +46,6 @@ Windows Şirket Portalı’nda günlükler *%localappdata%\Packages\Microsoft.Co
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

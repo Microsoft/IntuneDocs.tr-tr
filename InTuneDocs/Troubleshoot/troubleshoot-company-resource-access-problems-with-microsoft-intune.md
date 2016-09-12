@@ -1,20 +1,20 @@
 ---
 title: "Şirket kaynak erişimi sorunlarını giderme | Microsoft Intune"
-description: 
+description: "Bu konu başlığı altındaki hata ve durum kodları, kaynak erişimi sorunlarını gidermenize yardımcı olur."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
-ms.openlocfilehash: ed14e92d48a2604d16ceee8b844ae5cc0c45f051
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
 
 
 ---
@@ -372,6 +372,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

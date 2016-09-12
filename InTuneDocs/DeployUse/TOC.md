@@ -24,6 +24,7 @@
 #### [Exchange erişim kuralları](exchange-access-rules-for-mobile-devices.md)
 ### [Bilgisayarları yönetme](manage-windows-pcs-with-microsoft-intune.md)
 #### [Bilgisayar istemcisini yükleme](install-the-windows-pc-client-with-microsoft-intune.md)
+#### [Genel bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Bilgisayar ilke çakışmalarını çözme](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 
 ## [Cihazları yapılandırma](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -49,7 +50,7 @@
 ### [Kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 ### [Cihazları gruplarla eşleme](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Envanterle cihazlarınızı anlama ](understand-your-devices-with-inventory-in-microsoft-intune.md)
-### [Genel bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+
 
 ## [Cihazları koruma](protect-your-devices-with-microsoft-intune.md)
 ### [Uzaktan kilitleme ve geçiş kodu sıfırlama](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
@@ -76,6 +77,7 @@
 ## [Uygulama yapılandırma](update-apps-using-microsoft-intune.md)
 ### [Uygulamaları güncelleştirme ](update-apps-using-microsoft-intune.md)
 ### [iOS uygulama yapılandırma ilkeleri](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [iOS mobil uygulaması sağlama profilleri](ios-mobile-app-provisioning-profiles.md)
 ### [İnternet erişimini yönetme](manage-internet-access-using-managed-browser-policies.md)
 
 
@@ -133,6 +135,6 @@
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

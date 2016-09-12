@@ -1,10 +1,10 @@
 ---
-title: "Microsoft Intune ile iOS cihazları için Apple DEP yönetimi | Microsoft Intune"
-description: 
+title: "iOS cihazları için Apple DEP yönetimi | Microsoft Intune"
+description: "Apple cihazlarını yönetmek için, iOS Cihaz Kayıt Programı (DEP) aracılığıyla “uzaktan” satın alınmış iOS cihazlarını kaydeden bir kayıt profili dağıtın."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
 
 
 ---
 
 # Şirkete ait Cihaz Kayıt Programı iOS cihazlarını kaydetme
-Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla satın alınmış iOS cihazlarını “uzaktan” kaydeden bir kayıt profili dağıtabilir. Kayıt paketi, cihaz için kurulum yardımcısı seçenekleri içerebilir. DEP ile kaydedilen cihazların kaydı kullanıcılar tarafından geri alınamaz.
+Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla “uzaktan” satın alınmış iOS cihazlarını kaydeden bir kayıt profili dağıtabilir. Kayıt paketi, cihaz için kurulum yardımcısı seçenekleri içerebilir. DEP ile kaydedilen cihazların kaydı kullanıcılar tarafından geri alınamaz.
 
 ## Microsoft Intune ile iOS cihazları için Apple DEP yönetimi
 Şirkete ait iOS cihazlarının Apple Cihaz Kaydı Programı (DEP) ile yönetilmesi için kurumunuzun Apple DEP'e katılması ve cihazları bu program aracılığıyla edinmesi gerekir. Bu işlemin ayrıntıları şurada bulunabilir:  [https://deploy.apple.com](https://deploy.apple.com). Programın sağladığı avantajlar arasında, her cihazı bir USB ile bilgisayara bağlamaya gerek bırakmayan kendiliğinden kurulum olanağı da vardır.
@@ -55,9 +55,7 @@ Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla satın alınmı�
 
     Ayrıca, **Aşağıdaki gruba cihazlar atayabilirsiniz**. Bir grup seçmek için, **Seç...** öğesine tıklayın.
 
-    >[!Important]
-    >Grup atamaları, Intune'dan Azure Active Directory'ye taşınır. [Daha fazlasını öğrenin](#changes-to-intune-group-assignments)
-
+    [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     Ardından, DEP’i desteklemek için **Bu ilke için Cihaz Kayıt Programı ayarlarını yapılandırın** seçeneği etkinleştirin.
 
@@ -101,13 +99,13 @@ Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla satın alınmı�
 
 ## Intune grubu atamalarına değişiklikler
 
-Eylül ayından başlayarak cihaz yönetimi Azure Active Directory’ye taşınacaktır. Azure Active Directory gruplarına geçişten sonra grup ataması **Kurumsal Kayıt Profili** seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Diğer ayrıntılar yakında yayımlanacaktır.
+Eylül ayından başlayarak cihaz yönetimi Azure Active Directory’ye taşınacaktır. Azure Active Directory gruplarına geçişten sonra grup ataması **Kurumsal Kayıt Profili** seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Azure Active Directory’de, Kurumsal Kayıt Profili adına göre yeni dinamik cihaz grupları ataması tanımlanabilir. Bu işlem bir cihaz grubuna önceden atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. [Azure Active Directory grupları hakkında daha fazla bilgi edinin.](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Ayrıca bkz.
 [Cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

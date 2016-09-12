@@ -1,10 +1,10 @@
 ---
-title: "İlke oluşturma ve değerlendirme kullanıcılarına bir uygulama yayımlama | Microsoft Intune"
-description: 
+title: "İlke oluşturma ve kullanıcılara bir uygulama yayımlama | Microsoft Intune"
+description: "Intune’un ücretsiz, 30 günlük değerlendirmesine kaydolduğunuzda, ilkeler nasıl oluşturulur ve uygulama nasıl yayımlanır"
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
-ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 1a41bfd926b1dac88ca8c8cd33483955f1150e34
 
 
 ---
@@ -99,6 +99,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 4. adımını
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 
