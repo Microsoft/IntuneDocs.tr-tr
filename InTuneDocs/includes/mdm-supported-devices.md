@@ -7,9 +7,9 @@
   - Windows 10 (Home, Pro, Education ve Enterprise sürümleri) çalıştıran bilgisayarlar
   - Mac OS X 10.9 ve üzeri
 
-[Intune yazılım istemcisi](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune), Windows 7 işletim sistemini veya üstünü çalıştıran Windows bilgisayarlarını yönetebilir. Enterprise Management Suite (EMS) kullanan müşteriler, [Windows 10 cihazlarını kaydetmek için Azure Active Directory’yi (AAD) de kullanabilir](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
+[Intune yazılım istemcisi](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune), desteklenmeyen Windows Home sürümleri hariç Windows Vista işletim sistemi ve üstünü çalıştıran Windows bilgisayarları yönetebilir.  Enterprise Management + Security (EMS) kullanan müşteriler, [Windows 10 cihazlarını kaydetmek için Azure Active Directory’yi (AAD) de kullanabilir](set-up-windows-device-management-with-microsoft-intune.md#azure-active-directory-enrollment).
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
