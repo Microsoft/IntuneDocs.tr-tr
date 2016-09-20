@@ -14,16 +14,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
+ms.sourcegitcommit: 20101b6c65bcab413441e16b3ac6a08a982e6a28
+ms.openlocfilehash: 3794a610996f5001e52f4d19d4cdafd849de3455
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlerin bağlantılarını içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettiği ve aşağıdaki kategorilere ayrılan adımları görmek için bu bilgiye başvurabilir: 
-- Şirket portalı uygulamasının yüklenmesi ve Intune kaydı 
+Bu makale, kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlere bağlantılar içerir. BT yöneticileri, aşağıdaki kategorilerde gruplanmış olan çeşitli görevleri gerçekleştirmek üzere kullanıcıların atması gereken adımları görmek için bu bilgilere başvurabilir:
+- Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
 - Kayıt sonrası yönetim görevleri
 - Uyumluluk sorunları
 
@@ -64,6 +64,6 @@ Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydedildiğinde karşılaş
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,7 +4,7 @@ description: "Intune tarafından yönetilen Android cihazları için uygulama ba
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a2464a9d2276319f75a3da7db70c2613152bed9b
-ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
+ms.sourcegitcommit: eb2260f6bd37647d34871c9776dba3628d0aa8f6
+ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
 
 
 ---
 
 # Özel ilke kullanarak Android cihazları için uygulama başına VPN profili oluşturma
 
-Intune tarafından yönetilen Android cihazları için uygulama başına VPN profili oluşturabilirsiniz. İlk olarak, Pulse Secure bağlantı türünü kullanan bir VPN profili oluşturun. Ardından, VPN profilini belirli uygulamalarla ilişkilendiren özel bir yapılandırma ilkesi oluşturun. İlkeyi Android cihaz veya kullanıcı gruplarınıza dağıttıktan sonra, bir kullanıcı belirtilen uygulamalardan birini söz konusu cihazlardan birinde açtığında, bu uygulamanın VPN bağlantısı açılır.
+Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama başına VPN profili oluşturabilirsiniz. İlk olarak, Pulse Secure bağlantı türünü kullanan bir VPN profili oluşturun. Ardından, VPN profilini belirli uygulamalarla ilişkilendiren özel bir yapılandırma ilkesi oluşturun. 
+
+İlkeyi Android cihazınıza veya kullanıcı gruplarına dağıttıktan sonra kullanıcılar PulseSecure VPN’i başlatmalıdır. PulseSecure bundan sonra yalnızca belirtilen uygulamalardan gelen trafiğin VPN bağlantısını kullanmasına izin verir.
 
 > [!NOTE]
 >
@@ -49,8 +51,7 @@ Intune tarafından yönetilen Android cihazları için uygulama başına VPN pro
    6. **OMA-URI** için şu dizeyi belirtin: **./Vendor/MSFT/VPN/Profile/*Ad*/PackageList**; burada *Ad*, 1. Adım’da not ettiğiniz VPN profili adıdır. Bizim örneğimizde, dize şöyle olabilir: **./Vendor/MSFT/VPN/Profile/UygulamaVpnProfilim/PakatListesi**.
    7.   **Değer** için, profille ilişkilendirilecek paketlerin noktalı virgülle ayrılmış bir listesini oluşturun. Örneğin, Excel’in ve Google Chrome tarayıcısının VPN bağlantısını kullanmasını istiyorsanız, **com.microsoft.office.excel;com.android.chrome** girin.
 
-
-    ![Örnek Android uygulama başına VPN özel ilkesi](..\media\android_per_app_vpn_oma_uri.png)
+![Örnek Android uygulama başına VPN özel ilkesi](./media/android_per_app_vpn_oma_uri.png)
 
 #### Uygulama listenizi kara liste veya beyaz liste olarak ayarlama (isteğe bağlı)
   **KARA LİSTE** değerini kullanarak, VPN bağlantısını *kullanamayacak* uygulamaların listesini belirtebilirsiniz. Diğer tüm uygulamalar VPN üzerinden bağlanır.
@@ -76,6 +77,6 @@ Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve VPN bağlantısın
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
-ms.openlocfilehash: a753ecfa08adcd27049c70889c50e10618ecddba
+ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
+ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
 
 
 ---
@@ -24,6 +24,11 @@ Microsoft Intune’un bu sürümündeki yenilikleri öğrenin. Planlama yapmanı
 
 Bu özelliklerin tümü, sonunda karma müşteri dağıtımlarında (Intune ile Configuration Manager) desteklenecektir. Yeni karma özellikler hakkında daha fazla bilgi için, [Karma Yenilikler sayfamızı](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx) gözden geçirin.
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
+
+>[!IMPORTANT] 
+>Blog gönderisi - Microsoft Intune kullanarak mobil cihazların güncel kalmasını sağlama<br>
+>Yakın zamanda iOS cihazlarına yapılan "Trident" kötü amaçlı yazılım saldırılarından sonra, Intune’un cihazınızı güvenli ve güncel tutmaya yardımcı olabileceği değişik yolları göstermek için [Microsoft Intune kullanarak mobil cihazların güncel kalmasını sağlama](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) adında yeni bir blog gönderisi yayımladık.
+
 
 ## Ağustos 2016
 ## Uygulama yönetimi
@@ -122,8 +127,8 @@ Eylül ayında, iOS için Microsoft Intune Şirket Portalı uygulamasını kulla
 Ağustos’ta, Intune yalnızca iOS 8.0 veya üstünü çalıştıran cihazları destekleyecek, güncelleştirilmiş iOS için Microsoft Intune Managed Browser uygulamasını kullanıma sunacaktır. iOS 7.1 cihazları mevcut Managed Browser uygulamasını kullanmaya devam edebilirler, ama yeni Managed Browser özelliklerine erişebilmeleri ve bu özelliklerden tam olarak yararlanabilmeleri için lütfen kullanıcılarınızı iOS 8.0 veya üstüne güncelleştirmeye teşvik edin.  
 <!---TFS 1313253--->
 
-- **Windows 8 ve Windows Phone 8 için Şirket Portalı uygulamaları Eylül 2016’dan itibaren kullanımdan kalkacaktır** <br/>
-Microsoft Intune Eylül 2016'dan itibaren Windows Phone 8 ve Windows 8 platformları için Microsoft Intune Şirket Portalı uygulamalarına yönelik desteği sonlandıracaktır. Cihazları Windows 8.1 ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
+- **Windows 8 ve Windows Phone 8 için Şirket Portalı uygulamaları kullanımdan kalkacaktır** <br/>
+Microsoft Intune, Ekim 2016'dan itibaren Windows 8 ve Windows Phone 8 Şirket Portalı uygulamaları desteğini kaldıracaktır. Microsoft Intune, Windows Phone 8 platform desteğini de kaldıracaktır. Bunların sonucunda, herhangi bir Windows Phone 8 cihazını kaydetmeniz veya güncelleştirmeniz mümkün olmayacaktır. Önceden kaydedilen Windows Phone 8 ve Windows 8 cihazlarını yönetmeye devam edebilirsiniz. Windows 8 ve Windows Phone 8 cihazlarını Windows 8.1’e ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara bir kesinti olmadan uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
 <!---TFS 1255391--->
 
 <!--- - **Custom Group Targeting of Notification Rules Removal.**<br/>
@@ -153,6 +158,6 @@ Son altı ay içinde Intune'da neler yayınlandığını görmek istiyorsanız, 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

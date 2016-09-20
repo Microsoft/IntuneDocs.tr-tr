@@ -9,12 +9,13 @@
 ## [Cihazları kaydetme](enroll-devices-in-microsoft-intune.md)
 ### [Intune’da cihazları kaydetmeye hazır olun](get-ready-to-enroll-devices-in-microsoft-intune.md)
 #### [iOS ve Mac yönetimi](set-up-ios-and-mac-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile ve Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+#### [Android yönetimi](set-up-android-management-with-microsoft-intune.md)
 #### [Windows cihaz yönetimi ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 Mobile ve Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Şirketin sahip olduğu cihazları yönetme](manage-corporate-owned-devices.md)
 #### [Şirketin sahip olduğu iOS cihazlarını kaydetme](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [iOS Kurulum Yardımcısı kaydı](ios-setup-assistant-enrollment-in-microsoft-intune.md)
-##### [iOS doğrudan kayıt](ios-direct-enrollment-in-microsoft-intune.md)
+##### [iOS doğrudan kayıt anlaşması](ios-direct-enrollment-in-microsoft-intune.md)
 ##### [iOS DEP kaydı](ios-device-enrollment-program-in-microsoft-intune.md)
 #### [Cihaz kayıt yöneticisiyle kaydolma](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [Cihazları IMEI numaralarıyla etiketleme](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
@@ -107,6 +108,7 @@
 #### [MAM ilkelerini oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Android için MAM ilkeleri](android-mam-policy-settings.md)
 #### [iOS için MAM ilkeleri](ios-mam-policy-settings.md)
+#### [MAM ilkelerini doğrulama](validate-mobile-application-management.md)
 #### [İlke uyumluluğunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS uygulamaları arasında veri aktarımını yönetme](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [Son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
@@ -135,6 +137,6 @@
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

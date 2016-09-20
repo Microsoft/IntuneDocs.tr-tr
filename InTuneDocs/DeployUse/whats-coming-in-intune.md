@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
-ms.openlocfilehash: 7f84ad1566431a7a72897750fadbc90cb56ec5ce
+ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
+ms.openlocfilehash: f45fc02003c6b40cc15fabeffff35cf0cde1a830
 
 
 ---
@@ -102,7 +102,7 @@ iOS Şirket Portalı uygulamasının Eylül sürümünde bir web klibini yalnız
 
 ## Hizmeti kullanımdan kaldırma
 ### Windows 8 ve Windows Phone 8 için Şirket Portalı uygulamaları Eylül 2016’dan itibaren kullanımdan kalkacaktır
-Microsoft Intune Eylül 2016'dan itibaren Windows Phone 8 ve Windows 8 platformları için Microsoft Intune Şirket Portalı uygulamalarına yönelik desteği sonlandıracaktır. Cihazları Windows 8.1 ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
+Microsoft Intune, Ekim 2016'dan itibaren Windows 8 ve Windows Phone 8 Şirket Portalı uygulamaları desteğini kaldıracaktır. Microsoft Intune, Windows Phone 8 platform desteğini de kaldıracaktır. Bunların sonucunda, herhangi bir Windows Phone 8 cihazını kaydetmeniz veya güncelleştirmeniz mümkün olmayacaktır. Önceden kaydedilen Windows Phone 8 ve Windows 8 cihazlarını yönetmeye devam edebilirsiniz. Windows 8 ve Windows Phone 8 cihazlarını Windows 8.1’e ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara bir kesinti olmadan uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
 <!---TFS 1255391--->
 
 ### Bildirim Kurallarında Özel Grup Hedeflemenin Kaldırılması
@@ -135,6 +135,6 @@ Son geliştirmelere ilişkin ayrıntılar için bkz. [Microsoft Intune’daki Ye
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

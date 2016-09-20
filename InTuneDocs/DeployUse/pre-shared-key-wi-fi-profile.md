@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
-ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
+ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
+ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 
 
 
@@ -22,14 +22,14 @@ ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 # Önceden paylaşılan anahtar ile Wi-Fi profili oluşturma
 Intune'un **Özel Yapılandırmasını**, önceden paylaşılan anahtar ile Wi-Fi profili oluşturmak üzere kullanma Bu konuda, bir EAP tabanlı Wi-Fi profili oluşturmaya bir örnek de yer almaktadır.
 
-Not:
--   Aşağıda açıklandığı gibi bu ağa bağlanan bir bilgisayardan kodu kopyalamak size daha kolay gelebilir.
+> [!NOTE]
+-   Aşağıda anlatıldığı gibi kodu söz konusu ağa bağlanan bir bilgisayardan kopyalamak size daha kolay gelebilir.
 - Android için, Johnathon Biersack tarafından sağlanan bu [Android PSK Oluşturucu](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)’yu kullanma seçeneğiniz de vardır.
 -   Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
--  iOS için, Apple Configurator’u bir Mac istasyonunda profil yapılandırmak için kullanın. Alternatif olarak, Johnathon Biersack tarafından sağlanan bu [iOS PSK Mobile Config Oluşturucu](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)’yu kullanın.
+-  iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın. Alternatif olarak, Johnathon Biersack tarafından sağlanan bu [iOS PSK Mobile Config Oluşturucu](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)’yu kullanın.
 
 
-1.  Android veya Windows için önceden paylaşılan anahtar ile bir Wi-Fi profili oluşturmak için veya bir EAP tabanlı Wi-Fi profili oluşturmak için, bir ilke oluşturduğunuzda o cihaz platformu için, bir Wi-Fi profili yerine **Özel Yapılandırma** seçin.
+1.  Android veya Windows için önceden paylaşılan anahtar ile bir Wi-Fi profili oluşturmak veya bir EAP tabanlı Wi-Fi profili oluşturmak için, ilke oluşturduğunuzda o cihaz platformu için Wi-Fi profili yerine **Özel Yapılandırma**’yı seçin.
 
 2.  Bir ad ve açıklama sağlayın.
 3.  Yeni bir OMA-URI ayarı ekleyin:
@@ -40,18 +40,27 @@ Not:
 
    c.   **Veri Türü**: "String(XML)" olarak ayarlayın
 
-   d.   **OMA-URI**: 
-        
-- **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-- **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   d.   **OMA-URI**:
 
-Not: Başına nokta karakterini eklediğinizden emin olun.
+    - **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+    - **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin,
-`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    > [!NOTE]
+Başına nokta karakterini eklediğinizden emin olun.
 
-  e.    Değer Alanı: buraya XML kodunuzu yapıştırırsınız. Bir örneğe bakalım. Her değer, ağ ayarlarınıza uyarlanmış olmalıdır. Bazı işaretçiler için kodun açıklamalar bölümüne bakın.
+    SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin,
+    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
+  e. **Değer Alanı**, XML kodunuzu yapıştırdığınız yerdir. Bir örneğe bakalım. Her değer, ağ ayarlarınıza uyarlanmış olmalıdır. Bazı işaretçiler için kodun açıklamalar bölümüne bakın.
+4. **Tamam**’ı seçin, ilkeyi kaydedin ve dağıtın.
+
+    > [!NOTE]
+Bu ilke yalnızca kullanıcı gruplarına dağıtılabilir.
+
+Her cihaz daha sonra denetlediğinde, ilke uygulanır ve cihazda bir Wi-Fi profili oluşturulur. Cihaz ağa otomatik olarak bağlanabilecektir.
+## Android veya Windows Wi-Fi profili
+
+Bir Android veya Windows Wi-Fi profili için XML kodu örneği aşağıdaki verilmiştir:
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -173,25 +182,23 @@ Bir EAP tabanlı Wi-Fi profili için bir XML kodu örneği aşağıdaki verilmi�
       </MSM>
     </WLANProfile>
 
-4.  Tamam’a tıklayın, ardından ilkeyi kaydedin ve dağıtın.
-NOT. Bu ilke yalnızca kullanıcı gruplarına dağıtılabilir
-
-Her cihaz daha sonra denetlediğinde, ilke uygulanır ve cihazda bir Wi-Fi profili oluşturulur. Cihaz ağa otomatik olarak bağlanabilecektir.
 ## XML dosyasını mevcut bir Wi-Fi bağlantısından oluşturun
 Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
-1.     Kablosuz ağa bağlanmış veya bir kablosuz ağa yakın zamanda bağlanmış bir bilgisayarda şu klasörü açın: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid. Doğru olanı bulmak için her profili aramanız gerekeceğinden, birçok kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir.
+1. Kablosuz ağa bağlanmış veya bir kablosuz ağa yakın zamanda bağlanmış bir bilgisayarda şu klasörü açın: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid.
+
+    Doğru olanı bulmak için her profili aramanız gerekeceğinden, çok sayıda kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir.
 3.     Doğru ada sahip olanı bulmak üzere XML dosyalarını arayın.
 4.     Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının Veri alanına yapıştırın.
 
 ## İlkeyi dağıtma
 
-1.   **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
+1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi ve ardından **Dağıtımı Yönet**’i seçin.
 
 2.   **Dağıtımı Yönet** iletişim kutusunda:
 
-    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'a tıklayın.
+    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'ı seçin.
 
-    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**'e tıklayın.
+    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**’i seçin.
 
 Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağıtım hakkında daha fazla bilgi görüntüleyebilirsiniz.
 
@@ -200,6 +207,6 @@ Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağ
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

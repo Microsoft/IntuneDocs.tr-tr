@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# Microsoft Intune ile Windows bilgisayarı istemcisini yükleme
-Windows bilgisayarlarınızın Microsoft Intune istemci yazılımıyla yönetilmesini sağlamanıza yardımcı olması için bu kılavuzu kullanın.
+# Windows bilgisayarlara Intune yazılım istemcisini yükleme
+Windows bilgisayarlar Intune istemci yazılımı yüklenerek kaydedilebilir. Intune istemci yazılımı aşağıdaki yollar kullanılarak yüklenebilir:
 
-## Başlamadan önce
-Intune istemci yazılımını yüklemeye başlamadan önce, istemcinin doğru bir biçimde yüklenmesi için yapılması gerekenleri anlamak üzere [GPO ve Microsoft Intune ilkesi çakışmalarını çözme](resolve-gpo-and-microsoft-intune-policy-conflicts.md) konusunu okuyun ve ardından bu yönergelere geri dönün.
+- El ile yükleme
+- Grup ilkesi kullanarak yükleme
+- Disk görüntüsüne dahil etme
+- Kullanıcıların yüklemesi
 
-## İstemciyi yükleme
-İstemcinin yüklenmesi için bu adımları kullanın:
+## Intune istemci yazılımını indirme
 
--   [İstemci yazılımını indirmek için](#to-download-the-client-software)
-
-Ardından, istemcinin yüklenmesini sağlamak için aşağıdaki yöntemlerden birini veya daha fazlasını kullanın:
-
--   [İstemci yazılımını el ile dağıtmak için](#to-manually-deploy-the-client-software)
-
--   [İstemci yazılımını Grup İlkesi kullanarak otomatik olarak dağıtmak için](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Microsoft Intune istemci yazılımını bir görüntünün parçası olarak yükleme](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-Bir bilgisayarı artık Intune’la yönetmeniz gerekmiyorsa, bilgisayarı devre dışı bırakabilirsiniz; bu durumda, istemci yazılımı da bilgisayardan kaldırılır. Daha fazla bilgi için bkz. [Microsoft Intune bilgisayar istemcisi ile genel Windows bilgisayarı yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
-
-### İstemci yazılımını indirmek için
+Intune istemci yazılımını kullanıcıların kendilerinin yüklemesi dışındaki tüm yöntemler, dağıtılabilmesi için yazılımı indirmenizi gerektirir.
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **İstemci Yazılımını İndir**’e tıklayın
 
-  ![Intune bilgisayar istemcisini indirme](./media/pc-SA-client-download.png)
+  ![Intune bilgisayar istemcisini indirme](../media/pc-sa-client-download.png)
 
 2.  **İstemci Yazılımını İndir** sayfasında, **İstemci Yazılımını İndir**'e tıklayın ve yazılımı içeren **Microsoft_Intune_Setup.zip** paketini ağınızda güvenli bir konuma kaydedin.
 
@@ -56,14 +45,14 @@ Bir bilgisayarı artık Intune’la yönetmeniz gerekmiyorsa, bilgisayarı devre
     > [!IMPORTANT]
     > Ayıklanan **ACCOUNTCERT** dosyasını yeniden adlandırmayın veya kaldırmayın, aksi takdirde istemci yazılımının yüklenmesi başarısız olur.
 
-### İstemci yazılımını el ile dağıtmak için
+## El ile dağıtma
 
 1.  Bir bilgisayarda, istemci yazılımı yükleme dosyalarının bulunduğu klasöre göz atın ve ardından, istemci yazılımını yüklemek için **Microsoft_Intune_Setup.exe**'yi çalıştırın.
 
     > [!NOTE]
     > İstemci bilgisayarın görev çubuğundaki simgenin üzerine geldiğinizde yükleme durumu görüntülenir.
 
-### İstemci yazılımını Grup İlkesi kullanarak otomatik olarak dağıtmak için
+## Grup İlkesi kullanarak dağıtma
 
 1.  **Microsoft_Intune_Setup.exe** ve **MicrosoftIntune.accountcert** dosyalarını içeren klasörde, 32 bit ve 64 bit bilgisayarlar için Windows Installer tabanlı yükleme programlarını ayıklamak için aşağıdaki komutu çalıştırın:
 
@@ -80,7 +69,7 @@ Bir bilgisayarı artık Intune’la yönetmeniz gerekmiyorsa, bilgisayarı devre
 
     Otomatik olarak yazılım dağıtmak için Grup İlkesi'ni kullanma hakkında daha fazla bilgi için Windows Server belgelerinize bakın.
 
-### Microsoft Intune istemci yazılımını bir görüntünün parçası olarak yükleme
+## Bir görüntünün parçası olarak yükleme
 Aşağıdaki örnek yordamı temel olarak kullanabilir ve Intune istemci yazılımını bir işletim sistemi görüntüsünün parçası olarak bilgisayarlara dağıtabilirsiniz:
 
 1.  İstemci yükleme dosyaları **Microsoft_Intune_Setup.exe** ve **MicrosoftIntune.accountcert**'i başvuru bilgisayarındaki **%Systemdrive%\Temp\Microsoft_Intune_Setup** klasörüne kopyalayın.
@@ -109,6 +98,12 @@ Windows Kur tamamlandıktan sonra hedef bilgisayar yeniden başlatıldığında,
 Otomatik kayıt görevi bir sonraki zamanlanan saatte çalıştığında, **WindowsIntuneEnrollPending** kayıt defteri değerinin var olup olmadığını denetler ve hedeflenen bilgisayarı Intune’a kaydetmeye çalışır. Kayıt herhangi bir nedenden dolayı başarısız olursa, görev bir daha çalıştığında kayıt yeniden denenir. Yeniden deneme işlemleri bir ay boyunca devam eder.
 
 Kayıt başarılı olduğunda veya bir ay sonra, Intune Otomatik Kayıt Görevi, **WindowsIntuneEnrollPending** kayıt defteri değeri ve hesap sertifikası hedeflenen bilgisayardan silinir.
+
+## Kullanıcıdan kendi kendine kaydolmasını isteme
+
+Kullanıcılar Intune istemci yazılımını [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com) adresine giderek yükleyebilir. Web portalı cihazın bir Windows bilgisayar olduğunu algılayabiliyorsa, bilgisayarın Intune yazılım istemcisi indirilerek kaydedilmesi istenir. İndirildikten sonra kullanıcılar, bilgisayarlarını yönetime almak için yazılımı yükleyebilir.
+
+![Intune Portalı’nın Intune yazılım istemcisinin indirilmesini istemesi](../media/software-client-download.png)
 
 ## Başarılı istemci dağıtımını izleme ve doğrulama
 Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olması için aşağıdaki yordamlardan birini kullanın.
@@ -139,6 +134,6 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

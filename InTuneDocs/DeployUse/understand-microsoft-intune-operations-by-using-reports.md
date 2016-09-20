@@ -13,8 +13,9 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 8d5dd37c6e41c6c9bb40b9bff6696583d4215730
+ms.sourcegitcommit: 936989a19c836c558efc43e3778180d5d4a8fb7a
+ms.openlocfilehash: e6b81b1bfb53f0a85d5550b7a25ece1b948afeb6
+
 
 
 ---
@@ -22,53 +23,53 @@ ms.openlocfilehash: 8d5dd37c6e41c6c9bb40b9bff6696583d4215730
 # Raporları kullanarak Microsoft Intune işlemlerini anlayın
 Kuruluşunuzdaki yazılım, donanım ve yazılım lisansları hakkında bilgi sağlayan Microsoft Intune raporlarını oluşturma ve yönetmenize yardımcı olması için bu konudaki bilgileri kullanın.
 
-## Raporları Kullanma
-Intune raporları, kuruluşunuzdaki yazılımlar, donanımlar ve yazılım lisansları hakkında bilgi sağlar. Raporlar, geçerli gereksinimleri doğrulamanıza ve gelecekteki harcamaları tahmin etmenize yardımcı olabilir.  **Raporlar** çalışma alanı, raporları oluşturmak ve yönetmek için gerekli araçları sağlar. Raporlar hakkında daha fazla bilgi için bkz. [Raporları kullanarak Microsoft Intune işlemlerini anlayın](understand-microsoft-intune-operations-by-using-reports.md).
+## Raporları kullanma
+Intune raporları, kuruluşunuzdaki yazılımlar, donanımlar ve yazılım lisansları hakkında bilgi sağlar. Raporlar, geçerli gereksinimleri doğrulamanıza ve gelecekteki harcamaları tahmin etmenize yardımcı olabilir.  **Raporlar** çalışma alanı, raporları oluşturmak ve yönetmek için gerekli araçları sağlar. 
 
 ### Rapor türleri
 
 |Rapor türü|Açıklama|
 |---------------|---------------|
-|**Güncelleştirme raporları**|Kuruluşunuzdaki bilgisayarlarda başarılı olan yazılım güncelleştirmelerinin yanı sıra başarısız olan, bekleyen veya gerekli güncelleştirmeleri gösterir. Yazılım güncelleştirmeleri hakkında daha fazla bilgi için bkz. [Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
-|**Algılanan Yazılım raporları**|Kuruluşunuzdaki bilgisayarlarda yüklü yazılımları gösterir ve yazılım sürümlerini içerir. Görüntülenen bilgileri yazılım yayımcısına ve yazılım kategorisine göre filtreleyebilirsiniz. Liste öğesinin yanındaki yön okuna tıklayarak daha fazla ayrıntı (örneğin yüklü olduğu bilgisayarlar) göstermek için listedeki güncelleştirmeleri genişletebilirsiniz.<br /><br />Intune’da hizmetinde bilgisayarları devre dışı bıraktığınızda veya grup üyeliklerini değiştirdiğinizde, bu değişikliklerin algılanan yazılım raporuna yansıtılması birkaç dakika sürebilir. En doğru yazılım envanteri verileri için bilgisayarları kullanımdan kaldırdıktan veya bilgisayarların grup üyeliklerini değiştirdikten sonra, bu bilgisayarları içeren bir algılanan yazılım raporu çalıştırmadan önce birkaç dakika bekleyin.|
-|**Bilgisayar Envanteri raporları**|Kuruluşunuzdaki yönetilen bilgisayarlar hakkında bilgi gösterir. Donanım satın almayı planlamak ve kuruluşunuzdaki kullanıcıların donanım gereksinimlerini daha iyi anlamak için bu raporu kullanın. Yönetilen bilgisayarlarla çalışma hakkında daha fazla bilgi için bkz. [Microsoft Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md).|
-|**Mobil Cihaz Envanteri raporları**|Kuruluşunuzdaki mobil cihazlarla ilgili bilgileri gösterir. Görüntülenen bilgileri gruplara, cihazın engellemeleri kaldırılmış veya kök erişim izni verilmiş olup olmadığına ve işletim sistemine göre filtreleyebilirsiniz.|
-|**Lisans Satın Alma raporları**|Seçilen lisans gruplarında, tüm lisanslı yazılımlar için lisans sözleşmelerine göre yazılım başlıklarını göster. Yazılım lisans bilgileri 24 saatten uzun bir süre boyunca yenilenmezse, bir lisans raporu oluşturduğunuz sırada yenilenir. Lisans raporu, kullanılmakta olan yazılım başlıklarının tam bir hesabını veya sözleşmelerle uyumluluk kanıtı oluşturmaz. Rapor, kuruluşunuz için lisans kararları almanıza yardımcı olmak için kullanılan bir araçtır. Intune, Microsoft toplu lisanslaması olabilecek bazı ürünleri algılayamayabilir. Kullanılabilir filtreleri şunlardır:<br /><br />**Tüm sözleşmeler**, Intune tarafından yönetilen tüm lisanslı yazılım ürünlerini gösterir.<br /><br />**Toplu lisans sözleşmeleri** yalnızca VLSC yazılım ürünlerini gösterir.<br /><br />**Diğer yazılım lisansı sözleşmeleri**, VLSC dışında yönetilen yazılım ürünlerini gösterir.|
-|**Lisans yükleme raporları**|Kuruluşunuzdaki bilgisayarlarda yüklü yazılımları, Toplu Lisanslama Hizmeti Merkezi'ne (VLSC) göre geçerli lisans sözleşmenizin kapsamı ile karşılaştırın. Filtreler aşağıdakileri içerir:<br /><br />**Tüm sözleşmeler**, Intune tarafından yönetilen tüm lisanslı yazılım ürünlerini gösterir.<br /><br />**Toplu lisans sözleşmeleri** yalnızca VLSC yazılım ürünlerini gösterir.<br /><br />**Diğer yazılım lisansı sözleşmeleri**, VLSC dışında yönetilen yazılım ürünlerini gösterir.|
-|**Hüküm ve Koşullar raporları**|Hüküm ve koşullarınızı kullanıcıların kabul edip etmediğini ve hangi sürümü kabul ettiklerini gösterir. Kendilerine dağıtılan hüküm ve koşulları kabul edip etmediklerini görmek üzere 10’a kadar kullanıcı belirtebilir veya bunlara dağıtılan belirli bir hükmün kabul edilme durumunu gösterebilirsiniz.|
-|**Uyumsuz Uygulamalar raporları**|Uyumlu ve uyumsuz uygulamalar listelerinizdeki uygulamaları yükleyen kullanıcılar hakkında bilgi gösterir. Şirket uygulama ilkeleriniz ile uyumlu olmayan kullanıcıları ve cihazları bulmak için bu raporu kullanın.|
-|**Sertifika Uyumluluğu raporları**|SCEP veya PKCS #12 (.PFX) aracılığıyla kullanıcılara ve cihazlara hangi sertifikaların verildiğini gösterir. Verilen, süresi dolan ve iptal edilen sertifikaları bulmak için bu raporu kullanın.|
-|**Cihaz Geçmişi raporları**|Kullanımdan kaldır, temizle ve sil eylemlerinin geçmişe dönük bir günlüğünü gösterir. Geçmişte cihazda eylemleri kimin başlattığını görmek için bu raporu kullanın.|
-|**Cihaz durumu kanıtlama raporları**|Mobil cihazların durumunu gösterir.|
+|**Update Reports**|Kuruluşunuzda başarılı olan yazılım güncelleştirmelerini gösterir. Ayrıca başarısız, bekleyen veya gerekli güncelleştirmeleri de gösterir. Yazılım güncelleştirmeleri hakkında daha fazla bilgi için bkz. [Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
+|**Algılanan Yazılım raporları**|Kuruluşunuzdaki bilgisayarlarda yüklü yazılımı gösterir. Yazılım sürümleri dahil edilir. Görüntülenen bilgileri yazılım yayımcısına ve yazılım kategorisine göre filtreleyebilirsiniz. Liste öğesinin yanındaki yön okunu seçerek (bir güncelleştirmenin yüklü olduğu bilgisayarlar gibi) daha fazla ayrıntı göstermek için listedeki güncelleştirmeleri genişletebilirsiniz.<br /><br />Intune’da bilgisayarları devre dışı bıraktığınızda veya grup üyeliklerini değiştirdiğinizde, bu değişikliklerin Algılanan Yazılım raporuna yansıtılması birkaç dakika sürebilir. En doğru yazılım envanteri verileri için bilgisayarları kullanımdan kaldırdıktan veya bilgisayarların grup üyeliklerini değiştirdikten sonra, bu bilgisayarları içeren bir algılanan yazılım raporu çalıştırmadan önce birkaç dakika bekleyin.|
+|**Computer Inventory Reports**|Kuruluşunuzdaki yönetilen bilgisayarlar hakkında bilgi gösterir. Donanım satın almayı planlamak ve kuruluşunuzdaki kullanıcıların donanım gereksinimlerini daha iyi anlamak için bu raporu kullanın. Yönetilen bilgisayarlarla çalışma hakkında daha fazla bilgi için bkz. [Microsoft Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md).|
+|**Mobil Cihaz Envanter Raporları**|Kuruluşunuzdaki mobil cihazlarla ilgili bilgileri gösterir. Görüntülenen bilgileri gruplara, cihazın engellemeleri kaldırılmış veya kök erişim izni verilmiş olup olmadığına ve işletim sistemine göre filtreleyebilirsiniz.|
+|**License Purchase Reports**|Seçilen lisans gruplarında, tüm lisanslı yazılımlar için lisans sözleşmelerine göre yazılım başlıklarını göster. Yazılım lisans bilgileri 24 saatten uzun bir süre boyunca yenilenmezse, bir lisans raporu oluşturduğunuz sırada yenilenir. Lisans raporu, kullanılmakta olan yazılım başlıklarının tam bir hesabını veya sözleşmelerle uyumluluk kanıtı oluşturmaz. Rapor, kuruluşunuz için lisans kararları almanıza yardımcı olmak için kullanılan bir araçtır. Intune, Microsoft toplu lisanslaması olabilecek bazı ürünleri algılayamayabilir. Kullanılabilir filtreleri şunlardır:<br /><br />**Tüm sözleşmeler**, Intune tarafından yönetilen tüm lisanslı yazılım ürünlerini gösterir.<br /><br />**Toplu lisanslama sözleşmeleri** yalnızca Toplu Lisanslama Hizmeti Merkezi (VLSC) yazılım ürünlerini gösterir.<br /><br />**Diğer yazılım lisanslama sözleşmeleri**, VLSC dışında yönetilen yazılım ürünlerini gösterir.|
+|**License Installation Reports**|Kuruluşunuzdaki bilgisayarlarda yüklü yazılımları, VLSC’ye göre geçerli lisans sözleşmenizin kapsamı ile karşılaştırır. Filtreler aşağıdakileri içerir:<br /><br />**Tüm sözleşmeler**, Intune tarafından yönetilen tüm lisanslı yazılım ürünlerini gösterir.<br /><br />**Toplu lisans sözleşmeleri** yalnızca VLSC yazılım ürünlerini gösterir.<br /><br />**Diğer yazılım lisanslama sözleşmeleri**, VLSC dışında yönetilen yazılım ürünlerini gösterir.|
+|**Terms and Conditions Reports**|Dağıtım yaptığınız kullanıcıların hüküm ve koşulları kabul edip etmediklerini ve hangi sürümü kabul ettiklerini gösterir. Dağıtımı yapılmış herhangi bir hüküm veya koşulun 10 adede kadar kullanıcı tarafından kabul edilip edilmediğini veya bu kişilere dağıtılmış belirli bir hükmün kabul durumunu gösterebilirsiniz.|
+|**Uyumsuz Uygulamalar Raporları**|Uyumlu ve uyumsuz uygulamalar listelerinizdeki uygulamaları yükleyen kullanıcılar hakkında bilgi gösterir. Şirket uygulama ilkeleriniz ile uyumlu olmayan kullanıcıları ve cihazları bulmak için bu raporu kullanın.|
+|**Certificate Compliance Reports**|SCEP veya PKCS #12 (.PFX) aracılığıyla kullanıcılara ve cihazlara hangi sertifikaların verildiğini gösterir. Verilen, süresi dolan ve iptal edilen sertifikaları bulmak için bu raporu kullanın.|
+|**Device History Reports**|Kullanımdan kaldır, temizle ve sil eylemlerinin geçmişe dönük bir günlüğünü gösterir. Geçmişte cihazda eylemleri kimin başlattığını görmek için bu raporu kullanın.|
+|**Sistem Durumu Kanıtlama Raporları**|Mobil cihazların durumunu gösterir.|
 |**Mac OS X Donanım Raporu**|Seçtiğiniz gruplarda kayıtlı olan tüm Mac OS X cihazları için donanım ayrıntılarını görüntüler. Bu cihazlardan toplanan donanım envanteri hakkında bilgi için bkz. [Microsoft Intune’da envanterle cihazlarınızı anlama](understand-your-devices-with-inventory-in-microsoft-intune.md).|
-|**Mac OS X Yazılım Raporu**|Seçtiğiniz gruplardaki tüm Mac OS X cihazlarında yüklü yazılımları görüntüler. Raporda yazılım adı (paket kimliği olarak), kısa sürüm adı (veya kolay ad), sürüm ve yazılımın yüklü olduğu cihaz sayısı listelenir.|
+|**Mac OS X Yazılım Raporu**|Seçtiğiniz gruplardaki tüm Mac OS X cihazlarında yüklü olan yazılımı gösterir. Raporda yazılım adı (paket kimliği olarak), kısa sürüm adı (veya kolay ad), sürüm ve yazılımın yüklü olduğu cihaz sayısı listelenir.|
 
 #### Bir rapor oluşturmak için
 
-1.  Intune yönetim konsolunda **Raporlar**'a tıklayın ve ardından, yukarıdaki tabloda açıklandığı gibi oluşturmak istediğiniz rapor türüne tıklayın.
+1.  Intune yönetici konsolunda **Raporlar**’ı seçin. Ardından, önceki tabloda açıklandığı gibi oluşturmak için istediğiniz rapor türünü seçin.
 
-2.   **Yeni Rapor Oluştur** sayfasında, varsayılan değerleri kabul edin veya raporun döndüreceği sonuçlara filtre uygulamak için değerleri özelleştirin. Örneğin, algılanan yazılım raporunda yalnızca Microsoft tarafından yayımlanan yazılımların görüntülenmesini seçebilirsiniz.
+2.  **Yeni Rapor Oluştur** sayfasında, varsayılan değerleri kabul edin veya raporun döndüreceği sonuçlara filtre uygulamak için değerleri özelleştirin. Örneğin, Algılanan Yazılım raporunda yalnızca Microsoft tarafından yayımlanan yazılımların görüntülenmesini seçebilirsiniz.
 
-3.  Raporu yeni bir pencerede açmak için **Raporu Görüntüle** 'ye tıklayın.
+3.  Raporu yeni bir pencerede açmak için **Raporu Görüntüle**'yi seçin.
 
-Raporu görüntülenen sütunlardan herhangi birine göre sıralamak için sütun başlığına tıklayın. Ayrıca, bazı raporlar daha fazla ayrıntı göstermek için listedeki öğeleri genişletmenize izin verir.
+Raporu görüntülenen sütunlardan birine göre sıralamak için sütunun başlığına tıklayın. Ayrıca, bazı raporlar daha fazla ayrıntı göstermek için listedeki öğeleri genişletmenize izin verir.
 
 ## Daha fazla rapor eylemi
 Ayrıca, raporları aşağıdaki eylemleri destekler:
 
 |Eylem|Daha fazla bilgi|
 |----------|--------------------|
-|**Yazdırma**|Açık bir raporda yazdırma simgesine tıklayın ve yönergeleri izleyin.|
-|**Dışarı aktarma**|Açık bir raporda dışarı aktarma simgesine tıklayın ve yönergeleri izleyin. Bir raporu virgülle ayrılmış değerler (.csv) veya HTML biçiminde dışarı aktarabilirsiniz.|
-|**Kaydet**| **Yeni Rapor Oluştur** sayfasında, her kullanıcı 100'e kadar rapor kaydedebilir. Rapor parametrelerini gereksinimlerinize göre yapılandırın ve ardından **Kaydet**'e veya farklı bir ad kullanmak istiyorsanız **Farklı Kaydet** 'e tıklayın.|
-|**Yükleme**|Daha önceden kaydedilen tüm rapor parametreleri kümelerini almak için **Yeni Rapor Oluştur** sayfasında **Yükle** 'ye tıklayın.|
-|**Sil**| **Raporlar** çalışma alanında, istenen rapor türü seçin, **Yükle**'ye tıklayın ve ardından rapor listesinde, raporun yanındaki sil (x) simgesine tıklayın.|
+|**Yazdırma**|Açık bir raporda yazdırma simgesini seçin ve yönergeleri izleyin.|
+|**Dışarı aktarma**|Açık bir raporda dışarı aktarma simgesini seçin ve yönergeleri izleyin. Bir raporu virgülle ayrılmış değerler (.csv) veya HTML biçiminde dışarı aktarabilirsiniz.|
+|**Kaydet**| **Yeni Rapor Oluştur** sayfasında, her kullanıcı 100'e kadar rapor kaydedebilir. Rapor parametrelerini gereksinimlerinize göre yapılandırın ve ardından **Kaydet**'e veya (farklı bir ad kullanmak istiyorsanız) **Farklı Kaydet** 'e tıklayın.|
+|**Yükleme**|Daha önceden kaydedilen tüm rapor parametre kümelerini almak için **Yeni Rapor Oluştur** sayfasında **Yükle**'yi seçin.|
+|**Sil**|**Raporlar** çalışma alanında, istenen rapor türünü ve **Yükle**’yi seçin. Ardından, raporlar listesinde, raporun yanındaki sil (x) simgesini seçin.|
 
 ### Ayrıca bkz.
 [Microsoft Intune ile izleme ve raporlama](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

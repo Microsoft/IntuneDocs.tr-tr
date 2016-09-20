@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
-ms.assetid: 242de106-36a0-469f-a89c-4173ae8bdd7f
+ms.assetid: 0be369d5-d4ad-433a-8a81-c04b070d76e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
 ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
-ms.openlocfilehash: 7c441c2c1d3efaad12d3189ec535f24ab923a75f
+ms.openlocfilehash: 26c841dc75637d032d3cf8dc83c83d096d2db688
 
 
 ---
@@ -22,13 +22,13 @@ ms.openlocfilehash: 7c441c2c1d3efaad12d3189ec535f24ab923a75f
 
 Bu soru dizisine vereceğiniz yanıtlar, yönettiğiniz cihazları kaydetmek için en iyi yöntemi belirlemenize yardımcı olacaktır.
 
-## **Hangi KCG platformunu etkinleştirmek istiyorsunuz?**
+## **Paylaşılan cihazlarınızda hangi işletim sistemi çalıştırılıyor?**
 
-> [!div class="button"]
-[Android >](/intune/deploy-use/set-up-android-management-with-microsoft-intune)<br>[iOS ve Mac >](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)<br>[Windows 10 Mobile ve Windows Phone >](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)<br>[Windows bilgisayarlar >](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+  > [!div class="button"]
+  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)<br>[Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)<br>[iOS >](choose-how-to-enroll-devices5.md)
 
-> [!div class="button"]
-[< Geri](choose-how-to-enroll-devices1.md)
+  > [!div class="button"]
+  [< Geri](choose-how-to-enroll-devices3.md)
 
 
 

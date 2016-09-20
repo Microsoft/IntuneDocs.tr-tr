@@ -2,7 +2,7 @@
 title: "Uygulama dağıtımı sorunlarını giderme | Microsoft Intune"
 description: "Bu konu, Microsoft Intune’la uygulama dağıtımı sorunlarını çözmenize yardımcı olur."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,29 +13,18 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
+ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 
 
 ---
 
 # Microsoft Intune’da uygulama dağıtımı sorunlarını giderme
-Bu konu, Microsoft Intune’la uygulama dağıtımı sorunlarını çözmenize yardımcı olur.
+Intune ile uygulamalarınızı dağıtma ve yönetme konusunda sorun yaşıyorsanız buradan başlayın. Bu konuda, karşılaşabileceğiniz bazı yaygın sorunlar çözümleriyle birlikte sunulmuştur.
 
-Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
+## Yaygın uygulama dağıtım sorunları
 
-
-## Normal uygulama dağıtımı sorunları
-
-### Microsoft Intune şirket portalında oturum açamıyorsanız
-
-1.  Hesabınızın [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854) olup olmadığını ve devre dışı bırakılıp bırakılmadığını kontrol edin.
-
-2.  [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854) bu hesabın sizin için sağlandığından emin olun.
-
-3.  [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854), Intune’da oturumu açmak için şu biçimdeki doğru kullanıcı adını ve parolayı kullandığınızdan emin olun: **ali@etkialanı.com**.
-
-### BT İletişim bilgileri şirket portalında yoksa
+### Şirket Portalı’nda BT iletişim bilgileri yok
 
 1.  Intune yönetim konsolunda **Yönetici**&gt;**Şirket Portalı**’nı seçin.
 
@@ -57,15 +46,6 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek
 
 4.  iOS uygulaması indirme ilerleme çubuğu tamamlanır ancak uygulama yükleme başarısız olursa, sağladığınız uygulama dosyalarıyla ilgili bir sorun olabilir.
 
-### iOS uygulamasının bağlantısı sizi iTunes App Store'daki önceki konumlardan birine geri döndürüyorsa
-
-1.  Geçerli iTunes App Store oturumu önceki uygulama sayfasına açılıyor.
-
-2.  Cihazda iTunes App Store'u kapatın ve bağlantıyı açmayı yeniden deneyin.
-
-### Bir iOS uygulaması başlatılırken hata iletisi alıyorsanız
-
-1.  Uygulamanın sona erme tarihi geçerli olmayabilir.
 
 ### Uygulamanız karşıya yüklenirken "sürüyor" durumunda takılıyorsa
 
@@ -78,12 +58,6 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek
 1.  Kuruluşunuzun güvenlik duvarının Apple sağlama ve sertifika web sitelerine erişim izni verdiğinden emin olun.
 
 2.  Daha fazla bilgi için Apple geliştirici belgelerini görüntüleyin.
-
-### Hata: Yayımcı yok
-Üçüncü taraf lisans sözleşmesini eklemek için **Başka Yazılım Anlaşması Ekle**’yi kullanıyorsunuz. Yayıncıyı **Diğer yazılım lisanslama anlaşmaları** sayfasından eklemeyi deniyorsunuz. Sayfa, mevcut yayımcıların alfabetik olarak sıralanmış listesini sağlar.
-Eksik yayımcıyı giriyorsunuz ancak **Yayımcı yok** hatasını alıyorsunuz.
-
-Bu, bilinçli olarak böyle tasarlanmıştır. Intune, yalnızca popüler yazılım markaları için lisans izleme sağlar. Intune’da, yazılımın lisanslama iş yükünde bir seçenek olarak sağlanabilmesi için en az 4 ayrı hesap tarafından raporlanması gerekir.
 
 ### Yönetilen uygulamalar yükleme durumunu bildirmiyorsa
 
@@ -98,13 +72,13 @@ Aşağıdaki tabloda Intune uygulama dağıtımı sırasında oluşabilecek yayg
 |0x80073CF0|Paket açılamadı.|Olası nedenler:<br /><br />-   Paket imzasız.<br />-   Yayımcı adı, imzalama sertifikası konusuyla eşleşmiyor.<br /><br />Daha fazla bilgi için AppxPackagingOM olay günlüğünü denetleyin.|
 |0x80073CF3|Pakette güncelleştirme, bağımlılık veya çakışma doğrulaması başarısız oldu|Olası nedenler:<br /><br />-   Gelen paket yüklü bir paketle çakışıyor.<br />-   Belirtilen paket bağımlılığı bulunamadı.<br />-   Paket doğru işlemci mimarisini desteklemiyor.<br /><br />Daha fazla bilgi için sunucu AppXDeployment-Server olay günlüğünü denetleyin.|
 |0x80073CFB|Belirtilen paket zaten yüklü ve paketin yeniden yüklenmesi engellendi|Zaten yüklü olan paketten farklı bir paket yüklüyorsanız bu hatayı alabilirsiniz. Dijital imzanın paketin bir parçası olduğunu da onaylayın. Bir paket yeniden oluşturulduğunda veya yeniden imzalandığında, bu paket artık önceden yüklenmiş paket ile aynı bit düzeyinde değildir. Bu hatayı düzeltmek için kullanılabilecek iki seçenek aşağıda belirtilmiştir:<br /><br />-   Uygulamanın sürüm sayısını artırın ve ardından paketi yeniden oluşturup yeniden imzalayın.<br />-   Yeni paketi yüklemeden önce sistem üzerindeki her kullanıcı için eski paketi kaldırın.|
-|0x87D1041C|Uygulama yükleme başarılı oldu ancak uygulama algılanmadı.|- Kullanıcı, uygulamayı şirket portalından yükledi, ardından doğrudan cihazdan kaldırdı. Uygulamayı şirket portalından yeniden yükleyin.<br /><br />- Intune tarafından algılandığı şekilde bir iş kolu uygulaması sürüm numarası ve cihazda yüklü sürüm arasında bir uyuşmazlık olabilir. Intune'da doğru sürüm olduğundan emin olun ve uygulamayı yeniden yükleyin.|
+|0x87D1041C|Uygulama yükleme başarılı oldu ancak uygulama algılanmadı.|- Uygulama Intune tarafından başarıyla dağıtıldı, daha sonra (olasılıkla son kullanıcı tarafından) kaldırıldı. Kullanıcıya uygulamayı şirket portalından yeniden yüklemesini söyleyin. Gerekli uygulamalar, cihazın bir sonraki oturum açısında otomatik olarak yüklenir.|
 
 ### Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO5-->
 
 

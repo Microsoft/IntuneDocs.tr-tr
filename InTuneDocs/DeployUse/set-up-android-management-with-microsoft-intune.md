@@ -13,26 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
-ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
+ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
+ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
 
 
 ---
 
 # Android cihaz yönetimini ayarlama
-Android cihazınızı ayarlamak için [buradan](../enduser/using-your-android-device-with-intune.md) yardım alabilirsiniz.
-
-Microsoft Intune ile, platform için başka çalışma yapmaya gerek kalmadan Android cihazlar için KCG’yi ("kendi cihazını getir") etkinleştirebilirsiniz.
-
-Daha fazla bilgi edinmek için aşağıdaki cihaz platformu seçenekleri arasından seçim yapın:
-
-> [!div class="op_single_selector"]
-- [Microsoft Intune ile Android yönetimini ayarlama](set-up-android-management-with-microsoft-intune.md)
-- [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Microsoft Intune ile Windows Phone yönetimin ayarlama](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Microsoft Intune ile Windows cihazı yönetimini ayarlama](set-up-windows-device-management-with-microsoft-intune.md)
-
-Android mobil cihazlar kullanıcıların Google Play’den erişilebilen Şirket Portalı uygulamasını kullanarak kaydolmalarına imkan tanır. Kullanıcıların cihazlarını Intune‘a kaydetmesine olanak sağlamak için aşağıdaki adımları tamamlayın.
+Bir Intune yöneticisi olarak Android cihazlarını yönetmeyi Şirket Portalı’ndan etkinleştirebilirsiniz. Kullanıcılar cihazlarını Google Play’den edinilebilecek Şirket Portalı uygulamasını kullanarak kaydedebilir.
 
 1.  **Intune’u ayarlama**<br>
     Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
@@ -52,6 +40,6 @@ Android mobil cihazlar kullanıcıların Google Play’den erişilebilen Şirket
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

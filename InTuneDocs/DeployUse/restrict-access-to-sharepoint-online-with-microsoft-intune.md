@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
-ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
+ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
+ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
 
 
 ---
@@ -83,6 +83,9 @@ AAD DRS, Intune ve Office 365 müşterileri için otomatik olarak etkinleştiril
   - İlke etki alanına katılmayı gerektirecek şekilde ayarlanmışsa ve bilgisayar etki alanına katılmamışsa, BT yöneticisine başvurulması gerektiğini belirten bir ileti görüntülenir.
 
   - İlke etki alanına katılmayı veya uyumluluğu gerektirecek şekilde ayarlandıysa ve bilgisayar iki gereksinimi de karşılamıyorsa, Şirket Portalı uygulamasını yükleme ve kaydetme yönergelerini içeren bir ileti görüntülenir.
+  >[!NOTE]
+  >Intune bilgisayar istemcisi çalıştıran bilgisayarlarda koşullu erişim desteklenmez.
+
 -    [Office 365 modern kimlik doğrulamasının etkin olması](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) ve en son Office güncelleştirmelerine sahip olması gerekir.
 
     Modern kimlik doğrulama, Office 2013 Windows istemcileri için Active Directory Authentication Library (ADAL) tabanlı oturum açma özelliği sunar ve **çok faktörlü kimlik doğrulaması** ile **sertifika tabanlı kimlik doğrulaması** gibi daha üst düzey güvenlik sağlar.
@@ -178,7 +181,7 @@ Koşullu erişim ilkesini dağıtmanız gerekmez, hemen geçerli olur.
 
 Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aşağıdaki **Filtreler**arasından birini seçin:
 
--   **AAD ile kayıtlı olmayan cihazlar** : Bu cihazların SharePoint Online’a erişimi engellenir.
+-   **AAD ile kayıtlı olmayan cihazlar**: Bu cihazların SharePoint Online’a erişimi engellenir.
 
 -   **Uyumlu olmayan cihazlar** : Bu cihazların SharePoint Online’a erişimi engellenir.
 
@@ -189,6 +192,6 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

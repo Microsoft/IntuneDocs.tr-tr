@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,22 +22,22 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Android cihazınızı Intune ile kullanma
 
-Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlerin bağlantılarını içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettiği ve aşağıdaki kategorilere ayrılan adımları görmek için bu bilgiye başvurabilir: 
+Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlerin bağlantılarını içerir. BT yöneticileri, aşağıdaki kategorilerde gruplanmış olan çeşitli görevleri gerçekleştirmek üzere kullanıcıların atması gereken adımları görmek için bu bilgilere başvurabilir:
 
-- Şirket portalı uygulamasının yüklenmesi ve Intune kaydı 
+- Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
 - Kayıt sonrası yönetim görevleri
 - Uyumluluk sorunları
 
 ## Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
 
-Bu bölümdeki bilgiler, Intune Şirket Portalı’nı yüklemenize ve Android cihazlarını kaydetmenize yardımcı olur.
+Bu bölümdeki bilgiler, Android cihazlarda Intune Şirket Portalı’nı yükleme ve cihaz kaydında size yardımcı olur.
 
 - [Cihazınızı Intune’a kaydetme](enroll-your-device-in-Intune-android.md)
 - [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Cihazınız Intune’a kaydolduğunda yapabilecekleriniz
 
-Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildikten sonra gerçekleştirebileceğiniz eylemlerde yardımcı olur.
+Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildikten sonra yapabileceğiniz işlemlerde size yardımcı olur.
 
 - [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-android.md)
 - [Cihazınızı şifreleme](encrypt-your-device-android.md)
@@ -54,7 +54,7 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildikten sonra ger
 
 ## Cihazınızla ilgili sorunları giderme
 
-Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşılaşabileceğiniz sorunları düzeltmenize yardımcı olur.
+Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşılaşabileceğiniz sorunların çözümünde size yardımcı olur.
 
 - [BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olmak için Ayrıntılı Günlük kullanın](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
@@ -71,6 +71,6 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşı
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

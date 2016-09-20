@@ -4,7 +4,7 @@ description: "Microsoft Intune ile, Windows 10 Mobile veya Windows Phone cihazla
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,55 +13,58 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
-ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
+ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
+ms.openlocfilehash: 76aaa33832dc1b765e248f85f739a4955ca90e2d
 
 
 ---
 
 
 # Microsoft Intune ile Windows Phone ve Windows 10 Mobile yönetimini ayarlama
-Windows cihazınızı ayarlamak için [buradan](../enduser/using-your-windows-device-with-intune.md) yardım alabilirsiniz.
 
-Windows 10 Mobile veya Windows Phone cihazlarını Microsoft Intune’la yönetebilmeniz için, önce cihazların Intune’la iletişim kurabilmesi gerekir. Bunu basitleştirmek için bir DNS kaydı oluşturabilirsiniz ve bu sayede kullanıcıların sunucu adresini girmesi gerekmez. Aşağıdaki adımlar, kullanıcılar için kaydın nasıl basitleştirileceğini açıklar.  
+Bir Intune yöneticisi olarak Windows 10 Mobile ve Windows Phone cihazlar için kaydolmayı ve yönetmeyi iki biçimde etkinleştirebilirsiniz:
 
-Çoğu senaryoda, kullanıcılar Şirket Portalı uygulamasını Windows Mağazası’ndan yükleyebilir. Windows Phone 8.0 cihazlarını yönetiyorsanız veya Windows Phone cihazlarına Şirket Portalı’nı dağıtmanız gerekiyorsa, Şirket Portalı uygulamasını da indirmeli ve imzalamalısınız. Bkz. [Windows Phone 8.0 yönetimini ayarlama](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
-
-1.  **Intune’u ayarlama** Henüz bu işlemi yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
-
-2.  **Kayıt sunucusu adresi için bir DNS diğer adı ayarlama** (isteğe bağlı)
-
-    DNS diğer adı (CNAME kayıt türü) oluşturmak, kullanıcıların cihazlarını kaydetmelerini kolaylaştırır. CNAME DNS girdisi Windows cihaz yönetiminde isteğe bağlı olsa da, Windows cihaz yönetimi işlemi sırasında işleri kolaylaştırmak için, gerektiğinde bir veya birden çok kayıt oluşturmanız önerilir. Hiç CNAME kaydı bulunamazsa, kullanıcıdan MDM sunucu adını el ile girmesi istenir.
-
-  1.  Şirketinizin etki alanı için **CNAME** DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz. Birden çok doğrulanmış etki alanı varsa, her etki alanı için bir CNAME kaydı oluşturun. CNAME kaynak kayıtları şu bilgileri içermelidir:
-
-      |TÜR|Konak adı|Şunu gösterir:|TTL|
-      |--------|-------------|-------------|-------|
-      |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 Saat|
-      |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Saat|
-
-      DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yaygınlaştırılıncaya kadar Intune’da DNS değişikliğini doğrulayamazsınız.
-
-      **EnterpriseEnrollment-s.manage.microsoft.com** – E-postanın etki alanı adından etki alanı tanıma ile Intune hizmetine yeniden yönlendirmeyi destekler.
-
-      **EnterpriseRegistration.windows.net** – İş veya okul hesabı kullanılarak Azure Active Directory’ye kaydolacak Windows 8.1 ve Windows 10 Mobile cihazlarını destekler.
-
-    2.  [Intune yönetim konsolunda](http://manage.microsoft.com), **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows Phone**’a tıklayın.
-
-      ![Windows için mobil cihaz yönetimini ayarlama iletişim kutusu](../media/windows-device-enrollment.png)
-
-    3.  **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin doğrulanmış etki alanının URL'sini yazın ve ardından **Otomatik Algılamayı Sına**'ya tıklayın.
-
-    4.  Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir.
-        - [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-        - [Windows cihazları için son kullanıcı rehberi](../enduser/using-your-windows-device-with-intune.md)
+- **[Azure AD ile otomatik kaydolma](#azure-active-directory-enrollment)** - Windows 10 ve Windows 10 Mobile kullanıcıları cihazlarını, cihaza bir iş veya okul hesabı ekleyerek kaydeder
+- **[Şirket Portalı kaydı](#company-portal-app-enrollment)** - Windows Phone 8.1 ve üzeri cihazlar, Şirket Portalı uygulaması indirilip yüklenip uygulamaya iş veya okul hesabı kimlik bilgileri girilerek kaydedilir.
 
 
+[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+
+## Şirket Portalı uygulaması kaydı
+Kullanıcıların, Intune Şirket Portalı uygulamasını yükleyip cihazlarını kaydetmelerine izin verebilirsiniz. DNS CNAME oluşturmak, kullanıcıların sunucu adı girmeden bağlantı kurmalarına ve Intune’a kaydolmalarına yardımcı olur. Windows Phone 8.0 cihazlarını yönetiyorsanız veya Windows Phone cihazlarına Şirket Portalı’nı dağıtmanız gerekiyorsa, Şirket Portalı uygulamasını da indirmeli ve imzalamalısınız. Bkz. [Windows Phone 8.0 yönetimini ayarlama](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
+
+1.  **Intune’u ayarlama**<br>Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
+
+2.  **CNAME’ler oluşturma** (isteğe bağlı)<br>Şirketinizin etki alanı için **CNAME** DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz. Birden fazla doğrulanan etki alanı varsa, her bir etki alanı için bir CNAME kaydı oluşturun. CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
+
+  |TÜR|Konak adı|Şunu gösterir:|TTL|
+  |--------|-------------|-------------|-------|
+  |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 Saat|
+  |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Saat|
+  DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yaygınlaştırılıncaya kadar Intune’da DNS değişikliğini doğrulayamazsınız.
+
+  `EnterpriseEnrollment-s.manage.microsoft.com` – E-postanın etki alanı adından etki alanını tanıma ile Intune hizmetine yeniden yönlendirmeyi destekler.
+
+  `EnterpriseRegistration.windows.net` – İş veya okul hesabı kullanılarak Azure Active Directory’ye kaydolacak Windows 8.1 ve Windows 10 Mobile cihazları destekler
+
+  Şirketiniz kullanıcı kimlik bilgileri için birden fazla etki alanı kullanıyorsa, her etki alanı için bir CNAME kaydı oluşturun.
+
+  Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden EnterpriseEnrollment-s.manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz. DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yaygınlaştırılıncaya kadar Intune’da DNS değişikliğini doğrulayamazsınız.
+
+3.  **CNAME’i doğrulama**<br>[Intune yönetim konsolunda](http://manage.microsoft.com), **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows Phone**’a tıklayın. **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin doğrulanmış etki alanının URL'sini yazın ve ardından **Otomatik Algılamayı Sına**'ya tıklayın.
+
+    ![Windows için mobil cihaz yönetimini ayarlama iletişim kutusu](../media/windows-phone-enrollment.png)
+
+4.  **İsteğe bağlı adımlar**<br>**Dışarıdan yükleme anahtarı ekleme** adımı Windows 10 için gerekli değildir. **Karşıya Kod İmzalama Sertifikası Yükleme** adımı yalnızca cihazlara Windows Mağazası’nda bulunmayan iş kolu (LOB) uygulamaları dağıtacaksanız gereklidir. [Daha fazlasını öğrenin](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+
+5.  **Kullanıcılara bildirme**<br>Kullanıcılarınızın cihazlarını nasıl kaydedeceklerini ve cihazları yönetim altına alındıktan sonra neler bekleyebileceklerini bilmeleri gerekir.
+    - [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [Windows cihazları için son kullanıcı rehberi](../enduser/using-your-windows-device-with-intune.md)
 
 Cihazlara Şirket Portalı’nı dağıtmayacaksanız, başka bir işlem yapmak gerekmez.  Yönetim konsolundaki 2. ve 3. adımlar rahatça yoksayılabilir.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO5-->
 
 

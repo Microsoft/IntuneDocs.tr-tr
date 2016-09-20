@@ -4,17 +4,17 @@ description: "Intune’un kaydettiğiniz cihazları yönetmenize nasıl yardımc
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
-ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
+ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
+ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
 
 
 ---
@@ -46,7 +46,8 @@ Yönetim, envanter, uygulama dağıtımı, sağlama ve kullanımdan kaldırma, I
 |iOS mobil uygulama yapılandırması|Mobil uygulama yapılandırma ilkelerini kullanarak, kullanıcı uygulamayı çalıştırdığında iOS uygulamaları için gerekebilecek ayarları sağlar. Örneğin, uygulama kullanıcının bağlantı noktası numarasını veya oturum açma bilgilerini belirtmesini isteyebilir. Bu, uygulama yapılandırmasını kolaylaştırmaya ve destek aramalarının sayısını azaltmaya yardımcı olabilir.|[iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |iOS mobil uygulaması sağlama profilleri|Süresi dolmak üzere olan iOS uygulamalarına sağlama profilleri dağıtmanıza yardımcı olur. |[Uygulamalarınızın süresinin dolmasını engellemek için iOS mobil sağlama profili ilkelerini kullanma](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Yönetilen tarayıcı|Cihaz kullanıcılarının ziyaret edebileceği web sitelerini denetlemek için yönetilen tarayıcı profilleri yapılandırır. Ayrıca, yönetilen tarayıcıya mobil uygulama yönetimi ilkeleri de uygulayabilirsiniz.|[Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|Parolaları, akıllı kartları ya da sanal akıllı kartları değiştirmek için Windows 10’da şirket içi Active Directory’nin veya Azure Active Directory’nin kullanıldığı alternatif bir oturum açma yöntemi olan İş İçin Microsoft Passport’u tümleştirmenize olanak tanır.|[Microsoft Intune ile cihazlarda Microsoft Passport ayarlarını denetleme](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|İş İçin Windows Hello|Parolaları, akıllı kartları ya da sanal akıllı kartları değiştirmek için Windows 10’da şirket içi Active Directory’nin veya Azure Active Directory’nin kullanıldığı alternatif bir oturum açma yöntemi olan İş İçin Windows Hello’yu tümleştirmenize olanak tanır.|[Microsoft Intune ile cihazlarda İş İçin Windows Hello ayarlarını denetleme](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Toplu satın alınan uygulamalar|Bir toplu satın alma programı aracılığıyla lisans bilgilerini uygulama mağazasından içeri aktararak, kaç lisans kullandığınızı izleyerek ve sahip olduğunuzdan fazla uygulama kopyası yüklemenizi önleyerek satın aldığınız uygulamaları yönetmenize yardımcı olur.|[Microsoft Intune kullanarak toplu satın alınan uygulamaları yönetme](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## Şirket kaynak erişimi
 
@@ -70,6 +71,6 @@ Yönetim, envanter, uygulama dağıtımı, sağlama ve kullanımdan kaldırma, I
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
