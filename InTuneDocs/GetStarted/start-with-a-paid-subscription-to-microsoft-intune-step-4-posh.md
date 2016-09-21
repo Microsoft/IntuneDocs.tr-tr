@@ -67,6 +67,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 4. adımını tamamladın�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
