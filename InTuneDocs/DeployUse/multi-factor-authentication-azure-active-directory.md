@@ -4,7 +4,7 @@ description: "Azure AD’de cihaz kaydı için çok faktörlü kimlik doğrulama
 keywords: 
 author: nbigman
 manager: angerobe
-ms.date: 08/17/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
-ms.openlocfilehash: d65846b09ac33fa18db037a6a2c05963607ef53f
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 
 ---
@@ -41,12 +41,13 @@ Cihaz kaydı sırasında MFA istemek için şu adımları izleyin:
     -  Cihaz iş yerinde olmadığında kayıt için çok faktörlü kimlik doğrulaması isteme.
     -  Bir cihaz şirket ağına bağlı olmadığında o cihazın kaydolmasını engellemek için **Şirket kaynaklarına erişimi engelle** seçeneğini belirleyin. 
 4. Cihaz kaydı için ağ bağlantısı gereksinimlerini yapılandırmak için **iş ağı konumunuzu tanımlama/düzenleme** bağlantısına da tıklayabilirsiniz.
+
 > [!IMPORTANT]
 > 
 > Microsoft Intune Kaydı için **Cihaz tabanlı erişim kuralları** yapılandırmayın.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
