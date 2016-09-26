@@ -4,7 +4,7 @@ description: "Bu konu, Microsoft Intune’la uygulama dağıtımı sorunlarını
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
-ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
+ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
+ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
 
 
 ---
@@ -22,49 +22,7 @@ ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 # Microsoft Intune’da uygulama dağıtımı sorunlarını giderme
 Intune ile uygulamalarınızı dağıtma ve yönetme konusunda sorun yaşıyorsanız buradan başlayın. Bu konuda, karşılaşabileceğiniz bazı yaygın sorunlar çözümleriyle birlikte sunulmuştur.
 
-## Yaygın uygulama dağıtım sorunları
-
-### Şirket Portalı’nda BT iletişim bilgileri yok
-
-1.  Intune yönetim konsolunda **Yönetici**&gt;**Şirket Portalı**’nı seçin.
-
-2.   **BT İletişimi** ayrıntılarını ayarlayın.
-
-### Listede belirli uygulamaları göremiyorsanız
-
-1.  Uygulamanın dağıtıldığı bir kullanıcı veya cihazın uygulamalar listesini denetlediğinizden emin olun.
-
-2.  Cihazların uygulama için gereksinimleri karşıladığından emin olun.
-
-### Uygulamayı indirirken hata iletisi alırsanız
-
-1.  Kullanıcı başına aynı anda birden çok indirme işlemi yapılmadığından emin olun. Her kullanıcı aynı anda bir uygulama yükleyebilir.
-
-2.  Hesap başına çok sayıda eş zamanlı indirme olmadığından emin olun. Birkaç dakika bekleyin ve sonra yeniden deneyin.
-
-3.  Yükleme yapamayacağınızı, yüklemenin iptal edildiğini veya yeniden denemeniz gerektiğini bildiren bir iOS yerel iletisi alırsanız bunun nedeni yoğun trafik olabilir. Birkaç dakika bekleyin ve sonra yeniden deneyin.
-
-4.  iOS uygulaması indirme ilerleme çubuğu tamamlanır ancak uygulama yükleme başarısız olursa, sağladığınız uygulama dosyalarıyla ilgili bir sorun olabilir.
-
-
-### Uygulamanız karşıya yüklenirken "sürüyor" durumunda takılıyorsa
-
-1.  Bir uygulama karşıya yüklenirken öncelikle meta veriler, ardından uygulama paketi eklenir. Meta veriler karşıya yüklendikten sonra uygulama sürüyor durumunda görünür. Uygulamanızın aşırı uzun bir süre işlem sürüyor durumunda olduğunu görürseniz uygulamayı silin ve yeniden yükleyin.
-
-2.  Uygulama "sürüyor" durumundayken uygulamanın dağıtımını yönetmediğinizden emin olun.
-
-### Bir iOS uygulaması yüklenirken hatayla karşılaşırsanız
-
-1.  Kuruluşunuzun güvenlik duvarının Apple sağlama ve sertifika web sitelerine erişim izni verdiğinden emin olun.
-
-2.  Daha fazla bilgi için Apple geliştirici belgelerini görüntüleyin.
-
-### Yönetilen uygulamalar yükleme durumunu bildirmiyorsa
-
-Kasım 2014'teki Microsoft Intune hizmet güncelleştirmesinden önceki yönetilen uygulama yüklemeleri için yükleme durumu toplanmamıştır. Bu hizmet güncelleştirmesinden önce yönetilen uygulamalar yükleyen cihazlar için, ilişkili uygulama dağıtımlarının her birini uygun dağıtım eylemiyle (örneğin, **Kullanılabilir yükleme**) güncelleştirin. Her cihaz, kullanılabilir uygulamaların otomatik olarak denetlenmesi sırasında uygulamayı güncelleştirir. Daha fazla bilgi için bkz. [Microsoft Intune kullanarak uygulamaları güncelleştirme](/intune/deploy-use/update-apps-using-microsoft-intune).
-
-## <a name="BKMK_SoftDistErrorCodes"></a>Uygulama dağıtımı hata kodları
-Aşağıdaki tabloda Intune uygulama dağıtımı sırasında oluşabilecek yaygın hatalar, hataların olası nedenleri ve hataları gidermenizi sağlayabilecek çözümler listelenmektedir.
+## Yaygın uygulama dağıtımı hata kodları
 
 |Hata kodu|Olası sorun|Önerilen çözüm|
 |--------------|--------------------|------------------------|
@@ -79,6 +37,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
