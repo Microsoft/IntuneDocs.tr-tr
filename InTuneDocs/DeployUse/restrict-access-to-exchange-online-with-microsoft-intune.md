@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 2bbb17881a1e40cd6552fe4303d55bd0cb4ffcf6
 
 
 ---
@@ -67,7 +67,7 @@ Aşağıdaki diyagramda, Exchange Online için koşullu erişim ilkeleri tarafı
 **Outlook**’tan ve **modern kimlik doğrulamasının kullanıldığı diğer uygulamalardan** Exchange Online e-postasına erişimi kısıtlayabilirsiniz:-
 
 - Android 4.0 ve üzeri, Samsung KNOX Standard 4.0 ve üzeri
-- iOS 7.1 ve üzeri
+- iOS 8.0 ve üzeri
 - Windows Phone 8.1 ve üzeri
 
 **Modern k+imlik doğrulaması**, Active Directory Authentication Library (ADAL) tabanlı oturum açmayı Microsoft Office istemcilerine getirir.
@@ -93,7 +93,7 @@ Aşağıdaki platformlarda yerleşik **Exchange ActiveSync e-posta istemcisinden
 
 - Android 4.0 ve üzeri, Samsung KNOX Standard 4.0 ve üzeri
 
-- iOS 7.1 ve üzeri
+- iOS 8.0 ve üzeri
 
 - Windows Phone 8.1 ve üzeri
 
@@ -262,6 +262,6 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

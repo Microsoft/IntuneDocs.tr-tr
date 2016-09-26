@@ -56,7 +56,7 @@
 ## [Cihazları koruma](protect-your-devices-with-microsoft-intune.md)
 ### [Uzaktan kilitleme ve geçiş kodu sıfırlama](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [MFA ile Windows cihazlarını denetleme](protect-windows-devices-with-multi-factor-authentication.md)
-### [Cihazlarda Microsoft Passport ayarlarını denetleme](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [İş İçin Windows Hello ayarlarını denetleme](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [iOS’ta Etkinleştirme Kilidini Atlama](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Yazılım güncelleştirmeleri](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
@@ -66,8 +66,9 @@
 ## [Cihazları devre dışı bırakma](retire-devices-from-microsoft-intune-management.md)
 
 ## [Uygulamaları ekleme](add-apps.md)
-### [Mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Windows bilgisayarları için uygulama ekleme](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Kaydolmuş cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Intune istemci bilgisayarları için uygulama ekleme](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Intune istemci bilgisayarları için lisans sözleşmelerini yönetme](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Uygulamaları dağıtma](deploy-apps.md)
 ### [Cihazlara ve bilgisayarlara uygulama dağıtma](deploy-apps-in-microsoft-intune.md)
 ### [Uygulamaları izleme](monitor-apps-in-microsoft-intune.md)
@@ -101,6 +102,11 @@
 #### [E-posta erişimini kısıtlama: örnekler](restrict-email-access-example-scenarios.md)
 
 ### [Ağlara erişimi kısıtlama (Cisco ISE)](restrict-access-to-networks.md)
+### [Cihaz, ağ ve uygulama riskine dayalı olarak erişimi kısıtlama](restrict-access-based-on-device-network-app-risk.md)
+#### [Lookout MTP’yi ayarlama](set-up-your-subscription-with-lookout-mtp.md)
+#### [Intune'da Lookout’u etkinleştirme](enable-lookout-mtp-connection-in-intune.md)
+#### [Lookout for Work uygulamasını dağıtma](configure-and-deploy-lookout-for-work-apps.md)
+#### [Uyumluluk ilkesinde cihaz tehdit korumasını etkinleştirme](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Uygulama verilerini MAM ile koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -137,6 +143,6 @@
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

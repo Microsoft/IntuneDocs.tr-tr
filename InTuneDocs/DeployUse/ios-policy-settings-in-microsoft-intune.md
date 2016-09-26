@@ -4,7 +4,7 @@ description: "Intune ile yönettiğiniz iOS cihazlarında ayarları ve özellikl
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
-ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
+ms.sourcegitcommit: cd5930995a6da130fedcb6d89851460e6f0614eb
+ms.openlocfilehash: 24540a74ce98adbf3f908cbea401328f027867ca
 
 
 ---
@@ -39,7 +39,7 @@ Microsoft Intune **iOS genel yapılandırma ilkesini** kullanarak aşağıdaki a
 Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Configurator aracı](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ile oluşturduğunuz ayarları içeri aktarmanızı sağlayan bir iOS özel ilkesi kullanarak bu özelliği oluşturabilirsiniz. Daha fazla bilgi için, bu konunun devamındaki “Özel ilke ayarları” bölümüne bakın.
 
 ### Güvenlik ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -58,7 +58,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 <sup>1</sup> iOS cihazlarında **Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı** ve **Parola istenmeden önce geçen işlem yapılmayan dakika sayısı** ayarlarını sırayla uygulayarak yapılandırın. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
 
 ### Sistem ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -71,7 +71,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**Kilitliyken passbook kullanımına izin ver**|Cihaz kilitliyken kullanıcının Passbook uygulamasına erişmesine izin verin.|
 
 ### Belgeler ve veriler için bulut ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -85,7 +85,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**iCloud Fotoğraf Kitaplığı’na izin ver**|Kullanıcının iCloud üzerinde fotoğraf depolamasına izin verin. Devre dışı bırakılırsa, iCloud üzerinde depolanmış olan tüm fotoğraflar kaldırılır.|
 
 ### Tarayıcı için uygulama ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -97,7 +97,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**Sahtekarlık uyarısına izin ver**|Tarayıcıda sahtekarlık uyarılarına izin verin.|
 
 ### Uygulamalara yönelik uygulama ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -111,7 +111,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 
 
 ### Oyunlar için uygulama ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -119,7 +119,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**Çok oyunculu oyunlara izin ver**|Kullanıcının cihazda çok oyunculu oyunlar oynamasına izin verin.|
 
 ### Medya içeriği için uygulama ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -129,7 +129,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 
 
 ### Donanım için cihaz özellikleri ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -138,7 +138,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**Giden AirPlay istekleri için bir eşleştirme parolası gerektirme**|Kullanıcının diğer Apple cihazlarına içerik akışı sağlamak üzere AirPlay’i kullanması için, eşleştirilen parola isteyin.|
 
 ### Hücresel veri için cihaz özellikleri ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -147,7 +147,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**Dolaşımdayken genel arka plan almaya izin ver**|Cihazın, cep telefonu şebekesinde dolaşımdayken e-posta gibi verileri almasına izin verir.|
 
 ### Özellikler için cihaz özellikleri ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -196,7 +196,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 > [!NOTE]
 > aşağıdaki notlar, iOS cihazlarda bilgi noktası modu ayarları için geçerlidir:
 >
-> -   Bir iOS cihazını bilgi noktası modu için yapılandırmadan önce, [Apple Configurator aracı](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)nı veya cihaz kayıt yöneticisini kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracı hakkında daha fazla bilgi için Apple belgelerinize bakın.
+> -   Bir iOS cihazını bilgi noktası modu için yapılandırabilmek için önce, [Apple Configurator aracını](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) veya [Apple Cihaz Kayıt Programı](ios-device-enrollment-program-in-microsoft-intune)’nı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracı hakkında daha fazla bilgi için Apple belgelerinize bakın.
 > -   Belirttiğiniz iOS uygulaması siz yapılandırma ilkesini dağıttıktan sonra yüklendiyse, cihaz, yeniden başlatılana kadar bilgi noktası moduna girmez.
 
 ### Uyumlu ve uyumlu olmayan uygulamalar için başvuru bilgileri
@@ -222,14 +222,14 @@ Uyumlu ve uyumsuz uygulamalar listesinde veya **Cihaz bilgi noktası modundayken
 > iTunes yazılımını kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL'sini alabilirsiniz.
 
 ### Kayıt ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
 |**Cihaz denetimli moddayken Etkinleştirme Kilidi’ne izin verme**|Denetimli iOS cihazlarında Etkinleştirme Kilidi’ni etkinleştirin.|
 
 ### Denetimli mod ayarları
-iOS 7.1 ve üstünü çalıştıran denetimli moddaki cihazlarda aşağıdaki ayarları yapılandırabilirsiniz.
+iOS 8.0 ve üstünü çalıştıran denetimli moddaki cihazlarda aşağıdaki ayarları yapılandırabilirsiniz.
 
 ### Cihaz kısıtlamaları için denetimli mod ayarları
 
@@ -265,9 +265,9 @@ iOS 7.1 ve üstünü çalıştıran denetimli moddaki cihazlarda aşağıdaki ay
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
-|**Kurumsal uygulama güven ayarlarının değiştirilmesine izin ver**||
-|**Yalnızca Apple Configuration ve iTunes kullanılarak uygulama yüklenmesine izin ver**||
-|**Otomatik uygulama indirmeye izin ver**||
+|**Kurumsal uygulama güven ayarlarının değiştirilmesine izin ver**|Kullanıcıların, kurumsal uygulamaların güven ayarlarını değiştirebilmesini sağlar.|
+|**Yalnızca Apple Configuration ve iTunes kullanılarak uygulama yüklenmesine izin ver**|Cihaz giriş ekranından App Store’u etkinleştirir veya devre dışı bırakır. Kullanıcılar, uygulamaları yüklemek ve güncelleştirmek için iTunes’u veya Apple Configurator aracını kullanmaya devam edebilir.|
+|**Otomatik uygulama indirmeye izin ver**|Başka cihazlarda satın alınan uygulamaların otomatik olarak bu cihaza indirilmesine izin verir. Bu ayar uygulama güncelleştirmelerini etkilemez.|
 |**Find My Friends uygulamasının ayarlarında değişikliğe izin verme**|Kullanıcının Find My Friends uygulamasının ayarlarını değiştirmesine izin verin.|
 |**iBooks mağazası erişimine izin verme**|Kullanıcının iBooks mağazasındaki kitaplara göz atmasına ve bunları satın almasına izin verin.|
 |**Cihazda Messages uygulamasının kullanılmasına izin verme**|Kısa mesaj göndermek için Messages uygulamasının kullanılmasına izin verin.|
@@ -382,6 +382,6 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

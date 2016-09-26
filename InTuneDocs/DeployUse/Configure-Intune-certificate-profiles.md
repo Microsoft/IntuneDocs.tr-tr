@@ -4,7 +4,7 @@ description: "Intune sertifika profilinin nasıl oluşturulacağını öğrenin.
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,22 +41,16 @@ Bir Basit Sertifika Kayıt Protokolü (SCEP) veya PKCS #12 (.PFX) sertifika prof
 1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin.
 2.  Aşağıdaki ilke türlerinden birini ekleyin:
     - **Android &gt; Güvenilen Sertifika Profili (Android 4 ve üzeri)**
-    - **iOS &gt; Güvenilen Sertifika Profili (iOS 7.1 ve üzeri)**
+    - **iOS &gt; Güvenilen Sertifika Profili (iOS 8.0 ve üzeri)**
     - **Mac OS X &gt; Güvenilen Sertifika Profili (Mac OS X 10.9 ve üzeri)**
     - **Windows &gt; Güvenilen Sertifika Profili (Windows 8.1 ve üzeri)**
     - **Windows &gt; Güvenilen Sertifika Profili (Windows Phone 8.1 ve üzeri)**
 
     Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Android, iOS, Mac OS X, Windows 8.1 veya Windows Phone 8.1 Güvenilen sertifika profili ayarlarını yapılandırmak için istenen bilgileri girin.
-
-    - **Sertifika dosyası** ayarında, sertifika veren CA’nızdan dışarı aktardığınız Güvenilen Kök CA sertifikasını (.cer dosyası) içeri aktarın. **Hedef depo** ayarı yalnızca Windows 8.1 ve üstünü çalıştıran cihazlara, cihazın birden çok hedef deposu olması durumunda uygulanır.
-    -  **Konu adı biçimi** altında **Özel**’i seçerek özel bir konu adı biçimi girin.  
-        Özel biçim için şu an desteklenen iki değişken şunlardır: `Common Name (CN)` ve `Email (E)`. Bu değişkenlerin ve statik dizelerin bir bileşimini kullanarak şunun gibi özel bir konu adı biçimi oluşturabilirsiniz:  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        Bu örnekte, yönetici, `CN` ve `E` değişkenlerinin yanı sıra Kuruluş Birimi, Kuruluş, Konum, Eyalet ve Ülke değerleri için dizeler kullanan bir konu adı biçimi oluşturmuştur. [CertStrToName işlevi](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) desteklenen dizeleri listeler.  
+3.  Android, iOS, Mac OS X, Windows 8.1 veya Windows Phone 8.1 Güvenilen sertifika profili ayarlarını yapılandırmak için istenen bilgileri girin. 
+4.  **Sertifika dosyası** ayarında, sertifika veren CA’nızdan dışarı aktardığınız Güvenilen Kök CA sertifikasını (.cer dosyası) içeri aktarın. **Hedef depo** ayarı yalnızca Windows 8.1 ve üstünü çalıştıran cihazlara, cihazın birden çok hedef deposu olması durumunda uygulanır.
+    
 4.  **İlkeyi Kaydet**’i seçin.
 
 Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabilirsiniz.
@@ -69,7 +63,7 @@ Güvenilen CA sertifika profilini oluşturduktan sonra, kullanmak istediğiniz h
 1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin.
 2.  Aşağıdaki ilke türlerinden birini ekleyin:
     - **Android &gt; SCEP Sertifika Profili (Android 4 ve üzeri)**
-    - **iOS &gt; SCEP Sertifika Profili (iOS 7.1 ve üzeri)**
+    - **iOS &gt; SCEP Sertifika Profili (iOS 8.0 ve üzeri)**
     - **Mac OS X &gt; SCEP Sertifika Profili (Mac OS X 10.9 ve üzeri)**
     - **Windows &gt; SCEP Sertifika Profili (Windows 8.1 ve üzeri)**
     - **Windows &gt; SCEP Sertifika Profili (Windows Phone 8.1 ve üzeri)**
@@ -79,7 +73,7 @@ Güvenilen CA sertifika profilini oluşturduktan sonra, kullanmak istediğiniz h
 3.  SCEP sertifika profili ayarlarını yapılandırmak için, profil yapılandırma sayfasındaki yönergeleri izleyin.
     > [!NOTE]
     >
-    > **Konu adı biçimi** altında **Özel**’i seçerek özel bir konu adı biçimi girin.
+    > **Konu adı biçimi**’nin altında **Özel**’i seçerek özel bir konu adı biçimi girin (yalnızca iOS profillerinde).
     >
     > Özel biçim için şu an desteklenen iki değişken şunlardır: `Common Name (CN)` ve `Email (E)`. Bu değişkenlerin ve statik dizelerin bir bileşimini kullanarak şunun gibi özel bir konu adı biçimi oluşturabilirsiniz:
 
@@ -98,7 +92,7 @@ Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabil
   - **Android &gt; .PFX Sertifika Profili (Android 4 ve üzeri)**
   - **Windows &gt; PKCS #12 (.PFX) Sertifika Profili (Windows 10 ve üzeri)**
   - **Windows &gt; PKCS #12 (.PFX) Sertifika Profili (Windows Phone 10 ve üzeri)**
-  - **iOS > PKCS #12 (.PFX) Sertifika Profili (iOS 7.1 ve üzeri)**    
+  - **iOS > PKCS #12 (.PFX) Sertifika Profili (iOS 8.0 ve üzeri)**    
     Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  İlke formunda istenen bilgileri girin.
 4.  **İlkeyi Kaydet**’i seçin.
@@ -136,6 +130,6 @@ Bundan sonra sertifikaları e-posta, Wi-Fi ve VPN profillerinin güvenliğini sa
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
