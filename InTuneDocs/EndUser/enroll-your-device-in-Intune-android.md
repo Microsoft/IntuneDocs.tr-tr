@@ -4,7 +4,7 @@ description: "Android cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
+ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
+ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 
 ---
@@ -71,7 +71,7 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     ![android-şirket-portalı-oturum-açma](./media/and-enroll-3a-allow-phone-access.png)
 
-    Bu iletiyi görürseniz, **İZİN VER**’e dokunun. **Microsoft hiçbir zaman telefon çağrısı yapmadığından veya telefon çağrılarınızı yönetmediğinden** İZİN VER’e dokunmak güvenlidir! İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişim izni verdiğinizde tüm yaptığınız, cihazınıza cihaz SD kartına veri günlüklerini yazma izni vermektir, bu da akabinde bu günlükleri bir USB kablosu kullanarak taşımanıza olanak tanır.
+    Bu iletiyi görürseniz, **İZİN VER**’e dokunun. **Microsoft hiçbir zaman telefon çağrısı yapmadığından veya telefon çağrılarınızı yönetmediğinden** İZİN VER’e dokunmak güvenlidir! İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişime izin verdiğinizde, tüm yaptığınız cihazınızın IMEI numarasını Intune’a göndermesine izin vermektir. IMEI, seri numarası gibi bir mobil cihazı benzersiz şekilde tanımlayan bir numaradır.
 
     Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** onay kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz.  Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
 
@@ -81,7 +81,7 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     Bu iletiyi görürseniz, **İZİN VER**’e dokunun. **Microsoft hiçbir zaman kişilerinize erişmediğinden** İZİN VER’e dokunmak güvenlidir! İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişim izni verdiğinizde Şirket Portalı uygulamasının yalnızca iş hesabınızı oluşturmasına, kullanmasına ve yönetmesine izin verilir.
 
-    Erişimi reddederseniz, **Veri Gönder** öğesine dokunduğunuz sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** onay kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Depolama**’ya giderek izni açın.
+    Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** onay kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz.  Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
 
 11.  **Cihaz yöneticisini etkinleştir** ekranında **Etkinleştir**’e dokunun.
 
@@ -116,6 +116,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgil
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

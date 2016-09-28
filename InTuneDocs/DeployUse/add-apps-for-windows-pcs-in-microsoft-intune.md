@@ -1,5 +1,5 @@
 ---
-title: "Windows bilgisayarları için uygulamaları ekleme | Microsoft Intune"
+title: "Intune yazılım istemcisi çalıştıran Windows bilgisayarlarına uygulama ekleme | Microsoft Intune"
 description: "Windows bilgisayarlarına yönelik uygulamaları dağıtmadan önce Intune’a eklemeyi öğrenmek için bu konu başlığı altında verilen bilgileri kullanın."
 keywords: 
 author: robstackmsft
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# Microsoft Intune’da Windows bilgisayarları için uygulamaları ekleme
+# Intune yazılım istemcisi çalıştıran Windows bilgisayarlarına uygulama ekleme
 
 Uygulamaları dağıtmadan önce Intune’a eklemeyi öğrenmek için bu konu başlığı altında verilen bilgileri kullanın.
 
 > [!IMPORTANT]
-> Bu konu başlığı altında sağlanan bilgiler, Intune bilgisayar istemci yazılımını kullanarak yönettiğiniz Windows bilgisayarlarına uygulamalar eklemenize yardımcı olur. Kayıtlı Windows bilgisayarları ve diğer mobil cihazlar için uygulama eklemek istiyorsanız, bkz. [Microsoft Intune’da mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md).
+> Bu konu başlığı altında sağlanan bilgiler, Intune yazılım istemcisi kullanarak yönettiğiniz Windows bilgisayarlarına uygulama eklemenize yardımcı olur. Kayıtlı Windows bilgisayarları ve diğer mobil cihazlar için uygulama eklemek istiyorsanız, bkz. [Microsoft Intune’da mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 
 ## Uygulama ekleme
@@ -90,6 +90,6 @@ Bir uygulama oluşturduktan sonra, sonraki adım uygulamayı dağıtmaktır. Dah
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ BT yöneticileri veya kullanıcılar, Android ve iOS için Microsoft Outlook gib
 Aşağıdaki cihaz türlerinde yerel e-posta istemcisini yapılandırmak için e-posta profillerini kullanabilirsiniz:
 -   Windows Phone 8 ve üzeri
 -   Windows 10 (masaüstü için), Windows 10 Mobile ve üzeri
--   iOS 7.1 ve üzeri
+-   iOS 8.0 ve üzeri
 -   Samsung KNOX Standard (4.0 ve üzeri)
 
 Cihazda bir e-posta hesabı ayarlamaya ek olarak, ne kadar e-postanın eşitleneceğini ve cihaz türüne bağlı olarak eşitlenecek içerik türlerini de ayarlayabilirsiniz.
@@ -45,7 +45,7 @@ Cihazda bir e-posta hesabı ayarlamaya ek olarak, ne kadar e-postanın eşitlene
 
 >**Windows**: Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmıştır. Intune kullanıcı tarafından oluşturulmuş, var olan e-posta profilinin üzerine yazar.
 
->**Samsung KNOX**: E-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmış ve Inture profili bunun üzerine yazılmıştır. Kullanıcı bu hesabı ayarlarsa, Intune profili tarafından hesabın üzerine yeniden yazılır. Bu durumun kullanıcıda kafa karışıklığına neden olabileceğini unutmayın.
+>**Samsung KNOX**: E-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmış ve Intune profili bunun üzerine yazılmıştır. Kullanıcı bu hesabı ayarlarsa, Intune profili tarafından hesabın üzerine yeniden yazılır. Bu durumun kullanıcıda kafa karışıklığına neden olabileceğini unutmayın.
 
 >Samsung KNOX’un profili algılamak için konak adını kullanmaması nedeniyle, farklı konaklarda aynı e-posta adresinde kullanmak üzere birden çok e-posta profili oluşturursanız bunlar birbirinin üzerine yazılacağından, bunu yapmamanızı öneririz.
 
@@ -71,7 +71,7 @@ E-posta profilinde parola bulunmadığından, e-postaya bağlanırken kullanıc�
 
     -   **Samsung KNOX Standard (4.0 ve üzeri) için E-posta Profili**
 
-    -   **E-posta Profili (iOS 7.1 ve üzeri)**
+    -   **E-posta Profili (iOS 8.0 ve üzeri)**
 
     -   **E-posta Profili (Windows Phone 8 ve üzeri)**
 
@@ -122,6 +122,6 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

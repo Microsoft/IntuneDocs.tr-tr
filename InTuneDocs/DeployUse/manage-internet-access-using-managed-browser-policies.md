@@ -4,7 +4,7 @@ description: "Web’e gözatmayı ve web verilerinin başka uygulamalara aktarı
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
-ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: d4d05508e44fe0864ce6dabf0864f6ed67109a7c
 
 
 ---
@@ -34,7 +34,7 @@ Aşağıdaki cihaz türleri için yönetilen tarayıcı ilkeleri oluşturabilirs
 
 -   Android 4 ve üzeri çalıştıran cihazlar
 
--   iOS 7.1 ve üzeri çalıştıran cihazlar
+-   iOS 8.0 ve üzerini çalıştıran cihazlar
 
 Intune tarafından yönetilen tarayıcı, [Microsoft Intune uygulama iş ortaklarının](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) web içeriklerini açmayı destekler.
 
@@ -44,9 +44,9 @@ Intune tarafından yönetilen tarayıcı, [Microsoft Intune uygulama iş ortakla
 
 2.  Aşağıdaki **Yazılım** ilkesi türlerinden birini yapılandırın:
 
-    -   **Yönetilen Tarayıcı İlkesi (Android 4 ve üzeri)**
+    -   **Yönetilen Tarayıcı (Android 4 ve üzeri)**
 
-    -   **Yönetilen Tarayıcı İlkesi (iOS 7.1 ve üzeri)**
+    -   **Managed Browser (iOS 8.0 ve üzeri)**
 
     İlkeleri oluşturma ve kullanma hakkında daha fazla bilgi için, [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) konusuna bakın.
 
@@ -154,6 +154,6 @@ Bir cihaza birden çok yönetilen tarayıcı ilkesi dağıtılır ve ayarlar ça
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

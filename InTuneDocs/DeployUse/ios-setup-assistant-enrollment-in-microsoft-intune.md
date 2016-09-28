@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
-ms.openlocfilehash: 01d87b95d2599f75161c9a95ff4cf94375eedb60
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 45aa4511945ab4763dc0dc35baefe47887e561bb
 
 
 ---
@@ -24,7 +24,7 @@ Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.mi
 
 
 ## Microsoft Intune ile iOS cihazları için Kurulum Yardımcısı kaydı
-Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve cihazın yeni kullanıcısı tarafından kuruluma hazırlayabilirsiniz.  Bu yöntem, kurumsal kayıt kurulumu için iOS cihazını USB ile bir Mac bilgisayara bağlamanızı gerektirir ve Apple Configurator 2.0 kullandığınızı varsayar. Çoğu senaryoda, Intune Şirket Portalı uygulamasını etkinleştirmek için iOS cihazına uygulanmış olan ilkenin *kullanıcı benzeşimi* içermesi gerekir.
+Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve cihazın yeni kullanıcısı tarafından kuruluma hazırlayabilirsiniz.  Bu yöntem, kurumsal kayıt kurulumu için iOS cihazını USB ile bir Mac bilgisayara bağlamanızı gerektirir ve Apple Configurator 2.0 kullandığınızı varsayar. Çoğu senaryoda, Intune Şirket Portalı uygulamasını etkinleştirmek için iOS cihazına uygulanmış olan ilkenin **kullanıcı benzeşimi** içermesi gerekir.
 
 **Önkoşullar**
 * APNs sertifikası yüklenerek [iOS kaydı etkinleştirilir](set-up-ios-and-mac-management-with-microsoft-intune.md)
@@ -143,6 +143,6 @@ Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

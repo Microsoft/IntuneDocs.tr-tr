@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ Uyumluluk ilkelerini kullanıcılara siz dağıtırsınız. Bir uyumluluk ilkesi
 
 Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyumluluk ilkeleri tarafından desteklenen cihaz türleri ve uyumsuz ayarların nasıl yönetildiği listelenmektedir.
 
---------------
+-----------------------------
 
-|İlke Ayarı| Windows 8.1 ve üzeri| Windows Phone 8.1 ve üzeri| iOS 6.0 ve üzeri|Android 4.0 ve üzeri<br/>Samsung KNOX Standard 4.0 ve üzeri|
+|İlke Ayarı| Windows 8.1 ve üzeri| Windows Phone 8.1 ve üzeri| iOS 8.0 ve üzeri|Android 4.0 ve üzeri<br/>Samsung KNOX Standard 4.0 ve üzeri|
 |-----|----|----|----|----|
 |**PIN veya Parola Yapılandırması** |Çözümlendi|Çözümlendi|Çözümlendi|Karantinaya Alındı|
 |**Cihaz şifrelemesi**|Yok|Çözümlendi|Çözümlendi (PIN ayarlanarak)|Karantinaya Alındı|
@@ -43,7 +43,9 @@ Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyum
 |**En düşük işletim sistemi sürümü**|Karantinaya Alındı|Karantinaya Alındı|Karantinaya Alındı|Karantinaya Alındı|
 |**En yüksek işletim sistemi sürümü**|Karantinaya Alındı| Karantinaya Alındı| Karantinaya Alındı| Karantinaya Alındı|
 |**Windows durum kanıtlama**|Windows 10 ve Windows 10 Mobile Karantinaya Alındı durumundadır.<br /><br />Ayar Windows 8. 1 için geçerli değildir|Yok|Yok|Yok|
---------------
+
+------------------------------
+
 **Çözümlendi** = Uyumluluk cihazın işletim sistemi tarafından zorlanır (örneğin, kullanıcı bir PIN ayarlamaya zorlanır).  Ayarın uyumsuz olması durumu hiçbir zaman söz konusu değildir.
 
 **Karantinaya Alındı** = Cihazın işletim sistemi uyumluluğu zorlamaz (örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz). Cihazlar uyumsuz olduğunda, aşağıdaki işlemler yapılır:
@@ -62,6 +64,6 @@ Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyum
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

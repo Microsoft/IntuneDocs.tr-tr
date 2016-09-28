@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,7 +27,7 @@ Bu konu başlığı altında, **çalışanın sahip olduğu yönetilmeyen cihazl
 ##  1. Adım: Uygulamayı hazırlama
 Uygulamaya MAM ilkelerini uygulayabilmek için, önce Microsoft Intune Uygulama Sarmalama aracıyla uygulamayı sarmalamanız gerekir.  Uygulama sarmalama aracını yükleme ve kullanma yönergeleri, indirme içinde sağlanır.  
 >[!IMPORTANT]  
->Uygulama sarmalama aracının Intune’a kayıtlı olmayan cihazları destekleyen bu sürümü, önümüzdeki haftalarda özel önizleme olarak sağlanacaktır. Katılmak isterseniz, daha fazla bilgi için lütfen msintuneappsdk@microsoft.com adresine e-posta gönderin.
+>Uygulama sarmalama aracının Intune’a kayıtlı olmayan cihazları destekleyen bu sürümü, genel önizleme olarak kullanılabilir. Genel önizlemeye katılmak isterseniz, aracı, iOS için [bu github sayfasından](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) ve Android için [bu github sitesinden](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) indirebilirsiniz.
 
 ## 2. Adım: Uygulamayı ekleme
 
@@ -75,6 +75,6 @@ Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz.  Bu işlem 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
