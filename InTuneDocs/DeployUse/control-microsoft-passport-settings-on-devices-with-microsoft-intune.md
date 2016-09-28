@@ -4,7 +4,7 @@ description: "Intune’un bir parolayı, akıllı kartı ya da sanal akıllı ka
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/02/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d212869051719b6b1f1d527ee52044420df0c14
-ms.openlocfilehash: c2c2774dd85d8ce9c056248f801220e06f17063b
+ms.sourcegitcommit: 73379311acad6f2a7054e262dea701d3e7b9ad45
+ms.openlocfilehash: 40344947d7c94c90258c967da36c09c95a54335c
 
 
 ---
@@ -29,6 +29,18 @@ Intune, İş İçin Hello ile iki şekilde tümleşir:
 -   Kullanıcıların oturum açarken hangi hareketleri kullanabileceğini ve kullanamayacağını denetlemek için bir Intune ilkesi kullanabilirsiniz.
 
 -   İş İçin Windows Hello anahtar depolama sağlayıcısında (KSP) kimlik doğrulama sertifikaları depolayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi](secure-resource-access-with-certificate-profiles.md).
+
+> [!IMPORTANT]
+> Yıldönümü Güncelleştirmesi’nden önceki Windows 10 masaüstü ve mobil sürümlerinde, kaynaklarda kimlik doğrulama için kullanılabilen iki farklı PIN ayarlayabilirsiniz:
+- **Cihaz PIN’i** cihazın kilidini açmak ve bulut kaynaklarına bağlanmak için kullanılabilir.
+- **İş PIN’i** kullanıcının kişisel cihazlarından (KCG) Azure AD kaynaklarına erişmek için kullanılır.
+
+>Yıldönümü Güncelleştirmesi’nde bu iki PIN, tek bir cihaz PIN’inde birleştirilmiştir.
+Cihaz PIN’ini denetlemek için ayarladığınız Intune yapılandırma ilkelerinin yanı sıra, yapılandırmış olduğunuz İş İçin Windows Hello ilkeleri de bu yeni PIN değerine ayarlanmıştır.
+PIN’i denetlemek için iki ilke türünü de ayarladıysanız, İş İçin Windows Hello ilkesi hem Windows 10 masaüstü cihazlarına hem de Windows 10 mobil cihazlara uygulanır.
+İlke çakışmalarının çözümlendiğinden ve PIN ilkesinin düzgün şekilde uygulandığından emin olmak için, İş İçin Windows Hello İlkenizi yapılandırma ilkenizdeki ayarlarla eşleşecek şekilde güncelleştirin ve kullanıcılarınızdan cihazlarını Şifket Portalı uygulamasında eşitlemelerini isteyin.
+
+
 
 ## İş İçin Windows Hello ilkesi oluşturma
 
@@ -67,6 +79,6 @@ Microsoft Passport hakkında daha fazla bilgi için, Windows 10 belgelerinde [k�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

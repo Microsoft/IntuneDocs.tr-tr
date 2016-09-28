@@ -4,7 +4,7 @@ description: "Intune, Windows bilgisayarlarla iOS, Mac OS X, Android ve Windows 
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: c13366ea7f42272e6fc3d606cb8dbe0ed1c45fe4
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
 
 
 ---
 
 # Microsoft Intune hizmet açıklaması
 
-Microsoft Intune, Windows bilgisayarlarla iOS, Mac OS X, Android ve Windows mobil cihazları yönetmenize yardımcı olan bulut tabanlı bir hizmettir. Intune, şirket uygulamalarının ve verilerinin korunmasına da yardımcı olur. Intune’un tek başına kullanabilir veya System Center 2012 R2 Configuration Manager ile birleştirerek yönetim özelliklerinizi genişletebilirsiniz.
+Microsoft Intune, Windows bilgisayarlarla iOS, Mac OS X, Android ve Windows mobil cihazları yönetmenize yardımcı olan bulut tabanlı bir hizmettir. Intune, şirket uygulamalarının ve verilerinin korunmasına da yardımcı olur. Intune’u tek başına kullanabilir veya System Center Configuration Manager ile birleştirerek yönetim özelliklerinizin kapsamını genişletebilirsiniz. 
 
 Microsoft, uygun planlarda uygun hizmetler için Intune Onboarding avantajını sunar. Onboarding avantajı, ortamınızı kullanıma hazır hale getirmek için Microsoft uzmanlarıyla uzaktan çalışmanıza olanak sağlar. Daha fazla bilgi için bkz. [Microsoft Intune Onboarding Avantajı Açıklaması](http://go.microsoft.com/fwlink/?LinkId=619281).
 
@@ -32,18 +32,18 @@ Intune’u 100 kullanıcı lisansı içeren 30 günlük ücretsiz bir denemeyle 
 
 Mobil cihazlarda yapılandırabileceğiniz ayarların listesi için bkz.:
 
--   [Microsoft Intune'da mobil cihaz yönetimi özellikleri](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Microsoft Intune’un kayıtlı cihaz yönetimi özellikleri](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
--   [Configuration Manager'da Mobil Cihazlar için genel ayarlar](https://technet.microsoft.com/library/dn376523.aspx)
+-   [System Center Configuration Manager ve Microsoft Intune ile karma mobil cihaz yönetimi (MDM)](https://technet.microsoft.com/library/mt627883.aspx) 
 
-System Center 2012 R2 Configuration Manager hakkında bilgi için bkz. [System Center 2012 Configuration Manager için Belge Kitaplığı](https://technet.microsoft.com/library/gg682041.aspx).
+System Center Configuration Manager hakkında bilgi için bkz. [System Center Configuration Manager Belgeleri](https://technet.microsoft.com/library/mt346023.aspx).
 
 ## Intune hizmet güncelleştirmelerinin size nasıl etkileyeceğini anlama
 Intune çevrimiçi bir hizmet olduğundan Microsoft bu hizmeti düzenli aralıklarla güncelleştirebilir.
 
 Bu hizmet güncelleştirmelerinin sıklığını ve hizmetin kullanımını etkileyebilecek bir güncelleştirme olduğunda size sağladığımız ön bildirimi anlamanıza yardımcı olması için bu konu başlığı altındaki bilgileri kullanın.
 
-Intune hizmetindeki değişiklikler hakkında bilgi edinmek için bkz. [Microsoft Intune’daki yenilikler](/intune/deploy-use/Whats-new-in-microsoft-intune.md). [Microsoft Intune Blogu](http://blogs.technet.com/b/microsoftintune/)’nda da hizmetteki değişiklikler tartışılır ve Intune’dan en iyi şekilde yararlanmanıza olanak tanıyacak yararlı ipuçları sağlanır.
+Intune hizmetindeki değişiklikler hakkında bilgi edinmek için bkz. [Microsoft Intune’daki yenilikler](/intune/deploy-use/whats-new-in-microsoft-intune). [Microsoft Intune Blogu](http://blogs.technet.com/b/microsoftintune/)’nda da hizmetteki değişiklikler tartışılır ve Intune’dan en iyi şekilde yararlanmanıza olanak tanıyacak yararlı ipuçları sağlanır. 
 
 Önemli hizmet güncelleştirmeleri de [Office 365 yönetim portalı](https://portal.office.com/Admin/Default.aspx) İleti Merkezi’nde size bildirilir. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz.
 
@@ -65,7 +65,7 @@ Intune’u birkaç yolla yapılandırarak şirketinizin mobil cihazlarını ve b
 
 -   **Tek başına Intune yapılandırması.** Kuruluşunuzdaki cihazları yönetmek için Intune’daki web tabanlı yönetim konsolunu kullanın. Intune herhangi bir şirket içi BT altyapısı olmadan kullanılabilir, ancak Intune’u Active Directory Etki Alanı Hizmetleri ile kullanıyorsanız, Intune ve Etki Alanı Hizmetleri ile yönettiğiniz etki alanı kullanıcı hesaplarını kullanabilirsiniz.
 
--   **Intune ile System Center Configuration Manager.** Kuruluşunuzdaki bilgisayarları ve mobil cihazları yönetmek için Configuration Manager yönetim konsolunu kullanın. Bu yapılandırma, tek bir konsol (Configuration Manager Yönetici Konsolu) üzerinden kuruluşunuzun tüm cihazlarını yönetmenize yardımcı olabilir. Configuration Manager, çok fazla sayıda mobil cihazı, sunucuyu ve bilgisayarı destekler. Daha fazla bilgi için [System Center 2012 Configuration Manager için Belge Kitaplığı](https://technet.microsoft.com/library/gg682041.aspx) içinde [Configuration Manager ve Microsoft Intune Kullanarak Mobil Cihazları Yönetme](http://go.microsoft.com/fwlink/?LinkID=271118) bölümüne bakın.  Hangi yaklaşımın sizin için doğru olduğuna kadar vermede daha fazla yardım için, [Configuration Manager ile Microsoft Intune tek başına ve karma ve mobil cihaz yönetimi arasında seçim yapın](https://technet.microsoft.com/en-us/library/mt706478.aspx).
+-   **Intune ile System Center Configuration Manager.** Kuruluşunuzdaki bilgisayarları ve mobil cihazları yönetmek için Configuration Manager yönetim konsolunu kullanın. Bu yapılandırma, tek bir konsol (Configuration Manager Yönetici Konsolu) üzerinden kuruluşunuzun tüm cihazlarını yönetmenize yardımcı olabilir. Configuration Manager, çok fazla sayıda mobil cihazı, sunucuyu ve bilgisayarı destekler. Daha fazla bilgi edinmek için bkz. [System Center Configuration Manager ve Microsoft Intune ile karma mobil cihaz yönetimi (MDM)](https://technet.microsoft.com/library/mt627883.aspx).  Hangi yaklaşımın sizin için doğru olduğuna kadar vermede daha fazla yardım için, [Configuration Manager ile Microsoft Intune tek başına ve karma ve mobil cihaz yönetimi arasında seçim yapın](https://technet.microsoft.com/en-us/library/mt706478.aspx). 
 
 
 ## Intune hakkında daha fazla bilgi edinin
@@ -73,7 +73,7 @@ Intune hakkında daha fazla bilgi edinmek için bu kaynakları kullanın:
 
 -   [Microsoft Intune Güven Merkezi](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)’nde Intune güvenlik, gizlilik ve uyumluluk uygulamaları hakkında bilgi sağlanır ve Intune sertifikalarından bazıları açıklanır.
 
--   [Microsoft Intune'da mobil cihaz yönetimi özellikleri](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Microsoft Intune’un kayıtlı cihaz yönetimi özellikleri](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
 ### Ayrıca bkz.
 [Microsoft Intune](https://docs.microsoft.com/intune/)
@@ -83,6 +83,6 @@ Intune hakkında daha fazla bilgi edinmek için bu kaynakları kullanın:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

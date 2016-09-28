@@ -4,7 +4,7 @@ description: "Bu konu başlığı altındaki hata ve durum kodları, kaynak eri�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|İçerik alınıyor|Olası Neden: İş durumu 30, bir uygulamanın kullanıcı tarafından indirmesinin başarısız olduğunu belirtir.<br /><br />Bunun olası nedenleri şunlar olabilir:<br /><br />İndirme devam ederken cihazın İnternet bağlantısı kesilmiştir.<br /><br />Kayıt sırasındaki cihaza verilen sertifikanın süresi sona ermiştir.<br /><br />Sorun Giderme:<br /><br />Cihaz sertifikası süresinin dolmadığını onaylamak için cihazda Denetim Masası’ndan Şirket Uygulamaları uygulamasını başlatın; süresi dolmuşsa cihazı yeniden kaydetmeniz gerekir.<br /><br />Cihazın İnternet’e bağlı olduğunu onaylayın ve uygulamayı yeniden istemeyi deneyin.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|İçerik indirme tamamlandı||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Yükleme devam ediyor||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|YüklemeHata oluştu|Uygulama yüklemesi, indirmeden sonra başarısız oldu.<br /><br />Uygulamanın imzalandığı kod imzalama sertifikası cihazda yok.<br /><br />Uygulamanın bağlı olduğu bir çerçeve bağımlılığı, cihazda yüklü olarak bulunmadı.<br /><br />Uygulamanızın imzalandığı kod imzalama sertifikasının cihazda mevcut olduğundan emin olun ve bu sertifikanın şirkete kayıtlı Windows RT cihazları için hedeflendiğini yöneticiyle birlikte onaylayın.<br /><br />İş çerçevesi bağımlılığının eksik olması nedeniyle yükleme hatası olması durumunda yöneticinin uygulama paketiyle birlikte iş çerçevesini paketleyerek uygulamayı yeniden yayımlaması gerekir.<br /><br />İndirilen uygulama paketi geçerli bir paket değildir, bozulmuş olabilir veya cihazdaki işletim sistemi sürümüyle uyumlu olmayabilir.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Yükleme Hatası oluştu|Uygulama yüklemesi, indirmeden sonra başarısız oldu.<br /><br />Uygulamanın imzalandığı kod imzalama sertifikası cihazda yok.<br /><br />Uygulamanın bağlı olduğu bir çerçeve bağımlılığı, cihazda yüklü olarak bulunmadı.<br /><br />Uygulamanızın imzalandığı kod imzalama sertifikasının cihazda mevcut olduğundan emin olun ve bu sertifikanın şirkete kayıtlı Windows RT cihazları için hedeflendiğini yöneticiyle birlikte onaylayın.<br /><br />İş çerçevesi bağımlılığının eksik olması nedeniyle yükleme hatası olması durumunda yöneticinin uygulama paketiyle birlikte iş çerçevesini paketleyerek uygulamayı yeniden yayımlaması gerekir.<br /><br />İndirilen uygulama paketi geçerli bir paket değildir, bozulmuş olabilir veya cihazdaki işletim sistemi sürümüyle uyumlu olmayabilir.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Yükleme Başarısı||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Kaldırma devam ediyor||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Kaldırma Hatası oluştu||
@@ -127,7 +127,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016314112|0x87D17D00|22000:Geçersiz anahtar kullanımı|
 |-2016315105|0x87D1791F|21007:Hesap doğrulanamıyor|
 |-2016315106|0x87D1791E|21006:Sertifika şifresi çözülemiyor|
-|-2016315107|0x87D1791D|21005:Hesap benzersiz değil|
+|-2016315107|0x87D1791D|21005: Hesap benzersiz değil (E-posta Profili cihazda zaten var)|
 |-2016315108|0x87D1791C|21004:Hesap oluşturulamıyor|
 |-2016315109|0x87D1791B|21003:Ana bilgisayar adı yok|
 |-2016315110|0x87D1791A|21002:Sunucudaki şifreleme ilkesine uymuyor|
@@ -372,6 +372,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

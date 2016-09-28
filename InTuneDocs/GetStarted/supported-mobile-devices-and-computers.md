@@ -13,8 +13,8 @@ ms.assetid: aeeccfa4-0f14-447e-a3df-c8435c8a4bb2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: e14a56fce0aa57b3744946d7dbf6641b8d98773b
+ms.sourcegitcommit: 5f8a145fa2c0355eaffc403084872c1f9524b6e5
+ms.openlocfilehash: 2cb4920663019f8a1ff66a7c52e12b1313f33871
 
 
 ---
@@ -29,7 +29,7 @@ Kaydolup aşağıdaki cihaz türlerini yönetebilirsiniz:
 
 Cihazları kaydetmek [bu özelliklerin](/Intune/get-started/choose-how-to-manage-devices) kullanılmasını sağlar.
 
-Alternatif olarak, Windows bilgisayarları Intune PC istemci yazılımıyla yönetebilirsiniz. Intune PC istemci yazılımı, Windows 10 Home hariç Windows 7 ve daha yeni sürümleri destekler. Bilgisayarları istemci yazılımıyla yönetmek [bu özellikleri](/Intune/) sağlar.
+Alternatif olarak, Windows bilgisayarları Intune PC istemci yazılımıyla yönetebilirsiniz. Intune bilgisayar istemci yazılımı, Windows 7 ve sonraki sürümleri (Windows 10 Home hariç) destekler. Bilgisayarları istemci yazılımıyla yönetmek [bu özelliklerden](set-up-windows-device-management-with-microsoft-intune.md) yararlanmanızı sağlar.
 
 Enterprise Management Suite kullanan müşteriler, Windows 10 cihazlarını kaydetmek için Azure Active Directory’yi de kullanabilir.
 
@@ -38,6 +38,6 @@ Enterprise Management Suite kullanan müşteriler, Windows 10 cihazlarını kayd
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
