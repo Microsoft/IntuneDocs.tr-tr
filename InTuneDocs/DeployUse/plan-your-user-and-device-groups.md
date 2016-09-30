@@ -36,7 +36,7 @@ Bu, Intune yönetim konsolundaki **Gruplar** düğümünün varsayılan görün�
 
 ![Intune konsolundaki Gruplar düğümü varsayılan görünümünün ekran görüntüsü](../media/Intune_Planning_Groups_Default_small.png)
 
-İlkeler gruplara dağıtılır, bu nedenle grup hiyerarşisi temel tasarım konularınızdan biridir. Grubu oluşturduktan sonra, grubun üst grubunu değiştiremeyeceğiniz bilmeniz önemlidir. Intune hizmetini kullanmaya başladığınız anda, gruplarınızı nasıl tasarladığınız kritik önem taşır. Kuruluş gereksinimlerinize göre bir grup hiyerarşisi tasarlamaya yönelik önerilen yöntemlerin bazıları aşağıda açıklanmıştır.
+İlkeler gruplara dağıtılır, bu nedenle grup hiyerarşisi temel tasarım konularınızdan biridir. Grubu oluşturduktan sonra, grubun üst grubunu değiştiremeyeceğinizi bilmeniz önemlidir. Intune hizmetini kullanmaya başladığınız andan itibaren, gruplarınızı nasıl tasarladığınız kritik önem taşır. Kuruluş gereksinimlerinize göre bir grup hiyerarşisi tasarlamaya yönelik önerilen yöntemlerin bazıları aşağıda açıklanmıştır.
 
 ## Grup üyeliği kuralları
 
@@ -112,15 +112,15 @@ Intune’da düzenleyemeyeceğiniz veya silemeyeceğiniz dokuz yerleşik grup va
     -   Gruplanmayan Cihazlar
 
 > [!NOTE]
-> Sloganınız *basit tut* olsun. Kuruluşunuzun aşağıda bölümlerde açıklananlar gibi belirli gereksinimleri yoksa, işleri basit tutun ve varsayılan grup yapısı ve ilkelerini kullanın. Bu, uzun vadede hizmeti daha kolay yönetilebilir hale getirir. Kullanıcılarınızı tek tip olarak işleyebilirseniz, bakım işlemi kolaylaşır. Gruba göre farklılıklar az olduğunda, bakımını yapmanız gereken ilkeleriniz de azalır.
+> Sloganınız *basit tut* olsun. Kuruluşunuzun aşağıdaki bölümlerde açıklananlar gibi belirli gereksinimleri yoksa, işleri basit tutun ve varsayılan grup yapısını ve ilkelerini kullanın. Bu, uzun vadede hizmeti daha kolay yönetilebilir hale getirir. Kullanıcılarınız için aynı biçimi kullanabilirseniz bakım işlemi kolaylaşır. Gruba göre farklılıklar az olduğunda, bakımını yapmanız gereken ilkeleriniz de azalır.
 
 
 ### Kuruluşunuzdaki tüm kullanıcılar ve cihazlar
-Kuruluşunuzdaki tüm kullanıcılar ve cihazlar için bir üst grup tanımlayın. Büyük olasılıkla tümüne uygulanacak ilkeleriniz vardır. Bu amaçla Intune’un varsayılan **Tüm Kullanıcılar** ve **Tüm cihazlar** gruplarını kullanabilirsiniz. Cihazları belirtimlerine göre düzenleyen alt gruplar, örneğin kendi cihazını getir (KCG) cihazları için ve şirketin sahip olduğu (CO) cihazlar için olan gruplar, **Tüm Kullanıcılar** ve **Tüm cihazlar** üst gruplarının alt grupları olabilir.
+Kuruluşunuzdaki tüm kullanıcılar ve cihazlar için bir üst grup tanımlayın. Büyük olasılıkla tümüne uygulanacak ilkeleriniz vardır. Bu amaçla Intune’un varsayılan **Tüm Kullanıcılar** ve **Tüm cihazlar** gruplarını kullanabilirsiniz. Cihazları belirtimlerine göre düzenleyen alt gruplar, örneğin kendi cihazını getir (KCG) cihazları için ve şirkete ait (CO) cihazlar için olan gruplar, **Tüm Kullanıcılar** ve **Tüm cihazlar** üst gruplarının alt grupları olabilir.
 
 ## Kuruluşunuz için grupları özelleştirme
 
-### BYOD ve şirkete ait cihazlar
+### KCG ve şirkete ait cihazlar
 Kuruluşunuzda çalışanların kendi cihazlarını kullanmalarına izin veriliyorsa, şirketin sahip olduğu cihazlar sağlanıyorsa veya her ikisinin bir birleşimi geçerliyse, bu cihaz kategorileri için ayrı ilkeler uygulamanızı öneririz.
 
 KCG veya karma kullanım durumlarında, gizlilikle ilgili yerel yasal düzenlemeleri ihlal etmeyen ilkeler planlamaya özen gösterin. Kendi cihazlarını getirecek tüm kullanıcılar için bir üst grup oluşturun. Bu kategorideki tüm kullanıcılara uygulanabilecek ilkeleri uygulamak için bu grubu kullanın.
@@ -134,7 +134,7 @@ Benzer şekilde, kuruluşunuzdaki CO cihazı kullanıcıları için de bir grup 
 <!---START HERE--->
 
 ### Coğrafi bölgeler için gruplar
-Kuruluşunuz özel bölgeler için ilkelere ihtiyaç duyarsa, coğrafi bölgeyi temel alan gruplar oluşturabilirsiniz. Bu gruplarda, Active Directory örneğinizde zaten oluşturmuş olduğunuz bölgesel grupları temel alabilir ve bunları Azure Active Directory hizmetinizle eşitleyebilirsiniz. Ayrıca, bölgesel grupları doğrudan Azure Active Directory’den de oluşturabilirsiniz.
+Kuruluşunuz özel bölgeler için ilkelere ihtiyaç duyarsa, coğrafi bölgeyi temel alan gruplar oluşturabilirsiniz. Bu gruplarda, Active Directory örneğinizde zaten oluşturmuş olduğunuz bölgesel grupları temel alabilir ve bunları Azure Active Directory hizmetinizle eşitleyebilirsiniz. Ayrıca, bölgesel grupları doğrudan Azure Active Directory’de de oluşturabilirsiniz.
 
 Aşağıdaki ekran görüntülerinde, şirket içi Active Directory örneğinizle eşitlenmiş grupları temel alarak Intune gruplarının nasıl oluşturulduğu gösterilir. Bu örneklerde **ABD Kullanıcı Grubu** adlı bir Active Directory güvenlik grubunuz olduğu varsayılır.
 
@@ -150,29 +150,29 @@ Girdilerinizi gözden geçirin ve sonra grubu oluşturmak için **Son**’u seç
 
 ![Grubu Düzenle iletişim kutusunun ekran görüntüsü](../media/Intune_Planning_Groups_AD_Summary_small.png)
 
-Örneğimizde, Orta Doğu ve Asya için **MEA**.
+Örneğimizde, Orta Doğu ve Asya için **MEA** adında bir grup da oluşturduk.
 
 > [!NOTE]
 > Grup üyeliği güvenlik grubu üyeliğine göre doldurulmazsa, grup üyelerine Intune lisansları atadığınızdan emin olun.
 
 ### Belirli donanımlara yönelik gruplar
-Kuruluşunuzda belirli donanım türlerine uygulanacak ilkeler gerekiyorsa, bu gereksinimi temel alan gruplar oluşturabilirsiniz. İlkelerde, şirket içi Active Directory örneğinizde zaten oluşturmuş olduğunuz güvenlik gruplarını temel alabilir ve ardından bunları Azure Active Directory ile eşitleyebilirsiniz. Ayrıca, grupları doğrudan Azure Active Directory’den de oluşturabilirsiniz. Bu örnekte **Dizüstü Bilgisayar Kullanıcıları** grubunun üst grubu olarak **ABD Kullanıcı Grubu** kullanılmaktadır.
+Kuruluşunuzda belirli donanım türlerine uygulanacak ilkeler gerekiyorsa, bu gereksinimi temel alan gruplar oluşturabilirsiniz. İlkelerde, şirket içi Active Directory örneğinizde zaten oluşturmuş olduğunuz güvenlik gruplarını temel alabilir ve ardından bunları Azure Active Directory ile eşitleyebilirsiniz. Ayrıca, grupları doğrudan Azure Active Directory’de de oluşturabilirsiniz. Bu örnekte **Dizüstü Bilgisayar Kullanıcıları** grubunun üst grubu olarak **ABD Kullanıcı Grubu** kullanılmaktadır.
 
 ![Güvenlik Grubu Seç iletişim kutusu](../media/Intune_Planning_Groups_Laptop_small.png)
 
-Bu noktada, grubunuzun hiyerarşisi aşağıdaki ekran görüntüsüne benzer olmalıdır. Artık **Dizüstü Bilgisayar Kullanıcıları** adlı Intune grubunda üyeler bulunduğu görebilirsiniz. Bu gruba uygulanan tüm ilkeler ABD bölgesindeki KCG dizüstü bilgisayar kullanıcılarına uygulanacaktır.
+Bu noktada, grubunuzun hiyerarşisi aşağıdaki ekran görüntüsüne benzer olmalıdır. Artık **Dizüstü Bilgisayar Kullanıcıları** adlı Intune grubunda üyeler bulunduğunu görebilirsiniz. Bu gruba uygulanan tüm ilkeler ABD bölgesindeki KCG dizüstü bilgisayar kullanıcılarına uygulanacaktır.
 
 ![Dizüstü Bilgisayar Kullanıcıları grubunun görüntüsü](../media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Belirli işletim sistemlerine yönelik gruplar
-Kuruluşunuzda Android, iOS veya Windows gibi belirli işletim sistemlerine uygulanacak ilkeler gerekiyorsa, bu gereksinimi temel alan gruplar oluşturabilirsiniz. Önceki örneklerde olduğu gibi, bunlarda şirket içi Active Directory örneğinizde zaten oluşturmuş olduğunuz işletim sistemine özgü grupları temel alabilir ve bunları Azure Active Directory ile eşitleyebilirsiniz. Ayrıca, bunları doğrudan Azure Active Directory örneğinizden de oluşturabilirsiniz.
+Kuruluşunuza Android, iOS veya Windows gibi belirli işletim sistemlerine uygulanacak ilkeler gerekiyorsa, bu gereksinimi temel alan gruplar oluşturabilirsiniz. Önceki örneklerde olduğu gibi, bunlarda şirket içi Active Directory örneğinizde zaten oluşturmuş olduğunuz işletim sistemine özgü grupları temel alabilir ve bunları Azure Active Directory ile eşitleyebilirsiniz. Ayrıca, bunları doğrudan Azure Active Directory örneğinizde de oluşturabilirsiniz.
 
 Önceki örneklerle aynı yöntemi izleyerek, belirli işletim sistemi platformlarını kullanan kullanıcıların <!--devices?-->ını temel alan gruplar oluşturabilirsiniz.
 
 > [!NOTE]
 > Birden çok mobil platform veya işletim sistemi kullanan kullanıcılarınız varsa ve bu kullanıcıları, Android kullanıcıları, iOS kullanıcıları ya da Windows kullanıcıları kategorilerine ayırmak için otomatik bir yönteminiz yoksa ilkeleri cihaz düzeyinde uygulamayı düşünün. Bu size, bir işletim sistemine özgü ilkeleri uygularken daha fazla esneklik getirir.
 >
-> Cihazın işletim sistemini dinamik olarak temel alan gruplar sağlayamazsınız. Bunun yerine, bunu yapmak için Active Directory veya Azure Active Directory güvenlik gruplarını kullanın.
+> Cihazın işletim sistemini dinamik olarak temel alan gruplar sağlayamazsınız. Bunu yapmak için Active Directory veya Azure Active Directory güvenlik gruplarını kullanın.
 
 ![Dizüstü bilgisayar kullanıcıları grubu](../media/Intune_Planning_Groups_OS_Hierachy_small.png)
 
@@ -187,7 +187,7 @@ Ayrıca KCG senaryosu için, çalışanlara ait tüm cihazları içeren geniş b
 
 ![Grup Oluştur iletişim kutusu](../media/Intune_Planning_Groups_Device_General_small.png)
 
-Grubun tüm BYO cihazlarını içermesi için **Tüm cihazlar (bilgisayarlar ve mobil cihazlar)** öğesini seçtiğinizden emin olun:
+Grubun tüm KCG cihazlarını içermesi için **Tüm cihazlar (bilgisayarlar ve mobil cihazlar)** öğesini seçtiğinizden emin olun:
 
 ![Üyelik ölçütlerini tanımla sayfası](../media/Intune_Planning_Groups_Device_Criteria_small.png)
 
@@ -206,7 +206,7 @@ Kullanıcı grubu hiyerarşisine benzer bir cihaz grubu hiyerarşisi elde edene 
 
 ![Android için ilke oluşturma](../media/Intune_planning_policy_android_small.png)
 
-İlkelerini bu şekilde adlandırdığınızda, ilkeleri, bunların kullanım amacını ve kapsamını **İlkeler** düğümündeaşağıda gösterildiği gibi hızla tanımlayabilirsiniz:
+İlkelerinizi bu şekilde adlandırdığınızda, ilkeleri, bunların kullanım amacını ve kapsamını **İlkeler** düğümünde aşağıda gösterildiği gibi hızla belirleyebilirsiniz:
 
 ![Intune ilke listesi](../media/Intune_planning_policy_view_small.png)
 
