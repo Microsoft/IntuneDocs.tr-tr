@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
+ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
+ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 
 
 
@@ -64,9 +64,10 @@ Bir Android veya Windows Wi-Fi profili için XML kodu örneği aşağıdaki veri
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`: **Yalnış** olarak ayarlayın, çünkü **doğru** ayarı cihazın şifreli bir parola beklemesine ve bunun şifresini çözmeye çalışmasına neden olur; sonuçta bağlantı başarısız olabilir.
+> `<protected>false</protected>`**Yanlış** olarak ayarlanmalıdır, çünkü **doğru** ayarı cihazın şifreli bir parola beklemesine ve bunun şifresini çözmeye çalışmasına neden olur; sonuçta bağlantı başarısız olabilir.
 > 
 >  `<hex>53534944</hex>` `<name><SSID of wifi profile></name>` onaltılı değerine ayarlanmalıdır.
+>  Windows 10 cihazları yanlışlıkla *0x87D1FDE8 Düzeltme başarısız* hatasını döndürebilir, ancak yine de profille hazırlanır.
 
     <!--
     <Name of wifi profile> = Name of profile
