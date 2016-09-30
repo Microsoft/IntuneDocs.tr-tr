@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 93c05ecd0154bb637f421dcc5d7ee56ff8d3ab2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ Dış bağlantılara dayalı uygulamalar, Intune bulut depolama alanınızda dep
 Uygulama mağazasından ücretsiz olarak sağlanan iOS uygulamalarını yönetebilir ve dağıtabilirsiniz. Ayrıca, yönetilen iOS uygulamalarını [mobil uygulama yönetim ilkelerini](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) [uyumlu uygulamalar](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) ile ilişkilendirmek ve yönetici konsolundaki durumlarını gözden geçirmek için kullanabilirsiniz.<br /><br />Yönetilen iOS uygulamaları Intune bulut depolama alanınızda depolanmaz.
 
 > [!TIP]
-> Intune’u [MDM yetkilisi](get-ready-to-enroll-devices-in-microsoft-intune.md) olarak ayarlamadığınız sürece, mobil cihazlara yönelik seçenekler kullanılamaz.
+> Intune’u [MDM yetkilisi](prerequisites-for-enrollment.md) olarak ayarlamadığınız sürece, mobil cihazlara yönelik seçenekler kullanılamaz.
 
 ## Intune yazılım yayımcısı
 Microsoft Intune Yazılım Yayımcısı, Intune yönetici konsolundan uygulama eklediğinizde veya değiştirdiğinizde başlatılır. Yayımcıdan şunlardan birini yapacak bir yazılım yükleyicisi türü seçin ve yapılandırın:
@@ -82,6 +82,6 @@ Uygulamaları dağıtabilmek için önce Intune konsoluna eklemeniz gerekir. [Ka
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

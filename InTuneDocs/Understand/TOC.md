@@ -9,19 +9,16 @@
 ### [Diğer seçenekler ve ek özellikler](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Sonraki adımlar](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Yaygın senaryolar](common-ways-to-use-intune.md)
-## [Hızlı başlangıç kılavuzları](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Kullanıcılarınıza mobil uygulama yayımlama](publish-mobile-apps-to-users.md)
-### [Windows bilgisayarlarını kötü amaçlı yazılım tehditlerine karşı koruma](protect-pcs-against-malware-threats.md)
-### [Mobil cihazlarda e-posta yapılandırmasını basitleştirme](simplify-email-configuration-on-mobile-devices.md)
+## [Sözlük](intune-glossary.md)
 
 # [Başlarken](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Yenilikler](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Dağıtma ve Kullanma](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 ---
@@ -28,7 +28,7 @@ Bu konuda, cihaz kayıt sorunlarının giderilmesi için tavsiyeler verilmektedi
 
 Sorun gidermeye başlamadan önce, Intune’u kayıt sağlamak üzere doğru şekilde yapılandırdığınızdan emin olmak için kontrol edin. Bu yapılandırma gereksinimleri hakkında daha fazla bilgi edinebilirsiniz:
 
--   [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune/deploy-use/gprerequisites-for-enrollment.md)
 -   [iOS ve Mac yönetimini ayarlama](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Microsoft Intune ile Windows Phone ve Windows 10 Mobile yönetimini ayarlama](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Windows cihaz yönetimini ayarlama](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -306,6 +306,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
