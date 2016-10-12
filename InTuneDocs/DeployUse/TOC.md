@@ -1,13 +1,14 @@
 # [Anlama ve Keşfetme](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Başlat](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Başlarken](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [Yenilikler](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Dağıtma ve Kullanma](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Cihaz ve uygulama yaşam döngülerine genel bakış](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Cihaz yaşam döngüsü](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [Uygulama yaşam döngüsü](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Cihazları kaydetme](enroll-devices-in-microsoft-intune.md)
-### [Intune’da cihazları kaydetmeye hazır olun](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [MDM için önkoşullar](prerequisites-for-enrollment.md)
 #### [iOS ve Mac yönetimi](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android yönetimi](set-up-android-management-with-microsoft-intune.md)
 #### [Windows cihaz yönetimi ](set-up-windows-device-management-with-microsoft-intune.md)
@@ -103,7 +104,7 @@
 
 ### [Ağlara erişimi kısıtlama (Cisco ISE)](restrict-access-to-networks.md)
 ### [Cihaz, ağ ve uygulama riskine dayalı olarak erişimi kısıtlama](restrict-access-based-on-device-network-app-risk.md)
-#### [Lookout MTP’yi ayarlama](set-up-your-subscription-with-lookout-mtp.md)
+#### [Lookout cihaz tehdit korumasını ayarlama](set-up-your-subscription-with-lookout-mtp.md)
 #### [Intune'da Lookout’u etkinleştirme](enable-lookout-mtp-connection-in-intune.md)
 #### [Lookout for Work uygulamasını dağıtma](configure-and-deploy-lookout-for-work-apps.md)
 #### [Uyumluluk ilkesinde cihaz tehdit korumasını etkinleştirme](enable-device-threat-protection-rule-in-compliance-policy.md)
@@ -134,15 +135,11 @@
 
 ## [Son kullanıcılarınıza söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-## [Intune’a geçiş](migrate-to-intune.md)
-
-## [Yenilikler](whats-new-in-microsoft-intune.md)
-
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
 
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

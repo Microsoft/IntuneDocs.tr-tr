@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
-ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 61c4cb00fba3352f6898ec41b6d07834da4ec63d
 
 
 ---
@@ -34,9 +34,9 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları son kullanıc
 
 Apple kısıtlamaları, iş kolu ve yönetilen uygulama mağazası uygulamalarının Şirket Portalı uygulamasında listelenmesini yasaklar. Bu sorunu aşmak için, iOS için Şirket Portalı uygulamasındaki uygulama kutucukları, aşağıda açıklandığı gibi kullanıcıları tüm uygulamalarda farklı görünümle tek konuma, yani Şirket Portalı web sitesine yönlendirir:
 
-- **Şirket Uygulamaları** kutucuğu daha önce [Şirket Portalı Web sitesinin](http://portal.manage.microsoft.com) TÜMÜ sekmesindeki tüm uygulamaların bir listesine yönlendirmekteydi ve bu şekilde çalışmaya devam edecektir. Kutucuk adı **Tüm Uygulamalar** olarak değişmiştir.
+- **Şirket Uygulamaları** kutucuğu daha önce [Şirket Portalı Web sitesinin](http://portal.manage.microsoft.com) TÜMÜ sekmesindeki tüm uygulamaların listesine yönlendirmekteydi ve bu şekilde çalışmaya devam edecektir. Kutucuk adı **Tüm Uygulamalar** olarak değişmiştir.
 
-- **Diğer Uygulamalar** kutucuğu daha önce, Şirket Portalı uygulamasında bulunan ve Apple’ın Şirket Portalı uygulamasının göstermesine izin verdiği tüm uygulamaları listeleyen görünüme yönlendirmekteydi. Kutucuk adı **Öne Çıkan Uygulamalar** olarak değişmiştir ve kutucuğa dokunan kullanıcıları Şirket Portalı web sitesinin ÖNE ÇIKANLAR sekmesine götürür.
+- **Diğer Uygulamalar** kutucuğu daha önce, Şirket Portalı uygulamasında bulunan ve Apple’ın Şirket Portalı uygulamasının göstermesine izin verdiği tüm uygulamaları listeleyen görünüme yönlendiriyordu. Kutucuk adı **Öne Çıkan Uygulamalar** olarak değişmiştir ve kutucuğa dokunan kullanıcıları Şirket Portalı web sitesinin ÖNE ÇIKANLAR sekmesine götürür.
 
 -  **Kategoriler** kutucuğu daha önce Şirket Portalı uygulaması içinde bulunan ve uygulama kategorilerini listeleyen görünüme yönlendirmekteydi. Kutucuk adı değişmemiştir, ancak artık Şirket Portalı web sitesinin KATEGORİLER sekmesine yönlendirir.
 Güncelleştirilmiş ekran görüntülerini [burada](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186) bulabilirsiniz.
@@ -44,11 +44,12 @@ Güncelleştirilmiş ekran görüntülerini [burada](https://gallery.technet.mic
 
 
 ###Ayrıca bkz.
-[Android kullanıcılarınız uygulamalarını nasıl alır](how-your-android-users-get-their-apps.md)</br>
+[Android kullanıcılarınız uygulamalarını nasıl alır](how-your-android-users-get-their-apps.md)
+
 [Windows kullanıcılarınız uygulamalarını nasıl alır](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 
