@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
-ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: a853eb4de5528b3ca219ca844a9df4f3b5ad9224
 
 
 ---
@@ -29,6 +29,7 @@ E-postaya ve diğer hizmetlere yalnızca uyumluluk ilkesi kurallarıyla uyumlu o
 Uyumluluk ilkelerini, koşullu erişimden bağımsız olarak da kullanabilirsiniz. Bağımsız olarak kullanıldığında, hedeflenen cihazlar değerlendirilir ve uyumluluk durumları raporlanır. Örneğin, kaç cihazın şifrelenmediğini ya da hangi cihazların yazılım kilidinin kırıldığını veya kökünün belirtildiğini raporlamak isteyebilirsiniz. Öte yandan, bunlar bağımsız kullanıldığında, şirket kaynaklarına yönelik erişim kısıtlaması olmaz.
 
 Uyumluluk ilkelerini kullanıcılara siz dağıtırsınız. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının cihazlarında uyumluluk denetimi yapılır.
+Mobil cihazların dağıtıldıktan sonra ilke almasının ne kadar sürdüğü hakkında bilgi edinmek için bkz. [Cihazlarınızda ayarları ve özellikleri yönetme](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)
 
 Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyumluluk ilkeleri tarafından desteklenen cihaz türleri ve uyumsuz ayarların nasıl yönetildiği listelenmektedir.
 
@@ -64,6 +65,6 @@ Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyum
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

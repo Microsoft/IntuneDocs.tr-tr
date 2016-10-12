@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
-ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 149508942b89b15308591e17723884add3ac78ae
 
 
 ---
@@ -32,7 +32,7 @@ Bir Intune yöneticisi olarak Windows bilgisayarlar için kaydolmayı ve yönetm
 Kullanıcıların, Intune Şirket Portalı uygulamasını yükleyip cihazlarını kaydetmelerine izin verebilirsiniz. DNS CNAME oluşturmak, kullanıcıların sunucu adı girmeden bağlantı kurmalarına ve Intune’a kaydolmalarına yardımcı olur.
 
 1. **Intune’u ayarlama**<br>
-Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
+Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](prerequisites-for-enrollment.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
 
 2. **CNAME’ler oluşturma** (isteğe bağlı)<br>Kaydolmayı basitleştirmek amacıyla şirketinizin etki alanı için **CNAME** DNS kaynak kayıtları oluşturun. CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları oluşturmak kullanıcılar için kaydolmayı kolaylaştırır. Hiçbir kaydolma CNAME kaydı bulunamazsa, kullanıcılardan MDM sunucu adını `https://manage.microsoft.com` el ile girmeleri istenir.  CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
 
@@ -60,10 +60,10 @@ Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz y
       - [Windows cihazlar için son kullanıcı kılavuzu](../enduser/using-your-windows-device-with-intune.md)
 
 ### Ayrıca bkz.
-[Microsoft Intune’da cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Microsoft Intune’da cihazları kaydetmenin önkoşulları](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

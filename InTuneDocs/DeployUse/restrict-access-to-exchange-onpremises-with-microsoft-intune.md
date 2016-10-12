@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
+ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
+ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
 
 
 ---
@@ -68,7 +68,7 @@ Aşağıdaki çizelgede, Şirket İçi Exchange’e yönelik koşullu erişim il
 
 -   iOS’ta yerel e-posta uygulaması.
 
--   Android 4 veya üzerinde yerel e-posta uygulaması
+-   Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri
 > [!NOTE]
 > Android ve iOS için Microsoft Outlook uygulaması desteklenmez.
 
@@ -123,6 +123,6 @@ Windows 8 ve üstündeki **Mail** uygulaması ([!INCLUDE[wit_nextref](../include
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO5-->
 
 

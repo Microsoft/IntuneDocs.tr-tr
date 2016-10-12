@@ -13,14 +13,14 @@ ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1334500471d2aea5e8c58a3219c755bfd9953424
-ms.openlocfilehash: 4ae7d6c571f69c0cc51dc15355e50325afb88694
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: 2052aca24baa752bc4fad3bd7a75f8efa109e9e9
 
 
 ---
 
 # Intune Yönetici konsolunda Lookout MTP bağlantısını etkinleştirme
-Bu konu, Intune'da Lookout MTP bağlantısını nasıl etkinleştireceğinizi gösterir. Bu adımı uygulamadan önce Lookout MTP konsolunda Intune Bağlayıcısını zaten yapılandırmış olmanız gerekir.  Bunu zaten yapmadıysanız, [Lookout mobil tehdit koruması aboneliğinizi ayarlama](set-up-your-subscription-with-lookout-mtp.md) bölümünde açıklanan adımları uygulayın.
+Bu konu, Intune'da Lookout MTP bağlantısını nasıl etkinleştireceğinizi gösterir. Bu adımı uygulamadan önce Lookout konsolunda Intune Bağlayıcısı’nı zaten yapılandırmış olmanız gerekir.  Bunu zaten yapmadıysanız, [Lookout mobil tehdit koruması aboneliğinizi ayarlama](set-up-your-subscription-with-lookout-mtp.md) bölümünde açıklanan adımları uygulayın.
 
 Intune’da Lookout MTP bağlantısını yapılandırmak için [Microsoft Intune Yönetici konsolundaki](https://manage.microsoft.com) **Yönetim** sayfasında **Üçüncü Taraf Hizmet Tümleştirmesi**’ni seçin. **Lookout durumu**’nu seçin ve iki durumlu düğmeyi kullanarak **MTP ile Eşitleme**’yi etkinleştirin.
 
@@ -35,6 +35,6 @@ Bu, Intune yönetici konsolunda Lookout ve Intune tümleştirmesi kurulumunu tam
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

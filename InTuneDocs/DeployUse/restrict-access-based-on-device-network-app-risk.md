@@ -1,5 +1,5 @@
 ---
-title: "Mobil tehdit koruması kullanarak erişimi kısıtlama | Microsoft Intune"
+title: "Cihaz tehdit koruması kullanarak erişimi kısıtlama | Microsoft Intune"
 description: "Şirket kaynaklarına erişimi cihaz, ağ ve uygulama riskine dayalı olarak kısıtlayın."
 keywords: 
 author: karthikaraman
@@ -13,24 +13,24 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c3cf5e6b32ad24d4972fd147331dda7d2d43e8c6
-ms.openlocfilehash: d4eadb73aac14a375f41c434a4303a885bfbae64
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: 758e4408fa7119ed4ebb82e98b850be5b1f318b4
 
 
 ---
 
 # Şirket kaynağına erişimi cihaz, ağ ve uygulama riskine dayalı olarak kısıtlama
-Microsoft Intune ile tümleşik bir mobil tehdit koruması (MTP) çözümü olan Lookout tarafından gerçekleştirilen risk değerlendirmesine dayalı olarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Lookout MTP hizmetinin cihazlardan işletim sistemi (OS) güvenlik açıkları, yüklü kötü amaçlı uygulamalar ve ağ profilleri için topladığı telemetriye dayalıdır. Risk değerlendirmesine dayalı olarak bundan sonra Intune’da koşullu erişim ilkeleri yapılandırabilir ve bu cihazlarda algılanan tehditler nedeniyle uyumlu olmadığı belirlenen cihazlara erişim izni verebilir veya erişimi engelleyebilirsiniz.  Bu, şu anda yalnızca **4.1 ve üzeri** sürümleri çalıştıran ve Microsoft Intune’a kayıtlı **Android** cihazlar için desteklenir.  
+Microsoft Intune ile tümleşik bir cihaz tehdit koruması çözümü olan Lookout tarafından gerçekleştirilen risk değerlendirmesine dayalı olarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Lookout hizmetinin cihazlardan işletim sistemi (OS) güvenlik açıkları, yüklü kötü amaçlı uygulamalar ve ağ profilleri için topladığı telemetriye dayalıdır. Risk değerlendirmesine dayalı olarak bundan sonra Intune’da koşullu erişim ilkeleri yapılandırabilir ve bu cihazlarda algılanan tehditler nedeniyle uyumlu olmadığı belirlenen cihazlara erişim izni verebilir veya erişimi engelleyebilirsiniz.  Bu, şu anda yalnızca **4.1 ve üzeri** sürümleri çalıştıran ve Microsoft Intune’a kayıtlı **Android** cihazlar için desteklenir.  Lookout’un desteklediği platformlar ve diller hakkında bilgi için bu [makaleye](https://personal.support.lookout.com/hc/en-us/articles/114094140253) göz atın.
 ## Hangi sorunu çözer?
 Şirketler ve kuruluşların hassas verileri fiziksel, uygulama tabanlı ve ağ tabanlı tehditlerin yanı sıra işletim sistemi güvenlik açıklarını içeren yeni tehditlerden koruması gerekir.
 
 Tarihsel olarak, şirketler ve kuruluşlar bilgisayarları kötü niyetli saldırılara karşı koruma konusunda etkin bir pozisyonda yer almıştır. Mobil, genellikle korumasız ilerleyen yeni ortaya çıkmış bir alandır. Mobil platformlarda uygulama yalıtımı ve denetlenen tüketici uygulama mağazaları gibi teknikler kullanılarak yerleşik işletim sistemi koruması sağlanmasına rağmen, bu platformların karmaşık saldırılara karşı güvenlik açıkları vardır. Mobil cihazlar çalışanlar tarafından iş yapmak ve hassas ve değerli verilere erişmek için giderek daha fazla kullanıldığından, bu cihazların çeşitli karmaşık saldırılardan korunması gerekmektedir.
 
-Intune, Lookout gibi MTP çözümlerinin sağladığı risk değerlendirmelerine dayalı olarak şirket kaynaklarına ve verilerine erişimi denetleme olanağı sunar.
+Intune, Lookout gibi cihaz tehdit koruması çözümlerinin sağladığı risk değerlendirmelerine dayalı olarak şirket kaynaklarına ve verilerine erişimi denetleme olanağı sunar.
 
-## Intune ve Lookout mobil tehdit koruması, şirket kaynaklarını korumaya nasıl yardımcı olur?
-Lookout’un mobil uygulaması (Lookout for work) mobil cihazlarda çalışarak dosya sistemini, ağ yığınını, cihaz ve uygulama telemetrisini (kullanılabiliyorsa) yakalar ve bunu Lookout mobil tehdit koruması (MTP) bulut hizmetine göndererek mobil tehditler için birleşik bir cihaz riski hesaplar. MTP konsolundaki tehditlere yönelik risk düzeyi sınıflandırmasını da gereksinimlerinize uyacak şekilde değiştirebilirsiniz.  
-Intune’daki uyumluluk ilkesi artık Lookout MTP risk değerlendirmesine dayalı Lookout mobil tehdit koruması için yeni bir kural içermektedir. Bu kural etkinleştirildiğinde, Microsoft Intune cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
+## Intune ve Lookout cihaz tehdit koruması, şirket kaynaklarını korumaya nasıl yardımcı olur?
+Lookout’un mobil uygulaması (Lookout for work) mobil cihazlarda çalışarak dosya sistemini, ağ yığınını, cihaz ve uygulama telemetrisini (kullanılabiliyorsa) yakalar ve bunu Lookout cihaz tehdit koruması bulut hizmetine göndererek mobil tehditler için birleşik bir cihaz riski hesaplar. Lookout konsolundaki tehditlere yönelik risk düzeyi sınıflandırmasını da gereksinimlerinize uyacak şekilde değiştirebilirsiniz.  
+Intune’daki uyumluluk ilkesi artık Lookout cihaz tehdit risk değerlendirmesine dayalı Lookout mobil tehdit koruması için yeni bir kural içermektedir. Bu kural etkinleştirildiğinde, Microsoft Intune cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
 
 Cihazın uyumluluk ilkesiyle uyumsuz olduğu belirlenirse, koşullu erişim ilkeleri kullanılarak Exchange Online ve SharePoint Online gibi kaynaklara erişim engellenebilir. Erişim engellendiğinde, son kullanıcılara sorunu gidermek ve şirket kaynaklarına yeniden erişim sağlamak için bir kılavuz sağlanır. Bu kılavuz Lookout for Work uygulaması aracılığıyla başlatılır.
 
@@ -80,6 +80,6 @@ Bu çözümü uygulamak için yapılması gereken ana adımlar şunlardır:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

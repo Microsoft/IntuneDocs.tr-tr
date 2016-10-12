@@ -13,8 +13,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 182601f7e4a4bd38c70f7961188eb4af593f6107
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 4c72b39296c9c2f0fe435d57f1e829ba3114fc61
 
 
 ---
@@ -52,7 +52,7 @@ Bu hızlı başlangıç kılavuzunun [6. adımında](start-with-a-paid-subscript
 
 Kaydedilen mobil cihazda Şirket Portalı’nı açın, **Uygulamalar**'ı seçin ve ardından **Microsoft Skype**'ı yükleyin.
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanarak mobil cihaz yönetimi hakkında daha fazla bilgi için, bkz. [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanarak mobil cihaz yönetimi hakkında daha fazla bilgi için bkz. [Microsoft Intune’da cihazları kaydetmenin önkoşulları](/intune/deploy-use/prerequisites-for-enrollment.md).
 
 
 ### Sonraki adımlar
@@ -64,6 +64,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* son adımını da tamamlam
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

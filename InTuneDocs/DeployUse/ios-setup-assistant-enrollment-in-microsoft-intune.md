@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 45aa4511945ab4763dc0dc35baefe47887e561bb
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: e42c2e5db17943562ccd88ab8fe838056c67553a
 
 
 ---
@@ -139,10 +139,10 @@ Apple Configurator ile iOS cihazlarını fabrika ayarlarına sıfırlayabilir ve
 
 
 ### Ayrıca bkz.
-[Cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Cihazları kaydetme önkoşulları](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

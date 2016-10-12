@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6b182ebab1691c62e69cabaf4689ac7395ab31a
-ms.openlocfilehash: 0995d3ced978f5213fdb0e9905f508b64a1e5c09
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 145d373edd65d7ba01c696c3b851692a13831dad
 
 
 ---
@@ -35,22 +35,29 @@ Aşağıdaki tablo, desteklenen özellikleriyle birlikte Intune'un kayıt yönte
 
 | **Yöntem** |  **Silme** |  **Benzeşim**    |   **Kilitle** | **Ayrıntılar** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Hayır|    Evet |   Hayır | [daha fazla](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[KCG](#byod)** | Hayır|    Evet |   Hayır | [daha fazla](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   Hayır |Hayır |Hayır  | [daha fazla](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 |**[DEP](#dep)**|   Evet |   İsteğe bağlı |  İsteğe bağlı|[daha fazla](ios-device-enrollment-program-in-microsoft-intune.md)|
 |**[USB-SA](#usb-sa)**| Evet |   İsteğe bağlı |  Hayır| [daha fazla](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
 |**[USB-Direct](#usb-direct)**| Hayır |    Hayır  | Hayır|[daha fazla](ios-direct-enrollment-in-microsoft-intune.md)|
 
-**Windows ve Android kayıt yöntemleri**
+**Windows kayıt yöntemleri**
 
 | **Yöntem** |  **Silme** |  **Benzeşim**    |   **Kilitle** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Hayır|    Evet |   Hayır | [daha fazla](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[KCG](#byod)** | Evet|   Evet |   Hayır | [daha fazla](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[DEM](#dem)**|   Hayır |Hayır |Hayır  |[daha fazla](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
+**Android kayıt yöntemleri**
+
+| **Yöntem** |  **Silme** |  **Benzeşim**    |   **Kilitle** | **Ayrıntılar**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[KCG](#byod)** | Hayır|    Evet |   Hayır | [daha fazla](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   Hayır |Hayır |Hayır  |[daha fazla](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 Doğru yöntemi bulmanıza yardımcı olmak üzere bir dizi soru için bkz. [Cihazların nasıl kaydedileceği seçin](/intune/get-started/choose-how-to-enroll-devices1).
 
-## BYOD
+## KCG
 “Kendi cihazını getir” kullanıcıları Şirket Portalı uygulamasını yükler ve cihazlarını kaydeder. Bu, kullanıcıların etki alanına veya Azure Active Directory’ye katılarak şirket ağına bağlanmasına olanak tanır. KCG kaydını etkinleştirmek çoğu platformda birçok COD senaryosunun önkoşuludur. Bkz: [Cihaz kaydı için önkoşullar](prerequisites-for-enrollment.md). ([Tabloya dön](#overview-of-device-enrollment-methods))
 
 ## Şirkete ait cihazlar
@@ -111,6 +118,6 @@ Intune aşağıdaki cihaz platformlarını yönetebilir:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

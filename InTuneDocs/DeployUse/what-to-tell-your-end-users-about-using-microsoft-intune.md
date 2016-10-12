@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
-ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 40a641d807c3ad73079a5d2e130b00c2065da6cb
 
 
 ---
@@ -23,19 +23,16 @@ ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 # Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler
 
-Bu bağlantıları ve bilgileri aşağıdakiler için kullanın:
-
-- Kullanıcılarınızın Intune'da farklı görevler gerçekleştirmek için izlediği adımları anlayın.
-- Görevleri tamamlamalarına ve Intune kullanırken yaşadıkları sorunları çözmelerine yardımcı olmak üzere kullanıcılarınıza verin.
+Son kullanıcılarınızın Intune'da farklı görevler gerçekleştirmek üzere izlediği adımları anlamak için bu bağlantıları ve bilgileri kullanın.
 
 İhtiyaç duyarlarsa kullanıcılarınızın yardım alabilmesi için [Şirket Portalını özelleştirirken](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) BT yöneticisinin iletişim bilgilerini eklemeyi unutmayın.
 
 
-## Son kullanıcılarınızın sık kullanılan görevler hakkında bilgi bulabileceği yerler
+## Son kullanıcılarınız, nasıl yapılır bilgilerini ve sorun giderme bilgilerini nasıl bulur?
 
-Kaydedilen kullanıcıların Intune kullanmaya ilişkin yardıma ihtiyacı olduğunda, genellikle Şirket Portalı web sitesinde veya Şirket Portalı uygulamasında kendilerini sorunu nasıl düzelteceklerine veya görevi nasıl tamamlayacaklarına ilişkin belirli bir makaleye yönelten bir bağlantı görürler. Örneğin Android kullanıcıları gerekli bir sertifikanın eksik olduğuna ilişkin bir mesaj görürse, “Bu sorunun çözümü” bağlantısına dokunarak sertifikanın nasıl alınacağına ilişkin adımları gösteren makaleye gidebilir. 
+Şirket Portalı web sitesi ve Şirket Portalı uygulaması kayıtlı kullanıcılara “Daha fazla bilgi edinin” veya “Bu sorunun çözümü” gibi bağlantılar sunarak, sorunu düzeltme veya görevi tamamlama adımlarına yönlendirir. Örneğin; Android kullanıcıları Android Şirket Portalı’nda gerekli bir sertifikanın eksik olduğuna ilişkin bir mesaj görürse, bir bağlantıya dokunarak sertifikanın nasıl alınacağına ilişkin adımları gösteren makaleye gidebilir. 
 
-Aşağıdaki bağlantılar BT yöneticileri içindir. Bu sayfalar, Şirket Portalı web sitesi veya uygulamasından kullanıcıların yönlendirildiği tüm makalelere yönelik bağlantıları içerir. Bağlantı bölümlere ayrılmıştır: Şirket Portalı uygulama yüklemesi ve Intune kaydı, yönetilen uygulamaları kullanma ve cihazlarını el ile eşitleme gibi kullanıcıların cihazlarında yapabileceği görevler ve sorun giderme.
+Kullanıcıların Şirket Portalı web sitesinden veya uygulamasından yönlendirildiği adımları görmek için aşağıdaki bağlantıları kullanın. Bağlantılar, Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı, kullanıcıların cihazlarında yapabileceği genel görevler ve sorun giderme gibi bölümlere ayrılmıştır.
 
 - [Android cihazınızı Intune ile kullanma](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -43,12 +40,11 @@ Aşağıdaki bağlantılar BT yöneticileri içindir. Bu sayfalar, Şirket Porta
 - [Intune Şirket Portalı web sitesini kullanma](/Intune/EndUser/using-the-intune-company-portal-website)
 
 
-## Kayıt kılavuzları ve kullanıcılarınız için özelleştirebileceğiniz şablonlar
+## Kullanıcılarınız için özelleştirebileceğiniz kayıt kılavuzu
 
-- [BT yöneticileri için özelleştirilebilir, son kullanıcı Intune kayıt şablonu](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) - iOS, Mac OS X ve Android cihazlar için son kullanıcı kaydı ekran görüntüleri ve ayrıntılı adımlarını içeren Özelleştirilebilir Word belgesi. Bu belgeyi olduğu gibi kullanabilirsiniz veya bu belgeyi son kullanıcılarınıza vermeden önce yönergeleri özelleştirebilirsiniz.</br></br>
-- [Kaydolma, kaydı kaldırma, uygulama alma ve daha fazlasıyla ilgili adımlar ve katıştırılmış videolar bulunan iki sayfalık özelleştirilebilir belge](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c#content) -Özelleştirebileceğiniz ve son kullanıcılarınıza verebileceğiniz belge. Android, iOS ve Windows cihazlarını kaydetme, uygulamalar alma, kayıt kaldırma, cihazınızı kaybettiğinizde yapılacaklar ve BT Uzmanlarının cihazınızda görebilecekleri ve göremeyecekleri şeyler ile ilgili bölümleri vardır.
+Son kullanıcılarınız için kendi kayıt yönergelerinizi oluşturmak üzere [BT yöneticilerine yönelik bu özelleştirilebilir, son kullanıcı Intune şablonunu](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) kullanabilirsiniz. Bu Word belgesi iOS, Mac OS X ve Android cihazlar için son kullanıcı kaydına ilişkin ayrıntılı adımlar ve ekran görüntüleri içerir. 
 
-##Son kullanıcılarınız uygulamalarını nasıl alır
+## Son kullanıcılarınız uygulamalarını nasıl alır
 
 Son kullanıcılarınızın uygulamalarını nasıl aldığını anlamak için, aşağıdaki cihaz platformu seçeneklerden birini seçin:
 
@@ -63,6 +59,6 @@ Bu makalede yer almasını istediğiniz başka bilgiler varsa, lütfen öneriniz
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

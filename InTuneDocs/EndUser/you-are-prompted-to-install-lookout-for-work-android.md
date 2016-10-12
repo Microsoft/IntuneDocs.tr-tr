@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
-ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
+ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
+ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
 
 ---
@@ -39,9 +39,9 @@ ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
     ![Lookout for Work’ü açın ve Etkinleştir’e dokunun](./media/lookout-activate-button-android.png)
 
-4. **İş hesabınızla oturum açın** seçeneğine dokunun ve iş veya okul e-postasına ve dosyalarına erişirken kullandığınız hesabı girin.
+4. **Azure Active Directory ile oturum açın** seçeneğine dokunun ve iş veya okul e-postası ve dosyalarına erişirken kullandığınız hesabı girin.
 
-    ![iş veya okul hesabınızla oturum açın](./media/lookout-sign-in-android.png)
+    ![iş veya okul hesabınızla oturum açın](./media/lookout-sign-in-azure-android.png)
 
 5. İş veya okul e-postasına ve dosyalarına erişirken kullandığınız hesabı seçin ve ardından **HESAP EKLE**’ye dokunun.
 
@@ -78,6 +78,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 
