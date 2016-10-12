@@ -4,7 +4,7 @@ description: "Gruplar çalışma alanını kullanarak grupları oluşturun ve y�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ Bu konu, Intune’da grupların nasıl oluşturulacağını açıklar. Ayrıca g
 
 >[!IMPORTANT]
 >
->Intune portalında Gruplar çalışma alanını açar ve Azure Active Directory (Azure AD) portalına bir bağlantı görürseniz, [Gruplar için yönetici deneyiminde yapılacak geliştirmeler hakkında bildirim](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups) kısmında açıklanan, Intune’daki Azure AD güvenlik gruplarına yönelik *yeni* grup yönetimi yaklaşımını zaten kullanıyorsunuz demektir. Gruplarınızı oluşturmak ve yönetmek için Azure AD portalı bağlantısına tıklayın. Azure AD güvenlik grupları ile nasıl çalışacağınızı öğrenmek için bkz. [Azure Active Directory grupları ile kaynaklara erişimi yönetme](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+>Intune portalında Gruplar çalışma alanını açar ve Azure Active Directory (Azure AD) portalına bir bağlantı görürseniz, [Gruplar için yönetici deneyiminde yapılacak geliştirmeler hakkında bildirim](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups) kısmında açıklanan, Intune’daki Azure AD güvenlik gruplarına yönelik *yeni* grup yönetimi yaklaşımını zaten kullanıyorsunuz demektir. Gruplarınızı oluşturmak ve yönetmek için Azure AD portalı bağlantısına tıklayın.
+>
+>![Azure grup yönetimi bağlantısının ekran görüntüsü](../media/groups-link-azure.png) 
 >
 >Azure AD portalı bağlantısını görmüyorsanız, hâlâ bu konunun [Microsoft Intune'la kullanıcı ve cihazları yönetmek için gruplar oluşturma](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) kısmında açıklanan *mevcut* grup yönetimi yaklaşımını kullanıyorsunuz demektir.
 
@@ -42,7 +44,7 @@ Bu değişiklik sizi şu anda etkilemeyecektir. Ancak yakında şunlar olacak:
 
 
 ### Yeni grup deneyimine nasıl ve ne zaman geçeceğim?
-Mevcut Intune müşterilerini belli bir zaman dilimi boyunca geçireceğiz. Birkaç hafta içinde bu geçişin zamanlamasını son haline getirecek ve daha fazla ayrıntı vermek için bu konuyu güncelleştireceğiz. Geçişiniz yapılmadan önce size bildirim vereceğiz. Geçişle ilgili endişeleriniz varsa, lütfen <intunegrps@microsoft.com> adresinden geçiş ekibimizle iletişim kurun.
+Mevcut Intune müşterilerini belli bir zaman dilimi boyunca geçireceğiz. Birkaç hafta içinde bu geçişin zamanlamasını son haline getirecek ve daha fazla ayrıntı vermek için bu konuyu güncelleştireceğiz. Geçişiniz yapılmadan önce size bildirim vereceğiz. Geçişle ilgili endişeleriniz varsa, lütfen [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) adresinden geçiş ekibimizle iletişim kurun. Grupların nasıl taşınacağı hakkında ayrıntılar için bkz. [Grupları Azure Active Directory’e geçirme](migrating-groups-to-azure-active-directory.md).
 
 ### Mevcut kullanıcı ve cihaz gruplarıma ne olacak?
  Intune’da oluşturduğunuz kullanıcı grupları ve cihaz grupları Azure AD güvenlik gruplarına geçirilecektir. Geçiş yapıldığı sırada Tüm Kullanıcılar grubu gibi varsayılan Intune gruplarını dağıtımlarda kullanıyorsanız, bunlar da geçirilecektir. Geçiş işlemi bazı gruplar için daha karmaşık olabilir. Kuruluşunuzdaki geçiş işlemi için gerekli ek adımlar olması durumunda size bildireceğiz.
@@ -202,6 +204,6 @@ Her ilkenin bir **Amaçlanan Değer** ‘i ve bir de **Durum**‘u vardır. Ama�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
