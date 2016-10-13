@@ -1,10 +1,10 @@
 ---
-title: Beklenenler | Microsoft Intune
+title: "Erken sürüm | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,105 +14,112 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecf43b38e9593375981770583220d4ce2dfd709f
-ms.openlocfilehash: b5da0aca366a24f2f0ccf62a3661b0b91db9b01a
+ms.sourcegitcommit: a5c4b0f15456a9f24c95954d669a17c63f96a459
+ms.openlocfilehash: 273016d4fe114bbe60e9cebc06e89584c8f91f0b
 
 
 ---
 
-# Microsoft Intune’da kullanıma sunulacak yeni özellikler - Ağustos
-Bu bilgiler NDA kapsamında çok sınırlı bir temelde sağlanır ve değiştirilebilir. Burada listelenen özelliklerden bazılarının son tarihe yetişememe riski vardır ve gelecek sürüme ertelenebilir. Diğer özellikler, müşterinin kullanımına hazır olduğundan emin olmak için pilot (sürüyor) aşamasında test edilmektedir. Sorularınız veya kaygılarınız varsa lütfen Intune/PM arkadaşınıza ulaşın.
+# Microsoft Intune'da kullanıma sunulacak yeni özellikler - Ekim
+**Erken Sürüm** Microsoft Intune'un gelecek sürümlerinde kullanıma sunulacak yeni özelliklerin bir listesini sağlar. Bu bilgiler NDA kapsamında çok sınırlı bir temelde sağlanır ve değiştirilebilir. Burada listelenen özelliklerden bazılarının son tarihe yetişememe riski vardır ve gelecek sürüme ertelenebilir. Diğer özellikler, müşterinin kullanımına hazır olduğundan emin olmak için pilot (sürüyor) aşamasında test edilmektedir. Sorularınız veya kaygılarınız varsa lütfen Intune/PM arkadaşınıza ulaşın.
 
 Bu sayfa düzenli aralıklarla güncelleştirilir. Beklenen yeni güncelleştirmeler için yeniden gelip gözden geçirin.
 
 Intune için aşağıdaki değişiklikler geliştirilme aşamasındadır. Bu özelliklerin tümü, sonunda karma müşteri dağıtımlarında (Intune ile Configuration Manager) desteklenecektir. Yeni karma özellikler hakkında daha fazla bilgi için, [Karma Yenilikler sayfamızı](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx) gözden geçirin.
 
+### MAM ilkeleriyle yönetilen uygulamalardan yazdırmayı yönetme
+Artık MAM ilkeleri olan uygulamalardan şirket verilerinin yazdırılmasını engelleyebilirsiniz. Bu ayar, [Azure portalından](..deployuse/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) kullanılabilir ve gerek [iOS](..deployuse/ios-mam-policy-settings), gerekse [Android](..deployuse/android-mam-policy-settings) cihazlarında desteklenmektedir.
+<!--TFS 1014328-->
 
-## Uygulama yönetimi
-### iOS 9.3 için gizli ve gösterilen uygulamalar
-iOS 9.3 veya üzerini çalıştıran denetimli cihazlarda iOS genel yapılandırma ilkesindeki gizli ve gösterilen uygulamalar listesini kullanarak şunları yapabilirsiniz:
-- Kullanıcılardan gizlenecek uygulamaların bir listesini belirtin. Kullanıcılar bu uygulamaları görüntüleyemez veya başlatamaz.
-- Kullanıcıların görüntüleyebileceği ve başlatabileceği uygulamaların bir listesini belirtin. Başka hiçbir uygulama görüntülenemez veya başlatılamaz.
+### Windows 10 cihazları için Yeni Microsoft Intune Şirket Portalı
+Microsoft, Windows 10 cihazları için yeni bir Microsoft Intune Şirket Portalı'nı piyasaya sürüyor. Yeni Windows 10 Evrensel biçiminden yararlanan bu uygulama, kullanıcıya uygulama içinden güncelleştirilmiş bir kullanıcı deneyimi ve kullanıcının bugün kullanmakta olduğu işlevselliğin tümünü olanaklı kılmaya devam ederken, ister bilgisayar ister Mobil tüm Windows 10 cihazlarında aynı deneyimi sunacak.
 
-Belirtebileceğiniz uygulamalara hem sizin dağıttığınız uygulamalar hem de Mesajlar ve Notlar gibi yerleşik iOS uygulamaları dahildir.
-<!---TFS 1279009--->
+Yeni uygulama, kullanıcının Windows 10 cihazlarında çoklu oturum açma (SSO) ve sertifika tabanlı kimlik doğrulama gibi ek platform özelliklerinden yararlanmasını da sağlar. Uygulama, mevcut Windows 8.1 Şirket Portalı ve Windows Phone 8.1 Şirket Portalı için güncelleştirme olarak Windows Mağazası'ndan yüklenir.
+<!--TFS 1016502-->
 
-### Samsung KNOX cihazlar için izin verilen ve engellenen uygulamalar ilkesi
+### Android for Work desteği
 
-Artık Samsung KNOX cihazlar için aşağıdakilerden birini oluşturmanıza imkan tanıyan özel bir ilke yapılandırabilirsiniz:
-- Cihazda çalışması engellenmiş uygulamaların listesi. Engellenenler listesinde tanımlanan bir uygulama cihazda yüklü olsa bile etkinleştirilemez.
-- Cihaz kullanıcılarının Google Play mağazasından yüklemesine izin verilen uygulamaların listesi. Mağazadan başka hiçbir uygulama yüklenemez.
+Intune artık [Android for Work programının](https://enterprise.google.com/android/partners/) bir parçası. Intune'a Android for Work özellikleri için desteği bu ay çıkarmaya başlayacağız.
 
-Bu ayarlar yalnızca Samsung KNOX çalıştıran cihazlar tarafından kullanılabilir.
-<!--- For details, see [Use custom policies to allow and block apps for Samsung KNOX devices]( custom-policy-to-allow-and-block-samsung-knox-apps.md)--->
-<!---TFS 1311629 --->
+[Android for Work için Intune desteği hakkında Microsoft'un duyurusunu okuyun](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
 
-### Mobil uygulama yönetimi (MAM) ilkeleriyle uyumlu yeni uygulamalar
-[iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) ve [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) için Yammer uygulaması, cihazın kayıtlı olup olmadığından bağımsız olarak [Intune mobil uygulama yönetimi (MAM) ilkeleri](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) ile uyumlu olacak.
+<!---This month, some newly provisioned Intune tenants will start seeing the Android for Work features. We will announce later when existing tenants will begin to see this feature.--->
+<!--TFS 1043303-->
 
-MAM ile uyumlu uygulamaların tam listesi için [Microsoft Intune uygulama iş ortakları](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) sitesine bakın.
-<!--- TFS 1252335 & 1252336--->
+### Android Samsung KNOX ile Intune uyumluluğu
 
-## Cihaz yönetimi
-### Android 7.0 desteği
-Ağustos’ta Intune, mobil cihazlar için yeni çıkacak Android 7.0 işletim sistemine yönelik "0. gün" desteği sağlayacaktır.
-<!---TFS 1262053--->
-### Android 7.0 cihazlarda uzaktan geçiş kodu sıfırlama özelliğinin Google tarafından kaldırılması
-Google, BT yöneticileri ve son kullanıcıların Android 7.0 cihazların parolasını uzaktan sıfırlama olanağını sona erdiriyor. Daha önce BT yöneticileri bir kullanıcının geçiş kodunu uzaktan sıfırlayabiliyor ve son kullanıcılar Şirket Portalı web sitesinden kendi parolalarını sıfırlayabiliyordu.
+Samsung Galaxy Ace telefonunun bazı modelleri, Intune tarafından Samsung KNOX cihazları olarak yönetilemiyor. Bu cihazları Intune’a kaydettiğinizde, artık standart Android cihazları olarak yönetilecek.
+Etkilenen model numaraları:
 
-## Grup yönetimi
-### Eylül 2016’dan itibaren Intune Grupları Azure Active Directory Grupları’na geçiyor
-Intune, Intune’daki kullanıcı ve cihaz grupları olarak Azure Active Directory (AAD) güvenlik gruplarının kullanıldığı yeni bir grup yönetim deneyimi oluşturmaktadır. Bu gruplar **yeni Azure tabanlı Intune yönetici portalını kullanıma aldığımızda** tüm grup yönetimi, ilke yönetimi ve profil yönetimi için kullanılacaktır.
+* SM-G313HU
+* SM-G313HY
+* SM-G313M
+* SM-G313MY
+* SM-G313U
 
-Bu yeni deneyim hizmetler arasında yinelenen gruplarınızın olmasını engelleyecek, **yeni bazı Azure Active Directory Premium (AADP) grup özelliklerine erişmenizi sağlayacak**, ayrıca PowerShell ve Graph kullanılarak kapsamı genişletme olanağı sağlayacaktır. Bu deneyim, kurumsal mobil kullanım yönetimi genelinde grup yönetimi deneyimini de birleştirecektir.
+Sizin ve son kullanıcılarınızın başka bir işlem yapması gerekmez.
+Daha fazla bilgi için [Samsung KNOX](https://www.samsungknox.com) web sitesini ziyaret edin.
 
-Güvenlik Gruplarına geçiş yapabilmek için, **geçerli yönetici konsolunda** bazı değişiklikler yapılacaktır. **Bu değişiklikler ve AAD güvenlik gruplarının kullanımı, Intune belgelerine kaydedilecektir**.
+<!--TFS 1173566 iX blurb provided by Barry; requires PM signoff
 
-Intune’u yeni kullanmaya başlayan müşteriler, **güvenlik grubu değişikliklerinden bazılarını geçerli kiracılardan önce göreceklerdir**.
+### Multi-factor authentication for Android and iOS enrollment
 
-Grup yönetimindeki değişikliklere ek olarak, **aşağıdaki işlevler de kullanım dışı kalacaktır**:
-- Yeni grup oluşturulurken üyeleri ve grupları dışlama
-- **Gruplanmamış Kullanıcılar** ve **Gruplanmamış Cihazlar** grupları
-- Hizmet Yöneticisi rolündeki **Grupları Yönet** işlevi
-- Bildirim Kuralları için özel grup tabanlı uyarılar
-- Raporlarda gruplarla özetleme
-<!--- TFS 1295329--->
+In addition to Windows 8.1 and later, administrators can now enable multi-factor authentication for Android and iOS devices in the Microsoft Intune Enrollment application. -->    
 
-## Hizmeti kullanımdan kaldırma
-### Windows 8 ve Windows Phone 8 için Şirket Portalı uygulamaları Eylül 2016’dan itibaren kullanımdan kalkacaktır
-Microsoft Intune, Ekim 2016'dan itibaren Windows 8 ve Windows Phone 8 Şirket Portalı uygulamaları desteğini kaldıracaktır. Microsoft Intune, Windows Phone 8 platform desteğini de kaldıracaktır. Bunların sonucunda, herhangi bir Windows Phone 8 cihazını kaydetmeniz veya güncelleştirmeniz mümkün olmayacaktır. Önceden kaydedilen Windows Phone 8 ve Windows 8 cihazlarını yönetmeye devam edebilirsiniz. Windows 8 ve Windows Phone 8 cihazlarını Windows 8.1’e ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara bir kesinti olmadan uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
-<!---TFS 1255391--->
+### Windows 8 için Şirket Portalı uygulaması kaldırılmıştır; Windows Phone 8 ve Windows RT platformları için destek kaldırılmaktadır
+Microsoft Intune, Ekim 2016'dan başlayarak Windows 8 Şirket Portalı için desteği kaldıracaktır. Microsoft Intune, ayrıca Windows Phone 8 ve Windows RT platformları için desteği de kaldıracaktır. Bu nedenle bundan sonra herhangi bir Windows Phone 8 veya Windows RT cihazını kaydetmeniz veya güncelleştirmeniz mümkün olmayacaktır.
 
-### Bildirim Kurallarında Özel Grup Hedeflemenin Kaldırılması
-Intune bildirim kuralları, Intune’dan kime e-posta uyarısı gönderileceğini tanımlar. Şu anda, oluşturduğunuz bir Intune cihaz grubundaki cihazların tüm kullanıcılarına e-posta göndermek için bildirim kuralları yapılandırabilirsiniz. Haziran 2016'dan itibaren, kullanıcı tarafından oluşturulan grupları hedefleme artık desteklenmeyecektir.
+Daha önce kaydedilen Windows Phone 8, Windows RT ve Windows 8 cihazlarını yönetmeye devam edebilirsiniz. Windows 8 ve Windows Phone 8 cihazlarını Windows 8.1’e ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara bir kesinti olmadan uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
 
-Bu değişiklikle ilgili ilk zaman çizelgesi şöyledir:
-- Eylül 2016’da, yeni kiracılar Bildirim Kuralı Oluşturma Sihirbazı’nın ikinci adımını görmeyecekler. Mevcut kiracılar bundan etkilenmez.
-- Ekim 2016’ya doğru, mevcut kiracılardan bazıları sihirbazda “cihaz gruplarını seçme” adımını görmeyecek.
-- Daha sonraki bir tarihte, kiracılardan hiçbirinin sihirbazda “cihaz grupları seçme” adımını görmeyeceğini umuyoruz.
+Kasım 2016'dan itibaren Windows Phone 8 Şirket Portalı için desteği kaldıracağız.
+<!--TFS 1255391-->
 
-<!---   TFS 1278864--->
-### iOS Şirket Portalı uygulaması desteğindeki değişiklikler
-Eylül ayında, iOS için Microsoft Intune Şirket Portalı uygulamasını kullanan tüm kullanıcılarının en son sürümü kullanmaları gerekecektir. Yeni kullanıcılar yalnızca en son sürümünü indirebilecektir ve geçerli kullanıcıların buna güncelleştirme yapmaları gerekecektir. En son sürüm iOS 8.0 veya üzerini gerektirir ve bu yüzden daha önceki iOS sürümlerini çalıştıran cihazlar iOS 8.0 veya üzeri sürüme güncelleştirilene ve sonra Şirket Portalı uygulaması en son sürüme güncelleştirilene kadar Şirket Portalı’nı kullanamayacak veya ona kaydolamayacaktır. iOS 8.0 öncesi sürümleri çalıştıran kayıtlı cihazların Intune Yönetici Konsolu’nda yönetilmesi ve listelenmesi devam edecektir.
+### Mobil uygulama yönetimi için koşullu destek
+Yönetilmeyen mobil uygulamaların [Exchange Online](..deployuse/restrict-access-to-exchange-online-with-microsoft-intune.md)'a ve [SharePoint Online](..deployuse/restrict-access-to-sharepoint-online-with-microsoft-intune.md)'a erişimini engellemek için artık bir koşullu erişim ilkesi oluşturabilirsiniz. Üzerinde MAM etkin olmayan yerleşik posta istemcilerini ve uygulamalarını Intune Uygulama SDK'sı ile engelleyebilirsiniz.  Bu, bir koşullu erişim ilkesi oluşturularak ve Exchange Online'a ve SharePoint Online'a Azure portalı üzerinden erişmesini istediğiniz uygulamalar belirtilerek yapılabilir.
+<!--TFS 1317673-->
 
-<!---TFS 1283165--->
+<!--TFS 1318014; awaiting approval in notes as to whether to proceed
 
+### "Default" policy is deprecated
 
-### Intune Görüntüleyicisi uygulamaları
-Yeni RMS paylaşım uygulamasının kullanıma sunulmasıyla birlikte Ağustos 2016’da aşağıdaki Intune Viewer uygulamalarını kullanımdan kaldıracağız:
-- Intune AV Görüntüleyicisi
-- Intune PDF Görüntüleyicisi
-- Google Play’den Android için Intune Resim Görüntüleyicisi
+To minimize unintentionally assigned profiles, Intune is removing support for the "default" Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) device serial numbers in the new Azure console. Serial numbers synchronized from an Apple DEP account will initially have no Corporate Device Enrollment profile assigned.  A profile must be assigned manually after synchronization. This change will apply to the new console only. Until the existing Admin console is retired, no change will take place.
+-->
 
-Intune Görüntüleyicisi uygulamalarını kullanmak yerine, Android cihazlarda şirket dosyalarını güvenle görüntülemek için üç ayrı uygulama yerine tek bir uygulama dağıtmanıza olanak tanıyan yeni Android için Hak Yönetimi uygulamasını (RMS paylaşımı) kullanmanızı öneririz. [RMS sharing uygulaması](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app) ile ilgili daha fazla bilgi edinin.
-<!--- goes in 1608 What's New--->
+<!--TFS 1318023; awaiting approval in notes as to whether to proceed
 
+### Deprecation of row-by-row iOS Details review for iOS device CSV uploads
+
+In order to streamline uploading IMEI numbers for Corporate devices and Apple serial numbers for Configurator enrollment, Intune is removing the row by row review of hardware identifiers already found in the system. This review allows the IT Pro to accept associated Details from the CSV to overwrite the existing details for a hardware identifier already in the system. The review will be replaced by a single option to automatically overwrite Details for all hardware identifiers or ignore new details for existing identifiers. This change will apply to the new console only. Until the existing Admin console is retired, no change will take place.
+-->
+
+### iOS cihazlarını korumak için Lookout tümleştirmesi
+Ekim'de, Microsoft, iOS mobil cihazlardaki kötü amaçlı yazılımları, riskli uygulamaları ve diğer tehditleri algılayarak cihazları korumak için Lookout'un mobil tehdit koruma çözümüyle tümleşiyor. Lookout’ın çözümü tehdit düzeyini saptamanıza yardımcı olur ve bu ayar yapılandırılabilir. Lookout’un risk değerlendirmesi temelinde cihaz uyumluluğunu saptamak için Intune’da bir uyumluluk ilkesi kuralı oluşturabilirsiniz. Koşullu erişim ilkelerini kullanarak, cihaz uyumluluk durumuna göre şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz.
+
+Uyumlu olmayan iOS cihazlarının son kullanıcılarının kaydolmaları istenecek ve şirket verilerine erişim kazanmak için cihazlarına Lookout for Work uygulamasını yüklemeleri, uygulamayı etkinleştirmeleri ve Lookout for Work uygulamasında bildirilen tehditleri gidermeleri gerekecek.
+<!--TFS 1319493-->
+
+### Intune Uygulama SDK'sı ve Android için Uygulama Sarmalama Aracı
+Intune Uygulaması Sarmalama Aracı'nı veya Intune Uygulama SDK'sını kullanarak uygulamalarınızın Intune mobil uygulama yönetim (MAM) ilkelerini kullanmasını sağlayabilirsiniz. Uygulama Sarmalama Aracı ve SDK için yeni güncelleştirmeler şunları içerecek:
+
+* Android N desteği
+* Cihaz kaydı gerektirmeden Intune MAM ilkeleri desteği
+* Xamarin tabanlı Android uygulamaları için destek
+
+Cihaz kaydı gerektirmeyen MAM'yi ve Xamarin desteğini şu adresteki Android Uygulama Sarmalama Aracı genel önizlemesinden deneyebilirsiniz: [https://github.com/msintuneappsdk/intune-app-wrapper-android-preview](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)
+<!--TFS 1319511; please create new TFS entry for WN text associated with this TFS item-->
+
+<!--TFS 1319613; no iX review on PM text blurb
+
+### Private preview customers using MAM Conditional Access will have their policies reset
+
+Due to changes in the policy structure for Conditional Access for Mobile App Management, any existing policies that were set by customers through the private preview will be removed. Customers will need to set new policies once the change is made. The timing will coincide with the October service update.
+-->
 
 ### Ayrıca bkz.
 Son geliştirmelere ilişkin ayrıntılar için bkz. [Microsoft Intune’daki Yenilikler](whats-new-in-microsoft-intune.md).
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

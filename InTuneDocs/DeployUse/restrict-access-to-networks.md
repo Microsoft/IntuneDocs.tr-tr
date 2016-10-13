@@ -4,7 +4,7 @@ description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden 
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
-ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
 
 
 ---
@@ -102,13 +102,7 @@ Tüm metnin tek bir satırda olduğundan emin olun
 1.     Bir .cer X509 ortak sertifika dosyasından base64 olarak kodlanmış sertifika değerini ve parmak izini alın. Bu örnek PowerShell'i kullanmaktadır:
    
       
-    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
-     `$cer.Import(“mycer.cer”)`
-      `$bin = $cer.GetRawCertData()`
-      `$base64Value = [System.Convert]::ToBase64String($bin)`
-      `$bin = $cer.GetCertHash()`
-      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
-      `$keyid = [System.Guid]::NewGuid().ToString()`
+      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
  
     Bir sonraki adımda kullanmak üzere $base64Thumbprint, $base64Value ve $keyid değerlerini kaydedin.
 2.       Sertifikayı bildirim dosyası ile karşıya yükleyin. [Azure Yönetim Portalı](https://manage.windowsazure.com)'nda oturum açın
@@ -117,27 +111,20 @@ Tüm metnin tek bir satırda olduğundan emin olun
 5.      Boş "KeyCredentials": [], özelliğini aşağıdaki JSON ile değiştirin.  KeyCredentials karmaşık türü [Varlık ve karmaşık tür başvurusu](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)’nda belgelenir.
 
  
-    `“keyCredentials“: [`
-    `{`
-     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
-     `“keyId“: “$keyid_from_above“,`
-     `“type”: “AsymmetricX509Cert”,`
-     `“usage”: “Verify”,`
-     `“value”:  “$base64Value_from_above”`
-     `}2. `
-     `], `
+    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
+     ], 
  
 Örneğin:
  
-    `“keyCredentials“: [`
-    `{`
-    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
-    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
-    `“type”: “AsymmetricX509Cert”,`
-    `“usage”: “Verify”,`
-    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
-    `}`
-    `],`
+    “keyCredentials“: [
+    {
+    “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
+    “keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,
+    “type”: “AsymmetricX509Cert”,
+    “usage”: “Verify”,
+    “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
+    }
+    ],
  
 6.      Değişiklikleri uygulama bildirim dosyasına kaydedin.
 7.      Düzenlenen uygulama bildirim dosyasını Azure yönetim portalı aracılığıyla yükleyin.
@@ -200,6 +187,6 @@ Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere k
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

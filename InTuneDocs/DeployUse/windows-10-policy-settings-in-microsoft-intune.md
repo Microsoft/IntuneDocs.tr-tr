@@ -4,7 +4,7 @@ description: "Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobi
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ce69e8a22f1b25dac7060ff575bbd97934eff91
-ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
+ms.sourcegitcommit: b8522406a3c73746b09616c3ec917464cf751312
+ms.openlocfilehash: 6e482beb5e2edce648ecb6f1821baa6214fa0f2f
 
 
 ---
@@ -53,7 +53,7 @@ Eklemek istediğiniz her OMA-URI ayarı için aşağıdaki bilgileri girin. Kull
 - **Değer** - Girdiğiniz OMA-URI ile ilişkilendirilecek değeri belirtin.
 
 ### Örnek
-Aşağıdaki ekran görüntüsünde **Conectivity/AllowVPNOverCellular** etkinleştirilmiştir. Bu değer, bir Windows 10 cihazının hücresel bir ağdayken VPN bağlantısı açmasına izin verir.
+Aşağıdaki ekran görüntüsünde **Connectivity/AllowVPNOverCellular** ayarı etkinleştirilmiştir. Bu değer, bir Windows 10 cihazının hücresel bir ağdayken VPN bağlantısı açmasına izin verir.
 
 > ![VPN ayarları içeren özel bir ilkeye örnek](./media/custom-policy-example.png)
 
@@ -148,8 +148,8 @@ Bir **Windows 10 Özel İlkesi** ile yapılandırabileceğiniz OMA-URI ayarları
 |**AllowUserUIAccess**<br>./Vendor/MSFT/Policy/Config/Defender/AllowUserUIAccess|Yalnızca masaüstü<br />**Veri türü:** Tamsayı<br />**Değerler:** **0** – izin verilmez, **1** – izin verilir (varsayılan)|
 |**ScanParameter**<br>./Vendor/MSFT/Policy/Config/Defender/ScanParameter|Yalnızca masaüstü<br />**Veri türü:** Tamsayı<br />**Değerler:**<br>**1** – Hızlı tarama (varsayılan)<br>**2** - Tam tarama|
 |**ScheduleScanDay**<br>./Vendor/MSFT/Policy/Config/Defender/ScheduleScanDay|Yalnızca masaüstü<br />**Veri türü:** Tamsayı<br />**Değerler:**<br>**0** - Her gün (varsayılan)<br>**1** - Pazartesi<br>**2** - Salı<br>**3** - Çarşamba<br>**4** - Perşembe<br>**5** - Cuma<br>**6** - Cumartesi<br>**7** - Pazar<br>**8** – Zamanlanmış tarama yok|
-|**ScheduleScanTime**<br>./Vendor/MSFT/Policy/Config/Defender/ScheduleScanTime|Yalnızca masaüstü<br />**Veri türü:** Tamsayı<br />**Değerler:**<br>**0** - 12:00<br>**60** – 1:00<br>**120** – 2:00 (varsayılan)<br>**180** – 3:00<br>**240** – 4:00<br>**300** – 5:00<br>**360** – 6:00<br>**420** – 7:00<br>**480** – 8:00<br>**540** – 9:00<br>**600** – 10:00<br>**660** – 11:00<br>**720** – 12:00<br>**780** – 13:00<br>**840** – 14:00<br>**900** – 15:00<br>**960** – 16:00<br>**1020** – 17:00<br>**1080** – 18:00<br>**1140** – 19:00<br>**1200** – 20:00<br>**1260** – 21:00<br>**1320** – 22:00<br>**1381** – Bakım penceresi|
-|**ScheduleQuickScanTime**<br>./Vendor/MSFT/Policy/Config/Defender/ScheduleQuickScanTime|Yalnızca masaüstü<br>**Veri türü:** Tamsayı<br />**Değerler:**<br>**0** - 12:00<br>**60** – 1:00<br>**120** – 2:00 (varsayılan)<br>**180** – 3:00<br>**240** – 4:00<br>**300** – 5:00<br>**360** – 6:00<br>**420** – 7:00<br>**480** – 8:00<br>**540** – 9:00<br>**600** – 10:00<br>**660** – 11:00<br>**720** – 12:00<br>**780** – 13:00<br>**840** – 14:00<br>**900** – 15:00<br>**960** – 16:00<br>**1020** – 17:00<br>**1080** – 18:00<br>**1140** – 19:00<br>**1200** – 20:00<br>**1260** – 21:00<br>**1320** – 22:00<br>**1380** – 23:00|
+|**ScheduleScanTime**<br>./Vendor/MSFT/Policy/Config/Defender/ScheduleScanTime|Yalnızca masaüstü<br />**Veri türü:** Tamsayı<br />**Değerler:**<br>**0** - 00:00<br>**60** – 1:00<br>**120** – 2:00 (varsayılan)<br>**180** – 3:00<br>**240** – 4:00<br>**300** – 5:00<br>**360** – 6:00<br>**420** – 7:00<br>**480** – 8:00<br>**540** – 9:00<br>**600** – 10:00<br>**660** – 11:00<br>**720** – 12:00<br>**780** – 13:00<br>**840** – 14:00<br>**900** – 15:00<br>**960** – 16:00<br>**1020** – 17:00<br>**1080** – 18:00<br>**1140** – 19:00<br>**1200** – 20:00<br>**1260** – 21:00<br>**1320** – 22:00<br>**1381** – Bakım penceresi|
+|**ScheduleQuickScanTime**<br>./Vendor/MSFT/Policy/Config/Defender/ScheduleQuickScanTime|Yalnızca masaüstü<br>**Veri türü:** Tamsayı<br />**Değerler:**<br>**0** - 00:00<br>**60** – 1:00<br>**120** – 2:00 (varsayılan)<br>**180** – 3:00<br>**240** – 4:00<br>**300** – 5:00<br>**360** – 6:00<br>**420** – 7:00<br>**480** – 8:00<br>**540** – 9:00<br>**600** – 10:00<br>**660** – 11:00<br>**720** – 12:00<br>**780** – 13:00<br>**840** – 14:00<br>**900** – 15:00<br>**960** – 16:00<br>**1020** – 17:00<br>**1080** – 18:00<br>**1140** – 19:00<br>**1200** – 20:00<br>**1260** – 21:00<br>**1320** – 22:00<br>**1380** – 23:00|
 |**AVGCPULoadFactor**<br>./Vendor/MSFT/Policy/Config/Defender/AVGCPULoadFactor|Yalnızca masaüstü<br />**Veri türü:** Tamsayı<br />**Değerler:** **0** - **100** (varsayılan: **50**)|
 |**AllowArchiveScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowArchiveScanning|Yalnızca masaüstü<br />**Veri türü:** Tamsayı<br />**Değerler:** **0** – izin verilmez, **1** – izin verilir (varsayılan)|
 |**AllowEmailScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowEmailScanning|Yalnızca masaüstü<br />**Veri türü:** Tamsayı<br>**Değerler:** **0** – izin verilmez (varsayılan), **1** – izin verilir|
@@ -326,6 +326,6 @@ Tüm ayarlar yalnızca Windows 10 masaüstüne yöneliktir.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 
