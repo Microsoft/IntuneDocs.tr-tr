@@ -151,7 +151,7 @@ Aşağıdaki görevler, Endpoint Protection’ın çalıştırıldığı yöneti
 Bir uzak görevin durumunu, Intune konsolunun sağ alt köşesindeki **Uzak Görevler** bağlantısını seçerek görüntüleyebilirsiniz. **Uzak Görev Durumu** iletişim kutusu, geçerli uzak görevler, görev durumu, cihaz adı ve bildirilen hataları listeler. Ayrıca uygun durumlarda sorun giderme bilgilerine bir bağlantı sağlar.
 
 ## Endpoint Protection’ı izleme
- **Microsoft Intune yönetim konsolunun**  [Koruma](https://manage.microsoft.com/)çalışma alanını kullanarak bilgisayarlarınızda kötü amaçlı yazılımların durumunu izlersiniz. Bu çalışma alanı iki sayfa içerir:
+[Microsoft Intune yönetim konsolunun](https://manage.microsoft.com/) **Koruma**çalışma alanını kullanarak bilgisayarlarınızda kötü amaçlı yazılımların durumunu izlersiniz. Bu çalışma alanı iki sayfa içerir:
  - **Endpoint Protection’a Genel Bakış** - Önemli sorunları, daha fazla bilgi edinmek için seçebileceğiniz bağlantılar halinde görüntüler. Görüntülenebilecek sorunlardan bazıları şunlardır:
   - **İzleme gerektiren kötü amaçlı yazılım örnekleri** – Sorunu çözmek için yapılması gereken ek eylemler dahil olmak üzere kötü amaçlı yazılım sorunları listesini görmek için bağlantıya tıklayın. Hangi bilgisayarların etkilendiğini görmek için bu listenin ayrıntılarına bakabilirsiniz.
   - **İzleme gerektiren kötü amaçlı yazılım bulunan bilgisayarlar** – Çözümlenmemiş kötü amaçlı yazılım sorunları olan bilgisayarları ve sorunu çözmek için yapılması gereken eylemleri görmek için bağlantıya tıklayın.
