@@ -4,7 +4,7 @@ description: "Intune, Windows Phone 8.1 cihazlarında yapılandırabileceğiniz 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/30/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
-ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 3c9c75e5e9e19574a5b4525688103dc95e3d6b9b
 
 
 ---
@@ -39,75 +39,75 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 
 ### Parola ayarları
 
-|Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Mobil cihazların kilidini açmak için bir parola gerektir**|Kullanıcıların cihazlarına erişmek için parola girmelerinin gerekip gerekmediğini belirtir.|Evet|Evet|
-|**Gerekli parola türü**|Gerekli parola türünü belirtir (alfasayısal veya yalnızca sayısal gibi).|Evet|Evet|
-|**Gerekli parola türü – Minimum karakter kümesi sayısı**|Parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir. Dört karakter kümesi vardır: küçük harfler, büyük harfler, rakamlar ve simgeler. Bununla birlikte, iOS cihazları için bu ayar, parolanın içermesi gereken simgelerin sayısını belirtir.|Evet|Evet|
-|**Minimum parola uzunluğu**|Parolada bulunması gereken minimum karakter sayısını belirtir.|Evet|Evet|
-|**Basit parolalara izin ver**|‘0000’ ve ‘1234’ gibi basit karakterlerin kullanılabileceğini belirtir.|Evet|Evet|
-|**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Aygıt temizlenmeden önce kullanıcının girdiği hatalı parolanın kaç kez girilebileceğini belirtir.|Evet|Evet|
-|**Ekran kapanmadan önce işlem yapılmadan geçen dakika sayısı**|Ekran otomatik olarak kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.|Evet|Evet|
+|Ayar adı|Ayrıntılar|
+|----------------|------|
+|**Mobil cihazların kilidini açmak için bir parola gerektir**|Kullanıcıların cihazlarına erişmek için parola girmelerinin gerekip gerekmediğini belirtir.|
+|**Gerekli parola türü**|Gerekli parola türünü belirtir (alfasayısal veya yalnızca sayısal gibi).|
+|**Gerekli parola türü – Minimum karakter kümesi sayısı**|Parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir. Dört karakter kümesi vardır: küçük harfler, büyük harfler, rakamlar ve simgeler. Bununla birlikte, iOS cihazları için bu ayar, parolanın içermesi gereken simgelerin sayısını belirtir.|
+|**Minimum parola uzunluğu**|Parolada bulunması gereken minimum karakter sayısını belirtir.|
+|**Basit parolalara izin ver**|‘0000’ ve ‘1234’ gibi basit karakterlerin kullanılabileceğini belirtir.|
+|**Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Aygıt temizlenmeden önce kullanıcının girdiği hatalı parolanın kaç kez girilebileceğini belirtir.|
+|**Ekran kapanmadan önce işlem yapılmadan geçen dakika sayısı**|Ekran otomatik olarak kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.|
 |**Parola geçerlilik süresi (gün)**|Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
-|**Parola geçmişini anımsa**|Kullanıcıların daha önce kullanılmış olan parolaları yeniden kullanmasını önlemek için önceden kullanılmış parolaların anımsanıp anımsanmayacağını belirtir.|Evet|Evet|
-|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılmış olan kaç parolanın anımsanacağını belirtir.|Evet|Evet|
+|**Parola geçmişini anımsa**|Kullanıcıların daha önce kullanılmış olan parolaları yeniden kullanmasını önlemek için önceden kullanılmış parolaların anımsanıp anımsanmayacağını belirtir.|
+|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılmış olan kaç parolanın anımsanacağını belirtir.|
 
 ### Şifreleme ayarları
 
-|Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|------|-----------------------------|
-|**Cihazda şifrelemeyi gerektir**|Desteklenen mobil cihazlarda verilerin şifrelenmesini zorunlu tutar.<br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.|Evet|Evet|
+|Ayar adı|Ayrıntılar|
+|----------------|------|
+|**Cihazda şifrelemeyi gerektir**|Desteklenen mobil cihazlarda verilerin şifrelenmesini zorunlu tutar.|
 
 ### Sistem ayarları
 
-|Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Ekran yakalamaya izin ver**|Kullanıcının ekran içeriğini bir resim dosyası olarak yakalamasına olanak tanır.|Hayır|Evet|
-|**Tanılama verilerinin gönderimine izin ver**|Cihazın Microsoft’a tanılama bilgileri göndermesini etkinleştirir.|Hayır|Evet|
+|Ayar adı|Ayrıntılar|
+|----------------|-----|
+|**Ekran yakalamaya izin ver**|Kullanıcının ekran içeriğini bir resim dosyası olarak yakalamasına olanak tanır.|
+|**Tanılama verilerinin gönderimine izin ver**|Cihazın Microsoft’a tanılama bilgileri göndermesini etkinleştirir.|
 
 ### Bulut ayarları – hesaplar ve eşitleme
 
-|Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Microsoft Hesabına izin ver**|Microsoft hesabının cihazla ilişkilendirilmesine olanak tanır.|Hayır|Evet|
+|Ayar adı|Ayrıntılar|
+|----------------|------|
+|**Microsoft Hesabına izin ver**|Microsoft hesabının cihazla ilişkilendirilmesine olanak tanır.|
 
 ### E-posta ayarları
 
-|Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Özel e-posta hesaplarına izin ver**|Cihazın Microsoft olmayan e-posta hesaplarına bağlanmasına olanak tanır.|Hayır|Evet|
+|Ayar adı|Ayrıntılar|
+|----------------|-----|
+|**Özel e-posta hesaplarına izin ver**|Cihazın Microsoft olmayan e-posta hesaplarına bağlanmasına olanak tanır.|
 
 ### Uygulama ayarları - tarayıcı
 
-|Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Web tarayıcısına izin ver**|Cihazlarda yerleşik web tarayıcısını etkinleştirir veya engeller.|Hayır|Evet|
+|Ayar adı|Ayrıntılar|
+|----------------|-----|
+|**Web tarayıcısına izin ver**|Cihazlarda yerleşik web tarayıcısını etkinleştirir veya engeller.|
 
 ### Uygulama ayarları - uygulamalar
 
-|Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Uygulama mağazasına izin ver**|Kullanıcıların cihazdan uygulama mağazasına bağlanmasına olanak tanır.|Hayır|Evet|
+|Ayar adı|Ayrıntılar|
+|----------------|-----|
+|**Uygulama mağazasına izin ver**|Kullanıcıların cihazdan uygulama mağazasına bağlanmasına olanak tanır.|
 
 ### Cihaz özellikleri ayarları - donanım
 
-|Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|----|--------------------------------|
-|**Kameraya izin ver**|Cihazın kamerasını etkinleştirir veya engeller.|Hayır|Evet|
-|**Çıkarılabilir depolama birimine izin ver**|Cihazın SD kartları gibi çıkarılabilir depolama birimi kullanmasına olanak tanır.|Evet|Evet|
-|**Wi-Fi'a izin ver**|Cihazda Wi-Fi işlevselliğini etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
-|**Wi-Fi İnternet paylaşımına izin ver**|Cihazda Wi-Fi internet paylaşımı kullanımını etkinleştirir.|Hayır|Evet
-|**Ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmaya izin ver**|Cihazın ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmasına ve tüm kullanım koşullarını otomatik olarak kabul etmesine olanak tanır.|Hayır|Evet|
-|**Wi-Fi etkin noktası bildirimine izin ver**|Kullanıcının yakındaki bağlantıların keşfetmesine yardımcı olmak için Wi-Fi bağlantıları hakkında bilgi gönderir.|Hayır|Evet|
-|**Coğrafi konuma izin ver**|Cihazın konum bilgilerini kullanmasına olanak tanır.|Hayır|Evet|
-|**NFC'ye izin ver**|Yakın alan iletişimi kullanan işlemleri etkinleştirir.|Hayır|Evet|
-|**Bluetooth'a izin ver**|Cihazda Bluetooth işlevselliğini etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
+|Ayar adı|Ayrıntılar|
+|----------------|-----|
+|**Kameraya izin ver**|Cihazın kamerasını etkinleştirir veya engeller.|
+|**Çıkarılabilir depolama birimine izin ver**|Cihazın SD kartları gibi çıkarılabilir depolama birimi kullanmasına olanak tanır.|
+|**Wi-Fi'a izin ver**|Cihazda Wi-Fi işlevselliğini etkinleştirir veya devre dışı bırakır.|
+|**Wi-Fi İnternet paylaşımına izin ver**|Cihazda Wi-Fi internet paylaşımı kullanımını etkinleştirir.|
+|**Ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmaya izin ver**|Cihazın ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmasına ve tüm kullanım koşullarını otomatik olarak kabul etmesine olanak tanır.|
+|**Wi-Fi etkin noktası bildirimine izin ver**|Kullanıcının yakındaki bağlantıların keşfetmesine yardımcı olmak için Wi-Fi bağlantıları hakkında bilgi gönderir.|
+|**Coğrafi konuma izin ver**|Cihazın konum bilgilerini kullanmasına olanak tanır.|
+|**NFC'ye izin ver**|Yakın alan iletişimi kullanan işlemleri etkinleştirir.|
+|**Bluetooth'a izin ver**|Cihazda Bluetooth işlevselliğini etkinleştirir veya devre dışı bırakır.|
 
 ### Cihaz özellikleri ayarları - özellikler
 
-|Ayar adı|Ayrıntılar|Windows Phone 8|Windows Phone 8.1|
-|----------------|----|------|-------------------------------|
-|**Kopyalama ve yapıştırmaya izin ver**|Cihazda kopyalama ve yapıştırma işlevlerini etkinleştirir.|Hayır|Evet|
+|Ayar adı|Ayrıntılar|
+|----------------|----|
+|**Kopyalama ve yapıştırmaya izin ver**|Cihazda kopyalama ve yapıştırma işlevlerini etkinleştirir.|
 
 ### İzin verilen ve engellenen uygulamalar için ayarlar
 **İzin verilen ve engellenen uygulamalar** listesinde, aşağıdaki bilgileri kullanarak izin vermek ya da engellemek istediğiniz uygulamaların listesini belirtin:
@@ -171,6 +171,6 @@ Windows Phone cihazlar için OMA-URI ayarlarını oluşturmanıza yardımcı olm
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
