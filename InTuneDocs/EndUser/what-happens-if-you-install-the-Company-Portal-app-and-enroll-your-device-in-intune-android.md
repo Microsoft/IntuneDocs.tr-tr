@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -37,15 +37,15 @@ Android cihazınızı kaydettiğinizde, BT yöneticinize cihazınıza erişim ha
 
 -   Cihazınızı üretici varsayılan ayarlarına geri döndürebilir. Cihaz çalındıysa veya kaybolduysa bu yararlıdır.
 
--   Şirketle ilgili tüm verileri kaldırabilir. Kişisel ayarlarınız ve verileriniz kaldırılmaz.
+-   Şirket ile ilgili tüm verileri kaldırabilir. Kişisel ayarlarınız ve verileriniz kaldırılmaz.
 
--   Çok sayıda hatalı parola girişi yapıldığında, sizi bilgisayardan çıkmanıza yol açabilecek bir parola veya PIN kodu belirlemeye veya verilerin silinmesini göze alıp cihazı tekrar üreticinin varsayılan ayarlarına sıfırlamaya zorlayabilir.
+-   Şirket verilerini korumak için cihazınızda parola veya PIN kullanmanızı zorunlu kılma gibi gereksinimler ayarlayabilir. BT yöneticiniz ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda cihazınızı kilitleyebilir.
 
--   Hüküm ve koşulları kabul etmenizi gerektirir.
+-   Hüküm ve koşulları kabul etmenizi gerektirebilir.
 
--   Cihazınızda kamerayı etkinleştirebilir veya devre dışı bırakabilir.
+-   Paylaşılmaması gereken hassas iş malzemelerinin fotoğrafını çekmenizi engellemek için kamerayı devre dışı bırakabilir. (yalnızca Samsung Knox cihazları için geçerlidir, Nexus cihazlarında kullanılamaz.)
 
--   Kurumsal ve kişisel veriler dahil cihazdaki tüm verilerin şifrelenmesini şart koşabilir. Cihaz çalındıysa veya kaybolduysa, verilerin korunmasında yardımcı olur.
+-   Cihazınızın kaybolma veya çalınma durumunda verilerin korunmasına yardımcı olmak amacıyla cihazınızdaki tüm verilerin şifrelenmesini zorunlu kılabilir.
 
 -   Cihazınız Şirket Portalı’na eklendikten sonra, yaklaşık 8 saat içinde:
 
@@ -58,11 +58,8 @@ Android cihazınızı kaydettiğinizde, BT yöneticinize cihazınıza erişim ha
 Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
 
 
-### Ayrıca bkz.
-[Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

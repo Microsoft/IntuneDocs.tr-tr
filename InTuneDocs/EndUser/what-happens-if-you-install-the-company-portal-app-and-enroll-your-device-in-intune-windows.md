@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/8/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
 
 # Şirket Portalı uygulamasını yüklerseniz ve Windows cihazınızı Intune’a kaydederseniz ne olur?
 
-Şirket Portalı uygulamasını yüklediğinizde ve bu uygulamayı kullanarak Windows veya Windows Phone cihazınızı kaydettiğinizde, aşağıda Windows 10’dan önceki cihazlar için açıklandığı gibi, BT yöneticinizin şirket veya okul verilerinin güvenliğini sağlamak üzere cihazınızı yönetmesine olanak tanımış olursunuz. Windows 10 cihazları hakkında bilgi için [bu sayfaya](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) bakın.
+Şirket Portalı uygulamasını yüklediğinizde ve bu uygulamayı kullanarak bir Windows veya Windows Phone cihazı kaydettiğinizde, BT yöneticinize şirket veya okul verilerinin güvenliğini sağlamak üzere cihazınızı yönetme izni vermiş olursunuz. Windows 10’dan önceki işletim sistemlerini çalıştıran cihazlar için bu süreç aşağıda açıklanmıştır. Windows 10 cihazları için [bu sayfayı](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) inceleyin.
 
 ## Kayıttan sonra tüm Windows cihazlarına ne olur?
 Windows veya Windows Phone cihazınızı Intune’a kaydettiğinizde:
@@ -32,7 +32,7 @@ Windows veya Windows Phone cihazınızı Intune’a kaydettiğinizde:
 
 -   Şirket Portalı üzerinden şirket uygulamalarını alabilirsiniz (Windows 7 ve Vista için, şirket uygulamalarını yalnızca Şirket Portalı web sitesinden alabilirsiniz)
 
--   Şirket veya okul e-posta hesabınızı otomatik olarak yapılandırabilirsiniz
+-   Şirket veya okul e-posta hesabınızı otomatik olarak oluşturabilirsiniz
 
 -   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz
 
@@ -40,19 +40,17 @@ Cihazınızı kaydettiğinizde, BT yöneticinize şu tür işlemleri yapma izni 
 
 -   Cihazınızı üretici varsayılan ayarlarına geri döndürebilir. Cihaz çalındıysa veya kaybolduysa bu yararlıdır.
 
--   Şirketle ilgili tüm verileri ve yüklü iş uygulamalarını kaldırabilir. Kişisel ayarlarınız ve verileriniz kaldırılmaz.
+-   Yalnızca şirketle ilgili dosyaları ve iş uygulamalarını kaldırabilir. **Kişisel ayarlarınız ve verileriniz kaldırılmaz.**
 
--   BT yöneticiniz, kişisel olarak yüklediğiniz yazılımlar dahil olmak üzere bilgisayarda yüklü tüm yazılımların bir envanterini alabilir.
+-   BT yöneticiniz, kişisel olarak yüklediğiniz yazılımlar dahil olmak üzere bilgisayarda yüklü olan tüm yazılımları görüntüleyebilir.
 
--   Çok sayıda hatalı parola girişi yapıldığında, sizi bilgisayardan çıkmanıza yol açabilecek bir parola veya PIN kodu belirlemeye veya verilerin silinmesini göze alıp cihazı tekrar üreticinin varsayılan ayarlarına sıfırlamaya zorlayabilir.
+-   Şirket verilerini korumak için cihazınızda parola veya PIN kullanmanızı zorunlu kılma gibi gereksinimler ayarlayabilir. BT yöneticiniz ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda cihazınızı kilitleyebilir.
 
--   Cihazdaki tüm verileri şifrelemeyi zorunlu tutabilir ve bu da cihaz kaybolur veya çalınırsa verileri korumaya yardımcı olur.
+-   Cihazınızın kaybolması veya çalınması durumunda şirket verilerinizin korunmasına yardımcı olmak için cihazınızdaki verileri şifrelemenizi isteyebilir. 
 
--   Hüküm ve koşulları kabul etmenizi gerektirir.
+-   Hüküm ve koşulları kabul etmenizi gerektirebilir.
 
--   BT yöneticiniz bilgisayarınızda ilkelerin uygulanmasını şart koşabilir. Örneğin, çok sayıda hatalı parola girişi yapıldığında, bilgisayardan çıkmanıza yol açabilecek bir parola veya PIN kodu ayarlamanız veya bilgisayarınızın sabit sürücüsündeki tüm bilgileri silmeniz gerekebilir.
-
--   SD kartı devre dışı bırakabilir.
+-   Şirket ile ilgili verilerin fotoğrafını çekmenizi engelleyebilir.
 
 ## Kayıttan sonra tüm Windows bilgisayarlarına ne olur?
 
@@ -60,16 +58,9 @@ Cihazınızı kaydettiğinizde, BT yöneticinize şu tür işlemleri yapma izni 
 
 -  Intune Endpoint Protection bilgisayarınızda yüklü olabilir. Bu, bilgisayarı virüs ve kötü amaçlı yazılımlara karşı denetleyen yazılımdır.
 
--  BT yöneticiniz, kişisel olarak yüklediğiniz yazılımlar dahil olmak üzere bilgisayarda yüklü tüm yazılımların bir envanterini alabilir.
-
--  Hüküm ve koşulları kabul etmeniz gerekebilir.
-
--  BT yöneticiniz bilgisayarınızın sabit sürücüsünden veri toplayabilir veya onları silebilir. BT yöneticiniz sabit sürücünün tamamını da silebilir.
+-  BT yöneticiniz bilgisayarınızın sabit sürücüsünden veri toplayabilir veya onları silebilir.
 
 -  BT yöneticiniz aynı zamanda bilgisayarınıza uygulama ve güncelleştirme de yükleyebilir.
-
--  BT yöneticiniz bilgisayarınızda ilkelerin uygulanmasını şart koşabilir. Örneğin, çok sayıda hatalı parola girişi yapıldığında, bilgisayardan çıkmanıza yol açabilecek bir parola veya PIN kodu ayarlamanız veya bilgisayarınızın sabit sürücüsündeki tüm bilgileri silmeniz gerekebilir.
-
 
 ## Cihaz kaydından sonra her sekiz saatte bir ne olur?
 Yaklaşık her sekiz saatte bir, kayıtlı cihazlarda aşağıdakiler yapılır:
@@ -80,15 +71,11 @@ Yaklaşık her sekiz saatte bir, kayıtlı cihazlarda aşağıdakiler yapılır:
 
 -   Tüm şirket uygulaması envanteri güncelleştirmeleri gönderilir.
 
-Kaydetme adımları için bkz. [Windows cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-windows.md). BT yöneticinizin cihazınızda neleri görebileceğini öğrenmek için, bkz. [Cihazımı Intune’a kaydettiğimde BT yöneticim neleri görebilir?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
-
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
