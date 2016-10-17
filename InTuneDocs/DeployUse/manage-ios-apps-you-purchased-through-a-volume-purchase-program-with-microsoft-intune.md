@@ -4,7 +4,7 @@ description: "Apple’dan toplu satın aldığınız uygulamaları Intune kullan
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 164f9656246a46bf39e263fc3c5f16828674e1fd
-ms.openlocfilehash: a5c37c470f937c682d9138a636d1211f641da784
+ms.sourcegitcommit: 611cfb0176a922234c29642c305dd03699922c5f
+ms.openlocfilehash: 5981a2e147c89776d304226250170ec4114e35d8
 
 
 ---
@@ -26,6 +26,7 @@ Microsoft Intune lisans bilgilerini uygulama mağazasından içeri aktararak, ka
 
 > [!Important]
 > Intune, şu anda iOS İş için Toplu Satın Alma Programı (VPP) uygulama lisanslarını cihazlara değil kullanıcılara atamaktadır. Bu nedenle, kullanıcıların uygulamayı yüklemek için Apple Kimliği parolalarını girmeleri gerekir.
+> Eğitime Yönelik Apple Volume Purchase Program bu sürümde desteklenmiyor.
 
 ## iOS cihazları için toplu satın alınan uygulamaları yönetme
 [Apple İş için Toplu Satın Alma Programı](http://www.apple.com/business/vpp/) ile iOS için birden çok lisans satın alırsınız. Buna Apple web sitesinden bir Apple VPP hesabının ayarlanması ve Apple VPP belirtecinin Intune’a yüklenmesi dahildir.  Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz.
@@ -89,6 +90,6 @@ Hangi VPP uygulamalarının dağıtıldığını ve kaç lisansın kullanıldı�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
