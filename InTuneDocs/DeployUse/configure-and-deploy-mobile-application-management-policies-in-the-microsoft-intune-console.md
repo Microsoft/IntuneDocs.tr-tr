@@ -4,7 +4,7 @@ description: "Microsoft Intune’daki Mobil uygulama yönetimi ilkeleri, dağıt
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -26,7 +26,7 @@ Mobil uygulama yönetimi ilkeleri desteği:
 
 -   Android 4 ve üzeri çalıştıran cihazlar.
 
--   iOS 7 ve üzeri çalıştıran cihazlar.
+-   iOS 8.0 ve üzeri çalıştıran cihazlar.
 
 > [!TIP]
 > Mobil uygulama yönetimi ilkeleri Intune kaydı yapılmış cihazları destekler.
@@ -112,7 +112,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra 3. adım
 
     -   **Mobil Uygulama Yönetimi İlkesi (Android 4 ve üzeri)**
 
-    -   **Mobil Uygulama Yönetimi İlkesi (iOS 7 ve üzeri)**
+    -   **Mobil Uygulama Yönetimi İlkesi (iOS 8.0 ve üzeri)**
 
     Önerilen ayarları kullanabilir veya ayarları özelleştirebilirsiniz. Ayrıntılar için bkz. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -134,7 +134,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra 3. adım
     |**Erişim için kurumsal ilkeyle cihaz uyumluluğu gerektir**|Bu ayar, yalnızca cihazın yazılım kilidi kırılmış veya cihaza kök erişim izni verilmişse uygulamanın kullanılmasına izin verir.|
     |**Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)**|**Zaman aşımı** alanında, uygulama açıldıktan sonra uygulama erişim gereksinimlerinin yeniden denetlenmesine kadar geçecek süreyi belirtin.|
     |**Çevrimdışı kullanım süresi**|Cihaz çevrimdışı ise, uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını belirtin.|
-    |**Uygulama verilerini şifreleme**|Bu ayar, bu uygulama ile ilişkili tüm verilerin şifreleneceğini belirtir. Buna SD kart gibi harici ortamlara depolanacak veriler de dahildir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetim ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada ve işletim sisteminin sağladığı cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu ayar, BT yöneticisinin ayarladığı cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesindeki ayarlara göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS 7 tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/en-us/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalarda şifrelemeyi Microsoft sağlar. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir.  Cihaz depolamasındaki içerik her zaman şifrelenir. Şifreleme yöntemi FIPS 140-2 sertifikalı değildir.|
+    |**Uygulama verilerini şifreleme**|Bu ayar, bu uygulama ile ilişkili tüm verilerin şifreleneceğini belirtir. Buna SD kart gibi harici ortamlara depolanacak veriler de dahildir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetim ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada ve işletim sisteminin sağladığı cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu ayar, BT yöneticisinin ayarladığı cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesindeki ayarlara göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/en-us/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalarda şifrelemeyi Microsoft sağlar. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir.  Cihaz depolamasındaki içerik her zaman şifrelenir. Şifreleme yöntemi FIPS 140-2 sertifikalı değildir.|
     |**Ekran yakalamayı engelle** (yalnızca Android cihazlar)|Bu ayar, birisi bu uygulamayı kullanırken cihazın ekran yakalama özelliklerinin engellendiğini belirtir.|
     
 4. İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.
@@ -147,8 +147,6 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 Ayrıntılar için bkz. [Microsoft Intune'da uygulamaları dağıtma](deploy-apps.md).
 
 > [!IMPORTANT]
-> iOS 7.1'den önceki işletim sistemlerini çalıştıran cihazlar için, uygulama kaldırıldığında ilişkili ilke kaldırılmaz.
->
 > Cihazın Intune kaydı silinirse, ilkeler uygulamadan kaldırılmaz. İlke uygulanmış uygulamalar, uygulama kaldırılıp yeniden yüklendikten sonra ilke ayarlarını saklar.
 
 ### Bir uygulama cihazlarda zaten dağıtıldıysa yapılacaklar
@@ -195,6 +193,6 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

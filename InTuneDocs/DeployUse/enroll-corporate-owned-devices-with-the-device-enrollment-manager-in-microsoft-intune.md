@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e332bbf9aa8f6543950eba7e1fd734b3fb4b1edb
-ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 ---
@@ -44,7 +44,7 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
   - Bu cihazları Şirket Portalı’ndan sıfırlayamazsınız.
   - Şirket Portalı uygulamasında veya web sitesinde yalnızca yerel cihaz görünür.
   - Uygulama yönetimi için kullanıcı başına Apple ID gereksinimlerinden dolayı Apple Toplu Satın Alma Programı (VPP) uygulamalarını kullanamazsınız.
-  - Bunlar Apple Configurator veya Apple Aygıt Kayıt Programı (iOS cihazları) ile de kaydedilemez.
+  - (iOS) Bu cihazlar Apple Configurator veya Apple Aygıt Kayıt Programı’na (DEP) kaydedilemez, ancak DEP veya Apple Configurator ile yönetilen cihazlar kullanıcı benzeşimi olmadan kaydedilebilir.
 
 > [!NOTE]
 > Cihaz kayıt yöneticisiyle yönetilen cihazlara şirket uygulaması dağıtmak için Şirket Portalı uygulamasını cihaz kayıt yöneticisinin kullanıcı hesabına **Gerekli Yükleme** olarak dağıtın.
@@ -95,6 +95,6 @@ Bir cihaz kayıt yöneticisinin silinmesi, kaydedilen cihazları etkilemez. Bir 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
