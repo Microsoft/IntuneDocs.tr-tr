@@ -4,7 +4,7 @@ description: "Son kullanıcılarınızla paylaşacağınız bilgilerin bağlant�
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: e904f7e7e91d86359a0fd818032833caa382edcc
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,7 +33,9 @@ Bu bağlantıları ve bilgileri aşağıdakiler için kullanın:
 
 ## Son kullanıcılarınızın sık kullanılan görevler hakkında bilgi bulabileceği yerler
 
-Intune’da cihazlarını kullanmayla ilgili bilgi istediklerinde, son kullanıcılarınıza aşağıdaki son kullanıcı yardım bağlantılarını verin. Bu bağlantılarda, kullanıcılar Şirket Portalı uygulamasını yükleme, cihazlarını kaydetme, yönetilen uygulamaları alma, sorun giderme ve daha fazlasıyla ilgili adımları bulacaktır.
+Kaydedilen kullanıcıların Intune kullanmaya ilişkin yardıma ihtiyacı olduğunda, genellikle Şirket Portalı web sitesinde veya Şirket Portalı uygulamasında kendilerini sorunu nasıl düzelteceklerine veya görevi nasıl tamamlayacaklarına ilişkin belirli bir makaleye yönelten bir bağlantı görürler. Örneğin Android kullanıcıları gerekli bir sertifikanın eksik olduğuna ilişkin bir mesaj görürse, “Bu sorunun çözümü” bağlantısına dokunarak sertifikanın nasıl alınacağına ilişkin adımları gösteren makaleye gidebilir. 
+
+Aşağıdaki bağlantılar BT yöneticileri içindir. Bu sayfalar, Şirket Portalı web sitesi veya uygulamasından kullanıcıların yönlendirildiği tüm makalelere yönelik bağlantıları içerir. Bağlantı bölümlere ayrılmıştır: Şirket Portalı uygulama yüklemesi ve Intune kaydı, yönetilen uygulamaları kullanma ve cihazlarını el ile eşitleme gibi kullanıcıların cihazlarında yapabileceği görevler ve sorun giderme.
 
 - [Android cihazınızı Intune ile kullanma](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -59,8 +61,10 @@ Son kullanıcılarınızın uygulamalarını nasıl aldığını anlamak için, 
 
 Kullanıcılarınızın Şirket Portalı’nı kullandıklarında yaşayabileceği sorunları çözmelerine yardımcı olmak için, [Şirket Portalı’nda kullanıcıların görebileceği bir iletiler listesini](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages) gözden geçirebilirsiniz.
 
+Bu makalede yer almasını istediğiniz başka bilgiler varsa, lütfen önerinizi bu konunun en alt kısmında yer alan Yorum kutusuna ekleyin. Teşekkür ederiz!
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

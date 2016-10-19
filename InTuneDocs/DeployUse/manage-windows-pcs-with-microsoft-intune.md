@@ -1,5 +1,5 @@
 ---
-title: "Windows bilgisayarlarını Intune istemcisi ile yönetme | Microsoft Intune"
+title: "İstemci yazılımı ile bilgisayarları yönetme | Microsoft Intune"
 description: "Windows bilgisayarlarını Intune istemci yazılımını yükleyerek yönetin."
 keywords: 
 author: nathbarn
@@ -13,18 +13,18 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
-ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: f264dc3740ce9b117fcc01c39792904a2dc6e7ab
 
 
 ---
 
 # Intune bilgisayar istemcisiyle Windows bilgisayarlarını yönetme
-[Windows bilgisayarlarını mobil cihaz olarak kaydetmek](set-up-windows-device-management-with-microsoft-intune.md) yerine, Windows bilgisayarlarını Intune istemci yazılımını yükleyerek yönetebilirsiniz.
+[Windows bilgisayarlarını mobil cihaz olarak kaydetmek](set-up-windows-device-management-with-microsoft-intune.md) yerine, Windows bilgisayarlarını Intune istemci yazılımını yükleyerek kaydedebilir ve yönetebilirsiniz.
 
 Intune, Windows Server Active Directory Etki Alanı Hizmetleri (AD DS) Grup İlkesi Nesneleri’ne (GPO'lar) benzer bir biçimde, Windows bilgisayarlarını ilkelerle yönetir. Intune ile Active Directory etki alanına katılmış bilgisayarları yönetecekseniz kurumunuzda yürürlükte olan herhangi bir [GPO ile Intune ilkelerinin çakışmadığından emin olun](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 
-Intune istemcisi, yazılım güncelleştirmelerini, Windows güvenlik duvarını ve Endpoint Protection’ı yöneterek [bilgisayarları korumaya yardımcı olan ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md) desteklerken, diğer Intune ilkeleri Intune istemcisiyle yönetilen bilgisayarları hedefleyemez.
+Intune yazılımı istemcisi, yazılım güncelleştirmelerini, Windows güvenlik duvarını ve Endpoint Protection’ı yöneterek [bilgisayarları korumaya yardımcı olan yönetim özelliklerini](policies-to-protect-windows-pcs-in-microsoft-intune.md) desteklerken, diğer Intune ilkeleri, mobil cihaz yönetimine özgü **Windows** ilke ayarları da dahil olmak üzere Intune istemcisiyle yönetilen bilgisayarları hedefleyemez.
 
 > [!NOTE]
 > Windows 8.1 veya daha sonraki sürümleri çalıştıran cihazlar, Intune istemcisi kullanılarak yönetilebilir veya mobil cihaz olarak kaydedilebilir. Aşağıdaki bilgiler, Intune istemcisini çalıştıran bilgisayarlar için geçerlidir. Hem Intune bilgisayar istemcisini yüklemek hem de mobil cihaz yönetimi için Windows cihazını kaydetmek desteklenmez.
@@ -51,16 +51,18 @@ Intune istemcisi, yazılım güncelleştirmelerini, Windows güvenlik duvarını
 ## Intune bilgisayar istemcisini yükleme
 Intune istemci yazılımı aşağıdaki yollardan biri kullanılarak yüklenebilir:
 
--   [Microsoft Intune istemcisi yazılımını el ile dağıtabilirsiniz](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Bu dağıtım türünde bir yönetici Intune istemcisi yazılımını indirir ve yazılımı her bir bilgisayara el ile yükler.
+-  [Microsoft Intune istemcisi yazılımını el ile dağıtabilirsiniz](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Bu dağıtım türünde bir yönetici Intune istemcisi yazılımını indirir ve yazılımı her bir bilgisayara el ile yükler.
 
   Intune istemcisi yazılımını indirmek için, [Intune yönetim konsolunu](https://manage.microsoft.com) açın, **Yönetici** > **İstemci Yazılımını İndirme**’yi seçin ve **İstemci Yazılımını İndir**’e tıklayın.
 
--   [Active Directory GPO'larını kullanarak Intune istemcisini etki alanına katılmış bilgisayarlara dağıtmak](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy) için de indirdiğiniz dosyaları kullanarak istemciyi el ile yükleyebilirsiniz.
+-  [Active Directory GPO’larını kullanarak istemciyi etki alanına katılmış bilgisayarlara dağıtmak](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy) için de indirdiğiniz dosyaları kullanarak Intune istemci yazılımını el ile yükleyin.
 
--   Son olarak, Intune istemcisi yazılımını bilgisayarlara [işletim sistemi dağıtımının](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image) bir parçası olarak da dağıtabilirsiniz.
+-  [İşletim sistemi dağıtımının bir parçası olarak](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image) Intune istemci yazılımını bilgisayarlara dağıtın.
+
+-  Kullanıcılara Intune Şirket Portalı URL’sini ([https://portal.manage.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=825632)) yönergeleri gönderin. Şirket Portalı’nı açtıklarında, kullanıcılardan Intune istemci yazılımını indirip çalıştırarak bilgisayarlarını kaydetmeleri istenir.
 
 ## Intune bilgisayar istemcisi ile bilgisayar yönetimi
-Intune istemcisi yüklendikten sonra, istemci yazılımı aşağıdakiler de dahil olmak üzere çeşitli bilgisayar yönetimi özellikleri sağlar: [uygulama yönetimi](deploy-apps-in-microsoft-intune.md), Endpoint Protection, donanım ve yazılım envanteri, uzaktan denetim (uzaktan yardım istekleri aracılığıyla), yazılım güncelleştirmeleri ve uyumluluk ayarlarını raporlama.
+Intune istemci yazılımı yüklendikten sonra, şunlar da dahil olmak üzere çeşitli bilgisayar yönetimi özellikleri sağlar: [uygulama yönetimi](deploy-apps-in-microsoft-intune.md), Endpoint Protection, donanım ve yazılım envanteri, uzaktan denetim (uzaktan yardım istekleri aracılığıyla), yazılım güncelleştirmeleri ve uyumluluk ayarlarını raporlama.
 
 Bilgisayar istemcisi tarafından etkinleştirilen çeşitli bilgisayar yönetimi görevleri, aşağıdakiler gibi Intune ilkeleri kullanılarak yönetilir:
 
@@ -69,6 +71,8 @@ Bilgisayar istemcisi tarafından etkinleştirilen çeşitli bilgisayar yönetimi
 -   Yönetilen bilgisayarların gerekli yazılım güncelleştirmelerini denetlemesi ve indirmesi için [yazılım güncelleştirme ayarlarını](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) yapılandırma.
 
 -   [Gerçek zamanlı izleme ve Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) yönetimi aracılığıyla yönetilen bilgisayarların olası risklerden ve kötü amaçlı yazılımlardan korunmasına yardımcı olma.
+
+![Windows bilgisayarlar için ilkeler şablonu](../media/pc_policy_template.png)
 
 Tek tek bilgisayarlarda yerel olarak Intune istemci aracısı tarafından gerçekleştirilen eylemlere ek olarak, Intune yönetici konsolunu kullanarak istemcinin yüklendiği Windows bilgisayarlarında diğer [yaygın bilgisayar yönetimi görevlerini](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) de gerçekleştirebilirsiniz:
 
@@ -86,6 +90,6 @@ Intune istemci aracısı genellikle fazla kullanıcı etkileşimi veya sorun gid
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

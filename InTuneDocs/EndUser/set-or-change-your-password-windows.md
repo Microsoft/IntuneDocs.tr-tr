@@ -4,16 +4,16 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 5/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 0bfb636b68aa691234b51264d261888322dba11c
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 82a6a97dec78ad6e12fa5f8ccecae90a5bcc1e53
 
 
 ---
@@ -43,11 +43,10 @@ Parola gereksinimlerinin tümüne uyan bir parola ayarlama konusunda sorun yaş�
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+
+<!--HONumber=Aug16_HO5-->
 
 

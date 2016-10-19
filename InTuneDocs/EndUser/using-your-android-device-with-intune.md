@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 ---
@@ -22,9 +22,13 @@ ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 # Android cihazınızı Intune ile kullanma
 
-Bu sayfa, son kullanıcıların Intune tarafından yönetilen cihazlarında yapabileceği görevlerin tümüne bağlantılar içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettikleri adımları görmek için bu bilgiye başvurabilir. Bu görevler kayıt ile ilgili bilgiler, yönetim görevleri ve uyumluluk sorunları gibi kategorilere ayrılır.
+Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlerin bağlantılarını içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettiği ve aşağıdaki kategorilere ayrılan adımları görmek için bu bilgiye başvurabilir: 
 
-## Şirket Portalı uygulaması yüklemesi ve Intune kaydı
+- Şirket portalı uygulamasının yüklenmesi ve Intune kaydı 
+- Kayıt sonrası yönetim görevleri
+- Uyumluluk sorunları
+
+## Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
 
 Bu bölümdeki bilgiler, Intune Şirket Portalı’nı yüklemenize ve Android cihazlarını kaydetmenize yardımcı olur.
 
@@ -42,7 +46,7 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildikten sonra ger
 - [Cihaz kilitlenmeden önceki süreyi ayarlama](set-the-amount-of-time-before-your-device-is-locked-android.md)
 - [Kaybolan veya çalınan cihazınızı sıfırlama (silme)](reset-erase-your-lost-or-stolen-device-android.md)
 - [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-android.md)
-- [Cihazınızın Intune kaydını kaldırma](unenroll-your-device-from-intune-android.md)
+- [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md)
 - [Kullanım Koşulları’nı reddettiyseniz cihazınızın kaydını silme](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Cihazınızın Intune kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Şirket Portalı uygulamasını kullanarak Android cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
@@ -67,6 +71,6 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşı
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

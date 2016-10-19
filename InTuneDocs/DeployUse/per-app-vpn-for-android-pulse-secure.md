@@ -13,56 +13,53 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
-ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
+ms.sourcegitcommit: a2464a9d2276319f75a3da7db70c2613152bed9b
+ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
 
 
 ---
 
 # Özel ilke kullanarak Android cihazları için uygulama başına VPN profili oluşturma
 
-Intune tarafından yönetilen Android cihazları için uygulama başına VPN profili oluşturabilirsiniz. Öncelikle, Pulse Secure bağlantı türünü kullanan bir VPN profili oluşturursunuz ve sonra da bu profili belirli uygulamalarla ilişkilendiren özel bir yapılandırma ilkesi oluşturursunuz. Bu ilkeleri Android cihaz veya kullanıcı gruplarınıza dağıttıktan sonra, belirtilen uygulamalardan birinin söz konusu cihazlarda açılması, bu uygulama için VPN bağlantısını açar.
+Intune tarafından yönetilen Android cihazları için uygulama başına VPN profili oluşturabilirsiniz. İlk olarak, Pulse Secure bağlantı türünü kullanan bir VPN profili oluşturun. Ardından, VPN profilini belirli uygulamalarla ilişkilendiren özel bir yapılandırma ilkesi oluşturun. İlkeyi Android cihaz veya kullanıcı gruplarınıza dağıttıktan sonra, bir kullanıcı belirtilen uygulamalardan birini söz konusu cihazlardan birinde açtığında, bu uygulamanın VPN bağlantısı açılır.
 
 > [!NOTE]
-> 
+>
 > Bu profil için yalnızca Pulse Secure bağlantı türü desteklenir.
 
 
 ### 1. Adım: VPN profili oluşturma
 
-1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **İlke Ekle**’ye tıklayın.
-2. **Android**’i genişleterek yeni ilke için bir şablon seçin ve sonra da **VPN Profili (Android 4 ve üstü)** öğesini seçin.
-
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **İlke** > **İlke Ekle**’yi seçin.
+2. Yeni ilkede kullanılacak bir şablon seçmek için, **Android**’i genişletin ve **VPN Profili (Android 4 ve üzeri)** öğesini seçin.
 3. Şablonda, **Bağlantı türü** olarak **Pulse Secure** seçin.
-4. VPN profilini tamamlayın ve kaydedin. VPN profilleri hakkında daha fazla bilgi için bkz. [VPN bağlantıları](vpn-connections-in-microsoft-intune.md).
+4. VPN profilini bitirin ve kaydedin. VPN profilleri hakkında daha fazla bilgi için bkz. [VPN bağlantıları](../deploy-use/vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
-> 
-> Sonraki adımda kullanmak üzere VPN profili adını not edin.   Örneğin, **UygulamaVpnProfilim**.
+>
+> Sonraki adımda kullanmak üzere VPN profili adını not edin. Örneğin, UygulamaVpnProfilim.
 
 ### 2. Adım: Özel yapılandırma ilkesi oluşturma
 
-   1. Intune yönetim konsolunda **İlke** -> **İlke Ekle** -> **Android** -> **Özel yapılandırma** -> **İlke Oluştur**’a tıklayın.
-   2. İlke için bir ad sağlayın.
-   3. **OMA-URI ayarları**’nın altında **Ekle**’ye tıklayın.
-   4. Bir ayar adı sağlayın.
-   5. **Veri türü** olarak **Dize** belirtin.
+   1. Intune yönetici konsolunda **İlke** > **İlke Ekle** > **Android** > **Özel yapılandırma** > **İlke Oluştur**’u seçin.
+   2. İlke için bir ad girin.
+   3. **OMA-URI ayarları**’nın altında **Ekle**’yi seçin.
+   4. Bir ayar adı girin.
+   5. **Veri türü** olarak **Dize**’yi belirtin.
    6. **OMA-URI** için şu dizeyi belirtin: **./Vendor/MSFT/VPN/Profile/*Ad*/PackageList**; burada *Ad*, 1. Adım’da not ettiğiniz VPN profili adıdır. Bizim örneğimizde, dize şöyle olabilir: **./Vendor/MSFT/VPN/Profile/UygulamaVpnProfilim/PakatListesi**.
-   7.   **Değer** alanında, profille ilişkilendirilecek paketlerin noktalı virgülle ayrılmış listesini sağlayın.  Örneğin, Excel’in ve Google Chrome tarayıcısının VPN bağlantısını kullanmasını istiyorsanız, şunu girebilirsiniz: **com.microsoft.office.excel;com.android.chrome**.
+   7.   **Değer** için, profille ilişkilendirilecek paketlerin noktalı virgülle ayrılmış bir listesini oluşturun. Örneğin, Excel’in ve Google Chrome tarayıcısının VPN bağlantısını kullanmasını istiyorsanız, **com.microsoft.office.excel;com.android.chrome** girin.
 
 
-   ![Örnek Android uygulama başına VPN özel ilkesi](..\media\android_per_app_vpn_oma_uri.png)
-#### Uygulama listenizi Kara Liste veya Beyaz Liste olarak ayarlama (isteğe bağlı)
-**KARA LİSTE** değerini kullanarak, uygulama listenizin VPN bağlantısını kullanmasına izin *verilmeyeceğini* belirtebilirsiniz.  Diğer tüm uygulamalar VPN üzerinden bağlanır.
+    ![Örnek Android uygulama başına VPN özel ilkesi](..\media\android_per_app_vpn_oma_uri.png)
 
-Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve *yalnızca* belirtilen uygulamaların VPN bağlantısını kullanabileceğini belirtebilirsiniz.
-
-
-1.  OMA-URI ayarlarının altında **Ekle**’ye tıklayın.
-2.  Bir ayar adı sağlayın.
-3.  **Veri türü** olarak **Dize** belirtin.
-4.  **OMA-URI** için şu dizeyi belirtin: **./Vendor/MSFT/VPN/Profile/*Ad*/Mode**; burada *Ad*, 1. Adım’da not ettiğiniz VPN profili adıdır. Bizim örneğimizde, dize şöyle olabilir: **./Vendor/MSFT/VPN/Profile/UygulamamVpnProfili/Mode**.
-5.  **Değer** alanına **KARA LİSTE** veya **BEYAZ LİSTE** girin.
+#### Uygulama listenizi kara liste veya beyaz liste olarak ayarlama (isteğe bağlı)
+  **KARA LİSTE** değerini kullanarak, VPN bağlantısını *kullanamayacak* uygulamaların listesini belirtebilirsiniz. Diğer tüm uygulamalar VPN üzerinden bağlanır.
+Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve VPN bağlantısını *kullanabilecek* uygulamaların listesini belirtebilirsiniz. Listede yer almayan uygulamalar VPN üzerinden bağlanamaz.
+  1.    **OMA-URI ayarları**’nın altında **Ekle**’yi seçin.
+  2.    Bir ayar adı girin.
+  3.    **Veri türü** olarak **Dize**’yi belirtin.
+  4.    **OMA-URI** için şu dizeyi kullanın: **./Vendor/MSFT/VPN/Profile/*Ad*/Mode**; burada *Ad*, 1. Adım’da not ettiğiniz VPN profili adıdır. Bizim örneğimizde, dize şöyle olabilir: **./Vendor/MSFT/VPN/Profile/UygulamamVpnProfili/Mode**.
+  5.    **Değer** alanı için **KARA LİSTE** veya **BEYAZ LİSTE** girin.
 
 
 
@@ -70,18 +67,15 @@ Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve *yalnızca* belirt
 
 *Her iki* ilkeyi de *aynı* Intune gruplarına dağıtmalısınız.
 
-   1.   **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
-
+1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi ve ardından **Dağıtımı Yönet**’i seçin.
 2.   **Dağıtımı Yönet** iletişim kutusunda:
+    -   **İlkeyi dağıtmak için**, ilkenin dağıtılacağı bir veya daha fazla grup seçin ve ardından **Ekle** > **Tamam**'ı seçin.
+    -   **Dağıtmadan iletişim kutusunu kapatmak için** **İptal**’i seçin.
 
-    -   **İlkeyi dağıtmak için** - İlkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'a tıklayın.
-
-    -   **Dağıtmadan iletişim kutusunu kapatmak için** - **İptal**'e tıklayın.
-
- **İlke** çalışma alanının **Genel Bakış** sayfasında, bir durum özeti ve uyarılar ilkeyle ilgili işlem yapmanız gereken durumları tanımlar. Ayrıca, Pano çalışma alanında bir durum özeti görüntülenir.
+ **İlke** çalışma alanının **Genel Bakış** sayfasında, bir durum özeti ve uyarılar ilkeyle ilgili işlem yapmanız gereken durumları tanımlar. Ayrıca, **Pano** çalışma alanında bir durum özeti de görüntülenir.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

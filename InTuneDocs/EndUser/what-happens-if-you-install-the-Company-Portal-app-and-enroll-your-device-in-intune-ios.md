@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 4ccd20b4024a3f824b873ab79eaa41d746d8e04b
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: b5ecb5b4c7629b04c679995b5788ee307bac79f0
 
 
 ---
@@ -73,7 +73,7 @@ Cihazınız kaydolduğunda, BT yöneticiniz şunları yapabilir:
 
 -   Cihazda bir parola veya PIN kodu belirlemenizi gerektirebilir.
 
--   Hüküm ve koşulları kabul etmenizi gerektirir.
+-   Hüküm ve koşulları kabul etmenizi gerektirebilir.
 
 -   Cihazınızda kamerayı etkinleştirebilir veya devre dışı bırakabilir.
 
@@ -95,11 +95,8 @@ Cihazınızı kaydetme adımları için bkz. [iOS cihazınızı Intune’a kayde
 
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

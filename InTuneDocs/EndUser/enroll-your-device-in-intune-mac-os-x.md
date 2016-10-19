@@ -3,8 +3,8 @@ title: "Mac OS X cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Mac OS X cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/30/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 04380c2adf65f76a786da51509db24d773ac30f1
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
 
 
 ---
@@ -34,26 +34,25 @@ Mac OS X cihazınızı kaydetmek için
 
 2.  **Bu cihaz kaydedilmemiş veya Şirket Portalı cihazı tanımlayamıyor** öğesine dokunun.
 
-    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png) 
+    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 
 3.  Cihazınızı kaydetmeye başlamak için **Yükle**’ye dokunun.
 
-    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
+    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
 4.  **Yönetim Profilini Yükle** iletişim kutusunda **Yükle**’ye dokunun. Kimlik bilgilerinizi girmenizi isteyen bir iletişim kutusu görüntülenirse kullanıcı adı ve parolanızı girin ve ardından **Devam** &gt; **Yükle**’ye dokunun.
 
-    ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
+    ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
     Kaydetmeyi bitirdikten sonra profiliniz doğrulandığını gösteren bir Yönetim Profili sayfasını göreceksiniz.
 
-    ![management-profile-verified](./media/4-macosx-enroll-done.png) 
+    ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO5-->
 
 

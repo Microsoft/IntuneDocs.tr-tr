@@ -10,10 +10,10 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: f15f3efc10936a964a72718daf8219f5b9c1e24a
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: fb347fac40d201f94d1b8847ba72b0bd31dd6e23
 
 
 ---
@@ -48,14 +48,10 @@ Yeni bir sürüm çıktığında, yüklü uygulamalar listenizde uygulamaya baka
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-Cihazınızda gerçekleştirebileceğiniz diğer görevlerle ilgili bilgi için, sahip olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
-
-- [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)</br>
-- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
-- [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -3,19 +3,19 @@ title: "Ele geçirilen bir Android cihazı yeniden bağlama | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/06/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
-ms.openlocfilehash: 08c85817b46d5acb454c96419198080ba4c7a0ad
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: eff3eee3d655e27c62b9083a98813cf24c10cba4
 
 
 ---
@@ -27,8 +27,6 @@ Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri 
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

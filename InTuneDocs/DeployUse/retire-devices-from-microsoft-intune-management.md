@@ -13,24 +13,51 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 42b723f99c34f03060140e5f280b87287d108ae1
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # Cihazları Intune yönetiminde devre dışı bırakma
 
-Cihazlar ister şirkete ait ister kişisel olsun, belirli bir noktaya gelindiğinde yönetilen cihazın Intune’da yönetimden kaldırılmaı gerekir. Cihazı devre dışı bırakma, görece sorunsuz bir işlemdir; seçmeli temizleme veya tam temizleme yaparsınız.
+Cihazlar ister şirkete ait ister kişisel olsun, belirli bir zaman geldiğinde yönetilen bir cihazın Intune yönetiminden kaldırılması gerekir. Bir cihazın çeşitli nedenlerle kullanımdan kaldırılması gerekebilir:
+
+-   Kullanıcının şirketten planlı bir şekilde ("yönetilen" ayrılma) ayrılması
+-   Kullanıcı aniden ayrılması (işten çıkartılırsa, istifa ederse, vb.).
+-   Cihazın kaybolması
+-   Bir cihazın kullanım amacının değiştirilmesi (başka bir kullanıcıya verilmesi, farklı bir amaç için yeniden kullanılması, vb.)
+
+Mobil cihaz olarak yönetilen cihazlarda seçmeli temizleme veya tam temizleme gerçekleştirebilir veya cihazı kilitleyip parolasını sıfırlayabilirsiniz. Cihazı temizleyerek kullanıcının aboneliğini başka bir cihaz eklemek üzere serbest bırakmış olursunuz. Intune istemci yazılımıyla yönetilen bilgisayarları da devre dışı bırakabilirsiniz.
+
 ## Cihazdan verileri ve uygulamaları temizleme
 Hem seçmeli temizleme hem de tam temizleme, ilkesini ve şirket portalını kaldırarak cihazı Intune yönetiminden kaldırır. Bu da, artık cihazın Microsoft SharePoint, e-posta veya Office 365 gibi şirket kaynaklarında oturum açmak için gereken kimlik bilgilerine sahip olmadığı anlamına gelir.
 
 [Seçmeli temizleme](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) cihazdaki kişisel bilgileri etkilemediğinden, Intune’a kendi cihazını kaydetmiş olan çalışanlar için tercih edilen işlemdir. Yalnızca şirket verileri kaldırılır.
 
-Şirkete ait cihazlarda, cihazı fabrika ayarlarına sıfırlayan [tam temizleme](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) işlemini de kullanabilirsiniz.
+Kullanım amacı değiştirilmesi gereken cihazlarda, cihazı fabrika ayarlarına döndüren [tam temizleme](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) işlevini de kullanabilirsiniz.
 
-## Şirket ağına erişimi iptal etme
-Bir çalışan şirketten ayrıldığı ve şirkete ait donanımı geri vermeyi ihmal ettiği için cihazı devre dışı bırakıyorsanız, cihazı [uzaktan kilitlemeniz](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) de mümkündür. Bu seçenek, cihazı gözden çıkarmanıza yol açabilecek olsa da hem şirket bilgilerinin hem de şirket donanımının kötüye kullanımını engeller.
+## Azure Active Directory portalında cihazları silmek için
+
+1.  Kuruluş kimlik bilgilerinizle [http://aka.ms/accessaad](http://aka.ms/accessaad) veya [https://portal.office.com](https://portal.office.com) adresinde oturum açın ve **Yönetim merkezleri** &gt; **Azure AD**’yi seçin.
+
+2.  Azure Aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez (**Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
+
+4.   **Active Directory** ’yi ve sonra da kuruluşunuzu seçin.
+
+5.   **Kullanıcılar** sekmesini seçin.
+
+6.  Cihazlarını silmek istediğiniz kullanıcıyı seçin.
+
+7.  **Cihazlar**’ı seçin.
+
+8.  Cihazları uygun bir şekilde seçip **Cihazı sil**’i seçin. Cihaz bir sonraki Active Directory eşitlemesinde silinir. Bu da genellikle 4 saat içinde gerçekleşir. Eşitlemeden sonra cihaz yönetimden kaldırılır. Bu durumda kullanıcının cihaz sınırından bir cihaz eksilir.
+
+## Yönetilen bilgisayarları devre dışı bırakma
+Intune istemci yazılımıyla yönetilen bilgisayarlar Intune yönetim konsolu aracılığıyla yönetimden kaldırılabilir. Bu durumda istemci yazılımı da kaldırılır ve Intune ilkesi bilgisayardan silinir. [Intune istemci yazılımıyla yönetilen bilgisayarları devre dışı bırakma](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md) hakkında bilgi edinin.
+
+## Bir cihaza erişimi engelleme
+Bir cihaz kaybolduğunda ya da bir çalışan şirkete ait donanımı iade etmeden şirketi terk ettiğinde [geçiş kodunu sıfırlama ve cihazı uzaktan kilitleme](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) olanaklarına da sahip olursunuz. Bu seçenek, cihazı gözden çıkarmanıza yol açabilecek olsa da şirket bilgilerinin kötüye kullanımını engeller.
 
 Çalışanın Intune kullanıcı hesabındaki lisansı da iptal etmek isteyebilirsiniz. Bu durumda lisans boşta kalır ve lisansı yeni bir kullanıcı hesabına atayabilirsiniz.
 
@@ -42,6 +69,6 @@ Bazı durumlarda, cihazın kendi ömrü sona erer. Böyle durumlarda, tam temizl
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

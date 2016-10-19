@@ -13,15 +13,15 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
+ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
+ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
 
 
 ---
 
 # Uygulama başına VPN yapılandırması için paket aile adı (PFN) bulma
 
-Uygulama başına VPN’yi yapılandırabilmek için bir PFN bulmanın iki yolu vardır.
+Uygulama başına VPN’yi ayarlamak için bir PFN bulmanın iki yolu vardır.
 
 ## Windows 10 bilgisayarında yüklü bir uygulama için PFN bulma
 
@@ -32,11 +32,12 @@ Get-AppxPackage cmdlet’inin söz dizimi:
 ` Parameter Set: __AllParameterSets`
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
-> Not: PFN’yi alabilmek için PowerShell’i yönetici olarak çalıştırmanız gerekebilir
+> [!NOTE]
+PFN’yi alabilmek için PowerShell’i yönetici olarak çalıştırmanız gerekebilir.
 
-Örneğin, bilgisayarda yüklü tüm evrensel uygulamalarla ilgili bilgileri almak için `Get-AppxPackage` kullanın.
+Örneğin, bilgisayarda yüklü tüm evrensel uygulamalar hakkındaki bilgileri almak için `Get-AppxPackage` kullanın.
 
-Adının tamamını veya bir kısmını bildiğiniz uygulamayla ilgili bilgileri almak için `Get-AppxPackage *<app_name>` kullanın. Uygulamanın tam adını bilmediğiniz durumlarda joker karakter kullanmanın özellikle çok yararlı olduğunu aklınızda bulundurun. Örneğin, OneNote’la ilgili bilgi almak için `Get-AppxPackage *OneNote` kullanın.
+Adının tamamını veya bir kısmını bildiğiniz bir uygulama hakkındaki bilgileri almak için `Get-AppxPackage *<app_name>` kullanın. Uygulamanın tam adını bilmediğiniz durumlarda joker karakter kullanmanın özellikle çok yararlı olduğunu aklınızda bulundurun. Örneğin, OneNote’la ilgili bilgi almak için `Get-AppxPackage *OneNote` kullanın.
 
 
 OneNote için şu bilgiler alınır:
@@ -67,13 +68,12 @@ OneNote için şu bilgiler alınır:
 
 ## Uygulama bilgisayarda yüklü olmadığında bir PFN bulma
 
-1.  https://www.microsoft.com/en-us/store/apps adresine gidin
+1.  Https://www.microsoft.com/en-us/store/apps adresine gidin.
 2.  Arama çubuğuna uygulamanın adını girin. Bizim örneğimizde, OneNote için arama yapın.
-3.  Uygulamanın bağlantısına tıklayın. Eriştiğiniz URL’nin sonunda bir dizi harf olduğuna dikkat edin. Bizim örneğimizde, URL şöyle görünür:
-`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
-4.  Başka bir sekmede, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata` URL’sini yapıştırın; `<app id>` bölümü https://www.microsoft.com/en-us/store/apps adresinden aldığınız uygulama kimliğiyle değiştirin (3. adımındaki URL’nin sonunda yer alan harf serisi). Bizim Outlook örneğimizde, şunu yapıştırırsınız: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+3.  Uygulamanın bağlantısını seçin. URL’nin sonunda bir dizi harf olduğuna dikkat edin. Bizim örneğimizde, URL şöyle görünür: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
+4.  Farklı bir sekmede, şu URL’yi yapıştırın: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. `<app id>` bölümünü, https://www.microsoft.com/en-us/store/apps adresinden aldığınız uygulama kimliğiyle değiştirin (3. adımındaki URL’nin sonunda yer alan harf serisi). Bizim OneNote örneğimizde, şunu yapıştırırsınız: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
-Microsoft Edge’de istediğiniz bilgi görüntülenir; Internet Explorer’da bilgileri görmek için **Aç**’a tıklayın. PFN değeri ilk satırda verilir. Bizim örneğimizde sonuçlar şöyle görünür:
+Microsoft Edge istediğiniz bilgileri görüntüler; Internet Explorer’da bilgileri görmek için **Aç**’ı seçin. PFN değeri ilk satırda verilir. İşte bizim örneğimizin sonuçları:
 
 
 `{`
@@ -85,6 +85,6 @@ Microsoft Edge’de istediğiniz bilgi görüntülenir; Internet Explorer’da b
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

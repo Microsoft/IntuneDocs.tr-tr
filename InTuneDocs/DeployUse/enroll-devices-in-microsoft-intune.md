@@ -13,14 +13,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: 41c21da7c95ef15f817aa344aa5b2d6479b65922
+ms.sourcegitcommit: a7a0f834df939432910e32e6e635a70f021b37a9
+ms.openlocfilehash: 63405b43609eda515656ad397c5c7ff4253a8167
 
 
 ---
 
 # Cihazları yönetim için Intune’a kaydetme
 Microsoft Intune mobil cihaz yönetimi (MDM), cihazları yönetime getirmek ve kaynaklara erişim izin vermek için, kayıt olma kullanır. Cihazları kaydetme biçiminiz, cihaz türüne, sahipliğine ve gereken yönetim seviyesine bağlıdır. "Kendi cihazını getir" (BYOD) ve şirkete ait cihaz (COD) senaryoları bir kayıt işlemi gerektirir. Şirket içinde veya bulutta barındırılan Exchange ActiveSync kullanan kuruluşlar, kayıt gereksinimleri olmadan daha hafif yönetim etkinleştirebilir. Windows bilgisayarlar, Intune istemci yazılımı kullanılarak da yönetilebilir.
+
+Yardım için bkz. [Cihazların nasıl kaydedileceğini seçme](/intune/get-started/choose-how-to-enroll-devices1).
 
 ###  Desteklenen cihaz platformları
 
@@ -74,7 +76,7 @@ Aşağıdaki tabloda kuruluşa ait cihaz kayıt yöntemleri ve bunların avantaj
 |**[BYOD](#BYOD)** | Hayır|    Evet |   Hayır |
 |**[DEM](#DEM)**|   Hayır |Hayır |Hayır  |
 
-**Kuruluşa ait cihazlar için kayıt yöntemleri**
+**Cihazlar için kayıt yöntemleri**
 
 ### BYOD
 “Kendi Cihazını Getir.” Şirket Portalı uygulamasını kullanıcılar yükler ve cihazlarını kaydeder. Cihazı Şirket Portalı’na kaydetmek cihazın çalışma alanına katılmasını sağlar. iOS cihazlarını Şirket Portalı’na kaydetmek için Apple Kimliği gerekir. Kuruluşa ait cihazlarda KCG ek yapılandırma gerektirmez. [Cihaz yönetimini ayarlama](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management) adımlarına bakın. ([Tabloya dön](#overview-of-device-enrollment-methods))
@@ -149,6 +151,6 @@ Intune istemci yazılımıyla yönetilen bilgisayarlar, seçilerek silinemez vey
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

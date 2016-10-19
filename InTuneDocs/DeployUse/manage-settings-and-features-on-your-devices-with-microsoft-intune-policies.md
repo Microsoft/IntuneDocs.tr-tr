@@ -4,7 +4,7 @@ description: "Yönettiğiniz kayıtlı cihazlarda ayarları ve özellikleri dene
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70b980c045d8d37aa4ea5bee5858c0c728d54114
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -28,7 +28,7 @@ Intune ilkeleri aşağıdaki kategorilere ayrılır. Kullandığınız kategori,
 
 
 - **Yapılandırma ilkeleri:** Bunlar yaygın olarak, cihazlarınızdaki güvenlik ayarlarını ve özelliklerini yönetmek için kullanılır. Bu ilkelerin nasıl oluşturulduğunu ve dağıtıldığını öğrenmek ve kullanılabilir ayarları keşfetmek için bu konu başlığı altında verilen bilgileri kullanın.
-- **Cihaz uyumluluk ilkeleri:** Bunlar, bir cihazın koşullu erişim ilkeleriyle uyumlu kabul edilmesi için uyması gereken kuralları ve ayarları tanımlar. Uyumluluk ilkelerini ayrıca, koşullu erişimden bağımsız olarak cihazlardaki uyumluluğu izlemek ve sorunları gidermek için de kullanabilirsiniz.
+- **Cihaz uyumluluk ilkeleri:** Bunlar, bir cihazın koşullu erişim ilkeleriyle uyumlu kabul edilmesi için uyması gereken kuralları ve ayarları tanımlar. Uyumluluk ilkelerini, koşullu erişimden bağımsız olarak cihazlardaki uyumluluğu izlemek ve sorunları gidermek için de kullanabilirsiniz.
 Ayrıntılar için bkz. [Microsoft Intune’da cihaz uyumluluk ilkeleri](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Koşullu erişim ilkeleri:** Bu ilkeler, belirttiğiniz koşullara bağlı olarak e-posta ve diğer hizmetleri güvenli hale getirmenize yardımcı olur.
 Ayrıntılar için bkz. [Microsoft Intune ile e-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
@@ -108,7 +108,7 @@ Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağ
 ## Intune ilkeleri hakkında sık sorulan sorular
 
 ### İlke veya uygulamalar dağıtıldıktan sonra mobil cihazların bunları alması ne kadar sürer?
-Bir ilke veya uygulama dağıtıldığında, Intune tarafından cihaza hemen Intune hizmetinde giriş yapılması gerektiği konusunda bildirim gönderilmeye başlanır. Bu işlem genellikle 5 dakikadan daha kısa sürer.
+Bir ilke veya uygulama dağıtıldığında, Intune tarafından cihaza hemen Intune hizmetinde giriş yapılması gerektiği konusunda bildirim gönderilmeye başlanır. Bu işlem genellikle beş dakikadan kısa sürer.
 
 İlk bildirim gönderildikten sonra cihaz ilkeyi almak üzere giriş yapmazsa, Intune üç deneme daha yapar.  Cihaz çevrimdışıysa (örneğin, kapalıysa veya ağa bağlı değilse), bildirimleri almayabilir. Bu durumda cihaz, ilkeyi bir sonraki zamanlanmış Intune hizmeti girişinde aşağıdaki gibi alır:
 
@@ -128,12 +128,9 @@ Cihaz daha yeni kaydedilmişse, giriş sıklığı aşağıda gösterildiği gib
 Ayrıca, kullanıcılar ilkeyi istedikleri zaman denetlemek için Şirket Portalı uygulamasını açıp cihazı eşitleyebilir.
 
 ### Hangi eylemler Intune tarafından bir cihaza anında bildirim gönderilmesine neden olur?
-Cihazlar Intune hizmetine giriş yapmaları gerektiğini söyleyen bir bildirim aldığında veya düzenli zamanlanmış giriş zamanlarında hizmete giriş yapar.  Temizleme, kilitleme, geçiş kodu sıfırlama, uygulama dağıtma, profil dağıtma (WiFi, VPN, e-posta, vb.) veya ilke dağıtma gibi bir eylemle özel olarak bir cihazı veya kullanıcıyı hedeflediğinizde, Intune hemen, bu güncelleştirmeleri almak için Intune hizmetine giriş yapması gerektiğini cihaza bildirmeye çalışır.
+Cihazlar Intune hizmetine giriş yapmaları gerektiğini söyleyen bir bildirim aldığında veya düzenli zamanlanmış giriş zamanlarında hizmete giriş yapar.  Temizleme, kilitleme, geçiş kodu sıfırlama, uygulama dağıtma, profil dağıtma (Wi-Fi, VPN, e-posta vb.) veya ilke dağıtma gibi bir eylemle özel olarak bir cihazı veya kullanıcıyı hedeflediğinizde, Intune bu güncelleştirmeleri hemen almak için Intune hizmetine giriş yapması gerektiğini cihaza bildirmeye çalışır.
 
 Şirket portalındaki kişi bilgilerinin düzeltilmesi gibi diğer değişiklikler, cihazlara anında bildirim gönderilmesine neden olmaz.
-
-> [!TIP]
-> Bir Android cihazına ayarları içeren bir ilke dağıtıldığında kullanıcıdan ilkeye uymak için işlem yapması istenir. Kullanıcı bu işlemi yapana veya cihaz yeniden başlatılana kadar yeni ilke ayarları etkili olmaz.
 
 ### Aynı kullanıcı veya cihaza birden çok ilke dağıtılıyorsa hangi ayarların uygulanacağını nasıl bilebilirim?
 Aynı kullanıcı veya cihaza iki veya daha fazla ilke dağıtıldığında, hangi ayarın uygulanacağını belirleyen değerlendirme tek tek ayarlar düzeyinde yapılır:
@@ -152,7 +149,7 @@ MAM ilkesinde sayı giriş alanları (sıfırlamadan önce PIN denemesi sayısı
 Bir ilkenin uygulamaya dağıtılıp geçerli olmasından sonra ikinci bir ilke dağıtılırsa, önceki ilke öncelikli olur ve geçerli kalırken ikinci ilke çakışmada görünür. Her ikisi de aynı zamanda uygulanırsa, yani bir ilke diğerinden önce değilse, her ikisi de çakışmada olur. Çakışmadaki ayarlarda, en kısıtlayıcı olan değerler kullanılır.
 
 ### iOS özel ilkeleri çakışırsa ne olur?
-Intune, Apple yapılandırma dosyalarının veya özel OMA URI ilkesinin yükünü değerlendirmez. Yalnızca bir teslim mekanizması olarak görev yapar.
+Intune, Apple yapılandırma dosyalarının veya özel bir Open Mobile Alliance Uniform Resource Identifier (OMA-URI) ilkesinin yükünü değerlendirmez. Yalnızca bir teslim mekanizması olarak görev yapar.
 
 Özel bir ilke dağıttığınızda yapılandırılan ayarların uyumluluk ve yapılandırma ilkeleriyle veya diğer özel ilkelerle çakışmadığından emin olun. Ayar çakışmaları bulunan bir özel ilke olması durumunda, ayarların hangi sırayla uygulanacağı rastgele belirlenir.
 
@@ -198,7 +195,7 @@ Intune, Apple yapılandırma dosyalarının veya özel OMA URI ilkesinin yükün
 
 #### Intune istemci yazılımını çalıştıran Windows bilgisayarları
 
-- **Endpoint Protection ayarları**: Ayarlar önerilen değerlere geri yüklenir. Tek özel durum, varsayılan değeri **Hayır** olan **Microsoft Active Protection Hizmeti'ne katıl** ayarıdır. Ayrıntılar için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Endpoint Protection ayarları**: Ayarlar önerilen değerlere geri yüklenir. Tek özel durum, varsayılan değeri **Hayır** olan **Microsoft Active Protection Hizmeti'ne Katıl** ayarıdır. Ayrıntılar için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 - **Yazılım güncelleştirmeleri ayarları**: Ayarlar, işletim sistemi için varsayılan duruma sıfırlanır. Ayrıntılar için bkz. [Microsoft Intune'da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **Microsoft Intune Center ayarları**: İlke tarafından yapılandırılan tüm destek iletişim bilgileri bilgisayarlardan silinir.
 - **Windows Güvenlik Duvarı ayarları**: Ayarlar, bilgisayar işletim sisteminin varsayılan değerlerine sıfırlanır. Ayrıntılar için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
@@ -215,6 +212,6 @@ Bkz. [Microsoft Intune’da ilke sorunlarını giderme](/intune/troubleshoot/tro
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

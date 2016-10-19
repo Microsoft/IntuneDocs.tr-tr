@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
-ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+ms.sourcegitcommit: 63d94a83a3a5ad9520abab3ef25e8d9690c26ce7
+ms.openlocfilehash: 512ef2416e14f2a44e1c46e996c8519b5776581f
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
 
 iOS için Microsoft Intune Uygulama SDK’sı, Intune Mobil Uygulama Yönetimi’ni (MAM) iOS uygulamanıza eklemenizi sağlar. MAM özellikli bir uygulama, Intune Uygulama SDK'sı ile tümleşiktir ve uygulama etkin bir şekilde yönetildiğinde, BT yöneticilerinin ilkeleri mobil uygulamanıza dağıtmasını sağlar.
 
-# SDK’nın kapsamı
+## SDK’nın kapsamı
 
 iOS için Intune Uygulama SDK'sı; bir statik kitaplık, kaynak dosyaları, API üst bilgileri, bir Hata Ayıklama ayarları plist dosyası ve bir yapılandırıcı aracı içerir. Mobil uygulamalar yalnızca kaynak dosyalar içerebilir ve çoğu ilke zorlaması için kitaplıklarla statik bağlantılar oluşturabilir. Gelişmiş Intune MAM özellikleri API'ler aracılığıyla zorunlu kılınır.
 Bu kılavuz, iOS için Intune Uygulama SDK'sı tümleştirilirken aşağıdakilerin kullanılmasını açıklar:
@@ -37,13 +37,13 @@ Bu kılavuz, iOS için Intune Uygulama SDK'sı tümleştirilirken aşağıdakile
 
 * **Üst bilgiler**: Intune Uygulama SDK'sı API'lerini gösterir. API kullanırsanız, API’yi içeren üst bilgi dosyasını dahil etmeniz gerekir. 
 
-# Intune Uygulama SDK’sı nasıl çalışır?
+## Intune Uygulama SDK’sı nasıl çalışır?
 
 iOS için Intune Uygulama SDK'sının amacı, kodda minimum düzeyde değişiklik yaparak iOS uygulamalarına yönetim özellikleri eklemeyi sağlamaktır. Kod değişiği miktarının azaltılması, pazarlama süresini kısaltırken mobil uygulamanızın tutarlılığını ve kararlılığını artırır. 
 
 Uygulamanın statik kitaplığa bağlanması ve kaynak paketini içermesi gerekir. MAMDebugSettings.plist dosyası isteğe bağlıdır. Bu dosya, uygulamayı Microsoft Intune aracılığıyla dağıtmaya gerek kalmadan geçerli MAM ilkelerinin benzetimini gerçekleştirmek amacıyla pakete eklenebilir. Ayrıca hata ayıklama derlemelerinde, MAMDebugSettings.plist dosyası iTunes dosya paylaşımı aracılığıyla uygulamanın Belgeler dizinine aktarılarak, MAMDebugSettings.plist dosyasındaki ilkeler uygulanabilir.
 
-# Intune Uygulama SDK'sı ile uygulamanızı oluşturma 
+## Intune Uygulama SDK'sı ile uygulamanızı oluşturma 
 
 Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları tamamlayın:
 
@@ -133,7 +133,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları tamamla
 
 Mobil uygulamanız kendi kimlik doğrulaması için ADAL kullanıyorsa, lütfen burada bulunan "Azure Directory Kimlik Doğrulaması Kitaplık Ayarları" üzerindeki bölümü gözden geçirin.
 
-## Telemetri 
+### Telemetri 
 
 iOS için Intune Uygulama SDK'sı, Microsoft Intune’a gönderilen kullanım olaylarına ilişkin telemetri verilerini varsayılan olarak günlüğe kaydeder.
 
@@ -155,15 +155,15 @@ Uygulama kendi kimlik doğrulaması için ADAL kullanıyorsa, aşağıdaki adım
 
 2. Projenin `Info.plist`dosyasında, `IntuneMAMSettings` anahtar adlı `ADALRedirectUri`sözlüğü altında, ADAL çağrıları için kullanılacak Yeniden Yönlendirme URI’sini belirtin. Ayrıca, uygulamanızın Yeniden Yönlendirme URI’sinin biçimine bağlı olarak `ADALRedirectScheme` belirtmeniz gerekebilir.
 
-## Uzantılarınızı Oluşturma (isteğe bağlı) 
+### Uzantılarınızı Oluşturma (isteğe bağlı) 
 
 Uzantı oluştururken, buradaki "Intune Uygulama SDK'sı ile uygulamanızı Oluşturma" bölümünde özetlenen ve mobil uygulamanızı oluşturmak için kullandığınız yönergeleri izleyin. Bu yönergelere ek olarak, IntuneMAMSettings sözlüğü altında, içeren uygulamanın paket kimliği değerine sahip bir ContainingAppBundleId anahtarı ekleyerek her bir uzantının info.plist dosyasını güncelleştirin.
 
-## Çerçevelerinizi Oluşturma (isteğe bağlı)
+### Çerçevelerinizi Oluşturma (isteğe bağlı)
 
 Intune Uygulama SDK'sında yapılan son değişikliklerle birlikte, artık ekli uygulama çerçeveleri içeren mobil uygulamanızı belirli bir bağlayıcı bayrağı ile derlemeniz gerekmiyor. 
 
-## Başlangıçtaki Görüntü Dosyaları (isteğe bağlı)
+### Başlangıçtaki Görüntü Dosyaları (isteğe bağlı)
 
 MAM özellikli bir uygulama Microsoft Intune tarafından etkin olarak yönetiliyorsa, Intune Uygulama SDK'sı, kullanıcıya uygulamanın yönetildiğini belirtmek için uygulama başlatılırken bir başlangıç ekranı görüntüler. İsterseniz, "Şirketiniz tarafından yönetilen" başlangıç sayfasında gösterilmek üzere görüntü dosyaları ekleyebilirsiniz. Görüntüler için aşağıdaki kılavuzları kullanın:
 
@@ -179,7 +179,7 @@ MAM özellikli bir uygulama Microsoft Intune tarafından etkin olarak yönetiliy
 
 **Not**: Bu ekran başlatma ile tetiklenir, ancak kullanıcı tarafından kalıcı olarak kapatılabilir.
 
-# Intune Uygulama SDK'sı Ayarlarını Yapılandırma
+## Intune Uygulama SDK'sı Ayarlarını Yapılandırma
 
 Uygulamanın `IntuneMAMSettings` dosyasında yer alan `info.plist` sözlüğü, Intune Uygulama SDK’sını yapılandırmak için kullanılır. Desteklenen tüm yapılandırmaların listesi aşağıda verilmiştir. 
 
@@ -197,7 +197,7 @@ SplashIconFile <br>SplashIconFile~ipad  | Dize  | Intune giriş simge dosyasın�
 SplashDuration | Sayı | Intune Giriş ekranının uygulama başlatılırken gösterileceği en kısa süre miktarı (saniye cinsinden). Varsayılan olarak 1,5’tir. | İsteğe bağlı.
 ADALLogOverrideDisabled | Boole değeri  | SDK’nın tüm ADAL günlüklerini (varsa, uygulamadan gelen ADAL çağrıları dahil) kendi günlük dosyasına yönlendirip yönlendirmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. Uygulamanın kendi ADAL günlüğü geri aramasını ayarlamasını istiyorsanız EVET olarak ayarlayın. | İsteğe bağlı.
 
-# Intune Uygulama SDK’sı üst bilgileri 
+## Intune Uygulama SDK’sı üst bilgileri 
 
 Aşağıdaki üst bilgiler, Intune Uygulama SDK'sının işlevselliğini etkinleştirmek için gereken API işlev çağrılarını içerir. 
 
@@ -209,7 +209,7 @@ Aşağıdaki üst bilgiler, Intune Uygulama SDK'sının işlevselliğini etkinle
     IntuneMAMPolicyDelegate.h
     IntuneMAMLogger.h
 
-# Xcode’da Intune Uygulama SDK'sı hatalarını ayıklama
+## Xcode’da Intune Uygulama SDK'sı hatalarını ayıklama
 
 MAM özellikli uygulamanızı Microsoft Intune ile test etmeden önce, Xcode’da `Settings.bundle` dosyasını kullanabilirsiniz. Böylece, Intune bağlantısına gerek olmadan test ilkelerini ayarlayabilirsiniz. Etkinleştirmek için:
 
@@ -230,7 +230,7 @@ MAM özellikli uygulamanızı Microsoft Intune ile test etmeden önce, Xcode’d
 > [!NOTE]
 > Ayarları etkinleştirmek ve açmak/kapatmak için artık "Ayarlar -> Uygulamanızın-Adı -> Test İlkelerini Etkinleştir" seçeneğini kullanabilirsiniz.
 
-# iOS için Önerilen En İyi Uygulamalar
+## iOS için Önerilen En İyi Uygulamalar
 
 iOS için geliştirmeye yönelik olarak önerilen en iyi uygulamalardan bazıları aşağıda verilmiştir:
 
@@ -241,6 +241,6 @@ Xcode `libIntuneMAM.a`dosyasını bulamıyorsa, bu kitaplığın yolunu bağlay�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
