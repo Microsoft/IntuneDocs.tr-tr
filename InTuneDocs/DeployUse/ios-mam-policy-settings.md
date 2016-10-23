@@ -4,7 +4,7 @@ description: "Bu konu başlığı altında, iOS cihazları için mobil uygulama 
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,6 +84,11 @@ Aşağıda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey pen
   Şirket verilerini kaldırmak amacıyla seçmeli temizleme işlemi yaptığınızda, doğrudan uygulamadan yerel adres defterine eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. Şu anda bu özellik yalnızca **Microsoft Outlook** uygulaması için geçerlidir.
 
   **Varsayılan değer = Evet**
+  
+- **Yazdırmayı devre dışı bırakma:** Şirket verilerinin MAM ilkesi ile ilişkilendirilmiş uygulamalardan yazdırılmasını engellemek için **Evet**’i seçin.
+
+    **Varsayılan değer - Evet**
+
 ##  iOS Erişim ilkesi ayarları
 **İlkeyle yönetilen uygulamalar** terimi, MAM ilkeleriyle yapılandırılan uygulamalar için kullanılır.
 - **Erişim için PIN iste:** İlkeyle yönetilen uygulamalarda kullanmak üzere bir PIN istemek için **Evet**’i seçin. Kullanıcıdan, uygulamayı iş bağlamında ilk kez çalıştırdığında bunu ayarlaması istenir.
@@ -114,6 +119,6 @@ iOS cihazlarında kullanıcının, kendini tanıtmak için numaralandırılmış
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

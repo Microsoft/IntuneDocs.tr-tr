@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
+ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
+ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
 
 
 ---
@@ -29,9 +29,9 @@ ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
 
 2.  **Microsoft Intune Şirket Portalı** uygulamasını indirin.
 
-    ![download-ios-comp-portal-app](./media/ios-cpinstall-1-cpinstore.png)
+    ![Intune Şirket Portalı uygulamasını indirme](./media/ios-cpinstall-1-cpinstore.png)
 
-3.  Şirket Portalı uygulamasını açın, iş veya okul e-postanızla parolanızı girin ve **Oturum aç**’a dokunun.
+3.  Şirket Portalı uygulamasını açın, iş veya okul e-posta adresinizi ve parolanızı girin ve **Oturum aç**’a dokunun.
 
     Şirket Portalı uygulamasında ilk kez oturum açıyorsanız ve şirketinizde veya okulunuzda Intune kullanılıyorsa, cihazınızı Intune’a kaydetmeniz istenir. Kaydetmek için, [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-mac-os-x.md) başlığı altında verilen adımları izleyin.
 
@@ -39,7 +39,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

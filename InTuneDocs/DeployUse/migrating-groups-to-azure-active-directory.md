@@ -4,15 +4,15 @@ description: "Gruplarınızı Intune’dan Azure AD’ye geçirme"
 keywords: 
 author: nbigman
 manager: angerobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 translationtype: Human Translation
-ms.sourcegitcommit: d7a1da3b9e1e6ce3e2034cc5e8e1926a671276b8
-ms.openlocfilehash: f7aa05f4a569392be60522437508fdb78f56c55c
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 08bcc258f64e6385ae6fa648ddb8f2b5fe68942e
 
 
 ---
@@ -21,10 +21,8 @@ ms.openlocfilehash: f7aa05f4a569392be60522437508fdb78f56c55c
     
 Enterprise Mobility ve Security genelinde tek bir gruplandırma ve hedefleme deneyimi kullanılabilmesine yönelik geri bildirimleriniz temelinde, Intune Gruplarını Azure Active Directory tabanlı Güvenlik Gruplarına dönüştürüyoruz. Bu, Intune ile Azure Active Directory (Azure AD) genelinde grup yönetimini birleştirecektir. Yeni deneyim, hizmetler arasında grupları çoğaltma gereğini ortadan kaldırır ve PowerShell ile Graph kullanarak genişletilebilirlik özelliği sağlar. 
 
-Kasım ayından itibaren, mevcut Intune müşterilerinin yeni Azure AD tabanlı grup yönetim deneyimine geçirilmesine başlanacaktır. Intune kullanıcı ve cihaz grupları Azure AD güvenlik gruplarına geçirilecektir. Gündelik çalışmalarınız üzerindeki etkisini en aza indirmedikçe geçişleri başlatmayacağız ve son kullanıcıyı herhangi bir şekilde etkilemesini beklemiyoruz. Ayrıca, hesabınızın geçişi öncesinde size bildirim de sağlayacağız.
-
 ### Yeni grup deneyimine nasıl ve ne zaman geçeceğim?
-Geçerli müşteriler bir süre içinde geçirilecektir. Birkaç hafta içinde bu geçişin zamanlamasını son haline getirecek ve daha fazla ayrıntı sağlamak için bu konuyu güncelleştireceğiz. Geçişiniz yapılmadan önce size bildirim sağlanacaktır. Geçişle ilgili endişeleriniz varsa, lütfen [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) adresinden geçiş ekibimizle iletişim kurun.
+Geçerli müşteriler Aralık 2016’dan önce olmamak kaydıyla bir zaman dilimi içinde geçirilecektir. Grupların geçişi yapılmadan önce size bildirim sağlanacaktır. Geçişle ilgili endişeleriniz varsa, lütfen [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) adresinden geçiş ekibimizle iletişim kurun.
 
 ### Hangi yeni özelliklerden yararlanabileceğim?
 Sağlanacak yeni işlevler şunlardır: 
@@ -116,6 +114,6 @@ Intune’un tüm işlevselliği Azure yönetim portalına geçirildiğinde (yakl
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

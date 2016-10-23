@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 30d42bc4ee38a45895320eebd665fe8f5a0cb4ee
-ms.openlocfilehash: 0db3e6a39bd0d30231c339cb4501ce25059e4657
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: efc280f0a1143cacc252ee9fc9344064aa211cb2
 
 
 ---
@@ -26,7 +26,7 @@ Intune ile uygulamalarınızı dağıtma ve yönetme konusunda sorun yaşıyorsa
 
 |Hata kodu|Olası sorun|Önerilen çözüm|
 |--------------|--------------------|------------------------|
-|0x80073CFF<br /><br />0x80CF201C (istemci hatası)|Bu uygulamayı yüklemek için dışarıdan yükleme özellikli bir sisteme sahip olmanız gerekir.|Uygulama paketinin güvenilir bir imza ile imzalandığından ve AllowAllTrustedApps ilkesi etkinleştirilerek etki alanına katılmış bir cihaza ya da AllowAllTrustedApps (Windows RT cihazı kaydedildiğinde uygulanır) etkin bir Windows Dışarıdan Yükleme lisansına sahip cihaza yüklendiğinden emin olun.|
+|0x80073CFF<br /><br />0x80CF201C (istemci hatası)|Bu uygulamayı yüklemek için dışarıdan yükleme özellikli bir sisteme sahip olmanız gerekir.|Uygulama paketinin güvenilir bir imza ile imzalandığından ve AllowAllTrustedApps ilkesi etkinleştirilerek etki alanına katılmış bir cihaza ya da AllowAllTrustedApps etkin bir Windows Dışarıdan Yükleme lisansına sahip cihaza yüklendiğinden emin olun.|
 |0x80073CF0|Paket açılamadı.|Olası nedenler:<br /><br />-   Paket imzasız.<br />-   Yayımcı adı, imzalama sertifikası konusuyla eşleşmiyor.<br /><br />Daha fazla bilgi için AppxPackagingOM olay günlüğünü denetleyin.|
 |0x80073CF3|Pakette güncelleştirme, bağımlılık veya çakışma doğrulaması başarısız oldu|Olası nedenler:<br /><br />-   Gelen paket yüklü bir paketle çakışıyor.<br />-   Belirtilen paket bağımlılığı bulunamadı.<br />-   Paket doğru işlemci mimarisini desteklemiyor.<br /><br />Daha fazla bilgi için sunucu AppXDeployment-Server olay günlüğünü denetleyin.|
 |0x80073CFB|Belirtilen paket zaten yüklü ve paketin yeniden yüklenmesi engellendi|Zaten yüklü olan paketten farklı bir paket yüklüyorsanız bu hatayı alabilirsiniz. Dijital imzanın paketin bir parçası olduğunu da onaylayın. Bir paket yeniden oluşturulduğunda veya yeniden imzalandığında, bu paket artık önceden yüklenmiş paket ile aynı bit düzeyinde değildir. Bu hatayı düzeltmek için kullanılabilecek iki seçenek aşağıda belirtilmiştir:<br /><br />-   Uygulamanın sürüm sayısını artırın ve ardından paketi yeniden oluşturup yeniden imzalayın.<br />-   Yeni paketi yüklemeden önce sistem üzerindeki her kullanıcı için eski paketi kaldırın.|
@@ -49,6 +49,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 2631541ea974769308aea30d2b37a3a79c22db99
+ms.sourcegitcommit: f69d2b222e9409a79dae07fd77f29c46876f11cb
+ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
 
 
 ---
@@ -57,12 +57,10 @@ Windows cihazınızı Intune’a kaydettiğinizde, BT yöneticinize cihazınızd
 
 -   Üretici
 
-[Buradan](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) daha fazla bilgi edinebilirsiniz.
+Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yüklediğinizde ve Windows cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)
 
 
 
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

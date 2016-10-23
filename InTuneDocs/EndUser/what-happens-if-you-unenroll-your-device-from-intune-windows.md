@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 
 ---
@@ -23,11 +23,7 @@ ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
 
 # Windows cihazınızın Intune kaydını sildiğinizde ne olur?
 
-Neler olduğu hakkında ek bilgi için, yukarıdaki “Bu Makalede” bölümünde gösterilen ve kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın.
-
-- [Windows 10 mobil, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 veya Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows 8.1 çalıştıran Windows RT veya Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+Bu sayfanın sağ tarafında, "Bu makalede" bölümü altındaki bağlantıları kullanarak kullandığınız cihaz türü hakkında bilgi alabilirsiniz.
 
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
@@ -55,7 +51,7 @@ Ayrıca, Windows 8.1 için:
 
 -   Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
 
-## Windows 10 mobil, Windows Phone 8.1 veya Windows Phone 8
+## Windows 10 Mobile ve Windows Phone 8.1
 
 -   Şirket Portalı uygulaması cihazınızdan kaldırılır, bu nedenle cihazınız artık Şirket Portalı’nda görünmez ve Şirket Portalı uygulamasından ya da Şirket Portalı web sitesinden uygulama yükleyemezsiniz.
 
@@ -66,7 +62,7 @@ Ayrıca, Windows 8.1 için:
     > [!IMPORTANT]
     > Bu durumda geçerli olmaya devam edecek tek özel durum şifreleme ilkesidir. Şirket ilkeniz Windows Phone'unuzun şifrelenmesini gerektiriyorsa, telefonunuzun şifresini kaldırmanın tek yolu Windows Phone cihazınızda **Ayarlar** menüsünü kullanarak telefonunuzu sıfırlamaktır.
 
-## Windows 8.1 çalıştıran Windows RT veya Windows RT
+## Windows 8.1 çalıştıran Windows RT
 
 -   Şirket Portalı uygulaması cihazınızdan kaldırılır, bu nedenle cihazınız artık Şirket Portalı’nda görünmez ve Şirket Portalı uygulamasından uygulama yükleyemezsiniz.
 
@@ -93,6 +89,6 @@ Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

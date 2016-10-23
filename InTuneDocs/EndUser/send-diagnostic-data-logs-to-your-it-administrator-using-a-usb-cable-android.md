@@ -1,6 +1,6 @@
 ---
 title: "Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme | Microsoft Intune"
-description: 
+description: "USB kablosu kullanarak veri günlüklerini gönderme"
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: e88afa6d8cc2720a001e7ee138e169bd3f1c67fa
+ms.sourcegitcommit: 42720b0e0613be10e83cb0e8aae7170a85f473e5
+ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 
 
 ---
@@ -23,24 +23,22 @@ ms.openlocfilehash: e88afa6d8cc2720a001e7ee138e169bd3f1c67fa
 
 # Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme
 
-Bir sorunla ilgili yardım almak için BT yöneticinize veri günlükleri göndermek istiyorsanız, günlükleri mobil cihazınız yerine bir bilgisayar ve bir USB kablosu kullanarak gönderebilirsiniz. Şöyle yapılır:
+BT yöneticinize veri günlükleri göndermek istiyorsanız, günlükleri mobil cihazınız yerine bir bilgisayar ve bir USB kablosu kullanarak gönderebilirsiniz.
+
+ Başlamadan önce BT yöneticinizin, çoğunlukla [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) veya Şirket Portalı uygulamanızda listelenen e-posta adresini bildiğinizden emin olun.
 
 1.  Hata ekranında **Bilgi Gönder**’e dokunun. Günlükleri göndermek için hangi yöntemi kullanmak istediğinizi soran bir ileti gördüğünüzde, dosyaları cihazınıza kaydedecek seçeneği işaretleyin.
 
-2.  Başlamadan önce BT yöneticinizin, çoğunlukla [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) veya Şirket Portalı uygulamanızda listelenen e-posta adresini bildiğinizden emin olun.
-
 2.  Android cihazınızı bir bilgisayara bağlamak için USB kablosu kullanın.
 
-3.  Bilgisayarda, telefonunuzun adına sahip bir dizini arayın. Söz konusu dizinde, &lt;Android Cihazı&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\ yolunu bulun\.
+3.  Bilgisayarda, cihazınızın adına sahip bir dizini arayın. Söz konusu dizinde, &lt;Android Cihazı&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\ yolunu bulun.
 
-4.  Dosyaların tümünü bir e-postaya ekleyin ve bunları BT yöneticinize gönderin.
+4.  Dosyaları bir e-postaya ekleyin ve bunları BT yöneticinize gönderin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

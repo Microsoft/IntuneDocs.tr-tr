@@ -4,7 +4,7 @@ description: "Kullanıcıların Wi-Fi ağlarınıza bağlanmasına yardımcı ol
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +29,7 @@ Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcıla
 
 1.   **Contoso Wi-Fi** kablosuz ağına bağlanmak için gerekli ayarları içeren bir Wi-Fi profili oluşturun.
 
-2. Profil, iOS cihazları olan kullanıcı grubuna dağıtın.
+2.   Profil, iOS cihazları olan kullanıcı grubuna dağıtın.
 
 3.   Kullanıcılar yeni **Contoso Wi-Fi** ağını kablosuz ağ listesinde bulur ve bu ağa kolayca bağlanabilir.
 
@@ -39,6 +39,8 @@ Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcıla
 Wi-Fi profillerini aşağıdaki platformlara dağıtabilirsiniz:
 
 -   Android 4.0 ve üzeri
+
+-   Android for Work   
 
 -   iOS 8.0 ve üzeri
 
@@ -52,10 +54,13 @@ Windows 8.1 veya Windows 10 masaüstü veya mobil çalıştıran cihazlar için 
 
     -   Wi-Fi Profili (Android 4 ve üzeri)
 
+    -   Wi-Fi Profili (Android for Work)
+
     -   Wi-Fi Profili (iOS 8.0 ve üzeri)
 
     -   Wi-Fi Profili (Mac OS X 10.9 ve üzeri)
-
+    
+    
     Bu ilke türü için önerilen ayar yok. Özel bir ilke oluşturmanız gerekir.
 
 3.  Profil için adı ve açıklamayı belirtin.
@@ -173,6 +178,6 @@ Bu tablolar Android, iOS ve Mac OS X Wi-Fi profilleri için bulunan güvenlik ay
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

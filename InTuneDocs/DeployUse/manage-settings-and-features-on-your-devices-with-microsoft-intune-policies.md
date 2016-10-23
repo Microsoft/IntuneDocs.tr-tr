@@ -4,7 +4,7 @@ description: "Yönettiğiniz kayıtlı cihazlarda ayarları ve özellikleri dene
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -61,6 +61,7 @@ Intune ilkelerinin tam listesi için bkz. [Microsoft Intune ilke başvurusu](mic
 
     - [iOS cihazları için ayarlar](ios-policy-settings-in-microsoft-intune.md)
     - [Android cihazları için ayarlar](android-policy-settings-in-microsoft-intune.md)
+    - [Android for Work cihazlar için ayarlar](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Windows 8 ve Windows 8.1 cihazları için ayarlar](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Windows Phone 8.1 cihazları için ayarlar](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Windows 10 masaüstü bilgisayar ve mobil cihazları için ayarlar](windows-10-policy-settings-in-microsoft-intune.md)
@@ -115,7 +116,6 @@ Bir ilke veya uygulama dağıtıldığında, Intune tarafından cihaza hemen Int
 - iOS ve Mac OS X: 6 saatte bir.
 - Android: 8 saatte bir.
 - Windows Phone: 8 saatte bir.
-- Kayıtlı Windows RT cihazları: 24 saatte bir.
 - Cihaz olarak kaydedilen Windows 8.1 ve Windows 10 bilgisayarları: 8 saatte bir.
 
 Cihaz daha yeni kaydedilmişse, giriş sıklığı aşağıda gösterildiği gibi daha fazla olacaktır:
@@ -212,6 +212,6 @@ Bkz. [Microsoft Intune’da ilke sorunlarını giderme](/intune/troubleshoot/tro
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

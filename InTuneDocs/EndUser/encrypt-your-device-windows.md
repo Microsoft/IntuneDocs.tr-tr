@@ -13,8 +13,8 @@ ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: f42ef4e3f5e4592ed6f3d5ec3a3c75d1599022f9
+ms.sourcegitcommit: 51e58204c86735b40b49119103d8edff998d5b1e
+ms.openlocfilehash: 1f8f26bd7acb6959e9b02ab5699145f9b747041c
 
 
 ---
@@ -22,20 +22,18 @@ ms.openlocfilehash: f42ef4e3f5e4592ed6f3d5ec3a3c75d1599022f9
 
 # Windows cihazınızı şifreleme
 
-Şirket veya okul verilerinizi korumak için BT yöneticinizin Windows cihazınızı şifrelemenizi gerektirebilir. Windows Phone cihazınız varsa ve kaydettiyseniz, şifreleme gerekiyorsa cihazınız otomatik olarak şifrelenir.
+Şirket veya okul verilerini korumak için BT yöneticiniz Windows cihazınızı şifrelemenizi gerekli hale getirebilir. Windows Phone cihazınız varsa ve kaydettiyseniz, şifreleme gerekiyorsa cihazınız otomatik olarak şifrelenir.
 
-Bir masaüstü cihazınız varsa, cihazı şifrelemek için aşağıdaki yönergeleri izleyin.
+Bir masaüstü cihazınız varsa, cihazın nasıl şifreleneceği aşağıdaki yönergelerde açıklanır.
 
 1.  **BitLocker'ı Yönet** uygulamasını arayın ve ardından başlatın.
 
-2.  **BitLocker'ı Aç**'a tıklayın ve ardından sürücülerinizin her birini şifrelemek için gösterilen yönergeleri izleyin.
+2.  **BitLocker'ı Aç**'ı seçin ve ardından sürücülerinizin her birini şifrelemeye yönelik yönergeleri izleyin.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

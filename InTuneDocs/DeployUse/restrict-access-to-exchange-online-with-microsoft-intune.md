@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -64,7 +64,7 @@ Aşağıdaki diyagramda, Exchange Online için koşullu erişim ilkeleri tarafı
 ## Mobil cihaz desteği
 **Outlook**’tan ve **modern kimlik doğrulamasının kullanıldığı diğer uygulamalardan** Exchange Online e-postasına erişimi kısıtlayabilirsiniz:-
 
-- Android 4.0 ve üzeri, Samsung KNOX Standard 4.0 ve üzeri
+- Android 4.0 ve üzeri, Samsung Knox Standard 4.0 ve üzeri ve Android for Work
 - iOS 8.0 ve üzeri
 - Windows Phone 8.1 ve üzeri
 
@@ -225,6 +225,9 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
 5.  **Exchange ActiveSync uygulamaları**’nın altında, uyumsuz cihazların Exchange Online’a erişmesini engellemeyi seçebilirsiniz. Cihaz desteklenen bir platformda çalıştırılmadığında e-posta erişimine izin vermeyi veya bu erişimi engellemeyi de seçebilirsiniz. Desteklenen platformlar Android, iOS, Windows ve Windows Phone’dur.
 
+ Exchange Active Sync uygulamaları **Android for Work** cihazlar:
+ -  Android for Work cihazlar için yalnızca **iş profilindeki** **Gmail** ve **Nine Work** uygulamaları desteklenir. Android for Work cihazlarda koşullu erişimin çalışması için Gmail veya Nine Work uygulamasına yönelik bir e-posta profili dağıtmalı ve bunu ayrıca **zorunlu** bir yükleme olarak dağıtmanız gerekir. 
+
 6.   **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Active Directory güvenliği kullanıcı gruplarını seçin. Tüm kullanıcıları veya seçili bir kullanıcı grupları listesini hedeflemeyi seçebilirsiniz.
 ![Hedeflenen ve Muaf Tutulan grup seçeneklerinin gösterildiği Exchange Online koşullu erişim ilkesi sayfasının ekran görüntüsü](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +266,6 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

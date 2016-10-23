@@ -4,7 +4,7 @@ description: "VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağ
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,22 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
-ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
 
 
 ---
 
 # Microsoft Intune’da VPN bağlantıları
- Sanal özel ağları (VPN’ler) kullanarak kullanıcılarınıza şirket ağınız için güvenli uzaktan erişim sağlayabilirsiniz. Uzak kullanıcılar, cihazları ağa fiziksel olarak bağlıymış gibi çalışabilir. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için Microsoft Intune’da *VPN profillerini* kullanın. Bu ayarları dağıtarak, şirket ağındaki kaynaklara bağlanmak için gereken son kullanıcı çabasını en aza indirirsiniz.
+
+Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir *VPN bağlantısı profili* kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için Microsoft Intune’da *VPN profilleri* kullanarak ağa kolay ve güvenli bir şekilde bağlanabilmelerini sağlayın. 
 
 Örneğin, tüm iOS cihazlara kurumsal ağ üzerindeki bir dosya paylaşımına bağlanmak için gereken ayarları sağlamak istediğinizi varsayın. Kurumsal ağa bağlanmak için gereken ayarları içeren bir VPN profili oluşturur ve ardından bu profili iOS cihaz kullanan tüm kullanıcılara dağıtırsınız. Kullanıcılar VPN bağlantısını kullanılabilir ağlar listesinde görür ve ağa en az çaba ile bağlanabilir.
 
 Aşağıdaki cihaz türlerini VPN profillerini kullanarak yapılandırabilirsiniz:
 
 * Android 4 ve üzeri çalıştıran cihazlar
+* Android for Work cihazlar
 * iOS 8.0 ve üzerini çalıştıran cihazlar
 * Mac OS X 10.9 ve üzerini çalıştıran cihazlar
 * Windows 8.1 ve üzeri çalıştıran kayıtlı cihazlar
@@ -70,9 +72,7 @@ VPN profilleri, farklı üreticilerden farklı bağlantı türleri ve farklı pr
 
 ### Sertifikalar
 
-VPN profilini oluştururken, Intune’da önceden oluşturduğunuz bir SCEP veya PFX sertifika profilini seçersiniz.
-
-Bu kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için oluşturduğunuz bir güvenilir sertifika profiline (veya kök sertifikaya) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, VPN bağlantısının kimliğini doğrulayan bilgisayara dağıtılır. Bu, genellikle VPN sunucusudur.
+VPN profilini oluştururken, Intune’da önceden oluşturduğunuz bir SCEP veya PFX sertifika profilini seçersiniz. Bu kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için oluşturduğunuz bir güvenilir sertifika profiline (veya *kök sertifikaya*) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, VPN bağlantısının kimliğini doğrulayan bilgisayara dağıtılır. Bu, genellikle VPN sunucusudur.
 
 Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md).
 
@@ -85,6 +85,7 @@ Kullanıcı, kullanıcı adı ve parola girerek VPN sunucusunda kimliğini doğr
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **İlke** > **İlke Ekle**’yi seçin.
 2. İlgili cihaz türünü genişleterek yeni ilke için bir şablon seçin ve ilgili cihaz için VPN profilini belirleyin:
     * **VPN Profili (Android 4 ve üzeri)**
+    * **VPN Profili (Android for Work)**
     * **VPN Profili (iOS 8.0 ve üzeri)**
     * **VPN Profili (Mac OS X 10.9 ve üzeri)**
     * **VPN Profili (Windows 8.1 ve üzeri)**
@@ -92,6 +93,9 @@ Kullanıcı, kullanıcı adı ve parola girerek VPN sunucusunda kimliğini doğr
     * **VPN Profili (Windows 10 Masaüstü ve Mobile ile üzeri)**
 
  Yalnızca özel bir VPN profili ilkesi oluşturabilir ve dağıtabilirsiniz. Önerilen ayarlar kullanılamaz.
+
+> [!Note]
+> Android for Work cihazlara yönelik bir VPN profili, VPN bağlantısını yalnızca cihazın iş profilinde yüklü uygulamalar için etkinleştirir.
 
 3. VPN profili ayarlarını yapılandırmanıza yardımcı olması için aşağıdaki tabloyu kullanın:
 
@@ -192,6 +196,6 @@ Başarılı bir şekilde dağıtıldıktan sonra, kullanıcılar VPN bağlantıl
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

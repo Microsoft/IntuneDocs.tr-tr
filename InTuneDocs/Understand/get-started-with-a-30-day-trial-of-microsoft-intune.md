@@ -13,8 +13,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 
 ---
@@ -37,12 +37,12 @@ Intune ile çalışmaya başlamadan önce şunlara ihtiyacınız vardır:
 
 -   Mevcut bir Microsoft Online Services hesabınız varsa, bu hesaba ait yönetici kimlik bilgilerine ihtiyacınız vardır. Bu tür bir hesabınız yoksa veya bu Intune kiracısını yalnızca değerlendirme amacıyla kullanmak istiyorsanız yönetici kimlik bilgilerine ihtiyacınız yoktur.
 
--   Intune değerlendirmesiyle iOS veya Windows Phone cihazlarını yönetecekseniz sertifikalara (veya anahtarlara) ve bu sertifikaları almak için gereken hesaplara ihtiyacınız vardır (aşağıdaki tabloya bakın). Android cihazlar için ek sertifika gereksinimi yoktur.
+-   Intune değerlendirmesiyle iOS veya Windows Phone 8.1 cihazlarını yönetecekseniz sertifikalara (veya anahtarlara) ve bu sertifikaları almak için gereken hesaplara ihtiyacınız vardır (aşağıdaki tabloya bakın). Android cihazlar için ek sertifika gereksinimi yoktur.
 
     |Platform|Sertifika Gereksinimleri|Daha fazla bilgi|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 ve Windows Phone 8 |Şirket Portalı uygulamasını Mağaza’dan yükleyen Windows Phone 8.1 kullanıcıları için sertifika gerekmez. Windows Phone 8.0 için veya Intune kullanarak Şirket Portalı uygulamasını Windows Phone 8.1 cihazlara dağıtmak için bir Symantec sertifikası gerekir.|Bu kılavuz, kullanıcılarınızın Şirket Portalı uygulamasını bir Windows Phone 8.1 veya üzeri bir cihazda Mağaza’dan aldığını varsayar. Windows Phone 8.0 desteği hakkında daha fazla bilgi için, bkz. [Microsoft Intune ile Windows Phone yönetimini ayarlama](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).|
-    |Windows 10, Windows RT 8.1, Windows RT veya Windows 8.1 cihazları|Windows RT ve Windows cihazlarını kaydetmek için sertifika gereksinimi yoktur.|[Microsoft Intune ile Windows bilgisayarı istemcisini yükleme](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |Windows Phone 8.1 |Şirket Portalı uygulamasını Mağaza’dan yükleyen Windows Phone 8.1 kullanıcıları için sertifika gerekmez. |Bu kılavuz, kullanıcılarınızın Şirket Portalı uygulamasını bir Windows Phone 8.1 veya üzeri bir cihazda Mağaza’dan aldığını varsayar. |
+    |Windows 10, Windows RT 8.1 veya Windows 8.1 cihazları|Windows RT ve Windows cihazlarını kaydetmek için sertifika gereksinimi yoktur.|[Microsoft Intune ile Windows bilgisayarı istemcisini yükleme](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 veya üzeri|Bir Apple Anında İletilen Bildirim Servisi sertifikası alın.|Burada açıklandığı gibi, Apple'dan bir Apple Anında İletilen Bildirim Servisi sertifikası isteyin: [Microsoft Intune ile iOS ve Mac yönetimi ayarlama](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Intune 30 günlük değerlendirmesini tamamlamak için adımlar
@@ -66,6 +66,6 @@ Intune ile çalışmaya başlamadan önce şunlara ihtiyacınız vardır:
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Mevcut şirket e-posta hesabı bulundu
-Zaten bir şirket e-posta hesabınız var. Şirket e-postasına bağlanmaya devam edebilmek için, aşağıdaki adımları izleyerek BT yöneticinizin hesabınızı düzgün bir şekilde ayarlaması ve yönetmesini sağlamalısınız:
+Zaten bir şirket e-posta hesabınız var. Şirket e-postasına bağlanmaya devam edebilmek için BT yöneticinizin hesabınızı düzgün bir şekilde ayarlaması ve yönetmesini sağlamak üzere aşağıdaki adımları uygulayın:
 
 1.  Cihazınızdaki **Ayarlar** altında, daha önce şirket e-postanıza ayarlamış olduğunuz bağlantıyı kaldırın.
 
@@ -35,6 +35,6 @@ Yeni e-posta ayarları bir süre sonra gösterilmezse, BT yöneticinize başvuru
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

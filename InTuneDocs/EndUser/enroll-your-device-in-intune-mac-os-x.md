@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 4a682db8e949fa087fdffe945a758554c1bfb164
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
 
 # Mac OS X cihazınızı Intune’a kaydetme
 
-Mac OS X cihazınızın Intune’a kaydedilmesi, şirketin ağına, iş e-postanıza ve çalışma dosyalarınıza erişmenize olanak tanır ve şirket uygulamalarını alabilmenizi sağlar. Cihazınızı kaydettiğinizde neler olduğu hakkında daha fazla bilgi için, bkz. [Şirket Portalı uygulamasını yüklediğinizde ve cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+Mac OS X cihazınızı Intune’a kaydettiğinizde, şirket ağına, iş e-postanıza ve iş dosyalarınıza erişebilirsiniz. Ayrıca, şirket uygulamalarını alabilirsiniz. Cihazınızı kaydettiğinizde neler olduğu hakkında daha fazla bilgi için, bkz. [Şirket Portalı uygulamasını yüklediğinizde ve cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
 iOS cihazı kaydetmeye çalışıyorsanız, bkz. [iOS cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-ios.md).
 
@@ -44,7 +44,7 @@ Mac OS X cihazınızı kaydetmek için
 
     ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
-    Kaydetmeyi bitirdikten sonra profiliniz doğrulandığını gösteren bir Yönetim Profili sayfasını göreceksiniz.
+    Kaydetmeyi bitirdikten sonra bir **Yönetim Profili** sayfası profilinizin doğrulandığını gösterir.
 
     ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
@@ -52,7 +52,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

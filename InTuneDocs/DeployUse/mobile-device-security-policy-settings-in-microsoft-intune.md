@@ -4,7 +4,7 @@ description: "Kuruluşunuzdaki yönetilen cihazlara dağıtabileceğiniz çeşit
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +40,7 @@ Aşağıdaki cihaz türleri için mobil cihaz güvenlik ilkeleri oluşturabilir 
 
 > [!NOTE]
 > Bazı ayarlar bazı cihazlar için geçerli değildir. Yapılandırabileceğiniz ayarların tam listesi için aşağıdaki tabloya bakın.
+> Microsoft Intune, Ekim 2016'dan itibaren Windows 8 Şirket Portalı uygulamaları için desteği kaldıracaktır. Microsoft Intune, ayrıca Windows Phone 8 ve WinRT platformları için desteği kaldıracaktır. Bu nedenle bundan sonra herhangi bir Windows Phone 8 veya WinRT cihazını kaydetmeniz veya güncelleştirmeniz mümkün olmayacaktır. Daha önce kaydedilen Windows Phone 8, WinRT ve Windows 8 cihazlarını yönetmeye devam edebilirsiniz. Windows 8 ve Windows Phone 8 cihazlarını Windows 8.1’e ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara bir kesinti olmadan uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
 
 ## Güvenlik ayarları
 
@@ -212,6 +213,6 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

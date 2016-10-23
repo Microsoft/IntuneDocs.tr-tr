@@ -4,7 +4,7 @@ description: "Şirket İçi Exchange’de şirket e-postasını korumak ve eriş
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
-ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +64,19 @@ Aşağıdaki çizelgede, Şirket İçi Exchange’e yönelik koşullu erişim il
 -   Cihaz uyumlu değilse, kullanıcıyı sorunla ve sorunun nasıl çözüleceğiyle ilgili bilgileri bulabileceği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Şirket Portalı web sitesine veya Şirket Portalı uygulamasına yönlendiren bir ileti görüntülenir.
 
 ## Mobil cihaz desteği
--   Windows Phone 8 ve üzeri
+-   Windows Phone 8.1 ve üzeri
 
 -   iOS’ta yerel e-posta uygulaması.
 
--   Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri
+-   Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri.
+- EAS posta istemcileri **Android for Work cihazlar:** Android for Work cihazlarda yalnızca **iş profilindeki** **Gmail** ve **Nine Work** uygulamaları desteklenir. Android for Work cihazlarda koşullu erişimin çalışması için Gmail veya Nine Work uygulamasına yönelik bir e-posta profili dağıtmalı ve bu uygulamaları ayrıca zorunlu bir yükleme olarak dağıtmanız gerekir. 
+
 > [!NOTE]
 > Android ve iOS için Microsoft Outlook uygulaması desteklenmez.
 
 ## Bilgisayarlar için destek
 
-Windows 8 ve üstündeki **Mail** uygulaması ([!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’a kaydedildiğinde)
+Windows 8.1 ve üstündeki **Posta** uygulaması ([!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedildiğinde)
 
 ##  Koşullu erişim ilkesini yapılandırma
 
@@ -123,6 +125,6 @@ Windows 8 ve üstündeki **Mail** uygulaması ([!INCLUDE[wit_nextref](../include
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

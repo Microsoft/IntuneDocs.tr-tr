@@ -21,7 +21,7 @@ Otomatik kayıt, kullanıcıların şirkete ait ya da kişisel Windows 10 bilgis
 
 5. Intune için URL'leri belirtin:
 
-  - **MDM Kayıt URL’si** – MDM Kayıt URL’si olarak `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` adresini kullanın.
+  - **MDM Kayıt URL’si** – Varsayılan değeri kullanın.
   - **MDM Kullanım Koşulları URL’si** – Varsayılan değeri kullanın. Bu URL, kullanıcılara cihazlarını kaydederken kullanım koşullarını gösterilir.
   - **MDM Uyumluluk URL’si** – Varsayılan değeri kullanın. Bir cihazın uyumsuz olduğunu bulunursa, bu URL ile bir **Erişim reddedildi** iletisi gösterilir. URL, kullanıcıların cihazlarının ilke ile neden uyumsuz olduğunu ve nasıl yeniden uyumlu hale getirebileceklerini anlamalarına yardımcı olan bir sayfayı işaret eder.
 
@@ -34,6 +34,6 @@ Otomatik kayıt, kullanıcıların şirkete ait ya da kişisel Windows 10 bilgis
 7. **Kaydet**’i seçin.
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

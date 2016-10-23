@@ -4,7 +4,7 @@ description: "Intune sertifika profilinin nasıl oluşturulacağını öğrenin.
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
 
 
 ---
@@ -38,13 +38,22 @@ Bir Basit Sertifika Kayıt Protokolü (SCEP) veya PKCS #12 (.PFX) sertifika prof
 
 ### Güvenilen bir sertifika profili oluşturmak için
 
-1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin.
-2.  Aşağıdaki ilke türlerinden birini ekleyin:
-    - **Android &gt; Güvenilen Sertifika Profili (Android 4 ve üzeri)**
-    - **iOS &gt; Güvenilen Sertifika Profili (iOS 8.0 ve üzeri)**
-    - **Mac OS X &gt; Güvenilen Sertifika Profili (Mac OS X 10.9 ve üzeri)**
-    - **Windows &gt; Güvenilen Sertifika Profili (Windows 8.1 ve üzeri)**
-    - **Windows &gt; Güvenilen Sertifika Profili (Windows Phone 8.1 ve üzeri)**
+1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin ve bir cihaz platformu seçin. Bu cihazlar için bir güvenilen sertifika profili oluşturabilirsiniz:
+
+-  Android 4 ve üzeri
+
+-  Android for work
+
+-  iOS 7.1 ve üzeri
+
+-  Mac OS X 10.9 ve üzeri
+
+-  Windows 8.1 ve üzeri
+
+-  Windows Phone 8.1 ve üzeri
+
+
+2.  Bir **Güvenilen Sertifika Profili** ekleyin.
 
     Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -60,14 +69,22 @@ Güvenilen CA sertifika profilini oluşturduktan sonra, kullanmak istediğiniz h
 
 ### Bir SCEP sertifika profili oluşturmak için
 
-1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin.
-2.  Aşağıdaki ilke türlerinden birini ekleyin:
-    - **Android &gt; SCEP Sertifika Profili (Android 4 ve üzeri)**
-    - **iOS &gt; SCEP Sertifika Profili (iOS 8.0 ve üzeri)**
-    - **Mac OS X &gt; SCEP Sertifika Profili (Mac OS X 10.9 ve üzeri)**
-    - **Windows &gt; SCEP Sertifika Profili (Windows 8.1 ve üzeri)**
-    - **Windows &gt; SCEP Sertifika Profili (Windows Phone 8.1 ve üzeri)**
+1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin ve bir cihaz platformu seçin.  Bu cihazlar için bir SCEP sertifika profili oluşturabilirsiniz:
 
+-  Android 4 ve üzeri
+
+-  Android for work
+
+-  iOS 7.1 ve üzeri
+
+-  Mac OS X 10.9 ve üzeri
+
+-  Windows 8.1 ve üzeri
+
+-  Windows Phone 8.1 ve üzeri
+
+2.  Bir **SCEP Sertifika Profili** ilkesi ekleme
+    
     Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  SCEP sertifika profili ayarlarını yapılandırmak için, profil yapılandırma sayfasındaki yönergeleri izleyin.
@@ -87,13 +104,16 @@ Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabil
 
 ### Bir .PFX sertifika profili oluşturmak için
 
-1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin.
-2.  Aşağıdaki ilke türlerinden birini ekleyin:
-  - **Android &gt; .PFX Sertifika Profili (Android 4 ve üzeri)**
-  - **Windows &gt; PKCS #12 (.PFX) Sertifika Profili (Windows 10 ve üzeri)**
-  - **Windows &gt; PKCS #12 (.PFX) Sertifika Profili (Windows Phone 10 ve üzeri)**
-  - **iOS > PKCS #12 (.PFX) Sertifika Profili (iOS 8.0 ve üzeri)**    
-    Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin ve bir cihaz platformu seçin. . PFX sertifikaları aşağıdakilerde desteklenir:
+  - Android 4 ve üzeri
+  - Android for Work
+  - Windows 10 ve üzeri
+  - Windows Phone 10 ve üzeri
+  - iOS 8.0 ve üzeri)    
+
+    
+2.  Bir **.PFX Sertifika Profili** ilkesi ekleyin. 
+      Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  İlke formunda istenen bilgileri girin.
 4.  **İlkeyi Kaydet**’i seçin.
 
@@ -130,6 +150,6 @@ Bundan sonra sertifikaları e-posta, Wi-Fi ve VPN profillerinin güvenliğini sa
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

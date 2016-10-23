@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
-ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
 
 
 ---
@@ -22,11 +22,11 @@ ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 # Android cihazınızı Intune’a kaydetme
 
-Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için Android cihazlarınızı kaydedebilirsiniz. Cihazlarınızı kaydetme, BT departmanınızın bu iş veya okul kaynaklarını yönetmenize ve bunları güvenli halde tutmanıza olanak tanırken, işlerinizi için tamamlamak için, tercih ettiğiniz cihazı kullanma özgürlüğünü sağlar. Kayıt hakkında daha fazla bilgi edinmek için, bkz. [Şirket Portalı uygulamasını yüklediğimde ve cihazımı kaydettiğimde ne olur?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
+Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için Android cihazlarınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, BT departmanınız bu iş veya okul kaynaklarını yönetebilir, bunların güvenli kalmasını sağlayabilir ve size işlerinizi tamamlamak için tercih ettiğiniz cihazı kullanma özgürlüğünü tanıyabilir. Kayıt hakkında daha fazla bilgi edinmek için, bkz. [Şirket Portalı uygulamasını yüklediğimde ve cihazımı kaydettiğimde ne olur?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
 
-Bu kayıt yönergeleri, Samsung Knox Android cihazlar ve "yerel" (Samsung Knox harici) Android cihazları içindir. Samsung Knox cihazınızın olup olmadığını belirlemek için **Ayarlar** &gt; **Cihaz hakkında** seçeneğine gidin. Bu listede "KNOX sürümü" ifadesini görmüyorsanız yerel bir Android cihazına sahipsinizdir.
+Bu kayıt yönergeleri, Samsung Knox Android cihazlar ve "yerel" (Samsung Knox harici) Android cihazları içindir. Samsung Knox cihazınızın olup olmadığını denetlemek için **Ayarlar** &gt; **Cihaz hakkında** seçeneğine gidin. Bu listede "KNOX sürümü" ifadesini görmüyorsanız yerel bir Android cihazına sahipsinizdir.
 
-Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi şekilde açıklayan bir kategoriyi seçmeniz istenebilir. BT yöneticiniz hangi uygulamalara erişiminiz olduğunu belirlemeye yardımcı olmak üzere bu kategoriyi kullanır.
+Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi şekilde açıklayan bir kategoriyi seçmeniz istenebilir. BT yöneticiniz bu kategoriyi erişiminiz olan uygulamaları denetlemek için kullanır.
 
 Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yöneticinize kayıt hataları gönderebilirsiniz](send-enrollment-errors-to-your-it-administrator-android.md).
 
@@ -44,7 +44,7 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     ![android-şirket-portalı-oturum-açma](./media/and-enroll-3-accept-terms.png)
 
-5.  İş veya okul hesabınızla parolanızı kullanarak Şirket Portalı uygulamasına oturum açın ve **Oturum aç**’a dokunun.
+5.  İş veya okul hesabınızla parolanızı kullanarak Şirket Portalı uygulamasına oturum açıp **Oturum aç**’a dokunun.
 
     ![android-şirket-portalı-oturum-açma](./media/and-enroll-2-cp-sign-in.png)
 
@@ -56,7 +56,7 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     ![Cihazınız neden kaydetmelisiniz ekranı](./media/and-enroll-4b-why-enroll.png)
 
-8.  BT yöneticinizin cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirin ve **DEVAM**’a dokunun.
+8.  BT yöneticinizin cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirip **DEVAM**’a dokunun.
 
     ![Gizlilik ayarları](./media/and-enroll-4c-we-care-privacy.png)
 
@@ -69,19 +69,19 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
     BT yöneticiniz belirli ilkeleri ayarladıysa, aşağıdaki iletileri görebilirsiniz:
     -   **Şirket Portalı’nın telefon çağrıları yapmasına ve çağrıları yönetmesine izin verilsin mi?**
 
-    ![android-şirket-portalı-oturum-açma](./media/and-enroll-3a-allow-phone-access.png)
+        ![android-şirket-portalı-oturum-açma](./media/and-enroll-3a-allow-phone-access.png)
 
-    Bu iletiyi görürseniz, **İZİN VER**’e dokunun. **Microsoft hiçbir zaman telefon çağrısı yapmadığından veya telefon çağrılarınızı yönetmediğinden** İZİN VER’e dokunmak güvenlidir! İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişime izin verdiğinizde, tüm yaptığınız cihazınızın IMEI numarasını Intune’a göndermesine izin vermektir. IMEI, seri numarası gibi bir mobil cihazı benzersiz şekilde tanımlayan bir numaradır.
+    Bu iletiyi görürseniz, **İZİN VER**’e dokunun. İZİN VER’e dokunmak güvenlidir, çünkü **Microsoft hiçbir zaman telefon çağrısı yapmaz veya telefon çağrılarınızı yönetmez**! İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişime izin verdiğinizde, tüm yaptığınız cihazınızın uluslararası mobil cihaz kodunu (IMEI) Intune'a göndermesine izin vermektir. IMEI, seri numarası gibi, bir mobil cihazı benzersiz şekilde tanımlayan bir numaradır.
 
-    Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** onay kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz.  Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
+    Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
 
     -   **Şirket Portalı’nın, kişilerinize erişmesine izin verilsin mi?**
 
-    ![android-şirket-portalı-oturum-açma](./media/and-enroll-3b-allow-contacts-access.png)
+        ![android-şirket-portalı-oturum-açma](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Bu iletiyi görürseniz, **İZİN VER**’e dokunun. **Microsoft hiçbir zaman kişilerinize erişmediğinden** İZİN VER’e dokunmak güvenlidir! İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişim izni verdiğinizde Şirket Portalı uygulamasının yalnızca iş hesabınızı oluşturmasına, kullanmasına ve yönetmesine izin verilir.
+    Bu iletiyi görürseniz, **İZİN VER**’e dokunun. İZİN VER’e dokunmak güvenlidir, çünkü **Microsoft kişilerinize hiçbir zaman erişmez!** İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişim izni verdiğinizde Şirket Portalı uygulamasının yalnızca iş hesabınızı oluşturmasına, kullanmasına ve yönetmesine izin verilir.
 
-    Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** onay kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz.  Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
+    Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
 
 11.  **Cihaz yöneticisini etkinleştir** ekranında **Etkinleştir**’e dokunun.
 
@@ -107,15 +107,12 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     ![Şirket erişimi kurulumu tamamlandı ekranı](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Şirket uygulamalarını yüklemeyi denemeden önce **Ayarlar** &gt; **Güvenlik** öğesine gidin ve **Bilinmeyen kaynaklar** seçeneğini açın. Uygulamaları yüklemeyi denemeden önce bu seçeneği açmazsanız "Yükleme engellendi. Güvenlik nedeniyle cihazınız bilinmeyen kaynaklardan gelen uygulamaların yüklenmesini engelleyecek şekilde ayarlanmış." iletisini görürsünüz. Hata iletişim kutusunda **Ayarlar** öğesine dokunarak **Bilinmeyen kaynaklar** seçeneğine gidin.
+Şirket uygulamalarını yüklemeyi denemeden önce **Ayarlar** &gt; **Güvenlik**’e gidin ve **Bilinmeyen kaynaklar** seçeneğini açın. Uygulamaları yüklemeyi denemeden önce bu seçeneği açmazsanız "Yükleme engellendi. Güvenlik nedeniyle cihazınız bilinmeyen kaynaklardan gelen uygulamaların yüklenmesini engelleyecek şekilde ayarlanmış." iletisini görürsünüz. Hata iletişim kutusunda **Ayarlar** öğesine dokunarak **Bilinmeyen kaynaklar** seçeneğine gidin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
 
 
 
-
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

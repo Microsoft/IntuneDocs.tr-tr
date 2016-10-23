@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: e79337cb47a95b2718093b871b6af7f90d2d430d
+ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
+ms.openlocfilehash: da1c2da0970d38b410ba67a03f1c302c2b352f27
 
 
 ---
@@ -23,14 +23,12 @@ ms.openlocfilehash: e79337cb47a95b2718093b871b6af7f90d2d430d
 
 # iOS cihazı, gerekli en düşük işletim sistemi sürümüne sahip değil
 
-iOS cihazınız, BT bölümünüzün gerektirdiği en düşük işletim sistemi sürümünü karşılamıyor.  Cihazınızı güncelleştirmeden önce **Ayarlar** &gt; **Hakkında**’ya dokunarak geçerli işletim sisteminizi denetleyin. Cihazınızı son sürüme yükseltmek için **Ayarlar** &gt; **Genel** &gt; **Yazılım Güncelleştirme**’ye dokunun.
+iOS cihazınız, BT departmanınızın gerektirdiği en düşük işletim sistemi sürümünü karşılamıyor. Cihazınızı güncelleştirmeden önce, **Ayarlar** &gt; **Hakkında**’yı seçerek geçerli işletim sistemi sürümünü denetleyin. Cihazınızı son sürüme yükseltmek için **Ayarlar** &gt; **Genel** &gt; **Yazılım Güncelleştirme**’yi seçin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

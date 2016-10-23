@@ -1,6 +1,6 @@
 ---
 title: "Cihazınızı Şirket Portalı’ndan kaldırma | Microsoft Intune"
-description: 
+description: "Bir cihazı Şirket Portalı’ndan kaldırma"
 keywords: 
 author: Staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
+ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
+ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
 
 
 ---
@@ -23,28 +23,26 @@ ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
 
 # Cihazınızı Şirket Portalı’ndan kaldırma
 
-Cihazınızın artık Intune ve BT yöneticiniz tarafından yönetilmesini istemediğinize karar verirseniz, [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanarak onu Şirket Portalı’ndan kaldırabilirsiniz. Şirket Portalı web sitesi, Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek ve Şirket Portalı uygulamasını kullanırken gerçekleştirebileceğiniz görevlerin çoğunu yapmak için kullanabileceğiniz bir web sayfasıdır.
+Cihazınızın artık Intune ve BT yöneticiniz tarafından yönetilmesini istemediğinize karar verirseniz, [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanarak Şirket Portalı’ndan kaldırabilirsiniz. Şirket Portalı web sitesi, Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek için kullanabileceğiniz bir web sayfasıdır. Şirket Portalı Web sitesinde, Şirket Portalı uygulamanızda kullanılabilen görevlerin çoğunu gerçekleştirebilirsiniz.
 
 Cihazınızı kaldırırsanız, Şirket Portalı’nda daha fazla listelenmez ve ayrıca, şirket ya da okul verilerine, uygulamalarına ve e-postalarına erişimi kaybedebilirsiniz.
 
 Cihazınızı kaldırmak için:
 
-1.  [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) açın ve sıfırlamak istediğiniz cihaza dokunun.
+1.  [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) açın ve kaldırmak istediğiniz cihazın adına dokunun.
 
 2.  **Kaldır**’a dokunun.
 
-    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![Şirket Portalı web sitesinde cihaz kaldırma seçeneği](./media/iwp-screen-with-all-options.png)
 
-3. Cihazınızı kaldırırsanız ne olacağını belirten uyarı iletisini okuyun, sonra cihazınızı Şirket Portalı’ndan kaldırmak için **Kaldır**’a dokunun.
+3. Uyarı iletisini okuyun, sonra cihazınızı Şirket Portalı’ndan kaldırmak için **Kaldır**’a dokunun.
 
 Cihazınız artık kaldırılmıştır.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. BT yöneticinizin iletişim bilgilerini bulmak için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

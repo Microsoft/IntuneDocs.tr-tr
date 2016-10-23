@@ -1,6 +1,6 @@
 ---
 title: "Kaybolan veya çalınan Windows cihazınızı sıfırlama (silme) | Microsoft Intune"
-description: 
+description: "Kaybolan veya çalınan Windows cihazını sıfırlama"
 keywords: 
 author: Staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
+ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
+ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
 
 # Kaybolan veya çalınan cihazınızı sıfırlama (silme)
 
-Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanarak cihazı varsayılan fabrika ayarlarına sıfırlayabilirsiniz.
+Intune’a kaydedilmiş bir cihaz kaybolduysa veya çalındıysa, [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanarak cihazı varsayılan fabrika ayarlarına sıfırlayabilirsiniz.
 
 
 > [!WARNING]
@@ -40,8 +40,6 @@ Kaybolan veya çalınan cihazınızı sıfırlayamıyorsanız, sizin yerinize s�
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

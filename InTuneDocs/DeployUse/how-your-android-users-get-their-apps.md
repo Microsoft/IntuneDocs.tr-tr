@@ -13,15 +13,15 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
-ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
+ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
+ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
 
 
 ---
 
 
 # Android kullanıcılarınız uygulamalarını nasıl alır
-Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın. Yerel Android cihazlarıyla Samsung Knox cihazlarına yönelik bilgiler farklı olabilir.
+Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın. Bilgiler cihaz türüne göre değişebilir (yerel Android cihazları veya Samsung Knox cihazları).
 
 ## Yerel (Samsung Knox olmayan) Android cihazları
 
@@ -39,9 +39,9 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son k
 
 Uygulamalar, aşağıda açıklandığı gibi yönetilebilir veya yönetilmeyebilir. Uygulamaları yönetilen uygulama yapma işlemi, tüm Android cihaz türlerinde aynıdır.
 
-**Yönetilen uygulamalar** - İlkeler aracılığıyla yönetilebilen ve Intune tarafından “sarmalanmış" veya Intune Mobil Uygulama Yönetimi (MAM) Yazılım Geliştirme Seti (SDK) ile oluşturulmuş uygulamalar. Bu uygulamalar Intune tarafından yönetilebilir ve uygulama ilkeleri uygulanabilir.
+**Yönetilen uygulamalar** - İlkeler aracılığıyla yönetilebilen uygulamalardır. Intune tarafından “sarmalanmış" veya Intune Mobil Uygulama Yönetimi (MAM) Yazılım Geliştirme Seti (SDK) ile oluşturulmuş uygulamalardır. Bu uygulamalar Intune tarafından yönetilebilir ve uygulama ilkeleri uygulanabilir.
 
-**Yönetilmeyen uygulamalar** - İlkeler aracılığıyla yönetilebilen ve Intune tarafından sarmalanmamış veya Intune MAM SDK’sini içermeyen uygulamalar. Uygulama ilkeleri bu uygulamalara uygulanamaz.
+**Yönetilmeyen uygulamalar** - İlkeler aracılığıyla yönetilemeyen uygulamalardır. Intune tarafından sarmalanmamış veya Intune MAM SDK’sini içermeyen uygulamalardır. Uygulama ilkeleri bu uygulamalara uygulanamaz.
 
 ### Ayrıca bkz.
 [Microsoft Intune’la uygulamaları ekleme](/intune/deploy-use/add-apps)
@@ -52,6 +52,6 @@ Uygulamalar, aşağıda açıklandığı gibi yönetilebilir veya yönetilmeyebi
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

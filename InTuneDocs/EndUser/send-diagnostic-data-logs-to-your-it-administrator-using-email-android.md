@@ -1,6 +1,6 @@
 ---
 title: "Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme | Microsoft Intune"
-description: 
+description: "Bir Android cihazında e-posta kullanarak veri günlükleri gönderme"
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
+ms.sourcegitcommit: 6be7193a5f04768a59b5c73fb9c2f51241156ada
+ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
 
 # Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme
 
-Android cihazınızda okul veya şirket uygulamalarınızla çalışırken hata alırsanız, BT yöneticinizin hatayı anlamasına ve gidermesine yardımcı olmak için tanılama veri günlüklerini gönderebilirsiniz. BT yöneticinizin sorunu anlamasını kolaylaştıracak şekilde günlüklere tüm ayrıntıların eklenmesi için, Ayrıntılı Günlük özelliğini açın. [ayrıntılı günlük kaydı](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) hakkında daha fazla bilgi edinebilirsiniz.
+Android cihazınızda okul veya şirket uygulamalarınızla çalışırken hata alırsanız, BT yöneticinizin hatayı tanılamasına ve gidermesine yardımcı olmak için tanılama veri günlüklerini gönderebilirsiniz. BT yöneticinizin sorunu anlamasını kolaylaştıracak şekilde günlüklere tüm ayrıntıların eklenmesi için ayrıntılı günlük kaydı özelliğini açın. Ayrıntılı günlük kaydı hakkında daha fazla bilgi için bkz. [BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olmak için ayrıntılı günlük kaydı kullanma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Günlükleri BT yöneticinize e-posta aracılığıyla göndermek için:
+E-posta kullanarak BT yöneticinize günlük göndermek için:
 
 1.  Şirket Portalı uygulamasını açın.
 
@@ -39,6 +39,7 @@ Günlükleri BT yöneticinize e-posta aracılığıyla göndermek için:
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Oct16_HO2-->
 
 

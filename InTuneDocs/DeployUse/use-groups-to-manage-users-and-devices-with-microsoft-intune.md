@@ -4,7 +4,7 @@ description: "Gruplar çalışma alanını kullanarak grupları oluşturun ve y�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 896e8cf77c0898fca7838b24386db745b01f4022
 
 
 ---
@@ -36,11 +36,11 @@ Bu konu, Intune’da grupların nasıl oluşturulacağını açıklar. Ayrıca g
 Enterprise Mobility + Security genelinde bir gruplandırma ve hedefleme deneyimi istediğinizi bize bildirdiniz. İsteğinizi dikkate alıyoruz. Geri bildiriminize dayalı olarak, yakında Intune gruplarını Azure Active Directory tabanlı güvenlik gruplarına dönüştüreceğiz. Bu değişiklik, Intune ile Azure Active Directory (Azure AD) genelinde grup yönetimini birleştirecektir. Yeni deneyim, grupları hizmetler arasında yinelemek zorunda kalmayacağınız anlamına gelir. Ayrıca, Windows PowerShell ve Microsoft Graph kullanma seçenekleri aracılığıyla genişletilebilirlik de sağlayacaktır.
 
 ### Bu şu anda beni nasıl etkiler?
-Bu değişiklik sizi şu anda etkilemeyecektir. Ancak yakında şunlar olacak:
+Zaten Intune müşterisiyseniz, bu değişiklik sizi şu anda etkilemez. Ancak yakında şunlar olacak:
 
--   Eylül 2016’da, aylık hizmet sürümünden sonra sağlanan yeni hesaplar, Intune kullanıcı grupları yerine Azure AD güvenlik gruplarını kullanacaktır.   
--   Ekim 2016’da, aylık hizmet sürümünden sonra sağlanan yeni hesaplar, hem kullanıcı hem de cihaz tabanlı grupları Azure AD portalında yönetecektir. Mevcut müşteriler bundan etkilenmeyecektir.
--   Kasım 2016’da, Intune ürün ekibi mevcut müşterileri yeni Azure AD tabanlı grup yönetimi deneyimine geçirmeye başlayacaktır. Bugün Intune’da mevcut olan tüm kullanıcı ve cihaz grupları Azure AD güvenlik gruplarına geçirilecektir. Geçiş işleminizi, Kasım 2016’da başlamak üzere partiler halinde gerçekleştireceğiz. Günlük çalışmalarınız üzerindeki etkisini en aza indirmeden ve kullanıcılarınızı hiçbir şekilde etkilemeyeceğini düşünene kadar geçiş işlemlerine başlamayacağız. Hesabınızı taşımadan önce bildirimde de bulunacağız.
+-   Yeni hesaplar Intune *kullanıcı* grupları yerine Azure AD güvenlik grupları kullanacaktır.   
+-   Kasım 2016’da, aylık hizmet sürümünden sonra sağlanan yeni hesaplar, hem kullanıcı hem de cihaz tabanlı grupları Azure AD portalında yönetecektir. Mevcut müşteriler bundan etkilenmeyecektir.
+-   Aralık 2016’da, Intune ürün ekibi mevcut müşterileri yeni Azure AD tabanlı grup yönetimi deneyimine geçirmeye başlayacaktır. Bugün Intune’da mevcut olan tüm kullanıcı ve cihaz grupları Azure AD güvenlik gruplarına geçirilecektir. Günlük çalışmalarınız üzerindeki etkisini en aza indirmeden ve kullanıcılarınızı hiçbir şekilde etkilemeyeceğini düşünene kadar geçiş işlemlerine başlamayacağız. Hesabınızı taşımadan önce bildirimde de bulunacağız.
 
 
 ### Yeni grup deneyimine nasıl ve ne zaman geçeceğim?
@@ -204,6 +204,6 @@ Her ilkenin bir **Amaçlanan Değer** ‘i ve bir de **Durum**‘u vardır. Ama�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 
