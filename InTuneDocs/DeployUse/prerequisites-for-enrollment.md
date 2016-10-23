@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 381216889519b45f989db90ac5e12b8e3adcadf1
-ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
+ms.sourcegitcommit: 77c8df8f1886786a2e772429d93b034798b22a66
+ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
 
 
 ---
@@ -29,6 +29,10 @@ ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
 |**3. Adım:** [Intune Şirket Portalı’nı yapılandırın](#step-3-configure-the-intune-company-portal)|Şirket Portalı uygulamasına yönelik kullanıcıya açık ayarları yapılandırın|  
 |**4. Adım:** [Intune kullanıcı lisanslarını atayın](#step-4-assign-intune-user-licenses)|Cihazlarını kaydedebilmeleri için Intune lisanslarını kullanıcılara atayın|
 |**5. Adım:** [Cihaz yönetimini ayarlayın](#step-5-set-up-device-management)|iOS ve Windows yönetimine yönelik platforma özel ayarları etkinleştirin. Android cihazlarda ek yapılandırma gerekmez.|
+
+Configuration Manager ile Intune mu arıyorsunuz?
+> [!div class="button"]
+[SCCM belgelerini görüntüleyin >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## 1. Adım: Cihaz kaydetme bağımlılıkları
 
@@ -130,6 +134,6 @@ Ayrıca şunları yapabilirsiniz:
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 6942bd5653bcb0aa11cdab18055bda7b86d0eae2
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: b597e3557ec2c5661490b417e1d0459eb4e8b477
 
 
 ---
@@ -27,8 +27,8 @@ ms.openlocfilehash: 6942bd5653bcb0aa11cdab18055bda7b86d0eae2
 
 |Cihaz yapılandırması ve yönetimi|Cihaz türü|
 |---------------------------------------|---------------|
-|Mobil cihazınızı BT yöneticiniz yönetir|**Windows 10, Windows Phone 8.1 ve Windows Phone 8**</br>Cihazınız artık şirket portalında görünmez ve şirket portalı, cihazı üreticinin varsayılan ayarlarına geri döndürmeyi dener. Kişisel verileriniz, uygulamalarınız ve ayarlarınız kaldırılır. <br /><br />**Windows 10 Mobile**: cihazınızın kaydını silmenin tek yolu cihazı sıfırlamaktır.<br /><br />**Windows RT**<br />Cihaz yalnızca e-postalar için kullanılmadıkça Windows RT cihazınızı sıfırlayamazsınız.|
-|Cihazınız yalnızca şirket e-postalarına erişebilir|**Windows Phone 8.1 ve Windows Phone 8**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows RT**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows 7 veya Windows Vista Bilgisayarlar**<br />Windows 7 veya daha önceki bir sürümünü çalıştıran ve yalnızca e-postalar için kullanılan bir bilgisayarı sıfırlayamazsınız.<br /><br />**Windows 8.1 ve Windows 8 Bilgisayarlar**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.|
+|Mobil cihazınızı BT yöneticiniz yönetir|**Windows 10 ve Windows Phone 8.1**</br>Cihazınız artık şirket portalında görünmez ve şirket portalı, cihazı üreticinin varsayılan ayarlarına geri döndürmeyi dener. Kişisel verileriniz, uygulamalarınız ve ayarlarınız kaldırılır. <br /><br />**Windows 10 Mobile**: cihazınızın kaydını silmenin tek yolu cihazı sıfırlamaktır.|
+|Cihazınız yalnızca şirket e-postalarına erişebilir|**Windows Phone 8.1**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows 7 veya Windows Vista Bilgisayarlar**<br />Windows 7 veya daha önceki bir sürümünü çalıştıran ve yalnızca e-postalar için kullanılan bir bilgisayarı sıfırlayamazsınız.<br /><br />**Windows 8.1 ve Windows 8 Bilgisayarlar**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.|
 |Masaüstü ve dizüstü bilgisayarlar|**Windows 8.1 ve Windows 8 Bilgisayarlar**<br />Windows 8 veya Windows 8.1 çalıştıran bilgisayarları yalnızca e-postalar için kullanıldıkları sürece sıfırlayamazsınız.<br /><br />**Windows 7 veya Windows Vista Bilgisayarlar**<br />Windows 7 veya önceki bir sürümünü çalıştıran bilgisayarları sıfırlayamazsınız.|
 
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
@@ -37,6 +37,6 @@ Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
