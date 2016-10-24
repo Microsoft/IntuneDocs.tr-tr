@@ -3,6 +3,7 @@ title: "Intune lisanslarını PowerShell kullanarak yönetme | Microsoft Intune"
 description: "Intune lisanslarını PowerShell kullanarak yönetme"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

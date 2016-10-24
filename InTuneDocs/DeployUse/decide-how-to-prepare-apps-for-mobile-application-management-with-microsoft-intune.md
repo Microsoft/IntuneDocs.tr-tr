@@ -3,6 +3,7 @@ title: "Uygulamaları mobil uygulama yönetimi için hazırlama | Microsoft Intu
 description: "Bu konu başlığı altındaki bilgiler, özel iş kolu uygulamalarınızın mobil uygulama yönetimi ilkelerini kullanabilmesini sağlamak için, Uygulama sarmalama aracını ve Uygulama SDK’sını ne zaman kullanmanız gerektiğine karar vermenize yardımcı olur."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

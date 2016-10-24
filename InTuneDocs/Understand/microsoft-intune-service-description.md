@@ -3,6 +3,7 @@ title: "Hizmet Açıklaması | Microsoft Intune"
 description: "Intune, Windows bilgisayarlarla iOS, Mac OS X, Android ve Windows mobil cihazları yönetmenize yardımcı olan bulut tabanlı bir hizmettir."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

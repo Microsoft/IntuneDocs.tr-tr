@@ -3,6 +3,7 @@ title: "Android cihazınızın Intune kaydını silme | Microsoft Intune"
 description: "Android cihazının Intune kaydını nasıl silebileceğiniz açıklanır."
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

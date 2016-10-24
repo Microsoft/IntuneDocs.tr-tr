@@ -3,6 +3,7 @@ title: "BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olmak için
 description: "Ayrıntılı günlük kaydı kullanarak BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olma"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

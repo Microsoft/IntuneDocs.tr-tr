@@ -3,6 +3,7 @@ title: "Lookout ile aboneliğinizi ayarlama | Microsoft Intune"
 description: "Bu konu, Lookout cihaz tehdit korumasını nasıl yapılandıracağınıza yönelik ayrıntılar sunar."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

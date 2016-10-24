@@ -3,6 +3,7 @@ title: "Intune sözlüğü | Microsoft Intune"
 description: "Microsoft Intune terimlerinin bir kısmı hakkında bilgi edinin"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/23/2016
 ms.topic: article

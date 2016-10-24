@@ -1,8 +1,9 @@
 ---
-title: "Intune'da Lookout MTP’yi Etkinleştirme | Microsoft Intune"
+title: "Intune&quot;da Lookout MTP’yi Etkinleştirme | Microsoft Intune"
 description: "Intune Yönetici konsolunda Lookout mobil tehdit korumasını etkinleştirin."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

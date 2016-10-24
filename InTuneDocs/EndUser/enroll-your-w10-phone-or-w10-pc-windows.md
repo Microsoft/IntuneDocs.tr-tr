@@ -3,6 +3,7 @@ title: "Windows 10 cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Windows 10 mobil veya masaüstü cihazının Intune’a nasıl kaydedildiği açıklanır."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

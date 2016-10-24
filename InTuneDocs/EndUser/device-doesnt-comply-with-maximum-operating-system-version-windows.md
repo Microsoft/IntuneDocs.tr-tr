@@ -3,6 +3,7 @@ title: "Windows cihazı en yüksek işletim sistemi sürümü ayarı ile uyumlu 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

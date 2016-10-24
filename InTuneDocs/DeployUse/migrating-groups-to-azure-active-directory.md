@@ -3,6 +3,7 @@ title: "Azure Active Directory gruplarına geçme | Microsoft Intune"
 description: "Gruplarınızı Intune’dan Azure AD’ye geçirme"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 10/10/2016
 ms.topic: article

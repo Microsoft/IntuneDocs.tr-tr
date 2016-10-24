@@ -3,6 +3,7 @@ title: "Azure AD kullanarak çok faktörlü kimlik doğrulaması | Microsoft Int
 description: "Azure AD’de cihaz kaydı için çok faktörlü kimlik doğrulaması isteme."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

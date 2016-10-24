@@ -3,6 +3,7 @@ title: "İş İçin Windows Mağazası uygulamalarını yönetme | Microsoft Int
 description: "Toplu satın alınan uygulamaları Intune konsolundan yönetmek ve dağıtmak istiyorsanız, Microsoft Intune’u İş İçin Windows Mağazası’na bağlayın."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

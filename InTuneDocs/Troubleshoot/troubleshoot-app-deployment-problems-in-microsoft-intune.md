@@ -3,6 +3,7 @@ title: "Uygulama dağıtımı sorunlarını giderme | Microsoft Intune"
 description: "Bu konu, Microsoft Intune’la uygulama dağıtımı sorunlarını çözmenize yardımcı olur."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article

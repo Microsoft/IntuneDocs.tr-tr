@@ -3,6 +3,7 @@ title: "iOS kullanıcılarınız uygulamalarını nasıl alır | Microsoft Intun
 description: "iOS uygulamalarını son kullanıcılara sağlama yöntemleri"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

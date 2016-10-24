@@ -3,6 +3,7 @@ title: "Wi-Fi bağlantıları | Microsoft Intune"
 description: "Kullanıcıların Wi-Fi ağlarınıza bağlanmasına yardımcı olmak için Wi-Fi profilleri kullanın."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

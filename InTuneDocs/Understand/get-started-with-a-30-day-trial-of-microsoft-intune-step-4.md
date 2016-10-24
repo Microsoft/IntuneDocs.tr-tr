@@ -3,6 +3,7 @@ title: "İlke oluşturma ve kullanıcılara bir uygulama yayımlama | Microsoft 
 description: "Intune’un ücretsiz, 30 günlük değerlendirmesine kaydolduğunuzda, ilkeler nasıl oluşturulur ve uygulama nasıl yayımlanır"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

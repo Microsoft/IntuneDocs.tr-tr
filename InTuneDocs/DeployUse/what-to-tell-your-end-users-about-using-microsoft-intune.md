@@ -3,6 +3,7 @@ title: "Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar| Micr
 description: "Son kullanıcılarınızla paylaşacağınız bilgilerin bağlantıları"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: get-started-article

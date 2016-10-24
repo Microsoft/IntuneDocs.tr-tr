@@ -3,6 +3,7 @@ title: "Dynamics CRM Online’a erişimi kısıtlama | Microsoft Intune"
 description: "Dynamics CRM’i korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

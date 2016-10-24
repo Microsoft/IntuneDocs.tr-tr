@@ -3,6 +3,7 @@ title: "Microsoft Intune için etki alanı adları | Microsoft Intune"
 description: "Intune için etki alanı adı ekleme"
 keywords: 
 author: andredm7
+ms.author: andredm
 manager: swadhwa
 ms.date: 10/11/2016
 ms.topic: article

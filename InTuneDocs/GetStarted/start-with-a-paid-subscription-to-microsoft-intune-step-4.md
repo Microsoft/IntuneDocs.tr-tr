@@ -3,6 +3,7 @@ title: "Intune lisanslarını yönetme | Microsoft Intune"
 description: "Intune aboneliğiniz için kullanıcılara nasıl lisans atanacağı açıklanır"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

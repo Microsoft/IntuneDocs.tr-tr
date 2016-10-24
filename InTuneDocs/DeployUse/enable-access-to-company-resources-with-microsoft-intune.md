@@ -3,6 +3,7 @@ title: "Şirket kaynaklarına erişimi etkinleştirme | Microsoft Intune"
 description: "Wi-Fi, VPN ve e-posta profilleri, kullanıcılarınızın gereken dosyalara ve kaynaklara erişim kazanmasına yardımcı olmak için birlikte çalışır."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

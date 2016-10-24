@@ -7,6 +7,7 @@ title: Intune Belgeleri | Microsoft Docs
 description: "Microsoft Intune için teknik belgeler - Mobil Cihaz ve Uygulama Yönetimi"
 keywords: "intune belgeleri, uygulama yönetimi, cihaz yönetimi, MDM belgeleri, MAM belgeleri"
 author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 10/07/2016
 ms.topic: hubpage

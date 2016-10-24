@@ -3,6 +3,7 @@ title: "Kaybolan veya çalınan iOS cihazınızı sıfırlama (silme) | Microsof
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Cihaz uyumluluk ilkeleri | Microsoft Intune
 description: "Bu konu başlığı altında, cihaz uyumluluk ilkelerinin ne olduğunu ve nasıl çalıştığını anlamanız için gereken kavramlar açıklanır."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

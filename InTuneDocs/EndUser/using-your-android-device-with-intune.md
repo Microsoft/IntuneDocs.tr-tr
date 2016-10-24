@@ -3,6 +3,7 @@ title: "Android cihazınızı Intune ile kullanma | Microsoft Intune"
 description: "Android mobil cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

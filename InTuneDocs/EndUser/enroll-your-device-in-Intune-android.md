@@ -3,6 +3,7 @@ title: "Android cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Android cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article

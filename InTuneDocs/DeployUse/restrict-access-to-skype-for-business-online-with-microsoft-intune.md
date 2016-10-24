@@ -3,6 +3,7 @@ title: "Skype Kurumsal Çevrimiçi’ne erişimi kısıtlama | Microsoft Intune"
 description: "Skype Kurumsal Çevrimiçi’ni korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Uygulamaları ve verileri koruma | Microsoft Intune"
 description: "Bu konu başlığı altında, şirket uygulamalarınızı ve verilerinizi korumanıza yardımcı olmak için sağlanan çeşitli Intune özellikleri ve yetenekleri açıklanır."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

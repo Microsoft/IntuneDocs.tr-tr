@@ -3,6 +3,7 @@ title: "Değerlendirme mobil cihazlarını kaydetme | Microsoft Intune"
 description: "Intune’un ücretsiz, 30 günlük değerlendirmesine kaydolduğunuzda, mobil cihazlar nasıl kaydedilir ve uygulama nasıl yüklenir"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

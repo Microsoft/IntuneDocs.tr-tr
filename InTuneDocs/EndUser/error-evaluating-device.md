@@ -3,6 +3,7 @@ title: "Cihazı değerlendirme hatası | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

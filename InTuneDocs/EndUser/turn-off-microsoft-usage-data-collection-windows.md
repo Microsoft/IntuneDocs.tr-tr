@@ -3,6 +3,7 @@ title: "Windows için Microsoft kullanım verilerini toplamayı devre dışı b�
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

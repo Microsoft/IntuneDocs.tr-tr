@@ -3,6 +3,7 @@ title: "İlke sorunlarını giderme | Microsoft Intune"
 description: "İlke yapılandırma sorunlarını giderin."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

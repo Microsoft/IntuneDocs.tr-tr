@@ -3,6 +3,7 @@ title: "KNOX için izin verilen ve engellenen uygulamalar | Microsoft Intune"
 description: "KNOX için izin verilen ve engellenen uygulamaların listesini oluşturmaya yönelik özel profil."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

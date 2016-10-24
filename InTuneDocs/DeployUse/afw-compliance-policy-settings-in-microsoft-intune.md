@@ -3,6 +3,7 @@ title: "Android for Work için uyumluluk ilkesi ayarları | Microsoft Intune"
 description: "Bu konuda, Android for Work ile uyumlu Android cihazlar için cihaz uyumluluk ilkesi ayarları açıklanır."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

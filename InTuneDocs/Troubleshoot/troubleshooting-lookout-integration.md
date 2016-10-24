@@ -3,6 +3,7 @@ title: "Lookout Tümleştirmesi Sorunlarını Giderme | Microsoft Intune"
 description: "Bu bölüm, Lookout Tümleştirmesinde sıkça meydana gelen sorun giderme konularını açıklar"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

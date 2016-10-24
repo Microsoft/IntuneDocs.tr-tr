@@ -3,6 +3,7 @@ title: "Geçiş kodunuzu ayarlama veya değiştirme | Microsoft Intune"
 description: "Geçiş kodunuzu ayarlama veya değiştirme"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

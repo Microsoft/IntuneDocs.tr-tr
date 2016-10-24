@@ -3,6 +3,7 @@ title: "Intune konsolunda MAM ilkelerini yapılandırma | Microsoft Intune"
 description: "Microsoft Intune’daki Mobil uygulama yönetimi ilkeleri, dağıttığınız uygulamaların şirketin uyumluluk ve güvenlik ilkeleriyle uyumlu olmasını sağlamak için bunların işlevselliğini değiştirmenize izin verir."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

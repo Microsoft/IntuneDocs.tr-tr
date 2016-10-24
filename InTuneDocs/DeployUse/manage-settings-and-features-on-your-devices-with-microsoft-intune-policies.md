@@ -3,6 +3,7 @@ title: "Cihaz ayarlarını ilkelerle yönetme | Microsoft Intune"
 description: "Yönettiğiniz kayıtlı cihazlarda ayarları ve özellikleri denetleyen ilkeleri oluşturmak ve dağıtmak için Intune kullanın."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Exchange Online’a e-posta erişimini kısıtlama | Microsoft Intune"
 description: "Exchange Online’da şirket e-postasını korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

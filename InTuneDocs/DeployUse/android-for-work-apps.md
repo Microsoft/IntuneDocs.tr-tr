@@ -3,6 +3,7 @@ title: "Android for Work cihazlara uygulama dağıtma | Microsoft Intune"
 description: "Google Play for Work Store’dan uygulama eşitlemek ve ardından Android for Work cihazlara dağıtmak için bu konuyu kullanın."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Windows sürümünü yükseltme ilkesi ayarları | Microsoft Intune"
 description: "Windows 10 cihazlarını otomatik olarak Intune’un en son sürümüne yükseltmeyi öğrenin."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

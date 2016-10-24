@@ -3,6 +3,7 @@ title: "Şirket kaynak erişimi sorunlarını giderme | Microsoft Intune"
 description: "Bu konu başlığı altındaki hata ve durum kodları, kaynak erişimi sorunlarını gidermenize yardımcı olur."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article

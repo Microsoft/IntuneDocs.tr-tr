@@ -3,6 +3,7 @@ title: "Cihazlarda İş İçin Windows Hello ayarlarını denetleme | Microsoft 
 description: "Intune’un bir parolayı, akıllı kartı ya da sanal akıllı kartı değiştirmek için Active Directory veya bir Azure Active Directory hesabını kullanıldığı alternatif bir oturum açma yöntemi olan İş İçin Windows Hello ile nasıl tümleştiğini öğrenin."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/20/2016
 ms.topic: article

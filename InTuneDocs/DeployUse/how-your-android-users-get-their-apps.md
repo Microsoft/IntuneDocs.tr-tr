@@ -3,6 +3,7 @@ title: "Android kullanıcılarınız uygulamalarını nasıl alır | Microsoft I
 description: "Android uygulamalarını son kullanıcılara sağlama yöntemleri"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article

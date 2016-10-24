@@ -3,6 +3,7 @@ title: "Cihaz kaydıyla ilgili sorunları giderme | Microsoft Intune"
 description: "Cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler."
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

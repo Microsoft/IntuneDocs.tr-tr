@@ -3,6 +3,7 @@ title: "Cihazınızı Şirket Portalı’ndan kaldırma | Microsoft Intune"
 description: "Bir cihazı Şirket Portalı’ndan kaldırma"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

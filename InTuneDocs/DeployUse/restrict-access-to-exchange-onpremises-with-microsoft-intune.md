@@ -3,6 +3,7 @@ title: "Şirket İçi Exchange’de e-posta erişimini kısıtlama | Microsoft I
 description: "Şirket İçi Exchange’de şirket e-postasını korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

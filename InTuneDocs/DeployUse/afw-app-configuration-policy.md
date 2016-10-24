@@ -3,6 +3,7 @@ title: "Android for Work mobil uygulama yapılandırma ilkelerini kullanma | Mic
 description: "Kullanıcılar bir Android for Work uygulamasını çalıştırdığında gerekebilecek ayarları sağlamak için Intune’daki mobil uygulama yapılandırma ilkelerini kullanın."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -4,6 +4,7 @@ title: "Android for Work ilke ayarları | Microsoft Intune"
 description: "Intune ile yönettiğiniz Android for Work cihazlarda ayarları ve özellikleri denetleyen ilkeler oluşturun."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

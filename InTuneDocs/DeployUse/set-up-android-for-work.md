@@ -3,6 +3,7 @@ title: "Android for Work yönetimini ayarlama | Microsoft Intune"
 description: "Microsoft Intune ile, Android for Work cihazları için mobil cihaz yönetimini (MDM) etkinleştirin."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Cihaz tehdit koruması kullanarak erişimi kısıtlama | Microsoft Intun
 description: "Şirket kaynaklarına erişimi cihaz, ağ ve uygulama riskine dayalı olarak kısıtlayın."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

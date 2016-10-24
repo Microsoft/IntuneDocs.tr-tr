@@ -6,6 +6,7 @@ title: Intune Belgeleri - MDM belgeleri | Microsoft Belgeleri
 description: "Microsoft Intune için teknik belgeler - Mobil Cihaz ve Uygulama Yönetimi"
 keywords: "intune belgeleri, MDM belgeleri, Mobil Cihaz Yönetimi Belgeleri, Mobil Cihaz ve Uygulama Yönetimi Belgeleri"
 author: jeffgilb
+ms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage

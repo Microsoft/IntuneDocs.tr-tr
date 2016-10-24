@@ -3,6 +3,7 @@ title: "Exchange Online için uygulama erişimi yapılandırma | Microsoft Intun
 description: "Bu konu, MAM uygulamaları için bir koşullu erişim ilkesini nasıl yapılandırabileceğinizi açıklar."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

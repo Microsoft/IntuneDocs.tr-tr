@@ -3,6 +3,7 @@ title: "iOS mobil uygulama yapılandırma ilkelerini kullanma | Microsoft Intune
 description: "Kullanıcılar bir iOS uygulamasını çalıştırdığında gerekebilecek ayarları sağlamak için Intune’daki mobil uygulama yapılandırma ilkelerini kullanın."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

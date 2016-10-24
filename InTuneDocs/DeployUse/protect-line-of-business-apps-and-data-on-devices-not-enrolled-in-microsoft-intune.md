@@ -3,6 +3,7 @@ title: "Kayıtlı olmayan cihazlardaki LOB uygulamalarını koruma | Microsoft I
 description: "Bu konu başlığı altında, veri kaybını önlemeye yardımcı olabilecek mobil uygulama yönetimi ilkelerini uygulayabilmek için, özel iş kolu uygulamalarınızı nasıl hazırlayacağınız açıklanır."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

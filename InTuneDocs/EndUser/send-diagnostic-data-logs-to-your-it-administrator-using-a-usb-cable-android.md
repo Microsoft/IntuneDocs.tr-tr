@@ -3,6 +3,7 @@ title: "Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize g�
 description: "USB kablosu kullanarak veri günlüklerini gönderme"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

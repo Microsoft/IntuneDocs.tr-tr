@@ -4,6 +4,7 @@ title:
 description: "Bu konular, MAM ilkenizin kurulumunun doğru yapıldığını ve beklendiği şekilde çalıştığını nasıl sınayıp doğrulayacağınızı açıklamaktadır."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article

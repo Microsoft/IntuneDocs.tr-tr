@@ -3,6 +3,7 @@ title: "Kullanıcı ve cihazları yönetmek için grupları kullanma | Microsoft
 description: "Gruplar çalışma alanını kullanarak grupları oluşturun ve yönetin."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

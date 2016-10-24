@@ -3,6 +3,7 @@ title: "Intune değerlendirme kılavuzu | Microsoft Intune"
 description: "Intune’un ücretsiz, 30 günlük değerlendirmesini ayarlama işlemine giriş ve önkoşullar"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

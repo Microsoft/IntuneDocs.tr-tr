@@ -3,6 +3,7 @@ title: "Mobil cihaz güvenliği ilkesi ayarları | Microsoft Intune"
 description: "Kuruluşunuzdaki yönetilen cihazlara dağıtabileceğiniz çeşitli ayarları yapılandırmak için Intune’u kullanın."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "E-posta ve O365 hizmetlerine erişimi kısıtlama | Microsoft Intune"
 description: "Bu konu başlığı altında, SharePoint Online’daki ve diğer hizmetlerdeki şirket e-postasına ve şirket verilerine yalnızca uyumlu cihazların erişmesine izin vermek için koşullu erişimin nasıl kullanılabileceği açıklanır."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

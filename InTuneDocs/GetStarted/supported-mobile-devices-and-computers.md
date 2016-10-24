@@ -3,6 +3,7 @@ title: Desteklenen mobil cihazlar ve bilgisayarlar | Microsoft Intune
 description: "Intune’un desteklediği mobil cihazlar ve bilgisayarlar"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

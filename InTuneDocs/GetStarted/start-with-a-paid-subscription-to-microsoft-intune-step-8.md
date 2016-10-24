@@ -3,6 +3,7 @@ title: "Mobil cihazları kaydetme ve uygulama yükleme | Microsoft Intune"
 description: "Mobil cihazları kaydetme ve Intune’a kayıtlı bir cihaza uygulama yükleme işlemleri açıklanır"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
