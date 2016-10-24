@@ -13,13 +13,13 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
 
-# Mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma
+# Microsoft Intune ile mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma
 
 ## Uygulama verilerinizi nasıl koruyabilirsiniz?
 Çalışanlarınız hem kişisel hem de iş amaçlı görevler için mobil cihazlar kullanır.  Bir yandan çalışanlarınızın üretken olmasını sağlarken diğer yandan, isteyerek ve istemeyerek yaşanabilecek veri kayıplarını önlemek isteyebilirsiniz.  Ayrıca, tarafınızdan yönetilmediği durumda dahi cihazları kullanarak erişilen şirket verilerini koruma becerisine sahip olmak istersiniz.
@@ -122,8 +122,6 @@ Ancak, dikkat edilmesi gereken bazı sınırlamalar vardır, örneğin:
 
 Örneğin, son kullanıcı kendi iş hesabını kullanarak OneDrive uygulamasını başlattığında, dosyaları bir kişisel depolama konumuna taşıyamaz. Ancak, son kullanıcı kendi kişisel hesabıyla OneDrive kullandığında, kişisel Onedrive’larından kısıtlama olmadan veri kopyalayabilir ve taşıyabilir.  
 
-MAM ilkeleriyle ilişkili uygulamaları kullanma deneyimine dair ve Çoklu kimliği olan uygulamaların yalnızca iş bağlamında MAM ilkeleri uygulanmasını sağlamayı nasıl desteklediğine dair ayrıntılı bir açıklama için, bkz. [çoklu kimlik desteği olan uygulamaları kullanma](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)
-
 Tüm Office mobil uygulamaları çoklu kimliği destekler.
 
 ##  Sonraki adımlar
@@ -133,6 +131,6 @@ Tüm Office mobil uygulamaları çoklu kimliği destekler.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

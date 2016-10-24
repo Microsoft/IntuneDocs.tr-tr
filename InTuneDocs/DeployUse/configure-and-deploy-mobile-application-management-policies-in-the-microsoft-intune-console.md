@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
 
 
 ---
@@ -37,7 +37,7 @@ Diğer Intune ilkelerinden farklı olarak, mobil uygulama yönetimi ilkeleri do�
 
 Bir uygulamaya kısıtlamalar uygulamak için, uygulamanın Microsoft Intune Uygulama SDK’sini içermesi gerekir. Bu tür bir uygulamayı edinmenin üç yolu vardır:
 
--   **İlkeyle yönetilen uygulama kullanma**. İlkeyle yönetilen bir uygulamada Uygulama SDK’sı yerleşiktir. Bu uygulama türünü eklemek için, iTunes mağazası veya Google Play gibi bir uygulama mağazasından uygulamaya yönlendiren bir bağlantı belirtirsiniz. Bu uygulama türü için başka bir işleme gerek yoktur. Daha fazla bilgi için [Microsoft Intune mobil uygulama yönetim ilkeleriyle kullanabileceğiniz uygulamaların listesine](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) bakın.
+-   **İlkeyle yönetilen uygulama kullanma**. İlkeyle yönetilen bir uygulamada Uygulama SDK’sı yerleşiktir. Bu uygulama türünü eklemek için, iTunes mağazası veya Google Play gibi bir uygulama mağazasından uygulamaya yönlendiren bir bağlantı belirtirsiniz. Bu uygulama türü için başka bir işleme gerek yoktur. Daha fazla bilgi için [Microsoft Intune mobil uygulama yönetim ilkeleriyle kullanabileceğiniz uygulamaların listesine](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) bakın.
 
 -   **Kaydırılmış bir uygulama kullanın**. Kaydırılmış bir uygulama, Uygulama SDK'sını dahil etmek için Microsoft Intune Uygulama Kaydırma Aracı kullanılarak yeniden paketlenmiş bir uygulamadır. Bu araç genellikle şirket içinde oluşturulan şirket uygulamalarını işlemek için kullanılır. Uygulama mağazasından indirilmiş uygulamaları işlemek için kullanamazsınız. Daha fazla bilgi için bkz. [iOS uygulamalarını Microsoft Intune Uygulaması Kaydırma Aracı ile mobil uygulama yönetimine hazırlama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) ve [Android uygulamalarını Microsoft Intune Uygulaması Kaydırma Aracı ile mobil uygulama yönetimine hazırlama](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -136,7 +136,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra 3. adım
     |**Çevrimdışı kullanım süresi**|Cihaz çevrimdışı ise, uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını belirtin.|
     |**Uygulama verilerini şifreleme**|Bu ayar, bu uygulama ile ilişkili tüm verilerin şifreleneceğini belirtir. Buna SD kart gibi harici ortamlara depolanacak veriler de dahildir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetim ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada ve işletim sisteminin sağladığı cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu ayar, BT yöneticisinin ayarladığı cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesindeki ayarlara göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/en-us/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalarda şifrelemeyi Microsoft sağlar. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir.  Cihaz depolamasındaki içerik her zaman şifrelenir. Şifreleme yöntemi FIPS 140-2 sertifikalı değildir.|
     |**Ekran yakalamayı engelle** (yalnızca Android cihazlar)|Bu ayar, birisi bu uygulamayı kullanırken cihazın ekran yakalama özelliklerinin engellendiğini belirtir.|
-    
+
 4. İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.
 
 Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğümünde görünür.
@@ -193,6 +193,6 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

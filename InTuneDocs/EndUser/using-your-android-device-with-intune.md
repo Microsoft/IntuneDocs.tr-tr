@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 
 
 ---
@@ -33,6 +33,7 @@ Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında ger
 Bu bölümdeki bilgiler, Android cihazlarda Intune Şirket Portalı’nı yükleme ve cihaz kaydında size yardımcı olur.
 
 - [Cihazınızı Intune’a kaydetme](enroll-your-device-in-Intune-android.md)
+- [Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Cihazınız Intune’a kaydolduğunda yapabilecekleriniz
@@ -73,6 +74,6 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşı
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
