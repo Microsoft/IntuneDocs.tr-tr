@@ -5,7 +5,7 @@ keywords:
 author: Staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -26,8 +26,6 @@ ms.openlocfilehash: 4dae33a2991573cca778852ab81d3087fac97d80
 Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için Windows cihazınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, kuruluşunuz şirket verilerini güvenli tutabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [BT yöneticinizin cihazınızda görebilecekleri ve göremeyecekleri](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 Kaydolmak için kullandığınız cihaza karşılık gelen bağlantıyı kullanın:
-
-
 
 -  [Windows 10 Mobile ve Windows 10 masaüstü](enroll-your-w10-phone-or-w10-pc-windows.md)
 -  [Windows 8.1 veya Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
