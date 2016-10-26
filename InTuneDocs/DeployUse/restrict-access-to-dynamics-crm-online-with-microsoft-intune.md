@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ Microsoft Dynamics CRM Online’a erişimi, iOS ve Android cihazlardan, Microsof
 
 Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için, [e-posta, 0365 hizmetlerine ve diğer hizmetlere erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
 
-[!IMPORTANT] Koşullu erişim dağıtmak için Intune ve Azure Active Directory Premium abonelikleriniz olmalıdır ve kullanıcılar her iki ürünün de lisansına sahip olmalıdır. **Enterprise Mobility + Security (EMS) aboneliği** hem Intune hem de Azure Active Directory Premium abonelikleri içerir. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). EMS aboneliğiniz yoksa Azure Active Directory Premium aboneliği alabilirsiniz. Bkz. [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+[!IMPORTANT] Koşullu erişim dağıtmak için Intune ve Azure Active Directory Premium abonelikleriniz olmalıdır ve kullanıcılar her iki ürünün de lisansına sahip olmalıdır. **Enterprise Mobility + Security (EMS) aboneliği** hem Intune hem de Azure Active Directory Premium abonelikleri içerir. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). EMS aboneliğiniz yoksa Azure Active Directory Premium aboneliği alabilirsiniz. Bkz. [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 Hedeflenen bir kullanıcı kendi cihazında Dynamics CRM uygulamasını kullanmayı denerse, aşağıdaki değerlendirme yapılır:
 

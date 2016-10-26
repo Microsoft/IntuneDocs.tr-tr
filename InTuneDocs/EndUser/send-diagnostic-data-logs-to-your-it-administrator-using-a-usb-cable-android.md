@@ -2,8 +2,8 @@
 title: "Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme | Microsoft Intune"
 description: "USB kablosu kullanarak veri günlüklerini gönderme"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

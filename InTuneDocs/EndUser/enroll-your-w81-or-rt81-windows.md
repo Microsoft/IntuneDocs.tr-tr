@@ -2,8 +2,8 @@
 title: "Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetme | Microsoft Intune"
 description: "Windows 8.1 veya Windows RT 8.1 cihazının Intune’a nasıl kaydedildiği açıklanır."
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

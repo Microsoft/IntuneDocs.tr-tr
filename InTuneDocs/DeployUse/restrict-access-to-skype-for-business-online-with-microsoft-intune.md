@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ Hedeflenen bir kullanıcı kendi cihazında Skype Kurumsal Çevrimiçi’ni kull
 
 Skype Kurumsal Çevrimiçi için koşullu erişim ilkesini yapılandırmadan **önce**:
 - **Skype Kurumsal Çevrimiçi aboneliğiniz** olmalı ve kullanıcılara Skype Kurumsal Çevrimiçi lisansı atamalısınız.
-- **Enterprise Mobility + Security veya Azure Active Directory premium aboneliğiniz** olmalıdır ve kullanıcılar EMS veya Azure AD lisansına sahip olmalıdır. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+- **Enterprise Mobility + Security veya Azure Active Directory premium aboneliğiniz** olmalıdır ve kullanıcılar EMS veya Azure AD lisansına sahip olmalıdır. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -   Skype Kurumsal Çevrimiçi Sürüm için [modern kimlik doğrulamasını etkinleştirin](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune).
 -  Tüm son kullanıcılarınız **Skype Kurumsal Çevrimiçi** kullanıyor olmalıdır. Hem Skype Kurumsal Çevrimiçi hem de Skype Kurumsal şirket içi kullanılan bir dağıtımınız varsa, son kullanıcılara koşullu erişim ilkesi uygulanmaz.
