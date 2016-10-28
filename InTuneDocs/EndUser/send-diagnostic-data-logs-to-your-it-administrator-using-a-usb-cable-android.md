@@ -2,8 +2,8 @@
 title: "Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme | Microsoft Intune"
 description: "USB kablosu kullanarak veri günlüklerini gönderme"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 ---
 
 
-# Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-a-usb-cable"></a>Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme
 
 BT yöneticinize veri günlükleri göndermek istiyorsanız, günlükleri mobil cihazınız yerine bir bilgisayar ve bir USB kablosu kullanarak gönderebilirsiniz.
 

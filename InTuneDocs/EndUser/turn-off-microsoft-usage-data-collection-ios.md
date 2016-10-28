@@ -2,8 +2,8 @@
 title: "iOS için Microsoft kullanım verilerini toplamayı devre dışı bırakma | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
 ---
 
 
-# Microsoft kullanım verilerini toplamayı devre dışı bırakma
+# <a name="turn-off-microsoft-usage-data-collection"></a>Microsoft kullanım verilerini toplamayı devre dışı bırakma
 
 Microsoft, ürün ve hizmetlerini geliştirmek için Şirket Portalı uygulamasının güvenilirliği, performansı ve nasıl kullanıldığı hakkında anonim verileri otomatik olarak toplar.
 

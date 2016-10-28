@@ -2,8 +2,8 @@
 title: "Windows 10 cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Windows 10 mobil veya masaüstü cihazının Intune’a nasıl kaydedildiği açıklanır."
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune'a kaydetme
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune'a kaydetme
 
 Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazlarınızı kaydedebilirsiniz. Cihazlarınızın kaydedilmesi kuruluşunuzda şirket verilerinin güvenli tutulabilmesini sağlar. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [BT yöneticinizin cihazınızda görebilecekleri ve göremeyecekleri](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
@@ -42,7 +42,7 @@ Windows 10 Mobile veya Windows 10 masaüstü cihazınızı kaydetmek için:
 
     ![Hesabınız](./media/w10-enroll-2-accounts-your-account.png)
 
-## İşe veya okula erişim seçeneğini görüyorsanız izlenecek adımlar
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>İşe veya okula erişim seçeneğini görüyorsanız izlenecek adımlar
 
 1.  **İşe veya okula eriş**'e ve sonra **Bağlan**'a dokunun.
 
@@ -69,7 +69,7 @@ Windows 10 Mobile veya Windows 10 masaüstü cihazınızı kaydetmek için:
 Önceki adımları uygulamanıza rağmen iş veya okul e-posta hesabınıza ve dosyalarınıza erişemiyorsanız, [İşe veya okula erişim görüyorsanız izlenecek sorun giderme adımları](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) bölümündeki adımları uygulayın.
 
 
-## Hesabınızı görüyorsanız uygulanacak adımlar
+## <a name="steps-to-follow-if-you-see-your-account"></a>Hesabınızı görüyorsanız uygulanacak adımlar
 
 1.  Windows **Ayarlar**’ına gidin ve ardından **Hesaplar**’a dokunun.
 

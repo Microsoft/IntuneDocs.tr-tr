@@ -2,8 +2,8 @@
 title: "Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme | Microsoft Intune"
 description: "Bir Android cihazında e-posta kullanarak veri günlükleri gönderme"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 ---
 
 
-# Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-email"></a>Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme
 
 Android cihazınızda okul veya şirket uygulamalarınızla çalışırken hata alırsanız, BT yöneticinizin hatayı tanılamasına ve gidermesine yardımcı olmak için tanılama veri günlüklerini gönderebilirsiniz. BT yöneticinizin sorunu anlamasını kolaylaştıracak şekilde günlüklere tüm ayrıntıların eklenmesi için ayrıntılı günlük kaydı özelliğini açın. Ayrıntılı günlük kaydı hakkında daha fazla bilgi için bkz. [BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olmak için ayrıntılı günlük kaydı kullanma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 

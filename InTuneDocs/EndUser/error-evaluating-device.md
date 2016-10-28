@@ -2,8 +2,8 @@
 title: "Cihazı değerlendirme hatası | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 ---
 
 
-# Cihazı değerlendirme hatası
+# <a name="error-evaluating-device"></a>Cihazı değerlendirme hatası
 Cihazınızın bir veya daha fazla şirket ilkesi ile uyumsuz olduğu saptandı, ancak sistemde cihazınız değerlendirilmeye çalışıldığında bir sorunla karşılaşıldığı için hatayı şu anda gösteremiyoruz.  
 
 Bu sorunu çözmek için, birkaç dakika bekleyin ve ardından **Uyumluluğu Denetle**’ye dokunun. Sorun devam ederse BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
