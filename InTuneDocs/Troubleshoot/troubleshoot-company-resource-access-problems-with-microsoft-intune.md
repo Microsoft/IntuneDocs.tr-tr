@@ -2,8 +2,8 @@
 title: "Şirket kaynak erişimi sorunlarını giderme | Microsoft Intune"
 description: "Bu konu başlığı altındaki hata ve durum kodları, kaynak erişimi sorunlarını gidermenize yardımcı olur."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP lisans yüklemesi başarısız oldu||
 |Durum yok (APP_CI_ENFORCEMENT_UNKNOWN)|yok|Şu anda durum bilinmiyor.|
 
-## <a name="company-resource-access-(common-errors)"></a>Şirket kaynağına erişim (genel hatalar)
+## <a name="company-resource-access-common-errors"></a>Şirket kaynağına erişim (genel hatalar)
 
 |Durum kodu|Onaltılık hata kodu|Hata iletisi|
 |---------------|--------------------------|-----------------|

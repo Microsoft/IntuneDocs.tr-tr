@@ -2,8 +2,8 @@
 title: "Şirket kaynak erişimi sorunlarını giderme | Microsoft Intune"
 description: "Bu konu başlığı altındaki hata ve durum kodları, kaynak erişimi sorunlarını gidermenize yardımcı olur."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 ---
 
-# Microsoft Intune ile şirket kaynak erişimi sorunlarını giderme
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune ile şirket kaynak erişimi sorunlarını giderme
 Microsoft Intune eylemi bir hata kodu döndürdüğünde sorunları gidermenize yardımcı olması için bu konu başlığı altında verilen hata ve durum kodlarını kullanın.
 
 Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
-## MDM ile yönetilen Windows cihazları için durum kodları
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM ile yönetilen Windows cihazları için durum kodları
 
 |Durum kodu|Hata iletisi|Yapılması gereken|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP lisans yüklemesi başarısız oldu||
 |Durum yok (APP_CI_ENFORCEMENT_UNKNOWN)|yok|Şu anda durum bilinmiyor.|
 
-## Şirket kaynağına erişim (genel hatalar)
+## <a name="company-resource-access-common-errors"></a>Şirket kaynağına erişim (genel hatalar)
 
 |Durum kodu|Onaltılık hata kodu|Hata iletisi|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016341111|0x87D11389|iOS cihazı, beklenmeyen bir Boşta durumu döndürdü|
 |-2016341112|0x87D11388|iOS cihazı şu anda meşgul|
 
-## iOS cihazları tarafından döndürülen hatalar
+## <a name="errors-returned-by-ios-devices"></a>iOS cihazları tarafından döndürülen hatalar
 
 |Durum kodu|Onaltılık hata kodu|Hata iletisi|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016335111|0x87D12AF9|1001:Desteklenmeyen profil sürümü|
 |-2016335112|0x87D12AF8|1000:Yanlış biçimli profil|
 
-## OMA yanıt kodları
+## <a name="oma-response-codes"></a>OMA yanıt kodları
 
 |Durum kodu|Onaltılık hata kodu|Hata iletisi|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016345912|0x87D100C8|SyncML komutu başarıyla tamamlandı.|
 |-2016346011|0x87D10065|Belirtilen SyncML komutu yürütülüyor, ancak henüz tamamlanmadı.|
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
