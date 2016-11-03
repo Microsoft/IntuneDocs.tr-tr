@@ -3,6 +3,7 @@ title: "Şirket içi EAS için Exchange bağlayıcısı | Microsoft Intune"
 description: "Bağlayıcı aracını kullanarak, Exchange ActiveSync MDM için Intune yönetim konsoluyla şirket içi Exchange Server arasında iletişimi etkinleştirin."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 07ed8c922d53169839bba50547f56bbc979d58ac
 
 
 ---
@@ -31,7 +32,7 @@ Aşağıdaki tabloda Şirket İçi Exchange Bağlayıcısı’nı yüklediğiniz
 |---------------|--------------------|
 |İşletim sistemleri|Intune; Windows Server 2008 SP2 64 bit, Windows Server 2008 R2, Windows Server 2012 veya Windows Server 2012 R2’nin herhangi bir sürümünü çalıştıran bilgisayarlarda Şirket İçi Exchange Bağlayıcısı’nı destekler.<br /><br />Bağlayıcı hiçbir Sunucu Çekirdeği yüklemesinde desteklenmez.|
 |Microsoft Exchange sürümü|Her iki şirket içi Bağlayıcı için de Microsoft Exchange 2010 SP1 veya üstü ya da eski Exchange Online Dedicated gerekir. Exchange Online Dedicated ortamınızın **yeni** yapılandırmada mı yoksa **eski** yapılandırmada mı olduğunu belirlemek için hesap yöneticinize başvurun.|
-|Mobil cihaz yönetimi yetkilisi| [Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
+|Mobil cihaz yönetimi yetkilisi| [Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama](prerequisites-for-enrollment.md#set-mobile-device-management-authority).|
 |Donanım|Bağlayıcıyı yüklediğiniz bilgisayar 2 GB ram ve 10 GB boş disk alanı en düşük donanımı ile birlikte 1,6 GHz CPU gerektirir.|
 |Active Directory Eşitlemesi|Intune’u Exchange Server'a bağlamak üzere herhangi bir bağlayıcıyı kullanabilmeniz için, yerel kullanıcılarınızın ve güvenlik gruplarınızın Azure Active Directory örneğinizle eşitlenebilmesi amacıyla [Active Directory eşitlemesini](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ayarlamanız gerekir.|
 |Ek yazılım|Bağlayıcıyı barındıran bilgisayara Microsoft .NET Framework 4 ve Windows PowerShell 2.0 tam yüklemesi yapılmalıdır.|
@@ -131,6 +132,6 @@ Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirs
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

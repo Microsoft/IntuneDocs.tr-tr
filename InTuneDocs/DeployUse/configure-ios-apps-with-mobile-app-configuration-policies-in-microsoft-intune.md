@@ -3,8 +3,9 @@ title: "iOS mobil uygulama yapılandırma ilkelerini kullanma | Microsoft Intune
 description: "Kullanıcılar bir iOS uygulamasını çalıştırdığında gerekebilecek ayarları sağlamak için Intune’daki mobil uygulama yapılandırma ilkelerini kullanın."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 917761ab6be2ccd94f32e7d2f12c0ed18d335d41
+ms.sourcegitcommit: 360865bcd97230e264ee3439407e8dd3017d0055
+ms.openlocfilehash: 1f239270c26a70b161e52c24e94ca5c2cae9ca3a
 
 
 ---
@@ -37,7 +38,7 @@ Mobil uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalı�
 Bu ilkeleri doğrudan kullanıcılara ve cihazlara dağıtmazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı dağıtırsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde (genellikle ilk çalıştırıldığında) kullanılır.
 
 > [!TIP]
-> Bu ilke türü şu anda yalnızca iOS 7.1 ve üzeri sistemleri çalıştıran cihazlar için kullanılabilir. Aşağıdaki uygulama yükleme türlerini destekler:
+> Bu ilke türü şu anda yalnızca iOS 8.0 ve üzeri sistemleri çalıştıran cihazlar için kullanılabilir. Aşağıdaki uygulama yükleme türlerini destekler:
 >
 > -   **Uygulama mağazasından yönetilen iOS uygulaması**
 > -   **iOS için uygulama paketi**
@@ -139,6 +140,6 @@ Bir mobil uygulama yapılandırma dosyası oluşturduğunuzda bu biçimi kullana
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

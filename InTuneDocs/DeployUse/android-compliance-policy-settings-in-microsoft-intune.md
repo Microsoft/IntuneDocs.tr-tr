@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: ed8f280de4582863f77e5b0e9cb5dfb2f20159c4
 
 
 ---
@@ -35,7 +35,7 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 -  **Minimum parola uzunluğu:** Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
 
-- **Parola kalitesi:** Android cihazlarda parola gereksinimlerini yapılandırmak için bu ayarı etkinleştirin. Aşağıdakilerden birini seçin:
+- **Parola kalitesi:** Bu ayar, belirttiğiniz parola gereksinimlerinin cihazda yapılandırılıp yapılandırılmadığını algılar. Android cihazlarda kullanıcıların belirli parola gereksinimleri yapılandırmasını gerekli hale getirmek için bu ayarı etkinleştirin. Aşağıdakilerden birini seçin:
   -   **Düşük güvenlik biyometriği**
   - **Gerekli**
   -   **En az sayısal**
@@ -66,7 +66,14 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 - **USB hata ayıklamanın devre dışı bırakılmasını isteyin (Android 4.2 veya sonrası)**: Bu ayar, cihazdaki USB hata ayıklama seçeneğinin etkin olup olmadığının algılanması gerektiğini belirtir.
 - **Cihazların güvenlik tehditleri için taramayı etkinleştirmesini isteyin (Android 4.2-4.4)**: Bu ayar, **Uygulamaları doğrula** özelliğinin cihazda etkinleştirilmesinin gerektiğini belirtir.
 - **En düşük Android güvenlik düzeltme eki düzeyi (Android 6.0 veya sonrası)**: En düşük Android düzeltme eki düzeyini belirtmek için bu ayarı kullanın.  En az bu düzeltme eki düzeyinde olmayan cihazlar uyumsuz kabul edilir. Tarih GG-AA-YYYY biçiminde belirtilmelidir.
+- **Cihaz tehdit korumasının etkinleştirilmesini iste**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. İzin verilen en yüksek tehdit düzeyini seçin. Bu düzey aşağıdakilerden biri olabilir:
 
+  - **Hiçbiri (güvenli)**: Bu, en güvenli ayardır. Bu, cihazda herhangi bir tehdit olamayacağı anlamına gelir. Herhangi bir tehdit düzeyi algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
+  - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
+  - **Orta**: Cihazdaki tehditler düşük veya orta düzeydeyse cihaz, uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
+  - **Yüksek**: Bu, güvenlik düzeyi en düşük olan seçenektir. Temel olarak, tüm tehdit düzeylerine izin verir ve yalnızca raporlama amacıyla kullandığınızda yararlı olabilir.
+
+  Daha fazla ayrıntı için bkz. [Uyumluluk ilkesinde cihaz tehdit koruması kuralını etkinleştirme](enable-device-threat-protection-rule-in-compliance-policy.md).
 
 ## Cihaz özelliği ayarları
 - **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir.
@@ -76,6 +83,6 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

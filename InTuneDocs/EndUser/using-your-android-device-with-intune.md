@@ -3,8 +3,9 @@ title: "Android cihazınızı Intune ile kullanma | Microsoft Intune"
 description: "Android mobil cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 
 
 ---
@@ -22,22 +23,23 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Android cihazınızı Intune ile kullanma
 
-Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlerin bağlantılarını içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettiği ve aşağıdaki kategorilere ayrılan adımları görmek için bu bilgiye başvurabilir: 
+Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlerin bağlantılarını içerir. BT yöneticileri, aşağıdaki kategorilerde gruplanmış olan çeşitli görevleri gerçekleştirmek üzere kullanıcıların atması gereken adımları görmek için bu bilgilere başvurabilir:
 
-- Şirket portalı uygulamasının yüklenmesi ve Intune kaydı 
+- Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
 - Kayıt sonrası yönetim görevleri
 - Uyumluluk sorunları
 
 ## Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
 
-Bu bölümdeki bilgiler, Intune Şirket Portalı’nı yüklemenize ve Android cihazlarını kaydetmenize yardımcı olur.
+Bu bölümdeki bilgiler, Android cihazlarda Intune Şirket Portalı’nı yükleme ve cihaz kaydında size yardımcı olur.
 
 - [Cihazınızı Intune’a kaydetme](enroll-your-device-in-Intune-android.md)
+- [Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Cihazınız Intune’a kaydolduğunda yapabilecekleriniz
 
-Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildikten sonra gerçekleştirebileceğiniz eylemlerde yardımcı olur.
+Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildikten sonra yapabileceğiniz işlemlerde size yardımcı olur.
 
 - [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-android.md)
 - [Cihazınızı şifreleme](encrypt-your-device-android.md)
@@ -54,7 +56,7 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildikten sonra ger
 
 ## Cihazınızla ilgili sorunları giderme
 
-Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşılaşabileceğiniz sorunları düzeltmenize yardımcı olur.
+Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşılaşabileceğiniz sorunların çözümünde size yardımcı olur.
 
 - [BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olmak için Ayrıntılı Günlük kullanın](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
@@ -68,9 +70,11 @@ Bu bölümdeki bilgiler, Android cihazınız Intune’a kaydedildiğinde karşı
 - [USB hata ayıklamayı kapatmanız istenir](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [Cihazı güvenlik tehditleri için taramayı açmanız istenir](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [Cihazınız en düşük güvenlik düzeltme ekini karşılamıyor](your-device-does-not-meet-the-minimum-security-patch-android.md)
+- [Android cihazınızda Lookout for Work uygulamasını yüklemeniz istendi](you-are-prompted-to-install-lookout-for-work-android.md)
+- [Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -14,18 +14,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: afe5beb508796244b914d6b0bae59eaa571e9c3a
+ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
+ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
 
 
 ---
 
 
 # Windows cihazınızı el ile eşitleme
-Uygulama yüklemeniz fazla uzun sürüyorsa, Windows cihazınızı el ile eşitlemek için aşağıdaki yönergeleri izleyin. Bu işlem, yüklemenin hızlanmasına yardımcı olabilir. Yalnızca listelenen sürümler desteklenir. Yukarıdaki "Bu Makalede" bölümünde gösterilen ve sahip olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
+Uygulamanızın yüklenmesi çok uzun sürerse, Windows cihazınızı el ile eşitlemeyi deneyebilirsiniz. El ile eşitleme, yükleme hızını artırmaya yardımcı olabilir.
+
+Yalnızca aşağıdaki sürümler desteklenir. Sahip olduğunuz cihazın türüyle eşleşen yönergeleri kullanın.
 
 * [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 Masaüstü](#windows-10-desktop)
+* [Windows 10 masaüstü](#windows-10-desktop)
 * [Windows Phone 8.1](#windows-phone-8-1)
 
 
@@ -34,44 +36,44 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 
 
 1. **Tüm uygulamalar** > **Ayarlar** > **Hesaplar**’a gidin.
 
-    ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
+    ![Ayarları ekranında Hesapları Seçme](./media/win10m-sync-1-settings-accounts.png)
 
-2. **İş yeri erişimi**’ne dokunun.
+2. **İş yeri erişimi**’ni seçin.
 
-    ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
+    ![Hesap türü olarak iş yeri erişimini seçme](./media/win10m-sync-2-work-access.png)
 
-3. **Cihaz yönetimine kaydol**’un altında, aşağıda gösterildiği gibi şirketinizin adına dokunun.
+3. **Cihaz yönetimine kaydol**’un altında, şirketinizin adını seçin.
 
-    ![win10m-sync-3-tap-comp-name](./media/win10m-sync-3-tap-comp-name.png)
+    ![Cihaz yönetimi için şirket adı seçme](./media/win10m-sync-3-tap-comp-name.png)
 
-4. **Eşitle** simgesine dokunun.
+4. **Eşitle** simgesini seçin.
 
-    ![win10m-sync-4-tap-sync](./media/win10m-sync-4-tap-sync.png)
+    ![Eşitleme simgesini seçme](./media/win10m-sync-4-tap-sync.png)
 
-    Ekranın en üstünde “Hesabınızı senkronize ediyoruz” iletisi görüntülenir. Cihazınızın eşitlenmesi bitene kadar Eşitle düğmesi gri gösterilir.
+    Ekranın en üstünde “Hesabınızı eşitliyoruz” iletisi görüntülenir. Cihazınızın eşitlenmesi bitene kadar **Eşitle** düğmesi gri gösterilir.
 
 ## Windows 10 masaüstü
 Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 masaüstü cihazınızı el ile eşitlemek için:
 
-1. Aşağıda gösterildiği gibi **Başlat** düğmesini seçin ve sonra da **Ayarlar**’ı seçin.
+1. **Başlat** düğmesini ve ardından **Ayarlar**’ı seçin.
 
-    ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
+    ![Başlat düğmesi](./media/win10pc-sync-1-start-button.png)
 
 2. **Ayarlar** sayfasında **Hesaplar**’ı seçin.
 
-    ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
+    ![Ayarlar sayfasında Hesapları seçme](./media/win10pc-sync-2-settings-accounts.png)
 
 3. **Hesaplar** sayfasında **İş yeri erişimi**’ni seçin.
 
-    ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
+    ![Hesap türü olarak iş yeri erişimini seçme](./media/win10pc-sync-3-work-access.png)
 
-4. **Cihaz yönetimine kaydol** bölümünün altında, aşağıda mavi vurguyla gösterildiği gibi şirketinizin adına tıklayın.
+4. **Cihaz yönetimine kaydol** bölümünün altında şirketinizin adını seçin.
 
-    ![win10pc-sync-4-tap-com-name](./media/win10pc-sync-4-tap-com-name.png)
+    ![Cihaz yönetimi için şirket adı seçme](./media/win10pc-sync-4-tap-com-name.png)
 
 5. **Eşitle** düğmesini seçin.
 
-    ![win10pc-sync-5-tap-sync](./media/win10pc-sync-5-tap-sync.png)
+    ![Eşitleme düğmesini seçme](./media/win10pc-sync-5-tap-sync.png)
 
    Eşitleme işlemi tamamlanana kadar düğme gri gösterilir.
 
@@ -80,24 +82,22 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows Pho
 
 1. **Tüm uygulamalar** > **Ayarlar** > **çalışma alanı**’na gidin.
 
-    ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
+    ![Ayarlar listesi](./media/wp81-1-sync-settings-workplace.png)
 
-2. Aşağıda mavi vurguyla gösterildiği gibi şirketinizin adına dokunun.
+2. Şirketinizin adını seçin.
 
-    ![wp81-2-sync-tap-compname](./media/wp81-2-sync-tap-compname.png)
+    ![Çalışma alanı hesabı için şirket adını seçme](./media/wp81-2-sync-tap-compname.png)
 
-3. **Eşitle** simgesine dokunun.
+3. **Eşitle** simgesini seçin.
 
-    ![wp81-3-sync-tap-sync-button](./media/wp81-3-sync-tap-sync-button.png)
+    ![Eşitleme simgesini seçme](./media/wp81-3-sync-tap-sync-button.png)
 
-   Cihazınızın eşitlenmesi bitene kadar, ekranın en üstünde “Hesabınızı senkronize ediyoruz” iletisi görüntülenir.
+   Cihazınızın eşitlenmesi bitene kadar, ekranın en üstünde “Hesabınızı eşitliyoruz” iletisi görüntülenir.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

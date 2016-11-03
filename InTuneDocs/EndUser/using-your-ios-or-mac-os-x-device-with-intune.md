@@ -4,7 +4,7 @@ description: "iOS veya Mac OS X mobil cihazınız Intune’a kaydolduğunda ciha
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 08/10/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 6e84676a8ea1e149f73871ef1468c2da80fa221c
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlerin bağlantılarını içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettiği ve aşağıdaki kategorilere ayrılan adımları görmek için bu bilgiye başvurabilir: 
-- Şirket portalı uygulamasının yüklenmesi ve Intune kaydı 
+Bu makale, kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlere bağlantılar içerir. BT yöneticileri, aşağıdaki kategorilerde gruplanmış olan çeşitli görevleri gerçekleştirmek üzere kullanıcıların atması gereken adımları görmek için bu bilgilere başvurabilir:
+- Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
 - Kayıt sonrası yönetim görevleri
 - Uyumluluk sorunları
 
@@ -64,6 +64,6 @@ Bu bölümdeki bilgiler, iOS cihazınız Intune’a kaydedildiğinde karşılaş
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 

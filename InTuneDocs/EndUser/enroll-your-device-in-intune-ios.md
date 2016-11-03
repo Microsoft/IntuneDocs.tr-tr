@@ -3,6 +3,7 @@ title: "iOS cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "iOS cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3d8b33e5227ed7d13ffc0e6fb7867618c48cac6f
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
 
 
 ---
@@ -23,10 +24,15 @@ ms.openlocfilehash: 3d8b33e5227ed7d13ffc0e6fb7867618c48cac6f
 
 # iOS cihazınızı Intune'a kaydetme
 
-Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için iOS cihazınızı kaydedebilirsiniz. Cihazlarınızı kaydetme, BT departmanınızın bu iş veya okul kaynaklarını yönetmenize ve bunları güvenli halde tutmanıza olanak tanırken, işlerinizi için tamamlamak için, tercih ettiğiniz cihazı kullanma özgürlüğünü sağlar. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için iOS cihazınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, BT departmanınız bu iş veya okul kaynaklarını yönetebilir, bunların güvenli kalmasını sağlayabilir ve size işlerinizi tamamlamak için tercih ettiğiniz cihazı kullanma özgürlüğünü tanıyabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
 Mac OS X cihazı kaydetmeye çalışıyorsanız, bkz. [Mac OS X cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-mac-os-x.md).
 
+**Başlamadan önce:**
+
+- Adımları başlattıktan sonra kaydetme işlemini tamamladığınızdan emin olun. Başlatırsanız ancak tamamlamazsanız, tekrar denediğinizde kayıt çalışmayabilir.
+- Wi-Fi ağınızın çalışır durumda olduğundan emin olun. Aksi durumda kayıt başarısız olur.
+- Cihazınızda Safari engellenmişse, engeli kaldırın. Kaydetmek için Safari kullanmanız gerekir.
 
 
 **iOS cihazınızı kaydetmek için:**
@@ -41,7 +47,7 @@ Mac OS X cihazı kaydetmeye çalışıyorsanız, bkz. [Mac OS X cihazınızı In
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-4. BT yöneticinizin, kaydedilen cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirin ve **Devam**’a dokunun.
+4. BT yöneticinizin kayıtlı cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirip **Devam**’a dokunun.
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -69,7 +75,7 @@ Mac OS X cihazı kaydetmeye çalışıyorsanız, bkz. [Mac OS X cihazınızı In
 
     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
-    Ekranda bir "Cihaz kaydediliyor" iletisi görüntüler.
+    Ekranda bir "Cihaz kaydediliyor" iletisi görünür.
 
 11.  Sayfayı Şirket Portalı’nda açmak isteyip istemediğiniz sorulan bir ileti görüntülendiğinde, **Aç**’a dokunun.
 
@@ -85,12 +91,11 @@ Mac OS X cihazı kaydetmeye çalışıyorsanız, bkz. [Mac OS X cihazınızı In
 
 Cihazınız artık Intune'a kaydedilmiştir ve sonra Şirket Portalı uygulamasına geri götürülürsünüz.
 
+
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

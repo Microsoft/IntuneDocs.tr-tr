@@ -1,5 +1,6 @@
 # [Anlama ve Keşfetme](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Başlat](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Başlarken](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Yenilikler](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Dağıtma ve Kullanma](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Uygulama Geliştirme ve Özelleştirme](intune-app-sdk.md)
 ## [Microsoft Intune Uygulama SDK'sına Genel Bakış](intune-app-sdk.md)
@@ -9,6 +10,6 @@
 # [Sorunları Gider](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

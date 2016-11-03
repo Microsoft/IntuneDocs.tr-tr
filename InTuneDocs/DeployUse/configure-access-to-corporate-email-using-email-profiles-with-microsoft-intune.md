@@ -4,7 +4,7 @@ description: "E-posta profili ayarları, mobil cihazlarda belirli e-posta istemc
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: befe1b3446770509c83a360c854993d4aaada09d
+ms.openlocfilehash: 1bd5d64dfff1cf1fc42247c5f89861e216da77d5
 
 
 ---
@@ -31,23 +31,28 @@ BT yöneticileri veya kullanıcılar, Android ve iOS için Microsoft Outlook gib
 Aşağıdaki cihaz türlerinde yerel e-posta istemcisini yapılandırmak için e-posta profillerini kullanabilirsiniz:
 -   Windows Phone 8 ve üzeri
 -   Windows 10 (masaüstü için), Windows 10 Mobile ve üzeri
--   iOS 7.1 ve üzeri
+-   iOS 8.0 ve üzeri
 -   Samsung KNOX Standard (4.0 ve üzeri)
+-   Android for Work
+
+>[!NOTE]
+>Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur ve Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun profili oluşturup dağıtın 
 
 Cihazda bir e-posta hesabı ayarlamaya ek olarak, ne kadar e-postanın eşitleneceğini ve cihaz türüne bağlı olarak eşitlenecek içerik türlerini de ayarlayabilirsiniz.
+
 >[!NOTE]
 >
 >Intune tarafından profil ayarlanmadan önce kullanıcı bir e-posta profili yüklediyse, Intune e-posta profili dağıtımının sonucu cihaz platformuna bağlıdır:
-
-[comment]: <> Passive construction in next three paragraphs is necessary until the process of duplicate detection is made clear by PM.
 
 >**iOS**: Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmıştır. Kullanıcı tarafından oluşturulmuş yinelenen e-posta profili, Intune yöneticisinin oluşturduğu profilin dağıtımını engeller. iOS kullanıcıları normalde e-posta profili oluşturduğundan ve ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, el ile yapılandırılan e-posta profilinden dolayı uyumlu olmadığını kullanıcıya bildirir ve kullanıcıdan söz konusu profili kaldırmasını ister. Intune profilinin ayarlanabilmesi için, kullanıcının e-posta profilini kaldırması gerekir. Bu sorunun önüne geçmek için, kullanıcılarınızdan bir e-posta profilini yüklemeden önce kaydolmalarını ve Intune’un profili ayarlamasına izin vermelerini isteyin.
 
 >**Windows**: Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmıştır. Intune kullanıcı tarafından oluşturulmuş, var olan e-posta profilinin üzerine yazar.
 
->**Samsung KNOX**: E-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmış ve Inture profili bunun üzerine yazılmıştır. Kullanıcı bu hesabı ayarlarsa, Intune profili tarafından hesabın üzerine yeniden yazılır. Bu durumun kullanıcıda kafa karışıklığına neden olabileceğini unutmayın.
+>**Samsung KNOX**: E-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmış ve Intune profili bunun üzerine yazılmıştır. Kullanıcı bu hesabı ayarlarsa, Intune profili tarafından hesabın üzerine yeniden yazılır. Bu durumun kullanıcıda kafa karışıklığına neden olabileceğini unutmayın.
 
 >Samsung KNOX’un profili algılamak için konak adını kullanmaması nedeniyle, farklı konaklarda aynı e-posta adresinde kullanmak üzere birden çok e-posta profili oluşturursanız bunlar birbirinin üzerine yazılacağından, bunu yapmamanızı öneririz.
+
+>**Android for Work**: Intune profili yalnızca cihazın iş profiline uygulanır ve cihazın kullanıcı profilindeki e-posta profillerini etkilemez.
 
 
 ## E-posta profillerinin güvenliğini sağlama
@@ -71,11 +76,15 @@ E-posta profilinde parola bulunmadığından, e-postaya bağlanırken kullanıc�
 
     -   **Samsung KNOX Standard (4.0 ve üzeri) için E-posta Profili**
 
-    -   **E-posta Profili (iOS 7.1 ve üzeri)**
+    -   **E-posta Profili (iOS 8.0 ve üzeri)**
 
     -   **E-posta Profili (Windows Phone 8 ve üzeri)**
 
     -   **E-posta Profili (Windows 10 Masaüstü ile Mobile ve üzeri)**
+    
+    -   **E-posta Profili (Android for Work  - Gmail)**
+
+    -   **E-posta Profili (Android for Work  - Nine Work)**
 
     Yalnızca özel bir e-posta profili ilkesi oluşturup dağıtabilirsiniz. Önerilen ayarlar kullanılamaz.
 
@@ -89,14 +98,14 @@ E-posta profilinde parola bulunmadığından, e-postaya bağlanırken kullanıc�
     |**Hesap adı**|E-posta hesabının, cihazlarda kullanıcılara gösterilecek olan görünen adı.|
     |**Kullanıcı adı**|E-posta hesabı için kullanıcı adının nasıl elde edileceği. Şirket içi Exchange sunucusu için **Kullanıcı Adı**’nı veya Office 365 için **Kullanıcı Asıl Adı**’nı seçin.|
     |**E-posta adresi**|E-posta adresinin her cihazdaki kullanıcı için nasıl oluşturulacağı. Exchange’de oturum açarken birincil SMTP adresini kullanmak için **Birincil SMTP Adresi**’ni veya e-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı Asıl Adı**’nı seçin.|
-    |**Kimlik doğrulama yöntemi** (Samsung KNOX ve iOS)|E-posta profili tarafından kullanılan kimlik doğrulama yöntemi olarak **Kullanıcı Adı ve Parola**’yı veya **Sertifikalar**’ı seçin.|
-    |**İstemci kimlik doğrulaması (Kimlik Sertifikası) için bir istemci sertifikası seçin** (Samsung KNOX ve iOS)|Exchange bağlantısının kimliğini doğrulamak için kullanılacak, daha önce oluşturduğunuz istemci SCEP sertifikasını seçin. Intune’da sertifika profillerini kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md). Bu seçenek yalnızca kimlik doğrulama yöntemi **Sertifikalar** olduğunda görüntülenir.|
+    |**Kimlik doğrulama yöntemi** (Android for Work, Samsung KNOX ve iOS)|E-posta profili tarafından kullanılan kimlik doğrulama yöntemi olarak **Kullanıcı Adı ve Parola**’yı veya **Sertifikalar**’ı seçin.|
+    |**İstemci kimlik doğrulaması (Kimlik Sertifikası) için bir istemci sertifikası seçin** (Android for Work, Samsung KNOX ve iOS)|Exchange bağlantısının kimliğini doğrulamak için kullanılacak, daha önce oluşturduğunuz istemci SCEP sertifikasını seçin. Intune’da sertifika profillerini kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md). Bu seçenek yalnızca kimlik doğrulama yöntemi **Sertifikalar** olduğunda görüntülenir.|
     |**S/MIME kullan** (Samsung KNOX ve iOS)|S/MIME şifrelemesi kullanarak giden e-posta gönderin.|
     |**İmzalama sertifikası** (Samsung KNOX ve iOS)|Giden e-postayı imzalamak için kullanılan imzalama sertifikasını seçin. Bu seçenek yalnızca **S/MIME kullan**’ı seçtiğinizde görüntülenir.|
     |**E-posta eşitlemek için gün sayısı**|Eşitlemek istediğiniz e-posta sayısı; tüm kullanılabilir e-postaları eşitlemek için **Sınırsız**’ı seçin.|
-    |**Eşitleme zamanlaması** (Samsung KNOX, Windows Phone 8 ve üstü, Windows 10)|Cihazların Exchange sunucusundan verileri eşitleyeceği zamanlamayı seçin. Ayrıca, verileri ulaşır ulaşmaz eşitleyen **İletiler geldiğinde** seçeneğini veya eşitlemenin cihaz kullanıcısı tarafından başlatılmasını gerektiren **El ile** seçeneğini belirleyebilirsiniz.|
+    |**Eşitleme zamanlaması** (Android for Work, Samsung KNOX, Windows Phone 8 ve üzeri, Windows 10)|Cihazların Exchange sunucusundan verileri eşitleyeceği zamanlamayı seçin. Ayrıca, verileri ulaşır ulaşmaz eşitleyen **İletiler geldiğinde** seçeneğini veya eşitlemenin cihaz kullanıcısı tarafından başlatılmasını gerektiren **El ile** seçeneğini belirleyebilirsiniz.|
     |**SSL Kullan**|E-posta gönderirken, e-posta alırken ve Exchange sunucusuyla iletişim kurarken Güvenli Yuva Katmanı (SSL) iletişimini kullanın. Samsung KNOX 4.0 veya üzeri bir sürümü çalıştıran cihazlarda Exchange Server SSL sertifikasını dışarı aktarmanız ve Intune’da bunu Android Güvenilir Sertifika Profili olarak dağıtmanız gerekir. Intune, Exchange sunucusuna başka yollarla yüklenirse bu sertifikaya erişimi desteklemez.|
-    |**Eşitlenecek içerik türü**|Cihazlara eşitlemek için istediğiniz içerik türlerini seçin.|
+    |**Eşitlenecek içerik türü** (Android for Work Gmail harici tüm platformlar)|Cihazlara eşitlemek için istediğiniz içerik türlerini seçin.|
     |**Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver** (yalnızca iOS)|Kullanıcının, bu profili, e-posta göndermek için varsayılan hesap olarak seçmesini sağlayın ve üçüncü taraf uygulamalarının, yerel e-posta uygulamasında e-postayı açmasına izin verin (örneğin e-postaya dosya eklemek için).|
     > [!IMPORTANT]
     > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
@@ -122,6 +131,6 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
-ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 2b44779fdac0764a3e7a18f1c365050e9800f902
 
 
 ---
 
 # Microsoft Intune için Etkinleştirme Kilidi’ni atlama ile iOS cihazlarının korunmasına yardımcı olma
-Microsoft Intune, iOS 7.1 ve daha sonraki sürümlere sahip cihazlar için iPhone’umu Bul uygulamasının bir özelliği olan iOS Etkinleştirme Kilidi’ni yönetmenize yardımcı olabilir. Bir cihazda kullanıcı tarafından iPhone’umu Bul uygulaması açıldığında Etkinleştirme Kilidi otomatik olarak etkinleştirilir. Bu özellik etkinleştirildikten sonra şunların yapılabilmesi için Apple kimliği ve parolasının girilmesi gerekir: 
+Microsoft Intune, iOS 8.0 ve daha sonraki sürümlere sahip cihazlar için iPhone’umu Bul uygulamasının bir özelliği olan iOS Etkinleştirme Kilidi’ni yönetmenize yardımcı olabilir. Bir cihazda kullanıcı tarafından iPhone’umu Bul uygulaması açıldığında Etkinleştirme Kilidi otomatik olarak etkinleştirilir. Bu özellik etkinleştirildikten sonra şunların yapılabilmesi için Apple kimliği ve parolasının girilmesi gerekir: 
 
 -   iPhone’umu Bul özelliğini kapatma
 
@@ -43,7 +43,7 @@ Apple bu sorunların çözülmesine yardımcı olmak için iOS 7.1’de Etkinle�
 > iOS cihazları için denetimli mod, Apple Configurator’ı kullanarak bir cihazı kilitlemenize ve cihaz işlevselliğini işe dönük belirli amaçlarla sınırlandırmanıza imkan tanır. Denetimli mod genellikle yalnızca şirkete ait cihazlar içindir.
 
 ## Intune, Etkinleştirme Kilidi’ni yönetmenize nasıl yardımcı olur
-Intune, iOS 7.1 ve sonraki sürümleri çalıştıran hem denetimli hem de denetimsiz cihazların Etkinleştirme Kilidi durumunu isteyebilir. Intune, yalnızca denetlenen cihazlar için Etkinleştirme Kilidi atlama kodunu alabilir ve doğrudan cihaza gönderebilir. Cihaz silinmişse, kodu kullanıcı adı gibi kullanıp parolayı boş bırakarak cihaza doğrudan erişebilirsiniz.
+Intune, iOS 8.0 ve üzerini çalıştıran hem denetimli hem de denetimsiz cihazların Etkinleştirme Kilidi durumunu isteyebilir. Intune, yalnızca denetlenen cihazlar için Etkinleştirme Kilidi atlama kodunu alabilir ve doğrudan cihaza gönderebilir. Cihaz silinmişse, kodu kullanıcı adı gibi kullanıp parolayı boş bırakarak cihaza doğrudan erişebilirsiniz.
 
 **Bu özelliğin işletme açısından faydaları şunlardır:**
 
@@ -76,7 +76,7 @@ Hangi cihazların Etkinleştirme Kilidi kullandığını iki yolla görebilirsin
 
     -   Etkin değil
 
-    **Etkinleştirme Kilidi Durumu** kutusu, iOS 7.1 veya sonraki sürümleri çalıştırmayan cihazlar için boştur.
+    **Etkinleştirme Kilidi Durumu** kutusu, iOS 8.0 veya üzerini çalıştırmayan cihazlar için boştur.
 
 -   Cihaz ayrıntıları bölmesinde Etkinleştirme Kilidi durumunu görmek için grup görünümünde bir cihaz seçin.
 
@@ -92,6 +92,6 @@ Hangi cihazların Etkinleştirme Kilidi kullandığını iki yolla görebilirsin
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

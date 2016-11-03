@@ -1,54 +1,33 @@
 ---
-title: "Kaybolan veya çalınan Android cihazınızı sıfırlama (silme) | Microsoft Intune"
+title: "Android cihazınızdaki uyumluluk denetimi | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
+ms.assetid: d98d9bbe-98fa-48a9-8808-110435eac9e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 2b759c45a045fff29c6d21a16b3798482886d587
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: e5f519253cfa380a973db428bc5acaac3a2101df
 
 
 ---
 
 
-# Kaybolan veya çalınan Android cihazınızı sıfırlama (silme)
+# Android Cihazınızda uyumluluk denetimi
 
-Intune’a kaydedilmiş bir telefon kaybolduysa veya çalındıysa, farklı bir cihazdan Şirket Portalı uygulamasını kullanarak veya [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanarak cihazı varsayılan fabrika ayarlarına sıfırlayabilirsiniz.
+Cihazınız bir süredir Intune’da oturum açmadıysa, şirket veya okul kaynaklarına erişemeyebilirsiniz. Yeniden erişim kazanmak için aşağıdakileri deneyin:
 
-Cihazınızı sıfırladığınızda ne olduğu hakkında daha fazla bilgi için, bkz. [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
+1. Cihazınızda Android Şirket Portalı uygulamasını açın.
 
-> [!WARNING]
-> Cihaz fabrika varsayılanlarına sıfırlandığında hem kişisel hem de iş veya okul ile ilgili bilgileriniz cihazdan kaldırılır.
-
-## Cihazınızı Şirket Portalı uygulamasından sıfırlamak için
-
-1.  Kayıtlı başka bir cihazdan Şirket Portalı uygulamasını açın ve iş veya okul hesabınızı kullanarak giriş yapın.
-
-2.  **Cihazlarım**’a dokunun ve kaybolan veya çalınan cihazın adını seçin.
-
-3.  **Sıfırla** &gt; **Sıfırla**’ya tıklayın.
-
-## Cihazınızı Şirket Portalı web sitesini kullanarak sıfırlamak için
-
-Aşağıdaki adımları kullanabilir veya bu videoyu izleyebilirsiniz:
-
-<iframe width="675" height="379" src="https://www.youtube.com/embed/6e73o7f8gxE" frameborder="0" allowfullscreen></iframe>
-
-1.  Tarayıcınızda [Şirket Portalı web sitenizi](http://portal.manage.microsoft.com) açın ve iş hesabınızda oturum açın.
-
-2.  **Cihazlarım** altında kayıp veya çalıntı cihaz seçeneğini belirleyin.
-
-3.  **Sıfırla** &gt; **Sıfırla**’ya dokunun.
+2. 
 
 Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
@@ -56,6 +35,6 @@ Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

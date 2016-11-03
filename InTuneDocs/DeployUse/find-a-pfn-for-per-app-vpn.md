@@ -68,7 +68,7 @@ OneNote için şu bilgiler alınır:
 
 ## Uygulama bilgisayarda yüklü olmadığında bir PFN bulma
 
-1.  Https://www.microsoft.com/en-us/store/apps adresine gidin.
+1.  https://www.microsoft.com/en-us/store/apps adresine gidin.
 2.  Arama çubuğuna uygulamanın adını girin. Bizim örneğimizde, OneNote için arama yapın.
 3.  Uygulamanın bağlantısını seçin. URL’nin sonunda bir dizi harf olduğuna dikkat edin. Bizim örneğimizde, URL şöyle görünür: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
 4.  Farklı bir sekmede, şu URL’yi yapıştırın: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. `<app id>` bölümünü, https://www.microsoft.com/en-us/store/apps adresinden aldığınız uygulama kimliğiyle değiştirin (3. adımındaki URL’nin sonunda yer alan harf serisi). Bizim OneNote örneğimizde, şunu yapıştırırsınız: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.

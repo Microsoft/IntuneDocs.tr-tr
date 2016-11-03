@@ -3,6 +3,7 @@ title: "Android kullanıcılarınız uygulamalarını nasıl alır | Microsoft I
 description: "Android uygulamalarını son kullanıcılara sağlama yöntemleri"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 90f50d14fac0e335f3b7c5e0825b0bb243b7a532
+ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
+ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
 
 
 ---
 
 
 # Android kullanıcılarınız uygulamalarını nasıl alır
-Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın. Yerel Android cihazlarıyla Samsung Knox cihazlarına yönelik bilgiler farklı olabilir.
+Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın. Bilgiler cihaz türüne göre değişebilir (yerel Android cihazları veya Samsung Knox cihazları).
 
 ## Yerel (Samsung Knox olmayan) Android cihazları
 
@@ -39,17 +40,19 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son k
 
 Uygulamalar, aşağıda açıklandığı gibi yönetilebilir veya yönetilmeyebilir. Uygulamaları yönetilen uygulama yapma işlemi, tüm Android cihaz türlerinde aynıdır.
 
-**Yönetilen uygulamalar** - İlkeler aracılığıyla yönetilebilen ve Intune tarafından “sarmalanmış" veya Intune Mobil Uygulama Yönetimi (MAM) Yazılım Geliştirme Seti (SDK) ile oluşturulmuş uygulamalar. Bu uygulamalar Intune tarafından yönetilebilir ve uygulama ilkeleri uygulanabilir.
+**Yönetilen uygulamalar** - İlkeler aracılığıyla yönetilebilen uygulamalardır. Intune tarafından “sarmalanmış" veya Intune Mobil Uygulama Yönetimi (MAM) Yazılım Geliştirme Seti (SDK) ile oluşturulmuş uygulamalardır. Bu uygulamalar Intune tarafından yönetilebilir ve uygulama ilkeleri uygulanabilir.
 
-**Yönetilmeyen uygulamalar** - İlkeler aracılığıyla yönetilebilen ve Intune tarafından sarmalanmamış veya Intune MAM SDK’sini içermeyen uygulamalar. Uygulama ilkeleri bu uygulamalara uygulanamaz.
+**Yönetilmeyen uygulamalar** - İlkeler aracılığıyla yönetilemeyen uygulamalardır. Intune tarafından sarmalanmamış veya Intune MAM SDK’sini içermeyen uygulamalardır. Uygulama ilkeleri bu uygulamalara uygulanamaz.
 
 ### Ayrıca bkz.
-[Microsoft Intune ile uygulamalar ekleme](/intune/deploy-use/add-apps)
-[IOS kullanıcılarınız uygulamalarını nasıl alır](how-your-ios-users-get-their-apps.md)
+[Microsoft Intune’la uygulamaları ekleme](/intune/deploy-use/add-apps)
+
+[iOS kullanıcılarınız uygulamalarını nasıl alır](how-your-ios-users-get-their-apps.md)
+
 [Windows kullanıcılarınız uygulamalarını nasıl alır](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

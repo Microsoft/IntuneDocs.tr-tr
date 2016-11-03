@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 3fd4b6dbac9b3ad41ed0aedba7fecfb117193d50
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Mevcut şirket e-posta hesabı bulundu
-Zaten bir şirket e-posta hesabınız var. Şirket e-postasına bağlanmaya devam edebilmek için, aşağıdaki adımları izleyerek BT yöneticinizin hesabınızı düzgün bir şekilde ayarlaması ve yönetmesini sağlamalısınız:
+Zaten bir şirket e-posta hesabınız var. Şirket e-postasına bağlanmaya devam edebilmek için BT yöneticinizin hesabınızı düzgün bir şekilde ayarlaması ve yönetmesini sağlamak üzere aşağıdaki adımları uygulayın:
 
 1.  Cihazınızdaki **Ayarlar** altında, daha önce şirket e-postanıza ayarlamış olduğunuz bağlantıyı kaldırın.
 
@@ -35,6 +35,6 @@ Yeni e-posta ayarları bir süre sonra gösterilmezse, BT yöneticinize başvuru
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

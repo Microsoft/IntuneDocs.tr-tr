@@ -1,10 +1,11 @@
 ---
 title: "BT yöneticinize hataları gönderme | Microsoft Intune"
-description: 
+description: "Yöneticinize hataları gönderme"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,27 +15,25 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 5a2a53e1fa012c2b786d5955749d1f8442a32030
+ms.sourcegitcommit: 881a2d90a863f5c7f3809f890bb82850b6145982
+ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 
 
 ---
 
 
-# BT yöneticinize hataları gönderme
+# <a name="send-errors-to-your-it-admin"></a>BT yöneticinize hataları gönderme
 
 Şirket Portalı uygulamasını kullanırken iOS cihazınızda hata alırsanız, BT yöneticinizin sorunu gidermesine yardımcı olmak için bilgileri gönderebilirsiniz. Hata bilgilerini farklı yollarla gönderebilirsiniz:
 
--   Hata uyarı iletilerinde: **Rapor**’a dokunun.
+-   Hata uyarı iletilerinde **Rapor**’a dokunun.
 
 -   Şirket Portalı uygulamasının **Hakkında** ekranında: **Tanılama Raporu Gönder**’e dokunun.
 
--   Şirket Portalı uygulamasındayken: cihazınızı sallayın ve ardından tanılama uyarısı görüntülendiğinde **E-posta**’ya dokunun. Cihazı salladığınızda uyarı görüntülenmezse, **Ayarlar** &gt; **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
+-   Şirket Portalı uygulamasında, cihazınızı sallayın ve ardından tanılama uyarısı görüntülendiğinde **E-posta**’ya dokunun. Cihazı salladığınızda uyarı görüntülenmezse, **Ayarlar** &gt; **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

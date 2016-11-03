@@ -3,8 +3,9 @@ title: "Cihazımda seri numarasını nasıl bulabilirim? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 3831b4897596c7b49caaee76cb7063bab4399216
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
 
 # Cihazımda seri numarasını nasıl bulabilirim?
 
-iOS 7.1 ve üstünü çalıştıran cihazlarda **Ayarlar** simgesine, **Genel** > **Hakkında** öğesine dokunun ve ardından **Seri Numarası**’nı bulana kadar aşağıya kaydırın.
+iOS 8.0 ve üzerini çalıştıran cihazlarda **Ayarlar** simgesine, **Genel** > **Hakkında** öğesine dokunun ve ardından **Seri Numarası**’nı bulana kadar aşağıya kaydırın.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
@@ -31,6 +32,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

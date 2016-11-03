@@ -11,6 +11,12 @@
 ### [Ağ bant genişliği kullanımı](network-bandwidth-use.md)
 ### [Özel etki alanı adları](domain-names-for-microsoft-intune.md)
 
+## [Cihazların nasıl yönetileceğini seçme](choose-how-to-manage-devices.md)
+### [Kayıtlı cihaz yönetimi özellikleri](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Intune bilgisayar yazılımı istemcisi özellikleri](windows-pc-management-capabilities-in-microsoft-intune.md)
+
+## [Intune’a geçiş](migrate-to-intune.md)
+
 ## [Intune hızlı başlangıç kılavuzu](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Intune'da oturum açma](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Özel bir etki alanı adı yapılandırma](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -22,10 +28,6 @@
 ### [Mobil cihazları kaydetme ve uygulama yükleme](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Yapılandırma sonrası görevleri](post-configuration-tasks.md)
 
-## [Cihazların nasıl yönetileceğini seçme](choose-how-to-manage-devices.md)
-### [Kayıtlı cihaz yönetimi özellikleri](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Intune bilgisayar yazılımı istemcisi özellikleri](windows-pc-management-capabilities-in-microsoft-intune.md)
-
 ## [Intune dağıtımlarının aşamaları](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Proje kapsamı](project-scope.md)
 ### [Kavram kanıtı](proof-of-concept.md)
@@ -34,11 +36,12 @@
 ### [İşlemler ve bakım](operations-and-maintenance.md)
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
+# [Yenilikler](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Dağıtma ve Kullanma](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

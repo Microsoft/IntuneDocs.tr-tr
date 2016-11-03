@@ -3,6 +3,7 @@ title: "Mobil cihazları kaydetme ve uygulama yükleme | Microsoft Intune"
 description: "Mobil cihazları kaydetme ve Intune’a kayıtlı bir cihaza uygulama yükleme işlemleri açıklanır"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 182601f7e4a4bd38c70f7961188eb4af593f6107
+ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
+ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
 
 
 ---
@@ -52,7 +53,7 @@ Bu hızlı başlangıç kılavuzunun [6. adımında](start-with-a-paid-subscript
 
 Kaydedilen mobil cihazda Şirket Portalı’nı açın, **Uygulamalar**'ı seçin ve ardından **Microsoft Skype**'ı yükleyin.
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanarak mobil cihaz yönetimi hakkında daha fazla bilgi için, bkz. [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanarak mobil cihaz yönetimi hakkında daha fazla bilgi için bkz. [Microsoft Intune’da cihazları kaydetmenin önkoşulları](/intune/deploy-use/prerequisites-for-enrollment).
 
 
 ### Sonraki adımlar
@@ -64,6 +65,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* son adımını da tamamlam
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

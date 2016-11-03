@@ -1,6 +1,6 @@
 ---
 title: "Genel Windows bilgisayarı yönetim görevleri | Microsoft Intune"
-description: "Intune bilgisayar istemcisi yazılımını çalıştıran bilgisayarlarınızı nasıl yöneteceğinizi öğrenmek için bu konu başlığı altındaki görevleri gözden geçirin."
+description: "Intune yazılım istemcisini çalıştıran Windows bilgisayarlarının nasıl yönetileceğini öğrenmek için bu konudaki görevleri gözden geçirin."
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6ddb0fda0e818b09d274276076fd6310d29b99cb
-ms.openlocfilehash: 8ce6b10478927177e5d6d8de0677cf06bed00f08
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# Microsoft Intune bilgisayar istemcisi ile genel Windows bilgisayarı yönetim görevleri
-Intune bilgisayar istemcisi yazılımını çalıştıran bilgisayarlarınızı nasıl yöneteceğinizi öğrenmek için bu konu başlığı altındaki görevleri gözden geçirin. İstemciyi bilgisayarlarınıza henüz yüklemediyseniz, bkz. [Microsoft Intune ile Windows bilgisayarı istemcisini yükleme](install-the-windows-pc-client-with-microsoft-intune.md).
+# Intune yazılım istemcisi ile genel Windows bilgisayarı yönetim görevleri
+Intune yazılım istemcisi çalıştıran bilgisayarlarınızı nasıl yöneteceğinizi öğrenmek için bu konudaki görevleri gözden geçirin. İstemciyi bilgisayarlarınıza henüz yüklemediyseniz, bkz. [Intune yazılım istemcisini yükleme](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## PC yönetimi basitleştirmek için ilkeleri kullanma
-### Windows Güvenlik Duvarı'nı yönetme
-İlkeler, yönetilen bilgisayarlarda Windows Güvenlik Duvarı ayarlarını yönetmeyi kolay hale getirir. Ayrıntılar için bkz. [Microsoft Intune’da Windows Güvenlik Duvarı ilkelerini kullanarak Windows bilgisayarlarının korunmasına yardımcı olma](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+
+Intune yazılım istemcisini çalıştıran Windows bilgisayarları Intune'un **Bilgisayar Yönetimi** ilkeleri kullanılarak yönetilebilir.
+
+![Windows bilgisayarlar için ilkeler şablonu](../media/pc_policy_template.png)
 
 ### Microsoft Intune Center’ı yönetme
-Microsoft Intune Center kullanıcıların şunları yapmasını sağlar:
+Kullanıcılar Intune yazılımı istemcisini **Microsoft Intune Center** olarak görür. Microsoft Intune Center kullanıcıların şunları yapmasını sağlar:
 
 -   Şirket portalı üzerinden uygulamaları alma.
 
@@ -49,11 +51,14 @@ Microsoft Intune Center, tüm yönetilen bilgisayarlarda yüklüdür. Intune ilk
 |**Web sitesi URL'si**|Destek web sitenizin URL'si.<br /><br />En fazla uzunluk: 150 karakter|
 |**Notlar**|Kullanıcılara gösterilen bir not.<br /><br />En fazla uzunluk: 120 karakter|
 
-### Yazılım güncelleştirmeleri ayarlarını yönetme
-Yönetilen bilgisayarların Microsoft ve üçüncü taraflardan yazılım güncelleştirmelerini denetlemek ve indirmek için kullandığı ayarları yapılandırmak için ilkeleri kullanın. Daha fazla bilgi için bkz. [Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+## Yazılım güncelleştirmeleri ayarları
+Yönetilen bilgisayarların Microsoft ve üçüncü taraflardan yazılım güncelleştirmelerini denetlemek ve indirmek için kullandığı ayarları yapılandırmak için ilkeleri kullanın. Bu güncelleştirmeler işletim sistemi yükseltmelerini (ör. Windows 7’den Windows 10’a yükseltme veya bir Windows 10 sürümünden sonraki bir sürüme yükseltme) içermez. Daha fazla bilgi için bkz. [Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Endpoint Protection ayarlarını yönetme
+### Endpoint Protection ayarları
 Endpoint Protection ayarlarını yapılandırmak için ilkeleri kullanın ve bunları yönetilen bilgisayarlara dağıtın. Bu tarama zamanlama, kötü amaçlı yazılım algıladığında yapılacak işlemler ve daha fazlasını içerir. Daha fazla bilgi için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+## Windows Güvenlik Duvarı ayarları
+İlkeler, yönetilen bilgisayarlarda Windows Güvenlik Duvarı ayarlarını yönetmeyi kolay hale getirir. Ayrıntılar için bkz. [Microsoft Intune’da Windows Güvenlik Duvarı ilkelerini kullanarak Windows bilgisayarlarının korunmasına yardımcı olma](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ## Donanım ve yazılım envanterini görüntüleme
 Intune yönetilen bilgisayarların donanım ve yazılımı hakkında ayrıntılı bilgiler toplar. Şunları oluşturmak için aşağıdaki yordamlardaki bilgileri kullanın:
@@ -113,17 +118,17 @@ Intune yönetilen bilgisayarların donanım ve yazılımı hakkında ayrıntıl�
 
 2.  Devre dışı bırakmak istediğiniz cihazları seçin ve ardından **Devre Dışı Bırak/Temizle**'yi seçin.
 
-Bir bilgisayarı Intune’a yeniden kaydetmek için, [Microsoft Intune ile Windows bilgisayarı istemcisini yükleme](install-the-windows-pc-client-with-microsoft-intune.md) konusundaki bilgileri kullanarak istemci yazılımı bilgisayara yeniden yükleyin.
+Bir bilgisayarı Intune’a yeniden kaydetmek için [Windows bilgisayar istemcisini Microsoft Intune ile yükleme](install-the-windows-pc-client-with-microsoft-intune.md)’deki yönergeleri kullanarak yazılım istemcisini bilgisayara yükleyin.
 
 Bilgisayar Intune’a bağlanamıyorsa, **Pano** çalışma alanında bir ileti görüntülenir.
 
 Bir bilgisayarı kullanımdan çıkardığınızda:
 
--   Intune envanterinden kaldırılır ve bilgisayarla ilişkili lisans yeniden kullanılabilir hale gelir.
+-   Intune yönetim ve envanterinden kaldırılır ve bilgisayarla ilişkili lisans yeniden kullanılabilir hale gelir. Devre Dışı Bırak/Sil komutu Intune yazılım istemcisini bilgisayardan kaldırır, ancak uygulamaları veya verileri kaldırmaz. Bu kullanımdan kaldırma bilgisayarda tam silme gerçekleştirmez.
 
 -   Intune bilgisayarın durumunu artık görüntülemez.
 
--   Intune istemci yazılımı bilgisayardan kaldırır. Bilgisayar Intune hizmetine bağlı değilse, istemci yazılımı bir sonraki bağlanışında kaldırılır.
+-   Intune, yazılım istemcisini bilgisayardan kaldırır. Bilgisayar Intune hizmetine bağlı değilse, yazılım istemcisi bir sonraki bağlanışında kaldırılır.
 
 -   Microsoft Intune Endpoint Protection bilgisayardan kaldırılır. Bilgisayarda başka bir uç nokta uygulaması yüklüyse ve devre dışı bırakıldıysa, bilgisayarlarınızın korunduğundan emin olmak için Microsoft Intune Endpoint Protection kaldırıldıktan sonra bu uygulama yeniden etkinleştirilebilir.
 
@@ -160,9 +165,9 @@ Bir kullanıcı için yazılım dağıtmadan önce kullanıcıyı bir bilgisayar
 > [!TIP]
 > Son kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtlamak istiyorsanız, **Microsoft Intune Aracı Ayarları** ilkesinde **Kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtla** seçeneğini etkinleştirin.
 
-## Intune istemci yazılımı çalıştıran Windows bilgisayarlara uzaktan yardım isteme ve yardım sağlama
+## Windows bilgisayarlar için uzaktan yardım isteme ve sağlama
 
-Microsoft Intune, Intune istemci yazılımını çalıştıran bilgisayarların kullanıcılarına sizden uzaktan yardım alma olanağı tanımak için [TeamViewer](https://www.teamviewer.com) yazılımını kullanabilir. Kullanıcı Microsoft Intune Center’dan yardım isteğinde bulunduğunda, bu durum bir uyarıyla size bildirilir; siz bu isteği kabul edebilir ve yardım sağlarsınız.
+Microsoft Intune, Intune yazılım istemcisi çalıştıran bilgisayarların kullanıcılarına uzaktan yardım alma izni vermek için ayrıca satın alınan [TeamViewer](https://www.teamviewer.com) yazılımını kullanabilir. Kullanıcı Microsoft Intune Center’dan yardım isteğinde bulunduğunda, bu durum bir uyarıyla size bildirilir; siz bu isteği kabul edebilir ve yardım sağlarsınız.
 Bu işlevsellik, Intune’da var olan Windows Uzaktan Yardım işlevselliğinin yerini alır.
 
 
@@ -211,6 +216,6 @@ Uzaktan yardım oturumu sırasında, uzak bilgisayarı denetlemek için tüm sa�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

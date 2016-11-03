@@ -4,7 +4,7 @@ description: "Yönettiğiniz cihazların donanımı hakkındaki bilgileri görü
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/17/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
-ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
+ms.sourcegitcommit: 18ef1ca18244b202a35fc8fc23fc994105b7b47e
+ms.openlocfilehash: ff55533499494488cd4cd692c6e36fe547ade3e4
 
 
 ---
 
 # Microsoft Intune’da envanterle cihazlarınızı anlama
 Microsoft Intune, kayıtlı cihazların ve Intune istemci yazılımını çalıştıran Windows bilgisayarlarının envanterini görüntülemenize olanak tanır.
+Intune yönetilen cihazların envanterini tipik olarak 7 günde bir toplar. Bu nedenle cihazda yakın zamanda yapılan değişikliklerin; örneğin, cihazın adının veya boş depolama alanı değişim sonuçlarının raporlarda görünmesinde bir gecikme olabilir.
 
 ## Kayıtlı cihazlardan ne toplanır?
 Mobil cihazlar tarafından toplanan envanteri görüntülemek için, [Mobil Cihaz Envanter Raporları](understand-microsoft-intune-operations-by-using-reports.md)’nı çalıştırın. Intune, kayıtlı cihazlardan aşağıdaki envanteri toplar:
@@ -114,6 +115,6 @@ Windows bilgisayarları tarafından toplanan envanteri görüntülemek için, [B
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

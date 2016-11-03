@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: b5ecb5b4c7629b04c679995b5788ee307bac79f0
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 
 ---
@@ -75,7 +75,7 @@ Cihazınız kaydolduğunda, BT yöneticiniz şunları yapabilir:
 
 -   Hüküm ve koşulları kabul etmenizi gerektirebilir.
 
--   Cihazınızda kamerayı etkinleştirebilir veya devre dışı bırakabilir.
+-   Hassas şirket verilerinin fotoğrafını çekmenizi engellemek için cihaz kameranızı etkinleştirebilir veya devre dışı bırakabilir.
 
 -   Cihazınızda web tarayıcısını etkinleştirebilir veya devre dışı bırakabilir.
 
@@ -91,12 +91,10 @@ Cihazınız kaydolduğunda, BT yöneticiniz şunları yapabilir:
 
 -   Dolaşım modundayken, cihazınızda otomatik dosya eşitlemesini etkinleştirebilir veya devre dışı bırakabilir. Otomatik dosya eşitlemesine izin verildiyse, dolaşım ücrete tabi olabilir.
 
-Cihazınızı kaydetme adımları için bkz. [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-mac-os-x.md).
-
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

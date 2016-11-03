@@ -1,5 +1,6 @@
 # [Anlama ve Keşfetme](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Başlat](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Başlarken](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Yenilikler](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Dağıtma ve Kullanma](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
@@ -17,6 +18,11 @@
 ## [Koşullu erişim sorunlarını giderme](troubleshoot-conditional-access.md)
 ## [Exchange bağlayıcısı sorunlarını giderme](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Aug16_HO1-->
+## [Mobil uygulama yönetimi sorunlarını giderme](troubleshoot-mam.md)
+
+## [Lookout Tümleştirmesi sorunlarını giderme](troubleshooting-lookout-integration.md)
+
+
+<!--HONumber=Sep16_HO5-->
 
 

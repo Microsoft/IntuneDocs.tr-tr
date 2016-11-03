@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: affcca7ea406ea8a9d60f29add4385998b0ae29d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d06d6e7de5c2e30ae8078642184ad8cfadf15be4
 
 
 ---
@@ -50,7 +50,7 @@ Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla “uzaktan” sa
 5.  **Kurumsal Cihaz Kayıt İlkesi Ekleme** [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**'ye tıklayın.
 
     **Ad** ve **Açıklama** dahil olmak üzere **Genel** ayrıntıları sağlayın, profile atanmış cihazların kullanıcı benzeşimine sahip olduğunu veya bir gruba ait olduğunu belirtin.
-      - **Kullanıcı benzeşimi sor**: Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Böylece, cihazın şirket verilerine ve e-postalara bu kullanıcı aracılığıyla erişmesine izin verilebilir.  DEP tarafından yönetilen kullanıcılara ait olan ve şirket portalını kullanması gereken (örneğin, uygulama yüklemek için) cihazlarda **kullanıcı benzeşimi** yapılandırılmalıdır.
+      - **Kullanıcı benzeşimi istemi**: Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Böylece, cihazın şirket verilerine ve e-postalara bu kullanıcı aracılığıyla erişmesine izin verilebilir.  DEP tarafından yönetilen kullanıcılara ait olan ve şirket portalını kullanması gereken (örneğin, uygulama yüklemek için) cihazlarda **kullanıcı benzeşimi** yapılandırılmalıdır. **Not:** Kullanıcı benzeşimi bulunan DEP cihazları çok faktörlü kimlik doğrulamayı destekleyemez.
       - **Kullanıcı benzeşimi yok**: Cihaz bir kullanıcıya bağlı değil. Bu ilişkiyi, yerel kullanıcı verilerine erişmeden görevleri yerine getiren cihazlar için kullanın. İş kolu uygulamalarını yüklemek için kullanılan Şirket Portalı uygulaması da içinde olmak üzere, kullanıcı benzeşimi gerektiren uygulamalar çalışmaz.
 
     Ayrıca, **Aşağıdaki gruba cihazlar atayabilirsiniz**. Bir grup seçmek için, **Seç...** öğesine tıklayın.
@@ -89,7 +89,7 @@ Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla “uzaktan” sa
 
 6.  **Yönetim için DEP Cihazları Atama** [Cihaz Kayıt Programı Portalı](https://deploy.apple.com)’na (https://deploy.apple.com) gidin ve şirketinizin Apple kimliğiyle oturum açın. **Dağıtım Programı** &gt; **Cihaz Kayıt Programı** &gt; **Cihazları Yönet**’e gidin.  **Cihaz Seç**bölümünden cihaz tercihinizi yapın, cihaz bilgilerini belirtin ve **Seri Numarası**, **Sipariş Numarası**bilgileriyle veya **CSV Dosyasını Karşıya Yükle**seçeneğiyle cihaz ayrıntılarını belirtin. Ardından, **Sunucuya Ata**’yı ve Microsoft Intune için belirtilen &lt;SunucuAdı&gt; öğesini seçip **Tamam**'a tıklayın.
 
-7.  **DEP ile Yönetilen Cihazları Eşitleme** Yönetici kullanıcı olarak [Microsoft Intune yönetim konsolunu](http://manage.microsoft.com) açın, **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Cihaz Kayıt Programı**’na gidin ve **Şimdi eşitle**'ye tıklayın. Apple'a bir eşitleme isteği gönderilir. Eşitleme sonrasında DEP ile yönetilen cihazları görmek için [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Şirkete Ait Tüm Cihazlar**’a gidin. **Şirkete Ait Cihazlar** çalışma alanında yönetilen cihazlar için **Durum**, cihaz çalıştırılıp cihaz kaydı için Kurulum Yardımcısı çalıştırılana kadar “Bağlantı kurulmadı” olarak gösterilir.
+7.  **DEP ile Yönetilen Cihazları Eşitleme** Yönetici kullanıcı olarak [Microsoft Intune yönetim konsolunu](http://manage.microsoft.com) açın, **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Cihaz Kayıt Programı**’na gidin ve **Şimdi eşitle**'ye tıklayın. Apple'a bir eşitleme isteği gönderilir. Eşitleme sonrasında DEP ile yönetilen cihazları görmek için [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirketin Önceden Kayıtlı Cihazları** &gt; **iOS Seri Numarasına Göre**’ye gidin. **iOS Seri Numarasına Göre** çalışma alanında yönetilen cihazlar için **Durum**, cihaz çalıştırılıp kayıt için Kurulum Yardımcısı çalıştırılana kadar “Bağlantı kurulmadı” olarak gösterilir.
 
     Apple’ın kabul edilebilir DEP trafiği koşullarına uymak için, Intune aşağıdaki kısıtlamaları getirir:
      -  Tam DEP eşitlemesi 7 günde birden daha sık çalıştırılamaz. Tam eşitleme sırasında, Intune Apple’ın Intune’a atadığı her seri numarasını (bu numaranın daha önceden eşitlenmiş olup olmamasına bakılmaksızın) yeniler. Önceki tam eşitlemenin üzerinden 7 gün geçmeden bir tam eşitleme girişiminde bulunulursa, Intune yalnızca henüz Intune’da listelenmeyen seri numaralarını yeniler.
@@ -99,13 +99,13 @@ Microsoft Intune, Cihaz Kayıt Programı (DEP) aracılığıyla “uzaktan” sa
 
 ## Intune grubu atamalarına değişiklikler
 
-Ekim ayından başlayarak cihaz yönetimi Azure Active Directory’ye taşınacaktır. Azure Active Directory gruplarına geçişten sonra grup ataması **Kurumsal Kayıt Profili** seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Yeni portala geçildikten sonra, Kurumsal Kayıt Profili adlarını temel alan dinamik cihaz grubu atamaları tanımlanabilir. Bu işlem bir cihaz grubuna önceden atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. [Azure Active Directory grupları hakkında daha fazla bilgi edinin.](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Kasım ayından başlayarak cihaz grup yönetimi Azure Active Directory’ye taşınacaktır. Azure Active Directory gruplarına geçişten sonra grup ataması **Kurumsal Kayıt Profili** seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Yeni portala geçildikten sonra, Kurumsal Kayıt Profili adlarını temel alan dinamik cihaz grubu atamaları tanımlanabilir. Bu işlem bir cihaz grubuna önceden atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. [Azure Active Directory grupları hakkında daha fazla bilgi edinin.](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Ayrıca bkz.
-[Cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Cihazları kaydetme önkoşulları](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

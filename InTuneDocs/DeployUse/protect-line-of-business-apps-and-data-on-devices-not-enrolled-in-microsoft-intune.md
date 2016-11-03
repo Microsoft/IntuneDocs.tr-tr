@@ -3,6 +3,7 @@ title: "Kayıtlı olmayan cihazlardaki LOB uygulamalarını koruma | Microsoft I
 description: "Bu konu başlığı altında, veri kaybını önlemeye yardımcı olabilecek mobil uygulama yönetimi ilkelerini uygulayabilmek için, özel iş kolu uygulamalarınızı nasıl hazırlayacağınız açıklanır."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,21 +14,27 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: ffe11b4eb4b0f4c2ffdc831cad9deb30d7180809
+ms.openlocfilehash: 94de65185af64052226985f2c65c7b8a18e2f829
 
 
 ---
 
 # Microsoft Intune’da kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma
 
-Mobil uygulama yönetimi (MAM) ilkeleri, kopyalama ve yapıştırma gibi veri hareketlerini kısıtlayarak veya kullanıcıların şirket belgelerini kişisel bir konuma kaydetmelerini engelleyerek, şirket verilerinizin korunmasına yardımcı olur.   iOS ve Android iş kolu uygulamalarına MAM ilkelerini uygulamak için, önce Microsoft Intune Uygulama Sarmalama aracıyla uygulamayı sarmalamanız gerekir.  Uygulama sarmalama, temel uygulamada hiçbir değişiklik yapılmasına gerek kalmadan mobil uygulamaya bir yönetim katmanı uygulama işlemidir.  Uygulama sarmalandıktan sonra, buna MAM ilkeleri uygulayabilir ve bunu son kullanıcılarınıza dağıtabilirsiniz.  
+Mobil uygulama yönetimi (MAM) ilkeleri, şirket verilerinin dışarıya sızmasına neden olabilecek eylemleri kısıtlayarak ve uygulama PIN’i gibi veri erişim gereksinimleri uygulayarak şirket verilerinin korunmasına yardımcı olur. iOS ve Android iş kolu uygulamalarına MAM ilkelerini uygulamak için önce Microsoft Intune Uygulama Sarmalama aracıyla uygulamayı sarmalamanız gerekir.  Uygulama sarmalama, temel uygulamada hiçbir değişiklik yapılmasına gerek kalmadan mobil uygulamaya bir yönetim katmanı uygulama işlemidir.  Uygulama sarmalandıktan sonra, buna MAM ilkeleri uygulayabilir ve bunu son kullanıcılarınıza dağıtabilirsiniz.  
 
-Bu konu başlığı altında, **çalışanın sahip olduğu yönetilmeyen cihazlarda** ve **üçüncü taraf bir mobil cihaz yönetimi (MDM) çözümü** tarafından yönetilen cihazlarda erişilen uygulamalara MAM ilkeleri uygulamak için gereken adımlar açıklanır.  **Intune’a kaydedilmiş cihazlarda** çalıştırılan iş kolu uygulamalarınızı hazırlamak için, bkz. [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+Bu konu başlığı altında, **çalışanın sahip olduğu yönetilmeyen cihazlarda** ve **üçüncü taraf bir mobil cihaz yönetimi (MDM) çözümü** tarafından yönetilen cihazlarda erişilen uygulamalara MAM ilkeleri uygulamak için gereken adımlar açıklanır.  **Intune MDM’e kaydedilmiş cihazlarda** çalıştırılan iş kolu uygulamalarınızı hazırlamak için bkz. [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+
+
 ##  1. Adım: Uygulamayı hazırlama
-Uygulamaya MAM ilkelerini uygulayabilmek için, önce Microsoft Intune Uygulama Sarmalama aracıyla uygulamayı sarmalamanız gerekir.  Uygulama sarmalama aracını yükleme ve kullanma yönergeleri, indirme içinde sağlanır.  
+Uygulamaya MAM ilkelerini uygulayabilmek için, önce Microsoft Intune Uygulama Sarmalama aracıyla uygulamayı sarmalamanız gerekir.  Uygulama sarmalama aracını indirme ve kullanma yönergeleri için aşağıdaki sayfalara göz atın:
+
+- [Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını mobil uygulama yönetimi için hazırlama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
+- [Android uygulamalarını Intune Uygulama Sarmalama Aracı ile mobil uygulama yönetimi için hazırlama](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+
 >[!IMPORTANT]  
->Uygulama sarmalama aracının Intune’a kayıtlı olmayan cihazları destekleyen bu sürümü, önümüzdeki haftalarda özel önizleme olarak sağlanacaktır. Katılmak isterseniz, daha fazla bilgi için lütfen msintuneappsdk@microsoft.com adresine e-posta gönderin.
+>Uygulama sarmalama aracının Intune’a kayıtlı olmayan cihazları destekleyen bu sürümü, iOS’ta desteklenir ve Android’de genel önizlemede desteklenir. Aracı iOS için [bu GitHub deposundan](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), Android içinse [bu GitHub deposundan](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) indirebilirsiniz.
 
 ## 2. Adım: Uygulamayı ekleme
 
@@ -75,6 +82,6 @@ Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz.  Bu işlem 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

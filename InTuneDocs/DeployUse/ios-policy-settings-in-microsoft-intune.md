@@ -3,8 +3,9 @@ title: "iOS ilke ayarları | Microsoft Intune"
 description: "Intune ile yönettiğiniz iOS cihazlarında ayarları ve özellikleri denetleyen ilkeler oluşturun."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
+ms.sourcegitcommit: cd5930995a6da130fedcb6d89851460e6f0614eb
+ms.openlocfilehash: 24540a74ce98adbf3f908cbea401328f027867ca
 
 
 ---
@@ -39,7 +40,7 @@ Microsoft Intune **iOS genel yapılandırma ilkesini** kullanarak aşağıdaki a
 Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Configurator aracı](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ile oluşturduğunuz ayarları içeri aktarmanızı sağlayan bir iOS özel ilkesi kullanarak bu özelliği oluşturabilirsiniz. Daha fazla bilgi için, bu konunun devamındaki “Özel ilke ayarları” bölümüne bakın.
 
 ### Güvenlik ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -58,7 +59,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 <sup>1</sup> iOS cihazlarında **Ekran kapanmadan önce geçen işlem yapılmayan dakika sayısı** ve **Parola istenmeden önce geçen işlem yapılmayan dakika sayısı** ayarlarını sırayla uygulayarak yapılandırın. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
 
 ### Sistem ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -71,7 +72,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**Kilitliyken passbook kullanımına izin ver**|Cihaz kilitliyken kullanıcının Passbook uygulamasına erişmesine izin verin.|
 
 ### Belgeler ve veriler için bulut ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -81,9 +82,11 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**Şifreli yedekleme iste**|Tüm cihaz yedeklemelerinin şifrelenmesini zorunlu tutar.|
 |**Yönetilen uygulamaların iCloud ile veri eşitlemesine izin verme**|Intune ile yönettiğiniz uygulamaların, kullanıcının iCloud hesabıyla veri eşitlemesine izin verin.|
 |**İletim’in başka bir cihazda etkinliklerini sürdürmesine izin verme**|Kullanıcının bir iOS cihazında başladığı çalışmayı başka bir iOS veya Mac OS X cihazında sürdürmesine izin verin.|
+|**iCloud Fotoğraf Paylaşma’ya izin ver**|iOS paylaşılan fotoğraf akışı özelliğinin kullanılmasına izin verin.|
+|**iCloud Fotoğraf Kitaplığı’na izin ver**|Kullanıcının iCloud üzerinde fotoğraf depolamasına izin verin. Devre dışı bırakılırsa, iCloud üzerinde depolanmış olan tüm fotoğraflar kaldırılır.|
 
 ### Tarayıcı için uygulama ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -95,37 +98,48 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**Sahtekarlık uyarısına izin ver**|Tarayıcıda sahtekarlık uyarılarına izin verin.|
 
 ### Uygulamalara yönelik uygulama ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
-|**Uygulama depolamaya izin ver**|Cihazların uygulama mağazasına erişmesine izin verin.|
+|**Uygulama yüklemeye izin ver**|Cihazın uygulama mağazasına erişmesine ve uygulama yüklemesine izin verin.|
 |**Uygulama deposuna erişim için parola iste**|Kullanıcının uygulama mağazasını ziyaret etmeden önce parola girmesini isteyin.|
 |**Uygulama içi satın almalara izin ver**|Çalışan bir uygulamanın içinden mağazada alışveriş yapılmasına izin verir.|
 |**Diğer yönetilmeyen uygulamalardaki yönetilen belgelere izin ver**|Kurumsal belgelerin tüm uygulamalarda görüntülenmesine izin verin.<br>**Örnek:** Kullanıcıların OneDrive uygulamasından Dropbox’a dosya kaydetmesini engellemek istiyorsunuz. Bu ayarı hayır olarak yapılandırın. Cihaz, ilkeyi aldıktan sonra (örneğin, yeniden başlatıldıktan sonra) artık kaydetmeye izin vermeyecektir.|
 |**Diğer yönetilen uygulamalardaki yönetilmeyen belgelere izin ver**|Tüm belgelerin şirketin yönetilen uygulamalarında görüntülenmesine izin verin.|
-|**Görüntülü konferansa izin ver**|Cihazda Facetime gibi görüntülü konferans uygulamalarına izin verin.|
-|**Medya mağazasında yetişkinlere yönelik içeriğe izin ver**|Cihazın mağazadaki yetişkinlere yönelik olarak derecelendirilmiş içeriğe erişmesine izin verin.|
-|**Kullanıcının iBook mağazasından 'Erotika' olarak işaretlenmiş içerik indirmesine izin verme**|Kullanıcının “Erotik” kategorisindeki kitapları indirmesine izin verin.|
+|**Görüntülü konferansa izin ver**|Cihazda FaceTime gibi görüntülü konferans uygulamalarına izin verin.|
+|**Kullanıcının yeni kurumsal uygulama yazarlarına güvenmesine izin ver**|Kullanıcının uygulama mağazasından indirilmemiş uygulamalara güvenmeyi seçmesine izin verir.|
+
 
 ### Oyunlar için uygulama ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
 |**Game Center arkadaşlarını eklemeye izin ver**|Kullanıcının Game Center'da arkadaş eklemesine izin verin.|
 |**Çok oyunculu oyunlara izin ver**|Kullanıcının cihazda çok oyunculu oyunlar oynamasına izin verin.|
 
+### Medya içeriği için uygulama ayarları
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
+
+|Ayar adı|Ayrıntılar|
+|----------------|-------|
+|**Derecelendirme bölgesi**|Bir bölge seçin, sonra kullanıcıların **Filmler**, **TV Programları** ve **Uygulamalar** için indirebileceği en yüksek derecelendirmeyi seçin.|
+|**Medya mağazasında yetişkinlere yönelik içeriğe izin ver**|Cihazın mağazadaki yetişkinlere yönelik olarak derecelendirilmiş içeriğe erişmesine izin verin.|
+|**Kullanıcının iBook mağazasından 'Erotika' olarak işaretlenmiş içerik indirmesine izin verme**|Kullanıcının “Erotik” kategorisindeki kitapları indirmesine izin verin.|
+
+
 ### Donanım için cihaz özellikleri ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
 |**Kameraya izin ver**|Cihazdaki kameranın kullanılıp kullanılamayacağını belirtin.|
+|**Eşleştirilmiş Apple Watch’ları bilek algılama kullanmaya zorla**|Etkinleştirildiğinde, Apple Watch takılmadığında bildirim görüntülemez.|
 |**Giden AirPlay istekleri için bir eşleştirme parolası gerektirme**|Kullanıcının diğer Apple cihazlarına içerik akışı sağlamak üzere AirPlay’i kullanması için, eşleştirilen parola isteyin.|
 
 ### Hücresel veri için cihaz özellikleri ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
@@ -134,13 +148,14 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 |**Dolaşımdayken genel arka plan almaya izin ver**|Cihazın, cep telefonu şebekesinde dolaşımdayken e-posta gibi verileri almasına izin verir.|
 
 ### Özellikler için cihaz özellikleri ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|-------|
 |**Siri'ye izin ver**|Cihazda Siri ses yardımcısının kullanımına izin verin.|
 |**Cihaz kilitliyken Siri'ye izin ver**|Cihaz kilitliyken cihazda Siri ses yardımcısının kullanımına izin verin.|
 |**Sesli aramaya izin ver**|Cihazda sesli arama özelliğinin kullanımına izin verin.|
+|**Yönetilen uygulamalardan Airdrop’a izin verme**|Yönetilen uygulamaların Airdrop aracılığıyla veri göndermesini engeller.|
 
 
 ### Uyumlu ve uyumlu olmayan uygulamalar için ayarlar
@@ -182,7 +197,7 @@ Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
 > [!NOTE]
 > aşağıdaki notlar, iOS cihazlarda bilgi noktası modu ayarları için geçerlidir:
 >
-> -   Bir iOS cihazını bilgi noktası modu için yapılandırmadan önce, [Apple Configurator aracı](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)nı veya cihaz kayıt yöneticisini kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracı hakkında daha fazla bilgi için Apple belgelerinize bakın.
+> -   Bir iOS cihazını bilgi noktası modu için yapılandırabilmek için önce, [Apple Configurator aracını](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) veya [Apple Cihaz Kayıt Programı](ios-device-enrollment-program-in-microsoft-intune)’nı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracı hakkında daha fazla bilgi için Apple belgelerinize bakın.
 > -   Belirttiğiniz iOS uygulaması siz yapılandırma ilkesini dağıttıktan sonra yüklendiyse, cihaz, yeniden başlatılana kadar bilgi noktası moduna girmez.
 
 ### Uyumlu ve uyumlu olmayan uygulamalar için başvuru bilgileri
@@ -208,30 +223,61 @@ Uyumlu ve uyumsuz uygulamalar listesinde veya **Cihaz bilgi noktası modundayken
 > iTunes yazılımını kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL'sini alabilirsiniz.
 
 ### Kayıt ayarları
-Tüm ayarlar iOS 7.1 ve üzeri için geçerlidir.
+Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
 |**Cihaz denetimli moddayken Etkinleştirme Kilidi’ne izin verme**|Denetimli iOS cihazlarında Etkinleştirme Kilidi’ni etkinleştirin.|
 
-### Denetim
-iOS 7.1 ve üstünü çalıştıran denetimli moddaki cihazlarda aşağıdaki ayarları yapılandırabilirsiniz.
+### Denetimli mod ayarları
+iOS 8.0 ve üstünü çalıştıran denetimli moddaki cihazlarda aşağıdaki ayarları yapılandırabilirsiniz.
+
+### Cihaz kısıtlamaları için denetimli mod ayarları
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
 |**Hesapta değişikliğe izin verme**|Kullanıcının e-posta yapılandırması gibi hesap ayarlarını değiştirmesine izin verin.|
-|**AirDrop’a izin verme**|Yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verin.|
 |**Uygulama hücresel veri kullanım ayarlarında değişikliğe izin verme**|Kullanıcının hangi uygulamaların hücresel veri kullanabileceğini denetlemesine izin verme.|
-|**Siri’nin kullanıcı tarafından oluşturulan içeriği İnternet’ten sorgulamasına izin verme**|Siri’nin soruları yanıtlamak için web sitelerine erişmesine izin verin.|
-|**iBooks mağazası erişimine izin verme**|Kullanıcının iBooks mağazasındaki kitaplara göz atmasına ve bunları satın almasına izin verin.|
-|**Find My Friends uygulamasının ayarlarında değişikliğe izin verme**|Kullanıcının Find My Friends uygulamasının ayarlarını değiştirmesine izin verin.|
 |**Cihazda tüm içeriği ve ayarları silme seçeneğinin kullanılmasına izin verme**|Kullanıcının, cihazda tüm içeriği ve ayarları silme seçeneğini kullanmasına izin verin.|
 |**Kullanıcının cihaz ayarlarında kısıtlamaları etkinleştirmesine izin verme**|Kullanıcının cihazda cihaz kısıtlamalarını (ebeveyn denetimleri) yapılandırmasına izin verin.|
-|**Spotlight aramanın İnternet’ten sonuç döndürmesine izin verme**|Spotlight aramasının daha fazla sonuç sağlamak için İnternet’e bağlanmasına izin verin.|
-|**Game Center uygulamasının kullanılmasına izin verme**|Game Center uygulamasının kullanımına izin verin.|
-|**Bir iOS cihazının eşleşebileceği cihazları denetlemek için konak eşleştirmesine izin verme**|Bir iOS 7 cihazının hangi cihazlarla eşleşebileceğini yöneticinin denetlemesi için konak eşleştirmeye izin verin.|
+|**Bir iOS cihazının eşleşebileceği cihazları denetlemek için konak eşleştirmesine izin verme**|Yöneticinin bir iOS cihazının hangi cihazlarla eşleşebileceğini denetleyebilmesi için konak eşleştirmeye izin ver.|
 |**Kullanıcının yapılandırma profilleri ve sertifikaları yüklemesine izin verme**|Kullanıcının yapılandırma profilleri ve sertifikaları yüklemesine izin verin.|
+|**Cihaz adının değiştirilmesine izin ver**|Kullanıcının cihazın adını değiştirmesine izin verin.|
+|**Geçiş kodunun değiştirilmesine izin ver**|Cihaz parolasının eklenmesine, değiştirilmesine veya kaldırılmasına izin verin.|
+|**Apple Watch eşleştirmesine izin ver**|Cihazın bir Apple Watch ile eşleşmesine izin verin.|
+|**Bildirim ayarlarının değiştirilmesine izin ver**|Kullanıcının cihazın bildirim ayarlarını değiştirmesine izin verin.|
+|**Duvar kağıdının değiştirilmesine izin ver**|Kullanıcının cihazın duvar kağıdını değiştirmesine izin verin.|
+
+### Özellik kısıtlamaları için denetimli mod ayarları
+
+|Ayar adı|Ayrıntılar|
+|----------------|--------------------|
+|**AirDrop’a izin verme**|Yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verin.|
+|**Siri’nin kullanıcı tarafından oluşturulan içeriği İnternet’ten sorgulamasına izin verme**|Siri’nin soruları yanıtlamak için web sitelerine erişmesine izin verin.|
+|**Siri küfür filtresini kullan**|Siri’nin küfürlü dil dikte etmesini veya konuşmasını engeller.|
+|**Spotlight aramanın İnternet’ten sonuç döndürmesine izin verme**|Spotlight aramasının daha fazla sonuç sağlamak için İnternet’e bağlanmasına izin verin.|
+|**Sözcük tanımı aramaya izin ver**|Bir sözcüğü vurgulayıp tanımını aramanıza izin veren iOS özelliğine izin verin.|
+|**Öngörülü klavyelere izin ver**|Kullanıcının, isteyebileceği sözcükleri öneren öngörülü klavyeler kullanmasına izin verin.|
+|**Otomatik düzeltmeye izin ver**|Cihazın yanlış yazılan sözcükleri otomatik düzeltmesine izin verir.|
+|**Klavyenin yazım denetimi yapmasına izin ver**|Cihazın yazım denetimcisine izin verir.|
+|**Klavye kısayollarına izin ver**|Klavye kısayollarının kullanılmasına izin verir.|
+
+### Uygulama kısıtlamaları için denetimli mod ayarları
+
+|Ayar adı|Ayrıntılar|
+|----------------|--------------------|
+|**Kurumsal uygulama güven ayarlarının değiştirilmesine izin ver**|Kullanıcıların, kurumsal uygulamaların güven ayarlarını değiştirebilmesini sağlar.|
+|**Yalnızca Apple Configuration ve iTunes kullanılarak uygulama yüklenmesine izin ver**|Cihaz giriş ekranından App Store’u etkinleştirir veya devre dışı bırakır. Kullanıcılar, uygulamaları yüklemek ve güncelleştirmek için iTunes’u veya Apple Configurator aracını kullanmaya devam edebilir.|
+|**Otomatik uygulama indirmeye izin ver**|Başka cihazlarda satın alınan uygulamaların otomatik olarak bu cihaza indirilmesine izin verir. Bu ayar uygulama güncelleştirmelerini etkilemez.|
+|**Find My Friends uygulamasının ayarlarında değişikliğe izin verme**|Kullanıcının Find My Friends uygulamasının ayarlarını değiştirmesine izin verin.|
+|**iBooks mağazası erişimine izin verme**|Kullanıcının iBooks mağazasındaki kitaplara göz atmasına ve bunları satın almasına izin verin.|
 |**Cihazda Messages uygulamasının kullanılmasına izin verme**|Kısa mesaj göndermek için Messages uygulamasının kullanılmasına izin verin.|
+|**Pod yayını kullanılmasına izin ver**|Pod yayını uygulamasının kullanılmasına izin verin.|
+|**Music hizmetinin kullanılmasına izin ver**|Apple Music uygulamasının kullanılmasına izin verin.|
+|**iTunes Radio hizmetine izin ver**|iTunes Radio uygulamasının kullanılmasına izin verin.|
+|**Apple News’a izin ver**|Apple News uygulamasının kullanılmasına izin verin.|
+|**Game Center’a izin ver**|Game Center uygulamasının kullanımına izin verin.|
+
 
 ### Uygulamaları Gösterme veya Gizleme
 
@@ -337,6 +383,6 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

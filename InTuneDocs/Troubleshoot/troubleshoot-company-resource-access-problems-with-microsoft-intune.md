@@ -2,9 +2,10 @@
 title: "Şirket kaynak erişimi sorunlarını giderme | Microsoft Intune"
 description: "Bu konu başlığı altındaki hata ve durum kodları, kaynak erişimi sorunlarını gidermenize yardımcı olur."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +14,18 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
 
-# Microsoft Intune ile şirket kaynak erişimi sorunlarını giderme
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune ile şirket kaynak erişimi sorunlarını giderme
 Microsoft Intune eylemi bir hata kodu döndürdüğünde sorunları gidermenize yardımcı olması için bu konu başlığı altında verilen hata ve durum kodlarını kullanın.
 
 Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
-## MDM ile yönetilen Windows cihazları için durum kodları
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM ile yönetilen Windows cihazları için durum kodları
 
 |Durum kodu|Hata iletisi|Yapılması gereken|
 |---------------|-----------------|--------------|
@@ -33,7 +34,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|İçerik alınıyor|Olası Neden: İş durumu 30, bir uygulamanın kullanıcı tarafından indirmesinin başarısız olduğunu belirtir.<br /><br />Bunun olası nedenleri şunlar olabilir:<br /><br />İndirme devam ederken cihazın İnternet bağlantısı kesilmiştir.<br /><br />Kayıt sırasındaki cihaza verilen sertifikanın süresi sona ermiştir.<br /><br />Sorun Giderme:<br /><br />Cihaz sertifikası süresinin dolmadığını onaylamak için cihazda Denetim Masası’ndan Şirket Uygulamaları uygulamasını başlatın; süresi dolmuşsa cihazı yeniden kaydetmeniz gerekir.<br /><br />Cihazın İnternet’e bağlı olduğunu onaylayın ve uygulamayı yeniden istemeyi deneyin.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|İçerik indirme tamamlandı||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Yükleme devam ediyor||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|YüklemeHata oluştu|Uygulama yüklemesi, indirmeden sonra başarısız oldu.<br /><br />Uygulamanın imzalandığı kod imzalama sertifikası cihazda yok.<br /><br />Uygulamanın bağlı olduğu bir çerçeve bağımlılığı, cihazda yüklü olarak bulunmadı.<br /><br />Uygulamanızın imzalandığı kod imzalama sertifikasının cihazda mevcut olduğundan emin olun ve bu sertifikanın şirkete kayıtlı Windows RT cihazları için hedeflendiğini yöneticiyle birlikte onaylayın.<br /><br />İş çerçevesi bağımlılığının eksik olması nedeniyle yükleme hatası olması durumunda yöneticinin uygulama paketiyle birlikte iş çerçevesini paketleyerek uygulamayı yeniden yayımlaması gerekir.<br /><br />İndirilen uygulama paketi geçerli bir paket değildir, bozulmuş olabilir veya cihazdaki işletim sistemi sürümüyle uyumlu olmayabilir.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Yükleme Hatası oluştu|Uygulama yüklemesi, indirmeden sonra başarısız oldu.<br /><br />Uygulamanın imzalandığı kod imzalama sertifikası cihazda yok.<br /><br />Uygulamanın bağlı olduğu bir çerçeve bağımlılığı, cihazda yüklü olarak bulunmadı.<br /><br />Uygulamanızın imzalandığı kod imzalama sertifikasının cihazda mevcut olduğundan emin olun ve bu sertifikanın şirkete kayıtlı Windows RT cihazları için hedeflendiğini yöneticiyle birlikte onaylayın.<br /><br />İş çerçevesi bağımlılığının eksik olması nedeniyle yükleme hatası olması durumunda yöneticinin uygulama paketiyle birlikte iş çerçevesini paketleyerek uygulamayı yeniden yayımlaması gerekir.<br /><br />İndirilen uygulama paketi geçerli bir paket değildir, bozulmuş olabilir veya cihazdaki işletim sistemi sürümüyle uyumlu olmayabilir.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Yükleme Başarısı||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Kaldırma devam ediyor||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Kaldırma Hatası oluştu||
@@ -43,7 +44,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP lisans yüklemesi başarısız oldu||
 |Durum yok (APP_CI_ENFORCEMENT_UNKNOWN)|yok|Şu anda durum bilinmiyor.|
 
-## Şirket kaynağına erişim (genel hatalar)
+## <a name="company-resource-access-common-errors"></a>Şirket kaynağına erişim (genel hatalar)
 
 |Durum kodu|Onaltılık hata kodu|Hata iletisi|
 |---------------|--------------------------|-----------------|
@@ -72,7 +73,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016341111|0x87D11389|iOS cihazı, beklenmeyen bir Boşta durumu döndürdü|
 |-2016341112|0x87D11388|iOS cihazı şu anda meşgul|
 
-## iOS cihazları tarafından döndürülen hatalar
+## <a name="errors-returned-by-ios-devices"></a>iOS cihazları tarafından döndürülen hatalar
 
 |Durum kodu|Onaltılık hata kodu|Hata iletisi|
 |---------------|--------------------------|-----------------|
@@ -127,7 +128,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016314112|0x87D17D00|22000:Geçersiz anahtar kullanımı|
 |-2016315105|0x87D1791F|21007:Hesap doğrulanamıyor|
 |-2016315106|0x87D1791E|21006:Sertifika şifresi çözülemiyor|
-|-2016315107|0x87D1791D|21005:Hesap benzersiz değil|
+|-2016315107|0x87D1791D|21005: Hesap benzersiz değil (E-posta Profili cihazda zaten var)|
 |-2016315108|0x87D1791C|21004:Hesap oluşturulamıyor|
 |-2016315109|0x87D1791B|21003:Ana bilgisayar adı yok|
 |-2016315110|0x87D1791A|21002:Sunucudaki şifreleme ilkesine uymuyor|
@@ -282,7 +283,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016335111|0x87D12AF9|1001:Desteklenmeyen profil sürümü|
 |-2016335112|0x87D12AF8|1000:Yanlış biçimli profil|
 
-## OMA yanıt kodları
+## <a name="oma-response-codes"></a>OMA yanıt kodları
 
 |Durum kodu|Onaltılık hata kodu|Hata iletisi|
 |---------------|--------------------------|-----------------|
@@ -367,11 +368,11 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016345912|0x87D100C8|SyncML komutu başarıyla tamamlandı.|
 |-2016346011|0x87D10065|Belirtilen SyncML komutu yürütülüyor, ancak henüz tamamlanmadı.|
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
