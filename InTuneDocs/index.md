@@ -1,19 +1,22 @@
 ---
+experimental: true
+experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: Intune Belgeleri - MDM belgeleri | Microsoft Belgeleri
+title: Intune Belgeleri | Microsoft Docs
 description: "Microsoft Intune için teknik belgeler - Mobil Cihaz ve Uygulama Yönetimi"
-keywords: "intune belgeleri, MDM belgeleri, Mobil Cihaz Yönetimi Belgeleri, Mobil Cihaz ve Uygulama Yönetimi Belgeleri"
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+keywords: "intune belgeleri, uygulama yönetimi, cihaz yönetimi, MDM belgeleri, MAM belgeleri"
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 10/07/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: c200c191168a8c5ae9382d62b3a25e9cfd1db3ac
-ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
+ms.sourcegitcommit: 63317c16082b1fb2764bd698c97fa1d435f58dfe
+ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
 
 
 ---
@@ -22,20 +25,20 @@ ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
     <section id="hero-content">
       <h1>Intune Belgeleri</h1>
       <h2>Bir mobil cihaz ve uygulama yönetim hizmeti olan Microsoft Intune’u nasıl dağıtıp yöneteceğinizi öğrenin.</h2>
-      <h3>Intune’u Configuration Manager ile yönetme? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Configuration Manager Belgelerini görüntüleme &rarr;</a></h3>
+      <h3>Intune’u Configuration Manager ile yönetmek ister misiniz? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Karma mobil cihaz yönetimi hakkında daha fazla bilgi edinin &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Öne Çıkan İçerik</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Microsoft Intune’a Giriş</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune’dan yararlanan genel senaryolar</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Intune hızlı başlangıç kılavuzu</a></li>
+          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">Yenilikler</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune'u kullanmanın yaygın yolları</a></li>
+          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Uygulama verilerini koruma</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Cihaz ve uygulama yaşam döngülerine genel bakış</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Uygulama verilerini koruma</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Son kullanıcılarınıza Intune hakkında neler söylemelisiniz</a></li>
+          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Şirket kaynaklarına erişimi koruma</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-ios">iOS için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-android">Android için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu</a></li>
         </ul>
       </div>
     </section>
@@ -48,7 +51,7 @@ ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
               <a href="/intune/understand-explore/introduction-to-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">1</span>
-                  <p>Anlama ve Keşfetme</p>
+                  <p>Anlama &amp; Keşfetme</p>
                 </div>
                 <p class="description column-two-thirds">Microsoft Intune’un temel kavramlarını ve olanaklarını öğrenin.
                 </p>
@@ -82,7 +85,7 @@ ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
               <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">2</span>
-                  <p>Başlat</p>
+                  <p>Başlarken</p>
                 </div>
                 <p class="description column-two-thirds">Ortamınızı ayarlayın.
                 </p>
@@ -282,6 +285,6 @@ ms.openlocfilehash: 5861856d91a439919f28fca3d0b4d797ab6cbd3f
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

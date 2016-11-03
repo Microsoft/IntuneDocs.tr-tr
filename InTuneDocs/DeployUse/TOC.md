@@ -1,20 +1,23 @@
 # [Anlama ve Keşfetme](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Başlat](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Başlarken](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [Yenilikler](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Dağıtma ve Kullanma](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Cihaz ve uygulama yaşam döngülerine genel bakış](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Cihaz yaşam döngüsü](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [Uygulama yaşam döngüsü](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Cihazları kaydetme](enroll-devices-in-microsoft-intune.md)
-### [Intune’da cihazları kaydetmeye hazır olun](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [MDM için önkoşullar](prerequisites-for-enrollment.md)
 #### [iOS ve Mac yönetimi](set-up-ios-and-mac-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile ve Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+#### [Android yönetimi](set-up-android-management-with-microsoft-intune.md)
+#### [Android for Work yönetimi](set-up-android-for-work.md)
 #### [Windows cihaz yönetimi ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 Mobile ve Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Şirketin sahip olduğu cihazları yönetme](manage-corporate-owned-devices.md)
 #### [Şirketin sahip olduğu iOS cihazlarını kaydetme](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [iOS Kurulum Yardımcısı kaydı](ios-setup-assistant-enrollment-in-microsoft-intune.md)
-##### [iOS doğrudan kayıt](ios-direct-enrollment-in-microsoft-intune.md)
+##### [iOS doğrudan kayıt anlaşması](ios-direct-enrollment-in-microsoft-intune.md)
 ##### [iOS DEP kaydı](ios-device-enrollment-program-in-microsoft-intune.md)
 #### [Cihaz kayıt yöneticisiyle kaydolma](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [Cihazları IMEI numaralarıyla etiketleme](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
@@ -32,6 +35,7 @@
 ### [İlkelerle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS ayarları](ios-policy-settings-in-microsoft-intune.md)
 #### [Android be Samsung KNOX ayarları](android-policy-settings-in-microsoft-intune.md)
+#### [Android for Work ayarları](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 ve Windows 8.1 ayarları](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 ayarları](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 masaüstü ve Mobile ayarları](windows-10-policy-settings-in-microsoft-intune.md)
@@ -55,7 +59,7 @@
 ## [Cihazları koruma](protect-your-devices-with-microsoft-intune.md)
 ### [Uzaktan kilitleme ve geçiş kodu sıfırlama](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [MFA ile Windows cihazlarını denetleme](protect-windows-devices-with-multi-factor-authentication.md)
-### [Cihazlarda Microsoft Passport ayarlarını denetleme](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [İş İçin Windows Hello ayarlarını denetleme](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [iOS’ta Etkinleştirme Kilidini Atlama](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Yazılım güncelleştirmeleri](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
@@ -65,10 +69,12 @@
 ## [Cihazları devre dışı bırakma](retire-devices-from-microsoft-intune-management.md)
 
 ## [Uygulamaları ekleme](add-apps.md)
-### [Mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Windows bilgisayarları için uygulama ekleme](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Kaydolmuş cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Intune istemci bilgisayarları için uygulama ekleme](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Intune istemci bilgisayarları için lisans sözleşmelerini yönetme](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Uygulamaları dağıtma](deploy-apps.md)
 ### [Cihazlara ve bilgisayarlara uygulama dağıtma](deploy-apps-in-microsoft-intune.md)
+### [Android for Work cihazlara uygulama dağıtma](android-for-work-apps.md)
 ### [Uygulamaları izleme](monitor-apps-in-microsoft-intune.md)
 ### [Toplu satın alınan uygulamaları yönetme](manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [Toplu satın alınan iOS uygulamalarını yönetme](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -77,6 +83,7 @@
 ## [Uygulama yapılandırma](update-apps-using-microsoft-intune.md)
 ### [Uygulamaları güncelleştirme ](update-apps-using-microsoft-intune.md)
 ### [iOS uygulama yapılandırma ilkeleri](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Android for Work uygulama yapılandırma ilkeleri](afw-app-configuration-policy.md)
 ### [iOS mobil uygulaması sağlama profilleri](ios-mobile-app-provisioning-profiles.md)
 ### [İnternet erişimini yönetme](manage-internet-access-using-managed-browser-policies.md)
 
@@ -84,12 +91,13 @@
 ## [Uygulamaları ve verileri koruma](protect-apps-and-data-with-microsoft-intune.md)
 ### [Cihaz uyumluluğu ilkeleri](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Cihaz uyumluluğu ilkesi oluşturma](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [Android için](android-compliance-policy-settings-in-microsoft-intune.md)
-#### [iOS için](ios-compliance-policy-settings-in-microsoft-intune.md)
-#### [Windows ve Windows Phone için](windows-compliance-policy-settings-in-microsoft-intune.md)
+#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+#### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [Windows ve Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Cihaz uyumluluk ilkesini dağıtma](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [E-posta, O365 hizmetlerine ve diğer hizmetlere erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Cihaz uyumluluğuna dayalı olarak erişim kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 #### [Exchange Online ve yeni Dağıtılmış Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -98,8 +106,15 @@
 #### [Skype Kurumsal Çevrimiçi](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [E-posta erişimini kısıtlama: örnekler](restrict-email-access-example-scenarios.md)
-
+### [O365 hizmetlerine yalnızca ilkeyle yönetilen uygulamaların erişimine izin ver](allow-policy-managed-apps-access-to-o365.md)
+#### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [ADAL olmadan uygulama engelleme](block-apps-with-no-modern-authentication.md)
 ### [Ağlara erişimi kısıtlama (Cisco ISE)](restrict-access-to-networks.md)
+### [Cihaz, ağ ve uygulama riskine dayalı olarak erişimi kısıtlama](restrict-access-based-on-device-network-app-risk.md)
+#### [Lookout cihaz tehdit korumasını ayarlama](set-up-your-subscription-with-lookout-mtp.md)
+#### [Intune'da Lookout’u etkinleştirme](enable-lookout-mtp-connection-in-intune.md)
+#### [Lookout for Work uygulamasını dağıtma](configure-and-deploy-lookout-for-work-apps.md)
+#### [Uyumluluk ilkesinde cihaz tehdit korumasını etkinleştirme](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Uygulama verilerini MAM ile koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -107,6 +122,7 @@
 #### [MAM ilkelerini oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Android için MAM ilkeleri](android-mam-policy-settings.md)
 #### [iOS için MAM ilkeleri](ios-mam-policy-settings.md)
+#### [MAM ilkelerini doğrulama](validate-mobile-application-management.md)
 #### [İlke uyumluluğunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS uygulamaları arasında veri aktarımını yönetme](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [Son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
@@ -124,17 +140,13 @@
 ### [Uygulamaları devre dışı bırakma ](retire-apps-using-microsoft-intune.md)
 ### [Yönetilen şirket uygulama verilerini silme](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Son kullanıcılarınıza söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-
-## [Intune’a geçiş](migrate-to-intune.md)
-
-## [Yenilikler](whats-new-in-microsoft-intune.md)
+## [Son kullanıcı deneyimi hakkında kaynaklar](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
 
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

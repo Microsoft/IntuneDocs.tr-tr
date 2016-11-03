@@ -3,8 +3,9 @@ title: "Windows için Microsoft kullanım verilerini toplamayı devre dışı b�
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 71edc1891b43a437307dce062ddc8ea95fd29ce3
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: e8558df80e36c15ab740f919eee98af9ab00b508
 
 
 ---
@@ -33,6 +34,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -3,6 +3,7 @@ title: "Android yönetimini kurma | Microsoft Intune"
 description: "Microsoft Intune ile, Android ve KNOX cihazları için mobil cihaz yönetimini (MDM) etkinleştirin."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,29 +14,17 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
-ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 68ae3b90977e73c49b21d3196100f73d11549b63
 
 
 ---
 
 # Android cihaz yönetimini ayarlama
-Android cihazınızı ayarlamak için [buradan](../enduser/using-your-android-device-with-intune.md) yardım alabilirsiniz.
-
-Microsoft Intune ile, platform için başka çalışma yapmaya gerek kalmadan Android cihazlar için KCG’yi ("kendi cihazını getir") etkinleştirebilirsiniz.
-
-Daha fazla bilgi edinmek için aşağıdaki cihaz platformu seçenekleri arasından seçim yapın:
-
-> [!div class="op_single_selector"]
-- [Microsoft Intune ile Android yönetimini ayarlama](set-up-android-management-with-microsoft-intune.md)
-- [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Microsoft Intune ile Windows Phone yönetimin ayarlama](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Microsoft Intune ile Windows cihazı yönetimini ayarlama](set-up-windows-device-management-with-microsoft-intune.md)
-
-Android mobil cihazlar kullanıcıların Google Play’den erişilebilen Şirket Portalı uygulamasını kullanarak kaydolmalarına imkan tanır. Kullanıcıların cihazlarını Intune‘a kaydetmesine olanak sağlamak için aşağıdaki adımları tamamlayın.
+Bir Intune yöneticisi olarak Android cihazlarını yönetmeyi Şirket Portalı’ndan etkinleştirebilirsiniz. Kullanıcılar cihazlarını Google Play’den edinilebilecek Şirket Portalı uygulamasını kullanarak kaydedebilir.
 
 1.  **Intune’u ayarlama**<br>
-    Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
+    Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](prerequisites-for-enrollment.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
 
 2.  **Android kaydı etkinleştirildi**<br>
     Android mobil cihaz kaydının etkinleştirilmesi için Intune konsolunda gerekli olan ek yapılandırma yoktur.
@@ -48,10 +37,10 @@ Android mobil cihazlar kullanıcıların Google Play’den erişilebilen Şirket
   - [Windows cihazlar için son kullanıcı kılavuzu](../enduser/using-your-android-device-with-intune.md)
 
 ### Ayrıca bkz.
-[Microsoft Intune’da cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Microsoft Intune’da cihazları kaydetmenin önkoşulları](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

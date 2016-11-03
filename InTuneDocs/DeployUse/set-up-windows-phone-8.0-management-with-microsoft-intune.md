@@ -13,8 +13,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 5b659bb63c34887684f90fd56ea853bade8bf791
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 
 
 ---
@@ -42,7 +42,7 @@ Windows Phone 8.0’da, Intune Şirket Portalı uygulamasının yüklenebilmesi 
 Windows Phone mobil cihaz yönetimi için kurulum gereksinimleri cihazları nasıl yöneteceğinize bağlıdır.  Şirketinizin DNS kaydında iki CNAME ayarlamak kullanıcıların kaydolmasını kolaylaştırır. Kullanıcılarınız Şirket Portalı uygulamasını Mağaza’dan indirecekse, DNS ayarlarını yapılandırdıktan sonra yalnızca Şirket Portalı’nı ayarlayıp kullanıcılara nasıl kaydolacaklarını söylemeniz yeterlidir.  Şirket Portalı’nı dağıtacağınız Windows Phone 8.0 veya Windows Phone 8.1 cihazları için, uygulamanın kodunu imzalamak amacıyla bir Symantec sertifikasına ihtiyacınız vardır.
 
 ## Windows Phone yönetimini etkinleştirmek için kurulum gereksinimlerini yapılandırma
-1.  **Intune’u ayarlama** Henüz bu işlemi yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
+1.  **Intune’u ayarlama** Henüz bu işlemi yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](prerequisites-for-enrollment.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
 
 2.  **Kayıt sunucusu adresi için bir DNS diğer adı ayarlama** (isteğe bağlı)
 
@@ -183,6 +183,6 @@ Windows Phone mobil cihaz yönetimi için kurulum gereksinimleri cihazları nas�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

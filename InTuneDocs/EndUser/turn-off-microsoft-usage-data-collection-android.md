@@ -3,8 +3,9 @@ title: "Android için Microsoft kullanım verilerini toplamayı devre dışı b�
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 633e386e21092022088cc9ccc33273921ca8c3ed
+ms.sourcegitcommit: 1e00d2d1e8e46b512eb70c2c594712b9505541ec
+ms.openlocfilehash: 01fce3200a5aa481dde6cd560cbad426592ef381
 
 
 ---
@@ -28,8 +29,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

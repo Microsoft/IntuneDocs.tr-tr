@@ -3,8 +3,9 @@ title: "Şirket Portalı uygulamasının yeni sürümünü yükleme | Microsoft 
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,21 +13,21 @@ ms.technology:
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: fb347fac40d201f94d1b8847ba72b0bd31dd6e23
+ms.sourcegitcommit: 849632d4b07b2e4417fd955d945fed21461edc6a
+ms.openlocfilehash: e3ccc0fda42c00ced108401c31df4106fe4049a3
 
 
 ---
 
 # Şirket Portalı uygulamasının yeni sürümünü yükleme
 
-Şirket Portalı sürümünüz artık desteklenmiyorsa veya Şirket Portalı’nın daha yeni bir sürümü kullanıma sunulduysa, Şirket Portalı uygulamasını yeni sürüme güncelleştirmelisiniz. Aşağıda, sahip olduğunuz cihazın türüne uygun adımları kullanın.
+Şirket Portalı uygulaması sürümünüz artık desteklenmiyorsa veya Şirket Portalı uygulamasının daha yeni bir sürümü kullanıma sunulduysa, bunu yeni sürüme güncelleştirmelisiniz. Sahip olduğunuz cihazın türüne uygun adımları kullanın.
 
-## Android cihazınızda Intune Şirket Portalı uygulamasını güncelleştirmek için
+## Android cihazınızda Intune Şirket Portalı uygulamasını güncelleştirme
 
-Şirket Portalı’nın yeni bir sürümü kullanılabilir olduğunda Play Store sizi uyarır. Şirket Portalı’nda ise bilgi istemi gösterilmez. Cihazınızı güncelleştirmek için uyarıdaki yönergeleri izleyin.
+Şirket Portalı’nın yeni bir sürümü kullanılabilir olduğunda Play Store sizi uyarır. Şirket Portalı uygulamasında bilgi istemi gösterilmez. Cihazınızı güncelleştirmek için uyarıdaki yönergeleri izleyin.
 
-## iOS cihazınızda Intune Şirket Portal uygulamasını güncelleştirmek için
+## iOS cihazınızda Intune Şirket Portalı uygulamasını güncelleştirme
 
 Yeni bir sürüm çıktığında, yüklü uygulamalar listenizde uygulamaya bakarken “güncelleştir” seçeneğini görürsünüz.  
 
@@ -36,7 +37,7 @@ Yeni bir sürüm çıktığında, yüklü uygulamalar listenizde uygulamaya baka
 
 2. Uygulamayı bulduğunuzda, uygulama adının sağ tarafındaki **güncelleştir** düğmesine dokunun.
 
-## Windows cihazınızda Intune Şirket Portalı uygulamasını güncelleştirmek için
+## Windows cihazınızda Intune Şirket Portalı uygulamasını güncelleştirme
 
 1.  Windows Mağazası'na gidin ve **şirket portalı** için arama yapın.
 
@@ -50,8 +51,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

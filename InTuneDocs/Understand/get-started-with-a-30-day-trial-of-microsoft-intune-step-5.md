@@ -3,6 +3,7 @@ title: "Değerlendirme mobil cihazlarını kaydetme | Microsoft Intune"
 description: "Intune’un ücretsiz, 30 günlük değerlendirmesine kaydolduğunuzda, mobil cihazlar nasıl kaydedilir ve uygulama nasıl yüklenir"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,16 +50,10 @@ App Store’dan erişilebilen, Microsoft Corporation’a ait **Microsoft Intune 
 ### Windows Phone 8.1
 Kullanıcılar, Windows Phone mağazasından erişilebilen Microsoft Corporation’ın **Şirket Portalı** uygulamasını yükler ve yukarıya eklenen Intune kullanıcı kimlik bilgileriyle oturum açar.  Cihazınızı eklemek için **Kayıtlı cihazlar** ’ı görüntüleyin.
 
- ### Windows Phone 8.0
- Kullanıcılar **sistem ayarları** &gt; **şirket uygulamaları**’na tıklar ve Intune kullanıcı kimlik bilgileriyle oturum açar. Şirket Portalı uygulaması, telefonunuza dağıtılır.
-
-**Sunucu adresi**istenirse “manage.microsoft.com” yazın.
-
-
 ## Daha önce dağıtılan uygulamayı yükleme
 Mobil cihazda Şirket Portalı’nı açın, **Uygulamalar**'ı seçin ve ardından **Microsoft Skype**'ı yükleyin.
 
-Intune kullanarak mobil cihaz yönetimi hakkında daha fazla bilgi için, bkz. [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Intune kullanarak mobil cihaz yönetimi hakkında daha fazla bilgi için bkz. [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/Intune/deploy-use/prerequisites-for-enrollment).
 
 ### Sonraki adımlar
 Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 5. adımını tamamladınız.
@@ -69,6 +64,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 5. adımını
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

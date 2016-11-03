@@ -1,5 +1,5 @@
 Windows'un Erişilebilirlik Özellikleri
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 82a6a97dec78ad6e12fa5f8ccecae90a5bcc1e53
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
 
 
 ---
@@ -26,7 +26,7 @@ BT yöneticiniz birden çok parola gereksinimi ayarlayabilir. Örneğin, parolan
 
 Parola gereksinimlerinin tümüne uyan bir parola ayarlama konusunda sorun yaşıyorsanız, yardım için BT yöneticinize başvurun.
 
-## Windows Phone 8 veya 8.1’de parolanızı değiştirmek için:
+## Windows Phone 8.1’de parolanızı değiştirmek için:
 
 1. **Giriş** ekranında **Ayarlar**’a dokunun ve ardından **ekranı kilitle**’yi seçin.
 2. Ekranı aşağı kaydırarak **Parola**’ya gelin ve **parola değiştir**’e dokunun.
@@ -34,9 +34,9 @@ Parola gereksinimlerinin tümüne uyan bir parola ayarlama konusunda sorun yaş�
 4. **Yeni parola** alanına yeni parolanızı girin ve **Parolayı onayla** alanına yeni parolayı bir kez daha girin.
 4. **Bitti**’ye dokunun.
 
-## Windows Phone 8 veya 8.1’de parolanızı ayarlamak için:
+## Windows Phone 8.1’de parolanızı belirlemek için:
 
-1. **Giriş** ekranında **Ayarlar**’a dokunun ve ardından **kilit ekranı**’nı seçin.
+1. **Giriş** ekranında **Ayarlar**’a dokunun ve ardından **ekranı kilitle**’yi seçin.
 2. Ekranı aşağı kaydırarak **Parola**’ya gelin ve **Parola** çubuğunu **Açık** konumuna kaydırın.
 3. **Yeni parola** alanına yeni parolanızı girin ve **Parolayı onayla** alanına yeniden girin.
 4. **Bitti**’ye dokunun.
@@ -47,6 +47,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

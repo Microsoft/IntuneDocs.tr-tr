@@ -3,8 +3,9 @@ title: "Cisco ISE ile ağlara erişimi kısıtlama| Microsoft Intune"
 description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olmasını sağlamak için, Intune ile Cisco ISE kullanabilirsiniz."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 06/24/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
-ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
 
 
 ---
@@ -27,7 +28,7 @@ Intune’un Cisco Identity Services Engine (ISE) ile tümleştirmesi, Intune cih
 Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar yapmanız gerekmez. Intune kiracınıza erişebilmesi için Cisco ISE sunucunuza izinler sağlamanız gerekir. Bu yapıldıktan sonra, kurulumun kalan bölümü Cisco ISE sunucunuzda gerçekleştirilir. Bu makalede, ISE sunucunuza, Intune kiracınıza erişim izinleri sağlamayla ilgili yönergeler sağlanır.
 
 ### 1. Adım: Sertifikaları yönetme
-1. Azure Active Directory (Azure AD) konsolunda, sertifikayı dışarı aktarın.
+Azure Active Directory (Azure AD) konsolundan sertifikayı dışarı aktardıktan sonra ISE konsolunun Güvenilen Sertifikalar deposuna aktarın:
 
 #### Internet Explorer 11
 
@@ -44,6 +45,8 @@ Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar
 
    f. **Dışarı aktarılacak dosya** sayfasında, dosyanın kaydedileceği bir konum seçmek üzere **Gözat**’ı seçin ve bir dosya adı sağlayın. Dışarı aktarılacak bir dosya seçiyor gibi gözükseniz de, aslında dışarı aktarılan sertifikanın kaydedileceği dosyayı yeniden adlandırıyorsunuz. **İleri** &gt; **Son**’u seçin.
 
+   g. ISE konsolunda, Intune sertifikasını (dışarı aktardığınız dosya) **Güvenilen Sertifikalar** deposuna aktarın.
+
 #### Safari
 
  a. Azure AD konsolunda oturum açın.
@@ -52,14 +55,13 @@ b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
 
    c. **Sertifika görüntüle** &gt; **Ayrıntılar**’ı seçin.
 
-   d. Sertifikayı seçin ve ardından **Dışa aktar**’ı seçin.  
+   d. Sertifikayı seçin ve ardından **Dışa aktar**’ı seçin. 
+
+   e. ISE konsolunda, Intune sertifikasını (dışarı aktardığınız dosya) **Güvenilen Sertifikalar** deposuna aktarın.
 
 > [!IMPORTANT]
 >
 > Sertifikanın son kullanma tarihini denetleyin, bunun süresi dolduğunda yeni bir sertifika dışarı aktarmanız ve içeri aktarmanız gerekecektir.
-
-
-2. ISE konsolunda, Intune sertifikasını (dışarı aktardığınız dosya) **Güvenilen Sertifikalar** deposuna aktarın.
 
 
 ### ISE’den otomatik olarak imzalanan sertifika alma 
@@ -97,8 +99,44 @@ Tüm metnin tek bir satırda olduğundan emin olun
 |Oauth 2.0 Belirteç uç noktası|Belirteci Veren URL|
 |Kodunuzu, İstemci kimliğinizle güncelleştirme|İstemci Kimliği|
 
+### 4. Adım: ISE’nin otomatik olarak imzalanan sertifikasını Azure AD'de oluşturduğunuz ISE uygulamasına yükleyin
+1.     Bir .cer X509 ortak sertifika dosyasından base64 olarak kodlanmış sertifika değerini ve parmak izini alın. Bu örnek PowerShell'i kullanmaktadır:
+   
+      
+      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
+ 
+    Bir sonraki adımda kullanmak üzere $base64Thumbprint, $base64Value ve $keyid değerlerini kaydedin.
+2.       Sertifikayı bildirim dosyası ile karşıya yükleyin. [Azure Yönetim Portalı](https://manage.windowsazure.com)'nda oturum açın
+2.      Azure AD ek bileşenine girerek bir X.509 sertifikası ile yapılandırmak istediğiniz uygulamayı bulun.
+3.      Uygulama bildirim dosyasını indirin. 
+5.      Boş "KeyCredentials": [], özelliğini aşağıdaki JSON ile değiştirin.  KeyCredentials karmaşık türü [Varlık ve karmaşık tür başvurusu](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)’nda belgelenir.
 
-### 3. Adım: ISE Ayarlarını Yapılandırma
+ 
+    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
+     ], 
+ 
+Örneğin:
+ 
+    “keyCredentials“: [
+    {
+    “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
+    “keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,
+    “type”: “AsymmetricX509Cert”,
+    “usage”: “Verify”,
+    “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
+    }
+    ],
+ 
+6.      Değişiklikleri uygulama bildirim dosyasına kaydedin.
+7.      Düzenlenen uygulama bildirim dosyasını Azure yönetim portalı aracılığıyla yükleyin.
+8.      İsteğe bağlı: X.509 sertifikanızın uygulamada mevcut olduğunu denetlemek için bildirimi yeniden indirin.
+
+>[!NOTE]
+>
+> KeyCredentials bir koleksiyon olduğundan geçiş senaryoları için birden fazla X.509 sertifikası yükleyebilir veya güvenliğin aşılması senaryolarında sertifikaları silebilirsiniz.
+
+
+### 4. Adım: ISE Ayarlarını Yapılandırma
 ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın:
   - **Sunucu Türü**: Mobil cihaz Yöneticisi
   - **Kimlik doğrulama türü**: OAuth – İstemci Kimlik Bilgileri
@@ -120,7 +158,7 @@ Bu tabloda, Intune tarafından yönetilen cihazlar için, Intune kiracınız ve 
 |serialNumber|Cihazın seri numarası. Yalnızca iOS cihazları için geçerlidir.|
 |imei|IMEI (15 ondalık basamak: 14 basamak, artı bir denetleme basamağı) veya IMEISV (16 basamak) numarası cihaz kökeni, modeli ve seri numarasını hakkında bilgi içerir. Bu numaranın yapısı 3GPP TS 23.003 içinde belirtilir. Yalnızca SIM kartlı cihazlar için geçerlidir.|
 |udid|40 harf ve rakamlık bir dizi olan Benzersiz Cihaz Tanımlayıcısı. iOS cihazlarına özgüdür.|
-|meid|CDMA mobil istasyonu ekipmanının fiziksel bir parçasını tanımlayan ve genel olarak benzersiz bir numara olan mobil donanım kimliği. Numaranın biçimi 3GPP2 rapor S. R0048 tarafından tanımlanır.. Bununla birlikte, pratikte bunun onaltılı basamaklar içeren bir IMEI olduğu düşünülebilir. Bir MEID 56 bit uzunluktadır (14 onaltılık basamak). Üç alandan oluşur, 8 bitlik bölgesel kod (RR), 24 bit üretici kodu ve 24 bit üreticisi tarafından atanmış seri numarası.|
+|meid|CDMA mobil istasyonu ekipmanının fiziksel bir parçasını tanımlayan ve genel olarak benzersiz bir numara olan mobil donanım kimliği. Numaranın biçimi 3GPP2 rapor S. R0048 tarafından tanımlanır. Bununla birlikte, pratikte bunun onaltılı basamaklar içeren bir IMEI olduğu düşünülebilir. Bir MEID 56 bit uzunluktadır (14 onaltılık basamak). Üç alandan oluşur, 8 bitlik bölgesel kod (RR), 24 bit üretici kodu ve 24 bit üreticisi tarafından atanmış seri numarası.|
 |osVersion|Cihazın işletim sistemi sürümü.
 |model|Cihaz modeli.
 |üretici|Cihaz üreticisi.
@@ -150,6 +188,6 @@ Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere k
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO1-->
 
 

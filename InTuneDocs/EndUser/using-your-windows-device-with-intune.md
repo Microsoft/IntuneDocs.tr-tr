@@ -3,8 +3,9 @@ title: "Windows cihazınızı Intune ile kullanma | Microsoft Intune"
 description: "Windows cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +14,16 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 28062ec58760a793d0e19f281efd026c3d8070da
 
 
 ---
 
 # Windows cihazınızı Intune ile kullanma
 
-Bu makale, son kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlerin bağlantılarını içerir. BT yöneticileri, kullanıcıların çeşitli görevleri gerçekleştirirken takip ettiği ve aşağıdaki kategorilere ayrılan adımları görmek için bu bilgiye başvurabilir: 
-- Şirket portalı uygulamasının yüklenmesi ve Intune kaydı 
+Bu makale, kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlere bağlantılar içerir. BT yöneticileri, aşağıdaki kategorilerde gruplanmış olan çeşitli görevleri gerçekleştirmek üzere kullanıcıların atması gereken adımları görmek için bu bilgilere başvurabilir:
+- Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
 - Kayıt sonrası yönetim görevleri
 - Uyumluluk sorunları
 
@@ -36,7 +37,7 @@ Bu bölümdeki bilgiler, Windows cihazlarında Intune Şirket Portalı yüklemes
 
 ## Cihazınız Intune’a kaydolduğunda yapabilecekleriniz
 
-Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydolduktan sonra yapabileceğiniz işlemlerde size yardımcı olur.
+Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydedildikten sonra yapabileceğiniz işlemlerde size yardımcı olur.
 
 - [Cihazınızı şifreleme](encrypt-your-device-windows.md)
 - [Parolanızı ayarlama veya değiştirme](set-or-change-your-password-windows.md)
@@ -47,9 +48,9 @@ Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydolduktan sonra yapab
 - [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-windows.md)
 - [Cihazınızı el ile eşitleme](sync-your-device-manually-windows.md)
 
-## Cihazınızla ilgili sorunları giderme
+## Cihazınızdaki sorunları düzeltme
 
-Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydolduğunda karşılaşabileceğiniz sorunların çözümünde size yardımcı olur.
+Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydedildiğinde karşılaşabileceğiniz sorunların çözümünde size yardımcı olur.
 
 - [Cihaz, gerekli en düşük işletim sistemi sürümüne sahip değil](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
 - [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
@@ -60,6 +61,6 @@ Bu bölümdeki bilgiler, Windows cihazınız Intune’a kaydolduğunda karşıla
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -2,9 +2,10 @@
 title: "Windows Phone 8.1 cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Windows Phone 8.1 cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 9a38443813682b29615ec79b0e0d7da4f8bd369c
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: 9a38443813682b29615ec79b0e0d7da4f8bd369c
 
 # Windows Phone 8.1 cihazınızı Intune'a kaydetme
 
-Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazlarınızı kaydedebilirsiniz. Cihazlarınızın kaydedilmesi kuruluşunuzda şirket verilerinin güvenli tutulabilmesini sağlar. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [BT yöneticinizin cihazınızda görebilecekleri ve göremeyecekleri](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazlarınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, kuruluşunuz şirket verilerini güvenli tutabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [BT yöneticinizin cihazınızda görebilecekleri ve göremeyecekleri](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
 Phone 8.1 cihazınızı Intune’a kaydetmek için, şirketiniz veya okulunuz için geçerli yönergeleri izleyin:
@@ -36,7 +37,7 @@ Cihazınıza Şirket Portalı uygulamasını yükleyin:
 
 1.  **Başlat** &gt; **Mağaza**’ya dokunun.
 
-2.  **Ara**’ya dokunun ve **şirket portalı** yazın.
+2.  **Ara**’ya dokunun, sonra **şirket portalı** yazın.
 
 3.  Sonuçlar listesinde **Şirket Portalı**’na dokunun.
 
@@ -80,13 +81,12 @@ Cihazınızı kaydedin:
 
 4.  Şirket uygulaması veya Hub’ı yüklemeniz istenirse, ilgili kutunun işaretli olduğundan emin olun ve **bitti**’ye dokunun.
 
-BT yöneticiniz Şirket Portalı’nı kayıt sırasında yüklenecek biçimde yapılandırdıysa Şirket Portalı’nı uygulama listenizde görürsünüz.
+BT yöneticiniz Şirket Portalı’nı kayıt sırasında yüklenecek biçimde ayarladıysa Şirket Portalı’nı uygulama listenizde görürsünüz.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

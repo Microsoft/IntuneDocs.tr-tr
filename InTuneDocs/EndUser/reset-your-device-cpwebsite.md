@@ -3,8 +3,9 @@ title: "Şirket Portalı web sitesinden cihazınızı sıfırlama | Microsoft In
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 005992d7d763b67db4d65aa30f19a209f82e3811
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 05f54088f3b18d90368e1b408b7012d28021abfc
 
 
 ---
@@ -41,11 +42,10 @@ Cihazınız artık sıfırlanmıştır.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
-### Ayrıca bkz.
-[Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO3-->
 
 

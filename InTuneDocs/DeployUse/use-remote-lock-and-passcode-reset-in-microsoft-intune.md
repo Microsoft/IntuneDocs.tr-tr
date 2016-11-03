@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
 Microsoft Intune hem uzaktan kilitleme hem de geçiş kodu sıfırlama özelliklerini sağlar.
 
 ## Cihazı uzaktan kilitleme
-Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Aşağıdaki tabloda, farklı mobil platformlarda uzaktan kilitleme işleminin nasıl çalıştığı listelenmiştir.
+Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Aşağıdaki tabloda, farklı mobil platformlarda uzaktan kilitleme işleminin nasıl çalıştığı listelenmiştir. Uzaktan kilitleme desteklenmemektedir
 
 |Platform|Uzaktan kilitleme|
 |------------|---------------|
@@ -31,6 +31,7 @@ Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Aşa
 |Windows RT 8.1 ve Windows RT|Cihazın geçerli kullanıcısı, cihazı kaydeden kullanıcı ile aynıysa desteklenir.|
 |Windows 8.1|Cihazın geçerli kullanıcısı, cihazı kaydeden kullanıcı ile aynıysa desteklenir.|
 
+Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için uzaktan kilitleme desteklenmez.
 
 ### Bir mobil cihazı Intune konsolu üzerinden uzaktan kilitlemek için
 
@@ -55,6 +56,8 @@ Bir kullanıcı geçiş kodunu unutursa, bir cihazdan geçiş kodunu kaldırarak
 |Windows RT 8.1 ve Windows RT|Desteklenmez|
 |Windows 8.1|Desteklenmez|
 
+Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için geçiş kodu sıfırlaması desteklenmez.
+
 ### Geçiş kodunu sıfırlamak için
 
 1.  [Intune yönetici konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Mobil Cihazlar** öğelerini seçin.
@@ -73,6 +76,6 @@ Bir kullanıcı geçiş kodunu unutursa, bir cihazdan geçiş kodunu kaldırarak
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

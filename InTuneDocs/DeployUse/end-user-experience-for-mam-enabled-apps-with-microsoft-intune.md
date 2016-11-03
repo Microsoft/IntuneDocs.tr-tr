@@ -3,8 +3,8 @@ title: "MAM etkin uygulamalar için son kullanıcı deneyimi | Microsoft Intune"
 description: "Bu konu başlığı altında, uygulamanız mobil uygulama yönetimi ilkeleriyle yönetildiğinde neler bekleyebileceğiniz açıklanır."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: e43dea5630975165ea7468836a8b0328f0656030
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,30 +140,24 @@ Android cihaz kullanıyorsanız, mevcut hesabı kaldırıp yenisini eklemeye ili
 
 ![Hata iletisi ve hesabı kaldırma yönergeleri ekran görüntüsü](../media/AppManagement/Android_SwitchUser.png)
 
-##  Rights Management paylaşım uygulamasıyla medya dosyalarını görüntüleme
-Şirket AV, PDF ve resim dosyalarını Android cihazlarda görüntülemek için, [Microsoft Rights Management (RMS) paylaşım uygulamasını](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) kullanın.
+##  Medya dosyalarını Azure Information Protection uygulaması ile (daha önce Rights Management paylaşım uygulaması olarak bilinirdi) görüntüleme
+Şirket AV, PDF ve görüntü dosyalarını Android cihazlarda görüntülemek için [Azure Information Protection uygulamasını](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) kullanın.
 
-Bu uygulamayı Google Play mağazasından indirin.  Uygulama cihazınıza yüklendikten sonra, uygulamayı başlatın ve şirket kimlik bilgilerinizle kimlik doğrulayın. Şimdi, ilke ile yönetilen diğer uygulamalardan korumasız ve korumalı dosyaları görüntüleyebiliyor olmalısınız.
+Bu uygulamayı Google Play mağazasından indirin.  
 
 Aşağıdaki dosya türleri desteklenir:
 
 * **Ses:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (gelişmiş AAC+), AAC ELD (gelişmiş düşük gecikme AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
 * **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
 * **Resim:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
-* PDF, PPDF
+* **PDF, PPDF**
 
 ------------
 |**pfile**|**metin**|
 |----|----|
-|Pfile, korumalı dosyalar için, şifrelenmiş içerik ve RMS lisanslarını kapsayan genel bir "sarmalayıcı" biçimidir ve herhangi bir dosya türünü korumak üzere kullanılabilir.|XML, CSV, vb. gibi metin dosyaları, korumalı olduklarında dahi uygulamada görüntülenmek üzere açılabilir. Dosya türleri: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+|Pfile, korumalı dosyalar için şifrelenmiş içerik ve Azure Information Protection lisanslarını kapsayan genel bir "sarmalayıcı" biçimidir ve herhangi bir dosya türünü korumak üzere kullanılabilir.|XML, CSV, vb. gibi metin dosyaları, korumalı olduklarında dahi uygulamada görüntülenmek üzere açılabilir. Dosya türleri: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
-**Intune’a kaydedilmeyen Android cihazları**
 
-Intune tarafından yönetilen diğer uygulamalardan dosyaları görüntülemek amacıyla RMS paylaşım uygulamasını kullanabilmeniz için, önce RMS uygulamasını başlatın ve iş hesabınızla kimliğinizi doğrulayın.  Oturum açtığınızda, **yalnızca bir RMS lisansınız olmadığı durumlarda** aşağıdaki iletiyi görürsünüz:
-
-**Kimlik Doğrulaması Başarılı – Şimdi şirket dosyalarını görüntüleyebilirsiniz, ancak kuruluşunuz dosyaları korumanıza izin verecek şekilde ayarlanmamıştır. Diğer ayrıntılar için BT yöneticinize başvurun.**
-
-Bu, şirket dosyalarını görüntülemek için RMS paylaşım uygulamasını kullanmanızı engellemez. Intune tarafından yönetilen diğer uygulamalardan şirket dosyalarını yine açabilir ve görüntüleyebilirsiniz, ayrıca MAM ilkeleri de yine uygulanır.  Bu ileti, RMS paylaşım uygulamasının sağladığı ek koruma özelliklerini ekleyemeyeceğinizi bildirir.  Dosyalarınıza koruma eklemek için RMS lisansınız olmalıdır. RMS dosya koruma özellikleri hakkında daha fazla bilgi edinmek için bkz. [Cihazdaki dosyayı koruma](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) ve [E-postayla paylaştığınız dosyayı koruma](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Ayrıca bkz.
@@ -171,6 +165,6 @@ Bu, şirket dosyalarını görüntülemek için RMS paylaşım uygulamasını ku
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

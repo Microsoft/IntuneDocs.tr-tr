@@ -3,8 +3,9 @@ title: "Şirket Portalı web sitesini kullanarak cihazınızı el ile eşitleme 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
+ms.sourcegitcommit: 6d53602bf4d767341924c4c4af8edae0d376a149
+ms.openlocfilehash: c49aa7e21f002110155e883894d211266ddbcb6c
 
 
 ---
@@ -23,15 +24,17 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 # Şirket Portalı web sitesini kullanarak cihazınızı el ile eşitleme
 
-Uygulama yüklemeniz fazla uzun sürüyorsa, cihazınızı el ile eşitlemeyi deneyebilirsiniz ve bu işlem yüklemenin hızlanmasına yardımcı olabilir. Aşağıdaki yönergelerden kullandığınız cihazın türü veya Windows sürümü ile eşleşeni kullanın. Uygulama yüklemelerini hızlandırmak için cihazınızı eşitlemek yalnızca aşağıda listelenen sürümler için sonuç verir.
+Uygulama yükleme işleminiz veya başka bir görev çok uzun zaman alıyorsa, cihazınızı el ile eşitlemeyi deneyebilirsiniz. El ile eşitleme, yüklemenin veya görevin hızını artırmaya yardımcı olabilir.
+
+Eşitleme özelliği yalnızca aşağıdaki sürümler için çalışır. Cihazınıza yönelik yönergeleri kullanın.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
-* [Windows 10 Masaüstü](sync-your-device-manually-windows.md#windows-10-desktop)
+* [Windows 10 masaüstü](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
 * [iOS](sync-your-device-manually-ios.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

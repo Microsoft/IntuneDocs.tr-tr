@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 552217a59b7bfd9d75f8be1ce4c401d015ba84f7
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 381364e42430842032ced3b5c8c9cc8de19e8186
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 552217a59b7bfd9d75f8be1ce4c401d015ba84f7
 Intune’a kaydettiğiniz bir cihazın PIN kodunu veya parolasını kaybederseniz, sıfırlamak için [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanabilirsiniz. Şirket Portalı web sitesi, Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek ve Şirket Portalı uygulamasını kullanırken gerçekleştirebileceğiniz görevlerin çoğunu yapmak için kullanabileceğiniz bir web sayfasıdır.
 
 > [!NOTE]
-> BT yöneticinizin Intune’u nasıl yapılandırdığına bağlı olarak, Şirket Portalı web sitesinde Geçiş Kodunu Sıfırla düğmesini görmeyebilirsiniz. Windows 8.1 ve Windows RT cihazlarında Geçiş Kodu Sıfırlama desteklenmez.
+> BT yöneticinizin Intune’u nasıl yapılandırdığına bağlı olarak, Şirket Portalı web sitesinde Geçiş Kodunu Sıfırla düğmesini görmeyebilirsiniz. Windows 8.1 cihazlarında Geçiş Kodu Sıfırlama desteklenmez.
 
 Geçiş kodunuzu sıfırlamak için:
 
@@ -64,6 +64,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

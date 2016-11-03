@@ -3,6 +3,7 @@ title: Cihaz uyumluluk ilkeleri | Microsoft Intune
 description: "Bu konu başlığı altında, cihaz uyumluluk ilkelerinin ne olduğunu ve nasıl çalıştığını anlamanız için gereken kavramlar açıklanır."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: a853eb4de5528b3ca219ca844a9df4f3b5ad9224
 
 
 ---
@@ -29,12 +30,13 @@ E-postaya ve diğer hizmetlere yalnızca uyumluluk ilkesi kurallarıyla uyumlu o
 Uyumluluk ilkelerini, koşullu erişimden bağımsız olarak da kullanabilirsiniz. Bağımsız olarak kullanıldığında, hedeflenen cihazlar değerlendirilir ve uyumluluk durumları raporlanır. Örneğin, kaç cihazın şifrelenmediğini ya da hangi cihazların yazılım kilidinin kırıldığını veya kökünün belirtildiğini raporlamak isteyebilirsiniz. Öte yandan, bunlar bağımsız kullanıldığında, şirket kaynaklarına yönelik erişim kısıtlaması olmaz.
 
 Uyumluluk ilkelerini kullanıcılara siz dağıtırsınız. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının cihazlarında uyumluluk denetimi yapılır.
+Mobil cihazların dağıtıldıktan sonra ilke almasının ne kadar sürdüğü hakkında bilgi edinmek için bkz. [Cihazlarınızda ayarları ve özellikleri yönetme](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)
 
 Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyumluluk ilkeleri tarafından desteklenen cihaz türleri ve uyumsuz ayarların nasıl yönetildiği listelenmektedir.
 
---------------
+-----------------------------
 
-|İlke Ayarı| Windows 8.1 ve üzeri| Windows Phone 8.1 ve üzeri| iOS 6.0 ve üzeri|Android 4.0 ve üzeri<br/>Samsung KNOX Standard 4.0 ve üzeri|
+|İlke Ayarı| Windows 8.1 ve üzeri| Windows Phone 8.1 ve üzeri| iOS 8.0 ve üzeri|Android 4.0 ve üzeri<br/>Samsung KNOX Standard 4.0 ve üzeri|
 |-----|----|----|----|----|
 |**PIN veya Parola Yapılandırması** |Çözümlendi|Çözümlendi|Çözümlendi|Karantinaya Alındı|
 |**Cihaz şifrelemesi**|Yok|Çözümlendi|Çözümlendi (PIN ayarlanarak)|Karantinaya Alındı|
@@ -43,7 +45,9 @@ Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyum
 |**En düşük işletim sistemi sürümü**|Karantinaya Alındı|Karantinaya Alındı|Karantinaya Alındı|Karantinaya Alındı|
 |**En yüksek işletim sistemi sürümü**|Karantinaya Alındı| Karantinaya Alındı| Karantinaya Alındı| Karantinaya Alındı|
 |**Windows durum kanıtlama**|Windows 10 ve Windows 10 Mobile Karantinaya Alındı durumundadır.<br /><br />Ayar Windows 8. 1 için geçerli değildir|Yok|Yok|Yok|
---------------
+
+------------------------------
+
 **Çözümlendi** = Uyumluluk cihazın işletim sistemi tarafından zorlanır (örneğin, kullanıcı bir PIN ayarlamaya zorlanır).  Ayarın uyumsuz olması durumu hiçbir zaman söz konusu değildir.
 
 **Karantinaya Alındı** = Cihazın işletim sistemi uyumluluğu zorlamaz (örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz). Cihazlar uyumsuz olduğunda, aşağıdaki işlemler yapılır:
@@ -62,6 +66,6 @@ Aşağıdaki tabloda, ilke koşullu erişim ilkesi ile kullanıldığında, uyum
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

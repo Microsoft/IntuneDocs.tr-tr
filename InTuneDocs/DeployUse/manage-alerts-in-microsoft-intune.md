@@ -31,9 +31,9 @@ Etkin uyarılar hakkındaki genel bilgilere ve özet verilerine bakın.
 
 Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 
--  En önemli üç uyarı ve etkin uyarıların toplam sayısı dahil olmak üzere **Uyarılarla ilgili genel bilgileri görüntülemek için** **Sisteme Genel Bakış**'ı seçin. Daha ayrıntılı bilgiler görmek için bu uyarılardaki bağlantıları seçin.
+-  En önemli üç uyarı ve etkin uyarıların toplam sayısı dahil olmak üzere **uyarılarla ilgili genel bilgileri görüntülemek için** **Sisteme Genel Bakış**'ı seçin. Ayrıntılı bilgi görmek için bu uyarılardaki bağlantıları seçin.
 
--  **Uyarılarla ilgili özet bilgileri görüntülemek için**, **Uyarılar** > **Genel Bakış**’ı seçin. **Uyarılara Genel Bakış** sayfasındaki **Uyarı Türü Özeti** alanında uyarıların özetini görebilirsiniz. Kritik uyarılar önce listelenir. Daha ayrıntılı bilgiler görmek için bu uyarılardaki bağlantıları seçin.
+-  **Uyarılarla ilgili özet bilgileri görüntülemek için**, **Uyarılar** > **Genel Bakış**’ı seçin. **Uyarılara Genel Bakış** sayfasındaki **Uyarı Türü Özeti** alanında uyarıların özetini görebilirsiniz. Kritik uyarılar önce listelenir. Ayrıntılı bilgi görmek için bu uyarılardaki bağlantıları seçin.
 
         > [!NOTE]
         > In some cases, an alert type might appear more than once in the **Alerts Type Summary** list.
@@ -53,7 +53,7 @@ Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 
     -   **Son Güncelleştirme**. Uyarının en son değiştirildiği zamanı gösterir. Bir uyarı kapatıldıysa, uyarının kapatıldığı zaman gösterilir.
 
-    -   **Önem Derecesi**. Bu sütun uyarının önemini gösterir.
+    -   **Önem Derecesi**. Bu sütun uyarının önem derecesini gösterir.
 
 ## İlan tahtası uyarılarını görüntüleme
 İlan tahtası uyarıları, önemli hizmet duyuruları sağlar. Bunlar, yaklaşan hizmet yükseltmesi, bakım zamanlaması veya kesinti durumu hakkında bilgi sağlayabilir.
@@ -67,7 +67,7 @@ Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 3.  İlan tahtasındaki uyarıyı bir virgülle ayrılmış değer (CSV) veya HTML dosyası olarak dışarı aktarmak istiyorsanız, Intune yönetim konsolunda **Uyarılar** > **Tüm Uyarılar** >    **Bildirimler**'i seçin. Bir bildirim seçin, **Listeyi Dışarı Aktar** simgesini seçin ve gösterilen yönergeleri izleyin.
 
 ## Intune sistem durumunu gözden geçirme
-Bir an önce dikkat etmenizi gerektiren sorunları tanılamanıza ve öncelik sıralamasını belirlemenize yardımcı olması için **Sisteme Genel Bakış** çalışma alanında Endpoint Protection, Güncelleştirmeler, Aracı Durumu, İlke ve Yazılım kategorileri için **Sistem Durumu** özetlerini görüntüleyebilirsiniz. Sistem kesintiye uğradığında oluşturulan hata iletileri, **Hizmet Durumu** özetine bağlantı verir. **Hizmet Durumu** özetinde, her konumdaki sorunun ayrıntıları ve durum özetinin son güncelleştirildiği tarih gösterilir.
+**Sisteme Genel Bakış** çalışma alanında, bir an önce dikkat etmenizi gerektiren sorunları saptayıp öncelik belirlemenize yardımcı olmak için sunulan Endpoint Protection, Güncelleştirmeler, Aracı Sistem Durumu, İlke ve Yazılım kategorilerine ilişkin **Sistem Durumu** özetlerini görüntüleyebilirsiniz. Sistem kesintiye uğradığında oluşturulan hata iletileri, **Hizmet Durumu** özetine bağlantı verir. **Hizmet Durumu** özetinde, her konumdaki sorunun ayrıntıları ve durum özetinin son güncelleştirildiği tarih gösterilir.
 
 #### Aboneliğinizin durumunu görüntülemek için
 

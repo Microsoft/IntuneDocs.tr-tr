@@ -13,8 +13,8 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
-ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 263fb9add8d30c0f98af46e46b566f15513db109
 
 
 ---
@@ -22,10 +22,10 @@ ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
 # iOS ve Mac yönetimini ayarlama
 iOS veya Mac cihazınızı ayarlamak için [buradan](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md) yardım bulabilirsiniz.
 
-Intune iPad’ler, iPhone’lar ve Mac OS X cihazları için mobil uygulama yönetimini etkinleştirir ve şirket e-postasıyla uygulamalarına erişim sağlar. Intune’un iOS ve Mac cihazlarını yönetebilmesi için Apple Anında İletim Bildirimi hizmeti (APNs) sertifikası gerekir. Sertifika Intune’a eklendikten sonra, kullanıcılar cihazlarını kaydetmek için Şirket Portalı uygulamasını yükleyebilir veya yönetici [şirkete ait iOS cihazı yönetimini](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) ayarlayabilir.
+Intune iPad’ler, iPhone’lar ve Mac OS X cihazları için mobil uygulama yönetimini etkinleştirir ve kullanıcılara şirket e-postasına ve uygulamalarına erişim izni sağlar. Intune’un iOS ve Mac cihazlarını yönetebilmesi için Apple Anında İletim Bildirimi hizmeti (APNs) sertifikası gerekir. Sertifika Intune’a eklendikten sonra, kullanıcılar cihazlarını kaydetmek için Şirket Portalı uygulamasını yükleyebilir veya yönetici [şirkete ait iOS cihazı yönetimini](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) ayarlayabilir.
 
 1.  **Intune’u ayarlama**<br>
-    Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
+    Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](prerequisites-for-enrollment.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
 
 2.  **Sertifika imzalama isteği alma**<br>
     Bir yönetici kullanıcı olarak [Microsoft Intune yönetim konsolunu](http://manage.microsoft.com) açın, **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS ve Mac OS X** &gt; **APNs Sertifikasını Karşıya Yükle**'ye gidin ve **APNs sertifika isteğini indir**’e tıklayın. Sertifika imzalama isteği (.csr) dosyasını yerel olarak kaydedin. .csr dosyası Apple Anında İletilen Bildirim Sertifikaları Portalı'ndan bir güven ilişkisi sertifikası istemek için kullanılır.
@@ -47,11 +47,11 @@ Intune iPad’ler, iPhone’lar ve Mac OS X cihazları için mobil uygulama yön
 
 Şirketiniz veya kuruluşunuz kullanıcılarına iOS cihazları satın aldıysa, bu cihazlar [şirkete ait iOS cihazları](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) olarak yönetime kaydedilebilir.
 
-### Ayrıca Bkz.
-[Microsoft Intune’da cihazları kaydetmeye hazırlanma](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### Ayrıca bkz.
+[Microsoft Intune kaydı için önkoşullar](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -3,6 +3,7 @@ title: "İş İçin Windows Mağazası uygulamalarını yönetme | Microsoft Int
 description: "Toplu satın alınan uygulamaları Intune konsolundan yönetmek ve dağıtmak istiyorsanız, Microsoft Intune’u İş İçin Windows Mağazası’na bağlayın."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d40ec3b5b7c5c4ee2cfd48a95ada0dadcaa80be4
-ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
 
 ## Başlamadan önce
 İş İçin Windows Mağazası’ndan uygulamaları eşitlemeye ve dağıtmaya başlamadan önce aşağıdaki bilgileri gözden geçirin:
-* Intune’u kuruluşunuz için mobil cihaz yönetim yetkilisi olarak yapılandırmalısınız. Daha fazla bilgi için bkz. [Microsoft Intune’da cihazları kaydetmeye hazırlanın](get-ready-to-enroll-devices-in-microsoft-intune.md).
+* Intune’u kuruluşunuz için mobil cihaz yönetim yetkilisi olarak yapılandırmalısınız. Daha fazla bilgi için bkz. [Microsoft Intune’da cihazları kaydetmenin önkoşulları](prerequisites-for-enrollment.md).
 * İş İçin Windows Mağazası’ndan bir hesap almak isterseniz kaydolmanız gerekir.
 * İş İçin Windows Mağazası hesabını Intune’la ilişkilendirdikten sonra, gelecekte farklı bir hesaba geçemezsiniz.
 * Mağazadan satın alınan uygulamalar Intune’a el ile eklenemez veya Intune’dan el ile silinemez. Bunlar yalnızca İş İçin Windows Mağazası’yla eşitlenebilir.
@@ -77,6 +78,6 @@ Mağazadan alınan uygulamaları, diğer tüm Intune uygulamalarıyla aynı şek
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

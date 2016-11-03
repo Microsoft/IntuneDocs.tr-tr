@@ -4,7 +4,7 @@ description: "VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağ
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,23 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
 
 
 ---
 
 # Microsoft Intune’da VPN bağlantıları
- Sanal özel ağları (VPN’ler) kullanarak kullanıcılarınıza şirket ağınız için güvenli uzaktan erişim sağlayabilirsiniz. Uzak kullanıcılar, cihazları ağa fiziksel olarak bağlıymış gibi çalışabilir. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için Microsoft Intune’da *VPN profillerini* kullanın. Bu ayarları dağıtarak, şirket ağındaki kaynaklara bağlanmak için gereken son kullanıcı çabasını en aza indirirsiniz.
+
+Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir *VPN bağlantısı profili* kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için Microsoft Intune’da *VPN profilleri* kullanarak ağa kolay ve güvenli bir şekilde bağlanabilmelerini sağlayın. 
 
 Örneğin, tüm iOS cihazlara kurumsal ağ üzerindeki bir dosya paylaşımına bağlanmak için gereken ayarları sağlamak istediğinizi varsayın. Kurumsal ağa bağlanmak için gereken ayarları içeren bir VPN profili oluşturur ve ardından bu profili iOS cihaz kullanan tüm kullanıcılara dağıtırsınız. Kullanıcılar VPN bağlantısını kullanılabilir ağlar listesinde görür ve ağa en az çaba ile bağlanabilir.
 
 Aşağıdaki cihaz türlerini VPN profillerini kullanarak yapılandırabilirsiniz:
 
 * Android 4 ve üzeri çalıştıran cihazlar
-* iOS 7.1 ve üzerini çalıştıran cihazlar
+* Android for Work cihazlar
+* iOS 8.0 ve üzerini çalıştıran cihazlar
 * Mac OS X 10.9 ve üzerini çalıştıran cihazlar
 * Windows 8.1 ve üzeri çalıştıran kayıtlı cihazlar
 * Windows Phone 8.1 ve üzeri sürümleri çalıştıran cihazlar 
@@ -45,6 +47,8 @@ Intune aşağıdaki bağlantı türlerini kullanan VPN profillerini oluşturmay�
 Bağlantı türü |iOS ve Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Masaüstü ve Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Evet |Evet   |Hayır    |     Hayır    |Hayır  |Hayır    | Evet, (OMA-URI, yalnızca Mobile)|     
+Cisco (IPSec)|Evet |Hayır   |Hayır  |  Hayır|Hayır  |Hayır | Hayır|
+Citrix|Evet |Hayır   |Hayır  |  Hayır|Hayır  |Hayır | Hayır|
 Pulse Secure|Evet  |Evet |Evet   |Hayır  |Evet  |Evet| Evet|        
 F5 Edge Client|Evet |Evet |Evet |Hayır  |Evet  |   Evet |  Evet|   
 Dell SonicWALL Mobile Connect|Evet |Evet |Evet |Hayır  |Evet |Evet |Evet|         
@@ -68,9 +72,7 @@ VPN profilleri, farklı üreticilerden farklı bağlantı türleri ve farklı pr
 
 ### Sertifikalar
 
-VPN profilini oluştururken, Intune’da önceden oluşturduğunuz bir SCEP veya PFX sertifika profilini seçersiniz.
-
-Bu kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için oluşturduğunuz bir güvenilir sertifika profiline (veya kök sertifikaya) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, VPN bağlantısının kimliğini doğrulayan bilgisayara dağıtılır. Bu, genellikle VPN sunucusudur.
+VPN profilini oluştururken, Intune’da önceden oluşturduğunuz bir SCEP veya PFX sertifika profilini seçersiniz. Bu kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için oluşturduğunuz bir güvenilir sertifika profiline (veya *kök sertifikaya*) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, VPN bağlantısının kimliğini doğrulayan bilgisayara dağıtılır. Bu, genellikle VPN sunucusudur.
 
 Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md).
 
@@ -83,13 +85,17 @@ Kullanıcı, kullanıcı adı ve parola girerek VPN sunucusunda kimliğini doğr
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **İlke** > **İlke Ekle**’yi seçin.
 2. İlgili cihaz türünü genişleterek yeni ilke için bir şablon seçin ve ilgili cihaz için VPN profilini belirleyin:
     * **VPN Profili (Android 4 ve üzeri)**
-    * **VPN Profili (iOS 7.1 ve üzeri)**
+    * **VPN Profili (Android for Work)**
+    * **VPN Profili (iOS 8.0 ve üzeri)**
     * **VPN Profili (Mac OS X 10.9 ve üzeri)**
     * **VPN Profili (Windows 8.1 ve üzeri)**
     * **VPN Profili (Windows Phone 8.1 ve üzeri)**
     * **VPN Profili (Windows 10 Masaüstü ve Mobile ile üzeri)**
 
  Yalnızca özel bir VPN profili ilkesi oluşturabilir ve dağıtabilirsiniz. Önerilen ayarlar kullanılamaz.
+
+> [!Note]
+> Android for Work cihazlara yönelik bir VPN profili, VPN bağlantısını yalnızca cihazın iş profilinde yüklü uygulamalar için etkinleştirir.
 
 3. VPN profili ayarlarını yapılandırmanıza yardımcı olması için aşağıdaki tabloyu kullanın:
 
@@ -111,6 +117,7 @@ Ayar adı  |Daha fazla bilgi
 **Oturum açma grubu veya etki alanı**|Bağlanmak istediğiniz oturum açma grubu veya etki alanı adını belirtin. Bu seçenek yalnızca bağlantı türü **Dell SonicWALL Mobile Connect** olduğunda görüntülenir.
 **Parmak izi**|VPN sunucusunun güvenilir olduğunu doğrulamak için kullanılacak bir dize (örneğin "Contoso Parmak İzi Kodu") belirtin. Parmak izi, bağlanırken aynı parmak izini sunan herhangi bir sunucuya güvenmesi için istemciye gönderilebilir. Cihazda parmak izi yoksa, parmak izini göstererek kullanıcıdan bağlandığı VPN sunucusuna güvenmesini ister. (Kullanıcı parmak iznini el ile doğrular ve bağlanmak için **güven** seçeneğini belirler.) Bu seçenek yalnızca bağlantı türü **CheckPoint Mobile VPN** olduğunda görüntülenir.
 **Uygulama Başına VPN**|Bu VPN bağlantısını bir Mac OS X veya iOS uygulamasıyla ilişkilendirerek bağlantının uygulama her çalıştırıldığında açılmasını sağlamak için bu seçeneği belirleyin. Yazılım dağıtımı yaparken VPN profilini bir uygulamayla ilişkilendirebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md).
+**İsteğe bağlı VPN**|iOS 8.0 ve üzeri cihazlar için isteğe bağlı VPN ayarlayabilirsiniz. Bunu ayarlanmak için yönergeler [iOS cihazları için isteğe bağlı VPN](#on-demand-vpn-for-ios-devices)’de verilmiştir.
 **Proxy ayarlarını otomatik olarak algıla** (yalnızca iOS, Mac OS X, Windows 8.1 ve Windows Phone 8.1 için)|VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, cihazların bağlantı ayarlarını otomatik olarak algılamasını isteyip istemediğinizi belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
 **Otomatik yapılandırma betiği kullan** (yalnızca iOS, Mac OS X, Windows 8.1 ve Windows Phone 8.1 için)|VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, ayarları tanımlamak için bir otomatik yapılandırma betiği isteyip istemediğinizi belirtin ve ardından ayarları içeren dosyaya bir URL belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
 **Proxy sunucusu kullan** (yalnızca iOS, Mac OS X, Windows 8.1 ve Windows Phone 8.1 için)|VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, bu seçeneği belirleyin ve ardından proxy sunucusu adresi ve bağlantı noktası numarasını belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
@@ -139,7 +146,33 @@ VPN bağlantı türünüz bölünmüş tünelde trafiğin nasıl işleneceğini 
 
 Özel bir OMA-URI ayarı oluşturarak Windows 10 cihazının VPN kullanımını belirli uygulamalarla kısıtlayabilirsiniz.
 
-Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğümünde görüntülenir.
+Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğümünde görünür.
+
+### iOS cihazları için isteğe bağlı VPN
+iOS 8.0 ve üzeri cihazlar için isteğe bağlı VPN yapılandırabilirsiniz.
+
+> [!NOTE]
+>  
+> Aynı ilkede uygulama başına VPN ve isteğe bağlı VPN kullanamazsınız.
+ 
+1. İlke yapılandırma sayfasında **Bu VPN bağlantısı için isteğe bağlı kurallarını** bulun. Sütunlar, kuralların denetlediği koşul olan **Eşleşme** ve koşul eşleştiğinde ilkenin tetikleyeceği **Eylem** olarak etiketlidir. 
+2. Kural oluşturmak için **Ekle**’yi seçin. Kuralda ayarlayabileceğiniz iki tür eşleşme vardır. Kural başına bunlardan yalnızca birini yapılandırabilirsiniz.
+  - **SSIDs**, kablosuz ağları anlatır. 
+  - **DNS arama etki alanları**, ...  *team. corp.contoso.com* gibi tam etki alanı adlarını veya *.contoso.com** kullanımı ile eşit olan *contoso.com* gibi etki alanlarını kullanabilirsiniz.
+3. İsteğe bağlı: kuralın deneme olarak kullandığı bir URL olan bir URL dize araştırmasını girin. Bu profilin yüklü olduğu cihaz bu URL’ye yeniden yönlendirmesiz erişebiliyorsa, VPN oluşturulur ve cihaz hedef URL’ye bağlanır. Kullanıcı, URL araştırma dizesi sitesini görmez. URL araştırma dizesine örnek, VPN’i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusunun adresidir. Başka bir seçenek de URL’nin, cihazı VPN aracılığıyla hedef URL’ye bağlamadan önce VPN’in bir siteye bağlanma yeteneğini test etmesidir.
+4. Aşağıdaki eylemlerden birini seçin:
+  - **Bağlanma**
+  - **Bağlantı değerlendirme**, üç ayara sahiptir: a. **Etki alanı eylemi**  - **Gerekirse bağlan** veya **Hiçbir zaman bağlanma**
+     seçeneğini işaretleyin b. **Etki alanlarının virgülle ayrılmış listesi** - bunu yalnızca **Etki alanı eylemi** olarak **Gerekirse bağlan** 
+     seçeneğini belirlerseniz yapılandırırsınız c. **Gerekli URL araştırma dizesi** - bir HTTP veya HTTPS (tercih edilir) URL’si; örneğin *https://vpntestprobe.contoso.com*. Kural bu adresten bir yanıt alınıp alınmadığını denetler. Alınmıyorsa ve **Etki alanı eylemi** **Gerekirse bağlan** seçeneğiyse, VPN tetiklenir.
+     > [!TIP]
+     >
+     >Bu eylemi ne zaman kullanabileceğinize bir örnek, kurumsal ağınızdaki bazı sitelerin doğrudan bir VPN kurumsal ağ bağlantısı gerektirirken başkalarının bunu gerektirmemesidir. **Virgülle ayrılmış DNS arama etki alanları listesi**’nde *corp.contoso.com* adresini listelerseniz, **Gerekirse bağlan**’ı seçebilir ve sonra bu ağdaki VPN gerektirebilecek *sharepoint.corp.contoso.com* gibi belirli siteleri listeleyebilirsiniz. Kural bundan sonra *vpntestprobe.contoso.com* adresine erişilip erişilemediğini denetler. Erişilemiyorsa, Sharepoint sitesinin VPN’i tetiklenir.
+  - **Yoksay** - VPN bağlantısında hiçbir değişikliğe neden olmaz. VPN bağlıysa, bağlı bırakın; değilse, bağlamayın. Örneğin, tüm iç kurumsal Web sitelerinizin VPN’ini bağlayan bir kuralınız olabilir, ancak bu iç sitelerden birini yalnızca cihaz kurumsal ağa fiilen bağlandığında erişilebilir kılmak isteyebilirsiniz. Bu durumda, yalnızca bu site için bir yoksay kuralı oluşturursunuz.
+  - **Bağlantıyı kes** - koşullar eşleştiğinde cihazların VPN bağlantısını kes. Örneğin, kurumsal kablosuz ağlarınızı **SSID’ler** alanında listeleyebilir ve cihazların VPN bağlantısını bu ağlardan birine bağlandıklarında kesen bir kural oluşturabilirsiniz.
+
+Etki alanına özgü kurallar, tüm etki alanına yönelik kurallardan önce değerlendirilir. 
+
 
 ## İlkeyi dağıtma
 
@@ -163,6 +196,6 @@ Başarılı bir şekilde dağıtıldıktan sonra, kullanıcılar VPN bağlantıl
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
