@@ -1,9 +1,9 @@
 ---
+
 title: "Bilgisayar istemci yazılımını yükleme | Microsoft Intune"
 description: "Windows bilgisayarlarınızın Microsoft Intune istemci yazılımıyla yönetilmesini sağlamanıza yardımcı olması için bu kılavuzu kullanın."
 keywords: 
 author: NathBarn
-ms.author: nathbarn
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
@@ -14,46 +14,50 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 13fa09a2b029818467062a5c589292c5f0bd0a58
+ms.sourcegitcommit: eba2421fb929d21eb36c273eb6cb43a06ac03cb4
+ms.openlocfilehash: ed92874cce2877d31d83a619ec8ffb63a57cd5c3
 
 
 ---
 
-# Windows bilgisayarlara Intune yazılım istemcisini yükleme
+# <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 Windows bilgisayarlar Intune istemci yazılımı yüklenerek kaydedilebilir. Intune istemci yazılımı aşağıdaki yollar kullanılarak yüklenebilir:
 
 - El ile yükleme
-- Grup ilkesi kullanarak yükleme
-- Disk görüntüsüne dahil etme
+- Grup İlkesi kullanarak yükleme
+- Bir disk görüntüsüne dahil etme
 - Kullanıcıların yüklemesi
 
-## Intune istemci yazılımını indirme
+İlk indirilen Intune yazılım istemcisi, bilgisayarı Intune yönetimine kaydetmek için gerekli en düşük yazılımı içerir. Bilgisayar kaydolduktan sonra, Intune yazılım istemcisi bilgisayar yönetimi için gereken tam istemciyi indirir.
 
-Intune istemci yazılımını kullanıcıların kendilerinin yüklemesi dışındaki tüm yöntemler, dağıtılabilmesi için yazılımı indirmenizi gerektirir.
+Bu bir dizi indirme işlemi, bilgisayarınızı Intune'a ilk kez kaydetmek için gereken süreyi en aza indirir. Ayrıca ikinci indirme işlemi bittikten sonra istemcinin mevcut en yeni yazılıma sahip olmasını sağlar.
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **İstemci Yazılımını İndir**’e tıklayın
+## <a name="download-the-intune-client-software"></a>Intune istemci yazılımını indirme
+
+Kullanıcıların Intune istemci yazılımını kendilerinin yüklemesi hariç kullanılan tüm yöntemler, dağıtılabilmesi için yazılımı indirmenizi gerektirir.
+
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **İstemci Yazılımı İndirme**’ye tıklayın.
 
   ![Intune bilgisayar istemcisini indirme](../media/pc-sa-client-download.png)
 
-2.  **İstemci Yazılımını İndir** sayfasında, **İstemci Yazılımını İndir**'e tıklayın ve yazılımı içeren **Microsoft_Intune_Setup.zip** paketini ağınızda güvenli bir konuma kaydedin.
+2.  **İstemci Yazılımı İndirme** sayfasında, **İstemci Yazılımını İndir**'e tıklayın. Ardından yazılımı içeren **Microsoft_Intune_Setup.zip** paketini ağınızda güvenli bir yere kaydedin.
 
     > [!NOTE]
-    > Intune istemci yazılımı yükleme paketi, hesabınız hakkında bilgiler içerir. Yetkisiz kullanıcılar yükleme paketini erişirse, bu kişiler, katıştırılmış sertifikası tarafından temsil edilen hesaba kendi bilgisayarını kaydedebilir.
+    > Intune istemci yazılımı yükleme paketi, hesabınız hakkında bilgiler içerir. Yetkisiz kullanıcılar yükleme paketine erişirse paketin yerleşik sertifikası tarafından temsil edilen hesaba bilgisayar kaydedip şirketin kaynaklarına erişim elde edebilir.
 
 3.  Yükleme paketinin içeriğini ağınızda güvenli bir konuma ayıklayın.
 
     > [!IMPORTANT]
     > Ayıklanan **ACCOUNTCERT** dosyasını yeniden adlandırmayın veya kaldırmayın, aksi takdirde istemci yazılımının yüklenmesi başarısız olur.
 
-## El ile dağıtma
+## <a name="deploy-the-client-software-manually"></a>İstemci yazılımını el ile dağıtma
 
-1.  Bir bilgisayarda, istemci yazılımı yükleme dosyalarının bulunduğu klasöre göz atın ve ardından, istemci yazılımını yüklemek için **Microsoft_Intune_Setup.exe**'yi çalıştırın.
+Bir bilgisayarda, istemci yazılımı yükleme dosyalarının bulunduğu klasöre gidin. Ardından, istemci yazılımını yüklemek için **Microsoft_Intune_Setup.exe**'yi çalıştırın.
 
     > [!NOTE]
-    > İstemci bilgisayarın görev çubuğundaki simgenin üzerine geldiğinizde yükleme durumu görüntülenir.
+    > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
 
-## Grup İlkesi kullanarak dağıtma
+## <a name="deploy-the-client-software-by-using-group-policy"></a>İstemci yazılımını Grup İlkesi kullanarak dağıtma
 
 1.  **Microsoft_Intune_Setup.exe** ve **MicrosoftIntune.accountcert** dosyalarını içeren klasörde, 32 bit ve 64 bit bilgisayarlar için Windows Installer tabanlı yükleme programlarını ayıklamak için aşağıdaki komutu çalıştırın:
 
@@ -61,7 +65,7 @@ Intune istemci yazılımını kullanıcıların kendilerinin yüklemesi dışın
     Microsoft_Intune_Setup.exe/Extract <destination folder>
     ```
 
-2.  **Microsoft_Intune_x86.msi** dosyasını, **Microsoft_Intune_x64.msi** dosyasını ve **MicrosoftIntune.accountcert** dosyasını, istemci yazılımın yükleneceği tüm bilgisayarlar tarafından erişilebilen bir ağ konumuna kopyalayın.
+2.  **Microsoft_Intune_x86.msi**, **Microsoft_Intune_x64.msi** ve **MicrosoftIntune.accountcert** dosyalarını, istemci yazılımının yükleneceği tüm bilgisayarlar tarafından erişilebilen bir ağ konumuna kopyalayın.
 
     > [!IMPORTANT]
     > Dosyaları ayırmayın veya yeniden adlandırmayın, aksi takdirde yazılım yüklemesi başarısız olur.
@@ -70,10 +74,10 @@ Intune istemci yazılımını kullanıcıların kendilerinin yüklemesi dışın
 
     Otomatik olarak yazılım dağıtmak için Grup İlkesi'ni kullanma hakkında daha fazla bilgi için Windows Server belgelerinize bakın.
 
-## Bir görüntünün parçası olarak yükleme
-Aşağıdaki örnek yordamı temel olarak kullanabilir ve Intune istemci yazılımını bir işletim sistemi görüntüsünün parçası olarak bilgisayarlara dağıtabilirsiniz:
+## <a name="deploy-the-client-software-as-part-of-an-image"></a>İstemci yazılımını bir görüntünün parçası olarak dağıtma
+Aşağıdaki yordamı örnek alarak Intune istemci yazılımını bilgisayarlara bir işletim sistemi görüntüsünün parçası olarak dağıtabilirsiniz:
 
-1.  İstemci yükleme dosyaları **Microsoft_Intune_Setup.exe** ve **MicrosoftIntune.accountcert**'i başvuru bilgisayarındaki **%Systemdrive%\Temp\Microsoft_Intune_Setup** klasörüne kopyalayın.
+1.  **Microsoft_Intune_Setup.exe** ve **MicrosoftIntune.accountcert** istemci yükleme dosyalarını, referans bilgisayarındaki **%Systemdrive%\Temp\Microsoft_Intune_Setup** klasörüne kopyalayın.
 
 2.   **SetupComplete.cmd** betiğine aşağıdaki komutu ekleyerek **WindowsIntuneEnrollPending** kayıt defteri girişini oluşturun:
 
@@ -88,7 +92,7 @@ Aşağıdaki örnek yordamı temel olarak kullanabilir ve Intune istemci yazıl�
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
     ```
     > [!TIP]
-    >  **SetupComplete.cmd** betiği, bir kullanıcı oturum açmadan önce Windows Kur'un sistemde değişiklikler yapmasını sağlar. **/PrepareEnroll** komut satırı bağımsız değişkeni, Windows Kurulumu tamamlandıktan sonra, hedeflenen bir bilgisayarı Intune hizmetine otomatik olarak kaydolmaya hazırlar.
+    > **SetupComplete.cmd** betiği, bir kullanıcı oturum açmadan önce Windows Kurulumu’nun sistemde değişiklik yapmasını sağlar. **/PrepareEnroll** komut satırı bağımsız değişkeni, Windows Kurulumu tamamlandıktan sonra, hedeflenen bir bilgisayarı Intune hizmetine otomatik olarak kaydolmaya hazırlar.
 
 4.  **SetupComplete.cmd**'yi başvuru bilgisayarındaki **%Windir%\Setup\Scripts** klasörüne koyun.
 
@@ -96,32 +100,32 @@ Aşağıdaki örnek yordamı temel olarak kullanabilir ve Intune istemci yazıl�
 
 Windows Kur tamamlandıktan sonra hedef bilgisayar yeniden başlatıldığında, **WindowsIntuneEnrollPending** kayıt defteri anahtarı oluşturulur. Kayıt paketi, bilgisayarın kayıtlı olup olmadığını denetler. Bilgisayar kayıtlıysa, başka eyleme gerek yoktur. Bilgisayar kayıtlı değilse, kayıt paketi bir Microsoft Intune Otomatik Kayıt Görevi oluşturur.
 
-Otomatik kayıt görevi bir sonraki zamanlanan saatte çalıştığında, **WindowsIntuneEnrollPending** kayıt defteri değerinin var olup olmadığını denetler ve hedeflenen bilgisayarı Intune’a kaydetmeye çalışır. Kayıt herhangi bir nedenden dolayı başarısız olursa, görev bir daha çalıştığında kayıt yeniden denenir. Yeniden deneme işlemleri bir ay boyunca devam eder.
+Otomatik kayıt görevi bir sonraki zamanlanan saatte çalıştığında, **WindowsIntuneEnrollPending** kayıt defteri değerinin var olup olmadığını denetler ve hedeflenen bilgisayarı Intune’a kaydetmeye çalışır. Kayıt herhangi bir nedenden dolayı başarısız olursa, görev bir daha çalıştığında kayıt yeniden denenir. Yeniden deneme işlemleri bir ay devam eder.
 
-Kayıt başarılı olduğunda veya bir ay sonra, Intune Otomatik Kayıt Görevi, **WindowsIntuneEnrollPending** kayıt defteri değeri ve hesap sertifikası hedeflenen bilgisayardan silinir.
+Intune Otomatik Kayıt Görevi, **WindowsIntuneEnrollPending** kayıt defteri değeri ve hesap sertifikası, kayıt başarılı olduğunda veya bir ay sonra (hangisi önce geliyorsa) hedeflenen bilgisayardan silinir.
 
-## Kullanıcıdan kendi kendine kaydolmasını isteme
+## <a name="instruct-users-to-selfenroll"></a>Kullanıcıdan kendi kendine kaydolmasını isteme
 
-Kullanıcılar Intune istemci yazılımını [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com) adresine giderek yükleyebilir. Web portalı cihazın bir Windows bilgisayar olduğunu algılayabiliyorsa, bilgisayarın Intune yazılım istemcisi indirilerek kaydedilmesi istenir. İndirildikten sonra kullanıcılar, bilgisayarlarını yönetime almak için yazılımı yükleyebilir.
+Kullanıcılar, [Şirket Portalı web sitesine](http://portal..manage.microsoft.com) giderek Intune istemci yazılımını yükleyebilir. Web portalı, cihazın bir Windows bilgisayarı olduğunu algılayabilirse kullanıcılardan Intune yazılım istemcisini indirerek bilgisayarı kaydetmesini ister. Kullanıcılar, yazılım indirildikten sonra bilgisayarlarını yönetime almak için yazılımı yükleyebilir.
 
-![Intune Portalı’nın Intune yazılım istemcisinin indirilmesini istemesi](../media/software-client-download.png)
+![Intune Portalı’nın sizden Intune yazılım istemcisini indirmenizi istemesi](../media/software-client-download.png)
 
-## Başarılı istemci dağıtımını izleme ve doğrulama
+## <a name="monitor-and-validate-successful-client-deployment"></a>Başarılı istemci dağıtımını izleme ve doğrulama
 Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olması için aşağıdaki yordamlardan birini kullanın.
 
-### Microsoft Intune yönetici konsolundan istemci yazılımının yüklendiğini doğrulamak için
+### <a name="to-verify-the-installation-of-the-client-software-from-the-microsoft-intune-administrator-console"></a>Microsoft Intune yönetici konsolundan istemci yazılımının yüklendiğini doğrulamak için
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Bilgisayarlar**’a tıklayın.
 
-2.  Intune’la iletişim kuran yönetilen bilgisayarları bulmak için bilgisayar listesini aşağı kaydırın veya **Cihazlarda ara** kutusuna bilgisayar adının tamamını ya da bir kısmını yazarak belirli bir yönetilen bilgisayarı arayın.
+2.  Listede Intune ile iletişim kuran bilgisayarları bulun veya **Cihaz ara** kutusuna bilgisayar adını (veya adının bir parçasını) yazarak belirli bir yönetilen bilgisayar arayın.
 
-3.  Konsolun alt bölmesinden bilgisayarının durumunu inceleyin ve varsa hataları çözümleyin.
+3.  Konsolun alt bölmesinden bilgisayarın durumunu inceleyin. Hataları giderin.
 
-### Tüm kayıtlı bilgisayarları görüntülemek üzere bir bilgisayar envanteri raporu oluşturmak için
+### <a name="to-create-a-computer-inventory-report-to-display-all-enrolled-computers"></a>Tüm kayıtlı bilgisayarları görüntülemek üzere bir bilgisayar envanteri raporu oluşturmak için
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Raporlar** &gt; **Bilgisayar Envanteri Raporları**’na tıklayın.
 
-2.   **Yeni Rapor Oluştur** sayfasında, tüm alanları varsayılan değerleriyle bırakın (filtre uygulamak istemediğiniz sürece) ve **Raporu Görüntüle**'ye tıklayın.
+2.  **Yeni Rapor Oluştur** sayfasında, (filtre uygulamak istemiyorsanız) tüm alanlardaki varsayılan değerleri bırakın ve **Raporu Görüntüle**'ye tıklayın.
 
 3.  **Bilgisayar Envanteri Raporu** sayfası, Intune’a başarılı bir şekilde kaydedilen tüm bilgisayarların görüntülendiği yeni bir pencerede açılır.
 
@@ -129,12 +133,12 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
     > Raporu herhangi bir sütunun içeriğine göre sıralamak için sütun başlığına tıklayın.
 
 
-### Ayrıca Bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md)
 [İstemci kurulumu sorunlarını giderme](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

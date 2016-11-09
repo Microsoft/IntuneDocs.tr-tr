@@ -4,7 +4,7 @@ description: "Kullanıcıların, kaynaklara Intune koşullu erişimi üzerinden 
 keywords: 
 author: karaman
 manager: angrobe
-ms.date: 07/24/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,37 +13,37 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 
 
 ---
 
-# Koşullu erişim sorunlarını giderme
+# <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
 
 Genellikle, bir kullanıcı e-posta veya SharePoint’a erişmeye çalışır ve kaydolmak için bir istem alır. Bu istem, kullanıcıyı şirket portalına götürür.
 
 Bu konuda, kullanıcıların, kaynaklara Intune koşullu erişim üzerinden erişemediklerinde ne yapacakları açıklanmaktadır.
 
 
-## Koşullu erişimde başarılı olmanın temel unsurları
+## <a name="the-basics-for-success-in-conditional-access"></a>Koşullu erişimde başarılı olmanın temel unsurları
 
 İşe koşullu erişim sağlamak için, aşağıdaki koşullar gerekir:
 
 -   Cihazın Intune tarafından yönetilmelidir
 -   Cihaz Azure Active Directory’ye (AAD) kaydedilmelidir. Normal koşullar altında bu kayıt, Intune kaydı sırasında otomatik olarak gerçekleşir
 -   Cihaz, cihazın ve cihazın kullanıcısı için Intune uyumluluk ilkelerinizle uyumlu olmalıdır.  Başka bir uyumluluk ilkesi yoksa, Intune kaydı yeterlidir.
--   Kullanıcı postayı Outlook yerine cihazın yerel posta istemcisi aracılığıyla alıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir.     Bu iOS, Windows Phone ve Android/KNOX cihazlarında otomatik olarak gerçekleşir.
+-   Kullanıcı postayı Outlook yerine cihazın yerel posta istemcisi aracılığıyla alıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir.     Bu; iOS, Windows Phone ve Android/KNOX Standard cihazlarında otomatik olarak gerçekleşir.
 -   Intune Exchange Connector’ınız düzgün şekilde yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da Exchange Connector sorunlarını giderme](troubleshoot-exchange-connector.md).
 
 Bu koşullar, Azure Yönetim Portalı’nda ve cihaz envanter raporunda her cihaz için görüntülenebilir.
 
-## Kayıt sorunları
+## <a name="enrollment-issues"></a>Kayıt sorunları
 
  -  Cihaz kaydolmamıştır, böylelikle kayıt olunduğunda sorun çözümlenecektir.
  -  Kullanıcı cihazı kaydetmiştir, ancak çalışma alanına katılma başarısız olmuştur. Kullanıcı, şirket portalından kaydı güncelleştirmelidir.
 
-## Uyumluluk sorunları
+## <a name="compliance-issues"></a>Uyumluluk sorunları
 
  -  Cihaz Intune ilkesiyle uyumlu değildir. Şifreleme ve parola gereksinimleri yaygın görülen sorunlardır. Kullanıcı, şirket portalına yönlendirilir ve buradan, cihazını uyumlu olacak şekilde yapılandırabilir.
  -  Uyumluluk bilgilerinin bir cihaz için kaydolması biraz zaman alabilir. Birkaç dakika bekleyin ve tekrar deneyin.
@@ -53,23 +53,23 @@ Bu koşullar, Azure Yönetim Portalı’nda ve cihaz envanter raporunda her ciha
 
         Genelde cihazların bu durumda kalmalarının nedeni, hizmete bağlanmada güçlük çekmeleri veya eşitlemenin uzun sürmesidir.  Sorun farklı ağ yapılandırmalarında (hücresel, Wi-Fi, VPN), cihaz yeniden başlatmalarından sonra ve SSP’nin cihazda güncel olduğu doğrulandıktan sonra da devam ederse, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md)’da anlatıldığı şekilde Microsoft Desteği ile iletişim kurun.
 
-## İlke sorunları
+## <a name="policy-issues"></a>İlke sorunları
 
 Bir uyumluluk ilkesi oluşturduğunuzda ve onu bir e-posta ilkesine bağladığınızda, her iki ilkenin aynı kullanıcıya dağıtılması gerekir, bu nedenle, hangi ilkelerin hangi gruplara dağıtıldığını planlamada dikkatli olun. Yalnızca bir ilke uygulanmış kullanıcılar, olasılıkla, cihazların uyumlu olmadığını anlayacaktır.
 
 
-## Exchange ActiveSync sorunları
+## <a name="exchange-activesync-issues"></a>Exchange ActiveSync sorunları
 
-### Uyumlu Android cihazı, karantina bildirimi alıyor
+### <a name="compliant-android-device-gets-quarantine-notice"></a>Uyumlu Android cihazı, karantina bildirimi alıyor
 - Kayıtlı ve uyumlu bir Android cihaz, şirket kaynaklarına erişmeye çalışırken yine de karantina bildirimi alabilir. **Başlat** bağlantısını seçmeden önce, kullanıcı, kaynaklara erişmeye çalıştıklarında şirket portalının açık olmamasını sağlamalıdır. Kullanıcılar, şirket portalını kapatmalı, kaynaklara yeniden erişmeye çalışmalı ve ardından **Başlat** bağlantısını kapatmalıdır.
 
-### Kullanımdan kaldırılmış cihaz, erişmeye devam ediyor.
+### <a name="retired-device-continues-to-have-access"></a>Kullanımdan kaldırılmış cihaz, erişmeye devam ediyor.
 - Exchange Online kullanılırken, kullanımdan kaldırılmış bir cihaz kullanımdan kaldırıldıktan sonra birkaç saat erişmeye devam edebilir. Bunun nedeni, Exchange’in, erişim haklarını 6 saat boyunca önbelleğe almasıdır. Bu senaryoda, kullanımdan kaldırılan cihazlardaki verileri korumanın başka yöntemlerini göz önünde bulundurun.
 
-### Cihaz uyumlu ve AAD’ye kayıtlı ancak hala engelleniyor
+### <a name="device-is-compliant-and-registered-with-aad-but-still-blocked"></a>Cihaz uyumlu ve AAD’ye kayıtlı ancak hala engelleniyor
 - Bazen Exchange ActiveSync Kimliği’nin (EASID) AAD’ye sağlanması gecikir. Bu sorunun temel nedeni azaltmadır, bu yüzden, birkaç dakika bekleyin ve yeniden deneyin.
 
-### Cihaz engelleniyor
+### <a name="device-blocked"></a>Cihaz engelleniyor
 
 Cihaz, bir etkinleştirme e-postası almadan Koşullu Erişim’den engellenmiş olabilir.
 
@@ -79,7 +79,7 @@ Cihaz, bir etkinleştirme e-postası almadan Koşullu Erişim’den engellenmiş
 - Sendemail etkinliği için Exchange Connector günlüklerine bakın ve hata arayın. Aranacak komuta bir örnek, bildirim hesabından kullanıcı e-postasına SendEmail işlemidir.
 - Exchange Connector cihazı engellemeden önce etkinleştirme e-postasını gönderir. Cihaz çevrimdışıysa, etkinleştirme e-postasını almayabilir. Ayrıca, kullanıcının e-postayı kaçırmasına neden olabileceğinden cihazın e-posta alımının Poll yerine Push kullanılarak mı yapıldığını da denetleyin. Poll yöntemine geçip cihazın e-postayı alıp almadığına bakın.
 
-## Uyumsuz cihaz engellenmiyor
+## <a name="noncompliant-device-not-blocked"></a>Uyumsuz cihaz engellenmiyor
 
 Uyumlu olmayan ancak erişimi olan bir cihazla karşılaşırsanız, aşağıdaki adımları uygulayın.
 
@@ -89,10 +89,10 @@ Uyumlu olmayan ancak erişimi olan bir cihazla karşılaşırsanız, aşağıdak
     - Bir posta kutusunun tüm mobil cihazlarının listesini almak için şu PowerShell cmdlet’ini kullanın: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. Cihaz listelenmiyorsa, Exchange’e erişmiyordur.
     - Cihaz listeleniyorsa, erişim durumu hakkında ayrıntılı bilgi almak için Get-CASmailbox -identity:’upn’ | fl cmdlet’ini kullanın ve bu bilgileri Microsoft Desteği’ne verin.
 
-## Bir destek bileti açmadan önce
+## <a name="before-you-open-a-support-ticket"></a>Bir destek bileti açmadan önce
 Bu sorun giderme yordamları sorununuzu çözmüyorsa, Microsoft Desteği, OWA posta kutusu günlükleri veya Exchange Connector günlükleri gibi bilgileri isteyebilir.
 
-### OWA posta kutusu günlüklerini toplama
+### <a name="collecting-owa-mailbox-logs"></a>OWA posta kutusu günlüklerini toplama
 
 1. OWA aracılığıyla oturum açın ve sağ üst köşedeki adınızın yanındaki ayarları (dişli) simgesini seçin.
 2. **Seçenekler**’i seçin
@@ -104,15 +104,15 @@ Bu sorun giderme yordamları sorununuzu çözmüyorsa, Microsoft Desteği, OWA p
 8. 1-2 dakika bekleyin, sonra OWA’daki telefon listesine dönün. Telefonunuzun listede seçildiğinden emin olun, sonra en üst menüden **Günlüğü Al**’ı seçin.
 9. Kendinizden bir ek dosyası olan bir e-posta almanız gerekir. Bir destek bileti açtığınızda, e-posta içeriğini Microsoft Destek’e sağlayın.
 
-### Exchange Connector günlükleri
+### <a name="exchange-connector-logs"></a>Exchange Connector günlükleri
 
-#### Genel günlük bilgileri
+#### <a name="general-log-information"></a>Genel günlük bilgileri
 Exchange Connector günlüklerini görüntülemek için [Sunucu İzleme Görüntüleme Aracı](server trace viewer tool (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx') kullanın. Bu araç, Windows Server SDK’yı indirmenizi gerektirir.
 
 >[!NOTE]
 >Günlükler C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs konumundadır. Günlükler, *Connector0.log* ile başlayıp *Connector29.log* ile biten bir dizi 30 günlük dosyası içindedir. Günlükler, bir günlükte 10 MB veri biriktikten sonra birinden diğerine geçer. Günlükler Connector29’a vardıktan sonra yeniden Connector0’dan başlayarak önceki günlük dosyalarının üzerine yazılır.
 
-#### Eşitleme günlüklerinin konumunu bulma
+#### <a name="locating-sync-logs"></a>Eşitleme günlüklerinin konumunu bulma
 
 -    Günlüklerde bir tam eşitlemenin konumunu **tam eşitleme** ifadesini arayarak bulun. Tam eşitlemenin başlangıcında şu metin bulunur:
 
@@ -124,10 +124,10 @@ Exchange Connector günlüklerini görüntülemek için [Sunucu İzleme Görünt
 
 -   Hızlı (delta) eşitlemeyi günlüklerde **hızlı eşitleme** ifadesini arayarak bulun.
 
-##### Get next command özel durumları
+##### <a name="exceptions-in-get-next-command"></a>Get next command özel durumları
 **Get next command** özel durumları için Exchange Connector günlüklerine bakın ve bunları Microsoft Desteği’ne verin.
 
-#### Ayrıntılı günlük kaydı
+#### <a name="verbose-logging"></a>Ayrıntılı günlük kaydı
 
 Ayrıntılı günlük kaydını etkinleştirmek için:
 
@@ -153,11 +153,11 @@ Ayrıntılı günlük kaydını etkinleştirmek için:
 
 
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

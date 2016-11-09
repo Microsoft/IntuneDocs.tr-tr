@@ -3,6 +3,7 @@ title: "Intune değerlendirmeleri için diğer seçenekler ve ek özellikler | M
 description: "Intune’un 30 günlük ücretsiz değerlendirmesi kaydolurken bilmeniz gereken uyarılar, bildirimler, raporlar ve genel Intune özellikleri açıklanır."
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,15 +14,15 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: ae624aed9ea09467c212e0bf16fef72bfef1956d
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: ede6429d334608a326c6c2eed311df37ab9e344b
 
 
 ---
 
-# Intune değerlendirme abonelikleri için diğer seçenekler ve ek özellikler
+# <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Intune değerlendirme abonelikleri için diğer seçenekler ve ek özellikler
 
-## Uyarılar, bildirimler ve raporlar
+## <a name="alerts-notifications-and-reports"></a>Uyarılar, bildirimler ve raporlar
 Intune yönetim konsolunda, kuruluşunuzdaki yönetilen cihazların genel durumunu hızlı bir şekilde değerlendirmek için **uyarılar** kullanılır. Uyarıları yalnızca kuruluşunuz için gereken bilgileri bildirecek ve görüntüleyecek biçimde yapılandırabilir ve özelleştirebilirsiniz. Bir uyarının etkin olup olmadığını ayarlayabilir, önem derecesini yapılandırabilir, bir uyarı görüntülenmeden önce bir uyarı olayının ne sıklıkla tetiklenmesi gerektiğini belirlemek için görüntüleme eşiğini kullanabilir ve ayrıca belirli uyarı türleri için özel ayarlar yapılandırabilirsiniz.
 
 **Bildirimler**, belirli türde bir uyarı tetiklendiğinde yöneticileri (ve diğer kullanıcıları) bilgilendirmek için kullanılan e-postalardır.
@@ -30,16 +31,16 @@ Intune yönetim konsolunda, kuruluşunuzdaki yönetilen cihazların genel durumu
 
 Uyarıları, bildirimler ve raporlar hakkında daha fazla bilgi için, bkz. [Microsoft Intune ile raporlar ve İzleme](/Intune/Deploy-Use/monitoring-and-reports-with-microsoft-intune).
 
-## Intune özellikleri
+## <a name="intune-capabilities"></a>Intune özellikleri
 Intune, bu kısa kurulum adımlarında gösterilenlerin ötesinde birçok farklı özelliğe sahiptir. Bu özelliklerin birkaç örneği şunlardır:
 
 -   **Exchange ve Office 365'e erişimi denetleme.** Ayrıntılar için bkz. [Exchange Online’a uygulama erişimini yönetme](https://technet.microsoft.com/library/dn705841.aspx) ve [Uygulama Office 365 hizmetlerine uygulama erişimini yönetme](https://technet.microsoft.com/library/dn818907.aspx).
 
--   **Şirkete ait iOS cihazlarının yönetimi.** Ayrıntılar için, bkz. [Microsoft Intune'a şirketin sahip olduğu iOS cihazları kaydetme](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
+-   **Şirkete ait iOS cihazlarını yönetme.** Ayrıntılar için, bkz. [Microsoft Intune'a şirketin sahip olduğu iOS cihazları kaydetme](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 
 -   **Mobil uygulama yönetimi.** Yönetilen mobil uygulamalar, kopyalama, yapıştırma ve ekran görüntüsü alma işlevi gibi belirli uygulama işlemlerini kısıtlamak için mobil uygulama yönetimi ilkeleriyle birlikte çalışır. Ayrıntılar için, bkz. [Microsoft Intune ile mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma](/Intune/Deploy-Use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) ve [Microsoft Intune ile yönetilen tarayıcı ilkelerini kullanarak internet erişimini yönetme](/Intune/Deploy-Use/manage-internet-access-using-managed-browser-policies).
 
--   **Şirket kaynaklarına erişimi denetler.** Mobil cihazlara sertifikalar, e-posta profilleri, VPN profilleri ve Wi-Fi profilleri dağıtarak mobil cihazları hızla ve kolayca ayarlayabilirsiniz. Ayrıntılar için, bkz. [Microsoft Intune ile şirket kaynaklarına erişimi etkinleştirme](/Intune/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
+-   **Şirket kaynaklarına erişimi denetleme.** Mobil cihazlara sertifikalar, e-posta profilleri, VPN profilleri ve Wi-Fi profilleri dağıtarak mobil cihazları hızla ve kolayca ayarlayabilirsiniz. Ayrıntılar için, bkz. [Microsoft Intune ile şirket kaynaklarına erişimi etkinleştirme](/Intune/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
 Intune özelliklerinin tamamı hakkında bilgi almak için bkz:
 - [Microsoft Intune'da mobil cihaz yönetimi özellikleri](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
@@ -49,7 +50,7 @@ En yeni Intune özellikleri hakkında daha fazla bilgi almak için, bkz. Microso
 
 Destek seçenekleri, [Microsoft Intune için nasıl destek alınır](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune) bölümünde açıklanmıştır ve [Microsoft Intune forumlarında](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod) Intune hakkındaki tartışmalara katılabilirsiniz.
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesini tamamladınız.
 
 >[!div class="step-by-step"]
@@ -58,6 +59,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesini tamamladınız
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
