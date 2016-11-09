@@ -14,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eba2421fb929d21eb36c273eb6cb43a06ac03cb4
-ms.openlocfilehash: ed92874cce2877d31d83a619ec8ffb63a57cd5c3
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
 
 
 ---
@@ -106,7 +106,7 @@ Intune Otomatik Kayıt Görevi, **WindowsIntuneEnrollPending** kayıt defteri de
 
 ## <a name="instruct-users-to-selfenroll"></a>Kullanıcıdan kendi kendine kaydolmasını isteme
 
-Kullanıcılar, [Şirket Portalı web sitesine](http://portal..manage.microsoft.com) giderek Intune istemci yazılımını yükleyebilir. Web portalı, cihazın bir Windows bilgisayarı olduğunu algılayabilirse kullanıcılardan Intune yazılım istemcisini indirerek bilgisayarı kaydetmesini ister. Kullanıcılar, yazılım indirildikten sonra bilgisayarlarını yönetime almak için yazılımı yükleyebilir.
+Kullanıcılar, [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek Intune istemci yazılımını yükleyebilir. Web portalı, cihazın bir Windows bilgisayarı olduğunu algılayabilirse kullanıcılardan Intune yazılım istemcisini indirerek bilgisayarı kaydetmesini ister. Kullanıcılar, yazılım indirildikten sonra bilgisayarlarını yönetime almak için yazılımı yükleyebilir.
 
 ![Intune Portalı’nın sizden Intune yazılım istemcisini indirmenizi istemesi](../media/software-client-download.png)
 
