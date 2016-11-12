@@ -116,6 +116,6 @@ Kasım ayından başlayarak cihaz grup yönetimi Azure Active Directory’ye ta�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
