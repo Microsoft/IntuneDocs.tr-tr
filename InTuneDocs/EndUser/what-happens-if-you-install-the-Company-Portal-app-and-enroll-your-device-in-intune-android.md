@@ -3,6 +3,7 @@ title: "Şirket Portalı uygulamasını yüklerseniz ve Android cihazınızı In
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/16/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
 
 
 ---
@@ -25,13 +26,13 @@ ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 Şirket Portalı uygulamasını yüklediğinizde ve Android cihazınızı Intune’a kaydettiğinizde, Şirket Portalı uygulamasını kullanarak şunları yapabilirsiniz:
 
--   Şirket ağına, e-postalarınıza ve iş dosyalarınıza erişebilirsiniz
+-   Şirket ağına, e-postalarınıza ve iş dosyalarınıza erişebilirsiniz.
 
--   Şirket Portalı üzerinden şirket uygulamalarını alabilirsiniz
+-   Şirket Portalı üzerinden şirket uygulamalarını alabilirsiniz.
 
--   Şirket e-posta hesabınızı otomatik olarak yapılandırabilirsiniz
+-   Şirket e-posta hesabınızı otomatik olarak oluşturabilirsiniz.
 
--   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz
+-   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz.
 
 Android cihazınızı kaydettiğinizde, BT yöneticinize cihazınıza erişim hakkı vermiş olursunuz. Yönetici cihazda şu gibi şeyler yapabilir:
 
@@ -39,7 +40,7 @@ Android cihazınızı kaydettiğinizde, BT yöneticinize cihazınıza erişim ha
 
 -   Şirket ile ilgili tüm verileri kaldırabilir. Kişisel ayarlarınız ve verileriniz kaldırılmaz.
 
--   Şirket verilerini korumak için cihazınızda parola veya PIN kullanmanızı zorunlu kılma gibi gereksinimler ayarlayabilir. BT yöneticiniz ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda cihazınızı kilitleyebilir.
+-   Şirket verilerini korumaya yardımcı olmak için cihazınızda parola veya PIN kullanmanızı zorunlu kılma gibi gereksinimler ayarlayabilir. BT yöneticiniz ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda cihazınızı kilitleyebilir.
 
 -   Hüküm ve koşulları kabul etmenizi gerektirebilir.
 
@@ -47,19 +48,18 @@ Android cihazınızı kaydettiğinizde, BT yöneticinize cihazınıza erişim ha
 
 -   Cihazınızın kaybolma veya çalınma durumunda verilerin korunmasına yardımcı olmak amacıyla cihazınızdaki tüm verilerin şifrelenmesini zorunlu kılabilir.
 
--   Cihazınız Şirket Portalı’na eklendikten sonra, yaklaşık 8 saat içinde:
+Cihazınız Şirket Portalı’na eklendikten sonra, yaklaşık sekiz saat içinde:
 
-    -   BT yöneticinizin kullanılabilir hale getirdiği ilke veya uygulama güncelleştirmeleri indirilir.
+-   BT yöneticinizin kullanılabilir hale getirdiği ilke veya uygulama güncelleştirmeleri indirilir.
 
-    -   Tüm donanım envanteri güncelleştirmelerini (bu güncelleştirmeler kişisel bilgi içermez) gönderebilir.
+-   Tüm donanım envanteri güncelleştirmeleri gönderilir. (Bu güncelleştirmeler kişisel bilgi içermez.)
 
-    -   Tüm şirket uygulaması envanteri güncelleştirmelerini (bu güncelleştirmeler kişisel bilgi içermez) gönderebilir.
+-   Tüm şirket uygulaması envanteri güncelleştirmeleri gönderilir. (Bu güncelleştirmeler kişisel bilgi içermez.)
 
 Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
 
 
 
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

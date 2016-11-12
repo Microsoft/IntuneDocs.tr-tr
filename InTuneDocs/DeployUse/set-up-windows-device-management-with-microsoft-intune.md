@@ -3,6 +3,7 @@ title: "Microsoft Intune ile Windows cihaz yönetimini ayarlama | Microsoft Intu
 description: "Microsoft Intune ile, Windows 10 cihazları da dahil olmak üzere Windows bilgisayarları için mobil cihaz yönetimini (MDM) etkinleştirin."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 149508942b89b15308591e17723884add3ac78ae
+ms.sourcegitcommit: dfc5241376033471a232b059ac07fa4488f05514
+ms.openlocfilehash: c405408bd6a1e2b0743566e413436aefbaa7018b
 
 
 ---
@@ -23,18 +24,18 @@ ms.openlocfilehash: 149508942b89b15308591e17723884add3ac78ae
 
 Bir Intune yöneticisi olarak Windows bilgisayarlar için kaydolmayı ve yönetmeyi iki biçimde etkinleştirebilirsiniz:
 
-- **[Azure AD ile otomatik kaydolma](#azure-active-directory-enrollment)** - Windows 10 ve Windows 10 Mobile kullanıcıları cihazlarını, cihaza bir iş veya okul hesabı ekleyerek kaydeder
-- **[Şirket Portalı kaydı](#company-portal-app-enrollment)** - Windows 8.1 ve üzeri cihazlar, Şirket Portalı uygulaması indirilip yüklenerek, sonra uygulamaya iş veya okul hesabı kimlik bilgileri girilerek kaydedilir.
+- **[Azure Active Directory ile otomatik kaydolma](#azure-active-directory-enrollment)** - Windows 10 ve Windows 10 Mobile kullanıcıları cihazlarını, cihaza bir iş veya okul hesabı ekleyerek kaydeder
+- **[Şirket Portalı kaydı](#company-portal-app-enrollment)** - Windows 8.1 ve üzeri sürümlerin kullanıcıları, Şirket Portalı uygulaması indirip yükledikten sonra uygulamaya iş veya okul hesabı kimlik bilgileri girerek cihazlarını kaydeder.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Şirket Portalı uygulaması kaydını yapılandırma
-Kullanıcıların, Intune Şirket Portalı uygulamasını yükleyip cihazlarını kaydetmelerine izin verebilirsiniz. DNS CNAME oluşturmak, kullanıcıların sunucu adı girmeden bağlantı kurmalarına ve Intune’a kaydolmalarına yardımcı olur.
+## Şirket Portalı uygulaması kaydını ayarlama
+Kullanıcıların, Intune Şirket Portalı uygulamasını kullanarak cihazlarını yüklemesine ve kaydetmesine izin verebilirsiniz. DNS CNAME kaynak kayıtları oluşturursanız, kullanıcılar sunucu adı girmeden Intune’a bağlanır ve kaydolur.
 
 1. **Intune’u ayarlama**<br>
-Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](prerequisites-for-enrollment.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
+Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi (MDM) yetkilisini](prerequisites-for-enrollment.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve ardından MDM’yi ayarlayın.
 
-2. **CNAME’ler oluşturma** (isteğe bağlı)<br>Kaydolmayı basitleştirmek amacıyla şirketinizin etki alanı için **CNAME** DNS kaynak kayıtları oluşturun. CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları oluşturmak kullanıcılar için kaydolmayı kolaylaştırır. Hiçbir kaydolma CNAME kaydı bulunamazsa, kullanıcılardan MDM sunucu adını `https://manage.microsoft.com` el ile girmeleri istenir.  CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
+2. **CNAME’ler oluşturma** (isteğe bağlı)<br>Kaydolmayı basitleştirmek amacıyla şirketinizin etki alanı için **CNAME** DNS kaynak kayıtları oluşturun. CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. Hiçbir kaydolma CNAME kaydı bulunamazsa, kullanıcılardan MDM sunucu adını `https://manage.microsoft.com` el ile girmeleri istenir. CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
 
   |TÜR|Konak adı|Şunu gösterir:|TTL|
   |--------|-------------|-------------|-------|
@@ -49,13 +50,13 @@ Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz y
 
   Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden EnterpriseEnrollment-s.manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz. DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yaygınlaştırılıncaya kadar Intune’da DNS değişikliğini doğrulayamazsınız.
 
-3.  **CNAME’i doğrulama**<br>[Intune yönetim konsolunda](http://manage.microsoft.com), **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows**’a tıklayın. **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin doğrulanmış etki alanının URL'sini yazın ve ardından **Otomatik Algılamayı Sına**'ya tıklayın.
+3.  **CNAME’i doğrulama**<br>[Intune yönetim konsolunda](http://manage.microsoft.com), **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows**’u seçin. **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin doğrulanmış etki alanının URL'sini girin ve ardından **Otomatik Algılamayı Sına**'yı seçin.
 
   ![Windows cihaz yönetimi iletişim kutusu](../media/enroll-intune-winenr.png)
 
-4.  **İsteğe bağlı adımlar**<br>**Dışarıdan yükleme anahtarı ekleme** adımı Windows 10 için gerekli değildir. **Karşıya Kod İmzalama Sertifikası Yükleme** adımı yalnızca cihazlara Windows Mağazası’nda bulunmayan iş kolu (LOB) uygulamaları dağıtacaksanız gereklidir. [Daha fazlasını öğrenin](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+4.  **İsteğe bağlı adımlar**<br>**Dışarıdan yükleme anahtarı ekleme** adımı Windows 10 için gerekli değildir. **Karşıya Kod İmzalama Sertifikası Yükleme** adımı yalnızca Windows Mağazası’nda cihazlar için sunulmayan iş kolu (LOB) uygulamalarını dağıtacaksanız gereklidir. [Daha fazla bilgi edinin](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
 
-6.  **Kullanıcılara bildirme**<br>Kullanıcılara cihazlarını nasıl kaydedeceklerini ve yönetime alındıktan sonra nelerle karşılaşabileceklerini anlatmanız gerekir:
+6.  **Kullanıcılara bildirme**<br>Kullanıcılara cihazlarını nasıl kaydedeceklerini ve cihazları yönetilmeye başladıktan sonra nelerle karşılaşabileceklerini anlatmanız gerekir:
       - [Son kullanıcılarınıza Microsoft Intune kullanma hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Windows cihazlar için son kullanıcı kılavuzu](../enduser/using-your-windows-device-with-intune.md)
 
@@ -64,6 +65,6 @@ Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz y
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

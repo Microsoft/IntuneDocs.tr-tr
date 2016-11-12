@@ -125,7 +125,7 @@
 #### [MAM ilkelerini doğrulama](validate-mobile-application-management.md)
 #### [İlke uyumluluğunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS uygulamaları arasında veri aktarımını yönetme](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-#### [Son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+
 #### [MAM ilkeleri için Intune yönetim konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [İş kolu uygulamalarını MAM için hazırlama](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
@@ -141,12 +141,15 @@
 ### [Yönetilen şirket uygulama verilerini silme](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Son kullanıcı deneyimi hakkında kaynaklar](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+### [Yönetilen iOS cihazlarını geri yükleme](restore-managed-ios-devices-from-backup.md)
+### [MAM ilkeleri içeren Android uygulamaları](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+### [MAM ilkeleri içeren iOS uygulamaları](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
 
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

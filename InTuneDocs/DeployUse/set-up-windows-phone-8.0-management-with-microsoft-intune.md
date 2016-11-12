@@ -3,6 +3,7 @@ title: "Windows Phone 8.0 yönetimini ayarlama | Microsoft Intune"
 description: "Microsoft Intune ile, Windows Phone 8.0 cihazları için mobil cihaz yönetimini (MDM) etkinleştirin."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
+ms.sourcegitcommit: 067b46c4e537f6def75142411a6d6b60a63cd642
+ms.openlocfilehash: 32d1272d1e125c8a1a5b9f7c6291fb4acf14ea6e
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 Windows Phone 8.0’da, Intune Şirket Portalı uygulamasının yüklenebilmesi ve cihaz yönetimine izin verilmesi için bir Symantec sertifikasının yüklenmesi gerekir. İş kolu uygulamalarını imzalamak için de bir sertifika gereklidir. Aşağıdaki konu yalnızca Windows Phone 8.0’a yöneliktir. Windows Phone 8.1 veya üstünü (Windows 10 Mobile da dahil) yönetmek için bkz. [Windows Phone kaydını ayarlama](set-up-windows-phone-management-with-microsoft-intune.md).
 
 > [!IMPORTANT]
-> Eylül 2016’dan başlayarak Windows 8.0 ve Windows Phone 8.0 için Şirket Portalı uygulaması artık indirilemeyecektir.
+> Eylül 2016’den itibaren, Windows Phone 8 ve Windows 8 için Şirket Portalı uygulamasını indirmek mümkün olmayacaktır.
 
 -   **Windows Phone 8** - Sertifika gerekir
 -   **Windows Phone 8.1 ve Windows 10 Mobile**’a yalnızca aşağıdaki durumlarda sertifika gerekir:
@@ -183,6 +184,6 @@ Windows Phone mobil cihaz yönetimi için kurulum gereksinimleri cihazları nas�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
