@@ -15,17 +15,17 @@ ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: 63317c16082b1fb2764bd698c97fa1d435f58dfe
-ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
+ms.sourcegitcommit: 315c159869303fd6a26caa35160d5ba3c7ccdc1f
+ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
 
 
 ---
-# Intune Belgeleri
+# <a name="intune-documentation"></a>Intune Belgeleri
 <article id="main">
     <section id="hero-content">
       <h1>Intune Belgeleri</h1>
       <h2>Bir mobil cihaz ve uygulama yönetim hizmeti olan Microsoft Intune’u nasıl dağıtıp yöneteceğinizi öğrenin.</h2>
-      <h3>Intune’u Configuration Manager ile yönetmek ister misiniz? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Karma mobil cihaz yönetimi hakkında daha fazla bilgi edinin &rarr;</a></h3>
+      <h3>Intune’u Configuration Manager ile yönetmek ister misiniz? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Karma mobil cihaz yönetimi hakkında daha fazla bilgi edinin&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Öne Çıkan İçerik</h2>
@@ -119,7 +119,7 @@ ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
               <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">3</span>
-                  <p>Dağıtma ve Kullanma</p>
+                  <p>Dağıtma &amp; Kullanma</p>
                 </div>
                 <p class="description column-two-thirds">Intune ile cihazları, uygulamaları ve verileri yönetin.
                 </p>
@@ -263,7 +263,7 @@ ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
       <div class="resource-list row">
           <ul class="column-half">
           <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Intune işlevselliği hakkında geri bildirimde bulunun</a></li>
-          <li><a href="https://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">Intune belgeleri hakkında geri bildirimde bulunun</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation" target="_blank">Belgeler hakkında geri bildirimde bulunun</a></li>
           <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune belgeleri indirme dosyaları</a></li>
           </ul>
           <ul class="column-half">
@@ -285,6 +285,6 @@ ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

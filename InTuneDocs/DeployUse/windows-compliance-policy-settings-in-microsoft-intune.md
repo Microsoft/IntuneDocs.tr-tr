@@ -14,13 +14,13 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: c330f730b4eced38f9d0ee972063198ccafc0bcf
 
 
 ---
 
-# Microsoft Intune’da Windows cihazları için uyumluluk ilkesi ayarları
+# <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune’da Windows cihazları için uyumluluk ilkesi ayarları
 
 Bu konu başlığı altında açıklanan ilke ayarları, Windows işletim sistemini çalıştıran cihazlar için geçerlidir. Desteklenen belirli Windows sürümleri aşağıdaki bölümlerde belirtilmiştir.
 
@@ -28,12 +28,13 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 > [!div class="op_single_selector"]
 - [iOS cihazları için uyumluluk ilkesi ayarları](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Android cihazları için uyumluluk ilkesi ayarları](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Android for Work için uyumluluk ilkesi ayarları](afw-compliance-policy-settings-in-microsoft-intune)
 
-## Windows Phone cihazları için uyumluluk ilkesi ayarları
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone cihazları için uyumluluk ilkesi ayarları
 Bu bölümde listelenen ayarlar Windows Phone 8.1 ve üstünde desteklenir.
 
-## Sistem güvenliği ayarları
-### Parola
+## <a name="system-security-settings"></a>Sistem güvenliği ayarları
+### <a name="password"></a>Parola
 - **Mobil cihazların kilidini açmak için parola gerektir:** Kullanıcıların cihazlarına erişebilmek üzere bir parola girmelerini gerektirmek için bunu **Evet** olarak ayarlayın.
 
 - **Basit parolalara izin ver:** Kullanıcıların ‘**1234**’ veya ‘**1111**’ gibi basit parolalar oluşturmalarına izin vermek için bunu **Evet** olarak ayarlayın.
@@ -60,27 +61,27 @@ Bu bölümde listelenen ayarlar Windows Phone 8.1 ve üstünde desteklenir.
 - **Cihaz boşta durumundan çıkarken parola iste:** Bu ayar, **Parola istenmeden önceki bekleme süresi (dakika olarak)** ayarıyla birlikte kullanılmalıdır. **Parola istenmeden önceki bekleme süresi (dakika olarak)** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için son kullanıcılardan bir parola girmesi istenir.
 
   **Bu ayar yalnızca Windows 10 Mobile cihazları için geçerlidir.**
-### Şifreleme
+### <a name="encryption"></a>Şifreleme
 - **Mobil cihazda şifreleme gerektir:** Cihazın kaynaklara bağlanmak için şifrelenmesini gerektirmek için bunu **Evet** olarak ayarlayın.
 
-## Cihaz durumu ayarları
+## <a name="device-health-settings"></a>Cihaz durumu ayarları
 - **Cihazların sağlam olarak bildirilmesini gerektir:** **Windows 10 Mobile** cihazlarının yeni veya var olan Uyumluluk İlkelerinde sağlıklı olarak bildirilmesini gerektiren bir kural ayarlayabilirsiniz.  Bu ayar etkinse, Windows 10 cihazları aşağıdaki veri noktaları için Durum Kanıtlama Hizmeti (HAS) aracılığıyla değerlendirilir:
   -  **BitLocker etkin:** BitLocker açık olduğunda, sistemin kapalı olduğu veya hazırda beklemeye girdiği durumlarda cihaz sürücüye depolanmış verileri yetkisiz erişimden koruyabilir. Windows BitLocker Sürücü Şifrelemesi, Windows işletim sistemi birimine depolanan tüm verileri şifreler. BitLocker, Windows işletim sistemini ve kullanıcı verilerini korumak ve bir bilgisayarın katılımsız bırakılması, kaybolması veya çalınması durumunda bile kurcalanmadığından emin olmak üzere TPM’yi kullanır. Bilgisayarda uyumlu bir TPM varsa, BitLocker verileri koruyan şifreleme anahtarlarını kilitlemek için TPM kullanır. Sonuç olarak, TPM bilgisayarın durumunu doğrulayana kadar anahtarlara erişilemez.
   -  **Kod bütünlüğü etkin:** Kod bütünlüğü bir sürücünün veya sistem dosyasının belleğe yüklendiği her durumda bütünlüğünü doğrulayan bir özelliktir. Kod bütünlüğü, çekirdeğe imzasız bir sürücünün veya sistem dosyasının yüklenip yüklenmediğini veya bir sistem dosyasının yönetici ayrıcalıklarına sahip bir kullanıcı hesabı tarafından çalıştırılan kötü amaçlı yazılım tarafından değiştirilip değiştirilmediğini algılar.
   - **Güvenli Önyükleme etkin:** Güvenli Önyükleme etkinleştirildiğinde sistem güvenilen fabrika durumuna önyüklenmeye zorlanır. Ayrıca, Güvenli Önyükleme etkinleştirildiğinde makineyi önyüklemek için kullanılan çekirdek bileşenleri cihazı üreten kuruluş tarafından güvenilen doğru şifreleme imzalarına sahip olmalıdır. UEFI üretici yazılımı makinenin başlatılmasına izin vermeden önce bunu doğrular. Herhangi dosya ile imzalarını bozacak şekilde oynanmışsa sistem önyüklemesi gerçekleşmez.
 
   HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Durum Kanıtlama CSP](https://msdn.microsoft.com/library/dn934876.aspx).
-##  Cihaz özelliği ayarları
+##  <a name="device-property-settings"></a>Cihaz özelliği ayarları
 - **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir.
     Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 
 - **İzin verilen en yüksek işletim sistemi sürümü:** Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir ve kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
 
 
-## Windows bilgisayarları için uyumluluk ilkesi ayarları
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Windows bilgisayarları için uyumluluk ilkesi ayarları
 Bu bölümde listelenen ayarlar Windows bilgisayarlarında desteklenir.
-## Sistem güvenliği ayarları
-### Parola
+## <a name="system-security-settings"></a>Sistem güvenliği ayarları
+### <a name="password"></a>Parola
 - **Minimum parola uzunluğu:** - Windows 8.1’de desteklenir.
 
   Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
@@ -113,7 +114,7 @@ Bu bölümde listelenen ayarlar Windows bilgisayarlarında desteklenir.
 
   **Parola geçmişini anımsa** ayarı seçilirse, önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin.
 
-## Cihaz durumu ayarları
+## <a name="device-health-settings"></a>Cihaz durumu ayarları
 - **Cihazların sağlam olarak bildirilmesini gerektir:** - Windows 10 cihazlarında desteklenir.
 Windows 10 cihazlarının yeni veya var olan Uyumluluk İlkelerinde sağlıklı olarak bildirilmesini gerektiren bir kural ayarlayabilirsiniz.  Bu ayar etkinse, Windows 10 cihazları aşağıdaki veri noktaları için Durum Kanıtlama Hizmeti (HAS) aracılığıyla değerlendirilir:
   -  **BitLocker etkin:** BitLocker açık olduğunda, sistemin kapalı olduğu veya hazırda beklemeye girdiği durumlarda cihaz sürücüye depolanmış verileri yetkisiz erişimden koruyabilir. Windows BitLocker Sürücü Şifrelemesi, Windows işletim sistemi birimine depolanan tüm verileri şifreler. BitLocker, Windows işletim sistemini ve kullanıcı verilerini korumak ve bir bilgisayarın katılımsız bırakılması, kaybolması veya çalınması durumunda bile kurcalanmadığından emin olmak üzere TPM’yi kullanır. Bilgisayarda uyumlu bir TPM varsa, BitLocker verileri koruyan şifreleme anahtarlarını kilitlemek için TPM kullanır. Sonuç olarak, TPM bilgisayarın durumunu doğrulayana kadar anahtarlara erişilemez.
@@ -123,7 +124,7 @@ Windows 10 cihazlarının yeni veya var olan Uyumluluk İlkelerinde sağlıklı 
 
   HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Durum Kanıtlama CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## Cihaz özelliği ayarları
+## <a name="device-property-settings"></a>Cihaz özelliği ayarları
 - **Gereken en düşük işletim sistemi:** - Windows 8.1 ve Windows 10’da desteklenir.
 
   Burada birincilsürüm.ikincilsürüm.yapı numarasını belirtin. Sürüm numarası, winver komutu tarafından döndürülen sürüme karşılık gelmelidir.
@@ -141,6 +142,6 @@ Windows 10 cihazlarının yeni veya var olan Uyumluluk İlkelerinde sağlıklı 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
