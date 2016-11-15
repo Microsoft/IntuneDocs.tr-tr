@@ -2,8 +2,8 @@
 title: "Cihaz kaydıyla ilgili sorunları giderme | Microsoft Intune"
 description: "Cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 
 ---
 
-# Intune’da cihaz kaydıyla ilgili sorunları giderme
+# <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
 Bu konuda, cihaz kayıt sorunlarının giderilmesi için tavsiyeler verilmektedir. Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
 
-## İlk sorun giderme adımları
+## <a name="initial-troubleshooting-steps"></a>İlk sorun giderme adımları
 
 Sorun gidermeye başlamadan önce, Intune’u kayıt sağlamak üzere doğru şekilde yapılandırdığınızdan emin olmak için kontrol edin. Bu yapılandırma gereksinimleri hakkında daha fazla bilgi edinebilirsiniz:
 
@@ -39,20 +39,20 @@ Yönetilen cihaz kullanıcılarınız, gözden geçirmeniz için kayıt ve tanı
 
 - [Android tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-- [BT yöneticinize Android kayıt hatalarını gönderme](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-- [BT yöneticinize iOS kayıt hatalarını gönderin](/intune/enduser/send-errors-to-your-it-admin-ios)
+- [Android kayıt hatalarını BT yöneticinize gönderme](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+- [iOS kayıt hatalarını BT yöneticinize gönderme](/intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 
-## Genel kayıt sorunları
+## <a name="general-enrollment-issues"></a>Genel kayıt sorunları
 Bu sorunlar, tüm cihaz platformlarında oluşabilir.
 
-### Cihaz Sınırına Ulaşıldı
+### <a name="device-cap-reached"></a>Cihaz Sınırına Ulaşıldı
 **Sorun:** Bir kullanıcı, kayıt sırasında cihazında bir hata aldı (iOS cihazında **Şirket Portalı Geçici Olarak Devre Dışı** hatası gibi) ve Configuration Manager’daki DMPdownloader.log dosyası **DeviceCapReached** hatasını içeriyor.
 
 **Çözüm:** Tasarım gereği, kullanıcılar 5’ten fazla cihaz kaydedemez.
 
-#### Kaydedilen ve izin verilen cihazların sayısını denetleme
+#### <a name="check-number-of-devices-enrolled-and-allowed"></a>Kaydedilen ve izin verilen cihazların sayısını denetleme
 
 1.  Intune yönetim portalında kullanıcıya 5’ten fazla cihaz atanmadığını doğrulayın
 
@@ -62,7 +62,7 @@ Mobil cihaz kullanıcıları şu URL’de cihazları silebilir: [https://byodtes
 
 Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
-#### Azure Active Directory portalında cihazları silmek için
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory portalında cihazları silmek için
 
 1.  [Http://aka.ms/accessaad](http://aka.ms/accessaad) bağlantısına göz atın veya [https://portal.office.com](https://portal.office.com) adresinde **Yönetici** &gt; **Azure AD**’yi seçin.
 
@@ -86,10 +86,10 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 >
 > Bir kullanıcı oturumu için Koşullu Erişim ilkesi zorunlu tutulduysa, söz konusu kullanıcı hesabı Cihaz Kayıt Yöneticileri grubuna eklendiğinde kaydı tamamlayamaz.
 
-### Şirket Portalı Geçici Olarak Devre Dışı
+### <a name="company-portal-temporarily-unavailable"></a>Şirket Portalı Geçici Olarak Devre Dışı
 **Sorun:** Bir kullanıcı, cihazda **Şirket Portalı Geçici Olarak Devre Dışı** hatası alıyor.
 
-#### Şirket Portalı Geçici Olarak Devre Dışı hatasını giderme
+#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>Şirket Portalı Geçici Olarak Devre Dışı hatasını giderme
 
 1.  Intune Şirket Portalı uygulamasını cihazınızdan kaldırın.
 
@@ -101,10 +101,10 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 5.  Kullanıcı başarıyla oturum açarsa, iOS cihazı Intune Şirket Portalı uygulamasını yüklemenizi ve kaydetmenizi ister. Android cihazında Intel Şirket Portalı uygulamasını el ile yüklemeniz gerekir ve bunu yaptıktan sonra kaydetmeyi deneyebilirsiniz.
 
-### MDM yetkilisi tanımlı değil
+### <a name="mdm-authority-not-defined"></a>MDM yetkilisi tanımlı değil
 **Sorun:** Bir kullanıcı, **MDM yetkilisi tanımlı değil** hatası alıyor.
 
-#### MDM yetkilisi tanımlı değil hatasını giderme
+#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>MDM yetkilisi tanımlı değil hatasını giderme
 
 1.  MDM Yetkilisinin kullandığınız Intune hizmetinin, yani Intune, O365 MDM veya Intune ile System Center Configuration Manager için uygun bir şekilde ayarlandığını doğrulayın. Intune için, MDM Yetkilisi **Yönetici** &gt; **Mobil Cihaz Yönetimi**’nde ayarlanır. Intune ile Configuration Manager için, Intune bağlayıcısını yapılandırırken ayarlarsınız ve O365’te bu bir ayardır (**Mobil Cihazlar**).
 
@@ -134,28 +134,28 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
         -   Tüm kullanıcıları görmek için: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Belirli Kullanıcıları görmek için bu sorguyu kullanın; burada %testuser1%, aramak istediğiniz kullanıcının kullanıcıadı@etkialanı.com değerini temsil eder: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   Belirli Kullanıcıları görmek için bu sorguyu kullanın; burada %testuser1%, aramak istediğiniz kullanıcının username@domain.com değerini temsil eder: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         Sorguyu yazdıktan sonra **!Execute** öğesini seçin.
         Sonuçlar döndürüldüğünde, bulut kullanıcı kimliğine bakın.  Hiç kimlik bulunmazsa, kullanıcının Intune’u kullanma lisansı yok demektir.
 
-### Şirket adı özel karakterler içeriyorsa ilke oluşturulamaz veya cihazlar kaydedilemez
+### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Şirket adı özel karakterler içeriyorsa ilke oluşturulamaz veya cihazlar kaydedilemez
 **Sorun:** İlke oluşturamıyor veya cihazları kaydedemiyorsunuz.
 
 **Çözüm:** [Office 365 yönetim merkezinde](https://portal.office.com/), şirket adından özel karakterleri kaldırın ve şirket bilgilerini kaydedin.
 
-### Birden çok doğrulanmış etki alanınız olduğunda oturum açılamaz veya cihazlar kaydedilemez
+### <a name="unable-to-log-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Birden çok doğrulanmış etki alanınız olduğunda oturum açılamaz veya cihazlar kaydedilemez
 **Sorun:** AD FS’nize ikinci bir doğrulanmış etki alanı eklediğinizde, ikinci etki alanının kullanıcı asıl adı (UPN) sonekini taşıyan kullanıcılar portallarda oturum açamayabilir veya cihaz kaydedemeyebilir.
 
 
-**Çözüm:** AD FS 2.0 aracılığıyla çoklu oturum açmayı (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, @contoso.com veya @fabrikam.com) Microsoft Office 365 müşterilerinin, her sonek için ayrı AD FS 2.0 Federasyon Hizmeti örneği dağıtmaları gerekir.  Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, **SupportMultipleDomain** anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu bloga](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
+**Çözüm:** AD FS 2.0 aracılığıyla çoklu oturum açma (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, her sonek için ayrı bir AD FS 2.0 Federasyon Hizmeti örneği dağıtmak üzere @contoso.com veya @fabrikam.com) gerekir) Microsoft Office 365 müşterileri.  Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, **SupportMultipleDomain** anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu bloga](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
 
 
-## Android sorunları
-### Profil yüklemesi başarısız oldu
+## <a name="android-issues"></a>Android sorunları
+### <a name="profile-installation-failed"></a>Profil yüklemesi başarısız oldu
 **Sorun:** Bir kullanıcı, bir Android cihazında **Profil yüklemesi başarısız oldu** hatasını alıyor.
 
-### Başarısız olan profil yüklemesi sorunlarını giderme adımları
+### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Başarısız olan profil yüklemesi sorunlarını giderme adımları
 
 1.  Kullanıcıya, Intune hizmetinin kullandığınız sürümü için uygun lisansın atandığını onaylayın.
 
@@ -163,7 +163,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 4.  Android için Chrome’un varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
-### Android sertifika sorunları
+### <a name="android-certificate-issues"></a>Android sertifika sorunları
 
 **Sorun**: Kullanıcı cihazda şu iletiyi alıyor: *Cihazınızda gerekli bir sertifika eksik olduğundan oturum açamazsınız.*
 
@@ -184,11 +184,11 @@ Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum aç
 
 
 
-## iOS sorunları
-### Profil yüklemesi başarısız oldu
+## <a name="ios-issues"></a>iOS sorunları
+### <a name="profile-installation-failed"></a>Profil yüklemesi başarısız oldu
 **Sorun:** Bir kullanıcı, bir iOS cihazında **Profil yüklemesi başarısız oldu** hatasını alıyor.
 
-### Başarısız olan profil yüklemesi sorunlarını giderme adımları
+### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Başarısız olan profil yüklemesi sorunlarını giderme adımları
 
 1.  Kullanıcıya, Intune hizmetinin kullandığınız sürümü için uygun lisansın atandığını onaylayın.
 
@@ -198,7 +198,7 @@ Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum aç
 
 4.  iOS için Safari’nin varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
-### Intune’la birlikte System Center Configuration Manager kullanıldığında kayıtlı iOS cihazı konsolda gösterilmiyor
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune’la birlikte System Center Configuration Manager kullanıldığında kayıtlı iOS cihazı konsolda gösterilmiyor
 **Sorun:** Kullanıcı iOS cihazını kaydediyor ancak cihaz Configuration Manager yönetici konsolunda gösterilmiyor. Cihaz kayıtlı olduğunu göstermiyor. Olası nedenler:
 
 - Intune Bağlayıcınızı bir hesaba kaydettikten sonra bunu başka bir hesaba kaydetmiş olabilirsiniz.
@@ -227,13 +227,13 @@ Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum aç
 
 
 1. Yeni bir APN sertifikası alın ve bunu karşıya yükleyin: Configuration Manager’ın sol bölmesinde Intune aboneliğine sağ tıklayın. **APNs sertifikası isteği oluştur**’u seçin ve yönergeleri izleyin.
-## System Center Configuration Manager’ı Intune kullanırken oluşan sorunlar
-### Mobil cihazlar kayboluyor
+## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager’ı Intune kullanırken oluşan sorunlar
+### <a name="mobile-devices-disappear"></a>Mobil cihazlar kayboluyor
 **Sorun:** Mobil cihazı Configuration Manager’a başarıyla kaydettikten sonra, bu cihaz mobil cihaz koleksiyonundan kayboluyor; ancak hala Yönetim Profili var ve CSS Ağ Geçidi’nde listeleniyor.
 
 **Çözüm:** Etki alanına katılmayan cihazları kaldıran özel bir işleminiz varsa veya kullanıcı cihazı abonelikten devre dışı bırakırsa bu durum ortaya çıkabilir. Configuration Manager konsolunda cihazı hangi işlemin veya kullanıcı hesabının kaldırdığını denetlemek ve doğrulamak için, aşağıdaki adımları izleyin.
 
-#### Cihazın nasıl kaldırıldığını denetleme
+#### <a name="check-how-device-was-removed"></a>Cihazın nasıl kaldırıldığını denetleme
 
 1.  Configuration Manager yönetim konsolunda **İzleme** &gt; **Sistem Durumu** &gt; **Durum İletisi Sorguları**’nı seçin.
 
@@ -250,12 +250,12 @@ Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum aç
 
 
 
-### Diğer iOS kayıt hataları
+### <a name="other-ios-enrollment-errors"></a>Diğer iOS kayıt hataları
 iOS kayıt hatalarının bir listesi, cihaz-kullanıcı belgelerimizdeki [Cihazınızı Intune'a kaydetmeye çalışırken hatalar görüyorsunuz](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) bölümünde verilmiştir.
 
-## PC Sorunları
+## <a name="pc-issues"></a>PC Sorunları
 
-### Makine zaten kaydoldu - Hata hr 0x8007064c
+### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>Makine zaten kaydoldu - Hata hr 0x8007064c
 **Sorun:** Kayıt işlemi **Makine zaten kaydoldu** hatasıyla başarısız oluyor. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.
 
 Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilgisayarın kopyalanmış görüntüsünü içermesi olabilir. Önceki hesabın hesap sertifikası hala bilgisayarda duruyordur.
@@ -278,7 +278,7 @@ Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilg
     > Bu bölüm, yöntem veya görev kayıt defterinde nasıl değişiklik yapacağınızı gösteren adımlar içerir. Bununla birlikte, kayıt defterinde yanlış değişiklikler yaparsanız ciddi sorunlar çıkabilir. Bu nedenle, bu adımları dikkatle izlediğinizden emin olun. Ek bir koruma için, değişiklikleri yapmadan önce kayıt defterini yedekleyin. Böylece bir sorun ortaya çıktığında kayıt defterini geri yükleyebilirsiniz.
     > Kayıt defterini yedekleme ve geri yükleme hakkında daha fazla bilgi için, [Windows’da kayıt defterini yedekleme ve geri yükleme](https://support.microsoft.com/en-us/kb/322756) konusunu okuyun.
 
-## Genel kayıt hata kodları
+## <a name="general-enrollment-error-codes"></a>Genel kayıt hata kodları
 
 |Hata kodu|Olası sorun|Önerilen çözüm|
 |--------------|--------------------|----------------------------------------|
@@ -302,11 +302,11 @@ Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilg
 
 
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
