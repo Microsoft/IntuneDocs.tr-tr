@@ -2,9 +2,10 @@
 title: "Uyarıları yönetme | Microsoft Intune"
 description: "Kuruluşunuzdaki cihazların genel durumunu değerlendirmek için Intune’da Uyarılar çalışma alanını kullanın."
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed8b7e42bd7c6f3839cc93cc3efcdd3241e88e2a
-ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 3bbeafbe78148d038b7673ee8c1abfd5bc6c5f87
 
 
 ---
 
-# Microsoft Intune’da uyarıları yönetme
+# <a name="manage-alerts-in-microsoft-intune"></a>Microsoft Intune’da uyarıları yönetme
 Kuruluşunuzdaki cihazların genel durumunu değerlendirmek ve sorunları belirlemek için Intune yönetim konsolundaki **Uyarılar** çalışma alanını kullanın.
 
-## Etkin uyarıları görüntüleme
+## <a name="view-active-alerts"></a>Etkin uyarıları görüntüleme
 
 Etkin uyarılar hakkındaki genel bilgilere ve özet verilerine bakın.
 
-#### Etkin uyarılar görüntülemek için
+#### <a name="to-view-active-alerts"></a>Etkin uyarılar görüntülemek için
 
 Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 
@@ -55,10 +56,10 @@ Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 
     -   **Önem Derecesi**. Bu sütun uyarının önem derecesini gösterir.
 
-## İlan tahtası uyarılarını görüntüleme
+## <a name="view-notice-board-alerts"></a>İlan tahtası uyarılarını görüntüleme
 İlan tahtası uyarıları, önemli hizmet duyuruları sağlar. Bunlar, yaklaşan hizmet yükseltmesi, bakım zamanlaması veya kesinti durumu hakkında bilgi sağlayabilir.
 
-#### İlan tahtasındaki uyarıları görüntülemek ve yönetmek için
+#### <a name="to-view-and-manage-notice-board-alerts"></a>İlan tahtasındaki uyarıları görüntülemek ve yönetmek için
 
 1.  Intune yönetici konsolunda **Sisteme Genel Bakış**’ı seçin.
 
@@ -66,10 +67,10 @@ Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 
 3.  İlan tahtasındaki uyarıyı bir virgülle ayrılmış değer (CSV) veya HTML dosyası olarak dışarı aktarmak istiyorsanız, Intune yönetim konsolunda **Uyarılar** > **Tüm Uyarılar** >    **Bildirimler**'i seçin. Bir bildirim seçin, **Listeyi Dışarı Aktar** simgesini seçin ve gösterilen yönergeleri izleyin.
 
-## Intune sistem durumunu gözden geçirme
+## <a name="review-intune-system-status"></a>Intune sistem durumunu gözden geçirme
 **Sisteme Genel Bakış** çalışma alanında, bir an önce dikkat etmenizi gerektiren sorunları saptayıp öncelik belirlemenize yardımcı olmak için sunulan Endpoint Protection, Güncelleştirmeler, Aracı Sistem Durumu, İlke ve Yazılım kategorilerine ilişkin **Sistem Durumu** özetlerini görüntüleyebilirsiniz. Sistem kesintiye uğradığında oluşturulan hata iletileri, **Hizmet Durumu** özetine bağlantı verir. **Hizmet Durumu** özetinde, her konumdaki sorunun ayrıntıları ve durum özetinin son güncelleştirildiği tarih gösterilir.
 
-#### Aboneliğinizin durumunu görüntülemek için
+#### <a name="to-view-the-status-of-your-subscription"></a>Aboneliğinizin durumunu görüntülemek için
 
 1.  Intune yönetici konsolunda **Sisteme Genel Bakış**’ı seçin.
 
@@ -77,7 +78,7 @@ Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 
   Birçok öğenin bağlantıları vardır ve daha fazla bilgi görebilirsiniz. Örneğin, **Endpoint Protection** bölümünde örnek sayısını seçerseniz, algılanan kötü amaçlı yazılımların bir listesiyle birlikte **Endpoint Protection** çalışma alanını görebilirsiniz. Cihaz sayısını seçerseniz, kötü amaçlı yazılım bulunan cihazların listesiyle birlikte **Gruplar** çalışma alanını görebilirsiniz.
 
-## Uyarıları kapatma ve yeniden etkinleştirme
+## <a name="close-and-reactivate-alerts"></a>Uyarıları kapatma ve yeniden etkinleştirme
 Intune uyarıları, şu olaylardan biri gerçekleşene kadar etkin kalır:
 
 -   Uyarının oluşturulmasına neden olan sorun çözüldüğünde.
@@ -88,7 +89,7 @@ Intune uyarıları, şu olaylardan biri gerçekleşene kadar etkin kalır:
 
 Kapatıldı olarak işaretlenen uyarılar 90 gün sonra kalıcı olarak silinir.
 
-#### Bir uyarıyı el ile kapatmak için
+#### <a name="to-manually-close-an-alert"></a>Bir uyarıyı el ile kapatmak için
 
 Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 
@@ -98,7 +99,7 @@ Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 
 - **Bir ilan tahtası uyarısını kapatmak için**, **Sisteme Genel Bakış**'ı seçin. İlan tahtasındaki uyarının yanındaki **X** işaretini seçin.
 
-#### Kapatılan uyarıları görüntülemek ve yeniden etkinleştirmek için
+#### <a name="to-view-and-reactivate-closed-alerts"></a>Kapatılan uyarıları görüntülemek ve yeniden etkinleştirmek için
 
 1.  Intune yönetici konsolunda **Uyarılar** > **Tüm Uyarılar**’ı seçin.
 
@@ -108,11 +109,11 @@ Intune yönetici konsolunda, şu adım dizilerinden birini izleyin:
 
 3.  Seçili uyarıyı yeniden etkinleştirmek için **Uyarıyı Yeniden Etkinleştir**'i seçin.
 
-### Ayrıca bkz.
-[Microsoft Intune Uyarıları ile bilgi edinin](../deploy-use/get-notified-by-alerts.md)
+### <a name="see-also"></a>Ayrıca bkz.
+[Microsoft Intune uyarıları ile bildirim alma](../deploy-use/get-notified-by-alerts.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

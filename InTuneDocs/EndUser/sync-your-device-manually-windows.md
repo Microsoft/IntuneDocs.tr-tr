@@ -3,8 +3,9 @@ title: "Windows cihazınızı el ile eşitleme | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
-ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
+ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
+ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 
 ---
@@ -53,7 +54,7 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 
     Ekranın en üstünde “Hesabınızı eşitliyoruz” iletisi görüntülenir. Cihazınızın eşitlenmesi bitene kadar **Eşitle** düğmesi gri gösterilir.
 
 ## Windows 10 masaüstü
-Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 masaüstü cihazınızı el ile eşitlemek için:
+Birden fazla Windows 10 sürümü olduğundan iki grup adım vardır. Hangi adımları kullanacağınızı anlamak için ekran görüntülerine bakın ve cihazınızda gördüğünüze benzeyen ekran görüntüsündeki adımları uygulayın. 
 
 1. **Başlat** düğmesini ve ardından **Ayarlar**’ı seçin.
 
@@ -63,15 +64,46 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 
 
     ![Ayarlar sayfasında Hesapları seçme](./media/win10pc-sync-2-settings-accounts.png)
 
-3. **Hesaplar** sayfasında **İş yeri erişimi**’ni seçin.
+3. Sonraki iki ekrana bakarak kendi cihazınızda gördüğünüze benzeyeni bulun. Cihazınızda gördüğünüz ekrana uyan adımları uygulayın.
+
+    “İşe veya okula erişim” ekranını görürseniz, [İşe veya okula Erişim seçeneğini görüyorsanız izlenecek adımlar](#steps-to-follow-if-you-see-access-work-or-school) kısmındaki yönergeleri izleyin.
+
+    ![İşe veya okula erişim seçeneğini görüyorsanız izlenecek eşitleme adımları](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    “İşe erişim” ekranını görürseniz, [İşe erişim seçeneğini görüyorsanız izlenecek adımlar](#steps-to-follow-if-you-see-your-account) kısmındaki adımları izleyin.
+
+    ![Hesap türü olarak iş yeri erişimini seçme](./media/win10pc-sync-3-work-access.png) 
+
+### İşe veya okula erişim seçeneğini görüyorsanız izlenecek adımlar
+
+1. **Hesaplar** sayfasında **İşe veya okula erişim**’i seçin.
+
+    ![İşe veya okula Erişim’i seçin](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2. İş veya okul hesabınızı seçin. BT yöneticinizin yaptığı ayarlara bağlı olarak, aşağıda gösterilen örneğe benzeyen iki hesap görebilirsiniz. Bir hesabın yanında bir evrak çantası, diğerinin yanında ise Microsoft logosu var. 
+
+    - Evrak çantası olan hesabı görürseniz bunu seçin ve altındaki **Bilgi** düğmesini bulun. 
+    - Yalnızca Microsoft logosu olan hesabı görürseniz hesabı seçin ve altındaki **Bilgi** düğmesini bulun.
+
+    ![Evrak çantası veya Microsoft logosu yanındaki hesabınızın adını seçin](./media/win10pc-rs1-sync-info-button.png)
+
+3. **Bilgi** düğmesini seçin. Aşağıdaki örneğe benzer bir iletişim kutusu açılır.
+
+    ![Evrak çantası veya Microsoft logosu yanındaki hesabınızın adını seçin](./media/win10pc-rs1-sync-button.png)
+
+4. **Eşitle** düğmesini seçin. Cihazınız Intune'la eşitlenir.
+
+### İşe erişim görüyorsanız uygulanacak adımlar
+    
+1. **Hesaplar** sayfasında **İş yeri erişimi**’ni seçin.
 
     ![Hesap türü olarak iş yeri erişimini seçme](./media/win10pc-sync-3-work-access.png)
 
-4. **Cihaz yönetimine kaydol** bölümünün altında şirketinizin adını seçin.
+2. **Cihaz yönetimine kaydol** bölümünün altında şirketinizin adını seçin.
 
     ![Cihaz yönetimi için şirket adı seçme](./media/win10pc-sync-4-tap-com-name.png)
 
-5. **Eşitle** düğmesini seçin.
+3. **Eşitle** düğmesini seçin.
 
     ![Eşitleme düğmesini seçme](./media/win10pc-sync-5-tap-sync.png)
 
@@ -98,6 +130,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

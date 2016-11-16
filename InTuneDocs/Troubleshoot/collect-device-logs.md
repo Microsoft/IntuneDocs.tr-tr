@@ -1,10 +1,11 @@
 ---
 title: "Cihaz günlüklerini toplama| Microsoft Intune"
-description: 
+description: "Yönetilen cihazlarınızdan günlük toplamayı öğrenin."
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 11/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,39 +14,49 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3233346702cf6de968abb251e885dc208d7720c
-ms.openlocfilehash: 183888119325568c857240a038740898a630a696
+ms.sourcegitcommit: 19b0b502d2c8c261947c461f27a0e8153df5b186
+ms.openlocfilehash: 1e65c1fa25e273ba03218f79ebeff611138e8013
 
 
 ---
 
-# Cihaz günlükleri
+# <a name="device-logs"></a>Cihaz günlükleri
 
 Sorun giderme çalışmalarınız kapsamında, kullanıcı cihazlarından günlükleri toplamak isteyebilirsiniz. Günlükleri toplama yönergeleri burada açıklanmaktadır. Normalde, cihaza erişmeniz veya kullanıcıdan günlükleri toplayıp size göndermesini istemeniz gerekebilir.
 
-### Android günlüğü konumu
-Android günlükleri *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files* yolunda yer alır. [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android) konu başlığı altında açıklandığı gibi, kullanıcı günlük dosyalarını size e-postayla da gönderebilir.
+### <a name="android-logs"></a>Android günlükleri
+Android günlükleri *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files* yolunda yer alır. 
 
-### iOS günlükleri
+Bazen, özellikle de yeni Android cihazlarında dosyalar görünmez. Bu olursa, son kullanıcınıza Android için Şirket Portalı uygulamasını açmasını, sonra **Ayarlar**'a gitmesini, **Günlükleri Kopyala**'yı seçmesini, sonra cihazını yeniden başlatmasını söyleyin. 
 
-[BT yöneticinize iOS kayıt hatalarını gönderme](/intune/enduser/send-errors-to-your-it-admin-ios) konu başlığı altında açıklandığı gibi, kullanıcı kayıt hatalarını size gönderebilir.
+Kullanıcılarınızın veri günlüklerini size nasıl gönderebileceği hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-### Mac OS X cihazları
+- [BT yöneticinizin cihaz sorunlarını düzeltmesine yardımcı olmak için Ayrıntılı Günlük Kaydı’nı kullanın](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) - Kullanıcıların, size tüm veri günlüklerini otomatik gönderen Ayrıntılı Günlük Kaydı’nı nasıl açacağını anlatır. Ayrıntılı Günlük Kaydı, varsayılan olarak açıktır.
+
+- [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android) 
+
+- [Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+
+### <a name="ios-logs"></a>iOS günlükleri
+
+Kullanıcılar, [BT yöneticinize iOS kayıt hatalarını gönderme](/intune/enduser/send-errors-to-your-it-admin-ios) konu başlığı altında açıklandığı gibi kayıt hatalarını size gönderebilir.
+
+### <a name="mac-os-x-logs"></a>Mac OS X günlükleri
 
 1. **Console** uygulamasını açın.
 2. **FILES** altında **system.log** dosyasını seçin.
 3. En üstteki menü çubuğunda **File** > **Save a Copy As…** öğesini seçin ve dosyayı kaydedin.
 
-### Windows Phone
+### <a name="windows-phone"></a>Windows Phone
 
-**Windows Phone Şirket Portalı**’nda, kullanıcının **…** düğmesini seçerek menüye erişmesi ve sonra da **Günlükleri Gönder**’i seçmesi gerekir. Bu seçenek hem portalda oturum açmadan önce hem de oturum açtıktan sonra kullanılabilir.
+Windows Phone Şirket Portalı uygulamasında, kullanıcıların **…** öğesini seçerek menüye erişmesi ve sonra da **Günlükleri Gönder**’i seçmesi gerekir. Bu seçenek Şirket Portalı'nda hem oturum açmadan önce hem de oturum açtıktan sonra kullanılabilir.
 
-### Windows
+### <a name="windows"></a>Windows
 
-Windows Şirket Portalı’nda günlükler *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState* yolunda yer alır.
+Windows Şirket Portalı'nda günlükler, *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState* konumunda bulunur.
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

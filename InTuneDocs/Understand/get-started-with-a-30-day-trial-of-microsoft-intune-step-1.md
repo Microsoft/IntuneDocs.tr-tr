@@ -3,6 +3,7 @@ title: "Microsoft Intune’un 30 günlük değerlendirmesi için kaydolun | Micr
 description: "Intune’un ücretsiz, 30 günlük değerlendirmesine nasıl kaydolabilirsiniz ve kaydolmadan önce hangi noktaları dikkate almanız gerekir"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,17 +14,17 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 0eb72fba9bd299a29c8da1b3477582fb4a0a31ab
 
 
 ---
 
-# Microsoft Intune’un 30 günlük değerlendirmesi için kaydolun
+# <a name="sign-up-for-a-30day-evaluation-of-microsoft-intune"></a>Microsoft Intune’un 30 günlük değerlendirmesi için kaydolun
 
 Mobil cihazlarınızı ve bilgisayarlarınızı yönetmek için 30 günlük Microsoft Intune değerlendirmesini hızla ve kolayca ayarlayın. Değerlendirme içinde birkaç basit adımla 100’e kadar kullanıcıyı ve cihazı ekleyebilir, gruplar oluşturabilir, uyumluluk ilkelerini yapılandırabilir, mobil cihazları ve bilgisayarları kaydedebilir ve yönetebilirsiniz. Bu konuda, Intune’un özelliklerini ve becerilerini değerlendirebilmeniz için Intune değerlendirmesini çalışır duruma getirmenin temel adımlarını öğrenecek ve hizmet hakkında genel bir bakış edineceksiniz.
 
-## Kaydolmadan önce dikkat etmeniz gereken noktalar
+## <a name="what-to-consider-before-you-sign-up"></a>Kaydolmadan önce dikkat etmeniz gereken noktalar
 
 Intune’a kaydolmadan veya Intune'da oturum açmadan önce, aşağıdakileri göz önünde bulundurmanız gerekir:
 
@@ -37,7 +38,7 @@ Intune’a kaydolmadan veya Intune'da oturum açmadan önce, aşağıdakileri g�
 |-----------------------------------------------------------------|------------------------------------------------|
 |**Bir iş veya okul hesabınız yok.** Bir iş veya okul hesabı Microsoft ile bir toplu lisanslama sözleşmesi imzaladığınızda veya Office 365'e abone olduğunuzda sağlanır. Kurumunuzun Microsoft ile imzaladığı bir Kurumsal Anlaşma veya eşdeğer toplu lisans sözleşmesi yoksa (veya Office 365 hesabı varsa), Microsoft Online Services üzerinde oturum açmak için kullanabileceğiniz bir Microsoft Online Services hesabınız yoktur.<br /><br />**30 günlük değerlendirmeyi tamamladıktan sonra Intune kiracınızı kaldırırsınız.** Intune ücretsiz değerlendirme aboneliğinizi yalnızca değerlendirme amacıyla kullanıyorsanız ve değerlendirmeyi kullandıktan sonra Intune hizmeti kurulumunu ve cihaz sağlamayı yeniden gerçekleştirmeyi düşünüyorsanız yeni bir hesap için kaydolmanız gerekir. Intune ürününü System Center 2012 Configuration Manager ile kullanmayı planlıyorsanız önerilen seçenek budur.<br /><br />Yeni bir hesap için kaydolursanız, daha sonra bu hesabı yönetmek için var olan bir iş veya okul hesabını kullanmaya geçemezsiniz ya da bu hesabı var olan toplu lisans sözleşmeleri ile birleştiremezsiniz.|**Bir toplu lisans sözleşmesi veya Office 365 aboneliğiniz ile sağlanan iş veya okul hesabınız var ve bu değerlendirme sürümünü Intune ürününü değerlendirmek için kullanıyorsunuz.**<br /><br />Intune hizmetinin kurulumunu mevcut bir hesapta yapıyorsanız, bu adımlara devam etmeden önce [Cihazların nasıl yönetileceğini seçin](/intune/get-started/choose-how-to-manage-devices) sayfasını gözden geçirmenizi öneririz.|
 
-## Intune'a kaydolma veya Intune'da oturum açma
+## <a name="sign-up-or-sign-in-to-intune"></a>Intune'a kaydolma veya Intune'da oturum açma
 
 1.  İlk olarak, [Intune Kayıt sayfasını ziyaret etmek için buraya tıklayın](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
@@ -52,7 +53,7 @@ Intune’a kaydolmadan veya Intune'da oturum açmadan önce, aşağıdakileri g�
 
 Kayıt formunu tamamladıktan ve Microsoft Çevrimiçi Abonelik Sözleşmesi'ni kabul ettikten sonra otomatik olarak kiracı yöneticisi hesabı ile Office 365 yönetim merkezi oturumunuz açılır. Ayrıca kayıt sırasında sağladığınız e-posta adresine hesap bilgilerinizi içeren bir e-posta iletisi gönderilir. Bu e-posta, aboneliğinizin etkin olduğunu doğrular.
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 1. adımını tamamladınız.
 
 >[!div class="step-by-step"]
@@ -61,6 +62,6 @@ Tebrikler! *Microsoft Intune değerlendirme* gözden geçirmesinin 1. adımını
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

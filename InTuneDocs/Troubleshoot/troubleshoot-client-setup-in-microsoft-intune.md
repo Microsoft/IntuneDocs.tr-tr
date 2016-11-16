@@ -2,7 +2,8 @@
 title: "İstemci kurulumu sorunlarını giderme | Microsoft Intune"
 description: "Sık karşılaşılan istemci kurulumu sorunlarını giderin."
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 3f7e5752780d7159ce3081ec7a194f4e81e4cd16
+ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
+ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 
 
 ---
 
-# Microsoft Intune’da istemci kurulumu sorunlarını giderme
+# <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune’da istemci kurulumu sorunlarını giderme
 Sık karşılaşılan istemci kurulum sorunlarını gidermenize yardımcı olması için aşağıdaki bilgileri kullanın. Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
-## İstemci yüklemesi başarısız oldu
+## <a name="client-installation-fails"></a>İstemci yüklemesi başarısız oldu
 
 -   [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) bilgisayar için hiç istemci yazılım dağıtımı uyarısı görüntülemezse, bilgisayarın İnternet bağlantısı ve proxy yapılandırmasını denetleyin, ayrıca bilgisayarın hizmet URL'si ([https://manage.microsoft.com](https://manage.microsoft.com/)) ile iletişim kurabildiğinden emin olun. Ardından İstemci yazılımını yüklemeyi yeniden deneyin.
 
@@ -48,14 +49,14 @@ Sık karşılaşılan istemci kurulum sorunlarını gidermenize yardımcı olmas
 
     -   **Önem** – Uyarının önemini gösterir
 
-## Bilgisayar kayıt paketi indirilmedi
+## <a name="computer-enrollment-package-doesnt-download"></a>Bilgisayar kayıt paketi indirilmedi
 **Sorun:** Bilgisayarı kaydetmeyi denerken aşağıdaki durumla karşılaştınız:
 -  Kayıt paketi indirilemedi
 -  İndirme iletişim kutusu görüntüleniyor ancak zaman aşımına uğruyor
 
 **Çözüm:** İndirme işleminde kullandığınız tarayıcıda, indirme süresi için indirme işlemlerinin etkinleştirildiğinden ve şifrelenmiş dosyaların yerel diskinize kaydedilebildiğinden emin olun.
 
-## İstemci yüklemesi 0x80040154 hata koduyla kilitleniyor
+## <a name="client-installation-hangs-with-error-code-0x80040154"></a>İstemci yüklemesi 0x80040154 hata koduyla kilitleniyor
 **Sorun:**
 
 -  İstemci yüklemesi kayıt sırasında kilitleniyor
@@ -69,10 +70,10 @@ Bilgisayarda kritik yazılım güncelleştirmelerinin eksik olması buna neden o
 **Çözüm:** [Microsoft Intune'da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutun](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) konu başlığı altında açıklandığı gibi, yazılım güncelleştirme ilkenizin kritik güncelleştirmelerin yüklenmesine olanak tanıdığından emin olun.
 
 
-## policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
+## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
 MDM olmayan Windows cihazları için policyplatform.log dosyasındaki ilke hataları cihazdaki Windows Kullanıcı Hesabı Denetimi’nde (UAC) bulunan varsayılan olmayan ayarların sonucu olabilir. Varsayılan olmayan bazı UAC ayarları Microsoft Intune istemci yüklemelerini ve ilke yürütmesini etkileyebilir.
 
-### UAC sorunlarını çözmek için
+### <a name="to-resolve-uac-issues"></a>UAC sorunlarını çözmek için
 
 1.  [Verileri ve cihazları Microsoft Intune yönetiminde kullanımdan kaldırma](/intune/deploy-use/retire-devices-from-microsoft-intune-management) konu başlığı altında açıklandığı gibi bilgisayarı devre dışı bırakın.
 
@@ -85,17 +86,17 @@ MDM olmayan Windows cihazları için policyplatform.log dosyasındaki ilke hatal
 
 4.  Bildirim kaydırıcısını varsayılan ayara getirin.
 
-## İstemci Microsoft Intune yönetici konsolundan kaldırılamazsa yapmanız gerekenler
+## <a name="what-to-do-if-the-client-will-not-uninstall-from-the-microsoft-intune-administrator-console"></a>İstemci Microsoft Intune yönetici konsolundan kaldırılamazsa yapmanız gerekenler
 
-### İstemci yazılımını Microsoft Intune komut satırı aracını kullanarak kaldırma
+### <a name="to-remove-the-client-software-by-using-the-microsoft-intune-command-line-tool"></a>İstemci yazılımını Microsoft Intune komut satırı aracını kullanarak kaldırma
 
 1.  Yönetici modunda bir komut istemi açın.
 
 2.  *%programfiles%\Microsoft\OnlineManagement\Common* klasörüne gidin
 
-3.  Aşağıdaki komutu çalıştırın ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
+3.  Şu komutu çalıştırın: ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
 
-## İstemci yüklemesi hata kodları
+## <a name="client-installation-error-codes"></a>İstemci yüklemesi hata kodları
 Aşağıdaki tabloda istemci yazılımı yüklemesi başarısız olursa **Uyarılar** 'da görüntülenecek hata kodları açıklanmaktadır. Her hata kodunun temsil ettiği sorunu çözmek için öneriler içerir.
 
 |Hata kodu|Olası sorun|Önerilen çözüm|
@@ -116,16 +117,16 @@ Aşağıdaki tabloda istemci yazılımı yüklemesi başarısız olursa **Uyarı
 |**0x80043008**|Microsoft Online Yönetim Güncelleştirmeleri hizmeti başlatılamadı.|[Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Destek ile iletişim kurun.|
 |**0x80043009**|İstemci bilgisayar hizmete zaten kayıtlı.|İstemci bilgisayarı bu hizmete yeniden kaydetmek için önce devre dışı bırakmanız gerekir. Yönergeler için bkz. [Microsoft Intune yönetiminden cihazları devre dışı bırakma](/intune/deploy-use/retire-devices-from-microsoft-intune-management).|
 |**0x8004300B**|İstemci üzerinde çalışan Windows sürümü desteklenmediğinden, istemci yazılımı yükleme paketi çalıştırılamıyor.|Intune istemci bilgisayarda çalışan Windows sürümünü desteklemiyor. Desteklenen işletim sistemlerinin listesi için bkz. [Microsoft Intune için ağ altyapısı gereksinimleri](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
-|**0xAB2**|Windows Installer özel bir işlem için VBScript çalışma zamanına erişemedi.|Bu hata Dinamik Bağlantı Kitaplıkları'nı (DLLs) temel alan özel bir işlemden kaynaklanır. DLL sorunlarını giderirken, [Microsoft Desteği KB198038: Paket ve dağıtım Sorunlarında Yararlı Araçlar](http://go.microsoft.com/fwlink/?LinkID=234255)makalesinde açıklanan araçları kullanmanız gerekebilir.|
+|**0xAB2**|Windows Installer özel bir işlem için VBScript çalışma zamanına erişemedi.|Bu hata Dinamik Bağlantı Kitaplıkları'nı (DLLs) temel alan özel bir işlemden kaynaklanır. DLL sorunlarını giderirken, [Microsoft Desteği KB198038: Paket ve Dağıtım Sorunlarında Yararlı Araçlar](http://go.microsoft.com/fwlink/?LinkID=234255) makalesinde açıklanan araçları kullanmanız gerekebilir.|
 |**0x8004300f**|System Center Configuration Manager istemcisi zaten yüklü olduğundan yazılım yüklenemiyor.|Configuration Manager istemcisini kaldırın ve ardından istemci yazılımı yükleme işlemini yeniden deneyin.|
 |**0x80043010**|Open Mobile Alliance Device Management (OMADM) istemcisi zaten yüklü olduğundan bu yazılım yüklenemiyor.|OMADM istemcisinin kaydını kaldırın ve ardından istemci yazılımı yüklemesini yeniden deneyin.|
 Yükleme sorunu devam ediyorsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Destek ile iletişim kurun. Destek mühendislerine göstermek için istemci bilgisayar kayıt günlüğü (%*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log ve %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log konumlarında bulunur) ve Windows Update günlüğünü (%*windir*%\windowsupdate.log) hazır bulundurun.
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

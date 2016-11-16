@@ -3,6 +3,7 @@ title: "Şirket Portalı uygulamasını kullanırken bir hata iletisi alıyorsun
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: d1bcda779c051e4455def755a92f47b5ec7475ea
 
 
 ---
@@ -25,17 +26,14 @@ ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
 
 iOS cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsanız, BT yöneticinizin sorunu gidermesine yardımcı olmak için hata hakkındaki bilgileri gönderebilirsiniz. Hata bilgilerini farklı yollarla gönderebilirsiniz:
 
--   Hata uyarı iletilerinde **Rapor**’a dokunabilirsiniz.
+-   Hata uyarı iletilerinde **Rapor**’a dokunun.
 
--   Şirket Portalı uygulamasının **Hakkında** ekranında **Tanılama Raporu Gönder**’e dokunabilirsiniz.
+-   Şirket Portalı uygulamasının **Hakkında** ekranında **Tanılama Raporu Gönder**’e dokunun.
 
--   Şirket Portalı uygulamasındayken cihazınızı sallayabilir ve ardından tanılama uyarısı görüntülendiğinde **E-posta**’ya dokunabilirsiniz. Cihazı salladığınızda uyarı görüntülenmezse, **Ayarlar** &gt; **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
-
-
+-   Şirket Portalı uygulamasındayken cihazınızı sallayın ve ardından tanılama uyarısı görüntülendiğinde **E-posta**’ya dokunun. Cihazı salladığınızda uyarı görüntülenmezse, **Ayarlar** &gt; **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

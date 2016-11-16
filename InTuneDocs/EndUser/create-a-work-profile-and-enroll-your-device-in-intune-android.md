@@ -2,7 +2,8 @@
 title: "Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Android cihazının nasıl şifreleneceği açıklanır"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 ---
 
 
-# Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme
 
-Bir iş profili, cihazınızda ayarladığınız, iş veya okul e-postalarınıza, uygulamalarınıza ve dosyalarınıza erişmenize olanak sağlayan bir şeydir. [İş profili oluşturduğunuzda ne olur?](what-happens-when-you-create-a-work-profile-android.md) hakkında daha fazla bilgi edinebilirsiniz.
+Android cihazınızı kaydetmek şirket e-postası, uygulamaları ve diğer iş verilerine erişmenizi sağlar. Kayıt işleminin bir parçası olarak, cihazınızdaki kişisel verileri iş verilerinizden ayıran bir iş profili ayarlarsınız. BT yöneticiniz, yalnızca iş verilerinizi içeren iş profilinizi yönetebilir. BT yöneticiniz cihazınızdaki kişisel verileri yönetemez. [İş profili oluşturduğunuzda ne olacağı](what-happens-when-you-create-a-work-profile-android.md) hakkında daha fazla bilgi edinin.
 
 Bir iş profili oluşturmak için:
 
@@ -56,11 +57,11 @@ Bir iş profili oluşturmak için:
 
     "İş profilinizi ayarlama" ve "Cihazınızı kaydetme" içerikli birkaç ileti görürsünüz.
 
-8. **Yolu Yarıladınız!** ekranında, üzerinde rozet olan Şirket Portalı uygulaması simgesine dokunun.
+8. **Yolu Yarıladınız!** ekranında, Şirket Portalı uygulaması açılana kadar birkaç saniye bekleyin.
 
     ![Rozetli Şirket Portalı uygulamasına dokunun](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. Android Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve ardından iş veya okul hesabınızla oturum açın.
+9. Android Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve bu işlemde daha önce oturum açmak için kullandığınız iş veya okul hesabınızla oturum açın.
 
 10. **Şirket Erişimi Kurulumu** ekranında, İş Profili Kurulumunuzun tamamlandığını gördükten sonra **DEVAM**’a dokunun.
 
@@ -72,11 +73,11 @@ Bir iş profili oluşturmak için:
 
     ![Şirket Erişimi Kurulumu iş profili ve kaydın tamamlandığını gösterir](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. **Şirket Erişimi Kurulumu tamamlandı** ekranında **BİTTİ**’ye dokunun.
+12. **Şirket Erişimi Kurulumu tamamlandı** ekranında **BİTTİ**’ye dokunun. BT yöneticiniz, başka gereksinimler eklediyse ek adımlar gerçekleştirmeniz gerekebilir.
 
     ![Şirket Erişimi Kurulumu tamamlandı](./media/andr-afw-company-access-setup-complete.png)
 
-    Bundan sonra şirket uygulamalarını alabileceğiniz Play Store for Work’e götürülürsünüz.
+    Bundan sonra şirket uygulamalarını Play Store for Work’ten alabilirsiniz.
 
     ![Play Store for Work uygulamaları sayfası](./media/andr-afw-tap-work-play-store-icon.png)
 

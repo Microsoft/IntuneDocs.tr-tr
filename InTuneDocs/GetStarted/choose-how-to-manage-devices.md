@@ -3,8 +3,9 @@ title: "Cihazların nasıl yönetileceğini seçme | Microsoft Intune"
 description: "Cihazları kaydedebileceğiniz ve yönetebileceğiniz çeşitli yollar hakkında bilgi edinin."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3f27837195e5fdf58b9c13f38b0e5c0ad90d971
-ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
 
 
 ---
 
-# Cihazların nasıl yönetileceğini seçme
+# <a name="choose-how-to-manage-devices"></a>Cihazların nasıl yönetileceğini seçme
 
 Intune’un sunduğu uygulama yönetimi ve cihaz ayarlarının denetlenmesi gibi pek çok özellikten yararlanmak için cihazlarınızın *yönetilmesi* gerekir. Cihazları nasıl yönettiğiniz, kullanmak istediğiniz Intune özelliklerine bağlıdır.
 Bu konu, gereksinimlerinizi karşılayan yöntemi seçmenize yardımcı olur.
@@ -31,7 +32,7 @@ Windows bilgisayarları yönetmek için iki seçeneğiniz vardır:
 1. Cihazı kaydetme **veya**
 2. *Intune yazılım istemcisini* yükleme.
 
-## Kullanılacak yönteme karar verme
+## <a name="decide-which-method-to-use"></a>Kullanılacak yönteme karar verme
 Cihazlarınızın nasıl yönetileceğine karar vermek için bu karar akışını kullanın.
 
 ![Cihazlarınızı yönettirmek için karar akışı.](./media/choose-manage-method.png)
@@ -48,15 +49,15 @@ Her yöntem ile elde edeceğiniz yönetim özelliklerinin ayrıntılı bir liste
 Intune’un desteklediği cihazlar ve bilgisayarlar hakkında bilgi için bkz. [Desteklenen mobil cihazlar ve bilgisayarlar](/intune/get-started/supported-mobile-devices-and-computers)
 
 
-## Exchange ActiveSync yönetimi
+## <a name="exchange-activesync-management"></a>Exchange ActiveSync yönetimi
 Cihazı kaydetmeye veya Intune yazılım istemcisini yüklemeye ek olarak cihazları [Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) ile de yönetebilirsiniz. Bu yöntem, Exchange Server’a bağlanmak için Şirket İçi Bağlayıcı’yı yüklemenizi veya yerleşik Hizmetten Hizmete Bağlayıcısı’nı kullanmanızı gerektirir.
 Cihazları yönetmek için üçüncü seçenek olmasına rağmen, diğer yöntemler ile karşılaştırıldığında sınırlı sayıda yönetim özelliği sunar.
 
 
-## Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 - [Mobil cihazların nasıl kaydedileceğini belirleme](/intune/get-started/choose-how-to-enroll-devices1)
-- [Intune bilgisayar istemcisiyle Windows bilgisayarlarını yönetme](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
+- [Intune bilgisayar istemci yazılımıyla Windows bilgisayarlarını yönetme](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
 
 
 
@@ -64,7 +65,6 @@ Cihazları yönetmek için üçüncü seçenek olmasına rağmen, diğer yöntem
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

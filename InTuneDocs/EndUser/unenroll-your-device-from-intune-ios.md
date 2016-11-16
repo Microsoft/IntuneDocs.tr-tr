@@ -3,6 +3,7 @@ title: "iOS cihazınızın Intune kaydını silme | Microsoft Intune"
 description: "iOS cihazının Intune kaydını nasıl silebileceğiniz açıklanır."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: acd83d6cac946c7cc3c08bc179bf88dcc7475a69
 
 
 ---
@@ -36,9 +37,9 @@ Cihazınızın Intune kaydını silmek için aşağıdaki adımları kullanın v
 
 Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 
--   Cihazınız artık Şirket Portalı’nda görünmez.
+-   Cihazınız artık Şirket Portalı’nda gösterilmez.
 
--   Şirket Portalı’ndan artık uygulama yükleyemezsiniz.
+-   Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
 -   Cihazı eklediğinizde değiştirilen tüm ayarlar (örneğin, kamerayı devre dışı bırakma veya belirli bir parola uzunluğu gerekliliği) artık geçerliliğini kaybeder.
 
@@ -56,7 +57,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

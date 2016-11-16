@@ -3,6 +3,7 @@ title: "Kaydetmeye çalışırken cihazınızı tanımlamanız isteniyor | Micro
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 5db6e8e4b27a00ce159fb700139db45a45e48b02
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 852c02fabee7ec3551e34f92c5f9e44402d31ecb
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 5db6e8e4b27a00ce159fb700139db45a45e48b02
 
 # Kaydetmeye çalışırken cihazınızı tanımlamanız isteniyor
 
-iOS veya Mac OS X cihazınızı Intune’a kaydetmeye çalışırken cihazınızı tanımlamanızı isteyen bir ekran görürseniz, cihazlarınızdan en az birinin daha önce kaydedildiği ve Şirket Portalı uygulaması dışında bir yöntem kullanılarak hesabınıza atandığı anlamına gelir. Şirket Portalı uygulamasının doğru çalışması için, kullanmakta olduğunuz cihazın daha önce Intune'a kaydedilip kaydedilmediğini belirlemeniz gerekir.
+iOS veya Mac OS X cihazınızı Intune’a kaydetmeye çalışırken cihazınızı tanımlamanızı isteyen bir ekran görürseniz, cihazlarınızdan en az biri daha önce kaydedilmiş ve Şirket Portalı uygulaması dışında bir yöntem kullanılarak hesabınıza atanmıştır. Şirket Portalı uygulamasının doğru çalışması için kullanmakta olduğunuz cihazın daha önce Intune'a kaydedilip kaydedilmediğini belirlemeniz gerekir.
 
 1. Cihazınızı listede görürseniz dokunun. Göremiyorsanız **yeni cihaz** öğesine dokunun.
 2. **Devam**’a dokunun.
@@ -33,8 +34,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

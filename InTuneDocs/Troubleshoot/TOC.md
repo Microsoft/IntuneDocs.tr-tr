@@ -23,6 +23,6 @@
 ## [Lookout Tümleştirmesi sorunlarını giderme](troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

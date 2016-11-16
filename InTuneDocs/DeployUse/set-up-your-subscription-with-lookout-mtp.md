@@ -8,33 +8,36 @@ manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de65f43ac83b25fa2dd1dacd2a7807668c2b6e9a
-ms.openlocfilehash: fa3230e1faf24bdbbd7e84a211ca95c1fd0fadfd
+ms.sourcegitcommit: 1187ad3fdd4a427333d610686698c1f806c6ee33
+ms.openlocfilehash: 1d8cdaa36a852fba5912c250daa500e16bd3b661
 
 
 ---
 
-# Aboneliğinizi Lookout cihaz tehdit koruması için ayarlama
-Aboneliğinizin Lookout cihaz tehdit koruması hizmetine hazır hale getirilebilmesi için, Azure Active Directory (Azure AD) aboneliğinize yönelik aşağıdaki bilgilerin Lookout desteğine (enterprisesupport@lookout.com) sağlanması gerekir. 
+# <a name="set-up-your-subscription-for-lookout-device-threat-protection"></a>Aboneliğinizi Lookout cihaz tehdit koruması için ayarlama
+Aboneliğinizin Lookout cihaz tehdit koruması hizmetine hazır hale getirilebilmesi için Azure Active Directory (Azure AD) aboneliğinizle ilgili olan aşağıdaki bilgilerin Lookout desteğine (enterprisesupport@lookout.com) sağlanması gerekir. Lookout Mobil Uç Nokta Güvenliği kiracınız, Lookout hizmetini Intune ile etkinleştirmek için Azure AD aboneliğiniz ile ilişkilendirilir. 
 
 * **Azure AD Kiracı Kimliği**
 * Lookout konsoluna **tam** erişim için **Azure AD Grubu Nesne Kimliği**
 * Lookout konsoluna **kısıtlı** erişim için **Azure AD Grubu Nesne Kimliği** (isteğe bağlı)
 
+> [!IMPORTANT]
+> Daha önceden Azure AD kiracınız ile ilişkilendirilmemiş mevcut bir Lookout Mobil Uç Nokta Güvenliği kiracısı, Azure AD ve Intune tümleştirmesi için kullanılamaz. Yeni bir Lookout Mobil Uç Nokta Güvenliği kiracısı oluşturmak için Lookout desteğine başvurun. Azure AD kullanıcılarınızı eklemek için yeni kiracıyı kullanın.
+
 Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki bölümü kullanın.  
 
-## Azure AD bilgilerinizi alma
-### Azure AD kiracı kimliği
+## <a name="get-your-azure-ad-information"></a>Azure AD bilgilerinizi alma
+### <a name="azure-ad-tenant-id"></a>Azure AD kiracı kimliği
 [Azure AD yönetim portalında](https://manage.windowsazure.com) oturum açın ve aboneliğinizi seçin. 
 
-![Kiracı adını gösteren Azure AD sayfasının ekran görüntüsü](../media/mtp/aad_tenant_name.png) Aboneliğinizin adını seçtiğinizde karşınıza çıkan URL, abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US) bakın.   
-### Azure AD Grubu Kimliği
+![kiracı adını gösteren Azure AD sayfasının ekran görüntüsü](../media/mtp/aad_tenant_name.png) Aboneliğinizin adını seçtiğinizde karşınıza çıkan URL, abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US) bakın.   
+### <a name="azure-ad-group-id"></a>Azure AD Grubu Kimliği
 Lookout konsolu 2 erişim düzeyini destekler:  
 * **Tam Erişim:** Azure AD yöneticisi, Tam Erişimi olacak kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak Sınırlı Erişimi olacak kullanıcılar için bir grup oluşturur.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
 * **Kısıtlı Erişim:** Bu gruptaki kullanıcılar, Lookout konsolundaki yapılandırma ve kayıtla ilgili modüllerin çoğuna erişemez. Konsolun **Güvenlik İlkesi** modülü için ise salt okunur erişimine sahip olurlar.  
@@ -50,8 +53,8 @@ Bu bilgileri topladıktan sonra, Lookout desteği ile iletişime geçin (e-posta
 Lookout Desteği topladığınız bilgileri kullanarak, aboneliğinizi hazırlamak ve Lookout Enterprise hesabınızı oluşturmak için aboneliğinizdeki birincil ilgili kişiyle birlikte çalışır.
 
 
-## Aboneliğinizi Lookout cihaz tehdit koruması ile yapılandırma
-### 1. Adım: Cihaz tehdit korumanızı ayarlama
+## <a name="configure-your-subscription-with-lookout-device-threat-protection"></a>Aboneliğinizi Lookout cihaz tehdit koruması ile yapılandırma
+### <a name="step-1-set-up-your-device-threat-protection"></a>1. Adım: Cihaz tehdit korumanızı ayarlama
 Lookout desteği tarafından Lookout Enterprise hesabınız oluşturulduktan sonra, Lookout konsolunda oturum açabilirsiniz.   Oturum açma URL’sini içeren bir e-posta Lookout’tan şirketinizin ilgili kişisine gönderilir: https://aad.lookout.com/les?action=consent
 
 Lookout konsolunda ilk kez oturum açarken, Azure AD rolü Genel Yönetici olan bir kullanıcı hesabı kullanmanız gerekir. Lookout bu bilgiyi, Azure AD kiracınızı kaydetmek için kullanır.   Bundan sonraki oturum açma işlemleri kullanıcının bu Azure AD ayrıcalık düzeyine sahip olmasını gerektirmez.  Bu ilk oturum açma işleminde, bir onay sayfası görüntülenir. Kaydı tamamlamak için **Kabul Et**’i seçin.
@@ -62,7 +65,7 @@ Oturum açma sorunlarıyla karşılaşırsanız [sorun giderme makalesine](https
 
 Sonraki adımlar, [Lookout konsolunda](https://aad.lookout.com) Lookout kurulumunu tamamlamak için yerine getirmeniz gereken görevleri özetler.
 
-### 2. Adım: Intune bağlayıcısını yapılandırma
+### <a name="step-2-configure-the-intune-connector"></a>2. Adım: Intune bağlayıcısını yapılandırma
 
 1.  Lookout konsolunda **Sistem** modülünde, **Bağlayıcılar** sekmesine tıklayın ve **Intune**’u seçin.
 
@@ -72,7 +75,7 @@ Sonraki adımlar, [Lookout konsolunda](https://aad.lookout.com) Lookout kurulumu
 
   ![bağlantı ayarları sekmesinin sinyal sıklığını gösterecek şekilde yapılandırılmış ekran görüntüsü](../media/mtp/lookout-mtp-connection-settings.png)
 
-### 3. Adım: Kayıt gruplarını yapılandırma
+### <a name="step-3-configure-enrollment-groups"></a>3. Adım: Kayıt gruplarını yapılandırma
 **Kayıt Yönetimi** seçeneğinde, cihazları Lookout’a kaydedilmesi gereken bir kullanıcı grubu tanımlayın. Test etmek ve tümleştirme işleminin nasıl çalıştığına aşina olmak için küçük bir kullanıcı grubuyla başlamak en iyi yöntemdir.  Test sonuçlarınızdan memnun olduğunuzda, kayıt işlemini başka kullanıcı gruplarına genişletebilirsiniz.
 
 Kayıt gruplarını kullanmaya başlamak için öncelikle, Lookout cihaz tehdit korumasına kaydetmeye uygun bir ilk kullanıcı grubunu Azure AD güvenlik grubu olarak tanımlayın. Azure AD’de grubu oluşturduktan sonra, Lookout konsolundaki **Kayıt Yönetimi** seçeneğine gidin ve kayıt için Azure AD güvenlik grubunun **Görünen Adlarını** ekleyin.
@@ -92,23 +95,23 @@ Mevcut sürümde aşağıdaki sınırlamalar bulunmaktadır:
 * Grup içinde grup oluşturma şu anda desteklenmemektedir.  Belirtilen Azure AD güvenlik grupları yalnızca kullanıcıları içerebilir, iç içe grupları içeremez.
 
 
-### 4. Adım: Durum eşitlemeyi yapılandırma
+### <a name="step-4-configure-state-sync"></a>4. Adım: Durum eşitlemeyi yapılandırma
 **Durum Eşitleme** seçeneğinde, Intune’a gönderilecek veri türünü belirtin.  Şu anda, Lookout Intune tümleştirmesinin düzgün çalışması için hem cihaz durumunu hem de tehdit durumunu etkinleştirmeniz gerekir.  Bunlar varsayılan olarak etkindir.
-### 5. Adım: Hata raporu e-posta alıcı bilgilerini yapılandırma
+### <a name="step-5-configure-error-report-email-recipient-information"></a>5. Adım: Hata raporu e-posta alıcı bilgilerini yapılandırma
 **Hata Yönetimi** seçeneğinde, hata raporlarının gönderileceği e-posta adresini girin.
 
 ![Intune bağlayıcısı hata yönetimi sayfasının ekran görüntüsü](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
-### 6. Adım. Kayıt ayarlarını yapılandırma
+### <a name="step-6-configure-enrollment-settings"></a>6. Adım. Kayıt ayarlarını yapılandırma
 **Sistem** modülünde, **Bağlayıcılar** sayfasında, bir cihazın bağlantısı kesilmiş olarak kabul edilmesinden önce geçmesi gereken gün sayısını belirtin.  Bağlantısı kesilmiş cihazlar uyumsuz olarak kabul edilir ve Intune koşullu erişim ilkelerine bağlı olarak şirket uygulamalarınıza erişimleri engellenir. 1 ila 90 gün arasında bir değer belirtebilirsiniz.
 
 ![](../media/mtp/lookout-console-enrollment-settings.png)
 
-### 7. Adım: E-posta bildirimlerini yapılandırma
+### <a name="step-7-configure-email-notifications"></a>7. Adım: E-posta bildirimlerini yapılandırma
 Tehditler hakkında e-posta uyarıları almak istiyorsanız, bildirimlerin gönderileceği kullanıcı hesabını kullanarak [Lookout konsolunda](https://aad.lookout.com) oturum açın. **Sistem** modülünün **Tercihler** sekmesinde istediğiniz bildirimleri seçin ve bunları **AÇIK** olarak ayarlayın. Yaptığınız değişiklikleri kaydedin.
 
-![Kullanıcı hesabının görüntülendiği tercihler sayfasının ekran görüntüsü](../media/mtp/lookout-mtp-email-notifications.png) Artık e-posta bildirimleri almak istemiyorsanız, bildirimleri **KAPALI** olarak ayarlayın ve değişikliklerinizi kaydedin.
-### 8. Adım: Tehdit sınıflandırmasını yapılandırma
+![kullanıcı hesabının görüntülendiği tercihler sayfasının ekran görüntüsü](../media/mtp/lookout-mtp-email-notifications.png) Artık e-posta bildirimleri almak istemiyorsanız bildirimleri **KAPALI** olarak ayarlayın ve değişikliklerinizi kaydedin.
+### <a name="step-8-configure-threat-classification"></a>8. Adım: Tehdit sınıflandırmasını yapılandırma
 Lookout cihaz tehdit koruması, çeşitli türlerdeki mobil tehditleri sınıflandırır. [Lookout tehdit sınıflandırmaları](http://personal.support.lookout.com/hc/en-us/articles/114094130693) ile ilişkilendirilen varsayılan risk düzeyleri bulunur. Bunlar, şirket gereksinimlerinize uyacak şekilde herhangi bir zamanda değiştirilebilir.
 
 ![tehdit ve sınıflandırmaları gösteren ilke sayfasının ekran görüntüsü](../media/mtp/lookout-mtp-threat-classification.png)
@@ -116,13 +119,13 @@ Lookout cihaz tehdit koruması, çeşitli türlerdeki mobil tehditleri sınıfla
 >[!IMPORTANT]
 > Intune tümleştirmesi, çalışma zamanında cihaz uyumluluğunu bu risk düzeylerine göre hesapladığından bunlar cihaz tehdit koruması için önemlidir. Diğer bir deyişle, Intune yöneticisi bir cihazın yüksek, orta veya düşük düzeyde etkin bir tehdidi varsa, cihazın uyumlu olmadığını tanımlamak için ilke içinde bir kural koyar. Lookout cihaz tehdit korumasındaki tehdit sınıflandırma ilkesi, Intune’daki cihaz uyumluluk hesaplamasını doğrudan etkiler.
 
-## Kayıt izleme
+## <a name="watching-enrollment"></a>Kayıt izleme
 Kurulum tamamlandıktan sonra Lookout cihaz tehdit koruması, belirlenen kayıt gruplarına karşılık gelen cihazlar için Azure AD’yi yoklamaya başlar.  Kayıtlı cihazlar hakkındaki bilgileri Cihazlar modülünde bulabilirsiniz.  Cihazların ilk durumu, beklemede olarak gösterilir.  Cihaz durumu Lookout for Work uygulaması cihaza yüklendikten, açıldıktan ve etkinleştirildikten sonra değişir.  Cihaza gönderilen Lookout for Work uygulamasının nasıl alınacağına yönelik ayrıntılar için, [Lookout for Work uygulamalarını yapılandırma ve dağıtma](configure-and-deploy-lookout-for-work-apps.md) konusuna bakın.
-## Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 [Lookout MTP Intune bağlantısını etkinleştirme](enable-lookout-mtp-connection-in-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

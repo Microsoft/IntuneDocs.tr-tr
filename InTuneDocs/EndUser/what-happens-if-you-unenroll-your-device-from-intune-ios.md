@@ -3,6 +3,7 @@ title: "iOS cihazınızın Intune kaydını sildiğinizde ne olur? | Microsoft I
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05c94004bf8a4c26ad8063f3e5dc0ba581022e0a
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: a47d3fc5c3a2063e49e9f250e15eb8d6126bb903
 
 
 ---
@@ -29,7 +30,7 @@ iOS cihazınızın Intune kaydını sildiğinizde:
 
 -   Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
--   Cihazı eklediğinizde değiştirilen tüm ayarlar (örneğin, kamerayı devre dışı bırakma veya belirli bir parola uzunluğu gerekliliği) artık geçerliliğini kaybeder.
+-   Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.
 
 -   Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
 
@@ -45,8 +46,6 @@ Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

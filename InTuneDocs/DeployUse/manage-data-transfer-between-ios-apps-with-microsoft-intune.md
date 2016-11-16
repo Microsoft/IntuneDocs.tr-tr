@@ -3,8 +3,9 @@ title: "iOS uygulamaları arasında veri aktarımını yönetme | Microsoft Intu
 description: "Bu konuyu, uygulamalar arasındaki veri aktarımlarını yönetmek amacıyla iOS Birlikte açma özelliğini ve mobil uygulama yönetimi ilkelerini nasıl kullanabileceğinizi anlamak için okuyun."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# Microsoft Intune ile iOS uygulamaları arasında veri aktarımını yönetme
-## iOS uygulamalarını yönetme
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Microsoft Intune ile iOS uygulamaları arasında veri aktarımını yönetme
+## <a name="manage-ios-apps"></a>iOS uygulamalarını yönetme
 Şirket verilerinizin korunması, dosya aktarımlarının tarafınızdan yönetilen uygulamalarla kısıtlanmasını da içerir.  iOS uygulamalarını aşağıdaki yollarla yönetebilirsiniz:
 
 -   Uygulamalar için bir MAM ilkesi yapılandırarak şirkette veri kaybını önleyin. Biz buna **ilkeyle yönetilen** uygulamalar diyeceğiz.
@@ -28,7 +29,7 @@ ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
 -   Uygulamaları **MDM kanalı** üzerinden de dağıtıp yönetebilirsiniz.  Bunun için cihazların MDM çözümüne kaydedilmesi gerekir. Bunlar **ilkeyle yönetilen** uygulamaları veya diğer yönetilen uygulamalar olabilir.
 
 iOS cihazları için **Yönetimde açma** özelliği, dosya aktarımlarını yalnızca **MDM kanalı** aracılığıyla dağıtılan uygulamalar arasında gerçekleşecek şekilde sınırlandırabilir. Yönetimde açma kısıtlamaları, yapılandırma ayarlarında belirlenir ve MDM çözümünüz aracılığıyla dağıtılır.  Kullanıcı dağıtılan uygulamayı yüklendiğinde, ayarladığınız kısıtlamalar uygulanır.
-##  iOS uygulamalarıyla MAM’yi kullanma
+##  <a name="using-mam-with-ios-apps"></a>iOS uygulamalarıyla MAM’yi kullanma
 Mobil uygulama yönetimi (MAM) ilkeleri iOS **Yönetimde açma** özelliğiyle birlikte kullanıldığında, şirket verileri aşağıdaki yollarla korunabilir:
 
 -   **Herhangi bir MDM çözümü tarafından yönetilmeyen, çalışanın sahip olduğu cihazlar:** MAM ilke ayarlarını **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** olarak belirleyebilirsiniz. Son kullanıcı ilkeyle yönetilmeyen bir uygulamada korunan bir dosyayı açtığında dosya okunamaz.
@@ -41,7 +42,7 @@ Mobil uygulama yönetimi (MAM) ilkeleri iOS **Yönetimde açma** özelliğiyle b
 > [!IMPORTANT]
 > Kullanıcı UPN ayarı yalnızca bir üçüncü taraf MDM tarafından yönetilen cihazlara dağıtılan uygulamalar için gereklidir.  Intune ile yönetilen cihazlar için bu ayar gerekli değildir.
 
-## Kullanıcı UPN ayarını yapılandırma
+## <a name="configure-user-upn-setting"></a>Kullanıcı UPN ayarını yapılandırma
 Bu yapılandırma bir üçüncü taraf MDM çözümü tarafından yönetilen cihazlar için gereklidir. Aşağıda açıklanan yordam, UPN ayarının nasıl uygulanacağı ve ortaya çıkan son kullanıcı deneyimi hakkında genel bir akış sunar:
 
 
@@ -49,11 +50,11 @@ Bu yapılandırma bir üçüncü taraf MDM çözümü tarafından yönetilen cih
 
 2.  3. ve 4. adımlarda açıklanan ayarı kullanarak, **üçüncü taraf MDM çözümünüz aracılığıyla** yönetilmesini istediğiniz uygulamaları ve e-posta profilini dağıtın.
 
-3.  Uygulamayı şu yapılandırma ayarlarıyla dağıtın: key=IntuneMAMUPN, Value=<kullanıcıadı@şirket.com> [örnek: ‘IntuneMAMUPN’, ‘alikara@microsoft.com’]
+3.  Uygulamayı şu uygulama yapılandırma ayarları ile dağıtın: key=IntuneMAMUPN, Value=<username@company.com> [örnek: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
 4.  Birlikte açma yönetimi ilkesini kayıtlı cihazlara dağıtın.
 
-### Son kullanıcı deneyimi örneği
+### <a name="example-end-user-experience"></a>Son kullanıcı deneyimi örneği
 
 1.  Son kullanıcı cihaza Microsoft Word uygulamasını yükler.
 
@@ -70,11 +71,11 @@ Bu yapılandırma bir üçüncü taraf MDM çözümü tarafından yönetilen cih
 
 6.  Veri aktarımı başarılı olmuştur ve belge, uygulamada şirket kimliği olarak etiketlenmiştir. Ayrıca, veriler iş bağlamında ele alınır ve ilke ayarları buna göre uygulanır.
 
-### Ayrıca bkz.
-[Microsoft Intune ile mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+### <a name="see-also"></a>Ayrıca bkz.
+[Microsoft Intune ile mobil uygulama yönetimi ilkeleri kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

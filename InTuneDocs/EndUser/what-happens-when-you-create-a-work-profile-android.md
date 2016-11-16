@@ -2,7 +2,8 @@
 title: "İş profili oluşturduğunuzda ne olur? | Microsoft Intune"
 description: "Android cihazının nasıl şifreleneceği açıklanır"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ad24422cd2708eb4fa59bb96d9f39b7a6444219b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 
 
 ---
 
 
-# İş profili oluşturduğunuzda ne olur?
+# <a name="what-happens-when-you-create-a-work-profile"></a>İş profili oluşturduğunuzda ne olur?
 
-Bir iş profili, cihazınızda ayarladığınız, iş veya okul e-postalarınıza, uygulamalarınıza ve dosyalarınıza erişmenize olanak sağlayan bir şeydir.
+Bir iş profili, iş veya okul e-postalarınızı, uygulamalarınızı ve dosyalarınızı kişisel verilerinizden ayrı tutmak için cihazınızda kurduğunuz bir profildir.
 
 Bir iş profili oluşturduğunuzda:
 
-- BT yöneticiniz, cihazınızdaki kişisel uygulamalarınızı veya verilerinizi değil, yalnızca iş ile ilgili uygulamaları, ayarları ve yapılandırmaları yönetebilir.
+- BT yöneticiniz, cihazınızdaki kişisel uygulamalarınızı veya verilerinizi değil, yalnızca iş ile ilgili e-postaları, uygulamaları, ayarları ve verileri yönetebilir.
 
 - Play Store for Work’ten iş uygulamaları alırsınız. Kişisel uygulamalar almak için normalde kişisel uygulamalarınızı almak için kullandığınız Google Play Store’a gitmeye devam edersiniz. BT yöneticisi kişisel uygulamalarınızı göremez veya yönetemez.
 

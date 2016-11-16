@@ -13,65 +13,81 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba9ba203c9ec173dafd1d6f9e4828d4a8a51e1ef
-ms.openlocfilehash: 136dd127c5e0f1784746b973ebc5594573f07925
+ms.sourcegitcommit: ed1008c786285821c608a8404805c6615c60507f
+ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 
 ---
 
-# Microsoft Intune Uygulama SDK’sını Kullanmaya Başlama
+# <a name="getting-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını Kullanmaya Başlama
 
 Bu Başlangıç Kılavuzu, mobil uygulamanızı Microsoft Intune ile Mobil Uygulama Yönetimi için hızlı bir şekilde etkinleştirmenize yardımcı olur. İlk olarak [Intune Uygulama SDK’sına genel bakış](intune-app-sdk.md) bölümünde açıklanan Intune Uygulama SDK’sı avantajlarını öğrenmeniz faydalı olabilir.
 
 Bu kılavuzda, Microsoft Intune ile uygulamanızdaki mobil uygulama yönetimini etkinleştirmeniz için gereken önemli adımlar anlatılmaktadır. Intune Uygulama SDK'sı platformlar genelinde benzer senaryoları destekler ve BT yöneticilerine platformlar genelinde tutarlı bir deneyim sağlamak amacıyla tasarlanmıştır. Ancak, platform sınırlamaları nedeniyle bazı özelliklerin desteklenmesi konusunda küçük farklılıklar vardır.
 
-# Başlarken
+# <a name="getting-started"></a>Başlarken
 
-## Mağaza uygulamanızı Microsoft’a kaydetme
+## <a name="register-your-store-app-with-microsoft"></a>Mağaza uygulamanızı Microsoft’a kaydetme
 
 **Uygulamanız şirketinizin dahili uygulamasıysa ve genel kullanıma açık bir uygulama mağazasına sunulmayacaksa**:
 
-Uygulamanızı kaydetmeniz **gerekmez**. BT yöneticisi, dahili iş kolu uygulamaları için Microsoft Intune kullanarak uygulamayı dahili olarak dağıtır. Intune, uygulamanın SDK ile oluşturulduğunu algılar ve BT yöneticisinin buna MAM ilkesi ayarları uygulamasına izin verir. [SDK ile iOS veya Android mobil uygulamanızı MAM için etkinleştirme](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk) bölümüne geçebilirsiniz.
+Uygulamanızı kaydetmeniz **gerekmez**. BT yöneticisi, uygulamayı dahili iş kolu uygulamaları için içeriden dağıtır. Intune, uygulamanın SDK ile oluşturulduğunu algılar ve BT yöneticisinin buna MAM ilkesi ayarları uygulamasına izin verir. [SDK ile iOS veya Android mobil uygulamanızı MAM için etkinleştirme](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk) bölümüne geçebilirsiniz.
 
 **Uygulamanız Apple App Store veya Google Play gibi bir genel uygulama mağazasında yayınlanacaksa**: 
 
-Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz **gerekir**. BT yöneticileri, kaydolduktan sonra Intune MAM ilkesi ayarlarını bir Intune uygulama iş ortağı olarak listelenen uygulamaya uygulayabilir. Kayıt tamamlanıp Microsoft Intune ekibi tarafından onaylanana kadar, Intune yöneticilerinin uygulamanızın ayrıntılı bağlantısına MAM ilkesi uygulama seçeneği olmaz. Microsoft, uygulamanızı [Microsoft Intune iş ortakları sayfasına](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) da ekler ve burada uygulamanın Microsoft Intune MAM ilkesini desteklediğini göstermek için uygulamanın simgesi görüntülenir.
+Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz **gerekir**. BT yöneticileri, kaydolduktan sonra Intune MAM ilkesi ayarlarını bir Intune uygulama iş ortağı olarak listelenen uygulamaya uygulayabilir. Kayıt tamamlanıp Microsoft Intune ekibi tarafından onaylanana kadar, Intune yöneticilerinin uygulamanızın ayrıntılı bağlantısına MAM ilkesi uygulama seçeneği olmaz. Microsoft, uygulamanızı [Microsoft Intune iş ortakları sayfasına](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) da ekler ve burada uygulamanın Microsoft Intune MAM ilkesini desteklediğini göstermek için uygulamanın simgesi görüntülenir.
 
-Kayıt işlemine başlamak için **Microsoft Intune İş Ortağı Sözleşmesi**’ni [gözden geçirin ve imzalayın](https://connect.microsoft.com/ConfigurationManagervnext/Survey/Survey.aspx?SurveyID=17806). Bu sözleşmede, şirketinizin bir Microsoft Intune uygulama iş ortağı olmadan önce kabul etmesi gereken koşullar açıklanır. Bu belgeyi görüntüleyebilmek için oturum açmanız gerekir. Sözleşmeyi, Intune Uygulama SDK'sı Microsoft Connect sitesindeki Anketler sekmesinin altında veya burada bulabilirsiniz. Sizden ayrıca uygulamanın adı, şirketinizin adı ve uygulamanızın Google veya iTunes mağazasındaki ayrıntılı bağlantısı istenir.
+Kayıt işlemine başlamak için **[Microsoft Intune İş Ortağı Anketi](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)**’ni doldurun. 
 
-![Microsoft Connect](../media/microsoft-connect.png)
+Microsoft size ulaşmak ve kayıt işlemine devam etmek için anket yanıtlarınızda listelenen e-posta adresini (veya adreslerini) kullanır. Ayrıca, herhangi bir sorumuz olursa sizinle iletişim kurmak için kayıt e-posta adresinizi kullanırız.
 
-Kaydın talebinin alındığını onaylamak ve kayıt işlemini tamamlamak için kayıt e-posta adresiniz kullanılır. Ayrıca, herhangi bir sorumuz olursa sizinle iletişim kurmak için kayıt e-posta adresinizi kullanırız.
+> [!NOTE]
+> Yukarıdaki form ve Microsoft Intune ekibi ile yapılan e-posta yazışmaları aracılığıyla toplanan tüm bilgiler [Microsoft Gizlilik Bildirimi](https://www.microsoft.com/en-us/privacystatement/default.aspx)’ne uygun olacaktır.
 
 **Kayıt işleminde beklenmesi gerekenler**: 
 
-Siz formu gönderdikten sonra Microsoft, talebin başarıyla alındığını onaylamak veya kaydı tamamlamak amacıyla ek bilgi istemek için kayıt e-posta adresiniz üzerinden sizinle iletişim kurar. Ayrıca, uygulamanız Microsoft Intune’a başarıyla kaydedildiğinde ve Microsoft Intune iş ortakları sitesinde gösterildiğinde de sizinle iletişim kurulur. Bilgilerin alındığı onaylandıktan sonra uygulamanızın ayrıntılı bağlantısı sonraki aylık Intune Hizmeti güncelleştirmesine dahil edilir. Örneğin kayıt bilgileri Temmuz'da tamamlanmışsa uygulamanın ayrıntılı bağlantısı Ağustos ayının ortalarında desteklenecektir. Mağaza uygulamanızın ayrıntılı bağlantısı gelecekte değişirse uygulamanızı yeniden kaydetmeniz gerekir. Ayrıca, uygulamanızı Intune Uygulama SDK'sının yeni bir sürümüyle güncelleştirirseniz bunu bize bildirmeniz gerekir.
+1. Siz anketi gönderdikten sonra Microsoft, talebin başarıyla alındığını onaylamak veya kaydı tamamlamak amacıyla ek bilgi istemek için kayıt e-posta adresiniz üzerinden sizinle iletişim kurar. 
+2. Gerekli tüm bilgileri sizden aldıktan sonra, imzalamanız için Microsoft Intune Uygulama İş Ortağı Sözleşmesi’ni size göndeririz. Bu sözleşmede, şirketinizin bir Microsoft Intune uygulama iş ortağı olmadan önce kabul etmesi gereken koşullar açıklanır. 
+3. Uygulamanız Microsoft Intune hizmetine başarıyla kaydedildiğinde ve [Microsoft Intune iş ortakları](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) sitesinde gösterildiğinde size bildirilir. 
+4. Son olarak, uygulamanızın ayrıntılı bağlantısı bir sonraki aylık Intune Hizmeti güncelleştirmesine eklenir. Örneğin kayıt bilgileri Temmuz'da tamamlanmışsa uygulamanın ayrıntılı bağlantısı Ağustos ayının ortalarında desteklenecektir. 
 
-**Not**: Yukarıdaki form ve Intune ekibi ile yapılan e-posta yazışmaları aracılığıyla toplanan tüm bilgiler [Microsoft Gizlilik Bildirimi](https://www.microsoft.com/en-us/privacystatement/default.aspx)’ne uygun olacaktır.
+Mağaza uygulamanızın ayrıntılı bağlantısı gelecekte değişirse uygulamanızı yeniden kaydetmeniz gerekir. Ayrıca, uygulamanızı Intune Uygulama SDK'sının yeni bir sürümüyle güncelleştirirseniz bunu lütfen bize bildirin.
 
-## SDK dosyalarını indirme
 
-iOS ve Android için Intune Uygulama SDK'ları bir Microsoft GitHub hesabında barındırılır. Aşağıdaki genel depolar sırasıyla iOS ve Android için SDK dosyalarını içerir:
+
+## <a name="download-the-sdk-files"></a>SDK dosyalarını indirme
+
+Yerel iOS ve Android için Intune Uygulama SDK'ları bir Microsoft GitHub hesabında barındırılır. Aşağıdaki genel depolar sırasıyla iOS ve Android için SDK dosyalarını içerir:
 
 * [iOS için Intune Uygulama SDK'sı](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Android için Intune Uygulama SDK'sı](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
+**Uygulamanız bir Xamarin veya Cordova uygulaması ise, lütfen aşağıdaki geliştirici araçlarını kullanın**:
+
+* [Intune Uygulama SDK’sı Xamarin Bileşeni](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Intune Uygulama SDK’sı Cordova Eklentisi](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
+
 Depolarımızdan çatallama ve çekme için kullanabileceğiniz bir GitHub hesabı oluşturmanız önerilir. GitHub, geliştiricilerin ürün ekibimiz ile iletişim kurmasına, soru sorup hızlı yanıtlar almasına, sürüm notlarını görüntülemesine ve Microsoft'a geri bildirim sağlamasına olanak tanır. GitHub hesabı ve depolar hakkındaki sorularınız için msintuneappsdk@microsoft.com adresine başvurun.
 
-## SDK ile iOS veya Android mobil uygulamanızı MAM için etkinleştirme
 
-Intune Uygulama SDK'sını iOS uygulamanızla tümleştirmek için aşağıdakiler gerekir: 
+
+
+
+## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>SDK ile iOS veya Android mobil uygulamanızı MAM için etkinleştirme
+
+Intune Uygulama SDK'sını yerel iOS uygulamanızla tümleştirmek için aşağıdakiler gerekir: 
 
 * **[iOS için Intune Uygulama SDK’sı Geliştirici Kılavuzu](intune-app-sdk-ios.md)**: Bu belgede mobil iOS uygulamanızı Intune Uygulama SDK’sı ile etkinleştirme adımları anlatılır. 
 
 
-Intune Uygulama SDK'sını Android uygulamanızla tümleştirmek için aşağıdakiler gerekir:
+Intune Uygulama SDK'sını yerel Android uygulamanızla tümleştirmek için aşağıdakiler gerekir:
 
 * **[Android için Intune Uygulama SDK’sı Geliştirici Kılavuzu](intune-app-sdk-android.md)**: Bu belgede, mobil Android uygulamanızı Intune Uygulama SDK’sı ile etkinleştirme adımları anlatılır. 
 
+Intune Uygulaması SDK Xamarin Bileşeni ve Intune Uygulaması SDK Cordova Eklentisi belgeleri, ilgili GitHub depoları içinde bulunabilir. 
 
 
-## Uygulamanızda Telemetriyi yapılandırma
+## <a name="configuring-telemetry-for-your-app"></a>Uygulamanızda Telemetriyi yapılandırma
 
 Microsoft Intune, uygulamanızdaki kullanım istatistikleri hakkında veri toplar.
 
@@ -81,7 +97,7 @@ Microsoft Intune, uygulamanızdaki kullanım istatistikleri hakkında veri topla
 
 * **Android için Intune Uygulama SDK’sı**: Telemetri verileri SDK aracılığıyla günlüğe kaydedilmez.
 
-## MAM özellikli uygulamanızı Microsoft Intune ile test etme
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>MAM özellikli uygulamanızı Microsoft Intune ile test etme
 
 iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek için gerekli adımları tamamladıktan sonra, son kullanıcı ile BT yöneticisi için tüm uygulama yönetimi ilkelerinin etkinleştirildiğinden ve çalıştığından emin olmanız gerekir. Tümleşik uygulamanızı sınamak için aşağıdakiler gerekir:
 
@@ -96,6 +112,6 @@ iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek içi
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

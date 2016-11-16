@@ -2,9 +2,10 @@
 title: "Cihazınızda gerekli bir sertifika eksik | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +15,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 9a763e13818ec5c1708d121125cadd37e25e3193
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 27b3e3d4aefade368d900df95454c3d02e37bed4
 
+<<<<<<< HEAD
 
 ---
 
@@ -102,4 +104,177 @@ Yukarıda gösterilenle aynı "eksik sertifika" iletisini görüyorsanız ve yuk
 
 <!--HONumber=Sep16_HO3-->
 
+||||||| merged common ancestors
+
+---
+
+
+# Cihazınızda gerekli bir sertifika eksik
+
+
+## Cihazınızda, çoğunlukla telefonunuzda yüklü olarak gelen bir sertifika eksik
+Android cihazınız Intune’a kayıtlı değilse ve genellikle telefonunuzda yüklü olarak gelen sertifika, cihazınızda bulunmuyorsa, Android Şirket Portalı uygulamasında oturum açamazsınız. Oturum açmaya çalıştığınızda şu iletiyi görürsünüz:
+
+![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
+
+Bu sorunu gidermek ve gerekli sertifikayı edinmek için:
+
+1.  Bir tarayıcıda bu [Digicert sertifika sayfasına](https://www.digicert.com/digicert-root-certificates.htm) gidin.
+
+2.  Baltimore CyberTrust Kök sertifikasını (https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt) bulun ve indirin.
+
+3.  Bildirimlerinizi açmak için ekranın üst kısmından aşağıya doğru çekin ve bildirim listesinde **BaltimoreCyberTrustRoot.crt**’ye dokunun.
+
+4.  **Sertifikayı Adlandır** iletişim kutusunda varsayılan sertifika adını kabul edin.
+
+5. **Kimlik Bilgisi Kullanımı**’nın **VPN ve uygulamalar için kullanılır** olarak ayarlandığından emin olun ve **Tamam**’a dokunun.
+
+    ![screenshot-certificate-name-dialog-showing-baltimore-certificate-name](./media/andr-cert_install-2-add_cert_name.png)
+
+6. Web tarayıcısını ve Şirket Portalı uygulamasını kapatın.
+
+7. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin.
+
+## Cihazınızda, BT yöneticinizin gerektirdiği bir sertifika eksik
+Android cihazınız Intune’a kayıtlı değilse ve BT yöneticiniz tarafından gerekli olduğu belirtilen bir sertifika cihazınızda bulunmuyorsa, Android Şirket Portalı uygulamasında oturum açamazsınız. Oturum açmaya çalıştığınızda şu iletiyi görürsünüz:
+
+![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
+
+>[!NOTE]
+> Zaten bir "eksik sertifika" iletisi gördüyseniz ve [Cihazınızda, çoğunlukla telefonunuzda yüklü olarak gelen bir sertifika eksik](#your-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone) altında verilen adımları izlediyseniz, sorun değil. O, burada belirtilenden farklı bir ileti ve farklı bir sertifikadır; dolasıyla devam edin ve eksik sertifikayı almak için bu bölümdeki adımları izleyin.
+
+Bu sorunu çözmek ve gerekli sertifikayı almak için, uygulamanız gereken iki ana adım vardır:
+
+- Bir şirket veya okul bilgisayarına bakarak eksik sertifikayı belirleyin.
+- Cihazınızı kullanarak eksik sertifikayı İnternet’ten indirin.
+
+### Bir şirket veya okul bilgisayarına bakarak eksik sertifikayı belirleme
+
+1. Bir bilgisayarda Internet Explorer’ı açın. Bu amaçla kullanabileceğiniz bir bilgisayarınız yoksa, BT yöneticinize başvurun. BT yöneticinizin kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+
+2. [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) gidin ve iş veya okul kimlik bilgilerinizle oturum açın.
+
+3. Tarayıcı adres çubuğunun sağ ucunda, aşağıda gösterildiği gibi asma kilide benzeyen simgeye tıklayın. Asma kilit simgesini görmüyorsanız, durun ve BT yöneticinize başvurun. Kilit simgesi güvenli oturum açtığınız anlamına gelir; dolayısıyla bu simgeyi görmüyorsanız devam etmemelisiniz.
+
+    ![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
+
+4. **Sertifikaları görüntüle**’ye tıklayın.
+
+    ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
+
+5. **Sertifika** iletişim kutusunun **Sertifika yolu** sekmesine tıklayın ve ardından İnternet’ten almanız gereken sertifikayı belirleyin. Size gereken sertifikanın adı, yukarıdaki örnek ekran görüntüsünde vurgulanan sertifikayla aynı konumda olacaktır.
+
+### Eksik sertifikayı Android mobil cihazınıza indirme ve yükleme
+
+1. Bing veya Google gibi bir arama motoru kullanarak, önceki bölümde belirlediğiniz eksik sertifikanın adını arayın. Sertifika, “.crt” veya “.pem” gibi farklı "uzantılarla" bitiyor olabilir.
+
+2. Web sitesinden kök sertifikayı indirin.
+
+3. Sertifika indirildikten sonra, cihazınızda en üstten aşağı doğru sürükleyerek bildirimlerinizi açın ve bildirimler listesinde sertifikanın adına dokunun.
+
+4. Aşağıda gösterilen **Sertifikayı Adlandır** iletişim kutusunda varsayılan sertifika adını kabul edin.
+
+5. **Kimlik Bilgisi Kullanımı**’nın **VPN ve uygulamalar için kullanılır** olarak ayarlandığından emin olun ve **Tamam**’a dokunun.
+
+    ![screenshot-certificate-name-dialog-showing-certificate-name](./media/andr-missing-cert-cert-name.png)
+
+6. Şirket Portalı uygulamasını kapatın.
+
+7. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin.
+
+Yukarıda gösterilenle aynı "eksik sertifika" iletisini görüyorsanız ve yukarıdaki adımları zaten izlediyseniz, bunun anlamı büyük olasılıkla BT yöneticinizin yüklemenize yardımcı olmak için gerekli olduğunu belirttiği bir sertifika daha olduğudur. BT yöneticinize başvurun ve sorunu çözmeye yardımcı olacak adımların bulunduğu bu [bağlantıyı](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) ona verin.
+
+
+
+
+
+<!--HONumber=Sep16_HO3-->
+
+=======
+
+---
+
+
+# <a name="your-device-is-missing-a-required-certificate"></a>Cihazınızda gerekli bir sertifika eksik
+
+
+## <a name="your-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Cihazınızda, çoğunlukla telefonunuzda yüklü olarak gelen bir sertifika eksik
+Android cihazınız Intune’a kayıtlı değilse ve genellikle telefonunuzda yüklü olarak gelen sertifika, cihazınızda bulunmuyorsa, Android Şirket Portalı uygulamasında oturum açamazsınız. Oturum açmaya çalıştığınızda şu iletiyi görürsünüz:
+
+![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
+
+Bu sorunu düzeltmek ve gerekli sertifikayı edinmek için:
+
+1.  Bir tarayıcıda bu [Digicert sertifika sayfasına](https://www.digicert.com/digicert-root-certificates.htm) gidin.
+
+2.  Baltimore CyberTrust Kök sertifikasını (https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt) bulun ve indirin.
+
+3.  Bildirimlerinizi açmak için ekranın üst kısmından aşağıya doğru çekin ve bildirim listesinde **BaltimoreCyberTrustRoot.crt**’ye dokunun.
+
+4.  **Sertifikayı Adlandır** iletişim kutusunda varsayılan sertifika adını kabul edin.
+
+5. **Kimlik Bilgisi Kullanımı**’nın **VPN ve uygulamalar için kullanılır** olarak ayarlandığından emin olun ve **Tamam**’a dokunun.
+
+    ![screenshot-certificate-name-dialog-showing-baltimore-certificate-name](./media/andr-cert_install-2-add_cert_name.png)
+
+6. Web tarayıcısını ve Şirket Portalı uygulamasını kapatın.
+
+7. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin.
+
+## <a name="your-device-is-missing-a-certificate-required-by-your-it-admin"></a>Cihazınızda, BT yöneticinizin gerekli hale getirdiği bir sertifika eksik
+Android cihazınız Intune’a kayıtlı değilse ve BT yöneticiniz tarafından gerekli olduğu belirtilen bir sertifika cihazınızda bulunmuyorsa, Android Şirket Portalı uygulamasında oturum açamazsınız. Oturum açmaya çalıştığınızda şu iletiyi görürsünüz:
+
+![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
+
+>[!NOTE]
+> Zaten bir "eksik sertifika" iletisi gördüyseniz ve [Cihazınızda, genelde telefonunuzda yüklü olarak gelen bir sertifika eksik](#your-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone) altında verilen adımları izlediyseniz sorun yoktur. O, burada belirtilenden farklı bir ileti ve farklı bir sertifikadır; dolasıyla devam edin ve eksik sertifikayı almak için bu bölümdeki adımları izleyin.
+
+Bu sorunu düzeltmek ve gerekli sertifikayı almak için uygulamanız gereken iki temel adım vardır:
+
+- Bir şirket veya okul bilgisayarına bakarak eksik sertifikayı belirleyin.
+- Cihazınızı kullanarak eksik sertifikayı İnternet’ten indirin.
+
+### <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Bir şirket veya okul bilgisayarına bakarak eksik sertifikayı belirleme
+
+1. Bir bilgisayarda Internet Explorer’ı açın. Bu amaçla kullanabileceğiniz bir bilgisayarınız yoksa, BT yöneticinize başvurun. BT yöneticinizin iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın.
+
+2. [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) gidin ve iş veya okul kimlik bilgilerinizle oturum açın.
+
+3. Tarayıcı adres çubuğunun sağ ucunda, aşağıdaki ekran görüntüsünde gösterildiği gibi asma kilide benzeyen simgeyi seçin.
+
+    ![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
+
+    Asma kilit simgesini görmüyorsanız, durun ve BT yöneticinize başvurun. Kilit simgesi güvenli oturum açtığınız anlamına gelir; dolayısıyla bu simgeyi görmüyorsanız devam etmemelisiniz.
+
+4. **Sertifikaları görüntüle**’yi seçin.
+
+    ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
+
+5. **Sertifika** iletişim kutusunda **Sertifika yolu** sekmesini seçin ve ardından İnternet’ten almanız gereken sertifikayı belirleyin. Size gereken sertifikanın adı, önceki örnek ekran görüntüsünde vurgulanan sertifikayla aynı konumda olacaktır.
+
+### <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Eksik sertifikayı Android mobil cihazınıza indirme ve yükleme
+
+1. Bing veya Google gibi bir arama motoru kullanarak, önceki bölümde belirlediğiniz eksik sertifikanın adını arayın. Sertifika, “.crt” veya “.pem” gibi farklı "uzantılarla" bitiyor olabilir.
+
+2. Web sitesinden kök sertifikayı indirin.
+
+3. Sertifika indirildikten sonra, cihazınızda en üstten aşağı doğru sürükleyerek bildirimlerinizi açın ve bildirimler listesinde sertifikanın adına dokunun.
+
+4. Aşağıdaki ekran görüntüsünde gösterilen **Sertifikayı Adlandır** iletişim kutusunda varsayılan sertifika adını kabul edin.
+
+5. **Kimlik Bilgisi Kullanımı**’nın **VPN ve uygulamalar için kullanılır** olarak ayarlandığından emin olun ve **Tamam**’a dokunun.
+
+    ![screenshot-certificate-name-dialog-showing-certificate-name](./media/andr-missing-cert-cert-name.png)
+
+6. Şirket Portalı uygulamasını kapatın.
+
+7. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin.
+
+Az önce gösterilenle aynı "eksik sertifika" iletisini görüyorsanız ve yordamı zaten izlediyseniz, büyük olasılıkla BT yöneticinizin yüklemenize yardımcı olması gereken bir sertifika daha vardır. BT yöneticinize başvurun ve sorunu düzeltmeye yönelik adımları içeren [Android sertifika sorunları](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) bağlantısını verin.
+
+
+
+<!--HONumber=Oct16_HO2-->
+
+>>>>>>> 6cde1313f88456ecfb96a6dc6f037517638c1519
 

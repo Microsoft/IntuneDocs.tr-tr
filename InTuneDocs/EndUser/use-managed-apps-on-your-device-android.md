@@ -3,6 +3,7 @@ title: "Android cihazınızdaki yönetilen uygulamaları kullanma | Microsoft In
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/28/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
 
 # Android cihazınızdaki yönetilen uygulamaları kullanma
 
-Yönetilen uygulamalar, BT yöneticinizin ilgili uygulamada erişebildiğiniz şirket verilerini korumak üzere yapılandırabildiği uygulamalardır. Android cihazınızdaki yönetilen bir uygulamada bulunan şirket verilerine eriştiğinizde uygulamanın beklediğinizden biraz farklı çalıştığını fark edebilirsiniz. Örneğin, korunan şirket verilerini kopyalayıp yapıştıramayabilir veya bu verileri belirli konumlara kaydedemeyebilirsiniz.
+Yönetilen uygulamalar, BT yöneticinizin ilgili uygulamada erişebildiğiniz şirket verilerini korumak üzere ayarlayabildiği uygulamalardır. Android cihazınızdaki yönetilen bir uygulamada bulunan şirket verilerine eriştiğinizde uygulamanın beklediğinizden biraz farklı çalıştığını fark edebilirsiniz. Örneğin, korunan şirket verilerini kopyalayıp yapıştıramayabilir veya bu verileri belirli konumlara kaydedemeyebilirsiniz.
 
 Ayrıca, günlük görevlerinizi yapmanıza imkan tanırken şirket verilerinizi korumayı sürdürmek için cihazınızda farklı yönetilen uygulamalar birlikte çalışabilir. Örneğin, yönetilen bir uygulamada bir şirket dosyası açarsanız ve bu dosyayı görüntülemek için başka bir yönetilen uygulama gerekli olursa, dosyayı görüntülemenizi sağlayan yönetilen uygulama otomatik olarak açılır. Gerekli bir uygulama kullanılabilir değilse, belge açma veya yönetilen bir belgeden bir web bağlantısına erişme gibi bazı eylemler gerçekleştirilemeyebilir.
 
@@ -69,14 +70,12 @@ BT bölümünüzün yönetebileceği bazı ortak uygulamalar şunlardır:
 
 -   Intune AV player
 
--   Microsoft Word, Excel, PowerPoint
+-   Microsoft Word, Excel ve PowerPoint
 
 Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöneticinizle iletişim kurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

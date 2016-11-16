@@ -1,8 +1,9 @@
 ---
 title: "SDK’yı kullanarak uygulamaları MAM için etkinleştirme | Microsoft Intune"
-description: 
+description: "Bu konuda, neden Intune SDK kullanmanız gerektiğine yönelik hızlı bir genel bakış sunulur."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eec08a92ff38f55ca04e9c1822c041e8bd0273fd
-ms.openlocfilehash: 5c7f25b31288a112fbfb1744c061c4cc2eb73e49
+ms.sourcegitcommit: 37e12d1d78f40acb616ad5762eeb5f034ecc0081
+ms.openlocfilehash: 57b7cefce3715568b77a8c16a857a16434d72821
 
 
 ---
 
 # SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme
-Intune’un İOS veya Android mobil uygulamalarınızdaki bazı özellikleri yönetmesini sağlamak için Microsoft Intune Uygulama SDK’sını kullanın. Uygulamanız etkinleştirildikten sonra, uygulamaya ilkeleri dağıtabilirsiniz. Bu ilkeler, şirket verilerini korumak için söz konusu özellikleri kullanır. SDK ile uygulayabileceğiniz koruma türleri örnekleri:
+Intune’un iOS veya Android uygulamalarınızdaki bazı özellikleri yönetmesini sağlamak için Microsoft Intune Uygulama SDK’sını kullanın. Uygulamanız etkinleştirildikten sonra, uygulamaya ilkeleri dağıtabilirsiniz. Bu ilkeler, şirket verilerini korumak için söz konusu özellikleri kullanır. SDK ile uygulayabileceğiniz koruma türleri örnekleri:
 
 -   Kullanıcıların şirket belgelerini buluta kopyalamasını engelleme
 
@@ -39,6 +40,6 @@ SDK’ya genel bakış için [Genel bakış](/intune/develop/intune-app-sdk) say
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

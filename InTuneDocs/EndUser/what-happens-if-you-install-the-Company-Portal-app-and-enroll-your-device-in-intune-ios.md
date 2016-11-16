@@ -2,9 +2,10 @@
 title: "Şirket Portalı uygulamasını yüklerseniz ve iOS veya Mac OS X cihazınızı Intune’a kaydederseniz ne olur? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,19 +26,19 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 Şirket Portalı uygulamasını yüklediğinizde ve iOS veya Mac OS X cihazınızı Intune’a kaydettiğinizde, Şirket Portalı uygulamasını kullanarak şunları yapabilirsiniz:
 
--   Şirket ağına, e-postalarınıza ve iş dosyalarınıza erişebilirsiniz
+-   Şirket ağına, e-postalarınıza ve iş dosyalarınıza erişebilirsiniz.
 
--   Şirket Portalı üzerinden şirket uygulamalarını alabilirsiniz
+-   Şirket Portalı üzerinden şirket uygulamalarını alabilirsiniz.
 
--   Telefonunuz kaybolur veya çalınırsa uzaktan fabrika ayarlarına sıfırlayabilirsiniz
+-   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına uzaktan sıfırlayabilirsiniz.
 
--   Şirket e-posta hesabınızı otomatik olarak yapılandırabilirsiniz
+-   Şirket e-posta hesabınızı otomatik olarak oluşturabilirsiniz.
 
 Cihazınızı Intune’a kaydettikten sonra, BT yöneticinize cihazınızdaki şirket bilgilerinin korunmasına yardımcı olmak için cihazınızı yönetme izni vermiş olursunuz.
 
 **BT’nin göremedikleri**
 
--   Arama ve Web geçmişi
+-   Arama ve web geçmişi
 
 -   Konum
 
@@ -85,16 +86,16 @@ Cihazınız kaydolduğunda, BT yöneticiniz şunları yapabilir:
 
 -   iCloud'a Fotoğraf Akışını etkinleştirebilir veya devre dışı bırakabilir.
 
--   Cihazınızda veri dolaşımını etkinleştirebilir veya devre dışı bırakabilir. Veri dolaşımına izin verildiyse, dolaşım ücrete tabi olabilir.
+-   Cihazınızda veri dolaşımını etkinleştirebilir veya devre dışı bırakabilir. Veri dolaşımına izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
 
--   Cihazınızda ses dolaşımını etkinleştirebilir veya devre dışı bırakabilir. Ses dolaşımına izin verildiyse, dolaşım ücrete tabi olabilir.
+-   Cihazınızda ses dolaşımını etkinleştirebilir veya devre dışı bırakabilir. Ses dolaşımına izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
 
--   Dolaşım modundayken, cihazınızda otomatik dosya eşitlemesini etkinleştirebilir veya devre dışı bırakabilir. Otomatik dosya eşitlemesine izin verildiyse, dolaşım ücrete tabi olabilir.
+-   Dolaşım modundayken, cihazınızda otomatik dosya eşitlemesini etkinleştirebilir veya devre dışı bırakabilir. Otomatik dosya eşitlemesine izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
 
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 
