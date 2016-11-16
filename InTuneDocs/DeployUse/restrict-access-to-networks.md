@@ -2,10 +2,10 @@
 title: "Cisco ISE ile ağlara erişimi kısıtlama| Microsoft Intune"
 description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olmasını sağlamak için, Intune ile Cisco ISE kullanabilirsiniz."
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 10/05/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,23 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
+ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
+ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
 
 
 ---
 
-# Microsoft Intune ile Cisco ISE kullanma
+# <a name="using-cisco-ise-with-microsoft-intune"></a>Microsoft Intune ile Cisco ISE kullanma
 Intune’un Cisco Identity Services Engine (ISE) ile tümleştirmesi, Intune cihaz kaydı ve uyum durumunu kullanarak ISE ortamınızda ağ ilkeleri yazmanızı sağlar. Bu ilkeleri kullanarak, şirket ağınıza erişimin, Intune tarafından yönetilen ve Intune ilkeleriyle uyumlu cihazlarla kısıtlandığından emin olabilirsiniz.
 
-## Yapılandırma adımları
+## <a name="configuration-steps"></a>Yapılandırma adımları
 
 Bu tümleştirmeyi etkinleştirmek için, Intune kiracınızda herhangi bir ayar yapmanız gerekmez. Intune kiracınıza erişebilmesi için Cisco ISE sunucunuza izinler sağlamanız gerekir. Bu yapıldıktan sonra, kurulumun kalan bölümü Cisco ISE sunucunuzda gerçekleştirilir. Bu makalede, ISE sunucunuza, Intune kiracınıza erişim izinleri sağlamayla ilgili yönergeler sağlanır.
 
-### 1. Adım: Sertifikaları yönetme
+### <a name="step-1-manage-the-certificates"></a>1. Adım: Sertifikaları yönetme
 Azure Active Directory (Azure AD) konsolundan sertifikayı dışarı aktardıktan sonra ISE konsolunun Güvenilen Sertifikalar deposuna aktarın:
 
-#### Internet Explorer 11
+#### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
    a. Internet Explorer'ı yönetici olarak çalıştırın ve Azure AD konsoluna oturum açın.
@@ -47,7 +47,7 @@ Azure Active Directory (Azure AD) konsolundan sertifikayı dışarı aktardıkta
 
    g. ISE konsolunda, Intune sertifikasını (dışarı aktardığınız dosya) **Güvenilen Sertifikalar** deposuna aktarın.
 
-#### Safari
+#### <a name="safari"></a>Safari
 
  a. Azure AD konsolunda oturum açın.
 
@@ -64,18 +64,19 @@ b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
 > Sertifikanın son kullanma tarihini denetleyin, bunun süresi dolduğunda yeni bir sertifika dışarı aktarmanız ve içeri aktarmanız gerekecektir.
 
 
-### ISE’den otomatik olarak imzalanan sertifika alma 
+### <a name="obtain-a-selfsigned-cert-from-ise"></a>ISE’den otomatik olarak imzalanan sertifika alma 
 
 1.  ISE konsolunda, **Yönetim** > **Sertifikalar** > **Sistem Sertifikaları** > **Otomatik Olarak İmzalanan Sertifika Oluştur**’a gidin.  
 2.       Otomatik olarak imzalanan sertifikayı dışarı aktarın.
-3. Metin düzenleyicisinde, dışarı aktarılan sertifikayı düzenleyin: [comment]: <> I'd rather not put a period at the end of these two statements, I think it could be confusing.
+3. Bir metin düzenleyicide, dışa aktarılan sertifikayı düzenleyin:
+
  - ** -----BEGIN CERTIFICATE-----** metnini silin
  - ** -----END CERTIFICATE-----** metnini silin
  
 Tüm metnin tek bir satırda olduğundan emin olun
 
 
-### 2. Adım: Azure AD kiracınızda ISE için uygulama oluşturma
+### <a name="step-2-create-an-app-for-ise-in-your-azure-ad-tenant"></a>2. Adım: Azure AD kiracınızda ISE için uygulama oluşturma
 1. Azure AD konsolunda, **Uygulamalar** > **Uygulama Ekleme** > **Kuruluşumun geliştirmekte olduğu bir uygulama ekle**’yi seçin.
 2. Uygulama için bir ad ve URL belirtin. URL, şirketinizin web sitesi olabilir.
 3. Uygulama bildirimini (bir JSON dosyası) indirin.
@@ -99,7 +100,7 @@ Tüm metnin tek bir satırda olduğundan emin olun
 |Oauth 2.0 Belirteç uç noktası|Belirteci Veren URL|
 |Kodunuzu, İstemci kimliğinizle güncelleştirme|İstemci Kimliği|
 
-### 4. Adım: ISE’nin otomatik olarak imzalanan sertifikasını Azure AD'de oluşturduğunuz ISE uygulamasına yükleyin
+### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>4. Adım: ISE’nin otomatik olarak imzalanan sertifikasını Azure AD'de oluşturduğunuz ISE uygulamasına yükleyin
 1.     Bir .cer X509 ortak sertifika dosyasından base64 olarak kodlanmış sertifika değerini ve parmak izini alın. Bu örnek PowerShell'i kullanmaktadır:
    
       
@@ -136,7 +137,7 @@ Tüm metnin tek bir satırda olduğundan emin olun
 > KeyCredentials bir koleksiyon olduğundan geçiş senaryoları için birden fazla X.509 sertifikası yükleyebilir veya güvenliğin aşılması senaryolarında sertifikaları silebilirsiniz.
 
 
-### 4. Adım: ISE Ayarlarını Yapılandırma
+### <a name="step-4-configure-ise-settings"></a>4. Adım: ISE Ayarlarını Yapılandırma
 ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın:
   - **Sunucu Türü**: Mobil cihaz Yöneticisi
   - **Kimlik doğrulama türü**: OAuth – İstemci Kimlik Bilgileri
@@ -147,7 +148,7 @@ ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın:
 
 
 
-## Intune kiracınız ve Cisco ISE sunucunuz arasında paylaşılan bilgiler
+## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune kiracınız ve Cisco ISE sunucunuz arasında paylaşılan bilgiler
 Bu tabloda, Intune tarafından yönetilen cihazlar için, Intune kiracınız ve Cisco ISE sunucunuz arasında paylaşılan bilgiler listelenir.
 
 |Özellik|  Açıklama|
@@ -166,7 +167,7 @@ Bu tabloda, Intune tarafından yönetilen cihazlar için, Intune kiracınız ve 
 |lastContactTimeUtc|Cihazın, Intune yönetim hizmetiyle son denetlendiği tarih ve saat.
 
 
-## Kullanıcı deneyimleri
+## <a name="user-experience"></a>Kullanıcı deneyimleri
 
 Kullanıcı kayıtsız cihaz kullanarak kaynaklara erişmeye çalıştığında, aşağıda gösterildiği gibi bir kaydetme istemi alır:
 
@@ -182,12 +183,12 @@ Kullanıcı kaydolmayı seçtiğinde, Intune kayıt işlemine yönlendirilir. In
 Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere kullanabileceğiniz, [indirilebilir kayıt yönergeleri grubu](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) da vardır.
 
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 
 [Cisco Kimlik Hizmetleri Altyapısı Yönetici Kılavuzu, Sürüm 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

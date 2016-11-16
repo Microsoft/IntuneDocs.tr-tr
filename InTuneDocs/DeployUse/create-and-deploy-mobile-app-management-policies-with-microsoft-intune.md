@@ -3,6 +3,7 @@ title: "MAM ilkelerini oluşturma ve dağıtma | Microsoft Intune"
 description: "Mobil uygulama yönetimi ilkelerini oluşturmak ve dağıtmak için, bu konu başlığı altında verilen adım adım yönergeleri kullanın."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
-ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e5befdd4925f88d41c454d9c1c36eaf02fdb598d
 
 
 ---
@@ -111,8 +112,9 @@ Yalnızca [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisansları ata
 >[!IMPORTANT]
 > iOS ve Android cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır.  Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
-Son kullanıcılar uygulamaları App store veya Google Play’den indirebilir. MAM’nin cihazdaki şirket verilerini nasıl koruduğu konusunda ayrıntılı yönergeler için, [MAM etkin uygulamalar için son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) konusuna bakın.
-
+Son kullanıcılar uygulamaları App store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.:
+* [Android uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  Mevcut ilkeleri değiştirme
 Mevcut ilkeyi düzenleyebilir ve bunu hedeflenen kullanıcılara uygulayabilirsiniz. Bununla birlikte, mevcut ilkeleri değiştirdiğinizde, uygulamalarda oturum açmış olan kullanıcılar bu değişiklikleri 8 saat boyunca görmez.
 
@@ -165,10 +167,11 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerde
 [Uyumluluğu ve kullanıcı durumunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### Ayrıca bkz.
-[MAM etkin uygulamalar için son kullanıcı deneyimi](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [Android uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

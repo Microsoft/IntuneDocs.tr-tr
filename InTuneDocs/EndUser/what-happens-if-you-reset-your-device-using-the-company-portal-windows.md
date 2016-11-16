@@ -3,6 +3,7 @@ title: "Şirket Portalı’nı kullanarak Windows cihazınızı sıfırlarsanız
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b597e3557ec2c5661490b417e1d0459eb4e8b477
+ms.sourcegitcommit: bdb221d9c52231d31511b29cbdc69985bc0da5b2
+ms.openlocfilehash: 1cc7e4ad5abee16a0e06780b37c23903d196a018
 
 
 ---
@@ -23,20 +24,18 @@ ms.openlocfilehash: b597e3557ec2c5661490b417e1d0459eb4e8b477
 
 # Şirket Portalı’nı kullanarak Windows cihazınızı sıfırlarsanız ne olur?
 
-Şirket Portalı uygulamasını veya [Şirket Portalı web sitesini](reset-your-device-cpwebsite.md) kullanarak Windows cihazınızı sıfırladığınızda, cihazınız fabrika ayarlarına sıfırlanır ve tüm uygulamalar, ayarlar ve kişisel verileriniz de dahil olmak üzere tüm veriler silinir. Her cihazda ne olacağı, aşağıdaki tabloda açıklandığı gibi sahip olduğunuz cihaz türüne ve cihazı nasıl kullandığınıza bağlıdır. Kaybolan ya da çalınan cihazınızı sıfırlamaya ilişkin yönergeler için bkz. [Kaybolan veya çalışan cihazınızı sıfırlama (silme)](reset-erase-your-lost-or-stolen-device-windows.md).
+Şirket Portalı uygulamasını veya [Şirket Portalı web sitesini](reset-your-device-cpwebsite.md) kullanarak Windows cihazınızı sıfırladığınızda, cihazınız fabrika ayarlarına sıfırlanır ve tüm uygulamalar, ayarlar ve kişisel verileriniz de dahil olmak üzere tüm veriler silinir. Her cihazda ne olacağı (aşağıdaki tabloda açıklandığı gibi) sahip olduğunuz cihaz türüne ve cihazı nasıl kullandığınıza bağlıdır. Kaybolan ya da çalınan cihazınızı sıfırlamaya ilişkin yönergeler için bkz. [Kaybolan veya çalışan cihazınızı sıfırlama (silme)](reset-erase-your-lost-or-stolen-device-windows.md).
 
 |Cihaz yapılandırması ve yönetimi|Cihaz türü|
 |---------------------------------------|---------------|
-|Mobil cihazınızı BT yöneticiniz yönetir|**Windows 10 ve Windows Phone 8.1**</br>Cihazınız artık şirket portalında görünmez ve şirket portalı, cihazı üreticinin varsayılan ayarlarına geri döndürmeyi dener. Kişisel verileriniz, uygulamalarınız ve ayarlarınız kaldırılır. <br /><br />**Windows 10 Mobile**: cihazınızın kaydını silmenin tek yolu cihazı sıfırlamaktır.|
-|Cihazınız yalnızca şirket e-postalarına erişebilir|**Windows Phone 8.1**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows 7 veya Windows Vista Bilgisayarlar**<br />Windows 7 veya daha önceki bir sürümünü çalıştıran ve yalnızca e-postalar için kullanılan bir bilgisayarı sıfırlayamazsınız.<br /><br />**Windows 8.1 ve Windows 8 Bilgisayarlar**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız silinir ve kaydedilmemiş e-postalarınız silinir.|
-|Masaüstü ve dizüstü bilgisayarlar|**Windows 8.1 ve Windows 8 Bilgisayarlar**<br />Windows 8 veya Windows 8.1 çalıştıran bilgisayarları yalnızca e-postalar için kullanıldıkları sürece sıfırlayamazsınız.<br /><br />**Windows 7 veya Windows Vista Bilgisayarlar**<br />Windows 7 veya önceki bir sürümünü çalıştıran bilgisayarları sıfırlayamazsınız.|
+|Mobil cihazınızı BT yöneticiniz yönetir|**Windows 10 ve Windows Phone 8.1**</br>Cihazınız artık şirket portalında görünmez ve şirket portalı, cihazı üreticinin varsayılan ayarlarına geri döndürmeyi dener. Kişisel verileriniz, uygulamalarınız ve ayarlarınız kaldırılır. <br /><br />**Windows 10 Mobile**</br>Cihazınızın kaydını silmenin tek yolu cihazı sıfırlamaktır.|
+|Cihazınız yalnızca şirket e-postalarına erişebilir|**Windows Phone 8.1**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows 7 veya Windows Vista**<br />Windows 7 veya daha önceki bir sürümünü çalıştıran ve yalnızca e-postalar için kullanılan bir bilgisayarı sıfırlayamazsınız.<br /><br />**Windows 8.1 ve Windows 8**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız ve kaydedilmemiş e-postalarınız silinir.|
+|Masaüstü ve dizüstü bilgisayarlar|**Windows 8.1 ve Windows 8**<br />Windows 8 veya Windows 8.1 çalıştıran bilgisayarları yalnızca e-postalar için kullanıldıkları sürece sıfırlayamazsınız.<br /><br />**Windows 7 veya Windows Vista**<br />Windows 7 veya önceki bir sürümünü çalıştıran bilgisayarları sıfırlayamazsınız.|
 
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

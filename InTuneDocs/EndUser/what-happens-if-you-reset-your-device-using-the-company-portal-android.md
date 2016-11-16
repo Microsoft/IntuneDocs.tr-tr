@@ -3,6 +3,7 @@ title: "Şirket Portalı’nı kullanarak Android cihazınızı sıfırlarsanız
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 27d49e53fdd23b82fbbb94d2f285978cb3b52b16
+ms.sourcegitcommit: 3f531adc042677d12c64e2efb4f8e3401e4b5bd4
+ms.openlocfilehash: ff0dca484b7e7a75dcaff69c86985510ee17277e
 
 
 ---
@@ -23,20 +24,18 @@ ms.openlocfilehash: 27d49e53fdd23b82fbbb94d2f285978cb3b52b16
 
 # Şirket Portalı’nı kullanarak Android cihazınızı sıfırlarsanız ne olur?
 
-Android cihazınızı sıfırlamak için Şirket Portalı’nı kullandığınızda, cihazınızdaki tüm uygulamalar, ayarlar ve kişisel veriler silinir; cihazınız fabrika varsayılan ayarlarına geri döndürülür.
+Android cihazınızı sıfırlamak için Şirket Portalı’nı kullandığınızda, cihazınızdaki tüm uygulamalar, ayarlar ve kişisel veriler silinir. Bu sıfırlama, cihazınızı varsayılan fabrika ayarlarına döndürür.
 
-Samsung Knox cihazınız varsa, Şirket Portalı’ndan **cihaz kaldırma** seçeneğini kullanarak "seçmeli temizleme" yapabilirsiniz. Seçmeli temizleme yalnızca aşağıdakileri kaldırır:
+Samsung Knox cihazınız varsa Şirket Portalı’ndan **cihaz kaldırma** seçeneğini kullanarak "seçmeli silme" yapabilirsiniz. Seçmeli temizleme yalnızca aşağıdakileri kaldırır:
 
-- BT yöneticinizin kullanımınıza sunduğu iş uygulamaları
-- E-posta, VPN ve WiFi
-- BT yöneticinizin bazı ayarları zorunlu tutma becerisi
+- BT yöneticinizin kullanımınıza sunduğu iş uygulamaları.
+- E-posta, VPN ve Wi-Fi.
+- BT yöneticinizin bazı ayarları zorunlu tutma yetisi.
 
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

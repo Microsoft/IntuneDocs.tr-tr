@@ -3,8 +3,9 @@ title: "Android cihazınızda Lookout for Work uygulamasını yüklemeniz istend
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,15 +13,17 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
-ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
 
 ---
 
 # Lookout for Work uygulamasını yüklemeniz istendi
 
-Çalışmanıza erişebilmeniz için önce BT yöneticinizin Lookout for Work uygulamasını yüklemenizi sağlaması gerekir. Bu uygulama olası güvenlik tehditlerini bularak cihazınızın korunmasına yardımcı olur.
+İşinize erişebilmeniz için önce BT yöneticinizin Lookout for Work uygulamasını yüklemenizi sağlaması gerekir. Bu uygulama olası güvenlik tehditlerini bularak cihazınızın korunmasına yardımcı olur.
+
+Yükleme ile ilgili sorun yaşıyorsanız, bu konunun sonundaki sorun giderme adımlarını deneyin.
 
 
 **Yapmanız gerekenler:**
@@ -35,11 +38,11 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     ![Lookout for Work’ün cihazınıza erişmesine izin vermek için kabul et’e dokunun](./media/lookout-accept-store-permissions-android.png)
 
-3. Lookout for Work’ü açın ve **Etkinleştir**’e dokunun.
+3. Lookout for Work’ü açın ve **ETKİNLEŞTİR**’e dokunun.
 
     ![Lookout for Work’ü açın ve Etkinleştir’e dokunun](./media/lookout-activate-button-android.png)
 
-4. **Azure Active Directory ile oturum açın** seçeneğine dokunun ve iş veya okul e-postası ve dosyalarına erişirken kullandığınız hesabı girin.
+4. **Azure Active Directory ile oturum açın** seçeneğine dokunun ve ardından iş veya okul e-postası ve dosyalarına erişirken kullandığınız hesabı girin.
 
     ![iş veya okul hesabınızla oturum açın](./media/lookout-sign-in-azure-android.png)
 
@@ -57,11 +60,11 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     ![Lookout for Work’ün cihazınızı nasıl koruduğunu gözden geçirin](./media/lookout-how-it-protects-your-device-android.png)
 
-    Aşağıdaki ekranı gördüğünüzde, bu Lookout’un artık ayarlandığı ve bağlandığı anlamına gelir.
+    Aşağıdaki ekranı gördüğünüzde, Lookout ayarlanmış ve bağlanmış demektir.
 
     ![artık Lookout for Work’e bağlısınız](./media/lookout-you-are-now-connected-android.png)
 
-    Lookout for Work, hemen cihazınızdaki güvenlik tehditlerini denetlemeye başlar. Hiçbir tehdit bulunmazsa, aşağıdaki ekranı görürsünüz.
+    Lookout for Work, cihazınızdaki güvenlik tehditlerini hemen denetlemeye başlar. Hiçbir tehdit bulunmazsa, aşağıdaki ekranı görürsünüz.
 
     ![Lookout for Work hiçbir güvenlik tehdidi bulamadı](./media/lookout-scan-no-threats-found-android.png)
 
@@ -71,13 +74,14 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     Lookout for Work cihazınızda güvenlik tehdidi bulursa, sorunun nasıl çözüleceğini gösteren yönergeleri görürsünüz.
 
+**Yükleme çalışmazsa**
+
+Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle başarısız olabilir. Bu durumda, Lookout for Work’ü el ile Play Store’dan yüklemeyi deneyin: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

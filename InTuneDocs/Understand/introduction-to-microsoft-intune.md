@@ -16,20 +16,20 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
-ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
+ms.sourcegitcommit: b3b46c1025ad0792ed4623656c878c53bd69d6cb
+ms.openlocfilehash: f2f5d901ae3b6ffb298b56eef4ae593842b80cfb
 
 
 ---
 
-# Intune’a giriş
+# <a name="introduction-to-intune"></a>Intune’a giriş
 Microsoft Intune, Microsoft Enterprise Mobility + Security’nin (EMS, eski adı Enterprise Mobility Suite) yönetim koludur. Kurumsal mobil çalışma, çalışanlarınıza tüm cihazlarında daha üretken olma olanağı tanırken kuruluşunuzun bilgilerini de koruma altına almaya yöneliktir.  
 
 EMS üretkenlik, kimlik, erişim denetimi, yönetim ve veri koruması özelliklerini içeren tam bir tümleşik kurumsal mobil çalışma paketidir. Kuruluşunuzda mobil çalışma çözümünü dağıtmak ve çalıştırmak için etkili bir yol sağlar.  
 
 ![Kurumsal mobil çalışma vizyonu resmi](..\media\em-vision.png)
 
-Intune mobil cihazları ve mobil uygulamaları yönetmenize yardımcı olur. Kimlik ve erişim denetimi için Azure Active Directory (Azure AD) ve veri koruma için Azure Rights Management (Azure RMS) ile yakın bir tümleştirmede çalışır.  
+Intune, mobil cihazları ve mobil uygulamaları yönetmenize yardımcı olur. Kimlik ve erişim denetimi için Azure Active Directory (Azure AD) ve veri koruma için Azure Rights Management (Azure RMS) ile yakın bir tümleştirmede çalışır.  
 
 Intune’un çözmenize yardımcı olduğu yaygın iş sorunları:
 
@@ -49,13 +49,13 @@ Bu araçlar, yukarıdaki yaygın iş senaryolarına olanak tanımak için farkl�
 
 Bu belge boyunca, iş senaryolarınızı desteklemek için Intune tarafından sağlanan araçları nasıl kullanacağınızı açıklayacağız.  Ayrıca, bu araçların Office 365, Azure AD, Azure RMS ve Microsoft mobil çalışma paketinin diğer parçalarıyla birlikte kullanılmasını da anlatacağız. Teknolojinin yaygın olarak hangi yollarla kullanıldığı ve sizin ortamınızda nasıl yararlı olabileceği konusuna kapsamlı bir genel bakış sağlayacak, ayrıca bunları uygulama yordamlarını da vereceğiz. Teknolojinin kendisi esnektir ve burada açıkladıklarımızın çok ötesinde, her türlü senaryoya uyarlanabilir.
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 * [Intune’u kullanmanın yaygın yolları](common-ways-to-use-intune.md) hakkında yazılanları okuyun.
 * [30 günlük Intune denemesini](get-started-with-a-30-day-trial-of-microsoft-intune.md) kullanarak ürünle tanışın.
 * Intune’un [teknik gereksinimlerini ve özelliklerini](/intune/get-started/what-to-know-before-you-start-microsoft-intune) derinlemesine öğrenin.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

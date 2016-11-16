@@ -17,7 +17,7 @@
 
 ## [Intune’a geçiş](migrate-to-intune.md)
 
-## [Intune hızlı başlangıç kılavuzu](start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Hızlı başlangıç kılavuzu](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Intune'da oturum açma](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Özel bir etki alanı adı yapılandırma](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [AD’yi eşitleme ve kullanıcıları ekleme](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
@@ -27,6 +27,13 @@
 ### [Şirket Portalı'nı özelleştirme](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Mobil cihazları kaydetme ve uygulama yükleme](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Yapılandırma sonrası görevleri](post-configuration-tasks.md)
+
+## [Hızlı kılavuzlar](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Hızlı kılavuz: Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Hızlı kılavuz: Veri şifreleme ile şirket verilerini koruma](protect-data-encryption.md)
+### [Hızlı kılavuz: Kullanıcılarınıza mobil uygulama yayımlama](publish-mobile-apps-to-users.md)
+### [Hızlı kılavuz: Mobil cihazlarda e-posta yapılandırmasını basitleştirme](simplify-email-configuration-on-mobile-devices.md)
+### [Hızlı kılavuz: Windows kişisel bilgisayarı kötü amaçlı yazılım tehditlerinden koruma](protect-pcs-against-malware-threats.md)
 
 ## [Intune dağıtımlarının aşamaları](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Proje kapsamı](project-scope.md)
@@ -42,6 +49,6 @@
 # [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

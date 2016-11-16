@@ -5,38 +5,38 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffe11b4eb4b0f4c2ffdc831cad9deb30d7180809
-ms.openlocfilehash: 94de65185af64052226985f2c65c7b8a18e2f829
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: bc5d1b429157e6a6b24f4eb319be50b635466317
 
 
 ---
 
-# Microsoft Intune’da kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma
+# <a name="protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune"></a>Microsoft Intune’da kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma
 
 Mobil uygulama yönetimi (MAM) ilkeleri, şirket verilerinin dışarıya sızmasına neden olabilecek eylemleri kısıtlayarak ve uygulama PIN’i gibi veri erişim gereksinimleri uygulayarak şirket verilerinin korunmasına yardımcı olur. iOS ve Android iş kolu uygulamalarına MAM ilkelerini uygulamak için önce Microsoft Intune Uygulama Sarmalama aracıyla uygulamayı sarmalamanız gerekir.  Uygulama sarmalama, temel uygulamada hiçbir değişiklik yapılmasına gerek kalmadan mobil uygulamaya bir yönetim katmanı uygulama işlemidir.  Uygulama sarmalandıktan sonra, buna MAM ilkeleri uygulayabilir ve bunu son kullanıcılarınıza dağıtabilirsiniz.  
 
 Bu konu başlığı altında, **çalışanın sahip olduğu yönetilmeyen cihazlarda** ve **üçüncü taraf bir mobil cihaz yönetimi (MDM) çözümü** tarafından yönetilen cihazlarda erişilen uygulamalara MAM ilkeleri uygulamak için gereken adımlar açıklanır.  **Intune MDM’e kaydedilmiş cihazlarda** çalıştırılan iş kolu uygulamalarınızı hazırlamak için bkz. [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 
-##  1. Adım: Uygulamayı hazırlama
+##  <a name="step-1-prepare-the-app"></a>1. Adım: Uygulamayı hazırlama
 Uygulamaya MAM ilkelerini uygulayabilmek için, önce Microsoft Intune Uygulama Sarmalama aracıyla uygulamayı sarmalamanız gerekir.  Uygulama sarmalama aracını indirme ve kullanma yönergeleri için aşağıdaki sayfalara göz atın:
 
-- [Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını mobil uygulama yönetimi için hazırlama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
+- [Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını mobil uygulama yönetimi için hazırlama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 - [Android uygulamalarını Intune Uygulama Sarmalama Aracı ile mobil uygulama yönetimi için hazırlama](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
 
 >[!IMPORTANT]  
 >Uygulama sarmalama aracının Intune’a kayıtlı olmayan cihazları destekleyen bu sürümü, iOS’ta desteklenir ve Android’de genel önizlemede desteklenir. Aracı iOS için [bu GitHub deposundan](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), Android içinse [bu GitHub deposundan](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) indirebilirsiniz.
 
-## 2. Adım: Uygulamayı ekleme
+## <a name="step-2-add-the-app"></a>2. Adım: Uygulamayı ekleme
 
 İş kolu uygulamanızı MAM ilkeleriyle ilişkilendirmek için, aşağıdaki adımları kullanarak uygulama ayrıntılarını Intune aboneliğinize/kiracılığınıza eklemelisiniz:
 
@@ -51,7 +51,7 @@ Uygulamaya MAM ilkelerini uygulayabilmek için, önce Microsoft Intune Uygulama 
 
   ![Özel uygulama ekle dikey penceresinin ekran görüntüsü ](../media/mam-azure-portal-add-app-details.png) Bu adım benzersiz uygulama listenizi oluşturmaya yardımcı olur.  Sonraki adımda açıklandığı gibi, uygulama kiracınızın MAM ilkesine ilişkin Hedeflenen uygulamalar listesinde de görüntülenir.
 
-## 3. Adım: MAM ilkelerini uygulama
+## <a name="step-3-apply-mam-policies"></a>3. Adım: MAM ilkelerini uygulama
 Uygulama meta verileri hizmete yüklendikten sonra, bu uygulama uygulamalar listesinde gösterilir.  Artık [yeni ilke oluşturabilir veya var olan ilkeyi kullanabilir](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) ve 2. adımda eklediğiniz iş kolu uygulamasına bunu uygulayabilirsiniz.
 
 >[!IMPORTANT]
@@ -59,15 +59,15 @@ Uygulama meta verileri hizmete yüklendikten sonra, bu uygulama uygulamalar list
 
 
   ![Yeni iş kolu uygulamasının gösterildiği Hedeflenen uygulamalar listesi dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-lob-on-targeted-app-list.png)
-## 4. Adım: Uygulamayı dağıtma
+## <a name="step-4-distribute-the-app"></a>4. Adım: Uygulamayı dağıtma
 Uygulamaları son kullanıcılarınıza aşağıdaki yollarla dağıtabilirsiniz:
 * Üçüncü taraf bir MDM çözümüne kayıtlı cihazlar için, uygulamaları MDM çözümünüz aracılığıyla dağıtabilirsiniz.
 * Hiçbir MDM çözümüyle yönetilmeyen cihazlar için, özel bir çözüme ihtiyacınız vardır. Son kullanıcıların uygulamayı cihazlarına indirmeleri ve yüklemeleri gerekir.
 
-## Meta verileri değiştirme
+## <a name="changing-the-metadata"></a>Meta verileri değiştirme
 Uygulamanın adı veya Paket tanımlayıcısı gibi uygulama ayrıntılarını değiştirmeniz gerekiyorsa, [uygulamayı kaldırmalı](#remove-apps) ve yeni meta verilerle [eklemelisiniz](#step-2-add-the-app).
 
-##  Uygulamaları kaldırma
+##  <a name="remove-apps"></a>Uygulamaları kaldırma
 Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz.  Bu işlem uygulamayı listeden kaldırır ve MAM ilkeleriyle ilişkisini kaldırır ama uygulamayı son kullanıcının cihazından kaldırmaz.  
 
 1.  [Azure portalında](https://portal.azure.com/) **Intune mobil uygulama yönetimi > Ayarlar**’a gidin.  **Ayarlar** dikey penceresinde **İş kolu**’nu seçerek var olan uygulamalar listesini açın.  
@@ -82,6 +82,6 @@ Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz.  Bu işlem 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

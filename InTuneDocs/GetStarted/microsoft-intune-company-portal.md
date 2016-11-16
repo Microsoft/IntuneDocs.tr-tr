@@ -3,18 +3,19 @@ title: "Microsoft Intune Şirket Portalı | Microsoft Intune"
 description: "Intune Şirket Portalı’nı ayarlama"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jeffgilb
+ms.reviewer: jve
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7c9fceaae077907480d4c207d56f654d168248a1
+ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
+ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
 
 
 ---
@@ -48,11 +49,18 @@ Kullanıcıların Şirket Portalı’nda yerine getirebilecekleri görevlerden b
 
 Kullanıcıların Şirket Portalı’na erişebilmesi için, önce kullanıcı hesabına [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanma lisansı verilmiş olmalı ve hesabın oturum açma durumu **İzin Verildi** olmalıdır. Aboneliğiniz için [kullanıcı ekleme](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) ve [lisans atama](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) hakkında daha fazla bilgi edinin. Ayrıca, şirketinizin logosunu, Kullanım Koşullarını ve başka malzemeleri kullanarak [Şirket Portalı web sitesini özelleştirebilirsiniz](start-with-a-paid-subscription-to-microsoft-intune-step-7.md). Kullanıcılar, web sitesine gidip iş veya okul hesaplarıyla oturum açarak Şirket Portalı web sitesine erişebilir.
 
+> [!NOTE]
+> Şirket Portalı uygulaması belirli ülkelerde henüz kullanılmamaktadır.
+
+> __iOS__: iOS için Şirket Portalı uygulaması Apple iOS App Store’da [tüm kullanılabilir bölgelerde](https://go.microsoft.com/fwlink/?linkid=831284) yayınlanmıştır.
+
+> __Android__: Android için Şirket Portalı uygulaması Antigua ve Barbuda, Aruba, Benin, Burkina Faso, Çin, Gabon, Gine-Bissau, Haiti, Hollanda Antilleri, İran, Kamboçya, Küba, Laos, Mali, Mozambik, Myanmar (Burma), Nijer, Papua Yeni Gine, Sudan, Togo. Bu ülkelerde, [Şirket Portalı uygulamasının Android sürümünü dışarıdan yüklemek](https://www.microsoft.com/en-us/download/details.aspx?id=49140) alternatif bir çözümdür.  
+
 ### Ayrıca bkz.
 [Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

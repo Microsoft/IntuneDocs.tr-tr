@@ -3,6 +3,7 @@ title: "PIN veya parolanızı ayarlama | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,15 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e050c7b4947f0a3aae87c545ec8cca282c22fe55
-ms.openlocfilehash: 2c9fd5714f64477e7e07d66429ae68e17e2e1bb7
+ms.sourcegitcommit: 7f08be661936b092cfa100b2454a3f2a3dd24746
+ms.openlocfilehash: c2480f168d5ee06a8419c68d1b90bac62c2879b1
 
 
 ---
 
 # PIN veya parolanızı ayarlama
 
-BT yöneticiniz, iş veya okul verilerinize erişmek için Intune kullandığınızda Android cihazınızda bir PIN veya parola ayarlamanızı zorunlu tutabilir. PIN veya parola ayarlamanızı isteyen bir ileti görürseniz, aşağıdaki adımları kullanın.
+BT yöneticiniz, iş veya okul verilerinize erişmek için Intune kullandığınızda Android cihazınızda bir PIN veya parola ayarlamanızı zorunlu tutabilir. Daha güvenli olması için PIN veya parolanızı daha uzun veya karmaşık hale getirmenizi gerekli kılan iletiler de görebilirsiniz.  
+
+Bir PIN veya parola ayarlamak için aşağıdaki adımları kullanabilirsiniz.
 
 1.  **Ayarlar** &gt; **Güvenlik** &gt; **Ekran Kilidi** &gt; **Parola**’ya dokunun.
 
@@ -33,6 +36,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

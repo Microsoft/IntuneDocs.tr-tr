@@ -3,8 +3,9 @@ title: "VPN bağlantıları | Microsoft Intune"
 description: "VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için VPN profillerini kullanın."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
 
 
 ---
@@ -44,20 +45,20 @@ Intune aşağıdaki bağlantı türlerini kullanan VPN profillerini oluşturmay�
 
 
 
-Bağlantı türü |iOS ve Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Masaüstü ve Mobile |
+Bağlantı türü |iOS ve Mac OS X  |Android ve Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Masaüstü ve Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|Evet |Evet   |Hayır    |     Hayır    |Hayır  |Hayır    | Evet, (OMA-URI, yalnızca Mobile)|     
-Cisco (IPSec)|Evet |Hayır   |Hayır  |  Hayır|Hayır  |Hayır | Hayır|
-Citrix|Evet |Hayır   |Hayır  |  Hayır|Hayır  |Hayır | Hayır|
-Pulse Secure|Evet  |Evet |Evet   |Hayır  |Evet  |Evet| Evet|        
-F5 Edge Client|Evet |Evet |Evet |Hayır  |Evet  |   Evet |  Evet|   
-Dell SonicWALL Mobile Connect|Evet |Evet |Evet |Hayır  |Evet |Evet |Evet|         
-CheckPoint Mobile VPN|Evet |Evet |Evet |Evet |Evet|Evet|Evet|
-Microsoft SSL (SSTP)|Hayır |Hayır |Hayır |Hayır |Hayır|Hayır|VPNv1 OMA-URI*|
-Microsoft Automatic|Hayır |Hayır |Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
-IKEv2|iOS özel profili|Hayır |Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
-PPTP|iOS özel profili|Hayır |Hayır |Hayır |Hayır|Hayır|Evet|
-L2TP|iOS özel profili|Hayır |Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
+Cisco AnyConnect|Evet |Evet   |Hayır    |Hayır  |Hayır    | Evet, (OMA-URI, yalnızca Mobile)|     
+Cisco (IPSec)|Evet |Hayır   |Hayır  |Hayır  |Hayır | Hayır|
+Citrix|Evet |Hayır   |Hayır  |Hayır  |Hayır | Hayır|
+Pulse Secure|Evet  |Evet |Evet   |Evet  |Evet| Evet|        
+F5 Edge Client|Evet |Evet |Evet |Evet  |   Evet |  Evet|   
+Dell SonicWALL Mobile Connect|Evet |Evet |Evet |Evet |Evet |Evet|         
+CheckPoint Mobile VPN|Evet |Evet |Evet |Evet|Evet|Evet|
+Microsoft SSL (SSTP)|Hayır |Hayır |Hayır |Hayır|Hayır|VPNv1 OMA-URI*|
+Microsoft Automatic|Hayır |Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
+IKEv2|iOS özel profili|Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
+PPTP|iOS özel profili|Hayır |Hayır |Hayır|Hayır|Evet|
+L2TP|iOS özel profili|Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
 
 \* Normalde Windows 10’da bulunan ek ayarlar olmadan.
 
@@ -96,6 +97,8 @@ Kullanıcı, kullanıcı adı ve parola girerek VPN sunucusunda kimliğini doğr
 
 > [!Note]
 > Android for Work cihazlara yönelik bir VPN profili, VPN bağlantısını yalnızca cihazın iş profilinde yüklü uygulamalar için etkinleştirir.
+>
+> Bazı VPN bağlantısı türleri, Android for Work cihazlarında uygulama başına VPN destekler ve Intune ile dağıtılan uygulamalarda uygulama başına VPN etkinleştirmeye yöneliktir.  
 
 3. VPN profili ayarlarını yapılandırmanıza yardımcı olması için aşağıdaki tabloyu kullanın:
 

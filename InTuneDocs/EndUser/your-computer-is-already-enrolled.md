@@ -3,6 +3,7 @@ title: "Bilgisayarınız zaten kayıtlı | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: f61840073cdb6a41c98e20bb5e1457e22f02d5bb
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: cf382c1c6633f8483059bc52146a66f26438e817
 
 
 ---
@@ -23,11 +24,11 @@ ms.openlocfilehash: f61840073cdb6a41c98e20bb5e1457e22f02d5bb
 
 # Bilgisayarınız zaten kayıtlı
 
-Bilgisayarınızın zaten kayıtlı olduğunu bildiren bir hata alırsanız, bilgisayarınız zaten Şirket Portalı’na eklenmiştir ama henüz kullanıcı hesabınıza bağlanmamıştır. Bilgisayarınızı kullanıcı hesabınıza bağlamak ve işlemi tamamlamak için bu yordamı izleyin.  
+Bilgisayarınızın zaten kayıtlı olduğunu bildiren bir hata alırsanız, bilgisayarınız Şirket Portalı’na eklenmiştir ama henüz kullanıcı hesabınıza bağlanmamıştır. Bilgisayarınızı kullanıcı hesabınıza bağlamak ve işlemi tamamlamak için bu yordamı izleyin.  
 
 Bilgisayarınızı bağlamak için:
 
-1.  Hesabınıza bağlamak istediğiniz bilgisayarda **Başlangıç** ve ardından **Microsoft Intune Merkezi**'ne tıklayın.
+1.  Hesabınıza bağlamak istediğiniz bilgisayarda **Başlat**’ı ve ardından **Microsoft Intune Center**'ı seçin.
 
 2.  Şirket Portalı’nı açın.
 
@@ -39,6 +40,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

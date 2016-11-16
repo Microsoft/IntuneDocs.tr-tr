@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# Microsoft Intune’da Android for Work uygulamalarını mobil uygulama yapılandırma ilkeleri ile yapılandırma
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Microsoft Intune’da Android for Work uygulamalarını mobil uygulama yapılandırma ilkeleri ile yapılandırma
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Kullanıcılar bir iOS uygulamasını çalıştırdığında gerekebilecek ayarları sağlamak için Intune’daki mobil uygulama yapılandırma ilkelerini kullanın. Örneğin, bir uygulama kullanıcıların şunları belirtmesini gerektirebilir:
 
 -   Özel bağlantı noktası numarası.
@@ -37,7 +40,7 @@ Uygulama yapılandırma ilkelerinden yararlanmak için uygulama geliştiricisini
 
 Yapılandırmak istediğiniz uygulamayı dağıttığınız kullanıcılara uygulama yapılandırma ilkesini de dağıtırsınız. İlke ayarları uygulama her çalıştırıldığında kullanılır.
 
-## Mobil uygulama yapılandırma ilkesi yapılandırma
+## <a name="configure-a-mobile-app-configuration-policy"></a>Mobil uygulama yapılandırma ilkesi yapılandırma
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **İlke** &gt; **Genel Bakış** &gt; **İlke Ekle**’yi seçin.
 
@@ -61,7 +64,7 @@ Yapılandırmak istediğiniz uygulamayı dağıttığınız kullanıcılara uygu
 Yeni ilke **Yapılandırma İlkeleri** düğümünde görüntülenir.
 
 
-## Uygulama yapılandırma ilkesini dağıtma
+## <a name="deploy-the-app-configuration-policy"></a>Uygulama yapılandırma ilkesini dağıtma
 Bir mobil uygulama yapılandırma ilkesi oluşturduktan sonra, bunu ayarların geçerli olacağı uygulamanın kullanıcılarına dağıtmanız gerekir.
 
 İlke dağıtma hakkında bilgi edinmek için bkz. [yapılandırma ilkesi dağıtma](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)
@@ -72,10 +75,6 @@ Dağıtılan uygulama bir cihazda çalıştırıldığında, mobil uygulama yap�
 
 > [!TIP]
 > Her uygulama için bir kullanıcıya yalnızca bir uygulama yapılandırma ilkesi dağıtın.
-
-
-
-
 
 
 

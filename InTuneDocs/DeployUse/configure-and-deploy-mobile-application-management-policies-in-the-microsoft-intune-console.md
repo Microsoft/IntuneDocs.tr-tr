@@ -14,13 +14,13 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
 
 ---
 
-# Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma
+# <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma
 Microsoft Intune’daki Mobil uygulama yönetimi (MAM) ilkeleri, dağıttığınız uygulamaların şirketin uyumluluk ve güvenlik ilkeleriyle uyumlu olmasını sağlamak için bunların işlevselliğini değiştirmenize izin verir. Örneğin, yönetilen bir uygulama içinde kesme, kopyalama ve yapıştırma işlemlerini kısıtlayabilir veya bir uygulamayı yönetilen bir tarayıcı içindeki tüm web bağlantılarını açacak şeklide yapılandırabilirsiniz.
 
 Mobil uygulama yönetimi ilkeleri desteği:
@@ -59,7 +59,7 @@ iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar *bird
 > [!TIP]
 > Intune’u Configuration Manager ile birlikte kullanıyorsanız, bkz. [ Configuration Manager’da Mobil Uygulama Yönetim İlkeleri Kullanılarak Uygulamaları Denetleme](https://technet.microsoft.com/library/mt131414.aspx).
 
-## Mobil uygulama yönetimi ilkesiyle uygulama oluşturma ve dağıtma
+## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Mobil uygulama yönetimi ilkesiyle uygulama oluşturma ve dağıtma
 
 -   **1. Adım:** İlkeyle yönetilen bir uygulamaya bir bağlantı alma, kaydırılmış bir uygulama oluşturma veya MAM özellikli uygulama yazmak için Intune Uygulama SDK’sını kullanma.
 
@@ -71,15 +71,15 @@ iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar *bird
 
 -   **5. Adım:** Uygulama dağıtımını izleme.
 
-## 1. Adım: İlkeyle yönetilen bir uygulamaya bir bağlantı alma, kaydırılmış bir uygulama oluşturma veya MAM özellikli uygulama yazmak için Intune Uygulama SDK’sını kullanma
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>1. Adım: İlkeyle yönetilen bir uygulamaya bir bağlantı alma, kaydırılmış bir uygulama oluşturma veya MAM özellikli uygulama yazmak için Intune Uygulama SDK’sını kullanma
 
 Uygulama mağazasından, dağıtmak istediğiniz ilkeyle yönetilen uygulamanın URL'sini bulun ve not edin. Örneğin, iPad için Microsoft Word uygulamasının URL'si şöyledir: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## 2. Adım: Uygulamayı bulut depolama alanınıza yayımlama
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>2. Adım: Uygulamayı bulut depolama alanınıza yayımlama
 Yönetilen bir uygulama yayımladığınızda, ilkeyle yönetilen bir uygulama veya iOS için Microsoft Intune Uygulama Kaydırma Aracı kullanılarak işlenmiş bir uygulama yayımlamanıza bağlı olarak farklı yordamlar kullanılır.
 
-#### İlkeyle yönetilen bir uygulama yayımlama
+#### <a name="to-publish-a-policy-managed-app"></a>İlkeyle yönetilen bir uygulama yayımlama
 
 1.  Uygulamayı bulut depolama alanınıza yüklemeye hazır olduğunuzda [Microsoft Intune’da mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md) konu başlığı altında verilen yönergeleri izleyin.
 
@@ -93,7 +93,7 @@ Yükleme bittiğinde, yüklenen uygulama için **Yazılım Özellikleri** sayfas
 
 Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra 3. adıma ilerleyin.
 
-#### Microsoft Intune Uygulama Kaydırma Aracı kullanılarak işlenmiş bir uygulamayı yayımlamak için
+#### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>Microsoft Intune Uygulama Kaydırma Aracı kullanılarak işlenmiş bir uygulamayı yayımlamak için
 
 1.  Uygulamayı bulut depolama alanınıza yüklemeye hazır olduğunuzda [Microsoft Intune’da mobil cihazlar için uygulama ekleme](add-apps-for-mobile-devices-in-microsoft-intune.md) konu başlığı altında verilen yönergeleri izleyin.
 
@@ -105,7 +105,7 @@ Yükleme bittiğinde, yüklenen uygulama için **Yazılım Özellikleri** sayfas
 
 Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra 3. adıma ilerleyin.
 
-## 3. Adım: Mobil uygulama yönetimi ilkesi oluşturma
+## <a name="step-3-create-a-mobile-application-management-policy"></a>3. Adım: Mobil uygulama yönetimi ilkesi oluşturma
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **İlke** &gt; **Genel Bakış** &gt; **İlke Ekle**’yi seçin.
 
@@ -134,7 +134,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra 3. adım
     |**Erişim için kurumsal kimlik bilgileri gerektir**|Bu ayar, uygulamaya erişmek için kullanıcının kurumsal oturum açma bilgilerini girmesini gerektirir.|
     |**Erişim için kurumsal ilkeyle cihaz uyumluluğu gerektir**|Bu ayar, yalnızca cihazın yazılım kilidi kırılmış veya cihaza kök erişim izni verilmişse uygulamanın kullanılmasına izin verir.|
     |**Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)**|**Zaman aşımı** alanında, uygulama açıldıktan sonra uygulama erişim gereksinimlerinin yeniden denetlenmesine kadar geçecek süreyi belirtin.|
-    |**Çevrimdışı kullanım süresi**|Cihaz çevrimdışı ise, uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını belirtin.|
+    |**Çevrimdışı yetkisiz kullanım süresi**|Cihaz çevrimdışı ise, uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını belirtin.|
     |**Uygulama verilerini şifreleme**|Bu ayar, bu uygulama ile ilişkili tüm verilerin şifreleneceğini belirtir. Buna SD kart gibi harici ortamlara depolanacak veriler de dahildir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetim ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada ve işletim sisteminin sağladığı cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu ayar, BT yöneticisinin ayarladığı cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesindeki ayarlara göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/en-us/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalarda şifrelemeyi Microsoft sağlar. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir.  Cihaz depolamasındaki içerik her zaman şifrelenir. Şifreleme yöntemi FIPS 140-2 sertifikalı değildir.|
     |**Ekran yakalamayı engelle** (yalnızca Android cihazlar)|Bu ayar, birisi bu uygulamayı kullanırken cihazın ekran yakalama özelliklerinin engellendiğini belirtir.|
 
@@ -142,7 +142,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra 3. adım
 
 Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğümünde görünür.
 
-## 4. Adım: Uygulamayı bir mobil uygulama yönetimi ilkesiyle ilişkilendirme seçeneğini belirleme ve sonra uygulamayı dağıtma
+## <a name="step-4-associate-the-app-with-a-mobile-application-management-policy-and-then-deploy-the-app"></a>4. Adım: Uygulamayı bir mobil uygulama yönetimi ilkesiyle ilişkilendirme seçeneğini belirleme ve sonra uygulamayı dağıtma
 İlkeyi uygulamayla ilişkilendirmek için **Dağıtımı Yönet** iletişim kutusunun **Mobil Uygulama Yönetimi** sayfasında mobil uygulama yönetim ilkesini seçtiğinizden emin olun.
 
 Ayrıntılar için bkz. [Microsoft Intune'da uygulamaları dağıtma](deploy-apps.md).
@@ -150,7 +150,7 @@ Ayrıntılar için bkz. [Microsoft Intune'da uygulamaları dağıtma](deploy-app
 > [!IMPORTANT]
 > Cihazın Intune kaydı silinirse, ilkeler uygulamadan kaldırılmaz. İlke uygulanmış uygulamalar, uygulama kaldırılıp yeniden yüklendikten sonra ilke ayarlarını saklar.
 
-### Bir uygulama cihazlarda zaten dağıtıldıysa yapılacaklar
+### <a name="what-to-do-when-an-app-is-already-deployed-on-devices"></a>Bir uygulama cihazlarda zaten dağıtıldıysa yapılacaklar
 Bir uygulama dağıttığınız ve hedef kullanıcı ya da cihazlardan birinde uygulamanın yönetilmeyen bir sürümünün zaten yüklü olduğu durumlar olabilir. Örneğin, kullanıcı uygulama mağazasından Microsoft Word yüklemiş olabilir.
 
 Bu durumda, yapılandırdığınız yönetilen sürümün yüklenebilmesi için kullanıcıdan yönetilmeyen sürümü el ile kaldırmasını isteyebilirsiniz.
@@ -160,10 +160,10 @@ Ancak, iOS 9 ve üstü sürümleri çalıştıran cihazlarda Intune, kullanıcı
 > [!TIP]
 > Cihaz denetimli moddaysa, Intune, kullanıcıdan izin istemeden mevcut uygulamanın yönetimini devralır.
 
-## 5. Adım: Uygulama dağıtımını izleme
+## <a name="step-5-monitor-the-app-deployment"></a>5. Adım: Uygulama dağıtımını izleme
 Bir mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş bir uygulama oluşturup dağıttıktan sonra, uygulamayı izlemek ve ilke çakışmalarını çözmek için aşağıdaki yordamları kullanın.
 
-#### Dağıtım durumunu görüntülemek için
+#### <a name="to-view-the-status-of-the-deployment"></a>Dağıtım durumunu görüntülemek için
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Gruplar** &gt; **Genel Bakış**’ı seçin.
 
@@ -181,7 +181,7 @@ Bir mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş bir uygulama oluştur
 
 6.  Bir çakışmayı belirledikten sonra çakışan ilke ayarlarını aynı ayarı kullanacak şekilde düzeltebilir veya uygulama ve kullanıcıya yalnızca tek bir ilke dağıtabilirsiniz.
 
-### İlke çakışmalarını çözümleme
+### <a name="how-policy-conflicts-are-resolved"></a>İlke çakışmalarını çözümleme
 Kullanıcı veya cihaza ilk dağıtımda bir mobil uygulama yönetim ilkesi çakışması olursa, çakışmaya neden olan ayar değeri uygulamaya dağıtılan ilkeden kaldırılır. Uygulama yerleşik bir çakışma değeri kullanır.
 
 Daha sonraki kullanıcı veya cihaz dağıtımlarında bir mobil uygulama yönetim ilkesi çakışması olursa, çakışmaya neden olan ayar değeri uygulamaya dağıtılan mobil uygulama yönetimi ilkesinde güncelleştirilmez. Uygulama bu ayar için mevcut olan değeri kullanır.
@@ -194,6 +194,6 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
