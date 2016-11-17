@@ -2,9 +2,10 @@
 title: "VPN profilleri için özel yapılandırmalar | Microsoft Intune"
 description: "Intune’da VPN profillerini oluşturmak için özel yapılandırmalar kullanın."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +14,18 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
-ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
+ms.sourcegitcommit: 1035a8ca4f63ad973e83ec24a7d700fac1d256cc
+ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
 
 
 ---
 
-# VPN profilleri için özel yapılandırmalar
+# <a name="custom-configurations-for-vpn-profiles"></a>VPN profilleri için özel yapılandırmalar
 
-## Özel yapılandırma oluşturma
+## <a name="create-a-custom-configuration"></a>Özel yapılandırma oluşturma
 Intune’da VPN profillerini oluşturmak için özel yapılandırmalar kullanabilirsiniz. Özel yapılandırma oluşturmak için:
 
-   1. Intune yönetici konsolunda **İlke** > **İlke Ekle** > *<Expand platform>* > **Özel yapılandırma** > **İlke Oluştur**’a tıklayın.
+   1. Intune yönetici konsolunda **İlke** > **İlke Ekle** > *Platformu genişlet* > **Özel yapılandırma** > **İlke Oluştur**’a tıklayın.
    2. İlke için bir ad sağlayın.
    3. Her URI ayarı için, **Ekle**’yi seçin ve istenen bilgileri sağlayın. Örnek:
 
@@ -32,7 +33,7 @@ Intune’da VPN profillerini oluşturmak için özel yapılandırmalar kullanabi
 
    4.  URI ayarlarının tümünü girdikten sonra **İlkeyi kaydet**’i seçin ve ilkeyi dağıtın.
 
-## Yapılandırma ilkesini dağıtma
+## <a name="deploy-a-configuration-policy"></a>Yapılandırma ilkesini dağıtma
 
 1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
 
@@ -44,7 +45,7 @@ Intune’da VPN profillerini oluşturmak için özel yapılandırmalar kullanabi
 
 Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağıtım hakkında daha fazla bilgi görüntüleyebilirsiniz.
 
-##Özel VPN profili yapılandırması için örnek URI ayarları
+##<a name="example-of-uri-settings-for-a-custom-vpn-profile-configuration"></a>Özel VPN profili yapılandırması için örnek URI ayarları
 Burada, Contoso adlı kurgusal bir şirkette VPN’e özel yapılandırma oluşturmak için örnek URI değerleri girdileri verilmiştir. Her girdinin veri türü gibi daha fazla bilgi edinmek için, bkz. [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -85,10 +86,10 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 Bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyla ilgili ek ayrıntılar için, müşteriler yapılandırma servisi sağlayıcısı (CSP) belgelerine bakabilir: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
-## PulseSecure üzerinde Android uygulaması başına VPN için URI ayarları
-### PAKET LİSTESİ İÇİN ÖZEL URI
+## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>PulseSecure üzerinde Android uygulaması başına VPN için URI ayarları
+### <a name="custom-uri-for-package-list"></a>PAKET LİSTESİ İÇİN ÖZEL URI
 -  Veri türü = String
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  Değer = Sınırlayıcıyla ayrılmış paket listesi.
    - Sınırlayıcılar:  noktalı virgül (;), iki nokta (:), virgül (,), dikey çizgi (|)
 
@@ -96,7 +97,7 @@ Bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyl
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-### MOD İÇİN ÖZEL URI (İSTEĞE BAĞLI)
+### <a name="custom-uri-for-mode-optional"></a>MOD İÇİN ÖZEL URI (İSTEĞE BAĞLI)
 - Veri Türü = String
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
@@ -107,11 +108,11 @@ Bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyl
 > - PackageList sağlandıysa varsayılan değer *BEYAZ LİSTE* olur.
 
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 (Microsoft Intune’da VPN bağlantıları)[vpn-connections-in-microsoft-intune.md]
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

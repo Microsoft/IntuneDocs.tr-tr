@@ -2,10 +2,10 @@
 title: "Şirket Portalı uygulamasını yüklerseniz ve Android cihazınızı Intune’a kaydederseniz ne olur? | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/16/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 8843fe7854db72cf3983dc9a6ab44c1517d92b60
 
 
 ---
 
 
-# Şirket Portalı uygulamasını yüklerseniz ve Android cihazınızı Intune’a kaydederseniz ne olur?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Şirket Portalı uygulamasını yüklerseniz ve Android cihazınızı Intune’a kaydederseniz ne olur?
 
 Şirket Portalı uygulamasını yüklediğinizde ve Android cihazınızı Intune’a kaydettiğinizde, Şirket Portalı uygulamasını kullanarak şunları yapabilirsiniz:
 
@@ -56,10 +56,10 @@ Cihazınız Şirket Portalı’na eklendikten sonra, yaklaşık sekiz saat için
 
 -   Tüm şirket uygulaması envanteri güncelleştirmeleri gönderilir. (Bu güncelleştirmeler kişisel bilgi içermez.)
 
-Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
+Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya [Microsoft Android ekibine](mailto:wintunedroidfbk@microsoft.com) yazın.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

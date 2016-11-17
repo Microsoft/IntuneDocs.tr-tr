@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +14,22 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c7679d624ba22b2a062ef2534a642e38a5f57fde
-ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
+ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
 
 
 
 ---
-# Özel ilkeler kullanarak Samsung KNOX cihazları için uygulamalara izin verme veya bunları engelleme
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Özel ilkeler kullanarak Samsung KNOX Standard cihazlar için uygulamalara izin verme veya bunları engelleme
 
 Bu konu başlığı altındaki yordamları kullanarak, aşağıdakilerden birini oluşturan bir Microsoft Intune özel ilkesi oluşturun:
 
 - Cihazda çalışması engellenmiş uygulamaların listesi. İlke uygulandığı sırada zaten yüklenmiş durumda olsalar bile, bu listede yer alan uygulamaların çalışması engellenir.
 - Cihaz kullanıcılarının Google Play mağazasından yüklemesine izin verilen uygulamaların listesi. Yalnızca listelediğiniz uygulamalar yüklenebilir. Mağazadan başka hiçbir uygulama yüklenemez.
 
-Bu ayarlar yalnızca Samsung KNOX çalıştıran cihazlar tarafından kullanılabilir.
+Bu ayarlar yalnızca Samsung KNOX Standard çalıştıran cihazlar tarafından kullanılabilir.
 
-## izin verilen veya engellenen uygulama listesi oluşturmak için
+## <a name="to-create-an-allowed-or-blocked-app-list"></a>izin verilen veya engellenen uygulama listesi oluşturmak için
 
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **İlke** &gt; **Yapılandırma İlkeleri** &gt; **Ekle**’yi seçin.
 2. **Yeni İlke Oluştur** iletişim kutusunda **Android**’i genişletin, **Özel Yapılandırma**’yı seçin ve sonra da **İlke Oluştur**’u seçin.
@@ -58,7 +58,7 @@ Bu ayarlar yalnızca Samsung KNOX çalıştıran cihazlar tarafından kullanıla
 Hedeflenen her cihazın bir sonraki girişinde, uygulama ayarları uygulanır.
 
 
-## İlkeyi dağıtma
+## <a name="deploy-the-policy"></a>İlkeyi dağıtma
 
 1.   **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
 
@@ -67,11 +67,11 @@ Hedeflenen her cihazın bir sonraki girişinde, uygulama ayarları uygulanır.
  
 Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağıtım hakkında daha fazla bilgi görüntüleyebilirsiniz.
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune’daki Android ve Samsung KNOX ilke ayarları](android-policy-settings-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

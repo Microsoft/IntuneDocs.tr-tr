@@ -1,8 +1,9 @@
 ---
-title: "Microsoft Intune'u başlatmadan önce bilinmesi gerekenler | Microsoft Intune"
-description: "Intune önkoşullarını ve gereksinimlerini içeren bağlantıların bulunduğu sayfa"
+title: "Microsoft Intune&quot;u başlatmadan önce bilinmesi gerekenler | Microsoft Intune"
+description: "Intune önkoşullarını ve gereksinimlerini içeren bağlantılar"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: d236a084caa3f82cb22d1f47583f1a0417e86d81
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 2b781bc77dc32aff726683f33bdd9d29650661ea
 
 
 ---
@@ -37,6 +38,6 @@ Intune’u kullanmadan önce, [Intune mobil cihaz yönetimi özelliklerini](/int
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

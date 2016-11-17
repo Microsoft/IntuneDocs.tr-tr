@@ -2,7 +2,7 @@
 title: "Windows Phone 8.1 cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Windows Phone 8.1 cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
@@ -14,14 +14,14 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 
 ---
 
 
-# Windows Phone 8.1 cihazınızı Intune'a kaydetme
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1 cihazınızı Intune'a kaydetme
 
 Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazlarınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, kuruluşunuz şirket verilerini güvenli tutabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [BT yöneticinizin cihazınızda görebilecekleri ve göremeyecekleri](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
@@ -30,9 +30,9 @@ Phone 8.1 cihazınızı Intune’a kaydetmek için, şirketiniz veya okulunuz i�
 
 -   [Şirketiniz Windows Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [Windows Phone’unuzdan Windows Mağazası’na erişmenize izin verilmiyorsa veya bir Microsoft Hesabı’nız yoksa](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [Windows Phone’unuzdan Windows Mağazası’na erişmenize izin verilmiyorsa veya bir Microsoft Hesabınız yoksa](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## Şirketiniz Windows Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Şirketiniz Windows Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa
 Cihazınıza Şirket Portalı uygulamasını yükleyin:
 
 1.  **Başlat** &gt; **Mağaza**’ya dokunun.
@@ -71,7 +71,7 @@ Cihazınızı kaydedin:
 
     ![Hesap eklendi ekranı](./media/WP81-enroll-4-account-added.png)
 
-## Windows Phone’unuzdan Windows Mağazası’na erişmenize izin verilmiyorsa veya bir Microsoft Hesabı’nız yoksa
+## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Windows Phone’unuzdan Windows Mağazası’na erişmenize izin verilmiyorsa veya bir Microsoft Hesabı’nız yoksa
 
 1.  **Ayarlar** &gt; **iş yeri**’ne dokunun.
 
@@ -87,6 +87,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

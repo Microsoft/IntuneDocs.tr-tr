@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,16 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 609d3ab2c96d9a3dff7a6bb6aa085f9cda83ba38
-ms.openlocfilehash: 845604fb97927abcc267884dbea6096a82eb170c
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: f1176c923e059ad085855423e95522d2e4fec76e
 
 
 ---
 
 
-# Microsoft Intune’da Android for Work cihazlar için uyumluluk ilkesi ayarları
+# <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune’da Android for Work cihazlar için uyumluluk ilkesi ayarları
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Bu konuda açıklanan ilke ayarları Android for Work cihazlar için geçerlidir.
 
@@ -31,8 +33,8 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 - [iOS cihazları için uyumluluk ilkesi ayarları](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Windows cihazları için uyumluluk ilkesi ayarları](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Sistem güvenliği ayarları
-### Parola
+## <a name="system-security-settings"></a>Sistem güvenliği ayarları
+### <a name="password"></a>Parola
 - **Mobil cihazların kilidini açmak için parola gerektir:** Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini gerektirmek için bunu **Evet** olarak ayarlayın.
 
 -  **Minimum parola uzunluğu:** Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
@@ -55,10 +57,10 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 - **Cihaz boşta durumundan çıkarken parola gerektir:** Bu ayar, **Parola gerektirmeden önce işlem yapılmadan geçen süre (dakika)** ayarıyla birlikte kullanılmalıdır. **Parola gerektirmeden önce işlem yapılmadan geçen süre (dakika)** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için son kullanıcılardan bir parola girmesi istenir.
 
-### Şifreleme
+### <a name="encryption"></a>Şifreleme
 - **Mobil cihazda şifreleme iste:** Android for Work cihazlarda şifreleme zorunlu olduğundan bu ayarı yapılandırmanız gerekmez.
 
-## Cihaz sistem durumu ve güvenlik ayarları
+## <a name="device-health-and-security-settings"></a>Cihaz sistem durumu ve güvenlik ayarları
 
 - **Cihazda jailbreak uygulanmamış veya kök erişim izni verilmemiş olmalıdır:** Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
 - **Cihazların bilinmeyen kaynaklardan uygulama yüklemeyi önlemesini iste:** Android for Work cihazlar bilinmeyen kaynaklardan yüklemeyi her zaman kısıtladığı için bu Android ayarını yapılandırmanız gerekmez. .  
@@ -75,7 +77,7 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
   Daha fazla ayrıntı için bkz. [Uyumluluk ilkesinde cihaz tehdit koruması kuralını etkinleştirme](enable-device-threat-protection-rule-in-compliance-policy.md).
 
-## Cihaz özelliği ayarları
+## <a name="device-property-settings"></a>Cihaz özelliği ayarları
 - **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir.
   Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 
@@ -83,6 +85,6 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar| Microsoft Intune"
-description: "Son kullanıcılarınızla paylaşacağınız bilgilerin bağlantıları"
-keywords: 
-author: staciebarker
-ms.author: stabar
+description: "Intune dağıtımınızın başarılı olmasını sağlamak için son kullanıcılarınızla bilgi paylaşın."
+keywords: "son kullanıcılar, kullanıcılar, iletişim"
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/2/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,33 +14,33 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 53f432e5fb63d89dc4d7494182f95aace6dd0918
-ms.openlocfilehash: ccee9e249224ded3700228bd09057875a7662c52
+ms.sourcegitcommit: f995c48579467723294081920597eae55b612851
+ms.openlocfilehash: 036ad5ae9b3c5ff68ffad83c747b289824395d2b
 
 
 ---
 
-# Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar
+# <a name="resources-about-the-enduser-experience-with-microsoft-intune"></a>Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar
 
 Son kullanıcılarınızın Intune'da farklı görevler gerçekleştirmek üzere uyguladığı adımları anlamak için aşağıdaki bağlantıları ve bilgileri kullanın.
 
 İhtiyaç duyarlarsa kullanıcılarınızın yardım alabilmesi için [Şirket Portalını özelleştirirken](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) BT yöneticisinin iletişim bilgilerini eklemeyi unutmayın.
 
-## Kullanıcılarınız için özelleştirebileceğiniz kayıt kılavuzu
+## <a name="enrollment-guide-that-you-can-customize-for-your-users"></a>Kullanıcılarınız için özelleştirebileceğiniz kayıt kılavuzu
 
 Son kullanıcılarınız için kendi kayıt yönergelerinizi oluşturmak üzere [BT yöneticilerine yönelik bu özelleştirilebilir, son kullanıcı Intune şablonunu](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) kullanabilirsiniz. Bu Microsoft Word belgesi iOS, Mac OS X ve Android cihazlar için son kullanıcı kaydına ilişkin ayrıntılı adımlar ve ekran görüntüleri içerir.
 
-## Son kullanıcılarınız, nasıl yapılır bilgilerini ve sorun giderme bilgilerini nasıl bulur?
+## <a name="how-your-end-users-find-howto-and-troubleshooting-information"></a>Son kullanıcılarınız, nasıl yapılır bilgilerini ve sorun giderme bilgilerini nasıl bulur?
 
 Kullanıcıların Şirket Portalı web sitesinden veya uygulamasından yönlendirildiği adımları görmek için aşağıdaki bağlantıları kullanın. Bağlantılar, Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı, kullanıcıların cihazlarında yapabileceği genel görevler ve sorun giderme hakkında bölümlere ayrılmıştır.
 
 - [Android cihazınızı Intune ile kullanma](/Intune/EndUser/using-your-android-device-with-intune)
-- [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+- [iOS veya Mac OS X cihazınızı Intune ile kullanma](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
 - [Windows cihazınızı Intune ile kullanma](/Intune/EndUser/using-your-windows-device-with-intune)
 - [Intune Şirket Portalı web sitesini kullanma](/Intune/EndUser/using-the-intune-company-portal-website)
 
 
-## Son kullanıcılarınız uygulamalarını nasıl alır
+## <a name="how-your-end-users-get-their-apps"></a>Son kullanıcılarınız uygulamalarını nasıl alır
 
 Son kullanıcılarınızın uygulamalarını nasıl aldığını anlamak için, aşağıdaki cihaz platformu seçeneklerden birini seçin:
 
@@ -50,10 +50,6 @@ Son kullanıcılarınızın uygulamalarını nasıl aldığını anlamak için, 
 
 
 
-Bu makalede yer alan diğer bilgileri görmek ister misiniz? Lütfen önerinizi bu konunun sonundaki açıklama kutusuna ekleyin. Teşekkür ederiz!
-
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

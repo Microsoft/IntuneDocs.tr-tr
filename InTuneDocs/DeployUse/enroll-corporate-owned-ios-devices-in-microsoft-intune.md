@@ -2,8 +2,8 @@
 title: "Şirkete ait iOS cihazlarını kaydetme | Microsoft Intune"
 description: "Şirkete ait iOS cihazlarını Apple Aygıt Kayıt Programı’nı (DEP) veya Apple Configurator’ı kullanarak kaydetme"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: c28b51146deb6a0a28070f72449972fd60076231
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 81eb6df96f4c34e8524bb8f3faef964179c91dfc
 
 
 ---
 
-# Microsoft Intune'a şirketin sahip olduğu iOS cihazları kaydetme
+# <a name="enroll-corporateowned-ios-devices-in-microsoft-intune"></a>Microsoft Intune'a şirketin sahip olduğu iOS cihazları kaydetme
 Microsoft Intune, şirkete ait iOS cihazlarının Apple Aygıt Kayıt Programı (DEP) veya bir Mac bilgisayarında çalışan [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) aracı ile kaydedilmesini destekler.
 
 **Ön koşul:** [Apple Anında İletilen Bildirim hizmeti sertifikası](set-up-ios-and-mac-management-with-microsoft-intune.md) gerekir.
 
 Şirkete ait iOS cihazlarını üç şekilde kaydedebilirsiniz: Apple Configurator’u, DEP’yi veya Şirket Portalı’nı kullanarak.
 
-## Apple Configurator’ı kullanma
+## <a name="use-apple-configurator"></a>Apple Configurator’ı kullanma
 
 iOS cihazlarını bir Kurumsal Kayıt profilini dışarı aktarıp ardından söz konusu mobil cihazları Apple Configurator çalıştıran bir Mac bilgisayara bağlayarak kaydedebilirsiniz. Apple Configurator iki kayıt biçimini destekler:
 
@@ -35,10 +35,10 @@ iOS cihazlarını bir Kurumsal Kayıt profilini dışarı aktarıp ardından sö
 
 - **Doğrudan kayıt**: Cihaz hazırlama sırasında kullanılmak üzere Apple Configurator ile uyumlu bir dosya oluşturur. Kaydedilen cihaz fabrika ayarlarına sıfırlanmaz, ancak hiçbir kullanıcıyla ilişkili değildir. Bu yöntem, yöneticinin, iOS cihazını kaydetmek üzere USB üzerinden [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) çalıştıran bir Mac bilgisayara bağlamasını gerektirir. Daha fazla bilgi için bkz. [Apple Configurator Doğrudan Kurulum kullanarak iOS cihazlarını kaydetme](ios-direct-enrollment-in-microsoft-intune.md).
 
-## Aygıt Kayıt Programı’nı (DEP) kullanma
+## <a name="use-the-device-enrollment-program-dep"></a>Aygıt Kayıt Programı’nı (DEP) kullanma
 Bu seçenek, DEP aracılığıyla satın alınan cihazlara bir “havadan” kaydolma profili dağıtır. Kullanıcı, cihazda Kurulum Yardımcısı’nı çalıştırdığında, cihaz Intune'a kaydedilir.  DEP üzerinden kaydedilen cihazların kaydı kullanıcılar tarafından geri alınamaz. Daha fazla bilgi için, bkz. [Aygıt Kayıt Programı iOS cihazlarını kaydetme](ios-device-enrollment-program-in-microsoft-intune.md).
 
-## DEP veya Apple Configurator ile kaydedilmiş cihazlarda Şirket Portalı’nı kullanma
+## <a name="use-the-company-portal-on-depenrolled-or-apple-configuratorenrolled-devices"></a>DEP veya Apple Configurator ile kaydedilmiş cihazlarda Şirket Portalı’nı kullanma
 
 Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve cihaz yönetmek için Şirket Portalı’nı yükleyip çalıştırabilir. Kullanıcılar, cihazlarını aldıktan sonra Kurulum Yardımcısı’nı tamamlamak ve Şirket Portalı uygulamasını yüklemek için bir dizi ek adımı tamamlamalıdır.
 
@@ -47,7 +47,7 @@ Aşağıdakileri desteklemek için kullanıcı benzeşimi gereklidir:
   - E-postaya ve şirket verilerine koşullu erişim
   - Şirket Portalı uygulaması
 
-**Kullanıcı benzeşimi olan şirkete ait iOS cihazları kullanıcılar tarafından kaydetme**
+**Kullanıcıların kullanıcı benzeşimi olan şirkete ait iOS cihazları kaydetmesi**
 1. Kullanıcılar cihazlarını açtığında, kendilerinden Kurulum Yardımcısı’nı tamamlamaları istenir. Kurulum sırasında kullanıcılardan kimlik bilgileri istenir. Intune abonelikleriyle ilişkili kimlik bilgilerini (yani UPN olarak bilinen benzersiz kişisel adları) kullanmalıdırlar.
 
 2. Kurulum sırasında kullanıcılardan bir Apple Kimliği istenir. Cihazın Şirket Portalı’nı yüklemesine izin vermek için bir Apple ID sağlanmalıdır. Kimlik, kurulum bittikten sonra iOS ayarları menüsünden de sağlanabilir.
@@ -68,7 +68,7 @@ Aşağıdakileri desteklemek için kullanıcı benzeşimi gereklidir:
 
 8. Kayıt tamamlanmıştır. Kullanıcı artık bu cihazı tüm özellikleriyle kullanabilir.
 
-### Kullanıcı benzeşimi olmayan şirkete ait yönetilen cihazlar hakkında
+### <a name="about-corporateowned-managed-devices-with-no-user-affinity"></a>Kullanıcı benzeşimi olmayan şirkete ait yönetilen cihazlar hakkında
 
 Hiçbir kullanıcı benzeşimi olmadan yapılandırılmış cihazlar, Şirket Portalı’nı desteklemez ve uygulamayı yüklememelidir. Şirket Portalı, kurumsal kimlik bilgileri olan ve kişiselleştirilmiş şirket kaynaklarına (ör. e-postaya) erişmesi gereken kullanıcılar için tasarlanmıştır. Hiçbir kullanıcı benzeşimi olmadan kaydedilmiş cihazların özel oturumu olması düşünülmemiştir. Bilgi noktası, satış noktası (POS) veya paylaşılan yardımcı cihazlar, kullanıcı benzeşimi olmadan kaydedilen cihazların tipik kullanım örnekleridir.
 
@@ -76,11 +76,11 @@ Kullanıcı benzeşimi gerekiyorsa, cihazın kaydolma profilinde cihaz kaydedilm
 
 
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune’da cihazları kaydetmenin önkoşulları](gprerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

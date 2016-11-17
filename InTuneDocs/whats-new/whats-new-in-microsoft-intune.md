@@ -5,36 +5,39 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2016
+ms.date: 11/2/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
-ms.reviewer: mamoriss
+ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 503719953031bf5079b2bf5bc84a0497d708f79a
-ms.openlocfilehash: 730809e0841a248b90f5fe157f2c6338bfd32b2d
+ms.sourcegitcommit: b5035c4560fa298af83fe0d016cd83b85959b450
+ms.openlocfilehash: 12c066ed165509cc9182a3735d516fa2dd3e6a90
 
 
 ---
-# Microsoft Intune'daki yenilikler -- Ekim 2016
+# <a name="whats-new-in-microsoft-intune-october-2016"></a>Microsoft Intune'daki yenilikler -- Ekim 2016
 Microsoft Intune’un bu sürümündeki yenilikleri öğrenin. Planlama yapmanız gereken yaklaşan değişiklikler hakkında ve geçmiş sunumlar hakkında bilgiler de alabilirsiniz.
 
 Bu özelliklerin tümü, sonunda karma müşteri dağıtımlarında (Intune ile Configuration Manager) desteklenecektir. Yeni karma özellikler hakkında daha fazla bilgi için, [Karma Yenilikler sayfamızı](https://technet.microsoft.com/library/mt718155.aspx) gözden geçirin.
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
-## Yenilikler
+## <a name="whats-new"></a>Yenilikler
 
-### Mobil uygulama yönetimi için koşullu destek
+### <a name="conditional-access-for-mobile-application-management"></a>Mobil uygulama yönetimi için koşullu destek
 Yalnızca Outlook gibi Intune mobil uygulama yönetimi ilkelerini destekleyen uygulamalardan erişime izin vermek için Exchange Online’a erişimi kısıtlayabilirsiniz. [Bu yeni özellik](/intune/deploy-use/allow-policy-managed-apps-access-to-o365), Intune mobil uygulama yönetimi (MAM) ilkeleriyle mükemmel bir uyum sağlar ve yerleşik posta istemcilerine veya Intune MAM ilkeleriyle yapılandırılmamış olan diğer uygulamalara erişimi engelleyebilirsiniz. Böylelikle, kullanıcılarınızın kuruluşunuzun verilerine Intune MAM kullanılarak korunan uygulamalarla erişmesi güvence altına alır. Intune mobil uygulama yönetimini Azure portalından başlatabilirsiniz. “Ayarlar” dikey penceresinde yeni Koşullu Erişim bölümünü bulun.
 
-### Windows Bilgisayarlar için koşullu erişim
+### <a name="conditional-access-for-windows-pcs"></a>Windows Bilgisayarlar için koşullu erişim
 Artık Windows bilgisayarlarının [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) ve [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)’a erişmesini engellemek için Intune Yönetici Konsolu aracılığıyla koşullu erişim ilkeleri oluşturabilirsiniz. Office masaüstü ve evrensel uygulamalara erişimi engellemek için de koşullu erişim ilkeleri oluşturabilirsiniz.
 
-### Android for Work desteği
-Intune artık Android for Work programının bir parçası haline gelmiştir. Intune'a Android for Work özellikleri için desteği bu ay çıkarmaya başlayacağız.
+### <a name="android-for-work-support"></a>Android for Work desteği
+Intune artık Android for Work (AfW) programının bir parçası haline gelmiştir. Bu aydan itibaren AfW özellikleri için destek sunmaya başlayacağız ve önümüzdeki birkaç ay buna devam edeceğiz. AfW’nin kullanılabilir uygulama dağıtımı, yeni gruplandırma ve hedefleme deneyimini geliştirir. Sağlanan yeni Intune Hizmet hesapları, AfW kullanmaya başladığında bu özellikten yararlanabilir.
+
+Mevcut Intune müşterileri, kiracılarının geçişi yapıldıktan sonra bu özelliği üretimde kullanabilir. Mevcut müşteriler, kiracılarının geçişi yapılana kadar planlama ve bu özelliği sınama amacıyla bir Intune deneme hesabı oluşturabilir. Gruplandırma ve zaman çizelgelerini hedefleme hakkında sorularınız için lütfen [geçiş ekibimize](mailto:intunegrps@microsoft.com) başvurun.
+
 [Android for Work için Intune desteği hakkında Microsoft'un duyurusunu okuyun](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
 
 Aşağıdaki Intune konuları yenidir veya Android for Work bilgileriyle güncelleştirilmiştir:
@@ -53,7 +56,7 @@ Son kullanıcılar için:
 - [İş profili oluşturduğunuzda ne olur?](/intune/enduser/what-happens-when-you-create-a-work-profile-android)
 - [Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme](/intune/enduser/create-a-work-profile-and-enroll-your-device-in-intune-android)
 
-### iOS cihazlarını korumak için Lookout tümleştirmesi
+### <a name="lookout-integration-to-protect-ios-devices"></a>iOS cihazlarını korumak için Lookout tümleştirmesi
 Ekim'de, Microsoft, iOS mobil cihazlardaki kötü amaçlı yazılımları, riskli uygulamaları ve diğer tehditleri algılayarak cihazları korumak için Lookout'un mobil tehdit koruma çözümüyle tümleşiyor. Lookout’ın çözümü tehdit düzeyini saptamanıza yardımcı olur ve bu ayar yapılandırılabilir. Lookout’un risk değerlendirmesi temelinde cihaz uyumluluğunu saptamak için Intune’da bir uyumluluk ilkesi kuralı oluşturabilirsiniz. Koşullu erişim ilkelerini kullanarak, cihaz uyumluluk durumuna göre şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz.
 
 Uyumlu olmayan iOS cihazlarının son kullanıcılarının kaydolmaları istenecek ve şirket verilerine erişim kazanmak için cihazlarına Lookout for Work uygulamasını yüklemeleri, uygulamayı etkinleştirmeleri ve Lookout for Work uygulamasında bildirilen tehditleri gidermeleri gerekecek. [Lookout for Work uygulamalarını yapılandırmayı ve dağıtmayı](/intune/deploy-use/configure-and-deploy-lookout-for-work-apps) öğrenin.
@@ -64,16 +67,19 @@ Microsoft is releasing a new [Microsoft Intune Company Portal for Windows 10 dev
 
 The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store.-->
 
-### Android için Intune Uygulama Sarmalama Aracı
+### <a name="intune-app-wrapping-tool-for-android"></a>Android için Intune Uygulama Sarmalama Aracı
 Intune Uygulaması Sarmalama Aracı'nı kullanarak uygulamalarınızın Intune mobil uygulama yönetim (MAM) ilkelerini kullanmasını sağlayabilirsiniz. Cihaz kaydı gerektirmeden Intune MAM ilkeleri desteği artık kullanılabilir.
 
-### MAM ilkeleriyle yönetilen uygulamalardan yazdırmayı yönetme
+### <a name="manage-printing-from-apps-managed-using-mam-policies"></a>MAM ilkeleriyle yönetilen uygulamalardan yazdırmayı yönetme
 Artık MAM ilkeleri olan uygulamalardan şirket verilerinin yazdırılmasını engelleyebilirsiniz. Bu ayar, [Azure portalından](/Intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) kullanılabilir ve gerek [iOS](/Intune/deploy-use/ios-mam-policy-settings), gerekse [Android](/Intune/deploy-use/android-mam-policy-settings) cihazlarında desteklenmektedir.
 <!--TFS 1014328-->
 
-## Bildirimler
+### <a name="support-for-fingerprints-on-android-devices"></a>Android cihazlarda parmak izi desteği
+Android mobil uygulama yönetimi (MAM) ilkeleri, artık kullanıcıların bir uygulamaya erişmek için PIN yazmak yerine parmak izi kullanmasına izin verir. Bunu ve [Android cihazları için diğer mobil uygulama yönetimi ilkesi ayarlarını burada bulabilirsiniz](/Intune/deploy-use/android-mam-policy-settings).
 
-### Android Samsung KNOX ile Intune uyumluluğu
+## <a name="notices"></a>Bildirimler
+
+### <a name="android-samsung-knox-compatibility-with-intune"></a>Android Samsung KNOX ile Intune uyumluluğu
 Samsung Galaxy Ace telefonunun bazı modelleri, Intune tarafından Samsung KNOX cihazları olarak yönetilemiyor. Bu cihazları Intune’a kaydettiğinizde, artık standart Android cihazları olarak yönetilecek.
 
 Etkilenen model numaraları:
@@ -86,7 +92,7 @@ Etkilenen model numaraları:
 
 Sizin ve son kullanıcılarınızın başka bir işlem yapması gerekmez. Daha fazla bilgi için [Samsung KNOX](https://www.samsungknox.com) web sitesini ziyaret edin.
 
-### Windows 8 için Şirket Portalı uygulaması kaldırılmıştır; Windows Phone 8 ve Windows RT platformları için destek kaldırılmaktadır
+### <a name="company-portal-app-for-windows-8-is-deprecated-support-for-windows-phone-8-and-windows-rt-platforms-are-being-deprecated"></a>Windows 8 için Şirket Portalı uygulaması kaldırılmıştır; Windows Phone 8 ve Windows RT platformları için destek kaldırılmaktadır
 Microsoft Intune, Ekim 2016'dan başlayarak Windows 8 Şirket Portalı için desteği kaldıracaktır. Microsoft Intune, ayrıca Windows Phone 8 ve Windows RT platformları için desteği de kaldıracaktır. Bu nedenle bundan sonra herhangi bir Windows Phone 8 veya Windows RT cihazını kaydetmeniz veya güncelleştirmeniz mümkün olmayacaktır.
 
 Daha önce kaydedilen Windows Phone 8, Windows RT ve Windows 8 cihazlarını yönetmeye devam edebilirsiniz. Windows 8 ve Windows Phone 8 cihazlarını Windows 8.1’e ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara bir kesinti olmadan uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
@@ -94,21 +100,21 @@ Daha önce kaydedilen Windows Phone 8, Windows RT ve Windows 8 cihazlarını yö
 Kasım 2016'dan itibaren Windows Phone 8 Şirket Portalı için desteği kaldıracağız.
 <!--TFS 1255391-->
 
-## Yakında
+## <a name="whats-coming"></a>Yakında
 
-### Windows 10 cihazları için Yeni Microsoft Intune Şirket Portalı
+### <a name="new-microsoft-intune-company-portal-available-for-windows-10-devices"></a>Windows 10 cihazları için Yeni Microsoft Intune Şirket Portalı
 Microsoft, Windows 10 cihazları için yeni bir Microsoft Intune Şirket Portalı'nı piyasaya sürüyor. Yeni Windows 10 Evrensel biçiminden yararlanan bu uygulama, kullanıcıya uygulama içinden güncelleştirilmiş bir kullanıcı deneyimi ve kullanıcının bugün kullanmakta olduğu işlevselliğin tümünü olanaklı kılmaya devam ederken, ister bilgisayar ister Mobil tüm Windows 10 cihazlarında aynı deneyimi sunacak.
 
 Yeni uygulama, kullanıcının Windows 10 cihazlarında çoklu oturum açma (SSO) ve sertifika tabanlı kimlik doğrulama gibi ek platform özelliklerinden yararlanmasını da sağlar. Uygulama, mevcut Windows 8.1 Şirket Portalı ve Windows Phone 8.1 Şirket Portalı için güncelleştirme olarak Windows Mağazası'ndan yüklenir. Daha fazla ayrıntı için bkz. [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
 <!--TFS 1016502-->
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Bulut Platformu yol haritası](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Cloud Platform yol haritası](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Önceki Intune sürümleri](previous-intune-releases.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

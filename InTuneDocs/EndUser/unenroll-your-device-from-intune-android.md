@@ -2,10 +2,10 @@
 title: "Android cihazınızın Intune kaydını silme | Microsoft Intune"
 description: "Android cihazının Intune kaydını nasıl silebileceğiniz açıklanır."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 891cf629725392beae1a6b8fbbb39f2bead8eb90
-ms.openlocfilehash: 17f7841daa79473b3c92cf50962b60b67224e4ee
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 350598f5fef3bcfa3b1421a70039f5af90aa56f9
 
 
 ---
 
 
-# Android cihazınızın Intune kaydını silme
+# <a name="unenroll-your-android-device-from-intune"></a>Android cihazınızın Intune kaydını silme
 
 Android cihazınızın Intune kaydını sildiğinizde cihazınız şirket kaynaklarına bir daha erişemez.  Kaydı sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
@@ -31,7 +31,7 @@ Cihazınızın Intune kaydını silmek ve Şirket Portalı uygulamasını kaldı
 
 1.  Şirket Portalı uygulamasında oturum açın.
 
-2.  **CİHAZLARIM**’a dokunun ve ardından kaydını silmek istediğiniz cihazı seçin.
+2.  **Cihazlarım**’a dokunun ve ardından kaydını silmek istediğiniz cihazı seçin.
 
     ![Kaydını silmek istediğiniz cihazı seçin.](./media/andr-1-my-devices-choose.png)
 
@@ -39,14 +39,14 @@ Cihazınızın Intune kaydını silmek ve Şirket Portalı uygulamasını kaldı
 
     ![Çöp kutusu simgesine dokunun.](./media/andr-2-tap-trashcan.png)
 
-    Uyarı sayfasında cihazınızın kaydını silmek için **Tamam** öğesine dokunun.
+4.  Uyarı sayfasında cihazınızın kaydını silmek için **Tamam** öğesine dokunun.
 
     ![Cihazı kaldırın.](./media/andr-3-warning-about-remove.png)
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine e-posta gönderin.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -14,17 +14,17 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5e41cbbf3bac3ed78ee3a6929e364f829fa1d4b
-ms.openlocfilehash: f8a25815662333fd48d7ea9df24f5f228cee8217
+ms.sourcegitcommit: 552473cb704ead5f7cc30a2311e2f722265bfcea
+ms.openlocfilehash: c7ecf73c28a8332bd3fe1465a2f64f7f09a7a690
 
 
 ---
 
-# Microsoft Intune’da Android mobil uygulaması yönetim ilkesi ayarları
+# <a name="android-mobile-app-management-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android mobil uygulaması yönetim ilkesi ayarları
 Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde mobil uygulama yönetimi (MAM) ilkesi için [yapılandırılabilir](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md).
 İlke ayarlarının, verileri yeniden konumlandırma ayarları ve erişim ayarları olmak üzere iki kategorisi vardır. Bu konuda, *ilkeyle yönetilen uygulamalar* terimi, MAM ilkeleriyle yapılandırılan uygulamaları ifade eder.
 
-##  Verileri yeniden konumlandırma ayarları
+##  <a name="data-relocation-settings"></a>Verileri yeniden konumlandırma ayarları
 
 - **Android yedeklemelerini engelleme:** İlkeyle yönetilen uygulamalardan şirket verilerini yedeklemeyi devre dışı bırakmak için **Evet**’i veya bu yedeklemeye izin vermek için **Hayır**’ı seçin.
 
@@ -74,7 +74,7 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penc
 
   Varsayılan değer = **Evet**.
 
-##  Erişim ayarları
+##  <a name="access-settings"></a>Erişim ayarları
 
 - **Erişim için PIN isteme:** İlkeyle yönetilen uygulamalarda kullanmak üzere bir PIN istemek için **Evet**’i seçin. Kullanıcıdan, uygulamayı iş bağlamında ilk kez çalıştırdığında bunu ayarlaması istenir.
 
@@ -83,7 +83,9 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penc
  -  **Basit PIN’e izin verme:** Kullanıcıların 1234 veya 1111 gibi basit PIN dizileri kullanmasına izin verilip verilmeyeceğini belirtin. Varsayılan değer = **Evet**.
  - **PIN Uzunluğu:** PIN’deki basamak sayısı alt sınırını belirtin. Varsayılan değer = **4**.
  - **PIN sıfırlanmadan önceki deneme sayısı:** Kullanıcının kaç PIN girişi denemesinden sonra PIN'i sıfırlaması gerekeceğini belirtin. Bu ayarın varsayılan değeri yoktur.
-- **Erişim için kuruluş kimlik bilgileri isteme:** Uygulama erişiminde PIN yerine şirket kimlik bilgilerinin istenmesi için **Evet**’i seçin. **Evet** olarak ayarlarsanız, bu ayar PIN veya Touch ID gereksinimlerini geçersiz kılar. Kullanıcıdan şirket kimlik bilgilerini belirtmesi istenir.
+ - **PIN yerine parmak izi iste (Android 6.0+):** Uygulama erişiminde numaralı bir PIN yerine parmak izi kimliği istemek için **Evet**’i seçin.
+ Android cihazlarda kullanıcının, kendini tanıtmak için numaralandırılmış PIN yerine parmak izi kullanmasına izin verebilirsiniz. Son kullanıcı, iş hesabını kullanarak bu uygulamaya erişmeyi denediğinde, PIN numarası girmek yerine parmak izi kimliğini vermesi istenir.
+ - **Erişim için kuruluş kimlik bilgileri iste**: Uygulama erişiminde PIN veya parmak izi yerine şirket kimlik bilgilerinin istenmesi için **Evet**’i seçin. **Evet** olarak ayarlarsanız, bu ayar PIN veya Touch ID gereksinimlerini geçersiz kılar. Kullanıcıdan şirket kimlik bilgilerini belirtmesi istenir.
 
   Varsayılan değer = **Hayır**.
 - **Yönetilen uygulamaların jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelleme:** Uygulamaların jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalıştırılmasını engellemek için **Evet**’i seçin. Kullanıcı kişisel görevler için uygulamaları kullanmaya devam edebilir, ancak iş için farklı bir cihaz kullanması gerekir.
@@ -105,6 +107,6 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penc
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

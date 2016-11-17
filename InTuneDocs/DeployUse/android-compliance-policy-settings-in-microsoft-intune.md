@@ -14,24 +14,24 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 20f61b9dec289252797650e7ef40ff4c5b7c0fbc
 
 
 ---
 
 
-# Microsoft Intune’da Android cihazları için uyumluluk ilkesi ayarları
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune’da Android cihazları için uyumluluk ilkesi ayarları
 
-Bu konu başlığı altında açıklanan ilke ayarları Android 4.0 ve üstünü veya Samsung KNOX 4.0 ve üstünü çalıştıran cihazlar için geçerlidir.
+Bu konu başlığı altında açıklanan ilke ayarları, Android 4.0 ve üzeri veya Samsung KNOX Standard 4.0 ve üzerini çalıştıran cihazlar için geçerlidir.
 
 Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bakın:
 > [!div class="op_single_selector"]
 - [iOS cihazları için uyumluluk ilkesi ayarları](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Windows cihazları için uyumluluk ilkesi ayarları](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Sistem güvenliği ayarları
-### Parola
+## <a name="system-security-settings"></a>Sistem güvenliği ayarları
+### <a name="password"></a>Parola
 - **Mobil cihazların kilidini açmak için parola iste:** Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini istemek için bunu **Evet** olarak ayarlayın.
 
 -  **En düşük parola uzunluğu:** Kullanıcı parolasının içermesi gereken en düşük rakam veya karakter sayısını belirtin.
@@ -55,10 +55,10 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 - **Cihaz boşta durumundan çıkarken parola iste:** Bu ayarı, **Parola istenmeden önce herhangi bir işlem yapılmadan geçecek dakika cinsinden süre** ayarıyla birlikte kullanın. **Parola istenmeden önce herhangi bir işlem yapılmadan geçecek dakika cinsinden süre** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için kullanıcıdan bir parola girmesi istenir.
 
-### Şifreleme
+### <a name="encryption"></a>Şifreleme
 - **Mobil cihazda şifreleme iste:** Cihazın kaynaklara bağlanma amacıyla şifrelenmesini istemek için bunu **Evet** olarak ayarlayın. **Mobil cihazların kilidini açmak için parola iste** ayarını seçtiğinizde cihazlar şifrelenir.
 
-## Cihaz sistem durumu ve güvenlik ayarları
+## <a name="device-health-and-security-settings"></a>Cihaz sistem durumu ve güvenlik ayarları
 
 - **Cihaza jailbreak uygulanmamış veya kök erişim izni verilmemiş olmaması gerekir**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
 - **Cihazların bilinmeyen kaynaklardan uygulama yüklemeyi önlemesini iste (Android 4.0 veya üzeri)** Üzerinde **Güvenlik**  >  **Bilinmeyen kaynaklar** etkinleştirilmiş cihazları engellemek için bu ayarı etkinleştirin ve **Evet** olarak işaretleyin.  
@@ -77,7 +77,7 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
   Daha fazla ayrıntı için bkz. [Uyumluluk ilkesinde cihaz tehdit koruması kuralını etkinleştirme](enable-device-threat-protection-rule-in-compliance-policy.md).
 
-## Cihaz özelliği ayarları
+## <a name="device-property-settings"></a>Cihaz özelliği ayarları
 - **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumlu değil olarak bildirilir.
   Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 
@@ -85,6 +85,6 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

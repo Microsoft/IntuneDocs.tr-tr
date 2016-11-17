@@ -2,10 +2,10 @@
 title: "Şirket Portalı’nı kullanarak Windows cihazınızı sıfırlarsanız ne olur? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bdb221d9c52231d31511b29cbdc69985bc0da5b2
-ms.openlocfilehash: 1cc7e4ad5abee16a0e06780b37c23903d196a018
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 99b625800c31259012f337eb344facd6bad47f75
 
 
 ---
 
 
-# Şirket Portalı’nı kullanarak Windows cihazınızı sıfırlarsanız ne olur?
+# <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak Windows cihazınızı sıfırlarsanız ne olur?
 
 Şirket Portalı uygulamasını veya [Şirket Portalı web sitesini](reset-your-device-cpwebsite.md) kullanarak Windows cihazınızı sıfırladığınızda, cihazınız fabrika ayarlarına sıfırlanır ve tüm uygulamalar, ayarlar ve kişisel verileriniz de dahil olmak üzere tüm veriler silinir. Her cihazda ne olacağı (aşağıdaki tabloda açıklandığı gibi) sahip olduğunuz cihaz türüne ve cihazı nasıl kullandığınıza bağlıdır. Kaybolan ya da çalınan cihazınızı sıfırlamaya ilişkin yönergeler için bkz. [Kaybolan veya çalışan cihazınızı sıfırlama (silme)](reset-erase-your-lost-or-stolen-device-windows.md).
 
@@ -36,6 +36,6 @@ Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

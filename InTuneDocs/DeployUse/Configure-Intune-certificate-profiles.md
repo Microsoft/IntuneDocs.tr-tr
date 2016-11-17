@@ -2,8 +2,8 @@
 title: "Sertifika profillerini yapılandırma | Microsoft Intune"
 description: "Intune sertifika profilinin nasıl oluşturulacağını öğrenin."
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
-ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
 
 
 ---
 
-# Intune sertifika profillerini yapılandırma
+# <a name="configure-intune-certificate-profiles"></a>Intune sertifika profillerini yapılandırma
 Altyapınızı ve sertifikalarınızı [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md) veya [PFX için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-pfx.md) bölümlerinde anlatıldığı gibi yapılandırdıktan sonra sertifika profilleri oluşturabilirsiniz. İşlem şöyledir:
 
 - **Görev 1**: Güvenilen Kök CA sertifikasını dışarı aktarın
@@ -29,15 +29,15 @@ Altyapınızı ve sertifikalarınızı [SCEP için sertifika altyapısını yap�
   - SCEP sertifika profilleri
   - .PFX Sertifika profilleri
 
-## **Görev 1**: Güvenilen Kök CA sertifikasını dışarı aktarın
+## <a name="task-1-export-the-trusted-root-ca-certificate"></a>**Görev 1**: Güvenilen Kök CA sertifikasını dışarı aktarın
 Güvenilen Kök Sertifika Yetkilileri (CA) sertifikasını, veren CA'dan veya veren CA'nıza güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarın. Özel anahtarı dışarı aktarmayın.
 
 Güvenilen sertifika profili ayarlarken bu sertifikayı içeri aktaracaksınız.
 
-## **Görev 2**: Güvenilen sertifika profilleri oluşturun
+## <a name="task-2-create-trusted-certificate-profiles"></a>**Görev 2**: Güvenilen sertifika profilleri oluşturun
 Bir Basit Sertifika Kayıt Protokolü (SCEP) veya PKCS #12 (.PFX) sertifika profili oluşturabilmeniz için önce bir Güvenilen sertifika profili oluşturmalısınız. Her mobil cihaz platformu için bir Güvenilen sertifika profiline ve bir SCEP veya .PFX profiline ihtiyacınız vardır.
 
-### Güvenilen bir sertifika profili oluşturmak için
+### <a name="to-create-a-trusted-certificate-profile"></a>Güvenilen bir sertifika profili oluşturmak için
 
 1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin ve bir cihaz platformu seçin. Bu cihazlar için bir güvenilen sertifika profili oluşturabilirsiniz:
 
@@ -53,14 +53,15 @@ Bir Basit Sertifika Kayıt Protokolü (SCEP) veya PKCS #12 (.PFX) sertifika prof
 
 -  Windows Phone 8.1 ve üzeri
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 2.  Bir **Güvenilen Sertifika Profili** ekleyin.
 
     Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Android, iOS, Mac OS X, Windows 8.1 veya Windows Phone 8.1 Güvenilen sertifika profili ayarlarını yapılandırmak için istenen bilgileri girin. 
+3.  Android, iOS, Mac OS X, Windows 8.1 veya Windows Phone 8.1 Güvenilen sertifika profili ayarlarını yapılandırmak için istenen bilgileri girin.
 4.  **Sertifika dosyası** ayarında, sertifika veren CA’nızdan dışarı aktardığınız Güvenilen Kök CA sertifikasını (.cer dosyası) içeri aktarın. **Hedef depo** ayarı yalnızca Windows 8.1 ve üstünü çalıştıran cihazlara, cihazın birden çok hedef deposu olması durumunda uygulanır.
-    
+
 4.  **İlkeyi Kaydet**’i seçin.
 
 Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabilirsiniz.
@@ -68,12 +69,12 @@ Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabil
 > [!NOTE]
 >
 > Android ve Android for Work cihazları, bir üçüncü tarafın güvenli sertifika yüklediğini belirten bir bildirim görüntüler.
-    
 
-## **Görev 3**: SCEP veya .PFX sertifika profilleri oluşturma
+
+## <a name="task-3-create-scep-or-pfx-certificate-profiles"></a>**Görev 3**: SCEP veya .PFX sertifika profilleri oluşturma
 Güvenilen CA sertifika profilini oluşturduktan sonra, kullanmak istediğiniz her platform için SCEP veya .PFX sertifika profilleri oluşturun. Bir SCEP sertifika profili oluştururken, aynı platform için bir Güvenilen sertifika profili belirtmeniz gerekir. Bu, iki sertifika profilini birbirine bağlasa da her profili ayrı olarak dağıtmalısınız.
 
-### Bir SCEP sertifika profili oluşturmak için
+### <a name="to-create-an-scep-certificate-profile"></a>Bir SCEP sertifika profili oluşturmak için
 
 1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin ve bir cihaz platformu seçin.  Bu cihazlar için bir SCEP sertifika profili oluşturabilirsiniz:
 
@@ -90,7 +91,7 @@ Güvenilen CA sertifika profilini oluşturduktan sonra, kullanmak istediğiniz h
 -  Windows Phone 8.1 ve üzeri
 
 2.  Bir **SCEP Sertifika Profili** ilkesi ekleme
-    
+
     Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  SCEP sertifika profili ayarlarını yapılandırmak için, profil yapılandırma sayfasındaki yönergeleri izleyin.
@@ -108,7 +109,7 @@ Güvenilen CA sertifika profilini oluşturduktan sonra, kullanmak istediğiniz h
 
 Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabilirsiniz.
 
-### Bir .PFX sertifika profili oluşturmak için
+### <a name="to-create-a-pfx-certificate-profile"></a>Bir .PFX sertifika profili oluşturmak için
 
 1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin ve bir cihaz platformu seçin. . PFX sertifikaları aşağıdakilerde desteklenir:
   - Android 4 ve üzeri
@@ -117,15 +118,15 @@ Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabil
   - Windows Phone 10 ve üzeri
   - iOS 8.0 ve üzeri)    
 
-    
-2.  Bir **.PFX Sertifika Profili** ilkesi ekleyin. 
+
+2.  Bir **.PFX Sertifika Profili** ilkesi ekleyin.
       Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  İlke formunda istenen bilgileri girin.
 4.  **İlkeyi Kaydet**’i seçin.
 
 Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabilirsiniz.
 
-## Sertifika profilleri dağıtma
+## <a name="deploy-certificate-profiles"></a>Sertifika profilleri dağıtma
 Sertifika profilleri dağıtırken Güvenilen CA sertifika profilinden alınan sertifika dosyası cihaza yüklenir. Cihaz, bir sertifika isteği oluşturmak için SCEP veya .PFX sertifika profilini kullanır.
 
 Sertifika profilleri, yalnızca profili oluştururken kullandığınız platformu çalıştıran cihazlara yüklenir.
@@ -146,7 +147,7 @@ Sertifika profillerini, Intune için diğer ilkeleri dağıttığınız şekilde
 
 Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt kısmında dağıtım hakkında daha fazla bilgi görebilirsiniz.
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 
 Bundan sonra sertifikaları e-posta, Wi-Fi ve VPN profillerinin güvenliğini sağlamak için nasıl kullanacağınızı öğrenin.
 
@@ -156,6 +157,6 @@ Bundan sonra sertifikaları e-posta, Wi-Fi ve VPN profillerinin güvenliğini sa
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

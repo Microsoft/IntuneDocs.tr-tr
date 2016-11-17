@@ -2,7 +2,7 @@
 title: "Cihazınızı Intune’a kaydettiğiniz BT yöneticiniz neleri görebilir? | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f69d2b222e9409a79dae07fd77f29c46876f11cb
-ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 4563673f1c38cbe29e7cf27e94e8b32411c6c089
 
 
 ---
 
 
-# Cihazınızı Intune’a kaydettiğiniz BT yöneticiniz neleri görebilir?
+# <a name="what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune"></a>Cihazınızı Intune’a kaydettiğiniz BT yöneticiniz neleri görebilir?
 
 Windows cihazınızı Intune’a kaydettiğinizde, BT yöneticinize cihazınızdaki şirket bilgilerinin korunmasına yardımcı olmak için cihazınızı yönetme izni vermiş olursunuz.
 
@@ -62,6 +62,6 @@ Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yüklediğinizde ve
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
