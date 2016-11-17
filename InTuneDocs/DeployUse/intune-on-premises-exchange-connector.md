@@ -1,9 +1,9 @@
 ---
-title: "Şirket içi EAS için Exchange bağlayıcısı | Microsoft Intune"
+title: "Şirket içi EAS için Exchange Connector | Microsoft Intune"
 description: "Bağlayıcı aracını kullanarak, Exchange ActiveSync MDM için Intune yönetim konsoluyla şirket içi Exchange Server arasında iletişimi etkinleştirin."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -14,32 +14,32 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 07ed8c922d53169839bba50547f56bbc979d58ac
+ms.sourcegitcommit: c84b1e95b32ec878fffa001d0234940ebfb35576
+ms.openlocfilehash: 16f8520e6f302c1896039aa5a11b0002e87959c9
 
 
 ---
 
-# Intune Şirket İçi Exchange Bağlayıcısı’nı yükleme
+# <a name="install-the-intune-onpremises-exchange-connector"></a>Intune Şirket İçi Exchange Connector’ı yükleme
 
 
-Microsoft Intune’la mobil cihazların posta kutularını barındıran Exchange Server'ın iletişim kurmasını sağlayan bir bağlantı ayarlamak için, Intune yönetici konsolundan Şirket İçi Bağlayıcı aracını indirip yapılandırmanız gerekir. Intune, abonelik başına herhangi bir türde tek bir Exchange bağlayıcısı bağlantısını destekler.
+Microsoft Intune’la mobil cihazların posta kutularını barındıran Exchange Server'ın iletişim kurmasını sağlayan bir bağlantı ayarlamak için Intune yönetici konsolundan Şirket İçi Exchange Connector’ı indirip yapılandırmanız gerekir. Intune, abonelik başına herhangi bir türde tek bir Exchange Connector bağlantısını destekler.
 
-## Şirket İçi Bağlayıcı Gereksinimleri
-Aşağıdaki tabloda Şirket İçi Exchange Bağlayıcısı’nı yüklediğiniz bilgisayara ilişkin gereksinimler listelenmiştir.
+## <a name="onpremises-exchange-connector-requirements"></a>Şirket içi Exchange Connector gereksinimleri
+Aşağıdaki tabloda Şirket İçi Exchange Connector’ı yüklediğiniz bilgisayara ilişkin gereksinimler listelenmiştir.
 
 |Gereksinim|Daha fazla bilgi|
 |---------------|--------------------|
-|İşletim sistemleri|Intune; Windows Server 2008 SP2 64 bit, Windows Server 2008 R2, Windows Server 2012 veya Windows Server 2012 R2’nin herhangi bir sürümünü çalıştıran bilgisayarlarda Şirket İçi Exchange Bağlayıcısı’nı destekler.<br /><br />Bağlayıcı hiçbir Sunucu Çekirdeği yüklemesinde desteklenmez.|
-|Microsoft Exchange sürümü|Her iki şirket içi Bağlayıcı için de Microsoft Exchange 2010 SP1 veya üstü ya da eski Exchange Online Dedicated gerekir. Exchange Online Dedicated ortamınızın **yeni** yapılandırmada mı yoksa **eski** yapılandırmada mı olduğunu belirlemek için hesap yöneticinize başvurun.|
+|İşletim sistemleri|Intune; Windows Server 2008 SP2 64 bit, Windows Server 2008 R2, Windows Server 2012 veya Windows Server 2012 R2’nin herhangi bir sürümünü çalıştıran bilgisayarlarda Şirket İçi Exchange Connector’ı destekler.<br /><br />Bağlayıcı hiçbir Sunucu Çekirdeği yüklemesinde desteklenmez.|
+|Microsoft Exchange|Şirket içi Bağlayıcılar için Microsoft Exchange 2010 SP1 veya üzeri ya da eski Exchange Online Dedicated gerekir. Exchange Online Dedicated ortamınızın **yeni** yapılandırmada mı yoksa **eski** yapılandırmada mı olduğunu belirlemek için hesap yöneticinize başvurun.|
 |Mobil cihaz yönetimi yetkilisi| [Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama](prerequisites-for-enrollment.md#set-mobile-device-management-authority).|
-|Donanım|Bağlayıcıyı yüklediğiniz bilgisayar 2 GB ram ve 10 GB boş disk alanı en düşük donanımı ile birlikte 1,6 GHz CPU gerektirir.|
-|Active Directory Eşitlemesi|Intune’u Exchange Server'a bağlamak üzere herhangi bir bağlayıcıyı kullanabilmeniz için, yerel kullanıcılarınızın ve güvenlik gruplarınızın Azure Active Directory örneğinizle eşitlenebilmesi amacıyla [Active Directory eşitlemesini](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ayarlamanız gerekir.|
-|Ek yazılım|Bağlayıcıyı barındıran bilgisayara Microsoft .NET Framework 4 ve Windows PowerShell 2.0 tam yüklemesi yapılmalıdır.|
+|Donanım|Bağlayıcıyı yüklediğiniz bilgisayar 2 GB RAM ve 10 GB boş disk alanı ile birlikte 1,6 GHz CPU gerektirir.|
+|Active Directory eşitlemesi|Intune’u Exchange Server'a bağlamak üzere Bağlayıcıyı kullanabilmeniz için yerel kullanıcılarınızın ve güvenlik gruplarınızın Azure Active Directory örneğinizle eşitlenebilmesi amacıyla [Active Directory eşitlemesini](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ayarlamanız gerekir.|
+|Ek yazılım|Bağlayıcıyı barındıran bilgisayara Microsoft .NET Framework 4.5 ve Windows PowerShell 2.0 tam yüklemesi yapılmalıdır.|
 |Ağ|Bağlayıcıyı yüklediğiniz bilgisayar, Exchange Server'ı barındıran etki alanı ile güven ilişkisi olan bir etki alanında olmalıdır.<br /><br />Bilgisayar, 80 ve 443 numaralı Bağlantı Noktaları üzerinden güvenlik duvarları ve proxy sunucular aracılığıyla Intune hizmetine erişmesine olanak sağlayacak yapılandırmalar gerektirir. Intune tarafından kullanılan etki alanları manage.microsoft.com, &#42;manage.microsoft.com ve &#42;.manage.microsoft.com’dur.|
-|Barındırılan Exchange yapılandırılmış ve çalışıyor|Daha fazla bilgi için bkz. [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx). |
 
-### Exchange cmdlet gereksinimleri
+
+### <a name="exchange-cmdlet-requirements"></a>Exchange cmdlet gereksinimleri
 
 Intune Exchange Bağlayıcısı tarafından kullanılacak bir Active Directory kullanıcı hesabı oluşturmanız gerekir. Hesabın aşağıdaki gerekli Windows PowerShell Exchange cmdlet'lerini çalıştırma izni olması gerekir:
 
@@ -57,81 +57,81 @@ Intune Exchange Bağlayıcısı tarafından kullanılacak bir Active Directory k
  -   Set-ADServerSettings
  -   Get-Command
 
-## Şirket İçi Exchange Bağlayıcısı yazılım yükleme paketini indirme
+## <a name="download-the-onpremises-exchange-connector-software-installation-package"></a>Şirket İçi Exchange Connector yazılım yükleme paketini indirme
 
-1. Şirket İçi Exchange Bağlayıcısı için desteklenen bir Windows Server işletim sisteminde, Exchange kiracısında yönetici olan ve Exchange Server’ı kullanma lisansı bulunan bir kullanıcı hesabıyla [Microsoft Intune yönetim konsolunu](http://manage.microsoft.com) (http://manage.microsoft.com) açın.
+1. Şirket İçi Exchange Connector için desteklenen bir Windows Server işletim sisteminde, Exchange kiracısında yönetici olan ve Exchange Server’ı kullanma lisansı bulunan bir kullanıcı hesabıyla [Microsoft Intune yönetim konsolunu](http://manage.microsoft.com) (http://manage.microsoft.com) açın.
 ![Exchange Bağlantısını Ayarla sayfasını açın](../media/ExchangeConnector.gif)
 
-2.  Çalışma alanı kısayol bölmesinde **Yönetici**’yi seçin, **Mobil Cihaz Yönetimi** > **Microsoft Exchange**’i seçin ve sonra da **Exchange Bağlantısını Ayarla**’yı seçin.
+2.  Çalışma alanı kısayolları bölmesinde, **Yönetici**>**Mobil Cihaz Yönetimi** > **Microsoft Exchange**>**Exchange Bağlantısını Ayarla**'yı seçin.
 
 3.  **Exchange Bağlantısı Ayarla** sayfasında **Şirket İçi Bağlayıcı'yı İndir**'i seçin.
 
-4.  Şirket İçi Exchange Bağlayıcısı, açılabilen veya kaydedilebilen sıkıştırılmış (.zip) bir klasörde yer alır. **Dosya İndirme** iletişim kutusunda **Kaydet**'i seçerek sıkıştırılmış klasörü güvenli bir konuma depolayın.
+4.  Şirket İçi Exchange Connector, açılabilen veya kaydedilebilen sıkıştırılmış (.zip) bir klasörde yer alır. **Dosya İndirme** iletişim kutusunda **Kaydet**'i seçerek sıkıştırılmış klasörü güvenli bir konuma depolayın.
 
 > [!IMPORTANT]
-> Şirket İçi Exchange Bağlayıcısı klasöründeki dosyaları yeniden adlandırmayın veya taşımayın. Klasörün içeriğini taşımak veya yeniden adlandırmak, yüklemenin çalışmamasına neden olur.
+> Şirket İçi Exchange Connector klasöründeki dosyaları yeniden adlandırmayın veya taşımayın. Klasörün içeriğini taşımak veya yeniden adlandırmak, yüklemenin başarısız olmasına neden olur.
 
-## Intune Şirket İçi Exchange Bağlayıcısı’nı yükleme ve yapılandırma
-Intune Şirket İçi Exchange Bağlayıcısı'nı yüklemek için aşağıdaki adımları gerçekleştirin. Şirket İçi Exchange Bağlayıcıysa, Intune aboneliği başına yalnızca bir kez ve yalnızca bir bilgisayara yüklenebilir. Bir Şirket İçi Exchange Bağlayıcısı daha yapılandırmayı denerseniz, yeni bağlantı ilkinin yerini alır.
+## <a name="install-and-configure-the-intune-onpremises-exchange-connector"></a>Intune Şirket İçi Exchange Connector’ı yükleme ve yapılandırma
+Intune Şirket İçi Exchange Connector'ı yüklemek için aşağıdaki adımları gerçekleştirin. Şirket İçi Exchange Connector, Intune aboneliği başına yalnızca bir kez ve yalnızca bir bilgisayara yüklenebilir. Bir Şirket İçi Exchange Connector daha yapılandırmayı denerseniz, yeni bağlantı ilkinin yerini alır.
 
 1.  Şirket İçi Bağlayıcı için desteklenen işletim sistemlerinden birinde, **Exchange_Connector_Setup.zip** içindeki dosyaları güvenli bir konuma ayıklayın.
 
-2.  Dosyalar ayıklandıktan sonra, Şirket İçi Bağlayıcı'yı yüklemek için ayıklanan klasörü açın ve **Exchange_Connector_Setup.exe** dosyasına çift tıklayın.
+2.  Dosyalar ayıklandıktan sonra, Şirket İçi Exchange Connector'ı yüklemek için ayıklanan klasörü açın ve **Exchange_Connector_Setup.exe** dosyasına çift tıklayın.
 
     > [!IMPORTANT]
     > Hedef klasör güvenli bir konum değilse, Şirket İçi Bağlayıcı'yı yükledikten sonra **WindowsIntune.accountcert** sertifika dosyasını silmelisiniz.
 
-3.  **Exchange sunucusu** alanında, **Şirket İçi Microsoft Exchange Server** veya **Barındırılan Microsoft Exchange Server** arasından Exchange sunucusu ortam türünüzü seçin.
+3.  **Microsoft Intune Exchange Connector** iletişim kutusunda, **Şirket içi Microsoft Exchange Server** veya **Barındırılan Microsoft Exchange Server** seçeneklerinden birini belirleyin.
 
   ![Exchange Server türünü seçin](../media/IntuneSA1dconfigureExchConnector.png)
 
-  Şirket içi Exchange sunucusu için, **İstemci Erişimi Sunucu** rolünü barındıran Exchange sunucusunun sunucu adını veya tam etki alanı adını belirtin.
+  Şirket içi Exchange sunucusu için **İstemci Erişimi Sunucu** rolünü barındıran Exchange sunucusunun sunucu adını veya tam etki alanı adını belirtin.
 
   Barındırılan bir Exchange sunucusu için, Exchange sunucusunun adresini belirtin. Barındırılan Exchange sunucusunun URL'sini bulmak için:
 
-      1.  Office 365 için Outlook Web App'i açın.
+    1. Office 365 için Outlook Web App'i açın.
 
-      2.  “?” öğesini seçin simgesine tıklayın ve **Hakkında**’yı seçin.
+    2. Sol üst taraftaki **?** simgesini ve ardından **Hakkında**’yı seçin.
 
-      3.   **POP Dış Sunucu** değerini bulun.
+    3.  **POP Dış Sunucu** değerini bulun.
 
-      4.  Barındırılan Exchange sunucunuzun proxy sunucusu ayarlarını belirtmek için **Proxy Sunucusu**'nu seçin.
-        1.   **Mobil cihaz bilgileri eşitlenirken proxy sunucusu kullan**'ı seçin.
+    4. Barındırılan Exchange sunucunuzun proxy sunucusu ayarlarını belirtmek için **Proxy Sunucusu**'nu seçin.
+        1.  **Mobil cihaz bilgileri eşitlenirken proxy sunucusu kullan**'ı seçin.
 
-        2.  Sunucuya erişmek için kullanılan **proxy sunucusu adı** ve **bağlantı noktası numarasını** belirtin.
+        2. Sunucuya erişmek için kullanılan **proxy sunucusu adı** ve **bağlantı noktası numarasını** belirtin.
 
-        3.  Proxy sunucusuna erişmek için kullanıcı kimlik bilgilerinin sağlanması gerekiyorsa, Proxy sunucusuna bağlanmak için kimlik bilgilerini kullan'ı seçin, ardından **etkialanı\kullanıcı** ve **parola** girin.
+        3. Proxy sunucusuna erişmek için kullanıcı kimlik bilgilerinin sağlanması gerekiyorsa, **Proxy sunucusuna bağlanmak için kimlik bilgilerini kullan**'ı seçin. Ardından **etki alanı\kullanıcı** ve **parola** girin.
 
-        4.  **Tamam**’ı seçin.
+        4. **Tamam**’ı seçin.
 
-5.  Exchange sunucunuza bağlanmak için gereken kimlik bilgilerini (**Kullanıcı (Etki alanı/kullanıcı)** ve **Parola**) sağlayın.
+    5. **Kullanıcı (Etki alanı\kullanıcı)** ve **Parola** alanlarında Exchange sunucunuza bağlanmak için gereken kimlik bilgilerini sağlayın.
 
-6.  Kullanıcıların Exchange posta kutularına bildirim göndermek için gereken yönetici kimlik bilgilerini sağlayın. Bu bildirimler Intune kullanılarak Koşullu Erişim ilkeleriyle yapılandırılabilir.
+    6.  Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken yönetici kimlik bilgilerini sağlayın. Bu bildirimleri Intune’da Koşullu Erişim ilkeleriyle yapılandırabilirsiniz.
 
-    Otomatik Bulma hizmeti ve Exchange Web Hizmetleri'nin Exchange İstemci Erişimi Sunucusu'nda yapılandırıldığından emin olun. Bu konu hakkında daha fazla bilgi için bkz. [İstemci Erişimi sunucusu](https://technet.microsoft.com/library/dd298114.aspx).
+        Otomatik Bulma hizmeti ve Exchange Web Hizmetleri'nin Exchange İstemci Erişimi Sunucusu'nda yapılandırıldığından emin olun. Daha fazla bilgi için bkz. [İstemci Erişimi sunucusu](https://technet.microsoft.com/library/dd298114.aspx).
 
-7.  **Parola** alanında, Intune’un Exchange Server'a erişmesini etkinleştirmek için bu hesabın parolasını sağlayın.
+    7.  **Parola** alanında, Intune’un Exchange Server'a erişmesini etkinleştirmek için bu hesabın parolasını sağlayın.
 
-8. **Bağlan**’ı seçin.
+    8. **Bağlan**’ı seçin.
 
-    Bağlantının ayarlanması birkaç dakika sürebilir.
+Bağlantının yapılandırılması birkaç dakika sürebilir.
 
-Yapılandırma sırasında Exchange Bağlayıcısı İnternet erişimini sağlamak için proxy ayarlarınızı depolar. Proxy ayarlarınız değişirse, güncelleştirilen proxy ayarlarını Exchange Bağlayıcısı’na uygulamak için Exchange Bağlayıcısı’nı yeniden yapılandırmanız gerekir.
+Yapılandırma sırasında Exchange Bağlayıcısı İnternet erişimini sağlamak için proxy ayarlarınızı depolar. Proxy ayarlarınız değişirse, güncelleştirilen proxy ayarlarını Exchange Connector’a uygulamak için Exchange Connector’ı yeniden yapılandırmanız gerekir.
 
-Exchange Bağlayıcısı bağlantıyı ayarladıktan sonra, Exchange Bağlayıcısı’nda yönetilen kullanıcılarla ilişkili mobil cihazlar otomatik olarak eşitlenir ve Exchange Bağlayıcısı’na eklenir. Bu eşitlemenin tamamlanması biraz sürebilir.
+Exchange Connector bağlantıyı ayarladıktan sonra, Exchange Connector’da yönetilen kullanıcılarla ilişkili mobil cihazlar otomatik olarak eşitlenir ve Exchange Connector’a eklenir. Bu eşitlemenin tamamlanması biraz sürebilir.
 
 > [!NOTE]
-> Şirket İçi Exchange Bağlayıcısı'nı yüklediyseniz ve ileride Exchange bağlantısını silerseniz, Şirket İçi Exchange Bağlayıcısı'nı yüklü olduğu bilgisayardan kaldırmanız gerekir.
+> Şirket İçi Exchange Connector'ı yüklediyseniz ve ileride Exchange bağlantısını silerseniz, Şirket İçi Exchange Connector'ı yüklü olduğu bilgisayardan kaldırmanız gerekir.
 
-## Exchange bağlantısını doğrulama
+## <a name="validate-the-exchange-connection"></a>Exchange bağlantısını doğrulama
 
-Exchange Bağlayıcısı’nı başarıyla yapılandırdıktan sonra, bağlantının durumunu ve son başarılı eşitleme girişimini görüntüleyebilirsiniz. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **YÖNETİCİ** çalışma alanını seçin ve **Mobil Cihaz Yönetimi**’nin altında **Microsoft Exchange**’i seçin. Ardından, sağladığınız ayrıntıların **Exchange Bağlantı Bilgileri** altında gösterildiğini doğrulayın.
+Exchange Bağlayıcısı’nı başarıyla yapılandırdıktan sonra, bağlantının durumunu ve son başarılı eşitleme girişimini görüntüleyebilirsiniz. [Microsoft Intune yönetici konsolunda](http://manage.microsoft.com) **YÖNETİCİ** çalışma alanını seçin. **Mobil Cihaz Yönetimi**’nin altında **Microsoft Exchange**’i seçin ve ardından, sağladığınız ayrıntıların **Exchange Bağlantı Bilgileri** altında gösterildiğini doğrulayın.
 
 
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

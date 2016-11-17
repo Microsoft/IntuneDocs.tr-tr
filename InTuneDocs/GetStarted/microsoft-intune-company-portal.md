@@ -2,29 +2,29 @@
 title: "Microsoft Intune Şirket Portalı | Microsoft Intune"
 description: "Intune Şirket Portalı’nı ayarlama"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jve
+ms.reviewer: jve, arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
-ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
+ms.sourcegitcommit: 4ae0bd214dbae7e459f52b79e388aab23b5d6e8e
+ms.openlocfilehash: bea321c455a13a11766f19de42df193cefecf05f
 
 
 ---
 
-# Microsoft Intune Şirket Portalı
+# <a name="microsoft-intune-company-portal"></a>Microsoft Intune Şirket Portalı
 
 Intune’u ayarlamadan önce bu konuyu ve [Microsoft Intune’a başlamadan önce bilmeniz gerekenler](what-to-know-before-you-start-microsoft-intune.md) konusunda listelenen gereksinimleri gözden geçirin.
 
-Intune Şirket Portalı, kullanıcıların şirket verilerine ve uygulamalarına erişmesini sağlayan bir araçtır. Şirket Portalı iki biçimde sağlanır:
+Intune Şirket Portalı, kullanıcıların şirket verilerine ve uygulamalarına erişmesini sağlar. Şirket Portalı iki biçimde sağlanır:
 
 -   **Şirket portalı uygulaması**: [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile yönettiğiniz cihazlarda kullanılabilen bir uygulama. [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) ve [Windows](/Intune/EndUser/using-your-windows-device-with-intune) için Şirket Portalı uygulamaları hakkında daha fazla bilgi edinin.
 
@@ -54,13 +54,13 @@ Kullanıcıların Şirket Portalı’na erişebilmesi için, önce kullanıcı h
 
 > __iOS__: iOS için Şirket Portalı uygulaması Apple iOS App Store’da [tüm kullanılabilir bölgelerde](https://go.microsoft.com/fwlink/?linkid=831284) yayınlanmıştır.
 
-> __Android__: Android için Şirket Portalı uygulaması Antigua ve Barbuda, Aruba, Benin, Burkina Faso, Çin, Gabon, Gine-Bissau, Haiti, Hollanda Antilleri, İran, Kamboçya, Küba, Laos, Mali, Mozambik, Myanmar (Burma), Nijer, Papua Yeni Gine, Sudan, Togo. Bu ülkelerde, [Şirket Portalı uygulamasının Android sürümünü dışarıdan yüklemek](https://www.microsoft.com/en-us/download/details.aspx?id=49140) alternatif bir çözümdür.  
+> __Android__: Android için Şirket Portalı uygulaması şu anda Çin'de kullanılmamaktadır. Bu ülkelerde, [Şirket Portalı uygulamasının Android sürümünü dışarıdan yüklemek](https://www.microsoft.com/en-us/download/details.aspx?id=49140) alternatif bir çözümdür.  
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

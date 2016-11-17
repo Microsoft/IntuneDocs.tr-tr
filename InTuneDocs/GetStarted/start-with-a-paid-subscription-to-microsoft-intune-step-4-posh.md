@@ -1,9 +1,9 @@
 ---
 title: "Intune lisanslarını PowerShell kullanarak yönetme | Microsoft Intune"
-description: "Intune lisanslarını PowerShell kullanarak yönetme"
+description: "Intune lisanslarını PowerShell ile yönetme"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -14,8 +14,8 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
-ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 116069454002567d412d059ffcfafe6c7178b197
 
 
 ---
@@ -68,6 +68,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 4. adımını tamamladın�
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

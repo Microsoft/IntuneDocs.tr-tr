@@ -2,8 +2,8 @@
 title: "Intune ile kullanılacak Symantec kurumsal kod imzalama sertifikasını yenileme | Microsoft Intune"
 description: "Belirli Windows ve Windows Phone mobil cihazlarını yönetmek için kullanılan Symantec sertifikalarını yenileme rehberi"
 keywords: 
-author: NathBarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
@@ -13,17 +13,17 @@ ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: afb669f1e867b386bfb5a80bbb4a665be7b71478
+ms.sourcegitcommit: 8fd2a90025ae9310a214978cd2d42ea7ad035fa3
+ms.openlocfilehash: 2479f8065a2bb46e63b0e3971700a8d2c0982755
 
 
 ---
 
-# Windows cihazlar için Symantec enterprise kod imzalama sertifikasını yenileme
+# <a name="renew-a-symantec-enterprise-codesigning-certificate-for-windows-devices"></a>Windows cihazlar için Symantec enterprise kod imzalama sertifikasını yenileme
 
-Belirli Windows ve Windows Phone mobil cihazlarını yönetmek için kullanılan Symantec sertifikasının düzenli aralıklarla yenilenmesi gerekir. Windows Phone 8.0 cihazlarının kaydı için imzalı bir Şirket Portalı uygulaması ve kod imzalama sertifikası gereklidir. Daha yeni Windows Phone cihazları, Mağaza'dan yüklenen şirket portalı uygulamasını kullanabilir. İş kolu uygulamalarını dağıtmak için de bir kod imzalama sertifikası gereklidir.
+Belirli Windows ve Windows Phone mobil uygulamalarını dağıtmak için kullanılan Symantec sertifikasının düzenli aralıklarla yenilenmesi gerekir.
 
-## Symantec kurumsal kod imzalama sertifikasını yenileme
+## <a name="how-to-renew-the-symantec-enterprise-codesigning-certificate"></a>Symantec kurumsal kod imzalama sertifikasını yenileme
 
 1.  Sertifikanın süresi dolmadan yaklaşık 14 gün önce Symantec tarafından gönderilen yenileme e-postasını bulun. Bu e-posta, kurumsal sertifikanızı yenileme hakkında Symantec tarafından gönderilen yönergeleri içerir.
 
@@ -33,7 +33,7 @@ Belirli Windows ve Windows Phone mobil cihazlarını yönetmek için kullanılan
 
 3.  Yenileme onaylandıktan ve ücreti ödenen sonra, sertifikayı indirin.
 
-## Windows Phone 8.0 için güncelleştirilmiş sertifika yükleme
+## <a name="how-to-install-the-updated-certificate-for-windows-phone-80"></a>Windows Phone 8.0 için güncelleştirilmiş sertifika yükleme
 
 1.  Burada bulunan en son Windows Phone Şirket Portalı’nı indirip imzalayın: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
@@ -47,7 +47,7 @@ Belirli Windows ve Windows Phone mobil cihazlarını yönetmek için kullanılan
 
 Güncelleştirilmiş kod imzalama sertifikasını sağlamanın şu an için tek yolu imzalı bir SSP.xap dosyası sağlamaktır. İmzalı iş kolu uygulamalarını desteklemek için, kullanıcılarınız Şirket Portalı uygulamasını mağazadan yüklese bile bir Şirket Portalı uygulamasını imzalayıp karşıya yüklemeniz gerekir.
 
-## Windows Phone 8.1 ve üstü cihazlar için güncelleştirilmiş sertifika yükleme
+## <a name="how-to-install-the-updated-certificate-for-windows-phone-81-and-later-devices"></a>Windows Phone 8.1 ve üstü cihazlar için güncelleştirilmiş sertifika yükleme
 
 1.  Burada bulunan İndirme Merkezi’nden en son Windows Phone Şirket Portalı’nı indirip imzalayın: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
@@ -60,12 +60,12 @@ Güncelleştirilmiş kod imzalama sertifikasını sağlamanın şu an için tek 
 5.  Yeni sertifikayı kullanarak tüm yeni ve güncelleştirilmiş kurumsal iş kolu uygulamalarını imzalayın. Mevcut uygulamaların yeniden imzalanması ve dağıtılması gerekmez.
 
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Windows Phone 8.0 yönetimini ayarlama](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 [Windows Phone yönetimini ayarlama](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

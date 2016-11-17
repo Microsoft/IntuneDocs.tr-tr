@@ -2,8 +2,8 @@
 title: "Yapılandırma sonrası görevleri | Microsoft Intune"
 description: "Mobil cihaz yönetimi işlevselliğini geliştirmek için isteğe bağlı yapılandırma görevlerini tamamlayın."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -14,8 +14,8 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e125a283a017685c2442c34194da29466c8e67a
-ms.openlocfilehash: 81dfaeb25de75f178d8993b47aadb5d4880970c7
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 391279e37007ead39be3506c04b382a8296329b5
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 81dfaeb25de75f178d8993b47aadb5d4880970c7
 # Yapılandırma sonrası görevleri
 Bir Intune ücretli aboneliği için ilk yapılandırma adımlarını tamamladıktan sonra, ek mobil cihaz yönetimi işlevlerini etkinleştirmek isteyebilirsiniz.
 
--   **Exchange’i Intune’a bağlama:** Mobil cihazları Intune’a kayıtlı olmayan kullanıcılar için, şirket içi Exchange ile Microsoft Office 365’te Exchange Online’ı tümleştirmeyi sağlayan bağlayıcı aracılığıyla Exchange ActiveSync yönetimini etkinleştirebilirsiniz. Exchange bağlayıcısı sizi Exchange dağıtımınıza bağlar ve Intune yönetim konsoluyla mobil cihazları yönetmenizi sağlar. Exchange bağlayıcısı hakkında daha fazla bilgi edinmek için bkz. [Exchange ActiveSync ve Microsoft Intune ile mobil cihaz yönetimi](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+-   **Exchange’i Intune’a bağlama:** Mobil cihazları Intune’a kayıtlı olmayan kullanıcılar için, şirket içi Exchange ile Microsoft Office 365’te Exchange Online’ı tümleştirmeyi sağlayan bağlayıcı aracılığıyla Exchange ActiveSync yönetimini etkinleştirebilirsiniz. Exchange bağlayıcısı, sizi Exchange dağıtımınıza bağlar ve Intune yönetim konsoluyla mobil cihazları yönetmenizi sağlar. Exchange bağlayıcısı hakkında daha fazla bilgi edinmek için bkz. [Exchange ActiveSync ve Microsoft Intune ile mobil cihaz yönetimi](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
 -   **Intune raporları:** Microsoft Intune, yazılımın lisans durumu ve cihazları etkileyen eylemler (örn. bir cihazı silme) hakkında bilgi vermenin yanı sıra cihazları izleyebilmenizi sağlayan uyarılar ve raporlar sunar.  Raporlama hakkında daha fazla bilgi için, bkz. [Microsoft Intune ile izleme ve raporlama](/intune/deploy-use/monitoring-and-reports-with-microsoft-intune).
 
@@ -31,6 +31,6 @@ Bir Intune ücretli aboneliği için ilk yapılandırma adımlarını tamamladı
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

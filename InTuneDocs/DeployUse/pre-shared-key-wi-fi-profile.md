@@ -2,9 +2,10 @@
 title: PSK Kullanarak Wi-Fi | Microsoft Intune
 description: "Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için Özel Yapılandırma’yı kullanın."
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
-ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
+ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# Önceden paylaşılan anahtar ile Wi-Fi profili oluşturma
+# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel ilke kullanma
 Intune'un **Özel Yapılandırmasını**, önceden paylaşılan anahtar ile Wi-Fi profili oluşturmak üzere kullanma Bu konuda, bir EAP tabanlı Wi-Fi profili oluşturmaya bir örnek de yer almaktadır.
 
 > [!NOTE]
@@ -48,8 +49,7 @@ Intune'un **Özel Yapılandırmasını**, önceden paylaşılan anahtar ile Wi-F
     > [!NOTE]
 Başına nokta karakterini eklediğinizden emin olun.
 
-    SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin,
-    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e. **Değer Alanı**, XML kodunuzu yapıştırdığınız yerdir. Bir örneğe bakalım. Her değer, ağ ayarlarınıza uyarlanmış olmalıdır. Bazı işaretçiler için kodun açıklamalar bölümüne bakın.
 4. **Tamam**’ı seçin, ilkeyi kaydedin ve dağıtın.
@@ -58,15 +58,15 @@ Başına nokta karakterini eklediğinizden emin olun.
     > Bu ilke yalnızca kullanıcı gruplarına dağıtılabilir.
 
 Her cihaz daha sonra denetlediğinde, ilke uygulanır ve cihazda bir Wi-Fi profili oluşturulur. Cihaz ağa otomatik olarak bağlanabilecektir.
-## Android veya Windows Wi-Fi profili
+## <a name="android-or-windows-wifi-profile"></a>Android veya Windows Wi-Fi profili
 
 Bir Android veya Windows Wi-Fi profili için XML kodu örneği aşağıdaki verilmiştir:
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`**Yanlış** olarak ayarlanmalıdır, çünkü **doğru** ayarı cihazın şifreli bir parola beklemesine ve bunun şifresini çözmeye çalışmasına neden olur; sonuçta bağlantı başarısız olabilir.
+> `<protected>false</protected>`, **false** olarak ayarlanmalıdır, çünkü **true** ayarı cihazın şifreli bir parola beklemesine ve bunun şifresini çözmeye çalışmasına neden olur; bunun sonucunda bağlantı başarısız olabilir.
 > 
->  `<hex>53534944</hex>` `<name><SSID of wifi profile></name>` onaltılı değerine ayarlanmalıdır.
+>  `<hex>53534944</hex>`, `<name><SSID of wifi profile></name>` onaltılı değerine ayarlanmalıdır.
 >  Windows 10 cihazları yanlışlıkla *0x87D1FDE8 Düzeltme başarısız* hatasını döndürebilir, ancak yine de profille hazırlanır.
 
     <!--
@@ -109,7 +109,7 @@ Bir Android veya Windows Wi-Fi profili için XML kodu örneği aşağıdaki veri
       </MSM>
     </WLANProfile>
 
-## EAP tabanlı Wi-Fi profili
+## <a name="eapbased-wifi-profile"></a>EAP tabanlı Wi-Fi profili
 Bir EAP tabanlı Wi-Fi profili için bir XML kodu örneği aşağıdaki verilmiştir:
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ Bir EAP tabanlı Wi-Fi profili için bir XML kodu örneği aşağıdaki verilmi�
       </MSM>
     </WLANProfile>
 
-## XML dosyasını mevcut bir Wi-Fi bağlantısından oluşturun
+## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>XML dosyasını mevcut bir Wi-Fi bağlantısından oluşturun
 Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
 1. Kablosuz ağa bağlanmış veya bir kablosuz ağa yakın zamanda bağlanmış bir bilgisayarda şu klasörü açın: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid.
 
@@ -198,7 +198,7 @@ Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
 3.     Doğru ada sahip olanı bulmak üzere XML dosyalarını arayın.
 4.     Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının Veri alanına yapıştırın.
 
-## İlkeyi dağıtma
+## <a name="deploy-the-policy"></a>İlkeyi dağıtma
 
 1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi ve ardından **Dağıtımı Yönet**’i seçin.
 
@@ -210,11 +210,11 @@ Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
 
 Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağıtım hakkında daha fazla bilgi görüntüleyebilirsiniz.
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune’da Wi-Fi bağlantıları](wi-fi-connections-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

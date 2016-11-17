@@ -2,10 +2,10 @@
 title: "BT yöneticinize kayıt hatalarını gönderme | Microsoft Intune"
 description: "Yöneticinize kayıt hatalarını gönderme"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c10f9548c00972a018e742601586f6e03e1a05cc
-ms.openlocfilehash: 93f4d2c93f17146a704031dae0d35cfde077b384
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 57e5707ab651dd18f1d83730b03ae0267de25e34
 
 
 ---
 
 
-# BT yöneticinize kayıt hatalarını gönderme
+# <a name="send-enrollment-errors-to-your-it-admin"></a>BT yöneticinize kayıt hatalarını gönderme
 
 Android cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız **Yeniden dene**’ye dokunarak yeniden kaydolmayı deneyebilirsiniz. **Bilgileri gönder**’e dokunarak, hata bilgilerini BT yöneticinize e-posta ile de gönderebilirsiniz.
 
-**Bilgileri gönder**’e tıklamak, cihazınızın sorunlarını giderirken BT yöneticinize yardımcı olacak günlük kayıtlarını içeren bir e-postanın otomatik olarak oluşturulup BT yöneticinize gönderilmesini sağlar.
+**Bilgi Gönder**’e dokunduğunuzda otomatik olarak e-posta oluşturulur. E-posta, BT yöneticinize gönderilir ve cihazınızın sorunlarını giderirken BT yöneticinize yardımcı olacak günlükleri içerir.
 
 Hatalarla ilgili yardım almak amacıyla cihazınızın veri günlüklerini BT yöneticinize iki farklı yoldan gönderebilirsiniz:
 
@@ -35,6 +35,6 @@ Hatalarla ilgili yardım almak amacıyla cihazınızın veri günlüklerini BT y
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

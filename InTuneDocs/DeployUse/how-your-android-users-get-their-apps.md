@@ -2,8 +2,8 @@
 title: "Android kullanıcılarınız uygulamalarını nasıl alır | Microsoft Intune"
 description: "Android uygulamalarını son kullanıcılara sağlama yöntemleri"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
@@ -14,24 +14,24 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
-ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 64b42d25815946122d0be0d031ab7cc4b3ac6a8a
 
 
 ---
 
 
-# Android kullanıcılarınız uygulamalarını nasıl alır
-Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın. Bilgiler cihaz türüne göre değişebilir (yerel Android cihazları veya Samsung Knox cihazları).
+# <a name="how-your-android-users-get-their-apps"></a>Android kullanıcılarınız uygulamalarını nasıl alır
+Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın. Bilgiler cihaz türüne göre değişebilir (yerel Android cihazlar veya Samsung Knox Standard cihazlar).
 
-## Yerel (Samsung Knox olmayan) Android cihazları
+## <a name="native-nonsamsung-knox-android-devices"></a>Yerel (Samsung Knox olmayan) Android cihazları
 
 | Uygulama türü | İş kolu (LOB) uygulamaları | Play Store uygulamaları  |
 | ------------- |-------------| -----|
 | Kullanılabilir uygulamalar      | Kullanıcılar Şirket Portalı’nda **yükle**’ye dokunur. Bir bildirim görüntülenir ve kullanıcılar buna dokunarak yüklemeyi başlatır. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. | Kullanıcılar Şirket Portalı’nda uygulamaya dokunur ve Play Store’da uygulamanın sayfasına ulaşır; burada yüklemeyi başlatabilirler.|
 | Gerekli uygulamalar      | Kullanıcılara bir bildirim gösterilir. Bu bildirimi kapatamazlar ve bu, uygulamayı yüklemeleri gerektiğini gösterir. Kullanıcılar yüklemeyi başlatmak için bildirime dokunur. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır.    | Kullanıcılara bir bildirim gösterilir. Bu bildirimi kapatamazlar ve bu, uygulamayı yüklemeleri gerektiğini gösterir. Kullanıcılar bildirime dokunur ve Play Store’da uygulamanın sayfasına ulaşır; burada yüklemeyi başlatabilirler. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. |
 
-## Samsung Knox Android cihazları
+## <a name="samsung-knox-standard-android-devices"></a>Samsung Knox Standard Android cihazlar
 
 | Uygulama türü | İş kolu (LOB) uygulamaları | Play Store uygulamaları  |
 | ------------- |-------------| -----|
@@ -44,8 +44,8 @@ Uygulamalar, aşağıda açıklandığı gibi yönetilebilir veya yönetilmeyebi
 
 **Yönetilmeyen uygulamalar** - İlkeler aracılığıyla yönetilemeyen uygulamalardır. Intune tarafından sarmalanmamış veya Intune MAM SDK’sini içermeyen uygulamalardır. Uygulama ilkeleri bu uygulamalara uygulanamaz.
 
-### Ayrıca bkz.
-[Microsoft Intune’la uygulamaları ekleme](/intune/deploy-use/add-apps)
+### <a name="see-also"></a>Ayrıca bkz.
+[Microsoft Intune’la uygulama ekleme](/intune/deploy-use/add-apps)
 
 [iOS kullanıcılarınız uygulamalarını nasıl alır](how-your-ios-users-get-their-apps.md)
 
@@ -53,6 +53,6 @@ Uygulamalar, aşağıda açıklandığı gibi yönetilebilir veya yönetilmeyebi
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

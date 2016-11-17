@@ -2,7 +2,8 @@
 title: "Microsoft bulut hizmetleriyle Intune tümleştirmesi | Microsoft Intune"
 description: "Microsoft bulut hizmetleri ve ürünleriyle, ayrıca diğer Microsoft ürünleriyle Intune tümleştirmesi"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 58f7293ed8fbb99572f8ed3a264defcc7a2d225c
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: b2df2a2ec092ed9bb7d12b7f51a4fd9c9858f041
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: 58f7293ed8fbb99572f8ed3a264defcc7a2d225c
 ##Diğer Microsoft bulut Hizmetleri ile tümleştirme
 
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] diğer Microsoft bulut hizmetleriyle ortak bir temeli paylaşır. Birden çok bulut hizmetine abone olmak için aynı hesabı kullandığınızda, söz konusu hizmetler aynı Microsoft Azure AD altyapısını kullanır ve Azure AD'nin kiracılarıdır. Azure AD, Microsoft bulut hizmetleri için çekirdek dizin ve kimlik yönetimi özelliklerini sağlar.
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] diğer Microsoft bulut hizmetleriyle ortak bir temeli paylaşır. Birden çok bulut hizmetine abone olmak için aynı hesabı kullandığınızda, söz konusu hizmetler aynı Microsoft Azure AD altyapınızı kullanır ve Azure AD'nin kiracılarıdır. Azure AD, Microsoft bulut hizmetleri için çekirdek dizin ve kimlik yönetimi özelliklerini sağlar.
 
 TechNet Kitaplığında [Azure AD yönetimi](http://technet.microsoft.com/library/hh967611.aspx) ile ilgili daha fazla bilgi edinin.
 
@@ -36,13 +37,13 @@ TechNet Kitaplığında [Azure AD yönetimi](http://technet.microsoft.com/librar
 
 [!INCLUDE[cmshort](../includes/cmshort_md.md)] ile [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullandığınızda, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetini yönetmek için [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] yerine [!INCLUDE[cmshort](../includes/cmshort_md.md)] konsolunu kullanırsınız. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] , [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile yönettiğiniz cihazlara dağıttığınız yazılımı barındırmak için Azure içindeki bulut depolama alanını kullanmaya devam eder.
 
-Daha fazla bilgi için [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 belgelerindeki [Configuration Manager ve Microsoft Intune ile Mobil Cihazları Yönetme](http://msdn.microsoft.com/library/2c6bd0e5-d436-41c8-bf38-30152d76be10) konusuna bakın.
+Daha fazla bilgi için [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 belgelerindeki [Configuration Manager ve Microsoft Intune ile Mobil Cihazları Yönetme](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) konusuna bakın.
 
 ### Ayrıca bkz.
 [Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

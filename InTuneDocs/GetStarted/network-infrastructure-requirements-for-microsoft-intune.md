@@ -2,7 +2,8 @@
 title: "Ağ altyapısı gereksinimleri | Microsoft Intune"
 description: "Intune güvenlik duvarı, bağlantı noktası, etki alanı ve proxy sunucusu gereksinimleri"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
-ms.openlocfilehash: aa4d2219a5962d83b80630ed3a09660a76469764
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 178d9fc474588c088ed510098dc71bc763695b3c
 
 
 ---
@@ -29,7 +30,7 @@ Bu konu başlığı altında, ağ altyapınızın yönettiğiniz cihazlar ve Int
 Güvenlik duvarlarının ve proxy sunucuların arkasındaki bilgisayarları yönetmek için güvenlik duvarlarını ve proxy sunucuları Intune iletişimine izin verecek şekilde ayarlamanız gerekir.
 
 ## Güvenlik duvarları, bağlantı noktaları ve etki alanları ile ilgili gereksinimler
-Yönetilen cihazlar **Tüm Kullanıcılar** seçeneğinin güvenlik duvarları üzerinden çeşitli hizmetlere erişmesine izin veren yapılandırmalar gerektirir.
+Yönetilen cihazlar, **Tüm Kullanıcıların** güvenlik duvarları üzerinden hizmetlere erişmesine izin veren yapılandırmalar gerektirir.
 
 Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hizmetler listelenmektedir.
 
@@ -170,6 +171,6 @@ Ayrıca Intune istemcileri tarafından kullanılan [ağ bant genişliğini azalt
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

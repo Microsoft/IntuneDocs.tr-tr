@@ -2,7 +2,8 @@
 title: "Intune ağ bant genişliğini kullanma | Microsoft Intune"
 description: "Intune ağ bant genişliği kullanımı"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: b40c5ce0d4447b10ec949af6933f28b091136315
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 18007f598f4182fd90592d4aeb365b834a73fc72
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: b40c5ce0d4447b10ec949af6933f28b091136315
 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] istemcilerinin ağ trafiğini planlamak için aşağıdaki bölümlerde yer alan bilgileri kullanın.
 
 ## Ortalama ağ trafiği
-Aşağıdaki tabloda her istemci için ağ üzerinden geçen ortak içeriğin yaklaşık boyutu ve sıklığı listelenmiştir.
+Bu tabloda her istemci için ağ üzerinden geçen ortak içeriğin yaklaşık boyutu ve sıklığı listelenmiştir.
 
 > [!NOTE]
 > Bilgisayarların ve mobil cihazların gerekli güncelleştirmeleri ve içerikleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetinden almasını sağlamak için bunların İnternet'e düzenli aralıklarla bağlanması gerekir. Güncelleştirmeleri veya içeriği almak için geçen süre farklılık gösterir, ancak her gün en az 1 saat boyunca kesintisiz olarak İnternet'e bağlı kalmaları gerekir.
@@ -88,6 +89,6 @@ BranchCache kullanıyorsanız, BranchCache özelliğini veya Güvenlik Duvarı �
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

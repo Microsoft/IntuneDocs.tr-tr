@@ -2,7 +2,8 @@
 title: "Genel Windows bilgisayarı yönetim görevleri | Microsoft Intune"
 description: "Intune yazılım istemcisini çalıştıran Windows bilgisayarlarının nasıl yönetileceğini öğrenmek için bu konudaki görevleri gözden geçirin."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 325ff48e00dcc73e1bfdfcb3f98a44c2a24d1dc5
 
 
 ---
 
-# Intune yazılım istemcisi ile genel Windows bilgisayarı yönetim görevleri
+# <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Intune yazılım istemcisi ile genel Windows bilgisayarı yönetim görevleri
 Intune yazılım istemcisi çalıştıran bilgisayarlarınızı nasıl yöneteceğinizi öğrenmek için bu konudaki görevleri gözden geçirin. İstemciyi bilgisayarlarınıza henüz yüklemediyseniz, bkz. [Intune yazılım istemcisini yükleme](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
-## PC yönetimi basitleştirmek için ilkeleri kullanma
+## <a name="use-policies-to-simplify-pc-management"></a>PC yönetimi basitleştirmek için ilkeleri kullanma
 
 Intune yazılım istemcisini çalıştıran Windows bilgisayarları Intune'un **Bilgisayar Yönetimi** ilkeleri kullanılarak yönetilebilir.
 
 ![Windows bilgisayarlar için ilkeler şablonu](../media/pc_policy_template.png)
 
-### Microsoft Intune Center’ı yönetme
+### <a name="manage-the-microsoft-intune-center"></a>Microsoft Intune Center’ı yönetme
 Kullanıcılar Intune yazılımı istemcisini **Microsoft Intune Center** olarak görür. Microsoft Intune Center kullanıcıların şunları yapmasını sağlar:
 
 -   Şirket portalı üzerinden uygulamaları alma.
@@ -51,16 +52,16 @@ Microsoft Intune Center, tüm yönetilen bilgisayarlarda yüklüdür. Intune ilk
 |**Web sitesi URL'si**|Destek web sitenizin URL'si.<br /><br />En fazla uzunluk: 150 karakter|
 |**Notlar**|Kullanıcılara gösterilen bir not.<br /><br />En fazla uzunluk: 120 karakter|
 
-## Yazılım güncelleştirmeleri ayarları
+## <a name="software-updates-settings"></a>Yazılım güncelleştirmeleri ayarları
 Yönetilen bilgisayarların Microsoft ve üçüncü taraflardan yazılım güncelleştirmelerini denetlemek ve indirmek için kullandığı ayarları yapılandırmak için ilkeleri kullanın. Bu güncelleştirmeler işletim sistemi yükseltmelerini (ör. Windows 7’den Windows 10’a yükseltme veya bir Windows 10 sürümünden sonraki bir sürüme yükseltme) içermez. Daha fazla bilgi için bkz. [Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Endpoint Protection ayarları
+### <a name="endpoint-protection-settings"></a>Endpoint Protection ayarları
 Endpoint Protection ayarlarını yapılandırmak için ilkeleri kullanın ve bunları yönetilen bilgisayarlara dağıtın. Bu tarama zamanlama, kötü amaçlı yazılım algıladığında yapılacak işlemler ve daha fazlasını içerir. Daha fazla bilgi için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
-## Windows Güvenlik Duvarı ayarları
+## <a name="windows-firewall-settings"></a>Windows Güvenlik Duvarı ayarları
 İlkeler, yönetilen bilgisayarlarda Windows Güvenlik Duvarı ayarlarını yönetmeyi kolay hale getirir. Ayrıntılar için bkz. [Microsoft Intune’da Windows Güvenlik Duvarı ilkelerini kullanarak Windows bilgisayarlarının korunmasına yardımcı olma](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
-## Donanım ve yazılım envanterini görüntüleme
+## <a name="view-hardware-and-software-inventory"></a>Donanım ve yazılım envanterini görüntüleme
 Intune yönetilen bilgisayarların donanım ve yazılımı hakkında ayrıntılı bilgiler toplar. Şunları oluşturmak için aşağıdaki yordamlardaki bilgileri kullanın:
 
 -   Bilgisayarlarınızın donanım özellikleri hakkında bilgileri listeleyen bir rapor.
@@ -69,7 +70,7 @@ Intune yönetilen bilgisayarların donanım ve yazılımı hakkında ayrıntıl�
 
 -   Rapordaki verilerin güncel olduğundan emin olmak için bilgisayar envanterini yenileme.
 
-### Bilgisayarlarınız hakkındaki bilgileri görüntülemek için
+### <a name="to-display-information-about-your-computers"></a>Bilgisayarlarınız hakkındaki bilgileri görüntülemek için
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Raporlar** &gt; **Bilgisayar Envanteri Raporları**’nı seçin.
 
@@ -79,7 +80,7 @@ Intune yönetilen bilgisayarların donanım ve yazılımı hakkında ayrıntıl�
 
     Her sütunun başlığını seçerek raporu **Ad**, **Kasa Türü** veya **Üretici** gibi sütunlara göre sıralayabilirsiniz.
 
-### Bilgisayarlarda yüklü yazılımı görüntülemek için
+### <a name="to-display-software-installed-on-your-computers"></a>Bilgisayarlarda yüklü yazılımı görüntülemek için
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Raporlar** &gt; **Algılanan Yazılım Raporları**’nı seçin.
 
@@ -89,7 +90,7 @@ Intune yönetilen bilgisayarların donanım ve yazılımı hakkında ayrıntıl�
 
     Her sütunun başlığını seçerek raporu **Ad**, **Yayımcı** veya **Kategori** gibi sütunlara göre sıralayabilirsiniz. Liste öğesinin yanındaki yön okunu seçerek daha fazla ayrıntı (örneğin yüklü olduğu bilgisayarlar) göstermek için listedeki güncelleştirmeleri genişletebilirsiniz.
 
-### Bilgisayar envanterinin güncel olduğundan emin olmak üzere yenilemek için
+### <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Bilgisayar envanterinin güncel olduğundan emin olmak üzere yenilemek için
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar**’ı (veya envanterini yenilemek istediğiniz bilgisayarı içeren başka bir grubu) seçin.
 
@@ -102,7 +103,7 @@ Intune yönetilen bilgisayarların donanım ve yazılımı hakkında ayrıntıl�
      **Görev Durumu** iletişim kutusu geçerli uzak görevler, görev durumu, cihaz adı ve bildirilen hataları gösterir ve sorun giderme bilgilerine bir bağlantı sağlar.
 
 
-## Windows bilgisayarını uzaktan yeniden başlatma
+## <a name="remotely-restart-a-windows-pc"></a>Windows bilgisayarını uzaktan yeniden başlatma
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar**’ı (veya yeniden başlatmak istediğiniz bilgisayarı içeren başka bir grubu) seçin.
 
@@ -112,7 +113,7 @@ Intune yönetilen bilgisayarların donanım ve yazılımı hakkında ayrıntıl�
 
 4.   **Görev Durumu** iletişim kutusunda, geçerli uzak görevler, görev durumu, cihaz adı ve bildirilen hataları gözden geçirin.
 
-## Bilgisayarı devre dışı bırakma
+## <a name="retire-a-computer"></a>Bilgisayarı devre dışı bırakma
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar**’ı (veya devre dışı bırakmak istediğiniz bilgisayarı içeren başka bir grubu) seçin.
 
@@ -143,10 +144,10 @@ Bir bilgisayarı kullanımdan çıkardığınızda:
 
     İstemciyi kaldırma işlemi başarısız olursa daha fazla yardım için [Endpoint Protection’da sorun giderme](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) konusunu okuyun.
 
-## Kullanıcı-cihaz bağlantısını yönetme
+## <a name="manage-userdevice-linking"></a>Kullanıcı-cihaz bağlantısını yönetme
 Bir kullanıcı için yazılım dağıtmadan önce kullanıcıyı bir bilgisayara bağlamanız gerekir. Bir kullanıcıyı birden çok bilgisayara bağlayabilirsiniz, ancak her bilgisayara yalnızca bir kullanıcı bağlanabilir. Kullanıcılar şirket portalını kullanarak Intune kaydını yaptıkları bilgisayarlara otomatik olarak bağlanır.
 
-### Bir kullanıcıyı bir bilgisayara bağlamak için
+### <a name="to-link-a-user-to-a-computer"></a>Bir kullanıcıyı bir bilgisayara bağlamak için
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar**’ı (veya bir kullanıcıya bağlamak istediğiniz bilgisayarı içeren başka bir grubu) seçin.
 
@@ -165,13 +166,13 @@ Bir kullanıcı için yazılım dağıtmadan önce kullanıcıyı bir bilgisayar
 > [!TIP]
 > Son kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtlamak istiyorsanız, **Microsoft Intune Aracı Ayarları** ilkesinde **Kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtla** seçeneğini etkinleştirin.
 
-## Windows bilgisayarlar için uzaktan yardım isteme ve sağlama
+## <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows bilgisayarlar için uzaktan yardım isteme ve sağlama
 
 Microsoft Intune, Intune yazılım istemcisi çalıştıran bilgisayarların kullanıcılarına uzaktan yardım alma izni vermek için ayrıca satın alınan [TeamViewer](https://www.teamviewer.com) yazılımını kullanabilir. Kullanıcı Microsoft Intune Center’dan yardım isteğinde bulunduğunda, bu durum bir uyarıyla size bildirilir; siz bu isteği kabul edebilir ve yardım sağlarsınız.
 Bu işlevsellik, Intune’da var olan Windows Uzaktan Yardım işlevselliğinin yerini alır.
 
 
-### Başlamadan önce
+### <a name="before-you-start"></a>Başlamadan önce
 
 Uzaktan yardım isteklerine hazırlanmaya ve bu istekleri yanıtlamaya başlayabilmeniz için önce aşağıdaki önkoşulların karşılandığından emin olmalısınız:
 
@@ -179,7 +180,7 @@ Uzaktan yardım isteklerine hazırlanmaya ve bu istekleri yanıtlamaya başlayab
 - Yönetmek istediğiniz Windows bilgisayarların [Windows bilgisayar istemcisiyle yönetiliyor](manage-windows-pcs-with-microsoft-intune.md) olması gerekir.
 - Intune tarafından desteklenen tüm Windows bilgisayarı işletim sistemleri yönetilebilir.
 
-### TeamViewer Bağlayıcısı'nı yapılandırma
+### <a name="configure-the-teamviewer-connector"></a>TeamViewer Bağlayıcısı'nı yapılandırma
 
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’yi seçin.
 2. **Yönetici** çalışma alanında **TeamViewer**’ı seçin.
@@ -190,7 +191,7 @@ Uzaktan yardım isteklerine hazırlanmaya ve bu istekleri yanıtlamaya başlayab
 7. Intune konsolunda, **TeamViewer Bağlayıcısı** öğesinin **Etkin** durumda gösterildiğinden emin olun.
 
 
-### Uzaktan yardım isteği açma (son kullanıcı)
+### <a name="open-a-remote-assistance-request-end-user"></a>Uzaktan yardım isteği açma (son kullanıcı)
 
 1. İstemci Windows bilgisayarında **Microsoft Intune Center**’ı açın.
 2. **Uzaktan Yardım**’ın altında **Uzaktan Yardım İste**’yi seçin.
@@ -198,7 +199,7 @@ Uzaktan yardım isteklerine hazırlanmaya ve bu istekleri yanıtlamaya başlayab
 4. Kullanıcı, bilgisayarını denetleyip denetleyemeyeceğinizi soran bir ileti görür. Devam etmek için bu iletiyi kabul etmesi gerekir.
 5. Uzaktan yardım oturumu boyunca, kullanıcı sizin bağlı olduğunuzu gösteren bir pencere görür. Bu pencereyi kapatırsa, uzak oturum sona erer.
 
-### Uzaktan yardım isteğini yanıtlama
+### <a name="respond-to-a-remote-assistance-request"></a>Uzaktan yardım isteğini yanıtlama
 
 1. Kullanıcı bir uzaktan yardım isteği gönderdiğinde, bu isteği **Uyarılar** çalışma alanındaki **İzleme** > **Uzaktan Yardım**’ın altında görebilirsiniz. Örneğin:
 > ![Uzaktan yardım isteğinin ekran görüntüsü](./media/team-viewer.png)
@@ -210,12 +211,12 @@ Uzaktan yardım isteklerine hazırlanmaya ve bu istekleri yanıtlamaya başlayab
 
 Uzaktan yardım oturumu sırasında, uzak bilgisayarı denetlemek için tüm sağlanan TeamViewer komutlarını kullanabilirsiniz. Bu komutlar hakkında yardım için, TeamViewer web sitesinden [Uzaktan kontrol kılavuzu](http://www.teamviewer.com/en/support/documents/)’nu indirin.
 
-### Uzaktan yardım oturumunu kapatma
+### <a name="close-the-remote-assistance-session"></a>Uzaktan yardım oturumunu kapatma
 
 **TeamViewer** penceresinin **Eylemler** penceresinde **Oturumu Sonlandır**’ı seçin.
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

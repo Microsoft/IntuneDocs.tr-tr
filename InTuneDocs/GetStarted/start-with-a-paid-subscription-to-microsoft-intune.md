@@ -2,7 +2,8 @@
 title: "Intune hızlı başlangıç kılavuzu | Microsoft Intune"
 description: "Intune aboneliğinizi kullanmaya başlamak için gereksinimler ve önkoşullar"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
@@ -13,15 +14,15 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: aecd5f76e234835c38bf47d8de7e13034d683998
+ms.sourcegitcommit: 0d422b421c3716ad576c4fc565b181dec28c947e
+ms.openlocfilehash: 2e385a6f1721c7b8acbc1e280b8d8c3277fa00f8
 
 
 ---
 
 
 # Intune hızlı başlangıç kılavuzu
-Bu hızlı başlangıç kılavuzu, kuruluşunuzda kullanılan mobil cihazları ve Windows bilgisayarlarını hızla ve kolayca yönetmek için, ücretli bir Microsoft Intune aboneliğini ayarlama adımlarından size yol gösterir. Adımları sırayla izleyebilir veya adımlardan biri sizin kendi ortamınıza veya iş gereksinimlerinize uymuyorsa ileri atlayabilirsiniz.
+Bu hızlı başlangıç kılavuzu, kuruluşunuzda kullanılan mobil cihazlar ve Windows bilgisayarları hızla ve kolayca yönetmek için ücretli bir Microsoft Intune aboneliğini ayarlama adımlarında size yol gösterir. Adımları sırayla izleyebilir veya adımlardan biri sizin kendi ortamınıza veya iş gereksinimlerinize uymuyorsa ileri atlayabilirsiniz.
 
 >[!NOTE]
 >Bu makale, Intune’u tek başına bir hizmet olarak ayarlamaya odaklanır. Alternatif olarak, şu anda bilgisayarlar ve sunucuları yönetmek için Microsoft System Center Configuration Manager’ı kullanıyorsanız, [Configuration Manager’ın kapsamını mobil cihazları da yönetecek şekilde genişletebilirsiniz](https://technet.microsoft.com/library/jj884158.aspx). Bunu, karma bir mobil cihaz yönetimi (MDM) dağıtımında Intune’a Configuration Manager ile bağlanarak yapabilirsiniz.
@@ -75,6 +76,6 @@ Intune hızlı başlangıç kılavuzuyla çalışmaya başlamanın tam zamanı!
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

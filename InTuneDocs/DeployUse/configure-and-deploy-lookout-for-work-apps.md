@@ -2,6 +2,7 @@
 title: "Lookout for Work uygulamasını dağıtma | Microsoft Intune"
 description: "Android için Lookout for Work uygulamasını yapılandırın ve dağıtın."
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -12,8 +13,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
-ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
+ms.sourcegitcommit: 557c1b3b36adf40ec4ad94f22ed7bb9705c6eec4
+ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
 
 
 ---
@@ -23,19 +24,27 @@ Bu makalede, Android ve iOS cihazlarda Lookout for Work uygulamasının nasıl y
 
 ## Android (Google Play Store uygulaması)
 
-* **1. Adım:**   Lookout for Android uygulamasını, [Microsoft Intune yönetici konsoluna](https://manage.microsoft.com) [Microsoft Intune'da mobil cihazlar için uygulama ekleme](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) bölümünde açıklandığı gibi yükleyin.
+* **1. Adım:**   [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Uygulamalar**’a gidin ve **Uygulama Ekle**’yi seçin.   
+* **2. Adım:**   Yayımcının **Yazılım Kurulumu** sayfasında **Dış bağlantı**’yı seçin ve şu URL'yi belirtin: https://play.google.com/store/apps/details?id=com.lookout.enterprise
 >[!NOTE]
-> Yönetilen tarayıcı gerekliliğine yönelik kutuya tıklamayın.
+>Yönetilen tarayıcı gerekliliğine yönelik kutuya tıklamayın.
 
-![Intune Yönetici Konsolu uygulamalar sayfasının Lookout for Work uygulamalarını listede gösteren ekran görüntüsü](../media/mtp/lookout-app-listed-intune-console.png)
+* **3. Adım:**   **Yazılım açıklaması** sayfasında aşağıdaki bilgileri doldurun:
+  * **Yayımcı:** Lookout Mobile Security
+  * **Adı:**   Lookout for Work
+  * **Açıklama:**  Lookout cihazınızı güvenli tutmak için mobil tehditlere karşı en iyi korumayı sunar. Lookout uygulaması cihaza yüklendiğinde, uygulama cihazınızı tehditlerden korur ve herhangi bir tehdit bulunursa size ve şirket yöneticinize uyarı verir.
+  * **Kategori:** Bilgisayar Yönetimi
+* **4. Adım**: İşlemin başarıyla tamamlanmasından sonra **Microsoft Intune’a veri yükleme başarıyla tamamlandı** iletisini görürsünüz.
 
-* **2. Adım:** Uygulamayı kullanıcılara dağıtın. Yukarıdaki ekranda gösterilen Lookout for Work uygulamasını seçin ve ardından **Dağıtımı Yönet**’i seçin.
+Intune konsolunda **Uygulamalar**’a tıkladığınızda artık Lookout for Work uygulamasını listede görürsünüz ![Lookout for work uygulamalarını listede gösteren Intune yönetici konsolu uygulamaları sayfasının ekran görüntüsü](../media/mtp/lookout-app-listed-intune-console.png)
 
-  Lookout konsolundaki Kayıt Yönetimi seçeneğine eklenmiş olan kullanıcıları seçmeniz gerekir.  Lookout MTP’ye kullanıcı grupları ekleme hakkında daha fazla bilgi için [aboneliğinizi Lookout cihaz tehdit koruması ile yapılandırma](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) bölümündeki 3. Adıma göz atın.
->[!IMPORTANT]
-> Intune uygulama dağıtım sihirbazı, Azure AD kullanıcı gruplarını tanımaz ve bunun yerine Intune kullanıcı gruplarını kullanır. Bu nedenle, [bu](plan-your-user-and-device-groups.md) konu başlığı altında açıklanan adımları uygulayarak Lookout konsoluna kayıtlı Azure AD kullanıcı grubunu temel alan bir Intune kullanıcı grubu oluşturmanız gerekir.
+* **5. Adım**: Uygulamayı kullanıcılara dağıtmak için Lookout for Work uygulamasını ve **Dağıtımı Yönet**’i seçin.
 
-**Gerekli Yükleme** seçeneğini belirleyerek Lookout uygulamasının kullanıcı cihazında yüklü olmasını zorunlu hale getirin.
+  Lookout MTP konsolundaki Kayıt Yönetimi seçeneğine eklenen kullanıcıları seçmeniz gerekir.  Lookout MTP’ye kullanıcı grupları ekleme hakkında daha fazla bilgi için [Lookout MTP bölümü ile aboneliğinizi yapılandırma](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) bölümünün 3. Adımına göz atın.
+  >[!IMPORTANT]
+  > Intune uygulama dağıtım Sihirbazı, Azure AD kullanıcı gruplarını tanımaz ve bunun yerine Intune kullanıcı gruplarını kullanır. Dolayısıyla [bu](plan-your-user-and-device-groups.md) bölümde açıklandığı üzere Lookout MTP konsolunda kayıtlı Azure AD kullanıcı grubuna dayalı bir Intune kullanıcı grubu oluşturmanız gerekir.
+
+* **6. Adım**: **Gerekli Yükleme** seçeneğini belirleyerek Lookout uygulamasının kullanıcı cihazında yüklü olmasını zorunlu hale getirin.
 
 
 ## iOS (Lookout uygulamasının Kuruluş imzalı sürümü)
@@ -89,6 +98,6 @@ Kullanıcı cihazda Lookout for Work’ü açtığında uygulamayı etkinleştir
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

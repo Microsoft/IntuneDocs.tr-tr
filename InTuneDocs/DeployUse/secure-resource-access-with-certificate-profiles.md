@@ -2,9 +2,10 @@
 title: "Kaynak erişimi için sertifika profilleri |Microsoft Intune"
 description: "Her kullanıcı cihazına yüklenen bir sertifikayla Güvenli VPN, Wi-Fi ve e-posta erişimi."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: ee10ea01bb2e55a1c8b52a7ec0bdaf14f3c297f1
 
 
 ---
 
-# Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi
+# <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi
 VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılara şirket kaynaklarına erişim izni verdiğinizde, her kullanıcı cihazında yüklü bir sertifika kullanarak erişim güvenliğini sağlayabilirsiniz. Şu şekilde çalışır:
 
 1. [Sertifika altyapısını SCEP için yapılandırma](configure-certificate-infrastructure-for-scep.md) ve [Sertifika altyapısını PFX için yapılandırma](configure-certificate-infrastructure-for-pfx.md) konuları altında açıklandığı gibi, doğru sertifika altyapısına sahip olduğunuzdan emin olun.
@@ -28,13 +29,17 @@ VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılara şirket kayn
  -  iOS 8.0 ve üzeri
  -  Mac OS X 10.9 ve üzeri
  -  Android 4.0 ve üzeri
+ -  Android for Work
  -  Windows 8.1 ve üzeri
  -  Windows Phone 8.1 ve üzeri
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. [Intune sertifika profillerini yapılandırma](configure-intune-certificate-profiles.md) konusunda açıklandığı gibi, cihazların VPN, Wi-Fi ve e-posta erişimi kimlik doğrulaması için kullanılacak bir sertifika istemelerini sağlamak için sertifika profilleri oluşturun. Aşağıdaki platformları çalıştıran cihazlar için **PKCS #12 (.PFX) Sertifika Profili** *veya* **SCEP Sertifika Profili** oluşturabilir ve dağıtabilirsiniz:
 
   -  iOS 8.0 ve üzeri
   -  Android 4.0 ve üzeri
+  -  Android for Work
   -  Windows 10 (masaüstü ve Mobile) ve üzeri
 
   Aşağıdaki platformları çalıştıran cihazlar için bir **SCEP Sertifika Profili** kullanın:
@@ -49,13 +54,13 @@ Her platform için ayrı profil oluşturmanız gerekir. Profili oluştururken da
 >-  SCEP veya .PFX profilleri kullanmayı planlıyorsanız Microsoft Intune Sertifika Bağlayıcısı'nı indirip yapılandırmanız gerekir.
 >-  Tüm gerekli hizmetlerin nasıl yapılandırılacağını [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md) veya [PFX için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-pfx.md) konularında öğrenebilirsiniz.
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 - [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md)
 - [PFX için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-pfx.md)
 - [Intune sertifika profillerini yapılandırma](configure-intune-certificate-profiles.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
