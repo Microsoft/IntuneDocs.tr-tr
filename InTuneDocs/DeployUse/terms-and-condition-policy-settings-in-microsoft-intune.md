@@ -2,8 +2,8 @@
 title: "Hükümler ve koşullar ilke ayarları | Microsoft Intune"
 description: "Kayıt, iş kaynaklarına erişim ve Şirket Portalı uygulamasını kullanmanın cihazları ve kullanıcıları nasıl etkileyeceğini açıklamak için kullanıcı gruplarına Intune hüküm ve koşullarını dağıtabilirsiniz."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70fcc08a5619892387aaf8223e9a74661d9c90f6
-ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 
 ---
 
-# Microsoft Intune’da hüküm ve koşullar ilkesi ayarları
+# <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da hüküm ve koşullar ilkesi ayarları
 Kayıt, iş kaynaklarına erişim ve Şirket Portalı uygulamasını kullanmanın cihazları ve kullanıcıları nasıl etkileyeceğini açıklamak için kullanıcı gruplarına Intune hüküm ve koşullarını dağıtabilirsiniz. Kullanıcıların çalışmalarını kaydedip bunlara erişmek üzere Şirket Portalı’nı kullanabilmeleri için önce bu hüküm ve koşulları kabul etmeleri gerekir.
 
 Farklı hüküm ve koşullar içeren birden çok ilke oluşturup dağıtabilirsiniz. Ayrıca, aynı şart ve koşulların farklı dillerdeki sürümlerini oluşturabilir ve bunları uygun gruplara dağıtabilirsiniz.
 
-## Hüküm ve koşullar ilkesi oluşturma
+## <a name="create-a-terms-and-conditions-policy"></a>Hüküm ve koşullar ilkesi oluşturma
 
 1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
 
@@ -47,7 +47,7 @@ Farklı hüküm ve koşullar içeren birden çok ilke oluşturup dağıtabilirsi
 
 4.  İşiniz bittiğinde **Kaydet**’e tıklayın. Yeni ilke, **İlke** çalışma alanının **Hüküm ve Koşullar** düğümünde görüntülenir.
 
-## Hüküm ve koşullar ilkesini dağıtma
+## <a name="deploy-a-terms-and-conditions-policy"></a>Hüküm ve koşullar ilkesini dağıtma
 
 1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
 
@@ -57,16 +57,16 @@ Farklı hüküm ve koşullar içeren birden çok ilke oluşturup dağıtabilirsi
 
     Hedeflenen kullanıcılar şirket portalına eriştiğinde, Intune tarafından dağıttığınız hüküm ve koşullar görüntülenir. Kullanıcıların şirket kaynaklarına erişebilmesi için bu koşulları kabul etmesi gerekir.
 
-## Hüküm ve koşullar ilkesini izleme
+## <a name="monitor-a-terms-and-conditions-policy"></a>Hüküm ve koşullar ilkesini izleme
 
 1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
 
 2.  **Yeni Rapor Oluştur** penceresinde **Raporu Görüntüle**’ye tıklayın. Dağıttığınız hüküm ve koşulları hangi kullanıcıların kabul ettiğiyle ilgili ayrıntılı bilgi içeren rapor açılır.
 
-### Hüküm ve koşullar için güncelleştirme ve sürüm denetimi
+### <a name="updates-and-version-control-for-terms-and-conditions"></a>Hüküm ve koşullar için güncelleştirme ve sürüm denetimi
 Varolan bir hüküm ve koşullar ilkesini düzenlediğinizde, ilkeyi dağıttığınızda gerçekleşecek davranışı seçebilirsiniz. Varolan hüküm ve koşullar ilkelerini güncelleştirmenize yardımcı olması için aşağıdaki yordamı kullanın.
 
-## Hüküm ve koşulların birden çok sürümü ile çalışma
+## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Hüküm ve koşulların birden çok sürümü ile çalışma
 
 1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
 
@@ -76,11 +76,11 @@ Varolan bir hüküm ve koşullar ilkesini düzenlediğinizde, ilkeyi dağıttı�
 
     Hüküm ve koşullar ilkenizde önemli değişiklikler yaptığınızda sürüm numarasını artırmanızı ve kabul şartı koşmanızı öneririz. Örneğin, yazım hatalarını düzeltiyor veya biçimlendirmeyi değiştiriyorsanız geçerli sürüm numarasını kullanmaya devam edin.
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
