@@ -2,9 +2,10 @@
 title: "SCEP için sertifika altyapısını yapılandırma |Microsoft Intune|"
 description: "SCEP sertifika profillerini oluşturmaya veya dağıtmaya yönelik altyapı."
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
-ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: fc9140ac9e6727ae5ac76b3da950baab29326078
 
 ---
-# SCEP için sertifika altyapısını yapılandırma
+# <a name="configure-certificate-infrastructure-for-scep"></a>SCEP için sertifika altyapısını yapılandırma
 Bu konu başlığı altında, SCEP sertifika profillerini oluşturmak ve dağıtmak için hangi altyapıya ihtiyacınız olduğu açıklanır.
 
-### Şirket içi altyapı
+### <a name="onpremises-infrastructure"></a>Şirket içi altyapı
 
 -    **Active Directory etki alanı**: Bu bölümde listelenen tüm sunucular (Web Uygulaması Ara Sunucusu hariç), Active Directory etki alanınıza katılmalıdır.
 
@@ -39,7 +40,7 @@ I
 >-  Ayrıca, WAP’yi barındıran sunucuda, dış istemcilere yayımlanan adla eşleşen bir SSL sertifikası olmalı ve NDES sunucusunda kullanılan SSL sertifikasına güvenilmelidir. Bu sertifikalar, WAP sunucusunun istemcilerden gelen SSL bağlantıyı sonlandırmasına ve NDES sunucusuna yeni bir SSL bağlantı oluşturmasına imkan sağlar.
     WAP sertifikaları hakkında bilgi için, [Web Uygulaması Ara Sunucusu Kullanarak Uygulama Yayınlamayı Planlama](https://technet.microsoft.com/library/dn383650.aspx) konusunun **Sertifikaları planlama** bölümüne bakın. WAP sunucuları hakkında genel bilgi için bkz. [Web Uygulaması Ara Sunucusu ile çalışma](http://technet.microsoft.com/library/dn584113.aspx).|
 
-### Ağ gereksinimleri
+### <a name="network-requirements"></a>Ağ gereksinimleri
 
 İnternet’ten çevre ağına, İnternet’te tüm konaklardan/IP adreslerinden NDES sunucusuna bağlantı noktası 443’e izin verin.
 
@@ -48,7 +49,7 @@ I
 NDES sunucusunun [Azure AD uygulama proxy’si](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Erişim Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx)’si veya üçüncü taraf bir proxy gibi bir proxy aracılığıyla yayımlanmasını öneririz.
 
 
-### <a name="BKMK_CertsAndTemplates"></a>Sertifikalar ve Şablonlar
+### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Sertifikalar ve Şablonlar
 
 |Nesne|Ayrıntılar|
 |----------|-----------|
@@ -57,13 +58,13 @@ NDES sunucusunun [Azure AD uygulama proxy’si](https://azure.microsoft.com/en-u
 |**Sunucu kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu SSL sertifikasını NDES Sunucusu'ndaki IIS'de yüklersiniz ve bağlarsınız.|
 |**Güvenilen Kök CA sertifika**|Bunu kök CA'dan veya kök CA’ya güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarabilir ve Güvenilen CA sertifika profilini kullanarak cihazlara dağıtabilirsiniz.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
 
-### <a name="BKMK_Accounts"></a>Hesaplar
+### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Hesaplar
 
 |Ad|Ayrıntılar|
 |--------|-----------|
 |**NDES hizmet hesabı**|NDES Hizmet Hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı belirtirsiniz.|
 
-## <a name="BKMK_ConfigureInfrastructure"></a>Altyapınızı yapılandırın
+## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Altyapınızı yapılandırın
 Sertifika profillerini yapılandırmadan önce Windows Server 2012 R2 ve Active Directory Sertifika Hizmetleri (ADCS) bilgisi gerektiren aşağıdaki görevleri tamamlamanız gerekir:
 
 **Görev 1**: NDES hizmet hesabı oluşturma
@@ -76,21 +77,21 @@ Sertifika profillerini yapılandırmadan önce Windows Server 2012 R2 ve Active 
 
 **Görev 5**: Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
 
-### Görev 1 - NDES hizmet hesabı oluşturma
+### <a name="task-1-create-an-ndes-service-account"></a>Görev 1 - NDES hizmet hesabı oluşturma
 
 NDES hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı oluşturun. NDES'i yükleyip yapılandırmadan önce sertifika veren CA üstünde şablonları yapılandırırken bu hesabı belirteceksiniz. Kullanıcının varsayılan haklara (**Yerel Olarak Oturum Açma**, **Hizmet Olarak Oturum Açma** ve **Toplu İş Olarak Oturum Açma** hakları) sahip olduğundan emin olun. Bazı kuruluşların söz konusu hakları devre dışı bırakan sağlamlaştırma ilkeleri vardır.
 
 
 
 
-### Görev 2 - Sertifika yetkilisinde sertifika şablonlarını yapılandırma
+### <a name="task-2-configure-certificate-templates-on-the-certification-authority"></a>Görev 2 - Sertifika yetkilisinde sertifika şablonlarını yapılandırma
 Bu görevde şunları yapacaksınız:
 
 -   NDES için bir sertifika şablonu yapılandırma
 
 -   NDES için oluşturulan sertifika şablonunu yayımlama
 
-##### Sertifika yetkilisini yapılandırmak için
+##### <a name="to-configure-the-certification-authority"></a>Sertifika yetkilisini yapılandırmak için
 
 1.  Kuruluş yöneticisi olarak oturum açın. 
 
@@ -143,12 +144,12 @@ CA'yı istekte bulunan kişinin geçerlilik süresini belirlemesine izin verecek
 
 4.  Sertifika veren CA'da, sertifika şablonunu yayımlamak için Sertifika Yetkilisi ek bileşenini kullanın.
 
-    1.  **Sertifika Şablonları** düğümünü seçin, **Eylem**--&gt; **Yeni** &gt; **Verilecek Sertifika Şablonu** öğesine tıklayın ve ardından 2. adımda oluşturduğunuz şablonu seçin.
+    1.  **Sertifika Şablonları** düğümünü seçin, **Eylem**-&gt; **Yeni** &gt; **Verilecek Sertifika Şablonu** öğesine tıklayın ve ardından 2. adımda oluşturduğunuz şablonu seçin.
 
     2.  Şablonu **Sertifika Şablonları** klasöründe görüntüleyerek yayımlandığını doğrulayın.
 
 
-### Görev 3 - NDES sunucusunda önkoşulları yapılandırma
+### <a name="task-3-configure-prerequisites-on-the-ndes-server"></a>Görev 3 - NDES sunucusunda önkoşulları yapılandırma
 Bu görevde şunları yapacaksınız:
 
 -   NDES'i bir Windows Server'a ekleyin ve IIS'yi NDES'i destekleyecek biçimde yapılandırın
@@ -189,7 +190,7 @@ Bu görevde şunları yapacaksınız:
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### Görev 4 - NDES’yi Intune’la kullanılacak şekilde yapılandırma
+### <a name="task-4-configure-ndes-for-use-with-intune"></a>Görev 4 - NDES’yi Intune’la kullanılacak şekilde yapılandırma
 Bu görevde şunları yapacaksınız:
 
 -   NDES'i sertifika veren CA ile kullanmak için yapılandırma
@@ -198,7 +199,7 @@ Bu görevde şunları yapacaksınız:
 
 -   IIS'de İstek Filtrelemeyi Yapılandırma
 
-##### NDES’yi Intune’la kullanılacak şekilde yapılandırmak için
+##### <a name="to-configure-ndes-for-use-with-intune"></a>NDES’yi Intune’la kullanılacak şekilde yapılandırmak için
 
 1.  NDES Sunucusunda, AD CS Yapılandırma sihirbazını açın ve aşağıdaki yapılandırmaları yapın.
 
@@ -247,7 +248,7 @@ Bu görevde şunları yapacaksınız:
 
     **503 Hizmet kullanılamıyor** hatasını alırsanız olay görüntüleyicisini gözden geçirin. NDES kullanıcısı için bir hakkın eksik olması nedeniyle uygulama havuzu durdurulmuş olabilir. Bu haklar Görev 1'de açıklanmıştır.
 
-##### NDES Sunucusu'nda sertifikaları yüklemek ve bağlamak için
+##### <a name="to-install-and-bind-certificates-on-the-ndes-server"></a>NDES Sunucusu'nda sertifikaları yüklemek ve bağlamak için
 
 1.  NDES Sunucunuzda, iç CA'nızdan veya genel CA'dan bir **sunucu kimlik doğrulaması** sertifikası isteyin ve yükleyin. Ardından bu SSL sertifikasını IIS'de bağlarsınız.
 
@@ -271,7 +272,7 @@ Bu görevde şunları yapacaksınız:
 
     **Konu Adı** - Bu, sertifikayı yüklediğiniz sunucunun (NDES Sunucusu) DNS adına eşit olmalıdır.
 
-##### IIS İstek Filtreleme'yi yapılandırmak için
+##### <a name="to-configure-iis-request-filtering"></a>IIS İstek Filtreleme'yi yapılandırmak için
 
 1.  NDES Sunucusu'nda **IIS Yöneticisi**'ni açın, **Bağlantılar** bölmesinden **Varsayılan Web Sitesi** 'ni seçin ve ardından **İstek Filtreleme**'yi açın.
 
@@ -293,14 +294,14 @@ Bu görevde şunları yapacaksınız:
 
 4.  NDES sunucusunu yeniden başlatın. Sunucu artık Sertifika Bağlayıcısı'nı desteklemeye hazırdır.
 
-### Görev 5 - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
+### <a name="task-5-enable-install-and-configure-the-intune-certificate-connector"></a>Görev 5 - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
 Bu görevde şunları yapacaksınız:
 
 Intune’da NDES desteğini etkinleştirme.
 
 NDES Sunucusu'nda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
 
-##### Sertifika Bağlayıcısı desteğini etkinleştirmek için
+##### <a name="to-enable-support-for-the-certificate-connector"></a>Sertifika Bağlayıcısı desteğini etkinleştirmek için
 
 1.  [Intune yönetim konsolunu](https://manage.microsoft.com) açın, **Yönetim** &gt; **Sertifika Bağlayıcısı**’na tıklayın.
 
@@ -308,7 +309,7 @@ NDES Sunucusu'nda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandı
 
 3.  **Sertifika Bağlayıcısı'nı Etkinleştir**'i seçin ve ardından **Tamam**'a tıklayın.
 
-##### Sertifika Bağlayıcısı'nı indirmek, yüklemek ve yapılandırmak için
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Sertifika Bağlayıcısı'nı indirmek, yüklemek ve yapılandırmak için
 
 1.  [Intune yönetim konsolunu](https://manage.microsoft.com) açın ve ardından **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **Sertifika Bağlayıcısı** &gt; **Sertifika Bağlayıcısı’nı İndir**’e tıklayın.
 
@@ -344,11 +345,11 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403
 
 **http:// &lt;NDES_sunucunuzun_FQDN_değeri&gt;/certsrv/mscep/mscep.dll**
 
-## Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 Artık, [Sertifika profillerini yapılandırma](Configure-Intune-certificate-profiles.md) konusunda açıklandığı gibi sertifika profillerinizi yapılandırmaya hazırsınız.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
