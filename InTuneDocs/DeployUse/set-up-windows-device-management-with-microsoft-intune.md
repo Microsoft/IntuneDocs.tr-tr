@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 78137299b1c4e18fe68e1f9720a2111d1794e177
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: 9929294dd93e7bad47e6674ccafab0c036a1f89c
 
 
 ---
@@ -34,7 +34,11 @@ Kullanıcıların, Intune Şirket Portalı uygulamasını kullanarak cihazların
 1. **Intune’u ayarlama**<br>
 Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi (MDM) yetkilisini](prerequisites-for-enrollment.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve ardından MDM’yi ayarlayın.
 
-2. **CNAME’ler oluşturma** (isteğe bağlı)<br>Kaydolmayı basitleştirmek amacıyla şirketinizin etki alanı için **CNAME** DNS kaynak kayıtları oluşturun. CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. Hiçbir kaydolma CNAME kaydı bulunamazsa, kullanıcılardan MDM sunucu adını `https://manage.microsoft.com` el ile girmeleri istenir. CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
+2. **CNAME’ler oluşturma** (isteğe bağlı)<br>Şirketinizin etki alanı için **CNAME** DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden enterpriseenrollment-s.manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz.
+
+    DNS'de EnterpriseEnrollment.contoso.com adresini manage.microsoft.com adresine yönlendiren bir CNAME kaydınız varsa, bunun yerine DNS'de EnterpriseEnrollment.contoso.com adresini enterpriseenrollment-s.manage.microsoft.com adresine yönlendiren bir CNAME oluşturmanızı öneririz. Bu değişikliğin önerilmesinin nedeni, manage.microsoft.com uç noktasının gelecek sürümlerin birinde kayıt için kullanım dışı bırakılacak olmasıdır.
+
+    CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
 
   |TÜR|Konak adı|Şunu gösterir:|TTL|
   |--------|-------------|-------------|-------|
@@ -68,6 +72,6 @@ Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz y
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
