@@ -2,7 +2,8 @@
 title: "Kuruluşa ait cihazları yönetme | Microsoft Intune"
 description: "Şirkete ait cihazları cihaz türüne, nasıl satın alındığına ve kuruluşun gereksinimlerine bağlı olarak çeşitli yollarla kaydedin."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 88409332d203dc4ee82fdf98f89a94e5a89a7eed
-ms.openlocfilehash: c29cd2c0c4c5671a84f7c0b0ba473e6fb32604d9
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 7577cbab528d88635e8551bf8de1ffd49becaa84
 
 
 ---
@@ -33,7 +34,7 @@ Kullanıcılara iOS cihazlar arasından seçim yapma olanağı sunarsanız, kayd
 
 ## <a name="create-a-device-enrollment-manager-account"></a>Cihaz kayıt yöneticisi hesabı oluşturma
 
-Kuruluşunuzdaki çok sayıda mobil cihazı Intune ile yönetmek için tek kullanıcılı cihaz kayıt yöneticisi (DEM) hesabı oluşturabilirsiniz. Bir DEM hesabı oluşturduktan sonra, belirlenen bir hesap yöneticisi standart bir kullanıcıdan beş cihaz daha fazla kaydedebilir.
+Kuruluşunuzdaki çok sayıda mobil cihazı Intune ile yönetmek için tek kullanıcılı cihaz kayıt yöneticisi (DEM) hesabı oluşturabilirsiniz. Bir DEM hesabı oluşturduktan sonra, belirlenen bir hesap yöneticisi standart bir kullanıcıdan 15 cihaz daha fazla kaydedebilir.
 
 DEM hesabını yalnızca tek, belirli bir kullanıcı tarafından kullanılanlar dışındaki cihazları kaydetmek için kullanabilirsiniz. Bu tür cihazlar örneğin satış noktası veya kamu hizmeti uygulamalarına uygundur ancak e-postaya veya şirket kaynaklarına erişmesi gereken kullanıcılar için uygun değildir.
 
@@ -60,6 +61,6 @@ Bir cihazlar listesinde, **Sahiplik** değerinin karşılığı **Şirket**’ti
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

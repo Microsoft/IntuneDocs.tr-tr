@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
-ms.openlocfilehash: 20f61b9dec289252797650e7ef40ff4c5b7c0fbc
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 2fd4d3c7cb92e27a01090fdec85e02db4010f859
 
 
 ---
@@ -26,7 +26,8 @@ ms.openlocfilehash: 20f61b9dec289252797650e7ef40ff4c5b7c0fbc
 Bu konu başlığı altında açıklanan ilke ayarları, Android 4.0 ve üzeri veya Samsung KNOX Standard 4.0 ve üzerini çalıştıran cihazlar için geçerlidir.
 
 Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bakın:
-> [!div class="op_single_selector"]
+> [!div class = "op_single_selector"]
+- [Android for Work için uyumluluk ilkesi ayarları](afw-compliance-policy-settings-in-microsoft-intune.md)
 - [iOS cihazları için uyumluluk ilkesi ayarları](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Windows cihazları için uyumluluk ilkesi ayarları](windows-compliance-policy-settings-in-microsoft-intune.md)
 
@@ -85,6 +86,6 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
