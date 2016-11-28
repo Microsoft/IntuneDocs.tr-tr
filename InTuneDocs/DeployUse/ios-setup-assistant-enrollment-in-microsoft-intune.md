@@ -14,8 +14,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: bb94cb21bce5fb25c821b6a01d952ccba2f94834
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
 
 
 ---
@@ -81,7 +81,7 @@ Apple Configurator kullanarak, bir iOS cihazını fabrika ayarlarına sıfırlay
         111111111,PO 1234
         ```
 
-    -   **Cihaz ayrıntılarını el ile ekle**&mdash; En fazla beş cihazın seri numarasını ve cihaz ayrıntılarını girin.
+    -   **Cihaz ayrıntılarını el ile ekle**&mdash; En fazla 15 cihazın seri numarasını ve cihaz ayrıntılarını girin.
 
     > [!NOTE]
     > Şirkete ait cihazları daha sonra Intune yönetiminden kaldırmanız gerekirse, cihaz kaydını devre dışı bırakmak için **Şirkete Ait Önceden Kaydedilmiş cihazlar** altındaki **iOS Seri Numarasına Göre** cihaz grubunda bulunan cihaz seri numarasını Intune’dan kaldırmanız gerekebilir. Intune, seri numaralarını kaldırdığınız sıralarda olağanüstü durum kurtarma yordamı gerçekleştirirse, o grupta yalnızca etkin cihazların seri numaralarının bulunduğunu doğrulamanız gerekir.
@@ -151,6 +151,6 @@ Apple Configurator kullanarak, bir iOS cihazını fabrika ayarlarına sıfırlay
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

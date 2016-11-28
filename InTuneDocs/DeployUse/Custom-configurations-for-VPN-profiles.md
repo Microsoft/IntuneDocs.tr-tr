@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1035a8ca4f63ad973e83ec24a7d700fac1d256cc
-ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
@@ -23,7 +23,15 @@ ms.openlocfilehash: ee36cd5f3c64fc5dbeeb7265116c14be33b50067
 # <a name="custom-configurations-for-vpn-profiles"></a>VPN profilleri için özel yapılandırmalar
 
 ## <a name="create-a-custom-configuration"></a>Özel yapılandırma oluşturma
-Intune’da VPN profillerini oluşturmak için özel yapılandırmalar kullanabilirsiniz. Özel yapılandırma oluşturmak için:
+Intune'da VPN profillerini oluşturmak için özel yapılandırmalar kullanabilirsiniz:
+
+* Android 4 ve üzeri çalıştıran cihazlar
+* Android for Work cihazlar
+* Windows 8.1 ve üzeri çalıştıran kayıtlı cihazlar
+* Windows Phone 8.1 ve üzeri sürümleri çalıştıran cihazlar 
+* Windows 10 masaüstü ve mobil sürümlerini çalıştıran cihazlar
+
+Özel yapılandırma oluşturmak için:
 
    1. Intune yönetici konsolunda **İlke** > **İlke Ekle** > *Platformu genişlet* > **Özel yapılandırma** > **İlke Oluştur**’a tıklayın.
    2. İlke için bir ad sağlayın.
@@ -86,7 +94,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 Bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyla ilgili ek ayrıntılar için, müşteriler yapılandırma servisi sağlayıcısı (CSP) belgelerine bakabilir: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
-## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>PulseSecure üzerinde Android uygulaması başına VPN için URI ayarları
+## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>PulseSecure üzerinde Android uygulaması başına VPN için URI ayarları
 ### <a name="custom-uri-for-package-list"></a>PAKET LİSTESİ İÇİN ÖZEL URI
 -  Veri türü = String
 -  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList

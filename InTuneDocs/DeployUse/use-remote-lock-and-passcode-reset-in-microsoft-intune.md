@@ -2,10 +2,10 @@
 title: "Uzaktan kilitleme ve geçiş kodu sıfırlama | Microsoft Intune"
 description: "Intune uzaktan kilitleme ve geçiş kodu sıfırlama özellikleri sunar."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: b32ef59aa33205e5687d951d50dfd605a6b071f2
+ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
+ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
 
 ---
-# Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
+# <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
 Microsoft Intune hem uzaktan kilitleme hem de geçiş kodu sıfırlama özelliklerini sağlar.
 
-## Cihazı uzaktan kilitleme
+## <a name="lock-a-device-remotely"></a>Cihazı uzaktan kilitleme
 Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Aşağıdaki tabloda, farklı mobil platformlarda uzaktan kilitleme işleminin nasıl çalıştığı listelenmiştir.
 
 |Platform|Uzaktan kilitleme|
@@ -34,7 +34,7 @@ Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Aşa
 
 Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için uzaktan kilitleme desteklenmez.
 
-### Bir mobil cihazı Intune konsolu üzerinden uzaktan kilitleme
+### <a name="lock-a-mobile-device-remotely-through-the-intune-console"></a>Bir mobil cihazı Intune konsolu üzerinden uzaktan kilitleme
 
 1.  [Intune yönetici konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Mobil Cihazlar** öğelerini seçin.
 
@@ -45,13 +45,13 @@ Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için uzaktan ki
 
 3.  Listede, kilitlemek istediğiniz cihazı veya cihazları seçin. Görev çubuğunda **Uzak Görevler**’i ve ardından **Uzaktan Kilitleme**’yi seçin.
 
-## Cihazdaki geçiş kodunu sıfırlama
+## <a name="reset-the-passcode-on-a-device"></a>Cihazdaki geçiş kodunu sıfırlama
 Bir kullanıcı geçiş kodunu unutursa, cihazdan geçiş kodunu kaldırarak veya cihazda yeni bir geçici geçiş kodu zorlayarak yardımcı olabilirsiniz. Aşağıdaki tabloda, farklı mobil platformlarda parola sıfırlama işleminin nasıl çalıştığı listelenmiştir.
 
 |Platform|Geçiş kodu sıfırlama|
 |------------|------------------|
 |iOS|Bir cihazdan parolayı temizlemek için desteklenir. Yeni bir geçici parola oluşturmaz.|
-|Android|Desteklenen. Geçici bir geçiş kodu oluşturur.|
+|Android|Android 7.0'den önceki sürümlerde desteklenir. Geçici bir geçiş kodu oluşturur.|
 |Windows 10 Mobile|Desteklenir|
 |Windows Phone 8 ve Windows Phone 8.1|Desteklenir|
 |Windows RT 8.1 ve Windows RT|Desteklenmez|
@@ -59,7 +59,7 @@ Bir kullanıcı geçiş kodunu unutursa, cihazdan geçiş kodunu kaldırarak vey
 
 Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için geçiş kodu sıfırlaması desteklenmez.
 
-### Geçiş kodu sıfırlama
+### <a name="reset-a-passcode"></a>Geçiş kodu sıfırlama
 
 1.  [Intune yönetici konsolunda](https://manage.microsoft.com/), **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Mobil Cihazlar** öğelerini seçin.
 
@@ -71,11 +71,11 @@ Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için geçiş ko
 3.  Listede, kilitlemek istediğiniz cihazı veya cihazları seçin. Görev çubuğunda **Uzak Görevler**’i ve ardından **Geçiş Kodu Sıfırlama**’yı seçin.
 
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Cihazları kullanımdan kaldırma](retire-devices-from-microsoft-intune-management.md) ve [Cihaz Veri Yönetimi için Windows Seçmeli Silme](http://technet.microsoft.com/library/dn486874.aspx)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

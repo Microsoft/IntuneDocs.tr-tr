@@ -7,22 +7,22 @@ manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 557c1b3b36adf40ec4ad94f22ed7bb9705c6eec4
-ms.openlocfilehash: 5c6a5848c447c0eacbdfa166962a47b1299c2b74
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 
 ---
 
-# Lookout for Work uygulamalarını yapılandırma ve dağıtma
+# <a name="configure-and-deploy-lookout-for-work-apps"></a>Lookout for Work uygulamalarını yapılandırma ve dağıtma
 Bu makalede, Android ve iOS cihazlarda Lookout for Work uygulamasının nasıl yapılandırılacağı ve dağıtılacağı açıklanır.
 
-## Android (Google Play Store uygulaması)
+## <a name="android-google-play-store-app"></a>Android (Google Play Store uygulaması)
 
 * **1. Adım:**   [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Uygulamalar**’a gidin ve **Uygulama Ekle**’yi seçin.   
 * **2. Adım:**   Yayımcının **Yazılım Kurulumu** sayfasında **Dış bağlantı**’yı seçin ve şu URL'yi belirtin: https://play.google.com/store/apps/details?id=com.lookout.enterprise
@@ -47,7 +47,7 @@ Intune konsolunda **Uygulamalar**’a tıkladığınızda artık Lookout for Wor
 * **6. Adım**: **Gerekli Yükleme** seçeneğini belirleyerek Lookout uygulamasının kullanıcı cihazında yüklü olmasını zorunlu hale getirin.
 
 
-## iOS (Lookout uygulamasının Kuruluş imzalı sürümü)
+## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (Lookout uygulamasının Kuruluş imzalı sürümü)
 
 * **1. Adım:** Cihazınızda **iOS yönetimi** ayarlandığından emin olun. Cihazınızı iOS yönetimi için ayarlama konusunda yönergeler için bkz. [iOS ve Mac yönetimini ayarlama](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
@@ -82,22 +82,22 @@ Intune konsolunda **Uygulamalar**’a tıkladığınızda artık Lookout for Wor
 
 **Gerekli Yükleme** seçeneğini belirleyerek Lookout uygulamasının kullanıcı cihazında yüklü olmasını zorunlu hale getirin.
 
-## Dağıtılmış uygulama cihazda açıldığında ne olur?
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Dağıtılmış uygulama cihazda açıldığında ne olur?
 
 
 
 
 Kullanıcı cihazda Lookout for Work’ü açtığında uygulamayı etkinleştirmeleri ve Azure Active Directory seçeneği ile Oturum Açmaları istenir. Son kullanıcı akışı ile ayrıntılı bir rehber aşağıdaki konularda bulunabilir:
 
-* [Android cihazınızda Lookout for Work uygulamasını yüklemeniz istendi](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+* [Android cihazınıza Lookout for Work uygulamasını yüklemeniz isteniyor](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
 * [Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 * [Uyumluluk ilkesinde cihaz tehdit koruması kuralını etkinleştirme](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
