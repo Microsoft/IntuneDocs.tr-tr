@@ -4,6 +4,7 @@ description:
 keywords: 
 author: Msmbaldwin
 manager: jeffgilb
+ms.author: oydang
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8bc2f6e8dcf9d0ac3e7fccec792c86ff1fd4131c
-ms.openlocfilehash: 15be877edbdeb827a4318af226ea8cde8c8e46f4
+ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
+ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
 
 
 ---
@@ -82,10 +83,18 @@ Intune Uygulama SDK'sını yerel Android uygulamanızla tümleştirmek için aş
 
 * **[Android için Intune Uygulama SDK’sı Geliştirici Kılavuzu](intune-app-sdk-android.md)**: Bu belgede, mobil Android uygulamanızı Intune Uygulama SDK’sı ile etkinleştirme işleminde size adım adım yol gösterilir.
 
-Intune Uygulaması SDK Xamarin Bileşeni ve Intune Uygulaması SDK Cordova Eklentisi belgelerini, ilgili GitHub depolarında bulabilirsiniz.
+Intune Uygulama SDK’sı Cordova Eklentisi ile Cordova uygulamaları oluşturmak için aşağıdakiler gereklidir:
+
+* **[Intune Uygulama SDK’sı Cordova Eklentisi kılavuzu](intune-app-sdk-cordova)**: Bu belge, Intune mobil uygulama yönetimi için Cordova kullanarak iOS ve Android uygulamaları oluşturmanıza yardımcı olur.
+
+Intune Uygulama SDK’sı Xamarin Bileşeni ile Xamarin uygulamaları oluşturmak için aşağıdakiler gereklidir:
+
+* **[Intune Uygulama SDK’sı Xamarin Bileşeni kılavuzu](intune-app-sdk-xamarin)**: Bu belge, Intune mobil uygulaması yönetimi için Cordova kullanarak iOS ve Android uygulamaları oluşturmanıza yardımcı olur.
 
 
-## <a name="set-up-telemetry-for-your-app"></a>Uygulamanızda telemetriyi ayarlama
+
+
+## <a name="configure-telemetry-for-your-app"></a>Uygulamanızda Telemetriyi yapılandırma
 
 Microsoft Intune, uygulamanızdaki kullanım istatistikleri hakkında veri toplar.
 
@@ -95,7 +104,7 @@ Microsoft Intune, uygulamanızdaki kullanım istatistikleri hakkında veri topla
 
 * **Android için Intune Uygulama SDK’sı**: Telemetri verileri SDK aracılığıyla günlüğe kaydedilmez.
 
-## <a name="test-your-mamenabled-app-with-microsoft-intune"></a>MAM özellikli uygulamanızı Microsoft Intune ile test etme
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>MAM özellikli uygulamanızı Microsoft Intune ile test etme
 
 iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek için gerekli adımları bitirdikten sonra, kullanıcı ile BT yöneticisi için tüm uygulama yönetimi ilkelerinin etkinleştirildiğinden ve çalıştığından emin olmanız gerekir. Tümleşik uygulamanızı sınamak için aşağıdakiler gerekir:
 
