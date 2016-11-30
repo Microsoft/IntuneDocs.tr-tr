@@ -1,9 +1,9 @@
 # [Anlama ve Keşfetme](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Başlarken](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Başlarken](/intune/get-started/get-started)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
 # [Yenilikler](/intune/whats-new/whats-new-in-microsoft-intune)
-# [Dağıtma ve Kullanma](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
+# Dağıtma ve Kullanma
 ## [Cihaz ve uygulama yaşam döngülerine genel bakış](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Cihaz yaşam döngüsü](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [Uygulama yaşam döngüsü](overview-of-app-lifecycle-in-microsoft-intune.md)
@@ -89,7 +89,7 @@
 ### [Android for Work uygulama yapılandırma ilkeleri](afw-app-configuration-policy.md)
 ### [iOS mobil uygulama sağlama profilleri](ios-mobile-app-provisioning-profiles.md)
 ### [İnternet erişimini yönetme](manage-internet-access-using-managed-browser-policies.md)
-
+### [İş kolu uygulamalarını dışarıdan yükleme](sideload-apps-for-windows.md)
 
 ## [Uygulamaları ve verileri koruma](protect-apps-and-data-with-microsoft-intune.md)
 ### [Cihaz uyumluluğu ilkeleri](introduction-to-device-compliance-policies-in-microsoft-intune.md)
@@ -154,6 +154,6 @@
 # [Sorun Giderme](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

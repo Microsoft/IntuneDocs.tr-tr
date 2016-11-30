@@ -1,54 +1,37 @@
 # [Anlama ve Keşfetme](/intune/understand-explore/introduction-to-microsoft-intune)
-
-# [Başlarken](what-to-know-before-you-start-microsoft-intune.md)
-## [Başlamadan önce bilmeniz gerekenler](what-to-know-before-you-start-microsoft-intune.md)
-### [Desteklenen mobil cihazlar ve bilgisayarlar](supported-mobile-devices-and-computers.md)
-### [Desteklenen web tarayıcıları](supported-web-browsers.md)
-### [Ağ altyapısı gereksinimleri](network-infrastructure-requirements-for-microsoft-intune.md)
-### [Yönetim hesapları, web siteleri ve izinler](administrative-accounts-websites-perms.md)
-### [Şirket Portalı](microsoft-intune-company-portal.md)
-### [Microsoft bulut hizmetleri ve ürünleriyle tümleştirme](integration-with-cloud-services.md)
-### [Ağ bant genişliği kullanımı](network-bandwidth-use.md)
-### [Özel etki alanı adları](domain-names-for-microsoft-intune.md)
-
-## [Cihazların nasıl yönetileceğini seçme](choose-how-to-manage-devices.md)
-### [Kayıtlı cihaz yönetimi özellikleri](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Intune bilgisayar yazılımı istemcisi özellikleri](windows-pc-management-capabilities-in-microsoft-intune.md)
-
-## [Intune’a geçiş](migrate-to-intune.md)
-
-## [Hızlı başlangıç kılavuzu](start-with-a-paid-subscription-to-microsoft-intune.md)
+# [Başlarken](get-started.md)
+## [Hızlı Başlangıç Kılavuzu](start-with-a-paid-subscription-to-microsoft-intune.md)
+### [Önkoşullar](what-to-know-before-you-start-microsoft-intune.md)
+#### [Desteklenen mobil cihazlar ve bilgisayarlar](supported-mobile-devices-and-computers.md)
+#### [Ağ bant genişliği kullanımı](network-bandwidth-use.md)
 ### [Intune'da oturum açma](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Özel bir etki alanı adı yapılandırma](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
-### [AD’yi eşitleme ve kullanıcıları ekleme](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
+### [AD'yi eşitleme ve kullanıcıları ekleme](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
 ### [Intune lisanslarını yönetme](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [Kullanıcıları ve cihazları düzenleme](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
-### [İlke oluşturma ve uygulama yayımlama](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
+### [İlkeleri ve uygulamaları dağıtma](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Şirket Portalı'nı özelleştirme](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Mobil cihazları kaydetme ve uygulama yükleme](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Mobil aygıtları kaydetme](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Yapılandırma sonrası görevleri](post-configuration-tasks.md)
-
-## [Hızlı kılavuzlar](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Hızlı kılavuz: Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Hızlı kılavuz: Veri şifreleme ile şirket verilerini koruma](protect-data-encryption.md)
-### [Hızlı kılavuz: Kullanıcılarınıza mobil uygulama yayımlama](publish-mobile-apps-to-users.md)
-### [Hızlı kılavuz: Mobil cihazlarda e-posta yapılandırmasını basitleştirme](simplify-email-configuration-on-mobile-devices.md)
-### [Hızlı kılavuz: Windows kişisel bilgisayarı kötü amaçlı yazılım tehditlerinden koruma](protect-pcs-against-malware-threats.md)
-
-## [Intune dağıtımlarının aşamaları](rollout-phases-for-microsoft-intune-deployment.md)
+## [Intune'a geçiş](migrate-to-intune.md)
+## [Sonraki adımlar](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Veri şifreleme ile şirket verilerini koruma](protect-data-encryption.md)
+### [Kullanıcılarınıza mobil uygulama yayımlama](publish-mobile-apps-to-users.md)
+### [Mobil cihazlarda e-posta yapılandırmasını basitleştirme](simplify-email-configuration-on-mobile-devices.md)
+### [Windows bilgisayarlarını kötü amaçlı yazılım tehditlerine karşı koruma](protect-pcs-against-malware-threats.md)
+## [Intune dağıtım aşamaları](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Proje kapsamı](project-scope.md)
 ### [Kavram kanıtı](proof-of-concept.md)
 ### [Pilot](pilot.md)
 ### [Kurumsal dağıtım](enterprise-rollout.md)
 ### [İşlemler ve bakım](operations-and-maintenance.md)
-
-<!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Yenilikler](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Dağıtma ve Kullanma](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
-# [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
+# [Sorun Giderme](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
