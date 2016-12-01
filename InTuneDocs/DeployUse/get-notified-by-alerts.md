@@ -2,9 +2,10 @@
 title: "Uyarılarla bilgi edinin | Microsoft Intune"
 description: "Uyarıların, Microsoft Intune’da olup bitenlerden haberdar olmanızı nasıl sağladığını öğrenin."
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbe2f13b2c41478181c396c4e16e5f3f9180e551
-ms.openlocfilehash: 518e26671cf31c4b70a69def839ee52dd9ffdaf8
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 44b496aecd62d515512f10d2aae97f2c7a06dc6a
 
 
 ---
 
-# Microsoft Intune Uyarıları ile bilgi edinin
+# <a name="get-notified-by-microsoft-intune-alerts"></a>Microsoft Intune Uyarıları ile bilgi edinin
 Uyarılar, Microsoft Intune’da olup bitenlerden haberdar olmanızı sağlar.
 
 Örneğin, uyarılar aşağıdaki olaylar hakkında sizi bilgilendirebilir:
@@ -31,7 +32,7 @@ Uyarılar, Microsoft Intune’da olup bitenlerden haberdar olmanızı sağlar.
 -   İki Intune ilkesi arasında bir çakışma algılanması
 
 
-## Uyarılar nasıl çalışır?
+## <a name="how-alerts-work"></a>Uyarılar nasıl çalışır?
 Uyarılar, Intune içinde yerleşik olarak bulunan önceden yapılandırılmış bir kural kümesi olan **uyarı türlerine** göre oluşturulur. Örneğin, **Bulut depolama alanında %10 veya daha az boş alan var** uyarı türü, uygulamalarınızı bulutta depolamak için kullandığınız alan bitmeye yaklaştığında sizi uyarır. Uyarı türlerini etkinleştirebilir veya devre dışı bırakabilir ve her uyarı türünün özelliklerini yapılandırabilirsiniz. Örneğin, yukarıdaki uyarı türünü kullanarak şunları yapılandırabilirsiniz:
 
 -   **Durum:** Bu uyarı türünün etkin veya devre dışı olduğu
@@ -51,7 +52,7 @@ Diğer uyarı türlerinde, bir uyarı oluşturulmadan önce etkilenmesi gereken 
 
 Ayrıca, Intune’u, bir uyarı oluşturulduğunda sizi e-posta ile bilgilendirmek üzere yapılandırabilirsiniz
 
-## Uyarıları ayarlama
+## <a name="set-up-alerts"></a>Uyarıları ayarlama
 [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Yönetim** &gt; **Uyarılar ve Bildirimler**’i seçin ve sonra da aşağıdaki görevlerden birini seçin:
 
 |Görev|Açıklama|
@@ -60,7 +61,7 @@ Ayrıca, Intune’u, bir uyarı oluşturulduğunda sizi e-posta ile bilgilendirm
 |**Alıcılar**|Ayarladığınız e-posta bildirimlerini alacak yeni bir e-posta adresi eklemek için **Ekle**’yi seçin.<br /><br />Ayrıca, mevcut alıcıları **Düzenleyebilir** veya **Silebilirsiniz** .<br /><br />Bildirimleri almak için bu e-posta adresini **Bildirim Kuralları** bölümünde bir alıcı olarak da eklemelisiniz.|
 |**Bildirim Kuralları**|Bir e-posta uyarısının kime gönderileceğini tanımlayan kuralları yapılandırır. Şunlardan birini yapabilirsiniz:<br /><br />**Mevcut kuralı seçme** - Bir kural seçin ve sonra da **Alıcıları Seç** öğesini seçin. Daha sonra, bu kurala uygun bir uyarı oluşturulduğunda bir e-posta alacak tüm alıcıları seçebilirsiniz.<br /><br />**Yeni kural oluşturma** - kural için bir ad girin, kurallar için geçerli olan uyarı kategorilerini ve uyarı önem derecesini seçin, kuralın geçerli olacağı cihaz gruplarını belirleyin ve bir uyarı oluşturulduğunda e-posta alacak kullanıcıları seçin.<br /><br />Ayrıca, mevcut bir kuralı **Etkinleştirebilir**, **Devre dışı bırakabilir**, **Düzenleyebilir**veya **Silebilirsiniz** .|
 
-## Uyarılarla çalışma
+## <a name="working-with-alerts"></a>Uyarılarla çalışma
 Intune Yönetim Konsolu'nda uyarılar üzerine çalışmanıza yardımcı olan aşağıdaki seçenekleri kullanın.
 
 |Seçenek|Açıklama|
@@ -80,11 +81,11 @@ Intune uyarıları şu durumlara kadar etkin kalır:
 > [!TIP]
 > Farklı işletim sistemleri çalıştıran cihazlarda aynı uyarı oluşturulduysa, uyarılar listesinde aynı uyarının birden fazla sürümünü görebilirsiniz.
 
-### Ayrıca bkz.
-[Microsoft Intune ile izleme ve raporlama](monitoring-and-reports-with-microsoft-intune.md)
+### <a name="see-also"></a>Ayrıca bkz.
+[Microsoft Intune ile izleme ve raporlar](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,5 +1,5 @@
-# [Anlama ve Keşfetme](introduction-to-microsoft-intune.md)
-## [Intune’a giriş](introduction-to-microsoft-intune.md)
+# Anlama ve Keşfetme
+## [Intune'a giriş](introduction-to-microsoft-intune.md)
 ## [Intune değerlendirme kılavuzu](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [30 günlük deneme için oturum açma veya kaydolma](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 ### [Kullanıcı ekleme](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
@@ -11,14 +11,14 @@
 ## [Yaygın senaryolar](common-ways-to-use-intune.md)
 ## [Sözlük](intune-glossary.md)
 
-# [Başlarken](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Başlarken](/intune/get-started/get-started)
 # [Yenilikler](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Dağıtma ve Kullanma](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Uygulama Geliştirme ve Özelleştirme](/intune/develop/intune-app-sdk)
-# [Sorunları Gider](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
+# [Sorun Giderme](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -2,7 +2,8 @@
 title: "Android cihazınızdaki uyumluluk denetimi | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
-ms.openlocfilehash: e5f519253cfa380a973db428bc5acaac3a2101df
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 22786ed9a7598222003847c33311209faa3291c1
 
 
 ---
 
 
-# Android Cihazınızda uyumluluk denetimi
+# <a name="check-compliance-on-your-android-device"></a>Android Cihazınızda uyumluluk denetimi
 
 Cihazınız bir süredir Intune’da oturum açmadıysa, şirket veya okul kaynaklarına erişemeyebilirsiniz. Yeniden erişim kazanmak için aşağıdakileri deneyin:
 
 1. Cihazınızda Android Şirket Portalı uygulamasını açın.
 
-2. 
+2. **Uyumluluğu Denetle**’ye dokunun.
 
 Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden sizin için sıfırlamasını isteyin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
@@ -35,6 +36,6 @@ Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, BT yöneticinizden 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

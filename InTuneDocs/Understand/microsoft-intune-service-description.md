@@ -2,8 +2,8 @@
 title: "Hizmet Açıklaması | Microsoft Intune"
 description: "Intune, Windows bilgisayarlarla iOS, Mac OS X, Android ve Windows mobil cihazları yönetmenize yardımcı olan bulut tabanlı bir hizmettir."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
-ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 423282fd8dd80358311373862f808cdaa58212bd
 
 
 ---
 
-# Microsoft Intune hizmet açıklaması
+# <a name="microsoft-intune-service-description"></a>Microsoft Intune hizmet açıklaması
 
 Microsoft Intune, Windows bilgisayarlarla iOS, Mac OS X, Android ve Windows mobil cihazları yönetmenize yardımcı olan bulut tabanlı bir hizmettir. Intune, şirket uygulamalarının ve verilerinin korunmasına da yardımcı olur. Intune’u tek başına kullanabilir veya System Center Configuration Manager ile birleştirerek yönetim özelliklerinizin kapsamını genişletebilirsiniz. 
 
@@ -39,7 +39,7 @@ Mobil cihazlarda yapılandırabileceğiniz ayarların listesi için bkz.:
 
 System Center Configuration Manager hakkında bilgi için bkz. [System Center Configuration Manager Belgeleri](https://technet.microsoft.com/library/mt346023.aspx).
 
-## Intune hizmet güncelleştirmelerinin size nasıl etkileyeceğini anlama
+## <a name="understand-how-intune-service-updates-affect-you"></a>Intune hizmet güncelleştirmelerinin size nasıl etkileyeceğini anlama
 Intune çevrimiçi bir hizmet olduğundan Microsoft bu hizmeti düzenli aralıklarla güncelleştirebilir.
 
 Bu hizmet güncelleştirmelerinin sıklığını ve hizmetin kullanımını etkileyebilecek bir güncelleştirme olduğunda size sağladığımız ön bildirimi anlamanıza yardımcı olması için bu konu başlığı altındaki bilgileri kullanın.
@@ -61,7 +61,7 @@ Microsoft’un Intune hizmeti hakkında sağladığı bildirim türleri şunlard
 -   Microsoft, aylık hizmet güncelleştirmemizdeki yeni özellikler, yeni işlevler ve var olan özelliklerde yapılan iyileştirmeler hakkında bilgi sağlar. Microsoft hizmet güncelleştirmelerini genel olarak her ayın ortalarında dağıtır. Güncelleştirmeler [Microsoft Intune’daki yenilikler](/intune/deploy-use/whats-new-in-microsoft-intune) bölümünde açıklanmıştır.
 -   Intune hizmetinin devre dışı bırakılması durumunda, 12 ay önce bu durum size bildirilecektir.
 
-## Sizin için uygun olan yönetim çözümünü seçin
+## <a name="choose-the-management-solution-thats-right-for-you"></a>Sizin için uygun olan yönetim çözümünü seçin
 Intune’u birkaç yolla yapılandırarak şirketinizin mobil cihazlarını ve bilgisayarlarını (bu belgede **cihazlar** olarak anılır) yönetebilir ve korunmalarına yardımcı olabilirsiniz.
 
 -   **Tek başına Intune yapılandırması.** Kuruluşunuzdaki cihazları yönetmek için Intune’daki web tabanlı yönetim konsolunu kullanın. Intune herhangi bir şirket içi BT altyapısı olmadan kullanılabilir, ancak Intune’u Active Directory Etki Alanı Hizmetleri ile kullanıyorsanız, Intune ve Etki Alanı Hizmetleri ile yönettiğiniz etki alanı kullanıcı hesaplarını kullanabilirsiniz.
@@ -69,14 +69,14 @@ Intune’u birkaç yolla yapılandırarak şirketinizin mobil cihazlarını ve b
 -   **Intune ile System Center Configuration Manager.** Kuruluşunuzdaki bilgisayarları ve mobil cihazları yönetmek için Configuration Manager yönetim konsolunu kullanın. Bu yapılandırma, tek bir konsol (Configuration Manager Yönetici Konsolu) üzerinden kuruluşunuzun tüm cihazlarını yönetmenize yardımcı olabilir. Configuration Manager, çok fazla sayıda mobil cihazı, sunucuyu ve bilgisayarı destekler. Daha fazla bilgi edinmek için bkz. [System Center Configuration Manager ve Microsoft Intune ile karma mobil cihaz yönetimi (MDM)](https://technet.microsoft.com/library/mt627883.aspx).  Hangi yaklaşımın sizin için doğru olduğuna kadar vermede daha fazla yardım için, [Configuration Manager ile Microsoft Intune tek başına ve karma ve mobil cihaz yönetimi arasında seçim yapın](https://technet.microsoft.com/en-us/library/mt706478.aspx). 
 
 
-## Intune hakkında daha fazla bilgi edinin
+## <a name="learn-more-about-intune"></a>Intune hakkında daha fazla bilgi edinin
 Intune hakkında daha fazla bilgi edinmek için bu kaynakları kullanın:
 
 -   [Microsoft Intune Güven Merkezi](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)’nde Intune güvenlik, gizlilik ve uyumluluk uygulamaları hakkında bilgi sağlanır ve Intune sertifikalarından bazıları açıklanır.
 
 -   [Microsoft Intune’un kayıtlı cihaz yönetimi özellikleri](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [System Center 2012 Configuration Manager için Belge Kitaplığı](https://technet.microsoft.com/library/gg682041.aspx)
 
@@ -84,6 +84,6 @@ Intune hakkında daha fazla bilgi edinmek için bu kaynakları kullanın:
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

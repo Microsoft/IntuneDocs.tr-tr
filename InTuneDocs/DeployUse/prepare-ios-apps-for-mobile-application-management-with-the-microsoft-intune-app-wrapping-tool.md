@@ -14,60 +14,64 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b25c7d7063ce586bb1cd960534f3e2ed57f6aec4
-ms.openlocfilehash: f70a32cf7db4d46f15cdef85e111a8857a1a0215
+ms.sourcegitcommit: ba4ace8106e83f3579cbaf98dcea8ef240a202a9
+ms.openlocfilehash: d150c97197e11d4a81727dca5ddd8eb1310aa193
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını mobil uygulama yönetimi için hazırlama
 
-Şirket içi iOS uygulamalarının davranışını, uygulamanın kodunu değiştirmeden uygulama özelliklerini kısıtlayarak değiştirmek için iOS için Microsoft Intune Uygulama Sarmalama Aracı'nı kullanın.
+Şirket içi iOS uygulamalarının davranışını, uygulamanın kodunu değiştirmeden Intune uygulama koruma özelliklerini etkinleştirerek değiştirmek için iOS için Microsoft Intune Uygulama Sarmalama Aracı'nı kullanın.
 
-Araç, bir uygulama etrafında sarmalayıcı oluşturan bir Mac OS komut satırı uygulamasıdır. Bir uygulama işlendikten sonra, ayarladığınız Intune [mobil uygulama yönetimi ilkelerini](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanarak uygulamaların işlevini değiştirebilirsiniz.
+Araç, bir uygulama etrafında sarmalayıcı oluşturan bir Mac OS komut satırı uygulamasıdır. Bir uygulama işlendikten sonra, BT yöneticisi tarafından dağıtılan Intune [mobil uygulama yönetimi ilkelerini](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanarak uygulamaların işlevini değiştirebilirsiniz.
 
-Aracı indirmek için bkz. [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
+Aracı indirmek için bkz. GitHub üzerinde [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
 
 
-## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını kullanmak için önkoşulları karşılama
-Önkoşullar ve bunların nasıl ayarlanacağını hakkında daha fazla bilgi için, bkz. [Skype Kurumsal Çevrimiçi: Modern kimlik doğrulaması için kiracınızı etkinleştirme](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için önkoşulları karşılama
+Önkoşulları karşılama hakkında daha fazla bilgi edinmek için [iOS için Intune Uygulama Sarmalama Aracı’nın Önkoşulları Nasıl Elde Edilir?](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) blog yazısını inceleyin.
 
 |Gereksinim|Daha fazla bilgi|
 |---------------|--------------------------------|
-|Desteklenen işletim sistemi ve araç takımı|Uygulama Sarmalama Aracını, XCode araç takımının sürüm 5 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayarda çalıştırmalısınız.|
-|İmzalama sertifikası ve sağlama profili|Bir Apple imzalama sertifikanız ve sağlama profiliniz olmalıdır. [Apple geliştirici belgelerinize](https://developer.apple.com/) bakın.|
-|Uygulama Sarmalama Aracı’yla bir uygulamayı işleme|Uygulamalar şirketiniz veya bağımsız bir yazılım satıcısı (ISV) tarafından geliştirilmiş ve imzalanmış olmalıdır. Bu aracı Apple Store'dan edinilen uygulamaları işlemek için kullanamazsınız. Uygulamalar iOS 8.0 veya üzeri için yazılmış olmalıdır. Ayrıca uygulamalar Konumdan Bağımsız Yürütülebilir (PIE) biçiminde olmalıdır. PIE biçimi hakkında daha fazla bilgi için Apple geliştirici belgelerinize bakın. Son olarak, uygulamanın uzantısı **.app** veya **.ipa** olmalıdır.|
-|Aracın işleyemediği uygulamalar|Şifrelenmiş uygulamalar, imzalanmamış uygulamalar ve genişletilmiş dosya öznitelikleri olan uygulamalar.|
+|Desteklenen işletim sistemi ve araç takımı | Uygulama Sarmalama Aracını, XCode araç takımının sürüm 5 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayarda çalıştırmalısınız.|
+|İmzalama sertifikası ve sağlama profili | Bir Apple imzalama sertifikanız ve sağlama profiliniz olmalıdır. [Apple geliştirici belgelerinize](https://developer.apple.com/) bakın.|
+|Uygulama Sarmalama Aracı’yla bir uygulamayı işleme  |Uygulamalar şirketiniz veya bağımsız bir yazılım satıcısı (ISV) tarafından geliştirilmiş ve imzalanmış olmalıdır. Bu aracı Apple Store'dan edinilen uygulamaları işlemek için kullanamazsınız. Uygulamalar iOS 8.0 veya üzeri için yazılmış olmalıdır. Ayrıca uygulamalar Konumdan Bağımsız Yürütülebilir (PIE) biçiminde olmalıdır. PIE biçimi hakkında daha fazla bilgi için Apple geliştirici belgelerinize bakın. Son olarak, uygulamanın uzantısı **.app** veya **.ipa** olmalıdır.|
+|Aracın işleyemediği uygulamalar | Şifrelenmiş uygulamalar, imzalanmamış uygulamalar ve genişletilmiş dosya öznitelikleri olan uygulamalar.|
 |Uygulamanız için yetkilendirmeleri ayarlama|Uygulamayı sarmalamadan önce, uygulamaya normal olarak verilenlerin ötesinde ek izinler ve yetenekler veren yetkilendirmeler ayarlamanız gerekir. Yönergeler için bkz. [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements).|
 
 ## <a name="install-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını yükleme
 
-1.  [GitHub’da barındırılan](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) iOS için Microsoft Intune Uygulama Sarmalama Aracı deposunda, uygulama sarmalama aracı dosyalarını bir Mac OS bilgisayara indirin.
+1.  [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)'daki Uygulama Sarmalama Aracı dosyalarını bir macOS bilgisayara indirin.
 
 2.  **Microsoft Intune App Wrapping Tool for iOS.dmg** dosyasına çift tıklayın. Son Kullanıcı Lisans Sözleşmesi (EULA) ile bir pencere görüntülenir. Belgeyi dikkatli okuyun.
 
 3. Paketi bilgisayarınıza bağlayan EULA’yı kabul etmek için **Kabul et**’i seçin.
 
-4.  IntuneMAMPackager’ı açın ve dosyaları Mac OS bilgisayarınızda yerel bir klasöre kaydedin. Artık Uygulama Sarmalama Aracını çalıştırmaya hazırsınız.
+4.  **IntuneMAMPackager** klasörünü açın ve içeriğini macOS bilgisayarınıza kaydedin. Artık Uygulama Sarmalama Aracını çalıştırmaya hazırsınız.
 
 ## <a name="run-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını çalıştırma
-* Bir terminal açın ve uygulama sarmalama aracı dosyalarını kaydettiğiniz klasöre gidin. Yürütülebilir aracın adı IntuneMAMPackager, bulunduğu konum IntuneMAMPackager/Contents/MacOS klasörüdür. Komutu aşağıdaki gibi çalıştırın:
 
-    ```
+### <a name="use-terminal"></a>Terminal kullanma
+
+macOS Terminal programını açın ve uygulama sarmalama aracı dosyalarını kaydettiğiniz klasöre gidin. Yürütülebilir aracın adı IntuneMAMPackager, bulunduğu konum IntuneMAMPackager/Contents/MacOS klasörüdür. Komutu aşağıdaki gibi çalıştırın:
+
+```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+```
 
-    ```
+> [!NOTE]
+> Bazı parametreler aşağıdaki tabloda gösterildiği gibi isteğe bağlıdır.
 
-    > [!NOTE]
-    > Bazı parametreler aşağıdaki tabloda gösterildiği gibi isteğe bağlıdır.
+**Örnek:** Aşağıdaki örnek komut, MyApp.ipa adlı uygulamanın üzerinde Uygulama Sarmalama Aracı'nı çalıştırır. Bir sağlama profili ve imzalama sertifikasının SHA-1 karması belirtilir ve sarmalanan uygulamayı imzalamak için kullanılır. Uygulama çıktısı (MyApp_Wrapped.ipa) oluşturulur ve Masaüstü klasörünüzde depolanır.
 
-    **Örnek:** Aşağıdaki örnek komut, MyApp.ipa uygulamasının üzerinde Uygulama Sarmalama Aracını çalıştırır. Bir sağlama profili ve SHA-1 karması belirtilir. İşlenen uygulama (MyApp_Wrapped.ipa) oluşturulur ve Masaüstü klasörünüzde depolanır.
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
+```
 
-    ```
-    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
-    ```
-    Aşağıdaki komut satırı özelliklerini Uygulama Sarmalama Aracı ile birlikte kullanabilirsiniz:
+### <a name="command-line-parameters"></a>Komut satırı parametreleri
+Aşağıdaki komut satırı parametrelerini Uygulama Sarmalama Aracı ile birlikte kullanabilirsiniz:
 
 |Özellik|Kullanımı|
 |---------------|--------------------------------|
@@ -103,20 +107,20 @@ IntuneMAMPackager/Contents/MacOS klasöründe, `Parameters.plist` öğesini (bo�
 
 IntuneMAMPackager’ı plist ile tek bağımsız değişken olarak çalıştırın:
 
-```
+```bash
 ./IntuneMAMPackager –f Parameters.plist
 ```
 
-* İşlem tamamlandıktan sonra, “Uygulama başarıyla sarmalandı” iletisi görüntülenir.
+### <a name="post-wrapping"></a>Sarmalama sonrası
 
-    Bir hata oluşursa yardım için [hata iletileri](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages) sayfasına bakın.
+Sarmalama işlemi tamamlandıktan sonra, "Uygulama başarıyla sarmalandı" iletisi görüntülenir. Bir hata oluşursa yardım için [hata iletileri](#error-messages-and-log-files) sayfasına bakın.
 
-*   Sarmalanan uygulama, daha önce belirttiğiniz çıkış klasörüne kaydedilir. Uygulamayı [wit_nextref](../includes/wit_nextref_md.md)’e yükleyebilir ve bir mobil uygulama yönetimi ilkesi ile ilişkilendirebilirsiniz.
+Sarmalanan uygulama, daha önce belirttiğiniz çıkış klasörüne kaydedilir. Uygulamayı Intune yönetici konsoluna yükleyebilir ve bir mobil uygulama yönetimi ilkesi ile ilişkilendirebilirsiniz.
 
-    > [!IMPORTANT]
-    > Sarmalanan bir uygulama karşıya yüklenirken, uygulamanın eski bir sürümünü, eski sürüm (sarmalanan veya yerel) zaten Intune’da dağıtılmışsa güncelleştirmeyi deneyebilirsiniz. Bir hatayla karşılaşırsanız, uygulamayı yeni bir uygulama olarak karşıya yükleyip eski sürümü silin.
+> [!IMPORTANT]
+> Sarmalanan bir uygulama karşıya yüklenirken, uygulamanın eski bir sürümünü, eski sürüm (sarmalanan veya yerel) zaten Intune’da dağıtılmışsa güncelleştirmeyi deneyebilirsiniz. Bir hatayla karşılaşırsanız, uygulamayı yeni bir uygulama olarak karşıya yükleyip eski sürümü silin.
 
-    Şimdi uygulamayı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarınıza dağıtabilirsiniz ve uygulama cihazda belirttiğiniz uygulama kısıtlamalarını kullanarak çalıştırılır.
+Artık uygulamayı kullanıcı gruplarınıza dağıtabilir ve uygulama için uygulama koruma ilkelerini hedefleyebilirsiniz. Uygulama cihazda belirttiğiniz uygulama ilkeleri kullanılarak çalıştırılır.
 
 ## <a name="error-messages-and-log-files"></a>Hata iletileri ve günlük dosyaları
 Uygulama sarmalama aracında karşılaştığınız sorunları gidermek için aşağıdaki bilgileri kullanın.
@@ -166,13 +170,13 @@ Uygulama Sarmalama Aracı kullanılarak sarmalanan uygulamalar, iOS istemci ciha
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Sertifika, sağlama profili ve kimlik doğrulaması gereksinimleri
 
-Tam işlevsellik garantisi için Uygulama Sarmalama Aracında karşılanması gereken bazı gereksinimler vardır.
+Tam işlevsellik garantisi için iOS için Uygulama Sarmalama Aracında karşılanması gereken bazı gereksinimler vardır.
 
 |Gereksinim|Ayrıntılar|
 |---------------|-----------|
-|Sağlama profili|Sağlama profilini dahil etmeden önce, geçerli olduğundan emin olun. Uygulama Sarmalama Aracı, bir iOS uygulamasını işlerken sağlama profilinin geçerlilik süresinin dolup dolmadığını denetlemez. Süresi dolmuş bir sağlama profili belirtilirse, uygulama sarmalama aracı süresi dolmuş sağlama profilini içerir ve uygulamanın bir iOS cihazına yüklenemediğini fark edene kadar bir sorun olduğunu anlayamazsınız.|
-|Sertifika|Sertifikayı belirtmeden önce, geçerli olduğundan emin olun. Araç, iOS uygulamalarını işlerken bir sertifikanın süresinin dolup dolmadığını denetlemez. Süresi dolmuş bir sertifika için karma sağlanırsa, araç uygulamayı işler ve imzalar, ancak uygulama cihazlara yüklenemez.<br /><br />Paketlenen uygulamayı imzalamak için sağlanan sertifikanın, sağlama profilinde bir eşleşmeye sahip olduğundan emin olun. Araç, sağlama profilinin sarmalanan uygulamayı imzalamak için sağlanan sertifikaya yönelik bir eşleşme içerip içermediğini doğrulamaz.|
-|Kimlik doğrulaması|Şifrelemenin çalışması için cihazın PIN’e sahip olması gerekir. Sarmalanan uygulama dağıtılan cihazlarda durum çubuğuna dokunma, kullanıcının [wit_nextref](../includes/wit_nextref_md.md) ile yeniden kimlik doğrulaması gerçekleştirmesini gerektirir. Sarmalanan bir uygulamada varsayılan ilke, *yeniden başlatma sırasında kimlik doğrulaması* şeklindedir. iOS tüm dış bildirimleri (bir telefon araması gibi) uygulamadan çıkıp uygulamayı yeniden başlatarak işler.
+|iOS sağlama profili|Sağlama profilini dahil etmeden önce, geçerli olduğundan emin olun. Uygulama Sarmalama Aracı, bir iOS uygulamasını işlerken sağlama profilinin geçerlilik süresinin dolup dolmadığını denetlemez. Süresi dolmuş bir sağlama profili belirtilirse, uygulama sarmalama aracı süresi dolmuş sağlama profilini içerir ve uygulamanın bir iOS cihazına yüklenemediğini fark edene kadar bir sorun olduğunu anlayamazsınız.|
+|iOS imzalama sertifikası|İmzalama sertifikasını belirtmeden önce, geçerli olduğundan emin olun. Araç, iOS uygulamalarını işlerken bir sertifikanın süresinin dolup dolmadığını denetlemez. Süresi dolmuş bir sertifika için karma sağlanırsa, araç uygulamayı işler ve imzalar, ancak uygulama cihazlara yüklenemez.<br /><br />Sarmalanan uygulamayı imzalamak için sağlanan sertifikanın, sağlama profilinde bir eşleşmeye sahip olduğundan emin olun. Araç, sağlama profilinin sarmalanan uygulamayı imzalamak için sağlanan sertifikaya yönelik bir eşleşme içerip içermediğini doğrulamaz.|
+|Kimlik doğrulaması|Şifrelemenin çalışması için cihazın PIN’e sahip olması gerekir. Sarmalanan uygulama dağıtılan cihazlarda durum çubuğuna dokunma, kullanıcının iş veya okul hesabıyla yeniden oturum açmasını gerektirir. Sarmalanan bir uygulamada varsayılan ilke, *yeniden başlatma sırasında kimlik doğrulaması* şeklindedir. iOS tüm dış bildirimleri (bir telefon araması gibi) uygulamadan çıkıp uygulamayı yeniden başlatarak işler.
 
 
 ## <a name="setting-app-entitlements"></a>Uygulama yetkilendirmelerini ayarlama
@@ -195,27 +199,27 @@ Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek
 
 1.  Uygulamanızda yetenekleri etkinleştirin:
 
-    1.  Xcode’da, uygulamanızın hedefine gidin ve **Yetenekler** bölmesine tıklayın.
+    a.  Xcode’da, uygulamanızın hedefine gidin ve **Yetenekler** bölmesine tıklayın.
 
-    2.  Uygun yetenekleri açın. Her yetenek hakkında ayrıntılı bilgi almak ve doğru değerlerin nasıl saptanacağını öğrenmek için, iOS Geliştirici Kitaplığı’nda [Yetenekleri Ekleme](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) konusuna bakın.
+    b.  Uygun yetenekleri açın. Her yetenek hakkında ayrıntılı bilgi almak ve doğru değerlerin nasıl saptanacağını öğrenmek için, iOS Geliştirici Kitaplığı’nda [Yetenekleri Ekleme](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) konusuna bakın.
 
-    3.  İşlem sırasında oluşturduğunuz tüm kimlikleri not alın.
+    c.  İşlem sırasında oluşturduğunuz tüm kimlikleri not alın.
 
-    4.  Uygulamanızı oluşturun ve sarmalamak üzere imzalayın.
+    d.  Uygulamanızı oluşturun ve sarmalamak üzere imzalayın.
 
 2.  Sağlama profilinizde yetkilendirmeleri etkinleştirin:
 
-    1.  Apple Geliştirici Üye Merkezi’nde oturum açın.
+    a.  Apple Geliştirici Üye Merkezi’nde oturum açın.
 
-    2.  Uygulamanız için bir sağlama profili oluşturun. Yönergeler için bkz. [iOS için Intune Uygulama Sarmalama Aracı’nın Önkoşulları Nasıl Elde Edilir](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
+    b.  Uygulamanız için bir sağlama profili oluşturun. Yönergeler için bkz. [iOS için Intune Uygulama Sarmalama Aracı’nın Önkoşulları Nasıl Elde Edilir](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
-    3.  Sağlama profilinizde, uygulamanızda sahip olduğunuz yetkilendirmelerle aynı yetkilendirmeleri etkinleştirin. Uygulamanızın geliştirilmesi sırasında belirttiğiniz kimliklerle aynı kimlikleri sağlamanız gerekir.
+    c.  Sağlama profilinizde, uygulamanızda sahip olduğunuz yetkilendirmelerle aynı yetkilendirmeleri etkinleştirin. Uygulamanızın geliştirilmesi sırasında belirttiğiniz kimliklerle aynı kimlikleri sağlamanız gerekir.
 
-    4.  Sağlama profili sihirbazını tamamlayın ve dosyanızı indirin.
+    d.  Sağlama profili sihirbazını tamamlayın ve dosyanızı indirin.
 
 3.  Tüm önkoşullara uyduğunuzdan emin olun ve ardından uygulamayı sarmalayın.
 
-### <a name="troubleshooting-common-errors-with-entitlements"></a>Sık karşılaşılan yetkilendirme sorunlarını giderme
+### <a name="troubleshoot-common-errors-with-entitlements"></a>Sık karşılaşılan yetkilendirme sorunlarını giderme
 iOS için Uygulama Sarmalama Aracı yetkilendirme hatası gösterirse, aşağıdaki sorun giderme adımlarını deneyin.
 
 |Sorun|Nedeni|Çözüm|
@@ -223,7 +227,7 @@ iOS için Uygulama Sarmalama Aracı yetkilendirme hatası gösterirse, aşağıd
 |Giriş uygulamasından oluşturulan yetkilendirmeler ayrıştırılamadı.|Uygulama Sarmalama Aracı, uygulamadan ayıklanan yetkilendirmeler dosyasını okuyamıyor. Yetkilendirmeler dosyası hatalı biçimlendirilmiş olabilir.|Uygulamanızın yetkilendirmeler dosyasını inceleyin. Bunun nasıl yapılacağı aşağıdaki yönergelerde açıklanmaktadır. Yetkilendirmeler dosyasını incelerken, yanlış biçimlendirilmiş söz dizimi olup olmadığını denetleyin. Dosya, XML biçiminde olmalıdır.|
 |Sağlama profilinde yetkilendirmeler eksik (eksik yetkilendirmeler listelenmiştir). Uygulamayı, söz konusu yetkilendirmeleri içeren bir sağlama profiliyle yeniden paketleyin.|Sağlama profiliyle etkinleştirilen yetkilendirmelerle uygulamada etkinleştirilen yetenekler arasında bir uyuşmazlık var. Bu uyuşmazlık, belirli yeteneklerle ilişkilendirilen kimlikler için de geçerlidir (uygulama grupları ve anahtarlık erişimi gibi).|Genel olarak, uygulamayla aynı yetenekleri etkinleştiren yeni bir sağlama profili oluşturabilirsiniz. Profille uygulama arasında kimlikler eşleşmezse, Uygulama Sarmalama Aracı kimlikleri (yapabilirse) değiştirir. Yeni sağlama profili oluşturduktan sonra da bu hatayı almaya devam ediyorsanız, –e parametresini kullanarak uygulamadan yetkilendirmeleri kaldırabilirsiniz (Uygulamadan yetkilendirmeleri kaldırmak için –e parametresini kullanma bölümüne bakın).|
 
-### <a name="finding-the-existing-entitlements-of-a-signed-app"></a>İmzalı bir uygulamanın var olan yetkilendirmelerini bulma
+### <a name="find-the-existing-entitlements-of-a-signed-app"></a>İmzalı bir uygulamanın var olan yetkilendirmelerini bulma
 İmzalı uygulamanın ve sağlama profilinin var olan yetkilendirmelerini gözden geçirmek için:
 
 1.  .ipa dosyasını bulun ve uzantısını .zip olarak değiştirin.
@@ -254,7 +258,7 @@ Uygulama Sarmalama Aracını kullanırken, güvenlik ve gizlilik açısından a�
 
 -   Belirttiğiniz imzalama sertifikası, sağlama profili ve iş kolu uygulaması, uygulama sarmalama aracını çalıştırmak için kullandığınız Mac OS makinesinde olmalıdır. Dosyalar bir UNC yolu üzerindeyse, bunların Mac OS makineden erişilebilir olduğundan emin olun. Yol, IPsec veya SMB imzalama aracılığıyla korunmalıdır.
 
-    [wit_nextref](../includes/wit_nextref_md.md) konsoluna içeri aktarılan kaydırılan uygulama, aracı çalıştırdığınız bilgisayarda bulunmalıdır. Dosya bir UNC yolu üzerindeyse, yolun [wit_nextref](../includes/wit_nextref_md.md) konsolunu çalıştıran bilgisayarda erişilebilir durumda olduğundan emin olun. Yol, IPsec veya SMB imzalama aracılığıyla korunmalıdır.
+    Yönetici konsoluna içeri aktarılan kaydırılan uygulama, aracı çalıştırdığınız bilgisayarda bulunmalıdır. Dosya bir UNC yolu üzerindeyse, yolun yönetici konsolunu çalıştıran bilgisayarda erişilebilir durumda olduğundan emin olun. Yol, IPsec veya SMB imzalama aracılığıyla korunmalıdır.
 
 -   Uygulama Sarmalama Aracının GitHub deposundan indirildiği ortamın IPsec veya SMB imzalama aracılığıyla korunması gerekir.
 
@@ -273,6 +277,6 @@ Uygulama Sarmalama Aracını kullanırken, güvenlik ve gizlilik açısından a�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

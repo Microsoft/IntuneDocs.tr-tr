@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 10/31/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d332e46b27bea274a38355dfb01806160b1041ee
-ms.openlocfilehash: 44069a34c1c9c2fb05f2b250188fe45a7d419911
+ms.sourcegitcommit: 2c50c38843521dfc2c9df48305e619803f32b1e9
+ms.openlocfilehash: 8b0591195b58f5fa331d213cfe03a38aa5ffafdd
 
 
 ---
@@ -36,11 +36,12 @@ Intune ve Configuration Manager ile kullanıldığında Intune için destek ücr
 2.  Yönetici kutucuğunu seçin.
 3.  Bileti açmak için solda **Destek** altından **Destek**'i seçin. Olasılıkla şunu görürsünüz:
 
-    ![Yeni bir Intune destek bileti aç](../media/suport-open-ticket.png)
+    ![Yeni bir Intune destek bileti aç](../media/support-open-ticket.png)
 
     >[!NOTE]
     >
     >  100 veya daha az lisanslı bir O365 hesabına sahip veya geçmişte sahip olmuş müşteriler bunu görür ve [Destek bileti açmak için alternatif yöntem](#alternate-method-to-open-a-support-ticket) seçeneğine başvurmalıdırlar.
+    >  
     > ![Alternatif Intune desteği](../media/alternate-support-ui.png)
 
     -   Faturalama, lisans ve hesap sorunları için **Faturalama ve ürün bilgileri**’ni seçin.
@@ -114,6 +115,6 @@ Daha önce Microsoft'tan bir toplu lisans programı kapsamında lisans atın ald
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: ab341e0b80f1b8a19c434a2fd4f0c78acab77fe4
+ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
 
 
 ---
@@ -68,7 +68,7 @@ Bir koşul karşılanmazsa, oturum açtığında kullanıcıya şu iletilerden b
 **iOS** ve **Android** cihazlarda bir tarayıcıdan erişildiğinde SharePoint Online’a erişimi kısıtlayabilirsiniz.  Erişime yalnızca uyumlu cihazlarda, yalnızca desteklenen tarayıcılardan izin verilir:
 * Safari (iOS)
 * Chrome (Android)
-* Yönetilen Tarayıcı (iOS ve Android)
+* Managed Browser (iOS ve Android 5.0 ve üzeri)
 
 **Desteklenmeyen tarayıcılar engellenir**.
 
@@ -195,6 +195,6 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

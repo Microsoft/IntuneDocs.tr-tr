@@ -1,11 +1,11 @@
 ---
 title: "Intune lisanslarını PowerShell kullanarak yönetme | Microsoft Intune"
-description: "Intune lisanslarını PowerShell kullanarak yönetme"
+description: "Intune lisanslarını PowerShell ile yönetme"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
-ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
 
 
 ---
 
-# Intune lisanslarını PowerShell kullanarak yönetme
+# <a name="manage-intune-licenses-using-powershell"></a>Intune lisanslarını PowerShell kullanarak yönetme
 Kullanıcıların Intune hizmetini kullanmak veya cihazlarını yönetime kaydetmek üzere oturum açabilmeleri için, öncelikle [Intune lisanslarını yönetme](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) bölümünde açıklandığı gibi her bir kullanıcıya Intune aboneliğiniz için bir lisans atamanız gerekir. Ancak, Microsoft Enterprise Mobility + Security kullanan kuruluşların, yalnızca EMS paketinde Azure Active Directory Premium veya Intune hizmetleri gerektiren kullanıcıları olabilir. [Azure Active Directory PowerShell cmdlet’lerini](https://msdn.microsoft.com/library/jj151815.aspx) kullanarak hizmetlerin birini veya bir alt kümesini atayabilirsiniz.
 
 EMS hizmetlerinin kullanıcı lisanslarını seçmeli atamak için, [Windows PowerShell için Azure Active Directory Modülü](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule)’nün yüklü olduğu bilgisayarda bir yönetici olarak PowerShell’i açın. PowerShell’i yerel bilgisayara veya ADFS sunucusuna yükleyebilirsiniz.
@@ -60,7 +60,7 @@ Intune hizmet planını hariç tutmak için aşağıdaki komutu çalıştırabil
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Tebrikler! *Intune hızlı başlangıç kılavuzunun* 4. adımını tamamladınız.
 >[!div class="step-by-step"]
 
@@ -68,6 +68,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 4. adımını tamamladın�
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

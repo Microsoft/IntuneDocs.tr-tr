@@ -1,10 +1,11 @@
 ---
-title: "Intune'a kaydolma veya Intune’da oturum açma | Microsoft Intune"
-description: "Intune aboneliğine kaydolma veya zaten aboneliğiniz varsa oturum açma"
+title: "Intune&quot;a kaydolma veya Intune’da oturum açma | Microsoft Intune"
+description: "Intune aboneliğine kaydolma veya aboneliğinizle başlamak için oturum açma"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,14 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: fddf33ecc0296d5bfabb710e0d4b178f75659009
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: b35ca65f2dcf1a196b8aaa400b3b3f7ea0c8383e
 
 
 ---
 
 
-# Intune'a kaydolma veya Intune'da oturum açma
+# <a name="sign-up-or-sign-in-to-intune"></a>Intune'a kaydolma veya Intune'da oturum açma
 Intune’a kaydolabilmek veya Intune’da oturum açabilmek için, önce kuruluşunuzun zaten bir Microsoft Online Services iş veya okul hesabı olup olmadığını veya kuruluşunuzla Microsoft arasında bir Kurumsal Anlaşması veya eşdeğer bir toplu lisans sözleşmesi olup olmadığını saptamanız gerekir. Bir iş veya okul hesabı Microsoft ile bir toplu lisanslama sözleşmesi imzaladığınızda veya Office 365 gibi diğer Microsoft bulut hizmetlerine abone olduğunuzda sağlanır.
 
 Zaten bir iş veya okul hesabınız varsa, Intune’u önceden var olan abonelik ortamınıza eklemek için yalnızca o hesapla **oturum açabilirsiniz**. Bunun dışındaki durumlarda, kuruluşunuzda Intune’u yönetirken kullanılacak yeni bir hesap oluşturmak için **kaydolmanız** gerekir.
@@ -28,13 +29,13 @@ Zaten bir iş veya okul hesabınız varsa, Intune’u önceden var olan abonelik
 >[!WARNING]
 >Yeni bir hesap için kaydolursanız, daha sonra aboneliğinizi yönetmek için var olan bir iş veya okul hesabını kullanamaz ya da bu hesabı var olan toplu lisans sözleşmeleri ile birleştiremezsiniz.
 
-## Intune'a kaydolma veya Intune’da oturum açma
+## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Intune'a kaydolma veya Intune’da oturum açma
 
 1.  [Intune Kaydol](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) sayfasını ziyaret edin.
 
 2.  **Kaydol** sayfasında, yeni Intune aboneliğinizi yönetmek için oturum açın veya kaydolun.
 
-## Kayıttan sonra dikkate alınacak noktalar
+## <a name="post-sign-up-considerations"></a>Kayıttan sonra dikkate alınacak noktalar
 Yeni abonelik için kaydolursanız, kayıt işlemi sırasında sağladığınız e-posta adresine hesap bilgilerinizi içeren bir e-posta iletisi alırsınız. Bu e-posta, aboneliğinizin etkin olduğunu doğrular.
 
 Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığıyla kullanıcıları eklemek ve onlara lisans atamak için kullanılan bir sayfaya yönlendirilirsiniz. Yalnızca varsayılan onmicrosoft.com etki alanı adınızın kullanıldığı bulut tabanlı hesaplarınız olacaksa, devam edip bu noktada kullanıcıları ekleyebilir ve lisansları atayabilirsiniz. Öte yandan, kuruluşunuzun özel etki alanı adını kullanacaksanız veya şirket içi Active Directory’den kullanıcı hesabı bilgilerini eşitlemek istiyorsanız, bu tarayıcı penceresini kapatabilir ve bu hızlı başlangıç kılavuzunun 2. adımına geçebilirsiniz.
@@ -42,7 +43,7 @@ Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığı
 >[!TIP]
 > Intune’da bir sonraki oturum açışınızda otomatik olarak Intune yönetim konsoluna yönlendirilirsiniz.
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Tebrikler! *Intune hızlı başlangıç kılavuzunun* 1. adımını tamamlamış oldunuz.
 
 >[!div class="step-by-step"]
@@ -51,6 +52,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 1. adımını tamamlamış
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

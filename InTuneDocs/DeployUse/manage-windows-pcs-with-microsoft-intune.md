@@ -2,7 +2,8 @@
 title: "İstemci yazılımı ile bilgisayarları yönetme | Microsoft Intune"
 description: "Windows bilgisayarlarını Intune istemci yazılımını yükleyerek yönetin."
 keywords: 
-author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/30/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4cc8b7e34e8809eebd7fdec8ffac0599c96d309
-ms.openlocfilehash: ce27fc737fdf47903d7554eb15f24f07b3524406
+ms.sourcegitcommit: f4e9f558b6a55834328c97701fe425a15c807cb1
+ms.openlocfilehash: fb862178e0791936243ebb21c6b70ea808d07d16
 
 
 ---
 
-# Intune bilgisayar istemcisiyle Windows bilgisayarlarını yönetme
+# <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Intune bilgisayar istemcisiyle Windows bilgisayarlarını yönetme
 [Windows bilgisayarlarını mobil cihaz olarak kaydetmek](set-up-windows-device-management-with-microsoft-intune.md) yerine, Windows bilgisayarlarını Intune istemci yazılımını yükleyerek kaydedebilir ve yönetebilirsiniz.
 
 Intune, Windows Server Active Directory Etki Alanı Hizmetleri (AD DS) Grup İlkesi Nesneleri’ne (GPO'lar) benzer bir biçimde, Windows bilgisayarlarını ilkelerle yönetir. Intune ile Active Directory etki alanına katılmış bilgisayarları yönetecekseniz kurumunuzda yürürlükte olan herhangi bir [GPO ile Intune ilkelerinin çakışmadığından emin olun](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
@@ -29,7 +30,7 @@ Intune yazılımı istemcisi, yazılım güncelleştirmelerini, Windows güvenli
 > [!NOTE]
 > Windows 8.1 veya üzerini çalıştıran cihazlar daha sonra Intune istemcisiyle veya mobil cihazlar olarak yönetilebilir. Bu konu, Intune yazılım istemcisini çalıştıran bilgisayarlar için geçerlidir. Intune istemcisini yükleme ve mobil cihaz yönetiminde kaydetme desteklenmez.
 
-## Intune bilgisayar istemcisi yönetimi gereksinimleri
+## <a name="requirements-for-intune-pc-client-management"></a>Intune bilgisayar istemcisi yönetimi gereksinimleri
 
 **Donanım**: Intune istemcisini yüklemeye yönelik en düşük donanım gereksinimleri aşağıda verilmiştir:
 
@@ -46,9 +47,9 @@ Intune yazılımı istemcisi, yazılım güncelleştirmelerini, Windows güvenli
 |İşletim sistemi | Windows Vista veya üstünü çalıştıran Windows cihazı. Home Edition sürümleri desteklenmez.|
 |Yönetim izinleri|İstemci yazılımını yükleyen hesabın bu cihaz üzerinde yerel yönetici izinleri olmalıdır.|
 |Windows Installer 3.1|Bilgisayarda en azından Windows Installer 3.1 olmalıdır.<br /><br />Bir bilgisayardaki Windows Installer sürümünü görüntülemek için:<br /><br />-   Bilgisayarda **%windir%\System32\msiexec.exe** dosyasına sağ tıklayın ve ardından **Özellikler**’e tıklayın.<br /><br />En son Windows Installer sürümünü Microsoft Developer Network web sitesindeki [Windows Installer Yeniden Dağıtılabilir Öğeleri](http://go.microsoft.com/fwlink/?LinkID=234258) bölümünden indirebilirsiniz.|
-|Uyumsuz istemci yazılımını kaldırma|Intune istemci yazılımını yüklemeden önce, bu bilgisayardan tüm Configuration Manager veya System Management Server istemci yazılımlarını kaldırmalısınız.|
+|Uyumsuz istemci yazılımını kaldırma|Intune istemci yazılımını yüklemeden önce, bu bilgisayardan tüm Configuration Manager, Operations Manager, Operations Management Suite ve Service Manager istemci yazılımlarını kaldırmalısınız.|
 
-## Intune bilgisayar istemcisi ile bilgisayar yönetimi
+## <a name="computer-management-with-the-intune-computer-client"></a>Intune bilgisayar istemcisi ile bilgisayar yönetimi
 Intune istemci yazılımı yüklendikten sonra, şu yönetim olanaklarına sahip olunur: [uygulama yönetimi](deploy-apps-in-microsoft-intune.md), [gerçek zamanlı izleme ve Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md), [Windows Güvenlik Duvarı ayarları yönetimi](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md), donanım ve yazılım envanteri, uzaktan denetim (uzaktan yardım istekleri aracılığıyla), [yazılım güncelleştirme ayarları](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) ve uyumluluk ayarları raporlama.
 
 Mobil cihaz olarak yönetilen bilgisayarlarda kullanılabilen aşağıdaki gibi bazı yönetim seçenekleri yazılım istemcisiyle yönetilen bilgisayarlarda bulunmaz:
@@ -75,6 +76,6 @@ Intune istemci aracısı genellikle fazla kullanıcı etkileşimi veya sorun gid
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
