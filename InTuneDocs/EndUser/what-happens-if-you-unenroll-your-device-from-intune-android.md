@@ -2,10 +2,10 @@
 title: "Android cihazınızın Intune kaydını sildiğinizde ne olur? | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
-ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
 
 
 ---
 
 
-# Android cihazınızın Intune kaydını sildiğinizde ne olur?
+# <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Android cihazınızın Intune kaydını sildiğinizde ne olur?
 
 Android cihazınızın Intune kaydını sildiğinizde:
 
@@ -40,10 +40,10 @@ Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve c
 
 Kaydın nasıl silineceği hakkında yönergeler için bkz. [Şirket Portalı uygulamasını kullanarak cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md).
 
-Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
+Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya [Microsoft Android ekibine](mailto:wintunedroidfbk@microsoft.com) yazın.
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

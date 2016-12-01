@@ -3,22 +3,23 @@ title: "Mobil cihazların nasıl kaydedileceğini belirleme | Microsoft Intune"
 description: "Mobil cihazları Intune’a nasıl kaydedeceğinizi birkaç basit soruyu yanıtlayarak kararlaştırın"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 90a26e1008a8e0800b07940c11a8adcd00cbb241
-ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: b5cc645ea50e6c4bb521e04371037c3978c9426a
 
 
 ---
 
-# Mobil cihazların nasıl kaydedileceğini belirleme
+# <a name="choose-how-to-enroll-mobile-devices"></a>Mobil cihazların nasıl kaydedileceğini belirleme
 
 Mobil cihaz kaydetme, akıllı telefonları, tablet ve PC’leri Microsoft Intune yönetimine alma işlemidir. Yönetici olarak, aşağıdakilere göre cihazların en iyi ne şekilde kaydedileceğine karar vermeniz gerekir:
 
@@ -28,7 +29,7 @@ Mobil cihaz kaydetme, akıllı telefonları, tablet ve PC’leri Microsoft Intun
 
 Aşağıdaki sorulara vereceğiniz yanıtlar, yönettiğiniz cihazları kaydetmek için en iyi yöntemi belirlemenize yardımcı olur.
 
-## **Çalışanların kendi cihazlarını mı getiriyor, yoksa cihazları kuruluşunuz mu veriyor?**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**Çalışanların kendi cihazlarını mı getiriyor, yoksa cihazları kuruluşunuz mu veriyor?**
 
   - **Kullanıcılara ait cihazları** - "KCG” (kendi cihazını getir) kayıt yöntemi – Kullanıcılar kendi cihazlarına Intune Şirket Portalı uygulamasını yükleyip cihazı kaydederek, e-posta, şirket uygulamaları, şirket verileri ve destek gibi şirket kaynaklarına erişim elde edebilirler.  
 
@@ -37,12 +38,12 @@ Aşağıdaki sorulara vereceğiniz yanıtlar, yönettiğiniz cihazları kaydetme
 > [!div class="button"]
 [KCG Kaydı >](#what-byod-devices-can-your-users-enroll)   [COD Kaydı >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **Kullanıcılar hangi KCG cihazlarını kaydedebilir?**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**Kullanıcılar hangi KCG cihazlarını kaydedebilir?**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS ve Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile ve Window Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows Bilgisayarları](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **Şirketinize ait cihazlar paylaşılıyor mu, yoksa hepsinin ayrı kullanıcısı mı var?**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**Şirketinize ait cihazlar paylaşılıyor mu, yoksa hepsinin ayrı kullanıcısı mı var?**
 
 - **Şirkete ait paylaşılan cihazlar** -Bu cihazların tek bir kullanıcısı yoktur ve genellikle e-postalara erişecek şekilde yapılandırılmamışlardır. Bilgi noktası cihazları veya kullanıcıların gerektiğinde bir havuzdan alıp kullandıkları görev odaklı cihazlar bunlara örnektir. Önerilen kayıt yöntemleri cihazların platformuna göre değişir.
 
@@ -52,12 +53,12 @@ Aşağıdaki sorulara vereceğiniz yanıtlar, yönettiğiniz cihazları kaydetme
 [Paylaşılan >](#what-operating-system-are-your-shared-devices-running)   [Adanmış >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **Paylaşılan cihazlarınızda hangi işletim sistemi çalıştırılıyor?**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**Paylaşılan cihazlarınızda hangi işletim sistemi çalıştırılıyor?**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **Paylaşılan iOS cihazlarınızı nasıl yöneteceksiniz?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**Paylaşılan iOS cihazlarınızı nasıl yöneteceksiniz?**
 
 - **Apple Cihaz Kaydetme Programı (DEP)** -DEP ile satın alınan veya yönetilen iOS cihazları bir kayıt profiliyle hedef olarak kullanılabilir. Kullanıcılar cihazlarını ilk kez açtığında, cihaz DEP profilini indirir ve DEP profiliyle kaydolur
 
@@ -68,9 +69,9 @@ Aşağıdaki sorulara vereceğiniz yanıtlar, yönettiğiniz cihazları kaydetme
   > [!div class="button"]
   [iOS DEP Kaydı >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS Doğdudan kayıt >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [DEM kaydı >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
-## **Adanmış iOS cihazlarınızı nasıl yöneteceksiniz?**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**Adanmış iOS cihazlarınızı nasıl yöneteceksiniz?**
 
-Kuruma ait cihazları ayrılmış kullanıcılarla kaydetmek için aşağıdaki yöntemleri kullanabilirsiniz:
+Ayrılmış kullanıcıları bulunan, şirkete ait cihazları kaydetmek için aşağıdaki yöntemleri kullanabilirsiniz:
 
 - **Apple Cihaz Kaydetme Programı (DEP)** -DEP ile satın alınan veya yönetilen iOS cihazları bir kayıt profiliyle hedef olarak kullanılabilir. Kullanıcılar cihazlarını ilk kez açtığında cihaz, DEP profilini indirir ve Intune’a kaydolur.
 
@@ -83,6 +84,6 @@ Kuruma ait cihazları ayrılmış kullanıcılarla kaydetmek için aşağıdaki 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

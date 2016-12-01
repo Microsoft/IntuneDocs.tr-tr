@@ -2,10 +2,10 @@
 title: "iOS kullanıcılarınız uygulamalarını nasıl alır | Microsoft Intune"
 description: "iOS uygulamalarını son kullanıcılara sağlama yöntemleri"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37841027c7ae040163440a19f9e163fb4eb87233
-ms.openlocfilehash: ad780fb3403f6caaee1218d785a5cad326c18df5
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 3ba0a5cda91164761c4576df935c54390bc78f8c
 
 
 ---
 
 
-# iOS kullanıcılarınız uygulamalarını nasıl alır
+# <a name="how-your-ios-users-get-their-apps"></a>iOS kullanıcılarınız uygulamalarını nasıl alır
 
 Microsoft Intune aracılığıyla dağıttığınız uygulamaları son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın.
 
@@ -35,22 +35,26 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları son kullanıc
 
 Apple kısıtlamaları, iş kolu ve yönetilen App Store uygulamalarının Şirket Portalı uygulamasında listelenmesini yasaklar. Bu sorunu aşmak amacıyla iOS için Şirket Portalı uygulamasındaki kutucuklar, kullanıcıları tüm uygulamalarda farklı görünümle tek konuma, yani Şirket Portalı web sitesine yönlendirir.
 
-- **Şirket Uygulamaları** daha önce [Şirket Portalı Web sitesinin](http://portal.manage.microsoft.com) TÜMÜ sekmesindeki tüm uygulamaların listesine yönlendirmekteydi ve bu şekilde çalışmaya devam edecektir. Kutucuk adı **Tüm Uygulamalar** olarak değişmiştir.
+Kayıtlı kullanıcılar, Şirket Portalı uygulamasının Uygulamalar ekranında aşağıdaki kutucuklara dokunarak uygulamalarını alabilir:
 
-- **Diğer Uygulamalar** daha önce, Şirket Portalı uygulamasında bulunan ve Apple’ın Şirket Portalı uygulamasının göstermesine izin verdiği tüm uygulamaları listeleyen görünüme yönlendiriyordu. Kutucuk adı **Öne Çıkan Uygulamalar** olarak değişmiştir ve kutucuğa dokunan kullanıcıları Şirket Portalı web sitesinin ÖNE ÇIKANLAR sekmesine götürür.
+- **Tüm Uygulamalar**, [Şirket Portalı web sitesinin](http://portal.manage.microsoft.com) TÜMÜ sekmesindeki tüm uygulamaların listesine yönlendirir.
 
--  **Kategoriler** daha önce Şirket Portalı uygulaması içinde bulunan ve uygulama kategorilerini listeleyen görünüme yönlendirmekteydi. Kutucuk adı değişmemiştir, ancak artık Şirket Portalı web sitesinin KATEGORİLER sekmesine yönlendirir.
-Güncelleştirilmiş ekran görüntüleri için bkz. [iOS son kullanıcılarının uygulamalarını edinme şekillerine yönelik geliştirmeler](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
+- **Öne Çıkan Uygulamalar**, kullanıcıları Şirket Portalı web sitesinin ÖNE ÇIKAN sekmesine götürür.
 
+- **Kategoriler**, Şirket Portalı web sitesinin KATEGORİLER sekmesine yönlendirir.
 
+ 
+![iOS Şirket Portalı uygulaması ekranı](./media/ios-cp-app-main-apps-screen.png)
 
-### Ayrıca bkz.
+Uygulamaların nasıl ekleneceği ve bu kutucuklara nasıl yerleştirileceği hakkında bilgiler için bkz. [Kaydolmuş cihazlar için Intune’a uygulamalar ekleme](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
+
+### <a name="see-also"></a>Ayrıca bkz.
 [Android kullanıcılarınız uygulamalarını nasıl alır](how-your-android-users-get-their-apps.md)
 
 [Windows kullanıcılarınız uygulamalarını nasıl alır](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

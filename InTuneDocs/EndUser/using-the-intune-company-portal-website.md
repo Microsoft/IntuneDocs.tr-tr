@@ -1,11 +1,11 @@
 ---
 title: "Intune Şirket Portalı web sitesini kullanma | Microsoft Intune"
-description: "Şirket Portalı web sitesini açıklar ve web sitesinde gerçekleştirebileceğiniz görevlerin adımlarını içeren bağlantılar sağlar."
+description: "Şirket Portalı web sitesini açıklar ve son kullanıcıların web sitesinde gerçekleştirebileceği görevlerin adımlarını içeren bağlantılar sağlar"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
-ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
 
 
 ---
 
-# Intune Şirket Portalı web sitesini kullanma
-[Şirket Portalı web sitesi](http://portal.manage.microsoft.com), Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek için kullanabileceğiniz bir web sayfasıdır.
+# <a name="using-the-intune-company-portal-website"></a>Intune Şirket Portalı web sitesini kullanma
+[Şirket Portalı web sitesi](http://portal.manage.microsoft.com), Intune’a kaydettikleri bilgisayarları ve cihazları yönetmek için son kullanıcıların kullanabileceği bir web sayfasıdır.
 
-Şirket Portalı web sitesini kullanarak şunları yapabilirsiniz:
+Kullanıcılar, Şirket Portalı web sitesinden şu görevleri gerçekleştirebilir:
 
 -   [Cihazınızı yeniden adlandırma](rename-your-device-cpwebsite.md)
 
@@ -37,13 +37,13 @@ ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
 
 -   [Yavaş uygulama yüklemelerini hızlandırmak için cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)
 
--   BT yöneticiniz kişi bilgilerini yapılandırdıysa, BT yöneticinizin kişi bilgilerini bulun
+-   İletişim bilgilerini siz yapılandırdıysanız, BT yöneticinizin iletişim bilgilerini bulun
 
--   Cihazınız hakkındaki ayrıntıları, cihazın şirket veya okulunuzun ilkeleriyle uyumlu olup olmadığını görme
+-   Cihazları hakkındaki ayrıntıları, cihazın şirket veya okulunuzun ilkeleriyle uyumlu olup olmadığını görme
 
--   Bilgisayarınızı uzaktan yönetme (yalnızca bilgisayarlarda kullanılabilir)
+-   Bilgisayarlarını uzaktan yönetme (yalnızca bilgisayarlarda kullanılabilir)
 
-**Şirket Portalı web sitesinde** , cihazınıza yüklediğiniz **Şirket Portalı uygulamasını** kullanarak gerçekleştirdiğiniz görevlerin çoğunu gerçekleştirebilirsiniz. Şirket Portalı uygulaması, Intune’da cihaz kaydetme ve birçok konuda daha fazla bilgi edinmek için sahip olduğunuz cihaz türünün bağlantısına dokunun:
+Son kullanıcılar **Şirket Portalı web sitesinde**, cihazınıza yükledikleri **Şirket Portalı uygulamasını** kullanarak gerçekleştirdikleri görevlerin çoğunu gerçekleştirebilir. Son kullanıcıların cihazlarında gerçekleştirebilecekleri tüm görevlere bağlantılar için aşağıdaki sayfalara bakın:
 
 - [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
@@ -51,6 +51,6 @@ ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

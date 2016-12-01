@@ -14,13 +14,13 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
-ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: 4e8bf567601ad181238b74644b4c282e8f5bbf36
 
 
 ---
 
-# Intune’la Şirket İçi Exchange’e ve eski Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama
+# <a name="restrict-email-access-to-exchange-onpremises-and-legacy-exchange-online-dedicated-with-intune"></a>Intune’la Şirket İçi Exchange’e ve eski Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama
 
 
 Ayrılmış Exchange Online ortamınız varsa ve bunun yapılandırmasının yeni mi yoksa eski mi olduğunu bulmanız gerekiyorsa, lütfen hesap yöneticinize başvurun.
@@ -58,13 +58,13 @@ Koşullu biçimlendirme ilkeleri yapılandırıldığında ve hedef kullanıcı 
 
 Aşağıdaki çizelgede, Şirket İçi Exchange’e yönelik koşullu erişim ilkeleri tarafından, cihazlara izin verme veya cihazları engelleme yönünde değerlendirme yapmak amacıyla kullanılan akış gösterilir.
 
-![Cihazın Şirket İçi Exchange’e erişimine izin verileceğini veya erişimin engelleneceğini belirleyen karar noktalarının gösterildiği diyagram](../media/ConditionalAccess8-2.png) Koşullu erişim ilkesine uyulmazsa, kullanıcı oturum açtığında şu iletilerden birini görür:
+![Cihazın Şirket İçi Exchange’e erişmesine izin verileceğini veya erişimin engelleneceğini belirleyen karar noktalarının gösterildiği diyagram](../media/ConditionalAccess8-2.png) Koşullu erişim ilkesine uyulmazsa, kullanıcı oturum açtığında şu iletilerden birini görür:
 
 - Cihaz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’a kaydolmadıysa veya Azure Active Directory’de kayıtlı değilse, Şirket Portalı uygulamasını yükleme, cihazı kaydetme ve e-postayı etkinleştirme yönergelerinin bulunduğu bir ileti görüntülenir. Bu işlem cihazın Exchange ActiveSync kimliğini de Azure Active Directory’deki cihaz kaydıyla ilişkilendirir.
 
 -   Cihaz uyumlu değilse, kullanıcıyı sorunla ve sorunun nasıl çözüleceğiyle ilgili bilgileri bulabileceği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Şirket Portalı web sitesine veya Şirket Portalı uygulamasına yönlendiren bir ileti görüntülenir.
 
-## Mobil cihaz desteği
+## <a name="support-for-mobile-devices"></a>Mobil cihaz desteği
 -   Windows Phone 8.1 ve üzeri
 
 -   iOS’ta yerel e-posta uygulaması.
@@ -72,14 +72,16 @@ Aşağıdaki çizelgede, Şirket İçi Exchange’e yönelik koşullu erişim il
 -   Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri.
 - EAS posta istemcileri **Android for Work cihazlar:** Android for Work cihazlarda yalnızca **iş profilindeki** **Gmail** ve **Nine Work** uygulamaları desteklenir. Android for Work cihazlarda koşullu erişimin çalışması için Gmail veya Nine Work uygulamasına yönelik bir e-posta profili dağıtmalı ve bu uygulamaları ayrıca zorunlu bir yükleme olarak dağıtmanız gerekir. 
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 > [!NOTE]
 > Android ve iOS için Microsoft Outlook uygulaması desteklenmez.
 
-## Bilgisayarlar için destek
+## <a name="support-for-pcs"></a>Bilgisayarlar için destek
 
 Windows 8.1 ve üstündeki **Posta** uygulaması ([!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedildiğinde)
 
-##  Koşullu erişim ilkesini yapılandırma
+##  <a name="configure-a-conditional-access-policy"></a>Koşullu erişim ilkesini yapılandırma
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **Şirket İçi Exchange İlkesi**’ni seçin.
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
@@ -117,15 +119,15 @@ Windows 8.1 ve üstündeki **Posta** uygulaması ([!INCLUDE[wit_nextref](../incl
 
 -   Kullanıcı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kaydını silerse cihazın engellenmesi 1-3 saat sürebilir.
 
-**Cihaz erişimini kısıtlamak üzere koşullu erişim ilkesini nasıl yapılandırabileceğinizi gösteren bazı örnek senaryolar görmek için, bkz. [E-posta erişimini kısıtlama örnek senaryoları](restrict-email-access-example-scenarios.md).**
+**Cihaz erişimini kısıtlamak üzere koşullu erişim ilkesini nasıl yapılandırabileceğinizi gösteren bazı örnek senaryolar görmek için bkz. [E-posta erişimini kısıtlama örnek senaryoları](restrict-email-access-example-scenarios.md).**
 
-## Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 [SharePoint Online’a erişimi kısıtlama](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-[Skype Kurumsal Çevrimiçi’ne erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+[Skype Kurumsal Çevrimiçi Sürüm’e erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

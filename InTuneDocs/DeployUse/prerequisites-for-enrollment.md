@@ -2,7 +2,8 @@
 title: "Mobil cihaz kaydı için önkoşullar | Microsoft Intune"
 description: "Mobil cihaz yönetimi (MDM) önkoşullarını ayarlayın ve farklı işletim sistemlerini kaydetmeye hazır olun."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,34 +14,36 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 92e40930c0ccbeb3d98bef43b115fd92f24beaef
-ms.openlocfilehash: 93a29266ad9d18f444f0cc0c5aadf9b414eedfa2
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
 
 
 ---
 
-# Intune’da mobil cihaz yönetimi için önkoşullar
+# <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune’da mobil cihaz yönetimi için önkoşullar
 Çalışanların kendi cihazlarını Intune’a kaydetmesini etkinleştirmek için aşağıdaki adımları uygulamanız gerekir. Şirkete ait cihazları yönetmek için de aynı adımlar gerekir.
 
 |Adımlar|Ayrıntılar|  
 |-----------|-------------|  
 |**1. Adım:** [Bağlantıları etkinleştirme](#step-1-enable-connections)|Özel etki alanı adınızın yapılandırıldığından ve ağ iletişiminin hazır olduğundan emin olun|  
 |**2. Adım:** [MDM yetkilisini ayarlama](#step-2-set-mdm-authority)|Mobil cihaz yönetimi yetkilisi, cihazlarınıza atanan hizmeti tanımlar|
-|**3. Adım:** [Şirket Portalı’nı Yapılandırma](#step-3-configure-company-portal)|Şirket Portalı uygulamasına yönelik kullanıcıya açık ayarları yapılandırın|  
-|**4. Adım:** [Kullanıcı lisanslarını atama](#step-4-assign-user-licenses)|Cihazlarını kaydedebilmeleri için Intune lisanslarını kullanıcılara atayın|
-|**5. Adım:** [Kaydı etkinleştirme](#step-5-enable-enrollment)|iOS ve Windows yönetimine yönelik platforma özel ayarları etkinleştirin. Android cihazlarda ek yapılandırma gerekmez.|
+|**3. Adım:** [Grup oluşturma](#step-3-create-groups)|Şirket Portalı uygulamasına yönelik kullanıcıya açık ayarları yapılandırın|  
+|**4. Adım:** [Şirket Portalı’nı yapılandırma](#step-4-configure-company-portal)|Şirket Portalı uygulamasına yönelik kullanıcıya açık ayarları yapılandırın|  
+|**5. Adım:** [Kullanıcı lisanslarını atama](#step-5-assign-user-licenses)|Cihazlarını kaydedebilmeleri için Intune lisanslarını kullanıcılara atayın|
+|**6. Adım:** [Kaydı etkinleştirme](#step-6-enable-enrollment)|iOS ve Windows yönetimine yönelik platforma özel ayarları etkinleştirin. Android cihazlarda ek yapılandırma gerekmez.|
+|**7. adım:** [Sonraki adımlar](#step-7-next-steps)|iOS ve Windows yönetimine yönelik platforma özel ayarları etkinleştirin. Android cihazlarda ek yapılandırma gerekmez.|
 
 Configuration Manager ile Intune mu arıyorsunuz?
 > [!div class="button"]
 [SCCM belgelerini görüntüleyin >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
-## 1. Adım: Bağlantıları etkinleştirme
+## <a name="step-1-enable-connections"></a>1. Adım: Bağlantıları etkinleştirme
 
 Mobil cihaz kaydını etkinleştirmeden önce aşağıdakileri yaptığınızdan emin olun:
 - [Gerekli ağ URL'lerini ve bağlantı noktalarını gözden geçirin](../get-started/network-infrastructure-requirements-for-microsoft-intune)
 - [Etki alanınızın adını ekleyin ve doğrulayın](../get-started/domain-names-for-microsoft-intune)
 
-## 2. Adım: MDM yetkilisini ayarlama
+## <a name="step-2-set-mdm-authority"></a>2. Adım: MDM yetkilisini ayarlama
 MDM yetkilisi, bir grup cihazı yönetme iznine sahip olan yönetim hizmetini tanımlar. MDM yetkilisi seçenekleri arasında Intune’un kendisi ve Intune ile Configuration Manager vardır. Configuration Manager’ı yönetim yetkilisi olarak ayarlarsanız, mobil cihaz yönetimi için başka bir hizmet kullanılamaz.
 
 >[!IMPORTANT]
@@ -56,7 +59,11 @@ MDM yetkilisi, bir grup cihazı yönetme iznine sahip olan yönetim hizmetini ta
 
 3.  Intune, Intune’u MDM yetkiliniz olarak isteyip istemediğinizi onaylamanızı ister. Mobil cihazları yönetmek için Microsoft Intune kullanmak istiyorsanız onay kutusunu işaretleyin ve ardından **Evet**'i seçin.
 
-## 3. Adım: Şirket Portalı’nı yapılandırma
+## <a name="step-3-create-groups"></a>3. Adım: Grup oluşturma
+
+Yönetimi basitleştirmek ve dağıtılan uygulamaları, ilkeleri ve şirket kaynaklarını daha iyi hedeflemek için kullanıcı ve cihaz grupları oluşturabilirsiniz. [Grupların nasıl oluşturulacağını öğrenin](use-groups-to-manage-users-and-devices-with-microsoft-intune.md#create-groups).
+
+## <a name="step-4-configure-company-portal"></a>4. Adım: Şirket Portalı’nı yapılandırma
 
 Intune Şirket Portalı, kullanıcıların şirket verilerine eriştiği ve cihaz kaydetmek, uygulama yüklemek ve BT departmanınızdan yardım için bilgi bulmak gibi genel görevleri gerçekleştirebilecekleri yerdir.
 
@@ -67,7 +74,7 @@ Intune Şirket Portalı, kullanıcıların şirket verilerine eriştiği ve ciha
 
 ![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
-### Şirket iletişim bilgileri ve gizlilik bildirimi
+### <a name="company-contact-information-and-privacy-statement"></a>Şirket iletişim bilgileri ve gizlilik bildirimi
 
 Şirket adı, Şirket Portalı’nın başlığı olarak görüntülenir. Kullanıcılara kişi bilgileri ve ayrıntıları Şirket Portalı’nın BT’ye Başvur ekranında görüntülenir. Gizlilik bildirimini, kullanıcı gizlilik bağlantısına tıkladığında görüntülenir.
 
@@ -76,11 +83,11 @@ Intune Şirket Portalı, kullanıcıların şirket verilerine eriştiği ve ciha
     |Şirket adı|40|Bu ad Şirket Portalı’nın başlığı olarak gösterilir. **Not**: Yalnızca alfasayısal karakterler. Bu alan özel karakterleri desteklemez.|
     |BT departmanı ilgili kişi adı|40|Bu ad **BT’ye Başvur**sayfasında gösterilir.|
     |BT departmanı telefon numarası|20|Bu iletişim numarası **BT'ye Başvur** sayfasında gösterilir.|
-    |BT departmanı e-posta adresi|40|Bu iletişim adresi **BT'ye Başvur** sayfasında gösterilir. **diğerad@etkialanıadı.com** biçiminde geçerli bir e-posta adresi girmeniz gerekir.|
+    |BT departmanı e-posta adresi|40|Bu iletişim adresi **BT'ye Başvur** sayfasında gösterilir. **alias@domainname.com** biçiminde geçerli bir e-posta adresi girmeniz gerekir.|
     |Ek bilgiler|120|Bu bilgiler **BT'ye Başvur** sayfasında gösterilir.|
     |Şirket gizlilik bildirimi URL'si|79|Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. https://www.contoso.com biçiminde geçerli bir URL girmelisiniz.|
 
-### Destek kişileri
+### <a name="support-contacts"></a>Destek kişileri
 Şirket Portalı’nda kullanıcılara, çevrimiçi desteğe erişebilmeleri için destek web sitesi gösterilir.
 
 |Alan adı|Uzunluk üst sınırı|Daha fazla bilgi|
@@ -89,7 +96,7 @@ Intune Şirket Portalı, kullanıcıların şirket verilerine eriştiği ve ciha
     |Web sitesinin adı|40|Bu ad destek web sitesi URL'si için görüntülenen kolay addır. Bir destek web sitesi URL'si belirtir ve bir kolay ad belirtmezseniz, Şirket Portalı’ndaki **BT'ye Başvur** sayfasında **BT web sitesine gidin** ifadesi gösterilir.|
 
 
-### Şirket markasıyla özelleştirme
+### <a name="company-branding-customization"></a>Şirket markasıyla özelleştirme
 
 Şirket Portalınızı şirket logonuz, şirket adınız, tema renginiz ve arka planınızla özelleştirebilirsiniz.
 
@@ -102,7 +109,7 @@ Intune Şirket Portalı, kullanıcıların şirket verilerine eriştiği ve ciha
 
 Değişiklikleri kaydettikten sonra, Şirket Portalı web sitesini görüntülemek için yönetim konsolunun **Şirket Portalı** sayfasının sonunda sağlanan bağlantıları kullanabilirsiniz. Bu bağlantılar değiştirilemez. Bir kullanıcı oturum açtığında bu bağlantılar Şirket Portalı’ndaki aboneliklerinizi görüntüler.
 
-## 4. Adım: Kullanıcı lisanslarını atama
+## <a name="step-5-assign-user-licenses"></a>5. Adım: Kullanıcı lisanslarını atama
 
 Bulut tabanlı kullanıcıları el ile eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory’nizden Azure Active Directory’ye (Azure AD) eşitlenen hesaplara lisans atamak için **Office 365 yönetim portalını** kullanırsınız. [Şirket içi kullanıcıları Azure AD ile eşitleyebilirsiniz](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
 
@@ -112,28 +119,36 @@ Bulut tabanlı kullanıcıları el ile eklemek ve hem bulut tabanlı kullanıcı
 
 3.  Kullanıcı hesabı artık Microsoft Intune kullanıcı grubuna eklenir. Bu grup, kullanıcıya hizmeti kullanmak ve cihazlarını yönetime kaydetmek için izinler verir.
 
-### Şirket içi kullanıcıları Azure AD ile eşitleme
+### <a name="to-synchronize-onpremises-users-with-azure-ad"></a>Şirket içi kullanıcıları Azure AD ile eşitleme
 
 1. Şirket içi Active Directory’de özel etki alanınız için [UPN sonekini ekleyin](https://technet.microsoft.com/en-us/library/cc772007.aspx).
 2. İçe aktarmayı planladınız şirket için kullanıcılar için, yeni UPN sonekini ayarlayın.
 3. Şirket için kullanıcılarınızı Azure AD ile tümleştirmek için, [Azure AD Connect eşitleme](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) çalıştırın.
 4. Kullanıcı hesabı bilgileri başarıyla eşitlendiğinde, [Office 365 Yönetim Portalı](https://portal.office.com/Admin/Default.aspx)’nı kullanarak Microsoft Intune lisansları atayabilirsiniz.
 
-## 5. Adım: Kaydı etkinleştirme
+## <a name="step-6-enable-enrollment"></a>6. Adım: Kaydı etkinleştirme
 MDM yetkilisini ayarladıktan sonra, kuruluşunuzun desteklemek istediği işletim sistemleri için cihaz yönetimi ayarlamanız gerekir. Cihaz yönetimi ayarlamak için gerekli olan adımlar, işletim sistemine göre farklılık gösterir. Örneğin Android işletim sistemi, Intune yönetim konsolunda herhangi bir şey yapmanızı gerektirmez. Diğer taraftan, Windows ve iOS, yönetime olanak sağlamak için cihazlar ve Intune arasında bir güven ilişkisi gerektirir.
 
 Aşağıdaki platformların yönetimini ayarlayın:
-- [Android](set-up-android-management-with-microsoft-intune.md)
 - [iOS ve Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Android](set-up-android-management-with-microsoft-intune.md)
+- [Android for Work](set-up-android-for-work.md)
 - [Windows bilgisayarlar ve dizüstü bilgisayarlar](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile ve Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-Ayrıca şunları yapabilirsiniz:
- - Birçok cihaz kaydetmek için, [cihaz kaydı yöneticisi hesabını](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) kullanabilirsiniz.
- - Cihazları kaydetmeye ve hedef ilkeye yardımcı olmak için [IMEI numaraları kullanarak şirkete ait cihazlar belirtebilirsiniz](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
+[Şirkete ait cihazların kaydını](manage-corporate-owned-devices) da etkinleştirebilirsiniz.
+
+## <a name="step-7-next-steps"></a>7. Adım: Sonraki adımlar
+
+Kayıt etkinleştirildikten sonra, iş gereksinimlerinizi karşılamak için yönetimi ayarlamanız gerekir. Bazı yönetim seçenekleri şunlardır:
+
+- [Cihazlarda ayarları ve özellikleri yöneten ilkeler dağıtma](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+- [E-posta, Wi-Fi ve VPN gibi şirket kaynaklarına erişimi etkinleştirme](enable-access-to-company-resources-with-microsoft-intune.md)
+- Yönetilen cihazlara [uygulama ekleme](add-apps.md) ve [uygulama dağıtma](deploy-apps.md)
+- [Cihaz uyumluluk ilkeleri oluşturma](introduction-to-device-compliance-policies-in-microsoft-intune.md) ve [uyumluluğa göre erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

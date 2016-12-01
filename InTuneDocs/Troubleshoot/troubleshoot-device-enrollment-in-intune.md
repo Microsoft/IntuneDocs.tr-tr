@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 
 
 ---
@@ -29,7 +29,7 @@ Bu konuda, cihaz kayıt sorunlarının giderilmesi için tavsiyeler verilmektedi
 
 Sorun gidermeye başlamadan önce, Intune’u kayıt sağlamak üzere doğru şekilde yapılandırdığınızdan emin olmak için kontrol edin. Bu yapılandırma gereksinimleri hakkında daha fazla bilgi edinebilirsiniz:
 
--   [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-   [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune/deploy-use/prerequisites-for-enrollment.md)
 -   [iOS ve Mac yönetimini ayarlama](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Microsoft Intune ile Windows Phone ve Windows 10 Mobile yönetimini ayarlama](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Windows cihaz yönetimini ayarlama](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -47,16 +47,16 @@ Yönetilen cihaz kullanıcılarınız, gözden geçirmeniz için kayıt ve tanı
 ## <a name="general-enrollment-issues"></a>Genel kayıt sorunları
 Bu sorunlar, tüm cihaz platformlarında oluşabilir.
 
-### <a name="device-cap-reached"></a>Cihaz Sınırına Ulaşıldı
+### <a name="device-cap-reached"></a>Cihaz sınırına ulaşıldı
 **Sorun:** Bir kullanıcı, kayıt sırasında cihazında bir hata aldı (iOS cihazında **Şirket Portalı Geçici Olarak Devre Dışı** hatası gibi) ve Configuration Manager’daki DMPdownloader.log dosyası **DeviceCapReached** hatasını içeriyor.
 
-**Çözüm:** Tasarım gereği, kullanıcılar 5’ten fazla cihaz kaydedemez.
+**Çözüm:**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Kaydedilen ve izin verilen cihazların sayısını denetleme
 
-1.  Intune yönetim portalında kullanıcıya 5’ten fazla cihaz atanmadığını doğrulayın
+1.  Intune yönetim portalında kullanıcıya izin verilen üst sınır olan 15'ten fazla cihaz atanmadığını doğrulayın.
 
-2.  Intune yönetim portalında Yönetici\Mobil Cihaz Yönetimi\Kayıt Kuralları altında Cihaz kaydı sınırı değerinin 5 olarak ayarlanıp ayarlanmadığını denetleyin
+2.  Intune yönetici konsolunda Yönetici\Mobil Cihaz Yönetimi\Kayıt Kuralları altında Cihaz kaydı sınırı değerinin 15 olarak ayarlanıp ayarlanmadığını denetleyin.
 
 Mobil cihaz kullanıcıları şu URL’de cihazları silebilir: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
@@ -89,7 +89,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 ### <a name="company-portal-temporarily-unavailable"></a>Şirket Portalı Geçici Olarak Devre Dışı
 **Sorun:** Bir kullanıcı, cihazda **Şirket Portalı Geçici Olarak Devre Dışı** hatası alıyor.
 
-#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>Şirket Portalı Geçici Olarak Devre Dışı hatasını giderme
+**Çözüm:**
 
 1.  Intune Şirket Portalı uygulamasını cihazınızdan kaldırın.
 
@@ -104,7 +104,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 ### <a name="mdm-authority-not-defined"></a>MDM yetkilisi tanımlı değil
 **Sorun:** Bir kullanıcı, **MDM yetkilisi tanımlı değil** hatası alıyor.
 
-#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>MDM yetkilisi tanımlı değil hatasını giderme
+**Çözüm:**
 
 1.  MDM Yetkilisinin kullandığınız Intune hizmetinin, yani Intune, O365 MDM veya Intune ile System Center Configuration Manager için uygun bir şekilde ayarlandığını doğrulayın. Intune için, MDM Yetkilisi **Yönetici** &gt; **Mobil Cihaz Yönetimi**’nde ayarlanır. Intune ile Configuration Manager için, Intune bağlayıcısını yapılandırırken ayarlarsınız ve O365’te bu bir ayardır (**Mobil Cihazlar**).
 
@@ -148,20 +148,69 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 **Sorun:** AD FS’nize ikinci bir doğrulanmış etki alanı eklediğinizde, ikinci etki alanının kullanıcı asıl adı (UPN) sonekini taşıyan kullanıcılar portallarda oturum açamayabilir veya cihaz kaydedemeyebilir.
 
 
-**Çözüm:** AD FS 2.0 aracılığıyla çoklu oturum açma (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, her sonek için ayrı bir AD FS 2.0 Federasyon Hizmeti örneği dağıtmak üzere @contoso.com veya @fabrikam.com) gerekir) Microsoft Office 365 müşterileri.  Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, **SupportMultipleDomain** anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu bloga](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
+**Çözüm:** AD FS 2.0 aracılığıyla çoklu oturum açma (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, her sonek için ayrı bir AD FS 2.0 Federasyon Hizmeti örneği dağıtmak üzere @contoso.com veya @fabrikam.com) gerekir) Microsoft Office 365 müşterileri.  Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, **SupportMultipleDomain** anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu blog’a](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
 
 
 ## <a name="android-issues"></a>Android sorunları
+### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Cihazlar Intune hizmetini denetlemiyor ve Intune yönetici konsolunda "Uygun olmayan durumda" olarak görüntüleniyor
+**Sorun:** Android sürüm 4.4.x ve 5.x çalıştıran bazı Samsung cihazlar, Intune hizmetini denetlemeyi durdurabiliyor. Hizmeti denetlemeyen cihazlar:
+
+- Intune hizmetinden ilke, uygulama ve uzak komutları alamaz.
+- Yönetici konsolunda Yönetim Durumu olarak **Uygun olmayan durumda** görüntülenir.
+- Koşullu erişim ilkeleri tarafından korunan kullanıcılar şirket kaynaklarına erişimi kaybedebilir.
+
+Samsung, belirli Samsung cihazlara yüklü gelen Samsung Smart Manager yazılımının, Şirket Portalı uygulamasını ve bileşenlerini devre dışı bırakabildiğini onayladı. Şirket Portalı devre dışı bırakıldığında arka planda çalışamaz ve bu nedenle Intune hizmetine bağlanamaz.
+
+**1. Çözüm:**
+
+Kullanıcılarınız Şirket Portalı uygulamasını el ile başlatmalarını söyleyin. Uygulama yeniden başlatıldığında Intune hizmeti ile bağlantıya geçer.
+
+> [!IMPORTANT]
+> Samsung Smart Manager, Şirket Portalı uygulamasını yeniden devre dışı bırakabileceği için Şirket Portalı uygulamasını el ile açmak geçici bir çözümdür.
+
+**2. Çözüm:**
+
+Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemelerini söyleyin. Devre dışı bırakma sorunu Android 6.0 cihazlarda yoktur. Güncelleştirmeleri denetlemek için kullanıcılar **Ayarlar** > **Cihaz hakkında** > **Güncellemeleri manuel indir** yolunu izleyip cihaz ekranındaki komutları izleyebilir.
+
+**3. Çözüm:**
+
+2. Çözüm işe yaramazsa, kullanıcılarınızın aşağıdaki adımları uygulayarak Şirket Portalı uygulamasını Smart Manager'da hariç tutmasını sağlayın:
+
+1. Cihazda Smart Manager uygulamasını başlatın.
+
+  ![Cihazda Smart Manager simgesini seçin](./media/smart-manager-app-icon.png)
+
+2. **Pil** kutucuğunu seçin.
+
+  ![Pil kutucuğunu seçin](./media/smart-manager-battery-tile.png)
+
+3. **Uygulama güç tasarrufu** veya **Uygulama optimizasyonu** bölümünde **Ayrıntı**'yı seçin.
+
+  ![Uygulama güç tasarrufu veya Uygulama optimizasyonu bölümünde Ayrıntı'yı seçin](./media/smart-manager-app-power-saving-detail.png)
+
+4. Uygulama listesinden **Şirket Portalı**'nı seçin.
+
+  ![Uygulama listesinden Şirket Portalı'nı seçin](./media/smart-manager-company-portal.png)
+
+5. **Kapalı**'yı seçin.
+
+  ![Uygulama optimizasyon iletişim kutusundan Kapalı'yı seçin](./media/smart-manager-app-optimization-turned-off.png)
+
+6. **Uygulama güç tasarrufu** veya **Uygulama optimizasyonu** altında Şirket Portalı'nın kapalı olduğunu onaylayın.
+
+  ![Şirket Portalı'nın kapalı olduğunu doğrulayın](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### <a name="profile-installation-failed"></a>Profil yüklemesi başarısız oldu
 **Sorun:** Bir kullanıcı, bir Android cihazında **Profil yüklemesi başarısız oldu** hatasını alıyor.
 
-### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Başarısız olan profil yüklemesi sorunlarını giderme adımları
+**Çözüm:**
 
 1.  Kullanıcıya, Intune hizmetinin kullandığınız sürümü için uygun lisansın atandığını onaylayın.
 
 2.  Cihazın zaten başka bir MDM sağlayıcısıyla kaydedilmediğini ve cihaza önceden bir yönetim profili yüklenmediğini doğrulayın.
 
-4.  Android için Chrome’un varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
+3.  Android için Chrome’un varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
 ### <a name="android-certificate-issues"></a>Android sertifika sorunları
 
@@ -255,7 +304,7 @@ iOS kayıt hatalarının bir listesi, cihaz-kullanıcı belgelerimizdeki [Cihaz�
 
 ## <a name="pc-issues"></a>PC Sorunları
 
-### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>Makine zaten kaydoldu - Hata hr 0x8007064c
+### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>Makine zaten kaydoldu - Hata hr 0x8007064c
 **Sorun:** Kayıt işlemi **Makine zaten kaydoldu** hatasıyla başarısız oluyor. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.
 
 Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilgisayarın kopyalanmış görüntüsünü içermesi olabilir. Önceki hesabın hesap sertifikası hala bilgisayarda duruyordur.
@@ -307,6 +356,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

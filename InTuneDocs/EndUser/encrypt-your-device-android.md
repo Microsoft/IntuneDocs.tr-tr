@@ -2,10 +2,10 @@
 title: "Cihazınızı şifreleme | Microsoft Intune"
 description: "Android cihazının nasıl şifreleneceği açıklanır"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 ---
 
 
-# Cihazınızı şifreleme
+# <a name="encrypt-your-device"></a>Cihazınızı şifreleme
 
 Şirketiniz veya kuruluşunuz şirket dosyaları, e-postaları veya verilerine erişmek için Android cihazınızı şifrelemenizi isterse, cihazınızı şifrelemek için aşağıdaki adımları izleyin. BT yöneticiniz gerekli kılmışsa, şifrelemeden önce bir PIN veya parola ayarlamanız istenebilir.
 
@@ -34,14 +34,14 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 
 3.  Ekrandaki yönergeleri takip edin. Şifreleme sırasında, cihazınız birkaç kere yeniden başlatılabilir.
 
-### Sorunlarınız varsa yapmanız gerekenler
+### <a name="what-to-do-if-you-have-issues"></a>Sorunlarınız varsa yapmanız gerekenler
 **Sorun**: Cihazınızı zaten şifrelediyseniz ve aşağıdakilerden biriyle karşılaşıyorsanız:
 
 - Şifreleme düğmesi devre dışı.
 - Yine de şifrelemeniz gerektiğini bildiren bir iletiyle karşılaşıyorsunuz.
 - Şirket Portalı uygulamasını kullanmaya çalışırken hatayla karşılaşıyorsunuz.
 
-**Bunları deneyin**
+**Bunları deneyin:**
 
 - Cihazınızın şarjının dolu olduğundan ve prize takılı olduğundan emin olun.
 - Cihazınızda bir PIN veya parola ayarladığınızdan emin olun.
@@ -57,10 +57,10 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 
     5. Cihazınızda Şirket Portalı uygulamasını açın ve **Uyumluluğu Denetle**’yi seçin.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya [Microsoft Android ekibine](mailto:wintunedroidfbk@microsoft.com) yazın.
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,10 +2,10 @@
 title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Intune
 description: "Kullanım koşullarını reddettiyseniz ve Şirket Portalı uygulamasında oturum açamıyorsanız, Android cihazın Intune kaydını nasıl sileceğiniz açıklanır"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 4f5088bc645fed0451885078f5ab0dcd04a33d81
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 6303400645bf26ede733413fe2dabdb360e3bafb
 
 
 ---
 
 
-# “Kullanım Koşulları”’nı reddettiyseniz cihazınızın Intune kaydını silme
+# <a name="unenroll-your-device-from-intune-if-you-declined-terms-of-use"></a>“Kullanım Koşulları”’nı reddettiyseniz cihazınızın Intune kaydını silme
 
-Android cihazınızın kaydını silmenin en iyi yolu kullanım koşullarını kabul etmek, Şirket Portalı’nda oturum açmak ve ardından [bu yönergeleri](unenroll-your-device-from-intune-android.md) kullanarak kaydı silmektir. Öte yandan, Şirket Portalı uygulamasında oturum açmaya çalışırken kullanım koşullarını reddettiyseniz, gelecek denemelerde Şirket Portalı uygulamasında oturum açmanız engellenir. Bu durumda, cihazınızın kaydını silmek için bu "geçici çözüm" yönergelerini kullanmanız gerekir.
+Android cihazınızın kaydını silmenin en iyi yolu kullanım koşullarını kabul etmek, Şirket Portalı’nda oturum açmak ve ardından [bu yönergeleri](unenroll-your-device-from-intune-android.md) kullanarak kaydı silmektir. Öte yandan, Şirket Portalı uygulamasında oturum açmaya çalışırken kullanım koşullarını reddettiyseniz gelecek denemelerde Şirket Portalı uygulamasında oturum açmanız engellenir, dolayısıyla cihazınızın kaydını silmek için bu "geçici çözüm" yönergelerini kullanmanız gerekir.
 
 Şirket Portalı uygulamasını kaldırdığınızda, cihazınızın Intune kaydı da kaldırılır. Cihazınız artık şirket kaynaklarına erişemez. Kaydı sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
@@ -39,10 +39,10 @@ Cihazınızın Intune kaydını silmek ve Şirket Portalı uygulamasını kaldı
 
     Şirket Portalı uygulamasını şimdi kaldırabilirsiniz.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya [Microsoft Android ekibine](mailto:wintunedroidfbk@microsoft.com) yazın.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

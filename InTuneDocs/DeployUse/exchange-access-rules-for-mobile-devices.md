@@ -2,7 +2,8 @@
 title: "Mobil cihazlar için Exchange erişim kuralları | Microsoft Intune"
 description: "EAS ile cihaz bağlantılarına izin vermek ya da bunları engellemek için Exchange ActiveSync erişim kuralları"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,22 +14,22 @@ ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 73c3b57ac8b896001758eb22181c865ff68c3b93
-ms.openlocfilehash: f933df0436e73a7db2cd94c9a104294591ea96c0
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: e11263115088005123562b2afae1804528d0d5d5
 
 
 ---
 
-# Mobil cihazlar için Exchange erişim kuralları
+# <a name="exchange-access-rules-for-mobile-devices"></a>Mobil cihazlar için Exchange erişim kuralları
 Mobil cihazlar için Exchange erişim kuralları, bu cihazların Exchange ActiveSync’e erişim düzeylerini belirler. Bu ayarlar, Microsoft Intune’a kaydedilmemiş olanlar da dahil olmak üzere tüm mobil cihazları etkiler. Özel bir kural uygulanmayan tüm mobil cihazlar için geçerli olan bir **Varsayılan Kural** tanımlayarak başlayabilirsiniz.
 
 Aşağıdaki tablo, Exchange ActiveSync tarafından yönetilen erişim düzeylerini içerir:
 
 |Erişim düzeyi|Açıklama|
 |----------------|---------------|
-|**Cihazların Exchange'e erişmesine izin ver**|*Erişime izin ver* durumunda, mobil cihazlar Exchange ActiveSync üzerinden eşitlenebilir; e-posta almak ve Takvimi, Kişileri, Görevleri ve Notları yönetmek için Exchange sunucusuna bağlanabilir. Kullanıcı veya söz konusu mobil cihaz Exchange yöneticisi tarafından engellenmemişse, cihaz yapılandırdığınız herhangi bir Exchange ActiveSync posta kutusu ilkesiyle uyumlu olduğu sürece bu devam eder.|
-|**Cihazların Exchange'e erişimini engelle**|*Erişimi engelle* durumunda, mobil cihazlar engellenir ve Exchange sunucusuna bağlanmalarına izin verilmez. Cihazlar bir HTTP 403 Yasak hatası alır. Kullanıcı, Exchange sunucusundan mobil cihazın posta kutusuna erişiminin engellendiğini bildiren bir e-posta iletisi alır. Bu ileti, engellenen mobil cihazda olamaz. **Kullanıcı Bildirimi Ayarla** görevini kullanarak, cihazları engellenen kullanıcılara yönergeler sağlamak için bu iletiye özel metin ekleyebilirsiniz. |
-|**Daha sonra izin vermek veya engellemek üzere cihazları karantinaya al**|Bir mobil cihaz karantinaya alındığında, mobil cihazın Exchange sunucusuna bağlanmasına izin verilir. Ancak, verilere yalnızca sınırlı erişimi vardır. Kullanıcı kendi Takvim, Kişiler, Görevler ve Notlar klasörlerine içerik ekleyebilir ancak sunucu, cihazın kullanıcının posta kutusundan içerik almasına izin vermez. Kullanıcı, mobil cihazının karantinaya alındığını bildiren tek bir e-posta iletisi alır. Bu ileti cihaza ve kullanıcının posta kutusuna gönderilir. **Kullanıcı Bildirimi Ayarla** görevini kullanarak, cihazları karantinaya alınan kullanıcılara yönergeler sağlamak için bu iletiye özel metin ekleyebilirsiniz.|
+|**Cihazların Exchange'e erişmesine izin verme**|*Erişime izin ver* durumunda, mobil cihazlar Exchange ActiveSync üzerinden eşitlenebilir; e-posta almak ve Takvimi, Kişileri, Görevleri ve Notları yönetmek için Exchange sunucusuna bağlanabilir. Kullanıcı veya söz konusu mobil cihaz Exchange yöneticisi tarafından engellenmemişse, cihaz yapılandırdığınız herhangi bir Exchange ActiveSync posta kutusu ilkesiyle uyumlu olduğu sürece bu devam eder.|
+|**Cihazların Exchange'e erişimini engelleme**|*Erişimi engelle* durumunda, mobil cihazlar engellenir ve Exchange sunucusuna bağlanmalarına izin verilmez. Cihazlar bir HTTP 403 Yasak hatası alır. Kullanıcı, Exchange sunucusundan mobil cihazın posta kutusuna erişiminin engellendiğini bildiren bir e-posta iletisi alır. Bu ileti, engellenen mobil cihazda olamaz. **Kullanıcı Bildirimi Ayarla** görevini kullanarak, cihazları engellenen kullanıcılara yönergeler sağlamak için bu iletiye özel metin ekleyebilirsiniz. |
+|**Daha sonra izin vermek veya engellemek üzere cihazları karantinaya alma**|Bir mobil cihaz karantinaya alındığında, mobil cihazın Exchange sunucusuna bağlanmasına izin verilir. Ancak, verilere yalnızca sınırlı erişimi vardır. Kullanıcı kendi Takvim, Kişiler, Görevler ve Notlar klasörlerine içerik ekleyebilir ancak sunucu, cihazın kullanıcının posta kutusundan içerik almasına izin vermez. Kullanıcı, mobil cihazının karantinaya alındığını bildiren tek bir e-posta iletisi alır. Bu ileti cihaza ve kullanıcının posta kutusuna gönderilir. **Kullanıcı Bildirimi Ayarla** görevini kullanarak, cihazları karantinaya alınan kullanıcılara yönergeler sağlamak için bu iletiye özel metin ekleyebilirsiniz.|
 
 Erişim stratejisi, Exchange'e bağlanan tüm mobil cihazlar için geçerli olan **Varsayılan Kural**’ın ve **Platform Özel Durumları**'nın bir birleşimidir. Aşağıdaki tabloda bazı örnek erişim stratejileri listelenmektedir.
 
@@ -39,7 +40,7 @@ Erişim stratejisi, Exchange'e bağlanan tüm mobil cihazlar için geçerli olan
 |Karma izin verme ve engelleme|İzin verme ve engelleme listeleri oluşturmaya ek olarak, kuruluşa katılan yeni mobil cihazları değerlendirmeye devam ederken karantinaya alabilirsiniz. Örneğin, kuruluşunuzda izin verilmeyen mobil cihazlar için bir engellenenler listeniz ve izin verilen mobil cihazlar için bir izin verilenler listeniz varsa, varsayılan kuralı karantina olarak ayarlayabilirsiniz. Diğer tüm cihazlar otomatik olarak karantinaya alınır. Böylece kuruluşa katılan yeni cihazları bulabilir ve bunları izin verilenler listesine mi, yoksa engellenenler listesine mi ekleyeceğinize karar verebilirsiniz.|
 Aşağıdaki yordamda özel bir kuralın nasıl oluşturulacağı açıklanmaktadır.
 
-## Varsayılan erişim kuralı oluşturma
+## <a name="create-a-default-access-rule"></a>Varsayılan erişim kuralı oluşturma
 
 1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Exchange ActiveSync**’i seçin.
 
@@ -47,7 +48,7 @@ Aşağıdaki yordamda özel bir kuralın nasıl oluşturulacağı açıklanmakta
 
 Aşağıdaki yordamda özel bir kuralın nasıl oluşturulacağı açıklanmaktadır:
 
-## Özel erişim kuralı oluşturma
+## <a name="create-a-custom-access-rule"></a>Özel erişim kuralı oluşturma
 
 1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Exchange ActiveSync**’i seçin.
 
@@ -55,6 +56,6 @@ Aşağıdaki yordamda özel bir kuralın nasıl oluşturulacağı açıklanmakta
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

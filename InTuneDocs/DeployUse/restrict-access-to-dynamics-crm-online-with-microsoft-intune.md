@@ -14,13 +14,13 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 233b7cad41fbd35e0fef615737fc41f8a49db35e
+ms.sourcegitcommit: b1c6bb31d9ed2d52f309e04ba9de6f24f3939923
+ms.openlocfilehash: 437c683ed81d78173ef262d3747095214593645c
 
 
 ---
 
-# Dynamics CRM Online’a erişimi kısıtlama
+# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>Intune ile Dynamics CRM Online’a erişimi kısıtlama
 Microsoft Dynamics CRM Online’a erişimi, iOS ve Android cihazlardan, Microsoft Intune koşullu erişimle denetleyebilirsiniz.  Intune koşullu erişimi iki bileşenden oluşur:
 * Cihazın uyumlu kabul edilmesi için uyması gereken [cihaz uyumluluk ilkesi](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 * Cihazın hizmete erişebilmek için uyması gereken koşulları sizin belirlediğiniz [koşullu erişim ilkesi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
@@ -44,8 +44,8 @@ Bir koşul karşılanmazsa, oturum açtığında kullanıcıya şu iletilerden b
 * Cihaz Microsoft Intune’a kaydedilmediyse veya Azure Active Directory'ye kayıtlı değilse, şirket portalı uygulamasının nasıl yükleneceğine ve nasıl kayıt yapılacağına ilişkin yönergeleri içeren bir ileti görüntülenir.
 * Cihaz uyumlu değilse, kullanıcıyı, sorun hakkında bilgi bulabileceği ve sorunu düzeltebileceği Microsoft Intune Şirket Portalı Web sitesine veya Şirket Portalı uygulamasına yönlendiren bir ileti görüntülenir.
 
-## Dynamics CRM Online için koşullu erişim yapılandırma  
-### Adım 1: Active Directory güvenlik gruplarını yapılandırma
+## <a name="configure-conditional-access-for-dynamics-crm-online"></a>Dynamics CRM Online için koşullu erişim yapılandırma  
+### <a name="step-1-configure-active-directory-security-groups"></a>Adım 1: Active Directory güvenlik gruplarını yapılandırma
 
 Başlamadan önce koşullu erişim ilkesi için Azure Active Directory güvenlik gruplarını yapılandırın. Bu grupları **Office 365 yönetim merkezinde** yapılandırabilirsiniz. Bu gruplar, ilkede kullanıcıları hedeflemek veya muaf tutmak için kullanılır. Bir kullanıcı bir ilke tarafından hedeflendiğinde, kaynaklara erişmek için kullandıkları her bir cihaz uyumlu olmalıdır.
 
@@ -55,7 +55,7 @@ Dynamics CRM ilkesinde kullanmak üzere iki grup türü belirtebilirsiniz:
 
 Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 
-### 2. Adım: Uyumluluk ilkesi yapılandırma ve dağıtma
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2. Adım: Uyumluluk ilkesi yapılandırma ve dağıtma
 Bir uyumluluk ilkesi [oluşturun](create-a-device-compliance-policy-in-microsoft-intune.md) ve ilkeden etkilenecek olan tüm cihazlara [dağıtın](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md). Bunlar, Hedeflenen gruplardaki kullanıcılar tarafından kullanılan tüm cihazlar olacaktır.
 
 > [!NOTE]
@@ -65,7 +65,7 @@ Bir uyumluluk ilkesi [oluşturun](create-a-device-compliance-policy-in-microsoft
 > Uyumluluk İlkesi dağıtmadıysanız, cihazlar uyumlu olarak kabul edilir.
 
 Hazır olduğunuzda 3. Adım‘a ilerleyin.
-### Adım 3: Dynamics CRM ilkesi yapılandırma
+### <a name="step-3-configure-the-dynamics-crm-policy"></a>Adım 3: Dynamics CRM ilkesi yapılandırma
 Ardından, ilkeyi yalnızca yönetilen ve uyumlu cihazların Dynamics CRM’ye erişebileceği şekilde yapılandırın. Bu ilke Azure Active Directory’de depolanır.
 
 1.  Microsoft Intune yönetim konsolunda, **İlke > Koşullu Erişim > Dynamics CRM Online İlkesi**’ni seçin.
@@ -81,7 +81,7 @@ Ardından, ilkeyi yalnızca yönetilen ve uyumlu cihazların Dynamics CRM’ye e
 6.  İşiniz bittiğinde **Kaydet**’i seçin.
 
 Artık Dynamics CRM için koşullu erişimi yapılandırdınız. Koşullu erişim ilkesini dağıtmanız gerekmez, hemen geçerli olur.
-##  Uyumluluk ve koşullu erişim ilkeleri izleme
+##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Uyumluluk ve koşullu erişim ilkeleri izleme
 
  **Gruplar** çalışma alanında, cihazlarınızın koşullu erişim durumunu görüntüleyebilirsiniz.
 
@@ -90,16 +90,16 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 * **Uyumlu olmayan cihazlar** - Bu cihazlar Dynamics CRM’den engellenir.
 * **AAD ile kayıtlı ve uyumlu cihazlar** - Bu cihazlar Dynamics CRM’ye erişebilir.
 
-##  Sonraki adımlar
-[Exchange Online'a erişim kısıtlama](restrict-access-to-exchange-online-with-microsoft-intune.md)
+##  <a name="next-steps"></a>Sonraki adımlar
+[Exchange Online'a erişimi kısıtlama](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
 [Şirket içi Exchange için erişim kısıtlama](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 [SharePoint Online'a erişimi kısıtlama](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-[Skype Kurumsal Çevrimiçi’ne erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+[Skype Kurumsal Çevrimiçi Sürüm’e erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO5-->
 
 

@@ -3,8 +3,9 @@ title: "Intune bilgisayar yazılım istemcisi özellikleri | Microsoft Intune"
 description: "Windows bilgisayarlarını Intune yazılım istemcisiyle yönetirken sağlanan Intune özelliklerini öğrenin."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
-ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
 
 
 ---
 
-# Intune yazılım istemcisi kullandığınızda Windows bilgisayarı yönetim özellikleri
+# <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>Intune yazılım istemcisi kullandığınızda Windows bilgisayarı yönetim özellikleri
 Çoğu senaryoda, cihazlarınızı Microsoft Intune’a kaydeder ve böylece daha büyük bir özellik kümesine sahip olursunuz. Bununla birlikte, bilgisayarlarınızı yönetmek için aşağıdaki özellikleri sağlayan Intune yazılım istemcisini de kullanabilirsiniz:
 
 -   **[Yazılım güncelleştirmelerini yönetme](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - Bilgisayarları güncel tutup, güncelleştirmelerin ne zaman uygulanacağına karar verebilirsiniz.
@@ -36,7 +37,7 @@ ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 Intune, 7.000’e kadar Windows cihazında yazılım istemcisinin yüklenmesini destekler.
 
-## İşletim sistemi gereksinimleri
+## <a name="operating-system-requirements"></a>İşletim sistemi gereksinimleri
 Intune, aşağıdaki Windows sürümlerini çalıştıran bilgisayarları yönetebilir (hem 32 bit hem de 64 bit):
 
 
@@ -51,7 +52,7 @@ Intune, aşağıdaki Windows sürümlerini çalıştıran bilgisayarları yönet
 - **Windows 10** - Pro, Education ve Enterprise sürümleri
 
 
-## En düşük donanım gereksinimleri
+## <a name="minimum-hardware-requirements"></a>En düşük donanım gereksinimleri
 Intune yazılım istemcisini yüklemeye yönelik en düşük donanım gereksinimleri aşağıda verilmiştir:
 
 |Gereksinim|Ayrıntılar|
@@ -60,7 +61,7 @@ Intune yazılım istemcisini yüklemeye yönelik en düşük donanım gereksinim
 |İşlemci ve bellek|Bilgisayarın işletim sistemine ait işlemci ve RAM gereksinimlerine bakın.|
 |Disk alanı|İstemci yazılımı yüklenmeden önce 200 MB kullanılabilir disk alanı.|
 
-## Diğer gereksinimler
+## <a name="further-requirements"></a>Diğer gereksinimler
 Intune yazılım istemcisini yüklemeye yönelik yazılım gereksinimleri aşağıda verilmiştir:
 
 |Gereksinim|Ayrıntılar|
@@ -69,11 +70,11 @@ Intune yazılım istemcisini yüklemeye yönelik yazılım gereksinimleri aşağ
 |Windows Installer 3.1|Bilgisayarda en azından Windows Installer 3.1 olmalıdır.|
 |Uyumsuz istemci yazılımını kaldırma|Intune bilgisayar istemcisi yazılımını yüklemeden önce aşağıdaki istemci yazılımlarını ilgili bilgisayardan kaldırmanız gerekir:<br /><br />-   Configuration Manager’ın herhangi bir sürümü<br />-   Microsoft Systems Management Server’ın herhangi bir sürümü (SMS)|
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune’un kayıtlı cihaz yönetimi özellikleri](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

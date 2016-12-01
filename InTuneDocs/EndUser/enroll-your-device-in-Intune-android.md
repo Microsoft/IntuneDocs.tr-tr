@@ -2,7 +2,7 @@
 title: "Android cihazınızı Intune’a kaydetme | Microsoft Intune"
 description: "Android cihazının Intune’a nasıl kaydedildiği açıklanır"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
@@ -14,24 +14,24 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
+ms.sourcegitcommit: 6dc3173207d1e99e1bd0207f8ea5a5b137b36be1
+ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
 
 
 ---
 
 
-# Android cihazınızı Intune’a kaydetme
+# <a name="enroll-your-android-device-in-intune"></a>Android cihazınızı Intune’a kaydetme
 
 Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için Android cihazlarınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, BT departmanınız bu iş veya okul kaynaklarını yönetebilir, bunların güvenli kalmasını sağlayabilir ve size işlerinizi tamamlamak için tercih ettiğiniz cihazı kullanma özgürlüğünü tanıyabilir. Kayıt hakkında daha fazla bilgi edinmek için, bkz. [Şirket Portalı uygulamasını yüklediğimde ve cihazımı kaydettiğimde ne olur?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
 
-Bu kayıt yönergeleri, Samsung Knox Android cihazlar ve "yerel" (Samsung Knox harici) Android cihazları içindir. Samsung Knox cihazınızın olup olmadığını denetlemek için **Ayarlar** &gt; **Cihaz hakkında** seçeneğine gidin. Bu listede "KNOX sürümü" ifadesini görmüyorsanız yerel bir Android cihazına sahipsinizdir.
+Bu kayıt yönergeleri, Samsung KNOX Android cihazlar ve "yerel" (Samsung Knox harici) Android cihazlar içindir. Samsung KNOX cihazınızın olup olmadığını denetlemek için **Ayarlar** &gt; **Cihaz hakkında** seçeneğine gidin. Bu listede "KNOX sürümü" ifadesini görmüyorsanız yerel bir Android cihazına sahipsinizdir.
 
 Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi şekilde açıklayan bir kategoriyi seçmeniz istenebilir. BT yöneticiniz bu kategoriyi erişiminiz olan uygulamaları denetlemek için kullanır.
 
 Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yöneticinize kayıt hataları gönderebilirsiniz](send-enrollment-errors-to-your-it-administrator-android.md).
 
-**Android cihazınızı kaydetme**
+**Android cihazınızı kaydetmek için:**
 
 1.  [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’den ücretsiz Intune Şirket Portalı uygulamasını yükleyin.
 
@@ -110,10 +110,10 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
 Şirket uygulamalarını yüklemeyi denemeden önce **Ayarlar** &gt; **Güvenlik**’e gidin ve **Bilinmeyen kaynaklar** seçeneğini açın. Uygulamaları yüklemeyi denemeden önce bu seçeneği açmazsanız "Yükleme engellendi. Güvenlik nedeniyle cihazınız bilinmeyen kaynaklardan gelen uygulamaların yüklenmesini engelleyecek şekilde ayarlanmış." iletisini görürsünüz. Hata iletişim kutusunda **Ayarlar** öğesine dokunarak **Bilinmeyen kaynaklar** seçeneğine gidin.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com adresinden Microsoft Android ekibine yazın.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya wintunedroidfbk@microsoft.com. adresinden Microsoft Android ekibine yazın
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

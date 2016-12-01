@@ -2,9 +2,10 @@
 title: "PFX için sertifika altyapısını yapılandırma |Microsoft Intune|"
 description: ".PFX sertifika profillerini oluşturun ve dağıtın."
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ce620e073608f6bcbfc9d698255dd75deae4be
-ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
+ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
+ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 
 
 ---
-# Sertifika altyapısını yapılandırma
+# <a name="configure-certificate-infrastructure"></a>Sertifika altyapısını yapılandırma
 Bu konu başlığı altında, .PFX sertifika profillerini oluşturmak ve dağıtmak için nelere ihtiyacınız olduğu açıklanır.
 
 Kuruluşunuzda sertifika tabanlı kimlik doğrulamaları yapmak için, bir Kuruluş Sertifika Yetkiliniz olmalıdır.
@@ -30,7 +31,7 @@ Kuruluş Sertifika Yetkilisine ek olarak .PFX Sertifika profillerini de kullanma
 
 -  Sertifika Yetkilisi ile iletişim kurabilen bilgisayarda çalışan Intune Sertifika Bağlayıcısı.
 
-## Şirket içi altyapı açıklaması
+## <a name="onpremises-infrastructure-description"></a>Şirket içi altyapı açıklaması
 
 
 -    **Active Directory etki alanı**: Bu bölümde listelenen tüm sunucular (Web Uygulaması Ara Sunucusu hariç), Active Directory etki alanınıza katılmalıdır.
@@ -50,7 +51,7 @@ Kuruluş Sertifika Yetkilisine ek olarak .PFX Sertifika profillerini de kullanma
     WAP sertifikaları hakkında bilgi için, [Web Uygulaması Ara Sunucusu Kullanarak Uygulama Yayınlamayı Planlama](https://technet.microsoft.com/library/dn383650.aspx) konusunun **Sertifikaları planlama** bölümüne bakın. WAP sunucuları hakkında genel bilgi için bkz. [Web Uygulaması Ara Sunucusu ile çalışma](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
-### Sertifikalar ve Şablonlar
+### <a name="certificates-and-templates"></a>Sertifikalar ve Şablonlar
 
 |Nesne|Ayrıntılar|
 |----------|-----------|
@@ -58,16 +59,16 @@ Kuruluş Sertifika Yetkilisine ek olarak .PFX Sertifika profillerini de kullanma
 |**Güvenilen Kök CA sertifika**|Bunu sertifika veren CA'dan veya ona güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarabilir ve Güvenilen CA sertifika profilini kullanarak cihazlara dağıtabilirsiniz.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
 
 
-## Altyapınızı yapılandırın
+## <a name="configure-your-infrastructure"></a>Altyapınızı yapılandırın
 Sertifika profillerini yapılandırabilmeniz için önce aşağıdaki görevleri tamamlamanız gerekir. Bu görevler, Windows Server 2012 R2 ve Active Directory Sertifika Hizmetleri (ADCS) bilgisi gerektirir:
 
 - **Görev 1** - Sertifika yetkilisinde sertifika şablonları yapılandırma.
 - **Görev 2** - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma.
 
-### Görev 1 - Sertifika yetkilisinde sertifika şablonları yapılandırma
+### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Görev 1 - Sertifika yetkilisinde sertifika şablonları yapılandırma
 Bu görevde, sertifika şablonunu yayımlayacaksınız.
 
-##### Sertifika yetkilisini yapılandırmak için
+##### <a name="to-configure-the-certification-authority"></a>Sertifika yetkilisini yapılandırmak için
 
 1.  Sertifika veren CA'da, Sertifika Şablonları ek bileşenini kullanarak .PFX ile kullanılmak üzere yeni bir özel şablon oluşturun veya var olan bir şablonu (Kullanıcı şablonu gibi) kopyalayın ve düzenleyin.
 
@@ -75,7 +76,7 @@ Bu görevde, sertifika şablonunu yayımlayacaksınız.
 
     -   Şablon için kolay bir **Şablon görünen adı** belirtin.
 
-    -   **Konu Adı** sekmesinde, **İstekte sağla**'yı seçin. (Güvenlik, NDES için Intune ilke modülü tarafından zorunlu tutulur).
+    -   **Konu Adı** sekmesinde, **İstekte sağla**'yı seçin. 
 
     -   **Uzantılar** sekmesinde, **Uygulama İlkeleri Açıklaması** 'nın **İstemci Kimlik Doğrulaması**'nı içerdiğinden emin olun.
 
@@ -97,18 +98,18 @@ Bu görevde, sertifika şablonunu yayımlayacaksınız.
 
 3.  Sertifika veren CA'da, sertifika şablonunu yayımlamak için Sertifika Yetkilisi ek bileşenini kullanın.
 
-    a.  **Sertifika Şablonları** düğümünü seçin, **Eylem**--&gt; **Yeni** &gt; **Verilecek Sertifika Şablonu** öğesine tıklayın ve ardından 2. adımda oluşturduğunuz şablonu seçin.
+    a.  **Sertifika Şablonları** düğümünü seçin, **Eylem**-&gt; **Yeni** &gt; **Verilecek Sertifika Şablonu** öğesine tıklayın ve ardından 2. adımda oluşturduğunuz şablonu seçin.
 
     b.  Şablonu **Sertifika Şablonları** klasöründe görüntüleyerek yayımlandığını doğrulayın.
 
 4.  CA bilgisayarında, Intune Sertifika Bağlayıcısı’nı barındıran bilgisayarın, .PFX profili oluşturulurken kullanılan şablona erişebilmesi için kayıt izni olduğundan emin olun. CA bilgisayarı özelliklerindeki **Güvenlik** sekmesinde bu izni ayarlayın.
 
-### Görev 2 - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
+### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Görev 2 - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
 Bu görevde şunları yapacaksınız:
 
 Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
 
-##### Sertifika Bağlayıcısı desteğini etkinleştirmek için
+##### <a name="to-enable-support-for-the-certificate-connector"></a>Sertifika Bağlayıcısı desteğini etkinleştirmek için
 
 1.  [Intune yönetim konsolunu](https://manage.microsoft.com) açın ve **Yönetim** &gt; **Sertifika Bağlayıcısı**’nı seçin.
 
@@ -116,7 +117,7 @@ Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
 
 3.  **Sertifika Bağlayıcısı'nı Etkinleştir**'i ve ardından **Tamam**'ı seçin.
 
-##### Sertifika Bağlayıcısı'nı indirmek, yüklemek ve yapılandırmak için
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Sertifika Bağlayıcısı'nı indirmek, yüklemek ve yapılandırmak için
 
 1.  [Intune yönetim konsolunu](https://manage.microsoft.com) açın ve ardından **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **Sertifika Bağlayıcısı** &gt; **Sertifika Bağlayıcısı’nı İndir**’i seçin.
 
@@ -141,8 +142,6 @@ Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
 
     a. **Oturum Aç**'ı seçin ve Intune hizmet yöneticisi kimlik bilgilerinizi veya genel yönetim izni olan bir kiracı yöneticiye ait kimlik bilgilerini girin.
 
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
-
     b. **Gelişmiş** sekmesini seçin ve ardından Sertifika Yetkiliniz’de **Sertifikaları Yayımla ve Yönet** iznine sahip olan bir hesabın kimlik bilgilerini sağlayın.
 
     c. **Uygula**'yı seçin.
@@ -151,15 +150,12 @@ Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
 
 6.  Bir komut istemi açın ve **services.msc** yazın. **Enter** tuşuna basın, **Intune Bağlayıcısı Hizmeti**’ne sağ tıklayın ve **Yeniden Başlat**’ı seçin.
 
-Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403** hatası döndürmesi gereken aşağıdaki URL'yi girin:
 
-**http:// &lt;NDES_sunucunuzun_FQDN_değeri&gt;/certsrv/mscep/mscep.dll**
-
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Artık sertifika profillerinizi, [Sertifika profillerini yapılandırma](Configure-Intune-certificate-profiles.md) konusunda anlatıldığı şekilde yapılandırmaya hazırsınız.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

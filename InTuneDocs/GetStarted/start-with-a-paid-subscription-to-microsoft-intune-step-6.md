@@ -1,10 +1,11 @@
 ---
-title: "İlke oluşturma ve uygulama yayımlama | Microsoft Intune"
-description: "Intune aboneliğiniz için ilkeleri nasıl oluşturacağınız ve örnek bir uygulamayı nasıl yayımlayacağınız anlatılır."
+title: "İlkeleri ve uygulamaları dağıtma | Microsoft Intune"
+description: "Cihazların yönetim kaydı yapıldığında uygulanacak ilke ayarlarını ve uygulama dağıtımlarını etkinleştirebilirsiniz."
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,94 +14,57 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 0bf3eb60b60e8ad1c91d3010230a41ce5d863dfe
+ms.sourcegitcommit: 0d2a3e5c05180c1a3f2ee3bf91813df3b5fa7bc6
+ms.openlocfilehash: 679c49d135c9161ecae5db704a3f6c96add003dc
 
 
 ---
 
-# İlke oluşturma ve uygulama yayımlama
-Intune ilkeleri, mobil cihazlarda güvenlik ayarlarını denetlemenize, bilgisayarlar için Windows Güvenlik Duvarı ve Endpoint Protection ayarlarını korumanıza ve uygulamaları dağıtmanıza yardımcı olan ayarlar sağlar. [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) ve [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) konu başlıkları altında daha fazla bilgi bulabilirsiniz.
+# <a name="create-policies-and-publish-apps"></a>İlkeleri oluşturma ve uygulamaları yayımlama
+Uygulamaları Intune'a kaydetmeye başlamadan önce cihazların yönetimi kaydı yapıldığında dağıtılacak olan ilke ayarlarını ve uygulamaları etkinleştirebilirsiniz. Intune ilkeleri, mobil cihazlarda güvenlik ayarlarını denetlemenize, bilgisayarlar için Windows Güvenlik Duvarı ve Endpoint Protection ayarlarını korumanıza ve uygulamaları dağıtmanıza yardımcı olan ayarlar sağlar. Cihazlar Intune'a kaydolduğunda dağıtılacak ilkeleri yapılandırabilir ve uygulamaları ekleyebilirsiniz.
 
-Intune kullanarak iki uygulama yükleme türü gerçekleştirebilirsiniz. İlki, uygulamayı yönetilen bilgisayarlara otomatik olarak dağıtan **gerekli yüklemedir**. Diğeri, bir uygulamayı veya uygulama bağlantısını kullanıcıların uygulamayı bilgisayarlarına veya mobil cihazlarına yükleyip yüklememeyi seçebilmeleri için Intune Şirket Portalı’na dağıtan **kullanılabilir yüklemedir**.
+İlkeler ve uygulamalar platforma özgüdür.
 
-Aşağıdaki adımlar, bir mobil cihaz yapılandırma ilkesi ve bir Windows bilgisayar güvenlik duvarı ilkesi ayarlamanıza ve Skype’ı mobil cihazlar kaydolduktan sonra kullanılabilir bir yükleme olarak yapılandırmanıza yardımcı olur.
+## <a name="manage-device-settings"></a>Cihaz ayarlarını yönetme
 
-> [!TIP]
-> Yeni bir ilke ekleyip dağıttıktan sonra, ilkeyi dağıttığınız gruptaki tüm kullanıcılar veya cihazlar ayarları temel ilke olarak alır. Bu ilkelerin ayarlarını istediğiniz zaman İlke çalışma alanında gözden geçirebilir ve düzenleyebilirsiniz.
+ Cihaz ilkesi ayarları platforma göre yapılandırılır ve yönetilir. Aşağıdaki platformlar için ilke yapılandırması gerçekleştirebilirsiniz:
 
+- [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+- [Android ve Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
+- [Windows 10 (masaüstü ve mobil)](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- [Windows 8.1](https://docs.microsoft.com/intune/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
+- [Windows Phone 8.1](https://docs.microsoft.com/intune/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
+- [Windows Ekibi](https://docs.microsoft.com/intune/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
+- [Intune istemci yazılımını çalıştıran Windows bilgisayarlar](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
 
-## Bir mobil cihaz yapılandırma ilkesi oluşturma ve dağıtma
+[Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) hakkında daha fazla bilgi edinebilirsiniz.
 
-1.  [Intune Yönetim Konsolu](https://manage.microsoft.com/)'nu açın.
+## <a name="add-and-deploy-apps"></a>Uygulama ekleme ve dağıtma
 
-2.  Sol bölmede **İlke** simgesini seçin.
+Intune'a eklediğiniz uygulamaları yönetilen cihazlara dağıtmak için kullanabileceğiniz iki yöntem vardır:
+- **Gerekli yükleme** - Uygulamalar yönetilen cihazlara otomatik olarak yüklenir
+- **Kullanılabilir yükleme** - Uygulamalar Intune Şirket Portalı'nda görüntülenir ve kullanıcılar cihazlarına yüklemek istedikleri uygulamaları seçebilir
 
-    ![admin-console-policy-workspace](./media/policy.png)
+### <a name="add-apps"></a>Uygulamaları ekleme
 
-3.  **İlkeye Genel Bakış** sayfasındaki **Görevler** listesinde, **İlke Ekle**'yi seçin.
+Öncelikle aşağıdaki yöntemlerden birini kullanarak uygulamaları Intune'a eklemeniz gerekir:
+- [Kaydolmuş cihazlar için uygulama ekleme](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)
+- [Intune istemci yazılımı bilgisayarları için uygulama ekleme](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)
 
-4.  İlke listesinde, ilke oluşturmak istediğiniz platformu genişletin ve ardından **Genel Yapılandırma** > **Önerilen Ayarlarla İlke Oluştur ve Dağıt** > **İlke Oluştur**’u seçin.
+### <a name="deploy-apps"></a>Uygulama dağıtma
 
-> [!NOTE]
-> Cihaz yapılandırma ilkeleri için önerilen ayarlar sağlanmaz çünkü aralarından seçim yapabileceğiniz birçok seçenek vardır. Özel bir cihaz yapılandırma ilkesi oluşturmanız gerekir.
+Intune'a eklenen uygulamaları yönetilen cihazlara dağıtabilirsiniz:
+- [Uygulamaları cihazlara dağıtma](https://docs.microsoft.com/intune/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
+- Toplu satın alınan uygulamaları dağıtma:
+    - [iOS - Toplu Satın Alma Programı](https://docs.microsoft.com/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+    - [İş için Windows Mağazası](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+    - [Android for Work](https://docs.microsoft.com/en-us/Intune/deploy-use/android-for-work-apps)
 
-
-5.  **Bu ilkeyi dağıtmak istediğiniz grupları seçmeniz** istendiğinde, kullanılabilir gruplar listesinden bir grup seçin ve sonra **Ekle** > **Tamam**’ı seçin.
-
-İlkeniz, yapılandırma ilkeleri listesinde görüntülenir ve **Intune Kullanıcıları** grubuna dağıtılmış olur. Ayarlarını görüntülemek için ilkeye çift tıklayın.
-
-## Mobil cihazlar için Skype uygulamasını yayımlama
-
-1.  [Intune yönetim konsolunda](https://manage.microsoft.com/), **Uygulamalar** simgesini ve sonra **Uygulamalar** > **Uygulama Ekle**’yi seçin. İstenirse, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kimlik bilgilerinizi girin.
-
-    ![admin-console-apps-workspace](./media/apps.png)
-
-    > [!NOTE]
-    > **Intune Software Publisher** 'ı ilk kez başlattığınızda, uygulama yüklenirken kısa bir gecikme oluşur.
-
-2.  Güvenlik uyarısını gözden geçirin ve **Çalıştır**'ı seçin.
-
-3.  **Başlamadan önce** sayfasında **İleri**'yi seçin.
-
-4.  **Yazılım kurulumu** sayfasındaki **Bu yazılımın cihazlar için nasıl kullanılabilir hale getirileceğini seçin** bölümünden **Dış bağlantı**'yı seçin.
-
-5.  **URL'yi belirtin**bölümünde, yazılıma ait dış bağlantıyı girin ve ardından **İleri**'yi seçin. URL’nin başına **http://** yazdığınızdan emin olun. Skype uygulaması için, kullandığınız mobil cihaz platformuyla eşleşen aşağıdaki bağlantıyı kullanın:
-
-    -   **iOS:**   [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
-
-    -   **Android:**  [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
-
-    -   **Windows Phone 8 veya Windows Phone 8.1:**  [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
-
-6.  **Yazılım açıklaması** sayfasında, kullanıcıların Şirket Portalı’nda yazılım için görmesini istediğiniz bilgileri sağlayın ve ardından **İleri**'yi seçin. Aşağıdaki ayarlar kullanılabilir (bu örnek, Skype'a atıfta bulunmaktadır):
-
-    -   **Yayımcı:** Yayımcının adını girin ("Microsoft"):
-
-    -   **Ad:** **Skype** girin.
-
-    -   **Açıklama:** Yazılım için bir açıklama girin; örn. **Skype iletişim uygulaması**
-
-    -   **Kategori:** Bu yazılıma en uygun kategoriyi seçin, örneğin **Birlikte çalışma**
-
-    -   **Şirket portalında bu uygulamayı öne çıkan uygulama olarak görüntüle ve vurgula:** Uygulamayı mobil cihazlardaki Şirket Portalı’nda öne çıkarmak için bu seçeneği belirleyin.
-
-    -   **Simge:** Yazılımla bir simge ilişkilendirmek isteyip istemediğinizi seçin. İsteğe bağlı simge için boyut üst sınırı 250 x 250 pikseldir ve önerilen boyut da 32 x 32 pikseldir.
-
-7.  **Özet** sayfasında, yazılım bilgilerini doğrulayın ve ardından **Karşıya yükle**'yi seçin. Sihirbazdan çıkmak için **Kapat**’ı seçin.
-
-8.  [Intune yönetim konsolunda](https://manage.microsoft.com/) **Uygulamalar** > **Uygulamalar** > **Skype** > **Dağıtımı Yönet**’i seçin.
-
-9. **Grup Seç** sayfasında, **Intune Kullanıcıları**’nı seçerek yazılımı bu kullanıcı grubuna dağıtın ve ardından **Ekle** > **İleri**’yi seçin.
-
-10. **Dağıtım Eylemi** sayfasında, **Onay** sütunundan grubunuz için **Kullanılabilir Yükleme** 'yi seçin.
-
-11. **Son**’u seçin.
-
-Skype uygulaması artık Şirket Portalı’ndan mobil cihazlara yüklenebilir, ancak önce [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] yazılımını bilgisayarlara ve mobil cihazlara yüklemeniz gerekir.
+    Dağıtılacak uygulamaları ekledikten sonra [uygulamaları yapılandırabilir](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune) ve [uygulamaları izleyebilirsiniz](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune).
 
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Tebrikler! *Intune hızlı başlangıç kılavuzunun* 6. adımını tamamlamış oldunuz.
 
 >[!div class="step-by-step"]
@@ -109,6 +73,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 6. adımını tamamlamış
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 
