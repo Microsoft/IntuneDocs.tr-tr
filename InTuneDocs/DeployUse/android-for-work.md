@@ -4,15 +4,15 @@ description: "Intune, kullanıcılar iş için Android cihazlarını kullandıkl
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: aafeb58e28144740540a765ac04de68b41ae5ce5
+ms.sourcegitcommit: 83914246bde673b188ca3f7d9cf50b4d0de2edd4
+ms.openlocfilehash: 127db326fc96625c719b8136964bae014a904b3d
 
 
 ---
@@ -43,7 +43,7 @@ Uygulamalar kullanıcı etkileşimi olmadan ve kullanıcının **Bilinmeyen Kayn
 
 ## <a name="app-configuration"></a>Uygulama yapılandırması
 
-Android for Work, uygulama yapılandırma değerlerini bunları destekleyen uygulamalara dağıtmak için bir altyapı sağlar. İş uygulamaları için yapılandırma değerlerini belirterek, kullanıcılar uygulamayı ilk kez başlattığında bunların düzgün ayarlandığından emin olursunuz. Uygulama yapılandırması desteği için uygulama geliştiricilerinin kendi Android uygulamalarını yönetilen yapılandırma değerlerini spesifik olarak destekleyecek şekilde oluşturmaları gerekir. Eğer öyleyse, bu yapılandırma ayarlarını belirtmek ve uygulamak için Intune kullanabilirsiniz. [Android for Work uygulama yapılandırma ayarları](deploy-use/afw-app-configuration-policy.md) hakkında daha fazla bilgi edinin.
+Android for Work, uygulama yapılandırma değerlerini bunları destekleyen uygulamalara dağıtmak için bir altyapı sağlar. İş uygulamaları için yapılandırma değerlerini belirterek, kullanıcılar uygulamayı ilk kez başlattığında bunların düzgün ayarlandığından emin olursunuz. Uygulama yapılandırması desteği için uygulama geliştiricilerinin kendi Android uygulamalarını yönetilen yapılandırma değerlerini spesifik olarak destekleyecek şekilde oluşturmaları gerekir. Eğer öyleyse, bu yapılandırma ayarlarını belirtmek ve uygulamak için Intune kullanabilirsiniz. [Android for Work uygulama yapılandırma ayarları](afw-app-configuration-policy.md) hakkında daha fazla bilgi edinin.
 
 ## <a name="email-configuration"></a>E-posta yapılandırması
 
@@ -77,7 +77,7 @@ Geleneksel Android yönetimi için kullanılabilir olan sertifika profili yapıl
 
 [Sertifika profilleri](secure-resource-access-with-certificate-profiles.md) hakkında daha fazla bilgi edinin.
 
-## <a name="wifi-profiles"></a>Wi-Fi profilleri
+## <a name="wi-fi-profiles"></a>Wi-Fi profilleri
 
 Cihaz devre dışı bırakıldığında ve iş profili silindiğinde Android for Work tarafından yönetilen Wi-Fi profillerinin kaldırılması garanti altına alınır. [Wi-Fi profilleri](wi-fi-connections-in-microsoft-intune.md) hakkında daha fazla bilgi edinin.
 
@@ -87,6 +87,6 @@ Cihaz devre dışı bırakıldığında ve iş profili silindiğinde Android for
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 

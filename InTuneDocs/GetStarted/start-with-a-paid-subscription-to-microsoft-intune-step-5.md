@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ Intune’daki gruplar, cihazlarınızı ve kullanıcılarınızı yönetmek içi
 
 >[!IMPORTANT]
 >
->Intune portalında Gruplar çalışma alanını açar ve Azure Active Directory portalına bağlantı içeren **Intune kullanıcı grupları artık Azure Active Directory'de gruplar olarak yönetiliyor** iletisi görürseniz, Intune'da grup yönetimi için *yeni* Azure AD güvenlik gruplarını kullanıyorsunuz demektir. Grup oluşturmayı öğrenmek için bkz. [Azure Active Directory'de grupları yönetme](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups).
+>Intune portalında Gruplar çalışma alanını açar ve Azure Active Directory portalına bağlantı içeren **Intune kullanıcı grupları artık Azure Active Directory'de gruplar olarak yönetiliyor** iletisi görürseniz, Intune'da grup yönetimi için *yeni* Azure AD güvenlik gruplarını kullanıyorsunuz demektir. Grup oluşturmayı öğrenmek için bkz. [Azure Active Directory'de grupları yönetme](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
 >
 >Azure AD portalı bağlantısını görmüyorsanız, grup yönetimi için Intune portalını kullanıyorsunuz demektir.
 
@@ -89,6 +89,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* 5. adımını tamamlamış
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
