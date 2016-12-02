@@ -14,8 +14,8 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 040413b59c81c20cf579660a83acebc494c0a1b9
+ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.openlocfilehash: 8b19cb740ed34b479fa8c4f5e2c1d13f13cda1f4
 
 
 ---
@@ -40,7 +40,7 @@ Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamasına y
 
     -   **Cihaz ayrıntılarını el ile ekle** - En fazla 15 cihazın IMEI numarasını ve cihaz ayrıntılarını girin.
 
-   *Ayrıntılar*, bir cihazın ilişkilendirildiği IMEI numarasını belirleyebilmeniz için yönetim kullanımına yöneliktir. Bu bilgiler cihaza gönderilmez, ancak Intune konsolunda görünür.
+   *Ayrıntılar* alanı yönetimsel kullanım içindir. Donanım kimliğine göre listelenen Şirkete ait cihazlar listesinde cihazı belirlemeye yardımcı olacak ayrıntılar belirtebilirsiniz. Bu bilgiler cihaza gönderilmez, ancak Intune konsolunda görünür.
 
 2.   **İleri**’yi seçin.
 3.  **Cihazları Gözden Geçir** bölmesinde, içeri aktarılan cihaz IMEI numaralarını onaylayabilirsiniz. Ayrıca, yeniden içeri aktarılmakta olan IMEI numaraları için **Ayrıntılar**’ın üzerine yazıp yazmayacağınıza karar verebilirsiniz. Geçerli ayrıntıları korumak için **Üzerine Yaz** kutusunun işaretini kaldırabilirsiniz. IMEI numaralarını içeri aktarmak için **Son**’u seçin.
@@ -50,6 +50,6 @@ IMEI numarasına sahip cihaz Intune’a kaydedilirken, genellikle bir kullanıc�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

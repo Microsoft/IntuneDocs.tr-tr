@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
+ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
+ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
@@ -25,6 +25,7 @@ Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Aşa
 
 |Platform|Uzaktan kilitleme|
 |------------|---------------|
+|Mac OS|Desteklenmez|
 |iOS|Desteklenir|
 |Android|Desteklenir|
 |Windows 10 ve Windows 10 Mobile|Desteklenir|
@@ -50,12 +51,14 @@ Bir kullanıcı geçiş kodunu unutursa, cihazdan geçiş kodunu kaldırarak vey
 
 |Platform|Geçiş kodu sıfırlama|
 |------------|------------------|
+|Mac OS|Desteklenmez|
 |iOS|Bir cihazdan parolayı temizlemek için desteklenir. Yeni bir geçici parola oluşturmaz.|
 |Android|Android 7.0'den önceki sürümlerde desteklenir. Geçici bir geçiş kodu oluşturur.|
 |Windows 10 Mobile|Desteklenir|
 |Windows Phone 8 ve Windows Phone 8.1|Desteklenir|
-|Windows RT 8.1 ve Windows RT|Desteklenmez|
+|Windows RT 8.1|Desteklenmez|
 |Windows 8.1|Desteklenmez|
+|Windows 10 masaüstü|Desteklenmez|
 
 Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için geçiş kodu sıfırlaması desteklenmez.
 
@@ -76,6 +79,6 @@ Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için geçiş ko
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

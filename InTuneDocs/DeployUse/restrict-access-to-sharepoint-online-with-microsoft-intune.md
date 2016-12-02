@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ab341e0b80f1b8a19c434a2fd4f0c78acab77fe4
-ms.openlocfilehash: f0bbc66b87a555e3607effa820fc3b5534923729
+ms.sourcegitcommit: 4f6e7525ae2a125851ad402644d5fbc8767c77dc
+ms.openlocfilehash: 9bfc8886b464452f8fe35d4b740607ef3bc07a71
 
 
 ---
 
-# Microsoft Intune’la SharePoint Online’a erişimi kısıtlama
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Microsoft Intune’la SharePoint Online’a erişimi kısıtlama
 SharePoint Online’da bulunan dosyalara erişimi denetlemek için [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] koşullu erişimini kullanın.
 Koşullu erişim iki bileşenden oluşur:
 - Cihazın uyumlu kabul edilmesi için uyması gereken cihaz uyumluluk ilkesi.
@@ -55,12 +55,12 @@ Bir koşul karşılanmazsa, oturum açtığında kullanıcıya şu iletilerden b
 
 -   Cihaz uyumlu değilse, kullanıcıyı sorunla ve sorunun nasıl çözüleceğiyle ilgili bilgileri bulabileceği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Şirket Portalı web sitesine yönlendiren bir ileti görüntülenir.
 
-**Koşullu erişim, tüm SharePoint siteleri genelinde zorunlu tutulur ve dış paylaşım engellenir.**
+**Koşullu erişim şirket dışı paylaşım için geçerli değildir**. Kiracınız veya site koleksiyonunuz için şirket dışı paylaşımı nasıl engelleyeceğinizi öğrenmek için bkz. [SharePoint Online ortamınız için şirket dışı paylaşımı yönetme](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 >[!NOTE]
 >SharePoint Online için koşullu erişimi etkinleştirirseniz, [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) konu başlığı altında açıklandığı gibi listede etki alanını devre dışı bırakmanızı öneririz.  
 
-## Mobil cihaz desteği
+## <a name="support-for-mobile-devices"></a>Mobil cihaz desteği
 - iOS 8.0 ve üzeri
 - Android 4.0 ve üzeri ile Samsung KNOX Standard 4.0 veya üzeri
 - Windows Phone 8.1 ve üzeri
@@ -72,7 +72,7 @@ Bir koşul karşılanmazsa, oturum açtığında kullanıcıya şu iletilerden b
 
 **Desteklenmeyen tarayıcılar engellenir**.
 
-## Bilgisayarlar için destek
+## <a name="support-for-pcs"></a>Bilgisayarlar için destek
 - Windows 8.1 ve üzeri (Intune’a kaydedildiğinde)
 - Windows 7.0, Windows 8.1 veya Windows 10 (etki alanına katıldığında),
 > [!NOTE]
@@ -92,9 +92,9 @@ AAD DRS, Intune ve Office 365 müşterileri için otomatik olarak etkinleştiril
     Modern kimlik doğrulama, Office 2013 Windows istemcileri için Active Directory Authentication Library (ADAL) tabanlı oturum açma özelliği sunar ve **çok faktörlü kimlik doğrulaması** ile **sertifika tabanlı kimlik doğrulaması** gibi daha üst düzey güvenlik sağlar.
 
 
-## SharePoint Online için koşullu erişimi yapılandırma
+## <a name="configure-conditional-access-for-sharepoint-online"></a>SharePoint Online için koşullu erişimi yapılandırma
 
-### Adım 1: Active Directory güvenlik gruplarını yapılandırma
+### <a name="step-1-configure-active-directory-security-groups"></a>Adım 1: Active Directory güvenlik gruplarını yapılandırma
 Başlamadan önce koşullu erişim ilkesi için Azure Active Directory güvenlik gruplarını yapılandırın.  **Office 365 yönetici merkezi**‘nde veya **Intune hesap portalı**‘nda bu grupları yapılandırabilirsiniz. Bu gruplar, ilkede kullanıcıları hedeflemek veya muaf tutmak için kullanılır. Bir kullanıcı bir ilke tarafından hedeflendiğinde, kaynaklara erişmek için kullandıkları her bir cihaz uyumlu olmalıdır.
 
 Bir SharePoint Online ilkesinde iki grup türü belirtebilirsiniz:
@@ -105,7 +105,7 @@ Bir SharePoint Online ilkesinde iki grup türü belirtebilirsiniz:
 
 Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 
-### Adım 2: Uyumluluk ilkesi yapılandırma ve dağıtma
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Adım 2: Uyumluluk ilkesi yapılandırma ve dağıtma
 Bunu zaten yapmadıysanız, bir uyumluluk ilkesi oluşturun ve bu ilkeyi SharePoint Online ilkesinde hedeflenecek olan kullanıcılara dağıtın.
 
 > [!NOTE]
@@ -118,7 +118,7 @@ Uyumluluk ilkesini yapılandırma ayrıntıları için bkz. [uyumluluk ilkesi ol
 
 Hazır olduğunuzda **3. Adım**’a ilerleyin.
 
-### Adım 3: SharePoint Online ilkesini yapılandırma
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>Adım 3: SharePoint Online ilkesini yapılandırma
 İlkeyi yalnızca yönetilen ve uyumlu cihazların SharePoint Online’a erişebileceği şekilde yapılandırın. Bu ilke Azure Active Directory’de depolanır.
 
 #### <a name="bkmk_spopolicy"></a>
@@ -162,13 +162,13 @@ Hazır olduğunuzda **3. Adım**’a ilerleyin.
   3.    **Tarayıcı Erişimi Etkinleştir** düğmesine basın.
   4.  Chrome tarayıcıda, Office 365 oturumunu kapatın ve Chrome’u yeniden başlatın.
 
-  **iOS ve Android** platformlarında, Cihazın hizmete erişmek için kullanıldığını belirlemek için, Azure Active Directory, cihaza bir Aktarım katmanı güvenliği (TLS) sertifikası yayımlar.  Cihaz, sertifikayı, aşağıdaki ekran görüntülerinde görüleceği gibi son kullanıcıya sertifikayı seçmesi için bir istemle ekrana getirir. Son kullanıcı, tarayıcıyı kullanmaya devam edebilmesi için önce bu sertifikayı seçmelidir.
-
-  **iOS**
-
-  ![ipad cihazında sertifika istemi ekran görüntüsü](../media/mdm-browser-ca-ios-cert-prompt.png)
+  **iOS ve Android** platformlarında, Cihazın hizmete erişmek için kullanıldığını belirlemek için, Azure Active Directory, cihaza bir Aktarım katmanı güvenliği (TLS) sertifikası yayımlar.  Cihaz, sertifikayı, aşağıdaki ekran görüntülerinde görüleceği gibi son kullanıcıya sertifikayı seçmesi için bir istemle ekrana getirir. Son kullanıcının tarayıcıyı kullanmaya devam etmek için bu sertifikayı seçmesi gerekir.
 
   **Android**
+
+  ![bir iPad cihazda sertifika komut isteminin ekran görüntüsü](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Outlook Web Access (OWA)**
 
   ![Android cihazda sertifika istemi ekran görüntüsü](../media/mdm-browser-ca-android-cert-prompt.png)
 5.  **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Azure Active Directory güvenlik gruplarını seçmek için **Değiştir**’i seçin. Bunu tüm kullanıcılara veya yalnızca seçilmiş bir kullanıcı grubuna hedefleyebilirsiniz.
@@ -179,7 +179,7 @@ Hazır olduğunuzda **3. Adım**’a ilerleyin.
 
 Koşullu erişim ilkesini dağıtmanız gerekmez, hemen geçerli olur.
 
-### Adım 4: Uyumluluk ve koşullu erişim ilkelerini izleme
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>Adım 4: Uyumluluk ve koşullu erişim ilkelerini izleme
 **Gruplar** çalışma alanında, cihazlarınızın durumunu görüntüleyebilirsiniz.
 
 Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aşağıdaki **Filtreler**arasından birini seçin:
@@ -190,11 +190,11 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 
 -   **AAD ile kayıtlı ve uyumlu cihazlar** : Bu cihazlar SharePoint Online’a erişebilir.
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ile e-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

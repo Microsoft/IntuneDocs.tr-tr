@@ -2,7 +2,8 @@
 title: "Cihaz kayıt yöneticisine kaydolma | Microsoft Intune"
 description: "Cihaz kayıt yöneticisi (DEM) hesabı, paylaşılan, şirkete ait çok sayıda mobil cihazı tek bir kullanıcı hesabı ile yönetebilir."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
+ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.openlocfilehash: 83b89d06793f6f3934537408fb600b3b89afd35b
 
 
 ---
 
 
-# Şirkete ait cihazları Microsoft Intune'daki cihaz kayıt yöneticisi ile kaydetme
-Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek için Intune'u kullanabilir. *Cihaz kayıt yöneticisi* (DEM) hesabı, en fazla 1.000 cihazı kaydedebilen özel bir Intune hesabıdır. Bu hesap aracılığıyla kaydedilen cihazları, kişisel ("KCG") cihazlar olarak değil paylaşılan cihazlar olarak kullanmanızı öneririz. Kullanıcılar, örneğin "yerel" e-posta uygulamalarını kullanamayacaktır.
+# <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Şirkete ait cihazları Microsoft Intune'daki cihaz kayıt yöneticisi ile kaydetme
+Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek için Intune'u kullanabilir. *Cihaz kayıt yöneticisi* (DEM) hesabı, en fazla 1.000 cihazı kaydedebilen özel bir Intune hesabıdır. Kaydedilen her cihaz tek bir lisans kullanır. Bu hesap aracılığıyla kaydedilen cihazları, kişisel ("KCG") cihazlar olarak değil paylaşılan cihazlar olarak kullanmanızı öneririz. Kullanıcılar, örneğin "yerel" e-posta uygulamalarını kullanamayacaktır. DEM lisanslaması cihaz başına olup, kullanıcı başına değildir.
 
 Örnek olarak, bir cihaz kayıt yöneticisi kullanıcı hesabını aşağıdakileri yapmaları için bir mağaza yöneticisine veya gözetmene atayabilirsiniz:
 
@@ -50,10 +51,10 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
 > Cihaz kayıt yöneticisiyle yönetilen cihazlara şirket uygulaması dağıtmak için Şirket Portalı uygulamasını cihaz kayıt yöneticisinin kullanıcı hesabına **Gerekli Yükleme** olarak dağıtın.
 > Performansı geliştirmek amacıyla, DEM cihazında Şirket Portalı uygulaması görüntülendiğinde yalnızca yerel cihaz gösterilir. Diğer DEM cihazlarının uzaktan yönetimi, yalnızca Intune yönetici konsolundan gerçekleştirilebilir.
 
-## Cihaz kayıt yöneticisi hesapları oluşturma
+## <a name="create-device-enrollment-manager-accounts"></a>Cihaz kayıt yöneticisi hesapları oluşturma
 Cihaz kayıt yöneticisi hesapları, şirkete ait çok sayıda cihazı kaydetme izni olan kullanıcı hesaplarıdır. Yalnızca Intune konsolundaki kullanıcılar cihaz kayıt yöneticileri olabilir.
 
-#### Intune'a cihaz kayıt yöneticisi ekleme
+#### <a name="add-a-device-enrollment-manager-to-intune"></a>Intune'a cihaz kayıt yöneticisi ekleme
 
 1.  [Microsoft Intune hesap portalına](http://go.microsoft.com/fwlink/?LinkId=698854) gidin ve yönetici hesabınızda oturum açın.
 
@@ -69,9 +70,9 @@ Cihaz kayıt yöneticisi hesapları, şirkete ait çok sayıda cihazı kaydetme 
 
 7.  Intune hesabının **Kullanıcı Kimliği**'ni girin ve ardından **Tamam**'ı seçin. Cihaz kayıt yöneticisi bir Intune yöneticisi olamaz.
 
-8.  Cihaz kayıt yöneticisi artık, bir son kullanıcının KCG senaryosu için Şirket Portalı’nda kullandığı yordamı kullanarak mobil cihaz kaydedebilir.
+8.  Cihaz kayıt yöneticisi artık, bir son kullanıcının KCG senaryosu için Şirket Portalı’nda kullandığı yordamı kullanarak mobil cihaz kaydedebilir. Yönetici son kullanıcı, Şirket Portalı uygulamasını yükleyip, kendi DEM kimlik bilgilerini en fazla 1000 cihaz üzerinde kullanarak cihazı kaydedebilir.
 
-## Delete a device enrollment manager from Intune
+## <a name="delete-a-device-enrollment-manager-from-intune"></a>Delete a device enrollment manager from Intune
 
 1.  [Microsoft Intune yönetici portalında](http://manage.microsoft.com) yönetici kimlik bilgilerinizle oturum açın.
 
@@ -95,6 +96,6 @@ Bir cihaz kayıt yöneticisinin silinmesi, kaydedilen cihazları etkilemez. Bir 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
