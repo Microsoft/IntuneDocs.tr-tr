@@ -15,7 +15,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
 
 
@@ -70,19 +70,19 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 |**Tanılama verilerinin gönderimine izin ver**|Cihazın Google’a tanılama bilgileri göndermesine izin verir.|Hayır|Evet|
 |**Fabrika sıfırlamasına izin ver**|Kullanıcının cihazda fabrika sıfırlaması gerçekleştirmesine izin verir.|Hayır|Evet|
 
-### <a name="cloud-settings-documents-and-data"></a>Bulut ayarları - belgeler ve veriler
+### <a name="cloud-settings---documents-and-data"></a>Bulut ayarları - belgeler ve veriler
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------------------|----------------|
 |**Google yedeklemesine izin ver**|Google yedeklemesi kullanmaya izin verir.|Hayır|Evet|
 
-### <a name="cloud-settings-accounts-and-synchronization"></a>Bulut ayarları - hesaplar ve eşitleme
+### <a name="cloud-settings---accounts-and-synchronization"></a>Bulut ayarları - hesaplar ve eşitleme
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
 |**Google hesabı otomatik eşitlemesine izin ver**|Google hesabı ayarlarının otomatik olarak eşitlenmesine izin verir.|Hayır|Evet|
 
-### <a name="application-settings-browser"></a>Uygulama ayarları - tarayıcı
+### <a name="application-settings---browser"></a>Uygulama ayarları - tarayıcı
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
@@ -92,13 +92,13 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 |**Tanımlama bilgilerine izin ver**|Cihazın web tarayıcısının tanımlama bilgileri kullanmasına izin verir.|Hayır|Evet|
 |**Etkin betik yazmaya izin ver**|Cihazın web tarayıcısının etkin betik kullanmasına izin verir.|Hayır|Evet|
 
-### <a name="application-settings-apps"></a>Uygulama ayarları - uygulamalar
+### <a name="application-settings---apps"></a>Uygulama ayarları - uygulamalar
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
 |**Google Play mağazasına izin ver**|Kullanıcının cihazda Google Play mağazasına erişmesine izin verir.|Hayır|Evet|
 
-### <a name="device-capabilities-settings-hardware"></a>Cihaz özellikleri ayarları - donanım
+### <a name="device-capabilities-settings---hardware"></a>Cihaz özellikleri ayarları - donanım
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
@@ -111,7 +111,7 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 |**Bluetooth'a izin ver**|Cihazda Bluetooth özelliğinin kullanımına izin verir.|Hayır|Evet|
 |**Kapatmaya izin ver**|Kullanıcının cihazı kapatmasına izin verir.<br /><br />Bu ayar devre dışı bırakılırsa, Samsung KNOX Standard cihazları için **Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatalarının sayısı** ayarı çalışmaz.|Hayır|Evet|
 
-### <a name="device-capabilities-settings-cellular"></a>Cihaz özellikleri ayarları - cep telefonu
+### <a name="device-capabilities-settings---cellular"></a>Cihaz özellikleri ayarları - cep telefonu
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
@@ -119,7 +119,7 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 |**Veri dolaşımına izin ver**|Cihaz cep telefonu şebekesindeyken veri dolaşımına izin verir.|Hayır|Evet|
 |**SMS/MMS iletilerine izin ver**|Cihazda SMS ve MMS mesajlaşması kullanımına izin verir.|Hayır|Evet|
 
-### <a name="device-capabilities-settings-features"></a>Cihaz özellikleri ayarları - özellikler
+### <a name="device-capabilities-settings---features"></a>Cihaz özellikleri ayarları - özellikler
 
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
@@ -188,7 +188,7 @@ Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarları
     |**Ad**|Intune konsolunda tanımlamanıza yardımcı olması için Android özel ilkesine benzersiz bir ad girin.|
     |**Açıklama**|Android özel ilkesine genel bakış ve onu bulmanıza yardımcı olacak diğer ilgili bilgileri sunan bir açıklama sağlayın.|
 
-### <a name="omauri-settings"></a>OMA-URI ayarları
+### <a name="oma-uri-settings"></a>OMA-URI ayarları
 
    |Ayar adı|Ayrıntılar|
     |--------|--------------------|

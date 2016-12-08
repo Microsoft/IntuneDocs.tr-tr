@@ -15,7 +15,7 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
 
 
@@ -77,7 +77,7 @@ Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarları
     |**Ad**|Intune konsolunda tanımlamanıza yardımcı olması için Android özel ilkesine benzersiz bir ad girin.|
     |**Açıklama**|Android özel ilkesine genel bakış ve onu bulmanıza yardımcı olacak diğer ilgili bilgileri sunan bir açıklama sağlayın.|
 
-### <a name="omauri-settings"></a>OMA-URI ayarları
+### <a name="oma-uri-settings"></a>OMA-URI ayarları
 
    |Ayar adı|Ayrıntılar|
     |--------|--------------------|
