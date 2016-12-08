@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 11/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f287a0ad082fa20a2e84abbf8f5585117aae6f57
-ms.openlocfilehash: e604b8809bd444d9069d449a6c691a8444296623
+ms.sourcegitcommit: 6dd584397451d38be86fa0780efff435ffb9b2af
+ms.openlocfilehash: d70ebf87bc930f853741ddc0d572d2174c636dac
 
 
 ---
@@ -51,6 +51,13 @@ Belirli bir kullanıcı grubu Azure Active Directory’de Microsoft Intune Kayd�
 ### <a name="conditional-access-for-mam-with-sharepoint-online---vso-679339--"></a>SharePoint Online ile MAM için koşullu erişim <!--VSO 679339-->
 Intune mobil uygulama yönetimi (MAM) ilkeleri tarafından desteklenmeyen uygulamaların SharePoint Online’a erişmesini engelleyebilirsiniz.  Azure portalında Intune mobil uygulama yönetimini kullanarak başlayabilirsiniz. __Ayarlar__ dikey penceresinde SharePoint Online ile ilgili seçeneği içeren __Koşullu Erişim__ kısmını arayın. Bu özellik, hizmet sürümünün geri kalanından ayrı olarak sevk edilir.
 
+### <a name="ability-to-restrict-intune-mobile-device-enrollment"></a>Intune mobil cihaz kaydını kısıtlama özelliği
+Intune, katılmasına izin verilecek mobil cihaz platformlarını denetleyen yeni kayıt kısıtlamaları ekliyor. Intune, mobil cihaz platformlarını iOS, macOS, Android, Windows ve Windows Mobile şeklinde ayırıyor. 
+* macOS ve Windows 8.1 veya üzerinin mobil cihaz platformu olarak kaydedilmesi kısıtlanabilir. 
+* Mobil cihaz kaydının kısıtlanması, bilgisayar aracısı kaydını etkilemez. 
+* Yalnızca iOS için kişisel cihazların kaydedilmesini engelleyen ek seçenek vardır. Intune, BT yöneticileri [bu makalede](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices) anlatılan şekilde kuruluş cihazı olarak işaretlemediği sürece tüm yeni cihazları kişisel cihaz olarak işaretler.
+
+
 ## <a name="notices"></a>Bildirimler
 
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>Kayıt sırasında Multi-Factor Authentication, Azure portalına taşınıyor <!--VSO 750545-->
@@ -82,6 +89,6 @@ Son geliştirmelere ilişkin ayrıntılar için bkz. [Microsoft Intune’daki Ye
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
