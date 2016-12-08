@@ -14,7 +14,7 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24411fdefa3f1e4e89c66d23448360934a5de7c7
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
 
 
@@ -133,7 +133,7 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 |**Microsoft hesabını Windows Mail uygulamasında isteğe bağlı hale getir**|Evet|Hayır|Hayır|Hayır|Hayır|
 |**Özel e-posta hesaplarına izin ver**|Hayır|Hayır|Yalnızca Windows Phone 8.1|Hayır|Hayır|
 
-## <a name="application-settings-browser"></a>Uygulama ayarları - tarayıcı
+## <a name="application-settings---browser"></a>Uygulama ayarları - tarayıcı
 
 |Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -154,7 +154,7 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 |**Kuruluş Modu menüsü erişimine izin ver**|Evet|Hayır|Hayır|Hayır|Hayır|
 |**Kurumsal Mod site listesi konumu**|Evet|Hayır|Hayır|Hayır|Hayır|
 
-## <a name="application-settings-apps"></a>Uygulama ayarları - uygulamalar
+## <a name="application-settings---apps"></a>Uygulama ayarları - uygulamalar
 
 |Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -167,14 +167,14 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 |**Medya mağazasında yetişkinlere yönelik içeriğe izin ver**|Hayır|Hayır|Hayır|Evet|Hayır|
 |**Uygulama yüklemesine izin ver**|Hayır|Hayır|Hayır|iOS 6 ve üzeri|Hayır|
 
-## <a name="application-settings-gaming"></a>Uygulama ayarları - oyun
+## <a name="application-settings---gaming"></a>Uygulama ayarları - oyun
 
 |Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Game Center arkadaşlarına izin ver**|Hayır|Hayır|Hayır|Evet|Hayır|
 |**Çok oyunculu oyunlara izin ver**|Hayır|Hayır|Hayır|Evet|Hayır|
 
-## <a name="device-capabilities-settings-hardware"></a>Cihaz özellikleri ayarları - donanım
+## <a name="device-capabilities-settings---hardware"></a>Cihaz özellikleri ayarları - donanım
 
 |Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -189,7 +189,7 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 |**Bluetooth'a izin ver**|Hayır|Hayır|Yalnızca Windows Phone 8.1|Hayır|Evet (Yalnızca Samsung KNOX Standard)|
 |**Kapatmaya izin ver**<br>Bu ayar devre dışı bırakılırsa, Samsung KNOX Standard cihazları için **Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatalarının sayısı** ayarı çalışmaz.|Hayır|Hayır|Hayır|Hayır|Evet (Yalnızca Samsung KNOX Standard)|
 
-## <a name="device-capabilities-settings-cellular"></a>Cihaz özellikleri ayarları - cep telefonu
+## <a name="device-capabilities-settings---cellular"></a>Cihaz özellikleri ayarları - cep telefonu
 
 |Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -198,7 +198,7 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 |**Dolaşım sırasında otomatik eşitlemeye izin ver**|Hayır|Hayır|Hayır|Evet|Hayır|
 |**SMS/MMS iletilerine izin ver**|Hayır|Hayır|Hayır|Hayır|Evet (Yalnızca Samsung KNOX Standard)|
 
-## <a name="device-capabilities-settings-features"></a>Cihaz özellikleri ayarları - özellikler
+## <a name="device-capabilities-settings---features"></a>Cihaz özellikleri ayarları - özellikler
 
 |Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
