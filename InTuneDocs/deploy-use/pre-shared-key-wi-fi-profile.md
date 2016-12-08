@@ -14,13 +14,13 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 71237aabac763e33d7973d0d169291bd7fa1df32
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
 
 
 
 ---
-# <a name="use-a-custom-policy-to-create-a-wifi-profile-with-a-preshared-key"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel ilke kullanma
+# <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel ilke kullanma
 Intune'un **Özel Yapılandırmasını**, önceden paylaşılan anahtar ile Wi-Fi profili oluşturmak üzere kullanma Bu konuda, bir EAP tabanlı Wi-Fi profili oluşturmaya bir örnek de yer almaktadır.
 
 > [!NOTE]
@@ -58,7 +58,7 @@ Başına nokta karakterini eklediğinizden emin olun.
     > Bu ilke yalnızca kullanıcı gruplarına dağıtılabilir.
 
 Her cihaz daha sonra denetlediğinde, ilke uygulanır ve cihazda bir Wi-Fi profili oluşturulur. Cihaz ağa otomatik olarak bağlanabilecektir.
-## <a name="android-or-windows-wifi-profile"></a>Android veya Windows Wi-Fi profili
+## <a name="android-or-windows-wi-fi-profile"></a>Android veya Windows Wi-Fi profili
 
 Bir Android veya Windows Wi-Fi profili için XML kodu örneği aşağıdaki verilmiştir:
 
@@ -109,7 +109,7 @@ Bir Android veya Windows Wi-Fi profili için XML kodu örneği aşağıdaki veri
       </MSM>
     </WLANProfile>
 
-## <a name="eapbased-wifi-profile"></a>EAP tabanlı Wi-Fi profili
+## <a name="eap-based-wi-fi-profile"></a>EAP tabanlı Wi-Fi profili
 Bir EAP tabanlı Wi-Fi profili için bir XML kodu örneği aşağıdaki verilmiştir:
 
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -190,7 +190,7 @@ Bir EAP tabanlı Wi-Fi profili için bir XML kodu örneği aşağıdaki verilmi�
       </MSM>
     </WLANProfile>
 
-## <a name="create-the-xml-file-from-an-existing-wifi-connection"></a>XML dosyasını mevcut bir Wi-Fi bağlantısından oluşturun
+## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>XML dosyasını mevcut bir Wi-Fi bağlantısından oluşturun
 Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
 1. Kablosuz ağa bağlanmış veya bir kablosuz ağa yakın zamanda bağlanmış bir bilgisayarda şu klasörü açın: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid.
 

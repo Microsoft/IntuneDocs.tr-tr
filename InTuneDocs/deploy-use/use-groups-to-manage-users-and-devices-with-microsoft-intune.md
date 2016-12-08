@@ -14,7 +14,7 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
 
 
@@ -68,7 +68,7 @@ Gruplar deneyiminin daha iyi hale gelecek olmasına rağmen, kuruluşunuz Intune
 -   Gruplanmamış Kullanıcılar ve Gruplanmamış Cihazlar grupları desteklenmeyecektir. Bu grupların Intune'dan Azure AD'ye geçişini gerçekleştirmeyeceğiz.
 
 
-#### <a name="groupdependent-functionality"></a>Gruba bağlı işlevler
+#### <a name="group-dependent-functionality"></a>Gruba bağlı işlevler
 
 -   Hizmet Yöneticisi rolünün **Grupları yönetme** izinleri olmayacaktır.
 -   Exchange ActiveSync cihazlarını gruplandıramayacaksınız. Tüm EAS Yönetilen Cihazları grubunuz, gruptan rapor görünümüne dönüştürülecektir.
