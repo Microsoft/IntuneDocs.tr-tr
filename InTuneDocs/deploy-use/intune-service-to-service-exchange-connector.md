@@ -14,8 +14,8 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 4cee7aa4ee650f21c2ab6f9123976b2149141812
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: b6d67391b50954e591817610164d8fe80fda8fd5
 
 
 ---
@@ -30,7 +30,7 @@ Microsoft Intune ile Exchange Online veya yeni Exchange Online Dedicated hizmeti
 |Gereksinim|Daha fazla bilgi|
 |---------------|--------------------|
 |Exchange Online yapılandırılmış ve çalışıyor|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|Mobil cihaz yönetimi yetkilisi| [Mobil cihaz yönetimi yetkilisi olarak Microsoft Intune’u ayarlama](prerequisites-for-enrollment.md#set-mobile-device-management-authority)|
+|Mobil cihaz yönetimi yetkilisi| [Mobil cihaz yönetimi yetkilisi olarak Microsoft Intune’u ayarlama](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
 |Microsoft Exchange sürümü|Exchange Online veya yeni Exchange Online Dedicated hizmeti|
 |Active Directory eşitlemesi|Intune Bağlayıcısı’nı kullanabilmeniz için, önce [Active Directory eşitlemesini ayarlamalısınız](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3). Böylelikle yerel kullanıcılarınız ve güvenlik gruplarınız Azure Active Directory örneğinizle eşitlenir.|
 
@@ -65,6 +65,6 @@ Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirs
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

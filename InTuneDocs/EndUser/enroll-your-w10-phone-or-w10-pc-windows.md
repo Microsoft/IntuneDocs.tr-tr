@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,99 +14,45 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e0321b23bbbaaa16c28c23e56b5fbcaee0d3c24
-ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 3e6a4ca1e415eb56dd5792c8d9f6a9fe83f6d362
 
 
 ---
 
 
-# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune'a kaydetme
+# <a name="enroll-your-windows-10-devices-in-intune"></a>Windows 10 cihazlarınızı Intune'a kaydetme
 
-Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazlarınızı kaydedebilirsiniz. Cihazlarınızın kaydedilmesi kuruluşunuzda şirket verilerinin güvenli tutulabilmesini sağlar. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [BT yöneticinizin cihazınızda görebilecekleri ve göremeyecekleri](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Windows 10 cihazlarınızı Microsoft Intune'a kaydederek e-postalar, dosyalar ve diğer kaynaklar gibi kuruluşunuzun güvenli verilerine erişebilirsiniz. Bu durum hem Windows 10 masaüstü hem de Windows 10 Mobile cihazlar için geçerlidir. Cihazlarınızı kaydetmeniz hem sizin hem de kuruluşunuz için güvenli erişim sağlamanıza ve iş verilerinizi kişisel verilerinizden ayırmanıza yardımcı olur.
 
+Daha fazla bilgi edinmek istiyor musunuz? [Cihazınızı Intune'a kaydettiğinizde](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) neler olacağını ve [cihazınızdaki bilgilerin](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) nasıl etkileneceğini öğrenin.
 
-Windows 10 Mobile veya Windows 10 masaüstü cihazınızı kaydetmek için:
+## <a name="windows-10-desktop-devices"></a>Windows 10 masaüstü cihazları
+1.  __Başlat__'a gidin.
 
-1.  Windows **Ayarları**’na gidin, sonra **Hesaplar**’a dokunun.
+ ![Windows Başlat Menüsü](../media/windows-start-menu.png).
 
-    ![Windows Ayarları](./media/w10-enroll-rs1-settings-accounts.png)
+2. __Arama çubuğuna__ "bilgisayarınız hakkında" yazın ve __Bilgisayarınız hakkında__'yı seçin.
 
-2.  Sonraki iki ekrana bakarak kendi cihazınızda gördüğünüze benzeyeni bulun. Cihazınızda gördüğünüz ekrana uyan adımları uygulayın.
+ ![bilgisayarınız hakkında araması için arama ayarları](../media/searching_for_about_your_pc.png)
 
-    Bu ekranı görürseniz, [İşe veya okula Erişim seçeneğini görüyorsanız izlenecek adımlar](#steps-to-follow-if-you-see-access-work-or-school) kısmındaki yönergeleri izleyin.
+2.  __Ayarlar__ sayfasında bilgisayarınızda yüklü olan Windows 10 sürümü hakkındaki bilgileri göreceksiniz. Bu listede __Sürüm__'ü bulun.
 
-    ![İşe veya okula bağlan](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+ ![Windows 10 Masaüstü Bilgisayarınız Hakkında](../media/settings_about_pc.png)
 
-    Bu ekranı görürseniz, [Hesabınızı görüyorsanız uygulanacak adımlar](#steps-to-follow-if-you-see-your-account) bölümündeki adımları uygulayın.
+3.  Sürümünüz __1607__ ise [bu adımlara](enroll-your-w10-device-access-work-or-school.md) geçin. Sürümünüz __1511__ ise [bu adımlara](enroll-your-w10-device-your-account.md) geçin.
 
-    ![Hesabınız](./media/w10-enroll-2-accounts-your-account.png)
+## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile cihazları
 
-## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>İşe veya okula erişim seçeneğini görüyorsanız izlenecek adımlar
-
-1.  **İşe veya okula eriş**'e ve sonra **Bağlan**'a dokunun.
-
-    ![İş okul hesabına Erişime dokunun](./media/w10-enroll-rs1-connect-to-work-or-school.png)
-
-2.  İş veya okul e-posta adresinizi girin ve sonra **İleri**’ye dokunun.
-
-    ![İş veya okul hesabınızı girme](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
-
-3. İş veya okul hesabınız ile Intune’da oturum açın.
-
-    ![İş veya okul hesabı ekle](./media/w10-enroll-rs1-enter-your-credentials.png)
-
-    Şirketinizin veya okulunuzun cihazını kaydettiğini belirten bir mesaj görürsünüz.
-
-4. **Tamamen hazırsınız!** ekranını gördüğünüzde **Kapat**’a dokunun. İşlem tamamlandı.
-
-  !["Tamamen hazırsınız!" ekranında Kapat’a dokunun](./media/w10-enroll-rs1-youre-all-set.png)
-
-5. Bağlantınızın doğru olup olmadığını bir kez daha kontrol etmek isterseniz, artık iş veya okul hesabınızın listelenmesi gereken **Ayarlar**’a geri dönün.
-
-    ![Bağlantının düzgün biçimde ayarlandığını doğrulama](./media/w10-enroll-rs1-validate-successful-enrollment.png)
-
-Önceki adımları uygulamanıza rağmen iş veya okul e-posta hesabınıza ve dosyalarınıza erişemiyorsanız, [İşe veya okula erişim görüyorsanız izlenecek sorun giderme adımları](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) bölümündeki adımları uygulayın.
-
-
-## <a name="steps-to-follow-if-you-see-your-account"></a>Hesabınızı görüyorsanız uygulanacak adımlar
-
-1.  Windows **Ayarlar**’ına gidin ve ardından **Hesaplar**’a dokunun.
-
-    ![Ayarlar ve Hesaplar’a gidin](./media/W10-enroll-1-settings-accounts.png)
-
-2.  **Hesabınız**’a dokunun.
-
-    ![Hesabınıza dokunun](./media/W10-enroll-2-accounts-your-account.png)
-
-3.  **İş veya okul hesabı ekle**’ye dokunun.
-
-    ![İş veya okul hesabı ekle’ye dokunun](./media/w10-enroll-3-add-work-school-acct.png)
-
-4.  İş veya okul kimlik bilgilerinizle oturum açın.
-
-    ![sign-in](./media/W10-enroll-4-sign-in.png)
-
-Yukarıdaki adımları uygulamanıza rağmen iş veya okul e-posta adresinize, dosyalarınıza veya diğer verilerinize erişemiyorsanız, [Hesabınızı görüyorsanız izlenecek sorun giderme adımları](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) bölümündeki yönergeleri deneyin.
-
-Ayrıca sizinle ve rolünüzle ilgili olan şirket uygulamalarını kolayca belirleyip edinmenizi sağlayan Şirket Portalı uygulamasını yüklemenizi öneririz. Şirketinizin Intune’u nasıl yapılandırdığına göre, Şirket Portalı uygulaması kayıt sürecinizin parçası olarak yüklenmiş olabilir.
-
-Uygulamanın sizde olup olmadığını doğrulamak için uygulama listenizde **Şirket Portalı**’nı arayın. Uygulama listenizde Şirket Portalı’nı görmüyorsanız, yüklemek için aşağıdaki adımları izleyin.
-
-1.  **Başlat** &gt; **Mağaza**’ya dokunun.
-
-2.  **Ara**’ya dokunun, sonra **şirket portalı** yazın.
-
-3.  Sonuçlar listesinde **Şirket Portalı** &gt; **Yükle**’ye dokunun.
-
-4.  **Yükle** veya **Ücretsiz**’e dokunun. Gösterilen seçenek, şirketinizin uygulamayı nasıl yapılandırdığına bağlıdır.
+1.  __Başlat__ sayfasında __Tüm uygulamalar__ listesini kaydırın ve __Ayarlar__ uygulamasını seçin.
+2.  __Sistem__'e ve ardından __Hakkında__'ya dokunun.
+3.  __Cihaz bilgileri__ bölümünde __Daha fazla bilgi__'ye dokunun. Cihazınız hakkındaki bilgilerin listesini göreceksiniz. Bu listede __Sürüm__'ü bulun.
+4.  Sürümünüz __1607__ ise [bu adımlara](enroll-your-w10-device-access-work-or-school.md) geçin. Sürümünüz __1511__ ise [bu adımlara](enroll-your-w10-device-your-account.md) geçin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-
-
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

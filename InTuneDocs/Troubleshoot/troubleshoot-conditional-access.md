@@ -2,7 +2,8 @@
 title: "Koşullu erişim sorunlarını giderme | Microsoft Intune"
 description: "Kullanıcıların, kaynaklara Intune koşullu erişimi üzerinden erişemediklerinde ne yapacakları açıklanır."
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
+ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 ---
@@ -79,7 +80,7 @@ Cihaz, bir etkinleştirme e-postası almadan Koşullu Erişim’den engellenmiş
 - Sendemail etkinliği için Exchange Connector günlüklerine bakın ve hata arayın. Aranacak komuta bir örnek, bildirim hesabından kullanıcı e-postasına SendEmail işlemidir.
 - Exchange Connector cihazı engellemeden önce etkinleştirme e-postasını gönderir. Cihaz çevrimdışıysa, etkinleştirme e-postasını almayabilir. Ayrıca, kullanıcının e-postayı kaçırmasına neden olabileceğinden cihazın e-posta alımının Poll yerine Push kullanılarak mı yapıldığını da denetleyin. Poll yöntemine geçip cihazın e-postayı alıp almadığına bakın.
 
-## <a name="noncompliant-device-not-blocked"></a>Uyumsuz cihaz engellenmiyor
+## <a name="non-compliant-device-not-blocked"></a>Uyumsuz cihaz engellenmiyor
 
 Uyumlu olmayan ancak erişimi olan bir cihazla karşılaşırsanız, aşağıdaki adımları uygulayın.
 
@@ -158,6 +159,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

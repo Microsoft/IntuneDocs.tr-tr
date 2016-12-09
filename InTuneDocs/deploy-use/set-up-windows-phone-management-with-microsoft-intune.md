@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: ce460c1b87b4759dcdeed061c2342b68dd491820
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
 
 
 ---
@@ -33,11 +33,11 @@ Bir Intune yöneticisi olarak Windows 10 Mobile ve Windows Phone cihazlar için 
 ## <a name="company-portal-app-enrollment"></a>Şirket Portalı uygulaması kaydı
 Kullanıcıların, Intune Şirket Portalı uygulamasını kullanarak cihazlarını yüklemesine ve kaydetmesine izin verebilirsiniz. DNS CNAME kaynak kayıtları oluşturursanız, kullanıcılar sunucu adı girmeden Intune’a bağlanır ve kaydolur.
 
-1.  **Intune’u ayarlama**<br>Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi (MDM) yetkilisini](prerequisites-for-enrollment.md#set-mobile-device-management-authority) **Microsoft Intune** olarak ayarlayın ve ardından MDM’yi ayarlayın.
+1.  **Intune’u ayarlama**<br>Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi (MDM) yetkilisini](prerequisites-for-enrollment.md#step-2-set-mdm-authority) **Microsoft Intune** olarak ayarlayın ve ardından MDM’yi ayarlayın.
 
 2.  **CNAME’ler oluşturma** (isteğe bağlı)<br>Şirketinizin etki alanı için **CNAME** DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden enterpriseenrollment-s.manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz.
 
-    CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. Eğer CNAME kaydı bulunamazsa, kullanıcılardan MDM sunucusu adını (https://manage.microsoft.com) el ile girmeleri istenir. 
+    CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. Eğer CNAME kaydı bulunamazsa, kullanıcılardan MDM sunucusu adını (https://manage.microsoft.com) el ile girmeleri istenir.
 
     DNS'de EnterpriseEnrollment.contoso.com adresini manage.microsoft.com adresine yönlendiren bir CNAME kaydınız varsa, bunun yerine DNS'de EnterpriseEnrollment.contoso.com adresini enterpriseenrollment-s.manage.microsoft.com adresine yönlendiren bir CNAME oluşturmanızı öneririz. Bu değişikliğin önerilmesinin nedeni, manage.microsoft.com uç noktasının gelecek sürümlerin birinde kayıt için kullanım dışı bırakılacak olmasıdır.
 
@@ -64,7 +64,7 @@ Kullanıcıların, Intune Şirket Portalı uygulamasını kullanarak cihazların
 
 5.  **Kullanıcılarınıza, şirket kaynaklarına erişmek için cihazlarını nasıl kaydedeceklerini anlatın.**
 
-    Son kullanıcı kayıt talimatları için bkz. [Windows cihazınızı Intune'a kaydetme](../enduser/enroll-your-device-in-intune-windows.md). Kullanıcılara ayrıca [Cihazınızı Intune’a kaydettiğiniz BT yöneticiniz neleri görebilir?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) sayfasını da gönderebilirsiniz.
+    Son kullanıcı kayıt talimatları için bkz. [Windows cihazınızı Intune'a kaydetme](../enduser/enroll-your-device-in-intune-windows.md). Kullanıcılara ayrıca [Cihazınızı Intune’a kaydettiğiniz BT yöneticiniz neleri görebilir?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) sayfasını da gönderebilirsiniz.
 
     Diğer son kullanıcı görevleri hakkında daha fazla bilgi için şu makalelere bakın:
     - [Son kullanıcılarınıza Microsoft Intune kullanımı hakkında söylemeniz gerekenler](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -74,6 +74,6 @@ Cihazlara Şirket Portalı’nı dağıtmayacaksanız, başka bir işlem yapmak 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

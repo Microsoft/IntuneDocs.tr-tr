@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
@@ -46,7 +46,7 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişerek işinizi y
  ![Bu cihazı kaydet macOS](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Cihazınızın, kuruluşunuzun kaynaklarına erişmek için yeterli güvenliğe sahip olduğunu doğrulamak için Intune'un bilgisayarınıza erişmesi gerekir. [Cihazınızı Intune'a kaydettiğinizde gerçekleştirilen işlemleri](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios) keşfedin.
+  > Cihazınızın, kuruluşunuzun kaynaklarına erişmek için yeterli güvenliğe sahip olduğunu doğrulamak için Intune'un bilgisayarınıza erişmesi gerekir. [Cihazınızı Intune'a kaydettiğinizde gerçekleştirilen işlemleri](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md) keşfedin.
 
 6. __Sistem Tercihleri__ açılır ve __"Yönetim Profilini" yüklemek__ isteyip istemediğiniz sorulur. Devam etmek için __Yükle__'ye, daha fazla ayrıntıya ulaşmak için ise __Profili Göster__'e tıklayın.
 
@@ -64,6 +64,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. İletişim bilgi
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

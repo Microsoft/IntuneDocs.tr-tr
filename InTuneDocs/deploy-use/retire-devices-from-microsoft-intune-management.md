@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ Kullanım amacı değiştirilmesi gereken cihazlarda, cihazı fabrika ayarların
 8.  Cihazları uygun bir şekilde seçip **Cihazı sil**’i belirleyin. Cihaz bir sonraki Active Directory eşitlemesinde silinir. Bu genellikle dört saat içinde gerçekleşir. Eşitlemeden sonra cihaz yönetimden kaldırılır. Bu durumda kullanıcının cihaz sınırından bir cihaz eksilir.
 
 ## <a name="retire-managed-computers"></a>Yönetilen bilgisayarları devre dışı bırakma
-Intune istemci yazılımıyla yönetilen bilgisayarlar, Intune yönetim konsolu aracılığıyla yönetimden kaldırılabilir. Bu durumda istemci yazılımı da kaldırılır ve Intune ilkesi bilgisayardan silinir. [Intune istemci yazılımıyla yönetilen bilgisayarları devre dışı bırakma](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md) hakkında bilgi edinin.
+Intune istemci yazılımıyla yönetilen bilgisayarlar, Intune yönetim konsolu aracılığıyla yönetimden kaldırılabilir. Bu durumda istemci yazılımı da kaldırılır ve Intune ilkesi bilgisayardan silinir. [Intune istemci yazılımıyla yönetilen bilgisayarları devre dışı bırakma](retire-a-windows-pc-with-microsoft-intune.md) hakkında bilgi edinin.
 
 ## <a name="block-access-a-device"></a>Bir cihaza erişimi engelleme
 Bir cihaz kaybolursa ya da bir çalışan, şirkete ait donanımı iade etmeden şirketi terk ederse, [geçiş kodunu sıfırlama ve cihazı uzaktan kilitleme](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) de gerçekleştirebilirsiniz. Bu seçenek, cihazı gözden çıkarmanıza yol açabilecek olsa da şirket bilgilerinin kötüye kullanımını engeller.
@@ -70,6 +70,6 @@ Bazı durumlarda, cihazın kendi ömrü sona erer. Böyle durumlarda, tam temizl
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 
 
 ---
@@ -40,8 +40,8 @@ Configuration Manager ile Intune mu arıyorsunuz?
 ## <a name="step-1-enable-connections"></a>1. Adım: Bağlantıları etkinleştirme
 
 Mobil cihaz kaydını etkinleştirmeden önce aşağıdakileri yaptığınızdan emin olun:
-- [Gerekli ağ URL'lerini ve bağlantı noktalarını gözden geçirin](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [Etki alanınızın adını ekleyin ve doğrulayın](../get-started/domain-names-for-microsoft-intune)
+- [Gerekli ağ URL'lerini ve bağlantı noktalarını gözden geçirin](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [Etki alanınızın adını ekleyin ve doğrulayın](../get-started/domain-names-for-microsoft-intune.md)
 
 ## <a name="step-2-set-mdm-authority"></a>2. Adım: MDM yetkilisini ayarlama
 MDM yetkilisi, bir grup cihazı yönetme iznine sahip olan yönetim hizmetini tanımlar. MDM yetkilisi seçenekleri arasında Intune’un kendisi ve Intune ile Configuration Manager vardır. Configuration Manager’ı yönetim yetkilisi olarak ayarlarsanız, mobil cihaz yönetimi için başka bir hizmet kullanılamaz.
@@ -111,7 +111,7 @@ Değişiklikleri kaydettikten sonra, Şirket Portalı web sitesini görüntülem
 
 ## <a name="step-5-assign-user-licenses"></a>5. Adım: Kullanıcı lisanslarını atama
 
-Bulut tabanlı kullanıcıları el ile eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory’nizden Azure Active Directory’ye (Azure AD) eşitlenen hesaplara lisans atamak için **Office 365 yönetim portalını** kullanırsınız. [Şirket içi kullanıcıları Azure AD ile eşitleyebilirsiniz](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
+Bulut tabanlı kullanıcıları el ile eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory’nizden Azure Active Directory’ye (Azure AD) eşitlenen hesaplara lisans atamak için **Office 365 yönetim portalını** kullanırsınız. [Şirket içi kullanıcıları Azure AD ile eşitleyebilirsiniz](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Kiracı yöneticisi kimlik bilgilerinizi kullanarak [Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) oturum açın.
 
@@ -136,7 +136,7 @@ Aşağıdaki platformların yönetimini ayarlayın:
 - [Windows bilgisayarlar ve dizüstü bilgisayarlar](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile ve Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-[Şirkete ait cihazların kaydını](manage-corporate-owned-devices) da etkinleştirebilirsiniz.
+[Şirkete ait cihazların kaydını](manage-corporate-owned-devices.md) da etkinleştirebilirsiniz.
 
 ## <a name="step-7-next-steps"></a>7. Adım: Sonraki adımlar
 
@@ -149,6 +149,6 @@ Kayıt etkinleştirildikten sonra, iş gereksinimlerinizi karşılamak için yö
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

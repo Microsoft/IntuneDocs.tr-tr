@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan ve Intune tarafından yönetilen cihazlardaki uygulamaları ve verileri temizleyebilirsiniz. Bunu yapmak için, Intune seçmeli temizleme ve tam temizleme özellikleri sağlar. Kullanıcılar ayrıca Intune'a kayıtlı şahsi cihazlara Intune Şirket Portalı uygulamasından uzaktan cihaz temizleme komutu da verebilir.
 
   > [!NOTE]
-  > Bu konu yalnızca, Intune mobil cihaz yönetimi tarafından yönetilen cihazların temizlenmesi ile ilgilidir. Aynı zamanda [Azure portalını](https://portal.azure.com) kullanarak da [şirket verilerini uygulamalardan silebilirsiniz](wipe-managed-company-app-data-with-microsoft-intune.md). [Intune istemci yazılımıyla yönetilen bilgisayarları devre dışı bırakma](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md) seçeneğine de sahipsiniz.
+  > Bu konu yalnızca, Intune mobil cihaz yönetimi tarafından yönetilen cihazların temizlenmesi ile ilgilidir. Aynı zamanda [Azure portalını](https://portal.azure.com) kullanarak da [şirket verilerini uygulamalardan silebilirsiniz](wipe-managed-company-app-data-with-microsoft-intune.md). [Intune istemci yazılımıyla yönetilen bilgisayarları devre dışı bırakma](retire-a-windows-pc-with-microsoft-intune.md) seçeneğine de sahipsiniz.
 
 ## <a name="full-wipe"></a>Tam temizleme
 
@@ -165,6 +165,6 @@ Bu rapor eylemi gerçekleştiren kişiyi de gösterir.
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

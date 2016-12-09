@@ -2,7 +2,8 @@
 title: "0365’e uygulama tabanlı koşullu erişim | Microsoft Intune"
 description: "O365 hizmetlerine hangi uygulamaların erişimi olacağını denetlemekte MAM CA’nın nasıl yardımcı olabileceğine ilişkin kavramları anlayın."
 keywords: 
-author: karthikaraman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e57280821168ddb043d093485ec74f042bbebfef
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: c966d955365611781e83eea9f2aec743f0fc0321
 
 
 ---
 
-# Yalnızca Intune MAM ilkelerini destekleyen mobil uygulamalar için Office 365 hizmetlerine erişim izni verme
+# <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>Yalnızca Intune MAM ilkelerini destekleyen mobil uygulamalar için Office 365 hizmetlerine erişim izni verme
 [Intune mobil uygulama yönetimi (MAM) ilkeleri](protect-apps-and-data-with-microsoft-intune.md) yönetilmek üzere Intune’da kayıtlı cihazlarda şirket verilerinizi korumaya yardımcı olur. MAM ilkelerini, **yönetilmek üzere Intune’da kaydedilmemiş çalışan cihazları** üzerinde de uygulayabilirsiniz.  Bu durumda, cihazı yönetmiyor olmanıza rağmen, şirket verilerinizin ve kaynaklarınızın korunmasını sağlamanız gerekir. MAM (MAM CA) için koşullu erişim kullanarak, Exchange Online gibi O365 hizmetlerine yalnızca Intune MAM ilkelerini destekleyen mobil uygulamaların erişimine izin veren bir ilke oluşturabilirsiniz.
 
 Örneğin, yalnızca **Microsoft Outlook uygulamasının** Exchange Online'a erişmesine izin vermek için **Exchange Online**’dan e-posta almak üzere Intune MAM ilkeleri tarafından sağlanan veri korumasına sahip olmayan **iOS ve Android’de yerleşik posta uygulamalarını engelleyebilirsiniz**.
@@ -32,27 +33,27 @@ Diyagramlarda kullanılan kısaltmaların açıklaması:
 * **AAD**: Azure Active Directory
 * **EAS**: Exchange Active Sync
 
-## Önkoşullar
+## <a name="prerequisites"></a>Önkoşullar
 MAM CA ilkesini yapılandırmadan **önce**, bir **Enterprise Mobility + Security veya bir Azure Active Directory premium aboneliğinizin** olması ve kullanıcıların EMS veya Azure AD lisansına sahip olması gerekir. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 
-## Desteklenen uygulamalar
+## <a name="supported-apps"></a>Desteklenen uygulamalar
 **Exchange Online**: Android ve iOS için **Microsoft Outlook**.
 
 MAM CA ilkelerine sahip bir uygulama ile kullanıcı deneyimi hakkında bilgi edinmek için bkz. [MAM CA ile bir uygulama kullanırken beklenmesi gerekenler](use-apps-with-mam-ca.md).
 
 
-## Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 [MAM uygulamaları için bir Exchange Online İlkesi oluşturma](mam-ca-for-exchange-online.md)
 
 [Modern kimlik doğrulaması olmayan uygulamaları engelleme](block-apps-with-no-modern-authentication.md)
 
-### Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz.
 
 [Uygulama verilerini MAM ilkeleriyle koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
