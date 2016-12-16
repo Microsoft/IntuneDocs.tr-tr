@@ -1,21 +1,21 @@
 ---
-title: "Microsoft Intune Uygulama SDK&quot;sı Xamarin Bileşeni | Microsoft Intune"
+title: "Microsoft Intune Uygulama SDK&quot;sı Xamarin Bileşeni | Microsoft Docs"
 description: 
 keywords: sdk, Xamarin, intune
-author: oydang
-manager: karthikaraman
-ms.author: oydang
+author: mtillman
+manager: angrobe
+ms.author: mtillman
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
-ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
 
 ---
@@ -83,7 +83,7 @@ Intune Uygulama SDK'sı Xamarin Bileşeni ile derlenen Xamarin uygulamaları art
 
       ```
 
-2.  Bileşen ekleyip başlattınız. Şimdi Uygulama SDK'sını iOS mobil uygulamasına eklemek için gerekli genel adımları uygulayabilirsiniz. Yerel iOS uygulamalarını etkinleştirme hakkında ayrıntılı bilgileri [iOS için Intune Uygulama SDK'sı Geliştirici Kılavuzu](intune-app-sdk-ios)'nda bulabilirsiniz.
+2.  Bileşen ekleyip başlattınız. Şimdi Uygulama SDK'sını iOS mobil uygulamasına eklemek için gerekli genel adımları uygulayabilirsiniz. Yerel iOS uygulamalarını etkinleştirme hakkında ayrıntılı bilgileri [iOS için Intune Uygulama SDK'sı Geliştirici Kılavuzu](intune-app-sdk-ios.md)'nda bulabilirsiniz.
 3. **Önemli**: Xamarin tabanlı iOS uygulamalarınıza özgü birden fazla değişiklik vardır. Örneğin, anahtar zinciri gruplarını etkinleştirmek için bileşene eklediğimiz Xamarin örnek uygulamasını dahil etmek üzere aşağıdakileri eklemeniz gerekir. Anahtar Zinciri Erişim gruplarınızda olması gereken grupların örneği aşağıda verilmiştir:
 
       ```xml
@@ -102,10 +102,10 @@ Intune Uygulama SDK'sı Xamarin Bileşeni ile derlenen Xamarin uygulamaları art
       </plist>
       ```
 
-Bileşeni Xamarin tabanlı iOS uygulamanıza eklemek için gerekli adımları tamamladınız. Projenizi Xcode ile derliyorsanız, `Intune App SDK Settings.bundle` kullanabilirsiniz. Bu sayede derleme sırasında Intune ilke ayarlarını açıp kapatarak test ve hata ayıklama süreçlerini gerçekleştirebilirsiniz. Bu paketten faydalanmak için [iOS için Intune Uygulama SDK'sı Geliştirici Kılavuzu](intune-app-sdk-ios)'ndaki adımları uygulayın ve [Xcode ile hata ayıklama](intune-app-sdk-ios#debug-information) bölümünü okuyun.
+Bileşeni Xamarin tabanlı iOS uygulamanıza eklemek için gerekli adımları tamamladınız. Projenizi Xcode ile derliyorsanız, `Intune App SDK Settings.bundle` kullanabilirsiniz. Bu sayede derleme sırasında Intune ilke ayarlarını açıp kapatarak test ve hata ayıklama süreçlerini gerçekleştirebilirsiniz. Bu paketten faydalanmak için [iOS için Intune Uygulama SDK'sı Geliştirici Kılavuzu](intune-app-sdk-ios.md)'ndaki adımları uygulayın ve [Xcode ile hata ayıklama](intune-app-sdk-ios.md#status-result-and-debug-notifications) bölümünü okuyun.
 
 ## <a name="enabling-mam-in-your-android-mobile-app"></a>Android mobil uygulamanızda MAM özelliklerini etkinleştirme
-UI çerçevesi kullanmayan Xamarin tabanlı Android uygulamaları için [Android için Intune Uygulama SDK’sı Geliştirici Kılavuzu] belgesini okumanız ve gerekli adımları uygulamanız gerekir. Xamarin tabanlı Android uygulamanız için sınıf, yöntem ve etkinlikleri kılavuzda yer alan [tabloya](intune-app-sdk-android#replace-classes-methods-and-activities-with-their-mam-equivalent-required) göre MAM eşdeğerleriyle değiştirmeniz gerekir. Uygulamanızda `android.app.Application` sınıfı tanımlanmıyorsa bir tane oluşturup `MAMApplication` kaynağından devraldığından emin olmanız gerekir.
+UI çerçevesi kullanmayan Xamarin tabanlı Android uygulamaları için [Android için Intune Uygulama SDK’sı Geliştirici Kılavuzu] belgesini okumanız ve gerekli adımları uygulamanız gerekir. Xamarin tabanlı Android uygulamanız için sınıf, yöntem ve etkinlikleri kılavuzda yer alan [tabloya](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent-required) göre MAM eşdeğerleriyle değiştirmeniz gerekir. Uygulamanızda `android.app.Application` sınıfı tanımlanmıyorsa bir tane oluşturup `MAMApplication` kaynağından devraldığından emin olmanız gerekir.
 
 Xamarin.Forms ve diğer UI çerçeveleri için `MAM.Remapper` adında bir araç sunuyoruz. Bu araç, sınıf değişikliklerini sizin için yapacaktır. Ancak aşağıdaki adımları sizin uygulamanız gerekir:
 
@@ -125,6 +125,6 @@ Bileşeni uygulamanıza eklemek için temel adımları tamamladınız. Şimdi Xa
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

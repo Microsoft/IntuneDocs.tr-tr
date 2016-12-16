@@ -15,13 +15,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: e10c0eb3000bcf3a98a0cab891c40d32fe06d335
 
 
 ---
 
-# <a name="using-your-ios-or-mac-os-x-device-with-intune"></a>Using your iOS or Mac OS X device with Intune
+# <a name="using-your-ios-or-macos-device-with-intune"></a>iOS veya Mac OS cihazınızı Intune ile kullanma
 
 Bu makale, kullanıcıların Intune tarafından yönetilen cihazlarında gerçekleştirebilecekleri tüm görevlere bağlantılar içerir. BT yöneticileri, aşağıdaki kategorilerde gruplanmış olan çeşitli görevleri gerçekleştirmek üzere kullanıcıların atması gereken adımları görmek için bu bilgilere başvurabilir:
 - Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı
@@ -34,7 +34,7 @@ Bu bölümdeki bilgiler, kullanıcılara iOS cihazlarında Intune Şirket Portal
 
 - [Intune Şirket Portalı uygulamasını yükleme ve uygulamada oturum açma](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [iOS cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-ios.md)
-- [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-mac-os-x.md)
+- [macOS cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-macos.md)
 - [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
 ## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Kullanıcıların cihazlarını Intune’a kaydettiklerinde yapabilecekleri
@@ -67,6 +67,6 @@ Bu bölümdeki bilgiler, iOS cihazları Intune’a kaydedildiğinde kullanıcıl
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

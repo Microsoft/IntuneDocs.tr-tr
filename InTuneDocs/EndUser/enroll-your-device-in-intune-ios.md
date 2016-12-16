@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
 
 Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için iOS cihazınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, BT departmanınız bu iş veya okul kaynaklarını yönetebilir, bunların güvenli kalmasını sağlayabilir ve size işlerinizi tamamlamak için tercih ettiğiniz cihazı kullanma özgürlüğünü tanıyabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-Mac OS X cihazı kaydetmeye çalışıyorsanız, bkz. [Mac OS X cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-mac-os-x.md).
+Bir Mac OS cihazı kaydetmeye çalışıyorsanız, bkz. [Mac OS cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-macos.md).
 
 **Başlamadan önce:**
 
@@ -96,6 +96,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

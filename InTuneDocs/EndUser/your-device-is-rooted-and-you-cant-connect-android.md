@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
+ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
+ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
 
 
 ---
 
+# <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Android cihazınıza kök erişim izni verildiği için bağlanamıyorsunuz
 
-# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Android cihazınızın kökü belirtilmiş ve bağlanamıyorsunuz
+Cihazınıza _kök erişim izni verildiğini_ gösteren bir ileti gördüğünüz için buraya yönlendirildiniz.
 
-Android cihazınıza kök erişim izni verildiğinde, cihazınız şirket kaynaklarını ve güvenliğini tehlikeye atabilecek bazı özellikleri etkinleştirecek şekilde değiştirilir. Bu iletiyi görüyorsanız, sorun düzeltilene kadar şirket kaynaklarına erişemezsiniz.
+Bir Android cihazına "kök erişim izni verilmişse", normalde cihazda sunulmayan bazı yetenekleri etkinleştirmek için cihazın yazılımının bir kısmı değiştirilmiş demektir. Bu değişiklikler, e-postalar ve belgeler gibi kuruluş kaynaklarına güvenli erişimi genellikle tehlikeye atabilir. Bu nedenle sorun düzeltilene kadar bu kaynaklara erişmek için kök erişim izni verilmiş cihazların kullanılması engellenir.  
 
-Cihazınıza kök erişim iznini bilerek vermediğinizi düşünüyorsanız, cihazınıza neden kök erişim izni verildiğini anlamak için şu diğer nedenleri gözden geçirin:
+Cihaza kök erişim izni vermek için kullanılan birkaç yaygın yol vardır:
 
-- Cihazınıza, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir uygulama yüklemiş olabilirsiniz. Bir uygulama yükledikten sonra bu iletiyi görürseniz, yararı olup olmayacağını anlamak için uygulamayı kaldırmayı deneyebilirsiniz.
+- Cihazınıza, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir uygulama yüklemiş olabilirsiniz. Bir uygulamayı yükledikten hemen sonra bu iletiyi görürseniz uygulamayı kaldırmayı deneyin.
 
-- Cihazınızın üreticisi, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir yazılım yüklemiş olabilir. Yardım için BT yöneticinize başvurmalısınız. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+- Cihazınızın üreticisi, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir yazılım yüklemiş olabilir. Bu durumda yardım için BT yöneticinize başvurmalısınız. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) gidin.
+
+Cihazınıza kök erişim iznini siz verdiyseniz, işlemi iptal etmeniz ve cihazı kök erişim izni verilmemiş durumuna getirmeniz gerekir.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

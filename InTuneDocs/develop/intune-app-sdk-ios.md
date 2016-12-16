@@ -1,21 +1,21 @@
 ---
-title: "iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu | Microsoft Intune"
+title: "iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01b927178ad5fb1019781863e243133861887148
-ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
+ms.sourcegitcommit: b55147e2be338bd46661695134fd0f0de105bb72
+ms.openlocfilehash: b8a723fce088c1d61bddb5f2479da59a4b5c3771
 
 
 ---
@@ -32,6 +32,8 @@ iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini
 * Xcode araç takımının sürüm 5 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayara ihtiyaç duyacaksınız.
 
 * [iOS için Intune Uygulama SDK'sı Lisans Koşulları](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)'nı gözden geçirmelisiniz. Kendi kayıtlarınız için lisans koşullarının bir kopyasını yazdırmalı ve saklamalısınız. iOS için Intune Uygulama SDK'sını indirip kullandığınızda bu lisans koşullarını kabul etmiş olursunuz.  Kabul etmiyorsanız, yazılımı kullanmayın.
+
+* iOS için Intune Uygulama SDK'sı dosyalarını [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)’dan indirin.
 
 ## <a name="whats-in-the-sdk"></a>SDK’nın kapsamı
 
@@ -322,9 +324,9 @@ Kayıt başarısız olursa, uygulama hatanın ayrıntılarına bağlı olarak bu
 
 Bu API çağrıldıktan sonra, uygulama normal çalışmasına devam edebilir. Kayıt başarılı olursa, SDK kullanıcıya uygulamanın yeniden başlatılması gerektiğini bildirir.
 
-## <a name="debug-information"></a>Hata ayıklama bilgileri
+## <a name="status-result-and-debug-notifications"></a>Durum, sonuç ve hata ayıklama bildirimleri
 
-Uygulama, Intune MAM hizmetine yapılan aşağıdaki istekler hakkında hata ayıklama bildirimleri alabilir:
+Uygulama, Intune MAM hizmetine yapılan aşağıdaki istekler hakkında durum, sonuç ve hata ayıklama bildirimleri alabilir:
 
  - Kayıt istekleri
  - İlke güncelleştirme istekleri
@@ -365,7 +367,7 @@ Bu temsilci yöntemleri aşağıdaki bilgileri içeren bir `IntuneMAMEnrollmentS
 
 Bu nesne, getirilebilecek belirli durum kodlarıyla birlikte Headers/IntuneMAMEnrollmentStatus.h içinde tanımlanır.
 
-Hiçbir uygulamanın iş mantığının bu bildirimlere dayalı olmaması gerektiğini mutlaka aklınızda bulundurun. Buradaki amaç, uygulamanın bu bilgileri hata ayıklama veya izleme amacıyla telemetri hizmetine gönderebilmesidir.
+
 
 
 ## <a name="sample-code"></a>Örnek kod
@@ -637,7 +639,7 @@ Evet, BT yöneticisi uygulamaya bir seçmeli silme komutu gönderebilir. Bu, kul
 
 ## <a name="submit-your-app-to-the-app-store"></a>Uygulamanızı App Store’a gönderme
 
-Intune Uygulama SDK’sının hem statik kitaplığı hem de çerçeve derlemesi evrensel ikili dosyalardır. Yani tüm cihaz ve benzetici mimarilerine yönelik kodları içerirler. Apple, App Store’a gönderilen uygulamaları benzetici kodu içermeleri durumunda reddeder. Yalnızca cihaz derlemeleri için statik kitaplığa karşı derleme yapıldığında, bağlayıcı, benzetici kodunu otomatik olarak çıkartır.
+Intune Uygulama SDK’sının hem statik kitaplığı hem de çerçeve derlemesi evrensel ikili dosyalardır. Yani tüm cihaz ve benzetici mimarilerine yönelik kodları içerirler. Apple, App Store’a gönderilen uygulamaları benzetici kodu içermeleri durumunda reddeder. Yalnızca cihaz derlemeleri için statik kitaplığa karşı derleme yapıldığında, bağlayıcı, benzetici kodunu otomatik olarak çıkartır. Uygulamanızı App Store’a yüklemeden önce tüm benzetici kodunun kaldırıldığından emin olmak için aşağıdaki adımları uygulayın.
 
 1. `IntuneMAM.framework` öğesinin masaüstünüzde olduğundan emin olun.
 
@@ -654,6 +656,6 @@ Intune Uygulama SDK’sının hem statik kitaplığı hem de çerçeve derlemesi
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

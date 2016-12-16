@@ -1,11 +1,11 @@
 ---
-title: "iOS cihazı en yüksek işletim sistemi sürümü ile uyumlu değil | Microsoft Intune"
+title: "Cihazınız en yüksek işletim sistemi sürümü ile uyumlu değil | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 994fbd726b5173ce18e284c94a658189f100a9b0
-ms.openlocfilehash: 99c41c884d1e6e4e0d1ba6d2edb0d902551ea21a
+ms.sourcegitcommit: 308706452538ea6d87546d72ca4478b227ced0d6
+ms.openlocfilehash: 928845c6e0bc21ae678fd6ba31c3bd0bbde5d338
 
 
 ---
 
 
-# iOS cihazı en son işletim sistemi sürümü ayarı ile uyumlu değil
+# <a name="your-devices-operating-system-version-isnt-yet-supported"></a>Cihazınızın işletim sistemi sürümü henüz desteklenmiyor
 
-iOS cihazınız BT yöneticinizin kullanabileceğiniz en son işletim sistemi sürümüne yönelik ilkesiyle uyumlu değildir. BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Mobil teknolojilerin hızlı gelişimi nedeniyle, bazı durumlarda cihazınız, BT uzmanınızın sınadığı cihazdan daha gelişmiş olabilir. En yeni iOS sürümü, şirketinizde kullanılan bazı diğer araçlar ile çalışmayabilir.
+
+Bu sorunu çözmek için BT yöneticinize başvurmanız gerekecektir. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -2,10 +2,10 @@
 title: "iOS cihazınızdaki yönetilen uygulamaları kullanma | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 509a0fda9355cc77a2f7690771dbe086c0cc59fc
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: 340c160b2741856c91e7136fa60318c83b1ea8bb
 
 
 ---
 
 
-# iOS cihazınızdaki yönetilen uygulamaları kullanma
+# <a name="use-managed-apps-on-your-ios-device"></a>iOS cihazınızdaki yönetilen uygulamaları kullanma
 
 Yönetilen uygulamalar, BT yöneticinizin ilgili uygulamada erişebildiğiniz şirket verilerini korumak üzere ayarlayabildiği uygulamalardır. iOS cihazınızdaki yönetilen bir uygulamada bulunan şirket verilerine eriştiğinizde uygulamanın beklediğinizden biraz farklı çalıştığını fark edebilirsiniz. Örneğin, korunan şirket verilerini kopyalayıp yapıştıramayabilir veya bu verileri belirli konumlara kaydedemeyebilirsiniz.
 
@@ -32,14 +32,14 @@ Yönetilen bir uygulamadaki şirket verilerine eriştiğinizde, açmakta olduğu
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### Yönetilen uygulamaları nasıl edinirim?
+### <a name="how-do-i-get-managed-apps"></a>Yönetilen uygulamaları nasıl edinirim?
 Yönetilen uygulamaları birkaç farklı yöntemle edinebilirsiniz:
 
--   Cihazınız Microsoft Intune’a kaydolduğunda uygulamayı Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden yükleyebilirsiniz ya da uygulama BT yöneticiniz tarafından cihazınıza yüklenebilir. Kayıt hakkında bilgi edinmek için bkz. [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-mac-os-x.md).
+-   Cihazınız Microsoft Intune’a kaydolduğunda uygulamayı Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden yükleyebilirsiniz ya da uygulama BT yöneticiniz tarafından cihazınıza yüklenebilir. Kayıt hakkında bilgi edinmek için bkz. [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-macos.md).
 
 -   Bir uygulamayı App Store’dan yükleyin ve ardından Intune tarafından yönetilen şirket kullanıcı hesabınızla oturum açın.
 
-### BT yöneticim bir uygulamada neyi yönetebilir?
+### <a name="what-can-my-it-admin-manage-in-an-app"></a>BT yöneticim bir uygulamada neyi yönetebilir?
 BT yöneticinizin bir uygulamada yönetebileceği ve cihazınızdaki şirket verileriyle etkileşimlerinizi etkileyebilecek seçeneklerin bazı örnekleri aşağıda verilmiştir:
 
 -   Belirli web sitelerine erişim
@@ -65,6 +65,6 @@ Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöne
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

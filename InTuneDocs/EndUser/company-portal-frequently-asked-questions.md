@@ -1,11 +1,11 @@
 ---
-title: "Şirket Portalı hakkında | Microsoft Intune"
+title: "Şirket Portalı nedir? | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
+ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
+ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 
 
 ---
@@ -41,8 +41,8 @@ Microsoft Intune Şirket Portalı, şirketinizin veya okulunuzun verilerine ve u
 Şirket Portalı web sitesiyle yapabileceklerinizi cihazınızdaki Şirket Portalı uygulamasını kullanarak yapabileceklerinizle karşılaştırmak için aşağıdaki bağlantılardan birini seçin:
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS ve Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Outlook Web Access (OWA)](using-your-android-device-with-intune.md)
+- [iOS ve macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Windows](using-your-windows-device-with-intune.md)
 - [Şirket Portalı web sitesi](using-the-intune-company-portal-website.md)
 
@@ -52,13 +52,13 @@ Microsoft Intune Şirket Portalı, şirketinizin veya okulunuzun verilerine ve u
 BT yöneticinizin cihazınızda neleri görebileceğini, neleri göremeyeceğini öğrenmek için, kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
 
 > [!div class="op_single_selector"]
-- [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS ve Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Outlook Web Access (OWA)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [iOS ve macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Şirket Portalı’na ne tür bilgisayarları veya cihazları ekleyebilirsiniz?
 
--   iPhone, iPad ve Mac OS X cihazları
+-   iPhone, iPad ve Mac OS cihazları
 
 -   Android mobil cihazlar
 
@@ -74,8 +74,8 @@ Bir bilgisayarı veya cihazı Şirket Portalı’ndan kaldırabilir ya da sıfı
 Bir bilgisayarı veya cihazı *kaldırdığınızda*, cihazınızın Intune kaydını kaldırmış olursunuz. Kaydını kaldırdıktan sonra, Şirket Portalı’na artık bu cihazdan erişemezsiniz ve bazı şirket verileri cihazınızdan kaldırılabilir. Cihazınızı Şirket Portalı’ndan nasıl kaldıracağınızı görmek için, aşağıdaki bağlantılardan birini seçin:
 
 > [!div class="op_single_selector"]
-- [Android](unenroll-your-device-from-intune-android.md)
-- [iOS ve Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [Outlook Web Access (OWA)](unenroll-your-device-from-intune-android.md)
+- [iOS ve macOS](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
 Bilgisayarı veya cihazı *sıfırladığınızda* Şirket Portalı bilgisayarınızı veya cihazınızı üreticinin varsayılan ayarlarına geri döndürmeye çalışır. Cihazınız sıfırlandığında, tüm şirket verileriyle kişisel veriler cihazdan kaldırılır! Cihazınızı kaybettiyseniz, cihazı Şirket Portalı web sitesinden uzaktan da sıfırlayabilirsiniz.
@@ -83,8 +83,8 @@ Bilgisayarı veya cihazı *sıfırladığınızda* Şirket Portalı bilgisayarı
 Cihazınızı nasıl sıfırlayacağınızı görmek için, aşağıdaki bağlantılardan birini seçin:
 
 > [!div class="op_single_selector"]
-- [Android](reset-erase-your-lost-or-stolen-device-android.md)
-- [iOS ve Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [Outlook Web Access (OWA)](reset-erase-your-lost-or-stolen-device-android.md)
+- [iOS ve macOS](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Şirket Portalı web sitesinden cihazınızı sıfırlama](reset-your-device-cpwebsite.md)
 
@@ -96,6 +96,6 @@ Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin. Kişi bilgile
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 >
 > Bir kullanıcı oturumu için Koşullu Erişim ilkesi zorunlu tutulduysa, söz konusu kullanıcı hesabı Cihaz Kayıt Yöneticileri grubuna eklendiğinde kaydı tamamlayamaz.
 
-### <a name="company-portal-temporarily-unavailable"></a>Şirket Portalı Geçici Olarak Devre Dışı
+### <a name="company-portal-emporarily-unavailable"></a>Şirket Portalı Geçici Olarak Devre Dışı
 **Sorun:** Bir kullanıcı, cihazda **Şirket Portalı Geçici Olarak Devre Dışı** hatası alıyor.
 
 **Çözüm:**
@@ -214,23 +214,40 @@ Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemel
 
 ### <a name="android-certificate-issues"></a>Android sertifika sorunları
 
-**Sorun**: Kullanıcı cihazda şu iletiyi alıyor: *Cihazınızda gerekli bir sertifika eksik olduğundan oturum açamazsınız.*
+**Sorun**: Kullanıcılar cihazda şu iletiyi alıyor: *Cihazınızda gerekli bir sertifika eksik olduğundan oturum açamazsınız.*
 
-**Çözüm**:
+**1. Çözüm**:
 
-- Kullanıcı [bu yönergeleri](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) izleyerek eksik sertifikayı alabilir.
-- Kullanıcı sertifikayı alamazsa, ADFS sunucunuzda ara sertifikalarınız eksik olabilir. Ara sertifikalar, Android’in sunucuya güvenmesi için gereklidir.
+Kullanıcılarınızdan [Cihazınızda gerekli bir sertifika eksik](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) bölümündeki yönergeleri izlemelerini isteyin. Kullanıcılar yönergeleri uyguladıktan sonra hata devam ederse, 2. Çözümü deneyin.
 
-Sertifikaları ADFS sunucusundaki veya proxy sunucularındaki ara depoya aşağıda gösterildiği gibi aktarabilirsiniz:
+**2. Çözüm**:
 
-1.  ADFS sunucusunda **Microsoft Yönetim Konsolu**’nu başlatın ve **Bilgisayar hesabı** için Sertifikalar ek bileşenini ekleyin.
-5.  ADFS hizmetinizin kullandığı sertifikayı bulun ve üst sertifikasını görüntüleyin.
-6.  Üst sertifikayı kopyalayın ve bunu **Computer\Intermediate Certification Authorities\Certificates** altına yapıştırın.
-7.  ADFS, ADFS Şifre Çözme ve ADFS İmzalama sertifikalarınızı kopyalayın ve bunları ADFS hizmetinin Kişisel Deposuna yapıştırın.
-8.  ADFS sunucularını yeniden başlatın.
+Kullanıcılar şirket kimlik bilgilerini girdikten sonra hala eksik sertifika hatası alıyor ve federasyon oturum açma deneyimi için yeniden yönlendiriliyorsa, Active Directory Federasyon Hizmetleri (AD FS) sunucunuzda bir ara sertifika eksik olabilir.
 
+Android cihazlar bir [SSL sunucu hello](https://technet.microsoft.com/library/cc783349.aspx)’sunda ara sertifikalar gerektirdiğinden sertifika hatası meydana gelir, ancak şu anda varsayılan AD FS sunucusu veya AD FS Proxy sunucusu yüklemesi, SSL sunucusu hello yanıtında SSL İstemci hello’suna yalnızca AD FS’nin hizmet SSL sertifikasını gönderir.
+
+Sorunu düzeltmek için AD FS sunucusunda veya proxy’lerdeki Bilgisayar Kişisel Sertifikaları’na sertifikaları aşağıdaki gibi içeri aktarın:
+
+1.  ADFS’de ve proxy sunucularında, yerel bilgisayar için Sertifika Yönetimi konsolunu başlatmak üzere **Başlat** düğmesine sağ tıklayın, **Çalıştır**’ı seçin ve **certlm.msc** yazın.
+2.  **Kişisel**’i genişletip **Sertifikalar**’ı seçin.
+3.  AD FS hizmeti iletişiminizin sertifikasını (ortak olarak imzalanmış bir sertifika) bulun ve özelliklerini görüntülemek için çift tıklayın.
+4.  Sertifikanın üst sertifikasını (veya sertifikalarını) görmek için **Sertifika Yolu** sekmesini seçin.
+5.  Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
+6.  **Ayrıntılar** sekmesini ve **... dosyasına kopyala**’yı seçin.
+7.  Sertifikanın ortak anahtarını istenen dosya konumuna kaydetmek veya dışarı aktarmak için sihirbaz yönergelerini izleyin.
+8.  3. Adımda Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
+9.  AD FS sunucularını yeniden başlatın.
+10. Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
 Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum açabilmelidir.
 
+**Sertifikanın düzgün yüklendiğini doğrulamak için**:
+
+Aşağıdaki adımlar sertifikanın doğru yüklendiğini doğrulamak için kullanabileceğiniz birçok yöntem ve araçtan sadece birini açıklar.
+
+1. [Ücretsiz Digicert aracı](ttps://www.digicert.com/help/)’na gidin.
+2. AD FS sunucunuzun tam etki alanı adı (örneğin, sts.contoso.com) girin ve **SUNUCUYU DENETLE**’yi seçin.
+
+Sunucu sertifikası düzgün yüklendiyse, sonuçlarda tüm onay işaretlerini görürsünüz. Yukarıdaki sorun mevcutsa, raporun “Sertifika Adı Eşleşiyor” ve "SSL Sertifikası Düzgün Yüklendi" bölümlerinde kırmızı bir X görürsünüz.
 
 
 ## <a name="ios-issues"></a>iOS sorunları
@@ -356,6 +373,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
