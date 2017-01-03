@@ -1,5 +1,5 @@
 ---
-title: "Şirket Portalı uygulamasını yüklerseniz ve iOS veya Mac OS X cihazınızı Intune’a kaydederseniz ne olur? | Microsoft Intune"
+title: "Şirket Portalı uygulamasını yüklerseniz ve iOS veya Mac OS X cihazınızı Intune’a kaydederseniz ne olur? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
 
 
 ---
@@ -96,6 +96,6 @@ Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
