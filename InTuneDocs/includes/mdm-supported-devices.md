@@ -23,6 +23,6 @@ Enterprise Management + Security (EMS) kullanan müşteriler, [Windows 10 cihazl
  
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
