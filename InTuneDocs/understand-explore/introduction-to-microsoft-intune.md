@@ -21,6 +21,9 @@ ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
 ---
 
 # <a name="what-is-intune"></a>Intune nedir?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olan bulut tabanlı bir kurumsal mobilite yönetim (EMM) hizmetidir. Intune ile şunları yapabilirsiniz:
 * Çalışanlarınızın şirket verilerine erişmek için kullandığı mobil cihazları yönetebilirsiniz.
 * Çalışanlarınızın kullandığı mobil uygulamaları yönetebilirsiniz.

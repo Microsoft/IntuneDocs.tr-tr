@@ -20,6 +20,9 @@ ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
 ---
 
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Microsoft Intune'da mobil cihaz yönetimini değerlendirme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Bu değerlendirme kılavuzu, mobil cihazınızın Intune'da nasıl yönetildiğini gösterir. Şunları yapacaksınız:
 - Intune tarafından yönetilecek bir cihazı kaydetme.
 - Kullanıcıları ve cihazları düzenlemek için grup oluşturma.

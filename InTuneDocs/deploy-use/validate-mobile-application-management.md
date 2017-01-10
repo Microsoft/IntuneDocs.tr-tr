@@ -21,6 +21,8 @@ ms.openlocfilehash: 080d8f4fd4b6e1b53df860f4319b1c199d504c06
 
 # <a name="validating-your-mobile-application-management-setup"></a>Mobil uygulama yönetimi kurulumunuzu doğrulama
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Bu konu, mobil uygulama yönetimini (MAM) ayarladıktan sonra sorunların denetlemesiyle ilgili bilgi sağlar. Bu kılavuz, Azure portalındaki MAM ilkeleri için geçerlidir.
 
 ### <a name="checking-for-symptoms"></a>Belirtileri denetleme
