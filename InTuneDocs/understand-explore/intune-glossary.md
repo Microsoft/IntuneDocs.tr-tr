@@ -1,24 +1,26 @@
 ---
-title: "Intune sözlüğü | Microsoft Intune"
+title: "Intune sözlüğü | Microsoft Docs"
 description: "Microsoft Intune terimlerinin bir kısmı hakkında bilgi edinin"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/17/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6c9d44e6a328b4bfb3827f54ac35b83e3c7aac
-ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 
 
 ---
 
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune sözlüğü
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -32,7 +34,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 ## <a name="b"></a>B
 |||
 |-|-|
-|KCG|[Kendi Cihazını Getir](/intune/get-started/choose-how-to-enroll-devices1). Kullanıcılar kendi cihazlarına Intune Şirket Portalı uygulamasını yükleyip cihazı kaydederek, e-posta, şirket uygulamaları, şirket verileri ve destek gibi şirket kaynaklarına erişim elde edebilirler.| 
+|KCG|[Kendi Cihazını Getir](/intune/get-started/choose-how-to-enroll-devices1). Kullanıcılar kendi cihazlarına Intune Şirket Portalı uygulamasını yükleyip cihazı kaydederek, e-posta, şirket uygulamaları, şirket verileri ve destek gibi şirket kaynaklarına erişim elde edebilirler.|
 
 ## <a name="c"></a>C
 |||
@@ -95,7 +97,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |Managed Browser|Microsoft Intune kullanarak kuruluşunuzda dağıtabileceğiniz bir [web’e gözatma uygulamasıdır](/intune/deploy-use/manage-internet-access-using-managed-browser-policies). Yönetilen tarayıcı ilkesi, yönetilen tarayıcı kullanıcılarının ziyaret edebileceği web sitelerini kısıtlayan bir izin verilenler listesi veya engellenenler listesi yapılandırır.|
 |Mobil uygulama yönetimi|[Mobil uygulama yönetimi (MAM)](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) kullanıcılarınız için mobil uygulamaları yayımlama, gönderme, yapılandırma, güvenlik altına alma, izleme ve güncelleştirme gibi eylemler gerçekleştirmenize olanak tanır.
-|Mobil aygıt yönetimi|[Mobil cihaz yönetimi (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) cihazları Intune’a kaydetmenize izin verir ve bu cihazları sağlamanıza, yapılandırmanıza, izlemenize ve bunlar üzerinde işlem yapmanıza olanak tanır. 
+|Mobil aygıt yönetimi|[Mobil cihaz yönetimi (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) cihazları Intune’a kaydetmenize izin verir ve bu cihazları sağlamanıza, yapılandırmanıza, izlemenize ve bunlar üzerinde işlem yapmanıza olanak tanır.
 |MDM yetkilisi|[MDM yetkilisi](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune), bir grup cihazı yönetme iznine sahip olan yönetim hizmetini tanımlar. MDM yetkilisi seçenekleri arasında Intune’un kendisi ve Intune ile Configuration Manager vardır.|
 |Mobil uygulama sağlama ilkesi|Dağıttığınız iOS uygulamaları için [sağlama profillerinin](/intune/deploy-use/ios-mobile-app-provisioning-profiles) süresinin sona ermediğinden emin olmanızı sağlayan bir iOS ilkesidir.|
 |Mobil uygulama yapılandırma ilkesi|Şirket adı veya sunucu adresi gibi [ayarları çalıştırıldıkları zaman uyumlu iOS uygulamalarına sağlamak](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) için kullanılan bir iOS ilkesidir.|
@@ -146,9 +148,6 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 
 
 
-
-
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

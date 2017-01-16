@@ -9,14 +9,14 @@ keywords: "intune belgeleri, uygulama yönetimi, cihaz yönetimi, MDM belgeleri,
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/7/2016
+ms.date: 12/20/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
-ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
+ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
+ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 ---
@@ -37,8 +37,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Şirket kaynaklarına erişimi koruma</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-ios">iOS için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-android">Android için Microsoft Intune Uygulama SDK’sı Geliştirici Kılavuzu</a></li>
+          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Microsoft Graph’ta Intune ile çalışma</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar</a></li>
         </ul>
       </div>
     </section>
@@ -61,13 +61,13 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Intune’a giriş</h3>
+                    <h3>Intune nedir?</h3>
                     <p>Intune’un mobil cihazlar (iOS cihazları, Android cihazları, Windows telefonları) ve Windows bilgisayarları için nasıl cihaz, uygulama ve veri yönetim olanakları sağladığını öğrenin.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Intune değerlendirme kılavuzu</h3>
+                    <h3>Intune sizin için doğru mu?</h3>
                     <p>Deneme sürümünüzü 100 adede kadar kullanıcı ve cihaz ile kurmak üzere gereken adımları uygulamak için deneme kılavuzunu kullanın.</p>
                   </a>
                 </li>
@@ -94,21 +94,21 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>Başlamadan önce bilmeniz gerekenler</h3>
-                    <p>Tüm Intune dağıtımlarının temel gereksinimlerini hızlı bir şekilde tanıyın.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Intune hızlı başlangıç kılavuzu</h3>
-                    <p>30 günlük deneme kılavuzunu temel alan bu konu, size Azure Active Directory eşitlemesini, etki alanı ve DNS değerlendirmelerini ve diğer Intune özelleştirmelerini gösterir.</p>
+                    <h3>Başlarken kılavuzu</h3>
+            <p>30 günlük deneme kılavuzunu temel alan bu konu, size Azure Active Directory eşitlemesini, etki alanı ve DNS değerlendirmelerini ve diğer Intune özelleştirmelerini gösterir.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>Dağıtım aşamaları</h3>
-                    <p>Intune hedeflerinizi, mimarinizi, pilot çalışmanızı ve üretim dağıtım planlarınızı tanımlayın.</p>
+                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
+                    <h3>Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme</h3>
+                    <p>Şirket veri sızıntılarını önlemeye yardımcı olan uygulama koruma ilkeleri kullanarak kuruluşunuzun verilerini güvende tutun.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
+                    <h3>Mobil cihazlarda e-posta yapılandırmasını basitleştirme</h3>
+                    <p>Intune hizmeti tarafından yönetilen Windows, iOS ve Android mobil cihazlara e-posta (ayrıca VPN ve WiFi) profilleri dağıtarak şirketinize zaman ve kaynak tasarrufu sağlayın.</p>
                   </a>
                 </li>
               </ul>
@@ -155,8 +155,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>E-posta ve O365 hizmetlerine erişimi kısıtlama</h3>
-                    <p>Şirket e-postasına ve Office 365 hizmetlerine erişimi sınırlamak için Intune’un koşullu erişim olanağını kullanın.</p>
+                    <h3>E-posta ve O365 hizmetlerine erişimi koruma</h3>
+                    <p>Şirket e-postasına ve Office 365 hizmetlerine erişimi korumak için Intune’un koşullu erişim olanağını kullanın.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -285,6 +285,6 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

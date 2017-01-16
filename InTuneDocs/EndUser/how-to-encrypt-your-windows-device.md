@@ -1,26 +1,29 @@
 ---
-title: "Windows cihazınızı şifreleme | Microsoft Intune"
+title: "Windows cihazınızı şifreleme | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3b775464b494f5d28c870df4b2c58bb59f58eb78
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: a3cf36eae0342d2047910d1a7ca0da2acb7d2ae6
 
 
 ---
 
-# Windows cihazınızı şifreleme
+# <a name="how-to-encrypt-your-windows-device"></a>Windows cihazınızı şifreleme
 
 Şirket veya okul verilerinizi korumak için BT yöneticinizin Windows cihazınızı şifrelemenizi gerektirebilir. Windows Phone cihazınız varsa ve kaydettiyseniz, şifreleme gerekiyorsa cihazınız otomatik olarak şifrelenir.
 
@@ -34,6 +37,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

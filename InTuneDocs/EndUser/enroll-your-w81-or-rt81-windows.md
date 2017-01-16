@@ -1,5 +1,5 @@
 ---
-title: "Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetme | Microsoft Intune"
+title: "Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetme | Microsoft Docs"
 description: "Windows 8.1 veya Windows RT 8.1 cihazının Intune’a nasıl kaydedildiği açıklanır."
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d0a773edf51214ac9f921c17185b32f6b3fbf287
 
 
 ---
@@ -66,6 +66,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

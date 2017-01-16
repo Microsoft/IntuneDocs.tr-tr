@@ -1,5 +1,5 @@
 ---
-title: "Cihaz uyumluluk ilkesi oluşturma | Microsoft Intune"
+title: "Cihaz uyumluluk ilkesi oluşturma | Microsoft Docs"
 description: "Şirket verilerinize erişirken kullanılan mobil cihazların ve bilgisayarların güvenliğini sağlamaya yardımcı olması için bir uyumluluk ilkesi oluşturun."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 21875001129da8f5ca01869fa69960f18ae28c56
 
 
 ---
 
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Microsoft Intune’da cihaz uyumluluk ilkesi oluşturma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Bu konu başlığı altında, bir cihazın uyumlu olarak kabul edilmek için uyması gereken bir uyumluluk ilkesi oluştururken kullanabileceğiniz adımlar açıklanır.
 
 ##  <a name="step-1-add-a-new-policy"></a>1. Adım: Yeni bir ilke ekleme
@@ -28,7 +31,7 @@ Bu konu başlığı altında, bir cihazın uyumlu olarak kabul edilmek için uym
 
   ![Intune yönetim konsolunda uyumluluk ilkesi sayfasını ve sayfanın en üstündeki menüde ekle seçeneğini gösteren ekran görüntüsü](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  <a name="step-2-configure-settings"></a>2. Adım: Ayarlarını yapılandırma
+##  <a name="step-2--configure-settings"></a>2. Adım: Ayarlarını yapılandırma
 **İlke Oluştur** sayfasında gereken ayarları etkinleştirin:
   -   Parola ve şifreleme gibi Sistem güvenlik ayarları.
   -   Cihazın yazılım kilidinin kırılmış olup olmadığı veya Windows cihaz durumu kanıtlama hizmeti tarafından sağlıklı olarak raporlanıp raporlanmadığı gibi cihaz durumu ayarları.

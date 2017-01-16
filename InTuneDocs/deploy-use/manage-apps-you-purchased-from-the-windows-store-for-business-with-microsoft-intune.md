@@ -1,5 +1,5 @@
 ---
-title: "İş İçin Windows Mağazası uygulamalarını yönetme | Microsoft Intune"
+title: "İş İçin Windows Mağazası uygulamalarını yönetme | Microsoft Docs"
 description: "Toplu satın alınan uygulamaları Intune konsolundan yönetmek ve dağıtmak istiyorsanız, Microsoft Intune’u İş İçin Windows Mağazası’na bağlayın."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1e0cb157182415e25cd5829e244e47b2bd5b539b
 
 
 ---
 
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Microsoft Intune ile İş İçin Windows Mağazası'ndan satın aldığınız uygulamaları yönetme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [İş İçin Windows Mağazası](https://www.microsoft.com/business-store), kuruluşunuz için tek tek veya toplu olarak uygulamaları bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayla Microsoft Intune arasında bağlantı kurarak, toplu uygulama alışverişlerini Intune konsolundan yönetebilirsiniz. Örneğin:
 * Intune’la mağazadan satın aldığınız uygulamalar listesini eşitleyebilirsiniz.
 * Eşitlenen uygulamalar Intune yönetim konsolunda gösterilir ve bunları aynı diğer uygulamalar gibi dağıtabilirsiniz.
@@ -80,6 +83,6 @@ Mağazadan alınan uygulamaları, diğer tüm Intune uygulamalarıyla aynı şek
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

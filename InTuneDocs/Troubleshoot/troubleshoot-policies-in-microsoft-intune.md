@@ -1,11 +1,11 @@
 ---
-title: "İlke sorunlarını giderme | Microsoft Intune"
+title: "İlke sorunlarını giderme | Microsoft Docs"
 description: "İlke yapılandırma sorunlarını giderin."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 2a620d1e499e286365e5913be0ceb3d1efe3b846
 
 
 ---
 
-# Microsoft Intune’da ilke sorunlarını giderme
+# <a name="troubleshoot-policies-in-microsoft-intune"></a>Microsoft Intune’da ilke sorunlarını giderme
 
 Intune ile ilkelerinizi dağıtma ve yönetme konusunda sorun yaşıyorsanız buradan başlayın. Bu konuda, karşılaşabileceğiniz bazı yaygın sorunlar çözümleriyle birlikte sunulmuştur.
 
-## Genel Sorunlar
+## <a name="general-issues"></a>Genel Sorunlar
 
-### Dağıtılan bir ilke cihaza uygulandı mı?
+### <a name="was-a-deployed-policy-applied-to-the-device"></a>Dağıtılan bir ilke cihaza uygulandı mı?
 **Sorun:** Bir ilkenin doğru olarak uygulanıp uygulanmadığından emin değilsiniz.
 
 Intune yönetim konsolunda, **Cihaz Özellikleri**’nin altında her cihazın bir ilke sekmesi vardır. Her ilkenin bir **Amaçlanan Değer** ‘i ve bir de **Durum**‘u vardır. Amaçlanan değer, ilkeyi atarken ne elde etmek istediğinizi belirtir. Durum, cihaz için geçerli olan tüm ilkeler ve donanım ve işletim sistemi kısıtlamaları ve gereksinimleri birlikte değerlendirildiğinde gerçekten uygulanan şeydir. Olası durumlar şunlardır:
@@ -49,27 +49,27 @@ Aşağıdaki ekran görüntüsünde, iki anlaşılır örnek gösterilmektedir:
 > Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
 
 
-## Kaydedilen cihazlar ile ilgili sorunlar
+## <a name="issues-with-enrolled-devices"></a>Kaydedilen cihazlar ile ilgili sorunlar
 
-### Uyarı: Erişim Kuralları Exchange’e Kaydedilemedi
+### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Uyarı: Erişim Kuralları Exchange’e Kaydedilemedi
 **Sorun**: Yönetici konsolunda **Erişim Kuralları Exchange’e Kaydedilemedi**  hatasını alıyorsunuz.
 
 Yönetici Konsolu’nun altında, Şirket İçi Exchange İlkesi çalışma alanında ilkeler oluşturduysanız ancak O365 kullanıyorsanız, yapılandırılan ilke ayarları Intune tarafından zorunlu tutulmaz. Uyarıdaki ilke kaynağını not alın.  Şirket İçi Exchange İlkesi çalışma alanındaki eski kuralları silin; çünkü bunlar şirket içi Exchange için Intune’daki Genel Exchange kurallarıdır ve O365’e uygun değildir. Ardından, O365 için yeni ilke oluşturun.
 
-### Çeşitli kayıtlı cihazlarda güvenlik ilkesi değiştirilemiyor
+### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>Çeşitli kayıtlı cihazlarda güvenlik ilkesi değiştirilemiyor
 Windows Phone cihazlarında, MDM veya EAS yoluyla ayarlamış olduğunuz güvenlik ilkelerinin azaltılmasına izin verilmez. Örneğin, **Parolanın karakter sayısı alt sınırı** olarak 8 ayarlayın ve sonra bunu 4’e indirmeyi deneyin. Cihaza zaten daha kısıtlayıcı bir ilke uygulanmıştır.
 
 Cihaz platformuna bağlı olarak, ilkeyi daha az güvenli bir değerle değiştirmek isterseniz, güvenlik ilkelerini sıfırlamanız gerekebilir.
-Örneğin Windows’ta, masaüstünde sağdan içeri doğru çekerek **Düğmeler** çubuğunu açın ve **Ayarlar** &gt; **Denetim Masası**’nı seçin.   **Kullanıcı Hesapları** uygulamasını seçin.
+Örneğin Windows’ta, masaüstünde sağdan içeri doğru çekerek **Düğmeler** çubuğunu açın ve **Ayarlar** &gt; **Denetim Masası**’nı seçin.  **Kullanıcı Hesapları** uygulamasını seçin.
 Sol taraftaki gezinti menüsünde, en altta bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır. O bağlantıyı seçin ve ardından **İlkeleri Sıfırla** düğmesini seçin.
 Android, Windows Phone 8.1 ve üstü ve iOS gibi diğer MDM cihazlarında, daha az kısıtlayıcı bir ilkeyi uygulayabilmeniz için cihazın devre dışı bırakılması ve sonra hizmete yeniden kaydedilmesi gerekebilir.
 
-## Intune yazılım istemcisi çalıştıran bilgisayarlar ile ilgili sorunlar
+## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Intune yazılım istemcisi çalıştıran bilgisayarlar ile ilgili sorunlar
 
-### policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
+### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
 Intune yazılım istemcisi ile yönetilen Windows bilgisayarlarında, policyplatform.log dosyasındaki ilke hataları, cihazdaki Windows Kullanıcı Hesabı Denetimi’ndeki (UAC) varsayılan olmayan ayarların sonucunda oluşmuş olabilir. Varsayılan olmayan bazı UAC ayarları Microsoft Intune istemci yüklemelerini ve ilke yürütmesini etkileyebilir.
 
-#### UAC sorunlarını çözmek için
+#### <a name="to-resolve-uac-issues"></a>UAC sorunlarını çözmek için
 
 1.  [Cihazları Microsoft Intune yönetiminde devre dışı bırakma](/intune/deploy-use/retire-devices-from-microsoft-intune-management) konusunda anlatıldığı gibi bilgisayarı devre dışı bırakın.
 
@@ -82,7 +82,7 @@ Intune yazılım istemcisi ile yönetilen Windows bilgisayarlarında, policyplat
 
 4.  Bildirim kaydırıcısını varsayılan ayara getirin.
 
-### HATA: Bilgisayardan değer alınamadı, 0x80041013
+### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>HATA: Bilgisayardan değer alınamadı, 0x80041013
 Yerel sistemdeki saat beş dakika veya daha fazla eşitleme dışı ise bu durum oluşabilir. Yerel bilgisayardaki saat eşitleme dışı ise zaman damgaları geçersiz olacağından güvenli işlemler başarısız olur.
 
 Bu sorunu çözmek için yerel sistem saatini İnternet saatine veya ağ üzerindeki etki alanı denetleyicilerinde ayarlanan saate mümkün olduğunca yakın ayarlayın.
@@ -94,11 +94,11 @@ Bu sorunu çözmek için yerel sistem saatini İnternet saatine veya ağ üzerin
 
 
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

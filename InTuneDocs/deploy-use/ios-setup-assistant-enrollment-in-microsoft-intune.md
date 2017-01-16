@@ -1,5 +1,5 @@
 ---
-title: "iOS cihazlarını Kurulum Yardımcısı ile kaydetme | Microsoft Intune"
+title: "iOS cihazlarını Kurulum Yardımcısı ile kaydetme | Microsoft Docs"
 description: "Şirkete ait iOS cihazlarını fabrika ayarlarına sıfırlamak ve Kurulum Yardımcısı’nı çalıştırmaya hazırlamak için Apple Configurator aracını kullanarak kaydedin."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 01de894167a65f6b3a46808610232feb8dd7e536
 
 
 ---
 
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Kurulum Yardımcısı’nı kullanarak Apple Configurator ile iOS cihazlarını kaydetme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) kullanarak şirketin sahip olduğu iOS cihazlarının kaydedilmesini destekler. Bu işlem cihazı fabrika ayarlarına sıfırlar ve şirketin ilkelerini cihazın yeni kullanıcısı için yükleyerek Kurulum Yardımcısı’nın çalıştırılabilmesi için hazırlar.
 
 ## <a name="setup-assistant-enrollment-for-ios-devices-with-microsoft-intune"></a>Microsoft Intune ile iOS cihazları için Kurulum Yardımcısı kaydı
@@ -151,6 +154,6 @@ Apple Configurator kullanarak, bir iOS cihazını fabrika ayarlarına sıfırlay
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

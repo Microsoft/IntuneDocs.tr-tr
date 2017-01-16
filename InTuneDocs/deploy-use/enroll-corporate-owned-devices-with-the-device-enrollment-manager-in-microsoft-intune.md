@@ -1,5 +1,5 @@
 ---
-title: "Cihaz kayıt yöneticisine kaydolma | Microsoft Intune"
+title: "Cihaz kayıt yöneticisine kaydolma | Microsoft Docs"
 description: "Cihaz kayıt yöneticisi (DEM) hesabı, paylaşılan, şirkete ait çok sayıda mobil cihazı tek bir kullanıcı hesabı ile yönetebilir."
 keywords: 
 author: staciebarker
@@ -14,8 +14,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 83b89d06793f6f3934537408fb600b3b89afd35b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 751c6bee73175b8e6ac5ad192f12540520c676c0
 
 
 ---
@@ -66,7 +66,7 @@ Cihaz kayıt yöneticisi hesapları, şirkete ait çok sayıda cihazı kaydetme 
 
 5.  Gezinti bölmesinde, **Yönetici**'yi seçin, **Yönetici Yönetimi**'ne gidin ve **Cihaz Kayıt Yöneticisi**'ni seçin. **Cihaz Kayıt Yöneticileri** sayfası açılır.
 
-6.  **Ekle...**’yi seçin.  **Cihaz Kayıt Yöneticisi Ekle** iletişim kutusu açılır.
+6.  **Ekle...**’yi seçin. **Cihaz Kayıt Yöneticisi Ekle** iletişim kutusu açılır.
 
 7.  Intune hesabının **Kullanıcı Kimliği**'ni girin ve ardından **Tamam**'ı seçin. Cihaz kayıt yöneticisi bir Intune yöneticisi olamaz.
 

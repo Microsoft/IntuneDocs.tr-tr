@@ -1,30 +1,32 @@
 ---
-title: "Android cihazınızın kilitlenme süresini ayarlama | Microsoft Intune"
+title: "Android cihazınızın kilitlenme süresini ayarlama | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 5df88351d84da28c93d010b8484601b7dbcdaf7e
 
 
 ---
 
-# Android cihazınızın kilitlenme süresini ayarlama
+# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>Android cihazınızın kilitlenme süresini ayarlama
 Çalışmanıza yeniden bağlanmak için, sahip olduğunuz cihaz türü için verilen adımları izleyerek cihazınızda parola zaman aşımını ayarlamanız gerekir.
 
-## Yerel (Samsung KNOX olmayan) cihaz
+## <a name="native-non-samsung-knox-device"></a>Yerel (Samsung KNOX olmayan) cihaz
 
 1.  Cihazınızın **Ayarlar** bölümünde **Güvenlik** &gt; **Otomatik Olarak Kilitle**’ye dokunun (bu, bazı cihazlarda **Şu kadar işlem yapılmadığında telefonu kilitle** olarak görünür).
 
@@ -32,7 +34,7 @@ ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
 
 2.  Parola zaman aşımı değerini seçin.
 
-## Samsung KNOX cihazı
+## <a name="samsung-knox-device"></a>Samsung KNOX cihazı
 
 1.  Cihazınızın **Ayarlar** bölümünde, **Kilit ekranı ve güvenlik** &gt; **Otomatik olarak kilitle**’ye dokunun.
 
@@ -44,6 +46,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

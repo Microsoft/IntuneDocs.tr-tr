@@ -1,57 +1,40 @@
 ---
-title: "Windows cihazınızı el ile eşitleme | Microsoft Intune"
+title: "Windows cihazınızı el ile eşitleme | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
+ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
+ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 
 ---
 
-
 # <a name="sync-your-windows-device-manually"></a>Windows cihazınızı el ile eşitleme
-Uygulamanızın yüklenmesi çok uzun sürerse, Windows cihazınızı el ile eşitlemeyi deneyebilirsiniz. El ile eşitleme, yükleme hızını artırmaya yardımcı olabilir.
 
-Yalnızca aşağıdaki sürümler desteklenir. Cihazınız listede yoksa eşitleme desteklenmez. Sahip olduğunuz cihazın türüyle eşleşen yönergeleri kullanın.
+Bazen Windows cihazınıza bir uygulama yüklemeyi denemek, düşündüğünüzden daha uzun sürebilir. Bu durumda, Windows cihazınızı el ile eşitlemeyi deneyebilirsiniz. Eşitlemek yüklemenin hızını artırmaya yardımcı olabilir.
 
-* [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 masaüstü](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-81)
+> [!Note] 
+> Daha yavaş olan veya aynı anda içerik indiren cihazların çok sayıda olduğu bir ağdaysanız uygulamaların yüklenmesi biraz zaman alabilir.
 
+Aşağıdaki Windows sürümleri el ile eşitlenebilir. Ne yazık ki, cihazınızda farklı bir Windows sürümü kullanılıyorsa el ile eşitleme başlatamazsınız.
 
-## <a name="windows-10-mobile"></a>Windows 10 Mobile
-Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 Mobile cihazınızı el ile eşitlemek için:
-
-1. **Tüm uygulamalar** > **Ayarlar** > **Hesaplar**’a gidin.
-
-    ![Ayarları ekranında Hesapları Seçme](./media/win10m-sync-1-settings-accounts.png)
-
-2. **İş yeri erişimi**’ni seçin.
-
-    ![Hesap türü olarak iş yeri erişimini seçme](./media/win10m-sync-2-work-access.png)
-
-3. **Cihaz yönetimine kaydol**’un altında, şirketinizin adını seçin.
-
-    ![Cihaz yönetimi için şirket adı seçme](./media/win10m-sync-3-tap-comp-name.png)
-
-4. **Eşitle** simgesini seçin.
-
-    ![Eşitleme simgesini seçme](./media/win10m-sync-4-tap-sync.png)
-
-    Ekranın en üstünde “Hesabınızı eşitliyoruz” iletisi görüntülenir. Cihazınızın eşitlenmesi bitene kadar **Eşitle** düğmesi gri gösterilir.
+* [Windows 10 masaüstü ile eşitleme](#windows-10-desktop)
+* [Windows 10 Mobile ile eşitleme](#windows-10-mobile)
+* [Windows Phone 8.1 ile eşitleme](#windows-phone-81)
 
 ## <a name="windows-10-desktop"></a>Windows 10 masaüstü
 Birden fazla Windows 10 sürümü olduğundan iki grup adım vardır. Hangi adımları kullanacağınızı anlamak için ekran görüntülerine bakın ve cihazınızda gördüğünüze benzeyen ekran görüntüsündeki adımları uygulayın.
@@ -109,6 +92,27 @@ Birden fazla Windows 10 sürümü olduğundan iki grup adım vardır. Hangi adı
 
    Eşitleme işlemi tamamlanana kadar düğme gri gösterilir.
 
+   ## <a name="windows-10-mobile"></a>Windows 10 Mobile
+   Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 Mobile cihazınızı el ile eşitlemek için:
+
+   1. **Tüm uygulamalar** > **Ayarlar** > **Hesaplar**’a gidin.
+
+       ![Ayarları ekranında Hesapları Seçme](./media/win10m-sync-1-settings-accounts.png)
+
+   2. **İş yeri erişimi**’ni seçin.
+
+       ![Hesap türü olarak iş yeri erişimini seçme](./media/win10m-sync-2-work-access.png)
+
+   3. **Cihaz yönetimine kaydol**’un altında, şirketinizin adını seçin.
+
+       ![Cihaz yönetimi için şirket adı seçme](./media/win10m-sync-3-tap-comp-name.png)
+
+   4. **Eşitle** simgesini seçin.
+
+       ![Eşitleme simgesini seçme](./media/win10m-sync-4-tap-sync.png)
+
+       Ekranın en üstünde “Hesabınızı eşitliyoruz” iletisi görüntülenir. Cihazınızın eşitlenmesi bitene kadar **Eşitle** düğmesi gri gösterilir.
+
 ## <a name="windows-phone-81"></a>Windows Phone 8.1
 Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows Phone 8.1 cihazınızı el ile eşitlemek için:
 
@@ -130,6 +134,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

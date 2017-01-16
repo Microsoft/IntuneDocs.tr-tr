@@ -1,5 +1,5 @@
 ---
-title: "Kuruluşa ait cihazları yönetme | Microsoft Intune"
+title: "Kuruluşa ait cihazları yönetme | Microsoft Docs"
 description: "Şirkete ait cihazları cihaz türüne, nasıl satın alındığına ve kuruluşun gereksinimlerine bağlı olarak çeşitli yollarla kaydedin."
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
 
 
 ---
 
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Şirkete ait cihazları Intune kullanarak kaydetme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Kuruluşa ait veya şirkete ait cihazları cihaz türüne, cihazın nasıl satın alındığına ve kuruluşun gereksinimlerine bağlı olarak çeşitli yollarla Intune ile yönetilmek üzere kaydedebilirsiniz. Bir “kendi cihazını getir” (KCG) senaryosunda olduğu gibi, şirkete ait cihazları kaydetmek ve yönetmek için Şirket Portalı uygulamasını da yükleyebilirsiniz.
 
@@ -63,6 +65,6 @@ Bir cihaz şirket cihazı olarak etiketlendiğinde, yönetici konsolunda bulunan
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Şirket Portalı web sitesinden bir cihazı uzaktan kilitleme | Microsoft Intune"
+title: "Şirket Portalı web sitesinden bir cihazı uzaktan kilitleme | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 04c7ae7df65a0873e794420c1880aa901aa230b6
 
 
 ---
 
 
-# Şirket Portalı web sitesinden bir cihazı uzaktan kilitleme
+# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden bir cihazı uzaktan kilitleme
 
 Cihazınız kaybolduysa veya çalındıysa, [Şirket Portalı web sitesindeki](http://portal.manage.microsoft.com) Uzaktan Kilitleme seçeneğini kullanarak cihazı kilitleyebilirsiniz. Uzaktan Kilitleme, aşağıdaki cihaz türleri için çalışır:
 
@@ -64,6 +64,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

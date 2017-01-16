@@ -1,11 +1,11 @@
 ---
-title: "iOS ilke ayarları | Microsoft Intune"
+title: "iOS ilke ayarları | Microsoft Docs"
 description: "Intune ile yönettiğiniz iOS cihazlarında ayarları ve özellikleri denetleyen ilkeler oluşturun."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da iOS ilke ayarları
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune, iOS cihazlarda yapılandırabileceğiniz bir dizi yerleşik genel ayar sunar. Ayrıca, Intune'dan kullanılamayan özel ayarları oluşturmak için Apple Configurator aracını kullanabilirsiniz.
 
@@ -78,12 +80,12 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |----------------|-------|
 |**iCloud'a yedeklemeye izin ver**|Kullanıcının cihazı iCloud’a yedeklemesine izin verin.|
 |**iCloud'a belge eşitlemeye izin ver**|iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verin.|
-|**iCloud'a Fotoğraf Yayını’nı eşitlemeye izin ver**|Cihazdaki fotoğrafların iCloud’a eşitlenmesine izin verin.|
+|**iCloud'a Fotoğraf Yayını’nı eşitlemeye izin ver**|Kullanıcıların fotoğrafların iCloud’a eşitlenmesine ve tüm kullanıcıların cihazlarında kullanılabilir olmasına imkan sağlayan **Fotoğraf Akışım**’ı cihazlarında etkinleştirmesine olanak tanır.|
 |**Şifreli yedekleme iste**|Tüm cihaz yedeklemelerinin şifrelenmesini zorunlu tutar.|
 |**Yönetilen uygulamaların iCloud ile veri eşitlemesine izin verme**|Intune ile yönettiğiniz uygulamaların, kullanıcının iCloud hesabıyla veri eşitlemesine izin verin.|
 |**İletim’in başka bir cihazda etkinliklerini sürdürmesine izin verme**|Kullanıcının bir iOS cihazında başladığı çalışmayı başka bir iOS veya Mac OS X cihazında sürdürmesine izin verin.|
-|**iCloud Fotoğraf Paylaşma’ya izin ver**|iOS paylaşılan fotoğraf akışı özelliğinin kullanılmasına izin verin.|
-|**iCloud Fotoğraf Kitaplığı’na izin ver**|Kullanıcının iCloud üzerinde fotoğraf depolamasına izin verin. Devre dışı bırakılırsa, iCloud üzerinde depolanmış olan tüm fotoğraflar kaldırılır.|
+|**iCloud Fotoğraf Paylaşma’ya izin ver**|Cihazda **iCloud Fotoğraf Paylaşımı**’nı devre dışı bırakmak için **Hayır** seçeneğini belirleyin.|
+|**iCloud Fotoğraf Kitaplığı’na izin ver**|**Hayır** seçeneği ayarlanırsa kullanıcıların fotoğraflar ve videoları bulutta depolamasını sağlayan iCloud fotoğraf kitaplığının kullanımı devre dışı bırakılır.   Bu ayar **Hayır** olarak belirlenirse iCloud Fotoğraf Arşivi'nden cihaza tamamen indirilmeyen tüm fotoğraflar cihazdan kaldırılır.|
 
 ### <a name="application-settings-for-the-browser"></a>Tarayıcı için uygulama ayarları
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
@@ -173,6 +175,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Düzenle**|Seçili uygulamanın adını, yayımcısını ve URL'sini düzenleyin.|
 |**Sil**|Seçilen uygulamayı listeden silin.|
 
+Uyumlu ve uyumsuz uygulama ayarlarını içeren ilkelerin kullanıcı gruplarına dağıtılması gerekir.
+
 ### <a name="kiosk-mode-settings"></a>Bilgi noktası modu ayarları
 
 |Ayar adı|Ayrıntılar|
@@ -202,7 +206,7 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 ### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Uyumlu ve uyumlu olmayan uygulamalar için başvuru bilgileri
 
- **Uyumlu Olmayan Uygulamalar Raporu** 'nu kullanarak izin verilen ve engellenen uygulamaların uyumluluğunu görüntüleyin.
+**Uyumlu Olmayan Uygulamalar Raporu** 'nu kullanarak izin verilen ve engellenen uygulamaların uyumluluğunu görüntüleyin.
 
 ##### <a name="to-run-the-noncompliant-apps-report"></a>Uyumlu Olmayan Uygulamalar Raporu'nu çalıştırmak için
 
@@ -383,6 +387,6 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

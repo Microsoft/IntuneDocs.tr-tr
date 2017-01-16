@@ -1,5 +1,5 @@
 ---
-title: "iOS kullanıcılarınız uygulamalarını nasıl alır | Microsoft Intune"
+title: "iOS kullanıcılarınız uygulamalarını nasıl alır | Microsoft Docs"
 description: "iOS uygulamalarını son kullanıcılara sağlama yöntemleri"
 keywords: 
 author: barlanmsft
@@ -14,14 +14,16 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3ba0a5cda91164761c4576df935c54390bc78f8c
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
 
 
 ---
 
 
 # <a name="how-your-ios-users-get-their-apps"></a>iOS kullanıcılarınız uygulamalarını nasıl alır
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune aracılığıyla dağıttığınız uygulamaları son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın.
 
@@ -55,6 +57,6 @@ Uygulamaların nasıl ekleneceği ve bu kutucuklara nasıl yerleştirileceği ha
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

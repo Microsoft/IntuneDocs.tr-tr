@@ -1,28 +1,30 @@
 ---
-title: "Şirketinizin Sanal Özel Ağını (VPN) yükleme | Microsoft Intune"
+title: "Şirketinizin Sanal Özel Ağını (VPN) yükleme | Microsoft Docs"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: cd597af9a05f9c866b31c14610fef5679d04ee5d
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 0df9d0bd3281fac683a5b5b27b320fd17e0f32b6
 
 
 ---
 
 
-# Şirketinizin Sanal Özel Ağını (VPN) yükleme
+# <a name="install-your-companys-virtual-private-network-vpn"></a>Şirketinizin Sanal Özel Ağını (VPN) yükleme
 
 BT yöneticiniz şirketinizin kaynaklarına bağlanmanıza imkan sağlamak için bir VPN uygulaması yapılandırdıysa, Android cihazınızda bir VPN uygulaması yüklemeniz gerektiğini belirten bir bildirim görürsünüz. VPN uygulamasını yüklemek için bu adımları uygulayın.
 
@@ -33,13 +35,12 @@ BT yöneticiniz şirketinizin kaynaklarına bağlanmanıza imkan sağlamak için
 3.  **Kuruluş VPN profilini yükle**’ye dokunun, yönergeleri izleyin. Şirketinizin kullandığı VPN sağlayıcısına bağlı olarak, yükleme adımları biraz farklı olabilir.
 
 
-
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

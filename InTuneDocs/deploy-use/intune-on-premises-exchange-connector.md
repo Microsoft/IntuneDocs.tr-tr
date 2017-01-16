@@ -1,5 +1,5 @@
 ---
-title: "Şirket içi EAS için Exchange Connector | Microsoft Intune"
+title: "Şirket içi EAS için Exchange Connector | Microsoft Docs"
 description: "Bağlayıcı aracını kullanarak, Exchange ActiveSync MDM için Intune yönetim konsoluyla şirket içi Exchange Server arasında iletişimi etkinleştirin."
 keywords: 
 author: andredm7
@@ -14,13 +14,15 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
-ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
 
 
 ---
 
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Intune Şirket İçi Exchange Connector’ı yükleme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 Microsoft Intune’la mobil cihazların posta kutularını barındıran Exchange Server'ın iletişim kurmasını sağlayan bir bağlantı ayarlamak için Intune yönetici konsolundan Şirket İçi Exchange Connector’ı indirip yapılandırmanız gerekir. Intune, abonelik başına herhangi bir türde tek bir Exchange Connector bağlantısını destekler.
@@ -93,10 +95,10 @@ Intune Şirket İçi Exchange Connector'ı yüklemek için aşağıdaki adımlar
 
     2. Sol üst taraftaki **?** simgesini ve ardından **Hakkında**’yı seçin.
 
-    3.  **POP Dış Sunucu** değerini bulun.
+    3. **POP Dış Sunucu** değerini bulun.
 
     4. Barındırılan Exchange sunucunuzun proxy sunucusu ayarlarını belirtmek için **Proxy Sunucusu**'nu seçin.
-        1.  **Mobil cihaz bilgileri eşitlenirken proxy sunucusu kullan**'ı seçin.
+        1. **Mobil cihaz bilgileri eşitlenirken proxy sunucusu kullan**'ı seçin.
 
         2. Sunucuya erişmek için kullanılan **proxy sunucusu adı** ve **bağlantı noktası numarasını** belirtin.
 

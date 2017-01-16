@@ -1,9 +1,10 @@
 ---
 
-title: "Bilgisayar istemci yazılımını yükleme | Microsoft Intune"
+title: "Bilgisayar istemci yazılımını yükleme | Microsoft Docs"
 description: "Windows bilgisayarlarınızın Microsoft Intune istemci yazılımıyla yönetilmesini sağlamanıza yardımcı olması için bu kılavuzu kullanın."
 keywords: 
 author: staciebarker
+ms.author: stabar
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 103e7065d1e2c3281f8f04808ee2546d3c7e2b53
-ms.openlocfilehash: 32af8a615453b8c72e704f40dcdf0de6fbf10907
+ms.sourcegitcommit: 928e4e8097b9cd326e0863a45b183226a7eae056
+ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
 
 
 ---
@@ -78,7 +79,7 @@ Aşağıdaki yordamı örnek alarak Intune istemci yazılımını bilgisayarlara
 
 1.  **Microsoft_Intune_Setup.exe** ve **MicrosoftIntune.accountcert** istemci yükleme dosyalarını, referans bilgisayarındaki **%Systemdrive%\Temp\Microsoft_Intune_Setup** klasörüne kopyalayın.
 
-2.   **SetupComplete.cmd** betiğine aşağıdaki komutu ekleyerek **WindowsIntuneEnrollPending** kayıt defteri girişini oluşturun:
+2.  **SetupComplete.cmd** betiğine aşağıdaki komutu ekleyerek **WindowsIntuneEnrollPending** kayıt defteri girişini oluşturun:
 
     ```
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
@@ -138,6 +139,6 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

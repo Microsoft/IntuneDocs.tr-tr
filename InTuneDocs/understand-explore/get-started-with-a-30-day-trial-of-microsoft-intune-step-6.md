@@ -1,5 +1,5 @@
 ---
-title: "Intune değerlendirmeleri için diğer seçenekler ve ek özellikler | Microsoft Intune"
+title: "Intune değerlendirmeleri için diğer seçenekler ve ek özellikler | Microsoft Docs"
 description: "Intune’un 30 günlük ücretsiz değerlendirmesi kaydolurken bilmeniz gereken uyarılar, bildirimler, raporlar ve genel Intune özellikleri açıklanır."
 keywords: 
 author: lindavr
@@ -13,13 +13,15 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
 
 
 ---
 
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Intune değerlendirme abonelikleri için diğer seçenekler ve ek özellikler
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="alerts-notifications-and-reports"></a>Uyarılar, bildirimler ve raporlar
 Intune yönetim konsolunda, kuruluşunuzdaki yönetilen cihazların genel durumunu hızlı bir şekilde değerlendirmek için **uyarılar** kullanılır. Uyarıları yalnızca kuruluşunuz için gereken bilgileri bildirecek ve görüntüleyecek biçimde yapılandırabilir ve özelleştirebilirsiniz. Bir uyarının etkin olup olmadığını ayarlayabilir, önem derecesini yapılandırabilir, bir uyarı görüntülenmeden önce bir uyarı olayının ne sıklıkla tetiklenmesi gerektiğini belirlemek için görüntüleme eşiğini kullanabilir ve ayrıca belirli uyarı türleri için özel ayarlar yapılandırabilirsiniz.
@@ -56,6 +58,6 @@ Destek seçenekleri, [Microsoft Intune için nasıl destek alınır](/Intune/Tro
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
