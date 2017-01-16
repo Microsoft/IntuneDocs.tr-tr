@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar| Microsoft Intune"
+title: "Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar| Microsoft Docs"
 description: "Intune dağıtımınızın başarılı olmasını sağlamak için son kullanıcılarınızla bilgi paylaşın."
 keywords: "son kullanıcılar, kullanıcılar, iletişim"
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 83436b7d8e554eef0cf48d0f07999f06bf811bbc
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ed1b1ba4cb5ee48139e4f4dbf4dab8d04b53368f
 
 
 ---
@@ -50,6 +50,6 @@ Son kullanıcılarınızın uygulamalarını nasıl aldığını anlamak için, 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

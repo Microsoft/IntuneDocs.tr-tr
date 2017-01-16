@@ -1,11 +1,11 @@
 ---
-title: "Cihaz koruma kuralını uyumluluk ilkesinde etkinleştirme | Microsoft Intune"
+title: "Cihaz koruma kuralını uyumluluk ilkesinde etkinleştirme | Microsoft Docs"
 description: "Cihaz uyumluluk ilkesinde mobil tehdit koruması kuralını etkinleştirin."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,41 +14,41 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: efddf7645d0548c842ae8aa3b1ca5222023913b5
+ms.sourcegitcommit: 80e96003c584c67cb6b0289a7e2ed1ff3a833c2c
+ms.openlocfilehash: 3dea6c35d5fc035a5aef6dda52543b64cd5ce177
 
 
 ---
 
 # <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>Uyumluluk ilkesinde cihaz tehdit koruması kuralını etkinleştirme
-Lookout mobil tehdit koruması özelliği ile Intune, size cihazda mobil tehditleri tespit etme ve bir risk değerlendirmesi yapma becerisi sağlar. Bir uyumluluk ilkesi kuralı oluşturup, cihazın uyumlu olup olmadığını belirlemek için risk değerlendirmesi ekleyebilirsiniz. Ardından Exchange, SharePoint ve cihaz uyumluluğuna dayalı diğer hizmetlere erişim izin vermek veya erişimi engellemek için koşullu erişim ilkesini kullanabilirsiniz.
 
-Lookout cihaz tehdit algılama özelliğinin cihaza yönelik uyumluluk ilkesini etkilemesini sağlamak için:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-* **Cihaz Tehdit Koruması** kuralının uyumluluk ilkesinde etkinleştirilmesi gerekir.
+Lookout mobil tehdit koruması ile Intune mobil cihazlardaki tehditleri algılamanıza ve bu cihazlardaki riski değerlendirmenize olanak tanır. Bir cihazın uyumlu olup olmadığını belirlemek üzere risk değerlendirmesi yapan bir uyumluluk ilkesi oluşturabilirsiniz. Ardından cihaz uyumluluğuna dayalı olarak hizmetlere erişimi engellemek için koşullu erişim ilkesini kullanabilirsiniz.
 
-* **Intune yönetici konsolundaki** **Lookout Durumu** sayfasının **Etkin** olarak görünmesi gerekir. Lookout tümleştirmesinin nasıl etkinleştirileceğine ilişkin daha fazla bilgi ve yönergeler için [Intune'da Lookout MTP bağlantısını etkinleştirme](enable-lookout-mtp-connection-in-intune.md) konusuna göz atın.
+Lookout cihaz tehdit koruması ile uyumluluk ilkesinin önkoşulları:
 
+- [Lookout cihaz tehdit koruması aboneliğini ayarlama](set-up-your-subscription-with-lookout-mtp.md)
+- [Intune’da Lookout bağlantısını etkinleştirme](enable-lookout-mtp-connection-in-intune.md)
+- [Lookout for Work uygulamasını yapılandırma](configure-and-deploy-lookout-for-work-apps.md)
 
-Uyumluluk ilkesinde cihaz tehdit koruması kuralı oluşturmadan önce [aboneliğinizi Lookout cihaz tehdit koruması için ayarlamanız](set-up-your-subscription-with-lookout-mtp.md), [Intune'da Lookout bağlantısını etkinleştirmeniz](enable-lookout-mtp-connection-in-intune.md) ve [Lookout for Work uygulamasını yapılandırmanız](configure-and-deploy-lookout-for-work-apps.md) önerilir. Uyumluluk kuralı, ancak kurulum tamamlandıktan sonra devreye girer.
+Lookout cihaz tehdit koruması kurulumunun bir parçası olarak, [Lookout konsolunda](https://aad.lookout.com) çeşitli tehditleri yüksek, orta ve düşük olarak sınıflandıran bir ilke oluşturulur. Intune uyumluluk ilkesinde izin verilen en yüksek tehdit düzeyi ayarlanır.
 
-Cihaz tehdit koruması kuralını etkinleştirmek için mevcut bir uyumluluk ilkesi kullanabilir veya yeni bir tane oluşturabilirsiniz.
+1. [Intune yönetim konsolunda](https://manage.microsoft.com), **Uyumluluk İlkeleri** sayfasına gidin. Mevcut bir uyumluluk ilkesi kullanabilir veya yeni bir tane oluşturabilirsiniz. **Cihaz Durumu**’na gidin ve **Cihaz Tehdit Koruması**’nı etkinleştirin.
+  ![](../media/mtp/mtp-compliance-policy-rule.png) üzerindeki cihaz tehdit koruması kuralı ayarını gösteren ekran görüntüsü
 
-Lookout cihaz tehdit koruması kurulumunun bir parçası olarak, [Lookout konsolunda](https://aad.lookout.com) çeşitli tehditleri yüksek, orta ve düşük düzeylerde sınıflandıran bir ilke oluşturulur. Intune uyumluluk ilkesinde izin verilen en yüksek tehdit düzeyini ayarlamak için tehdit düzeyini kullanırsınız.
-
-**Intune yönetim konsolundaki** **Uyumluluk İlkeleri** sayfasında bulunan **Cihaz Sistem Durumu**’na giderek **Cihaz Tehdit Koruması** kuralını aç/kapa seçeneğini kullanarak etkinleştirin. Ardından izin verilen en yüksek tehdit düzeyini seçin. Bu düzey aşağıdakilerden biri olabilir:
-* **Hiçbiri (güvenli)**: Bu en güvenli ayardır.  Bu, cihazda herhangi bir tehdit olamayacağı anlamına gelir.  Herhangi bir düzeyde tehdit bulunduğunda, cihaz uyumsuz olarak değerlendirilir.  
-* **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
-* **Orta**: Cihazda bulunan tehditler düşük veya orta düzeydeyse cihaz uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz uyumlu değil olarak değerlendirilir.
-* **Yüksek**: Bu en az güvenli seçenektir. Temel olarak, tüm tehdit düzeylerine izin verir ve yalnızca raporlama amacıyla kullandığınızda yararlı olabilir.
-
-![cihaz tehdit koruması kuralı ayarını gösteren ekran görüntüsü ](../media/mtp/mtp-compliance-policy-rule.png)
+2. **İzin verilen en yüksek tehdit düzeyini** seçin:
+  * **Hiçbiri (Güvenli)**: Bu, en güvenli ayardır.  Cihazda herhangi bir tehdit mevcut olamaz ve yine de şirket kaynaklarına erişebilir.  Herhangi bir tehdit bulunduğunda, cihaz uyumsuz olarak değerlendirilir.  
+  * **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumludur. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
+  * **Orta**: Cihazda bulunan tehditler düşük veya orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumlu değil olarak değerlendirilir.
+  * **Yüksek**: Bu en az güvenli seçenektir. Bu tüm tehdit düzeylerine izin verir ve Lookout mobil tehdit korumasını yalnızca raporlama amacıyla kullanır.
 
 ![cihaz tehdit koruması kuralı ayarına yönelik tehdit düzeyi seçeneğini gösteren ekran görüntüsü](../media/mtp/mtp-compliance-policy-setting.png)
 
-Office 365 ve diğer hizmetler için koşullu erişim ilkeleri oluşturursanız, yukarıdaki uyumluluk değerlendirmesi dikkate alınır ve uyumlu olmayan cihazların şirket kaynaklarına erişimi tehdit giderilene kadar engellenir.
+Office 365 veya diğer hizmetler için koşullu erişim ilkeleri oluşturursanız bu uyumluluk değerlendirmesi dikkate alınır ve uyumlu olmayan cihazların bu hizmetlere erişimi tehdit giderilene kadar engellenir.
 
-Bir cihazın uyumluluk durumunu **Intune yönetici konsolunun** **Tüm Cihazlar** sayfasında görebilirsiniz.
+## <a name="monitor-device-threats"></a>Cihaz tehditlerini izleme
+Bir cihazın uyumluluk durumunu görmek için [Intune yönetim konsoluna](https://manage.microsoft.com) giderek **Tüm Cihazlar**’ı görüntüleyin.
 
 ![Intune yönetici konsolundaki cihazlar sayfasında bir cihazın uyumluluk durumunu gösteren ekran görüntüsü](../media/mtp/mtp-device-status-intune-console.png)
 
@@ -62,6 +62,6 @@ Bir cihazın uyumluluk durumunu **Intune yönetici konsolunun** **Tüm Cihazlar*
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

@@ -1,12 +1,12 @@
 ---
-title: "Kullanıcılarınıza mobil uygulama yayımlama | Microsoft Intune"
+title: "Kullanıcılarınıza mobil uygulama yayımlama | Microsoft Docs"
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 21e79e5dc5fa47c3612182bbc7040c488f94849b
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
 
 
 ---
 
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Hızlı Başlangıç Kılavuzu: Kullanıcılarınıza mobil uygulama yayımlama
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune, tercih ettikleri cihazlardan gereksinim duydukları mobil ve masaüstü uygulamalara hızlı ve kolay bir şekilde erişim vererek son kullanıcılarınızın verimliliğini artırmaya yardımcı olabilir. Son kullanıcıların uygulamaları kolayca kullanmasını sağlamak, doğru uygulamaları bulmak ve yüklemek için harcadıkları süre ve çabayı azaltarak gerek duydukları uygulamaları bulamadıklarında kullanıcıların yardım masasına yaptığı çağrıları azaltır.   
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>Bu hızlı başlangıç kılavuzu bana uygun mu?
@@ -42,6 +45,6 @@ Office mobil uygulamasını yayımlama, bu uygulamalarda veri kaybı korumasın�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

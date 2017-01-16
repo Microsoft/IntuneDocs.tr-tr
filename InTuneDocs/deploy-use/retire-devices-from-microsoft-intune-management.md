@@ -1,11 +1,11 @@
 ---
-title: "Cihazları devre dışı bırakma | Microsoft Intune"
+title: "Cihazları devre dışı bırakma | Microsoft Docs"
 description: "Intune, ilkesini ve şirket portalını kaldırarak cihazı Intune yönetiminden kaldırmak için hem seçmeli silmeyi, hem tam silmeyi destekler."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,21 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
+ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Cihazları Intune yönetiminde devre dışı bırakma
 
-Cihazlar ister şirkete ait ister kişisel olsun, yönetilen bir cihazın er ya da geç Intune yönetiminden kaldırılması gerekir. Bir cihazı çeşitli nedenlerle kullanımdan kaldırmanız gerekebilir:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Cihazlar ister şirkete ait ister kişisel olsun, yönetilen bir cihazın er ya da geç Intune yönetiminden kaldırılması gerekir. 
+
+Cihazlar bir süre Intune hizmetine bağlanmasa bile, müdahale etmediğiniz takdirde Intune’dan hiçbir zaman kaldırılmazlar. 
+
+Bir cihazı çeşitli nedenlerle kullanımdan kaldırmanız gerekebilir:
 
 -   Kullanıcının şirketten planlı bir şekilde ("yönetilen" ayrılma) ayrılması
 -   Kullanıcı aniden ayrılması (işten çıkartılırsa, istifa ederse, vb.).
@@ -70,6 +76,6 @@ Bazı durumlarda, cihazın kendi ömrü sona erer. Böyle durumlarda, tam temizl
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

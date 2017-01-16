@@ -1,5 +1,5 @@
 ---
-title: "Kaynak erişimi için sertifika profilleri |Microsoft Intune"
+title: "Kaynak erişimi için sertifika profilleri |Microsoft Docs"
 description: "Her kullanıcı cihazına yüklenen bir sertifikayla Güvenli VPN, Wi-Fi ve e-posta erişimi."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 35d08100b4332cc63667a401143c17972225a908
-ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
 
 
 ---
 
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Microsoft Intune’da sertifika profilleriyle güvenli kaynak erişimi
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılara şirket kaynaklarına erişim izni verdiğinizde, her kullanıcı cihazında yüklü bir sertifika kullanarak erişim güvenliğini sağlayabilirsiniz. Şu şekilde çalışır:
 
 1. [Sertifika altyapısını SCEP için yapılandırma](configure-certificate-infrastructure-for-scep.md) ve [Sertifika altyapısını PFX için yapılandırma](configure-certificate-infrastructure-for-pfx.md) konuları altında açıklandığı gibi, doğru sertifika altyapısına sahip olduğunuzdan emin olun.
@@ -44,7 +47,7 @@ VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılara şirket kayn
 
   Aşağıdaki platformları çalıştıran cihazlar için bir **SCEP Sertifika Profili** kullanın:
     -   Mac OS X 10.9 ve üzeri
-    -   Windows Phone 8.1 
+    -   Windows Phone 8.1
 
 Her platform için ayrı profil oluşturmanız gerekir. Profili oluştururken daha önce oluşturduğunuz **Güvenilen Kök Sertifika Profili** ile ilişkilendirin.
 
@@ -61,6 +64,6 @@ Her platform için ayrı profil oluşturmanız gerekir. Profili oluştururken da
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

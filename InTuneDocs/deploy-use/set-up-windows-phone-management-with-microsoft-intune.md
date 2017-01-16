@@ -1,5 +1,5 @@
 ---
-title: "Windows 10 Mobile ve Windows Phone yönetimini kurma | Microsoft Intune"
+title: "Windows 10 Mobile ve Windows Phone yönetimini kurma | Microsoft Docs"
 description: "Microsoft Intune ile, Windows 10 Mobile veya Windows Phone cihazları için mobil cihaz yönetimini (MDM) etkinleştirin."
 keywords: 
 author: staciebarker
@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d58b2d57ec99add7bbc372584f0ecc430830530a
 
 
 ---
 
 
 # <a name="set-up-windows-phone-and-windows-10-mobile-management-with-microsoft-intune"></a>Microsoft Intune ile Windows Phone ve Windows 10 Mobile yönetimini ayarlama
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Bir Intune yöneticisi olarak Windows 10 Mobile ve Windows Phone cihazlar için kaydolmayı ve yönetmeyi iki biçimde etkinleştirebilirsiniz:
 

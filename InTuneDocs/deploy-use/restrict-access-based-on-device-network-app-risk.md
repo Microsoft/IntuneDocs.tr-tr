@@ -1,11 +1,11 @@
 ---
-title: "Cihaz tehdit koruması kullanarak erişimi kısıtlama | Microsoft Intune"
+title: "Cihaz tehdit koruması kullanarak erişimi kısıtlama | Microsoft Docs"
 description: "Şirket kaynaklarına erişimi cihaz, ağ ve uygulama riskine dayalı olarak kısıtlayın."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,65 +14,76 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: d529bd1c2a281c06f70593e73b71d09962a3c714
+ms.sourcegitcommit: 6b83d06ecbe6e202bf022444c288e0866b3507c6
+ms.openlocfilehash: 1dd2c4a46857aef1ba273904d58d5eacae99c7bc
 
 
 ---
 
 # <a name="restrict-access-to-company-resource-based-on-device-network-and-application-risk"></a>Şirket kaynağına erişimi cihaz, ağ ve uygulama riskine dayalı olarak kısıtlama
-Microsoft Intune ile tümleşik bir cihaz tehdit koruması çözümü olan Lookout tarafından gerçekleştirilen risk değerlendirmesine dayalı olarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Lookout hizmetinin cihazlardan işletim sistemi (OS) güvenlik açıkları, yüklü kötü amaçlı uygulamalar ve kötü amaçlı ağ profilleri için topladığı telemetriye dayalıdır. Lookout tarafından rapor edilen, Intune uyumluluk ilkeleri ile etkinleştirilen risk değerlendirmesine dayalı olarak bundan sonra Intune’da koşullu erişim ilkeleri yapılandırabilir ve bu cihazlarda algılanan tehditler nedeniyle uyumlu olmadığı belirlenen cihazlara erişim izni verebilir veya erişimi engelleyebilirsiniz.  
+Microsoft Intune ile tümleşik bir cihaz tehdit koruması çözümü olan Lookout tarafından gerçekleştirilen risk değerlendirmesine dayalı olarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Lookout hizmeti tarafından cihazlardan toplanan ve aşağıdakileri içeren telemetriye göre değerlendirilir:
+- İşletim sistemi güvenlik açıkları
+- Yüklenen kötü amaçlı uygulamalar
+- Kötü amaçlı ağ profilleri
+
+Intune uyumluluk ilkeleri ile etkinleştirilen Lookout risk değerlendirmesine dayalı olarak koşullu erişim ilkelerini yapılandırabilirsiniz. Ayarlar, algılanan tehditlere dayalı olarak uyumsuz cihazlara izin vermenize veya bunları engellemenize olanak tanır.  
 
 ## <a name="what-problem-does-this-solve"></a>Hangi sorunu çözer?
-Şirketler ve kuruluşların hassas verileri fiziksel, uygulama tabanlı ve ağ tabanlı tehditlerin yanı sıra işletim sistemi güvenlik açıklarını içeren yeni tehditlerden koruması gerekir.
+Şirketlerin hassas verileri fiziksel, uygulama tabanlı ve ağ tabanlı tehditlerin yanı sıra işletim sistemi güvenlik açıklarını içeren yeni tehditlerden koruması gerekir.
 
-Tarihsel olarak, şirketler ve kuruluşlar bilgisayarları kötü niyetli saldırılara karşı koruma konusunda etkin bir pozisyonda yer almıştır. Mobil, genellikle korumasız ilerleyen yeni ortaya çıkmış bir alandır. Mobil platformlarda uygulama yalıtımı ve denetlenen tüketici uygulama mağazaları gibi teknikler kullanılarak yerleşik işletim sistemi koruması sağlanmasına rağmen, bu platformların karmaşık saldırılara karşı güvenlik açıkları vardır. Mobil cihazlar çalışanlar tarafından iş yapmak ve hassas ve değerli verilere erişmek için giderek daha fazla kullanıldığından, bu cihazların çeşitli karmaşık saldırılardan korunması gerekmektedir.
+Geçmişte, şirketler bilgisayarları saldırıdan koruma konusunda proaktif olarak çalışırken, mobil cihazlar izlenmiyor ve korumasız bırakılıyordu. Mobil platformlarda uygulama yalıtımı ve denetlenen tüketici uygulama mağazaları gibi yerleşik korumalar bulunmasına rağmen, bu platformlar hala karmaşık saldırılara karşı savunmasızdır. Bugün, iş için cihaz kullanan çalışan sayısı daha fazladır ve hassas bilgilere daha çok erişim ihtiyacı duyarlar. Cihazların giderek daha karmaşık hale gelen saldırılardan korunması gerekir.
 
-Intune, Lookout gibi cihaz tehdit koruması çözümlerinin sağladığı risk değerlendirmelerine dayalı olarak şirket kaynaklarına ve verilerine erişimi denetleme olanağı sunar.
+Intune, Lookout gibi cihaz tehdit koruması çözümlerinin sağladığı risk değerlendirmelerine dayalı olarak şirket kaynaklarına erişimi denetleme olanağı sunar.
 
 ## <a name="how-do-intune-and-lookout-device-threat-protection-help-protect-company-resources"></a>Intune ve Lookout cihaz tehdit koruması, şirket kaynaklarını korumaya nasıl yardımcı olur?
-Lookout’un mobil uygulaması (Lookout for work) mobil cihazlarda çalışarak dosya sistemini, ağ yığınını, cihaz ve uygulama telemetrisini (kullanılabiliyorsa) yakalar ve bunu Lookout cihaz tehdit koruması bulut hizmetine göndererek mobil tehditler için birleşik bir cihaz riski hesaplar. Lookout konsolundaki tehditlere yönelik risk düzeyi sınıflandırmasını da gereksinimlerinize uyacak şekilde değiştirebilirsiniz.  
+Lookout’un mobil uygulaması **Lookout for Work**, mobil cihazlara yüklenir ve mobil cihazlarda çalışır. Bu uygulama varsa dosya sistemi, ağ yığını, cihaz ve uygulama telemetrisini yakalar ve mobil tehditlere karşı cihazın riskini değerlendirmek için bunları Lookout bulut hizmetine gönderir. Lookout konsolundaki tehditlere yönelik risk düzeyi sınıflandırmalarını gereksinimlerinize uyacak şekilde değiştirebilirsiniz.  
 
-Intune’daki uyumluluk ilkesi artık Lookout cihaz tehdit risk değerlendirmesine dayalı Lookout mobil tehdit koruması için yeni bir kural içermektedir. Bu kural etkinleştirildiğinde, Microsoft Intune cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
+Intune’daki uyumluluk ilkesi, Lookout risk değerlendirmesine dayalı Lookout mobil tehdit koruması için bir kural içerir. Bu kural etkinleştirildiğinde Intune, cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
 
-Cihazın uyumluluk ilkesiyle uyumsuz olduğu belirlenirse, koşullu erişim ilkeleri kullanılarak Exchange Online ve SharePoint Online gibi kaynaklara erişim engellenebilir. Erişim engellendiğinde, son kullanıcılara sorunu gidermek ve şirket kaynaklarına yeniden erişim sağlamak için bir kılavuz sağlanır. Bu kılavuz Lookout for Work uygulaması aracılığıyla başlatılır.
+Cihaz uyumsuz bulunursa Exchange Online ve SharePoint Online gibi kaynaklara erişim engellenebilir. Engellenen cihazlardaki kullanıcılara, sorunu gidermek ve yeniden erişim sağlamak için adımlar sağlanır. Yönergeler Lookout for Work uygulamasından gönderilir.
+
 ## <a name="supported-platforms"></a>Desteklenen platformlar:
-* **Android 4.1 ve üzeri** ve Microsoft Intune'a kayıtlı.
-* **iOS 8 ve üzeri** ve Microsoft Intune'a kayıtlı.
-Lookout’un desteklediği platformlar ve diller hakkında bilgi için bu [makaleye](https://personal.support.lookout.com/hc/en-us/articles/114094140253) göz atın.
+Aşağıdaki platformlar Intune'da kayıtlıysa Lookout için desteklenir:
+* **Android 4.1 ve üzeri**
+* **iOS 8 ve üzeri** Platform ve dil desteği hakkında ek bilgiler için bkz. [Lookout web sitesi](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
 
 ## <a name="prerequisites"></a>Önkoşullar:
-* Microsoft Intune ve Azure Active Directory aboneliği.
-* Lookout Mobil Uç Nokta Güvenliği için kurumsal abonelik.  Daha fazla bilgi için bkz: [Lookout Mobil Uç Nokta Güvenliği](https://www.lookout.com/products/mobile-endpoint-security)
+* Microsoft Intune aboneliği
+* Azure Active Directory
+* Lookout Mobil Uç Nokta Güvenliği kurumsal aboneliği  
 
-## <a name="example-scenarios"></a>Örnek senaryolar
+Daha fazla bilgi için bkz: [Lookout Mobil Uç Nokta Güvenliği](https://www.lookout.com/products/mobile-endpoint-security)
+
+## <a name="sample-scenarios"></a>Örnek senaryolar
 Sık karşılaşılan bazı senaryolar aşağıda verilmiştir:
-### <a name="control-access-based-on-threat-from-malicious-apps"></a>Kötü amaçlı uygulamalardan kaynaklanan tehdide dayalı olarak erişimi denetleme:
-Kötü amaçlı yazılım gibi kötü amaçlı uygulamalar cihazda algılandığında, bu cihazların şu işlemleri yapmasını engelleyebilirsiniz:
-* Tehdit çözümlenmeden önce şirket e-postasına bağlanma.
-* OneDrive İş uygulamasını kullanarak şirket dosyalarını eşitleme.
-* İş açısından kritik uygulamalara erişme.
 
-**Kötü amaçlı uygulamalar algılandığında erişim engellenir:**
+### <a name="control-access-based-on-threats-from-malicious-apps"></a>Kötü amaçlı uygulamalardan kaynaklanan tehditlere dayalı olarak erişimi denetleme
+Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algılandığında, tehdit çözülene kadar cihazların aşağıdaki işlemleri gerçekleştirmesini engelleyebilirsiniz:
+* Şirket e-postasına bağlanma
+* OneDrive İş uygulaması ile şirket dosyalarını eşitleme
+* Şirket uygulamalarına erişme
+
+**Kötü amaçlı uygulamalar algılandığında engelle:**
 ![cihazdaki kötü amaçlı uygulamalar nedeniyle cihazın uyumlu olmadığı belirlendiğinde erişimi engelleyen koşullu erişim ilkesini gösteren diyagram](../media/mtp/malicious-apps-blocked.png)
 
-**Tehdit düzeltildiğinde, cihazın engellenmesi kaldırılır ve şirket kaynaklarına erişebilir:**
+**Düzeltme ile erişim izni verildi:**
 
 ![Düzeltme sonrası cihazın uyumlu olduğu belirlenince erişim izni veren koşullu erişim ilkesini gösteren diyagram](../media/mtp/malicious-apps-unblocked.png)
-### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme:
+
+### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
 Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri algılar ve cihaz riskine dayalı olarak WiFi ağlarına erişimi kısıtlar.
 
-**WiFi üzerinden ağ erişimi engellendi:**
+**WiFi üzerinden ağ erişimini engelle:**
 ![ağ tehditlerine dayalı olarak WiFi erişimini engelleyen koşullu erişimi gösteren diyagram](../media/mtp/network-wifi-blocked.png)
 
 **Düzeltme ile erişim izni verildi:**
 
 ![Tehdidin düzeltilmesinin ardından erişim izni veren koşullu erişimi gösteren diyagram](../media/mtp/network-wifi-unblocked.png)
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme:
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme
 
 Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri algılar ve cihaz riskine dayalı olarak kurumsal dosyaların eşitlenmesini engeller.
 
-**Cihazda algılanan ağ tehdidine dayalı olarak SharePoint Online erişimi engellendi:**
+**Ağ tehditleri algılandığında SharePoint Online’ı engelle:**
 
 ![Tehdit algılamasına dayalı olarak SharePoint Online’a cihaz erişimini engelleyen koşullu erişimi gösteren diyagram](../media/mtp/network-spo-blocked.png)
 
@@ -91,6 +102,6 @@ Bu çözümü uygulamak için yapılması gereken ana adımlar şunlardır:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

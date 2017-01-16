@@ -1,5 +1,5 @@
 ---
-title: "İstemci kurulumu sorunlarını giderme | Microsoft Intune"
+title: "İstemci kurulumu sorunlarını giderme | Microsoft Docs"
 description: "Sık karşılaşılan istemci kurulumu sorunlarını giderin."
 keywords: 
 author: staciebarker
@@ -14,26 +14,29 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
-ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
 
 
 ---
 
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune’da istemci kurulumu sorunlarını giderme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Sık karşılaşılan istemci kurulum sorunlarını gidermenize yardımcı olması için aşağıdaki bilgileri kullanın. Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
 ## <a name="client-installation-fails"></a>İstemci yüklemesi başarısız oldu
 
 -   [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) bilgisayar için hiç istemci yazılım dağıtımı uyarısı görüntülemezse, bilgisayarın İnternet bağlantısı ve proxy yapılandırmasını denetleyin, ayrıca bilgisayarın hizmet URL'si ([https://manage.microsoft.com](https://manage.microsoft.com/)) ile iletişim kurabildiğinden emin olun. Ardından İstemci yazılımını yüklemeyi yeniden deneyin.
 
--    **Yönetici** çalışma alanında bir bildirim kuralı yapılandırarak bir istemci yazılımı dağıtım hatası oluşursa seçili alıcılara bir e-posta gönderilmesini sağlayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune Uyarıları ile bilgi edinin](/intune/deploy-use/get-notified-by-alerts).
+-   **Yönetici** çalışma alanında bir bildirim kuralı yapılandırarak bir istemci yazılımı dağıtım hatası oluşursa seçili alıcılara bir e-posta gönderilmesini sağlayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune Uyarıları ile bilgi edinin](/intune/deploy-use/get-notified-by-alerts).
 
 -   İstemci yazılımı dağıtılamazsa, Intune **İstemci Yazılımı Dağıtım Hatası** kritik uyarısını gösterir. Bu uyarı, [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Sisteme Genel Bakış** sayfası ve **Uyarılar** sayfalarında gösterilir. Uyarılar şöyle denetlenir:
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Uyarılar** &gt; **Genel Bakış**’ı seçin.
 
-2.   **Uyarılar genel bakış** sayfasında, aşağıdaki bilgileri gözden geçirebilirsiniz:
+2.  **Uyarılar genel bakış** sayfasında, aşağıdaki bilgileri gözden geçirebilirsiniz:
 
     -   Tarih, kategori veya öneme göre sıralanabilen ilk üç uyarı
 
@@ -70,7 +73,7 @@ Bilgisayarda kritik yazılım güncelleştirmelerinin eksik olması buna neden o
 **Çözüm:** [Microsoft Intune'da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutun](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) konu başlığı altında açıklandığı gibi, yazılım güncelleştirme ilkenizin kritik güncelleştirmelerin yüklenmesine olanak tanıdığından emin olun.
 
 
-## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
+## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
 MDM olmayan Windows cihazları için policyplatform.log dosyasındaki ilke hataları cihazdaki Windows Kullanıcı Hesabı Denetimi’nde (UAC) bulunan varsayılan olmayan ayarların sonucu olabilir. Varsayılan olmayan bazı UAC ayarları Microsoft Intune istemci yüklemelerini ve ilke yürütmesini etkileyebilir.
 
 ### <a name="to-resolve-uac-issues"></a>UAC sorunlarını çözmek için
@@ -105,7 +108,7 @@ Aşağıdaki tabloda istemci yazılımı yüklemesi başarısız olursa **Uyarı
 |**0x80240438**, **0x80CF0438**, **0x80CF401B**|Intune hizmetine bağlanılamıyor. İstemci proxy ayarlarını kontrol edin.|İstemci bilgisayardaki proxy ayarlarının Intune tarafından desteklendiğinden ve istemci bilgisayarın İnternet erişimi olduğundan emin olun. Desteklenen proxy yapılandırmaları hakkında daha fazla bilgi için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
 |**0x80CF402C**|Intune hizmetine bağlanılamıyor. Ağ bağlantısını denetleyin.|Bilgisayarın ağ bağlantısı olduğunu doğrulayın. Ağ kablosunun bağlı olduğundan veya kablosuz ağın açık olduğundan emin olun.|
 |**0x80240438, 0x80CF0438**|Internet Explorer ve Yerel Sistem proxy ayarları yapılandırılmadı.|İstemci proxy ayarlarını denetleyin ve istemci bilgisayardaki proxy yapılandırmasının Intune tarafından desteklendiğinden ve istemci bilgisayarın İnternet erişimi olduğundan emin olun. Desteklenen proxy yapılandırmaları hakkında daha fazla bilgi için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
-|**0x80043001**|Kayıt paketi güncel değil.| **Yönetici** çalışma alanından güncel istemci yazılımı paketini indirin ve yükleyin. Yönergeler için [Microsoft Intune ile Windows bilgisayar istemcisini yükleme](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune) konusuna bakın.|
+|**0x80043001**|Kayıt paketi güncel değil.|**Yönetici** çalışma alanından güncel istemci yazılımı paketini indirin ve yükleyin. Yönergeler için [Microsoft Intune ile Windows bilgisayar istemcisini yükleme](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune) konusuna bakın.|
 |**0x80043004**|Abonelik yok veya devre dışı bırakıldı.|Hesabınızın ve Intune aboneliğinizin hala etkin olduğunu doğrulayın. Hesap ayarlarınızı görüntülemek için [Office 365 yönetici merkezi](http://go.microsoft.com/fwlink/?LinkId=698854%20) hesabınızda oturum açın.|
 |**0x80043002**|Hesap bakım modunda.|Hesap bakım modunda olduğunda yeni istemci bilgisayarlar kaydedilemez. Hesap ayarlarınızı görüntülemek için [Office 365 yönetici merkezi](http://go.microsoft.com/fwlink/?LinkId=698854%20) hesabınızda oturum açın.|
 |**0x80043003**|Hesap silindi.|Hesabınızın ve Intune aboneliğinizin hala etkin olduğunu doğrulayın. Hesap ayarlarınızı görüntülemek için hesabınızda oturum açın.|
@@ -127,6 +130,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

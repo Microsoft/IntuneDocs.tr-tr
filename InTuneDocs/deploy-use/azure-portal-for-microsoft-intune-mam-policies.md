@@ -1,9 +1,9 @@
 ---
-title: "MAM ilkeleri için Azure portalı | Microsoft Intune"
+title: "MAM ilkeleri için Azure portalı | Microsoft Docs"
 description: "Azure portalını kullanarak mobil uygulama yönetimi ilkeleri oluşturun. Burada oluşturduğunuz ilkeler, Intune’da kaydı olan veya olmayan cihazlara uygulanabilir."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/22/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b377d527621693f4c231f6f8b16cab277853cdf7
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
 
 
 ---
 
 # <a name="azure-portal-for-microsoft-intune-mam-policies"></a>Microsoft Intune MAM ilkeleri için Azure portalı
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="use-the-azure-portal"></a>Azure portalını kullanma
 Azure portalı, mobil uygulama yönetimi (MAM) ilkeleri oluşturmanıza ve bunları yönetmenize olanak tanır.
@@ -57,7 +59,7 @@ Azure portalı, aşağıdakiler için MAM ilkeleri oluşturmayı destekler:
 
     > [!TIP]
 
-    >  **Başlat** sayfasına bir dikey pencere sabitlemek için dikey penceredeki **sabitle** seçeneğini kullanabilirsiniz. **Intune mobil uygulama yönetimi dikey penceresi** üzerindeki sabitleme simgesine tıklayarak dikey pencereyi **Başlat** sayfasına sabitleyin.
+    > **Başlat** sayfasına bir dikey pencere sabitlemek için dikey penceredeki **sabitle** seçeneğini kullanabilirsiniz. **Intune mobil uygulama yönetimi dikey penceresi** üzerindeki sabitleme simgesine tıklayarak dikey pencereyi **Başlat** sayfasına sabitleyin.
 
     ![Raptiye simgesinin vurgulandığı Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 
@@ -67,6 +69,6 @@ Azure portalı, aşağıdakiler için MAM ilkeleri oluşturmayı destekler:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

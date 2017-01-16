@@ -1,5 +1,5 @@
 ---
-title: "Verilerin korunmasına yardımcı olmak için uzaktan temizlemeyi kullanma | Microsoft Intune"
+title: "Verilerin korunmasına yardımcı olmak için uzaktan silmeyi kullanma | Microsoft Docs"
 description: "Intune, hassas kurumsal verileri ve pek çok şirket kaynağına erişimi kaldırmak için seçmeli silme ve tam silme olanakları sunar."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Microsoft Intune kullanarak tam veya seçmeli temizleme ile verilerinizin korunmasına yardımcı olma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan ve Intune tarafından yönetilen cihazlardaki uygulamaları ve verileri temizleyebilirsiniz. Bunu yapmak için, Intune seçmeli temizleme ve tam temizleme özellikleri sağlar. Kullanıcılar ayrıca Intune'a kayıtlı şahsi cihazlara Intune Şirket Portalı uygulamasından uzaktan cihaz temizleme komutu da verebilir.
 
   > [!NOTE]
@@ -72,9 +75,9 @@ Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz tür
 
 3.  Azure Aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez (**Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
 
-4.   **Active Directory** ’yi ve sonra da kuruluşunuzu seçin.
+4.  **Active Directory** ’yi ve sonra da kuruluşunuzu seçin.
 
-5.   **Kullanıcılar** sekmesini seçin.
+5.  **Kullanıcılar** sekmesini seçin.
 
 6.  Cihazlarını silmek istediğiniz kullanıcıyı seçin.
 

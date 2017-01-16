@@ -1,5 +1,5 @@
 ---
-title: "Windows 10 ilke ayarları | Microsoft Intune"
+title: "Windows 10 ilke ayarları | Microsoft Docs"
 description: "Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında yerleşik ve özel ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’daki Windows 10 cihazları için Intune ilke ayarları
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Bu konu, Windows 10 cihazlarını yönetmek için kullanabileceğiniz Intune ilke ayarlarını anlamanıza yardımcı olacak bilgiler içermektedir. Kaydedilmiş Windows 10 Desktop ve Windows 10 Mobile cihazlarının yerleşik ve özel ayarlarını yapılandırmak için bu konuyu [Cihazlarınızdaki ayarları ve özellikleri Microsoft Intune ilkeleriyle yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) bölümündeki yordamlarla birlikte okuyun. Bu ilkeleri [Intune bilgisayarı istemci yazılımı](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune) çalıştıran bilgisayarlarla kullanamazsınız.
 

@@ -10,18 +10,17 @@
 ## [Sözlük](understand-explore/intune-glossary.md)
 
 # [Başlarken](get-started/get-started.md)
-## [Hızlı başlangıç kılavuzu](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Intune Kurulumu](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Önkoşullar](get-started/what-to-know-before-you-start-microsoft-intune.md)
-#### [Desteklenen cihazlar ve tarayıcılar](get-started/supported-mobile-devices-and-computers.md)
-#### [Ağ bant genişliği kullanımı](get-started/network-bandwidth-use.md)
+#### [Ağ kullanımı](get-started/network-bandwidth-use.md)
 ### [Intune'da oturum açma](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [Etki alanı adı yapılandırma](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [Etki alanlarını yapılandırma](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Kullanıcı ekleme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [Intune lisanslarını yönetme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Lisansları yönetme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [Kullanıcıları ve cihazları düzenleme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [İlkeleri ve uygulamaları dağıtma](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Şirket Portalı’nı özelleştirme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Mobil aygıtları kaydetme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Cihazları kaydetme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Yapılandırma sonrası görevleri](get-started/post-configuration-tasks.md)
 ## [Intune'a geçiş](get-started/migrate-to-intune.md)
 ## Sonraki adımlar
@@ -30,14 +29,22 @@
 ### [Kullanıcılarınıza mobil uygulama yayımlama](get-started/publish-mobile-apps-to-users.md)
 ### [Mobil cihazlarda e-posta yapılandırmasını basitleştirme](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [Windows bilgisayarlarını kötü amaçlı yazılım tehditlerine karşı koruma](get-started/protect-pcs-against-malware-threats.md)
-## [Intune dağıtım aşamaları](get-started/rollout-phases-for-microsoft-intune-deployment.md)
-### [Proje kapsamı](get-started/project-scope.md)
-### [Kavram kanıtı](get-started/proof-of-concept.md)
-### [Pilot](get-started/pilot.md)
-### [Kurumsal dağıtım](get-started/enterprise-rollout.md)
-### [İşlemler ve bakım](get-started/operations-and-maintenance.md)
 
-# [Yenilikler](whats-new/whats-new-in-microsoft-intune.md)
+# [Planlama ve Tasarım](plan-design/introduction.md)
+## [Bölüm 1: Intune dağıtım hedeflerini, amaçlarını ve zorluklarını belirleme](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
+## [Bölüm 2: Kullanım örneği senaryolarını tanımlama](plan-design/section-2-identify-use-case-scenarios.md)
+## [Bölüm 3: Kullanım örneği senaryosu gereksinimlerini belirleme](plan-design/section-3-determine-use-case-requirements.md)
+## [Bölüm 4: Dağıtım planı geliştirme](plan-design/section-4-develop-a-rollout-plan.md)
+## [Bölüm 5: İletişim planı geliştirme](plan-design/section-5-develop-a-rollout-communication-plan.md)
+## [Bölüm 6: Destek planı geliştirme](plan-design/section-6-develop-a-support-plan.md)
+## [Bölüm 7: Intune tasarımı oluşturma](plan-design/section-7-create-an-intune-design.md)
+## [Bölüm 8: Intune’un uygulanması](plan-design/section-8-onboarding-process.md)
+## [Bölüm 9: Sınama ve doğrulama](plan-design/section-9-test-and-validation.md)
+## [Ek kaynaklar](plan-design/additional-resources.md)
+
+# Yenilikler
+## [Yenilikler](whats-new/whats-new-in-microsoft-intune.md)
+## [Yenilikler arşivi](whats-new/whats-new-archive.md)
 
 # Dağıtma ve Kullanma
 ## [Cihaz ve uygulama yaşam döngülerine genel bakış](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -209,6 +216,6 @@
 ## [Lookout Tümleştirmesi sorunlarını giderme](troubleshoot/troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

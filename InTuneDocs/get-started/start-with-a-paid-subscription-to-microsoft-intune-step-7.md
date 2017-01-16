@@ -1,11 +1,11 @@
 ---
-title: "Şirket Portalı’nı özelleştirme | Microsoft Intune"
+title: "Şirket Portalı’nı özelleştirme | Microsoft Docs"
 description: "Intune Şirket Portalı kullanıcıların cihaz kaydetme, uygulama yükleme ve BT departmanı bilgilerine ulaşma gibi sık kullanılan görevleri gerçekleştirmesini sağlar."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 12/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 04cccd410417dca4477c0d6cd61b0940dda8c389
+ms.sourcegitcommit: 063b073d85dac9fce7d1cbab80ea320c5d237961
+ms.openlocfilehash: 0d8a86b55904198612e0d53fbc387d850d88a449
 
 
 ---
@@ -42,11 +42,6 @@ Kullanıcıların Şirket Portalı’nda yerine getirebilecekleri görevlerden b
 -   Cihazlarını uzaktan kilitleme
 -   Kuruluşunuz tarafından dağıtılan yazılımları indirme
 -   Destek için BT bölümüne başvurun
-
-> [!NOTE]
-> Şirket Portalı uygulaması belirli ülkelerde henüz kullanılmamaktadır.
-> __iOS__: iOS için Şirket Portalı uygulaması Apple iOS App Store’da [tüm kullanılabilir bölgelerde](https://go.microsoft.com/fwlink/?linkid=831284) yayınlanmıştır.
-> __Android__: Android için Şirket Portalı uygulaması şu anda Çin'de kullanılmamaktadır. Bu ülkelerde, [Şirket Portalı uygulamasının Android sürümünü dışarıdan yüklemek](https://www.microsoft.com/en-us/download/details.aspx?id=49140) alternatif bir çözümdür.  
 
 ## <a name="customize-company-portal-settings"></a>Şirket Portalı ayarlarını özelleştirme
 Şirket Portalı’nı özelleştirmek, son kullanıcılarınız için tanıdık ve yararlı bir deneyim sağlamaya yardımcı olur. Bir kiracı veya hizmet yöneticisi olarak [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) oturum açmanız, **Yönetici** &gt; **Şirket Portalı**'nı seçmeniz ve Şirket Portalı ayarlarını yapılandırmanız yeterli olur.

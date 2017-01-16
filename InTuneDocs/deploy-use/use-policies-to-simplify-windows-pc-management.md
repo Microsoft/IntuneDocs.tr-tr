@@ -1,11 +1,11 @@
 ---
-title: "Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma | Microsoft Intune"
+title: "Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma | Microsoft Docs"
 description: "Microsoft Intune Center için Windows bilgisayar yönetim ilke ve ayarlarını açıklar."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma
 
-Intune yazılım istemcisini çalıştıran Windows bilgisayarları Intune'un **Bilgisayar Yönetimi** ilkeleri kullanılarak yönetilebilir. Microsoft Intune Center'daki ayarları yapılandırmak, bilgisayarlarda yapılan güncelleştirmeleri denetlemek ve bilgisayarlarda Windows Güvenlik Duvarı’nı yapılandırmak için Intune'un **Bilgisayar Yönetimi** ilkelerini kullanın.
+Windows masaüstü cihazlar üzerindeki Intune yazılım istemcisini çalıştırarak bu cihazları bilgisayar olarak yönetmek için yalnızca Intune yönetim konsolundaki **Bilgisayar Yönetimi** ilkeleri altındaki ilkeleri kullanabilirsiniz. Yönetim konsolunda listelenen tüm diğer ilkeler yalnızca mobil cihazlara yöneliktir. Microsoft Intune Center'daki ayarları yapılandırmak, bilgisayarlarda yapılan güncelleştirmeleri denetlemek ve bilgisayarlarda Windows Güvenlik Duvarı’nı yapılandırmak için **Bilgisayar Yönetimi** ilkelerini kullanın.
 
 ![Windows bilgisayarlar için ilkeler şablonu](../media/pc_policy_template.png)
 
@@ -63,6 +63,6 @@ Windows bilgisayarlarda yapılandırabileceğiniz ilkeler ve ayarlar hakkında b
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

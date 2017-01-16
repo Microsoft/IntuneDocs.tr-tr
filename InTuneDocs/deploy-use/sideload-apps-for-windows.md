@@ -1,5 +1,5 @@
 ---
-title: "Windows ve Windows Phone için dışarıdan yükleme uygulamaları | Microsoft Intune"
+title: "Windows ve Windows Phone için dışarıdan yükleme uygulamaları | Microsoft Docs"
 description: "Intune&quot;u kullanarak dağıtmak için iş kolu uygulamalarını nasıl imzalayacağınızı öğrenin."
 keywords: 
 author: robstackmsft
@@ -11,12 +11,14 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune yöneticisi olarak Şirket Portalı uygulaması dahil olmak üzere iş kolu uygulamalarını Windows ve Windows 10 Mobile cihazlarına dağıtabilirsiniz. Windows 10 ve Windows 10 Mobile cihazlarına .appx veya .xap uygulamalarını veya Windows 8.1 ya da Windows Phone 8.1 cihazlarına iş kolu uygulamalarını dağıtmak için **Symantec Enterprise Mobil Kod İmza Sertifikası** edinmeniz gerekir. Windows cihazlarda bu uygulamalar için yalnızca Symantec sertifikasına güvenilir. Windows 10 uygulamaları ve "evrensel" uygulamalar için kendi sertifika yetkilinizi kullanabilirsiniz. Aşağıdakileri yapmak için bu sertifika gereklidir:
 

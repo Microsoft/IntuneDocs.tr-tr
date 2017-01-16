@@ -1,5 +1,5 @@
 ---
-title: "Cihaz kaydını etkinleştirme | Microsoft Intune"
+title: "Cihaz kaydını etkinleştirme | Microsoft Docs"
 description: "MDM yetkilisini ayarlama ve iOS, Windows, Android ve Mac cihazları için kaydı etkinleştirme."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
-ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
 
 
 ---
 
 # <a name="enroll-mobile-devices-and-install-an-app"></a>Mobil cihazları kaydetme ve uygulama yükleme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune ile mobil cihaz yönetimini ayarlamak için öncelikle hesabınızla ilişkilendirilmiş olan cihazları yönetebilecek hizmeti tanımlayan *mobil cihaz yönetimi yetkilisini* ayarlamanız gerekir. Bu kılavuzda Intune hizmetini System Center Configuration Manager'ın yerine kullanacağınız kabul edilmektedir. MDM yetkilisi ayarlandıktan sonra cihaz platformları için yönetimi etkinleştirebilir ve Şirket Portalı uygulamasıyla cihazlarınızı kaydedebilirsiniz.
 
 ## <a name="enable-device-enrollment"></a>Cihaz kaydını etkinleştirme
@@ -66,6 +69,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* son adımını da tamamlam
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

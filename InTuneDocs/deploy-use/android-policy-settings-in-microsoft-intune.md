@@ -1,12 +1,12 @@
 ---
 
-title: "Android ve Samsung KNOX Standard ilke ayarları | Microsoft Intune"
+title: "Android ve Samsung KNOX Standard ilke ayarları | Microsoft Docs"
 description: "Intune ile yönettiğiniz Android cihazlarında ayarları ve özellikleri denetleyen ilkeler oluşturun."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
+ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android ve Samsung KNOX Standard ilke ayarları
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune, Android cihazlarda yapılandırabileceğiniz bir dizi yerleşik genel ayar sunar. Buna ek olarak, Intune’da bulunmayan özel ayarlar oluşturmak için Açık Mobil Ortaklığı Tekdüzen Kaynak Tanımlayıcısı (OMA-URI) değerleri belirtebilirsiniz.
 
@@ -144,6 +146,8 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 |**Düzenle**|Seçilen uygulamanın adını, yayımcısını ve URL'sini düzenlemenize izin verir.|
 |**Sil**|Seçilen uygulamayı listeden siler.|
 
+Uyumlu ve uyumsuz uygulama ayarlarını içeren ilkelerin kullanıcı gruplarına dağıtılması gerekir.
+
 ### <a name="kiosk-mode-settings"></a>Bilgi noktası modu ayarları
 **Samsung KNOX Standard cihazlar** için aşağıdaki ayarları belirtin:
 
@@ -156,7 +160,7 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 ### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Uyumlu ve uyumlu olmayan uygulamalar için başvuru bilgileri
 
 #### <a name="monitor-compliant-and-noncompliant-apps"></a>Uyumlu ve uyumsuz uygulamaları izle
- **Uyumlu Olmayan Uygulamalar Raporu** 'nu kullanarak izin verilen ve engellenen uygulamaların uyumluluğunu görüntüleyin.
+**Uyumlu Olmayan Uygulamalar Raporu** 'nu kullanarak izin verilen ve engellenen uygulamaların uyumluluğunu görüntüleyin.
 
 ###### <a name="to-run-the-noncompliant-apps-report"></a>Uyumlu Olmayan Uygulamalar Raporu'nu çalıştırmak için
 
@@ -177,9 +181,7 @@ Uygulamanın yükleme sayfasını açın ve URL'yi panoya kopyalayın. Artık bu
 Android cihazlardaki özellikleri denetlemek için kullanılabilen OMA-URI ayarlarını dağıtmak için Microsoft Intune **Android özel yapılandırma ilkesini** kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
 
 Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarlarını dağıtmanıza olanak sağlamak için tasarlanmıştır.
-
-> [!NOTE]
-> Şu anda Android özel ilkeleri yalnızca önceden paylaşılan bir anahtar içeren Android cihazlar için Wi-Fi ayarlarının yapılandırılmasını destekler.
+Intune, şu anda sınırlı sayıda Android özel ilkesi destekler. Hangi ilkeleri yapılandırabileceğinizi öğrenmek için bu konu başlığındaki örneklere bakın.
 
 ### <a name="general-settings"></a>Genel ayarlar
 
@@ -209,6 +211,6 @@ Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarları
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

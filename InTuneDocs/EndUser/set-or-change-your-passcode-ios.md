@@ -1,25 +1,27 @@
 ---
-title: "Geçiş kodunuzu ayarlama veya değiştirme | Microsoft Intune"
+title: "Geçiş kodunuzu ayarlama veya değiştirme | Microsoft Docs"
 description: "Geçiş kodunuzu ayarlama veya değiştirme"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 596534a5ca50d274472451014db4404b4a5bf2d5
-ms.openlocfilehash: 7273fb674123647e977a25bf9745aa05de7286e7
+ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
+ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
 
 
 ---
 
-# Geçiş kodunuzu ayarlama veya değiştirme
+# <a name="set-or-change-your-passcode"></a>Geçiş kodunuzu ayarlama veya değiştirme
 
 iOS cihazınız BT yöneticinizin geçiş kodu ilkesiyle uyumlu değilse, sorunu kısaca açıklayan ve geçiş kodunuzun gereksinimlere uymasını sağlamak için yapmanız gerekenleri anlatan bir ileti görüntülenir.
 
@@ -27,13 +29,13 @@ BT yöneticiniz birden çok geçiş kodu gereksinimi ayarlayabilir. Örneğin, g
 
 Geçiş kodu gereksinimlerine uyan bir geçiş kodu ayarlama konusunda sorun yaşıyorsanız, yardım için BT yöneticinize başvurun.
 
-## Geçiş kodunuzu ayarlama##
+## <a name="set-your-passcode"></a>Geçiş kodunuzu ayarlama
 
 1. **Ayarlar** > **Dokunma Kimliği ve Geçiş Kodu**’na dokunun.
 2. **Touch ID ve Geçiş Kodu** menüsünde **Geçiş Kodunu Aç**’a dokunun.
 3. BT yöneticinizin gereksinimlerini karşılayan yeni bir geçiş kodu girin ve ardından doğrulamak için bu geçiş kodunu yeniden girin.
 
-## Geçiş kodunuzu değiştirme##
+## <a name="change-your-passcode"></a>Geçiş kodunuzu değiştirme
 
 1. **Ayarlar** > **Dokunma Kimliği ve Geçiş Kodu**’na dokunun.
 2. Geçiş kodunuzu girin. **Touch ID ve Geçiş Kodu** menüsü açılır.
@@ -44,6 +46,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

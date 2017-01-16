@@ -1,5 +1,5 @@
 ---
-title: "Uyumluluk ilkesini dağıtma ve izleme | Microsoft Intune"
+title: "Uyumluluk ilkesini dağıtma ve izleme | Microsoft Docs"
 description: "Cihaz uyumluluk ilkesini dağıtmak ve izlemek için, bu konu başlığı altında verilen adım adım yönergeleri kullanın."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c5c7ed25942a2f7c570bd81aa1e6c08483c0417b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 59c107b9431d4e2925b13d09ab3e01a25c8351fa
 
 
 ---
 
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Microsoft Intune’da cihaz uyumluluk ilkesini dağıtma ve izleme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="deploy-a-compliance-policy"></a>Uyumluluk ilkesini dağıtma
 [Oluşturduğunuz](create-a-device-compliance-policy-in-microsoft-intune.md) uyumluluk ilkesini kuruluşunuzdaki bir veya daha fazla kullanıcı grubuna dağıtın. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının cihazlarında uyumluluk denetimi yapılır.
 

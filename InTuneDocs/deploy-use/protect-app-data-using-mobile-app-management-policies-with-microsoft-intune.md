@@ -1,9 +1,9 @@
 ---
-title: MAM ilkelerini kullanarak uygulama verilerini koruma | Microsoft Intune
+title: MAM ilkelerini kullanarak uygulama verilerini koruma | Microsoft Docs
 description: "Bu konu başlığı altında, mobil uygulama yönetimi ilkelerinin şirket verilerinizi korumaya, veri kaybını önlemeye ve kişisel bilgilerle iş bilgilerini birbirinden ayırmaya nasıl yardımcı olabileceği açıklanmaktadır."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
 
 
 ---
 
 # <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>Microsoft Intune ile mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Uygulama verilerinizi nasıl koruyabilirsiniz?
 Çalışanlarınız hem kişisel hem de iş amaçlı görevler için mobil cihazlar kullanır. Bir yandan çalışanlarınızın üretken olmasını sağlarken diğer yandan, isteyerek ve istemeyerek yaşanabilecek veri kayıplarını da önlemek istersiniz.  Ayrıca, çalışanların yönetmediğiniz cihazları kullanarak eriştiği şirket verilerini de koruyabilmek istersiniz.
@@ -130,6 +132,6 @@ Tüm Office mobil uygulamaları birden çok kimlikle erişimi destekler.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

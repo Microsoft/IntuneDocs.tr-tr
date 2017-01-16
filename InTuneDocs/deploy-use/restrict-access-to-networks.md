@@ -1,5 +1,5 @@
 ---
-title: "Cisco ISE ile ağlara erişimi kısıtlama| Microsoft Intune"
+title: "Cisco ISE ile ağlara erişimi kısıtlama| Microsoft Docs"
 description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olmasını sağlamak için, Intune ile Cisco ISE kullanabilirsiniz."
 keywords: 
 author: robstackmsft
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
 
 
 ---
@@ -64,7 +64,7 @@ b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
 > Sertifikanın son kullanma tarihini denetleyin, bunun süresi dolduğunda yeni bir sertifika dışarı aktarmanız ve içeri aktarmanız gerekecektir.
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>ISE’den otomatik olarak imzalanan sertifika alma 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>ISE’den otomatik olarak imzalanan sertifika alma 
 
 1.  ISE konsolunda, **Yönetim** > **Sertifikalar** > **Sistem Sertifikaları** > **Otomatik Olarak İmzalanan Sertifika Oluştur**’a gidin.  
 2.       Otomatik olarak imzalanan sertifikayı dışarı aktarın.
@@ -100,7 +100,7 @@ Tüm metnin tek bir satırda olduğundan emin olun
 |Oauth 2.0 Belirteç uç noktası|Belirteci Veren URL|
 |Kodunuzu, İstemci kimliğinizle güncelleştirme|İstemci Kimliği|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>4. Adım: ISE’nin otomatik olarak imzalanan sertifikasını Azure AD'de oluşturduğunuz ISE uygulamasına yükleyin
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>4. Adım: ISE’nin otomatik olarak imzalanan sertifikasını Azure AD'de oluşturduğunuz ISE uygulamasına yükleyin
 1.     Bir .cer X509 ortak sertifika dosyasından base64 olarak kodlanmış sertifika değerini ve parmak izini alın. Bu örnek PowerShell'i kullanmaktadır:
    
       
@@ -189,6 +189,6 @@ Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere k
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

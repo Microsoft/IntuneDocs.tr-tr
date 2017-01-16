@@ -1,11 +1,11 @@
 ---
-title: "Cihaz kaydıyla ilgili sorunları giderme | Microsoft Intune"
+title: "Cihaz kaydıyla ilgili sorunları giderme | Microsoft Docs"
 description: "Cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
-ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
+ms.sourcegitcommit: d12e2c0a38e406aa8b96cc03e97d327126503531
+ms.openlocfilehash: 5afc7a3bc91dae95581f42979cbe7d8d6d57ba8d
 
 
 ---
@@ -29,7 +29,7 @@ Bu konuda, cihaz kayıt sorunlarının giderilmesi için tavsiyeler verilmektedi
 
 Sorun gidermeye başlamadan önce, Intune’u kayıt sağlamak üzere doğru şekilde yapılandırdığınızdan emin olmak için kontrol edin. Bu yapılandırma gereksinimleri hakkında daha fazla bilgi edinebilirsiniz:
 
--   [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune/deploy-use/prerequisites-for-enrollment.md)
+-   [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune/deploy-use/prerequisites-for-enrollment)
 -   [iOS ve Mac yönetimini ayarlama](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Microsoft Intune ile Windows Phone ve Windows 10 Mobile yönetimini ayarlama](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Windows cihaz yönetimini ayarlama](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -58,7 +58,7 @@ Bu sorunlar, tüm cihaz platformlarında oluşabilir.
 
 2.  Intune yönetici konsolunda Yönetici\Mobil Cihaz Yönetimi\Kayıt Kuralları altında Cihaz kaydı sınırı değerinin 15 olarak ayarlanıp ayarlanmadığını denetleyin.
 
-Mobil cihaz kullanıcıları şu URL’de cihazları silebilir: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
@@ -70,9 +70,9 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 3.  Azure Aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez (**Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
 
-4.   **Active Directory** ’yi ve sonra da kuruluşunuzu seçin.
+4.  **Active Directory** ’yi ve sonra da kuruluşunuzu seçin.
 
-5.   **Kullanıcılar** sekmesini seçin.
+5.  **Kullanıcılar** sekmesini seçin.
 
 6.  Cihazlarını silmek istediğiniz kullanıcıyı seçin.
 
@@ -86,7 +86,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 >
 > Bir kullanıcı oturumu için Koşullu Erişim ilkesi zorunlu tutulduysa, söz konusu kullanıcı hesabı Cihaz Kayıt Yöneticileri grubuna eklendiğinde kaydı tamamlayamaz.
 
-### <a name="company-portal-emporarily-unavailable"></a>Şirket Portalı Geçici Olarak Devre Dışı
+### <a name="company-portal-temporarily-unavailable"></a>Şirket Portalı Geçici Olarak Devre Dışı
 **Sorun:** Bir kullanıcı, cihazda **Şirket Portalı Geçici Olarak Devre Dışı** hatası alıyor.
 
 **Çözüm:**
@@ -319,7 +319,7 @@ Sunucu sertifikası düzgün yüklendiyse, sonuçlarda tüm onay işaretlerini g
 ### <a name="other-ios-enrollment-errors"></a>Diğer iOS kayıt hataları
 iOS kayıt hatalarının bir listesi, cihaz-kullanıcı belgelerimizdeki [Cihazınızı Intune'a kaydetmeye çalışırken hatalar görüyorsunuz](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) bölümünde verilmiştir.
 
-## <a name="pc-issues"></a>PC Sorunları
+## <a name="pc--issues"></a>PC Sorunları
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>Makine zaten kaydoldu - Hata hr 0x8007064c
 **Sorun:** Kayıt işlemi **Makine zaten kaydoldu** hatasıyla başarısız oluyor. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.
@@ -373,6 +373,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Mobil cihaz güvenliği ilkesi ayarları | Microsoft Intune"
+title: "Mobil cihaz güvenliği ilke ayarları | Microsoft Docs"
 description: "Kuruluşunuzdaki yönetilen cihazlara dağıtabileceğiniz çeşitli ayarları yapılandırmak için Intune’u kullanın."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,17 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da mobil cihaz güvenliği ilkesi ayarları
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Microsoft Intune artık her cihaz platformu için ayrı yapılandırma ilkeleri sağlamaktadır. Bu ilkeler, kullanabileceğiniz en güncel ayarları içerir. Mobil cihaz güvenliği ilkesini kullanmaya devam edebilirsiniz ve var olan dağıtımlar çalışmaya devam eder. Ancak, mobil cihaz güvenliği ilkesi yakında kaldırılacağı için, yeni yapılandırma ilkelerine geçişi en kısa sürede planlamanız gerekir.
 
@@ -61,7 +64,7 @@ Aşağıdaki cihaz türleri için mobil cihaz güvenlik ilkeleri oluşturabilir 
 |**Resimli parolaya veya PIN’e izin ver**|Evet|Evet|Hayır|Hayır|Hayır|
 |**Parola istenmeden önce herhangi bir işlem yapılmadan geçen dakika sayısı**|Hayır|Hayır|Hayır|Evet|Hayır|
 |**Parmak izi ile kilit açmaya izin ver**|Hayır|Hayır|Hayır|iOS 7 ve üzeri|Hayır|
-<sup>1</sup>iOS cihazlarda **Ekran kapanmadan önce herhangi bir işlem yapılmadan geçen dakika sayısı** ve **Parola istenmeden önce herhangi bir işlem yapılmadan geçen dakika sayısı** ayarlarını sırayla uygulayarak yapılandırın. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
+<sup>1</sup> iOS cihazlarda **Ekran kapanmadan önce herhangi bir işlem yapılmadan geçen dakika sayısı** ve **Parola istenmeden önce herhangi bir işlem yapılmadan geçen dakika sayısı** ayarlarını sırayla uygulayarak yapılandırın. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
 
 Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığınızda, kullanıcılar geçerli parolaları ilke gereksinimlerine uysa bile parolalarını sıfırlamaya zorlanır.
 
@@ -105,7 +108,7 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 |**Fabrika sıfırlamasına izin ver**|Hayır|Hayır|Hayır|Hayır|Evet (Yalnızca Samsung KNOX Standard)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>Bulut ayarları – belgeler ve veriler
+## <a name="cloud-settings--documents-and-data"></a>Bulut ayarları – belgeler ve veriler
 
 |Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +119,7 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 |**İş Klasörleri URL**<br /><br />Bu ayar, belgelerin cihazlar arasında eşitlenmesine izin vermek için iş klasörünün URL’sini ayarlar.|Evet|Hayır|Hayır|Hayır|Hayır|
 |**Google yedeklemesine izin ver**|Hayır|Hayır|Hayır|Hayır|Evet (Yalnızca Samsung KNOX Standard)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>Bulut ayarları – hesaplar ve eşitleme
+## <a name="cloud-settings--accounts-and-synchronization"></a>Bulut ayarları – hesaplar ve eşitleme
 
 |Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -214,6 +217,6 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

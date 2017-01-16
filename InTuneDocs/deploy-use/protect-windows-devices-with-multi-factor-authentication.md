@@ -1,11 +1,11 @@
 ---
-title: "Windows için Multi Factor Authentication | Microsoft Intune"
+title: "Windows için Multi-Factor Authentication | Microsoft Docs"
 description: "Intune, şirket kaynaklarınızı güvenli hale getirmenize yardımcı olmak için, Multi Factor Authentication’ı (MFA) tümleştirir."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1bfd17f9fcc73049254bc77351eae48da874fb4c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: cc60ffb2cd7a1d0cad141712ba7e2341954b1f02
 
 
 ---
 
 # <a name="protect-windows-devices-with-multi-factor-authentication"></a>Windows cihazlarını Multi-Factor Authentication ile koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune, şirket kaynaklarınızı güvenli hale getirmenize yardımcı olmak için, Multi Factor Authentication’ı (MFA) tümleştirir. MFA, metin kimlik doğrulamasının yanı sıra kullanıcı adları ve parolalar gibi kimlik doğrulama faktörleri de gerektirir. Intune, Windows 8.1 veya üzerinde, Windows Phone 8.1 veya Windows 10 Masaüstü ve Mobil cihazlarının kaydı sırasında MFA kullanımını destekler.
+
+>[!NOTE]
+>
+>MFA, ADFS sunucusunda kullanıcı başına veya grup başına temelinde gerekli olabilir.  
+
 
 ## <a name="on-premises-infrastructure-requirements-for-adfs-mfa"></a>ADFS MFA için şirket içi altyapı gereksinimleri
 Multi Factor Authentication'ı kurmak için şunlar gerekir:
@@ -40,6 +48,7 @@ Sunucular, [Windows Server 2012 R2 için Sistem Gereksinimleri ve Yükleme Bilgi
 Kuruluşunuzda Active Directory Federasyon Hizmetleri’nin (ADFS) bulunduğu bir Active Directory etki alanı içeren bir şirket içi BT altyapısı varsa, federasyon sunucunuzda MFA'yı ayarlayabilir ve ardından Intune kaydı için MFA’yı etkinleştirebilirsiniz. Intune’da MFA yapılandırıldığında, kullanıcılar kayıt sırasında bir kez kimlik doğrulaması yapabilir ve ardından MFA işlemini her seferinde tekrarlamadan şirket kaynaklarını kullanabilir.
 
 >[!NOTE]
+>
 >MFA, ADFS sunucusunda kullanıcı başına veya grup başına temelinde gerekli olabilir.  
 
 #### <a name="mfa-without-intune"></a>Intune olmadan MFA
@@ -60,6 +69,6 @@ ADFS'de MFA'yı etkinleştirme hakkında bilgi için bkz. [Hassas Uygulamalar i�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

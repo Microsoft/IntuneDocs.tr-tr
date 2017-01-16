@@ -1,5 +1,5 @@
 ---
-title: "KNOX için izin verilen ve engellenen uygulamalar | Microsoft Intune"
+title: "KNOX için izin verilen ve engellenen uygulamalar | Microsoft Docs"
 description: "KNOX için izin verilen ve engellenen uygulamaların listesini oluşturmaya yönelik özel profil."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
 
 
 
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Özel ilkeler kullanarak Samsung KNOX Standard cihazlar için uygulamalara izin verme veya bunları engelleme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Bu konu başlığı altındaki yordamları kullanarak, aşağıdakilerden birini oluşturan bir Microsoft Intune özel ilkesi oluşturun:
 
@@ -60,7 +62,7 @@ Hedeflenen her cihazın bir sonraki girişinde, uygulama ayarları uygulanır.
 
 ## <a name="deploy-the-policy"></a>İlkeyi dağıtma
 
-1.   **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
+1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
 
 2.  **Dağıtımı Yönet** iletişim kutusunda ilkeyi dağıtmak istediğiniz bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'a tıklayın.
 
@@ -72,6 +74,6 @@ Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağ
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

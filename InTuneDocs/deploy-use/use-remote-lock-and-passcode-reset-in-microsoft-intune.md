@@ -1,5 +1,5 @@
 ---
-title: "Uzaktan kilitleme ve geçiş kodu sıfırlama | Microsoft Intune"
+title: "Uzaktan kilitleme ve geçiş kodu sıfırlama | Microsoft Docs"
 description: "Intune uzaktan kilitleme ve geçiş kodu sıfırlama özellikleri sunar."
 keywords: 
 author: staciebarker
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
-ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
@@ -79,6 +79,6 @@ Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için geçiş ko
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

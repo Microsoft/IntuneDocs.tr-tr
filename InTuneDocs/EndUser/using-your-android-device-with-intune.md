@@ -1,5 +1,5 @@
 ---
-title: "Android cihazınızı Intune ile kullanma | Microsoft Intune"
+title: "Android cihazınızı Intune ile kullanma | Microsoft Docs"
 description: "Android mobil cihazları Intune’a kaydolduğunda son kullanıcıların cihazda gerçekleştirebileceği görevlere yönelik bağlantıların listesi"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
 
 
 ---
@@ -62,8 +62,8 @@ Bu bölümdeki bilgiler, kullanıcılara Android cihazları Intune’a kaydedild
 - [Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 - [Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [BT yöneticinize kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-administrator-android.md)
-- [Cihaz, gerekli en düşük işletim sistemi sürümüne sahip değil](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Cihaz, gerekli en düşük işletim sistemi sürümüne sahip değil](you-need-to-update-your-android-device.md)
+- [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](your-android-version-isnt-yet-supported.md)
 - [Cihazınıza kök erişim izni verilmiş ve bağlanamıyorsunuz](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Cihazınızda gerekli bir sertifika eksik](your-device-is-missing-a-required-certificate-android.md)
 - [Bilinmeyen kaynakları kapatmanız isteniyor](you-are-asked-to-turn-off-unknown-sources-android.md)
@@ -75,6 +75,6 @@ Bu bölümdeki bilgiler, kullanıcılara Android cihazları Intune’a kaydedild
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

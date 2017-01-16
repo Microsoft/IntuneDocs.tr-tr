@@ -1,5 +1,5 @@
 ---
-title: Yenilikler | Microsoft Intune
+title: Yenilikler | Microsoft Docs
 description: "Bu ayki ve geçmişteki Microsoft Intune sunumlarındaki yenilikleri öğrenin"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9fd309a10d9eb020795c5ce46df124b13dc1a006
-ms.openlocfilehash: d117c929fbde4dd0a39503b8da695aa9c9ea91ad
+ms.sourcegitcommit: 1d9ebc7fd727b80091625ed5256ae634323a9257
+ms.openlocfilehash: f7e71d20923e113b533668a7b5aef688de196182
 
 
 ---
@@ -33,15 +33,12 @@ Azure portalındaki yönetici deneyimi, duyurulan yeni gruplandırma ve hedeflem
 Kiracınızın geçişinin zaman çizelgesi hakkında sorunuz varsa, geçiş ekibimize şuradan ulaşabilirsiniz: [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### <a name="telecom-expense-management-integration-in-public-preview-of-azure-portal--747605--"></a>Azure portalının genel önizlemesinde telekom gider yönetimi tümleştirmesi<!--747605-->
-Artık Azure portalında üçüncü taraf telekom gider yönetimi (TEM) hizmetleri ile tümleştirme önizlemesine başlıyoruz. Yurt içi verilerin ve dolaşım verilerinin kullanımına yönelik sınırlamalarını zorunlu olarak uygulamak için Intune'u kullanabilirsiniz. Bu tümleştirmelere [Saaswedo](http://www.saaswedo.com) ile başlıyoruz.
+Artık Azure portalında üçüncü taraf telekom gider yönetimi (TEM) hizmetleri ile tümleştirme önizlemesine başlıyoruz. Yurt içi verilerin ve dolaşım verilerinin kullanımına yönelik sınırlamalarını zorunlu olarak uygulamak için Intune'u kullanabilirsiniz. Bu tümleştirmelere [Saaswedo](http://www.saaswedo.com) ile başlıyoruz. Deneme kiracınızda bu özelliği etkinleştirmek için lütfen [Microsoft desteğe başvurun](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ## <a name="new-capabilities"></a>Yeni Özellikler
 
 ### <a name="multi-factor-authentication-across-all-platforms---747590--"></a>Tüm platformlar arasında çok faktörlü kimlik doğrulaması <!--747590-->
 Belirli bir kullanıcı grubu Azure Active Directory’de Microsoft Intune Kaydı uygulamasında MFA’yı yapılandırarak Azure Yönetim Portalı’ndan bir iOS, Android, Windows 8.1+ veya Windows Phone 8.1+ cihazını kaydettiklerinde, bu kullanıcılara çok faktörlü kimlik doğrulaması (MFA) kullanma zorunluluğu getirebilirsiniz.
-
-<!--VSO 679339, awaiting chrisgre for go-live--><!--### Conditional access for MAM with SharePoint Online
-Intune mobil uygulama yönetimi (MAM) ilkeleri tarafından desteklenmeyen uygulamaların SharePoint Online’a erişmesini engelleyebilirsiniz.  Azure portalında Intune mobil uygulama yönetimini kullanarak başlayabilirsiniz. __Ayarlar__ dikey penceresinde SharePoint Online ile ilgili seçeneği içeren __Koşullu Erişim__ kısmını arayın. Bu özellik, hizmet sürümünün geri kalanından ayrı olarak sevk edilir. Bu yeni özellik hakkında daha fazla bilgiyi [burada](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online) bulabilirsiniz.-->
 
 ### <a name="ability-to-restrict-mobile-device-enrollment--747596--"></a>Mobil cihaz kaydını kısıtlama özelliği<!--747596-->
 Intune, katılmasına izin verilecek mobil cihaz platformlarını denetleyen yeni kayıt kısıtlamaları ekliyor. Intune, mobil cihaz platformlarını iOS, macOS, Android, Windows ve Windows Mobile şeklinde ayırıyor.
@@ -56,7 +53,7 @@ Intune, BT yöneticileri [bu makalede](https://docs.microsoft.com/en-us/intune/d
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>Kayıt sırasında Multi-Factor Authentication, Azure portalına taşınıyor <!--VSO 750545-->
 Daha önce yöneticiler Intune kaydı sırasında MFA ayarlamak için Intune konsoluna veya Configuration Manager (Ekim 2016'dan önceki sürümler) konsoluna gitmek durumundaydı. Bu güncelleştirilmiş özellik sayesinde, artık [Microsoft Azure portalında](https://manage.windowsazure.com) Intune kimlik bilgilerinizi kullanarak oturum açar ve MFA ayarlarını Azure AD ile yapılandırırsınız. Bunun hakkında daha fazla bilgi için [burayı](https://aka.ms/mfa_ad) okuyun.
 
-### <a name="company-portal-app-for-android-now-available-in-china---vso-658093--"></a>Android için Şirket Portalı uygulaması artık Çin'de kullanılabilir <!--VSO 658093-->
+### <a name="company-portal-app-for-android-now-available-in-china--vso-658093--"></a>Android için Şirket Portalı uygulaması artık Çin'de kullanılabilir <!--VSO 658093-->
 Android için Şirket Portalı uygulamasını karşıdan yüklenebilir olarak Çin’de yayımlıyoruz. Çin’de Google Play Mağazası olmaması nedeniyle, Android cihazlarının uygulamaları Çin’deki uygulama mağazalarından edinmeleri gerekir. Android için Şirket Portalı uygulaması aşağıdaki mağazalardan yüklenebilir:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
@@ -88,10 +85,10 @@ Aralık’tan itibaren yöneticilerin artık Intune konsolu içinde Exchange Onl
 ### <a name="see-also"></a>Ayrıca bkz.
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform yol haritası](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [Önceki Intune sürümleri](whats-new-archive.md)
+* [Yenilikler arşivi](whats-new-archive.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

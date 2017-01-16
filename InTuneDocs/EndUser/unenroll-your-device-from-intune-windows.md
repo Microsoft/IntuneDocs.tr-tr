@@ -1,5 +1,5 @@
 ---
-title: "Windows cihazınızın Intune kaydını silme | Microsoft Intune"
+title: "Windows cihazınızın Intune kaydını silme | Microsoft Docs"
 description: "Windows cihazının Intune kaydını nasıl silebileceğiniz açıklanır."
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7d06eabf07039b14a5d24617d94a968bc2e85f22
 
 
 ---
@@ -37,7 +39,7 @@ Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde g�
 
 2.  İş veya okul kimlik bilgilerinizle oturum açın.
 
-3.   **Cihazlarım**’dan kaydını kaldırmak istediğiniz cihazı seçin.
+3.  **Cihazlarım**’dan kaydını kaldırmak istediğiniz cihazı seçin.
 
 4.  **Kaldır** &gt; **Kaldır**’a dokunun.
 
@@ -65,6 +67,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

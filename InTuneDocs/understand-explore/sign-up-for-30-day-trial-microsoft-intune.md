@@ -13,14 +13,20 @@ ms.technology:
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a65ead23e62870647245120d1663706fc46810ac
+ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
+ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 
 
 ---
 
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune ücretsiz denemesine kaydolma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Bu makale, bir Intune denemesine kaydolmayı adım adım gösterir ve Intune'un mobil cihazları nasıl yönettiğini görmek üzere ilişkili değerlendirme kılavuzunu izleyebilmeniz için deneme sürümünüzde bazı kullanıcılar oluşturur. <!---or app data when devices are not enrolled in Intune.--->
+
+>[!Note]
+> Aralık 2016'dan itibaren Microsoft Intune, Azure portalına taşınıyor ve bazı ücretsiz deneme kayıtları Azure portalındaki Intune’da, bazıları klasik Intune’da olacaktır. Deneme süreniz Azure portalında ise bu makaledeki adımları tamamladıktan sonra [Intune Azure önizleme içeriğini](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) daha faydalı bulacaksınız.
 
 ## <a name="assumptions"></a>Varsayımlar
 Bu kaydolma makalesi ve değerlendirme kılavuzu, denemeyi yalnızca değerlendirme amacıyla kullandığınızı ve abone olduğunuzda boş bir ortam ile başlayacağınızı varsayar.
@@ -40,26 +46,9 @@ Bir iş veya okul hesabınız varsa ve Intune denemeniz için bu hesabı kullanm
 ### <a name="post-sign-up-considerations"></a>Kayıttan sonra dikkate alınacak noktalar
 Deneme için kaydolduğunuzda, kayıt işlemi sırasında sağladığınız e-posta adresine hesap bilgilerinizi içeren bir e-posta iletisi gönderilir. Bu e-posta, denemenizin etkin olduğunu doğrular.
 
-Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığıyla kullanıcı eklemek ve bu kişilere lisans atamak için kullanılan bir sayfaya yönlendirilirsiniz. Intune'da bir sonraki oturum açışınızda, otomatik olarak Intune yönetim konsoluna yönlendirilirsiniz.
+Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığıyla kullanıcı eklemek ve bu kişilere lisans atamak için kullanılan bir sayfaya yönlendirilirsiniz. **Klasik Intune**'da (https://manage.microsoft.com) bir sonraki oturum açışınızda, otomatik olarak Intune yönetim konsoluna yönlendirilirsiniz.
 
-## <a name="keeping-the-admin-center-and-the-intune-administration-console-straight"></a>Yönetim merkezi ve Intune yönetim konsolunu düzenli tutma
-Intune için kullanacağınız iki portal vardır: Office 365 Yönetim merkezi ([portal.office.com](https://portal.office.com)) ve Intune yönetim konsolu ([manage.microsoft.com](https://manage.microsoft.com)).
-
-Normalde, işlerinizi Intune yönetim konsolunda aşağıda gösterildiği gibi yaparsınız. Burası; gruplarınızı, ilkelerinizi, cihazlarınızı ve uygulamalarınızı kurduğunuz ve yönettiğiniz sitedir.
-
-![Intune yönetim konsolunun resmi](./media/sign-up/intune-admin-console.png)
-
-Ancak kullanıcılarınızı ve hesabınızın faturalama ve destek gibi diğer yönlerini eklemek ve yönetmek için aşağıda gösterildiği gibi Office 365 Yönetim merkezini kullanırsınız.
-
-![Office 365 Yönetim merkezinin resmi](./media/sign-up/office-admin-center.png)
-
-Office 365 Yönetim merkezinden Intune yönetim konsoluna gidebilirsiniz. Yönetim merkezleri sol gezinme bölmesindeki son öğenin altındadır. Yeni bir sekmede Intune yönetim konsolunu açmak için **Intune**'u seçin.
-
-![Intune yönetim konsoluna bağlantının resmi](./media/sign-up/link-to-intune.png)
-
-Intune'dan Office 365 Yönetim merkezine geri dönmek için Gruplara Genel Bakış sayfasında **Kullanıcı Ekle** görevini seçin.
-
-![Office 365 Yönetim merkezinin geri bağlantısının resmi](./media/sign-up/task-add-users.png)
+Deneme süreniz **Azure portalında** ise https://portal.azure.com adresine gidin ve Intune deneme sürümü kimlik bilgilerinizle oturum açın.
 
 ## <a name="add-users"></a>Kullanıcı ekleme
 Intune için Office 365 Yönetim merkezinden ayrılmadan önce deneme hesabınıza bazı kullanıcılar eklemeniz gerekir.
@@ -91,14 +80,65 @@ Office 365 Yönetim merkezinde kullanıcıları tek tek veya bir .csv dosyasın�
 
 3. .csv dosyanızı oluşturup kaydettikten sonra, dosyayı seçmek için **Gözat**'ı seçin. Doğrulayın ve **İleri**'yi seçin. Kullanıcılarınız yüklenir ve etkin kullanıcılar listenize eklenir.
 
-Artık kullanıcılarınızı, bunların cihazlarını ve uygulamalarını yönetmeye başlamak için Intune yönetim konsoluna gidebilirsiniz.
-
 > [!NOTE]
 > Kullanıcılarınız, yönetilecek bir cihazı kaydedene kadar Intune'da görünmez.
 
+Artık kullanıcılarınızı, kullanıcılarınızın cihazlarını ve uygulamalarını yönetmeye başlamak için Intune’a gidebilirsiniz.
+
+## <a name="keeping-the-admin-experiences-straight"></a>Yönetici deneyimlerini düzenli tutma
+### <a name="classic-intune"></a>Klasik Intune
+Klasik Intune için kullanacağınız iki portal vardır:
+- Office 365 Yönetim merkezi ([portal.office.com](https://portal.office.com))
+- Intune yönetim konsolu ([manage.microsoft.com](https://manage.microsoft.com))
+
+Normalde, işlerinizi Intune yönetim konsolunda aşağıda gösterildiği gibi yaparsınız. Burası; gruplarınızı, ilkelerinizi, cihazlarınızı ve uygulamalarınızı kurduğunuz ve yönettiğiniz sitedir.
+
+![Intune yönetim konsolunun resmi](./media/sign-up/intune-admin-console.png)
+
+Ancak kullanıcılarınızı ve hesabınızın faturalama ve destek gibi diğer yönlerini eklemek ve yönetmek için aşağıda gösterildiği gibi Office 365 Yönetim merkezini kullanırsınız.
+
+![Office 365 Yönetim merkezinin resmi](./media/sign-up/office-admin-center.png)
+
+Office 365 Yönetim merkezinden Intune yönetim konsoluna gidebilirsiniz. Yönetim merkezleri sol gezinme bölmesindeki son öğenin altındadır. Yeni bir sekmede Intune yönetim konsolunu açmak için **Intune**'u seçin.
+
+![Intune yönetim konsoluna bağlantının resmi](./media/sign-up/link-to-intune.png)
+
+Intune'dan Office 365 Yönetim merkezine geri dönmek için Gruplara Genel Bakış sayfasında **Kullanıcı Ekle** görevini seçin.
+
+![Office 365 Yönetim merkezinin geri bağlantısının resmi](./media/sign-up/task-add-users.png)
+
+### <a name="intune-azure-preview"></a>Intune Azure önizlemesi
+Intune Azure önizlemesi için kullanacağınız üç portal vardır:
+- Office 365 Yönetim merkezi ([portal.office.com](https://portal.office.com))
+- Azure’da Intune panosu ([portal.azure.com](https://portal.azure.com))
+- Klasik Intune yönetim konsolu ([manage.microsoft.com](https://manage.microsoft.com))
+
+Azure’daki Intune'da ilk kez oturum açtığınızda, bunu Azure panonuzda göremeyebilirsiniz. Intune hizmetini Azure panonuza eklemek için:
+1. Panonun solundaki Azure hizmetleri listesinde **Diğer hizmetler>** seçeneğini belirleyin ve arama kutusuna Intune yazın.
+2. Listeden **Intune**’u seçin ve hizmetler listesine eklemek için yıldızı seçin.<br/> ![Hizmetler listesinden Intune’u seçme görüntüsü](./media/sign-up/azure-add-intune1.png)
+3. Intune panosunu açmak için hizmetler listesinden **Intune**’u seçin.
+
+Normalde, işlerinizi aşağıda gösterildiği gibi Intune panosunda yaparsınız. Burası; gruplarınızı, ilkelerinizi, cihazlarınızı ve uygulamalarınızı kurduğunuz ve yönettiğiniz sitedir. Panodan klasik Intune yönetim konsoluna gitmek için **Klasik Intune portalını aç** kutucuğunu seçin. Intune Azure önizlemesine dönmek için tarayıcınızın adres çubuğuna https://portal.azure.com girin ve ardından hizmetler listesinden **Intune**’u yeniden seçin.
+
+ ![Intune panosunun görüntüsü](./media/sign-up/intune-azure-dashboard.png)
+
+
+Ancak kullanıcılarınızı ve hesabınızın faturalama ve destek gibi diğer yönlerini eklemek ve yönetmek için aşağıda gösterildiği gibi Office 365 Yönetim merkezini kullanırsınız.
+
+![Office 365 Yönetim merkezinin resmi](./media/sign-up/office-admin-center.png)
+
+Office 365 Yönetim merkezinden Intune panosuna gitmek için tarayıcınızın adres çubuğuna https://portal.azure.com girin. Hizmetler listesinden **Intune**’u seçin.
+
+Intune’dan Office 365 Yönetim merkezine geri dönmek için tarayıcınızın adres çubuğuna https://portal.office.com girin. Intune'da zaten oturum açtıysanız doğrudan Office 365 Yönetim Merkezi'ne götürülürsünüz.
+
 ## <a name="next-steps"></a>Sonraki adımlar
+### <a name="classic-intune"></a>Klasik Intune
 Değerlendirme senaryosu: [Microsoft Intune'da mobil cihaz yönetimini değerlendirme](mobile-device-management-trial-guide-microsoft-intune.md)
 
+### <a name="intune-azure-preview"></a>Intune Azure önizlemesi
+[Azure portalı önizlemede Intune](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) hakkında daha fazla bilgi edinin
+
+### <a name="integration-with-other-products"></a>Diğer ürünlerle tümleştirme
 Azure Active Directory kullanıcı hesaplarınızı Intune ile kullanma hakkında daha fazla bilgi edinin:
 - [Kimlik gereksinimleri](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 - [Dizin eşitleme gereksinimleri](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
@@ -108,6 +148,6 @@ Azure Active Directory kullanıcı hesaplarınızı Intune ile kullanma hakkınd
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

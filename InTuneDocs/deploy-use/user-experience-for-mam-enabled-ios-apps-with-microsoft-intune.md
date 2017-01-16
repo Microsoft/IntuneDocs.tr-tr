@@ -1,11 +1,11 @@
 ---
-title: "MAM ilkeleri içeren iOS uygulamaları | Microsoft Intune"
+title: "MAM ilkeleri içeren iOS uygulamaları | Microsoft Docs"
 description: "Bu konu başlığı altında, iOS uygulamanız mobil uygulama yönetimi ilkeleriyle yönetildiğinde neler bekleyebileceğiniz açıklanır."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,26 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>iOS uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  Bu konu başlığı altında, mobil erişim yönetimi (MAM) ilkeleri içeren uygulamalardaki kullanıcı deneyimi açıklanmıştır. MAM ilkeleri yalnızca uygulamalar iş bağlamında kullanıldığında uygulanır: Örneğin, kullanıcı iş hesabı kullanarak uygulamalara veya şirketinizin OneDrive iş konumunda depolanan dosyalara eriştiğinde.
 
 ##  <a name="access-apps"></a>Erişim uygulamaları
 
-Cihaz **Intune'a kayıtlı değilse**, kullanıcı uygulamayı ilk kez kullandığında uygulamayı yeniden başlatması istenir.  Uygulamaya MAM ilkelerinin uygulanabilmesi için yeniden başlatma gereklidir. Skype uygulamasından alınan aşağıdaki ekran görüntüsü bu yeniden başlatma isteğini gösterir:
+Cihaz **Intune'a kayıtlı değilse**, kullanıcı uygulamayı ilk kez kullandığında uygulamayı yeniden başlatması istenir.  Uygulamaya MAM ilkelerinin uygulanabilmesi için yeniden başlatma gereklidir. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![PIN istemi gösteren iOS cihazının ekran görüntüsü](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 **Yönetilmek üzere Intune’da kayıtlı cihazlarda**, kullanıcı uygulamasının artık yönetildiğini belirten bir ileti görür:
 
@@ -68,6 +73,6 @@ iOS cihazı kullanıyorsanız, bu cihaza ikinci bir iş hesabı eklemeye çalı�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Kayıtlı olmayan cihazlardaki LOB uygulamalarını koruma | Microsoft Intune"
+title: "Kayıtlı olmayan cihazlardaki LOB uygulamalarını koruma | Microsoft Docs"
 description: "Bu konu başlığı altında, veri kaybını önlemeye yardımcı olabilecek mobil uygulama yönetimi ilkelerini uygulayabilmek için özel iş kolu uygulamalarınızı nasıl hazırlayacağınız açıklanmaktadır."
 keywords: 
 author: mtillman
@@ -14,13 +14,15 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
 
 
 ---
 
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Microsoft Intune'da kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Mobil uygulama yönetimi (MAM) ilkeleri, şirket verilerinin dışarıya sızmasına neden olabilecek eylemleri kısıtlayarak ve bir uygulama PIN'i gibi veri erişim gereksinimleri uygulayarak şirket verilerinin korunmasına yardımcı olur. iOS ve Android iş kolu uygulamalarına MAM ilkeleri uygulamak için önce Microsoft Intune Uygulama Sarmalama Aracı ile uygulamayı sarmalamanız gerekir. Uygulama sarmalama, temel uygulamada hiçbir değişiklik yapılmasına gerek kalmadan mobil uygulamaya bir yönetim katmanı uygulama işlemidir. Uygulama sarmalandıktan sonra uygulamaya MAM ilkeleri uygulayabilir ve uygulamayı kullanıcılarınıza dağıtabilirsiniz.  
 

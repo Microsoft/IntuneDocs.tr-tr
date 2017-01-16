@@ -1,5 +1,5 @@
 ---
-title: "Şirkete ait iOS cihazlarını kaydetme | Microsoft Intune"
+title: "Şirkete ait iOS cihazlarını kaydetme | Microsoft Docs"
 description: "Şirkete ait iOS cihazlarını Apple Aygıt Kayıt Programı’nı (DEP) veya Apple Configurator’ı kullanarak kaydetme"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
-ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 
 ---
 
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Microsoft Intune'a şirketin sahip olduğu iOS cihazları kaydetme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune, şirkete ait iOS cihazlarının Apple Aygıt Kayıt Programı (DEP) veya bir Mac bilgisayarında çalışan [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) aracı ile kaydedilmesini destekler.
 
 **Ön koşul:** [Apple Anında İletilen Bildirim hizmeti sertifikası](set-up-ios-and-mac-management-with-microsoft-intune.md) gerekir.
@@ -81,6 +84,6 @@ Kullanıcı benzeşimi gerekiyorsa, cihazın kaydolma profilinde cihaz kaydedilm
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

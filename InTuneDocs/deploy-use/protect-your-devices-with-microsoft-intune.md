@@ -1,11 +1,11 @@
 ---
-title: "Cihazları koruma | Microsoft Intune"
+title: "Cihazları koruma | Microsoft Docs"
 description: "Intune’un cihazlarınızı yetkisiz erişime veya diğer tehditlere karşı korumanıza yardımcı olabileceği yollardan bazılarını öğrenin."
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 235db7eb1036bfccd074fd83b4b59e75529a5e34
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
 
 
 ---
 
 # <a name="protect-devices-with-microsoft-intune"></a>Cihazları Microsoft Intune ile koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune, yönettiğiniz cihazları ve bu cihazlarda depolanan verileri korumaya yardımcı olmak için tam özellik kümesi sunar. Bu özelliklerin temellerini ve daha fazla nasıl bilgi bulacağınızı öğrenmek için bu konuyu okuyun.
 
@@ -63,6 +65,6 @@ Intune, kaydolmadığınız ancak Intune bilgisayar istemci yazılımıyla yöne
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

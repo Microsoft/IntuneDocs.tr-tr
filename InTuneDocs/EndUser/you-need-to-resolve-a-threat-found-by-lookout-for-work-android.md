@@ -1,5 +1,5 @@
 ---
-title: "Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor | Microsoft Intune"
+title: "Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: aae9d4666ab356bb6d3c5e929d311c53ea065485
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b6f8cf9eda8983b8bfe4edd8fca6e6872e0c8103
 
 
 ---
@@ -49,6 +51,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Modern kimlik doğrulaması olmayan uygulamaları engelleme | Microsoft Intune"
+title: "Modern kimlik doğrulaması olmayan uygulamaları engelleme | Microsoft Docs"
 description: 
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 5c95cd8510faa437a33ac25d6602a2bcc57c05d5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 0e1fa2341c0f74492a0ef80d0054922052bbe561
 
 
 ---
 
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Modern kimlik doğrulaması kullanılmayan uygulamaları engelleme (ADAL)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 MAM ilkeleri (MAM CA) bulunan uygulamalar için koşullu erişim, bir OAuth2 uygulaması olan [modern kimlik doğrulaması](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) kullanan uygulamalara dayalıdır. Şu anda çoğu Office mobil ve masaüstü uygulaması modern kimlik doğrulaması kullansa da, temel kimlik doğrulaması ve form tabanlı kimlik doğrulaması gibi diğer kimlik doğrulama yöntemleri kullanan üçüncü taraf uygulamaları ve eski Office uygulamaları da vardır.
 
 Bu uygulamalara erişimi engellemek için şunları öneririz:

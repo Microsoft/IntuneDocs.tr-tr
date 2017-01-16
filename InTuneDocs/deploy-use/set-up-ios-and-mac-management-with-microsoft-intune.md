@@ -1,5 +1,5 @@
 ---
-title: "iOS ve Mac yönetimini ayarlama | Microsoft Intune"
+title: "iOS ve Mac yönetimini ayarlama | Microsoft Docs"
 description: "Microsoft Intune’la, iPad, iPhone ve Mac OS X cihazları gibi iOS cihazlarınız için mobil uygulama yönetimini (MDM) etkinleştirin."
 keywords: 
 author: staciebarker
@@ -14,8 +14,8 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 641d2db2bfb49ce6c4f88d823188a714e61f683c
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d4dffccca11582b11196c6441ba8828ceeb4ebb8
 
 
 ---

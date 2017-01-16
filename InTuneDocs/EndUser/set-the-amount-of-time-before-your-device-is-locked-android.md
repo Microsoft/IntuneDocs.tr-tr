@@ -1,27 +1,30 @@
 ---
-title: "Cihaz kilitlenmeden önceki süreyi ayarlama | Microsoft Intune"
+title: "Cihaz kilitlenmeden önceki süreyi ayarlama | Microsoft Docs"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5f365c7d-5889-4072-a994-613ce3c26ce4
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 952c99399c7eaaf9a36e7528bb1b5b70852d8e3e
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 336a71888b729869be5fc325bd82d841f59428de
 
 
 ---
 
 
-# Cihaz kilitlenmeden önceki süreyi ayarlama
+# <a name="set-the-amount-of-time-before-your-device-is-locked"></a>Cihaz kilitlenmeden önceki süreyi ayarlama
 
 Android cihazınızdaki verileri daha güvenli tutmak için, BT yöneticiniz cihazınızın otomatik olarak kilitlenmeden önce ne kadar süreyle boşta durabileceğini belirlemenizi zorunlu tutan bir ilke ayarlayabilir. Cihazınızın kilitlenmeden önce bekleyeceği süreyi ayarlamak için bu adımları izleyin.
 
@@ -35,6 +38,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

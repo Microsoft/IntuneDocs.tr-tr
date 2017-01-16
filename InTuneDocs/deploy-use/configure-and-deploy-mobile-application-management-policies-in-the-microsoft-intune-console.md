@@ -1,11 +1,11 @@
 ---
-title: "Intune konsolunda MAM ilkelerini yapılandırma | Microsoft Intune"
+title: "Intune konsolunda MAM ilkelerini yapılandırma | Microsoft Docs"
 description: "Microsoft Intune’daki Mobil uygulama yönetimi ilkeleri, dağıttığınız uygulamaların şirketin uyumluluk ve güvenlik ilkeleriyle uyumlu olmasını sağlamak için bunların işlevselliğini değiştirmenize izin verir."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune’daki Mobil uygulama yönetimi (MAM) ilkeleri, dağıttığınız uygulamaların şirketin uyumluluk ve güvenlik ilkeleriyle uyumlu olmasını sağlamak için bunların işlevselliğini değiştirmenize izin verir. Örneğin, yönetilen bir uygulama içinde kesme, kopyalama ve yapıştırma işlemlerini kısıtlayabilir veya bir uygulamayı yönetilen bir tarayıcı içindeki tüm web bağlantılarını açacak şeklide yapılandırabilirsiniz.
 
 Mobil uygulama yönetimi ilkeleri desteği:
@@ -71,7 +74,7 @@ iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar *bird
 
 -   **5. Adım:** Uygulama dağıtımını izleme.
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>1. Adım: İlkeyle yönetilen bir uygulamaya bir bağlantı alma, kaydırılmış bir uygulama oluşturma veya MAM özellikli uygulama yazmak için Intune Uygulama SDK’sını kullanma
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>1. Adım: İlkeyle yönetilen bir uygulamaya bir bağlantı alma, kaydırılmış bir uygulama oluşturma veya MAM özellikli uygulama yazmak için Intune Uygulama SDK’sını kullanma
 
 Uygulama mağazasından, dağıtmak istediğiniz ilkeyle yönetilen uygulamanın URL'sini bulun ve not edin. Örneğin, iPad için Microsoft Word uygulamasının URL'si şöyledir: **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
@@ -87,7 +90,7 @@ Yönetilen bir uygulama yayımladığınızda, ilkeyle yönetilen bir uygulama v
 
     Android uygulamaları için **Dış bağlantı**seçeneğini belirleyin.
 
-3.   **URL'yi belirtin**altında, daha önce not ettiğiniz ilkeyle yönetilen uygulama için URL'yi girin.
+3.  **URL'yi belirtin**altında, daha önce not ettiğiniz ilkeyle yönetilen uygulama için URL'yi girin.
 
 Yükleme bittiğinde, yüklenen uygulama için **Yazılım Özellikleri** sayfasında **Uygulama Yönetimi İlkeleri** için **Evet**’i görürsünüz.
 
@@ -194,6 +197,6 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

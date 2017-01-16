@@ -1,5 +1,5 @@
 ---
-title: "Sertifika profillerini yapılandırma | Microsoft Intune"
+title: "Sertifika profillerini yapılandırma | Microsoft Docs"
 description: "Intune sertifika profilinin nasıl oluşturulacağını öğrenin."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>Intune sertifika profillerini yapılandırma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Altyapınızı ve sertifikalarınızı [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md) veya [PFX için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-pfx.md) bölümlerinde anlatıldığı gibi yapılandırdıktan sonra sertifika profilleri oluşturabilirsiniz. İşlem şöyledir:
 
 - **Görev 1**: Güvenilen Kök CA sertifikasını dışarı aktarın
@@ -141,7 +144,7 @@ Sertifika profilleri, yalnızca profili oluştururken kullandığınız platform
 Sertifika profillerini, Intune için diğer ilkeleri dağıttığınız şekilde dağıtın:
 
 1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi ve ardından **Dağıtımı Yönet**’i seçin.
-2.   **Dağıtımı Yönet** iletişim kutusunda:
+2.  **Dağıtımı Yönet** iletişim kutusunda:
     -   **İlkeyi dağıtmak için** ilkenin dağıtılacağı bir veya daha fazla grup seçin ve ardından **Ekle** &gt; **Tamam**'ı seçin.
     -   **Dağıtmadan iletişim kutusunu kapatmak için** **İptal**’i seçin.
 
@@ -157,6 +160,6 @@ Bundan sonra sertifikaları e-posta, Wi-Fi ve VPN profillerinin güvenliğini sa
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Uygulamaları ekleme | Microsoft Intune"
+title: "Uygulamaları ekleme | Microsoft Docs"
 description: "Intune’la uygulamaları dağıtmaya başlamadan önce, biraz zaman ayırın ve bu konu başlığı altında tanıtılan kavramları öğrenin."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>Microsoft Intune’la uygulamaları ekleme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune’la uygulamaları dağıtmaya başlamadan önce, biraz zaman ayırın ve bu konu başlığı altında tanıtılan kavramları öğrenin. Bu kavramlar hangi uygulamaları hangi platforma dağıtabileceğinizi anlamanıza yardımcı olur. Ayrıca uygulamaları dağıtmadan önce karşılanması gereken önkoşulları anlamanıza da yardımcı olur.
 
 ## <a name="app-types-that-you-can-deploy"></a>Dağıtabileceğiniz uygulama türleri
@@ -93,6 +96,6 @@ Uygulamaları dağıtabilmek için önce Intune konsoluna eklemeniz gerekir. [Ka
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

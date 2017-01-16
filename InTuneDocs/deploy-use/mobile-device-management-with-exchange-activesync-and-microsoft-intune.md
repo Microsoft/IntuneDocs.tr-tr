@@ -1,5 +1,5 @@
 ---
-title: "Exchange ActiveSync Cihaz Yönetimi | Microsoft Intune"
+title: "Exchange ActiveSync Cihaz Yönetimi | Microsoft Docs"
 description: "Exchange bağlayıcısını kullanarak Exchange ActiveSync (EAS) yönetimi ile mobil cihaz yönetme"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1b26e1298cf0b65f99219338b7ba59987e70c3ab
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4d1fc1af29dbd42c639afe079020d35a92360eb3
 
 
 ---
 
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Microsoft Intune ile Exchange ActiveSync mobil cihaz yönetimi
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune’un mobil cihazları doğrudan yönetebilmesi için cihazların [Intune’da kayıtlı](prerequisites-for-enrollment.md) olması gerekir. Yöneticiler alternatif olarak, Exchange ActiveSync (EAS) yönetimini Exchange bağlayıcısıyla kullanan, daha kısıtlı bir yönetim çözümü etkinleştirebilir. Cihazlar, şirket içi Exchange sunucularıyla veya Office 365 kullanılarak Exchange Online ile yönetilebilir. Intune, herhangi bir abonelik türü için sadece tek bir Exchange bağlayıcısı bağlantısını destekler.
 
 ## <a name="exchange-access-rules-for-mobile-devices"></a>Mobil cihazlar için Exchange erişim kuralları ##
@@ -47,6 +50,6 @@ Son olarak, şirket verileri artık kullanılmıyorsa ya da cihazlar kaybolur ve
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

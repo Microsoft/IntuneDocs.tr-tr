@@ -1,5 +1,5 @@
 ---
-title: "Windows cihazınızı Intune ile kullanma | Microsoft Intune"
+title: "Windows cihazınızı Intune ile kullanma | Microsoft Docs"
 description: "Windows cihazları Intune’a kaydolduğunda kullanıcıların cihazda gerçekleştirebileceği görevlere yönelik bağlantıların listesi"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: a3433e1976063513ee836189738ff02d85d40044
 
 
 ---
@@ -52,15 +54,15 @@ Bu bölümdeki bilgiler, Windows cihazları Intune’a kaydedildikten sonra kull
 
 Bu bölümdeki bilgiler, kullanıcılara Windows cihazları Intune’a kaydedildiğinde karşılaşabilecekleri sorunların çözümünde yardımcı olur.
 
-- [Cihaz, gerekli en düşük işletim sistemi sürümüne sahip değil](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
-- [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-- [Cihazda BitLocker etkin değil](device-doesnt-have-bitlocker-enabled-windows.md)
-- [Cihazda kötü amaçlı yazılımdan koruma yazılımı etkin değil](device-doesnt-have-antimalware-software-enabled-windows.md)
-- [Cihazda Güvenli Önyükleme etkin değil](device-doesnt-have-secure-boot-enabled-windows.md)
-- [Cihazda Kod Bütünlüğü etkin değil](device-doesnt-have-code-integrity-enabled-windows.md)
+- [Cihaz, gerekli en düşük işletim sistemi sürümüne sahip değil](you-need-to-update-your-windows-device.md)
+- [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](your-windows-version-isnt-yet-supported.md)
+- [Cihazda BitLocker etkin değil](you-need-to-enable-windows-encryption.md)
+- [Cihazda kötü amaçlı yazılımdan koruma yazılımı etkin değil](your-device-needs-antimalware-software.md)
+- [Cihazda Güvenli Önyükleme etkin değil](you-need-to-enable-secure-boot-windows.md)
+- [Cihazda Kod Bütünlüğü etkin değil](you-need-to-enable-code-integrity.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

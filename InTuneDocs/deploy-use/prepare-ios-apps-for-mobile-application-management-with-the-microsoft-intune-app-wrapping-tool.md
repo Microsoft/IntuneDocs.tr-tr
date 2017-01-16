@@ -1,5 +1,5 @@
 ---
-title: "iOS uygulamalarını Intune Uygulama Sarmalama Aracı’yla sarmalama | Microsoft Intune"
+title: "iOS uygulamalarını Intune Uygulama Sarmalama Aracı’yla sarmalama | Microsoft Docs"
 description: "iOS uygulamalarınızı, uygulamanın kendi kodunda değişiklik yapmadan sarmalamayı öğrenmek için bu konu başlığı altındaki bilgileri kullanın. Mobil uygulama yönetimi ilkelerini uygulayabilmek için uygulamaları hazırlayın."
 keywords: 
 author: mtillman
@@ -14,34 +14,157 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
+ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını mobil uygulama yönetimi için hazırlama
 
-Şirket içi iOS uygulamalarının davranışını, uygulamanın kodunu değiştirmeden Intune uygulama koruma özelliklerini etkinleştirerek değiştirmek için iOS için Microsoft Intune Uygulama Sarmalama Aracı'nı kullanın.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Araç, bir uygulama etrafında sarmalayıcı oluşturan bir Mac OS komut satırı uygulamasıdır. Bir uygulama işlendikten sonra, BT yöneticisi tarafından dağıtılan Intune [mobil uygulama yönetimi ilkelerini](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanarak uygulamaların işlevini değiştirebilirsiniz.
+Şirket içi iOS uygulamaları için Intune uygulama koruma özelliklerini uygulamanın kodunu değiştirmeden etkinleştirmek üzere iOS için Microsoft Intune Uygulama Sarmalama Aracı'nı kullanın.
+
+Araç, bir uygulama etrafında sarmalayıcı oluşturan bir Mac OS komut satırı uygulamasıdır. Bir uygulama işleme alındıktan sonra uygulamanın işlevselliğini [uygulama koruma ilkeleri](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) dağıtarak değiştirebilirsiniz.
 
 Aracı indirmek için bkz. GitHub üzerinde [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için önkoşulları karşılama
-Önkoşulları karşılama hakkında daha fazla bilgi edinmek için [iOS için Intune Uygulama Sarmalama Aracı’nın Önkoşulları Nasıl Elde Edilir?](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) blog yazısını inceleyin.
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için genel önkoşullar
 
-|Gereksinim|Daha fazla bilgi|
-|---------------|--------------------------------|
-|Desteklenen işletim sistemi ve araç takımı | Uygulama Sarmalama Aracını, XCode araç takımının sürüm 5 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayarda çalıştırmalısınız.|
-|İmzalama sertifikası ve sağlama profili | Bir Apple imzalama sertifikanız ve sağlama profiliniz olmalıdır. [Apple geliştirici belgelerinize](https://developer.apple.com/) bakın.|
-|Uygulama Sarmalama Aracı’yla bir uygulamayı işleme  |Uygulamalar şirketiniz veya bağımsız bir yazılım satıcısı (ISV) tarafından geliştirilmiş ve imzalanmış olmalıdır. Bu aracı Apple Store'dan edinilen uygulamaları işlemek için kullanamazsınız. Uygulamalar iOS 8.0 veya üzeri için yazılmış olmalıdır. Ayrıca uygulamalar Konumdan Bağımsız Yürütülebilir (PIE) biçiminde olmalıdır. PIE biçimi hakkında daha fazla bilgi için Apple geliştirici belgelerinize bakın. Son olarak, uygulamanın uzantısı **.app** veya **.ipa** olmalıdır.|
-|Aracın işleyemediği uygulamalar | Şifrelenmiş uygulamalar, imzalanmamış uygulamalar ve genişletilmiş dosya öznitelikleri olan uygulamalar.|
-|Uygulamanız için yetkilendirmeleri ayarlama|Uygulamayı sarmalamadan önce, uygulamaya normal olarak verilenlerin ötesinde ek izinler ve yetenekler veren yetkilendirmeler ayarlamanız gerekir. Yönergeler için bkz. [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements).|
+Uygulama Sarmalama Aracı’nı çalıştırmadan önce bazı genel önkoşulları karşılamanız gerekir:
 
-## <a name="install-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını yükleme
+* Github’dan [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)’nı indirin.
+
+* Xcode araç takımının sürüm 5 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayar.
+
+* Giriş iOS uygulaması, şirketiniz veya bağımsız bir yazılım satıcısı (ISV) tarafından geliştirilmiş ve imzalanmış olmalıdır.
+
+  * Giriş uygulaması dosyasının uzantısı **.ipa** veya **.app** olmalıdır.
+
+  * Giriş uygulaması iOS 8.0 veya üzeri için derlenmiş olmalıdır.
+
+  * Giriş uygulaması şifrelenemez.
+
+  * Giriş uygulamasının genişletilmiş dosya öznitelikleri olamaz.
+
+  * Intune Uygulama Sarmalama Aracı tarafından işlenmeden önce giriş uygulaması yetkilendirmelerinin ayarlanmış olması gerekir. [Yetkilendirmeler](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) uygulamaya normal olarak verilenlerin ötesinde ek izinler ve yetenekler verir. Yönergeler için bkz. [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements).
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için Apple Geliştirici önkoşulları
+
+
+Sarmalanan uygulamaları kuruluşunuzun kullanıcılarına özel olarak dağıtmak için [Apple Geliştirici Kurumsal Programı](https://developer.apple.com/programs/enterprise/)’na sahip bir hesaba ve Apple Geliştirici hesabınıza bağlı olan ve uygulama imzalamak için gereken çeşitli varlıklara ihtiyacınız vardır.
+
+Kuruluşunuzdaki kullanıcılara dahili olarak iOS uygulamaları dağıtma hakkında daha fazla bilgi için [Apple Geliştirici Kurumsal Programı Uygulamalarını Dağıtma](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1) adlı resmi kılavuzu okuyun.
+
+Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler gerekir:
+
+* Apple Geliştirici Kurumsal Programı’nı içeren bir geliştirici hesabı.
+
+* Geçerli Ekip Tanımlayıcısı ile şirket içi ve geçici dağıtım imzalama sertifikası.
+
+  * Intune Uygulama Sarmalama Aracı için parametre olarak imzalama sertifikasının SHA1 karmasına ihtiyacınız olacaktır.
+
+
+* Şirket içi dağıtım sağlama profili.
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Apple Geliştirici Kuruluş hesabı oluşturma adımları
+1. [Apple Geliştirici Kurumsal Programı sitesine](https://developer.apple.com/programs/enterprise/) gidin.
+
+2. Sayfanın sağ üst kısmında **Kaydet**’e tıklayın.
+
+3. Kaydedeceğiniz öğenin denetim listesini okuyun. Sayfanın en altındaki **Kaydınıza Başlayın**’a tıklayın.
+
+4. Kuruluşunuzun Apple kimliğiyle **oturum açın**. Apple kimliğiniz yoksa **Apple Kimliği Oluştur**’a tıklayın.
+
+5. **Varlık Türü**’nüzü seçin ve **Devam**’a tıklayın.
+
+6. Kuruluşunuzun bilgilerini girerek formu doldurun. 
+              **Devam**'a tıklayın. Bu noktada Apple, kuruluşunuzu kaydetme yetkiniz olup olmadığını doğrulamak için sizinle irtibat kurar.
+
+8. Doğrulamadan sonra **Lisansı Kabul Et**'e tıklayın.
+
+9. Lisansı kabul ettikten sonra, **satın alma ve programı etkinleştirme** seçeneğiyle işlemi tamamlayın.
+
+10. Ekip aracısı (Apple Geliştirici Kurumsal Programı’na kuruluşunuz adına katılan kişi) sizseniz ilk olarak ekip üyelerini davet ederek ve rolleri atayarak ekibinizi oluşturun. Ekibinizi nasıl yöneteceğinizi öğrenmek için [Geliştirici Hesap Ekibinizi Yönetme](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) bölümündeki Apple belgelerini okuyun.
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>Apple imzalama sertifikası oluşturma adımları
+
+1. [Apple Geliştirici portalına](https://developer.apple.com/) gidin.
+
+2. Sayfanın sağ üst kısmında **Hesap**’a tıklayın.
+
+3. Kurumsal Apple kimliğinizle **oturum açın**.
+
+4. **Sertifikalar, Kimlikler ve Profiller**’e tıklayın.
+
+  ![Apple Geliştirici portalı](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. SCP ![Sağ üst köşedeki Apple Geliştirici portalı artı işaretine](../media/app-wrapper/iOS-signing-cert-2.png) tıklayarak bir iOS sertifikası ekleyin.
+
+6. **Üretim** altında **Şirket İçi ve Geçici** bir sertifika oluşturmayı seçin.
+
+  ![Şirket içi ve Geçici sertifika seçin](../media/app-wrapper/iOS-signing-cert-3.png)
+
+7. Sayfanın altındaki **İleri**’ye tıklayın.
+
+8. Mac OS bilgisayarınızdaki Anahtarlık Erişim uygulamasını kullanarak **Sertifika İmzalama İsteği (CSR)** oluşturma yönergelerini okuyun.
+
+  ![CSR oluşturma yönergelerini okuyun](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. Bir Sertifika İmzalama İsteği oluşturmak için yukarıdaki yönergeleri izleyin. Mac OS bilgisayarınızda **Anahtarlık Erişimi** uygulamasını başlatın.
+
+10. Ekranın üst kısmındaki Mac OS menüsünde **Anahtarlık Erişimi > Sertifika Yardımcısı > Bir Sertifika Yetkilisinden Sertifika İste** bölümüne gidin.  
+
+  ![Anahtarlık Erişimi’nde bir Sertifika Yetkilisinden bir sertifika isteyin](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. Bir CSR dosyasının nasıl oluşturulacağını öğrenmek için Apple geliştirici sitesindeki yönergeleri izleyin. CSR dosyasını Mac OS bilgisayarınıza kaydedin.
+
+  ![Anahtarlık Erişimi’nde bir Sertifika Yetkilisinden bir sertifika isteyin](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. Apple Geliştirici sitesine dönün. 
+              **Devam**'a tıklayın. Ardından CSR dosyasını karşıya yükleyin.
+
+13. Apple imzalama sertifikanızı oluşturur. Bunu indirin ve Mac OS bilgisayarınızda hatırlayacağınız bir konuma kaydedin.
+
+  ![İmzalama sertifikanızı indirin](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. Sertifikayı bir anahtarlığa eklemek için indirmiş olduğunuz sertifika dosyasına çift tıklayın.
+
+15. **Anahtarlık Erişimi**’ni yeniden açın. Sertifikanızı bulmak için Anahtarlık Erişimi penceresinin sağ üst kısmındaki arama çubuğunda **"iPhone"** kelimesini aratın. Menünün görünmesini sağlamak için öğeye sağ tıklayın ve **Bilgi Al**’a tıklayın.
+
+  ![Sertifikanızı bir anahtarlığa ekleyin](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. Bir bilgi iletisi görüntülenir. En alta kaydırın ve **Parmak izleri** etiketinin altına bakın. Uygulama Sarmalama Aracı için -c parametresi olarak kullanmak üzere **SHA1** dizesini kopyalayın.
+
+  ![Sertifikanızı bir anahtarlığa ekleyin](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Şirket İçi Dağıtım Sağlama profili oluşturma adımları
+
+1. [Apple Geliştirici hesabı portalına](https://developer.apple.com/account/) geri giderek kuruluşunuzun Apple kimliğiyle **oturum açın**.
+
+2. **Sertifikalar, Kimlikler ve Profiller**’e tıklayın.
+
+3. SCP ![Sağ üst köşedeki Apple Geliştirici portalı artı işaretine](../media/app-wrapper/iOS-signing-cert-2.png) tıklayarak bir iOS sağlama profili ekleyin.
+
+4. **Dağıtım** altında bir **Şirket içi** sağlama profili oluşturmayı seçin.
+
+  ![Şirket içi sağlama profilini seçin](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. 
+              **Devam**'a tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
+
+6. Profilinizi (.mobileprovision uzantısı ile) Mac OS bilgisayarınıza yükleme adımlarını izleyin.
+
+7. Dosyayı hatırlayacağınız bir konuma kaydedin. Bu dosya, Uygulama Sarmalama Aracı kullanılırken -p parametresi için kullanılır.
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını indirin
 
 1.  [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)'daki Uygulama Sarmalama Aracı dosyalarını bir macOS bilgisayara indirin.
 

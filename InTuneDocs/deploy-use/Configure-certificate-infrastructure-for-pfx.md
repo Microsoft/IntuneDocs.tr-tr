@@ -1,5 +1,5 @@
 ---
-title: "PFX için sertifika altyapısını yapılandırma |Microsoft Intune|"
+title: "PFX için sertifika altyapısını yapılandırma |Microsoft Docs"
 description: ".PFX sertifika profillerini oluşturun ve dağıtın."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>Sertifika altyapısını yapılandırma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Bu konu başlığı altında, .PFX sertifika profillerini oluşturmak ve dağıtmak için nelere ihtiyacınız olduğu açıklanır.
 
 Kuruluşunuzda sertifika tabanlı kimlik doğrulamaları yapmak için, bir Kuruluş Sertifika Yetkiliniz olmalıdır.
@@ -31,7 +34,7 @@ Kuruluş Sertifika Yetkilisine ek olarak .PFX Sertifika profillerini de kullanma
 
 -  Sertifika Yetkilisi ile iletişim kurabilen bilgisayarda çalışan Intune Sertifika Bağlayıcısı.
 
-## <a name="onpremises-infrastructure-description"></a>Şirket içi altyapı açıklaması
+## <a name="on-premises-infrastructure-description"></a>Şirket içi altyapı açıklaması
 
 
 -    **Active Directory etki alanı**: Bu bölümde listelenen tüm sunucular (Web Uygulaması Ara Sunucusu hariç), Active Directory etki alanınıza katılmalıdır.
@@ -65,7 +68,7 @@ Sertifika profillerini yapılandırabilmeniz için önce aşağıdaki görevleri
 - **Görev 1** - Sertifika yetkilisinde sertifika şablonları yapılandırma.
 - **Görev 2** - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma.
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Görev 1 - Sertifika yetkilisinde sertifika şablonları yapılandırma
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Görev 1 - Sertifika yetkilisinde sertifika şablonları yapılandırma
 Bu görevde, sertifika şablonunu yayımlayacaksınız.
 
 ##### <a name="to-configure-the-certification-authority"></a>Sertifika yetkilisini yapılandırmak için
@@ -104,7 +107,7 @@ Bu görevde, sertifika şablonunu yayımlayacaksınız.
 
 4.  CA bilgisayarında, Intune Sertifika Bağlayıcısı’nı barındıran bilgisayarın, .PFX profili oluşturulurken kullanılan şablona erişebilmesi için kayıt izni olduğundan emin olun. CA bilgisayarı özelliklerindeki **Güvenlik** sekmesinde bu izni ayarlayın.
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Görev 2 - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Görev 2 - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
 Bu görevde şunları yapacaksınız:
 
 Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
@@ -156,6 +159,6 @@ Artık sertifika profillerinizi, [Sertifika profillerini yapılandırma](Configu
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

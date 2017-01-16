@@ -1,11 +1,11 @@
 ---
-title: "Şirket Portalı nedir? | Microsoft Intune"
+title: "Şirket Portalı nedir? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
-ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
+ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
+ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
 
 
 ---
@@ -41,10 +41,10 @@ Microsoft Intune Şirket Portalı, şirketinizin veya okulunuzun verilerine ve u
 Şirket Portalı web sitesiyle yapabileceklerinizi cihazınızdaki Şirket Portalı uygulamasını kullanarak yapabileceklerinizle karşılaştırmak için aşağıdaki bağlantılardan birini seçin:
 
 > [!div class="op_single_selector"]
-- [Outlook Web Access (OWA)](using-your-android-device-with-intune.md)
-- [iOS ve macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [Şirket Portalı web sitesi](using-the-intune-company-portal-website.md)
+- [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
+- [iOS ve Mac OS cihazlarınızı Intune ile kullanma](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
+- [Şirket portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Şirket Portalı’na bir bilgisayar veya cihaz eklediğinizde ne olur?
 Şirket Portalı’na bir bilgisayar veya cihaz eklediğinizde bazı yazılımlar yüklenebilir ya da bir uygulama indirilebilir (cihaza bağlı olarak).  Aynı zamanda, BT yöneticinize cihazınızdaki şirket bilgilerinin korunmasına yardımcı olmak için cihazınızı yönetme izni vermiş olursunuz.
@@ -58,9 +58,9 @@ BT yöneticinizin cihazınızda neleri görebileceğini, neleri göremeyeceğini
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Şirket Portalı’na ne tür bilgisayarları veya cihazları ekleyebilirsiniz?
 
--   iPhone, iPad ve Mac OS cihazları
+-   iOS (iPhone, iPad) ve Mac OS (iMac, MacBook) kullanan Apple cihazları
 
--   Android mobil cihazlar
+-   Android cihazlar
 
 -   Windows cihazları
     -   Windows 10 Mobile
@@ -96,6 +96,6 @@ Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin. Kişi bilgile
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

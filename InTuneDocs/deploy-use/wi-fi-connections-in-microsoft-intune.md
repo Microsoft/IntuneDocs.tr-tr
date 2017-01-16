@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi bağlantıları | Microsoft Intune"
+title: "Wi-Fi bağlantıları | Microsoft Docs"
 description: "Kullanıcıların Wi-Fi ağlarınıza bağlanmasına yardımcı olmak için Wi-Fi profilleri kullanın."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Cihazları kurumsal Wi-Fi ağlarınıza bağlanmak üzere yapılandırma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcılara kablosuz ağ ayarlarını dağıtmak için kullanın. Bir Wi-Fi profili dağıttığınızda, kullanıcılarınız kurumsal Wi-Fi ağınıza ağı kendileri yapılandırmak zorunda kalmadan erişir.
 
@@ -138,7 +140,7 @@ Profil bir ilke türü olduğundan dağıtılması için **İlke** çalışma al
 
 1.  **İlke** çalışma alanında, dağıtmak istediğiniz ilkeyi ve ardından **Dağıtımı Yönet**’i seçin.
 
-2.   **Dağıtımı Yönet** iletişim kutusunda:
+2.  **Dağıtımı Yönet** iletişim kutusunda:
 
     -   **İlkeyi dağıtmak için**: İlkeyi dağıtmak istediğiniz bir veya daha fazla grubu seçin. Ardından **Ekle** &gt; **Tamam**'ı seçin.
 
@@ -158,7 +160,7 @@ Bu tablolar Android, iOS ve Mac OS X Wi-Fi profilleri için bulunan güvenlik ay
 |**EAP Türü**|Güvenli kablosuz bağlantıların kimliğini doğrulamak için kullanılan Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü seçin:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|**WPA-Kuruluş/WPA2-Kuruluş** güvenlik türünü seçtiyseniz.|
 |**Sunucu doğrulaması için kök sertifikalarını seçin**|**Seç**'i belirleyin, ardından bağlantı kimliğini doğrulamak için kullanılan güvenilir kök sertifika profilini seçin. Güvenilir kök sertifika profilini oluşturma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md).|Herhangi bir **EAP Türü** seçimi yaptıysanız.|
 |**Kimlik doğrulama yöntemi**|Bağlantı için kullanılan kimlik doğrulama yöntemini seçin:<br /><br />İstemci sertifikasını belirtmek için -   **Sertifikalar**<br />Farklı bir kimlik doğrulama yöntemi belirtmek için -   **Kullanıcı Adı ve Parola**|**EAP türü**, **PEAP** veya **EAP-TTLS**'dir.|
-|**Kimlik doğrulaması (İç kimlik) için bir EAP yöntemi seçin**|Bağlantı kimliğini nasıl doğrulayacağınızı seçin:<br /><br />-   **Yok**<br />-   **Şifrelenmemiş parola (PAP)**<br />-   **Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**<br /><br />Mevcut seçenekler, seçtiğiniz EAP türüne bağlıdır.| **Kimlik doğrulama yöntemi**, **Kullanıcı Adı ve Parola**'dır.|
+|**Kimlik doğrulaması (İç kimlik) için bir EAP yöntemi seçin**|Bağlantı kimliğini nasıl doğrulayacağınızı seçin:<br /><br />-   **Yok**<br />-   **Şifrelenmemiş parola (PAP)**<br />-   **Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**<br /><br />Mevcut seçenekler, seçtiğiniz EAP türüne bağlıdır.|**Kimlik doğrulama yöntemi**, **Kullanıcı Adı ve Parola**'dır.|
 |**Kimlik gizliliğini (Dış kimlik) etkinleştir**|Bir EAP kimlik isteğine yanıt olarak gönderilen metni belirtin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir. Ardından gerçek kimlik güvenli bir tünelde gönderilir.|**EAP türü** **PEAP** veya **EAP-TTLS** ise.|
 |**İstemci kimlik doğrulaması (Kimlik Sertifikası) için bir istemci sertifikası seçin**|**Seç**'i belirleyin, ardından bağlantı kimliğini doğrulamak için kullanılan SCEP sertifika profilini seçin. SCEP sertifika profilini oluşturma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md).|Güvenlik türü **WPA-Kuruluş/WPA2-Kuruluş** şeklindeyse ve herhangi bir **EAP türü** seçildiyse.|
 
@@ -181,6 +183,6 @@ Bu tablolar Android, iOS ve Mac OS X Wi-Fi profilleri için bulunan güvenlik ay
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

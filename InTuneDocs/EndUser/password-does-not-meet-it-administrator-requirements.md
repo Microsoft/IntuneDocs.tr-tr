@@ -1,5 +1,5 @@
 ---
-title: "Parola BT yöneticisinin gereksinimlerini karşılamıyor | Microsoft Intune"
+title: "Parola, BT yöneticisinin gereksinimlerini karşılamıyor | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 60659d60e3fcf2146b444a3334192c8b1181f735
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
 
 
 ---
@@ -49,6 +51,6 @@ Parolanızı gereksinimlerle uyumlu hale getirme konusunda sorun yaşıyorsanız
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
