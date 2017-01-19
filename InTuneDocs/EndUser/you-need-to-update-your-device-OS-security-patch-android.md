@@ -5,16 +5,18 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: f6fe6f76a700137914ef9cea7ce02753882e2fa3
-ms.openlocfilehash: 8893b397f5a29568ab5d4238e56d7e9806633e30
+ms.sourcegitcommit: 440d0e75c9373d5de44897b8a997da6c24de4e3c
+ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
 
 
 ---
@@ -27,18 +29,20 @@ Bir Samsung cihazınız varsa, **Ayarlar** > **Telefon hakkında**’ya giderek 
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
-## <a name="if-you-have-a-samsung-knox-device"></a>Bir Samsung Knox cihazınız varsa
+## <a name="for-most-android-devices-non-samsung-knox"></a>Çoğu Android cihazlar için (Samsung Knox olmayan)
+
+**Ayarlar** > **Hakkında** > **Yazılım güncelleştirmeleri**’ne gidin. Güncelleştirmeyi yüklediğinizde cihazınız doğru güvenlik düzeltme ekine sahip olur.
+
+## <a name="for-samsung-knox-android-devices"></a>Samsung Knox Android cihazları için
 
 **Ayarlar** > **Sistem güncelleştirmeleri** > **Yeni sistem güncelleştirmesi denetimi** bölümüne gidin. Güncelleştirmeyi yüklediğinizde Samsung Knox cihazınız doğru güvenlik düzeltme ekine sahip olur.
 
-## <a name="if-you-do-not-have-a-samsung-knox-device"></a>Bir Samsung Knox cihazınız yoksa
 
-**Ayarlar** > **Hakkında** > **Yazılım güncelleştirmeleri**’ne gidin. Güncelleştirmeyi yüklediğinizde cihazınız doğru güvenlik düzeltme ekine sahip olur. 
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

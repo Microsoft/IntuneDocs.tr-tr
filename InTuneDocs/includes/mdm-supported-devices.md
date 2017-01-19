@@ -5,7 +5,7 @@
   - Mac OS X 10.9 ve üzeri
 
 ### <a name="windows"></a>Windows
-  - Windows 10 (Home, Pro, Education ve Enterprise sürümleri) çalıştıran bilgisayarlar
+  - Windows 10 (Pro, Education ve Enterprise sürümleri) çalıştıran bilgisayarlar
   - Windows Phone 8.1 ve üzeri
   - Windows 8.1 RT
   - Windows 8.1 çalıştıran bilgisayarlar
@@ -23,6 +23,6 @@ Enterprise Management + Security (EMS) kullanan müşteriler, [Windows 10 cihazl
  
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

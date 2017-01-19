@@ -14,8 +14,8 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
+ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
+ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
 
 
 ---
@@ -95,7 +95,7 @@ Kurumsal mobilite yönetimi çözümlerinin çoğu, temel mobil cihaz ve mobil u
 
 Kuruluşların "kayıt olmadan" senaryolarını kullanma şekli değişiklik gösterir. Bazı kuruluşlarda standarttır. Bazıları ise kişisel tablet gibi yardımcı cihazlar için izin verir. Diğerleri ise hiç desteklemez. Tüm çalışan cihazlarının MDM sistemine kaydedilmesini gerektiren kuruluşlar dahi genelde "kayıt olmadan" senaryolarını yükleniciler, satıcılar ve özel duruma sahip diğer cihazlar için destekler.
 
-Intune'un "kayıt olmadan" teknolojisini sisteme kaydolan cihazlarda da kullanabilirsiniz. Örneğin, MDM sistemine kayıtlı bir cihazda mobil işletim sistemi tarafından sunulan birlikte açma koruması bulunabilir. Ayrıca, BT departmanı EMS tarafından yönetilen mobil uygulamalara, uygulama koruma ilkesi uygulayarak farklı kaydetme işlevini denetleyebilir veya çok faktörlü kimlik doğrulaması özelliği ekleyebilir.
+Intune'un "kayıt olmadan" teknolojisini sisteme kaydolan cihazlarda da kullanabilirsiniz. Örneğin, MDM sistemine kayıtlı bir cihazda mobil işletim sistemi tarafından sunulan birlikte açma koruması bulunabilir. (Open-in protection, Outlook gibi bir uygulamadan Word gibi başka bir uygulamaya belge açmanızı her iki uygulama da MDM sağlayıcısı tarafından yönetilmediği durumlarda kısıtlayan bir iOS özelliğidir.) Ayrıca, BT departmanı EMS tarafından yönetilen mobil uygulamalara, uygulama koruma ilkesi uygulayarak farklı kaydetme işlevini denetleyebilir veya çok faktörlü kimlik doğrulaması özelliği ekleyebilir.
 
 Kuruluşunuzun kayıtlı ve kayıtsız mobil cihazlar ve uygulamalarla ilgili pozisyonu ne olursa olsun, EMS'nin bir parçası olan Intune'da çalışanlarınızın üretkenliğini artırmaya yardımcı olarak kurumsal verilerinizi korumanızı sağlayarak araçlar mevcuttur.
 
@@ -116,6 +116,6 @@ Aşağıdaki listede yer alan iş sorunlarına tıklayarak sunduğumuz çözüml
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
