@@ -14,13 +14,16 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d4dffccca11582b11196c6441ba8828ceeb4ebb8
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: 594b6b66a4c756155e958815b926674e63f07bb5
 
 
 ---
 
 # <a name="set-up-ios-and-mac-device-management"></a>iOS ve Mac yönetimini ayarlama
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune iPad’ler, iPhone’lar ve Mac OS X cihazları için mobil uygulama yönetimini (MDM) etkinleştirir ve kullanıcılara şirket e-postası ve uygulamalarına erişim izni sağlar. Intune’un iOS ve Mac cihazlarını yönetebilmesi için Apple Anında İletim Bildirimi hizmeti (APNs) sertifikası gerekir. Sertifika Intune’a eklendikten sonra, kullanıcılar cihazlarını kaydetmek için Şirket Portalı uygulamasını yükleyebilir veya yönetici [şirkete ait iOS cihazı yönetimini](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) ayarlayabilir.
 
 1.  **Intune’u ayarlama**<br>
@@ -48,7 +51,7 @@ Intune iPad’ler, iPhone’lar ve Mac OS X cihazları için mobil uygulama yön
 
     Diğer son kullanıcı görevleri hakkında daha fazla bilgi için şu makalelere bakın:
     - [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-    - [iOS ve Mac cihazlar için son kullanıcı kılavuzu](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
+    - [iOS ve Mac cihazlar için son kullanıcı kılavuzu](../enduser/using-your-ios-or-macOS-device-with-intune.md)
 
 Şirketiniz veya kuruluşunuz kullanıcılarına iOS cihazları satın aldıysa, bu cihazlar [şirkete ait iOS cihazları](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) olarak yönetime kaydedilebilir.
 
@@ -57,6 +60,6 @@ Intune iPad’ler, iPhone’lar ve Mac OS X cihazları için mobil uygulama yön
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
