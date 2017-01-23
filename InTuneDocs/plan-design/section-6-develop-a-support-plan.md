@@ -14,15 +14,15 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 53bb650bbb20d5efae0ba53f0c0bc257a19cbaae
-ms.openlocfilehash: 96f6ca25229244a9cde24609e0c4c37412a3eb01
+ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
+ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
 
 
 ---
 
 # <a name="develop-an-intune-support-plan"></a>Intune destek planı geliştirme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
 Bir Intune destek planına sahip olmak Intune ile ilgili sorunları daha etkili bir şekilde tanımlamaya, çözmeye ve son kullanıcının genel Intune deneyimini iyileştirmeye yardımcı olabilir. Intune destek planınızı geliştirirken dikkate almanız gereken bazı sorular şunlardır:
 
@@ -38,7 +38,7 @@ Bir Intune destek planına sahip olmak Intune ile ilgili sorunları daha etkili 
 
 Her alanı daha ayrıntılı bir şekilde inceleyeceğiz.
 
-## <a name="which-teams-are-responsible-for-providing-support"></a>Destek sağlamaktan hangi ekipler sorumlu? 
+## <a name="which-teams-are-responsible-for-providing-support"></a>Destek sağlamaktan hangi ekipler sorumlu?
 
 Kuruluşların farklı destek katmanları/düzeyleri (1-3) olabilir. Örneğin, katman 1 ve 2 destek ekibinin parçası olabilir ve katman 3 Intune dağıtımından sorumlu MDM ekip üyelerini içerir.
 
@@ -46,7 +46,7 @@ Kuruluşların farklı destek katmanları/düzeyleri (1-3) olabilir. Örneğin, 
 
 Katman 1 normalde ilk destek düzeyidir ve genellikle destek istekleri için kullanıcı tarafından iletişim kurulacak ilk katmandır. Katman 1, son kullanıcının sorununu çözemiyorsa sorun katman 2’ye taşınır ve gerekirse oradan da katman 3’e taşınır. Ek olarak, Microsoft desteği katman 4 olarak düşünülebilir.
 
--   [Intune desteği](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.md) hakkında daha fazla bilgi edinin.
+-   [Intune desteği](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) hakkında daha fazla bilgi edinin.
 
 İlk üretim dağıtımı aşamalarında, kuruluşlardaki üç katman da köprü veya Skype çağrısına katılabilir. Bir kuruluşun kendi BT destek/yardım masası iş akışlarını nasıl uygulayabileceğine ilişkin bir örnek aşağıda verilmiştir:
 
@@ -84,10 +84,10 @@ Intune destek eğitim gündemine bir örnek aşağıda verilmiştir.
 
 -   Soru ve Cevaplar
 
->[!TIP] 
+>[!TIP]
 > [Ek kaynaklar](additional-resources.md), Microsoft Intune eğitimi sırasında destek ekibinizin incelemesi ve faydalanması açısından değerli olabilecek teknik kaynaklar sağlar.
 
-## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Destek ekibinin daha erken katılımını sağlamak için ne gibi fırsatlar var? 
+## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Destek ekibinin daha erken katılımını sağlamak için ne gibi fırsatlar var?
 
 Intune dağıtım planlama ve pilot çalışmalarının erken aşamalarında BT destek/yardım masası personelinin katılımını sağlamak kuruluşlar için çok yararlı olabilir. Bu, destek personelinin çözümü anlamasına ve değerli deneyimler elde etmesine olanak tanır. Ayrıca, BT destek/yardım masası personelini kuruluşların tam üretim dağıtımına hazırlamaya da yardımcı olur.
 
@@ -97,6 +97,6 @@ Sonraki bölümde [Intune’u tasarlama](section-7-create-an-intune-design.md) k
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
