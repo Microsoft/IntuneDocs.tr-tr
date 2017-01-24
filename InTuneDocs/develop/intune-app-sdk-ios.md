@@ -14,8 +14,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: cb80d531a28eaccbd26bc53df3e13ad233522dcf
+ms.sourcegitcommit: 3fdbf7f561f526b68972c6f66d1b72b56f7fa8ad
+ms.openlocfilehash: 5aa384197036adf0c373a08c3750f453812c9fba
 
 
 ---
@@ -119,7 +119,8 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 6. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
 
     > [!NOTE]
-    > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bunu denetlemek için .mobileprovision dosyasını bir metin düzenleyicide açıp **keychain-access-groups** araması yapın ve bir joker karakter kullandığınızdan emin olun. Örneğin:     ```xml
+    > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bunu denetlemek için .mobileprovision dosyasını bir metin düzenleyicide açıp **keychain-access-groups** araması yapın ve bir joker karakter kullandığınızdan emin olun. Örneğin:
+    ```xml
     <key>keychain-access-groups</key>
     <array>
     <string>YOURBUNDLESEEDID.*</string>
@@ -150,7 +151,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
 9. iOS 9+ için geliştirilen mobil uygulamalarda, uygulamanızın geçtiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisinde bulunan `UIApplication canOpenURL` öğesine dahil edin. Ayrıca, listelenen her protokol için yeni bir protokol ekleyin ve bu protokole `-intunemam` ekleyin. Diziye ayrıca `http-intunemam`, `https-intunemam`ve `ms-outlook-intunemam` öğelerini dahil etmeniz gerekir.
 
-10. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentitifiers` anahtarı altındaki IntuneMAMSettings sözlüğüne bir dize dizisi olarak ekleyin.
+10. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentifiers` anahtarı altındaki IntuneMAMSettings sözlüğüne bir dize dizisi olarak ekleyin.
 
 11. Mobil uygulamanızı Azure Directory Kimlik Doğrulaması Kitaplığı’na (ADAL) bağlayın. Objective C için ADAL kitaplığı [GitHub'dan alınabilir](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
@@ -509,7 +510,7 @@ Bir kimliğin yalnızca dizi olarak tanımlandığını aklınızda bulundurun. 
 
 ### <a name="identity-overview"></a>Kimliğe genel bakış
 
-Kimlik bir hesabın kullanıcı adıdır (örneğin, user@contoso.com). Geliştiriciler bir uygulama kimliğini aşağıdaki düzeylerde ayarlayabilir:
+Kimlik, bir hesabın kullanıcı adıdır (örneğin,user@contoso.com). Geliştiriciler uygulamanın kimliğini aşağıdaki düzeylerde ayarlayabilir:
 
 * **İşlem kimliği**: İşlem genelindeki kimliği ayarlar ve genellikle tek kimlikli uygulamalar için kullanılır. Bu kimlik tüm görevleri, dosyaları ve UI’yi etkiler.
 * **UI Kimliği**: Ana iş parçacığında UI görevlerine kes/kopyala/yapıştır, PIN, kimlik doğrulaması ve veri paylaşımı gibi ilkelerden hangilerinin uygulanacağını belirler. UI kimliği, şifreleme ve yedekleme gibi dosya görevlerini etkilemez.
@@ -604,6 +605,12 @@ iOS için geliştirmeye yönelik önerilen en iyi uygulamalar aşağıda verilmi
 
 ## <a name="faq"></a>SSS
 
+
+**Tüm API’ler yerel Swift veya Objective-C ile Swift birlikte çalışabilirliği aracılığıyla adreslenebilir mi?**
+
+Intune Uygulama SDK’sı API’leri yalnızca Objective-C içinde bulunur ve yerel Swift’i desteklemez.  
+
+
 **Uygulamamın tüm kullanıcılarının MAM hizmetine kayıtlı olması gerekiyor mu?**
 
 Hayır. Aslında, yalnızca iş veya okul hesaplarının Intune uygulama SDK'sına kayıtlı olması gerekir. Bir hesabın iş veya okul bağlamında kullanıldığını belirlemek uygulamaların sorumluluğudur.   
@@ -637,6 +644,8 @@ Bu yöntem, kullanıcının uygulamadaki oturumunu kapatmasından önce çağrı
 
 Evet, BT yöneticisi uygulamaya bir seçmeli silme komutu gönderebilir. Bu, kullanıcının kaydını kaldırır, siler ve kullanıcı verilerini temizler. SDK bu senaryoyu otomatik olarak işler ve kayıt silme temsilci yöntemiyle bir bildirim gönderir.
 
+
+
 ## <a name="submit-your-app-to-the-app-store"></a>Uygulamanızı App Store’a gönderme
 
 Intune Uygulama SDK’sının hem statik kitaplığı hem de çerçeve derlemesi evrensel ikili dosyalardır. Yani tüm cihaz ve benzetici mimarilerine yönelik kodları içerirler. Apple, App Store’a gönderilen uygulamaları benzetici kodu içermeleri durumunda reddeder. Yalnızca cihaz derlemeleri için statik kitaplığa karşı derleme yapıldığında, bağlayıcı, benzetici kodunu otomatik olarak çıkartır. Uygulamanızı App Store’a yüklemeden önce tüm benzetici kodunun kaldırıldığından emin olmak için aşağıdaki adımları uygulayın.
@@ -656,6 +665,6 @@ Intune Uygulama SDK’sının hem statik kitaplığı hem de çerçeve derlemesi
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 
