@@ -62,7 +62,8 @@ MAM ilkeleri şu anda aşağıdakilerde desteklenmektedir:
 
 >[!NOTE]
 >Windows cihazları, kayıt senaryoları olmadan MAM’de desteklenmez. Ancak, Windows 10 cihazlarını Intune'a kaydettiğinizde, benzer bir işlevsellik sunan Windows Bilgi Koruması’nı kullanabilirsiniz. Ayrıntılar için bkz. [Windows Bilgi Koruması’nı (WIP) kullanarak kurumsal verilerinizi koruma](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
->
+
+
 ##  <a name="how-mam-policies-protect-app-data"></a>MAM ilkeleri, uygulama verilerini nasıl korur?
 
 ###  <a name="apps-without-mam-policies"></a>MAM ilkeleri olmayan uygulamalar
