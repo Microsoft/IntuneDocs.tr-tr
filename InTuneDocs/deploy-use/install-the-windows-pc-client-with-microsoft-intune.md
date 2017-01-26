@@ -5,7 +5,7 @@ description: "Windows bilgisayarlarınızın Microsoft Intune istemci yazılım�
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 07/19/2016
+ms.date: 01/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,27 +14,29 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 928e4e8097b9cd326e0863a45b183226a7eae056
-ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 7cef6b6eac01c0056f7c75a7010ee280932a5dfb
 
 
 ---
 
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
-Windows bilgisayarlar Intune istemci yazılımı yüklenerek kaydedilebilir. Intune istemci yazılımı aşağıdaki yollar kullanılarak yüklenebilir:
+Windows bilgisayarlar Intune istemci yazılımı yüklenerek kaydedilebilir. Intune istemci yazılımı aşağıdaki yöntemler kullanılarak yüklenebilir:
 
-- El ile yükleme
-- Grup İlkesi kullanarak yükleme
-- Bir disk görüntüsüne dahil etme
-- Kullanıcıların yüklemesi
+- BT yöneticisi tarafından:
+  - El ile yükleme
+  - Grup İlkesi kullanarak yükleme
+  - Disk görüntüsünden yükleme
 
-İlk indirilen Intune yazılım istemcisi, bilgisayarı Intune yönetimine kaydetmek için gerekli en düşük yazılımı içerir. Bilgisayar kaydolduktan sonra, Intune yazılım istemcisi bilgisayar yönetimi için gereken tam istemciyi indirir.
+- Yazılım istemcisini el ile yükleyen son kullanıcılar tarafından
 
-Bu bir dizi indirme işlemi, bilgisayarınızı Intune'a ilk kez kaydetmek için gereken süreyi en aza indirir. Ayrıca ikinci indirme işlemi bittikten sonra istemcinin mevcut en yeni yazılıma sahip olmasını sağlar.
+BT yöneticisinin kullanıcıya dağıttığı veya son kullanıcının indirdiği Intune yazılım istemcisi, bilgisayarı Intune yönetimine kaydetmek için gerekli olan en az sayıda yazılımı içerir. Bilgisayar kaydedildikten sonra Intune yazılım istemcisi, bilgisayar yönetimi için gereken tam istemci yazılımını indirir.
+
+Bu indirmeler, ağın bant genişliğine olan etkiyi azaltır ve bilgisayarın Intune’a ilk kaydı için gerekli olan zamanı en aza indirir. Ayrıca ikinci indirme işlemi bittikten sonra istemcinin mevcut en yeni yazılıma sahip olmasını sağlar.
 
 ## <a name="download-the-intune-client-software"></a>Intune istemci yazılımını indirme
 
-Kullanıcıların Intune istemci yazılımını kendilerinin yüklemesi hariç kullanılan tüm yöntemler, dağıtılabilmesi için yazılımı indirmenizi gerektirir.
+Intune istemci yazılımının kullanıcılar tarafından yüklendiği yöntemlerin dışındaki tüm yöntemler, sonrasında yazılımın son kullanıcılara dağıtılması için BT yöneticilerinin öncelikle yazılımı indirmesini gerektirir.
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **İstemci Yazılımı İndirme**’ye tıklayın.
 
@@ -43,7 +45,7 @@ Kullanıcıların Intune istemci yazılımını kendilerinin yüklemesi hariç k
 2.  **İstemci Yazılımı İndirme** sayfasında, **İstemci Yazılımını İndir**'e tıklayın. Ardından yazılımı içeren **Microsoft_Intune_Setup.zip** paketini ağınızda güvenli bir yere kaydedin.
 
     > [!NOTE]
-    > Intune istemci yazılımı yükleme paketi, hesabınız hakkında bilgiler içerir. Yetkisiz kullanıcılar yükleme paketine erişirse paketin yerleşik sertifikası tarafından temsil edilen hesaba bilgisayar kaydedip şirketin kaynaklarına erişim elde edebilir.
+    > Intune istemci yazılımı yükleme paketi, hesabınızla ilgili benzersiz bilgileri içerir. Bu bilgilere ekli bir sertifika aracılığıyla erişilebilir. Yetkisiz kullanıcılar yükleme paketine erişirse paketin yerleşik sertifikası tarafından temsil edilen hesaba bilgisayar kaydedip şirketin kaynaklarına erişim elde edebilir.
 
 3.  Yükleme paketinin içeriğini ağınızda güvenli bir konuma ayıklayın.
 
@@ -52,7 +54,7 @@ Kullanıcıların Intune istemci yazılımını kendilerinin yüklemesi hariç k
 
 ## <a name="deploy-the-client-software-manually"></a>İstemci yazılımını el ile dağıtma
 
-Bir bilgisayarda, istemci yazılımı yükleme dosyalarının bulunduğu klasöre gidin. Ardından, istemci yazılımını yüklemek için **Microsoft_Intune_Setup.exe**'yi çalıştırın.
+Yazılım istemcisinin yükleneceği bilgisayarlarda, istemci yazılımı yükleme dosyalarının bulunduğu klasöre gidin. Ardından, istemci yazılımını yüklemek için **Microsoft_Intune_Setup.exe**'yi çalıştırın.
 
     > [!NOTE]
     > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
@@ -108,6 +110,8 @@ Intune Otomatik Kayıt Görevi, **WindowsIntuneEnrollPending** kayıt defteri de
 
 Kullanıcılar, [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek Intune istemci yazılımını yükleyebilir. Web portalı, cihazın bir Windows bilgisayarı olduğunu algılayabilirse kullanıcılardan Intune yazılım istemcisini indirerek bilgisayarı kaydetmesini ister. Kullanıcılar, yazılım indirildikten sonra bilgisayarlarını yönetime almak için yazılımı yükleyebilir.
 
+Kullanıcıların web portalında gördüğü bilgiler, hesabınızın MDM Yetkilisinin yanı sıra kullanıcının bilgisayarının platformuna ve sürümüne bağlı olarak değişebilir.
+
 ![Intune Portalı’nın sizden Intune yazılım istemcisini indirmenizi istemesi](../media/software-client-download.png)
 
 ## <a name="monitor-and-validate-successful-client-deployment"></a>Başarılı istemci dağıtımını izleme ve doğrulama
@@ -139,6 +143,6 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
