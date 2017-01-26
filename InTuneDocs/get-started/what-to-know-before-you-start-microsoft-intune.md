@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: d07c7e667dbb5c01a9dcd8b2f69e7d930c27f25a
+ms.sourcegitcommit: e2810513646828cc5da734f3af9cc8d81e0c03fc
+ms.openlocfilehash: 444d08d1a5e709572efbc2f639cef037453b9c0e
 
 
 ---
@@ -43,7 +43,7 @@ Intune cihaz yönetimi [bu yetenekleri](mobile-device-management-capabilities-in
 
 ### <a name="windows-pc-software-client"></a>Windows bilgisayarı yazılım istemcisi
 
-Bir [Intune yazılım istemcisi](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) alternatif bir kayıt yöntemi olarak Windows bilgisayarlara dağıtılabilir ve yüklenebilir. Intune yazılım istemcisini Windows 10 Home sürümü hariç, Windows 7 ve üzeri bilgisayarları yönetmek için kullanabilirsiniz. Bilgisayarları istemci yazılımıyla yönetmek [bu özelliklerden](windows-pc-management-capabilities-in-microsoft-intune.md) yararlanmanızı sağlar.
+Bir [Intune yazılım istemcisi](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) alternatif bir kayıt yöntemi olarak Windows bilgisayarlara dağıtılabilir ve yüklenebilir. Intune yazılım istemcisini, Windows 7 ve üzerini (Windows 10 Home Edition dışında) çalıştıran bilgisayarları yönetmek için kullanabilirsiniz. Bilgisayarları istemci yazılımıyla yönetmek [bu özelliklerden](windows-pc-management-capabilities-in-microsoft-intune.md) yararlanmanızı sağlar.
 
 ### <a name="exchange-activesync-management"></a>Exchange ActiveSync yönetimi
 
@@ -74,6 +74,6 @@ Yalnızca hizmet yöneticisi izinlerine sahip olan veya genel yönetici rolüne 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

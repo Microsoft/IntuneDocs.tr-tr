@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
-ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
+ms.sourcegitcommit: bb949c9a83fdde630dd2023765d32e98c43a1c20
+ms.openlocfilehash: 22a5cab46a6ca8cf2d350ba9844328a3dea13766
 
 
 ---
@@ -59,22 +61,22 @@ Bu bölümdeki bilgiler, kullanıcılara Android cihazları Intune’a kaydedild
 Bu bölümdeki bilgiler, kullanıcılara Android cihazları Intune’a kaydedildiğinde karşılaşabilecekleri sorunların çözümünde yardımcı olur.
 
 - [BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olmak için Ayrıntılı Günlük kullanma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [Tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [BT yöneticinize kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-administrator-android.md)
+- [E-posta kullanarak BT yöneticinize günlük gönderme](send-logs-to-your-it-admin-by-email-android.md)
+- [Günlükleri USB kablosu kullanarak BT yöneticinize gönderme](send-logs-to-your-it-admin-using-cable-android.md)
+- [BT yöneticinize kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-admin-android.md)
 - [Cihaz, gerekli en düşük işletim sistemi sürümüne sahip değil](you-need-to-update-your-android-device.md)
 - [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](your-android-version-isnt-yet-supported.md)
 - [Cihazınıza kök erişim izni verilmiş ve bağlanamıyorsunuz](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Cihazınızda gerekli bir sertifika eksik](your-device-is-missing-a-required-certificate-android.md)
-- [Bilinmeyen kaynakları kapatmanız isteniyor](you-are-asked-to-turn-off-unknown-sources-android.md)
-- [USB hata ayıklamayı kapatmanız isteniyor](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [Güvenlik tehditleri için cihaz taramasını açmanız isteniyor](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Cihazınızda gerekli bir sertifika eksik](your-device-is-missing-a-required-certificate-landing-android.md)
+- [Bilinmeyen kaynakları kapatmanız gerekir](you-need-to-turn-off-unknown-sources-android.md)
+- [USB hata ayıklamayı kapatmanız gerekir](you-need-to-turn-off-usb-debugging-android.md)
+- [Güvenlik tehditleri taramasını açmanız gerekir](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [Cihazınız en düşük güvenlik düzeltme ekini karşılamıyor](your-device-does-not-meet-the-minimum-security-patch-android.md)
 - [Android cihazınıza Lookout for Work uygulamasını yüklemeniz isteniyor](you-are-prompted-to-install-lookout-for-work-android.md)
 - [Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

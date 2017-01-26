@@ -7,7 +7,7 @@
 ### [Diğer seçenekler ve ek özellikler](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Ücretli aboneliğe dönüştürme](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Yaygın senaryolar](understand-explore/common-ways-to-use-intune.md)
-## [Sözlük](understand-explore/intune-glossary.md)
+
 
 # [Başlarken](get-started/get-started.md)
 ## [Intune Kurulumu](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -44,6 +44,7 @@
 
 # Yenilikler
 ## [Yenilikler](whats-new/whats-new-in-microsoft-intune.md)
+## [Azure önizlemesindeki yenilikler](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Yenilikler arşivi](whats-new/whats-new-archive.md)
 
 # Dağıtma ve Kullanma
@@ -72,6 +73,7 @@
 #### [Bilgisayar istemcisini yükleme](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Genel bilgisayar yönetim görevleri](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Bilgisayar ilke çakışmalarını çözme](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Android for Work’ü yönetme](deploy-use/android-for-work.md)
 
 ## Cihazları yapılandırma
 ### [İlkelerle cihazlarınızda ayarları ve özellikleri yönetme](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -97,6 +99,7 @@
 #### [Intune’da VPN bağlantıları](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Intune’da e-posta profilleri](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Kullanıcı ve cihazları yönetmek için grupları kullanma](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [Grupları Azure’a geçirme](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [Cihazları gruplarla eşleme](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Envanterle cihazlarınızı anlama ](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
@@ -142,24 +145,24 @@
 #### [Windows ve Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Cihaz uyumluluk ilkesini dağıtma](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Cihaz uyumluluğuna dayalı olarak erişim kısıtlama](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Cihaz uyumluluğuna dayalı olarak erişimi koruma](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Exchange Online ve Exchange Online Ayrılmış](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Şirket İçi Exchange ve eski Exchange Online Ayrılmış](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype Kurumsal Çevrimiçi Sürüm](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [E-posta erişimini kısıtlama: örnekler](deploy-use/restrict-email-access-example-scenarios.md)
+#### [E-posta erişimini koruma: örnekler](deploy-use/restrict-email-access-example-scenarios.md)
 ### [O365 hizmetlerine yalnızca ilkeyle yönetilen uygulamaların erişimine izin ver](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [MAM CA ile uygulamalar](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [ADAL olmadan uygulama engelleme](deploy-use/block-apps-with-no-modern-authentication.md)
-### [Ağlara erişimi kısıtlama (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Cihaz, ağ ve uygulama riskine dayalı olarak erişimi kısıtlama](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [Lookout cihaz tehdit korumasını ayarlama](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [Intune'da Lookout’u etkinleştirme](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [Lookout for Work uygulamalarını dağıtma](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [Uyumluluk ilkesinde cihaz tehdit korumasını etkinleştirme](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [Ağlara erişimi koruma (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
+### [Cihaz, ağ ve uygulama riskine dayalı olarak erişimi koruma](deploy-use/device-threat-protection.md)
+#### [Lookout cihaz tehdit korumasını ayarlama](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Intune'da Lookout’u etkinleştirme](deploy-use/device-threat-protection-enable.md)
+#### [Lookout for Work uygulamalarını dağıtma](deploy-use/device-threat-protection-apps.md)
+#### [Uyumluluk ilkesinde cihaz tehdit korumasını etkinleştirme](deploy-use/device-threat-protection-policy.md)
 
 ### [Uygulama verilerini MAM ile koruma](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM ilkeleri için Azure portalı](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -179,6 +182,7 @@
 #### [Intune tarafından yönetilmeyen cihazlardaki LOB uygulamaları](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Uygulama yazarken SDK'yı kullanma](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+### [MAM ve uygulama koruması SSS](deploy-use/mam-faq.md)
 
 ## Uygulamaları ve veriler devre dışı bırakma
 ### [Tam veya seçmeli silme kullanma](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -215,7 +219,9 @@
 
 ## [Lookout Tümleştirmesi sorunlarını giderme](troubleshoot/troubleshooting-lookout-integration.md)
 
+# [Sözlük](understand-explore/intune-glossary.md)
 
-<!--HONumber=Dec16_HO5-->
+
+<!--HONumber=Jan17_HO3-->
 
 
