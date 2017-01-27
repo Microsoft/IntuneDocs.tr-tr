@@ -97,6 +97,6 @@ Sonraki bölümde [Intune’u tasarlama](section-7-create-an-intune-design.md) k
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

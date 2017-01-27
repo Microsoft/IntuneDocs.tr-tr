@@ -77,6 +77,6 @@ Bu bölümdeki bilgiler, kullanıcılara Android cihazları Intune’a kaydedild
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

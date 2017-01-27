@@ -74,6 +74,6 @@ Yalnızca hizmet yöneticisi izinlerine sahip olan veya genel yönetici rolüne 
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
