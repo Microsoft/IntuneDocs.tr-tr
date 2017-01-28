@@ -1,11 +1,11 @@
 ---
-title: "Dynamics CRM Online’a erişimi kısıtlama | Microsoft Docs"
+title: "Dynamics CRM Online’a erişimi koruma | Microsoft Docs"
 description: "Dynamics CRM’i korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: abbfeb493d9e85eaa601b127d618996f2e01a01d
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>Intune ile Dynamics CRM Online’a erişimi kısıtlama
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Intune ile Dynamics CRM Online’a erişimi koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Dynamics CRM Online’a erişimi, iOS ve Android cihazlardan, Microsoft Intune koşullu erişim kullanarak denetleyebilirsiniz.  Intune koşullu erişimi iki bileşenden oluşur:
 * Cihazın uyumlu kabul edilmesi için uyması gereken [cihaz uyumluluk ilkesi](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 * Cihazın hizmete erişebilmek için uyması gereken koşulları sizin belirlediğiniz bir [koşullu erişim ilkesi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
-Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için, [e-posta, 0365 hizmetlerine ve diğer hizmetlere erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
+Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [e-posta, 0365 ve diğer hizmetlere erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
 
 > [!IMPORTANT]
 > Koşullu erişim dağıtmak için Intune ve Azure Active Directory Premium abonelikleriniz olmalıdır ve kullanıcılar her iki ürünün de lisansına sahip olmalıdır. **Enterprise Mobility + Security (EMS) aboneliği** hem Intune hem de Azure Active Directory Premium abonelikleri içerir. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). EMS aboneliğiniz yoksa Azure Active Directory Premium aboneliği alabilirsiniz. Bkz. [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
@@ -92,15 +95,15 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 * **AAD ile kaydedilen ve uyumlu olan cihazlar**. Bu cihazlar Dynamics CRM’ye erişebilir.
 
 ##  <a name="next-steps"></a>Sonraki adımlar
-* [Exchange Online'a erişimi kısıtlama](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [ Exchange Online’a erişimi koruma](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [Şirket içi Exchange’e erişimi kısıtlama](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [SharePoint Online’a erişimi kısıtlama](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [Şirket içi Exchange’e erişimi koruma](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [SharePoint Online’a erişimi koruma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [Skype Kurumsal Çevrimiçi Sürüm’e erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [Skype Kurumsal Çevrimiçi Sürüm’e erişimi koruma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

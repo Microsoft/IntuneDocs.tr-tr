@@ -1,11 +1,11 @@
 ---
-title: "Exchange Online’a e-posta erişimini kısıtlama | Microsoft Docs"
+title: "Exchange Online’a e-posta erişimini koruma | Microsoft Docs"
 description: "Exchange Online’da şirket e-postasını korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 
 ---
 
 
-# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Intune ile Exchange Online’a ve yeni Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama
+# <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Intune ile Exchange Online’a ve yeni Adanmış Exchange Online ortamına e-posta erişimini koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 >Adanmış Exchange Online ortamınız varsa ve bunun yapılandırmasının yeni mi yoksa eski mi olduğunu bulmanız gerekiyorsa hesap yöneticinize başvurun.
 
-Exchange Online’a veya yeni Adanmış Exchange Online ortamına e-posta erişimini denetlemek için Microsoft Intune kullanarak Exchange Online’a koşullu erişim yapılandırabilirsiniz. Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta, O365 hizmetlerine ve diğer hizmetlere erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
+Exchange Online’a veya yeni Adanmış Exchange Online ortamına e-posta erişimini denetlemek için Microsoft Intune kullanarak Exchange Online’a koşullu erişim yapılandırabilirsiniz. Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta, O365 ve diğer hizmetlere erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
 
 
 Koşullu erişimi yapılandırabilmeniz için **önce**:
@@ -64,7 +66,7 @@ Aşağıdaki diyagramda, Exchange Online için koşullu erişim ilkeleri tarafı
 ![Bir cihazın erişimine izin verileceğini veya engelleneceğini belirleyen karar noktalarının çizildiği diyagram](../media/ConditionalAccess8-1.png)
 
 ## <a name="support-for-mobile-devices"></a>Mobil cihaz desteği
-**Outlook**’tan ve **modern kimlik doğrulamasının kullanıldığı diğer uygulamalardan** Exchange Online e-postasına erişimi kısıtlayabilirsiniz. Aşağıdakiler desteklenir:
+**Outlook**’tan ve **modern kimlik doğrulamasının kullanıldığı diğer uygulamalardan** Exchange Online e-postasına erişimi koruyabilirsiniz. Aşağıdakiler desteklenir:
 
 - Android 4.0 ve üzeri, Samsung Knox Standard 4.0 ve üzeri ve Android for Work
 - iOS 8.0 ve üzeri
@@ -77,7 +79,7 @@ Aşağıdaki diyagramda, Exchange Online için koşullu erişim ilkeleri tarafı
 -   ADAL tabanlı kimlik doğrulaması, Office istemcilerinin tarayıcı tabanlı kimlik doğrulaması (pasif kimlik doğrulama olarak da bilinir) gerçekleştirmesine imkan sağlar. Bir kullanıcı, kimlik doğrulamak için bir oturum açma web sayfasına yönlendirilir.
 -   Bu yeni oturum açma yöntemi, **çok faktörlü kimlik doğrulaması** ve **sertifika tabanlı kimlik doğrulaması** gibi daha iyi güvenlik önlemlerine olanak tanır. Daha ayrıntılı bilgiler için bkz. [Modern kimlik doğrulaması nasıl çalışır?](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). Modern olmayan kimlik doğrulama protokollerini engellemek için ADFS talep kuralları ayarlayabilirsiniz. [Senaryo 3: O365’e tarayıcı tabanlı uygulamalar dışındaki tüm erişimi engelleme](https://technet.microsoft.com/library/dn592182.aspx) bölümünde ayrıntılı yönergeler verilmiştir.
 
-Bir kullanıcı Exchange Online’da **iOS** ve **Android** cihazlardaki bir tarayıcıdan eriştiğinde **Outlook Web Access (OWA)** erişimini kısıtlayabilirsiniz. Erişime yalnızca uyumlu cihazlarda, desteklenen tarayıcılardan izin verilir:
+Exchange Online’da bir kullanıcı, **iOS** ve **Android** cihazlardaki bir tarayıcıdan **Outlook Web Access (OWA)** uygulamasına eriştiğinde, bu erişimi koruyabilirsiniz. Erişime yalnızca uyumlu cihazlarda, desteklenen tarayıcılardan izin verilir:
 
 * Safari (iOS)
 * Chrome (Android)
@@ -88,7 +90,7 @@ Bir kullanıcı Exchange Online’da **iOS** ve **Android** cihazlardaki bir tar
 **iOS ve Android için OWA uygulaması, modern kimlik doğrulaması kullanmayacak şekilde değiştirilebilir ve desteklenmez. OWA uygulamasından erişimin, ADFS talep kuralları ile engellenmesi gerekir.**
 
 
-Aşağıdaki platformlarda yerleşik **Exchange ActiveSync e-posta istemcisinden** Exchange e-postasına erişimi kısıtlayabilirsiniz:
+Aşağıdaki platformlarda yerleşik **Exchange ActiveSync e-posta istemcisinden** Exchange e-postasına erişimi koruyabilirsiniz:
 
 - Android 4.0 ve üzeri, Samsung KNOX Standard 4.0 ve üzeri
 
@@ -254,7 +256,7 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
 -   Kullanıcı cihazının kaydını kaldırırsa yaklaşık altı saat sonra e-posta engellenir.
 
-**Cihaz erişimini kısıtlamak üzere bir koşullu erişim ilkesini nasıl yapılandırabileceğinizi gösteren bazı örnek senaryolar** görmek için bkz. [E-posta erişimini kısıtlama örnek senaryoları](restrict-email-access-example-scenarios.md).
+**Cihaz erişimini korumak üzere bir koşullu erişim ilkesini nasıl yapılandırabileceğinizi gösteren bazı örnek senaryoları** görmek için bkz. [E-posta erişimini koruma örnek senaryoları](restrict-email-access-example-scenarios.md).
 
 ## <a name="monitor-the-compliance-and-conditional-access-policies"></a>Uyumluluk ve koşullu erişim ilkeleri izleme
 
@@ -264,12 +266,12 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 ![Exchange’e erişimi engellenmiş cihazların sayısını gösteren Intune panosunun ekran görüntüsü](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Sonraki adımlar
-- [SharePoint Online’a erişimi kısıtlama](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+- [SharePoint Online’a erişimi koruma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-- [Skype Kurumsal Çevrimiçi Sürüm’e erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+- [Skype Kurumsal Çevrimiçi Sürüm’e erişimi koruma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Cihaz tehdit koruması kullanarak erişimi kısıtlama | Microsoft Docs"
-description: "Şirket kaynaklarına erişimi cihaz, ağ ve uygulama riskine dayalı olarak kısıtlayın."
+title: "Cihaz tehdit koruması kullanarak erişimi koruma | Microsoft Docs"
+description: "Şirket kaynaklarına erişimi cihaz, ağ ve uygulama riskine dayalı olarak koruyun."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b83d06ecbe6e202bf022444c288e0866b3507c6
-ms.openlocfilehash: 1dd2c4a46857aef1ba273904d58d5eacae99c7bc
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 184002a3a9f4af671a467ce9fe79fe0050bd00df
 
 
 ---
 
-# <a name="restrict-access-to-company-resource-based-on-device-network-and-application-risk"></a>Şirket kaynağına erişimi cihaz, ağ ve uygulama riskine dayalı olarak kısıtlama
+# <a name="protect-access-to-company-resource-based-on-device-network-and-application-risk"></a>Şirket kaynaklarına erişimi cihaz, ağ ve uygulama riskine dayalı olarak koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune ile tümleşik bir cihaz tehdit koruması çözümü olan Lookout tarafından gerçekleştirilen risk değerlendirmesine dayalı olarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Lookout hizmeti tarafından cihazlardan toplanan ve aşağıdakileri içeren telemetriye göre değerlendirilir:
 - İşletim sistemi güvenlik açıkları
 - Yüklenen kötü amaçlı uygulamalar
@@ -71,7 +74,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 ![Düzeltme sonrası cihazın uyumlu olduğu belirlenince erişim izni veren koşullu erişim ilkesini gösteren diyagram](../media/mtp/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
-Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri algılar ve cihaz riskine dayalı olarak WiFi ağlarına erişimi kısıtlar.
+Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri algılayın ve cihaz riskine dayalı olarak WiFi ağlarına erişimi koruyun.
 
 **WiFi üzerinden ağ erişimini engelle:**
 ![ağ tehditlerine dayalı olarak WiFi erişimini engelleyen koşullu erişimi gösteren diyagram](../media/mtp/network-wifi-blocked.png)
@@ -102,6 +105,6 @@ Bu çözümü uygulamak için yapılması gereken ana adımlar şunlardır:
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

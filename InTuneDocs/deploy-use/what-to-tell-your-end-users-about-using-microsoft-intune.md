@@ -14,13 +14,15 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ed1b1ba4cb5ee48139e4f4dbf4dab8d04b53368f
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: a822559a55ee495065eca7eef5ec645cf4522e4b
 
 
 ---
 
 # <a name="resources-about-the-end-user-experience-with-microsoft-intune"></a>Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Son kullanıcılarınızın Intune'da farklı görevler gerçekleştirmek üzere uyguladığı adımları anlamak için aşağıdaki bağlantıları ve bilgileri kullanın.
 
@@ -35,7 +37,7 @@ Son kullanıcılarınız için kendi kayıt yönergelerinizi oluşturmak üzere 
 Kullanıcıların Şirket Portalı web sitesinden veya uygulamasından yönlendirildiği adımları görmek için aşağıdaki bağlantıları kullanın. Bağlantılar, Şirket Portalı uygulamasının yüklenmesi ve Intune kaydı, kullanıcıların cihazlarında yapabileceği genel görevler ve sorun giderme hakkında bölümlere ayrılmıştır.
 
 - [Android cihazınızı Intune ile kullanma](/Intune/EndUser/using-your-android-device-with-intune)
-- [iOS veya Mac OS cihazınızı Intune ile kullanma](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+- [iOS veya Mac OS cihazınızı Intune ile kullanma](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune)
 - [Windows cihazınızı Intune ile kullanma](/Intune/EndUser/using-your-windows-device-with-intune)
 - [Intune Şirket Portalı web sitesini kullanma](/Intune/EndUser/using-the-intune-company-portal-website)
 
@@ -50,6 +52,6 @@ Son kullanıcılarınızın uygulamalarını nasıl aldığını anlamak için, 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

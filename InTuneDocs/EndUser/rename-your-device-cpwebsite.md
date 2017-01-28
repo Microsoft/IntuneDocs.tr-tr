@@ -5,26 +5,27 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: c539af3b4ac901029faeaa4947491eec8ff0c378
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: b8452e55f8ba76e787e43e2239510d7665a561f4
 
 
 ---
 
-
 # <a name="rename-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı yeniden adlandırma
 
-Cihazınızı yeniden adlandırmaya karar verirseniz, bunu [Şirket Portalı web sitesinden](http://portal.manage.microsoft.com) uzaktan yapabilirsiniz. Şirket Portalı web sitesi, Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek ve Şirket Portalı uygulamasını kullanırken gerçekleştirebileceğiniz görevlerin çoğunu yapmak için kullanabileceğiniz bir web sayfasıdır.
+Cihazınızı daha kolay tanımlamak için yeniden adlandırmak isteyebilirsiniz. Bunu [Şirket Portalı web sitesinden](http://portal.manage.microsoft.com) yapabilirsiniz. Şirket Portalı web sitesi, BT bölümünüz tarafından yönetilmesi için kaydettiğiniz bilgisayarları ve cihazları yönetmek üzere kullanabileceğiniz bir web sayfasıdır.
 
 Cihazınızı yeniden adlandırmak için:
 
@@ -34,12 +35,12 @@ Cihazınızı yeniden adlandırmak için:
 
     ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Geçerli cihaz adınızın göründüğü kutuda, cihazınız için yeni adı yazın ve ardından **Yeniden adlandır** düğmesine dokunun. Cihazınız artık yeni adıyla görünür.
+3.  Cihazınızın adının göründüğü kutuya yeni bir ad girin ve ardından **Yeniden adlandır** düğmesine dokunun. Cihazınız artık yeni adıyla görünür.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

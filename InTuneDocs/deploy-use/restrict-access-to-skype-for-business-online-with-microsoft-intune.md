@@ -1,11 +1,11 @@
 ---
-title: "Skype Kurumsal Çevrimiçi Sürüm’e erişimi kısıtlama | Microsoft Docs"
+title: "Skype Kurumsal Çevrimiçi Sürüm’e erişimi koruma | Microsoft Docs"
 description: "Skype Kurumsal Çevrimiçi Sürüm’ü korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 23199b84ca1acf202442e096c637f0dbad53f3e0
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 37915fcfc0f10e65aa65d400422d72adc63513fa
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>Microsoft Intune ile Skype Kurumsal Çevrimiçi’ne erişimi kısıtlama
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Microsoft Intune ile Skype Kurumsal Çevrimiçi Sürüm’e erişimi koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Skype Kurumsal Çevrimiçi Sürüm’e erişimi denetlemek için **Skype Kurumsal Çevrimiçi Sürüm** için bir koşullu erişim ilkesi kullanabilirsiniz.
 Koşullu erişim iki bileşenden oluşur:
 - Cihazın uyumlu kabul edilmesi için uyması gereken cihaz uyumluluk ilkesi.
 - Hizmete erişebilmeniz için cihazın uyması gereken koşulları sizin belirlediğiniz bir koşullu erişim ilkesi.
-Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için, [E-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
+Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta ve O365 hizmetlerine erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
 
 Hedeflenen bir kullanıcı kendi cihazında Skype Kurumsal Çevrimiçi’ni kullanmayı denerse, aşağıdaki değerlendirme yapılır:
 
@@ -117,6 +120,6 @@ Herhangi bir mobil cihaz grubu seçin. Ardından, **Cihazlar** sekmesinde aşağ
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

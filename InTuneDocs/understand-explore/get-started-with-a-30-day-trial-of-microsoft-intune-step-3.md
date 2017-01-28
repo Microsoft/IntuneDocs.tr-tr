@@ -1,5 +1,5 @@
 ---
-title: "Kullanıcıları ve cihazları düzenlemek için grup oluşturma | Microsoft Docs"
+title: "Ücretsiz denemede sürümündeki kullanıcıları ve cihazları düzenlemek için grup oluşturma | Microsoft Docs"
 description: "Microsoft Intune&quot;un ücretsiz, 30 günlük değerlendirmesine kaydolduğunuzda, cihaz grupları ve kullanıcı grupları nasıl oluşturulur?"
 keywords: 
 author: lindavr
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e4072108d5d06857acb10f243df68ef2c33066a2
+ms.sourcegitcommit: 89e190e6a3e514c0f38b33409cde2abea0776885
+ms.openlocfilehash: 0cdf5bf8f9fad1f44dbb0ef11de71aea55949d89
 
 
 ---
 
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>Değerlendirme aboneliği kullanıcılarını ve cihazlarını düzenlemek için gruplar oluşturun
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune’daki gruplar, cihazlarınızı ve kullanıcılarınızı yönetmek için büyük esneklik sağlar. Grupları kuruluş gereksinimlerinize (örneğin, coğrafi konum, bölüm veya donanım özelliklerine göre) uygun şekilde ayarlayabilir ve bunları bir kullanıcı kümesi için ilke ayarlamaktan bir cihaz kümesi için uygulama dağıtmaya kadar çeşitli yönetim görevlerini gerçekleştirmek için kullanabilirsiniz.
 
 ## <a name="create-a-device-group"></a>Bir cihaz grubu oluşturma
@@ -61,6 +64,6 @@ Grupları kullanma hakkında daha fazla bilgi için, bkz. [Microsoft Intune'la k
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

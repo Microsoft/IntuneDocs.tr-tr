@@ -1,11 +1,11 @@
 ---
-title: "SharePoint Online’a erişimi kısıtlama | Microsoft Docs"
+title: "SharePoint Online’a erişimi koruma | Microsoft Docs"
 description: "SharePoint Online’daki şirket verilerini korumak ve erişimi denetlemek için koşullu erişim kullanın."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6b900f2bf41ea84088f8453f59b71136e013a884
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Microsoft Intune’la SharePoint Online’a erişimi kısıtlama
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Microsoft Intune ile SharePoint Online’a erişimi koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 SharePoint Online’da bulunan dosyalara erişimi denetlemek için [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] koşullu erişimini kullanın.
 Koşullu erişim iki bileşenden oluşur:
 - Cihazın uyumlu kabul edilmesi için uyması gereken cihaz uyumluluk ilkesi.
 - Cihazın hizmete erişebilmek için uyması gereken koşulları sizin belirlediğiniz bir koşullu erişim ilkesi.
-Koşullu erişimin nasıl çalıştığıyla ilgili bilgi almak için [E-posta, O365 hizmetleri ve diğer hizmetlere erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) konusunu okuyun.
+Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta, O365 ve diğer hizmetlere erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) konusunu okuyun.
 
 Uyumluluk ve koşullu erişim ilkelerini kullanıcılara dağıtırsınız. Bir kullanıcının hizmetlere erişirken kullandığı her cihaz, ilkelerle uyumluluk açısından denetlenir.
 
@@ -66,7 +69,7 @@ Aşağıdakiler desteklenir:
 - Android 4.0 ve üzeri ile Samsung KNOX Standard 4.0 veya üzeri
 - Windows Phone 8.1 ve üzeri
 
-**iOS** ve **Android** cihazlar, SharePoint Online’a bir tarayıcıdan eriştiğinde erişimi kısıtlayabilirsiniz. Erişime yalnızca uyumlu cihazlarda, desteklenen tarayıcılardan izin verilir:
+**iOS** ve **Android** cihazlar, SharePoint Online’a bir tarayıcıdan eriştiğinde erişimi koruyabilirsiniz. Erişime yalnızca uyumlu cihazlarda, desteklenen tarayıcılardan izin verilir:
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS ve Android 5.0 ve üzeri)
@@ -192,10 +195,10 @@ Herhangi bir mobil cihaz grubu seçin. Ardından, **Cihazlar** sekmesinde aşağ
 -   **AAD ile kaydedilen ve uyumlu olan cihazlar**. Bu cihazlar SharePoint Online’a erişebilir.
 
 ### <a name="see-also"></a>Ayrıca bkz.
-[Microsoft Intune ile e-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Microsoft Intune ile e-posta ve O365 hizmetlerine erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

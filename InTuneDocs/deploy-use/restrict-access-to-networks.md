@@ -1,11 +1,11 @@
 ---
-title: "Cisco ISE ile ağlara erişimi kısıtlama| Microsoft Docs"
+title: "Cisco ISE ile ağlara erişimi koruma| Microsoft Docs"
 description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olmasını sağlamak için, Intune ile Cisco ISE kullanabilirsiniz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Microsoft Intune ile Cisco ISE kullanma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune’un Cisco Identity Services Engine (ISE) ile tümleştirmesi, Intune cihaz kaydı ve uyum durumunu kullanarak ISE ortamınızda ağ ilkeleri yazmanızı sağlar. Bu ilkeleri kullanarak, şirket ağınıza erişimin, Intune tarafından yönetilen ve Intune ilkeleriyle uyumlu cihazlarla kısıtlandığından emin olabilirsiniz.
 
 ## <a name="configuration-steps"></a>Yapılandırma adımları
@@ -189,6 +192,6 @@ Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere k
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
