@@ -1,11 +1,11 @@
 ---
-title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Docs
+title: Unenroll your device if you declined "Terms of Use" | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ searchScope:
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d91847166f0e2da22a322ac1a1483266b46d8ed
-ms.openlocfilehash: e8dbf10fcc649bd71ac33bd07d1d79f825a91f73
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 68049a61bd14a8713a3b5561a45b7ee09fd0729c
 
 
 ---
 
 
-# <a name="unenroll-your-device-from-intune-if-you-declined-terms-of-use"></a>“Kullanım Koşulları”’nı reddettiyseniz cihazınızın Intune kaydını silme
+# <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>“Kullanım Koşulları”nı reddettiyseniz cihazınızın kaydını silme
 
 Android cihazınızın kaydını silmenin en iyi yolu kullanım koşullarını kabul etmek, Şirket Portalı’nda oturum açmak ve ardından [bu yönergeleri](unenroll-your-device-from-intune-android.md) kullanarak kaydı silmektir. Öte yandan, Şirket Portalı uygulamasında oturum açmaya çalışırken kullanım koşullarını reddettiyseniz gelecek denemelerde Şirket Portalı uygulamasında oturum açmanız engellenir, dolayısıyla cihazınızın kaydını silmek için bu "geçici çözüm" yönergelerini kullanmanız gerekir.
 
@@ -45,6 +45,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgil
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

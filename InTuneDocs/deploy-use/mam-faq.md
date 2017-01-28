@@ -1,3 +1,25 @@
+---
+title: "MAM ve uygulama koruma hakkında sık kullanılan sorular"
+description: "Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hakkında sık sorulan sorulardan bazıları yanıtlanmaktadır."
+keywords: 
+author: oydang
+ms.author: oydang
+manager: mtillman
+ms.date: 01/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+ms.reviewer: oydang
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 474bb04d743290ff78aa0772595b744be46ae1af
+ms.openlocfilehash: b6b2d066b773e91003884a8735b6663ebf125aa3
+
+
+---
+
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -111,7 +133,15 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 
 **Veri aktarımı ilkesi “yalnızca yönetilen uygulamalar” veya “uygulama yok” olarak ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS paylaşım uzantısını kullanabiliyorum. Bu veri sızıntısına neden olmaz mı?** Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_. Bunu, “kurumsal” dosyayı yönetilen uygulama dışında açmaya çalışarak doğrulayabilirsiniz. Bu dosya şifrelenmiş olmalı ve yönetilen bir uygulama dışında açılamamalıdır.
 
+### <a name="see-also"></a>Ayrıca bkz.
+- [Microsoft Intune’da Android mobil uygulama yönetim ilkesi ayarları](android-mam-policy-settings.md)
+- [iOS mobil uygulama yönetim ilkesi ayarları](ios-mam-policy-settings.md)
+- [Mobil uygulama yönetimi kurulumunuzu doğrulama](validate-mobile-application-management.md)
+- [Microsoft Intune ile mobil uygulama yönetimi ilkelerinizi yapılandırmak için hazırlanma](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+- [Microsoft Intune için destek alma](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
 
-<!--HONumber=Jan17_HO2-->
+
+
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Şirket Portalı uygulamasının yeni sürümünü yükleme | Microsoft Docs"
+title: "Şirket Portalı uygulamasını güncelleştirme | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 82679d4d9ef017dd29429b83a039f3edbfb7911d
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 2e05e3af45628930eadec0ac97736b0354412aec
 
 
 ---
 
-# <a name="install-a-new-version-of-the-company-portal-app"></a>Şirket Portalı uygulamasının yeni sürümünü yükleme
+# <a name="how-to-update-the-company-portal-app"></a>Şirket Portalı uygulamasını güncelleştirme
 
 Şirket Portalı uygulaması sürümünüz artık desteklenmiyorsa veya Şirket Portalı uygulamasının daha yeni bir sürümü kullanıma sunulduysa, bunu yeni sürüme güncelleştirmelisiniz. Sahip olduğunuz cihazın türüne uygun adımları kullanın.
 
@@ -53,6 +53,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

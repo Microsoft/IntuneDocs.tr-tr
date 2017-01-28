@@ -1,11 +1,11 @@
 ---
-title: "iOS cihazınıza Lookout for Work uygulamasını yüklemeniz istendi | Microsoft Docs"
+title: "iOS cihazınıza Lookout for Work uygulamasını yüklemeniz gerekiyor | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 64e094c8648c0737cdbc0dcdc4ec6b3a8bc96831
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>iOS cihazınızda Lookout for Work uygulamasını yüklemeniz istendi
+# <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>iOS cihazınıza Lookout for Work uygulamasını yüklemeniz gerekiyor
 
 Çalışmanıza erişebilmeniz için önce BT yöneticinizin Lookout for Work uygulamasını yüklemenizi sağlaması gerekir. Bu uygulama olası güvenlik tehditlerini bularak cihazınızın korunmasına yardımcı olur. BT yöneticinizin belirlediği Lookout for Work ayarlarına bağlı olarak cihazınızda farklı istemler görebilirsiniz.
 
@@ -43,7 +43,7 @@ ms.openlocfilehash: 64e094c8648c0737cdbc0dcdc4ec6b3a8bc96831
 
     ![Ayarlar’a ve ardından Konum Hizmetleri’ne dokunun](./media/ios-lfw-allow-notifications.png)
 
-    
+
 Lookout for Work yüklemesi tamamlandığında cihazınızda herhangi bir güvenlik tehdidi bulunmadıysa aşağıdaki ekranı görürsünüz.
 
 ![Lookout for Work hiçbir güvenlik tehdidi bulamadı](./media/ios-lfw-no-threats-found.png)
@@ -56,7 +56,6 @@ Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle baş
 
 
 
-
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

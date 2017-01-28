@@ -1,11 +1,11 @@
 ---
-title: "Cihaz kilitlenmeden önceki süreyi ayarlama | Microsoft Docs"
+title: "Cihaz kilitlenmeden önce geçmesi gereken süreyi ayarlama | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 336a71888b729869be5fc325bd82d841f59428de
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: eab9321df021972c91af66ca8b4dc69c8cc8795b
 
 
 ---
 
 
-# <a name="set-the-amount-of-time-before-your-device-is-locked"></a>Cihaz kilitlenmeden önceki süreyi ayarlama
+# <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Cihaz kilitlenmeden önce geçmesi gereken süreyi ayarlama
 
-Android cihazınızdaki verileri daha güvenli tutmak için, BT yöneticiniz cihazınızın otomatik olarak kilitlenmeden önce ne kadar süreyle boşta durabileceğini belirlemenizi zorunlu tutan bir ilke ayarlayabilir. Cihazınızın kilitlenmeden önce bekleyeceği süreyi ayarlamak için bu adımları izleyin.
+Android cihazınızdaki verileri daha güvenli tutmak için BT yöneticiniz, cihazınızın otomatik olarak kilitlenmeden önce ne kadar süreyle boşta durabileceğini belirlemenizi zorunlu tutan bir ilke ayarlayabilir. Cihazınızın kilitlenmeden önce bekleyeceği süreyi ayarlamak için bu adımları izleyin.
 
 1.  Cihazınızın **Ayarlar** bölümünden **Güvenlik** &gt; **Otomatik Olarak Kilitle** (bu, bazı cihazlarda **Şu kadar işlem yapılmadığında telefonu kilitle** olarak görünür).
 
@@ -36,8 +36,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

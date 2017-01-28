@@ -1,11 +1,11 @@
 ---
-title: "BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olmak için Ayrıntılı Günlük Kaydı kullanma | Microsoft Docs"
+title: "Ayrıntılı günlük kaydı ile BT yöneticinize cihaz sorunlarını çözmesine yardımcı olma | Microsoft Docs"
 description: "Ayrıntılı günlük kaydı kullanarak BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olma"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 501b2c5990acce9bc2f8c5efd1efc07fbee1606f
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 352e76d4a2e1d0c9f92fce196d6e699b3cf6e333
 
 
 ---
 
 
-# <a name="use-verbose-logging-to-help-your-it-admin-fix-device-issues"></a>BT yöneticinizin cihaz sorunları gidermesine yardımcı olmak için ayrıntılı günlük kaydı kullanma
+# <a name="help-your-it-admin-fix-device-issues-with-verbose-logging"></a>Ayrıntılı günlük kaydı ile BT yöneticinize cihaz sorunlarını çözmesine yardımcı olma
 
 Android cihazınız Intune’a kaydolduğunda, Şirket Portalı uygulamasının ve Intune tarafından yönetilen uygulamaların cihazınızda olup bitenler hakkında ayrıntılı günlükler kaydetmesini sağlamak için *ayrıntılı günlük kaydı* kullanabilirsiniz. Bu günlükler BT yöneticinizin, Şirket Portalı’nı veya Intune tarafından yönetilen bir uygulamayı kullanırken karşılaşabileceğiniz sorunları çözmesine yardımcı olur. Ayrıntılı günlük kaydı bilgisayarınızda varsayılan olarak etkindir ve BT yöneticinize gönderilen günlük kayıtları e-posta adresinizi içerir.
 
@@ -34,6 +34,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

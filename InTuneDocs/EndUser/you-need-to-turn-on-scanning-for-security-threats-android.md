@@ -1,11 +1,11 @@
 ---
-title: "Güvenlik tehdidi taramasını açmanız gerekir | Microsoft Docs"
+title: "Güvenlik tehdidi taramasını açmanız gerekiyor | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 604bdec9cfbb982b75fc9b54dda6a572d2b11802
-ms.openlocfilehash: 489988d4349775c86aba9f30deff24441cd8ba86
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 04e27d9c0752ac5b5d29bdbdb3033e989a3945f9
 
 
 ---
@@ -31,6 +31,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme | Microsoft Docs"
+title: "Bir iş profili kullanarak cihazınızı kaydetme | Microsoft Docs"
 description: "Android cihazının nasıl şifreleneceği açıklanır"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,8 @@ searchScope:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 179f0ba2a70637f91856037e132eeeea9a57c68c
 
 
 ---
@@ -71,7 +71,7 @@ Bir iş profili oluşturmak için:
 
     "Cihazınız kaydediliyor" iletisini görürsünüz.
 
-11. **Şirket Erişimi Kurulumu** ekranı her şeyin doğru şekilde ayarlandığını gösterdiğinde **DEVAM**’a dokunun. 
+11. **Şirket Erişimi Kurulumu** ekranı her şeyin doğru şekilde ayarlandığını gösterdiğinde **DEVAM**’a dokunun.
 
     ![Şirket Erişimi Kurulumu iş profili ve kaydın tamamlandığını gösterir](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -87,8 +87,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

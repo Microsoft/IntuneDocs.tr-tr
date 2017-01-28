@@ -1,11 +1,11 @@
 ---
-title: "Şirket İçi Exchange’de e-posta erişimini kısıtlama | Microsoft Docs"
+title: "Şirket İçi Exchange’de e-postayı koruma | Microsoft Docs"
 description: "Şirket İçi Exchange’de şirket e-postasını korumak ve erişimini denetlemek için koşullu erişim kullanın."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,22 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: c090d4bbc539d4174deee139e51242bae94feeb3
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
 
 
 ---
 
-# <a name="restrict-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Intune’la Şirket İçi Exchange’e ve eski Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama
+# <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Intune ile Şirket İçi Exchange’e ve eski Adanmış Exchange Online ortamına e-posta erişimini koruma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
-> Adanmış Exchange Online ortamınız varsa ve bunun yapılandırmasının yeni mi yoksa eski mi olduğunu bulmanız gerekiyorsa lütfen hesap yöneticinize başvurun.
+> Adanmış Exchange Online ortamınız varsa ve bunun yapılandırmasının yeni mi yoksa eski mi olduğunu bulmanız gerekiyorsa hesap yöneticinize başvurun.
 
 
 Şirket İçi Exchange’e veya eski Adanmış Exchange Online ortamına e-posta erişimini denetlemek için Microsoft Intune kullanarak Şirket İçi Exchange’e koşullu erişimi yapılandırabilirsiniz.
-Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için, [E-posta ve O365 hizmetlerine erişimi kısıtlama]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
+Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta ve O365 hizmetlerine erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
 
 Koşullu erişimi yapılandırabilmeniz için **önce** aşağıdakileri doğrulayın:
 
@@ -125,15 +127,15 @@ Aşağıdakiler desteklenir:
 
 -   Kullanıcı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kaydını silerse cihazın engellenmesi bir ila üç saat arası sürebilir.
 
-**Cihaz erişimini kısıtlamak üzere bir koşullu erişim ilkesini nasıl yapılandırabileceğinizi gösteren bazı örnek senaryoları görmek için bkz. [E-posta erişimini kısıtlama örnek senaryoları](restrict-email-access-example-scenarios.md).**
+**Cihaz erişimini korumak üzere bir koşullu erişim ilkesini nasıl yapılandırabileceğinizi gösteren bazı örnek senaryoları görmek için bkz. [E-posta erişimini koruma örnek senaryoları](restrict-email-access-example-scenarios.md).**
 
 ## <a name="next-steps"></a>Sonraki adımlar
--   [SharePoint Online’a erişimi kısıtlama](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+-   [SharePoint Online’a erişimi koruma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
--   [Skype Kurumsal Çevrimiçi Sürüm’e erişimi kısıtlama](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+-   [Skype Kurumsal Çevrimiçi Sürüm’e erişimi koruma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Parola, BT yöneticisinin gereksinimlerini karşılamıyor | Microsoft Docs"
+title: "Parolanız BT yöneticinizin gereksinimlerini karşılamıyor | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 395c9bdc8aad13123b6a22b6edac0b8714323f2f
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>Parola BT yöneticisinin gereksinimlerini karşılamıyor
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Parolanız BT yöneticinizin gereksinimlerini karşılamıyor
 
 Şirket veya okul kaynaklarınıza erişmek için kullandığınız parola, BT yöneticinizin ayarladığı bir veya birkaç gereksinimi karşılamıyor. Sorunu düzeltmek için cihazınızda gösterilen yönergeleri izleyin. Sorunların açıklamaları aşağıda listelenmiştir.
 
@@ -51,6 +51,6 @@ Parolanızı gereksinimlerle uyumlu hale getirme konusunda sorun yaşıyorsanız
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

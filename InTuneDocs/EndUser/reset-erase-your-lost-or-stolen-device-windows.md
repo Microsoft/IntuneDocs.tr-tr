@@ -1,11 +1,11 @@
 ---
-title: "Kaybolan veya çalınan Windows cihazınızı sıfırlama (silme) | Microsoft Docs"
+title: "Kaybolan veya çalınan Windows cihazlarını sıfırlama (silme) | Microsoft Docs"
 description: "Kaybolan veya çalınan Windows cihazını sıfırlama"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,8 +17,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 421d20765ba03489a762e472b3856bfec723c594
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 71a02dcf8a557548bebe52a3ed8d908c5bddf249
 
 
 ---
@@ -43,6 +43,6 @@ Kaybolan veya çalınan cihazınızı sıfırlayamıyorsanız, sizin yerinize s�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

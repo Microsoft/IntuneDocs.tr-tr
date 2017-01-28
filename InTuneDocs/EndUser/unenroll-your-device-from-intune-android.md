@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ searchScope:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
-ms.openlocfilehash: 098fc108bb423f80a52e27fabfe2dfeb0124d72e
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 6233e939dce9e79f85ec5cb87d28f135a300db6e
 
 
 ---
 
 
-# <a name="unenroll-your-android-device-from-intune"></a>Android cihazınızın Intune kaydını silme
+# <a name="how-to-unenroll-your-android-device-from-intune"></a>Android cihazınızın Intune kaydını silme
 
 Android cihazınızın Intune kaydını sildiğinizde cihazınız şirket kaynaklarına bir daha erişemez.  Kaydı sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
@@ -49,6 +49,6 @@ Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

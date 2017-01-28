@@ -1,11 +1,11 @@
 ---
-title: "Android for Work için uyumluluk ilkesi ayarları | Microsoft Docs"
+title: "Android for Work uyumluluk ayarları | Microsoft Docs"
 description: "Bu konuda, Android for Work ile uyumlu Android cihazlar için cihaz uyumluluk ilkesi ayarları açıklanır."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/13/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2b53e7a410d0ce268ce395c08161095af42857b7
+ms.sourcegitcommit: 1afe7093b80bb5fe3ea873cb065c8ca2673160e8
+ms.openlocfilehash: a36427c6fe00c4ad105e615dd96342f7ab31863a
 
 
 ---
@@ -87,6 +87,6 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birine bak�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
