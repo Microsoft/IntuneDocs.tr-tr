@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -23,8 +23,6 @@ ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Microsoft Intune ile e-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Birçok mobil platformda, işletim sisteminin parçası olarak gönderilen bir yerel e-posta istemcisi bulunur. Bu istemcilerden bazıları, bu konu başlığı altında açıklandığı gibi e-posta profilleri kullanılarak ayarlanabilir.
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -50,8 +50,6 @@ Wi-Fi profillerini aşağıdaki platformlara dağıtabilirsiniz:
 -   Mac OS X 10.9 ve üzeri
 
 Windows 8.1 veya Windows 10 masaüstü veya mobil işletim sistemi çalıştıran cihazlar için daha önce bir dosyaya aktarılmış Wi-Fi yapılandırma profilini içeri aktarabilirsiniz. Ayrıntılar için bkz. [Windows cihazları için bir Wi-Fi yapılandırma profilini içeri veya dışarı aktarma](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin.
 
