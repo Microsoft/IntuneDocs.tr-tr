@@ -1,11 +1,11 @@
+
 ---
-title: "Genel sorun giderme ipuçları | Microsoft Intune"
+title: "Genel sorun giderme ipuçları | Microsoft Docs"
 description: "Intune’la ilgili sorunları çözmeye yardımcı olan genel kaynaklar."
 keywords: 
 author: staciebarker
-ms.author: staciebarker
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 266ee94f0c61a3f99824a0210ec6f7a205343b21
-ms.openlocfilehash: 93add0c558be2288cd4776f1976101c2eaa2a378
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: ef6c482a45a7c759cec1062b129d2644562d0da2
 
 
 ---
 
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune için genel sorun giderme ipuçları
-Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerinizle ilgili sorunlarla karşılaşabilirsiniz. Aşağıdaki kaynaklar, sorunu çözebilmek amacıyla sorunun nedenini bulmanıza yardımcı olabilir.
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemci cihazlarıyla ilgili sorunlarla karşılaşabilirsiniz. Sorunu çözebilmeniz için soruna neden olan şeyi bulmanıza yardımcı olması için aşağıdaki kaynakları kullanın.
 
 > [!NOTE]
 > Destek isteği oluşturmak veya mevcut isteği görüntülemek için [Office 365 yönetim merkezini ziyaret edin](https://portal.office.com/admin/default.aspx). Destek seçenekleri hakkında daha fazla bilgi için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
@@ -36,7 +39,7 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerini
 
 -   Intune veya cihaz yapılandırmasında hangi değişiklikleri yaptınız?
 
--   Çalıştığınız ortamda yapılandırma değişikliklerinden başka değişikliklerin yapılıp yapılmadığını düşünün.
+-   Çalıştığınız ortamda yapılandırma değişikliklerinden başka değişiklikler yapıldı mı?
 
 -   Bu sorun ne sıklıkla oluşuyor ve aralıklı mı, sürekli mi?
 
@@ -46,25 +49,25 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemcilerini
 
 ## <a name="collect-available-data"></a>Kullanılabilir verileri topla
 
--   Cihaz günlükleri. Cihaz günlüklerinin nasıl toplanacağını öğrenin:
+-   Aşağıdaki kaynaklar cihaz günlüklerini nasıl toplayacağınızı öğrenmenize yardımcı olabilir:
   - [Android tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Android kayıt hatalarını BT yöneticinize gönderme](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
   - [iOS kayıt hatalarını BT yöneticinize gönderme](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   Örneğin, ilke uygulama sorunlarına yönelik yönetici konsolu verileri için [Microsoft Intune ile kullanıcı ve cihazları yönetmek için grupları kullanma](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) bölümünde açıklandığı gibi amaçlanan ilkeyi ve ilgili ilkenin durumunu incelemeniz gerekir.
+-   Örneğin, ilke uygulama sorunlarına yönelik yönetici konsolu verileri için [Microsoft Intune ile kullanıcı ve cihazları yönetmek için grupları kullanma](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) bölümünde açıklandığı gibi amaçlanan ilkeyi ve ilgili ilkenin durumunu inceleyin.
 
 ## <a name="research-the-solution"></a>Çözümü arayın
 
--   Web’de bir çözüm arayın. Örneğin, 0x80073CF0 hatasını alırsanız Web’de **technet intune 0x80073cf0** araması yaparak, bu sorunu çözmeye yönelik öneriler sunan [Microsoft Intune’da uygulama dağıtım sorunlarını giderme](troubleshoot-app-deployment-problems-in-microsoft-intune.md) makalesini bulabilirsiniz.
+-   Web’de bir çözüm arayın. Örneğin, 0x80073CF0 hatasını alırsanız Web’de **technet intune 0x80073cf0** araması yaparak [Microsoft Intune’da uygulama dağıtım sorunlarını giderme](troubleshoot-app-deployment-problems-in-microsoft-intune.md) makalesini bulabilirsiniz. Bu makale, bu sorunu çözmeye yönelik öneriler sunar.
 
--   [Intune TechNet Forumu](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)’nda bir yanıt arayabilirsiniz.  Sorun daha önce çözülmemişse topluluğun sunabileceği önerileri görmek için soruyu göndermeniz gerekir.
+-   [Intune TechNet Forumu](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)’nda bir yanıt arayın.  Sorun daha önce çözülmemişse topluluğun sunabileceği önerileri görmek için soruyu gönderin.
 
--   Bir destek isteği açabilirsiniz. Sorunu tanımlayıp kullanılabilir verileri topladığınızda Intune Desteği sorunu çözmenize daha iyi yardımcı olabilecektir.
+-   Bir destek isteği açın. Sorunu tanımlayıp kullanılabilir verileri topladıktan sonra Intune Desteği sorunu çözmenize daha iyi yardımcı olabilecektir.
 
     Destek isteği oluşturmak için [Office 365 yönetim merkezini ziyaret edin](https://portal.office.com/admin/default.aspx). Destek seçenekleri hakkında daha fazla bilgi için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
-## <a name="community-resources"></a>Topluluk kaynakları
+## <a name="find-community-resources"></a>Topluluk kaynakları bulma
 Bu topluluk kaynaklarında başka yararlı bilgiler bulabilirsiniz.
 
 -   [Microsoft Intune Hayatta Kalma Kılavuzu](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx), Intune ürününü yapılandırmanıza, korumanıza ve ürünle ilgili sorunları gidermenize yardımcı olabilecek birçok kaynağa bağlantı içerir.
@@ -76,7 +79,7 @@ Bu topluluk kaynaklarında başka yararlı bilgiler bulabilirsiniz.
 -   [Intune forumları](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="next-steps"></a>Sonraki adımlar
-Aşağıda listelenen konular, belirli konular için sorun giderme yardımına sahiptir. Bu bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
+Aşağıdaki konular, belirli konular için sorun giderme yardımına sahiptir. Bu bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 [Microsoft Intune’da Endpoint Protection Sorunlarını Giderme](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
@@ -94,6 +97,6 @@ Aşağıda listelenen konular, belirli konular için sorun giderme yardımına s
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

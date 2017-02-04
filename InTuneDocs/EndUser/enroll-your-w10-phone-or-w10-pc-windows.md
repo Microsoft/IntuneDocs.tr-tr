@@ -5,17 +5,19 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-ms.reviewer: priyar
+searchScope:
+- Company Portal
+ms.reviewer: jieyan
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 8d1644c5a52d728aecd095979fec130cfa8a86f2
+ms.sourcegitcommit: 81ee6143d53ca08f03dfd3555b118f77319ccf2d
+ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 
 ---
@@ -40,19 +42,19 @@ Daha fazla bilgi edinmek istiyor musunuz? [Cihazınızı Intune'a kaydettiğiniz
 
  ![Windows 10 Masaüstü Bilgisayarınız Hakkında](../media/settings_about_pc.png)
 
-3.  Sürümünüz __1607__ ise [bu adımlara](enroll-your-w10-device-access-work-or-school.md) geçin. Sürümünüz __1511__ ise [bu adımlara](enroll-your-w10-device-your-account.md) geçin.
+3.  Sürümünüz __1607__ ise [bu adımlara](enroll-your-w10-device-access-work-or-school.md) geçin. Sürümünüz __1511 veya daha düşükse__, [bu adımlarla](enroll-your-w10-device-your-account.md) devam edin.
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile cihazları
 
 1.  __Başlat__ sayfasında __Tüm uygulamalar__ listesini kaydırın ve __Ayarlar__ uygulamasını seçin.
 2.  __Sistem__'e ve ardından __Hakkında__'ya dokunun.
 3.  __Cihaz bilgileri__ bölümünde __Daha fazla bilgi__'ye dokunun. Cihazınız hakkındaki bilgilerin listesini göreceksiniz. Bu listede __Sürüm__'ü bulun.
-4.  Sürümünüz __1607__ ise [bu adımlara](enroll-your-w10-device-access-work-or-school.md) geçin. Sürümünüz __1511__ ise [bu adımlara](enroll-your-w10-device-your-account.md) geçin.
+4.  Sürümünüz __1607__ ise [bu adımlara](enroll-your-w10-device-access-work-or-school.md) geçin. Sürümünüz __1511 veya daha düşükse__, [bu adımlarla](enroll-your-w10-device-your-account.md) devam edin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

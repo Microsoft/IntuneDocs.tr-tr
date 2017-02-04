@@ -14,14 +14,17 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 047a2fb0ad286ece183116a70466fc259b9a0dea
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>Intune'a kaydolma veya Intune'da oturum açma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune’a kaydolabilmek veya Intune’da oturum açabilmek için, önce kuruluşunuzun zaten bir Microsoft Online Services iş veya okul hesabı olup olmadığını veya kuruluşunuzla Microsoft arasında bir Kurumsal Anlaşması veya eşdeğer bir toplu lisans sözleşmesi olup olmadığını saptamanız gerekir. Bir iş veya okul hesabı Microsoft ile bir toplu lisanslama sözleşmesi imzaladığınızda veya Office 365 gibi diğer Microsoft bulut hizmetlerine abone olduğunuzda sağlanır.
 
 Zaten bir iş veya okul hesabınız varsa, Intune’u önceden var olan abonelik ortamınıza eklemek için yalnızca o hesapla **oturum açabilirsiniz**. Bunun dışındaki durumlarda, kuruluşunuzda Intune’u yönetirken kullanılacak yeni bir hesap oluşturmak için **kaydolmanız** gerekir.
@@ -50,6 +53,6 @@ Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığı
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

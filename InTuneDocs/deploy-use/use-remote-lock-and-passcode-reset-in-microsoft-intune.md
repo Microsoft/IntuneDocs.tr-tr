@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune hem uzaktan kilitleme hem de geçiş kodu sıfırlama özelliklerini sağlar.
 
 ## <a name="lock-a-device-remotely"></a>Cihazı uzaktan kilitleme
-Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Aşağıdaki tabloda, farklı mobil platformlarda uzaktan kilitleme işleminin nasıl çalıştığı listelenmiştir.
+Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Uzaktan kilitlemeyi kullanmaya başlamadan önce cihazın zaten ayarlanmış bir PIN veya geçiş kodu olmalıdır. 
+
+Aşağıdaki tabloda, farklı mobil platformlarda uzaktan kilitleme işleminin nasıl çalıştığı listelenmiştir.
 
 |Platform|Uzaktan kilitleme|
 |------------|---------------|
@@ -79,6 +84,6 @@ Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için geçiş ko
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

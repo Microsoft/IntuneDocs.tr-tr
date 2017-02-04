@@ -14,8 +14,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
+ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
+ms.openlocfilehash: fa8d839da1cf0b2d207edc0b28de8a714ba0df02
 
 
 ---
@@ -24,21 +24,17 @@ ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## <a name="use-the-azure-portal"></a>Azure portalını kullanma
-Azure portalı, mobil uygulama yönetimi (MAM) ilkeleri oluşturmanıza ve bunları yönetmenize olanak tanır.
+Azure portalı, mobil uygulama yönetimi (MAM) ilkelerini aşağıdakiler için oluşturmak ve yönetmek için kullanılır:
 
-Azure portalı, aşağıdakiler için MAM ilkeleri oluşturmayı destekler:
 - **Intune’a kaydedilmiş ve Intune’da yönetilen** cihazlarda çalıştırılan uygulamalar.
 
 - Herhangi bir MDM çözümüne **kaydedilmemiş** cihazlarda çalıştırılan uygulamalar.
 - **Üçüncü taraf bir MDM çözümüne kaydedilmiş** cihazlarda çalıştırılan uygulamalar.
 
 >[!IMPORTANT]
+> Azure portalı MAM ilkeleri oluşturmak için yeni yönetim konsoludur ancak MDM senaryoları için [Intune yönetim konsolunu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanarak Intune’a kaydedilen cihazlara yönelik uygulamaları destekleyen bir MAM ilkesi de oluşturabilirsiniz.
 
-
-> Cihazlarınızı yönetmek için Intune yönetici konsolunu kullanıyorsanız, Intune’da kayıtlı cihazlara yönelik uygulamaları destekleyen bir MAM ilkesini [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) aracılığıyla oluşturabilirsiniz.
-
-> Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur. Hem Intune yönetici konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalındaki ilke uygulanır ve kullanıcılara bu ilke dağıtılır.
+> Intune yönetim konsolunda kullanılabilir tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Ayrıca, hem Intune yönetim konsolu hem de Azure portalında MAM ilkelerini oluşturursanız Azure portalında oluşturulan ilkeler, Intune yönetim konsolunda oluşturulan ilkeleri geçersiz kılar. Bu senaryoda Azure portalı MAM ilkeleri, uygulamalarda geçerli kılınır ve kullanıcılara dağıtılır.
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Azure portalında oturum açma ve başlangıç sayfanızı özelleştirme
@@ -51,24 +47,25 @@ Azure portalı, aşağıdakiler için MAM ilkeleri oluşturmayı destekler:
 
     ![Azure portalı panosunun ekran görüntüsü](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  **Gözat** menüsünde **Intune**'u bulun.![Intune'un vurgulandığı Gözat menüsünün ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  **Gözat** menüsünde **Intune**‘u bulun.
+
+    ![Intune'un vurgulandığı Gözat menüsünün ekran görüntüsü](../media/AppManagement/MAM-Azure-Portal-1.png)
 
 4.  **Intune** > **Intune mobil uygulama yönetimi** > **Ayarlar**‘ı seçin.
 
-    ![Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+    ![Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/MAM-Azure-Portal-2.png)
 
-    > [!TIP]
-
-    > **Başlat** sayfasına bir dikey pencere sabitlemek için dikey penceredeki **sabitle** seçeneğini kullanabilirsiniz. **Intune mobil uygulama yönetimi dikey penceresi** üzerindeki sabitleme simgesine tıklayarak dikey pencereyi **Başlat** sayfasına sabitleyin.
+5. (İsteğe bağlı): **Başlat** sayfasına bir dikey pencere sabitlemek için dikey penceredeki **sabitle** seçeneğini kullanabilirsiniz. **Intune mobil uygulama yönetimi dikey penceresi** üzerindeki sabitleme simgesine tıklayarak dikey pencereyi **Başlat** sayfasına sabitleyin.
 
     ![Raptiye simgesinin vurgulandığı Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 
     ![Sabitlenmiş Intune kutucuğuyla panonun ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
+
 ## <a name="next-steps"></a>Sonraki adımlar
 [Mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlama](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

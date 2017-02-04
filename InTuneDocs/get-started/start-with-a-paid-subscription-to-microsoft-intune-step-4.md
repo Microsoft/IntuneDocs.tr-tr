@@ -14,13 +14,16 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 68cdc77de1fa77b4fed6a1f37850b5427fb2b121
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 1d0bb386cab923f3d1b45a0c6b64296fd2291460
 
 
 ---
 
 # <a name="manage-intune-licenses"></a>Intune lisanslarını yönetme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Kullanıcıların Intune hizmetini kullanmak veya cihazlarını yönetime kaydetmek üzere oturum açabilmesi için önce [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854) aracılığıyla her kullanıcıya Intune aboneliğinize yönelik bir lisans atamanız gerekir.
 
 Microsoft Enterprise Mobility + Security (EMS) kullanan kuruluşların, yalnızca EMS paketinde Azure Active Directory Premium veya Intune hizmetleri gerektiren kullanıcıları olabilir. [Azure Active Directory PowerShell cmdlet’lerini](https://msdn.microsoft.com/library/jj151815.aspx) kullanarak hizmetlerin birini veya bir alt kümesini atayabilirsiniz. Daha fazla bilgi için bkz. [Intune lisanslarını PowerShell kullanarak yönetme](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
@@ -94,6 +97,6 @@ Zaten lisans atanmış bir kullanıcı için EMS lisansının Intune bölümün�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

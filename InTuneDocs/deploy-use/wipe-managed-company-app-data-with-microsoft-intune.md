@@ -2,10 +2,10 @@
 title: "Yönetilen şirket uygulama verilerini silme | Microsoft Docs"
 description: "Şirket verilerini cihazlardan uzaktan seçmeli olarak nasıl kaldırabileceğinizi öğrenin."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: stabar
+ms.author: staciebarker
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
+ms.sourcegitcommit: 89f5dc1581571cfcb6e03b5dce740bc7f8a8a9ce
+ms.openlocfilehash: a02a015ce1208ee5fa081e60ce0b88c69d4efa50
 
 
 ---
@@ -34,29 +34,31 @@ Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıld�
 
 ## <a name="create-a-wipe-request"></a>Temizleme isteği oluşturma
 
-1.  **Intune Mobil uygulama yönetimi** dikey penceresinde **Temizleme istekleri** kutucuğunu seçin.
+1.  Azure portalında oturum açın ve **Daha Fazla Hizmetler** > **Diğer** > **Intune**’ı seçin.
 
-    ![Özet kutucuğunu içeren Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+2.  Intune dikey penceresinde **Uygulamaları yönetme**’yi seçin.
 
-2.  **Yeni silme istekleri**’ni seçin. **Yeni temizleme isteği** dikey penceresi açılır.
+3.  **Yeni silme istekleri**’ni seçin. **Yeni temizleme isteği** dikey penceresi açılır.
 
     ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
-3.  **Kullanıcı**'yı seçerek **Kullanıcı** dikey penceresini açın ve uygulama verilerini temizlemek istediğiniz kullanıcıyı seçin.
+4.  **Kullanıcı**'yı seçerek **Kullanıcı** dikey penceresini açın ve uygulama verilerini temizlemek istediğiniz kullanıcıyı seçin.
 
-4.  **Cihaz**’ı seçin.  Bu, seçili kullanıcıyla ilişkili tüm cihazları listeleyen **Cihaz** dikey penceresini açar.  Silmek istediğiniz cihazı seçin.
+5.  **Cihaz**’ı seçin.  Bu, seçili kullanıcıyla ilişkili tüm cihazları listeleyen **Cihaz** dikey penceresini açar.  Silmek istediğiniz cihazı seçin.
 
-5.  Şimdi **Yeni temizleme isteği** dikey penceresine geri dönersiniz. Temizleme isteğinde bulunmak için **Tamam**’ı seçin. Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur ve bu istekleri izler.
-
+6.  Şimdi **Yeni temizleme isteği** dikey penceresine geri dönersiniz. Temizleme isteğinde bulunmak için **Tamam**’ı seçin. Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur ve bu istekleri izler.
 
 ![Temizleme istekleri kutucuğunun ekran görüntüsü ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## <a name="monitor-your-wipe-requests"></a>Silme isteklerinizi izleme
-**Intune mobil uygulama yönetimi** dikey penceresindeki **Silme isteği** kutucuğunda bir özet rapor bulunur.  Bu rapor, genel durumu görüntüler ve bekleyen isteklerin ve hataların sayısını gösterir. Şu adımları izleyerek daha fazla ayrıntıya ulaşabilirsiniz:
 
-1.  **Intune mobil uygulama yönetimi** dikey penceresinde **Temizleme isteği** kutucuğunu seçerek **Temizleme isteği** dikey penceresini açın.
+**Silme isteği** kutucuğunda, silme isteğinin genel durumunu gösteren özetlenmiş bir rapor vardır ve bekleyen isteklerin ve hataların sayısını içerir. Daha fazla bilgi almak için şu adımları izleyin:
 
-2.  **Temizleme isteği** dikey penceresinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
+1.  Intune dikey penceresinde **Uygulamaları yönetme**’yi seçin.
+
+2.  **Silme isteği** dikey penceresinde, **Silme isteği** dikey penceresini açmak için **Silme isteği**kutucuğunu seçin.
+
+3.  **Temizleme isteği** dikey penceresinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
 
 Silmenin gerçekleşmesi için kullanıcı uygulamayı açmalıdır ve silme işlemi, istekte bulunulduktan sonra 30 dakikaya kadar zaman alabilir.
 
@@ -69,6 +71,6 @@ Bekleme durumundaki silmeler, siz bunları elle silinceye kadar görüntülenir.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

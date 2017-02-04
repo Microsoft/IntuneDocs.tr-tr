@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,17 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 2a620d1e499e286365e5913be0ceb3d1efe3b846
+ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
+ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
 
 
 ---
 
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Microsoft Intune’da ilke sorunlarını giderme
 
-Intune ile ilkelerinizi dağıtma ve yönetme konusunda sorun yaşıyorsanız buradan başlayın. Bu konuda, karşılaşabileceğiniz bazı yaygın sorunlar çözümleriyle birlikte sunulmuştur.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Intune ilkelerini dağıtma ve yönetme konusunda sorun yaşıyorsanız buradan başlayın. Bu konuda, karşılaşabileceğiniz bazı yaygın sorunlar çözümleriyle birlikte sunulmuştur.
 
 ## <a name="general-issues"></a>Genel Sorunlar
 
@@ -99,6 +101,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

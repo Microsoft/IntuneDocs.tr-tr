@@ -14,14 +14,17 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 7777b7fb4a0977ed663a3ef01547f22e9e61bb8a
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 804c62c3ee840a01ee7b3f7d96bf984bc9501ea0
 
 
 ---
 
 
 # <a name="intune-quick-start-guide"></a>Intune hızlı başlangıç kılavuzu
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Bu kılavuz, Microsoft Intune ücretli aboneliğinizi kullanmaya başlamanızı sağlar. Kuruluşunuzdaki mobil cihazlar ve Windows bilgisayarların yanı sıra uygulamaları yönetmek için bu adımları izleyin. Adımları sırayla uygulayabilir veya herhangi bir adım, ortamınız veya işletme gereksinimleriniz için geçerli değilse atlayabilirsiniz. Intune'u denemek istiyorsanız [Intune değerlendirme kılavuzunu](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) inceleyin.  
 
 Şu anda bilgisayar ve sunucuları yönetmek için Microsoft System Center Configuration Manager'ı kullanıyorsanız, [Configuration Manager'ın kapsamını mobil cihazları da yönetecek şekilde genişletebilirsiniz](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
@@ -50,6 +53,6 @@ Bu kılavuz, Microsoft Intune ücretli aboneliğinizi kullanmaya başlamanızı 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

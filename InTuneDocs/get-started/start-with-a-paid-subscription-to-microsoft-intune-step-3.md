@@ -14,13 +14,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 247bc72fce1146d83729cadb9905d8ceed134c14
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Kullanıcı ekleme ve Intune'a yönetici izni verme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Yönetici olarak, kullanıcıları doğrudan ekleyebilir veya şirket içi Active Directory'den eşitleyebilirsiniz. Eklendikten sonra, kullanıcılar cihazlarını kaydedebilir ve şirket kaynaklarına erişebilir. Kullanıcılara *kiracı yöneticisi*, *hizmet yöneticisi* ve *cihaz kayıt yöneticisi izinlerini* içeren ek izinler de verebilirsiniz.
 
@@ -101,6 +103,6 @@ Cihaz kaydı yöneticileri daha birçok kullanıcısız cihazı kaydetmek için 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

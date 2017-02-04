@@ -14,14 +14,17 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b40ce33560ea49fdc966889a1bf2cac2ae537578
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
 
 
 ---
 
 
 # <a name="configure-a-custom-domain-name"></a>Özel bir etki alanı adı yapılandırma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 Kuruluşunuz, Microsoft'un Intune gibi bulut tabanlı bir hizmetine kaydolduğunda size Azure Active Directory'de (AD) barındırılan, şuna benzeyen bir ilk etki alanı adı verilir: **etkialanınız.onmicrosoft.com**. Bu örnekte **etkialanınız**, kaydolurken seçtiğiniz etki alanı adıdır ve **onmicrosoft.com**, aboneliğinize eklediğiniz hesaplara atanan son ektir. Kuruluşunuz özel bir etki alanına sahip olduğunda, Intune örneğinizi aboneliğinizle sağlanan etki alanı adını değil bu etki alanı adını kullanmak için yapılandırabilirsiniz.
 
@@ -59,6 +62,6 @@ Bu ilk etki alanı adını yeniden adlandırılamaz veya kaldıramazsınız. Anc
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
