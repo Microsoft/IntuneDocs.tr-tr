@@ -388,6 +388,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

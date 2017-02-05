@@ -82,6 +82,6 @@ Diğer Intune ilkelerinden farklı olarak, koşullu erişim ilkelerini dağıtma
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 
