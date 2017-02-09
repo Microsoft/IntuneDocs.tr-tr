@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
@@ -45,8 +46,6 @@ Bir iş profili oluşturduğunuzda:
 İş profili oluşturma adımları için bkz. [İş profili oluşturma ve cihazınızı kaydetme](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
 
 
 

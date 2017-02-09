@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
@@ -29,9 +30,9 @@ Intune’a kaydolduysanız, ancak artık iş veya okul için Windows cihazınız
 
 Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde gösterilen ve kullandığınız cihaz türüyle eşleşen bağlantıyı kullanın:
 
--   [Windows 10 cihazınızın kaydını silme](#unenroll-your-windows-10-device)
--   [Windows 8.1 bilgisayarınızın kaydını silme](#unenroll-your-windows-8-1-computer)
--   [Windows Phone 8.1 cihazınızın kaydını silme](#unenroll-your-windows-phone-8-1-device)
+-    [Windows 10 cihazınızın kaydını silme](#unenroll-your-windows-10-device)
+-    [Windows 8.1 bilgisayarınızın kaydını silme](#unenroll-your-windows-8-1-computer)
+-    [Windows Phone 8.1 cihazınızın kaydını silme](#unenroll-your-windows-phone-8-1-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Windows 10 cihazınızın kaydını silme
 

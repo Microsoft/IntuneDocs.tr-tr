@@ -2,10 +2,10 @@
 title: "Windows bilgisayarlar için Endpoint Protection | Microsoft Docs"
 description: "Kötü amaçlı yazılım tehditlerine karşı gerçek zamanlı koruma sağlayan Endpoint Protection ile yönetilen bilgisayarlarınızın güvenliğini koruyun."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 07/25/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
