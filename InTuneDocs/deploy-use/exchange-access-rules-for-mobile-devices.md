@@ -2,8 +2,8 @@
 title: "Mobil cihazlar için Exchange erişim kuralları | Microsoft Docs"
 description: "EAS ile cihaz bağlantılarına izin vermek ya da bunları engellemek için Exchange ActiveSync erişim kuralları"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
