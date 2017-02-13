@@ -42,8 +42,8 @@
 ## [Bölüm 9: Sınama ve doğrulama](plan-design/section-9-test-and-validation.md)
 ## [Ek kaynaklar](plan-design/additional-resources.md)
 
-# Yenilikler
-## [Yenilikler](whats-new/whats-new-in-microsoft-intune.md)
+# [Yenilikler](whats-new/whats-new-in-microsoft-intune.md)
+## [Uygulamanın kullanıcı arabirimindeki yenilikler](whats-new/whats-new-in-intune-app-ui.md)
 ## [Azure önizlemesindeki yenilikler](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Yenilikler arşivi](whats-new/whats-new-archive.md)
 
@@ -159,9 +159,9 @@
 #### [ADAL olmadan uygulama engelleme](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Ağlara erişimi koruma (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Cihaz, ağ ve uygulama riskine dayalı olarak erişimi koruma](deploy-use/device-threat-protection.md)
-#### [Lookout cihaz tehdit korumasını ayarlama](deploy-use/device-threat-protection-subscription-setup.md)
-#### [Intune'da Lookout’u etkinleştirme](deploy-use/device-threat-protection-enable.md)
-#### [Lookout for Work uygulamalarını dağıtma](deploy-use/device-threat-protection-apps.md)
+#### [Cihaz tehdit korumasını ayarlama](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Cihaz tehdit korumasını etkinleştirme](deploy-use/device-threat-protection-enable.md)
+#### [Cihaz tehdit koruması uygulamalarını dağıtma](deploy-use/device-threat-protection-apps.md)
 #### [Uyumluluk ilkesinde cihaz tehdit korumasını etkinleştirme](deploy-use/device-threat-protection-policy.md)
 
 ### [Uygulama verilerini MAM ile koruma](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -217,11 +217,11 @@
 
 ## [Mobil uygulama yönetimi sorunlarını giderme](troubleshoot/troubleshoot-mam.md)
 
-## [Lookout Tümleştirmesi sorunlarını giderme](troubleshoot/troubleshooting-lookout-integration.md)
+## [Cihaz tehdit korumasında sorun giderme](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [Sözlük](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 
