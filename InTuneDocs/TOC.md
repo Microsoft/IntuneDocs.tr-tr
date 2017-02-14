@@ -11,7 +11,8 @@
 
 # [Başlarken](get-started/get-started.md)
 ## [Intune Kurulumu](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Önkoşullar](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [Önkoşullar]
+#### [Desteklenen cihazlar](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Ağ kullanımı](get-started/network-bandwidth-use.md)
 ### [Intune'da oturum açma](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Etki alanlarını yapılandırma](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -57,7 +58,6 @@
 #### [Android yönetimi](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work yönetimi](deploy-use/set-up-android-for-work.md)
 #### [Windows cihaz yönetimi ](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile ve Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Şirkete ait cihazları yönetme](deploy-use/manage-corporate-owned-devices.md)
 #### [Şirkete ait iOS cihazlarını kaydetme](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Kurulum Yardımcısı kaydı](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -106,7 +106,7 @@
 
 ## [Cihazları koruma](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Uzaktan kilitleme ve geçiş kodu sıfırlama](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [MFA ile Windows cihazlarını denetleme](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [MFA ile Windows cihazlarını denetleme](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [İş İçin Windows Hello ayarlarını denetleme](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [iOS’ta Etkinleştirme Kilidini Atlama](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Windows bilgisayarlarını koruma ilkeleri](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -222,6 +222,6 @@
 # [Sözlük](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 
