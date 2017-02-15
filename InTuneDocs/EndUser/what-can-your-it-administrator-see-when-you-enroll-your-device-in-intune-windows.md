@@ -30,35 +30,35 @@ Windows cihazınızı Intune’a kaydettiğinizde, BT yöneticinize cihazınızd
 
 **BT’nin göremedikleri**
 
--   Arama ve Web geçmişi
+- Arama ve Web geçmişi
 
--   Konum
+-    Konum
 
--   E-posta ve kısa mesajlar
+- E-posta ve kısa mesajlar
 
--   Kişiler
+- Kişiler
 
--   Parolalar
+-    Parolalar
 
--   Takvim
+- Takvim
 
--   Film rulosu
+- Film rulosu
 
 **BT’nin görebildikleri**
 
--   Model
+- Model
 
--   Seri numarası
+- Seri numarası
 
--   İşletim sistemi
+- İşletim sistemi
 
--   Uygulama adları
+- Uygulama adları
 
--   Sahip
+- Sahip
 
--   Cihaz adı
+- Cihaz adı
 
--   Üretici
+- Üretici
 
 Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yüklediğinizde ve Windows cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
