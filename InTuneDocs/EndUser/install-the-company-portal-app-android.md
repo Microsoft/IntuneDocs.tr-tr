@@ -28,7 +28,7 @@ ms.openlocfilehash: 011bdf38327319358a364a17fa82c03f1320ab63
 
 1.  **Giriş** > **Play Store**’a dokunun.
 
-2.   **Arama** kutusuna, **şirket portalı**yazın.
+2.  **Arama** kutusuna, **şirket portalı**yazın.
 
 3.  **Intune Şirket Portalı**’na dokunun.
 
