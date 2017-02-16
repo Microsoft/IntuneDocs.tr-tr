@@ -4,6 +4,7 @@
 <!---(introduction/get-started.md) --->
 ### [Ücretsiz deneme için kaydolma](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [Yenilikler](introduction/whats-new.md)
+## [Bilinen sorunlar](introduction/known-issues-in-the-intune-preview.md)
 <!--- ## [Get support](introduction/get-support.md)
 ## [Related resources](introduction/related-resources.md)
 
@@ -37,13 +38,12 @@
 #### [Apple Configurator seri numaraları ekleme](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [Cihaz kayıt programını kullanarak iOS cihazlarını kaydetme](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Cihaz kayıt yöneticisini kullanarak cihazları kaydetme](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
-### Windows cihazlarını kaydetme
-#### [Windows Phone ve Windows 10 Mobile cihazlarını kaydetme](enroll-devices/enroll-windows-mobile-devices.md)
-#### [Windows bilgisayarlarını mobil cihaz olarak kaydetme](enroll-devices/enroll-windows-pcs-as-mobile-devices.md)
+### [MacOS cihazları kaydetme](enroll-devices/enroll-macos-devices.md)
+### [Windows cihazlarını kaydetme](enroll-devices/enroll-window-devices.md)
 ### Cihaz kaydını yönetme
 #### [Hüküm ve koşulları oluşturma](enroll-devices/create-terms-and-conditions.md)
 #### [Kayıt kısıtlamalarını ayarlama](enroll-devices/set-enrollment-restrictions.md)
-#### [Cihaz gruplarını eşleme](enroll-devices/how-to-use-device-group-mapping.md)
+#### [Cihazları gruplarla eşleme](enroll-devices/how-to-use-device-group-mapping.md)
 #### [Kurumsal tanımlayıcılar ekleme](enroll-devices/add-corporate-identifiers.md)
 #### [İş için Windows Hello kullanma](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
@@ -81,14 +81,14 @@
 ### [Uygulamaları atama](manage-apps/deploy-apps.md)
 ### [Uygulamaları izleme](manage-apps/monitor-apps.md)
 ### [Uygulama yapılandırma ilkelerini kullanma](manage-apps/app-configuration-policies.md)
-<!--- ### [Selectively wipe apps](manage-apps/app-selective-wipe.md)--->
+### [Uygulamaları seçmeli temizleme](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Toplu satın alınan uygulamalarla çalışma](manage-apps/volume-purchased-apps.md)
 #### [iOS VPP uygulamaları](manage-apps/ios-vpp-apps.md)
 #### [İş için Windows Mağazası uygulamaları](manage-apps/wsfb-apps.md)
 ### [Şirket Portalı uygulamasını yapılandırma](manage-apps/company-portal-app.md)
 ## Uygulama koruma ilkelerini kullanma
-### [Uygulama koruma ilkelerini oluşturma ve dağıtma](manage-apps/app-protection-policies.md)
+### [Uygulama koruma ilkelerini oluşturma ve atama](manage-apps/app-protection-policies.md)
 #### [Android ayarları](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS ayarları](manage-apps/ios-app-protection-policy-settings.md)
 ### [Uygulama koruma ilkelerini doğrulama](manage-apps/validate-app-protection-policies.md)
@@ -187,6 +187,6 @@
 ## [Intune Grafik API’si](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 
