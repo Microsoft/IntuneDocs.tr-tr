@@ -234,7 +234,7 @@ Sorunu düzeltmek için AD FS sunucusunda veya proxy’lerdeki Bilgisayar Kişis
 5.  Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
 6.  **Ayrıntılar** sekmesini ve **... dosyasına kopyala**’yı seçin.
 7.  Sertifikanın ortak anahtarını istenen dosya konumuna kaydetmek veya dışarı aktarmak için sihirbaz yönergelerini izleyin.
-8.  3. Adımda Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
+8.  Adımda 3 Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
 9.  AD FS sunucularını yeniden başlatın.
 10. Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
 Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum açabilmelidir.
