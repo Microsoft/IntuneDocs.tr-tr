@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 588674c38a5e54f6b762ac044457110a361e6969
+ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
+ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
 
 
 ---
@@ -51,8 +52,11 @@ Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamasına y
 
 IMEI numarasına sahip cihaz Intune’a kaydedilirken, genellikle bir kullanıcı Şirket Portalı uygulamasını yükleyip kayıt işlemini tamamladığında, cihaz şirkete ait olarak etiketlenir ve **IMEI Cihazları** grubunda kayıtlı olarak görünür.
 
+>[!NOTE] 
+> Kuruluşunuz yakın gelecekte yeni Azure portalına geçiş yaptığında bu özelliğin değişeceğini göreceksiniz. Mevcut Intune yönetici konsolunda yöneticiler yüklenen CSV dosyasından ayrıntıları alabilir ve her donanım tanımlayıcısı için geçerli ayrıntıların üzerine yazabilir. Yeni Azure portalında tüm donanım tanımlayıcıları için otomatik olarak ayrıntıların üzerine yazabilecek veya mevcut tanımlayıcılar için tüm yeni ayrıntıları yoksayabileceksiniz.
 
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Feb17_HO1-->
 
 
