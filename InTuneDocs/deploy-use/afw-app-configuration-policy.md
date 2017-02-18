@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 008c0d20312e90f3897c3da8ae2226e3e2595225
-ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 
 
 ---
@@ -28,19 +29,17 @@ ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
 
 Kullanıcılar bir iOS uygulamasını çalıştırdığında gerekebilecek ayarları sağlamak için Intune’daki mobil uygulama yapılandırma ilkelerini kullanın. Örneğin, bir uygulama kullanıcıların şunları belirtmesini gerektirebilir:
 
--   Özel bağlantı noktası numarası.
+-   Özel bağlantı noktası numarası
+-   Dil ayarları
+-   Bir şirket logosu gibi marka ayarları
 
--   Dil ayarları.
+Ayarlar kullanıcılar tarafından hatalı girildiği takdirde, yardım masanız üzerindeki yük artabilir ve uygulamalara geçiş yavaşlayabilir.
 
--   Bir şirket logosu gibi marka ayarları.
-
-Bu ayarlar kullanıcılar tarafından hatalı girildiği takdirde, yardım masanız üzerindeki yük artabilir ve uygulamalara geçiş yavaşlayabilir.
-
-Mobil uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalıştırmadan önce bu ayarları kullanıcılara dağıtmanıza imkan vererek bu sorunları ortadan kaldırmanıza yardımcı olabilir. Daha sonra ayarlar otomatik olarak sağlanır ve kullanıcıların herhangi bir eylem yapması gerekmez.
+Mobil uygulama yapılandırma ilkeleri, bu ayarları kullanıcılar uygulamayı çalıştırmadan önce cihazlara dağıtmanızı sağlar. Ayarlar otomatik olarak sağlanır ve kullanıcıların herhangi bir eylem yapması gerekmez.
 
 Uygulama yapılandırma ilkelerinden yararlanmak için uygulama geliştiricisinin kurumsal uygulama yapılandırmalarını, bunları oluşturduğunda kullanıma sunması gerekir. Örneğin, Google Chrome varsayılan yer işaretlerini, izin verilen ve verilmeyen siteleri ve daha fazlasını ayarlamanıza olanak tanıyan ayarları kullanıma sunar. Bu ayarların desteklenip desteklenmediğini görmek ve bunların ilkede nasıl belirtileceğini öğrenmek için uygulama geliştiricisine başvurun.
 
-Yapılandırmak istediğiniz uygulamayı dağıttığınız kullanıcılara uygulama yapılandırma ilkesini de dağıtırsınız. İlke ayarları uygulama her çalıştırıldığında kullanılır.
+Yapılandırmak istediğiniz uygulamayı dağıttığınız kullanıcılara uygulama yapılandırma ilkesini de dağıtırsınız. Uygulama ayarları, uygulama çalıştırıldığında uygulanır.
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>Mobil uygulama yapılandırma ilkesi yapılandırma
 
@@ -80,6 +79,6 @@ Dağıtılan uygulama bir cihazda çalıştırıldığında, mobil uygulama yap�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
@@ -25,9 +26,7 @@ ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-Intune, Android for Work cihazlarda yapılandırabileceğiniz bir dizi yerleşik genel ayar sunar.
+Intune, [Android for Work cihazlarda](android-for-work.md) yapılandırabileceğiniz bir dizi yerleşik genel ayar sunar.
 
 ## <a name="general-configuration-policy"></a>Genel yapılandırma ilkesi
 
@@ -60,8 +59,6 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 |**İş profili ve kişisel profil arasında veri paylaşımına izin ver**|İş profilindeki uygulamaların kullanıcıların kişisel profiliyle veri paylaşmasına izin verir. Aşağıdakilerden birini seçin:<br><br>- **Sınırlar arasında tüm paylaşımları engelle**<br>- **İş profilindeki uygulamalar kişisel profilden gelen paylaşım isteklerini işleyebilir**<br>- **Paylaşım kısıtlaması yok**|
 |**Cihaz kilitliyken iş profili bildirimlerini gizle**<br>(Android 6 ve üzeri)|Cihaz kilitliyken iş profilinde herhangi bir bildirim gösterilip gösterilmeyeceğini denetler.|
 |**Varsayılan uygulama izni ilkesini ayarla**<br>(Android 6 ve üzeri)|İş profilindeki tüm uygulamalar için varsayılan izin ilkesini ayarlar.|
-
-
 
 
 ## <a name="custom-policy-settings"></a>Özel ilke ayarları
@@ -97,6 +94,6 @@ Intune, şu anda sınırlı sayıda Android özel ilkesi destekler. Hangi ilkele
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

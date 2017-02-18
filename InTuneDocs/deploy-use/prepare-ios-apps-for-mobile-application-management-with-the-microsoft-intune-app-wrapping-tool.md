@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
-ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
@@ -108,6 +109,9 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
   ![Şirket içi ve Geçici sertifika seçin](../media/app-wrapper/iOS-signing-cert-3.png)
 
+>[!NOTE]
+>Uygulamayı dağıtmayı planlamıyorsanız ve yalnızca dahili olarak test etmek istiyorsanız, Üretim sertifikası yerine bir iOS Uygulama Geliştirme sertifikası kullanabilirsiniz. Bir geliştirme sertifikası kullanıyorsanız mobil sağlama profilinin, uygulamanın yükleneceği cihazlara başvurduğundan emin olun.
+
 7. Sayfanın altındaki **İleri**’ye tıklayın.
 
 8. Mac OS bilgisayarınızdaki Anahtarlık Erişim uygulamasını kullanarak **Sertifika İmzalama İsteği (CSR)** oluşturma yönergelerini okuyun.
@@ -133,11 +137,12 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 14. Sertifikayı bir anahtarlığa eklemek için indirmiş olduğunuz sertifika dosyasına çift tıklayın.
 
-15. **Anahtarlık Erişimi**’ni yeniden açın. Sertifikanızı bulmak için Anahtarlık Erişimi penceresinin sağ üst kısmındaki arama çubuğunda **"iPhone"** kelimesini aratın. Menünün görünmesini sağlamak için öğeye sağ tıklayın ve **Bilgi Al**’a tıklayın.
+15. **Anahtarlık Erişimi**’ni yeniden açın. Sertifikanızı bulmak için sağ üst kısımdaki arama çubuğunda sertifikanızın adını aratın. Menünün görünmesini sağlamak için öğeye sağ tıklayın ve **Bilgi Al**’a tıklayın. Örnek ekranlarda üretim sertifikası yerine geliştirme sertifikası kullanıyoruz.
+
 
   ![Sertifikanızı bir anahtarlığa ekleyin](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. Bir bilgi iletisi görüntülenir. En alta kaydırın ve **Parmak izleri** etiketinin altına bakın. Uygulama Sarmalama Aracı için -c parametresi olarak kullanmak üzere **SHA1** dizesini kopyalayın.
+16. Bir bilgi iletisi görüntülenir. En alta kaydırın ve **Parmak izleri** etiketinin altına bakın. Uygulama Sarmalama Aracı’nda "-c" için bağımsız değişken olarak kullanmak üzere **SHA1** dizesini (bulanıklaştırılmış) kopyalayın.
 
   ![Sertifikanızı bir anahtarlığa ekleyin](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -400,6 +405,6 @@ Uygulama Sarmalama Aracını kullanırken, güvenlik ve gizlilik açısından a�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -95,7 +96,7 @@ Mevcut MDM ortamını kaydederken ortamınızda değişiklik yapabilmek için ha
 | **Çözüm alanı** | **Mevcut ortam** | **Yorumlar** |
 |:---:|:---:|:---:|
 | **Kimlik** | Azure AD, Azure AD Connect, şirket dışında değil, MFA yok | Yıl sonundan itibaren MFA’yı etkinleştirme projesi geçerli |                 
-| **E-posta ortamı** | Şirket İçi Exchange, Exchange Online | Şu anda Şirket İçi Exchange sürümünden Exchange Online sürümüne geçiriliyor. Posta kutularının % 75’i geçirildi. Kalan %25 Intune Pilot başlamadan önce geçirilecektir. |                
+| **E-posta ortamı** | Şirket İçi Exchange, Exchange Online | Şu anda Şirket İçi Exchange sürümünden Exchange Online sürümüne geçiriliyor. Posta kutularının %&75;’i geçirildi. Kalan %25 Intune Pilot başlamadan önce geçirilecektir. |                
 | **SharePoint** | Şirket İçi SharePoint | SharePoint Online sürümüne geçirme planı yok |  
 | **Geçerli MDM** | Exchange ActiveSync |  |
 | **Sertifika çözümü** | Microsoft Server 2012 R2, AD Sertifika Hizmetleri | Web Sitesi Sunucuları için yalnızca PKI kullanın |
@@ -135,7 +136,7 @@ Bu yaygın dış bağımlılıkları aşağıda daha ayrıntılı bir şekilde i
 
 ### <a name="identity"></a>Kimlik
 
-Kimlik, kuruluşunuzda bulunan ve cihaz kaydeden kullanıcıları nasıl tanımladığımızdır. Intune, kullanıcı kimlik sağlayıcısı olarak Azure Active Directory (Azure AD) gerektirir. Bu hizmeti zaten kullanıyorsanız bulutta varolan kimliğinizden yararlanmanız mümkün olacaktır. Ayrıca Azure AD Connect, şirket içi kullanıcı kimliklerinizi Microsoft bulut hizmetleri ile eşitlemek için önerilen araçtır. Kuruluşunuzda zaten Office 365 kullanılıyorsa Intune’un aynı Azure Active Directory ortamını kullanması önemlidir.
+Kuruluşunuzda bulunan ve bir cihazı kaydeden kullanıcılar kimlik aracılığıyla tanımlanır. Intune, kullanıcı kimlik sağlayıcısı olarak Azure Active Directory (Azure AD) gerektirir. Bu hizmeti zaten kullanıyorsanız bulutta varolan kimliğinizden yararlanmanız mümkün olacaktır. Ayrıca Azure AD Connect, şirket içi kullanıcı kimliklerinizi Microsoft bulut hizmetleri ile eşitlemek için önerilen araçtır. Kuruluşunuzda zaten Office 365 kullanılıyorsa Intune’un aynı Azure Active Directory ortamını kullanması önemlidir.
 
 Intune'un Kimlik gereksinimleri hakkında daha fazla bilgiyi aşağıda bulabilirsiniz.
 
@@ -147,7 +148,7 @@ Intune'un Kimlik gereksinimleri hakkında daha fazla bilgiyi aşağıda bulabili
 
 ### <a name="user-and-device-groups"></a>Kullanıcı ve cihaz grupları
 
-Kullanıcı ve cihaz grupları bir dağıtımın hedefini belirler. İlkeler, uygulamalar ve profiller için dağıtım hedeflemesi içerebilir. Intune bulut yalnızca kullanıcı ve cihaz gruplarını destekler; hangi kullanıcı ve cihaz gruplarının gerekli olacağını belirlemeniz gerekir. Tüm grupların şirket içi Active Directory'de oluşturulması, sonra Azure Active Directory ile eşitlenmesi önerilir. Aşağıda kullanıcı ve cihaz grubu planlama ve oluşturma hakkında daha fazla bilgi bulabilirsiniz.
+Kullanıcı ve cihaz grupları bir dağıtımın hedefini belirler. İlkeler, uygulamalar ve profiller için dağıtım hedeflemesi içerebilir. Yalnızca bulutt çalışan Intune kullanıcı ve cihaz gruplarını destekler. Hangi kullanıcı ve cihaz gruplarının gerekli olacağını belirlemeniz gerekir. Tüm grupların şirket içi Active Directory'de oluşturulması, sonra Azure Active Directory ile eşitlenmesi önerilir. Aşağıda kullanıcı ve cihaz grubu planlama ve oluşturma hakkında daha fazla bilgi bulabilirsiniz.
 
 -   [Kullanıcı ve cihaz gruplarınızı planlama](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups) hakkında daha fazla bilgi edinin.
 
@@ -411,6 +412,6 @@ Sonraki bölümde [Intune uygulama süreci](section-8-onboarding-process.md) hak
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 

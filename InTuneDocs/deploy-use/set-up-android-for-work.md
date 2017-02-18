@@ -5,15 +5,16 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/23/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 00994a92eb555827d17ad633ffcf765804365621
-ms.openlocfilehash: b419a07ef13d386fc08aa7fd5605fbb0bea79348
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 
 ---
@@ -21,8 +22,6 @@ ms.openlocfilehash: b419a07ef13d386fc08aa7fd5605fbb0bea79348
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Android for Work cihazlarının kaydını etkinleştirme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Android for Work cihazlarının yönetimini etkinleştirmek için Intune'a bir Android for Work bağlaması eklemeniz gerekir. Android for Work’ü destekleyen ancak daha önce normal Android cihazı olarak kaydedilen cihazları kaydetmek için cihazların kaydının silinmesi ve yeniden kaydedilmesi gerekir.
 
@@ -54,7 +53,7 @@ Android for Work bağlamasını ve ayarlarını yapılandırdıktan sonra aşağ
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Android for Work yönetici hesabınızın bağlamasını kaldırma
 
-Android for Work kaydı ve yönetimini kapatabilirsiniz. **Bağlamayı Kaldır**’a tıklamak tüm kayıtlı Android for Work cihazlarının kaydını siler ve Android for Work ile Intune arasındaki ilişkiyi kaldırır.
+Android for Work kaydı ve yönetimini kapatabilirsiniz. Intune yönetim konsolundaki **Bağlamayı Kaldır**'a tıklamak tüm kayıtlı Android for Work cihazlarının kaydını siler ve Android for Work ile Intune arasındaki ilişkiyi kaldırır.
 
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Bir Android for Work hesabının bağlamasını kaldırma
 
@@ -66,6 +65,6 @@ Android for Work kaydı ve yönetimini kapatabilirsiniz. **Bağlamayı Kaldır**
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

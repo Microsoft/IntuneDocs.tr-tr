@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 6a38eb2a071dc2134c9b255b22b5b21a2ef783d0
+ms.sourcegitcommit: f8a47bef930e5e194f4543b0532b4585c0ebd5e9
+ms.openlocfilehash: 514c1cee1137f6f658b0e887dd4f4a02f1cd0f21
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 6a38eb2a071dc2134c9b255b22b5b21a2ef783d0
 
 Uygulama görevleri konusuna girmeden önce, şirketinizde kurumsal mobil çalışmayla ilgilenen katılımcıları iş hedefleri çerçevesinde uyumlu bir noktaya getirmek önemlidir.  Kurumsal mobil çalışmaya yenim mi başladığınız yoksa başka bir üründen geçiş mi yaptığınız da önemlidir.  
 
-Kurumsal mobil çalışma konusundaki gereksinimleri dinamik olarak artmaktadır ve Microsoft’un bu gereksinimlerini karşılamaya yönelik yaklaşımları pazardaki diğer çözümlerden farklı olabilir.  İş hedefleri çerçevesinde uyumlu bir noktaya gelmenin en iyi yolu, çalışanlarınız, iş ortaklarınız ve BT departmanınıza olanak sağlamak istediğiniz senaryolar açısından hedeflerinizi ortaya koymaktır.  
+Kurumsal mobil çalışma konusundaki gereksinimleri dinamik olarak artmaktadır ve Microsoft’un bu gereksinimlerini karşılamaya yönelik yaklaşımları pazardaki diğer çözümlerden farklı olabilir. İş hedefleri çerçevesinde uyumlu bir noktaya gelmenin en iyi yolu, çalışanlarınız, iş ortaklarınız ve BT departmanınıza olanak sağlamak istediğiniz senaryolar açısından hedeflerinizi ortaya koymaktır.  
 
 Aşağıda, Intune’a dayalı en yaygın altı senaryoya kısa giriş bilgileri ve her birinin planlanması ve dağıtımıyla ilgili daha fazla bilgiye ulaştıran bağlantılar verilmiştir.
 
@@ -51,14 +52,13 @@ Böyle durumlarda, şirket verilerine erişmenin tek yolu cihazı yönetime kayd
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Office 365 e-postanızı ve verilerinizi koruyarak mobil cihazların bunlara güvenle erişmesini sağlama
 Office 365’teki şirket verilerinin (e-posta, belgeler, anlık iletiler, kişiler) korunması sizin için bundan kolay ve kullanıcılarınız için bundan rahat olamazdı.
 
-Intune ve Microsoft Enterprise Mobility + Security’nin sağladığı benzersiz bir şekilde tümleştirilmiş koşullu erişim çözümüyle, şirketinizin uyumluluk gereksinimlerini (yönetilen uygulama, desteklenen işletim sistemi sürümü, cihaz pin’i, düşük kullanıcı riski profili, vb. kullanarak [çok faktörlü kimlik doğrulaması](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication) yapma, Intune’a kaydolma) karşılamayan hiçbir kullanıcının, uygulamanın veya cihazın Office 365 verilerine erişememesini güvence altına alınır. Kendi uygulama mağazalarındaki Office mobil uygulamaları, Intune yoluyla yapılandırabileceğiniz veri kapsama ilkelerine uyumlu davranmaya hazır olduğundan, verilerin BT tarafından yönetilmeyen uygulamalarla (yerel e-posta uygulaması gibi) ve depolama konumlarıyla (Dropbox gibi) paylaşılmasını önleyebilirsiniz.  Bu işlevsellik tümüyle Office 365 ve EMS’de yerleşik olarak bulunur.  Bu değerli işlevselliği elde etmek için ek altyapı dağıtımı yapmanız gerekmez.
+Intune ve Microsoft Enterprise Mobility + Security’nin sağladığı benzersiz bir şekilde tümleştirilmiş koşullu erişim çözümüyle, şirketinizin uyumluluk gereksinimlerini (yönetilen uygulama, desteklenen işletim sistemi sürümü, cihaz pin’i, düşük kullanıcı riski profili, vb. kullanarak [çok faktörlü kimlik doğrulaması](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication) yapma, Intune’a kaydolma) karşılamayan hiçbir kullanıcının, uygulamanın veya cihazın Office 365 verilerine erişememesini güvence altına alınır.
 
-Uygulama mağazalarındaki Office mobil uygulamaları, Intune üzerinden yapılandırabileceğiniz veri kapsama ilkelerine sahiptir. Bu özellikler, BT tarafından yönetilmeyen uygulamalarla (yerel e-posta uygulaması gibi) ve depolama konumlarıyla (Dropbox gibi) veri paylaşılmasını engellemenizi sağlar.  Bu işlevsellik tümüyle Office 365 ve EMS’de yerleşik olarak bulunur.  Bu değerli işlevselliği elde etmek için ek altyapı dağıtımı yapmanız gerekmez.
+Uygulama mağazalarındaki Office mobil uygulamaları, Intune üzerinden yapılandırabileceğiniz veri kapsama ilkelerine sahiptir. Bu özellikler, BT tarafından yönetilmeyen uygulamalarla (yerel e-posta uygulaması gibi) ve depolama konumlarıyla (Dropbox gibi) veri paylaşılmasını engellemenizi sağlar. Bu işlevsellik tümüyle Office 365 ve EMS’de yerleşik olarak bulunur. Bu değerli işlevselliği elde etmek için ek altyapı dağıtımı yapmanız gerekmez.
 
+Yaygın bir Office 365 dağıtım uygulaması, şirkete ait cihazlardaki yaygın bir senaryo olarak şirket uygulamaları, sertifikalar, Wi-Fi veya VPN yapılandırmaları ile tam olarak ayarlanması gereken cihazların yönetime kaydolmalarını gerektirmektir.  
 
-Yaygın bir Office 365 dağıtım uygulaması, kendilerine şirket uygulama/sertifika/Wi-Fi/VPN yapılandırmalarının tamamen kurulması gereken cihazların yönetime kaydolmalarının gerekli olmasıdır ve şirketin sahip olduğu cihazlarda çoğunlukla bu durum geçerlidir.  
-
-Öte yandan, kişilerin sahip olduğu cihazlarda çoğunlukla olduğu gibi kullanıcının yalnızca şirket e-postasına ve belgelerine erişmesi gerekiyorsa, kullanıcının Office mobil uygulamalarını ([veri kapsama ilkelerini uyguladığınız](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune) uygulamalar) kullanmaları ve cihazı kaydetme işlemini tamamen atlamaları gerekir!  
+Öte yandan, kişilere ait cihazlarda çoğunlukla olduğu gibi, kullanıcının yalnızca şirket e-postasına ve belgelerine erişmesi gerekiyorsa, kullanıcının Office mobil uygulamalarını ([veri kapsama ilkelerini uyguladığınız](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune) uygulamalar) kullanmalarını gerektirebilir ve cihazı kaydetme işlemini tamamen atlayabilirsiniz!  
 
 Her iki yöntemde de, Office 365 verilerinin güvenliği sizin tanımladığınız ilkelerle sağlanır.
 
@@ -70,14 +70,14 @@ Donanım harcamalarını azaltmaya veya çalışanlar için mobil üretkenlik se
 
 Cihaz kaydının uygulanabilir bir seçenek olmadığı durumlarda, Intune alternatif bir KCG yaklaşımı olarak [şirket verilerini içeren uygulamaları yönetme](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune) yaklaşımını sunar.  Intune, Office mobil uygulamalarında olduğu gibi söz konusu uygulamanın hem şirket verilerine hem de kişisel verilere eriştiği durumlarda bile şirket verilerini korur.  
 
-Bir yönetici olarak, kullanıcıların Office mobil uygulamalarına Office 365’ten erişmelerini ve uygulamaları, verileri koruma altına alan (şifreleme, pin ile koruma vs.) ilkelerle yapılandırmalarını zorunlu tutabilirsiniz.  Bu ilkeler, yönetilmeyen uygulamalara ve bu uygulamaların içindeki ve dışındaki depolama konumlarına veri kaybetmeyi önler.  Örneğin, ilkeler kullanıcın şirket e-posta profilinden tüketici e-posta profiline (her iki profil de Outlook Mobile içinde yapılandırılmış olsa bile) metin kopyalamasını önler.  KCG kullanıcılarınıza gereken diğer hizmetler ve uygulamalar için de benzer yapılandırmalar dağıtılabilir.
+Bir yönetici olarak, kullanıcıların Office mobil uygulamalarına Office 365’ten erişmelerini ve uygulamaları, verileri koruma altına alan (şifreleme, pin ile koruma vs.) ilkelerle yapılandırmalarını zorunlu tutabilirsiniz. Bu ilkeler, yönetilmeyen uygulamalara ve bu uygulamaların içindeki ve dışındaki depolama konumlarına veri kaybetmeyi önler. Örneğin, ilkeler kullanıcın şirket e-posta profilinden tüketici e-posta profiline (her iki profil de Outlook Mobile içinde yapılandırılmış olsa bile) metin kopyalamasını önler. KCG kullanıcılarınıza gereken diğer hizmetler ve uygulamalar için de benzer yapılandırmalar dağıtılabilir.
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 
 ## <a name="issue-corporate-owned-phones-to-your-information-workers"></a>Bilişim elemanlarınıza şirketin sahip olduğu telefonları verme
-Bugünlerde bilişim elemanlarının çoğunluğu mobil çalıştığından, rekabet üstünlüğü açısından mobil cihazlarda üretkenlik sağlamak bir zorunluluktur.  Bu çalışanların her zaman, gittikleri her yerde şirket uygulamalarına ve verilerine rahatça erişebilmeleri gerekir.  Şirket verilerinin güvenli ve yönetim maliyetlerinin düşük olmasını sağlamalısınız.  
+Bugünlerde bilişim elemanlarının çoğunluğu mobil çalıştığından, rekabet üstünlüğü açısından mobil cihazlarda üretkenlik sağlamak bir zorunluluktur. Bu çalışanların her zaman, gittikleri her yerde şirket uygulamalarına ve verilerine rahatça erişebilmeleri gerekir. Şirket verilerinin güvenli ve yönetim maliyetlerinin düşük olmasını sağlamalısınız.  
 
-Intune pazara sunulmuş olan Apple Cihaz Kayıt Programı ve Samsung KNOX mobil güvenlik platformu gibi başlıca şirket cihazı yönetim platformlarıyla tümleşik çalışan [toplu sağlama ve yönetim çözümleri](/intune/deploy-use/manage-corporate-owned-devices) sunar.  Intune’la merkezi cihaz yapılandırmaları yazma özelliği, şirket cihazlarının sağlanmasını üst düzeyde otomatik bir işlem haline getirmeye yardımcı olur.  
+Intune pazara sunulmuş olan Apple Cihaz Kayıt Programı ve Samsung KNOX mobil güvenlik platformu gibi başlıca şirket cihazı yönetim platformlarıyla tümleşik çalışan [toplu sağlama ve yönetim çözümleri](/intune/deploy-use/manage-corporate-owned-devices) sunar. Intune’la merkezi cihaz yapılandırmaları yazma özelliği, şirket cihazlarının sağlanmasını üst düzeyde otomatik bir işlem haline getirmeye yardımcı olur.  
 
 Şunu düşünün: çalışana açılmamış bir iPhone kutusu veriyorsunuz. Çalışan iPhone’u çalıştırıyor kendi kimliğini doğrulamasını gerektiren şirket markalı bir kurulum akışında ilerliyor. iPhone, [güvenlik ilkeleri](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) (şifreli sabit sürücü, cihaz pin’i gibi), [e-posta/Wi-Fi/VPN/sertifika profilleri](/intune/deploy-use/enable-access-to-company-resources-with-microsoft-intune) ve temel bir [uygulamalar](/intune/deploy-use/add-apps) kümesiyle rahatça yapılandırılıyor.
 
@@ -86,9 +86,9 @@ Ardından, çalışan kendine sağlanan isteğe bağlı şirket uygulamalarına 
 <!-- Learn more about how to plan and deploy Intune to support corporate owned devices. -->
 
 ## <a name="issue-limited-use-shared-tablets-to-your-task-workers"></a>Görevlerde çalışanlarınıza sınırlı kullanımı olan paylaşılan tabletler verme
-Görevlerde çalışanlar mobil teknolojileri giderek daha fazla kullanmaktadır.  Örneğin, paylaşılan tabletler mağaza çalışanları tarafından sıklıkla kullanılmaktadır.  İster satışı işlemek ister anında stok kontrolü yapmak için kullanılsın, tabletler harika müşteri etkileşimlerine yardımcı olur.
+Görevlerde çalışanlar mobil teknolojileri giderek daha fazla kullanmaktadır. Örneğin, paylaşılan tabletler mağaza çalışanları tarafından sıklıkla kullanılmaktadır.  İster satışı işlemek ister anında stok kontrolü yapmak için kullanılsın, tabletler harika müşteri etkileşimlerine yardımcı olur.
 
-Bu örnekte, kullanıcı deneyiminin basitliği kritik önem taşır.  Bu nedenle, tabletler çoğunlukla çalışanlara sınırlı kullanım modunda verilir. Bu sayede çalışan yalnızca tek bir iş kolu uygulamasıyla etkileşimli çalışabilir.  Intune, bu paylaşılan [iOS](/intune/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings) ve [Android](/intune/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy) tabletleri toplu olarak sağlamanıza, güvenlik altına almanıza ve merkezi olarak yönetmenize olanak tanır. Bu tabletler, sınırlı kullanım modunda çalışmaları için yapılandırılabilir.
+Bu örnekte, kullanıcı deneyiminin basitliği kritik önem taşır. Bu nedenle, tabletler çoğunlukla çalışanlara sınırlı kullanım modunda verilir. Bu sayede çalışan yalnızca tek bir iş kolu uygulamasıyla etkileşimli çalışabilir. Intune, bu paylaşılan [iOS](/intune/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings) ve [Android](/intune/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy) tabletleri toplu olarak sağlamanıza, güvenlik altına almanıza ve merkezi olarak yönetmenize olanak tanır. Bu tabletler, sınırlı kullanım modunda çalışmaları için yapılandırılabilir.
 
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
@@ -101,6 +101,6 @@ Bazen çalışanlarınızın sergi alanlarında ve otel lobilerindeki genel kull
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

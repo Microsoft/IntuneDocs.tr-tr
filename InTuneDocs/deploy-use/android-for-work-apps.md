@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/6/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 Android for Work cihazlara uygulama dağıtma işlemi, standart Android cihazlara dağıtmaktan farklı bir yolla yapılır. Android for Work için yüklediğiniz tüm uygulamalar Google Play for Work mağazasından gelir. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız.
 Uygulama daha sonra Intune konsolunun **Toplu Satın Alınan Uygulamalar** düğümünde görünür. Buradan, uygulamanın dağıtımını, herhangi başka bir uygulamanın dağıtımıyla aynı şekilde yönetebilirsiniz.
+
 Ayrıca, kendi iş kolu (LOB) uygulamalarınızı oluşturduysanız, onları dağıtabilirsiniz. Bunu yapmak için uygulamaları Google Play mağazasında özel bir alanda yayımlamanıza olanak tanıyan bir Google Geliştirici hesabına kaydolmanız ve bunları Intune ile eşitlemeniz gerekir.
 
 ## <a name="before-you-start"></a>Başlamadan önce
@@ -40,9 +40,9 @@ Ayrıca, kendi iş kolu (LOB) uygulamalarınızı oluşturduysanız, onları da�
 1. [Google Play for Work mağazasına](https://play.google.com/work) gidin. Intune ve Android for Work arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın.
 2. Intune kullanarak dağıtmak istediğiniz uygulamayı mağazada arayın.
 3. Seçtiğiniz uygulamanın sayfasında **Onayla**’yı seçin. Bu örnekte, Microsoft Excel uygulamasını seçtiniz.<br>
-  ![Uygulama onaylama örneği](/intune/deploy-use/media/approve.png)
+  ![Uygulama onaylama örneği](media/approve.png)
 4. Uygulamada bir pencere açılır ve çeşitli işlemler gerçekleştirmek için izin vermenizi ister. Devam etmek için **Onayla**’yı seçmeniz gerekir.<br>
-  ![Uygulama izinlerini onaylama örneği](/intune/deploy-use/media/approve-app-permissions.png)
+  ![Uygulama izinlerini onaylama örneği](media/approve-app-permissions.png)
 5. Kısa bir süre sonra, uygulamanın onaylandığını ve BT yönetim konsolunda kullanılabilir olduğunu belirten bir onay iletisi görürsünüz.
 
 ## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Google Play for Work mağazasında bir iş kolu uygulaması yayımlama ve ardından eşitleme
@@ -51,7 +51,7 @@ Ayrıca, kendi iş kolu (LOB) uygulamalarınızı oluşturduysanız, onları da�
 2. Intune ve Android for Work arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın. İlk kez oturum açıyorsanız, Google Geliştirici programının üyesi olmak için kaydolmanız ve bir ücret ödemeniz gerekir.
 3. Konsolda, **Yeni uygulama ekle**’yi seçin.
 4. Uygulamanızı karşıya yüklemek ve hakkında bilgi sağlamak, Google Play mağazasında herhangi bir uygulama yayımlamak ile aynı şekilde yapılır. Ancak, aşağıdaki gösterildiği gibi **Bu uygulama yalnızca kuruluşum tarafından kullanılabilsin (<*kuruluş adı*>)** ayarını seçmeniz gerekir.<br>
-  ![Uygulamayı yalnızca kuruluşunuz tarafından kullanılabilir hale getirme seçeneği](/intune/deploy-use/media/restrict.png)<br>
+  ![Uygulamayı yalnızca kuruluşunuz tarafından kullanılabilir hale getirme seçeneği](media/restrict.png)<br>
 Bu, uygulamanın yalnızca kuruluşunuz tarafından kullanılabilmesini ve genel Google Play mağazasında kullanılamamasını sağlar.
 Android uygulamalarını karşıya yükleme ve yayımlama hakkında daha fazla bilgi için bkz. [Google Geliştirici Konsolu Yardımı](https://support.google.com/googleplay/android-developer/answer/113469).
 5. Uygulamanızı yayımladıktan sonra, [Google Play for Work mağazası](https://play.google.com/work)’na gidin. Intune ve Android for Work arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın.
@@ -71,6 +71,6 @@ Uygulama dağıtıldıktan sonra, hedeflenen cihazlara yüklenir. Cihazın kulla
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
