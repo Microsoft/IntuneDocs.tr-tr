@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
@@ -42,9 +43,9 @@ Bu hızlı başlangıç kılavuzu aşağıdaki önkoşulları karşılıyorsanı
 Bu kılavuz, herhangi bir cihaz yönetimi çözümüne kaydolma gereksinimi olmadan, çalışanlarınızın hassas verilere erişmek için kullandığı mobil uygulamalarda kullanılan ilkelerle geçiş kodları ve veri şifrelemeyi zorunlu hale getirerek şirketinizi veri kaybından korumanıza yardımcı olabilir. Microsoft Intune, [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) ve [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android) için Office mobil uygulamalarında mobil uygulama yönetimi (MAM) ilkeleri ayarlamanıza olanak tanır. Bu yaklaşım, kullanıcıların cihazlarını bir mobil cihaz yönetimi çözümüne kaydetmelerini gerektirmeden O365 verilerini korurken Office mobil uygulamalarında da çok iyi bir son kullanıcı deneyimi sağlar.
 
 ## <a name="how-do-i-do-it"></a>Bunu nasıl yaparım?
-1.  [Uygulama verilerinizi nasıl koruyabileceğinizi gözden geçirme](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.  [Mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlama](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.  [Mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.    [Uygulama verilerinizi nasıl koruyabileceğinizi gözden geçirme](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.    [Mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlama](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.    [Mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Ek bilgiler:
 - [MAM etkin uygulamalar için Microsoft Intune ile son kullanıcı deneyimi hakkında bilgi edinin.](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)

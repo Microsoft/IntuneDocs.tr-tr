@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
@@ -42,13 +43,13 @@ Cihazınızı Intune’a kaydettikten sonra, BT yöneticinize cihazınızdaki ş
 
 -   Arama ve web geçmişi
 
--   Konum
+-    Konum
 
 -   E-posta ve kısa mesajlar
 
 -   Kişiler
 
--   Parolalar
+-    Parolalar
 
 -   Takvim
 

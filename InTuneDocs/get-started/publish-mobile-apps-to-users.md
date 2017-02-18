@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
@@ -32,9 +33,9 @@ Kullanıcılarınızın işlerinde verimli olması için gerek duydukları tüm 
 Yanıtınız evet ise, Microsoft Intune tek bir ortak portalda: [Intune Şirket Portalı uygulamasında veya web sitesinde](/intune/enduser/company-portal-frequently-asked-questions) (Office Mobile, iç iş kolu veya diğer mobil ve masaüstü uygulamalar) uygulama yayımlamanıza izin verir.
 
 ## <a name="how-do-i-do-it"></a>Bunu nasıl yaparım?
-1.  Intune mobil cihaz yönetimine [cihazları kaydedin](/intune/deploy-use/enroll-devices-in-microsoft-intune).
-2.  Kaydedilmiş cihazlara dağıtmak istediğiniz [uygulamaları Intune’a ekleyin](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune).
-3.  Kaydedilmiş cihazlara [Intune kullanarak uygulamaları dağıtın](/intune/deploy-use/deploy-apps).
+1.    Intune mobil cihaz yönetimine [cihazları kaydedin](/intune/deploy-use/enroll-devices-in-microsoft-intune).
+2.    Kaydedilmiş cihazlara dağıtmak istediğiniz [uygulamaları Intune’a ekleyin](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune).
+3.    Kaydedilmiş cihazlara [Intune kullanarak uygulamaları dağıtın](/intune/deploy-use/deploy-apps).
 
 ### <a name="additional-information"></a>Ek bilgiler:
 Office mobil uygulamasını yayımlama, bu uygulamalarda veri kaybı korumasını yönetmek üzere Intune’un MAM özelliklerini kullanmak amacıyla yapılıyorsa MAM ilkesi atanmış her son kullanıcıya bir [Office 365 için kullanıcı lisansı atanması](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) gerekir.

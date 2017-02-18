@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
@@ -34,8 +35,8 @@ Yanıtınız evet ise, Microsoft Intune, şirket e-postalarına erişimi el ile 
 E-posta profili yapılandırıldıktan sonra şirket e-postasına ve Office 365 hizmetlerine erişimi Intune koşullu erişim ilkeleriyle kolayca sınırlayabilirsiniz. Bu ilkeler, şirketinizin e-postasına ve Office 365 hizmetlerine erişimin Intune’da koyduğunuz kurallarla uyumlu cihazlarla sınırlı olduğundan emin olmanızı sağlar.
 
 ## <a name="how-do-i-do-it"></a>Bunu nasıl yaparım?
-1.  Windows, iOS ve Android cihazlarda otomatik olarak [son kullanıcı e-posta profilleri yapılandırın](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
-2.  Koşullu erişim ilkeleri kullanarak [şirket e-postasına erişimi denetleyin](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+1.    Windows, iOS ve Android cihazlarda otomatik olarak [son kullanıcı e-posta profilleri yapılandırın](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
+2.    Koşullu erişim ilkeleri kullanarak [şirket e-postasına erişimi denetleyin](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
 
 ### <a name="additional-information"></a>Ek bilgiler:

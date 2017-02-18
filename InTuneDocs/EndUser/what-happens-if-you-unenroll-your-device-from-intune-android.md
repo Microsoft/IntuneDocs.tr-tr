@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
@@ -30,7 +31,7 @@ Android cihazınızın Intune kaydını sildiğinizde:
 
 -   BT yöneticiniz artık cihazı yönetmez.
 
--   Şirket verilerine ve kaynaklarına erişimi kaybedersiniz.
+-    Şirket verilerine ve kaynaklarına erişimi kaybedersiniz.
 
 -   Cihazınız artık Şirket Portalı’nda gösterilmez.
 

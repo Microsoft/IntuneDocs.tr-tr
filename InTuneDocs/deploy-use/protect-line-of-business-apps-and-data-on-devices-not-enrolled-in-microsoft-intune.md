@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
@@ -46,7 +47,7 @@ Uygulama Sarmalama Aracı'nı ya da SDK'yı kullanma hakkında daha fazla bilgi 
 2. **İş kolu uygulamaları** dikey penceresinde **Özel uygulama ekle**'yi seçin.
 
   ![En üstünde Özel uygulama ekle düğmesiyle iş kolu uygulamaları dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Uygulama için bir ad, Uygulama Tanımlayıcısı alanına paket tanımlayıcısı ve platformu (iOS veya Android) girin.
+3.    Uygulama için bir ad, Uygulama Tanımlayıcısı alanına paket tanımlayıcısı ve platformu (iOS veya Android) girin.
 
   ![Özel uygulama ekle dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-add-app-details.png)
 
@@ -71,11 +72,11 @@ Uygulamanın adı veya Paket tanımlayıcısı gibi uygulama ayrıntılarını d
 ##  <a name="remove-apps"></a>Uygulamaları kaldırma
 Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz. Bu işlem uygulamayı listeden kaldırır ve MAM ilkeleriyle ilişkisini siler ancak uygulamayı kullanıcının cihazından kaldırmaz.  
 
-1.  [Azure portalında](https://portal.azure.com/) **Intune mobil uygulama yönetimi** > **Ayarlar**'a gidin. **Ayarlar** dikey penceresinde **İş kolu**’nu seçerek var olan uygulamalar listesini açın.  
-2.  Kaldırmak istediğiniz uygulamayı ve ardından **(…) bağlam** menüsünü seçin.
+1.    [Azure portalında](https://portal.azure.com/) **Intune mobil uygulama yönetimi** > **Ayarlar**'a gidin. **Ayarlar** dikey penceresinde **İş kolu**’nu seçerek var olan uygulamalar listesini açın.  
+2.    Kaldırmak istediğiniz uygulamayı ve ardından **(…) bağlam** menüsünü seçin.
 
   ![Üç noktalı iş kolu uygulamaları dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-lob-context-menu.png)
-3.  Uygulamayı silmek için **Uygulama Sil**’i seçin.
+3.    Uygulamayı silmek için **Uygulama Sil**’i seçin.
 
   ![Uygulamayı sil seçeneğiyle iş kolu uygulaması dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-delete-app.png)
 

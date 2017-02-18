@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
 ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
@@ -154,7 +155,7 @@ ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune kiracınız ve Cisco ISE sunucunuz arasında paylaşılan bilgiler
 Bu tabloda, Intune tarafından yönetilen cihazlar için, Intune kiracınız ve Cisco ISE sunucunuz arasında paylaşılan bilgiler listelenir.
 
-|Özellik|  Açıklama|
+|Özellik|    Açıklama|
 |---------------|------------------------------------------------------------|
 |complianceState|Cihazın uyumlu veya uyumsuz olduğunu belirten true veya false dizesi.|
 |isManaged|İstemcinin Intune tarafından yönetildiğini veya yönetilmediğini belirten true veya false dizesi.|

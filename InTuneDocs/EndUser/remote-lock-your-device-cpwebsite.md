@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
@@ -39,13 +40,13 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](http://po
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Cihazınızı kilitlemek üzere Uzaktan Kilitleme’yi kullanmak için
 
-1.  [Şirket Portalı web sitesinde,](http://portal.manage.microsoft.com) kilitlemek istediğiniz cihazın adına dokunun.
+1.    [Şirket Portalı web sitesinde,](http://portal.manage.microsoft.com) kilitlemek istediğiniz cihazın adına dokunun.
 
-2.  **Uzaktan Kilitleme**’ye dokunun.
+2.    **Uzaktan Kilitleme**’ye dokunun.
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Cihazınızı kilitlemek üzere olduğunuzu belirten bir bildirim görünecektir. **Uzaktan Kilitleme**’ye dokunduktan sonra Şirket Portalı web sitesi cihazınızı kilitlemeyi deneyecektir.
+3.    Cihazınızı kilitlemek üzere olduğunuzu belirten bir bildirim görünecektir. **Uzaktan Kilitleme**’ye dokunduktan sonra Şirket Portalı web sitesi cihazınızı kilitlemeyi deneyecektir.
 
     **Uzaktan Kilitleme**’ye dokunduğunuzda, "Uzaktan kilitleme bekliyor" iletisi görünür.  Uzaktan Kilitleme başarılı olduğunda, durum "Uzaktan kilitleme için başarılı." olarak değişir.
 

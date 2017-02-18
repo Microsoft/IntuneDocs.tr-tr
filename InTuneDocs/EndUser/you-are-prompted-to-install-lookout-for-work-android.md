@@ -14,6 +14,7 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
@@ -30,13 +31,13 @@ Yükleme ile ilgili sorun yaşıyorsanız, bu konunun sonundaki sorun giderme ad
 
 **Yapmanız gerekenler:**
 
-1.  Bildirimler çubuğunu açmak için ekranın en üstünden aşağı doğru sürükleyin ve ardından **Gerekli uygulama – Play Store’dan Lookout for Work’ü Yükle**’ye tıklayın.
+1.    Bildirimler çubuğunu açmak için ekranın en üstünden aşağı doğru sürükleyin ve ardından **Gerekli uygulama – Play Store’dan Lookout for Work’ü Yükle**’ye tıklayın.
 
     ![Lookout for Work uygulamasını yüklemeniz gerekir](./media/lookout-required-app-install-android.png)
 
     Play Store’da Lookout for Work yükleme sayfasına gelirsiniz.
 
-2.  Lookout for Work’ü yükleyin ve Lookout for Work uygulamasının cihazınıza erişmesine izin vermek için **KABUL ET**’e dokunun.
+2.    Lookout for Work’ü yükleyin ve Lookout for Work uygulamasının cihazınıza erişmesine izin vermek için **KABUL ET**’e dokunun.
 
     ![Lookout for Work’ün cihazınıza erişmesine izin vermek için kabul et’e dokunun](./media/lookout-accept-store-permissions-android.png)
 

@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
 ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
@@ -57,22 +58,22 @@ Intune Uygulama SDK'sı Xamarin Bileşeni ile derlenen Xamarin uygulamaları art
 
 ## <a name="get-started"></a>Başlarken
 
-1.  **Xamarin-component.exe** dosyasını [buradan](https://components.xamarin.com/submit/xpkg) indirin ve ayıklayın.
+1.    **Xamarin-component.exe** dosyasını [buradan](https://components.xamarin.com/submit/xpkg) indirin ve ayıklayın.
 
 2. Microsoft Intune MAM Xamarin Bileşeni [lisans koşullarını](https://components.xamarin.com/license/microsoft.intune.mam) okuyun.
 
-3.  Intune Uygulama SDK'sı Xamarin Bileşeni klasörünü [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) veya [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam)'den indirin ve ayıklayın. 1. ve 2. adımlarda indirdiğiniz dosyaların aynı dizin düzeyinde olması gerekir.
+3.    Intune Uygulama SDK'sı Xamarin Bileşeni klasörünü [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) veya [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam)'den indirin ve ayıklayın. 1. ve 2. adımlarda indirdiğiniz dosyaların aynı dizin düzeyinde olması gerekir.
 
-4.  Komut satırında yönetici olarak `Xamain.Component.exe install <.xam> file` komutunu çalıştırın.
+4.    Komut satırında yönetici olarak `Xamain.Component.exe install <.xam> file` komutunu çalıştırın.
 
-5.  Visual Studio'da önceden oluşturduğunuz Xamarin projesinde **bileşenler** öğesine sağ tıklayın.
+5.    Visual Studio'da önceden oluşturduğunuz Xamarin projesinde **bileşenler** öğesine sağ tıklayın.
 
-6.  **Bileşenleri Düzenle**'yi seçin ve bilgisayarınıza indirdiğiniz Intune Uygulama SDK'sı bileşenini ekleyin.
+6.    **Bileşenleri Düzenle**'yi seçin ve bilgisayarınıza indirdiğiniz Intune Uygulama SDK'sı bileşenini ekleyin.
 
 
 
 ## <a name="enabling-intune-mam-in-your-ios-mobile-app"></a>iOS mobil uygulamanızda Intune MAM özelliklerini etkinleştirme
-1.  Intune Uygulama SDK'sını başlatmak için `AppDelegate.cs` sınıfındaki API'lerden birini çağırmanız gerekir. Örneğin:
+1.    Intune Uygulama SDK'sını başlatmak için `AppDelegate.cs` sınıfındaki API'lerden birini çağırmanız gerekir. Örneğin:
 
       ```csharp
       public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
@@ -83,7 +84,7 @@ Intune Uygulama SDK'sı Xamarin Bileşeni ile derlenen Xamarin uygulamaları art
 
       ```
 
-2.  Bileşen ekleyip başlattınız. Şimdi Uygulama SDK'sını iOS mobil uygulamasına eklemek için gerekli genel adımları uygulayabilirsiniz. Yerel iOS uygulamalarını etkinleştirme hakkında ayrıntılı bilgileri [iOS için Intune Uygulama SDK'sı Geliştirici Kılavuzu](intune-app-sdk-ios.md)'nda bulabilirsiniz.
+2.    Bileşen ekleyip başlattınız. Şimdi Uygulama SDK'sını iOS mobil uygulamasına eklemek için gerekli genel adımları uygulayabilirsiniz. Yerel iOS uygulamalarını etkinleştirme hakkında ayrıntılı bilgileri [iOS için Intune Uygulama SDK'sı Geliştirici Kılavuzu](intune-app-sdk-ios.md)'nda bulabilirsiniz.
 3. **Önemli**: Xamarin tabanlı iOS uygulamalarınıza özgü birden fazla değişiklik vardır. Örneğin, anahtar zinciri gruplarını etkinleştirmek için bileşene eklediğimiz Xamarin örnek uygulamasını dahil etmek üzere aşağıdakileri eklemeniz gerekir. Anahtar Zinciri Erişim gruplarınızda olması gereken grupların örneği aşağıda verilmiştir:
 
       ```xml
@@ -109,15 +110,15 @@ UI çerçevesi kullanmayan Xamarin tabanlı Android uygulamaları için [Android
 
 Xamarin.Forms ve diğer UI çerçeveleri için `MAM.Remapper` adında bir araç sunuyoruz. Bu araç, sınıf değişikliklerini sizin için yapacaktır. Ancak aşağıdaki adımları sizin uygulamanız gerekir:
 
-1.  ` Microsoft.Intune.MAM.Remapper.Tasks` nuget paketi sürüm 0.1.0.0 veya üzeri için başvuru ekleyin.
+1.    ` Microsoft.Intune.MAM.Remapper.Tasks` nuget paketi sürüm 0.1.0.0 veya üzeri için başvuru ekleyin.
 
-2.  Android csproj dosyanıza şu satırı ekleyin:
+2.    Android csproj dosyanıza şu satırı ekleyin:
   ```xml
   <Import
   Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
-3.  Eklediğiniz `remapping-config.json` dosyasının derleme eylemini **RemappingConfigFile** olarak ayarlayın. Dahil edilen `remapping-config.json` yalnızca Xamarin.Forms ile çalışır. Diğer UI çerçeveleri için Remapper nuget paketindeki BeniOku dosyasına bakın.
+3.    Eklediğiniz `remapping-config.json` dosyasının derleme eylemini **RemappingConfigFile** olarak ayarlayın. Dahil edilen `remapping-config.json` yalnızca Xamarin.Forms ile çalışır. Diğer UI çerçeveleri için Remapper nuget paketindeki BeniOku dosyasına bakın.
 
 ## <a name="test-your-app"></a>Uygulamanızı test etme
 

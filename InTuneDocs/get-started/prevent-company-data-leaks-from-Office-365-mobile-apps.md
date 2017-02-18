@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 0288ecd940d650304d83b7dd5803a56f69b936f7
@@ -32,9 +33,9 @@ Son kullanıcılarınızın bir Mobil Cihaz Yönetimi (MDM) çözümüne cihaz k
 Yanıtınız evet ise, Microsoft Intune, iOS ve Android cihazlarda Office 365 mobil uygulamaları için kes/kopyala/yapıştır kısıtlamaları koyma, ‘farklı-kaydet’ işlevini engelleme, PIN gereksinimlerini ayarlama ve MAM ile korunan verileri uzaktan silme olanağı gibi MAM ilkeleri belirlemenize izin verir.  Bu özellik, kullanıcıların cihazlarını bir MDM çözümüne kaydetmelerini gerektirmeden şirket verilerini korurken Office mobil uygulamalarında da çok iyi bir kullanıcı deneyimi sağlar.
 
 ## <a name="how-do-i-do-it"></a>Bunu nasıl yaparım?
-1.  [Intune mobil uygulama yönetiminin (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) nasıl çalıştığını temel düzeyde anlayın.
-2.  Azure portalında [MAM ilkeleri oluşturmak için önce neler yapmanız gerektiğini](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) öğrenin.
-3.  Intune ile [MAM ilkeleri oluşturun ve dağıtın](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
+1.    [Intune mobil uygulama yönetiminin (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) nasıl çalıştığını temel düzeyde anlayın.
+2.    Azure portalında [MAM ilkeleri oluşturmak için önce neler yapmanız gerektiğini](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) öğrenin.
+3.    Intune ile [MAM ilkeleri oluşturun ve dağıtın](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
 
 ### <a name="additional-information"></a>Ek bilgiler:
 - MAM etkinleştirilmiş uygulamalarla [son kullanıcı deneyimi](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune).

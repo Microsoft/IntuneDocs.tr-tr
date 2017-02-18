@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
 ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
@@ -71,7 +72,7 @@ Bu özelliklerin işletim sistemi veri koruma özellikleriyle (örneğin, Window
 Intune'u diğer EMS hizmetleriyle birlikte kullanarak kuruluşunuz için mobil işletim sistemi ve uygulama yapılandırması yoluyla mobil uygulamalar tarafından sunulandan daha fazla mobil uygulama güvenliği seçeneğine sahip olabilirsiniz. EMS üzerinden yönetilen uygulamalar, aşağıdakiler de dahil olmak üzere daha fazla mobil uygulama ve veri koruma özelliğine sahip olur:
 
 * [Çoklu oturum açma](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Çok faktörlü kimlik doğrulaması](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
+*    [Çok faktörlü kimlik doğrulaması](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
 * [Uygulamaya koşullu erişim (mobil uygulamada kurumsal veriler varsa erişim izni ver)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
 * [Aynı uygulamadaki kurumsal verileri kişisel verilerden ayırma](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [Uygulama koruma ilkesi (PIN, şifreleme, farklı kaydet, pano vs.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
