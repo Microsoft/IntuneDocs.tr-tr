@@ -2,8 +2,8 @@
 title: "Cihaz tehdit koruması kullanarak erişimi koruma | Microsoft Docs"
 description: "Cihaz, ağ ve uygulama riskine dayalı olarak şirket kaynaklarına erişimi koruyun."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: eaf121f99dddab6f7c45c58ca9decf2504b00f67
+ms.sourcegitcommit: 931f222898a224c2f646ad203f12676c39b78946
+ms.openlocfilehash: aaa0965c2bd4d4093da0c57eaa2e3bd05eb6779a
 
 
 ---
@@ -97,14 +98,14 @@ Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Bu çözümü uygulamak için yapılması gereken ana adımlar şunlardır:
-1.  [Lookout mobil tehdit koruması aboneliğinizi ayarlama](set-up-your-subscription-with-lookout-mtp.md)
-2.  [Intune’da Lookout MTP bağlantısını etkinleştirme](enable-lookout-mtp-connection-in-intune.md)
-3.  [Lookout for Work uygulamasını yapılandırma ve dağıtma](configure-and-deploy-lookout-for-work-apps.md)
-4.  [Uyumluluk ilkesini yapılandırma](enable-device-threat-protection-rule-in-compliance-policy.md)
-5.  [Lookout Tümleştirmesi sorunlarını giderme](http://docs.microsoft.com/en-us/intune/troubleshoot/troubleshooting-lookout-integration)
+1.    [Aboneliğinizi cihaz tehdit koruması ile ayarlama](device-threat-protection-subscription-setup.md)
+2.    [Intune’da cihaz tehdit koruma bağlantısını etkinleştirme](device-threat-protection-enable.md)
+3.  [Cihaz tehdit koruma uygulamasını yapılandırma ve dağıtma](device-threat-protection-apps.md)
+4.    [Cihaz tehdit koruması uyumluluk ilkesini yapılandırma](device-threat-protection-policy.md)
+5.    [Cihaz tehdit koruma tümleştirmesinde sorun giderme](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
