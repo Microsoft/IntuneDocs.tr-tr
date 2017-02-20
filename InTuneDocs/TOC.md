@@ -6,6 +6,7 @@
 ### [İlke oluşturma ve uygulama yayımlama](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Diğer seçenekler ve ek özellikler](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Ücretli aboneliğe dönüştürme](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [MAM ve uygulama koruması SSS](understand-explore/mam-faq.md)
 ## [Yaygın senaryolar](understand-explore/common-ways-to-use-intune.md)
 
 
@@ -78,6 +79,7 @@
 ## Cihazları yapılandırma
 ### [İlkelerle cihazlarınızda ayarları ve özellikleri yönetme](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS ayarları](deploy-use/ios-policy-settings-in-microsoft-intune.md)
+#### [Yönetilen iOS cihazlarını geri yükleme](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android be Samsung KNOX ayarları](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için bir özel ilke kullanma](deploy-use/pre-shared-key-wi-fi-profile.md)
 ##### [Özel ilke kullanarak Android cihazlar için uygulama başına VPN profili oluşturma](deploy-use/per-app-vpn-for-android-pulse-secure.md)
@@ -106,7 +108,7 @@
 
 ## [Cihazları koruma](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Uzaktan kilitleme ve geçiş kodu sıfırlama](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [MFA ile Windows cihazlarını denetleme](deploy-use/multi-factor-authentication-azure-active-directory.md)
+### [Cihazları çok faktörlü kimlik doğrulaması ile koruma](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [İş İçin Windows Hello ayarlarını denetleme](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [iOS’ta Etkinleştirme Kilidini Atlama](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Windows bilgisayarlarını koruma ilkeleri](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -139,7 +141,7 @@
 ## [Uygulamaları ve verileri koruma](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Cihaz uyumluluğu ilkeleri](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Cihaz uyumluluğu ilkesi oluşturma](deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [ Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
 #### [Android for Work](deploy-use/afw-compliance-policy-settings-in-microsoft-intune.md)
 #### [iOS](deploy-use/ios-compliance-policy-settings-in-microsoft-intune.md)
 #### [Windows ve Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -172,6 +174,7 @@
 #### [iOS için uygulama koruma ilkeleri](deploy-use/ios-mam-policy-settings.md)
 #### [Uygulama koruma ilkelerini doğrulama](deploy-use/validate-mobile-application-management.md)
 #### [Uygulama koruma ilkesi uyumluluğunu izleyin](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 #### [iOS uygulamaları arasında veri aktarımını yönetme](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [MAM ilkeleri için Intune yönetim konsolu](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -182,17 +185,16 @@
 #### [Intune tarafından yönetilmeyen cihazlardaki LOB uygulamaları](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Uygulama yazarken SDK'yı kullanma](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [MAM ve uygulama koruması SSS](deploy-use/mam-faq.md)
 
 ## Uygulamaları ve veriler devre dışı bırakma
 ### [Tam veya seçmeli silme kullanma](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 ### [Uygulamaları devre dışı bırakma](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Yönetilen şirket uygulama verilerini silme](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Son kullanıcı deneyimi hakkında kaynaklar](deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
-### [Yönetilen iOS cihazlarını geri yükleme](deploy-use/restore-managed-ios-devices-from-backup.md)
-### [MAM ilkeleri içeren Android uygulamaları](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [MAM ilkeleri içeren iOS uygulamaları](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+## [Son kullanıcılarınızı Intune hakkında nasıl bilgilendirebilirsiniz](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
+### [Android kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-android-users-get-their-apps.md)
+### [iOS kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Windows kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Uygulama Geliştirme ve Özelleştirme
 ## [Microsoft Intune Uygulama SDK'sına Genel Bakış](develop/intune-app-sdk.md)
@@ -222,6 +224,6 @@
 # [Sözlük](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
