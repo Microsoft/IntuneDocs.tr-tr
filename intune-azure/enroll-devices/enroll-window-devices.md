@@ -4,7 +4,7 @@ description: "Intune Azure önizlemesi: Windows cihazları için Intune mobil ci
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 02/09/17
+ms.date: 02/15/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
-ms.openlocfilehash: ec623e7d102e8a8ddf1cc86a750f592ca765cfce
+ms.sourcegitcommit: a4103a4cef393df585b9b9daa92ab63dd7805e9e
+ms.openlocfilehash: a55118e60750616f8b058846148364cbeccb5784
 
 
 ---
@@ -25,13 +25,12 @@ ms.openlocfilehash: ec623e7d102e8a8ddf1cc86a750f592ca765cfce
 
 Windows cihazlarında kaydı ayarlamak için aşağıdaki yöntemlerden birini kullanın:
 
-- **[Azure Active Directory Premium ile Windows 10 ve Windows 10 Mobile otomatik kaydı](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+- [**Azure Active Directory Premium ile Windows 10 ve Windows 10 Mobile otomatik kaydı**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
  -  Bu yöntem yalnızca Windows 10 ve Windows 10 Mobile cihazları için geçerlidir.
  -  Bu yöntemi kullanabilmeniz için Azure Active Directory Premium’a sahip olmanız gerekir. Aksi takdirde, Windows 8.1 ve Windows Phone 8.1 için verilen kayıt yöntemini kullanın.
  -  Otomatik kaydı etkinleştirmemeyi seçerseniz, Windows 8.1 ve Windows Phone 8.1 için verilen kayıt yöntemini kullanın.
 
-
-- **[CNAME’yi yapılandırarak Windows 8.1 ve Windows Phone 8.1 kaydı](#set-up-windows-8.1-and-windows-phone-8.1-enrollment-by-configuring-cname)** 
+- [**CNAME’yi yapılandırarak Windows 8.1 ve Windows Phone 8.1 kaydı**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
  - Windows 8.1 ve Windows Phone 8.1 cihazlarının kaydını yapmak için bu yöntemi kullanmalısınız.
 
 
@@ -54,8 +53,6 @@ Kullanıcıların, Intune Şirket Portalı’nı kullanarak cihazlarını yükle
  Şirketinizin etki alanı için **CNAME** DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden enterpriseenrollment-s.manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz.
 
     CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. CNAME kaydı bulunamazsa, kullanıcıların MDM sunucu adını (enrollment.manage.microsoft.com) el ile girmesi istenir.
-
-    DNS'de EnterpriseEnrollment.contoso.com adresini manage.microsoft.com adresine yönlendiren bir CNAME kaydınız varsa, bunun yerine DNS'de EnterpriseEnrollment.contoso.com adresini enterpriseenrollment-s.manage.microsoft.com adresine yönlendiren bir CNAME oluşturmanızı öneririz. Bu değişikliğin önerilmesinin nedeni, manage.microsoft.com uç noktasının gelecek sürümlerin birinde kayıt için kullanım dışı bırakılacak olmasıdır.
 
     Birden fazla doğrulanan etki alanı varsa, her bir etki alanı için bir CNAME kaydı oluşturun. CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
 
@@ -88,6 +85,6 @@ Cihazlara Şirket Portalı’nı dağıtmayacaksanız, başka bir işlem yapmak 
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

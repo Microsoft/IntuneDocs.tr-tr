@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
-ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
@@ -55,7 +56,7 @@ Intune’da kayıtlı olmayan cihazlarda MAM için Uygulama Sarmalama Aracı hak
 ## <a name="intune-app-sdk"></a>Intune Uygulama SDK'sı
 Uygulama SDK'sı temel olarak App Store veya Google Play Store’da uygulamaları olan ve uygulamaları Intune ile yönetebilmek isteyen müşteriler için tasarlanmıştır. Ancak, bir iş kolu uygulaması olsa bile SDK’yı tümleştirme özelliğinden her uygulama yararlanabilir.
 
-SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](/intune/develop/intune-app-sdk). SDK’yı kullanmaya başlamak için bkz. [Microsoft Intune Uygulama SDK’sını Kullanmaya Başlama](/intune/develop/intune-app-sdk-get-started).
+SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](../develop/intune-app-sdk.md). SDK’yı kullanmaya başlamak için bkz. [Microsoft Intune Uygulama SDK’sını Kullanmaya Başlama](../develop/intune-app-sdk-get-started.md).
 
 ### <a name="reasons-to-use-the-sdk"></a>SDK kullanma nedenleri
 * Uygulamanız yerleşik veri koruma özelliklerine sahip değil.
@@ -69,8 +70,8 @@ SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](/intune/develo
 
 |**Intune Uygulama SDK'sı** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Evet – [Intune Uygulaması SDK Xamarin Bileşenini](/../develop/intune-app-sdk-xamarin) kullan.|Evet – [Intune Uygulaması SDK Cordova Eklentisini](/../develop/intune-app-sdk-cordova) kullan.|
-|**Android**| Evet – [Intune Uygulaması SDK Xamarin Bileşenini](/../develop/intune-app-sdk-xamarin) kullan.|Evet – [Intune Uygulaması SDK Cordova Eklentisini](/../develop/intune-app-sdk-cordova) kullan.|
+|**iOS**|Evet – [Intune Uygulaması SDK Xamarin Bileşenini](../develop/intune-app-sdk-xamarin.md) kullan.|Evet – [Intune Uygulaması SDK Cordova Eklentisini](../develop/intune-app-sdk-cordova.md) kullan.|
+|**Android**| Evet – [Intune Uygulaması SDK Xamarin Bileşenini](../develop/intune-app-sdk-xamarin.md) kullan.|Evet – [Intune Uygulaması SDK Cordova Eklentisini](../develop/intune-app-sdk-cordova.md) kullan.|
 
 ## <a name="feature-comparison"></a>Özellik karşılaştırması
 Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğiniz ayarlar listelenmektedir.
