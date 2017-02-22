@@ -14,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 7cef6b6eac01c0056f7c75a7010ee280932a5dfb
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 
 
 ---
@@ -56,8 +56,8 @@ Intune istemci yazılımının kullanıcılar tarafından yüklendiği yöntemle
 
 Yazılım istemcisinin yükleneceği bilgisayarlarda, istemci yazılımı yükleme dosyalarının bulunduğu klasöre gidin. Ardından, istemci yazılımını yüklemek için **Microsoft_Intune_Setup.exe**'yi çalıştırın.
 
-    > [!NOTE]
-    > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
+> [!NOTE]
+> İstemci bilgisayarın görev çubuğundaki simgenin üzerine geldiğinizde yükleme durumu görüntülenir.
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>İstemci yazılımını Grup İlkesi kullanarak dağıtma
 
@@ -74,7 +74,7 @@ Yazılım istemcisinin yükleneceği bilgisayarlarda, istemci yazılımı yükle
 
 3.  Yazılımı ağınızdaki bilgisayarlara dağıtmak için Grup İlkesi'ni kullanın.
 
-    Otomatik olarak yazılım dağıtmak için Grup İlkesi'ni kullanma hakkında daha fazla bilgi için Windows Server belgelerinize bakın.
+    Otomatik olarak yazılım dağıtmak için Grup İlkesi'ni kullanma hakkında daha fazla bilgi için, bkz. [Yeni Başlayanlar için Grup İlkesi](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>İstemci yazılımını bir görüntünün parçası olarak dağıtma
 Aşağıdaki yordamı örnek alarak Intune istemci yazılımını bilgisayarlara bir işletim sistemi görüntüsünün parçası olarak dağıtabilirsiniz:
@@ -100,11 +100,11 @@ Aşağıdaki yordamı örnek alarak Intune istemci yazılımını bilgisayarlara
 
 5.  Başvuru bilgisayarının bir görüntüsünü yakalayın ve bu görüntüyü hedef bilgisayarlara dağıtın.
 
-Windows Kur tamamlandıktan sonra hedef bilgisayar yeniden başlatıldığında, **WindowsIntuneEnrollPending** kayıt defteri anahtarı oluşturulur. Kayıt paketi, bilgisayarın kayıtlı olup olmadığını denetler. Bilgisayar kayıtlıysa, başka eyleme gerek yoktur. Bilgisayar kayıtlı değilse, kayıt paketi bir Microsoft Intune Otomatik Kayıt Görevi oluşturur.
+    Windows Kur tamamlandıktan sonra hedef bilgisayar yeniden başlatıldığında, **WindowsIntuneEnrollPending** kayıt defteri anahtarı oluşturulur. Kayıt paketi, bilgisayarın kayıtlı olup olmadığını denetler. Bilgisayar kayıtlıysa, başka eyleme gerek yoktur. Bilgisayar kayıtlı değilse, kayıt paketi bir Microsoft Intune Otomatik Kayıt Görevi oluşturur.
 
-Otomatik kayıt görevi bir sonraki zamanlanan saatte çalıştığında, **WindowsIntuneEnrollPending** kayıt defteri değerinin var olup olmadığını denetler ve hedeflenen bilgisayarı Intune’a kaydetmeye çalışır. Kayıt herhangi bir nedenden dolayı başarısız olursa, görev bir daha çalıştığında kayıt yeniden denenir. Yeniden deneme işlemleri bir ay devam eder.
+    Otomatik kayıt görevi bir sonraki zamanlanan saatte çalıştığında, **WindowsIntuneEnrollPending** kayıt defteri değerinin var olup olmadığını denetler ve hedeflenen bilgisayarı Intune’a kaydetmeye çalışır. Kayıt herhangi bir nedenden dolayı başarısız olursa, görev bir daha çalıştığında kayıt yeniden denenir. Yeniden deneme işlemleri bir ay devam eder.
 
-Intune Otomatik Kayıt Görevi, **WindowsIntuneEnrollPending** kayıt defteri değeri ve hesap sertifikası, kayıt başarılı olduğunda veya bir ay sonra (hangisi önce geliyorsa) hedeflenen bilgisayardan silinir.
+    Intune Otomatik Kayıt Görevi, **WindowsIntuneEnrollPending** kayıt defteri değeri ve hesap sertifikası, kayıt başarılı olduğunda veya bir ay sonra (hangisi önce geliyorsa) hedeflenen bilgisayardan silinir.
 
 ## <a name="instruct-users-to-self-enroll"></a>Kullanıcıdan kendi kendine kaydolmasını isteme
 
@@ -143,6 +143,6 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 
