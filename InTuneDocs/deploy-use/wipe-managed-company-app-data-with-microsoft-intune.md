@@ -2,10 +2,10 @@
 title: "Yönetilen şirket uygulama verilerini silme | Microsoft Docs"
 description: "Şirket verilerini cihazlardan uzaktan seçmeli olarak nasıl kaldırabileceğinizi öğrenin."
 keywords: 
-author: stabar
-ms.author: staciebarker
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,56 +13,81 @@ ms.technology:
 ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 89f5dc1581571cfcb6e03b5dce740bc7f8a8a9ce
-ms.openlocfilehash: a02a015ce1208ee5fa081e60ce0b88c69d4efa50
+ms.sourcegitcommit: 8a3e8634769b05e6639f7efb6394b7333d998f06
+ms.openlocfilehash: 5d5cde748aa8fa464526d0dc2b2ef9ee460fff9d
 
 
 ---
 
-# <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Microsoft Intune ile yönetilen şirket uygulama verilerini silme
+# <a name="wipe-company-app-data-with-intune-mam"></a>Intune MAM ile şirket uygulama verilerini temizleme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıldığında, şirket uygulama verilerinin cihazdan kaldırıldığından emin olmak istersiniz. Ancak, özellikle de çalışanın kendi cihazından kişisel verilerin kaldırılmasını istemeyebilirsiniz.
 
 Şirket uygulaması verilerini seçmeli olarak silmek için bu konu başlığındaki adımları kullanarak bir silme isteği oluşturun. İstek tamamlandıktan sonra, uygulama cihaz üzerinde ilk kez çalıştığında şirket verileri uygulamadan kaldırılır.
->[!NOTE]
+
+>[!IMPORTANT]
 > Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. Şu anda bu özellik yalnızca Microsoft Outlook uygulaması için geçerlidir.
-
-
 
 ## <a name="create-a-wipe-request"></a>Temizleme isteği oluşturma
 
-1.  Azure portalında oturum açın ve **Daha Fazla Hizmetler** > **Diğer** > **Intune**’ı seçin.
+1.  [Azure portalı](https://portal.azure.com)’nda oturum açın.
 
-2.  Intune dikey penceresinde **Uygulamaları yönetme**’yi seçin.
+2.  **Diğer Hizmetler**’i seçin, filtre metin kutusuna **Intune** yazın ve **Intune Uygulama Koruması**’nı seçin. Intune mobil uygulama yönetimi dikey penceresi açılır.
 
-3.  **Yeni silme istekleri**’ni seçin. **Yeni temizleme isteği** dikey penceresi açılır.
+    ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](../media/AppManagement/wipe-request-mam-main-blade.png)
+
+2.  **Ayarlar** dikey penceresinde **Temizleme istekleri**’ni seçin.
+
+3.  **Yeni temizleme isteği**’ni seçin. **Yeni temizleme isteği** dikey penceresi açılır.
 
     ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
 4.  **Kullanıcı**'yı seçerek **Kullanıcı** dikey penceresini açın ve uygulama verilerini temizlemek istediğiniz kullanıcıyı seçin.
 
-5.  **Cihaz**’ı seçin.  Bu, seçili kullanıcıyla ilişkili tüm cihazları listeleyen **Cihaz** dikey penceresini açar.  Silmek istediğiniz cihazı seçin.
+5.  **Cihaz**’ı seçin. Bu, seçilen kullanıcıyla ilişkilendirilmiş tüm cihazları listeleyen ve aynı zamanda biri cihaz adı (kullanıcı tarafından tanımlanan kolay ad) ve diğeri de cihaz türü (cihaz platformu) olmak üzere iki sütun sağlayan **Cihaz** dikey penceresini açar. Silmek istediğiniz cihazı seçin.
 
-6.  Şimdi **Yeni temizleme isteği** dikey penceresine geri dönersiniz. Temizleme isteğinde bulunmak için **Tamam**’ı seçin. Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur ve bu istekleri izler.
+6.  Şimdi **Yeni temizleme isteği** dikey penceresine geri dönersiniz. Temizleme isteğinde bulunmak için **Tamam**’ı seçin. 
 
-![Temizleme istekleri kutucuğunun ekran görüntüsü ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
+Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur ve bu isteklerle temizleme isteği ile ilişkilendirilmiş kullanıcıyı izler.
+
+>[!NOTE]
+> Intune mobil uygulama yönetimi dikey penceresinde **Temizleme isteği kutucuğuna** tıklayarak da **Temizleme istekleri** oluşturabilirsiniz.
 
 ## <a name="monitor-your-wipe-requests"></a>Silme isteklerinizi izleme
 
-**Silme isteği** kutucuğunda, silme isteğinin genel durumunu gösteren özetlenmiş bir rapor vardır ve bekleyen isteklerin ve hataların sayısını içerir. Daha fazla bilgi almak için şu adımları izleyin:
+Temizleme isteğinin genel durumunu gösteren ve bekleyen isteklerle hataların sayısını içeren bir özet raporunuz olabilir. Daha fazla bilgi almak için şu adımları izleyin:
 
-1.  Intune dikey penceresinde **Uygulamaları yönetme**’yi seçin.
+1.  Intune mobil uygulama yönetimi dikey penceresinde **Temizleme istekleri** kutucuğuna tıklayın.
 
 2.  **Silme isteği** dikey penceresinde, **Silme isteği** dikey penceresini açmak için **Silme isteği**kutucuğunu seçin.
 
 3.  **Temizleme isteği** dikey penceresinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
 
-Silmenin gerçekleşmesi için kullanıcı uygulamayı açmalıdır ve silme işlemi, istekte bulunulduktan sonra 30 dakikaya kadar zaman alabilir.
+    ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](../media/AppManagement/wipe-request-status-1.png)
 
-Bekleme durumundaki silmeler, siz bunları elle silinceye kadar görüntülenir.  Bir silme isteğini elle silmek için isteğe sağ tıklayın ve silmeyi seçin.
+Buna ek olarak, cihaz adını ve cihaz türünü görebilirsiniz; bunlar raporları okurken yararlı olabilir.
+
+>[!IMPORTANT]
+> Silmenin gerçekleşmesi için kullanıcı uygulamayı açmalıdır ve silme işlemi, istekte bulunulduktan sonra 30 dakikaya kadar zaman alabilir.
+
+## <a name="delete-a-wipe-request"></a>Temizleme isteğini silme
+
+Bekleme durumundaki silmeler, siz bunları elle silinceye kadar görüntülenir.  Temizleme isteğini el ile silmek için
+
+1.  Intune mobil uygulama yönetimi dikey penceresinde **Temizleme istekleri** kutucuğuna tıklayın.
+
+2.  **Silme isteği** dikey penceresinde, **Silme isteği** dikey penceresini açmak için **Silme isteği**kutucuğunu seçin.
+
+3.  Silmek istediğiniz temizleme isteğine sağ tıklayın ve **Temizleme isteğini sil**’i seçin.
+
+    ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](../media/AppManagement/delete-wipe-request.png)
+
+4.  Silme işlemini onaylamanız istenir; **Evet** veya **Hayır**’ı seçin, sonra da **Tamam**’a tıklayın.
+
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -71,6 +96,6 @@ Bekleme durumundaki silmeler, siz bunları elle silinceye kadar görüntülenir.
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Azure AD kullanarak çok faktörlü kimlik doğrulaması | Microsoft Docs"
+title: "Intune cihaz kayıtları için çok faktörlü kimlik doğrulaması| Microsoft Docs"
 description: "Azure AD’de cihaz kaydı için çok faktörlü kimlik doğrulaması isteme."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angerobe
-ms.date: 12/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -13,26 +13,31 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: 
 translationtype: Human Translation
-ms.sourcegitcommit: 85462d6cb5e3dc6ce8e94fe8fd1bc1c1c2b6e4f3
-ms.openlocfilehash: 6e20eca60886781ae884107a224245639c5f107c
+ms.sourcegitcommit: 30ed470200a830caa3c31be284f27e4b2347a71a
+ms.openlocfilehash: fa14ab5d4297a31d80b48611708e8a78d7513b8d
 
 
 ---
 
-# <a name="multi-factor-authentication-for-microsoft-intune"></a>Microsoft Intune için Multi-Factor Authentication
+# <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Intune cihaz kayıtları için çok faktörlü kimlik doğrulaması
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune, şirket kaynaklarınızı güvenli hale getirmenize yardımcı olmak üzere cihaz kaydı için Azure AD Multi-Factor Authentication (MFA) özelliğini tümleştirir. MFA, kullanıcı adları ve parolaların yanı sıra metin kimlik doğrulaması gibi kimlik doğrulama faktörleri de gerektirir. Bu, iOS, Android, Windows 8.1 veya üstü, Windows Phone 8.1 veya üstü cihazlar için desteklenir.
+Intune, şirket kaynaklarınızı güvenli hale getirmenize yardımcı olmak üzere cihaz kaydı için Azure AD Multi-Factor Authentication (MFA) özelliğini tümleştirir.
+
+MFA, aşağıdaki doğrulama yöntemlerinden herhangi ikisini veya daha fazlasını zorunlu tutar: 
+
+- Bildiğiniz bir şey (genellikle parola veya PIN).
+- Sahip olduğunu bir şey (telefon gibi kopyalaması kolay olmayan güvenilir bir cihaz).
+- Kendinizde bulunan bir şey (biyometri).
+
+MFA; iOS, Android, Windows 8.1 veya üstü, Windows Phone 8.1 veya üstü cihazlar için desteklenir.
 
 > [!NOTE]
->
-> Bu, Intune’daki yeni MFA deneyimidir. Müşterilerin geçiş yaptığı eski deneyim [Windows cihazlarını çok faktörlü kimlik doğrulaması ile koruma](protect-windows-devices-with-multi-factor-authentication.md) kısmında açıklanır.
->
 > Configuration Manager’ın eski sürümlerinde (1610 sürümü öncesi), Configuration Manager Yönetici konsolunda MFA ayarını görmeye devam edersiniz. Configuration Manager yönetici konsolunda MFA'yı yapılandırmak işe yaramaz; bu yüzden bunu denemeyin. MFA’yı bu konuda açıklandığı şekilde yapılandırın.
 
-### <a name="configuring-intune-to-require-multi-factor-authentication-at-device-enrollment"></a>Intune’u cihaz kaydında çok faktörlü kimlik doğrulama isteyecek şekilde yapılandırma
-Cihaz kaydı sırasında MFA istemek için şu adımları izleyin:
+### <a name="configure-intune-to-require-multi-factor-authentication-at-device-enrollment"></a>Intune'u cihaz kaydında çok faktörlü kimlik doğrulama isteyecek şekilde yapılandırma
+Bir cihaz kaydedildiğinde MFA istemek için şu adımları izleyin:
 
 1. Yönetici kimlik bilgilerinizle [Microsoft Azure portalında](https://manage.windowsazure.com) oturum açın.
 2. Kiracınızı seçin.
@@ -54,6 +59,6 @@ Cihaz kaydı sırasında MFA istemek için şu adımları izleyin:
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

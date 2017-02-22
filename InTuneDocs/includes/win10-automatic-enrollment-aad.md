@@ -1,4 +1,4 @@
-## <a name="azure-active-directory-enrollment"></a>Azure Active Directory kaydı
+## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>Azure Active Directory Premium ile Windows 10 ve Windows 10 Mobile otomatik kaydını ayarlama
 
 Otomatik kayıt, kullanıcıların şirkete ait ya da kişisel Windows 10 bilgisayarlarını veya Windows 10 Mobile cihazlarını, bir iş veya okul hesabı ekleyip yönetilmeyi kabul ederek Intune’a kaydetmelerine izin verir. Bu kadar basit. Arka planda, kullanıcının cihazı kaydolur ve Azure Active Directory’ye katılır. Kaydedildikten sonra cihaz, Intune ile yönetilir.
 
@@ -11,13 +11,13 @@ Otomatik kayıt, kullanıcıların şirkete ait ya da kişisel Windows 10 bilgis
 
 1. [Azure yönetim portalında](https://manage.windowsazure.com) (https://manage.windowsazure.com), **Active Directory** düğümüne gidin ve dizininizi seçin.
 
-2. **Uygulamalar** sekmesine tıklarsanız uygulamalar listesinde **Microsoft Intune**’u görmeniz gerekir.
+2. **Uygulamalar** sekmesini seçin. Uygulama listesinde **Microsoft Intune** gösterilir.
 
     ![Microsoft Intune ile Azure AD uygulamaları](../media/aad-intune-app.png)
 
-3. **Microsoft Intune** okuna tıklarsanız, Microsoft Intune’u yapılandırmanızı sağlayan bir sayfa görmeniz gerekir.
+3. **Microsoft Intune**’un okunu seçin. Microsoft Intune’u yapılandırmanızı sağlayan bir sayfa görürsünüz.
 
-4. Microsoft Intune ile otomatik MDM kaydını yapılandırmaya başlamak için **Yapılandır**’a tıklayın.
+4. Microsoft Intune ile otomatik MDM kaydını yapılandırmaya başlamak için **Yapılandır**’ı seçin.
 
 5. Intune için URL'leri belirtin:
 
@@ -34,6 +34,6 @@ Otomatik kayıt, kullanıcıların şirkete ait ya da kişisel Windows 10 bilgis
 7. **Kaydet**’i seçin.
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

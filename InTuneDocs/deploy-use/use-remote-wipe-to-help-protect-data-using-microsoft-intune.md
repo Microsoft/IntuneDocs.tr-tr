@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
@@ -117,10 +118,14 @@ Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz tür
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikaları iptal edilir, ancak kaldırılmaz.|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim Aracısı|Cihaz Yöneticisi ayrıcalığı iptal edilir.|Cihaz Yöneticisi ayrıcalığı iptal edilir.|
-|E-posta|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|
-|Outlook|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|
+|E-posta|Yok. Outlook öğesine bakın.|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|
+|Outlook|Yalnızca Outlook MAM ilkeleriyle korunuyorsa, Android için Microsoft Outlook uygulaması tarafından alınan e-posta kaldırılır. Aksi takdirde, kayıt kaldırıldığında Outlook temizlenmez.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|Yalnızca Outlook MAM ilkeleriyle korunuyorsa, Android için Microsoft Outlook uygulaması tarafından alınan e-posta kaldırılır. Aksi takdirde, kayıt kaldırıldığında Outlook temizlenmez.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|
 |Azure Active Directory (AAD) Ayrılma|AAD Kaydı kaldırılır.|AAD Kaydı kaldırılır.|
 |Kişiler | Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.|Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
+
+**Android for Work**
+
+Bir İş için Android cihazında seçmeli temizleme gerçekleştirilmesi, cihazdaki iş profilinde bulunan tüm verileri, uygulamaları ve ayarları kaldırır. Bu, cihazın Intune ile yönetilmesini devre dışı bırakır. İş için Android’de tam temizleme desteklenmez.
 
 **Windows**
 
@@ -168,6 +173,6 @@ Bu rapor eylemi gerçekleştiren kişiyi de gösterir.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

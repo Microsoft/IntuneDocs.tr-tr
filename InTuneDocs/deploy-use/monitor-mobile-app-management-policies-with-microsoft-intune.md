@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
+ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
+ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Microsoft Intune ile mobil uygulama yönetimi ilkelerini izleme
-Kullanıcılara uyguladığınız mobil uygulama yönetimi (MAM) ilkelerinin uygunluk durumunu [Azure portalı](https://portal.azure.com) üzerindeki Intune uygulama koruması dikey penceresinden izleyebilirsiniz. MAM ilkelerinden etkilenen kullanıcılar hakkında bilgileri, uyumluluk durumu ve kullanıcılarınızın karşılaşmış olabileceği sorunları burada bulabilirsiniz.
+Kullanıcılara uyguladığınız mobil uygulama yönetimi (MAM) ilkelerinin uygunluk durumunu izleyebilirsiniz. MAM ilkelerinden etkilenen kullanıcılar hakkında bilgileri, uyumluluk durumu ve kullanıcılarınızın karşılaşmış olabileceği sorunları burada bulabilirsiniz.
 
 Uyumluluk durumu üç farklı yerden izlenebilir:
 
@@ -35,8 +35,8 @@ Uyumluluk durumu üç farklı yerden izlenebilir:
 
 Özet görünümü açmak için aşağıdaki üç adımı izleyin:
 
-1. [Azure portalı](https://portal.azure.com)’na gidin ve kimlik bilgilerinizi girin.
-2. **Diğer Hizmetler**’i seçin ve "Intune" yazın.
+1. [Azure portalına](https://portal.azure.com) gidin ve kimlik bilgilerinizi girin.
+2. **Diğer Hizmetler**’i seçin ve filtre metin kutusuna **Intune** yazın.
 3. **Intune Uygulama Koruması**’nı seçin.
 
 **Intune mobil uygulama yönetimi** dikey penceresinde, uyumluluk durumunun özetini görebilirsiniz:
@@ -95,8 +95,6 @@ Ayrıntılı görünümde, aynı raporlara ek olarak MAM ilkesi uyumluluk durumu
 
 -   **Uygulama koruması uygulama raporu:** Yöneticilerin, raporu oluşturmadan önce seçebileceği iki farklı uygulama koruma durumu sağlar. Durumlar korumalı veya korumasız olabilir.
 
-    ![Ekran görüntüsü-1](../media/MAM-reporting-1.png)
-
     -   Yönetilen MAM etkinliği için kullanıcı durumu (Korumalı): Bu rapor, yönetilen her bir MAM uygulamasının etkinliğini kullanıcı temelinde özetler.
 
         -   Her bir kullanıcı için, MAM ilkeleri tarafından hedeflenen tüm uygulamaları göstermenin yanı sıra uygulamaların durumunu, MAM ilkelerine giriş yapmış veya MAM ilkesi ile hedeflenmiş ancak henüz giriş yapmamış olarak özetler.
@@ -109,6 +107,27 @@ Ayrıntılı görünümde, aynı raporlara ek olarak MAM ilkesi uyumluluk durumu
 
 ![Ekran görüntüsü-2](../media/MAM-reporting-4.png)
 
+## <a name="table-grouping"></a>Tablo gruplandırma
+
+**Uygulama koruması kullanıcı raporu** verileri gösterilince, verileri aşağıdakilere göre toplayabilirsiniz:
+
+- **Doğrulama sonucu:** Veriler, uygulama koruması durumuna (başarısız, uyarı veya başarılı olabilir) göre gruplandırılmış olarak gösterilir.
+- **Uygulama adı:** Veriler, uygulamalara (asıl uygulama adı) göre başarısız, hata veya başarılı olarak gruplandırılmış olarak gösterilir.
+
+## <a name="export-app-protection-activities-to-csv"></a>Uygulama koruması etkinliklerini CSV’ye dışarı aktarma
+
+Uygulama koruma ilkesi etkinliklerinizin tümünü tek bir .csv dosyasına dışarı aktarabilirsiniz. Bu işlem, kullanıcılardan raporlanan uygulama koruması durumlarının tümünü çözümlemenize yardımcı olabilir.
+
+Uygulama koruması raporu oluşturmak için bu adımları izleyin:
+
+1. Intune mobil uygulama yönetimi dikey penceresinde Uygulama koruması raporunu seçin.
+
+    ![Ekran görüntüsü-6](../media/app-protection-report-csv-2.png)
+
+2. Raporunuzu kaydetmek için Evet’i seçin, ardından Farklı Kaydet’i seçin ve raporun kaydedilmesini istediğiniz klasörü belirtin.
+
+    ![Ekran görüntüsü-7](../media/app-protection-report-csv-1.png)
+
 ## <a name="see-also"></a>Ayrıca bkz.
 [iOS uygulamaları arasında veri aktarımını yönetme](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
@@ -117,6 +136,6 @@ Ayrıntılı görünümde, aynı raporlara ek olarak MAM ilkesi uyumluluk durumu
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

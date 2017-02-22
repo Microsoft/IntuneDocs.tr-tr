@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
@@ -24,18 +25,19 @@ ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Microsoft Intune kullanarak şirket içi Exchange'e veya eski Adanmış Exchange Online ortamına koşullu erişim denetimli e-posta erişimini yapılandırabilirsiniz.
+Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta ve O365 hizmetlerine erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
+
 > [!NOTE]
 > Adanmış Exchange Online ortamınız varsa ve bunun yapılandırmasının yeni mi yoksa eski mi olduğunu bulmanız gerekiyorsa hesap yöneticinize başvurun.
 
+## <a name="before-you-begin"></a>Başlamadan önce
 
-Şirket İçi Exchange’e veya eski Adanmış Exchange Online ortamına e-posta erişimini denetlemek için Microsoft Intune kullanarak Şirket İçi Exchange’e koşullu erişimi yapılandırabilirsiniz.
-Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta ve O365 hizmetlerine erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
-
-Koşullu erişimi yapılandırabilmeniz için **önce** aşağıdakileri doğrulayın:
+Aşağıdaki noktaları doğruladığınızdan emin olun:
 
 -   Exchange sürümünüzün **Exchange 2010 veya üzeri** olması gerekir. Exchange Server İstemci Erişimi Sunucusu (CAS) dizileri desteklenir.
 
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile Şirket İçi Exchange’i bağlayan **Şirket İçi Exchange bağlayıcısını** kullanmanız gerekir. Bu, cihazları [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konsolu üzerinden yönetmenizi sağlar. Bağlayıcıyla ilgili ayrıntılar için bkz. [Intune Şirket İçi Exchange bağlayıcısı](intune-on-premises-exchange-connector.md).
+-   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile Şirket İçi Exchange'i bağlayan [Intune şirket içi Exchange bağlayıcısını](intune-on-premises-exchange-connector.md) kullanmanız gerekir. Bu, cihazları [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konsolu üzerinden yönetmenizi sağlar.
 
     -   Intune konsolunda size sağlanan Şirket İçi Exchange bağlayıcısı, Intune kiracınıza özgüdür ve başka hiçbir kiracıyla kullanılamaz. Ayrıca, kiracınızın Exchange bağlayıcısının **tek bir makineye** yüklendiğinden de emin olmanız önerilir.
 
@@ -47,6 +49,8 @@ Koşullu erişimi yapılandırabilmeniz için **önce** aşağıdakileri doğrul
 
 -   **Exchange ActiveSync**, sertifika tabanlı kimlik doğrulaması veya kullanıcı kimlik bilgileri girişiyle yapılandırılmalıdır.
 
+### <a name="device-compliance-requirements"></a>Cihaz uyumluluk gereksinimleri
+
 Koşullu biçimlendirme ilkeleri yapılandırdığınızda ve bunlarla bir kullanıcı hedeflediğinizde, kullanıcının e-postasına bağlanabilmesi için önce **cihazın** şu özellikleri taşıması gerekir:
 
 -  Etki alanına katılmış bir bilgisayar veya [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile **kaydedilmiş** olması gerekir.
@@ -57,11 +61,13 @@ Koşullu biçimlendirme ilkeleri yapılandırdığınızda ve bunlarla bir kulla
 
 -   Söz konusu cihaza dağıtılan tüm [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uyumluluk ilkeleriyle **uyumlu** olmalıdır.
 
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Koşullu erişimin şirket içi Exchange'de çalışma şekli
+
 Aşağıdaki çizelgede, Şirket İçi Exchange’e yönelik koşullu erişim ilkeleri tarafından, cihazlara izin verme veya cihazları engelleme yönünde değerlendirme yapmak amacıyla kullanılan akış gösterilir.
 
 ![Cihazın Şirket İçi Exchange’e erişimine izin verileceğini veya erişimin engelleneceğini belirleyen karar noktalarının gösterildiği diyagram](../media/ConditionalAccess8-2.png)
 
-Bir koşullu erişim ilkesi karşılanmazsa kullanıcı oturum açtığında şu iletilerden birini görür:
+Koşullu erişim ilkesine uyulmazsa, cihazın engellenmesiyle kullanıcının oturum açtığında aşağıdaki karantina iletilerinden birini alması arasında 10 dakikalık bir süre vardır:
 
 - Cihaz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedilmediyse veya Azure Active Directory’de kayıtlı değilse Şirket Portalı uygulamasını yükleme, cihazı kaydetme ve e-postayı etkinleştirme yönergelerinin bulunduğu bir ileti görüntülenir. Bu işlem cihazın Exchange ActiveSync kimliğini de Azure Active Directory’deki cihaz kaydıyla ilişkilendirir.
 
@@ -136,6 +142,6 @@ Aşağıdakiler desteklenir:
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

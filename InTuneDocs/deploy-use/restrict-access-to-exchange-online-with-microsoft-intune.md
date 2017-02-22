@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 185f6fd051946ab118490717ecfb7250521fb764
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
@@ -25,24 +26,26 @@ ms.openlocfilehash: 185f6fd051946ab118490717ecfb7250521fb764
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Microsoft Intune'u kullanarak Exchange Online veya Exchange Online Ayrılmış için koşullu erişimi yapılandırabilirsiniz. Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta, O365 ve diğer hizmetlere erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
+
 > [!NOTE]
 >Adanmış Exchange Online ortamınız varsa ve bunun yapılandırmasının yeni mi yoksa eski mi olduğunu bulmanız gerekiyorsa hesap yöneticinize başvurun.
 
-Exchange Online’a veya yeni Adanmış Exchange Online ortamına e-posta erişimini denetlemek için Microsoft Intune kullanarak Exchange Online’a koşullu erişim yapılandırabilirsiniz. Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta, O365 ve diğer hizmetlere erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
+## <a name="before-you-begin"></a>Başlamadan önce
 
-
-Koşullu erişimi yapılandırabilmeniz için **önce**:
+Koşullu erişimi yapılandırma şartları şunlardır:
 
 -   **Exchange Online içeren bir Office 365 aboneliğiniz (örneğin E3)** olmalı ve kullanıcılar Exchange Online lisansına sahip olmalıdır.
 
 - **Enterprise Mobility + Security (EMS) aboneliğiniz** veya bir **Azure Active Directory (Azure AD) Premium aboneliğiniz** olmalıdır ve kullanıcılar EMS veya Azure AD lisansına sahip olmalıdır. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile Exchange Online’ı bağlayan ve [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konsolu aracılığıyla cihaz bilgilerini yönetmenize yardımcı olan isteğe bağlı **Intune hizmetten hizmete bağlayıcısını** yapılandırmayı göz önünde bulundurmalısınız. Uyumluluk ilkeleri veya koşullu erişim ilkelerini kullanmak için bağlayıcıyı kullanmanıza gerek yoktur ancak koşullu erişimin etkisini değerlendirmeye yardımcı olan raporları çalıştırmak için bu gereklidir.
+    -  [Intune hizmetten hizmete bağlayıcısı](intune-service-to-service-exchange-connector.md) hakkında daha fazla bilgi edinin.
 
    > [!NOTE]
-   > Koşullu erişimi hem Exchange Online hem de Şirket İçi Exchange için kullanmak istiyorsanız hizmetten hizmete bağlayıcısını yapılandırmayın.
+   > Koşullu erişimi hem Exchange Online hem de şirket içi Exchange için kullanmak istiyorsanız, Intune hizmetten hizmete bağlayıcısını yapılandırmayın.
 
-   Bağlayıcıyı yapılandırma yönergeleri için bkz. [Intune hizmetten hizmete bağlayıcısı](intune-service-to-service-exchange-connector.md).
+### <a name="device-compliance-requirements"></a>Cihaz uyumluluk gereksinimleri
 
 Koşullu biçimlendirme ilkeleri yapılandırdığınızda ve bunlarla bir kullanıcı hedeflediğinizde, kullanıcının e-postasına bağlanabilmesi için önce **cihazın** şu özellikleri taşıması gerekir:
 
@@ -54,12 +57,15 @@ Koşullu biçimlendirme ilkeleri yapılandırdığınızda ve bunlarla bir kulla
 
 -   Söz konusu cihaza dağıtılmış tüm [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uyumluluk ilkeleriyle **uyumlu** olmalı veya şirket içi etki alanına katılmış olmalıdır.
 
-Bir koşullu erişim ilkesi karşılanmazsa kullanıcı oturum açtığında şu iletilerden birini görür:
+### <a name="when-the-device-is-not-compliant"></a>Cihaz uyumlu olmadığında
+
+Koşullu erişim ilkesine uyulmazsa, cihaz hemen karantinaya alınır ve kullanıcı bir e-posta alır, oturum açtığında aşağıdaki karantina bildirimlerinden birini görür:
 
 - Cihaz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedilmediyse veya Azure Active Directory’de kayıtlı değilse Şirket Portalı uygulamasını yükleme, cihazı kaydetme ve e-postayı etkinleştirme yönergelerinin bulunduğu bir ileti görüntülenir. Bu işlem cihazın Exchange ActiveSync kimliğini de Azure Active Directory’deki kayıtla ilişkilendirir.
 
 -   Cihazın değerlendirmesinde uyumluluk ilkesi kurallarına uygun olmadığı bulunursa kullanıcı sorunla ve bu sorunu nasıl çözebileceğiyle ilgili bilgilere ulaşabileceği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Şirket Portalı web sitesine veya Şirket Portalı uygulamasına yönlendirilir.
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>Koşullu erişimin Exchange Online'da çalışma şekli
 
 Aşağıdaki diyagramda, Exchange Online için koşullu erişim ilkeleri tarafından kullanılan akış çizilmiştir.
 
@@ -70,7 +76,6 @@ Aşağıdaki diyagramda, Exchange Online için koşullu erişim ilkeleri tarafı
 
 - Android 4.0 ve üzeri, Samsung Knox Standard 4.0 ve üzeri ve Android for Work
 - iOS 8.0 ve üzeri
-- Windows Phone 8.1 ve üzeri
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -85,7 +90,8 @@ Exchange Online’da bir kullanıcı, **iOS** ve **Android** cihazlardaki bir ta
 * Chrome (Android)
 * Intune Managed Browser (iOS, Android 5.0 ve üzeri)
 
-**Desteklenmeyen tarayıcılar engellenir**.
+   > [!IMPORTANT]
+   > **Desteklenmeyen tarayıcılar engellenir**.
 
 **iOS ve Android için OWA uygulaması, modern kimlik doğrulaması kullanmayacak şekilde değiştirilebilir ve desteklenmez. OWA uygulamasından erişimin, ADFS talep kuralları ile engellenmesi gerekir.**
 
@@ -204,7 +210,7 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
         Bu seçenek **Exchange Online**’a erişmek için kullanılan tüm cihazların Intune’a kaydedilmesini ve ilkelerle uyumlu olmasını gerektirir. **Modern kimlik doğrulaması** kullanan tüm istemci uygulamaları, koşullu erişim ilkesine bağlıdır. Platform şu anda Intune tarafından desteklenmiyorsa **Exchange Online**’a erişim engellenir.
 
         **Tüm platformlar** seçeneğinin belirlenmesi, Azure Active Directory’nin bu ilkeyi, istemci uygulaması tarafından bildirilen platformdan bağımsız olarak tüm kimlik doğrulama isteklerine uygulayacağı anlamına gelir. Aşağıdakiler dışında tüm platformların kaydedilmesi ve uyumlu hale gelmesi gerekir:
-        *   Windows cihazların, kaydolması ve uyumlu hale gelmesi, şirket içi Active Directory ile etki alanının birleşik olması veya her ikisi gerekir.
+        *    Windows cihazların, kaydolması ve uyumlu hale gelmesi, şirket içi Active Directory ile etki alanının birleşik olması veya her ikisi gerekir.
         * Mac OS gibi desteklenmeyen platformlar. Ancak bu platformlardan gelen, modern kimlik doğrulaması kullanan uygulamalar yine de engellenir.
 
     -   **Belirli platformlar**
@@ -272,6 +278,6 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

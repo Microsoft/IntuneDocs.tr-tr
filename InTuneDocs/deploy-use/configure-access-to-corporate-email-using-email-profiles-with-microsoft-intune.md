@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
+ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
+ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
 
 
 ---
@@ -33,11 +34,11 @@ Veri kaybını önlemek için ek önlemler almaya gerek duyuyorsanız, yerel e-p
 BT yöneticileri veya kullanıcılar, Android ve iOS için Microsoft Outlook gibi alternatif e-posta istemcileri yüklemeyi de seçebilirler. Bu e-posta istemcileri e-posta profillerini destekleyemeyebilir ve Intune e-posta profilleri kullanılarak ayarlanamaz.  
 
 Aşağıdaki cihaz türlerinde yerel e-posta istemcisini yapılandırmak için e-posta profillerini kullanabilirsiniz:
--   Windows Phone 8.1 ve üzeri
--   Windows 10 (masaüstü için), Windows 10 Mobile ve üzeri
--   iOS 8.0 ve üzeri
--   Samsung KNOX Standard (4.0 ve üzeri)
--   Android for Work
+-    Windows Phone 8.1 ve üzeri
+-    Windows 10 (masaüstü için), Windows 10 Mobile ve üzeri
+-    iOS 8.0 ve üzeri
+-    Samsung KNOX Standard (4.0 ve üzeri)
+-    Android for Work
 
 >[!NOTE]
 >Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur ve Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun profili oluşturup dağıtın.
@@ -88,7 +89,7 @@ E-posta profilinde parola bulunmadığından, e-postaya bağlanırken kullanıc�
 
     -   **E-posta Profili (Android for Work - Gmail)**
 
-    -   **E-posta Profili (Android for Work - Nine Work)**
+    -    **E-posta Profili (Android for Work - Nine Work)**
 
     Yalnızca özel bir e-posta profili ilkesi oluşturup dağıtabilirsiniz. Önerilen ayarlar kullanılamaz.
 
@@ -134,10 +135,10 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 
 > [!NOTE]
 > - Android for Work için uygun e-posta profilinin yanı sıra Gmail veya Nine Works uygulamalarını da dağıttığınızdan emin olun.
-> - Bir cihazdan e-posta profilini kaldırmak isterseniz, dağıtımı düzenleyin ve cihazın üye olduğu tüm grupları kaldırın.
+> - Bir cihazdan e-posta profilini kaldırmak isterseniz, dağıtımı düzenleyin ve cihazın üye olduğu tüm grupları kaldırın. Cihazda yalnızca bir e-posta profili olduğunda, bu e-posta profilini bu yöntemle kaldıramayacağınızı unutmayın.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

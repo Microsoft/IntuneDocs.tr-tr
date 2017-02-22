@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
+ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
+ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
 # <a name="intune-network-bandwidth-use"></a>Intune ağ bant genişliğini kullanma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Bu yönergeler, kuruluşta cihaz yönetiminden sorumlu olan yöneticilere yöneliktir. Mobil cihazınızda Intune kullanma konusunda yardım için bkz. [Intune Şirket Portalı hakkında sık sorulan sorular](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Microsoft Intune’u ayarlamadan önce bu konuyu ve [Microsoft Intune’u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md) başlığı altında listelenen diğer gereksinimleri gözden geçirin.
 
@@ -231,6 +234,6 @@ Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hiz
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

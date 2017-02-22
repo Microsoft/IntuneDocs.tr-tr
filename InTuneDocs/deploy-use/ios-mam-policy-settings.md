@@ -5,17 +5,17 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 01/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-ms.reviewer: andcerat
+ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d80f548f0c1382e1bd024bd31078d2a4e6366656
-ms.openlocfilehash: a2130fa76f66528f6e77c720bc93286e0d01aba2
+ms.sourcegitcommit: 136c0ea7c9c43afc589ce5aaa03978a0818e8e7e
+ms.openlocfilehash: ff8394bbceb21668e60b1ec27ffc0be5308ca6cd
 
 
 ---
@@ -51,14 +51,29 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penc
 
 | Ayar | Nasıl kullanılır? | Varsayılan değer |
 |------|------|------|
-| **Erişim için PIN’i zorunlu kıl** | Bu uygulamayı kullanmak için PIN’i zorunlu kılmak üzere **Evet**’i seçin. Uygulamayı iş veya okul bağlamında ilk kez çalıştırdığında kullanıcıdan bu PIN’i ayarlaması istenir. Varsayılan değer = **Evet**.<br><br> PIN gücü için aşağıdaki ayarları yapılandırın: <ul><li>**PIN sıfırlamadan önceki deneme sayısı**: Kullanıcının PIN’ini sıfırlamak zorunda kalmadan önce başarılı bir şekilde girmesi gereken deneme sayısını belirtin. Varsayılan değer = **5**.</li><li> **Basit PIN’e izin ver:** Kullanıcıların 1234 veya 1111 gibi basit PIN dizileri kullanmasına izin vermek için **Evet**’i seçin. Basit PIN dizileri kullanmalarını engellemek için **Hayır**’ı seçin. Varsayılan değer = **Evet**. </li><li> **PIN Uzunluğu:** PIN dizisindeki basamak sayısı alt sınırını belirtin. Varsayılan değer = **4**. </li><li> **PIN yerine parmak izine izin ver (iOS 8.0+)**: Uygulama erişiminde bir PIN yerine **Touch ID** kullanmasına izin vermek için [Evet](https://support.apple.com/en-us/HT201371)’i seçin. Varsayılan değer = **Evet**.<br><br> iOS cihazlarda, kullanıcıların kimliklerini kanıtlamak için PIN yerine [Touch ID](https://support.apple.com/en-us/HT201371) kullanmasına izin verebilirsiniz. Kullanıcı, iş veya okul hesabıyla bu uygulamayı kullanmayı denediğinde, PIN girmek yerine parmak izi kimliğini vermesi istenir. </li></ul>| PIN’i zorunlu kıl: Evet <br><br> PIN sıfırlama girişimi: 5 <br><br> Basit PIN’e izin ver: Evet <br><br> PIN uzunluğu: 4 <br><br> Parmak izine izin ver: Evet |
+| **Erişim için PIN’i zorunlu kıl** | Bu uygulamayı kullanmak için PIN’i zorunlu kılmak üzere **Evet**’i seçin. Uygulamayı iş veya okul bağlamında ilk kez çalıştırdığında kullanıcıdan bu PIN’i ayarlaması istenir. Varsayılan değer = **Evet**.<br><br> PIN gücü için aşağıdaki ayarları yapılandırın: <ul><li>**PIN sıfırlamadan önceki deneme sayısı**: Kullanıcının PIN’ini sıfırlamak zorunda kalmadan önce başarılı bir şekilde girmesi gereken deneme sayısını belirtin. Varsayılan değer = **5**.</li><li> **Basit PIN’e izin ver:** Kullanıcıların 1234 veya 1111 gibi basit PIN dizileri kullanmasına izin vermek için **Evet**’i seçin. Basit PIN dizileri kullanmalarını engellemek için **Hayır**’ı seçin. Varsayılan değer = **Evet**. </li><li> **PIN uzunluğu:** PIN dizisindeki basamak sayısı alt sınırını belirtin. Varsayılan değer = **4**. </li><li> **PIN yerine parmak izine izin ver (iOS 8.0+)**: Uygulama erişiminde bir PIN yerine **Touch ID** kullanmasına izin vermek için [Evet](https://support.apple.com/en-us/HT201371)’i seçin. Varsayılan değer = **Evet**.<br><br> iOS cihazlarda, kullanıcıların kimliklerini kanıtlamak için PIN yerine [Touch ID](https://support.apple.com/en-us/HT201371) kullanmasına izin verebilirsiniz. Kullanıcı, iş veya okul hesabıyla bu uygulamayı kullanmayı denediğinde, PIN girmek yerine parmak izi kimliğini vermesi istenir. Bu ayar etkinleştirildiğinde, Uygulama Değiştirici önizleme resmi iş veya okul hesabı kullanılırken bulanıklaştırılır. </li></ul>| PIN’i zorunlu kıl: Evet <br><br> PIN sıfırlama girişimi: 5 <br><br> Basit PIN’e izin ver: Evet <br><br> PIN uzunluğu: 4 <br><br> Parmak izine izin ver: Evet |
 | **Erişim için kurumsal kimlik bilgileri gerektir** | Kullanıcının uygulama erişimi için PIN girmek yerine iş veya okul hesabıyla oturum açmasını zorunlu kılmak için **Evet**’i seçin. **Evet** olarak ayarlarsanız, bu ayar PIN veya Touch ID gereksinimlerini geçersiz kılar.  | Hayır |
 | **Yönetilen cihazların, jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelle** |  Bu uygulamaya jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engellemek için **Evet**’i seçin. Kullanıcı kişisel görevler için uygulamaları kullanmaya devam edebilir, ancak bu uygulamada iş veya okul verilerine erişmek için farklı bir cihaz kullanması gerekir. | Evet |
-| **Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)** | Aşağıdaki ayarları yapılandırın: <ul><li>**Zaman aşımı:** Uygulama için erişim gereksinimleri yeniden denetlenmeden önce geçmesi gereken süreyi (dakika cinsinden) belirtin. Varsayılan değer = **30** dakika.</li><li>**Çevrimdışı kullanım süresi:** Cihaz çevrimdışıyken uygulama için erişim gereksinimleri yeniden denetlenmeden önce geçmesi gereken süreyi (dakika olarak) belirtin. Varsayılan değer = **720** dakika (12 saat).</li></ul>| Zaman Aşımı: 30 <br><br> Çevrimdışı: 720 |
-| **Uygulama verileri silinmeden önceki çevrimdışı zaman aralığı (gün)** | Bir cihaz belirli bir süreden fazla çevrimdışı kalmışsa bu uygulamadaki iş veya okul verileri silinebilir. Cihazın kaç gün çevrimdışı kaldıktan sonra içindeki iş veya okul verilerinin silineceğini belirtin. <br><br> | 90 gün |
+| **Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)** | Aşağıdaki ayarları yapılandırın: <ul><li>**Zaman Aşımı**: Erişim gereksinimleri (daha önce ilkelerde tanımlanmıştır) yeniden denetlenmeden önce geçmesi gereken dakika sayısıdır. Örneğin, yönetici ilkede PIN’i etkinleştirirse, kullanıcı bir MAM uygulamasını açtığında bir PIN girmesi gerekir. Bu ayar kullanıldığında, kullanıcının **30 dakika** (varsayılan değer) boyunca herhangi bir MAM uygulamasında PIN girmesi gerekmez.</li><li>**Çevrimdışı yetkisiz kullanım süresi**: Uygulama için erişim gereksinimleri yeniden denetlenmeden önce MAM uygulamalarının çevrimdışı çalışabileceği dakika sayısıdır. Varsayılan değer = **720** dakika (12 saat). Bu süre dolduktan sonra, uygulama, çalışmaya devam edebilmesi için kullanıcının AAD’de kimliğini doğrulamasını ister.</li></ul>| Zaman Aşımı: 30 <br><br> Çevrimdışı: 720 |
+| **Uygulama verileri silinmeden önceki çevrimdışı zaman aralığı (gün)** | Belirtilen sayıda (yönetici tarafından tanımlanır) gün boyunca çevrimdışı çalışıldıktan sonra, uygulama kendi kendine bir seçmeli temizleme gerçekleştirir. Bu seçmeli temizleme, MAM temizleme iş akışında yönetici tarafından başlatılabilen temizlemeyle aynıdır. <br><br> | 90 gün |
+
+##  <a name="add-ins-for-outlook-app"></a>Outlook uygulaması için eklentiler
+
+Outlook kısa süre önce iOS için Outlook’a, popüler uygulamaları e-posta istemcisiyle tümleştirebilmenizi sağlayacak eklentiler getirmiştir. Outlook eklentileri web, Windows, Mac ve iOS için Outlook’ta kullanılabilir. Eklentiler Microsoft Exchange yoluyla yönetildiğinden, eklentiler kullanıcı için Exchange tarafından kapatılmadığı sürece, kullanıcılar Outlook ile yönetilmeyen eklenti uygulamaları arasında verileri ve iletileri paylaşabilirler.
+
+Son kullanıcılarınızın Outlook eklentilerine erişmesini ve bunları yüklemesini durdurmak isterseniz (bu işlem tüm Outlook istemcilerini etkiler), Exchange yönetim merkezinde rollerde aşağıdaki değişikliklerin yapıldığından emin olun:
+
+- Kullanıcıların Office Mağazası eklentilerini yüklemesini engellemek için, onlardan Marketim rolünü kaldırın.
+- Kullanıcıların dışarıdan eklenti yüklemesini engellemek için, onlardan Özel Uygulamalarım rolünü kaldırın.
+- Kullanıcılar tüm eklentilerin yüklemesini engellemek için, onlardan hem Özel Uygulamalarım rolünü hem de Marketim rolünü kaldırın.
+
+Bu yönergeler Office 365, Exchange 2016, Exchange 2013’te Web üzerinde Outlook genelinde, Windows, Mac ve mobil için geçerlidir.
+
+- [Outlook için eklentiler](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx) hakkında daha fazla bilgi edinin.
+- [Outlook uygulaması için eklentileri yükleyebilecek ve yönetebilecek kullanıcıları ve yöneticileri belirleme](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx) hakkında daha fazla bilgi edinin.
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 
