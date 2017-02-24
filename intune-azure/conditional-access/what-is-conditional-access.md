@@ -1,5 +1,6 @@
 ---
-title: "Koşullu erişim nedir? | Intune Azure önizlemesi | Microsoft Docs"
+title: "Koşullu erişim nedir?"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Microsoft Intune Azure önizlemesinde kullanıcıların ve cihazların şirket kaynaklarına erişmek için uymaları gereken koşulları tanımlamayı öğrenin."
 keywords: 
 author: andredm7
@@ -12,9 +13,10 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 41931f64db969c82f79e007c4be9e68b7caf4ce9
-ms.openlocfilehash: 20696fb2dc0126aa224e779738cedb4f95f666e8
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 18ec39a15f9cc2ac8ce912eaa91e54371e7dd423
 
 
 ---
@@ -53,6 +55,6 @@ Cihazlar ayarlanan koşullara uymadığında, son kullanıcı cihazı kaydetmeye
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

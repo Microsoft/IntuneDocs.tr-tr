@@ -18,8 +18,8 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak Windows cihazınızı sıfırlarsanız ne olur?
 
-Şirket Portalı uygulamasını veya [Şirket Portalı web sitesini](reset-your-device-cpwebsite.md) kullanarak Windows cihazınızı sıfırladığınızda, cihazınız fabrika ayarlarına sıfırlanır ve tüm uygulamalar, ayarlar ve kişisel verileriniz de dahil olmak üzere tüm veriler silinir. Her cihazda ne olacağı (aşağıdaki tabloda açıklandığı gibi) sahip olduğunuz cihaz türüne ve cihazı nasıl kullandığınıza bağlıdır. Kaybolan ya da çalınan cihazınızı sıfırlamaya ilişkin yönergeler için bkz. [Kaybolan veya çalışan cihazınızı sıfırlama (silme)](reset-erase-your-lost-or-stolen-device-windows.md).
+Şirket Portalı uygulamasını veya [Şirket Portalı web sitesini](reset-erase-your-device-cpwebsite.md) kullanarak Windows cihazınızı sıfırladığınızda, cihazınız fabrika ayarlarına sıfırlanır ve tüm uygulamalar, ayarlar ve kişisel verileriniz de dahil olmak üzere tüm veriler silinir. Her cihazda ne olacağı (aşağıdaki tabloda açıklandığı gibi) sahip olduğunuz cihaz türüne ve cihazı nasıl kullandığınıza bağlıdır. Kaybolan ya da çalınan cihazınızı sıfırlamaya ilişkin yönergeler için bkz. [Kaybolan veya çalışan cihazınızı sıfırlama (silme)](reset-erase-your-device-cpwebsite.md).
 
 |Cihaz yapılandırması ve yönetimi|Cihaz türü|
 |---------------------------------------|---------------|
@@ -39,6 +39,6 @@ Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

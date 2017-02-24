@@ -16,13 +16,13 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 60b88dfed5afbb808aa056e93f2069d14efe8254
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: 329d34e7a6ad83512e98dce85e1effe9c54a1bce
 
 
 ---
-
 
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Şirket Portalı uygulamasını yüklerseniz ve Windows 10 cihazınızı Intune’a kaydederseniz ne olur?
 
@@ -36,7 +36,7 @@ ms.openlocfilehash: 60b88dfed5afbb808aa056e93f2069d14efe8254
 
 -   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz.
 
-Kayıt adımları için bkz. [Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune'a kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md). BT yöneticinizin cihazınızda neleri görebileceğini öğrenmek için, bkz. [Cihazımı Intune’a kaydettiğimde BT yöneticim neleri görebilir?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Kayıt adımları için bkz. [Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune'a kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md). BT yöneticinizin cihazınızda neleri görebileceğini öğrenmek için, bkz. [Cihazımı Intune’a kaydettiğimde BT yöneticim neleri görebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 Bir bilgisayarı eklediğinizde:
 
@@ -58,6 +58,6 @@ Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

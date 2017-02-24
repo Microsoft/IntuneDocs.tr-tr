@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ Hazır olduğunuzda **3. Adım**’a geçin.
 
      -   **Cihazlar bir etki alanına katılmış veya uyumlu olmalıdır.** Bilgisayarların etki alanına katılmış veya [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile ayarlanan ilkelerle uyumlu olmasını gerekli hale getirmek için bu seçeneği belirtin. Bilgisayar bu gereksinimlerden birini karşılamıyorsa, kullanıcıdan cihazı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydetmesi istenir.
 
-     -   **Cihazlar bir etki alanına katılmış olmalıdır.** Bilgisayarların Exchange Online'a erişmek için etki alanına katılmış olmasını zorunlu tutmak için bu seçeneği belirtin. Bilgisayar etki alanına katılmamışsa, e-posta erişimi engellenir ve kullanıcıdan BT yöneticisine başvurması istenir.
-
      -   **Cihazlar uyumlu olmalıdır.** Bilgisayarların [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedilmiş ve uyumlu olmasını zorunlu tutmak için bu seçeneği belirtin. Bilgisayar kayıtlı değilse, kaydetme yönergelerini içeren bir ileti görüntülenir.
 
 4.   SharePoint Online ve OneDrive İş’e **Tarayıcı erişimi** altında, Exchange Online’a yalnızca desteklenen tarayıcılar üzerinden erişime izin vermeyi seçebilirsiniz: Safari (iOS) ve Chrome (Android). Diğer tarayıcılardan erişim engellenir. OneDrive için Uygulama erişimi için seçtiğiniz platform kısıtlamaları burada da geçerli olur.
@@ -200,6 +198,6 @@ Herhangi bir mobil cihaz grubu seçin. Ardından, **Cihazlar** sekmesinde aşağ
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

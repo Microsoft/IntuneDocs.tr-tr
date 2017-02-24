@@ -15,8 +15,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: 618819ff8dded925bc4745160dde8c9e75694faf
 
 
 ---
@@ -34,14 +34,14 @@ Intune’da Lookout MTP bağlantısını yapılandırmak için [Microsoft Intune
 >[!IMPORTANT]
 > Uyumluluk ilkesi kuralları oluşturmadan ve koşullu erişimi yapılandırmadan önce Lookout for Work uygulamasını yapılandırmanız **gerekir**. Bu, uygulamanın, e-postaya veya diğer şirket kaynaklarına erişim sağlamadan önce son kullanıcılar için hazır ve kullanılabilir olmasını sağlar.
 
-Bu, Intune yönetici konsolunda Lookout ve Intune tümleştirmesi kurulumunu tamamlar.  Bu çözümü uygulamak için sonraki birkaç adım [Lookout for Work uygulamalarının](configure-and-deploy-lookout-for-work-apps.md) dağıtılmasını ve [Uyumluluk](enable-device-threat-protection-rule-in-compliance-policy.md) ilkesinin ayarlanmasını içerir.
+Bu, Intune yönetici konsolunda Lookout ve Intune tümleştirmesi kurulumunu tamamlar.  Bu çözümü uygulamak için sonraki birkaç adım [Lookout for Work uygulamalarının](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps) dağıtılmasını ve [Uyumluluk](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy) ilkesinin ayarlanmasını içerir.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Lookout for Work uygulamasını yapılandırma](configure-and-deploy-lookout-for-work-apps.md)
+[Lookout for Work uygulamasını yapılandırma](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

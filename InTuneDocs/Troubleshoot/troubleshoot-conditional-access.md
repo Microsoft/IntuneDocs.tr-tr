@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
 
 
 ---
@@ -33,11 +34,11 @@ Bu konuda, kullanıcıların, kaynaklara Intune koşullu erişim üzerinden eri�
 
 İşe koşullu erişim sağlamak için, aşağıdaki koşullar gerekir:
 
--   Cihazın Intune tarafından yönetilmelidir
--   Cihaz Azure Active Directory’ye (AAD) kaydedilmelidir. Normal koşullar altında bu kayıt, Intune kaydı sırasında otomatik olarak gerçekleşir
--   Cihaz, cihazın ve cihazın kullanıcısı için Intune uyumluluk ilkelerinizle uyumlu olmalıdır.  Başka bir uyumluluk ilkesi yoksa, Intune kaydı yeterlidir.
--   Kullanıcı postayı Outlook yerine cihazın yerel posta istemcisi aracılığıyla alıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir.     Bu; iOS, Windows Phone ve Android/KNOX Standard cihazlarında otomatik olarak gerçekleşir.
--   Intune Exchange Connector’ınız düzgün şekilde yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da Exchange Connector sorunlarını giderme](troubleshoot-exchange-connector.md).
+-    Cihazın Intune tarafından yönetilmelidir
+-    Cihaz Azure Active Directory’ye (AAD) kaydedilmelidir. Normal koşullar altında bu kayıt, Intune kaydı sırasında otomatik olarak gerçekleşir
+-    Cihaz, cihazın ve cihazın kullanıcısı için Intune uyumluluk ilkelerinizle uyumlu olmalıdır.  Başka bir uyumluluk ilkesi yoksa, Intune kaydı yeterlidir.
+-    Kullanıcı postayı Outlook yerine cihazın yerel posta istemcisi aracılığıyla alıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir.     Bu; iOS, Windows Phone ve Android/KNOX Standard cihazlarında otomatik olarak gerçekleşir.
+-    Intune Exchange Connector’ınız düzgün şekilde yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da Exchange Connector sorunlarını giderme](troubleshoot-exchange-connector.md).
 
 Bu koşullar, Azure Yönetim Portalı’nda ve cihaz envanter raporunda her cihaz için görüntülenebilir.
 
@@ -52,7 +53,7 @@ Bu koşullar, Azure Yönetim Portalı’nda ve cihaz envanter raporunda her ciha
  -  Uyumluluk bilgilerinin bir cihaz için kaydolması biraz zaman alabilir. Birkaç dakika bekleyin ve tekrar deneyin.
  -  iOS aygıtları için:
      -   Kullanıcı tarafından oluşturulmuş bir e-posta profili, Intune yöneticisinin oluşturduğu bir profili engeller. Bu, iOS kullanıcıları genellikle bir e-posta profili oluşturduğundan, ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, kullanıcıyı, el ile yapılandırılmış e-posta profilleri nedeniyle uyumlu olmadıkları konusunda bilgilendirir ve kullanıcıdan, o profili kaldırmasını ister. Kullanıcı, Intune profilinin dağıtılabilmesi için, e-posta profilini kaldırmalıdır. Sorunu önlemek için, kullanıcılarınızdan bir e-posta profili yüklemeden kayıt olmalarını ve Intune’un profili dağıtmasına izin vermelerini isteyin.
-     -   Bir iOS cihazı uyumluluk denetim durumunda takılı kalarak, kullanıcının başka bir giriş yapma işlemi başlatmasını engelleyebilir. Şirket portalını yeniden başlatmak bunu düzeltebilir ve uyumluluk durumu cihazın Intune’daki durumunu yansıtır. Bir cihaz eşitlemesinden tüm veriler toplandıktan sonra, uyumluluk denetimi hızlıdır; ortalama olarak yarım saniyenin altındadır.
+     -     Bir iOS cihazı uyumluluk denetim durumunda takılı kalarak, kullanıcının başka bir giriş yapma işlemi başlatmasını engelleyebilir. Şirket portalını yeniden başlatmak bunu düzeltebilir ve uyumluluk durumu cihazın Intune’daki durumunu yansıtır. Bir cihaz eşitlemesinden tüm veriler toplandıktan sonra, uyumluluk denetimi hızlıdır; ortalama olarak yarım saniyenin altındadır.
 
         Genelde cihazların bu durumda kalmalarının nedeni, hizmete bağlanmada güçlük çekmeleri veya eşitlemenin uzun sürmesidir.  Sorun farklı ağ yapılandırmalarında (hücresel, Wi-Fi, VPN), cihaz yeniden başlatmalarından sonra ve SSP’nin cihazda güncel olduğu doğrulandıktan sonra da devam ederse, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md)’da anlatıldığı şekilde Microsoft Desteği ile iletişim kurun.
 
@@ -125,7 +126,7 @@ Exchange Connector günlüklerini görüntülemek için [Sunucu İzleme Görünt
 
     Zaman filtresi (tam eşitleme) olmadan 4 kullanıcının mobil cihaz listesini alma başarıyla tamamlandı. Ayrıntılar: Envanter komutu sonucu - Eşitlenen cihazlar: 0 Komut Kimliği: commandIDGUID' Exchange sistem durumu: 'Sunucu sistem durumu 'Adı: 'PowerShellExchangeServer: <Name=mymailservername>' Durum: Bağlı','
 
--   Hızlı (delta) eşitlemeyi günlüklerde **hızlı eşitleme** ifadesini arayarak bulun.
+-    Hızlı (delta) eşitlemeyi günlüklerde **hızlı eşitleme** ifadesini arayarak bulun.
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next command özel durumları
 **Get next command** özel durumları için Exchange Connector günlüklerine bakın ve bunları Microsoft Desteği’ne verin.
@@ -134,9 +135,9 @@ Exchange Connector günlüklerini görüntülemek için [Sunucu İzleme Görünt
 
 Ayrıntılı günlük kaydını etkinleştirmek için:
 
-1.  Exchange Connector izleme yapılandırma dosyasını açın. Dosya şu konumdadır: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.  Anahtarı şu olan TraceSourceLine’ı (izleme kaynak satırı) bulun: OnPremisesExchangeConnectorService
-3.  **SourceLevel** düğüm değerini, aşağıda gösterildiği gibi **Warning ActivityTracing** (varsayılan) yerine **Verbose ActivityTracing** olarak değiştirin.
+1.    Exchange Connector izleme yapılandırma dosyasını açın. Dosya şu konumdadır: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.    Anahtarı şu olan TraceSourceLine’ı (izleme kaynak satırı) bulun: OnPremisesExchangeConnectorService
+3.    **SourceLevel** düğüm değerini, aşağıda gösterildiği gibi **Warning ActivityTracing** (varsayılan) yerine **Verbose ActivityTracing** olarak değiştirin.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
@@ -161,6 +162,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
