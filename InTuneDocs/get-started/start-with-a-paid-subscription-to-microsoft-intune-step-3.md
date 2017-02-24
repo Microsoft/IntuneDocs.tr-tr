@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Kullanıcı ekleme ve Intune'a yönetici izni verme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Bu konuda, yöneticilerin kullanıcıları Intune’a nasıl ekleyebilecekleri ve Intune hizmetinde ne tür yönetici izinlerinin bulunduğu açıklanır.
 
 Yönetici olarak, kullanıcıları doğrudan ekleyebilir veya şirket içi Active Directory'den eşitleyebilirsiniz. Eklendikten sonra, kullanıcılar cihazlarını kaydedebilir ve şirket kaynaklarına erişebilir. Kullanıcılara *kiracı yöneticisi*, *hizmet yöneticisi* ve *cihaz kayıt yöneticisi izinlerini* içeren ek izinler de verebilirsiniz.
 
@@ -35,7 +38,7 @@ Bu konuda aşağıdaki başlıklarla ilgili yardım sağlanır:
   - [Cihaz kaydı yöneticileri](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>Intune’a kullanıcı ekleme
-Intune aboneliğinize [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854) aracılığıyla kullanıcıları el ile ekleyebilirsiniz; bu kullanıcılara otomatik olarak Intune lisansı atanmaz. Bunun yerine, daha sonra bir Intune kiracı yöneticisinin kullanıcı hesabını düzenleyerek Office 365 portalından kullanıcıya lisans ataması gerekir. Yönergeler için bkz. [Office 365 portalına kullanıcıları tek tek veya toplu ekleme](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Intune aboneliğinize [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854) aracılığıyla kullanıcıları el ile ekleyebilirsiniz, ancak bu kullanıcılara otomatik olarak Intune lisansı atanmaz. Bunun yerine, daha sonra bir Intune kiracı yöneticisinin kullanıcı hesabını düzenleyerek Office 365 portalından kullanıcıya lisans ataması gerekir. Yönergeler için bkz. [Office 365 portalına kullanıcıları tek tek veya toplu ekleme](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>Active Directory’yi eşitleme ve Intune’a kullanıcı ekleme
 Şirket içi Active Directory'nizden Microsoft Azure Active Directory’ye (Azure AD) kullanıcı hesaplarını aktarmak için dizin eşitlemeyi yapılandırabilirsiniz ve bu, Intune kullanıcılarını da içerir. Şirket içi Active Directory hizmetinizi tüm Azure Active Directory tabanlı hizmetlere bağlamak kullanıcı kimliği yönetimini daha kolay hale getirir. Kullanıcılarınız için kimlik doğrulaması deneyimini tanıdık ve kolay hale getirmek isterseniz, çoklu oturum açma özelliklerini de yapılandırabilirsiniz. Aynı [Azure AD kiracısını](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) birden çok hizmete bağlayarak, önceden eşitlediğiniz kullanıcı hesaplarını tüm bulut tabanlı hizmetler için kullanabilirsiniz.
@@ -103,6 +106,6 @@ Cihaz kaydı yöneticileri daha birçok kullanıcısız cihazı kaydetmek için 
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

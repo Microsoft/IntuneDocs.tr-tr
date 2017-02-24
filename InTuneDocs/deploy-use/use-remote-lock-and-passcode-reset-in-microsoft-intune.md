@@ -2,19 +2,20 @@
 title: "Uzaktan kilitleme ve geçiş kodu sıfırlama | Microsoft Docs"
 description: "Intune uzaktan kilitleme ve geçiş kodu sıfırlama özellikleri sunar."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 01/06/17
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
@@ -24,7 +25,7 @@ ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 Microsoft Intune hem uzaktan kilitleme hem de geçiş kodu sıfırlama özelliklerini sağlar.
 
 ## <a name="lock-a-device-remotely"></a>Cihazı uzaktan kilitleme
-Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Uzaktan kilitlemeyi kullanmaya başlamadan önce cihazın zaten ayarlanmış bir PIN veya geçiş kodu olmalıdır. 
+Bir kullanıcı cihazını kaybederse, cihazı uzaktan kilitleyebilirsiniz. Uzaktan kilitlemeyi kullanmaya başlamadan önce cihazın zaten ayarlanmış bir PIN veya geçiş kodu olmalıdır.
 
 Aşağıdaki tabloda, farklı mobil platformlarda uzaktan kilitleme işleminin nasıl çalıştığı listelenmiştir.
 
@@ -33,7 +34,8 @@ Aşağıdaki tabloda, farklı mobil platformlarda uzaktan kilitleme işleminin n
 |Mac OS|Desteklenmez|
 |iOS|Desteklenir|
 |Android|Desteklenir|
-|Windows 10 ve Windows 10 Mobile|Desteklenir|
+|Windows 10 (mobil)|Desteklenir|
+|Windows 10 (masaüstü)|Desteklenmez|
 |Windows Phone 8 ve Windows Phone 8.1|Desteklenir|
 |Windows RT 8.1 ve Windows RT|Cihazın geçerli kullanıcısı, cihazı kaydeden kullanıcı ile aynıysa desteklenir.|
 |Windows 8.1|Cihazın geçerli kullanıcısı, cihazı kaydeden kullanıcı ile aynıysa desteklenir.|
@@ -84,6 +86,6 @@ Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için geçiş ko
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

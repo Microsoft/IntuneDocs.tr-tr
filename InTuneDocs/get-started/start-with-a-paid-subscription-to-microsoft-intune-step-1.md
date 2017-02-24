@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 
 
 ---
@@ -24,6 +25,8 @@ ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 # <a name="sign-up-or-sign-in-to-intune"></a>Intune'a kaydolma veya Intune'da oturum açma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Bu konuda, sistem yöneticilerinin Intune hesabına nasıl kaydolacakları açıklanır.
 
 Intune’a kaydolabilmek veya Intune’da oturum açabilmek için, önce kuruluşunuzun zaten bir Microsoft Online Services iş veya okul hesabı olup olmadığını veya kuruluşunuzla Microsoft arasında bir Kurumsal Anlaşması veya eşdeğer bir toplu lisans sözleşmesi olup olmadığını saptamanız gerekir. Bir iş veya okul hesabı Microsoft ile bir toplu lisanslama sözleşmesi imzaladığınızda veya Office 365 gibi diğer Microsoft bulut hizmetlerine abone olduğunuzda sağlanır.
 
@@ -53,6 +56,6 @@ Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığı
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

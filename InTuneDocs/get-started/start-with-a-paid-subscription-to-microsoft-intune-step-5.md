@@ -1,11 +1,11 @@
 ---
 title: "Kullanıcıları ve cihazları düzenlemek için grup oluşturma | Microsoft Docs"
-description: "Intune aboneliğiniz için kullanıcı ve grup oluşturma"
+description: "Intune aboneliğiniz için kullanıcılar ve gruplar oluşturma"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 446156265047994f0a15890d7699991d032c0bd5
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
 
 
 ---
@@ -24,6 +25,8 @@ ms.openlocfilehash: 446156265047994f0a15890d7699991d032c0bd5
 # <a name="create-groups-to-organize-users-and-devices"></a>Kullanıcıları ve cihazları düzenlemek için grup oluşturma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Bu konuda, yöneticilerin Intune’da kullanıcı gruplarını nasıl oluşturacakları açıklanır.
 
 Intune’daki gruplar, cihazlarınızı ve kullanıcılarınızı yönetmek için büyük esneklik sağlar. Grupları kuruluş gereksinimlerinize (örneğin, coğrafi konum, bölüm veya donanım özelliklerine göre) uygun şekilde ayarlayabilir ve bunları bir kullanıcı kümesi için ilke dağıtmaktan bir cihaz kümesine uygulama dağıtmaya kadar çeşitli yönetim görevlerini gerçekleştirmek için kullanabilirsiniz.
 
@@ -87,6 +90,6 @@ Yeni oluşturulan grubu **Gruplar** çalışma alanının **Tüm Kullanıcılar*
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

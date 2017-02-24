@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
-ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
@@ -24,16 +25,16 @@ ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Cihazlar ister şirkete ait ister kişisel olsun, yönetilen bir cihazın er ya da geç Intune yönetiminden kaldırılması gerekir. 
+Cihazlar ister şirkete ait ister kişisel olsun, yönetilen bir cihazın er ya da geç Intune yönetiminden kaldırılması gerekir.
 
-Cihazlar bir süre Intune hizmetine bağlanmasa bile, müdahale etmediğiniz takdirde Intune’dan hiçbir zaman kaldırılmazlar. 
+Cihazlar bir süre Intune hizmetine bağlanmasa bile, müdahale etmediğiniz takdirde Intune’dan hiçbir zaman kaldırılmazlar.
 
 Bir cihazı çeşitli nedenlerle kullanımdan kaldırmanız gerekebilir:
 
--   Kullanıcının şirketten planlı bir şekilde ("yönetilen" ayrılma) ayrılması
--   Kullanıcı aniden ayrılması (işten çıkartılırsa, istifa ederse, vb.).
--   Cihazın kaybolması
--   Bir cihazın kullanım amacının değiştirilmesi (başka bir kullanıcıya verilmesi, farklı bir amaç için yeniden kullanılması vb.)
+-    Kullanıcının şirketten planlı bir şekilde ("yönetilen" ayrılma) ayrılması
+-    Kullanıcı aniden ayrılması (işten çıkartılırsa, istifa ederse, vb.).
+-    Cihazın kaybolması
+-    Bir cihazın kullanım amacının değiştirilmesi (başka bir kullanıcıya verilmesi, farklı bir amaç için yeniden kullanılması vb.)
 
 Mobil cihaz olarak yönetilen cihazlarda seçmeli silme veya tam silme gerçekleştirebilir veya cihazı kilitleyip parolasını sıfırlayabilirsiniz. Cihazı temizleyerek kullanıcının aboneliğini başka bir cihaz eklemek üzere serbest bırakmış olursunuz. Intune istemci yazılımıyla yönetilen bilgisayarları da devre dışı bırakabilirsiniz.
 
@@ -43,6 +44,9 @@ Hem seçmeli silme hem de tam silme işlemi, ilkesini ve şirket portalını kal
 [Seçmeli temizleme](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) cihazdaki kişisel bilgileri etkilemediğinden, Intune’a kendi cihazını kaydetmiş olan çalışanlar için tercih edilen işlemdir. Yalnızca şirket verileri kaldırılır.
 
 Kullanım amacı değiştirilmesi gereken cihazlarda, cihazı fabrika ayarlarına döndüren [tam temizleme](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) işlevini de kullanabilirsiniz.
+
+### <a name="removing-user-licenses-and-managed-devices"></a>Kullanıcı lisanslarını ve yönetilen cihazları kaldırma
+Kullanıcı lisansını kaldırdığınızda o kullanıcının kayıtlı cihazlarının kaydı silinir. En iyi uygulama olarak, bir kullanıcının Intune lisansını kaldırmadan önce yönetilen cihazlardan şirket verilerini kaldırmak için seçmeli temizleme yöntemini kullanmalısınız. Kullanıcı lisansını kaldırdığınızda cihaz uzaktan eylemler için hedeflenemez.
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory portalında cihazları silmek için
 
@@ -76,6 +80,6 @@ Bazı durumlarda, cihazın kendi ömrü sona erer. Böyle durumlarda, tam temizl
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

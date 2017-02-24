@@ -13,21 +13,22 @@ ms.technology:
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 22746475bf50f8e4775c81e6833428c7f2ef9eba
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
 
 
 ---
-# <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>MAM CA ile bir uygulama kullanırken beklenmesi gerekenler
+# <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>Uygulama tabanlı CA ile bir uygulama kullanırken beklenmesi gerekenler
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-MAM CA, onaylanan uygulamanın kimliğini, cihazda bulunması gereken bir aracı uygulama ile doğrular:
+Uygulama tabanlı CA, onaylanan uygulamanın kimliğini, cihazda bulunması gereken bir aracı uygulama ile doğrular:
 *  **iOS**’ta, **Azure Authenticator uygulaması** aracı uygulamadır.
 * **Android**’de, **Intune Şirket Portalı uygulaması** aracı uygulamadır. 
 
-OneDrive veya Outlook gibi MAM CA tarafından desteklenen bir uygulamada ilk kez oturum açan son kullanıcılardan aracı uygulamayı yüklemeleri ve cihazı Azure AD’ye kaydetmeleri istenir. Azure AD'de cihaz kaydetmek (eski adı Çalışma Alanına Katılma idi) bir cihaz kaydı ve karşılığında belirteçlerin yayınlandığı bir sertifika oluşturur.  Bu **MDM kaydı** ile aynı **değildir**. Yönetim profilleri veya ilkeleri uygulanmaz ve cihazdaki uygulamalardan envanter alınmaz.  Aracı uygulamayı yükleme ve cihazı kaydetme işlemi yalnızca yönetilen bir uygulama ilk kez kullanıldığında gerçekleştirilir.
+OneDrive veya Outlook gibi uygulama tabanlı CA tarafından desteklenen bir uygulamada ilk kez oturum açan son kullanıcılardan aracı uygulamayı yüklemeleri ve cihazı Azure AD’ye kaydetmeleri istenir. Azure AD'de cihaz kaydetmek (eski adı Çalışma Alanına Katılma idi) bir cihaz kaydı ve karşılığında belirteçlerin yayınlandığı bir sertifika oluşturur.  Bu **MDM kaydı** ile aynı **değildir**. Yönetim profilleri veya ilkeleri uygulanmaz ve cihazdaki uygulamalardan envanter alınmaz.  Aracı uygulamayı yükleme ve cihazı kaydetme işlemi yalnızca yönetilen bir uygulama ilk kez kullanıldığında gerçekleştirilir.
 
 Aşağıda doğrudan cihazdan türetilen özelliklerin listesi verilmiştir:
 
@@ -45,16 +46,14 @@ Cihaz kaydını kaldırmanın bir yolu, Azure AD yönetici konsolundan kaldırma
 
 
 
-## <a name="mam-ca-with-conditional-access-based-on-device-compliance"></a>Cihaz uyumluluğuna göre koşullu erişim ile MAM CA  
+## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>Cihaz uyumluluğuna göre koşullu erişim ile uygulama tabanlı CA  
 
-[Cihaz uyumluluğu tabanlı koşullu erişimi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Cihaz CA**) [Intune yönetici konsolunda](https://manage.microsoft.com) veya [Azure AD Premium yönetici konsolunda] (https://manage.windowsazure.com) yapılandırabilirsiniz. Cihaz CA, kullanıcıların yalnızca Intune cihaz uyumluluk ilkesi ile uyumlu Intune yönetilen cihazlarla veya etki alanına katılan bilgisayarlarla Exchange Online’a bağlanmasına izin verir.  Bir kullanıcı hem MAM CA hem de cihaz CA ilkeleri için hedeflenen bir veya daha fazla kullanıcı grubuna dahilse, kullanıcının iki gereksinimden birini karşılaması gerekir:
-* Hizmete erişmek için kullanılan uygulama MAM CA tarafından desteklenen bir mobil uygulamadır ve uygulamanın üzerinde çalıştığı cihazda **iOS Authenticator (iOS cihazlar için)** veya **Şirket Portalı uygulaması (Android cihazlar için)** yüklüdür.
+[Cihaz uyumluluğu tabanlı koşullu erişimi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Cihaz CA**) [Intune yönetici konsolunda](https://manage.microsoft.com) veya [Azure AD Premium yönetici konsolunda] (https://manage.windowsazure.com) yapılandırabilirsiniz. Cihaz CA, kullanıcıların yalnızca Intune cihaz uyumluluk ilkesi ile uyumlu Intune yönetilen cihazlarla veya etki alanına katılan bilgisayarlarla Exchange Online’a bağlanmasına izin verir.  Bir kullanıcı, hem uygulama tabanlı CA hem de Cihaz CA ilkeleri için hedeflenen bir veya daha fazla kullanıcı grubuna dahilse, kullanıcının iki gereksinimden birini karşılaması gerekir:
+* Hizmete erişmek için kullanılan uygulama, 
+* tarafından desteklenen bir mobil uygulamadır ve uygulamanın üzerinde çalıştığı cihazda, **iOS Authenticator (iOS cihazlar için)** veya **Şirket Portalı uygulaması (Android cihazlar için)** yüklüdür.
 * Hizmete erişmek için **Intune tarafından yönetilen ve Intune cihaz uyumluluğu ilkesi ile uyumlu** bir cihaz veya bir **etki alanına katılan bilgisayar** kullanılır.  Aşağıda bunu göstermeye yardımcı olmaya yönelik bazı örnekler verilmiştir:
-  * Bir kullanıcı **yerel iOS e-posta uygulamasından** bağlanmayı denerse, yerel posta uygulaması MAM CA tarafından desteklenmediği için **yönetilen ve uyumlu bir cihaz** kullanması gerekir.
+  * Bir kullanıcı, **yerel iOS e-posta uygulamasından** bağlanmayı deniyorsa, yerel posta uygulaması uygulama tabanlı CA tarafından desteklenmediği için **yönetilen ve uyumlu bir cihaz** kullanmalıdır.
   * Bir kullanıcı **Windows ev bilgisayarından** bağlanmayı denerse, etki alanına katılan bir bilgisayar kullanmasını gerektiren **Cihaz CA ilkesi** uygulanır.
-
-
-
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [MAM uygulamaları için bir Exchange Online İlkesi oluşturma](mam-ca-for-exchange-online.md)
@@ -63,10 +62,10 @@ Cihaz kaydını kaldırmanın bir yolu, Azure AD yönetici konsolundan kaldırma
 
 ### <a name="see-also"></a>Ayrıca bkz.
 
-[Uygulama verilerini MAM ilkeleriyle koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Uygulama verilerini uygulama koruma ilkeleriyle koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
@@ -24,13 +25,15 @@ ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Bu konuda Intune yöneticilerinin nasıl ilke oluşturacakları ve yönetilen cihazları dağıtmak için uygulamaları nasıl yayımlayacakları açıklanır.
+
 Uygulamaları Intune'a kaydetmeye başlamadan önce cihazların yönetimi kaydı yapıldığında dağıtılacak olan ilke ayarlarını ve uygulamaları etkinleştirebilirsiniz. Intune ilkeleri, mobil cihazlarda güvenlik ayarlarını denetlemenize, bilgisayarlar için Windows Güvenlik Duvarı ve Endpoint Protection ayarlarını korumanıza ve uygulamaları dağıtmanıza yardımcı olan ayarlar sağlar. Cihazlar Intune'a kaydolduğunda dağıtılacak ilkeleri yapılandırabilir ve uygulamaları ekleyebilirsiniz.
 
 İlkeler ve uygulamalar platforma özgüdür.
 
 ## <a name="manage-device-settings"></a>Cihaz ayarlarını yönetme
 
- Cihaz ilkesi ayarları platforma göre yapılandırılır ve yönetilir. Aşağıdaki platformlar için ilke yapılandırması gerçekleştirebilirsiniz:
+ Cihaz ilkesi ayarları platforma göre yapılandırılır ve yönetilir. Aşağıdaki bağlantılarda ilgili platformlar için mevcut ayarların listesi bulunur:
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android ve Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -72,6 +75,6 @@ Intune'a eklenen uygulamaları yönetilen cihazlara dağıtabilirsiniz:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

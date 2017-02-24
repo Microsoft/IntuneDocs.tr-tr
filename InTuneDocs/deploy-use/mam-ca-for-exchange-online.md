@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: a738771d62d50999e014c1df3ad49399f754a99a
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: ab6d1cf6a6b77be6aff6398ff99135674471ba35
 
 
 ---
@@ -24,11 +25,11 @@ ms.openlocfilehash: a738771d62d50999e014c1df3ad49399f754a99a
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Bu konu, yalnızca Intune mobil uygulama yönetimi (MAM) ilkelerini destekleyen mobil uygulamalara izin vermek üzere, Exchange Online için koşullu erişimin nasıl ayarlanacağına yönelik adım adım yönergeler sağlar.
+Bu konu, yalnızca Intune uygulama koruma ilkelerini destekleyen mobil uygulamalara izin verecek şekilde, Exchange Online için koşullu erişimin nasıl ayarlanacağına yönelik adım adım yönergeler sağlar.
 
 
 ## <a name="create-an-exchange-online-policy"></a>Exchange Online ilkesi oluşturma
-1.  Uygulama erişim özelliğini içeren [Azure portal](https://portal.azure.com)’ında oturum açın. Azure portalı deneyiminde yeniyseniz, bkz. [MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md).
+1.  Uygulama erişim özelliğini içeren [Azure portal](https://portal.azure.com)’ında oturum açın. Azure portalı deneyiminde yeniyseniz, [Uygulama koruma ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md) konusunu okuyun.
 
 2.  **Diğer hizmetler**’i seçin ve "Intune" yazın.
 
@@ -40,7 +41,7 @@ Bu konu, yalnızca Intune mobil uygulama yönetimi (MAM) ilkelerini destekleyen 
 
     ![Ayarlar dikey penceresinin Exchange Online seçeneği vurgulanmış olarak koşullu erişim bölümünü gösteren ekran görüntüsü](../media/MAM-conditional-access-1.png)
 
-6. **İzin verilen uygulamalar** dikey penceresinde, yalnızca Intune MAM ilkeleri tarafından desteklenen uygulamaların Exchange Online’a erişmesine izin vermek için **Intune uygulama ilkelerini destekleyen uygulamalara izin ver** seçeneğini belirleyin. Bu seçeneği belirlediğinizde, desteklenen uygulamalar listesi görüntülenir.
+6. **İzin verilen uygulamalar** dikey penceresinde, yalnızca Intune uygulama koruma ilkeleri tarafından desteklenen uygulamaların Exchange Online’a erişmesine izin vermek için **Intune uygulama ilkelerini destekleyen uygulamalara izin ver** seçeneğini belirleyin. Bu seçeneği belirlediğinizde, desteklenen uygulamalar listesi görüntülenir.
 
     >[!NOTE]
     >iOS ve Android’deki, Exchange Online’a bağlanan yerleşik posta istemcileri de dahil olmak üzere tüm Exchange Active Sync posta istemcilerinin e-posta göndermesi veya alması engellenir. Kullanıcılar, bunun yerine Outlook posta uygulamasını kullanmaları gerektiğini belirten tek bir e-posta alır.
@@ -60,10 +61,10 @@ Bu konu, yalnızca Intune mobil uygulama yönetimi (MAM) ilkelerini destekleyen 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Modern kimlik doğrulaması olmayan uygulamaları engelleme](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Ayrıca bkz.
-[Uygulama verilerini MAM ilkeleriyle koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Uygulama koruma ilkelerini uygulama verileriyle koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: fdbe65ff13b9b16a125ee37f9dd4614c727f2886
+ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
+ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
 
 
 ---
@@ -27,37 +28,59 @@ ms.openlocfilehash: fdbe65ff13b9b16a125ee37f9dd4614c727f2886
 ## <a name="manage-ios-apps"></a>iOS uygulamalarını yönetme
 Şirket verilerinizin korunması, dosya aktarımlarının tarafınızdan yönetilen uygulamalarla kısıtlanmasını da içerir.  iOS uygulamalarını aşağıdaki yollarla yönetebilirsiniz:
 
--   Uygulamalar için bir MAM ilkesi yapılandırarak şirkette veri kaybını önleyin. Biz buna **ilkeyle yönetilen** uygulamalar diyeceğiz.
+-   Uygulamalar için uygulama koruma ilkesi yapılandırarak şirkette veri kaybını önleyin. Biz buna **ilkeyle yönetilen** uygulamalar diyeceğiz.
 
 -   Uygulamaları **MDM kanalı** üzerinden de dağıtıp yönetebilirsiniz.  Bunun için cihazların MDM çözümüne kaydedilmesi gerekir. Bunlar **ilkeyle yönetilen** uygulamaları veya diğer yönetilen uygulamalar olabilir.
 
 iOS cihazları için **Yönetimde açma** özelliği, dosya aktarımlarını yalnızca **MDM kanalı** aracılığıyla dağıtılan uygulamalar arasında gerçekleşecek şekilde sınırlandırabilir. Yönetimde açma kısıtlamaları, yapılandırma ayarlarında belirlenir ve MDM çözümünüz aracılığıyla dağıtılır.  Kullanıcı dağıtılan uygulamayı yüklendiğinde, ayarladığınız kısıtlamalar uygulanır.
-##  <a name="using-mam-with-ios-apps"></a>iOS uygulamalarıyla MAM’yi kullanma
-Mobil uygulama yönetimi (MAM) ilkeleri iOS **Yönetimde açma** özelliğiyle birlikte kullanıldığında, şirket verileri aşağıdaki yollarla korunabilir:
 
--   **Herhangi bir MDM çözümü tarafından yönetilmeyen, çalışanın sahip olduğu cihazlar:** MAM ilke ayarlarını **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** olarak belirleyebilirsiniz. Son kullanıcı ilkeyle yönetilmeyen bir uygulamada korunan bir dosyayı açtığında dosya okunamaz.
+##  <a name="manage-data-transfer-between-ios-apps"></a>iOS uygulamaları arasında veri aktarımını yönetme
+Uygulama koruma ilkeleri, iOS **Yönetimde açma** özelliğiyle birlikte kullanıldığında, şirket verileri aşağıdaki yollarla korunabilir:
 
--   **Intune tarafından yönetilen cihazlar:** Intune’a kayıtlı cihazlar için, MAM ilkelerine sahip uygulamalarla Intune aracılığıyla dağıtılan diğer yönetilen iOS uygulamaları arasında veri aktarımına otomatik olarak izin verilir. MAM ilkelerine sahip uygulamalar arasında veri aktarımına izin vermek için, **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** ayarını etkinleştirin. **Yönetimde açma** özelliğini kullanarak Intune aracılığıyla dağıtılmış uygulamalar arasındaki veri aktarımını denetleyebilirsiniz.   
+-   **Herhangi bir MDM çözümüyle yönetilmeyen, çalışana ait cihazlar:** [Uygulama koruma ilkesi ayarını](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md), **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** olarak belirleyebilirsiniz. Son kullanıcı ilkeyle yönetilmeyen bir uygulamada korunan bir dosyayı açtığında dosya okunamaz.
+
+-   **Intune tarafından yönetilen cihazlar:** Intune’a kayıtlı cihazlarda, uygulama koruma ilkelerine sahip uygulamalar ile Intune aracılığıyla dağıtılan diğer yönetilen iOS uygulamaları arasında veri aktarımına otomatik olarak izin verilir. Uygulama koruma ilkeleriyle uygulamalarınız arasında veri aktarımına izin vermek için, **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** ayarını etkinleştirin. **Yönetimde açma** özelliğini kullanarak Intune aracılığıyla dağıtılmış uygulamalar arasındaki veri aktarımını denetleyebilirsiniz.   
 
 -   **Üçüncü taraf MDM çözümü tarafından yönetilen cihazlar:** iOS **Yönetimde açma** özelliğini kullanarak veri aktarımını yalnızca yönetilen uygulamalarla kısıtlayabilirsiniz.
-Üçüncü taraf MDM çözümünüzü kullanarak dağıttığınız uygulamaların Intune’da yapılandırdığınız MAM ilkeleriyle de ilişkilendirildiğinden emin olmak için, [Kullanıcı UPN ayarını yapılandırma](#configure-user-upn-setting) yönergesinde açıklandığı gibi kullanıcı UPN ayarını yapılandırmalısınız.  Uygulamalar kullanıcı UPN ayarı ile dağıtılırken, son kullanıcı iş hesabını kullanarak oturum açtığında uygulamaya MAM ilkeleri uygulanır.
+Üçüncü taraf MDM çözümünüzü kullanarak dağıttığınız uygulamaların, Intune’da yapılandırdığınız uygulama koruma ilkeleriyle de ilişkilendirildiğinden emin olmak için, kullanıcı UPN ayarını [Kullanıcı UPN ayarını yapılandırma](#configure-user-upn-setting-for-third-party-emm) yönergesinde açıklandığı gibi yapılandırmalısınız.  Uygulamalar kullanıcı UPN ayarı ile dağıtılırken, son kullanıcı iş hesabını kullanarak oturum açtığında uygulamaya, uygulama koruma ilkeleri uygulanır.
 
 > [!IMPORTANT]
 > Kullanıcı UPN ayarı yalnızca bir üçüncü taraf MDM tarafından yönetilen cihazlara dağıtılan uygulamalar için gereklidir.  Intune ile yönetilen cihazlar için bu ayar gerekli değildir.
 
-## <a name="configure-user-upn-setting"></a>Kullanıcı UPN ayarını yapılandırma
-Bu yapılandırma bir üçüncü taraf MDM çözümü tarafından yönetilen cihazlar için gereklidir. Aşağıda açıklanan yordam, UPN ayarının nasıl uygulanacağı ve ortaya çıkan son kullanıcı deneyimi hakkında genel bir akış sunar:
+## <a name="configure-user-upn-setting-for-third-party-emm"></a>Üçüncü taraf EMM için kullanıcı UPN ayarını yapılandırma
+Kullanıcı UPN ayarını yapılandırmak, üçüncü taraf EMM çözümü tarafından yönetilen cihazlar için **gereklidir**. Aşağıda açıklanan yordam, UPN ayarının nasıl yapılandırılacağı ve ortaya çıkan son kullanıcı deneyimi hakkında genel bir bakış sunar:
 
 
-1.  Azure portalında, iOS platformu için [bir mobil uygulama yönetimi ilkesi yapılandırın](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md). İlke ayarlarını şirket gereksinimlerinize göre yapılandırın ve bu ilkeye sahip olacak uygulamaları seçin.
+1.  Azure portalında, iOS platformu için [bir uygulama koruma ilkesi yapılandırın](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md). İlke ayarlarını şirket gereksinimlerinize göre yapılandırın ve bu ilkeye sahip olacak uygulamaları seçin.
 
-2.  3. ve 4. adımlarda açıklanan ayarı kullanarak, **üçüncü taraf MDM çözümünüz aracılığıyla** yönetilmesini istediğiniz uygulamaları ve e-posta profilini dağıtın.
+2.  Aşağıda genelleştirilen adımları kullanarak, **üçüncü taraf MDM çözümünüz aracılığıyla** yönetilmesini istediğiniz uygulamaları ve e-posta profilini dağıtın. Bu deneyim Örnek 1’de de ele alınmıştır.
 
-3.  Uygulamayı şu uygulama yapılandırma ayarları ile dağıtın: key=IntuneMAMUPN, Value=<username@company.com> [örnek: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+  1.  Uygulamayı aşağıdaki uygulama yapılandırma ayarlarıyla dağıtın:
 
-4.  Birlikte açma yönetimi ilkesini kayıtlı cihazlara dağıtın.
+      **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
-### <a name="example-end-user-experience"></a>Son kullanıcı deneyimi örneği
+      Örnek: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+
+  2.  Üçüncü taraf MDM sağlayıcınızı kullanarak kayıtlı cihazlara Yönetimde açma ilkesini dağıtın.
+
+
+### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Örnek 1: Üçüncü taraf MDM konsolunda yönetici deneyimi
+
+1. Üçüncü taraf MDM sağlayıcınızın yönetici konsoluna gidin. Uygulama yapılandırma ayarlarını kayıtlı iOS cihazlarına dağıttığınız konsol bölümüne gidin.
+
+2. Uygulama Yapılandırması bölümünde aşağıdaki ayarı girin:
+
+  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+
+  Anahtar/değer çiftinin tam söz dizimi, üçüncü taraf MDM sağlayıcınıza göre farklılık gösterebilir. Aşağıdaki tabloda üçüncü taraf MDM sağlayıcıları ve anahtar/değer çifti için girmeniz gereken tam değer örnekleri bulunur.
+
+|Üçüncü taraf MDM sağlayıcısı| Yapılandırma Anahtarı | Değer Türü | Yapılandırma Değeri|
+| ------- | ---- | ---- | ---- |
+|VMware AirWatch| IntuneMAMUPN | Dize | {UserPrincipalName}|
+|MobileIron | IntuneMAMUPN | Dize | ${userUPN} **veya** ${userEmailAddress} |
+
+
+### <a name="example-2-end-user-experience"></a>Örnek 2: Son kullanıcı deneyimi
 
 1.  Son kullanıcı cihaza Microsoft Word uygulamasını yükler.
 
@@ -68,17 +91,27 @@ Bu yapılandırma bir üçüncü taraf MDM çözümü tarafından yönetilen cih
 4.  Word uygulaması başlatıldığında son kullanıcıdan kendi iş hesabını kullanarak oturum açması istenir.  İstendiğinde son kullanıcının girdiği bu iş hesabı, Microsoft Word uygulaması için uygulama yapılandırma ayarlarında belirttiğiniz hesapla eşleşmelidir.
 
     > [!NOTE]
-    > Son kullanıcı kişisel çalışmaları için Word’e başka kişisel hesaplar ekleyebilir ve Word uygulamasını kişisel bağlamda kullanırken MAM ilkelerinden etkilenmez.
+    > Son kullanıcı, kişisel çalışmaları için Word’e başka kişisel hesaplar ekleyebilir ve Word uygulamasını kişisel bağlamda kullanırken uygulama koruma ilkelerinden etkilenmez.
 
-5.  Oturum açma başarılı olduğunda uygulama ilkesi ayarları Word uygulamasına uygulanır.
+5.  Oturum açma başarılı olduğunda uygulama koruma ilkesi ayarları Word uygulamasına uygulanır.
 
 6.  Veri aktarımı başarılı olmuştur ve belge, uygulamada şirket kimliği olarak etiketlenmiştir. Ayrıca, veriler iş bağlamında ele alınır ve ilke ayarları buna göre uygulanır.
 
+### <a name="validate-user-upn-setting-for-third-party-emm"></a>Üçüncü taraf EMM için kullanıcı UPN ayarını doğrulama
+
+Kullanıcı UPN ayarını yapılandırdıktan sonra, iOS uygulamasının Intune uygulama koruma ilkesi alabildiğini ve buna uyabildiğini doğrulamalısınız.
+
+Örneğin, **Uygulama PIN’i iste** ilke ayarını bir cihazda görsel olarak test etmek kolaydır. İlke ayarı **Evet**’e ayarlıysa son kullanıcı, şirket verilerine erişmeye çalıştığında bir PIN ayarlaması veya girmesi gerektiğini belirten bir istem görür.
+
+İlk olarak iOS uygulamasında [uygulama koruma ilkesi oluşturup dağıtın](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md). Uygulama koruma ilkesini test etme hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkelerini doğrulama](validate-mobile-application-management.md).
+
+
+
 ### <a name="see-also"></a>Ayrıca bkz.
-[Microsoft Intune ile mobil uygulama yönetimi ilkeleri kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Microsoft Intune ile uygulama koruma ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

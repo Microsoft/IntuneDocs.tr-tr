@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 
 ---
 
-# <a name="enroll-mobile-devices-and-install-an-app"></a>Mobil cihazları kaydetme ve uygulama yükleme
+# <a name="enable-enrollment-for-mobile-devices"></a>Mobil cihaz kaydını etkinleştirme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Bu konuda bir Intune yöneticisinin mobil cihaz kaydını nasıl etkinleştirileceği açıklanır. Telefonunuzda Intune’u kullanırken yardım almak için bkz. [İşleri tamamlamak için yönetilen cihazları kullanma](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions). 
 
 Intune ile mobil cihaz yönetimini ayarlamak için öncelikle hesabınızla ilişkilendirilmiş olan cihazları yönetebilecek hizmeti tanımlayan *mobil cihaz yönetimi yetkilisini* ayarlamanız gerekir. Bu kılavuzda Intune hizmetini System Center Configuration Manager'ın yerine kullanacağınız kabul edilmektedir. MDM yetkilisi ayarlandıktan sonra cihaz platformları için yönetimi etkinleştirebilir ve Şirket Portalı uygulamasıyla cihazlarınızı kaydedebilirsiniz.
 
@@ -46,7 +49,7 @@ iOS, Mac ve Android for Work cihazları için kayıt işleminin etkinleştiriler
 
 Yönetmek istediğiniz cihaz platformu için cihaz kaydını etkinleştirin. Platforma bağlı olarak farklı gereksinimler bulunur:
 
--  [iOS ve macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS ve macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [Window bilgisayar](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Window 10 Mobile ve Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -69,6 +72,6 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* son adımını da tamamlam
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

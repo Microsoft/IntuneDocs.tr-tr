@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 1d0bb386cab923f3d1b45a0c6b64296fd2291460
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b6ab60eff3c65244290b7141e81a7b052dd790ed
 
 
 ---
@@ -24,9 +25,11 @@ ms.openlocfilehash: 1d0bb386cab923f3d1b45a0c6b64296fd2291460
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Kullanıcıların Intune hizmetini kullanmak veya cihazlarını yönetime kaydetmek üzere oturum açabilmesi için önce [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854) aracılığıyla her kullanıcıya Intune aboneliğinize yönelik bir lisans atamanız gerekir.
+Bu konuda, yöneticilerin yönetime cihaz getirmeleri için kullanıcılara Intune lisanslarını nasıl atayacakları açıklanır.
 
-Microsoft Enterprise Mobility + Security (EMS) kullanan kuruluşların, yalnızca EMS paketinde Azure Active Directory Premium veya Intune hizmetleri gerektiren kullanıcıları olabilir. [Azure Active Directory PowerShell cmdlet’lerini](https://msdn.microsoft.com/library/jj151815.aspx) kullanarak hizmetlerin birini veya bir alt kümesini atayabilirsiniz. Daha fazla bilgi için bkz. [Intune lisanslarını PowerShell kullanarak yönetme](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
+Kullanıcıların Intune hizmetini kullanmak veya cihazlarını yönetime kaydetmek üzere oturum açabilmesi için önce [Office 365 portalındaki](http://go.microsoft.com/fwlink/p/?LinkId=698854) Intune aboneliğinizde her kullanıcıya Intune aboneliğinize yönelik bir lisans atamanız gerekir.
+
+Microsoft Enterprise Mobility + Security (EMS) kullanan kuruluşların, yalnızca EMS paketinde Azure Active Directory Premium veya Intune hizmetleri gerektiren kullanıcıları olabilir. [Azure Active Directory PowerShell cmdlet’lerini](https://msdn.microsoft.com/library/jj151815.aspx) kullanarak bir hizmeti ya da hizmetlerden oluşan bir kümeyi atayabilirsiniz. Daha fazla bilgi için bkz. [Intune lisanslarını PowerShell kullanarak yönetme](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
 ## <a name="how-intune-licenses-are-assigned"></a>Intune lisansları nasıl atanır
 Kullanıcı hesapları şirket içi Active Directory’nizden eşitlendiğinde veya [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854) aracılığıyla el ile bulut hizmetleri aboneliğinize eklendiğinde, bu hesaplara otomatik olarak bir Intune lisansı atanmaz. Bunun yerine, daha sonra bir Intune kiracı yöneticisinin kullanıcı hesabını düzenleyerek Office 365 portalından kullanıcıya lisans ataması gerekir.
@@ -97,6 +100,6 @@ Zaten lisans atanmış bir kullanıcı için EMS lisansının Intune bölümün�
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -13,35 +13,35 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
 
 ---
 
-# <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Microsoft Intune ile mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma
+# <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Mobil uygulama yönetimi (MAM) ilkeleri, Intune tarafından yönetilen veya yönetilmeyen cihazlarda çalışan uygulamalara uygulanabilir. MAM ilkelerinin çalışmasıyla ve Intune MAM ilkeleri tarafından desteklenen senaryolarla ilgili daha ayrıntılı bir açıklama için bkz. [Mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+Bu konuda, **Azure portalında** uygulama koruma ilkesi oluşturma işlemi açıklanır. Azure portalı, uygulama koruma ilkelerinin oluşturulacağı yeni yönetim konsoludur ve uygulama koruma ilkelerini oluştururken bu portalı kullanmanız önerilir. Azure portalı, aşağıdaki MAM senaryolarını destekler:
 
-Bu konu başlığı altında, **Azure portalında** MAM ilkesi oluşturma işlemi açıklanır. Azure portalı, MAM ilkelerinin oluşturulacağı yeni yönetim konsoludur ve MAM ilkelerini oluşturmak için bu portalı kullanmanızı öneririz. Azure portalı, aşağıdaki MAM senaryolarını destekler:
 - Intune'a kayıtlı cihazlar.
 - Üçüncü taraf MDM çözümleri tarafından yönetilen cihazlar.
 - Hiçbir MDM çözümü tarafından yönetilmeyen cihazlar (KGC).
 
 >[!IMPORTANT]
-Şu anda cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız, aşağıdakileri göz önünde bulundurun:
+Cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız aşağıdakileri göz önünde bulundurun:
 
-> * [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilmiş cihazlara yönelik uygulamaları destekleyen bir MAM ilkesi oluşturabilirsiniz.
-> * Intune yönetici konsolunda oluşturulan MAM ilkeleri, Azure portalına aktarılamaz.  MAM ilkeleri, Azure portalında yeniden oluşturulmalıdır.
+> * [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilmiş cihazlara yönelik uygulamaları destekleyen bir uygulama koruma ilkesi oluşturabilirsiniz.
+> * Intune yönetici konsolunda oluşturulan uygulama koruma ilkeleri Azure portalına aktarılamaz.  Uygulama koruma ilkeleri, Azure portalında yeniden oluşturulmalıdır.
 
-> * Intune yönetici konsolunda tüm MAM ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, MAM ilkeleri oluşturmak için yeni yönetim konsoludur.
+> * Intune yönetici konsolunda tüm uygulama koruma ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, uygulama koruma ilkeleri oluşturmaya yönelik yeni yönetim konsoludur.
 
-> * Yönetilen uygulamaları dağıtmak için, Intune yönetici konsolunda bir MAM ilkesi oluşturmalısınız. Bu durumda, hem Intune yönetici konsolunda hem de Azure portalında MAM ilkeleri oluşturmak isteyebilirsiniz: yönetilen uygulamaları dağıtabileceğinizden emin olmak için Intune yönetici konsolunda ve tüm MAM ilkesi ayarlarını barındıran yeni yönetici konsolu olduğu için Azure portalında.
+> * Yönetilen uygulamaları dağıtmak için, Intune yönetici konsolunda bir uygulama koruma ilkesi oluşturmalısınız. Bu durumda, hem Intune yönetici konsolunda hem de Azure portalında uygulama koruma ilkeleri oluşturmak isteyebilirsiniz: yönetilen uygulamaları dağıtabileceğinizden emin olmak için Intune yönetici konsolunda ve tüm uygulama koruma ilkesi ayarlarını barındıran yeni yönetici konsolu olduğu için Azure portalında.
 
-> * Hem Intune yönetici konsolunda hem de Azure portalında MAM ilkeleri oluşturursanız, uygulamalara Azure portalında oluşturulan ilke uygulanır.
+> * Hem Intune yönetici konsolunda hem de Azure portalında uygulama koruma ilkeleri oluşturursanız, uygulamalara Azure portalında oluşturulan ilke uygulanır.
 
 Android ve iOS platformlarında desteklenen ilke ayarları listesini görmek için, aşağıdakilerden birini seçin:
 
@@ -49,16 +49,24 @@ Android ve iOS platformlarında desteklenen ilke ayarları listesini görmek iç
 - [iOS ilkeleri](ios-mam-policy-settings.md)
 - [Android ilkeleri](android-mam-policy-settings.md)
 
-##  <a name="create-a-mam-policy"></a>MAM ilkesi oluşturma
-MAM ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) bilgilerini gözden geçirin.
-1.  **Intune mobil uygulama yönetimi &gt; Ayarlar**’ı seçerek **Ayarlar** dikey penceresini açın.
+- Uygulama koruma ilkelerinin çalışmasıyla ve Intune uygulama koruma ilkeleri tarafından desteklenen senaryolarla ilgili daha ayrıntılı bir açıklama için bkz. [Uygulama koruma ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-    ![Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+##  <a name="create-an-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
+Uygulama koruma ilkeleri Azure Portal’da oluşturulur. Azure portalını ilk kez kullanıyorsanız, Azure Portal’ı hakkında bilgi edinmek için bkz. [Microsoft Intune uygulama koruma ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md). Uygulama koruma ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) bilgilerini gözden geçirin.
 
-    > [!TIP]
-    > Azure portalını ilk kez kullanıyorsanız, portalı tanımak için öncelikle [Microsoft Intune MAM ilkeleri için Azure portalı](azure-portal-for-microsoft-intune-mam-policies.md) konusunu okuyun.
+Uygulama koruma ilkeleri oluşturmak için aşağıdaki adımları izleyin:
 
-2.  **Ayarlar** dikey penceresinde **Uygulama ilkesi**’ni seçin. Yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama ilkesi** dikey penceresi açılır. **İlke ekle**‘yi seçin.
+1. [Azure portalına](http://portal.azure.com) gidin ve kimlik bilgilerinizi girin.
+
+2. **Diğer Hizmetler**’i seçin ve "Intune" yazın.
+
+3. **Intune Uygulama Koruması**’nı seçin.
+
+4. **Intune mobil uygulama yönetimi &gt; Ayarlar**’ı seçerek **Tüm Ayarlar** dikey penceresini açın.
+
+    ![Intune mobil uygulama yönetimi dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
+
+2.  **Tüm Ayarlar** dikey penceresinde **Uygulama ilkesi**’ni seçin. Yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama ilkesi** dikey penceresi açılır. **İlke ekle**‘yi seçin.
 
     ![İlke ekle menü seçeneğinin vurgulandığı Uygulama ilkesi dikey penceresinin ekran görüntüsü ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -90,10 +98,10 @@ MAM ilkesi oluşturmadan önce, [önkoşullar ve destek](get-ready-to-configure-
 İlke oluşturmayı önceki yordamda açıklandığı şekilde tamamladığınızda, ilke kullanıcılara dağıtılmaz. Bir ilkeyi dağıtmak için aşağıdaki "Bir ilkeyi kullanıcılara dağıtma" bölümüne bakın.
 
 > [!IMPORTANT]
-> Uygulama için Intune yönetici konsolunu kullanarak bir MAM ilkesi ve Azure portalını kullanarak başka bir MAM ilkesi oluşturursanız, Azure portalını kullanarak oluşturduğunuz ilke önceliklidir. Ancak, Intune veya Configuration Manager konsolunda yapılan raporlamada, Intune yönetici konsolunda oluşturulan ilke ayarları belirtilir. Örneğin:
+> Uygulama için, Intune yönetici konsolunu kullanarak bir uygulama koruma ilkesi ve Azure portalını kullanarak başka bir uygulama koruma ilkesi oluşturursanız, Azure portalını kullanarak oluşturduğunuz ilke önceliklidir. Ancak, Intune veya Configuration Manager konsolunda yapılan raporlamada, Intune yönetici konsolunda oluşturulan ilke ayarları belirtilir. Örneğin:
 >
-> -   Intune yönetici konsolunda, uygulamadan kopyalama yapılmasını engelleyen bir MAM ilkesi oluşturdunuz.
-> -   Azure konsolunda, uygulamadan kopyalama yapılmasına izin veren bir MAM ilkesi oluşturdunuz.
+> -   Intune yönetici konsolunda, uygulamadan kopyalama yapılmasını engelleyen bir uygulama koruma ilkesi oluşturdunuz.
+> -   Azure konsolunda, uygulamadan kopyalama yapılmasına izin veren bir uygulama koruma ilkesi oluşturdunuz.
 > -   Bu ilkelerin ikisini de aynı uygulamayla ilişkilendirdiniz.
 > -   Azure konsolunda oluşturduğunuz ilke öncelik kazanır ve kopyalamaya izin verilir.
 > -   Ancak, Intune konsolundaki durum ve raporlar, hatalı bir şekilde kopyalamanın engellendiğini belirtir.
@@ -116,8 +124,8 @@ Yalnızca [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisansları ata
 > iOS ve Android cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır. Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
 Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.:
-* [Android uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Android uygulamanız uygulama koruma ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS uygulamanız uygulama koruma ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>Mevcut ilkeleri değiştirme
 Mevcut ilkeyi düzenleyebilir ve bunu hedeflenen kullanıcılara uygulayabilirsiniz. Bununla birlikte, mevcut ilkeleri değiştirdiğinizde, uygulamalarda oturum açmış olan kullanıcılar bu değişiklikleri 8 saat boyunca görmez.
@@ -171,11 +179,11 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerde
 [Uyumluluğu ve kullanıcı durumunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Ayrıca bkz.
-* [Android uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Android uygulamanız uygulama koruma ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS uygulamanız uygulama koruma ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

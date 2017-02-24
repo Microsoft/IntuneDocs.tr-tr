@@ -1,11 +1,11 @@
 ---
-title: "Windows 10 cihazları için Intune VPN ayarları | Intune Azure önizlemesi | Microsoft Docs"
-description: "Intune Azure önizlemesi: Windows 10 cihazlarında VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarlarını öğrenin."
+title: "Windows 10 cihazlar için Intune VPN ayarları | Intune Azure önizlemesi | Microsoft Docs"
+description: "Intune Azure önizlemesi: Windows 10 cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi edinin."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,29 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 7f09fa9bb8a9817aaad40c6452cff2a866a926d9
 
 
 ---
 
-# <a name="vpn-settings-for-windows-10-devices-in-intune-azure-preview"></a>Intune Azure önizlemesinde Windows 10 cihazları için VPN ayarları
+# <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’daki Windows 10 cihazlar için VPN ayarları
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden bazıları yapılandırılabilir değildir.
+Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden bazıları yapılandırılamaz.
 
 
 ## <a name="base-vpn-settings"></a>Temel VPN ayarları
 
 
-- **Bağlantı adı** - Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan son kullanıcılar bu adı görür.
+- **Bağlantı adı** - Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantıları listesine göz atan son kullanıcılar bu adı görür.
 - **Sunucular** - Cihazların bağlanacağı bir veya birden çok VPN sunucusu ekleyin.
     - **Ekle** - Aşağıdaki bilgileri belirtebileceğiniz **Satır Ekle** dikey penceresini açar:
         - **Açıklama** - Sunucu için **Contoso VPN sunucusu** gibi açıklayıcı bir ad belirtin.
         - **IP adresi veya FQDN** - Cihazların bağlanacağı VPN sunucusunun IP adresini veya tam etki alanı adını sağlayın. Örnekler: **192.168.1.1**, **vpn.contoso.com**.
         - **Varsayılan sunucu** - Bu sunucuyu cihazların bağlantı oluşturmak için kullanacağı varsayılan sunucu olarak etkinleştirir. Varsayılan sunucu olarak tek bir sunucu ayarladığınızdan emin olun.
-    - **İçeri aktar** - Açıklama, IP adresi veya FQDN, Varsayılan sunucu biçiminde virgülle ayrılmış bir sunucu listesi içeren bir dosyaya göz atın. Bunları **Sunucular** listesine içeri aktarmak için **Tamam**’ı seçin.
+    - **İçeri aktar** - Açıklama, IP adresi veya FQDN, Varsayılan sunucu biçiminde virgülle ayrılmış bir sunucu listesi içeren bir dosya bulun. Bunları **Sunucular** listesine aktarmak için **Tamam**’ı seçin.
     - **Dışarı aktar** - Sunucu listesini virgülle ayrılmış değerler (csv) dosyasına aktarır.
 
 **Bağlantı türü** - Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
@@ -79,8 +79,8 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 
 Özel XML komutları yazma hakkında daha fazla bilgi için her bir üreticinin VPN belgelerine başvurun.
 
-**Bölünmüş tünel** - Trafiğe bağlı olarak hangi bağlantının kullanılacağına cihazların karar vermesini sağlayan bu seçeneği **etkinleştirin** veya **devre dışı bırakın**. Örneğin, oteldeki bir kullanıcı çalışma dosyalarına erişmek için VPN bağlantısını, ama normal web’e göz atmak için otelin standart ağını kullanır.
-- **Bu VPN bağlantısının tünel oluşturma rotalarını ayırma** - Üçüncü taraf VPN sağlayıcıları için isteğe bağlı rotalar ekleyin. Hedef önekini ve her birinin önek boyutunu belirtin.
+**Bölünmüş tünel** - Trafiğe bağlı olarak hangi bağlantının kullanılacağına cihazların karar vermesini sağlayan bu seçeneği **etkinleştirin** veya **devre dışı bırakın**. Örneğin, oteldeki bir kullanıcı çalışma dosyalarına erişmek için VPN bağlantısını, web’de her zamanki gibi gezinmek içinse otelin standart ağını kullanır.
+- **Bu VPN bağlantısının bölünmüş tünel rotaları** - Üçüncü taraf VPN sağlayıcıları için isteğe bağlı rotalar ekleyin. Hedef ön ekini ve her birinin ön ek boyutunu belirtin.
 
 ## <a name="apps-and-traffic-rules"></a>Uygulamalar ve Trafik Kuralları
 
@@ -119,6 +119,6 @@ Her sunucu için. şunları belirtin:
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

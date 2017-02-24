@@ -1,11 +1,11 @@
 ---
-title: "Intune’da kayıt kısıtlamalarını ayarlama | Intune Azure önizlemesi | Microsoft Docs"
-description: "Intune Azure önizlemesi: Intune’da platforma göre kaydı kısıtlama ve cihaz kayıt sınırı ayarlama. "
+title: "Intune’da kayıt kısıtlamaları ayarlama | Intune Azure önizlemesi | Microsoft Docs"
+description: "Intune Azure önizlemesi: Intune’da platforma göre kayıt kısıtlama ve cihaz kaydı sınırı ayarlama. "
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 1bdefce35c20ce24b94ee701a2d13b5408f435ce
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
 
 ---
 
@@ -23,11 +23,15 @@ ms.openlocfilehash: 1bdefce35c20ce24b94ee701a2d13b5408f435ce
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-İzin verilebilen platformları belirterek, Intune’a kaydolmasına izin verilen cihaz türlerini sınırlayabilirsiniz. Ayrıca, bir kullanıcının kaydetmesine izin verilen cihaz sayısı üst sınırını da ayarlayabilirsiniz.
+Kaydolmasına izin vereceğiniz en fazla cihaz sayısını ve türünü ayarlayabilirsiniz. Kayıt Kısıtlamaları dikey penceresinde şunları ayarlayabilirsiniz:
 
-## <a name="set-device-type-restrictions"></a>Cihaz türü kısıtlamalarını ayarlama
+- Kayıt izni olan platformlar ile Android ve iOS için kişisel olarak sahip olunan cihazların kayıt olmasını engelleyip engellememe.
 
-1. Azure Portal’da **Diğer Hizmetler**’i seçin, metin kutusuna **Intune** girin ve sonra **Diğer** > **Intune**’u seçin.
+- Bir kullanıcının kaydetme izni olduğu en fazla cihaz sayısı.
+
+## <a name="set-device-type-restrictions"></a>Cihaz türü kısıtlamaları ayarlama
+
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
 2. Intune dikey penceresinde, **Cihazları kaydet**’i seçtikten sonra **Kayıt Kısıtlamaları**’nı seçin.
 
@@ -35,28 +39,33 @@ ms.openlocfilehash: 1bdefce35c20ce24b94ee701a2d13b5408f435ce
 
 4. **Tüm Kullanıcılar** dikey penceresinde **Platformlar**’ı seçin.
 
-5. Intune’a kaydedilmeye izinli platformlar için **İzin Ver**’i seçin. Kaydedilmesini engellemek istediğiniz platformlar için **Engelle**’yi seçin.
+5. Intune’a kaydedilme izni olan platformlar için **İzin Ver**’i seçin. Kaydedilmesini engellemek istediğiniz platformlar için **Engelle**’yi seçin. Varsayılan ayarlarda **İzin Ver** olarak ayarlanan platformlar. 
+
+    >[!NOTE]
+    >Bu ayarlar, Intune yazılım istemcisini kullanan Windows kayıtlarına uygulanmaz veya bu kayıtları engellemez. Bu ayarlar yalnızca mobil cihaz yönetimini kullanan kayıtları etkiler. 
 
 6. **Kaydet**’i seçin.
 
 7. **Platform Yapılandırmaları**’nı seçin.
 
-8. Kişilere ait olan iOS cihazlarının kaydedilmesine izin vermeyi veya engellemeyi seçin.
+8. Kişisel olarak sahip olunan iOS ve Android cihazların kaydedilmesine **izin vermeyi** veya bunu **engellemeyi** seçin.
 
 9. **Kaydet**’i seçin.
 
-## <a name="set-device-limit-restrictions"></a>Cihaz sınırı kısıtlamalarını ayarlama
+## <a name="set-device-limit-restrictions"></a>Cihaz sınırı kısıtlamaları ayarlama
 
-1. Azure Portal’ın Intune dikey penceresinde **Cihazları kaydet**’i ve ardından **Cihaz Kısıtlamaları**’nı seçin.
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2. **Cihaz Sınırı Kısıtlamaları**’nın altında **Varsayılan**’ı seçin.
+2. Intune dikey penceresinde, **Cihazları kaydet**’i seçtikten sonra **Kayıt Kısıtlamaları**’nı seçin.
 
-3. **Tüm Kullanıcılar** dikey penceresinde **Cihaz Sınırı**’nı seçin.
+3. **Cihaz Sınırı Kısıtlamaları**’nın altında **Varsayılan**’ı seçin.
 
-4. Bir kullanıcının kaydedebileceği en fazla cihaz sayısını seçin ve ardından **Kaydet**'i seçin.
+4. **Tüm Kullanıcılar** dikey penceresinde **Cihaz Sınırı**’nı seçin.
+
+5. Bir kullanıcının kaydedebileceği en fazla cihaz sayısını ve sonra **Kaydet**'i seçin.
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

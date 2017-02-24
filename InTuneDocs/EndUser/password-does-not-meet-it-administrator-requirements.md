@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 395c9bdc8aad13123b6a22b6edac0b8714323f2f
+ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
+ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
 
 
 ---
@@ -45,12 +46,12 @@ PIN veya parola sorunu açıklamaları:
 
 - **Parolanız çok kısa süre önce kullanıldı**. BT yöneticiniz geçmişte kullandığınız önceki parolaları kullanmanızı engelliyor. Daha önce kullanmadığınız bir parola seçin.
 
-- **Parola, gereksinimlerini karşılamaya yetecek kadar karmaşık değil**. BT yöneticiniz parolanızda daha karmaşık karakterler kullanmanızı gerekli hale getirmiş. Sayılar, büyük harfler ve $, % ve # benzeri semboller gibi karakterler kullanmayı deneyin.
+- **Parola, gereksinimlerini karşılamaya yetecek kadar karmaşık değil**. BT yöneticiniz parolanızda daha karmaşık karakterler kullanmanızı gerekli hale getirmiş. Sayılar, büyük harfler ve $, % ve # benzeri semboller gibi karakterler kullanmayı deneyin. Cihazınızdaki diğer hesaplar için de geçerli olabileceğinden, parolanızın BT tarafından cihazınız için ayarlanan gereksinimleri karşıladığından emin olmak üzere diğer iş hesaplarını da kontrol ettiğinizden emin olun.
 
 Parolanızı gereksinimlerle uyumlu hale getirme konusunda sorun yaşıyorsanız, BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
