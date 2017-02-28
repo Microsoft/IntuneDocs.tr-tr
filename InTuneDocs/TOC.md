@@ -156,7 +156,7 @@
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [E-posta erişimini koruma: örnekler](deploy-use/restrict-email-access-example-scenarios.md)
 ### [O365 hizmetlerine yalnızca ilkeyle yönetilen uygulamaların erişimine izin ver](deploy-use/allow-policy-managed-apps-access-to-o365.md)
-#### [MAM CA ile uygulamalar](deploy-use/use-apps-with-mam-ca.md)
+#### [Uygulamaları Uygulama tabanlı CA ile kullanma](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [ADAL olmadan uygulama engelleme](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Ağlara erişimi koruma (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
@@ -222,8 +222,3 @@
 ## [Cihaz tehdit korumasında sorun giderme](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [Sözlük](understand-explore/intune-glossary.md)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
