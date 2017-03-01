@@ -206,6 +206,7 @@
 
 # [Sorun Giderme](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [Destek alma](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [Intune'la raporları izleme](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Endpoint Protection sorunlarını giderme](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [Şirket kaynak erişimi sorunlarını giderme](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [Uygulama dağıtımı sorunlarını giderme](troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
