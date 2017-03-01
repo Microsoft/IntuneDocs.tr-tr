@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
+ms.lasthandoff: 02/05/2017
 
 
 ---
@@ -161,20 +162,20 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 Samsung, belirli Samsung cihazlara yüklü gelen Samsung Smart Manager yazılımının, Şirket Portalı uygulamasını ve bileşenlerini devre dışı bırakabildiğini onayladı. Şirket Portalı devre dışı bırakıldığında arka planda çalışamaz ve bu nedenle Intune hizmetine bağlanamaz.
 
-**1. Çözüm:**
+**Çözüm 1:**
 
 Kullanıcılarınız Şirket Portalı uygulamasını el ile başlatmalarını söyleyin. Uygulama yeniden başlatıldığında Intune hizmeti ile bağlantıya geçer.
 
 > [!IMPORTANT]
 > Samsung Smart Manager, Şirket Portalı uygulamasını yeniden devre dışı bırakabileceği için Şirket Portalı uygulamasını el ile açmak geçici bir çözümdür.
 
-**2. Çözüm:**
+**Çözüm 2:**
 
 Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemelerini söyleyin. Devre dışı bırakma sorunu Android 6.0 cihazlarda yoktur. Güncelleştirmeleri denetlemek için kullanıcılar **Ayarlar** > **Cihaz hakkında** > **Güncellemeleri manuel indir** yolunu izleyip cihaz ekranındaki komutları izleyebilir.
 
-**3. Çözüm:**
+**Çözüm 3:**
 
-2. Çözüm işe yaramazsa, kullanıcılarınızın aşağıdaki adımları uygulayarak Şirket Portalı uygulamasını Smart Manager'da hariç tutmasını sağlayın:
+Çözüm 2 işe yaramazsa, kullanıcılarınızın aşağıdaki adımları uygulayarak Şirket Portalı uygulamasını Smart Manager'da hariç tutmasını sağlayın:
 
 1. Cihazda Smart Manager uygulamasını başlatın.
 
@@ -216,11 +217,11 @@ Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemel
 
 **Sorun**: Kullanıcılar cihazda şu iletiyi alıyor: *Cihazınızda gerekli bir sertifika eksik olduğundan oturum açamazsınız.*
 
-**1. Çözüm**:
+**Çözüm 1**:
 
 Kullanıcılarınızdan [Cihazınızda gerekli bir sertifika eksik](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) bölümündeki yönergeleri izlemelerini isteyin. Kullanıcılar yönergeleri uyguladıktan sonra hata devam ederse, 2. Çözümü deneyin.
 
-**2. Çözüm**:
+**Çözüm 2**:
 
 Kullanıcılar şirket kimlik bilgilerini girdikten sonra hala eksik sertifika hatası alıyor ve federasyon oturum açma deneyimi için yeniden yönlendiriliyorsa, Active Directory Federasyon Hizmetleri (AD FS) sunucunuzda bir ara sertifika eksik olabilir.
 
@@ -386,9 +387,4 @@ Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilg
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
