@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -262,7 +262,7 @@ Sunucu sertifikası düzgün yüklendiyse, sonuçlarda tüm onay işaretlerini g
 
 **Çözüm:** Şirket kaynaklarına erişimi yeniden sağlamaları için son kullanıcılarla aşağıdaki çözümleri paylaşın.
 
-Kullanıcılar iOS Şirket Portalı uygulamasını başlattığında uygulama, cihazlarının Intune ile iletişiminin kesilip kesilmediğini bildirebilir. İletişim olmadığını algılarsa, yeniden bağlanmak için Intune ile eşitlemeyi otomatik olarak dener ve kullanıcılar **Eşitlemeye çalışılıyor...** şeklinde bir satır içi bildirim görür. 
+Kullanıcılar iOS Şirket Portalı uygulamasını başlattığında uygulama, cihazlarının Intune ile iletişiminin kesilip kesilmediğini bildirebilir. İletişim olmadığını algılarsa, yeniden bağlanmak için Intune ile eşitlemeyi otomatik olarak dener ve kullanıcılar **Eşitlemeye çalışılıyor...** şeklinde bir satır içi bildirim görür.
 
   ![Eşitlemeye çalışılıyor bildirimi](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -270,11 +270,11 @@ Eşitleme başarılı olursa, iOS Şirket Portalı uygulamasında cihazınızın
 
   ![Eşitleme başarılı bildirimi](./media/ios_cp_app_sync_successful_notification.png)
 
-Eşitleme başarısız olursa, kullanıcılar iOS Şirket portalı uygulamasında **Eşitleme yapılamıyor** satır içi bildirimini görür. 
+Eşitleme başarısız olursa, kullanıcılar iOS Şirket portalı uygulamasında **Eşitleme yapılamıyor** satır içi bildirimini görür.
 
   ![Eşitleme yapılamıyor bildirimi](./media/ios_cp_app_unable_to_sync_notification.png)
 
-Sorunu düzeltmek için kullanıcıların **Eşitleme yapılamıyor** bildiriminin sağındaki **Ayarla** düğmesini seçmesi gerekir. Ayarla düğmesi, kullanıcıları cihazlarını kaydetmek için istemleri takip edebilecekleri Şirket Erişim Kurulumu akış ekranına götürür. 
+Sorunu düzeltmek için kullanıcıların **Eşitleme yapılamıyor** bildiriminin sağındaki **Ayarla** düğmesini seçmesi gerekir. Ayarla düğmesi, kullanıcıları cihazlarını kaydetmek için istemleri takip edebilecekleri Şirket Erişim Kurulumu akış ekranına götürür.
 
   ![Şirket Erişimi Kurulum ekranı](./media/ios_cp_app_company_access_setup.png)
 
