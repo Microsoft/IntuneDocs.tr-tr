@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 8c6c92e6e7bd375063f2f19308fe19f6e44962ac
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 888e7b7af7dcca4154f67a1de781eb7908d9a187
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -54,7 +55,7 @@ iOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın:
 
 Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıdaki adımları, Apple Configurator kullanarak kaydedilmiş iOS cihazları için bir cihaz kayıt profilinin nasıl oluşturulacağını gösterir.
 
-1. Azure portalında, **Diğer Hizmetler**’i seçin, metin kutusuna **Intune** girin, sonra da **Diğer** > **Intune**’u seçin.
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
 2. Intune dikey penceresinde **Cihazları kaydet**’i ve ardından **Apple Kaydı**’nı seçin.
 
@@ -78,11 +79,13 @@ Apple Configurator profillerini oluşturduktan sonra, profillere cihaz seri numa
 
 ### <a name="assign-serial-numbers-to-apple-configurator-profiles"></a>Apple Configurator profillerine seri numaraları atama
 
-1. **Apple Configurator Enrollment Profilleri** dikey penceresinde, seri numaralarını atamak istediğiniz profili seçin.
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2. Profilin adını taşıyan dikey pencerede **Seri Numaraları** > **Ata**’yı seçin.
+2. **Apple Configurator Enrollment Profilleri** dikey penceresinde, seri numaralarını atamak istediğiniz profili seçin.
 
-3. Profile atamak istediğiniz seri numaralarını seçin ve sonra da **Ata** düğmesini seçin.
+3. Profilin adını taşıyan dikey pencerede **Seri Numaraları** > **Ata**’yı seçin.
+
+4. Profile atamak istediğiniz seri numaralarını seçin ve sonra da **Ata** düğmesini seçin.
 
 ## <a name="export-the-profile-to-ios-devices"></a>Profili iOS cihazlarına dışarı aktarma
 
@@ -90,11 +93,13 @@ Profili oluşturup seri numaralarını atadıktan sonra, profili bir URL veya a�
 
 ### <a name="export-a-profile-using-setup-assistant-enrollment"></a>Kurulum Yardımcısı kaydını kullanarak profili dışarı aktarma
 
-1. **Apple Configurator Kayıt Profilleri** dikey penceresinde, dışarı aktarılacak profili seçin.
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2. Profilin dikey penceresinde **Profili Dışarı Aktar**’ı seçin.
+2. **Apple Configurator Kayıt Profilleri** dikey penceresinde, dışarı aktarılacak profili seçin.
 
-3. iOS cihazı bağlıyken profil URL'sini [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)'a kopyalayın. iOS cihazlar tarafından kullanılan Intune profilini tanımlamak için daha sonra Apple Configurator'a yüklemeniz gerekecektir.
+3. Profilin dikey penceresinde **Profili Dışarı Aktar**’ı seçin.
+
+4. iOS cihazı bağlıyken profil URL'sini [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)'a kopyalayın. iOS cihazlar tarafından kullanılan Intune profilini tanımlamak için daha sonra Apple Configurator'a yüklemeniz gerekecektir.
 
   Apple Configurator 2’nin desteklenmesi için, 2.0 Profil URL’sinin düzenlenmesi gerekir. Bunu yapmak için şu kodu değiştirin:
     ```
@@ -108,7 +113,7 @@ Profili oluşturup seri numaralarını atadıktan sonra, profili bir URL veya a�
 
    iOS cihazlarında kullanılan Intune profilini tanımlamak için, aşağıdaki yordamda Apple Configurator kullanarak bu profil URL’sini Apple DEP hizmetine yükleyeceksiniz.
 
-4. iOS cihazlarında kullanılan Intune profilini tanımlamak için, Apple Configurator’ı kullanarak bu profil URL’sini Apple DEP hizmetine yükleyin.
+5. iOS cihazlarında kullanılan Intune profilini tanımlamak için, Apple Configurator’ı kullanarak bu profil URL’sini Apple DEP hizmetine yükleyin.
 
 
     1.  Mac bilgisayarda **Apple Configurator 2**'yi açın. Menü çubuğunda **Apple Configurator 2**’yi, sonra **Tercihler**’i seçin.
@@ -139,7 +144,7 @@ Profili oluşturup seri numaralarını atadıktan sonra, profili bir URL veya a�
 
     10. iOS cihazı hazırlanmayı tamamladığında USB kablosunun bağlantısını kesin.  
 
-8.  **Cihazları dağıtın**.
+6.  **Cihazları dağıtın**.
     Cihazlar artık kurumsal kayıt için hazırdır. Cihazları kapatın ve kullanıcılara dağıtın. Kullanıcılar cihazlarını açtığında Kurulum Yardımcısı başlatılır.
 
 ## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Kullanıcıların cihazlarında Şirket Portalı’nı yüklemesi ve kullanması
@@ -165,9 +170,4 @@ Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve c
 7. Seri numarası doğrulandıktan sonra Şirket Portalı uygulaması, kaydı tamamlamak üzere Şirket Portalı web sitesine yönlendirir. Web sitesi daha sonra kullanıcılardan uygulamaya dönmelerini ister.
 
 Kayıt artık tamamlanmıştır, kullanıcılar şimdi bu cihazı tüm özellikleriyle kullanabilir.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

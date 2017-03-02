@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 2986e659d384eaa67b64af1ce3ae48a1ac81a600
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -50,7 +51,7 @@ iOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın:
 
 Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıdaki adımlar, DEP kullanarak kaydedilmiş iOS cihazları için bir cihaz kayıt profilinin nasıl oluşturulacağını gösterir.
 
-1. Azure Portal’da **Diğer Hizmetler**’i seçin, metin kutusuna **Intune** girin ve ardından **Diğer** > **Intune**’u seçin.
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
 2. Intune dikey penceresinde **Cihazları kaydet**’i ve ardından **Apple Kaydı**’nı seçin.
 
@@ -110,17 +111,19 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıda
 
 ## <a name="synchronize-dep-managed-devices"></a>DEP ile yönetilen cihazları eşitleme
 
-1. Azure Portal’ın Intune dikey penceresinde **Cihazları Kaydet**’i ve ardından **Apple Kaydı**’nı seçin.
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2. **Apple Cihaz Kayıt Programı (DEP) Ayarlarını Yönet**’in altında **DEP Seri Numaraları**’nı seçin.
+2. Azure Portal’ın Intune dikey penceresinde **Cihazları Kaydet**’i ve ardından **Apple Kaydı**’nı seçin.
+
+3. **Apple Cihaz Kayıt Programı (DEP) Ayarlarını Yönet**’in altında **DEP Seri Numaraları**’nı seçin.
 
 4. **Apple DEP Seri Numaraları** dikey penceresinde **Eşitle**’yi seçin.
 
 5. **Eşitle** dikey penceresinde **Eşitleme İste**’yi seçin. İlerleme çubuğu, yeniden Eşitleme istemeden önce beklemeniz gereken süreyi gösterir.
 
     Apple’ın kabul edilebilir DEP trafiği koşullarına uymak için, Intune aşağıdaki kısıtlamaları getirir:
-     -  Tam DEP eşitlemesi en fazla yedi günde bir çalıştırılabilir. Intune tam eşitleme sırasında, Apple’ın Intune’a atadığı her seri numarasını, bu numaranın daha önceden eşitlenmiş olup olmamasına bakılmaksızın yeniler. Önceki tam eşitlemenin üzerinden yedi gün geçmeden bir tam eşitleme girişiminde bulunulursa, Intune yalnızca henüz Intune’da listelenmeyen seri numaralarını yeniler.
-     -  Herhangi bir eşitleme isteğinin tamamlanması için 10 dakika verilir. Bu süre boyunca veya istek başarılı olana kadar **Eşitle** düğmesi devre dışı bırakılır.
+     -    Tam DEP eşitlemesi en fazla yedi günde bir çalıştırılabilir. Intune tam eşitleme sırasında, Apple’ın Intune’a atadığı her seri numarasını, bu numaranın daha önceden eşitlenmiş olup olmamasına bakılmaksızın yeniler. Önceki tam eşitlemenin üzerinden yedi gün geçmeden bir tam eşitleme girişiminde bulunulursa, Intune yalnızca henüz Intune’da listelenmeyen seri numaralarını yeniler.
+     -    Herhangi bir eşitleme isteğinin tamamlanması için 10 dakika verilir. Bu süre boyunca veya istek başarılı olana kadar **Eşitle** düğmesi devre dışı bırakılır.
 
 >[!NOTE]
 >Ayrıca, **Apple DEP Seri Numaraları** dikey penceresinde profillere DEP seri numaraları da atayabilirsiniz.
@@ -153,9 +156,4 @@ Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve c
 7. Seri numarası doğrulandıktan sonra Şirket Portalı uygulaması, kaydı tamamlamak üzere Şirket Portalı web sitesine yönlendirir. Web sitesi daha sonra kullanıcılardan uygulamaya dönmelerini ister.
 
 Kayıt artık tamamlanmıştır, kullanıcılar şimdi bu cihazı tüm özellikleriyle kullanabilir.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
