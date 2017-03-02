@@ -5,7 +5,7 @@ description: "Windows bilgisayarlarınızın Microsoft Intune istemci yazılım�
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 01/24/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
+ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
+ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
+ms.lasthandoff: 02/16/2017
 
 
 ---
@@ -23,14 +25,11 @@ ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 Windows bilgisayarlar Intune istemci yazılımı yüklenerek kaydedilebilir. Intune istemci yazılımı aşağıdaki yöntemler kullanılarak yüklenebilir:
 
-- BT yöneticisi tarafından:
-  - El ile yükleme
-  - Grup İlkesi kullanarak yükleme
-  - Disk görüntüsünden yükleme
+- BT yöneticisi şu yöntemlerden birini kullanabilir: el ile yükleme, Grup İlkesi veya bir disk görüntüsüne dahil edilmiş yükleme
 
-- Yazılım istemcisini el ile yükleyen son kullanıcılar tarafından
+- Son kullanıcılar, istemci yazılımını el ile yükleyebilir
 
-BT yöneticisinin kullanıcıya dağıttığı veya son kullanıcının indirdiği Intune yazılım istemcisi, bilgisayarı Intune yönetimine kaydetmek için gerekli olan en az sayıda yazılımı içerir. Bilgisayar kaydedildikten sonra Intune yazılım istemcisi, bilgisayar yönetimi için gereken tam istemci yazılımını indirir.
+Intune istemci yazılımı, bilgisayarı Intune yönetimine kaydetmek için gerekli en düşük yazılımı içerir. Bilgisayar kaydedildikten sonra Intune istemci yazılımı, bilgisayar yönetimi için gereken tam istemci yazılımını indirir.
 
 Bu indirmeler, ağın bant genişliğine olan etkiyi azaltır ve bilgisayarın Intune’a ilk kaydı için gerekli olan zamanı en aza indirir. Ayrıca ikinci indirme işlemi bittikten sonra istemcinin mevcut en yeni yazılıma sahip olmasını sağlar.
 
@@ -44,8 +43,7 @@ Intune istemci yazılımının kullanıcılar tarafından yüklendiği yöntemle
 
 2.  **İstemci Yazılımı İndirme** sayfasında, **İstemci Yazılımını İndir**'e tıklayın. Ardından yazılımı içeren **Microsoft_Intune_Setup.zip** paketini ağınızda güvenli bir yere kaydedin.
 
-    > [!NOTE]
-    > Intune istemci yazılımı yükleme paketi, hesabınızla ilgili benzersiz bilgileri içerir. Bu bilgilere ekli bir sertifika aracılığıyla erişilebilir. Yetkisiz kullanıcılar yükleme paketine erişirse paketin yerleşik sertifikası tarafından temsil edilen hesaba bilgisayar kaydedip şirketin kaynaklarına erişim elde edebilir.
+Intune istemci yazılımı yükleme paketi, hesabınızla ilgili benzersiz bilgileri içerir. Bu bilgilere ekli bir sertifika aracılığıyla erişilebilir. Yetkisiz kullanıcılar yükleme paketine erişirse paketin ekli sertifikası tarafından temsil edilen hesaba bilgisayar kaydedip şirketin kaynaklarına erişim elde edebilir.
 
 3.  Yükleme paketinin içeriğini ağınızda güvenli bir konuma ayıklayın.
 
@@ -54,7 +52,7 @@ Intune istemci yazılımının kullanıcılar tarafından yüklendiği yöntemle
 
 ## <a name="deploy-the-client-software-manually"></a>İstemci yazılımını el ile dağıtma
 
-Yazılım istemcisinin yükleneceği bilgisayarlarda, istemci yazılımı yükleme dosyalarının bulunduğu klasöre gidin. Ardından, istemci yazılımını yüklemek için **Microsoft_Intune_Setup.exe**'yi çalıştırın.
+İstemci yazılımının yükleneceği bilgisayarlarda, istemci yazılımı yükleme dosyalarının bulunduğu klasöre gidin. Ardından, istemci yazılımını yüklemek için **Microsoft_Intune_Setup.exe**'yi çalıştırın.
 
 > [!NOTE]
 > İstemci bilgisayarın görev çubuğundaki simgenin üzerine geldiğinizde yükleme durumu görüntülenir.
@@ -108,11 +106,56 @@ Aşağıdaki yordamı örnek alarak Intune istemci yazılımını bilgisayarlara
 
 ## <a name="instruct-users-to-self-enroll"></a>Kullanıcıdan kendi kendine kaydolmasını isteme
 
-Kullanıcılar, [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek Intune istemci yazılımını yükleyebilir. Web portalı, cihazın bir Windows bilgisayarı olduğunu algılayabilirse kullanıcılardan Intune yazılım istemcisini indirerek bilgisayarı kaydetmesini ister. Kullanıcılar, yazılım indirildikten sonra bilgisayarlarını yönetime almak için yazılımı yükleyebilir.
+Kullanıcılar, Intune istemci yazılımını [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek yükler. Kullanıcıların web portalında gördüğü bilgiler, hesabınızın MDM Yetkilisine ve kullanıcının bilgisayarının işletim sistemi platformuna/sürümüne bağlı olarak değişiklik gösterir. 
 
-Kullanıcıların web portalında gördüğü bilgiler, hesabınızın MDM Yetkilisinin yanı sıra kullanıcının bilgisayarının platformuna ve sürümüne bağlı olarak değişebilir.
+Kullanıcılara bir Intune lisansı atanmamışsa veya kuruluşun MDM Yetkilisi, Intune olarak ayarlanmamışsa, kullanıcılara kaydolmaya yönelik herhangi bir seçenek gösterilmez.
 
-![Intune Portalı’nın sizden Intune yazılım istemcisini indirmenizi istemesi](../media/software-client-download.png)
+Kullanıcılara bir Intune lisansı atanmışsa ve kuruluşun MDM Yetkilisi, Intune olarak ayarlanmışsa:
+
+- Windows 7 veya Windows 8 bilgisayarı kullanıcılarına, YALNIZCA kuruluşlarına özel bilgisayar istemci yazılımını indirip yükleyerek Intune’a kaydolma seçeneği gösterilir.
+
+- Windows 10 veya Windows 8.1 bilgisayarı kullanıcılarına iki kayıt seçeneği gösterilir:
+
+  -  **Bilgisayarı mobil bir cihaz olarak kaydetme**: Kullanıcılar, **Nasıl Kaydolacağınızı Öğrenin** düğmesini seçer ve bilgisayarlarını mobil bir cihaz olarak kaydetme yönergelerine yönlendirilir. MDM kaydı varsayılan ve tercih edilen kayıt seçeneği olduğundan bu düğme göze çarpacak bir şekilde görüntülenir. Ancak MDM seçeneği, yalnızca istemci yazılımı yüklemeyi kapsayan bu makale için kapsam dışıdır.
+  - **Bilgisayarı Intune istemci yazılımını kullanarak kaydetme**: Kullanıcılarınıza **İndirmek için buraya tıklayın** bağlantısını seçmelerini söylemeniz gerekir. Bu bağlantı, kullanıcılara istemci yazılımı yüklemesi boyunca yol gösterir.
+
+Aşağıdaki tabloda seçenekler özetlenmektedir.
+
+  ![Her platformun varsayılan kayıt seçenekleri](../media/default-enrollment-options-table.png)
+
+Aşağıdaki ekran görüntüleri, kullanıcıların yazılım istemcisini kullanarak cihazlarını kaydederken karşılaştıkları ekranları göstermektedir.
+
+Kullanıcılardan, önce cihazlarını tanımlamaları veya kaydetmeleri istenir.
+
+  ![cihazı tanımlayın veya kaydedin](../media/identify-device-or-enroll.png)
+
+Kullanıcılarınızın bilgisayar istemci yazılımını yükleyebilmesi için, kendilerine **İndirmek için buraya tıklayın** bağlantısını seçmelerini söylemeniz gerekir. Bu bağlantı, kullanıcılara bilgisayar istemci yazılımını indirme olanağı sağlar ve yükleme süreci boyunca yol gösterir. **Nasıl kaydolacağınızı öğrenin** düğmesi, kullanıcıları MDM kaydı kullanılarak nasıl kaydolunacağını açıklayan belgelere yönlendirir. Söz konusu yöntem, bu makaledeki yazılım istemcisi yönergeleri için kapsam dışıdır.
+
+  ![İndirmek için buraya tıklayın bağlantısını seçin](../media/enroll-your-windows-device.png)
+
+Kullanıcılar, bağlantıya tıkladıklarında bir **Yazılımı İndir** düğmesi görürler. Bilgisayar istemci yazılımını yüklemeyi başlatmak için bu düğmeyi seçmeleri gerekir.
+
+  ![Yazılımı İndir düğmesini seçin](../media/download-pc-client-software.png)
+
+Kullanıcılardan kurumsal kimlik bilgileriyle oturum açmaları istenir.
+
+  ![Kimlik bilgilerinizle oturum açın](../media/sign-in-to-intune.png)
+
+Kullanıcılar, yüklemeye ait Karşılama sayfasına yönlendirilir.
+
+  ![Bilgisayar istemci yüklemesine ait karşılama sayfası](../media/welcome-to-pc-agent-install-wizard.png)
+
+Kullanıcıların **İleri**’yi seçmesiyle yükleme başlatılır.
+
+  ![Bilgisayar istemci yüklemesine ait karşılama sayfası](../media/welcome-to-pc-agent-install-wizard.png)
+
+Kullanıcılar, yükleme tamamlandığında **Son**’u seçer.
+
+  ![Bilgisayar istemci yüklemesini sonlandırın](../media/completed-the-setup-wizard.png)
+
+Kullanıcılar, Intune bilgisayar istemci yazılımını kullanarak kaydolduktan sonra bilgisayarlarını mobil bir cihaz olarak yeniden kaydetmeye çalışırsa aşağıdaki hata ekranıyla karşılaşır.
+
+  ![Bilgisayar zaten kayıtlı olduğunda gösterilen ekran](../media/page-shown-if-pc-already-enrolled.png)
 
 ## <a name="monitor-and-validate-successful-client-deployment"></a>Başarılı istemci dağıtımını izleme ve doğrulama
 Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olması için aşağıdaki yordamlardan birini kullanın.
@@ -140,9 +183,4 @@ Başarılı istemci dağıtımını izlemenize ve doğrulamanıza yardımcı olm
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md)
 [İstemci kurulumu sorunlarını giderme](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
