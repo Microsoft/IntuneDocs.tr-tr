@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 10cf9980468eff912557747c31994747c17a3ab4
-ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -43,33 +44,33 @@ Aşağıdaki tabloda Intune'a kayıt yöntemleri ve her yöntem için desteklene
 
 **iOS kayıt yöntemleri**
 
-| **Yöntem** |  **Temizleme gerekli mi?** |    **Benzeşim**    |   **Kilitle** | **Ayrıntılar** |
+| **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Hayır|    Evet |   Hayır | Çok yakında daha fazla bilgi sağlanacaktır|
-|**[DEM](#dem)**|   Hayır |Hayır |Hayır  | [Daha fazla bilgi](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[DEP](#dep)**|   Evet |   İsteğe bağlı |  İsteğe bağlı|[Daha fazla bilgi](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[USB-SA](#usb-sa)**| Evet |   İsteğe bağlı |  Hayır| [Daha fazla bilgi](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
-|**[USB-Direct](#usb-direct)**| Hayır |    Hayır  | Hayır|[Daha fazla bilgi](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
+|**[KCG](#byod)** | Hayır|    Evet |    Hayır | Çok yakında daha fazla bilgi sağlanacaktır|
+|**[DEM](#dem)**|    Hayır |Hayır |Hayır    | [Daha fazla bilgi](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[DEP](#dep)**|    Evet |    İsteğe bağlı |    İsteğe bağlı|[Daha fazla bilgi](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[USB-SA](#usb-sa)**|    Evet |    İsteğe bağlı |    Hayır| [Daha fazla bilgi](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
+|**[USB-Direct](#usb-direct)**|    Hayır |    Hayır    | Hayır|[Daha fazla bilgi](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
 
 
 **Windows kayıt yöntemleri**
 
-| **Yöntem** |  **Temizleme gerekli mi?** |    **Benzeşim**    |   **Kilitle** | **Ayrıntılar**|
+| **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Evet|   Evet |   Hayır | Çok yakında daha fazla bilgi sağlanacaktır|
-|**[DEM](#dem)**|   Hayır |Hayır |Hayır  |[Daha fazla bilgi](enroll-devices-using-device-enrollment-manager.md)|
+|**[KCG](#byod)** | Evet|    Evet |    Hayır | Çok yakında daha fazla bilgi sağlanacaktır|
+|**[DEM](#dem)**|    Hayır |Hayır |Hayır    |[Daha fazla bilgi](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android kayıt yöntemleri**
 
-| **Yöntem** |  **Temizleme gerekli mi?** |    **Benzeşim**    |   **Kilitle** | **Ayrıntılar**|
+| **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Hayır|    Evet |   Hayır | Çok yakında daha fazla bilgi sağlanacaktır|
-|**[DEM](#dem)**|   Hayır |Hayır |Hayır  |[Daha fazla bilgi](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[KCG](#byod)** | Hayır|    Evet |    Hayır | Çok yakında daha fazla bilgi sağlanacaktır|
+|**[DEM](#dem)**|    Hayır |Hayır |Hayır    |[Daha fazla bilgi](enroll-ios-devices-using-device-enrollment-program.md)|
 
 
 ## <a name="byod"></a>KCG
-“Kendi cihazını getir” kullanıcıları Şirket Portalı uygulamasını yükler ve cihazlarını kaydeder. Bu, kullanıcıların şirket ağına bağlanarak etki alanına veya Azure Active Directory’ye katılmasına olanak tanır. Çoğu platformda, birçok COD senaryosu için KCG’yi etkinleştirmeniz gerekir.
+“Kendi cihazını getir” kullanıcıları Şirket Portalı uygulamasını yükler ve cihazlarını kaydeder. Bu, kullanıcıların şirket ağına bağlanarak etki alanına veya Azure Active Directory’ye katılmasına olanak tanır. Çoğu platformda, birçok COD senaryosu için KCG’yi etkinleştirmeniz gerekir. Kişisel iOS ve Android cihazlarının kaydedilmesini engelleyebilirsiniz. Yönergeler için bkz. [Cihaz türü kısıtlamaları ayarlama](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
 
 ## <a name="corporate-owned-devices"></a>Şirkete ait cihazlar
 Şirkete ait cihazlar (COD) Azure Portal kullanılarak yönetilebilir. iOS cihazları, Apple tarafından sağlanan araçlar üzerinden doğrudan kaydedilebilir. Tüm cihaz türleri, cihaz kayıt yöneticisini kullanan bir yönetici ya da müdür tarafından kaydedilebilir. IMEI numaralı cihazlar da, COD senaryolarını etkinleştirmek için şirkete ait olarak tanımlanabilir ve etiketlenebilir.
@@ -80,8 +81,8 @@ Cihaz kayıt yöneticisi, şirkete ait birden çok cihazı kaydetmek ve yönetme
 ### <a name="dep"></a>DEP
 Apple Aygıt Kayıt Programı (DEP) yönetimi, “havadan” ilke oluşturmanıza ve DEP ile satın alınan ve yönetilen iOS cihazlara dağıtmanıza olanak sağlar. Cihaz, kullanıcı cihazı ilk açtığında ve iOS Ayarlama Yardımcısı’nı çalıştırdığında kaydedilir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod şunlara olanak tanır:
 
-  - Kilitli kayıt
-  - Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
+  -    Kilitli kayıt
+  -    Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
 
 iOS kaydı hakkında daha fazla bilgi için bkz:
 
@@ -91,8 +92,8 @@ iOS kaydı hakkında daha fazla bilgi için bkz:
 
 ### <a name="usb-sa"></a>USB-SA
 BT yöneticileri, şirkete ait tüm cihazları Kurulum Yardımcısı kullanarak el ile kaydetme işlemine hazırlamak için USB aracılığıyla Apple Configurator kullanır. BT yöneticisi bir kayıt profili oluşturur ve bunu Apple Configurator’a aktarır. Kullanıcılar cihazlarını aldığında, bu cihazları kaydetmek için Kurulum Yardımcısını çalıştırmaları istenir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod şunlara olanak tanır:
-  - Kilitli kayıt
-  - Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
+  -    Kilitli kayıt
+  -    Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
 
 iOS kaydı hakkında daha fazla bilgi için bkz:
 
@@ -127,9 +128,4 @@ Bkz. [Intune için desteklenen cihazlar ve tarayıcılar](https://docs.microsoft
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM sertifikası süre sonunda mobil cihazı temizleme
 
 Mobil cihazlar Intune hizmetiyle iletişim kurduğunda MDM sertifikası otomatik olarak yenilenir. Mobil cihazlar (PC değil) temizlendiğinde veya belirli bir süre boyunca Intune hizmetiyle iletişim kuramadığında, MDM sertifikası yenilenmez. MDM sertifikasının süre sonundan 180 gün sonra, cihaz Azure Portal’dan kaldırılır.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

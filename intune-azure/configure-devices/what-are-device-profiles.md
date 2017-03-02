@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 0e126c067b5c212ae5bfe1cf69e01128a00b1c8e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: a5f6ad4dd5339b31a6a1fd549a3b29b0ff258a5b
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-are-device-profiles"></a>Cihaz profilleri nedir?
-<!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
+# <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profilleri nedir?
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Yönettiğiniz cihazların tümünde ayarları ve özellikleri yönetmek için Microsoft Intune **Cihazları yapılandır** iş yükünü kullanın.
+Yönettiğiniz cihazların tümünde ayarları ve özellikleri yönetmek için Microsoft Intune **Cihazları yapılandır** iş yükünü kullanın. Bu iş yükünü, genellikle yönettiğiniz cihazlarda birçok farklı özelliği ve işlevi yönetmenize ve denetlemenize olanak sağlayan cihaz profilleri oluşturmak için kullanırsınız.
 
 Bu iş yükünü açtığınızda aşağıdaki seçenekleri görürsünüz:
 
@@ -60,10 +60,6 @@ Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 ve Windows 10’u destekler.
 Bu profil türü cihazlara atanabilen ve Wi-Fi, VPN ve e-posta profillerinin kimliğini doğrulamak için kullanılan güvenilen, SCEP ve PKCS sertifikalarını yapılandırmanıza olanak tanır.
 Daha fazla bilgi için [Sertifikaları yapılandırma](how-to-configure-certificates.md) konusuna bakın. Android, iOS, Windows Phone 8.1 ve Windows 8.1 ve Windows 10’u destekler.
 
-## <a name="education"></a>Eğitim
-iOS cihazlarını eğitim ortamında kullanmak için doğru sertifikaları belirtmenize yardımcı olur.
-Daha fazla bilgi için [iOS cihazları için Intune eğitim ayarlarını yapılandırma](education-settings-for-ios.md) Yalnızca iOS’u destekler.
-
 ## <a name="edition-upgrade"></a>Sürüm yükseltme
 Bu profil, Windows 10’un bazı sürümlerini çalıştıran cihazları otomatik olarak yükseltmenize olanak tanır. Daha fazla bilgi için [Windows 10 sürüm yükseltmelerini yapılandırma](how-to-configure-windows-10-edition-upgrade.md) konusuna bakın. Yalnızca Windows 10’u destekler.
 
@@ -74,9 +70,4 @@ Daha fazla bilgi için [Windows Bilgi Koruması’nı yapılandırma](how-to-con
 ## <a name="custom"></a>Özel
 Özel ayarlar, Intune’da yerleşik olarak sağlanmayan cihaz ayarlarını atamanıza olanak tanır. Android cihazlarda, örneğin cihazı yapılandıran OMA-URI değerlerini belirtebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz.
 Daha fazla bilgi için [Özel ayarları yapılandırma](how-to-configure-custom-settings.md) konusuna bakın. Android, iOS, macOS ve Windows Phone 8.1’i destekler.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

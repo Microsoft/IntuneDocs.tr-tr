@@ -14,8 +14,9 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: b2c79e92f6378825bdaac03d2d9be699bdaca95b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -31,7 +32,7 @@ ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
 > Bu notu yalnızca, Intune yönetim konsolundan Azure Portal’a geçirilmiş olan müşteriler okumalıdır. Geçiş döneminde Intune yönetim konsolundan bir Apple DEP belirteci sildiyseniz, DEP belirtecinin Intune hesabınıza geri yüklendiğini fark edebilirsiniz. Böyle bir durumda, Azure Portal’dan DEP belirtecini doğrudan silin. 
 
 **Apple DEP sertifikası almak için**</br>
-Azure Portal’da **Diğer Hizmetler**’i seçin, metin kutusuna **Intune** girin ve sonra **Diğer** > **Intune**’u seçin. Intune dikey penceresinde **Cihazları kaydet** > **Apple DEP Belirteci**’ni seçin ve ardından, Azure Portal’da bulunan ve aşağıda da gösterilen numaralandırılmış adımları izleyin.
+Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin. Intune dikey penceresinde **Cihazları kaydet** > **Apple DEP Belirteci**’ni seçin ve ardından, Azure Portal’da bulunan ve aşağıda da gösterilen numaralandırılmış adımları izleyin.
 
 **1. Adım. Apple DEP belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.**<br>
 Şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtar sertifikanızı indirin** öğesini seçin. .pem dosyası Apple Cihaz Kayıt Programı portalından güven ilişkisi sertifikası istemek için kullanılır.
@@ -53,9 +54,4 @@ Azure Portal’da **Diğer Hizmetler**’i seçin, metin kutusuna **Intune** gir
 
 **4. Adım. Karşıya yüklenecek Apple DEP belirtecine gidin. Intune, DEP hesabınızı otomatik olarak eşitleyecektir.**<br>
 Sertifika (.pem) dosyasına gidin, **Aç**’ı ve sonra da **Karşıya Yükle**’yi seçin. Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -46,7 +47,7 @@ Bu sorunlar, tüm cihaz platformlarında oluşabilir.
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Kaydedilen ve izin verilen cihazların sayısını denetleme
 
-Azure Portal’ın Intune dikey penceresinde **Cihazları kaydet** > **Kayıt Kısıtlamaları**’na gidin ve kullanıcıya atanmış cihazların sayısının, izin verilen üst sınır olan 15 cihazı aşmadığını doğrulayın.
+Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin. Azure Portal’ın Intune dikey penceresinde **Cihazları kaydet** > **Kayıt Kısıtlamaları**’na gidin ve kullanıcıya atanmış cihazların sayısının, izin verilen üst sınır olan 15 cihazı aşmadığını doğrulayın.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -218,16 +219,16 @@ Android cihazlar bir [SSL sunucu hello](https://technet.microsoft.com/library/cc
 
 Sorunu düzeltmek için AD FS sunucusunda veya proxy’lerdeki Bilgisayar Kişisel Sertifikaları’na sertifikaları aşağıdaki gibi içeri aktarın:
 
-1.  ADFS’de ve proxy sunucularında, yerel bilgisayar için Sertifika Yönetimi konsolunu başlatmak üzere **Başlat** düğmesine sağ tıklayın, **Çalıştır**’ı seçin ve **certlm.msc** yazın.
-2.  **Kişisel**’i genişletip **Sertifikalar**’ı seçin.
-3.  AD FS hizmeti iletişiminizin sertifikasını (ortak olarak imzalanmış bir sertifika) bulun ve özelliklerini görüntülemek için çift tıklayın.
-4.  Sertifikanın üst sertifikasını (veya sertifikalarını) görmek için **Sertifika Yolu** sekmesini seçin.
-5.  Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
-6.  **Ayrıntılar** sekmesini ve **... dosyasına kopyala**’yı seçin.
-7.  Sertifikanın ortak anahtarını istenen dosya konumuna kaydetmek veya dışarı aktarmak için sihirbaz yönergelerini izleyin.
-8.  3. Adımda Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
-9.  AD FS sunucularını yeniden başlatın.
-10. Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
+1.    ADFS’de ve proxy sunucularında, yerel bilgisayar için Sertifika Yönetimi konsolunu başlatmak üzere **Başlat** düğmesine sağ tıklayın, **Çalıştır**’ı seçin ve **certlm.msc** yazın.
+2.    **Kişisel**’i genişletip **Sertifikalar**’ı seçin.
+3.    AD FS hizmeti iletişiminizin sertifikasını (ortak olarak imzalanmış bir sertifika) bulun ve özelliklerini görüntülemek için çift tıklayın.
+4.    Sertifikanın üst sertifikasını (veya sertifikalarını) görmek için **Sertifika Yolu** sekmesini seçin.
+5.    Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
+6.    **Ayrıntılar** sekmesini ve **... dosyasına kopyala**’yı seçin.
+7.    Sertifikanın ortak anahtarını istenen dosya konumuna kaydetmek veya dışarı aktarmak için sihirbaz yönergelerini izleyin.
+8.    3. Adımda Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
+9.    AD FS sunucularını yeniden başlatın.
+10.    Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
 Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum açabilmelidir.
 
 **Sertifikanın düzgün yüklendiğini doğrulamak için**:
@@ -386,9 +387,4 @@ Bu hatanın nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bi
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

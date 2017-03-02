@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ iOS cihazlarını hangi yöntemle kaydedeceğinize karar verirken aşağıdaki b
 
 ## <a name="user-owned-ios-devices-byod"></a>Kullanıcıya ait iOS cihazları (KCG)
 
-Kullanıcılar kendi kişisel, KCG (kendi cihazını getir) cihazlarını kaydetmek istediklerinde, kullanıcılara sağlanan tek kayıt yöntemi Uygulama Mağazası’ndan iOS için Şirket Portalı uygulamasını indirmek ve uygulamadaki kayıt yönergelerini izlemektir. Kaydedildikten sonra, kullanıcılar şirket ağına bağlanabilir, etki alanına veya Azure Active Directory’ye katılabilir ve şirket kaynaklarına erişim sağlayabilir.
+Kullanıcılar kendi kişisel, KCG (kendi cihazını getir) cihazlarını kaydetmek istediklerinde, kullanıcılara sağlanan tek kayıt yöntemi Uygulama Mağazası’ndan iOS için Şirket Portalı uygulamasını indirmek ve uygulamadaki kayıt yönergelerini izlemektir. Kaydedildikten sonra, kullanıcılar şirket ağına bağlanabilir, etki alanına veya Azure Active Directory’ye katılabilir ve şirket kaynaklarına erişim sağlayabilir. Kişisel iOS cihazlarının kaydedilmesini engelleyebilirsiniz. Yönergeler için bkz. [Cihaz türü kısıtlamaları ayarlama](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ Bu seçenek, DEP aracılığıyla satın alınan cihazlara bir “havadan” kay
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>Cihaz kayıt yöneticisini (DEM) kullanma
 Cihaz kayıt yöneticisi, en çok 1.000 cihazı kaydedebilen ve yönetebilen bir kullanıcı hesabı türüdür. Mevcut kullanıcıları DEM hesabına ekleyerek, onlara bu yetenekleri sağlarsınız. DEM kullanıcısının kaydettiği her cihaz tek bir Intune lisansı kullanır. Daha fazla bilgi için bkz. [Cihaz kayıt yöneticisini kullanarak cihazları kaydetme](enroll-devices-using-device-enrollment-manager.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

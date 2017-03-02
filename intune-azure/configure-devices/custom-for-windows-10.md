@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Intune Azure önizlemesinde Windows 10 cihazları için özel cihaz ayarları
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 cihazları için özel cihaz ayarları
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -167,9 +168,4 @@ Aşağıdaki ekran görüntüsünde **Connectivity/AllowVPNOverCellular** ayarı
 |**Parola Kaydetmeye İzin Ver**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Masaüstü ve mobil<br />**Veri türü:** Tamsayı<br />**Değerler:**<br>**0** – Parola yöneticisi devre dışı; <br>**1** – Parola yöneticisi etkin (varsayılan)|
 |**Otomatik Doldurmaya İzin Ver**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Yalnızca masaüstü<br />**Veri türü:** Tamsayı<br />**Değerler:** **0** – Devre dışı (varsayılan), **1** – Etkin|
 |**Enterprise Site Listesini Yapılandır**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Yalnızca masaüstü<br />**Veri türü:** Dize<br />**Değerler:<br>**0** – Yapılandırılmadı<br>**1** – Yapılandırıldıysa, IE’nin kurumsal mod site listesini kullan (varsayılan)<br>**2** – Kurumsal site listesinin konumunu belirt|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

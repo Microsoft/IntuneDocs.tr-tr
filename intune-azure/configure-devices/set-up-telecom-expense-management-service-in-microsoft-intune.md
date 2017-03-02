@@ -5,7 +5,7 @@ keywords: Saaswedo
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/24/2017
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,24 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 915d61344a3c1d388305dd51b1e2463bd2e32770
-ms.openlocfilehash: 8d94fec099e1dc8918077062fb73b94a5973ea96
+ms.sourcegitcommit: d243aaf8de5bb235f1c60141ff62f156b81f312b
+ms.openlocfilehash: faf662d2d5c9cb05fe507da8a1ec5c2eb89f3352
+ms.lasthandoff: 02/16/2017
 
 ---
 
 # <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Intune Azure önizlemesinde telekom gider yönetimi hizmetini ayarlama
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune, üçüncü taraf yazılım geliştiricisi Saaswedo’nun Datalert telekom gider yönetimi çözümüyle tümleştirilmiştir. Datalert, telekom veri kullanımını yönetmenize ve Intune tarafından yönetilen cihazlarınızda veri ve dolaşımda yüksek maliyetli ve beklenmedik fazla kullanımları önlemenize olanak tanıyan gerçek zamanlı bir telekom gider yönetimi yazılımıdır. Intune'un Datalert’le tümleştirilmesi, sınırlar önceden tanımlanmış eşikleri aştığında verilen otomatik uyarıları kullanarak, dolaşım ve yerel veri kullanım sınırlarını merkezi olarak ayarlamanıza, izlemenize ve zorunlu tutmanıza olanak tanır. Kullanıcıların eşiği aşması durumunda, tek tek son kullanıcılara veya son kullanıcı gruplarına dolaşımı devre dışı bırakma gibi farklı eylemler uygulanacak şekilde hizmeti yapılandırabilirsiniz. Datalert yönetim konsolundan veri kullanım ve izleme bilgilerini içeren raporlar sağlanır.
+Intune, şirkete ait mobil cihazlarda veri kullanımından kaynaklanan telekom giderlerini yönetmenizi sağlar. Intune, bu özelliğe olanak tanımak için üçüncü taraf yazılım geliştiricisi Saaswedo’nun Datalert telekom gider yönetimi çözümüyle tümleştirilmiştir. Datalert, telekom veri kullanımını yönetmenize ve Intune tarafından yönetilen cihazlarınızda veri ve dolaşımda yüksek maliyetli ve beklenmedik fazla kullanımları önlemenize olanak tanıyan gerçek zamanlı bir telekom gider yönetimi yazılımıdır. 
+
+Intune'un Datalert’le tümleştirilmesi, sınırlar önceden tanımlanmış eşikleri aştığında verilen otomatik uyarıları kullanarak, dolaşım ve yerel veri kullanım sınırlarını merkezi olarak ayarlamanıza, izlemenize ve zorunlu tutmanıza olanak tanır. Kullanıcıların eşiği aşması durumunda, tek tek son kullanıcılara veya son kullanıcı gruplarına dolaşımı devre dışı bırakma gibi farklı eylemler uygulanacak şekilde hizmeti yapılandırabilirsiniz. Datalert yönetim konsolundan veri kullanım ve izleme bilgilerini içeren raporlar sağlanır.
+
+Aşağıdaki diyagramda, Intune’un Datalert ile nasıl tümleştirildiği gösterilmektedir.
+
+  ![Intune ile Datalert’ün tümleştirme diyagramı](../media/tem-datalert-intune-solution-diagram.png)
 
 Intune ile Datalert hizmetini kullanabilmeniz için, önce Datalert konsolunda ve Intune’da ayarları yapılandırmalısınız. Datalert hizmeti ve Intune için bağlantının açılması gerekir. Bağlantının Datalert tarafı etkinleştirilir ancak Intune tarafı etkinleştirilmezse, Intune iletişimi alır ancak yoksayar.
-
->[!NOTE]
->Deneme kiracınızda bu özelliği etkinleştirmek için, gerekli yazılım lisanslarında Datalert desteği ve etkinleştirme konusunda lütfen [Microsoft desteğine başvurun](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
@@ -36,7 +40,7 @@ Intune ile Datalert hizmetini kullanabilmeniz için, önce Datalert konsolunda v
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Microsoft Intune için abonelik
+- Microsoft Intune aboneliği ve şu anda genel önizleme kapsamındaki Azure portalına erişim.
 - Datalert telekom gider yönetimi hizmeti için abonelik
 
 ## <a name="list-of-telecom-expense-management-providers"></a>Telekom gider yönetimi sağlayıcıları listesi
@@ -45,41 +49,99 @@ Intune şu anda aşağıdaki telekom gider yönetimi sağlayıcılarıyla tümle
 
 [Saaswedo Datalert telekom gider yönetimi hizmeti](http://www.datalert.biz/)
 
-## <a name="configure-intune-to-work-with-the-datalert-service"></a>Intune’u Datalert hizmetiyle çalışacak şekilde yapılandırma
+## <a name="deploy-the-intune-and-datalert-integrated-solution"></a>Intune ve Datalert tümleşik çözümünü dağıtma
 
- 
+Başlamadan önce, Intune’a ve Datalert telekom gider yönetim hizmeti aboneliğine sahip olduğunuzdan emin olun.
+
+### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>1. Adım: Datalert hizmetini Microsoft Intune’a bağlama
+
+1. Datalert yönetim konsolunda yönetici kimlik bilgilerinizle oturum açın.
+
+2. Datalert yönetim konsolunda **Ayarlar** sekmesine ve ardından **MDM yapılandırması**’na gidin.
+
+3. Sayfada ayarları girebilmek için **Engellemeyi Kaldır**’ı seçin.
+
+4. **Sunucu MDM** için **Microsoft Intune**’u seçin.
+
+5. **Azure AD etki alanı** için Azure kiracı kimliğinizi girin ve ardından **Bağlantı** düğmesini seçin.
+
+    **Bağlantı**’nın seçilmesi, önceden Intune ile Datalert bağlantılarının olmadığından emin olmak için Intune ile Datalert hizmetini denetler. Birkaç saniye sonra Microsoft oturum açma sayfası görüntülenir ve onun ardından Datalert Azure kimlik doğrulaması gelir.
+
+6. Microsoft kimlik doğrulaması sayfasında **Kabul Et**’i seçin. Datalert “teşekkür ederiz” sayfasına yönlendirilirsiniz ve bu sayfa birkaç saniye sonra kapatılır. Datalert bağlantıyı doğrular ve doğrulanan öğe listesinin yanında yeşil onay işaretleri görüntülenir. Doğrulama başarısız olursa, kırmızı bir ileti görürsünüz. Böyle bir durum olursa, yardım için Datalert Desteği’ne başvurun.
+
+    Aşağıdaki ekran görüntüsünde, bağlantı başarılı olduktan sonra görmeyi bekleyebileceğiniz yeşil onay işaretleri gösterilmektedir.
+
+  ![Bağlantının başarılı olduğunu gösteren Datalert sayfası](../media/tem-mdm-configuration-mdm-server-page.png)
+
+### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2. Adım: Telekom gider yönetimi özelliğinin Intune’da Etkin olup olmadığını denetleme
+
+Yukarıdaki 1. Adımı tamamladıktan sonra, bağlantınızın otomatik olarak etkinleştirilmiş olması ve bağlantı durumunun Azure portalında **Etkin** olarak gösterilmesi gerekir. Aşağıdaki adımlar, **Etkin** durumunu nasıl denetleyebileceğinizi göstermektedir.
 
 1. Azure portalında oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+
 3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
-2. **Cihaz Yapılandırması** dikey penceresinde **Kurulum** > **Telecom Gider Yönetimi**’ni seçin.
-2. **Telecom Gider Yönetimi**’nin altında **Bağlantı durumu**’nu seçin.
 
-3. **TEM hizmet sağlayıcılarının listesi**’ni seçin ve ardından gösterilen listeden sağlayıcınızı seçin. Sağlayıcınıza özgü bir sayfa açılır. Saaswedo için, Datalert sayfası açılır. Abonelik satın almak için Saaswedo Datalert ile çalışmalısınız.
+4. **Cihaz Yapılandırması** dikey penceresinde **Kurulum** > **Telecom Gider Yönetimi**’ni seçin. 
 
-4. **Datalert** yönetim konsolunda:
+   Sayfanın en üstünde **Etkin** bağlantı durumu olup olmadığına bakın.
 
-    a. **Ayarlar** sekmesine gidin ve sonra da **MDM yapılandırması** bölümüne gidin.
+  ![Etkin datalert bağlantı durumunun gösterildiği Azure portalı](../media/tem-azure-portal-enable-service.png)
 
-    b. Sayfada ayarları girebilmek için **Kilidi Aç**’ı seçin.
+### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>3. Adım: Datalert uygulamasını şirket için kaydedilmiş cihazlara dağıtma
 
-    c. **Sunucu MDM** için **Microsoft Intune**’u seçin.
+Veri kullanımı bilgilerinin yalnızca şirkete ait hatlardan toplandığından emin olmak için, Intune’da cihaz kategorileri oluşturduktan sonra Datalert uygulamasını yalnızca şirkete ait telefonlara hedeflemeniz gerekir. Aşağıdaki alt bölümlerde yer alan adımları tamamlayın.
 
-    d. **Kiracı Kimliği** için Intune kiracı kimliğinizi girin ve **Bağlantı** düğmesini seçin. **Bağlantı**’nın seçilmesi, önceden Intune ile Datalert bağlantılarının olmadığından emin olmak için Intune ile Datalert hizmetini denetler. Birkaç saniye sonra Microsoft oturum açma sayfası görüntülenir ve onun ardından Datalert Azure kimlik doğrulaması gelir.
+#### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>Cihaz kategorileri ve kategorilere eşlenen cihaz grupları tanımlama
 
-    e. Microsoft kimlik doğrulaması sayfasında **Kabul Et**’i seçin. Datalert “teşekkür ederiz” sayfasına yönlendirilirsiniz ve bu sayfa birkaç saniye sonra kapatılır. Datalert bağlantıyı doğrular ve doğrulanan öğe listesinin yanında yeşil onay işaretleri görüntülenir. Doğrulama başarısız olursa, kırmızı bir ileti görürsünüz. Böyle bir durum olursa, yardım için Datalert Desteği’ne başvurun.
+Kuruluş gereksinimlerinize bağlı olarak, en az iki cihaz kategorisi (örneğin, Kurumsal ve Kişisel) oluşturmanız ve her kategori için dinamik cihaz grupları oluşturmanız gerekir. Gerektikçe kuruluşunuz için daha fazla kategori oluşturabilirsiniz. 
 
-5. Birkaç dakika bekleyin ve ardından Azure portalına gidin ve Bağlantı durumunun **Etkin** olarak gösterilip gösterilmediğini denetleyin. 
+Bu kategoriler, kayıt sırasında kullanıcılara gösterilir. Kullanıcıların hangi kategoriyi seçtiğine bağlı olarak, kaydedilen cihaz ilgili cihaz grubuna taşınır. Cihaz kategorileri oluşturma adımları için bkz. [Cihazları gruplara eşleme](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping).
 
-    >[!NOTE]
-    >Deneme kiracınızda bu özelliği etkinleştirmek için lütfen [Microsoft desteğe başvurun](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+  ![İlke ekle dikey penceresinin ekran görüntüsü](../media/tem-dynamic-membership-rules.png)
 
-6. Datalert yönetim konsoluna dönün ve veri satırlarınızı yapılandırın:
+#### <a name="create-the-datalert-app-in-intune"></a>Intune'da Datalert uygulamasını oluşturma
 
-    a. **Ayarlar** sekmesine gidin.
+Her platform için Intune'da Datalert uygulamasını oluşturmak üzere şu adımları izleyin. Aşağıdaki adımlarda örnek olarak iOS kullanılmaktadır.
 
-    b. **Kurulum** sihirbazına gidin ve sihirbazdaki adımları izleyin.
+1. Azure portalının **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
 
+2. **Uygulamaları yönet** dikey penceresinde, **Yönet** > **Uygulamalar**’ı seçin. 
+
+3. Uygulama eklemek için **Ekle**’yi seçin.
+
+4. Uygulama türünü seçin. Örneğin, iOS için **iOS Mağazası Uygulaması**’nın seçilmesi gerekir.
+
+5. **App Store’da Ara** kısmında arama penceresine **Datalert** yazarak Datalert uygulamasını arayın.
+
+6. **Datalert** uygulamasını ve sonra **Tamam**’ı seçin.
+
+  ![İlke ekle dikey penceresinin ekran görüntüsü](../media/tem-select-app-from-apple-app-store.png)
+
+7. iOS için uygulama oluşturmaya yönelik kalan adımları tamamlayın.
+
+  ![İlke ekle dikey penceresinin ekran görüntüsü](../media/tem-steps-to-create-the-app.png)
+
+#### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>Datalert uygulamasını kurumsal cihaz grubuna atama
+
+1. Önceki adımda oluşturduğunuz iOS Datalert uygulamasını seçin.
+
+2. **Uygulamalar** dikey penceresinde **Yönet** > **Atamalar**’a gidin. 
+
+3. **Grupları seçin** öğesini seçip kurumsal cihaz grubunu seçme adımlarını izleyin.
+
+4. Uygulamayı yüklemeyi, grup için gerekli mi yoksa isteğe bağlı mı yapacağınızı seçin. Aşağıdaki örnek ekran görüntüsü, yüklemeyi gerekli olarak göstermektedir; bu durumda kullanıcıların, cihazlarını kaydettikten sonra Datalert uygulamasını yüklemeleri gerekir.
+
+  ![İlke ekle dikey penceresinin ekran görüntüsü](../media/tem-assign-datalert-app-to-device-group.png)
+
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. Adım: Şirket tarafından ödenen telefon hatlarını Datalert konsoluna ekleme 
+
+Artık Intune ve Datalert hizmetlerini birbiriyle iletişim kuracak şekilde yapılandırdınız. Şimdi şirket tarafından ödenen telefon hatlarınızı Datalert konsoluna eklemeniz ve şebeke kullanımı veya gezici kullanım ihlallerine yönelik eşikler ve eylemler tanımlamanız gerekir. 
+
+Bu öğeleri ayarlamak için [Microsoft Intune için Datalert kurulumu sayfasına](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup) giderek **Ayarlar** sekmesi altındaki kurulum sihirbazında sunulan adımları izleyin.
+
+  ![İlke ekle dikey penceresinin ekran görüntüsü](../media/tem-add-phone-lines-to-datalert-console.png)
 
 
 Datalert hizmeti artık etkindir; veri kullanımını izlemeye ve yapılandırılmış kullanım sınırlarını aşan cihazlarda hücresel ve dolaşım verilerini devre dışı bırakmaya başlar.
@@ -102,8 +164,5 @@ Azure portalında Datalert hizmetini devre dışı bırakırsanız:
 
 Veri kullanım raporlaması şu anda yalnızca Saaswedo’nun Datalert yönetim konsolunda sağlanmaktadır.
 
-
-
-<!--HONumber=Feb17_HO2-->
-
+Son kullanıcılarınızın Datalert uygulamasını yüklemek için izleyeceği yönergeler yakında eklenecektir.
 

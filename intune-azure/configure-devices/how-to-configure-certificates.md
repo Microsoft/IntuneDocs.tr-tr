@@ -1,11 +1,12 @@
 ---
-title: "Intune ile sertifikaları yapılandırma | Intune Azure önizlemesi | Microsoft Docs"
+title: "Intune ile sertifika yapılandırma"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Wi-Fi, VPN ve diğer bağlantıların güvenliğini sağlamaya yardımcı olan sertifikaları oluşturmak ve atamak için Intune kullanmayı öğrenin."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-certificates-with-intune-azure-preview"></a>Intune Azure önizlemesiyle sertifikaları yapılandırma
+# <a name="how-to-configure-certificates-in-microsoft-intune"></a>Microsoft Intune’da sertifika yapılandırma
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,8 +45,8 @@ VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılara şirket kayn
 
     Aşağıdaki platformlarla yalnızca SCEP sertifika profilini kullanabilirsiniz:
 
--   macOS 10.9 ve üzeri
--   Windows Phone 8.1 ve üzeri
+-     macOS 10.9 ve üzeri
+-     Windows Phone 8.1 ve üzeri
 
 Her cihaz platformu için ayrı profil oluşturmanız gerekir. Profili oluştururken daha önce oluşturduğunuz güvenilen kök sertifika profiliyle ilişkilendirin.
 
@@ -196,9 +199,4 @@ Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz ön�
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Cihaz profillerini atama hakkındaki genel bilgiler için bkz. [Cihaz profillerini atama](how-to-assign-device-profiles.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

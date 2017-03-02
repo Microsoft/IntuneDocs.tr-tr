@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Microsoft Intune ile mobil uygulama yönetimi ilkelerini izleme
-Kullanıcılara uyguladığınız mobil uygulama yönetimi (MAM) ilkelerinin uygunluk durumunu izleyebilirsiniz. MAM ilkelerinden etkilenen kullanıcılar hakkında bilgileri, uyumluluk durumu ve kullanıcılarınızın karşılaşmış olabileceği sorunları burada bulabilirsiniz.
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune ile uygulama koruma ilkelerini izleme
+Kullanıcılara uyguladığınız mobil uygulama koruma ilkelerinin uyumluluk durumunu izleyebilirsiniz. Uygulama koruma ilkelerinden etkilenen kullanıcılar hakkında bilgiler, ilkelerin uyumluluk durumunu ve kullanıcılarınızın karşılaşmış olabileceği sorunları bulabilirsiniz.
 
 Uyumluluk durumu üç farklı yerden izlenebilir:
 
@@ -59,7 +61,7 @@ Uyumluluk durumu üç farklı yerden izlenebilir:
 Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumunu denetleyebilirsiniz. **Uygulama raporlama** dikey penceresinde, seçilen kullanıcı için aşağıdaki bilgiler görüntülenir:
 - Kullanıcı hesabıyla ilişkilendirilmiş cihazlar
 
-- Cihazda MAM ilkesine sahip uygulamalar
+- Cihazdaki uygulama koruma ilkesine sahip uygulamalar
 
 - Durum:
 
@@ -68,7 +70,7 @@ Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumunu denetl
   - **Giriş yapmadı**: İlke kullanıcıya dağıtılmış, ancak o zaman beri uygulamanın iş bağlamında kullanılmamıştır.
 
 >[!NOTE]
-> Aradığınız kullanıcıya MAM ilkesi dağıtılmamışsa, kullanıcının herhangi bir MAM ilkesi tarafından hedeflenmediğini bildiren bir ileti görürsünüz.
+> Aradığınız kullanıcıya uygulama koruma ilkesi dağıtılmamışsa, kullanıcının herhangi bir uygulama koruma ilkesi tarafından hedeflenmediğini bildiren bir ileti görürsünüz.
 
 Kullanıcının raporlamasını görmek için şu adımları izleyin:
 
@@ -87,7 +89,7 @@ Ayrıntılı görünümde; hata iletisi, hata oluştuğunda erişilmiş olan uyg
 
 ## <a name="reporting-view"></a>Raporlama görünümü
 
-Ayrıntılı görünümde, aynı raporlara ek olarak MAM ilkesi uyumluluk durumuyla ilgili bilgi almanıza yardımcı olacak diğer raporları bulabilirsiniz:
+Ayrıntılı görünümdeki raporların aynılarına ek olarak uygulama koruma ilkesi uyumluluk durumuyla ilgili bilgi almanıza yardımcı olacak ek raporlar bulabilirsiniz:
 
 ![Ekran görüntüsü-4](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ Ayrıntılı görünümde, aynı raporlara ek olarak MAM ilkesi uyumluluk durumu
 
     -   Yönetilen MAM etkinliği için kullanıcı durumu (Korumalı): Bu rapor, yönetilen her bir MAM uygulamasının etkinliğini kullanıcı temelinde özetler.
 
-        -   Her bir kullanıcı için, MAM ilkeleri tarafından hedeflenen tüm uygulamaları göstermenin yanı sıra uygulamaların durumunu, MAM ilkelerine giriş yapmış veya MAM ilkesi ile hedeflenmiş ancak henüz giriş yapmamış olarak özetler.
+        -   Her bir kullanıcı için, uygulama koruma ilkeleri tarafından hedeflenen tüm uygulamaları göstermenin yanı sıra uygulamaların durumunu, uygulama koruma ilkeleriyle giriş yapılmış veya uygulama koruma ilkesi ile hedeflenmiş ancak henüz giriş yapılmamış olarak özetler.
 <br></br>
     -   Yönetilmeyen MAM etkinliği için kullanıcı durumu (Korumasız): Bu rapor, MAM’in etkinleştirildiği yönetilmeyen uygulamaların etkinliğini kullanıcı temelinde özetler. Bu, aşağıdaki nedenlere bağlı olarak gerçekleşebilir:
 
-        -   Bu uygulamalar, henüz bir MAM ilkesi tarafından hedeflenmemiş olan bir kullanıcı veya uygulama tarafından kullanılıyor olabilir.
+        -   Bu uygulamalar, henüz bir uygulama koruma ilkesi tarafından hedeflenmemiş olan bir kullanıcı veya uygulama tarafından kullanılıyor olabilir.
 
-        -   Tüm uygulamalar giriş yapmış, ancak henüz MAM ilkelerini almıyor olabilir.
+        -   Tüm uygulamalara giriş yapılmış, ancak bunlar herhangi bir uygulama koruma ilkesi almıyor olabilirler.
 
 ![Ekran görüntüsü-2](../media/MAM-reporting-4.png)
 
@@ -131,11 +133,6 @@ Uygulama koruması raporu oluşturmak için bu adımları izleyin:
 ## <a name="see-also"></a>Ayrıca bkz.
 [iOS uygulamaları arasında veri aktarımını yönetme](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Android uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS uygulamanız MAM ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

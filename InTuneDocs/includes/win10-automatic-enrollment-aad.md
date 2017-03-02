@@ -19,11 +19,11 @@ Otomatik kayıt, kullanıcıların şirkete ait ya da kişisel Windows 10 bilgis
 
 4. Microsoft Intune ile otomatik MDM kaydını yapılandırmaya başlamak için **Yapılandır**’ı seçin.
 
-5. Intune için URL'leri belirtin:
+5. Aşağıdaki URL'ler için varsayılan değerleri kullanın:
 
-  - **MDM Kayıt URL’si** – Varsayılan değeri kullanın.
-  - **MDM Kullanım Koşulları URL’si** – Varsayılan değeri kullanın. Bu URL, kullanıcılara cihazlarını kaydederken kullanım koşullarını gösterilir.
-  - **MDM Uyumluluk URL’si** – Varsayılan değeri kullanın. Bir cihazın uyumsuz olduğunu bulunursa, bu URL ile bir **Erişim reddedildi** iletisi gösterilir. URL, kullanıcıların cihazlarının ilke ile neden uyumsuz olduğunu ve nasıl yeniden uyumlu hale getirebileceklerini anlamalarına yardımcı olan bir sayfayı işaret eder.
+  - **MDM Kaydı**
+  - **MDM Kullanım Koşulları** 
+  - **MDM Uyumluluğu**
 
 6.  Cihazları Microsoft Intune tarafından yönetilecek kullanıcıları belirtin. Bu kullanıcıların Windows 10 cihazları, Microsoft Intune ile yönetim için otomatik olarak kaydedilir.
 
@@ -32,8 +32,3 @@ Otomatik kayıt, kullanıcıların şirkete ait ya da kişisel Windows 10 bilgis
   - **Yok.**
 
 7. **Kaydet**’i seçin.
-
-
-<!--HONumber=Feb17_HO2-->
-
-

@@ -1,11 +1,12 @@
 ---
-title: "iOS cihazları için Intune özel ayarları | Intune Azure önizlemesi | Microsoft Docs"
+title: "iOS cihazları için Intune özel ayarları"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: iOS özel profilinde kullanabileceğiniz ayarları öğrenin."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: cfccdbf34437c5ab23cefba5307c53c60573ddb0
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d8e6d0d641dd55c79442f68e7e97d21efcdad7fa
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="intune-custom-settings-for-ios-devices-in-intune-azure-preview"></a>Intune Azure önizlemesinde iOS cihazları için Intune özel ayarları
+# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>iOS cihazları için Microsoft Intune özel ayarları
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -37,9 +40,4 @@ Bu özellik, diğer Intune profil türleriyle yapılandırılamayan iOS ayarlar�
 Apple Configurator aracından dışarı aktardığınız ayarların, iOS özel ilkesini dağıttığınız cihazlardaki iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların nasıl çözümleneceği hakkında bilgi için, [Apple Developer](https://developer.apple.com/) web sitesinde **Yapılandırma Profili Başvurusu** ve **Mobil Cihaz Yönetim Protokolü Başvurusu** öğelerini arayın.
 
 İçeri aktardığınız dosya, dikey pencerenin **Dosya içeriği** alanında görüntülenir.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

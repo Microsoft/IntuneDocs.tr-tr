@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1609ed2f127fe9d7d1f1c3b3e923bd12f1088200
-ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 57dce5b23b9c8cd878a9ce746e6459a69f1270ff
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -41,7 +42,7 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 ## <a name="how-to-configure-device-categories"></a>Cihaz kategorilerini yapılandırma
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>1. Adım - Azure Portal’ın Intune dikey penceresinde cihaz kategorileri oluşturma
-1. Azure Portal’da oturum açın.
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihazları kaydet**’i seçin.
 3. **Kayıt** dikey penceresinde **Cihaz Kategorileri**’ni seçin.
@@ -61,17 +62,20 @@ Devam etmek için Azure Active Directory belgelerindeki [Gelişmiş kurallar olu
 Siz cihaz gruplarını yapılandırdıktan ve kullanıcılar cihazlarını kaydettikten sonra, onlara sizin yapılandırdığınız kategori listesi gösterilir. Kullanıcılar kategoriyi seçip kaydı tamamladıktan sonra, cihazları seçtikleri kategoriye karşılık gelen Active Directory güvenlik grubuna eklenir.
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>Yönettiğiniz cihazların kategorilerini görüntüleme
-1.    Azure Portal’ın Intune dikey penceresinde **Cihazlar ve Gruplar**’ı seçin.
 
-2.    **Yönet**’in altında **Tüm cihazlar**’a tıklayın.
+1.    Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-3.    Cihaz listesinde **Kategori** sütununu inceleyin.
+2. Azure Portal’ın Intune dikey penceresinde **Cihazlar ve Gruplar**’ı seçin.
+
+3.    **Yönet**’in altında **Tüm cihazlar**’a tıklayın.
+
+4.    Cihaz listesinde **Kategori** sütununu inceleyin.
 
 **Kategori** sütunu görüntülenmiyorsa **Sütunlar**’a tıklayın, listeden **Kategori**’yi seçin ve **Uygula**’ya tıklayın.
 
 ### <a name="to-change-the-category-of-a-device"></a>Cihazın kategorisini değiştirmek için
 
-1. Azure Portal’da oturum açın.
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihazlar ve Gruplar**’ı seçin.
 4. **Cihazlar ve Gruplar** dikey penceresinde **Yönet** > **Tüm cihazlar**’ı seçin.
@@ -85,10 +89,5 @@ Siz cihaz gruplarını yapılandırdıktan ve kullanıcılar cihazlarını kayde
 
 - Bir kategoriyi silerseniz, bu kategoriye atanmış olan tüm cihazlar sonunda **Atanmamış** kategori adını görüntüler.
 
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 
