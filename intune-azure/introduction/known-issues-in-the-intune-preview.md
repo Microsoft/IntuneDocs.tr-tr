@@ -1,5 +1,6 @@
 ---
-title: "Microsoft Intune Önizlemesinde bilinen sorunlar | Intune Azure önizlemesi | Microsoft Docs"
+title: "Microsoft Intune Önizlemesinde bilinen sorunlar"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Önizlemedeki bilinen sorunlar hakkında sağlanan bilgileri okuyun"
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f479b4236243fd05630229520633a09c451e6e1e
-ms.openlocfilehash: c1f79db598651b6a8a1c2a34627a901eff6a0beb
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -35,9 +38,4 @@ Intune’a yeni bir özellik eklenmesini istiyorsanız, [Uservoice](https://micr
 ## <a name="administration-and-accounts"></a>Yönetim ve hesaplar
 
 - Genel Yöneticiler (Kiracı Yöneticileri olarak da bilinir) ayrı bir Intune veya Enterprise Mobility Suite (EMS) lisansı olmadan günlük yönetim görevlerine devam edebilir. Ancak, Genel Yöneticiler kendi cihazlarını veya bir şirket cihazını kaydetme gibi amaçlarla hizmeti kullanmak ya da Intune Şirket Portalı’nı kullanmak isterse diğer tüm kullanıcılar gibi bir Intune veya EMS lisansına ihtiyaç duyacaklardır.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

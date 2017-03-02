@@ -18,8 +18,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -34,7 +35,7 @@ Windows veya Windows Phone cihazınızı Intune’a kaydettiğinizde:
 
 -   Şirket ağına, e-postalarınıza ve iş dosyalarınıza erişebilirsiniz.
 
--   Şirket Portalı web sitesi üzerinden şirket uygulamalarını alın. (Windows 7 ve Windows Vista’da, yalnızca Şirket Portalı web sitesi üzerinden şirket uygulamalarını alabilirsiniz.)
+-   Şirket Portalı web sitesi üzerinden şirket uygulamalarını alın. (__Not__: Windows 7 ve Windows Vista’da, şirket uygulamalarını yalnızca Şirket Portalı web sitesi üzerinden alabilirsiniz.)
 
 -   Şirket veya okul e-posta hesabınızı otomatik olarak oluşturun.
 
@@ -67,6 +68,7 @@ Cihazınızı kaydettiğinizde, BT yöneticinize şu tür işlemleri yapma izni 
 -  BT yöneticiniz aynı zamanda bilgisayarınıza uygulama ve güncelleştirme de yükleyebilir.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Cihaz kaydından sonra her sekiz saatte bir ne olur?
+
 Yaklaşık her sekiz saatte bir, kayıtlı cihazlarda aşağıdakiler yapılır:
 
 -   BT yöneticinizin kullanılabilir hale getirdiği ilke veya uygulama güncelleştirmeleri indirilir.
@@ -76,9 +78,4 @@ Yaklaşık her sekiz saatte bir, kayıtlı cihazlarda aşağıdakiler yapılır:
 -   Tüm şirket uygulaması envanteri güncelleştirmeleri gönderilir.
 
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

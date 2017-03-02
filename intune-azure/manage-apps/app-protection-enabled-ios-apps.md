@@ -1,5 +1,6 @@
 ---
-title: "Uygulama koruma ilkeleriyle iOS uygulamaları | Intune Azure önizlemesi | Microsoft Docs"
+title: "Uygulama koruma ilkelerine sahip iOS uygulamaları | Intune Azure önizlemesi"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Bu konu başlığı altında, iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde neler bekleyebileceğiniz açıklanır."
 keywords: 
 author: NathBarn
@@ -13,15 +14,17 @@ ms.technology:
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: ae646cf3dd1b1469b9f87ac66ad7171d77ef6518
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5a4ce6d6248378ba48cddeaefb941c139dd990f6
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler
-[!INCLUDE[azure_preview](../includes/azure_preview.md)] Bu konuda, uygulama koruma ilkeleri içeren uygulamalardaki kullanıcı deneyimi açıklanmıştır. Uygulama koruma ilkeleri yalnızca uygulamalar iş bağlamında kullanıldığında uygulanır: İş hesabınızı kullanarak uygulamalara veya şirketinizin OneDrive iş konumunda depolanan dosyalara erişmek gibi.
+[!INCLUDE[azure_preview](../includes/azure_preview.md)] Bu konuda, uygulama koruma ilkeleri içeren uygulamalardaki kullanıcı deneyimi açıklanmıştır. Uygulama koruma ilkeleri yalnızca uygulamalar iş bağlamında kullanıldığında uygulanır: İş hesabınızı kullanarak uygulamalara veya şirketinizin OneDrive İş konumunda depolanan dosyalara erişmek gibi.
 ##  <a name="accessing-apps"></a>Uygulamalara erişme
 
 Cihaz **Intune'a kayıtlı değilse**, son kullanıcı uygulamayı ilk kez kullandığında uygulamayı yeniden başlatması istenir.  Uygulamaya uygulama koruma ilkelerinin uygulanabilmesi için yeniden başlatma gereklidir. Aşağıdaki ekran görüntüsü bunu Skype uygulamasını kullanarak göstermektedir:
@@ -52,7 +55,7 @@ Intune yalnızca, uygulama koruma ilkelerinin cihaz başına tek bir kullanıcı
 
 Birden çok kullanıcı hesabının nasıl ele alındığını daha iyi anlamak için aşağıdaki örnek senaryoyu okuyun.
 
-Kullanıcı A, iki şirkette çalışıyor - **Şirket X** ve **Şirket Y**. Kullanıcı A’nın, her şirket için bir iş hesabı var ve ikisi de uygulama koruma ilkelerini dağıtmak için Intune kullanıyor. **Şirket X**, uygulama koruma ilkelerini **Şirket Y**’den **önce** dağıtıyor. **Şirket X** ile ilişkili hesap uygulama koruma ilkesini alır, ancak Şirket Y ile ilişkili hesap almaz. Şirket Y ile ilişkili kullanıcı hesabının uygulamak koruma ilkeleri tarafından yönetilmesini istiyorsanız, Şirket X ile ilişkili kullanıcı hesabını kaldırmanız gerekir.
+Kullanıcı A, iki şirkette çalışıyor - **Şirket X** ve **Şirket Y**. Kullanıcı A’nın, her şirket için bir iş hesabı var ve ikisi de uygulama koruma ilkelerini dağıtmak için Intune kullanıyor. **Şirket X**, uygulama koruma ilkelerini **Şirket Y**’den **önce** dağıtıyor. **Şirket X** ile ilişkili hesap uygulama koruma ilkesini alır, ancak Şirket Y ile ilişkili hesap almaz. Şirket Y ile ilişkili kullanıcı hesabının uygulama koruma ilkeleri tarafından yönetilmesini istiyorsanız, Şirket X ile ilişkili kullanıcı hesabını kaldırmanız gerekir.
 ### <a name="adding-a-second-account"></a>İkinci hesap ekleme
 
 iOS cihazı kullanıyorsanız, aynı cihaza ikinci bir iş hesabı eklemeye çalıştığınızda bir engelleme iletisi görebilirsiniz.  Hesaplar görüntülenir ve kaldırmak istediğiniz hesabı seçebilirsiniz.
@@ -63,9 +66,4 @@ iOS cihazı kullanıyorsanız, aynı cihaza ikinci bir iş hesabı eklemeye çal
 [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-android-apps.md)
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

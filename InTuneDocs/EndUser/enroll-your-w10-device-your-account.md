@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,30 +16,34 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 32bde9552e79d91dd967050b96cec62146367f9b
+ms.sourcegitcommit: 580ca62628981016c444b2992e792ecc4a5da442
+ms.openlocfilehash: 7afe4eca15c395806bcc800bc261d5e6b7ba5f0c
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 cihazınızı Intune'a kaydetme
 
-1.  Windows **Ayarlar**’ına gidin ve ardından **Hesaplar**’a dokunun.
+1.  Windows **Ayarları** uygulamasını, **Başlat menüsüne** gidip **Ayarlar** düğmesini seçerek açın. Arama çubuğunda "ayarlar" için arama da yapabilirsiniz.
+
+2. **Hesaplar**’ı seçin.
 
     ![Ayarlar ve Hesaplar’a gidin](./media/W10-enroll-1-settings-accounts.png)
 
-2.  **Hesabınız**’a dokunun.
+3. **Hesabınız**’ı seçin.
 
-    ![Hesabınıza dokunun](./media/W10-enroll-2-accounts-your-account.png)
+    ![Hesabınızı seçme](./media/W10-enroll-2-accounts-your-account.png)
 
-3.  **İş veya okul hesabı ekle**’ye dokunun.
+4. **İş veya okul hesabı ekle**’yi seçin.
 
-    ![İş veya okul hesabı ekle’ye dokunun](./media/w10-enroll-3-add-work-school-acct.png)
+    ![İş veya okul hesabı ekle’yi seçme](./media/w10-enroll-3-add-work-school-acct.png)
 
-4.  İş veya okul kimlik bilgilerinizle oturum açın.
+5. İş veya okul kimlik bilgilerinizle oturum açın.
 
-    ![sign-in](./media/W10-enroll-4-sign-in.png)
+    ![Oturum aç](./media/W10-enroll-4-sign-in.png)
 
 İş veya okul e-postalarınıza, dosyalarınıza veya diğer verilerinize hâlâ erişemiyor musunuz? Erişim sağlamak için [hesabınızla ilgili sorun giderme adımlarını](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) uygulayın. Bu adımlar da işe yaramazsa, ek yardım için BT yöneticinizle iletişime geçmeniz gerekir.
 
@@ -47,16 +51,11 @@ BT yöneticinizden yardım almanın kolay yollarından biri, Şirket Portalı uy
 
 Uygulama listenizde Şirket Portalı’nı görmüyorsanız, yüklemek için aşağıdaki adımları izleyin.
 
-1.  **Başlat** &gt; **Mağaza**’ya dokunun.
+1. **Başlat** > **Mağaza**’yı seçin.
 
-2.  **Ara**’ya dokunun, sonra **şirket portalı** yazın.
+2. **Ara**’yı seçin ve sonra **şirket portalı** yazın.
 
-3.  Sonuçlar listesinde **Şirket Portalı** &gt; **Yükle**’ye dokunun.
+3. Sonuçlar listesinde **Şirket Portalı** > **Yükle**’yi seçin.
 
-4.  **Yükle** veya **Ücretsiz**'e dokunun. Bu iki seçeneğin sizin açınızdan farkı yoktur. Gösterilen seçenek, kuruluşunuzun Şirket Portalı uygulamasını ayarlama şekline göre değişir.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+4. **Yükle** veya **Ücretsiz**’i seçin. Bu iki seçeneğin sizin açınızdan farkı yoktur. Gösterilen seçenek, kuruluşunuzun Şirket Portalı uygulamasını ayarlama şekline göre değişir.
 

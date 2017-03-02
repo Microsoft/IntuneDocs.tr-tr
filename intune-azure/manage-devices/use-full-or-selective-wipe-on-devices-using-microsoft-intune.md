@@ -1,5 +1,6 @@
 ---
-title: "Intune kullanarak cihazlarda tam veya seçmeli temizleme | Intune Azure önizlemesi | Microsoft Docs"
+title: "Intune kullanarak cihazlarda tam veya seçmeli silme"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Cihazda şirket verilerini seçmeli temizleme işlemi yapmayı veya cihazda tam temizleme işlemi yapıp fabrika ayarlarına sıfırlamayı öğrenin."
 keywords: 
 author: staciebarker
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -122,9 +125,4 @@ Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz tür
 3.  Cihazın adını gösteren dikey pencerede **Şirket veri...** (Şirket verilerini kaldır) öğesini seçin ve ardından temizleme işlemini onaylamak için **Evet**’i seçin.
 
 Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz türlerine yayılması 15 dakikadan kısa sürer.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: "Uygulama koruma ilkelerinizi doğrulama | Intune Azure önizlemesi | Microsoft Docs"
+title: "Uygulama koruma ilkelerinizi doğrulama"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Bu konu başlıkları altında, uygulama koruma ilkenizin doğru kurulduğunu ve beklendiği şekilde çalıştığını nasıl test edip doğrulayabileceğiniz açıklanır."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: e0d5b4b0c3557c1d8158f9e0ea6e33c426dba925
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 086ea61de3423be254d3d8f2224c4ad96d90385d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -57,9 +60,4 @@ Kullanıcı durumuna göre gerçekleştirilecek eylemler şunlardır:
 ### <a name="see-also"></a>Ayrıca bkz.
 
 [Intune uygulama koruma ilkesi nedir?](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

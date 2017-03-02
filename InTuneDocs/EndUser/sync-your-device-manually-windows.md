@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
-ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: ff5a4313337c89da00cb87e0f4dd6c8dcc233361
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 Bazen Windows cihazınıza bir uygulama yüklemeyi denemek, düşündüğünüzden daha uzun sürebilir. Bu durumda, Windows cihazınızı el ile eşitlemeyi deneyebilirsiniz. Eşitlemek yüklemenin hızını artırmaya yardımcı olabilir.
 
-> [!Note] 
+> [!Note]
 > Daha yavaş olan veya aynı anda içerik indiren cihazların çok sayıda olduğu bir ağdaysanız uygulamaların yüklenmesi biraz zaman alabilir.
 
 Aşağıdaki Windows sürümleri el ile eşitlenebilir. Ne yazık ki, cihazınızda farklı bir Windows sürümü kullanılıyorsa el ile eşitleme başlatamazsınız.
@@ -131,9 +133,4 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows Pho
    Cihazınızın eşitlenmesi bitene kadar, ekranın en üstünde “Hesabınızı eşitliyoruz” iletisi görüntülenir.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

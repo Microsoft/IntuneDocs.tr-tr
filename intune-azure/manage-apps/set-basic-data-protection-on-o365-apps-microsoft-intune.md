@@ -1,5 +1,6 @@
 ---
-title: "Office 365 uygulamalarında temel veri yönetimini ayarlama - Intune Azure önizlemesi | Microsoft Docs"
+title: "Office 365 uygulamalarında temel veri yönetimini ayarlama - Intune Azure önizlemesi"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Office 365 uygulamalarını yönetme sihirbazı için destekleyici belgeler."
 keywords: 
 author: lindavr
@@ -14,9 +15,11 @@ ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4c45b7fc8a520d869f21717fea36e27b242cf39
-ms.openlocfilehash: 7cff88f0365cff1de133fdafdce2bd45b36d551e
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: e3924cb3409ab03f8070376c2248a2791a1e713d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -130,9 +133,4 @@ Bu ilkeleri veya Intune Azure önizlemesinde oluşturduğunuz herhangi bir ilkey
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Uygulama koruma ilkeleri](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy) hakkında daha fazla bilgi edinin.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

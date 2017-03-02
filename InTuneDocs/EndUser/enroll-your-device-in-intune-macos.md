@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
+ms.sourcegitcommit: e2a507ff6f803cf022536824ca2f12f6d6a64d75
+ms.openlocfilehash: 4b532299070bdb8ddf0e9de1e6b598e8dcd8ffb3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,37 +37,36 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişerek işinizi y
 
   [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-3. Oturum açtığınızda kullanılabilir __Uygulamalar__, __Cihazlarım__ ve BT ekibinize ulaşmak için kullanabileceğiniz __iletişim bilgileri__ bölümlerini göreceksiniz. Sayfanın en üstünde şu uyarı görüntülenir: **Bu cihaz kayıtlı değil veya Şirket Portalı tarafından tanımlanamıyor. <u>Farklı bir cihaz seçmek için buraya dokunun</u>.** __Buraya Dokunun__'a tıklayın.
+3. Oturum açtığınızda, kullanılabilir tüm __Giriş__, __Uygulamalar__ ve __Kategoriler__ sekmelerini görürsünüz. Bu sayfada yükleyebileceğiniz tüm uygulamalar gösterilir. Henüz kayıtlı cihazınız yoksa, **Size herhangi bir uygulama gösteremiyoruz** şeklinde bir bildirim görürsünüz. __Cihazlarım__’ı seçerek devam edebilirsiniz.
 
- ![Şirket Portalı macOS Giriş Sayfası](./media/macOS_enroll_001_landing_page.png)
+ ![Henüz herhangi bir uygulamanın yüklenemeyeceğini gösteren web portalı ve altında Cihazlarım düğmesi ile web portalı giriş sayfasının ekran görüntüsü.](./media/macOS_enroll_001_landing_page.png)
 
-4. __Bu cihazı tanımlama veya kaydetme__ nedeninizle ilgili kısa bir açıklamayı içeren bir açılır pencere görüntülenir. Bilgileri gözden geçirdikten sonra devam etmek için __Kaydet__'e tıklayın.
+4. __Cihazlarım__ sayfasında, kayıtlı cihazların bir listesini veya yalnızca bir başlık görürsünüz. Bu, macOS veya başka bir kayıtlı cihazınız olup olmadığına bağlıdır. Listede olmayan bir cihazı kaydetmek için şu ifadeye sahip başlığı seçin: __Cihazınız listedeyse, tanımlamak için buraya dokunun. Listede değilse, yine buraya tıklayarak cihazınızı kaydedebilirsiniz__.
 
- ![Bu Cihazı Tanımlayın veya Kaydedin macOS](./media/macOS_enroll_002_IDenroll_popup.png)
+  ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
 
-5. __Bu cihazı tanımladığınızda__ gerçekleştirilecek işlemlerle ilgili kısa bir açıklamayı içeren ikinci bir açılır pencere görüntülenir. Bilgileri gözden geçirdikten sonra devam etmek için __Yükle__'ye tıklayın.
+5. __Bu cihazı tanımlama veya kaydetme__ nedeninizle ilgili kısa bir açıklamayı içeren bir açılır pencere görüntülenir. Bilgileri gözden geçirdikten sonra devam etmek için __Kaydet__'e tıklayın.
 
- ![Bu cihazı kaydet macOS](./media/macOS_enroll_003_enroll_popup.png)
+ ![Bu Cihazı Tanımlayın veya Kaydedin macOS](./media/macOS_enroll_003_IDenroll_popup.png)
+
+6. __Bu cihazı tanımladığınızda__ gerçekleştirilecek işlemlerle ilgili kısa bir açıklamayı içeren ikinci bir açılır pencere görüntülenir. Bilgileri gözden geçirdikten sonra devam etmek için __Yükle__'ye tıklayın.
+
+ ![Bu cihazı kaydet macOS](./media/macOS_enroll_004_enroll_popup.png)
 
   > [!NOTE]
   > Cihazınızın, kuruluşunuzun kaynaklarına erişmek için yeterli güvenliğe sahip olduğunu doğrulamak için Intune'un bilgisayarınıza erişmesi gerekir. [Cihazınızı Intune'a kaydettiğinizde gerçekleştirilen işlemleri](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md) keşfedin.
 
-6. __Sistem Tercihleri__ açılır ve __"Yönetim Profilini" yüklemek__ isteyip istemediğiniz sorulur. Devam etmek için __Yükle__'ye, daha fazla ayrıntıya ulaşmak için ise __Profili Göster__'e tıklayın.
+7. __Sistem Tercihleri__ açılır ve __"Yönetim Profilini" yüklemek__ isteyip istemediğiniz sorulur. Devam etmek için __Yükle__'ye, daha fazla ayrıntıya ulaşmak için ise __Profili Göster__'e tıklayın.
 
- ![Yönetim Profilini Yükleme](./media/macOS_enroll_004_sysprefs_mgmt_profile.png)
+ ![Yönetim Profilini Yükleme](./media/macOS_enroll_005_sysprefs_mgmt_profile.png)
 
-7. Bir macOS penceresi açılır. Değişiklik yapılmasını onaylamak için bilgisayarınızın __Kullanıcı Adı__ ve __Parola__, bilgilerini girip __Tamam__'a tıklayın. Yönetim profili Mac cihazınıza yüklenir.
+8. Bir macOS penceresi açılır. Değişiklik yapılmasını onaylamak için bilgisayarınızın __Kullanıcı Adı__ ve __Parola__, bilgilerini girip __Tamam__'a tıklayın. Yönetim profili Mac cihazınıza yüklenir.
 
- ![macOS Profil Yükleme Açılır Penceresi](./media/macOS_enroll_005_sysprefs_admin_login.png)
+ ![macOS Profil Yükleme Açılır Penceresi](./media/macOS_enroll_006_sysprefs_admin_login.png)
 
-8. Mac cihazınızda profille ilgili ayrıntılı bilgiler içeren veya __Yükleme__ konusunda emin olup olmadığınızı soran ek iletiler görüntülenebilir. Devam etmek için bu pencerelerde __Devam__ ve __Yükle__ seçeneklerini belirleyin. Yükleme tamamlandıktan sonra yeni yüklediğiniz __Yönetim Profili__ bilgilerini __Cihaz Profilleri__ bölümünde görüntüleyebilirsiniz.
+9. Mac cihazınızda profille ilgili ayrıntılı bilgiler içeren veya __Yükleme__ konusunda emin olup olmadığınızı soran ek iletiler görüntülenebilir. Devam etmek için bu pencerelerde __Devam__ ve __Yükle__ seçeneklerini belirleyin. Yükleme tamamlandıktan sonra yeni yüklediğiniz __Yönetim Profili__ bilgilerini __Cihaz Profilleri__ bölümünde görüntüleyebilirsiniz.
 
- ![macOS Profili Yüklendi](./media/macOS_enroll_006_sysprefs_installed_profile.png)
+ ![macOS Profili Yüklendi](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. İletişim bilgilerine [Şirket Portalı web sitesinden](http://portal.manage.microsoft.com) ulaşabilirsiniz.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

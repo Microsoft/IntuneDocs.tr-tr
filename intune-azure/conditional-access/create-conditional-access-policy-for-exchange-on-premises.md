@@ -1,5 +1,6 @@
 ---
-title: "Exchange şirket içi koşullu erişim ilkesi | Intune Azure önizlemesi | Microsoft Docs"
+title: "Şirket içi Exchange koşullu erişim ilkesi"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Intune’da Exchange şirket içi koşullu erişimini ve eski Exchange Online Ayrılmış hizmetini nasıl yapılandırabilirsiniz?"
 keywords: 
 author: andredm7
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -96,9 +99,4 @@ Windows 8.1 ve üstündeki **Posta** uygulaması (Intune ile kaydedildiğinde)
   - Bunu erişimi engelleyecek şekilde ayarlarsanız, başlangıçta tüm cihazların şirket içi Exchange’e erişimi hemen engellenir.  **Eklenen Gruplar** içindeki kullanıcılara ait cihazlar, Intune’a kaydolduğunda ve uyumlu olarak değerlendirildiğinde erişim kazanır. Samsung KNOX Standard çalıştırmayan Android cihazlar bu ayarı desteklemediğinden, her zaman engellenir.
 10. **Cihaz platformu özel durumları**’nın altında **Ekle**’yi seçerek platformları belirtin. **Yönetilmeyen cihaz erişimi** ayarı **engellendi** olarak belirlenirse, engellemek için bir platform özel durumu olsa bile, kayıtlı ve uyumlu cihazlara izin verilir. Ayarları kaydetmek için **Tamam**’ı seçin.
 11. **Şirket içi** dikey penceresinde **Kaydet**’e tıklayarak koşullu erişim ilkesini kaydedin.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

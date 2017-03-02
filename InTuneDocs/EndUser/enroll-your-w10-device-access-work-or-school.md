@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,43 +16,42 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 865c0e607b053c4d5aff648332b1dcfc68dc0e6c
+ms.sourcegitcommit: cfd6d509b6683f563d56ef149ff3739de4772394
+ms.openlocfilehash: c87be1a3cdea23d5d40dcd8abe902b4ee5c06bc4
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 cihazınızı Intune'a kaydetme
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment-with-AAD/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  **İşe veya okula eriş**'e ve sonra **Bağlan**'a dokunun.
+1.  Windows **Ayarları** uygulamasını, **Başlat menüsüne** gidip **Ayarlar** düğmesini seçerek açın. Arama çubuğunda "ayarlar" için arama da yapabilirsiniz.
 
-    ![İş okul hesabına Erişime dokunun](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. **Hesaplar** > **İş veya okula erişim** > **Bağlan**’ı seçin.
 
-2.  İş veya okul e-posta adresinizi girin ve sonra **İleri**’ye dokunun.
+    ![İş veya okul hesabına erişimi seçme](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+3.  İş veya okul e-posta adresinizi girin ve sonra **İleri**’yi seçin.
 
     ![İş veya okul hesabınızı girme](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-3. İş veya okul hesabınız ile Intune’da oturum açın.
+4. İş veya okul hesabınız ile Intune’da oturum açın.
 
     ![İş veya okul hesabı ekle](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     Şirketinizin veya okulunuzun cihazını kaydettiğini belirten bir mesaj görürsünüz.
 
-4. **Tamamen hazırsınız!** ekranını gördüğünüzde **Kapat**’a dokunun. İşlem tamamlandı.
+5. **Tamamen hazırsınız!** ekranını görünce, **Kapat**’ı seçin. İşlem tamamlandı.
 
-  !["Tamamen hazırsınız!" ekranında Kapat’a dokunun](./media/w10-enroll-rs1-youre-all-set.png)
+  !["Tamamen hazırsınız!" ekranında Kapat’ı seçin](./media/w10-enroll-rs1-youre-all-set.png)
 
-5. Bağlantınızın doğru olup olmadığını bir kez daha kontrol etmek isterseniz, artık iş veya okul hesabınızın listelenmesi gereken **Ayarlar**’a geri dönün.
+6. Bağlantınızın doğru olup olmadığını bir kez daha kontrol etmek isterseniz, artık iş veya okul hesabınızın listelenmesi gereken **Ayarlar**’a geri dönün.
 
     ![Bağlantının düzgün biçimde ayarlandığını doğrulama](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
 Önceki adımları uygulamanıza rağmen iş veya okul e-posta hesabınıza ve dosyalarınıza erişemiyorsanız, [İşe veya okula erişim görüyorsanız izlenecek sorun giderme adımları](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) bölümündeki adımları uygulayın.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

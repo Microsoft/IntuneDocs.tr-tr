@@ -1,5 +1,6 @@
 ---
-title: "Uygulamalardan yalnızca kurumsal verileri temizleme | Intune Azure önizlemesi | Microsoft Docs"
+title: "Uygulamalardan yalnızca şirket verilerini temizleme"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Microsoft Intune’la uygulamaları seçmeli olarak temizlemeyi öğrenin."
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 44aefa68761236b946f5ab1db678ecc4aa81e92b
-ms.openlocfilehash: ab2f9d065a1c4b0e0a016ff6195742cd09965191
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 0d5385583265800ccfbb7d57e3dd325d6c8283e7
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -54,7 +57,7 @@ Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur 
 
 ## <a name="monitor-your-wipe-requests"></a>Silme isteklerinizi izleme
 
-Silme isteğinin genel durumunu gösteren ve bekleyen isteklerle hataların sayısını içeren bir özet raporunuz olabilir. Daha fazla bilgi almak için şu adımları izleyin:
+Temizleme isteğinin genel durumunu gösteren ve bekleyen isteklerle hataların sayısını içeren bir özet raporunuz olabilir. Daha fazla bilgi almak için şu adımları izleyin:
 
 1.  **Mobil Uygulamalar - Uygulama Seçmeli Silme** dikey penceresinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
 
@@ -81,8 +84,3 @@ Bekleme durumundaki silmeler, siz bunları elle silinceye kadar görüntülenir.
 [Uygulama koruma ilkesi nedir](what-is-app-protection-policy.md)
 
 [Uygulama yönetimi nedir](what-is-app-management.md)
-
-
-<!--HONumber=Feb17_HO2-->
-
-

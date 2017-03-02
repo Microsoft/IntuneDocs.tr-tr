@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
-ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
+ms.sourcegitcommit: 7f2bd282056b035b6f7008db4159d1e2f44953a5
+ms.openlocfilehash: 424d3deedbec2ba28d6c92d0ccd1cb8dc26845b4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,15 +41,21 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](http://po
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Cihazınızı kilitlemek üzere Uzaktan Kilitleme’yi kullanmak için
 
-1.    [Şirket Portalı web sitesinde,](http://portal.manage.microsoft.com) kilitlemek istediğiniz cihazın adına dokunun.
+1.    [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
 
-2.    **Uzaktan Kilitleme**’ye dokunun.
+  ![Giriş, Tüm Uygulamalar, Cihazlarım, Yardım Masası ve Oturumu Kapat düğmeleriyle ekranın sol tarafında genişletilmiş bir yan menü ile Şirket Portalı web sitesinin bir görüntüsü.](/media/iwp-expanded-sidebar.png)
 
-    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+2. __Cihazlarım__ sayfasında, kilitlemek istediğiniz cihazın adını seçin.
 
-3.    Cihazınızı kilitlemek üzere olduğunuzu belirten bir bildirim görünecektir. **Uzaktan Kilitleme**’ye dokunduktan sonra Şirket Portalı web sitesi cihazınızı kilitlemeyi deneyecektir.
+  ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
 
-    **Uzaktan Kilitleme**’ye dokunduğunuzda, "Uzaktan kilitleme bekliyor" iletisi görünür.  Uzaktan Kilitleme başarılı olduğunda, durum "Uzaktan kilitleme için başarılı." olarak değişir.
+3.    Cihaz, bir açılan pencere içinde açılır. **Uzaktan Kilitleme** düğmesine dokunun.
+
+    ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitleme dahil tüm seçenekler. ](./media/iwp-screen-with-all-options.png)
+
+4.    Cihazınızı kilitlemek üzere olduğunuzu belirten bir bildirim görünecektir. **Uzaktan Kilitleme**’ye dokunduktan sonra Şirket Portalı web sitesi cihazınızı kilitlemeyi deneyecektir.
+
+    **Uzaktan Kilitleme**’yi seçtiğinizde, "Uzaktan kilitleme bekliyor" iletisi görünür.  Uzaktan Kilitleme başarılı olduğunda, durum "Uzaktan kilitleme için başarılı." olarak değişir.
 
     Uzaktan Kilitleme durumu üç yerde görüntülenir:
 
@@ -62,9 +69,4 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](http://po
 Cihazınızı bulursanız ve Uzaktan Kilitleme kullandıktan sonra onun kilidini açmak istiyorsanız, tek yapmanız gereken geçiş kodunu girmektir.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

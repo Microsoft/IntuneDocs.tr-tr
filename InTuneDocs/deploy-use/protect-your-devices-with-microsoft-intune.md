@@ -1,11 +1,11 @@
 ---
-title: "Cihazları koruma | Microsoft Docs"
+title: "Cihazları Microsoft Intune ile koruma | Microsoft Docs"
 description: "Intune’un cihazlarınızı yetkisiz erişime veya diğer tehditlere karşı korumanıza yardımcı olabileceği yollardan bazılarını öğrenin."
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
+ms.sourcegitcommit: 10191f27ae7efd097ea6e74b557776f8be8fe6e6
+ms.openlocfilehash: 042c5673c48bb19aacd624028260267670f9846e
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -45,10 +47,10 @@ Intune’da, belirttiğiniz kurallarla uyumlu olmayan cihazları değerlendirmen
 ### <a name="protect-apps-and-the-data-they-use"></a>Uygulamaları ve kullandıkları verileri koruma
 Intune, uygulamaları ve bunların verilerini korumanıza yardımcı olmak için size bir dizi özellik sunar. Örneğin, mobil uygulama yönetimi (MAM) ilkeleri verilerin korumalı bir uygulamadan yedeklenmesini engelleyebilir, kopyalama ve başka uygulamalara yapıştırmayı kısıtlayabilir, bir uygulamaya erişim için bir PIN isteyebilir vb. Uygulamaları koruma hakkında daha fazla ayrıntı için bkz. [Microsoft Intune ile uygulamalar ve verileri koruma](protect-apps-and-data-with-microsoft-intune.md)
 
-## <a name="further-capabilities-for-windows-devices"></a>Windows cihazları için diğer özellikler
+### <a name="add-an-additional-layer-of-protection-to-devices"></a>Cihazlara ek bir koruma katmanı ekleme
+[Çok faktörlü kimlik doğrulaması (MFA)](multi-factor-authentication-azure-active-directory.md), ağdaki cihazları kullananların kimliklerini doğrulamanın daha güvenli bir yoludur.  MFA ile, kullanıcıların, kimliklerini kullanıcı adı ve parolanın ötesinde, bir telefon konuşması veya kısa mesaj üzerinden doğrulaması gerekir.
 
-### <a name="add-an-additional-layer-of-protection-to-windows-devices"></a>Windows cihazlar için ek bir koruma katmanı ekleme
-[Multi-factor authentication (MFA)](protect-windows-devices-with-multi-factor-authentication.md), ağdaki Windows ve Windows Phone cihazı kullanıcılarının kimliklerini doğrulamak için daha güvenli bir yoludur.  MFA ile, kullanıcıların, kimliklerini kullanıcı adı ve parolanın ötesinde, bir telefon konuşması veya kısa mesaj üzerinden doğrulaması gerekir.
+## <a name="further-capabilities-for-windows-devices"></a>Windows cihazları için diğer özellikler
 
 ### <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Windows cihazlarda İş İçin Windows Hello ayarlarını denetleme
 Intune bir parolayı, akıllı kartı ya da sanal akıllı kartı değiştirmek üzere Windows 10 ve üzeri için Active Directory veya bir Azure Active Directory hesabı ile alternatif bir oturum açma yöntemi olan [İş İçin Windows Hello](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)’yu (eskiden Microsoft Passport) tümleştirmenize olanak sağlar.
@@ -62,9 +64,4 @@ Etkinleştirme Kilidi, kullanıcılardan cihazlarını silmeden veya yeniden etk
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>Intune istemcisiyle yönetilen Windows bilgisayarları koruma
 Intune, kaydolmadığınız ancak Intune bilgisayar istemci yazılımıyla yönettiğiniz Windows bilgisayarlar için güvenlik ilkelerini desteklemeye devam etmektedir. Bu ilkelerin, Windows bilgisayarlarınızı güvenli hale getirmenize nasıl yardımcı olabileceğini öğrenmek için, bkz. [Intune istemci yazılımını çalıştıran Windows bilgisayarları korumanıza yardımcı olması için ilkeler kullanma](policies-to-protect-windows-pcs-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

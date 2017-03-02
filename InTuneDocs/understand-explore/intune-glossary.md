@@ -11,9 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -61,7 +63,7 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |-|-|
 |E-posta profili|Bu ilke, mobil cihazlardaki belirli e-posta istemcileri için [e-posta erişim ayarları](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) yapmak amacıyla kullanılabilir ve son kullanıcının yapması gereken ayarları en aza indirir.|
 |EMS|Microsoft Enterprise Mobility + Security (önceki adıyla Enterprise Mobility Suite) kullanıcılarınızın [ihtiyaç duyduğu uygulamalara ve içeriğe erişmesine olanak tanırken](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility) şirket verilerinizi korur.|
-|Son kullanıcı|Intune kullanırken yönettiğiniz [telefon ve bilgisayar gibi cihazların kullanıcıları](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).|
+|Son kullanıcı|Intune kullanılarak yönetilen [telefon ve bilgisayar gibi cihazların kullanıcıları](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).|
 |Kaydetme|Microsoft Intune cihazları yönetime getirmek ve kaynaklara erişim izni vermek için [kayıt](/intune/deploy-use/enroll-devices-in-microsoft-intune) kullanır.|
 
 ## <a name="f"></a>F
@@ -145,9 +147,4 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |||
 |-|-|
 |Wi-Fi profili|Kullanıcıların şirket ağınıza herhangi bir ayarı bilmelerine veya yapılandırmalarına gerek kalmadan bağlanmasına olanak tanımak için cihazlara [kablosuz ağ ayarları](/intune/deploy-use/wi-fi-connections-in-microsoft-intune) dağıtan bir ilkedir.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3fdbf7f561f526b68972c6f66d1b72b56f7fa8ad
-ms.openlocfilehash: 5aa384197036adf0c373a08c3750f453812c9fba
+ms.sourcegitcommit: 96861614075d4eed41ca440af8a8cc42e5f2ff38
+ms.openlocfilehash: 8633de5aea6cc3f98c5e331fc3de43daf85903ae
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 5aa384197036adf0c373a08c3750f453812c9fba
 > [!NOTE]
 > Öncelikle, desteklenen platformlarda tümleştirme için hazırlığın nasıl yapıldığını açıklayan [Intune Uygulama SDK’sı Kılavuzunu Kullanmaya Başlama](intune-app-sdk-get-started.md) makalesini okumanız önerilir.
 
-iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini mobil uygulama yönetimi (MAM) biçiminde iOS uygulamanıza eklemenizi sağlar. MAM özellikli uygulamalar Intune Uygulama SDK’sı ile tümleşiktir. Böylece, Intune uygulamayı etkin bir şekilde yönetirken BT yöneticilerinin mobil uygulamanıza ilke dağıtması mümkün olur.
+iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini (MAM ilkeleri olarak da bilinir) iOS uygulamanıza eklemenizi sağlar. MAM özellikli uygulamalar Intune Uygulama SDK’sı ile tümleşiktir. Böylece, Intune uygulamayı etkin bir şekilde yönetirken BT yöneticilerinin mobil uygulamanıza uygulama koruma ilkeleri dağıtması mümkün olur.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -63,7 +64,6 @@ Bu kılavuz, iOS için Intune Uygulama SDK'sının aşağıdaki bileşenlerinin 
 
 iOS için Intune Uygulama SDK'sının amacı, kodda minimum düzeyde değişiklik yaparak iOS uygulamalarına yönetim özellikleri eklemeyi sağlamaktır. Daha az kod değişikliği vardır ve pazarlama süresi daha kısadır ancak mobil uygulamanızın tutarlılığı ve kararlılığı yine de etkilenmez.
 
-Uygulamanın statik kitaplığa bağlanması ve kaynak paketini içermesi gerekir. The MAMDebugSettings.plist dosyası isteğe bağlıdır. Bu dosya, uygulamayı Microsoft Intune aracılığıyla dağıtmanıza gerek kalmadan geçerli MAM ilkelerinin benzetimini gerçekleştirmek amacıyla pakete eklenebilir. Ayrıca hata ayıklama derlemelerinde, MAMDebugSettings.plist dosyasını iTunes dosya paylaşımı aracılığıyla uygulamanın Belgeler dizinine aktararak, dosyadaki ilkeleri uygulayabilirsiniz.
 
 ## <a name="build-the-sdk-into-your-mobile-app"></a>Mobil uygulamanızda SDK oluşturma
 
@@ -150,7 +150,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
 8. Uygulama URL şemalarını Info.plist dosyasında tanımlıyorsa, her URL şeması için `-intunemam` sonekiyle başka bir şema ekleyin.
 
-9. iOS 9+ için geliştirilen mobil uygulamalarda, uygulamanızın geçtiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisinde bulunan `UIApplication canOpenURL` öğesine dahil edin. Ayrıca, listelenen her protokol için yeni bir protokol ekleyin ve bu protokole `-intunemam` ekleyin. Diziye ayrıca `http-intunemam`, `https-intunemam`ve `ms-outlook-intunemam` öğelerini dahil etmeniz gerekir.
+9. iOS 9+ üzerinde geliştirilen mobil uygulamalarda, uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Ayrıca, listelenen her protokol için yeni bir protokol ekleyin ve bu protokole `-intunemam` ekleyin. Diziye ayrıca `http-intunemam`, `https-intunemam`ve `ms-outlook-intunemam` öğelerini dahil etmeniz gerekir.
 
 10. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentifiers` anahtarı altındaki IntuneMAMSettings sözlüğüne bir dize dizisi olarak ekleyin.
 
@@ -164,6 +164,8 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 13. Kitaplığa bağlantı oluştururken `-force_load PATH_TO_ADAL_LIBRARY` bağlayıcı seçeneğini kullanın.
 
     `-force_load {PATH_TO_LIB}/libADALiOS.a` seçeneğini projenin `OTHER_LDFLAGS` derleme yapılandırma ayarına veya UI’daki **Diğer Bağlayıcı Bayraklar** seçeneğine ekleyin. `PATH_TO_LIB`, ADAL ikili dosyalarının konumuyla değiştirilmelidir.
+
+
 
 ## <a name="set-up-azure-directory-authentication-library"></a>Azure Directory Kimlik Doğrulama Kitaplığı’nı Ayarlama
 
@@ -195,22 +197,14 @@ ADAL paylaşımlı önbellek anahtar zinciri grubunu açıkça ayarlıyorsanız,
 
 **Intune Uygulama SDK’sını uygulamamda zaten kullanılan ADAL ayarlarını kullanmaya nasıl zorlarım?**
 
-Uygulamanız zaten ADAL kullanıyorsa, aşağıdaki ayarları doldurma hakkında bilgi edinmek için IntuneMAMSettings bölümüne göz atın:  
+Uygulamanız zaten ADAL kullanıyorsa aşağıdaki ayarları doldurma hakkında bilgi edinmek için [Intune Uygulama SDK’sı için ayarları yapılandırma](#configure-settings-for-the-intune-app-sdk) bölümüne göz atın:  
 
 * ADALClientId
+* ADALAuthority
 * ADALRedirectUri
 * ADALRedirectScheme
 * ADALCacheKeychainGroupOverride
 
-**Azure AD üretim ve iç sınama ortamları arasında nasıl geçiş yapabilirim?**
-
-ADAL çağrıları için kullanılan Azure AD ortamını belirtmek için MAMPolicies.plist içindeki `AadAuthorityURI` ayarını kullanabilirsiniz. Bu ayar, geçersiz kılınmadığı takdirde şu anda Azure AD üretim öncesi ortamını (PPE) kullanmaya ayarlanmıştır.
-
-PPE’ye karşı sınamak için bir derleme zamanı veya çalışma zamanı anahtarı kullanabilirsiniz.
-
-MAM hizmeti URL'leri ve Azure AD’nin derleme zamanı ortam anahtarı için `UsePPE` Boole bayrağını MAMEnvironment.plist içinde true olarak ayarlayın. (Bunu Info.plist aracılığıyla yapmak için destek sunulmadığını unutmayın.)
-
-Bir çalışma zamanı ortam anahtarı için PPE kullanmak amacıyla standart kullanıcı varsayılanlarındaki `com.microsoft.intune.mam.useppe` öğesini "1" olarak ayarlayın. Bu, varolan `com.microsoft.intune.mam.AADAuthorityEnvironment` ayarının yerine geçer.
 
 **Çalışma zamanında sağlanan bir kiracıya özgü URL ile Azure AD yetkilisi URL’sini nasıl geçersiz kılarım?**
 
@@ -225,9 +219,11 @@ SDK, değerin temizlenmemesi veya değiştirilmemesi durumunda ilke yenileme ve 
 
 Uygulama kimlik doğrulaması için zaten ADAL kullanıyorsa aşağıdaki eylemler gereklidir:
 
-* Projenin Info.plist dosyasında, `ADALClientId` anahtar adlı IntuneMAMSettings sözlüğü altında, ADAL çağrıları için kullanılacak istemci kimliği değerini belirtin.
+1. Projenin Info.plist dosyasında, `ADALClientId` anahtar adlı IntuneMAMSettings sözlüğü altında, ADAL çağrıları için kullanılacak istemci kimliği değerini belirtin.
 
-* Projenin Info.plist dosyasında, `ADALRedirectUri` anahtar adlı IntuneMAMSettings sözlüğü altında, ADAL çağrıları için kullanılacak yeniden yönlendirme URI’si değerini belirtin. Ayrıca, uygulamanızın yeniden yönlendirme URI’sinin biçimine bağlı olarak `ADALRedirectScheme` belirtmeniz gerekebilir.
+2. Yine `ADALAuthority` anahtar adlı IntuneMAMSettings sözlüğü altında, Azure AD yetkilisini belirtin.
+
+3. Yine `ADALRedirectUri` anahtar adlı IntuneMAMSettings sözlüğü altında, ADAL çağrıları için kullanılacak yeniden yönlendirme URI'si değerini belirtin. Ayrıca, uygulamanızın yeniden yönlendirme URI’sinin biçimine bağlı olarak `ADALRedirectScheme` belirtmeniz gerekebilir.
 
 **Uygulamam kimlik doğrulaması için zaten ADAL kullanmıyorsa ne olur?**
 
@@ -236,22 +232,15 @@ Uygulamanız ADAL kullanmıyorsa, Intune Uygulama SDK'sı ADAL parametrelerinin 
 ## <a name="register-your-app-with-the-intune-mam-service"></a>Uygulamanızı Intune MAM hizmeti ile kaydetme
 
 ### <a name="use-the-apis"></a>API'leri kullanma
-Intune Uygulama SDK’sı artık iOS uygulamalarının mobil cihaz yönetimi (MDM) ile Intune’a kaydedilmesine gerek kalmadan Intune’dan MAM ilkelerini alma özelliği sunuyor. Bu yeni işlevselliği desteklemek için SDK, uygulamanın MAM ilkelerini almasına izin veren yeni API'ler sağlar. Yeni API'leri kullanmak için şu adımları izleyin:
+Intune Uygulama SDK’sı artık iOS uygulamalarının mobil cihaz yönetimi (MDM) ile Intune’a kaydedilmesine gerek kalmadan Intune’dan uygulama koruma ilkesini alma özelliği sunuyor. Bu yeni işlevselliği desteklemek için SDK, uygulamanın uygulama koruma ilkelerini almasına izin veren yeni API'ler sağlar. Yeni API'leri kullanmak için şu adımları izleyin:
 
-1. Cihaz kaydı ile veya cihaz kaydı olmadan uygulamaların yönetilmesini destekleyen son Intune Uygulama SDK’sı sürümünü kullanın. Uygulamanızda bu özelliğe sahip olmayan daha eski bir SDK sürümü kullanıldıysa, Intune MAM kitaplığını ve son SDK’nın üst bilgilerini içeren Üst Bilgiler klasörünü güncelleştirmeniz gerekir.
+1. Cihaz kaydı ile veya cihaz kaydı olmadan uygulamaların yönetilmesini destekleyen son Intune Uygulama SDK’sı sürümünü kullanın. .
 
 2. API’leri çağıran tüm dosyalara IntuneMAMEnrollment.h ekleyin.
 
-3. PPE’ye karşı sınamak için bir derleme zamanı veya çalışma zamanı anahtarı kullanabilirsiniz.
-
-    MAM hizmeti URL'leri ve Azure AD’nin derleme zamanı ortam anahtarı için `UsePPE` Boole bayrağını MAMEnvironment.plist içinde true olarak ayarlayın. (Bunu Info.plist aracılığıyla yapmak için destek sunulmadığını unutmayın.)
-
-    Bir çalışma zamanı ortam anahtarı için PPE kullanmak amacıyla standart kullanıcı varsayılanlarındaki `com.microsoft.intune.mam.useppe` öğesini "1" olarak ayarlayın. Bu, varolan `com.microsoft.intune.mam.AADAuthorityEnvironment` ayarının yerine geçer.
-
-
 ### <a name="register-accounts"></a>Hesapları kaydetme
 
-Bir uygulama belirli bir kullanıcı hesabı adına kaydedildiyse, Intune hizmetinden MAM ilkeleri alabilir. Yeni oturum açan tüm kullanıcıları Intune Uygulama SDK'sına kaydetmek uygulamanın görevidir. Yeni kullanıcı hesabının kimliği doğrulandıktan sonra uygulama, Headers/IntuneMAMEnrollment.h içindeki `registerAndEnrollAccount` yöntemini çağırmalıdır:
+Bir uygulama belirli bir kullanıcı hesabı adına kaydedildiyse, Intune hizmetinden uygulama koruma ilkesi alabilir. Yeni oturum açan tüm kullanıcıları Intune Uygulama SDK'sına kaydetmek uygulamanın görevidir. Yeni kullanıcı hesabının kimliği doğrulandıktan sonra uygulama, Headers/IntuneMAMEnrollment.h içindeki `registerAndEnrollAccount` yöntemini çağırmalıdır:
 
 ```objc
 /**
@@ -275,7 +264,7 @@ Kullanıcı bir uygulamanın oturumunu kapatmadan önce, uygulamanın kullanıc�
 
 1. Yeniden kayıt denemeleri kullanıcının hesabında artık gerçekleşmez.
 
-2. Kullanıcı uygulamayı başarıyla kaydettiyse, kullanıcı ve uygulamanın Intune MAM hizmetindeki kayıtları silinir ve MAM ilkeleri kaldırılır.
+2. Kullanıcı uygulamayı başarıyla kaydettiyse, kullanıcı ve uygulamanın Intune MAM hizmetindeki kayıtları silinir ve uygulama koruma ilkesi kaldırılır.
 
 3. Bir uygulama seçmeli silme işlemi (isteğe bağlı) başlatırsa, tüm iş veya okul verileri silinir.
 
@@ -305,9 +294,9 @@ Uygulama kullanıcının iş veya okulla ilgili verilerini kendi kendine silerse
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
 
-## <a name="enroll-without-prior-sign-in"></a>Önceden oturum açmadan kaydetme
+### <a name="enroll-without-prior-sign-in"></a>Önceden oturum açmadan kaydetme
 
-Kullanıcının Azure Active Directory’de oturum açmasını sağlamayan bir uygulama, API’yi çağırıp SDK’nın söz konusu kimlik doğrulamasını gerçekleştirmesini sağlayarak Intune hizmetinden MAM ilkeleri alabilir. Azure AD ile bir kullanıcının kimlik doğrulamasını gerçekleştirmeyip, yine de verilerin korunmasına yardımcı olmak için MAM ilkeleri alması gereken uygulamaların bu tekniği kullanması gerekir. Örneğin uygulamada oturum açmak için başka bir kimlik doğrulaması hizmeti kullanılıyor veya uygulama oturum açmayı hiç desteklemiyorsa. Bunu yapmak için uygulama Headers/IntuneMAMEnrollment.h içindeki `loginAndEnrollAccount` yöntemini çağırmalıdır:
+Kullanıcının Azure Active Directory’de oturum açmasını sağlamayan bir uygulama, API’yi çağırıp SDK’nın söz konusu kimlik doğrulamasını gerçekleştirmesini sağlayarak Intune hizmetinden uygulama koruma ilkesi alabilir. Azure AD ile bir kullanıcının kimlik doğrulamasını gerçekleştirmeyip, yine de verilerin korunmasına yardımcı olmak için uygulama koruma ilkesi alması gereken uygulamaların bu tekniği kullanması gerekir. Örneğin uygulamada oturum açmak için başka bir kimlik doğrulaması hizmeti kullanılıyor veya uygulama oturum açmayı hiç desteklemiyorsa. Bunu yapmak için uygulama Headers/IntuneMAMEnrollment.h içindeki `loginAndEnrollAccount` yöntemini çağırmalıdır:
 
 ```objc
 /**
@@ -367,66 +356,40 @@ Bu temsilci yöntemleri aşağıdaki bilgileri içeren bir `IntuneMAMEnrollmentS
 - Durum kodunun açıklamasını içeren bir hata dizesi
 - Bir `NSError` nesnesi
 
-Bu nesne, getirilebilecek belirli durum kodlarıyla birlikte Headers/IntuneMAMEnrollmentStatus.h içinde tanımlanır.
+Bu nesne, getirilebilecek belirli durum kodlarıyla birlikte IntuneMAMEnrollmentStatus.h içinde tanımlanır.
 
 
 
 
-## <a name="sample-code"></a>Örnek kod
+### <a name="sample-code"></a>Örnek kod
 
 Aşağıdakiler temsilci yöntemlerine örnek uygulamalardır:
 
 ```objc
 - (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"enrollment result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
 
 - (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"policy check-in result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
-
 - (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
 ```
 
 ## <a name="app-restart"></a>Uygulamayı yeniden başlatma
 
-Bir uygulama MAM ilkelerini ilk kez aldığında, gerekli kancaları uygulamak için yeniden başlatılması gerekir. Bir uygulamaya yeniden başlatma gerekliliğini bildirmek için SDK, Headers/IntuneMAMPolicyDelegate.h içinde bir temsilci yöntemi sağlar.
+Bir uygulama ilk kez uygulama koruma ilkeleri aldığında, gerekli kancaları uygulamak için yeniden başlatılması gerekir. Bir uygulamaya yeniden başlatma gerekliliğini bildirmek için SDK, Headers/IntuneMAMPolicyDelegate.h içinde bir temsilci yöntemi sağlar.
 
 ```objc
  - (BOOL) restartApplication
@@ -434,19 +397,34 @@ Bir uygulama MAM ilkelerini ilk kez aldığında, gerekli kancaları uygulamak i
 Bu yöntemin dönüş değeri, uygulamanın gerekli yeniden başlatma işlemini uygulayıp uygulayamayacağını SDK’ya bildirir:   
 
  - Dönüş değeri true olursa, uygulama yeniden başlatma işlemini kendi yapar.   
+
  - Dönüş değeri false olursa, SDK uygulamayı bu yöntemin dönüşünün ardından yeniden başlatır. SDK kullanıcıya uygulamayı hemen yeniden başlatmasını belirten bir iletişim kutusu gösterir.
 
-## <a name="implement-save-as-controls"></a>Farklı kaydet denetimlerini uygulama
+## <a name="customize-your-apps-behavior"></a>Uygulamanızın davranışını özelleştirme
 
-Intune, BT yöneticilerinin yönetilen bir uygulamanın verilerini hangi depolama konumlarına kaydedebileceğini seçmesine olanak tanır. Uygulamalar izin verilen depolama konumları için **isSaveToAllowedForLocation** API’sini kullanarak Intune’u sorgulayabilir.
+Intune Uygulama SDK'sında, uygulamaya dağıtılan Intune uygulama koruma ilkesi hakkında bilgi almak için çağırabileceğiniz birkaç API vardır. Uygulamanızın davranışını özelleştirmek için bu verileri kullanabilirsiniz. Çoğu uygulama koruma ilkesi ayarı, uygulama tarafından değil, SDK tarafından otomatik olarak uygulanır. Uygulamada kullanılması gereken tek ayar Farklı kaydet denetimidir.
+
+### <a name="get-the-app-protection-policy-settings"></a>Uygulama koruma ilkesi ayarlarını alma
+
+#### <a name="intunemampolicymanagerh"></a>IntuneMAMPolicyManager.h
+IntuneMAMPolicyManager sınıfı, uygulamaya dağıtılan Intune uygulama koruma ilkesini gösterir. Özellikle, [Çoklu kimliği etkinleştirme](#-enable-multi-identity-optional) için faydalı olan API’leri gösterir.
+
+#### <a name="intunemampolicyh"></a>IntuneMAMPolicy.h
+IntuneMAMPolicy sınıfı, uygulamaya dağıtılan Intune uygulama koruma ilkesini gösterir. Bu sınıfta gösterilen çoğu ilke ayarı SDK tarafından uygulanır, ancak ilke ayarlarının nasıl uygulandığına bağlı olarak uygulamanızın davranışını her zaman özelleştirebilirsiniz.
+
+Bu sınıf, farklı kaydet denetimlerini uygulamak için gereken ve sonraki bölümde ayrıntıları verilen bazı API’leri gösterir.
+
+### <a name="implement-save-as-controls"></a>Farklı kaydet denetimlerini uygulama
+
+Intune, BT yöneticilerinin yönetilen bir uygulamanın verilerini hangi depolama konumlarına kaydedebileceğini seçmesine olanak tanır. Uygulamalar izin verilen depolama konumları için **IntuneMAMPolicy.h** içinde tanımlanan **isSaveToAllowedForLocation** API’sini kullanarak Intune’u sorgulayabilir.
 
 Yönetilen verileri bulut depolama alanı veya yerel konumlara kaydetmeden önce, BT yöneticisinin o konuma veri kaydedilmesine izin verip vermediğini öğrenmek için uygulamaların **isSaveToAllowedForLocation** API’sini sorgulaması gerekir.
 
 Uygulamalar **isSaveToAllowedForLocation** API'sini kullanırken, depolama konumu için kullanılan UPN’den (varsa) geçmeleri gerekir.
 
-### <a name="supported-save-locations"></a>Desteklenen kaydetme konumları
+#### <a name="supported-save-locations"></a>Desteklenen kaydetme konumları
 
-**isSaveToAllowedForLocation** API’si, BT yöneticisinin aşağıdaki konumlara veri kaydetme izni verip vermediğinin denetlenmesini sağlayan sabitler sunar:
+**isSaveToAllowedForLocation** API’si, BT yöneticisinin IntuneMAMPolicy.h içinde tanımlanan aşağıdaki konumlara veri kaydetme izni verip vermediğinin denetlenmesini sağlayan sabitler sunar:
 
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
@@ -458,45 +436,49 @@ Uygulamalar **isSaveToAllowedForLocation** API'sini kullanırken, depolama konum
 
 Uygulamalar, OneDrive İş gibi “yönetilen” veya “kişisel” olarak kabul edilen konumlara veri kaydedilip kaydedilemeyeceğini denetlemek için **isSaveToAllowedForLocation** API’sindeki sabitleri kullanmalıdır. Ayrıca uygulama bir konumun “yönetilen” veya “kişisel” olup olmadığını denetleyemiyorsa API kullanılmalıdır.
 
-Bir konumun "kişisel" olduğu biliniyorsa uygulamalar, **IntuneMAMSaveLocationOther** değerini kullanmalıdır.
+"Kişisel" olarak bilinen konumları, `IntuneMAMSaveLocationOther` sabiti temsil eder.
 
-Uygulama yerel cihazdaki herhangi bir konuma veri kaydediyorsa **IntuneMAMSaveLocationLocalDrive** sabiti kullanılmalıdır.
+Uygulama yerel cihazdaki herhangi bir konuma veri kaydediyorsa `IntuneMAMSaveLocationLocalDrive` sabiti kullanılmalıdır.
 
-## <a name="set-up-the-intune-app-sdk"></a>Intune Uygulama SDK’sını ayarlama
+## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune Uygulama SDK'sı ayarlarını yapılandırma
 
-Uygulamanın Info.plist dosyasında yer alan IntuneMAMSettings sözlüğünü kullanarak Intune Uygulama SDK’sını ayarlarsınız. Aşağıdaki tabloda desteklenen tüm ayarlar listelenmiştir.
+Uygulamanın Info.plist dosyasında yer alan **IntuneMAMSettings** sözlüğünü kullanarak Intune Uygulama SDK’sını ayarlar ve yapılandırırsınız. Aşağıdaki tabloda desteklenen tüm ayarlar listelenmiştir.
 
 Bu ayarlardan bazıları önceki bölümlerde ele alınmış olabilir ve bazıları tüm uygulamalar için geçerli değildir.
 
 Ayar  | Tür  | Tanım | Gerekli mi?
 --       |  --   |   --       |  --
-ADALClientId  | Dize  | Uygulamanın Azure AD istemci tanımlayıcısı. | Uygulama ADAL kullanıyorsa gereklidir.
-ADALRedirectUri  | Dize  | Uygulamanın Azure AD yeniden yönlendirme URI'si. | Uygulama ADAL kullanıyorsa ADALRedirectUri veya ADALRedirectScheme gereklidir.
-ADALRedirectScheme  | Dize  | Uygulamanın Azure AD yeniden yönlendirme şeması. Bu, uygulamanın yeniden yönlendirme URI'si `scheme://bundle_id` biçimindeyse ADALRedirectUri yerine kullanılabilir. | Uygulama ADAL kullanıyorsa ADALRedirectUri veya ADALRedirectScheme gereklidir.
-ADALLogOverrideDisabled | Boole değeri  | SDK’nın tüm ADAL günlüklerini (varsa, uygulamadan gelen ADAL çağrıları dahil) kendi günlük dosyasına yönlendirip yönlendirmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. Uygulama kendi ADAL günlüğünü geri çağırma işlevini ayarlayacaksa EVET olarak ayarlayın. | İsteğe bağlı.
-ADALCacheKeychainGroupOverride | Dize  | ADAL önbelleğinde "com.microsoft.adalcache" yerine kullanılacak anahtar zinciri grubunu belirtir. Bunun uygulama kimliği öneki içermediğini unutmayın. Bu, çalışma zamanında sağlanan dizeye önek olarak eklenir. | İsteğe bağlı.
-AppGroupIdentifiers | Dize dizisi  | Uygulamanın yetkilendirme dosyasının com.apple.security.application bölümündeki uygulama grupları dizisi. | Uygulama, uygulama grupları kullanıyorsa gereklidir.
-ContainingAppBundleId | Dize | Uzantıyı içeren uygulamanın paket kimliğini belirtir. | iOS uzantıları için gereklidir.
-DebugSettingsEnabled| Boole değeri | EVET olarak ayarlanırsa, Ayarlar paketindeki sınama ilkeleri uygulanabilir. Uygulamalar bu ayar etkin olarak *gönderilmemelidir*. | İsteğe bağlı.
-MainNibFile<br>MainNibFile~ipad  | Dize  | Bu ayar, uygulamanın ana nib dosya adını içerir.  | Uygulama, Info.plist dosyasında MainNibFile tanımlıyorsa gereklidir.
-MainStoryboardFile<br>MainStoryboardFile~ipad  | Dize  | Bu ayar, uygulamanın ana görsel taslak dosya adını içerir. | Uygulama, Info.plist dosyasında UIMainStoryboardFile tanımlıyorsa gereklidir.
-MAMPolicyRequired| Boole değeri| Uygulama bir Intune MAM ilkesine sahip değilse, uygulamanın başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. | İsteğe bağlı.
-MAMPolicyWarnAbsent | Boole değeri| Uygulama bir Intune MAM ilkesine sahip değilse, uygulamanın başlatıldığı sırada kullanıcıyı uyarıp uyarmayacağını belirtir. Bu ayar EVET olarak belirlenmişse uygulamaların mağazaya gönderilemeyeceğini unutmayın. | İsteğe bağlı.
-MultiIdentity | Boole değeri| Uygulamanın çoklu kimliği fark edip edemediğini belirtir. | İsteğe bağlı.
-SplashIconFile <br>SplashIconFile~ipad | Dize  | Intune giriş (başlangıç) simge dosyasını belirtir. | İsteğe bağlı.
-SplashDuration | Sayı | Intune başlangıç ekranının uygulama başlatılırken gösterileceği en kısa süre miktarı (saniye cinsinden). Varsayılan olarak 1,5’tir. | İsteğe bağlı.
-BackgroundColor| Dize| Başlangıç ve PIN ekranlarının arka plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.   | İsteğe bağlı. Varsayılan olarak açık gridir.
-ForegroundColor| Dize| Metin rengi gibi, başlangıç ve PIN ekranlarının ön plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.  | İsteğe bağlı. Varsayılan olarak siyahtır.
-AccentColor | Dize| PIN ekranının düğme metni rengi ve kutu vurgu rengi gibi tema rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.| İsteğe bağlı. Varsayılan olarak sistem mavisidir.
-MAMTelemetryDisabled| Boole değeri| SDK’nın arka ucuna herhangi bir telemetri verisi gönderip göndermeyeceğini belirtir.| İsteğe bağlı.
-MAMTelemetryUsePPE | Boole değeri | SDK’nın PPE’nin arka ucuna veri gönderip göndermeyeceğini belirtir. Sınama telemetri verilerinin müşteri verileriyle karışmaması için uygulamalarınızı bir Intune ilkesiyle sınarken bunu kullanın. | İsteğe bağlı.
+ADALClientId  | Dize  | Uygulamanın Azure AD istemci tanımlayıcısı. | Uygulama ADAL kullanıyorsa gereklidir. |
+ADALAuthority | Dize | Uygulamanın Azure AD yetkilisi kullanımda. AAD hesaplarının yapılandırıldığı ortamınızı kullanmanız gerekir. | Uygulama ADAL kullanıyorsa gereklidir. Bu değer yoksa, Intune varsayılanı kullanılır.|
+ADALRedirectUri  | Dize  | Uygulamanın Azure AD yeniden yönlendirme URI'si. | Uygulama ADAL kullanıyorsa ADALRedirectUri veya ADALRedirectScheme gereklidir.  |
+ADALRedirectScheme  | Dize  | Uygulamanın Azure AD yeniden yönlendirme şeması. Bu, uygulamanın yeniden yönlendirme URI'si `scheme://bundle_id` biçimindeyse ADALRedirectUri yerine kullanılabilir. | Uygulama ADAL kullanıyorsa ADALRedirectUri veya ADALRedirectScheme gereklidir. |
+ADALLogOverrideDisabled | Boole değeri  | SDK’nın tüm ADAL günlüklerini (varsa, uygulamadan gelen ADAL çağrıları dahil) kendi günlük dosyasına yönlendirip yönlendirmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. Uygulama kendi ADAL günlüğünü geri çağırma işlevini ayarlayacaksa EVET olarak ayarlayın. | İsteğe bağlı. |
+ADALCacheKeychainGroupOverride | Dize  | ADAL önbelleğinde "com.microsoft.adalcache" yerine kullanılacak anahtar zinciri grubunu belirtir. Bunun uygulama kimliği öneki içermediğini unutmayın. Bu, çalışma zamanında sağlanan dizeye önek olarak eklenir. | İsteğe bağlı. |
+AppGroupIdentifiers | Dize dizisi  | Uygulamanın yetkilendirme dosyasının com.apple.security.application bölümündeki uygulama grupları dizisi. | Uygulama, uygulama grupları kullanıyorsa gereklidir. |
+ContainingAppBundleId | Dize | Uzantıyı içeren uygulamanın paket kimliğini belirtir. | iOS uzantıları için gereklidir. |
+DebugSettingsEnabled| Boole değeri | EVET olarak ayarlanırsa, Ayarlar paketindeki sınama ilkeleri uygulanabilir. Uygulamalar bu ayar etkin olarak *gönderilmemelidir*. | İsteğe bağlı. |
+MainNibFile<br>MainNibFile~ipad  | Dize  | Bu ayar, uygulamanın ana nib dosya adını içerir.  | Uygulama, Info.plist dosyasında MainNibFile tanımlıyorsa gereklidir. |
+MainStoryboardFile<br>MainStoryboardFile~ipad  | Dize  | Bu ayar, uygulamanın ana görsel taslak dosya adını içerir. | Uygulama, Info.plist dosyasında UIMainStoryboardFile tanımlıyorsa gereklidir. |
+MAMPolicyRequired| Boole değeri| Uygulamanın bir Intune uygulama koruma ilkesine sahip olmadığında başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: MAMPolicyRequired ayarı EVET olarak belirlenmişse uygulamalar App Store’a gönderilemez. | İsteğe bağlı. |
+MAMPolicyWarnAbsent | Boole değeri| Uygulamanın bir Intune uygulama koruma ilkesine sahip olmadığında başlatılırken kullanıcıyı uyarıp uyarmayacağını belirtir. Bu ayar EVET olarak belirlenmişse uygulamaların mağazaya gönderilemeyeceğini unutmayın. | İsteğe bağlı. |
+MultiIdentity | Boole değeri| Uygulamanın çoklu kimliği fark edip edemediğini belirtir. | İsteğe bağlı. |
+SplashIconFile <br>SplashIconFile~ipad | Dize  | Intune giriş (başlangıç) simge dosyasını belirtir. | İsteğe bağlı. |
+SplashDuration | Sayı | Intune başlangıç ekranının uygulama başlatılırken gösterileceği en kısa süre miktarı (saniye cinsinden). Varsayılan olarak 1,5’tir. | İsteğe bağlı. |
+BackgroundColor| Dize| Başlangıç ve PIN ekranlarının arka plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.   | İsteğe bağlı. Varsayılan olarak açık gridir. |
+ForegroundColor| Dize| Metin rengi gibi, başlangıç ve PIN ekranlarının ön plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.  | İsteğe bağlı. Varsayılan olarak siyahtır. |
+AccentColor | Dize| PIN ekranının düğme metni rengi ve kutu vurgu rengi gibi tema rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.| İsteğe bağlı. Varsayılan olarak sistem mavisidir. |
+MAMTelemetryDisabled| Boole değeri| SDK’nın arka ucuna herhangi bir telemetri verisi gönderip göndermeyeceğini belirtir.| İsteğe bağlı. |
+
+> [!NOTE]
+> Uygulamanız App Store’da yayınlanacaksa `MAMPolicyRequired`, App Store standartlarına göre"HAYIR" olarak ayarlanmalıdır.
 
 ## <a name="telemetry"></a>Telemetri
 
 Varsayılan olarak iOS için Intune Uygulama SDK'sı, aşağıdaki kullanım olaylarına ilişkin telemetri verilerini günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir.
 
 * **Uygulama başlatma**: Microsoft Intune’un yönetim türüne göre MAM özellikli uygulama kullanımı hakkında bilgi almasına yardımcı olmak amaçlıdır (MDM ile MAM, MDM kaydı olmadan MAM vb.).
-* **EnrollApplication API çağrısı**: Microsoft Intune’un başarı oranı hakkında ve istemci tarafından yapılan `enrollApplication` çağrısının çeşitli diğer performans ölçümleriyle ilgili bilgi edinmesine yardımcı olmak amaçlıdır.
+
+* **Kayıt çağrıları**: Microsoft Intune’un, başarı oranı hakkında ve istemci tarafından yapılan kayıt çağrılarının çeşitli diğer performans ölçümleriyle ilgili bilgi edinmesine yardımcı olmak amaçlıdır.
 
 > [!NOTE]
 > Intune Uygulama SDK’sı telemetri verilerini mobil uygulamanızdan Microsoft Intune’a göndermemeyi seçerseniz, Intune Uygulama SDK’sının telemetre yakalama özelliğini devre dışı bırakmanız gerekir. IntuneMAMSettings sözlüğünde `MAMTelemetryDisabled` özelliğini EVET olarak ayarlayın.
@@ -511,15 +493,19 @@ Bir kimliğin yalnızca dizi olarak tanımlandığını aklınızda bulundurun. 
 
 ### <a name="identity-overview"></a>Kimliğe genel bakış
 
-Kimlik, bir hesabın kullanıcı adıdır (örneğin,user@contoso.com). Geliştiriciler uygulamanın kimliğini aşağıdaki düzeylerde ayarlayabilir:
+Kimlik, bir hesabın kullanıcı adıdır (örneğin, user@contoso.com). Geliştiriciler uygulamanın kimliğini aşağıdaki düzeylerde ayarlayabilir:
 
 * **İşlem kimliği**: İşlem genelindeki kimliği ayarlar ve genellikle tek kimlikli uygulamalar için kullanılır. Bu kimlik tüm görevleri, dosyaları ve UI’yi etkiler.
+
 * **UI Kimliği**: Ana iş parçacığında UI görevlerine kes/kopyala/yapıştır, PIN, kimlik doğrulaması ve veri paylaşımı gibi ilkelerden hangilerinin uygulanacağını belirler. UI kimliği, şifreleme ve yedekleme gibi dosya görevlerini etkilemez.
+
 * **İş parçacığı kimliği**: Geçerli iş parçacığında hangi ilkelerin uygulanacağını etkiler. Bu kimlik tüm görevleri, dosyaları ve UI’yi etkiler.
 
 Kullanıcı yönetilse de yönetilmese de kimlikleri uygun olarak ayarlamak uygulamanın sorumluluğudur.
 
-Herhangi bir zamanda, her iş parçacığı UI görevleri ve dosya görevleri için etkili bir kimliğe sahiptir. Bu, varsa hangi ilkelerin uygulanması gerektiğini denetlemek için kullanılan kimliktir. Kimlik, “kimliksiz” ise veya kullanıcı yönetilmiyorsa hiçbir ilke uygulanmaz.
+Herhangi bir zamanda, her iş parçacığı UI görevleri ve dosya görevleri için etkili bir kimliğe sahiptir. Bu, varsa hangi ilkelerin uygulanması gerektiğini denetlemek için kullanılan kimliktir. Kimlik, “kimliksiz” ise veya kullanıcı yönetilmiyorsa hiçbir ilke uygulanmaz. Aşağıdaki diyagramlar etkin kimliklerin nasıl belirlendiğini gösterir.
+
+  ![Intune Uygulama SDK’sı iOS: bağlantılı çerçeveler ve kitaplıklar](../media/intune-app-sdk/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>İş parçacığı kuyrukları
 
@@ -633,7 +619,7 @@ SDK, bir kullanıcının uygulamayı başarıyla kaydettiğini algıladığında
 SDK şu eylemleri arka planda düzenli aralıklarla gerçekleştirir:
 
  - Uygulama henüz kaydedilmemişse, tüm kayıtlı hesapları 24 saatte bir kaydetmeyi dener.
- - Uygulama kaydedildiyse, SDK her 8 saatte bir MAM ilkesi güncelleştirmelerini denetler.
+ - Uygulama kaydedildiyse SDK, her 8 saatte bir uygulama koruma ilkesi güncelleştirmelerini denetler.
 
 Bir kullanıcının kaydını kaldırmak SDK’ya kullanıcının uygulamayı artık kullanmayacağını bildirir ve söz konusu kullanıcı hesabına ait periyodik olayların tümünü durdurabilir. Ayrıca bir uygulama kaydı silme işlemi ve gerekirse seçmeli silme işlemi tetikler.
 
@@ -663,9 +649,4 @@ Intune Uygulama SDK’sının hem statik kitaplığı hem de çerçeve derlemesi
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     İlk komut, benzetici mimarilerini çerçevenin DYLIB dosyasından kaldırır. İkinci komut, yalnızca cihaz DYLIB dosyasını çerçeve klasörüne kopyalar.
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

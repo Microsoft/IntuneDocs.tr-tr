@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: 9de1c3f8c3dbb7a5e00c5384cc7321aedfa5b9b5
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -120,17 +121,22 @@ Aşağıdaki tabloda istemci yazılımı yüklemesi başarısız olursa **Uyarı
 |**0x80070032**|İstemci yazılımını yüklemek için bir veya daha fazla önkoşul istemci bilgisayarda bulunamadı.|Gerekli tüm güncelleştirmelerin istemci bilgisayarda yüklü olduğundan emin olun ve ardından istemci yazılımı yükleme işlemini yeniden deneyin. İstemci yazılımını yükleme önkoşulları hakkında daha fazla bilgi için bkz. [Microsoft Intune için ağ altyapısı gereksinimleri](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
 |**0x80043008**|Microsoft Online Yönetim Güncelleştirmeleri hizmeti başlatılamadı.|[Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Destek ile iletişim kurun.|
 |**0x80043009**|İstemci bilgisayar hizmete zaten kayıtlı.|İstemci bilgisayarı bu hizmete yeniden kaydetmek için önce devre dışı bırakmanız gerekir. Yönergeler için bkz. [Microsoft Intune yönetiminden cihazları devre dışı bırakma](/intune/deploy-use/retire-devices-from-microsoft-intune-management).|
+|**0x8004300A**|(Aşama 21) Kayıt paketi makine kapsamında değil, kullanıcı kapsamında yüklenmek üzere GPO’ya dağıtıldığında hata oluşur. |Makine kapsamındaki GPSI aracılığıyla GPO’nun doğru hedeflendiğinden emin olun. Bu konu hakkındaki forum gönderilerini incelemek için bkz. [TechNet Forumu](https://social.technet.microsoft.com/Forums/en-US/bb9fa71c-c132-4954-abb0-70be8acbd925/failed-to-install-windows-intune?forum=microsoftintuneprod).|
 |**0x8004300B**|İstemci üzerinde çalışan Windows sürümü desteklenmediğinden, istemci yazılımı yükleme paketi çalıştırılamıyor.|Intune istemci bilgisayarda çalışan Windows sürümünü desteklemiyor. Desteklenen işletim sistemlerinin listesi için bkz. [Microsoft Intune için ağ altyapısı gereksinimleri](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
 |**0xAB2**|Windows Installer özel bir işlem için VBScript çalışma zamanına erişemedi.|Bu hata Dinamik Bağlantı Kitaplıkları'nı (DLLs) temel alan özel bir işlemden kaynaklanır. DLL sorunlarını giderirken, [Microsoft Desteği KB198038: Paket ve Dağıtım Sorunlarında Yararlı Araçlar](http://go.microsoft.com/fwlink/?LinkID=234255) makalesinde açıklanan araçları kullanmanız gerekebilir.|
 |**0x8004300f**|System Center Configuration Manager istemcisi zaten yüklü olduğundan yazılım yüklenemiyor.|Configuration Manager istemcisini kaldırın ve ardından istemci yazılımı yükleme işlemini yeniden deneyin.|
 |**0x80043010**|Open Mobile Alliance Device Management (OMADM) istemcisi zaten yüklü olduğundan bu yazılım yüklenemiyor.|OMADM istemcisinin kaydını kaldırın ve ardından istemci yazılımı yüklemesini yeniden deneyin.|
 Yükleme sorunu devam ediyorsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Destek ile iletişim kurun. Destek mühendislerine göstermek için istemci bilgisayar kayıt günlüğü (%*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log ve %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log konumlarında bulunur) ve Windows Update günlüğünü (%*windir*%\windowsupdate.log) hazır bulundurun.
 
+## <a name="what-to-do-if-endpoint-protection-is-not-uninstalled-when-you-uninstall-the-client"></a>İstemciyi kaldırdığınızda Endpoint Protection kaldırılmıyorsa yapmanız gerekenler
+
+Yukarıdaki komutları çalıştırdıktan sonra Konak Koruma (Endpoint Protection) aracısı bazen kaldırılmayabilir. Bu durumda, bu komutu yükseltilmiş istemden çalıştırın:
+
+    ```
+    "C:\Program Files\Managed Defender\Setup.exe" /x /q /s
+    ```
+
+
 ### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
