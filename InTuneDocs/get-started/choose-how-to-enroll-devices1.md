@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
+ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 0b368ad490672c3d554dcb004e07b883e4851ee1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,9 +38,4 @@ Bu soru dizisine vereceğiniz yanıtlar, yönettiğiniz cihazları kaydetmek iç
 - **Kullanıcılara ait cihazları** - "KCG” (kendi cihazını getir) kayıt yöntemi – Kullanıcılar kendi cihazlarına Intune Şirket Portalı uygulamasını yükleyip cihazı kaydederek, e-posta, şirket uygulamaları, şirket verileri ve destek gibi şirket kaynaklarına erişim elde edebilirler.  
 
 - **Şirkete ait cihazlar** - Şirkete ait cihazlar (ŞAC) kuruluşun ihtiyaçlarına ve yönetilen cihaz türlerine bağlı olarak çeşitli şekillerde kaydedilebilir.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
