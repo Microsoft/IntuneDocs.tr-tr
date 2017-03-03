@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 3400a49feaca9ef34bcffcc176bc496310d4c357
+ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
+ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
+ms.lasthandoff: 02/28/2017
 
 
 
@@ -70,11 +71,5 @@ Ayrıca, raporları aşağıdaki eylemleri destekler:
 |**Yükleme**|Daha önceden kaydedilen tüm rapor parametre kümelerini almak için **Yeni Rapor Oluştur** sayfasında **Yükle**'yi seçin.|
 |**Sil**|**Raporlar** çalışma alanında, istenen rapor türünü ve **Yükle**’yi seçin. Ardından, raporlar listesinde, raporun yanındaki sil (x) simgesini seçin.|
 
-### <a name="see-also"></a>Ayrıca bkz.
-[Microsoft Intune ile izleme ve raporlar](monitoring-and-reports-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
 
 

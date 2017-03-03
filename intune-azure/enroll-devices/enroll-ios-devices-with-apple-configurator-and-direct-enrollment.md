@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d335572ae2bc5ce74532de281658d06903f995ee
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b464a07e701797d39b7f9f50d1854a9a2682ac8e
+ms.openlocfilehash: 3208e964f2676ebcc1e54e29f039c4965c20238f
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -44,7 +44,7 @@ iOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın:
 - [Etki alanlarını yapılandırma](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [MDM Yetkilisini ayarlama](set-mdm-authority.md)
 - [Grup oluşturma](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Şirket Portalı’nı yapılandırma](/intune-azure/manage-apps/company-portal-app.md)
+- [Şirket Portalı’nı yapılandırma](/intune-azure/manage-apps/company-portal-app)
 - [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanıcı lisanslarını atama
 - [Bir MDM anında iletme sertifikası alma](get-an-apple-mdm-push-certificate.md)
 - iOS cihazlarına fiziksel erişiminizin olduğundan emin olun
