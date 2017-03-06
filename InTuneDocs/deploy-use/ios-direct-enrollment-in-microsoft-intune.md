@@ -4,7 +4,7 @@ description: "Şirkete ait cihazları Mac bilgisayarına USB ile bağlayarak ön
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -91,9 +92,4 @@ iOS cihazlarını doğrudan kaydederken, cihazın seri numarasını almadan kay�
 9.  iOS cihazında **Ayarlar**’ı açın ve **Genel** &gt; **Cihaz Yönetimi** &gt; **Yönetim Profili**’ne gidin. Profil yüklemesinin listelendiğini onaylayın, iOS ilke kısıtlamalarını ve yüklü uygulamaları denetleyin. İlke kısıtlamaları ve uygulamaların cihazda görünmesi 10 dakika kadar sürebilir.
 
 10.  Cihazları dağıtın. iOS cihazı Intune’a kaydedilmiştir ve yönetilmektedir.
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 
