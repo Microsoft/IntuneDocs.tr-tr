@@ -3,8 +3,8 @@ title: "Intune kullanarak cihazlarda tam veya seçmeli silme"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Cihazda şirket verilerini seçmeli temizleme işlemi yapmayı veya cihazda tam temizleme işlemi yapıp fabrika ayarlarına sıfırlamayı öğrenin."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

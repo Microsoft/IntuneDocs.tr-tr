@@ -2,8 +2,8 @@
 title: "Cihazları devre dışı bırakma | Microsoft Docs"
 description: "Intune, ilkesini ve şirket portalını kaldırarak cihazı Intune yönetiminden kaldırmak için hem seçmeli silmeyi, hem tam silmeyi destekler."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
 ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -77,9 +78,4 @@ Bazı durumlarda, cihazın kendi ömrü sona erer. Böyle durumlarda, tam temizl
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Tam veya seçmeli silme ile verilerinizin korunmasına yardımcı olma](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

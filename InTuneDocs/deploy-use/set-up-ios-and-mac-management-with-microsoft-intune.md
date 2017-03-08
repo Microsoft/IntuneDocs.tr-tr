@@ -2,8 +2,8 @@
 title: "iOS ve Mac yönetimini ayarlama | Microsoft Docs"
 description: "Microsoft Intune’la, iPad, iPhone ve Mac OS X cihazları gibi iOS cihazlarınız için mobil uygulama yönetimini (MDM) etkinleştirin."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/17/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
 ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -58,9 +59,4 @@ Intune iPad'ler, iPhone'lar ve macOS cihazları için mobil uygulama yönetimini
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune kaydı için önkoşullar](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

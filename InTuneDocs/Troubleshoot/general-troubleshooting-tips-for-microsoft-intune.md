@@ -2,7 +2,8 @@
 title: "Genel sorun giderme ipuçları | Microsoft Docs"
 description: "Intune’la ilgili sorunları çözmeye yardımcı olan genel kaynaklar."
 keywords: 
-author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/08/2016
 ms.topic: article
@@ -16,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
 ms.openlocfilehash: ef6c482a45a7c759cec1062b129d2644562d0da2
+ms.lasthandoff: 01/10/2017
 
 
 ---
@@ -94,9 +96,4 @@ Aşağıdaki konular, belirli konular için sorun giderme yardımına sahiptir. 
 [Microsoft Intune’da istemci kurulumu sorunlarını giderme](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Microsoft Intune’da yazılım güncelleştirmesi sorunlarını giderme](troubleshoot-software-updates-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

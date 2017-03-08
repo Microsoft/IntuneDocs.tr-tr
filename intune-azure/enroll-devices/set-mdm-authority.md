@@ -3,8 +3,8 @@ title: "Mobil cihaz yönetimi yetkilisini ayarlayın"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Intune’da mobil cihaz yönetimi yetkilisini ayarlamayı öğrenin. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article

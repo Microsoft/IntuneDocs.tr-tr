@@ -2,8 +2,8 @@
 title: "İstemci kurulumu sorunlarını giderme | Microsoft Docs"
 description: "Sık karşılaşılan istemci kurulumu sorunlarını giderin."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

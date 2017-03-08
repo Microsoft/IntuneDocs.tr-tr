@@ -2,8 +2,8 @@
 title: "iOS cihazları için Apple DEP yönetimi | Microsoft Docs"
 description: "Apple cihazlarını yönetmek için iOS Aygıt Kayıt Programı (DEP) aracılığıyla “uzaktan” satın alınmış iOS cihazlarını kaydeden bir kayıt profili dağıtın."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

@@ -3,8 +3,8 @@ title: "Telekom gider yönetimi hizmeti ayarlama"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Saaswedo telekom gider yönetimi hizmetini Intune ile tümleştirilecek şekilde yapılandırın."
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article

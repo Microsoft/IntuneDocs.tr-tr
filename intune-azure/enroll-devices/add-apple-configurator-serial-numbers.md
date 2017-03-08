@@ -3,8 +3,8 @@ title: "Apple Configurator seri numaraları ekleme"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Learn Apple Configurator kullanarak şirkete ait iOS cihazlarına seri numaraları eklemeyi öğrenin."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

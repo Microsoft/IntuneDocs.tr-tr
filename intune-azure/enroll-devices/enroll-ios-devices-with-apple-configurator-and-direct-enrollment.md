@@ -3,8 +3,8 @@ title: "Apple Configurator ve doğrudan kayıt ile iOS cihazlarını kaydetme"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Doğrudan kayıtla şirkete ait iOS cihazlarını kaydetmek için Apple Configurator’ı kullanmayı öğrenin."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "Genel Windows bilgisayarı yönetim görevleri | Microsoft Docs"
 description: "Intune yazılım istemcisi çalıştıran Windows bilgisayarlarını yönetme yollarını öğrenin."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -35,10 +36,5 @@ Bu konu, Intune yazılımı istemcisini yükleyerek bilgisayar olarak yönettiğ
 
 - [Windows bilgisayarlar için uzaktan yardım isteme ve sağlama](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) - Intune bilgisayar kullanıcılarının sizden nasıl uzaktan yardım alabileceği, önkoşullar ve TeamViewer kurulumu açıklanır.
 
-
-
-
-
-<!--HONumber=Dec16_HO3-->
 
 

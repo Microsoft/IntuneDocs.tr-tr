@@ -2,7 +2,8 @@
 title: "Windows 10 Mobile ve Windows Phone yönetimini kurma | Microsoft Docs"
 description: "Microsoft Intune ile, Windows 10 Mobile veya Windows Phone cihazları için mobil cihaz yönetimini (MDM) etkinleştirin."
 keywords: 
-author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

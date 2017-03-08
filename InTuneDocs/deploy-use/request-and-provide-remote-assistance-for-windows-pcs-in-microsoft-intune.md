@@ -2,8 +2,8 @@
 title: "Windows bilgisayarlar için uzaktan yardım isteme ve sağlama | Microsoft Docs"
 description: "Bilgisayar olarak yönetilen Windows masaüstü cihazlarına uzaktan yardım sağlamak ve bir bilgisayarı uzaktan başlatmak için son kullanıcı ve BT yönetim adımlarını açıklar."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -85,8 +86,3 @@ Kullanıcıların sorunlarına yardımcı olurken, bilgisayarlarını ara sıra 
 ### <a name="see-also"></a>Ayrıca bkz.
 
 [Intune yazılım istemcisi ile genel Windows bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

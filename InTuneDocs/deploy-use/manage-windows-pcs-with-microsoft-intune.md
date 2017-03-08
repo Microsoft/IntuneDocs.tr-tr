@@ -2,8 +2,8 @@
 title: "İstemci yazılımı ile bilgisayarları yönetme | Microsoft Docs"
 description: "Windows bilgisayarlarını Intune istemci yazılımını yükleyerek yönetin."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

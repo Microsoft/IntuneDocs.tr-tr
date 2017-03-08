@@ -2,8 +2,8 @@
 title: "iOS cihazları için doğrudan kayıt | Microsoft Docs"
 description: "Şirkete ait cihazları Mac bilgisayarına USB ile bağlayarak önceden yapılandırılmış bir ilkeyle doğrudan kaydetmek için, Apple Configurator aracını kullanın."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "Cihaz kaydıyla ilgili sorunları giderme | Microsoft Docs"
 description: "Cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article
