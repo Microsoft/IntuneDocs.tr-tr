@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
 ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -44,9 +45,4 @@ Geçiş kodu gereksinimlerine uyan bir geçiş kodu ayarlama konusunda sorun ya�
 3. BT yöneticinizin gereksinimlerini karşılayan yeni bir geçiş kodu girin ve ardından doğrulamak için bu geçiş kodunu yeniden girin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

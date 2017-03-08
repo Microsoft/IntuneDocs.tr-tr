@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 7d06eabf07039b14a5d24617d94a968bc2e85f22
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -66,9 +67,4 @@ Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde g�
 4.  **Hesabı sil** iletişim kutusunda **Sil**’e dokunun.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

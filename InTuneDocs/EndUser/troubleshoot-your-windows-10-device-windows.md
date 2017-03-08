@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: b81465ae9ae22cea347a3e052b70ac3b2be465c5
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -58,9 +59,4 @@ Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza, dosyaları
 - İş veya okul hesabınızı görmüyorsanız **Bağlan**’a dokunun ve ardından iş veya okul kimlik bilgilerinizle oturum açın.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

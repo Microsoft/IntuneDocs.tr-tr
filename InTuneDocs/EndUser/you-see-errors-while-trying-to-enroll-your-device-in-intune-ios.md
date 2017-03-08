@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 06866b9db458851dbb23d5ccf741cad3e1d4c5d0
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ Aşağıdaki tabloda iOS cihazlarınızı Intune’a kaydederken görebileceğin
 |DeviceTypeNotSupported|iOS olmayan bir cihaz kullanarak kaydolmayı denemiş olabilirsiniz. Kaydetmeye çalıştığınız mobil cihaz türü desteklenmemektedir.<br /><br />Cihazınızın iOS sürüm 8.0 veya üzerini çalıştırdığından emin olun.<br /><br />BT yöneticilerinize başvurun, mobil cihazınızı kaydetmeyi denediğinizde **DeviceTypeNotSupported** iletisini aldığınızı ve bu tablodaki çözüme bakmalarını söyleyin.|Kullanıcı cihazının iOS sürüm 8.0 veya üzerini çalıştırdığından emin olun.|
 |UserLicenseTypeInvalid|Kullanıcı hesabınız henüz gerekli bir kullanıcı grubuna üye olmadığı için mobil cihazınızı kaydedemiyorsunuz.<br /><br />BT yöneticilerinize başvurun, mobil cihazınızı kaydetmeyi denediğinizde **UserLicenseTypeInvalid** iletisini aldığınızı ve bu tablodaki çözüme bakmalarını söyleyin.|Kullanıcıların cihazlarını kaydedebilmesi için doğru kullanıcı grubunun üyesi olmaları gerekir. Bu ileti kullanıcının belirlenen mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin, mobil cihaz yönetimi yetkilisi olarak Intune belirlendiyse ve kullanıcı bir System Center 2012 R2 Configuration Manager lisansı kullanıyorsa bu hatayı alır.<br /><br />Daha fazla bilgi için aşağıdakileri gözden geçirin:<br /><br />[Microsoft Intune ile iOS ve Mac yönetimi ayarlama](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) konusunu ve [Active Directory’yi eşitleme ve Intune’a kullanıcı ekleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ve [kullanıcıları ve cihazları düzenleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) konularındaki kullanıcı ayarlamayla ilgili bilgileri gözden geçirin.|
 |MdmAuthorityNotDefined|BT yöneticinizin şirketinizdeki mobil cihazların yönetilme şeklini ayarlaması gerekir.<br /><br />BT yöneticilerinize başvurun, mobil cihazınızı kaydetmeyi denediğinizde **MdmAuthorityNotDefined** iletisini aldığınızı ve bu tablodaki çözüme bakmalarını söyleyin.|Intune’da mobil cihaz yönetimi yetkilisi belirlenmemiştir.<br /><br />[30 günlük Microsoft Intune denemesini başlatın](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) bölümündeki “6. Adım: Mobil cihazları kaydetme ve uygulama yükleme” kısmında madde 1’i gözden geçirin.|
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

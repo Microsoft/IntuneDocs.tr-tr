@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: a3cf36eae0342d2047910d1a7ca0da2acb7d2ae6
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -35,9 +36,4 @@ Bir masaüstü cihazınız varsa, cihazı şifrelemek için aşağıdaki yönerg
 2.  **BitLocker'ı Aç**'a tıklayın ve ardından sürücülerinizin her birini şifrelemek için gösterilen yönergeleri izleyin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

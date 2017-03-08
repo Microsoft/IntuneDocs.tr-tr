@@ -12,13 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d6fcfac7c8bd469f5163ec9b4017ae8c3d486428
 ms.openlocfilehash: 88770ba06718a767f8229e1b5aa4d543c87bc852
+ms.lasthandoff: 01/05/2017
 
 ---
 
@@ -70,9 +72,4 @@ Bu sorunu düzeltmek ve gerekli sertifikayı almak için uygulamanız gereken ik
 7. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin.
 
 Az önce gösterilenle aynı "eksik sertifika" iletisini görüyorsanız ve yordamı zaten izlediyseniz, büyük olasılıkla BT yöneticinizin yüklemenize yardımcı olması gereken bir sertifika daha vardır. Yardım için [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) bulunan iletişim bilgilerini kullanarak BT yöneticinize başvurun.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

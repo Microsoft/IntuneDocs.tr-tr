@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
 ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 |Masaüstü ve dizüstü bilgisayarlar|**Windows 8.1 ve Windows 8**<br />Windows 8 veya Windows 8.1 çalıştıran bilgisayarları yalnızca e-postalar için kullanıldıkları sürece sıfırlayamazsınız.<br /><br />**Windows 7 veya Windows Vista**<br />Windows 7 veya önceki bir sürümünü çalıştıran bilgisayarları sıfırlayamazsınız.|
 
 Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 352e76d4a2e1d0c9f92fce196d6e699b3cf6e333
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -32,9 +33,4 @@ Android cihazınız Intune’a kaydolduğunda, Şirket Portalı uygulamasının 
 Ayrıntılı günlük kaydı özelliğini açmak veya kapatmak için iş veya okul kimlik bilgilerinizi kullanarak Şirket Portalı uygulamasında oturum açın, **Ayarlar**’a dokunun ve sonra da **Ayrıntılı Günlük Kaydı**’nın yanındaki açık/kapalı düğmesine dokunun.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
 ms.openlocfilehash: 27bb2c0834d07225756ea9133e557a930290dcf5
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -37,9 +38,4 @@ Kuruluşunuz veya şirketiniz için zaten bir e-posta hesabınız var ve şimdi 
 3.  Yeni e-posta ayarlarının cihazınıza otomatik olarak uygulanması için kısa bir süre bekleyin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

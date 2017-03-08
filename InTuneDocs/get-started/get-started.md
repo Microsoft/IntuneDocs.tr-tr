@@ -4,7 +4,7 @@ description: "Bu konu başlığında, yönettikleri kurumsal üretim ortamını 
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 03/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,6 +14,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 9dc65b442a165609963cb5625009a723cbcb55dd
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,9 +29,4 @@ Bu kılavuzun içeriği:
 - [Intune için hızlı başlangıç kılavuzu](start-with-a-paid-subscription-to-microsoft-intune.md) - Deneme aboneliğinizi sınama aşamasından kuruluş yönetimine aktarmak veya kuruluşunuz için yeni bir abonelik oluşturmak için adım adım yönergeler
 - [Intune'a geçiş](migrate-to-intune.md) - Mevcut kurumsal mobilite yönetim çözümünüzden Intune'a geçiş yapmak için yönergeler
 - [Intune ile sonraki adımlar](prevent-company-data-leaks-from-Office-365-mobile-apps.md) - Genel Intune görevlerine genel bakış ve sonraki adımlar
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: 0909ac3e5eeefb0d137cba6b7c7c43e1cdff12dc
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -29,9 +30,4 @@ ms.openlocfilehash: 0909ac3e5eeefb0d137cba6b7c7c43e1cdff12dc
 BT yöneticiniz kökü belirtilmiş bir cihaz kullandığınızı belirledi. "Köke erişildi" ifadesi, cihazın, güvenliği tehlikeye atabilecek ve şirketinizin kaynakları için tehdit oluşturabilecek şekilde işletim sistemine erişim için değiştirildiğini anlatır. Bu söz konusu olduğunda, cihazınız artık şirket kaynaklarına erişemez.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya [Microsoft Android ekibine](mailto:wintunedroidfbk@microsoft.com) yazın.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
