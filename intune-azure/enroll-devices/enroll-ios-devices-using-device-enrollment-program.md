@@ -1,9 +1,10 @@
 ---
-title: "iOS cihazlarını kaydetme - Cihaz Kayıt Programı | Intune Azure önizlemesi | Microsoft Docs"
+title: "iOS cihazlarını kaydetme - Cihaz Kayıt Programı"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Cihaz Kayıt Programı’nı kullanarak şirkete ait iOS cihazlarını kaydetmeyi öğrenin."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
+ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -63,7 +65,7 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıda
 
 6. **Kullanıcı Benzeşimi** için, bu profile sahip cihazların kullanıcı benzeşimiyle mi yoksa kullanıcı benzeşimi olmadan mı kaydedileceğini seçin.
 
- - **Kullanıcı benzeşimiyle kaydet** - Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Böylece, cihazın şirket verilerine ve e-postalara erişmesine izin verilebilir. Kullanıcılara ait olan ve uygulamaları yükleme gibi hizmetler için şirket portalını kullanması gereken, DEP ile yönetilen cihazlarda kullanıcı benzeşimini seçin. Multifactor Authentication’ın (MFA) kullanıcı benzeşimi özellikli DEP cihazlarında kayıt sırasında çalışmayacağını unutmayın. Kayıttan sonra MFA bu cihazlar üzerinde beklendiği gibi çalışır.
+ - **Kullanıcı benzeşimiyle kaydet** - Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Böylece, cihazın şirket verilerine ve e-postalara erişmesine izin verilebilir. Kullanıcılara ait olan ve uygulamaları yükleme gibi hizmetler için şirket portalını kullanması gereken, DEP ile yönetilen cihazlarda kullanıcı benzeşimini seçin. Multifactor Authentication’ın (MFA) kullanıcı benzeşimi özellikli DEP cihazlarında kayıt sırasında çalışmayacağını unutmayın. Kayıttan sonra MFA bu cihazlar üzerinde beklendiği gibi çalışır. İlk kez oturum açarken parola değiştirmesi istenen yeni kullanıcılara, DEP cihazlarının kaydı sırasında istemde bulunulamaz. Ayrıca, parolalarının süresi dolmuş olan kullanıcılardan DEP kaydı sırasında parolalarını sıfırlamaları istenmez ve farklı bir cihazdan parolayı sıfırlamaları gerekir.
 
     >[!NOTE]
     >Kullanıcı benzeşimi ile DEP’in kullanıcı belirteci istemesini etkinleştirmek için WS-Trust 1.3 Kullanıcı Adı/Karma uç nokta gerekir.
@@ -101,11 +103,11 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıda
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>MDM sunucunuza Apple DEP seri numaraları atama
 
-1. [Cihaz Kayıt Programı Portalı](https://deploy.apple.com)’na (https://deploy.apple.com) gidin ve şirketinizin Apple kimliğiyle oturum açın. 
+1. [Cihaz Kayıt Programı Portalı](https://deploy.apple.com)’na (https://deploy.apple.com) gidin ve şirketinizin Apple kimliğiyle oturum açın.
 
-2. **Dağıtım Programı** &gt; **Aygıt Kayıt Programı** &gt; **Cihazları Yönet**’e gidin. 
+2. **Dağıtım Programı** &gt; **Aygıt Kayıt Programı** &gt; **Cihazları Yönet**’e gidin.
 
-3. **Cihaz Seç** bölümünden cihaz seçim tercihinizi yapın, ardından cihaz bilgilerini sağlayın ve cihazın **Seri Numarası**, **Sipariş Numarası** bilgileriyle veya **CSV Dosyasını Karşıya Yükle** seçeneğiyle cihaz ayrıntılarını belirtin. 
+3. **Cihaz Seç** bölümünden cihaz seçim tercihinizi yapın, ardından cihaz bilgilerini sağlayın ve cihazın **Seri Numarası**, **Sipariş Numarası** bilgileriyle veya **CSV Dosyasını Karşıya Yükle** seçeneğiyle cihaz ayrıntılarını belirtin.
 
 4. **Sunucuya Ata**'yı ve Microsoft Intune için belirtilen &lt;ServerName&gt; öğesini belirleyip **Tamam**'ı seçin.
 
@@ -137,7 +139,7 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıda
 
 Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve cihaz yönetmek için Şirket Portalı’nı yükleyip çalıştırabilir. Kullanıcılar, cihazlarını aldıktan sonra Kurulum Yardımcısı’nı tamamlamak ve Şirket Portalı uygulamasını yüklemek için aşağıda açıklanan ek adımları tamamlamalıdır.
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>Kullanıcı benzeşimi olan şirkete ait iOS cihazları kullanıcılar tarafından kaydetme 
+### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>Kullanıcı benzeşimi olan şirkete ait iOS cihazları kullanıcılar tarafından kaydetme
 
 1. Kullanıcılar cihazlarını açtığında, kendilerinden Kurulum Yardımcısı’nı tamamlamaları istenir. Kurulum sırasında kullanıcılardan kimlik bilgileri istenir. Intune abonelikleriyle ilişkili kimlik bilgilerini (yani UPN olarak bilinen benzersiz kişisel adları) kullanmaları gerekir.
 

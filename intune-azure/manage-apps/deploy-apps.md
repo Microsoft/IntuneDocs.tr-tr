@@ -1,5 +1,6 @@
 ---
-title: "Uygulamaları gruplara atama | Intune Azure önizlemesi | Microsoft Docs"
+title: "Uygulamaları gruplara ekleme"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Intune’a uygulama eklediğinizde, bu uygulamayı kullanıcı veya cihaz gruplarına atamak istersiniz."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 638ad0d87c19c9e40e96b42d18e5c4342f40a156
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
+ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -42,6 +44,33 @@ Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uy
 
 > [!NOTE]
 > Şu anda, iOS ve Android uygulamalarını (hem iş kolu uygulamaları hem de mağazadan satın uygulamalar), Intune’a kaydedilmeyen cihazlara atayabilirsiniz.
+
+## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Intune önizleme sürümünde uygulamaları gruplara atama konusundaki değişiklikler
+
+Intune Azure Önizleme'de, artık grupları uygulamalara atamak için Intune yerine Azure Active Directory (Azure AD) güvenlik grupları kullanacaksınız. Bu nedenle, özellikle Intune alt gruplarına uygulama atadığınızda, uygulama atamalarının çalışma şeklinde yapılan bazı değişiklikleri öğrenmeniz gerekir.
+Alt gruplar kavramının Azure AD'de mevcut olmaması bu konudaki en önemli husustur. Ancak, bazı gruplar aynı üyeleri içerebilir. Bu durumda, klasik Intune ile Intune Azure önizleme arasındaki davranış farklılık gösterir. Aşağıdaki tablo bunu göstermektedir:
+
+||||||
+|-|-|-|-|-|
+|**Intune Klasik (kiracı geçişinden önce)**|-|**Intune Azure (Kiracı geçişi tamamlandıktan sonra)**|-|**Daha fazla bilgi**|
+|**Üst grubu dağıtma hedefi**|**Alt grubu dağıtma hedefi**|**Önceki üst ve alt grup ortak üyeleri için ortaya çıkan atama hedefi**|**Üst grubun üyeleri için ortaya çıkan atama hedefi eylemi**|-|    
+|Kullanılabilir|Gerekli|Gerekli ve Kullanılabilir|Kullanılabilir|Gerekli ve Kullanılabilir, gerekli olarak atanan uygulamaların Şirket Portalı uygulamasında da görülebildiği anlamına gelir.
+|Uygulanamaz|Kullanılabilir|Uygulanamaz|Uygulanamaz|Geçici çözüm: 'Uygulanamaz' dağıtım hedefini Intune üst grubundan kaldırın.
+|Gerekli|Kullanılabilir|Gerekli ve Kullanılabilir|Gerekli|-|
+|Gerekli ve Kullanılabilir<sup>1</sup>|Kullanılabilir|Gerekli ve Kullanılabilir|Gerekli ve Kullanılabilir|-|    
+|Gerekli|Uygulanamaz|Gerekli|Gerekli|-|    
+|Gerekli ve Kullanılabilir|Uygulanamaz|Gerekli ve Kullanılabilir|Gerekli ve Kullanılabilir|-|    
+|Gerekli|Kaldır|Gerekli|Gerekli|-|    
+|Gerekli ve Kullanılabilir|Kaldır|Gerekli ve Kullanılabilir|Gerekli ve Kullanılabilir|-|
+<sup>1</sup> Yalnızca yönetilen iOS mağazası uygulamaları söz konusu olduğunda, bunları Intune’a ekleyip Gerekli olarak dağıttığınızda, hem Gerekli, hem de Kullanılabilir hedefi ile otomatik olarak oluşturulurlar.
+
+Dağıtım çakışmalarını önlemek için aşağıdaki eylemleri gerçekleştirebilirsiniz:
+
+1.    İlgili Intune üst ve alt gruplarına daha önce uygulamalar dağıttıysanız, kiracı geçişiniz başlamadan önce bu dağıtımları kaldırmayı düşünün.
+2.    Alt grupları üst gruplardan kaldırın ve eski alt grup üyelerini içeren yeni bir grup oluşturun. Daha sonra bu gruba yeni bir uygulama dağıtımı oluşturabilirsiniz.
+Not: Önceki üst grup "Tüm Kullanıcılar" ise, alt grup üyelerini içermeyen yeni dinamik bir grup oluşturmanız gerekir.
+Kullanıcı ve cihaz grupları için gruplarda yapacağınız tüm değişiklikleri [Azure Portalı](https://portal.azure.com/)’nda yapmanız gerekir. [Klasik Azure Portalı](https://manage.windowsazure.com/) yalnızca kullanıcı gruplarınızda değişiklik yapmanıza izin verir.
+
 
 ## <a name="how-to-assign-an-app"></a>Uygulama atama
 
