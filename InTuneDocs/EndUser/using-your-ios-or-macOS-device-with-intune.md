@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ ms.lasthandoff: 03/02/2017
 
 - [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)
 - [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Kaybolan veya çalınan cihazınızı sıfırlama (silme)](reset-erase-your-device-cpwebsite.md)
 - [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-ios.md)
 - [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-ios.md)

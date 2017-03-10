@@ -43,7 +43,6 @@ ms.lasthandoff: 03/02/2017
 - [PIN veya parolanızı ayarlama](set-your-pin-or-password-android.md)
 - [Şirketinizin Sanal Özel Ağını (VPN) yükleme](install-your-companys-virtual-private-network-VPN-android.md)
 - [Cihaz kilitlenmeden önceki süreyi ayarlama](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Kaybolan veya çalınan cihazınızı sıfırlama (silme)](reset-erase-your-device-cpwebsite.md)
 - [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-android.md)
 - [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md)
