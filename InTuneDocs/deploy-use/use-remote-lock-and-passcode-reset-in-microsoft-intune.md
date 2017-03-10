@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 02/16/17
+ms.date: 03/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
-ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
+ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
+ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma
@@ -34,6 +35,7 @@ Aşağıdaki tabloda, farklı mobil platformlarda uzaktan kilitleme işleminin n
 |Mac OS|Desteklenmez|
 |iOS|Desteklenir|
 |Android|Desteklenir|
+|Android for Work|Desteklenir|
 |Windows 10 (mobil)|Desteklenir|
 |Windows 10 (masaüstü)|Desteklenmez|
 |Windows Phone 8 ve Windows Phone 8.1|Desteklenir|
@@ -61,6 +63,7 @@ Bir kullanıcı geçiş kodunu unutursa, cihazdan geçiş kodunu kaldırarak vey
 |Mac OS|Desteklenmez|
 |iOS|Bir cihazdan parolayı temizlemek için desteklenir. Yeni bir geçici parola oluşturmaz.|
 |Android|Android 7.0'den önceki sürümlerde desteklenir. Geçici bir geçiş kodu oluşturur.|
+|Android for Work|Desteklenmez|
 |Windows 10 Mobile|Desteklenir|
 |Windows Phone 8 ve Windows Phone 8.1|Desteklenir|
 |Windows RT 8.1|Desteklenmez|
@@ -83,9 +86,4 @@ Intune yazılım istemcisine kaydolmuş Windows bilgisayarları için geçiş ko
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Cihazları kullanımdan kaldırma](retire-devices-from-microsoft-intune-management.md) ve [Cihaz Veri Yönetimi için Windows Seçmeli Silme](http://technet.microsoft.com/library/dn486874.aspx)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

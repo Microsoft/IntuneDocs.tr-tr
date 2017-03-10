@@ -2,10 +2,10 @@
 title: "Microsoft Intune için sürüm notları | Microsoft Docs"
 description: "Intune sürüm notları"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
+ms.sourcegitcommit: f0e027d1c63435084c434c591fed7bb71b5c07f2
+ms.openlocfilehash: 8369cc039ac1c4c24b29927a96360cd872f8e9bc
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -27,21 +28,21 @@ ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
 
 Microsoft Intune, Windows'un en yeni sürümü için araçlar, raporlar ve yükseltme lisansları sağlayan tümleştirilmiş, bulut tabanlı bir istemci yönetimi çözümüdür. Ayrıca, bilgisayarlarınızın güncel kalmasına ve güvenli olmasına yardımcı olur. Ayrıca, Intune, ağdaki mobil cihazlarınızı Exchange ActiveSync üzerinden veya doğrudan Intune üzerinden yönetmenizi sağlar. Aşağıdaki sürüm notlarında Microsoft Intune hakkında önemli bilgiler ve bilinen sorunlar açıklanmaktadır.
 
+<!-- 3-6-17: customer asked if this is still current; Stacie asked Chris Baldwin about it. Chris said it's a Samsung issue, but that he hasn't heard any reports about it for months, so he suggested that I share that with the customer and remove this item from the release notes. I'm only going to comment it out in case it resurfaces.
+## Android users can’t send email when conditional access for Exchange Online is implemented
 
-## <a name="android-users-cant-send-email-when-conditional-access-for-exchange-online-is-implemented"></a>Exchange Online için koşullu erişim uygulandığında Android kullanıcıları e-posta gönderemiyor.
+**Issue:** Users running Samsung Android 5.1.1 and later on their devices can't send email when conditional access for Exchange Online has been set up. Samsung acknowledges that the issue is in its built-in email client in Android 5.1.1 and later, and is investigating a fix.
 
-**Sorun:** Cihazlarında Samsung Android 5.1.1 ve sonraki sürümleri çalıştıran kullanıcılar, Exchange Online için koşullu erişim ayarlandığında e-posta gönderemiyor. Samsung, sorunun, Android 5.1.1 ve sonraki sürümlerdeki yerleşik posta istemcileriyle ilgili olduğunu kabul etmektedir ve bir çözüm üzerinde çalışmaktadır.
+**Workaround 1:** Advise users to use the Outlook app for Android.
 
-**Geçici Çözüm 1:** Kullanıcıların Android için Outlook uygulaması kullanmasını öneriyoruz.
+**Workaround 2:** To let affected users send email, you can follow these steps:
 
-**Geçici Çözüm 2:** Etkilenen kullanıcıların e-posta göndermesine izin vermek için aşağıdaki adımları uygulayabilirsiniz:
+1. Put each affected user in a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
+2. Let the user temporarily sync email on the built-in email client.
+3. Remove the affected user from the exempted group, and confirm that the user can now send email.
 
-1. Etkilenen her kullanıcıyı, Exchange Online için koşullu erişim ilkesinin "muaf tutulan gruplar" bölümündeki bir güvenlik grubuna yerleştirin.
-2. Kullanıcının, yerleşik e-posta istemcisinde geçici olarak e-posta eşitlemesine izin verin.
-3. Etkilenen kullanıcıyı muaf tutulan gruptan kaldırın ve kullanıcının artık e-posta gönderebildiğini onaylayın.
-
-Microsoft, bir düzeltme veya ilave geçici çözümler için Samsung ile yakından çalışmaya devam edecektir.
-
+Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
+-->
 
 
 ## <a name="changing-resource-access-profiles-between-groups-for-ios-and-android-might-fail"></a>iOS ve Android için gruplar arasında kaynak erişim profillerinin değiştirilmesi başarısız olabilir
@@ -92,9 +93,4 @@ Her iki durumda, bir kullanıcının e-postaya veya istemcinin SCEP sertifikası
 Azure önizleme portalı şu dilleri desteklemektedir: Çince (Basitleştirilmiş), Çince (Geleneksel), Çekçe, Felemenkçe, İngilizce, Almanca, Macarca, İtalyanca, Japonca, Portekizce (Brezilya), Portekizce (Portekiz), Rusça, İspanyolca, İngilizce, Fransızca, Korece, Lehçe, İsveççe, Türkçe.
 
 Intune Yönetici Konsolu ve kullanıcıya yönelik mobil deneyimler, Azure portalının desteklediği tüm dillere ek olarak Danca, Yunanca, Fince, Norveççe ve Rumence destekler.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
