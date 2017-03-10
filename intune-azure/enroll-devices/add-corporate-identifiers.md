@@ -1,5 +1,6 @@
 ---
-title: "Intune’a IMEI tanımlayıcılarını ekleme | Intune Azure önizlemesi | Microsoft Docs"
+title: "Intune&quot;a IMEI tanımlayıcıları ekleme"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Microsoft Intune’a kurumsal tanımlayıcıları (IMEI numaraları) eklemeyi öğrenin. "
 keywords: 
 author: staciebarker
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 8667f063de65fd5fa86149ac124b236a432eecef
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 0d7c8eedbdad917a43d43d2e79ead5663e8e2871
+ms.lasthandoff: 02/18/2017
 
 ---
 

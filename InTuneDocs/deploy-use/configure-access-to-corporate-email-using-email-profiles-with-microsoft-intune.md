@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -41,7 +42,7 @@ Aşağıdaki cihaz türlerinde yerel e-posta istemcisini yapılandırmak için e
 -    Android for Work
 
 >[!NOTE]
->Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur ve Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun profili oluşturup dağıtın.
+>Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur ve Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun profili oluşturup dağıtın. Nine Work gibi e-posta uygulamaları ücretsiz olmayabilir. Uygulamanın lisanslama ayrıntılarını gözden geçirin veya sorunuz varsa uygulama şirketine başvurun.
 
 Cihazda bir e-posta hesabı ayarlamaya ek olarak, ne kadar e-postanın eşitleneceğini ve cihaz türüne bağlı olarak eşitlenecek içerik türlerini de ayarlayabilirsiniz.
 
@@ -105,7 +106,7 @@ E-posta profilinde parola bulunmadığından, e-postaya bağlanırken kullanıc�
     |**E-posta adresi**|E-posta adresinin her cihazdaki kullanıcı için nasıl oluşturulacağı. Exchange’de oturum açarken birincil SMTP adresini kullanmak için **Birincil SMTP Adresi**’ni veya e-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı Asıl Adı**’nı seçin.|
     |**Kimlik doğrulama yöntemi** (Android for Work, Samsung KNOX ve iOS)|E-posta profili tarafından kullanılan kimlik doğrulama yöntemi olarak **Kullanıcı Adı ve Parola**’yı veya **Sertifikalar**’ı seçin.|
     |**İstemci kimlik doğrulaması (Kimlik Sertifikası) için bir istemci sertifikası seçin** (Android for Work, Samsung KNOX ve iOS)|Exchange bağlantısının kimliğini doğrulamak için kullanılacak, daha önce oluşturduğunuz istemci SCEP sertifikasını seçin. Intune’da sertifika profillerini kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md). Bu seçenek yalnızca kimlik doğrulama yöntemi **Sertifikalar** olduğunda görüntülenir.|
-    |**S/MIME kullan** (Samsung KNOX ve iOS)|S/MIME şifrelemesi kullanarak giden e-posta gönderin.|
+    |**S/MIME kullan** (Samsung KNOX ve iOS)|S/MIME imzalama kullanarak giden e-posta gönderin.|
     |**İmzalama sertifikası** (Samsung KNOX ve iOS)|Giden e-postayı imzalamak için kullanılan imzalama sertifikasını seçin. Bu seçenek yalnızca **S/MIME kullan**’ı seçtiğinizde görüntülenir.|
     |**E-posta eşitlemek için gün sayısı**|Eşitlemek istediğiniz e-posta sayısı; tüm kullanılabilir e-postaları eşitlemek için **Sınırsız**’ı seçin.|
     |**Eşitleme zamanlaması** (Android for Work, Samsung KNOX, Windows Phone 8 ve üzeri, Windows 10)|Cihazların Exchange sunucusundan verileri eşitleyeceği zamanlamayı seçin. Ayrıca, verileri ulaşır ulaşmaz eşitleyen **İletiler geldiğinde** seçeneğini veya eşitlemenin cihaz kullanıcısı tarafından başlatılmasını gerektiren **El ile** seçeneğini belirleyebilirsiniz.|
@@ -136,9 +137,4 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 > [!NOTE]
 > - Android for Work için uygun e-posta profilinin yanı sıra Gmail veya Nine Works uygulamalarını da dağıttığınızdan emin olun.
 > - Bir cihazdan e-posta profilini kaldırmak isterseniz, dağıtımı düzenleyin ve cihazın üye olduğu tüm grupları kaldırın. Cihazda yalnızca bir e-posta profili olduğunda, bu e-posta profilini bu yöntemle kaldıramayacağınızı unutmayın.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

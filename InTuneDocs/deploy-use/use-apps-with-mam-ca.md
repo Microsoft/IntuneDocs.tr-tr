@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ Cihaz kaydını kaldırmanın bir yolu, Azure AD yönetici konsolundan kaldırma
 * **iOS cihazı**: Azure Authenticator uygulamasını açın, hesabı sola kaydırın ve kaydı silin.  
 * **Android cihazı**: Şirket portalı uygulamasını kaldırın veya hesabı **Sistem ayarları** sayfasından silin.
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>Cihaz uyumluluğuna göre koşullu erişim ile uygulama tabanlı CA  
+## <a name="app-based-ca-with-device-based-ca"></a>Cihaz tabanlı CA ile uygulama tabanlı CA  
 
 [Cihaz uyumluluğu tabanlı koşullu erişimi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Cihaz CA**) [Intune yönetici konsolunda](https://manage.microsoft.com) veya [Azure AD Premium yönetici konsolunda] (https://manage.windowsazure.com) yapılandırabilirsiniz. Cihaz CA, kullanıcıların yalnızca Intune cihaz uyumluluk ilkesi ile uyumlu Intune yönetilen cihazlarla veya etki alanına katılan bilgisayarlarla Exchange Online’a bağlanmasına izin verir.  Bir kullanıcı, hem uygulama tabanlı CA hem de Cihaz CA ilkeleri için hedeflenen bir veya daha fazla kullanıcı grubuna dahilse, kullanıcının iki gereksinimden birini karşılaması gerekir:
 * Hizmete erişmek için kullanılan uygulama, 
@@ -63,9 +62,4 @@ Cihaz kaydını kaldırmanın bir yolu, Azure AD yönetici konsolundan kaldırma
 ### <a name="see-also"></a>Ayrıca bkz.
 
 [Uygulama verilerini uygulama koruma ilkeleriyle koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

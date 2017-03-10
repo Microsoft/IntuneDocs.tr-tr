@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
-ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
+ms.sourcegitcommit: 0945fb2f67c6cc49ca8d10bb5c24f3c4a5f9b2c5
+ms.openlocfilehash: c65dc8ec22f717c5dcce51bb3c45d65bad8d8bde
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -33,7 +34,7 @@ Microsoft Intune’la uygulamaları dağıtmaya başlamadan önce, biraz zaman a
 
 |Uygulama türü|Ayrıntılar|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Bu uygulama türü, kullanıcı girişi gerektirmeyen sessiz yüklemeyi desteklemelidir. Uygulama belgelerinizde, uygulamayı sessiz yüklemek için uygun komut satırı seçenekleri verilmiş olmalıdır (örneğin, **/q**). [Microsoft Windows Installer Aracı için Komut Satırı Anahtarları](https://support.microsoft.com/en-us/kb/227091) bölümünde sık kullanılan komut satırı seçeneklerinin bir listesini bulabilirsiniz.<br><br>Uygulamanın kurulum programının gerektirdiği tüm ek dosya ve klasörler, uygulama kurulum dosyaları için belirttiğiniz konumda bulunmalıdır.<br><br>Genellikle Windows Installer (.msi) ve Windows Installer Düzeltme Eki (.msp) dosyaları, Intune tarafından herhangi bir komut satırı bağımsız değişkeni yüklenmesini gerektirmez. Uygulama belgelerinize bakın.<br><br>Komut satırı bağımsız değişkenleri gerekiyorsa, bu bağımsız değişkenler Ad=Değer çiftleri halinde girilmelidir (örneğin, TRANSFORMS=custom_transform.mst).|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Bu uygulama türü, kullanıcı girişi gerektirmeyen sessiz yüklemeyi desteklemelidir. Uygulama belgelerinizde, uygulamayı sessiz yüklemek için uygun komut satırı seçenekleri verilmiş olmalıdır (örneğin, **/q**). [Microsoft Windows Installer Aracı için Komut Satırı Anahtarları](https://support.microsoft.com/en-us/kb/227091) bölümünde sık kullanılan komut satırı seçeneklerinin bir listesini bulabilirsiniz.<br><br>Uygulamanın kurulum programının gerektirdiği tüm ek dosya ve klasörler, uygulama kurulum dosyaları için belirttiğiniz konumda bulunmalıdır.<br><br>Genellikle Windows Installer (.msi) ve Windows Installer Düzeltme Eki (.msp) dosyaları, Intune tarafından herhangi bir komut satırı bağımsız değişkeni yüklenmesini gerektirmez. Uygulama belgelerinize bakın.<br><br>Komut satırı bağımsız değişkenleri gerekiyorsa, bu bağımsız değişkenler Ad=Değer çiftleri halinde girilmelidir (örneğin, TRANSFORMS=custom_transform.mst).<br><br>Bu uygulama türü yalnızca Intune istemci yazılımı çalıştıran bilgisayarlar için geçerlidir.|
 |**Android için Uygulama Paketi (&#42;.apk)**|Android uygulamalarını dağıtmak için geçerli bir .apk paketiniz olmalıdır.|
 |**iOS için Uygulama Paketi (&#42;.ipa)**|iOS uygulamalarını dağıtmak için geçerli bir .ipa paketiniz olmalıdır.<br><br>.ipa paketi Apple tarafından imzalanmalı ve sağlama profilinde belirtilen sona erme tarihi geçerli olmalıdır. Intune, kuruluş sertifikası iOS uygulamalarını dağıtabilir.<br><br>Tüm Apple geliştirici sertifikası uygulamaları desteklenmez.<br><br>Şirketiniz iOS Geliştirici Kurumsal Programı'na kayıtlı olmalıdır.<br><br>Kuruluşunuzun güvenlik duvarının iOS sağlama ve sertifika web sitelerine erişim izni verdiğinden emin olun.<br><br>Uygulamayla birlikte bildirim dosyası (.plist) dağıtmanız gerekmez.|
 |**Windows Phone uygulama paketi (&#42;.xap, .appx, .appxbundle)**|Uygulamaları dağıtmak için, bir kurumsal mobil kod imzalama sertifikası gerekir. Ayrıntılar için bkz. [Microsoft Intune ile Windows Phone yönetimini ayarlama](set-up-windows-phone-management-with-microsoft-intune.md).|
@@ -64,7 +65,7 @@ Yazılım yayımcısını kullanmaya başlamadan önce [Microsoft .NET Framework
 ## <a name="cloud-storage-space"></a>Bulut depolama alanı
 Yazılım yükleyicisi yükleme türünü kullanarak oluşturduğunuz tüm uygulamalar (örneğin, bir iş kolu uygulaması) paketlenir ve Microsoft Intune bulut depolama alanına yüklenir. Intune deneme aboneliği, yönetilen uygulamaları ve güncelleştirmeleri depolamak için kullanılan 2 gigabayt (GB) bulut tabanlı depolama alanı içerir. Tam aboneliğiniz 20 GB depolama alanı içerir.
 
-**Yönetici** çalışma alanının **Depolama Kullanımı** düğümünde ne kadar alan kullandığınızı görebilirsiniz. Orijinal satın alma metodunuzu kullanarak Intune için ek depolama alanı satın alabilirsiniz.  Fatura veya kredi kartıyla ödeme yaptıysanız, [Abonelik Yönetim portalını](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions) ziyaret edin.  İsterseniz iş ortağınız veya satış yardımcınızla da iletişime geçebilirsiniz.
+**Yönetici** çalışma alanının **Depolama Kullanımı** düğümünde ne kadar alan kullandığınızı görebilirsiniz. Orijinal satın alma metodunuzu kullanarak Intune için ek depolama alanı satın alabilirsiniz.  Fatura veya kredi kartıyla ödeme yaptıysanız [Abonelik Yönetim portalını](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions) ziyaret edin.  Başka bir satın alma yöntemi kullandıysanız iş ortağınız veya satış yardımcınızla iletişime geçin.
 
 Bulut depolama alanı gereksinimleri aşağıda belirtilmiştir:
 
@@ -94,9 +95,4 @@ Bu şekilde, uygulamayı Intune’a yüklediğinizde **Bağımlılıklar** klas�
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Uygulamaları dağıtabilmek için önce Intune konsoluna eklemeniz gerekir. [Kayıtlı cihazlar](add-apps-for-mobile-devices-in-microsoft-intune.md) için veya [Intune istemci yazılımıyla yönettiğiniz Windows bilgisayarları](add-apps-for-windows-pcs-in-microsoft-intune.md) için uygulamalar ekleyebilirsiniz.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

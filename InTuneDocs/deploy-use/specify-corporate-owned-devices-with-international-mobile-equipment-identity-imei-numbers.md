@@ -2,10 +2,10 @@
 title: "IMEI numaralarını belirtme | Microsoft Docs"
 description: "Microsoft Intune, şirkete ait mobil cihazları tanımaya yardımcı olmak için yöneticilerin mobil cihaz platformu IMEI numaralarını içeri aktarmasına izin verir"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
-ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 97bedfdd2d756ae79350496f54076c16ada64def
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -50,13 +51,11 @@ Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamasına y
 3.  **Cihazları Gözden Geçir** bölmesinde, içeri aktarılan cihaz IMEI numaralarını onaylayabilirsiniz. Ayrıca, yeniden içeri aktarılmakta olan IMEI numaraları için **Ayrıntılar**’ın üzerine yazıp yazmayacağınıza karar verebilirsiniz. Geçerli ayrıntıları korumak için **Üzerine Yaz** kutusunun işaretini kaldırabilirsiniz. IMEI numaralarını içeri aktarmak için **Son**’u seçin.
 4.  İçeri aktarılan IMEI numaraları ve açıklamalar **IMEI’ye Göre (Tüm platformlar)** listesine eklenir.
 
+> [!IMPORTANT]
+> Android cihazlar için IMEI numaraları içeri aktarıyorsanız, bazı Android cihazların birden çok IMEI numarası olduğunu unutmayın. IMEI numarasını içeri aktarıyorsanız, ancak bu numara cihaz tarafından Intune'a bildirilen IMEI numarası değilse, cihaz şirkete ait cihaz olarak değil, kişisel cihaz olarak sınıflandırılır.
+
 IMEI numarasına sahip cihaz Intune’a kaydedilirken, genellikle bir kullanıcı Şirket Portalı uygulamasını yükleyip kayıt işlemini tamamladığında, cihaz şirkete ait olarak etiketlenir ve **IMEI Cihazları** grubunda kayıtlı olarak görünür.
 
->[!NOTE] 
+>[!NOTE]
 > Kuruluşunuz yakın gelecekte yeni Azure portalına geçiş yaptığında bu özelliğin değişeceğini göreceksiniz. Mevcut Intune yönetici konsolunda yöneticiler yüklenen CSV dosyasından ayrıntıları alabilir ve her donanım tanımlayıcısı için geçerli ayrıntıların üzerine yazabilir. Yeni Azure portalında tüm donanım tanımlayıcıları için otomatik olarak ayrıntıların üzerine yazabilecek veya mevcut tanımlayıcılar için tüm yeni ayrıntıları yoksayabileceksiniz.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

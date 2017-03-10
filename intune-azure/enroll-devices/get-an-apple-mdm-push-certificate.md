@@ -1,9 +1,10 @@
 ---
-title: "Apple MDM Anında İletme sertifikası alma | Intune Azure önizlemesi | Microsoft Docs"
+title: "Apple MDM Anında İletme sertifikası alma"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: iOS cihazlarını Intune’la yönetmek için Apple MDM Anında İletme sertifikası alma adımlarını öğrenin."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,21 +14,22 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a6ac1074055892f5ec42fb4057e47e9349fb5a33
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 26991bd0c7632d04b75ecbec023d96c1045f337a
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM Anında İletme sertifikası alma 
+# <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM anında iletme sertifikası alma 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Intune iPad’ler, iPhone’lar ve Mac OS X cihazları için mobil uygulama yönetimini (MDM) etkinleştirir ve kullanıcılara şirket e-postası ve uygulamalarına erişim izni sağlar. Intune’un iOS ve Mac cihazlarını yönetebilmesi için Apple Anında İletim Bildirimi hizmeti (APNs) sertifikası gerekir. Sertifikayı Intune’a ekledikten sonra, kullanıcılarınız cihazlarını kaydetmek için Şirket Portalı uygulamasını yükleyebilir veya şirketinize ait iOS cihazı yönetimini ayarlayabilirsiniz.
 
-**MDM Anında İletme sertifikası almak için:**<br>
+## <a name="steps-to-get-your-certificate"></a>Sertifikanızı almak için adımlar
 Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin. Intune dikey penceresinde **Cihazları kaydet** > **Apple MDM Anında İletme Sertifikası**’nı seçin ve ardından, Azure Portal’da bulunan ve aşağıda da gösterilen numaralandırılmış adımları izleyin.
 
 **1. Adım. Apple MDM anında iletme sertifikası oluşturmak için gereken Intune sertifika imzalama isteğini indirin.**<br>

@@ -1,5 +1,6 @@
 ---
-title: "Windows 10 için Intune cihaz kısıtlama ayarları | Intune Azure önizlemesi | Microsoft Docs"
+title: "Windows 10 için Intune cihaz kısıtlama ayarları"
+titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Windows 10 cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 208312eea9df0b6330e6eac9334bd63bb13624c5
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 74f99d5e2d4eef8d42ccd2c7bc34e0ed7b6f0d51
+ms.lasthandoff: 02/18/2017
 
 
 ---
