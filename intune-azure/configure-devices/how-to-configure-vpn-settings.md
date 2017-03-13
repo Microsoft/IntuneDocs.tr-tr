@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -35,8 +35,8 @@ Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenl
 
 VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsiniz:
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |Bağlantı türü|Android|iOS|Mac OS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|Evet|Evet|Evet|Evet|Evet|Evet|
 |Cisco (IPSec)|Hayır|Evet|Hayır|Hayır|Hayır|Hayır|
