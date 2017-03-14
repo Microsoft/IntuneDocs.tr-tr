@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 3b608d42f04b9fce457b6b61587d05ab5d59bb0a
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -59,18 +60,28 @@ Android uygulamalarını karşıya yükleme ve yayımlama hakkında daha fazla b
 
 ## <a name="deploy-an-android-for-work-app"></a>Bir Android for Work uygulaması dağıtma
 
-Genellikle Intune, Google Play for Work mağazasıyla günde iki kez eşitlenir. Mağazada bir uygulamayı onayladıysanız ve henüz **Uygulamalar** çalışma alanının **Toplu Satın Alınan Uygulamalar** düğümünde göremiyorsanız, aşağıdaki gibi anında eşitlemeye zorlayabilirsiniz:
+Mağazada bir uygulamayı onayladıysanız ve henüz **Uygulamalar** çalışma alanının **Toplu Satın Alınan Uygulamalar** düğümünde göremiyorsanız, aşağıdaki gibi anında eşitlemeye zorlayabilirsiniz:
 
 1. [Intune yönetim konsolunda](https://manage.microsoft.com), **Yönetici** > **Mobil Cihaz Yönetimi** > **Android for Work**’ü seçin.
 2. **Android for Work Mobil Cihaz Yönetimi Kurulumu** sayfasında, **Şimdi Eşitle**’yi seçin.
 3. Bu sayfa son eşitlemenin saatini ve durumunu da gösterir.
 
-Uygulama **Uygulamalar** çalışma alanının **Toplu Satın Alınan Uygulamalar** düğümünde görüntülendiğinde, [uygulamayı diğer uygulamalarla aynı şekilde dağıtabilirsiniz](deploy-apps-in-microsoft-intune.md). Uygulamayı yalnızca kullanıcı gruplarına dağıtabilirsiniz. Şu anda yalnızca **Gerekli** ve **Kaldır** eylemlerini seçebilirsiniz. Ekim 2016'dan itibaren, yeni kiracılara **Kullanılabilir** dağıtım eylemini eklemeye başlayacağız.
+Uygulama **Uygulamalar** çalışma alanının **Toplu Satın Alınan Uygulamalar** düğümünde görüntülendiğinde, [uygulamayı diğer uygulamalarla aynı şekilde dağıtabilirsiniz](deploy-apps-in-microsoft-intune.md). Uygulamayı yalnızca kullanıcı gruplarına dağıtabilirsiniz. Şu anda yalnızca **Gerekli** ve **Kaldır** eylemlerini seçebilirsiniz.
+
+Bir uygulamayı **Kullanılabilir** olarak dağıtmak, yeni gruplandırma ve hedefleme deneyiminden yararlanır. Yeni sağlanan Intune hizmet hesapları, bu özelliği yayınlandığı andan itibaren kullanabilir. Mevcut Intune müşterileri, kiracılarının Intune Azure portalına geçişi yapıldıktan sonra bu özelliği kullanabilir. Mevcut müşteriler, kiracılarının geçişi yapılana kadar planlama ve bu özelliği sınama amacıyla bir Intune deneme hesabı oluşturabilir.
 
 Uygulama dağıtıldıktan sonra, hedeflenen cihazlara yüklenir. Cihazın kullanıcısından onay istenmez.
 
+## <a name="manage-app-permissions"></a>Uygulama izinlerini yönetme
+İş için Android, uygulamaları Intune’a eşitlemeden ve kullanıcılarınıza dağıtmadan önce, Google’ın yönetilen Play web konsolunda onaylamanızı gerektirir.  İş için Android bu uygulamaları sessizce ve otomatik olarak kullanıcıların cihazlarına göndermenize izin verdiğinden, uygulamanın izinlerini tüm kullanıcılarınız adına kabul etmeniz gerekir.  Son kullanıcılar uygulama yüklediklerinde herhangi bir uygulama izni görmeyeceğinden, bu izinleri okumanız ve anlamanız önemlidir.
 
+Bir uygulama geliştiricisi güncelleştirilmiş izinler ile bir uygulamanın yeni bir sürümünü yayınladığında, önceki izinleri kabul etmiş olsanız bile bu izinler otomatik olarak kabul edilmez. Uygulamanın eski sürümünü çalıştıran cihazlar bunu kullanmaya devam edebilir ancak yeni izinler onaylanana kadar uygulama yükseltilmez. Uygulamanın yüklü olmadığı cihazlarda, yeni izinler onaylanana kadar uygulama yüklenemez.
 
-<!--HONumber=Feb17_HO1-->
+### <a name="how-to-update-app-permissions"></a>Uygulama izinlerini güncelleştirme
 
+Yeni izinleri denetlemek için yönetilen Google Play konsolunu düzenli aralıklarla ziyaret etmeniz gerekir. Bir uygulama dağıtır ve cihazlarda yüklü olmadığını görürseniz, aşağıdaki adımlarla yeni izinleri denetleyin:
+
+1. http://play.google.com/work adresine gidin
+2. Uygulamaları yayınlamak ve onaylamak için kullandığınız Google hesabıyla oturum açın.
+3. Herhangi bir uygulamanın güncelleştirme gerektirip gerektirmediğini görmek için **Güncelleştirmeler** sekmesini ziyaret edin.  Listelenen tüm uygulamalar yeni izinler gerektirir ve bunlar kabul edilene kadar dağıtılamaz.  
 

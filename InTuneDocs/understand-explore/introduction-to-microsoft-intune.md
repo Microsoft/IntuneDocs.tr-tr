@@ -5,7 +5,7 @@ keywords: Intune nedir?
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
-ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -31,7 +32,7 @@ Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerin
 * Çalışanlarınızın erişim ve paylaşım yöntemlerinin denetlenmesine yardımcı olarak şirket bilgilerinizi koruyabilirsiniz.
 * Cihazların ve uygulamaların şirket güvenlik gereksinimlerine uygun olduğundan emin olabilirsiniz.
 
-Intune, kimlik ve erişim denetimi için Azure Active Directory (Azure AD), veri koruma için ise Azure Rights Management (Azure RMS) ile yakın bir tümleştirmede çalışır. Bu hizmet Microsoft Enterprise Mobility + Security (EMS) uygulamasının *yönetim ayağı*, Office 365 ise Microsoft'un mobilite çözümünün *üretkenlik ayağı* olarak düşünülebilir.  
+Intune, kimlik ve erişim denetimi için Azure Active Directory (Azure AD), veri koruma için ise Azure Information Protection ile yakın bir tümleştirmede çalışır. Bu hizmet Microsoft Enterprise Mobility + Security (EMS) uygulamasının *yönetim ayağı*, Office 365 ise Microsoft'un mobilite çözümünün *üretkenlik ayağı* olarak düşünülebilir.  
 
 Office 365 ve EMS birlikte çalışanlarınıza tüm cihazlardan üretken bir şekilde çalışma olanağı tanırken kuruluşunuzun bilgilerini de koruma altına alır. Office 365 ve EMS üretkenlik, kimlik, erişim denetimi, yönetim ve veri koruması özelliklerini içeren tam bir tümleşik kurumsal mobil çalışma paketidir. Kuruluşunuzda mobil çalışma çözümünü dağıtmak ve çalıştırmak için etkili bir yol sağlar.
 
@@ -114,9 +115,4 @@ Aşağıdaki listede yer alan iş sorunlarına tıklayarak sunduğumuz çözüml
 * [Intune’u kullanmanın yaygın yolları](common-ways-to-use-intune.md) hakkında yazılanları okuyun.
 * [30 günlük Intune denemesini](get-started-with-a-30-day-trial-of-microsoft-intune.md) kullanarak ürünle tanışın.
 * Intune’un [teknik gereksinimlerini ve özelliklerini](/intune/get-started/what-to-know-before-you-start-microsoft-intune) derinlemesine öğrenin.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

@@ -4,8 +4,8 @@ description: "Kötü amaçlı yazılım tehditlerine karşı gerçek zamanlı ko
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 01/31/2017
+manager: arob98
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -172,11 +172,12 @@ Bir uzak görevin durumunu, Intune konsolunun sağ alt köşesindeki **Uzak Gör
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Bilgisayarlarda kötü amaçlı yazılımların En Son Algılama Yollarını görüntüleme
 Intune, cihazda en son algılanan kötü amaçlı yazılım yollarının en fazla 10’unu görüntüleyebilir. **En Son Algılama Yolu** varsayılan olarak devre dışı bırakılır. Bu görünümü etkinleştirmek için:
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Gruplar** > **Tüm Cihazlar** > **Kötü Amaçlı Yazılım**’ı seçin.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/)**Gruplar** > **Tüm Cihazlar** > **Tüm Bilgisayarlar**'ı seçin.
+2. Son algılama yollarını görmek istediğiniz bilgisayara sağ tıklayın ve **Özellikler**’i seçin.
+3. Üstteki sekmelerden **Kötü Amaçlı Yazılım**’ı seçin.
 
-2.  Bir sütun başlığına sağ tıklayın. Kullanılabilir sütunlar listesi görüntülenir.
-
-3.  Listede **Son Algılama Yolları** onay kutusunu seçin. **Son Algılama Yolları** sütunu görüntülenir ve cihazda en son izlenen en fazla 10 kötü amaçlı yazılım örneğini gösterir.
+   ![Kötü Amaçlı Yazılım sekmesini seçin ve ardından En Son Algılama Yolları onay kutusunu işaretleyin](../media/malware-path-column.png)
+4. Sütun başlığına sağ tıklayın. Kullanılabilir sütunlar listesi görüntülenir. Listede **Son Algılama Yolları** onay kutusunu seçin. **Son Algılama Yolları** sütunu görüntülenir ve cihazda en son izlenen en fazla 10 kötü amaçlı yazılım örneğini gösterir.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Bilgisayarda kötü amaçlı yazılım taraması çalıştırma veya kötü amaçlı yazılım tanımlarını güncelleştirme
 Intune, Intune istemcinin yüklü olduğu uzaktan yönetilen bir bilgisayarda Endpoint Protection’ı veya Windows Defender’ı kullanarak tam veya hızlı kötü amaçlı yazılım taraması çalıştırabilir.
@@ -184,9 +185,6 @@ Intune, Intune istemcinin yüklü olduğu uzaktan yönetilen bir bilgisayarda En
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** > **Genel Bakış** > **Tüm Cihazlar** > **Tüm Bilgisayarlar**’a gidin ve ardından hedeflemek istediğiniz bilgisayarı seçin.
 
 2. **Uzak Görevler** açılan listesini seçin ve uzak bilgisayarda çalıştırılacak görevi seçin.
-
-
-
 
 ## <a name="need-more-help"></a>Daha fazla yardıma mı ihtiyacınız var?
 Daha fazla yardım ve destek için bkz. [Microsoft Intune Endpoint Protection’da sorun giderme](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).

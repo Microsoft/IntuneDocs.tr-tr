@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 96861614075d4eed41ca440af8a8cc42e5f2ff38
-ms.openlocfilehash: 8633de5aea6cc3f98c5e331fc3de43daf85903ae
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 8c67fc70b5b1678df29605fe3ba4dae907bc7bd1
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -27,11 +27,13 @@ ms.lasthandoff: 02/23/2017
 > [!NOTE]
 > Öncelikle, desteklenen platformlarda tümleştirme için hazırlığın nasıl yapıldığını açıklayan [Intune Uygulama SDK’sı Kılavuzunu Kullanmaya Başlama](intune-app-sdk-get-started.md) makalesini okumanız önerilir.
 
-iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini (MAM ilkeleri olarak da bilinir) iOS uygulamanıza eklemenizi sağlar. MAM özellikli uygulamalar Intune Uygulama SDK’sı ile tümleşiktir. Böylece, Intune uygulamayı etkin bir şekilde yönetirken BT yöneticilerinin mobil uygulamanıza uygulama koruma ilkeleri dağıtması mümkün olur.
+iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini (**APP** veya **MAM ilkeleri** olarak da bilinir) yerel iOS uygulamanıza eklemenizi sağlar. MAM özellikli uygulamalar Intune Uygulama SDK’sı ile tümleşiktir. Intune uygulamayı etkin bir şekilde yönetirken, BT yöneticileri mobil uygulamanıza uygulama koruma ilkeleri dağıtabilir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Xcode araç takımının sürüm 5 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayara ihtiyaç duyacaksınız.
+* Xcode 8 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayara ihtiyaç duyacaksınız.
+
+* Uygulamanızın iOS 9 veya üzeri sürümler için hedeflenmesi gerekir.
 
 * [iOS için Intune Uygulama SDK'sı Lisans Koşulları](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)'nı gözden geçirmelisiniz. Kendi kayıtlarınız için lisans koşullarının bir kopyasını yazdırmalı ve saklamalısınız. iOS için Intune Uygulama SDK'sını indirip kullandığınızda bu lisans koşullarını kabul etmiş olursunuz.  Kabul etmiyorsanız, yazılımı kullanmayın.
 
@@ -70,56 +72,53 @@ iOS için Intune Uygulama SDK'sının amacı, kodda minimum düzeyde değişikli
 Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin:
 
 1. **1. Seçenek**: `libIntuneMAM.a` kitaplığını bağlayın. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
-    ![Intune Uygulama SDK’sı iOS: Bağlantılı çerçeveler ve kitaplıklar](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
+
+    ![Intune Uygulama SDK’sı iOS: bağlantılı çerçeveler ve kitaplıklar](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     > [!NOTE]
     > Uygulamanızı App Store’da yayınlamayı planlıyorsanız, lütfen yayın için oluşturulan ve hata ayıklama sürümü olmayan `libIntuneMAM.a` sürümünü kullanın. Yayın sürümü, **sürüm** klasöründe olacaktır. Hata ayıklama sürümü, Intune Uygulama SDK'sı ile sorun giderme konuları için yararlı olan ayrıntılı çıktıyı içerir.
 
-    **2. Seçenek**: `IntuneMAM.framework` öğesini projenize bağlayın. `IntuneMAM.framework` öğesini proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
+    `{PATH_TO_LIB}` öğesini Intune Uygulama SDK'sı konumu ile değiştirerek `-force_load {PATH_TO_LIB}/libIntuneMAM.a` öğesini aşağıdakilerden birine ekleyin:
+      * Projenin `OTHER_LDFLAGS` derlemesi yapılandırma ayarı
+      * UI’nin **Diğer Bağlayıcı Bayrakları**
+
+        > [!NOTE]
+        > `PATH_TO_LIB` öğesini bulmak için `libIntuneMAM.a` dosyasını seçin ve **Dosya** menüsünden **Bilgi Al** öğesini belirleyin. **Nerede** bilgisini (yol) **Bilgi** penceresinin **Genel** bölümünden kopyalayıp yapıştırın.
+
+2. **2. Seçenek**: `IntuneMAM.framework` öğesini projenize bağlayın. `IntuneMAM.framework` öğesini proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
 
     > [!NOTE]
-    > Çerçeveyi kullanırsanız, uygulamanızı App Store’a göndermeden önce evrensel çerçeveden benzetici mimarilerini elle çıkarmanız gerekir. "Uygulamanızı App Store’a gönderme" bölümüne bakın.
+    > Çerçeveyi kullanırsanız, uygulamanızı App Store’a göndermeden önce evrensel çerçeveden benzetici mimarilerini elle çıkarmanız gerekir. Bkz. [Uygulamanızı App Store’a gönderme](#Submit-your-app-to-the-App-Store)
 
-2. Aşağıdaki iOS çerçevelerini projeye ekleyin:
+3. Aşağıdaki iOS çerçevelerini projeye ekleyin:
     * MessageUI.framework
     * Security.framework
     * MobileCoreServices.framework
     * SystemConfiguration.framework
-    * libsqlite3.dylib
-    * libc++.dylib
+    * libsqlite3.tbd
+    * libc++.tbd
     * ImageIO.framework
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-    > [!NOTE]
-    > Uygulama iOS 7’yi hedefliyorsa, `LocalAuthentication.framework` öğesinin `Status` özniteliğini İsteğe Bağlı olarak ayarlayın. `Status` ayarlanmazsa uygulama iOS 7’de başlatılamaz.
-    >
-    > Ayrıca Xcode 7, `.dylib` uzantılarını `.tbd` tarafına geçirmiştir.
 
-3. `IntuneMAMResources.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
-![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](../media/intune-app-sdk-ios-copy-bundle-resources.png)
+4. `IntuneMAMResources.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
 
-4. `{PATH_TO_LIB}` öğesini Intune Uygulama SDK'sı konumu ile değiştirerek `-force_load {PATH_TO_LIB}/libIntuneMAM.a` öğesini aşağıdakilerden birine ekleyin:
-    * Projenin `OTHER_LDFLAGS` derlemesi yapılandırma ayarı
-    * UI’nin **Diğer Bağlayıcı Bayrakları**<br>
+    ![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](../media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-    > [!NOTE]
-    > `PATH_TO_LIB` öğesini bulmak için `libIntuneMAM.a` dosyasını seçin ve **Dosya** menüsünden **Bilgi Al** öğesini belirleyin. **Nerede** bilgisini (yol) **Bilgi** penceresinin **Genel** bölümünden kopyalayıp yapıştırın.
-
-5. Mobil uygulamanız, Info.plist dosyası içinde bir ana nib veya görsel taslak dosyası tanımlıyorsa **Ana Görsel Taslak** veya **Ana Nib** alanlarını kaldırın. Daha önce kaldırdığınız görsel taslak veya nib değerlerini IntuneMAMSettings adlı yeni bir sözlük altına aşağıdaki anahtar adlarından uygun olanıyla birlikte ekleyin:
+5. Mobil uygulamanız, Info.plist dosyası içinde bir ana nib veya görsel taslak dosyası tanımlıyorsa **Ana Görsel Taslak** veya **Ana Nib** alanlarını kesin. Info.plist içinde, bu alanları ve karşılık gelen değerlerini **IntuneMAMSettings** adlı yeni bir sözlük altına aşağıdaki anahtar adlarından uygun olanıyla birlikte ekleyin:
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
     * MainNibFile~ipad
-
     > [!NOTE]
-    > Mobil uygulamanız, Info.plist dosyasında bir ana nib veya görsel taslak dosyası tanımlamıyorsa bu ayarlar gerekli değildir.
+  > Mobil uygulamanız, Info.plist dosyasında bir ana nib veya görsel taslak dosyası tanımlamıyorsa bu ayarlar gerekli değildir.
 
     Dosya gövdesinin herhangi bir yerine sağ tıklayıp, görünüm türünü **Ham Anahtarları/Değerleri Göster** olarak değiştirerek Info.plist dosyasını ham biçimde görüntüleyebilirsiniz (anahtar adlarını görmek için).
 
 6. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
 
-    > [!NOTE]
+  > [!NOTE]
     > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bunu denetlemek için .mobileprovision dosyasını bir metin düzenleyicide açıp **keychain-access-groups** araması yapın ve bir joker karakter kullandığınızdan emin olun. Örneğin:
     ```xml
     <key>keychain-access-groups</key>
@@ -132,46 +131,46 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
     UI kullanarak anahtarlık erişim grubu oluşturmak için:
 
-    a. Mobil uygulamanızda tanımlanmış bir anahtarlık erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
+    1. Mobil uygulamanızda tanımlanmış bir anahtarlık erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
 
-    b. `com.microsoft.intune.mam` paylaşılan anahtar zinciri grubunu ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
+    2. `com.microsoft.intune.mam` paylaşılan anahtar zinciri grubunu ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
 
-    c. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
+    3. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
 
     ![Intune Uygulama SDK’sı iOS: Anahtarlık paylaşımı](../media/intune-app-sdk-ios-keychain-sharing.png)
 
-    Anahtarlık paylaşımı erişim grubunu oluşturmak için yetkilendirme dosyasını kullanıyorsanız, yetkilendirme dosyasında anahtarlık erişim grubunun başına `$(AppIdentifierPrefix)` ekleyin. Örneğin:  
+    Anahtarlık paylaşımı erişim grubunu oluşturmak için yetkilendirme dosyasını kullanıyorsanız, yetkilendirme dosyasında anahtarlık erişim grubunun başına `$(AppIdentifierPrefix)` ekleyin. Örneğin:
 
-    * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-    * `$(AppIdentifierPrefix)com.microsoft.adalcache`
+          * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+        * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
     > Yetkilendirme dosyası mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır.
 
-8. Uygulama URL şemalarını Info.plist dosyasında tanımlıyorsa, her URL şeması için `-intunemam` sonekiyle başka bir şema ekleyin.
+7. Uygulama URL şemalarını Info.plist dosyasında tanımlıyorsa, her URL şeması için `-intunemam` sonekiyle başka bir şema ekleyin.
 
-9. iOS 9+ üzerinde geliştirilen mobil uygulamalarda, uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Ayrıca, listelenen her protokol için yeni bir protokol ekleyin ve bu protokole `-intunemam` ekleyin. Diziye ayrıca `http-intunemam`, `https-intunemam`ve `ms-outlook-intunemam` öğelerini dahil etmeniz gerekir.
+8. iOS 9+ üzerinde geliştirilen mobil uygulamalarda, uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Ayrıca, listelenen her protokol için yeni bir protokol ekleyin ve bu protokole `-intunemam` ekleyin. Diziye ayrıca `http-intunemam`, `https-intunemam`ve `ms-outlook-intunemam` öğelerini dahil etmeniz gerekir.
 
-10. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentifiers` anahtarı altındaki IntuneMAMSettings sözlüğüne bir dize dizisi olarak ekleyin.
+9. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentifiers` anahtarı altındaki IntuneMAMSettings sözlüğüne bir dize dizisi olarak ekleyin.
 
-11. Mobil uygulamanızı Azure Directory Kimlik Doğrulaması Kitaplığı’na (ADAL) bağlayın. Objective C için ADAL kitaplığı [GitHub'dan alınabilir](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+10. Mobil uygulamanızı iOS için Azure Directory Kimlik Doğrulaması Kitaplığı’na (ADAL) bağlayın. Objective-C için ADAL kitaplığı [GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc)'dan alınabilir.
 
     > [!NOTE]
-    > Intune Uygulama SDK’sı, 19 Haziran 2015’ten itibaren ADAL aracısı dal kodunda test edilmiştir. ADAL kitaplığının en son/çalışan sürümü ile bağlantı oluşturduğunuzdan emin olun.
+    > Uygulamanın en son/çalışan ADAL sürümü ile bağlanması önerilir.
 
-12. `ADALiOSBundle.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
+11. `ADALiOSBundle.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
 
-13. Kitaplığa bağlantı oluştururken `-force_load PATH_TO_ADAL_LIBRARY` bağlayıcı seçeneğini kullanın.
+12. Kitaplığa bağlantı oluştururken `-force_load PATH_TO_ADAL_LIBRARY` bağlayıcı seçeneğini kullanın.
 
     `-force_load {PATH_TO_LIB}/libADALiOS.a` seçeneğini projenin `OTHER_LDFLAGS` derleme yapılandırma ayarına veya UI’daki **Diğer Bağlayıcı Bayraklar** seçeneğine ekleyin. `PATH_TO_LIB`, ADAL ikili dosyalarının konumuyla değiştirilmelidir.
 
 
 
-## <a name="set-up-azure-directory-authentication-library"></a>Azure Directory Kimlik Doğrulama Kitaplığı’nı Ayarlama
+## <a name="configure-azure-directory-authentication-library-adal"></a>Azure Directory Kimlik Doğrulama Kitaplığı’nı (ADAL) Yapılandırma
 
 Intune Uygulama SDK'sı, kimlik doğrulama ve koşullu başlatma senaryoları için ADAL kullanır. Cihaz kayıt senaryoları olmadan yönetim için MAM hizmetinde kullanıcı kimliğini kaydetmek için de ADAL kullanır.
 
-ADAL genellikle, uygulamaya verilen belirteçlerin güvenliğini sağlamak için uygulamaların (clientID olarak bilinen) benzersiz kimliği ve diğer tanımlayıcıları Azure Active Directory (Azure AD) ile kaydetmesini ve almasını gerektirir. Intune Uygulama SDK’sı, Azure AD ile iletişim kurarken varsayılan kayıt değerlerini kullanır.  
+ADAL genellikle, uygulamaya verilen belirteçlerin güvenliğini sağlamak için uygulamaların (ClientID) benzersiz kimliği ve diğer tanımlayıcıları Azure Active Directory (AAD) ile kaydetmesini ve almasını gerektirir. Intune Uygulama SDK’sı, Azure AD ile iletişim kurarken varsayılan kayıt değerlerini kullanır.  
 
 Uygulama, kimlik doğrulama senaryosu için ADAL kullanıyorsa, uygulamanın mevcut kayıt değerlerini kullanması ve Intune Uygulama SDK'sının varsayılan değerlerini geçersiz kılması gerekir. Bu, kullanıcılardan iki kez kimlik doğrulaması (Intune Uygulama SDK'sı ve uygulama tarafından) istenmemesini sağlar.
 
@@ -187,13 +186,13 @@ Intune Uygulama SDK'sı şu anda koşullu erişim gerektiren uygulamaları deste
 
 Daha fazla ayrıntı için [GitHub'da ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc) yönergelerine bakın.
 
-**Aynı sağlama profiliyle imzalanan diğer uygulamalarla ADAL önbelleğini nasıl paylaşırım?**
+**Aynı sağlama profiliyle imzalanan diğer uygulamalarla ADAL belirteç önbelleğini nasıl paylaşırım?**
 
-Uygulamanızda tanımlanmış bir anahtar zinciri erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
+1. Uygulamanızda tanımlanmış bir anahtar zinciri erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
 
-Anahtar zinciri yetkilendirmelerine `com.microsoft.adalcache` ve `com.microsoft.workplacejoin` erişim gruplarını ekleyerek ADAL çoklu oturum açma (SSO) ayarını etkinleştirin.
+2. Anahtar zinciri yetkilendirmelerine `com.microsoft.adalcache` ve `com.microsoft.workplacejoin` erişim gruplarını ekleyerek ADAL çoklu oturum açma (SSO) ayarını etkinleştirin.
 
-ADAL paylaşımlı önbellek anahtar zinciri grubunu açıkça ayarlıyorsanız, ayarın `<app_id_prefix>.com.microsoft.adalcache` olduğundan emin olun. Bu ayarı geçersiz kılmadığınız sürece ADAL bunu sizin için ayarlar. `com.microsoft.adalcache` öğesini değiştirmek için özel bir anahtar zinciri grubu belirtmek isterseniz, bunu IntuneMAMSettings altındaki Info.plist dosyası içinde `ADALCacheKeychainGroupOverride` anahtarını kullanarak belirtin.
+3. ADAL paylaşımlı önbellek anahtar zinciri grubunu açıkça ayarlıyorsanız, ayarın `<app_id_prefix>.com.microsoft.adalcache` olduğundan emin olun. Bu ayarı geçersiz kılmadığınız sürece ADAL bunu sizin için ayarlar. `com.microsoft.adalcache` öğesini değiştirmek için özel bir anahtar zinciri grubu belirtmek isterseniz, bunu IntuneMAMSettings altındaki Info.plist dosyası içinde `ADALCacheKeychainGroupOverride` anahtarını kullanarak belirtin.
 
 **Intune Uygulama SDK’sını uygulamamda zaten kullanılan ADAL ayarlarını kullanmaya nasıl zorlarım?**
 
@@ -211,7 +210,7 @@ Uygulamanız zaten ADAL kullanıyorsa aşağıdaki ayarları doldurma hakkında 
 IntuneMAMPolicyManager örneğinde `aadAuthorityUriOverride` özelliğini belirleyin.
 
 > [!NOTE]
-> SDK’nın uygulama tarafından alınan ADAL yenileme belirtecini yeniden kullanmasına izin vermek için cihaz kaydı içermeyen MAM senaryosunda buna gerek duyacaksınız.
+> SDK’nın uygulama tarafından alınan ADAL yenileme belirtecini yeniden kullanmasına izin vermek için cihaz kaydı içermeyen APP için bu gereklidir.
 
 SDK, değerin temizlenmemesi veya değiştirilmemesi durumunda ilke yenileme ve bunu takip eden kayıt istekleri için bu yetkilendirme URL’sini kullanmaya devam eder.  Bu nedenle, bir şirket kullanıcısı uygulamadaki oturumunu kapattığında değeri temizlemek ve yeni bir şirket kullanıcısı oturum açtığında sıfırlamak önemlidir.
 
@@ -229,18 +228,18 @@ Uygulama kimlik doğrulaması için zaten ADAL kullanıyorsa aşağıdaki eyleml
 
 Uygulamanız ADAL kullanmıyorsa, Intune Uygulama SDK'sı ADAL parametrelerinin varsayılan değerlerini sağlar ve Azure AD kimlik doğrulamasını gerçekleştirir.
 
-## <a name="register-your-app-with-the-intune-mam-service"></a>Uygulamanızı Intune MAM hizmeti ile kaydetme
+## <a name="app-protection-policy-without-device-enrollment"></a>Cihaz kaydı olmadan uygulama koruma ilkesi
 
-### <a name="use-the-apis"></a>API'leri kullanma
-Intune Uygulama SDK’sı artık iOS uygulamalarının mobil cihaz yönetimi (MDM) ile Intune’a kaydedilmesine gerek kalmadan Intune’dan uygulama koruma ilkesini alma özelliği sunuyor. Bu yeni işlevselliği desteklemek için SDK, uygulamanın uygulama koruma ilkelerini almasına izin veren yeni API'ler sağlar. Yeni API'leri kullanmak için şu adımları izleyin:
+### <a name="overview"></a>Genel Bakış
+Cihaz kaydı olmadan Intune uygulama koruma ilkesi (**APP-WE** veya MAM-WE olarak da bilinir), uygulamaların Intune mobil cihaz yönetimine (MDM) kaydedilmeden Intune tarafından yönetilmesine izin verir. Bu yeni işlevselliği desteklemek için uygulamanın kullanıcı hesaplarını yönetime kaydettirmek üzere katılım göstermesi gerekir. Yeni API'leri kullanmak için şu adımları izleyin:
 
-1. Cihaz kaydı ile veya cihaz kaydı olmadan uygulamaların yönetilmesini destekleyen son Intune Uygulama SDK’sı sürümünü kullanın. .
+1. Cihaz kaydı ile veya cihaz kaydı olmadan uygulamaların yönetilmesini destekleyen son Intune Uygulama SDK’sı sürümünü kullanın.
 
 2. API’leri çağıran tüm dosyalara IntuneMAMEnrollment.h ekleyin.
 
-### <a name="register-accounts"></a>Hesapları kaydetme
+### <a name="register-user-accounts"></a>Kullanıcı hesaplarını kaydetme
 
-Bir uygulama belirli bir kullanıcı hesabı adına kaydedildiyse, Intune hizmetinden uygulama koruma ilkesi alabilir. Yeni oturum açan tüm kullanıcıları Intune Uygulama SDK'sına kaydetmek uygulamanın görevidir. Yeni kullanıcı hesabının kimliği doğrulandıktan sonra uygulama, Headers/IntuneMAMEnrollment.h içindeki `registerAndEnrollAccount` yöntemini çağırmalıdır:
+Bir uygulama belirli bir kullanıcı hesabı adına APP-WE hizmetine kaydedildiyse, Intune hizmetinden uygulama koruma ilkesi alabilir. Yeni oturum açan tüm kullanıcıları SDK'ya kaydetmek uygulamanın görevidir. Yeni kullanıcı hesabının kimliği doğrulandıktan sonra uygulama, Headers/IntuneMAMEnrollment.h içindeki `registerAndEnrollAccount` yöntemini çağırmalıdır:
 
 ```objc
 /**
@@ -258,17 +257,17 @@ SDK, `registerAndEnrollAccount` yöntemini çağırarak kullanıcı hesabını k
 
 Bu API çağrıldıktan sonra, uygulama normal çalışmasına devam edebilir. Kayıt başarılı olursa, SDK kullanıcıya uygulamanın yeniden başlatılması gerektiğini bildirir. Bu sırada, kullanıcı uygulamayı hemen yeniden başlatabilir.
 
-### <a name="deregister-accounts"></a>Hesapların kaydını kaldırma
+### <a name="deregister-user-accounts"></a>Kullanıcı hesaplarının kaydını kaldırma
 
 Kullanıcı bir uygulamanın oturumunu kapatmadan önce, uygulamanın kullanıcı SDK kaydını kaldırması gerekir. Bu şunları sağlar:
 
 1. Yeniden kayıt denemeleri kullanıcının hesabında artık gerçekleşmez.
 
-2. Kullanıcı uygulamayı başarıyla kaydettiyse, kullanıcı ve uygulamanın Intune MAM hizmetindeki kayıtları silinir ve uygulama koruma ilkesi kaldırılır.
+2. Uygulama koruma ilkesi kaldırılır.
 
-3. Bir uygulama seçmeli silme işlemi (isteğe bağlı) başlatırsa, tüm iş veya okul verileri silinir.
+3. Bir uygulama seçmeli silme işlemi (isteğe bağlı) başlatırsa, tüm şirket verileri silinir.
 
-Kullanıcı oturumunu kapatmadan önce, uygulamanın Headers/IntuneMAMEnrollment.h içindeki aşağıdaki API’yi çağırması gerekir:
+Kullanıcı oturumunu kapatmadan önce, uygulamanın `Headers/IntuneMAMEnrollment.h` içindeki aşağıdaki API’yi çağırması gerekir:
 
 ```objc
 /*
@@ -286,17 +285,17 @@ Kullanıcı oturumunu kapatmadan önce, uygulamanın Headers/IntuneMAMEnrollment
 (void)deRegisterAndUnenrollAccount:(NSString *)identity withWipe:(BOOL)doWipe;
 ```
 
-Bu yöntem, kullanıcı hesabının Azure AD belirteçleri silinmeden önce çağrılmalıdır. SDK, kullanıcının uygulama belirtecinin kullanıcı adına Intune MAM hizmetinde belirli isteklerde bulunmasını gerektirir.
+Bu yöntem, kullanıcı hesabının Azure AD belirteçleri silinmeden önce çağrılmalıdır. SDK, kullanıcı adına APP-WE hizmetinde belirli isteklerde bulunmak için kullanıcı hesabının AAD uygulama belirtecine gerek duyar.
 
-Uygulama kullanıcının iş veya okulla ilgili verilerini kendi kendine silerse, `doWipe` bayrağı false olarak ayarlanabilir. Aksi takdirde uygulama, seçmeli silme işlemini SDK’nın başlatmasını sağlayabilir. Bu, uygulamanın seçmeli silme temsilcisine çağrı yapılmasına neden olur.
+Uygulama kullanıcının şirket verilerini kendi kendine silerse, `doWipe` bayrağı false olarak ayarlanabilir. Aksi takdirde uygulama, seçmeli silme işlemini SDK’nın başlatmasını sağlayabilir. Bu, uygulamanın seçmeli silme temsilcisine çağrı yapılmasına neden olur.
 
 ```objc
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
 
-### <a name="enroll-without-prior-sign-in"></a>Önceden oturum açmadan kaydetme
+### <a name="apps-that-do-not-use-adal"></a>ADAL kullanılmayan uygulamalar
 
-Kullanıcının Azure Active Directory’de oturum açmasını sağlamayan bir uygulama, API’yi çağırıp SDK’nın söz konusu kimlik doğrulamasını gerçekleştirmesini sağlayarak Intune hizmetinden uygulama koruma ilkesi alabilir. Azure AD ile bir kullanıcının kimlik doğrulamasını gerçekleştirmeyip, yine de verilerin korunmasına yardımcı olmak için uygulama koruma ilkesi alması gereken uygulamaların bu tekniği kullanması gerekir. Örneğin uygulamada oturum açmak için başka bir kimlik doğrulaması hizmeti kullanılıyor veya uygulama oturum açmayı hiç desteklemiyorsa. Bunu yapmak için uygulama Headers/IntuneMAMEnrollment.h içindeki `loginAndEnrollAccount` yöntemini çağırmalıdır:
+Kullanıcının ADAL kullanarak oturum açmasını sağlamayan bir uygulama, API’yi çağırıp SDK’nın söz konusu kimlik doğrulamasını gerçekleştirmesini sağlayarak Intune hizmetinden uygulama koruma ilkesi alabilir. Azure AD ile bir kullanıcının kimlik doğrulamasını gerçekleştirmeyip, yine de verilerin korunmasına yardımcı olmak için uygulama koruma ilkesi alması gereken uygulamaların bu tekniği kullanması gerekir. Örneğin uygulamada oturum açmak için başka bir kimlik doğrulaması hizmeti kullanılıyor veya uygulama oturum açmayı hiç desteklemiyorsa. Bunu yapmak için uygulama Headers/IntuneMAMEnrollment.h içindeki `loginAndEnrollAccount` yöntemini çağırmalıdır:
 
 ```objc
 /**
@@ -309,9 +308,9 @@ Kullanıcının Azure Active Directory’de oturum açmasını sağlamayan bir u
 
 ```
 
-Mevcut herhangi bir belirteç bulunamazsa, SDK bu yöntemi çağırarak kullanıcıdan kimlik bilgilerini ister. Sonra SDK, bu hesap adına uygulamayı kaydetmeyi dener. Yöntem, "nil" kimliği ile çağrılabilir. Bu durumda SDK cihazdaki mevcut MAM kullanıcısını kaydeder veya mevcut kullanıcı bulunamazsa kullanıcıdan kullanıcı adı girmesini ister.
+Mevcut herhangi bir belirteç bulunamazsa, SDK bu yöntemi çağırarak kullanıcıdan kimlik bilgilerini ister. Ardından SDK, sağlanan kullanıcı hesabı adına uygulamayı APP-WE hizmetine kaydetmeyi dener. Yöntem, "nil" kimliği ile çağrılabilir. Bu durumda SDK cihazdaki mevcut yönetilen kullanıcıyı kaydeder veya mevcut kullanıcı bulunamazsa kullanıcıdan kullanıcı adı girmesini ister.
 
-Kayıt başarısız olursa, uygulama hatanın ayrıntılarına bağlı olarak bu API’yi gelecekte yeniden çağırmayı göz önünde bulundurmalıdır. Uygulama, bir temsilci yoluyla herhangi bir kayıt isteğinin sonuçlarıyla ilgili bildirim alabilir.
+Kayıt başarısız olursa, uygulama hatanın ayrıntılarına bağlı olarak bu API’yi gelecekte yeniden çağırmayı göz önünde bulundurmalıdır. Uygulama, bir temsilci yoluyla herhangi bir kayıt isteğinin sonuçlarıyla ilgili [bildirim](#Status-result-and-debug-notifications) alabilir.
 
 Bu API çağrıldıktan sonra, uygulama normal çalışmasına devam edebilir. Kayıt başarılı olursa, SDK kullanıcıya uygulamanın yeniden başlatılması gerektiğini bildirir.
 
@@ -323,7 +322,7 @@ Uygulama, Intune MAM hizmetine yapılan aşağıdaki istekler hakkında durum, s
  - İlke güncelleştirme istekleri
  - Kayıt kaldırma istekleri
 
-Bildirimler, Headers/IntuneMAMEnrollmentDelegate.h içindeki temsilci yöntemleri aracılığıyla sunulur:
+Bildirimler temsilci yöntemleri aracılığıyla `Headers/IntuneMAMEnrollmentDelegate.h` içinde sunulur:
 
 ```objc
 /**
@@ -356,9 +355,7 @@ Bu temsilci yöntemleri aşağıdaki bilgileri içeren bir `IntuneMAMEnrollmentS
 - Durum kodunun açıklamasını içeren bir hata dizesi
 - Bir `NSError` nesnesi
 
-Bu nesne, getirilebilecek belirli durum kodlarıyla birlikte IntuneMAMEnrollmentStatus.h içinde tanımlanır.
-
-
+Bu nesne, getirilebilecek belirli durum kodlarıyla birlikte `IntuneMAMEnrollmentStatus.h` içinde tanımlanır.
 
 
 ### <a name="sample-code"></a>Örnek kod
@@ -394,9 +391,9 @@ Bir uygulama ilk kez uygulama koruma ilkeleri aldığında, gerekli kancaları u
 ```objc
  - (BOOL) restartApplication
 ```
-Bu yöntemin dönüş değeri, uygulamanın gerekli yeniden başlatma işlemini uygulayıp uygulayamayacağını SDK’ya bildirir:   
+Bu yöntemin dönüş değeri, uygulamanın gerekli yeniden başlatma işlemini kendi yapmasının gerekip gerekmediğini SDK’ya bildirir:   
 
- - Dönüş değeri true olursa, uygulama yeniden başlatma işlemini kendi yapar.   
+ - Dönüş değeri true olursa, uygulamanın yeniden başlatma işlemini kendi yapması gerekir.   
 
  - Dönüş değeri false olursa, SDK uygulamayı bu yöntemin dönüşünün ardından yeniden başlatır. SDK kullanıcıya uygulamayı hemen yeniden başlatmasını belirten bir iletişim kutusu gösterir.
 
@@ -404,7 +401,7 @@ Bu yöntemin dönüş değeri, uygulamanın gerekli yeniden başlatma işlemini 
 
 Intune Uygulama SDK'sında, uygulamaya dağıtılan Intune uygulama koruma ilkesi hakkında bilgi almak için çağırabileceğiniz birkaç API vardır. Uygulamanızın davranışını özelleştirmek için bu verileri kullanabilirsiniz. Çoğu uygulama koruma ilkesi ayarı, uygulama tarafından değil, SDK tarafından otomatik olarak uygulanır. Uygulamada kullanılması gereken tek ayar Farklı kaydet denetimidir.
 
-### <a name="get-the-app-protection-policy-settings"></a>Uygulama koruma ilkesi ayarlarını alma
+### <a name="get-app-protection-policy"></a>Uygulama koruma ilkesi alma
 
 #### <a name="intunemampolicymanagerh"></a>IntuneMAMPolicyManager.h
 IntuneMAMPolicyManager sınıfı, uygulamaya dağıtılan Intune uygulama koruma ilkesini gösterir. Özellikle, [Çoklu kimliği etkinleştirme](#-enable-multi-identity-optional) için faydalı olan API’leri gösterir.
@@ -442,7 +439,9 @@ Uygulama yerel cihazdaki herhangi bir konuma veri kaydediyorsa `IntuneMAMSaveLoc
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune Uygulama SDK'sı ayarlarını yapılandırma
 
-Uygulamanın Info.plist dosyasında yer alan **IntuneMAMSettings** sözlüğünü kullanarak Intune Uygulama SDK’sını ayarlar ve yapılandırırsınız. Aşağıdaki tabloda desteklenen tüm ayarlar listelenmiştir.
+Intune Uygulama SDK’sını ayarlamak ve yapılandırmak için uygulamanın Info.plist dosyasında yer alan **IntuneMAMSettings** sözlüğünü kullanabilirsiniz. IntuneMAMSettings sözlüğü Info.plist dosyanızda görünmüyorsa, uygulamanızın Info.plist dosyası içinde "IntuneMAMSettings" alan adı ile bir sözlük oluşturmanız gerekir.
+
+IntuneMAMSettings sözlüğü altında, SDK'yı yapılandırmak için yapılandırma ayarları anahtar/değer satırları ekleyebilirsiniz. Aşağıdaki tabloda desteklenen tüm ayarlar listelenmiştir.
 
 Bu ayarlardan bazıları önceki bölümlerde ele alınmış olabilir ve bazıları tüm uygulamalar için geçerli değildir.
 
@@ -590,15 +589,15 @@ iOS için geliştirmeye yönelik önerilen en iyi uygulamalar aşağıda verilmi
 
 * Xcode `libIntuneMAM.a` dosyasını bulamıyorsa, bu kitaplığın yolunu bağlayıcı arama yollarına ekleyerek sorunu düzeltebilirsiniz.
 
-## <a name="faq"></a>SSS
+## <a name="faqs"></a>SSS
 
 
 **Tüm API’ler yerel Swift veya Objective-C ile Swift birlikte çalışabilirliği aracılığıyla adreslenebilir mi?**
 
-Intune Uygulama SDK’sı API’leri yalnızca Objective-C içinde bulunur ve yerel Swift’i desteklemez.  
+Intune Uygulama SDK’sı API’leri yalnızca Objective-C içinde bulunur ve **yerel** Swift’i desteklemez. Objective-C ile Swift arasında birlikte çalışabilirlik gereklidir.
 
 
-**Uygulamamın tüm kullanıcılarının MAM hizmetine kayıtlı olması gerekiyor mu?**
+**Uygulamamın tüm kullanıcılarının APP-WE hizmetine kayıtlı olması gerekiyor mu?**
 
 Hayır. Aslında, yalnızca iş veya okul hesaplarının Intune uygulama SDK'sına kayıtlı olması gerekir. Bir hesabın iş veya okul bağlamında kullanıldığını belirlemek uygulamaların sorumluluğudur.   
 

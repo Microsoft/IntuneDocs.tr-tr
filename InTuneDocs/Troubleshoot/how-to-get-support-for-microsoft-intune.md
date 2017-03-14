@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
-ms.lasthandoff: 01/28/2017
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -42,15 +42,13 @@ Microsoft teknik uzmanlarına soru sorun veya bir tartışma başlatın! Arama y
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice ürün geri bildirimi sitesi
 
-Intune’u daha da geliştirmek için Microsoft’un neler yapabileceğine ilişkin görüşleriniz mi var? Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) geri bildirim sitesine görüşlerinizi ekleyerek bize bildirin. Buradan ayrıca, diğerlerinin UserVoice’a eklediği görüşlere oy verebilirsiniz. 
+Intune’u daha da geliştirmek için Microsoft’un neler yapabileceğine ilişkin görüşleriniz mi var? Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) geri bildirim sitesine görüşlerinizi ekleyerek bize bildirin. Buradan ayrıca, diğerlerinin UserVoice’a eklediği görüşlere oy verebilirsiniz.
 
 ![Microsoft Intune UserVoice geri bildirim sayfası](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>Çevrimiçi destek bileti oluşturma
+## <a name="create-a-support-ticket"></a>Destek bileti oluştur
 
-Kendi kendine yardım kaynaklarını kullanarak yanıt bulamadığınız sorunlarınız için çevrimiçi destek bileti oluşturabilirsiniz.
-
-Size daha iyi hizmet verebilmemiz için **lütfen her destek biletinde yalnızca bir soruna yer verin**. Bunu istememizin nedeni:
+Kendi kendine yardım kaynaklarını kullanarak yanıt bulamadığınız sorunlarınız için çevrimiçi destek bileti oluşturabilirsiniz. Size daha iyi hizmet verebilmemiz için **lütfen her destek biletinde yalnızca bir soruna yer verin**. Bunu istememizin nedeni:
 
 - Yardım sağlayan destek mühendisleri belirli alanlarda uzmanlaşmıştır. Dolayısıyla tek bir sorun belirttiğinizde, sorununuz konusunda uzman olan doğru kişiyi bulmak daha kolay olacaktır.
 - Mühendislik ekipleri, sorunların en çok görüldüğü ürün alanlarında çalışmaya öncelik verebilir.
@@ -58,12 +56,15 @@ Size daha iyi hizmet verebilmemiz için **lütfen her destek biletinde yalnızca
 
 Destek bileti oluşturmadan önce lütfen [destek olayının tanımına](#definition-of-a-support-incident) göz atın.
 
-**Çevrimiçi destek bileti oluşturmak için**:
+### <a name="steps-to-create-an-online-support-ticket"></a>Çevrimiçi destek bileti oluşturma adımları
 
 1.  Intune kimlik bilgilerinizle [Office 365 yönetim merkezi](https://portal.office.com)’nde oturum açın.
+
+    Premier Destek müşterisiyseniz, bunun yerine [Premier destek sayfası](https://support.microsoft.com/en-us/premier/contacts) üzerinden bir Intune destek bileti açmanız gerekir.
+
     >[!NOTE]
     >
-    >Premier Destek müşterileri, [Premier destek sayfası](https://support.microsoft.com/en-us/premier/contacts) üzerinden bir Intune destek bileti açabilir.
+    >Premier Destek müşterileri, [Premier destek sayfası](https://support.microsoft.com/en-us/premier/contacts) üzerinden bir Intune destek bileti açmalıdır.
 
 2.  **Yönetici** kutucuğunu seçin.
 3.  Bileti açmak için solda **Destek** altından **Destek**'i seçin.
@@ -84,9 +85,9 @@ Destek bileti oluşturmadan önce lütfen [destek olayının tanımına](#defini
 
 3.  İsteğinizi açmak için yönergeleri izleyin.
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>Alternatif yöntemlerle bir destek bileti oluşturma
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>Alternatif yöntemlerle bir destek bileti oluşturma adımları
 
-Destek sayfanız aşağıdaki gibi görünüyorsa bu yordamı izleyin:
+Office 365 yönetim merkezindeki destek sayfanız aşağıdaki gibi görünüyorsa bu yordamı izleyin:
 
 ![Alternatif Intune desteği](../media/alternate-support-ui.png)
 
@@ -102,30 +103,30 @@ Destek sayfanız aşağıdaki gibi görünüyorsa bu yordamı izleyin:
 Ülke ve bölgeye göre destek telefon numaralarını, destek saatlerini ve her bölgede desteklenen dilleri gösteren liste için bkz. [Microsoft Intune için yardımlı telefon desteği ile iletişim kurun](contact-assisted-phone-support-for-microsoft-intune.md).
 
 ## <a name="track-your-support-requests"></a>Destek isteklerinizi izleme
-1.  Intune kimlik bilgilerinizle [Office 365 yönetim merkezi](https://portal.office.com)’nde oturum açın.
+1.  Intune yönetici kimlik bilgilerinizle [Office 365 yönetim merkezi](https://portal.office.com)’nde oturum açın.
 2.  **Yönetici** kutucuğunu seçin.
 3.  Solda **Destek**'in altından **Hizmet istekleri**'ni seçin. Ardından, isteklerinizi gözden geçirebilirsiniz.
 
-Destek taleplerine ilk yanıtımız, sorunun önem derecesine bağlıdır. Önem derecesi en yüksek sorunlarda, Profesyonel müşterilerine ilk yanıtı iki saat içinde veririz. Premier Destek müşterileri için yanıt, destek sözleşmenize göre farklılık gösterecektir. Bunlar, aşağıdakilerin söz konusu olduğu durumlardır:
+Destek taleplerine ilk yanıtımız, sorunun önem derecesine bağlıdır. Önem derecesi en yüksek sorunlarda, Profesyonel müşterilerine ilk yanıtı iki saat içinde veririz. Premier Destek müşterileri için yanıt, destek sözleşmenize göre farklılık gösterecektir. Aşağıdaki durumlar **çok ciddidir**:
 
 - Bir veya daha fazla hizmet erişilemez veya kullanılamaz durumda.
 - Üretim, işlemler veya dağıtım son tarihlerini ciddi bir şekilde etkilenir veya üretim veya karlılık üzerinde ciddi bir etkisi olacaktır.
 - Birden çok kullanıcı ve hizmet etkilenir.
 
-Orta önem derecesindeki sorunlarda, Profesyonel müşterilerine ilk yanıtı dört saat içinde veririz. Premier Destek müşterileri için yanıt, destek sözleşmenize göre farklılık gösterecektir.  Bunlar, aşağıdakilerin söz konusu olduğu durumlardır:
+Orta önem derecesindeki sorunlarda, Profesyonel müşterilerine ilk yanıtı dört saat içinde veririz. Premier Destek müşterileri için yanıt, destek sözleşmenize göre farklılık gösterecektir. Aşağıdaki durumlar **orta düzeyde ciddidir**:
 
 - Hizmet kullanılıyor ancak her zamanki gibi çalışmıyor.
 - Durum orta düzeyde iş etkisine sahiptir ve iş saatleri boyunca ele alınabilir.
 - Tek bir kullanıcı, müşteri veya hizmet kısmen etkilenir.
 
-Diğer sorunlarda, Profesyonel müşterileri için ilk yanıtı sekiz saat içinde veririz. Premier Destek müşterileri için yanıt, destek sözleşmenize göre farklılık gösterecektir.  Bunlar, aşağıdakilerin söz konusu olduğu durumlardır:
+Diğer sorunlarda, Profesyonel müşterileri için ilk yanıtı sekiz saat içinde veririz. Premier Destek müşterileri için yanıt, destek sözleşmenize göre farklılık gösterecektir. Aşağıdaki durumlar en az ciddidir:
 
 - Durum en düşük seviyede iş etkisine sahiptir.
 - Sorun önemlidir ancak müşteri için acil, önemli bir hizmet ya da üretkenlik etkisi yoktur.
 - Tek bir kullanıcı kısmi kesinti yaşar, ancak kabul edilebilir bir çözüm yok.
 
 > [!NOTE]
-> **Microsoft System Center Configuration Manager** veya **Microsoft System Center Endpoint Protection kullanıyorsanız:** Configuration Manager veya Endpoint Protection ile ilgili teknik destek için iş ortağınızla iletişim kurun veya [Microsoft System Center Configuration Manager ve System Center Endpoint Protection Çözüm Merkezi](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)'ni ziyaret ederek zengin yardım malzemelerini bulun. Ayrıca, çevrimiçi ya da telefon üzerinden destek isteği açma seçeneği de sunar.
+> **Microsoft System Center Configuration Manager** veya **Microsoft System Center Endpoint Protection kullanıyorsanız:** Configuration Manager veya Endpoint Protection ile ilgili teknik destek için iş ortağınızla iletişim kurun veya [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) ve [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) belgelerini ziyaret ederek zengin yardım malzemelerini bulun. Ayrıca, çevrimiçi ya da telefon üzerinden destek isteği açma seçeneği de sunar.
 >
 > System Center Configuration Manager veya System Center Endpoint Protection için teknik destek, ödeme gerektirir ya da var olan lisansınızdan veya Premier Destek sözleşmelerinden düşülür.
 

@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Aradığınız ayar bu konuda çıkmıyorsa, cihazı denetlemek için OMA-URI ay
 |----------------|-|
 |**İş profili ve kişisel profil arasında veri paylaşımına izin ver**|İş profilindeki uygulamaların kullanıcıların kişisel profiliyle veri paylaşmasına izin verir. Aşağıdakilerden birini seçin:<br><br>- **Sınırlar arasında tüm paylaşımları engelle**<br>- **İş profilindeki uygulamalar kişisel profilden gelen paylaşım isteklerini işleyebilir**<br>- **Paylaşım kısıtlaması yok**|
 |**Cihaz kilitliyken iş profili bildirimlerini gizle**<br>(Android 6 ve üzeri)|Cihaz kilitliyken iş profilinde herhangi bir bildirim gösterilip gösterilmeyeceğini denetler.|
-|**Varsayılan uygulama izni ilkesini ayarla**<br>(Android 6 ve üzeri)|İş profilindeki tüm uygulamalar için varsayılan izin ilkesini ayarlar.|
+|**Varsayılan uygulama izni ilkesini ayarla**<br>(Android 6 ve üzeri)|İş profilindeki tüm uygulamalar için varsayılan izin ilkesini ayarlar. Android 6'dan başlayarak, uygulamaların gerektirdiği bazı izinler çalışma zamanında son kullanıcıdan istenir.  Bu ilke ayarı, iş profilinde kullanıcılardan izin vermelerinin istenip istenmeyeceğine veya nasıl isteneceğine BT’nin karar vermesine olanak tanır. <br/><br/>Örneğin, BT, iş profiline konum erişimi gerektiren bir uygulama gönderebilir.  Normalde bu uygulama, kullanıcıya konum erişimi izni vermek isteyip istemediğini sorar ve kullanıcı bunu kabul edebilir veya reddedebilir.  Bu ilke, tüm izinlerin istem olmadan otomatik olarak verilip verilmeyeceğine, istem olmadan otomatik olarak reddedilip reddedilmeyeceğine veya son kullanıcının karar vermesine BT’nin karar vermesine olanak tanır.|
 
 
 ## <a name="custom-policy-settings"></a>Özel ilke ayarları
@@ -91,9 +92,4 @@ Intune, şu anda sınırlı sayıda Android özel ilkesi destekler. Hangi ilkele
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
