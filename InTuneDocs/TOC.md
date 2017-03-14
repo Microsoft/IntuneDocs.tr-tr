@@ -193,12 +193,10 @@
 ### [Yönetilen şirket uygulama verilerini silme](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Son kullanıcılarınızı Intune hakkında nasıl bilgilendirebilirsiniz](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Intune ile Android cihaz kullanma](EndUser/using-your-android-device-with-intune.md)
-#### [Android kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-android-users-get-their-apps.md)
-### [Intune ile iOS cihaz kullanma](EndUser/using-your-iOS-or-macos-device-with-intune.md)
-#### [iOS kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Intune ile Windows cihaz kullanma](EndUser/using-your-windows-device-with-intune.md)
-#### [Windows kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Şirket Portalı iletilerini ve son kullanıcıları görün ](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [Android kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-android-users-get-their-apps.md)
+### [iOS kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Windows kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Uygulama Geliştirme ve Özelleştirme
 ## [Microsoft Intune Uygulama SDK'sına Genel Bakış](develop/intune-app-sdk.md)
