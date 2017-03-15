@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
-ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -57,6 +57,13 @@ Bu koşullar, Azure Yönetim Portalı’nda ve cihaz envanter raporunda her ciha
      -     Bir iOS cihazı uyumluluk denetim durumunda takılı kalarak, kullanıcının başka bir giriş yapma işlemi başlatmasını engelleyebilir. Şirket portalını yeniden başlatmak bunu düzeltebilir ve uyumluluk durumu cihazın Intune’daki durumunu yansıtır. Bir cihaz eşitlemesinden tüm veriler toplandıktan sonra, uyumluluk denetimi hızlıdır; ortalama olarak yarım saniyenin altındadır.
 
         Genelde cihazların bu durumda kalmalarının nedeni, hizmete bağlanmada güçlük çekmeleri veya eşitlemenin uzun sürmesidir.  Sorun farklı ağ yapılandırmalarında (hücresel, Wi-Fi, VPN), cihaz yeniden başlatmalarından sonra ve SSP’nin cihazda güncel olduğu doğrulandıktan sonra da devam ederse, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md)’da anlatıldığı şekilde Microsoft Desteği ile iletişim kurun.
+
+ - Android cihazlar için:
+     - Belirli Android cihazları şifrelenmiş görünüyor olabilir, ancak Şirket Portalı uygulaması bu cihazları şifrelenmemiş olarak tanır. 
+    
+        -    Bu durumda olan cihazlarda kullanıcının güvenli başlangıç geçiş kodu ayarlaması gerekir. Kullanıcı, Şirket Portalı uygulamasında, cihaz için başlangıç geçiş kodu ayarlamasının istendiği bir bildirim görür. Cihaz bildirimine dokunup, geçerli PIN veya parolayı onayladıktan sonra, **Cihazı başlatmak için PIN gerektir** seçeneğini **Güvenli başlangıç** ekranında seçin. Ardından, Şirket Portalı uygulamasında cihazın **Uyumluluk Denetimi** düğmesine dokunun. Cihazın artık şifrelenmiş olarak algılanması gerekir.
+    
+        -     Bazı cihaz üreticileri, kullanıcı tarafından ayarlanan gizli PIN yerine varsayılan bir PIN kullanarak cihazları şifreler. Intune, varsayılan PIN kullanılarak yapılan şifrelemeyi güvensiz olarak tanır, çünkü bu şifreleme yöntemi cihaza fiziksel erişimi olan kötü amaçlı kullanıcılar nedeniyle cihazdaki verileri riske atabilir. Durum buysa, [uygulama koruma ilkeleri](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kullanmayı düşünün.
 
 ## <a name="policy-issues"></a>İlke sorunları
 

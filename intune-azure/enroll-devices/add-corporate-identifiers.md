@@ -3,10 +3,10 @@ title: "Intune&quot;a IMEI tanımlayıcıları ekleme"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Microsoft Intune’a kurumsal tanımlayıcıları (IMEI numaraları) eklemeyi öğrenin. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 0d7c8eedbdad917a43d43d2e79ead5663e8e2871
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: f12d538b1f4cd327b893d234f2b558185cdd9d85
+ms.lasthandoff: 03/09/2017
 
 ---
 
@@ -44,6 +44,9 @@ Metin düzenleyicisinde, .csv listesi aşağıdaki gibi görünür:
 3. Mevcut ayrıntıların üzerine yazılacak yeni ayrıntılar içeren bir dosyayı içeri aktarıyorsanız, mevcut ayrıntıların yerini yenilerinin alması için **Mevcut tanımlayıcıların ayrıntılarının üzerine yazın** seçeneğini kullanın.
 
 4. IMEI CSV dosyasına gidin ve **Ekle**’yi seçin.
+
+> [!IMPORTANT]
+> Bazı Android cihazları birden çok IMEI numarasına sahiptir. Intune, cihaz başına bir IMEI numarası envanteri oluşturur. IMEI numarasını içeri aktarıyorsanız, ancak bu numara Intune tarafından envantere alınan IMEI numarası değilse, cihaz şirkete ait cihaz olarak değil, kişisel cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız, envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değeri görüntüler.
 
 **Kurumsal tanımlayıcıları içeren .csv listesini silmek için**
 
