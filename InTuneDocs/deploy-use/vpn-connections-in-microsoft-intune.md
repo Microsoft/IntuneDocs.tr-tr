@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ iOS 8.0 ve üzeri cihazlar için isteğe bağlı VPN yapılandırabilirsiniz.
   - **Bağlantı değerlendirme**, üç ayara sahiptir: a. **Etki alanı eylemi**  - **Gerekirse bağlan** veya **Hiçbir zaman bağlanma**
      seçeneğini işaretleyin b. **Etki alanlarının virgülle ayrılmış listesi** - bunu yalnızca **Etki alanı eylemi** olarak **Gerekirse bağlan**
      seçeneğini belirlerseniz yapılandırırsınız c. **Gerekli URL araştırma dizesi** - bir HTTP veya HTTPS (tercih edilir) URL’si; örneğin *https://vpntestprobe.contoso.com*. Kural bu adresten bir yanıt alınıp alınmadığını denetler. Alınmıyorsa ve **Etki alanı eylemi** **Gerekirse bağlan** seçeneğiyse, VPN tetiklenir.
+      
      > [!TIP]
      >
      >Bu eylemi ne zaman kullanabileceğinize bir örnek, kurumsal ağınızdaki bazı sitelerin doğrudan bir VPN kurumsal ağ bağlantısı gerektirirken başkalarının bunu gerektirmemesidir. **Virgülle ayrılmış DNS arama etki alanları listesi**’nde *corp.contoso.com* adresini listelerseniz, **Gerekirse bağlan**’ı seçebilir ve sonra bu ağdaki VPN gerektirebilecek *sharepoint.corp.contoso.com* gibi belirli siteleri listeleyebilirsiniz. Kural bundan sonra *vpntestprobe.contoso.com* adresine erişilip erişilemediğini denetler. Erişilemiyorsa, Sharepoint sitesinin VPN’i tetiklenir.
@@ -192,9 +194,4 @@ Etki alanına özgü kurallar, tüm etki alanına yönelik kurallardan önce de�
 Başarılı bir şekilde dağıtıldıktan sonra, kullanıcılar VPN bağlantıları listesinde belirttiğiniz VPN bağlantısı adını cihazlarında görür.
 
 **İlke** çalışma alanının **Genel Bakış** sayfasında, bir durum özeti ve uyarılar ilkeyle ilgili işlem yapmanız gereken durumları tanımlar. Ayrıca, Pano çalışma alanında bir durum özeti görüntülenir.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
