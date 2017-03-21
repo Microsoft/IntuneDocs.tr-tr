@@ -120,6 +120,7 @@
 
 ## [Uygulamaları ekleme](deploy-use/add-apps.md)
 ### [Kaydolmuş cihazlar için uygulama ekleme](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Windows uygulamalarını dışarıdan yükleme](deploy-use/sideload-apps-for-windows.md)
 ### [Intune istemci bilgisayarları için uygulama ekleme](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [Intune istemci bilgisayarları için lisans sözleşmelerini yönetme](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Uygulama dağıtma](deploy-use/deploy-apps.md)
@@ -136,7 +137,6 @@
 ### [Android for Work uygulama yapılandırma ilkeleri](deploy-use/afw-app-configuration-policy.md)
 ### [iOS mobil uygulama sağlama profilleri](deploy-use/ios-mobile-app-provisioning-profiles.md)
 ### [İnternet erişimini yönetme](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [İş kolu uygulamalarını dışarıdan yükleme](deploy-use/sideload-apps-for-windows.md)
 
 ## [Uygulamaları ve verileri koruma](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Cihaz uyumluluğu ilkeleri](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
