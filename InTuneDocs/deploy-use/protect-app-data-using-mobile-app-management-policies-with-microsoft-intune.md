@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -36,8 +37,8 @@ Aşağıdaki özelliklere sahip cihazlarda çalışan uygulamalar için uygulama
 
 -   **Üçüncü taraf bir MDM çözümüne kayıtlı:** Bu kategorideki cihazlar normalde şirkete ait cihazlardır.
 
-  > [!NOTE]
-  > Üçüncü taraf mobil uygulama yönetimi veya güvenli kapsayıcı çözümleri ile uygulama koruma ilkelerinin kullanılması önerilmez.
+      > [!NOTE]
+      > Üçüncü taraf mobil uygulama yönetimi veya güvenli kapsayıcı çözümleri ile uygulama koruma ilkelerinin kullanılması önerilmez.
 
 -   **Herhangi bir MDM çözümüne kayıtlı değil:** Bu kategorideki cihazlar, normalde Intune veya diğer MDM çözümleriyle yönetilmeyen veya bunlara kayıtlı olmayan, çalışana ait cihazlardır.
 
@@ -133,9 +134,4 @@ Tüm Office mobil uygulamaları birden çok kimlikle erişimi destekler.
 - [Uygulama koruma ilkelerini yapılandırmaya hazırlanın](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Microsoft Intune ile uygulama koruma ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
