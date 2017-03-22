@@ -74,7 +74,7 @@ Diğer Intune ilkelerinden farklı olarak, koşullu erişim ilkelerini dağıtma
 2. [Cihaz uyumluluğu ilkesi oluşturma](create-a-device-compliance-policy-in-microsoft-intune.md).
 
 2.  Aşağıdaki Microsoft bulut hizmetleri/ürünlerinden biri için koşullu erişim ilkesi oluşturun:
-> [!div class="op_single_selector"]
+
   - [Exchange Online için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [Şirket İçi Exchange için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Yeni Ayrılmış Exchange Online için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-online-with-microsoft-intune.md)
