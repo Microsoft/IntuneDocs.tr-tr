@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
-ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -49,11 +49,11 @@ Intune iPad'ler, iPhone'lar ve macOS cihazları için mobil uygulama yönetimini
 
 5.  **Kullanıcılarınıza, şirket kaynaklarına erişmek için cihazlarını nasıl kaydedeceklerini anlatın.**
 
-    Son kullanıcı kayıt talimatları için bkz. [iOS cihazınızı Intune'a kaydetme](../enduser/enroll-your-device-in-intune-ios.md) veya [macOS cihazınızı Intune'a kaydetme](../enduser/enroll-your-device-in-intune-macos.md). Kayıt işlemi kullanıcıları neler bekleyebilecekleri ve BT yöneticilerinin görebileceği ve göremeyeceği cihaz içeriği hakkında bilgilendirir.
+    Son kullanıcı kayıt talimatları için bkz. [iOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) veya [macOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). Kayıt işlemi kullanıcıları neler bekleyebilecekleri ve BT yöneticilerinin görebileceği ve göremeyeceği cihaz içeriği hakkında bilgilendirir.
 
     Diğer son kullanıcı görevleri hakkında daha fazla bilgi için şu makalelere bakın:
     - [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](how-to-educate-your-end-users-about-microsoft-intune.md)
-    - [iOS ve Mac cihazlar için son kullanıcı kılavuzu](../enduser/using-your-ios-or-macOS-device-with-intune.md)
+    - [iOS ve Mac cihazlar için son kullanıcı kılavuzu](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 Şirketiniz veya kuruluşunuz kullanıcılarına iOS cihazları satın aldıysa, bu cihazlar [şirkete ait iOS cihazları](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) olarak yönetime kaydedilebilir.
 
