@@ -16,34 +16,35 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b245dac28f88e7eab70dfa9d759b15e155f8a7df
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
 # <a name="what-is-device-compliance-in-intune-azure-preview"></a>Intune Azure önizlemesinde cihaz uyumluluğu nedir?
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Şirket verilerini korumaya yardımcı olmak için şirket uygulamalarına ve verilerine erişmek için kullanılan cihazların belirli kurallarla uyumlu olduğundan emin olmanız gerekir. Bu kurallar, cihazlara ve cihazlarda depolanan şifreleme verilerine erişmek için bir PIN kullanmayı içerebilir. Bu tür bir kurallar kümesine **uyumluluk ilkesi** adı verilir.
+Intune’daki cihaz uyumluluk ilkeleri, bir cihazın Intune ve EMS koşullu erişim ilkeleriyle uyumlu kabul edilmesi için uyması gereken kuralları ve ayarları tanımlar. Cihaz uyumluluk ilkelerini ayrıca, cihazlardaki uyumluluk sorunlarını izlemek ve gidermek için de kullanabilirsiniz. 
 
-##  <a name="how-should-i-use-a-device-compliance-policy"></a>Cihaz uyumluluk ilkesini nasıl kullanmalıyım?
-E-postaya ve diğer hizmetlere yalnızca uyumluluk ilkesinin kurallarına uyan cihazların erişmesine izin vermek için, uyumluluk ilkesini koşullu erişimle kullanabilirsiniz.
+Bu kurallar aşağıdakileri içerir:
 
-Uyumluluk ilkesini, koşullu erişimden bağımsız olarak da kullanabilirsiniz.
-Uyumluluk ilkelerini bağımsız olarak kullandığınızda, hedeflenen cihazlar değerlendirilir ve uyumluluk durumları raporlanır. Örneğin, kaç cihazın şifrelenmediği ya da hangi cihazların yazılım kilidinin kırıldığı veya kökünün belirtildiği konusunda bir rapor alabilirsiniz. Ancak uyumluluk ilkelerini bağımsız olarak kullandığınızda, şirket kaynaklarına yönelik erişim kısıtlaması olmaz.
+- Cihazlara erişmek için bir parola kullanma
+- Şifreleme
+- Cihazın işletim sistemi engellemeleri kaldırılmış veya kök erişim izni verilmiş olup olmaması
+- İzin verilen en düşük işletim sistemi sürümü
+- İzin verilen en yüksek işletim sistemi sürümü
+- Cihazın Mobile Threat Defense düzeyinde veya daha düşük bir düzeyde olmasını gerektirme
 
-Uyumluluk ilkesini kullanıcılara siz dağıtırsınız. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının cihazlarında uyumluluk denetimi yapılır. İlke dağıtıldıktan sonra mobil cihazların ilkeyi almasının ne kadar sürdüğü hakkında bilgi edinmek için bkz. Cihazlarınızda ayarları ve özellikleri yönetme.
+<!---##  Concepts
+Following are some terms and concepts that are useful to understanding how to use compliance policies.
 
-##  <a name="concepts"></a>Kavramlar
-Aşağıda, uyumluluk ilkelerinin nasıl kullanıldığını anlamanızda yararlı olacak bazı terimler ve kavramlar verilmiştir.
+### Device compliance requirements
+Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 
-### <a name="compliance-requirements"></a>Uyumluluk gereksinimleri
-Uyumluluk gereksinimleri temelde, PIN veya şifreleme isteme gibi kurallardır. Bir uyumluluk ilkesinde bunun gerekli olduğunu veya gerekli olmadığını belirtebilirsiniz.
-
-<!---### Actions for noncompliance
+### Actions for noncompliance
 
 You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
 When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
@@ -66,14 +67,22 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="differences-between-the-classic-intune-admin-console-and-intune-in-the-azure-portal"></a>Klasik Intune yönetim konsoluyla Azure Portal’daki Intune arasındaki farklılıklar
+##  <a name="how-should-i-use-a-device-compliance-policy"></a>Cihaz uyumluluk ilkesini nasıl kullanmalıyım?
 
+### <a name="using-ems-conditional-access"></a>EMS koşullu erişimini kullanma
+E-postaya ve diğer kurumsal kaynaklara yalnızca bir veya daha fazla cihaz uyumluluk ilkesinin kurallarına uyan cihazların erişmesine izin vermek için, uyumluluk ilkesini EMS koşullu erişimiyle birlikte kullanabilirsiniz.
 
-Daha önce klasik Intune yönetim konsolunu kullandıysanız, Azure Portal’daki yeni cihaz uyumluluğu iş akışına geçiş yapmanıza yardımcı olması için aşağıdaki farklılıkları not alın:
+### <a name="not-using-ems-conditional-access"></a>EMS koşullu erişimini kullanmama
+Cihaz uyumluluk ilkelerini, EMS koşullu erişiminden bağımsız olarak da kullanabilirsiniz.
+Uyumluluk ilkelerini bağımsız olarak kullandığınızda, hedeflenen cihazlar değerlendirilir ve uyumluluk durumları raporlanır. Örneğin, kaç cihazın şifrelenmediği ya da hangi cihazlarda işletim sistemi engellemelerinin kaldırıldığı veya kök erişim izni verildiği konusunda bir rapor alabilirsiniz. Ancak uyumluluk ilkelerini bağımsız olarak kullandığınızda, şirket kaynaklarına yönelik erişim kısıtlaması olmaz.
 
+Uyumluluk ilkesini kullanıcılara siz dağıtırsınız. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının cihazlarında uyumluluk denetimi yapılır. İlke dağıtıldıktan sonra mobil cihazların ilkeyi almasının ne kadar sürdüğü hakkında bilgi edinmek için bkz. Cihazlarınızda ayarları ve özellikleri yönetme.
+
+##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Intune klasik yönetici konsolu ile Intune Azure önizleme portalı karşılaştırması
+
+Bugüne kadar Intune klasik yönetim konsolunu kullandıysanız, Azure portalındaki yeni cihaz uyumluluk ilkesi iş akışına geçiş yapmanıza yardımcı olması için aşağıdaki farklılıklara dikkat edin:
 
 -   Azure Portal’da uyumluluk ilkeleri, desteklenen her platform için ayrı oluşturulur. Intune Yönetim konsolunda, tüm desteklenen platformlar için ortak tek bir uyumluluk ilkesi vardır.
-
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
@@ -81,15 +90,10 @@ Daha önce klasik Intune yönetim konsolunu kullandıysanız, Azure Portal’dak
 
 ##  <a name="next-steps"></a>Sonraki adımlar
 
-[Uyumluluk ilkelerini kullanmaya başlama](get-started-with-device-compliance.md)
+[Cihaz uyumluluk ilkelerini kullanmaya başlama](get-started-with-device-compliance.md)
 
 
 <!---### See also
 
 Conditional access--->
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

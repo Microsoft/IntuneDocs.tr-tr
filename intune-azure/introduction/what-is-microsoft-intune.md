@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
-ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -30,11 +30,11 @@ ms.lasthandoff: 02/16/2017
 
 Microsoft Intune Azure Portal’a taşınıyor ve bu da alıştığınız iş yükleriyle işlevlerin değişeceği anlamına geliyor.
 Yeni portal, kuruluşunuzun mobil cihazlarını, bilgisayarlarını ve uygulamalarını yönetebileceğiniz Azure portalındaki yeni ve güncelleştirilmiş işlevlerin bir önizlemesini sunuyor.
-Tüm Intune işlevselliği sonunda Azure’a taşınacak ama Intune görevlerinden bazılarını bugünden Azure Portal’da gerçekleştirebilirsiniz. Bu yeni deneyim henüz önizleme aşamasında olduğundan, bazı işlevler henüz portalda bulunmayabilir. Ayrıntılar için [Önizlemedeki yenilikler](#what's-new-in-the-preview) bölümünü gözden geçirin.
+Tüm Intune işlevselliği sonunda Azure’a taşınacaktır. Ancak pek çok Intune görevini bugünden Azure portalında gerçekleştirebilirsiniz. Bu yeni deneyim henüz önizleme aşamasında olduğundan, bazı işlevler henüz portalda bulunmayabilir. Ayrıntılı bilgiler için [Yenilikler](#what's-new) bölümünü gözden geçirin.
 
 > [!IMPORTANT]
 > **Henüz yeni portalı görmüyor musunuz?**<br>
-> Belirli kiracılara önizlemenin dağıtımına şimdiden başladık. 2017 takvim yılının başlarında mevcut kiracıların yeni deneyime geçirilmesine başlanacak. Kiracınızın geçişinden önce, Office İleti Merkezi’nde bir bildirim alacaksınız. Kiracınızın geçişinin zaman çizelgesi hakkında sorunuz varsa, geçiş ekibimize şuradan ulaşabilirsiniz: [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+> Belirli kiracılara önizlemenin dağıtımına şimdiden başladık. 2017 takvim yılının başlarında mevcut kiracıların yeni deneyime geçirilmesine başlanacak. Kiracınızın geçişinden önce, Office İleti Merkezi’nde bir bildirim alacaksınız.
 
 
 Yeni ürün belgelerini bu kitaplıkta bulabileceksiniz ve önizleme boyunca kitaplık güncelleştirilecek. Görmek istediklerinize ilişkin önerileriniz varsa, lütfen konu yorumlarında geri bildirim sağlayın. Görüşlerinizi öğrenmeyi çok isteriz.
@@ -74,24 +74,25 @@ Aradığınız bilgileri bulmanızı kolaylaştırmak için, belgeler Intune por
 
 ![Azure Portal iş yükleri](./media/azure-portal-workloads.png)
 
-<!--- ### Plan and design
-Information to help you plan and design your Intune environment.
-[Read more](/intune-azure/plan-and-design/get-started) --->
-### <a name="enroll-devices"></a>Cihazları kaydetme
+### <a name="introduction-and-get-started"></a>Giriş ve çalışmaya başlama
+Bu bölüm, [yenilikler](/intune-azure/introduction/whats-new), [bilinen sorunlar](/intune-azure/introduction/known-issues-in-the-intune-preview), [nasıl destek alınacağı](/intune-azure/introduction/how-to-get-support-for-microsoft-intune) ve Intune [ücretsiz deneme sürümünü kullanmaya başlama](/intune-azure/introduction/sign-up-free-trial-microsoft-intune) hakkında bilgiler içerir.
+### <a name="plan-and-design"></a>Planlama ve tasarlama
+Intune ortamınızı [planlamanıza ve tasarlamanıza](/intune-azure/plan-and-design/get-started) yardımcı olacak bilgiler.
+### <a name="device-enrollment"></a>Cihaz kaydı
 [Cihazlarınızın Intune tarafından yönetilmesini nasıl sağlarsınız?](/intune-azure/enroll-devices/what-is).
-### <a name="devices--groups"></a>Cihazlar ve Gruplar
+### <a name="devices"></a>Cihazlar
 [Envanter ve raporlarla, yönettiğiniz cihazlar hakkında bilgi edinin](/intune-azure/manage-devices/what-is).
-### <a name="manage-users"></a>Kullanıcıları yönetme
-[Yönettiğiniz cihazların kullanıcıları hakkında bilgi edinin](/intune-azure/manage-users/what-is).
+### <a name="manage-users-and-groups"></a>Kullanıcı ve grupları yönetme
+[Yönettiğiniz cihazların kullanıcıları hakkında bilgi edinin ve kaynakları gruplara ayırın](/intune-azure/manage-users/what-is).
 ### <a name="manage-apps"></a>Uygulamaları yönetme
 [Uygulamaları yayımlama, yönetme, yapılandırma ve koruma](/intune-azure/manage-apps/what-is-app-management).
-### <a name="configure-devices"></a>Cihazları yapılandırma
+### <a name="device-configuration"></a>Cihaz yapılandırması
 [Yönettiğiniz cihazlarda ayarları ve özellikleri yapılandırmak için kullanabileceğiniz profilleri öğrenin](/intune-azure/configure-devices/what-are-device-profiles).
-### <a name="set-device-compliance"></a>Cihaz uyumluluğu ayarlama
+### <a name="device-compliance"></a>Cihaz uyumluluğu
 [Cihazlarınız için bir uyumluluk düzeyi tanımlayın, ardından uyumlu olmayan tüm cihazları rapor edin](/intune-azure/set-device-compliance/what-is-device-compliance).
 ### <a name="conditional-access"></a>Koşullu erişim
 [Belirlediğiniz koşullara bağlı olarak Exchange hizmetlerine erişimi kısıtlayın](/intune-azure/conditional-access/what-is-conditional-access).
-### <a name="access-control"></a>Erişim denetimi
+### <a name="intune-roles"></a>Intune rolleri
 [Çeşitli Intune eylemlerini kimlerin gerçekleştirebileceğini ve bu eylemlerin kimlere uygulanacağını denetleyin](/intune-azure/access-control/role-based-access-control). Bazı yaygın Intune senaryolarını kapsayan yerleşik rolleri kullanabileceğiniz gibi, kendi rollerinizi de oluşturabilirsiniz.
 
 

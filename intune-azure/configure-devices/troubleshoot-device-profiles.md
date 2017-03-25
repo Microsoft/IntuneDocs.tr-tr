@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ Bir ilke veya uygulama dağıtıldığında, Intune tarafından cihaza hemen Int
 
 İlk bildirim gönderildikten sonra cihaz ilkeyi almak üzere giriş yapmazsa, Intune üç deneme daha yapar.  Cihaz çevrimdışıysa (örneğin, kapalıysa veya ağa bağlı değilse), bildirimleri almayabilir. Bu durumda cihaz, ilkeyi bir sonraki zamanlanmış Intune hizmeti girişinde aşağıdaki gibi alır:
 
-- iOS ve Mac OS X: 6 saatte bir.
+- iOS ve macOS: 6 saatte bir.
 - Android: 8 saatte bir.
 - Windows Phone: 8 saatte bir.
 - Cihaz olarak kaydedilen Windows 8.1 ve Windows 10 bilgisayarları: 8 saatte bir.
 
 Cihaz daha yeni kaydedilmişse, giriş sıklığı aşağıda gösterildiği gibi daha fazla olacaktır:
 
-- iOS ve Mac OS X: 6 saat boyunca 15 dakikada bir ve daha sonra 6 saatte bir.
+- iOS ve macOS: 6 saat boyunca 15 dakikada bir ve daha sonra 6 saatte bir.
 - Android: 15 dakika boyunca 3 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir.
 - Windows Phone: 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir.
 - Cihaz olarak kaydedilen Windows bilgisayarları: 30 dakika boyunca 3 dakikada bir ve daha sonra 8 saatte bir.
@@ -499,8 +500,3 @@ Android, Windows Phone 8.1 ve üstü ve iOS gibi diğer MDM cihazlarında, daha 
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](/intune/troubleshoot/how-to-get-support-for-microsoft-intune) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
-
-
-<!--HONumber=Feb17_HO3-->
-
-

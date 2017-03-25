@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 8f713769e0b8a13e91e6d9991e4e7415e1da22a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>Microsoft Intune’da sertifika altyapısını SCEP için yapılandırma
@@ -54,7 +54,7 @@ Bu konu başlığı altında, SCEP sertifika profillerini oluşturmak ve dağıt
 NDES sunucusunun [Azure AD uygulama proxy’si](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Erişim Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx)’si veya üçüncü taraf bir proxy gibi bir proxy aracılığıyla yayımlanmasını öneririz.
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Sertifikalar ve Şablonlar
+### <a name="BKMK_CertsAndTemplates"></a>Sertifikalar ve Şablonlar
 
 |Nesne|Ayrıntılar|
 |----------|-----------|
@@ -63,13 +63,13 @@ NDES sunucusunun [Azure AD uygulama proxy’si](https://azure.microsoft.com/en-u
 |**Sunucu kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu SSL sertifikasını NDES Sunucusu'ndaki IIS'de yüklersiniz ve bağlarsınız.|
 |**Güvenilen Kök CA sertifika**|Bunu kök CA'dan veya kök CA’ya güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarabilir ve Güvenilen CA sertifika profilini kullanarak cihazlara dağıtabilirsiniz.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Hesaplar
+### <a name="BKMK_Accounts"></a>Hesaplar
 
 |Ad|Ayrıntılar|
 |--------|-----------|
 |**NDES hizmet hesabı**|NDES Hizmet Hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı belirtirsiniz.|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Altyapınızı yapılandırın
+## <a name="BKMK_ConfigureInfrastructure"></a>Altyapınızı yapılandırın
 Sertifika profillerini yapılandırmadan önce Windows Server 2012 R2 ve Active Directory Sertifika Hizmetleri (ADCS) bilgisi gerektiren aşağıdaki görevleri tamamlamanız gerekir:
 
 **Görev 1**: NDES hizmet hesabı oluşturma
@@ -108,7 +108,7 @@ Bu görevde şunları yapacaksınız:
     -   **Uzantılar** sekmesinde, **Uygulama İlkeleri Açıklaması** 'nın **İstemci Kimlik Doğrulaması**'nı içerdiğinden emin olun.
 
         > [!IMPORTANT]
-        > iOS ve Mac OS X sertifika şablonları için, **Uzantılar** sekmesinde **Anahtar Kullanımı**'nı düzenleyin ve **İmza kaynağın delilidir** öğesinin seçili olmadığından emin olun.
+        > iOS ve macOS sertifika şablonları için, **Uzantılar** sekmesinde **Anahtar Kullanımı**'nı düzenleyin ve **İmza kaynağın delilidir** öğesinin seçili olmadığından emin olun.
 
     -   **Güvenlik** sekmesinde, NDES hizmet hesabını ekleyin ve bu hesaba şablon üzerinde **Kaydetme** izinleri verin. SCEP profillerini oluşturacak olan Intune yöneticilerinin, SCEP profillerini oluştururken şablona göz atabilmeleri için **Okuma** hakları olmalıdır.
 
@@ -118,7 +118,7 @@ Bu görevde şunları yapacaksınız:
 3.  Şablonun **Genel** sekmesindeki **Geçerlilik süresi** 'ni gözden geçirin. Varsayılan olarak, Intune şablonda yapılandırılan değeri kullanır. Ancak, CA'yı istekte bulunan kişinin farklı bir değer belirtmesine izin verecek şekilde yapılandırma seçeneğiniz vardır ve bu değeri Intune yönetim konsolundan ayarlayabilirsiniz. Her zaman şablondaki değeri kullanmak istiyorsanız, bu adımın geri kalanını atlayın.
 
     > [!IMPORTANT]
-    > iOS ve Mac OS X platformları, yaptığınız diğer yapılandırmalar ne olursa olsun, her zaman şablonda ayarlanan değeri kullanır.
+    > iOS ve macOS, yaptığınız diğer yapılandırmalar ne olursa olsun, her zaman şablonda ayarlanan değeri kullanır.
 
 Burada, örnek şablon yapılandırmasının ekran görüntüleri verilmiştir.
 

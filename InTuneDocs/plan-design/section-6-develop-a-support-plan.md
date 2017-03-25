@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
-ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: e21b088dbb7fdcef9996e2b970bb406cab5ee0aa
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
 
 Bir Intune destek planına sahip olmak Intune ile ilgili sorunları daha etkili bir şekilde tanımlamaya, çözmeye ve son kullanıcının genel Intune deneyimini iyileştirmeye yardımcı olabilir. Intune destek planınızı geliştirirken dikkate almanız gereken bazı sorular şunlardır:
 
--   Intune desteğini sağlamaktan hangi ekip veya ekipler sorumlu olacak?
+-   Intune desteğini sağlamaktan hangi ekipler sorumlu olacak?
 
 -   Destek kuruluşunuz birden çok katman (örneğin katman 1-3) içeriyorsa her bir katman için Intune desteği sorumlulukları nelerdir?
 
@@ -95,9 +96,4 @@ Intune dağıtım planlama ve pilot çalışmalarının erken aşamalarında BT 
 ## <a name="next-section"></a>Sonraki Bölüm
 
 Sonraki bölümde [Intune’u tasarlama](section-7-create-an-intune-design.md) konusunda yönergeler sağlanır.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

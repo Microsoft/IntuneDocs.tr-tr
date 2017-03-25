@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -38,4 +38,7 @@ Intune’a yeni bir özellik eklenmesini istiyorsanız, [Uservoice](https://micr
 ## <a name="administration-and-accounts"></a>Yönetim ve hesaplar
 
 - Genel Yöneticiler (Kiracı Yöneticileri olarak da bilinir) ayrı bir Intune veya Enterprise Mobility Suite (EMS) lisansı olmadan günlük yönetim görevlerine devam edebilir. Ancak, Genel Yöneticiler kendi cihazlarını veya bir şirket cihazını kaydetme gibi amaçlarla hizmeti kullanmak ya da Intune Şirket Portalı’nı kullanmak isterse diğer tüm kullanıcılar gibi bir Intune veya EMS lisansına ihtiyaç duyacaklardır.
+
+## <a name="apple-enrollment-profile-migration"></a>Apple kayıt profili geçişi
+- Intune, önümüzdeki birkaç ay içinde Apple Aygıt Kayıt Programı ve Apple Configurator kayıtlarınızı yeni Azure Portal aracılığıyla yönetmenize olanak sağlayacaktır. Apple Aygıt Kayıt Programı belirtecini siler ve güncelleştirilmiş bir belirteci karşıya yüklemezseniz özgün belirteç, Intune hesabınızı geçirme sürecinin bir parçası olarak yeni Azure Portal’a geri yüklenir. Bu belirteci kaldırmak ve DEP kaydını önlemek için belirteci Azure Portal’da silmeniz yeterlidir. 
 

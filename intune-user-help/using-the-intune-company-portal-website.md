@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
-ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 9b5ca824612f2ad40690f14a4845e9fafc7b6fed
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -40,7 +40,7 @@ Kullanıcılar, Şirket Portalı web sitesinden şu görevleri gerçekleştirebi
 
 -   [Cihazı uzaktan kilitleme](remote-lock-your-device-cpwebsite.md)
 
--    [Yavaş uygulama yüklemelerini hızlandırmak için cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)
+-    [Uygulamaların daha hızlı bir şekilde yüklenmesini sağlamak için cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)
 
 -   İletişim bilgilerini siz yapılandırdıysanız, BT yöneticinizin iletişim bilgilerini bulun
 

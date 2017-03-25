@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-Kılavuzun bu bölümü, Bölüm 2'deki diğer konular ile paralel olarak kullanılmalıdır. Bu tasarım, bu kılavuzun önceki bölümlerini tamamlarken topladığınız bilgileri ve vereceğiniz kararları temel alacaktır. Bu tasarım bölümünde, bulutta yer alan ve Microsoft bulut tabanlı bir hizmet olan tek başına Intune’a odaklanacağız.
+Kılavuzun bu bölümü, Bölüm 2'deki diğer konular ile paralel olarak kullanılmalıdır. Bu tasarım, bu kılavuzun önceki bölümlerini tamamlarken topladığınız bilgileri ve vereceğiniz kararları temel alacaktır. Bu tasarım bölümünde, Microsoft bulut tabanlı bir hizmet olan tek başına Intune’a odaklanacağız.
 
 Şirket içi altyapı gereksinimleri minimal olsa da, hedeflerinizi, amaçlarınızı ve gereksinimlerinizi karşılayan doğru mobil cihaz yönetimi çözümüne sahip olduğunuzdan emin olmak için bir tasarım planı üzerinde çalışmanız önerilir.
 
-Ayrıca, uygulama ve sınama aşamaları sırasında sıkça tasarım değişikliği gerçekleştiğinden, bu değişiklikleri ve arkasındaki nedeni meydana geldikleri anda belgelediğinizden emin olun. Aşağıdaki alanlardan bahsedeceğiz:
+Ayrıca, uygulama ve test etme aşamaları sırasında genellikle tasarım değişiklikleri gerçekleştiğinden, bu değişiklikleri ve nedenlerini meydana geldikleri anda belgelemeye özen gösterin. Aşağıdaki alanlardan bahsedeceğiz:
 
 -   Mevcut ortam
 
@@ -409,9 +410,4 @@ Aşağıda, koşullu erişim ilkelerinin belgelenmesine dair bir örnek verilmi�
 ## <a name="next-section"></a>Sonraki Bölüm
 
 Sonraki bölümde [Intune uygulama süreci](section-8-onboarding-process.md) hakkında yönergeler sağlanır.
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 635cd7c9cd6edec82fec76400b410cabce2d8c4c
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
 # <a name="make-your-device-safer-with-the-right-password"></a>Doğru parola ile cihazınızı daha güvenli hale getirin
 
-E-posta ve belgeler gibi şirket kaynaklarına erişmek, insanların Windows cihazlarından her gün yapması gereken bir şeydir. Kuruluşunuz cihazınızın bunu güvenli bir şekilde yaptığından emin olmak ister. Cihazınızın bu kaynaklara güvenli bir şekilde eriştiğinden emin olmanın bir yolu, cihazların parola kullanmasını gerekli hale getirmektir.
+E-posta ve belgeler gibi şirket kaynaklarına erişmek, insanların Windows cihazlarından her gün yapması gereken bir şeydir. Kuruluşunuz cihazınızın bunu güvenli bir şekilde yaptığından emin olmak ister. Cihazınızın bu kaynaklara güvenli bir şekilde eriştiğinden emin olmanın bir yolu, cihazların parola kullanmasını gerekli hale getirmektir. Bu parolalar, örneğin kilit ekranından cihazınıza erişmek için kullanılır.
 
 Windows cihazınız, BT yöneticinizin parola ilkesiyle uyumlu değilse sorunu kısaca açıklayan ve parolanızın gereksinimlere uymasını sağlamak için yapmanız gerekenleri anlatan bir ileti görürsünüz.
 

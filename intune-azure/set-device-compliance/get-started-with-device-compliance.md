@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -28,19 +28,20 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Bu konu başlığı altında, cihaz uyumluluk ilkesini oluşturmaya başlayabilmek için nelere ihtiyacınız olduğu hakkında daha fazla bilgi edinecek ve Azure Portal’da neler görebileceğiniz ve yapabileceğiniz konusuna göz atacaksınız. Cihaz uyumluluğu konusuyla yeni tanışıyorsanız, cihaz uyumluluğunun ne olduğunu ve şirketinizde bunu nasıl kullanabileceğinizi öğrenmek için bu konuyu okumak isteyebilirsiniz.
+Bu konuda, şunları öğreneceksiniz: 
+
+- Cihaz uyumluluk ilkesi oluşturmaya başlamadan önce ihtiyacınız olanlar.
+- Intune Azure önizleme portalında neler görüp yapabileceğinize hızlı bir bakış. 
+
+Cihaz uyumluluğu konusunda bilgi sahibi değilseniz, cihaz uyumluluğunun ne olduğunu ve kuruluşunuzda bunu nasıl kullanabileceğinizi öğrenmek için [bu konuyu](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) okumak isteyebilirsiniz.
 
 ##  <a name="pre-requisites"></a>Ön koşullar
-
 
 -   Intune aboneliği
 
 -   Azure Active Directory aboneliği
 
-
-
 ##  <a name="supported-platforms"></a>Desteklenen Platformlar:
-
 
 -   Android
 
@@ -54,8 +55,7 @@ Bu konu başlığı altında, cihaz uyumluluk ilkesini oluşturmaya başlayabilm
 
 ##  <a name="azure-portal-workflow"></a>Azure Portal iş akışı
 
-
-Burada, Azure Portal’da cihaz uyumluluğunu oluşturma ve yönetme konularına genel bir bakış sağlanır.
+Burada, Intune Azure önizleme portalında cihaz uyumluluğu oluşturma ve yönetme konularına genel bir bakış sağlanmaktadır.
 
 <!---### Overview
 

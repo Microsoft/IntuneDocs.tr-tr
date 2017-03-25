@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
-ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/21/2016
 
 iOS cihazınız BT yöneticinizin geçiş kodu ilkesiyle uyumlu değilse, sorunu kısaca açıklayan ve geçiş kodunuzun gereksinimlere uymasını sağlamak için yapmanız gerekenleri anlatan bir ileti görüntülenir.
 
-BT yöneticiniz birden çok geçiş kodu gereksinimi ayarlayabilir. Örneğin, geçiş kodunun belirli sayıda karakter içermesi ve rakam, harf ve karakterlerin bir karışımından oluşması gerekebilir. Birden çok gereksinim ayarlanabildiğinden, bu yönergelerde yalnızca geçiş kodunuzu nasıl ayarlayacağınız veya değiştireceğiniz açıklanır. Mümkün olan tüm gereksinim bileşimleri açıklanmaz.
+BT yöneticiniz birden çok geçiş kodu gereksinimi ayarlayabilir. Örneğin, geçiş kodunun belirli sayıda karakter içermesi ve rakam, harf ve karakterlerin bir karışımından oluşması gerekebilir. Birden çok gereksinim ayarlanabildiğinden, bu yönergelerde yalnızca geçiş kodunuzu nasıl ayarlayacağınız veya değiştireceğiniz açıklanır. Mümkün olan tüm gereksinim bileşimleri açıklanmaz. Bu geçiş kodları, örneğin kilit ekranından cihazınıza erişmek için kullanılır.
 
 Geçiş kodu gereksinimlerine uyan bir geçiş kodu ayarlama konusunda sorun yaşıyorsanız, yardım için BT yöneticinize başvurun.
 

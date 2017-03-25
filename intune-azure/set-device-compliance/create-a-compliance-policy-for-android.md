@@ -16,45 +16,24 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5c8e0d2bec63c3eab5c1af08471d54f66feb5231
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview"></a>Intune Azure önizlemesinde Android cihazları için cihaz uyumluluk ilkesi oluşturma
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Intune Azure önizleme portalında Android cihazları için cihaz uyumluluk ilkesi oluşturma
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Uyumluluk ilkeleri her platform için oluşturulur.  Uyumluluk ilkesini Azure Portal’da oluşturabilirsiniz. Uyumluluk ilkesinin ne olduğu hakkında daha fazla bilgi edinmek için, [Uyumluluk ilkesi nedir](what-is-device-compliance.md) konusuna bakın. Uyumluluk ilkesi oluşturmadan önce ilgilenmeniz gereken önkoşullar hakkında bilgi edinmek için, [Cihaz uyumluluğuyla çalışmaya başlama](get-started-with-device-compliance.md) konusuna bakın.
+Her platform için cihaz uyumluluk ilkeleri Intune Azure önizleme portalından oluşturulur. 
 
-Aşağıdaki tabloda, bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır.
+- Uyumluluk ilkesinin ne olduğu hakkında daha fazla bilgi edinmek için, [Uyumluluk ilkesi nedir](what-is-device-compliance.md) konusuna bakın.
+- Uyumluluk ilkesi oluşturmadan önce ilgilenmeniz gereken önkoşullar hakkında bilgi edinmek için, [Cihaz uyumluluğuyla çalışmaya başlama](get-started-with-device-compliance.md) konusuna bakın.
 
---------------------
-
-|**ilke ayarı**| **Android 4.0 ve üzeri, Samsung KNOX Standard 4.0 ve üzeri** |
-| --- | ----|
-| **PIN veya Parola yapılandırması** |  Karantinaya Alındı |
-| **Cihaz şifrelemesi** | Karantinaya Alındı |
-| **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | Karantinaya Alındı (ayar değil) |
-| **e-posta profili** | Uygulanamaz |
-| **En düşük işletim sistemi sürümü** | Karantinaya Alındı |
-| **En yüksek işletim sistemi sürümü** |   Karantinaya Alındı |
-| **Windows durum kanıtlama** | Uygulanamaz |
-
---------------------------
-
-
-**Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)+
-
-**Karantinaya alındı** = Cihazın işletim sistemi uyumluluğu mecbur kılmaz. (Örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz.) Cihazlar uyumsuz olduğunda, aşağıdaki işlemler yapılır:+
-
-- Kullanıcı için geçerli bir koşullu erişim ilkesi varsa cihaz engellenir.
-- Şirket portalı, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
-
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Azure Portal’da uyumluluk ilkesi oluşturma
+## <a name="to-create-a-device-compliance-policy"></a>Cihaz uyumluluk ilkesi oluşturmak için
 
 1. **Intune** dikey penceresinde **Cihaz uyumluluğunu ayarla**’yı seçin. **Yönet**’in altında **Tüm cihaz uyumluluk ilkeleri**’ni ve sonra da **Oluştur**’u seçin.
 2. Ad ve açıklama yazın, bu ilkenin uygulanmasını istediğiniz platformu seçin.
@@ -67,7 +46,7 @@ Aşağıdaki tabloda, bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıl
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
-## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
+## <a name="to-assign-user-groups"></a>Kullanıcı gruplarını atamak için
 
 Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Uyumluluk – ilkeler** dikey penceresinde bulunabilir.
 
@@ -77,6 +56,26 @@ Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkey
 İlkeyi kullanıcılara uyguladınız.  İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için denetlenecek.
 
 <!---##  Compliance policy settings--->
+
+## <a name="device-health-and-security-settings"></a>Cihaz sistem durumu ve güvenlik ayarları
+
+- **Cihazda jailbreak uygulanmamış veya kök erişim izni verilmemiş olmalıdır**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
+- **Cihazların bilinmeyen kaynaklardan uygulama yüklenmesini engellemesini gerektir (Android 4.0 veya üzeri)**: **Güvenlik** > **Bilinmeyen kaynaklar** ayarı etkinleştirilmiş cihazları engellemek için, bu ayarı etkinleştirin ve değerini **Evet** olarak ayarlayın.
+
+### <a name="important"></a>Önemli
+
+Dışarıdan uygulama yükleme, **Bilinmeyen kaynaklar** ayarının etkinleştirilmesini gerektirir. Bu uyumluluk ilkesini yalnızca cihazlara dışarıdan Android uygulaması yüklemiyorsanız zorlayın.
+
+- **USB hata ayıklamanın devre dışı bırakılmasını iste (Android 4.2 veya üzeri)**: Bu ayar, cihazdaki USB hata ayıklama seçeneğinin etkin olup olmadığının algılanması gerektiğini belirtir.
+- **Cihazların güvenlik tehditleri için taramayı etkinleştirmesini isteyin (Android 4.2-4.4)**: Bu ayar, **Uygulamaları doğrula** özelliğinin cihazda etkinleştirilmesinin gerektiğini belirtir.
+- **En düşük Android güvenlik düzeltme eki düzeyi (Android 6.0 veya sonrası)**: En düşük Android düzeltme eki düzeyini belirtmek için bu ayarı kullanın. En az bu düzeltme eki düzeyinde olmayan cihazlar uyumsuz kabul edilir. Tarih GG-AA-YYYY biçiminde belirtilmelidir.
+- **Cihaz tehdit korumasının etkinleştirilmesini iste**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. İzin verilen en yüksek tehdit düzeyini seçin. Bu düzey aşağıdakilerden biri olabilir:
+  - **Hiçbiri (güvenli)**: Bu en güvenli ayardır. Bu, cihazda herhangi bir tehdit olamayacağı anlamına gelir. Herhangi bir tehdit düzeyi algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
+  - **Düşük**: Cihaz, yalnızca düşük düzeyde tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
+  - **Orta**: Cihazdaki tehditler düşük veya orta düzeydeyse, cihaz uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
+  - **Yüksek**: Bu, güvenlik düzeyi en düşük olan seçenektir. Temelde bu, tüm tehdit düzeylerine izin verir. Bu seçenek, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
+
+Daha fazla ayrıntı için bkz. [Uyumluluk ilkesinde cihaz tehdit koruması kuralını etkinleştirme](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Sistem güvenliği ayarları
 
@@ -101,30 +100,35 @@ Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkey
 
 - **Mobil cihazda şifreleme iste**: Cihazın kaynaklara bağlanma amacıyla şifrelenmesini istemek için bunu **Evet** olarak ayarlayın. **Mobil cihazların kilidini açmak için parola iste** ayarını seçtiğinizde cihazlar şifrelenir.
 
-## <a name="device-health-and-security-settings"></a>Cihaz sistem durumu ve güvenlik ayarları
-
-- **Cihazda jailbreak uygulanmamış veya kök erişim izni verilmemiş olmalıdır**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
-- **Cihazların bilinmeyen kaynaklardan uygulama yüklenmesini engellemesini gerektir (Android 4.0 veya üzeri)**: **Güvenlik** > **Bilinmeyen kaynaklar** ayarı etkinleştirilmiş cihazları engellemek için, bu ayarı etkinleştirin ve değerini **Evet** olarak ayarlayın.
-
-### <a name="important"></a>Önemli
-
-Dışarıdan uygulama yükleme, **Bilinmeyen kaynaklar** ayarının etkinleştirilmesini gerektirir. Bu uyumluluk ilkesini yalnızca cihazlara dışarıdan Android uygulaması yüklemiyorsanız zorlayın.
-
-- **USB hata ayıklamanın devre dışı bırakılmasını iste (Android 4.2 veya üzeri)**: Bu ayar, cihazdaki USB hata ayıklama seçeneğinin etkin olup olmadığının algılanması gerektiğini belirtir.
-- **Cihazların güvenlik tehditleri için taramayı etkinleştirmesini isteyin (Android 4.2-4.4)**: Bu ayar, **Uygulamaları doğrula** özelliğinin cihazda etkinleştirilmesinin gerektiğini belirtir.
-- **En düşük Android güvenlik düzeltme eki düzeyi (Android 6.0 veya sonrası)**: En düşük Android düzeltme eki düzeyini belirtmek için bu ayarı kullanın. En az bu düzeltme eki düzeyinde olmayan cihazlar uyumsuz kabul edilir. Tarih GG-AA-YYYY biçiminde belirtilmelidir.
-- **Cihaz tehdit korumasının etkinleştirilmesini iste**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. İzin verilen en yüksek tehdit düzeyini seçin. Bu düzey aşağıdakilerden biri olabilir:
-  - **Hiçbiri (güvenli)**: Bu en güvenli ayardır. Bu, cihazda herhangi bir tehdit olamayacağı anlamına gelir. Herhangi bir tehdit düzeyi algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
-  - **Düşük**: Cihaz, yalnızca düşük düzeyde tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
-  - **Orta**: Cihazdaki tehditler düşük veya orta düzeydeyse, cihaz uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
-  - **Yüksek**: Bu, güvenlik düzeyi en düşük olan seçenektir. Temelde bu, tüm tehdit düzeylerine izin verir. Bu seçenek, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
-
-Daha fazla ayrıntı için bkz. [Uyumluluk ilkesinde cihaz tehdit koruması kuralını etkinleştirme](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
-
 ## <a name="device-property-settings"></a>Cihaz özelliği ayarları
 
 - **Gerekli en düşük işletim sistemi**: Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumlu değil olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 - **İzin verilen en yüksek işletim sistemi sürümü**: Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir ve kullanıcıdan BT yöneticisine başvurması istenir. Kurallarda işletim sistemine izin veren bir değişiklik oluncaya kadar, bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
+
+## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>Uyumlu olmayan ayarlar, koşullu erişim ilkeleriyle birlikte nasıl çalışır?
+
+Aşağıdaki tabloda, uyumluluk ilkesi bir koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanmaktadır.
+
+--------------------
+
+|**İlke ayarı**| **Android 4.0 ve üzeri, Samsung KNOX Standard 4.0 ve üzeri** |
+| --- | ----|
+| **PIN veya Parola yapılandırması** |  Karantinaya Alındı |
+| **Cihaz şifrelemesi** | Karantinaya Alındı |
+| **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | Karantinaya Alındı (ayar değil) |
+| **e-posta profili** | Uygulanamaz |
+| **En düşük işletim sistemi sürümü** | Karantinaya Alındı |
+| **En yüksek işletim sistemi sürümü** |   Karantinaya Alındı |
+| **Windows durum kanıtlama** | Uygulanamaz |
+
+--------------------------
+
+**Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)+
+
+**Karantinaya alındı** = Cihazın işletim sistemi uyumluluğu mecbur kılmaz. (Örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz.) Cihazlar uyumsuz olduğunda, aşağıdaki işlemler yapılır:+
+
+- Kullanıcı için geçerli bir koşullu erişim ilkesi varsa cihaz engellenir.
+- Şirket portalı, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
 
 <!--- ## Next steps
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a062b92cba0042153ffe22b949ce8a3b7b740b3f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -222,7 +222,7 @@ Göstermek veya gizlemek istediğiniz yerleşik iOS uygulamalarının ad, yayın
 -     **iCloud Fotoğraf Arşivi** - **Hayır** seçeneği ayarlanırsa kullanıcıların fotoğraflar ve videoları bulutta depolamasını sağlayan iCloud fotoğraf kitaplığının kullanımı devre dışı bırakılır.    Bu ayar **Hayır** olarak belirlenirse iCloud Fotoğraf Arşivi'nden cihaza tamamen indirilmeyen tüm fotoğraflar cihazdan kaldırılır.
 -     **Yönetilen uygulamaları bulutla eşitleme** - Intune ile yönettiğiniz uygulamaların, kullanıcının iCloud hesabıyla veri eşitlemesine izin verin.
 -     **Paylaşılan fotoğraf akışı** - Cihazda **iCloud Fotoğraf Paylaşımı**’nı devre dışı bırakmak için **Hayır** olarak ayarlayın.
--     **Etkinlik devamlılığı** - Kullanıcının bir iOS cihazında başladığı çalışmayı başka bir iOS veya Mac OS X cihazında sürdürmesine izin verin (Handoff).
+-     **Etkinlik devamlılığı** - Kullanıcının bir iOS cihazında başladığı çalışmayı başka bir iOS veya macOS cihazında sürdürmesine izin verin (İletim).
 
 ## <a name="kiosk"></a>Bilgi noktası
 -     **Etkinleştirme Kilidi** - Denetimli iOS cihazlarında Etkinleştirme Kilidi’ni etkinleştirin.
