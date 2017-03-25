@@ -41,7 +41,7 @@
 #### [Cihaz kayıt programını kullanarak iOS cihazlarını kaydetme](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Cihaz kayıt yöneticisini kullanarak cihazları kaydetme](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [MacOS cihazları kaydetme](enroll-devices/enroll-macos-devices.md)
-### [Windows cihazlarını kaydetme](enroll-devices/enroll-window-devices.md)
+### [Windows cihazlarını kaydetme](enroll-devices/enroll-windows-devices.md)
 ### Cihaz kaydını yönetme
 #### [Hüküm ve koşulları oluşturma](enroll-devices/create-terms-and-conditions.md)
 #### [Kayıt kısıtlamalarını ayarlama](enroll-devices/set-enrollment-restrictions.md)
@@ -108,6 +108,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## Nasıl yapılır
 ### [Cihaz profillerini yapılandırma](configure-devices/how-to-create-device-profiles.md)
+
+### [Cihaz özelliklerini yapılandırma](configure-devices/how-to-configure-device-features.md)
+#### [Android](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [Cihaz kısıtlamalarını yapılandırma](configure-devices/how-to-configure-device-restrictions.md)
 #### [Outlook Web Access (OWA)](configure-devices/device-restrictions-for-android.md)
 #### [Android](configure-devices/device-restrictions-for-ios.md)
@@ -169,6 +174,8 @@
 ### [Android for Work uyumluluk ilkesi oluşturma](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [iOS uyumluluk ilkesi oluşturma](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Windows uyumluluk ilkesi oluşturma](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Uyumsuzluğa yönelik Eylem oluşturma](set-device-compliance/actions-for-noncompliance.md)
+### [Cihaz uyumluluğunu izleme](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 
