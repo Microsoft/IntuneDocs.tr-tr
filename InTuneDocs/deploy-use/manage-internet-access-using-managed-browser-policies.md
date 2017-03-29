@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -109,7 +110,7 @@ Microsoft, ürün ve hizmetlerini geliştirmek için yönetilen tarayıcının p
 
     -   https için bağlantı noktası 443
 
-    Bağlantı noktası numarası için joker karakter kullanımı desteklenmez. Örneğin, **http&colon;//www&period;contoso&period;com:*;** ve **http&colon;//www&period;contoso&period;com: /*;** desteklenmez.
+    Bağlantı noktası numarası için joker karakter kullanımı desteklenmez. Örneğin, **http&colon;//www&period;contoso&period;com:*;**ve**http&colon;//www&period;contoso&period;com: /*;** desteklenmez.
 
 -   URL belirtirken kullanabileceğini izin verilen desenler hakkında bilgi almak için aşağıdaki tabloyu kullanın:
 
@@ -156,9 +157,4 @@ Bir cihaza birden çok yönetilen tarayıcı ilkesi dağıtılır ve ayarlar ça
 -   Bir cihaz ilk defa yönetilen tarayıcı ilkelerini alıyorsa ve iki ilke çakışıyorsa, URL'ler cihazda uygulanmaz. Çakışmaları görüntülemek için **İlkeler** çalışma alanının **İlke Çakışmaları** düğümünü kullanın.
 
 -   Bir cihaz zaten bir yönetilen tarayıcı ilkesi aldıysa ve çakışan ayarlara sahip ikinci bir ilke dağıtılıyorsa, orijinal ayarlar cihazda kalır. Çakışmaları görüntülemek için **İlkeler** çalışma alanının **İlke Çakışmaları** düğümünü kullanın.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
