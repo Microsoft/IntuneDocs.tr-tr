@@ -5,7 +5,7 @@ description: "Intune Azure önizlemesi: Windows cihazları için Intune mobil ci
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ Windows cihazlarında kaydı ayarlamak için aşağıdaki yöntemlerden birini k
  -  Bu yöntemi kullanabilmeniz için Azure Active Directory Premium’a sahip olmanız gerekir. Aksi takdirde, Windows 8.1 ve Windows Phone 8.1 için verilen kayıt yöntemini kullanın.
  -  Otomatik kaydı etkinleştirmemeyi seçerseniz, Windows 8.1 ve Windows Phone 8.1 için verilen kayıt yöntemini kullanın.
 
-- [**CNAME’yi yapılandırarak Windows 8.1 ve Windows Phone 8.1 kaydı**](#simplify-enrollment-by-configuring-cname)
+- [**Azure AD Premium otomatik kaydını kullanmadan kaydetme**](#enable-windows-enrollment-without-azure-ad-premium)
  - Windows 8.1 ve Windows Phone 8.1 cihazlarının kaydını yapmak için bu yöntemi kullanmalısınız.
- - Ayrıca, Azure Active Directory (AD) Premium’unuz yoksa da bu yöntemi kullanabilirsiniz.
-
-
-## <a name="prerequisites"></a>Önkoşullar
-
-Aşağıdaki önkoşullardan bazıları henüz Intune Azure önizlemesine alınmamışsa, bunları klasik Intune yönetim konsolundan gerçekleştirmeniz gerekir.
-
-- [Özel bir etki alanı adı yapılandırma](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Mobil cihaz yönetimi (MDM) yetkilisini](set-mdm-authority.md) **Microsoft Intune** olarak ayarlama
-- [Şirket Portalı uygulamasını yapılandırma](/intune-azure/manage-apps/company-portal-app.md)
-- Kullanıcılara lisansları atama
+ - Azure Active Directory (AD) Premium kullanmak istemiyorsanız, Windows 8.1 ve üstü cihazlarda bu yöntemi kullanabilirsiniz.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>Windows iş yeri kaydını etkinleştirme
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium olmadan Windows kaydını etkinleştirme
 
 Kullanıcıların, Azure AD Premium otomatik kaydı olmadan cihazlarını yüklemelerine ve kaydetmelerine olanak sağlayabilirsiniz. DNS CNAME kaynak kayıtları oluşturursanız, kullanıcılar sunucu adı girmeden Intune’a bağlanır ve kaydolur.
 
@@ -79,7 +69,7 @@ Kullanıcıların, Azure AD Premium otomatik kaydı olmadan cihazlarını yükle
 
     Son kullanıcı kayıt talimatları için bkz. [Windows cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). Ayrıca, kullanıcıları [BT yöneticim cihazımda neleri görebilir](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) bağlantısına da yönlendirebilirsiniz.
 
-    Son kullanıcı görevleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+    Son kullanıcı görevleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
 
 Cihazlara Şirket Portalı’nı dağıtmayacaksanız, başka bir işlem yapmak gerekmez.  Yönetim konsolundaki 2. ve 3. adımlar rahatça yoksayılabilir.
 

@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6f78150b6c3821f6e9822ccfa905ac367bd359ad
-ms.openlocfilehash: 9e00e60472c8ba9f10a6071c42a53f58dcc00a08
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: dfed1ece238210e8b98934d8add7dbb9b0f1c1fb
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -26,17 +26,17 @@ ms.lasthandoff: 03/02/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune ile tümleşik bir cihaz tehdit koruması çözümü olan Lookout tarafından gerçekleştirilen risk değerlendirmesine dayalı olarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Lookout hizmeti tarafından cihazlardan toplanan ve aşağıdakileri içeren telemetriye göre değerlendirilir:
+Microsoft Intune ile tümleşik bir Mobile Threat Defense çözümü olan Lookout tarafından gerçekleştirilen risk değerlendirmesine dayalı olarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Lookout hizmeti tarafından cihazlardan toplanan ve aşağıdakileri içeren telemetriye göre değerlendirilir:
 - İşletim sistemi güvenlik açıkları
 - Yüklenen kötü amaçlı uygulamalar
 - Kötü amaçlı ağ profilleri
 
 Intune uyumluluk ilkeleri ile etkinleştirilen Lookout risk değerlendirmesine dayalı olarak koşullu erişim ilkelerini yapılandırabilirsiniz. Ayarlar, algılanan tehditlere dayalı olarak uyumsuz cihazlara izin vermenize veya bunları engellemenize olanak tanır.
 
-## <a name="how-do-intune-and-lookout-device-threat-protection-help-protect-company-resources"></a>Intune ve Lookout cihaz tehdit koruması, şirket kaynaklarını korumaya nasıl yardımcı olur?
+## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Intune ve Lookout Mobile Threat Defense, şirket kaynaklarını korumaya nasıl yardımcı olur?
 Lookout’un mobil uygulaması **Lookout for Work**, mobil cihazlara yüklenir ve mobil cihazlarda çalışır. Bu uygulama varsa dosya sistemi, ağ yığını, cihaz ve uygulama telemetrisini yakalar ve mobil tehditlere karşı cihazın riskini değerlendirmek için bunları Lookout bulut hizmetine gönderir. Lookout konsolundaki tehditlere yönelik risk düzeyi sınıflandırmalarını gereksinimlerinize uyacak şekilde değiştirebilirsiniz.  
 
-Intune’daki uyumluluk ilkesi, Lookout risk değerlendirmesine dayalı Lookout mobil tehdit koruması için bir kural içerir. Bu kural etkinleştirildiğinde Intune, cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
+Intune’daki uyumluluk ilkesi, Lookout risk değerlendirmesine dayalı Lookout Mobile Threat Defense için bir kural içerir. Bu kural etkinleştirildiğinde Intune, cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
 
 Cihaz uyumsuz bulunursa Exchange Online ve SharePoint Online gibi kaynaklara erişim engellenebilir. Engellenen cihazlardaki kullanıcılara, sorunu gidermek ve yeniden erişim sağlamak için adımlar sağlanır. Yönergeler Lookout for Work uygulamasından gönderilir.
 
@@ -92,9 +92,9 @@ Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Bu çözümü uygulamak için yapılması gereken ana adımlar şunlardır:
-1.    [Aboneliğinizi cihaz tehdit koruması ile ayarlama](device-threat-protection-subscription-setup.md)
-2.    [Intune’da cihaz tehdit koruma bağlantısını etkinleştirme](device-threat-protection-enable.md)
-3.  [Cihaz tehdit koruma uygulamasını yapılandırma ve dağıtma](device-threat-protection-apps.md)
-4.    [Cihaz tehdit koruması uyumluluk ilkesini yapılandırma](device-threat-protection-policy.md)
-5.    [Cihaz tehdit koruma tümleştirmesinde sorun giderme](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
+1.    [Lookout aboneliğinizi ayarlama](device-threat-protection-subscription-setup.md)
+2.    [Intune’da Lookout Mobile Threat Defense’i etkinleştirme](device-threat-protection-enable.md)
+3.  [Lookout Mobile Threat Defense uygulamasını yapılandırma ve dağıtma](device-threat-protection-apps.md)
+4.    [Lookout cihaz uyumluluğu ilkesini yapılandırma](device-threat-protection-policy.md)
+5.    [Lookout Mobile Threat Defense tümleştirme sorunlarını giderme](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
 

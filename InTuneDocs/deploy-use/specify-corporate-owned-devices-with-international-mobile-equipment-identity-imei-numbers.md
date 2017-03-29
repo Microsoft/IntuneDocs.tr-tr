@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: 97bedfdd2d756ae79350496f54076c16ada64def
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 02743ee216ce09c74a9d0ab2455e826b36e8aa4a
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -30,7 +30,7 @@ Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamasına y
 
 1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Tüm Kurumsal Ön Kayıtlı Cihazlar** &gt; **IMEI’ye Göre (Tüm platformlar)** öğesine gidin ve ardından **Cihaz ekle…** öğesini seçin. İki yolla cihaz ekleyebilirsiniz:
 
-    -   **Seri numaraları olan bir .csv dosyası yükleme** – Üst bilgi içermeyen, iki sütunlu, virgülle ayrılmış değer (.csv) listesini oluşturun ve .csv dosyası başına 5.000 cihaz veya 5 MB ile sınırlayın.
+    -   **Seri numaraları olan bir .csv dosyası yükleme** – Üst bilgi içermeyen, iki sütunlu, virgülle ayrılmış değer (.csv) listesini oluşturun ve .csv dosyası başına 5.000 cihaz veya 5 MB ile sınırlayın. Ayrıntılar alanı 128 karakterle sınırlıdır.
 
         |||
         |-|-|
@@ -39,8 +39,8 @@ Microsoft Intune, yöneticilerin şirkete ait mobil cihazları tanımlamasına y
         Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki gibi görünür:
 
         ```
-        AABBBBBBCCCCCCD,PO 1234
-        AABBBBBBCCCCCCE,PO 1234
+        01 234567 890123,device details
+        02 234567 890123,device details
         ```
 
     -   **Cihaz ayrıntılarını el ile ekle** - En fazla 15 cihazın IMEI numarasını ve cihaz ayrıntılarını girin.
@@ -58,4 +58,6 @@ IMEI numarasına sahip cihaz Intune’a kaydedilirken, genellikle bir kullanıc�
 
 >[!NOTE]
 > Kuruluşunuz yakın gelecekte yeni Azure portalına geçiş yaptığında bu özelliğin değişeceğini göreceksiniz. Mevcut Intune yönetici konsolunda yöneticiler yüklenen CSV dosyasından ayrıntıları alabilir ve her donanım tanımlayıcısı için geçerli ayrıntıların üzerine yazabilir. Yeni Azure portalında tüm donanım tanımlayıcıları için otomatik olarak ayrıntıların üzerine yazabilecek veya mevcut tanımlayıcılar için tüm yeni ayrıntıları yoksayabileceksiniz.
+
+Uluslararası Mobil Donanım Kimlikleri (IMEI) hakkındaki ayrıntılı belirtimler için bkz. [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 

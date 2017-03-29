@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **Klavye kısayolları (yalnızca denetimli)** - Klavye kısayollarının kullanılmasına izin verir.
 -     **Eşleştirilen Apple Watch için bilek algılama** - Etkinleştirildiğinde, Apple Watch takılmadığında bildirim görüntülemez.
 - **Giden AirPlay istekleri için eşleştirme parolası isteme** - Kullanıcının diğer Apple cihazlarına içerik akışı sağlamak üzere AirPlay’i kullanması için, eşleştirme parolası isteyin.
-- **Hesap değişikliği (yalnızca denetimli)** - Kullanıcının e-posta yapılandırması gibi hesap ayarlarını değiştirmesine izin verin.
+- **Hesap değişikliği (yalnızca denetimli)** - Engellendiğinde, kullanıcının iOS ayarları uygulamasından cihaza özgü ayarları değiştirmesini (yeni cihaz hesapları oluşturma ve kullanıcı adını veya parolayı değiştirme gibi) önler.
+Bu durum, Posta, Kişiler, Takvim, Facebook ve Twitter gibi iOS ayarları uygulamasından erişilebilen ayarlar için de geçerlidir. Hesap ayarları iOS ayarları uygulamasından yapılandırılamayan uygulamalar (Microsoft Outlook uygulaması gibi) için geçerli değildir.
 - **Apple Watch eşleştirme (yalnızca denetimli)** - Cihazın bir Apple Watch ile eşleşmesine izin verin.
 - **Bluetooth değişikliği (yalnızca denetimli)** - Son kullanıcının cihazda Bluetooth ayarlarını değiştirmesini engelleyin.
 - **Classroom uygulamasıyla ekranı uzaktan izleme (yalnızca denetimli)** - Classroom uygulamasının uzak cihazlarda ekranı izlemesine izin verin veya bunu engelleyin.

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: 464b9b60e9e8a5cb3e195bbec88d496eb4dc9ecf
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -60,10 +60,10 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     ![Şirket erişimi kurulum ekranı](./media/and-enroll-4a-comp-access-setup.png)
 
-> [!NOTE]
-> Sarı üçgenler herhangi bir hata olduğu anlamına gelmez. Bu simgeler, kayıt işleminde hala tamamlanması gereken adımlar olduğunu gösterir.
+    > [!NOTE]
+    > Sarı üçgenler herhangi bir hata olduğu anlamına gelmez. Bu simgeler, kayıt işleminde hala tamamlanması gereken adımlar olduğunu gösterir.
 
-7.  **Cihazınızı neden kaydetmelisiniz?** ekranında, cihazınızı kaydettiğinizde neler yapabileceğinizi okuyun ve sonra **DEVAM**’a dokunun.
+7. **Cihazınızı neden kaydetmelisiniz?** ekranında, cihazınızı kaydettiğinizde neler yapabileceğinizi okuyun ve sonra **DEVAM**’a dokunun.
 
     ![Cihazınız neden kaydetmelisiniz ekranı](./media/and-enroll-4b-why-enroll.png)
 
@@ -90,13 +90,19 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
         ![android-şirket-portalı-oturum-açma](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Bu iletiyi görürseniz, **İZİN VER**’e dokunun. İZİN VER’e dokunmak güvenlidir, çünkü **Microsoft kişilerinize hiçbir zaman erişmez!** İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişim izni verdiğinizde Şirket Portalı uygulamasının yalnızca iş hesabınızı oluşturmasına, kullanmasına ve yönetmesine izin verilir.
+        Bu iletiyi görürseniz, **İZİN VER**’e dokunun. İZİN VER’e dokunmak güvenlidir, çünkü **Microsoft kişilerinize hiçbir zaman erişmez!** İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişim izni verdiğinizde Şirket Portalı uygulamasının yalnızca iş hesabınızı oluşturmasına, kullanmasına ve yönetmesine izin verilir.
 
-    Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
+        Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
 
 11.  **Cihaz yöneticisini etkinleştir** ekranında **Etkinleştir**’e dokunun.
 
     ![Cihaz yöneticisini etkinleştirin ekranı](./media/and-enroll-5-activate.png)
+
+    Cihaz yöneticisi rolü, Şirket Portalı’na cihazınızı yönetmesi için gereken roldür. Yöneticinizin bazı öğeleri (ekranınızın kilidini açmayı kaç kez denediğiniz gibi) görmesine ve bazı önlemler almasına olanak tanır.
+
+    Anımsanması gereken önemli nokta, bunların güvenlik adına alınan önlemler olduğudur. BT yöneticiniz gizliliğinizi ihlal etmeye ve hiç nedensiz bilgilerinizi silmeye çalışmaz; ancak şirket verilerinin güvenlik altında olduğundan emin olmak ister.
+
+    Bu ileti Microsoft’un denetiminde değildir ve iletide kullanılan ifadenin biraz sert göründüğünün farkındayız. Şirket Portalı’nın yalnızca kuruluşunuzla ilgili olan kısıtlamaları ve erişimi göstermesinin bir yolu yoktur. Bunların tümü, bu ekranda aynı anda verilir. Kendi kuruluşunuzun kullanımına özgü sorularınız varsa, daha fazla bilgi edinmek için [Şirket Portalı web sitesindeki](http://portal.manage.microsoft.com) iletişim bilgilerini kullanarak BT yöneticinizle bağlantı kurun.
 
 12.  Yönergeleri izleyerek PIN’i veya parolayı girin. Bu cihazda zaten bir PIN veya parola ayarladıysanız, bu ekranı görmezsiniz ya da yeni bir PIN veya parola girmeniz gerekmez.
 
@@ -108,21 +114,21 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     Bu ekran, cihazınızın kaydedilmekte olduğunu gösterir.
 
-      ![Cihazı kaydetme ekranı](./media/and-enroll-8-device-enrolling.png)
+    ![Cihazı kaydetme ekranı](./media/and-enroll-8-device-enrolling.png)
 
 14. **Şirket Erişimi Kurulumu** ekranı görüntülendiğinde **DEVAM**’a dokunun. Cihazınızın uyumsuz olduğunu belirten bir ileti görürseniz sorunu düzeltmek için yönergeleri izleyin ve sonra **DEVAM**’a dokunun.
 
-  ![Cihaz uyumlu değil ancak kaydedildi](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![Cihaz uyumlu değil ancak kaydedildi](./media/and-enroll-9a-noncompliant-enrolled-device.png)
 
-  ![Çözümlenmesi gereken cihaz uyumluluk sorunlarını göründü](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Çözümlenmesi gereken cihaz uyumluluk sorunlarını göründü](./media/and-enroll-9b-resolve-compliance-issues.png)
 
-Sorunlara dokunarak bunlar hakkında daha fazla bilgi edinebilirsiniz. 
+    Sorunlara dokunarak bunlar hakkında daha fazla bilgi edinebilirsiniz.
 
-  ![Cihaz uyumluluk sorunları genişletildi](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Cihaz uyumluluk sorunları genişletildi](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
 
-    ![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
+    ![Şirket erişimi kurulum ekranı](./media/and-enroll-9d-comp-access-setup.png)  
 
-11. **Şirket Erişimi Kurulumu tamamlandı** ekranında **BİTTİ**’ye dokunun. Cihazınız artık kaydedilmiştir.
+15. **Şirket Erişimi Kurulumu tamamlandı** ekranında **BİTTİ**’ye dokunun. Cihazınız artık kaydedilmiştir.
 
     ![Şirket erişimi kurulumu tamamlandı ekranı](./media/and-enroll-10-comp-access-setup-complete.png)
 

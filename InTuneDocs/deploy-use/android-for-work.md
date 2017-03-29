@@ -4,7 +4,7 @@ description: "Intune, kullanıcılar iş için Android cihazlarını kullandıkl
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a5c024c2139536f004799b18a0f6d1d1eb4875b2
-ms.openlocfilehash: bdacb61d1713bf24b2f33f144afa0db356e10ee0
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: e04ab9c14ea6e7cc38430ec6a4d478a65e23ba96
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -41,9 +41,9 @@ Intune, Android for Work cihazlarda yapılandırabileceğiniz bir dizi yerleşik
 
 ## <a name="app-publishing-and-distribution"></a>Uygulama yayımlama ve dağıtma
 
-Google Play for Work hizmeti, Android for Work uygulama dağıtımı ve yönetiminin önemli bir parçasıdır. İş profilinde Android for Work cihazlara dağıtılan tüm uygulamalar Play for Work hizmetinden gelir. Play Store'da uygulamaları yönetmek ve dağıtmak için Play for Work web sitesinde bir Intune yöneticisi olarak oturum açar ve Intune kiracınız için uygulamaları onaylarsınız. Bu uygulamalar Intune konsoluna eşitlenir ve burada Intune kullanılarak dağıtılıp yönetilebilir. Kuruluşunuz tarafından geliştirilen iş kolu (LOB) uygulamalarının Google’ın Android uygulama yayımlama konsolu kullanılarak Play for Work’te yayımlanması gerekir. İş kolu uygulamalarının, kuruluşunuza erişimi kısıtlamak için Android uygulama yayımlama konsolunda yapılandırılması gerekir.
+Google Play for Work hizmeti, Android for Work uygulama dağıtımı ve yönetiminin önemli bir parçasıdır. İş profilinde Android for Work cihazlara dağıtılan tüm uygulamalar Play for Work hizmetinden gelir. Play Store’daki uygulamaları yönetmek ve dağıtmak için, Google Play web sitesinde şirketinizin Google yönetimi için yönetici kimlik bilgileriyle oturum açarsınız. Cihazlarınızın iş profillerinde gösterilmeleri için, Android for Work dağıtımının uygulamalarını onaylayabilirsiniz. Ardından bu uygulamalar Intune konsoluna eşitlenir ve burada Intune kullanılarak dağıtılıp yönetilebilir. Kuruluşunuz tarafından geliştirilen iş kolu (LOB) uygulamalarının Google’ın Android uygulama yayımlama konsolu kullanılarak Play for Work’te yayımlanması gerekir. İş kolu uygulamalarının, kuruluşunuza erişimi kısıtlamak için Android uygulama yayımlama konsolunda yapılandırılması gerekir.
 
-Uygulamalar kullanıcı etkileşimi olmadan ve kullanıcının **Bilinmeyen Kaynaklardan Yükleme**'ye izin vermesine gerek kalmadan yüklenebilir. İsteğe bağlı veya kullanılabilir uygulamalara göz atmak ve onları yüklemek için kullanıcı cihazındaki Play Store uygulamasını kullanabilir. [Android for Work için uygulama dağıtma](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps) hakkında daha fazla bilgi edinin.
+Uygulamalar kullanıcı etkileşimi olmadan ve kullanıcının **Bilinmeyen Kaynaklardan Yükleme**'ye izin vermesine gerek kalmadan yüklenebilir. İsteğe bağlı veya kullanılabilir uygulamalara göz atmak ve onları yüklemek için kullanıcı cihazındaki Play for Work mağazasını gözden geçirebilir. [Android for Work için uygulama dağıtma](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps) hakkında daha fazla bilgi edinin.
 
 ## <a name="app-configuration"></a>Uygulama yapılandırması
 
@@ -53,13 +53,13 @@ Android for Work, uygulama yapılandırma değerlerini bunları destekleyen uygu
 
 Android for Work, iOS gibi varsayılan bir e-posta uygulaması veya yerel e-posta profili nesnesi sağlamaz. Bunun yerine, e-posta yapılandırmaları kendilerini destekleyen e-posta uygulamalarına uygulama yapılandırma ayarları uygulayarak ayarlanabilir. Gmail ve Nine Work, Play Store’da bulunan ve Android for Work uygulama yapılandırması ile yapılandırmayı destekleyen iki Exchange ActiveSync (EAS) istemci uygulamasıdır.
 
-Intune, Gmail ve Nine Work uygulamaları için yapılandırma şablonları sağlar. Uygulama yapılandırma profillerini destekleyen diğer e-posta uygulamaları mobil uygulama yapılandırma ilkeleriyle yapılandırılabilir.
+Intune, iş uygulamaları olarak yönetildiklerinde Gmail ve Nine Work uygulamaları için yapılandırma şablonları sağlar. Uygulama yapılandırma profillerini destekleyen diğer e-posta uygulamaları mobil uygulama yapılandırma ilkeleriyle yapılandırılabilir.
 
 Android for Work cihazlar için Exchange ActiveSync koşullu erişim kullanıyorsanız, Gmail veya Nine Work e-posta uygulamasını kullanmanız gerekir. Android için Microsoft Outlook uygulaması veya ADAL ile modern kimlik doğrulaması kullanan herhangi bir e-posta uygulaması da desteklenir. [Şirket e-postası için e-posta profilleri](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) hakkında daha fazla bilgi edinin.
 
-## <a name="mobile-app-management-policies"></a>Mobil uygulama yönetimi ilkeleri
+## <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
 
-Mobil uygulama yönetimi (MAM) için etkinleştirilmiş uygulamalara uygulanan kısıtlama ilkeleri iş profilinde ve kişisel profilde tam olarak desteklenir. İş kolu uygulamalarını, Android uygulama yayımlama konsolunda şu adreste yayımlayabilirsiniz: https://play.google.com/apps/publish. Bu konsol, uygulamaları kuruluşunuza özel hale getirme seçeneğine sahiptir. [Android for Work uyumluluk ilkesi ayarları](afw-compliance-policy-settings-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. MAM ilkeleri hakkında genel bilgiler için bkz. [mobil uygulama yönetimi ilkeleri](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+Uygulaman uygulama koruma ilkeleri, iş profilinde ve kişisel profilde tümüyle desteklenir. İş kolu uygulamalarını, Android uygulama yayımlama konsolunda şu adreste yayımlayabilirsiniz: https://play.google.com/apps/publish. Bu konsol, uygulamaları kuruluşunuza özel hale getirme seçeneğine sahiptir. [Android for Work uyumluluk ilkesi ayarları](afw-compliance-policy-settings-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. Uygulama koruma ilkeleri hakkındaki genel bilgiler için bkz. [uygulama ilkeleri](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 ## <a name="vpn-profiles"></a>VPN profilleri
 

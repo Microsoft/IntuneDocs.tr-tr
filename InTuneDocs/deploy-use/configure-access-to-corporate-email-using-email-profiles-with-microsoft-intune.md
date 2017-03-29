@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
+ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -39,27 +39,21 @@ Aşağıdaki cihaz türlerinde yerel e-posta istemcisini yapılandırmak için e
 -    Windows 10 (masaüstü için), Windows 10 Mobile ve üzeri
 -    iOS 8.0 ve üzeri
 -    Samsung KNOX Standard (4.0 ve üzeri)
--    Android for Work
-
->[!NOTE]
->Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur ve Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun profili oluşturup dağıtın. Nine Work gibi e-posta uygulamaları ücretsiz olmayabilir. Uygulamanın lisanslama ayrıntılarını gözden geçirin veya sorunuz varsa uygulama şirketine başvurun.
+-    Android for Work (üçüncü taraf e-posta uygulamaları, yerel e-posta uygulaması yalnızca kişisel profildir)
 
 Cihazda bir e-posta hesabı ayarlamaya ek olarak, ne kadar e-postanın eşitleneceğini ve cihaz türüne bağlı olarak eşitlenecek içerik türlerini de ayarlayabilirsiniz.
 
->[!NOTE]
->
->Intune tarafından profil ayarlanmadan önce kullanıcı bir e-posta profili yüklediyse, Intune e-posta profili dağıtımının sonucu cihaz platformuna bağlıdır:
+Intune tarafından profil ayarlanmadan önce kullanıcı bir e-posta profili yüklediyse, Intune e-posta profili dağıtımının sonucu cihaz platformuna bağlıdır:
 
->**iOS**: Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmıştır. Kullanıcı tarafından oluşturulmuş yinelenen e-posta profili, Intune yöneticisinin oluşturduğu profilin dağıtımını engeller. iOS kullanıcıları normalde e-posta profili oluşturduğundan ve ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, el ile yapılandırılan e-posta profilinden dolayı uyumlu olmadığını kullanıcıya bildirir ve kullanıcıdan söz konusu profili kaldırmasını ister. Intune profilinin ayarlanabilmesi için, kullanıcının e-posta profilini kaldırması gerekir. Bu sorunun önüne geçmek için, kullanıcılarınızdan bir e-posta profilini yüklemeden önce kaydolmalarını ve Intune’un profili ayarlamasına izin vermelerini isteyin.
+**Android**<br>Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Kullanıcı tarafından oluşturulmuş yinelenen e-posta profili, Intune yöneticisinin oluşturduğu profilin dağıtımını engeller. iOS kullanıcıları normalde e-posta profili oluşturduğundan ve ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, el ile yapılandırılan e-posta profilinden dolayı uyumlu olmadığını kullanıcıya bildirir ve kullanıcıdan söz konusu profili kaldırmasını ister. Intune profilinin ayarlanabilmesi için, kullanıcının e-posta profilini kaldırması gerekir. Bu sorunun önüne geçmek için, kullanıcılarınızdan bir e-posta profilini yüklemeden önce kaydolmalarını ve Intune’un profili ayarlamasına izin vermelerini isteyin.
 
->**Windows**: Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmıştır. Intune kullanıcı tarafından oluşturulmuş, var olan e-posta profilinin üzerine yazar.
+**Windows**<br>Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Intune kullanıcı tarafından oluşturulmuş, var olan e-posta profilinin üzerine yazar.
 
->**Samsung KNOX**: E-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmış ve Intune profili bunun üzerine yazılmıştır. Kullanıcı bu hesabı ayarlarsa, Intune profili tarafından hesabın üzerine yeniden yazılır. Bu durumun kullanıcıda kafa karışıklığına neden olabileceğini unutmayın.
+**Samsung KNOX**<br>E-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanır ve Intune profili bunun üzerine yazılır. Kullanıcı bu hesabı ayarlarsa, Intune profili tarafından hesabın üzerine yeniden yazılır. Bu durumun kullanıcıda kafa karışıklığına neden olabileceğini unutmayın.
 
->Samsung KNOX’un profili algılamak için konak adını kullanmaması nedeniyle, farklı konaklarda aynı e-posta adresinde kullanmak üzere birden çok e-posta profili oluşturursanız bunlar birbirinin üzerine yazılacağından, bunu yapmamanızı öneririz.
+Samsung KNOX’un profili algılamak için konak adını kullanmaması nedeniyle, farklı konaklarda aynı e-posta adresinde kullanmak üzere birden çok e-posta profili oluşturursanız bunlar birbirinin üzerine yazılacağından, bunu yapmamanızı öneririz.
 
->**Android for Work**: Intune profili yalnızca cihazın iş profilindeki belirli e-posta uygulamalarına uygulanır ve cihazın kullanıcı profilindeki e-posta yapılandırmasını etkilemez.
-
+**Android for Work**<br>Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur, cihaz iş profilini yükler ve Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun profili oluşturup dağıtın. Nine Work gibi e-posta uygulamaları ücretsiz olmayabilir. Uygulamanın lisanslama ayrıntılarını gözden geçirin veya sorunuz varsa uygulama şirketine başvurun.
 
 ## <a name="secure-email-profiles"></a>E-posta profillerinin güvenliğini sağlama
 E-posta profillerinin güvenliğini sertifika veya parola kullanarak sağlayabilirsiniz.

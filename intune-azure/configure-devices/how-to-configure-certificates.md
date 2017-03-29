@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: d1c1833ea7fe9e794a70b2b2536f44801b68fa7e
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -79,18 +79,18 @@ SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen se
 
 1. Azure portalında oturum açın.
 2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
+3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
 4. **Profil Oluştur** dikey penceresinde, güvenilen sertifika profili için **Ad** ve **Açıklama** girin.
-5. **Platform** açılan listesinde, bu güvenilen sertifika için cihaz platformunu seçin. Şu anda, cihaz kısıtlama ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
+5. **Platform** açılan listesinde, bu güvenilen sertifika için cihaz platformunu seçin. Şu anda, sertifika ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
     - **Outlook Web Access (OWA)**
     - **Android**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 ve üzeri**
     - **Windows 10 ve üzeri**
-6. **Profil** türü açılan listesinde **Güvenilen sertifika**’yı seçin.
+6. **Profil türü** açılan listesinde **Güvenilen sertifika**’yı seçin.
 7. 1. görevde kaydettiğiniz sertifikaya gidin ve **Tamam**’a tıklayın.
 8. Yalnızca Windows 8.1 ve Windows 10 cihazları için, güvenilen sertifika için **Hedef Depo** olarak şunlardan birini seçin:
     - **Bilgisayar sertifika deposu - Kök**

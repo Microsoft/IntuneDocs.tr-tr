@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Yönettiğiniz cihazların tümünde ayarları ve özellikleri yönetmek için Microsoft Intune **Cihazları yapılandır** iş yükünü kullanın. Bu iş yükünü, genellikle yönettiğiniz cihazlarda birçok farklı özelliği ve işlevi yönetmenize ve denetlemenize olanak sağlayan cihaz profilleri oluşturmak için kullanırsınız.
+Yönettiğiniz cihazların tümünde ayarları ve özellikleri yönetmek için Microsoft Intune **Cihaz yapılandırması** iş yükünü kullanın. Bu iş yükünü, genellikle yönettiğiniz cihazlarda birçok farklı özelliği ve işlevi yönetmenize ve denetlemenize olanak sağlayan cihaz profilleri oluşturmak için kullanırsınız.
 
 Bu iş yükünü açtığınızda aşağıdaki seçenekleri görürsünüz:
 
@@ -41,8 +41,13 @@ Cihaz profillerini oluşturma iş akışı, tüm profiller için benzer çalış
 
 Cihazlarınızda aşağıdaki özellikleri yönetebilirsiniz:
 
+## <a name="device-features"></a>Cihaz özellikleri
+
+Cihaz özellikleri, iOS ve macOS cihazlarda AirPrint, bildirimler ve paylaşılan cihaz yapılandırmaları gibi özellikleri denetlemenize olanak tanır.
+Daha fazla bilgi için bkz. [Cihaz özelliği ayarlarını yapılandırma](how-to-configure-device-features.md) iOS ve macOS’u destekler.
+
 ## <a name="device-restrictions"></a>Cihaz kısıtlamaları
-Cihaz kısıtlamaları; güvenlik, tarayıcı, donanım ve veri paylaşım ayarları gibi bir dizi kategori altında yönettiğiniz çok çeşitli ayarları ve özellikleri denetlemenize olanak tanır. Örneğin, iOS cihazı kullanıcılarının cihaz kamerasına erişmesini engelleyen bir cihaz kısıtlama profili oluşturabilirsiniz.
+Cihaz kısıtlamaları; cihazlarda güvenlik, tarayıcı, donanım ve veri paylaşım ayarları gibi bir dizi kategori altında yönettiğiniz çok çeşitli ayarları denetlemenize olanak tanır. Örneğin, iOS cihazı kullanıcılarının cihaz kamerasına erişmesini engelleyen bir cihaz kısıtlama profili oluşturabilirsiniz.
 Daha fazla bilgi için [Cihaz kısıtlama ayarlarını yapılandırma](how-to-configure-device-restrictions.md) konusuna bakın. Android, iOS, macOS, Windows 10 ve Windows 10 Team’i destekler.
 
 ## <a name="email"></a>E-posta
@@ -57,6 +62,10 @@ Daha fazla bilgi için [Wi-Fi ayarlarını yapılandırma](how-to-configure-wi-f
 Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için VPN profillerini kullanarak ağa kolay ve güvenli bir şekilde bağlanabilmelerini sağlayın.
 Daha fazla bilgi için [VPN ayarlarını yapılandırma](how-to-configure-vpn-settings.md) konusuna bakın.
 Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 ve Windows 10’u destekler.
+
+## <a name="education"></a>Eğitim
+Windows Sınav Zamanı uygulamasının seçeneklerini yapılandırmanıza olanak tanır. Bu seçenekleri yapılandırdığınızda, sınav tamamlanana kadar cihazda başka uygulama çalıştırılamaz.
+Daha fazla bilgi için bkz. [Eğitim ayarlarını yapılandırma](how-to-configure-education-settings.md)
 
 ## <a name="certificates"></a>Sertifikalar
 Bu profil türü cihazlara atanabilen ve Wi-Fi, VPN ve e-posta profillerinin kimliğini doğrulamak için kullanılan güvenilen, SCEP ve PKCS sertifikalarını yapılandırmanıza olanak tanır.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: aea6d9868d91260dd7a3a4c3b1426f12fcc9f47d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 34b906301fca2e91f2c014b9959c305a39f46af1
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -49,7 +49,7 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
+3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
 4. **Profil Oluştur** dikey penceresinde, Wi-Fi profili için **Ad** ve **Açıklama** girin.

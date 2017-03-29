@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -139,7 +140,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra 3. adım
     |**Erişim için kurumsal ilkeyle cihaz uyumluluğu gerektir**|Bu ayar, yalnızca cihazın yazılım kilidi kırılmış veya cihaza kök erişim izni verilmişse uygulamanın kullanılmasına izin verir.|
     |**Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)**|**Zaman aşımı** alanında, uygulama açıldıktan sonra uygulama erişim gereksinimlerinin yeniden denetlenmesine kadar geçecek süreyi belirtin.|
     |**Çevrimdışı yetkisiz kullanım süresi**|Cihaz çevrimdışı ise, uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını belirtin.|
-    |**Uygulama verilerini şifreleme**|Bu ayar, bu uygulama ile ilişkili tüm verilerin şifreleneceğini belirtir. Buna SD kart gibi harici ortamlara depolanacak veriler de dahildir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetim ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada ve işletim sisteminin sağladığı cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu ayar, BT yöneticisinin ayarladığı cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesindeki ayarlara göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/en-us/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalarda şifrelemeyi Microsoft sağlar. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir.  Cihaz depolamasındaki içerik her zaman şifrelenir. Şifreleme yöntemi FIPS 140-2 sertifikalı değildir.|
+    |**Uygulama verilerini şifreleme**|Bu ayar, bu uygulama ile ilişkili tüm verilerin şifreleneceğini belirtir. Buna SD kart gibi harici ortamlara depolanacak veriler de dahildir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetim ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada ve işletim sisteminin sağladığı cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu ayar, BT yöneticisinin ayarladığı cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesindeki ayarlara göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/en-us/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalarda şifrelemeyi Microsoft sağlar. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir.  Cihaz depolamasındaki içerik her zaman şifrelenir. Şifreleme yöntemi yalnızca Samsung KNOX cihazları için FIPS 140-2 uyumludur.|
     |**Ekran yakalamayı engelle** (yalnızca Android cihazlar)|Bu ayar, birisi bu uygulamayı kullanırken cihazın ekran yakalama özelliklerinin engellendiğini belirtir.|
 
 4. İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.
@@ -195,9 +196,4 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 -   Bir ilke cihaza zaten dağıtıldıysa, mevcut ilke ayarları geçersiz kılınmaz.
 
 -   Cihaza hiçbir ilke dağıtılmadıysa ve çakışan iki ayar dağıtılırsa, cihazda yerleşik olarak bulunan varsayılan ayar kullanılır.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

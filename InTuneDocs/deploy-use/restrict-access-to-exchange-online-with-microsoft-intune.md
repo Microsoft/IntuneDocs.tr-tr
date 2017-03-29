@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -59,7 +60,7 @@ Koşullu biçimlendirme ilkeleri yapılandırdığınızda ve bunlarla bir kulla
 
 ### <a name="when-the-device-is-not-compliant"></a>Cihaz uyumlu olmadığında
 
-Koşullu erişim ilkesine uyulmazsa, cihaz hemen karantinaya alınır ve kullanıcı bir e-posta alır, oturum açtığında aşağıdaki karantina bildirimlerinden birini görür:
+Koşullu erişim ilkesine uyulmazsa, cihaz hemen karantinaya alınır; kullanıcı bir e-posta alır ve oturum açtığında aşağıdaki karantina bildirimlerinden birini görür:
 
 - Cihaz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedilmediyse veya Azure Active Directory’de kayıtlı değilse Şirket Portalı uygulamasını yükleme, cihazı kaydetme ve e-postayı etkinleştirme yönergelerinin bulunduğu bir ileti görüntülenir. Bu işlem cihazın Exchange ActiveSync kimliğini de Azure Active Directory’deki kayıtla ilişkilendirir.
 
@@ -275,9 +276,4 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 - [SharePoint Online’a erişimi koruma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Skype Kurumsal Çevrimiçi Sürüm’e erişimi koruma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

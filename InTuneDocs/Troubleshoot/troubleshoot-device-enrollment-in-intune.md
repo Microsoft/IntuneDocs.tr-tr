@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 02/05/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ Sorun gidermeye başlamadan önce, Intune’u kayıt sağlamak üzere doğru şe
 
 -    [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune/deploy-use/prerequisites-for-enrollment)
 -    [iOS ve Mac yönetimini ayarlama](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Microsoft Intune ile Windows Phone ve Windows 10 Mobile yönetimini ayarlama](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [Windows cihaz yönetimini ayarlama](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [Android cihaz yönetimini ayarlama](/intune/deploy-use/set-up-android-management-with-microsoft-intune) - Ek adım gerekmez
+-    [Android for Work cihaz yönetimini ayarlama](/intune/deploy-use/set-up-android-for-work)
 
 Yönetilen cihaz kullanıcılarınız, gözden geçirmeniz için kayıt ve tanılama günlüklerini toplayabilir. Kullanıcılar için günlükleri toplama yönergeleri, şu konu başlıkları altında sağlanır:
 
@@ -149,7 +149,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 **Sorun:** AD FS’nize ikinci bir doğrulanmış etki alanı eklediğinizde, ikinci etki alanının kullanıcı asıl adı (UPN) sonekini taşıyan kullanıcılar portallarda oturum açamayabilir veya cihaz kaydedemeyebilir.
 
 
-**Çözüm:** AD FS 2.0 aracılığıyla çoklu oturum açma (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, @contoso.com veya @fabrikam.com)) Microsoft Office 365 müşterilerinin, her sonek için ayrı bir AD FS 2.0 Federasyon Hizmeti örneği dağıtması gerekir. Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, **SupportMultipleDomain** anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu blog’a](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
+**Çözüm:** AD FS 2.0 aracılığıyla çoklu oturum açma (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, @contoso.com veya @fabrikam.com) Microsoft Office 365 müşterilerinin, her sonek için ayrı bir AD FS 2.0 Federasyon Hizmeti örneği dağıtması gerekir. Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, **SupportMultipleDomain** anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu blog’a](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
 
 
 ## <a name="android-issues"></a>Android sorunları
@@ -162,20 +162,20 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 Samsung, belirli Samsung cihazlara yüklü gelen Samsung Smart Manager yazılımının, Şirket Portalı uygulamasını ve bileşenlerini devre dışı bırakabildiğini onayladı. Şirket Portalı devre dışı bırakıldığında arka planda çalışamaz ve bu nedenle Intune hizmetine bağlanamaz.
 
-**Çözüm 1:**
+**1. Çözüm:**
 
 Kullanıcılarınız Şirket Portalı uygulamasını el ile başlatmalarını söyleyin. Uygulama yeniden başlatıldığında Intune hizmeti ile bağlantıya geçer.
 
 > [!IMPORTANT]
 > Samsung Smart Manager, Şirket Portalı uygulamasını yeniden devre dışı bırakabileceği için Şirket Portalı uygulamasını el ile açmak geçici bir çözümdür.
 
-**Çözüm 2:**
+**2. Çözüm:**
 
 Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemelerini söyleyin. Devre dışı bırakma sorunu Android 6.0 cihazlarda yoktur. Güncelleştirmeleri denetlemek için kullanıcılar **Ayarlar** > **Cihaz hakkında** > **Güncellemeleri manuel indir** yolunu izleyip cihaz ekranındaki komutları izleyebilir.
 
-**Çözüm 3:**
+**3. Çözüm:**
 
-Çözüm 2 işe yaramazsa, kullanıcılarınızın aşağıdaki adımları uygulayarak Şirket Portalı uygulamasını Smart Manager'da hariç tutmasını sağlayın:
+2. Çözüm işe yaramazsa, kullanıcılarınızın aşağıdaki adımları uygulayarak Şirket Portalı uygulamasını Smart Manager'da hariç tutmasını sağlayın:
 
 1. Cihazda Smart Manager uygulamasını başlatın.
 
@@ -217,11 +217,11 @@ Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemel
 
 **Sorun**: Kullanıcılar cihazda şu iletiyi alıyor: *Cihazınızda gerekli bir sertifika eksik olduğundan oturum açamazsınız.*
 
-**Çözüm 1**:
+**1. Çözüm**:
 
 Kullanıcılarınızdan [Cihazınızda gerekli bir sertifika eksik](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) bölümündeki yönergeleri izlemelerini isteyin. Kullanıcılar yönergeleri uyguladıktan sonra hata devam ederse, 2. Çözümü deneyin.
 
-**Çözüm 2**:
+**2. Çözüm**:
 
 Kullanıcılar şirket kimlik bilgilerini girdikten sonra hala eksik sertifika hatası alıyor ve federasyon oturum açma deneyimi için yeniden yönlendiriliyorsa, Active Directory Federasyon Hizmetleri (AD FS) sunucunuzda bir ara sertifika eksik olabilir.
 
@@ -236,7 +236,7 @@ Sorunu düzeltmek için AD FS sunucusunda veya proxy’lerdeki Bilgisayar Kişis
 5.    Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
 6.    **Ayrıntılar** sekmesini ve **... dosyasına kopyala**’yı seçin.
 7.    Sertifikanın ortak anahtarını istenen dosya konumuna kaydetmek veya dışarı aktarmak için sihirbaz yönergelerini izleyin.
-8.    Adımda 3 Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
+8.    3. Adımda Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
 9.    AD FS sunucularını yeniden başlatın.
 10.    Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
 Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum açabilmelidir.
@@ -279,6 +279,18 @@ Sorunu düzeltmek için kullanıcıların **Eşitleme yapılamıyor** bildirimin
   ![Şirket Erişimi Kurulum ekranı](./media/ios_cp_app_company_access_setup.png)
 
 Kaydedildikten sonra cihazlar, iyi duruma geri döner ve şirket kaynaklarına yeniden erişim kazanır.
+
+### <a name="verify-ws-trust-13-is-enabled"></a>WS-Trust 1.3’ün etkinleştirildiğini doğrulama
+**Sorun** Cihaz Kayıt Programı (DEP) iOS cihazları kaydedilemiyor
+
+Kullanıcı benzeşimi ile Cihaz Kayıt Programı cihazlarını kaydetme işlemi, kullanıcı belirteci istemek için WS-Trust 1.3 Kullanıcı Adı/Karma uç noktasının etkinleştirilmesini gerektirir. Active Directory bu uç noktayı varsayılan olarak etkinleştirir. Get-AdfsEndpoint PowerShell cmdlet’ini kullanarak ve trust/13/UsernameMixed uç noktasını arayarak, etkinleştirilmiş uç noktaların listesini alırsınız. Örneğin:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+Daha fazla bilgi için [Get-AdfsEndpoint belgelerine](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) bakın.
+
+Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güvenliğini sağlamak için en iyi yöntemler](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Kimlik federasyon sağlayıcınızda WS-Trust 1.3 Kullanıcı Adı/Karma’nın etkinleştirilip etkinleştirilmediğini denetlemek için ek yardıma ihtiyacınız olması durumunda, ADFS kullanıyorsanız Microsoft Desteği’ne veya üçüncü taraf kimlik satıcınıza başvurun.
+
 
 ### <a name="profile-installation-failed"></a>Profil yüklemesi başarısız oldu
 **Sorun:** Bir kullanıcı, bir iOS cihazında **Profil yüklemesi başarısız oldu** hatasını alıyor.

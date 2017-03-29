@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ Bir iOS cihazı kaybolursa veya çalınırsa kayıp modunu etkinleştirebilirsin
 2.    **Kayıp modu** dikey penceresinde kayıp modunu etkinleştirin, görüntülenecek olan iletiyi ve isteğe bağlı olarak bir iletişim telefon numarası girin.
 3.    **Tamam**’a tıklayın.
 Kayıp modunu etkinleştirdiğinizde cihazın tüm kullanımını engellemiş olursunuz. Siz kayıp modunu devre dışı bırakmadıkça son kullanıcı cihaza erişemez. Kayıp modu etkin durumdayken **Cihazı bul** eylemini kullanarak cihazın nerede olduğunu bulabilirsiniz.
+Kayıp modunu kullanmak için cihazın DEP aracılığıyla kaydedilen ve denetimli modda olan, şirkete ait bir iOS cihazı olması gerekir.
 
 ### <a name="locate-device"></a>**Cihazı bul**
-Kayıp veya çalınmış bir iOS cihazının konumunu haritada görüntülemek için bu uzak eylemi kullanın. Cihazın denetimli modda olan, şirkete ait bir iOS cihazı olması gerekir. Bu eylemi kullanabilmek için önce cihazın kayıp moduna geçirilmiş olması gerekir.
+Kayıp veya çalınmış bir iOS cihazının konumunu haritada görüntülemek için bu uzak eylemi kullanın. Cihazın DEP aracılığıyla kaydedilen ve denetimli modda olan, şirkete ait bir iOS cihazı olması gerekir. Bu eylemi kullanabilmek için önce cihazın kayıp moduna geçirilmiş olması gerekir.
 1.    iOS cihazının özellikler dikey penceresinde **Diğer** > **Cihazı bul**’u seçin.
 2.    Cihaz bulunduktan sonra konumu **Cihazı bul** dikey penceresinde görüntülenir. 
     ![Cihazı bul dikey penceresi](./media/locate-device.png)
