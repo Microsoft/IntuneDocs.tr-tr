@@ -33,6 +33,7 @@
 ### [Bir Apple DEP belirteci alma](enroll-devices/get-apple-dep-token.md)
 ### [iOS cihazlarının nasıl kaydedileceğini belirleme](enroll-devices/choose-ios-enrollment-method.md)
 ## Nasıl yapılır
+### [Kullanıcılara lisansları atama](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Android cihazlarını kaydetme](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### iOS cihazlarını kaydetme
 #### [Kurulum Yardımcısı'nı kullanarak iOS cihazlarını kaydetme](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
