@@ -16,6 +16,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -80,9 +81,8 @@ Kullanıcılar iOS cihazlarını kaydetmeden önce, Intune'u bu cihazları yöne
 1. **Sertifika imzalama isteği alma**<br/>
 Yönetici hesabınızla Intune’da oturum açın ve **Yönetim** > **Mobil Cihaz Yönetimi** > **iOS ve Mac OS X** > **APNs Sertifikasını Karşıya Yükle**'ye gidin ve **APNs sertifika isteğini indir**’i seçin. Sertifika imzalama isteği (.csr) dosyasını yerel olarak kaydedin. .csr dosyası Apple Anında İletilen Bildirim Sertifikaları Portalı'ndan bir güven ilişkisi sertifikası istemek için kullanılır. <!--- screen shot--->
 2.    **Bir Apple Anında İletilen Bildirim Servisi sertifikası alma**<BR/>
-[Apple Anında İletilen Bildirim Sertifikaları Portalı](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2)'na gidin ve .csr dosyasını kullanarak APNs sertifikasını oluşturmak için şirketinizin Apple kimliğiyle oturum açın. **Apple’ın Anında İletilen Sertifika Portalı’nda Karşıya Yükle**’yi seçtikten sonra, APNs için kullanılamayan bir .json dosyası alırsınız. İndirme işlemini tamamlayın, Üçüncü Taraf Sunucular için Sertifikalar için Apple Anında İletme Sertifikaları Portalı’na dönün ve **İndir**’i seçin.
-
- APNs (.pem) sertifikasını indirin ve dosyayı yerel olarak kaydedin. Bu Apple kimliği daha sonra APNs sertifikanızı yenilemek için kullanılır.
+[Apple Anında İletilen Bildirim Sertifikaları Portalı](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2)'na gidin ve .csr dosyasını kullanarak APNs sertifikasını oluşturmak için şirketinizin Apple kimliğiyle oturum açın. **Apple’ın Anında İletilen Sertifika Portalı’nda Karşıya Yükle**’yi seçtikten sonra, APNs için kullanılamayan bir .json dosyası alırsınız. İndirme işlemini tamamlayın, Üçüncü Taraf Sunucular için Sertifikalar için Apple Anında İletme Sertifikaları Portalı’na dönün ve **İndir**’i seçin.<br/>
+APNs (.pem) sertifikasını indirin ve dosyayı yerel olarak kaydedin. Bu Apple kimliği daha sonra APNs sertifikanızı yenilemek için kullanılır.
 3.    **APNs sertifikasını Intune'a ekleme**<BR/>
 Microsoft Intune yönetim konsolunda **Yönetim** > **Mobil Cihaz Yönetimi** > **iOS ve Mac OS X** > **APNs Sertifikasını Karşıya Yükle**'ye gidin ve **APNs sertifikasını karşıya yükle**’yi seçin. Sertifika (.pem) dosyasına gidin, **Aç**’ı seçin ve Apple kimliğinizi girin. APNs sertifikası ile. Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir.
 4.    **Kullanıcılarınıza, şirket kaynaklarına erişmek için cihazlarını nasıl kaydedeceklerini anlatın.**<br/>
@@ -118,9 +118,4 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Kullanıcıları ve cihazları düzenlemek için grup oluşturma](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
