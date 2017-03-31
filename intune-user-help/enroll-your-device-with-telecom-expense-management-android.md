@@ -18,9 +18,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 982588ddc808123efd107759ed15c31ced6f110e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
+ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2017
 
 Kuruluşunuz, veri ve ses planlarının kabul edilebilir sınırlar içinde kullanıldığından emin olmak için telekomünikasyon gider yönetimi yazılımı kullanıyor olabilir. Cihazınızı kaydetmeyi tamamladıktan sonra, bu cihaz için en uygun kategoriyi seçmeniz istenir.
 
-  ![Bir iOS cihazında "cihaz için en uygun kategoriyi seçme" ekranının ekran görüntüsü. Kurumsal veya kişisel kayıt seçimi gösterilmektedir.](./media/and-enroll-11-tem-select-best-category.png)
+![Bir iOS cihazında "cihaz için en uygun kategoriyi seçme" ekranının ekran görüntüsü. Kurumsal veya kişisel kayıt seçimi gösterilmektedir.](./media/and-enroll-11-tem-select-best-category.png)
 
 1. Uygun seçeneği belirlediğinizde Google Play Mağazası’ndan [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) uygulamasını yüklemek için bir bildirim alırsınız. Datalert uygulaması kuruluşunuzun veri kullanımını ölçmesine yöneliktir. Devam etmek için ekranın sağ üst köşesindeki __ileri__ okuna dokunun.
 
