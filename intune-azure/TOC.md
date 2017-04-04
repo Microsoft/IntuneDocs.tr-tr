@@ -1,5 +1,6 @@
 # Giriş
 ## [Azure portalı önizlemesi nedir?](introduction/what-is-microsoft-intune.md)
+## [Azure Intune özellikleri](introduction/ui-changes-in-microsoft-intune.md)
 ## Başlarken
 <!---(introduction/get-started.md) --->
 ### [Ücretsiz deneme için kaydolma](introduction/sign-up-free-trial-microsoft-intune.md)
