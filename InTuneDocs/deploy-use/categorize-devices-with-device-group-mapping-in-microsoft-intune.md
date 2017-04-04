@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
+ms.lasthandoff: 12/10/2016
 
 ---
 
@@ -71,7 +72,7 @@ Azure Active Directory tabanlı güvenlik gruplarının aşamalı olarak uygulan
 - Bir ad girip, ardından **Ekle**’ye tıklayarak bunu yeni bir cihaz kategorisi olarak ekleyebilirsiniz.
 - Ayrıca, bir kategori seçip ardından **Silebilirsiniz**.
 
-2. adımda Azure Active Directory güvenlik grupları oluştururken cihaz kategorisi adını kullanacaksınız.
+Adımda 2 Azure Active Directory güvenlik grupları oluştururken cihaz kategorisi adını kullanacaksınız.
 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>2. Adım - Active Directory güvenlik grupları oluşturma
 
@@ -88,9 +89,4 @@ Kullanıcılar cihazlarını kaydettiklerinde onlara sizin yapılandırdığın�
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
