@@ -11,7 +11,7 @@
 
 
 # [Başlarken](get-started/get-started.md)
-## [Intune Kurulumu](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Intune’u ayarlama](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Önkoşullar]
 #### [Desteklenen cihazlar](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Ağ kullanımı](get-started/network-bandwidth-use.md)
