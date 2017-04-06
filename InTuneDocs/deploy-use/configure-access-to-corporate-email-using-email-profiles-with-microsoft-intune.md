@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
-ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
-ms.lasthandoff: 03/23/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: f76b65ad97771d6b40c4e3bff75a19fd1f922eea
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -53,7 +53,7 @@ Intune tarafından profil ayarlanmadan önce kullanıcı bir e-posta profili yü
 
 Samsung KNOX’un profili algılamak için konak adını kullanmaması nedeniyle, farklı konaklarda aynı e-posta adresinde kullanmak üzere birden çok e-posta profili oluşturursanız bunlar birbirinin üzerine yazılacağından, bunu yapmamanızı öneririz.
 
-**Android for Work**<br>Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur, cihaz iş profilini yükler ve Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun profili oluşturup dağıtın. Nine Work gibi e-posta uygulamaları ücretsiz olmayabilir. Uygulamanın lisanslama ayrıntılarını gözden geçirin veya sorunuz varsa uygulama şirketine başvurun.
+**Android for Work**<br>Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur, cihaz iş profiline yüklenir ve bu yüzden yinelenen profiller oluşturmazlar. Her iki uygulama da Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun e-posta profilini oluşturup dağıtın. Nine Work gibi e-posta uygulamaları ücretsiz olmayabilir. Uygulamanın lisanslama ayrıntılarını gözden geçirin veya sorunuz varsa uygulama şirketine başvurun.
 
 ## <a name="secure-email-profiles"></a>E-posta profillerinin güvenliğini sağlama
 E-posta profillerinin güvenliğini sertifika veya parola kullanarak sağlayabilirsiniz.

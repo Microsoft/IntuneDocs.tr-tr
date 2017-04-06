@@ -5,7 +5,7 @@ description: "Windows bilgisayarlarınızın Microsoft Intune istemci yazılım�
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 02/22/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -106,7 +106,7 @@ Aşağıdaki yordamı örnek alarak Intune istemci yazılımını bilgisayarlara
 
 ## <a name="instruct-users-to-self-enroll"></a>Kullanıcıdan kendi kendine kaydolmasını isteme
 
-Kullanıcılar, Intune istemci yazılımını [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek yükler. Kullanıcıların web portalında gördüğü bilgiler, hesabınızın MDM Yetkilisine ve kullanıcının bilgisayarının işletim sistemi platformuna/sürümüne bağlı olarak değişiklik gösterir. 
+Kullanıcılar, Intune istemci yazılımını [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek yükler. Kullanıcıların web portalında gördüğü bilgiler, hesabınızın MDM Yetkilisine ve kullanıcının bilgisayarının işletim sistemi platformuna/sürümüne bağlı olarak değişiklik gösterir.
 
 Kullanıcılara bir Intune lisansı atanmamışsa veya kuruluşun MDM Yetkilisi, Intune olarak ayarlanmamışsa, kullanıcılara kaydolmaya yönelik herhangi bir seçenek gösterilmez.
 
@@ -200,7 +200,7 @@ Yükseltilmiş bir komut istemi kullanarak aşağıdaki komutlardan birini çal�
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**Yöntem 2** bu aracıların tümünün her Windows SKU’sunda yüklü olmadığını unutmayın):
+**Yöntem 2**<br>Bu aracıların tümünün her Windows SKU’sunda yüklü olduğunu unutmayın:
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
@@ -247,7 +247,7 @@ Yükseltilmiş bir komut istemi kullanarak aşağıdaki komutlardan birini çal�
 - AgentInstaller
 - Logs
 - Updates
-- Common 
+- Common
 
 ### <a name="remove-the-onlinemanagement-folder"></a>OnlineManagement klasörünü kaldırma
 

@@ -5,9 +5,6 @@
 ### <a name="modernizing-the-company-portal-website---753980--"></a>Şirket Portalı web sitesi modernleştiriliyor <!--753980-->
 Şirket Portalı web sitesi, yönetilen cihazlara sahip olmayan kullanıcıları hedefleyen uygulamaları destekleyecek. Karşıt renklerden oluşan yeni renk düzeni ve dinamik çizimlerle yeniden tasarlanan web sitesi, yardım masası ilgili kişisine ilişkin ayrıntıların yanı sıra yönetilen mevcut cihazlara yönelik bilgilerin bulunduğu bir "hamburger menüsü" ![Şirket Portalı web sitesinin sol üst köşesine eklenmiş olan hamburger menüsünün küçük resmi](/intune/whats-new/media/CP_hamburger_menu.png) eklenerek diğer Microsoft ürün ve hizmetleriyle uyumlu hale getirilecek. Kullanıcılara sunulan uygulamaları vurgulayacak şekilde yeniden düzenlenecek olan giriş sayfasında, Öne Çıkan ve Son Güncelleştirilen uygulamaların görüntülendiği döngüler yer alacak. Önce ve sonra görüntülerini [UI güncelleştirmeleri sayfasında](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui) bulabilirsiniz.
 
-### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Windows 10 Şirket Portalı için kullanıcının yönlendirildiği yeni deneyim <!--713927-->
-Mart ayından başlayarak, Windows 10 için Şirket Portalı tanımlanmamış veya kaydedilmemiş cihazlar için kullanıcının yönlendirildiği adım adım bir Intune deneyimi içerecektir. Yeni deneyimde, kullanıcılara AAD kaydını (Koşullu Erişim özelliklerinde tanımlama için gerekli) ve MDM kaydını (cihaz yönetim özellikleri için gerekli) gerçekleştirme işlemlerinde kullanıcılara yol gösteren, kullanıcının Windows 10 derlemesi için özelleştirilmiş adım adım yönergeler sağlanır. Kullanıcıya yol gösteren deneyime Şirket Portalı giriş sayfasından erişilebilir ve bu deneyim isteğe bağlıdır; kayıtları tamamlamayan kullanıcılar uygulamayı kullanmaya devam edebilir, ancak sınırlı işlevsellikle karşılaşabilir.
-
 ## <a name="notices"></a>Bildirimler
 
 ### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>Grup geçişi için iOS cihazlarda grup veya ilke güncelleştirmesi gerekmeyecek <!--898837-->
@@ -56,14 +53,8 @@ Azure’da Intune önizlemesindeki yenilikleri [buradan](https://docs.microsoft.
 
 ### <a name="new-capabilities"></a>Yeni Özellikler
 
-<!--### Actions for non-compliance <!--730266
-_Actions for non-compliance_ is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.-->
-
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Kayıtsız MAM için konsol içi raporlar <!--677961-->
 Hem kayıtlı hem kayıtlı olmayan cihazlar için yeni uygulama koruma raporları eklenmiştir. [Intune ile mobil uygulama yönetimi ilkelerini nasıl izleyebileceğinizi buradan](https://docs.microsoft.com/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune) öğrenebilirsiniz.
-
-<!--### Conditional access for MAM with SharePoint Online <!--679339
-You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release. <!--Find out more about this new feature [here](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online).-->
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 desteği <!--694397-->
 Intune artık Android 7.1.1 sürümünü tam olarak destekler ve yönetir.
@@ -157,34 +148,12 @@ __Intune AV Player, Image Viewer ve PDF Viewer uygulamaları Android’de artık
 
 ### <a name="new-capabilities"></a>Yeni özellikler
 
-<!--### View App States for All Platforms in Real Time
-App installation status is now shown in real-time in the console. When you previously deployed an app, you had to wait for a targeted device to report back before the app install status was displayed in the Intune console.
-
-### Streamline iOS App Management for your End Users
-Intune can now automatically take over management of the previously installed app and no end user action is required.
-
-Previously, if the end user of an enrolled iOS device installed an app from the App Store before you deployed that same app with a deployment action of __Available__, then the end user had to:
-
-1. Open the __Company Portal__.
-2. Select the app.
-3. Tap __Install__ to enable Intune to take over management of the app.-->
-
 __Windows 10 cihazları için Yeni Microsoft Intune Şirket Portalı__ Microsoft, [Windows 10 cihazları için yeni bir Microsoft Intune Şirket Portalı uygulaması](https://www.microsoft.com/store/apps/9wzdncrfj3pz) piyasaya sürdü. Yeni Windows 10 Evrensel biçiminden yararlanan bu uygulama, kullanıcıya uygulama içinden güncelleştirilmiş bir kullanıcı deneyimi ve kullanıcının bugün kullanmakta olduğu işlevselliğin tümünü olanaklı kılmaya devam ederken, ister bilgisayar ister Mobil tüm Windows 10 cihazlarında aynı deneyimi sunacak.
 
 Yeni uygulama, kullanıcının Windows 10 cihazlarında çoklu oturum açma (SSO) ve sertifika tabanlı kimlik doğrulama gibi ek platform özelliklerinden yararlanmasını da sağlar. Uygulama, mevcut Windows 8.1 Şirket Portalı ve Windows Phone 8.1 Şirket Portalı için güncelleştirme olarak Windows Mağazası'ndan yüklenir. Daha fazla ayrıntı için bkz. [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
 
-<!--### Support for Windows Store for Business Apps Being Deployed as Available
-You can now deploy apps you synchronized from the Windows Store for Business (WSfB) with a deployment action of __Available__ or __Required__. After syncing WSfB apps into Intune, administrators will be able to target those apps as available installs to groups of users. End users will see the deployed WSfB apps as available for install in the Universal Company Portal, where they can choose whether they would like to acquire the apps.
-
-### Conditional Access for MAM with SharePoint Online
-
-You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint online.  You can get started in Intune mobile app management via the Azure portal. Look for the  Conditional Access section in the “Settings” blade which now includes the option for SharePoint online.-->
-
 > [!IMPORTANT]
-
-> __Intune ve Android for Work Güncelleştirmesi__
-
-> Android for Work uygulamalarını __Gerekli__ işleviyle dağıtabilirsiniz ancak uygulamaları __Kullanılabilir__ olarak dağıtmak için Intune gruplarınızın yeni Azure AD grupları deneyimine geçirilmiş olması gerekir.
+> __Intune ve Android for Work hakkında bir Güncelleştirme__ Android for Work uygulamalarını __Gerekli__ eylemiyle dağıtabilirsiniz ancak uygulamaları __Kullanılabilir__ olarak dağıtmak için Intune gruplarınızın yeni Azure AD grupları deneyimine geçirilmiş olması gerekir.
 
 __Cordova için Intune Uygulama SDK'sı eklentisi artık kayıtsız MAM desteği sunuyor__ Uygulama geliştiricileri artık Cordova için Intune Uygulama SDK'sı eklentisini Android ve iOS için Cordova tabanlı uygulamalarında cihaz kaydı olmadan da MAM işlevlerini etkinleştirmek için kullanabilir. Cordova için Intune Uygulama SDK'sı eklentisine [buradan](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam) ulaşabilirsiniz.
 
@@ -214,15 +183,12 @@ Artık Windows bilgisayarlarının [Exchange Online](/intune/deploy-use/restrict
 
 Intune artık Android for Work (AfW) programının bir parçası haline gelmiştir. Bu aydan itibaren AfW özellikleri için destek sunmaya başlayacağız ve önümüzdeki birkaç ay buna devam edeceğiz. AfW’nin kullanılabilir uygulama dağıtımı, yeni gruplandırma ve hedefleme deneyimini geliştirir. Sağlanan yeni Intune Hizmet hesapları, AfW kullanmaya başladığında bu özellikten yararlanabilir.
 
-<!--Existing Intune customers can use this feature in production once their tenant has been migrated. Existing customers are welcome to create a trial Intune account to plan for and test this feature until their tenant has been migrated. -->
-
 [Android for Work için Intune desteği hakkında Microsoft'un duyurusunu okuyun](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
 
 Aşağıdaki Intune konuları yenidir veya Android for Work bilgileriyle güncelleştirilmiştir:
 
 BT uzmanları için:
 - [Android for Work’ü ayarlama](/intune/deploy-use/set-up-android-for-work)
-<!--- [Nathan Bigman's resource access topics]()-->
 - [Intune ile Exchange Online’a ve yeni Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
 - [Intune’la Şirket İçi Exchange’e ve eski Ayrılmış Exchange Online ortamına e-posta erişimini kısıtlama](/intune/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
 - [Android for Work uyumluluk ilkesi ayarları](/intune/deploy-use/afw-compliance-policy-settings-in-microsoft-intune)
@@ -239,11 +205,6 @@ Ekim'de, Microsoft, iOS mobil cihazlardaki kötü amaçlı yazılımları, riskl
 
 Uyumlu olmayan iOS cihazlarının son kullanıcılarının kaydolmaları istenecek ve şirket verilerine erişim kazanmak için cihazlarına Lookout for Work uygulamasını yüklemeleri, uygulamayı etkinleştirmeleri ve Lookout for Work uygulamasında bildirilen tehditleri gidermeleri gerekecek. [Lookout for Work uygulamalarını yapılandırmayı ve dağıtmayı](/intune/deploy-use/configure-and-deploy-lookout-for-work-apps) öğrenin.
 <!--TFS 1319493-->
-
-<!--### New Microsoft Intune Company Portal available for Windows 10 devices
-Microsoft is releasing a new [Microsoft Intune Company Portal for Windows 10 devices](https://go.microsoft.com/fwlink/?linkid=830663). This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
-
-The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store.-->
 
 ### <a name="intune-app-wrapping-tool-for-android"></a>Android için Intune Uygulama Sarmalama Aracı
 Intune Uygulaması Sarmalama Aracı'nı kullanarak uygulamalarınızın Intune mobil uygulama yönetim (MAM) ilkelerini kullanmasını sağlayabilirsiniz. Cihaz kaydı gerektirmeden Intune MAM ilkeleri desteği artık kullanılabilir.
@@ -368,7 +329,6 @@ Intune ürününde kullanılan bazı terimleri anlamanıza yardımcı olmak içi
 
 ## <a name="august-2016"></a>Ağustos 2016
 ### <a name="app-management"></a>Uygulama yönetimi
-<!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
 
 __iOS 9.3 için gizli ve gösterilen uygulamalar__ iOS 9.3 veya üzerini çalıştıran cihazlarda iOS genel yapılandırma ilkesindeki gizli ve gösterilen uygulamalar listesini kullanarak şunları yapabilirsiniz:
 - Kullanıcılardan gizlenecek uygulamaların bir listesini belirtin. Kullanıcılar bu uygulamaları görüntüleyemez veya başlatamaz.
@@ -388,9 +348,6 @@ __Mobil uygulama yönetimi (MAM) ilkeleriyle uyumlu yeni uygulamalar__ [iOS](htt
 
 MAM ile uyumlu uygulamaların tam listesi için [Microsoft Intune uygulama iş ortakları](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) sitesine bakın.
 <!--- TFS 1252335 & 1252336 checked--->
-
-
-<!--- I started putting TFS numbers in the What's Coming topic and found it helpful when updating the What's New. Up to you if you want to continue. --->
 
 __Intune Görüntüleyicisi uygulamaları__ Yeni RMS paylaşım uygulamasının kullanıma sunulmasıyla, Ağustos 2016’dan başlayarak aşağıdaki Intune Görüntüleyicisi uygulamalarını kaldırıyoruz:
 - Intune AV Görüntüleyicisi
@@ -438,7 +395,7 @@ Grup yönetimindeki değişikliklere ek olarak, **aşağıdaki işlevler de kull
 __Android için Şirket Portalı’na eklenen 'Bildirimler'__ Eylül’de kullanıma sunacağımız güncelleştirmeyle Android için Şirket Portalı’nda giriş sayfasına yeni **Bildirimler** simgesi eklenecektir. Bu simgeye dokunulduğunda **Bildirimler** sayfasına erişim sağlanacak, bu sayfada son kullanıcınıza Şirket Portalı uygulamasında dikkat edilmesi gereken cihaz uyumsuzluğu, kayıt güncelleştirmesi ve kayıt etkinleştirmesi gibi tüm öğeler gösterilecektir. iOS Şirket Portalı uygulamasını da kullanıyorsanız, bildirimler deneyimini zaten görmüş olacaksınız. **Bildirimler** sayfası eklendikten sonra, cihazın önceden kaydedilmiş olması koşuluyla Android için Şirket Portalı’nı her başlattığınızda veya sürdürdüğünüzde **Şirket Erişim Kurulumu** sayfasını görmeyeceksiniz. Birçoğunuzun son kullanıcı kılavuzları oluşturduğunu ve kılavuzunuzun/ekran görüntülerinizin güncelleştirilmesi gerektiğinde önceden size bildirilmesini istediğinizi duyuyoruz. Lütfen deneyimdeki yaklaşan değişiklikleri yansıtacak şekilde belgelerinizi güncelleştirin. Güncelleştirilmiş ekran görüntülerini şu adreste bulabilirsiniz: https://aka.ms/androidcpupdate.  
 
 ### <a name="service-deprecation"></a>Hizmeti kullanımdan kaldırma
-<!---@Barry, we started listing service deprecations earlier this summer. --->
+
 - **iOS Şirket Portalı uygulaması desteğindeki değişiklikler**<br/>
 Eylül ayında, iOS için Microsoft Intune Şirket Portalı uygulamasını kullanan tüm kullanıcılarının en son sürümü kullanmaları gerekecektir. Yeni kullanıcılar yalnızca en son sürümünü indirebilecektir ve geçerli kullanıcıların buna güncelleştirme yapmaları gerekecektir. En son sürüm iOS 8.0 veya üzerini gerektirir ve bu yüzden daha önceki iOS sürümlerini çalıştıran cihazlar iOS 8.0 veya üzeri sürüme güncelleştirilene ve sonra Şirket Portalı uygulaması en son sürüme güncelleştirilene kadar Şirket Portalı’nı kullanamayacak veya ona kaydolamayacaktır. iOS 8.0 öncesi sürümleri çalıştıran kayıtlı cihazların Intune Yönetici Konsolu’nda yönetilmesi ve listelenmesi devam edecektir.  
 
@@ -449,19 +406,3 @@ Ağustos’ta, Intune yalnızca iOS 8.0 veya üstünü çalıştıran cihazları
 - **Windows 8 ve Windows Phone 8 için Şirket Portalı uygulamaları Eylül 2016’dan itibaren kullanımdan kalkacaktır** <br/>
 Microsoft Intune Eylül 2016'dan itibaren Windows Phone 8 ve Windows 8 platformları için Microsoft Intune Şirket Portalı uygulamalarına yönelik desteği sonlandıracaktır. Cihazları Windows 8.1 ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
 <!---TFS 1255391--->
-
-<!--- - **Custom Group Targeting of Notification Rules Removal.**<br/>
-Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
-
-    Today, to target a notification rule to a group you created from the Microsoft Intune administration console, you would take the following steps:
-
-    In the **Admin** workspace, click **Notification Rules** > **Create New Rule**
-
-    In step two of the Create Notification Rule Wizard, select the device groups which the rule will target. This step, “select device groups”, is being removed from the Intune Console.
-
-    The preliminary timeline for this change is as follows:
-    - In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
-    - Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
-    - Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
-
---->

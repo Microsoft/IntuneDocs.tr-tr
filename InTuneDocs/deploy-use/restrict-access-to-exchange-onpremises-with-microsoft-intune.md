@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -80,11 +81,12 @@ Aşağıdakiler desteklenir:
 -   iOS’ta yerel e-posta uygulaması.
 
 -   Android 4 veya sonraki sürümlerde Gmail gibi Exchange ActiveSync posta istemcileri.
-- Exchange ActiveSync posta istemcileri **Android for Work cihazlar**: Android for Work cihazlarda yalnızca **iş profilindeki** **Gmail** ve **Nine Work** uygulamaları desteklenir. Android for Work cihazlarda koşullu erişimin çalışması için Gmail veya Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız ve bu uygulamaları ayrıca zorunlu bir yükleme olarak dağıtmanız gerekir. 
+-   Exchange ActiveSync posta istemcileri **Android for Work cihazlar**: Android for Work cihazlarda yalnızca **iş profilindeki** **Gmail** ve **Nine Work** uygulamaları desteklenir. Android for Work cihazlarda koşullu erişimin çalışması için Gmail veya Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız ve bu uygulamaları ayrıca zorunlu bir yükleme olarak dağıtmanız gerekir. 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > Android ve iOS için Microsoft Outlook uygulaması desteklenmez.
 
 ## <a name="support-for-pcs"></a>Bilgisayarlar için destek
@@ -110,14 +112,12 @@ Aşağıdakiler desteklenir:
   - **Platform Özel Durumları:** Belirtilen mobil cihaz aileleri ve modellerinde erişim düzeylerini tanımlayan bir kural yapılandırmak için **Kural Ekle**’yi seçin. Bu cihazlar herhangi bir türde olabileceğinden, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] tarafından desteklenmeyen cihaz türlerini de yapılandırabilirsiniz.
 
   - **Varsayılan Kural:** Diğer kurallardan herhangi birinin kapsamında yer almayan bir cihaz söz konusu olduğunda cihazın Exchange’e erişmesine izin vermeyi, cihazı engellemeyi veya karantinaya almayı seçebilirsiniz. Kuralı, kayıtlı ve uyumlu cihazlarda erişime izin verecek şekilde ayarladığınızda, iOS, Windows ve Samsung KNOX cihazları için otomatik olarak e-posta erişimi verilir. Kullanıcının e-postasını almak için herhangi bir işlem yapması gerekmez.
-
-        Samsung KNOX çalıştırmayan Android cihazlarda, e-postaya erişebilmeleri için kullanıcılar, kaydı ve uyumluluğu doğrulama işleminde yol gösteren bir karantina e-postası alır. Cihazlara erişimi engellemeye veya cihazları karantinaya almaya yönelik kural ayarlarsanız Intune’a kaydedilmiş olup olmadıklarına bakılmaksızın tüm cihazların Exchange’e erişimi engellenir. Kayıtlı ve uyumlu cihazların bu kuraldan etkilenmesini önlemek için **Varsayılan Kuralı Geçersiz Kıl** kutusunu işaretleyin.
+      - Samsung KNOX çalıştırmayan Android cihazlarda, e-postaya erişebilmeleri için kullanıcılar, kaydı ve uyumluluğu doğrulama işleminde yol gösteren bir karantina e-postası alır. Cihazlara erişimi engellemeye veya cihazları karantinaya almaya yönelik kural ayarlarsanız Intune’a kaydedilmiş olup olmadıklarına bakılmaksızın tüm cihazların Exchange’e erişimi engellenir. Kayıtlı ve uyumlu cihazların bu kuraldan etkilenmesini önlemek için **Varsayılan Kuralı Geçersiz Kıl** kutusunu işaretleyin.
 >[!TIP]
 >Amacınız e-postaya erişim vermeden önce tüm cihazları engellemekse Erişimi engelle kuralını veya Karantina kuralını seçin. Varsayılan kural tüm cihaz türleri için geçerli olacaktır, böylece platform özel durumları olarak yapılandırdığınız ve [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] tarafından desteklenmeyen cihaz türleri de etkilenir.
 
   - **Kullanıcı Bildirimi:** Exchange’den gönderilen bildirim e-postasına ek olarak Intune, cihazın engelini kaldırma adımlarını içeren bir e-posta gönderir. Gereksinimlerinize göre özelleştirmek için, varsayılan iletiyi düzenleyebilirsiniz. Çözümleme yönergelerini içeren Intune bildirim e-posta iletisini (bu e-posta kullanıcının Exchange posta kutusuna teslim edilir) almadan önce cihazının engellenmesi durumunda kullanıcı, Exchange’e erişmek ve iletiyi görüntülemek için engellenmemiş bir cihaz ya da başka yöntemler kullanabilir.
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - Bu özellikle, **Varsayılan Kural** engellemek veya karantinaya almak üzere ayarlandıysa geçerlidir. Bu durumda, kullanıcının uygulama mağazasına gitmesi, Microsoft Şirket Portalı uygulamasını indirmesi ve cihazını kaydetmesi gerekir. Bu iOS, Windows ve Samsung KNOX cihazları için geçerlidir. Samsung KNOX çalıştırmayan cihazlar için karantina e-postasını alternatif bir e-posta hesabına göndermeniz gerekir. Kayıt ve uyumluluk sürecini tamamlamak için kullanıcının e-postayı engellenen cihazına kopyalaması gerekir.
   > [!NOTE]
   > Exchange’in bildirim e-postası gönderebilmesi için bildirim e-postasını göndermek için kullanılan hesabı belirtmeniz gerekir.
   >
@@ -139,9 +139,4 @@ Aşağıdakiler desteklenir:
 -   [SharePoint Online’a erişimi koruma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Skype Kurumsal Çevrimiçi Sürüm’e erişimi koruma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

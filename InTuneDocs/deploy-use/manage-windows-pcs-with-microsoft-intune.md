@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 10ba007095182c9cb07710656ba5f275e254d92e
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Intune bilgisayar istemcisiyle Windows bilgisayarlarını yönetme
-[Windows bilgisayarlarını mobil cihaz olarak kaydetme](set-up-windows-device-management-with-microsoft-intune.md), Windows bilgisayarlarını Intune’a kaydetmenin tercih edilen yöntemidir; ancak alternatif olarak, bu konuda açıklandığı gibi Intune istemci yazılımını yükleyerek Windows bilgisayarlarını kaydetmeyi ve yönetmeyi de seçebilirsiniz.
+[Windows bilgisayarlarını mobil cihaz olarak kaydetme](set-up-windows-device-management-with-microsoft-intune.md), Windows bilgisayarlarını Intune’a kaydetmenin tercih edilen yöntemidir; ancak bir BT yöneticisi olarak, bu konuda açıklandığı gibi Intune istemci yazılımını yükleyerek Windows bilgisayarlarını kaydetmeyi ve yönetmeyi de seçebilirsiniz. Intune yazılım istemcisi, mobil cihaz olarak kayıtta desteklenmez.
 
 Intune, Windows Server Active Directory Domain Services (AD DS) Grup İlkesi Nesneleri’ne (GPO'lar) benzer bir biçimde, Windows bilgisayarlarını ilkelerle yönetir. Intune ile Active Directory etki alanına katılmış bilgisayarları yönetecekseniz kurumunuzda yürürlükte olan herhangi bir [GPO ile Intune ilkelerinin çakışmadığından emin olun](resolve-gpo-and-microsoft-intune-policy-conflicts.md). [GPO’lar](https://technet.microsoft.com/library/hh147307.aspx) hakkında daha fazla bilgi edinebilirsiniz.
 
 ## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Intune yazılım istemcisi için ilkeler ve uygulama dağıtımları
 
-Intune istemci yazılımı, yazılım güncelleştirmelerini, Windows güvenlik duvarını ve Endpoint Protection’ı yöneterek [bilgisayarları korumaya yardımcı olan yönetim özelliklerini](policies-to-protect-windows-pcs-in-microsoft-intune.md) desteklese de Intune istemci yazılımıyla yönetilen bilgisayarlara, mobil cihaz yönetimine özgü **Windows** ilke ayarları da dahil olmak üzere diğer Intune ilkeleri hedeflenemez. 
+Intune istemci yazılımı, yazılım güncelleştirmelerini, Windows güvenlik duvarını ve Endpoint Protection’ı yöneterek [bilgisayarları korumaya yardımcı olan yönetim özelliklerini](policies-to-protect-windows-pcs-in-microsoft-intune.md) desteklese de Intune istemci yazılımıyla yönetilen bilgisayarlara, mobil cihaz yönetimine özgü **Windows** ilke ayarları da dahil olmak üzere diğer Intune ilkeleri hedeflenemez.
 
 Windows bilgisayarlarını yönetmek için Intune istemci yazılımını kullandığınızda, yalnızca **Bilgisayar Yönetimi** bölümünün altında gösterilen ilkeleri kullanabilirsiniz.
 
@@ -57,7 +57,7 @@ Bunlara ek olarak, uygulamaları dağıtırken yalnızca Windows Installer’ı 
 |---------------|--------------------|
 |Ağ|İstemci, bilgisayarınızın İnternet bağlantısının olmasını gerektirir.|
 |İşlemci ve Bellek|Bilgisayarın işletim sistemine ait işlemci ve RAM gereksinimlerine bakın.|
-|Disk alanı|İstemci yazılımı yüklenmeden önce&200; MB kullanılabilir disk alanı.|
+|Disk alanı|İstemci yazılımı yüklenmeden önce 200 MB kullanılabilir disk alanı.|
 
 **Yazılım**: İstemci yazılımını yüklemeye ilişkin yazılım gereksinimleri aşağıda verilmiştir:
 
@@ -70,7 +70,7 @@ Bunlara ek olarak, uygulamaları dağıtırken yalnızca Windows Installer’ı 
 
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Intune istemci yazılımıyla bilgisayar yönetimi özellikleri
 
-Intune istemci yazılımı yüklendikten sonra yönetim özellikleri şunları içerir: 
+Intune istemci yazılımı yüklendikten sonra yönetim özellikleri şunları içerir:
 
 - [Uygulama yönetimi](deploy-apps-in-microsoft-intune.md)
 

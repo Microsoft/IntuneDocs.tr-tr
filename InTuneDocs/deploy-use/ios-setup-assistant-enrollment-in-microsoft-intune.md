@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -85,7 +85,7 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Kurulum Yardımcısı ile kaydedilecek iOS cihazları ekleme
 
-1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirkete Ait Tüm Cihazlar** &gt; **Tüm Cihazlar**’a gidin ve **Cihaz ekle**’yi seçin. 
+1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirkete Ait Tüm Cihazlar** &gt; **Tüm Cihazlar**’a gidin ve **Cihaz ekle**’yi seçin.
 
    İki yolla cihaz ekleyebilirsiniz:
 
@@ -96,7 +96,7 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar.
     |||
     |-|-|
     |&lt;Seri 1&gt;|&lt;Cihaz 1 Ayrıntıları&gt;|
-    |&lt;Seri&2;&gt;|&lt;Cihaz 2 Ayrıntıları&gt;|
+    |&lt;Seri 2&gt;|&lt;Cihaz 2 Ayrıntıları&gt;|
 
   Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki gibi görünür:
 
@@ -107,13 +107,13 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar.
 
   -  **Cihaz ayrıntılarını el ile ekle**&mdash;En fazla 15 cihazın seri numarasını ve varsa cihaz ayrıntılarını veya notları girin.
 
-  **Cihazları Gözden Geçir** bölmesinde, seri numaralarını onaylayabilirsiniz. Ayrıca tekrar içeri aktarılan seri numaraların **Ayrıntıları** için üzerine yazma seçeneklerini belirleyebilir veya **Üzerine yaz** kutusunun işaretini kaldırarak Geçerli ayrıntıları koruyabilirsiniz. 
+  **Cihazları Gözden Geçir** bölmesinde, seri numaralarını onaylayabilirsiniz. Ayrıca tekrar içeri aktarılan seri numaraların **Ayrıntıları** için üzerine yazma seçeneklerini belirleyebilir veya **Üzerine yaz** kutusunun işaretini kaldırarak Geçerli ayrıntıları koruyabilirsiniz.
 
-> [!NOTE] 
+> [!NOTE]
 > Mevcut Intune yönetici konsolunda yöneticiler yüklenen CSV dosyasından ayrıntıları alabilir ve her seri numarası için geçerli ayrıntıların üzerine yazabilir. Yeni Azure portalında yalnızca tüm seri numaraları için üzerine yazma seçeneğini kullanabilecek veya tüm seri numaraları için yeni ayrıntıları yoksayabileceksiniz.
 
-  > [!NOTE]
-  > Şirkete ait cihazları daha sonra Intune yönetiminden kaldırmak isterseniz, cihaz kaydını devre dışı bırakmak için **Şirkete Ait Önceden Kaydedilmiş cihazlar** altındaki **iOS Seri Numarasına Göre** cihaz grubuna gitmeniz ve cihaz seri numarasını Intune'dan kaldırmanız gerekebilir. Intune, seri numaralarını kaldırdığınız sıralarda olağanüstü durum kurtarma yordamı gerçekleştirirse, o grupta yalnızca etkin cihazların seri numaralarının bulunduğunu doğrulamanız gerekir.
+> [!NOTE]
+> Şirkete ait cihazları daha sonra Intune yönetiminden kaldırmak isterseniz, cihaz kaydını devre dışı bırakmak için **Şirkete Ait Önceden Kaydedilmiş cihazlar** altındaki **iOS Seri Numarasına Göre** cihaz grubuna gitmeniz ve cihaz seri numarasını Intune'dan kaldırmanız gerekebilir. Intune, seri numaralarını kaldırdığınız sıralarda olağanüstü durum kurtarma yordamı gerçekleştirirse, o grupta yalnızca etkin cihazların seri numaralarının bulunduğunu doğrulamanız gerekir.
 
 2. **İleri**’yi seçin.
 
@@ -128,23 +128,22 @@ Kullanılabilir profiller listesinden eklenen cihazlara atanacak profili belirti
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>iOS cihazlarına dağıtılacak bir profili dışarı aktarma
 
-1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com), **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve mobil cihazlara dağıtılacak cihaz profilini seçin. 
+1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com), **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve mobil cihazlara dağıtılacak cihaz profilini seçin.
 
 2. Görev çubuğunda **Dışarı Aktar**’ı seçin. **Profil URL'si**öğesini kopyalayıp kaydedin. iOS cihazlar tarafından kullanılan Intune profilini tanımlamak için daha sonra Apple Configurator'a yüklemeniz gerekecektir.
 
   Apple Configurator 2’nin desteklenmesi için, 2.0 Profil URL’sinin düzenlenmesi gerekir. Bunu yapmak için şu kodu değiştirin:
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    Bu kod ile:
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  Bu kod ile:
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    iOS cihazlarında kullanılan Intune profilini tanımlamak için, aşağıdaki yordamda Apple Configurator kullanarak bu profil URL’sini Apple DEP hizmetine yükleyeceksiniz.
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>Cihazı Apple Configurator ile hazırlama
 
@@ -180,9 +179,10 @@ iOS cihazlar Mac bilgisayara bağlanır ve mobil cihaz yönetimine kaydedilir.
 
 ### <a name="distribute-devices"></a>Cihazları dağıtma
 
-Cihazlar artık kurumsal kayıt için hazırdır. 
+Cihazlar artık kurumsal kayıt için hazırdır. Cihazları kapatın ve kullanıcılara dağıtın. Kullanıcılar cihazlarını açtığında Kurulum Yardımcısı başlatılır.
 
-Cihazları kapatın ve kullanıcılara dağıtın. Kullanıcılar cihazlarını açtığında Kurulum Yardımcısı başlatılır.
+>[!NOTE]
+>Bir kullanıcı bir DEP cihazını kaydetmeyi denerse ve cihaz sınırını aştıysa, kayıt işlemi kullanıcıya uyarı vermeden sessizce başarısız olur.
 
 
 ### <a name="see-also"></a>Ayrıca bkz.

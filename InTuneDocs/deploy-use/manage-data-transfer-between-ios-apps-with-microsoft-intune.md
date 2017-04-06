@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -39,10 +40,10 @@ Uygulama koruma ilkeleri, iOS **Yönetimde açma** özelliğiyle birlikte kullan
 
 -   **Herhangi bir MDM çözümüyle yönetilmeyen, çalışana ait cihazlar:** [Uygulama koruma ilkesi ayarını](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md), **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** olarak belirleyebilirsiniz. Son kullanıcı ilkeyle yönetilmeyen bir uygulamada korunan bir dosyayı açtığında dosya okunamaz.
 
--   **Intune tarafından yönetilen cihazlar:** Intune’a kayıtlı cihazlarda, uygulama koruma ilkelerine sahip uygulamalar ile Intune aracılığıyla dağıtılan diğer yönetilen iOS uygulamaları arasında veri aktarımına otomatik olarak izin verilir. Uygulama koruma ilkeleriyle uygulamalarınız arasında veri aktarımına izin vermek için, **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** ayarını etkinleştirin. **Yönetimde açma** özelliğini kullanarak Intune aracılığıyla dağıtılmış uygulamalar arasındaki veri aktarımını denetleyebilirsiniz.   
+-   **Intune tarafından yönetilen cihazlar:** Intune’a kayıtlı cihazlar için uygulama koruma ilkelerine sahip uygulamalarla Intune aracılığıyla dağıtılan diğer yönetilen iOS uygulamaları arasında veri aktarımına otomatik olarak izin verilir. Uygulamak koruma ilkelerine sahip uygulamalar arasında veri aktarımına izin vermek için, **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** ayarını etkinleştirin. **Yönetimde açma** özelliğini kullanarak Intune aracılığıyla dağıtılmış uygulamalar arasındaki veri aktarımını denetleyebilirsiniz.   
 
 -   **Üçüncü taraf MDM çözümü tarafından yönetilen cihazlar:** iOS **Yönetimde açma** özelliğini kullanarak veri aktarımını yalnızca yönetilen uygulamalarla kısıtlayabilirsiniz.
-Üçüncü taraf MDM çözümünüzü kullanarak dağıttığınız uygulamaların, Intune’da yapılandırdığınız uygulama koruma ilkeleriyle de ilişkilendirildiğinden emin olmak için, kullanıcı UPN ayarını [Kullanıcı UPN ayarını yapılandırma](#configure-user-upn-setting-for-third-party-emm) yönergesinde açıklandığı gibi yapılandırmalısınız.  Uygulamalar kullanıcı UPN ayarı ile dağıtılırken, son kullanıcı iş hesabını kullanarak oturum açtığında uygulamaya, uygulama koruma ilkeleri uygulanır.
+Üçüncü taraf MDM çözümünüzü kullanarak dağıttığınız uygulamaların Intune’da yapılandırdığınız uygulama koruma ilkeleriyle de ilişkilendirildiğinden emin olmak için, [Kullanıcı UPN ayarını yapılandırma](#configure-user-upn-setting-for-third-party-emm) yönergesinde açıklandığı gibi kullanıcı UPN ayarını yapılandırmalısınız.  Uygulamalar kullanıcı UPN ayarı ile dağıtılırken, son kullanıcı iş hesabını kullanarak oturum açtığında uygulamaya uygulama koruma ilkeleri uygulanır.
 
 > [!IMPORTANT]
 > Kullanıcı UPN ayarı yalnızca bir üçüncü taraf MDM tarafından yönetilen cihazlara dağıtılan uygulamalar için gereklidir.  Intune ile yönetilen cihazlar için bu ayar gerekli değildir.
@@ -55,13 +56,13 @@ Kullanıcı UPN ayarını yapılandırmak, üçüncü taraf EMM çözümü taraf
 
 2.  Aşağıda genelleştirilen adımları kullanarak, **üçüncü taraf MDM çözümünüz aracılığıyla** yönetilmesini istediğiniz uygulamaları ve e-posta profilini dağıtın. Bu deneyim Örnek 1’de de ele alınmıştır.
 
-  1.  Uygulamayı aşağıdaki uygulama yapılandırma ayarlarıyla dağıtın:
+  1.  Uygulamayı, aşağıdaki uygulama yapılandırma ayarlarıyla dağıtın:
 
-      **key** = IntuneMAMUPN,  **value** = <username@company.com>
+      **anahtar** = IntuneMAMUPN,  **değer** = <username@company.com>
 
       Örnek: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Üçüncü taraf MDM sağlayıcınızı kullanarak kayıtlı cihazlara Yönetimde açma ilkesini dağıtın.
+  2.  Üçüncü taraf MDM sağlayıcınızı kullanarak kayıtlı cihazlara, Birlikte açma yönetimi ilkesini dağıtın.
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Örnek 1: Üçüncü taraf MDM konsolunda yönetici deneyimi
@@ -70,15 +71,15 @@ Kullanıcı UPN ayarını yapılandırmak, üçüncü taraf EMM çözümü taraf
 
 2. Uygulama Yapılandırması bölümünde aşağıdaki ayarı girin:
 
-  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+  **anahtar** = IntuneMAMUPN,  **değer** = <username@company.com>
 
-  Anahtar/değer çiftinin tam söz dizimi, üçüncü taraf MDM sağlayıcınıza göre farklılık gösterebilir. Aşağıdaki tabloda üçüncü taraf MDM sağlayıcıları ve anahtar/değer çifti için girmeniz gereken tam değer örnekleri bulunur.
+  Anahtar/değer çiftinin tam söz dizimi, üçüncü taraf MDM sağlayıcınıza göre farklılık gösterebilir. Aşağıdaki tabloda, üçüncü taraf MDM sağlayıcıları ve anahtar/değer çifti için tam olarak girmeniz gereken değer örnekleri yer almaktadır.
 
 |Üçüncü taraf MDM sağlayıcısı| Yapılandırma Anahtarı | Değer Türü | Yapılandırma Değeri|
 | ------- | ---- | ---- | ---- |
-|VMware AirWatch| IntuneMAMUPN | Dize | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | Dize | ${userUPN} **veya** ${userEmailAddress} |
-
+| VMware AirWatch | IntuneMAMUPN | Dize | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | Dize | $EMAIL$ **veya** $USER_UPN$ |
+| MobileIron Cloud | IntuneMAMUPN | Dize | ${userUPN} **veya** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>Örnek 2: Son kullanıcı deneyimi
 
@@ -91,11 +92,11 @@ Kullanıcı UPN ayarını yapılandırmak, üçüncü taraf EMM çözümü taraf
 4.  Word uygulaması başlatıldığında son kullanıcıdan kendi iş hesabını kullanarak oturum açması istenir.  İstendiğinde son kullanıcının girdiği bu iş hesabı, Microsoft Word uygulaması için uygulama yapılandırma ayarlarında belirttiğiniz hesapla eşleşmelidir.
 
     > [!NOTE]
-    > Son kullanıcı, kişisel çalışmaları için Word’e başka kişisel hesaplar ekleyebilir ve Word uygulamasını kişisel bağlamda kullanırken uygulama koruma ilkelerinden etkilenmez.
+    > Son kullanıcı kişisel çalışmaları için Word’e başka kişisel hesaplar ekleyebilir ve Word uygulamasını kişisel bağlamda kullanırken uygulama koruma ilkelerinden etkilenmez.
 
 5.  Oturum açma başarılı olduğunda uygulama koruma ilkesi ayarları Word uygulamasına uygulanır.
 
-6.  Veri aktarımı başarılı olmuştur ve belge, uygulamada şirket kimliği olarak etiketlenmiştir. Ayrıca, veriler iş bağlamında ele alınır ve ilke ayarları buna göre uygulanır.
+6.  Dosya aktarımı başarılı olmuştur ve belge, uygulamada şirket kimliği ile etiketlenmiştir. Ayrıca dosya, iş bağlamında ele alınır ve ilke ayarları buna göre uygulanır.
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>Üçüncü taraf EMM için kullanıcı UPN ayarını doğrulama
 
@@ -109,9 +110,4 @@ Kullanıcı UPN ayarını yapılandırdıktan sonra, iOS uygulamasının Intune 
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ile uygulama koruma ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

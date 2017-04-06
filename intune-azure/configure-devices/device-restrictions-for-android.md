@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: fafc2b14d3060f79b92bb9d18aabda6b08737881
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -28,32 +28,43 @@ ms.lasthandoff: 02/18/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## <a name="general"></a>Genel
--     **Kamera** - Cihaz kamerasının kullanılmasına izin verir.
--     **Kopyala ve Yapıştır** - Cihazda kopyalama ve yapıştırma işlevlerine izin verir.
--     **Uygulamalar arasında pano paylaşımı** - Uygulamalar arasında kopyalama ve yapıştırma işlemleri için panonun kullanımına izin verir (yalnızca Samsung KNOX Standard).
--     **Tanılama verileri gönderme** - Kullanıcının cihazdan tanılama verileri göndermesini durdurur.    
--     **Fabrika sıfırlaması** - Kullanıcının cihazda fabrika sıfırlaması gerçekleştirmesine izin verir.
--     **Coğrafi konum** - Cihazın konum bilgilerini kullanmasına izin verir (yalnızca Samsung KNOX Standard).
--     **Kapatma** - Kullanıcının cihazı kapatmasına izin verir.<br>Bu ayar devre dışı bırakılırsa, Samsung KNOX Standard cihazları için **Cihaz silinmeden önceki oturum açma hatası sayısı** ayarı çalışmaz.
--     **Ekran yakalama** - Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
--     **Sesli yardımcı** - Cihazda sesli yardım yazılımının kullanımına izin verir (yalnızca Samsung KNOX Standard).
--     **YouTube** - Cihazda YouTube uygulamasının kullanımına izin verir (yalnızca Samsung KNOX Standard).
+
+|||||
+|-|-|-|-|
+|Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
+|**Kamera**|Cihaz kamerasının kullanılmasına izin verir.|Evet|Evet|
+|**Kopyala ve yapıştır**|Cihazda kopyalama ve yapıştırma işlevine izin verir.|Hayır|Evet|
+|**Uygulamalar arasında pano paylaşımı**|Uygulamalar arasında kopyalama ve yapıştırma için panonun kullanılmasına izin verir.|Hayır|Evet|
+|**Tanılama veri gönderimi**|Kullanıcının cihazdan tanılama verileri göndermesini durdurur.|Hayır|Evet|
+|**Fabrika sıfırlaması**|Kullanıcının cihazda fabrika sıfırlaması gerçekleştirmesine izin verir.|Hayır|Evet|
+|**Coğrafi Konum**|Cihazın konum bilgilerini kullanmasına izin verir (yalnızca Samsung KNOX Standard).|Hayır|Evet|
+|**Kapatma**|Kullanıcının cihazı kapatmasına izin verir.<br>Bu ayar devre dışı bırakılırsa, Samsung KNOX Standard cihazları için **Cihaz silinmeden önceki oturum açma hatası sayısı** ayarı çalışmaz.|Hayır|Evet|
+|**Ekran yakalama**|Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.|Hayır|Evet|
+|**Sesli yardım**|Cihazda sesli yardım yazılımının kullanımına izin verir.|Hayır|Evet|
+|**YouTube**|Cihazda YouTube uygulamasının kullanılmasına izin verir.|Hayır|Evet|
 
 ## <a name="password"></a>Parola
--     **Parola gerekli** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
--     **En az parola uzunluğu** - Kullanıcının yapılandırması gereken parolanın uzunluk alt sınırını girin (4 ile 16 karakter arasında).
--     **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** - Cihaz otomatik olarak kilitlenmeden önce işlem yapılmayan dakika sayısını belirtir.
--     **Cihaz silinmeden önceki oturum açma hatası sayısı** - Cihaz silinmeden önce başarısız oturum açma sayısını belirtir.
--     **Parola geçerlilik süresi (gün)** - Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.
--     **Gerekli parola türü** - Gereken parola karmaşıklık düzeyini ve biyometrik cihaz kullanılıp kullanılamayacağını belirtir.
--     **Önceki parolaların yeniden kullanılmasını engelle** - Son kullanıcının daha önce kullanmış olduğu bir parolayı oluşturmasını durdurur.
--     **Parmak izi ile kilit açmaya izin ver** - Desteklenen cihazların kilidini açmak için parmak izi kullanımına izin verir.
--     **Akıllı Kilitleme ve diğer güven aracıları** - Uyumlu Android cihazlarda Akıllı Kilitleme özelliğini denetlemenize olanak tanır (Samsung KNOX Standard 5.0 ve üstü). Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken (örneğin, belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda) cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.
--     **Şifreleme** - Cihazdaki dosyaların şifrelenmesini gerektirir.
+
+|||||
+|-|-|-|-|
+|Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
+|**Parola**|Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.|Evet|Evet|
+|**En düşük parola uzunluğu**|Kullanıcının yapılandırması gereken parolanın uzunluk alt sınırını girin (4 ile 16 karakter arasında).|Evet|Evet|
+|**Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**|Cihaz otomatik olarak kilitlenmeden önce işlem yapılmayan dakika sayısını belirtir.|Evet|Evet|
+|**Cihaz silinmeden önceki oturum açma hatası sayısı**|Cihaz silinmeden önce başarısız oturum açma sayısını belirtir.|Evet|Evet|
+|**Parola kullanım süresi (gün)**|Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
+|**Gerekli parola türü**|Gereken parola karmaşıklık düzeyini ve biyometrik cihaz kullanılıp kullanılamayacağını belirtir.|Evet|Evet|
+|**Önceki parolaların yeniden kullanılmasını engelleme**|Son kullanıcının daha önce kullanmış olduğu bir parolayı oluşturmasını engeller.|Evet|Evet|
+|**Parmak izi ile kilit açma**|Desteklenen cihazların kilidini açmak için parmak izi kullanımına izin verir.|Hayır|Evet|
+|**Akıllı Kilitleme ve diğer güven aracıları**|Uyumlu Android cihazlarda Akıllı Kilit özelliğini denetlemenize olanak tanır (Samsung KNOX Standard 5.0 ve üstü). Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken (örneğin, belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda) cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.|Evet (5.0 ve üzeri)|Hayır|
+|**Şifreleme**|Cihazdaki dosyaların şifrelenmesini gerektirir.|Evet|Evet|
 
 ## <a name="google-play-store"></a>Google Play Store
 
--     **Google Play Store** - Kullanıcının cihazda Google Play Store’a erişmesine izin verir (yalnızca Samsung KNOX Standard).
+|||||
+|-|-|-|-|
+|Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
+|**Google Play mağazası**|Kullanıcının cihazda Google Play mağazasına erişmesine izin verir|Hayır|Evet|
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
 
@@ -80,30 +91,42 @@ Uygulamanın yükleme sayfasını açın ve URL'yi panoya kopyalayın. Artık bu
 Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygulama adı*>, <*uygulama yayımcısı*> biçimindeki bir csv dosyasından doldurabilir veya **Dışarı Aktar**’a tıklayarak kısıtlı uygulama listesinin içeriğiyle, aynı biçimde bir csv dosyası oluşturabilirsiniz.        
 
 ## <a name="browser"></a>Tarayıcı
--     **Web tarayıcısı** - Cihazın varsayılan web tarayıcısının kullanılıp kullanılamayacağını belirtir.
--     **Otomatik doldurma** - Kullanılacak web tarayıcısının otomatik doldurma işlevine izin verir.
--     **Tanımlama bilgileri** - Cihazın web tarayıcısının tanımlama bilgileri kullanmasına izin verir.
--     **Javascript** - Cihazın web tarayıcısının Java betiklerini çalıştırmasına izin verir.
--     **Açılır pencereler** - Web tarayıcısında açılır pencere engelleyicisinin kullanılmasına izin verir.
+|||||
+|-|-|-|-|
+|Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
+|**Web tarayıcısı**|Cihazın varsayılan web tarayıcısının kullanılıp kullanılamayacağını belirtir.|Hayır|Evet|
+|**Otomatik doldurma**|Kullanılacak web tarayıcısının otomatik doldurma işlevine izin verir.|Hayır|Evet|
+|**Çerezler**|Cihazın web tarayıcısının tanımlama bilgileri kullanmasına izin verir.|Hayır|Evet|
+|**Javascript**|Cihazın web tarayıcısının Java betiklerini çalıştırmasına izin verir.|Hayır|Evet|
+|**Açılır pencereler**|Web tarayıcısında açılır pencere engelleyicisinin kullanılmasına izin verir.|Hayır|Evet|
 
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
--     **Google yedekleme** - Google yedeklemesinin kullanılmasına izin verir.
--     **Google hesabı otomatik eşitlemesi** - Google hesabı ayarlarının otomatik olarak eşitlenmesine izin verir.
--     **Çıkarılabilir depolama birimi** - Cihazın SD kartı gibi bir çıkarılabilir depolama birimi kullanmasına izin verir (yalnızca Samsung KNOX Standard).
--     **Depolama kartlarında şifreleme** - Cihazın depolama kartını şifrelemenin gerekip gerekmediğini belirtir.
+|||||
+|-|-|-|-|
+|Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
+|**Google yedeklemesi**|Google yedeklemesi kullanmaya izin verir.|Hayır|Evet|
+|**Google hesabı otomatik eşitlemesi**|Google hesabı ayarlarının otomatik olarak eşitlenmesine izin verir.|Hayır|Evet|
+|**Çıkarılabilir depolama birimi**|Cihazda SD kartı gibi çıkarılabilir depolama birimi kullanılmasına izin verir.|Hayır|Evet|
+|**Depolama kartlarında şifreleme**|Cihaz depolama kartını şifrelemenin gerekip gerekmediğini belirtir.|Hayır|Evet|
 
 ## <a name="cellular-and-connectivity"></a>Hücresel ve Bağlantı
--     **Veri dolaşımı** - Cihaz cep telefonu şebekesindeyken veri dolaşımına izin verir (yalnızca Samsung KNOX Standard).
--     **SMS/MMS mesajları** - Cihazda SMS ve MMS mesajlarının kullanılmasına izin verir (yalnızca (Samsung KNOX Standard).
--     **Sesli arama** - Cihazda sesli arama özelliğini etkinleştirir veya devre dışı bırakır (yalnızca Samsung KNOX Standard).
--     **Ses dolaşımı** - Cihaz hücresel ağ üzerindeyken ses dolaşımına izin verir (yalnızca Samsung KNOX Standard).
--     **Bluetooth** - Cihazda Bluetooth’un kullanımına izin verir (yalnızca Samsung KNOX Standard).
--     **NFC** - Cihaz destekliyorsa, yakın alan iletişimi kullanan işlemlere izin verir (yalnızca Samsung KNOX Standard).
--     **Wi-Fi** - Cihazın Wi-Fi özelliklerinin kullanımına izin verir (yalnızca Samsung KNOX Standard).
--     **Wi-Fi paylaşımı** - Cihazda Wi-Fi paylaşımının kullanılmasına izin verir (yalnızca Samsung KNOX Standard).
+|||||
+|-|-|-|-|
+|Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
+|**Veri dolaşımı**|Cihaz, cep telefonu şebekesindeyken veri dolaşımına izin verir).|Hayır|Evet|
+|**SMS/MMS iletileri**|Cihazda SMS ve MMS mesajlaşması kullanımına izin verir.|Hayır|Evet|
+|**Sesli arama**|Cihazda sesli arama özelliğinin kullanımını etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
+|**Ses dolaşımı**|Cihaz cep telefonu şebekesindeyken ses dolaşımına izin verir.|Hayır|Evet|
+|**Bluetooth**|Cihazda Bluetooth özelliğinin kullanımına izin verir.|Hayır|Evet|
+|**NFC**|Cihaz destekliyorsa, yakın alan iletişimi kullanan işlemlere izin verir.|Hayır|Evet|
+|**Wi-Fi**|Cihazın Wi-Fi özelliklerinin kullanımına izin verir.|Hayır|Evet|
+|**Wi-Fi İnternet paylaşımı**|Cihazda Wi-Fi internet paylaşımı kullanımına izin verir.|Hayır|Evet|
 
 ## <a name="kiosk"></a>Bilgi noktası
--     **Yönetilen uygulama seçin** - Cihaz bilgi noktası modundayken çalıştırılabilecek yönetilen uygulamaya göz atın ve seçim yapın (mağazaya bir bağlantıyla belirtilen uygulamalar henüz desteklenmemektedir). Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.
--     **Ekran uyku düğmesi** - Ekranda uykuya geçme ve uyandırma düğmesini etkinleştirir veya devre dışı bırakır.
--     **Ses düğmeleri** - Cihazdaki ses düğmelerinin kullanımını etkinleştirir veya devre dışı bırakır.
+|||||
+|-|-|-|-|
+|Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
+|**Yönetilen uygulama seçin**|Cihaz bilgi noktası modundayken çalıştırılabilecek yönetilen uygulamaya göz atın ve seçim yapın (mağazaya bir bağlantıyla belirtilen uygulamalar henüz desteklenmemektedir). Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.|Hayır|Evet|
+|**Ekran uyku düğmesi**|Cihazın açma/kapatma düğmesini etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
+|**Ses düğmeleri**|Cihazdaki ses düğmelerinin kullanımını etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
 

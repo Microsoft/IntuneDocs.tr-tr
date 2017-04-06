@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 200c992caa36ca74bf3e4ad82a21099a4b7ada4c
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -37,6 +37,6 @@ Bazen iOS cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya
 - [Cihazımda seri numarasını nasıl bulabilirim?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [iOS cihazımı güncelleştirmem gerekiyor](you-need-to-update-your-ios-device.md)
 - [Kullandığım iOS sürümü henüz desteklenmiyor](your-ios-version-isnt-yet-supported.md)
-- [iOS cihazıma Lookout for Work uygulamasını yüklemem gerekiyor](you-are-prompted-to-install-lookout-for-work-ios.md)
-- [Lookout for Work’ün iOS cihazımda bulduğu bir tehdidi gidermem gerekiyor](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
+- [iOS cihazıma bir Mobile Threat Defense uygulaması yüklemem gerekiyor](you-are-prompted-to-install-mtd-ios.md)
+- [iOS cihazımda Mobile Threat Defense uygulamasının bulduğu bir tehdidi gidermem gerekiyor](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
 

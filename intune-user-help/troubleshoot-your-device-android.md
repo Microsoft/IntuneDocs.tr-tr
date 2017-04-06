@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/13/2017
 Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](http://portal.manage.microsoft.com) iletişim bilgilerini kullanarak BT yöneticinize ulaşmanızı öneririz.
 
 - [Android cihazınızda uyumluluk denetimi](check-compliance-on-your-device-android.md)
-- [BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olmak için Ayrıntılı Günlük kullanma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [BT yöneticinizin cihaz sorunları gidermesine yardımcı olmak için Ayrıntılı Günlük Kaydı kullanma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [E-posta kullanarak BT yöneticinize günlük gönderme](send-logs-to-your-it-admin-by-email-android.md)
 - [Günlükleri USB kablosu kullanarak BT yöneticinize gönderme](send-logs-to-your-it-admin-using-cable-android.md)
 - [BT yöneticinize kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-admin-android.md)
@@ -41,6 +41,6 @@ Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar or
 - [USB hata ayıklamayı kapatmanız gerekir](you-need-to-turn-off-usb-debugging-android.md)
 - [Güvenlik tehditleri taramasını açmanız gerekir](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [Cihazınız en düşük güvenlik düzeltme ekini karşılamıyor](you-need-to-update-your-device-OS-security-patch-android.md)
-- [Android cihazınıza Lookout for Work uygulamasını yüklemeniz isteniyor](you-are-prompted-to-install-lookout-for-work-android.md)
-- [Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+- [Android cihazınıza bir Cihaz Tehdit Koruması uygulaması yüklemeniz istendi](you-are-prompted-to-install-mtd-android.md)
+- [Cihaz Tehdit Koruması uygulamasının Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 

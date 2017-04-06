@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 185b7dd1e486155f90956ea1f6f83246636d421c
-ms.openlocfilehash: bcbf2c877aae34baa42e7a51e347489ec8669a34
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 89a573abb8853ffdab713ce838de323abac03c37
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -29,7 +29,8 @@ ms.lasthandoff: 02/22/2017
 Microsoft Intune, Aygıt Kayıt Programı (DEP) aracılığıyla “uzaktan” satın alınmış iOS cihazlarını kaydeden bir kayıt profili dağıtabilir. Kayıt paketi, cihaz için kurulum yardımcısı seçenekleri içerebilir.
 
 >[!NOTE]
->Bu kayıt yöntemi, [cihaz kaydı yöneticisi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) yöntemiyle birlikte kullanılamaz.
+>DEP kaydı, [cihaz kayıt yöneticisi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) yöntemiyle birlikte kullanılamaz.
+>Ayrıca, kullanıcılar iOS cihazları kaydederse (ör. Şirket Portalı uygulamasını kullanarak) ve bu cihazların seri numaraları daha sonra içeri aktarılıp bunlara bir DEP profili atandıysa cihazın Intune kaydı kaldırılır.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Apple DEP yönetimini kullanarak iOS cihazlarını kaydetme önkoşulları
 
@@ -45,7 +46,7 @@ Aşağıdaki adımlar, Apple DEP yönetimini kullanarak iOS cihazlarının "0. g
 
 ### <a name="get-an-encryption-key"></a>Şifreleme Anahtarı Alma
 
-1. Yönetici kullanıcı olarak, [Microsoft Intune yönetici konsolunu](http://manage.microsoft.com) açın, **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Aygıt Kayıt Programı**’na gidin ve **Şifreleme Anahtarını İndir**’i seçin. 
+1. Yönetici kullanıcı olarak, [Microsoft Intune yönetici konsolunu](http://manage.microsoft.com) açın, **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Aygıt Kayıt Programı**’na gidin ve **Şifreleme Anahtarını İndir**’i seçin.
 
 2. Şifreleme anahtarı (.pem) dosyasını yerel olarak kaydedin. .pem dosyası Apple Cihaz Kayıt Programı portalından güven ilişkisi sertifikası istemek için kullanılır.
 
@@ -77,7 +78,7 @@ Aşağıdaki adımlar, Apple DEP yönetimini kullanarak iOS cihazlarının "0. g
 
 2. **Ad** ve **Açıklama** dahil olmak üzere **Genel** ayrıntıları sağlayın ve profile atanmış cihazların kullanıcı benzeşimine sahip olduğunu veya bir gruba ait olduğunu belirtin:
 
-   - **Kullanıcı benzeşimi istemi**: Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Cihazın şirket verilerine ve e-postalara bu kullanıcı aracılığıyla erişmesine izin verilmesi için bu gereklidir. DEP tarafından yönetilen kullanıcılara ait olan ve şirket portalını kullanması gereken (uygulama yüklemek için) cihazlarda **kullanıcı benzeşimi** ayarlanmalıdır. Multifactor authentication (MFA) kullanıcı benzeşimi özellikli DEP cihazlarında kayıt sırasında çalışmaz. Kayıttan sonra MFA bu cihazlar üzerinde beklendiği gibi çalışır. İlk kez oturum açarken parola değiştirmesi istenen yeni kullanıcılara, DEP cihazlarının kaydı sırasında istemde bulunulamaz. Ayrıca, parolalarının süresi dolmuş olan kullanıcılardan DEP kaydı sırasında parolalarını sıfırlamaları istenmez ve farklı bir cihazdan parolayı sıfırlamaları gerekir. 
+   - **Kullanıcı benzeşimi istemi**: Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Cihazın şirket verilerine ve e-postalara bu kullanıcı aracılığıyla erişmesine izin verilmesi için bu gereklidir. DEP tarafından yönetilen kullanıcılara ait olan ve şirket portalını kullanması gereken (uygulama yüklemek için) cihazlarda **kullanıcı benzeşimi** ayarlanmalıdır. Multifactor authentication (MFA) kullanıcı benzeşimi özellikli DEP cihazlarında kayıt sırasında çalışmaz. Kayıttan sonra MFA bu cihazlar üzerinde beklendiği gibi çalışır. İlk kez oturum açarken parola değiştirmesi istenen yeni kullanıcılara, DEP cihazlarının kaydı sırasında istemde bulunulamaz. Ayrıca, parolalarının süresi dolmuş olan kullanıcılardan DEP kaydı sırasında parolalarını sıfırlamaları istenmez ve farklı bir cihazdan parolayı sıfırlamaları gerekir.
 
    > [!NOTE]
    > Kullanıcı benzeşimi ile DEP’in kullanıcı belirteci istemesini etkinleştirmek için WS-Trust 1.3 Kullanıcı Adı/Karma uç nokta gerekir.
@@ -154,11 +155,14 @@ Bu adım cihazları Apple DEP Service ile eşitler ve cihazların Intune konsolu
 
 ### <a name="distribute-devices-to-users"></a>Cihazları kullanıcılara dağıtma
 
-Şirketinizin sahip olduğu cihazlar artık kullanıcılara dağıtılabilir. Bir iOS cihazı açıldığında Intune tarafından yönetim için kaydedilir.
+Şirketinizin sahip olduğu cihazlar artık kullanıcılara dağıtılabilir. Bir iOS cihazı açıldığında Intune tarafından yönetim için kaydedilir. Kullanıcı cihaz sınırı DEP ile yönetilen cihazlar için geçerlidir.
+
+>[!NOTE]
+>Bir kullanıcı bir DEP cihazını kaydetmeyi denerse ve cihaz sınırını aştıysa, kayıt işlemi kullanıcıya uyarı vermeden sessizce başarısız olur.
 
 ## <a name="changes-to-intune-group-assignments"></a>Intune grubu atamalarına değişiklikler
 
-2016 Aralık ayından başlayarak cihaz grup yönetimi Azure Active Directory’ye taşınıyor. Azure Active Directory gruplarına geçişten sonra grup ataması Kurumsal Kayıt Profili seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Yeni portala geçildikten sonra, Kurumsal Kayıt Profili adlarını temel alan dinamik cihaz grubu atamaları tanımlanabilir. Azure Active Directory cihaz gruplarına geçiş sırasında, önceden bir Şirket Cihaz Kaydı profili tarafından atanmış olan her Intune cihaz grubu için Şirket Cihaz Kaydı profilinin adına göre AAD'de karşılık gelen bir dinamik cihaz grubu oluşturulacaktır. Bu işlem bir cihaz grubuna atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. [Azure Active Directory grupları hakkında daha fazla bilgi edinin](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+2017 Nisan ayından başlayarak cihaz grup yönetimi Azure Active Directory’ye taşınıyor. Azure Active Directory gruplarına geçişten sonra grup ataması Kurumsal Kayıt Profili seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Yeni portala geçildikten sonra, Kurumsal Kayıt Profili adlarını temel alan dinamik cihaz grubu atamaları tanımlanabilir. Azure Active Directory cihaz gruplarına geçiş sırasında, önceden bir Şirket Cihaz Kaydı profili tarafından atanmış olan her Intune cihaz grubu için Şirket Cihaz Kaydı profilinin adına göre AAD'de karşılık gelen bir dinamik cihaz grubu oluşturulacaktır. Bu işlem bir cihaz grubuna atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. [Azure Active Directory grupları hakkında daha fazla bilgi edinin](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Cihaz kaydetme önkoşulları](prerequisites-for-enrollment.md)

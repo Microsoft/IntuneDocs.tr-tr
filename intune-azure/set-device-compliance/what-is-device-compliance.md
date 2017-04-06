@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -87,6 +87,12 @@ Bugüne kadar Intune klasik yönetim konsolunu kullandıysanız, Azure portalın
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Klasik Intune konsolundan Intune Azure önizleme portalına geçiş
+
+[Klasik Intune konsolunda](https://manage.microsoft.com) oluşturulan cihaz uyumluluk ilkeleri yeni [Intune Azure portalında](https://portal.azure.com) görünmez. Ancak yine de kullanıcılara hedeflenebilir ve klasik Intune konsolu üzerinden yönetilebilir.
+
+Intune Azure portalındaki yeni cihaz uyumluluk özelliklerinden yararlanmak istiyorsanız Intune Azure portalında yeni cihaz uyumluluk ilkeleri oluşturmanız gerekir. Klasik Intune portalında cihaz uyumluluk ilkesi atanmış bir kullanıcıya Intune Azure portalında yeni bir cihaz uyumluluk ilkesi atarsanız, Intune Azure portalından gelen cihaz uyumluluk ilkeleri klasik Intune konsolunda oluşturulanlardan önceliklidir.
 
 ##  <a name="next-steps"></a>Sonraki adımlar
 
