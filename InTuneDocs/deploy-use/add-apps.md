@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0945fb2f67c6cc49ca8d10bb5c24f3c4a5f9b2c5
-ms.openlocfilehash: c65dc8ec22f717c5dcce51bb3c45d65bad8d8bde
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -37,7 +37,7 @@ Microsoft Intune’la uygulamaları dağıtmaya başlamadan önce, biraz zaman a
 |**Windows Installer (&#42;.exe, &#42;.msi)**|Bu uygulama türü, kullanıcı girişi gerektirmeyen sessiz yüklemeyi desteklemelidir. Uygulama belgelerinizde, uygulamayı sessiz yüklemek için uygun komut satırı seçenekleri verilmiş olmalıdır (örneğin, **/q**). [Microsoft Windows Installer Aracı için Komut Satırı Anahtarları](https://support.microsoft.com/en-us/kb/227091) bölümünde sık kullanılan komut satırı seçeneklerinin bir listesini bulabilirsiniz.<br><br>Uygulamanın kurulum programının gerektirdiği tüm ek dosya ve klasörler, uygulama kurulum dosyaları için belirttiğiniz konumda bulunmalıdır.<br><br>Genellikle Windows Installer (.msi) ve Windows Installer Düzeltme Eki (.msp) dosyaları, Intune tarafından herhangi bir komut satırı bağımsız değişkeni yüklenmesini gerektirmez. Uygulama belgelerinize bakın.<br><br>Komut satırı bağımsız değişkenleri gerekiyorsa, bu bağımsız değişkenler Ad=Değer çiftleri halinde girilmelidir (örneğin, TRANSFORMS=custom_transform.mst).<br><br>Bu uygulama türü yalnızca Intune istemci yazılımı çalıştıran bilgisayarlar için geçerlidir.|
 |**Android için Uygulama Paketi (&#42;.apk)**|Android uygulamalarını dağıtmak için geçerli bir .apk paketiniz olmalıdır.|
 |**iOS için Uygulama Paketi (&#42;.ipa)**|iOS uygulamalarını dağıtmak için geçerli bir .ipa paketiniz olmalıdır.<br><br>.ipa paketi Apple tarafından imzalanmalı ve sağlama profilinde belirtilen sona erme tarihi geçerli olmalıdır. Intune, kuruluş sertifikası iOS uygulamalarını dağıtabilir.<br><br>Tüm Apple geliştirici sertifikası uygulamaları desteklenmez.<br><br>Şirketiniz iOS Geliştirici Kurumsal Programı'na kayıtlı olmalıdır.<br><br>Kuruluşunuzun güvenlik duvarının iOS sağlama ve sertifika web sitelerine erişim izni verdiğinden emin olun.<br><br>Uygulamayla birlikte bildirim dosyası (.plist) dağıtmanız gerekmez.|
-|**Windows Phone uygulama paketi (&#42;.xap, .appx, .appxbundle)**|Uygulamaları dağıtmak için, bir kurumsal mobil kod imzalama sertifikası gerekir. Ayrıntılar için bkz. [Microsoft Intune ile Windows Phone yönetimini ayarlama](set-up-windows-phone-management-with-microsoft-intune.md).|
+|**Windows Phone uygulama paketi (&#42;.xap, .appx, .appxbundle)**|Uygulamaları dağıtmak için, bir kurumsal mobil kod imzalama sertifikası gerekir. Ayrıntılar için bkz. [Microsoft Intune ile Windows Phone yönetimini ayarlama](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows uygulama paketi (.appx, .appxbundle)**|Uygulamaları dağıtmak için, bir kurumsal mobil kod imzalama sertifikası gerekir. Ayrıntılar için bkz. [Microsoft Intune ile Windows cihazı yönetimini ayarlama](set-up-windows-device-management-with-microsoft-intune.md).|
 |**MDM aracılığıyla Windows Installer (&#42;.msi)**|Bu uygulamayı Windows Installer tabanlı uygulamalar oluşturmak ve Windows 10 çalıştıran kayıtlı bilgisayarlara dağıtmak için kullanırsınız. Bu bilgisayarlar, mobil cihaz yönetimi (MDM) üzerinden yönetilir.<br /><br />Yalnızca .msi uzantılı tek bir dosyayı karşıya yükleyebilirsiniz.<br><br>Dosyanın ürün kodu ve ürün sürümü, uygulama algılama için kullanılır.<br><br>Uygulamanın varsayılan yeniden başlatma davranışı kullanılır. Intune bunu denetlemez.<br><br>Tek bir kullanıcı için kullanıcı başına MSI paketleri yüklenir.<br><br>Cihazdaki tüm kullanıcılar için makine başına MSI paketleri yüklenir.<br><br>Çift modlu MSI paketleri şu anda yalnızca cihazdaki tüm kullanıcılar için yüklenir.<br><br>Her sürümün MSI ürün kodu aynı olduğunda uygulama güncelleştirmeleri desteklenir.<br>
 Tüm yazılım yükleyicisi uygulama türleri bulut depolama alanınıza yüklenir.
