@@ -1,0 +1,43 @@
+---
+title: "macOS cihazları için Intune özel ayarları"
+titleSuffix: Intune Azure preview
+description: "Intune Azure önizlemesi: macOS özel profilinde kullanabileceğiniz ayarları öğrenin."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 02/15/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
+ms.reviewer: heenamac
+ms.suite: ems
+ms.custom: intune-azure
+translationtype: Human Translation
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 84902bb0e7ea67b388debd8bd7992d396d981a7b
+ms.lasthandoff: 02/18/2017
+
+
+---
+
+# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune’da macOS cihazları için özel ayarlar
+
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+[Apple Configurator aracını](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12) kullanarak oluşturduğunuz ayarları macOS cihazlarına dağıtmak için Microsoft Intune macOS özel profilini kullanın. Bu araç, bu cihazların işlemini denetleyen ve bunları bir yapılandırma profiline dışarı aktaran birçok ayar oluşturmanızı sağlar. Daha sonra bu yapılandırma profilini bir Intune macOS özel profiline aktarabilir ve ayarları kuruluşunuzdaki kullanıcılara ve cihazlara atayabilirsiniz.
+
+Bu özellik, diğer Intune profil türleriyle yapılandırılamayan macOS ayarlarını dağıtmanıza olanak tanır.
+
+
+1. Başlamak için, [Microsoft Intune’da özel cihaz ayarlarını yapılandırma](how-to-configure-custom-settings.md) başlığı altında verilen yönergeleri kullanın.
+2. **Profil Oluştur** dikey penceresinde aşağıdakileri belirtin:
+
+- **Özel yapılandırma profili adı** - Cihazda ve Intune durum bilgisinde gösterileceği haliyle ilke için bir ad girin.
+- **Yapılandırma profili dosyası** - Apple Configurator’ı kullanarak oluşturduğunuz yapılandırma profiline gidin.
+Apple Configurator aracından dışarı aktardığınız ayarların, macOS özel ilkesini dağıttığınız cihazlardaki macOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların nasıl çözümleneceği hakkında bilgi için, [Apple Developer](https://developer.apple.com/) web sitesinde **Yapılandırma Profili Başvurusu** ve **Mobil Cihaz Yönetim Protokolü Başvurusu** öğelerini arayın.
+
+İçeri aktardığınız dosya, dikey pencerenin **Dosya içeriği** alanında görüntülenir.
+

@@ -1,5 +1,5 @@
 Microsoft Intune şirket portalı
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Şirket kaynak erişimi sorunlarını giderme | Microsoft Intune"
+title: "Şirket kaynak erişimi sorunlarını giderme | Microsoft Docs"
 description: "Bu konu başlığı altındaki hata ve durum kodları, kaynak erişimi sorunlarını gidermenize yardımcı olur."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
-ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 2640df8eb3f8505320f965ee1f6edbf5d4f8cfe7
 
 
 ---
 
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune ile şirket kaynak erişimi sorunlarını giderme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune eylemi bir hata kodu döndürdüğünde sorunları gidermenize yardımcı olması için bu konu başlığı altında verilen hata ve durum kodlarını kullanın.
 
 Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
@@ -363,7 +367,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016345907|0x87D100CD|Kaynak, içeriğini GÜNCELLEŞTİRMELİDİR. Talebi gönderene, güncel sürümü edinmek için içeriğinin eşitlenmesi GEREKTİĞİ bildiriliyor.|
 |-2016345908|0x87D100CC|İstek başarıyla tamamlandı ancak hiçbir veri döndürülmüyor. Yanıt kodu aynı zamanda, hedefte içerik olmadığında bir Get’e yanıt olarak da döndürülür.|
 |-2016345909|0x87D100CB|Yetkili olmayan yanıt. Hedeflenenden farklı bir varlık isteğe yanıt veriyor. Yanıt yalnızca istek yetkili hedeften 200 yanıt kodu ile sonuçlanacaksa döndürülür.|
-|-2016345910|0x87D100CA| İşleme için kabul edildi. Bir uygulamanın uzaktan yürütmesini çalıştırma veya kullanıcı ya da uygulamaya bildirme isteği başarıyla gerçekleştirildi.|
+|-2016345910|0x87D100CA|İşleme için kabul edildi. Bir uygulamanın uzaktan yürütmesini çalıştırma veya kullanıcı ya da uygulamaya bildirme isteği başarıyla gerçekleştirildi.|
 |-2016345911|0x87D100C9|İstenen öğe eklendi.|
 |-2016345912|0x87D100C8|SyncML komutu başarıyla tamamlandı.|
 |-2016346011|0x87D10065|Belirtilen SyncML komutu yürütülüyor, ancak henüz tamamlanmadı.|
@@ -373,6 +377,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

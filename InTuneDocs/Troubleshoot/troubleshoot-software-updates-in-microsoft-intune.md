@@ -1,10 +1,11 @@
 ---
-title: "Yazılım güncelleştirmesi sorunlarını giderme | Microsoft Intune"
+title: "Yazılım güncelleştirmesi sorunlarını giderme | Microsoft Docs"
 description: "Microsoft Intune’da yazılım güncelleştirmesi sorunlarını çözün."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +13,23 @@ ms.technology:
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 906371576609152aaf61e033da5ce60744ddd255
-ms.openlocfilehash: 07e5737b75870319445f5af4d7038916b155d083
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
 
 
 ---
 
-# Microsoft Intune’da yazılım güncelleştirmesi sorunlarını giderme
+# <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune’da yazılım güncelleştirmesi sorunlarını giderme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune’da karşılaşabileceğiniz yazılım güncelleştirmesi sorunlarını çözmek için bu bölümdeki bilgileri kullanın.
 
 Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
-## Güncelleştirme aracısı hata kodları
+## <a name="update-agent-error-codes"></a>Güncelleştirme aracısı hata kodları
 
 Aşağıdaki tabloda Intune **Güncelleştirme Aracısı** hata kodları listelenmektedir. Belirli bir kodu bu tabloda bulamazsanız, bkz. [Windows Update Aracısı Sonuç Kodları](http://go.microsoft.com/fwlink/?LinkID=221542).
 
@@ -240,7 +245,7 @@ Aşağıdaki tabloda Intune **Güncelleştirme Aracısı** hata kodları listele
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|Bekleyen bir zorunlu yeniden başlatma olduğundan yükleme başarısız oldu.|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|İndirme iptal edildi.|
 
-## Yenisiyle değiştirilmiş çok fazla güncelleştirmesi olan Windows 7 tabanlı bilgisayarlarda Microsoft Intune konsoluna raporlama durduruluyor
+## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>Yenisiyle değiştirilmiş çok fazla güncelleştirmesi olan Windows 7 tabanlı bilgisayarlarda Microsoft Intune konsoluna raporlama durduruluyor
 **Sorun**: Microsoft Intune istemcilerinin aşağıdaki belirtilerden en az biriyle karşılaştığı durumlar yaşayabilirsiniz:
 - Aniden Microsoft yönetim konsoluna raporlamayı durduruyorlar.  
 - Yüksek CPU kullanımıyla karşılaşıyorlar.
@@ -259,11 +264,11 @@ Yenisiyle değiştirilmiş güncelleştirmeler uzun bir süre reddedilmezse, bu 
 
 Buna ek olarak, Windows 7 çalıştırıyorsanız şu güncelleştirmeyi yüklediğinizden emin olun:[3050265 Windows 7 için Windows Update İstemcisi: Haziran 2015](https://support.microsoft.com/kb/3050265).
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 
