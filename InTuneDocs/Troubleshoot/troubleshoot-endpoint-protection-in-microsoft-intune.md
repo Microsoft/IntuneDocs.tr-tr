@@ -1,10 +1,11 @@
 ---
-title: "Endpoint Protection sorunlarını giderme | Microsoft Intune"
+title: "Endpoint Protection Sorunlarını Giderme | Microsoft Docs"
 description: "Microsoft Intune Endpoint Protection’ı kullanarak sorunları çözün."
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,21 +13,23 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 71f976fba252950fd9a8818fb27fbbb294369894
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
 
-# Troubleshoot Endpoint Protection in Microsoft Intune
+# <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
-Microsoft Intune Endpoint Protection kullanırken karşılaşabileceğiniz sorunları gidermek için bu bölümdeki bilgileri kullanın.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Microsoft Intune Endpoint Protection kullanırken karşılaşabileceğiniz sorunları gidermek için bu bölümdeki bilgileri kullanın. Ayrıca, [Windows Defender sorunlarını giderme](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10) hakkındaki bilgileri de gözden geçirebilirsiniz.
 
 Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
-
-### Endpoint Protection hata iletileri
+### <a name="endpoint-protection-error-messages"></a>Endpoint Protection hata iletileri
 Bu bölümde, [Intune yönetim konsolundaki](https://manage.microsoft.com) **Endpoint Protection Durumu** bölmesinde görüntülenen aşağıdaki hatalar ve uyarılar için olası nedenler ve çözümler açıklanmaktadır.
 
 |Durum öğesi|Olası nedenler|Olası çözümler|
@@ -44,11 +47,11 @@ Bu bölümde, [Intune yönetim konsolundaki](https://manage.microsoft.com) **End
 |**Hızlı taramanın süresi doldu**|14 gün boyunca bir hızlı tarama yapılmadı. Bu durum bir hızlı tarama sırasında bilgisayarın yeniden başlatılmasıyla oluşabilir.|Hızlı taramanın süresi dolduysa, [Microsoft Intune bilgisayar istemcisi ile ortak Windows bilgisayarı yönetim görevleri](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client) konu başlığı altında verilen bilgileri kullanarak [Intune yönetim konsolundan](https://manage.microsoft.com) tek seferlik bir hızlı tarama çalıştırabilir veya yinelenen hızlı taramalar zamanlayabilirsiniz.|
 |**Başka bir uç nokta koruma uygulaması çalışıyor**|Başka bir uç nokta koruma uygulaması çalışıyor ve bilgisayarın sistem durumu iyi.|Varsayılan olarak, başka bir uç nokta koruması yüklüyse ve Intune bu uygulamayı algılarsa, uç nokta koruması otomatik olarak kendini devre dışı bırakır. Intune diğer uç nokta koruma uygulamasını algılamazsa, uç nokta koruması etkin kalır. Daha fazla bilgi için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
 
-### Sonraki adımlar
+### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

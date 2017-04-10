@@ -1,11 +1,11 @@
 ---
-title: "E-posta profilleriyle ilgili sorunları giderme | Microsoft Intune"
+title: "E-posta profilleriyle ilgili sorunları giderme | Microsoft Docs"
 description: "E-posta profili sorunları, bu sorunları giderme ve çözme."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,24 @@ ms.technology:
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
-ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
 
 
 ---
 
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune’da e-posta profilleriyle ilgili sorunları giderme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Burada bazı e-posta profili sorunları listelenir, bunların nasıl giderileceği ve çözüleceği açıklanır.
 
 Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
 
-## <a name="unable-to-send-images-from-email-account"></a>E-posta hesabından resim gönderilemedi
+## <a name="unable-to-send-images-from--email-account"></a>E-posta hesabından resim gönderilemedi
 Otomatik olarak yapılandırılan e-posta hesaplarına sahip kullanıcılar, cihazlarından resim veya görüntü gönderemiyor.
 **Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver** seçeneği etkinleştirilmediğinde bu durum ortaya çıkar.
 
@@ -61,7 +65,7 @@ Intune tarafından profil sağlanmadan önce kullanıcı bir e-posta profili yü
 
 Samsung KNOX’un profili algılamak için konak adını kullanmaması nedeniyle, farklı konaklarda aynı e-posta adresine dağıtmak üzere birden çok e-posta profili oluşturursanız bunlar birbirinin üzerine yazılacağından, bunu yapmamanızı öneririz.
 
-## <a name="error-0x87d1fde8-for-knox-standard-device"></a>KNOX Standard cihazı için 0x87D1FDE8 hatası
+## <a name="error--0x87d1fde8-for-knox-standard-device"></a>KNOX Standard cihazı için 0x87D1FDE8 hatası
 **Sorun**: Çeşitli Android cihazlarda Samsung KNOX Standard için Exchange Active Sync e-posta profilini oluşturduktan ve dağıttıktan sonra, cihaz özellikleri &gt; ilke sekmesinde **0x87D1FDE8** hatası veya **düzeltme başarısız** hatası bildirilir.
 
 Samsung KNOX için EAS profili yapılandırmanızı ve kaynak ilkeyi gözden geçirin. Samsung Notes eşitleme seçeneği artık desteklenmez ve profilinizde bu seçenek belirtilmemelidir. Cihazların ilkeyi işlemesi için yeterli bir süre beklendiğinden (24 saate kadar) emin olun.
@@ -71,6 +75,6 @@ Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

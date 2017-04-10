@@ -1,8 +1,9 @@
 ---
-title: "Koşullu erişim sorunlarını giderme | Microsoft Intune"
+title: "Koşullu erişim sorunlarını giderme | Microsoft Docs"
 description: "Kullanıcıların, kaynaklara Intune koşullu erişimi üzerinden erişemediklerinde ne yapacakları açıklanır."
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -12,14 +13,18 @@ ms.technology:
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
 
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Genellikle, bir kullanıcı e-posta veya SharePoint’a erişmeye çalışır ve kaydolmak için bir istem alır. Bu istem, kullanıcıyı şirket portalına götürür.
 
@@ -30,11 +35,11 @@ Bu konuda, kullanıcıların, kaynaklara Intune koşullu erişim üzerinden eri�
 
 İşe koşullu erişim sağlamak için, aşağıdaki koşullar gerekir:
 
--   Cihazın Intune tarafından yönetilmelidir
--   Cihaz Azure Active Directory’ye (AAD) kaydedilmelidir. Normal koşullar altında bu kayıt, Intune kaydı sırasında otomatik olarak gerçekleşir
--   Cihaz, cihazın ve cihazın kullanıcısı için Intune uyumluluk ilkelerinizle uyumlu olmalıdır.  Başka bir uyumluluk ilkesi yoksa, Intune kaydı yeterlidir.
--   Kullanıcı postayı Outlook yerine cihazın yerel posta istemcisi aracılığıyla alıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir.     Bu; iOS, Windows Phone ve Android/KNOX Standard cihazlarında otomatik olarak gerçekleşir.
--   Intune Exchange Connector’ınız düzgün şekilde yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da Exchange Connector sorunlarını giderme](troubleshoot-exchange-connector.md).
+-    Cihazın Intune tarafından yönetilmelidir
+-    Cihaz Azure Active Directory’ye (AAD) kaydedilmelidir. Normal koşullar altında bu kayıt, Intune kaydı sırasında otomatik olarak gerçekleşir
+-    Cihaz, cihazın ve cihazın kullanıcısı için Intune uyumluluk ilkelerinizle uyumlu olmalıdır.  Başka bir uyumluluk ilkesi yoksa, Intune kaydı yeterlidir.
+-    Kullanıcı postayı Outlook yerine cihazın yerel posta istemcisi aracılığıyla alıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir.     Bu; iOS, Windows Phone ve Android/KNOX Standard cihazlarında otomatik olarak gerçekleşir.
+-    Intune Exchange Connector’ınız düzgün şekilde yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da Exchange Connector sorunlarını giderme](troubleshoot-exchange-connector.md).
 
 Bu koşullar, Azure Yönetim Portalı’nda ve cihaz envanter raporunda her cihaz için görüntülenebilir.
 
@@ -49,9 +54,16 @@ Bu koşullar, Azure Yönetim Portalı’nda ve cihaz envanter raporunda her ciha
  -  Uyumluluk bilgilerinin bir cihaz için kaydolması biraz zaman alabilir. Birkaç dakika bekleyin ve tekrar deneyin.
  -  iOS aygıtları için:
      -   Kullanıcı tarafından oluşturulmuş bir e-posta profili, Intune yöneticisinin oluşturduğu bir profili engeller. Bu, iOS kullanıcıları genellikle bir e-posta profili oluşturduğundan, ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, kullanıcıyı, el ile yapılandırılmış e-posta profilleri nedeniyle uyumlu olmadıkları konusunda bilgilendirir ve kullanıcıdan, o profili kaldırmasını ister. Kullanıcı, Intune profilinin dağıtılabilmesi için, e-posta profilini kaldırmalıdır. Sorunu önlemek için, kullanıcılarınızdan bir e-posta profili yüklemeden kayıt olmalarını ve Intune’un profili dağıtmasına izin vermelerini isteyin.
-     -   Bir iOS cihazı uyumluluk denetim durumunda takılı kalarak, kullanıcının başka bir giriş yapma işlemi başlatmasını engelleyebilir. Şirket portalını yeniden başlatmak bunu düzeltebilir ve uyumluluk durumu cihazın Intune’daki durumunu yansıtır. Bir cihaz eşitlemesinden tüm veriler toplandıktan sonra, uyumluluk denetimi hızlıdır; ortalama olarak yarım saniyenin altındadır.
+     -     Bir iOS cihazı uyumluluk denetim durumunda takılı kalarak, kullanıcının başka bir giriş yapma işlemi başlatmasını engelleyebilir. Şirket portalını yeniden başlatmak bunu düzeltebilir ve uyumluluk durumu cihazın Intune’daki durumunu yansıtır. Bir cihaz eşitlemesinden tüm veriler toplandıktan sonra, uyumluluk denetimi hızlıdır; ortalama olarak yarım saniyenin altındadır.
 
         Genelde cihazların bu durumda kalmalarının nedeni, hizmete bağlanmada güçlük çekmeleri veya eşitlemenin uzun sürmesidir.  Sorun farklı ağ yapılandırmalarında (hücresel, Wi-Fi, VPN), cihaz yeniden başlatmalarından sonra ve SSP’nin cihazda güncel olduğu doğrulandıktan sonra da devam ederse, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md)’da anlatıldığı şekilde Microsoft Desteği ile iletişim kurun.
+
+ - Android cihazlar için:
+     - Belirli Android cihazları şifrelenmiş görünüyor olabilir, ancak Şirket Portalı uygulaması bu cihazları şifrelenmemiş olarak tanır. 
+    
+        -    Bu durumda olan cihazlarda kullanıcının güvenli başlangıç geçiş kodu ayarlaması gerekir. Kullanıcı, Şirket Portalı uygulamasında, cihaz için başlangıç geçiş kodu ayarlamasının istendiği bir bildirim görür. Cihaz bildirimine dokunup, geçerli PIN veya parolayı onayladıktan sonra, **Cihazı başlatmak için PIN gerektir** seçeneğini **Güvenli başlangıç** ekranında seçin. Ardından, Şirket Portalı uygulamasında cihazın **Uyumluluk Denetimi** düğmesine dokunun. Cihazın artık şifrelenmiş olarak algılanması gerekir.
+    
+        -     Bazı cihaz üreticileri, kullanıcı tarafından ayarlanan gizli PIN yerine varsayılan bir PIN kullanarak cihazları şifreler. Intune, varsayılan PIN kullanılarak yapılan şifrelemeyi güvensiz olarak tanır, çünkü bu şifreleme yöntemi cihaza fiziksel erişimi olan kötü amaçlı kullanıcılar nedeniyle cihazdaki verileri riske atabilir. Durum buysa, [uygulama koruma ilkeleri](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kullanmayı düşünün.
 
 ## <a name="policy-issues"></a>İlke sorunları
 
@@ -79,7 +91,7 @@ Cihaz, bir etkinleştirme e-postası almadan Koşullu Erişim’den engellenmiş
 - Sendemail etkinliği için Exchange Connector günlüklerine bakın ve hata arayın. Aranacak komuta bir örnek, bildirim hesabından kullanıcı e-postasına SendEmail işlemidir.
 - Exchange Connector cihazı engellemeden önce etkinleştirme e-postasını gönderir. Cihaz çevrimdışıysa, etkinleştirme e-postasını almayabilir. Ayrıca, kullanıcının e-postayı kaçırmasına neden olabileceğinden cihazın e-posta alımının Poll yerine Push kullanılarak mı yapıldığını da denetleyin. Poll yöntemine geçip cihazın e-postayı alıp almadığına bakın.
 
-## <a name="noncompliant-device-not-blocked"></a>Uyumsuz cihaz engellenmiyor
+## <a name="non-compliant-device-not-blocked"></a>Uyumsuz cihaz engellenmiyor
 
 Uyumlu olmayan ancak erişimi olan bir cihazla karşılaşırsanız, aşağıdaki adımları uygulayın.
 
@@ -122,7 +134,7 @@ Exchange Connector günlüklerini görüntülemek için [Sunucu İzleme Görünt
 
     Zaman filtresi (tam eşitleme) olmadan 4 kullanıcının mobil cihaz listesini alma başarıyla tamamlandı. Ayrıntılar: Envanter komutu sonucu - Eşitlenen cihazlar: 0 Komut Kimliği: commandIDGUID' Exchange sistem durumu: 'Sunucu sistem durumu 'Adı: 'PowerShellExchangeServer: <Name=mymailservername>' Durum: Bağlı','
 
--   Hızlı (delta) eşitlemeyi günlüklerde **hızlı eşitleme** ifadesini arayarak bulun.
+-    Hızlı (delta) eşitlemeyi günlüklerde **hızlı eşitleme** ifadesini arayarak bulun.
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next command özel durumları
 **Get next command** özel durumları için Exchange Connector günlüklerine bakın ve bunları Microsoft Desteği’ne verin.
@@ -131,9 +143,9 @@ Exchange Connector günlüklerini görüntülemek için [Sunucu İzleme Görünt
 
 Ayrıntılı günlük kaydını etkinleştirmek için:
 
-1.  Exchange Connector izleme yapılandırma dosyasını açın. Dosya şu konumdadır: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.  Anahtarı şu olan TraceSourceLine’ı (izleme kaynak satırı) bulun: OnPremisesExchangeConnectorService
-3.  **SourceLevel** düğüm değerini, aşağıda gösterildiği gibi **Warning ActivityTracing** (varsayılan) yerine **Verbose ActivityTracing** olarak değiştirin.
+1.    Exchange Connector izleme yapılandırma dosyasını açın. Dosya şu konumdadır: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.    Anahtarı şu olan TraceSourceLine’ı (izleme kaynak satırı) bulun: OnPremisesExchangeConnectorService
+3.    **SourceLevel** düğüm değerini, aşağıda gösterildiği gibi **Warning ActivityTracing** (varsayılan) yerine **Verbose ActivityTracing** olarak değiştirin.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
@@ -155,9 +167,4 @@ Ayrıntılı günlük kaydını etkinleştirmek için:
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
