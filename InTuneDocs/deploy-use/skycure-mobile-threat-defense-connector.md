@@ -36,7 +36,7 @@ Microsoft Intune ile tümleşik çalışan mobil tehdit koruması çözümü Sky
 
 -   Güvenlik açıkları savunması
 
-Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Skycure risk değerlendirmesi temelinde koşullu erişim ilkelerini yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumlu olmayan cihazların şirket kaynaklarına erişimine izin vermek veya erişimini engellemek için bu ilkeler kullanılabilir.
+Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Skycure risk değerlendirmesi temel alan koşullu erişim ilkelerini yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumlu olmayan cihazların şirket kaynaklarına erişimine izin vermek veya erişimini engellemek için bu ilkeler kullanılabilir.
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Intune ve Skycure şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
@@ -126,7 +126,7 @@ Burada, Intune’u Skycure ile tümleştirme işlemini tamamlamak için gereken 
 
 4.  [Skycure uygulamalarını, Microsoft Authenticator’ı ve iOS uygulama yapılandırma ilkesini dağıtma](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
 
-5.  [Intune ile Skycure tümleştirmesini kurma](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+5.  [Intune ile Skycure tümleştirmesi kurma](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 6.  [Intune’da Skycure Mobile Threat Defense’i etkinleştirme](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
