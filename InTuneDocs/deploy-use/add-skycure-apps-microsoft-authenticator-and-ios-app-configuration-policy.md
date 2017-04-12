@@ -52,7 +52,7 @@ Buna ek olarak, kullanıcıların kimliklerinin Azure AD tarafından denetlenebi
 
     ![Intune Yazılım Yayımcısı URL’yi Belirtin](../media/mtp/skycure-add-apps-1.png)
 
-3.  **Yazılım açıklaması** sayfasında, **Yayımcı**, **Ad** ve **Açıklama**’yı girin, **Bunu öne çıkan bir uygulama olarak görüntüleyin ve şirket portalında vurgulayın** öğesini seçin ve **İleri**’ye tıklayın.
+3.  **Yazılım açıklaması** sayfasında, **Yayımcı**, **Ad** ve **Açıklama**’yı girin, **Bunu öne çıkan bir uygulama olarak görüntüle ve şirket portalında vurgula** onay kutusunu seçin ve **İleri**’ye tıklayın.
 
     ![Intune Yazılım Yayımcısı Yazılım açıklaması](../media/mtp/skycure-add-apps-2.png)
 
@@ -66,7 +66,7 @@ Buna ek olarak, kullanıcıların kimliklerinin Azure AD tarafından denetlenebi
 
     ![Intune Yazılım Yayımcısı Yönetilen iOS uygulaması](../media/mtp/skycure-add-apps-3.png)
 
-3.  **Yazılım açıklaması** sayfasında, **Yayımcı**, **Ad** ve **Açıklama**’yı girin, **Bunu öne çıkan bir uygulama olarak görüntüleyin ve şirket portalında vurgulayın** öğesini seçin ve **İleri**’ye tıklayın.
+3.  **Yazılım açıklaması** sayfasında, **Yayımcı**, **Ad** ve **Açıklama**’yı girin, **Bunu öne çıkan bir uygulama olarak görüntüle ve şirket portalında vurgula** onay kutusunu seçin ve **İleri**’ye tıklayın.
 
     ![Intune Yazılım Yayımcısı seçenekleri](../media/mtp/skycure-add-apps-4.png)
 
@@ -82,7 +82,7 @@ Buna ek olarak, kullanıcıların kimliklerinin Azure AD tarafından denetlenebi
 
     ![Intune Yazılım Yayımcısı Yönetilen iOS uygulaması 2](../media/mtp/skycure-add-apps-5.png)
 
-3.  **Yazılım açıklaması** sayfasında, **Yayımcı**, **Ad** ve **Açıklama**’yı girin, **Bunu öne çıkan bir uygulama olarak görüntüleyin ve şirket portalında vurgulayın** öğesini seçin ve **İleri**’ye tıklayın.
+3.  **Yazılım açıklaması** sayfasında, **Yayımcı**, **Ad** ve **Açıklama**’yı girin, **Bunu öne çıkan bir uygulama olarak görüntüle ve şirket portalında vurgula** onay kutusunu seçin ve **İleri**’ye tıklayın.
 
     ![Intune Yazılım Yayımcısı Yönetilen iOS uygulaması 3](../media/mtp/skycure-add-apps-6.png)
 
