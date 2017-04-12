@@ -24,7 +24,6 @@
 ### [Şirket Portalı’nı özelleştirme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Cihazları kaydetme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Yapılandırma sonrası görevleri](get-started/post-configuration-tasks.md)
-## [Intune'a geçiş](get-started/migrate-to-intune.md)
 ## Sonraki adımlar
 ### [Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Veri şifreleme ile şirket verilerini koruma](get-started/protect-data-encryption.md)
