@@ -31,17 +31,16 @@
 ### [MDM yetkilisini ayarlama](enroll-devices/set-mdm-authority.md)
 ## Planlama ve tasarlama
 ### [Bir MDM anında iletme sertifikası alma](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Bir Apple DEP belirteci alma](enroll-devices/get-apple-dep-token.md)
 ### [iOS cihazlarının nasıl kaydedileceğini belirleme](enroll-devices/choose-ios-enrollment-method.md)
 ## Nasıl yapılır
 ### [Kullanıcılara lisansları atama](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Android cihazlarını kaydetme](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### iOS cihazlarını kaydetme
-#### [Kurulum Yardımcısı'nı kullanarak iOS cihazlarını kaydetme](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [Doğrudan kayıt kullanarak iOS cihazlarını kaydetme](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Apple Configurator - Kurulum Yardımcısı](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator - doğrudan kayıt](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Apple Configurator seri numaraları ekleme](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [Cihaz kayıt programını kullanarak iOS cihazlarını kaydetme](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Cihaz kayıt yöneticisini kullanarak cihazları kaydetme](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [Cihaz kayıt yöneticisi](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [MacOS cihazları kaydetme](enroll-devices/enroll-macos-devices.md)
 ### [Windows cihazlarını kaydetme](enroll-devices/enroll-windows-devices.md)
 ### Cihaz kaydını yönetme
