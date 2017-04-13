@@ -74,9 +74,7 @@
 ## [Plan and design](manage-apps/plan-and-design.md) --->
 ## Uygulamaları yönetme
 ### [Uygulamaları ekleme](manage-apps/add-apps.md)
-#### [Android iş kolu uygulamaları](manage-apps/android-lob-app.md)
 #### [Android mağaza uygulamaları](manage-apps/android-store-app.md)
-#### [iOS iş kolu uygulamaları](manage-apps/ios-lob-app.md)
 #### [iOS Store uygulamaları](manage-apps/ios-store-app.md)
 #### [Web uygulamaları](manage-apps/web-app.md)
 #### [Windows Phone 8.1 mağaza uygulamaları](manage-apps/windows-phone-8-1-store-app.md)
