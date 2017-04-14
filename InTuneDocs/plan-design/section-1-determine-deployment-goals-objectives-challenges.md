@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
 
 İyi bir dağıtım planı, kuruluşunuzun dağıtım hedeflerini, amaçlarını ve olası zorlukları belirlemekle başlar. Her kuruluş ayrıdır ve hepsinin kendine özgü dağıtım hedefleri, amaçları ve zorlukları vardır. Her alanı daha ayrıntılı bir şekilde açıklayacağız.
 
-## <a name="deployment-goals"></a>Dağıtım Hedefleri
+## <a name="deployment-goals"></a>Dağıtım hedefleri
 
 Dağıtım hedefleri, bir kuruluşta Microsoft Intune uygulanarak amaçlanan uzun vadeli başarılardır. Aşağıda, her birinin açıklaması ve iş değeriyle birlikte bir kuruluşun Intune dağıtım amaçlarına örnekler verilmiştir.
 
@@ -55,7 +56,7 @@ Dağıtım hedefleri, bir kuruluşta Microsoft Intune uygulanarak amaçlanan uzu
 
     -    **İş değeri:** Kaynakların verimli kullanımı, işletmenin diğer alanlara yatırım yapmasını, daha etkili bir şekilde rekabet etmesini ve müşterilere daha iyi hizmet vermesini sağlar.
 
-## <a name="deployment-objectives"></a>Dağıtım Amaçları
+## <a name="deployment-objectives"></a>Dağıtım amaçları
 
 Dağıtım amaçları, bir kuruluşun Microsoft Intune dağıtım hedeflerine ulaşmak için gerçekleştirebileceği eylemlerdir. Aşağıda bir kuruluşun dağıtım amaçları ve her birine nasıl ulaşılacağına ilişkin bazı örnekler verilmiştir.
 
@@ -75,7 +76,7 @@ Dağıtım amaçları, bir kuruluşun Microsoft Intune dağıtım hedeflerine ul
 <br>
     -   **Yürütme:** Uygun olduğunda kurumsal verileri ve kaynakları uzaktan silme yeteneği sağlaması için cihazları Microsoft Intune’a kaydedin ve Microsoft Intune ile yönetin.
 
-## <a name="deployment-challenges"></a>Dağıtım Zorlukları
+## <a name="deployment-challenges"></a>Dağıtım zorlukları
 
 Dağıtım zorlukları bir kuruluş için önde gelen sorunlardır ve dağıtım üzerinde olumsuz bir etkiye sahip olabilir. Bunlar bazen önceki projelerinde yaşadıkları ve kaçınmak istedikleri sorunlarla ilgili olabilir veya mevcut dağıtım çalışmasıyla ilgili yeni sorunları ifade edebilir. Aşağıda, bir kuruluşun Microsoft Intune dağıtım zorluklarına bazı örnekler, yapılması mümkün olan hafifletmelerle birlikte verilmiştir.
 
@@ -91,12 +92,7 @@ Dağıtım zorlukları bir kuruluş için önde gelen sorunlardır ve dağıtım
 <br>
     -   **Hafifletme:** Projenize geçmek için heyecanlı olsanız da, açıkça tanımlanmış hedefleriniz ve amaçlarınız olduğundan emin olun. Bunları kullanıcıların kuruluşunuzun neden Intune’u seçtiğini anlamasına yardımcı olması için tüm farkındalık ve eğitim faaliyetlerine ekleyin.
 
-## <a name="next-section"></a>Sonraki Bölüm
+## <a name="next-steps"></a>Sonraki adımlar
 
 Artık dağıtım hedeflerinizi, amaçlarınızı ve olası zorlukları tanımladığınıza göre bir sonraki bölüme geçebiliriz: [Kullanım örneği senaryolarını tanımlama](section-2-identify-use-case-scenarios.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
