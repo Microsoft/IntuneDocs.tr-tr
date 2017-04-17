@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ Aşağıdaki platformların yönetimini ayarlayın:
 - [iOS ve Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [Windows bilgisayarlar ve dizüstü bilgisayarlar](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile ve Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile ve Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windows PC'ler ve dizüstü bilgisayarlar](manage-windows-pcs-with-microsoft-intune.md) (Intune istemci yazılımı)
 
 [Şirkete ait cihazların kaydını](manage-corporate-owned-devices.md) da etkinleştirebilirsiniz.
 
@@ -170,7 +170,7 @@ Bir arada bulunma kullanıyorsanız, hem Intune hem de Office 365 onay listeleri
 MDM yetkilinizi sıfırlamak için Microsoft Desteği’ne başvurmadan önce aşağıdaki adımları tamamlayın.
 
 - Tüm cihazları Intune yönetici konsolundan devre dışı bırakın. Bir cihazı, cihazdan devre dışı bırakmaya çalışmayın. 
-- Hizmetten Hizmete Bağlayıcıyı silin (**Yönetim** > **Mobil Cihaz Yönetimi** > **Microsoft Exchange** altında) veya kurduysanız Exchange Connector’ı devre dışı bırakın. 
+- Hizmetten Hizmete Bağlayıcıyı silin (**Yönetim** > **Mobil Cihaz Yönetimi** > **Microsoft Exchange** altında) veya kurduysanız Exchange Connector’ı devre dışı bırakın.
 - Cihaz Kayıt Yöneticisi rolünü **Yönetici** > **Cihaz Kayıt Yöneticisi** kısmından kaldırın.
 - Cihaz Grubu Eşlemesini **Yönetici** > **Mobil Cihaz Yönetimi** > **Cihaz Grubu Eşlemesi** kısmından kapatın.
 - Dışarıdan yükleme anahtarlarını **Yönetici** > **Mobil Cihaz Yönetimi** > **Windows** > **Dışarıdan Yükleme Anahtarları** kısmından silin.
@@ -187,7 +187,7 @@ MDM yetkilinizi sıfırlamak için Microsoft Desteği’ne başvurmadan önce a�
 - Intune Kullanıcı Grubundan tüm kullanıcıları kaldırın. Intune aboneliğini boş bir kullanıcı koleksiyonuna işaret edin veya hedeflenen koleksiyondan tüm kullanıcıları kaldırın.  Kullanıcıların kaldırıldığını CloudUserSync.log içinde onaylayın. 
 - APNs sertifikasını temizlemek için iOS platformunun işaretini kaldırın.
 - MDM cihazlarına yönelik tüm yayımlanan uygulamaları silin.
-- MDM cihazlarına yönelik tüm ilkeleri silin. 
+- MDM cihazlarına yönelik tüm ilkeleri silin.
 - Configuration Manager konsolundan (yalnızca R2 SP1 veya altı için geçerlidir) Windows Intune Bağlayıcısını kaldırın.
 -Aboneliğe sağ tıklayıp **Sil**’i seçerek Intune aboneliğini kaldırın.
 - SMS Executive Hizmetini yeniden başlatın.
@@ -196,18 +196,18 @@ MDM yetkilinizi sıfırlamak için Microsoft Desteği’ne başvurmadan önce a�
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Office 365 olan MDM yetkilisini Configuration Manager olarak sıfırlama
 
 1. [https://protection.office.com](https://protection.office.com) adresine gidin.
-2. **Güvenlik İlkeleri** sekmesine tıklayıp **Cihaz Yönetimi**’ni seçin. 
+2. **Güvenlik İlkeleri** sekmesine tıklayıp **Cihaz Yönetimi**’ni seçin.
 3. **Seçmeli Silme**’yi seçerek tüm cihazları devre dışı bırakın. Bir cihazı, cihazdan devre dışı bırakmaya çalışmayın. Seçmeli silme devre dışıysa, başka bir eylem gerekmez.
-4. **Güvenlik İlkeleri** sekmesini ve **Cihaz Güvenlik İlkeleri**’ni seçin. 
+4. **Güvenlik İlkeleri** sekmesini ve **Cihaz Güvenlik İlkeleri**’ni seçin.
 5. Mevcut tüm ilkeler için **Sil**’i seçin. İlkeler bekleme durumundaysa, başka bir eylem gerekmez.
 
 >[!NOTE]
->iOS APsN sertifikası silinemez ve hesaba iliştirilmiş olarak kalır. 
+>iOS APsN sertifikası silinemez ve hesaba iliştirilmiş olarak kalır.
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>MDM yetkilisi sıfırlamaları için sonraki adımlar
 
-Microsoft Desteği geçerli onay listesindeki öğeleri doğruladıktan sonra, MDM yetkilisini sıfırlama işlemi üç iş gününe kadar sürebilir ancak genellikle bir gün içinde gerçekleşir. 
+Microsoft Desteği geçerli onay listesindeki öğeleri doğruladıktan sonra, MDM yetkilisini sıfırlama işlemi üç iş gününe kadar sürebilir ancak genellikle bir gün içinde gerçekleşir.
 
 >[!IMPORTANT]
->Microsoft Desteği sıfırlama işleminin başarıyla tamamlandığını doğrulayana kadar aboneliğinizi yapılandırmayı denemeyin! Erken yapılandırma bozulmaya neden olabilir ve/veya Intune hizmetini kullanma yeteneğinizi etkileyebilir. 
+>Microsoft Desteği sıfırlama işleminin başarıyla tamamlandığını doğrulayana kadar aboneliğinizi yapılandırmayı denemeyin! Erken yapılandırma bozulmaya neden olabilir ve/veya Intune hizmetini kullanma yeteneğinizi etkileyebilir.
 

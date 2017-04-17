@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e75ab41176f2aa1feac98fcf067349b132d4d61b
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
+ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -30,9 +30,6 @@ ms.lasthandoff: 02/18/2017
 iOS uygulama deposu, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak sağlar. Bu durum, satın alınan uygulamaların birden fazla kopyasın izlemeye yönelik yönetim yükünü azaltmanıza yardımcı olabilir.
 
 Microsoft Intune lisans bilgilerini uygulama mağazasından içeri aktararak, kaç lisans kullandığınızı izleyerek ve sahip olduğunuzdan fazla uygulama kopyasını yüklemenizi önleyerek, bu program aracılığıyla satın aldığınız uygulamaları yönetmenize yardımcı olur.
-
-> [!Important]
-> Intune, şu anda iOS İş için Toplu Satın Alma Programı (VPP) uygulama lisanslarını cihazlara değil kullanıcılara atamaktadır. Bu nedenle, kullanıcıların uygulamayı yüklemek için Apple Kimliği parolalarını girmeleri gerekir.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>iOS cihazları için toplu satın alınan uygulamaları yönetme
 [Apple İş için Toplu Satın Alma Programı](http://www.apple.com/business/vpp/) veya [Apple Eğitim için Toplu Satın Alma Programı](http://volume.itunes.apple.com/us/store) aracılığıyla, iOS uygulamaları için birden çok lisans satın alırsınız. Buna Apple web sitesinden bir Apple VPP hesabının ayarlanması ve Apple VPP belirtecinin Intune’a yüklenmesi dahildir.  Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz.
@@ -71,9 +68,9 @@ Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
 1. **Uygulamaları Yönet** iş yükünde, **Yönet** > **Lisanslı Uygulamalar**’ı seçin.
 2. Uygulama listesi dikey penceresinde atamak istediğiniz uygulamayı seçin ve sonra da '**...**' > **Grupları Ata**’yı seçin.
 3. <*uygulama adı*> - **Atanan Gruplar** dikey penceresinde **Yönet** > **Atanan Gruplar**’ı seçin.
-4. **Grupları Ata**’yı seçin, sonra da **Grup seç** dikey penceresinde uygulamayı atamak istediğiniz Azure AD gruplarını seçin.
-**Gerekli** atama eylemini seçmelisiniz. Kullanılabilir yüklemeler şu anda desteklenmiyor.
-5. İşiniz bittiğinde **Kaydet**’i seçin.
+4. **Grupları Ata**'yı seçin, sonra da **Grup seç** dikey penceresinde uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
+**Gerekli** atama eylemini seçmelisiniz. Kullanılabilir yüklemeler şu anda desteklenmiyor. Ayrıca cihaz grubuna atamalar yalnızca Ocak 2017'den sonra oluşturulan yeni kiracılar için yapılabilir. Kiracınız bu tarihten önce oluşturulduysa ve VPP uygulamalarını cihaz gruplarına atama seçeneğini kullanamıyorsanız Intune destek ekibiyle iletişime geçin.
+5. İşiniz bittikten sonra **Kaydet**’i seçin.
 
 Uygulama atamalarını izlemenize yardımcı olacak bilgiler için bkz. [Uygulamaları izleme](monitor-apps.md).
 
