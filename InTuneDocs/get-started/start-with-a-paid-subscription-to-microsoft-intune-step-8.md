@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: a2f8067bc169147a60db582d796631bea1ea5a8d
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Bu konuda bir Intune yöneticisinin mobil cihaz kaydını nasıl etkinleştirileceği açıklanır. Telefonunuzda Intune’u kullanırken yardım almak için bkz. [İşleri tamamlamak için yönetilen cihazları kullanma](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions). 
+Bu konuda bir Intune yöneticisinin mobil cihaz kaydını nasıl etkinleştirileceği açıklanır. Telefonunuzda Intune’u kullanırken yardım almak için bkz. [İşleri tamamlamak için yönetilen cihazları kullanma](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Intune ile mobil cihaz yönetimini ayarlamak için öncelikle hesabınızla ilişkilendirilmiş olan cihazları yönetebilecek hizmeti tanımlayan *mobil cihaz yönetimi yetkilisini* ayarlamanız gerekir. Bu kılavuzda Intune hizmetini System Center Configuration Manager'ın yerine kullanacağınız kabul edilmektedir. MDM yetkilisi ayarlandıktan sonra cihaz platformları için yönetimi etkinleştirebilir ve Şirket Portalı uygulamasıyla cihazlarınızı kaydedebilirsiniz.
 
@@ -49,9 +50,9 @@ iOS, Mac ve Android for Work cihazları için kayıt işleminin etkinleştiriler
 
 Yönetmek istediğiniz cihaz platformu için cihaz kaydını etkinleştirin. Platforma bağlı olarak farklı gereksinimler bulunur:
 
--  [iOS ve macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--  [Window bilgisayar](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--  [Window 10 Mobile ve Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [iOS ve macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Window 10 ve Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [Window PC](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) (Intune yazılım istemcisi)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
 Kayıt etkinleştirildikten sonra kullanıcılar Şirket Portalı uygulamasını cihazlarına indirerek cihaz kayıt işlemini tamamlayabilirler.
@@ -60,18 +61,12 @@ Kayıt etkinleştirildikten sonra kullanıcılar Şirket Portalı uygulamasını
 Aşağıdakiler de dahil olmak üzere çeşitli [şirkete ait cihaz kaydı](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices) senaryolarını da etkinleştirebilirsiniz:
 - [Apple Cihaz Kaydı Programı](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Apple Configurator Kurulum Yardımcısı kaydı](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Apple Configurator Kurulum Yardımcısı kaydı](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Apple Configurator ile doğrudan kayıt](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [Cihaz Kayıt Yöneticisi](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Tebrikler! *Intune hızlı başlangıç kılavuzunun* son adımını da tamamlamış oldunuz. Artık ilk yapılandırmanız tamamlandığına göre, ek MDM işlevselliğini etkinleştirmeyi göz önünde bulundurabilirsiniz.
 
 >[!div class="step-by-step"]
-
 >[&larr; **Cihazları kaydetme**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Yapılandırma sonrası görevler** &rarr;](.\post-configuration-tasks.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
