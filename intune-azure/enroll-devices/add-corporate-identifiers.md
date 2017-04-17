@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
+ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
+ms.lasthandoff: 04/05/2017
 
 ---
 
@@ -27,6 +27,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Bir BT yöneticisi olarak, şirkete ait cihazları tanımlamak için kullanılan Uluslararası Mobil Donanım Kimliği (IMEI) numaralarının listelendiği bir virgülle ayrılmış değerler (.csv) dosyası oluşturabilir ve içeri aktarabilirsiniz. Her IMEI numarasının, listede yönetim amacıyla belirtilen ayrıntıları bulunabilir.
+
+Şirketin sahip olduğu cihazlar için yüklediğiniz seri numaralarının şirket kaydı profili ile eşleştirilmesi gerekir. Ardından cihazların şirkete ait görünmesi için Apple'ın cihaz kayıt programı (DEP) veya Apple Configurator kullanılarak kaydedilmesi gerekir. 
 
 ## <a name="create-a-csv-file"></a>.csv dosyası oluşturma
 Listeyi oluşturmak için iki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. Sol sütuna IMEI tanımlayıcısını ve sağ sütuna ayrıntıları ekleyin. Ayrıntılar 128 karakterle sınırlıdır. Her .csv dosyası için geçerli sınır 500 satırdır.
