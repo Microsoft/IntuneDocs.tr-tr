@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
-ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
+ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -27,48 +27,64 @@ ms.lasthandoff: 02/23/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Microsoft Intune, Aygıt Kayıt Programı (DEP) aracılığıyla “uzaktan” satın alınmış iOS cihazlarını kaydeden bir kayıt profili dağıtabilir. Profil, cihazlara uygulamak istediğiniz yönetim ayarlarını içerir. Kayıt paketi, cihaz için kurulum yardımcısı seçeneklerini içerebilir. DEP üzerinden kaydedilen cihazların kaydı kullanıcılar tarafından geri alınamaz.
+Bu konu, BT yöneticilerine şirketin sahip olduğu ve [Apple Cihaz Kayıt Programı (DEP)](https://deploy.apple.com) aracılığıyla satın alınan iOS cihazlarının kaydedilmesi konusunda yardımcı olmaktadır. Microsoft Intune, DEP kaydı gerçekleştiren bir kayıt profilini kablosuz olarak dağıtabilir ve bu sayede yöneticinin, yönetilen cihazlara dokunmasına gerek kalmaz. DEP profili, kayıt sırasında cihazlara uygulamak istediğiniz yönetim ayarlarını içerir. Kayıt paketi, cihaz için kurulum yardımcısı seçeneklerini içerebilir.
 
 >[!NOTE]
->Bu kayıt yöntemi, [cihaz kaydı yöneticisi](enroll-devices-using-device-enrollment-manager.md) yöntemiyle birlikte kullanılamaz.
+>DEP kaydı, [cihaz kayıt yöneticisiyle](enroll-devices-using-device-enrollment-manager.md) birlikte kullanılamaz.
+>Ayrıca, kullanıcıların Şirket Portalı uygulamasını kullanarak iOS cihazlarını kaydetmesi ve bu cihazların seri numaralarının daha sonra içeri aktarılıp bunlara bir DEP profili atanması halinde cihazın Intune kaydı kaldırılır.
 
-Şirkete ait iOS cihazlarının Apple Aygıt Kayıt Programı (DEP) ile yönetilmesi için kurumunuzun Apple DEP'e katılması ve cihazları bu program aracılığıyla edinmesi gerekir. Bu işlemin ayrıntıları şurada bulunabilir:  [https://deploy.apple.com](https://deploy.apple.com). Programın sağladığı avantajlar arasında, her cihazı bir USB kablosu ile bilgisayara bağlamaya gerek bırakmayan kendiliğinden kurulum olanağı da vardır.
+**DEP Kaydı adımları**
+1. [Bir Apple DEP belirteci alma](#get-the-apple-dep-certificate)
+2. [DEP profili oluşturma](#create-anapple-dep-profile)
+3. [Intune sunucunuza Apple DEP seri numaraları atama](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+4. [DEP ile yönetilen cihazları eşitleme](#synchronize-dep-managed-devices)
+5. Cihazları kullanıcılara dağıtma
 
-Şirkete ait iOS cihazlarını DEP ile kaydedebilmeniz için, önce Apple’dan [bir DEP belirteci](get-apple-dep-token.md) almalısınız. Bu belirteç Intune'un şirketinize ait olup DEP'e katılan cihazlar hakkındaki bilgileri eşitlemesini sağlar. Ayrıca Intune'un Kayıt Profilini Apple'a yüklemesine ve cihazları bu profillere atamasına izin verir.
 
-iOS cihazlarını kaydetmeye yönelik diğer yöntemler, [Intune’da iOS cihazlarının nasıl kaydedileceğini seçme](choose-ios-enrollment-method.md) başlığı altında açıklanır.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="get-the-apple-dep-certificate"></a>Apple DEP sertifikasını alma
+Şirketin sahibi olduğu iOS cihazlarını Apple'ın Aygıt Kayıt Programı'na (DEP) kaydedebilmeniz için bir Apple DEP sertifikası dosyasına (.p7m) ihtiyacınız vardır. Bu belirteç Intune'un şirketinize ait olup DEP'e katılan cihazlar hakkındaki bilgileri eşitlemesini sağlar. Ayrıca Intune'un kayıt profilini Apple'a yüklemesine ve cihazları bu profillere atamasına izin verir.
 
-iOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın:
+Şirkete ait iOS cihazlarının DEP ile yönetilmesi için kurumunuzun Apple DEP'e katılması ve cihazları bu program aracılığıyla edinmesi gerekir. Bu işlemin ayrıntıları şurada bulunabilir: https://deploy.apple.com. Programın sağladığı avantajlar arasında, her cihazı bir USB kablosu ile bilgisayara bağlamaya gerek bırakmayan kendiliğinden kurulum olanağı da vardır.
 
-- [Etki alanlarını yapılandırma](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [MDM Yetkilisini ayarlama](set-mdm-authority.md)
-- [Grup oluşturma](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanıcı lisanslarını atama
-- [Bir MDM anında iletme sertifikası alma](get-an-apple-mdm-push-certificate.md)
-- [Bir Apple DEP belirteci alma](get-apple-dep-token.md)
+> [!NOTE]
+> Intune kiracınız Intune klasik konsolundan Azure portalına geçirildiyse ve geçiş sırasında Intune yönetim konsolundan bir Apple DEP belirtecini sildiyseniz, bu DEP belirteci Intune hesabınıza geri yüklenmiş olabilir. DEP belirtecini Azure portalından tekrar silebilirsiniz.
 
-## <a name="create-an-apple-dep-profile-for-devices"></a>Cihazlar için Apple DEP profili oluşturma
+
+
+
+**1. Adım. Apple DEP belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.**<br>
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin. Intune dikey penceresinde **Cihaz kaydı** > **Apple DEP Belirteci**'ni seçin.
+2. Şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtar sertifikanızı indirin** öğesini seçin. .pem dosyası Apple Cihaz Kayıt Programı portalından güven ilişkisi sertifikası istemek için kullanılır.
+
+**2. Adım. İlgili Apple web sitesinden bir Apple DEP belirteci indirin.**<br>
+[Apple Dağıtım Programları aracılığıyla DEP belirteci oluşturun](https://deploy.apple.com) öğesini seçin (https://deploy.apple.com) ve şirket Apple kimliğinizle oturum açın. DEP belirtecinizi yenilemek için de bu Apple kimliğini kullanabilirsiniz.
+
+   1.  Apple [Cihaz Kayıt Programı Portalı](https://deploy.apple.com)'nda, **Cihaz Kayıt Programı** &gt; **Sunucuları Yönet**'e gidin ve **MDM Sunucusu Ekle**'ye tıklayın.
+   2.  **MDM Sunucu Adı**'nı girin ve ardından **İleri**'yi seçin. Sunucu adı, mobil cihaz yönetimi (MDM) sunucusunu tanımlarken kullanmanız içindir. Microsoft Intune sunucusunun adı veya URL'si değildir.
+   3.  **&lt;SunucuAdı&gt; Ekle** iletişim kutusu açılır. **Dosya Seç…** öğesini seçin .pem dosyasını karşıya yükleyin ve ardından **İleri**'yi seçin.
+   4.  **&lt;SunucuAdı&gt; Ekle** iletişim kutusunda **Sunucu Belirteciniz** bağlantısı gösterilir. Sunucu belirteci (.p7m) dosyasını bilgisayarınıza indirin ve ardından **Bitti**'yi seçin.
+
+**3. Adım. Apple DEP belirtecinizi oluşturmak için kullanılan Apple kimliğini girin. Bu kimlik Apple DEP belirtecinizi yenilemek için kullanılabilir.**
+
+**4. Adım. Karşıya yüklenecek Apple DEP belirtecine gidin. Intune, DEP hesabınızı otomatik olarak eşitleyecektir.**<br>
+Sertifika (.pem) dosyasına gidin, **Aç**’ı ve sonra da **Karşıya Yükle**’yi seçin. Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir.
+
+## <a name="create-an-apple-dep-profile"></a>Apple DEP profili oluşturma
 
 Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıdaki adımlar, DEP kullanarak kaydedilmiş iOS cihazları için bir cihaz kayıt profilinin nasıl oluşturulacağını gösterir.
 
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-
 2. Intune dikey penceresinde **Cihazları kaydet**’i ve ardından **Apple Kaydı**’nı seçin.
-
 3. **Apple Cihaz Kayıt Programı (DEP) Ayarlarını Yönet**’in altında **DEP Profilleri**’ni seçin.
-
 4. **Apple DEP Profilleri** dikey penceresinde **Oluştur**’u seçin.
-
 5. **Kayıt Profili Oluştur** dikey penceresinde, profil için bir ad ve açıklama girin.
-
 6. **Kullanıcı Benzeşimi** için, bu profile sahip cihazların kullanıcı benzeşimiyle mi yoksa kullanıcı benzeşimi olmadan mı kaydedileceğini seçin.
 
  - **Kullanıcı benzeşimiyle kaydet** - Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Böylece, cihazın şirket verilerine ve e-postalara erişmesine izin verilebilir. Kullanıcılara ait olan ve uygulamaları yükleme gibi hizmetler için şirket portalını kullanması gereken, DEP ile yönetilen cihazlarda kullanıcı benzeşimini seçin. Multifactor Authentication’ın (MFA) kullanıcı benzeşimi özellikli DEP cihazlarında kayıt sırasında çalışmayacağını unutmayın. Kayıttan sonra MFA bu cihazlar üzerinde beklendiği gibi çalışır. İlk kez oturum açarken parola değiştirmesi istenen yeni kullanıcılara, DEP cihazlarının kaydı sırasında istemde bulunulamaz. Ayrıca, parolalarının süresi dolmuş olan kullanıcılardan DEP kaydı sırasında parolalarını sıfırlamaları istenmez ve farklı bir cihazdan parolayı sıfırlamaları gerekir.
 
     >[!NOTE]
-    >Kullanıcı benzeşimi ile DEP’in kullanıcı belirteci istemesini etkinleştirmek için WS-Trust 1.3 Kullanıcı Adı/Karma uç nokta gerekir.
+    >Kullanıcı benzeşimi ile DEP'in kullanıcı belirteci istemesini etkinleştirmek için [WS-Trust 1.3 Kullanıcı Adı/Karma uç nokta](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) gerekir. [WS-Trust 1.3 hakkında daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - **Kullanıcı benzeşimi olmadan kaydet** - Cihaz bir kullanıcıya bağlı değildir. Bu ilişkiyi, yerel kullanıcı verilerine erişmeden görevleri yerine getiren cihazlar için kullanın. Kullanıcı benzeşimi gerektiren uygulamalar (iş kolu uygulamalarını yüklemek için kullanılan Şirket Portalı uygulaması da dahil) çalışmaz.
 

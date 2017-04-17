@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -93,8 +94,6 @@ Uygulama koruma ilkeleri oluşturmak için aşağıdaki adımları izleyin:
 
     ![Uygulamaların ve Ayarların yapılandırıldığını gösteren İlke ekle dikey penceresinin ekran görüntüsü](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 İlke oluşturmayı önceki yordamda açıklandığı şekilde tamamladığınızda, ilke kullanıcılara dağıtılmaz. Bir ilkeyi dağıtmak için aşağıdaki "Bir ilkeyi kullanıcılara dağıtma" bölümüne bakın.
 
 > [!IMPORTANT]
@@ -105,6 +104,46 @@ Uygulama koruma ilkeleri oluşturmak için aşağıdaki adımları izleyin:
 > -   Bu ilkelerin ikisini de aynı uygulamayla ilişkilendirdiniz.
 > -   Azure konsolunda oluşturduğunuz ilke öncelik kazanır ve kopyalamaya izin verilir.
 > -   Ancak, Intune konsolundaki durum ve raporlar, hatalı bir şekilde kopyalamanın engellendiğini belirtir.
+
+## <a name="line-of-business-lob-apps-optional"></a>İş Kolu (LOB) uygulamaları (isteğe bağlı)
+
+Intune 1703 sürümünden başlayarak yeni uygulama koruma ilkesi oluşturma sırasında Intune'a LOB uygulamalarını genel olarak ekleme seçeneğine sahip olacaksınız. Bu sayede MAM SDK kullanarak tam uygulama dağıtımı izinlerine ihtiyaç duymadan LOB uygulamaları için uygulama koruma ilkeleri tanımlayabilirsiniz.
+
+> [!TIP] 
+> Ayrıca [Intune Uygulama SDK'sı](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) iş akışında da Intune'a LOB uygulamaları ekleyebilirsiniz.
+
+> [!IMPORTANT]
+> Intune'a herhangi bir uygulamayı dağıtabilecekleri tam uygulama dağıtım izinleri yerine MAM uygulamalarını dağıtma izinlerine sahip olan kullanıcılar Intune SDK iş akışını kullanamaz ancak bu kullanıcılar MAM uygulama koruma ilkesi oluşturma iş akışı sayesinde LOB uygulamalarını ekleyebilirler.
+
+### <a name="to-add-lob-apps-ios-and-android"></a>LOB uygulamalarını eklemek için (iOS ve Android)
+
+1.  İlke ekle dikey penceresinde **Uygulamaları** Yapılandır'ı seçerek Uygulamalar dikey penceresini açın.
+
+    ![MAM İlke ekle dikey penceresi](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  **Diğer uygulamalar**'a tıklayın, **Paket kimliği** (iOS için), **paket kimliği** (Android için) bilgisini girin ve Seç'e tıklayarak LOB uygulamalarınızı ekleyin.
+
+    ![MAM Diğer uygulamalar dikey penceresi](../media/AppManagement/mam-lob-apps-2.png)
+
+### <a name="to-add-lob-apps-windows"></a>LOB uygulamalarını eklemek için (Windows)
+
+> [!IMPORTANT] 
+> Yeni uygulama koruma ilkesi oluşturma adımında açılır listeden Windows 10 platformunu seçmeniz gerekir.
+
+1.  İlke ekle dikey penceresinde **İzin verilen uygulamalar** veya **Muaf uygulamalar**'ı seçerek İzin verilen veya Muaf uygulamalar dikey penceresini açın.
+
+    > [!NOTE]
+    > 
+    - **İzin verilen uygulamalar**: Bunlar, bu ilkeye bağlı kalması gereken uygulamalardır.
+    - **Muaf uygulamalar**: Bu uygulamalar bu ilkeden muaftır ve kurumsal verilere kısıtlama olmadan erişebilir.
+<br></br>
+2. İzin verilen veya Muaf uygulamalar dikey penceresinde **Uygulama ekle**'ye tıklayın. Önerilen Microsoft uygulamalarının yanı sıra mağaza veya masaüstü uygulamalarını ekleyebilirsiniz.
+
+    a.  **Önerilen uygulamalar:** Yöneticilerin ilkeye kolayca aktarabilmesi için önceden doldurulmuş uygulama listesi (çoğunlukla Office uygulamaları).
+
+    b.  **Mağaza uygulamalar:** Yönetici, Windows mağazasındaki tüm uygulamaları ilkeye ekleyebilir.
+
+    c.  **Windows masaüstü uygulamaları:** Yönetici ilkeye geleneksel Windows masaüstü uygulamalarını ekleyebilir (exe, dll vs.)
 
 ## <a name="deploy-a-policy-to-users"></a>Bir ilkeyi kullanıcılara dağıtma
 
@@ -124,8 +163,8 @@ Yalnızca [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisansları ata
 > iOS ve Android cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır. Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
 Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.:
-* [Android uygulamanız uygulama koruma ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS uygulamanız uygulama koruma ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>Mevcut ilkeleri değiştirme
 Mevcut ilkeyi düzenleyebilir ve bunu hedeflenen kullanıcılara uygulayabilirsiniz. Bununla birlikte, mevcut ilkeleri değiştirdiğinizde, uygulamalarda oturum açmış olan kullanıcılar bu değişiklikleri 8 saat boyunca görmez.
@@ -179,11 +218,6 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerde
 [Uyumluluğu ve kullanıcı durumunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Ayrıca bkz.
-* [Android uygulamanız uygulama koruma ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS uygulamanız uygulama koruma ilkeleri tarafından yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
