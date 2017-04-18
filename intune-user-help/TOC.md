@@ -1,6 +1,7 @@
 # Intune için kullanıcı yardımı
 ## [İşleri halletmek için yönetilen cihazları kullanma](use-managed-devices-to-get-work-done.md)
 ## [Şirketim, Intune ile hangi bilgileri görüntüleyebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+## [Cihazımı sıfırladığımda ne olur?](what-happens-if-you-reset-your-device-cpwebsite.md)
 ## [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 ### [Bir Android cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Android cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-android.md)
@@ -12,8 +13,3 @@
 ### [Bir Windows cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Windows cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-windows.md)
 ## [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
