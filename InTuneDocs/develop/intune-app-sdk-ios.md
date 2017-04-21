@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
-ms.openlocfilehash: 8c67fc70b5b1678df29605fe3ba4dae907bc7bd1
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: 1d2cb0d4b9442262c562e559a675f5a4a28ee572
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -71,7 +71,12 @@ iOS için Intune Uygulama SDK'sının amacı, kodda minimum düzeyde değişikli
 
 Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin:
 
-1. **1. Seçenek**: `libIntuneMAM.a` kitaplığını bağlayın. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
+1. **1. Seçenek (önerilen)**: Projenizle `IntuneMAM.framework` arasında bağlantı oluşturun. `IntuneMAM.framework` öğesini proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
+
+    > [!NOTE]
+    > Çerçeveyi kullanırsanız, uygulamanızı App Store’a göndermeden önce evrensel çerçeveden benzetici mimarilerini elle çıkarmanız gerekir. Daha fazla bilgi için bkz. [Uygulamanızı App Store'a gönderme](#Submit-your-app-to-the-App-Store).
+
+2. **2. Seçenek**: `libIntuneMAM.a` kitaplığı ile bağlantı oluşturun. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
 
     ![Intune Uygulama SDK’sı iOS: bağlantılı çerçeveler ve kitaplıklar](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -84,11 +89,6 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
         > [!NOTE]
         > `PATH_TO_LIB` öğesini bulmak için `libIntuneMAM.a` dosyasını seçin ve **Dosya** menüsünden **Bilgi Al** öğesini belirleyin. **Nerede** bilgisini (yol) **Bilgi** penceresinin **Genel** bölümünden kopyalayıp yapıştırın.
-
-2. **2. Seçenek**: `IntuneMAM.framework` öğesini projenize bağlayın. `IntuneMAM.framework` öğesini proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
-
-    > [!NOTE]
-    > Çerçeveyi kullanırsanız, uygulamanızı App Store’a göndermeden önce evrensel çerçeveden benzetici mimarilerini elle çıkarmanız gerekir. Bkz. [Uygulamanızı App Store’a gönderme](#Submit-your-app-to-the-App-Store)
 
 3. Aşağıdaki iOS çerçevelerini projeye ekleyin:
     * MessageUI.framework
@@ -127,22 +127,21 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
     </array>
     ```
 
-7. Anahtarlık paylaşımını etkinleştirdikten sonra Intune Uygulama SDK'sı verilerinin depolanacağı ayrı bir erişim grubu oluşturmak için aşağıdaki adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz.
-
-    UI kullanarak anahtarlık erişim grubu oluşturmak için:
+7. Anahtarlık paylaşımını etkinleştirdikten sonra Intune Uygulama SDK'sı verilerinin depolanacağı ayrı bir erişim grubu oluşturmak için aşağıdaki adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. UI öğelerini anahtarlık erişim grubu oluşturmak için kullanıyorsanız aşağıdaki adımları izleyin:
 
     1. Mobil uygulamanızda tanımlanmış bir anahtarlık erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
 
-    2. `com.microsoft.intune.mam` paylaşılan anahtar zinciri grubunu ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
+    2. `com.microsoft.intune.mam` paylaşılan anahtarlık grubunu var olan erişim gruplarınıza ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
 
     3. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
 
-    ![Intune Uygulama SDK’sı iOS: Anahtarlık paylaşımı](../media/intune-app-sdk-ios-keychain-sharing.png)
+        4. `com.microsoft.workplacejoin` öğesini var olan erişim gruplarınıza ekleyin.
+            ![Intune Uygulama SDK'sı iOS: Anahtarlık paylaşımı](../media/intune-app-sdk-ios-keychain-sharing.png)
 
-    Anahtarlık paylaşımı erişim grubunu oluşturmak için yetkilendirme dosyasını kullanıyorsanız, yetkilendirme dosyasında anahtarlık erişim grubunun başına `$(AppIdentifierPrefix)` ekleyin. Örneğin:
+      5. Anahtarlık paylaşımı erişim grubunu oluşturmak için yetkilendirme dosyasını kullanıyorsanız, yetkilendirme dosyasında anahtarlık erişim grubunun başına `$(AppIdentifierPrefix)` ekleyin. Örneğin:
 
-          * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        * `$(AppIdentifierPrefix)com.microsoft.adalcache`
+            * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
     > Yetkilendirme dosyası mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır.
@@ -151,42 +150,37 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
 8. iOS 9+ üzerinde geliştirilen mobil uygulamalarda, uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Ayrıca, listelenen her protokol için yeni bir protokol ekleyin ve bu protokole `-intunemam` ekleyin. Diziye ayrıca `http-intunemam`, `https-intunemam`ve `ms-outlook-intunemam` öğelerini dahil etmeniz gerekir.
 
-9. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentifiers` anahtarı altındaki IntuneMAMSettings sözlüğüne bir dize dizisi olarak ekleyin.
-
-10. Mobil uygulamanızı iOS için Azure Directory Kimlik Doğrulaması Kitaplığı’na (ADAL) bağlayın. Objective-C için ADAL kitaplığı [GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc)'dan alınabilir.
-
-    > [!NOTE]
-    > Uygulamanın en son/çalışan ADAL sürümü ile bağlanması önerilir.
-
-11. `ADALiOSBundle.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
-
-12. Kitaplığa bağlantı oluştururken `-force_load PATH_TO_ADAL_LIBRARY` bağlayıcı seçeneğini kullanın.
-
-    `-force_load {PATH_TO_LIB}/libADALiOS.a` seçeneğini projenin `OTHER_LDFLAGS` derleme yapılandırma ayarına veya UI’daki **Diğer Bağlayıcı Bayraklar** seçeneğine ekleyin. `PATH_TO_LIB`, ADAL ikili dosyalarının konumuyla değiştirilmelidir.
+9. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentifiers` anahtarı altındaki **IntuneMAMSettings** sözlüğüne bir dize dizisi olarak ekleyin.
 
 
 
-## <a name="configure-azure-directory-authentication-library-adal"></a>Azure Directory Kimlik Doğrulama Kitaplığı’nı (ADAL) Yapılandırma
+## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Kimlik Doğrulama Kitaplığı'nı (ADAL) Yapılandırma
 
-Intune Uygulama SDK'sı, kimlik doğrulama ve koşullu başlatma senaryoları için ADAL kullanır. Cihaz kayıt senaryoları olmadan yönetim için MAM hizmetinde kullanıcı kimliğini kaydetmek için de ADAL kullanır.
+Intune Uygulama SDK'sı, kimlik doğrulama ve koşullu başlatma senaryoları için [Azure Active Directory Kimlik Doğrulama Kitaplığı](https://github.com/AzureAD/azure-activedirectory-library-for-objc)'nı kullanır. Cihaz kayıt senaryoları olmadan yönetim için MAM hizmetinde kullanıcı kimliğini kaydetmek için de ADAL kullanır.
 
-ADAL genellikle, uygulamaya verilen belirteçlerin güvenliğini sağlamak için uygulamaların (ClientID) benzersiz kimliği ve diğer tanımlayıcıları Azure Active Directory (AAD) ile kaydetmesini ve almasını gerektirir. Intune Uygulama SDK’sı, Azure AD ile iletişim kurarken varsayılan kayıt değerlerini kullanır.  
+ADAL genellikle, uygulamaya verilen belirteçlerin güvenliğini sağlamak için uygulamaların (ClientID) benzersiz kimliği ve diğer tanımlayıcıları Azure Active Directory (AAD) ile kaydetmesini ve almasını gerektirir. Aksi belirtilmediği sürece Intune Uygulama SDK'sı, Azure AD ile iletişim kurarken varsayılan kayıt değerlerini kullanır.  
 
-Uygulama, kimlik doğrulama senaryosu için ADAL kullanıyorsa, uygulamanın mevcut kayıt değerlerini kullanması ve Intune Uygulama SDK'sının varsayılan değerlerini geçersiz kılması gerekir. Bu, kullanıcılardan iki kez kimlik doğrulaması (Intune Uygulama SDK'sı ve uygulama tarafından) istenmemesini sağlar.
+Uygulamanız kullanıcı kimlik doğrulaması için zaten ADAL kullanıyorsa, uygulamanın mevcut kayıt değerlerini kullanması ve Intune Uygulama SDK'sının varsayılan değerlerini geçersiz kılması gerekir. Bu, kullanıcılardan iki kez kimlik doğrulaması (Intune Uygulama SDK'sı ve uygulama tarafından) istenmemesini sağlar.
 
-### <a name="adal-faqs"></a>ADAL SSS
+### <a name="recommendations"></a>Öneriler
 
-**Hangi ADAL ikili dosyalarını kullanmalıyım?**
+Uygulamanızın ana dalında [son ADAL sürümüne](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) bağlantı vermesi önerilir. Intune Uygulama SDK'sı şu anda koşullu erişim gerektiren uygulamaları desteklemek için ADAL'ın aracı dalını kullanır. (Dolayısıyla bu uygulamalar Microsoft Authenticator uygulamasına bağlıdır.) Ancak, SDK hala ADAL’ın ana dalı ile uyumludur. Uygulamanıza uygun olan dalı kullanın.
 
-Intune Uygulama SDK'sı şu anda koşullu erişim gerektiren uygulamaları desteklemek için [GitHub'da ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc)’ın aracı dalını kullanır. (Dolayısıyla bu uygulamalar Microsoft Authenticator uygulamasına bağlıdır.) Ancak, SDK hala ADAL’ın ana dalı ile uyumludur. Uygulamanıza uygun olan dalı kullanın.
+### <a name="link-to-adal-binaries"></a>ADAL ikili dosyalarına bağlantı kurma
 
-**ADAL ikili dosyalarına nasıl bağlantı kurarım?**
+Uygulamanızla ADAL ikili dosyaları arasında bağlantı kurmak için aşağıdaki adımları izleyin:
 
-`-force_load {PATH_TO_LIB}/libADALiOS.a` seçeneğini projenin `OTHER_LDFLAGS` derleme yapılandırma ayarına veya UI’daki **Diğer Bağlayıcı Bayraklar** seçeneğine ekleyin. `PATH_TO_LIB`, ADAL ikili dosyalarının konumuyla değiştirilmelidir. Ayrıca, ADAL paketini uygulamanıza kopyaladığınızdan emin olun.  
+1. GitHub'dan [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) dosyalarını indirin ve Git alt modülleri veya CocoaPods kullanarak ADAL indirme [talimatlarını](https://github.com/AzureAD/azure-activedirectory-library-for-objc/blob/master/README.md) izleyin.
 
-Daha fazla ayrıntı için [GitHub'da ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc) yönergelerine bakın.
+2. `ADALiOSBundle.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
 
-**Aynı sağlama profiliyle imzalanan diğer uygulamalarla ADAL belirteç önbelleğini nasıl paylaşırım?**
+3. `-force_load {PATH_TO_LIB}/libADALiOS.a` seçeneğini projenin `OTHER_LDFLAGS` derleme yapılandırma ayarına veya UI’daki **Diğer Bağlayıcı Bayraklar** seçeneğine ekleyin. `PATH_TO_LIB`, ADAL ikili dosyalarının konumuyla değiştirilmelidir.
+
+
+
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Aynı sağlama profiliyle imzalanan diğer uygulamalarla ADAL belirteç önbelleğini paylaşmak mı istiyorsunuz?**
+
+ADAL belirteçlerinin aynı sağlama profiliyle imzalanan uygulamalar arasında paylaşılmasını istiyorsanız aşağıdaki talimatları izleyin:
 
 1. Uygulamanızda tanımlanmış bir anahtar zinciri erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
 
@@ -194,9 +188,9 @@ Daha fazla ayrıntı için [GitHub'da ADAL](https://github.com/AzureAD/azure-act
 
 3. ADAL paylaşımlı önbellek anahtar zinciri grubunu açıkça ayarlıyorsanız, ayarın `<app_id_prefix>.com.microsoft.adalcache` olduğundan emin olun. Bu ayarı geçersiz kılmadığınız sürece ADAL bunu sizin için ayarlar. `com.microsoft.adalcache` öğesini değiştirmek için özel bir anahtar zinciri grubu belirtmek isterseniz, bunu IntuneMAMSettings altındaki Info.plist dosyası içinde `ADALCacheKeychainGroupOverride` anahtarını kullanarak belirtin.
 
-**Intune Uygulama SDK’sını uygulamamda zaten kullanılan ADAL ayarlarını kullanmaya nasıl zorlarım?**
+### <a name="configure-adal-settings-for-the-intune-app-sdk"></a>Intune Uygulama SDK'sı için ADAL ayarlarını yapılandırma
 
-Uygulamanız zaten ADAL kullanıyorsa aşağıdaki ayarları doldurma hakkında bilgi edinmek için [Intune Uygulama SDK’sı için ayarları yapılandırma](#configure-settings-for-the-intune-app-sdk) bölümüne göz atın:  
+Uygulamanız kimlik doğrulaması için zaten ADAL kullanıyorsa ve kendi ADAL ayarlarına sahipse Intune Uygulama SDK'sının Azure Active Directory kimlik doğrulaması sırasında aynı ayarları kullanmasını zorunlu kılabilirsiniz. Bu sayede uygulamanın kullanıcıdan iki kez kimlik doğrulaması istemesi engellenmiş olur. Aşağıdaki ayarları doldurma hakkında bilgi edinmek için [Intune Uygulama SDK'sı için ayarları yapılandırma](#configure-settings-for-the-intune-app-sdk) bölümüne göz atın:  
 
 * ADALClientId
 * ADALAuthority
@@ -204,29 +198,25 @@ Uygulamanız zaten ADAL kullanıyorsa aşağıdaki ayarları doldurma hakkında 
 * ADALRedirectScheme
 * ADALCacheKeychainGroupOverride
 
+Uygulamanız zaten ADAL kullanıyorsa aşağıdaki yapılandırma adımlarının gerçekleştirilmesi gerekir:
 
-**Çalışma zamanında sağlanan bir kiracıya özgü URL ile Azure AD yetkilisi URL’sini nasıl geçersiz kılarım?**
+1. Projenin Info.plist dosyasında, `ADALClientId` anahtar adlı **IntuneMAMSettings** sözlüğü altında, ADAL çağrıları için kullanılacak istemci kimliği değerini belirtin.
 
-IntuneMAMPolicyManager örneğinde `aadAuthorityUriOverride` özelliğini belirleyin.
+2. Yine `ADALAuthority` anahtar adlı **IntuneMAMSettings** sözlüğü altında, Azure AD yetkilisini belirtin.
+
+3. Yine `ADALRedirectUri` anahtar adlı **IntuneMAMSettings** sözlüğü altında, ADAL çağrıları için kullanılacak yeniden yönlendirme URI'si değerini belirtin. Ayrıca, uygulamanızın yeniden yönlendirme URI’sinin biçimine bağlı olarak `ADALRedirectScheme` belirtmeniz gerekebilir.
+
+
+Buna ek olarak çalışma zamanında bir kiracıya özgü URL ile Azure AD yetkilisi URL'sini geçersiz kılabilirsiniz. Bunu yapmak için `IntuneMAMPolicyManager` örneğinde `aadAuthorityUriOverride` özelliğini ayarlamanız yeterlidir.
 
 > [!NOTE]
-> SDK’nın uygulama tarafından alınan ADAL yenileme belirtecini yeniden kullanmasına izin vermek için cihaz kaydı içermeyen APP için bu gereklidir.
+> SDK'nın uygulama tarafından alınan ADAL yenileme belirtecini yeniden kullanmasına izin vermek üzere [cihaz kaydı içermeyen APP](#App-protection-policy-without-device-enrollment) için AAD Yetkilisi URL'sinin ayarlanması gereklidir.
 
-SDK, değerin temizlenmemesi veya değiştirilmemesi durumunda ilke yenileme ve bunu takip eden kayıt istekleri için bu yetkilendirme URL’sini kullanmaya devam eder.  Bu nedenle, bir şirket kullanıcısı uygulamadaki oturumunu kapattığında değeri temizlemek ve yeni bir şirket kullanıcısı oturum açtığında sıfırlamak önemlidir.
+SDK, değerin temizlenmemesi veya değiştirilmemesi durumunda ilke yenileme ve bunu takip eden kayıt istekleri için bu yetkilendirme URL’sini kullanmaya devam eder.  Bu nedenle, bir yönetilen kullanıcı uygulamadaki oturumunu kapattığında değeri temizlemek ve yeni bir yönetilen kullanıcı oturum açtığında değeri sıfırlamak önemlidir.
 
-**Uygulamam kimlik doğrulaması için ADAL kullanıyorsa ne yapmalıyım?**
+### <a name="if-your-app-does-not-use-adal"></a>Uygulamanız ADAL kullanmıyorsa
 
-Uygulama kimlik doğrulaması için zaten ADAL kullanıyorsa aşağıdaki eylemler gereklidir:
-
-1. Projenin Info.plist dosyasında, `ADALClientId` anahtar adlı IntuneMAMSettings sözlüğü altında, ADAL çağrıları için kullanılacak istemci kimliği değerini belirtin.
-
-2. Yine `ADALAuthority` anahtar adlı IntuneMAMSettings sözlüğü altında, Azure AD yetkilisini belirtin.
-
-3. Yine `ADALRedirectUri` anahtar adlı IntuneMAMSettings sözlüğü altında, ADAL çağrıları için kullanılacak yeniden yönlendirme URI'si değerini belirtin. Ayrıca, uygulamanızın yeniden yönlendirme URI’sinin biçimine bağlı olarak `ADALRedirectScheme` belirtmeniz gerekebilir.
-
-**Uygulamam kimlik doğrulaması için zaten ADAL kullanmıyorsa ne olur?**
-
-Uygulamanız ADAL kullanmıyorsa, Intune Uygulama SDK'sı ADAL parametrelerinin varsayılan değerlerini sağlar ve Azure AD kimlik doğrulamasını gerçekleştirir.
+Uygulamanız ADAL kullanmıyorsa, Intune Uygulama SDK'sı ADAL parametrelerinin varsayılan değerlerini sağlar ve Azure AD kimlik doğrulamasını gerçekleştirir. Yukarıda listelenen ADAL ayarları için herhangi bir değer belirtmeniz gerekmez.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Cihaz kaydı olmadan uygulama koruma ilkesi
 
@@ -426,9 +416,6 @@ Uygulamalar **isSaveToAllowedForLocation** API'sini kullanırken, depolama konum
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
-* IntuneMAMSaveLocationBox
-* IntuneMAMSaveLocationDropbox
-* IntuneMAMSaveLocationGoogleDrive
 * IntuneMAMSaveLocationLocalDrive
 
 Uygulamalar, OneDrive İş gibi “yönetilen” veya “kişisel” olarak kabul edilen konumlara veri kaydedilip kaydedilemeyeceğini denetlemek için **isSaveToAllowedForLocation** API’sindeki sabitleri kullanmalıdır. Ayrıca uygulama bir konumun “yönetilen” veya “kişisel” olup olmadığını denetleyemiyorsa API kullanılmalıdır.
@@ -560,27 +547,46 @@ Varsayılan olarak, uygulamalar tek kimlikli olarak değerlendirilir. SDK, kayı
 
     Bu yöntemin bir arka plan iş parçacığından çağrıldığını unutmayın. Kullanıcıya yönelik tüm veriler kaldırılana kadar uygulama bir değer döndürmemelidir (uygulama FALSE döndürürse dosyalar hariç olmak üzere).
 
-## <a name="debug-the-intune-app-sdk-in-xcode"></a>Xcode'da Intune Uygulama SDK'sı hatalarını ayıklama
+## <a name="test-app-protection-policy-settings-in-xcode"></a>Xcode içindeki uygulama koruma ilkesi ayarlarını sınama
 
-MAM özellikli uygulamanızı Microsoft Intune ile elle sınamadan önce, Xcode’da bir Settings.bundle dosyası kullanabilirsiniz. Böylece, Intune bağlantısına gerek olmadan sınama ilkelerini ayarlayabilirsiniz. Etkinleştirmek için:
+Üretim aşamasındaki Intune kullanan uygulamanızı elle sınamadan önce, Xcode'da bir Settings.bundle dosyası kullanabilirsiniz. Böylece, Intune bağlantısına gerek olmadan sınama amaçlı uygulama koruma ilkelerini ayarlayabilirsiniz.
 
-1. Projenizdeki en üst düzey klasöre sağ tıklayarak bir Settings.bundle dosyası ekleyin. Menüden **Ekle** > **Yeni Dosya** seçimini yapın. **Kaynaklar** altında, eklemek için **Ayarlar Paketi** şablonunu seçin.
+### <a name="enable-policy-testing"></a>İlke sınamayı etkinleştirme
 
-2. Yalnızca hata ayıklama derlemelerinde, MAMDebugSettings.plist öğesini Settings.bundle dosyasına kopyalayın.
+Xcode'da ilke sınamasını etkinleştirmek için aşağıdaki adımları izleyin:
 
-3. Root.plist içinde (Settings.bundle içinde bulunur), `Type` = `Child Pane` ve `FileName` = `MAMDebugSettings` ile bir tercih ekleyin.
+1. Hata ayıklama derlemesinde çalıştığınızdan emin olun. Projenizdeki en üst düzey klasöre sağ tıklayarak bir Settings.bundle dosyası ekleyin. Menüden **Ekle** > **Yeni Dosya** seçimini yapın. **Kaynaklar** altında, **Ayarlar Paketi** şablonunu seçin.
 
-4. **Ayarlar** > **Uygulamanızın-Adı** altında **Sınama İlkelerini Etkinleştir** seçeneğini açın.
+2.  Hata ayıklama derlemesi için aşağıdaki bölümü Settings.bundle/**Root.plist** dosyasına kopyalayın:
+    ```xml
+    <key>PreferenceSpecifiers</key>
+    <array>
+        <dict>
+            <key>Type</key>
+            <string>PSChildPaneSpecifier</string>
+            <key>Title</key>
+            <string>MDM Debug Settings</string>
+            <key>Key</key>
+            <string>MAMDebugSettings</string>
+            <key>File</key>
+            <string>MAMDebugSettings</string>
+        </dict>
+    </array>
+    ```
 
-5. Uygulamayı başlatın (Xcode içinde veya dışında).
+3. Uygulamanın Info.plist dosyasındaki **IntuneMAMSettings** sözlüğünde "DebugSettingsEnabled" adlı bir boole değeri ekleyin. DebugSettingsEnabled değerini "YES" olarak belirleyin.
 
-6. **Ayarlar** > **Uygulamanızın-Adı** > **Sınama İlkelerini Etkinleştir** altında bir ilkeyi açın; ör. **PIN**.
 
-7. Uygulamayı başlatın (Xcode içinde veya dışında). PIN kodunun beklendiği gibi çalışıp çalışmadığını denetleyin.
 
-> [!NOTE]
-> Ayarları etkinleştirmek ve değiştirmek için **Ayarlar** > **Uygulamanızın-Adı** > **Sınama İlkelerini Etkinleştir** seçeneğini kullanabilirsiniz.
+### <a name="app-protection-policy-settings"></a>Uygulama koruma ilkesi ayarları
 
+Aşağıdaki tabloda MAMDebugSettings.plist kullanarak sınayabileceğiniz uygulama koruma ilkesi ayarları anlatılmaktadır. Bir ayarı açmak için MAMDebugSettings.plist dosyasına ekleyin.
+
+| İlke ayarı adı | Açıklama | Olası değerler |
+| -- | -- | -- |
+| AccessRecheckOfflineTimeout | Kimlik doğrulamasının etkin olması halinde Intune uygulamanın başlatılmasını engellemeden veya uygulamayı sürdürmeden uygulamanın çevrimdışı kalabileceği sürenin dakika cinsinden uzunluğu. | 0'dan büyük herhangi bir tamsayı |
+|    AccessRecheckOnlineTimeout | Başlatma veya sürdürme (erişim için kimlik doğrulaması veya PIN etkin olduğunda) aşamasında kullanıcıdan PIN veya kimlik doğrulaması istenmeden önce uygulamanın çalışabileceği sürenin dakika cinsinden uzunluğu. | 0'dan büyük herhangi bir tamsayı |
+| AppSharingFromLevel | Bu uygulamanın veri kabul edebileceği uygulamaları belirtir. | 0 = |
 ## <a name="ios-best-practices"></a>iOS en iyi uygulamalar
 
 iOS için geliştirmeye yönelik önerilen en iyi uygulamalar aşağıda verilmiştir:

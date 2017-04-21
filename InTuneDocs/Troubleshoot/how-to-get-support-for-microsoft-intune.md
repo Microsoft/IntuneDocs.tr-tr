@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,23 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
-ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 15229d2dff3b5e9a13bf1f9321ba09df81717052
+ms.lasthandoff: 04/14/2017
 
 
 ---
 
-# <a name="how-admins-get-support-for-microsoft-intune"></a>Yöneticiler için Microsoft Intune desteği
+# <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft, Intune için genel teknik, satış öncesi, faturalandırma ve abonelik desteği sağlar. Hem ücretli hem de deneme abonelikleri için çevrimiçi ve telefonla destek mevcuttur. İngilizce ve Japonca dillerinde çevrimiçi teknik destek kullanılabilir. Telefon desteği ve çevrimiçi faturalandırma desteği, ek dillerde mevcuttur.
 
 Intune ve Configuration Manager ile kullanıldığında Intune için destek ücretsizdir. Premier Destek müşterilerinden yordam soruları (örneğin bir Intune özelliğinin nasıl yapılandırılacağı) için ücret alınır.
+
+>[!IMPORTANT]
+> Intune ile çalışan ve Microsoft tarafından tasarlanmamış olan ürünlerle (SaaSwedo, Cisco veya Lookout gibi) ilgili teknik destek için Intune destek ekibine başvurmadan önce ürünün tedarikçisiyle iletişime geçerek ürünü doğru yapılandırdığınızdan emin olun.
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>Destek bileti açmadan yardım alma
 
@@ -39,6 +42,13 @@ Bir destek bileti oluşturmadan önce, yanıt aramak ve bilgi edinmek için aşa
 Microsoft teknik uzmanlarına soru sorun veya bir tartışma başlatın! Arama yapabileceğiniz [Microsoft Intune TechNet Forumu’nda](https://social.technet.microsoft.com/Forums/home), sorunlarla ilgili yanıtlara ve bilgilere ulaşabilirsiniz.
 
 ![Microsoft Intune TechNet Forumu](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>Forumu kullanmaya başlama
+
+1. Forumlar sayfasındaki Forumlar kutusuna Microsoft Intune yazın ve açılan listeden seçin.<br>
+![Intune forumu seçim denetimi](./media/forum-select-intune.png)
+2. Artık Microsoft Intune'u seçilen forumlar listenizde göreceksiniz.<br>
+![Forumlarda Intune seçimi denetimi](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice ürün geri bildirimi sitesi
 
@@ -60,11 +70,11 @@ Destek bileti oluşturmadan önce lütfen [destek olayının tanımına](#defini
 
 1.  Intune kimlik bilgilerinizle [Office 365 yönetim merkezi](https://portal.office.com)’nde oturum açın.
 
-    Premier Destek müşterisiyseniz, bunun yerine [Premier destek sayfası](https://support.microsoft.com/en-us/premier/contacts) üzerinden bir Intune destek bileti açmanız gerekir.
+    Premier Destek müşterisiyseniz, bunun yerine [Premier destek sayfası](https://support.microsoft.com/premier/contacts) üzerinden bir Intune destek bileti açmanız gerekir.
 
     >[!NOTE]
     >
-    >Premier Destek müşterileri, [Premier destek sayfası](https://support.microsoft.com/en-us/premier/contacts) üzerinden bir Intune destek bileti açmalıdır.
+    >Premier Destek müşterileri, [Premier destek sayfası](https://support.microsoft.com/premier/contacts) üzerinden bir Intune destek bileti açmalıdır.
 
 2.  **Yönetici** kutucuğunu seçin.
 3.  Bileti açmak için solda **Destek** altından **Destek**'i seçin.
@@ -126,7 +136,7 @@ Diğer sorunlarda, Profesyonel müşterileri için ilk yanıtı sekiz saat için
 - Tek bir kullanıcı kısmi kesinti yaşar, ancak kabul edilebilir bir çözüm yok.
 
 > [!NOTE]
-> **Microsoft System Center Configuration Manager** veya **Microsoft System Center Endpoint Protection kullanıyorsanız:** Configuration Manager veya Endpoint Protection ile ilgili teknik destek için iş ortağınızla iletişim kurun veya [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) ve [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) belgelerini ziyaret ederek zengin yardım malzemelerini bulun. Ayrıca, çevrimiçi ya da telefon üzerinden destek isteği açma seçeneği de sunar.
+> **Microsoft System Center Configuration Manager** veya **Microsoft System Center Endpoint Protection kullanıyorsanız:** Configuration Manager veya Endpoint Protection ile ilgili teknik destek için iş ortağınızla iletişim kurun veya [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) ve [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx) belgelerini ziyaret ederek zengin yardım malzemelerini bulun. Ayrıca, çevrimiçi ya da telefon üzerinden destek isteği açma seçeneği de sunar.
 >
 > System Center Configuration Manager veya System Center Endpoint Protection için teknik destek, ödeme gerektirir ya da var olan lisansınızdan veya Premier Destek sözleşmelerinden düşülür.
 
