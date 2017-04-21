@@ -43,6 +43,7 @@
 ### [Cihaz kayıt yöneticisi](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [MacOS cihazları kaydetme](enroll-devices/enroll-macos-devices.md)
 ### [Windows cihazlarını kaydetme](enroll-devices/enroll-windows-devices.md)
+### [Windows cihazları toplu kaydetme](enroll-devices/bulk-enroll-windows.md)
 ### Cihaz kaydını yönetme
 #### [Hüküm ve koşulları oluşturma](enroll-devices/create-terms-and-conditions.md)
 #### [Kayıt kısıtlamalarını ayarlama](enroll-devices/set-enrollment-restrictions.md)
@@ -57,6 +58,7 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## Nasıl yapılır
 ### [Tam veya seçmeli silme kullanma](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
+### [Android cihazları uzaktan denetleme](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Kullanıcıları yönetme
@@ -75,7 +77,9 @@
 ## Uygulamaları yönetme
 ### [Uygulamaları ekleme](manage-apps/add-apps.md)
 #### [Android mağaza uygulamaları](manage-apps/android-store-app.md)
+#### [Android LOB uygulamaları](manage-apps/android-lob-app.md)
 #### [iOS Store uygulamaları](manage-apps/ios-store-app.md)
+#### [iOS LOB uygulamaları](manage-apps/ios-lob-app.md)
 #### [Web uygulamaları](manage-apps/web-app.md)
 #### [Windows Phone 8.1 mağaza uygulamaları](manage-apps/windows-phone-8-1-store-app.md)
 #### [Windows Mağazası uygulamaları](manage-apps/windows-store-app.md)
@@ -109,8 +113,12 @@
 ### [Cihaz profillerini yapılandırma](configure-devices/how-to-create-device-profiles.md)
 
 ### [Cihaz özelliklerini yapılandırma](configure-devices/how-to-configure-device-features.md)
-#### [Android](configure-devices/device-features-for-ios.md)
-#### [macOS](configure-devices/device-features-for-macos.md)
+#### [iOS ve MacOS için AirPrint](configure-devices/air-print-settings-for-ios-and-macos.md)
+#### [iOS için airPlay](configure-devices/airplay-settings-for-ios-devices.md)
+#### [iOS için giriş ekranı düzeni](configure-devices/home-screen-settings-for-ios.md)
+#### [iOS için uygulama bildirimleri](configure-devices/app-notification-settings-for-ios.md)
+#### [iOS için paylaşılan cihazlar](configure-devices/shared-device-settings-for-ios.md)
+#### [iOS için web içeriği filtresi](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Cihaz kısıtlamalarını yapılandırma](configure-devices/how-to-configure-device-restrictions.md)
 #### [Outlook Web Access (OWA)](configure-devices/device-restrictions-for-android.md)
@@ -120,6 +128,7 @@
 #### [Windows Phone 8.1](configure-devices/device-restrictions-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/device-restrictions-for-windows-10.md)
 #### [Windows 10 Team](configure-devices/device-restrictions-for-windows-10-team.md)
+#### [Android for Work](configure-devices/device-restrictions-for-afw.md)
 
 ### [E-posta ayarlarını yapılandırma](configure-devices/how-to-configure-email-settings.md)
 #### [Outlook Web Access (OWA)](configure-devices/email-profile-settings-for-android.md)
@@ -142,6 +151,7 @@
 #### [Windows 8.1 ve Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Windows 10 sürüm yükseltme ayarlarını yapılandırma](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Windows 10 Education ayarlarını yapılandırma](configure-devices/how-to-configure-education-settings.md)
 ### [İş ayarları için Windows Update’i yapılandırma](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Sertifikaları yapılandırma](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
@@ -159,6 +169,7 @@
 #### [macOS](configure-devices/custom-for-macos.md)
 #### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/custom-for-windows-10.md)
+#### [Android for Work](configure-devices/custom-android-for-work.md)
 
 ### [Cihaz profillerini atama](configure-devices/how-to-assign-device-profiles.md)
 ### [Cihaz profillerini izleme](configure-devices/how-to-monitor-device-profiles.md)
