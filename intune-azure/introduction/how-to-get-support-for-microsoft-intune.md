@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 4c790438911b06915c49bd76a4ae413b7a9471d1
-ms.openlocfilehash: 70f9638941b61309fc2d97987ab20b3d54e529ee
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: 679ac408349a82b17ec63109770126e0ad072c6d
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -31,6 +31,10 @@ Microsoft, Intune için genel teknik, satış öncesi, faturalandırma ve abonel
 
 Intune ve Configuration Manager ile kullanıldığında Intune için destek ücretsizdir. Premier Destek müşterilerinden yordam soruları (örneğin bir Intune özelliğinin nasıl yapılandırılacağı) için ücret alınır.
 
+>[!IMPORTANT]
+> Intune ile çalışan ve Microsoft tarafından tasarlanmamış olan ürünlerle (SaaSwedo, Cisco veya Lookout gibi) ilgili teknik destek için Intune destek ekibine başvurmadan önce ürünün tedarikçisiyle iletişime geçerek ürünü doğru yapılandırdığınızdan emin olun.
+
+
 ## <a name="find-help-without-opening-a-support-ticket"></a>Destek bileti açmadan yardım alma
 
 Bir destek bileti oluşturmadan önce, yanıt aramak ve bilgi edinmek için aşağıdaki kaynaklara göz atın. Ek olarak, [Microsoft Intune için genel sorun giderme ipuçlarını](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune) da inceleyebilirsiniz.
@@ -40,6 +44,13 @@ Bir destek bileti oluşturmadan önce, yanıt aramak ve bilgi edinmek için aşa
 Microsoft teknik uzmanlarına soru sorun veya bir tartışma başlatın! Arama yapabileceğiniz [Microsoft Intune TechNet Forumu’nda](https://social.technet.microsoft.com/Forums/home), sorunlarla ilgili yanıtlara ve bilgilere ulaşabilirsiniz.
 
 ![Microsoft Intune TechNet Forumu](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>Forumu kullanmaya başlama
+
+1. Forumlar sayfasındaki Forumlar kutusuna Microsoft Intune yazın ve açılan listeden seçin.<br>
+![Intune forumu seçim denetimi](./media/forum-select-intune.png)
+2. Artık Microsoft Intune'u seçilen forumlar listenizde göreceksiniz.<br>
+![Forumlarda Intune seçimi denetimi](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice ürün geri bildirimi sitesi
 

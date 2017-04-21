@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
-ms.openlocfilehash: 791486a8d4cc490cd452ea9075fe323395635b5f
-ms.lasthandoff: 03/31/2017
+ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
+ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/31/2017
 Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekilde organize ettik. Ancak her geliştirme sonrasında atlatılması gereken bir yeni düzene alışma süreci vardır. Bu nedenle klasik konsoldan Intune'a aşina olanlar ve Intune'da yapılan bir eylemi Azure'da nasıl gerçekleştireceğini merak edenler için bu başvuru kılavuzunu hazırladık. Aradığınız özellik bu makalede yoksa ekleyebilmemiz için lütfen aşağıya yorum yazın.
 ## <a name="quick-reference-guide"></a>Hızlı başvuru kılavuzu
 |Özellik |Klasik konsoldaki yolu|Azure'daki Intune'da yolu| |------------||---------------|---------------|
-|Cihaz Kayıt Programı (DEP) |Yönetim > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Cihaz Kayıt Programı|[Cihazları Kaydet > Apple Kaydı > Kayıt Programı Belirteci](#where-did-apple-dep-go) |
-|Cihaz Kayıt Programı (DEP)| Yönetim > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Cihaz Kayıt Programı |[Cihazları Kaydet > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-apple-dep-go) |
-|Kayıt Kuralları |Yönetim > Mobil Cihaz Yönetimi > Kayıt Kuralları|[Cihazları Kaydet > Kayıt Kısıtlamaları](#where-did-enrollment-rules-go) |
-|iOS Seri Numarası'na Göre Gruplar |Gruplar > Tüm Cihazlar > Kurumsal Ön kayıtlı cihazlar > iOS Seri Numarası'na göre|[Cihazları Kaydet > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-corporate-pre-enrolled-devices-go) |
-|iOS Seri Numarası'na Göre Gruplar |Gruplar > Tüm Cihazlar > Kurumsal Ön kayıtlı cihazlar > iOS Seri Numarası'na göre| [Cihazları Kaydet > Apple Kaydı > AC Seri numaraları](#where-did-corporate-pre-enrolled-devices-go)|
-|IMEI'ye Göre Gruplar (tüm platformlar)| Gruplar > Tüm Cihazlar > Kurumsal Ön kayıtlı cihazlar > IMEI'ye göre (Tüm platformlar) | [Cihazları Kaydet > Kurumsal Cihaz Tanımlayıcıları](#by-imei-all-platforms)|
-| Kurumsal Cihaz Kayıt profili| İlke > Kurumsal Cihaz Kaydı | [Cihazları Kaydet > Apple Kaydı > Kayıt Programı Profilleri](#where-did-corporate-pre-enrolled-devices-go) |
-| Kurumsal Cihaz Kayıt profili | İlke > Kurumsal Cihaz Kaydı | [Cihazları Kaydet > Apple Kaydı > AC Profilleri](#where-did-corporate-pre-enrolled-devices-go) |
+|Cihaz Kayıt Programı (DEP) |Yönetim > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Cihaz Kayıt Programı|[Cihaz kaydı > Apple Kaydı > Kayıt Programı Belirteci](#where-did-apple-dep-go) |
+|Cihaz Kayıt Programı (DEP)| Yönetim > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Cihaz Kayıt Programı |[Cihaz kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-apple-dep-go) |
+|Kayıt Kuralları |Yönetim > Mobil Cihaz Yönetimi > Kayıt Kuralları|[Cihaz kaydı > Kayıt Kısıtlamaları](#where-did-enrollment-rules-go) |
+|iOS Seri Numarası'na Göre Gruplar |Gruplar > Tüm Cihazlar > Kurumsal Ön kayıtlı cihazlar > iOS Seri Numarası'na göre|[Cihaz kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-corporate-pre-enrolled-devices-go) |
+|iOS Seri Numarası'na Göre Gruplar |Gruplar > Tüm Cihazlar > Kurumsal Ön kayıtlı cihazlar > iOS Seri Numarası'na göre| [Cihaz kaydı > Apple Kaydı > AC Seri numaraları](#where-did-corporate-pre-enrolled-devices-go)|
+|IMEI'ye Göre Gruplar (tüm platformlar)| Gruplar > Tüm Cihazlar > Kurumsal Ön kayıtlı cihazlar > IMEI'ye göre (Tüm platformlar) | [Cihaz kaydı > Kurumsal Cihaz Tanımlayıcıları](#by-imei-all-platforms)|
+| Kurumsal Cihaz Kayıt profili| İlke > Kurumsal Cihaz Kaydı | [Cihaz kaydı > Apple Kaydı > Kayıt Programı Profilleri](#where-did-corporate-pre-enrolled-devices-go) |
+| Kurumsal Cihaz Kayıt profili | İlke > Kurumsal Cihaz Kaydı | [Cihaz kaydı > Apple Kaydı > AC Profilleri](#where-did-corporate-pre-enrolled-devices-go) |
 
 
 ## <a name="where-do-i-manage-groups"></a>Grupları nereden yönetebilirim?

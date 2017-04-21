@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
-ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
-ms.lasthandoff: 04/05/2017
+ms.sourcegitcommit: 15415f9f31d520d66257df3a7e134e4b1de8467c
+ms.openlocfilehash: 8c9e6b39ee01697d993e5738ec35e8a64fc8e236
+ms.lasthandoff: 04/07/2017
 
 ---
 
@@ -28,10 +28,10 @@ ms.lasthandoff: 04/05/2017
 
 Bir BT yöneticisi olarak, şirkete ait cihazları tanımlamak için kullanılan Uluslararası Mobil Donanım Kimliği (IMEI) numaralarının listelendiği bir virgülle ayrılmış değerler (.csv) dosyası oluşturabilir ve içeri aktarabilirsiniz. Her IMEI numarasının, listede yönetim amacıyla belirtilen ayrıntıları bulunabilir.
 
-Şirketin sahip olduğu cihazlar için yüklediğiniz seri numaralarının şirket kaydı profili ile eşleştirilmesi gerekir. Ardından cihazların şirkete ait görünmesi için Apple'ın cihaz kayıt programı (DEP) veya Apple Configurator kullanılarak kaydedilmesi gerekir. 
+<!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
-## <a name="create-a-csv-file"></a>.csv dosyası oluşturma
-Listeyi oluşturmak için iki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. Sol sütuna IMEI tanımlayıcısını ve sağ sütuna ayrıntıları ekleyin. Ayrıntılar 128 karakterle sınırlıdır. Her .csv dosyası için geçerli sınır 500 satırdır.
+## <a name="add-corporate-identifiers"></a>Kurumsal tanımlayıcılar ekleme
+Listeyi oluşturmak için iki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. Sol sütuna IMEI tanımlayıcısını ve sağ sütuna ayrıntıları ekleyin. Ayrıntılar 128 karakterle sınırlıdır ve yalnızca yönetimsel kullanım içindir. Ayrıntılar cihazda görüntülenmez. Her .csv dosyası için geçerli sınır 500 satırdır.
 
 **Seri numaraları olan bir .csv dosyası yükleme** – Üst bilgi içermeyen, iki sütunlu, virgülle ayrılmış değer (.csv) listesini oluşturun ve .csv dosyası başına 5.000 cihaz veya 5 MB ile sınırlayın.
 
@@ -40,35 +40,37 @@ Listeyi oluşturmak için iki sütunlu, üst bilgisi olmayan bir virgülle ayrı
 |&lt;IMEI 1&gt;|&lt;Cihaz 1 Ayrıntıları&gt;|
 |&lt;IMEI 2&gt;|&lt;Cihaz 2 Ayrıntıları&gt;|
 
-    This .csv file when viewed in a text editor appears as:
+Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki gibi görünür:
 
-    ```
-    01 234567 890123,device details
-    02 234567 890123,device details
-    ```
+```
+01 234567 890123,device details
+02 234567 890123,device details
+```
+
+
+> [!IMPORTANT]
+> Bazı Android cihazları birden çok IMEI numarasına sahiptir. Intune, cihaz başına bir IMEI numarası envanteri oluşturur. IMEI numarasını içeri aktarıyorsanız, ancak bu numara Intune tarafından envantere alınan IMEI numarası değilse, cihaz şirkete ait cihaz olarak değil, kişisel cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız, envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değeri görüntüler.
 
 **Kurumsal tanımlayıcıları içeren .csv listesini eklemek için**
 
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2. Intune dikey penceresinde **Cihazları kaydet**’i ve ardından **Kurumsal Cihaz Tanımlayıcıları**’nı seçin.
+2. Intune dikey penceresinde **Cihaz kaydı** > **Kayıt Kısıtlamaları**, **Kurumsal Cihaz Tanımlayıcıları**'nı seçin ve **Ekle**'ye tıklayın.
 
-3. Mevcut ayrıntıların üzerine yazılacak yeni ayrıntılar içeren bir dosyayı içeri aktarıyorsanız, mevcut ayrıntıların yerini yenilerinin alması için **Mevcut tanımlayıcıların ayrıntılarının üzerine yazın** seçeneğini kullanın.
+3. **Tanımlayıcıları Ekle** dikey penceresinde **IMEI** tanımlayıcı türünü seçin. Önceden içeri aktarılan numaralar için **Mevcut tanımlayıcıların ayrıntılarının üzerine yazın** seçeneğini belirleyebilirsiniz.  
 
-4. IMEI CSV dosyasına gidin ve **Ekle**’yi seçin.
-
-> [!IMPORTANT]
-> Bazı Android cihazları birden çok IMEI numarasına sahiptir. Intune, cihaz başına bir IMEI numarası envanteri oluşturur. IMEI numarasını içeri aktarıyorsanız, ancak bu numara Intune tarafından envantere alınan IMEI numarası değilse, cihaz şirkete ait cihaz olarak değil, kişisel cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız, envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değeri görüntüler.
+4. Klasör simgesine tıklayın ve içeri aktarmak istediğiniz listenin yolunu belirtin. IMEI CSV dosyasına gidin ve **Ekle**’yi seçin.
 
 İçeri aktarıldıktan sonra, bu cihazlar kaydedilebilir veya kaydedilmeyebilir ve durumları **Kayıtlı** veya **Bağlantı kurulmadı** olur. **Bağlantı kurulmadı**, cihazın Intune hizmetiyle hiç iletişim kurmadığı anlamına gelir.
 
-## <a name="delete-a-csv-list"></a>.csv listesini silme
+## <a name="delete--corporate-identifiers"></a>Kurumsal tanımlayıcıları silme
 
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2. Intune dikey penceresinde **Cihazları kaydet**’i ve ardından **Kurumsal Cihaz Tanımlayıcıları**’nı seçin.
+2. Intune dikey penceresinde **Cihaz kaydı** > **Kayıt Kısıtlamaları**, **Kurumsal Cihaz Tanımlayıcıları**'nı seçin ve **Sil**'e tıklayın.
 
-3. **Sil**’i seçin.
+3. **Tanımlayıcıları Sil** dikey penceresinde silinecek cihazların tanımlayıcılarının yer aldığı .csv dosyasını bulun ve **Sil**'e tıklayın.
 
+## <a name="imei-specifications"></a>IMEI belirtimleri
 Uluslararası Mobil Donanım Kimlikleri (IMEI) hakkındaki ayrıntılı belirtimler için bkz. [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 

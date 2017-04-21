@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
+ms.sourcegitcommit: 3c5744e7c1290bf9016bc03dcb2db9a1bd9f43dd
+ms.openlocfilehash: 031820d505e0e9cb007e47a5397934d0e505aed4
+ms.lasthandoff: 04/10/2017
 
 
 ---
@@ -47,7 +48,7 @@ Ana kullanım örneği senaryolarınızı tanımladıktan sonra, her kullanım �
 
 -   Bilgi noktası
 
-Kullanım örneği ve alt kullanım örneği senaryolarına birkaç örnek burada verilmiştir. Kuruluşunuzun kullanım örneğini ve alt kullanım örneği senaryolarını girmek için aşağıdaki tablodan yararlanabilirsiniz:
+Kullanım örneği ve alt kullanım örneği senaryolarına birkaç örnek burada verilmiştir. Kuruluşunuzun kullanım örneğini ve alt kullanım örneği senaryolarını girmek için aşağıdaki tabloyu kullanabilirsiniz:
 
 | **Kullanım örnekleri** | **Alt kullanım örnekleri** |
 |:---:|:---:|
@@ -81,12 +82,7 @@ Burada her bir kullanım örneği senaryosuyla ilişkili mobil cihaz platformlar
 | KCG | Bilgi çalışanı | Pazarlama, Satış | iOS |                                                           
 | KCG | Yöneticiler | Pazarlama, Satış | iOS |
 
-## <a name="next-section"></a>Sonraki Bölüm
+## <a name="next-steps"></a>Sonraki adımlar
 
 Sonraki bölümde [Her kullanım örneği senaryosu için Intune gereksinimlerini tanımlama](section-3-determine-use-case-requirements.md) hakkında yönergeler sağlanır.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
