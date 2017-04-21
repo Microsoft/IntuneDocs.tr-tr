@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 1781600f82b37ba76fe072d3a0e6557504de3b46
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: bb0fe422999246fd40dae16299cf3154b7d7f97b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +35,7 @@ Aşağıdaki adımlar, gerekli sertifikayı almanıza ve uygulamaları imzalaman
    Şirket hesabınızı satın almak için oturum açarken kurumsal hesap bilgilerini kullanarak [Windows Phone Geliştirici Merkezi](http://go.microsoft.com/fwlink/?LinkId=268442) 'ne katılın. Bu istek, kod imzalama sertifikası sizin tarafınızdan alınmadan önce bir şirket yetkilisi tarafından yetkilendirilmelidir.
 
 2. **Şirket Symantec sertifikası alma**<br>
-  Symantec ID'nizi kullanarak [Symantec web sitesinden](http://go.microsoft.com/fwlink/?LinkId=268441) bir sertifika satın alın. Sertifikayı satın aldıktan sonra, Windows Phone Geliştirici Merkezi hesabınızda belirlediğiniz şirket onaylayanı, sertifika isteğinin onaylanmasını isteyen bir e-posta alır. Symantec sertifika gereksinimi hakkında daha fazla bilgi için bkz. [Windows Phone neden Symantec sertifikası gerektiriyor?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) Windows cihaz kaydı SSS.
+  Symantec ID'nizi kullanarak [Symantec web sitesinden](http://go.microsoft.com/fwlink/?LinkId=268441) bir sertifika satın alın. Sertifikayı satın aldıktan sonra, Windows Phone Geliştirici Merkezi hesabınızda belirlediğiniz şirket onaylayanı, sertifika isteğinin onaylanmasını isteyen bir e-posta alır. Symantec sertifika gereksinimi hakkında daha fazla bilgi için bkz. [Windows Phone neden Symantec sertifikası gerektiriyor?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows cihaz kaydı SSS.
 
 3.  **Sertifikaları içeri aktarma**<br>
     İstek onaylandıktan sonra sertifikaları içeri aktarmaya yönelik yönergeler içeren bir e-posta alacaksınız. Sertifikaları içeri aktarmak için e-postadaki yönergeleri izleyin.

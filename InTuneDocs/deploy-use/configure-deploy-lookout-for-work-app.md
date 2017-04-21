@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: ad1133d17f8d64c79c08437b914ae28e00cae638
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -57,7 +57,7 @@ Bu makalede, Android ve iOS cihazlarda Lookout for Work uygulamasının nasıl y
 
 1. Cihazınızda **iOS yönetimi** ayarlandığından emin olun. Cihazınızı iOS yönetimi için ayarlama konusunda yönergeler için bkz. [iOS ve Mac yönetimini ayarlama](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
-2. Lookout for Work iOS uygulamasını **yeniden imzalayın**. Lookout, Lookout for Work iOS uygulamasını iOS App Store dışında dağıtır. **Uygulamayı dağıtmadan önce**, uygulamayı iOS Enterprise Developer Certificate ile yeniden imzalamanız gerekir. Lookout for Work iOS uygulamalarını yeniden imzalama hakkında ayrıntılı yönergeler için Lookout sitesinde bkz. [Lookout for Work iOS uygulamasını yeniden imzalama işlemi](https://personal.support.lookout.com/hc/en-us/articles/114094038714).
+2. Lookout for Work iOS uygulamasını **yeniden imzalayın**. Lookout, Lookout for Work iOS uygulamasını iOS App Store dışında dağıtır. **Uygulamayı dağıtmadan önce**, uygulamayı iOS Enterprise Developer Certificate ile yeniden imzalamanız gerekir. Lookout for Work iOS uygulamalarını yeniden imzalama hakkında ayrıntılı yönergeler için Lookout sitesinde bkz. [Lookout for Work iOS uygulamasını yeniden imzalama işlemi](https://personal.support.lookout.com/hc/articles/114094038714).
 
 3. iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere aşağıdakileri yapın:
   1.  [Azure Active Directory yönetim portalı](https://manage.windowsazure.com)’nda oturum açın ve uygulama sayfasına gidin.
@@ -67,13 +67,13 @@ Bu makalede, Android ve iOS cihazlarda Lookout for Work uygulamasının nasıl y
   4.  **&lt;companyportal://code/ >** ek yeniden yönlendirme URI'sini ve ardından özgün yeniden yönlendirme URI’nizin URL kodlu sürümünü ekleyin.
   5.  Uygulamanıza **Temsilci İzinleri** ekleyin.
 
-  Daha fazla ayrıntı için bkz. [Bir yerel istemci uygulaması yapılandırma](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
+  Daha fazla ayrıntı için bkz. [Bir yerel istemci uygulaması yapılandırma](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
 
-4. Yeniden imzalanan .ipa dosyasını [Microsoft Intune’da mobil cihazlar için uygulama ekleme](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) bölümünde açıklandığı gibi karşıya yükleyin. En düşük işletim sistemi sürümünü iOS 8.0 veya üzeri olarak ayarlayın.
+4. Yeniden imzalanan .ipa dosyasını [Microsoft Intune’da mobil cihazlar için uygulama ekleme](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) bölümünde açıklandığı gibi karşıya yükleyin. En düşük işletim sistemi sürümünü iOS 8.0 veya üzeri olarak ayarlayın.
 
   ![Intune yönetici konsolundaki uygulamalar sayfasında Lookout for Work’ün uygulama listesinde gösterildiği ekran görüntüsü](../media/mtp/ios-app-uploaded-intune.png)
 
-5. Yönetilen uygulama yapılandırma ilkesini, [iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](https://docs.microsoft.com/en-us/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) bölümünde açıklandığı gibi oluşturun.
+5. Yönetilen uygulama yapılandırma ilkesini, [iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) bölümünde açıklandığı gibi oluşturun.
 
   ![iOS 8.0 veya üzeri yapılandırma ilkesi vurgulanmış olarak yeni ilke oluştur sihirbazının ekran görüntüsü](../media/mtp/ios-app-config.png)
 

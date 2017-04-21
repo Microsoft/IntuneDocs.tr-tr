@@ -15,8 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c47106ddfebcd1df8c1bc5090bf3f047015b6c45
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ Bu hızlı başlangıç kılavuzu aşağıdaki önkoşulları karşılıyorsanı
 > [!NOTE]
 > Windows henüz Office mobil uygulamalar için desteklenen bir platform değildir. Kayıt olmadan mobil uygulama yönetimi henüz Exchange veya SharePoint şirket içi ile uyumlu değildir. Yalnızca çevrimiçi sürümlerde barındırılan verileri koruyabilirsiniz.
 
-Bu kılavuz, herhangi bir cihaz yönetimi çözümüne kaydolma gereksinimi olmadan, çalışanlarınızın hassas verilere erişmek için kullandığı mobil uygulamalarda kullanılan ilkelerle geçiş kodları ve veri şifrelemeyi zorunlu hale getirerek şirketinizi veri kaybından korumanıza yardımcı olabilir. Microsoft Intune, [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) ve [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android) için Office mobil uygulamalarında mobil uygulama yönetimi (MAM) ilkeleri ayarlamanıza olanak tanır. Bu yaklaşım, kullanıcıların cihazlarını bir mobil cihaz yönetimi çözümüne kaydetmelerini gerektirmeden O365 verilerini korurken Office mobil uygulamalarında da çok iyi bir son kullanıcı deneyimi sağlar.
+Bu kılavuz, herhangi bir cihaz yönetimi çözümüne kaydolma gereksinimi olmadan, çalışanlarınızın hassas verilere erişmek için kullandığı mobil uygulamalarda kullanılan ilkelerle geçiş kodları ve veri şifrelemeyi zorunlu hale getirerek şirketinizi veri kaybından korumanıza yardımcı olabilir. Microsoft Intune, [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) ve [Android](https://products.office.com/mobile/office-mobile-apps-for-android) için Office mobil uygulamalarında mobil uygulama yönetimi (MAM) ilkeleri ayarlamanıza olanak tanır. Bu yaklaşım, kullanıcıların cihazlarını bir mobil cihaz yönetimi çözümüne kaydetmelerini gerektirmeden O365 verilerini korurken Office mobil uygulamalarında da çok iyi bir son kullanıcı deneyimi sağlar.
 
 ## <a name="how-do-i-do-it"></a>Bunu nasıl yaparım?
 1.    [Uygulama verilerinizi nasıl koruyabileceğinizi gözden geçirme](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -50,10 +51,5 @@ Bu kılavuz, herhangi bir cihaz yönetimi çözümüne kaydolma gereksinimi olma
 ## <a name="additional-information"></a>Ek bilgiler:
 - [MAM etkin uygulamalar için Microsoft Intune ile son kullanıcı deneyimi hakkında bilgi edinin.](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verin.](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- [Microsoft Intune uygulaması iş ortaklarının listesini görüntüleme](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+- [Microsoft Intune uygulaması iş ortaklarının listesini görüntüleme](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
 

@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,7 +62,7 @@ Intune’un uygulanması sırasındaki her göreve genel bir bakış aşağıdad
 
 Önceki gereksinimler bölümünde tanımlandığı gibi bir EMS veya Intune aboneliği gereklidir. Kuruluşunuz bir EMS veya Intune aboneliğine sahip değilse Enterprise Mobility + Security (EMS) veya Intune satın almak için lütfen Microsoft ile veya Microsoft Hesap Ekibinizle temasa geçin.
 
--   [Microsoft Intune satın alma](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) hakkında daha fazla bilgi edinin.
+-   [Microsoft Intune satın alma](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing) hakkında daha fazla bilgi edinin.
 
 #### <a name="task-2-add-office-365-subscription"></a>Görev 2: Office 365 aboneliği ekleme
 
@@ -115,7 +116,7 @@ Microsoft Intune E-posta, Wi-Fi ve VPN profillerini destekler. Profillerin eklen
 
 Microsoft Intune; Web, LOB ve Genel Mağaza Uygulamalarının dağıtımını destekler. Ek olarak, MAM ilkeleriyle ilişkilendirerek Intune SDK’sını tümleştiren uygulamaların yönetimi de desteklenir. Uygulamaların eklenmesi ve dağıtılması, Intune Yönetim Portalı'nda Uygulama çalışma alanında gerçekleştirilir. MAM ilkelerinin eklenmesi ve dağıtılması, Intune Yönetim Portalı'nda İlke çalışma alanında gerçekleştirilir. Uygulamaları gerektiği gibi ekleyin ve Intune dağıtım kullanım örneklerinize ve gereksinimlerinize göre hedeflenen gruplara dağıtın.
 
--   [Uygulama ekleme ve dağıtma](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps) hakkında daha fazla bilgi edinin.
+-   [Uygulama ekleme ve dağıtma](https://docs.microsoft.com/intune/deploy-use/deploy-apps) hakkında daha fazla bilgi edinin.
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>Görev 11: Uyumluluk ilkelerini ekleme ve dağıtma
 
@@ -141,9 +142,4 @@ Intune; iOS, Mac OS, Android, Windows masaüstü ve Windows mobil cihaz platform
 ## <a name="next-section"></a>Sonraki Bölüm
 
 Sonraki bölüm [Intune dağıtımınızı sınama ve doğrulama](section-9-test-and-validation.md) hakkında yönergeler sağlar.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

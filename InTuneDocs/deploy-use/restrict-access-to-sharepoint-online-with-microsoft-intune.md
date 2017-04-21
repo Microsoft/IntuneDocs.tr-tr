@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
-ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ Kullanıcı cihazında OneDrive gibi desteklenen bir uygulama kullanarak bir dos
 
 SharePoint Online için koşullu erişim ilkesini yapılandırmadan **önce**:
 - **SharePoint Online aboneliğiniz** olmalıdır ve kullanıcılar SharePoint Online lisansına sahip olmalıdır.
-- **Enterprise Mobility + Security (EMS) aboneliğiniz** veya bir **Azure Active Directory (Azure AD) Premium aboneliğiniz** olmalıdır ve kullanıcılar EMS veya Azure AD lisansına sahip olmalıdır. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- **Enterprise Mobility + Security (EMS) aboneliğiniz** veya bir **Azure Active Directory (Azure AD) Premium aboneliğiniz** olmalıdır ve kullanıcılar EMS veya Azure AD lisansına sahip olmalıdır. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
   Gerekli dosyalara bağlanmak için bir cihazın:
@@ -59,10 +60,10 @@ Bir koşul karşılanmazsa, kullanıcı oturum açtığında şu iletilerden bir
 
 -   Cihaz uyumlu değilse, kullanıcıyı sorun ve sorunun nasıl çözüleceğiyle ilgili bilgileri bulabileceği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Şirket Portalı web sitesine yönlendiren bir ileti görüntülenir.
 
-**Koşullu erişim şirket dışı paylaşım için geçerli değildir**. Kiracınız veya site koleksiyonunuz için şirket dışı paylaşımı nasıl engelleyeceğinizi öğrenmek için bkz. [SharePoint Online ortamınız için şirket dışı paylaşımı yönetme](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**Koşullu erişim şirket dışı paylaşım için geçerli değildir**. Kiracınız veya site koleksiyonunuz için şirket dışı paylaşımı nasıl engelleyeceğinizi öğrenmek için bkz. [SharePoint Online ortamınız için şirket dışı paylaşımı yönetme](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
 >[!NOTE]
->SharePoint Online için koşullu erişimi etkinleştirirseniz, [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) konu başlığı altında açıklandığı gibi listedeki etki alanını devre dışı bırakmanızı öneririz.  
+>SharePoint Online için koşullu erişimi etkinleştirirseniz, [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx) konu başlığı altında açıklandığı gibi listedeki etki alanını devre dışı bırakmanızı öneririz.  
 
 ## <a name="support-for-mobile-devices"></a>Mobil cihaz desteği
 Aşağıdakiler desteklenir:
@@ -84,7 +85,7 @@ Aşağıdakiler desteklenir:
 > [!NOTE]
 >Windows 10 bilgisayarlar ile koşullu erişim kullanmak için bu bilgisayarları Windows 10 Yıldönümü Güncelleştirmesi ile güncelleştirmeniz gerekir.
 
-  - Etki alanına katılmış bilgisayarları, Azure Active Directory’ye [otomatik olarak kaydedilecek](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) şekilde ayarlamanız gerekir. Azure AD Cihaz Kayıt hizmeti, Intune ve Office 365 müşterileri için otomatik olarak etkinleştirilir. ADFS Cihaz Kayıt hizmetini zaten dağıtan müşteriler, kayıtlı cihazlarını şirket içi Active Directory'de görmez.
+  - Etki alanına katılmış bilgisayarları, Azure Active Directory’ye [otomatik olarak kaydedilecek](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) şekilde ayarlamanız gerekir. Azure AD Cihaz Kayıt hizmeti, Intune ve Office 365 müşterileri için otomatik olarak etkinleştirilir. ADFS Cihaz Kayıt hizmetini zaten dağıtan müşteriler, kayıtlı cihazlarını şirket içi Active Directory'de görmez.
 
   - İlke bir etki alanına katılmayı gerektirecek şekilde ayarlanmışsa ve bilgisayar etki alanına katılmamışsa, BT yöneticisine başvurulması gerektiğini belirten bir ileti görüntülenir.
 
@@ -92,7 +93,7 @@ Aşağıdakiler desteklenir:
   >[!NOTE]
   >Intune bilgisayar istemcisi çalıştıran bilgisayarlarda koşullu erişim desteklenmez.
 
-[Office 365 modern kimlik doğrulamasının etkin olması](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) ve en son Office güncelleştirmelerine sahip olması gerekir.
+[Office 365 modern kimlik doğrulamasının etkin olması](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) ve en son Office güncelleştirmelerine sahip olması gerekir.
 
 Modern kimlik doğrulama, Office 2013 Windows istemcileri için Active Directory Kimlik Doğrulama Kitaplığı (ADAL) tabanlı oturum açma özelliği sunar ve **çok faktörlü kimlik doğrulaması** ile **sertifika tabanlı kimlik doğrulaması** gibi daha üst düzey güvenlik sağlar.
 
@@ -129,7 +130,7 @@ Hazır olduğunuzda **3. Adım**’a geçin.
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> Azure AD yönetim konsolunda Intune cihazları için koşullu erişim ilkesi de oluşturabilirsiniz (ilke Azure AD’de **cihaz tabanlı koşullu erişim ilkesi** olarak adlandırılır). Ayrıca, çok faktörlü kimlik doğrulaması gibi diğer koşullu erişim ilkeleri de oluşturabilirsiniz. Salesforce ve Box gibi Azure AD tarafından desteklenen kurumsal üçüncü taraf uygulamaları için de koşullu erişim ilkeleri ayarlayabilirsiniz. Daha fazla ayrıntı için bkz. [Azure Active Directory bağlı uygulamalarda erişim denetimi için Azure Active Directory cihaz tabanlı koşullu erişim ilkesini ayarlama](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> Azure AD yönetim konsolunda Intune cihazları için koşullu erişim ilkesi de oluşturabilirsiniz (ilke Azure AD’de **cihaz tabanlı koşullu erişim ilkesi** olarak adlandırılır). Ayrıca, çok faktörlü kimlik doğrulaması gibi diğer koşullu erişim ilkeleri de oluşturabilirsiniz. Salesforce ve Box gibi Azure AD tarafından desteklenen kurumsal üçüncü taraf uygulamaları için de koşullu erişim ilkeleri ayarlayabilirsiniz. Daha fazla ayrıntı için bkz. [Azure Active Directory bağlı uygulamalarda erişim denetimi için Azure Active Directory cihaz tabanlı koşullu erişim ilkesini ayarlama](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **SharePoint Online İlkesi**’ni seçin.
@@ -195,9 +196,4 @@ Herhangi bir mobil cihaz grubu seçin. Ardından, **Cihazlar** sekmesinde aşağ
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ile e-posta ve O365 hizmetlerine erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

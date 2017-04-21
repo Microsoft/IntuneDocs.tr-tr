@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2fd7ebc53c3b033982297dbce4a091cd9336fbb1
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -136,7 +137,7 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 #### <a name="how-to-specify-urls-to-app-stores"></a>Uygulama mağazalarının URL'lerini belirtme
 İzin verilen veya engellenen uygulamalar listesinde bir uygulama URL'si belirtmek için aşağıdaki biçimi kullanın:
 
-[Windows Phone Uygulamaları + Oyunlar](http://www.windowsphone.com/en-us/store/overview) sayfasında, kullanmak istediğiniz uygulamayı arayın.
+[Windows Phone Uygulamaları + Oyunlar](http://www.windowsphone.com/store/overview) sayfasında, kullanmak istediğiniz uygulamayı arayın.
 
 Uygulamanın sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu izin verilen veya engellenen uygulamalar listesinde URL olarak kullanabilirsiniz.
 
@@ -172,9 +173,4 @@ Windows Phone cihazlar için OMA-URI ayarlarını oluşturmanıza yardımcı olm
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ Intune yönetici konsolunda uygulama koruma ilkesi oluşturma yönergeleri için
 - Windows 10
 
 >[!NOTE]
->1703 sürümünden başlayarak kayıt olmadan MAM senaryosunda Windows 10 cihazları için uygulama koruma ilkeleri tanımlanabilir. Ayrıntılar için bkz. [Windows Bilgi Koruması’nı (WIP) kullanarak kurumsal verilerinizi koruma](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>1703 sürümünden başlayarak kayıt olmadan MAM senaryosunda Windows 10 cihazları için uygulama koruma ilkeleri tanımlanabilir. Ayrıntılar için bkz. [Windows Bilgi Koruması’nı (WIP) kullanarak kurumsal verilerinizi koruma](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>Desteklenen uygulamalar
 * **Microsoft uygulamaları:** Bu uygulamalarda Intune App SDK’sı yerleşik olarak bulunur ve uygulama koruma ilkelerini uygulamadan önce başka işlem yapmanız gerekmez.
-Desteklenen Microsoft uygulamalarının tam listesini görmek için Microsoft Intune uygulama iş ortakları sayfasında [Microsoft Intune mobil uygulama galerisine](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) gidin. Desteklenen senaryoları ve platformları görmek, ayrıca uygulamanın birden çok kimliği destekleyip desteklemediğini anlamak için, uygulamaya tıklayın.
+Desteklenen Microsoft uygulamalarının tam listesini görmek için Microsoft Intune uygulama iş ortakları sayfasında [Microsoft Intune mobil uygulama galerisine](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) gidin. Desteklenen senaryoları ve platformları görmek, ayrıca uygulamanın birden çok kimliği destekleyip desteklemediğini anlamak için, uygulamaya tıklayın.
 
 * **Kuruluşunuzun iş kolu uygulamaları:** uygulama koruma ilkelerini uygulamadan önce bu uygulamaları Intune Uygulama SDK’sını içerecek şekilde hazırlamanız gerekir.
 
@@ -76,7 +76,7 @@ Desteklenen Microsoft uygulamalarının tam listesini görmek için Microsoft In
 ## <a name="prerequisites"></a>Önkoşullar
 
 -   **Microsoft Intune Aboneliği**. Kullanıcıların, uygulama koruma ilkeleri olan uygulamaları alabilmesi için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisanslarına sahip olmaları gerekir.
-Şu anda cihazlarınızı yönetmek için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanıyorsanız [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz zaten vardır. Ayrıca, bir Enterprise Mobility Suite (EMS) lisansı satın aldıysanız da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz vardır. MAM özelliklerini kullanıma almak için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uygulamasını deniyorsanız [Microsoft Intune sayfasında](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/) bir deneme hesabı alabilirsiniz.
+Şu anda cihazlarınızı yönetmek için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanıyorsanız [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz zaten vardır. Ayrıca, bir Enterprise Mobility Suite (EMS) lisansı satın aldıysanız da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz vardır. MAM özelliklerini kullanıma almak için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uygulamasını deniyorsanız [Microsoft Intune sayfasında](https://www.microsoft.com/server-cloud/products/microsoft-intune/) bir deneme hesabı alabilirsiniz.
 
     [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz olduğunu doğrulamak için **Faturalama** sayfasına gidin.  Aboneliğiniz varsa, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] seçeneğini aboneliklerde **Etkin** olarak görmeniz gerekir.
 
@@ -98,13 +98,13 @@ Desteklenen Microsoft uygulamalarının tam listesini görmek için Microsoft In
 
 1.  Yönetici kimlik bilgilerinizle [Office portalında](http://portal.office.com) oturum açın.
 
-2.  **Intune değerlendirme kılavuzu**’nun [Intune 30 günlük değerlendirmesini tamamlamak için adımlar](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) bölümünde açıklandığı gibi kullanıcıları ekleyin ve ardından Intune lisanslarını atayın. Bir kullanıcıya Office portalı, Azure AD portalı ve Azure önizleme portalı erişimi vermek için, kullanıcıya **Genel yönetici rolü** atayın.
+2.  **Intune değerlendirme kılavuzu**’nun [Intune 30 günlük değerlendirmesini tamamlamak için adımlar](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) bölümünde açıklandığı gibi kullanıcıları ekleyin ve ardından Intune lisanslarını atayın. Bir kullanıcıya Office portalı, Azure AD portalı ve Azure önizleme portalı erişimi vermek için, kullanıcıya **Genel yönetici rolü** atayın.
 
-5.  Uygulama koruma ilkeleri Azure Active Directory'deki kullanıcı gruplarına dağıtılır. Uygulama koruma ilkelerinize yönelik kullanıcı grupları oluşturmak için **Değerlendirme aboneliği kullanıcılarını ve cihazlarını düzenlemek için gruplar oluşturun** konusunun [Kullanıcı grubu oluşturma](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3) bölümünde açıklandığı gibi bir kullanıcı grubu oluşturun.
+5.  Uygulama koruma ilkeleri Azure Active Directory'deki kullanıcı gruplarına dağıtılır. Uygulama koruma ilkelerinize yönelik kullanıcı grupları oluşturmak için **Değerlendirme aboneliği kullanıcılarını ve cihazlarını düzenlemek için gruplar oluşturun** konusunun [Kullanıcı grubu oluşturma](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3) bölümünde açıklandığı gibi bir kullanıcı grubu oluşturun.
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>Genel olmayan yönetici kullanıcılara roller atama
 
-Genel yöneticiler [Azure portalına](https://portal.azure.com) erişebilir.  Genel yönetici olmayan kullanıcıların ilkeleri yapılandırabilmesini ve diğer mobil uygulama yönetim görevlerini yapabilmesini istiyorsanız, [Azure abonelik kaynaklarınıza erişimi yönetmek için rol atamalarını kullanma](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/) makalesini inceleyin.
+Genel yöneticiler [Azure portalına](https://portal.azure.com) erişebilir.  Genel yönetici olmayan kullanıcıların ilkeleri yapılandırabilmesini ve diğer mobil uygulama yönetim görevlerini yapabilmesini istiyorsanız, [Azure abonelik kaynaklarınıza erişimi yönetmek için rol atamalarını kullanma](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/) makalesini inceleyin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Microsoft Intune ile uygulama koruma ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

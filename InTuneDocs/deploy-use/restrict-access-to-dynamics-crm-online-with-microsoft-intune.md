@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ Microsoft Dynamics CRM Online’a erişimi, iOS ve Android cihazlardan, Microsof
 Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [e-posta, 0365 ve diğer hizmetlere erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
 
 > [!IMPORTANT]
-> Koşullu erişim dağıtmak için Intune ve Azure Active Directory Premium abonelikleriniz olmalıdır ve kullanıcılar her iki ürünün de lisansına sahip olmalıdır. **Enterprise Mobility + Security (EMS) aboneliği** hem Intune hem de Azure Active Directory Premium abonelikleri içerir. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). EMS aboneliğiniz yoksa Azure Active Directory Premium aboneliği alabilirsiniz. Bkz. [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+> Koşullu erişim dağıtmak için Intune ve Azure Active Directory Premium abonelikleriniz olmalıdır ve kullanıcılar her iki ürünün de lisansına sahip olmalıdır. **Enterprise Mobility + Security (EMS) aboneliği** hem Intune hem de Azure Active Directory Premium abonelikleri içerir. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing). EMS aboneliğiniz yoksa Azure Active Directory Premium aboneliği alabilirsiniz. Bkz. [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/pricing/details/active-directory/).
 
 Hedeflenen bir kullanıcı kendi cihazında Dynamics CRM uygulamasını kullanmayı denerse, aşağıdaki değerlendirme yapılır:
 
@@ -102,9 +103,4 @@ Herhangi bir mobil cihaz grubunu seçin ve ardından **Cihazlar** sekmesinde aş
 * [SharePoint Online’a erişimi koruma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [Skype Kurumsal Çevrimiçi Sürüm’e erişimi koruma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

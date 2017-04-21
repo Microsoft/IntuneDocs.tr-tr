@@ -15,8 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -89,7 +90,7 @@ Yeni oluşturulan grup **Gruplar** çalışma alanının **Gruplar** listesinde,
     > Şu anda, grubunuz belirli güvenlik veya yönetici gruplarından üyeler içeriyorsa ve bazı grupların üyelerini dışlıyorsanız, başlangıçta dahil ettiğiniz üyeler kaldırılır. Hem dahil edilen hem de dışlanan üyeleri olan bir grup oluşturmak için önce dahil edilen üyeleri içeren bir üst grup oluşturmanızı öneririz. Ardından, söz konusu üst grupta bir alt grup oluşturun. Yeni alt grupta dışlanan üyeleri listeleyin. Bundan sonra, Intune ilkeleri, profilleri ve uygulama dağıtımını yönetmek için bu alt grubu kullanın.
 
     > [!NOTE]
-    > Azure portalında kullanıcıların amiri olan yöneticilere göre gruplar oluşturabilirsiniz. Bu, dinamik bir grup türüdür ve Azure Active Directory’de söz konusu yöneticinin ekibine çalışanlar eklendikçe veya ekipten çalışanlar çıkarıldıkça değişir. Yönetici adını temel alan bir Azure grubu oluşturma, [Gelişmiş kurallar oluşturmak için öznitelikleri kullanma](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) altındaki **Grubu bir “Yönetici” grubu olarak yapılandırma** bölümünde açıklanır.
+    > Azure portalında kullanıcıların amiri olan yöneticilere göre gruplar oluşturabilirsiniz. Bu, dinamik bir grup türüdür ve Azure Active Directory’de söz konusu yöneticinin ekibine çalışanlar eklendikçe veya ekipten çalışanlar çıkarıldıkça değişir. Yönetici adını temel alan bir Azure grubu oluşturma, [Gelişmiş kurallar oluşturmak için öznitelikleri kullanma](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) altındaki **Grubu bir “Yönetici” grubu olarak yapılandırma** bölümünde açıklanır.
 
 4.  **Doğrudan Üyeliği Tanımla** sayfasında, **Gözat**'ı seçerek kullanıcıları tek tek dahil edin veya dışlayın. Belirttiğiniz üst grupta olmayan kullanıcıları seçerseniz, bu cihazlar otomatik olarak üst gruba eklenir. Kullanıcıyı el ile ekleme seçeneği **Üyeleri Seçin** iletişim kutusunun alt kısmında bulunabilir. Henüz kayıtlı cihazı olmayan bir kullanıcıyı eklemek isterseniz, bu seçenek yararlı olur.
 
@@ -151,9 +152,4 @@ Her ilkenin bir **Amaçlanan Değer** ‘i ve bir de **Durum**‘u vardır. Ama�
 
 > [!NOTE]
 > Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, gerçekte daha kısıtlayıcı olan ilkenin uygulanacağını unutmayın.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

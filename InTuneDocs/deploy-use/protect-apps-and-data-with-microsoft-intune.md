@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,14 +49,9 @@ Bu kurallar kümesine, [mobil uygulama yönetimi (MAM) ilkeleri](protect-app-dat
 
 Bir uygulamayı MAM ilkesiyle ilişkilendirmek için uygulama, Microsoft Intune Uygulaması Yazılım Geliştirme Seti’ni (SDK) içermelidir veya Uygulama Sarmalama Aracını kullanabilirsiniz.
 
-Microsoft Office uygulamaları gibi uygulamalarda Intune Uygulama SDK’sı tümleşiktir. Desteklenen uygulamaların tam listesini, Microsoft Intune uygulama iş ortakları sayfasında [Microsoft Intune mobil uygulama galerisinde](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) görebilirsiniz. Desteklenen senaryoları, platformları ve uygulamanın çoklu kimliği destekleyip desteklemediğini görmek için uygulamayı seçin.
+Microsoft Office uygulamaları gibi uygulamalarda Intune Uygulama SDK’sı tümleşiktir. Desteklenen uygulamaların tam listesini, Microsoft Intune uygulama iş ortakları sayfasında [Microsoft Intune mobil uygulama galerisinde](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) görebilirsiniz. Desteklenen senaryoları, platformları ve uygulamanın çoklu kimliği destekleyip desteklemediğini görmek için uygulamayı seçin.
 
 Ayrıca, MAM ilkeleriyle kullanmak üzere, [özel oluşturulan iş kolu uygulamalarınızı da etkinleştirebilirsiniz](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 Veri hareketini kısıtlamaya ek olarak, bir cihaz kaybedilirse veya çalınırsa ya da kullanıcı artık şirketinizde çalışmıyorsa, [şirket verilerini seçmeli olarak silerek](wipe-managed-company-app-data-with-microsoft-intune.md) yalnızca kişisel verileri bırakabilirsiniz.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

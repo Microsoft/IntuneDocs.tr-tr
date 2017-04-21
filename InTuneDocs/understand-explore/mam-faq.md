@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7447a85e03e38aa0f536ce008bae9f3c82528cec
-ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 
 **MAM nedir?** [Intune mobil uygulama yönetimi](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md), kullanıcılarınız için mobil uygulamaları yayımlama, gönderme, yapılandırma, güvenlik altına alma, izleme ve güncelleştirme gibi eylemler gerçekleştirmenize olanak tanıyan Intune yönetim özellikleri paketini ifade eder.
 
-**MAM uygulama korumanın avantajları nedir?** MAM, bir uygulama içindeki kuruluş verilerini korur. MAM-WE ile, hassas veriler içeren iş veya okul ile ilgili uygulamalar, kendi cihazını getir (KCG) senaryolarında kişisel cihazlar dahil neredeyse her cihazdan yönetilebilir. Microsoft Office uygulamaları gibi birçok üretkenlik uygulaması, Intune MAM tarafından yönetilebilir. Genel kullanıma uygun [Intune özellikli uygulamaların](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) resmi listesine bakın.
+**MAM uygulama korumanın avantajları nedir?** MAM, bir uygulama içindeki kuruluş verilerini korur. MAM-WE ile, hassas veriler içeren iş veya okul ile ilgili uygulamalar, kendi cihazını getir (KCG) senaryolarında kişisel cihazlar dahil neredeyse her cihazdan yönetilebilir. Microsoft Office uygulamaları gibi birçok üretkenlik uygulaması, Intune MAM tarafından yönetilebilir. Genel kullanıma uygun [Intune özellikli uygulamaların](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) resmi listesine bakın.
 
 **MAM hangi cihaz yapılandırmalarını destekler?** Intune MAM iki yapılandırmayı destekler:
   1. **Intune MDM + MAM**: Bu, MAM ilk kez başlatıldığında desteklenen ilk yapılandırmadır. BT yöneticileri, yalnızca Intune mobil cihaz yönetiminde (MDM) kayıtlı cihazlarda MAM ve uygulama koruma ilkelerini kullanarak uygulamaları yönetebilir. MDM + MAM kullanarak uygulamaları yönetmek için, müşterilerin http://manage.microsoft.com adresindeki Intune bağımsız konsolunu kullanması gerekir.
@@ -48,7 +49,7 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Uygulama koruma ilkeleri ile yönetebileceğiniz uygulamalar
 
-**Hangi uygulamalar uygulama koruma ilkeleri tarafından yönetilebilir?** [Intune App SDK’sı](../develop/intune-app-sdk.md) tarafından Intune özelliğinin tanıtıldığı veya [Intune Uygulaması Sarmalama Aracı](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) tarafından sarmalanan herhangi bir uygulama, Intune uygulama koruma ilkeleri kullanılarak yönetilebilir. Genel kullanıma sunulan [Intune özellikli uygulamaların](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) resmi listesine bakın.
+**Hangi uygulamalar uygulama koruma ilkeleri tarafından yönetilebilir?** [Intune App SDK’sı](../develop/intune-app-sdk.md) tarafından Intune özelliğinin tanıtıldığı veya [Intune Uygulaması Sarmalama Aracı](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) tarafından sarmalanan herhangi bir uygulama, Intune uygulama koruma ilkeleri kullanılarak yönetilebilir. Genel kullanıma sunulan [Intune özellikli uygulamaların](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) resmi listesine bakın.
 
 **Intune özellikli bir uygulamada uygulama koruma ilkelerini kullanmak için temel gereksinimler nelerdir?**
   1. Son kullanıcının bir Azure Active Directory (AAD) hesabı olması gerekir. Azure Active Directory’de Intune kullanıcılarını nasıl oluşturacağınızı öğrenmek için [Kullanıcı ekleme ve Intune'a yönetici izni verme](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) konusuna bakın.
@@ -59,18 +60,18 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 
   4. Son kullanıcının AAD hesabını kullanarak uygulamada oturum açması gerekir.
 
-**[Outlook mobil uygulamasını](https://www.microsoft.com/en-us/outlook-com/mobile/) kullanmak için ek gereksinimler nelerdir?**
+**[Outlook mobil uygulamasını](https://www.microsoft.com/outlook-com/mobile/) kullanmak için ek gereksinimler nelerdir?**
 
   1. Son kullanıcının cihazında Outlook mobil uygulamasının yüklü olması gerekir.
 
-  2. Son kullanıcının, Azure Active Directory hesabına bağlı bir [Office 365 Exchange Online](https://products.office.com/en-us/exchange/exchange-online) posta kutusuna ve lisansına sahip olması gerekir.
+  2. Son kullanıcının, Azure Active Directory hesabına bağlı bir [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) posta kutusuna ve lisansına sahip olması gerekir.
 
   >[!NOTE]
   > Outlook mobil uygulaması şu anda yalnızca Microsoft Exchange Online’ı destekler ve Exchange şirket içi sürümünü veya Office 365’e Özel Exchange’i desteklemez.
 
 **[Word, Excel ve PowerPoint](https://products.office.com/business/office) uygulamalarını kullanmak için ek gereksinimler nelerdir?**
 
-  1. Son kullanıcının Azure Active Directory hesabına bağlı bir [Office 365 İş veya Kurumsal](https://products.office.com/business/compare-more-office-365-for-business-plans) lisansına sahip olması gerekir. Aboneliğin mobil cihazlarda Office uygulamalarını ve [OneDrive İş](https://onedrive.live.com/about/business/)’te bir bulut depolama hesabını içermesi gerekir. Office 365 lisansları [Office portalında](http://portal.office.com) bu [yönergeler](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US) izlenerek atanabilir.
+  1. Son kullanıcının Azure Active Directory hesabına bağlı bir [Office 365 İş veya Kurumsal](https://products.office.com/business/compare-more-office-365-for-business-plans) lisansına sahip olması gerekir. Aboneliğin mobil cihazlarda Office uygulamalarını ve [OneDrive İş](https://onedrive.live.com/about/business/)’te bir bulut depolama hesabını içermesi gerekir. Office 365 lisansları [Office portalında](http://portal.office.com) bu [yönergeler](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) izlenerek atanabilir.
 
   2. Son kullanıcının, cihazında [OneDrive](https://onedrive.live.com/about/) uygulamasının yüklü olması ve AAD hesabıyla oturum açması gerekir.
 
@@ -140,9 +141,4 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 - [Mobil uygulama yönetimi kurulumunuzu doğrulama](../deploy-use/validate-mobile-application-management.md)
 - [Microsoft Intune ile mobil uygulama yönetimi ilkelerinizi yapılandırmak için hazırlanma](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Microsoft Intune için destek alma](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

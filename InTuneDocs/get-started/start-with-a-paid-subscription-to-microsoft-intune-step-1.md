@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: abeef923eb5c964ef1e306bbb2c25d0570959674
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -44,7 +45,7 @@ Zaten bir iş veya okul hesabınız varsa, Intune’u önceden var olan abonelik
 ## <a name="post-sign-up-considerations"></a>Kayıttan sonra dikkate alınacak noktalar
 Yeni abonelik için kaydolursanız, kayıt işlemi sırasında sağladığınız e-posta adresine hesap bilgilerinizi içeren bir e-posta iletisi alırsınız. Bu e-posta, aboneliğinizin etkin olduğunu doğrular.
 
-Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığıyla kullanıcıları eklemek ve onlara lisans atamak için kullanılan bir sayfaya yönlendirilirsiniz. Yalnızca varsayılan onmicrosoft.com etki alanı adınızın kullanıldığı bulut tabanlı hesaplarınız olacaksa, devam edip bu noktada kullanıcıları ekleyebilir ve lisansları atayabilirsiniz. Öte yandan, kuruluşunuzun özel etki alanı adını kullanacaksanız veya şirket içi Active Directory’den kullanıcı hesabı bilgilerini eşitlemek istiyorsanız, bu tarayıcı penceresini kapatabilir ve bu hızlı başlangıç kılavuzunun 2. adımına geçebilirsiniz. [Office 365'te, ilk onmicrosoft.com etki alanınız hakkında](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US) daha fazla bilgi edinebilirsiniz
+Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığıyla kullanıcıları eklemek ve onlara lisans atamak için kullanılan bir sayfaya yönlendirilirsiniz. Yalnızca varsayılan onmicrosoft.com etki alanı adınızın kullanıldığı bulut tabanlı hesaplarınız olacaksa, devam edip bu noktada kullanıcıları ekleyebilir ve lisansları atayabilirsiniz. Öte yandan, kuruluşunuzun özel etki alanı adını kullanacaksanız veya şirket içi Active Directory’den kullanıcı hesabı bilgilerini eşitlemek istiyorsanız, bu tarayıcı penceresini kapatabilir ve bu hızlı başlangıç kılavuzunun 2. adımına geçebilirsiniz. [Office 365'te, ilk onmicrosoft.com etki alanınız hakkında](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A) daha fazla bilgi edinebilirsiniz
 
 >[!TIP]
 > Intune’da bir sonraki oturum açışınızda otomatik olarak Intune yönetim konsoluna yönlendirilirsiniz.
@@ -53,9 +54,4 @@ Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığı
 >[!div class="step-by-step"]
 
 >[&larr; **Önkoşullar**](.\what-to-know-before-you-start-microsoft-intune.md)     [**Etki alanı ayarları** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

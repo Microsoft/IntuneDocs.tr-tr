@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +34,7 @@ Microsoft Intune’la uygulamaları dağıtmaya başlamadan önce, biraz zaman a
 
 |Uygulama türü|Ayrıntılar|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Bu uygulama türü, kullanıcı girişi gerektirmeyen sessiz yüklemeyi desteklemelidir. Uygulama belgelerinizde, uygulamayı sessiz yüklemek için uygun komut satırı seçenekleri verilmiş olmalıdır (örneğin, **/q**). [Microsoft Windows Installer Aracı için Komut Satırı Anahtarları](https://support.microsoft.com/en-us/kb/227091) bölümünde sık kullanılan komut satırı seçeneklerinin bir listesini bulabilirsiniz.<br><br>Uygulamanın kurulum programının gerektirdiği tüm ek dosya ve klasörler, uygulama kurulum dosyaları için belirttiğiniz konumda bulunmalıdır.<br><br>Genellikle Windows Installer (.msi) ve Windows Installer Düzeltme Eki (.msp) dosyaları, Intune tarafından herhangi bir komut satırı bağımsız değişkeni yüklenmesini gerektirmez. Uygulama belgelerinize bakın.<br><br>Komut satırı bağımsız değişkenleri gerekiyorsa, bu bağımsız değişkenler Ad=Değer çiftleri halinde girilmelidir (örneğin, TRANSFORMS=custom_transform.mst).<br><br>Bu uygulama türü yalnızca Intune istemci yazılımı çalıştıran bilgisayarlar için geçerlidir.|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Bu uygulama türü, kullanıcı girişi gerektirmeyen sessiz yüklemeyi desteklemelidir. Uygulama belgelerinizde, uygulamayı sessiz yüklemek için uygun komut satırı seçenekleri verilmiş olmalıdır (örneğin, **/q**). [Microsoft Windows Installer Aracı için Komut Satırı Anahtarları](https://support.microsoft.com/kb/227091) bölümünde sık kullanılan komut satırı seçeneklerinin bir listesini bulabilirsiniz.<br><br>Uygulamanın kurulum programının gerektirdiği tüm ek dosya ve klasörler, uygulama kurulum dosyaları için belirttiğiniz konumda bulunmalıdır.<br><br>Genellikle Windows Installer (.msi) ve Windows Installer Düzeltme Eki (.msp) dosyaları, Intune tarafından herhangi bir komut satırı bağımsız değişkeni yüklenmesini gerektirmez. Uygulama belgelerinize bakın.<br><br>Komut satırı bağımsız değişkenleri gerekiyorsa, bu bağımsız değişkenler Ad=Değer çiftleri halinde girilmelidir (örneğin, TRANSFORMS=custom_transform.mst).<br><br>Bu uygulama türü yalnızca Intune istemci yazılımı çalıştıran bilgisayarlar için geçerlidir.|
 |**Android için Uygulama Paketi (&#42;.apk)**|Android uygulamalarını dağıtmak için geçerli bir .apk paketiniz olmalıdır.|
 |**iOS için Uygulama Paketi (&#42;.ipa)**|iOS uygulamalarını dağıtmak için geçerli bir .ipa paketiniz olmalıdır.<br><br>.ipa paketi Apple tarafından imzalanmalı ve sağlama profilinde belirtilen sona erme tarihi geçerli olmalıdır. Intune, kuruluş sertifikası iOS uygulamalarını dağıtabilir.<br><br>Tüm Apple geliştirici sertifikası uygulamaları desteklenmez.<br><br>Şirketiniz iOS Geliştirici Kurumsal Programı'na kayıtlı olmalıdır.<br><br>Kuruluşunuzun güvenlik duvarının iOS sağlama ve sertifika web sitelerine erişim izni verdiğinden emin olun.<br><br>Uygulamayla birlikte bildirim dosyası (.plist) dağıtmanız gerekmez.|
 |**Windows Phone uygulama paketi (&#42;.xap, .appx, .appxbundle)**|Uygulamaları dağıtmak için, bir kurumsal mobil kod imzalama sertifikası gerekir. Ayrıntılar için bkz. [Microsoft Intune ile Windows Phone yönetimini ayarlama](set-up-windows-device-management-with-microsoft-intune.md).|
@@ -49,7 +49,7 @@ Aşağıdakilere sahipseniz dış bağlantı kullanın:
 
 Dış bağlantılara dayalı uygulamalar, Intune bulut depolama alanınızda depolanmaz.
 ### <a name="managed-ios-app-from-the-app-store"></a>**Uygulama mağazasından yönetilen iOS uygulaması**
-Uygulama mağazasından ücretsiz olarak sağlanan iOS uygulamalarını yönetebilir ve dağıtabilirsiniz. Ayrıca, yönetilen iOS uygulamalarını [mobil uygulama yönetim ilkelerini](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) [uyumlu uygulamalar](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) ile ilişkilendirmek ve yönetici konsolundaki durumlarını gözden geçirmek için kullanabilirsiniz.<br /><br />Yönetilen iOS uygulamaları Intune bulut depolama alanınızda depolanmaz.
+Uygulama mağazasından ücretsiz olarak sağlanan iOS uygulamalarını yönetebilir ve dağıtabilirsiniz. Ayrıca, yönetilen iOS uygulamalarını [mobil uygulama yönetim ilkelerini](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) [uyumlu uygulamalar](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) ile ilişkilendirmek ve yönetici konsolundaki durumlarını gözden geçirmek için kullanabilirsiniz.<br /><br />Yönetilen iOS uygulamaları Intune bulut depolama alanınızda depolanmaz.
 
 > [!TIP]
 > Intune’u [MDM yetkilisi](prerequisites-for-enrollment.md) olarak ayarlamadığınız sürece, mobil cihazlara yönelik seçenekler kullanılamaz.

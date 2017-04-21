@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -51,9 +51,9 @@ Intune gruplarının varolan bazı özellikleri Azure AD'de kullanılamaz:
 ## <a name="how-to-get-ready"></a>Nasıl hazırlanmalı?
 
 - Azure AD güvenlik grupları ve nasıl çalıştıkları hakkında bilgi edinmek için aşağıdaki Azure AD konularını okuyun:
-    -  [Azure Active Directory grupları ile kaynaklara erişimi yönetme](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
-    -  [Azure Active Directory'de grupları yönetme](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
-    -  [Gelişmiş kurallar oluşturmak için öznitelikleri kullanma](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+    -  [Azure Active Directory grupları ile kaynaklara erişimi yönetme](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
+    -  [Azure Active Directory'de grupları yönetme](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
+    -  [Gelişmiş kurallar oluşturmak için öznitelikleri kullanma](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 - Geçişten önce artık kullanmadığınız tüm Intune gruplarını kaldırabilirsiniz.
 -  Grup oluşturması gereken tüm yöneticilerin **Intune Hizmet Yöneticisi** Azure AD rolüne eklendiğinden emin olun. Azure AD Hizmet Yöneticisi rolünün **Grubu Yönet** izinlerine sahip olmadığını unutmayın.
 -  Grupları **Belirli üyeleri hariç tut** seçeneği ile kullanırsanız bu grupları hariç tutma işlemine gerek kalmayacak şekilde yeniden tasarlayıp tasarlayamayacağınızı veya aynı sonuca ulaşmak için Azure AD sorgunuzda gelişmiş kurallar kullanıp kullanamayacağınızı düşünün.
