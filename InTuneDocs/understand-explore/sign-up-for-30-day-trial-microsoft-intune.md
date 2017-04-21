@@ -14,8 +14,9 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
-ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 55556d781149b97af3556f3a6774b4bc5b3b76ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 Bu makale, bir Intune denemesine kaydolmayı adım adım gösterir ve Intune'un mobil cihazları nasıl yönettiğini görmek üzere ilişkili değerlendirme kılavuzunu izleyebilmeniz için deneme sürümünüzde bazı kullanıcılar oluşturur. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> Aralık 2016'dan itibaren Microsoft Intune, Azure portalına taşınıyor ve bazı ücretsiz deneme kayıtları Azure portalındaki Intune’da, bazıları klasik Intune’da olacaktır. Deneme süreniz Azure portalında ise bu makaledeki adımları tamamladıktan sonra [Intune Azure önizleme içeriğini](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) daha faydalı bulacaksınız.
+> Aralık 2016'dan itibaren Microsoft Intune, Azure portalına taşınıyor ve bazı ücretsiz deneme kayıtları Azure portalındaki Intune’da, bazıları klasik Intune’da olacaktır. Deneme süreniz Azure portalında ise bu makaledeki adımları tamamladıktan sonra [Intune Azure önizleme içeriğini](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) daha faydalı bulacaksınız.
 
 ## <a name="assumptions"></a>Varsayımlar
 Bu kaydolma makalesi ve değerlendirme kılavuzu, denemeyi yalnızca değerlendirme amacıyla kullandığınızı ve abone olduğunuzda boş bir ortam ile başlayacağınızı varsayar.
@@ -39,7 +40,7 @@ Deneme sürümünde abonelik sürümünde yapabileceğiniz her şeyi yapabilirsi
 ## <a name="sign-up-for-your-trial"></a>Deneme sürümünüz için kaydolma
 [Intune Kayıt](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) sayfasını ziyaret edin ve bir deneme aboneliğine kaydolmak için formu doldurun.
 
-Bir iş veya okul hesabınız varsa ve Intune denemeniz için bu hesabı kullanmak istiyorsanız, bunun yerine [bu oturum açma yönergelerini](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) izleyin. Ancak bu makale ve değerlendirme kılavuzları bu tür bir hesabı kullanmadığınızı varsayar.
+Bir iş veya okul hesabınız varsa ve Intune denemeniz için bu hesabı kullanmak istiyorsanız, bunun yerine [bu oturum açma yönergelerini](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) izleyin. Ancak bu makale ve değerlendirme kılavuzları bu tür bir hesabı kullanmadığınızı varsayar.
 
 > [!TIP]
 > BT işlemlerinizin ve kullanıcılarınızın çoğu sizinkinden başka bir bölgedeyse, performansı sınamak için denemenizde bu yerel ayarı yapmanız iyi olur.
@@ -54,7 +55,7 @@ Deneme süreniz **Azure portalında** ise https://portal.azure.com adresine gidi
 ## <a name="add-users"></a>Kullanıcı ekleme
 Intune için Office 365 Yönetim merkezinden ayrılmadan önce deneme hesabınıza bazı kullanıcılar eklemeniz gerekir.
 
-Office 365 Yönetim merkezinde kullanıcıları tek tek veya bir .csv dosyasını yükleyerek topluca ekleyebilirsiniz. Deneme sürümünüzü ayarlamak için her ikisini de yapacağız. Ancak üretim ortamınızda büyük olasılıkla Azure Active Directory kullanıcı hesaplarınızdan yararlanmak isteyeceksiniz. [Başlangıç kılavuzumuzdan](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ve bu makalenin [Sonraki adımlar](#Next-steps) bölümünden bu hesaplar hakkında daha fazla bilgi alabilirsiniz.
+Office 365 Yönetim merkezinde kullanıcıları tek tek veya bir .csv dosyasını yükleyerek topluca ekleyebilirsiniz. Deneme sürümünüzü ayarlamak için her ikisini de yapacağız. Ancak üretim ortamınızda büyük olasılıkla Azure Active Directory kullanıcı hesaplarınızdan yararlanmak isteyeceksiniz. [Başlangıç kılavuzumuzdan](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ve bu makalenin [Sonraki adımlar](#Next-steps) bölümünden bu hesaplar hakkında daha fazla bilgi alabilirsiniz.
 
 ### <a name="add-an-individual-user"></a>Tek bir kullanıcı ekleme
 1. Kullanıcı ekleme seçeneklerinden birini seçerek kullanıcı oluşturmanıza izin veren formu açın. Yalnızca yıldızla (\*) işaretlenen öğeler gereklidir.
@@ -137,18 +138,13 @@ Intune’dan Office 365 Yönetim merkezine geri dönmek için tarayıcınızın 
 Değerlendirme senaryosu: [Microsoft Intune'da mobil cihaz yönetimini değerlendirme](mobile-device-management-trial-guide-microsoft-intune.md)
 
 ### <a name="intune-azure-preview"></a>Intune Azure önizlemesi
-[Azure portalı önizlemede Intune](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) hakkında daha fazla bilgi edinin
+[Azure portalı önizlemede Intune](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) hakkında daha fazla bilgi edinin
 
 ### <a name="integration-with-other-products"></a>Diğer ürünlerle tümleştirme
 Azure Active Directory kullanıcı hesaplarınızı Intune ile kullanma hakkında daha fazla bilgi edinin:
-- [Kimlik gereksinimleri](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [Dizin eşitleme gereksinimleri](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Çok faktörlü kimlik doğrulama gereksinimleri](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [Kimlik gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [Dizin eşitleme gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Çok faktörlü kimlik doğrulama gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
-[Intune'u System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) ile kullanma hakkında daha fazla bilgi edinin
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+[Intune'u System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) ile kullanma hakkında daha fazla bilgi edinin
 

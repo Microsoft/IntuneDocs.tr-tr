@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |E-posta profili|Bu ilke, mobil cihazlardaki belirli e-posta istemcileri için [e-posta erişim ayarları](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) yapmak amacıyla kullanılabilir ve son kullanıcının yapması gereken ayarları en aza indirir.|
-|EMS|Microsoft Enterprise Mobility + Security (önceki adıyla Enterprise Mobility Suite) kullanıcılarınızın [ihtiyaç duyduğu uygulamalara ve içeriğe erişmesine olanak tanırken](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility) şirket verilerinizi korur.|
+|EMS|Microsoft Enterprise Mobility + Security (önceki adıyla Enterprise Mobility Suite) kullanıcılarınızın [ihtiyaç duyduğu uygulamalara ve içeriğe erişmesine olanak tanırken](https://www.microsoft.com/cloud-platform/enterprise-mobility) şirket verilerinizi korur.|
 |Son kullanıcı|Intune kullanılarak yönetilen [telefon ve bilgisayar gibi cihazların kullanıcıları](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).|
 |Kaydetme|Microsoft Intune cihazları yönetime getirmek ve kaynaklara erişim izni vermek için [kayıt](/intune/deploy-use/enroll-devices-in-microsoft-intune) kullanır.|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |Uzaktan kilitleme|Cihaz elinizin altında olmasa bile [desteklenen cihazları kilitlemenize](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) olanak tanıyan bir Intune özelliğidir.|
 |Reports|Intune, yönettiğiniz cihazlar hakkında size bilgi sağlayan bir dizi [yerleşik rapor](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports) sağlar.|
 |Zorunlu yükleme|Bu eylemi kullanarak bir uygulama dağıttığınızda, uygulama cihaza [kullanıcı müdahalesi olmadan](/intune/deploy-use/deploy-apps) yüklenir (bununla birlikte bazı platformlarda son kullanıcının yüklemeyi kabul etmesi gerekebilir).|
-|Gereksinimler|Uygulama yüklenmeden önce bir cihazda karşılanması gereken gereksinimleri seçmenize olanak tanıyan bir [uygulama dağıtımı işlemidir](/en-us/intune/deploy-use/add-apps). Örneğin, uygulama yüklenmeden önce yüklenmesi gereken iOS işletim sistemi sürümünü belirtebilirsiniz.|
+|Gereksinimler|Uygulama yüklenmeden önce bir cihazda karşılanması gereken gereksinimleri seçmenize olanak tanıyan bir [uygulama dağıtımı işlemidir](/intune/deploy-use/add-apps). Örneğin, uygulama yüklenmeden önce yüklenmesi gereken iOS işletim sistemi sürümünü belirtebilirsiniz.|
 
 ## <a name="s"></a>S
 |||

@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Microsoft Intune'da uygulamaları dağıtma
@@ -48,7 +49,7 @@ Bu yordamda, seçilen cihaz veya kullanıcı gruplarına bir uygulama dağıtaca
 
 5. Dağıttığınız uygulama mobil uygulama yönetimi ilkesiyle yapılandırılabiliyorsa, **Mobil Uygulama Yönetimi** sayfası görüntülenir. Bu sayfada, bu uygulamayla ilişkilendirmek istediğiniz mobil uygulama yönetimi ilkesini seçin.
 
-    [Hangi Microsoft uygulamalarının mobil uygulama yönetimi ilkeleriyle uyumlu olduğuna bakın.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [Hangi Microsoft uygulamalarının mobil uygulama yönetimi ilkeleriyle uyumlu olduğuna bakın.](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Dağıttığınız uygulama Intune VPN profilleriyle uyumluysa, **VPN Profili** sayfası görüntülenir. Bu sayfada, iOS uygulamalarını dağıttığınız bir VPN profiliyle ilişkilendirmeyi seçebilirsiniz. Uygulama başlatıldığında VPN bağlantısı otomatik olarak açılır. Bir VPN profilini kullanıma sunmak için **Uygulama Başına VPN** profil ayarının etkinleştirilmesi gerekir.
  Profilleri uygulamalarla ilişkilendirmeyle ilgili bilgiler dahil olmak üzere VPN profillerini yapılandırma hakkında bilgi edinmek için bkz. [Microsoft Intune’da VPN bağlantıları](vpn-connections-in-microsoft-intune.md).
@@ -72,9 +73,4 @@ Uygulamayı bir iOS cihazına **Gerekli** olarak dağıttıysanız, kullanıcı 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Uygulamayı dağıttıktan sonra, ilerleme durumunu izleyebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları izleme](monitor-apps-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

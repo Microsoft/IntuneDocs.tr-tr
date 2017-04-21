@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: b01b68b7587cb91f24285cdffafeab43296886e6
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fce3edb43a147491465d8a58d1a9a4f009fba55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ Intune, kimlik ve kullanıcı gruplama sağlayıcısı olarak Azure Active Direc
 
 -   [Kullanıcı ve cihaz gruplarınızı planlama](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups) hakkında daha fazla bilgi edinin.
 
--   [Kullanıcı ve cihaz gruplarının nasıl oluşturulacağını](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) öğrenin.
+-   [Kullanıcı ve cihaz gruplarının nasıl oluşturulacağını](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) öğrenin.
 
 Kuruluşunuzda zaten Office 365 kullanılıyorsa Intune’un aynı Azure Active Directory ortamını kullanması önemlidir.
 

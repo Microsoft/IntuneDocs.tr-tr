@@ -14,8 +14,9 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 31788f18d983ab6b0fc57a93566bd43e6606f10f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Uyarıları, bildirimler ve raporlar hakkında daha fazla bilgi için, bkz. [Mic
 ## <a name="intune-capabilities"></a>Intune özellikleri
 Intune, bu kısa kurulum adımlarında gösterilenlerin ötesinde birçok farklı özelliğe sahiptir. Bu özelliklerin birkaç örneği şunlardır:
 
--   **Exchange ve Office 365'e erişimi denetleme.** Ayrıntılar için bkz. [Exchange Online’a uygulama erişimini yönetme](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) ve [Uygulama Office 365 hizmetlerine uygulama erişimini yönetme](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   **Exchange ve Office 365'e erişimi denetleme.** Ayrıntılar için bkz. [Exchange Online’a uygulama erişimini yönetme](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) ve [Uygulama Office 365 hizmetlerine uygulama erişimini yönetme](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
 -   **Şirkete ait iOS cihazlarını yönetme.** Ayrıntılar için, bkz. [Microsoft Intune'a şirketin sahip olduğu iOS cihazları kaydetme](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 
@@ -56,9 +57,4 @@ Destek seçenekleri, [Microsoft Intune için nasıl destek alınır](/Intune/Tro
 [Intune kullanmanın yaygın yolları](common-ways-to-use-intune.md) hakkında bilgi edinin
 
 [Ücretli aboneliğe](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md) dönüştürme
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

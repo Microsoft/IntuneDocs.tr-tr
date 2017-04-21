@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,13 +72,13 @@ Bu özelliklerin işletim sistemi veri koruma özellikleriyle (örneğin, Window
 
 Intune'u diğer EMS hizmetleriyle birlikte kullanarak kuruluşunuz için mobil işletim sistemi ve uygulama yapılandırması yoluyla mobil uygulamalar tarafından sunulandan daha fazla mobil uygulama güvenliği seçeneğine sahip olabilirsiniz. EMS üzerinden yönetilen uygulamalar, aşağıdakiler de dahil olmak üzere daha fazla mobil uygulama ve veri koruma özelliğine sahip olur:
 
-* [Çoklu oturum açma](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*    [Çok faktörlü kimlik doğrulaması](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
-* [Uygulamaya koşullu erişim (mobil uygulamada kurumsal veriler varsa erişim izni ver)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
-* [Aynı uygulamadaki kurumsal verileri kişisel verilerden ayırma](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Uygulama koruma ilkesi (PIN, şifreleme, farklı kaydet, pano vs.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Mobil uygulamadan kurumsal verileri silme](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Hak yönetim desteği](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+* [Çoklu oturum açma](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
+*    [Çok faktörlü kimlik doğrulaması](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+* [Uygulamaya koşullu erişim (mobil uygulamada kurumsal veriler varsa erişim izni ver)](https://docs.microsoft.com/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
+* [Aynı uygulamadaki kurumsal verileri kişisel verilerden ayırma](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Uygulama koruma ilkesi (PIN, şifreleme, farklı kaydet, pano vs.)](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Mobil uygulamadan kurumsal verileri silme](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Hak yönetim desteği](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Uygulama yönetimi veri güvenliği düzeylerini gösteren görüntü](./media/managing-mobile-apps.png)
 

@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: 2e7bcedebdf777db64a9ec90aa758822634ed435
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4bf9bd15f3f22e0609c4f56f5651454a62dbb7a8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -58,7 +58,7 @@ Intune'u ayarlama ayrıntılarına girmeden önce, kuruluşunuzun mobil cihaz y�
 
 -   Kullanıcılar genel olarak teknoloji ve BT konusunda bilgi sahibi mi?
 
-### <a name="what-is-your-device-security-policy"></a>Cihaz güvenlik ilkeniz nedir? 
+### <a name="what-is-your-device-security-policy"></a>Cihaz güvenlik ilkeniz nedir?
 
 -   Cihaz düzeyinde şifreleme gerekiyor mu?
 
@@ -84,7 +84,7 @@ Intune'u ayarlama ayrıntılarına girmeden önce, kuruluşunuzun mobil cihaz y�
 
 ## <a name="additional-information"></a>Ek bilgiler
 
--   Daha ayrıntılı örnekler için kuruluşların mobil cihaz yönetimi gereksinimlerini nasıl değerlendirdiğini görmek üzere farklı sektörlerden bu [örnek olay incelemelerini](https://customers.microsoft.com/en-US/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) gözden geçirin.
+-   Daha ayrıntılı örnekler için kuruluşların mobil cihaz yönetimi gereksinimlerini nasıl değerlendirdiğini görmek üzere farklı sektörlerden bu [örnek olay incelemelerini](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) gözden geçirin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

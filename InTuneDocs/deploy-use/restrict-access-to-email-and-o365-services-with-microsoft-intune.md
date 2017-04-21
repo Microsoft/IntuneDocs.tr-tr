@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 02/05/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ Enterprise Mobility + Security (EMS) Koşullu Erişim kullanarak şirket e-posta
 ## <a name="how-does-conditional-access-work"></a>Koşullu erişim nasıl çalışır?
 Uyumluluk ilkesi ayarları kullanarak cihazın uyumluluğunu değerlendirebilirsiniz. Koşullu erişim, belirli bir hizmete erişimi kısıtlamak veya erişim izni vermek için bu değerlendirmeyi kullanır. Koşullu erişim ilkesini bir cihaz uyumluluk ilkesiyle birlikte kullandığınızda, yalnızca uyumlu cihazların hizmete erişmesine izin verilir. Uyumluluk ilkesi ve koşullu erişim ilkesi kullanıcıya dağıtılır. Kullanıcının hizmetlere erişirken kullandığı her cihaz, ilkelerle uyumluluk açısından denetlenir.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Cihazın uyumluluğunun değerlendirilebilmesi için cihazı kullanan kullanıcıya dağıtılmış bir uyumluluk ilkesi olması gerektiğini unutmayın.
 > Kullanıcıya hiçbir uyumluluk ilkesi dağıtılmadıysa, cihaz uyumlu olarak kabul edilir ve hiçbir erişim kısıtlaması uygulanmaz.
 
@@ -48,7 +48,7 @@ Microsoft Intune ve Azure Active Directory (Azure AD) Premium, EMS koşullu eri�
 
 **Azure AD Premium lisansları**, tek başına bir hizmet veya Kurumsal anlaşmanın bir parçası olarak (Intune ile birlikte) satın alınabilir. Intune ile koşullu erişim ilkeleri dağıttıysanız uygun Azure AD Premium veya **EMS lisansları** edindiğinizden emin olun.
 
-- [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/en-us/pricing/details/active-directory/) hakkında daha fazla bilgi edinin.
+- [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/pricing/details/active-directory/) hakkında daha fazla bilgi edinin.
 
 Ayrıca, koşullu erişim ilkelerini uygulamayı planladığınız kullanıcılara [Azure AD Premium veya EMS lisansları atandığından](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) emin olun.
 

@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 61851f7669e9a5c3a192b2eda344fcde9c4fa3e6
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +67,7 @@ Farklı yönetim görevleri aşağıdaki yönetim web sitelerinden birini kullan
 |**Şirket Portalı web sitesi**     |**Mobil cihazlarda:** desteklenen her platform için varsayılan web tarayıcısını kullanın   <br /><br />**Windows bilgisayarlarında:** Internet Explorer 10 veya üstü ya da Microsoft Edge<br /><br />**Mac OS X 10.9 veya sonraki sürümlerde:** Apple Safari    |
 
 > [!Note]
-> Microsoft Edge ve mobil tarayıcılar, [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx) desteklemediklerinden yönetici konsolu için desteklenmez. Intune konsolu belirli bir zaman dilimi içinde Silverlight deneyiminden uzaklaşacaktır; bir süre sonra Intune’un tüm mobil cihaz ve uygulama yönetimi özellikleri [yeni Microsoft Azure portalında kullanılabilir olacaktır](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
+> Microsoft Edge ve mobil tarayıcılar, [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) desteklemediklerinden yönetici konsolu için desteklenmez. Intune konsolu belirli bir zaman dilimi içinde Silverlight deneyiminden uzaklaşacaktır; bir süre sonra Intune’un tüm mobil cihaz ve uygulama yönetimi özellikleri [yeni Microsoft Azure portalında kullanılabilir olacaktır](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
 
 
 Yalnızca hizmet yöneticisi izinlerine sahip olan veya genel yönetici rolüne sahip bir kiracı yöneticisi olan kullanıcılar bu portalda oturum açabilir. Yönetim konsoluna erişmek için hesabınız Intune kullanma lisansına ve **İzin Verildi** oturum açma durumuna sahip olmalıdır.

@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
-ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: ce51e92f9643ddc77e84e6b4c65825d397a37ddc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -97,7 +97,7 @@ Mevcut MDM ortamını kaydederken ortamınızda değişiklik yapabilmek için ha
 | **Çözüm alanı** | **Mevcut ortam** | **Yorumlar** |
 |:---:|:---:|:---:|
 | **Kimlik** | Azure AD, Azure AD Connect, şirket dışında değil, MFA yok | Yıl sonundan itibaren MFA’yı etkinleştirme projesi geçerli |                 
-| **E-posta ortamı** | Şirket İçi Exchange, Exchange Online | Şu anda Şirket İçi Exchange sürümünden Exchange Online sürümüne geçiriliyor. Posta kutularının %&75;’i geçirildi. Kalan %25 Intune Pilot başlamadan önce geçirilecektir. |                
+| **E-posta ortamı** | Şirket İçi Exchange, Exchange Online | Şu anda Şirket İçi Exchange sürümünden Exchange Online sürümüne geçiriliyor. Posta kutularının % 75’i geçirildi. Kalan %25 Intune Pilot başlamadan önce geçirilecektir. |                
 | **SharePoint** | Şirket İçi SharePoint | SharePoint Online sürümüne geçirme planı yok |  
 | **Geçerli MDM** | Exchange ActiveSync |  |
 | **Sertifika çözümü** | Microsoft Server 2012 R2, AD Sertifika Hizmetleri | Web Sitesi Sunucuları için yalnızca PKI kullanın |
@@ -153,7 +153,7 @@ Kullanıcı ve cihaz grupları bir dağıtımın hedefini belirler. İlkeler, uy
 
 -   [Kullanıcı ve cihaz gruplarınızı planlama](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups) hakkında daha fazla bilgi edinin.
 
--   [Kullanıcı ve cihaz gruplarının nasıl oluşturulacağını](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) öğrenin.
+-   [Kullanıcı ve cihaz gruplarının nasıl oluşturulacağını](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) öğrenin.
 
 ### <a name="public-key-infrastructure-pki"></a>Ortak Anahtar Altyapısı (PKI)
 
@@ -326,7 +326,7 @@ Bir VPN profili tasarımının belgelenmesine ilişkin bir örnek aşağıda ver
 
 E-posta profilleri, bir e-posta istemcisinin bağlantı bilgileriyle otomatik olarak kurulmasına ve e-posta yapılandırmasını ayarlamasına olanak tanır. Intune, bazı cihazlarda e-posta profillerini destekler.
 
--   [E-posta profilleri](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) ve hangi platformların desteklendiği hakkında daha fazla bilgi edinin.
+-   [E-posta profilleri](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) ve hangi platformların desteklendiği hakkında daha fazla bilgi edinin.
 
 E-posta profillerinin tasarımının belgelenmesine dair bir örnek aşağıda verilmiştir:
 

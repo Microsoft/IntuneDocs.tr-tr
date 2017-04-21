@@ -14,9 +14,9 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9a988945c499c3145208b86d6832d02c28136ece
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,8 +43,8 @@ Deneme sürümünde abonelik sürümünde yapabileceğiniz her şeyi yapabilirsi
 ## <a name="whats-not-covered"></a>Kapsanmayan konular
 |İlgileniyorsanız |Bunu okuyun |
 |------------------------|----------|
-|Sınama ortamı olmayan bir ortamda MDM | [Başlarken](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
-|Intune ve System Center Configuration Manager ile MDM | [Karma mobil cihaz yönetimi](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) |
+|Sınama ortamı olmayan bir ortamda MDM | [Başlarken](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|Intune ve System Center Configuration Manager ile MDM | [Karma mobil cihaz yönetimi](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 Yukarıdaki kılavuzlar Intune'u üretim ortamlarında ayarlamanıza yardımcı olduğundan daha uzundurlar ve değerlendirme kılavuzunda yapmanız gerekenlere göre çok daha fazla karar noktası içerirler.
 
@@ -61,7 +61,7 @@ Intune ile mobil cihazları yönetmek için gereken ilk adım **mobil cihaz yön
 
 Bu deneme sürümünün varsaydığı gibi Intune’u tek başına kullanıyorsanız veya Intune’u bir Enterprise Mobility + Security (EMS) aboneliğinin parçası olarak kullanıyorsanız, Intune’u mobil cihaz yönetimi yetkiliniz olarak ayarlamanız gerekir. Diğer bir deyişle, Intune’u kuruluşunuzdaki mobil cihazları yönetmek için kullandığınız hizmet olarak belirlersiniz.
 
-Mobil cihazları yönetmek için Intune’u System Center Configuration Manager ile kullanmak isteyen müşterilerin, mobil cihaz yönetim yetkilisi olarak Intune veya Configuration Manager’dan birini kullanmaya karar vermeleri gerekir. Bir üretim ortamında bu önemli bir karardır çünkü bu kararı verdikten sonra ayarı değiştirmek şu anda çok zordur ve bu kılavuzunun kapsamı dışında bir konudur. MDM yetkiliniz olarak Intune veya Configuration Manager’ı ayarlamanın etkileri hakkında daha fazlasını öğrenmek için bkz. [Tek başına Intune ve karma mobil cihaz yönetimi arasında seçim yapma](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Mobil cihazları yönetmek için Intune’u System Center Configuration Manager ile kullanmak isteyen müşterilerin, mobil cihaz yönetim yetkilisi olarak Intune veya Configuration Manager’dan birini kullanmaya karar vermeleri gerekir. Bir üretim ortamında bu önemli bir karardır çünkü bu kararı verdikten sonra ayarı değiştirmek şu anda çok zordur ve bu kılavuzunun kapsamı dışında bir konudur. MDM yetkiliniz olarak Intune veya Configuration Manager’ı ayarlamanın etkileri hakkında daha fazlasını öğrenmek için bkz. [Tek başına Intune ve karma mobil cihaz yönetimi arasında seçim yapma](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 Deneme sürümünde MDM yetkilisi olarak Intune’u ayarlayacağız; deneme sürümünüzü üretim ortamınızda kullanmaya karar vermediğiniz sürece üretim ortamınızı etkilemez.
 
@@ -86,7 +86,7 @@ APNs (.pem) sertifikasını indirin ve dosyayı yerel olarak kaydedin. Bu Apple 
 3.    **APNs sertifikasını Intune'a ekleme**<BR/>
 Microsoft Intune yönetim konsolunda **Yönetim** > **Mobil Cihaz Yönetimi** > **iOS ve Mac OS X** > **APNs Sertifikasını Karşıya Yükle**'ye gidin ve **APNs sertifikasını karşıya yükle**’yi seçin. Sertifika (.pem) dosyasına gidin, **Aç**’ı seçin ve Apple kimliğinizi girin. APNs sertifikası ile. Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir.
 4.    **Kullanıcılarınıza, şirket kaynaklarına erişmek için cihazlarını nasıl kaydedeceklerini anlatın.**<br/>
-Son kullanıcı kayıt talimatları için bkz. [iOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios) veya [Mac OS X cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x). Kayıt işlemi kullanıcıları neler bekleyebilecekleri ve BT yöneticilerinin görebileceği ve göremeyeceği cihaz içeriği hakkında bilgilendirir.
+Son kullanıcı kayıt talimatları için bkz. [iOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-ios) veya [Mac OS X cihazınızı Intune'a kaydetme](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-mac-os-x). Kayıt işlemi kullanıcıları neler bekleyebilecekleri ve BT yöneticilerinin görebileceği ve göremeyeceği cihaz içeriği hakkında bilgilendirir.
 
 
 ### <a name="learn-more-about-device-enrollment"></a>Cihaz kaydı hakkında daha fazla bilgi edinin

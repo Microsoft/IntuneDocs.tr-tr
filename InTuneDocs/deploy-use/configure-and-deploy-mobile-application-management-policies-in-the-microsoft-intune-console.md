@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: dbc5c6afc9f2748b50e064b912e519e8f2de9022
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Diğer Intune ilkelerinden farklı olarak, mobil uygulama yönetimi ilkeleri do�
 
 Bir uygulamaya kısıtlamalar uygulamak için, uygulamanın Microsoft Intune Uygulama SDK’sini içermesi gerekir. Bu tür bir uygulamayı edinmenin üç yolu vardır:
 
--   **İlkeyle yönetilen uygulama kullanma**. İlkeyle yönetilen bir uygulamada Uygulama SDK’sı yerleşiktir. Bu uygulama türünü eklemek için, iTunes mağazası veya Google Play gibi bir uygulama mağazasından uygulamaya yönlendiren bir bağlantı belirtirsiniz. Bu uygulama türü için başka bir işleme gerek yoktur. Daha fazla bilgi için [Microsoft Intune mobil uygulama yönetim ilkeleriyle kullanabileceğiniz uygulamaların listesine](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) bakın.
+-   **İlkeyle yönetilen uygulama kullanma**. İlkeyle yönetilen bir uygulamada Uygulama SDK’sı yerleşiktir. Bu uygulama türünü eklemek için, iTunes mağazası veya Google Play gibi bir uygulama mağazasından uygulamaya yönlendiren bir bağlantı belirtirsiniz. Bu uygulama türü için başka bir işleme gerek yoktur. Daha fazla bilgi için [Microsoft Intune mobil uygulama yönetim ilkeleriyle kullanabileceğiniz uygulamaların listesine](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) bakın.
 
 -   **Kaydırılmış bir uygulama kullanın**. Kaydırılmış bir uygulama, Uygulama SDK'sını dahil etmek için Microsoft Intune Uygulama Kaydırma Aracı kullanılarak yeniden paketlenmiş bir uygulamadır. Bu araç genellikle şirket içinde oluşturulan şirket uygulamalarını işlemek için kullanılır. Uygulama mağazasından indirilmiş uygulamaları işlemek için kullanamazsınız. Daha fazla bilgi için bkz. [iOS uygulamalarını Microsoft Intune Uygulaması Kaydırma Aracı ile mobil uygulama yönetimine hazırlama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) ve [Android uygulamalarını Microsoft Intune Uygulaması Kaydırma Aracı ile mobil uygulama yönetimine hazırlama](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -140,7 +140,7 @@ Uygulamanın başarıyla karşıya yüklendiğini doğruladıktan sonra 3. adım
     |**Erişim için kurumsal ilkeyle cihaz uyumluluğu gerektir**|Bu ayar, yalnızca cihazın yazılım kilidi kırılmış veya cihaza kök erişim izni verilmişse uygulamanın kullanılmasına izin verir.|
     |**Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)**|**Zaman aşımı** alanında, uygulama açıldıktan sonra uygulama erişim gereksinimlerinin yeniden denetlenmesine kadar geçecek süreyi belirtin.|
     |**Çevrimdışı yetkisiz kullanım süresi**|Cihaz çevrimdışı ise, uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını belirtin.|
-    |**Uygulama verilerini şifreleme**|Bu ayar, bu uygulama ile ilişkili tüm verilerin şifreleneceğini belirtir. Buna SD kart gibi harici ortamlara depolanacak veriler de dahildir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetim ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada ve işletim sisteminin sağladığı cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu ayar, BT yöneticisinin ayarladığı cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesindeki ayarlara göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/en-us/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalarda şifrelemeyi Microsoft sağlar. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir.  Cihaz depolamasındaki içerik her zaman şifrelenir. Şifreleme yöntemi yalnızca Samsung KNOX cihazları için FIPS 140-2 uyumludur.|
+    |**Uygulama verilerini şifreleme**|Bu ayar, bu uygulama ile ilişkili tüm verilerin şifreleneceğini belirtir. Buna SD kart gibi harici ortamlara depolanacak veriler de dahildir.<br /><br />**iOS için şifreleme**<br /><br />Bir Intune mobil uygulama yönetim ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada ve işletim sisteminin sağladığı cihaz düzeyinde şifreleme kullanılarak şifrelenir. Bu ayar, BT yöneticisinin ayarladığı cihaz PIN ilkesi üzerinden etkinleştirilir. Bir PIN istendiğinde, veriler mobil uygulama yönetimi ilkesindeki ayarlara göre şifrelenir. Apple belgelerinde belirtildiği gibi, [iOS tarafından kullanılan modüller FIPS 140-2 sertifikalıdır](http://support.apple.com/HT202739).<br /><br />**Android için şifreleme**<br /><br />Bir Intune mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş uygulamalarda şifrelemeyi Microsoft sağlar. Veriler, dosya G/Ç işlemleri sırasında eş zamanlı olarak şifrelenir.  Cihaz depolamasındaki içerik her zaman şifrelenir. Şifreleme yöntemi yalnızca Samsung KNOX cihazları için FIPS 140-2 uyumludur.|
     |**Ekran yakalamayı engelle** (yalnızca Android cihazlar)|Bu ayar, birisi bu uygulamayı kullanırken cihazın ekran yakalama özelliklerinin engellendiğini belirtir.|
 
 4. İşiniz bittiğinde **İlkeyi Kaydet**'e tıklayın.

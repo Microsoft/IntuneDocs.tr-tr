@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 8e8257a426bd6b9a99e21e928b08c84f162d5da3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 5975ba0219f464c8f5aa1735657ff3d1c186b991
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,7 +30,7 @@ Microsoft Intune; Windows, Mac OS X, iOS, Android veya Windows Mobile cihazları
 
 Microsoft, uygun planlarda uygun hizmetler için Intune Onboarding avantajını sunar. Onboarding avantajı, ortamınızı kullanıma hazır hale getirmek için Microsoft uzmanlarıyla uzaktan çalışmanıza olanak sağlar. Ekleme avantajı hakkında daha fazla bilgi için bkz. [Microsoft Intune Ekleme Avantajı Açıklaması](http://go.microsoft.com/fwlink/?LinkId=619281).
 
-Intune'u 100 kullanıcı lisansı içeren 30 günlük ücretsiz bir denemeyle kullanmaya başlayabilirsiniz. Ücretsiz denemeyi başlatmak için [Intune Kayıt sayfasına gidin](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/). Kuruluşunuzda bir Kurumsal Anlaşma veya eşdeğer toplu lisans sözleşmesi varsa, ücretsiz deneme sürümünüzü ayarlamak için Microsoft temsilcinize başvurun.
+Intune'u 100 kullanıcı lisansı içeren 30 günlük ücretsiz bir denemeyle kullanmaya başlayabilirsiniz. Ücretsiz denemeyi başlatmak için [Intune Kayıt sayfasına gidin](https://www.microsoft.com/server-cloud/products/microsoft-intune/). Kuruluşunuzda bir Kurumsal Anlaşma veya eşdeğer toplu lisans sözleşmesi varsa, ücretsiz deneme sürümünüzü ayarlamak için Microsoft temsilcinize başvurun.
 
 > [!NOTE]
 > Kuruluşunuzda bir Microsoft Online Services iş ya da okul hesabı varsa ve deneme süresi sona erdikten sonra üretimde bu Intune aboneliğiyle devam edecekseniz, ilgili sayfada **Oturum aç**'ı seçin ve kuruluşunuzun Genel Yönetici hesabını kullanarak kimlik doğrulaması yapın. Bu işlem Intune denemenizin mevcut iş veya okul hesabınızla ilişkilendirilmesini sağlar.
@@ -69,13 +70,13 @@ Intune'u birkaç yolla kurarak şirketinizin mobil cihazlarını ve bilgisayarla
 
 -**Tek başına Intune yapılandırması.** Kuruluşunuzdaki cihazları yönetmek için Intune’daki web tabanlı yönetim konsolunu kullanın. Intune, şirket içi BT altyapısı olmadan kullanılabilir. Intune'u Active Directory Etki Alanı Hizmetleri ile kullanıyorsanız, Intune ve Etki Alanı Hizmetleri ile yönettiğiniz etki alanı kullanıcı hesaplarını kullanabilirsiniz.
 
--**Intune ile System Center Configuration Manager.** Kuruluşunuzdaki bilgisayarları ve mobil cihazları yönetmek için Configuration Manager yönetim konsolunu kullanın. Bu yapılandırma, tek bir konsol (Configuration Manager Yönetici Konsolu) üzerinden kuruluşunuzun tüm cihazlarını yönetmenize yardımcı olabilir. Configuration Manager, çok fazla sayıda mobil cihazı, sunucuyu ve bilgisayarı destekler. Configuration Manager hakkında daha fazla bilgi için bkz. [System Center Configuration Manager ve Microsoft Intune ile karma mobil cihaz yönetimi (MDM)](https://technet.microsoft.com/library/mt627883.aspx). Hangi yaklaşımın sizin için doğru olduğuna kadar vermede daha fazla yardım için, [Configuration Manager ile Microsoft Intune tek başına ve karma ve mobil cihaz yönetimi arasında seçim yapın](https://technet.microsoft.com/en-us/library/mt706478.aspx).
+-**Intune ile System Center Configuration Manager.** Kuruluşunuzdaki bilgisayarları ve mobil cihazları yönetmek için Configuration Manager yönetim konsolunu kullanın. Bu yapılandırma, tek bir konsol (Configuration Manager Yönetici Konsolu) üzerinden kuruluşunuzun tüm cihazlarını yönetmenize yardımcı olabilir. Configuration Manager, çok fazla sayıda mobil cihazı, sunucuyu ve bilgisayarı destekler. Configuration Manager hakkında daha fazla bilgi için bkz. [System Center Configuration Manager ve Microsoft Intune ile karma mobil cihaz yönetimi (MDM)](https://technet.microsoft.com/library/mt627883.aspx). Hangi yaklaşımın sizin için doğru olduğuna kadar vermede daha fazla yardım için, [Configuration Manager ile Microsoft Intune tek başına ve karma ve mobil cihaz yönetimi arasında seçim yapın](https://technet.microsoft.com/library/mt706478.aspx).
 
 
 ## <a name="learn-more-about-intune"></a>Intune hakkında daha fazla bilgi edinin
 Intune hakkında daha fazla bilgi edinmek için bu kaynakları kullanın:
 
-- [Microsoft Intune Güven Merkezi](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)'nde Intune güvenlik, gizlilik ve uyumluluk uygulamaları hakkında bilgi sağlanır ve Intune sertifikalarından bazıları açıklanır.
+- [Microsoft Intune Güven Merkezi](https://www.microsoft.com/server-cloud/products/intune-trust-center/)'nde Intune güvenlik, gizlilik ve uyumluluk uygulamaları hakkında bilgi sağlanır ve Intune sertifikalarından bazıları açıklanır.
 
 - [Microsoft Intune’un kayıtlı cihaz yönetimi özellikleri](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
@@ -84,9 +85,4 @@ Intune hakkında daha fazla bilgi edinmek için bu kaynakları kullanın:
 [System Center 2012 Configuration Manager için Belge Kitaplığı](https://technet.microsoft.com/library/gg682041.aspx)
 
 [Microsoft Intune'daki yenilikler](/intune/deploy-use/whats-new-in-microsoft-intune)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

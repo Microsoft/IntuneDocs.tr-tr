@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 074af85385a843bd5fac9747abf0209a3ba92b9c
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 60dbfa644a53fec3823e1182f5dec7eb97d8b5df
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -55,12 +55,12 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 
 1. [Azure AD yönetim portalında](https://manage.windowsazure.com) oturum açın ve aboneliğinizi seçin. 
   ![Kiracı adını gösteren Azure AD sayfasının ekran görüntüsü](../media/mtp/aad_tenant_name.png)
-2. Aboneliğinizin adını seçtiğinizde sağlanan URL abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US) bakın. 
+2. Aboneliğinizin adını seçtiğinizde sağlanan URL abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) bakın. 
 3. Azure AD Grup Kimliğinizi bulun. Lookout konsolu 2 erişim düzeyini destekler:  
   * **Tam Erişim:** Azure AD yöneticisi, Tam Erişimi olacak kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak Sınırlı Erişimi olacak kullanıcılar için bir grup oluşturur.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
   * **Kısıtlı Erişim:** Bu gruptaki kullanıcılar, Lookout konsolundaki yapılandırma ve kayıtla ilgili modüllerin çoğuna erişemez. Konsolun **Güvenlik İlkesi** modülü için ise salt okunur erişimine sahip olurlar.  
 
-  İzinler hakkında daha fazla ayrıntı için Lookout Web sitesindeki [bu makaleyi](https://personal.support.lookout.com/hc/en-us/articles/114094105653) okuyun.
+  İzinler hakkında daha fazla ayrıntı için Lookout Web sitesindeki [bu makaleyi](https://personal.support.lookout.com/hc/articles/114094105653) okuyun.
 
   **Grup Nesne Kimliği**, **Azure AD yönetim konsolunda**, grubun **Özellikler** sayfasında bulunur.
 
@@ -127,7 +127,7 @@ Tehditler hakkında e-posta uyarıları almak istiyorsanız bildirimlerin gönde
 ![kullanıcı hesabının görüntülendiği tercihler sayfasının ekran görüntüsü](../media/mtp/lookout-mtp-email-notifications.png) Artık e-posta bildirimleri almak istemiyorsanız bildirimleri **KAPALI** olarak ayarlayın ve değişikliklerinizi kaydedin.
 
 ### <a name="configure-threat-classification"></a>Tehdit sınıflandırmasını yapılandırma
-Lookout Mobile Threat Defense, çeşitli türlerdeki mobil tehditleri sınıflandırır. [Lookout tehdit sınıflandırmaları](http://personal.support.lookout.com/hc/en-us/articles/114094130693) ile ilişkilendirilen varsayılan risk düzeyleri bulunur. Bunlar, şirket gereksinimlerinize uyacak şekilde herhangi bir zamanda değiştirilebilir.
+Lookout Mobile Threat Defense, çeşitli türlerdeki mobil tehditleri sınıflandırır. [Lookout tehdit sınıflandırmaları](http://personal.support.lookout.com/hc/articles/114094130693) ile ilişkilendirilen varsayılan risk düzeyleri bulunur. Bunlar, şirket gereksinimlerinize uyacak şekilde herhangi bir zamanda değiştirilebilir.
 
 ![tehdit ve sınıflandırmaları gösteren ilke sayfasının ekran görüntüsü](../media/mtp/lookout-mtp-threat-classification.png)
 
@@ -137,5 +137,5 @@ Lookout Mobile Threat Defense, çeşitli türlerdeki mobil tehditleri sınıflan
 ## <a name="watching-enrollment"></a>Kayıt izleme
 Kurulum tamamlandıktan sonra, Lookout Mobile Threat Defense belirlenen kayıt gruplarına karşılık gelen cihazlar için Azure AD’yi yoklamaya başlar.  Kayıtlı cihazlar hakkındaki bilgileri Cihazlar modülünde bulabilirsiniz.  Cihazların ilk durumu, beklemede olarak gösterilir.  Cihaz durumu Lookout for Work uygulaması cihaza yüklendikten, açıldıktan ve etkinleştirildikten sonra değişir.  Cihaza gönderilen Lookout for Work uygulamasının nasıl alınacağına yönelik ayrıntılar için, [Lookout for Work uygulamalarını yapılandırma ve dağıtma](configure-and-deploy-lookout-for-work-apps.md) konusuna bakın.
 ## <a name="next-steps"></a>Sonraki adımlar
-[Lookout MTP Intune bağlantısını etkinleştirme](enable-lookout-mtp-connection-in-intune.md)
+[Lookout MTP Intune bağlantısını etkinleştirme](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)
 

@@ -14,18 +14,18 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
-ms.openlocfilehash: 3d3f35f38a4d6f09f8fdc3e1bbc1c6ca5af6bbe7
-ms.lasthandoff: 04/11/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
+ms.lasthandoff: 04/20/2017
 
 
 ---
 
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Son kullanıcılarınızı Microsoft Intune hakkında bilgilendirme
 
-Microsoft Intune, şirket verilerinizi korurken iş gücünüze mobil cihazlar sağlamaya yardımcı olur. Başarılı bir dağıtım sağlamak için [ücretsiz deneme sürümü](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md) ile Intune’u değerlendirme, [e-postanızı koruma](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) ve [Intune SDK ile uygulamalarınızı gömülü hale getirme](/intune/develop/intune-app-sdk.md) gibi birçok adım vardır.
+Microsoft Intune, şirket verilerinizi korurken iş gücünüze mobil cihazlar sağlamaya yardımcı olur. Başarılı bir dağıtım sağlamak için [ücretsiz deneme sürümü](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune) ile Intune’u değerlendirme, [e-postanızı koruma](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) ve [Intune SDK ile uygulamalarınızı gömülü hale getirme](/intune/develop/intune-app-sdk) gibi birçok adım vardır.
 
-Bu teknolojilerin hiçbiri, kullanıcılarınızın, cihazlarını yönetmenizin neden önemli olduğunu anlamasını sağlamaz. Aslında, özellikle de Intune dağıtımını bir [KCG çözümü](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md) olarak gerçekleştiriyorsanız, son kullanıcılarınız bunu gizliliklerin bir ihlali olarak algılayabilirler.
+Bu teknolojilerin hiçbiri, kullanıcılarınızın, cihazlarını yönetmenizin neden önemli olduğunu anlamasını sağlamaz. Aslında, özellikle de Intune dağıtımını bir [KCG çözümü](/enterprise-mobility-security/solutions/byod-design-considerations-guide) olarak gerçekleştiriyorsanız, son kullanıcılarınız bunu gizliliklerin bir ihlali olarak algılayabilirler.
 
 > [!Important]
 > Şirketinizin cihazları neden yönetmesi gerektiği hakkında son kullanıcılarınızın endişelerini anlamak ve proaktif bir şekilde ele almak başarılı bir dağıtım için büyük önem taşır.
@@ -59,7 +59,7 @@ Bu kullanıcı endişelerini azaltmak dağıtımınızı daha sorunsuz hale geti
   * [Android kullanıcılarınız uygulamalarını nasıl alır](how-your-android-users-get-their-apps.md)
 
 * **iOS**
-  * [Intune ile iOS cihaz kullanma](https://docs.microsoft.com/Intune/EndUser/using-your-ios-device-with-intune)
+  * [Intune ile iOS cihaz kullanma](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macos-device-with-intune)
   * [iOS kullanıcılarınız uygulamalarını nasıl alır](how-your-ios-users-get-their-apps.md)
 
 * **Windows**
