@@ -58,13 +58,13 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## Nasıl yapılır
 ### [Tam veya seçmeli silme kullanma](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### [Android cihazları uzaktan denetleme](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Kullanıcıları yönetme
 ## [Kullanıcı yönetimi nedir?](manage-users/what-is.md)
 <!--- Was What is users & group management--->
 ## [Başlarken](manage-users/get-started-with-groups.md)
+## [Kullanıcıların yardımcı olma](manage-users/help-desk.md)
 <!--- ## [Plan and design](manage-users/plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
