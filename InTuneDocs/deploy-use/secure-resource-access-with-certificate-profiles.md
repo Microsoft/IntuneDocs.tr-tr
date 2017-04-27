@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -36,8 +37,6 @@ VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılara şirket kayn
  -  Android for Work
  -  Windows 8.1 ve üzeri
  -  Windows Phone 8.1 ve üzeri
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. [Intune sertifika profillerini yapılandırma](configure-intune-certificate-profiles.md) konusunda açıklandığı gibi, cihazların VPN, Wi-Fi ve e-posta erişimi kimlik doğrulaması için kullanılacak bir sertifika istemelerini sağlamak için sertifika profilleri oluşturun. Aşağıdaki platformları çalıştıran cihazlar için **PKCS #12 (.PFX) Sertifika Profili** *veya* **SCEP Sertifika Profili** oluşturabilir ve dağıtabilirsiniz:
 
@@ -62,9 +61,4 @@ Her platform için ayrı profil oluşturmanız gerekir. Profili oluştururken da
 - [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md)
 - [PFX için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-pfx.md)
 - [Intune sertifika profillerini yapılandırma](configure-intune-certificate-profiles.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

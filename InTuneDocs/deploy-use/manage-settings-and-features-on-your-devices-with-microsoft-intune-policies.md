@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -41,7 +42,6 @@ Ayrıntılar için bkz. [Microsoft Intune ile e-posta ve O365 hizmetlerine eriş
 - **Kaynak erişim ilkeleri:** Bu ilkeler, kullanıcılarınızın nerede olurlarsa olsunlar, işlerini başarıyla gerçekleştirmek için ihtiyaç duydukları dosyalara ve kaynaklara erişim kazanmasına yardımcı olmak için birlikte çalışır.
 Ayrıntılar için, bkz. [Microsoft Intune ile şirket kaynaklarına erişimi etkinleştirme](enable-access-to-company-resources-with-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Intune ilkelerinin tam listesi için bkz. [Microsoft Intune ilke başvurusu](microsoft-intune-policy-reference.md).
 
@@ -212,9 +212,4 @@ Intune, Apple yapılandırma dosyalarının veya özel bir Open Mobile Alliance 
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>İlkelerle ilgili sorunları giderme hakkında nereden yardım bulabilirim?
 
 Bkz. [Microsoft Intune’da ilke sorunlarını giderme](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
