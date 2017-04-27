@@ -118,7 +118,6 @@
 #### [iOS için giriş ekranı düzeni](configure-devices/home-screen-settings-for-ios.md)
 #### [iOS için uygulama bildirimleri](configure-devices/app-notification-settings-for-ios.md)
 #### [iOS için paylaşılan cihazlar](configure-devices/shared-device-settings-for-ios.md)
-#### [iOS için web içeriği filtresi](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Cihaz kısıtlamalarını yapılandırma](configure-devices/how-to-configure-device-restrictions.md)
 #### [Outlook Web Access (OWA)](configure-devices/device-restrictions-for-android.md)
@@ -194,7 +193,8 @@
 ## [Koşullu erişim nedir?](conditional-access/what-is-conditional-access.md)
 ## Nasıl yapılır
 ### [Şirket içi Exchange bağlayıcısını yükleme](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [Koşullu erişim ilkesi oluşturma](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Koşullu erişim ilkesi oluşturma ve atama](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Koşullu erişim uyumluluğu izleyin](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # Erişim denetimi
 ## [Rol tabanlı erişim denetimi nedir?](access-control/role-based-access-control.md)

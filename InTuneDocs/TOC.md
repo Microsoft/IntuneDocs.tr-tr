@@ -12,7 +12,7 @@
 
 # [Başlarken](get-started/get-started.md)
 ## [Intune’u ayarlama](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Önkoşullar]
+### Önkoşullar
 #### [Desteklenen cihazlar](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Ağ kullanımı](get-started/network-bandwidth-use.md)
 ### [Intune'da oturum açma](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [Uygulama verilerini MAM ile koruma](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Uygulama koruma ilkeleri için Azure portalı](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Uygulama koruma ilkelerini yapılandırmaya hazırlanın](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Uygulama koruma ilkelerini oluşturma ve dağıtma](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [iOS ve Android için uygulama koruma ilkeleri yapılandırmaya hazırlanma](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [Android için uygulama koruma ilkeleri](deploy-use/android-mam-policy-settings.md)
 #### [iOS için uygulama koruma ilkeleri](deploy-use/ios-mam-policy-settings.md)
+#### [Windows için uygulama koruma ilkeleri](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [iOS ve Android için uygulama koruma ilkeleri oluşturma ve dağıtma](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Windows 10 için WIP uygulama koruma ilkeleri oluşturma ve dağıtma](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Uygulama koruma ilkelerini doğrulama](deploy-use/validate-mobile-application-management.md)
 #### [Uygulama koruma ilkesi uyumluluğunu izleyin](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
