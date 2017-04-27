@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -81,9 +81,7 @@ Yeni rol, **Roller** dikey penceresindeki listede görüntülenir.
 ## <a name="how-to-assign-a-role"></a>Rol atama
 
 1. **Erişim denetimi** iş yükünün **Roller** dikey penceresinde, atamak istediğiniz yerleşik veya özel rolü seçin.
-2. <*Rol adı*> - **Özellikler** dikey penceresinde **Yönet** > **Atamalar**’ı seçin.
-    >[!TIP]
-    >Ayrıca bu dikey pencerede var olan rolleri düzenleyebilir veya silebilirsiniz.
+2. <*Rol adı*> - **Özellikler** dikey penceresinde **Yönet** > **Atamalar**’ı seçin. Ayrıca bu dikey pencerede var olan rolleri düzenleyebilir veya silebilirsiniz.
 3. Sonraki dikey pencerede **Ata**’yı seçin.
 4. **Rol Atamaları** dikey penceresinde, atama için **Ad** ve isteğe bağlı olarak **Açıklama** girin, sonra da aşağıdakileri seçin:
     - **Üyeler** - İzinleri vermek istediğiniz kullanıcıyı içeren grubu seçin.
