@@ -83,10 +83,7 @@ Aşağıdakiler desteklenir:
 -   Android 4 veya sonraki sürümlerde Gmail gibi Exchange ActiveSync posta istemcileri.
 -   Exchange ActiveSync posta istemcileri **Android for Work cihazlar**: Android for Work cihazlarda yalnızca **iş profilindeki** **Gmail** ve **Nine Work** uygulamaları desteklenir. Android for Work cihazlarda koşullu erişimin çalışması için Gmail veya Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız ve bu uygulamaları ayrıca zorunlu bir yükleme olarak dağıtmanız gerekir. 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > Android ve iOS için Microsoft Outlook uygulaması desteklenmez.
 
 ## <a name="support-for-pcs"></a>Bilgisayarlar için destek

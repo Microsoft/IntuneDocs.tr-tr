@@ -78,8 +78,6 @@ Aşağıdaki diyagramda, Exchange Online için koşullu erişim ilkeleri tarafı
 - Android 4.0 ve üzeri, Samsung Knox Standard 4.0 ve üzeri ve Android for Work
 - iOS 8.0 ve üzeri
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 **Modern kimlik doğrulaması**, Active Directory Authentication Library (ADAL) tabanlı oturum açmayı Microsoft Office istemcilerine getirir.
 
 -   ADAL tabanlı kimlik doğrulaması, Office istemcilerinin tarayıcı tabanlı kimlik doğrulaması (pasif kimlik doğrulama olarak da bilinir) gerçekleştirmesine imkan sağlar. Bir kullanıcı, kimlik doğrulamak için bir oturum açma web sayfasına yönlendirilir.
