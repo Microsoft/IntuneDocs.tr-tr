@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 |**Depolama kartlarında şifreleme iste**|SD kartı gibi dış depolama alanlarında depolanan verilerin şifrelenmesini zorunlu kılar (desteklenen cihazlarda).
 <sup>1</sup> Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
--   Windows 8.1 çalıştıran cihazlarda şifrelemeyi zorunlu kılmak istiyorsanız [Windows için Aralık 2014 MDM istemci güncelleştirmesi](http://support.microsoft.com/kb/3013816)’ni her bir cihaza yüklemeniz gerekir.
+-   Windows 8.1 çalıştıran cihazlarda şifrelemeyi zorunlu kılmak istiyorsanız [Windows için Aralık 2014 MDM istemci güncelleştirmesi](https://support.microsoft.com/kb/3013816)’ni her bir cihaza yüklemeniz gerekir.
 
 -   Windows 8.1 cihazları için bu ayarı etkinleştirirseniz, cihazın tüm kullanıcılarının bir Microsoft hesabı olmalıdır.
 
@@ -82,9 +83,4 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
