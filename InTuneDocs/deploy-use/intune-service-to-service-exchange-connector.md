@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: dce7050a7439a7e24e34be3c79473d6ec3159c83
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ Intune Exchange Bağlayıcı tarafından kullanılan bir Exchange Online kullan�
 
 ## <a name="set-up-the-service-to-service-connector"></a>Hizmet Bağlayıcısı'nı ayarlama
 
-1. [Microsoft Intune yönetim konsolunu](http://manage.microsoft.com), [daha önce açıklanan](#exchange-cmdlet-requirements) cmdlet’ler için Exchange yönetici hak ve izinlerine sahip bir kullanıcı hesabıyla açın. Microsoft Intune, bağlantıyı ayarlamak için o anda giriş yapmış olan kullanıcının e-posta adresini kullanır.
+1. [Microsoft Intune yönetim konsolunu](https://manage.microsoft.com), [daha önce açıklanan](#exchange-cmdlet-requirements) cmdlet’ler için Exchange yönetici hak ve izinlerine sahip bir kullanıcı hesabıyla açın. Microsoft Intune, bağlantıyı ayarlamak için o anda giriş yapmış olan kullanıcının e-posta adresini kullanır.
 
 2.  Çalışma alanı kısayolları bölmesinde, **YÖNETİCİ**>**Mobil Cihaz Yönetimi** > **Microsoft Exchange** > **Exchange Bağlantısını Ayarla**'yı seçin.
 ![Hizmetten hizmete bağlayıcı ayarlama sayfası](../media/intunesa5cservicetoserviceconnector.png)
@@ -62,12 +63,7 @@ Hizmetten Hizmete Bağlayıcı, Exchange Online veya yeni Exchange Online Dedica
 
 ## <a name="validate-your-exchange-connection"></a>Exchange bağlantınızı doğrulama
 
-Exchange Bağlayıcısını başarıyla yapılandırdıktan sonra [Microsoft Intune yönetim konsoluna](http://manage.microsoft.com) gidin. **Yönetici**> **Mobil Cihaz Yönetimi** > **Microsoft Exchange**'i seçin. Ardından, verdiğiniz ayrıntıların **Exchange Bağlantı Bilgileri** altında göründüğünü doğrulayın.
+Exchange Bağlayıcısını başarıyla yapılandırdıktan sonra [Microsoft Intune yönetim konsoluna](https://manage.microsoft.com) gidin. **Yönetici**> **Mobil Cihaz Yönetimi** > **Microsoft Exchange**'i seçin. Ardından, verdiğiniz ayrıntıların **Exchange Bağlantı Bilgileri** altında göründüğünü doğrulayın.
 
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

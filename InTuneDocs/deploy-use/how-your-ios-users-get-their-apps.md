@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 02e54d4ae2ffa860fb95725c74fdff913e88365b
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -40,13 +41,13 @@ Apple kısıtlamaları, iş kolu ve yönetilen App Store uygulamalarının Şirk
 
 Kayıtlı kullanıcılar, Şirket Portalı uygulamasının Uygulamalar ekranında aşağıdaki kutucuklara dokunarak uygulamalarını alabilir:
 
-- **Tüm Uygulamalar**, [Şirket Portalı web sitesinin](http://portal.manage.microsoft.com) TÜMÜ sekmesindeki tüm uygulamaların listesine yönlendirir.
+- **Tüm Uygulamalar**, [Şirket Portalı web sitesinin](https://portal.manage.microsoft.com) TÜMÜ sekmesindeki tüm uygulamaların listesine yönlendirir.
 
 - **Öne Çıkan Uygulamalar**, kullanıcıları Şirket Portalı web sitesinin ÖNE ÇIKAN sekmesine götürür.
 
 - **Kategoriler**, Şirket Portalı web sitesinin KATEGORİLER sekmesine yönlendirir.
 
- 
+
 ![iOS Şirket Portalı uygulaması ekranı](./media/ios-cp-app-main-apps-screen.png)
 
 Uygulamaların nasıl ekleneceği ve bu kutucuklara nasıl yerleştirileceği hakkında bilgiler için bkz. [Kaydolmuş cihazlar için Intune’a uygulamalar ekleme](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
@@ -55,9 +56,4 @@ Uygulamaların nasıl ekleneceği ve bu kutucuklara nasıl yerleştirileceği ha
 [Android kullanıcılarınız uygulamalarını nasıl alır](how-your-android-users-get-their-apps.md)
 
 [Windows kullanıcılarınız uygulamalarını nasıl alır](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5c57a069fc9d2ca561954f50cbefa21b13a563d1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -58,7 +58,7 @@ Aşağıdaki adımlar, Kurulum Yardımcısı ile Apple Configurator'u kullanarak
 
 Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar.
 
-1. [Microsoft Intune yönetici konsolu](http://manage.microsoft.com)’nda **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**’yi seçin.
+1. [Microsoft Intune yönetici konsolu](https://manage.microsoft.com)’nda **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**’yi seçin.
 
   ![Cihaz kayıt profili oluşturma](../media/pol-sa-corp-enroll.png)
 
@@ -85,7 +85,7 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Kurulum Yardımcısı ile kaydedilecek iOS cihazları ekleme
 
-1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirkete Ait Tüm Cihazlar** &gt; **Tüm Cihazlar**’a gidin ve **Cihaz ekle**’yi seçin.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirkete Ait Tüm Cihazlar** &gt; **Tüm Cihazlar**’a gidin ve **Cihaz ekle**’yi seçin.
 
    İki yolla cihaz ekleyebilirsiniz:
 
@@ -128,7 +128,7 @@ Kullanılabilir profiller listesinden eklenen cihazlara atanacak profili belirti
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>iOS cihazlarına dağıtılacak bir profili dışarı aktarma
 
-1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com), **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve mobil cihazlara dağıtılacak cihaz profilini seçin.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve mobil cihazlara dağıtılacak cihaz profilini seçin.
 
 2. Görev çubuğunda **Dışarı Aktar**’ı seçin. **Profil URL'si**öğesini kopyalayıp kaydedin. iOS cihazlar tarafından kullanılan Intune profilini tanımlamak için daha sonra Apple Configurator'a yüklemeniz gerekecektir.
 

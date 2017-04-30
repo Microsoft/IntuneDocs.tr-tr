@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/17
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
-ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
-ms.lasthandoff: 03/24/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ea57a51f2855dea416ad4a76e657e1846ffe41f1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -69,9 +69,9 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
 
 ## <a name="add-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisi ekleme
 
-1.  DEM hesabına eklemek istediğiniz kullanıcının zaten mevcut olduğundan emin olun. Kullanıcıyı eklemeniz gerekiyorsa [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854)’nda oturum açın ve [Kullanıcıları Office 365 portalına tek tek veya toplu halde ekleme](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) bölümündeki adımları takip edin.
+1.  DEM hesabına eklemek istediğiniz kullanıcının zaten mevcut olduğundan emin olun. Kullanıcıyı eklemeniz gerekiyorsa [Office 365 portalı](https://go.microsoft.com/fwlink/p/?LinkId=698854)’nda oturum açın ve [Kullanıcıları Office 365 portalına tek tek veya toplu halde ekleme](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) bölümündeki adımları takip edin.
 
-2.  [Microsoft Intune yönetim konsolu](http://manage.microsoft.com)’nda yönetici kimlik bilgilerinizle oturum açın.
+2.  [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda yönetici kimlik bilgilerinizle oturum açın.
 
 3.  Gezinti bölmesinde, **Yönetici**'yi seçin, **Yönetici Yönetimi**'ne gidin ve **Cihaz Kayıt Yöneticisi**'ni seçin. **Cihaz Kayıt Yöneticileri** sayfası açılır.
 
@@ -88,7 +88,7 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Delete a device enrollment manager from Intune
 
-1.  [Microsoft Intune yönetici portalında](http://manage.microsoft.com) yönetici kimlik bilgilerinizle oturum açın.
+1.  [Microsoft Intune yönetici portalında](https://manage.microsoft.com) yönetici kimlik bilgilerinizle oturum açın.
 
 2.  Gezinti bölmesinde, **Yönetici**'yi seçin, **Yönetici Yönetimi**'ne gidin ve **Cihaz Kayıt Yöneticisi**'ni seçin. **Cihaz Kayıt Yöneticileri** sayfası açılır.
 

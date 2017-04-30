@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Aşağıdaki yordamı örnek alarak Intune istemci yazılımını bilgisayarlara
 
 ## <a name="instruct-users-to-self-enroll"></a>Kullanıcıdan kendi kendine kaydolmasını isteme
 
-Kullanıcılar, Intune istemci yazılımını [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) giderek yükler. Kullanıcıların web portalında gördüğü bilgiler, hesabınızın MDM Yetkilisine ve kullanıcının bilgisayarının işletim sistemi platformuna/sürümüne bağlı olarak değişiklik gösterir.
+Kullanıcılar, Intune istemci yazılımını [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) giderek yükler. Kullanıcıların web portalında gördüğü bilgiler, hesabınızın MDM Yetkilisine ve kullanıcının bilgisayarının işletim sistemi platformuna/sürümüne bağlı olarak değişiklik gösterir.
 
 Kullanıcılara bir Intune lisansı atanmamışsa veya kuruluşun MDM Yetkilisi, Intune olarak ayarlanmamışsa, kullanıcılara kaydolmaya yönelik herhangi bir seçenek gösterilmez.
 

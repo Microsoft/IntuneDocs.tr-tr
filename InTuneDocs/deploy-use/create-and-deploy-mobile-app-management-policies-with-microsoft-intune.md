@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ Uygulama koruma ilkeleri Azure Portal’da oluşturulur. Azure portalını ilk k
 
 Uygulama koruma ilkeleri oluşturmak için aşağıdaki adımları izleyin:
 
-1. [Azure portalına](http://portal.azure.com) gidin ve kimlik bilgilerinizi girin.
+1. [Azure portalına](https://portal.azure.com) gidin ve kimlik bilgilerinizi girin.
 
 2. **Diğer Hizmetler**’i seçin ve "Intune" yazın.
 
@@ -109,7 +109,7 @@ Uygulama koruma ilkeleri oluşturmak için aşağıdaki adımları izleyin:
 
 Intune 1703 sürümünden başlayarak yeni uygulama koruma ilkesi oluşturma sırasında Intune'a LOB uygulamalarını genel olarak ekleme seçeneğine sahip olacaksınız. Bu sayede MAM SDK kullanarak tam uygulama dağıtımı izinlerine ihtiyaç duymadan LOB uygulamaları için uygulama koruma ilkeleri tanımlayabilirsiniz.
 
-> [!TIP] 
+> [!TIP]
 > Ayrıca [Intune Uygulama SDK'sı](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) iş akışında da Intune'a LOB uygulamaları ekleyebilirsiniz.
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ Intune 1703 sürümünden başlayarak yeni uygulama koruma ilkesi oluşturma sı
 
 ### <a name="to-add-lob-apps-windows"></a>LOB uygulamalarını eklemek için (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Yeni uygulama koruma ilkesi oluşturma adımında açılır listeden Windows 10 platformunu seçmeniz gerekir.
 
 1.  İlke ekle dikey penceresinde **İzin verilen uygulamalar** veya **Muaf uygulamalar**'ı seçerek İzin verilen veya Muaf uygulamalar dikey penceresini açın.
 
     > [!NOTE]
-    > 
+    >
     - **İzin verilen uygulamalar**: Bunlar, bu ilkeye bağlı kalması gereken uygulamalardır.
     - **Muaf uygulamalar**: Bu uygulamalar bu ilkeden muaftır ve kurumsal verilere kısıtlama olmadan erişebilir.
 <br></br>

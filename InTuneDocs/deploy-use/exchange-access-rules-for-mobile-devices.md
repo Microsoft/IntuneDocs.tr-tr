@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -46,7 +47,7 @@ Aşağıdaki yordamda özel bir kuralın nasıl oluşturulacağı açıklanmakta
 
 ## <a name="create-a-default-access-rule"></a>Varsayılan erişim kuralı oluşturma
 
-1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Exchange ActiveSync**’i seçin.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Exchange ActiveSync**’i seçin.
 
 2.  **Varsayılan Kural** listesinde, bir kural veya kişisel muafiyet kapsamında olmayan tüm mobil cihazlara uygulanmasını istediğiniz Erişim Kuralı’nı seçin. **Kaydet**’i seçin.
 
@@ -54,12 +55,7 @@ Aşağıdaki yordamda özel bir kuralın nasıl oluşturulacağı açıklanmakta
 
 ## <a name="create-a-custom-access-rule"></a>Özel erişim kuralı oluşturma
 
-1. [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Exchange ActiveSync**’i seçin.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Exchange ActiveSync**’i seçin.
 
 2.  **Platform Özel Durumları** listesinde **Kural Ekle**'yi seçin ve sonra özel bir kural oluşturun. **Kaydet**’i seçin.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

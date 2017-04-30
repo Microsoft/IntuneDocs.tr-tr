@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -35,7 +35,7 @@ iOS cihazlarını doğrudan kaydederken, cihazın seri numarasını almadan kay�
 
 1.  Henüz yapmadıysanız, Apple Configurator ile kaydedilmiş iOS cihazları için bir cihaz kayıt profili oluşturun. Cihaz kayıt profili cihazlara uygulanan ayarları tanımlar.
 
-    1.  [Microsoft Intune yönetici konsolu](http://manage.microsoft.com)’nda **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**’yi seçin.
+    1.  [Microsoft Intune yönetici konsolu](https://manage.microsoft.com)’nda **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**’yi seçin.
 
         ![Cihaz kayıt profili oluşturma sayfası](../media/pol-sa-corp-enroll.png)
 
