@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Dağıtılan Endpoint Protection ilkesini, **İlke** çalışma alanının **Tü
 |**Bilgisayarlarda dosya ve program etkinliğini izle**|Bilgisayarlarda gelen ve giden dosyaların yanı sıra program etkinliğinin izlenmesini sağlar. Bu ayarla, dosyalar ve programlar çalışmaya başladığında Endpoint Protection bunları izleyebilir ve gerçekleştirdikleri herhangi bir eylem veya bunlar üzerinde gerçekleştirilen eylemler hakkında sizi uyarır.<br /><br />Önerilen değer: **Evet**|
 |**İzlenen dosyalar**|Yalnızca gelen, yalnızca giden veya tüm dosyaların izlenmesi arasında seçim yapmanızı sağlar.<br /><br />Önerilen değer: **Tüm dosyaları izle**|
 |**Davranış izlemeyi etkinleştir**|Microsoft Intune Endpoint Protection’ın istemci bilgisayarlarda belirli şüpheli etkinlik düzenlerini denetlemesini etkinleştirir.<br /><br />Önerilen değer: **Evet**|
-|**Ağ İnceleme Sistemi'ni Etkinleştir**|İstemci bilgisayarlarda Ağ Denetleme Sistemi'ni (NIS) etkinleştirir. NIS, kötü amaçlı ağ trafiğin algılanmasına ve engellenmesine yardımcı olmak üzere, [Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi](http://go.microsoft.com/fwlink/?LinkId=234249) 'nden edinilen bilinen açıklara yönelik imzaları kullanır.<br /><br />Önerilen değer: **Evet**|
+|**Ağ İnceleme Sistemi'ni Etkinleştir**|İstemci bilgisayarlarda Ağ Denetleme Sistemi'ni (NIS) etkinleştirir. NIS, kötü amaçlı ağ trafiğin algılanmasına ve engellenmesine yardımcı olmak üzere, [Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi](https://go.microsoft.com/fwlink/?LinkId=234249) 'nden edinilen bilinen açıklara yönelik imzaları kullanır.<br /><br />Önerilen değer: **Evet**|
 
   ![Endpoint Protection’ın gerçek zamanlı çalışma ayarları](./media/pol-sa-pc-policy-realtime.png)
 

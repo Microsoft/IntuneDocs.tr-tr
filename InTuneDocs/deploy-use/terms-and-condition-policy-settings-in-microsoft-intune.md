@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Farklı hüküm ve koşullar içeren birden çok ilke oluşturup dağıtabilirsi
 
 ## <a name="create-a-terms-and-conditions-policy"></a>Hüküm ve koşullar ilkesi oluşturma
 
-1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
 
     ![Hüküm ve koşullar ilkesi ekran görüntüsü](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ Farklı hüküm ve koşullar içeren birden çok ilke oluşturup dağıtabilirsi
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>Hüküm ve koşullar ilkesini dağıtma
 
-1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
 
 2.  **Hüküm ve Koşullar İlkeleri** listesinde, dağıtmak istediğiniz ilkeyi seçin ve ardından **Dağıtımı Yönet**’e tıklayın.
 
@@ -64,7 +64,7 @@ Farklı hüküm ve koşullar içeren birden çok ilke oluşturup dağıtabilirsi
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>Hüküm ve koşullar ilkesini izleme
 
-1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
 
 2.  **Yeni Rapor Oluştur** penceresinde **Raporu Görüntüle**’ye tıklayın. Dağıttığınız hüküm ve koşulları hangi kullanıcıların kabul ettiğiyle ilgili ayrıntılı bilgi içeren rapor açılır.
 
@@ -73,7 +73,7 @@ Varolan bir hüküm ve koşullar ilkesini düzenlediğinizde, ilkeyi dağıttı�
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Hüküm ve koşulların birden çok sürümü ile çalışma
 
-1.  [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **Hüküm ve Koşullar**’a tıklayın.
 
 2.  Düzenlemek istediğiniz hüküm ve koşullar ilkesini seçin ve ardından **Düzenle**’ye tıklayın.
 

@@ -14,9 +14,9 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: abba595672fa88efc022128ec8751cb27d14b089
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +50,7 @@ Bu kullanıcı endişelerini azaltmak dağıtımınızı daha sorunsuz hale geti
 
 * __Kişisel olun.__ Dağıtımınıza özgü olmayan yönergeler sağlamanız, son kullanıcıların kendi deneyimleri hakkında pek kafa yormadığınızı düşünmelerine neden olabilir. Son kullanıcılarınız için kendi kayıt yönergelerinizi oluşturmak üzere [BT yöneticilerine yönelik bu özelleştirilebilir, son kullanıcı Intune şablonunu](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) kullanabilirsiniz.
 
-* __İletişim kurmak için farklı yollar bulun.__ Kullanıcıların [farklı öğrenme tarzlarına](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) sahip olması gibi bilgi edinme tercihleri de farklıdır. Belge yerine video tercih eden kullanıcılara Kanal 9’da [çeşitli cihaz türlerini kaydetme videoları](https://channel9.msdn.com/Series/IntuneEnrollment) ve daha fazlasını sunuyoruz. Bu videoları doğrudan kendi [SharePoint sitenize](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) ekleyebilir veya video ya da yalnızca ses kaydının yerel kopyalarını indirebilirsiniz.
+* __İletişim kurmak için farklı yollar bulun.__ Kullanıcıların [farklı öğrenme tarzlarına](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) sahip olması gibi bilgi edinme tercihleri de farklıdır. Belge yerine video tercih eden kullanıcılara Kanal 9’da [çeşitli cihaz türlerini kaydetme videoları](https://channel9.msdn.com/Series/IntuneEnrollment) ve daha fazlasını sunuyoruz. Bu videoları doğrudan kendi [SharePoint sitenize](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) ekleyebilir veya video ya da yalnızca ses kaydının yerel kopyalarını indirebilirsiniz.
 
 * __Farkında olun.__ Son kullanıcıların deneyimi üretkenliğinizi etkiler ve onların deneyimlerini anlamak, size başvurduklarında sorunlarını gidermenizi kolaylaştırır. Son kullanıcıların uygulamalarını nasıl edindiğini anlamak, ne sorunlar yaşadıklarını tanılamanızı çok daha kolay hale getirerek sorunlarını daha hızlı düzeltmenize yardımcı olabilir.
 

@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 02/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune, şirkete ait iOS cihazlarının Apple Aygıt Kayıt Programı (DEP) veya bir Mac bilgisayarında çalışan [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) aracı ile kaydedilmesini destekler.
+Microsoft Intune, şirkete ait iOS cihazlarının Apple Aygıt Kayıt Programı (DEP) veya bir Mac bilgisayarında çalışan [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) aracı ile kaydedilmesini destekler.
 
 **Önkoşul:** [Apple Anında İletilen Bildirim hizmeti sertifikası](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
@@ -39,15 +39,15 @@ Microsoft Intune, şirkete ait iOS cihazlarının Apple Aygıt Kayıt Programı 
 >[!NOTE]
 >Apple Configurator ve Cihaz Kaydı Programı kayıt yöntemleri, [cihaz kayıt yöneticisi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) yöntemiyle birlikte kullanılamaz.
 
-Varsayılan olarak tüm iOS cihazları Intune'a kaydedilebilir. Kişisel veya kurumsal cihazların kaydedilmesini engellemek için yönetici kimlik bilgilerinizle [Microsoft Intune yönetim portalında](http://manage.microsoft.com) oturum açın. **Yönetim** > **Mobil Cihaz Yönetimi** > **Kayıt Kuralları**'nı seçin ve ilgili özelliklerin seçimini kaldırın.
+Varsayılan olarak tüm iOS cihazları Intune'a kaydedilebilir. Kişisel veya kurumsal cihazların kaydedilmesini engellemek için yönetici kimlik bilgilerinizle [Microsoft Intune yönetim portalında](https://manage.microsoft.com) oturum açın. **Yönetim** > **Mobil Cihaz Yönetimi** > **Kayıt Kuralları**'nı seçin ve ilgili özelliklerin seçimini kaldırın.
 
 ## <a name="use-apple-configurator"></a>Apple Configurator’ı kullanma
 
 iOS cihazlarını bir Kurumsal Kayıt profilini dışarı aktarıp ardından söz konusu mobil cihazları Apple Configurator çalıştıran bir Mac bilgisayara bağlayarak kaydedebilirsiniz. Apple Configurator iki kayıt biçimini destekler:
 
-- **Kurulum Yardımcısı kaydı**: Cihazı fabrika ayarlarına sıfırlar ve yeni kullanıcı tarafından kurulum yapılmaya hazırlar. Bu yöntem, yöneticinin, kaydı önceden yapılandırmak için iOS cihazını USB üzerinden [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) çalıştıran bir Mac bilgisayara bağlamasını gerektirir. Cihazlar daha sonra kullanıcılara dağıtılır, kullanıcılar da Kurulum Yardımcısı işlemini çalıştırır. Bu işlem cihazı kullanıcının iş veya okul kimlik bilgileriyle yapılandırır ve kaydolma işlemini tamamlar. Daha fazla bilgi için bkz. [Apple Configurator’ı ve Kurulum Yardımcısı’nı kullanarak iOS cihazları kaydetme](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+- **Kurulum Yardımcısı kaydı**: Cihazı fabrika ayarlarına sıfırlar ve yeni kullanıcı tarafından kurulum yapılmaya hazırlar. Bu yöntem, yöneticinin, kaydı önceden yapılandırmak için iOS cihazını USB üzerinden [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) çalıştıran bir Mac bilgisayara bağlamasını gerektirir. Cihazlar daha sonra kullanıcılara dağıtılır, kullanıcılar da Kurulum Yardımcısı işlemini çalıştırır. Bu işlem cihazı kullanıcının iş veya okul kimlik bilgileriyle yapılandırır ve kaydolma işlemini tamamlar. Daha fazla bilgi için bkz. [Apple Configurator’ı ve Kurulum Yardımcısı’nı kullanarak iOS cihazları kaydetme](ios-setup-assistant-enrollment-in-microsoft-intune.md).
 
-- **Doğrudan kayıt**: Cihaz hazırlama sırasında kullanılmak üzere Apple Configurator ile uyumlu bir dosya oluşturur. Kaydedilen cihaz fabrika ayarlarına sıfırlanmaz, ancak hiçbir kullanıcıyla ilişkili değildir. Bu yöntem, yöneticinin, iOS cihazını kaydetmek üzere USB üzerinden [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) çalıştıran bir Mac bilgisayara bağlamasını gerektirir. Daha fazla bilgi için bkz. [Apple Configurator Doğrudan Kurulum kullanarak iOS cihazlarını kaydetme](ios-direct-enrollment-in-microsoft-intune.md).
+- **Doğrudan kayıt**: Cihaz hazırlama sırasında kullanılmak üzere Apple Configurator ile uyumlu bir dosya oluşturur. Kaydedilen cihaz fabrika ayarlarına sıfırlanmaz, ancak hiçbir kullanıcıyla ilişkili değildir. Bu yöntem, yöneticinin, iOS cihazını kaydetmek üzere USB üzerinden [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) çalıştıran bir Mac bilgisayara bağlamasını gerektirir. Daha fazla bilgi için bkz. [Apple Configurator Doğrudan Kurulum kullanarak iOS cihazlarını kaydetme](ios-direct-enrollment-in-microsoft-intune.md).
 
 ## <a name="use-the-device-enrollment-program-dep"></a>Aygıt Kayıt Programı’nı (DEP) kullanma
 Bu seçenek, DEP aracılığıyla satın alınan cihazlara bir “havadan” kaydolma profili dağıtır. Kullanıcı, cihazda Kurulum Yardımcısı’nı çalıştırdığında, cihaz Intune'a kaydedilir. Daha fazla bilgi için, bkz. [Aygıt Kayıt Programı iOS cihazlarını kaydetme](ios-device-enrollment-program-in-microsoft-intune.md).
