@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3ba986b624e602f05eb6ab25ec30e9d58173dbd8
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -42,6 +42,7 @@ ms.lasthandoff: 03/30/2017
 |**Ekran yakalama**|Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.|Hayır|Evet|
 |**Sesli yardım**|Cihazda sesli yardım yazılımının kullanımına izin verir.|Hayır|Evet|
 |**YouTube**|Cihazda YouTube uygulamasının kullanılmasına izin verir.|Hayır|Evet|
+|**Paylaşılan cihazlar**|Yönetilen bir Samsung KNOX Standard cihazını paylaşılan olarak yapılandırın. Bu modda, son kullanıcılar Azure AD kimlik bilgilerini kullanarak cihazda oturum açıp kapatabilir ve cihaz kullanım durumundan bağımsız olarak merkezden yönetilir.<br>Oturum açan kullanıcılar kendilerine atanan uygulamalara ilkelere otomatik olarak erişir. Kullanıcılar oturumu kapattığında tüm veriler silinir.|Hayır|Evet|
 
 ## <a name="password"></a>Parola
 
@@ -53,11 +54,18 @@ ms.lasthandoff: 03/30/2017
 |**Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**|Cihaz otomatik olarak kilitlenmeden önce işlem yapılmayan dakika sayısını belirtir.|Evet|Evet|
 |**Cihaz silinmeden önceki oturum açma hatası sayısı**|Cihaz silinmeden önce başarısız oturum açma sayısını belirtir.|Evet|Evet|
 |**Parola kullanım süresi (gün)**|Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
-|**Gerekli parola türü**|Gereken parola karmaşıklık düzeyini ve biyometrik cihaz kullanılıp kullanılamayacağını belirtir.|Evet|Evet|
+|**Gerekli parola türü**|Gereken parola karmaşıklık düzeyini ve biyometrik cihaz kullanılıp kullanılamayacağını belirtir. Aşağıdakilerden birini seçin:<br><br>    -     **Cihaz varsayılanı**<br>-     **Düşük güvenlik biyometriği**<br>    -     **En az sayısal**<br>    -     **Sayısal karmaşık** - ('1111' veya '1234' gibi yinelenen veya ardışık numaralara izin verilmez)<sup>1</sup><br>    -     **En az alfabetik**<br>    -     **En az alfasayısal**<br>    -     **En az simgeler ile alfasayısal**|Evet|Evet|
 |**Önceki parolaların yeniden kullanılmasını engelleme**|Son kullanıcının daha önce kullanmış olduğu bir parolayı oluşturmasını engeller.|Evet|Evet|
 |**Parmak izi ile kilit açma**|Desteklenen cihazların kilidini açmak için parmak izi kullanımına izin verir.|Hayır|Evet|
 |**Akıllı Kilitleme ve diğer güven aracıları**|Uyumlu Android cihazlarda Akıllı Kilit özelliğini denetlemenize olanak tanır (Samsung KNOX Standard 5.0 ve üstü). Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken (örneğin, belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda) cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.|Evet (5.0 ve üzeri)|Hayır|
 |**Şifreleme**|Cihazdaki dosyaların şifrelenmesini gerektirir.|Evet|Evet|
+
+<sup>1</sup>Bu ayarı cihazlara atamadan önce, Şirket Portalının hedeflenen cihazlarda en son sürüme güncelleştirilmiş olduğundan emin olun.
+
+**Sayısal karmaşık** ayarını yapılandırıp, bunu Android 5.0 öncesi bir sürümü çalıştıran cihaza atarsanız aşağıdaki davranış uygulanır.
+- Şirket Portalı uygulaması 1704 öncesi bir sürümü çalıştırıyorsa cihaza PIN ilkesi uygulanmaz ve Intune portalında bir hata görüntülenir.
+- Şirket Portalı uygulaması 1704 sürümüne güncelleştirilmişse yalnızca basit bir PIN uygulanır. Android 5.0 öncesi sürümlerde bu ayar desteklenmez. Intune portalında herhangi bir hata görüntülenmez.
+
 
 ## <a name="google-play-store"></a>Google Play Store
 

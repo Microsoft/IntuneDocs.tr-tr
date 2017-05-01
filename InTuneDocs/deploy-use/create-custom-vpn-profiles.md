@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f2b364b2c57adab33df2a8e6b34c1f30c02988d3
-ms.openlocfilehash: 9dbb44981c1525e6137dd8a469b1582731ee9719
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 260c328d37174c94bde37162ec011aded26a9f72
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ Aşağıdakilere yönelik VPN profilleri oluşturmak için Intune özel yapılan
 * Android for Work cihazlar
 * Windows 8.1 ve üzeri çalıştıran kayıtlı cihazlar
 * Windows Phone 8.1 ve üzeri sürümleri çalıştıran cihazlar 
-* Windows 10 masaüstü çalıştıran kayıtlı cihazlar 
+* Windows 10 masaüstü çalıştıran kayıtlı cihazlar
 * Windows 10 Mobile çalıştıran cihaz
 
 Standart Intune VPN ilkeleri, kullanmak istediğiniz ayarları içermiyorsa bu tür bir ilke yararlı olabilir.
@@ -52,7 +53,7 @@ Ardından, normal şekilde [ilkeyi dağıtın](/intune/deploy-use/manage-setting
 ## <a name="example-uri-settings"></a>Örnek URI ayarları
 
 Contoso adlı kurgusal bir şirkette VPN’e özel yapılandırma oluşturmak için bu ayarlar kullanılabilir.
-Kullanabileceğiniz tüm ayarlar hakkındaki ayrıntılar için bkz. [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
+Kullanabileceğiniz tüm ayarlar hakkındaki ayrıntılar için bkz. [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
 Native Contoso VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -90,7 +91,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyla ilgili ek ayrıntılar için, müşteriler yapılandırma servisi sağlayıcısı (CSP) belgelerine bakabilir: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
+Müşteriler, bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyla ilgili ek ayrıntılar için yapılandırma servisi sağlayıcısı (CSP) belgelerine bakabilir: https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>PulseSecure üzerinde Android uygulaması başına VPN için URI ayarları
 ### <a name="custom-uri-for-package-list"></a>PAKET LİSTESİ İÇİN ÖZEL URI
@@ -116,9 +117,4 @@ Bu ayarların nasıl kullanılacağı hakkındaki sorular veya ne yaptıklarıyl
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune’da VPN bağlantıları](vpn-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

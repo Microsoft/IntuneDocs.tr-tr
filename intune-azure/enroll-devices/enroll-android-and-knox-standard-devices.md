@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: b664620f424f9ef612d17beb810564dbdd68ff79
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: b2cbabea781840df0a2a283f803dc76520590aba
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,6 +28,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Intune, Samsung Knox Standard cihazları dahil olmak üzere Android cihazlarını yönetmenize olanak tanır. Cihaz yönetimini etkinleştirmek için, kullanıcılarınızın Google Play'de bulunan Intune Şirket Portalı uygulamasını indirmeleri ve ardından uygulamayı açıp kaydolmaya yönelik istemleri izleyerek cihazlarını kaydetmeleri gerekir. Android cihazlarını yönetim altına aldıktan sonra [uyumluluk ilkeleri oluşturabilir](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android), [uygulamaları yönetebilir](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management)ve daha fazlasını yapabilirsiniz.
+
+Samsung KNOX Standard çalıştıran cihazlarda artık Intune ile birden çok kullanıcı yönetimi gerçekleştirilebilir. Bu, son kullanıcıların Azure Active Directory kimlik bilgilerini kullanarak cihazda oturum açıp kapatabileceği ve cihazın kullanım durumundan bağımsız olarak merkezden yönetileceği anlamına gelir. Oturum açan kullanıcılar kendilerine atanan uygulamalara ilkelere otomatik olarak erişir. Kullanıcılar oturumu kapattığında tüm veriler silinir.
 
 ## <a name="prerequisite"></a>Önkoşul
 

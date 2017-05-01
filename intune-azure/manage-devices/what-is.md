@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir? 
+# <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ ms.lasthandoff: 04/13/2017
 - **Genel Bakış** Kaydettiğiniz cihazlar ve her cihazın çalıştırdığı işletim sistemleri hakkında bilgi alın.
 - **Yönet** - Yönettiğiniz tüm cihazların listesini görmek için **Tüm Cihazlar**’ı seçin.
     Listedeki cihazlardan birini seçerek <*cihaz adı*> **Genel Bakış** dikey penceresini açın. Burada aşağıdakilerden birini seçebilirsiniz:
-    - **Genel Bakış**  - Cihaz hakkında adı, sahibi, bir KCG cihazı olup olmadığı, en son ne zaman iade edildiği gibi genel bilgilere bakın. 
-                
+    - **Genel Bakış**  - Cihaz hakkında adı, sahibi, bir KCG cihazı olup olmadığı, en son ne zaman iade edildiği gibi genel bilgilere bakın.
+
     - **Donanım** - Cihaz hakkında boş depolama alanı, modeli ve üreticisi gibi daha ayrıntılı bilgilere bakın.
     ![Yönetilen cihaz donanım envanteri](./media/hardware-inventory.png)
     - **Algılanan Uygulamalar** - Intune’un cihazda yüklü olduğunu bulduğu tüm uygulamaların listesini görüntüler.
@@ -67,6 +67,12 @@ Cihaz için <*cihaz adı*> **Genel Bakış** dikey penceresinde görüntülenece
 ### <a name="bypass-activation-lock"></a>**Etkinleştirme Kilidini Atla**
 Kullanıcının Apple kimliği ve parolası olmadan iOS cihazının etkinleştirme kilidini kaldırır. Siz etkinleştirme kilidini atladıktan sonra, iPhone’umu Bul uygulaması başlatıldığında cihaz etkinleştirme kilidini yeniden açar. Etkinleştirme kilidini, ancak cihaza fiziksel erişiminiz varsa atlayın.
 
+### <a name="fresh-start"></a>**Fresh Start**
+
+Creators Update çalıştıran bir Windows 10 bilgisayarında yüklü tüm uygulamaları kaldırır ve ardından bilgisayarı Windows’un son sürümüne güncelleştirir.
+Bu eylem genellikle yeni bir PC ile gelen önceden yüklü (OEM) uygulamaların kaldırılmasına yardımcı olması için kullanılabilir. Bu cihaz eylemi düzenlendiğinde kullanıcı verilerinin tutulup tutulmayacağını yapılandırabilirsiniz. Bu durumda uygulamalar ve ayarlar kaldırılır, ancak kullanıcıların Giriş klasörünün içeriği korunur.
+
+
 ### <a name="lost-mode"></a>**Kayıp modu**
 Bir iOS cihazı kaybolursa veya çalınırsa kayıp modunu etkinleştirebilirsiniz. Bu, cihazın kilit ekranında görüntülenecek bir mesaj ve telefon numarası belirtmenize olanak tanır. Bunu yapmak için:
 1.    iOS cihazının özellikler dikey penceresinde **Diğer** > **Kayıp modu**’nu seçin.
@@ -78,7 +84,7 @@ Kayıp modunu kullanmak için cihazın DEP aracılığıyla kaydedilen ve deneti
 ### <a name="locate-device"></a>**Cihazı bul**
 Kayıp veya çalınmış bir iOS cihazının konumunu haritada görüntülemek için bu uzak eylemi kullanın. Cihazın DEP aracılığıyla kaydedilen ve denetimli modda olan, şirkete ait bir iOS cihazı olması gerekir. Bu eylemi kullanabilmek için önce cihazın kayıp moduna geçirilmiş olması gerekir.
 1.    iOS cihazının özellikler dikey penceresinde **Diğer** > **Cihazı bul**’u seçin.
-2.    Cihaz bulunduktan sonra konumu **Cihazı bul** dikey penceresinde görüntülenir. 
+2.    Cihaz bulunduktan sonra konumu **Cihazı bul** dikey penceresinde görüntülenir.
     ![Cihazı bul dikey penceresi](./media/locate-device.png)
 
 >[!NOTE]

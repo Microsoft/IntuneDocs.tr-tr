@@ -5,7 +5,7 @@ description: "Intune Azure önizlemesi: Windows cihazları için Intune mobil ci
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/21/17
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: b62a5704605f5cf89efb4052180f09f88eb788e1
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3c764b269916ae1a9b076617842eb26d7fd13bab
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,7 +28,10 @@ ms.lasthandoff: 04/06/2017
 
 Bu konu, BT yöneticilerinin Windows kaydını kullanıcıları için kolaylaştırmasına yardımcı olmaktadır.  Windows cihazları ek adım olmadan kaydedilebilir ancak kayıt işlemini kullanıcılar için kolay hale getirebilirsiniz.
 
-Windows cihazlarını kaydetme şeklini belirleyen iki etmen vardır:
+Windows 10 Creators Update çalıştıran ve Azure Active Directory etki alanına katılmış olan cihazlar artık Intune tarafından çok kullanıcılı yönetim için destekleniyor. Bu destek sayesinde farklı standart kullanıcılar, Azure AD kimlik bilgilerini kullanarak cihazda oturum açtığında kullanıcı adlarına atanmış olan uygulamalara ve ilkelere erişecek. Kullanıcılar, uygulama yükleme gibi self servis senaryoları için Şirket Portalını şu anda kullanamaz.
+
+Windows cihaz kaydını nasıl basit hale getirebileceğinizi iki faktör belirler:
+
 - **Azure Active Directory Premium kullanıyor musunuz?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium), Enterprise Mobility + Security ve diğer lisanslama planlarına dahildir.
 - **Hangi Windows istemci sürümleri kaydolur?** <br>Windows 10 cihazları iş veya okul hesabı eklenerek otomatik olarak kaydedilebilir. Önceki sürümlerin Şirket Portalı uygulamasını kullanarak kaydolması gerekir.
 
@@ -40,7 +43,7 @@ Windows cihazlarını kaydetme şeklini belirleyen iki etmen vardır:
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium olmadan Windows kaydını etkinleştirme
-Kullanıcıların, Azure AD Premium otomatik kaydı olmadan cihazlarını kaydetmelerine olanak sağlayabilirsiniz. Lisansları kullanıcıların hesabına atadıktan sonra kullanıcılar bu hesabı bir Windows cihazına ekleyip cihazı yönetim için kaydetmeyi kabul edebilirler. DNS diğer adı (CNAME kayıt türü) oluşturmak, kullanıcıların cihazlarını kaydetmelerini kolaylaştırır. DNS CNAME kaynak kayıtları oluşturursanız, kullanıcılar sunucu adı girmek zorunda kalmadan Intune'a bağlanır ve kaydolur.
+Kullanıcıların, Azure AD Premium otomatik kaydı olmadan cihazlarını kaydetmelerine olanak sağlayabilirsiniz. Lisans atadıktan sonra, kullanıcılar kendi iş hesabını kişisel cihazlarına ekledikten veya şirkete ait cihazlarının Azure AD'nize katılmasını sağladıktan sonra kayıt işlemini gerçekleştirebilir. DNS diğer adı (CNAME kayıt türü) oluşturmak, kullanıcıların cihazlarını kaydetmelerini kolaylaştırır. DNS CNAME kaynak kayıtları oluşturursanız, kullanıcılar sunucu adı girmek zorunda kalmadan Intune'a bağlanır ve kaydolur.
 
 **1. Adım: CNAME oluşturma** (isteğe bağlı)<br>
 Şirketinizin etki alanı için CNAME DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden enterpriseenrollment-s.manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz.

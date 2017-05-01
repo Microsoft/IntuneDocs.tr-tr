@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ Bu koşullar, Azure Yönetim Portalı’nda ve cihaz envanter raporunda her ciha
     
         -    Bu durumda olan cihazlarda kullanıcının güvenli başlangıç geçiş kodu ayarlaması gerekir. Kullanıcı, Şirket Portalı uygulamasında, cihaz için başlangıç geçiş kodu ayarlamasının istendiği bir bildirim görür. Cihaz bildirimine dokunup, geçerli PIN veya parolayı onayladıktan sonra, **Cihazı başlatmak için PIN gerektir** seçeneğini **Güvenli başlangıç** ekranında seçin. Ardından, Şirket Portalı uygulamasında cihazın **Uyumluluk Denetimi** düğmesine dokunun. Cihazın artık şifrelenmiş olarak algılanması gerekir.
     
-        -     Bazı cihaz üreticileri, kullanıcı tarafından ayarlanan gizli PIN yerine varsayılan bir PIN kullanarak cihazları şifreler. Intune, varsayılan PIN kullanılarak yapılan şifrelemeyi güvensiz olarak tanır, çünkü bu şifreleme yöntemi cihaza fiziksel erişimi olan kötü amaçlı kullanıcılar nedeniyle cihazdaki verileri riske atabilir. Durum buysa, [uygulama koruma ilkeleri](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kullanmayı düşünün.
+        -     Bazı cihaz üreticileri, kullanıcı tarafından ayarlanan gizli PIN yerine varsayılan bir PIN kullanarak cihazları şifreler. Intune, varsayılan PIN kullanılarak yapılan şifrelemeyi güvensiz olarak tanır, çünkü bu şifreleme yöntemi cihaza fiziksel erişimi olan kötü amaçlı kullanıcılar nedeniyle cihazdaki verileri riske atabilir. Durum buysa, [uygulama koruma ilkeleri](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kullanmayı düşünün.
 
 ## <a name="policy-issues"></a>İlke sorunları
 
@@ -119,7 +119,7 @@ Bu sorun giderme yordamları sorununuzu çözmüyorsa, Microsoft Desteği, OWA p
 ### <a name="exchange-connector-logs"></a>Exchange Connector günlükleri
 
 #### <a name="general-log-information"></a>Genel günlük bilgileri
-Exchange Connector günlüklerini görüntülemek için [Sunucu İzleme Görüntüleme Aracı](server trace viewer tool (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx') kullanın. Bu araç, Windows Server SDK’yı indirmenizi gerektirir.
+Exchange Connector günlüklerini görüntülemek için [Server Trace Viewer Tool](sunucu izleme görüntüleme aracı (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx') kullanın. Bu araç, Windows Server SDK’yı indirmenizi gerektirir.
 
 >[!NOTE]
 >Günlükler C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs konumundadır. Günlükler, *Connector0.log* ile başlayıp *Connector29.log* ile biten bir dizi 30 günlük dosyası içindedir. Günlükler, bir günlükte 10 MB veri biriktikten sonra birinden diğerine geçer. Günlükler Connector29’a vardıktan sonra yeniden Connector0’dan başlayarak önceki günlük dosyalarının üzerine yazılır.

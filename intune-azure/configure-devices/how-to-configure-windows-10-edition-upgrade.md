@@ -1,12 +1,12 @@
 ---
 title: "Intune ile Windows 10 sürüm yükseltmelerini yapılandırma"
 titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Yönettiğiniz Windows 10 cihazlarını yükseltmek için Intune’u kullanmayı öğrenin."
+description: "Intune Azure önizlemesi: Yönettiğiniz Windows 10 cihazlarını farklı bir sürüme yükseltmek için Intune’u kullanmayı öğrenin."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 0274a76fa7dd301ab19d1e8bc155c4ef2c79266f
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Windows 10 sürüm yükseltme profilinin nasıl yapılandırılacağını öğrenmek için bu konu başlığı altındaki bilgileri kullanın. Bu profil aşağıdaki Windows 10 sürümlerinden birini çalıştıran cihazları daha yeni bir sürüme otomatik olarak yükseltmenizi sağlar:
+Windows 10 sürüm yükseltme profilinin nasıl yapılandırılacağını öğrenmek için bu konu başlığı altındaki bilgileri kullanın. Bu profil aşağıdaki Windows 10 sürümlerinden birini çalıştıran cihazları farklı bir sürüme otomatik olarak yükseltmenizi sağlar:
 
 - Windows 10 Home
 - Windows 10 Holographic
