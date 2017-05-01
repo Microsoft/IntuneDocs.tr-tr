@@ -1,12 +1,12 @@
 ---
-title: "Intune sertifika altyapısını PKCS için yapılandırma"
+title: "Intune ile PKCS sertifikalarını yapılandırma ve yönetme"
 titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Altyapınızı, Intune ile PKCS sertifikalarını kullanacak şekilde yapılandırmayı öğrenin."
+description: "Intune Azure önizlemesi: Altyapınızı yapılandırıp, ardından Intune ile PKCS sertifika profilleri oluşturup atamayı öğrenin."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 11bb2cbcf14abe5966e0b203ba3466adc12bd4dd
+ms.lasthandoff: 04/24/2017
 
 
 
 ---
-# <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>Microsoft Intune sertifika altyapınızı PKCS için yapılandırma
+# <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve yönetme
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Bu konu başlığı altında, Intune ile PKCS sertifika profillerini oluşturmak ve dağıtmak için nelere ihtiyacınız olduğu açıklanır.
+Bu konu başlığında altyapınızı yapılandırıp, ardından Intune ile PKCS sertifika profilleri oluşturup atama işlemlerinin nasıl yapılacağı gösterilir.
 
 Kuruluşunuzda sertifika tabanlı kimlik doğrulamaları yapmak için, bir Kuruluş Sertifika Yetkiliniz olmalıdır.
 
@@ -56,22 +56,21 @@ Kuruluş Sertifika Yetkilisine ek olarak PKCS Sertifika profillerini de kullanma
     WAP sertifikaları hakkında bilgi için, [Web Uygulaması Ara Sunucusu Kullanarak Uygulama Yayınlamayı Planlama](https://technet.microsoft.com/library/dn383650.aspx) konusunun **Sertifikaları planlama** bölümüne bakın. WAP sunucuları hakkında genel bilgi için bkz. [Web Uygulaması Ara Sunucusu ile çalışma](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
-## <a name="certificates-and-templates"></a>Sertifikalar ve Şablonlar
+## <a name="certificates-and-templates"></a>Sertifikalar ve şablonlar
 
 |Nesne|Ayrıntılar|
 |----------|-----------|
 |**Sertifika Şablonu**|Bu şablonu sertifika veren CA'nız üzerinde yapılandırabilirsiniz.|
-|**Güvenilen Kök CA sertifika**|Bunu sertifika veren CA'dan veya ona güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarabilir ve Güvenilen CA sertifika profilini kullanarak cihazlara dağıtabilirsiniz.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
+|**Güvenilen Kök CA sertifika**|Bunu sertifika veren CA'dan veya ona güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarabilir ve Güvenilen CA sertifika profilini kullanarak cihazlara atayabilirsiniz.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
 
 
 ## <a name="configure-your-infrastructure"></a>Altyapınızı yapılandırın
-Sertifika profillerini yapılandırabilmeniz için önce aşağıdaki görevleri tamamlamanız gerekir. Bu görevler, Windows Server 2012 R2 ve Active Directory Sertifika Hizmetleri (ADCS) bilgisi gerektirir:
+Sertifika profillerini yapılandırabilmeniz için önce aşağıdaki adımları tamamlamanız gerekir. Bu adımlar, Windows Server 2012 R2 ve Active Directory Sertifika Hizmetleri (ADCS) bilgisi gerektirir:
 
-- **Görev 1** - Sertifika yetkilisinde sertifika şablonları yapılandırma.
-- **Görev 2** - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma.
+- **Adım 1** - Sertifika yetkilisinde sertifika şablonlarını yapılandırın.
+- **Adım 2** - Intune Sertifika Bağlayıcısı'nı etkinleştirin, yükleyin ve yapılandırın.
 
-## <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Görev 1 - Sertifika yetkilisinde sertifika şablonları yapılandırma
-Bu görevde, sertifika şablonunu yayımlayacaksınız.
+## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>Adım 1 - Sertifika yetkilisinde sertifika şablonlarını yapılandırma
 
 ### <a name="to-configure-the-certification-authority"></a>Sertifika yetkilisini yapılandırmak için
 
@@ -109,12 +108,13 @@ Bu görevde, sertifika şablonunu yayımlayacaksınız.
 
 4.  CA bilgisayarında, Intune Sertifika Bağlayıcısı’nı barındıran bilgisayarın, PKCS sertifika profili oluşturulurken kullanılan şablona erişebilmesi için kayıt izni olduğundan emin olun. CA bilgisayarı özelliklerindeki **Güvenlik** sekmesinde bu izni ayarlayın.
 
-## <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Görev 2 - Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
-Bu görevde şunları yapacaksınız:
+## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>Adım 2 - Intune sertifika bağlayıcısını etkinleştirme, yükleme ve yapılandırma
+Bu adımda şunları yapacaksınız:
 
-Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
+- Sertifika Bağlayıcısı desteğini etkinleştirme
+- Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
 
-### <a name="to-enable-support-for-the-certificate-connector"></a>Sertifika Bağlayıcısı desteğini etkinleştirmek için
+### <a name="to-enable-support-for-the-certificate-connector"></a>Sertifika bağlayıcısı desteğini etkinleştirmek için
 
 1.  Azure Portal’da oturum açın.
 2.  **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
@@ -122,7 +122,7 @@ Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
 2.  **Cihaz Yapılandırması** dikey penceresinde **Kurulum** > **Sertifika Yetkilisi**’ni seçin.
 2.  **1. Adım**’ın altında **Etkinleştir**’i seçin.
 
-### <a name="to-download-install-and-configure-the-certificate-connector"></a>Sertifika Bağlayıcısı'nı indirmek, yüklemek ve yapılandırmak için
+### <a name="to-download-install-and-configure-the-certificate-connector"></a>Sertifika bağlayıcısını indirmek, yüklemek ve yapılandırmak için
 
 1.  **Cihazları yapılandır** dikey penceresinde **Kurulum** > **Sertifika Yetkilisi**’ni seçin.
 2.  **Sertifika bağlayıcısını indir**’i seçin.
@@ -158,6 +158,53 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403
 
 **http:// &lt;NDES_sunucunuzun_FQDN_değeri&gt;/certsrv/mscep/mscep.dll**
 
-### <a name="next-steps"></a>Sonraki adımlar
-Artık sertifika profillerinizi, [Microsoft Intune’la sertifikaları yapılandırma](how-to-configure-certificates.md) konusunda açıklandığı gibi yapılandırmaya hazırsınız.
+
+### <a name="how-to-create-a-pkcs-certificate-profile"></a>PKCS sertifika profili oluşturma
+
+Azure Portal’da **Cihazları yapılandır** iş yükünü seçin.
+2. **Cihaz yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
+3. Profiller dikey penceresinde **Profil Oluştur**’a tıklayın.
+4. **Profil Oluştur** dikey penceresinde, PKCS sertifika profili için **Ad** ve **Açıklama** girin.
+5. **Platform** açılan listesinde, bu PKCS sertifikası için cihaz platformu olarak aşağıdakilerden birini seçin:
+    - **Android**
+    - **Android for Work**
+    - **iOS**
+    - **Windows 10 ve üzeri**
+6. **Profil** türü açılan listesinde **PKCS sertifikası**’nı seçin.
+7. **PKCS Sertifikası** dikey penceresinde aşağıdaki ayarları yapılandırın:
+    - **Yenileme eşiği (%)** - Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini belirtin.
+    - **Sertifika geçerlilik süresi** - Veren sertifika yetkilisinde, özel bir geçerlilik süresine izin veren **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** komutunu çalıştırdıysanız, sertifikanın süresi dolmadan önce kalan zamanı belirtebilirsiniz.<br>Belirtilen sertifika şablonundaki geçerlilik süresinden düşük bir değer belirtebilirsiniz, daha yüksek bir değer belirtemezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa, beş yıl değerini belirtemez ancak bir yıl değerini belirtebilirsiniz. Değerin, yayımlayan sertifika yetkilisinin sertifikası için kalan geçerlilik süresinden de düşük olması gerekir.
+    - **Anahtar depolama alanı sağlayıcısı (KSP)** (Windows 10) - Sertifika anahtarının depolanacağı yeri belirtin. Aşağıdaki değerlerden birini seçin:
+        - **Varsa Güvenilir Platform Modülü (TPM) KSP'sine, aksi halde Yazılım KSP'sine kaydol**
+        - **Güvenilir Platform Modülü (TPM) KSP'sine kaydol, aksi halde hata ver**
+        - **Passport'a kaydet, aksi halde hata ver (Windows 10 ve üzeri)**
+        - **Software KSP’ye kaydol**
+    - **Sertifika yetkilisi** - Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Kuruluş Sertifika Yetkilisi (CA). Tek Başına CA desteklenmez. Bir Sertifika Yetkilisi'ni nasıl ayarlayacağınız hakkında bilgi edinmek için bkz. [Sertifika Yetkilisi'ni Yükleme](http://technet.microsoft.com/library/jj125375.aspx). CA'nız Windows Server 2008 R2 çalıştırıyorsa, [KB2483564 ile gelen düzeltmeyi yüklemeniz](http://support.microsoft.com/kb/2483564/)gerekir.
+    - **Sertifika yetkilisi adı** - Sertifika yetkilinizin adını girin.
+    - **Sertifika şablonu adı** - Ağ Cihazı Kayıt Hizmeti'nin kullanmak üzere yapılandırıldığı ve sertifikayı veren sertifika yetkilisine eklenmiş bir sertifika şablonunun adını girin.
+    Adın, Ağ Cihazı Kayıt Hizmeti'ni çalıştıran sunucunun kayıt defterinde listelenen sertifika şablonlarından biriyle tam olarak aynı olduğundan emin olun. Sertifika şablonu ekran adını değil, sertifika şablonu adını belirttiğinizden emin olun. 
+    Sertifika şablonlarının adlarını bulmak için şu anahtara gidin: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP. **EncryptionTemplate**, **GeneralPurposeTemplate**ve **SignatureTemplate**için değerler olarak listelenen sertifika şablonlarını göreceksiniz. Varsayılan olarak, sertifika şablonlarının üçü için de değer IPSECIntermediateOffline'dır; bu, **IPSec (Çevrimdışı istek)** şablon ekran adına eşlenir. 
+    - **Konu adı biçimi** - Listeden, sertifika isteğindeki konu adının Intune tarafından otomatik olarak nasıl oluşturulacağını seçin. Sertifika bir kullanıcı içinse, konu adına kullanıcının e-posta adresini de ekleyebilirsiniz. Aşağıdakilerden birini seçin:
+        - **Yapılandırılmadı**
+        - **Ortak ad**
+        - **E-postayı içeren ortak ad**
+        - **E-posta olarak ortak ad**
+    - **Konu diğer adı** - Intune uygulamasının, sertifika isteğinde konu diğer adı (SAN) için değerleri otomatik olarak nasıl oluşturacağını belirtin. Örneğin, bir kullanıcı sertifikası türü seçtiyseniz, konu alternatif adına kullanıcı asıl adını (UPN) ekleyebilirsiniz. İstemci sertifikası, bir Ağ İlkesi Sunucusuna kimlik doğrulamak için kullanılacaksa, UPN'ye konu alternatif adını ayarlamanız gerekir.
+    - **Genişletilmiş anahtar kullanımı** (Android) - Sertifikaların hedeflenen amacına yönelik değerler eklemek için **Ekle**'yi seçin. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimlik doğrulaması gerçekleştirebilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz. 
+    - **Kök Sertifika** (Android) - Daha önce yapılandırdığınız ve kullanıcıya veya cihaza atadığınız kök CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı verecek CA'nın kök sertifikası olmalıdır. Bu, daha önce oluşturduğunuz güvenilen sertifika profilidir.
+8. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
+
+Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
+
+## <a name="how-to-assign-the-certificate-profile"></a>Sertifika profilini atama
+
+Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz önünde bulundurun:
+
+- Sertifika profillerini gruplara atadığınızda, Güvenilen CA sertifika profilinden alınan sertifika dosyası cihaza yüklenir. Cihaz, bir sertifika isteği oluşturmak için PKCS sertifika profilini kullanır.
+- Sertifika profilleri, yalnızca profili oluşturduğunuzda kullandığınız platformu çalıştıran cihazlara yüklenir.
+- Sertifika profillerini kullanıcı koleksiyonlarına veya cihaz koleksiyonlarına atayabilirsiniz.
+- Cihaz kaydolduktan sonra cihaza hızlıca bir sertifika yayımlamak için sertifika profilini bir cihaz grubu yerine bir kullanıcı grubuna atayın. Bir cihaz grubuna atarsanız, ilkeleri almadan önce cihazın tam olarak kaydedilmesi gerekir.
+- Her profili ayrı olarak atasanız da Güvenilen Kök CA’sını ve PKCS profilini de atamanız gerekir. Aksi takdirde PKCS sertifika ilkesi başarısız olur.
+
+Profillerin nasıl atanacağı hakkında bilgi için bkz. [Cihaz profillerini atama](how-to-assign-device-profiles.md).
 
