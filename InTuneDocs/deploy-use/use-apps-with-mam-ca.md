@@ -1,5 +1,5 @@
 ---
-title: "MAM CA ile uygulamaları kullanma | Microsoft Docs"
+title: "MAM CA bulunan uygulamaları kullanma"
 description: "O365 hizmetlerine hangi uygulamaların erişimi olacağını denetlemekte MAM CA’nın nasıl yardımcı olabileceğine ilişkin kavramları anlayın."
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ Aşağıda doğrudan cihazdan türetilen özelliklerin listesi verilmiştir:
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> Android cihazlarda:
+  * Cihazda Şirket Portalı uygulamasının yüklü olması gerekir, ancak son kullanıcının uygulamada oturum açması gerekli değildir.
+  * Cihaz kaydı OneDrive veya Outlook uygulaması aracılığıyla yapılmalıdır.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Azure AD kaydından bir cihazı kaldırmak için.
 Cihaz kaydını kaldırmanın bir yolu, Azure AD yönetici konsolundan kaldırmaktır ve bu işlem genelde BT yöneticileri tarafından yapılır.  Kaldırma işlemi aynı zamanda son kullanıcının cihazında da gerçekleştirilebilir.

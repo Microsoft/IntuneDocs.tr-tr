@@ -15,9 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
-ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
-ms.lasthandoff: 01/14/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -110,8 +110,8 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
   ![Şirket içi ve Geçici sertifika seçin](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->Uygulamayı dağıtmayı planlamıyorsanız ve yalnızca dahili olarak test etmek istiyorsanız, Üretim sertifikası yerine bir iOS Uygulama Geliştirme sertifikası kullanabilirsiniz. Bir geliştirme sertifikası kullanıyorsanız mobil sağlama profilinin, uygulamanın yükleneceği cihazlara başvurduğundan emin olun.
+  >[!NOTE]
+  >Uygulamayı dağıtmayı planlamıyorsanız ve yalnızca dahili olarak test etmek istiyorsanız, Üretim sertifikası yerine bir iOS Uygulama Geliştirme sertifikası kullanabilirsiniz. Bir geliştirme sertifikası kullanıyorsanız mobil sağlama profilinin, uygulamanın yükleneceği cihazlara başvurduğundan emin olun.
 
 7. Sayfanın altındaki **İleri**’ye tıklayın.
 
@@ -139,7 +139,6 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 14. Sertifikayı bir anahtarlığa eklemek için indirmiş olduğunuz sertifika dosyasına çift tıklayın.
 
 15. **Anahtarlık Erişimi**’ni yeniden açın. Sertifikanızı bulmak için sağ üst kısımdaki arama çubuğunda sertifikanızın adını aratın. Menünün görünmesini sağlamak için öğeye sağ tıklayın ve **Bilgi Al**’a tıklayın. Örnek ekranlarda üretim sertifikası yerine geliştirme sertifikası kullanıyoruz.
-
 
   ![Sertifikanızı bir anahtarlığa ekleyin](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -208,7 +207,7 @@ Aşağıdaki komut satırı parametrelerini Uygulama Sarmalama Aracı ile birlik
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Uygulama Sarmalama Aracı için kullanılabilir komut satırı özellikleri hakkında ayrıntılı kullanım bilgilerini gösterir.|
-|**-v**|(İsteğe bağlı) Konsola ayrıntılı ileti çıkışı yapar.|
+|**-v**|(İsteğe bağlı) Konsola ayrıntılı ileti çıkışı yapar. Bu bayrağın hataları ayıklamak için kullanılması önerilir.|
 |**-e**| (İsteğe bağlı) Uygulama Sarmalama Aracının uygulamayı işlerken eksik yetkilendirmeleri kaldırmasını sağlamak için bu bayrağı kullanın. Daha fazla ayrıntı için Uygulama yetkilendirmelerini ayarlama bölümüne bakın.|
 |**-xe**| (İsteğe bağlı) Uygulamadaki iOS uzantıları hakkında bilgi ve bunları kullanmak için hangi yetkilendirmelerin gerektiğini yazdırır. Daha fazla ayrıntı için Uygulama yetkilendirmelerini ayarlama bölümüne bakın. |
 |**-x**| (İsteğe bağlı) `<An array of paths to extension provisioning profiles>`. Uygulamanızda uzantı sağlayan profiller gerekiyorsa bunu kullanın.|

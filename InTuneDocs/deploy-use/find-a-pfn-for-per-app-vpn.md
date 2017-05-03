@@ -15,8 +15,9 @@ ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b0006416f2b078c8c0cf5eb14ccea4749604e1dc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fd7d7e1e09f193479c6ad221c8ace7470942c5a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,10 +73,10 @@ OneNote için şu bilgiler alınır:
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>Uygulama bilgisayarda yüklü olmadığında bir PFN bulma
 
-1.    https://www.microsoft.com/en-us/store/apps adresine gidin.
+1.    https://www.microsoft.com/store/apps adresine gidin.
 2.    Arama çubuğuna uygulamanın adını girin. Bizim örneğimizde, OneNote için arama yapın.
-3.    Uygulamanın bağlantısını seçin. URL’nin sonunda bir dizi harf olduğuna dikkat edin. Bizim örneğimizde, URL şöyle görünür: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
-4.    Farklı bir sekmede, şu URL’yi yapıştırın: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. `<app id>` bölümünü, https://www.microsoft.com/en-us/store/apps adresinden aldığınız uygulama kimliğiyle değiştirin (3. adımındaki URL’nin sonunda yer alan harf serisi). Bizim OneNote örneğimizde, şunu yapıştırırsınız: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+3.    Uygulamanın bağlantısını seçin. URL’nin sonunda bir dizi harf olduğuna dikkat edin. Bizim örneğimizde, URL şöyle görünür: `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`.
+4.    Farklı bir sekmede, şu URL’yi yapıştırın: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. `<app id>` bölümünü, https://www.microsoft.com/store/apps adresinden aldığınız uygulama kimliğiyle değiştirin (3. adımdaki URL’nin sonunda yer alan harf serisi). Bizim OneNote örneğimizde, şunu yapıştırırsınız: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
 Microsoft Edge istediğiniz bilgileri görüntüler; Internet Explorer’da bilgileri görmek için **Aç**’ı seçin. PFN değeri ilk satırda verilir. İşte bizim örneğimizin sonuçları:
 
@@ -86,9 +87,4 @@ Microsoft Edge istediğiniz bilgileri görüntüler; Internet Explorer’da bilg
 `  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",`
 `  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`
 `}`
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

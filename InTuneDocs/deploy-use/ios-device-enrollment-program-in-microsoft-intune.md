@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 89a573abb8853ffdab713ce838de323abac03c37
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -162,7 +162,9 @@ Bu adım cihazları Apple DEP Service ile eşitler ve cihazların Intune konsolu
 
 ## <a name="changes-to-intune-group-assignments"></a>Intune grubu atamalarına değişiklikler
 
-2017 Nisan ayından başlayarak cihaz grup yönetimi Azure Active Directory’ye taşınıyor. Azure Active Directory gruplarına geçişten sonra grup ataması Kurumsal Kayıt Profili seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Yeni portala geçildikten sonra, Kurumsal Kayıt Profili adlarını temel alan dinamik cihaz grubu atamaları tanımlanabilir. Azure Active Directory cihaz gruplarına geçiş sırasında, önceden bir Şirket Cihaz Kaydı profili tarafından atanmış olan her Intune cihaz grubu için Şirket Cihaz Kaydı profilinin adına göre AAD'de karşılık gelen bir dinamik cihaz grubu oluşturulacaktır. Bu işlem bir cihaz grubuna atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. [Azure Active Directory grupları hakkında daha fazla bilgi edinin](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+2017 Nisan ayından başlayarak cihaz grup yönetimi Azure Active Directory’ye taşınıyor. Azure Active Directory gruplarına geçişten sonra grup ataması Kurumsal Kayıt Profili seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Yeni portala geçildikten sonra, Kurumsal Kayıt Profili adlarını temel alan dinamik cihaz grubu atamaları tanımlanabilir. Azure Active Directory cihaz gruplarına geçiş sırasında, önceden bir Şirket Cihaz Kaydı profili tarafından atanmış olan her Intune cihaz grubu için Şirket Cihaz Kaydı profilinin adına göre AAD'de karşılık gelen bir dinamik cihaz grubu oluşturulacaktır. Bu işlem bir cihaz grubuna atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. Bunun şirkete ait iOS cihaz kaydını nasıl etkilediği hakkında daha fazla ayrıntı için bkz. [Ön Kayıtlı Şirkete Ait iOS Cihazları için Otomatik Gruplamadaki Değişiklikler](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/).
+
+Ayrıca [Azure Active Directory grupları hakkında daha fazla bilgi edinebilirsiniz](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Cihaz kaydetme önkoşulları](prerequisites-for-enrollment.md)

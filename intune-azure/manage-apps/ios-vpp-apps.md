@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
+ms.lasthandoff: 04/19/2017
 
 ---
 
@@ -30,6 +30,11 @@ ms.lasthandoff: 04/06/2017
 iOS uygulama deposu, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak sağlar. Bu durum, satın alınan uygulamaların birden fazla kopyasın izlemeye yönelik yönetim yükünü azaltmanıza yardımcı olabilir.
 
 Microsoft Intune lisans bilgilerini uygulama mağazasından içeri aktararak, kaç lisans kullandığınızı izleyerek ve sahip olduğunuzdan fazla uygulama kopyasını yüklemenizi önleyerek, bu program aracılığıyla satın aldığınız uygulamaları yönetmenize yardımcı olur.
+
+Ayrıca, Apple toplu satın alma programı mağazasından satın aldığınız kitapları Intune ile eşitleyebilir, yönetebilir, atayabilir ve bunları kullanıcılara atayabilirsiniz. Kitapları yönetmek için Intune portalındaki **Kitaplar** iş yükünü kullanın. Kitapları yönetme yordamı, uygulama yönetme yordamı ile aynıdır.
+Bunu yapmak için Apple Volume Purchase Program belirtecini karşıya yüklemeniz gerekir. Şu anda kitapları yalnızca **Gerekli** yükleme olarak atayabilirsiniz.
+Bir cihaza bir kitap atadığınızda, cihazda yerleşik iBooks uygulamasının yüklü olması gerekir. Yüklü değilse, son kullanıcının kitabı okumak için uygulamayı yeniden yüklemesi gerekir. Şu anda kaldırılan yerleşik uygulamaları kurtarmak için Intune’u kullanamazsınız.
+
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>iOS cihazları için toplu satın alınan uygulamaları yönetme
 [Apple İş için Toplu Satın Alma Programı](http://www.apple.com/business/vpp/) veya [Apple Eğitim için Toplu Satın Alma Programı](http://volume.itunes.apple.com/us/store) aracılığıyla, iOS uygulamaları için birden çok lisans satın alırsınız. Buna Apple web sitesinden bir Apple VPP hesabının ayarlanması ve Apple VPP belirtecinin Intune’a yüklenmesi dahildir.  Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz.
@@ -43,7 +48,6 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve bunu Intune hesabını
 * Varsayılan olarak Intune, Apple VPP hizmetiyle günde iki kez eşitlenir. Dilediğiniz zaman bir el ile eşitleme başlatabilirsiniz.
 * VPP belirtecini Intune'da içeri aktardıktan sonra aynı belirteci başka bir cihaz yönetimi çözümüne aktarmayın. Bunun yapılması lisans atama ve kullanıcı kayıtlarının kaybına neden olabilir.
 * Intune ile iOS VPP kullanmaya başlamadan önce diğer mobil cihaz yönetimi (MDM) satıcıları ile oluşturulan tüm var olan VPP kullanıcı hesaplarını kaldırın. Intune bu kullanıcı hesaplarını bir güvenlik önlemi olarak Intune ile eşitlemez. Intune yalnızca Intune tarafından oluşturulan Apple VPP hizmetinden verileri eşitler.
-* iOS VPP uygulamalarını Cihaz Kayıt Protokolü (DEP) kullanarak kaydedilen cihazlara atayamazsınız.
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP belirtecini almak ve karşıya yüklemek için
 
@@ -69,7 +73,7 @@ Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
 2. Uygulama listesi dikey penceresinde atamak istediğiniz uygulamayı seçin ve sonra da '**...**' > **Grupları Ata**’yı seçin.
 3. <*uygulama adı*> - **Atanan Gruplar** dikey penceresinde **Yönet** > **Atanan Gruplar**’ı seçin.
 4. **Grupları Ata**'yı seçin, sonra da **Grup seç** dikey penceresinde uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
-**Gerekli** atama eylemini seçmelisiniz. Kullanılabilir yüklemeler şu anda desteklenmiyor. Ayrıca cihaz grubuna atamalar yalnızca Ocak 2017'den sonra oluşturulan yeni kiracılar için yapılabilir. Kiracınız bu tarihten önce oluşturulduysa ve VPP uygulamalarını cihaz gruplarına atama seçeneğini kullanamıyorsanız Intune destek ekibiyle iletişime geçin.
+**Gerekli** atama eylemini seçmelisiniz. Ayrıca cihaz grubuna atamalar yalnızca Ocak 2017'den sonra oluşturulan yeni kiracılar için yapılabilir. Kiracınız bu tarihten önce oluşturulduysa ve VPP uygulamalarını cihaz gruplarına atama seçeneğini kullanamıyorsanız Intune destek ekibiyle iletişime geçin.
 5. İşiniz bittikten sonra **Kaydet**’i seçin.
 
 Uygulama atamalarını izlemenize yardımcı olacak bilgiler için bkz. [Uygulamaları izleme](monitor-apps.md).
@@ -81,4 +85,6 @@ Uygulamayı **Gerekli** bir yükleme olarak atadığınızda, uygulamayı yükle
 Lisansı geri kazanmak için atama eylemini **Kaldır** olarak değiştirmeniz gerekir. Uygulama kaldırıldıktan sonra lisans geri kazanılır.
 
 Uygun cihaza sahip bir kullanıcı ilk olarak bir VPP uygulaması yüklemeye çalıştığında kullanıcıdan Apple Toplu Satın Alma programına katılması istenir. Uygulama yüklemesi devam etmeden önce bunu yapmaları gerekir.
+
+Bir VPP uygulamasını Kullanılabilir olarak dağıttığınızda, uygulama içeriği ve lisansı doğrudan uygulama mağazasından dağıtılır.
 
