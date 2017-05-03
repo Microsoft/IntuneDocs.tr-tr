@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 81761af5ab5aebe6abb44ff43a7df5a337d38fc7
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: f4a48b889702147abe20fd513fdb0f774020a54a
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -27,11 +27,55 @@ Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uyg
 > [!Note]
 > Aşağıdaki görüntülerin önizleme sürümüne ait olduğunu ve duyurulan sürümün farklı olabileceğini lütfen unutmayın.
 
-## <a name="whats-coming-in-intune-app-ui"></a>Intune Uygulama arabirimindeki yenilikler
+## <a name="april-2017"></a>Nisan 2017
 
-### <a name="april-2017"></a>Nisan 2017
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Tüm platformlar için Şirket Portalı uygulamalarında gelişmiş oturum açma deneyimi <!--User Story 1132123-->
 
-#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser ve Şirket Portalı için yeni simgeler <!--918433, 918431-->
+Android, iOS ve Windows’a yönelik Intune Şirket Portalı uygulamaları için oturum açma deneyimini geliştiriyoruz.  Yeni kullanıcı deneyimi, Azure AD bu değişikliği gerçekleştirdiğinde Şirket Portalına yönelik tüm platformlarda görünecektir. Ayrıca, kullanıcılar artık tek kullanımlık bir kod ile başka bir cihazdan Şirket Portalında oturum açabilir. Bu, özellikle kullanıcıların kimlik bilgileri olmadan oturum açması gerektiğinde faydalıdır.  
+
+Aşağıda önceki oturum açma deneyimini, kimlik bilgileriyle yeni oturum açma deneyimini ve yeni başka bir cihazdan oturum açma deneyimini görebilirsiniz.
+
+__Önceki oturum açma deneyimi__
+
+![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Oturum aç düğmesine dokunduktan sonra, kullanıcı, e-posta adresi ve parolasının sorulduğu kimlik bilgilerini bu sayfaya girer ve ayrıca parola hatalarının giderilmesi için kendisine yollar önerilir.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Parolasını girdikten sonra, Şirket Portalı uygulaması oturum açar ve bu yükleme çubuğuyla gösterilir.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Yeni oturum açma deneyimi__
+
+![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![Kullanıcı aynı ekranda hem e-posta adresini hem de parolasını girmek yerine yalnızca kendi e-posta adresini girer.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![E-posta adresi kabul edildikten sonra kullanıcıdan parolası istenir.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+__Başka bir cihazdan oturum açarken yeni oturum açma deneyimi__
+
+![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+__Başka bir cihazdan oturum aç__ bağlantısına dokunun.
+
+![Kullanıcı aynı ekranda hem e-posta adresini hem de parolasını girmek yerine yalnızca kendi e-posta adresini girer. E-posta alanı altındaki bağlantıda "Başka bir cihazdan oturum aç" yazar.](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
+
+![İş bilgisayarınızdan benzersiz bir geçiş kodu ile aka.ms/devicelogin sayfasına gidip oturum açmak için bu kodu kullanmaya ilişkin yönergeler sağlanır.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Bir tarayıcıyı başlatın ve [http://aka.ms/devicelogin](https://aka.ms/devicelogin) adresine gidin.
+
+![Kullanıcının Şirket Portalı uygulamasındaki tarayıcı yerine iş bilgisayarındaki tarayıcısının bir resmi. Görüntülenen "Cihaz oturum açma" sayfası kullanıcıdan Şirket Portalı uygulamasından aldığı kodu girmesini ister.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Şirket Portalı uygulamasında gördüğünüz kodu girin. __Devam et__’i seçerseniz, akıllı kart gibi şirketiniz tarafından desteklenen herhangi bir yöntemi kullanarak kimlik doğrulaması yapmanız mümkün olacaktır.
+
+![Kullanıcı kendi benzersiz kodunu alana girmiştir ve "Cihaz oturum açma" sitesi Intune Şirket Portalı’nın oturum açmak üzere yetkilendirilecek doğru uygulama olup olmadığının doğrulanmasını istemiştir.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Bir onay sayfası, kullanıcının kendi cihazında Şirket Portalı uygulamasında oturum açtığını ve bu sayfanın artık kapatılabileceğini belirtir.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+Şirket Portalı uygulaması oturum açmaya başlar.
+
+![Kimlik doğrulama işleminden sonra, Şirket Portalı uygulaması oturum açar ve bunu bir yükleme çubuğuyla belirtir.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser ve Şirket Portalı için yeni simgeler <!--918433, 918431-->
 
 Managed Browser uygulamasının hem Android hem de iOS sürümlerinin simgesi güncelleştiriliyor. Yeni simgede Enterprise Mobility + Security (EM+S) paketindeki diğer uygulamalarla tutarlı hale getirmek için güncelleştirilmiş Intune rozeti bulunacak.
 
@@ -52,7 +96,7 @@ Managed Browser uygulamasının hem Android hem de iOS sürümlerinin simgesi g�
 
 Şirket Portalı uygulamasının da Android, iOS ve Windows sürümlerinin simgeleri EM+S paketindeki diğer uygulamalarla daha tutarlı hale getirilmek üzere güncelleştiriliyor. Bu simgeler nisan ayından başlayarak mayıs ayının sonuna kadar kademeli olarak kullanıma sunulacak.
 
-#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android Şirket Portalı uygulamasında oturum açma ilerleme göstergesi <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android Şirket Portalı uygulamasında oturum açma ilerleme göstergesi <!--953374-->
 
 Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıcı uygulamayı başlattığında veya sürdürdüğünde oturum açma ilerleme göstergesi görüntüleniyor. Kullanıcının uygulamaya erişmesine izin verilmeden önce göstergede "Bağlanıyor..." ile başlayıp sırasıyla "Oturum açılıyor..." ve "Güvenlik gereksinimleri denetleniyor..."durumları gösteriliyor.
 
@@ -74,9 +118,7 @@ Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıc�
 </body>
 </html>
 
-## <a name="whats-been-announced-for-ui-updates-for-end-user-apps"></a>Son kullanıcı uygulamaları arabirim güncelleştirmeleri için yapılan duyurular
-
-### <a name="february-2017"></a>Şubat 2017
+## <a name="february-2017"></a>Şubat 2017
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Android Şirket Portalı uygulaması için yeni kullanıcı deneyimi <!--621622, announced 1702-->
 Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kılavuzuna](https://material.io/guidelines/material-design/introduction.html) uygun olarak modern bir tasarıma sahip olacak. Bu gelişmiş kullanıcı deneyimi şunları içeriyor olacak:
@@ -113,7 +155,7 @@ Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kı
 
 ### <a name="see-also"></a>Ayrıca bkz.
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Cloud Platform yol haritası](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Cloud Platform yol haritası](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Azure önizlemesindeki yenilikler](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [Yenilikler arşivi](whats-new-archive.md)
 

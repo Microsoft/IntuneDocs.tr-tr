@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: e45d1f0cec7d07ea7d01be0f6ec8443e6521681a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ Aşağıdaki cihaz türleri için yönetilen tarayıcı ilkeleri oluşturabilirs
 
 -   iOS 8.0 ve üzerini çalıştıran cihazlar
 
-Intune tarafından yönetilen tarayıcı, [Microsoft Intune uygulama iş ortaklarının](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) web içeriklerini açmayı destekler.
+Intune tarafından yönetilen tarayıcı, [Microsoft Intune uygulama iş ortaklarının](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) web içeriklerini açmayı destekler.
 
 ## <a name="create-a-managed-browser-policy"></a>Yönetilen tarayıcı ilkesi oluşturma
 
@@ -110,7 +110,7 @@ Microsoft, ürün ve hizmetlerini geliştirmek için yönetilen tarayıcının p
 
     -   https için bağlantı noktası 443
 
-    Bağlantı noktası numarası için joker karakter kullanımı desteklenmez. Örneğin, **http&colon;//www&period;contoso&period;com:*;**ve**http&colon;//www&period;contoso&period;com: /*;** desteklenmez.
+    Bağlantı noktası numarası için joker karakter kullanımı desteklenmez. Örneğin, **http&colon;//www&period;contoso&period;com:*;** ve **http&colon;//www&period;contoso&period;com: /*;** desteklenmez.
 
 -   URL belirtirken kullanabileceğini izin verilen desenler hakkında bilgi almak için aşağıdaki tabloyu kullanın:
 

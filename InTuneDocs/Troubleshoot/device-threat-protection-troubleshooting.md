@@ -15,8 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: de2f224f203257fe539196557180f0b5da5d8373
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Lookout MTP yalnızca yapılandırılmış Azure AD grubundan kullanıcıların 
 
 * E-posta: enterprisesupport@lookout.com
 * [MTP Konsolunda](http://aad.lookout.com) oturum açıp **Destek** modülüne gidin.
-* Şuraya gidin: https://enterprise.support.lookout.com/hc/en-us/requests ve bir destek isteğinde bulunun.
+* Şuraya gidin: https://enterprise.support.lookout.com/hc/requests ve bir destek isteğinde bulunun.
 
 ## <a name="unable-to-sign-in"></a>Oturum açılamıyor
 Azure AD genel yöneticisi ilk Lookout kurulumunu kabul etmediğinde aşağıdaki hatayı görüyorsunuz.
@@ -55,7 +56,7 @@ Bu aşağıdaki senaryolardan birinde oluşabilir:
 
 ### <a name="device-reported-as-pending"></a>**Beklemede** olarak bildirilen cihaz
 
-Bir cihazın **Beklemede** görünmesi, son kullanıcının Lookout for Work uygulamasını açmadığı ve **Etkinleştir** düğmesine dokunmadığı anlamına gelir. Lookout for Work uygulamasında cihaz etkinleştirme hakkında daha fazla bilgi için bkz. [Android cihazınızda Lookout for Work uygulamasını yüklemeniz istendi](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) veya [iOS cihazınızda Lookout for Work uygulamasını yüklemeniz istendi](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)
+Bir cihazın **Beklemede** görünmesi, son kullanıcının Lookout for Work uygulamasını açmadığı ve **Etkinleştir** düğmesine dokunmadığı anlamına gelir. Lookout for Work uygulamasında cihaz etkinleştirme hakkında daha fazla bilgi için bkz. [Android cihazınızda Lookout for Work uygulamasını yüklemeniz istendi](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) veya [iOS cihazınızda Lookout for Work uygulamasını yüklemeniz istendi](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)
 
 ## <a name="device-whos-active-but-has-no-device-id"></a>Etkin olan ancak cihaz kimliği olmayan cihaz
 Lookout MTP konsolunda etkin bir cihazın cihaz kimliği yoksa bu, cihaz kullanıcısının kayıt grubunda olmadığı anlamına gelir. Cihaz kullanıcısı kayıt grubundan çıkarıldıysa veya kayıt grubu kaldırıldıysa bir cihaz bu duruma gelebilir.
@@ -83,14 +84,9 @@ Yeni kullanıcı bir Lookout MTP kayıt grubundaysa Azure AD cihazı yeni kullan
 ## <a name="compliance-remediation-workflows"></a>Uyumluluk düzeltmesi iş akışları
 - [Android cihazınızda Lookout for Work uygulamasını yüklemeniz istendi]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 - [Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [Lookout for Work’ün iOS cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [Lookout for Work’ün iOS cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>Ayrıca bkz.
-[Lookout MTP ile aboneliğinizi ayarlama](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+[Lookout MTP ile aboneliğinizi ayarlama](https://docs.microsoft.com/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 

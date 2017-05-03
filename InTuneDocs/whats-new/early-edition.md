@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -59,7 +59,7 @@ Aynı cihazda aynı hesapla iOS için Şirket Portalı uygulamasında oturum aç
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android Şirket Portalı uygulamasında oturum açma ilerleme göstergesi <!--953374-->
 
-Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıcı uygulamayı başlattığında veya sürdürdüğünde oturum açma ilerleme göstergesi görüntüleniyor. Kullanıcının uygulamaya erişmesine izin verilmeden önce göstergede "Bağlanıyor..." ile başlayıp sırasıyla "Oturum açılıyor..." ve "Güvenlik gereksinimleri denetleniyor..."durumları gösteriliyor. Android için Şirket Portalı uygulamasının yeni ekran görüntülerini [Intune uygulama arabirimindeki yenilikler sayfasında](whats-new-in-intune-app-ui.md) görebilirsiniz. 
+Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıcı uygulamayı başlattığında veya sürdürdüğünde oturum açma ilerleme göstergesi görüntüleniyor. Kullanıcının uygulamaya erişmesine izin verilmeden önce göstergede "Bağlanıyor..." ile başlayıp sırasıyla "Oturum açılıyor..." ve "Güvenlik gereksinimleri denetleniyor..."durumları gösteriliyor. Android için Şirket Portalı uygulamasının yeni ekran görüntülerini [Intune uygulama arabirimindeki yenilikler sayfasında](whats-new-in-intune-app-ui.md) görebilirsiniz.
 
 
 ## <a name="notices"></a>Bildirimler
@@ -186,7 +186,7 @@ Ek Edge tarayıcısı desteği, kilit ekranı özelleştirmesi, başlat menüsü
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Windows 10 Creators Update için birden çok kullanıcı desteği <!-- 822547 -->
 
-Windows 10 Creators Update çalıştıran ve Azure Active Directory etki alanına katılmış olan cihazlar için birden çok kullanıcı yönetimi desteği ekledik. Bu destek sayesinde farklı kullanıcılar AAD kimlik bilgilerini kullanarak cihazda oturum açtığında kullanıcı adlarına atanmış olan uygulamalara ve ilkelere erişecek.
+Windows 10 Creators Update çalıştıran ve Azure Active Directory etki alanına katılmış olan cihazlar için birden çok kullanıcı yönetimi desteği ekledik. Bu destek sayesinde farklı standart kullanıcılar, Azure AD kimlik bilgilerini kullanarak cihazda oturum açtığında kullanıcı adlarına atanmış olan uygulamalara ve ilkelere erişecek. Kullanıcılar, uygulama yükleme gibi self servis senaryoları için Şirket Portalını şu anda kullanamaz.
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 PC'ler Fresh Start<!-- 1004830 -->
 
@@ -203,7 +203,7 @@ Artık, cihazları aşağıdaki ek Windows 10 sürümlerine yükseltmek için bi
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 cihazlarını toplu kaydetme <!-- 747607 -->
 
-BT otomasyon araçlarını kullanarak çok sayıda Windows 10 cihazını Azure Active Directory ve Intune'a kaydedebilirsiniz. Azure AD kiracınız için otomatik MDM kaydını etkinleştirmek istiyorsanız Windows Yapılandırma Tasarlayıcısını kullanarak cihazı Azure AD kiracınıza ekleyen bir sağlama paketi oluşturun. Ardından bu paketi toplu kaydetmek ve yönetmek istediğiniz kuruluşa ait cihazlara uygulayın.  Paketi uyguladıktan sonra cihazlar Azure AD'ye bağlanır, Intune'a kaydolur ve Azure AD kullanıcılarınızın oturum açmasına hazır hale gelir.
+Windows Yapılandırma Tasarımcısı (WCD) kullanarak Windows 10 Creators Update çalıştıran çok sayıda cihazın Azure Active Directory ve Intune’a katılmasını sağlayabilirsiniz. Azure AD kiracınızda otomatik MDM kaydını etkinleştirmek için Windows Yapılandırma Tasarımcısı kullanarak cihazların Azure AD kiracınıza katılmasını sağlayan bir sağlama paketi oluşturun ve paketi toplu kaydetmek ve yönetmek istediğiniz şirkete ait cihazlara uygulayın. Paket cihazlarınıza uygulandıktan sonra cihazlar Azure AD'ye katılır, Intune'a kaydolur ve Azure AD kullanıcılarınızın oturum açmasına hazır hale gelir.  Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan ilkeleri ve gerekli uygulamaları alırlar. Self Servis ve Şirket Portalı senaryoları şu anda desteklenmiyor.
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>PIN ve yönetilen depolama konumları için yeni MAM ayarları <!-- 58112, 736644 -->
 

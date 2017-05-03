@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -225,6 +225,67 @@ Göstermek veya gizlemek istediğiniz yerleşik iOS uygulamalarının ad, yayın
 -     **Paylaşılan fotoğraf akışı** - Cihazda **iCloud Fotoğraf Paylaşımı**’nı devre dışı bırakmak için **Hayır** olarak ayarlayın.
 -     **Etkinlik devamlılığı** - Kullanıcının bir iOS cihazında başladığı çalışmayı başka bir iOS veya macOS cihazında sürdürmesine izin verin (İletim).
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>Otonom tek uygulama modu (yalnızca denetimli)
+
+Bu ayarları kullanarak iOS cihazlarını, belirtilen uygulamaları otonom tek uygulama modunda çalışacak şekilde yapılandırabilirsiniz. Bu mod yapılandırılıp uygulama çalıştırıldığında cihaz yalnızca belirtilen uygulamayı çalıştıracak şekilde kilitlenir. Buna örnek olarak kullanıcıların cihazda test çözmesini sağlayan bir uygulama verilebilir. Uygulama eylemleri tamamlandığında veya bu ilkeyi kaldırdığınızda cihaz normal durumuna döner.
+
+### <a name="settings"></a>Ayarlar
+
+- **Uygulama adı** - Uygulamanın bu dikey penceredeki uygulamalar listesinde görünecek adını girin.
+- **Uygulama Paket Kimliği** - Uygulamanın paket kimliğini girin. Yardım için bu konu başlığındaki **Yerleşik iOS uygulamaları için Paket Kimliği başvurusu** konusuna bakın.
+
+Her uygulama adını ve paket kimliğini belirttikten sonra listeye eklemek için **Ekle**’yi seçin.
+
+- **İçeri aktarma** - Uygulama adları ve ilgili paket kimliklerinin listesini içeren virgülle ayrılmış değerler (.csv) dosyasını içeri aktarın.
+- **Dışarı aktarma** - Bir virgülle ayrılmış değerler (.csv) dosyasına yapılandırdığınız uygulama adlarını ve ilgili paket kimliklerini dışarı aktarın.
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için Paket Kimliği başvurusu
+
+Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
+
+|||
+|-|-|
+|Uygulama adı|Paket Kimliği|
+|Uygulama Mağazası|com.apple.AppStore|
+|Hesap Makinesi|com.apple.calculator|
+|Takvim|com.apple.mobilecal|
+|Kamera|com.apple.camera|
+|Saat|com.apple.mobiletimer|
+|Pusula|com.apple.compass|
+|Kişiler|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Arkadaşları Bul|com.apple.mobileme.fmf1|
+|iPhone’u Bul|com.apple.mobileme.fmip1|
+|Oyun Merkezi|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Sistem Durumu|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.apple.mobilemail|
+|Harita|com.apple.Maps|
+|İletiler|com.apple.MobileSMS|
+|Müzik|com.apple.Music|
+|News|com.apple.news|
+|Notlar|com.apple.mobilenotes|
+|Sayılar|com.apple.Numbers|
+|Pages|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Fotoğraflar|com.apple.mobileslideshow|
+|Podcast’ler|com.apple.podcasts|
+|Anımsatıcılar|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Ayarlar|com.apple.Preferences|
+|Borsa|com.apple.stocks|
+|İpuçları|com.apple.tips|
+|Videolar|com.apple.videos|
+|Sesli Notlar|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Watch|com.apple.Bridge|
+|Hava Durumu|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Bilgi noktası
 -     **Etkinleştirme Kilidi** - Denetimli iOS cihazlarında Etkinleştirme Kilidi’ni etkinleştirin.
 -     **Bilgi noktası modunda çalışan uygulama** - Intune’a eklediğiniz bir uygulamayı belirtmek için **Yönetilen Uygulama**’yı veya mağazadaki bir uygulamanın URL’sini belirtmek için **Mağaza Uygulaması**’nı seçin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez. Daha fazla yardım için, bu konunun devamındaki “Uygulama mağazalarının URL’lerini belirtme” bölümüne bakın.
@@ -256,4 +317,21 @@ Göstermek veya gizlemek istediğiniz yerleşik iOS uygulamalarının ad, yayın
 -     **JavaScript** - Tarayıcıda Java betiğinin çalıştırılmasına izin verin.
 -     **Dolandırıcılık uyarıları** - Tarayıcıda dolandırıcılık uyarılarına izin verin.
 -     **Açılır pencereler** - Tarayıcı açılır pencere engelleyicisini etkinleştirin veya devre dışı bırakın.
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>İşaretsiz e-posta etki alanları
+
+**E-posta Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Son kullanıcılar, yapılandırdığınız etki alanları dışındaki bir etki alanından e-posta aldığında, bu e-posta iOS Mail uygulamasında güvenilmeyen olarak işaretlenir.
+
+
+### <a name="managed-web-domains"></a>Yönetilen web etki alanları
+
+**Web Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Belgeler belirttiğiniz etki alanlarından indirildiğinde yönetilen belgeler olarak değerlendirilir. Bu ayar yalnızca Safari tarayıcısı kullanılarak indirilen belgeler için geçerlidir.
+
+
+### <a name="safari-password-auto-fill-domains"></a>Safari otomatik parola doldurma etki alanları
+
+**Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Kullanıcılar yalnızca bu listedeki URL’lerdeki parolaları kaydedebilir. Bu ayar yalnızca Safari tarayıcısı ve denetimli moddaki iOS 9.3 ve üzeri cihazlar için geçerlidir. Herhangi bir URL belirtmezseniz, parolalar tüm web sitelerinden kaydedilebilir.
 

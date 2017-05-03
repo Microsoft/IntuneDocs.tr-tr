@@ -94,6 +94,8 @@
 ### [Şirket Portalı uygulamasını yapılandırma](manage-apps/company-portal-app.md)
 ## Uygulama koruma ilkelerini kullanma
 ### [Uygulama koruma ilkelerini oluşturma ve atama](manage-apps/app-protection-policies.md)
+### [WIP uygulama koruma ilkelerine hazırlanma](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [WIP uygulama koruma ilkelerini oluşturma ve atama](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Android ayarları](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS ayarları](manage-apps/ios-app-protection-policy-settings.md)
 ### [Uygulama koruma ilkelerini doğrulama](manage-apps/validate-app-protection-policies.md)
@@ -151,6 +153,7 @@
 
 ### [Windows 10 sürüm yükseltme ayarlarını yapılandırma](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [Windows 10 Education ayarlarını yapılandırma](configure-devices/how-to-configure-education-settings.md)
+### [iOS eğitim ayarlarını yapılandırma](configure-devices/how-to-configure-ios-edu-settings.md)
 ### [İş ayarları için Windows Update’i yapılandırma](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Sertifikaları yapılandırma](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
