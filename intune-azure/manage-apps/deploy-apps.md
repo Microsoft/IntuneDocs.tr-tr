@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
-ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -76,8 +76,8 @@ Kullanıcı ve cihaz grupları için gruplarda yapacağınız tüm değişiklikl
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
-1. **Uygulamaları Yönet** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
+3. **Intune** dikey penceresinde, **Mobil uygulamalar**’ı seçin.
+1. **Mobil Uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 2. Uygulama listesi dikey penceresinde, atamak istediğiniz uygulamaya tıklayın.
 3. <*uygulama adı*> - **Genel Bakış** dikey penceresinde **Yönet** > **Atamalar**’ı seçin.
 4. **Grup Seç** öğesini seçin, ardından **Grupları seçin** dikey penceresinde uygulamayı atamak istediğiniz Azure AD gruplarını seçin.

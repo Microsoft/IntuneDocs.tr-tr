@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -86,7 +86,7 @@ Desteklenen Microsoft uygulamalarının tam listesini görmek için Microsoft In
 
   - SharePoint Online ve Exchange Online iş hesaplarını oluşturmak için. Exchange şirket içi ve SharePoint şirket içi desteklenmez.
 
--   **Modern kimlik doğrulaması için Skype Kurumsal Çevrimiçi Sürüm**. Daha fazla bilgi için bkz. [Modern kimlik doğrulamayı etkinleştirme](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+-   **Modern kimlik doğrulaması için Skype Kurumsal Çevrimiçi Sürüm**. Daha fazla bilgi için bkz. [Modern kimlik doğrulamayı etkinleştirme](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Kullanıcıları oluşturmak için Azure Active Directory (Azure AD). Azure AD, uygulamayı açan ve iş kimlik bilgilerini giren kullanıcıların kimliğini doğrular.
@@ -96,7 +96,7 @@ Desteklenen Microsoft uygulamalarının tam listesini görmek için Microsoft In
 
 ### <a name="create-users-and-assign-microsoft-intune-licenses"></a>Kullanıcılar oluşturma ve Microsoft Intune lisansları atama
 
-1.  Yönetici kimlik bilgilerinizle [Office portalında](http://portal.office.com) oturum açın.
+1.  Yönetici kimlik bilgilerinizle [Office portalı](https://portal.office.com)’nda oturum açın.
 
 2.  **Intune değerlendirme kılavuzu**’nun [Intune 30 günlük değerlendirmesini tamamlamak için adımlar](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) bölümünde açıklandığı gibi kullanıcıları ekleyin ve ardından Intune lisanslarını atayın. Bir kullanıcıya Office portalı, Azure AD portalı ve Azure önizleme portalı erişimi vermek için, kullanıcıya **Genel yönetici rolü** atayın.
 

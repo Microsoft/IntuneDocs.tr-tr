@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
-ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
-ms.lasthandoff: 02/10/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 5211d2222e5e8ef9328f60ed13f0146925194c5f
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -26,11 +26,7 @@ ms.lasthandoff: 02/10/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Bu yönergeler, kuruluşta cihaz yönetiminden sorumlu olan yöneticilere yöneliktir. Mobil cihazınızda Intune kullanma konusunda yardım için bkz. [Intune Şirket Portalı hakkında sık sorulan sorular](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
-
-Microsoft Intune’u ayarlamadan önce bu konuyu ve [Microsoft Intune’u başlatmadan önce bilinmesi gerekenler](what-to-know-before-you-start-microsoft-intune.md) başlığı altında listelenen diğer gereksinimleri gözden geçirin.
-
-Microsoft Intune istemcilerinin ağ trafiğini planlamak için aşağıdaki bölümlerde yer alan bilgileri kullanın.
+Bu kılavuz Intune yöneticilerinin Intune hizmeti için ağ gereksinimlerini anlamasına yardımcı olur. Buradaki bilgileri bant genişliği gereksinimlerini ve proxy ayarları için gereken IP adresi ve bağlantı noktası ayarlarını anlamak için kullanabilirsiniz.
 
 ## <a name="average-network-traffic"></a>Ortalama ağ trafiği
 Bu tabloda her istemci için ağ üzerinden geçen ortak içeriğin yaklaşık boyutu ve sıklığı listelenmiştir.

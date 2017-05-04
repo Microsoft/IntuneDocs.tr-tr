@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ Kuruluşunuzdaki yazılım, donanım ve yazılım lisansları hakkında bilgi sa
 ## <a name="using-reports"></a>Raporları kullanma
 Intune raporları, kuruluşunuzdaki yazılımlar, donanımlar ve yazılım lisansları hakkında bilgi sağlar. Raporlar, geçerli gereksinimleri doğrulamanıza ve gelecekteki harcamaları tahmin etmenize yardımcı olabilir. **Raporlar** çalışma alanı, raporları oluşturmak ve yönetmek için gerekli araçları sağlar. 
 
-### <a name="report-types"></a>Rapor türleri
+## <a name="report-types"></a>Rapor türleri
 
 |Rapor türü|Açıklama|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Intune raporları, kuruluşunuzdaki yazılımlar, donanımlar ve yazılım lisan
 |**Sistem Durumu Kanıtlama Raporları**|Mobil cihazların durumunu gösterir.|
 |**Mac OS X Donanım Raporu**|Seçtiğiniz gruplarda kayıtlı olan tüm Mac OS X cihazları için donanım ayrıntılarını görüntüler. Bu cihazlardan toplanan donanım envanteri hakkında bilgi için bkz. [Microsoft Intune’da envanterle cihazlarınızı anlama](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Mac OS X Yazılım Raporu**|Seçtiğiniz gruplardaki tüm Mac OS X cihazlarında yüklü olan yazılımı gösterir. Raporda yazılım adı (paket kimliği olarak), kısa sürüm adı (veya kolay ad), sürüm ve yazılımın yüklü olduğu cihaz sayısı listelenir.|
+|**Windows Bilgi Koruması Raporları**|Yönettiğiniz cihazlarda Windows Bilgi Koruması (WIP) işlemleri hakkında bilgi gösterir.|
+|**Sistem Durumu Kanıtlama Raporları**|Yönettiğiniz cihazlar için Windows Sistem Kanıtlama hizmeti tarafından raporlanan bilgileri gösterir.|
 
-#### <a name="to-create-a-report"></a>Bir rapor oluşturmak için
+## <a name="to-create-a-report"></a>Bir rapor oluşturmak için
 
 1.  Intune yönetici konsolunda **Raporlar**’ı seçin. Ardından, önceki tabloda açıklandığı gibi oluşturmak için istediğiniz rapor türünü seçin.
 

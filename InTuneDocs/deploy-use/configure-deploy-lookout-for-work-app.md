@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 44429b8694d15006f77a9eb5206293a6bcc8090b
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +55,7 @@ Bu makalede, Android ve iOS cihazlarda Lookout for Work uygulamasının nasıl y
 
 ## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (Lookout uygulamasının Kuruluş imzalı sürümü)
 
-1. Cihazınızda **iOS yönetimi** ayarlandığından emin olun. Cihazınızı iOS yönetimi için ayarlama konusunda yönergeler için bkz. [iOS ve Mac yönetimini ayarlama](set-up-ios-and-mac-management-with-microsoft-intune.md).
+1. Cihazınızda **iOS yönetimi** ayarlandığından emin olun. Cihazınızı iOS yönetimi için ayarlama konusundaki yönergeler için bkz. [iOS ve Mac cihaz yönetimini ayarlama](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 2. Lookout for Work iOS uygulamasını **yeniden imzalayın**. Lookout, Lookout for Work iOS uygulamasını iOS App Store dışında dağıtır. **Uygulamayı dağıtmadan önce**, uygulamayı iOS Enterprise Developer Certificate ile yeniden imzalamanız gerekir. Lookout for Work iOS uygulamalarını yeniden imzalama hakkında ayrıntılı yönergeler için Lookout sitesinde bkz. [Lookout for Work iOS uygulamasını yeniden imzalama işlemi](https://personal.support.lookout.com/hc/articles/114094038714).
 
@@ -87,12 +87,11 @@ Bu makalede, Android ve iOS cihazlarda Lookout for Work uygulamasının nasıl y
   **Gerekli Yükleme** seçeneğini belirleyerek Lookout uygulamasının kullanıcı cihazında yüklü olmasını zorunlu hale getirin.
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Dağıtılmış uygulama cihazda açıldığında ne olur?
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Kullanıcı cihazda Lookout for Work’ü açtığında uygulamayı etkinleştirmesi ve Azure Active Directory seçeneği ile Oturum Açması istenir. Son kullanıcı akışı ile ayrıntılı bir rehber aşağıdaki konularda bulunabilir:
 
-Kullanıcı cihazda Lookout for Work’ü açtığında uygulamayı etkinleştirmeleri ve Azure Active Directory seçeneği ile Oturum Açmaları istenir. Son kullanıcı akışı ile ayrıntılı bir rehber aşağıdaki konularda bulunabilir:
+* [Android cihazınıza Lookout for Work uygulamasını yüklemeniz isteniyor](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [Android cihazınıza Lookout for Work uygulamasını yüklemeniz isteniyor](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-* [Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 * [Intune'da Lookout cihaz uyumluluğu ilkesi oluşturma](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

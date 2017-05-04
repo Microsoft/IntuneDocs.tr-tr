@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 92e07a49205ffaf287fc3aa2da6a6376b75fda4f
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -80,20 +80,26 @@ Bu bölüm, [yenilikler](/intune-azure/introduction/whats-new), [bilinen sorunla
 Intune ortamınızı [planlamanıza ve tasarlamanıza](/intune-azure/plan-and-design/get-started) yardımcı olacak bilgiler.
 ### <a name="device-enrollment"></a>Cihaz kaydı
 [Cihazlarınızın Intune tarafından yönetilmesini nasıl sağlarsınız?](/intune-azure/enroll-devices/what-is).
-### <a name="devices"></a>Cihazlar
-[Envanter ve raporlarla, yönettiğiniz cihazlar hakkında bilgi edinin](/intune-azure/manage-devices/what-is).
-### <a name="manage-users-and-groups"></a>Kullanıcı ve grupları yönetme
-[Yönettiğiniz cihazların kullanıcıları hakkında bilgi edinin ve kaynakları gruplara ayırın](/intune-azure/manage-users/what-is).
-### <a name="manage-apps"></a>Uygulamaları yönetme
-[Uygulamaları yayımlama, yönetme, yapılandırma ve koruma](/intune-azure/manage-apps/what-is-app-management).
-### <a name="device-configuration"></a>Cihaz yapılandırması
-[Yönettiğiniz cihazlarda ayarları ve özellikleri yapılandırmak için kullanabileceğiniz profilleri öğrenin](/intune-azure/configure-devices/what-are-device-profiles).
 ### <a name="device-compliance"></a>Cihaz uyumluluğu
 [Cihazlarınız için bir uyumluluk düzeyi tanımlayın, ardından uyumlu olmayan tüm cihazları rapor edin](/intune-azure/set-device-compliance/what-is-device-compliance).
+### <a name="device-configuration"></a>Cihaz yapılandırması
+[Yönettiğiniz cihazlarda ayarları ve özellikleri yapılandırmak için kullanabileceğiniz profilleri öğrenin](/intune-azure/configure-devices/what-are-device-profiles).
+### <a name="devices"></a>Cihazlar
+[Envanter ve raporlarla, yönettiğiniz cihazlar hakkında bilgi edinin](/intune-azure/manage-devices/what-is).
+### <a name="mobile-apps"></a>Mobil uygulamalar
+[Uygulamaları yayımlama, yönetme, yapılandırma ve koruma](/intune-azure/manage-apps/what-is-app-management).
 ### <a name="conditional-access"></a>Koşullu erişim
 [Belirlediğiniz koşullara bağlı olarak Exchange hizmetlerine erişimi kısıtlayın](/intune-azure/conditional-access/what-is-conditional-access).
+### <a name="on-premises-access"></a>Şirket içi erişim
+[Exchange ActiveSync’e ve şirket içi Exchange’e erişimi yapılandırma](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
+### <a name="users"></a>Users
+[Yönettiğiniz cihazların kullanıcıları hakkında bilgi edinin ve kaynakları gruplara ayırın](/intune-azure/manage-users/what-is).
+### <a name="groups"></a>Gruplar
+[Azure Active Directory gruplarını Intune'la nasıl kullanabileceğiniz hakkında bilgi edinin](/intune-azure/manage-users/get-started-with-groups)
 ### <a name="intune-roles"></a>Intune rolleri
 [Çeşitli Intune eylemlerini kimlerin gerçekleştirebileceğini ve bu eylemlerin kimlere uygulanacağını denetleyin](/intune-azure/access-control/role-based-access-control). Bazı yaygın Intune senaryolarını kapsayan yerleşik rolleri kullanabileceğiniz gibi, kendi rollerinizi de oluşturabilirsiniz.
+### <a name="software-updates"></a>Yazılım güncelleştirmeleri
+[Windows 10 cihazlaro için yazılım güncelleştirmelerini yapılandırma hakkında bilgi edinin](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
 
 
 

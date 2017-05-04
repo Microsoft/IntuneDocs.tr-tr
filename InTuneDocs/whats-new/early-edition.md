@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: d7f25657fc7cfb9298809f76f198810718e58c39
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -37,7 +37,7 @@ Bu sayfa düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha 
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Geliştirilmiş Windows 10 Şirket Portalı uygulaması yükleme durumu <!--676495-->
 
-Windows 10 Şirket Portalı uygulamasında artık Şirket Portalı uygulamasından başlatılan tüm modern uygulama yüklemelerinin ilerleme durumu gösterilecek.
+Windows 10 Şirket Portalı uygulamasında artık Şirket Portalı uygulamasından başlatılan tüm modern uygulama yüklemelerinin ilerleme durumu gösterilecek. Windows 10 için Şirket Portalı uygulamasının yeni durum iletilerini [Intune uygulama arabirimindeki yenilikler sayfasında](whats-new-in-intune-app-ui.md) görebilirsiniz.
 
 ### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>iOS için Şirket Portalı uygulamasında geliştirilmiş durum iletileri <!--744866-->
 

@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: de2f224f203257fe539196557180f0b5da5d8373
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 0b5586a06af7658c0c7a328ae1a824f88129039f
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -44,7 +44,7 @@ Azure AD genel yöneticisi ilk Lookout kurulumunu kabul etmediğinde aşağıdak
 
 ![Lookout oturum açma ekranında oturum açma hatası gösteren ekran görüntüsü](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Bu sorunu çözmek için genel yöneticinin https://aad.lookout.com/les?action=consent adresinde oturum açıp kurulumu başlatma isteğini kabul etmesi gerekir. Daha ayrıntılı bilgi [Lookout MTP aboneliğinizi oluşturma](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) konusunda bulunabilir
+Bu sorunu çözmek için genel yöneticinin https://aad.lookout.com/les?action=consent adresinde oturum açması ve kurulumu başlatma isteğini kabul etmesi gerekir. Daha ayrıntılı bilgi [Lookout MTP aboneliğinizi oluşturma](../deploy-use/set-up-your-subscription-with-lookout-mtp.md) konusunda bulunabilir
 
 **Cihaz durum denetimi**
 

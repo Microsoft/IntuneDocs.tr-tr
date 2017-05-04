@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ Uyumluluk durumu üç farklı yerden izlenebilir:
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
-4. **Uygulamaları yönet** iş yükünde, özet görünümü görmek için **İzle** > **Uygulama koruma kullanıcı durumu**’nu seçin:
+3. **Intune** dikey penceresinde, **Mobil uygulamalar**’ı seçin.
+4. **Mobil uygulamalar** iş yükünde, özet görünümü görmek için **İzle** > **Uygulama koruma kullanıcı durumu**’nu seçin:
 
 ![Intune mobil uygulama yönetimi dikey penceresinde Özet kutucuğu](../media/app-protection-user-status-summary.png)
 
@@ -137,9 +138,4 @@ Uygulama koruması raporu oluşturmak için bu adımları izleyin:
 
 * [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-android-apps.md)
 * [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

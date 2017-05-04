@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/17
+ms.date: 03/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: 723830f686991fe13de13f75c6a5d1bc84e6920b
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 4916b66e1f2eeabb42401645dbece28dad28eb19
+ms.lasthandoff: 04/26/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Microsoft Intune’daki Sorun Giderme portalıyla kullanıcılara yardımcı olun
@@ -40,7 +40,8 @@ Intune rolleri hakkında daha fazla bilgi için bkz. [Intune rolleri (RBAC)](htt
 ## <a name="access-the-troubleshooting-portal"></a>Sorun giderme portalına erişme
 
 Yardım masası personeli ve Intune yöneticileri sorun giderme portalına iki yolla erişebilir:
-- [Azure portalında](https:portal.azure.com) **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin ve ardından sol gezinti bölmesi dikey penceresinde **Sorun Giderme**’yi seçin. Diğer iş yükleri sol gezinti bölmesi dikey penceresinde görünür, ancak kullanılamaz.
+- [Azure portalında](https://portal.azure.com) **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin ve ardından sol gezinti bölmesi dikey penceresinde **Sorun Giderme**’yi seçin. Diğer iş yükleri sol gezinti bölmesi dikey penceresinde görünür, ancak kullanılamaz.
+
 ![Kullanıcı Seç bağlantısı ile Intune Sorun Giderme iş yükü ekran görüntüsü](media/help-desk-user.png)
 - Bir web tarayıcısında [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) adresini açın. Yalnızca Sorun giderme portalı görünür.
 

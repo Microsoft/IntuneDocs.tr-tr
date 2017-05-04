@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 **MAM uygulama korumanın avantajları nedir?** MAM, bir uygulama içindeki kuruluş verilerini korur. MAM-WE ile, hassas veriler içeren iş veya okul ile ilgili uygulamalar, kendi cihazını getir (KCG) senaryolarında kişisel cihazlar dahil neredeyse her cihazdan yönetilebilir. Microsoft Office uygulamaları gibi birçok üretkenlik uygulaması, Intune MAM tarafından yönetilebilir. Genel kullanıma uygun [Intune özellikli uygulamaların](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) resmi listesine bakın.
 
 **MAM hangi cihaz yapılandırmalarını destekler?** Intune MAM iki yapılandırmayı destekler:
-  1. **Intune MDM + MAM**: Bu, MAM ilk kez başlatıldığında desteklenen ilk yapılandırmadır. BT yöneticileri, yalnızca Intune mobil cihaz yönetiminde (MDM) kayıtlı cihazlarda MAM ve uygulama koruma ilkelerini kullanarak uygulamaları yönetebilir. MDM + MAM kullanarak uygulamaları yönetmek için, müşterilerin http://manage.microsoft.com adresindeki Intune bağımsız konsolunu kullanması gerekir.
+  1. **Intune MDM + MAM**: Bu, MAM ilk kez başlatıldığında desteklenen ilk yapılandırmadır. BT yöneticileri, yalnızca Intune mobil cihaz yönetiminde (MDM) kayıtlı cihazlarda MAM ve uygulama koruma ilkelerini kullanarak uygulamaları yönetebilir. MDM + MAM kullanarak uygulamaları yönetmek için, müşterilerin https://manage.microsoft.com adresindeki Intune bağımsız konsolunu kullanması gerekir.
 
   2. **Cihaz kaydı olmadan MAM**: Cihaz kaydı olmadan MAM ya da diğer adıyla MAM-WE, BT yöneticilerinin Intune MDM’de kayıtlı olmayan cihazlarda MAM ve uygulama koruma ilkelerini kullanarak uygulamaları yönetmesine olanak sağlar. Bu, uygulamaların üçüncü taraf EMM sağlayıcılarında kayıtlı cihazlarda Intune tarafından yönetilebileceği anlamına gelir. Uygulamaları MAM-WE kullanarak yönetmek için, müşterilerin http://portal.azure.com adresindeki Azure portalında Intune konsolunu kullanması gerekir.
 

@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 26d11bc64802005bcce8cc1962d531af6ffe5cd5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 12584743534a76d0b2ce92e5de6cb5f916453938
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +50,7 @@ Koşullu erişim ile bir geçiş kampanyasını geliştirme için tipik bir yakl
 
 -   Önceki çözümün kullanıcıları, koşullu erişim bu kullanıcılar için etkinleştirilene kadar yönetilmeyen cihazları kullanarak kaynaklara potansiyel olarak erişebilir.
 
-> [!TIP] 
+> [!TIP]
 > Bu birçok yaklaşımdan biridir. Her aşama için kayıt talimatı alındıktan sonra tüm koşullu erişimi etkileyen daha basit bir süreç seçebilir veya koşullu erişimi en baştan uygulayan ve erişim için tam uyumluluk gerektiren daha sıkı bir süreç seçebilirsiniz.
 
 -   [Koşullu erişim](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access) hakkında daha fazla bilgi edinin.
@@ -61,7 +61,7 @@ Koşullu erişim ile bir geçiş kampanyasını geliştirme için tipik bir yakl
 
 -   [Koşullu erişimi yapılandırmayı](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) öğrenin.
 
-### <a name="task-2-setup-intune-conditional-access"></a>2. Görev: Intune koşullu erişimi ayarlayın
+### <a name="task-2-set-up-intune-conditional-access"></a>2. Görev: Intune koşullu erişimi ayarlayın
 
 Daha fazla bilgi edinmek için aşağıdaki koşullu erişim ilkesi türlerinden birini seçin:
 

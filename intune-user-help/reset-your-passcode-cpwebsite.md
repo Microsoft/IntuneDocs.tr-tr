@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/21/2017
 Intune’a kaydettiğiniz bir cihazın PIN kodunu veya parolasını kaybederseniz, sıfırlamak için [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanabilirsiniz. Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek ve Şirket Portalı uygulamasını kullanırken gerçekleştirebileceğiniz görevlerin çoğunu yapmak için Şirket Portalı web sitesini kullanabilirsiniz.
 
 > [!NOTE]
-> Şirket Portalı web sitesinde **Geçiş Kodunu Sıfırlama** düğmesini görmemeniz olasıdır. Görmezseniz, Şirket Portalı web sitesinden destek almak için BT yöneticinize başvurmanız gerekir.
+> Şirket Portalı web sitesinde **Geçiş Kodunu Sıfırlama**  düğmesini görmemeniz olasıdır. Görmezseniz, Şirket Portalı web sitesinden destek almak için BT yöneticinize başvurmanız gerekir.
 
 Geçiş kodunuzu sıfırlamak için:
 
@@ -48,7 +48,7 @@ Geçiş kodunuzu sıfırlamak için:
 
   ![Geçiş kodunu sıfırlama ve kullanıcının oturumunun nasıl kapatılacağı hakkında uyarı içeren geçiş kodunu sıfırlama başlığı. Oturumu Kapat ve İptal Et, kullanıcı girişine yönelik düğmelerdir.](./media/iwp-reset-passcode-popup.png)
 
-5.  **Oturumu kapat**’ı seçmenizle birlikte, cihazdan geçiş kodunun kaldırıldığını size bildiren son iletiyi alırsınız. Cihaz yanınızda değilse geçiş kodunu kaldırmayın, aksi takdirde cihaza fiziksel erişimi olan herhangi biri, cihazdaki bilgilerin (şirket bilgileri veya kişisel bilgiler) çoğuna erişebilir.
+5.  **Oturumu kapat**’ı seçmenizle birlikte, cihazdan geçiş kodunun kaldırıldığını size bildiren son bir ileti alırsınız. Cihaz yanınızda değilse geçiş kodunu kaldırmayın, aksi takdirde cihaza fiziksel erişimi olan herhangi biri, cihazdaki bilgilerin (şirket bilgileri veya kişisel bilgiler) çoğuna erişebilir. 
 
   ![Cihaz geçiş kodunu sıfırlama ve geçiş kodunun cihazdan nasıl kaldırılacağı uyarısıyla birlikte ikinci geçiş kodunu sıfırlama başlığı. Cihaz ayarlarına giderek yeni bir geçiş kodu belirlemenizi de önerir.](./media/iwp-reset-passcode-2nd-popup.png)
 
@@ -61,6 +61,8 @@ Geçiş kodunuzu sıfırlamak için:
   **Windows 10 Mobile**: Mevcut geçiş kodunu kaldırır ve hem harfler hem de sayılarla geçici bir geçiş kodu oluşturur. Oturum açmak         için Windows Hello yüz tanımayı kullanıyorsanız yine de desteklenecektir.
     
   **Windows Phone 8.1**: Mevcut geçiş kodunu kaldırır ve sayılarla geçici bir geçiş kodu oluşturur
+
+  Android ve Windows cihazlarında, geçici parola **Cihaz Ayrıntıları**’nda görünür. 
 
 6.  Cihazınızın kilidini açın ve yeni bir geçiş kodu ayarlayın veya cihazınızın **Ayarlar**’ına giderek geçici geçiş kodunu değiştirin.
 

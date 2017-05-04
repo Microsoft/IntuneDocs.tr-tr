@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 81f5b33bc344cd6ed305d72178c7eb4cac315a13
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -46,7 +46,7 @@ Aşağıdaki adımlar, Apple DEP yönetimini kullanarak iOS cihazlarının "0. g
 
 ### <a name="get-an-encryption-key"></a>Şifreleme Anahtarı Alma
 
-1. Yönetici kullanıcı olarak, [Microsoft Intune yönetici konsolunu](http://manage.microsoft.com) açın, **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Aygıt Kayıt Programı**’na gidin ve **Şifreleme Anahtarını İndir**’i seçin.
+1. Yönetici kullanıcı olarak, [Microsoft Intune yönetici konsolunu](https://manage.microsoft.com) açın, **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Aygıt Kayıt Programı**’na gidin ve **Şifreleme Anahtarını İndir**’i seçin.
 
 2. Şifreleme anahtarı (.pem) dosyasını yerel olarak kaydedin. .pem dosyası Apple Cihaz Kayıt Programı portalından güven ilişkisi sertifikası istemek için kullanılır.
 
@@ -68,13 +68,13 @@ Aşağıdaki adımlar, Apple DEP yönetimini kullanarak iOS cihazlarının "0. g
 
 ### <a name="add-the-dep-token-to-intune"></a>DEP belirtecini Intune'a ekleme
 
-1. [Microsoft Intune yönetici konsolunda](http://manage.microsoft.com) **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Aygıt Kayıt Programı**'na gidin.
+1. [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Aygıt Kayıt Programı**'na gidin.
 
 2. **DEP Belirtecini Karşıya Yükle**'yi seçin. Sertifika (.p7m) dosyasına **göz atın**, **Apple Kimliği**'nizi girin ve **Karşıya Yükle**’yi seçin.
 
 ### <a name="add-the-corporate-device-enrollment-policy"></a>Kurumsal Cihaz Kaydı İlkesi Ekleme
 
-1. [Microsoft Intune yönetici konsolu](http://manage.microsoft.com)’nda **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**’yi seçin.
+1. [Microsoft Intune yönetici konsolu](https://manage.microsoft.com)’nda **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**’yi seçin.
 
 2. **Ad** ve **Açıklama** dahil olmak üzere **Genel** ayrıntıları sağlayın ve profile atanmış cihazların kullanıcı benzeşimine sahip olduğunu veya bir gruba ait olduğunu belirtin:
 
@@ -122,7 +122,7 @@ Aşağıdaki adımlar, Apple DEP yönetimini kullanarak iOS cihazlarının "0. g
 
 ### <a name="assign-the-profile-to-devices"></a>Profili cihazlara atama
 
-1. [Microsoft Intune yönetici konsolunda](http://manage.microsoft.com) **İlke** &gt; **Kurumsal Cihaz Kaydı**'na gidin ve **Ata**'yı seçin.
+1. [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **İlke** &gt; **Kurumsal Cihaz Kaydı**'na gidin ve **Ata**'yı seçin.
 
 2. Oluşturduğunuz profili atamak istediğiniz cihazları seçin. **Tüm cihazlar**'ı belirleyebilir veya belirli cihazları seçip ardından **Ekle**'yi belirleyin.
 
@@ -143,9 +143,9 @@ Aşağıdaki adımlar, Apple DEP yönetimini kullanarak iOS cihazlarının "0. g
 
 Bu adım cihazları Apple DEP Service ile eşitler ve cihazların Intune konsolunda görünmesini sağlar.
 
-1. Yönetici kullanıcı olarak, [Microsoft Intune yönetici konsolunu](http://manage.microsoft.com) açın, **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Aygıt Kayıt Programı**'na gidin ve **Şimdi eşitle**'yi seçin. Apple'a bir eşitleme isteği gönderilir.
+1. Yönetici kullanıcı olarak, [Microsoft Intune yönetici konsolunu](https://manage.microsoft.com) açın, **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **iOS** &gt; **Aygıt Kayıt Programı**'na gidin ve **Şimdi eşitle**'yi seçin. Apple'a bir eşitleme isteği gönderilir.
 
-2. Eşitleme sonrasında DEP ile yönetilen cihazları görmek için [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirketin Önceden Kayıtlı Cihazları** &gt; **iOS Seri Numarasına Göre**’ye gidin. **iOS Seri Numarasına Göre** çalışma alanında yönetilen cihazlar için **Durum**, cihaz çalıştırılıp kayıt için Kurulum Yardımcısı çalıştırılana kadar “Bağlantı kurulmadı” olarak gösterilir.
+2. Eşitleme sonrasında DEP ile yönetilen cihazları görmek için [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Gruplar** &gt; **Tüm Cihazlar** &gt; **Şirketin Önceden Kayıtlı Cihazları** &gt; **iOS Seri Numarasına Göre**’ye gidin. **iOS Seri Numarasına Göre** çalışma alanında yönetilen cihazlar için **Durum**, cihaz çalıştırılıp kayıt için Kurulum Yardımcısı çalıştırılana kadar “Bağlantı kurulmadı” olarak gösterilir.
 
    Apple’ın kabul edilebilir DEP trafiği koşullarına uymak için, Intune aşağıdaki kısıtlamaları getirir:
 
@@ -162,7 +162,11 @@ Bu adım cihazları Apple DEP Service ile eşitler ve cihazların Intune konsolu
 
 ## <a name="changes-to-intune-group-assignments"></a>Intune grubu atamalarına değişiklikler
 
-2017 Nisan ayından başlayarak cihaz grup yönetimi Azure Active Directory’ye taşınıyor. Azure Active Directory gruplarına geçişten sonra grup ataması Kurumsal Kayıt Profili seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Yeni portala geçildikten sonra, Kurumsal Kayıt Profili adlarını temel alan dinamik cihaz grubu atamaları tanımlanabilir. Azure Active Directory cihaz gruplarına geçiş sırasında, önceden bir Şirket Cihaz Kaydı profili tarafından atanmış olan her Intune cihaz grubu için Şirket Cihaz Kaydı profilinin adına göre AAD'de karşılık gelen bir dinamik cihaz grubu oluşturulacaktır. Bu işlem bir cihaz grubuna atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar. Bunun şirkete ait iOS cihaz kaydını nasıl etkilediği hakkında daha fazla ayrıntı için bkz. [Ön Kayıtlı Şirkete Ait iOS Cihazları için Otomatik Gruplamadaki Değişiklikler](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/).
+2017 Nisan ayından başlayarak cihaz grup yönetimi Azure Active Directory’ye taşınıyor. Azure Active Directory gruplarına geçişten sonra grup ataması Kurumsal Kayıt Profili seçeneklerinde görünmeyecektir. Bu değişiklik birkaç ay boyunca sunulacağından, değişikliği hemen göremeyebilirsiniz. Yeni portala geçildikten sonra, Kurumsal Kayıt Profili adlarını temel alan dinamik cihaz grubu atamaları tanımlanabilir.
+
+Geçiş yapıldıktan sonra, önceden bir Şirket Cihaz Kaydı profili tarafından atanmış olan her Intune cihaz grubu için Şirket Cihaz Kaydı profilinin adına göre Azure AD'de karşılık gelen bir dinamik cihaz grubu oluşturulacaktır. Yeni profil adları *KayıtProfili:&lt;ilişkili profilin adı&gt;* biçimindedir. Bu işlem bir cihaz grubuna atanmış cihazların, ilke ve uygulamaları dağıtılmış bir şekilde otomatik olarak gruba kaydolmasını sağlar.
+
+Bu otomatik grup oluşturma işlemi, grupların geçişi sırasında tek bir kez gerçekleştirilir. Geçiş sonrasında, Intune yöneticilerinin Azure Portal’ı kullanarak grupları oluşturması gerekir. Bunun şirkete ait iOS cihaz kaydını nasıl etkilediği hakkında daha fazla ayrıntı için bkz. [Ön Kayıtlı Şirkete Ait iOS Cihazları için Otomatik Gruplamadaki Değişiklikler](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/).
 
 Ayrıca [Azure Active Directory grupları hakkında daha fazla bilgi edinebilirsiniz](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
 

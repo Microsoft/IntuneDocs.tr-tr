@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: f760d567ac339bbb60240ee9f8d28cb550656a59
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -63,7 +63,7 @@ Intune Exchange Bağlayıcısı tarafından kullanılacak bir Active Directory k
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Şirket İçi Exchange Connector yazılım yükleme paketini indirme
 
-1. Şirket İçi Exchange Connector için desteklenen bir Windows Server işletim sisteminde, Exchange kiracısında yönetici olan ve Exchange Server’ı kullanma lisansı bulunan bir kullanıcı hesabıyla [Microsoft Intune yönetim konsolunu](http://manage.microsoft.com) (http://manage.microsoft.com) açın.
+1. Şirket İçi Exchange Connector için desteklenen bir Windows Server işletim sisteminde, Exchange kiracısında yönetici olan ve Exchange Server’ı kullanma lisansı bulunan bir kullanıcı hesabıyla [Microsoft Intune yönetim konsolunu](https://manage.microsoft.com) (https://manage.microsoft.com) açın.
 ![Exchange Bağlantısını Ayarla sayfasını açın](../media/ExchangeConnector.gif)
 
 2.  Çalışma alanı kısayolları bölmesinde, **Yönetici**>**Mobil Cihaz Yönetimi** > **Microsoft Exchange**>**Exchange Bağlantısını Ayarla**'yı seçin.
@@ -129,7 +129,7 @@ Exchange Connector bağlantıyı ayarladıktan sonra, Exchange Connector’da y�
 
 ## <a name="validate-the-exchange-connection"></a>Exchange bağlantısını doğrulama
 
-Exchange Bağlayıcısı’nı başarıyla yapılandırdıktan sonra, bağlantının durumunu ve son başarılı eşitleme girişimini görüntüleyebilirsiniz. [Microsoft Intune yönetici konsolunda](http://manage.microsoft.com) **YÖNETİCİ** çalışma alanını seçin. **Mobil Cihaz Yönetimi**’nin altında **Microsoft Exchange**’i seçin ve ardından, sağladığınız ayrıntıların **Exchange Bağlantı Bilgileri** altında gösterildiğini doğrulayın.
+Exchange Bağlayıcısı’nı başarıyla yapılandırdıktan sonra, bağlantının durumunu ve son başarılı eşitleme girişimini görüntüleyebilirsiniz. [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **YÖNETİCİ** çalışma alanını seçin. **Mobil Cihaz Yönetimi**’nin altında **Microsoft Exchange**’i seçin ve ardından, sağladığınız ayrıntıların **Exchange Bağlantı Bilgileri** altında gösterildiğini doğrulayın.
 
 
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.

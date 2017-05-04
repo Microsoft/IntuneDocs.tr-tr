@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve bunu Intune hesabını
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı dağıtmak için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Uygulamalar** &gt; **Yönetilen Yazılım** &gt; **Toplu Satın Alınmış uygulamalar**’ı seçin. Bu listede, Apple VPP hizmetinden eşitlenmiş olan tüm uygulamalar gösterilir.
+1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Uygulamalar** &gt; **Uygulamalar** &gt; **Toplu Satın Alınmış uygulamalar**’ı seçin. Bu listede, Apple VPP hizmetinden eşitlenmiş olan tüm uygulamalar gösterilir.
 
 2.  Dağıtmak istediğiniz uygulamayı seçin, **Dağıtımı Yönet**’i seçin ve sonra uygulamayı karşıya yüklemeyi, oluşturmayı ve dağıtmayı tamamlamak için [Microsoft Intune’da uygulama dağıt](deploy-apps-in-microsoft-intune.md) konusundaki yönergeleri kullanın.
 
@@ -79,22 +80,14 @@ Bir lisansı geri kazanmak için dağıtım eylemini **Kaldır** olarak değişt
 
 Uygun cihaza sahip bir kullanıcı ilk olarak bir VPP uygulaması yüklemeye çalıştığında kullanıcıdan Apple Toplu Satın Alma programına katılması istenir. Uygulama yüklemesi devam etmeden önce bunu yapmaları gerekir.
 
-> [!TIP]
-> Uygulamanın dağıtıldığı her kullanıcının kabul durumunu görmek için **VPP Koşulları Durumu** sütununa bakın.
-
 Daha fazla kullanılabilir lisans yoksa dağıtım başarısız olur.
 
 ## <a name="to-monitor-apple-vpp-apps"></a>Apple VPP uygulamalarını izlemek için
-Hangi VPP uygulamalarının dağıtıldığını ve kaç lisansın kullanıldığını **Yönetilen Yazılım** &gt; **Toplu Satın Alma Uygulamaları** düğümündeki **Uygulamalar** çalışma alanından izleyebilirsiniz.
+Hangi VPP uygulamalarının dağıtıldığını ve kaç lisansın kullanıldığını **Toplu Satın Alınmış Uygulamalar** düğümündeki **Uygulamalar** çalışma alanından izleyebilirsiniz.
 
 > [!TIP]
 > Her bir uygulama yüklemesinin durumunu incelemek için uygulama **Filtreleri**’ni de kullanabilirsiniz.
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune'da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 
