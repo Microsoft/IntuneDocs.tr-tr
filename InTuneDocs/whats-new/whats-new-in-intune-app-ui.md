@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
-ms.openlocfilehash: f4a48b889702147abe20fd513fdb0f774020a54a
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: 84c6c9ddeeff3570d0b00364063e43105141de0f
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -61,7 +61,7 @@ __Başka bir cihazdan oturum aç__ bağlantısına dokunun.
 
 ![İş bilgisayarınızdan benzersiz bir geçiş kodu ile aka.ms/devicelogin sayfasına gidip oturum açmak için bu kodu kullanmaya ilişkin yönergeler sağlanır.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Bir tarayıcıyı başlatın ve [http://aka.ms/devicelogin](https://aka.ms/devicelogin) adresine gidin.
+Bir tarayıcı başlatın ve [https://aka.ms/devicelogin](https://aka.ms/devicelogin) adresine gidin.
 
 ![Kullanıcının Şirket Portalı uygulamasındaki tarayıcı yerine iş bilgisayarındaki tarayıcısının bir resmi. Görüntülenen "Cihaz oturum açma" sayfası kullanıcıdan Şirket Portalı uygulamasından aldığı kodu girmesini ister.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -112,6 +112,24 @@ Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıc�
            </td>
            <td>
               <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Geliştirilmiş Windows 10 Şirket Portalı uygulaması yükleme durumu <!--676495-->
+Windows 10 Şirket Portalı uygulamasında artık Şirket Portalı uygulamasından başlatılan tüm modern uygulama yüklemelerinin ilerleme durumu gösterilecek.
+
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
            </td>
       </tr>
    </table>

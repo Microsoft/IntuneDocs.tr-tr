@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -27,11 +27,11 @@ ms.lasthandoff: 03/17/2017
 
 Bu konu başlığı altında, Intune yönetiminde kayıt konusu açıklanır ve mobil cihazları kaydetmenin farklı yollar listelenir.
 
-Windows bilgisayarları da dahil olmak üzere cihazları Intune’a kaydeder, böylece bu cihazları yönetebilirsiniz. Intune belgelerinde bu özellik mobil cihaz yönetimi (MDM) olarak adlandırılır. Cihazlar bilgisayar değil mobil cihaz olarak kaydedildiğinde, bunlara bir MDM sertifikası verilir ve cihazlar bu sertifikayı Intune hizmetiyle iletişim kurmak için kullanır.
+Cihazları yönetebilmek için Intune’a kaydedersiniz. Intune belgelerinde bu özellik mobil cihaz yönetimi (MDM) olarak adlandırılır. Cihazlar Intune’a kaydedildiğinde, bunlara bir MDM sertifikası verilir ve cihazlar bu sertifikayı Intune hizmetiyle iletişim kurmak için kullanır.
 
 Cihazları kaydetme biçiminiz, cihaz türüne, sahipliğine ve size gereken yönetim düzeyine bağlıdır. "Kendi cihazını getir" (KCG) kaydı, kullanıcıların kendi kişisel telefonlarını, tabletlerini veya bilgisayarlarını kaydetmesine izin verir. Şirkete ait cihaz (COD) kaydetme; otomatik kaydetme, paylaşılan cihazlar veya önceden yetkilendirilmiş kaydetme gereksinimleri gibi yönetim senaryolarına olanak tanır.
 
-Şirket içinde veya bulutta barındırılan Exchange ActiveSync kullanırsanız, kayda gerek kalmadan basit Intune yönetimini etkinleştirebilirsiniz (çok yakında daha fazla bilgi sağlanacaktır). Windows bilgisayarlarını mobil cihazlar olarak yönetebilirsiniz. Aşağıda açıklandığı gibi önerilen yöntem budur. Bu cihazları, [Intune istemci yazılımını](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) kullanıp bilgisayar olarak da yönetebilirsiniz.
+Şirket içinde veya bulutta barındırılan Exchange ActiveSync kullanırsanız, kayda gerek kalmadan basit Intune yönetimini etkinleştirebilirsiniz (çok yakında daha fazla bilgi sağlanacaktır). Windows bilgisayarlarını mobil cihazlar olarak yönetebilirsiniz. Aşağıda açıklandığı gibi önerilen yöntem budur.
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>Cihaz kayıt yöntemlerine genel bakış
@@ -53,21 +53,20 @@ Aşağıdaki tabloda Intune'a kayıt yöntemleri ve her yöntem için desteklene
 |**[USB-SA](#usb-sa)**|    Evet |    İsteğe bağlı |    Hayır| [Daha fazla bilgi](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
 |**[USB-Direct](#usb-direct)**|    Hayır |    Hayır    | Hayır|[Daha fazla bilgi](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
-
-
 **Windows kayıt yöntemleri**
 
 | **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Hayır |    Evet |    Hayır | Çok yakında daha fazla bilgi sağlanacaktır|
+|**[KCG](#byod)** | Hayır |    Evet |    Hayır | [Daha fazla bilgi](#enroll-windows-devices.md)|
 |**[DEM](#dem)**|    Hayır |Hayır |Hayır    |[Daha fazla bilgi](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android kayıt yöntemleri**
 
 | **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Hayır|    Evet |    Hayır | Çok yakında daha fazla bilgi sağlanacaktır|
+|**[KCG](#byod)** | Hayır|    Evet |    Hayır | [Daha fazla bilgi](#enroll-android-and-knox-standard-devices.md)|
 |**[DEM](#dem)**|    Hayır |Hayır |Hayır    |[Daha fazla bilgi](enroll-ios-devices-using-device-enrollment-program.md)|
+|[**Android for Work**](#android-for-work)| Hayır | Evet | Hayır| [Daha fazla bilgi](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## <a name="byod"></a>KCG
@@ -112,21 +111,11 @@ iOS kaydı hakkında daha fazla bilgi için bkz:
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Exchange ActiveSync ve Intune ile mobil cihaz yönetimi
 Kaydedilmemiş ancak Exchange ActiveSync’e (EAS) bağlanan mobil cihazlar, EAS MDM ilkesi kullanılarak Intune tarafından yönetilebilir. Intune, şirket içinde veya bulutta barındırılan EAS ile iletişim kurmak için bir Exchange Connector kullanır. Çok yakında daha fazla bilgi sağlanacaktır.
 
-
-## <a name="windows-pc-management-with-intune"></a>Intune ile Windows bilgisayarı yönetimini etkinleştirme  
-Windows bilgisayarları, Intune istemci yazılımı ile yönetmek için Microsoft Intune da kullanabilirsiniz. Intune istemcisiyle yönetilen bilgisayarlar aşağıdakileri yapabilir:
-
- - Yazılım ve donanım envanterlerini raporlama
- - Masaüstü uygulamaları yükleme (örneğin, .exe ve .msi dosyaları)
- - Güvenlik Duvarı ayarlarını yönet
-
-Intune istemci yazılımı ile yönetilen bilgisayarlar tamamen silinemese de, seçmeli silme kullanılabilir. Intune yazılım istemcisi ile yönetilen bilgisayarlar, koşullu erişim, VPN ve Wi-Fi ayarları ya da sertifika ve e-posta yapılandırmalarının dağıtımı gibi birçok Intune yönetimi özelliğinden yararlanamaz. Çok yakında daha fazla bilgi sağlanacaktır.
-
 ## <a name="supported-device-platforms-and-browsers"></a>Desteklenen cihaz platformları ve tarayıcılar
 
 Bkz. [Intune için desteklenen cihazlar ve tarayıcılar](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM sertifikası süre sonunda mobil cihazı temizleme
 
-Mobil cihazlar Intune hizmetiyle iletişim kurduğunda MDM sertifikası otomatik olarak yenilenir. Mobil cihazlar (PC değil) temizlendiğinde veya belirli bir süre boyunca Intune hizmetiyle iletişim kuramadığında, MDM sertifikası yenilenmez. MDM sertifikasının süre sonundan 180 gün sonra, cihaz Azure Portal’dan kaldırılır.
+Mobil cihazlar Intune hizmetiyle iletişim kurduğunda MDM sertifikası otomatik olarak yenilenir. Mobil cihazlar temizlendiğinde veya belirli bir süre boyunca Intune hizmetiyle iletişim kuramadığında, MDM sertifikası yenilenmez. MDM sertifikasının süre sonundan 180 gün sonra, cihaz Azure Portal’dan kaldırılır.
 

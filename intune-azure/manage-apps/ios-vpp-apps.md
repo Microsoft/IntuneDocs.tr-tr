@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ff43a0be6ebc124bb7e52e5be31e89985ce32166
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -53,8 +53,8 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve bunu Intune hesabını
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
-1.  **Uygulamaları Yönet** iş yükünde **Kurulum** > **iOS VPP Belirteçleri**’ni seçin.
+3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
+1.  **Mobil Uygulamalar** iş yükünde **Kurulum** > **iOS VPP Belirteçleri**’ni seçin.
 2.  VPP belirteçleri listesi dikey penceresinde **Ekle**’ye tıklayın.
 3.  Yeni VPP Belirteci dikey penceresinde aşağıdaki bilgileri belirtin:
     - **VPP belirteç dosyası** - Henüz kaydolmadıysanız, İş İçin Toplu Satın Alma Programı’na veya Eğitim İçin Toplu Satın Alma Programı’na kaydolun. Kaydolduktan sonra hesabınıza yönelik Apple VPP belirtecini indirin ve burada seçin.
@@ -69,7 +69,7 @@ Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
-1. **Uygulamaları Yönet** iş yükünde, **Yönet** > **Lisanslı Uygulamalar**’ı seçin.
+1. **Mobil Uygulamalar** iş yükünde, **Yönet** > **Lisanslı Uygulamalar**’ı seçin.
 2. Uygulama listesi dikey penceresinde atamak istediğiniz uygulamayı seçin ve sonra da '**...**' > **Grupları Ata**’yı seçin.
 3. <*uygulama adı*> - **Atanan Gruplar** dikey penceresinde **Yönet** > **Atanan Gruplar**’ı seçin.
 4. **Grupları Ata**'yı seçin, sonra da **Grup seç** dikey penceresinde uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.

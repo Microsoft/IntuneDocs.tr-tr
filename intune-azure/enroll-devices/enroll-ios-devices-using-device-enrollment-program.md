@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
-ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
-ms.lasthandoff: 04/07/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: d8fa3a19915076f1a603449dd426172fbc5a613a
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -38,9 +38,8 @@ Bu konu, BT yöneticilerine şirketin sahip olduğu ve [Apple Cihaz Kayıt Progr
 2. [DEP profili oluşturma](#create-anapple-dep-profile)
 3. [Intune sunucunuza Apple DEP seri numaraları atama](#assign-apple-dep-serial-numbers-to-your-mdm-server)
 4. [DEP ile yönetilen cihazları eşitleme](#synchronize-dep-managed-devices)
-5. Cihazları kullanıcılara dağıtma
-
-
+5. [Cihazlara DEP profili atama](#assign-a-dep-profile-to-devices)
+6. [Cihazları kullanıcılara dağıtma](#distribute-devices-to-users)
 
 ## <a name="get-the-apple-dep-certificate"></a>Apple DEP sertifikasını alma
 Şirketin sahibi olduğu iOS cihazlarını Apple'ın Aygıt Kayıt Programı'na (DEP) kaydedebilmeniz için bir Apple DEP sertifikası dosyasına (.p7m) ihtiyacınız vardır. Bu belirteç Intune'un şirketinize ait olup DEP'e katılan cihazlar hakkındaki bilgileri eşitlemesini sağlar. Ayrıca Intune'un kayıt profilini Apple'a yüklemesine ve cihazları bu profillere atamasına izin verir.
@@ -49,9 +48,6 @@ Bu konu, BT yöneticilerine şirketin sahip olduğu ve [Apple Cihaz Kayıt Progr
 
 > [!NOTE]
 > Intune kiracınız Intune klasik konsolundan Azure portalına geçirildiyse ve geçiş sırasında Intune yönetim konsolundan bir Apple DEP belirtecini sildiyseniz, bu DEP belirteci Intune hesabınıza geri yüklenmiş olabilir. DEP belirtecini Azure portalından tekrar silebilirsiniz.
-
-
-
 
 **1. Adım. Apple DEP belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.**<br>
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin. Intune dikey penceresinde **Cihaz kaydı** > **Apple DEP Belirteci**'ni seçin.
@@ -75,7 +71,7 @@ Sertifika (.pem) dosyasına gidin, **Aç**’ı ve sonra da **Karşıya Yükle**
 Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıdaki adımlar, DEP kullanarak kaydedilmiş iOS cihazları için bir cihaz kayıt profilinin nasıl oluşturulacağını gösterir.
 
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-2. Intune dikey penceresinde **Cihazları kaydet**’i ve ardından **Apple Kaydı**’nı seçin.
+2. Intune dikey penceresinde **Cihaz kaydetme**’yi ve ardından **Apple Kaydı**’nı seçin.
 3. **Apple Cihaz Kayıt Programı (DEP) Ayarlarını Yönet**’in altında **DEP Profilleri**’ni seçin.
 4. **Apple DEP Profilleri** dikey penceresinde **Oluştur**’u seçin.
 5. **Kayıt Profili Oluştur** dikey penceresinde, profil için bir ad ve açıklama girin.
@@ -118,6 +114,7 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıda
 9. Profil ayarlarını kaydetmek için, **Kayıt Profili Oluştur** dikey penceresinde **Oluştur**’u seçin.
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>MDM sunucunuza Apple DEP seri numaraları atama
+Intune’un cihazları yönetmesine izin vermek için, Apple DEP web portalında Intune MDM sunucunuza cihaz seri numaraları atanmalıdır.
 
 1. [Cihaz Kayıt Programı Portalı](https://deploy.apple.com)’na (https://deploy.apple.com) gidin ve şirketinizin Apple kimliğiyle oturum açın.
 
@@ -128,10 +125,11 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıda
 4. **Sunucuya Ata**'yı ve Microsoft Intune için belirtilen &lt;ServerName&gt; öğesini belirleyip **Tamam**'ı seçin.
 
 ## <a name="synchronize-dep-managed-devices"></a>DEP ile yönetilen cihazları eşitleme
+Artık Intune’a DEP cihazlarınızı yönetme izni verildiğine göre, yönetilen cihazlarınızı Intune portalında görmek için Intune’u DEP hizmetiyle eşitleyebilirsiniz.
 
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2. Azure Portal’ın Intune dikey penceresinde **Cihazları Kaydet**’i ve ardından **Apple Kaydı**’nı seçin.
+2. Azure Portal’ın Intune dikey penceresinde **Cihaz kaydı**’nı ve ardından **Apple Kaydı**’nı seçin.
 
 3. **Apple Cihaz Kayıt Programı (DEP) Ayarlarını Yönet**’in altında **DEP Seri Numaraları**’nı seçin.
 
@@ -146,12 +144,29 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıda
 >[!NOTE]
 >Ayrıca, **Apple DEP Seri Numaraları** dikey penceresinde profillere DEP seri numaraları da atayabilirsiniz.
 
+## <a name="assign-a-dep-profile-to-devices"></a>Cihazlara DEP profili atama
+Kaydedilmeden önce Intune tarafından yönetilen DEP cihazlarına bir DEP profili atanmalıdır.
+
+1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+
+2. Azure portalının Intune dikey penceresinde, **Cihaz kaydı** > **Apple Kaydı**’nı, ardından **DEP profilleri**’ni seçin.
+
+3. **Apple DEP Kayıt Profilleri** listesinden cihazlara atamak istediğiniz profili ve ardından **Cihaz Atamaları**’nı seçin
+
+4. **Ata**’yı ve ardından bu profile atamak istediğiniz DEP cihazlarını seçin. DEP kullanılabilir cihazlarını görüntülemek için filtreleyebilirsiniz:
+  - **atanmayanlar**
+  - **tümü**
+  - **&lt;DEP profil adı&gt;**
+
+  ![Intune portalında DEP profili atamak için Ata düğmesinin ekran görüntüsü](media/dep-profile-assignment.png)
+
+5. Atamak istediğiniz cihazları seçin. Sütunun üstündeki onay kutusu listelenen cihazlardan en çok 1000’ini seçer; sonra**Ata**’ya tıklayın. 1000 taneden fazla cihazı kaydetmek için, tüm cihazlara bir DEP profili atanana dek atama adımlarını yineleyin.
+
 ## <a name="distribute-devices-to-users"></a>Cihazları kullanıcılara dağıtma
 
-Şirkete ait cihazlarınızı artık kullanıcılara dağıtabilirsiniz. Bir iOS cihazı açıldığında Intune tarafından yönetim için kaydedilir.
+Şirkete ait cihazlarınızı artık kullanıcılara dağıtabilirsiniz. Bir iOS DEP cihazı açıldığında, cihaz, yönetilmesi için Intune’a kaydedilir. Cihaz etkinleştirilmişse ve kullanımdaysa, cihazda fabrika sıfırlaması yapılmadıkça profil uygulanamaz.
 
-
-## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Kullanıcıların cihazlarında Şirket Portalı’nı yüklemesi ve kullanması
+### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>Kullanıcıların cihazlarında Şirket Portalı’nı yüklemesi ve kullanması
 
 Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve cihaz yönetmek için Şirket Portalı’nı yükleyip çalıştırabilir. Kullanıcılar, cihazlarını aldıktan sonra Kurulum Yardımcısı’nı tamamlamak ve Şirket Portalı uygulamasını yüklemek için aşağıda açıklanan ek adımları tamamlamalıdır.
 
@@ -159,7 +174,7 @@ Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve c
 
 1. Kullanıcılar cihazlarını açtığında, kendilerinden Kurulum Yardımcısı’nı tamamlamaları istenir. Kurulum sırasında kullanıcılardan kimlik bilgileri istenir. Intune abonelikleriyle ilişkili kimlik bilgilerini (yani UPN olarak bilinen benzersiz kişisel adları) kullanmaları gerekir.
 
-2. Kurulum sırasında kullanıcılardan bir Apple Kimliği istenir. Cihazın Şirket Portalı’nı yüklemesine izin vermek için bir Apple ID sağlanmalıdır. Kimlik, kurulum bittikten sonra iOS ayarları menüsünden de sağlanabilir.
+2. Kurulum sırasında kullanıcılardan bir Apple Kimliği istenir. Cihazın Şirket Portalı’nı yüklemesine izin vermek için bir Apple ID sağlanmalıdır. Apple ID ayrıca, kurulum tamamlandıktan sonra iOS ayarları menüsünden de sağlanabilir.
 
 3. Kurulum tamamlandıktan sonra kullanıcılar Uygulama Mağazası’ndan Şirket Portalı uygulamasını yüklemelidir.
 

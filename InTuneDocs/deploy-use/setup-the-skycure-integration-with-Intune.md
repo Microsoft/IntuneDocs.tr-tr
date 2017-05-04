@@ -15,14 +15,14 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 6ff56f736c289dbc9a8340ad76e044363acbfea5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 18afa2b84c90e77280daf7ed9b1b8357365f7380
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="setup-the-skycure-integration-with-intune"></a>Intune ile Skycure tümleştirmesini kurma
+# <a name="set-up-the-skycure-integration-with-intune"></a>Intune ile Skycure tümleştirmesini kurma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -54,7 +54,7 @@ Skycure, Intune ile iki tümleştirme modunu destekler:
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-skycure"></a>Intune ile Skycure arasında salt okunur tümleştirme ayarlamak için
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Skycure yönetici kimlik bilgileri, Azure Active Directory’de geçerli bir kullanıcıya ait olması gereken bir e-postadır; böyle olmazsa, oturum açılamaz. Skycure, Çoklu Oturum Açma (SSO) kullanarak yöneticisinin kimliğini doğrulamak için Azure Active Directory kullanır.
 
 1.  [Skycure Yönetim Konsolu](https://aad.skycure.com)’na gidin.
@@ -75,7 +75,7 @@ Skycure, Intune ile iki tümleştirme modunu destekler:
 
     ![iOS uygulaması tamamlanma ekranı](../media/mtp/skycure-setup-3.png)
 
-> [!NOTE] 
+> [!NOTE]
 > **Skycure Android** ve **Yönetim** uygulamaları için de ayrı işlemi yineleyin.
 
 ### <a name="add-an-azure-ad-security-group-into-skycure"></a>Skycure’a Azure AD Güvenlik grubu ekleme

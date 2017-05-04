@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 03f53e6ec9f934eb40415434a60213bc839f6afe
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: 29fe0acf6c3724455d56b4657c79bc93fb258441
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -43,7 +43,7 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Tüm Ayarlar** dikey
 | **Uygulama verilerini şifreleme** | İlkeyle yönetilen uygulamalarda, etkin olmayan veriler iOS tarafından sağlanan cihaz düzeyinde şifreleme şeması kullanılarak şifrelenir. PIN istendiğinde, veriler uygulama koruma ilkesi ayarlarına göre şifrelenir. <br><br> Hangi iOS şifreleme modüllerinin FIPS 140-2 sertifikalı veya FIPS 140-2 sertifikası bekliyor olduğunu görmek için [buradaki](https://support.apple.com/HT202739) resmi Apple belgelerine gidin. <br><br> Bu uygulamadaki iş veya okul verilerinin ne zaman şifreleneceğini belirtin. Aşağıdakilerden birini seçin: <ul><li>**Cihaz kilitliyken**: Cihaz kilitliyken, bu ilkeyle ilişkilendirilen tüm uygulama verileri şifrelenir.</li><li>**Cihaz kilitliyken ve açık dosyalar varken**: Cihaz kilitliyken, uygulamada o anda açık olan dosyalardaki veriler dışında bu ilkeyle ilişkilendirilen tüm uygulama verileri şifrelenir.</li><li>**Cihaz yeniden başlatıldıktan sonra**: Cihaz yeniden başlatıldığında, bu ilkeyle ilişkilendirilen tüm uygulama verileri cihaz kilidinin ilk açılışına kadar şifrelenir.</li><li>**Cihaz ayarlarını kullan**: Uygulama verileri, cihazdaki varsayılan ayarlara göre şifrelenir. Bu ayarı etkinleştirdiğinizde kullanıcının cihazına erişmesi için bir PIN ayarlaması ve bu PIN’i kullanması gerekir.  Cihaz erişimi için PIN ayarlanmadıysa uygulamalar açılmaz ve “Kuruluşunuz, bu uygulamaya erişmek için öncelikle bir cihaz PIN’i etkinleştirmenizi gerektiriyor” iletisiyle birlikte kullanıcıdan bir PIN ayarlaması istenir. </li></ul> | Cihaz kilitliyken |
 | **Kişilerin eşitlenmesini devre dışı bırak** | Uygulamanın cihazdaki yerel Kişiler bölümüne veri kaydetmesini engellemek için **Evet**’i seçin. **Hayır**’ı seçerseniz uygulama cihazdaki yerel Kişiler uygulamasına veri kaydedebilir. <br><br>Uygulamadan iş veya okul verilerini kaldırmak için seçmeli silme gerçekleştirdiğinizde, yerel Kişiler uygulamasına doğrudan uygulamadan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. Şu anda bu özellik yalnızca Microsoft Outlook uygulaması için geçerlidir. | Hayır |
 | **Yazdırmayı devre dışı bırak** | Uygulamanın iş veya okul verilerini yazdırmasını engellemek için **Evet**’i seçin. | Hayır |
-
+| **Şirket verilerinin kaydedilebileceği depolama hizmetlerini seçin** | Kullanıcılar seçili hizmetlere (OneDrive İş, SharePoint ve Yerel Depolama) kaydedebilir. Diğer tüm hizmetler engellenir. | OneDrive İş ve SharePoint |
 
 > [!NOTE]
 > Verileri yeniden konumlandırma ayarlarının hiçbiri iOS cihazlarında Apple tarafından yönetilen birlikte aç özelliğini denetlemez. Apple birlikte aç özelliğini kullanmak için bkz. [Microsoft Intune ile iOS uygulamaları arasında veri aktarımını yönetme](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
@@ -72,6 +72,7 @@ Intune uygulama koruma ilkesinin, belirli senaryolarda veri aktarımına hedef v
 | **Yönetilen cihazların, jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelle** |  Bu uygulamaya jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engellemek için **Evet**’i seçin. Kullanıcı kişisel görevler için uygulamaları kullanmaya devam edebilir, ancak bu uygulamada iş veya okul verilerine erişmek için farklı bir cihaz kullanması gerekir. | Evet |
 | **Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)** | Aşağıdaki ayarları yapılandırın: <ul><li>**Zaman Aşımı**: Erişim gereksinimleri (daha önce ilkelerde tanımlanmıştır) yeniden denetlenmeden önce geçmesi gereken dakika sayısıdır. Örneğin, yönetici ilkede PIN’i etkinleştirirse, kullanıcı bir MAM uygulamasını açtığında bir PIN girmesi gerekir. Bu ayar kullanıldığında, kullanıcının **30 dakika** (varsayılan değer) boyunca herhangi bir MAM uygulamasında PIN girmesi gerekmez.</li><li>**Çevrimdışı yetkisiz kullanım süresi**: Uygulama için erişim gereksinimleri yeniden denetlenmeden önce MAM uygulamalarının çevrimdışı çalışabileceği dakika sayısıdır. Varsayılan değer = **720** dakika (12 saat). Bu süre dolduktan sonra, uygulama, çalışmaya devam edebilmesi için kullanıcının AAD’de kimliğini doğrulamasını ister.</li></ul>| Zaman Aşımı: 30 <br><br> Çevrimdışı: 720 |
 | **Uygulama verileri silinmeden önceki çevrimdışı zaman aralığı (gün)** | Belirtilen sayıda (yönetici tarafından tanımlanır) gün boyunca çevrimdışı çalışıldıktan sonra, uygulama kendi kendine bir seçmeli temizleme gerçekleştirir. Bu seçmeli temizleme, MAM temizleme iş akışında yönetici tarafından başlatılabilen temizlemeyle aynıdır. <br><br> | 90 gün |
+| **Cihaz PIN’i yönetildiği zaman uygulama PIN’ini devre dışı bırak** | Kayıtlı bir cihazda bir cihaz kilidi algılandığında, uygulama PIN’ini devre dışı bırakmak için **Evet**’i seçin. | Hayır |
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook uygulaması için eklentiler
 

@@ -15,9 +15,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 924dc37b310b27fe40ece9f8019061b02cb7ac2d
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 88fd05cf1ccaf2c033b737ce76a3ce5d83557313
+ms.lasthandoff: 04/25/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>SCEP için sertifika altyapısını yapılandırma
@@ -41,7 +41,7 @@ I
     -  Cihazlar sertifikaları almak ve yenilemek için İnternet üzerinden bağlanıyorsa güvenlik açısından önerilir.
 
  > [!NOTE]           
-> -    WAP'ı barındıran sunucular, Ağ Cihazı Kayıt Hizmeti tarafından kullanılan uzun URL'ler için destek sağlayan [bir güncelleştirmeyi yüklemelidir](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) . Bu güncelleştirmeyi [Aralık 2014 güncelleştirme paketi](http://support.microsoft.com/kb/3013769)ile birlikte veya [KB3011135](http://support.microsoft.com/kb/3011135)güncelleştirmesinden tek başına edinebilirsiniz.
+> -    WAP'ı barındıran sunucular, Ağ Cihazı Kayıt Hizmeti tarafından kullanılan uzun URL'ler için destek sağlayan [bir güncelleştirmeyi yüklemelidir](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) . Bu güncelleştirmeyi [Aralık 2014 güncelleştirme paketi](https://support.microsoft.com/kb/3013769)ile birlikte veya [KB3011135](https://support.microsoft.com/kb/3011135)güncelleştirmesinden tek başına edinebilirsiniz.
 >-  Ayrıca, WAP’yi barındıran sunucuda, dış istemcilere yayımlanan adla eşleşen bir SSL sertifikası olmalı ve NDES sunucusunda kullanılan SSL sertifikasına güvenilmelidir. Bu sertifikalar, WAP sunucusunun istemcilerden gelen SSL bağlantıyı sonlandırmasına ve NDES sunucusuna yeni bir SSL bağlantı oluşturmasına imkan sağlar.
     WAP sertifikaları hakkında bilgi için, [Web Uygulaması Ara Sunucusu Kullanarak Uygulama Yayınlamayı Planlama](https://technet.microsoft.com/library/dn383650.aspx) konusunun **Sertifikaları planlama** bölümüne bakın. WAP sunucuları hakkında genel bilgi için bkz. [Web Uygulaması Ara Sunucusu ile çalışma](http://technet.microsoft.com/library/dn584113.aspx).|
 

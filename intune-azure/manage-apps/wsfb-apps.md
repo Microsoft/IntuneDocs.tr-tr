@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d02d7c3367e18c96cc1d72de3a3a0ef581ef63ff
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -58,7 +58,7 @@ Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
+3. **Intune** dikey penceresinde, **Mobil uygulamalar**’ı seçin.
 1. **Mobil Uygulamalar** dikey penceresinde **Kurulum** > **İş İçin Windows Mağazası**’nı seçin.
 2. **Etkinleştir**'e tıklayın.
 3. Henüz yapmadıysanız, İş İçin Windows Mağazası’na kaydolma bağlantısına tıklayın ve daha önce ayrıntılarıyla açıklandığı gibi hesabınızı ilişkilendirin.
@@ -67,7 +67,7 @@ Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 ## <a name="synchronize-apps"></a>Uygulamaları eşitleme
 
-1. **Uygulamaları yönet** iş yükünde **Kurulum** > **İş İçin Windows Mağazası**’nı seçin.
+1. **Mobil uygulamalar** iş yükünde **Kurulum** > **İş İçin Windows Mağazası**’nı seçin.
 2. Windows Mağazası’ndan satın aldığınız uygulamaları Intune’a almak için **Eşitle**’ye tıklayın.
 
 ## <a name="assign-apps"></a>Uygulamaları atama
