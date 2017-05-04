@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -39,7 +40,7 @@ Yöneticilerinizin yalnızca rolleri için görmeleri gereken öğeleri görmele
     -   **Salt okunur erişim**
     -   **Yardım Masası - Gruplar düğümü**
 
-    Tam erişim ve salt okunur erişimin anlamı kolayca anlaşılır. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    Tam erişim ve salt okunur erişimin anlamı kolayca anlaşılır. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **Yardım Masası - Gruplar Düğümü**, yöneticinin neler görebileceğini ve yapabileceğini şu şekilde kısıtlar:
 
@@ -70,9 +71,4 @@ Yöneticilerinizin yalnızca rolleri için görmeleri gereken öğeleri görmele
         -   Geçiş kodu sıfırlama
 
 Yapılandırdığınız yöneticiye, Intune yönetim konsolunu bir sonraki açısında kendisine onun için belirttiğiniz erişim düzeyi verilir.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
