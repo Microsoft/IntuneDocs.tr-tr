@@ -1,5 +1,6 @@
 # Anlama ve Keşfetme
 ## [Intune'a giriş](understand-explore/introduction-to-microsoft-intune.md)
+## [Intune için eğitim](understand-explore/introduction-to-intune-education.md)
 ## [Ücretsiz deneme için kaydolma](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
 ## [Intune MDM'yi değerlendirme](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
 ### [Kullanıcıları ve cihazları düzenlemek için grup oluşturma](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
