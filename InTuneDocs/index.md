@@ -8,10 +8,11 @@ ms.assetid: 99e91b60-d6a5-44a8-908f-442161fbb077
 ms.topic: hub-page
 title: Microsoft Intune Belgeleri | Microsoft Docs
 description: "Microsoft Intune’u nasıl kullanacağınızı öğrenin."
-translationtype: Human Translation
-ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
-ms.openlocfilehash: af6af39a041582bd93bac6aad551881be4cf0291
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7db42e591df8ec6c21f73b7ce49be624e1e29690
+ms.openlocfilehash: 3d44038d316977ad0dedef2aee844a64ca24b744
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/02/2017
 
 ---
 <div id="main" class="v2">
@@ -40,6 +41,7 @@ ms.lasthandoff: 04/24/2017
                             </div>
                         </li>
                         <li>
+                        <a href="/intune-azure/introduction/what-is-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -49,14 +51,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure portalı önizlemesinde Intune</a></h3>
+                                            <h3>Azure portalı önizlemede Intune</h3>
                                             <p>Microsoft Intune'un, Azure portalına geçişi tamamlandıktan sonra yeni portalda kullanılabilecek değişiklikler hakkında bilgi edinin. </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                        <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -66,14 +70,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/plan-design/introduction">Dağıtım planlama ve tasarım</a></h3>
+                                            <h3>Dağıtım planlaması ve tasarımı</h3>
                                             <p>Bir dağıtım planı geliştirme, bir tasarım oluşturma, Intune'u ekleme ve bir üretim dağıtımı gerçekleştirme süreçlerinde adım adım ilerleyin.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune-education/what-is-intune-for-education">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -83,14 +89,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">Son kullanıcılarınızı Microsoft Intune hakkında bilgilendirme</a></h3>
-                                            <p>Son kullanıcılarınızın Intune tarafından sağlanan güvenli erişimi benimsemelerini nasıl sağlayacağınızı öğrenin.</p>
+                                            <h3>Eğitim için Intune nedir?</h3>
+                                            <p>Sınıfınızdaki cihazlarla her gün yapmanız gereken şeyleri nasıl başarabileceğinizi öğrenin.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -100,14 +108,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">Microsoft Graph'ta Intune ile çalışma</a></h3>
+                                            <h3>Microsoft Graph’te Intune ile çalışma</h3>
                                             <p>Intune denetimlerini ve ilkelerini yapılandırmak için Microsoft Graph API'lerini kullanın.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -117,14 +127,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150'den fazla lisansa mı ihtiyacınız var? FastTrack avantajlarınızı kullanın</a></h3>
+                                            <h3>150'den fazla lisansa mı ihtiyacınız var? FastTrack avantajlarınızdan yararlanın</h3>
                                             <p>Bu hizmetleri değerlendirmek, düzeltmek, etkinleştirmek ve kullanımlarını desteklemek için Microsoft uzmanlarıyla birlikte çalışın.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune/understand-explore/mam-faq">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -134,12 +146,13 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/understand-explore/mam-faq">MAM ve uygulama koruması hakkında SSS</a></h3>
+                                            <h3>MAM ve uygulama koruma hakkında SSS</h3>
                                             <p>Intune mobil uygulama yönetimi ve Intune uygulama koruma hakkında sık sorulan sorulardan bazılarına yanıt bulun.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
 <!--                        <li>
                             <div class="cardSize">
@@ -241,18 +254,18 @@ ms.lasthandoff: 04/24/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune">
-                            <div class="cardSize">
+                            <a href="/intune-education/what-is-intune-for-education">
+                           <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-intro-devicemgmt.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-featured-educateusers.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Microsoft Intune'da mobil cihaz yönetimi</h3>
-                                            <p>Intune'daki mobil cihaz yönetimi özelliklerini değerlendirin.</p>
+                                            <h3>Eğitim için Intune nedir?</h3>
+                                            <p>Sınıfınızdaki cihazlarla her gün yapmanız gereken şeyleri nasıl başarabileceğinizi öğrenin.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -470,7 +483,7 @@ ms.lasthandoff: 04/24/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-2-identify-use-case-scenarios">
+                            <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

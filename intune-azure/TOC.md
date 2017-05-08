@@ -1,5 +1,6 @@
 # Giriş
 ## [Azure portalı önizlemesi nedir?](introduction/what-is-microsoft-intune.md)
+## [Eğitim için Intune nedir?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Azure Intune özellikleri](introduction/ui-changes-in-microsoft-intune.md)
 ## Başlarken
 <!---(introduction/get-started.md) --->
@@ -82,10 +83,13 @@
 #### [iOS LOB uygulamaları](manage-apps/ios-lob-app.md)
 #### [Web uygulamaları](manage-apps/web-app.md)
 #### [Windows Phone 8.1 mağaza uygulamaları](manage-apps/windows-phone-8-1-store-app.md)
+#### [Windows Phone LOB uygulamaları](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows Mağazası uygulamaları](manage-apps/windows-store-app.md)
+#### [Windows LOB uygulamaları](manage-apps/windows-line-of-business-app.md)
 ### [Uygulamaları atama](manage-apps/deploy-apps.md)
 ### [Uygulamaları izleme](manage-apps/monitor-apps.md)
-### [Uygulama yapılandırma ilkelerini kullanma](manage-apps/app-configuration-policies.md)
+### [Uygulama yapılandırma profillerini kullanma](manage-apps/app-configuration-policies.md)
+### [iOS uygulama sağlama profillerini kullanma](manage-apps/ios-app-provisioning-profile.md)
 ### [Uygulamaları seçmeli temizleme](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Toplu satın alınan uygulamalarla çalışma](manage-apps/volume-purchased-apps.md)
