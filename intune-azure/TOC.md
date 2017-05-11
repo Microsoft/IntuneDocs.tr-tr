@@ -100,8 +100,8 @@
 ### [Uygulama koruma ilkelerini oluşturma ve atama](manage-apps/app-protection-policies.md)
 ### [WIP uygulama koruma ilkelerine hazırlanma](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 ### [WIP uygulama koruma ilkelerini oluşturma ve atama](manage-apps/create-windows-information-protection-policy-with-intune.md)
-#### [Android ayarları](manage-apps/android-app-protection-policy-settings.md)
-#### [iOS ayarları](manage-apps/ios-app-protection-policy-settings.md)
+### [Android ayarları](manage-apps/android-app-protection-policy-settings.md)
+### [iOS ayarları](manage-apps/ios-app-protection-policy-settings.md)
 ### [Uygulama koruma ilkelerini doğrulama](manage-apps/validate-app-protection-policies.md)
 ### [Uygulama koruma kullanıcı durumunu izleme](manage-apps/monitor-app-protection-policies-with-microsoft-intune.md)
 ### [iOS uygulamaları arasında veri aktarımını yönetme](manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -190,7 +190,7 @@
 ### [Android for Work uyumluluk ilkesi oluşturma](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [iOS uyumluluk ilkesi oluşturma](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Windows uyumluluk ilkesi oluşturma](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [Uyumsuzluğa yönelik Eylem oluşturma](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [Cihaz uyumluluğunu izleme](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
