@@ -14,9 +14,10 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
 ms.openlocfilehash: fe30e9be50eac610c5694502f0e16de453ddf4e3
+ms.contentlocale: tr-tr
 ms.lasthandoff: 04/14/2017
 
 
@@ -175,7 +176,7 @@ Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemel
 
 **3. Çözüm:**
 
-2. Çözüm işe yaramazsa, kullanıcılarınızın aşağıdaki adımları uygulayarak Şirket Portalı uygulamasını Smart Manager'da hariç tutmasını sağlayın:
+Çözüm #2 işe yaramazsa, kullanıcılarınızın aşağıdaki adımları uygulayarak Şirket Portalı uygulamasını Smart Manager'da hariç tutmasını sağlayın:
 
 1. Cihazda Smart Manager uygulamasını başlatın.
 
