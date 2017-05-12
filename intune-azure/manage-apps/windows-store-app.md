@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 195a7333e09f3a269b5ff10c51e0cfb3e7d10bdc
-ms.openlocfilehash: 3e363183f3ac33e4cde1060fb141f5e4eb7d566c
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 45b00ac17232aad7c404c7455fd10ca5cf8cb3f9
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -49,13 +50,13 @@ ms.lasthandoff: 04/04/2017
     - **Simgeyi Karşıya Yükle** - Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek olan simgedir.
 8. İşiniz bittiğinde, **Uygulama Ekle** dikey penceresinde **Kaydet**’i seçin.
 
-Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](/intune-azure/manage-apps/deploy-apps).
+Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](deploy-apps.md).
 
-## <a name="manually-deploy-windows-10-company-portal-app"></a>Windows 10 Şirket Portalı uygulamasını el ile dağıtma
-Son kullanıcılar cihazları yönetmek ve uygulama yüklemek için Şirket Portalı uygulamasını Windows Mağazası'ndan yükleyebilir. Ancak şirketiniz, Şirket Portalı uygulamasını sizin dağıtmanızı gerektiriyorsa Intune ile İş İçin Windows Mağazası'nı tümleştirmiş olmasanız bile Windows 10 Şirket Portalı uygulamasını doğrudan Intune'dan dağıtabilirsiniz.
+## <a name="manually-assign-windows-10-company-portal-app"></a>Windows 10 Şirket Portalı uygulamasını el ile atama
+Son kullanıcılar cihazları yönetmek ve uygulama yüklemek için Şirket Portalı uygulamasını Windows Mağazası'ndan yükleyebilir. Ancak şirketiniz, Şirket Portalı uygulamasını sizin atamanızı gerektiriyorsa Intune ile İş İçin Windows Mağazası'nı tümleştirmiş olmasanız bile Windows 10 Şirket Portalı uygulamasını doğrudan Intune'dan atayabilirsiniz.
 
  > [!NOTE]
- > Bu seçeneğin kullanılması, her uygulama güncelleştirmesi yayımlandığında el ile güncelleştirme dağıtılmasını gerektirir.
+ > Bu seçeneğin kullanılması, her uygulama güncelleştirmesi yayımlandığında el ile güncelleştirme atanmasını gerektirir.
 
 1. [İş İçin Windows Mağazası](https://www.microsoft.com/business-store)’ndaki hesabınızda oturum açın ve Şirket Portalı uygulamasının **çevrimdışı lisanslı** sürümünü edinin.  
 2. Uygulamayı aldıktan sonra **Envanter** sayfasında uygulamayı seçin.  
@@ -69,8 +70,8 @@ Son kullanıcılar cihazları yönetmek ve uygulama yüklemek için Şirket Port
   ![APPXBUN dosyasıyla kaydedilen Dependencies klasörünün görüntüsü](../media/Win10CP-Dependencies-save.png)
   2. Dokuz bağımlılık paketini Dependencies klasörüne yerleştirin.  
   Bağımlılıklar, bu biçimde yerleştirilmezse Intune tarafından tanınamazlar ve paketin karşıya yüklenmesi sırasında karşıya yüklenemezler. Bu durumda, karşıya yükleme aşağıdaki hatayı vererek başarısız olur.  
-  ![Bu yazılım yükleyicisine ait Windows uygulama bağımlılığı, uygulama klasöründe bulunamadı. Bu uygulamayı oluşturmaya ve dağıtmaya devam edebilirsiniz ancak uygulama, eksik Windows uygulama bağımlılığı sağlanmadıkça çalışmayacaktır.](../media/Win10CP-error-message.png)
-6. Intune'a dönün ve Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. Uygulamayı, istenen hedef kullanıcı kümesine gerekli bir uygulama olarak dağıtın.  
+  ![Bu yazılım yükleyicisine ait Windows uygulama bağımlılığı, uygulama klasöründe bulunamadı. Bu uygulamayı oluşturmaya ve atamaya devam edebilirsiniz ancak uygulama, eksik Windows uygulama bağımlılığı sağlanmadıkça çalışmayacaktır.](../media/Win10CP-error-message.png)
+6. Intune'a dönün ve Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. Uygulamayı, istenen hedef kullanıcı kümesine gerekli bir uygulama olarak atayın.  
 
 Intune’un Evrensel uygulamaların bağımlılıklarını nasıl işlediği hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune MDM aracılığıyla bağımlılıkları olan bir appxbundle dağıtma](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  
 
@@ -78,20 +79,20 @@ Intune’un Evrensel uygulamaların bağımlılıklarını nasıl işlediği hak
 Kullanıcılarınız, Windows 8.1 veya Windows Phone 8.1 Şirket Portalı uygulamalarını Mağaza'dan zaten yüklemişlerse sizin ya da kullanıcınızın herhangi bir işlemde bulunmasına gerek kalmadan bu uygulamalar otomatik olarak yeni sürüme güncelleştirilecektir. Bu güncelleştirme gerçekleşmezse, kullanıcılarınızdan cihazlarında Mağaza uygulamaları için otomatik güncelleştirmeleri etkinleştirdiklerini denetlemelerini isteyin.   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Dışarıdan yüklenen Windows 8.1 Şirket Portalı uygulamamı Windows 10 Şirket Portalı uygulamasına nasıl yükseltebilirim?
-Önerdiğimiz geçiş yolu, Windows 8.1 Şirket Portalı uygulaması için dağıtım eylemini "Kaldır" şeklinde ayarlayarak dağıtımı silmektir. Bunu yaptıktan sonra Windows 10 Şirket Portalı uygulaması yukarıdaki seçeneklerden herhangi biri kullanılarak dağıtılabilir.  
+Önerdiğimiz geçiş yolu, Windows 8.1 Şirket Portalı uygulaması için atama eylemini "Kaldır" şeklinde ayarlayarak atamayı silmektir. Bunu yaptıktan sonra Windows 10 Şirket Portalı uygulaması yukarıdaki seçeneklerden herhangi biri kullanılarak atanabilir.  
 
-Uygulamayı dışarıdan yüklemeniz gerekiyorsa ve Windows 8.1 Şirket Portalı’nı Symantec Sertifikasıyla imzalamadan dağıttıysanız, yükseltmeyi tamamlamak için yukarıdaki Doğrudan Intune aracılığıyla dağıtma bölümünde sunulan adımları izleyin.
+Uygulamayı dışarıdan yüklemeniz gerekiyorsa ve Windows 8.1 Şirket Portalı’nı Symantec Sertifikasıyla imzalamadan atadıysanız, yükseltmeyi tamamlamak için yukarıdaki Doğrudan Intune aracılığıyla atama bölümünde sunulan adımları izleyin.
 
-Uygulamayı dışarıdan yüklemeniz gerekiyorsa ve Windows 8.1 Şirket Portalı’nı Symantec kod imzalama sertifikası ile imzalayıp dağıttıysanız aşağıdaki bölümde sunulan adımları izleyin.  
+Uygulamayı dışarıdan yüklemeniz gerekiyorsa ve Windows 8.1 Şirket Portalı’nı Symantec kod imzalama sertifikası ile imzalayıp atadıysanız aşağıdaki bölümde sunulan adımları izleyin.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Dışarıdan yüklenmiş ve imzalı Windows Phone 8.1 veya Windows 8.1 Şirket Portalı uygulamamı Windows 10 Şirket Portalı uygulamasına nasıl yükseltebilirim?
-Önerdiğimiz geçiş yolu, Windows Phone 8.1 veya Windows 8.1 Şirket Portalı uygulaması için dağıtım eylemini "Kaldır" şeklinde ayarlayarak mevcut dağıtımı silmektir. Bunu yaptıktan sonra Windows 10 Şirket Portalı uygulaması normal bir biçimde dağıtılabilir.  
+Önerdiğimiz geçiş yolu, Windows Phone 8.1 veya Windows 8.1 Şirket Portalı uygulaması için atama eylemini "Kaldır" şeklinde ayarlayarak mevcut atamayı silmektir. Bunu yaptıktan sonra Windows 10 Şirket Portalı uygulaması normal bir biçimde atanabilir.  
 
 Aksi takdirde, yükseltme yoluna uyulduğundan emin olmak için Windows 10 Şirket Portalı uygulamasının uygun şekilde güncelleştirilmesi ve imzalanması gerekir.  
 
-Windows 10 Şirket Portalı uygulaması bu şekilde imzalanır ve dağıtılırsa, mağazada kullanıma sunulan her yeni uygulama güncelleştirmesi için bu işlemi tekrarlamanız gerekecektir. Mağaza güncelleştirildiğinde uygulama otomatik olarak güncelleştirilmez.  
+Windows 10 Şirket Portalı uygulaması bu şekilde imzalanır ve atanırsa, mağazada kullanıma sunulan her yeni uygulama güncelleştirmesi için bu işlemi tekrarlamanız gerekecektir. Mağaza güncelleştirildiğinde uygulama otomatik olarak güncelleştirilmez.  
 
-Uygulamanın bu şekilde nasıl imzalanıp dağıtılacağı aşağıda açıklanmaktadır:
+Uygulamanın bu şekilde nasıl imzalanıp atanacağı aşağıda açıklanmaktadır:
 
 1. Microsoft Intune Windows 10 Şirket Portalı Uygulamasını İmzalama Betiğini [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) adresinden indirin.  Bu betik, Windows 10 için Windows SDK’nın ana bilgisayara yüklenmiş olmasını gerektirir. Windows 10 için Windows SDK’yı indirmek için [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) adresini ziyaret edin.
 2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Windows Mağazası'ndan indirin.  
@@ -105,5 +106,5 @@ Uygulamanın bu şekilde nasıl imzalanıp dağıtılacağı aşağıda açıkla
 |PfxPassword| Symantec Enterprise Mobil Kod İmza Sertifikası’nın parolası. |
 |PublisherId |Kuruluşun Yayımcı Kimliği. Yoksa, Symantec Kurumsal Mobil Kod İmzalama Sertifikası’nın 'Konu' alanı kullanılır.|
 |SdkPath | Windows 10 için Windows SDK’sı kök klasörünün yolu. Bu bağımsız değişken isteğe bağlıdır ve varsayılan olarak ${env:ProgramFiles(x86)}\Windows Kits\10 değerindedir.|
-Betik, çalışması tamamlandığında Windows 10 Şirket Portalı uygulamasının imzalı sürümünü çıktı olarak sunar. Ardından Intune aracılığıyla uygulamanın imzalı sürümünü bir LOB uygulaması olarak dağıtabilirsiniz. Şu anda dağıtılmış durumdaki sürümler, bu yeni uygulamaya yükseltilir.  
+Betik, çalışması tamamlandığında Windows 10 Şirket Portalı uygulamasının imzalı sürümünü çıktı olarak sunar. Ardından Intune aracılığıyla uygulamanın imzalı sürümünü bir LOB uygulaması olarak atayabilirsiniz. Şu anda atanmış durumdaki sürümler, bu yeni uygulamaya yükseltilir.  
 
