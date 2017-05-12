@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ iOS cihazlarını hangi yöntemle kaydedeceğinize karar verirken aşağıdaki b
 
 ## <a name="user-owned-ios-devices-byod"></a>Kullanıcıya ait iOS cihazları (KCG)
 
-Kullanıcılar kendi kişisel, KCG (kendi cihazını getir) cihazlarını kaydetmek istediklerinde, kullanıcılara sağlanan tek kayıt yöntemi Uygulama Mağazası’ndan iOS için Şirket Portalı uygulamasını indirmek ve uygulamadaki kayıt yönergelerini izlemektir. Kaydedildikten sonra, kullanıcılar şirket ağına bağlanabilir, etki alanına veya Azure Active Directory’ye katılabilir ve şirket kaynaklarına erişim sağlayabilir. Kişisel iOS cihazlarının kaydedilmesini engelleyebilirsiniz. Yönergeler için bkz. [Cihaz türü kısıtlamaları ayarlama](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
+Kullanıcılar kendi kişisel, KCG (kendi cihazını getir) cihazlarını kaydetmek istediklerinde, kullanıcılara sağlanan tek kayıt yöntemi Uygulama Mağazası’ndan iOS için Şirket Portalı uygulamasını indirmek ve uygulamadaki kayıt yönergelerini izlemektir. Kaydedildikten sonra, kullanıcılar şirket ağına bağlanabilir, etki alanına veya Azure Active Directory’ye katılabilir ve şirket kaynaklarına erişim sağlayabilir. Kişisel iOS cihazlarının kaydedilmesini engelleyebilirsiniz. Yönergeler için bkz. [Cihaz türü kısıtlamaları ayarlama](set-enrollment-restrictions.md#set-device-type-restrictions).
 
 ## <a name="apple-configurator"></a>Apple Configurator
 

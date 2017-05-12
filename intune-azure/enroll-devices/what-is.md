@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ Cihazları kaydetme biçiminiz, cihaz türüne, sahipliğine ve size gereken yö
 
 Aşağıdaki tabloda Intune'a kayıt yöntemleri ve her yöntem için desteklenen özellikler ile gereksinimler gösterilmektedir. Özellik ve gereksinimleri açıklamaları aşağıda verilmiştir. Tabloda aşağıdaki terimler kullanılır:
 
-- **Temizle** - Kullanıcıların cihazı kaydedebilmesi için temizleme yapılıp yapılmaması gerektiğini belirtir. "Temizleme" terimi, cihazın fabrika verilerine döndürülerek tüm verilerin silinmesini ifade eder. Daha fazla bilgi için bkz. [Cihazlarda tam veya seçmeli temizleme kullanma](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
+- **Temizle** - Kullanıcıların cihazı kaydedebilmesi için temizleme yapılıp yapılmaması gerektiğini belirtir. "Temizleme" terimi, cihazın fabrika verilerine döndürülerek tüm verilerin silinmesini ifade eder. Daha fazla bilgi için bkz. [Cihazlarda tam veya seçmeli temizleme kullanma](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md).
 - **Benzeşim** - Cihazlarla kullanıcıları ilişkilendirir. Mobil uygulama yönetimi (MAM) ve şirket verilerine koşullu erişim için gereklidir. Daha fazla bilgi için bkz. [Kullanıcı benzeşimi](enroll-ios-devices-using-device-enrollment-program.md).
 - **Kilitle** - Kullanıcıların cihaz kayıtlarını yönetimden kaldırmasının engellenip engellenmediğini gösterir. Kullanıcılar, Şirket Portalı uygulamalarını kullanarak tüm platformlarda cihaz kaydını kaldırabilir. Cihaz kaydını kaldırma işlemi için yerel işletim sistemi menüleri kullanılamaz.
 
@@ -70,7 +71,7 @@ Aşağıdaki tabloda Intune'a kayıt yöntemleri ve her yöntem için desteklene
 
 
 ## <a name="byod"></a>KCG
-“Kendi cihazını getir” kullanıcıları Şirket Portalı uygulamasını yükler ve cihazlarını kaydeder. Bu, kullanıcıların şirket ağına bağlanarak etki alanına veya Azure Active Directory’ye katılmasına olanak tanır. Çoğu platformda, birçok COD senaryosu için KCG’yi etkinleştirmeniz gerekir. Kişisel iOS ve Android cihazlarının kaydedilmesini engelleyebilirsiniz. Yönergeler için bkz. [Cihaz türü kısıtlamaları ayarlama](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
+“Kendi cihazını getir” kullanıcıları Şirket Portalı uygulamasını yükler ve cihazlarını kaydeder. Bu, kullanıcıların şirket ağına bağlanarak etki alanına veya Azure Active Directory’ye katılmasına olanak tanır. Çoğu platformda, birçok COD senaryosu için KCG’yi etkinleştirmeniz gerekir. Kişisel iOS ve Android cihazlarının kaydedilmesini engelleyebilirsiniz. Yönergeler için bkz. [Cihaz türü kısıtlamaları ayarlama](set-enrollment-restrictions.md#set-device-type-restrictions).
 
 ## <a name="corporate-owned-devices"></a>Şirkete ait cihazlar
 Şirkete ait cihazlar (COD) Azure Portal kullanılarak yönetilebilir. iOS cihazları, Apple tarafından sağlanan araçlar üzerinden doğrudan kaydedilebilir. Tüm cihaz türleri, cihaz kayıt yöneticisini kullanan bir yönetici ya da müdür tarafından kaydedilebilir. IMEI numaralı cihazlar da, COD senaryolarını etkinleştirmek için şirkete ait olarak tanımlanabilir ve etiketlenebilir.

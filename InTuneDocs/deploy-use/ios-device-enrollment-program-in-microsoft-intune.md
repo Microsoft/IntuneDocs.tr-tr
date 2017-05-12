@@ -14,10 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 81f5b33bc344cd6ed305d72178c7eb4cac315a13
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90222b10832fd8251ad897348eeebed5b3d1e552
+ms.openlocfilehash: a14f308102d677015dae93eb2c1a36ca95662056
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/11/2017
 
 
 ---
@@ -80,8 +81,8 @@ Aşağıdaki adımlar, Apple DEP yönetimini kullanarak iOS cihazlarının "0. g
 
    - **Kullanıcı benzeşimi istemi**: Cihaz ilk kurulum sırasında bir kullanıcıya bağlı olmalıdır. Cihazın şirket verilerine ve e-postalara bu kullanıcı aracılığıyla erişmesine izin verilmesi için bu gereklidir. DEP tarafından yönetilen kullanıcılara ait olan ve şirket portalını kullanması gereken (uygulama yüklemek için) cihazlarda **kullanıcı benzeşimi** ayarlanmalıdır. Multifactor authentication (MFA) kullanıcı benzeşimi özellikli DEP cihazlarında kayıt sırasında çalışmaz. Kayıttan sonra MFA bu cihazlar üzerinde beklendiği gibi çalışır. İlk kez oturum açarken parola değiştirmesi istenen yeni kullanıcılara, DEP cihazlarının kaydı sırasında istemde bulunulamaz. Ayrıca, parolalarının süresi dolmuş olan kullanıcılardan DEP kaydı sırasında parolalarını sıfırlamaları istenmez ve farklı bir cihazdan parolayı sıfırlamaları gerekir.
 
-   > [!NOTE]
-   > Kullanıcı benzeşimi ile DEP’in kullanıcı belirteci istemesini etkinleştirmek için WS-Trust 1.3 Kullanıcı Adı/Karma uç nokta gerekir.
+       >[!NOTE]
+       >Kullanıcı benzeşimi ile DEP'in kullanıcı belirteci istemesini etkinleştirmek için [WS-Trust 1.3 Kullanıcı Adı/Karma uç nokta](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) gerekir. [WS-Trust 1.3 hakkında daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Kullanıcı benzeşimi yok**: Cihaz bir kullanıcıya bağlı değil. Bu ilişkiyi, yerel kullanıcı verilerine erişmeden görevleri gerçekleştiren cihazlar için kullanın. İş kolu uygulamalarını yüklemek için kullanılan Şirket Portalı uygulaması da dahil olmak üzere, kullanıcı benzeşimi gerektiren uygulamalar çalışmaz.
 

@@ -15,10 +15,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 74a905ed2ba9ec04ae14df96fcd3f6b6caf1241c
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -39,16 +40,16 @@ ms.lasthandoff: 03/17/2017
     - **Platform** -  Oluşturmak istediğiniz profilin platform türünü seçin.
     - **Profil türü** - Oluşturmak istediğiniz profil türünü seçin. Kullanılabilir türler listesi, seçtiğiniz platforma göre değişiklik gösterir.
     - **Ayarlar** - Her profil türünün ayarları hakkında bilgi için, aşağıdaki konu başlıklarını seçin:
-        -  [Cihaz özelliği ayarları](/intune-azure/configure-devices/how-to-configure-device-features)
-        -  [Cihaz kısıtlama ayarları](/intune-azure/configure-devices/how-to-configure-device-restrictions)
-        -  [E-posta ayarları](/intune-azure/configure-devices/how-to-configure-email-settings)
-        -  [VPN ayarları](/intune-azure/configure-devices/how-to-configure-vpn-settings)
-        -  [Wi-Fi ayarları](/intune-azure/configure-devices/how-to-configure-wi-fi-settings)
-        -  [Windows 10 sürüm yükseltme ayarları](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
-        -  [Sertifika ayarları](/intune-azure/configure-devices/how-to-configure-certificates)
-        -  [Windows Bilgi Koruması ayarları](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-        -  [Eğitim ayarları](/intune-azure/configure-devices/how-to-configure-education-settings)
-        -  [Özel ayarlar](/intune-azure/configure-devices/how-to-configure-custom-settings)
+        -  [Cihaz özelliği ayarları](how-to-configure-device-features.md)
+        -  [Cihaz kısıtlama ayarları](how-to-configure-device-restrictions.md)
+        -  [E-posta ayarları](how-to-configure-email-settings.md)
+        -  [VPN ayarları](how-to-configure-vpn-settings.md)
+        -  [Wi-Fi ayarları](how-to-configure-wi-fi-settings.md)
+        -  [Windows 10 sürüm yükseltme ayarları](how-to-configure-windows-10-edition-upgrade.md)
+        -  [Sertifika ayarları](how-to-configure-certificates.md)
+        -  [Windows Bilgi Koruması ayarları](how-to-configure-windows-information-protection.md)
+        -  [Eğitim ayarları](how-to-configure-education-settings.md)
+        -  [Özel ayarlar](how-to-configure-custom-settings.md)
 
     ![Cihaz profilini oluşturma](./media/create-device-profile.png)
 4. Ayarları yapılandırmayı bitirdikten sonra, **Profil Oluştur** dikey penceresinde **Oluştur**’u seçin.
@@ -58,5 +59,5 @@ Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama
 
 
 ### <a name="next-steps"></a>Sonraki adımlar
-Cihaz profillerini atama hakkında bilgi için bkz. [Microsoft Intune ile cihaz profillerini atama](/intune-azure/configure-devices/how-to-assign-device-profiles).
+Cihaz profillerini atama hakkında bilgi için bkz. [Microsoft Intune ile cihaz profillerini atama](how-to-assign-device-profiles.md).
 

@@ -15,10 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 6fcbeb30fb11b6bc8def3a1c245bff56b3f7cca4
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune, macOS cihazlarını yönetmenize olanak sağlar. Cihaz yönetimini etkinleştirmek için, kullanıcılarınızın [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) gidip istemleri izleyerek cihazlarını kaydetmeleri gerekir. macOS cihazlarını yönetim altına aldıktan sonra [macOS cihazlar için özel ayarlar oluşturabilirsiniz](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). Daha fazla özellik yakında kullanıma sunulacaktır.
+Intune, macOS cihazlarını yönetmenize olanak sağlar. Cihaz yönetimini etkinleştirmek için, kullanıcılarınızın [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) gidip istemleri izleyerek cihazlarını kaydetmeleri gerekir. macOS cihazlarını yönetim altına aldıktan sonra [macOS cihazlar için özel ayarlar oluşturabilirsiniz](../configure-devices/custom-for-macos.md). Daha fazla özellik yakında kullanıma sunulacaktır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -36,7 +37,7 @@ macOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın
 - [Etki alanlarını yapılandırma](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [MDM Yetkilisini ayarlama](set-mdm-authority.md)
 - [Grup oluşturma](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Şirket Portalı’nı yapılandırma](/intune-azure/manage-apps/company-portal-app.md)
+- [Şirket Portalı’nı yapılandırma](../manage-apps/company-portal-app.md)
 - [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanıcı lisanslarını atama
 - [Bir MDM anında iletme sertifikası alma](get-an-apple-mdm-push-certificate.md)
 
@@ -44,9 +45,9 @@ macOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın
 
 Intune, macOS cihazlarının kaydına varsayılan olarak zaten izin verir.
 
-macOS cihazlarının kaydedilmesini engellemek için bkz. [Cihaz türü kısıtlamaları ayarlama](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
+macOS cihazlarının kaydedilmesini engellemek için bkz. [Cihaz türü kısıtlamaları ayarlama](set-enrollment-restrictions.md#set-device-type-restrictions).
 
-Bir kullanıcının kaydedebileceği en fazla cihaz sayısını ayarlamak için bkz. [Cihaz sınırı kısıtlamaları ayarlama](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions).
+Bir kullanıcının kaydedebileceği en fazla cihaz sayısını ayarlamak için bkz. [Cihaz sınırı kısıtlamaları ayarlama](set-enrollment-restrictions.md#set-device-limit-restrictions).
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Kullanıcılarınıza, şirket kaynaklarına erişmek için cihazlarını nasıl kaydedeceklerini anlatın
 
