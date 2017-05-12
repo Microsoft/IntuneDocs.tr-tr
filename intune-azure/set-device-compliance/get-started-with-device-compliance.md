@@ -15,10 +15,11 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: a0fa37130948126ea08e4cc0140d4c326c26782b
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -33,7 +34,7 @@ Bu konuda, şunları öğreneceksiniz:
 - Cihaz uyumluluk ilkesi oluşturmaya başlamadan önce ihtiyacınız olanlar.
 - Intune Azure önizleme portalında neler görüp yapabileceğinize hızlı bir bakış. 
 
-Cihaz uyumluluğu konusunda bilgi sahibi değilseniz, cihaz uyumluluğunun ne olduğunu ve kuruluşunuzda bunu nasıl kullanabileceğinizi öğrenmek için [bu konuyu](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) okumak isteyebilirsiniz.
+Cihaz uyumluluğu konusunda bilgi sahibi değilseniz, cihaz uyumluluğunun ne olduğunu ve kuruluşunuzda bunu nasıl kullanabileceğinizi öğrenmek için [bu konuyu](what-is-device-compliance.md) okumak isteyebilirsiniz.
 
 ##  <a name="pre-requisites"></a>Ön koşullar
 

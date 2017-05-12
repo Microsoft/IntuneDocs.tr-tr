@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -28,7 +29,7 @@ ms.lasthandoff: 03/11/2017
 ## <a name="introduction"></a>Giriş
 Hizmet olarak Windows, Windows 10 güncelleştirmeleri sağlamanın yeni yoludur. Windows 10’dan itibaren tüm yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri de kapsayacaktır. Böylece, en son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın tamamen güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
 
-İşletmeler için Windows Update’i kullanarak güncelleştirme yönetimi deneyimini, cihaz grupları için tek tek güncelleştirmelerin onaylanması gerekmeyecek şekilde basitleştirebilirsiniz. Ortamlarınızdaki riski yönetmek amacıyla hala bir güncelleştirme dağıtım stratejisi yapılandırabilirsiniz ve Windows Update güncelleştirmelerin doğru zamanda yüklenmesini sağlayacaktır. Microsoft Intune, cihazlarda güncelleştirme ayarlarının yapılandırılabilmesini sağlar ve güncelleştirme yüklemelerini erteleme olanağı tanır. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. **Windows 10 güncelleştirme kademelerini** yapılandırmak ve yönetmek için Intune’u kullanın. Güncelleştirme kademesi, Windows 10 güncelleştirmelerinin ne zaman ve nasıl yükleneceğini yapılandıran bir dizi ayar içerir. Örneğin, aşağıdakileri yapılandırabilirsiniz:
+İşletmeler için Windows Update’i kullanarak güncelleştirme yönetimi deneyimini, cihaz grupları için tek tek güncelleştirmelerin onaylanması gerekmeyecek şekilde basitleştirebilirsiniz. Ortamlarınızdaki riski yönetmek amacıyla hala bir güncelleştirme dağıtım stratejisi yapılandırabilirsiniz. Böyle yaptığınızda Windows Update güncelleştirmelerin doğru zamanda yüklenmesini sağlayacaktır. Microsoft Intune, cihazlarda güncelleştirme ayarlarının yapılandırılabilmesini sağlar ve güncelleştirme yüklemelerini erteleme olanağı tanır. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. **Windows 10 güncelleştirme kademelerini** yapılandırmak ve yönetmek için Intune’u kullanın. Güncelleştirme kademesi, Windows 10 güncelleştirmelerinin ne zaman ve nasıl yükleneceğini yapılandıran bir dizi ayar içerir. Örneğin, aşağıdakileri yapılandırabilirsiniz:
 
 - **Windows 10 Bakım Dalı**: Cihaz gruplarının güncelleştirmeleri Güncel Dalı üzerinden mi yoksa İş İçin Güncel Dalı üzerinden mi alacağını seçin.  
 - **Erteleme Ayarları**: Cihaz gruplarının güncelleştirme yüklemelerini erteleyen erteleme ayarlarını yapılandırın. Böylece, aşamalı bir güncelleştirme dağıtımı oluşturarak ilerleme durumunu güncelleştirme boyunca gözden geçirebilirsiniz.
@@ -54,7 +55,7 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
     ![Tanılama ve kullanım verileri için Windows ayarı](./media/telemetry-basic.png)
 
-    Bu ayarı el ile yapılandırabilir veya Windows 10 ve üzeri sürümlerine yönelik bir Intune cihaz kısıtlama profili kullanabilirsiniz. Bunu gerçekleştirmek için **Genel** > **Tanılama verisi gönderme** ayarını en az **Temel** olarak yapılandırın. Cihaz profilleri hakkında daha fazla bilgi için bkz. [Cihaz kısıtlama ayarlarını yapılandırma](/intune-azure/configure-devices/how-to-configure-device-restrictions).
+    Bu ayarı el ile yapılandırabilir veya Windows 10 ve üzeri sürümlerine yönelik bir Intune cihaz kısıtlama profili kullanabilirsiniz. Bunu gerçekleştirmek için **Genel** > **Tanılama verisi gönderme** ayarını en az **Temel** olarak yapılandırın. Cihaz profilleri hakkında daha fazla bilgi için bkz. [Cihaz kısıtlama ayarlarını yapılandırma](how-to-configure-device-restrictions.md).
 
 - Klasik Intune yönetim konsolunda yazılım güncelleştirmelerinin davranışını denetleyen dört ayar vardır. Bu ayarlar, Windows 10 masaüstü ve Windows 10 Mobile cihazlarına ait genel yapılandırma ilkesinin bir parçasıdır:
     - **Otomatik güncelleştirmelere izin ver**
