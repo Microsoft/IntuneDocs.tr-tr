@@ -14,9 +14,10 @@ ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
 ms.openlocfilehash: 86a59771fc57971a626f71083e81cd4b7d858cfa
+ms.contentlocale: tr-tr
 ms.lasthandoff: 04/25/2017
 
 
@@ -41,7 +42,7 @@ Bir Windows 10 uygulama koruma ilkesi oluşturmadan önce, Azure AD’de MAM sa�
 
 3.  **Azure AD** dikey penceresi açıldığında, **Mobility (MDM ve MAM)** seçeneğini işaretleyin, ardından **Microsoft Intune**’a tıklayın.
 
-    ![Mobility MDM ve MAM](../media/AppManagement/mam-provider-sc-1.png)
+    ![Mobility MDM ve MAM](../media/AppManagement/mam-provider-sc-2.png)
 
 4.  Yapılandırma dikey penceresi açıldığında, önce **Varsayılan MAM URL'lerini geri yükle**’yi seçin, sonra şunları yapılandırın:
 
