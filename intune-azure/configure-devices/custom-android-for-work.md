@@ -15,23 +15,24 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: ac27b1915483568b9b9857405f7acaf704fd53d9
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 05afa9140e34b372cc49ace03a3ada965b907c17
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
 
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work cihazları için Intune özel profil ayarları oluşturma
 
-Android for Work cihazlardaki özellikleri denetlemek için kullanılabilen OMA-URI ayarlarını dağıtmak için Intune Android for Work özel yapılandırma ilkesini kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
+Android for Work cihazlardaki özellikleri denetlemek için kullanılabilen OMA-URI ayarlarını atamak için Intune Android for Work özel yapılandırma ilkesini kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
 
-Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarlarını dağıtmanıza olanak sağlamak için tasarlanmıştır. Intune, şu anda sınırlı sayıda Android özel ilkesi destekler. Hangi ilkeleri yapılandırabileceğinizi öğrenmek için bu konu başlığındaki örneklere bakın.
+Bu özellik, Intune ilkeleri ile yapılandırılamayan Android ayarlarını atamanıza olanak sağlamak için tasarlanmıştır. Intune, şu anda sınırlı sayıda Android özel ilkesi destekler. Hangi ilkeleri yapılandırabileceğinizi öğrenmek için bu konu başlığındaki örneklere bakın.
 
 ## <a name="create-a-custom-profile"></a>Özel profil oluşturma
 
-1. Başlamak için, [Özel cihaz ayarlarını yapılandırma](/intune-azure/configure-devices/how-to-configure-custom-settings) konusunda verilen yönergeleri kullanın.
+1. Başlamak için, [Özel cihaz ayarlarını yapılandırma](how-to-configure-custom-settings.md) konusunda verilen yönergeleri kullanın.
 2. Yeni ayar eklemek için **Özel OMA-URI Ayarları** dikey penceresinde **Ekle**’yi seçin.
 3. **Satır Ekle** dikey penceresinde aşağıdakileri yapılandırın:
     - **Ad** - Intune portalında tanımlamanıza yardımcı olması için Android for Work özel ayarlarına benzersiz bir ad girin.
