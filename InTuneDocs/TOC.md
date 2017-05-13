@@ -84,7 +84,7 @@
 #### [Exchange erişim kuralları](deploy-use/exchange-access-rules-for-mobile-devices.md)
 ### [Android for Work’ü yönetme](deploy-use/android-for-work.md)
 
-## [Yazılım aracısıyla bilgisayarları yönetme](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+## [Yazılım istemcisi ile bilgisayarları yönetme](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
 ### [Bilgisayar istemcisini yükleme](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 ### [Genel bilgisayar yönetim görevleri](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Bilgisayar ilkeleri](deploy-use/use-policies-to-simplify-windows-pc-management.md)
