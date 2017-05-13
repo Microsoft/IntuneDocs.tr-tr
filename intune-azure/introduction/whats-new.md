@@ -6,7 +6,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 04/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
-ms.openlocfilehash: 9554a431859665312daf414f2c6cdfb47baf8547
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: f209429bbafe50530e90bbaf133f780f448a8c57
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -33,13 +34,18 @@ Genel önizleme süreci ilerler ve giderek daha fazla özellik eklenirken, bunla
 
 ## <a name="april-2017"></a>Nisan 2017
 
+### <a name="support-for-managing-the-apple-classroom-app"></a>Apple Classroom uygulamasını yönetme desteği
+
+Artık iOS Classroom uygulamasını iPad cihazlarında yönetebilirsiniz. Doğru sınıf ve öğrenci verileriyle Classroom uygulamasını öğretmenin iPad cihazına kurun ve sınıfa kayıtlı öğrencilerin iPad cihazlarını uygulamayı kullanarak denetlemek için yapılandırın.
+Ayrıntılar için bkz. [iOS eğitim ayarlarını yapılandırma](../configure-devices/how-to-configure-ios-edu-settings.md).
+
 ### <a name="support-for-managed-configuration-options-for-android-apps----621621---"></a>Android uygulamaları için yönetilen yapılandırma seçenekleri desteği <!-- 621621 -->
 
 Playstore'da yer alan ve yönetilen yapılandırma seçeneklerini destekleyen Android uygulamaları, artık Intune tarafından yapılandırılabilir.  Bu özellik, BT ekibinin bir uygulama tarafından desteklenen yapılandırma değerlerinin listesini görüntülemesini sağlar ve bu değerlerin yapılandırılması için kılavuzlu bir birinci sınıf kullanıcı arabirimi sunar.
 
 ### <a name="new-android-policy-for-complex-pins----722069---"></a>Karmaşık PIN'ler için yeni Android ilkesi <!-- 722069 -->
 
-Artık Android 5.0 ve üzeri çalıştıran cihazların Android cihaz profilinde Sayısal karmaşık türünde [parola](/intune-azure/configure-devices/device-restrictions-for-android#password) gereksinimi belirleyebilirsiniz.  Bu ayarı kullanarak cihaz kullanıcılarının 1111 veya 1234 gibi tekrar eden ya da ardışık rakamlardan oluşan PIN'ler oluşturmasını engelleyebilirsiniz.
+Artık Android 5.0 ve üzeri çalıştıran cihazların Android cihaz profilinde Sayısal karmaşık türünde [parola](../configure-devices/device-restrictions-for-android.md#password) gereksinimi belirleyebilirsiniz.  Bu ayarı kullanarak cihaz kullanıcılarının 1111 veya 1234 gibi tekrar eden ya da ardışık rakamlardan oluşan PIN'ler oluşturmasını engelleyebilirsiniz.
 
 ### <a name="additional-support-for-android-for-work-devices"></a>Android for Work cihazları için ek destek
 
@@ -55,26 +61,26 @@ Bu Android for Work cihaz kısıtlama profili artık iş ve kişisel profiller a
 
   Android for Work cihazları için yeni bir özel cihaz profili, artık iş ve kişisel uygulamalar arasında kopyala ve yapıştır eylemlerini kısıtlayabilmenizi sağlar.
 
-Daha fazla bilgi için bkz. [Android for Work için cihaz kısıtlamaları](/intune-azure/configure-devices/device-restrictions-for-afw).
+Daha fazla bilgi için bkz. [Android for Work için cihaz kısıtlamaları](../configure-devices/device-restrictions-for-afw.md).
 
 ### <a name="assign-lob-apps-to-ios-and-android-devices----1057568---"></a>iOS ve Android cihazlara LOB uygulamaları atama <!-- 1057568 -->
 
-Artık [iOS](/intune-azure/manage-apps/ios-lob-app) (.ipa dosyaları) ve [Android](/intune-azure/manage-apps/android-lob-app) (.apk dosyaları) için iş kolu (LOB) uygulamalarını kullanıcılara veya cihazlara atayabilirsiniz.
+Artık [iOS](../manage-apps/ios-lob-app.md) (.ipa dosyaları) ve [Android](../manage-apps/android-lob-app.md) (.apk dosyaları) için iş kolu (LOB) uygulamalarını kullanıcılara veya cihazlara atayabilirsiniz.
 
 ###  <a name="new-device-policies-for-ios----723774-723815-723826-723830---"></a>iOS için yeni cihaz ilkeleri <!-- 723774, 723815, 723826, 723830 -->
 
-- **Giriş ekranındaki uygulamalar** - Kullanıcıların [iOS cihazlarının giriş ekranında](/intune-azure/configure-devices/home-screen-settings-for-ios) göreceği uygulamaları denetler. Bu ilke Ana ekran yerleşimini değiştirir ancak yüklü olmayan uygulamaları dağıtmaz.
+- **Giriş ekranındaki uygulamalar** - Kullanıcıların [iOS cihazlarının giriş ekranında](../configure-devices/home-screen-settings-for-ios.md) göreceği uygulamaları denetler. Bu ilke Ana ekran yerleşimini değiştirir ancak yüklü olmayan uygulamaları dağıtmaz.
 
-- **AirPrint cihazlarıyla bağlantı** - Bir iOS cihazı son kullanıcılarının bağlanabileceği [AirPrint cihazlarını](/intune-azure/configure-devices/air-print-settings-for-ios-and-macos) (ağ yazıcılarını) denetler.
+- **AirPrint cihazlarıyla bağlantı** - Bir iOS cihazı son kullanıcılarının bağlanabileceği [AirPrint cihazlarını](../configure-devices/air-print-settings-for-ios-and-macos.md) (ağ yazıcılarını) denetler.
 
-- **AirPlay cihazlarıyla bağlantı** - Bir iOS cihazı son kullanıcılarının bağlanabileceği [AirPlay cihazlarını](/intune-azure/configure-devices/airplay-settings-for-ios-devices) (Apple TV gibi) denetler.
+- **AirPlay cihazlarıyla bağlantı** - Bir iOS cihazı son kullanıcılarının bağlanabileceği [AirPlay cihazlarını](../configure-devices/airplay-settings-for-ios-devices.md) (Apple TV gibi) denetler.
 
-- **Özel kilit ekranı iletisi** - Kullanıcıların iOS cihazlarının kilit ekranında varsayılan kilit ekranı iletisi yerine göreceği özel bir ileti yapılandırır. Daha fazla bilgi için bkz. [Kullanılabilir cihaz eylemleri](/intune-azure/manage-devices/what-is#available-device-actions)
+- **Özel kilit ekranı iletisi** - Kullanıcıların iOS cihazlarının kilit ekranında varsayılan kilit ekranı iletisi yerine göreceği özel bir ileti yapılandırır. Daha fazla bilgi için bkz. [Kullanılabilir cihaz eylemleri](../manage-devices/what-is.md#available-device-actions)
 
 
 ### <a name="restrict-push-notifications-for-ios-apps----723767---"></a>iOS uygulamaları için anında iletme bildirimlerini kısıtlama <!-- 723767 -->
 
-Bir Intune cihaz kısıtlama profilinde iOS cihazlar için artık aşağıdaki [bildirim ayarlarını](/intune-azure/configure-devices/app-notification-settings-for-ios) yapılandırabilirsiniz:
+Bir Intune cihaz kısıtlama profilinde iOS cihazlar için artık aşağıdaki [bildirim ayarlarını](../configure-devices/app-notification-settings-for-ios.md) yapılandırabilirsiniz:
 
 - Belirli bir uygulama için bildirimleri tamamen açma veya kapatma.
 - Belirli bir uygulama için bildirim merkezindeki bildirimleri açma veya kapatma.
@@ -84,11 +90,11 @@ Bir Intune cihaz kısıtlama profilinde iOS cihazlar için artık aşağıdaki [
 
 ### <a name="configure-ios-apps-to-run-in-single-app-mode-autonomously----737837---"></a>iOS uygulamalarını otonom tek uygulama modunda çalışacak şekilde yapılandırma <!-- 737837 -->
 
-Bir Intune cihaz profili kullanarak belirtilen uygulamaları artık [otonom tek uygulama modunda](/intune-azure/configure-devices/device-restrictions-for-ios#autonomous-single-app-mode-supervised-only) çalışacak şekilde iOS cihazlarını yapılandırabilirsiniz. Bu mod yapılandırılıp uygulama çalıştırıldığında cihaz yalnızca belirtilen uygulamayı çalıştıracak şekilde kilitlenir. Buna örnek olarak kullanıcıların cihazda test çözmesini sağlayan bir uygulama verilebilir. Uygulamanın eylemleri tamamlandığında veya bu ilkeyi kaldırdığınızda cihaz normal durumuna geri döner.
+Bir Intune cihaz profili kullanarak belirtilen uygulamaları artık [otonom tek uygulama modunda](../configure-devices/device-restrictions-for-ios.md#autonomous-single-app-mode-supervised-only) çalışacak şekilde iOS cihazlarını yapılandırabilirsiniz. Bu mod yapılandırılıp uygulama çalıştırıldığında cihaz yalnızca belirtilen uygulamayı çalıştıracak şekilde kilitlenir. Buna örnek olarak kullanıcıların cihazda test çözmesini sağlayan bir uygulama verilebilir. Uygulamanın eylemleri tamamlandığında veya bu ilkeyi kaldırdığınızda cihaz normal durumuna geri döner.
 
 ### <a name="configure-trusted-domains-for-email-and-web-browsing-on-ios-devices----723765---"></a>iOS cihazlarda e-posta ve web üzerinde gezinme için güvenilen etki alanlarını yapılandırma <!-- 723765 -->
 
-Artık bir iOS cihaz kısıtlama profilinden aşağıdaki [etki alanı ayarlarını](/intune-azure/configure-devices/device-restrictions-for-ios#domains) yapılandırabilirsiniz:
+Artık bir iOS cihaz kısıtlama profilinden aşağıdaki [etki alanı ayarlarını](../configure-devices/device-restrictions-for-ios.md#domains) yapılandırabilirsiniz:
 
 - **İşaretlenmemiş e-posta etki alanları** - Son kullanıcı tarafından gönderilen veya alınan ve burada belirttiğiniz etki alanlarıyla eşleşmeyen e-postalar, güvenilmeyen olarak işaretlenir.
 
@@ -103,27 +109,27 @@ iOS toplu satın alınan (VPP) uygulamalarını son kullanıcılara artık **Kul
 
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Apple VPP Store'dan alınan eKitapları eşitleme <!-- 800878 -->
 
-Apple toplu satın alma programı mağazasından satın aldığınız kitapları Intune ile [eşitleyebilir](/intune-azure/manage-apps/ios-vpp-apps) ve kullanıcılara atayabilirsiniz.
+Apple toplu satın alma programı mağazasından satın aldığınız kitapları Intune ile [eşitleyebilir](../manage-apps/ios-vpp-apps.md) ve kullanıcılara atayabilirsiniz.
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Samsung KNOX Standard cihazları için birden çok kullanıcı yönetimi <!-- 971988 -->
 
-Samsung KNOX Standard çalıştıran cihazlarda artık Intune ile [birden çok kullanıcı yönetimi](/intune-azure/enroll-devices/enroll-android-and-knox-standard-devices) gerçekleştirilebilir. Başka bir deyişle kullanıcılar Azure Active Directory kimlik bilgilerini kullanarak cihazda oturum açıp kapatabilir ve cihaz kullanım durumundan bağımsız olarak merkezden yönetilir.  Oturum açan kullanıcılar kendilerine atanan uygulamalara ilkelere otomatik olarak erişir. Kullanıcılar oturumu kapattığında tüm veriler silinir.
+Samsung KNOX Standard çalıştıran cihazlarda artık Intune ile [birden çok kullanıcı yönetimi](../enroll-devices/enroll-android-and-knox-standard-devices.md) gerçekleştirilebilir. Başka bir deyişle kullanıcılar Azure Active Directory kimlik bilgilerini kullanarak cihazda oturum açıp kapatabilir ve cihaz kullanım durumundan bağımsız olarak merkezden yönetilir.  Oturum açan kullanıcılar kendilerine atanan uygulamalara ilkelere otomatik olarak erişir. Kullanıcılar oturumu kapattığında tüm veriler silinir.
 
 ### <a name="additional-windows-device-restriction-settings----818566---"></a>Ek Windows cihaz kısıtlama ayarları <!-- 818566 -->
 
-Ek Edge tarayıcısı desteği, cihaz kilit ekranı özelleştirmesi, başlat menüsü özelleştirmeleri, Windows Spot araması duvar kağıdı ve proxy ayarı gibi ek [Windows cihaz kısıtlama ayarları](/intune-azure/configure-devices/device-restrictions-for-windows-10) için destek ekledik.
+Ek Edge tarayıcısı desteği, cihaz kilit ekranı özelleştirmesi, başlat menüsü özelleştirmeleri, Windows Spot araması duvar kağıdı ve proxy ayarı gibi ek [Windows cihaz kısıtlama ayarları](../configure-devices/device-restrictions-for-windows-10.md) için destek ekledik.
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Windows 10 Creators Update için birden çok kullanıcı desteği <!-- 822547 -->
 
-Windows 10 Creators Update çalıştıran ve Azure Active Directory etki alanına katılmış olan cihazlar için [birden çok kullanıcı yönetimi](/intune-azure/enroll-devices/enroll-windows-devices) desteği ekledik. Bu destek sayesinde farklı standart kullanıcılar, Azure AD kimlik bilgilerini kullanarak cihazda oturum açtığında kullanıcı adlarına atanmış olan uygulamalara ve ilkelere erişecek. Kullanıcılar, uygulama yükleme gibi self servis senaryoları için Şirket Portalını şu anda kullanamaz.
+Windows 10 Creators Update çalıştıran ve Azure Active Directory etki alanına katılmış olan cihazlar için [birden çok kullanıcı yönetimi](../enroll-devices/enroll-windows-devices.md) desteği ekledik. Bu destek sayesinde farklı standart kullanıcılar, Azure AD kimlik bilgilerini kullanarak cihazda oturum açtığında kullanıcı adlarına atanmış olan uygulamalara ve ilkelere erişecek. Kullanıcılar, uygulama yükleme gibi self servis senaryoları için Şirket Portalını şu anda kullanamaz.
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 PC'ler Fresh Start<!-- 1004830 -->
 
-Windows 10 PC'ler için yeni bir [Fresh Start cihaz eylemi](/intune-azure/manage-devices/what-is#available-device-actions) artık kullanılabilir.  Bu eylemi düzenlediğinizde PC'ye önceden yüklenmiş olan uygulamalar kaldırılır ve PC otomatik olarak en son Windows sürümüne güncelleştirilir. Bu eylem genellikle yeni bir PC ile gelen önceden yüklü OEM uygulamalarının kaldırılmasına yardımcı olması için kullanılabilir. Bu cihaz eylemi düzenlendiğinde kullanıcı verilerinin tutulup tutulmayacağını yapılandırabilirsiniz.
+Windows 10 PC'ler için yeni bir [Fresh Start cihaz eylemi](../manage-devices/what-is.md#available-device-actions) artık kullanılabilir.  Bu eylemi düzenlediğinizde PC'ye önceden yüklenmiş olan uygulamalar kaldırılır ve PC otomatik olarak en son Windows sürümüne güncelleştirilir. Bu eylem genellikle yeni bir PC ile gelen önceden yüklü OEM uygulamalarının kaldırılmasına yardımcı olması için kullanılabilir. Bu cihaz eylemi düzenlendiğinde kullanıcı verilerinin tutulup tutulmayacağını yapılandırabilirsiniz.
 
 ### <a name="additional-windows-10-upgrade-paths----903672---"></a>Ek Windows 10 yükseltme yolları <!-- 903672 -->
 
-Artık, cihazları aşağıdaki ek Windows 10 sürümlerine yükseltmek için bir [sürüm yükseltme ilkesi](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade) oluşturabilirsiniz:
+Artık, cihazları aşağıdaki ek Windows 10 sürümlerine yükseltmek için bir [sürüm yükseltme ilkesi](../configure-devices/how-to-configure-windows-10-edition-upgrade.md) oluşturabilirsiniz:
 
 - Windows 10 Professional
 - Windows 10 Professional N
@@ -132,7 +138,7 @@ Artık, cihazları aşağıdaki ek Windows 10 sürümlerine yükseltmek için bi
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 cihazlarını toplu kaydetme <!-- 747607 -->
 
-Artık, Windows Yapılandırma Tasarımcısı (WCD) kullanarak Windows 10 Creators Update çalıştıran çok sayıda cihazın Azure Active Directory ve Intune’a katılmasını sağlayabilirsiniz. Azure AD kiracınız için [Toplu MDM kaydını](/intune-azure/enroll-devices/bulk-enroll-windows) etkinleştirmek için Windows Yapılandırma Tasarımcısı kullanarak cihazların Azure AD kiracınıza katılmasını sağlayan bir sağlama paketi oluşturun ve paketi toplu kaydetmek ve yönetmek istediğiniz şirkete ait cihazlara uygulayın. Paket cihazlarınıza uygulandıktan sonra cihazlar Azure AD'ye katılır, Intune'a kaydolur ve Azure AD kullanıcılarınızın oturum açmasına hazır hale gelir.  Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan ilkeleri ve gerekli uygulamaları alırlar. Self Servis ve Şirket Portalı senaryoları şu anda desteklenmiyor.
+Artık, Windows Yapılandırma Tasarımcısı (WCD) kullanarak Windows 10 Creators Update çalıştıran çok sayıda cihazın Azure Active Directory ve Intune’a katılmasını sağlayabilirsiniz. Azure AD kiracınız için [Toplu MDM kaydını](../enroll-devices/bulk-enroll-windows.md) etkinleştirmek için Windows Yapılandırma Tasarımcısı kullanarak cihazların Azure AD kiracınıza katılmasını sağlayan bir sağlama paketi oluşturun ve paketi toplu kaydetmek ve yönetmek istediğiniz şirkete ait cihazlara uygulayın. Paket cihazlarınıza uygulandıktan sonra cihazlar Azure AD'ye katılır, Intune'a kaydolur ve Azure AD kullanıcılarınızın oturum açmasına hazır hale gelir.  Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan ilkeleri ve gerekli uygulamaları alırlar. Self Servis ve Şirket Portalı senaryoları şu anda desteklenmiyor.
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>PIN ve yönetilen depolama konumları için yeni MAM ayarları <!-- 581122, 736644 -->
 
@@ -150,7 +156,7 @@ Mobil uygulama yönetimi (MAM) senaryolarında size yardımcı olacak iki yeni u
 
 ### <a name="help-desk-troubleshooting-portal----907448---"></a>Yardım masası sorun giderme portalı <!-- 907448 -->
 
-Yeni [sorun giderme portalı](/intune-azure/manage-users/help-desk), yardım masası operatörlerinin ve Intune yöneticilerinin, kullanıcıları ve cihazlarını görüntülemesine ve Intune teknik sorunlarını çözmek için görevler gerçekleştirmelerine izin verir.
+Yeni [sorun giderme portalı](../manage-users/help-desk.md), yardım masası operatörlerinin ve Intune yöneticilerinin, kullanıcıları ve cihazlarını görüntülemesine ve Intune teknik sorunlarını çözmek için görevler gerçekleştirmelerine izin verir.
 
 ## <a name="march-2017"></a>Mart 2017
 
@@ -162,7 +168,7 @@ Bir yönetici Kayıp Modu’nu devre dışı bırakmadıkça son kullanıcılar 
 
 Cihazın DEP aracılığıyla kaydedilen ve denetimli modda olan, şirkete ait bir iOS cihazı olması gerekir.
 
-Daha fazla bilgi için bkz. [Microsoft Intune cihaz yönetimi nedir](/intune-azure/manage-devices/what-is)?
+Daha fazla bilgi için bkz. [Microsoft Intune cihaz yönetimi nedir](../manage-devices/what-is.md)?
 
 ### <a name="improvements-to-device-actions-report---677150--"></a>Cihaz Eylemler raporu geliştirmeleri <!--677150-->
 
@@ -175,7 +181,7 @@ Performansı artırmak için Cihaz Eylemler raporunda geliştirmeler yaptık. Bu
 ### <a name="custom-app-categories---748805--"></a>Özel uygulama kategorileri <!--748805-->
 
 Artık Intune’a eklediğiniz uygulamalar için kategoriler oluşturabilir, düzenleyebilir ve atayabilirsiniz. Şu anda kategoriler yalnızca İngilizce olarak belirtilebilir.
-Bkz. [Intune'a uygulama ekleme](/intune-azure/manage-apps/add-apps).
+Bkz. [Intune'a uygulama ekleme](../manage-apps/add-apps.md).
 
 ### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>Kaydedilmemiş cihaz kullanıcılarına LOB uygulamaları atama <!--748823-->
 
@@ -211,34 +217,34 @@ Intune, katılmasına izin verilecek mobil cihaz platformlarını denetleyen yen
 * Mobil cihaz kaydının kısıtlanması, bilgisayar istemcisi kaydını etkilemez.  
 * Yalnızca iOS ve Android için kişisel cihazların kaydedilmesini engelleyen ek seçenek vardır.
 
-Intune, BT yöneticileri [bu makalede](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices) anlatılan şekilde kuruluş cihazı olarak işaretlemediği sürece tüm yeni cihazları kişisel cihaz olarak işaretler.
+Intune, BT yöneticileri [bu makalede](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices) anlatılan şekilde kuruluş cihazı olarak işaretlemediği sürece tüm yeni cihazları kişisel cihaz olarak işaretler.
 
 ### <a name="view-all-actions-on-managed-devices---677150--"></a>Yönetilen cihazlardaki tüm eylemleri görüntüleme <!--677150-->
-Yeni __Cihaz Eylemleri__ raporu cihazları fabrika ayarlarına sıfırlama gibi uzaktan gerçekleştirilen eylemleri kimin yaptığını ve ilgili eylemin durumunu göstermektedir. Bkz. [Cihaz yönetimi nedir?](https://docs.microsoft.com/intune-azure/manage-devices/what-is)
+Yeni __Cihaz Eylemleri__ raporu cihazları fabrika ayarlarına sıfırlama gibi uzaktan gerçekleştirilen eylemleri kimin yaptığını ve ilgili eylemin durumunu göstermektedir. Bkz. [Cihaz yönetimi nedir?](https://docs.microsoft.com../manage-devices/what-is.md)
 
 ### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Yönetilmeyen cihazlar atanmış uygulamalara erişebilir <!--664691-->
 Şirket Portalı web sitesinde yapılan tasarım değişikliklerinin bir parçası olarak iOS ve Android kullanıcılar yönetilmeyen cihazlarında kendilerine "kayıtsız kullanılabilir" olarak atanmış uygulamaları yükleyebilecek. Kullanıcılar Intune kimlik bilgilerini kullanarak Şirket Portalı web sitesine girebilecek ve kendilerine atanan uygulamaların listesini görebilecek. "Kayıtsız kullanılabilir" uygulamaların uygulama paketleri Şirket Portalı web sitesinden indirilebilir. Yükleme için kayıt gerektiren uygulamalar bu değişikten etkilenmeyecek ve bu uygulamaları yüklemek isteyen kullanıcılardan cihazlarını kaydetmeleri istenecektir.
 
 ### <a name="custom-app-categories---748805--"></a>Özel uygulama kategorileri <!--748805-->
 Artık Intune’a eklediğiniz uygulamalar için kategoriler oluşturabilir, düzenleyebilir ve atayabilirsiniz. Şu anda kategoriler yalnızca İngilizce olarak belirtilebilir.
-Bkz. [Intune'a uygulama ekleme](/intune-azure/manage-apps/add-apps).
+Bkz. [Intune'a uygulama ekleme](../manage-apps/add-apps.md).
 
 ### <a name="display-device-categories---814654--"></a>Cihaz kategorilerini görüntüleme <!--814654-->
-Artık cihaz kategorisini cihaz listesinde ayrı bir sütunda görüntüleyebilirsiniz. Kategoriyi ayrıca cihaz özellikleri dikey penceresinin özellikler bölümünden de düzenleyebilirsiniz. Bkz. [Intune'a uygulama ekleme](/intune-azure/manage-apps/add-apps).
+Artık cihaz kategorisini cihaz listesinde ayrı bir sütunda görüntüleyebilirsiniz. Kategoriyi ayrıca cihaz özellikleri dikey penceresinin özellikler bölümünden de düzenleyebilirsiniz. Bkz. [Intune'a uygulama ekleme](../manage-apps/add-apps.md).
 
 ### <a name="configure-windows-update-for-business-settings---776716--"></a>İşletmeler için Windows Update ayarlarını yapılandırma <!--776716-->
 
 Hizmet olarak Windows, Windows 10 güncelleştirmeleri sağlamanın yeni yoludur. Windows 10’dan itibaren tüm yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri de kapsayacaktır. Böylece, en son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın tamamen güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
 
-İşletmeler için Windows Update’i kullanarak güncelleştirme yönetimi deneyimini, cihaz grupları için tek tek güncelleştirmelerin onaylanması gerekmeyecek şekilde basitleştirebilirsiniz. Ortamlarınızdaki riski yönetmek amacıyla hala bir güncelleştirme dağıtım stratejisi yapılandırabilirsiniz. Böyle yaptığınızda Windows Update güncelleştirmelerin doğru zamanda yüklenmesini sağlayacaktır. Microsoft Intune, cihazlarda güncelleştirme ayarlarının yapılandırılabilmesini sağlar ve güncelleştirme yüklemelerini erteleme olanağı tanır. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. **Windows 10 güncelleştirme kademelerini** yapılandırmak ve yönetmek için Intune’u kullanın. Güncelleştirme kademesi, Windows 10 güncelleştirmelerinin ne zaman ve nasıl yükleneceğini yapılandıran bir dizi ayar içerir. Daha ayrıntılı bilgiler için bkz. [İşletmeler için Windows Update ayarlarını yapılandırma](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
+İşletmeler için Windows Update’i kullanarak güncelleştirme yönetimi deneyimini, cihaz grupları için tek tek güncelleştirmelerin onaylanması gerekmeyecek şekilde basitleştirebilirsiniz. Ortamlarınızdaki riski yönetmek amacıyla hala bir güncelleştirme dağıtım stratejisi yapılandırabilirsiniz. Böyle yaptığınızda Windows Update güncelleştirmelerin doğru zamanda yüklenmesini sağlayacaktır. Microsoft Intune, cihazlarda güncelleştirme ayarlarının yapılandırılabilmesini sağlar ve güncelleştirme yüklemelerini erteleme olanağı tanır. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. **Windows 10 güncelleştirme kademelerini** yapılandırmak ve yönetmek için Intune’u kullanın. Güncelleştirme kademesi, Windows 10 güncelleştirmelerinin ne zaman ve nasıl yükleneceğini yapılandıran bir dizi ayar içerir. Daha ayrıntılı bilgiler için bkz. [İşletmeler için Windows Update ayarlarını yapılandırma](../configure-devices/how-to-configure-windows-update-for-business.md).
 
 ## <a name="january-2017"></a>Ocak 2017
 
 ### <a name="assign-line-of-business-apps-whether-or-not-devices-are-enrolled---748823--"></a>Cihazlar kayıtlı olsa da olmasa da iş kolu uygulamaları atayın <!--748823-->
-Artık, cihazları Intune’a kayıtlı olsun ya da olmasın, kullanıcılara mağazadan iş kolu uygulamaları atayabilirsiniz. Kullanıcıların cihazları Intune’a kayıtlı değilse yüklemek için Şirket Portalı uygulaması yerine Şirket Portalı web sitesine gitmeleri gerekir. Bkz. [Uygulama yönetimi nedir](/intune-azure/manage-apps/what-is-app-management).
+Artık, cihazları Intune’a kayıtlı olsun ya da olmasın, kullanıcılara mağazadan iş kolu uygulamaları atayabilirsiniz. Kullanıcıların cihazları Intune’a kayıtlı değilse yüklemek için Şirket Portalı uygulaması yerine Şirket Portalı web sitesine gitmeleri gerekir. Bkz. [Uygulama yönetimi nedir](../manage-apps/what-is-app-management.md).
 
 ### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>iOS cihazlarının etkin olmaması veya yönetim konsolunun cihazlarla iletişim kuramaması sorununu çözme
-Kullanıcıların cihazları Intune ile iletişimi kaybettiğinde, şirket kaynaklarına yeniden erişmeleri için kullanıcılara yeni sorun giderme adımları verebilirsiniz. Bkz. [Cihazlar etkin değil veya yönetim konsolu cihazlarla iletişim kuramıyor](/intune-azure/enroll-devices/troubleshoot-device-enrollment#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+Kullanıcıların cihazları Intune ile iletişimi kaybettiğinde, şirket kaynaklarına yeniden erişmeleri için kullanıcılara yeni sorun giderme adımları verebilirsiniz. Bkz. [Cihazlar etkin değil veya yönetim konsolu cihazlarla iletişim kuramıyor](../enroll-devices/troubleshoot-device-enrollment.md#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
 
 ## <a name="december-2016-initial-release"></a>Aralık 2016 (ilk sürüm)
 

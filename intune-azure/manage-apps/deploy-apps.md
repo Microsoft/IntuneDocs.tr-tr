@@ -1,12 +1,12 @@
 ---
-title: "Uygulamaları gruplara ekleme"
+title: "Uygulamaları gruplara atama | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Intune’a uygulama eklediğinizde, bu uygulamayı kullanıcı veya cihaz gruplarına atamak istersiniz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 21ccb23023e9cb4f4b827887f8191ea73474c5de
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -38,7 +39,7 @@ Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uy
 |Sarmalanan uygulamaları veya Intune SDK’sında birleştirilmiş uygulamaları atama (uygulama koruma ilkeleri için)|Evet|Evet|
 |Uygulamaları Kullanılabilir olarak atama|Evet|Evet|
 |Uygulamalarını Gerekli olarak atama|Evet|Hayır|
-|Uygulamaları kaldırma|Evet|Evet|
+|Uygulamaları kaldırma|Evet|Hayır|
 |Son kullanıcıların Şirket Portalı uygulamasından kullanılabilir uygulamaları yüklemesi|Evet|Hayır|
 |Son kullanıcıların web tabanlı Şirket Portalı’ndan kullanılabilir uygulamaları yüklemesi|Evet|Evet|
 
@@ -53,21 +54,21 @@ Alt gruplar kavramının Azure AD'de mevcut olmaması bu konudaki en önemli hus
 ||||||
 |-|-|-|-|-|
 |**Intune Klasik (kiracı geçişinden önce)**|-|**Intune Azure (Kiracı geçişi tamamlandıktan sonra)**|-|**Daha fazla bilgi**|
-|**Üst grubu dağıtma hedefi**|**Alt grubu dağıtma hedefi**|**Önceki üst ve alt grup ortak üyeleri için ortaya çıkan atama hedefi**|**Üst grubun üyeleri için ortaya çıkan atama hedefi eylemi**|-|    
+|**Üst grup atama hedefi**|**Alt grup atama hedefi**|**Önceki üst ve alt grup ortak üyeleri için ortaya çıkan atama hedefi**|**Üst grubun üyeleri için ortaya çıkan atama hedefi eylemi**|-|    
 |Kullanılabilir|Gerekli|Gerekli ve Kullanılabilir|Kullanılabilir|Gerekli ve Kullanılabilir, gerekli olarak atanan uygulamaların Şirket Portalı uygulamasında da görülebildiği anlamına gelir.
-|Uygulanamaz|Kullanılabilir|Uygulanamaz|Uygulanamaz|Geçici çözüm: 'Uygulanamaz' dağıtım hedefini Intune üst grubundan kaldırın.
+|Uygulanamaz|Kullanılabilir|Uygulanamaz|Uygulanamaz|Geçici çözüm: 'Uygulanamaz' atama hedefini Intune üst grubundan kaldırın.
 |Gerekli|Kullanılabilir|Gerekli ve Kullanılabilir|Gerekli|-|
 |Gerekli ve Kullanılabilir<sup>1</sup>|Kullanılabilir|Gerekli ve Kullanılabilir|Gerekli ve Kullanılabilir|-|    
 |Gerekli|Uygulanamaz|Gerekli|Gerekli|-|    
 |Gerekli ve Kullanılabilir|Uygulanamaz|Gerekli ve Kullanılabilir|Gerekli ve Kullanılabilir|-|    
 |Gerekli|Kaldır|Gerekli|Gerekli|-|    
 |Gerekli ve Kullanılabilir|Kaldır|Gerekli ve Kullanılabilir|Gerekli ve Kullanılabilir|-|
-<sup>1</sup> Yalnızca yönetilen iOS mağazası uygulamaları söz konusu olduğunda, bunları Intune’a ekleyip Gerekli olarak dağıttığınızda, hem Gerekli, hem de Kullanılabilir hedefi ile otomatik olarak oluşturulurlar.
+<sup>1</sup> Yalnızca yönetilen iOS mağazası uygulamaları söz konusu olduğunda, bunları Intune’a ekleyip Gerekli olarak atadığınızda, hem Gerekli, hem de Kullanılabilir hedefi ile otomatik olarak oluşturulurlar.
 
-Dağıtım çakışmalarını önlemek için aşağıdaki eylemleri gerçekleştirebilirsiniz:
+Atama çakışmalarını önlemek için aşağıdaki eylemleri gerçekleştirebilirsiniz:
 
-1.    İlgili Intune üst ve alt gruplarına daha önce uygulamalar dağıttıysanız, kiracı geçişiniz başlamadan önce bu dağıtımları kaldırmayı düşünün.
-2.    Alt grupları üst gruplardan kaldırın ve eski alt grup üyelerini içeren yeni bir grup oluşturun. Daha sonra bu gruba yeni bir uygulama dağıtımı oluşturabilirsiniz.
+1.    İlgili Intune üst ve alt gruplara daha önce uygulama atadıysanız, kiracı geçişiniz başlamadan önce bu atamaları kaldırmayı düşünün.
+2.    Alt grupları üst gruplardan kaldırın ve eski alt grup üyelerini içeren yeni bir grup oluşturun. Daha sonra bu gruba yeni bir uygulama ataması oluşturabilirsiniz.
 Not: Önceki üst grup "Tüm Kullanıcılar" ise, alt grup üyelerini içermeyen yeni dinamik bir grup oluşturmanız gerekir.
 Kullanıcı ve cihaz grupları için gruplarda yapacağınız tüm değişiklikleri [Azure Portalı](https://portal.azure.com/)’nda yapmanız gerekir. [Klasik Azure Portalı](https://manage.windowsazure.com/) yalnızca kullanıcı gruplarınızda değişiklik yapmanıza izin verir.
 

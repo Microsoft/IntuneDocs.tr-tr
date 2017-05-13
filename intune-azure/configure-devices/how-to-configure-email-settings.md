@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: d5c84c5d3bc700985cc14dbd7eaae5a493cca064
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 37bfb7c9c35e5da5a346c822ed9d4252b5fff0e4
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -75,8 +76,8 @@ Bir cihazdan e-posta profilini kaldırmak isterseniz atamayı düzenleyin ve cih
 
 E-posta profillerinin güvenliği sağlamaya yardımcı olmak için iki yöntemden biri kullanabilirsiniz:
 
-1. **Sertifikalar** - E-posta profilini oluştururken, daha önce Intune’da oluşturduğunuz bir sertifika profilini seçersiniz. Bu, kimlik sertifikası olarak bilinir ve kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için güvenilir bir sertifika profiline (veya kök sertifikaya) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, e-posta bağlantısı kimliğini doğrulayan bilgisayara (genellikle yerel posta sunucusu) dağıtılır.
-Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [Intune ile sertifikaları yapılandırma](/intune-azure/configure-devices/how-to-configure-certificates).
+1. **Sertifikalar** - E-posta profilini oluştururken, daha önce Intune’da oluşturduğunuz bir sertifika profilini seçersiniz. Bu, kimlik sertifikası olarak bilinir ve kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için güvenilir bir sertifika profiline (veya kök sertifikaya) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, e-posta bağlantısı kimliğini doğrulayan bilgisayara (genellikle yerel posta sunucusu) atanır.
+Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [Intune ile sertifikaları yapılandırma](how-to-configure-certificates.md).
 2. **Kullanıcı adı ve parola** - Kullanıcı, kullanıcı adını ve parolasını sağlayarak yerel posta sunucusunda kimliğini doğrular.
 E-posta profilinde parola bulunmadığından, e-postaya bağlanırken kullanıcı tarafından belirtilmesi gerekir.
 

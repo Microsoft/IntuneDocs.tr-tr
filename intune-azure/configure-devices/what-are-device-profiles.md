@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune’da cihaz profilleri nelerdir?"
+title: "Microsoft Intune’da cihaz profilleri nelerdir? | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Intune cihaz profillerini ve bunların şirketinizdeki cihazların yönetilmesine ve korunmasına nasıl yardımcı olabileceğini öğrenin."
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,7 +38,7 @@ Bu iş yükünü açtığınızda aşağıdaki seçenekleri görürsünüz:
 
 ## <a name="getting-started"></a>Başlarken
 
-Cihaz profillerini oluşturma iş akışı, tüm profiller için benzer çalışır. Profilleri oluşturma hakkında bilgi için, [Microsoft Intune cihaz yapılandırma profillerini oluşturma](/intune-azure/configure-devices/how-to-create-device-profiles) konusunu okuyun. Sonra, her profil türünün ayarlarını oluşturma hakkındaki özel bilgileri okuyun.
+Cihaz profillerini oluşturma iş akışı, tüm profiller için benzer çalışır. Profilleri oluşturma hakkında bilgi için, [Microsoft Intune cihaz yapılandırma profillerini oluşturma](how-to-create-device-profiles.md) konusunu okuyun. Sonra, her profil türünün ayarlarını oluşturma hakkındaki özel bilgileri okuyun.
 
 Cihazlarınızda aşağıdaki özellikleri yönetebilirsiniz:
 
@@ -51,15 +52,15 @@ Cihaz kısıtlamaları; cihazlarda güvenlik, tarayıcı, donanım ve veri payla
 Daha fazla bilgi için [Cihaz kısıtlama ayarlarını yapılandırma](how-to-configure-device-restrictions.md) konusuna bakın. Android, iOS, macOS, Windows 10 ve Windows 10 Team’i destekler.
 
 ## <a name="email"></a>E-posta
-E-posta profilleri, yönettiğiniz cihazlarda Exchange ActiveSync e-posta ayarları oluşturmanıza, dağıtmanıza ve izlemenize olanak tanır. Bu ayarları dağıtarak tutarlılığı güvence altına alır, destek aramalarını azaltır ve son kullanıcıların herhangi bir kurulum yapmalarına gerek kalmadan kendi cihazlarında şirket e-postasına erişmelerini sağlarsınız.
+E-posta profilleri, yönettiğiniz cihazlarda Exchange ActiveSync e-posta ayarları oluşturmanıza, atamanıza ve izlemenize olanak tanır. Bu ayarları atayarak tutarlılığı güvence altına alır, destek aramalarını azaltır ve son kullanıcıların herhangi bir kurulum yapmalarına gerek kalmadan kendi cihazlarında şirket e-postasına erişmelerini sağlarsınız.
 Daha fazla bilgi için [E-posta ayarlarını yapılandırma](how-to-configure-email-settings.md) konusuna bakın. Android, iOS, Windows Phone 8.1 ve Windows 10’u destekler.
 
 ## <a name="wi-fi"></a>Wi-Fi
-Kablosuz ağ ayarlarını kuruluşunuzdaki kullanıcılara ve cihazlara dağıtmak için Wi-Fi profillerini kullanın. Bir Wi-Fi profili dağıttığınızda, kullanıcılarınız kurumsal Wi-Fi ağınıza ağı kendileri yapılandırmak zorunda kalmadan erişir.
+Kablosuz ağ ayarlarını kuruluşunuzdaki kullanıcılara ve cihazlara atamak için Wi-Fi profillerini kullanın. Bir Wi-Fi profili atadığınızda, kullanıcılarınız kurumsal Wi-Fi ağınıza ağı kendileri yapılandırmak zorunda kalmadan erişir.
 Daha fazla bilgi için [Wi-Fi ayarlarını yapılandırma](how-to-configure-wi-fi-settings.md) konusuna bakın. Android, iOS, macOS ve Windows 8.1’i (yalnızca içeri aktarma) destekler.
 
 ## <a name="vpn"></a>VPN
-Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için VPN profillerini kullanarak ağa kolay ve güvenli bir şekilde bağlanabilmelerini sağlayın.
+Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara atamak için VPN profillerini kullanarak ağa kolay ve güvenli bir şekilde bağlanabilmelerini sağlayın.
 Daha fazla bilgi için [VPN ayarlarını yapılandırma](how-to-configure-vpn-settings.md) konusuna bakın.
 Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 ve Windows 10’u destekler.
 

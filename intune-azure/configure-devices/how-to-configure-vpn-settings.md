@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 96756c4aa5afa52821614d5f7fbc6d0bca15895b
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: d44eec0cdfc2a7762a0f0ca62da4dacd0d083484
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için Microsoft Intune’da **VPN profilleri** kullanarak ağa kolay ve güvenli bir şekilde bağlanabilmelerini sağlayın.
+Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara atamak için Microsoft Intune’da **VPN profilleri** kullanarak ağa kolay ve güvenli bir şekilde bağlanabilmelerini sağlayın.
 
 Örneğin, tüm iOS cihazlara kurumsal ağ üzerindeki bir dosya paylaşımına bağlanmak için gereken ayarları sağlamak istediğinizi varsayın. Kurumsal ağa bağlanmak için gereken ayarları içeren bir VPN profili oluşturur ve ardından bu profili iOS cihazlarını kullanan tüm kullanıcılara atarsınız. Kullanıcılar VPN bağlantısını kullanılabilir ağlar listesinde görür ve ağa en az çaba ile bağlanabilir.
 
@@ -53,7 +54,7 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 
 
 > [!IMPORTANT]
-> Bir cihaza dağıtılan VPN profillerini kullanmadan önce profil için geçerli VPN uygulamasını yüklemeniz gerekir. Uygulamayı Intune kullanarak dağıtmanıza yardımcı olması için [Microsoft Intune'da uygulama yönetimi nedir](/intune-azure/manage-apps/what-is-app-management) konusunda verilen bilgileri kullanabilirsiniz.  
+> Bir cihaza atanan VPN profillerini kullanmadan önce profil için geçerli VPN uygulamasını yüklemeniz gerekir. Uygulamayı Intune kullanarak atamanıza yardımcı olması için [Microsoft Intune'da uygulama yönetimi nedir](../manage-apps/what-is-app-management.md) konusunda verilen bilgileri kullanabilirsiniz.  
 
 [Özel VPN profilleri oluşturma](create-custom-vpn-profiles.md) konu başlığı altında verilen URI ayarlarını kullanarak özel VPN profilleri oluşturmayı öğrenin.     
 
@@ -92,7 +93,7 @@ VPN profilleri, farklı üreticilerden farklı bağlantı türleri ve farklı pr
 
 ### <a name="certificates"></a>Sertifikalar
 
-VPN profilini oluştururken, Intune’da önceden oluşturduğunuz bir SCEP veya PKCS sertifika profilini seçersiniz. Bu kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için oluşturduğunuz bir güvenilir sertifika profiline (veya *kök sertifikaya*) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, VPN bağlantısının kimliğini doğrulayan bilgisayara dağıtılır. Bu, genellikle VPN sunucusudur.
+VPN profilini oluştururken, Intune’da önceden oluşturduğunuz bir SCEP veya PKCS sertifika profilini seçersiniz. Bu kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için oluşturduğunuz bir güvenilir sertifika profiline (veya *kök sertifikaya*) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, VPN bağlantısının kimliğini doğrulayan bilgisayara atanır. Bu, genellikle VPN sunucusudur.
 
 Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [Microsoft Intune ile sertifikaları yapılandırma](how-to-configure-certificates.md).
 

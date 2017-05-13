@@ -1,12 +1,12 @@
 ---
-title: "Intune uygulama yapılandırma ilkelerini kullanma"
+title: "Intune uygulama yapılandırma ilkelerini kullanma | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: iOS uygulaması çalıştırıldığında uygulamaya yapılandırma verilerini sağlamak için uygulama yapılandırma ilkelerini kullanmayı öğrenin."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 82af84bc3e31317023a2f8f7089431b1dbcaed52
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 847ddf08fdd7308475895af36f43c5391c9556fa
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -40,7 +41,7 @@ Bu ayarlar kullanıcılar tarafından hatalı girildiği takdirde, yardım masan
 
 Uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalıştırmadan önce bu ayarları bir ilke ile kullanıcılara atamanıza imkan vererek bu sorunları ortadan kaldırmanıza yardımcı olabilir. Daha sonra ayarlar otomatik olarak sağlanır ve kullanıcıların herhangi bir eylem yapması gerekmez.
 
-Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı dağıtırsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde (genellikle ilk çalıştırıldığında) kullanılır.
+Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde (genellikle ilk çalıştırıldığında) kullanılır.
 
 > [!TIP]
 > Bu ilke türü şu anda yalnızca iOS 8.0 ve üzeri sistemleri çalıştıran cihazlar için kullanılabilir. Aşağıdaki uygulama yükleme türlerini destekler:
@@ -48,7 +49,7 @@ Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, 
 > -   **Uygulama mağazasından yönetilen iOS uygulaması**
 > -   **iOS için uygulama paketi**
 >
-> Uygulama yükleme türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](/intune-azure/manage-apps/add-apps).
+> Uygulama yükleme türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](add-apps.md).
 
 ## <a name="create-an-app-configuration-policy"></a>Uygulama yapılandırma ilkesi oluşturma
 

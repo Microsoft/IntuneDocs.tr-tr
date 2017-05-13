@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Intune’a uygulama ekleme"
+title: "Microsoft Intune’a uygulama ekleme | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Bu yordamlar, uygulamalarınızı kullanıcılara ve cihazlara atanmaya hazır durumda Intune’a almanıza yardımcı olur. "
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 92fb84726846c1eb0fb44db1961a225922e9d9aa
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 529a3e91e1f86129de77df0529f48a42f86a6521
+ms.openlocfilehash: 69ae0926631edc00cc2dc12be559d366e1623140
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/11/2017
 
 ---
 
@@ -40,7 +41,9 @@ Intune aşağıdaki uygulama türlerini eklemenize ve atamanıza izin verir:
 - iOS iş kolu (LOB) uygulamaları
 - Web uygulamaları
 - Windows Phone 8.1 mağaza uygulamaları
+- Windows Phone iş kolu uygulamaları (.xap dosyaları)
 - Windows mağazası uygulamaları
+- Windows iş kolu uygulamaları (sadece .msi dosyaları)
 
 >[!TIP]
 > İş kolu (veya LOB) uygulaması, bir uygulama mağazasından değil uygulama yükleme dosyasından yüklediğiniz bir uygulamadır. Örneğin, bir iOS LOB uygulamasını yüklemek için uygulama arşiv dosyasını (.ipa uzantılı dosya) eklersiniz. Bunlar normal olarak şirket içinde yazdığınız uygulamalardır.
@@ -49,8 +52,8 @@ Intune aşağıdaki uygulama türlerini eklemenize ve atamanıza izin verir:
 
 Uygulamaları eklemeye ve atamaya başlamadan önce aşağıdaki noktaları göz önünde bulundurun.
 
-- Bir mağazadan uygulama eklediğinizde ve dağıttığınızda, son kullanıcıların uygulamayı yükleyebilmesi için o mağazada bir hesapları olması gerekir.
-- Dağıttınız uygulama veya öğelerden bazıları yerleşik iOS uygulamalarına bağlı olabilir. Örneğin, iOS mağazasından bir kitap dağıtırsanız cihazda iBooks uygulaması olmalıdır. Yerleşik iBooks uygulamasını kaldırdıysanız, yeniden devreye sokmak için Intune'u kullanamazsınız.
+- Bir mağazadan uygulama eklediğinizde ve atadığınızda, son kullanıcıların uygulamayı yükleyebilmesi için o mağazada bir hesapları olması gerekir.
+- Atadığınız uygulama veya öğelerden bazıları yerleşik iOS uygulamalarına bağlı olabilir. Örneğin, iOS mağazasından bir kitap atarsanız cihazda iBooks uygulaması olmalıdır. Yerleşik iBooks uygulamasını kaldırdıysanız, yeniden devreye sokmak için Intune'u kullanamazsınız.
 
 ## <a name="cloud-storage-space"></a>Bulut depolama alanı
 Yazılım yükleyicisi yükleme türünü kullanarak oluşturduğunuz tüm uygulamalar (örneğin, bir iş kolu uygulaması) paketlenir ve Intune bulut depolama alanına yüklenir. Intune deneme aboneliği, yönetilen uygulamaları ve güncelleştirmeleri depolamak için kullanılan 2 gigabayt (GB) bulut tabanlı depolama alanı içerir. Tam abonelik 20 GB depolama alanı içerir.
@@ -69,7 +72,7 @@ Uygulamayı Intune’a eklediğinizde, size istediğiniz kategoriyi belirtme se�
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
+3. **Intune** dikey penceresinde, **Mobil uygulamalar**’ı seçin.
 4. **Mobil uygulamalar** iş yükünde **Kurulum** > **Uygulama kategorileri**’ni seçin.
 5. **Uygulama kategorileri** dikey penceresinde geçerli kategorilerin listesi gösterilir. Aşağıdaki eylemlerden birini seçin:
     - **Kategori oluştur** - **Kategori oluştur** dikey penceresinde yeni kategori için bir ad girin. Adlar tek bir dilde girilebilir ve Intune tarafından bunların çevirisi yapılmaz. İşiniz bittiğinde **Oluştur**’a tıklayın.
@@ -111,10 +114,13 @@ Microsoft tarafından yayımlanan aşağıdaki uygulamalar, Intune’da yerleşi
 
 Her platform için Intune’a uygulamaların nasıl eklendiğini öğrenmek için aşağıdaki konulardan birini seçin:
 
-- [Android mağaza uygulamaları](/intune-azure/manage-apps/android-store-app)
-- [Android LOB uygulamaları](/intune-azure/manage-apps/android-lob-app)
-- [iOS Store uygulamaları](/intune-azure/manage-apps/ios-store-app)
-- [iOS LOB uygulamaları](/intune-azure/manage-apps/ios-lob-app)
-- [Web uygulamaları (tüm platformlar için)](/intune-azure/manage-apps/web-app)
-- [Windows Phone 8.1 mağaza uygulamaları](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Windows Mağazası uygulamaları](/intune-azure/manage-apps/windows-store-app)
+- [Android mağaza uygulamaları](android-store-app.md)
+- [Android LOB uygulamaları](android-lob-app.md)
+- [iOS Store uygulamaları](ios-store-app.md)
+- [iOS LOB uygulamaları](ios-lob-app.md)
+- [Web uygulamaları (tüm platformlar için)](web-app.md)
+- [Windows Phone 8.1 mağaza uygulamaları](windows-phone-8-1-store-app.md)
+- [Windows Phone LOB uygulamaları](windows-phone-line-of-business-app.md)
+- [Windows Mağazası uygulamaları](windows-store-app.md)
+- [Windows LOB uygulaması](windows-line-of-business-app.md)
+
