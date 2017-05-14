@@ -14,10 +14,11 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-SharePoint Online’da bulunan dosyalara erişimi denetlemek için [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] koşullu erişimini kullanın.
+SharePoint Online’da bulunan dosyalara erişimi denetlemek için Microsoft Intune koşullu erişimini kullanın.
 Koşullu erişim iki bileşenden oluşur:
 - Cihazın uyumlu kabul edilmesi için uyması gereken cihaz uyumluluk ilkesi.
 - Cihazın hizmete erişebilmek için uyması gereken koşulları sizin belirlediğiniz bir koşullu erişim ilkesi.
@@ -45,20 +46,20 @@ SharePoint Online için koşullu erişim ilkesini yapılandırmadan **önce**:
 
 
   Gerekli dosyalara bağlanmak için bir cihazın:
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’a **kaydedilmesi** veya etki alanına katılmış bir bilgisayar olması gerekir.
+-   Intune’a **kaydedilmesi** veya etki alanına katılmış bir bilgisayar olması gerekir.
 
--   Azure Active Directory’ye **kaydedilmiş** (cihaz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetine kaydedildiğinde bu otomatik olarak gerçekleşir) olması gerekir.
+-   Azure Active Directory’ye **kaydedilmiş** (cihaz Intune hizmetine kaydedildiğinde bu otomatik olarak gerçekleşir) olması gerekir.
 
 
--   Dağıtılan tüm [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uyumluluk ilkeleriyle **uyumlu** olması gerekir.
+-   Dağıtılmış tüm Intune uyumluluk ilkeleriyle **uyumlu** olmalıdır.
 
 Cihaz durumu, Azure Active Directory'de depolanır; bu durumda belirttiğiniz koşullara göre dosyalara erişim izni verilir veya erişim engellenir.
 
 Bir koşul karşılanmazsa, kullanıcı oturum açtığında şu iletilerden birini görür:
 
--   Cihaz, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedilmediyse veya Azure Active Directory'ye kayıtlı değilse Şirket Portalı uygulamasının nasıl yükleneceğine ve nasıl kayıt yapılacağına ilişkin yönergeleri içeren bir ileti görüntülenir.
+-   Cihaz, Intune ile kaydedilmediyse veya Azure Active Directory'ye kayıtlı değilse Şirket Portalı uygulamasının nasıl yükleneceğine ve nasıl kayıt yapılacağına ilişkin yönergeleri içeren bir ileti görüntülenir.
 
--   Cihaz uyumlu değilse, kullanıcıyı sorun ve sorunun nasıl çözüleceğiyle ilgili bilgileri bulabileceği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Şirket Portalı web sitesine yönlendiren bir ileti görüntülenir.
+-   Cihaz uyumlu değilse, kullanıcıyı sorun ve sorunun nasıl çözüleceğiyle ilgili bilgileri bulabileceği Intune Şirket Portalı web sitesine yönlendiren bir ileti görüntülenir.
 
 **Koşullu erişim şirket dışı paylaşım için geçerli değildir**. Kiracınız veya site koleksiyonunuz için şirket dışı paylaşımı nasıl engelleyeceğinizi öğrenmek için bkz. [SharePoint Online ortamınız için şirket dışı paylaşımı yönetme](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
@@ -115,7 +116,7 @@ Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 Bu işlemi gerçekleştirmediyseniz, bir uyumluluk ilkesi oluşturun ve bu ilkeyi SharePoint Online ilkesinde hedeflenen kullanıcılara dağıtın.
 
 > [!NOTE]
-> Uyumluluk ilkeleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
+> Uyumluluk ilkeleri Intune gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
 
 Uyumluluk ilkesini yapılandırma ayrıntıları için bkz. [Uyumluluk ilkesi oluşturma](create-a-device-compliance-policy-in-microsoft-intune.md).
 
@@ -152,11 +153,11 @@ Hazır olduğunuzda **3. Adım**’a geçin.
 
          Koşullu erişim ilkesi, belirttiğiniz platformlarda modern kimlik doğrulaması kullanan tüm istemci uygulamaları için geçerlidir.
 
-     Windows bilgisayarları için bir bilgisayar etki alanına katılmış veya [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedilmiş ve uyumlu olmalıdır. Aşağıdaki gereksinimleri ayarlayabilirsiniz:
+     Windows bilgisayarları için bir bilgisayar etki alanına katılmış veya Intune ile kaydedilmiş ve uyumlu olmalıdır. Aşağıdaki gereksinimleri ayarlayabilirsiniz:
 
-     -   **Cihazlar bir etki alanına katılmış veya uyumlu olmalıdır.** Bilgisayarların etki alanına katılmış veya [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile ayarlanan ilkelerle uyumlu olmasını gerekli hale getirmek için bu seçeneği belirtin. Bilgisayar bu gereksinimlerden birini karşılamıyorsa, kullanıcıdan cihazı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydetmesi istenir.
+     -   **Cihazlar bir etki alanına katılmış veya uyumlu olmalıdır.** Bilgisayarların etki alanına katılmış veya Intune ile ayarlanan ilkelerle uyumlu olmasını gerekli hale getirmek için bu seçeneği belirtin. Bilgisayar bu gereksinimlerden birini karşılamıyorsa, kullanıcıdan cihazı Intune ile kaydetmesi istenir.
 
-     -   **Cihazlar uyumlu olmalıdır.** Bilgisayarların [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedilmiş ve uyumlu olmasını zorunlu tutmak için bu seçeneği belirtin. Bilgisayar kayıtlı değilse, kaydetme yönergelerini içeren bir ileti görüntülenir.
+     -   **Cihazlar uyumlu olmalıdır.** Bilgisayarların Intune ile kaydedilmiş ve uyumlu olmasını zorunlu tutmak için bu seçeneği belirtin. Bilgisayar kayıtlı değilse, kaydetme yönergelerini içeren bir ileti görüntülenir.
 
 4.   SharePoint Online ve OneDrive İş’e **Tarayıcı erişimi** altında, Exchange Online’a yalnızca desteklenen tarayıcılar üzerinden erişime izin vermeyi seçebilirsiniz: Safari (iOS) ve Chrome (Android). Diğer tarayıcılardan erişim engellenir. OneDrive için Uygulama erişimi için seçtiğiniz platform kısıtlamaları burada da geçerli olur.
 

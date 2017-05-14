@@ -14,10 +14,11 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7901508dc482af55f0ef2296cf35576f09340fb0
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -75,10 +76,10 @@ Desteklenen Microsoft uygulamalarının tam listesini görmek için Microsoft In
 
 ## <a name="prerequisites"></a>Önkoşullar
 
--   **Microsoft Intune Aboneliği**. Kullanıcıların, uygulama koruma ilkeleri olan uygulamaları alabilmesi için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lisanslarına sahip olmaları gerekir.
-Şu anda cihazlarınızı yönetmek için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] kullanıyorsanız [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz zaten vardır. Ayrıca, bir Enterprise Mobility Suite (EMS) lisansı satın aldıysanız da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz vardır. MAM özelliklerini kullanıma almak için [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uygulamasını deniyorsanız [Microsoft Intune sayfasında](https://www.microsoft.com/server-cloud/products/microsoft-intune/) bir deneme hesabı alabilirsiniz.
+-   **Microsoft Intune Aboneliği**. Kullanıcıların, uygulama koruma ilkeleri olan uygulamaları alabilmesi için Intune lisanslarına sahip olmaları gerekir.
+Şu anda cihazlarınızı yönetmek için Intune kullanıyorsanız Intune aboneliğiniz zaten vardır. Ayrıca, bir Enterprise Mobility Suite (EMS) lisansı satın aldıysanız da Intune aboneliğiniz vardır. MAM özelliklerini kullanıma almak için Intune’u deniyorsanız [Microsoft Intune sayfasında](https://www.microsoft.com/server-cloud/products/microsoft-intune/) bir deneme hesabı alabilirsiniz.
 
-    [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] aboneliğiniz olduğunu doğrulamak için **Faturalama** sayfasına gidin.  Aboneliğiniz varsa, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] seçeneğini aboneliklerde **Etkin** olarak görmeniz gerekir.
+    Intune aboneliğiniz olduğunu doğrulamak için **Faturalama** sayfasına gidin.  Aboneliğiniz varsa, Intune seçeneğini aboneliklerde **Etkin** olarak görmeniz gerekir.
 
 -   Aşağıdakiler için gereken **bir Office 365 aboneliği**:
 

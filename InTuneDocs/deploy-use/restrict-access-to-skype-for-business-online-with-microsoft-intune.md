@@ -14,10 +14,11 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 5888ffa6f16e9a9807ce1f9a9eb0594ed31b5b18
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -47,18 +48,18 @@ Skype Kurumsal Çevrimiçi’ne erişmesi gereken cihaz:
 
 -   **Android** veya **iOS** cihazı olmalıdır.
 
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetine **kayıtlı** olmalıdır.
+-   Intune’a **kaydedilmiş** olmalıdır.
 
--   Dağıtılan tüm [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uyumluluk ilkelerine **uymalıdır**.
+-   Dağıtılmış tüm Intune uyumluluk ilkeleriyle **uyumlu** olmalıdır.
 
 
 Cihaz durumu, Azure Active Directory'de depolanır; bu durumda belirttiğiniz koşullara göre erişim izni verilir veya erişim engellenir.
 
 Bir koşul karşılanmazsa, oturum açtığında kullanıcıya şu iletilerden biri sunulur:
 
--   Cihaz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’a kaydedilmediyse veya Azure Active Directory'ye kayıtlı değilse, Şirket Portalı uygulamasının nasıl yükleneceğine ve nasıl kayıt yapılacağına ilişkin yönergeleri içeren bir ileti görüntülenir.
+-   Cihaz Intune’a kaydedilmediyse veya Azure Active Directory'ye kayıtlı değilse, Şirket Portalı uygulamasının nasıl yükleneceğine ve nasıl kayıt yapılacağına ilişkin yönergeleri içeren bir ileti görüntülenir.
 
--   Cihaz uyumlu değilse, kullanıcıyı sorunla ve sorunun nasıl çözüleceğiyle ilgili bilgileri bulabileceği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Şirket Portalı web sitesine veya Şirket Portalı uygulamasına yönlendiren bir ileti görüntülenir.
+-   Cihaz uyumlu değilse, kullanıcıyı sorunla ve sorunun nasıl çözüleceğiyle ilgili bilgileri bulabileceği Intune Şirket Portalı web sitesine veya Şirket Portalı uygulamasına yönlendiren bir ileti görüntülenir.
 
 ## <a name="configure-conditional-access-for-skype-for-business-online"></a>Skype Kurumsal Çevrimiçi için koşullu erişimi yapılandırma
 
@@ -77,7 +78,7 @@ Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 Bir uyumluluk ilkesi [oluşturun](create-a-device-compliance-policy-in-microsoft-intune.md) ve ilkeden etkilenecek olan tüm cihazlara [dağıtın](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md). Bunlar, **Hedeflenen gruplardaki** kullanıcılar tarafından kullanılan tüm cihazlar olacaktır.
 
 > [!NOTE]
-> Uyumluluk ilkeleri [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
+> Uyumluluk ilkeleri Intune gruplarına dağıtılırken, koşullu erişim ilkeleri Azure Active Directory güvenlik gruplarına dağıtılır.
 
 
 > [!IMPORTANT]

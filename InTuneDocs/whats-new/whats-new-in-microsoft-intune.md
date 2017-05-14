@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 0dc3fd3b4cc355bc95677ca648efdee07d1066b2
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: ed51f7ff7b6fd5a3234eb699234c6ad5fb3bdbc2
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -28,12 +29,6 @@ Microsoft Intune’un bu sürümündeki yenilikleri öğrenin. Planlama yapmanı
 > Bu özelliklerin tümü, sonunda karma müşteri dağıtımlarında (Intune ile Configuration Manager) desteklenecektir. Yeni karma özellikler hakkında daha fazla bilgi için, [Karma Yenilikler sayfamızı](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) gözden geçirin.
 
 ## <a name="new-capabilities"></a>Yeni özellikler
-
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Tüm platformlar için Şirket Portalı uygulamalarında gelişmiş oturum açma deneyimi <!--User Story 1132123-->
-
-Android, iOS ve Windows’a yönelik Intune Şirket Portalı uygulamaları için oturum açma deneyimini geliştiriyoruz. Yeni kullanıcı deneyimi, Azure AD bu değişikliği gerçekleştirdiğinde Şirket Portalına yönelik tüm platformlarda görünecektir. Ayrıca, kullanıcılar artık tek kullanımlık bir kod ile başka bir cihazdan Şirket Portalında oturum açabilir. Bu, özellikle kullanıcıların kimlik bilgileri olmadan oturum açması gerektiğinde faydalıdır.
-
-[Uygulamanın kullanıcı arabirimindeki yenilikler](whats-new-in-intune-app-ui.md) sayfasında, önceki oturum açma deneyiminin, kimlik bilgileriyle yeni oturum açma deneyiminin ve başka bir cihazdan yeni oturum açma deneyiminin ekran görüntülerini bulabilirsiniz.
 
 ### <a name="myapps-available-for-managed-browser---822308-822303--"></a>MyApps, Managed Browser ile kullanılabilir <!--822308, 822303-->
 
@@ -52,6 +47,21 @@ Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıc�
 ### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Uygulamaların SharePoint Online’a erişmesini engelleyin <!-- 679339 -->
 
 Uygulama koruma ilkelerinin uygulanmadığı uygulamaların [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online)’a erişmesini engellemek için artık uygulama tabanlı koşullu erişim ilkesi oluşturabilirsiniz. Uygulama tabanlı koşullu erişim senaryosunda, Azure portalını kullanarak SharePoint Online’a erişmesini istediğiniz uygulamaları belirtebilirsiniz.
+
+### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>iOS Şirket Portalından iOS için Outlook uygulamasına çoklu oturum açma desteği <!--834012-->
+Aynı cihazda aynı hesapla iOS için Şirket Portalı uygulamasında oturum açmış kullanıcıların artık Outlook uygulamasında oturum açmasına gerek yok. Kullanıcılar Outlook uygulamasını başlattıktan sonra hesaplarını seçip otomatik olarak oturum açabilecekler. Bu işlevi diğer Microsoft uygulamalarına da eklemek için çalışıyoruz.
+
+### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>iOS için Şirket Portalı uygulamasında geliştirilmiş durum iletileri <!--744866-->
+iOS için Şirket Portalı uygulamasında artık daha açıklayıcı hata iletileri görüntülenecek ve cihazlardaki gelişmeler hakkında daha açıklayıcı bilgiler verilecek. Bu hata durumları önceden "Şirket Portalı Geçici Olarak Devre Dışı" konulu genel bir hata iletisi içinde listeleniyordu. Ayrıca İnternet bağlantısı olmayan bir kullanıcı iOS üzerinde Şirket Portalı uygulamasını başlattığında ana sayfada "İnternet Bağlantısı Yok" yazan kalıcı bir durum çubuğu görecek.
+
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Geliştirilmiş Windows 10 Şirket Portalı uygulaması yükleme durumu <!--676495-->
+
+Windows 10 Şirket Portalı uygulamasında başlatılan uygulama yüklemelerine yönelik geliştirmeler şunları içerir:
+-    MSI paketleri için daha hızlı yükleme durumu raporlaması
+-    Windows 10 Yıldönümü Güncelleştirmesi ve üzerini çalıştıran cihazlardaki modern uygulamalar için daha hızlı yükleme durumu raporlaması
+-    Windows 10 Yıldönümü Güncelleştirmesi ve üzerini çalıştıran cihazlardaki modern uygulama yüklemeleri için yeni ilerleme çubuğu
+
+Yeni ilerleme çubuğunu [Intune uygulama arabirimindeki yenilikler sayfasında](whats-new-in-intune-app-ui.md) görebilirsiniz.
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 cihazlarını toplu kaydetme <!-- 747607 -->
 
@@ -79,7 +89,6 @@ Bu durum Intune PC aracısı üzerinden yönetilen mevcut cihazlarınızı etkil
 
 Yeni PC dağıtımları gerçekleştirmek istiyorsanız geçiş işleminden sonra appx'i PC appx'i olarak yeniden yüklemeniz gerekecek. Daha fazla bilgi için Intune Destek ekibi blog sayfasındaki [Azure'da Intune Appx'lerinde yapılan değişiklikler](https://aka.ms/appxchange) konusuna bakın.  
 
-
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure’da Intune yönetici deneyiminin genel önizlemesindeki yenilikler<!--736542-->
 
 2017 takvim yılının başlarında tam yönetici deneyimimizi Azure’a geçireceğiz. Bu sayede Grafik API’leri kullanılarak genişletilebilen modern bir hizmet platformunda çekirdek EMS iş akışlarının güçlü ve tümleşik yönetimi mümkün olacaktır.
@@ -95,8 +104,13 @@ Azure portalındaki yönetici deneyimi, duyurulan yeni gruplandırma ve hedeflem
 
 Klasik Intune portalında (Silverlight) kullanılan mevcut mobil uygulama yönetimi (MAM) yönetim rolleri (Katkıda bulunan, Sahibi ve Salt okunur) yerine Intune Azure portalında yeni rol tabanlı yönetim denetimleri (RBAC) geliyor. Azure portalına geçiş yaptıktan sonra, yöneticilerinizi bu yeni yönetim rollerine yeniden atamanız gerekiyor. RBAC ve yeni roller hakkında daha fazla bilgi için bkz. [Microsoft Intune için rol tabanlı erişim denetimi](/intune-azure/access-control/role-based-access-control).
 
-
 ## <a name="whats-coming"></a>Yakında
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Tüm platformlar için Şirket Portalı uygulamalarında gelişmiş oturum açma deneyimi <!--User Story 1132123-->
+
+Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum açma deneyimini geliştirecek bir değişikliği önümüzdeki birkaç ay içinde piyasaya süreceğiz. Yeni kullanıcı deneyimi, Azure AD bu değişikliği gerçekleştirdiğinde Şirket Portalına yönelik tüm platformlarda görünecektir. Ayrıca, kullanıcılar artık tek kullanımlık bir kod ile başka bir cihazdan Şirket Portalında oturum açabilir. Bu, özellikle kullanıcıların kimlik bilgileri olmadan oturum açması gerektiğinde faydalıdır.
+
+[Uygulamanın kullanıcı arabirimindeki yenilikler](whats-new-in-intune-app-ui.md) sayfasında, önceki oturum açma deneyiminin, kimlik bilgileriyle yeni oturum açma deneyiminin ve başka bir cihazdan yeni oturum açma deneyiminin ekran görüntülerini bulabilirsiniz.
 
 ### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Değişiklik planı: Intune, Intune İş Ortağı Portalı deneyimini değiştiriyor <!-- 1050016 -->
 
@@ -104,12 +118,14 @@ Klasik Intune portalında (Silverlight) kullanılan mevcut mobil uygulama yönet
 
 İş ortağı yöneticisiyseniz, artık Intune İş Ortağı sayfasında müşterileriniz adına görüntüleyemeyecek ve işlem yapamayacaksınız; bunun yerine Microsoft’taki diğer iki iş ortağı portalından birinde oturum açmanız gerekecektir.
 
-Hem [Microsoft İş Ortağı Merkezi](https://partnercenter.microsoft.com/) hem de [Microsoft Office 365 İş Ortağı Yönetim Merkezi](https://portal.office.com/), yönettiğiniz müşteri hesaplarında oturum açmanıza olanak tanıyacaktır. İş ortağı olarak ilerlemek için, lütfen müşterilerinizi bu sitelerimizden birini kullanarak yönetin. 
+Hem [Microsoft İş Ortağı Merkezi](https://partnercenter.microsoft.com/) hem de [Microsoft Office 365 İş Ortağı Yönetim Merkezi](https://portal.office.com/), yönettiğiniz müşteri hesaplarında oturum açmanıza olanak tanıyacaktır. İş ortağı olarak ilerlemek için, lütfen müşterilerinizi bu sitelerimizden birini kullanarak yönetin.
 
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->
 
-Apple, 2017 baharından itibaren, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayacağını açıkladı. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS Şirket Portalı uygulamaları kullanan Intune müşterilerini etkiler. Daha fazla ayrıntı için bkz. [Intune destek blogu](https://aka.ms/compportalats).
+Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayacağını açıkladı. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS Şirket Portalı uygulamaları kullanan Intune müşterilerini etkiler.
+
+Yeni ATS gereksinimlerinin kullanılmasını zorunlu kılan Apple TestFlight programı aracılığıyla iOS için Şirket Portalı uygulamasının yeni bir sürümünü kullanıma sunduk. ATS uyumluluğunuzu sınamak için bunu denemek isterseniz, adınızı, soyadınızı, e-posta adresinizi ve şirketinizin adını e-posta ile <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a> adresine gönderin. Daha fazla ayrıntı için bkz. [Intune destek blogu](https://aka.ms/compportalats).
 
 ### <a name="see-also"></a>Ayrıca bkz.
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)

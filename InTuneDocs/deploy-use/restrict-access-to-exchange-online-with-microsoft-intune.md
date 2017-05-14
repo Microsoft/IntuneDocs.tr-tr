@@ -14,10 +14,11 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -40,7 +41,7 @@ Koşullu erişimi yapılandırma şartları şunlardır:
 
 - **Enterprise Mobility + Security (EMS) aboneliğiniz** veya bir **Azure Active Directory (Azure AD) Premium aboneliğiniz** olmalıdır ve kullanıcılar EMS veya Azure AD lisansına sahip olmalıdır. Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/pricing/details/active-directory/).
 
--  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile Exchange Online’ı bağlayan ve [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] konsolu aracılığıyla cihaz bilgilerini yönetmenize yardımcı olan isteğe bağlı **Intune hizmetten hizmete bağlayıcısını** yapılandırmayı göz önünde bulundurmalısınız. Uyumluluk ilkeleri veya koşullu erişim ilkelerini kullanmak için bağlayıcıyı kullanmanıza gerek yoktur ancak koşullu erişimin etkisini değerlendirmeye yardımcı olan raporları çalıştırmak için bu gereklidir.
+-  Intune ile Exchange Online’ı bağlayan ve Intune konsolu aracılığıyla cihaz bilgilerini yönetmenize yardımcı olan isteğe bağlı **Intune hizmetten hizmete bağlayıcısını** yapılandırmayı göz önünde bulundurmalısınız. Uyumluluk ilkeleri veya koşullu erişim ilkelerini kullanmak için bağlayıcıyı kullanmanıza gerek yoktur ancak koşullu erişimin etkisini değerlendirmeye yardımcı olan raporları çalıştırmak için bu gereklidir.
     -  [Intune hizmetten hizmete bağlayıcısı](intune-service-to-service-exchange-connector.md) hakkında daha fazla bilgi edinin.
 
    > [!NOTE]
@@ -50,21 +51,21 @@ Koşullu erişimi yapılandırma şartları şunlardır:
 
 Koşullu biçimlendirme ilkeleri yapılandırdığınızda ve bunlarla bir kullanıcı hedeflediğinizde, kullanıcının e-postasına bağlanabilmesi için önce **cihazın** şu özellikleri taşıması gerekir:
 
--   Etki alanına katılmış bir bilgisayar veya [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile **kaydedilmiş** olması gerekir.
+-   Etki alanına katılmış bir bilgisayar veya Intune ile **kaydedilmiş** olması gerekir.
 
--  **Azure Active Directory’de kayıtlı olmalıdır**. Cihaz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]’a kaydedildiğinde bu otomatik olarak gerçekleşir. Buna ek olarak, istemci Exchange ActiveSync kimliği Azure Active Directory’de kayıtlı olmalıdır.
+-  **Azure Active Directory’de kayıtlı olmalıdır**. Cihaz Intune’a kaydedildiğinde bu otomatik olarak gerçekleşir. Buna ek olarak, istemci Exchange ActiveSync kimliği Azure Active Directory’de kayıtlı olmalıdır.
 
   Azure Active Directory Cihaz Kayıt hizmeti, Intune ve Office 365 müşterileri için otomatik olarak etkinleştirilir. ADFS Cihaz Kayıt hizmetini zaten dağıtan müşteriler, kayıtlı cihazlarını şirket içi Active Directory'de görmez.
 
--   Söz konusu cihaza dağıtılmış tüm [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] uyumluluk ilkeleriyle **uyumlu** olmalı veya şirket içi etki alanına katılmış olmalıdır.
+-   Söz konusu cihaza dağıtılmış tüm Intune uyumluluk ilkeleriyle **uyumlu** olmalı veya şirket içi etki alanına katılmış olmalıdır.
 
 ### <a name="when-the-device-is-not-compliant"></a>Cihaz uyumlu olmadığında
 
 Koşullu erişim ilkesine uyulmazsa, cihaz hemen karantinaya alınır; kullanıcı bir e-posta alır ve oturum açtığında aşağıdaki karantina bildirimlerinden birini görür:
 
-- Cihaz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydedilmediyse veya Azure Active Directory’de kayıtlı değilse Şirket Portalı uygulamasını yükleme, cihazı kaydetme ve e-postayı etkinleştirme yönergelerinin bulunduğu bir ileti görüntülenir. Bu işlem cihazın Exchange ActiveSync kimliğini de Azure Active Directory’deki kayıtla ilişkilendirir.
+- Cihaz Intune ile kaydedilmediyse veya Azure Active Directory’de kayıtlı değilse Şirket Portalı uygulamasını yükleme, cihazı kaydetme ve e-postayı etkinleştirme yönergelerinin bulunduğu bir ileti görüntülenir. Bu işlem cihazın Exchange ActiveSync kimliğini de Azure Active Directory’deki kayıtla ilişkilendirir.
 
--   Cihazın değerlendirmesinde uyumluluk ilkesi kurallarına uygun olmadığı bulunursa kullanıcı sorunla ve bu sorunu nasıl çözebileceğiyle ilgili bilgilere ulaşabileceği [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Şirket Portalı web sitesine veya Şirket Portalı uygulamasına yönlendirilir.
+-   Cihazın değerlendirmesinde uyumluluk ilkesi kurallarına uygun olmadığı bulunursa kullanıcı sorunla ve bu sorunu nasıl çözebileceğiyle ilgili bilgilere ulaşabileceği Intune Şirket Portalı web sitesine veya Şirket Portalı uygulamasına yönlendirilir.
 
 ### <a name="how-conditional-access-works-with-exchange-online"></a>Koşullu erişimin Exchange Online'da çalışma şekli
 
@@ -114,7 +115,7 @@ Aşağıdaki gereksinimleri karşılayan bilgisayarlar için **Exchange Online**
 
   Bilgisayar etki alanına katılmalı veya uyumluluk ilkesi kurallarına uygun olmalıdır.
 
-  Uyumlu olarak kabul edilmesi için, bilgisayarın [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ’da kayıtlı olması ve ilkelere uyması gerekir.
+  Uyumlu olarak kabul edilmesi için, bilgisayarın Intune’da kayıtlı olması ve ilkelere uyması gerekir.
 
   Etki alanına katılmış bilgisayarlarda, Azure Active Directory ile [cihazı otomatik olarak kaydetmek](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) için koşullu erişim ayarlamanız gerekir.
 
@@ -138,11 +139,11 @@ Koşullu erişim ilkesini alacak olan kullanıcı grupları için de uyumluluk i
 ### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>2 Adım: Koşullu erişim ilkesinin etkisini değerlendirme
 Koşullu erişim ilkesini yapılandırdıktan sonra Exchange’e erişimi engellenebilecek cihazları belirlemek üzere **Mobil Cihaz Envanter Raporları**’nı kullanabilirsiniz.
 
-Bunu yapmak için, [Microsoft Intune hizmetten hizmete bağlayıcısını](intune-service-to-service-exchange-connector.md) kullanarak [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile Exchange arasında bir bağlantı yapılandırın.
+Bunu yapmak için, [Microsoft Intune hizmetten hizmete bağlayıcısını](intune-service-to-service-exchange-connector.md) kullanarak Intune ile Exchange arasında bir bağlantı yapılandırın.
 1.  **Raporlar** > **Mobil Cihaz Envanter Raporları** öğesine gidin.
 ![Mobil Cihaz Envanter Raporları sayfasının ekran görüntüsü](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
-2.  Rapor parametrelerinde, değerlendirmek istediğiniz [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] grubunu ve gerekirse ilkenin geçerli olacağı cihaz platformlarını seçin.
+2.  Rapor parametrelerinde, değerlendirmek istediğiniz Intune grubunu ve gerekirse ilkenin geçerli olacağı cihaz platformlarını seçin.
 3.  Kuruluşunuzun gereksinimlerini karşılayan ölçütleri seçtikten sonra **Raporu Görüntüle**’yi seçin.
 Rapor Görüntüleyicisi yeni bir pencerede açılır.
 ![Örnek mobil cihaz envanter raporunun ekran görüntüsü](../media/IntuneSA2cViewReport.PNG)
@@ -200,7 +201,7 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
     > [!NOTE]
     > Uyumluluk ilkesi dağıtmadıysanız cihazlar uyumlu olarak kabul edilir.
     >
-    > Uyumluluk durumuna bakılmaksızın, ilke tarafından hedeflenen tüm kullanıcıların cihazlarını [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hizmetine kaydetmeleri gerekir.
+    > Uyumluluk durumuna bakılmaksızın, ilke tarafından hedeflenen tüm kullanıcıların cihazlarını Intune hizmetine kaydetmeleri gerekir.
 
 3.  **Uygulama erişimi**’nin altında, modern kimlik doğrulaması kullanan uygulamalar için ilkenin hangi platformlara uygulanacağını seçmenizin iki yolu vardır. Desteklenen platformlar Android, iOS, Windows ve Windows Phone’dur.
 
@@ -257,7 +258,7 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
 -   Kullanıcı bir e-posta hesabı oluşturduktan sonra cihaz hemen engellenir.
 
--   Engellenen bir kullanıcı, cihazı [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ile kaydeder ve uyumsuzluk sorunlarını çözerse iki dakika içinde e-posta erişiminin engeli kaldırılır.
+-   Engellenen bir kullanıcı, cihazı Intune ile kaydeder ve uyumsuzluk sorunlarını çözerse iki dakika içinde e-posta erişiminin engeli kaldırılır.
 
 -   Kullanıcı cihazının kaydını kaldırırsa yaklaşık altı saat sonra e-posta engellenir.
 
@@ -267,7 +268,7 @@ Yalnızca koşullu erişim ilkesi tarafından hedeflenen gruplar değerlendirmey
 
 #### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Exchange’e erişimi engellenmiş cihazları görüntülemek için
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] panosunda, engellenen cihazların sayısını ve daha fazla bilgiye ulaşmanızı sağlayan bağlantıları göstermek için **Exchange’e Erişimi Engellenmiş Cihazlar** kutucuğunu seçin.
+Intune panosunda, engellenen cihazların sayısını ve daha fazla bilgiye ulaşmanızı sağlayan bağlantıları göstermek için **Exchange’e Erişimi Engellenmiş Cihazlar** kutucuğunu seçin.
 ![Exchange’e erişimi engellenmiş cihazların sayısını gösteren Intune panosunun ekran görüntüsü](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Sonraki adımlar

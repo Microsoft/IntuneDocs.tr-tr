@@ -1,5 +1,5 @@
 ---
-title: "Android for Work için Intune cihaz kısıtlama ayarları"
+title: "Android for Work için Intune cihaz kısıtlama ayarları | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Android for Work cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 03fec9d22e705ccb27f4eb1f8f82c7ace95e841e
-ms.openlocfilehash: c5cff131e7bcedadbad42fe6ab8bf00017f933ff
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: be6303f2db508c2aca9ba9a40fcd43278f83c045
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -62,9 +63,9 @@ ms.lasthandoff: 04/26/2017
 - **Akıllı Kilit ve diğer güven aracıları** - Uyumlu cihazlarda Akıllı Kilit özelliğini denetlemenize olanak tanır. Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken (örneğin, belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda) cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Bu ayarı, kullanıcıların Akıllı Kilit’i yapılandırmasını önlemek için kullanabilirsiniz.
 
 ## <a name="custom-policy-settings"></a>Özel ilke ayarları
-Android for Work cihazlardaki özellikleri denetlemek için kullanılabilen OMA-URI ayarlarını dağıtmak için Microsoft Intune **Android for Work özel yapılandırma ilkesini** kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
+Android for Work cihazlardaki özellikleri denetlemek için kullanılabilen OMA-URI ayarlarını atamak için Microsoft Intune **Android for Work özel yapılandırma ilkesini** kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
 
-Bu özellik, Intune ilkeleri ile yapılandırılabilir olmayan Android ayarlarını dağıtmanıza olanak sağlamak için tasarlanmıştır.
+Bu özellik, Intune ilkeleri ile yapılandırılamayan Android ayarlarını atamanıza olanak sağlamak için tasarlanmıştır.
 Intune, şu anda sınırlı sayıda Android özel ilkesi destekler. Hangi ilkeleri yapılandırabileceğinizi öğrenmek için bu konu başlığındaki örneklere bakın.
 
 ### <a name="general-settings"></a>Genel ayarlar

@@ -1,12 +1,12 @@
 ---
-title: "Uygulama yönetimi nedir?"
+title: "Uygulama yönetimi nedir? | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: Microsoft Intune’la uygulama yönetimi hakkındaki temel bilgileri edinmek için bu konuyu kullanın"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 33def827fc7417930338e56c650d01df4dad85fb
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -46,6 +47,7 @@ Intune, ihtiyacınız olan uygulamaları istediğiniz cihazlara almanıza yardı
 |Cihazlara ve kullanıcılara uygulamaları ekleme ve atama|Evet|Evet|Evet|Evet|
 |Intune’a kayıtlı olmayan cihazlara uygulamaları atama|Evet|Evet|Hayır|Hayır|
 |Uygulamaların başlangıç davranışını denetlemek için uygulama yapılandırma ilkelerini kullanma|Hayır|Evet|Hayır|Hayır|
+|Süresi dolan uygulamaları yenilemek için mobil uygulama sağlama ilkeleri kullanma|Hayır|Evet|Hayır|Hayır|
 |Uygulama koruma ilkeleriyle uygulamalardaki şirket verilerini koruma|Evet|Evet|Hayır|Hayır<sup>1</sup>|
 |Yüklü uygulamadan yalnızca şirket verilerini kaldırma (Uygulama seçmeli silme)|Evet|Evet|Evet|Evet|
 |Uygulama atamalarını izleme|Evet|Evet|Evet|Evet|
@@ -68,7 +70,7 @@ Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygu
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
+3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
 
     ![Mobil Uygulamalar iş yükü](./media/apps-workload.png)
 
@@ -77,19 +79,21 @@ Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygu
     - [Uygulamaları ekleme](add-apps.md)
     - [Uygulamaları atama](deploy-apps.md)
     - [Uygulamaları izleme](monitor-apps.md)
-- **Lisanslı Uygulamalar** - Uygulama mağazalarından toplu satın alınan uygulamaları görüntüleyin, dağıtın ve izleyin.
-    - [İş İçin Windows Mağazası’ndan toplu satın alınan uygulamalar](wsfb-apps.md)
-- **Uygulama Yapılandırma İlkeleri** - Uygulanma yapılandırma ilkeleri, kullanıcı bir uygulama çalıştırdığında gerekebilecek ayarları sağlamanıza olanak tanır. Ayrıntılar için bkz.
+- **Uygulama yapılandırma ilkeleri** - Uygulama yapılandırma ilkeleri, kullanıcı bir uygulama çalıştırdığında gerekebilecek ayarları sağlamanıza olanak tanır. Ayrıntılar için bkz.
     - [Uygulama yapılandırma ilkeleri](app-configuration-policies.md)
-- **Uygulama Koruma İlkeleri** - Uygulamanın kullandığı şirket verilerini korumaya yardımcı olması için ayarları uygulamayla ilişkilendirmenizi sağlar. Örneğin, bir uygulamanın diğer uygulamalarla iletişim kurma özelliklerini kısıtlayabilir veya kullanıcının şirket uygulamasına erişmek için PIN girmesini isteyebilirsiniz.
+- **Uygulama koruma ilkeleri** - Uygulamanın kullandığı şirket verilerini korumaya yardımcı olması için ayarları uygulamayla ilişkilendirmenizi sağlar. Örneğin, bir uygulamanın diğer uygulamalarla iletişim kurma özelliklerini kısıtlayabilir veya kullanıcının şirket uygulamasına erişmek için PIN girmesini isteyebilirsiniz.
     - [Uygulama koruma ilkeleri](app-protection-policies.md)
-- **Uygulama Seçmeli Silme** - Seçtiğiniz kullanıcının cihazından yalnızca şirket verilerini kaldırın.
+- **Uygulama seçmeli silme** - Seçtiğiniz kullanıcının cihazından yalnızca şirket verilerini kaldırın.
     - [Uygulama seçmeli silme](app-selective-wipe.md)
+- **iOS sağlama profilleri** - iOS uygulamaları, bir sağlama profili ve bir sertifika tarafından imzalanmış kod içerir. Sertifikanın süresi dolduğunda, uygulama artık çalıştırılamaz. Intune size süresi dolmak üzere olan uygulamaların bulunduğu cihazlara yeni sağlama profili ilkesini önceden atamak için araçlar verir.
+    - [iOS uygulama sağlama profilleri](ios-app-provisioning-profile.md)
 
 ### <a name="monitor"></a>İzle
+- **Lisanslı Uygulamalar** - Uygulama mağazalarından toplu satın alınan uygulamaları görüntüleyin, atayın ve izleyin.
+    - [İş İçin Windows Mağazası’ndan toplu satın alınan uygulamalar](wsfb-apps.md)
 - **Bulunan Uygulamalar** - Intune tarafından atanan ve bir cihaza yüklenen tüm uygulamaları gösterir.
 - **Uygulama Yükleme Durumu** - Oluşturduğunuz uygulama atamasının durumunu gösterir.
-- **Uygulama Koruma Kullanıcı Durumu** - Seçtiğiniz kullanıcı için uygulama koruma ilkesinin durumunu gösterir.
+- **Uygulama koruma durumu** - Seçtiğiniz kullanıcı için uygulama koruma ilkesinin durumunu gösterir.
 
 Ayrıntılar için bkz. [Uygulamaları izleme](monitor-apps.md)
 
@@ -98,6 +102,6 @@ Ayrıntılar için bkz. [Uygulamaları izleme](monitor-apps.md)
     - [iOS volume-purchased apps](ios-vpp-apps.md) --->
 - **İş İçin Windows Mağazası** - İş İçin Windows Mağazası’na tümleştirmeyi kurun. Bunu yaptıktan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz. 
     - [İş İçin Windows Mağazası’ndan toplu satın alınan uygulamalar](wsfb-apps.md)
-- **Şirket Portalı Markası** - Şirket Portalı’nı özelleştirerek şirketinizin markasını ekleyin. 
+- **Şirket Portalı markası** - Şirket Portalı’nı özelleştirerek şirketinizin markasını ekleyin. 
     - [Şirket portalı yapılandırması](company-portal-app.md)
 

@@ -14,9 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: a9780dd3a951cc074a38061bf67aa5485c1eab68
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -62,9 +64,9 @@ Intune Uygulama SDK'sı Xamarin Bileşeni ile derlenen Xamarin uygulamaları art
 
 2. Microsoft Intune MAM Xamarin Bileşeni [lisans koşullarını](https://components.xamarin.com/license/microsoft.intune.mam) okuyun.
 
-3.    Intune Uygulama SDK'sı Xamarin Bileşeni klasörünü [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) veya [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam)'den indirin ve ayıklayın. 1. ve 2. adımlarda indirdiğiniz dosyaların aynı dizin düzeyinde olması gerekir.
+3.    Intune Uygulama SDK'sı Xamarin Bileşeni klasörünü [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) veya [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam)'den indirin ve ayıklayın. 1. ve 3. adımlarda indirdiğiniz dosyaların aynı dizin düzeyinde olması gerekir.
 
-4.    Komut satırında yönetici olarak `Xamain.Component.exe install <.xam> file` komutunu çalıştırın.
+4.    Komut satırında yönetici olarak `Xamarin.Component.exe install <.xam> file` komutunu çalıştırın.
 
 5.    Visual Studio'da önceden oluşturduğunuz Xamarin projesinde **bileşenler** öğesine sağ tıklayın.
 
@@ -123,9 +125,4 @@ Xamarin.Forms ve diğer UI çerçeveleri için `MAM.Remapper` adında bir araç 
 ## <a name="test-your-app"></a>Uygulamanızı test etme
 
 Bileşeni uygulamanıza eklemek için temel adımları tamamladınız. Şimdi Xamarin Android örnek uygulamasındaki adımları uygulayabilirsiniz. Biri Xamarin.Forms, diğeri Android için olmak üzere iki örnek sağladık.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

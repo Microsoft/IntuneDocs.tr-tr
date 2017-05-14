@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
-ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
-ms.lasthandoff: 02/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 2801d6a3cc672fbf91f89d2586c36b6bd3f18490
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -163,7 +164,7 @@ iOS 8.0 ve üzeri cihazlar için isteğe bağlı VPN yapılandırabilirsiniz.
 1. İlke yapılandırma sayfasında **Bu VPN bağlantısı için isteğe bağlı kurallarını** bulun. Sütunlar, kuralların denetlediği koşul olan **Eşleşme** ve koşul eşleştiğinde ilkenin tetikleyeceği **Eylem** olarak etiketlidir.
 2. Kural oluşturmak için **Ekle**’yi seçin. Kuralda ayarlayabileceğiniz iki tür eşleşme vardır. Kural başına bunlardan yalnızca birini yapılandırabilirsiniz.
   - **SSIDs**, kablosuz ağları anlatır.
-  - **DNS arama etki alanları**, ...  *team. corp.contoso.com* gibi tam etki alanı adlarını veya *.contoso.com** kullanımı ile eşit olan *contoso.com* gibi etki alanlarını kullanabilirsiniz.
+  - **DNS arama etki alanları**, *team. corp.contoso.com* gibi tam etki alanı adlarını veya * *.contoso.com* kullanımı ile eşit olan *contoso.com* gibi etki alanlarını kullanabilirsiniz.
 3. İsteğe bağlı: kuralın deneme olarak kullandığı bir URL olan bir URL dize araştırmasını girin. Bu profilin yüklü olduğu cihaz bu URL’ye yeniden yönlendirmesiz erişebiliyorsa, VPN oluşturulur ve cihaz hedef URL’ye bağlanır. Kullanıcı, URL araştırma dizesi sitesini görmez. URL araştırma dizesine örnek, VPN’i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusunun adresidir. Başka bir seçenek de URL’nin, cihazı VPN aracılığıyla hedef URL’ye bağlamadan önce VPN’in bir siteye bağlanma yeteneğini test etmesidir.
 4. Aşağıdaki eylemlerden birini seçin:
   - **Bağlanma**
