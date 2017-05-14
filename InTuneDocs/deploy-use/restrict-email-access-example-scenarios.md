@@ -14,9 +14,11 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>1. Senaryo: Kullanıcıların Exchange Online’a erişmek için uyumsuz cihazlar kullanmasını engelleyin
 ### <a name="scenario-requirements"></a>Senaryo gereksinimleri
 - **Muhasebe** Azure Active Directory güvenlik grubundaki tüm kullanıcıların, cihazlarının dağıttığınız bir uyumluluk ilkesiyle uyumlu olmaması durumunda Exchange Online’a erişimi engellenmelidir.
-- Bu grupta cihazları [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] tarafından desteklenmeyen kullanıcılar varsa, bu kullanıcıların da o cihazda Exchange Online’a erişimi engellenmelidir.
+- Bu grupta cihazları Intune tarafından desteklenmeyen kullanıcılar varsa, bu kullanıcıların da o cihazda Exchange Online’a erişimi engellenmelidir.
 - **Finans** Azure Active Directory güvenlik grubundaki tüm kullanıcılar, **Muhasebe** güvenlik grubunda da olsalar ilkeden muaf tutulmalıdır.
 
 Bunu başarmak için, Exchange Online için aşağıdaki ayarlarla bir koşullu erişim ilkesi yapılandırın:
@@ -68,7 +70,7 @@ Hangi cihazların Exchange’e erişebileceğine karar vermek için aşağıdaki
 ## <a name="scenario-3-no-android-devices-can-access-exchange-on-premises"></a>3. Senaryo: Hiçbir Android cihazı Şirket İçi Exchange’e erişemez
 ### <a name="scenario-requirements"></a>Senaryo gereksinimleri
 - Tüm Android cihazlarının Exchange’e erişimi engellenmelidir.
-- Desteklenen diğer tüm cihazlar, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] tarafından yönetildikleri sürece Exchange’e erişebilir.
+- Desteklenen diğer tüm cihazlar, Intune tarafından yönetildikleri sürece Exchange’e erişebilir.
 
 Bunu başarmak için, Şirket İçi Exchange için aşağıdaki ayarlarla bir koşullu erişim ilkesi yapılandırın:
 
@@ -82,9 +84,4 @@ Bunu başarmak için, Şirket İçi Exchange için aşağıdaki ayarlarla bir ko
 Hangi cihazların Exchange’e erişebileceğine karar vermek için aşağıdaki akışı kullanırsınız:
 
 ![Cihaz erişim akışı](./media/ConditionalAccess8-4.png)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

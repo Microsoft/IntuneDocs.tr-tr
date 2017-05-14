@@ -14,10 +14,11 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 3794981387e73176152c212854a97b4333023f5d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 9466a2ca94ea556037c2fdd7fee88b87eed88685
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -82,7 +83,7 @@ Kullanıcıların Şirket Portalı’nda yerine getirebilecekleri görevlerden b
     |----------|----------------|
     |Tema rengi|Şirket Portalı’na uygulamak için bir tema rengi seçin.|
     |Şirket logosunu ekle|Bu seçeneği etkinleştirdiğinizde, Şirket Portalınızda görüntülemek için şirket logonuzu yükleyebilirsiniz. İki logo yükleyebilirsiniz: birisi Şirket Portalı’nın arka planı beyaz olduğunda, diğeriyse Şirket Portalı arka planında seçilen Tema rengi kullanıldığında görüntülenir. Her logo .png veya .jpg dosya türünde olmalı, en yüksek çözünürlüğü 400 x 100 piksel olmalı ve boyutu 750 KB veya daha az olmalıdır.|
-    |[!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] Şirket Portalı uygulaması için bir arka plan seçin|Bu ayar yalnızca [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] Şirket Portalı uygulamasını etkiler.|
+    |Windows 8 Şirket Portalı uygulaması için bir arka plan seçin|Bu ayar yalnızca Windows 8 Şirket Portalı uygulamasının arka planını etkiler.|
 
 
 Değişiklikleri kaydettikten sonra, Şirket Portalı web sitesini görüntülemek için yönetici konsolunun **Şirket Portalı** sayfasının sonunda sağlanan bağlantıları kullanabilirsiniz. Bu bağlantılar değiştirilemez. Bir kullanıcı oturum açtığında bu bağlantılar Şirket Portalı’ndaki aboneliklerinizi görüntüler.

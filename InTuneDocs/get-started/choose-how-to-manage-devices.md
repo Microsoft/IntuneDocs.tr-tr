@@ -14,10 +14,11 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
-ms.lasthandoff: 12/20/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 0ec828e881182dc0e0fb3bae671f0aec58f52aad
+ms.contentlocale: tr-tr
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +48,7 @@ Tam işlevsellik için Windows bilgisayarları kaydedin. Ancak, Intune yazılım
 - Endpoint Protection ve Windows Güvenlik Duvarı
 - TeamViewer yazılımını kullanan kullanıcılara uzaktan yardım
 
-Her yöntem ile elde edeceğiniz yönetim özelliklerinin ayrıntılı bir listesi için bkz. [Mobil cihaz yönetim özellikleri](mobile-device-management-capabilities-in-microsoft-intune.md) ve [Intune PC yazılım istemcisi özellikleri](windows-pc-management-capabilities-in-microsoft-intune.md).
+Her yöntem ile elde edeceğiniz yönetim özelliklerinin ayrıntılı bir listesi için bkz. [Mobil cihaz yönetim özellikleri](mobile-device-management-capabilities-in-microsoft-intune.md) ve [Intune PC yazılım istemcisi ile Windows PC’leri yönetme](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
 Intune’un desteklediği cihazlar ve bilgisayarlar hakkında bilgi için bkz. [Desteklenen mobil cihazlar ve bilgisayarlar](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 ## <a name="next-steps"></a>Sonraki adımlar

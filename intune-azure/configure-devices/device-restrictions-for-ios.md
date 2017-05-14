@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68738f25393eec006a8bc7a78412669859f91c27
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -123,7 +124,7 @@ Uygulamalar listesinde bir uygulama URL'si belirtmek için aşağıdaki biçimi 
 
 Bir arama motoru kullanarak, iTunes App Store'dan kullanmak istediğiniz uygulamayı bulun ve uygulamanın sayfasını açın.
 Sayfanın URL'sini kopyalayın ve bunu, onaylı veya yasak uygulamalar listesini ya da bilgi noktası modunda çalıştırmak istediğiniz uygulamayı yapılandırmak için gereken URL olarak kullanın.
-Kısıtlı uygulama ayarlarını içeren cihaz profilleri kullanıcı gruplarına dağıtılmalıdır.
+Kısıtlı uygulama ayarlarını içeren cihaz profilleri kullanıcı gruplarına atanmalıdır.
 
 Örnek: iPad için Microsoft Word ifadesini aratın. Kullandığınız URL https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 olacaktır.
 
@@ -160,52 +161,6 @@ Sayfanın URL'sini kopyalayın ve bunu, onaylı veya yasak uygulamalar listesini
 ### <a name="additional-options"></a>Ek seçenekler
 
 Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygulama adı*>, <*uygulama yayımcısı*> biçimindeki bir csv dosyasından doldurabilir veya **Dışarı Aktar**’a tıklayarak gizli veya görünür uygulama listesinin içeriğiyle, aynı biçimde bir csv dosyası oluşturabilirsiniz.
-
-### <a name="app-information-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için uygulama bilgileri
-Göstermek veya gizlemek istediğiniz yerleşik iOS uygulamalarının ad, yayıncı ve paket kimliği bilgilerini belirlemek için bu listedeki bilgileri kullanın. Listedeki uygulamaların tümünü göstermek veya gizlemek istiyorsanız, aşağıdaki verileri **.csv** uzantılı bir metin dosyasına kopyalayabilir ve ardından **İçeri Aktar** seçeneğini kullanarak tüm uygulamaları aynı anda içeri aktarabilirsiniz.
-
-
-    App Store,Apple,com.apple.AppStore
-    Calculator,Apple,com.apple.calculator
-    Calendar,Apple,com.apple.mobilecal
-    Camera,Apple,com.apple.camera
-    Clock,Apple,com.apple.mobiletimer
-    Compass,Apple,com.apple.compass
-    Contacts,Apple,com.apple.MobileAddressBook
-    FaceTime,Apple,com.apple.facetime
-    Find Friends,Apple,com.apple.mobileme.fmf1
-    Find iPhone,Apple,com.apple.mobileme.fmip1
-    Game Center,Apple,com.apple.gamecenter
-    GarageBand,Apple,com.apple.mobilegarageband
-    Health,Apple,com.apple.Health
-    iBooks,Apple,com.apple.iBooks
-    iTunes Store,Apple,com.apple.MobileStore
-    iTunes U,Apple,com.apple.itunesu
-    Keynote,Apple,com.apple.Keynote
-    Mail,Apple,com.apple.mobilemail
-    Maps,Apple,com.apple.Maps
-    Messages,Apple,com.apple.MobileSMS
-    Music,Apple,com.apple.Music
-    News,Apple,com.apple.news
-    Notes,Apple,com.apple.mobilenotes
-    Numbers,Apple,com.apple.Numbers
-    Pages,Apple,com.apple.Pages
-    Photo Booth,Apple,com.apple.Photo-Booth
-    Photos,Apple,com.apple.mobileslideshow
-    Podcasts,Apple,com.apple.podcasts
-    Reminders,Apple,com.apple.reminders
-    Safari,Apple,com.apple.mobilesafari
-    Settings,Apple,com.apple.Preferences
-    Stocks,Apple,com.apple.stocks
-    Tips,Apple,com.apple.tips
-    Videos,Apple,com.apple.videos
-    VoiceMemos,Apple,com.apple.VoiceMemos
-    Wallet,Apple,com.apple.Passbook
-    Watch,Apple,com.apple.Bridge
-    Weather,Apple,com.apple.weather
-
-
-
 
 
 ## <a name="cellular"></a>Hücresel
@@ -308,7 +263,7 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 
 >[!NOTE]
 > Bir iOS cihazını bilgi noktası modunda yapılandırabilmek için, önce Apple Configurator aracını veya Apple Cihaz Kayıt Programı’nı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracı hakkında daha fazla bilgi için Apple belgelerinize bakın.
->Belirttiğiniz iOS uygulaması siz yapılandırma ilkesini dağıttıktan sonra yüklendiyse, cihaz, yeniden başlatılana kadar bilgi noktası moduna girmez.
+>Belirttiğiniz iOS uygulaması siz profil atadıktan sonra yüklendiyse cihaz, yeniden başlatılana kadar bilgi noktası moduna girmez.
 
 ## <a name="safari"></a>Safari
 -     **Safari (yalnızca denetimli)** - Cihazda Safari tarayıcısının kullanılıp kullanılamayacağını belirtin.

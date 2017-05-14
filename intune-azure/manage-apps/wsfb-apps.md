@@ -1,12 +1,12 @@
 ---
-title: "İş İçin Windows Mağazası uygulamalarını yönetme"
+title: "İş İçin Windows Mağazası uygulamalarını yönetme | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: İş İçin Windows Mağazası’ndaki uygulamaları Intune’a eşitlemeyi, sonra da bunları atamayı ve izlemeyi öğrenin."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 40b07a011d0d4126945f6cce6304a4cbf5e8b6aa
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -31,10 +32,10 @@ ms.lasthandoff: 04/24/2017
 * Intune’la mağazadan satın aldığınız uygulamalar listesini eşitleyebilirsiniz.
 * Eşitlenen uygulamalar Intune yönetim konsolunda gösterilir ve bunları aynı diğer uygulamalar gibi atayabilirsiniz.
 * Kaç tane kullanılabilir lisans olduğunu ve bunlardan kaç tanesinin kullanıldığını Intune yönetim konsolunda izleyebilirsiniz.
-* Kullanılabilir lisans sayısı yetersiz olduğunda Intune uygulamaların dağıtılmasını ve yüklenmesini engeller.
+* Kullanılabilir lisans sayısı yetersiz olduğunda Intune uygulamaların atanmasını ve yüklenmesini engeller.
 
 ## <a name="before-you-start"></a>Başlamadan önce
-İş İçin Windows Mağazası’ndan uygulamaları eşitlemeye ve dağıtmaya başlamadan önce aşağıdaki bilgileri gözden geçirin:
+İş İçin Windows Mağazası’ndan uygulamaları eşitlemeye ve atamaya başlamadan önce aşağıdaki bilgileri gözden geçirin:
 * Intune’u kuruluşunuz için mobil cihaz yönetim yetkilisi olarak yapılandırmalısınız.
 * İş İçin Windows Mağazası’ndan bir hesap almak isterseniz kaydolmanız gerekir.
 * İş İçin Windows Mağazası hesabını Intune’la ilişkilendirdikten sonra, gelecekte farklı bir hesaba geçemezsiniz.
@@ -50,7 +51,7 @@ Intune konsolunda eşitlemeyi etkinleştirmek için, önce mağaza hesabınızı
 3. Yönetim araçları sayfasında, **Yönetim aracı ekle**’yi ve sonra da **Microsoft Intune**’u seçin.
 
 > [!NOTE]
-> İş İçin Windows Mağazası uygulamalarını dağıtmak için birden fazla yönetim aracı kullanmanız durumunda önceden bunların yalnızca birini İş İçin Windows Mağazası ile ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz.
+> İş İçin Windows Mağazası uygulamalarını atamak için birden fazla yönetim aracı kullanmanız durumunda önceden bunların yalnızca birini İş İçin Windows Mağazası ile ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz.
 
 Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
@@ -74,11 +75,11 @@ Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 Mağazadan alınan uygulamaları, diğer tüm Intune uygulamalarıyla aynı şekilde atarsınız. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](deploy-apps.md). Bununla birlikte, uygulamaları atama işlemini **Tüm Uygulamalar** sayfası yerine **Lisanslı Uygulamalar** sayfasından yaparsınız.
 
-İş İçin Windows Mağazası uygulamasını atadığınızda, uygulamayı yükleyen her kullanıcı bir lisans kullanır. Dağıtılan uygulamanın tüm kullanılabilir lisanslarını kullandıysanız, artık başka kopya dağıtamazsınız. Aşağıdaki işlemlerden birini yapmanız gerekir:
+İş İçin Windows Mağazası uygulamasını atadığınızda, uygulamayı yükleyen her kullanıcı bir lisans kullanır. Atanan uygulamanın tüm kullanılabilir lisanslarını kullandıysanız, artık başka kopya atayamazsınız. Aşağıdaki işlemlerden birini yapmanız gerekir:
 * Uygulamayı bazı cihazlardan kaldırın.
-* Geçerli dağıtımın kapsamını, yalnızca lisanslarınızın yeterli olduğu kullanıcıları hedefleyecek şekilde daraltın.
+* Geçerli atamanın kapsamını, yalnızca lisanslarınızın yeterli olduğu kullanıcıları hedefleyecek şekilde daraltın.
 * İş İçin Windows Mağazası’ndan uygulamanın daha fazla kopyasını satın alın.
 
 > [!Important]
-> Dağıtılan uygulamalar yalnızca cihazı ilk kaydeden kullanıcı tarafından kullanılabilir. Uygulamaya başka hiçbir kullanıcı erişemez.
+> Atanan uygulamalar yalnızca cihazı ilk kaydeden kullanıcı tarafından kullanılabilir. Uygulamaya başka hiçbir kullanıcı erişemez.
 
