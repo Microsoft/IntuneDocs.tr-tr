@@ -86,6 +86,7 @@
 #### [Windows Phone LOB uygulamaları](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows Mağazası uygulamaları](manage-apps/windows-store-app.md)
 #### [Windows LOB uygulamaları](manage-apps/windows-line-of-business-app.md)
+#### [Android for Work uygulamalarını](/manage-apps/android-for-work-apps.md)
 ### [Uygulamaları atama](manage-apps/deploy-apps.md)
 ### [Uygulamaları izleme](manage-apps/monitor-apps.md)
 ### [Uygulama yapılandırma profillerini kullanma](manage-apps/app-configuration-policies.md)
