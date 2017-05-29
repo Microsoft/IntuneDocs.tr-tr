@@ -14,9 +14,11 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
-ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 87d8af0c3e014a6c8bcf2cda72bc6815143c34a9
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -75,7 +77,7 @@ Uygulamanın özelliklerini yapılandırmak ve uygulamayı bulut depolama alanı
     - **Yazılım bilgileri URL'si**. Yalnızca **Yazılım yükleyicisini** seçtiğinizde kullanılabilir. İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Gizlilik URL’si**. Yalnızca **Yazılım yükleyicisini** seçtiğinizde kullanılabilir. İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Kategori** (isteğe bağlı). Yerleşik uygulama kategorilerinden birini seçin. Bu, kullanıcıların şirket portalına göz atarken uygulamaları daha kolay bulabilmesini sağlar.
-    - **Şirket portalında bu uygulamayı öne çıkan uygulama olarak görüntüleyin ve vurgulayın.**. Kullanıcılar uygulamalara göz attığında, uygulamayı şirket portalının ana sayfasında önce çıkacak şekilde görüntüleyin.
+    - **Şirket portalında bu uygulamayı öne çıkan uygulama olarak görüntüleyin ve vurgulayın**. Kullanıcılar uygulamalara göz attığında, uygulamayı şirket portalının ana sayfasında önce çıkacak şekilde görüntüleyin.
     - **Simge** (isteğe bağlı). Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek olan simgedir.
 
         Bu örnekte, iOS için Microsoft Word uygulamasının açıklamasını yapılandırdınız:
@@ -103,9 +105,4 @@ Bu dört dakikalık videoda, Windows 10 çalıştıran kayıtlı cihazlar için 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Bir uygulama oluşturduktan sonra, sonraki adım uygulamayı dağıtmaktır. Daha fazlası için [Microsoft Intune’da uygulamaları dağıtma](deploy-apps.md) konusuna göz atın.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

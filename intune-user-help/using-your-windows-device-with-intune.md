@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb089cc9b6e76e13b2f5da65efb3452aa5274af
-ms.openlocfilehash: e3993c97475b699da90a0634bdb3ac1ba4f5a28c
-ms.lasthandoff: 02/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -28,6 +29,17 @@ ms.lasthandoff: 02/24/2017
 # <a name="using-your-windows-device-with-intune"></a>Windows cihazınızı Intune ile kullanma
 
 İş yaşamınızı kolaylaştırmak için Intune ile yapabileceğiniz birçok şey vardır. Şirketiniz yapmanızı isteyebileceği en yaygın işlemlerin listesi aşağıda verilmiştir.
+
+## <a name="supported-versions"></a>Desteklenen sürümler
+
+Intune şu anda Windows’un aşağıdaki sürümlerini desteklemektedir.
+
+* Windows 10 (Home, Pro, Education ve Enterprise sürümleri)
+* Windows Phone 8.1 ve üzeri
+* Windows 8.1 RT
+* Windows 8.1
+
+Intune tarafından desteklenen [Windows 10 Holographic](https://www.microsoft.com/hololens), gibi başka Windows sürümleri de vardır. Onlar burada listelenmemiştir çünkü çok belirli kullanımlara yöneliktir.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune'a kaydolma ve Şirket Portalı'nı yükleme
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 cihazınızı Intune'a kaydetme
 
-1.  Windows **Ayarları** uygulamasını, **Başlat menüsüne** gidip **Ayarlar** düğmesini seçerek açın. Arama çubuğunda "ayarlar" için arama da yapabilirsiniz.
+> [!NOTE]
+> Windows 10 tüm cihaz türlerinde çalışır. Masaüstü, telefon veya tablet kullandığınızda izleyeceğiniz adımlar, bu sayfadaki resimlerden biraz farklı görünse de aynıdır.
 
-2. **Hesaplar**’ı seçin.
+1.  **Başlat**'a gidin.
+
+  - **Windows 10 masaüstü** cihaz kullanıyorsanız **Başlat menüsüne** gidin.
+  - **Windows 10 Mobil** cihaz kullanıyorsanız **Başlangıç ekranına** gidin ve **Tüm Uygulamalar** listesine doğru kaydırın.
+
+2. Arama çubuğuna “ayarlar” yazarak Windows **Ayarlar** uygulamasını bulun ve açın.
+
+3. **Hesaplar**’ı seçin.
 
     ![Ayarlar ve Hesaplar’a gidin](./media/W10-enroll-1-settings-accounts.png)
 
-3. **Hesabınız**’ı seçin.
+4. **Hesabınız**’ı seçin.
 
     ![Hesabınızı seçme](./media/W10-enroll-2-accounts-your-account.png)
 
-4. **İş veya okul hesabı ekle**’yi seçin.
+5. **İş veya okul hesabı ekle**’yi seçin.
 
     ![İş veya okul hesabı ekle’yi seçme](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. İş veya okul kimlik bilgilerinizle oturum açın.
+6. İş veya okul kimlik bilgilerinizle oturum açın.
 
     ![Oturum aç](./media/W10-enroll-4-sign-in.png)
 
