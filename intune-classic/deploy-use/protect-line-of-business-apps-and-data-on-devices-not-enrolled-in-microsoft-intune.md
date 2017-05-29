@@ -14,9 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: f30837d90954b9b30b27e77240bb241db6e2b037
+ms.contentlocale: tr-tr
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -81,9 +83,4 @@ Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz. Bu işlem u
   ![Uygulamayı sil seçeneğiyle iş kolu uygulaması dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-delete-app.png)
 
   Bu işlem, uygulamaları iş kolu uygulamaları listesinden ve MAM ilkesindeki Hedeflenen uygulamalar listesinden kaldırır.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
