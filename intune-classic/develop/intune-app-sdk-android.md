@@ -80,8 +80,7 @@ Derleme adımı olarak [ProGuard](http://proguard.sourceforge.net/) (veya başka
 Azure Active Directory Authentication Library’lerin (ADAL) kendi ProGuard kısıtlamaları olabilir. Uygulamanız ADAL ile tümleştiriliyorsa, bu kısıtlamalarla ilgili olarak ADAL belgelerine bakmalısınız.
 
 ### <a name="entry-points"></a>Giriş noktaları
-Bu izinler, =======
-The Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) tarafından aracılık edilen kimlik doğrulaması gerçekleştirmek üzere istenir. Bu izinler uygulamaya sağlanmazsa veya kullanıcı tarafından kaldırılırsa, aracı (Şirket Portalı uygulaması) gerektiren kimlik doğrulama akışları devre dışı bırakılır.
+======= Bu izinler, Azure Active Directory Kimlik Doğrulama Kitaplığı ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) tarafından aracılık edilen kimlik doğrulaması gerçekleştirmek üzere istenir. Bu izinler uygulamaya sağlanmazsa veya kullanıcı tarafından kaldırılırsa, aracı (Şirket Portalı uygulaması) gerektiren kimlik doğrulama akışları devre dışı bırakılır.
 
 Intune Uygulama SDK'sı, Intune uygulama koruma ilkelerini etkinleştirmek için bir uygulamanın kaynak kodunda değişiklik yapılmasını gerektirir. Bu işlem, Android temel sınıflarının, **MAM** olarak adlandırılan eşdeğer Intune temel sınıflarıyla değiştirilmesi yoluyla yapılır. SDK sınıfları, Android temel sınıfı ile uygulamanın söz konusu sınıftan türettiği sürüm arasında çalışır. Örnek olarak bir etkinlik kullanıldığında elde edilen devralma hiyerarşisi şunun gibi görünür: `Activity` > `MAMActivity` > `AppSpecificActivity`.
 
