@@ -127,7 +127,7 @@ Exchange Connector günlüklerini görüntülemek için [Server Trace Viewer Too
 
 #### <a name="locating-sync-logs"></a>Eşitleme günlüklerinin konumunu bulma
 
--    Günlüklerde bir tam eşitlemenin konumunu **tam eşitleme** ifadesini arayarak bulun. Tam eşitlemenin başlangıcında şu metin bulunur:
+-    Günlüklerde bir tam eşitlemenin konumunu **full sync** ifadesini arayarak bulun. Tam eşitlemenin başlangıcında şu metin bulunur:
 
     'İşleme komutu: Zaman filtresi (tam eşitleme) olmadan <number> kullanıcının mobil cihaz listesi alınıyor`
 
@@ -135,7 +135,7 @@ Exchange Connector günlüklerini görüntülemek için [Server Trace Viewer Too
 
     Zaman filtresi (tam eşitleme) olmadan 4 kullanıcının mobil cihaz listesini alma başarıyla tamamlandı. Ayrıntılar: Envanter komutu sonucu - Eşitlenen cihazlar: 0 Komut Kimliği: commandIDGUID' Exchange sistem durumu: 'Sunucu sistem durumu 'Adı: 'PowerShellExchangeServer: <Name=mymailservername>' Durum: Bağlı','
 
--    Hızlı (delta) eşitlemeyi günlüklerde **hızlı eşitleme** ifadesini arayarak bulun.
+-    Hızlı (delta) eşitlemeyi günlüklerde **quick sync** ifadesini arayarak bulun.
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next command özel durumları
 **Get next command** özel durumları için Exchange Connector günlüklerine bakın ve bunları Microsoft Desteği’ne verin.
