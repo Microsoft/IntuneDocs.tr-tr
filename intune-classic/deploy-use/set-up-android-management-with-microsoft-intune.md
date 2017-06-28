@@ -1,5 +1,5 @@
 ---
-title: "Android yönetimini kurma | Microsoft Docs"
+title: "Android yönetimini ayarlama"
 description: "Microsoft Intune ile Android ve KNOX Standard cihazlar için mobil cihaz yönetimini (MDM) etkinleştirin."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4042a22ecfbab7970ea4b3dab8ee6a82b0da5f78
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 927259d2f3b3078c9fdb0f1ba3bb22a69b555ab6
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -42,7 +42,7 @@ Varsayılan olarak Android cihazları Intune'a kaydedilebilir. Android cihazlar�
     Son kullanıcı kayıt talimatları için bkz. [Android cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). Kayıt işlemi kullanıcıları neler bekleyebilecekleri ve BT yöneticilerinin görebileceği ve göremeyeceği cihaz içeriği hakkında bilgilendirir.
 
     Diğer son kullanıcı görevleri hakkında daha fazla bilgi için şu makalelere bakın:
-  - [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](how-to-educate-your-end-users-about-microsoft-intune.md)
+  - [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](/intune/end-user-educate)
   - [Android cihazlar için son kullanıcı kılavuzu](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 Çin’de Google Play Mağazası olmaması nedeniyle, Android cihazların Şirket Portalı’nı Çin’deki uygulama marketlerinden edinmeleri gerekir. Android için Şirket Portalı uygulaması aşağıdaki mağazalardan yüklenebilir:

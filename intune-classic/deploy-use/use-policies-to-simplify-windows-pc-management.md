@@ -1,5 +1,5 @@
 ---
-title: "Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma | Microsoft Docs"
+title: "Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma"
 description: "Microsoft Intune Center için Windows bilgisayar yönetim ilke ve ayarlarını açıklar."
 keywords: 
 author: nathbarn
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a2b956f8c999ec5489152a63a9af6e24da8ec536
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e14b5c56356812fdc3ea775cddde0f668b344177
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Windows masaüstü cihazlar üzerindeki Intune yazılım istemcisini çalıştırarak bu cihazları bilgisayar olarak yönetmek için yalnızca Intune yönetim konsolundaki **Bilgisayar Yönetimi** ilkeleri altındaki ilkeleri kullanabilirsiniz. Yönetim konsolunda listelenen tüm diğer ilkeler yalnızca mobil cihazlara yöneliktir. Microsoft Intune Center'daki ayarları yapılandırmak, bilgisayarlarda yapılan güncelleştirmeleri denetlemek ve bilgisayarlarda Windows Güvenlik Duvarı’nı yapılandırmak için **Bilgisayar Yönetimi** ilkelerini kullanın.
 

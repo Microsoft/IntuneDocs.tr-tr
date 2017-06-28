@@ -1,5 +1,5 @@
 ---
-title: "Toplu satın alınan iOS uygulamalarını yönetme | Microsoft Docs"
+title: "Toplu satın alınan iOS uygulamalarını yönetme"
 description: "Apple’dan toplu satın aldığınız uygulamaları Intune kullanarak yönetebilirsiniz. Lisans bilgilerini uygulama deposundan içeri aktarabilirsiniz, kaç lisans kullandığınızı izleyebilirsiniz ve sahip olduğunuzdan fazla uygulama kopyasını yüklemenizi önlenir."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c05c9cb1a0de468f1a6663a7870631af159d9b04
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f2600864eaf127810639e76932adbd422b4e0008
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

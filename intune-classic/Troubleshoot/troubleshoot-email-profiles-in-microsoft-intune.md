@@ -1,5 +1,5 @@
 ---
-title: "E-posta profilleriyle ilgili sorunları giderme | Microsoft Docs"
+title: "E-posta profilleriyle ilgili sorunları giderme"
 description: "E-posta profili sorunları, bu sorunları giderme ve çözme."
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0387fa91628c5f786d9289df309b82bd17cf6447
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f79ebec4dea17bd03b88d97aa1d7b30a58e35cdb
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

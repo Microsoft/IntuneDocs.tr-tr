@@ -1,12 +1,12 @@
 ---
-title: "Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma"
+titleSuffix: Intune on Azure
 description: "Intune ile WIP uygulama koruma ilkesi oluşturma ve dağıtma"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ca8e309653aa43292c7bd1ae1cb72cbb282d37dc
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 1704 sürümden itibaren, Windows 10’da kaydolmasız mobil uygulama yönetimi (MAM) senaryosunda uygulama koruma ilkeleri kullanabilirsiniz.
 
@@ -52,7 +52,7 @@ Bir WIP ilkesi eklerken kullanılan birkaç kavram hakkında konuşalım.
 
 Bir WIP uygulama koruma ilkesi oluşturabilmeniz için önce MAM sağlayıcısını yapılandırmanız gerekir.
 
--   [MAM sağlayıcınızı Intune ile yapılandırma](https://docs.microsoft.comapp-protection-policies-configure-windows-10.md) hakkında daha fazla bilgi edinin.
+-   [MAM sağlayıcınızı Intune ile yapılandırma](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md) hakkında daha fazla bilgi edinin.
 
 Ayrıca, aşağıdakilere de sahip olmanız gerekir:
 

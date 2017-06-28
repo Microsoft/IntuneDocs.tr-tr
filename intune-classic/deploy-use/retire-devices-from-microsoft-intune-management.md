@@ -1,5 +1,5 @@
 ---
-title: "Cihazları devre dışı bırakma | Microsoft Docs"
+title: "Cihazları devre dışı bırakma"
 description: "Intune, ilkesini ve şirket portalını kaldırarak cihazı Intune yönetiminden kaldırmak için hem seçmeli silmeyi, hem tam silmeyi destekler."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ Cihazlar bir süre Intune hizmetine bağlanmasa bile, müdahale etmediğiniz tak
 
 Bir cihazı çeşitli nedenlerle kullanımdan kaldırmanız gerekebilir:
 
--    Kullanıcının şirketten planlı bir şekilde ("yönetilen" ayrılma) ayrılması
--    Kullanıcı aniden ayrılması (işten çıkartılırsa, istifa ederse, vb.).
--    Cihazın kaybolması
--    Bir cihazın kullanım amacının değiştirilmesi (başka bir kullanıcıya verilmesi, farklı bir amaç için yeniden kullanılması vb.)
+-   Kullanıcının şirketten planlı bir şekilde ("yönetilen" ayrılma) ayrılması
+-   Kullanıcı aniden ayrılması (işten çıkartılırsa, istifa ederse, vb.).
+-   Cihazın kaybolması
+-   Bir cihazın kullanım amacının değiştirilmesi (başka bir kullanıcıya verilmesi, farklı bir amaç için yeniden kullanılması vb.)
 
 Mobil cihaz olarak yönetilen cihazlarda seçmeli silme veya tam silme gerçekleştirebilir veya cihazı kilitleyip parolasını sıfırlayabilirsiniz. Cihazı temizleyerek kullanıcının aboneliğini başka bir cihaz eklemek üzere serbest bırakmış olursunuz. Intune istemci yazılımıyla yönetilen bilgisayarları da devre dışı bırakabilirsiniz.
 
