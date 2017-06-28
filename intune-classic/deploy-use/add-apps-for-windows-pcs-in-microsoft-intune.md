@@ -1,5 +1,5 @@
 ---
-title: "Intune yazılım istemcisi çalıştıran Windows bilgisayarlarına uygulama ekleme | Microsoft Docs"
+title: "Intune yazılım istemcisi çalıştıran Windows bilgisayarlarına uygulama ekleme"
 description: "Windows bilgisayarlarına yönelik uygulamaları dağıtmadan önce Intune’a eklemeyi öğrenmek için bu konu başlığı altında verilen bilgileri kullanın."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41823544901f0ae2c87cba4e8591446068b8d144
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: faf52c4166298d981532ee61c158f4a705c5a3da
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Intune yazılım istemcisi çalıştıran Windows bilgisayarlarına uygulama ekleme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Uygulamaları dağıtmadan önce Intune’a eklemeyi öğrenmek için bu konu başlığı altında verilen bilgileri kullanın.
 

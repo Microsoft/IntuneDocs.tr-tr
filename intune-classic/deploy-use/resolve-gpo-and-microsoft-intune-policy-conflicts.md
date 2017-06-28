@@ -1,5 +1,5 @@
 ---
-title: "GPO ve Intune ilke çakışmalarını çözme | Microsoft Docs"
+title: "GPO ve Intune ilkesi çakışmalarını çözümleme"
 description: "Grup İlkesi ile Intune yapılandırma ilkeleri arasındaki çakışmaları çözmeyi öğrenin."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Grup İlkesi Nesneleri (GPO) ve Microsoft Intune ilke çakışmalarını çözme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune, Windows bilgisayarlarda ayarları yönetmenize yardımcı olan ilkeler kullanır. Örneğin, bilgisayarlardaki Windows Güvenlik Duvarı’nın ayarlarını denetlemek için bir ilke kullanabilirsiniz. Birçok Intune ayarı Windows Grup İlkesi'yle yapılandırdığınız ayarlara benzer. Ancak, bazen iki yöntemin birbiriyle çakışması mümkündür.
 
 Çakışmalar yaşandığında, bilgisayarın etki alanında oturum açamadığı durumlar dışında etki alanı düzeyi Grup İlkesi Intune ilkesine göre önceliklidir. Etki alanında oturum açılamadığı durumda, istemci bilgisayara Intune ilkesi uygulanır.

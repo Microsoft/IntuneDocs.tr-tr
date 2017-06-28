@@ -1,5 +1,5 @@
 ---
-title: "Kullanıcı ve cihazları yönetmek için grupları kullanma | Microsoft Docs"
+title: "Kullanıcı ve cihazları yönetmek için grupları kullanma"
 description: "Gruplar çalışma alanını kullanarak grupları oluşturun ve yönetin."
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ Filtrelenen grup görünümlerinde, bir BT yöneticisinin görebileceklerini yö
 -   BT yöneticilerinizin yalnızca belirli kullanıcı ve cihazlara öğe dağıtabilmesini istiyorsunuz
 -   BT yöneticilerinizin yalnızca o yönetici için uygun olan grupları görmesini istiyorsunuz
 
-Intune yönetici konsolunda hizmet yöneticileri için filtrelenen grup görünümlerini yapılandırabilirsiniz. Ayrıntılar için bkz. [Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune).
+Intune yönetici konsolunda hizmet yöneticileri için filtrelenen grup görünümlerini yapılandırabilirsiniz. Ayrıntılar için bkz. [Microsoft Intune'u başlatmadan önce bilinmesi gerekenler](/intune/supported-devices-browsers).
 
 Bir hizmet yöneticisi için filtrelenen grup görünümleri ayarladığınızda, yönetici yazılım veya ilkeler dağıttığında veya rapor hazırladığında, yalnızca belirttiğiniz grupları görüntüleyebilir ve seçebilir. Ayrıca yönetici konsolunun şu sayfalarındaki durum bilgilerini görmez:
 

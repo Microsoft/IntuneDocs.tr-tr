@@ -1,5 +1,5 @@
 ---
-title: "Uygulamaları ve verileri koruma | Microsoft Docs"
+title: "Uygulamaları ve verileri koruma"
 description: "Bu konu başlığı altında, şirket uygulamalarınızı ve verilerinizi korumanıza yardımcı olmak için sağlanan çeşitli Intune özellikleri ve yetenekleri açıklanır."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -52,7 +52,7 @@ Bir uygulamayı MAM ilkesiyle ilişkilendirmek için uygulama, Microsoft Intune 
 
 Microsoft Office uygulamaları gibi uygulamalarda Intune Uygulama SDK’sı tümleşiktir. Desteklenen uygulamaların tam listesini, Microsoft Intune uygulama iş ortakları sayfasında [Microsoft Intune mobil uygulama galerisinde](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) görebilirsiniz. Desteklenen senaryoları, platformları ve uygulamanın çoklu kimliği destekleyip desteklemediğini görmek için uygulamayı seçin.
 
-Ayrıca, MAM ilkeleriyle kullanmak üzere, [özel oluşturulan iş kolu uygulamalarınızı da etkinleştirebilirsiniz](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+Ayrıca, MAM ilkeleriyle kullanmak üzere, [özel oluşturulan iş kolu uygulamalarınızı da etkinleştirebilirsiniz](/intune/apps-prepare-mobile-application-management).
 
 Veri hareketini kısıtlamaya ek olarak, bir cihaz kaybedilirse veya çalınırsa ya da kullanıcı artık şirketinizde çalışmıyorsa, [şirket verilerini seçmeli olarak silerek](wipe-managed-company-app-data-with-microsoft-intune.md) yalnızca kişisel verileri bırakabilirsiniz.
 

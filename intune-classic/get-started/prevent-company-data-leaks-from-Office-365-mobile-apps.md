@@ -1,5 +1,5 @@
 ---
-title: "Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme | Microsoft Docs"
+title: "Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme"
 description: "Office 365 mobil uygulamalarından veya diğer iş kolu (LOB) uygulamalarından şirket verilerinin sızmasını önlemeye yardımcı olan mobil uygulama yönetimi (MAM) ilkeleri ile kuruluşunuzun verilerinin güvenliğini sağlamak için Intune kullanın."
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db350fbefe5ed9b1aa796ee8430000d33ebd1b4e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,13 +35,13 @@ Son kullanıcılarınızın bir Mobil Cihaz Yönetimi (MDM) çözümüne cihaz k
 Yanıtınız evet ise, Microsoft Intune, iOS ve Android cihazlarda Office 365 mobil uygulamaları için kes/kopyala/yapıştır kısıtlamaları koyma, ‘farklı-kaydet’ işlevini engelleme, PIN gereksinimlerini ayarlama ve MAM ile korunan verileri uzaktan silme olanağı gibi MAM ilkeleri belirlemenize izin verir.  Bu özellik, kullanıcıların cihazlarını bir MDM çözümüne kaydetmelerini gerektirmeden şirket verilerini korurken Office mobil uygulamalarında da çok iyi bir kullanıcı deneyimi sağlar.
 
 ## <a name="how-do-i-do-it"></a>Bunu nasıl yaparım?
-1.    [Intune mobil uygulama yönetimi /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) nasıl çalıştığı hakkında temel bilgileri öğrenin.
-2.    Azure portalında [MAM ilkeleri oluşturmak için önce neler yapmanız gerektiğini](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) öğrenin.
-3.    Intune ile [MAM ilkeleri oluşturun ve dağıtın](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
+1.  [Intune mobil uygulama yönetiminin (MAM)](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) nasıl çalıştığını temel düzeyde anlayın.
+2.  Azure portalında [MAM ilkeleri oluşturmak için önce neler yapmanız gerektiğini](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) öğrenin.
+3.  Intune ile [MAM ilkeleri oluşturun ve dağıtın](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune).
 
 ### <a name="additional-information"></a>Ek bilgiler:
 - MAM etkinleştirilmiş uygulamalarla [son kullanıcı deneyimi](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune).
-- [Intune ile MAM için LOB uygulamaları hazırlama](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Intune ile MAM için LOB uygulamaları hazırlama](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">MAM özellikli uygulamalar sağlayan Microsoft Intune uygulaması iş ortaklarının listesi &rarr;</a>.
 
 ## <a name="what-should-i-do-next"></a>Bundan sonra ne yapmalıyım?

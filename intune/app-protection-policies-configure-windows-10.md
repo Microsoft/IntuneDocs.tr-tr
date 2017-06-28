@@ -1,12 +1,12 @@
 ---
-title: "Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma"
+titleSuffix: Intune on Azure
 description: "Azure AD’de mobil uygulama yönetimi (MAM) sağlayıcısı kurma"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e179f72e4cd99a8cd1bdc017e9965f7d1eb608bf
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: bf56d3a80f0d167baa95e9dfdb20d08e02590984
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Bir Windows 10 uygulama koruma ilkesi oluşturmadan önce, Azure AD’de MAM sağlayıcıyı kurarak Windows 10 için mobil uygulama yönetimini (MAM) etkinleştirmeniz gerekir. Bu yapılandırma, Intune ile yeni bir Windows Bilgi Koruması (WIP) ilkesi oluştururken kayıt durumunu tanımlamanızı sağlar.
 
@@ -59,5 +59,5 @@ Bir Windows 10 uygulama koruma ilkesi oluşturmadan önce, Azure AD’de MAM sa�
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[WIP uygulama koruma ilkesi oluşturma](https://docs.microsoft.comwindows-information-protection-policy-create.md)
+[WIP uygulama koruma ilkesi oluşturma](windows-information-protection-policy-create.md)
 

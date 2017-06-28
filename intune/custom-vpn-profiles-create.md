@@ -1,12 +1,12 @@
 ---
 title: "Microsoft Intune’la özel VPN profilleri oluşturma"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Intune’da VPN profillerini oluşturmak için özel yapılandırmalar kullanın."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b38cbfb323ad4165e6cfc3edbc3c156e4fc1d6a4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 11da0d31a9a00364a6105006c3e75b6bb6f2cb77
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -40,7 +40,7 @@ Standart Intune VPN ilkeleri, kullanmak istediğiniz ayarları içermiyorsa bu t
 ## <a name="to-create-a-custom-configuration-policy"></a>Özel yapılandırma ilkesi oluşturmak için:
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 4. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 5. Profiller dikey penceresinde **Profil Oluştur**’u seçin.

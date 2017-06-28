@@ -1,5 +1,5 @@
 ---
-title: "Exchange ActiveSync ilkesi ayarları | Microsoft Docs"
+title: "Exchange ActiveSync ilkesi ayarları"
 description: "Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevleri denetlemenize olanak sağlayan ayarları yapılandırmak için, Intune Exchange ActiveSync ilkesini kullanın."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6bbb0cd7ca87a3c6cc352cbdd6dd2b61a9c5e36c
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

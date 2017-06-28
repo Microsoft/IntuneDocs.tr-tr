@@ -1,5 +1,5 @@
 ---
-title: "Şirkete ait iOS cihazlarını kaydetme | Microsoft Docs"
+title: "Şirketin sahip olduğu iOS cihazlarını kaydetme"
 description: "Şirkete ait iOS cihazlarını Apple Aygıt Kayıt Programı’nı (DEP) veya Apple Configurator’ı kullanarak kaydetme"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -59,8 +59,8 @@ Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve c
 
 Aşağıdakileri desteklemek için kullanıcı benzeşimi gereklidir:
   - Mobil uygulama yönetimi (MAM) uygulamaları
-  -    E-postaya ve şirket verilerine koşullu erişim
-  -    Şirket Portalı uygulaması
+  - E-postaya ve şirket verilerine koşullu erişim
+  - Şirket Portalı uygulaması
 
 **Kullanıcıların kullanıcı benzeşimi olan şirkete ait iOS cihazları kaydetmesi**
 1. Kullanıcılar cihazlarını açtığında, kendilerinden Kurulum Yardımcısı’nı tamamlamaları istenir. Kurulum sırasında kullanıcılardan kimlik bilgileri istenir. Intune abonelikleriyle ilişkili kimlik bilgilerini (yani UPN olarak bilinen benzersiz kişisel adları) kullanmalıdırlar.

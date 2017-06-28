@@ -1,5 +1,5 @@
 ---
-title: "Cihazları kaydetme | Microsoft Docs"
+title: "Cihazları kaydetme"
 description: "Mobil cihaz yönetimi (MDM), kaydı, cihazları yönetime getirmek ve kaynaklara erişim izni vermek için kullanır."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e724e648dc8e768f11e51103a050665a60ffcb1a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
 ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -43,40 +43,40 @@ Aşağıdaki tabloda Intune'a kayıt yöntemleri ve her yöntem için desteklene
 
 **iOS kayıt yöntemleri**
 
-| **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar** |
+| **Yöntem** |  **Temizleme gerekli mi?** |    **Benzeşim**    |   **Kilitle** | **Ayrıntılar** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Hayır|    Evet |    Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Hayır |Hayır |Hayır    | [Daha fazla bilgi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|    Evet |    İsteğe bağlı |    İsteğe bağlı|[Daha fazla bilgi](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**|    Evet |    İsteğe bağlı |    Hayır| [Daha fazla bilgi](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**|    Hayır |    Hayır    | Hayır|[Daha fazla bilgi](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[KCG](#byod)** | Hayır|    Evet |   Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Hayır |Hayır |Hayır  | [Daha fazla bilgi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|   Evet |   İsteğe bağlı |  İsteğe bağlı|[Daha fazla bilgi](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**| Evet |   İsteğe bağlı |  Hayır| [Daha fazla bilgi](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**| Hayır |    Hayır  | Hayır|[Daha fazla bilgi](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Windows kayıt yöntemleri**
 
-| **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar**|
+| **Yöntem** |  **Temizleme gerekli mi?** |    **Benzeşim**    |   **Kilitle** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Hayır|    Evet |    Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Hayır |Hayır |Hayır    |[Daha fazla bilgi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[KCG](#byod)** | Hayır|    Evet |   Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Hayır |Hayır |Hayır  |[Daha fazla bilgi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android kayıt yöntemleri**
 
-| **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar**|
+| **Yöntem** |  **Temizleme gerekli mi?** |    **Benzeşim**    |   **Kilitle** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Hayır|    Evet |    Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Hayır |Hayır |Hayır    |[Daha fazla bilgi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[KCG](#byod)** | Hayır|    Evet |   Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Hayır |Hayır |Hayır  |[Daha fazla bilgi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **İş için Android kayıt yöntemleri**
 
-| **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar**|
+| **Yöntem** |  **Temizleme gerekli mi?** |    **Benzeşim**    |   **Kilitle** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Hayır|    Evet |    Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    Hayır |Hayır |Hayır    |[Daha fazla bilgi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[KCG](#byod)** | Hayır|    Evet |   Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   Hayır |Hayır |Hayır  |[Daha fazla bilgi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **macOS kayıt yöntemleri**
 
-| **Yöntem** |    **Temizleme gerekli mi?** |    **Benzeşim**    |    **Kilitle** | **Ayrıntılar**|
+| **Yöntem** |  **Temizleme gerekli mi?** |    **Benzeşim**    |   **Kilitle** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#byod)** | Hayır|    Evet |    Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
+|**[KCG](#byod)** | Hayır|    Evet |   Hayır | [Daha fazla bilgi](prerequisites-for-enrollment.md)|
 
 
 Doğru yöntemi bulmanıza yardımcı olmak üzere bir dizi soru için bkz. [Cihazların nasıl kaydedileceği seçin](/intune-classic/get-started/choose-how-to-enroll-devices1).
@@ -94,15 +94,15 @@ Cihaz kayıt yöneticisi şirkete ait birden çok cihazı kaydetmek ve yönetmek
 
 ### <a name="dep"></a>DEP
 Apple Aygıt Kayıt Programı (DEP) yönetimi, “havadan” ilke oluşturmanıza ve DEP ile satın alınan ve yönetilen iOS cihazlara dağıtmanıza olanak sağlar. Cihaz, kullanıcı cihazı ilk açtığında ve iOS Ayarlama Yardımcısı’nı çalıştırdığında kaydedilir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod şunlara olanak tanır:
-  -    Kilitli kayıt
-  -    Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
+  - Kilitli kayıt
+  - Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
 
 [DEP](ios-device-enrollment-program-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. ([Tabloya dön](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 BT yöneticileri, şirkete ait tüm cihazları Kurulum Yardımcısı kullanarak el ile kaydetme işlemine hazırlamak için USB aracılığıyla Apple Configurator kullanır. BT yöneticisi bir kayıt profili oluşturur ve bunu Apple Configurator’a aktarır. Kullanıcılar cihazlarını aldığında, bu cihazları kaydetmek için Kurulum Yardımcısını çalıştırmaları istenir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod şunlara olanak tanır:
-  -    Kilitli kayıt
-  -    Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
+  - Kilitli kayıt
+  - Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
 
 [Apple Configurator ile Kurulum Yardımcısı kaydı](ios-setup-assistant-enrollment-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. ([Tabloya dön](#overview-of-device-enrollment-methods))
 
@@ -131,5 +131,5 @@ Intune aşağıdaki cihaz platformlarını yönetebilir:
 ## <a name="next-steps"></a>Sonraki adımlar
 - [Cihaz kaydı için önkoşullar](prerequisites-for-enrollment.md)
 - [Şirkete ait cihazları yönetme](manage-corporate-owned-devices.md)
-- [Desteklenen mobil cihazlar ve bilgisayarlar](../get-started/what-to-know-before-you-start-microsoft-intune.md#intune-supported-devices)
+- [Desteklenen mobil cihazlar ve bilgisayarlar](/intune/supported-devices-browsers#intune-supported-devices)
 
