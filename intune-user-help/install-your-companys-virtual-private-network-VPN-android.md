@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6d18e7c2fc0e0aff071b60f5a51238897c56b247
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Şirketinizin Sanal Özel Ağını (VPN) yükleme
 
 BT yöneticiniz şirketinizin kaynaklarına bağlanmanıza imkan sağlamak için bir VPN uygulaması yapılandırdıysa, Android cihazınızda bir VPN uygulaması yüklemeniz gerektiğini belirten bir bildirim görürsünüz. VPN uygulamasını yüklemek için bu adımları uygulayın.
@@ -39,4 +34,3 @@ BT yöneticiniz şirketinizin kaynaklarına bağlanmanıza imkan sağlamak için
 
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

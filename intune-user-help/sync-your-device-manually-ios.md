@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8b73f1f5c7b8beecdb336aba463f5494c4b99160
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="sync-your-ios-device-manually"></a>iOS cihazınızı el ile eşitleme
 
 Bazen bir uygulamanın Şirket Portalı’ndan indirme işlemini gerçekleştirmesi uzun zaman alabilir. Böyle bir durumla karşılaştığınızda, cihazınızı el ile eşitlemeyi deneyebilirsiniz. Bu, cihazınıza indirmeye zorlandığı bilgileri almayı yeniden denemesini söylemeniz anlamına gelir.
@@ -44,4 +39,3 @@ Bazen bir uygulamanın Şirket Portalı’ndan indirme işlemini gerçekleştirm
 Bir yükleme çubuğu ekranda görünür ve eşitleme bitinceye kadar yüklenir.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

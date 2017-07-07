@@ -1,12 +1,12 @@
 ---
-title: "Intune cihaz yapılandırma profillerini oluşturma | Intune Azure önizlemesi"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Intune cihaz yapılandırma profillerini oluşturmayı öğrenin."
+title: "Intune cihaz yapılandırma profilleri oluşturma"
+titleSuffix: Intune on Azure
+description: "Intune cihaz yapılandırma profilleri oluşturmayı öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 05/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a719b3f53076a55f1e888a9ddf8e98c7074dd25f
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6df6813667241d3ad5f8768585f2e1a34f0fe6e3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune’da cihaz yapılandırma profilleri oluşturma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 1. Azure Portal’da oturum açın.
@@ -60,4 +57,3 @@ Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Cihaz profillerini atama hakkında bilgi için bkz. [Microsoft Intune ile cihaz profillerini atama](device-profile-assign.md).
-

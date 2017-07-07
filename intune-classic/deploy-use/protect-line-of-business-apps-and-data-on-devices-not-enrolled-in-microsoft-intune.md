@@ -1,5 +1,5 @@
 ---
-title: "Kayıtlı olmayan cihazlardaki LOB uygulamalarını koruma | Microsoft Docs"
+title: "Kayıtlı olmayan cihazlardaki LOB uygulamalarını koruma"
 description: "Bu konu başlığı altında, veri kaybını önlemeye yardımcı olabilecek mobil uygulama yönetimi ilkelerini uygulayabilmek için özel iş kolu uygulamalarınızı nasıl hazırlayacağınız açıklanmaktadır."
 keywords: 
 author: mtillman
@@ -14,29 +14,26 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f30837d90954b9b30b27e77240bb241db6e2b037
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Microsoft Intune'da kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Mobil uygulama yönetimi (MAM) ilkeleri, şirket verilerinin dışarıya sızmasına neden olabilecek eylemleri kısıtlayarak ve bir uygulama PIN'i gibi veri erişim gereksinimleri uygulayarak şirket verilerinin korunmasına yardımcı olur. iOS ve Android iş kolu uygulamalarına MAM ilkeleri uygulamak için önce Microsoft Intune Uygulama Sarmalama Aracı ile uygulamayı sarmalamanız gerekir. Uygulama sarmalama, temel uygulamada hiçbir değişiklik yapılmasına gerek kalmadan mobil uygulamaya bir yönetim katmanı uygulama işlemidir. Uygulama sarmalandıktan sonra uygulamaya MAM ilkeleri uygulayabilir ve uygulamayı kullanıcılarınıza dağıtabilirsiniz.  
+Mobil uygulama yönetimi (MAM) ilkeleri, şirket verilerinin dışarıya sızmasına neden olabilecek eylemleri kısıtlayarak ve bir uygulama PIN'i gibi veri erişim gereksinimleri uygulayarak şirket verilerinin korunmasına yardımcı olur. iOS ve Android iş kolu uygulamalarına MAM ilkeleri uygulamak için önce Microsoft Intune Uygulama Sarmalama Aracı ile uygulamayı sarmalamanız gerekir. Uygulama sarmalama, bir mobil uygulamaya herhangi bir chan/intune/apps-prepare-mobile-application-managementes gerektirmeden bir yönetim katmanı uygulama ve bunu kullanıcılarınıza dağıtma işlemidir.  
 
-Bu konu başlığı altında, **çalışana ait yönetilmeyen cihazlarda** ve **üçüncü taraf bir mobil cihaz yönetimi (MDM) çözümü** tarafından yönetilen cihazlarda erişilen uygulamalara MAM ilkeleri uygulamak için gereken adımlar açıklanmaktadır.  **Intune MDM'ye kaydedilmiş cihazlarda** çalıştırılan iş kolu uygulamalarınızı hazırlamak için bkz. [Uygulamaların Microsoft Intune ile mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+Bu konu başlığı altında, **çalışana ait yönetilmeyen cihazlarda** ve **üçüncü taraf bir mobil cihaz yönetimi (MDM) çözümü** tarafından yönetilen cihazlarda erişilen uygulamalara MAM ilkeleri uygulamak için gereken adımlar açıklanmaktadır.  **Intune MDM'ye kaydedilmiş cihazlarda** çalıştırılan iş kolu uygulamalarınızı hazırlamak için bkz. [Uygulamaların Microsoft Intune ile mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](/intune/apps-prepare-mobile-application-management).
 
 
 ##  <a name="step-1-prepare-the-app"></a>1. Adım: Uygulamayı hazırlama
 
-Bir uygulamaya MAM ilkeleri uygulayabilmeniz için önce [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) ve [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) için Microsoft Intune Uygulama Sarmalama Aracı'nı kullanarak uygulamayı sarmalamanız veya Intune uygulama koruma özelliklerini elle tümleştirmek için [Intune Uygulama SDK'sını](../develop/intune-app-sdk.md) kullanmanız gerekir.
+Bir uygulamaya MAM ilkeleri uygulayabilmeniz için önce uygulamayı [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) için Microsoft Intune Uygulama Sarmalama Aracı ile sarmalamanız veya Intune uygulama koruma özelliklerini el ile tümleştirmek için [Intune Uygulama SDK](/intune/app-sdk)'sını kullanmanız gerekir.
 
-Uygulama Sarmalama Aracı'nı ya da SDK'yı kullanma hakkında daha fazla bilgi için bkz. [Uygulamaların Microsoft Intune ile mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+Uygulama Sarmalama Aracı'nı ya da SDK'yı kullanma hakkında daha fazla bilgi için bkz. [Uygulamaların Microsoft Intune ile mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](/intune/apps-prepare-mobile-application-management).
 
 ## <a name="step-2-add-the-app"></a>2. Adım: Uygulamayı ekleme
 
@@ -49,7 +46,7 @@ Uygulama Sarmalama Aracı'nı ya da SDK'yı kullanma hakkında daha fazla bilgi 
 2. **İş kolu uygulamaları** dikey penceresinde **Özel uygulama ekle**'yi seçin.
 
   ![En üstünde Özel uygulama ekle düğmesiyle iş kolu uygulamaları dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-add-lob-app-action.png)
-3.    Uygulama için bir ad, Uygulama Tanımlayıcısı alanına paket tanımlayıcısı ve platformu (iOS veya Android) girin.
+3.  Uygulama için bir ad, Uygulama Tanımlayıcısı alanına paket tanımlayıcısı ve platformu (iOS veya Android) girin.
 
   ![Özel uygulama ekle dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-add-app-details.png)
 
@@ -74,13 +71,12 @@ Uygulamanın adı veya Paket tanımlayıcısı gibi uygulama ayrıntılarını d
 ##  <a name="remove-apps"></a>Uygulamaları kaldırma
 Uygulama listesinden bir iş kolu uygulamasını kaldırabilirsiniz. Bu işlem uygulamayı listeden kaldırır ve MAM ilkeleriyle ilişkisini siler ancak uygulamayı kullanıcının cihazından kaldırmaz.  
 
-1.    [Azure portalında](https://portal.azure.com/) **Intune mobil uygulama yönetimi** > **Ayarlar**'a gidin. **Ayarlar** dikey penceresinde **İş kolu**’nu seçerek var olan uygulamalar listesini açın.  
-2.    Kaldırmak istediğiniz uygulamayı ve ardından **(…) bağlam** menüsünü seçin.
+1.  [Azure portalında](https://portal.azure.com/) **Intune mobil uygulama yönetimi** > **Ayarlar**'a gidin. **Ayarlar** dikey penceresinde **İş kolu**’nu seçerek var olan uygulamalar listesini açın.  
+2.  Kaldırmak istediğiniz uygulamayı ve ardından **(…) bağlam** menüsünü seçin.
 
   ![Üç noktalı iş kolu uygulamaları dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-lob-context-menu.png)
-3.    Uygulamayı silmek için **Uygulama Sil**’i seçin.
+3.  Uygulamayı silmek için **Uygulama Sil**’i seçin.
 
   ![Uygulamayı sil seçeneğiyle iş kolu uygulaması dikey penceresinin ekran görüntüsü](../media/mam-azure-portal-delete-app.png)
 
   Bu işlem, uygulamaları iş kolu uygulamaları listesinden ve MAM ilkesindeki Hedeflenen uygulamalar listesinden kaldırır.
-

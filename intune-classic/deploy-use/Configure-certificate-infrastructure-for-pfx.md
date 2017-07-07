@@ -14,14 +14,11 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 868578d6c6c87a9e7459160ed89dfd50629bdb51
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-certificate-infrastructure"></a>Sertifika altyapısını yapılandırma
 
@@ -159,4 +156,3 @@ Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma.
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Artık sertifika profillerinizi, [Sertifika profillerini yapılandırma](Configure-Intune-certificate-profiles.md) konusunda anlatıldığı şekilde yapılandırmaya hazırsınız.
-

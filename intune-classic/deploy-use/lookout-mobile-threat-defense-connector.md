@@ -1,5 +1,5 @@
 ---
-title: "Lookout mobile threat defense bağlayıcısı | Microsoft Docs"
+title: "Lookout mobile threat defense bağlayıcısı"
 description: "Lookout Mobile Threat Defense bağlayıcısı ve Intune ile şirket kaynaklarına erişimi cihaz, ağ ve uygulama riskine dayalı olarak koruyun."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67654722e5c2bcbb768cf840a3f7ff1a24f99739
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6ed808e3dd1db1bf58d4c0caa8cddccbc49c05f7
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Intune ile Lookout Mobile Threat Defense bağlayıcısı
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,9 +90,8 @@ Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Bu çözümü uygulamak için yapılması gereken ana adımlar şunlardır:
-1.    [Lookout aboneliğinizi ayarlama](setup-your-lookout-mtd-subscription.md)
-2.    [Intune’da Lookout Mobile Threat Defense’i etkinleştirme](enable-lookout-mtd-connection.md)
+1.  [Lookout aboneliğinizi ayarlama](setup-your-lookout-mtd-subscription.md)
+2.  [Intune’da Lookout Mobile Threat Defense’i etkinleştirme](enable-lookout-mtd-connection.md)
 3.  [Lookout Mobile Threat Defense uygulamasını yapılandırma ve dağıtma](configure-deploy-lookout-for-work-app.md)
-4.    [Lookout cihaz uyumluluğu ilkesini yapılandırma](create-lookout-device-compliance-policy.md)
-5.    [Lookout Mobile Threat Defense tümleştirme sorunlarını giderme](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
-
+4.  [Lookout cihaz uyumluluğu ilkesini yapılandırma](create-lookout-device-compliance-policy.md)
+5.  [Lookout Mobile Threat Defense tümleştirme sorunlarını giderme](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)

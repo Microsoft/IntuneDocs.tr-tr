@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune Uygulama SDK&quot;sı Xamarin Bileşeni"
+title: "Microsoft Intune Uygulama SDK'sı Xamarin Bileşeni"
 description: 
 keywords: sdk, Xamarin, intune
 author: mtillman
@@ -14,15 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b900cb2c2c02ca96a771dbebd208872941079e38
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune Uygulama SDK'sı Xamarin Bileşeni
 
 > [!NOTE]
@@ -125,4 +122,3 @@ Xamarin.Forms ve diğer UI çerçeveleri için `MAM.Remapper` adında bir araç 
 ## <a name="test-your-app"></a>Uygulamanızı test etme
 
 Bileşeni uygulamanıza eklemek için temel adımları tamamladınız. Şimdi Xamarin Android örnek uygulamasındaki adımları uygulayabilirsiniz. Biri Xamarin.Forms, diğeri Android için olmak üzere iki örnek sağladık.
-

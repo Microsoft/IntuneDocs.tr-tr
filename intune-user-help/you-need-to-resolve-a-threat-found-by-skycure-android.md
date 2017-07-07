@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 7f9509ebaf4a0d11568a6cf094fbf699b38321aa
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-skycure"></a>Skycure’un bulduğu bir tehdidi gidermeniz gerekiyor
 
 Skycure, cihazınızda potansiyel bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için sorunu düzeltmeniz gerekiyor. Gördüğünüz ileti şuna benzeyebilir:
@@ -49,4 +45,3 @@ Skycure’un tehdit olarak gördüğü bir uygulama yüklediyseniz aşağıdakin
 Uygulamayı kaldırdıktan sonra şirket e-postanıza ve verilerinize hemen erişim elde edersiniz. Uygulamayı kaldırma isteğini yoksayarsanız, uygulamayı kaldırana kadar e-postanıza ve verilerinize erişiminizi kaybedersiniz.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

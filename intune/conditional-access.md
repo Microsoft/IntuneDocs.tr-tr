@@ -1,12 +1,12 @@
 ---
-title: "Koşullu erişim nedir?"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Microsoft Intune Azure önizlemesinde kullanıcıların ve cihazların şirket kaynaklarına erişmek için uymaları gereken koşulları tanımlamayı öğrenin."
+title: "Intune ile koşullu erişim"
+titleSuffix: Intune on Azure
+description: "Microsoft Intune'da kullanıcıların ve cihazların şirket kaynaklarına erişmek için uymaları gereken koşulları tanımlamayı öğrenin.\""
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,44 +14,51 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8ab6d782460a857a0901abd9bd567365ee2e3f70
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d3e6b720eeed65c81e5f3a4dbf06890ea8fd09ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="whats-conditional-access"></a>Koşullu erişim nedir?
 
-# <a name="what-is-conditional-access"></a>Koşullu erişim nedir?
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Bu konu, Enterprise Mobility + Security (EMS) için geçerli olduğu haliyle Koşullu erişimi açıklamakta, ardından Intune kullanırken karşılaşılan yaygın Koşullu erişim senaryolarına geçmektedir.
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+Enterprise Mobility + Security (EMS) Koşullu Erişim, tek başına bir ürün değildir; EMS'nin parçası olan tüm ürün ve hizmetlerde yer alan bir çözümdür. Kurumsal verilerinizi güvenli tutmak için ayrıntılı erişim denetimi sağlarken, kullanıcılara herhangi bir cihazdan ve herhangi bir yerden en iyi şekilde çalışmalarına izin veren bir deneyim sunar.
 
+Kurumsal verilerinize erişim için konum, cihaz, kullanıcı durumu ve uygulama hassaslığı temelinde bir geçit oluşturan koşullar tanımlayabilirsiniz.
 
-Bu konu başlığı altında, Enterprise Mobility + Security’de geçerli olan koşullu erişimi açıklıyor ve ardından Intune’daki koşullu erişim özelliklerini anlatıyoruz.
+> [!NOTE] 
+> Koşullu Erişim, sahip olduğu özellikleri [Office 365 hizmetlerine](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/) de yayar.
 
-Enterprise Mobility + Security (EMS) çözümünün koşullu erişim özelliği, bir yandan kurumsal verilerinizin güvenliği için ihtiyacınız olan denetimi sağlarken diğer yandan da kullanıcılarınıza her cihazda en iyi çalışmalarını ortaya koymalarını sağlayan bir deneyim sunmak için Azure Active Directory Premium ile Microsoft Intune’un gücünden yararlanır.
+![Koşullu erişim mimari şeması](./media/ca-diagram-1.png)
 
-Koşullu erişimle, konum, cihaz ve kullanıcı durumu ve uygulama duyarlılığı temelinde kurumsal verilerinize erişimi sınırlayan koşullar tanımlayabilirsiniz.
+## <a name="conditional-access-with-intune"></a>Intune ile koşullu erişim
 
-Cihaz açısından bakıldığında, Intune ve Azure Active Directory birlikte çalışarak e-postaya ve Office 365 hizmetlerine yalnızca yönetilen ve uyumlu cihazların erişimine izin verildiğinden emin olunmasını sağlar. Örneğin, Azure Active Directory’de bir ilke ayarlayarak yalnızca etki alanına katılmış bilgisayarların veya Intune gibi bir mobil cihaz yönetimi uygulamasına kaydedilmiş mobil cihazların Office 365 hizmetlerine erişebilmesine olanak tanıyabilirsiniz. Intune’u kullanarak, cihazın uyumluluk durumunu denetleyen bir cihaz uyumluluk profili ayarlayabilirsiniz. Uyumluluk durumu Azure Active Directory’ye raporlanır ve kullanıcı şirket kaynaklarına erişmeye çalıştığında Azure Active Directory’de ilkenin zorunlu tutulması için kullanılır. Intune’da cihaz uyumluluğu hakkında bilgi edinmek için bkz. [Cihaz uyumluluğu nedir?](device-compliance.md)
+Intune, EMS Koşullu Erişim çözümünü desteklemek için mobil cihaz uyumluluğu ve mobil uygulama yönetimi özellikleri ekler.
 
-Exchange Online gibi bulut uygulamaları için koşullu erişim, Azure Active Directory aracılığıyla yapılandırılabilir. Daha fazla bilgi için bu [makaleye](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) bakın.
+![Intune ve EMS kullanırken koşullu erişim](./media/intune-with-ca-1.png)
 
-## <a name="on-premises-conditional-access-in-intune"></a>Intune’da şirket içi koşullu erişim
+Intune ile koşullu erişim kullanmanın yolları:
 
-Intune’da koşullu erişim, cihaz yönetimi ve kaydı temelinde **Şirket içi Exchange**’e erişime izin vermek veya erişimi engellemek için kullanılabilir.
+-   **Cihaz tabanlı koşullu erişim**
 
-Cihaz uyumluluk profili ayarları kullanılarak cihazın uyumluluğu değerlendirilir. Koşullu erişim bu değerlendirmeyi kullanarak şirket içi Exchange’e erişime izin verir veya erişimi engeller. Koşullu erişim bir cihaz uyumluluk profiliyle birlikte kullandığınızda, yalnızca uyumlu cihazların şirket içi Exchange’e erişmesine izin verilir. Belirli platformlara izin verme veya engelleme ya da Intune tarafından yönetilmeyen cihazları hemen engelleme gibi daha ayrıntılı bir denetim için, koşullu erişimde gelişmiş ayarlar yapılandırabilirsiniz.
+    -   Şirket içi Exchange için koşullu erişim
 
-Cihaz uyumluluk profili ve koşullu erişim, kullanıcıya atanır. Kullanıcının şirket içi Exchange’e erişirken kullandığı her cihaz, uyumluluk açısından denetlenir. Cihazın uyumluluk açısından değerlendirilebilmesi için, cihazı kullanan kullanıcıya atanmış bir uyumluluk profili olması gerektiğini unutmayın. Kullanıcıya hiçbir uyumluluk ilkesi dağıtılmadıysa, cihaz uyumlu olarak kabul edilir ve hiçbir erişim kısıtlaması uygulanmaz.
+    -   Ağ erişim denetimine bağlı koşullu erişim
 
-Cihazlar ayarlanan koşullara uymadığında, son kullanıcı cihazı kaydetmeye ve cihazın uyumsuz olmasına neden olan sorunu düzeltmeye yönlendirilir.
+    -   Cihaz riskine bağlı olarak koşullu erişim
+
+    -   Windows Bilgisayarlar için koşullu erişim
+
+        -   Şirkete ait olanlar
+
+        -   Kendi cihazını getir (KCG)
+
+-   **Uygulamaya bağlı koşullu erişim**
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Şirket içi Exchange için koşullu erişim ilkesi oluşturma](conditional-access-exchange-create.md)
-
-[Azure Active Directory’de koşullu erişimi yapılandırma](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
-
+[Intune ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md)

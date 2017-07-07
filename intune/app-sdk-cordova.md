@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune Uygulama SDK&quot;sı Cordova Eklentisi"
+title: "Microsoft Intune Uygulama SDK'sı Cordova Eklentisi"
 description: 
 keywords: sdk, Cordova, intune
 author: oydang
@@ -14,13 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0329720b6f02c718ef27a59e6efc5f3a76eed1c5
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune Uygulama SDK'sı Cordova Eklentisi
 
@@ -159,4 +157,3 @@ Uygulamayı ilk kez çalıştırdığınızda, Intune tarafından yönetildiğin
 * **Info.plist** dosyasının **CFBundleDocumentTypes** düğümünün altındaki UTI listesini değiştirdiğinizde tekrar derlemeden önce aynı plist dosyasının (**UTImportedTypeDeclarations** düğümü) İçe Aktarılan UTI'ler bölümündeki Intune UTI'lerini temizlemeniz gerekir. Tüm Intune UTI'leri `com.microsoft.intune.mam` ön ekine sahip olacaktır.
 
 * Cordova için Intune Uygulama SDK'sı eklentisini Cordova projenizden kaldırmak isterseniz, .xcodeproj ve .plist dosyalarındaki Intune yapılandırmalarından bazılarını geri almak için iOS platformunu da kaldırıp tekrar eklemeniz gerekir.
-

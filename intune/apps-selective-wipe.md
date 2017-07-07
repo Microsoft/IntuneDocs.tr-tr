@@ -1,7 +1,7 @@
 ---
 title: "Uygulamalardan yalnızca şirket verilerini temizleme"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Microsoft Intune’la uygulamaları seçmeli olarak temizlemeyi öğrenin."
+titleSuffix: Intune on Azure
+description: "Microsoft Intune ile uygulamaları seçmeli olarak silme hakkında bilgi edinin.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,15 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune tarafından yönetilen uygulamalardan kurumsal verileri temizleme
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıldığında, şirket uygulama verilerinin cihazdan kaldırıldığından emin olmak istersiniz. Ancak, özellikle de çalışanın kendi cihazından kişisel verilerin kaldırılmasını istemeyebilirsiniz.
 
@@ -38,7 +36,7 @@ Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıld�
 
 1.  [Azure portalı](https://portal.azure.com)’nda oturum açın.
 
-2.  **Diğer Hizmetler**’i seçin, filtre metin kutusuna **Intune** yazın ve **Intune**’u seçin. Intune önizleme dikey penceresi açıldığında, **Uygulamaları yönet** dikey penceresini seçin.
+2.  **Diğer Hizmetler**’i seçin, filtre metin kutusuna **Intune** yazın ve **Intune**’u seçin. Intune dikey penceresi açıldığında, **Uygulamaları yönet** dikey penceresini seçin.
 
     ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](./media/intune-azure-preview-blade.png)
 

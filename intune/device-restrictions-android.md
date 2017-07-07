@@ -1,12 +1,12 @@
 ---
 title: "Android için Intune cihaz kısıtlama ayarları"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Android cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
+titleSuffix: Intune on Azure
+description: "Android cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 06/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3627b28b60908c225ce1797968123ce854a70a8b
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 44d80e1c72b58eccd4e69b1d561c7d651f39b3c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android ve Samsung KNOX Standard cihaz kısıtlama ayarları
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Cihazları kuruluşunuzda yapılandırmak için bu ayarları bir Android cihaz kısıtlama ilkesiyle birlikte kullanın.
 
 ## <a name="general"></a>Genel
 
@@ -39,11 +38,11 @@ ms.lasthandoff: 05/23/2017
 |**Tanılama veri gönderimi**|Kullanıcının cihazdan tanılama verileri göndermesini durdurur.|Hayır|Evet|
 |**Fabrika sıfırlaması**|Kullanıcının cihazda fabrika sıfırlaması gerçekleştirmesine izin verir.|Hayır|Evet|
 |**Coğrafi Konum**|Cihazın konum bilgilerini kullanmasına izin verir (yalnızca Samsung KNOX Standard).|Hayır|Evet|
-|**Kapatma**|Kullanıcının cihazı kapatmasına izin verir.<br>Bu ayar devre dışı bırakılırsa, Samsung KNOX Standard cihazları için **Cihaz silinmeden önceki oturum açma hatası sayısı** ayarı çalışmaz.|Hayır|Evet|
+|**Kapatma**|Kullanıcının cihazı kapatmasına izin verir.<br>Devre dışı bırakılırsa **Cihaz silinmeden önceki oturum açma hatası sayısı** ayarlanamaz.|Hayır|Evet|
 |**Ekran yakalama**|Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.|Hayır|Evet|
 |**Sesli yardım**|Cihazda sesli yardım yazılımının kullanımına izin verir.|Hayır|Evet|
 |**YouTube**|Cihazda YouTube uygulamasının kullanılmasına izin verir.|Hayır|Evet|
-|**Paylaşılan cihazlar**|Yönetilen bir Samsung KNOX Standard cihazını paylaşılan olarak yapılandırın. Bu modda, son kullanıcılar Azure AD kimlik bilgilerini kullanarak cihazda oturum açıp kapatabilir ve cihaz kullanım durumundan bağımsız olarak merkezden yönetilir.<br>Oturum açan kullanıcılar kendilerine atanan uygulamalara ilkelere otomatik olarak erişir. Kullanıcılar oturumu kapattığında tüm veriler silinir.|Hayır|Evet|
+|**Paylaşılan cihazlar**|Yönetilen bir Samsung KNOX Standard cihazını paylaşılan olarak yapılandırın. Bu modda, son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da yönetilmeye devam eder.<br>Oturum açan kullanıcılar kendilerine atanan uygulamalara ilkelere otomatik olarak erişir. Kullanıcılar oturumu kapattığında tüm veriler silinir.|Hayır|Evet|
 
 ## <a name="password"></a>Parola
 
@@ -58,14 +57,14 @@ ms.lasthandoff: 05/23/2017
 |**Gerekli parola türü**|Gereken parola karmaşıklık düzeyini ve biyometrik cihaz kullanılıp kullanılamayacağını belirtir. Aşağıdakilerden birini seçin:<br><br>    -     **Cihaz varsayılanı**<br>-     **Düşük güvenlik biyometriği**<br>    -     **En az sayısal**<br>    -     **Sayısal karmaşık** - ('1111' veya '1234' gibi yinelenen veya ardışık numaralara izin verilmez)<sup>1</sup><br>    -     **En az alfabetik**<br>    -     **En az alfasayısal**<br>    -     **En az simgeler ile alfasayısal**|Evet|Evet|
 |**Önceki parolaların yeniden kullanılmasını engelleme**|Son kullanıcının daha önce kullanmış olduğu bir parolayı oluşturmasını engeller.|Evet|Evet|
 |**Parmak izi ile kilit açma**|Desteklenen cihazların kilidini açmak için parmak izi kullanımına izin verir.|Hayır|Evet|
-|**Akıllı Kilitleme ve diğer güven aracıları**|Uyumlu Android cihazlarda Akıllı Kilit özelliğini denetlemenize olanak tanır (Samsung KNOX Standard 5.0 ve üstü). Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken (örneğin, belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda) cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.|Evet (5.0 ve üzeri)|Evet|
+|**Akıllı Kilitleme ve diğer güven aracıları**|Uyumlu Android cihazlarda Akıllı Kilit özelliğini denetlemenize olanak tanır (Samsung KNOX Standard 5.0 ve üstü). Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Örneğin, cihaz belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda bu kullanılabilir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.|Evet (5.0 ve üzeri)|Evet|
 |**Şifreleme**|Cihazdaki dosyaların şifrelenmesini gerektirir.|Evet|Evet|
 
-<sup>1</sup>Bu ayarı cihazlara atamadan önce, Şirket Portalının hedeflenen cihazlarda en son sürüme güncelleştirilmiş olduğundan emin olun.
+<sup>1</sup> Bu ayarı cihazlara atamadan önce, Şirket Portalı uygulamasının bu cihazlarda en son sürüme güncelleştirilmiş olduğundan emin olun.
 
 **Sayısal karmaşık** ayarını yapılandırıp, bunu Android 5.0 öncesi bir sürümü çalıştıran cihaza atarsanız aşağıdaki davranış uygulanır.
 - Şirket Portalı uygulaması 1704 öncesi bir sürümü çalıştırıyorsa cihaza PIN ilkesi uygulanmaz ve Intune portalında bir hata görüntülenir.
-- Şirket Portalı uygulaması 1704 sürümüne güncelleştirilmişse yalnızca basit bir PIN uygulanır. Android 5.0 öncesi sürümlerde bu ayar desteklenmez. Intune portalında herhangi bir hata görüntülenmez.
+- Şirket Portalı uygulaması 1704 veya üzeri bir sürüm çalıştırıyorsa yalnızca basit bir PIN uygulanabilir. Android 5.0 öncesi sürümlerde bu ayar desteklenmez. Intune portalında herhangi bir hata görüntülenmez.
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -77,10 +76,10 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
 
-Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini yapılandırabilirsiniz:
+Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini hem Android hem de Samsung KNOX Standard cihazları için yapılandırabilirsiniz:
 
 **Yasak uygulamalar** listesi - Intune tarafından yönetilmeyen ve kullanıcıların yüklemesine ve çalıştırmasına izin verilmeyen uygulamaları listeleyin.
-**Onaylı uygulamalar** listesi - Kullanıcıların yüklemesine izin verilen uygulamaları listeleyin. Uyumluluğun korunması için kullanıcılar listelenmeyen uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.
+**Onaylı uygulamalar** listesi - Kullanıcıların yüklemesine izin verilen uygulamaları listeleyin. Uyumluluğun korunması için kullanıcılar diğer uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.
 Kısıtlı uygulama ayarlarını içeren cihaz profilleri kullanıcı gruplarına atanmalıdır.
 
 Listeyi yapılandırmak için **Ekle**’ye tıklayın, sonra da tercih ettiğiniz bir ad (isteğe bağlı olarak uygulama yayımcısı) ve uygulamanın uygulama mağazasındaki URL'sini belirtin.
@@ -91,13 +90,13 @@ Uyumlu veya uyumsuz uygulama listesinde bir uygulama URL'si belirtmek için aşa
 
 [Google Play'in uygulamalar bölümünde](https://play.google.com/store/apps) kullanmak istediğiniz uygulamayı arayın.
 
-Uygulamanın yükleme sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu uyumlu uygulamalar listesinde veya uyumsuz uygulamalar listesinde gerekli URL olarak kullanabilirsiniz.
+Uygulamanın yükleme sayfasını açın ve URL'yi panoya kopyalayın. Artık bu URL’yi uyumlu uygulamalar listesinde veya uyumsuz uygulamalar listesinde kullanabilirsiniz.
 
-Örnek: Microsoft Office Mobile için Google Play'i arayın. Kullandığınız URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub** olacaktır.
+Örnek: Microsoft Office Mobile için Google Play'i arayın. Şu URL’yi kullanın: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ### <a name="additional-options"></a>Ek seçenekler
 
-Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygulama adı*>, <*uygulama yayımcısı*> biçimindeki bir csv dosyasından doldurabilir veya **Dışarı Aktar**’a tıklayarak kısıtlı uygulama listesinin içeriğiyle, aynı biçimde bir csv dosyası oluşturabilirsiniz.        
+Listeyi bir csv dosyasından almak için **İçeri Aktar**’a da tıklayabilirsiniz. <*uygulama url’si*>, <*uygulama adı*>, <*uygulama yayımcısı*> biçimini kullanın veya aynı biçimdeki kısıtlı uygulama listesi içeriğini barındıran csv dosyasında **Dışarı Aktar**’a tıklayın.      
 
 ## <a name="browser"></a>Tarayıcı
 |||||
@@ -127,7 +126,7 @@ Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygu
 |**Sesli arama**|Cihazda sesli arama özelliğinin kullanımını etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
 |**Ses dolaşımı**|Cihaz cep telefonu şebekesindeyken ses dolaşımına izin verir.|Hayır|Evet|
 |**Bluetooth**|Cihazda Bluetooth özelliğinin kullanımına izin verir.|Hayır|Evet|
-|**NFC**|Cihaz destekliyorsa, yakın alan iletişimi kullanan işlemlere izin verir.|Hayır|Evet|
+|**NFC**|Desteklenen cihazlarda yakın alan iletişimi kullanan işlemlere izin verir.|Hayır|Evet|
 |**Wi-Fi**|Cihazın Wi-Fi özelliklerinin kullanımına izin verir.|Hayır|Evet|
 |**Wi-Fi İnternet paylaşımı**|Cihazda Wi-Fi internet paylaşımı kullanımına izin verir.|Hayır|Evet|
 
@@ -135,7 +134,6 @@ Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygu
 |||||
 |-|-|-|-|
 |Ayar adı|Ayrıntılar|Android 4.0+|Samsung KNOX Standard|
-|**Yönetilen uygulama seçin**|Cihaz bilgi noktası modundayken çalıştırılabilecek yönetilen uygulamaya göz atın ve seçim yapın (mağazaya bir bağlantıyla belirtilen uygulamalar henüz desteklenmemektedir). Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.|Hayır|Evet|
+|**Yönetilen uygulama seçin**|Cihaz bilgi noktası modunda olduğunda çalıştırılabilen bir veya daha fazla uygulama eklemek için aşağıdaki seçeneklerden birini belirleyin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.<br><br>- **Paket adına göre uygulama ekleme**<br>- **URL’ye göre uygulama ekleme**<br>- **Yönetilen uygulamalar ekleme**|Hayır|Evet|
 |**Ekran uyku düğmesi**|Cihazın açma/kapatma düğmesini etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
 |**Ses düğmeleri**|Cihazdaki ses düğmelerinin kullanımını etkinleştirir veya devre dışı bırakır.|Hayır|Evet|
-

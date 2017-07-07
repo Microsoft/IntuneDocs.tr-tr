@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4b5bbaf1d475eeb8f6e468d61996131baf9c772b
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-windows-device"></a>Windows cihazınızı güncelleştirmeniz gerekiyor
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
@@ -40,4 +36,3 @@ Windows çalıştıran bilgisayarlarda **işletim sistemi** için arama yapın v
 Windows 10 ve Windows 8.1 için __arama çubuğuna__ __Windows sürümü__ yazın. __Yardımcı olabilir miyim?__ altında __windows sürümü__ seçeneğini belirleyin. Sürüm numarası görüntülenir. Bu numara şuna benzer: __10.0.14393.447__.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

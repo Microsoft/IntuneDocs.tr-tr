@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d1276c983cdf0e22e2e78e79b6646e045c8fb135
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Mobile Threat Defense uygulamasının bulduğu bir tehdidi gidermeniz gerekiyor
 
 Mobile Threat Defense, Android cihazınızda potansiyel bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için sorunu düzeltmeniz gerekiyor. BT yöneticinizin Mobile Threat Defense’i nasıl ayarladığına bağlı olarak, bu tür sorunları gidermek için aşağıdaki uygulamalardan birini kullanmalısınız.
@@ -40,4 +36,3 @@ Mobile Threat Defense’in tehdit olarak algıladığı bir uygulama yüklediyse
 Uygulamayı kaldırdıktan sonra e-postanıza veya diğer şirket ya da okul verilerinize hemen erişim elde edersiniz. Uygulamayı kaldırma isteğini yoksayarsanız, uygulamayı kaldırana kadar şirket e-postanıza ve verilerinize erişiminizi kaybedersiniz.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

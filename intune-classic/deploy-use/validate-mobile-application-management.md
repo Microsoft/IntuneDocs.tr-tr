@@ -1,5 +1,5 @@
 ---
-title: "MAM kurulumunuzu doğrulama | Microsoft Docs"
+title: "MAM kurulumunuzu doğrulama"
 description: "Bu konular, MAM ilkenizin kurulumunun doğru yapıldığını ve beklendiği şekilde çalıştığını nasıl sınayıp doğrulayacağınızı açıklamaktadır."
 keywords: 
 author: andredm7
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>Mobil uygulama yönetimi kurulumunuzu doğrulama
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,7 +47,7 @@ Sınamalar MAM ilkelerinizin davranışının beklendiği gibi olmadığını g�
 ### <a name="what-to-do"></a>Yapılması gereken
 Kullanıcı durumuna göre gerçekleştirilecek eylemler şunlardır:
 
-- Kullanıcı MAM için lisanslı değilse, kullanıcıya, [Intune lisanslarını yönetme](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md) bölümünde anlatıldığı gibi bir Intune lisansı atayın.
+- Kullanıcı MAM için lisanslı değilse, kullanıcıya, [Intune lisanslarını yönetme](/intune/setup-steps) bölümünde anlatıldığı gibi bir Intune lisansı atayın.
 - Kullanıcı O365 için lisanslı değilse, kullanıcı için bir lisans edinin.
 - Kullanıcının lisansı **İade edilmedi** olarak listeleniyorsa, bu uygulama için doğru biçimde bir MAM ilkesi yapılandırıp yapılandırmadığınıza bakın.
 - Bu koşulların, MAM ilkelerinin geçerli olmasını istediğiniz tüm kullanıcılara uygulandığından emin olun.
@@ -59,4 +56,3 @@ Kullanıcı durumuna göre gerçekleştirilecek eylemler şunlardır:
 [Microsoft Intune ile mobil uygulama yönetimi ilkelerinizi yapılandırmak için hazırlanma](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Microsoft Intune ile mobil uygulama yönetimi ilkeleri kullanarak uygulama verilerini koruma](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

@@ -11,31 +11,26 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-windows-device-from-intune"></a>Windows cihazınızın Intune kaydını silme
 
 Intune’a kaydolduysanız, ancak artık iş veya okul için Windows cihazınızı kullanmak istemiyorsanız ve iş veya okul e-postalarına, uygulamalarına veya diğer kaynaklara erişmeye ihtiyacınız yoksa cihazınızın kaydını silmeniz gerekir. Cihazınızın Intune kaydını kaldırdıktan sonra artık bu kaynaklara erişemezsiniz. Cihazınızın kaydını sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
 Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde gösterilen ve kullandığınız cihaz türüyle eşleşen bağlantıyı kullanın:
 
--    [Windows 10 cihazınızın kaydını silme](#unenroll-your-windows-10-device)
--    [Windows 8.1 bilgisayarınızın kaydını silme](#unenroll-your-windows-81-computer)
--    [Windows Phone 8.1 cihazınızın kaydını silme](#unenroll-your-windows-phone-81-device)
+-   [Windows 10 cihazınızın kaydını silme](#unenroll-your-windows-10-device)
+-   [Windows 8.1 bilgisayarınızın kaydını silme](#unenroll-your-windows-81-computer)
+-   [Windows Phone 8.1 cihazınızın kaydını silme](#unenroll-your-windows-phone-81-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Windows 10 cihazınızın kaydını silme
 
@@ -68,4 +63,3 @@ Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde g�
 4.  **Hesabı sil** iletişim kutusunda **Sil**’e dokunun.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
