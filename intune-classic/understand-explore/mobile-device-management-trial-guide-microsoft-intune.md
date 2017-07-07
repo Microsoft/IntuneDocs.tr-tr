@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune&quot;da mobil cihaz yönetimini değerlendirme | Microsoft Docs"
+title: "Microsoft Intune'da mobil cihaz yönetimini değerlendirme"
 description: "Ücretsiz Intune deneme sürümünüzde MDM’yi değerlendirin."
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e0eb48c5bb2e0158d7b780af1c16139f10602c4e
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: adef9335d8f199e8dec56e92eb1fda8c180ac6ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Microsoft Intune'da mobil cihaz yönetimini değerlendirme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -44,7 +41,7 @@ Deneme sürümünde abonelik sürümünde yapabileceğiniz her şeyi yapabilirsi
 ## <a name="whats-not-covered"></a>Kapsanmayan konular
 |İlgileniyorsanız |Bunu okuyun |
 |------------------------|----------|
-|Sınama ortamı olmayan bir ortamda MDM | [Başlarken](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|Sınama ortamı olmayan bir ortamda MDM | [Başlarken](/intune/setup-steps) |
 |Intune ve System Center Configuration Manager ile MDM | [Karma mobil cihaz yönetimi](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 Yukarıdaki kılavuzlar Intune'u üretim ortamlarında ayarlamanıza yardımcı olduğundan daha uzundurlar ve değerlendirme kılavuzunda yapmanız gerekenlere göre çok daha fazla karar noktası içerirler.
@@ -67,7 +64,7 @@ Mobil cihazları yönetmek için Intune’u System Center Configuration Manager 
 Deneme sürümünde MDM yetkilisi olarak Intune’u ayarlayacağız; deneme sürümünüzü üretim ortamınızda kullanmaya karar vermediğiniz sürece üretim ortamınızı etkilemez.
 
 1. [Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **Mobil Cihaz Yönetimi**’ni seçin.
-2. **Görevler** listesinde, **MDM Yetkilisini Ayarla**’yı seçin. **MDM Yetkilisini Ayarla** iletişim kutusu açılır. <!---screen shot--->
+2. **Görevler** listesinde, **MDM Yetkilisini Ayarla**’yı seçin. **MDM Yetkilisini Ayarla** iletişim kutusu açılır.
 3. Intune, Intune’u MDM yetkiliniz olarak isteyip istemediğinizi onaylamanızı ister. Mobil cihazları yönetmek için Intune kullanmak istiyorsanız onay kutusunu işaretleyin ve ardından **Evet**'i seçin.
 
 ## <a name="enroll-your-test-devices-into-intune"></a>Sınama cihazlarınızı Intune'a kaydetme
@@ -80,14 +77,14 @@ Bu kılavuzda bir Android telefonla bir Apple iPad kaydedeceğiz ve bu bölümü
 Kullanıcılar iOS cihazlarını kaydetmeden önce, Intune'u bu cihazları yönetmek üzere ayarlamanız gerekir.
 
 1. **Sertifika imzalama isteği alma**<br/>
-Yönetici hesabınızla Intune’da oturum açın ve **Yönetim** > **Mobil Cihaz Yönetimi** > **iOS ve Mac OS X** > **APNs Sertifikasını Karşıya Yükle**'ye gidin ve **APNs sertifika isteğini indir**’i seçin. Sertifika imzalama isteği (.csr) dosyasını yerel olarak kaydedin. .csr dosyası Apple Anında İletilen Bildirim Sertifikaları Portalı'ndan bir güven ilişkisi sertifikası istemek için kullanılır. <!--- screen shot--->
-2.    **Bir Apple Anında İletilen Bildirim Servisi sertifikası alma**<BR/>
+Yönetici hesabınızla Intune’da oturum açın ve **Yönetim** > **Mobil Cihaz Yönetimi** > **iOS ve Mac OS X** > **APNs Sertifikasını Karşıya Yükle**'ye gidin ve **APNs sertifika isteğini indir**’i seçin. Sertifika imzalama isteği (.csr) dosyasını yerel olarak kaydedin. .csr dosyası Apple Anında İletilen Bildirim Sertifikaları Portalı'ndan bir güven ilişkisi sertifikası istemek için kullanılır.
+2.  **Bir Apple Anında İletilen Bildirim Servisi sertifikası alma**<BR/>
 [Apple Anında İletilen Bildirim Sertifikaları Portalı](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2)'na gidin ve .csr dosyasını kullanarak APNs sertifikasını oluşturmak için şirketinizin Apple kimliğiyle oturum açın. **Apple’ın Anında İletilen Sertifika Portalı’nda Karşıya Yükle**’yi seçtikten sonra, APNs için kullanılamayan bir .json dosyası alırsınız. İndirme işlemini tamamlayın, Üçüncü Taraf Sunucular için Sertifikalar için Apple Anında İletme Sertifikaları Portalı’na dönün ve **İndir**’i seçin.<br/>
 APNs (.pem) sertifikasını indirin ve dosyayı yerel olarak kaydedin. Bu Apple kimliği daha sonra APNs sertifikanızı yenilemek için kullanılır.
-3.    **APNs sertifikasını Intune'a ekleme**<BR/>
+3.  **APNs sertifikasını Intune'a ekleme**<BR/>
 Microsoft Intune yönetim konsolunda **Yönetim** > **Mobil Cihaz Yönetimi** > **iOS ve Mac OS X** > **APNs Sertifikasını Karşıya Yükle**'ye gidin ve **APNs sertifikasını karşıya yükle**’yi seçin. Sertifika (.pem) dosyasına gidin, **Aç**’ı seçin ve Apple kimliğinizi girin. APNs sertifikası ile. Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir.
-4.    **Kullanıcılarınıza, şirket kaynaklarına erişmek için cihazlarını nasıl kaydedeceklerini anlatın.**<br/>
-Son kullanıcı kayıt talimatları için bkz. [iOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) veya [Mac OS X cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-mac-os-x). Kayıt işlemi kullanıcıları neler bekleyebilecekleri ve BT yöneticilerinin görebileceği ve göremeyeceği cihaz içeriği hakkında bilgilendirir.
+4.  **Kullanıcılarınıza, şirket kaynaklarına erişmek için cihazlarını nasıl kaydedeceklerini anlatın.**<br/>
+Son kullanıcı kayıt talimatları için bkz. [iOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) veya [Mac OS X cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). Kayıt işlemi kullanıcıları neler bekleyebilecekleri ve BT yöneticilerinin görebileceği ve göremeyeceği cihaz içeriği hakkında bilgilendirir.
 
 
 ### <a name="learn-more-about-device-enrollment"></a>Cihaz kaydı hakkında daha fazla bilgi edinin
@@ -96,27 +93,16 @@ Intune aşağıdaki cihaz platformlarını destekler:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
-Cihaz yönetimini etkinleştirme gereksinimleri, yönetmek istediğiniz platformlarda bağlıdır.
+Cihaz yönetimini etkinleştirme gereksinimleri, yönetmek istediğiniz platformlara bağlıdır.
 - **Android** mobil cihazlar kullanıcıların Google Play’den erişilebilen [Şirket Portalı uygulamasını kullanarak kaydolmalarına](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) imkan tanır. Intune’da ek yapılandırma gerekmez.
-- [**iOS ve Mac OS X** için kurulum gereksinimleri]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [**Windows Phone** için kurulum gereksinimleri]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+- [**iOS ve Mac OS X için kurulum gereksinimleri**](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 
-<!--- ## Verify enrollment--->
-<!--- START HERE
-
-### iOS and Mac OS X
-Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
+- [**Windows Phone için kurulum gereksinimleri**](/intune-classic/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
 
 
 
-### Windows Phone 8.1
-Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
-
-## Install the previously deployed app
-Open the Company Portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.--->
 
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Kullanıcıları ve cihazları düzenlemek için grup oluşturma](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-

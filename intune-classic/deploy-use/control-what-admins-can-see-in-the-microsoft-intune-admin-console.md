@@ -1,5 +1,5 @@
 ---
-title: "Konsol görünümlerini yönetici rolleri için özelleştirme | Microsoft Docs"
+title: "Konsol görünümlerini yönetim rolleri için özelleştirme"
 description: "Intune yönetim konsolu görünümünü filtreleyerek, yöneticilerinize yalnızca rolleri için gereken öğelerin gösterilmesini sağlamanıza yardımcı olmak için bu konuyu kullanın."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1ab4c0a7ae79d0d3396efe7c54deaf1d794a5aeb
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b2016bc4f2c7ef63722becc413422d618939336
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>Intune konsol görünümlerini yönetici rollerine göre özelleştirme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -72,4 +69,3 @@ Yöneticilerinizin yalnızca rolleri için görmeleri gereken öğeleri görmele
         -   Geçiş kodu sıfırlama
 
 Yapılandırdığınız yöneticiye, Intune yönetim konsolunu bir sonraki açısında kendisine onun için belirttiğiniz erişim düzeyi verilir.
-

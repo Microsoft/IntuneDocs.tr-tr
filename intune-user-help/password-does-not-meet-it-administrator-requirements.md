@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Parolanız BT yöneticinizin gereksinimlerini karşılamıyor
 
 Şirket veya okul kaynaklarınıza erişmek için kullandığınız parola, BT yöneticinizin ayarladığı bir veya birkaç gereksinimi karşılamıyor. Sorunu düzeltmek için cihazınızda gösterilen yönergeleri izleyin. Sorunların açıklamaları aşağıda listelenmiştir.
@@ -51,4 +47,3 @@ PIN veya parola sorunu açıklamaları:
 - **Parola, gereksinimlerini karşılamaya yetecek kadar karmaşık değil**. BT yöneticiniz parolanızda daha karmaşık karakterler kullanmanızı gerekli hale getirmiş. Sayılar, büyük harfler ve $, % ve # benzeri semboller gibi karakterler kullanmayı deneyin. Cihazınızdaki diğer hesaplar için de geçerli olabileceğinden, parolanızın BT tarafından cihazınız için ayarlanan gereksinimleri karşıladığından emin olmak üzere diğer iş hesaplarını da kontrol ettiğinizden emin olun.
 
 Parolanızı gereksinimlerle uyumlu hale getirme konusunda sorun yaşıyorsanız, BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

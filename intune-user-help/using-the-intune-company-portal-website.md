@@ -5,27 +5,23 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
-ms.openlocfilehash: f01d8b31f493b7103fe788aa62d37f9c73981984
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/26/2017
-
-
+ms.openlocfilehash: 90168dae6b73185ae8cdf6c55093c79ab3d729c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-the-intune-company-portal-website"></a>Intune Şirket Portalı web sitesini kullanma
 [Şirket Portalı web sitesi](https://portal.manage.microsoft.com), Intune’a kaydettikleri bilgisayarları ve cihazları yönetmek için son kullanıcıların kullanabileceği bir web sayfasıdır.
 
@@ -41,7 +37,7 @@ Kullanıcılar, Şirket Portalı web sitesinden şu görevleri gerçekleştirebi
 
 -   [Cihazı uzaktan kilitleme](remote-lock-your-device-cpwebsite.md)
 
--    [Uygulamaların daha hızlı bir şekilde yüklenmesini sağlamak için cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)
+-   [Uygulamaların daha hızlı bir şekilde yüklenmesini sağlamak için cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)
 
 -   İletişim bilgilerini siz yapılandırdıysanız, BT yöneticinizin iletişim bilgilerini bulun
 
@@ -49,9 +45,4 @@ Kullanıcılar, Şirket Portalı web sitesinden şu görevleri gerçekleştirebi
 
 -   Bilgisayarlarını uzaktan yönetme (yalnızca bilgisayarlarda kullanılabilir)
 
-Son kullanıcılar **Şirket Portalı web sitesinde**, cihazınıza yükledikleri **Şirket Portalı uygulamasını** kullanarak gerçekleştirdikleri görevlerin çoğunu gerçekleştirebilir. Son kullanıcıların cihazlarında gerçekleştirebilecekleri tüm görevlere bağlantılar için aşağıdaki sayfalara bakın:
-
-- [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
-- [iOS veya Mac OS cihazınızı Intune ile kullanma](using-your-ios-or-macOS-device-with-intune.md)
-- [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
-
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

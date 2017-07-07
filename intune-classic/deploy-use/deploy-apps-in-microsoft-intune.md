@@ -1,5 +1,5 @@
 ---
-title: "Uygulamaları dağıtma | Microsoft Docs"
+title: "Uygulama dağıtma"
 description: "Bu konu başlığı altındaki bilgileri, uygulamaları Microsoft Intune’la dağıtmanıza yardımcı olması için kullanın."
 keywords: 
 author: robstackmsft
@@ -14,12 +14,11 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: f684a1b8d74f7625d3262d4f02eb9841a203e883
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Microsoft Intune'da uygulamaları dağıtma
 
@@ -74,4 +73,3 @@ Uygulamayı bir iOS cihazına **Gerekli** olarak dağıttıysanız, kullanıcı 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Uygulamayı dağıttıktan sonra, ilerleme durumunu izleyebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları izleme](monitor-apps-in-microsoft-intune.md).
-

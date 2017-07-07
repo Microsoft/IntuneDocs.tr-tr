@@ -226,12 +226,12 @@
 ## [MDM yetkilinizi değiştirme](deploy-use/change-mdm-authority.md)
 
 ## [Son kullanıcılarınızı Intune hakkında nasıl bilgilendirebilirsiniz](/intune/end-user-educate?toc=/intune-classic/toc.json)
-### [Şirket Portalı iletilerini ve son kullanıcıları görün ](deploy-use/help-end-users-understand-company-portal-app-messages.md)
-### [MAM etkin uygulamalarla Android için son kullanıcı deneyimi](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [MAM etkin uygulamalarla iOS için son kullanıcı deneyimi](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-### [Android kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-android-users-get-their-apps.md)
-### [iOS kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Windows kullanıcılarınız uygulamalarını nasıl alır](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Şirket Portalı iletilerini ve son kullanıcıları görün ](/intune/end-user-company-portal-messages?toc=/intune-classic/toc.json)
+### [MAM etkin uygulamalarla Android için son kullanıcı deneyimi](/intune/end-user-mam-apps-android?toc=/intune-classic/toc.json)
+### [MAM etkin uygulamalarla iOS için son kullanıcı deneyimi](/intune/end-user-mam-apps-ios?toc=/intune-classic/toc.json)
+### [Android kullanıcılarınız uygulamalarını nasıl alır](/intune/end-user-apps-android?toc=/intune-classic/toc.json)
+### [iOS kullanıcılarınız uygulamalarını nasıl alır](/intune/end-user-apps-ios?toc=/intune-classic/toc.json)
+### [Windows kullanıcılarınız uygulamalarını nasıl alır](/intune/end-user-apps-windows?toc=/intune-classic/toc.json)
 
 
 # Uygulama Geliştirme ve Özelleştirme

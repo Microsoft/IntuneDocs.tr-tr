@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f720befe-a6f9-4422-aa9b-4d85c9fc94e2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-android-device"></a>Android cihazınızdaki yaygın sorunları çözme
 
 Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](http://portal.manage.microsoft.com) iletişim bilgilerini kullanarak BT yöneticinize ulaşmanızı öneririz.
@@ -45,4 +41,3 @@ Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar or
 - [Android cihazınızı şifreli gibi görünüyor, ancak Şirket Portalı aksini söylüyor](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [Android cihazınıza bir Cihaz Tehdit Koruması uygulaması yüklemeniz istendi](you-are-prompted-to-install-mtd-android.md)
 - [Cihaz Tehdit Koruması uygulamasının Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-

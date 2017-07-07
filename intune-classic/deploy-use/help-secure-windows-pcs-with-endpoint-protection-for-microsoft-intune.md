@@ -1,5 +1,5 @@
 ---
-title: "Windows bilgisayarlar için Endpoint Protection | Microsoft Docs"
+title: "Windows bilgisayarları için Endpoint Protection"
 description: "Kötü amaçlı yazılım tehditlerine karşı gerçek zamanlı koruma sağlayan Endpoint Protection ile yönetilen bilgisayarlarınızın güvenliğini koruyun."
 keywords: 
 author: nathbarn
@@ -14,16 +14,16 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 180da5e2e0d6980214fff1cfffa3fb1d5b0058d3
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c51f9e471b432b13e0680538c5cf4ad68c1c12f1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune, kötü amaçlı yazılım tehditlerine karşı gerçek zamanlı koruma sağlayan, kötü amaçlı yazılım tanımlarını güncel tutan ve bilgisayarları otomatik olarak tarayan Endpoint Protection ile yönetilen bilgisayarlarınızın korunmasına yardımcı olabilir. Endpoint Protection, kötü amaçlı yazılım saldırılarını yönetmek ve izlemek için yardımcı araçlar da sağlar.
 
 Intune istemcisini bilgisayarlarınıza henüz yüklemediyseniz, bkz. [Microsoft Intune ile Windows bilgisayarı istemcisini yükleme](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -192,4 +192,3 @@ Daha fazla yardım ve destek için bkz. [Microsoft Intune Endpoint Protection’
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

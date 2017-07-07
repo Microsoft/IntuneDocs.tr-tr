@@ -1,5 +1,5 @@
 ---
-title: "Android için uyumluluk ilkesi ayarları | Microsoft Docs"
+title: "Android için uyumluluk ilkesi ayarları"
 description: "Bu konu başlığı altında, Android cihazları için cihaz uyumluluk ilkesi ayarları açıklanır."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 06996ca5d6c330357d6fdee19963d425bc353070
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc698998491fa56769376c013fb76ac75b5627bb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune’da Android cihazları için uyumluluk ilkesi ayarları
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -90,4 +86,3 @@ Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birini seç
   Yükseltmenin yapılması hakkındaki bilgilere yönelik bir bağlantı görüntülenir. Kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 
 - **İzin verilen en yüksek işletim sistemi:** Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullanıyorsa, şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisine başvurması istenir. Kuralda ilgili işletim sistemi sürümüne izin veren bir değişiklik oluncaya kadar, bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
-

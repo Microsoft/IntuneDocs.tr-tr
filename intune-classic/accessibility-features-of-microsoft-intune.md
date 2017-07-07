@@ -14,15 +14,12 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 33d9fea9c0177722d6772e33b9a343a9c1edfe5c
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune Erişilebilirlik Özellikleri
 Microsoft Windows'daki erişilebilirlik özelliklerine ve araçlara ek olarak, aşağıdaki özellikler Microsoft Intune’u engelli kişiler için daha erişilebilir hale getirir: Klavye kısayollarını kullanma
 
@@ -46,4 +43,3 @@ Microsoft Windows'daki erişilebilirlik özelliklerine ve araçlara ek olarak, a
 |Seçili bir cihaz için eylemleri görüntüleme|Sağ ok|
 > [!NOTE]
 > Microsoft Intune portallarında, standart Internet Explorer klavye kısayolları kullanılarak gezilebilir.
-

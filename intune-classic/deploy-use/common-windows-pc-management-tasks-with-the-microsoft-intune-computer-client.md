@@ -14,15 +14,12 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 535979b6adf25c67daaab2df924cbb0e21e15a36
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Intune yazılım istemcisi ile genel Windows bilgisayarı yönetim görevleri
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,6 +36,5 @@ Bu konu, Intune yazılımı istemcisini yükleyerek bilgisayar olarak yönettiğ
 - [Windows bilgisayarlar için kullanıcı cihazı bağlamayı yönetme](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) - Bir kullanıcıya yazılım dağıtmadan önce bir kullanıcının bilgisayara ne zaman ve nasıl bağlamanız gerektiği açıklanır.
 
 - [Windows bilgisayarlar için uzaktan yardım isteme ve sağlama](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) - Intune bilgisayar kullanıcılarının sizden nasıl uzaktan yardım alabileceği, önkoşullar ve TeamViewer kurulumu açıklanır.
-
 
 

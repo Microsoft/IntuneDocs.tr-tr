@@ -1,5 +1,5 @@
 ---
-title: "iOS ilke ayarları | Microsoft Docs"
+title: "iOS ilke ayarları"
 description: "Intune ile yönettiğiniz iOS cihazlarında ayarları ve özellikleri denetleyen ilkeler oluşturun."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da iOS ilke ayarları
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,7 +85,7 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Yönetilen uygulamaların iCloud ile veri eşitlemesine izin verme**|Intune ile yönettiğiniz uygulamaların, kullanıcının iCloud hesabıyla veri eşitlemesine izin verin.|
 |**İletim’in başka bir cihazda etkinliklerini sürdürmesine izin verme**|Kullanıcının bir iOS cihazında başladığı çalışmayı başka bir iOS veya Mac OS X cihazında sürdürmesine izin verin.|
 |**iCloud Fotoğraf Paylaşma’ya izin ver**|Cihazda **iCloud Fotoğraf Paylaşımı**’nı devre dışı bırakmak için **Hayır** seçeneğini belirleyin.|
-|**iCloud Fotoğraf Kitaplığı’na izin ver**|**Hayır** seçeneği ayarlanırsa kullanıcıların fotoğraflar ve videoları bulutta depolamasını sağlayan iCloud fotoğraf kitaplığının kullanımı devre dışı bırakılır.    Bu ayar **Hayır** olarak belirlenirse iCloud Fotoğraf Arşivi'nden cihaza tamamen indirilmeyen tüm fotoğraflar cihazdan kaldırılır.|
+|**iCloud Fotoğraf Kitaplığı’na izin ver**|**Hayır** seçeneği ayarlanırsa kullanıcıların fotoğraflar ve videoları bulutta depolamasını sağlayan iCloud fotoğraf kitaplığının kullanımı devre dışı bırakılır.   Bu ayar **Hayır** olarak belirlenirse iCloud Fotoğraf Arşivi'nden cihaza tamamen indirilmeyen tüm fotoğraflar cihazdan kaldırılır.|
 
 ### <a name="application-settings-for-the-browser"></a>Tarayıcı için uygulama ayarları
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
@@ -387,4 +384,3 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "Uygulama başına VPN için paket aile adı (PFN) bulma | Microsoft Docs"
+title: "Uygulama başına VPN için bir paket aile adı (PFN) bulma"
 description: "Uygulama başına VPN’yi yapılandırabilmek için bir PFN bulun."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0fd7d7e1e09f193479c6ad221c8ace7470942c5a
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: eea3b9e2888f07399c8cda1e81ae8a5318d02d42
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Uygulama başına VPN yapılandırması için paket aile adı (PFN) bulma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -74,10 +71,10 @@ OneNote için şu bilgiler alınır:
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>Uygulama bilgisayarda yüklü olmadığında bir PFN bulma
 
-1.    https://www.microsoft.com/store/apps adresine gidin.
-2.    Arama çubuğuna uygulamanın adını girin. Bizim örneğimizde, OneNote için arama yapın.
-3.    Uygulamanın bağlantısını seçin. URL’nin sonunda bir dizi harf olduğuna dikkat edin. Bizim örneğimizde, URL şöyle görünür: `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`.
-4.    Farklı bir sekmede, şu URL’yi yapıştırın: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. `<app id>` bölümünü, https://www.microsoft.com/store/apps adresinden aldığınız uygulama kimliğiyle değiştirin (3. adımdaki URL’nin sonunda yer alan harf serisi). Bizim OneNote örneğimizde, şunu yapıştırırsınız: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+1.  https://www.microsoft.com/store/apps adresine gidin.
+2.  Arama çubuğuna uygulamanın adını girin. Bizim örneğimizde, OneNote için arama yapın.
+3.  Uygulamanın bağlantısını seçin. URL’nin sonunda bir dizi harf olduğuna dikkat edin. Bizim örneğimizde, URL şöyle görünür: `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`.
+4.  Farklı bir sekmede, şu URL’yi yapıştırın: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. `<app id>` bölümünü, https://www.microsoft.com/store/apps adresinden aldığınız uygulama kimliğiyle değiştirin (3. adımdaki URL’nin sonunda yer alan harf serisi). Bizim OneNote örneğimizde, şunu yapıştırırsınız: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
 Microsoft Edge istediğiniz bilgileri görüntüler; Internet Explorer’da bilgileri görmek için **Aç**’ı seçin. PFN değeri ilk satırda verilir. İşte bizim örneğimizin sonuçları:
 
@@ -88,4 +85,3 @@ Microsoft Edge istediğiniz bilgileri görüntüler; Internet Explorer’da bilg
 `  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",`
 `  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`
 `}`
-

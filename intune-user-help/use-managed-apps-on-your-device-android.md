@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 371e534a25df470edf2731b901640092e1a6e366
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="use-managed-apps-on-your-android-device"></a>Android cihazınızdaki yönetilen uygulamaları kullanma
 
 Yönetilen uygulamalar, BT yöneticinizin ilgili uygulamada erişebildiğiniz şirket verilerini korumak üzere ayarlayabildiği uygulamalardır. Android cihazınızdaki yönetilen bir uygulamada bulunan şirket verilerine eriştiğinizde uygulamanın beklediğinizden biraz farklı çalıştığını fark edebilirsiniz. Örneğin, korunan şirket verilerini kopyalayıp yapıştıramayabilir veya bu verileri belirli konumlara kaydedemeyebilirsiniz.
@@ -78,4 +73,3 @@ BT bölümünüzün yönetebileceği bazı ortak uygulamalar şunlardır:
 -   Microsoft Word, Excel ve PowerPoint
 
 Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için BT yöneticinizle iletişim kurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

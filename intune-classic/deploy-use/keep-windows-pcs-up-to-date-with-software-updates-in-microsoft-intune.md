@@ -1,5 +1,5 @@
 ---
-title: "Windows bilgisayarları için yazılım güncelleştirmeleri | Microsoft Docs"
+title: "Windows bilgisayarları için yazılım güncelleştirmeleri"
 description: "Intune, en son düzeltme eklerinin ve yazılım güncelleştirmelerinin hızla yüklenmesini sağlayarak yönetilen bilgisayarlarınızı güncel tutmanıza yardımcı olur."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5530c1a85c53f76f94d5ebf6d356bfebd1aa2adb
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune, en son düzeltme eki ve yazılım güncelleştirmelerinin hızla yüklenmesini sağlayan yazılım güncelleştirmelerinin yönetilmesi de dahil olmak üzere çeşitli yollarla yönetilen bilgisayarlarınızı korumanıza yardımcı olabilir.
 
 Intune istemcisini bilgisayarlarınıza henüz yüklemediyseniz, bkz. [Microsoft Intune ile Windows bilgisayarı istemcisini yükleme](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -255,4 +255,3 @@ Listeden bir güncelleştirme seçtiğinizde, aşağıdaki tabloda gösterildiğ
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

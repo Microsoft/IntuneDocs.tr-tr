@@ -1,11 +1,11 @@
 ---
-title: "Cihaz grubu eşleme ile cihazları kategorilere ayırma | Microsoft Docs"
+title: "Cihazları cihaz grubu eşleme ile kategorize etme"
 description: "Cihazların yönetimini kolaylaştırmak için, Microsoft Intune cihaz grubu eşleme özelliğini kullanarak bu cihazları kendi tanımladığınız kategoriler altında gruplandırın."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,12 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 618827ed6baf7a9dec6aef804f19bcbca08ed39f
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ff136d430496392b6ca8e5b944820fe9e14553d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Cihazları Microsoft Intune’da cihaz grubu eşleme ile kategorilere ayırma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -32,7 +30,7 @@ Cihaz grubu eşleme aşağıdaki iş akışını kullanır:
 1. Kullanıcıların cihazlarını kaydederken arasından seçim yapacağı kategoriler oluşturma
 2. Kullanmak istediğiniz her kategori için gruplar oluşturur veya var olan grupları kullanırsınız. Kullanmakta olduğunuz Intune sürümüne bağlı olarak, bunlar ya Intune grupları ya da Azure Active Directory güvenlik grupları olacaktır.
 2. Seçtiğiniz kategoriyi oluşturduğunuz cihaz grubuna eşleyen kurallar yapılandırırsınız.
-3. Son kullanıcılar cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Bu seçimi yaptıklarında cihazları, oluşturduğunuz ilgili gruba otomatik olarak eklenir. Bir cihaz zaten kaydedilmişse, Şirket Portalı uygulamasına bir sonraki erişiminde son kullanıcıdan bir kategori seçmesi istenir.
+3. iOS ve Android cihazlarının son kullanıcıları cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Bir Windows cihazına bir kategori atamak için, son kullanıcıların Şirket Portalı web sitesini kullanmaları gerekir (ayrıntılar için bu konu başlığındaki **Cihaz gruplarını yapılandırdıktan sonra** bölümüne bakın).
 4. Ardından bu gruplara ilkeler ve uygulamalar dağıtabilirsiniz.
 
 İstediğiniz herhangi bir cihaz kategori oluşturabilirsiniz, örneğin:
@@ -86,8 +84,13 @@ Devam etmek için Azure Active Directory belgelerindeki [Gelişmiş kurallar olu
 
 ## <a name="after-you-configure-device-groups"></a>Cihaz gruplarını yapılandırdıktan sonra
 
-Kullanıcılar cihazlarını kaydettiklerinde onlara sizin yapılandırdığınız kategori listesi gösterilir. Kategoriyi seçip kaydı tamamladıktan sonra, cihazları seçtikleri kategoriye karşılık gelen Intune cihaz grubuna veya Active Directory güvenlik grubuna eklenir.
+iOS ve Android cihazlarının son kullanıcıları cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Kategoriyi seçip kaydı tamamladıktan sonra, cihazları seçtikleri kategoriye karşılık gelen Intune cihaz grubuna veya Active Directory güvenlik grubuna eklenir.
+
+Bir Windows cihazına bir kategori atamak için, cihazı kaydettikten sonra son kullanıcıların Şirket Portalı web sitesini (portal.manage.microsoft.com) kullanmaları gerekir. Bir Windows cihazında, web sitesine erişin ve **Menü** > **Cihazlarım**'a gidin. Sayfada listelenen kayıtlı bir cihazı seçin, sonra bir kategori seçin. 
+
+Bir kategori seçtikten sonra cihaz, oluşturduğunuz karşılık gelen gruba otomatik olarak eklenir. Cihaz siz kategorileri yapılandırmadan önce kaydedildiyse, son kullanıcı Şirket Portalı web sitesinde cihaz hakkında bir bildirim görür ve Şirket Portalı uygulamasına iOS veya Android üzerinde bir daha eriştiğinde kendisinden bir kategori seçmesi istenir.
+
+
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-

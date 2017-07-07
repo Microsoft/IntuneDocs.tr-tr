@@ -1,5 +1,5 @@
 ---
-title: "Windows ilke ayarları | Microsoft Docs"
+title: "Windows ilke ayarları"
 description: "Kayıtlı Windows 8 ve Windows 8.1 cihazlarının ayarlarını yapılandırmak için Intune Windows genel yapılandırma ilkesini (Windows 8.1 ve üstü) kullanın."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d95852c20b98ee86552672cf03364980f06f010a
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ab39a1847dbba495b4946d12b96b6f8c724f38d8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows ilke ayarları
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -122,4 +119,3 @@ Kayıtlı Windows 8, ve Windows 8.1 ve Windows RT 8.1 cihazlarının aşağıdak
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

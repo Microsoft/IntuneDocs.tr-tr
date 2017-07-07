@@ -1,5 +1,5 @@
 ---
-title: "Cihazlarda iOS Etkinleştirme Kilidi’ni yönetme | Microsoft Docs"
+title: "Cihazlarda iOS Etkinleştirme Kilidi’ni yönetme"
 description: "Microsoft Intune, iOS 7.1 ve daha sonraki sürümlere sahip cihazlar için iPhone’umu Bul uygulamasının bir özelliği olan iOS Etkinleştirme Kilidi’ni yönetmenize yardımcı olabilir."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 22ccccefae44190ffb2d65bdf475eaef1f9b8bd2
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3695e4c047edd9b788768db36184460f0e27d3bc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Microsoft Intune için Etkinleştirme Kilidi’ni atlama ile iOS cihazlarının korunmasına yardımcı olma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -106,4 +103,3 @@ Hangi cihazların Etkinleştirme Kilidi kullandığını iki yolla görebilirsin
 ### <a name="see-also"></a>Ayrıca bkz.
 [Cihazları devre dışı bırakma](retire-devices-from-microsoft-intune-management.md)
 [Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-

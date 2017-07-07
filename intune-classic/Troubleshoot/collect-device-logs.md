@@ -1,5 +1,5 @@
 ---
-title: "Cihaz günlüklerini toplama| Microsoft Docs"
+title: "Cihaz günlüklerini toplama"
 description: "Yönetilen cihazlarınızdan günlük toplamayı öğrenin."
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f75719a02e37f6285fb1d7c5de32bb7eb4b3a1ed
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b15e4b7fa0c650a85a080c42d00cd75cb8783c62
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="device-logs"></a>Cihaz günlükleri
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,7 +43,7 @@ Kullanıcılarınızın veri günlüklerini size nasıl gönderebileceği hakkı
 
 Kullanıcılar, [BT yöneticinize iOS kayıt hatalarını gönderme](/intune-user-help/send-errors-to-your-it-admin-ios) konu başlığı altında açıklandığı gibi kayıt hatalarını size gönderebilir.
 
-Kullanıcılar, [iOS Cihaz Günlükleri Gönderme](/intune-user-help/send-logs-to-your-it-admin-by-email-ios) konusunda açıklandığı gibi cihaz günlükleri gönderebilirler.
+Kullanıcılar, [iOS Cihaz Günlükleri Gönderme](/intune-user-help/send-logs-to-microsoft-ios) konusunda açıklandığı gibi cihaz günlükleri gönderebilirler.
 
 ### <a name="mac-os-x-logs"></a>Mac OS X günlükleri
 
@@ -61,4 +58,3 @@ Windows Phone Şirket Portalı uygulamasında kullanıcılar, menüye erişmek i
 ### <a name="windows"></a>Windows
 
 Windows Şirket Portalı'nda günlükler, *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState* konumunda bulunur.
-

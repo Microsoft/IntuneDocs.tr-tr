@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-or-change-your-passcode"></a>Geçiş kodunuzu ayarlama veya değiştirme
 
 iOS cihazınız BT yöneticinizin geçiş kodu ilkesiyle uyumlu değilse, sorunu kısaca açıklayan ve geçiş kodunuzun gereksinimlere uymasını sağlamak için yapmanız gerekenleri anlatan bir ileti görüntülenir.
@@ -46,4 +42,3 @@ Geçiş kodu gereksinimlerine uyan bir geçiş kodu ayarlama konusunda sorun ya�
 3. BT yöneticinizin gereksinimlerini karşılayan yeni bir geçiş kodu girin ve ardından doğrulamak için bu geçiş kodunu yeniden girin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

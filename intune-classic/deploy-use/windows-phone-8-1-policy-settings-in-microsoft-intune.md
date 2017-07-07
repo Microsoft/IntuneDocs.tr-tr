@@ -1,5 +1,5 @@
 ---
-title: "Windows Phone 8.1 ilke ayarları | Microsoft Docs"
+title: "Windows Phone 8.1 ilke ayarları"
 description: "Intune, Windows Phone 8.1 cihazlarında yapılandırabileceğiniz çeşitli yerleşik genel ayarlar sağlar. Bunlara ek olarak, Intune’da sağlanmayan özel ayarlar oluşturmak için OMA-URI değerleri belirtebilirsiniz."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 091c8c3867fffa2ba6857f79ae40ed618aaf0b72
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows Phone 8.1 ilke ayarları
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -174,4 +171,3 @@ Windows Phone cihazlar için OMA-URI ayarlarını oluşturmanıza yardımcı olm
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

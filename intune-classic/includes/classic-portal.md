@@ -1,4 +1,4 @@
 |Uygulama hedefi: Klasik konsolda Intune |
 |--|
-|Azure portalında Intune hakkında belgeler mi arıyorsunuz? [Buraya gidin](https://docs.microsoft.com/intune/what-is-intune).|
+|Azure'da Intune ile ilgili belge mi arıyorsunuz? [Buraya gidin](https://docs.microsoft.com/intune/what-is-intune).|
 | |
