@@ -1,12 +1,12 @@
 ---
 title: "Windows 8.1 ve üzeri için Wi-Fi ayarlarını içeri aktarma"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Wi-Fi ayarlarını Windows’dan Intune Wi-Fi profiline aktarma."
+titleSuffix: Intune on Azure
+description: "Wi-Fi ayarlarını Windows’dan Intune Wi-Fi profiline aktarma.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 80181ce809265dc4289e56ef65aff66214d2e765
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c4ef9bf6ed3f731afada55d2af71d56367f4638d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Microsoft Intune’da Windows 8.1 ve üzeri cihazlar için Wi-Fi ayarlarını içeri aktarma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Windows 8.1 veya Windows 10 masaüstü veya mobil çalıştıran cihazlar için daha önce bir dosyaya aktarılmış Wi-Fi yapılandırma profilini içeri aktarabilirsiniz.
 
@@ -41,7 +38,7 @@ Windows'da **netsh wlan** yardımcı programını kullanarak var olan bir Wi-Fi 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Wi-Fi ayarlarını Intune'da içeri aktarma
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 3. Profiller dikey penceresinde **Profil Oluştur**’a tıklayın.
@@ -55,4 +52,3 @@ Windows'da **netsh wlan** yardımcı programını kullanarak var olan bir Wi-Fi 
 8. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
 
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
-

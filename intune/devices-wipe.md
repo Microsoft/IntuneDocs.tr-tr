@@ -1,12 +1,12 @@
 ---
 title: "Intune kullanarak cihazlarda tam veya seçmeli silme"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Cihazda şirket verilerini seçmeli temizleme işlemi yapmayı veya cihazda tam temizleme işlemi yapıp fabrika ayarlarına sıfırlamayı öğrenin."
+titleSuffix: Intune on Azure
+description: "Cihazda şirket verilerini seçmeli temizleme işlemi yapmayı veya cihazda tam temizleme işlemi yapıp fabrika ayarlarına sıfırlamayı öğrenin.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-full-or-selective-wipe"></a>Tam veya seçmeli temizleme kullanma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan ve Intune tarafından yönetilen cihazlardaki uygulamaları ve verileri temizleyebilirsiniz. Bunu yapmak için, Intune seçmeli temizleme ve tam temizleme özellikleri sağlar. Kullanıcılar ayrıca Intune'a kayıtlı şahsi cihazlara Intune Şirket Portalı uygulamasından uzaktan cihaz temizleme komutu da verebilir.
 
@@ -101,8 +98,8 @@ Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz tür
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikaları iptal edilir, ancak kaldırılmaz.|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim Aracısı|Cihaz Yöneticisi ayrıcalığı iptal edilir.|Cihaz Yöneticisi ayrıcalığı iptal edilir.|
-|E-posta|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|
-|Outlook|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|
+|E-posta|yok (e-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|
+|Outlook|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|
 |Azure Active Directory (AAD) Ayrılma|AAD Kaydı kaldırılır.|AAD Kaydı kaldırılır.|
 |Kişiler | Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.|Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 
@@ -130,4 +127,3 @@ Bir İş için Android cihazında seçmeli temizleme gerçekleştirilmesi, cihaz
 3.  Cihazın adını gösteren dikey pencerede **Şirket veri...** (Şirket verilerini kaldır) öğesini seçin ve ardından temizleme işlemini onaylamak için **Evet**’i seçin.
 
 Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz türlerine yayılması 15 dakikadan kısa sürer.
-

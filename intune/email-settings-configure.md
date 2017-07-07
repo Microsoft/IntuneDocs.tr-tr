@@ -1,12 +1,12 @@
 ---
 title: "Intune e-posta ayarlarını yapılandırma"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Yönettiğiniz cihazlarda şirket e-postasına bağlantılar oluşturmak için Intune’u nasıl yapılandıracağınızı öğrenin."
+titleSuffix: Intune on Azure
+description: "Intune'u, yönettiğiniz cihazlarda şirket e-postasına bağlantılar oluşturmak için nasıl yapılandıracağınızı öğrenin.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8e22d95dbaa51e8a799c771ec2cfe34f09e527d8
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ae3e8ec9f9c791d536fe311bc4d30cae41b9482
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune’da e-posta ayarlarını yapılandırma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Yönettiğiniz cihazları, şirket e-postasına bağlanmak ve eşitleme yapmak için gereken ayarlarla yapılandırmak için e-posta profillerini kullanabilirsiniz. Bu, tüm cihazlar genelinde standart ayarların kullanıldığından emin olmanıza yardımcı olabildiği gibi, doğru e-posta ayarlarını bilmeyen son kullanıcıların desteği daha az aramalarını sağlamaya da katkıda bulunabilir.
 
@@ -45,19 +42,20 @@ Bu konu başlığı altında verilen bilgileri kullanarak e-posta profilini yap�
 ## <a name="create-a-device-profile-containing-email-settings"></a>E-posta ayarlarını içeren bir cihaz profili oluşturma
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
 4. **Profil Oluştur** dikey penceresinde, e-posta profili için bir **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden, e-posta ayarlarını uygulamak istediğiniz cihaz platformunu seçin. Şu anda, e-posta cihaz ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
-    - **Outlook Web Access (OWA)**
+    - **Android** (yalnızca Samsung Android KNOX Standard)
+    - **Android for Work**
     - **Android**
     - **Windows Phone 8.1**
     - **Windows 10 ve üzeri**
 6. **Profil** türü açılan listesinden **E-posta**’yı seçin.
 7. Seçtiğiniz platforma bağlı olarak , yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
-    - [Android ayarları](email-settings-android.md)
+    - [Android for Work ve Samsung KNOX Standard ayarları](email-settings-android.md)
     - [iOS ayarları](email-settings-ios.md)
     - [Windows Phone 8.1 ayarları](email-settings-windows-phone-8-1.md)
     - [Windows 10 ayarları](email-settings-windows-10.md)
@@ -88,10 +86,10 @@ Kullanıcı zaten bir e-posta hesabı yapılandırmışsa, Intune e-posta profil
 
 - **iOS:** Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Yinelenen e-posta profili, Intune profilinin atamasını engeller. Bu durumda, Şirket Portalı kullanıcıya uyumlu olmadığını bildirir ve kullanıcıdan el ile yapılandırılan profili kaldırmasını ister. Bu sorunun önüne geçilmesine yardımcı olmak için, kullanıcılarınızdan e-posta profilini yüklemeden önce kaydolmalarını isteyin. Bu, Intune’un profili ayarlamasına olanak tanır.
 - **Windows:** Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Intune kullanıcı tarafından oluşturulmuş, var olan e-posta profilinin üzerine yazar.
-- **Android:** E-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanır ve Intune profili bunun üzerine yazılır.
+- **Android Samsung KNOX Standard** E-posta adresine bağlı olarak mevcut ve yinelenen bir e-posta profili algılanmış ve Intune profili bunun üzerine yazılmıştır.
 Android’in profili algılamak için konak adını kullanmaması nedeniyle, farklı konaklarda aynı e-posta adresinde kullanmak üzere birden çok e-posta profili oluşturursanız bunlar birbirinin üzerine yazılacağından, bunu yapmamanızı öneririz.
+- **Android for Work** Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur, cihaz iş profiline yüklenir ve bu yüzden yinelenen profiller oluşturmazlar. Her iki uygulama da Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun e-posta profilini oluşturup dağıtın. Nine Work gibi e-posta uygulamaları ücretsiz olmayabilir. Uygulamanın lisanslama ayrıntılarını gözden geçirin veya sorunuz varsa uygulama şirketine başvurun.
 
 ### <a name="update-an-email-profile"></a>E-posta profilini güncelleştirme
 
 Önceden atanmış bir e-posta profilinde değişiklik yaparsanız son kullanıcılar, e-posta ayarlarının yeniden yapılandırmasının onaylanmasının istendiği bir ileti görebilir.
-

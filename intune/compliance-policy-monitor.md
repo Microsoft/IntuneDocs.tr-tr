@@ -1,7 +1,7 @@
 ---
 title: Intune cihaz uyumluluk ilkelerini izleme
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Cihaz uyumluluk ilkelerini izlemeyi öğrenin."
+titleSuffix: Intune on Azure
+description: "Cihaz uyumluluğu ilkelerini izlemeyi öğrenin.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
@@ -123,8 +121,6 @@ Ayrıca, Cihaz uyumluluk grafiğinde farklı uyumluluk durumlarına tıklayarak 
 
 **Güncelleştir düğmesine** tıkladığınızda geçici açılır öğe kapatılır ve sonuçlar, seçilen filtre ölçütlerine göre güncelleştirilir.
 
-![Filtre güncelleştirme düğmesi](./media/idc-5.png)
-
 ##### <a name="device-details"></a>Cihaz ayrıntıları
 
 Bir cihaza tıklandığında bu cihaz seçili bir halde **Cihazlar Dikey Penceresi** açılır. Burada, söz konusu cihaz için uygulanan cihaz uyumluluk ilkesi ayarı hakkında daha ayrıntılı bilgiler sunulur.
@@ -154,4 +150,3 @@ Bu raporu kullanarak uyumluluk ayarına göre her bir uyumluluk durumundaki topl
 Ayar uyumluluğu kutucuğuna ve sonra cihaz uyumluluk ilkesi ayarlarından birine tıkladığınızda, cihaz uyumluluk ilkesi ayarı tarafından hedeflenen her bir cihaz için **uyumluluk durumu**, **kullanıcının e-posta diğer adı**, **cihaz modeli** ve **konum** bilgilerini görebilirsiniz.
 
 ![Ayar uyumluluğu kutucuğu](./media/idc-11.png)
-

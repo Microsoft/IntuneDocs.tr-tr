@@ -14,15 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
 Bu kılavuz, mobil uygulamanızı Microsoft Intune ile uygulama koruma ilkeleri için hızlıca etkinleştirmenize yardımcı olur. İlk olarak [Intune Uygulama SDK’sına genel bakış](app-sdk.md) bölümünde açıklanan Intune Uygulama SDK’sı avantajlarını öğrenmeniz yararlı olabilir.
@@ -139,4 +136,3 @@ Rozet bir evrak çantası simgesidir ve aşağıdaki örneklerde görülebilir:
 * **.eps** dosyalarını okuyabilen bir görüntü işleme uygulaması veya **.ai** dosyalarını okuyabilen bir Adobe uygulaması.
 
 * Microsoft Intune GitHub’da [Intune uygulama rozet varlıkları ve yönergelerini](https://github.com/msintuneappsdk/intune-app-partner-badge) bulabilirsiniz.
-
