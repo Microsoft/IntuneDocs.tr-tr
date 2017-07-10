@@ -1,5 +1,5 @@
 ---
-title: "Cisco ISE ile ağlara erişimi koruma| Microsoft Docs"
+title: "Cisco ISE ile ağlara erişimi koruma"
 description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olmasını sağlamak için, Intune ile Cisco ISE kullanabilirsiniz."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3dd45ace4016619a962fdd6836ddddad5d143f6
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Microsoft Intune ile Cisco ISE kullanma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -77,7 +74,7 @@ b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
 3. Bir metin düzenleyicide, dışa aktarılan sertifikayı düzenleyin:
 
  - **-----SERTİFİKA BAŞLANGICI-----** öğesini silin
- -  **-----SERTİFİKA SONU-----** öğesini silin
+ - **-----SERTİFİKA SONU-----** öğesini silin
  
 Tüm metnin tek bir satırda olduğundan emin olun
 
@@ -157,7 +154,7 @@ ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune kiracınız ve Cisco ISE sunucunuz arasında paylaşılan bilgiler
 Bu tabloda, Intune tarafından yönetilen cihazlar için, Intune kiracınız ve Cisco ISE sunucunuz arasında paylaşılan bilgiler listelenir.
 
-|Özellik|    Açıklama|
+|Özellik|  Açıklama|
 |---------------|------------------------------------------------------------|
 |complianceState|Cihazın uyumlu veya uyumsuz olduğunu belirten true veya false dizesi.|
 |isManaged|İstemcinin Intune tarafından yönetildiğini veya yönetilmediğini belirten true veya false dizesi.|
@@ -192,4 +189,3 @@ Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere k
 ### <a name="see-also"></a>Ayrıca bkz.
 
 [Cisco Kimlik Hizmetleri Altyapısı Yönetici Kılavuzu, Sürüm 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
-

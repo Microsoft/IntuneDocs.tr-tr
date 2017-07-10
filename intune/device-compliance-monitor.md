@@ -1,7 +1,7 @@
 ---
 title: "Cihaz uyumluluğunu izleme"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Cihaz uyumluluğunu izlemeyi öğrenin."
+titleSuffix: Intune on Azure
+description: "Cihaz uyumluluğunu izleme hakkında bilgi edinin.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,20 +15,18 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e073ca318d7db23239fc68b79718198dbee54b6e
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>Intune Azure önizlemesinde cihaz uyumluluğunu izleme
+# <a name="how-to-monitor-device-compliance-in-intune"></a>Intune'da cihaz uyumluluğunu izleme
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 **Genel Bakış** dikey penceresinde **uyumluluk profillerinizin** durumunun özetini görüntüleyebilirsiniz.
-Detaya gitmek için grafiklere tıklayarak etkileşimli çalışabilirsiniz. Yapılandırılmış birden çok uyumluluk profiliniz varsa, ilke dikey penceresine gidip **Yönet** bölümünde **Raporlar**’ı seçerek her ilkenin durumunu da görüntüleyebilirsiniz.  Önizlemede kullanılabilen raporların ayrıntıları aşağıda listelenmiştir.
+Detaya gitmek için grafiklere tıklayarak etkileşimli çalışabilirsiniz. Yapılandırılmış birden çok uyumluluk profiliniz varsa, ilke dikey penceresine gidip **Yönet** bölümünde **Raporlar**’ı seçerek her ilkenin durumunu da görüntüleyebilirsiniz.  Bulunan raporların ayrıntıları aşağıda listelenmiştir.
 
 ##  <a name="device-compliance"></a>Cihaz uyumluluğu
 
@@ -48,4 +46,3 @@ Ayar uyumluluğu raporu, her uyumluluk ayarı için aşağıdakiler gibi ayrınt
 - Ayarın geçerli olduğu platform.
 
 Bu ayarların etkinleştirildiği profiller hakkında daha fazla bilgiye ulaşmak ve ayarın değerini görmek için, her ayarda detaya gidebilirsiniz.
-

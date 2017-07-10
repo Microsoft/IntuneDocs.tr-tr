@@ -1,5 +1,5 @@
 ---
-title: "Intune konsolunda MAM ilkelerini yapılandırma | Microsoft Docs"
+title: "Intune konsolundaki MAM ilkelerini yapılandırma"
 description: "Microsoft Intune’daki Mobil uygulama yönetimi ilkeleri, dağıttığınız uygulamaların şirketin uyumluluk ve güvenlik ilkeleriyle uyumlu olmasını sağlamak için bunların işlevselliğini değiştirmenize izin verir."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,11 +43,10 @@ Bir uygulamaya kısıtlamalar uygulamak için, uygulamanın Microsoft Intune Uyg
 
 -   **İlkeyle yönetilen uygulama kullanma**. İlkeyle yönetilen bir uygulamada Uygulama SDK’sı yerleşiktir. Bu uygulama türünü eklemek için, iTunes mağazası veya Google Play gibi bir uygulama mağazasından uygulamaya yönlendiren bir bağlantı belirtirsiniz. Bu uygulama türü için başka bir işleme gerek yoktur. Daha fazla bilgi için [Microsoft Intune mobil uygulama yönetim ilkeleriyle kullanabileceğiniz uygulamaların listesine](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) bakın.
 
--   **Kaydırılmış bir uygulama kullanın**. Kaydırılmış bir uygulama, Uygulama SDK'sını dahil etmek için Microsoft Intune Uygulama Kaydırma Aracı kullanılarak yeniden paketlenmiş bir uygulamadır. Bu araç genellikle şirket içinde oluşturulan şirket uygulamalarını işlemek için kullanılır. Uygulama mağazasından indirilmiş uygulamaları işlemek için kullanamazsınız. Daha fazla bilgi için bkz. [iOS uygulamalarını Microsoft Intune Uygulaması Kaydırma Aracı ile mobil uygulama yönetimine hazırlama](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) ve [Android uygulamalarını Microsoft Intune Uygulaması Kaydırma Aracı ile mobil uygulama yönetimine hazırlama](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Kaydırılmış bir uygulama kullanın**. Kaydırılmış bir uygulama, Uygulama SDK'sını dahil etmek için Microsoft Intune Uygulama Kaydırma Aracı kullanılarak yeniden paketlenmiş bir uygulamadır. Bu araç genellikle şirket içinde oluşturulan şirket uygulamalarını işlemek için kullanılır. Uygulama mağazasından indirilmiş uygulamaları işlemek için kullanamazsınız. Daha fazla bilgi için bkz. [iOS uygulamalarını Microsoft Intune Uygulaması Kaydırma Aracı ile mobil uygulama yönetimine hazırlama](/intune/app-wrapper-prepare-ios) ve [Android uygulamalarını Microsoft Intune Uygulaması Kaydırma Aracı ile mobil uygulama yönetimine hazırlama](/intune/app-wrapper-prepare-android).
 
-- **Intune Uygulama SDK’sını içeren uygulamayı kendiniz yazın**. Intune Uygulama SDK’sı, uygulama yönetim özelliklerini bir uygulamayı yazarken eklemenize izin verir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına Genel Bakış](/intune-classic/develop/intune-app-sdk).
-
-Uygulama Kaydırma Aracı ile Intune Uygulama SDK’sı arasında yapılacak seçim konusunda yardım almak için bkz. [Microsoft Intune ile uygulamaların mobil uygulama yönetimine nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+- **Intune Uygulama SDK’sını içeren uygulamayı kendiniz yazın**. Intune Uygulama SDK’sı, uygulama yönetim özelliklerini bir uygulamayı yazarken eklemenize izin verir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına Genel Bakış](/intune/app-sdk).
+/intune/apps-prepare-mobile-application-management Uygulama Paketleme Aracı ile Intune Uygulama SDK’sı arasında seçim yapma konusunda yardım için bkz. [Microsoft Intune ile uygulamaların mobil uygulama yönetimine nasıl hazırlanacağına karar verme](/intune/apps-prepare-mobile-application-management).
 
 iOS ve Android için Outlook uygulaması gibi bazı yönetilen uygulamalar *birden çok kimliği* destekler. Başka bir deyişle, Intune, yönetim ayarlarını yalnızca uygulamadaki şirket hesaplarına veya verilere uygular.
 
@@ -197,4 +193,3 @@ Cihaz veya kullanıcının çakışan iki ilke aldığı durumlarda, aşağıdak
 -   Bir ilke cihaza zaten dağıtıldıysa, mevcut ilke ayarları geçersiz kılınmaz.
 
 -   Cihaza hiçbir ilke dağıtılmadıysa ve çakışan iki ayar dağıtılırsa, cihazda yerleşik olarak bulunan varsayılan ayar kullanılır.
-

@@ -1,12 +1,12 @@
 ---
 title: "Android Pulse Secure için uygulama başına VPN profili"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Intune tarafından yönetilen Android cihazları için uygulama başına VPN profili oluşturmayı öğrenin."
+titleSuffix: Intune on Azure
+description: "Intune tarafından yönetilen Android cihazları için uygulama başına VPN profili oluşturmayı öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: babeaa13da863ca3335c3a05dbabb4a9ac7889ce
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f0e3a8363eb25ba3a3b2c16f15b8188acb694938
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune özel profili kullanarak Android cihazları için uygulama başına VPN profili oluşturma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama başına VPN profili oluşturabilirsiniz. İlk olarak, Pulse Secure bağlantı türünü kullanan bir VPN profili oluşturun. Ardından, VPN profilini belirli uygulamalarla ilişkilendiren özel bir yapılandırma ilkesi oluşturun.
 
@@ -41,7 +38,7 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 2. Profil listesi dikey penceresinde **Profil Oluştur**’u seçin.
@@ -50,12 +47,12 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 5. **Profil türü** açılan listesinden **VPN**’yi seçin.
 3. **Ayarlar** > **Yapılandır**’ı seçin, ardından [VPN ayarlarını yapılandırma](vpn-settings-configure.md) ve [Android cihazları için Intune VPN ayarları](vpn-settings-android.md) konularında belirtilen ayarlara göre VPN profilini yapılandırın.
 
-Sonraki adımda kullanmak üzere VPN profili adını not edin. Örneğin, **UygulamaVpnProfilim**.
+VPN profilini oluştururken, belirttiğiniz **Bağlantı Adı** değerini bir yere not edin. Bu ad sonraki adımda gerekli olacaktır. Örneğin, **UygulamaVpnProfilim**.
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>2. Adım: Özel yapılandırma ilkesi oluşturma
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 3. Profiller dikey penceresinde **Profil Oluştur**’a tıklayın.
@@ -73,7 +70,7 @@ Sonraki adımda kullanmak üzere VPN profili adını not edin. Örneğin, **Uygu
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Uygulama listenizi kara liste veya beyaz liste olarak ayarlama (isteğe bağlı)
   **KARA LİSTE** değerini kullanarak, VPN bağlantısını *kullanamayacak* uygulamaların listesini belirtebilirsiniz. Diğer tüm uygulamalar VPN üzerinden bağlanır.
-Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve VPN bağlantısını *kullanabilecek* uygulamaların listesini belirtebilirsiniz. Listede yer almayan uygulamalar VPN üzerinden bağlanamaz.
+Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve VPN bağlantısını *kullanabilecek* uygulamaların listesini belirtebilirsiniz. Listede yer almayan uygulamalar VPN üzerinden bağlanmaz.
   1.    **Özel OMA-URI Ayarları** dikey penceresinde **Ekle**’yi seçin.
   2.    Bir ayar adı girin.
   3.    **Veri türü** olarak **Dize**’yi belirtin.
@@ -85,4 +82,3 @@ Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve VPN bağlantısın
 ## <a name="step-3-assign-both-policies"></a>3. Adım: Her iki ilkeyi de atama
 
 Gerekli kullanıcılara veya cihazlara her iki profili de atamak için, [Cihaz profillerini atama](device-profile-assign.md) başlığı altında verilen yönergeleri kullanın.
-

@@ -1,6 +1,6 @@
 ---
 title: "Başlarken"
-description: "Bu konu başlığında, yönettikleri kurumsal üretim ortamını Microsoft Intune&quot;a dağıtmaya hazır olan yöneticilere yönergeler sunulmaktadır."
+description: "Bu konu başlığında, yönettikleri kurumsal üretim ortamını Microsoft Intune'a dağıtmaya hazır olan yöneticilere yönergeler sunulmaktadır."
 keywords: 
 author: nathbarn
 manager: angrobe
@@ -11,15 +11,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a9655730e15c7c7cd49cfbfbe197e7953f9c7b01
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-microsoft-intune"></a>Microsoft Intune kullanmaya başlayın
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -30,4 +27,3 @@ Bu kılavuzun içeriği:
 - [Intune için hızlı başlangıç kılavuzu](/intune/setup-steps) - Deneme aboneliğinizi sınama aşamasından kuruluş yönetimine aktarmak veya kuruluşunuz için yeni bir abonelik oluşturmak için adım adım yönergeler
 - [Intune'a geçiş](/intune/migration-guide) - Mevcut kurumsal mobilite yönetim çözümünüzden Intune'a geçiş yapmak için yönergeler
 - [Intune ile sonraki adımlar](prevent-company-data-leaks-from-Office-365-mobile-apps.md) - Genel Intune görevlerine genel bakış ve sonraki adımlar
-

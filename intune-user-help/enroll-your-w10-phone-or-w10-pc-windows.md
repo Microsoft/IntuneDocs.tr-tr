@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: dd8af3f07abc772408ccececf12a062a82a82e71
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Windows 10 cihazlarınızı Intune'a kaydetme
 
 Windows 10 cihazlarınızı Microsoft Intune'a kaydederek e-postalar, dosyalar ve diğer kaynaklar gibi kuruluşunuzun güvenli verilerine erişebilirsiniz. Bu durum hem Windows 10 masaüstü hem de Windows 10 Mobile cihazlar için geçerlidir. Cihazlarınızı kaydetmeniz hem sizin hem de kuruluşunuz için güvenli erişim sağlamanıza ve iş verilerinizi kişisel verilerinizden ayırmanıza yardımcı olur.
@@ -40,18 +36,17 @@ Daha fazla bilgi edinmek istiyor musunuz? [Cihazınızı Intune'a kaydettiğiniz
 
  ![bilgisayarınız hakkında araması için arama ayarları](media/searching_for_about_your_pc.png)
 
-3.    __Ayarlar__ sayfasında bilgisayarınızda yüklü olan Windows 10 sürümü hakkındaki bilgileri göreceksiniz. Bu listede __Sürüm__'ü bulun.
+3.  __Ayarlar__ sayfasında bilgisayarınızda yüklü olan Windows 10 sürümü hakkındaki bilgileri göreceksiniz. Bu listede __Sürüm__'ü bulun.
 
  ![Windows 10 Masaüstü Bilgisayarınız Hakkında](media/settings_about_pc.png)
 
-4.    Sürümünüz __1607 veya üzeriyse__ [bu adımlarla](enroll-your-w10-device-access-work-or-school.md) devam edin. Sürümünüz __1511 veya daha düşükse__, [bu adımlarla](enroll-your-w10-device-your-account.md) devam edin.
+4.  Sürümünüz __1607 veya üzeriyse__ [bu adımlarla](enroll-your-w10-device-access-work-or-school.md) devam edin. Sürümünüz __1511 veya daha düşükse__, [bu adımlarla](enroll-your-w10-device-your-account.md) devam edin.
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile cihazları        
 
-1.    __Başlat__ sayfasında __Tüm uygulamalar__ listesini kaydırın ve __Ayarlar__ uygulamasını seçin.        
-2.    __Sistem__'e ve ardından __Hakkında__'ya dokunun.        
-3.    __Cihaz bilgileri__ bölümünde __Daha fazla bilgi__'ye dokunun. Cihazınız hakkındaki bilgilerin listesini göreceksiniz. Bu listede __Sürüm__'ü bulun.        
-4.    Sürümünüz __1607__ ise [bu adımlara](enroll-your-w10-device-access-work-or-school.md) geçin. Sürümünüz __1511 veya daha düşükse__, [bu adımlarla](enroll-your-w10-device-your-account.md) devam edin.
+1.  __Başlat__ sayfasında __Tüm uygulamalar__ listesini kaydırın ve __Ayarlar__ uygulamasını seçin.        
+2.  __Sistem__'e ve ardından __Hakkında__'ya dokunun.       
+3.  __Cihaz bilgileri__ bölümünde __Daha fazla bilgi__'ye dokunun. Cihazınız hakkındaki bilgilerin listesini göreceksiniz. Bu listede __Sürüm__'ü bulun.        
+4.  Sürümünüz __1607__ ise [bu adımlara](enroll-your-w10-device-access-work-or-school.md) geçin. Sürümünüz __1511 veya daha düşükse__, [bu adımlarla](enroll-your-w10-device-your-account.md) devam edin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

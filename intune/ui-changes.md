@@ -1,7 +1,7 @@
 ---
-title: "Azure&quot;daki Intune özelliğim nereye gitti?"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Azure konsolundaki Intune özelliklerini bulmanıza yardımcı olur."
+title: "Azure'daki Intune özelliğim nereye gitti?"
+titleSuffix: Intune on Azure
+description: "Azure konsolunda Intune özellikleri bulmanıza yardımcı olur.\""
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,27 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9dd6e93108ffc46e9e52b6928cf513161d29f7a4
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure'daki Intune özelliğim nereye gitti?
 Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekilde organize ettik. Ancak her geliştirme sonrasında atlatılması gereken bir yeni düzene alışma süreci vardır. Bu nedenle klasik konsoldan Intune'a aşina olanlar ve Intune'da yapılan bir eylemi Azure'da nasıl gerçekleştireceğini merak edenler için bu başvuru kılavuzunu hazırladık. Aradığınız özellik bu makalede yoksa ekleyebilmemiz için lütfen aşağıya yorum yazın.
 ## <a name="quick-reference-guide"></a>Hızlı başvuru kılavuzu
-|Özellik |Klasik konsoldaki yolu|Azure'daki Intune'da yolu| |------------||---------------|---------------|
-|Aygıt Kayıt Programı (DEP) |Yönetim > Mobil Aygıt Yönetimi > iOS ve Mac OS X > Aygıt Kayıt Programı|[Aygıt kaydı > Apple Kaydı > Kayıt Programı Belirteci](#where-did-apple-dep-go) |
-|Cihaz Kayıt Programı (DEP)| Yönetim > Mobil Aygıt Yönetimi > iOS ve Mac OS X > Aygıt Kayıt Programı |[Aygıt kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-apple-dep-go) |
-|Kayıt Kuralları |Yönetim > Mobil Aygıt Yönetimi > Kayıt Kuralları|[Aygıt kaydı > Kayıt Kısıtlamaları](#where-did-enrollment-rules-go) |
-|iOS Seri Numarası'na Göre Gruplar |Gruplar > Tüm Aygıtlar > Kurumsal Ön kayıtlı aygıtlar > iOS Seri Numarası'na göre|[Aygıt kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-corporate-pre-enrolled-devices-go) |
-|iOS Seri Numarası'na Göre Gruplar |Gruplar > Tüm Aygıtlar > Kurumsal Ön kayıtlı aygıtlar > iOS Seri Numarası'na göre| [Aygıt kaydı > Apple Kaydı > AC Seri numaraları](#where-did-corporate-pre-enrolled-devices-go)|
-|IMEI'ye Göre Gruplar (tüm platformlar)| Gruplar > Tüm Aygıtlar > Kurumsal Ön kayıtlı aygıtlar > IMEI'ye göre (Tüm platformlar) | [Aygıt kaydı > Kurumsal Aygıt Tanımlayıcıları](#by-imei-all-platforms)|
-| Kurumsal Aygıt Kayıt profili| İlke > Kurumsal Aygıt Kaydı | [Aygıt kaydı > Apple Kaydı > Kayıt Programı Profilleri](#where-did-corporate-pre-enrolled-devices-go) |
-| Kurumsal Aygıt Kayıt profili | İlke > Kurumsal Aygıt Kaydı | [Aygıt kaydı > Apple Kaydı > AC Profilleri](#where-did-corporate-pre-enrolled-devices-go) |
- |Android for Work | Yönetici > Mobil Cihaz Yönetimi > Android for Work | Cihaz kaydı > Android for Work Kaydı | | Hüküm ve Koşullar | İlke > Hüküm ve Koşullar | Cihaz kaydı > Hüküm ve Koşullar |
+|Özellik |Klasik konsoldaki yol|Azure'da Intune'daki yol| |------------||---------------|---------------| |Cihaz Kayıt Programı (DEP) |Yönetim > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Cihaz Kayıt Programı|[Cihaz kaydı > Apple Kaydı > Kayıt Programı Belirteci](#where-did-apple-dep-go)|Cihaz Kayıt Programı (DEP)| Yönetim > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Cihaz Kayıt Programı |[Cihaz kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-apple-dep-go)|Kayıt Kuralları |Yönetim > Mobil Cihaz Yönetimi > Kayıt Kuralları|[Cihaz kaydı > Kayıt Kısıtlamaları](#where-did-enrollment-rules-go)|iOS Seri Numarası'na Göre Gruplar |Gruplar > Tüm Cihazlar > Kurumsal Ön kayıtlı cihazlar > iOS Seri Numarası'na göre|[Cihaz kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-corporate-pre-enrolled-devices-go)|iOS Seri Numarası'na Göre Gruplar |Gruplar > Tüm Cihazlar > Kurumsal Ön kayıtlı cihazlar > iOS Seri Numarası'na göre| [Cihaz kaydı > Apple Kaydı > AC Seri numaraları](#where-did-corporate-pre-enrolled-devices-go)|IMEI'ye Göre Gruplar (tüm platformlar)| Gruplar > Tüm Cihazlar > Kurumsal Ön kayıtlı cihazlar > IMEI'ye göre (Tüm platformlar) | [Cihaz kaydı > Kurumsal Cihaz Tanımlayıcıları](#by-imei-all-platforms)| Kurumsal Cihaz Kayıt profili| İlke > Kurumsal Cihaz Kaydı | [Cihaz kaydı > Apple Kaydı > Kayıt Programı Profilleri](#where-did-corporate-pre-enrolled-devices-go)| Kurumsal Cihaz Kayıt profili | İlke > Kurumsal Cihaz Kaydı | [Cihaz kaydı > Apple Kaydı > AC Profilleri](#where-did-corporate-pre-enrolled-devices-go) |Android for Work | Yönetici > Mobil Cihaz Yönetimi > Android for Work | Cihaz kaydı > Android for Work Kaydı | | Hüküm ve Koşullar | İlke > Hüküm ve Koşullar | Cihaz kaydı > Hüküm ve Koşullar |
 
 
 ## <a name="where-do-i-manage-groups"></a>Grupları nereden yönetebilirim?
@@ -117,4 +106,3 @@ Bu listede Apple Cihaz Kayıt Programı (**DEP Açık**) ile kullanılabilecek p
 
 **Apple Configurator profilleri**
 ![Azure Apple Configurator profillerinin görüntüsü](./media/16-azure-ac-profiles.png)
-

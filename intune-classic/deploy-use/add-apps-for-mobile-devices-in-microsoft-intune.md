@@ -1,6 +1,6 @@
 ---
 title: "Kaydolmuş cihazlar için uygulama ekleme"
-description: "Bir uygulamayı dağıtabilmeniz için, onu önce Intune&quot;a eklemeniz gerekir. Ardından Intune konsolunda kullanılabilir hale gelir, buradan dağıtabilir ve yönetebilirsiniz."
+description: "Bir uygulamayı dağıtabilmeniz için, onu önce Intune'a eklemeniz gerekir. Ardından Intune konsolunda kullanılabilir hale gelir, buradan dağıtabilir ve yönetebilirsiniz."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 98d0376ff02ea89e019fba6022de800f3ca84555
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Kaydolmuş cihazlar için Intune’a uygulamalar ekleme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -105,4 +102,3 @@ Bu dört dakikalık videoda, Windows 10 çalıştıran kayıtlı cihazlar için 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Bir uygulama oluşturduktan sonra, sonraki adım uygulamayı dağıtmaktır. Daha fazlası için [Microsoft Intune’da uygulamaları dağıtma](deploy-apps.md) konusuna göz atın.
-

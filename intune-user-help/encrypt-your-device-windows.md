@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 5db7489d379ca374e41030870df20ff16b919bbc
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Windows cihazınızı şifreleme kullanarak koruma
 
 Bir cihazı şifrelediğinizde cihazdaki bilgileri, yetkisiz kişilerin erişmesini engelleyen koruyucu bir kod katmanı içine sarmalamış olursunuz. Bilgilerinizin güvende olduğundan emin olmak için kuruluşunuz; şirket veya okul verilerine erişebilmeniz için Windows cihazınızı şifrelemenizi istiyor.
@@ -41,4 +36,3 @@ Bir masaüstü cihazınız varsa, cihazın nasıl şifreleneceği aşağıdaki y
 2.  **BitLocker'ı Aç**'ı seçin ve ardından sürücülerinizin her birini şifrelemeye yönelik yönergeleri izleyin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. İletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın.
-

@@ -1,11 +1,11 @@
 ---
-title: "Mobil cihaz kaydı için önkoşullar | Microsoft Docs"
+title: "Mobil cihaz kaydının önkoşulları"
 description: "Mobil cihaz yönetimi (MDM) önkoşullarını ayarlayın ve farklı işletim sistemlerini kaydetmeye hazır olun."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6877c5263f3c97b9cff295d62d39a365027151eb
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune’da mobil cihaz yönetimi için önkoşullar
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,15 +43,14 @@ Configuration Manager ile Intune mu arıyorsunuz?
 ## <a name="step-1-enable-connections"></a>1. Adım: Bağlantıları etkinleştirme
 
 Mobil cihaz kaydını etkinleştirmeden önce aşağıdakileri yaptığınızdan emin olun:
-- [Gerekli ağ URL'lerini ve bağlantı noktalarını gözden geçirin](../get-started/network-bandwidth-use.md)
-- [Etki alanınızın adını ekleyin ve doğrulayın](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+- [Gerekli ağ URL'lerini ve bağlantı noktalarını gözden geçirin](/intune/network-bandwidth-use)
+- [Etki alanınızın adını ekleyin ve doğrulayın](/intune/custom-domain-name-configure)
 
 ## <a name="step-2-set-mdm-authority"></a>2. Adım: MDM yetkilisini ayarlama
 MDM yetkilisi, bir grup cihazı yönetme iznine sahip olan yönetim hizmetini tanımlar. MDM yetkilisi seçenekleri arasında Intune’un kendisi ve Intune ile Configuration Manager vardır. Configuration Manager’ı yönetim yetkilisi olarak ayarlarsanız, mobil cihaz yönetimi için başka bir hizmet kullanılamaz.
 
 >[!IMPORTANT]
-> Mobil cihazları yalnızca Intune kullanarak mı (çevrimiçi hizmet) yoksa Intune ile System Center Configuration Manager kullanarak mı (çevrimiçi hizmetle birlikte şirket içi yazılım çözümü) yönetmek istediğinizi dikkatle düşünün. Mobil cihaz yönetimi yetkilisi ayarlandıktan sonra, Microsoft Desteği yardımı olmadan değiştirilemez. Yönergeler için bkz. [Yanlış MDM yetkilisi ayarı seçilirse yapılacaklar](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) ilişkin yönergeler.
-
+> Configuration Manager'ın 1610 veya sonraki bir sürümü ve Microsoft Intune'un 1705 sürümünde, MDM yetkilisini, Microsoft Destek ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Ayrıntılar için bkz. [Yanlış MDM yetkilisi ayarı seçilirse yapılacaklar](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetim** &gt; **Mobil Cihaz Yönetimi**’ni seçin.
 
@@ -116,7 +112,7 @@ Değişiklikleri kaydettikten sonra, Şirket Portalı web sitesini görüntülem
 
 ## <a name="step-5-assign-user-licenses"></a>5. Adım: Kullanıcı lisanslarını atama
 
-Bulut tabanlı kullanıcıları el ile eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory’nizden Azure Active Directory’ye (Azure AD) eşitlenen hesaplara lisans atamak için **Office 365 yönetim portalını** kullanırsınız. [Şirket içi kullanıcıları Azure AD ile eşitleyebilirsiniz](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
+Bulut tabanlı kullanıcıları el ile eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory’nizden Azure Active Directory’ye (Azure AD) eşitlenen hesaplara lisans atamak için **Office 365 yönetim portalını** kullanırsınız. [Şirket içi kullanıcıları Azure AD ile eşitleyebilirsiniz](/intune/users-permissions-add#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Kiracı yöneticisi kimlik bilgilerinizi kullanarak [Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) oturum açın.
 
@@ -154,7 +150,13 @@ Kayıt etkinleştirildikten sonra, iş gereksinimlerinizi karşılamak için yö
 
 ## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>Yanlış MDM yetkilisi ayarı seçilirse yapılacaklar
 
-Yanlış MDM yetkilisi ayarı seçtiğinize ve bunu değiştirmeniz gerektiğine karar verirseniz, Microsoft Desteği’ne başvurmanız gerekir. Ayarı kendiniz değiştiremezsiniz. Microsoft Desteği’ne başvurmadan önce, değişikliğin yapılabilmesi için Microsoft Desteği’nin sizden isteyeceği bilgileri açıklayan aşağıdaki bilgileri gözden geçirin.
+Yanlış MDM yetkilisi ayarı seçtiğinize ve bunu değiştirmeniz gerektiğine karar verirseniz, aşağıdaki seçeneklere sahipsiniz.
+
+### <a name="change-the-mdm-authority-yourself"></a>MDM yetkilisini kendiniz değiştirme
+Configuration Manager 1610 sürümünden ve Microsoft Intune 1705 sürümünden başlayarak, MDM yetkilisini, Microsoft Destek ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip bunları yeniden kaydetmeye gerek kalmadan Microsoft Intune yerine Configuration Manager (karma) olarak veya tersine değiştirebilirsiniz. Ayrıntılar için bkz. [MDM yetkilinizi değiştirme]( /sccm/mdm/deploy-use/change-mdm-authority).
+
+### <a name="contact-microsoft-support"></a>Microsoft Destek'e başvurun
+Configuration Manager'ın 1610'dan önceki bir sürümüne sahipseniz, Microsoft Desteğe başvurmanız gerekir. Ayarı kendiniz değiştiremezsiniz. Microsoft Desteği’ne başvurmadan önce, değişikliğin yapılabilmesi için Microsoft Desteği’nin sizden isteyeceği bilgileri açıklayan aşağıdaki bilgileri gözden geçirin.
 
 MDM yetkilinizi sıfırlamak için üç olası yol vardır. Destek isteğinizde, durumunuza uygun olan yolu seçmeniz gerekir. İstekte bulunduğunuz senaryo listede yoksa, Microsoft Desteği’nin yönlendirmesine göre hareket edin.
 
@@ -166,7 +168,7 @@ Microsoft Desteği aşağıdaki bilgileri onaylamanızı ister:
 
 Bir arada bulunma kullanıyorsanız, hem Intune hem de Office 365 onay listelerini doğrulamanız gerekir.
 
-### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Intune olan MDM yetkilisini Configuration Manager olarak sıfırlama
+#### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Intune olan MDM yetkilisini Configuration Manager olarak sıfırlama
 
 MDM yetkilinizi sıfırlamak için Microsoft Desteği’ne başvurmadan önce aşağıdaki adımları tamamlayın.
 
@@ -180,7 +182,7 @@ MDM yetkilinizi sıfırlamak için Microsoft Desteği’ne başvurmadan önce a�
 - MDM Cihazlarına yönelik tüm ilkeleri **İlke** > **Yapılandırma İlkeleri** altından silin.
 - MDM Cihazlarına yönelik tüm yayımlanan uygulamaları **Uygulamalar** > **Yönetilen Yazılım** kısmından silin.
 
-### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Configuration Manager olan MDM yetkilisini Intune olarak sıfırlama
+#### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Configuration Manager olan MDM yetkilisini Intune olarak sıfırlama
 
 MDM yetkilinizi sıfırlamak için Microsoft Desteği’ne başvurmadan önce aşağıdaki adımları tamamlayın.
 
@@ -194,7 +196,7 @@ MDM yetkilinizi sıfırlamak için Microsoft Desteği’ne başvurmadan önce a�
 - SMS Executive Hizmetini yeniden başlatın.
 - İşlem tamamlandıktan sonra Configuration Manager lisanslarının kaldırıldığının doğrulanabilmesi için bize bazı örnek kullanıcılar sağlayın.
 
-### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Office 365 olan MDM yetkilisini Configuration Manager olarak sıfırlama
+#### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Office 365 olan MDM yetkilisini Configuration Manager olarak sıfırlama
 
 1. [https://protection.office.com](https://protection.office.com) adresine gidin.
 2. **Güvenlik İlkeleri** sekmesine tıklayıp **Cihaz Yönetimi**’ni seçin.
@@ -205,10 +207,9 @@ MDM yetkilinizi sıfırlamak için Microsoft Desteği’ne başvurmadan önce a�
 >[!NOTE]
 >iOS APsN sertifikası silinemez ve hesaba iliştirilmiş olarak kalır.
 
-### <a name="next-steps-for-mdm-authority-resets"></a>MDM yetkilisi sıfırlamaları için sonraki adımlar
+#### <a name="next-steps-for-mdm-authority-resets"></a>MDM yetkilisi sıfırlamaları için sonraki adımlar
 
 Microsoft Desteği geçerli onay listesindeki öğeleri doğruladıktan sonra, MDM yetkilisini sıfırlama işlemi üç iş gününe kadar sürebilir ancak genellikle bir gün içinde gerçekleşir.
 
 >[!IMPORTANT]
 >Microsoft Desteği sıfırlama işleminin başarıyla tamamlandığını doğrulayana kadar aboneliğinizi yapılandırmayı denemeyin! Erken yapılandırma bozulmaya neden olabilir ve/veya Intune hizmetini kullanma yeteneğinizi etkileyebilir.
-

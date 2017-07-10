@@ -1,6 +1,6 @@
 ---
 title: "Şirket içi Exchange ve Exchange Online için koşullu erişim uyumluluğunu izleme"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Intune Azure portalı üzerinden şirket içi Exchange ve Exchange Online için koşullu erişim uyumluluğunu izleme"
 keywords: 
 author: andredm7
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>Intune Azure önizlemede şirket içi Exchange ve Exchange Online için koşullu erişim uyumluluğunu izleme
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune'da şirket içi Exchange ve Exchange Online için koşullu erişim uyumluluğunu izleme
 
 Intune 1704 sürümü ve sonrasında yöneticiler, şirket içi Exchange Bağlayıcısı veya Intune hizmetten hizmete bağlayıcısı (Exchange Online bağlayıcısı) aracılığıyla Intune ile eşitlenen Exchange ActiveSync cihaz kayıtlarıyla ilgili raporlama bilgilerini görebilmektedir. Koşullu erişim uyumluluk raporlaması, farklı eşitleme durumları olan cihazların bir özetini sunar:
 
@@ -70,4 +67,3 @@ Cihaz ayrıntıları dikey penceresinde, daha fazla bilgi görebilirsiniz:
 -   **Cihaz Yapılandırması:** Tüm cihaz yapılandırma ayrıntılarını gösterir.
 
 -   **Exchange Erişimi:** Burada cihazın koşullu erişim ilkeleri uygulandıktan sonraki durumu hakkında daha fazla bilgi alabilirsiniz.
-

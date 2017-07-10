@@ -1,5 +1,5 @@
 ---
-title: "Skycure Mobile Threat Defense bağlayıcısı | Microsoft Docs"
+title: "Skycure mobile threat defense bağlayıcısı"
 description: "Skycure Mobile Threat Defense bağlayıcısı ve Intune ile şirket kaynaklarına erişimi cihaz, ağ ve uygulama riskine dayalı olarak koruyun."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 7a004e6c-604a-448c-bfb8-cfda63749f5b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 15b00957f694863bb10ee32162eb20fc39bcda88
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d0b401babf356e44479229c3bea27c956926a6f9
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense bağlayıcısı
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -119,7 +116,7 @@ Daha fazla bilgi için [Skycure web sitesini](https://www.skycure.com/skycure-mi
 
 Burada, Intune’u Skycure ile tümleştirme işlemini tamamlamak için gereken adımlar verilmiştir:
 
-1.  [Azure Active Directory Çoklu Oturum Açmayı kullanmak için Skycure’u yapılandırma /intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
+1.  [Skycure’u Azure Active Directory Çoklu Oturum Açma (SS) kullanacak şekilde yapılandırma](/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
 2.  [Skycure iOS uygulaması yapılandırma ilkesini indirme](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
 
@@ -132,4 +129,3 @@ Burada, Intune’u Skycure ile tümleştirme işlemini tamamlamak için gereken 
 6.  [Intune’da Skycure Mobile Threat Defense’i etkinleştirme](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
 7.  [Intune’da Skycure Mobile Threat Defense uyumluluk ilkesi oluşturma](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
-

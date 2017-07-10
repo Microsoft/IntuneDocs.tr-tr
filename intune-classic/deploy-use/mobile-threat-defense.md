@@ -1,5 +1,5 @@
 ---
-title: Intune Mobile Threat Defense | Microsoft Docs
+title: "Intune Mobile tehdit savunması"
 description: "Cihaz riskine dayalı olarak şirket kaynaklarına erişimi koruyun."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 08d87906-8158-4d5e-a49d-ad919efef3d1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56cd18e1a5556178d951ec47c6e894d8fc2e6f86
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 85f3ed28b021c0aa2b00f128297eb0d99cf0bc1c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-mobile-threat-defense-connectors"></a>Intune Mobile Threat Defense bağlayıcıları
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -54,4 +51,3 @@ Cihaz, ağ ve uygulama riskine dayalı olarak şirket kaynağına erişimi korum
 
 - [Lookout](/intune-classic/deploy-use/lookout-mobile-threat-defense-connector)
 - [Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)
-

@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 cihazlar için Intune özel ayarları"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Windows 10 özel profilinde kullanabileceğiniz ayarları öğrenin."
+titleSuffix: Intune on Azure
+description: "Bir Windows 10 özel profilinde kullanabileceğini ayarlar hakkında bilgi edinin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 52ad4f141c3b2b73a400c69fb9d9beb174bbac64
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: bda9e939e2d4aba4c4d005ea55ba65bec9c6e217
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 cihazları için özel cihaz ayarları
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
  Cihazlardaki özellikleri denetlemek için kullanılabilecek OMA-URI (Open Mobile Alliance Uniform Resource Identifier) ayarları dağıtmak üzere Windows 10 ve Windows 10 Mobile için Microsoft Intune **özel** profilini kullanın. Windows 10, örneğin [İlke Yapılandırma Hizmet Sağlayıcısı (İlke CSP’si)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) aracılığıyla pek çok CSP ayarını kullanıma sunar.
 Belirli bir ayarı arıyorsanız, [Windows 10 cihaz kısıtlama profilinin](device-restrictions-windows-10.md) Intune’da yerleşik olarak bulunan birçok ayarı içerdiğini ve özel değerler belirlemenize gerek olmadığını aklınızda bulundurun.
@@ -62,6 +59,5 @@ Windows belge kitaplığındaki [Yapılandırma hizmet sağlayıcısı başvurus
 Tüm ayarlar, Windows 10 sürümlerinin tümüyle uyumlu değildir. Windows başlıklı tabloda, her CSP için hangi sürümlerin desteklendiğini gösterir.
 
 Buna ek olarak, Intune konu başlığı altında listelenen ayarların tümünü desteklemez. İstediğiniz ayarı Intune’un destekleyip desteklemediğini öğrenmek için, ilgili ayarın konusunu açın. Her ayar sayfasında, desteklenen işlemi gösterilir. Intune’la çalışmak için, ayarın **Ekle** veya **Değiştir** işlemlerini desteklemesi gerekir.
-
 
 

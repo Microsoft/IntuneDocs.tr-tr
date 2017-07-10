@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: a71b8d1a100100e204eb7e90ba0ab00573ffc5c6
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>iOS cihazınızı telekomünikasyon gider yönetimine kaydetme
 
 Kuruluşunuz, veri ve ses planlarının kabul edilebilir sınırlar içinde kullanıldığından emin olmak için telekomünikasyon gider yönetimi yazılımı kullanıyor olabilir. Cihazınızı kaydetmeyi tamamladıktan sonra, bu cihaz için en uygun kategoriyi seçmeniz istenir.
@@ -68,4 +64,3 @@ Uygun seçeneği belirlediğinizde App Store’dan [__Datalert__](https://itunes
 Kaydolduktan sonra, veri kullanımınızı Datalert uygulamasında görmeye başlarsınız.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

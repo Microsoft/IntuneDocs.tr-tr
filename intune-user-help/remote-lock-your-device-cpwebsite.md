@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: a213a46066de4244df23d0cd532b5fb4596ede77
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı uzaktan kilitleme
 
 Kazalar olabilir ve bazen cihazlar kaybolabilir. Cihazınız kaybolur veya çalınırsa ilk endişeniz, cihazınız her neredeyse içindeki bilgilere herkesin erişebilecek olmasıdır.
@@ -42,7 +38,7 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](http://po
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Cihazınızı kilitlemek üzere Uzaktan Kilitleme’yi kullanmak için
 
-1.    [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
+1.  [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
 
   ![Giriş, Tüm Uygulamalar, Cihazlarım, Yardım Masası ve Oturumu Kapat düğmeleriyle ekranın sol tarafında genişletilmiş bir yan menü ile Şirket Portalı web sitesinin bir görüntüsü.](/media/iwp-expanded-sidebar.png)
 
@@ -50,11 +46,11 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](http://po
 
   ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    Cihaz, bir açılan pencere içinde açılır. **Uzaktan Kilitleme** düğmesine dokunun.
+3.  Cihaz, bir açılan pencere içinde açılır. **Uzaktan Kilitleme** düğmesine dokunun.
 
     ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitleme dahil tüm seçenekler. ](./media/iwp-screen-with-all-options.png)
 
-4.    Cihazınızı kilitlemek üzere olduğunuzu belirten bir bildirim görünecektir. **Uzaktan Kilitleme**’ye dokunduktan sonra Şirket Portalı web sitesi cihazınızı kilitlemeyi deneyecektir.
+4.  Cihazınızı kilitlemek üzere olduğunuzu belirten bir bildirim görünecektir. **Uzaktan Kilitleme**’ye dokunduktan sonra Şirket Portalı web sitesi cihazınızı kilitlemeyi deneyecektir.
 
     **Uzaktan Kilitleme**’yi seçtiğinizde, "Uzaktan kilitleme bekliyor" iletisi görünür.  Uzaktan Kilitleme başarılı olduğunda, durum "Uzaktan kilitleme için başarılı." olarak değişir.
 
@@ -70,4 +66,3 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](http://po
 Cihazınızı bulursanız ve Uzaktan Kilitleme kullandıktan sonra onun kilidini açmak istiyorsanız, tek yapmanız gereken geçiş kodunu girmektir.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

@@ -14,15 +14,12 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: lindavr
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d69727762e63f0258eacc084801827c50eaa1454
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-intune-for-education"></a>Eğitim için Intune nedir?
 
 Eğitim için Intune, okul verilerini korurken öğretmen ve öğrencilerinizin üretken olmalarını sağlamak üzere tasarlanmıştır. Intune, Eğitim için Intune’un temelini oluşturan bir bulut tabanlı Enterprise Mobility yönetim (EMM) hizmetidir.
@@ -45,4 +42,3 @@ Hem Intune hem de Eğitim için Intune ile şunları yapabilirsiniz:
 * [30 günlük Intune denemesini](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune) kullanarak ürünle tanışın.
 * [Eğitim için Intune'u kullanmaya başlamanın](/intune-education/what-is-express-configuration) en hızlı yolu hakkında bilgi edinin.
 * Intune’un [teknik gereksinimlerini ve özelliklerini](/intune/supported-devices-browsers) derinlemesine öğrenin.
-

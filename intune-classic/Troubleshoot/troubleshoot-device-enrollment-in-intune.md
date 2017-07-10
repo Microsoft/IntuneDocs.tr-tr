@@ -1,11 +1,11 @@
 ---
-title: "Cihaz kaydıyla ilgili sorunları giderme | Microsoft Docs"
+title: "Cihaz kaydıyla ilgili sorunları giderme"
 description: "Cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e72051f9318d24ed36fc39ea6645041f0a150a40
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,11 +31,11 @@ Bu konuda, cihaz kayıt sorunlarının giderilmesi için tavsiyeler verilmektedi
 
 Sorun gidermeye başlamadan önce, Intune’u kayıt sağlamak üzere doğru şekilde yapılandırdığınızdan emin olmak için kontrol edin. Bu yapılandırma gereksinimleri hakkında daha fazla bilgi edinebilirsiniz:
 
--    [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune-classic/deploy-use/prerequisites-for-enrollment)
--    [iOS ve Mac yönetimini ayarlama](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Windows cihaz yönetimini ayarlama](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--    [Android cihaz yönetimini ayarlama](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - Ek adım gerekmez
--    [Android for Work cihaz yönetimini ayarlama](/intune-classic/deploy-use/set-up-android-for-work)
+-   [Microsoft Intune’da cihazları kaydetmeye hazırlanma](/intune-classic/deploy-use/prerequisites-for-enrollment)
+-   [iOS ve Mac yönetimini ayarlama](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Windows cihaz yönetimini ayarlama](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-   [Android cihaz yönetimini ayarlama](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - Ek adım gerekmez
+-   [Android for Work cihaz yönetimini ayarlama](/intune-classic/deploy-use/set-up-android-for-work)
 
 Yönetilen cihaz kullanıcılarınız, gözden geçirmeniz için kayıt ve tanılama günlüklerini toplayabilir. Kullanıcılar için günlükleri toplama yönergeleri, şu konu başlıkları altında sağlanır:
 
@@ -110,8 +107,8 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 1.  MDM Yetkilisinin, kullandığınız Intune hizmeti türü (Intune, Ofiice 365 veya Intune ile System Center Configuration Manager) için uygun şekilde ayarlandığını doğrulayın. Intune’da MDM Yetkilisi, **Yönetici** &gt; **Mobil Cihaz Yönetimi** altından ayarlanır. Intune ile Configuration Manager’da MDM Yetkilisi, Intune bağlayıcısını yapılandırma işlemi sırasında ayarlanır. Office 365’te ise bunun için **Mobil Cihazlar** ayarı kullanılır.
 
-    > [!NOTE]
-    > MDM yetkilisini, ayarlandıktan sonra yalnızca [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) bölümünde açıklandığı şekilde Destek birimine başvurularak değiştirilebilir.
+    > [!NOTE]    
+    > Configuration Manager'ın 1610 veya sonraki bir sürümü ve Microsoft Intune'un 1705 sürümünde, MDM yetkilisini, Microsoft Destek ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Ayrıntılar için bkz. [Yanlış MDM yetkilisi ayarı seçilirse yapılacaklar](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 2.  Kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru şekilde eşitlendiğinden emin olmak için, kullanıcının UPN değerleriyle Office 365 portalındaki Active Directory bilgilerinin eşleşip eşleşmediğini denetleyin.
     UPN Active Directory bilgileriyle eşleşmiyorsa:
@@ -230,16 +227,16 @@ Android cihazlar bir [SSL sunucu hello](https://technet.microsoft.com/library/cc
 
 Sorunu düzeltmek için AD FS sunucusunda veya proxy’lerdeki Bilgisayar Kişisel Sertifikaları’na sertifikaları aşağıdaki gibi içeri aktarın:
 
-1.    ADFS’de ve proxy sunucularında, yerel bilgisayar için Sertifika Yönetimi konsolunu başlatmak üzere **Başlat** düğmesine sağ tıklayın, **Çalıştır**’ı seçin ve **certlm.msc** yazın.
-2.    **Kişisel**’i genişletip **Sertifikalar**’ı seçin.
-3.    AD FS hizmeti iletişiminizin sertifikasını (ortak olarak imzalanmış bir sertifika) bulun ve özelliklerini görüntülemek için çift tıklayın.
-4.    Sertifikanın üst sertifikasını (veya sertifikalarını) görmek için **Sertifika Yolu** sekmesini seçin.
-5.    Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
-6.    **Ayrıntılar** sekmesini ve **... dosyasına kopyala**’yı seçin.
-7.    Sertifikanın ortak anahtarını istenen dosya konumuna kaydetmek veya dışarı aktarmak için sihirbaz yönergelerini izleyin.
-8.    Adımda Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
-9.    AD FS sunucularını yeniden başlatın.
-10.    Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
+1.  ADFS’de ve proxy sunucularında, yerel bilgisayar için Sertifika Yönetimi konsolunu başlatmak üzere **Başlat** düğmesine sağ tıklayın, **Çalıştır**’ı seçin ve **certlm.msc** yazın.
+2.  **Kişisel**’i genişletip **Sertifikalar**’ı seçin.
+3.  AD FS hizmeti iletişiminizin sertifikasını (ortak olarak imzalanmış bir sertifika) bulun ve özelliklerini görüntülemek için çift tıklayın.
+4.  Sertifikanın üst sertifikasını (veya sertifikalarını) görmek için **Sertifika Yolu** sekmesini seçin.
+5.  Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
+6.  **Ayrıntılar** sekmesini ve **... dosyasına kopyala**’yı seçin.
+7.  Sertifikanın ortak anahtarını istenen dosya konumuna kaydetmek veya dışarı aktarmak için sihirbaz yönergelerini izleyin.
+8.  Adımda Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
+9.  AD FS sunucularını yeniden başlatın.
+10. Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
 Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum açabilmelidir.
 
 **Sertifikanın düzgün yüklendiğini doğrulamak için**:
@@ -261,10 +258,10 @@ Aşağıdaki tabloda son kullanıcıların cihazlarını Intune’a kaydederken 
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Kayıt ilkesi bulunamadı|Apple Anında İletilen Bildirim Servisi (APNs) sertifikası gibi tüm kayıt önkoşullarının ayarlandığını ve “Platform olarak iOS”un etkinleştirildiğini denetleyin. Yönergeler için, bkz. [iOS ve Mac cihaz yönetimini ayarlama](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceCapReached|Zaten çok fazla mobil cihaz kaydedilmiş durumda.|Kullanıcı başka bir cihaz kaydetmeden önce o anda Şirket Portalı’na kayıtlı mobil cihazlarından birini kaldırmalıdır. Kullanmakta olduğunuz cihaz türüne yönelik yönergelere bakın: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Mobil cihazın şirket ağınızla iletişim kurmasına imkan tanıyan sertifika ile ilgili bir sorun var.<br /><br />|Apple Anında İletilen Bildirim Servisi (APNs) kayıtlı iOS cihazlara ulaşmak için bir kanal sağlar. APNs sertifikasını alma adımları uygulanmadıysa veya APNs sertifikasının süresi dolduysa kayıt denemeleri başarısız olur ve bu ileti görüntülenir.<br /><br />[Active Directory’yi eşitleme ve Intune’a kullanıcıları ekleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ve [Kullanıcıları ve cihazları düzenleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) konu başlıkları altında kullanıcıları ayarlamayla ilgili bilgileri gözden geçirin.|
+|APNSCertificateNotValid|Mobil cihazın şirket ağınızla iletişim kurmasına imkan tanıyan sertifika ile ilgili bir sorun var.<br /><br />|Apple Anında İletilen Bildirim Servisi (APNs) kayıtlı iOS cihazlara ulaşmak için bir kanal sağlar. APNs sertifikasını alma adımları uygulanmadıysa veya APNs sertifikasının süresi dolduysa kayıt denemeleri başarısız olur ve bu ileti görüntülenir.<br /><br />[Active Directory’yi eşitleme ve Intune’a kullanıcıları ekleme](/intune/users-permissions-add) ve [Kullanıcıları ve cihazları düzenleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) konu başlıkları altında kullanıcıları ayarlamayla ilgili bilgileri gözden geçirin.|
 |AccountNotOnboarded|Mobil cihazın şirket ağınızla iletişim kurmasına imkan tanıyan sertifika ile ilgili bir sorun var.<br /><br />|Apple Anında İletilen Bildirim Servisi (APNs) kayıtlı iOS cihazlara ulaşmak için bir kanal sağlar. APNs sertifikasını alma adımları uygulanmadıysa veya APNs sertifikasının süresi dolduysa kayıt denemeleri başarısız olur ve bu ileti görüntülenir.<br /><br />Daha fazla bilgi için, [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) konusunu gözden geçirin.|
 |DeviceTypeNotSupported|Kullanıcınız iOS olmayan bir cihaz kullanarak kaydolmayı denemiş olabilir. Kaydetmeye çalıştığınız mobil cihaz türü desteklenmemektedir.<br /><br />Cihazın iOS sürüm 8.0 veya üzerini çalıştırdığını onaylayın.<br /><br />|Kullanıcı cihazının iOS sürüm 8.0 veya üzerini çalıştırdığından emin olun.|
-|UserLicenseTypeInvalid|Kullanıcının hesabı henüz gerekli bir kullanıcı grubuna üye olmadığı için cihaz kaydedilemiyor.<br /><br />|Kullanıcıların cihazlarını kaydedebilmesi için doğru kullanıcı grubunun üyesi olmaları gerekir. Bu ileti kullanıcının belirlenen mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin, mobil cihaz yönetimi yetkilisi olarak Intune belirlendiyse ve kullanıcı bir System Center 2012 R2 Configuration Manager lisansı kullanıyorsa bu hatayı alır.<br /><br />Daha fazla bilgi için aşağıdakileri gözden geçirin:<br /><br />[Microsoft Intune ile iOS ve Mac yönetimi ayarlama](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) konusunu ve [Active Directory’yi eşitleme ve Intune’a kullanıcı ekleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ve [kullanıcıları ve cihazları düzenleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) konularındaki kullanıcı ayarlamayla ilgili bilgileri gözden geçirin.|
+|UserLicenseTypeInvalid|Kullanıcının hesabı henüz gerekli bir kullanıcı grubuna üye olmadığı için cihaz kaydedilemiyor.<br /><br />|Kullanıcıların cihazlarını kaydedebilmesi için doğru kullanıcı grubunun üyesi olmaları gerekir. Bu ileti kullanıcının belirlenen mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin, mobil cihaz yönetimi yetkilisi olarak Intune belirlendiyse ve kullanıcı bir System Center 2012 R2 Configuration Manager lisansı kullanıyorsa bu hatayı alır.<br /><br />Daha fazla bilgi için aşağıdakileri gözden geçirin:<br /><br />[Microsoft Intune ile iOS ve Mac yönetimi ayarlama](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) konusunu ve [Active Directory’yi eşitleme ve Intune’a kullanıcı ekleme](/intune/users-permissions-add) ve [kullanıcıları ve cihazları düzenleme](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5) konularındaki kullanıcı ayarlamayla ilgili bilgileri gözden geçirin.|
 |MdmAuthorityNotDefined|Mobil cihaz yönetimi yetkilisi tanımlanmadı.<br /><br />|Intune’da mobil cihaz yönetimi yetkilisi belirlenmemiştir.<br /><br />[30 günlük Microsoft Intune denemesini başlatın](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) bölümündeki “6. Adım: Mobil cihazları kaydetme ve uygulama yükleme” kısmında madde 1’i gözden geçirin.|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Cihazlar etkin değil veya yönetici konsolu cihazlarla iletişim kuramıyor
@@ -413,4 +410,3 @@ Bunun nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bir bilg
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
-

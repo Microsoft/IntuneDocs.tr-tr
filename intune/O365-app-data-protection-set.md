@@ -1,7 +1,7 @@
 ---
-title: "Office 365 uygulamalarında temel veri yönetimini ayarlama - Intune Azure önizlemesi"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Office 365 uygulamalarını yönetme sihirbazı için destekleyici belgeler."
+title: "Intune'da Office 365 uygulamalarında temel veri yönetimini ayarlama"
+titleSuffix: Intune on Azure
+description: "Office 365 uygulamalarını yönetme sihirbazını destekleyen belgeler.\""
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Kullanıcılarınızın yönetilen Office 365 uygulamalarındaki temel koruma deneyimi
 
 **Office 365 uygulamalarını yönet** sihirbazı, her cihaz platformu için bir uygulama koruma ilkesi oluşturur.
@@ -129,9 +125,8 @@ Android’de bir Intune MAM ilkesiyle ilişkilendirilmiş olan uygulamalarda ver
 Kuruluşunuzun gereksinimlerine uygun olması için bu ilke ayarlarını istediğiniz zaman düzenleyebilirsiniz.
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>Sihirbaz tarafından oluşturulan ilkeleri nasıl görüntüleyebilir ve düzenleyebilirim?
-Bu ilkeleri veya Intune Azure önizlemesinde oluşturduğunuz herhangi bir ilkeyi görmek veya güncelleştirmek için, panoda **Uygulamaları yönet** > **Uygulama Koruma İlkeleri**’ni seçin. İlke listesi sağ tarafta açılır. Ayarlarını görmek ve düzenlemek için görüntülemek istediğiniz ilkeyi seçin. <br/>
+Bu ilkeleri veya Intune Azure portalında oluşturduğunuz herhangi bir ilkeyi görmek veya güncelleştirmek için, panodan **Uygulamaları yönet** > **Uygulama Koruma İlkeleri**'ni seçin. İlke listesi sağ tarafta açılır. Ayarlarını görmek ve düzenlemek için görüntülemek istediğiniz ilkeyi seçin. <br/>
 ![İlkeleri görüntülemek için kullanıcı arabirimi yolunun resmi](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Uygulama koruma ilkeleri](https://docs.microsoft.comapp-protection-policy.md) hakkında daha fazla bilgi edinin.
-

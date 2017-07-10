@@ -1,5 +1,5 @@
 ---
-title: "Intune değerlendirmeleri için diğer seçenekler ve ek özellikler | Microsoft Docs"
+title: "Intune değerlendirmeleri için diğer seçenekler ve ek özellikler"
 description: "Intune’un 30 günlük ücretsiz değerlendirmesi kaydolurken bilmeniz gereken uyarılar, bildirimler, raporlar ve genel Intune özellikleri açıklanır."
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dcaf3ccc8c8581704351a19bce0a0ab57013040
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c0299b9bcb8c4cf35e2ddf60da428cc04bbdb4f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Intune değerlendirme abonelikleri için diğer seçenekler ve ek özellikler
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,16 +43,13 @@ Intune, bu kısa kurulum adımlarında gösterilenlerin ötesinde birçok farkl�
 
 -   **Şirket kaynaklarına erişimi denetleme.** Mobil cihazlara sertifikalar, e-posta profilleri, VPN profilleri ve Wi-Fi profilleri dağıtarak mobil cihazları hızla ve kolayca ayarlayabilirsiniz. Ayrıntılar için, bkz. [Microsoft Intune ile şirket kaynaklarına erişimi etkinleştirme](/intune-classic/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
-Intune özelliklerinin tamamı hakkında bilgi almak için bkz:
-- [Microsoft Intune’da kayıtlı cihaz yönetimi özellikleri](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
-- [Microsoft Intune'da Windows bilgisayarı yönetim özellikleri](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)
+Intune özelliklerinin tamamı hakkında bilgi edinmek için bkz. [Microsoft Intune’da kayıtlı cihaz yönetimi özellikleri](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune).
 
-En yeni Intune özellikleri hakkında daha fazla bilgi almak için, bkz. Microsoft [Intune’daki yenilikler](/intune-classic/Deploy-Use/whats-new-in-microsoft-intune).
+En yeni Intune özellikleri hakkında daha fazla bilgi almak için, bkz. Microsoft [Intune’daki yenilikler](/intune-classic/whats-new/whats-new-in-microsoft-intune).
 
 Destek seçenekleri, [Microsoft Intune için nasıl destek alınır](/intune-classic/Troubleshoot/how-to-get-support-for-microsoft-intune) bölümünde açıklanmıştır ve [Microsoft Intune forumlarında](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod) Intune hakkındaki tartışmalara katılabilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Intune kullanmanın yaygın yolları](common-ways-to-use-intune.md) hakkında bilgi edinin
+[Intune kullanmanın yaygın yolları](/intune/common-scenarios) hakkında bilgi edinin
 
 [Ücretli aboneliğe](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md) dönüştürme
-

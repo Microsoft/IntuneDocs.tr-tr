@@ -1,5 +1,5 @@
 ---
-title: "Intune&quot;a kaydolma veya Intune&quot;da oturum açma"
+title: "Intune'a kaydolma veya Intune'da oturum açma"
 description: "Intune aboneliğine kaydolma veya aboneliğinizle başlamak için oturum açma"
 keywords: 
 author: nathbarn
@@ -14,16 +14,12 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 389196cd5c36859589e68ccadd576ceeac1bc279
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="sign-up-or-sign-in-to-intune"></a>Intune'a kaydolma veya Intune'da oturum açma
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -50,4 +46,3 @@ Kayıt işlemini tamamladıktan sonra, Office 365 yönetim merkezi aracılığı
 
 >[!TIP]
 > Intune’da bir sonraki oturum açışınızda otomatik olarak Intune yönetim konsoluna yönlendirilirsiniz.
-

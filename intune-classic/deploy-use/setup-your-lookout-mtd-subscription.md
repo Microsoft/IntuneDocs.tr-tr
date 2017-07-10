@@ -1,5 +1,5 @@
 ---
-title: "Lookout ile aboneliğinizi ayarlama | Microsoft Docs"
+title: "Lookout ile aboneliğinizi ayarlama"
 description: "Bu konu, Lookout cihaz tehdit korumasını nasıl yapılandıracağınıza yönelik ayrıntılar sunar."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3c777d8857fd177e5a27840ab8a97c8a137aa189
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5acbf2aacc747113ff8b3889dba306e30567f24a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>Lookout Mobile Threat Defense aboneliğinizi ayarlama
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,7 +73,7 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 
   ![Lookout konsolunda ilk oturum açma sayfasının ekran görüntüsü](../media/mtp/lookout_mtp_initial_login.png) Kabul edip onayladıktan sonra Lookout konsoluna yönlendirilirsiniz.
 
-  Oturum açma sorunları ile ilgili yardım için bkz. [Lookout tümleştirme sorunlarını giderme](/intune-classic/troubleshoot/troubleshooting-lookout-integration).
+  Oturum açma sorunları ile ilgili yardım için bkz. [Lookout tümleştirme sorunlarını giderme](/intune-classic/Troubleshoot/device-threat-protection-troubleshooting.md).
 
 3.  [Lookout Konsolu](https://aad.lookout.com)’nda, **Sistem** modülünde, **Bağlayıcılar** sekmesine tıklayın ve **Intune**’u seçin.
 
@@ -139,4 +136,3 @@ Lookout Mobile Threat Defense, çeşitli türlerdeki mobil tehditleri sınıflan
 Kurulum tamamlandıktan sonra, Lookout Mobile Threat Defense belirlenen kayıt gruplarına karşılık gelen cihazlar için Azure AD’yi yoklamaya başlar.  Kayıtlı cihazlar hakkındaki bilgileri Cihazlar modülünde bulabilirsiniz.  Cihazların ilk durumu, beklemede olarak gösterilir.  Cihaz durumu Lookout for Work uygulaması cihaza yüklendikten, açıldıktan ve etkinleştirildikten sonra değişir.  Cihaza gönderilen Lookout for Work uygulamasının nasıl alınacağına yönelik ayrıntılar için, [Lookout for Work uygulamalarını yapılandırma ve dağıtma](configure-deploy-lookout-for-work-app.md) konusuna bakın.
 ## <a name="next-steps"></a>Sonraki adımlar
 [Lookout MTP Intune bağlantısını etkinleştirme](/intune-classic/deploy-use/enable-lookout-mtd-connection)
-

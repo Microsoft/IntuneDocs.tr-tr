@@ -1,5 +1,5 @@
 ---
-title: "MAM ilkelerini oluşturma ve dağıtma | Microsoft Docs"
+title: "MAM ilkelerini oluşturma ve dağıtma"
 description: "Mobil uygulama yönetimi ilkelerini oluşturmak ve dağıtmak için, bu konu başlığı altında verilen adım adım yönergeleri kullanın."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d91ce526650166197520d37c82084c0ff141ec80
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -109,9 +106,9 @@ Uygulama koruma ilkeleri oluşturmak için aşağıdaki adımları izleyin:
 ## <a name="line-of-business-lob-apps-optional"></a>İş Kolu (LOB) uygulamaları (isteğe bağlı)
 
 Intune 1703 sürümünden başlayarak yeni uygulama koruma ilkesi oluşturma sırasında Intune'a LOB uygulamalarını genel olarak ekleme seçeneğine sahip olacaksınız. Bu sayede MAM SDK kullanarak tam uygulama dağıtımı izinlerine ihtiyaç duymadan LOB uygulamaları için uygulama koruma ilkeleri tanımlayabilirsiniz.
-
+/intune/app-sdk-get-started
 > [!TIP]
-> Ayrıca [Intune Uygulama SDK'sı](/intune-classic/develop/intune-app-sdk-get-started) iş akışında da Intune'a LOB uygulamaları ekleyebilirsiniz.
+> Ayrıca [Intune Uygulama SDK'sı](/intune/app-sdk-get-started) iş akışında da Intune'a LOB uygulamaları ekleyebilirsiniz.
 
 > [!IMPORTANT]
 > Intune'a herhangi bir uygulamayı dağıtabilecekleri tam uygulama dağıtım izinleri yerine MAM uygulamalarını dağıtma izinlerine sahip olan kullanıcılar Intune SDK iş akışını kullanamaz ancak bu kullanıcılar MAM uygulama koruma ilkesi oluşturma iş akışı sayesinde LOB uygulamalarını ekleyebilirler.
@@ -164,8 +161,8 @@ Yalnızca Intune lisansları atanmış kullanıcılar ilkeden etkilenir. Seçti�
 > iOS ve Android cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır. Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
 Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.:
-* [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](/intune/end-user-mam-apps-android)
+* [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>Mevcut ilkeleri değiştirme
 Mevcut ilkeyi düzenleyebilir ve bunu hedeflenen kullanıcılara uygulayabilirsiniz. Bununla birlikte, mevcut ilkeleri değiştirdiğinizde, uygulamalarda oturum açmış olan kullanıcılar bu değişiklikleri 8 saat boyunca görmez.
@@ -219,6 +216,5 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerde
 [Uyumluluğu ve kullanıcı durumunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Ayrıca bkz.
-* [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](/intune/end-user-mam-apps-android)
+* [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](/intune/end-user-mam-apps-ios)

@@ -1,5 +1,5 @@
 ---
-title: "E-posta ve Office 365’i koruma | Microsoft Docs"
+title: "E-postayı ve Office 365'i koruma"
 description: "Bu konu başlığı altında, SharePoint Online’daki ve diğer hizmetlerdeki şirket e-postasına ve şirket verilerine yalnızca uyumlu cihazların erişmesine izin vermek için koşullu erişimi nasıl kullanabileceğiniz açıklanır."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc89c1b5b502f00bab5ed02f6e7df6422241aeb1
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Microsoft Intune ile e-posta, Office 365 ve diğer hizmetlere erişimi koruma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -51,7 +48,7 @@ Microsoft Intune ve Azure Active Directory (Azure AD) Premium, EMS koşullu eri�
 
 - [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/pricing/details/active-directory/) hakkında daha fazla bilgi edinin.
 
-Ayrıca, koşullu erişim ilkelerini uygulamayı planladığınız kullanıcılara [Azure AD Premium veya EMS lisansları atandığından](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) emin olun.
+Ayrıca, koşullu erişim ilkelerini uygulamayı planladığınız kullanıcılara [Azure AD Premium veya EMS lisansları atandığından](/intune/licenses-assign) emin olun.
 
 ### <a name="device-compliance-settings"></a>Cihaz uyumluluk ayarları
 
@@ -83,4 +80,3 @@ Diğer Intune ilkelerinden farklı olarak, koşullu erişim ilkelerini dağıtma
   - [SharePoint Online için koşullu erişim ilkesi oluşturma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Skype Kurumsal Çevrimiçi Sürüm için koşullu erişim ilkesi oluşturma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Dynamics CRM Online için koşullu erişim ilkesi oluşturma](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

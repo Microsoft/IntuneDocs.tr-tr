@@ -14,15 +14,12 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7025bdd5d89e52f1c99f9cd834232daf324f3285
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="wipe-company-app-data-with-intune-mam"></a>Intune MAM ile şirket uygulama verilerini temizleme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -95,4 +92,3 @@ Bekleme durumundaki silmeler, siz bunları elle silinceye kadar görüntülenir.
 [Mobil uygulama yönetimi ilkelerini kullanarak uygulama verilerini koruma ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Azure portalını kullanma](azure-portal-for-microsoft-intune-mam-policies.md)
-

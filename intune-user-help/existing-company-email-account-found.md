@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="an-existing-company-email-account-was-found"></a>Bir mevcut şirket e-posta hesabı bulundu
 
 Kuruluşunuz veya şirketiniz için zaten bir e-posta hesabınız var ve şimdi mobil cihazınızdan o hesaba erişmek istiyorsunuz. BT yöneticinizin e-postayı cihazınıza gönderen kişiden sonraki süreçte e-posta erişiminizi güvende tutmak için yardımınıza ihtiyacı vardır. Geçerli e-postanız çalışmış olabilir, ancak bu adımları uygulamak bilgilerinizin güvenliğini artıracaktır.
@@ -39,4 +35,3 @@ Kuruluşunuz veya şirketiniz için zaten bir e-posta hesabınız var ve şimdi 
 3.  Yeni e-posta ayarlarının cihazınıza otomatik olarak uygulanması için kısa bir süre bekleyin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

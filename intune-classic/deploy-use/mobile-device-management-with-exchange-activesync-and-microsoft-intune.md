@@ -1,5 +1,5 @@
 ---
-title: "Exchange ActiveSync Cihaz Yönetimi | Microsoft Docs"
+title: "Exchange ActiveSync Cihaz Yönetimi"
 description: "Exchange bağlayıcısını kullanarak Exchange ActiveSync (EAS) yönetimi ile mobil cihaz yönetme"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b9e6d1def269bc80d54f259bc8b7c12dbb520e06
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8982072b93c22e0294b6e454d597e0aa5bbb7b71
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Microsoft Intune ile Exchange ActiveSync mobil cihaz yönetimi
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,4 +47,3 @@ Intune konsolu, [EAS ilke ayarlarını](exchange-activesync-policy-settings-in-m
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>Mobil cihazlardan şirket verileri temizleme
 Son olarak, şirket verileri artık kullanılmıyorsa ya da cihazlar kaybolur veya çalınırsa, [şirket verilerini EAS ile yönetilen mobil cihazlardan temizleyebilirsiniz](wipe-for-exchange-managed-mobile-devices.md).
-

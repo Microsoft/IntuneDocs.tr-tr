@@ -1,12 +1,12 @@
 ---
-title: Intune&quot;da cihaz kategorilerini kullanma
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Kullanıcıların cihazlarını Intune’a kaydederken seçebilecekleri cihaz kategorilerini kullanmayı öğrenin."
+title: Intune'da cihaz kategorilerini kullanma
+titleSuffix: Intune on Azure
+description: "Kullanıcıların cihazlarını Intune'a kaydederken seçebilecekleri cihaz kategorilerini kullanmayı öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,26 +14,23 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0ac86a48c00c278b4d65dd7aabb096673fb2c00d
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="map-device-groups"></a>Cihaz gruplarını eşleme
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Cihazların yönetimini kolaylaştırmak için cihazları kendi tanımladığınız kategorilere göre otomatik olarak gruplara eklemek için Microsoft Intune cihaz kategorilerini kullanın.
 
 Cihaz kategorileri aşağıdaki iş akışını kullanır:
-1.    Kullanıcıların cihazlarını kaydederken arasından seçim yapacağı kategoriler oluşturma
-4.    Son kullanıcılar cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Bir cihaz zaten kaydedilmişse, Şirket Portalı uygulamasına bir sonraki erişiminde son kullanıcıdan bir kategori seçmesi istenir.
-
+1. Kullanıcıların cihazlarını kaydederken arasından seçim yapacağı kategoriler oluşturma
+3. iOS ve Android cihazlarının son kullanıcıları cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Bir Windows cihazına bir kategori atamak için, son kullanıcıların Şirket Portalı web sitesini kullanmaları gerekir (ayrıntılar için bu konu başlığındaki **Cihaz gruplarını yapılandırdıktan sonra** bölümüne bakın).
+4. Ardından bu gruplara ilkeler ve uygulamalar dağıtabilirsiniz.
 
 İstediğiniz herhangi bir cihaz kategori oluşturabilirsiniz, örneğin:
 - Satış noktası cihazı
@@ -46,7 +43,6 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>1. Adım - Azure Portal’ın Intune dikey penceresinde cihaz kategorileri oluşturma
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihazları kaydet**’i seçin.
 3. **Kayıt** dikey penceresinde **Cihaz Kategorileri**’ni seçin.
 4. **Cihaz Kategorileri** sayfasında, yeni kategori eklemek için **Oluştur**’u seçin.
@@ -66,31 +62,35 @@ Siz cihaz gruplarını yapılandırdıktan ve kullanıcılar cihazlarını kayde
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>Yönettiğiniz cihazların kategorilerini görüntüleme
 
-1.    Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1.  Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
 2. Azure Portal’ın Intune dikey penceresinde **Cihazlar ve Gruplar**’ı seçin.
 
-3.    **Yönet**’in altında **Tüm cihazlar**’a tıklayın.
+3.  **Yönet**’in altında **Tüm cihazlar**’a tıklayın.
 
-4.    Cihaz listesinde **Kategori** sütununu inceleyin.
+4.  Cihaz listesinde **Kategori** sütununu inceleyin.
 
 **Kategori** sütunu görüntülenmiyorsa **Sütunlar**’a tıklayın, listeden **Kategori**’yi seçin ve **Uygula**’ya tıklayın.
 
 ### <a name="to-change-the-category-of-a-device"></a>Cihazın kategorisini değiştirmek için
 
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihazlar ve Gruplar**’ı seçin.
 4. **Cihazlar ve Gruplar** dikey penceresinde **Yönet** > **Tüm cihazlar**’ı seçin.
 5. Cihaz listesinde istediğiniz cihazı seçin ve ardından cihaz özellikleri dikey penceresinde **Yönet** > **Özellikler**’i seçin.
 6. Sonraki dikey pencerede, seçili cihazın **Cihaz kategorisi**’ni daha önce yapılandırmış olduğunuz herhangi bir kategori adıyla değiştirebilirsiniz.
 
+## <a name="after-you-configure-device-groups"></a>Cihaz gruplarını yapılandırdıktan sonra
 
+iOS ve Android cihazlarının son kullanıcıları cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Kategoriyi seçip kaydı tamamladıktan sonra, cihazları seçtikleri kategoriye karşılık gelen Intune cihaz grubuna veya Active Directory güvenlik grubuna eklenir.
+
+Bir Windows cihazına bir kategori atamak için, cihazı kaydettikten sonra son kullanıcıların Şirket Portalı web sitesini (portal.manage.microsoft.com) kullanmaları gerekir. Bir Windows cihazında, web sitesine erişin ve **Menü** > **Cihazlarım**'a gidin. Sayfada listelenen kayıtlı bir cihazı seçin, sonra bir kategori seçin. 
+
+Bir kategori seçtikten sonra cihaz, oluşturduğunuz karşılık gelen gruba otomatik olarak eklenir. Cihaz siz kategorileri yapılandırmadan önce kaydedildiyse, son kullanıcı Şirket Portalı web sitesinde cihaz hakkında bir bildirim görür ve Şirket Portalı uygulamasına iOS veya Android üzerinde bir daha eriştiğinde kendisinden bir kategori seçmesi istenir.
 
 ## <a name="further-information"></a>Daha fazla bilgi
 - Azure Portal’da cihaz kategorisini düzenleyebilirsiniz; ama bunu yaparsanız, bu kategoriye başvuran tüm Azure Active Directory Güvenlik gruplarını el ile güncelleştirmeniz gerekir.
 
 - Bir kategoriyi silerseniz, bu kategoriye atanmış olan tüm cihazlar sonunda **Atanmamış** kategori adını görüntüler.
-
 
 

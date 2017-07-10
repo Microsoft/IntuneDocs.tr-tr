@@ -1,5 +1,5 @@
 ---
-title: "İlke oluşturma ve kullanıcılara bir uygulama yayımlama | Microsoft Docs"
+title: "İlke oluşturma ve kullanıcılara uygulama yayımlama"
 description: "Intune’un ücretsiz, 30 günlük değerlendirmesine kaydolduğunuzda, ilkeler nasıl oluşturulur ve uygulama nasıl yayımlanır"
 keywords: 
 author: lindavr
@@ -14,16 +14,12 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0e836571b869e7a32b19968da1d78035a6bae7f2
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 335d91cd6583052bfcc72fc018b387eed8823b7e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>İlke oluşturma ve değerlendirme kullanıcılarına bir uygulama yayımlama
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -102,7 +98,6 @@ Intune mobil cihaz yönetim kılavuzu burada tamamlanmaktadır, ancak Sonraki ad
 ## <a name="next-steps"></a>Sonraki adımlar
 Diğer [Intune özellikleri](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md) hakkında daha fazla bilgi edinin
 
-[Intune kullanmanın yaygın yolları](common-ways-to-use-intune.md) hakkında bilgi edinin
+[Intune kullanmanın yaygın yolları](/intune/common-scenarios) hakkında bilgi edinin
 
 [Ücretli aboneliğe](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md) dönüştürme
-

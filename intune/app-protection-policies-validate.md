@@ -1,7 +1,7 @@
 ---
 title: "Uygulama koruma ilkelerinizi doğrulama"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Bu konu başlıkları altında, uygulama koruma ilkenizin doğru kurulduğunu ve beklendiği şekilde çalıştığını nasıl test edip doğrulayabileceğiniz açıklanır."
+titleSuffix: Intune on Azure
+description: "Bu konu başlıkları altında, uygulama koruma ilkenizin doğru kurulduğunu ve beklendiği şekilde çalıştığını nasıl sınayıp doğrulayabileceğiniz açıklanır.\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,18 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 26e191965eff482cf97b920e028cdf60d1881d32
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ddfecbcd8709569ff177e6c7021d3e8fdab39290
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Uygulama koruma ilkesi kurulumunuzu doğrulama
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Bu konu, uygulama koruma ilkelerini ayarladıktan sonra sorunların denetlemesiyle ilgili bilgi sağlar. Bu kılavuz, Azure Portal **önizlemedeki** uygulama koruma ilkeleri için geçerlidir.
+Bu konu, uygulama koruma ilkelerini ayarladıktan sonra sorunların denetlemesiyle ilgili bilgi sağlar. Bu kılavuz, Azure portaldaki uygulama koruma ilkeleri için geçerlidir.
 
 ### <a name="checking-for-symptoms"></a>Belirtileri denetleme
 Uygulama koruma bir veri koruması aracı olduğundan, kullanıcıların soruları bildirme olasılığı düşüktür. Uygulama koruma yapılandırmasında bir sorun varsa, kullanıcılar uygulama korumanın olmadığı durumlardaki gibi sınırsız erişime sahip olur ve bir sorun olduğunun farkına varmazlar. Bu nedenle, uygulama koruma ilkelerinizi uygulama korumanın kısıtlamalarını bilinçli olarak test edebilecek küçük bir grup kullanıcıya uygulama koruma ilkelerinizin pilot dağıtımını yaparak, uygulama koruma yapılandırmanızı doğrulamanızı öneririz.
@@ -61,4 +58,3 @@ Kullanıcı durumuna göre gerçekleştirilecek eylemler şunlardır:
 ### <a name="see-also"></a>Ayrıca bkz.
 
 [Intune uygulama koruma ilkesi nedir?](app-protection-policies.md)
-

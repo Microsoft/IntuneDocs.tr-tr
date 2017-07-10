@@ -1,7 +1,7 @@
 ---
 title: "Apple Configurator ve doğrudan kayıt ile iOS cihazlarını kaydetme"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Doğrudan kayıtla şirkete ait iOS cihazlarını kaydetmek için Apple Configurator’ı kullanmayı öğrenin."
+titleSuffix: Intune on Azure
+description: "Apple Configurator'ı şirkete ait iOS cihazlarını doğrudan kayıtla kaydetmek için kullanmayı öğrenin.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5347e2023a9ce19f8e8ab960e2eebf8107530220
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>Apple Configurator ve doğrudan kayıt ile iOS cihazlarını kaydetme 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) kullanarak şirketin sahip olduğu iOS cihazlarının kaydedilmesini destekler. Bu işlem cihazı fabrika ayarlarına sıfırlamaz ve önceden tanımlanmış bir ilkeyle kaydeder. Bu yöntem, **kullanıcı benzeşimi yok** ayarına sahip cihazlar içindir ve kurumsal kayıt kurulumu için iOS cihazını USB ile bir Mac bilgisayara bağlamanız gerekir.
 
@@ -42,7 +39,7 @@ iOS cihazlarını kaydetmeye yönelik diğer yöntemler, [Intune’da iOS cihazl
 
 iOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın:
 
-- [Etki alanlarını yapılandırma](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [Etki alanlarını yapılandırma](custom-domain-name-configure.md)
 - [MDM Yetkilisini ayarlama](mdm-authority-set.md)
 - [Grup oluşturma](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [Şirket Portalı’nı yapılandırma](company-portal-app.md)
@@ -102,4 +99,3 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar. Aşağıda
 4. iOS cihazında **Ayarlar**’ı açın ve **Genel** > **Cihaz Yönetimi** > **Yönetim Profili**’ne gidin. Profil yüklemesinin listelendiğini onaylayın, iOS ilke kısıtlamalarını ve yüklü uygulamaları denetleyin. İlke kısıtlamaları ve uygulamaların cihazda görünmesi 10 dakika kadar sürebilir.
 
 5. Cihazları dağıtın. iOS cihazı Intune’a kaydedilmiştir ve yönetilmektedir.
-
