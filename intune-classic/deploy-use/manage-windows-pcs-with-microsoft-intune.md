@@ -1,5 +1,5 @@
 ---
-title: "İstemci yazılımı ile bilgisayarları yönetme | Microsoft Docs"
+title: "Bilgisayarları istemci yazılımıyla yönetme"
 description: "Windows bilgisayarlarını Intune istemci yazılımını yükleyerek yönetin."
 keywords: 
 author: nathbarn
@@ -14,16 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune yazılımı istemcisi ile Windows PC’leri bilgisayar olarak yönetme
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune, mobil cihazların yönetimi için kuruluşlara yönelik kapsamlı bir çözüm sağlar. Intune, Windows 10 işletim sistemine yerleşik modern cihaz yönetim özelliklerini kullanarak Windows PC’leri mobil cihaz olarak yönetebilir. Kuruluşunuzun yönetim gereksinimlerini karşılamak için Intune, Intune yazılım istemcisi ile Windows PC’leri bilgisayar olarak da yönetebilir. Bu yönetim yöntemi eski Windows işletim sistemindeki geleneksel bilgisayar yönetimi özelliklerini kullanır.
 
@@ -79,7 +78,7 @@ Intune istemci yazılımı, yazılım güncelleştirmelerini, Windows güvenlik 
 
 Windows bilgisayarlarını yönetmek için Intune istemci yazılımını kullandığınızda, yalnızca **Bilgisayar Yönetimi** bölümünün altında gösterilen ilkeleri kullanabilirsiniz.
 
-Intune, kuruluşunuzda kullanılan Windows Server Active Directory Domain Services’a /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) benzer şekilde ilkeler kullanarak Windows bilgisayarları yönetir. Daha fazla bilgi için bkz. [yeni başlayanlar için Grup İlkesi](https://technet.microsoft.com/library/hh147307.aspx).
+Intune, Windows Server Active Directory Etki Alanı Hizmetleri (AD DS) Grup İlkesi Nesneleri’ne (GPO'lar) benzer bir biçimde, Windows PC’leri ilkelerle yönetir. Intune ile Active Directory etki alanına katılmış bilgisayarları yönetiyorsanız, kuruluşunuzda kullanılan herhangi bir [GPO ile Intune ilkelerinin çakışmadığından emin olun](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts). Daha fazla bilgi için bkz. [yeni başlayanlar için Grup İlkesi](https://technet.microsoft.com/library/hh147307.aspx).
 
   ![Yeni Windows bilgisayar ilkesi için şablon seçin](../media/select-template-for-pc-policy.png)
 
@@ -115,4 +114,3 @@ Intune yönetim konsolundaki **Güncelleştirmeler**, **Koruma** ve **Lisanslar*
 Intune istemci yazılımı genellikle fazla kullanıcı etkileşimi veya sorun giderme gerektirmeden, sessizce arka planda çalışır. Bilgisayar yönetim sorunlarını çözmeniz gerekiyorsa, günlükleri gözden geçirebilirsiniz. Intune istemci yazılımı ve ilgili günlükler, %Program Files%\Microsoft\OnlineManagement dizini altına yüklenir.
 
 Ortaya çıkabilecek sorunları ve çözümlerini veya geçici çözümlerini denetlemek için, [Microsoft Intune’da istemci kurulumu sorunlarını giderme](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) konusunu da gözden geçirebilirsiniz.
-

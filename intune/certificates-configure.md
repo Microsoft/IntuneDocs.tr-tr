@@ -1,12 +1,12 @@
 ---
-title: "Intune ile sertifikaları yapılandırma | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Wi-Fi, VPN ve diğer bağlantıların güvenliğini sağlamaya yardımcı olan sertifikaları oluşturmak ve atamak için Intune kullanmayı öğrenin."
+title: "Intune ile sertifika yapılandırma"
+titleSuffix: Intune on Azure
+description: "Wi-Fi, VPN ve diğer bağlantıların güvenliğini sağlamaya yardımcı olan sertifikaları oluşturmak ve atamak için Intune kullanmayı öğrenin.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81c7e04d4b4cc7599b63917e5507775b38b65ba7
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Microsoft Intune’da sertifika yapılandırma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Kullanıcılarınıza VPN, Wi-Fi veya e-posta profilleri aracılığıyla şirket kaynaklarına erişim izni verdiğinizde, bu bağlantıların kimlik doğrulamasını sertifika kullanarak yapabilirsiniz. Bunlar, bağlantıların kimlik doğrulamasını yapmak için kullanıcı adı veya parola girme gereksinimini ortadan kaldırır.
 
@@ -56,8 +53,8 @@ Bu sertifika türlerinin her birinin kendi önkoşulları ve altyapı gereksinim
 
     Aşağıdaki platformlarla yalnızca SCEP sertifika profilini kullanabilirsiniz:
 
--     macOS 10.9 ve üzeri
--     Windows Phone 8.1 ve üzeri
+-   macOS 10.9 ve üzeri
+-   Windows Phone 8.1 ve üzeri
 
 Her cihaz platformu için ayrı profil oluşturmanız gerekir. Profili oluştururken daha önce oluşturduğunuz güvenilen kök sertifika profiliyle ilişkilendirin.
 
@@ -88,7 +85,7 @@ SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen se
 ### <a name="to-create-a-trusted-certificate-profile"></a>Güvenilen bir sertifika profili oluşturmak için
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
@@ -128,4 +125,3 @@ Güvenilen sertifika profilini oluşturduktan sonra, kullanmak istediğiniz her 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Cihaz profillerini atama hakkındaki genel bilgiler için bkz. [Cihaz profillerini atama](device-profile-assign.md).
-

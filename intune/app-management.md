@@ -1,12 +1,12 @@
 ---
-title: "Uygulama yönetimi nedir? | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Microsoft Intune’la uygulama yönetimi hakkındaki temel bilgileri edinmek için bu konuyu kullanın"
+title: "Uygulama yönetimi nedir?"
+titleSuffix: Intune on Azure
+description: "Microsoft Intune’la uygulama yönetimi hakkındaki temel bilgileri edinmek için bu konuyu kullanın\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,22 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56eefde5969f5426886c07bd6e9a548c8526e82e
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-BT yöneticisi olarak, son kullanıcılarınızın işlerini yapmak için ihtiyaçları olan uygulamalara erişmelerini sağlamak büyük olasılıkla sizin görevinizdir. Bu zor olabilir çünkü:
+BT yöneticisi olarak, son kullanıcılarınızın işlerini yapmak için ihtiyaçları olan uygulamalara erişmelerini sağlamak sizin sorumluluğunuzdur. Bu zor olabilir çünkü:
 - Çok çeşitli cihaz platformları ve uygulama türleri vardır.
-- Şirket cihazlarındaki uygulamalara ek olarak kullanıcıların kendi cihazlarındaki uygulamaları da yönetmeniz gerekebilir.
-- Tüm bunları yaparken, ağınızın ve verilerinizin de güvenliğini korumanız gerekir. 
+- Şirket cihazlarındaki uygulamaları ve kullanıcıların kendi cihazlarındaki uygulamaları yönetmeniz gerekebilir.
+- Ağınızın ve verilerinizi güvenli kaldığından emin olmanız gerekir.
 
 Buna ek olarak, Intune’a kaydolmamış cihazlarda uygulamaları atamak ve yönetmek isteyebilirsiniz.
 
@@ -63,7 +60,6 @@ Intune, ihtiyacınız olan uygulamaları istediğiniz cihazlara almanıza yardı
 
 <sup>2</sup>Yalnızca Intune tarafından yönetilen cihazlar için geçerlidir.
 
-
 ## <a name="how-to-get-started"></a>Nereden başlayacaksınız
 
 Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygulamayla ilgili bilgilerin çoğunu bulabilirsiniz:
@@ -75,12 +71,13 @@ Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygu
     ![Mobil Uygulamalar iş yükü](./media/apps-workload.png)
 
 ### <a name="manage"></a>Bilgisayarlarda
-- **Uygulamalar** - Burası, uygulamalarınızın çoğunu eklediğiniz, atadığınız ve izlediğiniz yerdir. 
+- **Uygulamalar** - Bu düğüm, uygulamalarınızın çoğunu eklediğiniz, atadığınız ve izlediğiniz yerdir.
     - [Uygulamaları ekleme](apps-add.md)
     - [Uygulamaları atama](apps-deploy.md)
     - [Uygulamaları izleme](apps-monitor.md)
-- **Uygulama yapılandırma ilkeleri** - Uygulama yapılandırma ilkeleri, kullanıcı bir uygulama çalıştırdığında gerekebilecek ayarları sağlamanıza olanak tanır. Ayrıntılar için bkz.
-    - [Uygulama yapılandırma ilkeleri](app-configuration-policies.md)
+- **Uygulama yapılandırma ilkeleri** - Uygulama yapılandırma ilkeleri, kullanıcı bir uygulama çalıştırdığında gerekebilecek ayarları sağlamanıza olanak tanır.
+    - [iOS uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md)
+    - [Android uygulama yapılandırma ilkeleri](app-configuration-policies-use-android.md)
 - **Uygulama koruma ilkeleri** - Uygulamanın kullandığı şirket verilerini korumaya yardımcı olması için ayarları uygulamayla ilişkilendirmenizi sağlar. Örneğin, bir uygulamanın diğer uygulamalarla iletişim kurma özelliklerini kısıtlayabilir veya kullanıcının şirket uygulamasına erişmek için PIN girmesini isteyebilirsiniz.
     - [Uygulama koruma ilkeleri](app-protection-policies.md)
 - **Uygulama seçmeli silme** - Seçtiğiniz kullanıcının cihazından yalnızca şirket verilerini kaldırın.
@@ -100,8 +97,7 @@ Ayrıntılar için bkz. [Uygulamaları izleme](apps-monitor.md)
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **İş İçin Windows Mağazası** - İş İçin Windows Mağazası’na tümleştirmeyi kurun. Bunu yaptıktan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz. 
+- **İş İçin Windows Mağazası** - İş İçin Windows Mağazası’na tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz.
     - [İş İçin Windows Mağazası’ndan toplu satın alınan uygulamalar](windows-store-for-business.md)
-- **Şirket Portalı markası** - Şirket Portalı’nı özelleştirerek şirketinizin markasını ekleyin. 
+- **Şirket Portalı markası** - Şirket Portalı’nı özelleştirerek şirketinizin markasını ekleyin.
     - [Şirket portalı yapılandırması](company-portal-app.md)
-

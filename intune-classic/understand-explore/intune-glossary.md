@@ -1,26 +1,24 @@
 ---
-title: "Intune sözlüğü | Microsoft Docs"
+title: "Intune sözlüğü"
 description: "Microsoft Intune terimlerinin bir kısmı hakkında bilgi edinin"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 43b6dbfc004e8687eaf2a0ee185728136f457bfc
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: be3b078edc4e133fb586bb9476ba1dd770d0f389
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune sözlüğü
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,10 +27,17 @@ ms.lasthandoff: 05/23/2017
 
 |||
 |-|-|
-|Uygulama SDK'sı|[Microsoft Intune Uygulama SDK’sı](/intune-classic/develop/intune-app-sdk) şirket içinde yazılan uygulamalara, Intune mobil uygulama ilkeleri tarafından yönetilmelerine olanak tanıyan işlevsellik ekler.|
-|Uygulama Sarmalama Aracı|Bir iş kolu uygulamasının çevresinde sarmalayıcı oluşturan ve sonra uygulamanın bir Intune mobil uygulama yönetimi ilkesi tarafından yönetilmesine izin veren [bir komut satırı uygulamasıdır](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).|
+|Uygulama yapılandırma profili|Bir iOS uygulamasını çalıştırılmadan önce [belirli ayarlarla](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) yapılandırır.|
+|Uygulama dağıtımı|Kullanıcıların ihtiyaç duydukları uygulamaları [bulmasına, indirmesine ve yüklemesine](/intune-classic/deploy-use/deploy-apps) izin verir.|
+|Uygulama izleme|Uygulama dağıtımı ile ilgili [son durumu ve etkinliği gözden geçirmenize](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune) olanak tanır.|
+|Uygulama koruma verilerini kaldırma görevi|Kullanıcının cihazından [uygulama verilerini kaldırır](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).|
+|Uygulama koruma ilkesi|Kullanıcının uygulamalarının [şirketinizin veri koruma ilkeleri](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) ile uyumlu olmasını sağlar.|
+|Uygulama raporlama|Uygulama dağıtım durumu ve etkinliği hakkında [geçmiş verileri gözden geçirmenize](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports) olanak tanır.|
+|Uygulama SDK'sı|[Microsoft Intune Uygulama SDK’sı](/intune/app-sdk) şirket içinde yazılan uygulamalara, Intune mobil uygulama ilkeleri tarafından yönetilmelerine olanak tanıyan işlevsellik ekler.|
+|Uygulamayı kaldırma eylemi|Kullanıcının cihazlarından [uygulamaları kaldırmanıza](/intune-classic/deploy-use/deploy-apps) olanak tanır.|
+|Uygulama Sarmalama Aracı|Bir iş kolu uygulamasının çevresinde sarmalayıcı oluşturan ve sonra uygulamanın bir Intune mobil uygulama yönetimi ilkesi tarafından yönetilmesine izin veren [bir komut satırı uygulamasıdır](/intune/apps-prepare-mobile-application-management).|
 |Kullanılabilir yükleme|Bu eylemle bir uygulama dağıttığınızda, uygulama şirket portalında gösterilir ve kullanıcılar tarafından [isteğe bağlı olarak yüklenebilir](/intune-classic/deploy-use/deploy-apps).|
-|Azure Portal|Yakında tanıtılacak yeni bir Intune konsolu. Bu arada, cihazlara yönelik [Intune MAM ilkeleri](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) oluşturmak için Azure portalı kullanabilirsiniz.|
+|Azure Portal|Yakında tanıtılacak yeni Intune konsolu. [Yeni portal hakkında daha fazla bilgi edinin](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
 |||
@@ -56,7 +61,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |Dağıtım|Yönettiğiniz bir cihaz veya kullanıcıya bir uygulama veya ilke gönderme eylemidir.|
 |Dağıtım eylemi|[Bir uygulama dağıttığınızda](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune) yaptığınız bir seçimdir. Uygulama yüklemesini zorunlu ya da isteğe bağlı olarak ayarlayabilir veya uygulamayı kaldırabilirsiniz.|
-|Cihaz kayıt yöneticisi|Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek için Intune'u kullanabilir. [cihaz kayıt yöneticisi /intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) hesabı, 1.000’e kadar cihaz kaydedebilen özel bir Intune hesabıdır.|
+|Cihaz kayıt yöneticisi|Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek için Intune'u kullanabilir. [Cihaz kayıt yöneticisi (DEM)](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) hesabı, en fazla 1.000 cihazı kaydedebilen özel bir Intune hesabıdır.|
 |Cihaz grubu eşlemesi|Siz veya son kullanıcı tarafından cihaza atanabilecek cihaz kategorisine (“Kişisel” veya “Satış” gibi) bağlı olarak, [gruplara otomatik olarak cihaz eklemenize](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) yardımcı olur.|
 
 ## <a name="e"></a>E
@@ -64,7 +69,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |E-posta profili|Bu ilke, mobil cihazlardaki belirli e-posta istemcileri için [e-posta erişim ayarları](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) yapmak amacıyla kullanılabilir ve son kullanıcının yapması gereken ayarları en aza indirir.|
 |EMS|Microsoft Enterprise Mobility + Security (önceki adıyla Enterprise Mobility Suite) kullanıcılarınızın [ihtiyaç duyduğu uygulamalara ve içeriğe erişmesine olanak tanırken](https://www.microsoft.com/cloud-platform/enterprise-mobility) şirket verilerinizi korur.|
-|Son kullanıcı|Intune kullanılarak yönetilen [telefon ve bilgisayar gibi cihazların kullanıcıları](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).|
+|Son kullanıcı|Intune kullanılarak yönetilen [telefon ve bilgisayar gibi cihazların kullanıcıları](/intune/end-user-educate).|
 |Kaydetme|Microsoft Intune cihazları yönetime getirmek ve kaynaklara erişim izni vermek için [kayıt](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) kullanır.|
 
 ## <a name="f"></a>F
@@ -99,8 +104,8 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Managed Browser|Microsoft Intune kullanarak kuruluşunuzda dağıtabileceğiniz bir [web’e gözatma uygulamasıdır](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). Yönetilen tarayıcı ilkesi, yönetilen tarayıcı kullanıcılarının ziyaret edebileceği web sitelerini kısıtlayan bir izin verilenler listesi veya engellenenler listesi yapılandırır.|
-|Mobil uygulama yönetimi|[Mobil uygulama yönetimi /intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) kullanıcılarınız için mobil uygulamalarda yayımlama, gönderme, yapılandırma, güvenlik altına alma, izleme ve güncelleştirme işlemleri sağlar.
-|Mobil aygıt yönetimi|[Mobil uygulama yönetimi /intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) Intune’a cihaz kaydetmenizi sağlar; böylece bu cihazları sağlama, yapılandırma, izleme ve cihazlarda eylem gerçekleştirme imkanınız olur.
+|Mobil uygulama yönetimi|[Mobil uygulama yönetimi (MAM)](/intune/app-lifecycle) kullanıcılarınız için mobil uygulamaları yayımlama, gönderme, yapılandırma, güvenlik altına alma, izleme ve güncelleştirme gibi eylemler gerçekleştirmenize olanak tanır.
+|Mobil aygıt yönetimi|[Mobil cihaz yönetimi (MDM)](/intune/device-lifecycle) cihazları Intune’a kaydetmenize izin verir ve bu cihazları sağlamanıza, yapılandırmanıza, izlemenize ve bunlar üzerinde işlem yapmanıza olanak tanır.
 |MDM yetkilisi|[MDM yetkilisi](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune), bir grup cihazı yönetme iznine sahip olan yönetim hizmetini tanımlar. MDM yetkilisi seçenekleri arasında Intune’un kendisi ve Intune ile Configuration Manager vardır.|
 |Mobil uygulama sağlama ilkesi|Dağıttığınız iOS uygulamaları için [sağlama profillerinin](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles) süresinin sona ermediğinden emin olmanızı sağlayan bir iOS ilkesidir.|
 |Mobil uygulama yapılandırma ilkesi|Şirket adı veya sunucu adresi gibi [ayarları çalıştırıldıkları zaman uyumlu iOS uygulamalarına sağlamak](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) için kullanılan bir iOS ilkesidir.|
@@ -148,4 +153,3 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Wi-Fi profili|Kullanıcıların şirket ağınıza herhangi bir ayarı bilmelerine veya yapılandırmalarına gerek kalmadan bağlanmasına olanak tanımak için cihazlara [kablosuz ağ ayarları](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) dağıtan bir ilkedir.
-

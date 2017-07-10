@@ -1,5 +1,5 @@
 ---
-title: "iOS MAM ilke ayarları | Microsoft Docs"
+title: "iOS MAM ilkesi ayarları"
 description: "Bu konu başlığı altında, iOS cihazları için mobil uygulama yönetimi ilkesi ayarları açıklanır."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ca0fa4b433710eecbb28f931e9b5cbe5b230598b
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 384c3a8c930bf7ee8487726c37f1ff3652675650
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 #  <a name="ios-mobile-app-protection-policy-settings"></a>iOS mobil uygulama koruma ilkesi ayarları
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -71,14 +68,14 @@ Intune uygulama koruma ilkesinin, belirli senaryolarda veri aktarımına hedef v
 | **Erişim için PIN’i zorunlu kıl** | Bu uygulamayı kullanmak için PIN’i zorunlu kılmak üzere **Evet**’i seçin. Uygulamayı iş veya okul bağlamında ilk kez çalıştırdığında kullanıcıdan bu PIN’i ayarlaması istenir. Varsayılan değer = **Evet**.<br><br> PIN gücü için aşağıdaki ayarları yapılandırın: <ul><li>**PIN sıfırlamadan önceki deneme sayısı**: Kullanıcının PIN’ini sıfırlamak zorunda kalmadan önce başarılı bir şekilde girmesi gereken deneme sayısını belirtin. Varsayılan değer = **5**.</li><li> **Basit PIN’e izin ver:** Kullanıcıların 1234 veya 1111 gibi basit PIN dizileri kullanmasına izin vermek için **Evet**’i seçin. Basit PIN dizileri kullanmalarını engellemek için **Hayır**’ı seçin. Varsayılan değer = **Evet**. </li><li> **PIN uzunluğu:** PIN dizisindeki basamak sayısı alt sınırını belirtin. Varsayılan değer = **4**. </li><li> **PIN yerine parmak izine izin ver (iOS 8.0+)**: Uygulama erişiminde bir PIN yerine **Touch ID** kullanmasına izin vermek için [Evet](https://support.apple.com/HT201371)’i seçin. Varsayılan değer = **Evet**</li></ul> iOS cihazlarda, kullanıcıların kimliklerini kanıtlamak için PIN yerine [Touch ID](https://support.apple.com/HT201371) kullanmasına izin verebilirsiniz. Kullanıcı, iş veya okul hesabıyla bu uygulamayı kullanmayı denediğinde, PIN girmek yerine parmak izi kimliğini vermesi istenir. Bu ayar etkinleştirildiğinde, Uygulama Değiştirici önizleme resmi iş veya okul hesabı kullanılırken bulanıklaştırılır. </li></ul>| PIN’i zorunlu kıl: Evet <br><br> PIN sıfırlama girişimi: 5 <br><br> Basit PIN’e izin ver: Evet <br><br> PIN uzunluğu: 4 <br><br> Parmak izine izin ver: Evet |
 | **Erişim için kurumsal kimlik bilgileri gerektir** | Kullanıcının uygulama erişimi için PIN girmek yerine iş veya okul hesabıyla oturum açmasını zorunlu kılmak için **Evet**’i seçin. **Evet** olarak ayarlarsanız, bu ayar PIN veya Touch ID gereksinimlerini geçersiz kılar.  | Hayır |
 | **Yönetilen cihazların, jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelle** |  Bu uygulamaya jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engellemek için **Evet**’i seçin. Kullanıcı kişisel görevler için uygulamaları kullanmaya devam edebilir, ancak bu uygulamada iş veya okul verilerine erişmek için farklı bir cihaz kullanması gerekir. | Evet |
-| **Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)** | Aşağıdaki ayarları yapılandırın: <ul><li>**Zaman Aşımı**: Erişim gereksinimleri (daha önce ilkelerde tanımlanmıştır) yeniden denetlenmeden önce geçmesi gereken dakika sayısıdır. Örneğin, yönetici ilkede PIN’i etkinleştirirse, kullanıcı bir MAM uygulamasını açtığında bir PIN girmesi gerekir. Bu ayar kullanıldığında, kullanıcının **30 dakika** (varsayılan değer) boyunca herhangi bir MAM uygulamasında PIN girmesi gerekmez.</li><li>**Çevrimdışı yetkisiz kullanım süresi**: Uygulama için erişim gereksinimleri yeniden denetlenmeden önce MAM uygulamalarının çevrimdışı çalışabileceği dakika sayısıdır. Varsayılan değer = **720** dakika (12 saat). Bu süre dolduktan sonra, uygulama, çalışmaya devam edebilmesi için kullanıcının AAD’de kimliğini doğrulamasını ister.</li></ul>| Zaman Aşımı: 30 <br><br> Çevrimdışı: 720 |
+| **Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)** | Aşağıdaki ayarları yapılandırın: <ul><li>**Zaman Aşımı**: Erişim gereksinimleri (daha önce ilkelerde tanımlanmıştır) yeniden denetlenmeden önce geçmesi gereken dakika sayısıdır. Örneğin, yönetici ilkede PIN’i etkinleştirirse, kullanıcı bir MAM uygulamasını açtığında bir PIN girmesi gerekir. Bu ayar kullanıldığında, kullanıcının **30 dakika** (varsayılan değer) boyunca herhangi bir MAM uygulamasında PIN girmesi gerekmez.<br><br>Erişim gereksinimlerini için zaman aşımı, ilke tarafından yönetilen tüm uygulamalar arasında etkin olmama süresi açısından ölçülür.<br><br></li><li>**Çevrimdışı yetkisiz kullanım süresi**: Uygulama için erişim gereksinimleri yeniden denetlenmeden önce MAM uygulamalarının çevrimdışı çalışabileceği dakika sayısıdır. Varsayılan değer = **720** dakika (12 saat). Bu süre dolduktan sonra, uygulama, çalışmaya devam edebilmesi için kullanıcının AAD’de kimliğini doğrulamasını ister.</li></ul>| Zaman Aşımı: 30 <br><br> Çevrimdışı: 720 |
 | **Uygulama verileri silinmeden önceki çevrimdışı zaman aralığı (gün)** | Belirtilen sayıda (yönetici tarafından tanımlanır) gün boyunca çevrimdışı çalışıldıktan sonra, uygulama kendi kendine bir seçmeli temizleme gerçekleştirir. Bu seçmeli temizleme, MAM temizleme iş akışında yönetici tarafından başlatılabilen temizlemeyle aynıdır. <br><br> | 90 gün |
 | **Cihaz PIN’i yönetildiği zaman uygulama PIN’ini devre dışı bırak** | Kayıtlı bir cihazda bir cihaz kilidi algılandığında, uygulama PIN’ini devre dışı bırakmak için **Evet**’i seçin. | Hayır |
 | **En düşük iOS işletim sistemini zorunlu tut** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. | Hayır |
 | **En düşük iOS işletim sistemini zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir. | Hayır |
 | **En düşük uygulama sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük uygulama sürümünü zorunlu tutmak üzere **Evet**’i seçin. Cihazın uygulama sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.<br><br>Hedeflenecek uygulamaları seçerken uygulamalar arasında genellikle farklı sürüm oluşturma düzenleri gerektiğini unutmayın.<br><br> | Hayır | 
 | **En düşük uygulama sürümünü zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük uygulama sürümünü önermek için **Evet**’i seçin. Cihazdaki uygulama sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.<br><br>Hedeflenecek uygulamaları seçerken uygulamalar arasında genellikle farklı sürüm oluşturma düzenleri gerektiğini unutmayın.<br><br> | Hayır | 
-| **En düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tutmak için **Evet**’i seçin. Cihazın Intune uygulama koruma ilkesi SDK sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. <br> <br> Intune uygulama koruma ilkesi SDK’sı hakkında daha fazla bilgi için bkz. [Intune Uygulama SDK'sına genel bakış](https://docs.microsoft.com/en-us/intune/develop/intune-app-sdk) <br><br> | Hayır |
+| **En düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tutmak için **Evet**’i seçin. Cihazın Intune uygulama koruma ilkesi SDK sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. <br> <br> Intune uygulama koruma ilkesi SDK’sı hakkında daha fazla bilgi için bkz. [Intune Uygulama SDK'sına genel bakış](/intune/app-sdk) <br><br> | Hayır |
 ##  <a name="add-ins-for-outlook-app"></a>Outlook uygulaması için eklentiler
 
 Outlook kısa süre önce iOS için Outlook’a, popüler uygulamaları e-posta istemcisiyle tümleştirebilmenizi sağlayacak eklentiler getirmiştir. Outlook eklentileri web, Windows, Mac ve iOS için Outlook’ta kullanılabilir. Eklentiler Microsoft Exchange yoluyla yönetildiğinden, eklentiler kullanıcı için Exchange tarafından kapatılmadığı sürece, kullanıcılar Outlook ile yönetilmeyen eklenti uygulamaları arasında verileri ve iletileri paylaşabilirler.
@@ -93,4 +90,3 @@ Bu yönergeler Office 365, Exchange 2016, Exchange 2013’te Web üzerinde Outlo
 
 - [Outlook için eklentiler](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx) hakkında daha fazla bilgi edinin.
 - [Outlook uygulaması için eklentileri yükleyebilecek ve yönetebilecek kullanıcıları ve yöneticileri belirleme](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx) hakkında daha fazla bilgi edinin.
-

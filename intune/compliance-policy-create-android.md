@@ -1,7 +1,7 @@
 ---
 title: "Android için uyumluluk ilkesi oluşturma"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Android cihazları için uyumluluk ilkesi oluşturmayı öğrenin."
+titleSuffix: Intune on Azure
+description: "Android cihazları için uyumluluk ilkesi oluşturmayı öğrenin.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,21 +15,18 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 08d503fad2304b25e6feb7f41cf0b93546dd26fd
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune'da Android cihazları için cihaz uyumluluk ilkesi oluşturma
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Intune Azure önizleme portalında Android cihazları için cihaz uyumluluk ilkesi oluşturma
 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Her platform için cihaz uyumluluk ilkeleri Intune Azure önizleme portalından oluşturulur. 
+Her platform için cihaz uyumluluk ilkeleri Intune Azure portalından oluşturulur. 
 
 - Uyumluluk ilkesinin ne olduğu hakkında daha fazla bilgi edinmek için, [Uyumluluk ilkesi nedir](device-compliance.md) konusuna bakın.
 - Uyumluluk ilkesi oluşturmadan önce ilgilenmeniz gereken önkoşullar hakkında bilgi edinmek için, [Cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md) konusuna bakın.
@@ -134,4 +131,3 @@ Aşağıdaki tabloda, uyumluluk ilkesi bir koşullu erişim ilkesi ile kullanıl
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

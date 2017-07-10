@@ -1,7 +1,7 @@
 ---
 title: "Önceden paylaşılan anahtar ile Wi-Fi profili oluşturma"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için bir Intune özel profili kullanın."
+titleSuffix: Intune on Azure
+description: "Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için bir Intune özel profili kullanın.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,39 +15,36 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fe7d9e9998156825bfd9637c3f9d80df80b916cf
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Microsoft Intune özel cihaz profili kullanarak önceden paylaşılan anahtara sahip Wi-Fi profili oluşturma
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Burada, Intune'un **Özel cihaz profillerini**, önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için nasıl kullanabileceğiniz açıklanır. Bu konuda, bir EAP tabanlı Wi-Fi profili oluşturmaya bir örnek de yer almaktadır.
 
 > [!NOTE]
--    Aşağıda anlatıldığı gibi kodu söz konusu ağa bağlanan bir bilgisayardan kopyalamak size daha kolay gelebilir.
+-   Aşağıda anlatıldığı gibi kodu söz konusu ağa bağlanan bir bilgisayardan kopyalamak size daha kolay gelebilir.
 - Android için, Johnathon Biersack tarafından sağlanan bu [Android PSK Oluşturucu](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)’yu kullanma seçeneğiniz de vardır.
--    Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
+-   Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
 -  iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın. Alternatif olarak, Johnathon Biersack tarafından sağlanan bu [iOS PSK Mobile Config Oluşturucu](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)’yu kullanın.
 
 
-1.    Android veya Windows için önceden paylaşılan anahtarla bir Wi-Fi profili oluşturmak veya EAP tabanlı bir Wi-Fi profili oluşturmak için, cihaz profilini oluştururken bu cihaz platformu için bir Wi-Fi profili yerine **Özel**’i seçin.
+1.  Android veya Windows için önceden paylaşılan anahtarla bir Wi-Fi profili oluşturmak veya EAP tabanlı bir Wi-Fi profili oluşturmak için, cihaz profilini oluştururken bu cihaz platformu için bir Wi-Fi profili yerine **Özel**’i seçin.
 
-2.    Bir ad ve açıklama sağlayın.
-3.    Yeni bir OMA-URI ayarı ekleyin:
+2.  Bir ad ve açıklama sağlayın.
+3.  Yeni bir OMA-URI ayarı ekleyin:
 
-   a.    Bu Wi-Fi ağ ayarı için bir ad girin.
+   a.   Bu Wi-Fi ağ ayarı için bir ad girin.
 
-   b.    OMA-URI ayarı için bir açıklama girin veya boş bırakın.
+   b.   OMA-URI ayarı için bir açıklama girin veya boş bırakın.
 
-   c.    **Veri Türü**: **String** olarak ayarlayın.
+   c.   **Veri Türü**: **String** olarak ayarlayın.
 
-   d.    **OMA-URI**:
+   d.   **OMA-URI**:
 
     - **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -208,4 +205,3 @@ Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
     Doğru olanı bulmak için her profili aramanız gerekeceğinden, çok sayıda kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir.
 3.     Doğru ada sahip olanı bulmak üzere XML dosyalarını arayın.
 4.     Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının Veri alanına yapıştırın.
-

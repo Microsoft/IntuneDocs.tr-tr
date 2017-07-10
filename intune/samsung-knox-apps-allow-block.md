@@ -1,12 +1,12 @@
 ---
 title: "Samsung KNOX için uygulamalara izin verme veya uygulamaları engelleme Intune ilkesi"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Samsung KNOX Standard cihazlarında uygulamalara izin vermek veya bunları engellemek için bir özel profil oluşturun."
+titleSuffix: Intune on Azure
+description: "Samsung KNOX Standard cihazlarında uygulamalara izin vermek veya uygulama engellemek için bir özel profil oluşturun.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dea090e108d5ea023dc64d8d168b25d30b688cb2
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 8245bb3fa8f08e719df903a70f079f4fdf534ca5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Microsoft Intune’da özel ilkeler kullanarak Samsung KNOX Standard cihazları için uygulamalara izin verme veya bunları engelleme
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Bu konu başlığı altındaki yordamları kullanarak, aşağıdakilerden birini oluşturan bir Microsoft Intune özel ilkesi oluşturun:
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Bu konu başlığı altındaki yordamları kullanarak, aşağıdakilerden birini oluşturan bir Microsoft Intune özel ilkesi oluşturun:
 
 - Cihazda çalışması engellenmiş uygulamaların listesi. İlke uygulandığı sırada zaten yüklenmiş durumda olsalar bile, bu listede yer alan uygulamaların çalışması engellenir.
 - Cihaz kullanıcılarının Google Play mağazasından yüklemesine izin verilen uygulamaların listesi. Yalnızca listelediğiniz uygulamalar yüklenebilir. Mağazadan başka hiçbir uygulama yüklenemez.
@@ -35,7 +32,7 @@ Bu ayarlar yalnızca Samsung KNOX Standard çalıştıran cihazlar tarafından k
 ## <a name="create-an-allowed-or-blocked-app-list"></a>izin verilen veya engellenen uygulama listesi oluşturma
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 2. Profil listesi dikey penceresinde **Profil Oluştur**’u seçin.
@@ -49,9 +46,9 @@ Bu ayarlar yalnızca Samsung KNOX Standard çalıştıran cihazlar tarafından k
 
 - **Ad** - **PreventStartPackages** girin.
 - **Açıklama** - 'Çalıştırılması engellenen uygulamalar listesi' gibi isteğe bağlı bir açıklama girin.
--     **Veri türü** - Açılan listeden **Dize**’yi seçin.
--     **OMA-URI** - **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** girin.
--     **Değer** - İzin vermek istediğiniz uygulama paket adlarının listesini girin. Sınırlayıcı olarak **; : ,** veya **|** kullanabilirsiniz. (Örnek: paket1;paket2;)
+-   **Veri türü** - Açılan listeden **Dize**’yi seçin.
+-   **OMA-URI** - **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** girin.
+-   **Değer** - İzin vermek istediğiniz uygulama paket adlarının listesini girin. Sınırlayıcı olarak **; : ,** veya **|** kullanabilirsiniz. (Örnek: paket1;paket2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>Diğer tüm uygulamaları hariç tutarak, kullanıcıların Google Play mağazasından yüklemesine izin verilen uygulamaların listesi için:
 - **Ad** - **AllowInstallPackages** girin.
@@ -69,4 +66,3 @@ Hedeflenen her cihazın bir sonraki girişinde, uygulama ayarları uygulanır.
 
 
 <!---## Assign the custom profile--->
-

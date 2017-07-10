@@ -1,12 +1,12 @@
 ---
 title: "Cihaz kaydıyla ilgili sorunları giderme"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Cihaz kaydı sorunlarını gidermeyi öğrenin."
+titleSuffix: Intune on Azure
+description: "Cihaz kaydıyla ilgili sorunları nasıl gidereceğinizi öğrenin.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3084b7179a310a44c520dd42a8e194490dca90d8
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b7af9168164f1cccf3feae5bbdfd8014f8c7c1f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Bu konuda, cihaz kayıt sorunlarının giderilmesi için tavsiyeler verilmektedir. Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
 
@@ -102,8 +99,8 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 1.  MDM Yetkilisinin, kullandığınız Intune hizmeti türü (Intune, Ofiice 365 veya Intune ile System Center Configuration Manager) için uygun şekilde ayarlandığını doğrulayın. Yönergeler için bkz. [Mobil cihaz yönetim yetkilisini ayarlama](mdm-authority-set.md).
 
-    > [!NOTE]
-    > MDM yetkilisini, ayarlandıktan sonra yalnızca [Microsoft Intune için destek alma](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) bölümünde açıklandığı şekilde Destek birimine başvurularak değiştirilebilir.
+    > [!NOTE]    
+    > Configuration Manager'ın 1610 veya sonraki bir sürümü ve Microsoft Intune'un 1705 sürümünde, MDM yetkilisini, Microsoft Destek ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Ayrıntılar için bkz. [Yanlış MDM yetkilisi ayarı seçilirse yapılacaklar](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 2.  Kullanıcının kimlik bilgilerinin Azure Active Directory’yle doğru eşitlendiğinden emin olun. Bunun için UPN değerlerinin Hesap Portalı’ndaki Active Directory bilgileriyle eşleşip eşleşmediğini denetleyin.
     UPN Active Directory bilgileriyle eşleşmiyorsa:
@@ -222,16 +219,16 @@ Android cihazlar bir [SSL sunucu hello](https://technet.microsoft.com/library/cc
 
 Sorunu düzeltmek için AD FS sunucusunda veya proxy’lerdeki Bilgisayar Kişisel Sertifikaları’na sertifikaları aşağıdaki gibi içeri aktarın:
 
-1.    ADFS’de ve proxy sunucularında, yerel bilgisayar için Sertifika Yönetimi konsolunu başlatmak üzere **Başlat** düğmesine sağ tıklayın, **Çalıştır**’ı seçin ve **certlm.msc** yazın.
-2.    **Kişisel**’i genişletip **Sertifikalar**’ı seçin.
-3.    AD FS hizmeti iletişiminizin sertifikasını (ortak olarak imzalanmış bir sertifika) bulun ve özelliklerini görüntülemek için çift tıklayın.
-4.    Sertifikanın üst sertifikasını (veya sertifikalarını) görmek için **Sertifika Yolu** sekmesini seçin.
-5.    Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
-6.    **Ayrıntılar** sekmesini ve **... dosyasına kopyala**’yı seçin.
-7.    Sertifikanın ortak anahtarını istenen dosya konumuna kaydetmek veya dışarı aktarmak için sihirbaz yönergelerini izleyin.
-8.    3. Adımda Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
-9.    AD FS sunucularını yeniden başlatın.
-10.    Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
+1.  ADFS’de ve proxy sunucularında, yerel bilgisayar için Sertifika Yönetimi konsolunu başlatmak üzere **Başlat** düğmesine sağ tıklayın, **Çalıştır**’ı seçin ve **certlm.msc** yazın.
+2.  **Kişisel**’i genişletip **Sertifikalar**’ı seçin.
+3.  AD FS hizmeti iletişiminizin sertifikasını (ortak olarak imzalanmış bir sertifika) bulun ve özelliklerini görüntülemek için çift tıklayın.
+4.  Sertifikanın üst sertifikasını (veya sertifikalarını) görmek için **Sertifika Yolu** sekmesini seçin.
+5.  Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
+6.  **Ayrıntılar** sekmesini ve **... dosyasına kopyala**’yı seçin.
+7.  Sertifikanın ortak anahtarını istenen dosya konumuna kaydetmek veya dışarı aktarmak için sihirbaz yönergelerini izleyin.
+8.  Adımda Local Computer\Personal\Certificates yoluna dışarı aktarılan üst sertifikaları içeri aktarmak için **Sertifikalar**’a sağ tıklayın, **Tüm Görevler** > **İçeri Aktar**’ı seçin ve sertifikayı (veya sertifikaları) içeri aktarmak için sihirbaz yönergelerini izleyin.
+9.  AD FS sunucularını yeniden başlatın.
+10. Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
 Kullanıcı artık Android cihazında Şirket Portalı uygulamasında oturum açabilmelidir.
 
 **Sertifikanın düzgün yüklendiğini doğrulamak için**:
@@ -255,7 +252,7 @@ Sunucu sertifikası düzgün yüklendiyse, sonuçlarda tüm onay işaretlerini g
 
 **Çözüm:** Şirket kaynaklarına erişimi yeniden sağlamaları için son kullanıcılarla aşağıdaki çözümleri paylaşın.
 
-Kullanıcılar iOS Şirket Portalı uygulamasını başlattığında uygulama, cihazlarının Intune ile iletişiminin kesilip kesilmediğini bildirebilir. İletişim olmadığını algılarsa, yeniden bağlanmak için Intune ile eşitlemeyi otomatik olarak dener ve kullanıcılar **Eşitlemeye çalışılıyor...** şeklinde bir satır içi bildirim görür. 
+Kullanıcılar iOS Şirket Portalı uygulamasını başlattığında uygulama, cihazlarının Intune ile iletişiminin kesilip kesilmediğini bildirebilir. İletişim olmadığını algılarsa, yeniden bağlanmak için Intune ile eşitlemeyi otomatik olarak dener ve kullanıcılar **Eşitlemeye çalışılıyor...** şeklinde bir satır içi bildirim görür.
 
   ![Eşitlemeye çalışılıyor bildirimi](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -263,11 +260,11 @@ Eşitleme başarılı olursa, iOS Şirket Portalı uygulamasında cihazınızın
 
   ![Eşitleme başarılı bildirimi](./media/ios_cp_app_sync_successful_notification.png)
 
-Eşitleme başarısız olursa, kullanıcılar iOS Şirket portalı uygulamasında **Eşitleme yapılamıyor** satır içi bildirimini görür. 
+Eşitleme başarısız olursa, kullanıcılar iOS Şirket portalı uygulamasında **Eşitleme yapılamıyor** satır içi bildirimini görür.
 
   ![Eşitleme yapılamıyor bildirimi](./media/ios_cp_app_unable_to_sync_notification.png)
 
-Sorunu düzeltmek için kullanıcıların **Eşitleme yapılamıyor** bildiriminin sağındaki **Ayarla** düğmesini seçmesi gerekir. Ayarla düğmesi, kullanıcıları cihazlarını kaydetmek için istemleri takip edebilecekleri Şirket Erişim Kurulumu akış ekranına götürür. 
+Sorunu düzeltmek için kullanıcıların **Eşitleme yapılamıyor** bildiriminin sağındaki **Ayarla** düğmesini seçmesi gerekir. Ayarla düğmesi, kullanıcıları cihazlarını kaydetmek için istemleri takip edebilecekleri Şirket Erişim Kurulumu akış ekranına götürür.
 
   ![Şirket Erişimi Kurulum ekranı](./media/ios_cp_app_company_access_setup.png)
 
@@ -313,7 +310,7 @@ Kaydedildikten sonra cihazlar, iyi duruma geri döner ve şirket kaynaklarına y
 3. SMS İdarecisi Hizmeti’ni yeniden başlatın veya CM Sunucusu’nu yeniden başlatın.
 
 4. Yeni bir APN sertifikası alın ve karşıya yükleyin. Bunu yapmak için Configuration Manager’ın sol bölmesinde Intune aboneliğine sağ tıklayın. **APNs sertifikası isteği oluştur**’u seçin ve yönergeleri izleyin.
-5. 
+5.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager’ı Intune kullanırken oluşan sorunlar
 
 ### <a name="mobile-devices-disappear"></a>Mobil cihazlar kayboluyor
@@ -362,7 +359,7 @@ Bu hatanın nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bi
 
     > [!IMPORTANT]
     > Bu bölüm, yöntem veya görev kayıt defterinde nasıl değişiklik yapacağınızı gösteren adımlar içerir. Bununla birlikte, kayıt defterinde yanlış değişiklikler yaparsanız ciddi sorunlar çıkabilir. Bu nedenle, bu adımları dikkatle izlediğinizden emin olun. Ek bir koruma için, değişiklikleri yapmadan önce kayıt defterini yedekleyin. Böylece bir sorun ortaya çıktığında kayıt defterini geri yükleyebilirsiniz.
-    > Kayıt defterini yedekleme ve geri yükleme hakkında daha fazla bilgi için, [Windows’da kayıt defterini yedekleme ve geri yükleme](https://support.microsoft.com/en-us/kb/322756) konusunu okuyun.
+    > Kayıt defterini yedekleme ve geri yükleme hakkında daha fazla bilgi için, [Windows’da kayıt defterini yedekleme ve geri yükleme](https://support.microsoft.com/kb/322756) konusunu okuyun.
 
 ## <a name="general-enrollment-error-codes"></a>Genel kayıt hata kodları
 
@@ -382,7 +379,7 @@ Bu hatanın nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bi
 |0x80043008, 0x80CF3008|Microsoft Online Management Güncelleştirmeleri hizmeti başlatılamadı.|[Microsoft Intune için destek alma](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.|
 |0x80043009, 0x80CF3009|İstemci bilgisayar hizmete zaten kayıtlı.|İstemci bilgisayarı bu hizmete yeniden kaydetmek için önce devre dışı bırakmanız gerekir.|
 |0x8004300B, 0x80CF300B|İstemci üzerinde çalışan Windows sürümü desteklenmediğinden, istemci yazılımı yükleme paketi çalıştırılamıyor.|Intune istemci bilgisayarda çalışan Windows sürümünü desteklemiyor.|
-|0xAB2|Windows Installer özel bir işlem için VBScript çalışma zamanına erişemedi.|Bu hata Dinamik Bağlantı Kitaplıkları'nı (DLLs) temel alan özel bir işlemden kaynaklanır. DLL sorunlarını giderirken, [Microsoft Desteği KB198038: Paket ve Dağıtım Sorunlarında Yararlı Araçlar](https://support.microsoft.com/en-us/kb/198038) makalesinde açıklanan araçları kullanmanız gerekebilir.|
+|0xAB2|Windows Installer özel bir işlem için VBScript çalışma zamanına erişemedi.|Bu hata Dinamik Bağlantı Kitaplıkları'nı (DLLs) temel alan özel bir işlemden kaynaklanır. DLL sorunlarını giderirken, [Microsoft Desteği KB198038: Paket ve Dağıtım Sorunlarında Yararlı Araçlar](https://support.microsoft.com/kb/198038) makalesinde açıklanan araçları kullanmanız gerekebilir.|
 |0x80cf0440|Hizmet uç noktası bağlantısı sonlandırıldı.|Deneme hesabı veya ücretli hesap askıya alındı. Yeni bir deneme hesabı veya ücretli hesap oluşturun ve yeniden kaydolun.|
 
 
@@ -390,4 +387,3 @@ Bu hatanın nedeni bilgisayarın daha önce kaydolmuş olması veya kayıtlı bi
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
-

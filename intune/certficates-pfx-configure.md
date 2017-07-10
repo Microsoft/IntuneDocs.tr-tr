@@ -1,12 +1,12 @@
 ---
 title: "Intune ile PKCS sertifikalarını yapılandırma ve yönetme"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Altyapınızı yapılandırıp, ardından Intune ile PKCS sertifika profilleri oluşturup atamayı öğrenin."
+titleSuffix: Intune on Azure
+description: "Altyapınızı yapılandırıp, ardından Intune ile PKCS sertifika profilleri oluşturup atamayı öğrenin.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16fa26ae8ed06c4959807b30e430fd69fc503936
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve yönetme
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Bu konu başlığında altyapınızı yapılandırıp, ardından Intune ile PKCS sertifika profilleri oluşturup atama işlemlerinin nasıl yapılacağı gösterilir.
 
@@ -118,7 +115,7 @@ Bu adımda şunları yapacaksınız:
 ### <a name="to-enable-support-for-the-certificate-connector"></a>Sertifika bağlayıcısı desteğini etkinleştirmek için
 
 1.  Azure Portal’da oturum açın.
-2.  **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2.  **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3.  **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
 2.  **Cihaz Yapılandırması** dikey penceresinde **Kurulum** > **Sertifika Yetkilisi**’ni seçin.
 2.  **1. Adım**’ın altında **Etkinleştir**’i seçin.
@@ -190,10 +187,11 @@ Azure Portal’da **Cihazları yapılandır** iş yükünü seçin.
         - **Ortak ad**
         - **E-postayı içeren ortak ad**
         - **E-posta olarak ortak ad**
-    - **Konu diğer adı** - Intune uygulamasının, sertifika isteğinde konu diğer adı (SAN) için değerleri otomatik olarak nasıl oluşturacağını belirtin. Örneğin, bir kullanıcı sertifikası türü seçtiyseniz, konu alternatif adına kullanıcı asıl adını (UPN) ekleyebilirsiniz. İstemci sertifikası, bir Ağ İlkesi Sunucusuna kimlik doğrulamak için kullanılacaksa, UPN'ye konu alternatif adını ayarlamanız gerekir.
+    - **Konu diğer adı** - Intune uygulamasının, sertifika isteğinde konu diğer adı (SAN) için değerleri otomatik olarak nasıl oluşturacağını belirtin. Örneğin, bir kullanıcı sertifikası türü seçtiyseniz, konu alternatif adına kullanıcı asıl adını (UPN) ekleyebilirsiniz. İstemci sertifikası bir Ağ İlkesi Sunucusunda kimlik doğrulamak için kullanılacaksa, konu alternatif adını UPN olarak ayarlayın. 
+    **Özel Azure AD özniteliği**'ni de seçebilirsiniz. Bu seçeneği belirlediğinizde, başka bir açılan alan görüntülenir. **Özel Azure AD özniteliği** açılan alanında bir seçenek bulunur: **Departman**. Bu seçeneği işaretlediğinizde, Azure AD'de Departman tanımlanmamışsa, sertifika verilmez. Bu sorunu çözmek için, departmanı tanımlayın ve değişiklikleri kaydedin. Bir sonraki iade etmede, sorun çözümlenir ve sertifika verilir. ASN.1 bu alan için kullanılan gösterimidir. 
     - **Genişletilmiş anahtar kullanımı** (Android) - Sertifikaların hedeflenen amacına yönelik değerler eklemek için **Ekle**'yi seçin. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimlik doğrulaması gerçekleştirebilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz. 
     - **Kök Sertifika** (Android) - Daha önce yapılandırdığınız ve kullanıcıya veya cihaza atadığınız kök CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı verecek CA'nın kök sertifikası olmalıdır. Bu, daha önce oluşturduğunuz güvenilen sertifika profilidir.
-8. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
+8. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**'a tıklayın.
 
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 
@@ -208,4 +206,3 @@ Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz ön�
 - Her profili ayrı olarak atasanız da Güvenilen Kök CA’sını ve PKCS profilini de atamanız gerekir. Aksi takdirde PKCS sertifika ilkesi başarısız olur.
 
 Profillerin nasıl atanacağı hakkında bilgi için bkz. [Cihaz profillerini atama](device-profile-assign.md).
-

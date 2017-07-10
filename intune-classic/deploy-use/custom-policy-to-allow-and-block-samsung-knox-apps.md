@@ -1,5 +1,5 @@
 ---
-title: "KNOX için izin verilen ve engellenen uygulamalar | Microsoft Docs"
+title: "KNOX için izin verilen ve engellenen uygulamalar"
 description: "KNOX için izin verilen ve engellenen uygulamaların listesini oluşturmaya yönelik özel profil."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Özel ilkeler kullanarak Samsung KNOX Standard cihazlar için uygulamalara izin verme veya bunları engelleme
 
@@ -43,9 +40,9 @@ Bu ayarlar yalnızca Samsung KNOX Standard çalıştıran cihazlar tarafından k
     
     - **Ayar adı.** **PreventStartPackages** girin.
     - **Ayar açıklaması.** 'Çalıştırılması engellenen uygulamalar listesi' gibi isteğe bağlı bir açıklama girin.
-    -     **Veri türü.** Açılan listeden **Dize**’yi seçin.
-    -     **OMA-URI.** **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** girin.
-    -     **Değer.** Engellemek istediğiniz uygulama paket adlarının listesini girin. Sınırlayıcı olarak **; : ,** veya **|** kullanabilirsiniz. (Örnek: paket1;paket2;)
+    -   **Veri türü.** Açılan listeden **Dize**’yi seçin.
+    -   **OMA-URI.** **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** girin.
+    -   **Değer.** Engellemek istediğiniz uygulama paket adlarının listesini girin. Sınırlayıcı olarak **; : ,** veya **|** kullanabilirsiniz. (Örnek: paket1;paket2;)
 
     Diğer tüm uygulamaları hariç tutarak, kullanıcıların Google Play mağazasından yüklemesine izin verilen uygulamaların listesi için:
 
@@ -74,4 +71,3 @@ Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağ
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune’daki Android ve Samsung KNOX ilke ayarları](android-policy-settings-in-microsoft-intune.md)
-

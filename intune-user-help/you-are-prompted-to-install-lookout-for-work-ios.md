@@ -11,26 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>iOS cihazınıza Lookout for Work uygulamasını yüklemeniz gerekiyor
 
 Çalışmanıza erişebilmeniz için önce BT yöneticinizin Lookout for Work uygulamasını yüklemenizi sağlaması gerekir. Bu uygulama olası güvenlik tehditlerini bularak cihazınızın korunmasına yardımcı olur. BT yöneticinizin belirlediği Lookout for Work ayarlarına bağlı olarak cihazınızda farklı istemler görebilirsiniz.
 
 **Yapmanız gerekenler:**
 
-1.    Aşağıdaki istemi görürseniz, cihazınıza Lookout for Work yüklenmesine izin vermek için **Yükle**’ye dokunun.
+1.  Aşağıdaki istemi görürseniz, cihazınıza Lookout for Work yüklenmesine izin vermek için **Yükle**’ye dokunun.
 
   ![Lookout for Work yüklemek için yükle öğesine dokunun](./media/ios-mtd-install-app-request.png)
 
@@ -55,4 +51,3 @@ Lookout for Work cihazınızda güvenlik tehdidi bulursa, sorunun nasıl çözü
 **Yükleme çalışmazsa**
 
 Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle başarısız olabilir. Böyle bir durumda BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

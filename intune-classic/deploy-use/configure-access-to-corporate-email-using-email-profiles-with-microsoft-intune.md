@@ -1,5 +1,5 @@
 ---
-title: "E-posta profilleriyle şirket e-postasına erişim | Microsoft Docs"
+title: "Şirket e-postasına e-posta profilleriyle erişme"
 description: "E-posta profili ayarları, mobil cihazlarda belirli e-posta istemcilerinin e-posta erişim ayarlarını yapılandırmak için kullanılır."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Microsoft Intune ile e-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,11 +33,11 @@ Veri kaybını önlemek için ek önlemler almaya gerek duyuyorsanız, yerel e-p
 BT yöneticileri veya kullanıcılar, Android ve iOS için Microsoft Outlook gibi alternatif e-posta istemcileri yüklemeyi de seçebilirler. Bu e-posta istemcileri e-posta profillerini destekleyemeyebilir ve Intune e-posta profilleri kullanılarak ayarlanamaz.  
 
 Aşağıdaki cihaz türlerinde yerel e-posta istemcisini yapılandırmak için e-posta profillerini kullanabilirsiniz:
--    Windows Phone 8.1 ve üzeri
--    Windows 10 (masaüstü için), Windows 10 Mobile ve üzeri
--    iOS 8.0 ve üzeri
--    Samsung KNOX Standard (4.0 ve üzeri)
--    Android for Work (üçüncü taraf e-posta uygulamaları, yerel e-posta uygulaması yalnızca kişisel profildir)
+-   Windows Phone 8.1 ve üzeri
+-   Windows 10 (masaüstü için), Windows 10 Mobile ve üzeri
+-   iOS 8.0 ve üzeri
+-   Samsung KNOX Standard (4.0 ve üzeri)
+-   Android for Work (üçüncü taraf e-posta uygulamaları, yerel e-posta uygulaması yalnızca kişisel profildir)
 
 Cihazda bir e-posta hesabı ayarlamaya ek olarak, ne kadar e-postanın eşitleneceğini ve cihaz türüne bağlı olarak eşitlenecek içerik türlerini de ayarlayabilirsiniz.
 
@@ -85,7 +82,7 @@ E-posta profilinde parola bulunmadığından, e-postaya bağlanırken kullanıc�
 
     -   **E-posta Profili (Android for Work - Gmail)**
 
-    -    **E-posta Profili (Android for Work - Nine Work)**
+    -   **E-posta Profili (Android for Work - Nine Work)**
 
     Yalnızca özel bir e-posta profili ilkesi oluşturup dağıtabilirsiniz. Önerilen ayarlar kullanılamaz.
 
@@ -133,4 +130,3 @@ Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğüm
 > - Android for Work için uygun e-posta profilinin yanı sıra Gmail veya Nine Works uygulamalarını da dağıttığınızdan emin olun.
 > - Bir cihazdan e-posta profilini kaldırmak isterseniz, dağıtımı düzenleyin ve cihazın üye olduğu tüm grupları kaldırın. Cihazda yalnızca bir e-posta profili olduğunda, bu e-posta profilini bu yöntemle kaldıramayacağınızı unutmayın.
 > - Önceden dağıttığınız bir e-posta profilinde değişiklik yaparsanız son kullanıcılardan e-posta ayarları yeniden yapılandırma işlemini onaylanmasını isteyen bir ileti görüntülenebilir.
-

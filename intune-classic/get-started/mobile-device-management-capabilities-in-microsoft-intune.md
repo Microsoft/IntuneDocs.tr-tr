@@ -14,13 +14,11 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 5fc5e6108e7e7841ed142f24f463d85273ae8a12
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune’un kayıtlı cihaz yönetimi özellikleri
 
@@ -70,4 +68,3 @@ Yönetim, envanter, uygulama dağıtımı, sağlama ve kullanımdan kaldırma, I
 |Özellik|Ayrıntılar|Daha fazla bilgi|
 |--------------|-----------|--------------------|
 |Envanter ve raporlama|Yönettiğiniz cihazlar ve cihazlarda kullanılan yazılımlar hakkında bilgiler bulur.|[Microsoft Intune’da envanterle cihazlarınızı anlama](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
-

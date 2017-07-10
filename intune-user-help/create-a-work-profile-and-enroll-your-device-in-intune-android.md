@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme
 
 Android cihazınızı kaydetmek şirket e-postası, uygulamaları ve diğer iş verilerine erişmenizi sağlar. Kayıt işleminin bir parçası olarak, cihazınızdaki kişisel verileri iş verilerinizden ayıran bir iş profili ayarlarsınız. BT yöneticiniz, yalnızca iş verilerinizi içeren iş profilinizi yönetebilir. BT yöneticiniz cihazınızdaki kişisel verileri yönetemez. [İş profili oluşturduğunuzda ne olacağı](what-happens-when-you-create-a-work-profile-android.md) hakkında daha fazla bilgi edinin.
@@ -88,4 +83,3 @@ Bir iş profili oluşturmak için:
     ![Play Store for Work uygulamaları sayfası](./media/andr-afw-tap-work-play-store-icon.png)
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Intune&quot;un 30 günlük ücretsiz denemesine kaydolma | Microsoft Docs"
-description: "Microsoft Intune&quot;un 30 günlük değerlendirmesine ücretsiz olarak kaydolun ve denemeyi kurun."
+title: "Microsoft Intune'un 30 günlük ücretsiz deneme sürümüne kaydolma"
+description: "Microsoft Intune'un 30 günlük değerlendirmesine ücretsiz olarak kaydolun ve denemeyi kurun."
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 560765fa9d9afa4a1050515e1b2304c998f8c158
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ffa07d5e36abc8686cedd600123494180c286011
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune ücretsiz denemesine kaydolma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,7 +26,7 @@ ms.lasthandoff: 05/23/2017
 Bu makale, bir Intune denemesine kaydolmayı adım adım gösterir ve Intune'un mobil cihazları nasıl yönettiğini görmek üzere ilişkili değerlendirme kılavuzunu izleyebilmeniz için deneme sürümünüzde bazı kullanıcılar oluşturur. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> Aralık 2016'dan itibaren Microsoft Intune, Azure portalına taşınıyor ve bazı ücretsiz deneme kayıtları Azure portalındaki Intune’da, bazıları klasik Intune’da olacaktır. Deneme süreniz Azure portalında ise bu makaledeki adımları tamamladıktan sonra [Intune Azure önizleme içeriğini](/intune/what-is--intune) daha faydalı bulacaksınız.
+> Aralık 2016'dan itibaren Microsoft Intune, Azure portalına taşınıyor ve bazı ücretsiz deneme kayıtları Azure portalındaki Intune’da, bazıları klasik Intune’da olacaktır. Deneme süreniz Azure portalında ise bu makaledeki adımları tamamladıktan sonra [Intune Azure önizleme içeriğini](/intune/what-is-intune) daha faydalı bulacaksınız.
 
 ## <a name="assumptions"></a>Varsayımlar
 Bu kaydolma makalesi ve değerlendirme kılavuzu, denemeyi yalnızca değerlendirme amacıyla kullandığınızı ve abone olduğunuzda boş bir ortam ile başlayacağınızı varsayar.
@@ -41,7 +38,7 @@ Deneme sürümünde abonelik sürümünde yapabileceğiniz her şeyi yapabilirsi
 ## <a name="sign-up-for-your-trial"></a>Deneme sürümünüz için kaydolma
 [Intune Kayıt](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) sayfasını ziyaret edin ve bir deneme aboneliğine kaydolmak için formu doldurun.
 
-Bir iş veya okul hesabınız varsa ve Intune denemeniz için bu hesabı kullanmak istiyorsanız, bunun yerine [bu oturum açma yönergelerini](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) izleyin. Ancak bu makale ve değerlendirme kılavuzları bu tür bir hesabı kullanmadığınızı varsayar.
+Bir iş veya okul hesabınız varsa ve Intune denemeniz için bu hesabı kullanmak istiyorsanız, bunun yerine [bu oturum açma yönergelerini](/intune/account-sign-up) izleyin. Ancak bu makale ve değerlendirme kılavuzları bu tür bir hesabı kullanmadığınızı varsayar.
 
 > [!TIP]
 > BT işlemlerinizin ve kullanıcılarınızın çoğu sizinkinden başka bir bölgedeyse, performansı sınamak için denemenizde bu yerel ayarı yapmanız iyi olur.
@@ -56,7 +53,7 @@ Deneme süreniz **Azure portalında** ise https://portal.azure.com adresine gidi
 ## <a name="add-users"></a>Kullanıcı ekleme
 Intune için Office 365 Yönetim merkezinden ayrılmadan önce deneme hesabınıza bazı kullanıcılar eklemeniz gerekir.
 
-Office 365 Yönetim merkezinde kullanıcıları tek tek veya bir .csv dosyasını yükleyerek topluca ekleyebilirsiniz. Deneme sürümünüzü ayarlamak için her ikisini de yapacağız. Ancak üretim ortamınızda büyük olasılıkla Azure Active Directory kullanıcı hesaplarınızdan yararlanmak isteyeceksiniz. [Başlangıç kılavuzumuzdan](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) ve bu makalenin [Sonraki adımlar](#Next-steps) bölümünden bu hesaplar hakkında daha fazla bilgi alabilirsiniz.
+Office 365 Yönetim merkezinde kullanıcıları tek tek veya bir .csv dosyasını yükleyerek topluca ekleyebilirsiniz. Deneme sürümünüzü ayarlamak için her ikisini de yapacağız. Ancak üretim ortamınızda büyük olasılıkla Azure Active Directory kullanıcı hesaplarınızdan yararlanmak isteyeceksiniz. [Başlangıç kılavuzumuzdan](/intune/users-permissions-add) ve bu makalenin [Sonraki adımlar](#next-steps) bölümünden bu hesaplar hakkında daha fazla bilgi alabilirsiniz.
 
 ### <a name="add-an-individual-user"></a>Tek bir kullanıcı ekleme
 1. Kullanıcı ekleme seçeneklerinden birini seçerek kullanıcı oluşturmanıza izin veren formu açın. Yalnızca yıldızla (\*) işaretlenen öğeler gereklidir.
@@ -110,8 +107,8 @@ Intune'dan Office 365 Yönetim merkezine geri dönmek için Gruplara Genel Bakı
 
 ![Office 365 Yönetim merkezinin geri bağlantısının resmi](./media/sign-up/task-add-users.png)
 
-### <a name="intune-azure-preview"></a>Intune Azure önizlemesi
-Intune Azure önizlemesi için kullanacağınız üç portal vardır:
+### <a name="intune-on-azure"></a>Azure’da Intune
+Azure’da Intune için kullanacağınız üç portal vardır:
 - Office 365 Yönetim merkezi ([portal.office.com](https://portal.office.com))
 - Azure’da Intune panosu ([portal.azure.com](https://portal.azure.com))
 - Klasik Intune yönetim konsolu ([manage.microsoft.com](https://manage.microsoft.com))
@@ -138,8 +135,8 @@ Intune’dan Office 365 Yönetim merkezine geri dönmek için tarayıcınızın 
 ### <a name="classic-intune"></a>Klasik Intune
 Değerlendirme senaryosu: [Microsoft Intune'da mobil cihaz yönetimini değerlendirme](mobile-device-management-trial-guide-microsoft-intune.md)
 
-### <a name="intune-azure-preview"></a>Intune Azure önizlemesi
-[Azure portalı önizlemede Intune](/intune/what-is-intune) hakkında daha fazla bilgi edinin
+### <a name="intune-on-azure"></a>Azure’da Intune
+[Azure’da Intune](/intune/what-is-intune) hakkında daha fazla bilgi edinin
 
 ### <a name="integration-with-other-products"></a>Diğer ürünlerle tümleştirme
 Azure Active Directory kullanıcı hesaplarınızı Intune ile kullanma hakkında daha fazla bilgi edinin:
@@ -148,4 +145,3 @@ Azure Active Directory kullanıcı hesaplarınızı Intune ile kullanma hakkınd
 - [Çok faktörlü kimlik doğrulama gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 [Intune'u System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) ile kullanma hakkında daha fazla bilgi edinin
-

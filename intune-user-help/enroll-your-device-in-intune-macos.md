@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-macos-device-in-intune"></a>macOS cihazınızı Intune'a kaydetme
 
 Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişerek işinizi yapmaya devam edebilirsiniz. İş için bir macOS cihazı kullanıyorsanız, __Yönetim Profili__ yüklemeniz gerekir. Bu yalnızca, BT yöneticiniz tarafından ayarlanan ve ayarlarla erişim bilgilerini Mac cihazınıza yükleyen bir dosyadır. Daha fazla bilgi edinmek istiyor musunuz? [Şirket Portalı uygulamasını yükler ve cihazınızı Intune'a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) sayfasını inceleyin.
@@ -70,4 +66,3 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişerek işinizi y
  ![macOS Profili Yüklendi](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. İletişim bilgilerine [Şirket Portalı web sitesinden](http://portal.manage.microsoft.com) ulaşabilirsiniz.
-

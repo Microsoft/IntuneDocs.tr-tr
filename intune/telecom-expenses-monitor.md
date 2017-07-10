@@ -1,7 +1,7 @@
 ---
 title: "Telekom gider yönetimi hizmeti ayarlama"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Saaswedo telekom gider yönetimi hizmetini Intune ile tümleştirilecek şekilde yapılandırın."
+titleSuffix: Intune on Azure
+description: "Saaswedo telekom gider yönetimi hizmetini Intune ile tümleştirilecek şekilde yapılandırın.\""
 keywords: Saaswedo
 author: nathbarn
 ms.author: nathbarn
@@ -15,16 +15,14 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41ac9ad43b6ddaa2b78d588cb01b467d37f2178a
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Intune Azure önizlemesinde telekom gider yönetimi hizmetini ayarlama
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune'da telekom gider yönetimi hizmeti ayarlama
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune, şirkete ait mobil cihazlarda veri kullanımından kaynaklanan telekom giderlerini yönetmenizi sağlar. Bu özelliği etkinleştirmek için Intune, üçüncü taraf yazılım geliştiricisi Saaswedo’nun Datalert telekom gider yönetimi çözümüyle tümleştirilmiştir. Datalert, telekom veri kullanımını yönetmenize ve Intune tarafından yönetilen cihazlarınızda veri ve dolaşımda yüksek maliyetli ve beklenmedik fazla kullanımları önlemenize olanak tanıyan gerçek zamanlı bir telekom gider yönetimi yazılımıdır.
 
@@ -43,7 +41,7 @@ Intune ile Datalert hizmetini kullanabilmeniz için, önce Datalert konsolunda v
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Microsoft Intune aboneliği ve şu anda genel önizlemedeki Azure portalına erişim.
+- Microsoft Intune'a abonelik ve Azure portalına erişim.
 - Datalert telekom gider yönetimi hizmeti için abonelik
 
 ## <a name="list-of-telecom-expense-management-providers"></a>Telekom gider yönetimi sağlayıcıları listesi
@@ -108,9 +106,9 @@ Bu kategoriler, kayıt sırasında kullanıcılara gösterilir. Kullanıcıları
 
 Her platform için Intune'da Datalert uygulamasını oluşturmak üzere şu adımları izleyin. Aşağıdaki adımlarda örnek olarak iOS kullanılmaktadır.
 
-1. Azure portalının **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
+1. Azure portalının **Intune** dikey penceresinde **Mobil uygulamalar**'ı seçin.
 
-2. **Uygulamaları Yönet** dikey penceresinde, **Yönet** > **Uygulamalar**’ı seçin.
+2. **Mobil uygulamalar** dikey penceresinde **Yönet** > **Uygulamalar**'ı seçin.
 
 3. Uygulama eklemek için **Ekle**’yi seçin.
 
@@ -151,8 +149,8 @@ Datalert hizmeti artık etkindir; veri kullanımını izlemeye ve yapılandırı
 
 ## <a name="client-enrollment-experience"></a>İstemci kayıt deneyimi
 İstemci kayıt deneyimi için aşağıdakilere bakın:
--    [iOS cihazınızı telekom gider yönetimine kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
--    [Android cihazınızı telekom gider yönetimine kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
+-   [iOS cihazınızı telekom gider yönetimine kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-   [Android cihazınızı telekom gider yönetimine kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>Datalert hizmetini kapatma
 
@@ -173,4 +171,3 @@ Azure portalında Datalert hizmetini devre dışı bırakırsanız:
 Veri kullanım raporlaması şu anda yalnızca Saaswedo’nun Datalert yönetim konsolunda sağlanmaktadır.
 
 Son kullanıcılarınızın Datalert uygulamasını yüklemek için izleyeceği yönergeler yakında eklenecektir.
-

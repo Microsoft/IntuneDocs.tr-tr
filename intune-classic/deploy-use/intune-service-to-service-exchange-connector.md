@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online için Exchange Connector | Microsoft Docs"
+title: "Exchange Online için Exchange Connector"
 description: "Exchange ActiveSync mobil cihaz yönetimini (MDM) desteklemek için Intune’u Office 365 Exchange hizmetine bağlayın."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4b73767f585cfa6283c7fb0601e7061efe42c606
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c2f30e7827db280ba49fc49b6b7a00c9a8d9eade
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Exchange Online için Intune hizmetten hizmete bağlayıcısını yapılandırma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,8 +33,8 @@ Microsoft Intune ile Exchange Online veya yeni Exchange Online Dedicated hizmeti
 |---------------|--------------------|
 |Exchange Online yapılandırılmış ve çalışıyor|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Mobil cihaz yönetimi yetkilisi| [Mobil cihaz yönetimi yetkilisi olarak Microsoft Intune’u ayarlama](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Microsoft Exchange sürümü|Exchange Online veya yeni Exchange Online Dedicated hizmeti|
-|Active Directory eşitlemesi|Intune Bağlayıcısı’nı kullanabilmeniz için, önce [Active Directory eşitlemesini ayarlamalısınız](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3). Böylelikle yerel kullanıcılarınız ve güvenlik gruplarınız Azure Active Directory örneğinizle eşitlenir.|
+|Microsoft Exchange sürümü|Exchange Online veya yeni Exchange Online Dedicated hizmeti|/intune/users-permissions-add
+|Active Directory eşitlemesi|Intune Bağlayıcısı’nı kullanabilmeniz için, önce [Active Directory eşitlemesini ayarlamalısınız](/intune/users-permissions-add). Böylelikle yerel kullanıcılarınız ve güvenlik gruplarınız Azure Active Directory örneğinizle eşitlenir.|
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange cmdlet gereksinimleri
 
@@ -67,4 +64,3 @@ Hizmetten Hizmete Bağlayıcı, Exchange Online veya yeni Exchange Online Dedica
 Exchange Bağlayıcısını başarıyla yapılandırdıktan sonra [Microsoft Intune yönetim konsoluna](https://manage.microsoft.com) gidin. **Yönetici**> **Mobil Cihaz Yönetimi** > **Microsoft Exchange**'i seçin. Ardından, verdiğiniz ayrıntıların **Exchange Bağlantı Bilgileri** altında göründüğünü doğrulayın.
 
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.
-

@@ -1,6 +1,6 @@
 ---
 title: "Windows 10 cihazınızı Intune’a kaydetme | Microsoft Docs"
-description: "Windows 10 1511 cihazını Intune&quot;a kaydetme"
+description: "Windows 10 1511 cihazını Intune'a kaydetme"
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
 ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 cihazınızı Intune'a kaydetme
 
   > [!NOTE]
@@ -67,4 +63,3 @@ Uygulama listenizde Şirket Portalı’nı görmüyorsanız, yüklemek için aş
 3. Sonuçlar listesinde **Şirket Portalı** > **Yükle**’yi seçin.
 
 4. **Yükle** veya **Ücretsiz**’i seçin. Bu iki seçeneğin sizin açınızdan farkı yoktur. Gösterilen seçenek, kuruluşunuzun Şirket Portalı uygulamasını ayarlama şekline göre değişir.
-

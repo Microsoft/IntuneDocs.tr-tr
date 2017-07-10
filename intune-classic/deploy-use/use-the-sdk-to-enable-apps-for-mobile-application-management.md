@@ -1,6 +1,6 @@
 ---
-title: "SDK’yı kullanarak uygulamaları MAM için etkinleştirme | Microsoft Docs"
-description: "Bu konuda, neden Intune Uygulama SDK&quot;sını kullanmanız gerektiğine yönelik hızlı bir genel bakış sunulur."
+title: "Uygulamaları MAM için etkinleştirmek üzere SDK'yi kullanın"
+description: "Bu konuda, neden Intune Uygulama SDK'sını kullanmanız gerektiğine yönelik hızlı bir genel bakış sunulur."
 keywords: 
 author: mtillman
 ms.author: mtillman
@@ -14,15 +14,12 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ec4e2f966fa8c24505ce1fa74a59c95908273bd1
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de7c4f57e6d42ac36ba5873e3d0ba1eaee6a5e8b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,8 +36,7 @@ Intune’un iOS veya Android uygulamalarınızdaki bazı özellikleri yönetmesi
 
 SDK’yı kullanmak için uygulamanın kaynak koduna erişmeniz gerekir, ama uygulamanın davranışını değiştirmek zorunda kalmadan SDK özelliklerinin çoğunu etkinleştirebilirsiniz.
 
-SDK’ya genel bakış için [Genel bakış](/intune-classic/develop/intune-app-sdk-get-started) sayfasına bakın.
+SDK’ya genel bakış için [Genel bakış](/intune/app-sdk-get-started) sayfasına bakın.
 
 ### <a name="see-also"></a>Ayrıca bkz.
-[Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
-
+[Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](/intune/apps-prepare-mobile-application-management)

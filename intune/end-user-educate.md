@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 623ed8dda2b35a895e5a00c0639a647624f74e59
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Son kullanıcılarınızı Microsoft Intune hakkında bilgilendirme
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune, şirket verilerinizi korurken iş gücünüze mobil cihazlar sağlamaya yardımcı olur. Başarılı bir dağıtım sağlamak için [ücretsiz deneme sürümü](app-sdk.md) ile Intune’u değerlendirme gibi birçok adım vardır.
 
@@ -57,15 +56,15 @@ Bu kullanıcı endişelerini azaltmak dağıtımınızı daha sorunsuz hale geti
 
 * **Android**
   * [Intune ile Android cihaz kullanma](/intune-user-help/using-your-android-device-with-intune)
-  * [Android kullanıcılarınız uygulamalarını nasıl alır](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [Android kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-android.md)
 
 * **iOS**
   * [Intune ile iOS cihaz kullanma](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [iOS kullanıcılarınız uygulamalarını nasıl alır](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [iOS kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-ios.md)
 
 * **Windows**
   * [Intune ile Windows cihaz kullanma](/intune-user-help/using-your-windows-device-with-intune)
-  * [Windows kullanıcılarınız uygulamalarını nasıl alır](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [Windows kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-windows.md)
 
 * __Açık sözlü olun.__ Kullanıcılarınızın cihazlarında neyi yöneteceğinizi onlara açıkça söyleyin. Onlara ne tür veriler toplayacağınızı ve bunları neden toplayacağınızı belirtin. Tüm varlık verilerini nasıl kullanmayı planladığınızı onlara bildirin. [Microsoft, müşteri verilerinizi bulutta nasıl işlediğimiz konusunda mümkün olduğunca çok bilgi almaya hakkınız olduğuna inanır](https://www.microsoft.com/trustcenter/about/transparency). Bu anlayışın, son kullanıcılarınızın Intune memnuniyetini önemli ölçüde artırabileceğine inanıyoruz.
 
@@ -73,4 +72,3 @@ Bu kullanıcı endişelerini azaltmak dağıtımınızı daha sorunsuz hale geti
 > Şeffaflık, mümkün olduğunda, dağıtımınızın başarısı için esastır.
 
 Son kullanıcıların, belirli kişisel verilere *bakabilseniz* dahi bakmak *istemeyeceğinizi* ve gizliliklerini ihlal ettiğiniz için tabi olabileceğiniz yükümlülüğü bilmeleri için iyi hazırlanmış uyumluluk ilkeleriyle güveni birleştirmeyi hedeflersiniz. Hukuk ve İK departmanlarınızla bir bildirim hazırlamak, özellikle zorlu çalışanlar konusunda yardımcı olabilir.
-

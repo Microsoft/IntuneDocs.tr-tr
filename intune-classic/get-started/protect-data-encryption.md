@@ -1,5 +1,5 @@
 ---
-title: "Veri şifreleme ile şirket verilerini koruma | Microsoft Docs"
+title: "Veri şifreleme ile şirket verilerini koruma"
 description: "Bu kılavuz, mobil uygulamalar üzerinde kullanılan bir ilkeyle geçiş kodu ve veri şifrelemesi uygulamayı zorunlu hale getirerek şirketinizi veri kaybına karşı korumanıza yardımcı olabilir."
 keywords: "şifreleme, PIN, veri"
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1cffa0066ffcbb9f0aadcb387cefee1ffe1f47a
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 42ae7cdedbcbd9bf6420ca9fd2cfa39a75174736
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Hızlı Başlangıç Kılavuzu: Veri şifreleme ile şirket verilerini koruma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,12 +42,11 @@ Bu hızlı başlangıç kılavuzu aşağıdaki önkoşulları karşılıyorsanı
 Bu kılavuz, herhangi bir cihaz yönetimi çözümüne kaydolma gereksinimi olmadan, çalışanlarınızın hassas verilere erişmek için kullandığı mobil uygulamalarda kullanılan ilkelerle geçiş kodları ve veri şifrelemeyi zorunlu hale getirerek şirketinizi veri kaybından korumanıza yardımcı olabilir. Microsoft Intune, [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) ve [Android](https://products.office.com/mobile/office-mobile-apps-for-android) için Office mobil uygulamalarında mobil uygulama yönetimi (MAM) ilkeleri ayarlamanıza olanak tanır. Bu yaklaşım, kullanıcıların cihazlarını bir mobil cihaz yönetimi çözümüne kaydetmelerini gerektirmeden O365 verilerini korurken Office mobil uygulamalarında da çok iyi bir son kullanıcı deneyimi sağlar.
 
 ## <a name="how-do-i-do-it"></a>Bunu nasıl yaparım?
-1.    [Uygulama verilerinizi nasıl koruyabileceğinizi gözden geçirme](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.    [Mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlama](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.    [Mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.  [Uygulama verilerinizi nasıl koruyabileceğinizi gözden geçirme](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.  [Mobil uygulama yönetimi ilkelerini yapılandırmak için hazırlama](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.  [Mobil uygulama yönetimi ilkeleri oluşturma ve dağıtma](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Ek bilgiler:
-- [MAM etkin uygulamalar için Microsoft Intune ile son kullanıcı deneyimi hakkında bilgi edinin.]/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
-- [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verin.]/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [MAM etkin uygulamalar için Microsoft Intune ile son kullanıcı deneyimi hakkında bilgi edinin.](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
+- [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verin.](/intune/apps-prepare-mobile-application-management)
 - [Microsoft Intune uygulaması iş ortaklarının listesini görüntüleme](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
-

@@ -1,38 +1,36 @@
 ---
 title: "Cihazları kaydetme - cihaz kayıt yöneticisi"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Intune’da cihazları kaydetmek için cihaz kaydı yöneticisi hesabını kullanın. "
+titleSuffix: Intune on Azure
+description: "Intune'a cihaz kaydetmek için cihaz kayıt yöneticisi hesabını kullanın. \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: aded0826c2628e4dc72859387fbe4a76d683db9e
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Cihaz kayıt yöneticisini kullanarak cihazları kaydetme
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek için Intune'u kullanabilir. *Cihaz kayıt yöneticisi* (DEM) hesabı, 1.000’e kadar cihazı kaydedebilen özel bir kullanıcı hesabıdır. Varolan kullanıcılara özel DEM yetenekleri vermek için kullanıcıları DEM hesabına ekleyin. Kaydedilen her cihaz tek bir lisans kullanır. Bu hesap aracılığıyla kaydedilen cihazları, kişisel ("KCG") cihazlar olarak değil paylaşılan cihazlar olarak kullanmanızı öneririz.  
 
 Kullanıcıların, cihaz kayıt yöneticileri olarak eklenmesi için Azure portalında mevcut olmaları gerekir. En iyi güvenlik için DEM kullanıcısının Intune yöneticisi olmaması gerekir.
 
 >[!NOTE]
->DEM kayıt yöntemi, şu diğer kayıt yöntemleriyle birlikte kullanılamaz: [Kurulum Yardımcısı ile Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md), [Doğrudan kayıt ile Apple Configurator](apple-configurator-direct-enroll-ios.md) veya [cihaz kayıt programı](device-enrollment-program-enroll-ios.md). 
+>DEM kayıt yöntemi şu kayıt yöntemleriyle birlikte kullanılamaz: [Kurulum Yardımcısı ile Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md), [doğrudan kayıt ile Apple Configurator](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) veya [Cihaz Kayıt Programı (DEP)](device-enrollment-program-enroll-ios.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Cihaz kayıt yöneticisi senaryo örneği
 
@@ -50,17 +48,13 @@ DEM kullanıcısı şunları yapabilir:
 
 Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kısıtlamalar söz konusudur:
 
-  - Özel bir cihaz "kullanıcısı" yoktur. Bu yüzden e-posta veya şirket verileri erişimi yoktur. Ancak örneğin VPN, verilere erişimi olan cihaz uygulamaları sağlamak için kullanılabilir.
-
-  - Koşullu erişim yoktur çünkü bunlar kullanıcı başına senaryolardır.
-
-  - DEM kullanıcısı, Şirket Portalı’nı kullanarak cihazın kendisinde DEM’e kaydedilen cihazların kaydını kaldıramaz. Intune yöneticisinin bu yeteneği vardır ancak DEM kullanıcısının yoktur.
-
+  - Kullanıcı başına erişim yoktur. Cihazların atanmış bir kullanıcısı olmadığından, cihaz e-postaya veya şirket verilerine erişemez. Örneğin cihaz uygulamalarına verilere erişim sağlamak için VPN yapılandırmaları kullanmaya devam edilebilir.
+  - Bu senaryolar kullanıcı başına olduğundan koşullu erişim yoktur.
+  - DEM kullanıcısı, Şirket Portalı’nı kullanarak cihazın kendisinde DEM’e kaydedilen cihazların kaydını kaldıramaz. Intune yöneticisi bunu yapabilir, ancak DEM kullanıcısı yapamaz.
   - Şirket Portalı uygulamasında veya web sitesinde yalnızca yerel cihaz görünür.
- 
   - Kullanıcılar, uygulama yönetimi için kullanıcı başına Apple ID gereksinimlerinden dolayı Apple Volume Purchase Program (VPP) uygulamalarını kullanamaz.
- 
-  - (Yalnızca iOS) iOS cihazlarını kaydetmek için DEM kullanırsanız cihazları kaydetmek için Apple Configurator veya Apple Aygıt Kayıt Programı’nı (DEP) kullanamazsınız.
+  - (Yalnızca iOS) iOS cihazlarını kaydetmek için DEM kullanıyorsanız, cihaz kaydetmek için Apple Configurator, Apple Aygıt Kayıt Programı (DEP) veya Apple School Manager (ASM) kullanamazsınız.
+  - Her cihaz bir cihaz lisansı gerektirir. [Kullanıcı ve cihaz lisansları](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services) hakkında daha fazla bilgi edinin.
 
 
 > [!NOTE]
@@ -78,31 +72,28 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
 
 4.  **Kullanıcı Ekle** dikey penceresinde, DEM kullanıcısı için bir kullanıcı asıl adı girin ve **Ekle**’yi seçin. DEM kullanıcısı, DEM kullanıcıları listesine eklenir.
 
+## <a name="permissions-for-dem"></a>DEM izinleri
+
+DEM kayıt görevlerini gerçekleştirmek için, Genel Yönetici veya Intune Hizmet Yöneticisi Azure AD rolleri gerekir. Ayrıca özel Kullanıcı rolü altında RBAC izinlerinin de listelenmesine karşın, tüm DEM kullanıcılarını görmek için de bu roller gereklidir. Genel yönetici veya Intune Hizmet yöneticisi rolü atanmamış, ancak Cihaz Kayıt Yöneticileri rolü için okuma izni olan bir kullanıcı oluşturduğu DEM kullanıcılarını yalnızca görebilir. Bu özellikler için RBAC rolü desteği gelecekte duyurulacaktır.
+
+Kullanıcının kendisine atanmış bir Genel yönetici veya Intune Hizmet yöneticisi rolü yoksa, ancak kendisine atanmış Cihaz Kayıt Yöneticileri rolü için etkinleştirilmiş okuma izni varsa, oluşturduğu DEM kullanıcılarını yalnızca görebilir.
+
 ## <a name="remove-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisini kaldırma
 
 Cihaz kayıt yöneticisinin kaldırılması, kayıtlı cihazları etkilemez. Cihaz kayıt yöneticisi kaldırıldığında:
 
--   DEM kullanıcıları listesinde bir kullanıcı kaldırılması kayıtlı cihazları etkilemez ve kayıtlı cihazlar tam olarak yönetilmeye devam eder.
-
+-   Kayıtlı cihazlar bunlardan etkilenmez ve tam olarak yönetilmeye devam eder.
 -   Kaldırılan cihaz kayıt yöneticisi hesabının kimlik bilgileri geçerli olmaya devam eder.
-
 -   Kaldırılan cihaz kayıt yöneticisi yine cihazları temizleyemez ve kullanımdan kaldıramaz.
-
--   Intune yöneticisi tarafından yapılandırılan cihaz başına sınıra ulaşılmamış olması koşuluyla, kaldırılan cihaz kayıt yöneticisi ek cihazlar kaydedemez.
+-   Kaldırılan cihaz kayıt yöneticisi, yalnızca Intune yöneticisinin yapılandırdığı kullanıcı başına cihaz sayısı sınırına kadar cihaz kaydedebilir.
 
 **Cihaz kayıt yöneticisi kaldırmak için**
 
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-
 2. Intune dikey penceresinde **Cihazları kaydet**’i ve ardından **Cihaz Kayıt Yöneticileri**’ni seçin.
-
 3. **Cihaz Kayıt Yöneticileri** dikey penceresinde DEM kullanıcısına sağ tıklayın ve **Kaldır**’ı seçin.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisinin özelliklerini görüntüleme
 
-1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-
-2. Intune dikey penceresinde **Cihazları kaydet**’i ve ardından **Cihaz Kayıt Yöneticileri**’ni seçin.
-
-3. **Cihaz Kayıt Yöneticileri** dikey penceresinde DEM kullanıcısına sağ tıklayın ve **Özellikler**’ı seçin.
-
+1. Intune portalında **Cihaz kaydı**'nı seçin, ardından **Cihaz Kayıt Yöneticileri**'ni seçin.
+2. **Cihaz Kayıt Yöneticileri** dikey penceresinde DEM kullanıcısına sağ tıklayın ve **Özellikler**’ı seçin.

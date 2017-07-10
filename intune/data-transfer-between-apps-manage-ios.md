@@ -1,12 +1,12 @@
 ---
-title: "iOS uygulamaları arasında veri aktarımını yönetme |Intune Azure önizlemesi"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Uygulamalar arasındaki veri aktarımlarını yönetmek amacıyla iOS Birlikte açma özelliğini ve mobil uygulama yönetimi ilkelerini nasıl kullanabileceğinizi anlamak için bu konuyu okuyun."
+title: "iOS uygulamaları arasında veri aktarımını yönetme"
+titleSuffix: Intune on Azure
+description: "Bu konuyu, uygulamalar arasındaki veri aktarımlarını yönetmek amacıyla iOS Birlikte açma özelliğini ve mobil uygulama yönetimi ilkelerini nasıl kullanabileceğinizi anlamak için kullanın.\""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>iOS uygulamaları arasında veri aktarımını yönetme
 ## <a name="manage-ios-apps"></a>iOS uygulamalarını yönetme
 Şirket verilerinizin korunması, dosya aktarımlarının tarafınızdan yönetilen uygulamalarla kısıtlanmasını da içerir.  iOS uygulamalarını aşağıdaki yollarla yönetebilirsiniz:
@@ -36,7 +33,7 @@ iOS cihazları için **Yönetimde açma** özelliği, dosya aktarımlarını yal
 ##  <a name="using-app-protection-with-ios-apps"></a>Uygulama korumayı iOS uygulamalarıyla kullanma
 Uygulama koruma ilkeleri iOS **Yönetimde açma** özelliğiyle birlikte kullanıldığında, şirket verileri aşağıdaki yollarla korunabilir:
 
--   **Herhangi bir MDM çözümüyle yönetilmeyen, çalışana ait cihazlar:** Uygulama koruma ilkesi ayarlarını **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** olarak belirleyebilirsiniz. Son kullanıcı, ilkeyle yönetilmeyen bir uygulamada korunan bir dosyayı açamayacaktır.
+-   **Herhangi bir MDM çözümüyle yönetilmeyen, çalışana ait cihazlar:** Uygulama koruma ilkesi ayarlarını **Uygulamanın yalnızca İlkeyle Yönetilen uygulamalara veri aktarmasına izin ver** olarak belirleyebilirsiniz. İlkeyle Yönetilen bir uygulamadaki İçinde Açma davranışı, diğer İlkeyle Yönetilen uygulamaları yalnızca bir paylaşım seçeneği olarak sunar. Bir kullanıcı, ilkeyle korunan bir dosyayı yerel postada OneDrive'dan bir ek olarak göndermeye çalışırsa, dosya okunamaz hale gelir.
 
 -   **Intune tarafından yönetilen cihazlar:** Intune’a kayıtlı cihazlar için, uygulama koruma ilkelerine sahip uygulamalarla Intune aracılığıyla dağıtılan diğer yönetilen iOS uygulamaları arasında veri aktarımına otomatik olarak izin verilir. Uygulamak koruma ilkelerine sahip uygulamalar arasında veri aktarımına izin vermek için, **Uygulamanın yalnızca yönetilen uygulamalara veri aktarmasına izin ver** ayarını etkinleştirin. **Yönetimde açma** özelliğini kullanarak Intune aracılığıyla dağıtılmış uygulamalar arasındaki veri aktarımını denetleyebilirsiniz.   
 
@@ -108,4 +105,3 @@ Kullanıcı UPN ayarını yapılandırdıktan sonra, iOS uygulamasının Intune 
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Intune uygulama koruma ilkesi nedir](app-protection-policy.md)
-

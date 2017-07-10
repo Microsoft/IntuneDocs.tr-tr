@@ -1,12 +1,12 @@
 ---
 title: "Intune ile Windows 10 sürüm yükseltmelerini yapılandırma"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Yönettiğiniz Windows 10 cihazlarını farklı bir sürüme yükseltmek için Intune’u kullanmayı öğrenin."
+titleSuffix: Intune on Azure
+description: "Intune’u, yönettiğiniz Windows 10 cihazlarını farklı bir sürüme yükseltmek için kullanmayı öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 59a29cee51f228c647a2491a2e452555ac5aba05
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 sürüm yükseltmelerini yapılandırma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Windows 10 sürüm yükseltme profilinin nasıl yapılandırılacağını öğrenmek için bu konu başlığı altındaki bilgileri kullanın. Bu profil aşağıdaki Windows 10 sürümlerinden birini çalıştıran cihazları farklı bir sürüme otomatik olarak yükseltmenizi sağlar:
 
@@ -52,7 +49,7 @@ Cihazları en son sürüme yükseltmeye başlamadan önce aşağıdakilerden bir
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Cihaz kısıtlama ayarlarını içeren bir cihaz profili oluşturma
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
 3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
@@ -68,5 +65,4 @@ Cihazları en son sürüme yükseltmeye başlamadan önce aşağıdakilerden bir
 
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).
-
 

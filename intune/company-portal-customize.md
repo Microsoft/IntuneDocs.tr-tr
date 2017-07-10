@@ -1,5 +1,5 @@
 ---
-title: "Şirket Portalı&quot;nı özelleştirme"
+title: "Şirket Portalı'nı özelleştirme"
 description: "Intune Şirket Portalı kullanıcıların cihaz kaydetme, uygulama yükleme ve BT departmanı bilgilerine ulaşma gibi sık kullanılan görevleri gerçekleştirmesini sağlar."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e54f1a2ab0e62ab3ffcbf6fa1ae6f974c5f18717
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="customize-the-company-portal"></a>Şirket Portalı'nı özelleştirme
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -85,4 +82,3 @@ Kullanıcıların Şirket Portalı’nda yerine getirebilecekleri görevlerden b
 
 
 Değişiklikleri kaydettikten sonra, Şirket Portalı web sitesini görüntülemek için yönetici konsolunun **Şirket Portalı** sayfasının sonunda sağlanan bağlantıları kullanabilirsiniz. Bu bağlantılar değiştirilemez. Bir kullanıcı oturum açtığında bu bağlantılar Şirket Portalı’ndaki aboneliklerinizi görüntüler.
-

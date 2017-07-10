@@ -1,5 +1,5 @@
 ---
-title: "Raporları kullanarak işlemleri anlama | Microsoft Docs"
+title: "Raporları kullanarak işlemleri anlama"
 description: "Kuruluşunuzdaki yazılımlar, donanımlar ve yazılım lisansları hakkında raporlar oluşturun ve bu raporları yönetin."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Raporları kullanarak Microsoft Intune işlemlerini anlayın
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Ayrıca, raporları aşağıdaki eylemleri destekler:
 |**Kaydetme**|**Yeni Rapor Oluştur** sayfasında, her kullanıcı 100'e kadar rapor kaydedebilir. Rapor parametrelerini gereksinimlerinize göre yapılandırın ve ardından **Kaydet**'e veya (farklı bir ad kullanmak istiyorsanız) **Farklı Kaydet** 'e tıklayın.|
 |**Yükleme**|Daha önceden kaydedilen tüm rapor parametre kümelerini almak için **Yeni Rapor Oluştur** sayfasında **Yükle**'yi seçin.|
 |**Sil**|**Raporlar** çalışma alanında, istenen rapor türünü ve **Yükle**’yi seçin. Ardından, raporlar listesinde, raporun yanındaki sil (x) simgesini seçin.|
-
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Android cihazları için Intune özel ayarları"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Android özel profilinde kullanabileceğiniz ayarları öğrenin."
+titleSuffix: Intune on Azure
+description: "Bir Android özel profilinde kullanabileceğiniz ayarları öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ff3d3b1596f58213bed2509b1bfd5ae81c63f440
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune’da Android cihazları için özel ayarlar
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Android cihazlarındaki özellikleri denetlemek için kullanılabilen OMA-URI ayarlarını atamak için Microsoft Intune Android **Özel** profilini kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
 
@@ -43,4 +40,3 @@ Bu özellik, Intune ilkeleri ile yapılandırılamayan Android ayarlarını atam
     - **OMA-URI** - Ayar sağlamak istediğiniz OMA-URI’yi belirtin.
     - **Değer** - Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz değeri girin.
 4. Bitirdiğinizde **Tamam**’a tıklayın, ardından gereken diğer ayarları eklemeye devam edin.
-

@@ -14,15 +14,12 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="post-configuration-tasks"></a>Yapılandırma sonrası görevleri
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,4 +31,3 @@ Bir Intune ücretli aboneliği için ilk yapılandırma adımlarını tamamladı
 -   **Intune raporları:** Microsoft Intune, yazılımın lisans durumu ve cihazları etkileyen eylemler (örn. bir cihazı silme) hakkında bilgi vermenin yanı sıra cihazları izleyebilmenizi sağlayan uyarılar ve raporlar sunar.  Raporlar hakkında daha fazla bilgi edinmek için bkz. [Raporları kullanarak Microsoft Intune işlemlerini anlayın](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports).
 
 -   **Şirket kaynaklarını koruma:** Intune’u yapılandırdıktan ve cihazlarınızı kaydettikten sonra, bu cihazların veri kaybına ve diğer tehditlere karşı korunduğundan emin olmanız gerekir. Kaynakları koruma hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune’la uygulamaları ve verileri koruma](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune).
-

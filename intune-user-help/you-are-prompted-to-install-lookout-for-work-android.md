@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 957a0f5104030043e8049bf65ba30e4579a0acb0
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-lookout-for-work"></a>Lookout for Work uygulamasını yüklemeniz gerekiyor
 
 İşinize erişebilmeniz için önce BT yöneticinizin Lookout for Work uygulamasını yüklemenizi sağlaması gerekir. Bu uygulama olası güvenlik tehditlerini bularak cihazınızın korunmasına yardımcı olur.
@@ -32,11 +28,11 @@ Yükleme ile ilgili sorun yaşıyorsanız, bu konunun sonundaki sorun giderme ad
 
 **Yapmanız gerekenler:**
 
-1.    Bildirimler çubuğunu açmak için ekranın en üstünden aşağı doğru sürükleyin ve ardından **Gerekli uygulama – Play Store’dan Lookout for Work’ü Yükle**’ye tıklayın.
+1.  Bildirimler çubuğunu açmak için ekranın en üstünden aşağı doğru sürükleyin ve ardından **Gerekli uygulama – Play Store’dan Lookout for Work’ü Yükle**’ye tıklayın.
 
   ![Lookout for Work uygulamasını yüklemeniz gerekir](./media/lookout-required-app-install-android.png)
 
-2.    Play Store’da Lookout for Work yükleme sayfasına gelirsiniz. Lookout for Work’ü yükleyin ve Lookout for Work uygulamasının cihazınıza erişmesine izin vermek için **KABUL ET**’e dokunun.
+2.  Play Store’da Lookout for Work yükleme sayfasına gelirsiniz. Lookout for Work’ü yükleyin ve Lookout for Work uygulamasının cihazınıza erişmesine izin vermek için **KABUL ET**’e dokunun.
 
   ![Lookout for Work’ün cihazınıza erişmesine izin vermek için kabul et’e dokunun](./media/lookout-accept-store-permissions-android.png)
 
@@ -79,4 +75,3 @@ Yükleme ile ilgili sorun yaşıyorsanız, bu konunun sonundaki sorun giderme ad
 Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle başarısız olabilir. Bu durumda, Lookout for Work’ü [Play Store’dan el ile](https://play.google.com/store/apps/details?id=com.lookout.enterprise) yüklemeyi deneyin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

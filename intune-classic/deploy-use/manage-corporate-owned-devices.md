@@ -14,15 +14,12 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8dae789ad1996543ddf9b92d031ac995beff6a46
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Şirkete ait cihazları Intune kullanarak kaydetme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -67,4 +64,3 @@ Aşağıdaki koşullardan herhangi biri doğru olduğunda, Intune bir cihazı �
  - Cihaz [Azure Active Directory veya Enterprise Mobility Suite’e bir Windows 10 Enterprise cihazı olarak kaydedilmiştir](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (yalnızca Windows 10 için).
 
 Bir cihaz şirket cihazı olarak etiketlendiğinde, yönetici konsolunda bulunan cihaz kaydındaki **Sahiplik** sütununda **Şirket** seçeneğini görürsünüz. 
-
