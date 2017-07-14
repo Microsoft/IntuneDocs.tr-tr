@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/16/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
+# Microsoft Intune uygulama yönetimi nedir?
+<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +37,8 @@ Buna ek olarak, Intune’a kaydolmamış cihazlarda uygulamaları atamak ve yön
 
 Intune, ihtiyacınız olan uygulamaları istediğiniz cihazlara almanıza yardımcı olacak çeşitli özellikler sunar.
 
-## <a name="app-management-capabilities-by-platform"></a>Platforma göre uygulama yönetimi özellikleri
+## Platforma göre uygulama yönetimi özellikleri
+<a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
@@ -56,11 +58,12 @@ Intune, ihtiyacınız olan uygulamaları istediğiniz cihazlara almanıza yardı
 |Mağazadan uygulamalar|Evet|Evet|Evet|Evet|
 |Uygulamaları güncelleştirme|Evet|Evet|Evet|Evet|
 
-<sup>1</sup> Windows 10 çalıştıran cihazlardaki uygulamaları korumak için [Windows Bilgi Koruması]windows-information-protection-configure.md) kullanabilirsiniz.
+<sup>1</sup> Windows 10 çalıştıran cihazlarda uygulamaları korumak için [Windows Bilgi Koruması](windows-information-protection-configure.md)’nu kullanmayı göz önüne alabilirsiniz.
 
 <sup>2</sup>Yalnızca Intune tarafından yönetilen cihazlar için geçerlidir.
 
-## <a name="how-to-get-started"></a>Nereden başlayacaksınız
+## Nereden başlayacaksınız
+<a id="how-to-get-started" class="xliff"></a>
 
 Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygulamayla ilgili bilgilerin çoğunu bulabilirsiniz:
 
@@ -70,7 +73,8 @@ Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygu
 
     ![Mobil Uygulamalar iş yükü](./media/apps-workload.png)
 
-### <a name="manage"></a>Bilgisayarlarda
+### Bilgisayarlarda
+<a id="manage" class="xliff"></a>
 - **Uygulamalar** - Bu düğüm, uygulamalarınızın çoğunu eklediğiniz, atadığınız ve izlediğiniz yerdir.
     - [Uygulamaları ekleme](apps-add.md)
     - [Uygulamaları atama](apps-deploy.md)
@@ -85,7 +89,8 @@ Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygu
 - **iOS sağlama profilleri** - iOS uygulamaları, bir sağlama profili ve bir sertifika tarafından imzalanmış kod içerir. Sertifikanın süresi dolduğunda, uygulama artık çalıştırılamaz. Intune size süresi dolmak üzere olan uygulamaların bulunduğu cihazlara yeni sağlama profili ilkesini önceden atamak için araçlar verir.
     - [iOS uygulama sağlama profilleri](app-provisioning-profile-ios.md)
 
-### <a name="monitor"></a>İzle
+### İzle
+<a id="monitor" class="xliff"></a>
 - **Lisanslı Uygulamalar** - Uygulama mağazalarından toplu satın alınan uygulamaları görüntüleyin, atayın ve izleyin.
     - [İş İçin Windows Mağazası’ndan toplu satın alınan uygulamalar](windows-store-for-business.md)
 - **Bulunan Uygulamalar** - Intune tarafından atanan ve bir cihaza yüklenen tüm uygulamaları gösterir.
@@ -94,7 +99,8 @@ Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygu
 
 Ayrıntılar için bkz. [Uygulamaları izleme](apps-monitor.md)
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **İş İçin Windows Mağazası** - İş İçin Windows Mağazası’na tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz.

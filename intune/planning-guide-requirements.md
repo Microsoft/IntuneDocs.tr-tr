@@ -14,13 +14,14 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8806dc965653deaca5ab370c290403ae049e5c58
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 032427a9965f368d7be17339e3cbe5b426800347
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="determine-use-case-scenario-requirements"></a>Kullanım örneği senaryosu gereksinimlerini belirleme
+# Kullanım örneği senaryosu gereksinimlerini belirleme
+<a id="determine-use-case-scenario-requirements" class="xliff"></a>
 
 Bu bölümde, her kullanım örneği senaryosu içindeki tüm kuruluş grupları için gereksinimleri belirlersiniz. Bu süreç mimari ve tasarım, ekleme ve dağıtım gibi diğer Intune dağıtım planlama alanlarına hazırlanmanıza yardımcı olur. Intune dağıtım projenizle ilgili olası boşlukları ve zorlukları da tanımlamanıza yardımcı olacaktır.
 
@@ -41,7 +42,8 @@ Her bir kullanım örneği ve alt kullanım örneği senaryosu, kuruluş grubu v
 Kuruluşunuzun kullanım örneği ve alt kullanım örneği gereksinimlerini girmek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
 
-## <a name="examples-of-requirements"></a>Gereksinim örnekleri
+## Gereksinim örnekleri
+<a id="examples-of-requirements" class="xliff"></a>
 
 "Gereksinimler" sütununda kullanılabilecek birkaç örnek daha verelim:
 
@@ -62,6 +64,7 @@ Kuruluşunuzun kullanım örneği ve alt kullanım örneği gereksinimlerini gir
     - Uygulama koruma ilkeleriyle Office 365
     - Uygulama koruma ilkeleri ile iş kolu (LOB)
 
-## <a name="next-section"></a>Sonraki bölüm
+## Sonraki adımlar
+<a id="next-steps" class="xliff"></a>
 
 Sonraki bölümde [bir Intune dağıtımı planı geliştirme](planning-guide-rollout-plan.md) hakkında yönergeler sağlanır.
