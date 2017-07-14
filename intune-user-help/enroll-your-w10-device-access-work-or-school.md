@@ -16,18 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aa12a88cfd80f62e2f7b249b52333bd16cbb6533
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3f575797a09fb4d74c2da2a7dc6b14a9723d3f4d
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 cihazınızı Intune'a kaydetme
+# Windows 10 cihazınızı Intune'a kaydetme
+<a id="enroll-your-windows-10-device-in-intune" class="xliff"></a>
 
 > [!NOTE]
 > Windows 10 tüm cihaz türlerinde çalışır. Masaüstü, telefon veya tablet kullandığınızda izleyeceğiniz adımlar, bu sayfadaki resimlerden biraz farklı görünse de aynıdır.
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]
 
 1. **Başlat**'a gidin.
 

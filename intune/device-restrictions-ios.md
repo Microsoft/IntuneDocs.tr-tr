@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da iOS cihaz kısıtlama ayarları
+# Microsoft Intune’da iOS cihaz kısıtlama ayarları
+<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="general"></a>Genel
+## Genel
+<a id="general" class="xliff"></a>
 -   **Kamera** - Cihazdaki kameranın kullanılıp kullanılamayacağını seçin.   
 -   **Tanılama verileri gönderme** - Cihazın Apple’a tanılama verileri göndermesine izin verin veya bunu engelleyin.
 -   **FaceTime** - Cihazda FaceTime uygulamasının kullanılmasına izin verin.
@@ -73,7 +75,8 @@ Bu durum, Posta, Kişiler, Takvim, Facebook ve Twitter gibi iOS ayarları uygula
 - **Apple News (yalnızca denetimli)** - Apple News uygulamasının kullanılmasına izin verin.
 - **Yapılandırma profilindeki değişiklikler** - Kullanıcının yapılandırma profilleri yüklemesine izin verin.
 
-## <a name="password"></a>Parola
+## Parola
+<a id="password" class="xliff"></a>
 -   **Parola gerekli** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
 -   **Basit parolalar** - 0000 ve 1234 gibi basit parolalara izin verin.
 -   **Gerekli parola türü** - Gerekli parola türünü belirtin (yalnızca sayısal veya alfasayısal gibi).
@@ -88,7 +91,8 @@ Bu durum, Posta, Kişiler, Takvim, Facebook ve Twitter gibi iOS ayarları uygula
 
 <sup>1</sup>**Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** ve **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**, ayarlarını yapılandırdığınızda, bunlar sırayla uygulanır. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
 
-## <a name="app-store-doc-viewing-gaming"></a>Uygulama Mağazası, Belge Görüntüleme, Oyun
+## Uygulama Mağazası, Belge Görüntüleme, Oyun
+<a id="app-store-doc-viewing-gaming" class="xliff"></a>
 
 
 -   **Uygulama mağazası (yalnızca denetimli)** - Denetimli cihazlarda uygulama mağazasına erişimi engelleyin.
@@ -106,7 +110,8 @@ Bu durum, Posta, Kişiler, Takvim, Facebook ve Twitter gibi iOS ayarları uygula
 -   **Derecelendirme bölgesi** - İzin verilen indirmeleri yapılandırmak istediğiniz derecelendirme bölgesini seçin ve sonra da **Filmler** ve **TV Programları** için izin verilen derecelendirmeleri seçin.
 -   **Uygulamalar** - Kullanıcıların indirebileceği uygulamaların yaş derecelendirmesini seçin veya **Tüm Uygulamalara İzin Ver**’i seçebilirsiniz.
 
-## <a name="restricted-apps"></a>Kısıtlı uygulamalar
+## Kısıtlı uygulamalar
+<a id="restricted-apps" class="xliff"></a>
 
 Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini yapılandırabilirsiniz:
 
@@ -115,7 +120,8 @@ Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini yapılandıra
 
 Listeyi yapılandırmak için **Ekle**’ye tıklayın, sonra da tercih ettiğiniz bir ad (isteğe bağlı olarak uygulama yayımcısı) ve uygulamanın uygulama mağazasındaki URL'sini belirtin.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Mağazadaki uygulamanın URL’sini belirtme
+### Mağazadaki uygulamanın URL’sini belirtme
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Uygulamalar listesinde bir uygulama URL'si belirtmek için aşağıdaki biçimi kullanın:
 
@@ -130,11 +136,13 @@ Kısıtlı uygulama ayarlarını içeren cihaz profilleri kullanıcı grupların
 
 
 
-### <a name="additional-options"></a>Ek seçenekler
+### Ek seçenekler
+<a id="additional-options" class="xliff"></a>
 
 Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygulama adı*>, <*uygulama yayımcısı*> biçimindeki bir csv dosyasından doldurabilir veya **Dışarı Aktar**’a tıklayarak kısıtlı uygulama listesinin içeriğiyle, aynı biçimde bir csv dosyası oluşturabilirsiniz.
 
-## <a name="show-or-hide-apps"></a>Uygulamaları gösterme veya gizleme
+## Uygulamaları gösterme veya gizleme
+<a id="show-or-hide-apps" class="xliff"></a>
 
 Uygulamaları gösterme veya gizleme listesinde, aşağıdaki listelerden birini yapılandırabilirsiniz (iOS 9.3 veya üstünü çalıştıran denetimli cihazlar gerekir).
 
@@ -143,7 +151,8 @@ Uygulamaları gösterme veya gizleme listesinde, aşağıdaki listelerden birini
 
 Listeyi yapılandırmak için **Ekle**’ye tıklayın, sonra da tercih ettiğiniz bir ad (isteğe bağlı olarak uygulama yayımcısı) ve uygulamanın uygulama mağazasındaki URL'sini belirtin.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Mağazadaki uygulamanın URL’sini belirtme
+### Mağazadaki uygulamanın URL’sini belirtme
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Uygulamalar listesinde bir uygulama URL'si belirtmek için aşağıdaki biçimi kullanın:
 
@@ -155,19 +164,22 @@ Sayfanın URL'sini kopyalayın ve bunu, onaylı veya yasak uygulamalar listesini
 > [!Note]
 > iTunes yazılımını kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL'sini alabilirsiniz.
 
-### <a name="additional-options"></a>Ek seçenekler
+### Ek seçenekler
+<a id="additional-options" class="xliff"></a>
 
 Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygulama adı*>, <*uygulama yayımcısı*> biçimindeki bir csv dosyasından doldurabilir veya **Dışarı Aktar**’a tıklayarak gizli veya görünür uygulama listesinin içeriğiyle, aynı biçimde bir csv dosyası oluşturabilirsiniz.
 
 
-## <a name="cellular"></a>Hücresel
+## Hücresel
+<a id="cellular" class="xliff"></a>
 -   **Veri dolaşımı** - Cihaz cep telefonu şebekesindeyken veri dolaşımına izin verin.
 -   **Dolaşım sırasında genel arka planda alma** - Cihazın, cep telefonu şebekesinde dolaşımdayken e-posta gibi verileri almasına izin verin.
 -   **Sesli arama** - Cihazda sesli arama özelliğinin kullanımına izin verin.
 -   **Ses dolaşımı** - Cihaz cep telefonu şebekesindeyken ses dolaşımına izin verin.
 -   **Uygulama hücresel veri kullanımı ayarlarında yapılan değişiklikler (yalnızca denetimli)** - Kullanıcının hangi uygulamaların hücresel veri kullanabileceğini denetlemesine izin verin.
 
-## <a name="cloud-and-storage"></a>Bulut ve Depolama
+## Bulut ve Depolama
+<a id="cloud-and-storage" class="xliff"></a>
 -   **iCloud'a yedekle** - Kullanıcının cihazı iCloud’a yedeklemesine izin verin.
 -   **iCloud'a belge eşitleme (yalnızca denetimli)** - iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verin.
 -   **iCloud'a fotoğraf akışı eşitlemesi** - Kullanıcıların fotoğrafların iCloud’a eşitlenmesine ve tüm kullanıcıların cihazlarında kullanılabilir olmasına olanak tanıyan **Fotoğraf Akışım**’ı cihazlarında etkinleştirmesine olanak tanır.
@@ -177,11 +189,13 @@ Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygu
 -   **Paylaşılan fotoğraf akışı** - Cihazda **iCloud Fotoğraf Paylaşımı**’nı devre dışı bırakmak için **Hayır** olarak ayarlayın.
 -   **Etkinlik devamlılığı** - Kullanıcının bir iOS cihazında başladığı çalışmayı başka bir iOS veya macOS cihazında sürdürmesine izin verin (İletim).
 
-## <a name="autonomous-single-app-mode-supervised-only"></a>Otonom tek uygulama modu (yalnızca denetimli)
+## Otonom tek uygulama modu (yalnızca denetimli)
+<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
 
 Bu ayarları kullanarak iOS cihazlarını, belirtilen uygulamaları otonom tek uygulama modunda çalışacak şekilde yapılandırabilirsiniz. Bu mod yapılandırılıp uygulama çalıştırıldığında cihaz yalnızca belirtilen uygulamayı çalıştıracak şekilde kilitlenir. Buna örnek olarak kullanıcıların cihazda test çözmesini sağlayan bir uygulama verilebilir. Uygulama eylemleri tamamlandığında veya bu ilkeyi kaldırdığınızda cihaz normal durumuna döner.
 
-### <a name="settings"></a>Ayarlar
+### Ayarlar
+<a id="settings" class="xliff"></a>
 
 - **Uygulama adı** - Uygulamanın bu dikey penceredeki uygulamalar listesinde görünecek adını girin.
 - **Uygulama Paket Kimliği** - Uygulamanın paket kimliğini girin. Yardım için bu konu başlığındaki **Yerleşik iOS uygulamaları için Paket Kimliği başvurusu** konusuna bakın.
@@ -191,54 +205,57 @@ Her uygulama adını ve paket kimliğini belirttikten sonra listeye eklemek içi
 - **İçeri aktarma** - Uygulama adları ve ilgili paket kimliklerinin listesini içeren virgülle ayrılmış değerler (.csv) dosyasını içeri aktarın.
 - **Dışarı aktarma** - Bir virgülle ayrılmış değerler (.csv) dosyasına yapılandırdığınız uygulama adlarını ve ilgili paket kimliklerini dışarı aktarın.
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için Paket Kimliği başvurusu
+### Yerleşik iOS uygulamaları için Paket Kimliği başvurusu
+<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
 
 Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
 
-|||
-|-|-|
-|Uygulama adı|Paket Kimliği|
-|Uygulama Mağazası|com.apple.AppStore|
-|Hesap Makinesi|com.apple.calculator|
-|Takvim|com.apple.mobilecal|
-|Kamera|com.apple.camera|
-|Saat|com.apple.mobiletimer|
-|Pusula|com.apple.compass|
-|Kişiler|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Arkadaşları Bul|com.apple.mobileme.fmf1|
-|iPhone’u Bul|com.apple.mobileme.fmip1|
-|Oyun Merkezi|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Sistem Durumu|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Harita|com.apple.Maps|
-|İletiler|com.apple.MobileSMS|
-|Müzik|com.apple.Music|
-|News|com.apple.news|
-|Notlar|com.apple.mobilenotes|
-|Sayılar|com.apple.Numbers|
-|Pages|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Fotoğraflar|com.apple.mobileslideshow|
-|Podcast’ler|com.apple.podcasts|
-|Anımsatıcılar|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Ayarlar|com.apple.Preferences|
-|Borsa|com.apple.stocks|
-|İpuçları|com.apple.tips|
-|Videolar|com.apple.videos|
-|Sesli Notlar|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Watch|com.apple.Bridge|
-|Hava Durumu|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
-## <a name="kiosk"></a>Bilgi noktası
+```
+
+
+## Bilgi noktası
+<a id="kiosk" class="xliff"></a>
 -   **Etkinleştirme Kilidi** - Denetimli iOS cihazlarında Etkinleştirme Kilidi’ni etkinleştirin.
 -   **Bilgi noktası modunda çalışan uygulama** - Intune’a eklediğiniz bir uygulamayı belirtmek için **Yönetilen Uygulama**’yı veya mağazadaki bir uygulamanın URL’sini belirtmek için **Mağaza Uygulaması**’nı seçin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez. Daha fazla yardım için, bu konunun devamındaki “Uygulama mağazalarının URL’lerini belirtme” bölümüne bakın.
 -   **Yardımlı dokunma** - Ekran hareketlerini gerçekleştirmekte zorlanabilecek kullanıcıların bunları yapmasına yardımcı olan **Yardımlı Dokunma** erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.
@@ -262,7 +279,8 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 > Bir iOS cihazını bilgi noktası modunda yapılandırabilmek için, önce Apple Configurator aracını veya Apple Cihaz Kayıt Programı’nı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracı hakkında daha fazla bilgi için Apple belgelerinize bakın.
 >Belirttiğiniz iOS uygulaması siz profil atadıktan sonra yüklendiyse cihaz, yeniden başlatılana kadar bilgi noktası moduna girmez.
 
-## <a name="safari"></a>Safari
+## Safari
+<a id="safari" class="xliff"></a>
 -   **Safari (yalnızca denetimli)** - Cihazda Safari tarayıcısının kullanılıp kullanılamayacağını belirtin.
 -   **Otomatik doldur** - Kullanıcının tarayıcıdaki otomatik tamamlama ayarlarını değiştirmesine izin verin.
 -   **Tanımlama bilgileri** - Tarayıcının tanımlama bilgilerini kullanmasına izin verin.
@@ -271,18 +289,22 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 -   **Açılır pencereler** - Tarayıcı açılır pencere engelleyicisini etkinleştirin veya devre dışı bırakın.
 
 
-## <a name="domains"></a>Domains
+## Domains
+<a id="domains" class="xliff"></a>
 
-### <a name="unmarked-email-domains"></a>İşaretsiz e-posta etki alanları
+### İşaretsiz e-posta etki alanları
+<a id="unmarked-email-domains" class="xliff"></a>
 
 **E-posta Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Son kullanıcılar, yapılandırdığınız etki alanları dışındaki bir etki alanından e-posta aldığında, bu e-posta iOS Mail uygulamasında güvenilmeyen olarak işaretlenir.
 
 
-### <a name="managed-web-domains"></a>Yönetilen web etki alanları
+### Yönetilen web etki alanları
+<a id="managed-web-domains" class="xliff"></a>
 
 **Web Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Belgeler belirttiğiniz etki alanlarından indirildiğinde yönetilen belgeler olarak değerlendirilir. Bu ayar yalnızca Safari tarayıcısı kullanılarak indirilen belgeler için geçerlidir.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Safari otomatik parola doldurma etki alanları
+### Safari otomatik parola doldurma etki alanları
+<a id="safari-password-auto-fill-domains" class="xliff"></a>
 
 **Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Kullanıcılar yalnızca bu listedeki URL’lerdeki parolaları kaydedebilir. Bu ayar yalnızca Safari tarayıcısı ve denetimli moddaki iOS 9.3 ve üzeri cihazlar için geçerlidir. Herhangi bir URL belirtmezseniz, parolalar tüm web sitelerinden kaydedilebilir.

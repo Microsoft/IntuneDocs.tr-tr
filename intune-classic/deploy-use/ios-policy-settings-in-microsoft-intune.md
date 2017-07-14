@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8036dbbb6486d06fa46f7f96199055b9ca7a398c
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da iOS ilke ayarları
+# Microsoft Intune’da iOS ilke ayarları
+<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune, iOS cihazlarda yapılandırabileceğiniz bir dizi yerleşik genel ayar sunar. Ayrıca, Intune'dan kullanılamayan özel ayarları oluşturmak için Apple Configurator aracını kullanabilirsiniz.
 
-## <a name="general-configuration-policy-settings"></a>Genel yapılandırma ilkesi ayarları
+## Genel yapılandırma ilkesi ayarları
+<a id="general-configuration-policy-settings" class="xliff"></a>
 
 Microsoft Intune **iOS genel yapılandırma ilkesini** kullanarak aşağıdaki ayarları yapılandırabilirsiniz:
 
@@ -41,7 +43,8 @@ Microsoft Intune **iOS genel yapılandırma ilkesini** kullanarak aşağıdaki a
 
 Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Configurator aracı](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ile oluşturduğunuz ayarları içeri aktarmanızı sağlayan bir iOS özel ilkesi kullanarak bu özelliği oluşturabilirsiniz. Daha fazla bilgi için, bu konunun devamındaki “Özel ilke ayarları” bölümüne bakın.
 
-### <a name="security-settings"></a>Güvenlik ayarları
+### Güvenlik ayarları
+<a id="security-settings" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -60,7 +63,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Parmak izi ile kilit açmaya izin ver**|Parmak izi kullanarak cihaz kilidini açmaya izin verin.|
 <sup>1</sup> iOS cihazlarda **Ekran kapanmadan önce herhangi bir işlem yapılmadan geçen dakika sayısı** ve **Parola istenmeden önce herhangi bir işlem yapılmadan geçen dakika sayısı** ayarlarını sırayla uygulayarak yapılandırın. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
 
-### <a name="system-settings"></a>Sistem ayarları
+### Sistem ayarları
+<a id="system-settings" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -73,7 +77,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Tanılama verilerinin gönderimine izin ver**|Cihazın Apple’a tanılama verileri göndermesine izin verin veya bunu engelleyin.|
 |**Kilitliyken passbook kullanımına izin ver**|Cihaz kilitliyken kullanıcının Passbook uygulamasına erişmesine izin verin.|
 
-### <a name="cloud-settings-for-documents-and-data"></a>Belgeler ve veriler için bulut ayarları
+### Belgeler ve veriler için bulut ayarları
+<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -87,7 +92,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**iCloud Fotoğraf Paylaşma’ya izin ver**|Cihazda **iCloud Fotoğraf Paylaşımı**’nı devre dışı bırakmak için **Hayır** seçeneğini belirleyin.|
 |**iCloud Fotoğraf Kitaplığı’na izin ver**|**Hayır** seçeneği ayarlanırsa kullanıcıların fotoğraflar ve videoları bulutta depolamasını sağlayan iCloud fotoğraf kitaplığının kullanımı devre dışı bırakılır.   Bu ayar **Hayır** olarak belirlenirse iCloud Fotoğraf Arşivi'nden cihaza tamamen indirilmeyen tüm fotoğraflar cihazdan kaldırılır.|
 
-### <a name="application-settings-for-the-browser"></a>Tarayıcı için uygulama ayarları
+### Tarayıcı için uygulama ayarları
+<a id="application-settings-for-the-browser" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -99,7 +105,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Java betiği oluşturmaya izin ver**|Tarayıcıda Java betiğinin çalıştırılmasına izin verin.|
 |**Sahtekarlık uyarısına izin ver**|Tarayıcıda sahtekarlık uyarılarına izin verin.|
 
-### <a name="application-settings-for-apps"></a>Uygulamalara yönelik uygulama ayarları
+### Uygulamalara yönelik uygulama ayarları
+<a id="application-settings-for-apps" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -113,7 +120,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Kullanıcının yeni kurumsal uygulama yazarlarına güvenmesine izin ver**|Kullanıcının uygulama mağazasından indirilmemiş uygulamalara güvenmeyi seçmesine izin verir.|
 
 
-### <a name="application-settings-for-games"></a>Oyunlar için uygulama ayarları
+### Oyunlar için uygulama ayarları
+<a id="application-settings-for-games" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -121,7 +129,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Game Center arkadaşlarını eklemeye izin ver**|Kullanıcının Game Center'da arkadaş eklemesine izin verin.|
 |**Çok oyunculu oyunlara izin ver**|Kullanıcının cihazda çok oyunculu oyunlar oynamasına izin verin.|
 
-### <a name="application-settings-for-media-content"></a>Medya içeriği için uygulama ayarları
+### Medya içeriği için uygulama ayarları
+<a id="application-settings-for-media-content" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -131,7 +140,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Kullanıcının iBook mağazasından 'Erotika' olarak işaretlenmiş içerik indirmesine izin verme**|Kullanıcının “Erotik” kategorisindeki kitapları indirmesine izin verin.|
 
 
-### <a name="device-capabilities-settings-for-hardware"></a>Donanım için cihaz özellikleri ayarları
+### Donanım için cihaz özellikleri ayarları
+<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -140,7 +150,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Eşleştirilmiş Apple Watch’ları bilek algılama kullanmaya zorla**|Etkinleştirildiğinde, Apple Watch takılmadığında bildirim görüntülemez.|
 |**Giden AirPlay istekleri için bir eşleştirme parolası gerektirme**|Kullanıcının diğer Apple cihazlarına içerik akışı sağlamak üzere AirPlay’i kullanması için, eşleştirilen parola isteyin.|
 
-### <a name="device-capabilities-settings-for-cellular"></a>Hücresel veri için cihaz özellikleri ayarları
+### Hücresel veri için cihaz özellikleri ayarları
+<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -149,7 +160,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Veri dolaşımına izin ver**|Cihaz cep telefonu şebekesindeyken veri dolaşımına izin verin.|
 |**Dolaşımdayken genel arka plan almaya izin ver**|Cihazın, cep telefonu şebekesinde dolaşımdayken e-posta gibi verileri almasına izin verir.|
 
-### <a name="device-capabilities-settings-for-features"></a>Özellikler için cihaz özellikleri ayarları
+### Özellikler için cihaz özellikleri ayarları
+<a id="device-capabilities-settings-for-features" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
@@ -160,7 +172,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 |**Yönetilen uygulamalardan Airdrop’a izin verme**|Yönetilen uygulamaların Airdrop aracılığıyla veri göndermesini engeller.|
 
 
-### <a name="settings-for-compliant-and-noncompliant-apps"></a>Uyumlu ve uyumlu olmayan uygulamalar için ayarlar
+### Uyumlu ve uyumlu olmayan uygulamalar için ayarlar
+<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
 **Uyumlu ve Uyumsuz Uygulamalar** listesinde, aşağıdaki bilgileri kullanarak bir uyumlu veya uyumsuz uygulamalar listesi belirleyin.
 
 > [!NOTE]
@@ -177,7 +190,8 @@ Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 Uyumlu ve uyumsuz uygulama ayarlarını içeren ilkelerin kullanıcı gruplarına dağıtılması gerekir.
 
-### <a name="kiosk-mode-settings"></a>Bilgi noktası modu ayarları
+### Bilgi noktası modu ayarları
+<a id="kiosk-mode-settings" class="xliff"></a>
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
@@ -204,17 +218,20 @@ Uyumlu ve uyumsuz uygulama ayarlarını içeren ilkelerin kullanıcı grupların
 > -   Bir iOS cihazını bilgi noktası modu için yapılandırabilmek için önce, [Apple Configurator aracını](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) veya [Apple Cihaz Kayıt Programı](ios-device-enrollment-program-in-microsoft-intune.md)’nı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracı hakkında daha fazla bilgi için Apple belgelerinize bakın.
 > -   Belirttiğiniz iOS uygulaması siz yapılandırma ilkesini dağıttıktan sonra yüklendiyse, cihaz, yeniden başlatılana kadar bilgi noktası moduna girmez.
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Uyumlu ve uyumlu olmayan uygulamalar için başvuru bilgileri
+### Uyumlu ve uyumlu olmayan uygulamalar için başvuru bilgileri
+<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
 
 **Uyumlu Olmayan Uygulamalar Raporu** 'nu kullanarak izin verilen ve engellenen uygulamaların uyumluluğunu görüntüleyin.
 
-##### <a name="to-run-the-noncompliant-apps-report"></a>Uyumlu Olmayan Uygulamalar Raporu'nu çalıştırmak için
+##### Uyumlu Olmayan Uygulamalar Raporu'nu çalıştırmak için
+<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com), **Raporlar** &gt; **Uyumsuz Uygulamalar Raporu**’nu seçin.
 
 2.  Denetlemek istediğiniz cihaz gruplarını seçin, sonra uyumlu uygulamaları, uyumsuz uygulamaları ya da her ikisini de denetlemek istediğinizi belirtin ve sonra **Raporu Görüntüle**’yi seçin.
 
-#### <a name="how-to-specify-urls-to-app-stores"></a>Uygulama mağazalarının URL'lerini belirtme
+#### Uygulama mağazalarının URL'lerini belirtme
+<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
 Uyumlu ve uyumsuz uygulamalar listesinde veya **Cihaz bilgi noktası modundayken çalışmasına izin verilecek bir yönetilen uygulama seçin** seçeneğinde (yalnızca iOS) bir uygulamanın URL'sini belirtmek için aşağıdaki biçimi kullanın:
 
 1. Bir arama motoru kullanarak, iTunes App Store'dan kullanmak istediğiniz uygulamayı bulun ve uygulamanın sayfasını açın.
@@ -226,17 +243,20 @@ Uyumlu ve uyumsuz uygulamalar listesinde veya **Cihaz bilgi noktası modundayken
 > [!NOTE]
 > iTunes yazılımını kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL'sini alabilirsiniz.
 
-### <a name="enrollment-settings"></a>Kayıt ayarları
+### Kayıt ayarları
+<a id="enrollment-settings" class="xliff"></a>
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
 |**Cihaz denetimli moddayken Etkinleştirme Kilidi’ne izin verme**|Denetimli iOS cihazlarında Etkinleştirme Kilidi’ni etkinleştirin.|
 
-### <a name="supervised-mode-settings"></a>Denetimli mod ayarları
+### Denetimli mod ayarları
+<a id="supervised-mode-settings" class="xliff"></a>
 iOS 8.0 ve üstünü çalıştıran denetimli moddaki cihazlarda aşağıdaki ayarları yapılandırabilirsiniz.
 
-### <a name="supervised-mode-settings-for-device-restrictions"></a>Cihaz kısıtlamaları için denetimli mod ayarları
+### Cihaz kısıtlamaları için denetimli mod ayarları
+<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
@@ -252,7 +272,8 @@ iOS 8.0 ve üstünü çalıştıran denetimli moddaki cihazlarda aşağıdaki ay
 |**Bildirim ayarlarının değiştirilmesine izin verme**|Kullanıcının cihazın bildirim ayarlarını değiştirmesine izin verin.|
 |**Duvar kağıdının değiştirilmesine izin verme**|Kullanıcının cihazın duvar kağıdını değiştirmesine izin verin.|
 
-### <a name="supervised-mode-settings-for-feature-restrictions"></a>Özellik kısıtlamaları için denetimli mod ayarları
+### Özellik kısıtlamaları için denetimli mod ayarları
+<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
@@ -266,7 +287,8 @@ iOS 8.0 ve üstünü çalıştıran denetimli moddaki cihazlarda aşağıdaki ay
 |**Klavyenin yazım denetimi yapmasına izin verme**|Cihazın yazım denetimcisine izin verir.|
 |**Klavye kısayollarına izin verme**|Klavye kısayollarının kullanılmasına izin verir.|
 
-### <a name="supervised-mode-settings-for-app-restrictions"></a>Uygulama kısıtlamaları için denetimli mod ayarları
+### Uygulama kısıtlamaları için denetimli mod ayarları
+<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
 
 |Ayar adı|Ayrıntılar|
 |----------------|--------------------|
@@ -283,7 +305,8 @@ iOS 8.0 ve üstünü çalıştıran denetimli moddaki cihazlarda aşağıdaki ay
 |**Game Center’a izin verme**|Game Center uygulamasının kullanımına izin verin.|
 
 
-### <a name="show-or-hide-apps"></a>Uygulamaları Gösterme veya Gizleme
+### Uygulamaları Gösterme veya Gizleme
+<a id="show-or-hide-apps" class="xliff"></a>
 
 iOS 9.3 veya üzerini çalıştıran denetimli cihazlarda aşağıdakileri denetlemek için **Gizli veya gösterilen uygulamalar listesi**’ni kullanın:
 
@@ -291,7 +314,8 @@ iOS 9.3 veya üzerini çalıştıran denetimli cihazlarda aşağıdakileri denet
 - Kullanıcıların görüntüleyebileceği ve başlatabileceği uygulamaların bir listesini belirtin. Başka hiçbir uygulama görüntülenemez veya başlatılamaz.
 
 
-#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>Gizli veya gösterilen uygulama listesi oluşturma
+#### Gizli veya gösterilen uygulama listesi oluşturma
+<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
 
 Aşağıdaki ayarları belirtin:
 
@@ -305,49 +329,50 @@ Aşağıdaki ayarları belirtin:
 |**Düzenle**|Seçilen uygulamanın adını, yayımcısını ve URL'sini düzenlemenize imkan tanır.|
 |**Sil**|Seçilen uygulamayı listeden siler.|
 
-#### <a name="app-information-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için uygulama bilgileri
+#### Yerleşik iOS uygulamaları için uygulama bilgileri
+<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
 
 Göstermek veya gizlemek istediğiniz yerleşik iOS uygulamalarının ad, yayıncı ve paket kimliği bilgilerini belirlemek için bu listedeki bilgileri kullanın. Listedeki uygulamaların tümünü göstermek veya gizlemek istiyorsanız, aşağıdaki verileri **.csv** uzantılı bir metin dosyasına kopyalayabilir ve ardından **Uygulamaları İçeri Aktar** seçeneğini kullanarak tüm uygulamaları aynı anda içeri aktarabilirsiniz.
 
 ```
-App Store,Apple,com.apple.AppStore
-Calculator,Apple,com.apple.calculator
-Calendar,Apple,com.apple.mobilecal
-Camera,Apple,com.apple.camera
-Clock,Apple,com.apple.mobiletimer
-Compass,Apple,com.apple.compass
-Contacts,Apple,com.apple.MobileAddressBook
-FaceTime,Apple,com.apple.facetime
-Find Friends,Apple,com.apple.mobileme.fmf1
-Find iPhone,Apple,com.apple.mobileme.fmip1
-Game Center,Apple,com.apple.gamecenter
-GarageBand,Apple,com.apple.mobilegarageband
-Health,Apple,com.apple.Health
-iBooks,Apple,com.apple.iBooks
-iTunes Store,Apple,com.apple.MobileStore
-iTunes U,Apple,com.apple.itunesu
-Keynote,Apple,com.apple.Keynote
-Mail,Apple,com.apple.mobilemail
-Maps,Apple,com.apple.Maps
-Messages,Apple,com.apple.MobileSMS
-Music,Apple,com.apple.Music
-News,Apple,com.apple.news
-Notes,Apple,com.apple.mobilenotes
-Numbers,Apple,com.apple.Numbers
-Pages,Apple,com.apple.Pages
-Photo Booth,Apple,com.apple.Photo-Booth
-Photos,Apple,com.apple.mobileslideshow
-Podcasts,Apple,com.apple.podcasts
-Reminders,Apple,com.apple.reminders
-Safari,Apple,com.apple.mobilesafari
-Settings,Apple,com.apple.Preferences
-Stocks,Apple,com.apple.stocks
-Tips,Apple,com.apple.tips
-Videos,Apple,com.apple.videos
-VoiceMemos,Apple,com.apple.VoiceMemos
-Wallet,Apple,com.apple.Passbook
-Watch,Apple,com.apple.Bridge
-Weather,Apple,com.apple.weather
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
 ```
@@ -355,26 +380,30 @@ Weather,Apple,com.apple.weather
 
 
 
-## <a name="custom-policy-settings"></a>Özel ilke ayarları
+## Özel ilke ayarları
+<a id="custom-policy-settings" class="xliff"></a>
 
 [Apple Configurator aracını](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) kullanarak oluşturduğunuz ayarları iOS cihazlarına dağıtmak için Microsoft Intune **iOS özel ilkesini** kullanın. Bu araç, bu cihazların işlemini denetleyen ve bunları bir yapılandırma profiline dışarı aktaran birçok ayar oluşturmanızı sağlar. Daha sonra bu yapılandırma profilini bir Intune iOS özel ilkesine içeri aktarabilir ve ayarları kuruluşunuzdaki kullanıcılara ve cihazlara dağıtabilirsiniz.
 
 Bu özellik, Intune genel yapılandırma ilkeleriyle yapılandırılamayan iOS ayarlarını dağıtmanıza olanak sağlar.
 
-### <a name="prerequisites"></a>Önkoşullar
+### Önkoşullar
+<a id="prerequisites" class="xliff"></a>
 Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya cihazlara dağıtmak istediğiniz ayarları içeren bir yapılandırma dosyası oluşturmuş olmanız gerekir. [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)‘dan Apple Configurator’ı indirebilir ve Apple Configurator hakkında bilgi edinebilirsiniz.
 
 > [!NOTE]
 > Intune, bir iOS özel ilkesindeki tek tek ayarların uyumluluğunu raporlamaz. Ancak, ilkenin genel uyumluluğu raporlanır.
 
-### <a name="general-settings"></a>Genel ayarlar
+### Genel ayarlar
+<a id="general-settings" class="xliff"></a>
 
 |Ayar adı|Ayrıntılar|
     |----------------|--------------------|
     |**Ad**|Intune konsolunda tanımlamanıza yardımcı olması için iOS özel ilkesine benzersiz bir ad girin.|
     |**Açıklama**|iOS özel ilkesine genel bakış ve onu bulmanıza yardımcı olacak diğer ilgili bilgileri sunan bir açıklama sağlayın.|
 
-### <a name="custom-settings"></a>Özel ayarlar
+### Özel ayarlar
+<a id="custom-settings" class="xliff"></a>
 
 |Ayar adı|Ayrıntılar|
     |----------------|--------------------|
@@ -382,5 +411,6 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 |**Yapılandırma profili dosyası**|**İçeri aktar**’ı seçin ve sonra Apple Configurator’ı kullanarak oluşturduğunuz yapılandırma profiline gidin. **Not:** Apple Configurator aracından dışarı aktardığınız ayarların, iOS özel ilkesini dağıttığınız cihazlardaki iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların nasıl çözümleneceği hakkında bilgi için, [Apple Developer](https://developer.apple.com/) web sitesinde **Yapılandırma Profili Başvurusu** ve **Mobil Cihaz Yönetim Protokolü Başvurusu** öğelerini arayın.|
     |**Yapılandırma profili ayrıntıları**|İçeri aktardığınız yapılandırma profili için XML kodunu görüntüleyin.|
 
-### <a name="see-also"></a>Ayrıca bkz.
+### Ayrıca bkz.
+<a id="see-also" class="xliff"></a>
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
