@@ -2,6 +2,7 @@
 ## [Azure portalı nedir?](what-is-intune.md)
 ## [Eğitim için Intune nedir?](introduction-intune-education.md)
 ## [Azure Intune özellikleri](ui-changes.md)
+### [Gruplarda yapılan değişiklikler](groups-get-started.md)
 ## [Ücretsiz deneme için kaydolma](free-trial-sign-up.md)
 ## [Yenilikler](whats-new.md)
 ### [Uygulama kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md)
@@ -16,12 +17,13 @@
 ## [Yaygın senaryolar](common-scenarios.md)
 ## [Bilinen sorunlar](known-issues.md)
 ## [Destek alın](get-support.md)
-## [Intune hizmeti açıklaması](microsoft-intune-service-description.md)
 
-<!--# Get started
-## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
-## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
-## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
+# [Başlarken](get-started-evaluation.md)
+## [Grup oluşturma](get-started-groups.md)
+## [Kullanıcı oluşturma](get-started-users.md)
+## [Cihazları kaydetme](get-started-enroll.md)
+## [İlke atama](get-started-policies.md)
+## [Uygulamaları atama](get-started-apps.md)
 
 
 # Dağıtım planlama
@@ -63,20 +65,21 @@
 ### [Intune’da oturum açma](account-sign-up.md)
 ### [Etki alanlarını yapılandırma](custom-domain-name-configure.md)
 ### [Kullanıcı ekleme](users-permissions-add.md)
+### [Grup ekleme](groups-add.md)
 ### [Lisans atama](licenses-assign.md)       
 ### [Şirket Portalı’nı özelleştirme](company-portal-customize.md)     
 ### [MDM yetkilisini ayarlama](mdm-authority-set.md)
 
 ## [Cihazları kaydetme](device-enrollment.md)
-### Önkoşullar
-#### [Hüküm ve koşulları ayarlama](terms-and-conditions-create.md)
-#### [Kısıtlamaları ayarlama](enrollment-restrictions-set.md)
-#### [Bir MDM anında iletme sertifikası alma](apple-mdm-push-certificate-get.md)
-#### [Kurumsal tanımlayıcılar ekleme](corporate-identifiers-add.md)
-#### [Cihaz kayıt yöneticisi ayarlama](device-enrollment-manager-enroll.md)
+### Kurulum seçenekleri
+#### [Hüküm ve koşullar](terms-and-conditions-create.md)
+#### [Kısıtlamalar](enrollment-restrictions-set.md)
+#### [Apple MDM anında iletme sertifikası](apple-mdm-push-certificate-get.md)
+#### [Kurumsal tanımlayıcılar](corporate-identifiers-add.md)
+#### [Cihaz kayıt yöneticisi](device-enrollment-manager-enroll.md)
 #### [Cihazları gruplarla eşleme](device-group-mapping.md)
-### [Windows kaydını ayarlama](windows-enroll.md)
-#### [Otomatik kayıt](windows-enroll.md)
+### Windows kaydını ayarlama
+#### [Windows kaydı](windows-enroll.md)
 #### [Toplu kayıt](windows-bulk-enroll.md)
 ### [Android kaydını ayarlama](android-enroll.md)
 ### iOS kaydını ayarlama
@@ -84,7 +87,6 @@
 #### [Apple Okul Yöneticisi ile](apple-school-manager-set-up-ios.md)
 #### [Apple Configurator ile](apple-configurator-setup-assistant-enroll-ios.md)
 ### [macOS kaydını ayarlama](macos-enroll.md)
-### [Kullanıcıları bilgilendirme](end-user-educate.md)
 
 ## [Cihazları yönetme](device-management.md)
 ### [Cihazı silme](devices-wipe.md)
@@ -97,11 +99,13 @@
 ### [Şirket verilerini kaldır](device-company-data-remove.md)
 ### [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
 ### [Cihazı yeniden başlatma](device-restart.md)
+### [Geçerli kullanıcının oturumunu kapatma](device-logout-user.md)
+### [Kullanıcı kaldırma](device-remove-user.md)
 ### [Android için uzaktan denetim](device-profile-android-teamviewer.md)
+### [Windows 10 PIN sıfırlama](device-windows-pin-reset.md)
 ### [Cihaz envanterini inceleme](device-inventory.md)
 
 ## [Kullanıcıları yönetme](user-management.md)
-### [Grupları kullanmaya başlama](groups-get-started.md)
 <!--### Add and delete users -->
 
 ## [Uygulamaları yönetme](app-management.md)
@@ -128,16 +132,6 @@
 #### [iOS e-Kitapları](vpp-ebooks-ios.md)
 ### [Şirket Portalı uygulamasını yapılandırma](company-portal-app.md)
 ### [Managed Browser’ı yapılandırma](app-configuration-managed-browser.md)
-## [Uygulama koruma ilkeleri kullanma](app-protection-policies.md)
-### [WIP uygulama koruma ilkelerine hazırlanma](app-protection-policies-configure-windows-10.md)
-### [WIP uygulama koruma ilkelerini oluşturma ve atama](windows-information-protection-policy-create.md)
-### [Android ayarları](app-protection-policy-settings-android.md)
-### [iOS ayarları](app-protection-policy-settings-ios.md)
-### [Uygulama koruma ilkelerini doğrulama](app-protection-policies-validate.md)
-### [Uygulama koruma kullanıcı durumunu izleme](app-protection-policies-monitor.md)
-### [WIP uygulama koruma ilkelerine hazırlanma](app-protection-policies-configure-windows-10.md)
-### [WIP uygulama koruma ilkelerini oluşturma ve atama](windows-information-protection-policy-create.md)
-### [iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md)
 
 ## [Cihazları yapılandırma](device-profiles.md)
 ### [Cihaz profillerini yapılandırma](device-profile-create.md)
@@ -175,13 +169,16 @@
 #### [macOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 ve Windows 10](wi-fi-settings-import-windows-8-1.md)
 ### [Windows 10 sürüm yükseltme ayarlarını yapılandırma](edition-upgrade-configure-windows-10.md)
+### [Windows 10 Endpoint Protection](endpoint-protection-windows-10.md)
 ### [Windows 10 Education ayarlarını yapılandırma](education-settings-configure.md)
 ### [iOS eğitim ayarlarını yapılandırma](education-settings-configure-ios.md)
+### [iOS eğitim paylaşılan cihazlarını yapılandırma](education-settings-configure-ios-shared.md)
 ### [İş ayarları için Windows Update’i yapılandırma](windows-update-for-business-configure.md)
 ### [Sertifikaları yapılandırma](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
 ### [Windows Bilgi Koruması ayarlarını yapılandırma](windows-information-protection-configure.md)
+### [Telekom giderlerini izleme](telecom-expenses-monitor.md)
 ### [Profiller atama](device-profile-assign.md)
 ### [Profilleri izleme](device-profile-monitor.md)
 ### [Profil sorunlarını giderme](device-profile-troubleshoot.md)
@@ -192,48 +189,65 @@
 ### [Android for Work ilkesi oluşturma](compliance-policy-create-android-for-work.md)
 ### [iOS ilkesi oluşturma](compliance-policy-create-ios.md)
 ### [Windows ilkesi oluşturma](compliance-policy-create-windows.md)
-<!--### Create Actions for noncompliance-->
+### Uyumsuzluğa yönelik Eylem oluşturma
 ### [Cihaz uyumluluğunu izleme](compliance-policy-monitor.md)
 
 ## [Koşullu erişimi ayarlama](conditional-access.md)
 ### [Koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md)
-### [Uygulama tabanlı koşullu erişim](app-based-conditional-access-intune.md)
 ### [Şirket içi Exchange bağlayıcısını yükleme](exchange-connector-install.md)
 ### [Koşullu erişim ilkesi oluşturma ve atama](conditional-access-exchange-create.md)
-### [Exchange Online için uygulama tabanlı koşullu erişim ayarlama](app-based-conditional-access-intune-exchange-online-create.md)
-### [SharePoint Online için uygulama tabanlı koşullu erişim ayarlama](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [Klasik Intune portalından koşullu erişim ilkelerini yeniden atama](conditional-access-intune-reassign.md)
+### [Uygulamaya bağlı koşullu erişim](app-based-conditional-access-intune.md)
+### [Uygulama tabanlı koşullu erişim ayarlama](app-based-conditional-access-intune-create.md)
 ### [ADAL ve Intune](app-modern-authentication-block.md)
 ### [Koşullu erişim uyumluluğu izleyin](conditional-access-exchange-monitor.md)
 
-## Verileri ve cihazları koruma
+## Uygulama ve cihaz verilerini koruma
+
+### [Uygulama koruma ilkeleri kullanma](app-protection-policy.md)
+#### [Uygulama koruma ilkeleri oluşturma](app-protection-policies.md)
+##### [Android ayarları](app-protection-policy-settings-android.md)
+##### [iOS ayarları](app-protection-policy-settings-ios.md)
+#### [Uygulama koruma ilkelerini doğrulama](app-protection-policies-validate.md)
+#### [Uygulama koruma kullanıcı durumunu izleme](app-protection-policies-monitor.md)
+#### [WIP uygulama koruma ilkelerine hazırlanma](app-protection-policies-configure-windows-10.md)
+#### [WIP uygulama koruma ilkelerini oluşturma ve atama](windows-information-protection-policy-create.md)
+#### [iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md)
+
 
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
 #### [Lookout’u ayarlama](lookout-mobile-threat-defense-connector.md)
-##### [Lookout ve Intune tümleştirmesi](lookout-mtd-subscription-setup.md)
-##### [Intune'da Lookout’u etkinleştirme](lookout-mtd-connector-enable.md)
-##### [Lookout ile kullanılacak uygulamaları dağıtma](lookout-for-work-app-configure-deploy.md)
-##### [Lookout cihaz uyumluluğu ilkesi](lookout-device-compliance-policy-create.md)
-
+##### [Lookout ve Intune tümleştirmesi](lookout-mtd-connector-integration.md)
 #### [Skycure’ü ayarlama](skycure-mobile-threat-defense-connector.md)
 ##### [Azure AD SSO’yu yapılandırma](skycure-azure-sso-configure.md)
-##### [iOS uygulama yapılandırma ilkesini indirme](skycure-ios-app-configuration-policy-download.md)
-##### [Uygulamaları ekleme ve yapılandırma](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
-##### [Skycure ile kullanılacak uygulamaları dağıtma](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
+##### [Bir iOS uygulama yapılandırma ilkesi indirme](skycure-ios-app-configuration-policy-download.md)
 ##### [Skycure ve Intune ile tümleştirmesi](skycure-mtd-connector-integration.md)
-##### [Intune'da Skycure’u etkinleştirme](skycure-mtd-connector-enable.md)
-##### [Skycure cihaz uyumluluğu ilkesi](skycure-device-compliance-policy-create.md)
+#### [MTD uygulamaları ekleme](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [Intune’da MTD’yi etkinleştirme](mtd-connector-enable.md)
+#### [Bir MTD cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)
+
+### [Ağ erişim kontrolü](network-access-control-integrate.md)
+
+
+<!-- ### Set up mobile threat protection        
+#### Prerequisites
+#### Set up Lookout
+#### Set up Skycure
+#### Enable mobile threat protection in Intune
+#### Create a mobile threat protection compliance policy -->
 
 ### [Windows Hello'yu ayarlama](windows-hello.md)        
-<!-- ### Protect devices with remote actions        -->
+<!-- ### Protect devices with remote actions -->
 
 ## [Rolleri yönetme](role-based-access-control.md)
 <!-- ### Create a custom role
 ### Assign a role -->
-### [Yardım masası işleç rolünü kullanma](help-desk-operators.md)
+
 <!-- ### Custom role settings -->
 
 ## [Yazılım aracısıyla bilgisayarları yönetme](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [Bilgisayar yönetimini karşılaştırma](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
 ### [Bilgisayar istemcisini yükleme](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
 ### [Genel bilgisayar yönetim görevleri](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
 #### [Bilgisayar ilkeleri](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
@@ -249,10 +263,16 @@
 ### [Lisans sözleşmelerini yönetme](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
 ### [İlke çakışmalarını çözme](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
 
+## [Kullanıcıları bilgilendirme](end-user-educate.md)
+### [Şirket Portalı mesajları](end-user-company-portal-messages.md)
+### [Android’de etkinleşitirilmiş MAM uygulamaları](end-user-mam-apps-android.md)
+### [iOS’te etkinleşitirilmiş MAM uygulamaları](end-user-mam-apps-ios.md)
+### [Android uygulamalarını edinme](end-user-apps-android.md)
+### [iOS uygulamalarını edinme](end-user-apps-ios.md)
+### [Windows uygulamalarını edinme](end-user-apps-windows.md)
 
 # İzleme ve sorun giderme
-## [Telekom giderlerini izleme](telecom-expenses-monitor.md)
-
+## [Yardım masası işleç rolünü kullanma](help-desk-operators.md)
 
 # Geliştirme ve özelleştirme
 ## [Özel cihaz ayarlarını yapılandırma](custom-settings-configure.md)
@@ -277,6 +297,5 @@
 ### [Intune Uygulama SDK’sı Xamarin bileşeni](app-sdk-xamarin.md)
 ## [Intune Grafik API'sini kullanma](intune-graph-apis.md)
 ## [Intune Grafik API’si](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-
 
 # [Sözlük](intune-glossary.md)
