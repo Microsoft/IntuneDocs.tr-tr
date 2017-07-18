@@ -118,6 +118,7 @@
 #### [Windows Mağazası uygulamaları](store-apps-windows.md)
 #### [Windows LOB uygulamaları](lob-apps-windows.md)
 #### [Android for Work uygulamalarını](apps-add-android-for-work.md)
+#### [ Windows 10 için Office 365 uygulamaları](apps-add-office365.md)
 ### [Uygulamaları atama](apps-deploy.md)
 ### [Uygulamaları izleme](apps-monitor.md)
 ### [iOS yapılandırma profillerini kullanma](app-configuration-policies-use-ios.md)
