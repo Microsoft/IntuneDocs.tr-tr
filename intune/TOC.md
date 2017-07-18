@@ -38,9 +38,9 @@
 ### [Uygulama](planning-guide-onboarding.md)
 ### [Sınama ve doğrulama](planning-guide-test-validation.md)
 ### [Ek kaynaklar](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## Senaryo uygulama kılavuzları
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -62,16 +62,15 @@
 ## [Intune’u ayarlama](setup-steps.md)
 ### [Önkoşullar](supported-devices-browsers.md)
 #### [Ağ bant genişliği kullanımı](network-bandwidth-use.md)
-### [Intune’da oturum açma](account-sign-up.md)
+### [Intune'da oturum açma](account-sign-up.md)
 ### [Etki alanlarını yapılandırma](custom-domain-name-configure.md)
-### [Kullanıcı ekleme](users-permissions-add.md)
+### [Kullanıcı ekleme](users-add.md)
 ### [Grup ekleme](groups-add.md)
-### [Lisans atama](licenses-assign.md)       
-### [Şirket Portalı’nı özelleştirme](company-portal-customize.md)     
+### [Lisans atama](licenses-assign.md)
 ### [MDM yetkilisini ayarlama](mdm-authority-set.md)
 
 ## [Cihazları kaydetme](device-enrollment.md)
-### Kurulum seçenekleri
+### [Kayıt seçenekleri](enrollment-options.md)
 #### [Hüküm ve koşullar](terms-and-conditions-create.md)
 #### [Kısıtlamalar](enrollment-restrictions-set.md)
 #### [Apple MDM anında iletme sertifikası](apple-mdm-push-certificate-get.md)
@@ -105,7 +104,6 @@
 ### [Windows 10 PIN sıfırlama](device-windows-pin-reset.md)
 ### [Cihaz envanterini inceleme](device-inventory.md)
 
-## [Kullanıcıları yönetme](user-management.md)
 <!--### Add and delete users -->
 
 ## [Uygulamaları yönetme](app-management.md)
@@ -219,32 +217,24 @@
 
 #### [Lookout’u ayarlama](lookout-mobile-threat-defense-connector.md)
 ##### [Lookout ve Intune tümleştirmesi](lookout-mtd-connector-integration.md)
+
 #### [Skycure’ü ayarlama](skycure-mobile-threat-defense-connector.md)
-##### [Azure AD SSO’yu yapılandırma](skycure-azure-sso-configure.md)
-##### [Bir iOS uygulama yapılandırma ilkesi indirme](skycure-ios-app-configuration-policy-download.md)
 ##### [Skycure ve Intune ile tümleştirmesi](skycure-mtd-connector-integration.md)
+
+#### [Denetim Noktasını Kurma](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [Denetim Noktası ve Intune tümleştirmesi](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [MTD uygulamaları ekleme](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [Intune’da MTD’yi etkinleştirme](mtd-connector-enable.md)
 #### [Bir MTD cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)
 
 ### [Ağ erişim kontrolü](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection        
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [Windows Hello'yu ayarlama](windows-hello.md)        
 <!-- ### Protect devices with remote actions -->
 
 ## [Rolleri yönetme](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [Yazılım aracısıyla bilgisayarları yönetme](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Bilgisayar yönetimini karşılaştırma](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
