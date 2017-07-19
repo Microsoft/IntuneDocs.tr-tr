@@ -15,6 +15,7 @@
 ### [Cihaz yaşam döngüsü](device-lifecycle.md)
 ### [Uygulama yaşam döngüsü](app-lifecycle.md)
 ## [Yaygın senaryolar](common-scenarios.md)
+## [Hizmet Açıklaması](microsoft-intune-service-description.md)
 ## [Bilinen sorunlar](known-issues.md)
 ## [Destek alın](get-support.md)
 
@@ -81,10 +82,10 @@
 #### [Windows kaydı](windows-enroll.md)
 #### [Toplu kayıt](windows-bulk-enroll.md)
 ### [Android kaydını ayarlama](android-enroll.md)
-### iOS kaydını ayarlama
-#### [Cihaz Kaydı Programı ile](device-enrollment-program-enroll-ios.md)
-#### [Apple Okul Yöneticisi ile](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator ile](apple-configurator-setup-assistant-enroll-ios.md)
+### [iOS kaydını ayarlama](ios-enroll.md)
+#### [Cihaz kaydı programı](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [macOS kaydını ayarlama](macos-enroll.md)
 
 ## [Cihazları yönetme](device-management.md)
