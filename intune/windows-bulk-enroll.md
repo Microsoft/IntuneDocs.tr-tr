@@ -1,12 +1,12 @@
 ---
-title: "Windows 10 için toplu kayıt | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "Windows 10 için toplu kayıt"
+titleSuffix: Intune on Azure
 description: "Microsoft Intune için toplu kayıt paketi oluşturma"
 keywords: 
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/2017
+ms.date: 06/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +14,21 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f8d1ff7a9a8bd804d4fe40f8aec7e7d0bf998e35
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 4e9dae27b981533dfff2080a5b7f9ca961509cd8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bir yönetici olarak çok sayıda yeni Windows cihazını Azure Active Directory ve Intune’a dahil edebilirsiniz. Azure AD kiracınıza cihazları toplu kaydetmek için Windows Yapılandırma Tasarımcısı (WCD) uygulaması ile bir sağlama paketi oluşturursunuz. Sağlama paketini şirkete ait cihazlara uygulamak, cihazları Azure AD kiracınıza dahil eder ve Intune yönetimine kaydeder. Paket uygulandıktan sonra, Azure AD kullanıcılarınızın oturum açması için hazırdır.
+Bir yönetici olarak çok sayıda yeni Windows cihazını Azure Active Directory ve Intune’a dahil edebilirsiniz. Azure AD kiracınıza cihazları toplu kaydetmek için Windows Yapılandırma Tasarımcısı (WCD) uygulaması ile bir sağlama paketi oluşturursunuz. Sağlama paketini şirkete ait cihazlara uygulamak, cihazları Azure AD kiracınıza dahil eder ve Intune yönetimine kaydeder. Paket uygulandıktan sonra, Azure AD kullanıcılarınızın oturum açması için hazır hale gelir.
 
 Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan Intune ilkelerini ve gerekli uygulamaları alırlar. Self Servis ve Şirket Portalı senaryoları şu anda desteklenmiyor.
 
-## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows cihazları toplu kayıt için önkoşullar
+## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows cihazları toplu kaydetme önkoşulları
 
 Windows cihazları toplu kaydetmek için aşağıdakiler gereklidir:
 
@@ -49,19 +48,19 @@ Windows cihazları toplu kaydetmek için aşağıdakiler gereklidir:
   - **Proje klasörü** - Projenizin kaydedileceği yer
   - **Açıklama** - Proje için isteğe bağlı bir açıklama ![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-name.png)
 
-4.    Cihazlarınız için benzersiz bir ad girin. Adlar bir seri numarası (%%SERIAL%%) veya rastgele bir karakter kümesi içerebilir. İsteğe bağlı olarak Windows sürümünü yükseltiyor, cihazı paylaşımlı kullanım için yapılandırıyor ve önceden yüklenmiş yazılımları kaldırıyorsanız bir ürün anahtarı girebilirsiniz.
+4.  Cihazlarınız için benzersiz bir ad girin. Adlar bir seri numarası (%%SERIAL%%) veya rastgele bir karakter kümesi içerebilir. İsteğe bağlı olarak Windows sürümünü yükseltiyor, cihazı paylaşımlı kullanım için yapılandırıyor ve önceden yüklenmiş yazılımları kaldırıyorsanız bir ürün anahtarı girebilirsiniz.
 ![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-device.png)
 
-5.    İsteğe bağlı olarak, cihazları ilk kez başlattığınızda bağlanacakları Wi-Fi ağını yapılandırabilirsiniz.  Yapılandırılmadıysa, cihaz ilk başlatıldığında kablolu bir ağ bağlantısı gerekir.
+5.  İsteğe bağlı olarak, cihazları ilk kez başlattığınızda bağlanacakları Wi-Fi ağını yapılandırabilirsiniz.  Yapılandırılmadıysa, cihaz ilk başlatıldığında kablolu bir ağ bağlantısı gerekir.
 ![Windows Yapılandırma Tasarımcısı uygulamasında Ağ SSID’si ve Ağ türü seçeneklerini içeren Wi-Fi etkinleştirme ekran görüntüsü](media/bulk-enroll-network.png)
 
-6.    **Azure AD'ye Kaydet**’i seçin, bir **Toplu Belirteç Süre Sonu** tarihi girin ve ardından **Toplu Belirteç Al**’ı seçin.
+6.  **Azure AD'ye Kaydet**’i seçin, bir **Toplu Belirteç Süre Sonu** tarihi girin ve ardından **Toplu Belirteç Al**’ı seçin.
 ![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-account.png)
 
 7. Bir toplu belirteç almak için Azure AD kimlik bilgilerinizi sağlayın.
 ![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-cred.png)
 
-8.    **Toplu Belirteç** başarıyla alındığında **İleri**’ye tıklayın.
+8.  **Toplu Belirteç** başarıyla alındığında **İleri**’ye tıklayın.
 
 9. İsteğe bağlı olarak, **Uygulama ekleyebilir** ve **Sertifika ekleyebilirsiniz**. Bu uygulamalar ve sertifikalar cihazda sağlanır.
 
@@ -74,7 +73,7 @@ Windows cihazları toplu kaydetmek için aşağıdakiler gereklidir:
 
 2. Sağlama paketini cihaza nasıl uygulayacağınızı seçin.  Sağlama paketi bir cihaza aşağıdaki yollardan biriyle uygulanabilir:
  - Sağlama paketini bir USB sürücüsüne kaydedin, USB sürücüsünü toplu kaydetmek istediğiniz cihaza yerleştirin ve ilk kurulum sırasında uygulayın
- - Sağlama paketini bir ağ klasörüne yerleştirin ve ilk kurulum sonrasında toplu kaydetmek istediğiniz cihaza yerleştirmek üzere uygulayın
+ - Sağlama paketini bir ağ klasörüne yerleştirin ve ilk kurulum sonrasında toplu kaydetmek istediğiniz cihaza uygulayın
 
  Sağlama paketi uygulama ile ilgili adım adım yönergeler için bkz. [Sağlama paketi uygulama](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
@@ -85,8 +84,14 @@ Windows cihazları toplu kaydetmek için aşağıdakiler gereklidir:
 
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Windows toplu kayıt için sorun giderme
 
+### <a name="provisioning-issues"></a>Sağlama sorunları
 Sağlama, yeni Windows cihazlarda kullanılmak üzere tasarlanmıştır. Sağlama hataları cihazın fabrika ayarlarına sıfırlanmasını veya bir önyükleme görüntüsünden kurtarılmasını gerektirebilir. Bu örneklerde sağlama hatalarının bazı nedenleri açıklanır:
 
 - Yerel bir hesap oluşturmayan bir Active Directory etki alanına veya Azure Active Directory kiracısına katılmayı deneyen bir sağlama paketinin, ağ bağlantısı olmaması nedeniyle etki alanına katılma işlemi başarısız olursa cihaza ulaşılamayabilir.
 - Sağlama paketi tarafından çalıştırılan betikler sistem bağlamında çalışır ve cihazın dosya sistemi ve yapılandırmalarında rastgele değişiklikler yapabilir. Kötü amaçlı veya hatalı bir betik, cihazın yalnızca yeniden görüntü oluşturma veya fabrika ayarlarına sıfırlama yollarıyla kurtarılabilecek bir duruma gelmesine neden olabilir.
 
+### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Toplu kayıt ve Şirket Portalı ile ilgili sorunlar
+Bir kullanıcı, daha önce Şirket Portalı kullanılarak toplu olarak kaydedilmiş bir cihazı kaydetmeye çalışırsa cihazının kurulum veya kayıt gibi ek eylemler gerektirdiğine dair uyarılar alır. Cihaz kaydedilir ancak kayıt, Şirket Portalı uygulaması veya web sitesi tarafından tanınmaz.
+
+### <a name="conditional-access"></a>Koşullu erişim
+Koşullu erişim, toplu kayıt kullanılarak kaydedilen Windows cihazlar için kullanılamaz.

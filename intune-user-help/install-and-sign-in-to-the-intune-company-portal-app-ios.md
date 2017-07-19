@@ -5,28 +5,23 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d4491a6068ebde632b8af0dfa6bee500def8e4b2
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7386d257b8e1c9fb4b211e877ad5f599743ca9e4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Şirket Portalı uygulamasını yükleme ve uygulamada oturum açma
 
 Şirket Portalı, iOS cihazınıza yükleyebileceğiniz ve şirketinizin veya okulunuzun uygulamalarına, e-postasına ve ağına erişmenizi sağlayacak bir uygulamadır.  Erişim sağlayabilmek için önce Şirket Portalı uygulamasını yüklemeli ve sonra da uygulamayı kullanarak cihazınızı Microsoft Intune’a kaydetmelisiniz. Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yüklediğinizde ve cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
@@ -39,7 +34,6 @@ ms.lasthandoff: 05/23/2017
 
 3.  Şirket Portalı uygulamasını açın, iş veya okul e-posta adresinizi ve parolanızı girin ve **Oturum aç**’a dokunun.
 
-    Şirket Portalı uygulamasında ilk kez oturum açıyorsanız ve şirketinizde veya okulunuzda Intune kullanılıyorsa, cihazınızı Intune’a kaydetmeniz istenir. Kaydetmek için, [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-macos.md) başlığı altında verilen adımları izleyin.
+    Şirket Portalı uygulamasında ilk kez oturum açıyorsanız ve şirketinizde veya okulunuzda Intune kullanılıyorsa, cihazınızı Intune’a kaydetmeniz istenir. Kaydolmak için [iOS cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-ios.md) veya [macOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-macos.md) başlığı altında verilen adımları izleyin. Ayrıca [başka bir cihaz kullanarak da oturum açabilirsiniz](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device). 
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

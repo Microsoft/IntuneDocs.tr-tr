@@ -1,7 +1,7 @@
 ---
 title: "Apple Configurator seri numaraları ekleme"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Learn Apple Configurator kullanarak şirkete ait iOS cihazlarına seri numaraları eklemeyi öğrenin."
+titleSuffix: Intune on Azure
+description: "Apple Configurator kullanarak şirkete ait iOS cihazlarına seri numara eklemeyi öğrenin.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apple-configurator-serial-numbers"></a>Apple Configurator seri numaraları ekleme
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 [Kurulum Yardımcısı’yla Apple Configurator kullanarak şirkete ait iOS cihazlarını kaydetmek](apple-configurator-setup-assistant-enroll-ios.md) istediğinizde seri numaralarını Intune’a eklemek için bu adımları kullanın. Seri numaralarını birer birer ekleyebileceğiniz gibi, seri numaralarını içeren bir virgülle ayrılmış değerler (CSV) dosyasını da karşıya yükleyebilirsiniz. Seri numaralarını ekledikten sonra, bunlara profil atayabilirsiniz. Profil, cihazlara uygulamak istediğiniz belirli yönetim ayarlarını içerir.
 
@@ -76,4 +73,3 @@ Cihaz seri numaralarını iki durumdan birinde olabilir:
 **Seri numarasının durumunu görüntülemek için**
 
 **Apple Configurator Seri Numaraları** dikey penceresinde, durumunu görmek istediğiniz seri numarasını seçin ve **Durum** öğesinin altına bakın.
-

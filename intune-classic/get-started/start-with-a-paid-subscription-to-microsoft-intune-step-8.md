@@ -14,15 +14,12 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-for-mobile-devices"></a>Mobil cihaz kaydını etkinleştirme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,8 +30,7 @@ Intune ile mobil cihaz yönetimini ayarlamak için öncelikle hesabınızla ili�
 
 ## <a name="enable-device-enrollment"></a>Cihaz kaydını etkinleştirme
 
-1. **Intune'u mobil cihaz yönetimi yetkiliniz yapma**
-    [Intune yönetici konsolunda](https://manage.microsoft.com/), **Yönetim** > **Mobil Cihaz Yönetimi**'ni seçin ve ardından **Görevler** altında **MDM Yetkilisini Ayarla**'yı seçin.  
+1. **Intune’u mobil cihaz yönetimi yetkiliniz yapma** [Intune yönetim konsolunda](https://manage.microsoft.com/) **Yönetici** > **Mobil Cihaz Yönetimi**’ni ve ardından **Görevler** altında bulunan **MDM Yetkilisi Ayarla**’yı seçin.  
 
 2. MDM Yetkilisi iletişim kutusunda **Evet**’i seçin.
 
@@ -70,4 +66,3 @@ Tebrikler! *Intune hızlı başlangıç kılavuzunun* son adımını da tamamlam
 
 >[!div class="step-by-step"]
 >[&larr; **Cihazları kaydetme**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Yapılandırma sonrası görevler** &rarr;](.\post-configuration-tasks.md)  
-

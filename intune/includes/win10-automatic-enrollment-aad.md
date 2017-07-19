@@ -34,6 +34,9 @@ Otomatik kayıt, iş hesaplarını kişisel cihazlarına eklerken veya şirkete 
     - **MDM Bulma URL’si**
     - **MDM Uyumluluğu URL’si**
 
+    > [!IMPORTANT]
+    > Bir kullanıcı, otomatik MDM kaydı ve MAM etkin bir grubun üyesiyse ve kişisel cihazını iş yerine eklemeye çalışırsa bu durumda yalnızca MAM etkin olacaktır. 
+
 6. **Kaydet**’i seçin.
 
 Varsayılan olarak, iki faktörlü kimlik doğrulaması hizmet için etkin değildir. Ancak, bir cihaz kaydederken iki faktörlü kimlik doğrulaması önerilir. Bu hizmet için iki faktörlü kimlik doğrulaması gerektirmeden önce, Azure Active Directory'de bir iki faktörlü kimlik doğrulaması sağlayıcısı yapılandırmanız ve çok faktörlü kimlik doğrulaması için kullanıcı hesaplarınızı yapılandırmanız gerekir. Bkz. [Azure Multi-Factor Authentication Sunucusunu kullanmaya başlama](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

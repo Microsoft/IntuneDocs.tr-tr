@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Intune için Intune rolleri (RBAC)"
+title: Intune ile RBAC
 titleSuffix: Intune Azure preview
 description: "Intune Azure önizlemesi: RBAC’nin, işlem gerçekleştirebilecek ve değişiklik yapabilecek kişileri denetlemenize nasıl yardımcı olduğunu öğrenin."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,161 +15,119 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9a6dfde1d02313e51f59d4fd101a175f347f6cec
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="role-based-administration-control-rbac-with-intune"></a>Intune ile rol tabanlı yönetim denetimi (RBAC)
 
-# <a name="intune-roles-rbac-for-microsoft-intune"></a>Microsoft Intune için Intune rolleri (RBAC)
+RBAC, kuruluşunuzda çeşitli Intune görevlerini kimin gerçekleştirebileceğini ve bu görevlerin kime uygulanacağını denetlemenize yardımcı olur. Bazı yaygın Intune senaryolarını kapsayan yerleşik rolleri kullanabileceğiniz gibi, kendi rollerinizi de oluşturabilirsiniz. Bir rol, şunlarla tanımlanır:
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+- **Rol tanımı**: Rolün adı, yönettiği kaynaklar ve her kaynak için verilen izinler.
+- **Üyeler**: İzinlerin verildiği kullanıcı grupları.
+- **Kapsam**: Üyelerin yönetebileceği kullanıcı veya cihaz grupları.
+- **Atama**: Rol; tanım, üyeler ve kapsam yapılandırıldığında atanır.
 
-Basitçe açıklamak gerekirse, Intune **rolleri** (veya RBAC) çeşitli Intune eylemlerini kimlerin gerçekleştirebileceğini ve bu eylemlerin kimlere uygulanacağını denetlemenize yardımcı olur. Bazı yaygın Intune senaryolarını kapsayan yerleşik rolleri kullanabileceğiniz gibi, kendi rollerinizi de oluşturabilirsiniz.
+![Intune RBAC örneği](./media/intune-rbac-1.PNG)
 
-Bir rol, şunlarla tanımlanır:
+Yeni Intune portalından başlayarak **Azure Active Directory (Azure AD)**, Intune ile kullanılabilecek iki Dizin Rolü sağlar. Bu rollere Intune'da tüm etkinlikleri gerçekleştirmek için tam izin verilir:
 
-- **Tanım** - Rolün adı ve yapılandırdığı izinler.
-- **Üyeler** - Bu izinlerin verileceği kullanıcı veya kullanıcılar grubu.
-- **Kapsam** - Belirtilen kişinin (üye) yönetebileceği kullanıcılar veya cihazlar.
-- **Atama** - Tanım, üyeler ve kapsam yapılandırıldığında, rol atanır.
+- **Genel Yönetici:** Bu roldeki kullanıcılar, Azure AD'deki tüm yönetim özelliklerine, ayrıca Azure AD federasyonu kullanan Exchange Online, SharePoint Online ve Skype Kurumsal Çevrimiçi Sürüm gibi tüm hizmetlere erişebilir. Azure AD kiracısı olarak kaydolan kişi genel yönetici olur. Yalnızca genel yöneticiler diğer Azure AD yönetici rollerini atayabilir. Kuruluşunuzda birden fazla genel yönetici olabilir. Genel yöneticiler, tüm kullanıcıların ve diğer tüm yöneticilerin parolalarını sıfırlayabilir.
+
+- **Intune Hizmet Yöneticisi:** Bu roldeki kullanıcıların, hizmet mevcut olduğunda Intune'da genel izinleri vardır. Ayrıca bu rol kullanıcıları ve cihazları yönetme ve grup oluşturma ve yönetme olanağı sağlar.
+
+- **Koşullu Erişim Yöneticisi:** Bu roldeki kullanıcıların koşullu erişim ilkelerini yalnızca görüntüleme, oluşturma, değiştirme ve silme izinleri vardır.
+
+    > [!IMPORTANT]
+    > Intune Hizmet Yöneticisi rolü Azure AD'nin koşullu erişim ayarlarını yönetme olanağı sağlamaz.
+
+    > [!TIP]
+    > Intune ayrıca, **Kullanıcılar**, **Gruplar** ve **Koşullu erişim** olmak üzere Azure AD RBAC ile denetlenen üç Azure AD uzantısı gösterir. Bunlara ek olarak, **Kullanıcı Hesabı Yöneticisi** yalnızca AAD kullanıcısı/grubu etkinliklerini gerçekleştirir ve Intune'daki tüm etkinlikleri gerçekleştirme izinlerinin tümüne sahip değildir. Daha fazla ayrıntı için bkz. [Azure AD ile RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+## <a name="roles-created-in-the-intune-classic-console"></a>Intune klasik konsolunda oluşturulan roller
+
+Intune klasik konsolundan Azure'da Intune'a yalnızca "Tüm" izinlere sahip Intune **Hizmet Yöneticileri** kullanıcıları geçirilir. "Salt Okunur" ve "Yardım Masası" erişimli Intune **Hizmet Yöneticileri** kullanıcılarını Azure portalında Intune rollerine yeniden atamanız ve bunları klasik portaldan kaldırmanız gerekir.
+
+> [!IMPORTANT]
+> Yöneticilerinizin Intune'u kullanarak bilgisayar yönetmek için hala erişimlerinin olması gerekiyorsa klasik konsoldaki Intune Hizmet Yöneticisi erişimini tutmanız gerekebilir.
 
 ## <a name="built-in-roles"></a>Yerleşik roller
 
-Aşağıdaki roller Intune’da yerleşik olarak sağlanır ve bu rolleri özelleştirebilir veya başka yapılandırma yapmadan gruplara atayabilirsiniz.
+Aşağıdaki roller Intune'da yerleşiktir ve bunları ek yapılandırma gerekmeden gruplara atayabilirsiniz:
 
-- **Intune Yöneticisi** - Tüm Intune işlemleri üzerinde tüm izinlere sahiptir.
-- **Uygulama Yöneticisi** - Uygulamaları ve profilleri yönetin ve dağıtın.
-- **Yapılandırma İlkesi Yöneticisi** - Yapılandırma ayarlarını ve profilleri yönetin ve dağıtın.
-- **Yardım Masası İşletmeni** - Uzak görevleri gerçekleştirin, kullanıcı ve cihaz bilgilerini görüntüleyin.
-- **Salt Okunur İşletmeni** - Değişiklik yapma becerisi olmadan Intune portalındaki bilgileri görüntüleyin.
+- **Yardım Masası Operatörü**: Kullanıcılar ve cihazlar üzerinde uzaktan görevler gerçekleştirir, kullanıcılara ve cihazlara uygulama veya ilke atayabilir. 
+- **İlke ve Profil Yöneticisi**: Uyumluluk ilkesini, yapılandırma profillerini, Apple kaydını ve kurumsal cihaz tanımlayıcılarını yönetir.
+- **Salt Okuma Operatörü**: Kullanıcı, cihaz, kayıt, yapılandırma ve uygulama bilgilerini görüntüler, ancak Intune'da değişiklik yapamaz.
+- **Uygulama Yöneticisi**: Mobil ve yönetilen uygulamaları yönetir ve cihaz bilgilerini okuyabilir.
 
+### <a name="to-assign-a-built-in-role"></a>Yerleşik bir rol atamak için
 
-## <a name="custom-roles"></a>Özel roller
+1. **Intune rolleri**'nde atamak istediğiniz yerleşik rolü seçin.
 
-Yerleşik rollerden hiçbiri gereksinimlerinize uygun değilse, Intune’un birçok özelliğini kapsayan ayarlar seçerek kendi rolünüzü oluşturabilirsiniz. Bu konunun devamında kullanılabilir ayarların listesine bakabilirsiniz.
+2. <*Rol adı*> - **Özellikler** dikey penceresinde **Yönet**'i, ardından **Atamalar**'ı seçin.
 
-### <a name="example"></a>Örnek
+    > [!NOTE] 
+    > Yerleşik rolleri silemez ve düzenleyemezsiniz
+    
+3. Özel rol dikey penceresinde, **Ata**'yı seçin.
 
-Londra ofisinizdeki kullanıcılara uygulamaları dağıtmaktan ve bunları yönetmekten sorumlu olacak yeni bir BT yöneticisi işe aldınız. Kullanıcılar, **Londra** adlı bir Azure AD grubunda yer alıyorlar. BT yöneticisinin başka herhangi bir ofisteki kullanıcılara uygulama dağıtamamasını istiyorsunuz. Aşağıdaki eylemleri gerçekleştirirsiniz:
-
-- Aşağıdaki özelliklerle, yerleşik **Uygulama Yöneticisi** rolünü atarsınız:
-    - **Üyeler** - Uygulamaları dağıtacak olan BT yöneticisinin içinde bulunduğu grubu seçin
-    - **Kapsam** - **Londra** Azure AD grubunu seçin.
-
-    >[!IMPORTANT]
-    >Rolleri oluşturmak, düzenlemek ve atamak için, hesabınızın Azure AD’de aşağıdaki izinlerden birine sahip olması gerekir:
-    >- **Genel AAD Yöneticisi**
-    >- **Intune Hizmet Yöneticisi**
-
-### <a name="how-to-create-a-custom-role"></a>Özel rol oluşturma
-
-1. Azure portalında oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Intune rolleri**’ni seçin.
-![Erişim denetimi iş yükü](./media/axxess-control.png)
-1. **Erişim denetimi** iş yükünün **Roller** dikey penceresinde **Özel ekle**’yi seçin.
-2. **Özel Rol Ekle** dikey penceresinde yeni rol için ad ve açıklama girin, sonra da **İzinler**’e tıklayın.
-3. **İzinler** dikey penceresinde, bu rolle birlikte kullanmak istediğiniz izinleri seçin. Yardımcı olması için bu konunun devamındaki özel rol ayarları başvuru listesini kullanın.
-4. Bitirdiğinizde, **Tamam**’a tıklayın.
-5. **Özel Rol Ekle** dikey penceresinde **Oluştur**’a tıklayın.
-
-Yeni rol, **Roller** dikey penceresindeki listede görüntülenir.
-
-## <a name="how-to-assign-a-role"></a>Rol atama
-
-1. **Erişim denetimi** iş yükünün **Roller** dikey penceresinde, atamak istediğiniz yerleşik veya özel rolü seçin.
-2. <*Rol adı*> - **Özellikler** dikey penceresinde **Yönet** > **Atamalar**’ı seçin. Ayrıca bu dikey pencerede var olan rolleri düzenleyebilir veya silebilirsiniz.
-3. Sonraki dikey pencerede **Ata**’yı seçin.
 4. **Rol Atamaları** dikey penceresinde, atama için **Ad** ve isteğe bağlı olarak **Açıklama** girin, sonra da aşağıdakileri seçin:
     - **Üyeler** - İzinleri vermek istediğiniz kullanıcıyı içeren grubu seçin.
     - **Kapsam** - Yukarıda seçilen üyenin yönetmesine izin verilecek kullanıcıları içeren grubu seçin.
-5. Bitirdiğinizde, **Tamam**’a tıklayın.
+<br></br>
+5. Bitirdiğinizde, **Tamam**’a tıklayın. Yeni atama, atamalar listesinde görüntülenir.
 
-Yeni atama, atamalar listesinde görüntülenir.
+### <a name="intune-rbac-table"></a>Intune RBAC tablosu
 
-## <a name="custom-role-settings-reference"></a>Özel rol ayarları başvurusu
+- Her rolün yapabileceklerini daha ayrıntılı olarak görmek için, [Intune RBAC tablosu](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)'nu indirin.
 
-Özel rol oluşturduğunuzda, aşağıdaki ayarlardan birini veya birden çoğunu yapılandırabilirsiniz:
+## <a name="custom-roles"></a>Özel roller
 
-### <a name="device-configurations"></a>Cihaz yapılandırmaları
+Belirli bir işi yapmak için gereken izinleri içeren özel bir rol oluşturabilirsiniz. Örneğin, bir BT departmanı grubu uygulamaları, ilkeleri ve yapılandırma profillerini yönetiyorsa tüm bu izinleri birlikte tek bir özel role ekleyebilirsiniz.
 
-|||
-|-|-|
-|**Ata**|Cihaz profillerini gruplara atayın.|
-|**Oluştur**|Cihaz profillerini oluşturun.|
-|**Sil**|Cihaz profillerini silin.|
-|**Okuma**|Cihaz profillerini ve onların özelliklerini okuyun.|
-|**Güncelleştir**|Var olan cihaz profillerini güncelleştirin.|
+> [!IMPORTANT]
+> Rolleri oluşturmak, düzenlemek ve atamak için, hesabınızın Azure AD’de aşağıdaki izinlerden birine sahip olması gerekir:
+> - **Genel Yönetici**
+> - **Intune Hizmet Yöneticisi**
 
-### <a name="managed-apps"></a>Yönetilen uygulamalar
+### <a name="to-create-a-custom-role"></a>Özel bir rol oluşturmak için
 
-|||
-|-|-|
-|**Ata**|Yönetilen uygulamaları gruplara atayın.|
-|**Oluştur**|Intune’a yeni yönetilen uygulamalar ekleyin.|
-|**Sil**|Yönetilen uygulamaları silin.|
-|**Okuma**|Yönetilen uygulamaları ve onların özelliklerini okuyun.|
-|**Güncelleştir**|Var olan yönetilen uygulamaları güncelleştirin.|
-|**Silme**|Cihazlardan yönetilen uygulamaları temizleyin.|
+1. [Azure portalında](https://portal.azure.com) Intune kimlik bilgilerinizle oturum açın.
 
-### <a name="managed-devices"></a>Yönetilen cihazlar
+2. Soldaki menüden **Daha fazla hizmet**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
 
-|||
-|-|-|
-|**Sil**|Yönetilen cihazları Intune’dan silin.|
-|**Okuma**|Intune portalında yönetilen cihazlar hakkındaki bilgileri görüntüleyin.|
-|**Güncelleştir**|Yönetilen cihazlar hakkındaki bilgileri güncelleştirin.|
+3. **Intune**'u ve Intune Panosu açıldığında **Intune rolleri**'ni seçin.
 
-### <a name="mobile-apps"></a>Mobil uygulamalar
+4. **Intune rolleri** dikey penceresinde **Intune rolleri**'ni ve **Özel ekle**'yi seçin.
 
-|||
-|-|-|
-|**Ata**|Mobil uygulamaları gruplara atayın.|
-|**Oluştur**|Intune’a yeni mobil uygulamalar ekleyin.|
-|**Sil**|Mobil uygulamaları silin.|
-|**Okuma**|Mobil uygulamaları ve onların özelliklerini okuyun.|
-|**Güncelleştir**|Var olan mobil uygulamaları güncelleştirin.|
+5. **Özel Rol Ekle** dikey penceresinde yeni rol için ad ve açıklama girin, ardından **İzinler**'e tıklayın.
 
-### <a name="organization"></a>Kuruluş
+3. **İzinler** dikey penceresinde, bu rolle birlikte kullanmak istediğiniz izinleri seçin. Hangi izinleri uygulamak istediğinize karar vermenize yardımcı olması için [Intune RBAC tablosunu](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) kullanın.
 
-|||
-|-|-|
-|**Okuma**|Kiracı ayarlarını okuyun.|
-|**Güncelleştir**|Kiracı ayarlarını güncelleştirin.|
+4. İşiniz bittiğinde **Tamam**’ı seçin.
 
-### <a name="remote-tasks"></a>Uzak görevler
+5. **Özel Rol Ekle** dikey penceresinde **Oluştur**’a tıklayın. Yeni rol, **Intune rolleri** dikey penceresindeki listede görüntülenir.
 
-|||
-|-|-|
-|**Etkinleştirme Kilidini Atla**|Kullanıcının Apple kimliği ve parolası olmadan iOS cihazının etkinleştirme kilidini kaldırın. |
-|**Kayıp Modunu Devre Dışı Bırak**|Kayıp Modu’nu devre dışı bırakın. Kayıp modu, cihazın kilit ekranında görüntülenecek mesajı ve telefon numarasını belirtmenize olanak tanır.|
-|**Kayıp Modunu Etkinleştir**|Kayıp Modu’nu etkinleştirin. Kayıp modu, cihazın kilit ekranında görüntülenecek mesajı ve telefon numarasını belirtmenize olanak tanır.|
-|**Cihazı Bul**|-|
-|**Şimdi Yeniden Başlat**|Cihazın yeniden başlatılmasına neden olur.|
-|**Uzaktan Kilitleme**|Cihazı kilitler. Cihaz sahibinin kilidi açmak için geçiş kodunu kullanması gerekir.|
-|**Geçiş Kodunu Sıfırla**|Cihaz için <device name> Genel Bakış dikey penceresinde görüntülenecek yeni geçiş kodunu oluşturur.|
-|**Devre Dışı Bırak**|Yalnızca Intune tarafından yönetilen şirket verilerini kaldırır. Cihazdan kişisel verileri kaldırmaz.|
-|**Silme**|Cihazı varsayılan ayarlarına döndürür.|
+### <a name="to-assign-a-custom-role"></a>Özel bir rol atamak için
 
+1. **Intune rollerinde** atamak istediğiniz özel rolü seçin.
 
+2. <*Rol adı*> - **Özellikler** dikey penceresinde **Yönet**'i, ardından **Atamalar**'ı seçin. Ayrıca bu dikey pencerede var olan rolleri düzenleyebilir veya silebilirsiniz.
 
-### <a name="telecom-expenses"></a>Telekom giderleri
+3. Özel rol dikey penceresinde, **Ata**'yı seçin.
 
-|||
-|-|-|
-|**Okuma**|Telekom Gider Yönetimi (TEM) ayarlarını okuyun.|
-|**Güncelleştir**|Telekom Gider Yönetimi (TEM) ayarlarını güncelleştirin.|
+4. **Rol Atamaları** dikey penceresinde, atama için **Ad** ve isteğe bağlı olarak **Açıklama** girin, sonra da aşağıdakileri seçin:
+    - **Üyeler** - İzinleri vermek istediğiniz kullanıcıyı içeren grubu seçin.
+    - **Kapsam** - Yukarıda seçilen üyenin yönetmesine izin verilecek kullanıcıları içeren grubu seçin.
+<br></br>
+5. Bitirdiğinizde, **Tamam**’a tıklayın. Yeni atama, atamalar listesinde görüntülenir.
 
-### <a name="terms-and-conditions"></a>hüküm ve koşullar
+## <a name="next-steps"></a>Sonraki adımlar
 
-|||
-|-|-|
-|**Ata**|Hüküm ve koşulları gruplara atayın.|
-|**Oluştur**|Hüküm ve koşullar ayarlarını oluşturun.|
-|**Sil**|Hüküm ve koşullar ayarlarını silin.|
-|**Okuma**|Intune portalında hüküm ve koşullar ayarlarını okuyun.|
-|**Güncelleştir**|Mevcut hüküm ve koşullar ayarlarını güncelleştirin.|
+[Sorun giderme portalında Intune Yardım Masası Operatörü rolünü kullanma](help-desk-operators.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Azure AD kullanarak roller atama](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

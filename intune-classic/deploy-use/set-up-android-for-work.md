@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 852997044cef22901e8133d76f327e98b2a1ee72
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Android for Work cihazlarının kaydını etkinleştirme
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,7 +30,7 @@ Android for Work cihazlarının yönetimini etkinleştirmek için Intune'a bir A
 Henüz yapmadıysanız mobil cihaz yönetimine hazırlanmak için [mobil cihaz yönetimi yetkilisini](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment) **Microsoft Intune** olarak ayarlayın ve MDM’yi ayarlayın.
 
 2. **Android for Work bağlamasını yapılandırma**<br>
-    Bir Intune yöneticisi olarak [Microsoft Intune yönetici konsolunu](https://manage.microsoft.com) açarak **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt; **Android for Work**’e gidin ve Google Play’in Android for Work web sitesini açmak için **Yapılandır**’a tıklayın. Bu, tarayıcınızda yeni bir sekme açar.
+    Bir Intune yöneticisi olarak [Microsoft Intune yönetici konsolunu](https://manage.microsoft.com) açın, **Yönetim** &gt; **Mobil Cihaz Yönetimi** &gt;  **Android for Work**'e gidin ve Google Play'in Android for Work web sitesini açmak için **Yapılandır**'a tıklayın. Bu, tarayıcınızda yeni bir sekme açar.
 
 3. **Google'da oturum açma**<br>
    Google'ın oturum açma sayfasında, bu kiracı için tüm Android for Work yönetim görevleriyle ilişkilendirilecek Google hesabını girin. Bu, kuruluşunuzun BT yöneticilerinin Play for Work konsolunda uygulama yönetmek ve yayımlamak için kullandığı ortak Google hesabıdır.
@@ -64,4 +61,3 @@ Android for Work kaydı ve yönetimini kapatabilirsiniz. Intune yönetim konsolu
 
 2. **Android for Work bağlamasını kaldırmayı kabul etme**<br>
   Bağlamayı silmek için **Evet**’e tıklayın tüm Android for Work cihazların Intune kaydını silin.
-

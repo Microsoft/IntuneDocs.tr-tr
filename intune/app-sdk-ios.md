@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/15/2016
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 9fad536aab83f0e8ae12aff8cab44943ae1ac82d
-ms.contentlocale: tr-tr
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
 > [!NOTE]
@@ -460,6 +457,17 @@ MAMTelemetryDisabled| Boole değeri| SDK’nın arka ucuna herhangi bir telemetr
 > [!NOTE]
 > Uygulamanız App Store’da yayınlanacaksa `MAMPolicyRequired`, App Store standartlarına göre"HAYIR" olarak ayarlanmalıdır.
 
+## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>iOS uygulamalarınız için MAM'ı hedefleyen yapılandırmayı etkinleştirme
+MAM'ı hedefleyen yapılandırma, bir uygulamanın Intune Uygulama SDK'sı aracılığıyla yapılandırma verileri almasını sağlar. Bu verilerin biçimi ve çeşitleri, uygulamanın sahibi/geliştiricisi tarafından tanımlanmalı ve Intune müşterilerine anlatılmalıdır. Intune yöneticileri, yapılandırma verilerini Intune Azure konsolu aracılığıyla hedefleyip dağıtabilir. iOS (v 7.0.1) için Intune Uygulama SDK'sından sonra, MAM'ı hedefleyen yapılandırmaya dahil olan uygulamalar, MAM Hizmeti aracılığıyla MAM'ı hedefleyen yapılandırma verileri sağlayabilmektedir. Uygulama yapılandırma verileri MDM kanalı yerine uygulamaya doğrudan MAM Hizmetimiz aracılığıyla iletilir. Intune Uygulama SDK'sı, bu konsollardan alınan verilere erişmesine erişmek için bir sınıf sağlar. Aşağıdakileri önkoşul olarak dikkate alın: <br>
+* MAM'ı hedefleyen yapılandırma kullanıcı arabirimine erişebilmeniz için uygulamanın MAM-WE'ye kaydedilmiş olması gerekir. MAM-WE hakkında daha fazla bilgi için bkz. [Intune Uygulama SDK’sı kılavuzundaki cihaz kaydı olmadan uygulama koruma ilkesi](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
+* Uygulamanızın kaynak dosyasına ```IntuneMAMAppConfigManager.h``` öğesini dahil edin.
+* Uygulama Yapılandırma Nesnesini almak için ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` öğesini çağırın.
+* ```IntuneMAMAppConfig``` nesnesinde uygun seçiciyi çağırın. Örneğin, uygulamanızın anahtarı bir dizeyse ```stringValueForKey``` veya ```allStringsForKey``` kullanmanız uygun olur. ```IntuneMAMAppConfig.h header``` dosyası, döndürülen değerlerden/hata koşullarından bahseder.
+
+Grafik API'sinin MAM'ı hedefleyen yapılandırma değerlerine göre özellikleri hakkında daha fazla bilgi için bkz. [MAM'ı Hedefleyen Yapılandırma Grafik API'si Başvurusu](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+iOS'da MAM'ı hedefleyen bir uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi için [iOS için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios) konusunun MAM'ı hedefleyen uygulama yapılandırması hakkındaki bölümüne bakın.
+
 ## <a name="telemetry"></a>Telemetri
 
 Varsayılan olarak iOS için Intune Uygulama SDK'sı, aşağıdaki kullanım olaylarına ilişkin telemetri verilerini günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir.
@@ -656,4 +664,3 @@ Intune Uygulama SDK’sının hem statik kitaplığı hem de çerçeve derlemesi
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     İlk komut, benzetici mimarilerini çerçevenin DYLIB dosyasından kaldırır. İkinci komut, yalnızca cihaz DYLIB dosyasını çerçeve klasörüne kopyalar.
-
