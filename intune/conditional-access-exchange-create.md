@@ -1,7 +1,7 @@
 ---
 title: "Şirket içi Exchange koşullu erişim ilkesi oluşturma ve atama"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Intune’da Exchange şirket içi koşullu erişimini ve eski Exchange Online Ayrılmış hizmetini nasıl yapılandırabilirsiniz?"
+titleSuffix: Intune on Azure
+description: "Intune'da Exchange şirket içi koşullu erişimini ve eski Exchange Online Ayrılmış hizmetini nasıl yapılandırabilirsiniz\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f1775eb98d6518ce35dcc38852e167c5eada616
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/03/2017
 ---
+# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Microsoft Intune'da Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturma ve atama
 
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Microsoft Intune Azure önizlemesinde Exchange şirket içi ve eski Exchange Online Dedicated hizmeti için koşullu erişim ilkesi oluşturma ve atama
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Bu konu başlığı altında, cihaz uyumluluğu temelinde Exchange şirket içi için koşullu erişimi biçimlendirme işleminde size yol gösterilir.
 
@@ -85,7 +82,7 @@ Windows 8.1 ve üstündeki yerel **Posta** uygulaması (Intune ile kaydedildiği
 
 4. **Intune**’u seçin, **Intune Panosu**’nu görürsünüz.
 
-5.  **Koşullu Erişim**’i, ardından
+5. **Şirket İçi Erişim**’i ve ardından şunu seçin:
 
 6. **Şirket içi** dikey penceresinde koşullu erişim ilkesinin durumu ve bundan etkilenen cihazlar gösterilir.
 
@@ -93,8 +90,8 @@ Windows 8.1 ve üstündeki yerel **Posta** uygulaması (Intune ile kaydedildiği
 
 8. **Şirket içi Exchange erişimi** dikey penceresinde **Evet**’i seçerek şirket içi Exchange erişim denetimini etkinleştirin.
 
-      > [!NOTE]
-      > Exchange Active Sync şirket içi bağlayıcısını yapılandırmadıysanız, bu seçenek devre dışı bırakılır.  Şirket içi Exchange için koşullu erişimi etkinleştirebilmek için önce bu bağlayıcıyı yüklemeli ve yapılandırmalısınız. Diğer ayrıntılar için bkz. [Intune Şirket İçi Exchange Connector’ı yükleme](exchange-connector-install.md).
+    > [!NOTE]
+    > Exchange Active Sync şirket içi bağlayıcısını yapılandırmadıysanız, bu seçenek devre dışı bırakılır.  Şirket içi Exchange için koşullu erişimi etkinleştirebilmek için önce bu bağlayıcıyı yüklemeli ve yapılandırmalısınız. Diğer ayrıntılar için bkz. [Intune Şirket İçi Exchange Connector’ı yükleme](exchange-connector-install.md).
 
 9. **Atama**’nın altında **Eklenen Gruplar**’ı seçin.  Koşullu erişimin uygulanacağı güvenlik kullanıcı grubunu seçin. Bunun için kullanıcıların cihazlarını Intune’da kaydetmeleri ve uyumluluk profilleriyle uyumlu olmaları gerekir.
 
@@ -114,12 +111,12 @@ Windows 8.1 ve üstündeki yerel **Posta** uygulaması (Intune ile kaydedildiği
 
 15. **Şirket içi** dikey penceresinde **Kaydet**’e tıklayarak koşullu erişim ilkesini kaydedin.
 
-## <a name="create-azure-ad-conditional-access-policies-in-intune-azure-preview"></a>Intune Azure önizlemede Azure AD Koşullu erişim ilkeleri oluşturma
+## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Intune'da Azure AD Koşullu erişim ilkeleri oluşturma
 
-Intune 1704 sürümüden başlayarak, yöneticiler, Intune Azure önizlemesinden Azure AD koşullu erişim ilkeleri oluşturabilmekte ve bu, Azure ve Intune iş yükleri arasında geçiş yapmanıza gerek bırakmayarak kolaylık sağlamaktadır.
+Intune 1704 sürümünden başlayarak, yöneticiler, Intune Azure portalından Azure AD koşullu erişim ilkeleri oluşturabilmekte ve bu, Azure ve Intune iş yükleri arasında geçiş yapmanıza gerek bırakmayarak kolaylık sağlamaktadır.
 
 > [!IMPORTANT]
-> Intune Azure önizleme portalından Azure AD koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.
+> Intune Azure portalından Azure AD koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.
 
 ### <a name="to-create-azure-ad-conditional-access-policy"></a>Azure AD koşullu erişim ilkesi oluşturmak için
 

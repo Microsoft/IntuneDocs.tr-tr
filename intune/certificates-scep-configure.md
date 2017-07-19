@@ -1,12 +1,12 @@
 ---
 title: "Intune ile SCEP sertifikalarını yapılandırma ve yönetme"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Önce altyapınızı yapılandırmayı, ardından Intune SCEP sertifika profilleri oluşturup atamayı öğrenin."
+titleSuffix: Intune on Azure
+description: "Önce altyapınızı yapılandırmayı, ardından Intune SCEP sertifika profilleri oluşturup atamayı öğrenin.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,14 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0dc380eca386438e9568bf212ac9c5ad66ceb6
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve yönetme
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Bu konuda, altyapınızın nasıl yapılandırılacağı ve ardından Intune ile Basit Sertifika Kayıt Protokolü (SCEP) sertifika profillerinin nasıl oluşturulup atanacağı gösterilir.
 
@@ -84,9 +83,13 @@ Sertifika profillerini yapılandırmadan önce Windows Server 2012 R2 ve Active 
 
 **Adım 5**: Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
 
+> [!NOTE]
+> Bilinen bir sorun nedeniyle, şu yordamı kullanarak sertifika bağlayıcısını indirin, yükleyin ve yapılandırın: [SCEP için sertifika altyapısını yapılandır -> Altyapınızı yapılandırma -> Görev 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
+
+
 #### <a name="step-1---create-an-ndes-service-account"></a>Adım 1 - NDES hizmet hesabı oluşturma
 
-NDES hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı oluşturun. NDES'i yükleyip yapılandırmadan önce sertifika veren CA üstünde şablonları yapılandırırken bu hesabı belirteceksiniz. Kullanıcının varsayılan haklara (**Yerel Olarak Oturum Açma**, **Hizmet Olarak Oturum Açma** ve **Toplu İş Olarak Oturum Açma** hakları) sahip olduğundan emin olun. Bazı kuruluşların söz konusu hakları devre dışı bırakan sağlamlaştırma ilkeleri vardır.
+NDES hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı oluşturun. NDES'i yükleyip yapılandırmadan önce sertifika veren CA üstünde şablonları yapılandırırken bu hesabı belirteceksiniz. Kullanıcının **Yerel Olarak Oturum Açma**, **Hizmet Olarak Oturum Açma** ve **Toplu iş olarak oturum açma** varsayılan haklarına sahip olduğundan emin olun. Bazı kuruluşların söz konusu hakları devre dışı bırakan sağlamlaştırma ilkeleri vardır.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Adım 2 - Sertifika yetkilisinde sertifika şablonlarını yapılandırma
 Bu görevde şunları yapacaksınız:
@@ -100,6 +103,9 @@ Bu görevde şunları yapacaksınız:
 1.  Kuruluş yöneticisi olarak oturum açın.
 
 2.  Sertifika veren CA'da, Sertifika Şablonları ek bileşenini kullanarak yeni bir özel şablon oluşturun veya var olan bir şablonunu kopyalayın ve ardından, var olan bir şablonu (Kullanıcı şablonu gibi) NDES ile kullanılmak üzere düzenleyin.
+
+    >[!NOTE]
+    > NDES sertifika şablonunun (Windows 2003 ile uyumlu) bir v2 Sertifika Şablonu'nu temel alması gerekir.
 
     Şablonun aşağıdaki yapılandırmalara sahip olması gerekir:
 
@@ -246,7 +252,7 @@ Bu görevde şunları yapacaksınız:
 
     ![Test NDES](.\media\SCEP_NDES_URL.png)
 
-    **503 Hizmet kullanılamıyor** hatasını alırsanız olay görüntüleyicisini gözden geçirin. NDES kullanıcısı için bir hakkın eksik olması nedeniyle uygulama havuzu durdurulmuş olabilir. Bu haklar Görev 1'de açıklanmıştır.
+    **503 Hizmet kullanılamıyor** hatası alırsanız, olay görüntüleyicisini gözden geçirin. NDES kullanıcısı için bir hakkın eksik olması nedeniyle uygulama havuzu durdurulmuş olabilir. Bu haklar Görev 1'de açıklanmıştır.
 
 ##### <a name="to-install-and-bind-certificates-on-the-ndes-server"></a>NDES Sunucusu'nda sertifikaları yüklemek ve bağlamak için
 
@@ -304,7 +310,7 @@ NDES Sunucusu'nda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandı
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>Sertifika bağlayıcısı desteğini etkinleştirmek için
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
 4. **Cihaz Yapılandırması** dikey penceresinde **Sertifika Yetkilisi**’ni seçin.
 5.  **Sertifika Bağlayıcısını Etkinleştir**'i seçin.
@@ -312,10 +318,10 @@ NDES Sunucusu'nda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandı
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Sertifika bağlayıcısını indirmek, yüklemek ve yapılandırmak için
 
 > [!NOTE]
-> Bilinen bir sorun nedeniyle, şu yordamı kullanarak sertifika bağlayıcısını indirin, yükleyin ve yapılandırın: [SCEP için sertifika altyapısını yapılandır -> Altyapınızı yapılandırma -> Görev 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> Bilinen bir sorun nedeniyle, şu yordamı kullanarak sertifika bağlayıcısını indirin, yükleyin ve yapılandırın: [SCEP için sertifika altyapısını yapılandır -> Altyapınızı yapılandırma -> Görev 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
 4. **Cihaz Yapılandırması** dikey penceresinde **Sertifika Yetkilisi**’ni seçin.
 5. **Sertifika Bağlayıcısını İndir**’i seçin.
@@ -377,6 +383,8 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403
         - **Ortak ad**
         - **E-postayı içeren ortak ad**
         - **E-posta olarak ortak ad**
+        - **Özel** - Bu seçeneği belirlediğinizde, başka bir açılan alan görüntülenir. Bu alanı özel bir konu adı biçimi girmek için kullanın. Özel biçim için desteklenen iki değişken **Ortak Ad (CN)** ve **E-posta (E)** değişkenleridir. Bu değişkenlerin birinin veya ikisinin ve statik dizelerin bir bileşimini kullanarak şunun gibi özel bir konu adı biçimi oluşturabilirsiniz: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finans Grubu,L=Redmond,ST=Washington,C=ABD** Bu örnekte, CN ve E değişkenlerine ek olarak Kuruluş Birimi, Kuruluş, Konum, Eyalet ve Ülke değerleri için de dizeler kullanan bir konu adı biçimi oluşturulmuştur. [Bu konu](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx), **CertStrToName** işlevini ve bu işlevin desteklenen dizelerini gösterir.
+        
     - **Konu diğer adı** - Intune uygulamasının, sertifika isteğinde konu diğer adı (SAN) için değerleri otomatik olarak nasıl oluşturacağını belirtin. Örneğin, bir kullanıcı sertifikası türü seçtiyseniz, konu alternatif adına kullanıcı asıl adını (UPN) ekleyebilirsiniz. İstemci sertifikası, bir Ağ İlkesi Sunucusuna kimlik doğrulamak için kullanılacaksa, UPN'ye konu alternatif adını ayarlamanız gerekir. 
     - **Anahtar kullanımı** - Sertifika için anahtar kullanımı seçeneklerini belirtin. Aşağıdaki seçeneklerden birini seçebilirsiniz: 
         - **Anahtar şifreleme:** Yalnızca anahtar şifreli olduğunda anahtar değişimine izin verin. 
@@ -392,10 +400,6 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403
 
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 
->[!Note]
-> Yalnızca iOS cihazları için: Konu adı biçimi’nin altında Özel’i seçerek özel bir konu adı biçimi girin.
-> Özel biçim için şu an desteklenen iki değişken **Ortak Ad (CN)** ve **E-posta (E)**’dır. Bu değişkenlerin ve statik dizelerin bir bileşimini kullanarak şunun gibi özel bir konu adı biçimi oluşturabilirsiniz: **CN={{KullanıcıAdı}},E={{EpostaAdresi}},OU=Mobil,O=Finans Grubu,L=Redmond,ST=Washington,C=ABD** Bu örnekte, CN ve E değişkenlerine ek olarak Kuruluş Birimi, Kuruluş, Konum, Eyalet ve Ülke değerleri için de dizeler kullanan bir konu adı biçimi oluşturursunuz. [Bu konu](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx), **CertStrToName** işlevini ve bu işlevin desteklenen dizelerini gösterir.
-
 ## <a name="how-to-assign-the-certificate-profile"></a>Sertifika profilini atama
 
 Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz önünde bulundurun:
@@ -407,5 +411,4 @@ Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz ön�
 - Her profili ayrı olarak atasanız da Güvenilen Kök CA’sını ve SCEP veya PKCS profilini de atamanız gerekir. Aksi takdirde SCEP veya PKCS sertifika ilkesi başarısız olur.
 
 Profillerin nasıl atanacağı hakkında bilgi için bkz. [Cihaz profillerini atama](device-profile-assign.md).
-
 

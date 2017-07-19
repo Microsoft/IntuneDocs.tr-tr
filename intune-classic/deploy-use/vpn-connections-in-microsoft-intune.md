@@ -1,5 +1,5 @@
 ---
-title: "VPN bağlantıları | Microsoft Docs"
+title: "VPN bağlantıları"
 description: "VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara dağıtmak için VPN profillerini kullanın."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-connections-in-microsoft-intune"></a>Microsoft Intune’da VPN bağlantıları
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -168,9 +165,7 @@ iOS 8.0 ve üzeri cihazlar için isteğe bağlı VPN yapılandırabilirsiniz.
 3. İsteğe bağlı: kuralın deneme olarak kullandığı bir URL olan bir URL dize araştırmasını girin. Bu profilin yüklü olduğu cihaz bu URL’ye yeniden yönlendirmesiz erişebiliyorsa, VPN oluşturulur ve cihaz hedef URL’ye bağlanır. Kullanıcı, URL araştırma dizesi sitesini görmez. URL araştırma dizesine örnek, VPN’i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusunun adresidir. Başka bir seçenek de URL’nin, cihazı VPN aracılığıyla hedef URL’ye bağlamadan önce VPN’in bir siteye bağlanma yeteneğini test etmesidir.
 4. Aşağıdaki eylemlerden birini seçin:
   - **Bağlanma**
-  - **Bağlantı değerlendirme**, üç ayara sahiptir: a. **Etki alanı eylemi**  - **Gerekirse bağlan** veya **Hiçbir zaman bağlanma**
-     seçeneğini işaretleyin b. **Etki alanlarının virgülle ayrılmış listesi** - bunu yalnızca **Etki alanı eylemi** olarak **Gerekirse bağlan**
-     seçeneğini belirlerseniz yapılandırırsınız c. **Gerekli URL araştırma dizesi** - bir HTTP veya HTTPS (tercih edilir) URL’si; örneğin *https://vpntestprobe.contoso.com*. Kural bu adresten bir yanıt alınıp alınmadığını denetler. Alınmıyorsa ve **Etki alanı eylemi** **Gerekirse bağlan** seçeneğiyse, VPN tetiklenir.
+  - **Bağlantı değerlendirme**, üç ayara sahiptir: a. **Etki alanı eylemi**  - **Gerekirse bağlan** veya **Hiçbir zaman bağlanma** seçeneğini işaretleyin b. **Etki alanlarının virgülle ayrılmış listesi** - bunu yalnızca **Etki alanı eylemi** olarak **Gerekirse bağlan** seçeneğini belirlerseniz yapılandırırsınız c. **Gerekli URL araştırma dizesi** - bir HTTP veya HTTPS (tercih edilir) URL’si; örneğin *https://vpntestprobe.contoso.com*. Kural bu adresten bir yanıt alınıp alınmadığını denetler. Alınmıyorsa ve **Etki alanı eylemi** **Gerekirse bağlan** seçeneğiyse, VPN tetiklenir.
       
      > [!TIP]
      >
@@ -195,4 +190,3 @@ Etki alanına özgü kurallar, tüm etki alanına yönelik kurallardan önce de�
 Başarılı bir şekilde dağıtıldıktan sonra, kullanıcılar VPN bağlantıları listesinde belirttiğiniz VPN bağlantısı adını cihazlarında görür.
 
 **İlke** çalışma alanının **Genel Bakış** sayfasında, bir durum özeti ve uyarılar ilkeyle ilgili işlem yapmanız gereken durumları tanımlar. Ayrıca, Pano çalışma alanında bir durum özeti görüntülenir.
-

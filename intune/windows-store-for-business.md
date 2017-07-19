@@ -1,12 +1,12 @@
 ---
-title: "İş İçin Windows Mağazası uygulamalarını yönetme | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: İş İçin Windows Mağazası’ndaki uygulamaları Intune’a eşitlemeyi, sonra da bunları atamayı ve izlemeyi öğrenin."
+title: "İş İçin Windows Mağazası uygulamalarını yönetme"
+titleSuffix: Intune on Azure
+description: "İş İçin Windows Mağazası’ndaki uygulamaları Intune’a eşitlemeyi, sonra da bunları atamayı ve izlemeyi öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,35 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b1a76e9f30e3587157d4b3085b1b3ce2abe0b37c
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: de6ed7623e33a50bdf8452cbf1bad9c648b13d04
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>İş İçin Windows Mağazası'ndan satın aldığınız uygulamaları Microsoft Intune ile yönetme
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 [İş İçin Windows Mağazası](https://www.microsoft.com/business-store), kuruluşunuz için tek tek veya toplu olarak uygulamaları bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayla Microsoft Intune arasında bağlantı kurarak, toplu satın alınan uygulamaları Intune portalından yönetebilirsiniz. Örneğin:
 * Intune’la mağazadan satın aldığınız uygulamalar listesini eşitleyebilirsiniz.
-* Eşitlenen uygulamalar Intune yönetim konsolunda gösterilir ve bunları aynı diğer uygulamalar gibi atayabilirsiniz.
+* Eşitlenen uygulamalar, Intune yönetim konsolunda gösterilir; bu uygulamaları herhangi bir uygulama gibi atayabilirsiniz.
 * Kaç tane kullanılabilir lisans olduğunu ve bunlardan kaç tanesinin kullanıldığını Intune yönetim konsolunda izleyebilirsiniz.
 * Kullanılabilir lisans sayısı yetersiz olduğunda Intune uygulamaların atanmasını ve yüklenmesini engeller.
 
 ## <a name="before-you-start"></a>Başlamadan önce
+
 İş İçin Windows Mağazası’ndan uygulamaları eşitlemeye ve atamaya başlamadan önce aşağıdaki bilgileri gözden geçirin:
-* Intune’u kuruluşunuz için mobil cihaz yönetim yetkilisi olarak yapılandırmalısınız.
-* İş İçin Windows Mağazası’ndan bir hesap almak isterseniz kaydolmanız gerekir.
-* İş İçin Windows Mağazası hesabını Intune’la ilişkilendirdikten sonra, gelecekte farklı bir hesaba geçemezsiniz.
-* Mağazadan satın alınan uygulamalar Intune’a el ile eklenemez veya Intune’dan el ile silinemez. Bunlar yalnızca İş İçin Windows Mağazası’yla eşitlenebilir.
-* Intune yalnızca İş İçin Windows Mağazası’ndan satın almış olduğunuz çevrimiçi lisanslı uygulamaları eşitler.
-* Bu özelliğin kullanılabilmesi için cihazların Active Directory Etki Alanı Hizmetleri’ne veya çalışma alanına katılmış olması gerekir.
-* Kaydedilen cihazlar Windows 10’un 1511 sürümünü veya sonraki bir sürümü kullanıyor olmalıdır.
+
+- Intune'u kuruluşunuz için mobil cihaz yönetim yetkilisi olarak yapılandırın.
+- İş İçin Windows Mağazası’ndan bir hesap almak isterseniz kaydolmanız gerekir.
+- İş İçin Windows Mağazası hesabını Intune’la ilişkilendirdikten sonra, gelecekte farklı bir hesaba geçemezsiniz.
+- Mağazadan satın alınan uygulamalar Intune’a el ile eklenemez veya Intune’dan el ile silinemez. Bunlar yalnızca İş İçin Windows Mağazası’yla eşitlenebilir.
+- Intune, İş İçin Windows Mağazası'ndan satın aldığınız hem çevrimiçi hem de çevrimdışı lisanslı uygulamaları eşitler.
+- Yalnızca ücretsiz çevrimdışı uygulamalar Intune ile eşitlenebilir.
+- Bu özelliğin kullanılabilmesi için cihazların Active Directory Etki Alanı Hizmetleri'ne veya çalışma alanına katılmış olması gerekir.
+- Kaydedilen cihazlar Windows 10’un 1511 sürümünü veya sonraki bir sürümü kullanıyor olmalıdır.
 
 ## <a name="associate-your-windows-store-for-business-account-with-intune"></a>İş İçin Windows Mağazası hesabınızı Intune’la ilişkilendirme
 Intune konsolunda eşitlemeyi etkinleştirmek için, önce mağaza hesabınızı yönetim aracı olarak Intune’u kullanacak şekilde yapılandırmanız gerekir:
@@ -51,19 +52,19 @@ Intune konsolunda eşitlemeyi etkinleştirmek için, önce mağaza hesabınızı
 3. Yönetim araçları sayfasında, **Yönetim aracı ekle**’yi ve sonra da **Microsoft Intune**’u seçin.
 
 > [!NOTE]
-> İş İçin Windows Mağazası uygulamalarını atamak için birden fazla yönetim aracı kullanmanız durumunda önceden bunların yalnızca birini İş İçin Windows Mağazası ile ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz.
+> Daha önce İş İçin Windows Mağazası ile uygulama atamak üzere yalnızca bir yönetim aracı ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz.
 
 Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 ## <a name="configure-synchronization"></a>Eşitlemeyi yapılandırma
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde, **Mobil uygulamalar**’ı seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
 1. **Mobil Uygulamalar** dikey penceresinde **Kurulum** > **İş İçin Windows Mağazası**’nı seçin.
 2. **Etkinleştir**'e tıklayın.
-3. Henüz yapmadıysanız, İş İçin Windows Mağazası’na kaydolma bağlantısına tıklayın ve daha önce ayrıntılarıyla açıklandığı gibi hesabınızı ilişkilendirin.
-5. **Dil** açılan listesinde, İş İçin Windows Mağazası’ndan gelen uygulamaların Intune portalında görüntüleneceği dili seçin. Görüntülendikleri dilinden bağımsız olarak, bunlar uygun olduğunda son kullanıcının dilinde yüklenir.
+3. Henüz yapmadıysanız İş İçin Windows Mağazası'na kaydolma bağlantısına tıklayın ve daha önce ayrıntı olarak açıklandığı gibi hesabınızı ilişkilendirin.
+5. **Dil** açılan listesinden İş İçin Windows Mağazası'ndan alınan uygulamaların Intune portalında görüntülendiği dili seçin. Uygulamalar, görüntülendikleri dilden bağımsız olarak, mevcut olması durumunda son kullanıcının dilinde yüklenir.
 6. Windows Mağazası’ndan satın aldığınız uygulamaları Intune’a almak için **Eşitle**’ye tıklayın.
 
 ## <a name="synchronize-apps"></a>Uygulamaları eşitleme
@@ -75,11 +76,13 @@ Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 Mağazadan alınan uygulamaları, diğer tüm Intune uygulamalarıyla aynı şekilde atarsınız. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md). Bununla birlikte, uygulamaları atama işlemini **Tüm Uygulamalar** sayfası yerine **Lisanslı Uygulamalar** sayfasından yaparsınız.
 
-İş İçin Windows Mağazası uygulamasını atadığınızda, uygulamayı yükleyen her kullanıcı bir lisans kullanır. Atanan uygulamanın tüm kullanılabilir lisanslarını kullandıysanız, artık başka kopya atayamazsınız. Aşağıdaki işlemlerden birini yapmanız gerekir:
+Çevrimdışı uygulamalar; kullanıcı gruplarını, cihaz gruplarını veya kullanıcı ve cihazları olan grupları hedefleyebilir.
+Çevrimdışı uygulamalar, bir cihazdaki belirli bir kullanıcı veya bir cihazdaki tüm kullanıcılar için yüklenebilir. 
+
+
+İş İçin Windows Mağazası uygulamasını atadığınızda, uygulamayı yükleyen her kullanıcı bir lisans kullanır. Atanmış bir uygulamanın tüm lisanslarını kullanırsanız başka bir kopya atayamazsınız. Aşağıdaki eylemlerden birini uygulayın:
 * Uygulamayı bazı cihazlardan kaldırın.
-* Geçerli atamanın kapsamını, yalnızca lisanslarınızın yeterli olduğu kullanıcıları hedefleyecek şekilde daraltın.
+* Geçerli atamanın kapsamını, yalnızca yeteri kadar lisansa sahip olduğunuz kullanıcıları hedefleyerek daraltın.
 * İş İçin Windows Mağazası’ndan uygulamanın daha fazla kopyasını satın alın.
 
-> [!Important]
-> Atanan uygulamalar yalnızca cihazı ilk kaydeden kullanıcı tarafından kullanılabilir. Uygulamaya başka hiçbir kullanıcı erişemez.
 

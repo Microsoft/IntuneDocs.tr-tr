@@ -1,12 +1,12 @@
 ---
-title: "Uygulamaları gruplara atama | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Intune’a uygulama eklediğinizde, bu uygulamayı kullanıcı veya cihaz gruplarına atamak istersiniz."
+title: "Uygulamaları gruplara ekleme"
+titleSuffix: Intune on Azure
+description: "Intune'a uygulama ekledikten sonra, bu uygulamayı kullanıcı veya cihaz gruplarına atamak isteyeceksiniz.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/09/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1246ef539c044b894b4e4a93f449e60e6462600a
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune’a uygulama eklediğinizde, bunu kullanıcılara ve cihazlara vermek istersiniz. Bunu, uygulamayı atayarak yaparsınız.
+Bir uygulamayı Intune'a ekledikten sonra kullanıcılara ve cihazlara atayabilirsiniz.
 
 Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uygulamalara atanabilir. Uygulamaları kullanıcılara ve cihazlara atamaya yönelik çeşitli seçenekleri anlamanıza yardımcı olması için aşağıdaki tabloyu kullanın:
 
@@ -46,33 +44,6 @@ Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uy
 > [!NOTE]
 > Şu anda, iOS ve Android uygulamalarını (hem iş kolu uygulamaları hem de mağazadan satın uygulamalar), Intune’a kaydedilmeyen cihazlara atayabilirsiniz.
 
-## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Intune önizleme sürümünde uygulamaları gruplara atama konusundaki değişiklikler
-
-Intune Azure Önizleme'de, artık grupları uygulamalara atamak için Intune yerine Azure Active Directory (Azure AD) güvenlik grupları kullanacaksınız. Bu nedenle, özellikle Intune alt gruplarına uygulama atadığınızda, uygulama atamalarının çalışma şeklinde yapılan bazı değişiklikleri öğrenmeniz gerekir.
-Alt gruplar kavramının Azure AD'de mevcut olmaması bu konudaki en önemli husustur. Ancak, bazı gruplar aynı üyeleri içerebilir. Bu durumda, klasik Intune ile Intune Azure önizleme arasındaki davranış farklılık gösterir. Aşağıdaki tablo bunu göstermektedir:
-
-||||||
-|-|-|-|-|-|
-|**Intune Klasik (kiracı geçişinden önce)**|-|**Intune Azure (Kiracı geçişi tamamlandıktan sonra)**|-|**Daha fazla bilgi**|
-|**Üst grup atama hedefi**|**Alt grup atama hedefi**|**Önceki üst ve alt grup ortak üyeleri için ortaya çıkan atama hedefi**|**Üst grubun üyeleri için ortaya çıkan atama hedefi eylemi**|-|
-|Kullanılabilir|Gerekli|Gerekli ve Kullanılabilir|Kullanılabilir|Gerekli ve Kullanılabilir, gerekli olarak atanan uygulamaların Şirket Portalı uygulamasında da görülebildiği anlamına gelir.
-|Uygulanamaz|Kullanılabilir|Uygulanamaz|Uygulanamaz|Geçici çözüm: 'Uygulanamaz' atama hedefini Intune üst grubundan kaldırın.
-|Gerekli|Kullanılabilir|Gerekli ve Kullanılabilir|Gerekli|-|
-|Gerekli ve Kullanılabilir<sup>1</sup>|Kullanılabilir|Gerekli ve Kullanılabilir|Gerekli ve Kullanılabilir|-|
-|Gerekli|Uygulanamaz|Gerekli|Gerekli|-|
-|Gerekli ve Kullanılabilir|Uygulanamaz|Gerekli ve Kullanılabilir|Gerekli ve Kullanılabilir|-|
-|Gerekli|Kaldır|Gerekli|Gerekli|-|
-|Gerekli ve Kullanılabilir|Kaldır|Gerekli ve Kullanılabilir|Gerekli ve Kullanılabilir|-|
-<sup>1</sup> Yalnızca yönetilen iOS mağazası uygulamaları söz konusu olduğunda, bunları Intune’a ekleyip Gerekli olarak atadığınızda, hem Gerekli, hem de Kullanılabilir hedefi ile otomatik olarak oluşturulurlar.
-
-Atama çakışmalarını önlemek için aşağıdaki eylemleri gerçekleştirebilirsiniz:
-
-1.    İlgili Intune üst ve alt gruplara daha önce uygulama atadıysanız, kiracı geçişiniz başlamadan önce bu atamaları kaldırmayı düşünün.
-2.    Alt grupları üst gruplardan kaldırın ve eski alt grup üyelerini içeren yeni bir grup oluşturun. Daha sonra bu gruba yeni bir uygulama ataması oluşturabilirsiniz.
-Not: Önceki üst grup "Tüm Kullanıcılar" ise, alt grup üyelerini içermeyen yeni dinamik bir grup oluşturmanız gerekir.
-Kullanıcı ve cihaz grupları için gruplarda yapacağınız tüm değişiklikleri [Azure Portalı](https://portal.azure.com/)’nda yapmanız gerekir. [Klasik Azure Portalı](https://manage.windowsazure.com/) yalnızca kullanıcı gruplarınızda değişiklik yapmanıza izin verir.
-
-
 ## <a name="how-to-assign-an-app"></a>Uygulama atama
 
 1. Azure Portal’da oturum açın.
@@ -87,10 +58,53 @@ Kullanıcı ve cihaz grupları için gruplarda yapacağınız tüm değişiklikl
     - **Uygulanamaz** - Uygulama yüklenmez veya Şirket Portalı’nda gösterilmez.
     - **Gerekli** - Uygulama, seçili gruplardaki cihazlara yüklenir.
     - **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
-    - **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. Yardım için yukarıdaki tabloya bakın.
+    - **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın.
 6. İşiniz bittikten sonra **Kaydet**’i seçin.
 
-Artık uygulama seçtiğiniz gruba atanır.
+Uygulama artık seçtiğiniz gruba atanır.
+
+## <a name="how-conflicts-between-app-intents-are-resolved"></a>Uygulama amaçları arasındaki çakışmalar nasıl çözümlenir
+
+Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. Bu durumlarda, ortaya çıkan amacı anlamak için bu tabloyu kullanın.
+
+||||
+|-|-|-|
+|Grup 1 amacı|Grup 2 amacı|Ortaya çıkan amaç|
+|Kullanıcı Gerekli|Kullanıcı Mevcut|Gerekli ve Kullanılabilir|
+|Kullanıcı Gerekli|Kullanıcı Mevcut Değil|Gerekli|
+|Kullanıcı Gerekli|Kullanıcı Kaldır|Gerekli|
+|Kullanıcı Mevcut|Kullanıcı Mevcut Değil|Kullanılamıyor|
+|Kullanıcı Mevcut|Kullanıcı Kaldır|Kaldır|
+|Kullanıcı Mevcut Değil|Kullanıcı Kaldır|Kaldır
+|Kullanıcı Gerekli|Cihaz Gerekli|İkisi de mevcut; Ağ geçidi gerekli olanı işler 
+|Kullanıcı Gerekli|Cihaz Kaldır|İkisi de mevcut, Ağ geçidi gerekli olanı çözümler 
+|Kullanıcı Mevcut|Cihaz Gerekli|İkisi de mevcut, Ağ geçidi gerekli olanı çözümler (Gerekli ve Kullanılabilir)
+|Kullanıcı Mevcut|Cihaz Kaldır|İkisi de mevcut, Ağ geçidi Kullanılabilir olanı çözümler.<br>Uygulama, Şirket Portalında görüntülenir.<br>Uygulama zaten yüklüyse (önceki amacıyla gerekli uygulama olarak) kaldırılır.<br>Ancak kullanıcı şirket portalından yüklemeye tıklarsa uygulama yüklenir ve kaldırma amacı yerine getirilmez.|
+|Kullanıcı Mevcut Değil|Cihaz Gerekli|Gerekli|
+|Kullanıcı Mevcut Değil|Cihaz Kaldır|Kaldır|
+|Kullanıcı Kaldır|Cihaz Gerekli|İkisi de mevcut, Ağ geçidi Gerekli olanı çözümler|
+|Kullanıcı Kaldır|Cihaz Kaldır|İkisi de mevcut, Ağ geçidi Kaldır işlemini çözümler|
+|Cihaz Gerekli|Cihaz Kaldır|Gerekli|
+|Kullanıcı Gerekli ve Mevcut|Kullanıcı Mevcut|Gerekli ve Kullanılabilir|
+|Kullanıcı Gerekli ve Mevcut|Kullanıcı Kaldır|Gerekli ve Kullanılabilir|
+|Kullanıcı Gerekli ve Mevcut|Kullanıcı Mevcut Değil|Gerekli ve Kullanılabilir|
+|Kullanıcı Gerekli ve Mevcut|Cihaz Gerekli|İkisi de mevcut: Gerekli ve Mevcut
+|Kullanıcı Gerekli ve Mevcut|Cihaz Mevcut Değil|Gerekli ve Kullanılabilir|
+|Kullanıcı Gerekli ve Mevcut|Cihaz Kaldır|İkisi de mevcut, Ağ geçidi gerekli olanı çözümler. Gerekli + Mevcut
+|Kullanıcı Mevcut Değil|Cihaz Mevcut Değil|Kullanılamıyor|
+|Kullanıcı Mevcut|Cihaz Mevcut Değil|Kullanılabilir|
+|Kullanıcı Gerekli|Cihaz Mevcut Değil|Gerekli|
+|Kullanıcı Kayıt Olmadan Mevcut|Kullanıcı Gerekli ve Mevcut|Gerekli ve Kullanılabilir
+|Kullanıcı kayıt olmadan Mevcut|Kullanıcı Gerekli|Gerekli
+|Kullanıcı kayıt olmadan Mevcut|Kullanıcı Mevcut Değil|Kullanılamıyor
+|Kullanıcı kayıt olmadan Mevcut|Kullanıcı Mevcut|Kullanılabilir|
+|Kullanıcı kayıt olmadan Mevcut|Cihaz Gerekli|Gerekli ve kayıt olmadan Mevcut|
+|Kullanıcı kayıt olmadan Mevcut|Cihaz Mevcut Değil|Kayıt olmadan Mevcut|
+|Kullanıcı kayıt olmadan Mevcut|Cihaz Kaldır|Kaldırma ve kayıt olmadan Mevcut.<br>Kullanıcı uygulamayı şirket portalından yüklemediyse kaldırma işlemi yerine getirilmez.<br>Kullanıcı uygulamayı şirket portalından yüklerse yüklemeye, kaldırmaya göre öncelik verilir.|
+
+>[!NOTE]
+>Yalnızca yönetilen iOS mağazası uygulamalarını Intune’a ekleyip Gerekli olarak atadığınızda bu uygulamalar, hem Gerekli hem de Mevcut amaçlarıyla otomatik olarak oluşturulur.
+
+## <a name="next-steps"></a>Sonraki adımlar
 
 Uygulama atamalarını izlemenize yardımcı olacak bilgiler için bkz. [Uygulamaları izleme](apps-monitor.md).
-

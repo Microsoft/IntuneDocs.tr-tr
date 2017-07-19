@@ -1,12 +1,12 @@
 ---
-title: "Toplu satın alınan uygulamaları Intune ile yönetme"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Mağazalardan toplu satın alınan uygulamaları kullanımınızı yönetmek ve izlemek için Intune’u nasıl kullanabileceğinizi öğrenin."
+title: "Toplu satın alınan uygulama ve kitapları Intune ile yönetme"
+titleSuffix: Intune on Azure
+description: "Mağazalardan toplu satın alınan uygulama ve kitaplarınızın kullanımını yönetmek ve izlemek için Intune'u nasıl kullanabileceğinizi öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,26 +15,26 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9646b0f861ea55d2d44975341de37e6a2548993b
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: e8f938e81740d1bb08e0e9995cab94329c2fe5e7
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/05/2017
 ---
+# <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Toplu satın alınan uygulama ve kitapları Microsoft Intune ile yönetme
 
-# <a name="manage-volume-purchased-apps-with-micrsoft-intune"></a>Toplu satın alınan uygulamaları Microsoft Intune ile yönetme
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+## <a name="introduction"></a>Giriş
 
-Bazı uygulama depoları, kuruluşunuzda çalıştırmak istediğiniz bir uygulama için birden fazla lisans satın almanıza olanak sağlayabilir. Bu durum, satın alınan uygulamaların birden fazla kopyasın izlemeye yönelik yönetim yükünü azaltmanıza yardımcı olabilir.
+Bazı uygulama mağazaları, kuruluşunuzda kullanmak istediğiniz uygulama veya kitaplar için birden fazla lisans satın almanıza olanak tanır. Lisansları topluca satın almak, uygulama ve kitapların satın alınmış kopyalarını izleme yönetim yükünüzün azalmasına yardımcı olabilir.
 
-Microsoft Intune lisans bilgilerini uygulama mağazasından içeri aktararak, kaç lisans kullandığınızı izleyerek ve sahip olduğunuzdan fazla uygulama kopyasını yüklemenizi önleyerek, böyle bir program aracılığıyla satın aldığınız uygulamaları yönetmenize yardımcı olur.
+Microsoft Intune, bu tür bir program aracılığıyla satın aldığınız uygulama ve kitapları yönetmenize yardımcı olur. Mağazadan lisans bilgilerini içeri aktarabilir ve kaç lisans kullandığınızı takip edebilirsiniz. Bu işlem, sahip olduğunuz uygulama veya kitapları tekrar yüklemenizi önlemeye yarar.
 
-## <a name="which-types-of-apps-can-you-manage"></a>Hangi tür uygulamaları yönetebilirsiniz?
+## <a name="which-types-of-apps-and-books-can-you-manage"></a>Hangi tür uygulamaları ve kitapları yönetebilirsiniz?
 
-iOS uygulama mağazasından ve İş İçin Windows Mağazası’ndan toplu olarak satın aldığınız uygulamaları Intune ile yönetebilirsiniz. Mağazaların her birinden gelen lisanslı uygulamaların nasıl yönetileceğini keşfetmek için, aşağıdaki konu başlıklarından birini seçin:
+Intune ile iOS mağazasından topluca satın aldığınız uygulama ve kitapları ve İş İçin Windows Mağazası'ndan satın aldığınız uygulamaları yönetebilirsiniz. Mağazaların lisanslı uygulamalarının nasıl yönetileceğini keşfetmek için, aşağıdaki konu başlıklarından birini seçin:
 
-[Toplu satın alınan iOS uygulamalarını yönetme](vpp-apps-ios.md)
-[İş İçin Windows Mağazası'ndan toplu satın alınan uygulamaları yönetme](windows-store-for-business.md)
-
+- [Toplu satın alınan iOS uygulamalarını yönetme](vpp-apps-ios.md)
+- [İş İçin Windows Mağazası'ndan toplu satın alınan uygulamaları yönetme](windows-store-for-business.md)
+- [iOS e-Kitapları yönetme](vpp-ebooks-ios.md)

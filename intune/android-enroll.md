@@ -1,23 +1,29 @@
-mdm-authority-set---
-# <a name="required-metadata"></a>gerekli meta veriler
-
-başlık: Android cihazları Intune’a kaydetme titleSuffix: “Intune Azure önizlemesi” açıklama: “Intune Azure önizlemesi: Intune Azure önizlemesinde Android cihazları kaydetmeyi öğrenin.”
-anahtar kelimeler: author: nathbarn ms.author: nathbarn manager: angrobe ms.date: 04.12.2017 ms.topic: makale ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-
-# <a name="optional-metadata"></a>isteğe bağlı meta veriler
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: chrisbal ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-azure
-
 ---
-
+title: "Intune’da Android cihazları kaydetme"
+titleSuffix: Intune on Azure
+description: "Intune’da Android cihazları kaydetmeyi öğrenin.\""
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 06/28/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: f276d98c-b077-452a-8835-41919d674db5
+ms.reviewer: chrisbal
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
+---
 # <a name="enroll-android-devices"></a>Android cihazlarını kaydetme
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Bir Intune yöneticisi olarak, Intune size Samsung Knox Standard cihazları dahil olmak üzere Android cihazlarını yönetme olanağı tanır. Ayrıca, [Android for Work cihazlarında](#enable-enrollment-of-android-for-work-devices) iş profilini de yönetebilirsiniz.
 
@@ -25,15 +31,13 @@ Samsung KNOX Standard çalıştıran cihazlarda Intune ile birden çok kullanıc
 
 ## <a name="prerequisite"></a>Önkoşul
 
-Mobil cihazların yönetimine hazırlık olarak, **Microsoft Intune**’a MDM yetkilisi ayarlamanız gerekir. Yönergeler için bkz. [MDM yetkilisini ayarlama](mdm-authority-set.md). Intune’u mobil cihaz yönetimi için ilk kez ayarladığınız sırada bu öğeyi tek bir kez ayarlarsınız; dolayısıyla zaten ayarlamış olabilirsiniz.
+Mobil cihazların yönetimine hazırlık olarak, **Microsoft Intune**’a MDM yetkilisi ayarlamanız gerekir. Yönergeler için bkz. [MDM yetkilisini ayarlama](mdm-authority-set.md). Bu öğeyi yalnızca mobil cihaz yönetimi için Intune’u ilk defa kurduğunuzda ayarlayabilirsiniz.
 
 ## <a name="set-up-android-enrollment"></a>Android kaydını ayarlama
 
 Intune, Android ve Samsung Knox Standard cihazlarının kaydına varsayılan olarak izin verir.
 
-Android cihazların veya yalnızca kişisel Android cihazların kaydedilmesini engellemek için bkz. [Cihaz türü kısıtlamaları ayarlama](enrollment-restrictions-set.md#set-device-type-restrictions).
-
-Bir kullanıcının kaydedebileceği en fazla cihaz sayısını ayarlamak için bkz. [Cihaz sınırı kısıtlamaları ayarlama](enrollment-restrictions-set.md#set-device-limit-restrictions).
+Android cihazların veya yalnızca kişisel Android cihazların kaydedilmesini engellemek için bkz. [Cihaz türü kısıtlamaları ayarlama](enrollment-restrictions-set.md).
 
 Cihaz yönetimini etkinleştirmek için, kullanıcılarınızın Google Play'de bulunan Intune Şirket Portalı uygulamasını indirmeleri ve ardından uygulamayı açıp kaydolmaya yönelik istemleri izleyerek cihazlarını kaydetmeleri gerekir. Android cihazları yönetilir duruma geldikten sonra [uyumluluk ilkeleri atayabilir](compliance-policy-create-android.md), [uygulamaları yönetebilir](app-management.md) ve daha fazlasını yapabilirsiniz.
 
@@ -47,7 +51,7 @@ Cihaz yönetimini etkinleştirmek için, kullanıcılarınızın Google Play'de 
 Henüz yapmadıysanız, [mobil cihaz yönetimi yetkilisini](mdm-authority-set.md) **Microsoft Intune** olarak ayarlayarak mobil cihaz yönetimine hazırlanın.
 
 2. **Android for Work bağlamasını yapılandırma**<br>
-    Bir Intune yöneticisi olarak Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+    Bir Intune yöneticisi olarak Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**'u seçin.
 
     1. **Intune** dikey penceresinde **Cihaz kaydı**, > **Android for Work Kaydı**’nı seçin ve **Yapılandır**’a tıklayarak Google Play'in Android for Work web sitesini açın. Bu, tarayıcınızda yeni bir sekme açar.
   ![Android for Work bağlamasını yapılandır bağlantısını gösteren ekran görüntüsü](./media/android-work-bind.png)
@@ -78,7 +82,7 @@ Kullanıcılara, çevrimiçi kaydolma adımlarını gösteren bir bağlantı da 
 
 Diğer son kullanıcı görevleri hakkında daha fazla bilgi için şu makalelere bakın:
 
-- [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](end-user-educate.md)
 - [Android cihazınızı Intune ile kullanma](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Android for Work yönetici hesabınızın bağlamasını kaldırma
@@ -88,7 +92,7 @@ Android for Work kaydı ve yönetimini kapatabilirsiniz. Intune yönetim konsolu
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Bir Android for Work hesabının bağlamasını kaldırma
 
 1. **Android for Work bağlamasını kaldırma**<br>
-    Bir Intune yöneticisi olarak, Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.  **Intune** dikey penceresinde **Cihaz kaydı**, > **Android for Work Kaydı**’nı seçin ve **Bağlamayı kaldır**’a tıklayın.
+    Bir Intune yöneticisi olarak, Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**'u seçin.  **Intune** dikey penceresinde **Cihaz kaydı**, > **Android for Work Kaydı**’nı seçin ve **Bağlamayı kaldır**’a tıklayın.
 
 2. **Android for Work bağlamasını kaldırmayı kabul etme**<br>
   Bağlamayı silmek için **Evet**’e tıklayın tüm Android for Work cihazların Intune kaydını silin.

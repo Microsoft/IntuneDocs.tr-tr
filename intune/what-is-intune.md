@@ -1,12 +1,12 @@
 ---
-title: "Azure portalı önizlemesinde Intune’a giriş"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: Azure Portal önizlemesinde Intune hakkındaki temel bilgileri alın ve cihazlarınızı yönetmenize nasıl yardımcı olabileceğini öğrenin."
+title: "Azure portalında Intune’a giriş"
+titleSuffix: Intune on Azure
+description: "Azure portalında Intune hakkındaki temel bilgileri alın ve cihazlarınızı yönetmenize nasıl yardımcı olabileceğini öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,35 +14,30 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/10/2017
 ---
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure portalında Microsoft Intune’a giriş
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Azure Portal önizlemesinde Microsoft Intune’a giriş
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Microsoft Intune Azure Portal’a taşınıyor ve bu da alıştığınız iş yükleriyle işlevlerin değişeceği anlamına geliyor.
-Yeni portal, kuruluşunuzun mobil cihazlarını, bilgisayarlarını ve uygulamalarını yönetebileceğiniz Azure portalındaki yeni ve güncelleştirilmiş işlevlerin bir önizlemesini sunuyor.
-Tüm Intune işlevselliği sonunda Azure’a taşınacaktır. Ancak pek çok Intune görevini bugünden Azure portalında gerçekleştirebilirsiniz. Bu yeni deneyim henüz önizleme aşamasında olduğundan, bazı işlevler henüz portalda bulunmayabilir. Ayrıntılı bilgiler için [Yenilikler](#whats-new) bölümünü gözden geçirin.
+Microsoft Intune artık Azure portalda; bu da alıştığınız iş yükleriyle işlevlerin artık farklı olduğu anlamına geliyor.
+Yeni portal, Azure portalında kuruluşunuzun mobil cihazlarını, bilgisayarlarını ve uygulamalarını yönetebileceğiniz yeni ve güncelleştirilmiş işlevler sunuyor.
 
 > [!IMPORTANT]
 > **Henüz yeni portalı görmüyor musunuz?**<br>
-> Belirli kiracılara önizlemenin dağıtımına şimdiden başladık. 2017 takvim yılının başlarında mevcut kiracıların yeni deneyime geçirilmesine başlanacak. Kiracınızın geçişinden önce, Office İleti Merkezi’nde bir bildirim alacaksınız.
+> Mevcut kiracılar yeni deneyime geçiriliyor. Kiracınız geçirilmeden önce Office İleti Merkezi'nde bir bildirim gösterilir.
 >
-> Apple Kaydı iş akışlarının Azure’da kullanılabilmesi için, Ocak 2017 öncesi oluşturulan Intune hesaplarında tek seferlik bir geçiş yapılması gerekir. Geçiş için zaman çizelgesi henüz açıklanmamıştır, ancak konuya ilişkin ayrıntılar olabildiğince çabuk duyurulacaktır. Mevcut hesabınız önizleme sürümüne erişemiyorsa, yeni deneyimi test etmek için bir deneme hesabı oluşturmanızı kesinlikle öneririz.
+> Apple Kaydı iş akışlarının Azure’da kullanılabilmesi için Ocak 2017 öncesinde oluşturulan Intune hesaplarında tek seferlik bir geçiş yapılması gerekir. Geçiş için zaman çizelgesi henüz duyurulmamıştır. Mevcut hesabınız Azure portalına erişemiyorsa bir deneme hesabı oluşturmanızı öneririz.
+>
+> Olası engelleyiciler listesini gözden geçirin: https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
-Yeni ürün belgelerini bu kitaplıkta bulabileceksiniz ve önizleme boyunca kitaplık güncelleştirilecek. Görmek istediklerinize ilişkin önerileriniz varsa, lütfen konu yorumlarında geri bildirim sağlayın. Görüşlerinizi öğrenmeyi çok isteriz.
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+Bu kitaplıkta yeni portal hakkında bilgiler bulabilirsiniz ve bunlar sürekli olarak güncelleştirilir. Görmek istediklerinize ilişkin önerileriniz varsa konu yorumlarında geri bildirim sağlayın. Görüşlerinizi öğrenmeyi çok isteriz.
 
 Yeni deneyimde öne çıkan özellikler:
 
@@ -78,9 +73,9 @@ Aradığınız bilgileri bulmanızı kolaylaştırmak için, belgeler Intune por
 ![Azure Portal iş yükleri](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>Giriş ve çalışmaya başlama
-Bu bölüm, [yenilikler](whats-new.md), [bilinen sorunlar](known-issues.md), [nasıl destek alınacağı](get-support.md) ve Intune [ücretsiz deneme sürümünü kullanmaya başlama](free-trial-sign-up.md) hakkında bilgiler içerir.
+Bu bölüm, Intune kullanmaya başlamanıza yardımcı olacak [giriş bilgileri](introduction-intune.md) içerir.
 ### <a name="plan-and-design"></a>Planlama ve tasarlama
-Intune ortamınızı [planlamanıza ve tasarlamanıza](/intune-classic/plan-and-design/introduction) yardımcı olacak bilgiler.
+Intune ortamınızı [planlamanıza ve tasarlamanıza](/intune-classic/plan-design/introduction) yardımcı olacak bilgiler.
 ### <a name="device-enrollment"></a>Cihaz kaydı
 [Cihazlarınızın Intune tarafından yönetilmesini nasıl sağlarsınız?](device-enrollment.md).
 ### <a name="device-compliance"></a>Cihaz uyumluluğu
@@ -96,7 +91,7 @@ Intune ortamınızı [planlamanıza ve tasarlamanıza](/intune-classic/plan-and-
 ### <a name="on-premises-access"></a>Şirket içi erişim
 [Exchange ActiveSync’e ve şirket içi Exchange’e erişimi yapılandırma](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### <a name="users"></a>Users
-[Yönettiğiniz cihazların kullanıcıları hakkında bilgi edinin ve kaynakları gruplara ayırın](user-management.md).
+[Yönettiğiniz cihazların kullanıcıları hakkında bilgi edinin ve kaynakları gruplara ayırın](users-add.md).
 ### <a name="groups"></a>Gruplar
 [Azure Active Directory gruplarını Intune'la nasıl kullanabileceğiniz hakkında bilgi edinin](groups-get-started.md)
 ### <a name="intune-roles"></a>Intune rolleri
@@ -108,5 +103,4 @@ Intune ortamınızı [planlamanıza ve tasarlamanıza](/intune-classic/plan-and-
 
 ## <a name="whats-new"></a>Yenilikler
 
-[Önizleme sürümündeki yenilikleri keşfedin](whats-new.md).
-
+[Intune’daki yenilikleri öğrenin](whats-new.md).

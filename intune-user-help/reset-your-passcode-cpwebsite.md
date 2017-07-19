@@ -5,43 +5,39 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihaz geçiş kodunuzu sıfırlama
 
 Intune’a kaydettiğiniz bir cihazın PIN kodunu veya parolasını kaybederseniz, sıfırlamak için [Şirket Portalı web sitesini](http://portal.manage.microsoft.com) kullanabilirsiniz. Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek ve Şirket Portalı uygulamasını kullanırken gerçekleştirebileceğiniz görevlerin çoğunu yapmak için Şirket Portalı web sitesini kullanabilirsiniz.
 
 > [!NOTE]
-> Şirket Portalı web sitesinde **Geçiş Kodunu Sıfırlama**  düğmesini görmemeniz olasıdır. Görmezseniz, Şirket Portalı web sitesinden destek almak için BT yöneticinize başvurmanız gerekir.
+> Şirkete kayıtlı bir cihaz kullanıyorsanız Şirket Portalı web sitesinde Geçiş Kodunu Sıfırla düğmesini görmeyebilirsiniz. Bu düğmeyi göremiyorsanız sizin için şifreyi sıfırlaması adına BT yöneticinizle görüşün.
 
 Geçiş kodunuzu sıfırlamak için:
 
-1.    [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
+1.  [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/intune/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
 
 2. __Cihazlarım__ sayfasında, geçiş kodunu sıfırlamak istediğiniz cihazın adını seçin.
 
   ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    Cihaz, bir açılan pencere içinde açılır. **Geçiş Kodunu Sıfırla** düğmesini seçin.
+3.  Cihaz, bir açılan pencere içinde açılır. **Geçiş Kodunu Sıfırla** düğmesini seçin.
 
     ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitleme dahil tüm seçenekler. ](./media/iwp-screen-with-all-options.png)
 
@@ -55,11 +51,14 @@ Geçiş kodunuzu sıfırlamak için:
 
   Farklı cihazların farklı türlerde geçiş kodları vardır.
 
-  **Android**: Mevcut geçiş kodunu kaldırır ve hem harfler hem de sayılarla geçici bir geçiş kodu oluşturur
+  **Android**: Mevcut geçiş kodunu kaldırır ve hem harfler hem de sayılarla geçici bir geçiş kodu oluşturur 
+  
+  > [!NOTE]
+  > Android 7.0 ve üzerini kullanan cihazlarda geçiş kodunu sıfırlayamazsınız. Parolanızı unutursanız cihazı fabrika ayarlarına sıfırlamanız gerekir.
 
   **iOS**: Geçiş kodunu kaldırır ve geçici bir geçiş kodu oluşturmaz. Cihazınızı açmak veya satın alma işlemleri         yapmak için Touch ID parmak izi tarayıcısını kullanıyorsanız, yeniden kurmanız gerekecektir.
 
-  **Windows 10 Mobile**: Mevcut geçiş kodunu kaldırır ve hem harfler hem de sayılarla geçici bir geçiş kodu oluşturur. Oturum açmak         için Windows Hello yüz tanımayı kullanıyorsanız yine de desteklenecektir.
+  **Windows 10 Mobile**: Mevcut geçiş kodunu kaldırır ve hem harfler hem de sayılarla geçici bir geçiş kodu oluşturur. Oturum açmak için Windows Hello yüz tanıma kullanıyorsanız, hala desteklenecektir.
     
   **Windows Phone 8.1**: Mevcut geçiş kodunu kaldırır ve sayılarla geçici bir geçiş kodu oluşturur
 
@@ -70,4 +69,3 @@ Geçiş kodunuzu sıfırlamak için:
 Parolanızın başarıyla sıfırlandığını onaylayan bir bildirim görmek için, Şirket Portalı web sitesinin sağ üst kısmındaki bildirim bayrağına tıklayın.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-

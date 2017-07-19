@@ -1,33 +1,29 @@
 ---
-title: "iOS Classroom uygulaması için Intune ayarları | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure önizlemesi: iOS cihazlarındaki Classroom uygulamasının ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
+title: "iOS Classroom uygulaması için Intune ayarları"
+titleSuffix: Intune on Azure
+description: "iOS cihazlarındaki Classroom uygulamasının ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
-ms.reviewer: heenamac
+ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f24636687291ff55686277c3f24b2774cfb32f4
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4188c3951c9cb864b77bde52a5d19f022f17c11c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom uygulaması için Intune ayarlarını yapılandırma
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Giriş
 [Classroom](https://itunes.apple.com/app/id1085319084), öğretmenlerin öğrenmeye yol göstermesine ve sınıftaki öğrenci cihazlarını denetlemesine yardımcı olan bir uygulamadır. Örneğin, bir öğretmen uygulamayı kullanarak şunları yapabilir:
@@ -38,14 +34,14 @@ ms.lasthandoff: 05/23/2017
 - Öğrenci iPad’lerini bir yer işaretine veya kitaptaki bir bölüme yönlendirebilir
 - Apple TV’de bir öğrenci iPad’inin ekranını görüntüleyebilir
 
-Classroom uygulamasını ve bu uygulamayı çalıştıran cihazları ayarlamak için Intune iOS **Eğitim** cihaz profilini ve bu konu başlığındaki bilgileri kullanın.
+Classroom uygulamasını ve bu uygulamayı çalıştırdığınız cihazları ayarlamak için Intune iOS **Eğitim** cihaz profilini ve bu konu başlığındaki bilgileri kullanın.
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
 Bu ayarları yapılandırmaya başlamadan önce, aşağıdakilere dikkat edin:
 
 - Hem öğretmen hem de öğrenci iPad cihazlarının Intune'a kayıtlı olması gerekir
-- Öğretmenin cihazına [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) uygulamasını yüklediğinizden emin olun. Bunu el ile yapabilir veya [Intune uygulama yönetimini](app-management.md) kullanabilirsiniz.
+- Öğretmenin cihazına [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) uygulamasını yüklediğinizden emin olun. Uygulamayı el ile yükleyebilir veya [Intune uygulama yönetimi](app-management.md)'ni kullanabilirsiniz.
 - Öğretmen ve öğrenci cihazları arasındaki bağlantıların kimliğini doğrulamak için sertifikaları yapılandırmanız gerekir (bkz. 2. Adım)
 - Öğretmen ve öğrencilerin iPad cihazları aynı Wi-Fi ağında olmalı ve cihazların Bluetooth özellikleri etkin olmalıdır
 - Classroom uygulaması iOS 9.3 veya üzerini çalıştıran denetimli iPad cihazlarında çalışır
@@ -57,9 +53,9 @@ Bu ayarları yapılandırmaya başlamadan önce, aşağıdakilere dikkat edin:
 Mevcut Öğrenci Bilgi Sisteminden (SIS) Azure Active Directory’ye (Azure AD) okul kayıtlarını içeri aktarmak için Microsoft'un School Data Sync (SDS) özelliğini kullanın.
 SDS, SIS bilgilerinizi eşitler ve Azure AD'de depolar. Azure AD, kullanıcıları ve cihazları düzenlemenize yardımcı olan bir Microsoft yönetim sistemidir. Ardından öğrencilerinizi ve sınıflarınızı yönetmenize yardımcı olması için bu verileri kullanabilirsiniz. [SDS dağıtma hakkında daha fazla bilgi edinin](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 
-### <a name="how-to-import-data-using-sds"></a>SDS kullanarak nasıl veri aktarılır?
+### <a name="how-to-import-data-using-sds"></a>SDS kullanarak veri aktarma
 
-Aşağıdakilerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
+Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 
 - [CSV dosyaları](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1) - Virgülle ayrılmış değer (.csv) dosyalarını el ile dışa aktarma ve derleme
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f) - Azure AD ile eşitlemeyi basitleştiren bir SIS sağlayıcısı
@@ -77,14 +73,14 @@ Aşağıdakilerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 ### <a name="configure-general-settings"></a>Genel ayarları yapılandırma
 
 1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
-3.    **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
-4.    **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
-5.    Profiller dikey penceresinde **Profil Oluştur**’u seçin.
-6.    **Profil Oluştur** dikey penceresinde, iOS eğitim profili için **Ad** ve **Açıklama** girin.
-7.    **Platform** açılan listesinden **iOS**’yi seçin.
-8.    **Profil türü** açılan listesinde **Eğitim**’i seçin.
-9.    **Ayarlar** > **Yapılandır**’ı seçin.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+3.  **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
+4.  **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
+5.  Profiller dikey penceresinde **Profil Oluştur**’u seçin.
+6.  **Profil Oluştur** dikey penceresinde, iOS eğitim profili için **Ad** ve **Açıklama** girin.
+7.  **Platform** açılan listesinden **iOS**’yi seçin.
+8.  **Profil türü** açılan listesinde **Eğitim**’i seçin.
+9.  **Ayarlar** > **Yapılandır**’ı seçin.
 
 
 Ardından, öğretmen ve öğrencilerin iPad cihazları arasında bir güven ilişkisi kurmak için sertifikalara ihtiyacınız olacaktır. Sertifikalar, kullanıcı adları ve parolaları girmeye gerek olmadan cihazlar arasında bağlantıların kimliğini sorunsuz ve sessiz bir şekilde doğrulamak için kullanılır.
@@ -92,7 +88,7 @@ Ardından, öğretmen ve öğrencilerin iPad cihazları arasında bir güven ili
 >[!IMPORTANT]
 >Kullandığınız öğretmen ve öğrenci sertifikalarının, farklı sertifika yetkilileri (CA’lar) tarafından verilmiş olması gerekir. Mevcut sertifika altyapınıza bağlı iki yeni alt CA oluşturmanız gerekir; biri öğretmenler, diğeri öğrenciler için.
 
-iOS eğitim profilleri yalnızca PFX sertifikalarını destekler; SCEP sertifikaları desteklenmez.
+iOS eğitim profilleri yalnızca PFX sertifikalarını destekler. SCEP sertifikaları desteklenmez.
 
 Oluşturduğunuz sertifikaların, kullanıcı kimlik doğrulamasına ek olarak sunucu kimlik doğrulamasını da desteklemesi gerekir.
 
@@ -120,8 +116,8 @@ Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 
 ### <a name="configure-student-certificates"></a>Öğrenci sertifikalarını yapılandırma
 
-1.    **Eğitim** dikey penceresinde, **Öğrenci sertifikaları**’nı seçin.
-2.    **Öğrenci sertifikaları** dikey penceresinde, **Öğrenci cihaz sertifikaları** türü listesinde yazın, **1:1** seçeneğini belirleyin.
+1.  **Eğitim** dikey penceresinde, **Öğrenci sertifikaları**’nı seçin.
+2.  **Öğrenci sertifikaları** dikey penceresinde, **Öğrenci cihaz sertifikaları** türü listesinde yazın, **1:1** seçeneğini belirleyin.
 
 #### <a name="configure-student-root-certificate"></a>Öğrenci kök sertifikasını yapılandırma
 
@@ -143,8 +139,8 @@ Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 
 ## <a name="finish-up"></a>Bitirme
 
-1.    **Eğitim** dikey penceresinde, Tamam'ı seçin.
-2.    **Profil Oluştur** dikey penceresinde, **Oluştur**’u seçin.
+1.  **Eğitim** dikey penceresinde, Tamam'ı seçin.
+2.  **Profil Oluştur** dikey penceresinde, **Oluştur**’u seçin.
     
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 
@@ -156,3 +152,4 @@ Böylece, bir öğretmen Classroom uygulamasını kullandığında, öğrenci ci
 
 Classroom uygulaması hakkında daha fazla bilgi için Apple web sitesindeki [Classroom yardımı](https://help.apple.com/classroom/ipad/2.0/) bölümüne bakın.
 
+Öğrenciler için paylaşılan iPad cihazları yapılandırmak istiyorsanız bkz. [Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma](education-settings-configure-ios-shared.md).

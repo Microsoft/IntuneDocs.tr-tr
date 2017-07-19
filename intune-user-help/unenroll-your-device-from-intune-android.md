@@ -5,51 +5,37 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3fe1ec94f3112a252b9694449d341f336e97e635
-ms.contentlocale: tr-tr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c17389164df2f458ad5e3185f37a92791a83b129
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>Android cihazınızın Intune kaydını silme
 
 Android cihazınızın Intune kaydını sildiğinizde cihazınız şirket kaynaklarına bir daha erişemez.  Kaydı sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 
-Cihazınızın Intune kaydını silmek ve Şirket Portalı uygulamasını kaldırmak için aşağıdaki adımları izleyin veya bu videoyu izleyin:
+Cihazınızın Intune kaydını silmek ve Şirket Portalı uygulamasını kaldırmak için, aşağıdaki adımları izleyin:
 
-<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
+1. Şirket Portalı uygulamasının sağ üst köşesindeki üç dikey noktaya dokunarak **eylem menüsünü** açın. 
 
-1. **Ayarlar** uygulamanızı açın, **Cihaz yöneticileri** bölümüne gidin ve **Şirket Portalı**'nı kapatın. Cihazınıza bağlı olarak **Cihaz yöneticileri** ayarının adı veya tercih listesindeki yeri farklı olabilir.
+  ![Android Şirket Portalı uygulamasının bir görüntüsü, eylem menüsüyle birlikte sağ üst köşede açılır. Yeni "şirket portalını kaldır" seçeneği; "profilim" ve "ayarlar" seçeneklerinin altında ve "hüküm ve koşullar", "yardım ve geri bildirim" ve "hakkında" seçeneklerinin üstünde üçüncü bir seçenek olarak bulunur.](./media/android_remove_cp_menu_action_after_1705.png)
 
-2.  Şirket Portalı uygulamasında oturum açın.
+2. **Şirket Portalı’nı Kaldır**’a dokunun.
 
-3.  **Cihazlarım**’a dokunun ve ardından kaydını silmek istediğiniz cihazı seçin.
+3. Açılan bir onay penceresi Şirket Portalı'nı kaldırmak istediğinizden emin olup olmadığınızı sorar. Cihazınızın kaydını sildiğinizde neler olacağı hakkında bazı bilgiler verir. Bu iletiyi okuduktan sonra uygulamayı kaldırmak için **Tamam**'a dokunun. 
 
-    ![Kaydını silmek istediğiniz cihazı seçin.](./media/andr-1-my-devices-choose.png)
-
-4.  Çöp kutusu simgesine dokunun.
-
-    ![Çöp kutusu simgesine dokunun.](./media/andr-2-tap-trashcan.png)
-
-5.  Uyarı sayfasında cihazınızın kaydını silmek için **Tamam** öğesine dokunun.
-
-    ![Cihazı kaldırın.](./media/andr-3-warning-about-remove.png)
+  ![Eylem menüsünden "şirket portalını kaldır" seçeneği işaretlendikten sonra görünen onay iletişim kutusunun bir görüntüsü. İletişim kutusu, kullanıcıyı "şirket portalını kaldırdığınızda, cihazınız artık BT yöneticiniz tarafından yönetilmeyecek ve şirket verilerine, şirket uygulamalarına ve şirket e-postasına erişim kaldırılabilir" metniyle bilgilendirir. Ardından kullanıcıdan Şirket Portalı uygulamasını kaldırmak istediğini "Evet"'i seçerek onaylamasını ister.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
-
