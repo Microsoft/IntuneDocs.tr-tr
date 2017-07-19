@@ -1,12 +1,6 @@
 # Anlama ve Keşfetme
 ## [Intune'a giriş](/intune/introduction-intune?toc=/intune-classic/toc.json)
 ## [Intune için eğitim](/intune/introduction-intune-education?toc=/intune-classic/toc.json)
-## [Ücretsiz deneme için kaydolma](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
-## [Intune MDM'yi değerlendirme](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
-### [Kullanıcıları ve cihazları düzenlemek için grup oluşturma](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [İlke oluşturma ve uygulama yayımlama](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
-### [Diğer seçenekler ve ek özellikler](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### [Ücretli aboneliğe dönüştürme](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [MAM ve uygulama koruması SSS](understand-explore/mam-faq.md)
 ## [Yaygın senaryolar](/intune/common-scenarios?toc=/intune-classic/toc.json)
 
