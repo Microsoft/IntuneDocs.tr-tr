@@ -1,11 +1,11 @@
 ---
 title: "Intune geçiş kampanyası başlatma"
-description: "Bu makalenin amacı, bir geçiş kampanyası başlatma hakkında rehberlik sağlamaktır."
+description: "Bu makalede, bir geçiş işlemi başlatma hakkında yol gösterilmektedir."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,34 +13,31 @@ ms.technology:
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 9690572fd5f17fece0de7b533c98bfc52d77615b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a272d9c822a2c17592d7800c20278ce222d615bd
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="phase-2-migration-campaign"></a>2. Aşama: Geçiş Kampanyası
+# <a name="phase-2-migration-campaign"></a>2. Aşama: Geçiş işlemi
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Kuruluşların, kendi gereksinimlerine en uygun geçiş yaklaşımını benimsemeleri ve uygulama taktiklerini özel gereksinimlerine göre ayarlamaları gerekir. Bu rehberin geri kalanında kullanıcınızın cihazlarını Intune'a kaydetme amacına ulaşmanız için gereken araçlar sağlanacaktır.
+Kuruluşunuzun gereksinimlerinize en uygun geçiş yaklaşımını seçin ve uygulama taktiklerini özel gereksinimlerinize göre ayarlayın. Bu rehberin geri kalanında kullanıcılarınızın cihazlarını Intune’a kaydetme amacına ulaşmanız için gereken araçlar sağlanacaktır.
 
 ## <a name="keys-to-a-successful-migration"></a>Başarılı bir geçişin önemli noktaları
 
-Bir üçüncü taraf MDM sağlayıcısından Intune’a geçiş sırasında öğrenilen önemli dersler şunlardır:
+Bir üçüncü taraf MDM sağlayıcısından Intune’a geçişin olmazsa olmazları şöyledir:
 
--   İletişim, son kullanıcının devre dışı kalma süresini en aza indirmek ve memnuniyet için büyük önem taşır.
+-   Açık bir iletişim ile yardım yoluyla son kullanıcı kesinti süreleri ve memnuniyetsizliği en aza indirgenir.
 
 -   Belirli ve somut geçiş yönergeleriniz olduğundan emin olun.
 
 -   Intune’a kayıt öncesinde tüm yönetilen cihazların mevcut MDM sağlayıcısındaki kayıtları silinmelidir.
 
--   Son kullanıcılara cihazlarının kaydını nasıl kaldıracakları konusunda mevcut MDM sağlayıcısından yönergeler sağlayın.
+-   Son kullanıcılara cihazlarının kaydını nasıl kaldıracakları konusunda mevcut MDM sağlayıcınızdan yönergeler sağlayın.
 
 -   Aşamalı bir yaklaşım kullanın. Küçük bir pilot kullanıcı grubu kullanın ve tam ölçekli dağıtıma ulaşana kadar aşamalı olarak daha fazla kullanıcı grubu ekleyin.
 
--   Her döngünün Yardım masası yükünü ve kayıt başarısını izleyin. Her grup için başarı ölçütlerinin bir sonrakine geçmeden önce değerlendirilmesini sağlamak için zaman çizelgesinde süre bırakın. Pilot dağıtımınız aşağıdakileri doğrulamalıdır:
+-   Her döngünün yardım masası yükünü ve kayıt başarısını izleyin. Her grup için başarı ölçütlerinin bir sonrakine geçmeden önce değerlendirilmesini sağlamak için zaman çizelgesinde süre bırakın. Pilot dağıtımınız aşağıdakileri doğrulamalıdır:
 
     -   Kayıt başarı ve başarısızlık hızları beklentiler dahilindedir.
 
@@ -48,25 +45,25 @@ Bir üçüncü taraf MDM sağlayıcısından Intune’a geçiş sırasında öğ
 
         -   VPN, Wi-Fi, e-posta ve sertifikalar gibi şirket kaynakları çalışır durumdadır.
 
-        -   Sağlanan Uygulamalara erişilebilir.
+        -   Sağlanan uygulamalara erişilebilir.
 
     -   Veri güvenliği:
 
-        -   Uyumluluk raporlaması
+        -   Uyumluluk raporlaması yapılıyor.
 
-        -   Mobil uygulama korumaları zorlanır
+        -   Mobil uygulama korumaları uygulanıyor.
 
--   Geçişin ilk aşamasından memnun kaldığınızda, Geçiş Döngüsünü (Aşağıda Tipik Geçiş Döngüsü altında açıklanır) sonraki aşama için yineleyin.
+Geçişin ilk aşamasını tamamladıktan sonra, gelecek aşama için [geçiş döngüsünü](migration-guide-cycle.md) yineleyin.
 
 -   Tüm kullanıcılar Intune’a geçirilene kadar aşamalı döngüleri yineleyin.
 
--   Yardım Masası ekibinin geçiş kampanyası boyunca son kullanıcıları desteklemesini sağlayın. Destek çağrısı iş yükünü tahmin edebilene kadar gönüllü bir geçiş çalıştırın.
+-   Yardım masası ekibinin, geçiş süreci boyunca son kullanıcıları desteklemeye hazır olduğundan emin olun. Destek çağrısı iş yükünü tahmin edebilene kadar gönüllü bir geçiş çalıştırın.
 
--   Yardım Masası kalan kullanıcı sayısıyla başa çıkabilir duruma gelene kadar son tarih belirlemeyin
+-   Yardım masası, kalan kullanıcı sayısıyla başa çıkabilecek duruma gelene kadar kayıt için bir son tarih belirlemeyin
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Exchange veya SharePoint Online gibi kaynaklara erişim denetimleri uygulamak için hem Intune hem de mevcut üçüncü taraf MDM çözümünüzü yapılandırmayın. Ayrıca, cihazların aynı anda yalnızca bir çözüme kayıtlı olması gerekir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[İletişim planı](migration-guide-communication-plan.md)
+[İletişim planınızı](migration-guide-communication-plan.md) oluşturun.

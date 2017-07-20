@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/28/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18272f21799253128cfe0ad6aa66e108b24a0b50
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aae944c86029be6eaa111ce7c274a466095651d1
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="add-apps-with-microsoft-intune"></a>Microsoft Intune’la uygulamaları ekleme
 
@@ -37,7 +37,7 @@ Microsoft Intune’la uygulamaları dağıtmaya başlamadan önce, biraz zaman a
 |**iOS için Uygulama Paketi (&#42;.ipa)**|iOS uygulamalarını dağıtmak için geçerli bir .ipa paketiniz olmalıdır.<br><br>.ipa paketi Apple tarafından imzalanmalı ve sağlama profilinde belirtilen sona erme tarihi geçerli olmalıdır. Intune, kuruluş sertifikası iOS uygulamalarını dağıtabilir.<br><br>Tüm Apple geliştirici sertifikası uygulamaları desteklenmez.<br><br>Şirketiniz iOS Geliştirici Kurumsal Programı'na kayıtlı olmalıdır.<br><br>Kuruluşunuzun güvenlik duvarının iOS sağlama ve sertifika web sitelerine erişim izni verdiğinden emin olun.<br><br>Uygulamayla birlikte bildirim dosyası (.plist) dağıtmanız gerekmez.|
 |**Windows Phone uygulama paketi (&#42;.xap, .appx, .appxbundle)**|Uygulamaları dağıtmak için, bir kurumsal mobil kod imzalama sertifikası gerekir. Ayrıntılar için bkz. [Microsoft Intune ile Windows Phone yönetimini ayarlama](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows uygulama paketi (.appx, .appxbundle)**|Uygulamaları dağıtmak için, bir kurumsal mobil kod imzalama sertifikası gerekir. Ayrıntılar için bkz. [Microsoft Intune ile Windows cihazı yönetimini ayarlama](set-up-windows-device-management-with-microsoft-intune.md).|
-|**MDM aracılığıyla Windows Installer (&#42;.msi)**|Bu uygulamayı Windows Installer tabanlı uygulamalar oluşturmak ve Windows 10 çalıştıran kayıtlı bilgisayarlara dağıtmak için kullanırsınız. Bu bilgisayarlar, mobil cihaz yönetimi (MDM) üzerinden yönetilir.<br /><br />Yalnızca .msi uzantılı tek bir dosyayı karşıya yükleyebilirsiniz.<br><br>Dosyanın ürün kodu ve ürün sürümü, uygulama algılama için kullanılır.<br><br>Uygulamanın varsayılan yeniden başlatma davranışı kullanılır. Intune bunu denetlemez.<br><br>Tek bir kullanıcı için kullanıcı başına MSI paketleri yüklenir.<br><br>Cihazdaki tüm kullanıcılar için makine başına MSI paketleri yüklenir.<br><br>Çift modlu MSI paketleri şu anda yalnızca cihazdaki tüm kullanıcılar için yüklenir.<br><br>Her sürümün MSI ürün kodu aynı olduğunda uygulama güncelleştirmeleri desteklenir.<br>
+|**MDM aracılığıyla Windows Installer (&#42;.msi)**|Bu uygulamayı Windows Installer tabanlı uygulamalar oluşturmak ve Windows 10 çalıştıran kayıtlı bilgisayarlara dağıtmak için kullanırsınız. Bu bilgisayarlar, mobil cihaz yönetimi (MDM) üzerinden yönetilir.<br /><br />Yalnızca .msi uzantılı tek bir dosyayı karşıya yükleyebilirsiniz.<br><br>Dosyanın ürün kodu ve ürün sürümü, uygulama algılama için kullanılır.<br><br>Uygulamanın varsayılan yeniden başlatma davranışı kullanılır. Intune bu davranışı denetlemez.<br><br>Tek bir kullanıcı için kullanıcı başına MSI paketleri yüklenir.<br><br>Cihazdaki tüm kullanıcılar için makine başına MSI paketleri yüklenir.<br><br>Çift modlu MSI paketleri şu anda yalnızca cihazdaki tüm kullanıcılar için yüklenir.<br><br>Her sürümün MSI ürün kodu aynı olduğunda uygulama güncelleştirmeleri desteklenir.<br>
 Tüm yazılım yükleyicisi uygulama türleri bulut depolama alanınıza yüklenir.
 
 ### <a name="external-link"></a>**Dış Bağlantı**
@@ -61,7 +61,7 @@ Microsoft Intune Yazılım Yayımcısı, Intune yönetici konsolundan uygulama e
 Yazılım yayımcısını kullanmaya başlamadan önce [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851)'ın tam sürümünü yüklemeniz gerekir. Yüklemeden sonra yazılım yayımcısının doğru şekilde açılması için bilgisayarınızı yeniden başlatmanız gerekebilir.
 
 ## <a name="cloud-storage-space"></a>Bulut depolama alanı
-Yazılım yükleyicisi yükleme türünü kullanarak oluşturduğunuz tüm uygulamalar (örneğin, bir iş kolu uygulaması) paketlenir ve Microsoft Intune bulut depolama alanına yüklenir. Intune deneme aboneliği, yönetilen uygulamaları ve güncelleştirmeleri depolamak için kullanılan 2 gigabayt (GB) bulut tabanlı depolama alanı içerir. Tam aboneliğiniz 20 GB depolama alanı içerir.
+Yazılım yükleyicisi yükleme türünü kullanarak oluşturduğunuz tüm uygulamalar, Microsoft Intune bulut depolama alanına yüklenir. Intune deneme aboneliği, yönetilen uygulamaları ve güncelleştirmeleri depolamak için kullanılan 2 gigabayt (GB) bulut tabanlı depolama alanı içerir. Tam aboneliğiniz 20 GB depolama alanı içerir.
 
 **Yönetici** çalışma alanının **Depolama Kullanımı** düğümünde ne kadar alan kullandığınızı görebilirsiniz. Orijinal satın alma metodunuzu kullanarak Intune için ek depolama alanı satın alabilirsiniz.  Fatura veya kredi kartıyla ödeme yaptıysanız [Abonelik Yönetim portalını](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions) ziyaret edin.  Başka bir satın alma yöntemi kullandıysanız iş ortağınız veya satış yardımcınızla iletişime geçin.
 
@@ -74,7 +74,7 @@ Bulut depolama alanı gereksinimleri aşağıda belirtilmiştir:
 ## <a name="support-for-universal-windows-platform-uwp-apps"></a>Evrensel Windows Platformu (UWP) uygulamaları desteği
 Windows 10 bilgisayarları, iş kolu uygulamalarını yüklemek için dışarıdan yükleme anahtarı gerektirmez. Bununla birlikte, dışarıdan yüklemeyi etkinleştirmek için, **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** kayıt defteri anahtarının değeri **1** olmalıdır.
 
-Bu kayıt defteri anahtarı yapılandırılmazsa, cihaza ilk kez uygulama dağıttığınızda Intune bu değeri otomatik olarak **1**’e ayarlar. Bu değeri **0** olarak ayarlarsanız, Intune değeri otomatik olarak değiştiremez ve iş kolu uygulamalarının dağıtımı başarısız olur.
+Bu kayıt defteri anahtarı yapılandırılmazsa cihaza ilk kez uygulama dağıttığınızda Intune bu değeri otomatik olarak **1**’e ayarlar. Bu değeri **0** olarak ayarlarsanız, Intune değeri otomatik olarak değiştiremez ve iş kolu uygulamalarının dağıtımı başarısız olur.
 
 Evrensel Windows Platformu iş kolu uygulamaları, uygulamanın dağıtıldığı her cihazda güvenilen bir kod imzalama sertifikasıyla imzalanmalıdır. Şirket içi ortak anahtar altyapısından (PKI) bir sertifika veya cihaza yüklenmiş üçüncü taraf genel kök sertifikasından bir sertifika kullanabilirsiniz.
 
@@ -83,8 +83,8 @@ Windows 10 Mobile cihazlarında, evrensel **.appx** uygulamalarını imzalamak i
 ### <a name="dependencies-for-uwp-apps"></a>UWP uygulamaları için bağımlılıklar
 
 Intune’a bir Windows 10 Evrensel appxbundle paketi eklediğinizde, uygulama için tüm bağımlılıkların karşıya yüklendiğinden emin olmalısınız.
-Bunu yapmak için uygulama oluşturulduğunda oluşturulan **Bağımlılıklar** klasörünün .appxbundle dosyası ile aynı klasörde olduğundan emin olun.
-Bu şekilde, uygulamayı Intune’a yüklediğinizde **Bağımlılıklar** klasöründeki tüm dosyalar da karşıya yüklenir. Aşağıdaki ekran görüntüsü bunu göstermektedir:
+Bağımlılıkları karşıya yüklemek için, uygulama oluşturulduğunda oluşturulan **Bağımlılıklar** klasörünün .appxbundle dosyası ile aynı klasörde olduğundan emin olun.
+Bu şekilde, uygulamayı Intune’a yüklediğinizde **Bağımlılıklar** klasöründeki tüm dosyalar da karşıya yüklenir. Aşağıdaki ekran görüntüsü bu işlemi göstermektedir:
 
 
 ![Windows 10 UWP appxbundle bağımlılıklarını seçme](./media/w10-dependencies.png)

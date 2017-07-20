@@ -1,6 +1,6 @@
 ---
 title: Intune temel kurulumu
-description: "Bu makalenin amacı, Microsoft Intune’u kurmak için gerekli adımları sağlamaktır."
+description: "Bu makalede, Microsoft Intune’u ayarlamak için gerekli adımlar sağlanmaktadır."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c3129b2a8d93e91493455da5f3e5fd1a59dd77bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9ea12f3707b830f0e3426526a7ae91d176d6e809
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="basic-setup"></a>Temel kurulum
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 Ortamınızı değerlendirdikten sonra, Intune'u kurma aşamasına gelmiş olursunuz.
 
@@ -30,27 +27,25 @@ Ortamınızı değerlendirdikten sonra, Intune'u kurma aşamasına gelmiş olurs
 
 ### <a name="identity"></a>Kimlik
 
-Intune, kimlik ve kullanıcı gruplama sağlayıcısı olarak Azure Active Directory (AAD) gerektirir.
+Intune, kimlik ve kullanıcı gruplama sağlayıcısı olarak Azure Active Directory (AAD) gerektirir. Daha fazla bilgi:
 
--   [Kimlik gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview) hakkında daha fazla bilgi edinin.
+-  [Kimlik gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   [Dizin eşitleme gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements) hakkında daha fazla bilgi edinin.
+-   [Dizin eşitleme gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   [Çok faktörlü kimlik doğrulaması gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements) hakkında daha fazla bilgi edinin.
+-   [Çok Faktörlü Kimlik Doğrulaması (MFA) gerekli mi?](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
--   [Kullanıcı ve cihaz gruplarınızı planlama](/intune/users-permissions-add) hakkında daha fazla bilgi edinin.
+-   [Kullanıcı ve cihaz gruplarınızı planlama](users-add.md)
 
--   [Kullanıcı ve cihaz gruplarının nasıl oluşturulacağını](/intune/groups-get-started) öğrenin.
+-   [Kullanıcı ve cihaz grupları oluşturma](groups-get-started.md)
 
-Kuruluşunuzda zaten Office 365 kullanılıyorsa Intune’un aynı Azure Active Directory ortamını kullanması önemlidir.
+Kuruluşunuzda zaten Office 365 kullanılıyorsa Intune’un aynı Azure Active Directory ortamını kullanması gerekir.
 
 ### <a name="pki-optional"></a>PKI (isteğe bağlı)
 
-Intune ile VPN, Wi-Fi veya e-posta profilleri için sertifika tabanlı kimlik doğrulaması kullanmayı planlıyorsanız sertifika ilkeleri oluşturmaya ve dağıtmaya hazır, desteklenen bir [PKI altyapısına sahip olduğunuzdan](/intune/certificates-configure) emin olmanız gerekir.
+Intune ile VPN, Wi-Fi veya e-posta profilleri için sertifika tabanlı kimlik doğrulaması kullanmayı planlıyorsanız sertifika ilkeleri oluşturmaya ve dağıtmaya hazır, desteklenen bir [PKI altyapısına sahip olduğunuzdan](certificates-configure.md) emin olmanız gerekir. Intune’da sertifikaları yapılandırma hakkında daha fazla bilgi edinin:
 
-Intune’da sertifikaları yapılandırma hakkında daha fazla bilgi aşağıda verilmiştir.
-
--   [SCEP için sertifika altyapısını yapılandırma](/intune/certificates-scep-configure).
+-   [SCEP için sertifika altyapısını yapılandırma](/intune/certificates-scep-configure)
 
 -   [PFX için sertifika altyapısını yapılandırma](/intune/certficates-pfx-configure).
 
@@ -75,15 +70,15 @@ Intune'a geçebilmek için Intune aboneliği gerekir.
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>3. Görev: MDM yetkilinizi Intune olarak ayarlayın
 
-Intune, Azure portalından veya Configuration Manager Güncel Dal konsolundan yönetilebilir. Intune’u Configuration Manager Güncel Dal dağıtımı ile tümleştirmeniz gerekmedikçe, Intune'u [Azure Portalından](https://portal.azure.com) yönetmeniz önerilir.
+Intune, Azure portalından veya Configuration Manager Güncel Dal konsolundan yönetilebilir. Intune’u Configuration Manager Güncel Dal dağıtımı ile tümleştirmeniz gerekmedikçe, Intune'u [Azure portalından](https://portal.azure.com) yönetmenizi öneririz.
 
-MDM yetkilinizi **Intune** olarak ayarlayarak Intune Azure Portalı'nı etkinleştirin. Farklı bir MDM yetkilisi kullanmak, Intune’un MDM yönetimini diğer Microsoft yönetim konsollarına aktarmasını sağlar. Bu durum nadiren oluşur.
+MDM yetkilinizi **Intune** olarak ayarlayarak Intune Azure portalını etkinleştirin. Farklı bir MDM yetkilisi kullanmak, Intune’un MDM yönetimini diğer Microsoft yönetim konsollarına aktarmasını sağlar. Bu durum nadiren oluşur.
 
 > [!IMPORTANT]
 > Mobil cihaz yönetiminizi ilk defa Intune'a aktarıyorsanız MDM yetkilinizi Intune olarak ayarlamanız gerekir.
 
--   [Mobil yönetim yetkilisini ayarlamayı](/intune/mdm-authority-set) öğrenin.
+[Mobil yönetim yetkilisini ayarlamayı](mdm-authority-set.md) öğrenin.
 
 ## <a name="next-step"></a>Sonraki adım
 
-[Mobil cihaz ve uygulama yönetimi ilkelerini yapılandırma](migration-guide-configure-policies.md)
+[Mobil cihaz ve uygulama yönetimi ilkelerini](migration-guide-configure-policies.md) yapılandırın.

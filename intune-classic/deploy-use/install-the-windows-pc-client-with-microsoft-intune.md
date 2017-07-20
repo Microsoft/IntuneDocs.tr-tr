@@ -4,7 +4,7 @@ description: "Windows bilgisayarlarınızın Microsoft Intune istemci yazılım�
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 03/27/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 
@@ -32,6 +32,8 @@ Windows bilgisayarlar Intune istemci yazılımı yüklenerek kaydedilebilir. Int
 Intune istemci yazılımı, bilgisayarı Intune yönetimine kaydetmek için gerekli en düşük yazılımı içerir. Bilgisayar kaydedildikten sonra Intune istemci yazılımı, bilgisayar yönetimi için gereken tam istemci yazılımını indirir.
 
 Bu indirmeler, ağın bant genişliğine olan etkiyi azaltır ve bilgisayarın Intune’a ilk kaydı için gerekli olan zamanı en aza indirir. Ayrıca ikinci indirme işlemi bittikten sonra istemcinin mevcut en yeni yazılıma sahip olmasını sağlar.
+
+Intune lisanslarından biri, Intune istemci yazılımını en fazla beş bilgisayara yüklemenize olanak tanır.
 
 ## <a name="download-the-intune-client-software"></a>Intune istemci yazılımını indirme
 
