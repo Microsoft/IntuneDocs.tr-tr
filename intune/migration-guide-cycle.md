@@ -1,11 +1,11 @@
 ---
 title: "Tipik bir Intune geçiş döngüsü nasıl gerçekleşir"
-description: "Bu makalenin amacı, Intune geçiş döngüsünün nasıl çalıştığını açıklamak ve müşterinin geçiş döngülerini nasıl ele aldığına ilişkin örnekler vermektir."
+description: "Bu makalede, Intune geçiş döngüsünün nasıl işlediği açıklanmakta ve bu döngüleri nasıl idare edebileceğinize dair örnekler verilmektedir."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: 3688b724-9521-4210-bf4d-bcf47d8d4ca0
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 70aa7155e050450a2d786a1f16e42ce2a3c77f9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 34e748e16449a99bad4c1f3e96c22dda6d8f3018
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="typical-migration-cycle"></a>Tipik geçiş döngüsü
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 Bir kuruluşun Intune geçişini BT departmanı içindeki kullanıcılarının bir alt kümesini hedefleyerek küçük bir pilot grup ile başlatması yaygındır. Ayrıca, kuruluşunuzun geçiş zaman çerçevesini belirlemede yardımcı olması için kullanıcıların değişiklik isteyip istemedikleri, kullanıcı sayısı, karmaşıklık, gereksinimler, konum ve iş riski gibi faktörleri ele alması gerekebilir.
 
@@ -31,28 +28,28 @@ Hedef gruplarınızın zaman çizelgesinin nasıl oluşturulacağına ilişkin b
   | **Geçiş hedeflenen gruplar** | **Dönem 1** | **Dönem 2** | **Dönem 3** | **Dönem 4** | **...**
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Sınırlı Pilot BT kuruluşu (50 kullanıcı) | Planı Duyurma | Kayıt talimatı verme | Son tarih verme | Koşullu erişimi zorlama |  |                                                        
-| Genişletilmiş Pilot BT kuruluşu (200 kullanıcı) |  | Planı Duyurma | Kayıt talimatı verme | Son tarih verme | Koşullu erişimi zorlama | 
-| Geçiş aşaması 1 Teknik bilgiye sahip kullanıcılar (2000) |  |  | Planı Duyurma | Kayıt talimatı verme | Son tarih verme | 
-| Geçiş aşaması 2 Doğu ABD |  |  |  | Planı Duyurma | Kayıt talimatı verme | 
-| Tüm Bölgeler |  |  |  |  | Planı Duyurma | 
+| Genişletilmiş Pilot BT kuruluşu (200 kullanıcı) |  | Planı Duyurma | Kayıt talimatı verme | Son tarih verme | Koşullu erişimi zorlama |
+| Geçiş aşaması 1 Teknik bilgiye sahip kullanıcılar (2000) |  |  | Planı Duyurma | Kayıt talimatı verme | Son tarih verme |
+| Geçiş aşaması 2 Doğu ABD |  |  |  | Planı Duyurma | Kayıt talimatı verme |
+| Tüm Bölgeler |  |  |  |  | Planı Duyurma |
 
 ## <a name="customer-migration-case-study"></a>Müşteri geçişi örnek olay incelemesi
 
 ### <a name="adatum-corporation"></a>Adatum Corporation
 
-- [Adatum Corporation’ın bir üçüncü taraf MDM sağlayıcısından Intune'a geçiş sürecini](https://gallery.technet.microsoft.com/Intune-migration-guide-893a95e3?redir=0) inceleyin.
+[Adatum Corporation’ın bir üçüncü taraf MDM sağlayıcısından Intune'a geçiş sürecini](https://gallery.technet.microsoft.com/Intune-migration-guide-893a95e3?redir=0) inceleyin.
 
 ## <a name="monitoring-migration"></a>Geçiş izleme
 
-Microsoft Intune, geçişi izleyebilmenizi sağlayan çeşitli yollar sunar:
+Intune, geçişi izleyebilmenizi sağlayan çeşitli yollar sunar:
 
-1.  Intune kullanıcı grubu görünümleri
+* Intune kullanıcı grubu görünümleri
 
-2.  Yerleşik raporlar kümesi ve
+* Yerleşik raporlar kümesi
 
-3.  Konsol içi uyarılar.
+* Konsol içi uyarılar
 
-Her aşamadan sonra kaç kullanıcının cihazlarını kaydettiğini izlemelisiniz, böylece şunları yapabilirsiniz:
+Her aşamadan sonra kaç kullanıcının cihazlarını kaydettiğini izleyerek şunları yapabilirsiniz:
 
 -   İletişim planınızın verimliliğini değerlendirmek.
 
@@ -61,4 +58,4 @@ Her aşamadan sonra kaç kullanıcının cihazlarını kaydettiğini izlemelisin
 
 ## <a name="post-migration"></a>Geçiş Sonrası
 
-Intune'a geçtikten sonra önceki MDM sağlayıcısını devre dışı bırakmanız ve hizmet aboneliğinizi bitirmeniz gerekecektir. Ayrıca, MDM sağlayıcısının yönergelerini izleyerek gereksiz altyapı gereksinimlerinin tümünü kaldırmanız gerekir.
+Intune'a geçtikten sonra önceki MDM sağlayıcısını devre dışı bırakın ve hizmet aboneliğinizi bitirin. Ayrıca, MDM sağlayıcısının yönergelerini izleyerek gereksiz altyapı gereksinimlerinin tümünü kaldırın.

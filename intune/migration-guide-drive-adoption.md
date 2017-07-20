@@ -1,6 +1,6 @@
 ---
 title: "Koşullu erişimle son kullanıcı benimsemesi sağlama"
-description: "Bu makalenin amacı, Intune kaydını teşvik etmek için koşullu erişimden nasıl yararlanılacağına ilişkin öngörüler sağlamaktır."
+description: "Bu makalede, Intune kaydını teşvik etmek için koşullu erişimden nasıl yararlanılacağına ilişkin öngörüler sağlanmaktadır."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,18 +13,15 @@ ms.technology:
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 0b2fbcc1d63f229e1b63873841bc300bdde92fa3
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7a9c3bef955239ad653a9ca45c55c533be36c5ce
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="drive-end-user-adoption-with-conditional-access"></a>Koşullu erişimle son kullanıcı benimsemesi sağlama
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Kaydı silinen cihazlar için e-posta engellemek gibi koşullu erişim özelliklerini Intune ile etkinleştirme, cihaz kaydına ve uyumluluğuna yardımcı olabilir ancak geçiş işleminin başarılı olması için gerekli değildir. Geçiş benimseme hedefleri ve güvenlik gereksinimleriniz başarıyı belirleyen unsurlar olmalıdır.
+Kaydı silinen cihazlar için e-postayı engellemek gibi koşullu erişim özelliklerini Intune ile etkinleştirme, cihaz kaydına ve uyumluluğuna yardımcı olabilir ancak geçiş işleminin başarılı olması için gerekli değildir. Geçiş benimseme hedefleri ve güvenlik gereksinimleriniz başarıyı belirleyen unsurlar olmalıdır.
 
 ## <a name="migration-campaign-with-conditional-access"></a>Koşullu erişim ile geçiş kampanyası
 
@@ -48,16 +45,16 @@ Koşullu erişim ile bir geçiş kampanyasını geliştirme için tipik bir yakl
 
 -   Önceki çözümün kullanıcıları, koşullu erişim bu kullanıcılar için etkinleştirilene kadar yönetilmeyen cihazları kullanarak kaynaklara potansiyel olarak erişebilir.
 
-> [!TIP]
-> Bu birçok yaklaşımdan biridir. Her aşama için kayıt talimatı alındıktan sonra tüm koşullu erişimi etkileyen daha basit bir süreç seçebilir veya koşullu erişimi en baştan uygulayan ve erişim için tam uyumluluk gerektiren daha sıkı bir süreç seçebilirsiniz.
 
--   [Koşullu erişim](/intune/conditional-access) hakkında daha fazla bilgi edinin.
+Bu birçok yaklaşımdan biridir. Her aşama için kayıt talimatı alındıktan sonra tüm koşullu erişimi etkileyen daha basit bir süreç seçebilir veya koşullu erişimi en baştan uygulayan ve erişim için tam uyumluluk gerektiren daha sıkı bir süreç seçebilirsiniz.
+
+-   [Koşullu erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
 
 ## <a name="task-list-for-conditional-access"></a>Koşullu erişim için görev listesi
 
 ### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Görev 1: Koşullu erişimi nasıl uygulayacağınıza karar verme
 
-[Koşullu erişim kullanmanın yaygın yolları](/intune/conditional-access-intune-common-ways-use).
+[Koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
 
 ### <a name="task-2-set-up-intune-conditional-access"></a>2. Görev: Intune koşullu erişimi ayarlayın
 
@@ -65,14 +62,14 @@ Aşağıdaki seçeneklerden birini seçin:
 
 -   [Azure Active Directory'de koşullu erişimi yapılandırma](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Intune ile şirket içi Exchange bağlayıcısını yükleme](/intune/exchange-connector-install)
+-   [Intune ile şirket içi Exchange bağlayıcısını yükleme](exchange-connector-install.md)
 
--   [Exchange Online için uygulama tabanlı koşullu erişim ilkeleri ayarlama](/intune/app-based-conditional-access-intune-exchange-online-create)
+-   [Exchange Online için uygulama tabanlı koşullu erişim ilkeleri ayarlama](app-based-conditional-access-intune-create.md)
 
--   [SharePoint Online için uygulama tabanlı koşullu erişim ilkeleri ayarlama](/intune/app-based-conditional-access-intune-sharepoint-online-create)
+-   [SharePoint Online için uygulama tabanlı koşullu erişim ilkeleri ayarlama](app-based-conditional-access-intune-create.md)
 
--   [Modern kimlik doğrulaması (ADAL) kullanmayan uygulamaları engelleme](/intune/app-modern-authentication-block)
+-   [Modern kimlik doğrulaması (ADAL) kullanmayan uygulamaları engelleme](app-modern-authentication-block.md)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Normal geçiş süreci](migration-guide-cycle.md)
+[Tipik geçiş döngüsü](migration-guide-cycle.md) hakkında bilgi edinin.

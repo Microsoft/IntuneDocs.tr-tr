@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,27 +16,27 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4d7ad138a8aa59ceeff00866469e59e2e1d19520
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>iOS cihazınızı Intune'a kaydetme
 
 Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için iOS cihazınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, BT departmanınız bu iş veya okul kaynaklarını yönetebilir, bunların güvenli kalmasını sağlayabilir ve size işlerinizi tamamlamak için tercih ettiğiniz cihazı kullanma özgürlüğünü tanıyabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklerseniz ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
-> MacBook Pro veya iMac gibi bir macOS cihazını kaydetmek istiyorsanız [buradaki yönergeleri deneyin](enroll-your-device-in-intune-macos.md).
+> MacBook Pro veya iMac gibi bir macOS cihazı kaydetmek istiyorsanız [buradaki yönergeleri deneyin](enroll-your-device-in-intune-macos.md).
 
 **Başlamadan önce:**
 
-- Adımları başlattıktan sonra kaydetme işlemini tamamladığınızdan emin olun. Birkaç dakikadan uzun bir süre duraklatılması genellikle işlemi durdurur ve yeniden başlamanızı gerektirir.
+- Adımları başlattıktan sonra kaydetme işlemini tamamladığınızdan emin olun. Birkaç dakikadan uzun bir süre duraklatmak genellikle işlemi durdurur ve yeniden başlatmanızı gerektirir.
 - Herhangi bir nedenle kaydolamazsanız yeniden denemek için Şirket Portalı uygulamasına dönmeniz gerekir.
 - Wi-Fi ağınızın çalışır durumda olduğundan emin olun. Aksi durumda kayıt başarısız olur.
-- Cihazınızda Safari engellenmişse, engeli kaldırın. Kaydetmek için Safari kullanmanız gerekir.
+- Cihazınızda Safari engellenmişse, engeli kaldırın. Cihaz kayıt işleminin bir parçası olarak Safari kullanılır.
 
 
 **iOS cihazınızı kaydetmek için:**
@@ -51,8 +51,8 @@ ms.lasthandoff: 07/01/2017
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-> [!NOTE]
-> Sarı üçgenler herhangi bir hata olduğu anlamına gelmez. Bu simgeler, kayıt işleminde hala tamamlanması gereken adımlar olduğunu gösterir.
+  > [!NOTE]
+  > Sarı üçgenler herhangi bir hata olduğu anlamına gelmez. Bu simgeler, kayıt işleminde hala tamamlanması gereken adımlar olduğunu gösterir.
 
 4. BT yöneticinizin kayıtlı cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirip **Devam**’a dokunun.
 
@@ -88,7 +88,7 @@ ms.lasthandoff: 07/01/2017
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
-12. **Şirket Erişimi Kurulumu** ekranında, **Devam**’a dokunun. BT yöneticiniz, parola belirleme ihtiyacı gibi ek güvenlik gereksinimleri ayarlarsa, tüm uyum gereksinimlerini karşılayana ve Şirket Erişimi Kurulumu ekranına geri döndürülene kadar ekrandaki yönergeleri izleyin ve sonra **Devam**’a dokunun.
+12. **Şirket Erişimi Kurulumu** ekranında, **Devam**’a dokunun. Bu ekranda, cihazınızı uyumlu hale getirmek için bir parola ayarlamak gibi karşılamanız gereken diğer gereksinimler gösterilir. Tüm uyumluluk gereksinimlerine uyana kadar ekrandaki yönergeleri izleyin. İşiniz bittiğinde Şirket Erişimi Kurulum ekranına dönersiniz. **Devam**’a dokunun.
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
@@ -99,6 +99,6 @@ ms.lasthandoff: 07/01/2017
 Cihazınız artık Intune'a kaydedilmiştir ve sonra Şirket Portalı uygulamasına geri götürülürsünüz.
 
 > [!Note]
-> Kuruluşunuzda telekomünikasyon gider yönetimi yazılımı kullanılıyorsa, cihazınız tam olarak kaydedilmeden önce tamamlamanız gereken ek birkaç adım vardır. Daha fazla bilgiyi [burada](enroll-your-device-with-telecom-expense-management-ios.md) bulabilirsiniz.
+> Cihazınız tamamen kurulmadan önce birkaç adım daha kaldı. [Telekom gider yönetimini kullanarak cihazınızı kaydetme](enroll-your-device-with-telecom-expense-management-ios.md) hakkında daha fazla bilgi edinin. Kuruluşunuz Apple’ın Aygıt Kayıt Programı’nı kullanıyorsa [buraya](enroll-your-device-dep-ios.md) tıklayarak daha fazla bilgi edinebilirsiniz.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
