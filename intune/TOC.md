@@ -183,13 +183,12 @@
 ### [Profilleri izleme](device-profile-monitor.md)
 ### [Profil sorunlarını giderme](device-profile-troubleshoot.md)
 
-## [Cihaz uyumluluğu ayarlama](device-compliance.md)
-### [Önkoşullar](device-compliance-get-started.md)
+## [Cihaz uyumluluğu ayarlama](device-compliance-get-started.md)
 ### [Android ilkesi oluşturma](compliance-policy-create-android.md)
 ### [Android for Work ilkesi oluşturma](compliance-policy-create-android-for-work.md)
 ### [iOS ilkesi oluşturma](compliance-policy-create-ios.md)
+### [macOS ilkesi oluşturma](compliance-policy-create-mac-os.md)
 ### [Windows ilkesi oluşturma](compliance-policy-create-windows.md)
-### Uyumsuzluğa yönelik Eylem oluşturma
 ### [Cihaz uyumluluğunu izleme](compliance-policy-monitor.md)
 
 ## [Koşullu erişimi ayarlama](conditional-access.md)
