@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 112f60ff208c27825ddd0f4c812535b255894333
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>iOS için Microsoft Intune uygulama yapılandırma ilkelerini kullanma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Kullanıcılar bir iOS uygulamasını çalıştırdığında gerekebilecek ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Örneğin, bir uygulama kullanıcıların şunları belirtmesini gerektirebilir:
+Kullanıcılar bir iOS uygulamasını çalıştırdığında kullanılan ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Örneğin, bir uygulama kullanıcıların şunları belirtmesini gerektirebilir:
 
 -   Özel bağlantı noktası numarası.
 
@@ -35,11 +35,11 @@ Kullanıcılar bir iOS uygulamasını çalıştırdığında gerekebilecek ayarl
 
 -   Bir şirket logosu gibi marka ayarları.
 
-Bu ayarlar kullanıcılar tarafından hatalı girildiği takdirde, yardım masanız üzerindeki yük artabilir ve uygulamalara geçiş yavaşlayabilir.
+Kullanıcılar, bu ayarları hatalı şekilde girerse yardım masanız üzerindeki yük artabilir ve yeni uygulamaların benimsenmesi yavaşlayabilir.
 
 Uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalıştırmadan önce bu ayarları bir ilke ile kullanıcılara atamanıza imkan vererek bu sorunları ortadan kaldırmanıza yardımcı olabilir. Daha sonra ayarlar otomatik olarak sağlanır ve kullanıcıların herhangi bir eylem yapması gerekmez.
 
-Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde (genellikle ilk çalıştırıldığında) kullanılır.
+Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından ilke denetimi gerçekleştirildiğinde (genellikle ilk çalıştırıldığında) kullanılır.
 
 > [!TIP]
 > Bu ilke türü şu anda yalnızca iOS 8.0 ve üzeri sistemleri çalıştıran cihazlar için kullanılabilir. Aşağıdaki uygulama yükleme türlerini destekler:
@@ -50,61 +50,39 @@ Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, 
 > Uygulama yükleme türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](apps-add.md).
 
 ## <a name="create-an-app-configuration-policy"></a>Uygulama yapılandırma ilkesi oluşturma
-
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-1.  **Mobil uygulamalar** iş yükünde **Yönet** > **Tüm Uygulama Yapılandırma İlkeleri**’ni seçin.
-
-2.  İlke listesi dikey penceresinde **Ekle**’yi seçin.
-
-3.  **Yapılandırma İlkesi Ekle** dikey penceresinde, uygulama yapılandırma ilkesi için ad ve isteğe bağlı bir açıklama sağlayın.
-4.  **İlişkili Uygulama**’yı seçin ve ardından **İlişkili Uygulama** dikey penceresinde, yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı seçin.
-5.  **Yapılandırma İlkesi Ekle** dikey penceresinde **Yapılandırma ayarları**’nı seçin ve ardından Yapılandırma Ayarları dikey penceresinde, yapılandırma profilini oluşturan XML değerlerini nasıl belirtmek istediğinizi seçin:
-    - **XML verilerini gir** - İstediğiniz uygulama yapılandırma ayarlarını içeren XML özellik listesini girin veya yapıştırın. XML özellik listesinin biçimi, yapılandırdığınız uygulamaya bağlı olarak değişir. Kullanılacak tam biçim hakkında ayrıntılı bilgi için uygulamanın sağlayıcısına başvurun.
-    Intune, girdiğiniz XML kodunun geçerli bir biçimde olup olmadığını denetler. XML özellik listesinin ilişkilendirildiği uygulama ile çalışıp çalışmayacağını denetlemez.
-    XML özellik listeleri hakkında daha fazla bilgi için iOS Geliştirici Kitaplığı’ndaki [XML Özellik Listelerini Anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
-    - **Yapılandırma tasarımcısını kullan** - XML anahtar ve değer çiftlerini doğrudan portalda belirtmenize olanak tanır.
-8. Bitirdiğinizde, **Yapılandırma İlkesi Ekle** dikey penceresine gidin ve **Oluştur**’a basın.
+1.  Azure Portal’da oturum açın.
+2.  **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+3.  **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
+4.  **Mobil uygulamalar** iş yükünde **Yönet** > **Tüm Uygulama Yapılandırma İlkeleri**’ni seçin.
+5.  İlke listesi dikey penceresinde **Ekle**’yi seçin.
+6.  **Yapılandırma İlkesi Ekle** dikey penceresinde, uygulama yapılandırma ilkesi için **Ad** ve isteğe bağlı bir **Açıklama** sağlayın.
+7.  **Cihaz kayıt türü** için şunlardan birini seçin:
+    - **Intune’a kaydedilmiş** - Intune Uygulama SDK’si ile tümleştirilmiş ve Intune tarafından yönetilen uygulamalar için.
+    - **Intune’a kaydedilmemiş** - Intune Uygulama SDK’si ile tümleştirilmiş ve Intune tarafından yönetilmeyen veya başka bir çözüm tarafından yönetilen uygulamalar için.
+8.  **Platform** için **iOS**’u seçin (yalnızca Intune’a kaydedilmiş cihazlar için)
+9.  **İlişkili Uygulama**’yı seçin ve ardından **İlişkili Uygulama** dikey penceresinde, yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı seçin.
+10. **Yapılandırma İlkesi Ekle** dikey penceresinde **Yapılandırma ayarları**’nı seçin
+11. **Yapılandırma Ayarları** dikey penceresinde, yapılandırma profilini oluşturan XML değerlerini nasıl belirtmek istediğinizi seçin:
+    - **XML verisi gir** (yalnızca Intune’a kaydedilmiş cihazlar için) - İstediğiniz uygulama yapılandırma ayarlarını içeren XML özellik listesini girin veya yapıştırın. XML özellik listesinin biçimi, yapılandırdığınız uygulamaya bağlı olarak değişir. Kullanılacak tam biçim hakkında ayrıntılı bilgi için uygulamanın sağlayıcısına başvurun.
+Intune, girdiğiniz XML kodunun geçerli bir biçimde olup olmadığını denetler. XML özellik listesinin ilişkilendirildiği uygulama ile çalışıp çalışmayacağını denetlemez.
+XML özellik listeleri hakkında daha fazla bilgi için iOS Geliştirici Kitaplığı’ndaki [XML Özellik Listelerini Anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
+    - **Yapılandırma tasarımcısını kullan** (cihazın Intune’a kaydedilmiş olup olmamasından bağımsız olarak) - XML anahtar ve değer çiftlerini doğrudan portalda belirtmenize olanak tanır.
+11. Bitirdiğinizde, **Yapılandırma İlkesi Ekle** dikey penceresine gidin ve **Oluştur**’a basın.
 
 İlke oluşturulur ve ilke listesi dikey penceresinde görüntülenir.
 
-Sonra, normal yollarla uygulamayı [atama](apps-deploy.md) ve [izleme](apps-monitor.md) işlemlerine devam edin.
+
+
+>[!Note]
+>Cihazın Intune’a kaydedilmiş olup olmamasından bağımsız olarak, iş kolu uygulamalarını Intune uygulama koruma ilkeleri ve uygulama yapılandırma ilkeleri tarafından yönetilmeye hazırlamak için [Intune Uygulama SDK’sini](https://docs.microsoft.com/intune/app-sdk-ios) kullanabilirsiniz. Örneğin [Intune Managed Browser](app-configuration-managed-browser.md)’da izin verilen ve engellenen URL’leri yapılandırmak için bir uygulama yapılandırma ilkesi kullanabilirsiniz. Bir uygulama bu ilkelerle uyumlu hale geldiğinde, bir ilke kullanarak bu ilkeleri yapılandırabilirsiniz.
+
 
 Atanan uygulama bir cihazda çalıştırıldığında, uygulama yapılandırma ilkesinde yapılandırdığınız ayarlarla çalışır.
+Bir veya daha fazla uygulama yapılandırma ilkesi çakıştığında ne olacağı hakkında bilgi için yapılandırdığınız uygulamaya ait belgelere bakın.
 
-> [!TIP]
-> Bir veya birden çok uygulama yapılandırma ilkesi arasında çakışma varsa, hiçbir ilke uygulanmaz.
+>[!Tip]
+>Ayrıca bu görevleri tamamlamak için Grafik API’si de kullanabilirsiniz. Ayrıntılar için bkz. [Grafik API’si Başvurusu MAM Hedefli Yapılandırma](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
-## <a name="create-a-mam-targeted-configuration-policy"></a>MAM hedeflenen bir yapılandırma ilkesi oluşturma
-MAM'ı hedefleyen yapılandırma, bir uygulamanın Intune Uygulama SDK'sı aracılığıyla yapılandırma verileri almasını sağlar. Bu verilerin biçimi ve çeşitleri, uygulamanın sahibi/geliştiricisi tarafından tanımlanmalı ve Intune müşterilerine anlatılmalıdır. Intune yöneticileri, yapılandırma verilerini Intune Azure konsolu aracılığıyla hedefleyip dağıtabilir. MAM hedeflenen yapılandırma verileri MAM hizmetinden MAM-WE etkin uygulamalara sağlanabilir. Örneğin, [Intune Managed Browser](https://docs.microsoft.com/intune/app-configuration-managed-browser)’ın izin verilen/engellenen url listesi var. Uygulama yapılandırma verileri MDM kanalı yerine uygulamaya doğrudan MAM Hizmetimiz aracılığıyla iletilir. [MDM uygulama yapılandırma ilkeleri](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#create-an-app-configuration-policy), MDM aracılığıyla yerel çözümdür. MAM hedeflenen yapılandırmayla olan en önemli farkı, uygulamanın çalıştığı cihazın MDM-kayıtlı olma gereksinimi olmamasıdır. MAM hedeflenen yapılandırma, iOS ve Android’de kullanılabilir. iOS için bu uygulama, iOS için Intune Uygulama SDK’sını (sürüm 7.0.1) kullanmalı ve uygulama yapılandırma ayarlarında yer almalıdır. MAM hedeflenen yapılandırma ilkesi oluşturmak için adımlar aşağıdaki gibidir: 
-
-1. **Azure portalında** oturum açın.
-
-2. **Intune > Mobil uygulamalar - Uygulama yapılandırma ilkeleri**’ni seçin.
-
-3. **Uygulama yapılandırma ilkeleri** dikey penceresinde, **Ekle**’yi seçin.
-
-4. Uygulama yapılandırma ayarları için bir **Ad** ve isteğe bağlı bir **Açıklama** girin ve ardından **Intune’a kayıtlı değil**’i seçin.
-
-5. **Gerekli uygulamaları seç**’i seçin ve ardından **Hedeflenen** uygulamalar dikey penceresinde, düşündüğünüz platformlar için uygulamaları seçin. <br>
-**Not:** LOB uygulamaları için **Daha fazla uygulama**’yı seçin. Uygulamanız için paket kimliğini girin.
-
-6. **Tamam**’ı seçerek **Uygulama yapılandırması ekle** dikey penceresine dönün.
-
-7. **Yapılandırmayı tanımla**’yı seçin. **Yapılandırma** dikey penceresinde, yapılandırmaları sağlamak için anahtar ve değer çiftlerini tanımlayın.
-
-8. İşiniz bittiğinde **Tamam**’ı seçin.
-
-9. **Uygulama yapılandırması ekle** dikey penceresinde, **Oluştur**’u seçin.
-
-Yeni yapılandırma oluşturulur ve Uygulama yapılandırması dikey penceresinde görüntülenir.
-
-Sonra, normal yollarla uygulamayı [atama](apps-deploy.md) ve [izleme](apps-monitor.md) işlemlerine devam edin.
-
-Atanan uygulama (Intune Uygulama SDK’sı ile tümleşik) bir cihazda çalıştırıldığında, MAM hedeflenen yapılandırma ilkesinde yapılandırdığınız ayarlarla çalışır. Atanan uygulamanın, Intune Uygulama SDK'sının desteklenen sürümüyle tümleşik olması gerekir. MAM Hedeflenen Yapılandırma ilkelerini kullanmak için uygulama geliştirme gereksinimleri hakkında daha fazla bilgi için bkz. [iOS Intune Uygulama SDK'sı Tümleştirmesi Kılavuzu](https://docs.microsoft.com/intune/app-sdk-ios).
-
-Grafik API'sinin MAM hedeflenen yapılandırma değerlerine göre özellikleri hakkında daha fazla bilgi için bkz. [Grafik API'si Başvurusu MAM Hedeflenen Yapılandırma](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
 ## <a name="information-about-the-xml-file-format"></a>XML dosya biçimi hakkında bilgi
 
@@ -161,3 +139,7 @@ Uygulama yapılandırma dosyasını oluşturduğunuzda, bu biçimi kullanarak a�
 </dict>
 
 ```
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Normal yollarla, uygulamayı [atama](apps-deploy.md) ve [izleme](apps-monitor.md) işlemlerine devam edin.

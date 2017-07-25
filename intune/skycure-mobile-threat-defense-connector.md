@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c55fa5b3ea86127648850ae7374107ca65db9764
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2a7c15cf695fd88ba5961611c78ecc28a29238af
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense bağlayıcısı
 
@@ -115,14 +115,10 @@ Daha fazla bilgi için [Skycure web sitesini](https://www.skycure.com/skycure-mi
 
 Burada, Intune’u Skycure ile tümleştirme işlemini tamamlamak için gereken adımlar verilmiştir:
 
-1.  [Skycure’u Azure Active Directory Çoklu Oturum Açma (SSO) kullanacak şekilde yapılandırma](skycure-azure-sso-configure.md)
+1.  [Skycure uygulamaları, Microsoft Authenticator ve iOS uygulama yapılandırma ilkesi ekleme ve atama](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-2.  [Skycure iOS uygulaması yapılandırma ilkesini indirme](skycure-ios-app-configuration-policy-download.md)
+2.  [Intune ile Skycure tümleştirmesi kurma](skycure-mtd-connector-integration.md)
 
-3.  [Skycure uygulamaları, Microsoft Authenticator ve iOS uygulama yapılandırma ilkesi ekleme ve atama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+3.  [Intune’da Skycure MTD bağlayıcısını etkinleştirme](mtd-connector-enable.md)
 
-4.  [Intune ile Skycure tümleştirmesi kurma](skycure-mtd-connector-integration.md)
-
-5.  [Intune’da Skycure Mobile Threat Defense’i etkinleştirme](mtd-connector-enable.md)
-
-6.  [Intune’da Skycure Mobile Threat Defense cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)
+4.  [Intune ile Skycure cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)

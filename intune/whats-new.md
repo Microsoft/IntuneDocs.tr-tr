@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fdda99bfd72c71d36a19449d43bc6cbf6a00babe
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -55,25 +55,25 @@ Intune artık iOS, macOS ve Android seri numaralarını Kurumsal Cihaz Tanımlay
 
 ### <a name="device-management"></a>Cihaz yönetimi
 #### <a name="new-remote-actions-for-ios-devices----854689---"></a>iOS cihazları için yeni uzak eylemler <!-- 854689 -->
-Bu sürümde, iOS cihazları için iki yeni uzak cihaz eylemi ekledik:
+Bu sürümde, Apple Classroom uygulamasını yöneten paylaşılan iPad cihazlar için iki yeni uzak cihaz eylemi ekledik:
 
 -   [Geçerli kullanıcının oturumunu kapat](device-logout-user.md) - Seçtiğiniz bir iOS cihazının geçerli kullanıcısının oturumunu kapatır.
 -   [Kullanıcı kaldır](device-remove-user.md) - Bir iOS cihazdaki yerel önbellekten seçtiğiniz bir kullanıcıyı siler.
 
-
-Bu uzak eylemleri kullanarak yöneticiler, paylaşılan bir iPad cihazında önbelleğe alınan kullanıcı hesaplarını yönetebilir ve bu cihazda oturum açmış kullanıcının oturumunu kapatabilir.
-
-Kayıt sırasında yönetici, bir cihazda en fazla kaç kullanıcı hesabının önbelleğe alınabileceğini belirler. “Kullanıcı kaldır” işlevi, yöneticilere önbelleğe alınmış olan belirli kullanıcıları kaldırma olanağı tanır.
-
-“Geçerli kullanıcının oturumunu kapat” işlevi, cihazda oturumu açık olan kullanıcının oturumunu kapatır. Bu eylemi, yaygın olarak cihaz eylemlerinin bulunduğu cihaz genel görünümü dikey penceresinin üstünde bulabilirsiniz.
-
-“Kullanıcı kaldır” işlevi, belirtilen kullanıcıyı cihazın yerel önbelleğinden silecektir. Bu eylemi, “İzle” -> “Kullanıcılar” bölümünde bulunan listedeki bir kullanıcıya sağ tıklayarak bulabilirsiniz. Kullanıcı hesabıyla ilgili eşitlenmemiş bütün veriler kaybolacaktır. Ayrıca kullanıcının kaldırılma işleminin kullanıcı listesine yansıtılması 24 saati bulabilir.
 
 #### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>iOS Classroom uygulaması ile paylaşılan iPad'ler için destek <!-- 1044681 -->
 Bu sürümde, iOS Classroom uygulamasının kapsamını, paylaşılan iPad’lerde yönetilen Apple kimliklerini kullanarak oturum açan öğrencileri de içerecek şekilde genişlettik.
 
 
 ### <a name="app-management"></a>Uygulama yönetimi  
+
+#### <a name="changes-to-intune-built-in-apps----1332306---"></a>Intune yerleşik uygulamalarındaki yenilikler <!-- 1332306 -->
+
+Eskiden Intune’da hızlıca atayabileceğiniz birkaç yerleşik uygulama vardı. Geri bildirimlerinize dayanarak bu listeyi kaldırdık, artık yerleşik uygulamaları görmeyeceksiniz.
+Ancak herhangi bir yerleşik uygulamayı önceden atadıysanız bu uygulamalar, uygulama listesinde görünmeye devam edecektir. Bu cihazları gerektiği gibi atamaya devam edebilirsiniz.
+Sonraki bir sürümde, Intune portalında uygulama seçme ve atama için daha kolay bir yöntem eklemeyi planlıyoruz.
+
+
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>İş İçin Windows Mağazası uygulamaları için çevrimdışı desteği <!--- 777044 --->
 İş İçin Windows Mağazası'ndan satın aldığınız çevrimdışı uygulamalar, artık Intune portalına eşitlenecektir. Daha sonra bu uygulamaları cihaz gruplarına veya kullanıcı gruplarına dağıtabilirsiniz. Çevrimdışı uygulamalar, mağaza tarafından değil Intune tarafından yüklenir.
 
@@ -266,12 +266,16 @@ Klasik Intune portalında (Silverlight) kullanılan mevcut mobil uygulama yönet
 
 ## <a name="whats-coming"></a>Yakında
 
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Android 4.3 ve altı sürümler için desteğin son bulması<!---1171127, 1326920 --->
+Yönetilen uygulamalar ve Android için Şirket Portalı uygulaması, şirket kaynaklarına erişim için Android 4.4 ve üzeri sürümleri gerektirecek. Ekim ayının başından önce güncelleştirmeyen cihazlar, Şirket Portalı veya diğer uygulamalara erişemeyecek. Aralık ayında ise tüm kayıtlı cihazlar zorla devre dışı bırakılıp şirket kaynaklarına erişimleri kaldırılacak. MDM’siz uygulama koruma ilkeleri kullanıyorsanız uygulamalar güncelleştirme almayacak ve deneyimlerinin kalitesi zamanla düşecek.
+
+
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-will-end-july-11-2017"></a>Platform Desteği Anımsatıcı: Windows Phone 8.1 temel desteği, 11 Temmuz 2017 tarihinde sona erecektir
 <!-- 1327781 -->
 
 11 Temmuz 2017 tarihinde Windows Phone 8.1 platformu temel desteği son bulacaktır. Windows 8.1 PC desteği bundan etkilenmeyecektir.
 
-Bu durum, Intune hizmeti ile yönetilen Windows Phone 8.1 cihazlar üzerinde doğrudan bir etki göstermeyecektir. Kayıtlı cihazlar çalışmaya devam edecek ve tüm ilkeler, yapılandırmalar ve uygulamalar olması gerektiği gibi çalışmayı sürdürecektir. Ancak Windows Phone 8.1 platformu ve Windows Phone 8.1 Şirket Portalı uygulaması için Intune hizmeti dahilinde iyileştirme planı olmadığını unutmayın. 
+Bu durum, Intune hizmeti ile yönetilen Windows Phone 8.1 cihazlar üzerinde doğrudan bir etki göstermeyecektir. Kayıtlı cihazlar çalışmaya devam edecek ve tüm ilkeler, yapılandırmalar ve uygulamalar olması gerektiği gibi çalışmayı sürdürecektir. Ancak Windows Phone 8.1 platformu ve Windows Phone 8.1 Şirket Portalı uygulaması için Intune hizmeti dahilinde iyileştirme planı olmadığını unutmayın.
 
 İlk fırsatta uygun Windows Phone 8.1 cihazları Windows 10 Mobile sürümüne yükseltmenizi öneririz. 
 
