@@ -15,13 +15,16 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1354d3170f007af2a4bf7f5b2f233a186175c621
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c6b05522c7390acb3974e088ecd60d13db46ef5a
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune ile Mobile Threat Defense (MTD) cihaz uyumluluk ilkesi oluşturma
+
+> [!NOTE] 
+> Bu konu, tüm Mobile Threat Defense iş ortakları için geçerlidir.
 
 Intune ile MTD, mobil cihazlarda tehditleri algılayıp risk değerlendirmesi yapmanıza yardımcı olur. Bir cihazın uyumlu olup olmadığını belirlemek üzere risk değerlendirmesi yapan bir Intune cihaz uyumluluk ilkesi kuralı oluşturabilirsiniz. Ardından cihaz uyumluluğuna göre hizmetlere erişimi engellemek için bir koşullu erişim ilkesi kullanabilirsiniz.
 
@@ -57,7 +60,7 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
     c.  **Orta**: Cihazda bulunan tehditler düşük veya orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumlu değil olarak değerlendirilir.
 
-    d.  **Yüksek**: Bu en az güvenli seçenektir. Bu tüm tehdit düzeylerine izin verir ve Skycure Mobile Threat Defense’i yalnızca raporlama amacıyla kullanır.
+    d.  **Yüksek**: Bu en az güvenli seçenektir. Bu, tüm tehdit düzeylerine izin verir ve Mobile Threat Defense’i yalnızca raporlama amacıyla kullanır. Cihazlar, bu ayar ile MTD uygulamasının etkin olmasını gerektirir.
 
 8.  **Tamam**'a iki kez tıklayın, sonra **Oluştur**'u seçin.
 

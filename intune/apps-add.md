@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -79,36 +79,11 @@ Uygulamayı Intune’a eklediğinizde, size istediğiniz kategoriyi belirtme se�
 
 ## <a name="apps-added-automatically-by-intune"></a>Intune tarafından otomatik olarak eklenen uygulamalar
 
-Microsoft tarafından yayımlanan aşağıdaki uygulamalar, Intune’da yerleşiktir ve atama yapmanız için hazırdır:
+Eskiden Intune’da hızlıca atayabileceğiniz birkaç yerleşik uygulama vardı. Geri bildirimlerinize dayanarak bu listeyi kaldırdık, artık yerleşik uygulamaları görmeyeceksiniz.
+Ancak herhangi bir yerleşik uygulamayı önceden atadıysanız bu uygulamalar, uygulama listesinde görünmeye devam edecektir. Bu cihazları gerektiği gibi atamaya devam edebilirsiniz.
+Sonraki bir sürümde, Intune portalında uygulama seçme ve atama için daha kolay bir yöntem eklemeyi planlıyoruz.
 
-|||
-|-|-|
-|Ad|Platform|Uygulama türü|
-|Azure Information Protection|Android|Yönetilen Android mağazası uygulaması|
-|Telefonlar için Dynamics CRM|Android|Yönetilen Android mağazası uygulaması|
-|Tabletler için Dynamics CRM|Android|Yönetilen Android mağazası uygulaması|
-|Excel|iOS|Yönetilen iOS mağazası uygulaması|
-|Excel|Android|Yönetilen Android mağazası uygulaması|
-|Managed Browser|Android|Yönetilen Android mağazası uygulaması|
-|Managed Browser|iOS|Yönetilen iOS mağazası uygulaması|
-|Telefonlarda Microsoft Dynamics CRM|iOS|Yönetilen iOS mağazası uygulaması|
-|Tabletlerde Microsoft Dynamics CRM|iOS|Yönetilen iOS mağazası uygulaması|
-|Microsoft Power BI|iOS|Yönetilen iOS mağazası uygulaması|
-|Microsoft Power BI|Android|Yönetilen Android mağazası uygulaması|
-|Microsoft SharePoint|iOS|Yönetilen iOS mağazası uygulaması|
-|Microsoft SharePoint|Android|Yönetilen Android mağazası uygulaması|
-|Microsoft Teams|Android|Yönetilen Android mağazası uygulaması|
-|Microsoft Teams|iOS|Yönetilen iOS mağazası uygulaması|
-|OneDrive|iOS|Yönetilen iOS mağazası uygulaması|
-|OneDrive|Android|Yönetilen Android mağazası uygulaması|
-|OneNote|iOS|Yönetilen iOS mağazası uygulaması|
-|Outlook|Android|Yönetilen Android mağazası uygulaması|
-|Outlook|iOS|Yönetilen iOS mağazası uygulaması|
-|Outlook Groups|Android|Yönetilen Android mağazası uygulaması|
-|Outlook Groups|iOS|Yönetilen iOS mağazası uygulaması|
-|PowerPoint|iOS|Yönetilen iOS mağazası uygulaması|
-
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 Her platform için Intune’a uygulamaların nasıl eklendiğini öğrenmek için aşağıdaki konulardan birini seçin:
 

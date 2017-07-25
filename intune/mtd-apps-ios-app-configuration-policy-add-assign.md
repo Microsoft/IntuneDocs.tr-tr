@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/23/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,16 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b3fb86648a86b161eadfc071bdacbfd4ea0222f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7edd80c7bae429c1f4032cf59aaaf8d91786f92c
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama
+
+> [!NOTE] 
+> Bu konu, tüm Mobile Threat Defense iş ortakları için geçerlidir.
 
 Son kullanıcıların mobil cihazlarında bir tehdit algılandığında bildirim ve bu tehditleri ortadan kaldıracak rehberlik alması için MTD uygulamaları eklemek ve dağıtmak üzere Intune’u kullanabilirsiniz.
 
@@ -46,33 +49,38 @@ iOS cihazlarında, Azure AD'nin kullanıcıların kimlikleri denetleyebilmesi i�
 
 ## <a name="to-add-apps"></a>Uygulama eklemek için
 
-### <a name="skycure-app-for-android"></a>Android için Skycure uygulaması
+### <a name="all-mtd-partners"></a>Tüm MTD iş ortakları
 
-- Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](store-apps-android.md). Bu [Skycure uygulama mağazası URL'sini](https://play.google.com/store/apps/details?id=com.skycure.skycure) **7. adımda** kullanın.
-
-### <a name="skycure-app-for-ios"></a>iOS için Skycure uygulaması
-
-- Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). Bu [Skycure uygulama mağazası URL'sini](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) **Uygulama bilgilerini yapılandır** bölümünün altındaki **5. adımda** kullanın.
-
-### <a name="microsoft-authenticator-app-for-ios"></a>iOS için Microsoft Authenticator uygulaması
+#### <a name="microsoft-authenticator-app-for-ios"></a>iOS için Microsoft Authenticator uygulaması
 
 - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). Bu [Microsoft Authenticator uygulama mağazası URL'sini](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) **Uygulama bilgilerini yapılandır** bölümünün altındaki **5. adımda** kullanın.
 
-### <a name="lookout-for-work-android-app"></a>Lookout for work Android uygulaması
+### <a name="skycure"></a>Skycure
 
+#### <a name="android"></a>Android
+
+- Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](store-apps-android.md). Bu [Skycure uygulama mağazası URL'sini](https://play.google.com/store/apps/details?id=com.skycure.skycure) **7. adımda** kullanın.
+
+#### <a name="ios"></a>iOS
+
+- Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). Bu [Skycure uygulama mağazası URL'sini](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) **Uygulama bilgilerini yapılandır** bölümünün altındaki **5. adımda** kullanın.
+
+### <a name="lookout"></a>Lookout
+
+#### <a name="android"></a>Android
 - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](store-apps-android.md). Bu [Lookout for work Google uygulama mağazası URL'sini](https://play.google.com/store/apps/details?id=com.lookout.enterprise) **7. adımda** kullanın.
 
-### <a name="lookout-for-work-ios-app"></a>Lookout for Work iOS uygulaması
+#### <a name="ios"></a>iOS
 
 - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). Bu [Lookout for Work iOS uygulama mağazası URL'sini](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) **Uygulama bilgilerini yapılandırma** bölümünün altındaki **5. adımda** kullanın.
 
-### <a name="lookout-for-work-app-outside-the-apple-store"></a>Apple mağazası dışında Lookout for Work uygulaması
+#### <a name="lookout-for-work-app-outside-the-apple-store"></a>Apple mağazası dışında Lookout for Work uygulaması
 
 Lookout for Work iOS uygulamasını yeniden imzalamanız gerekir. Lookout, Lookout for Work iOS uygulamasını iOS App Store dışında dağıtır. Uygulamayı dağıtmadan önce, iOS Enterprise Developer Certificate ile yeniden imzalamanız gerekir.
 
 Lookout for Work iOS uygulamalarını yeniden imzalama hakkında ayrıntılı yönergeler için Lookout web sitesinde [Lookout for Work iOS uygulamasını yeniden imzalama işlemine](https://personal.support.lookout.com/hc/articles/114094038714) bakın.
 
-#### <a name="enable-azure-ad-authentication-for-lookout-for-work-ios-app"></a>Azure AD kimlik doğrulamasını Lookout for Work iOS uygulaması için etkinleştirme
+##### <a name="enable-azure-ad-authentication-for-lookout-for-work-ios-app"></a>Azure AD kimlik doğrulamasını Lookout for Work iOS uygulaması için etkinleştirme
 
 iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere aşağıdakileri yapın:
 
@@ -89,20 +97,36 @@ iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere 
     > [!NOTE] 
     > Daha fazla ayrıntı için bkz. [Azure AD ile yerel istemci uygulaması yapılandırma](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
 
-#### <a name="add-the-lookout-for-work-ipa-file"></a>Lookout for Work ipa dosyasını ekleme
+##### <a name="add-the-lookout-for-work-ipa-file"></a>Lookout for Work ipa dosyasını ekleme
 
 - Yeniden imzalanmış .ipa dosyasını [Intune ile iOS LOB uygulamaları ekleme](lob-apps-ios.md) konusunda anlatıldığı gibi karşıya yükleyin. Ayrıca en düşük işletim sistemi sürümünü iOS 8.0 veya üstüne ayarlamanız gerekir.
+
+### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
+
+#### <a name="android"></a>Android
+
+- Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](store-apps-android.md). **7. adımdaki** [Check Point SandBlast Mobile uygulama mağazası URL’sini](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) kullanın.
+
+#### <a name="ios"></a>iOS
+
+- iOS uygulamasını edinmek için [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) ile iletişime geçin. [iOS mağaza uygulamalarını Microsoft Intune’a ekleme](store-apps-ios.md) yönergelerine göz atın, daha sonra **Uygulama bilgilerini yapılandırma** bölümünün altında bulunan **5. adımdaki** Apple store URL’sini kullanın.
 
 ## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>MTD uygulamasını bir iOS uygulama yapılandırma ilkesiyle ilişkilendirmek için
 
 ### <a name="for-skycure"></a>Skycure için
 
--   Daha önce Skycure Yönetim konsolunda yapılandırılmış olan Azure AD hesabını kullanın. Bu, Intune klasik konsolunda oturum açarken kullanılanla aynı hesap olmalıdır.
+-   Daha önce [Skycure Yönetim konsolunda](https://aad.skycure.com) yapılandırılmış olan Azure AD hesabını kullanın. Bu, Intune klasik konsolunda oturum açarken kullanılan hesapla aynı olmalıdır.
 
--   Skycure tümleştirme dosyasını kullanıma hazır durumda elinizin altında bulundurmalısınız. Bu, daha önce Skycure Yönetim konsolundan indirilen ve iOS uygulama yapılandırma ilkesi parametrelerinin bulunduğu **skycure\_configuration.plist** dosyasını içeren .zip dosyasıdır.
-
-- Skycure iOS uygulama yapılandırma ilkesini eklemek için [iOS için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](app-configuration-policies-use-ios.md) yönergelerine bakın.
-    - 8. adımda **XML verisi gir** seçeneğini kullanın, **skycure_configuration.plist** dosyasındaki içeriği kopyalayıp yapılandırma ilkesi gövdesine yapıştırın.
+-   iOS uygulama yapılandırma ilkesi dosyasını **indirmeniz** gerekir: 
+    -   [Skycure Yönetim konsoluna](https://aad.skycure.com) gidin ve yönetici kimlik bilgilerinizle oturum açın.
+    
+    -   **Ayarlar** &gt; **Cihaz Yönetimi Tümleştirmeleri** &gt; **EMM Tümleştirme Seçimi**’ne gidin, **Microsoft Intune**’u seçin ve ardından seçiminizi kaydedin.
+    
+    -   **Tümleştirme kurulum dosyaları** bağlantısına tıklayın ve oluşturulan \*.zip dosyasını kaydedin. Bu .zip dosyası, Intune’da iOS uygulama yapılandırma ilkesini oluşturmak için kullanılacak olan **skycure\_configuration.plist** dosyasını içerir.
+    
+    -   Skycure iOS uygulama yapılandırma ilkesini eklemek için [iOS için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](app-configuration-policies-use-ios.md) yönergelerine bakın.
+    
+    - **8. adımda** **XML verisi gir** seçeneğini kullanın, **skycure_configuration.plist** dosyasındaki içeriği kopyalayıp yapılandırma ilkesinin gövdesine yapıştırın.
 
 **skycure_configuration.plist** dosyasının içeriğini şuradan da kopyalayabilirsiniz:
 
@@ -119,11 +143,21 @@ iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere 
 
 - iOS uygulama yapılandırma ilkesini [iOS uygulama yapılandırma ilkesini kullanma](app-configuration-policies-use-ios.md) konusunda anlatıldığı gibi oluşturun.
 
-## <a name="to-assign-mtd-apps"></a>MTD uygulamaları atamak için
+### <a name="for-check-point-sandblast-mobile"></a>Check Point SandBlast Mobile için
+
+- Check Point SandBlast Mobile iOS uygulama yapılandırma ilkesini eklemek için [iOS için Microsoft Intune uygulama yapılandırma ilkelerini kullanma](app-configuration-policies-use-ios.md) yönergelerine bakın.
+    - **8. adımda** **XML verisi gir** seçeneğini kullanın, aşağıdaki içeriği kopyalayıp yapılandırma ilkesinin gövdesine yapıştırın.
+
+```
+<dict><key>MDM</key><string>INTUNE</string></dict>
+
+```
+## <a name="to-assign-apps-all-mtd-partners"></a>Uygulama atamak için (Tüm MTD iş ortakları)
 
 - [Intune ile gruplara uygulama atama](apps-deploy.md) yönergelerine bakın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Intune ile Skycure tümleştirmesini kurma](skycure-mtd-connector-integration.md)
-[Intune ile Lookout tümleştirmesini kurma](lookout-mtd-connector-integration.md)
+- [Intune ile Lookout tümleştirmesini ayarlama](lookout-mtd-connector-integration.md)
+- [Intune ile Skycure tümleştirmesini kurma](skycure-mtd-connector-integration.md)
+- [Intune ile Check Point SandBlast tümleştirmesini ayarlama](checkpoint-sandblast-mobile-mtd-connector-integration.md)

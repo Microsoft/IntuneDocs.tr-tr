@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5eab3fb933b2999e23115091cf0ded3f140e114c
-ms.sourcegitcommit: f5c6e8b218431dc9a8d85464d7f58adebd048866
+ms.openlocfilehash: b8d281e3af2458bd5ab343dfa5123b31075d28ed
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2017"></a>Microsoft Intune için erken sürüm - Temmuz 2017
 
@@ -40,11 +40,11 @@ Bu sayfa düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha 
 
 
 
-## <a name="whats-coming-to-intune-on-the-azure-portal"></a>Azure portalında Intune'da yakında çıkacak özellikler
+## <a name="intune-on-the-azure-portal"></a>Azure portalında Intune
 
 ### <a name="easier-installation-of-office-365-apps-----1121362----"></a>Office 365 uygulamalarında yükleme kolaylığı <!--- 1121362 --->
 Yeni bir tür **Office 365 ProPlus** uygulaması, yönettiğiniz ve Windows 10’un son sürümünü çalıştıran cihazlara Office 365 ProPlus uygulamalarını atamanızı kolaylaştıracak. Bunun yanı sıra, Microsoft Project ve Microsoft Visio lisanslarınız varsa bu uygulamaları da yükleyebilirsiniz. İstediğiniz uygulamalar birlikte paketlenir ve Intune konsolundaki uygulama listesinde tek uygulama olarak gösterilir.
- 
+
 
 ### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>Cihazları Intune ile eşitlemeye zorlayan yeni bir cihaz eylemi <!-- 711369 -->    
 Seçili cihazı hemen Intune ile eşitlemeye zorlayan yeni bir cihaz eylemi ekliyoruz. Bir cihaz eşitlendiğinde, kendisine atanan beklemedeki eylem veya ilkeleri hemen alır.  Bu eylem, atadığınız ilkeleri bir sonraki zamanlanmış iadeyi beklemenize gerek kalmadan hızla doğrulamanız ve ilkelerin sorunlarını gidermenize yardımcı olur.
@@ -105,7 +105,7 @@ Yakın zamanda, Mac cihazların Intune’a kaydedilmesi ve Intune cihaz uyumlulu
 ### <a name="end-of-support-for-ios-80----1164477---"></a>iOS 8.0 desteğinin son bulması <!---1164477--->
 Yönetilen uygulamalar ve iOS için Şirket Portalı uygulaması, şirket kaynaklarına erişim için iOS 9.0 ve üzeri sürümleri gerektirecek. Eylül ayından önce güncelleştirmeyen cihazlar, Şirket Portalı veya diğer uygulamalara erişemeyecek. Aralık ayına gelindiğinde ise e-posta dahil olmak üzere tüm şirket kaynaklarına erişim kaldırılacak. 
 
-### <a name="end-of-support-for-android-43-and-lower----1171127---"></a>Android 4.3 ve altı sürümler için desteğin son bulması<!---1171127--->
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Android 4.3 ve altı sürümler için desteğin son bulması<!---1171127, 1326920 --->
 Yönetilen uygulamalar ve Android için Şirket Portalı uygulaması, şirket kaynaklarına erişim için Android 4.4 ve üzeri sürümleri gerektirecek. Ekim ayının başından önce güncelleştirmeyen cihazlar, Şirket Portalı veya diğer uygulamalara erişemeyecek. Aralık ayında ise tüm kayıtlı cihazlar zorla devre dışı bırakılıp şirket kaynaklarına erişimleri kaldırılacak. MDM’siz uygulama koruma ilkeleri kullanıyorsanız uygulamalar güncelleştirme almayacak ve deneyimlerinin kalitesi zamanla düşecek.
 
 
@@ -122,7 +122,7 @@ Bu durum, Intune hizmeti ile yönetilen Windows Phone 8.1 cihazlar üzerinde do�
 
 
 
-## <a name="whats-coming-to-intune-apps"></a>Intune uygulamalarında yakında çıkacak özellikler
+## <a name="intune-apps"></a>Intune uygulamaları
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Tüm platformlar için Şirket Portalı uygulamalarında gelişmiş oturum açma deneyimi <!--User Story 1132123-->    
 Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum açma deneyimini geliştirecek bir değişikliği önümüzdeki birkaç ay içinde piyasaya süreceğiz. Yeni kullanıcı deneyimi, Azure AD bu değişikliği gerçekleştirdiğinde Şirket Portalına yönelik tüm platformlarda görünecektir. Ayrıca, kullanıcılar artık tek kullanımlık bir kod ile başka bir cihazdan Şirket Portalında oturum açabilir. Bu, özellikle kullanıcıların kimlik bilgileri olmadan oturum açması gerektiğinde faydalıdır.
