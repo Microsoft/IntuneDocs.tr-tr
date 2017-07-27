@@ -6,35 +6,32 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.custom: 
+ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
+ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure portalında Microsoft Intune’a giriş
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune artık Azure portalda; bu da alıştığınız iş yükleriyle işlevlerin artık farklı olduğu anlamına geliyor.
+Microsoft Intune artık Azure portalda; bu da alıştığınız iş akışlarıyla işlevlerin artık farklı olduğu anlamına geliyor.
 Yeni portal, Azure portalında kuruluşunuzun mobil cihazlarını, bilgisayarlarını ve uygulamalarını yönetebileceğiniz yeni ve güncelleştirilmiş işlevler sunuyor.
 
-> [!IMPORTANT]
-> **Henüz yeni portalı görmüyor musunuz?**<br>
-> Mevcut kiracılar yeni deneyime geçiriliyor. Kiracınız geçirilmeden önce Office İleti Merkezi'nde bir bildirim gösterilir.
->
-> Apple Kaydı iş akışlarının Azure’da kullanılabilmesi için Ocak 2017 öncesinde oluşturulan Intune hesaplarında tek seferlik bir geçiş yapılması gerekir. Geçiş için zaman çizelgesi henüz duyurulmamıştır. Mevcut hesabınız Azure portalına erişemiyorsa bir deneme hesabı oluşturmanızı öneririz.
->
-> Olası engelleyiciler listesini gözden geçirin: https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+* [Özelliklerim Azure’da nereye gitti?](ui-changes.md) size, Azure’a taşınma sonucu değişmiş olan iş akışları ve kullanıcı arabirimlerini gösteren bir başvurudur.
+* [Azure portalında klasik Intune grupları](groups-get-started.md), grup yönetimi için Azure Active Directory güvenlik gruplarına geçmiş olmanın olası sonuçlarını açıklar.
+
+
 
 
 Bu kitaplıkta yeni portal hakkında bilgiler bulabilirsiniz ve bunlar sürekli olarak güncelleştirilir. Görmek istediklerinize ilişkin önerileriniz varsa konu yorumlarında geri bildirim sağlayın. Görüşlerinizi öğrenmeyi çok isteriz.
@@ -47,7 +44,14 @@ Yeni deneyimde öne çıkan özellikler:
 - Tüm Azure uygulamalarınız genelinde uyumluluk sağlamak için Azure Active Directory (AD) grupları
 - En modern web tarayıcıları için destek
 
-Klasik Intune konsolu hakkındaki belgeleri arıyorsanız, bkz. [Intune belge kitaplığı](https://docs.microsoft.com/intune-classic/).
+> [!IMPORTANT]
+> **Henüz yeni portalı görmüyor musunuz?**<br>
+> Mevcut kiracılar yeni deneyime geçiriliyor. Kiracınız geçirilmeden önce Office İleti Merkezi'nde bir bildirim gösterilir.
+>
+> Apple Kaydı iş akışlarının Azure’da kullanılabilmesi için Ocak 2017 öncesinde oluşturulan Intune hesaplarında tek seferlik bir geçiş yapılması gerekir. Geçiş için zaman çizelgesi henüz duyurulmamıştır. Mevcut hesabınız Azure portalına erişemiyorsa bir deneme hesabı oluşturmanızı öneririz.
+>
+> Olası engelleyiciler listesini gözden geçirin: https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+
 
 ## <a name="before-you-start"></a>Başlamadan önce
 

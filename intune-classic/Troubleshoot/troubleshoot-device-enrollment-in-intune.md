@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 07/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
@@ -151,6 +151,17 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 
 ## <a name="android-issues"></a>Android sorunları
+
+### <a name="android-enrollment-errors"></a>Android kayıt hataları
+
+Son kullanıcıların Android cihazları Intune’a kaydederken karşılaşabileceği hatalar aşağıdaki tabloda listelenmiştir.
+
+|Hata iletisi|Sorun|Çözüm|
+|---|---|---|
+|**Erişim için BT yöneticisinin lisans ataması gerekiyor**<br>BT yöneticiniz, bu uygulamayı kullanmanız için size erişim vermemiş. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Cihaz kaydedilemiyor çünkü bu kullanıcının hesabında gerekli lisans yok.|Cihazlar kaydedilmeden önce kullanıcılara gerekli lisans atanmış olmalıdır. Bu ileti kullanıcının belirlenen mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin, mobil cihaz yönetimi yetkilisi olarak Intune belirlendiyse ve kullanıcı bir System Center 2012 R2 Configuration Manager lisansı kullanıyorsa bu hatayı alır.<br><br>[Kullanıcı hesaplarınıza Intune lisansları atama](/intune/licenses-assign.md) hakkında bilgi alın.
+|**BT yöneticisinin MDM yetkilisi ayarlaması gerekiyor<br>Görünüşe göre BT yöneticiniz MDM yetkilisi ayarlamamış. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Mobil cihaz yönetimi yetkilisi tanımlanmadı.|Intune’da mobil cihaz yönetimi yetkilisi belirlenmemiştir. [Mobil cihaz yönetimi yetkilisini ayarlama](/intune/mdm-authority-set.md) hakkında bilgi edinin.|
+
+
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Cihazlar Intune hizmetini denetlemiyor ve Intune yönetici konsolunda "Uygun olmayan durumda" olarak görüntüleniyor
 **Sorun:** Android sürüm 4.4.x ve 5.x çalıştıran bazı Samsung cihazlar, Intune hizmetini denetlemeyi durdurabiliyor. Hizmeti denetlemeyen cihazlar:
 

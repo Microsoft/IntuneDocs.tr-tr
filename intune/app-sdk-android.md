@@ -5,7 +5,7 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 06/12/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -83,7 +83,7 @@ Intune Uygulama SDK'sı, Intune uygulama koruma ilkelerini etkinleştirmek için
 
 Örneğin, `AppSpecificActivity` üst öğesi ile etkileşim kurduğunda (örneğin `super.onCreate()` çağırdığında), `MAMActivity` üst sınıftır.
 
-Tipik Android uygulamaları tek bir moda sahiptir ve sisteme [**Context**](https://developer.android.com/reference/android/content/Context.html) nesnesi aracılığıyla erişebilirler. Öte yandan Intune uygulama SDK'sıyla tümleşik uygulamalar çift moda sahiptir. Bu uygulamalar sisteme `Context` nesnesi üzerinden erişmeye devam eder. Kullanılan temel `Activity` baz alınarak, `Context` nesnesi Android tarafından sağlanır veya sistemin sınırlı bir görünümü ve Android tarafından sağlanan `Context` arasında çoğullanır.
+Tipik Android uygulamaları tek bir moda sahiptir ve sisteme [**Context**](https://developer.android.com/reference/android/content/Context.html) nesnesi aracılığıyla erişebilirler. Öte yandan Intune uygulama SDK'sıyla tümleşik uygulamalar çift moda sahiptir. Bu uygulamalar sisteme `Context` nesnesi üzerinden erişmeye devam eder. Kullanılan temel `Activity` baz alınarak, `Context` nesnesi Android tarafından sağlanır veya sistemin sınırlı bir görünümü ve Android tarafından sağlanan `Context` arasında çoğullanır. Bir MAM giriş noktasından türettikten sonra, `Context` kullanmak normalde yaptığınız gibi güvenlidir; örneğin `Activity` sınıflarını başlatıp `PackageManager` kullanmak.
 
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>Sınıfları, yöntemleri ve etkinlikleri MAM eşdeğerleriyle değiştirme
@@ -136,7 +136,7 @@ Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bun
 
 
 ### <a name="renamed-methods"></a>Yeniden Adlandırılan Yöntemler
-Bir MAM giriş noktasından türettikten sonra, `Context` kullanmak normalde yaptığınız gibi güvenlidir; örneğin `Activity` sınıflarını başlatıp `PackageManager` kullanmak.
+
 
 Birçok durumda, Android sınıfında kullanılabilir olan bir yöntem, MAM değiştirme sınıfında kesin olarak işaretlenmiştir. Bu durumda, MAM değiştirme sınıfı benzer ada sahip olup (genellikle `MAM` son ekini alır) geçersiz kılmanız gereken bir yöntem sağlar. Örneğin, `MAMActivity`’i geçersiz kılıp `onCreate()` çağırmak yerine `super.onCreate()`’den türetilirken, `Activity`, `onMAMCreate()`’i geçersiz kılmalı ve `super.onMAMCreate()` çağırmalıdır. Java derleyicisi, MAM eşdeğeri yerine özgün metodun yanlışlıkla geçersiz kılınmasını önleyen kesin kısıtlamalar uygulamalıdır.
 
@@ -146,7 +146,7 @@ Birçok durumda, Android sınıfında kullanılabilir olan bir yöntem, MAM değ
 ### <a name="manifest-replacements"></a>Bildirim Değişiklikleri
 Hem bildirimde hem de Java kodunda yukarıdaki sınıf değişikliklerinden bazılarını yapmanız gerekebileceğini lütfen unutmayın. Özel not:
 * `android.support.v4.content.FileProvider` için olan bildirim başvuruları `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider` ile değiştirilmelidir.
-
+* Uygulamanızın kendi türetilmiş Uygulama sınıfına ihtiyacı yoksa bildirimde kullanılan Uygulama sınıfı adı olarak `com.microsoft.intune.mam.client.app.MAMApplication` ayarlanmalıdır.
 
 ## <a name="sdk-permissions"></a>SDK izinleri
 
@@ -198,7 +198,7 @@ public interface MAMLogHandlerWrapper {
 
 ## <a name="enable-features-that-require-app-participation"></a>Uygulama katılımı gerektiren özellikleri etkinleştirme
 
-SDK’nın kendi başına uygulayamayacağı çeşitli uygulama koruma ilkeleri vardır. Uygulama bu özellikleri sağlamak için aşağıdaki `AppPolicy` arabiriminde bulabileceğiniz çeşitli API’ler kullanarak davranışını denetleyebilir.
+SDK’nın kendi başına uygulayamayacağı çeşitli uygulama koruma ilkeleri vardır. Uygulama bu özellikleri sağlamak için aşağıdaki `AppPolicy` arabiriminde bulabileceğiniz çeşitli API’ler kullanarak davranışını denetleyebilir. Bir `AppPolicy` örneği almak için `MAMPolicyManager.getPolicy` kullanın.
 
 ```java
 /**
@@ -267,7 +267,7 @@ String toString();
 ```
 
 > [!NOTE]
-> Cihaz veya uygulama bir Intune yönetim ilkesi altında olmasa bile `MAMComponents.get(AppPolicy.class)` her zaman null olmayan bir Uygulama İlkesi döndürür.
+> Cihaz veya uygulama bir Intune yönetim ilkesi altında olmasa bile `MAMPolicyManager.getPolicy` her zaman null olmayan bir Uygulama İlkesi döndürür.
 
 ### <a name="example-determine-if-pin-is-required-for-the-app"></a>Örnek: Uygulama için PIN’in gerekli olup olmadığını belirleme
 
@@ -321,13 +321,13 @@ SaveLocation service, String username);
 
     * SaveLocation.ONEDRIVE_İŞ
     * SaveLocation.YEREL
-    * SaveLocation.DİĞER
+    * SaveLocation.SHAREPOINT
 
 Kullanıcının ilkesinin çeşitli konumlara veri kaydetmesine izin verip vermediğini belirlemeye yönelik önceki yöntem, aynı **AppPolicy** sınıfındaki `getIsSaveToPersonalAllowed()` yöntemiydi. Bu işlev artık **kullanım dışı bırakılmıştır** ve kullanılmamalıdır; aşağıdaki çağrı `getIsSaveToPersonalAllowed()` ile eşdeğerdir:
 
 ```java
 
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
 ```
 
 >[!NOTE]
@@ -745,16 +745,20 @@ Veri Yedekleme kılavuzu uygulamanızın verilerini geri yüklemeniz için genel
 
 ## <a name="multi-identity-optional"></a>Çok Kimlikli (isteğe bağlı)
 
-### <a name="overview"></a>Genel bakış
-Intune Uygulama SDK’sı varsayılan olarak, ilkeyi uygulamaya bir bütün olarak uygular. Çok kimlikli, ilkenin her kimlik düzeyinde uygulanmasına izin vermek üzere etkinleştirilebilen, isteğe bağlı bir Intune uygulama koruma özelliğidir. Bu, diğer uygulama koruma özelliklerine kıyasla önemli oranda daha fazla uygulama katılımı gerektirir.
+### <a name="overview"></a>Genel Bakış
+Varsayılan olarak Intune Uygulama SDK’sı, ilkeyi uygulamaya bir bütün halinde uygular. Çok kimlikli, ilkenin her kimlik düzeyinde uygulanmasına izin vermek üzere etkinleştirilebilen, isteğe bağlı bir Intune uygulama koruma özelliğidir. Bu, diğer uygulama koruma özelliklerine kıyasla önemli oranda daha fazla uygulama katılımı gerektirir.
 
-Uygulamanın etkin kimliği değiştirmeyi amaçladığında SDK'yı bilgilendirmesi _gerekir_ ve kimlik değişikliği gerekli olduğunda da SDK bunu uygulamaya bildirir. Kullanıcı cihaz veya uygulamayı kaydettikten sonra, SDK bu kimliği kaydeder ve bunu Intune tarafından yönetilen birincil kimlik olarak kabul eder. Uygulamadaki diğer kullanıcılar kısıtlanmamış ilke ayarlarıyla yönetilmeyen olarak kabul edilirler.
+Uygulama, etkin kimliği değiştirmeyi amaçladığında bunu SDK’ya bildirmek *zorundadır*. Bazı durumlarda, bir kimlik değişikliği gerektiğinde SDK bunu uygulamaya bildirir. Ancak çoğu zaman MAM, hangi verilerin kullanıcı arabiriminde görüntülendiğini veya belirli bir anda bir iş parçacığında kullanıldığını bilemez, veri sızıntısını önlemek için doğru kimliğin uygulama tarafından ayarlanması gerekir. Aşağıdaki bölümlerde, uygulama eylemi gerektiren bazı senaryolar verilmiştir.
+
+> [!NOTE]
+>  Uygulamanın doğru yerlerde katılımda bulunmaması, veri sızıntısı veya diğer güvenlik sorunlarıyla sonuçlanabilir.
+
+Kullanıcı cihaz veya uygulamayı kaydettikten sonra, SDK bu kimliği kaydeder ve bunu Intune tarafından yönetilen birincil kimlik olarak kabul eder. Uygulamadaki diğer kullanıcılar kısıtlanmamış ilke ayarlarıyla yönetilmeyen olarak kabul edilirler.
 
 > [!NOTE]
 > Şu anda cihaz başına yalnızca bir Intune tarafından yönetilen kimlik desteklenir.
 
 Bir kimliğin yalnızca dizi olarak tanımlandığını aklınızda bulundurun. Kimlikler **büyük/küçük harfe duyarlı değildir** ve SDK’ya kimlik için yapılan istekler, kimlik ayarlandığı sırada kullanılan özgün büyük/küçük harf dizimiyle aynı sonucu getirmeyebilir.
-
 
 ### <a name="enabling-multi-identity"></a>Çok kimlikli kullanımı etkinleştirme
 
@@ -774,7 +778,9 @@ Geliştiriciler uygulama kullanıcısının kimliğini azalan öncelik sırasın
   2. Bağlam (genellikle Etkinlik) düzeyi
   3. İşlem düzeyi
 
-İş parçacığı düzeyinde ayarlanmış bir kimlik Bağlam düzeyinde ayarlanmış bir kimliğin, bağlam düzeyinde ayarlanmış bir kimlikse işlem düzeyinde ayarlanmış bir kimliğin yerini alır. Bağlam düzeyinde ayarlanmış bir kimlik yalnızca uygun ilişkilendirilmiş senaryolarda kullanılabilir. Örneğin, Dosya GÇ işlemlerinde ilişkilendirilmiş Bağlam yoktur. Aşağıdaki `MAMPolicyManager` yöntemleri kimlik ayarlamak ve önceden ayarlanan kimlik değerlerini almak için kullanılabilir.
+İş parçacığı düzeyinde ayarlanmış bir kimlik Bağlam düzeyinde ayarlanmış bir kimliğin, bağlam düzeyinde ayarlanmış bir kimlikse işlem düzeyinde ayarlanmış bir kimliğin yerini alır. Bağlam’a ayarlı bir kimlik, yalnızca uygun ilişkili senaryolarda kullanılır. Örneğin dosya GÇ işlemlerinde ilişkili bir Bağlam bulunmaz. Çoğu zaman uygulamalar, Bağlam kimliğini bir Etkinliğe bağlı olarak ayarlar. Etkinlik kimliği söz konusu kimliğe ayarlı değilse bir uygulama, yönetilen bir kimlik hakkındaki verileri *görüntülememelidir*. Genel olarak işlem düzeyi kimliği yalnızca, uygulama belirli bir anda tüm iş parçacıklarında sadece tek bir kullanıcıyla çalışıyorsa kullanışlıdır. Pek çok uygulamanın bunu kullanmaya ihtiyacı yoktur.
+
+Aşağıdaki `MAMPolicyManager` yöntemleri kimlik ayarlamak ve önceden ayarlanan kimlik değerlerini almak için kullanılabilir.
 
 ```java
   public static void setUIPolicyIdentity(final Context context, final String identity, final MAMSetUIIdentityCallback mamSetUIIdentityCallback);
@@ -797,8 +803,8 @@ Geliştiriciler uygulama kullanıcısının kimliğini azalan öncelik sırasın
   public static AppPolicy getPolicy();
 
   /**
-   * Get the currently applicable app policy, taking the context
-   * identity into account.
+  * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -820,9 +826,11 @@ Kimlik ayarlamak için kullanılan tüm yöntemler, sonuç değerlerini `MAMIden
 | Dönüş değeri | Senaryo |
 |--|--|
 | SUCCEEDED | Kimlik değişikliği başarılı oldu. |
-| NOT_ALLOWED | Kimlik değişikliğine izin verilmiyor. <br><br>Bu, kayıtlı kullanıcı olarak aynı kuruluşa ait farklı bir yönetilen kullanıcıya geçiş yapmak denenirse meydana gelir. Geçerli iş parçacığı üzerinde farklı bir kimlik ayarlanmışken UI (Bağlam) kimliğini ayarlamak denenirse de gerçekleşir. |
+| NOT_ALLOWED | Kimlik değişikliğine izin verilmiyor. Kimlik değişikliğine izin verilmiyor. Bu, geçerli iş parçacığı üzerinde farklı bir kimlik ayarlanmışken kullanıcı arabirimi (Bağlam) kimliğini ayarlamak denenirse gerçekleşir. |
 | CANCELLED | Kullanıcı, genellikle PIN veya kimlik doğrulama istemi üzerindeki geri tuşuna basarak, kimlik değişikliğini iptal etmiştir. |
 | FAILED | Kimlik değişikliği belirlenemeyen bir nedenden dolayı başarısız oldu.|
+
+Şirket verilerini görüntülemeden veya kullanmadan önce uygulama, kimlik geçişinin başarılı olduğundan *emin olmalıdır*. Şu anda birden çok kimlik etkin uygulamalarda, işlem ve iş parçacığı kimliklerinin geçişleri her zaman başarılı olmaktadır ancak hata koşulları ekleme hakkımızı saklı tutuyoruz. İş parçacığı kimliğiyle çakışırsa veya kullanıcı koşullu başlatma gereksinimlerini iptal ederse (yani PIN ekranında geri düğmesine basarsa) kullanıcı arabirimi kimlik geçişi, geçersiz bağımsız değişkenler için başarısız olabilir.
 
 
 Bir Bağlam kimliği ayarlamak söz konusu olduğunda, sonuç zaman uyumsuz olarak bildirilir. Bağlam bir Etkinlik ise, koşullu başlatma uygulanana kadar SDK kimlik değişikliğinin başarılı olup olmadığını bilmez ve bunun için kullanıcının PIN değerini veya şirket kimlik bilgilerini girmesi gerekebilir. Uygulamanın bu sonucu almak için bir `MAMSetUIIdentityCallback` uygulaması gerekir, bu parametre için null değeri geçirebilirsiniz.
@@ -927,10 +935,10 @@ Uygulamanın kimlik ayarlayabilme özelliğine ek olarak, bir iş parçacığı 
 
   ```java
     public final class MAMFileProtectionManager {
+    /**
+         * Protect a file. This will synchronously trigger whatever protection is required for the 
+           file, and will tag the file for future protection changes.
 
-        /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the file, and will tag the file for
-         * future protection changes.
          *
          * @param identity
          *            Identity to set.
@@ -940,23 +948,37 @@ Uygulamanın kimlik ayarlayabilme özelliğine ek olarak, bir iş parçacığı 
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
+        
+        /**
+        * Protect a file obtained from a content provider. This is intended to be used for
+        * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+        * It may also be used with descriptors referring to private files owned by this app.
+        * It is not intended to be used for files owned by other apps and such usage will fail. If
+        * creating a new file via a content provider exposed by another MAM-integrated app, the new
+        * file identity will automatically be set correctly if the ContentResolver in use was
+        * obtained via a Context with an identity or if the thread identity is set.
+        *
+        * This will synchronously trigger whatever protection is required for the file, and will tag
+        * the file for future protection changes. If an identity is set on a directory, it is set
+        * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+        * method will silently do nothing.
+        *
+        * @param identity
+        *       Identity to set.
+        * @param file
+        *       File to protect.
+        *
+        * @throws IOException
+        *       If the file cannot be protected.
+
+        */
+        public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
         /**
          * Get the protection info on a file.
          *
          * @param file
          *            File or directory to get information on.
-         * @return File protection info, or null if there is no protection info.
-         * @throws IOException
-         *             If the file cannot be read or opened.
-         */
-        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
-
-        /**
-         * Get the protection info on a file.
-         *
-         * @param file
-         *            File to get information on.
          * @return File protection info, or null if there is no protection info.
          * @throws IOException
          *             If the file cannot be read or opened.
@@ -970,6 +992,19 @@ Uygulamanın kimlik ayarlayabilme özelliğine ek olarak, bir iş parçacığı 
     }
 
   ```
+#### <a name="app-responsibility"></a>Uygulama Sorumluluğu
+MAM, bir `Activity` öğesinde okunan dosyalar ve görüntülenen veriler arasında otomatik olarak bir ilişki çıkaramaz. Uygulamalar, şirket verilerini görüntülemeden önce kullanıcı arabirimi kimliğini uygun şekilde *ayarlamalıdır*. Bu, dosyalardan veri okumayı içerir. Bir dosya uygulama dışında geliyorsa (bir `ContentProvider` öğesinden geliyorsa veya herkesin yazılabildiği bir konumdan okunuyorsa) uygulama, dosyadan okunan bilgileri görüntülemeden önce (`MAMFileProtectionManager.getProtectionInfo` kullanarak) dosya kimliğini belirleme *girişiminde bulunmalıdır*. `getProtectionInfo` null veya boş olmayan bir kimlik rapor ederse kullanıcı arabirimi kimliği, bu kimlikle eşleşmek üzere (`MAMActivity.switchMAMIdentity` veya `MAMPolicyManager.setUIPolicyIdentity` kullanarak) *ayarlanmalıdır*. Kimlik geçişi başarısız olursa dosyadan okunan veriler *görüntülenmemelidir*.
+
+Örnek bir akış aşağıdaki gibi olabilir:
+  * Kullanıcı, uygulamada açmak üzere bir belge seçer
+  * Açma akışında, diskten veri okumadan önce içeriği görüntülemek için kullanılacak kimlik uygulama tarafından onaylanır
+    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+    * Uygulama geri aramadan önce sonucun rapor edilmesini bekler
+    * Sonuç başarısız olarak rapor edilirse uygulama, belgeyi görüntülemez.
+  * Uygulama açılır ve dosyayı işler
+
+## <a name="offline-scenarios"></a>Çevrimdışı Senaryolar
 
 Dosya kimliği etiketlemesi çevrimdışı moda karşı hassastır. Aşağıdaki noktalar göz önünde bulundurulmalıdır:
 
@@ -1093,6 +1128,150 @@ Uygulama `WIPE_USER_DATA` bildirimine kayıtlıysa, SDK’nın varsayılan seçm
 
 Çoklu kimliği tanıyan bir uygulama MAM varsayılan seçmeli silme işleminin yapılmasını _**ve**_ silme işleminde kendi eylemlerini gerçekleştirmek isterse, `WIPE_USER_AUXILIARY_DATA` bildirimlerine kayıtlı olması gerekir. Bu bildirim, SDK tarafından MAM varsayılan seçmeli silme gerçekleştirmeden hemen önce gönderilir. Uygulama, hiçbir zaman hemen WIPE_USER_DATA hem de WIPE_USER_AUXILIARY_DATA için kaydedilmemelidir.
 
+## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android uygulamalarınız için MAM hedefli yapılandırmayı etkinleştirme (isteğe bağlı)
+Intune konsolunda uygulamaya özgü anahtar-değer çiftleri yapılandırılabilir. Bu anahtar-değer çiftleri Intune tarafından değiştirilmeden yalnızca uygulamaya geçirilir. Bu tip bir yapılandırma almak isteyen uygulamalar bunun için `MAMAppConfigManager` ve `MAMAppConfig` sınıflarını kullanabilir. Aynı uygulamaya birden çok ilke hedeflenmişse aynı anahtar için birden çok çakışan değer olabilir.
+
+### <a name="example"></a>Örnek
+```
+MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
+String identity = "user@contoso.com"
+MAMAppConfig appConfig = configManager.getAppConfig(identity);
+LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
+String valueToUse = null;
+if (appConfig.hasConflict("foo")) {
+    List<String> values = appConfig.getAllStringsForKey("foo");
+    for (String value : values) {
+        if (isCorrectValue(value)) {
+            valueToUse = value;
+        }
+    }
+} else {
+    valueToUse = appConfig.getStringForKey("foo", MAMAppConfig.StringQueryType.Any);
+}
+LOGGER.info("Found value " + valueToUse);
+```
+
+### <a name="mamappconfig-reference"></a>MAMAppConfig Başvurusu
+
+```
+public interface MAMAppConfig {
+    /**
+     * Conflict resolution types for Boolean values.
+     */
+    enum BooleanQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns true if any of the values are true.
+         */
+        Or,
+        /**
+         * In case of conflict, returns false if any of the values are false.
+         */
+        And
+    }
+
+    /**
+     * Conflict resolution types for integer and double values.
+     */
+    enum NumberQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the minimum Integer.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the maximum Integer.
+         */
+        Max
+    }
+
+    /**
+     * Conflict resolution types for Strings.
+     */
+    enum StringQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the first result ordered alphabetically.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the last result ordered alphabetically.
+         */
+        Max
+    }
+
+    /**
+     * Retrieve the List of Dictionaries containing all the custom
+     *  config data sent by the MAMService. This will return every
+     * Application Configuration setting available for this user, one
+     *  mapping for each policy applied to the user.
+     */
+    List<Map<String, String>> getFullData();
+
+    /**
+     * Returns true if there is more than one targeted custom config setting for the key provided. 
+     */
+    boolean hasConflict(String key);
+
+    /**
+     * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
+     * null if none exists or it cannot be coerced.
+     */
+    Boolean getBooleanForKey(String key, BooleanQueryType queryType);
+
+    /**
+     * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
+     */
+    Long getIntegerForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
+     */
+    Double getDoubleForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a String value for the given key, or null if none exists.
+     */
+    String getStringForKey(String key, StringQueryType queryType);
+
+    /**
+     * Like getBooleanForKey except returns all values if multiple are present.
+     */
+    List<Boolean> getAllBooleansForKey(String key);
+
+    /**
+     * Like getIntegerForKey except returns all values if multiple are present.
+     */
+    List<Long> getAllIntegersForKey(String key);
+
+    /**
+     * Like getDoubleForKey except returns all values if multiple are present.
+     */
+    List<Double> getAllDoublesForKey(String key);
+
+    /**
+     * Like getStringForKey except returns all values if multiple are present.
+     */
+    List<String> getAllStringsForKey(String key);
+}
+```
+
+### <a name="notification"></a>Bildirim
+Uygulama yapılandırma, yeni bir bildirim türü ekler:
+* **REFRESH_APP_CONFIG**: Bu bildirim, bir `MAMUserNotification` ile gönderilir ve yeni uygulama yapılandırmasının kullanılabilir olduğu hakkında uygulamayı bilgilendirir.
+
+Grafik API'sinin MAM'ı hedefleyen yapılandırma değerlerine göre özellikleri hakkında daha fazla bilgi için bkz. [MAM'ı Hedefleyen Yapılandırma Grafik API'si Başvurusu](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+Android’de MAM hedefli bir uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi için [Android için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android) konusunun MAM hedefli uygulama yapılandırması hakkındaki bölümüne bakın.
 
 ## <a name="style-customization-optional"></a>Stil Özelleştirme (isteğe bağlı)
 
@@ -1141,18 +1320,22 @@ Aşağıda izin verilen stil özniteliklerinin, bunların denetledikleri UI öğ
 1.  Alanlarda 65.000 sınırı.
 2.  Metotlarda 65.000 sınırı.
 
-
-
 ### <a name="policy-enforcement-limitations"></a>İlke zorlama sınırlamaları
 
 * **Ekran Yakalama**: SDK, Activity.onCreate öğesinden zaten geçmiş olan Etkinliklerde yeni bir ekran yakalama ayar değeri uygulayamaz. Bu durum, uygulama ekran görüntülerini devre dışı bırakacak şekilde yapılandırıldığı halde ekran görüntülerinin alınabildiği bir zaman dilimine yol açabilir.
 
 * **İçerik Çözümleyicileri Kullanma**: “Aktarma veya alma” Intune ilkesi, başka bir uygulamadaki içerik sağlayıcısına erişmek için bir içerik çözümleyicisinin kullanılmasını tamamen veya kısmen engelleyebilir. Bu durum ContentResolver yöntemlerinin null döndürmesine veya bir hata değeri oluşturmasına neden olur (örneğin `openOutputStream` engellenirse `FileNotFoundException` oluşturur). Uygulama, içerik çözümleyicisi ile veri yazma hatasının bir ilkeden kaynaklanıp kaynaklanmadığını (veya ilke tarafından kaynaklanabileceğini) şu çağrıyı yaparak belirleyebilir:
+    ```java
+    MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
+    ```
+    veya ilişkili bir etkinlik yoksa şu çağrıyla belirleyebilir
 
     ```java
-    MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI);
+    MAMPolicyManager.getPolicy().getIsSaveToLocationAllowed(contentURI);
     ```
 
+    İkinci durumda birden çok kimlikli uygulamalar, iş parçacığı kimliğini uygun şekilde ayarlamaya (veya `getPolicy` çağrısına bir açık kimlik geçirmeye) özen göstermelidir.
+    
 ### <a name="exported-services"></a>Dışarı aktarılan hizmetler
 
  Intune Uygulama SDK’sına dahil edilen AndroidManifest.xml dosyası, **MAMNotificationReceiverService** öğesini içerir. Bu öğenin, Şirket Portalı’nın kullanan bir uygulamaya bildirim göndermesine izin vermek üzere dışarı aktarılan bir hizmet olması gerekir. Hizmet, yalnızca Şirket Portalı’nın bildirim göndermesine izin verildiğinden emin olmak için çağıranı denetler.

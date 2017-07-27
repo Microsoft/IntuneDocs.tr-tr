@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
+ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/15/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS cihazınızdaki yönetilen uygulamaları kullanma
 
@@ -38,6 +38,8 @@ Yönetilen uygulamaları birkaç farklı yöntemle edinebilirsiniz:
 -   Cihazınız Microsoft Intune’a kaydolduğunda uygulamayı Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden yükleyebilirsiniz ya da uygulama BT yöneticiniz tarafından cihazınıza yüklenebilir. Kayıt hakkında bilgi edinmek için bkz. [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-macos.md).
 
 -   Bir uygulamayı App Store’dan yükleyin ve ardından Intune tarafından yönetilen şirket kullanıcı hesabınızla oturum açın.
+
+BT yöneticiniz bazen, yüklediğiniz bir uygulama için birden çok lisans satın almış olabilir. Apple Volume Purchase Program sözleşmesini kabul etmenizi isteyen bir ileti görürseniz bu normaldir, kabul edebilirsiniz. Kabul etmediğiniz takdirde uygulamayı yükleyemezsiniz.
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>BT yöneticim bir uygulamada neyi yönetebilir?
 BT yöneticinizin bir uygulamada yönetebileceği ve cihazınızdaki şirket verileriyle etkileşimlerinizi etkileyebilecek seçeneklerin bazı örnekleri aşağıda verilmiştir:

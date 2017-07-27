@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 537087b720338413261b3947365a4d90fed89fbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS uygulama koruma ilkesi ayarları
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -41,7 +41,7 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penc
 | **Uygulama verilerini şifreleme** | İlkeyle yönetilen uygulamalarda, etkin olmayan veriler iOS tarafından sağlanan cihaz düzeyinde şifreleme şeması kullanılarak şifrelenir. PIN istendiğinde, veriler uygulama koruma ilkesi ayarlarına göre şifrelenir. <br><br> Hangi iOS şifreleme modüllerinin FIPS 140-2 sertifikalı veya FIPS 140-2 sertifikası bekliyor olduğunu görmek için [buradaki](https://support.apple.com/HT202739) resmi Apple belgelerine gidin. <br><br> Bu uygulamadaki iş veya okul verilerinin ne zaman şifreleneceğini belirtin. Aşağıdakilerden birini seçin: <ul><li>**Cihaz kilitliyken**: Cihaz kilitliyken, bu ilkeyle ilişkilendirilen tüm uygulama verileri şifrelenir.</li><li>**Cihaz kilitliyken ve açık dosyalar varken**: Cihaz kilitliyken, uygulamada o anda açık olan dosyalardaki veriler dışında bu ilkeyle ilişkilendirilen tüm uygulama verileri şifrelenir.</li><li>**Cihaz yeniden başlatıldıktan sonra**: Cihaz yeniden başlatıldığında, bu ilkeyle ilişkilendirilen tüm uygulama verileri cihaz kilidinin ilk açılışına kadar şifrelenir.</li><li>**Cihaz ayarlarını kullan**: Uygulama verileri, cihazdaki varsayılan ayarlara göre şifrelenir. </li></ul> Bu ayarı etkinleştirdiğinizde kullanıcının cihazına erişmesi için bir PIN ayarlaması ve bu PIN’i kullanması gerekebilir.  Şifreleme gerekli olduğu halde cihaz erişimi için PIN ayarlanmadıysa uygulamalar açılmaz ve “Kuruluşunuz, bu uygulamaya erişmek için öncelikle bir cihaz PIN’i etkinleştirmenizi gerektiriyor” iletisiyle birlikte kullanıcıdan bir PIN ayarlaması istenir.  | Cihaz kilitliyken |
 | **Kişilerin eşitlenmesini devre dışı bırak** | Uygulamanın cihazdaki yerel Kişiler bölümüne veri kaydetmesini engellemek için **Evet**’i seçin. **Hayır**’ı seçerseniz uygulama cihazdaki yerel Kişiler uygulamasına veri kaydedebilir. <br><br>Uygulamadan iş veya okul verilerini kaldırmak için seçmeli silme gerçekleştirdiğinizde, yerel Kişiler uygulamasına doğrudan uygulamadan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. Şu anda bu özellik yalnızca Microsoft Outlook uygulaması için geçerlidir. | Hayır |
 | **Yazdırmayı devre dışı bırak** | Uygulamanın iş veya okul verilerini yazdırmasını engellemek için **Evet**’i seçin. | Hayır |
-| **Şirket verilerinin kaydedilebileceği depolama hizmetlerini seçin** | Kullanıcılar seçili hizmetlere (OneDrive İş, SharePoint ve Yerel Depolama) kaydedebilir. Diğer tüm hizmetler engellenir. | 0 Seçili |
+| **Şirket verilerinin kaydedilebileceği depolama hizmetlerini seçin** | Kullanıcılar, seçili hizmetlere (OneDrive İş, SharePoint ve Yerel Depolama) kaydedebilir. Diğer tüm hizmetler engellenir. | 0 Seçili |
 
 > [!NOTE]
 > Verileri yeniden konumlandırma ayarlarının hiçbiri iOS cihazlarında Apple tarafından yönetilen birlikte aç özelliğini denetlemez. Apple birlikte aç özelliğini kullanmak için bkz. [Microsoft Intune ile iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md).
@@ -71,8 +71,8 @@ Intune uygulama koruma ilkesinin, belirli senaryolarda veri aktarımına hedef v
 | **Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)** | Aşağıdaki ayarları yapılandırın: <ul><li>**Zaman Aşımı**: Erişim gereksinimleri (daha önce ilkelerde tanımlanmıştır) yeniden denetlenmeden önce geçmesi gereken dakika sayısıdır. Örneğin, yönetici ilkede PIN’i etkinleştirirse, kullanıcı bir MAM uygulamasını açtığında bir PIN girmesi gerekir. Bu ayar kullanıldığında, kullanıcının **30 dakika** (varsayılan değer) boyunca herhangi bir MAM uygulamasında PIN girmesi gerekmez.</li><li>**Çevrimdışı yetkisiz kullanım süresi**: Uygulama için erişim gereksinimleri yeniden denetlenmeden önce MAM uygulamalarının çevrimdışı çalışabileceği dakika sayısıdır. Varsayılan değer = **720** dakika (12 saat). Bu süre dolduktan sonra, uygulama, çalışmaya devam edebilmesi için kullanıcının AAD’de kimliğini doğrulamasını ister.</li></ul>| Zaman Aşımı: 30 <br><br> Çevrimdışı: 720 |
 | **Uygulama verileri silinmeden önceki çevrimdışı zaman aralığı (gün)** | Belirtilen sayıda (yönetici tarafından tanımlanır) gün boyunca çevrimdışı çalışıldıktan sonra, uygulama kendi kendine bir seçmeli temizleme gerçekleştirir. Bu seçmeli temizleme, MAM temizleme iş akışında yönetici tarafından başlatılabilen temizlemeyle aynıdır. <br><br> | 90 gün |
 | **Cihaz PIN’i yönetildiği zaman uygulama PIN’ini devre dışı bırak** | Kayıtlı bir cihazda bir cihaz kilidi algılandığında, uygulama PIN’ini devre dışı bırakmak için **Evet**’i seçin. | Hayır |
-| **En düşük iOS işletim sistemini zorunlu tut** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. | Hayır |
-| **En düşük iOS işletim sistemini zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir. | Hayır |
+| **En düşük iOS işletim sistemini zorunlu tut** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. Bu ilke, yalnızca bir ondalık ayırıcıyı destekler; iOS 10.3 gibi. | Hayır |
+| **En düşük iOS işletim sistemini zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir. Bu ilke, yalnızca bir ondalık ayırıcıyı destekler; iOS 10.3 gibi. | Hayır |
 | **En düşük uygulama sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük uygulama sürümünü zorunlu tutmak üzere **Evet**’i seçin. Cihazın uygulama sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.<br><br>Uygulamalar arasında genellikle farklı sürüm şemaları bulunduğundan, en az bir uygulama sürümünün bir uygulamayı (örneğin, "Outlook sürüm ilkesi") hedeflediği bir ilke oluşturun. <br><br> | Hayır | 
 | **En düşük uygulama sürümünü zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük uygulama sürümünü önermek için **Evet**’i seçin. Cihazdaki uygulama sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.<br><br>Uygulamalar arasında genellikle farklı sürüm şemaları bulunduğundan, en az bir uygulama sürümünün bir uygulamayı (örneğin, "Outlook sürüm ilkesi") hedeflediği bir ilke oluşturun. <br><br> | Hayır | 
 | **En düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tutmak için **Evet**’i seçin. Cihazın Intune uygulama koruma ilkesi SDK sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. <br> <br> Intune uygulama koruma ilkesi SDK’sı hakkında daha fazla bilgi için bkz. [Intune Uygulama SDK'sına genel bakış](app-sdk.md) <br><br> | Hayır |

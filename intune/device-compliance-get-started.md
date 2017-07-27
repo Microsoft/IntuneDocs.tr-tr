@@ -1,49 +1,92 @@
 ---
-title: "Cihaz uyumluluğuna giriş"
+title: Intune cihaz uyumluluk ilkeleri
 titleSuffix: Intune on Azure
-description: "Bu konuyu Microsoft Intune'da uyumluluk ilkeleri oluşturmak için gereken önkoşulları anlamak için kullanabilirsiniz\""
+description: "Microsoft Intune’da cihaz uyumluluğunu öğrenmek için bu konuyu kullanın\""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
+ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9723e5a8b001068e8b7c9994723e6c7111e7a80d
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/20/2017
 ---
-# <a name="get-started-with-device-compliance-in-intune"></a>Intune'da cihaz uyumluluğu işlemine başlama
-
+# <a name="get-started-with-intune-device-compliance-policies"></a>Intune cihaz uyumluluk ilkelerini kullanmaya başlama
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bu konuda, şunları öğreneceksiniz: 
+## <a name="what-is-device-compliance-in-intune"></a>Intune'da cihaz uyumluluğu nedir?
 
-- Cihaz uyumluluk ilkesi oluşturmaya başlamadan önce ihtiyacınız olanlar.
-- Intune Azure portalında görebileceklerinize ve yapabileceklerinize hızlı bir bakış. 
+Intune cihaz uyumluluk ilkeleri, bir cihazın Intune tarafından uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlar.
 
-Cihaz uyumluluğu konusunda bilgi sahibi değilseniz, cihaz uyumluluğunun ne olduğunu ve kuruluşunuzda bunu nasıl kullanabileceğinizi öğrenmek için [bu konuyu](device-compliance.md) okumak isteyebilirsiniz.
+Bu kurallar aşağıdakileri içerir:
+
+- Cihazlara erişmek için bir parola kullanma
+
+- Şifreleme
+
+- Cihazın işletim sistemi engellemeleri kaldırılmış veya kök erişim izni verilmiş olup olmaması
+
+- İzin verilen en düşük işletim sistemi sürümü
+
+- İzin verilen en yüksek işletim sistemi sürümü
+
+- Cihazın Mobile Threat Defense düzeyinde veya daha düşük bir düzeyde olmasını gerektirme
+
+Cihaz uyumluluk ilkelerini, cihazlarınızdaki uyumluluk durumunu izlemek için de kullanabilirsiniz.
+
+### <a name="device-compliance-requirements"></a>Cihaz uyumluluk gereksinimleri
+
+Uyumluluk gereksinimleri temelde, PIN veya şifreleme isteme gibi kurallardır. Bir uyumluluk ilkesinde bunun gerekli olduğunu veya gerekli olmadığını belirtebilirsiniz.
+
+<!---### Actions for noncompliance
+
+You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
+When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
+actions for a device that continues to be in the noncompliant status for
+a week:
+
+-   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+
+-   3 days after initial noncompliance state, a follow up reminder is sent to the user.
+
+-   5 days after initial noncompliance state, a final reminder with a notification that access to company resources will be blocked on the device in 2 days if the compliance issues are not remediated is sent to the user.
+
+-   7 days after initial noncompliance state, access to company resources is blocked. This requires that you have conditional access policy that specifies that access from noncompliant devices should    be blocked for services such as Exchange and SharePoint.
+
+### Grace Period
+
+This is the time between when a device is first determined as
+noncompliant to when access to company resources on that device is blocked. This time allows for time that the user has to resolve
+compliance issues on the device. You can also use this time to create your action sequences to send notifications to the user before their access is blocked.
+
+Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ##  <a name="pre-requisites"></a>Ön koşullar
 
--   Intune aboneliği
+Intune’da cihaz uyumluluk ilkeleri kullanmak için aşağıdaki hizmetlere aboneliğinizin olması gerekir:
 
--   Azure Active Directory aboneliği
+- Intune EMS
 
-##  <a name="supported-platforms"></a>Desteklenen Platformlar:
+- Azure AD Premium
+
+###  <a name="supported-platforms"></a>Desteklenen Platformlar:
 
 -   Android
 
 -   iOS
+
+-   macOS (önizleme)
 
 -   Windows 8.1
 
@@ -51,32 +94,48 @@ Cihaz uyumluluğu konusunda bilgi sahibi değilseniz, cihaz uyumluluğunun ne ol
 
 -   Windows 10
 
-##  <a name="azure-portal-workflow"></a>Azure Portal iş akışı
+> [!IMPORTANT]
+> Cihazların, uyumluluk durumunu rapor edebilmek için Intune’a kayıtlı olmaları gerekir.
 
-Burada, Intune Azure portalında cihaz uyumluluğunu nasıl oluşturup yönetebileceğinize genel bir bakış sunulmaktadır.
+## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Intune cihaz uyumluluk ilkelerinin Azure AD ile birlikte çalışması
 
-<!---### Overview
+Bir cihaz Intune’a kaydedildiğinde Azure AD kayıt işlemi gerçekleşir. Bu işlem, Azure AD’de cihazın özniteliklerini güncelleştirerek daha fazla bilgi ekler. En önemli bilgilerden biri, koşullu erişim ilkelerinin e-posta veya diğer şirket kaynaklarına erişimi denetlemek için kullandığı cihaz uyumluluk durumu bilgisidir.
 
-When you choose the **Set device compliance** workload, the blade opens with an  **Overview** section that displays a summary view of your compliance policies that you have created and the status of the devices they have been applied to. If you
-don’t have any policies configured yet, the overview will just include the various reports but with no data.--->
+- [Azure AD kayıt işlemi](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview) hakkında daha fazla bilgi edinin.
 
-### <a name="manage"></a>Bilgisayarlarda
+##  <a name="ways-to-use-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini kullanma yolları
 
-Cihaz uyumluluklarını oluşturabilir, düzenleyebilir ve silebilirsiniz. Burada, kullanıcılara ilke atamaları da yapabilirsiniz.
+### <a name="with-conditional-access"></a>Koşullu erişim ile
+E-postaya ve diğer kurumsal kaynaklara yalnızca, bir veya daha fazla cihaz uyumluluk ilkesi kuralına uyan cihazların erişmesine izin vermek için uyumluluk ilkesini koşullu erişimle birlikte kullanabilirsiniz.
 
-<!---### Monitor
+### <a name="without-conditional-access"></a>Koşullu erişim olmadan
+Cihaz uyumluluk ilkelerini koşullu erişimden bağımsız olarak da kullanabilirsiniz. Uyumluluk ilkelerini bağımsız olarak kullandığınızda, hedeflenen cihazlar değerlendirilir ve uyumluluk durumları raporlanır. Örneğin, kaç cihazın şifrelenmediği ya da hangi cihazlarda işletim sistemi engellemelerinin kaldırıldığı veya kök erişim izni verildiği konusunda bir rapor alabilirsiniz. Ancak uyumluluk ilkelerini bağımsız olarak kullandığınızda, şirket kaynaklarına yönelik erişim kısıtlaması olmaz.
 
-This section is a detailed view of what you see in the **Overview**. A list of all the reports are displayed in this section and you can interactively drill down through each of these reports.--->
+Uyumluluk ilkesini kullanıcılara siz dağıtırsınız. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının cihazlarında uyumluluk denetimi yapılır. İlke dağıtıldıktan sonra mobil cihazların ilkeyi almasının ne kadar sürdüğü hakkında bilgi edinmek için bkz. Cihazlarınızda ayarları ve özellikleri yönetme.
 
-### <a name="setup"></a>Setup
+##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Cihaz uyumluluk ilkeleri kullanımının karşılaştırması: klasik Intune portalı ve Azure portalı
 
-Uyumluluk durumu geçerlilik süresi
+Azure portalındaki yeni cihaz uyumluluk ilkesi iş akışına geçişinizi kolaylaştırmak için temel değişiklikleri not edin.
+
+- Azure Portal’da uyumluluk ilkeleri, desteklenen her platform için ayrı oluşturulur.
+- Klasik Intune portalında ise desteklenen tüm platformlarda ortak kullanılan tek bir cihaz uyumluluk ilkesi vardı.
+
+<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
+
+-   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>Cihaz uyumluluk ilkelerini klasik Intune portalından Azure portalına geçirme
+
+[Klasik Intune portalında](https://manage.microsoft.com) oluşturulan cihaz uyumluluk ilkeleri yeni [Intune Azure portalında](https://portal.azure.com) görünmez. Ancak bunlar yine de kullanıcılara hedeflenmiştir ve klasik Intune portalı üzerinden yönetilebilir.
+
+Azure portalındaki yeni cihaz uyumluluk özelliklerinden yararlanmak istiyorsanız doğrudan bu portalda yeni cihaz uyumluluk ilkeleri oluşturmanız gerekir. Klasik Intune portalında cihaz uyumluluk ilkesi atanmış bir kullanıcıya Azure portalında yeni bir cihaz uyumluluk ilkesi atarsanız Intune Azure portalından gelen cihaz uyumluluk ilkeleri klasik Intune portalında oluşturulanlardan önceliklidir.
 
 ##  <a name="next-steps"></a>Sonraki adımlar
-[Android için uyumluluk ilkesi oluşturma](compliance-policy-create-android.md)
 
-[İş İçin Android için uyumluluk ilkesi oluşturma](compliance-policy-create-android-for-work.md)
+Aşağıdaki platformlar için bir cihaz uyumluluk ilkesi oluşturun:
 
-[iOS için uyumluluk ilkesi oluşturma](compliance-policy-create-ios.md)
-
-[Windows için uyumluluk ilkesi oluşturma](compliance-policy-create-windows.md)
+- [Android](compliance-policy-create-android.md)
+- [Android for Work](compliance-policy-create-android-for-work.md)
+- [Android](compliance-policy-create-ios.md)
+- [macOS](compliance-policy-create-mac-os.md)
+- [Windows](compliance-policy-create-windows.md)
