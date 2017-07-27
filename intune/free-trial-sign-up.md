@@ -1,7 +1,7 @@
 ---
-title: "30 günlük ücretsiz deneme için kaydolma"
-titleSuffix: Intune on Azure
-description: "Azure’da Intune’a kaydolma.\""
+title: "Microsoft Intune'un 30 günlük ücretsiz deneme sürümüne kaydolma"
+titleSuffix: 
+description: "Intune’un 30 günlük ücretsiz deneme sürümüne kaydolma.”"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -13,22 +13,22 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 7dafdb974dd975eaa7f3268119de6c047c50f858
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal"></a>Azure Portal için Microsoft Intune ücretsiz deneme sürümüne kaydolma
+# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune ücretsiz denemesine kaydolma
 
 
 Bu makale, Azure portalda tek başına Intune ürününe kaydolma işleminde size yol gösterir.
 
 1. [Intune Kayıt](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) sayfasını ziyaret edin ve bir deneme aboneliğine kaydolmak için formu doldurun.
-account-sign-up.md
+* Bir iş veya okul hesabınız varsa ve Intune denemeniz için bu hesabı kullanmak istiyorsanız, bunun yerine [bu oturum açma yönergelerini](/intune/account-sign-up) izleyin.
 
-  BT işlemlerinizin ve kullanıcılarınızın çoğu sizin bölgenizden başka bir bölgedeyse, **Şirketiniz nerede?** başlığı altında o yerel ayarı seçmek isteyebilirsiniz.
+* BT işlemlerinizin ve kullanıcılarınızın çoğu sizin bölgenizden başka bir bölgedeyse, **Şirketiniz nerede?** başlığı altında o yerel ayarı seçmek isteyebilirsiniz.
 
 2. Kaydolma işleminin sonunda yeni hesap bilgilerinizi içeren bir ileti alırsınız. <br/> ![Hesap bilgilerinin resmi](./media/2-end-of-sign-up-process.png) <br/>Bu noktada **Başlamaya hazırsınız** bağlantısına tıklarsanız sınama ortamınıza kullanıcıları ekleyebileceğiniz Office 365 Yönetim Merkezi’ne yönlendirilirsiniz. <br/><br/>Öte yandan, doğrudan Intune Azure portala gitmek isterseniz yeni bir tarayıcı penceresi açın ve adres çubuğuna **https://portal.azure.com** yazın. Size verilen kimlik bilgileriyle oturum açabileceğiniz Azure oturum açma sayfasına yönlendirilirsiniz. Intune denemenizde her oturum açmak istediğinizde bu adresi kullanın. <br/> ![Azure Portal oturum açma sayfasının resmi](./media/azure-portal-signin.png)
 
@@ -70,8 +70,6 @@ Intune’dan Office 365 Yönetim merkezine geri dönmek için tarayıcınızın 
 
 ### <a name="intune-on-azure"></a>Azure’da Intune
 [Azure portalında Intune](what-is-intune.md) hakkında daha fazla bilgi edinin
-### <a name="classic-intune"></a>Klasik Intune
-Değerlendirme senaryosu: [Microsoft Intune'da mobil cihaz yönetimini değerlendirme](https://docs.microsoft.com/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 
 ### <a name="integration-with-other-products"></a>Diğer ürünlerle tümleştirme
 Azure Active Directory kullanıcı hesaplarınızı Intune ile kullanma hakkında daha fazla bilgi edinin:

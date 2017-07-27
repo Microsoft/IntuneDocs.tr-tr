@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Intune ağ bant genişliğini kullanma
 
@@ -30,7 +30,7 @@ Bu kılavuz Intune yöneticilerinin Intune hizmeti için ağ gereksinimlerini an
 Bu tabloda her istemci için ağ üzerinden geçen ortak içeriğin yaklaşık boyutu ve sıklığı listelenmiştir.
 
 > [!NOTE]
-> Bilgisayarların ve mobil cihazların gerekli güncelleştirmeleri ve içerikleri Intune hizmetinden almasını sağlamak için bunların İnternet'e düzenli aralıklarla bağlanması gerekir. Güncelleştirmeleri veya içeriği almak için geçen süre farklılık gösterir, ancak her gün en az 1 saat boyunca kesintisiz olarak İnternet'e bağlı kalmaları gerekir.
+> Cihazların Intune güncelleştirmeleri ve içeriklerini alabilmeleri için düzenli aralıklarla İnternet’e bağlanmaları gerekir. Güncelleştirmeleri veya içerikleri almak için gereken süre farklılık gösterir, ancak cihazların her gün en az bir saat boyunca kesintisiz olarak İnternet’e bağlı kalması gerekir.
 
 |İçerik türü|Yaklaşık boyut|Sıklık ve ayrıntılar|
 |----------------|--------------------|-------------------------|
@@ -51,9 +51,9 @@ Bu tabloda her istemci için ağ üzerinden geçen ortak içeriğin yaklaşık b
 Intune istemcilerinin ağ bant genişliği kullanımını azaltmak için aşağıdaki yöntemlerden birini veya daha fazlasını kullanabilirsiniz.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>İçerik isteklerini önbelleğe almak için proxy sunucusu kullanma
-Yinelenen indirmeleri ve İnternet'ten içerik isteyen istemcilerin ağ bant genişliği kullanımını azaltmak için içeriği önbelleğe alan bir proxy sunucu kullanabilirsiniz.
+Bir ara sunucu, yinelenen indirmeleri azaltmak ve İnternet’ten alınan içeriğin ağ bant genişliğini düşürmek için içerikleri önbelleğe alabilir.
 
-Önbelleğe alan proxy sunucusu, ağınızdaki istemci bilgisayarlardan içerik ister, İnternet'ten içerik alır ve ardından her iki HTTP yanıtını ve ikili indirmelerini önbelleğe alabilir. Sunucu, Intune istemci bilgisayarlarından gelen sonraki istekleri yanıtlamak için önbelleğe alınan bilgileri kullanır.
+İstemcilerden içerik istekleri alan bir önbelleğe alma ara sunucusu, bu içeriği alıp web yanıtları ve indirmeleri önbelleğe alabilir. Sunucu, istemcilerden daha sonra gelecek istekleri yanıtlamak için önbelleğe alınmış verileri kullanır.
 
 Intune istemcileri için içerikleri önbelleğe alan bir proxy sunucunun kullandığı genel ayarlar aşağıda verilmiştir.
 
@@ -70,7 +70,7 @@ Intune, yapılandırma yaptığınız saatlerde kullanılan ağ bant genişliği
 BITS ve Windows bilgisayarlar hakkında daha fazla bilgi için TechNet Kitaplığında [Arka Plan Akıllı Aktarım Hizmeti](http://technet.microsoft.com/library/bb968799.aspx) konusuna bakın.
 
 ### <a name="use-branchcache-on-computers"></a>Bilgisayarlarda BranchCache kullanma
-Intune istemcileri geniş alan ağı (WAN) trafiğini azaltmak için BranchCache kullanabilir. İstemci olarak desteklenen aşağıdaki işletim sistemleri de BranchCache özelliğini destekler:
+Intune istemcileri geniş alan ağı (WAN) trafiğini azaltmak için BranchCache kullanabilir. Aşağıdaki işletim sistemleri BranchCache’i desteklemektedir:
 
 - Windows 7
 - Windows 8.0
@@ -79,22 +79,26 @@ Intune istemcileri geniş alan ağı (WAN) trafiğini azaltmak için BranchCache
 
 BranchCache özelliğini kullanmak için istemci bilgisayarda BranchCache etkin olmalı ve ardından **dağıtılmış önbellek modu** için yapılandırılmalıdır.
 
-BranchCache ve dağıtılmış önbellek modu, Intune istemcisi yüklü olduğunda bilgisayarda varsayılan olarak etkinleştirilir. Ancak, istemci BranchCache özelliğini devre dışı bırakan Grup İlkesine zaten sahipse, Intune bu ilkeyi geçersiz kılmaz ve BranchCache söz konusu bilgisayarda devre dışı kalır.
+BranchCache ve dağıtılmış önbellek modu, Intune istemcisi yüklendiğinde bilgisayarlarda varsayılan olarak etkindir. Ancak bir Grup İlkesi, BranchCache’i devre dışı bıraktıysa Intune bu ilkeyi geçersiz kılmaz ve BranchCache devre dışı kalmaya devam eder.
 
-BranchCache kullanıyorsanız, BranchCache özelliğini veya Güvenlik Duvarı özel durumlarını devre dışı bırakan ilkeyi dağıtmadıklarından emin olmak üzere kuruluşunuzda Grup İlkesini ve Intune Güvenlik Duvarı ilkesini yöneten diğer yöneticilerle iletişim kurmanız gerekir. BranchCache hakkında daha fazla bilgi için bkz. [BranchCache Özelliğine Genel Bakış](http://technet.microsoft.com/library/hh831696.aspx).
+BranchCache kullanıyorsanız Grup İlkesini ve Intune Güvenlik Duvarı ilkesini yönetmek için kuruluşunuzdaki diğer yöneticilerle birlikte çalışın. Diğer yöneticilerin, BranchCache veya Güvenlik Duvarı özel durumlarını devre dışı bırakan bir ilke dağıtmadığından emin olun. BranchCache hakkında daha fazla bilgi için bkz. [BranchCache Özelliğine Genel Bakış](http://technet.microsoft.com/library/hh831696.aspx).
 
 ## <a name="network-communication-requirements"></a>Ağ iletişimi gereksinimleri
 
-Yönettiğiniz ve Intune aboneliğiniz yönetmek için kullandığınız cihazlarla bulut tabanlı hizmetler için gerekli olan web siteleri arasında ağ iletişimi kurmanız gerekir.
+Yönettiğiniz cihazlar ve bulut tabanlı hizmetler için gerekli olan web siteleri arasında ağ iletişimlerini etkinleştirin.
 
 Intune, Intune yazılımını çalıştıran sunucular gibi şirket içi altyapı kullanmaz ancak Exchange ve Active Directory eşitleme araçları da dahil olmak üzere şirket içi altyapı kullanma seçenekleri mevcuttur.
 
-Güvenlik duvarlarının ve proxy sunucuların arkasındaki bilgisayarları yönetmek için güvenlik duvarlarını ve proxy sunucuları Intune iletişimine izin verecek şekilde ayarlamanız gerekir. Bir proxy sunucunun arkasındaki bilgisayarları yönetmek için aşağıdakileri dikkate alın:
+Güvenlik duvarı ve ara sunucular arkasındaki bilgisayarları yönetmek için Intune iletişimini etkinleştirmeniz gerekir.
 
 -   Intune istemcileri iki protokolü de kullandığından, proxy sunucusu hem **HTTP (80)** hem de **HTTPS (443)** desteklemelidir
--   Intune’un yazılım ve güncelleştirmeleri indirmek gibi işlemler için manage.microsoft.com adresine kimliği doğrulanmamış proxy sunucusu erişimi olması gerekir
+-   Intune’un yazılım ve güncelleştirmeleri indirme gibi bazı görevler için manage.microsoft.com adresine kimliği doğrulanmamış ara sunucu erişimi olması gerekir
 
 Tek bir istemci bilgisayarın proxy sunucu ayarlarını değiştirebilir veya Grup İlkesi ayarlarını kullanarak belirtilen proxy sunucunun arkasında bulunan tüm istemci bilgisayarların ayarlarını değiştirebilirsiniz.
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 Yönetilen cihazlar, **Tüm Kullanıcıların** güvenlik duvarları üzerinden hizmetlere erişmesine izin veren yapılandırmalar gerektirir.
 

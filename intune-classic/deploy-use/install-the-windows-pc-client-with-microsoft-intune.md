@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 2720cf6f1c5d6b71966c4b4987734cc40dca8aa9
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 
@@ -43,11 +43,11 @@ Intune istemci yazılımının kullanıcılar tarafından yüklendiği yöntemle
 
   ![Intune bilgisayar istemcisini indirme](../media/pc-sa-client-download.png)
 
-2.  **İstemci Yazılımı İndirme** sayfasında, **İstemci Yazılımını İndir**'e tıklayın. Ardından yazılımı içeren **Microsoft_Intune_Setup.zip** paketini ağınızda güvenli bir yere kaydedin.
+2. **İstemci Yazılımı İndirme** sayfasında, **İstemci Yazılımını İndir**'e tıklayın. Ardından yazılımı içeren **Microsoft_Intune_Setup.zip** paketini ağınızda güvenli bir yere kaydedin.
 
-Intune istemci yazılımı yükleme paketi, hesabınızla ilgili benzersiz bilgileri içerir. Bu bilgilere ekli bir sertifika aracılığıyla erişilebilir. Yetkisiz kullanıcılar yükleme paketine erişirse paketin ekli sertifikası tarafından temsil edilen hesaba bilgisayar kaydedip şirketin kaynaklarına erişim elde edebilir.
+  Intune istemci yazılımı yükleme paketi, hesabınızla ilgili benzersiz bilgileri içerir. Bu bilgilere ekli bir sertifika aracılığıyla erişilebilir. Yetkisiz kullanıcılar yükleme paketine erişirse paketin ekli sertifikası tarafından temsil edilen hesaba bilgisayar kaydedip şirketin kaynaklarına erişim elde edebilir.
 
-3.  Yükleme paketinin içeriğini ağınızda güvenli bir konuma ayıklayın.
+3. Yükleme paketinin içeriğini ağınızda güvenli bir konuma ayıklayın.
 
     > [!IMPORTANT]
     > Ayıklanan **ACCOUNTCERT** dosyasını yeniden adlandırmayın veya kaldırmayın, aksi takdirde istemci yazılımının yüklenmesi başarısız olur.
@@ -198,13 +198,10 @@ Yükseltilmiş bir komut istemi kullanarak aşağıdaki komutlardan birini çal�
 
 **Yöntem 1**:
 
-    ```
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
-    ```
 
 **Yöntem 2**<br>Bu aracıların tümünün her Windows SKU’sunda yüklü olduğunu unutmayın:
 
-    ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
     wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
     wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
@@ -237,7 +234,6 @@ Yükseltilmiş bir komut istemi kullanarak aşağıdaki komutlardan birini çal�
     wmic product where name="Windows Online Management Update Manager" call uninstall<br>
     wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
     wmic product where name="Windows Intune" call uninstall
-    ```
 
 > [!TIP]
 > İstemci kayıt silme, etkilenen istemci için eski bir sunucu tarafı kaydı bırakır. Kayıt silme işlemi zaman uyumsuzdur ve kaldırılacak dokuz aracı olduğundan tamamlanması 30 dakikaya kadar sürebilir.
@@ -255,10 +251,8 @@ Yükseltilmiş bir komut istemi kullanarak aşağıdaki komutlardan birini çal�
 
 Kayıt silme işlemi OnlineManagement klasörünü kaldırmaz. Kaldırma sonrasında 30 dakika bekleyin ve ardından bu komutu çalıştırın. Çok erken çalıştırırsanız, kaldırma işlemi bilinmeyen bir durumda kalabilir. Klasörü kaldırmak için yükseltilmiş bir komut istemi başlatın ve çalıştırın:
 
-    ```
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
-    ```
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="next-steps"></a>Sonraki adımlar
 [Microsoft Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md)
 [İstemci kurulumu sorunlarını giderme](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)

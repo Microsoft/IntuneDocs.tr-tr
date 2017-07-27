@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fda224613d8b69be82ef7f9681ba9165be33e52
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -107,7 +107,11 @@ Daha fazla bilgi için bkz. [Cihaz uyumluluğu nedir?](device-compliance.md)
 <!-- ## Enrollment -->
 
 
-<!-- ## Data protection -->
+## <a name="data-protection"></a>Veri koruma
+
+### <a name="ios-app-protection-policies"></a>iOS Uygulama Koruma İlkeleri
+
+[iOS için Uygulama Koruma İlkeleri](app-protection-policy-settings-ios.md) tanımlayabilirsiniz. Bu ilkeler, kaydedilmeden ve MAM aracılığıyla yönetilen cihazlarda kullanılabilir. Geçici bir hata yüzünden bu ilkeleri birden çok değil, yalnızca tek ondalık ayırıcısı olan iOS sürümleri için tanımlayabilirsiniz. iOS’un en düşük sürümünü 10.3.1 olarak ayarlamak yerine iOS 10.3 şeklinde ayarlayabilirsiniz. Bu sorun, iOS SDK’sına yakında gelecek olan güncelleştirme ile çözülecektir.
 
 
 ## <a name="administration-and-accounts"></a>Yönetim ve hesaplar

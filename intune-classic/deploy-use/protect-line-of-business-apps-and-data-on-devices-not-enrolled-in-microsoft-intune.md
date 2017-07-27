@@ -14,17 +14,17 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Microsoft Intune'da kayıtlı olmayan cihazlardaki iş kolu uygulamalarını ve verilerini koruma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Mobil uygulama yönetimi (MAM) ilkeleri, şirket verilerinin dışarıya sızmasına neden olabilecek eylemleri kısıtlayarak ve bir uygulama PIN'i gibi veri erişim gereksinimleri uygulayarak şirket verilerinin korunmasına yardımcı olur. iOS ve Android iş kolu uygulamalarına MAM ilkeleri uygulamak için önce Microsoft Intune Uygulama Sarmalama Aracı ile uygulamayı sarmalamanız gerekir. Uygulama sarmalama, bir mobil uygulamaya herhangi bir chan/intune/apps-prepare-mobile-application-managementes gerektirmeden bir yönetim katmanı uygulama ve bunu kullanıcılarınıza dağıtma işlemidir.  
+Mobil uygulama yönetimi (MAM) ilkeleri, şirket verilerinin dışarıya sızmasına neden olabilecek eylemleri kısıtlayarak ve bir uygulama PIN'i gibi veri erişim gereksinimleri uygulayarak şirket verilerinin korunmasına yardımcı olur. iOS ve Android iş kolu uygulamalarına MAM ilkeleri uygulamak için önce Microsoft Intune Uygulama Sarmalama Aracı ile uygulamayı sarmalamanız gerekir. Uygulama sarmalama, uygulamada hiçbir değişiklik yapılmasına gerek kalmadan, bir yönetim katmanı uygulama ve bunu kullanıcılara dağıtma işlemidir.  
 
 Bu konu başlığı altında, **çalışana ait yönetilmeyen cihazlarda** ve **üçüncü taraf bir mobil cihaz yönetimi (MDM) çözümü** tarafından yönetilen cihazlarda erişilen uygulamalara MAM ilkeleri uygulamak için gereken adımlar açıklanmaktadır.  **Intune MDM'ye kaydedilmiş cihazlarda** çalıştırılan iş kolu uygulamalarınızı hazırlamak için bkz. [Uygulamaların Microsoft Intune ile mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](/intune/apps-prepare-mobile-application-management).
 
