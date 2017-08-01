@@ -20,13 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/11/2017
 ---
-# Dağıtım planı geliştirme
-<a id="develop-a-rollout-plan" class="xliff"></a>
+# <a name="develop-a-rollout-plan"></a>Dağıtım planı geliştirme
 
 Piyasaya çıkma planınız Intune sunumunuz için hedeflemek istediğiniz kuruluş gruplarını, her grup için piyasaya çıkma zaman dilimini ve kullanacağımız kayıt yaklaşımlarını tanımlar.
 
-## Hedeflenen gruplar ve zaman dilimleri
-<a id="targeted-groups-and-timeframes" class="xliff"></a>
+## <a name="targeted-groups-and-timeframes"></a>Hedeflenen gruplar ve zaman dilimleri
 
 İlk olarak, Intune sunumu ile hedeflenen grupları ve [kullanım örneği senaryolarınızda](planning-guide-scenarios.md) tanımladığınız grupları gözden geçirin.
 
@@ -38,20 +36,17 @@ Piyasaya çıkma planınız Intune sunumunuz için hedeflemek istediğiniz kurul
 * Coğrafi konum
 * İş riski
 
-## Dağıtım aşamaları
-<a id="rollout-phases" class="xliff"></a>
+## <a name="rollout-phases"></a>Dağıtım aşamaları
 Kuruluşlar genellikle BT bölümündeki küçük bir kullanıcı grubunu hedefleyerek Intune dağıtımını ilk başta pilot olarak denemeyi tercih eder. Ardından pilot, daha kapsamlı bir BT kullanıcıları grubuna genişletilebilir ve diğer kuruluş gruplarından katılım sağlanabilir.
 
-### Pilot
-<a id="pilot" class="xliff"></a>
+### <a name="pilot"></a>Pilot
 Piyasaya çıkmanın ilk aşaması pilot kullanıcılara uygulanmalıdır. Pilot kullanıcılar, yeni bir çözümdeki ilk kullanıcılar olduklarını anlamalıdır. Yapılandırma, belgeleme, bildirimler gibi faktörleri iyileştirmek ve sonraki piyasaya çıkma aşamalarında diğer tüm kullanıcıların kullanımını kolaylaştırmak amacıyla geri bildirim sağlamaya istekli olmaları gerekir. Bu kullanıcılar, yöneticiler veya VIP olmamalıdır.
 
 Pilot aşaması, daha önce toplanan [zorlukları](planning-guide-deployment-goals.md) sınamak ve [gereksinimleri](planning-guide-requirements.md) geliştirmek için iyi bir fırsattır.
 
 [İletişim](planning-guide-communication-plan.md) planınızı, [destek](planning-guide-support-plan.md) planınızı ve [sınama ve doğrulama](planning-guide-test-validation.md) işlemlerinizi herhangi bir sorunu, kullanıcılara olan etkisi henüz azken çözmek için dahil edin.
 
-### Üretim piyasaya çıkma
-<a id="production-rollout" class="xliff"></a>
+### <a name="production-rollout"></a>Üretim piyasaya çıkma
 Başarılı bir pilot aşamasının ardından, kuruluşunuzun geri kalan gruplarını hedefleyen tam bir üretim piyasaya çıkma aşamasına başlamaya hazırsınız. Farklı piyasaya çıkma grupları ve aşamalarına bazı örnekler şunlardır:
 
 -   **Departmanlar** <br/>Her departman bir piyasaya çıkma aşaması olabilir. Tüm departmanı bir seferde hedeflersiniz. Bu piyasaya çıkma türünde, her departmandaki kullanıcılar büyük olasılıkla mobil cihazı aynı şekilde kullanır ve aynı uygulamalara erişir. Kullanıcılar, muhtemelen aynı türde ilkelere sahip olacaktır.
@@ -71,26 +66,22 @@ Hedeflenen grupları ve zaman çizelgelerini içeren bir Intune dağıtım plan�
 | Üretim dağıtım aşaması 3 |  |  |  | İK (50 kullanıcı), Finans (40 kullanıcı), Yöneticiler (30 kullanıcı) |
 
 Kuruluşunuzun piyasaya çıkma aşamalarını girmek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
-## Kayıt yaklaşımlarının piyasaya çıkma gruplarına eşlenmesi
-<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
+## <a name="match-rollout-groups-to-enrollment-approaches"></a>Kayıt yaklaşımlarının piyasaya çıkma gruplarına eşlenmesi
 
 Artık Intune piyasaya çıkma için hedeflenen grupları ve zaman dilimlerini belirlediğinize göre, bir sonraki adım her grup için en uygun Intune kaydı yaklaşımını seçmektir. Aşağıdakileri içeren farklı kayıt yaklaşımları kullanabilirsiniz:
 * Kullanıcı self servis
 * Kullanıcı yardımlı kayıt
 * BT teknik fuarı
 
-### Kullanıcı self servis
-<a id="user-self-service" class="xliff"></a>
+### <a name="user-self-service"></a>Kullanıcı self servis
 
 Bu durumda, kullanıcı genellikle BT departmanı tarafından sağlanan kayıt yönergelerini izleyerek kendi cihazını kaydetmekten sorumludur. Kuruluşlarda en yaygın olarak kullanılan yaklaşım budur ve ölçeklenebilirliği kullanıcı yardımlı kayıttan daha fazladır.
 
-### Kullanıcı yardımlı kayıt
-<a id="user-assisted-enrollment" class="xliff"></a>
+### <a name="user-assisted-enrollment"></a>Kullanıcı yardımlı kayıt
 
 Bu, "beyaz eldiven" yaklaşımı olarak bilinir. Bir BT ekip üyesi kullanıcıya kayıt sürecinde yüz yüze veya Skype üzerinden yardımcı olur. Bu yaklaşım genellikle yönetim ekibi ve kayıt sürecinde daha fazla yardıma ihtiyaç duyan diğer gruplarda kullanılır.
 
-### BT teknik fuarı
-<a id="it-tech-fair" class="xliff"></a>
+### <a name="it-tech-fair"></a>BT teknik fuarı
 
 Intune kullanıcı kaydı için başka bir seçenek de BT teknik fuarı düzenlemektir. Bu etkinlikte, BT grubu, kullanıcıların Intune kaydı hakkında bilgi alabileceği, sorular sorabileceği ve kayıt sürecine ilişkin yardım alabileceği bir Intune kayıt yardım standı kurar. Bu seçenek, özellikle Intune piyasaya çıkmasının ilk aşamalarında hem BT grubu hem de kullanıcı için yararlı olabilir.
 
@@ -111,7 +102,6 @@ Yukarıdaki Intune piyasaya çıkma planının kayıt yaklaşımları içerecek 
 | Self servis |  |  |  | İK, Finans |
 | Beyaz eldiven |  |  |  | Yöneticiler |
 
-## Sonraki adımlar
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Sonraki adımlar
 
 Sonraki bölümde [bir Intune dağıtımı iletişim planı geliştirme](planning-guide-communication-plan.md) hakkında yönergeler sağlanır.
