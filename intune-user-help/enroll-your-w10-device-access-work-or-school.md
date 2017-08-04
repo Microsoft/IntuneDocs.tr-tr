@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/13/2017
 ---
-# Windows 10 cihazınızı Intune'a kaydetme
-<a id="enroll-your-windows-10-device-in-intune" class="xliff"></a>
+# <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 cihazınızı Intune'a kaydetme
 
 > [!NOTE]
 > Windows 10 tüm cihaz türlerinde çalışır. Masaüstü, telefon veya tablet kullandığınızda izleyeceğiniz adımlar, bu sayfadaki resimlerden biraz farklı görünse de aynıdır.

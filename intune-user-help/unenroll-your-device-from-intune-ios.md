@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/13/2017
 ---
-# iOS cihazınızın Intune kaydını silme
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>iOS cihazınızın Intune kaydını silme
 
 iOS cihazınızın Intune kaydını sildiğinizde, cihazınız artık şirket kaynaklarına erişemez ve Intune tarafından yönetilmez.
 

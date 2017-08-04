@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 8.1 ve üzeri cihaz kısıtlama ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Genel
--   **Tüm yapılandırmaları Windows 10'a uygula** - Bu ilkedeki ayarların Windows 8.1 cihazlarına ek olarak Windows 10 cihazlarına da uygulanmasını etkinleştirir.
+
 -   **Tanılama verisi gönderme** - Cihazın Microsoft’a tanılama bilgileri göndermesini etkinleştirir.
 -   **Güvenlik duvarı** - Windows Güvenlik Duvarı’nın açık olmasını gerektirir.
 -   **Kullanıcı Hesabı Denetimi** - Cihazlarda Kullanıcı Hesap Denetimi’nin (UAC) kullanılmasını zorunlu tutar.
+
 ## <a name="password"></a>Parola
 -   **Gerekli parola türü** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
 -   **En az parola uzunluğu** - Parola için gereken uzunluk alt sınırını (karakter cinsinden) yapılandırır.
@@ -62,8 +63,10 @@ Cihazda şifrelemeyi zorunlu tuttuğunuzda kurtarma anahtarına yalnızca kullan
 -   **Kurumsal mod menü erişimi** - Kullanıcıların Internet Explorer’dan Kuruluş Modu menü seçeneklerine erişmesine olanak tanır.
 Bu ayarı seçerseniz, kullanıcıların Kuruluş Modu erişimine açtıkları web sitelerinin gösterildiği bir raporun URL’sini içeren **Günlük raporunun konumunu** belirtebilirsiniz.
 -   **Kurumsal mod site listesi konumu** - Etkin olduğunda Kuruluş Modu’nu kullanacak web siteleri listesinin bulunduğu konumu belirtir.
+
 ## <a name="cellular"></a>Hücresel
 -   **Veri dolaşımı** - Cihaz cep telefonu şebekesindeyken veri dolaşımını etkinleştirir.
+
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 -   **Çalışma klasörleri URL'si** - Belgelerin cihazlar arasında eşitlenmesine izin vermek için iş klasörünün URL’sini ayarlar.
 -   **Microsoft hesabı olmayan Windows Posta uygulamasına erişim** - Microsoft hesabı olmadan Windows Posta uygulamasına erişimi etkinleştirir.    

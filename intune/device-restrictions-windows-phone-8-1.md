@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 54a50ec2195ed2f760f69137418977f417220aa1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows Phone 8.1 cihaz kısıtlama ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Genel
--   **Tüm ayarları yalnızca Windows Phone 8.1’e uygula** - Bu, klasik Intune portalında yapılandırabileceğiniz bir ayardır. Azure Portal’da bu ayar değiştirilemez. **Yapılandırıldı** olarak ayarlanırsa, tüm ayarlar yalnızca Windows Phone 8.1 cihazlarına uygulanır. **Yapılandırılmadı** olarak ayarlanırsa, bu ayarlar Windows 10 Mobile cihazlarına da uygulanır.
+
 -   **Kamera** - Cihazın kamerasını etkinleştirir veya engeller.
 -   **Kopyala ve yapıştır** - Cihazda kopyalama ve yapıştırma işlevlerini etkinleştirir veya engeller.
 -   **Çıkarılabilir depolama** - Cihazın SD kartları gibi çıkarılabilir depolama birimleri kullanmasına olanak tanır.
@@ -37,8 +37,8 @@ ms.lasthandoff: 07/01/2017
 -   **Özel e-posta hesapları eşitleme** - Cihazın Microsoft olmayan e-posta hesaplarına bağlanmasına olanak tanır.
 
 ## <a name="password"></a>Parola
--   **Tüm ayarları yalnızca Windows Phone 8.1’e uygula** - Bu, klasik Intune portalında yapılandırabileceğiniz bir ayardır. Azure Portal’da bu ayar değiştirilemez. **Yapılandırıldı** olarak ayarlanırsa, tüm ayarlar yalnızca Windows Phone 8.1 cihazlarına uygulanır. **Yapılandırılmadı** olarak ayarlanırsa, bu ayarlar Windows 10 Mobile cihazlarına da uygulanır.
--   **Parola gerekli** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
+
+-   **Parola** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
     -   **Gerekli parola türü** - Gerekli parola türünü belirtir (alfasayısal veya yalnızca sayısal gibi).
     -   **En az parola uzunluğu** - Parolada bulunması gereken karakter sayısı alt sınırını belirtir.
     -   **Basit parolalar** - ‘0000’ ve ‘1234’ gibi basit parolaların kullanılabileceğini belirtir.
@@ -49,12 +49,10 @@ ms.lasthandoff: 07/01/2017
 -   **Şifreleme** - Desteklenen mobil cihazlarda verilerin şifrelenmesini zorunlu tutar.
 
 ## <a name="app-store"></a>Uygulama Mağazası
--   **Tüm ayarları yalnızca Windows Phone 8.1’e uygula** - Bu, klasik Intune portalında yapılandırabileceğiniz bir ayardır. Azure Portal’da bu ayar değiştirilemez. **Yapılandırıldı** olarak ayarlanırsa, tüm ayarlar yalnızca Windows Phone 8.1 cihazlarına uygulanır. **Yapılandırılmadı** olarak ayarlanırsa, bu ayarlar Windows 10 Mobile cihazlarına da uygulanır.
+
 -   **Uygulama mağazası** - Kullanıcıların cihazdan uygulama mağazasına bağlanmasına olanak tanır.
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
-
--   **Tüm ayarları yalnızca Windows Phone 8.1’e uygula** - Bu, klasik Intune portalında yapılandırabileceğiniz bir ayardır. Azure Portal’da bu ayar değiştirilemez. **Yapılandırıldı** olarak ayarlanırsa, tüm ayarlar yalnızca Windows Phone 8.1 cihazlarına uygulanır. **Yapılandırılmadı** olarak ayarlanırsa, bu ayarlar Windows 10 Mobile cihazlarına da uygulanır.
 
 Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini yapılandırabilirsiniz:
 
@@ -81,11 +79,11 @@ Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygu
 
 
 ## <a name="browser"></a>Tarayıcı
--   **Tüm ayarları yalnızca Windows Phone 8.1’e uygula** - Bu, klasik Intune portalında yapılandırabileceğiniz bir ayardır. Azure Portal’da bu ayar değiştirilemez. **Yapılandırıldı** olarak ayarlanırsa, tüm ayarlar yalnızca Windows Phone 8.1 cihazlarına uygulanır. **Yapılandırılmadı** olarak ayarlanırsa, bu ayarlar Windows 10 Mobile cihazlarına da uygulanır.
+
 -   **Web tarayıcısı** - Cihazlarda yerleşik web tarayıcısını etkinleştirir veya engeller.
 
 ## <a name="cellular-and-connectivity"></a>Hücresel ve Bağlantı
--   **Tüm ayarları yalnızca Windows Phone 8.1’e uygula** - Bu, klasik Intune portalında yapılandırabileceğiniz bir ayardır. Azure Portal’da bu ayar değiştirilemez. **Yapılandırıldı** olarak ayarlanırsa, tüm ayarlar yalnızca Windows Phone 8.1 cihazlarına uygulanır. **Yapılandırılmadı** olarak ayarlanırsa, bu ayarlar Windows 10 Mobile cihazlarına da uygulanır.
+
 -   **Wi-Fi** - Cihazda Wi-Fi işlevselliğini etkinleştirir veya devre dışı bırakır.
 -   **Wi-Fi paylaşımı** - Cihazda Wi-Fi paylaşımının kullanımını etkinleştirir.
 -   **Wi-Fi etkin noktalarına otomatik bağlanma** - Cihazın ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmasına ve tüm kullanım koşullarını otomatik olarak kabul etmesine olanak tanır.

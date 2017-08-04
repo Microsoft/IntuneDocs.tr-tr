@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="use-full-or-selective-wipe"></a>Tam veya seçmeli temizleme kullanma
 
@@ -80,8 +80,8 @@ Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz tür
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim Aracısı|Yönetim profili kaldırılır.|
-|E-posta|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir. Microsoft Exchange şirket içinde barındırılıyorsa e-posta profilleri ve önbelleğe alınan e-postalar kaldırılmaz.|
-|Outlook|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|
+|E-posta|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|
+|Outlook|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|
 |Azure Active Directory (AAD) Ayrılma|AAD Kaydı kaldırılır.|
 |Kişiler | Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 
@@ -99,7 +99,7 @@ Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz tür
 |Sertifika profili ayarları|Sertifikaları iptal edilir, ancak kaldırılmaz.|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim Aracısı|Cihaz Yöneticisi ayrıcalığı iptal edilir.|Cihaz Yöneticisi ayrıcalığı iptal edilir.|
 |E-posta|yok (e-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|
-|Outlook|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.</br>Özel durum: Exchange şirket içinde barındırılıyorsa e-postalar kaldırılmaz.|
+|Outlook|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|
 |Azure Active Directory (AAD) Ayrılma|AAD Kaydı kaldırılır.|AAD Kaydı kaldırılır.|
 |Kişiler | Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.|Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 
@@ -115,7 +115,7 @@ Bir İş için Android cihazında seçmeli temizleme gerçekleştirilmesi, cihaz
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|Desteklenmez.|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|Sertifikalar kaldırılır ve iptal edilir.|Desteklenmez.|Sertifikalar kaldırılır ve iptal edilir.|
-|E-posta|Windows e-posta ve ekleri için Posta uygulamasını da içeren EFS özellikli e-postalar kaldırılır.|Desteklenmez.|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|Windows e-posta ve ekleri için Posta uygulamasını da içeren EFS özellikli e-postalar kaldırılır. Intune tarafından sağlanan posta hesaplarını kaldırır.</br>**Özel durum**: Microsoft Exchange şirket içinde barındırılıyorsa e-posta hesapları kaldırılmaz.|
+|E-posta|Windows e-posta ve ekleri için Posta uygulamasını da içeren EFS özellikli e-postalar kaldırılır.|Desteklenmez.|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|Windows e-posta ve ekleri için Posta uygulamasını da içeren EFS özellikli e-postalar kaldırılır. Intune tarafından sağlanan posta hesaplarını kaldırır.|
 |Azure Active Directory (AAD) Ayrılma|Hayır.|Hayır.|AAD Kaydı kaldırılır.|Yok. Windows 10, Azure Active Directory’ye katılmış cihazlarda seçmeli temizlemeyi desteklemez.|
 
 **Seçmeli temizleme yapmak için**:
