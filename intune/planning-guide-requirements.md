@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/11/2017
 ---
-# Kullanım örneği senaryosu gereksinimlerini belirleme
-<a id="determine-use-case-scenario-requirements" class="xliff"></a>
+# <a name="determine-use-case-scenario-requirements"></a>Kullanım örneği senaryosu gereksinimlerini belirleme
 
 Bu bölümde, her kullanım örneği senaryosu içindeki tüm kuruluş grupları için gereksinimleri belirlersiniz. Bu süreç mimari ve tasarım, ekleme ve dağıtım gibi diğer Intune dağıtım planlama alanlarına hazırlanmanıza yardımcı olur. Intune dağıtım projenizle ilgili olası boşlukları ve zorlukları da tanımlamanıza yardımcı olacaktır.
 
@@ -42,8 +41,7 @@ Her bir kullanım örneği ve alt kullanım örneği senaryosu, kuruluş grubu v
 Kuruluşunuzun kullanım örneği ve alt kullanım örneği gereksinimlerini girmek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
 
-## Gereksinim örnekleri
-<a id="examples-of-requirements" class="xliff"></a>
+## <a name="examples-of-requirements"></a>Gereksinim örnekleri
 
 "Gereksinimler" sütununda kullanılabilecek birkaç örnek daha verelim:
 
@@ -64,7 +62,6 @@ Kuruluşunuzun kullanım örneği ve alt kullanım örneği gereksinimlerini gir
     - Uygulama koruma ilkeleriyle Office 365
     - Uygulama koruma ilkeleri ile iş kolu (LOB)
 
-## Sonraki adımlar
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Sonraki adımlar
 
 Sonraki bölümde [bir Intune dağıtımı planı geliştirme](planning-guide-rollout-plan.md) hakkında yönergeler sağlanır.

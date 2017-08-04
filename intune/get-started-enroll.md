@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,15 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36e658cebdfd23547e3c376124289046f81acc1f
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-started-enrolling-devices"></a>Cihazları kaydetmeye başlama
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-![Şirket Portalı uygulamasını gösteren iOS cihaz. kayıt sürecinde kullanıcıya sunulan ilk ekran gösterilmektedir.](/intune-user-help/media/ios-enroll-1a-comp-access-setup.png)
 
 Microsoft Intune, şirket verilerinizi korurken iş gücünüze mobil cihazlar sağlamaya yardımcı olur. Son kullanıcılarınız Intune ile yönetici konsolundan çok cihazlarından etkileşimde bulunacakları için kayıt deneyimine hakim olduğunuzdan emin olmalısınız. Böylece deneyimi, özenle oluşturulmuş uyumluluk ilkeleriyle birleştirip kullanıcılarınıza kolaylık sağlayabilirsiniz. Bu özellikle önemli bir konudur çünkü kullanıcılarınız, yönetici olarak sizin hangi bilgileri görebildiğinizden haberdar olacaktır:
 
