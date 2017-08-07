@@ -8,9 +8,7 @@
 ### [Uygulama kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md)
 ### [Yenilikler arşivi (Azure portal)](whats-new-archive.md)
 ### [Yenilikler arşivi (klasik portal)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [Üst düzey mimari](high-level-architecture.md)
 ## [Cihaz ve uygulama yaşam döngüleri](introduction-device-app-lifecycles.md)
 ### [Cihaz yaşam döngüsü](device-lifecycle.md)
 ### [Uygulama yaşam döngüsü](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # İzleme ve sorun giderme
 ## [Yardım masası işleç rolünü kullanma](help-desk-operators.md)
+## [Intune Veri Ambarını kullanma](reports-nav-create-intune-reports.md)
+### [Veri Ambarına Power BI ile bağlanma](reports-proc-get-a-link-powerbi.md)
 
 # Geliştirme ve özelleştirme
 ## [Özel cihaz ayarlarını yapılandırma](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Intune Uygulama SDK’sı Xamarin bileşeni](app-sdk-xamarin.md)
 ## [Intune Grafik API'sini kullanma](intune-graph-apis.md)
 ## [Intune Grafik API’si](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Intune Veri Ambarı API’si](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Veri Ambarı AP’si uç noktası](reports-api-url.md)
+### [Veri Ambarı veri modeli](reports-ref-data-model.md)
+#### [Veri varlığı için başvuru](reports-ref-date.md)
+#### [Kullanıcı varlığı için başvuru](reports-ref-user.md)
+#### [Mobil uygulama yönetimi (MAM) varlıkları için başvuru](reports-ref-mobile-app-management.md)
+#### [Cihaz varlıkları için başvuru](reports-ref-devices.md)
+#### [Uygulama varlıkları için başvuru](reports-ref-application.md)
+#### [İlke varlıkları için başvuru](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Sözlük](intune-glossary.md)
