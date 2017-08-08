@@ -83,7 +83,7 @@
 ### [iOS kaydını ayarlama](ios-enroll.md)
 #### [Cihaz kaydı programı](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [macOS kaydını ayarlama](macos-enroll.md)
 
 ## [Cihazları yönetme](device-management.md)
@@ -101,6 +101,7 @@
 ### [Kullanıcı kaldırma](device-remove-user.md)
 ### [Android için uzaktan denetim](device-profile-android-teamviewer.md)
 ### [Windows 10 PIN sıfırlama](device-windows-pin-reset.md)
+### [Cihazı eşitleme](device-sync.md)
 ### [Cihaz envanterini inceleme](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -171,6 +172,7 @@
 ### [Windows 10 Education ayarlarını yapılandırma](education-settings-configure.md)
 ### [iOS eğitim ayarlarını yapılandırma](education-settings-configure-ios.md)
 ### [iOS eğitim paylaşılan cihazlarını yapılandırma](education-settings-configure-ios-shared.md)
+### [İOS güncelleştirme ilkelerini yapılandırma](software-updates-ios.md)
 ### [İş ayarları için Windows Update’i yapılandırma](windows-update-for-business-configure.md)
 ### [Sertifikaları yapılandırma](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
