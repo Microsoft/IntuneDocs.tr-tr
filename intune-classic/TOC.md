@@ -237,7 +237,7 @@
 ## [Intune Uygulama SDK’sı Xamarin Bileşeni](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
 
 # [Sorun Giderme](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
-## [Destek alma](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [Destek alma](/intune/get-support?toc=/intune-classic/toc.json)
 ## [Intune'la raporları izleme](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Endpoint Protection sorunlarını giderme](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [Şirket kaynak erişimi sorunlarını giderme](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
