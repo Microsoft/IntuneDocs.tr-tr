@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 465d84490f5000b13a2c7371677cee77baadc4d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 cihaz kaydı sorunlarınızı giderme
 [Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune’a kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md) bölümündeki adımları uyguladıysanız, ancak iş veya okul e-postalarınıza ve dosyalarınıza yine de erişemiyorsanız, bu sorun giderme adımlarını uygulayın.
@@ -35,7 +35,7 @@ ms.lasthandoff: 07/01/2017
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>İşe veya okula erişim seçeneğini görüyorsanız izlenecek sorun giderme adımları
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>“İşe veya okula erişim”i görüyorsanız izlenecek sorun giderme adımları
 
 1.  Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza ve dosyalarınıza erişemiyorsanız, **İşe veya okula erişim** bölümüne geri dönün.
 
@@ -47,12 +47,16 @@ ms.lasthandoff: 07/01/2017
 
     - Yukarıda gösterilen bağlantı bilgilerini göremiyorsanız veya bazı seçenekleri eksik olarak görüyorsanız **Bağlan**’a dokunup iş veya okul kimlik bilgilerinizle oturum açın. Artık bağlanmış olmanız gerekir.
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Hesabınızı görüyorsanız izlenecek sorun giderme adımları
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>“Hesabınız”ı görüyorsanız izlenecek sorun giderme adımları
 
 Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza, dosyalarınıza ve diğer verilerinize erişemiyorsanız, **Hesaplar**’a dönün ve **İş erişimi**’ne dokunun
 
 - İş veya okul hesabınızı görüyorsanız, tebrikler. Bağlandınız.
 
 - İş veya okul hesabınızı görmüyorsanız **Bağlan**’a dokunun ve ardından iş veya okul kimlik bilgilerinizle oturum açın.
+
+## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>“İş veya okul hesabı ayarlama”yı görüyorsanız izlenecek sorun giderme adımları
+
+__“Girdiğiniz kullanıcı adıyla eşleşen bir yönetim uç noktası otomatik bulunamadı” şeklinde bir ileti görürseniz lütfen kullanıcı adınızı kontrol edin ve oturum açmayı yeniden deneyin. Yönetim uç noktanızın URL’sini biliyorsanız lütfen girin.__ Daha sonra kullanıcı adınız ve parolanızı yeniden girmeyi deneyin. Sorun yaşamaya devam ederseniz **Yönetim uç noktası** metin kutusunda sağlamanız gereken web sitesi için BT yöneticinizle görüşün. Bu web sitesi büyük olasılıkla şu şekilde olacaktır: **www.şirketiniz.onmicrosoft.com**. 
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.

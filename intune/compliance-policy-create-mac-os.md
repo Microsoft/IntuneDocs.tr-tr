@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e442a0ee7953fe5474d39e1a29a88dfcca58800d
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>Intune ile macOS (önizleme) cihazlar için cihaz uyumluluk ilkesi oluşturma
 
@@ -104,6 +104,9 @@ Intune ile yeni bir cihaz uyumluluk ilkesi oluştururken, farklı kategorilerdek
 
 - **Yeniden kullanılması engellenen eski parola sayısı** : Önceki parolalardan kaç tanesinin yeniden kullanılamayacağını belirtin.
 
+    > [!IMPORTANT]
+    > Bir macOS cihazda parola gerekliliği değiştirildiğinde, kullanıcı parolasını değiştirene kadar bu değişiklik gerçekleşmez. Örneğin parola uzunluğu sekiz basamakla kısıtlıyken macOS cihazın 6 basamaklı bir parolası varsa, kullanıcı cihazda şifresini güncelleştirene kadar cihaz uyumlu kalır.
+
 ## <a name="to-create-a-device-compliance-policy"></a>Cihaz uyumluluk ilkesi oluşturmak için
 
 1. [Azure portalı](https://portal.azure.com)’na gidin ve Intune kimlik bilgilerinizle oturum açın.
@@ -128,7 +131,7 @@ Intune ile yeni bir cihaz uyumluluk ilkesi oluştururken, farklı kategorilerdek
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 
-Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Uyumluluk – ilkeler** dikey penceresinde bulunabilir.
+Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Uyumluluk ilkeleri** dikey penceresinde bulunabilir.
 
 1. Kullanıcılara atamak istediğiniz cihaz uyumluluk ilkesini seçin ve sonra **Atamalar**’ı seçin. Bu işlem, **Azure Active Directory güvenlik gruplarını** seçebileceğiniz ve bunları ilkeye atayabileceğiniz dikey pencereyi açar.
 

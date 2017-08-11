@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>iOS için Microsoft Intune uygulama yapılandırma ilkelerini kullanma
 
@@ -37,7 +37,7 @@ Kullanıcılar bir iOS uygulamasını çalıştırdığında kullanılan ayarlar
 
 Kullanıcılar, bu ayarları hatalı şekilde girerse yardım masanız üzerindeki yük artabilir ve yeni uygulamaların benimsenmesi yavaşlayabilir.
 
-Uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalıştırmadan önce bu ayarları bir ilke ile kullanıcılara atamanıza imkan vererek bu sorunları ortadan kaldırmanıza yardımcı olabilir. Daha sonra ayarlar otomatik olarak sağlanır ve kullanıcıların herhangi bir eylem yapması gerekmez.
+Uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalıştırmadan önce bu ayarları bir ilke ile kullanıcılara atamanıza imkan vererek bu sorunları ortadan kaldırmanıza yardımcı olabilir. Daha sonra ayarlar otomatik olarak sağlanır ve kullanıcıların herhangi bir eylem yapması gerekmez. Uygulamalar, uygulama yapılandırmaları kullanımını desteklemek üzere yazılmış olmalıdır. Daha fazla bilgi için uygulama satıcınıza başvurun.
 
 Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından ilke denetimi gerçekleştirildiğinde (genellikle ilk çalıştırıldığında) kullanılır.
 
@@ -57,8 +57,8 @@ Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, 
 5.  İlke listesi dikey penceresinde **Ekle**’yi seçin.
 6.  **Yapılandırma İlkesi Ekle** dikey penceresinde, uygulama yapılandırma ilkesi için **Ad** ve isteğe bağlı bir **Açıklama** sağlayın.
 7.  **Cihaz kayıt türü** için şunlardan birini seçin:
-    - **Intune’a kaydedilmiş** - Intune Uygulama SDK’si ile tümleştirilmiş ve Intune tarafından yönetilen uygulamalar için.
-    - **Intune’a kaydedilmemiş** - Intune Uygulama SDK’si ile tümleştirilmiş ve Intune tarafından yönetilmeyen veya başka bir çözüm tarafından yönetilen uygulamalar için.
+    - **Intune’a kaydedilmiş** - Intune tarafından yönetilen uygulamalar için.
+    - **Intune’a kaydedilmemiş** - Intune tarafından yönetilmeyen veya başka bir çözüm tarafından yönetilen uygulamalar için.
 8.  **Platform** için **iOS**’u seçin (yalnızca Intune’a kaydedilmiş cihazlar için)
 9.  **İlişkili Uygulama**’yı seçin ve ardından **İlişkili Uygulama** dikey penceresinde, yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı seçin.
 10. **Yapılandırma İlkesi Ekle** dikey penceresinde **Yapılandırma ayarları**’nı seçin

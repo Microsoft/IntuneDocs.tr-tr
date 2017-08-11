@@ -14,11 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5be08d2535acefe099429ab732d6d5d99205b2e7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune ile uygulama koruma ilkelerini izleme
 Kullanıcılara uyguladığınız mobil uygulama koruma ilkelerinin uyumluluk durumunu izleyebilirsiniz. Uygulama koruma ilkelerinden etkilenen kullanıcılar hakkında bilgiler, ilkelerin uyumluluk durumunu ve kullanıcılarınızın karşılaşmış olabileceği sorunları bulabilirsiniz.
@@ -43,11 +43,13 @@ Uyumluluk durumu üç farklı yerden izlenebilir:
 
 ![Intune mobil uygulama yönetimi dikey penceresinde Özet kutucuğu](../media/mam-azure-portal-user-status-summary.png)
 
--   **Kullanıcılar:** Şirketinizde ilkeyle ilişkilendirilmiş uygulamaları kullanan kullanıcıların toplam sayısı.
+-   **Kullanıcılar**: Şirketinizde, iş bağlamında bir ilkeyle ilişkili uygulama kullanan kullanıcıların toplam sayısı.
 
--   **İLKEYLE YÖNETİLEN**: Uygulamalardan en az birini iş bağlamında kullanmış olan kullanıcıların sayısı.
+-   **İLKEYLE YÖNETİLEN**: Kendisine iş bağlamında bir ilke atanmış bir uygulama kullanan kullanıcı sayısı.
 
--   **İLKE YOK**: İlkeyle ilişkilendirilmiş uygulamaları kullanan ancak ilkenin hedeflediği kullanıcılar arasında yer almayan kullanıcıların sayısı. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
+-   **İLKE YOK**: İş bağlamında hiçbir ilke tarafından hedeflenmeyen bir uygulamayı kullanan kullanıcı sayısı. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
+    > [!NOTE]
+    > Platform başına birden çok ilkeniz varsa bir kullanıcıya atanmış en az bir ilke olduğunda bu kullanıcının ilke ile yönetildiği kabul edilir.
 
 - **Bayrak eklenen kullanıcılar:** Sorun yaşayan kullanıcıların sayısı. Şu anda yalnızca jailbreak uygulanmış cihazlara sahip kullanıcılar, **Bayrak eklenen kullanıcılar** kapsamında raporlanır.
 

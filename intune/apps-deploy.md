@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0bb3ca2f63ee963dae61ee6622d41fe4aef7adfd
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -59,9 +59,10 @@ Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uy
     - **Gerekli** - Uygulama, seçili gruplardaki cihazlara yüklenir.
     - **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
     - **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın.
+6. **Yalnızca iOS uygulamalar için** - Uygulamaya göre VPN ayarları barındıran bir iOS VPN profili oluşturduysanız **VPN** altında bu profili seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
 6. İşiniz bittikten sonra **Kaydet**’i seçin.
 
-Uygulama artık seçtiğiniz gruba atanır.
+Uygulama artık seçtiğiniz gruplara atanır.
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Uygulama amaçları arasındaki çakışmalar nasıl çözümlenir
 
@@ -100,7 +101,7 @@ Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. B
 |Kullanıcı kayıt olmadan Mevcut|Kullanıcı Mevcut|Kullanılabilir|
 |Kullanıcı kayıt olmadan Mevcut|Cihaz Gerekli|Gerekli ve kayıt olmadan Mevcut|
 |Kullanıcı kayıt olmadan Mevcut|Cihaz Mevcut Değil|Kayıt olmadan Mevcut|
-|Kullanıcı kayıt olmadan Mevcut|Cihaz Kaldır|Kaldırma ve kayıt olmadan Mevcut.<br>Kullanıcı uygulamayı şirket portalından yüklemediyse kaldırma işlemi yerine getirilmez.<br>Kullanıcı uygulamayı şirket portalından yüklerse yüklemeye, kaldırmaya göre öncelik verilir.|
+|Kullanıcı kayıt olmadan Mevcut|Cihaz Kaldır|Kaldırma ve kayıt olmadan Mevcut.<br>Kullanıcı uygulamayı şirket portalından yüklemediyse kaldırma işlemi yerine getirilir.<br>Kullanıcı uygulamayı şirket portalından yüklerse, yüklemenin kaldırmaya göre önceliği vardır.|
 
 >[!NOTE]
 >Yalnızca yönetilen iOS mağazası uygulamalarını Intune’a ekleyip Gerekli olarak atadığınızda bu uygulamalar, hem Gerekli hem de Mevcut amaçlarıyla otomatik olarak oluşturulur.

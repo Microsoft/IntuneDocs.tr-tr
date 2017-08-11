@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Intune’da KCG’yi etkinleştirme"
-description: 
+description: "Kuruluşunuzda Kendi Cihazını Getir (KCG) çözümünü etkinleştirmek üzere Intune’u ayarlamanız için yüksek düzey bir iş akışı."
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 880b83a63eefe13a96ab8838c7092c185aa32cd0
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enable-byod-with-intune"></a>Intune ile KCG'yi Etkinleştirme
 
@@ -27,7 +27,7 @@ Bu konu, kuruluşunuzda Kendi cihazını Getir (KCG) çözümünü etkinleştirm
 
 -   **[Cihazları kaydetme ve uyumluluğu denetleme](#enroll-devices-and-check-for-compliance)**, kullanıcıların kişisel cihazlarını Intune yönetimine nasıl kaydedeceğini açıklar. Intune; iOS, macOS, Android ve Windows cihazları yönetebilir. Bu bölüm ayrıca, cihazlara nasıl ilke dağıtılacağını açıklar ve cihazların temel güvenlik gereksinimlerini karşıladığından emin olmanıza yardımcı olur.
 
-- **[Şirket kaynaklarına erişim sağlama](#provide-access-to-company-resources)** işlemi, BT ekibi tarafından kullanıcıların şirket kaynaklarına kolay ve güvenli erişiminin nasıl sağlanacağını gösterir. Bunu, yönetilen cihazlara erişim profilleri dağıtarak yaparsınız. Bu bölüm ayrıca toplu satın alınan uygulama dağıtımlarını Intune’da nasıl yöneteceğinizi açıklar.
+- **[Şirket kaynaklarına erişim sağlama](#provide-access-to-company-resources)** işlemi, kullanıcıların şirket kaynaklarına kolay ve güvenli erişimi nasıl sağlayacağınızı gösterir. Bunu, yönetilen cihazlara erişim profilleri dağıtarak yaparsınız. Bu bölüm ayrıca toplu satın alınan uygulama dağıtımlarını Intune’da nasıl yöneteceğinizi açıklar.
 
 -   **[Şirket verilerini koruma](#protect-company-data)**, şirket kaynaklarına koşullu erişim sağlamayı, veri kaybını önlemeyi ve şirket uygulama ve verileri, iş için artık gerekli olmadığında veya kaybedildiğinde/çalındığında bunların nasıl kaldırılacağını öğrenmenize yardımcı olur.
 
@@ -38,19 +38,17 @@ Bu konu, kuruluşunuzda Kendi cihazını Getir (KCG) çözümünü etkinleştirm
 ## <a name="before-you-begin"></a>Başlamadan önce
 Kullanıcıların cihazlarını kaydetmesi için önce Intune hizmetini hazırlamanız gerekir. Bunu yapmak için [kullanıcılara lisans atayın](licenses-assign.md) ve [mobil cihaz yönetim yetkilisini ayarlayın](mdm-authority-set.md).
 
-Başlamışken [şirket portalını da özelleştirebilirsiniz](company-portal-customize.md). Şirket markasını ekleyin ve kullanıcılar için destek bilgileri sağlayın. Böylece kullanıcılarınıza güvenilir bir kayıt ve destek deneyimi sunabilirsiniz.
+Başlamışken [şirket portalını da özelleştirebilirsiniz](company-portal-customize.md). Şirket markasını ekleyin ve kullanıcılar için destek bilgileri sağlayın. Böylece kullanıcılarınıza güvenilir bir kayıt ve destek deneyimi sunabilirsiniz. Kullanıcıların, kaydolmadan önce kabul etmesi gereken [kullanım koşulları](terms-and-conditions-create.md) oluşturabilir veya desteklediğiniz platformu belirlemek için [cihaz kısıtlamaları](enrollment-restrictions-set.md) uygulayabilirsiniz.
 
 ## <a name="enroll-devices-and-check-for-compliance"></a>Cihazları kaydetme ve uyumluluk denetimi yapma
 
 Intune hizmetini hazırladıktan sonra, yönetmek istediğiniz cihaz türleri için çeşitli kayıt gereksinimlerini karşılamanız gerekir. Cihazları yönetime kaydetme işlemi oldukça basittir ancak çeşitli cihaz türlerine göre biraz farklılık gösterir.
 
--   **iOS ve Mac cihazlar** iPad, iPhone veya MacOS cihazları kaydetmek için bir [Apple Anında İletilen Bildirim servisi (APNs) sertifikası](apple-mdm-push-certificate-get.md) almanız gerekir. APNs sertifikanızı Intune’a yükledikten sonra kullanıcılar, [iOS cihazlarını kaydetmek](/intune-user-help/enroll-your-device-in-intune-ios) için Şirket Portalı uygulamasını, [MacOS cihazlarını kaydetmek](/intune-user-help/enroll-your-device-in-intune-macos) içinse Şirket Portalı web sitesini kullanabilir.
+-   **iOS ve Mac cihazlar** iPad, iPhone veya MacOS cihazları kaydetmek için bir [Apple MDM anında iletme sertifikası](apple-mdm-push-certificate-get.md) almanız gerekir. MDM anında iletme sertifikanızı Intune’a yükledikten sonra kullanıcılar, [iOS cihazlarını kaydetmek](/intune-user-help/enroll-your-device-in-intune-ios) için Şirket Portalı uygulamasını, [MacOS cihazlarını kaydetmek](/intune-user-help/enroll-your-device-in-intune-macos) içinse Şirket Portalı web sitesini kullanabilir.
 
--   **Android cihazlar** Intune hizmetini Android cihazların kaydına hazır hale getirmek için yapmanız gereken bir şey yoktur. Kullanıcılar Google Play’den edinilebilecek Şirket Portalı uygulamasını kullanarak [Android cihazlarını yönetime kaydedebilir](/intune-user-help/enroll-your-device-in-intune-android.md).
+-   **Android cihazlar** Intune hizmetini Android cihazların kaydına hazır hale getirmek için yapmanız gereken bir şey yoktur. Kullanıcılar Google Play’den edinilebilecek Şirket Portalı uygulamasını kullanarak [Android cihazlarını yönetime kaydedebilir](/intune-user-help/enroll-your-device-in-intune-android).
 
--   **Windows Phone ve bilgisayarlar** Windows cihazların kaydını kolaylaştırmak amacıyla [kayıt sunucusu için bir DNS diğer adı ayarlamalısınız](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium). Bunu yapmadığınız takdirde kullanıcılar, [Windows cihazlarını kaydetmek](/intune-user-help/enroll-your-w10-phone-or-w10-pc-windows) için bir iş veya okul hesabı ekleyebilir.
-
-  - Azure AD Premium’unuz varsa [otomatik kaydı etkinleştirerek](windows-enroll.md) kullanıcılarınızın Windows cihazları kaydetmelerini kolaylaştırabilirsiniz. Bu özellik, bir kullanıcı kişisel cihazını kaydetmek için iş veya okul hesabı eklediğinde cihazı otomatik olarak kaydeder. Ayrıca kuruluşunuzun Azure AD’sine katılan şirkete ait cihazlarda da çalışır.
+-   **Windows Phone ve bilgisayarlar** Windows cihazlar ek yapılandırma ile kaydedilebilir. Kullanıcılarınızın deneyimini kolaylaştırmak için Azure Active Directory (AD) Premium’da Windows 10 bilgisayarlar ve Windows 10 mobil cihazlar için otomatik kaydı etkinleştirebilirsiniz. Azure AD Premium’a sahip değilseniz veya Windows 8.1’i desteklemeniz gerekiyorsa kaydı kolaylaştırmak üzere [kayıt sunucusu için bir DNS diğer adı](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) oluşturabilirsiniz.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Yönetilen cihazların, temel güvenlik gereksinimlerini karşıladığından emin olma
@@ -61,13 +59,13 @@ Bir kullanıcıya [uyumluluk ilkesi dağıttığınızda](device-compliance-get-
 
 ## <a name="provide-access-to-company-resources"></a>Şirket kaynaklarına erişim sağlama
 
-Çalışanlarınızın çoğu, mobil cihazlarından şirket e-posta ve belgelerine erişmek ister. Bunun, karmaşık adımlarla uğraşmadan veya yardım masasını aramadan ayarlanmasını beklerler. Intune, mobil cihazlara önceden yüklenen yerel e-posta uygulamaları için [e-posta ayarları oluşturup dağıtmanızı](conditional-access-intune-common-ways-use.md) kolaylaştırır.
-<!--- this was old link: (https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune). check with Andre--->
+Çalışanlarınızın çoğu, mobil cihazlarından şirket e-posta ve belgelerine erişmek ister. Bunun, karmaşık adımlarla uğraşmadan veya yardım masasını aramadan ayarlanmasını beklerler. Intune, mobil cihazlara önceden yüklenen yerel e-posta uygulamaları için [e-posta ayarları oluşturup dağıtmanızı](email-settings-configure.md) kolaylaştırır.
+
 
 > [!NOTE]
 > Intune, Google Play mağazasında bulunan Gmail ve Nine Work e-posta uygulamaları için İş için Android e-posta profili yapılandırmasını destekler.
 
-Intune ayrıca, kullanıcılar dışarıda çalıştığında şirket içi şirket verilerine erişimi denetlemenize ve korumanıza yardımcı olur. Intune [Wi-Fi](https://docs.microsoft.com/intune/deploy-use/wi-fi-connections-in-microsoft-intune), [VPN](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune#create-a-vpn-profile) ve e-posta profilleri birlikte çalışarak kullanıcılarınızın, işlerini nerede olursa olsun gerçekleştirmek için ihtiyaç duydukları dosyalara ve kaynaklara erişim kazanmalarına yardımcı olur. Azure Active Directory Uygulama Proxy'si ve koşullu erişim kullanarak şirketinizin şirket içinde barındırılan web uygulamaları ve hizmetlerinin de erişim güvenliği ve koruması sağlanabilir.
+Intune ayrıca, kullanıcılar dışarıda çalıştığında şirket içi şirket verilerine erişimi denetlemenize ve korumanıza yardımcı olur. Intune [Wi-Fi](wi-fi-settings-configure.md), [VPN](vpn-settings-configure.md) ve e-posta profilleri birlikte çalışarak, işlerini nerede olursa olsun yapmak için ihtiyaç duydukları dosyalara ve kaynaklara erişim izni verir. Azure Active Directory Uygulama Proxy'si ve koşullu erişim kullanarak şirketinizin şirket içinde barındırılan web uygulamaları ve hizmetlerinin de erişim güvenliği ve koruması sağlanabilir.
 
 ### <a name="manage-volume-purchased-apps"></a>Toplu satın alınan uygulamaları yönetme
 Intune ile şunları kolayca yapabilirsiniz:
@@ -109,8 +107,8 @@ Bu işlemi yönetilen Windows 10 cihazlarda yapmak için [Windows Bilgi Korumas�
 
 ### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Kişisel verileri korurken şirket verilerini silme
 
-Bir cihazın iş için artık gerekli olmadığı, kullanım amacının değiştirildiği veya kaybolduğu durumlarda bu cihazdan şirket uygulamalarını ve verilerini kaldırabiliyor olmanız gerekir. Bunu yapmak için Intune’un seçmeli silme ve tam silme özelliklerini kullanabilirsiniz. Kullanıcılarınız, Intune yönetimine kaydettikleri kişisel cihazlarını Intune Şirket Portalı aracılığıyla uzaktan da silebilir.
+Bir cihazın iş için artık gerekli olmadığı, kullanım amacının değiştirildiği veya kaybolduğu durumlarda bu cihazdan şirket uygulamaları ve verilerini kaldırabilirsiniz. Bunu yapmak için Intune’un seçmeli silme ve tam silme özelliklerini kullanabilirsiniz. Kullanıcılarınız, Intune yönetimine kaydettikleri kişisel cihazlarını Intune Şirket Portalı aracılığıyla uzaktan da silebilir.
 
 [Tam temizleme](devices-wipe.md), cihazı fabrika varsayılan ayarlarına geri yükler ve tüm şirket ve kullanıcı verileriyle ayarlarını kaldırır. [Seçmeli silme](devices-wipe.md#selective-wipe), cihazdan yalnızca şirket verilerini siler ve kullanıcının kişisel verilerine dokunmaz.
 
-Seçmeli silme başlatıldıktan sonra cihaz, yönetimden kaldırmak için anında işlemi başlatır. İşlem tamamlandığında, tüm şirket verileri silinir ve cihaz adı Intune yönetici konsolundan kaldırılır. Böylece cihaz yönetimi yaşam döngüsü sonlanır.
+Seçmeli silme başlatıldıktan sonra cihaz, yönetimden kaldırmak için anında işlemi başlatır. İşlem tamamlandığında, tüm şirket verileri silinir ve cihaz adı Intune portalından kaldırılır. Böylece cihaz yönetimi yaşam döngüsü sonlanır.

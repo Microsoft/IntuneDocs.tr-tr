@@ -1,37 +1,35 @@
 ---
 title: "Intune sözlüğü"
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: "Microsoft Intune’da kullanılan terimlerin bir kısmı hakkında bilgi edinin"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune sözlüğü
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |Uygulama ataması|Kullanıcıların ihtiyaç duydukları uygulamaları [bulmasına, indirmesine ve yüklemesine](/intune/app-management) izin verir. Bu daha önceden *uygulama dağıtımı* olarak biliniyordu.|
-|Uygulama yapılandırma profili|Bir [iOS](/intune/app-configuration-policies-use-ios) veya [Android](/intune/app-configuration-policies-use-android) uygulamasını çalıştırılmadan önce belirli ayarlarla yapılandırır.|
+|Uygulama yapılandırma profili <br/><br/>Uygulama yapılandırma ilkesi|Satıcıya özgü yapılandırmaları olan mobil uygulamalarda kullanılabilir. Bir [iOS](/intune/app-configuration-policies-use-ios) veya [Android](/intune/app-configuration-policies-use-android) uygulamasını çalıştırılmadan önce belirli ayarlarla yapılandırır.|
 |Uygulama izleme|Uygulama ataması ile ilgili [son durumu ve etkinliği gözden geçirmenize](/intune/apps-monitor) olanak tanır.|
 |Uygulama koruma verilerini kaldırma görevi|Kullanıcının cihazından [uygulama verilerini kaldırır](/intune/app-protection-policies).|
-|Uygulama koruma ilkesi|Kullanıcının uygulamalarının [şirketinizin veri koruma ilkeleri](/intune/app-protection-policies) ile uyumlu olmasını sağlar.|
+|Uygulama koruma ilkesi|Enterprise Mobility + Security (EMS) teknolojileri ile tümleştirilen mobil uygulamalarda kullanılabilir. Kullanıcının uygulamalarının [şirketinizin veri koruma ilkeleri](/intune/app-protection-policies) ile uyumlu olmasını sağlar.|
 |Uygulama SDK'sı|[Microsoft Intune Uygulama SDK’sı](/intune/app-sdk) şirket içinde yazılan uygulamalara, Intune uygulama koruma ilkeleri tarafından yönetilmelerine olanak tanıyan işlevsellik ekler.|
 |Uygulamayı kaldırma eylemi|Kullanıcının cihazlarından [uygulamaları kaldırmanıza](/intune/apps-deploy) olanak tanır.|
 |Uygulama Sarmalama Aracı|Bir iş kolu uygulamasının çevresinde sarmalayıcı oluşturan ve uygulamanın bir Intune uygulama koruma ilkesi tarafından yönetilmesine izin veren [bir komut satırı uygulamasıdır](/intune/apps-prepare-mobile-application-management).|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Managed Browser|Intune kullanarak kuruluşunuzda atayabileceğiniz bir [web’e gözatma uygulamasıdır](/intune/app-configuration-managed-browser). Yönetilen tarayıcı ilkesi, yönetilen tarayıcı kullanıcılarının ziyaret edebileceği web sitelerini kısıtlayan bir izin verilenler listesi veya engellenenler listesi yapılandırır.|
 |MDM yetkilisi|[MDM yetkilisi](/intune/mdm-authority-set), bir grup cihazı yönetme iznine sahip olan yönetim hizmetini tanımlar. MDM yetkilisi seçenekleri arasında Intune’un kendisi ve Intune ile Configuration Manager vardır.|
-|Mobil uygulama yapılandırma ilkesi|Şirket adı veya sunucu adresi gibi ayarları çalıştırıldıkları zaman uyumlu uygulamalara sağlamak için kullanılan bir [iOS](/intune/app-configuration-policies-use-ios) veya [Android](/intune/app-configuration-policies-use-android) ilkesidir.|
+|Mobil uygulama yapılandırma ilkesi|Satıcıya özgü yapılandırmaları olan mobil uygulamalarda kullanılabilir. Örneğin, şirket adı veya sunucu adresi gibi ayarları çalıştırıldıkları zaman, uyumlu uygulamalara sağlamak için kullanılan bir [iOS](/intune/app-configuration-policies-use-ios) veya [Android](/intune/app-configuration-policies-use-android) ilkesidir.|
 |Mobil uygulama sağlama ilkesi|Atadığınız iOS uygulamaları için [sağlama profillerinin](/intune/app-provisioning-profile-ios) süresinin sona ermediğinden emin olmanızı sağlayan bir iOS ilkesidir.|
 |Mobil uygulama yönetimi|[Mobil uygulama yönetimi (MAM)](/intune/app-lifecycle) kullanıcılarınız için mobil uygulamaları yayımlama, gönderme, yapılandırma, güvenlik altına alma, izleme ve güncelleştirme gibi eylemler gerçekleştirmenize olanak tanır.
 |Mobil aygıt yönetimi|[Mobil cihaz yönetimi (MDM)](/intune/device-lifecycle) cihazları Intune’a kaydetmenize izin verir ve bu cihazları sağlamanıza, yapılandırmanıza, izlemenize ve yönetmenize olanak tanır.
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|Seçmeli temizleme|[Seçmeli silme](/intune/device-company-data-remove), bir cihazdan yalnızca şirket verilerini (uygun durumlarda mobil uygulama yönetimi (MAM) verileri de dahil), ayarlarını ve e-posta profillerini kaldırır. Seçmeli temizleme, kullanıcının kişisel verilerini cihazda bırakır.|
+|Seçmeli temizleme|[Seçmeli silme](/intune/device-company-data-remove), bir cihazdan ayarlar ve e-posta profilleri dahil olmak üzere yalnızca uygulama koruma ilkesiyle korunan şirket verilerini kaldırır. Seçmeli temizleme, kullanıcının kişisel verilerini cihazda bırakır.|
 |Dışarıdan Yükleme|Bir iş kolu uygulamasına uygulama mağazasından erişmeden bu uygulamayı yükleme eylemi.|
 |Abonelik|Girdiğiniz ve bir Intune kiracısına erişmenize olanak sağlayan anlaşma.|
 
