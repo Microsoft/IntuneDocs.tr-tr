@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 183e60af4d6174c18fc3883f2cdd9827505d2aba
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="enroll-android-devices"></a>Android cihazlarını kaydetme
 
@@ -49,7 +49,6 @@ Cihaz yönetimini etkinleştirmek için, kullanıcılarınızın Google Play'de 
 
 1. **Intune MDM’yi ayarlama**<br>
 Henüz yapmadıysanız, [mobil cihaz yönetimi yetkilisini](mdm-authority-set.md) **Microsoft Intune** olarak ayarlayarak mobil cihaz yönetimine hazırlanın.
-
 2. **Android for Work bağlamasını yapılandırma**<br>
     Bir Intune yöneticisi olarak Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**'u seçin.
 
@@ -92,7 +91,7 @@ Android for Work kaydı ve yönetimini kapatabilirsiniz. Intune yönetim konsolu
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Bir Android for Work hesabının bağlamasını kaldırma
 
 1. **Android for Work bağlamasını kaldırma**<br>
-    Bir Intune yöneticisi olarak, Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**'u seçin.  **Intune** dikey penceresinde **Cihaz kaydı**, > **Android for Work Kaydı**’nı seçin ve **Bağlamayı kaldır**’a tıklayın.
+    Bir Intune yöneticisi olarak Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**'u seçin.  **Intune** dikey penceresinde **Cihaz kaydı**, > **Android for Work Kaydı**’nı seçin ve **Bağlamayı kaldır**’a tıklayın.
 
 2. **Android for Work bağlamasını kaldırmayı kabul etme**<br>
   Bağlamayı silmek için **Evet**’e tıklayın tüm Android for Work cihazların Intune kaydını silin.
