@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b7ce81eb63a81534af2911b34904d870ac41ad
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın aldığınız iOS uygulamalarını yönetme
 
@@ -33,6 +33,19 @@ Microsoft Intune, bu program aracılığıyla satın aldığınız uygulamaları
 - Uygulama mağazasından lisans bilgilerini içeri aktarma
 - Kaç lisans kullandığınızı izleme
 - Uygulamanın sahip olduğunuzdan daha fazla kopyasını yüklemenizi engelleme
+
+Toplu satın alınan uygulamaları atamak için kullanabileceğiniz iki yöntem vardır:
+
+### <a name="device-licensing"></a>Cihaz lisanslama
+
+Cihazlara bir uygulama atadığınızda yalnızca bir uygulama lisansı kullanılır ve bu lisans, atadığınız cihazla ilişkili olur.
+Bir cihaza toplu satın alınan uygulamalar atadığınızda, cihaz son kullanıcısının mağazaya erişmek için bir Apple kimliği belirtmesi gerekmez. 
+
+### <a name="user-licensing"></a>Kullanıcı lisanslama
+
+Kullanıcılara bir uygulama atadığınızda yalnızca bir uygulama lisansı kullanılır ve bu lisans kullanıcıyla ilişkili olur. Uygulama, kullanıcının sahip olduğu birden fazla cihazda çalıştırılabilir.
+Kullanıcılara toplu satın alınan uygulamalar atadığınızda, tüm son kullanıcılar mağazaya erişmek için bir Apple kimliği belirtmek zorundadırlar.
+
 
 Ayrıca, Apple Volume Purchase Program mağazasından satın aldığınız kitapları Intune ile eşitleyebilir, yönetebilir ve atayabilirsiniz. Kitapları yönetmek için Intune portalındaki **Kitaplar** iş yükünü kullanın. Kitapları yönetme yordamı, uygulama yönetme yordamı ile aynıdır.
 Başlamadan önce karşıya bir Apple Volume Purchase Program belirteci yüklemiş olmanız gerekir. Şu anda kitapları yalnızca **Gerekli** yükleme olarak atayabilirsiniz.
@@ -81,24 +94,28 @@ Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
-1. **Mobil Uygulamalar** iş yükünde, **Yönet** > **Lisanslı Uygulamalar**’ı seçin.
-2. Uygulama listesi dikey penceresinde atamak istediğiniz uygulamayı seçin ve sonra da '**...**' > **Grupları Ata**.
-3. <*uygulama adı*> - **Atanan Gruplar** dikey penceresinde **Yönet** > **Atanan Gruplar**’ı seçin.
-4. **Grupları Ata**'yı seçin, sonra da **Grup seç** dikey penceresinde uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
-**Gerekli** atama eylemini seçmelisiniz. Ayrıca cihaz grubuna atamalar yalnızca Ocak 2017'den sonra oluşturulan yeni kiracılar için yapılabilir. Kiracınız bu tarihten önce oluşturulduysa ve cihaz gruplarına VPP uygulamaları atama seçeneğini kullanamıyorsanız Intune destekle iletişime geçin.
-5. İşiniz bittikten sonra **Kaydet**’i seçin.
+1.  **Mobil Uygulamalar** iş yükünde **Yönet** > **Uygulama Lisansları**’nı seçin.
+2.  Uygulama listesi dikey penceresinde atamak istediğiniz uygulamayı seçin ve sonra da '**...**' > **Grupları Ata**.
+3.  *<app name>* - **Atamalar** dikey penceresinde **Yönet** > **Atamalar**’ı seçin.
+4.  **Grupları Seç**’e tıklayın, daha sonra **Grupları seç** dikey penceresinde uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
+5.  Seçtiğiniz her grup için aşağıdaki ayarları yapılandırın:
+    - **Tür** - Uygulamanın **Uygun** mu (son kullanıcılar uygulamayı Şirket Portalı’ndan indirebilirler) **Gerekli** mi (son kullanıcıların cihazlarında uygulama otomatik olarak yüklenir) olacağını seçin.
+Bir VPP uygulamasını **Uygun** olarak atadığınızda, uygulama içeriği ve lisansı doğrudan uygulama mağazasından atanır.
+    - **Lisans türü** - **Kullanıcı lisanslama** veya **Cihaz lisanslama**’yı seçin.
+6.  İşiniz bittikten sonra **Kaydet**’i seçin.
+
 
 >[!NOTE]
 >Görüntülenen uygulama listesi, bir belirteçle ilişkilendirilir. Birden çok VPP belirteci ile ilişkilendirilmiş bir uygulamanız varsa aynı uygulamanın her bir belirteç için bir kez olmak üzere birden çok kez görüntülendiğini görürsünüz.
 
-Uygulama atamalarını izlemenize yardımcı olacak bilgiler için bkz. [Uygulamaları izleme](apps-monitor.md).
-
 ## <a name="further-information"></a>Daha fazla bilgi
 
-Uygulamayı **Gerekli** bir yükleme olarak atadığınızda, uygulamayı yükleyen her kullanıcı bir lisans kullanır.
-
-Lisansı geri kazanmak için atama eylemini **Kaldır** olarak değiştirmeniz gerekir. Uygulama kaldırıldıktan sonra lisans geri kazanılır.
+Bir lisansı geri kazanmak için atama eylemini Kaldır olarak değiştirmeniz gerekir. Uygulama kaldırıldıktan sonra lisans geri kazanılır.
 
 Uygun cihaza sahip bir kullanıcı, bir VPP uygulamasını ilk kez yüklemeye çalıştığında, kullanıcıdan Apple Volume Purchase Program’e katılması istenir. Uygulamanın yüklenmeye devam etmesi için önce katılmaları gerekir. Apple Volume Purchase programına katılma daveti, kullanıcının, iOS cihazında iTunes uygulamasını kullanabilmesini gerektirir. iTunes Store uygulamasını devre dışı bırakmak için bir ilke belirlediyseniz VPP uygulamaları için kullanıcı tabanlı lisanslama çalışmaz. Çözüm, ilkeyi kaldırarak iTunes uygulamasına izin vermek veya cihaz tabanlı lisanslama kullanmaktır.
 
-Bir VPP uygulamasını Kullanılabilir olarak atadığınızda, uygulama içeriği ve lisansı doğrudan uygulama mağazasından atanır.
+
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Uygulama atamalarını izlemenize yardımcı olacak bilgiler için bkz. [Uygulamaları izleme](apps-monitor.md).

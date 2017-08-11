@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Android uygulamalarını Intune Uygulama Sarmalama Aracı ile mobil uygulama yönetimi için hazırlama
 
@@ -50,16 +50,7 @@ Aracı çalıştırmadan önce bkz. [Uygulama Sarmalama Aracını çalıştırma
     > [!NOTE]
     > Bazı durumlarda, Java’nın 32 bit sürümü bellek sorunlarına yol açabilir. 64-bit sürümü yüklemek iyi bir fikirdir.
 
-- Android tüm uygulama paketlerinin (.apk) imzalanmasını gerektirir. Sarmalanan çıkış uygulamasını imzalamak amacıyla gerekli kimlik bilgilerini oluşturmak için Java keytool kullanın. Örneğin, aşağıdaki komut, Uygulama Sarmalama Aracı tarafından sarmalanan çıkış uygulamasını imzalamak için kullanılabilecek anahtarlar oluşturmak için Java yürütülebilir keytool.exe dosyası kullanır.
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    Bu örnek, RSA algoritması kullanarak bir anahtar çifti (bir ortak anahtar ve 2048 bit ilişkili özel anahtar) oluşturur. Ardından ortak anahtarı, tek öğeli sertifika zinciri olarak depolanan bir X.509 v3 otomatik imzalanan sertifika içine sarmalar. Bu sertifika zinciri ve özel anahtar "mykeystorefile" adlı yeni bir anahtar deposu girdisinde depolanır ve "mykeyalias" diğer adıyla tanımlanır. Anahtar deposu girdisi 50.000 gün boyunca geçerlidir.
-
-    Komut, anahtar deposu ve anahtar için parola sağlamanızı ister. Güvenli parolalar kullanın, ancak daha sonra Uygulama Sarmalama Aracını çalıştırmak için gerekeceğinden, bu parolaları not alın.
-
-    Daha ayrıntılı belgeler için Oracle belgeleri web sitesinde Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) ve Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) hakkında okuma yapabilirsiniz.
+- Android tüm uygulama paketlerinin (.apk) imzalanmasını gerektirir. Mevcut sertifikaları **yeniden kullanma** hakkında bilgi ve imza sertifikaları rehberine ulaşmak için bkz. [İmza sertifikaları ve sarmalama uygulamalarını yeniden kullanma](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). Sarmalanan çıkış uygulamasını imzalamak için gereken **yeni** kimlik bilgilerini oluşturmak için yürütülebilir Java keytool.exe kullanılır. Ayarlanan parolaların güvenle saklanması gerekir ancak daha sonra Uygulama Sarmalama Aracını çalıştırırken gerekeceği için bu parolaları not alın.
 
 ## <a name="install-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını yükleme
 
@@ -95,7 +86,7 @@ Aracı yüklediğiniz klasörü not edin. Varsayılan konum: C:\Program Files (x
 |**-KeyStorePassword**&lt;GüvenliDize&gt;|Anahtar deposunun şifresini çözmek için kullanılan parola. Android, tüm uygulama paketlerinin (.apk) imzalanmasını gerektirir. KeyStorePassword üretmek için Java keytool kullanın. Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) hakkında daha fazla bilgiyi burada bulabilirsiniz.| |
 |**-KeyAlias**&lt;Dize&gt;|İmzalama için kullanılacak anahtarın adı.| |
 |**-KeyPassword**&lt;GüvenliDize&gt;|İmzalama için kullanılan özel anahtarın şifresini çözmek için kullanılan parola.| |
-|**-SigAlg**&lt;GüvenliDize&gt;| (İsteğe bağlı) İmzalama için kullanan imza algoritmasının adı. Algoritma, özel anahtar ile uyumlu olmalıdır.|Örnekler: SHA256withRSA, SHA1withRSA, MD5withRSA|
+|**-SigAlg**&lt;GüvenliDize&gt;| (İsteğe bağlı) İmzalama için kullanan imza algoritmasının adı. Algoritma, özel anahtar ile uyumlu olmalıdır.|Örnekler: SHA256withRSA, SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (İsteğe bağlı) Komut, ayrıntılı ve hata ayıklama gibi ortak PowerShell parametrelerini destekler. |
 
 

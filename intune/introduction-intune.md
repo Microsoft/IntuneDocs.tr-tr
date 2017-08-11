@@ -5,7 +5,7 @@ keywords: Intune nedir?
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>Intune nedir?
 
@@ -37,7 +37,7 @@ Office 365 ve EMS birlikte çalışanlarınıza tüm cihazlardan üretken bir ş
 ## <a name="how-does-intune-work"></a>Intune nasıl çalışır?
 Intune, mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) hizmetlerini sunar. Intune'un MDM ve MAM özellikleri, EMS veri koruma ve uyumluluk senaryolarına katkıda bulunur.  
 
-Intune'un MDM/MAM özelliklerini ve EMS veri koruma hizmetlerini kullanım şekliniz, [çözmeye çalıştığınız işletme sorununa](#common-business-problems-that-intune-helps-solve) bağlı olacaktır. Örneğin:
+Intune'un MDM/MAM özelliklerini ve EMS veri koruma hizmetlerini kullanma şekliniz, [çözmeye çalıştığınız işletme sorununa](#common-business-problems-that-intune-helps-solve) bağlıdır. Örneğin:
 * Bir perakende satış mağazasındaki vardiyalı çalışanlar tarafından kullanılacak tek uygulama çalıştıran cihazlarla bir havuz oluşturuyorsanız, ağırlıklı olarak MDM'yi kullanırsınız.
 * Çalışanların kurumsal verilere erişmek için kendi kişisel cihazlarını kullanmalarına (KCG) izin veriyorsanız MAM ve veri koruma hizmetlerinden yararlanırsınız.  
 * Bilgi işlem çalışanlarına şirket telefonu veriyorsanız, tüm teknolojileri bir arada kullanırsınız.
@@ -72,10 +72,10 @@ Intune'u diğer EMS hizmetleriyle birlikte kullanarak kuruluşunuz için mobil i
 
 * [Çoklu oturum açma](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [Çok faktörlü kimlik doğrulaması](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [Uygulama koşullu erişimi - mobil uygulamada kurumsal veriler varsa erişim izni ver](app-based-conditional-access-intune.md) ([Klasik konsol](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
-* [Aynı uygulamadaki kurumsal verileri kişisel verilerden ayırma](app-protection-policy.md) ([Klasik konsol](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Uygulama koruma ilkesi (PIN, şifreleme, farklı kaydet, pano vb.)](app-protection-policies.md) ([Klasik konsol](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Mobil uygulamadan kurumsal verileri silme](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [Uygulamaya koşullu erişim - mobil uygulamada kurumsal veriler varsa erişim izni ver](app-based-conditional-access-intune.md)
+* [Aynı uygulamadaki kurumsal verileri kişisel verilerden ayırma](app-protection-policy.md)
+* [Uygulama koruma ilkesi (PIN, şifreleme, farklı kaydet, pano vs.)](app-protection-policies.md)
+* [Mobil uygulamadan kurumsal verileri silme](apps-selective-wipe.md)
 * [Hak yönetim desteği](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Uygulama yönetimi veri güvenliği düzeylerini gösteren görüntü](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ Aşağıdaki listede yer alan iş sorunlarına tıklayarak sunduğumuz çözüml
 * [Görevlerde çalışanlarınıza sınırlı kullanımı olan paylaşılan tabletler verme](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>Sonraki adımlar
-* [Intune’u kullanmanın yaygın yolları](common-scenarios.md) hakkında yazılanları okuyun ([Klasik konsol](/intune-classic/understand-explore/common-ways-to-use-intune)).
-* [30 günlük Intune deneme sürümünü](free-trial-sign-up.md) kullanarak ürüne alışın ([Klasik konsol](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)).
-* Intune’un [teknik gereksinimlerini ve özelliklerini](supported-devices-browsers.md) derinlemesine öğrenin ([Klasik konsol](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)).
+* [Intune’u kullanmanın yaygın yolları](common-scenarios.md) hakkında yazılanları okuyun.
+* [30 günlük Intune denemesini](free-trial-sign-up.md) kullanarak ürünle tanışın.
+* Intune’un [teknik gereksinimlerini ve özelliklerini](supported-devices-browsers.md) derinlemesine öğrenin.

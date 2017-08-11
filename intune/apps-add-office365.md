@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6a3cdc2b5d95f57f1ffc1f68b6748b357f2ef4
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 ProPlus 2016 uygulamalarını Windows 10 cihazlara atama
 
@@ -34,11 +34,8 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 ProPlus 2016 
 - Bu uygulamaları dağıtacağınız cihazların Windows 10 Creators Update veya üzerini çalıştırıyor olması gerekir.
 - Intune, yalnızca Office 365 ProPlus 2016 paketinden Office uygulamaları eklemeyi destekler.
 - Intune uygulama paketini yüklerken herhangi bir Office uygulaması açıksa kaydedilmeyen dosyalardaki veriler kaybedilebilir.
-- Zaten Office yüklü bir bilgisayara Office yüklerseniz aşağıdaki hususlara dikkat edin:
-    - 32 bit ve 64 bit Office uygulamalarını aynı cihaza yükleyemezsiniz, bu konuda kullandığınız Office sürümünün bir etkisi yoktur.
-    - Office’in aynı Tıkla-Çalıştır ve MSI sürümlerini aynı cihaza yükleyemezsiniz ama farklı ana sürümleri yükleyebilirsiniz.
-    - Tıkla-Çalıştır sırasında yüklediğiniz eski bir Office sürümünüz varsa yeni sürümüyle değiştirmek istediğiniz uygulamaları kaldırmalısınız. Örneğin cihazda Word’ün eski bir sürümü varsa ve son sürümü atamak istiyorsanız önce eski sürümü kaldırmanız gerekir.
-    - Bir cihazda Office 365 yüklüyse cihaza Office 365 ProPlus 2016 paketini atamak, Office abonelik düzeyinizi değiştirmeniz gerektiği anlamına gelebilir.
+- Bu yükleme yöntemi, Windows 10S cihazlarda desteklenmez.
+- Bu uygulama türünü Uygun olarak atar ve farklı atamaları birden çok kullanıcıya hedeflerseniz kullanıcılar yalnızca son hedeflenen atamayı görür.
 
 
 ## <a name="get-started"></a>Başlarken

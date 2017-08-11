@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,62 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e2e1eb6da9114c689aae5eb06f7d7c780f35817
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune ve son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu yenilikler, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
+
+## <a name="week-of-july-31-2017"></a>31 Temmuz 2017 Haftası
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Tüm platformlar için Şirket Portalı uygulamalarında gelişmiş oturum açma deneyimi <!--User Story 1132123-->
+
+Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum açma deneyimini geliştirecek bir değişikliği önümüzdeki birkaç ay içinde piyasaya süreceğiz. Yeni kullanıcı deneyimi, Azure AD bu değişikliği gerçekleştirdiğinde Şirket Portalına yönelik tüm platformlarda görünecektir. Ayrıca, kullanıcılar artık tek kullanımlık bir kod ile başka bir cihazdan Şirket Portalında oturum açabilir. Bu, özellikle kullanıcıların kimlik bilgileri olmadan oturum açması gerektiğinde faydalıdır.  
+
+Aşağıda önceki oturum açma deneyimini, kimlik bilgileriyle yeni oturum açma deneyimini ve yeni başka bir cihazdan oturum açma deneyimini görebilirsiniz.
+
+__Önceki oturum açma deneyimi__
+
+![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Oturum aç düğmesine dokunduktan sonra, kullanıcı, e-posta adresi ve parolasının sorulduğu kimlik bilgilerini bu sayfaya girer ve ayrıca parola hatalarının giderilmesi için kendisine yollar önerilir.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Parolasını girdikten sonra, Şirket Portalı uygulaması oturum açar ve bu yükleme çubuğuyla gösterilir.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Yeni oturum açma deneyimi__
+
+![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![Kullanıcı aynı ekranda hem e-posta adresini hem de parolasını girmek yerine yalnızca kendi e-posta adresini girer.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![E-posta adresi kabul edildikten sonra kullanıcıdan parolası istenir.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![Kimlik doğrulama işleminden sonra, Şirket Portalı uygulaması oturum açar ve bunu bir yükleme çubuğuyla belirtir.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__Başka bir cihazdan oturum açarken yeni oturum açma deneyimi__
+
+![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+__Başka bir cihazdan oturum aç__ bağlantısına dokunun.
+
+![İş bilgisayarınızdan benzersiz bir geçiş kodu ile aka.ms/devicelogin sayfasına gidip oturum açmak için bu kodu kullanmaya ilişkin yönergeler sağlanır.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Bir tarayıcı başlatın ve [https://aka.ms/devicelogin](https://aka.ms/devicelogin) adresine gidin.
+
+![Kullanıcının Şirket Portalı uygulamasındaki tarayıcı yerine iş bilgisayarındaki tarayıcısının bir resmi. Görüntülenen "Cihaz oturum açma" sayfası kullanıcıdan Şirket Portalı uygulamasından aldığı kodu girmesini ister.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Şirket Portalı uygulamasında gördüğünüz kodu girin. __Devam et__’i seçerseniz, akıllı kart gibi şirketiniz tarafından desteklenen herhangi bir yöntemi kullanarak kimlik doğrulaması yapmanız mümkün olacaktır.
+
+![Kullanıcı kendi benzersiz kodunu alana girmiştir ve "Cihaz oturum açma" sitesi Intune Şirket Portalı’nın oturum açmak üzere yetkilendirilecek doğru uygulama olup olmadığının doğrulanmasını istemiştir.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Bir onay sayfası, kullanıcının kendi cihazında Şirket Portalı uygulamasında oturum açtığını ve bu sayfanın artık kapatılabileceğini belirtir.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+Şirket Portalı uygulaması oturum açmaya başlar.
+
+![Kimlik doğrulama işleminden sonra, Şirket Portalı uygulaması oturum açar ve bunu bir yükleme çubuğuyla belirtir.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## <a name="week-of-june-12-2017"></a>12 Haziran 2017 haftası
 
@@ -180,51 +228,12 @@ Bunlar, kullanıcı arabirimimizi güncelleştirerek kullanıcı deneyimini geli
 > [!Note]
 > Aşağıdaki görüntülerin önizleme sürümüne ait olabileceğini ve duyurulan sürümün farklı olabileceğini lütfen unutmayın.
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Tüm platformlar için Şirket Portalı uygulamalarında gelişmiş oturum açma deneyimi <!--User Story 1132123-->
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Şirket Portalı web sitesine kullanıcı arabirimi güncelleştirmeleri <!--1313244 part 2-->
 
-Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum açma deneyimini geliştirecek bir değişikliği önümüzdeki birkaç ay içinde piyasaya süreceğiz. Yeni kullanıcı deneyimi, Azure AD bu değişikliği gerçekleştirdiğinde Şirket Portalına yönelik tüm platformlarda görünecektir. Ayrıca, kullanıcılar artık tek kullanımlık bir kod ile başka bir cihazdan Şirket Portalında oturum açabilir. Bu, özellikle kullanıcıların kimlik bilgileri olmadan oturum açması gerektiğinde faydalıdır.  
+__Öne Çıkan Uygulama Güncelleştirmeleri__ Kullanıcıların öne çıkarmak istediğiniz uygulamalara gözatabileceği siteye ayrı bir sayfa ekledik ve giriş sayfasındaki Öne Çıkan sekmesinde bazı kullanıcı arabirimi değişiklikleri yaptık.
 
-Aşağıda önceki oturum açma deneyimini, kimlik bilgileriyle yeni oturum açma deneyimini ve yeni başka bir cihazdan oturum açma deneyimini görebilirsiniz.
+![Uygulamaları gösteren renkli kutucuklar. Bunlar, her uygulamanın altında yer alan büyük, renkli karelerdir ve bu renkler uygulama logosunda bulunan ana renge göre belirlenir. “Öne Çıkan Uygulamalar” bölümü, Şirket Portalı uygulamasının üst kısmında görünür.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__Önceki oturum açma deneyimi__
-
-![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![Oturum aç düğmesine dokunduktan sonra, kullanıcı, e-posta adresi ve parolasının sorulduğu kimlik bilgilerini bu sayfaya girer ve ayrıca parola hatalarının giderilmesi için kendisine yollar önerilir.](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![Parolasını girdikten sonra, Şirket Portalı uygulaması oturum açar ve bu yükleme çubuğuyla gösterilir.](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__Yeni oturum açma deneyimi__
-
-![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![Kullanıcı aynı ekranda hem e-posta adresini hem de parolasını girmek yerine yalnızca kendi e-posta adresini girer.](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![E-posta adresi kabul edildikten sonra kullanıcıdan parolası istenir.](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![Kimlik doğrulama işleminden sonra, Şirket Portalı uygulaması oturum açar ve bunu bir yükleme çubuğuyla belirtir.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__Başka bir cihazdan oturum açarken yeni oturum açma deneyimi__
-
-![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-__Başka bir cihazdan oturum aç__ bağlantısına dokunun.
-
-![İş bilgisayarınızdan benzersiz bir geçiş kodu ile aka.ms/devicelogin sayfasına gidip oturum açmak için bu kodu kullanmaya ilişkin yönergeler sağlanır.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-Bir tarayıcı başlatın ve [https://aka.ms/devicelogin](https://aka.ms/devicelogin) adresine gidin.
-
-![Kullanıcının Şirket Portalı uygulamasındaki tarayıcı yerine iş bilgisayarındaki tarayıcısının bir resmi. Görüntülenen "Cihaz oturum açma" sayfası kullanıcıdan Şirket Portalı uygulamasından aldığı kodu girmesini ister.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-Şirket Portalı uygulamasında gördüğünüz kodu girin. __Devam et__’i seçerseniz, akıllı kart gibi şirketiniz tarafından desteklenen herhangi bir yöntemi kullanarak kimlik doğrulaması yapmanız mümkün olacaktır.
-
-![Kullanıcı kendi benzersiz kodunu alana girmiştir ve "Cihaz oturum açma" sitesi Intune Şirket Portalı’nın oturum açmak üzere yetkilendirilecek doğru uygulama olup olmadığının doğrulanmasını istemiştir.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![Bir onay sayfası, kullanıcının kendi cihazında Şirket Portalı uygulamasında oturum açtığını ve bu sayfanın artık kapatılabileceğini belirtir.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-Şirket Portalı uygulaması oturum açmaya başlar.
-
-![Kimlik doğrulama işleminden sonra, Şirket Portalı uygulaması oturum açar ve bunu bir yükleme çubuğuyla belirtir.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 ### <a name="see-also"></a>Ayrıca bkz.
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform yol haritası](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7da261fcb59b8ac90ea412155d093dd09bf41d46
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 sürüm yükseltmelerini yapılandırma
 
@@ -41,10 +41,10 @@ Aşağıdaki yükseltme yolları desteklenmektedir:
 
 
 ## <a name="before-you-start"></a>Başlamadan önce
-Cihazları en son sürüme yükseltmeye başlamadan önce aşağıdakilerden birine sahip olmanız gerekir:
+Cihazları en son sürüme yükseltmeye başlamadan önce şunlardan birine sahip olmanız gerekir:
 
-- İlkeyle hedeflediğiniz tüm cihazlara Windows’un yeni sürümünü yüklemek için geçerli bir ürün anahtarı (Windows 10 Masaüstü sürümleri için). Çoklu Etkinleştirme Anahtarları (MAK) veya Anahtar Yönetimi Sunucusu (KMS) anahtarlarından herhangi birini kullanabilirsiniz. veya İlkeyle hedeflediğiniz tüm cihazlara Windows’un yeni sürümünü yüklemek için gerekli lisans bilgilerini içeren bir Microsoft lisans dosyası (Windows 10 Mobile ve Windows 10 Holographic sürümleri için).
-- Hedeflediğiniz Windows 10 cihazları Microsoft Intune’a kayıtlı olmalıdır. Intune bilgisayar istemcisi yazılımını çalıştıran bilgisayarlar ile sürüm yükseltme ilkesini kullanamazsınız.
+- İlkeyle hedeflediğiniz tüm cihazlara Windows’un yeni sürümünü yüklemek için geçerli bir ürün anahtarı (Windows 10 Masaüstü sürümleri için). İlkeyle hedeflediğiniz tüm cihazlara Windows’un yeni sürümünü yüklemek için Çoklu Etkinleştirme Anahtarı (MAK) veya Anahtar Yönetimi Sunucusu (KMS) ya da gerekli lisans bilgilerini içeren bir Microsoft lisans dosyası kullanabilirsiniz (Windows 10 Mobile ve Windows 10 Holographic sürümleri için).
+- İlkeyi atadığınız Windows 10 cihazlar Microsoft Intune’a kayıtlı olmalıdır. Intune bilgisayar istemcisi yazılımını çalıştıran bilgisayarlar ile sürüm yükseltme ilkesini kullanamazsınız.
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Cihaz kısıtlama ayarlarını içeren bir cihaz profili oluşturma
 
@@ -56,7 +56,7 @@ Cihazları en son sürüme yükseltmeye başlamadan önce aşağıdakilerden bir
 4. **Profil Oluştur** dikey penceresinde, sürüm yükseltme profili için **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden **Windows 10 ve üzeri**’ni seçin.
 6. **Profil türü** açılan listesinde **Sürüm yükseltme**’yi seçin.
-7. **Sürüm Yükseltme** dikey penceresinde aşağıdakileri yapılandırın:
+7. **Sürüm Yükseltme** dikey penceresinde aşağıdaki ayarları yapılandırın:
     - **Yükseltmenin uygulanacağı sürüm** - Açılan listeden, cihazlarda yükseltmek istediğiniz Windows 10 sürümünü seçin.
     - **Yükseltilecek sürüm** - Açılan listede, hedeflenen cihazları yükseltmek istediğiniz Windows 10 Masaüstü, Windows 10 Holographic veya Windows 10 Mobile sürümünü seçin.
     - **Ürün Anahtarı** - Microsoft’tan aldığınız ve tüm hedeflenen Windows 10 Masaüstü cihazlarını yükseltmek için kullanılabilen ürün anahtarını belirtin.<br>.Ürün anahtarı içeren bir ilke oluşturduğunuzda, ürün anahtarını daha sonra düzenleyemezsiniz. Bunun nedeni, anahtarın güvenlik nedeniyle engellenmesidir. Ürün anahtarını değiştirmek için tüm anahtarı yeniden girmeniz gerekir.
@@ -64,5 +64,11 @@ Cihazları en son sürüme yükseltmeye başlamadan önce aşağıdakilerden bir
 8. Bitirdiğinizde, **Profil Oluştur** dikey penceresine gidin ve **Oluştur**’a basın.
 
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
 Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).
+
+>[!NOTE]
+>İlke atamasını daha sonra kaldırırsanız cihazdaki Windows sürümü geri alınmaz ve normal bir şekilde çalışmaya devam eder.
 

@@ -263,7 +263,7 @@
 ### [Windows uygulamalarını edinme](end-user-apps-windows.md)
 
 # İzleme ve sorun giderme
-## [Yardım masası işleç rolünü kullanma](help-desk-operators.md)
+## [Kullanıcıların sorunları gidermesine yardımcı olma](help-desk-operators.md)
 ## [Intune Veri Ambarını kullanma](reports-nav-create-intune-reports.md)
 ### [Veri Ambarına Power BI ile bağlanma](reports-proc-get-a-link-powerbi.md)
 

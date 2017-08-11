@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3819042d3b6e7236506c288156f98a0e55c15ea
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 ve üzeri cihaz kısıtlama ayarları
 
@@ -43,14 +43,9 @@ ms.lasthandoff: 07/01/2017
 -   **Telefon sıfırlama** - Kullanıcının cihazını fabrika ayarlarına sıfırlayıp sıfırlayamayacağını denetler.
 -   **USB bağlantısı (yalnızca mobil)** - Cihazların USB bağlantısı aracılığıyla harici depolama cihazlarına erişip erişemeyeceğini denetler.
 -   **Hırsızlık Önleme modu (yalnızca mobil)** - Windows Hırsızlık Önleme modunun etkin olup olmadığını yapılandırın.
--   **İşlem merkezi bildirimleri (yalnızca mobil)**   - Cihaz kilit ekranında işlem merkezi bildirimlerini etkinleştirin veya devre dışı bırakın (yalnızca Windows 10 Mobile).
 -   **Cortana** - Cortana sesli yardımcısını etkinleştirin veya devre dışı bırakın.
 -   **Ses kaydı (yalnızca mobil)** - Cihaz ses kaydedicisinin kullanılmasına izin verin veya bunu engelleyin.
--   **Güç ve uyku ayarlarındaki değişiklikler (yalnızca masaüstü)** - Son kullanıcının cihazın güç ve uyku ayarlarını değiştirmesini engeller.
--   **Bölge ayarlarındaki değişiklikler (yalnızca masaüstü)** - Son kullanıcının cihazın bölge ayarlarını değiştirmesini engeller.
--   **Dil ayarlarındaki değişiklikler (yalnızca masaüstü)** - Kullanıcının cihazın dil ayarlarını değiştirmesini engeller.
--   **Sistem Saatindeki değişiklikler** - Son kullanıcının cihazın tarih ve saatini değiştirmesini engeller.
--   **Cihaz adındaki değişiklikler** - Son kullanıcının cihaz adını değiştirmesini engeller.
+-   **Cihaz adındaki değişiklikler** - Son kullanıcının cihaz adını değiştirmesini engeller (yalnızca Windows 10 Mobile)
 -   **Sağlama paketleri ekleme** - Sağlama paketleri yükleyen çalışma zamanı yapılandırma aracısını engeller.
 -   **Sağlama paketlerini kaldırma** - Sağlama paketlerini kaldıran çalışma zamanı yapılandırma aracısını engeller.
 -   **Cihaz bulma** - Bir cihazın diğer cihazlar tarafından bulunmasını engelleyin.
@@ -67,7 +62,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
     -   **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** - Ekran kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.
     -   **Parola geçerlilik süresi (gün)** - Cihaz parolasının ne kadar süre sonra değiştirilmesi gerektiğini belirtir.
     -   **Önceki parolaların yeniden kullanılmasını engelle** - Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.
-    -   **Cihaz boşta kalma durumundan çıktığında parola isteme** - Boşta durumundaki bir cihazın kilidini açmak için kullanıcının parola girmesi gerektiğini belirtir (yalnızca Windows 10 Mobile).
+    -   **Cihaz boşta kalma durumundan çıktığında parola isteme (yalnızca mobil)** - Cihazın kilidini açmak için kullanıcının parola girmesi gerektiğini belirtir (yalnızca Windows 10 Mobile).
     -   **Basit parolalar** – 1111 ve 1234 gibi basit parolalar kullanılmasına izin verir. Bu ayar, Windows resimli parolalarının kullanımına izin verir veya bunu engeller.
 -   **Şifreleme** - Hedeflenen cihazlarda şifrelemeyi etkinleştirin (yalnızca Windows 10 Mobile).
 
@@ -87,7 +82,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 -   **İşlem merkezi bildirimleri (yalnızca mobil)** - Cihaz kilitleme ekranında İşlem Merkezi bildiriminin görünmesine izin verir (yalnızca Windows 10 Mobile).
 -   **Kilit ekranı resmi URL'si (yalnızca masaüstü)** - Windows kilit ekranı duvar kağıdı olarak kullanılacak PNG, JPG veya JPEG biçiminde bir resim URL'si belirtin. Kullanıcıların bunu değiştirmesi mümkün olmayacaktır.
 -   **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)** – Kullanıcıların süreyi yapılandırmasına izin verir 
--   **Kilitleme ekranında Cortana (yalnızca masaüstü)**  – Cihaz kilitleme ekranındayken kullanıcının Cortana ile etkileşim kurmasına izin vermez (yalnızca Windows 10 masaüstü).
+-   **Kilitleme ekranında Cortana (yalnızca masaüstü) ** – Cihaz kilitleme ekranındayken kullanıcının Cortana ile etkileşim kurmasına izin vermez (yalnızca Windows 10 masaüstü).
 -   **Kilitli ekranda bildirimler** – Cihaz kilitleme ekranında uyarı iletileri gösterilmesini engelleyin.
 -   **Ekran zaman aşımı (yalnızca mobil)** - Ekranın kapanarak kilitlenmesi için geçecek süreyi saniye olarak belirtir.
 
@@ -105,14 +100,14 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 -   **Uygulama verilerini sistem birimine yükle** - Uygulamaların cihazın sistem birimine veri depolamasını engeller.
 -   **Uygulamaları sistem sürücüsüne yükle** - Uygulamaların cihazın sistem sürücüsüne veri depolamasını engeller.
 -   **Oyun DVR (yalnızca masaüstü)** - Oyun kaydetme ve yayınlamaya izin verilip verilmediğini yapılandırır.
+-   **Yalnızca mağazadan yüklenebilen uygulamalar** - Kullanıcıların uygulama mağazası dışındaki yerlerden uygulama yükleyip yükleyemeyeceğini yapılandırır.
 
 
 
 ## <a name="edge-browser"></a>Edge Tarayıcısı
 -   **Microsoft Edge tarayıcısı (yalnızca mobil)** - Cihazda Microsoft Edge web tarayıcısının kullanılmasına izin verin.
 -   **Adres çubuğu aşağı açılan listesi (yalnızca masaüstü)** – Yazdığınızda Edge'in açılan bir listede bir dizi öneri göstermesini durdurmak için bunu kullanın. Edge ile Microsoft hizmetleri arasında ağ bant genişliği kullanımını en aza indirmeye yardımcı olur.
--   **Microsoft tarayıcıları arasında sık kullanılanları eşitle (yalnızca masaüstü)**  – Windows'un Internet Explorer ve Edge arasında sık kullanılanları eşitlemesine izin verir.
--   **SmartScreen** - Sahte web sitelerini engelleyen SmartScreen’i etkinleştirir veya devre dışı bırakır.
+-   **Microsoft tarayıcıları arasında sık kullanılanları eşitle (yalnızca masaüstü) ** – Windows'un Internet Explorer ve Edge arasında sık kullanılanları eşitlemesine izin verir.
 -   **Kullanıcıyı-izleme üst bilgileri gönderme** - Edge tarayıcısını, kullanıcıların ziyaret ettiği web sitelerine izleme (DNT) üst bilgileri gönderecek şekilde yapılandırır.
 -   **Tanılama bilgileri** - Tarayıcının İnternet tanımlama bilgilerini cihaza kaydetmesine olanak tanır.
 -   **JavaScript** - Edge tarayıcısında JavaScript gibi betiklerin çalıştırılmasına izin verir.
@@ -130,13 +125,16 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 -   **Ana sayfalar** - Edge tarayıcısında giriş sayfası olarak kullanmak istediğiniz sitelerin bir listesini ekler (yalnızca masaüstü).
 -   **Başlangıç sayfasındaki değişiklikler** – Kullanıcıların Edge açıldığında görüntülenen başlangıç sayfalarını değiştirmesine izin verir. Edge başladığında açılan sayfayı veya sayfa listesini oluşturmak için Giriş sayfaları ayarını kullanın.
 -   **about:flags erişimini engelle** - Son kullanıcının Edge’deki geliştirici ayarları ve deneysel ayarlar içeren about:flags sayfasına erişimini engelleyin.
--   **Akıllı ekran komut istemini geçersiz kılma** - Son kullanıcının olası kötü amaçlı web siteleri hakkındaki SmartScreen filtre uyarılarını atlamasına izin verin.
--   **Dosyalar için akıllı ekran komut istemini geçersiz kılma** - Son kullanıcının olası kötü amaçlı dosyaları indirme hakkındaki SmartScreen filtre uyarılarını atlamasına izin verin.
 -   **WebRtc localhost IP adresi** - Web RTC protokolü kullanarak telefon araması yaparken kullanıcıların localhost IP adresinin görüntülenmesini engelleyin.
 -   **Varsayılan arama motoru** - Kullanılacak varsayılan arama motorunu belirtin. Son kullanıcılar bu değeri istediği zaman değiştirebilir.
 -   **Çıkışta tarama verilerini temizle** – Kullanıcı Edge'den çıktığında geçmişi ve tarama verilerini temizler.
 -   **Canlı Kutucuk verisi toplama** – Kullanıcı, Edge'den başlatma menüsüne bir site sabitlediğinde Windows'un Canlı Kutucuk’tan bilgi toplamasını durdurur.
 
+## <a name="edge-browser-smartscreen"></a>Edge Tarayıcısı SmartScreen
+
+-   **SmartScreen** - Sahte web sitelerini engelleyen SmartScreen’i etkinleştirir veya devre dışı bırakır.
+-   **Akıllı ekran komut istemini geçersiz kılma** - Son kullanıcının olası kötü amaçlı web siteleri hakkındaki SmartScreen filtre uyarılarını atlamasına izin verin.
+-   **Dosyalar için akıllı ekran komut istemini geçersiz kılma** - Son kullanıcının olası kötü amaçlı dosyaları indirme hakkındaki SmartScreen filtre uyarılarını atlamasına izin verin.
 
 ## <a name="search"></a>Ara
 - **Güvenli Arama (yalnızca mobil)** - Cortana’nın yetişkinlere yönelik içeriği arama sonuçlarında nasıl filtreleyeceğini denetleyin. **Katı**, **Orta** değerlerini seçebilir ya da son kullanıcının kendi ayarlarını seçmesine izin verebilirsiniz.
@@ -156,7 +154,6 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 -   **Bluetooth bulunabilirliği** - Cihazın diğer Bluetooth özellikli cihazlar tarafından bulunabilmesine olanak sağlar.
 -   **Bluetooth önceden eşleştirme** – Belirli Bluetooth cihazlarını bir konak cihazla otomatik olarak eşleşecek şekilde yapılandırmanıza izin verir.
 -   **Bluetooth reklamları** - Cihazın Bluetooth üzerinden reklamlar almasına olanak tanır.
--   **Cihaz Bluetooth adı** – Bir cihazın Bluetooth adını belirtin. Bir ad belirtmezseniz varsayılan radyo adı kullanılır.
 -   **Bağlı cihazlar hizmeti** – Başka Bluetooth cihazlar bulmayı ve bunlara bağlanmayı etkinleştiren bağlı cihazlar hizmetine izin verip vermeyeceğinizi seçmenizi sağlar.
 -   **NFC** - Kullanıcının cihazda Yakın Alan İletişimi özelliklerini etkinleştirmesine ve yapılandırmasına olanak tanır.
 -   **Wi-Fi** - Kullanıcının cihazda Wi-Fi’yi etkinleştirmesine ve yapılandırmasına olanak tanır (yalnızca Windows 10 Mobile).
@@ -170,14 +167,19 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
 -   **Ayarlar uygulaması** - Windows ayarlar uygulamasına erişimi engelleyin.
     -   **Sistem** - Ayarlar uygulamasının sistem alanına erişimini engeller.
+        -   **Güç ve uyku ayarlarındaki değişiklikler (yalnızca masaüstü)** - Son kullanıcının cihazın güç ve uyku ayarlarını değiştirmesini engeller.
     -   **Cihazlar** - Ayarlar uygulamasının cihazlar alanına erişimini engeller.
     -   **Ağ ve İnternet** - Ayarlar uygulamasının ağ ve İnternet alanına erişimini engeller.
     -   **Kişiselleştirme** - Ayarlar uygulamasının kişiselleştirme alanına erişimini engeller.
     -   **Hesaplar** - Ayarlar uygulamasının erişim kolaylığı alanına erişimini engeller.
     -   **Saat ve Dil** - Ayarlar uygulamasının saat ve dil alanına erişimini engeller.
+        -   **Sistem Saatindeki değişiklikler** - Son kullanıcının cihazın tarih ve saatini değiştirmesini engeller.
+        -   **Bölge ayarlarındaki değişiklikler (yalnızca masaüstü)** - Son kullanıcının cihazın bölge ayarlarını değiştirmesini engeller.
+        -   **Dil ayarlarındaki değişiklikler (yalnızca masaüstü)** - Kullanıcının cihazın dil ayarlarını değiştirmesini engeller.
+    -   **Oyun** - Ayarlar kısmında Oyun uygulamasına erişimini engeller.
     -   **Erişim Kolaylığı** - Ayarlar uygulamasının erişim kolaylığı alanına erişimini engeller.
     -   **Gizlilik** - Ayarlar uygulamasının gizlilik alanına erişimini engeller.
-    -   **Güvenlik Güncelleştirmesi** - Ayarlar uygulamasının güncelleştirmeler ve güvenlik alanına erişimini engeller.
+    -   **Güncelleştirme ve Güvenlik** - Ayarlar uygulamasının güncelleştirmeler ve güvenlik alanına erişimini engeller.
 
 ## <a name="defender"></a>Defender
 
@@ -237,17 +239,17 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
 ## <a name="windows-spotlight"></a>Windows Spot
 
 
-- Windows Spot – Windows 10 cihazlarda tüm Windows Spot işlevselliğini engellemek için bu ayarı kullanın. Bu ayarı engellerseniz aşağıdaki ayarlar kullanılamaz.
+- **Windows Spot** – Windows 10 cihazlarda tüm Windows Spot işlevselliğini engellemek için bu ayarı kullanın. Bu ayarı engellerseniz aşağıdaki ayarlar kullanılamaz.
     - **Kilitleme ekranında Windows Spot** – Windows Spot’un cihaz kilitleme ekranında bilgi görüntülemesini durdurun.
     - **Windows Spot’ta üçüncü taraf önerileri** – Windows Spot’un Microsoft tarafından yayımlanmayan içeriği önermesini durdurun.
-    - **Windows İpuçları** - Windows’da görüntülenen açılır ipuçlarını engellemenize izin verir.
     - **Tüketici Özellikleri** - Başlat menüsü önerileri ve üyelik bildirimleri gibi özellikleri engellemenizi sağlar.
+    - **Windows İpuçları** - Windows’da görüntülenen açılır ipuçlarını engellemenize izin verir.
     - **İşlem merkezinde Windows Spot** – Yeni uygulama veya güvenlik içeriği gibi Windows Spot önerilerinin Windows İşlem Merkezi'nde görünmesini engelleyin.
     - **Windows Spot kişiselleştirme** – Windows Spot’un sonuçları bir cihazın kullanımına göre kişiselleştirmesini durdurun.
     - **Windows karşılama deneyimi** – Kullanıcıya yeni veya güncelleştirilmiş özellikler hakkında bilgi gösteren Windows karşılama deneyimini engelleyin.
 
 
-## <a name="display"></a>Görüntüle
+## <a name="projection"></a>Projeksiyon
 
 - **Kablosuz ekran alıcılarından kullanıcı girişi** -Kablosuz ekran alıcılarından kullanıcı girişini engeller.
 - **Bu bilgisayara yansıtma** - Diğer cihazların yansıtma için bilgisayarı bulmasını engeller.

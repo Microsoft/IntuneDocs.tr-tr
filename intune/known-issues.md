@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -37,7 +37,7 @@ Intune için yeni bir özellik talep etmek istiyorsanız, [Uservoice](https://mi
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Geçiş sırasında Intune tarafından oluşturulan gruplar diğer Microsoft ürünlerinin işlevlerini etkileyebilir
 
-Klasik Intune'dan Azure’a geçiş yaptığınızda **Tüm Kullanıcılar - b0b08746-4dbe-4a37-9adf-9e7652c0b421** adlı yeni bir grup görebilirsiniz. Bu grupta yalnızca Intune lisanslı kullanıcılar değil Azure Active Directory'niz içindeki tüm kullanıcılar bulunur. Mevcut kullanıcılardan bazılarının veya yeni kullanıcıların herhangi bir gruba üye olmamasını bekliyorsanız bu kullanım diğer Microsoft ürünlerinde sorunlara neden olabilir.
+Klasik Intune’dan Azure portalına geçiş yaptığınızda **Tüm Kullanıcılar - b0b08746-4dbe-4a37-9adf-9e7652c0b421** adlı yeni bir grup görebilirsiniz. Bu grupta yalnızca Intune lisanslı kullanıcılar değil Azure Active Directory'niz içindeki tüm kullanıcılar bulunur. Mevcut kullanıcılardan bazılarının veya yeni kullanıcıların herhangi bir gruba üye olmamasını bekliyorsanız bu kullanım diğer Microsoft ürünlerinde sorunlara neden olabilir.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Seçilen özellikler için gerekli ikincil geçiş
 
@@ -45,18 +45,18 @@ Ocak 2017’den önce oluşturulan Intune hesaplarının, bu özelliklerin Azure
 
 - Şirket Cihaz Kayıt profilleri
 - Apple Cihaz Kaydı Programı
-- iOS seri numarası grubuna göre şirketin önceden kayıtlı cihazları
+- iOS seri numarası grubuna göre ön kayıtlı şirket cihazları
 - Cihaz Kayıt Yöneticileri
 - Apple Volume Purchase Program
 
 Bu özellikler hem klasik Silverlight hem Azure konsolları tarafından yönetilemediğinden, geçiş işlemi:
 - Bunları klasik konsolda devre dışı bırakır
-- Azure konsolunda etkinleştirir.  
+- Azure konsolunda etkinleştirir  
 
 Artık Intune özelliklerini Azure portalında yönetiyorsanız aşağıdaki hususları göz önünde bulundurun:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Apple DEP’te varsayılan Kurumsal Cihaz Kaydı profillerini kaldırır
-Azure Portalı, Apple Aygıt Kayıt Programı (DEP) cihazları için varsayılan bir Şirket Cihaz Kaydı profilini desteklemez. Klasik Silverlight Intune konsolunda sağlanan bu işlevsellik, profillerin yanlışlıkla atanmasını önlemek için kullanımdan kaldırılmıştır. Azure Portalı'nda DEP seri numaraları eşitlenirken, Şirket Cihaz Kaydı profili atanmaz. Cihaz kullanılmadan önce bir kayıt profili atanmalıdır.
+Azure portalı, Apple Aygıt Kayıt Programı (DEP) cihazları için varsayılan bir Şirket Cihaz Kaydı profili desteklemez. Klasik Silverlight Intune konsolunda sağlanan bu işlevsellik, profillerin yanlışlıkla atanmasını önlemek için kullanımdan kaldırılmıştır. Azure portalında DEP seri numaraları eşitlenirken, hiçbir Şirket Cihaz Kaydı profili atanmaz. Cihaz kullanılmadan önce bir kayıt profili atanmalıdır.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP belirtecinin geçiş ile geri yüklenmesi
 
@@ -64,13 +64,12 @@ Intune klasik (Silverlight) portalında Apple Aygıt Kayıt Programı belirtecin
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Geçirilen ilkeler için durum dikey pencereleri çalışmıyor
 
-Azure portalındaki klasik portaldan geçirilen ilkeler için durum bilgilerini görüntüleyemezsiniz. Ancak, bu ilkeler için raporları Klasik portalda görüntülemeye devam edebilirsiniz.
-Geçirilen yapılandırma ilkelerinin durum bilgilerini görüntülemek için bunları Azure portalında yeniden oluşturun.
+Azure portalındaki klasik portaldan geçirilen ilkeler için durum bilgilerini görüntüleyemezsiniz. Ancak, bu ilkelerin raporlarını klasik portalda görüntülemeye devam edebilirsiniz. Geçirilen yapılandırma ilkelerinin durum bilgilerini görüntülemek için bunları Azure portalında yeniden oluşturun.
 
 ## <a name="apps"></a>Uygulamalar
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>iOS toplu satın alınan uygulamaları, yalnızca varsayılan Intune kiracı dilinde bulunuyor
-iOS toplu satın alınan uygulamaları, yalnızca Intune hesabınız ile aynı ülke kodunda görüntülenir ve atanabilir. Intune yalnızca Intune kiracı hesabı ülke kodu ile aynı iTunes bölgesindeki uygulamaları eşitler. Örneğin, yalnızca ABD mağazasında bulunan bir uygulamayı satın alırsanız ancak Intune hesabınız Almanca ise Intune bu uygulamayı göstermez.
+iOS toplu satın alınan uygulamaları, yalnızca Intune hesabınız ile aynı ülke kodunda görüntülenir ve atanabilir. Intune yalnızca Intune kiracı hesabı ülke kodu ile aynı iTunes bölgesindeki uygulamaları eşitler. Örneğin, Intune hesabınız Almanca ise ve yalnızca ABD mağazasında bulunan bir uygulamayı satın alırsanız Intune bu uygulamayı göstermez.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Aynı iOS toplu satın alınan programının birden fazla kopyası karşıya yükleniyor
 Aynı VPP belirteci için **Karşıya Yükle** düğmesine birden çok kez tıklamayın. Bu, yinelenen VPP belirteçlerinin karşıya yüklenmesine ve uygulamaların aynı VPP belirteci için birden çok kez eşitlenmesine neden olur. 
@@ -109,9 +108,9 @@ Daha fazla bilgi için bkz. [Cihaz uyumluluğu nedir?](device-compliance.md)
 
 ## <a name="data-protection"></a>Veri koruma
 
-### <a name="ios-app-protection-policies"></a>iOS Uygulama Koruma İlkeleri
+### <a name="ios-app-protection-policies"></a>iOS uygulama koruma ilkeleri
 
-[iOS için Uygulama Koruma İlkeleri](app-protection-policy-settings-ios.md) tanımlayabilirsiniz. Bu ilkeler, kaydedilmeden ve MAM aracılığıyla yönetilen cihazlarda kullanılabilir. Geçici bir hata yüzünden bu ilkeleri birden çok değil, yalnızca tek ondalık ayırıcısı olan iOS sürümleri için tanımlayabilirsiniz. iOS’un en düşük sürümünü 10.3.1 olarak ayarlamak yerine iOS 10.3 şeklinde ayarlayabilirsiniz. Bu sorun, iOS SDK’sına yakında gelecek olan güncelleştirme ile çözülecektir.
+Yönetilen cihazlardaki kullanıcılar için mevcut olan [iOS için uygulama koruma ilkelerini](app-protection-policy-settings-ios.md), kayıt gerekmeden mobil uygulama yönetimi (MAM) aracılığıyla tanımlayabilirsiniz. Geçici bir hata yüzünden bu ilkeleri birden çok değil, yalnızca tek ondalık ayırıcısı olan iOS sürümleri için tanımlayabilirsiniz. iOS’un en düşük sürümünü 10.3.1 olarak ayarlamak yerine iOS 10.3 şeklinde ayarlayabilirsiniz. Bu sorun, iOS SDK’sına yakında gelecek olan güncelleştirme ile çözülecektir.
 
 
 ## <a name="administration-and-accounts"></a>Yönetim ve hesaplar

@@ -15,17 +15,17 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1c4f6d18fd78f455be8e333bb765080184c908
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="get-started-with-users"></a>Kullanıcılar ile çalışmaya başlama
 
-![Azure'de genel bir kullanıcı](/intune/media/generic-intune-user.png)
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Azure AD, kuruluşunuzun cihaz ve uygulama gibi nesne gruplarını ve ayrıca kullanıcı gruplarını yönetir. Her cihazı ayrı yönetmek zorunda kalmak yerine kullanıcıları veya cihazları gruplayabilirsiniz. Bu, büyük sayıda kullanıcı ve cihaza kolayca uygulama ve ayar atamanıza izin verir.
+Azure Active Directory, kuruluşunuzun cihaz ve uygulama gibi nesne gruplarını ve ayrıca kullanıcı gruplarını yönetir. Her cihazı ayrı yönetmek zorunda kalmak yerine kullanıcıları veya cihazları gruplayabilirsiniz. Bu, büyük sayıda kullanıcı ve cihaza kolayca uygulama ve ayar atamanıza izin verir.
 
 ## <a name="how-do-i-create-a-user"></a>Bir kullanıcı nasıl oluşturulur?
 

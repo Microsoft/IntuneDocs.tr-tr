@@ -6,7 +6,7 @@ keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 01/09/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Kullanıcılarınızın yönetilen Office 365 uygulamalarındaki temel koruma deneyimi
 
@@ -48,15 +48,14 @@ Bu makalede, Intune tarafından yönetilen bir uygulamada kullanıcının deneyi
 
 1. Oturum açma sayfasını açmak için OneDrive İş uygulamasını başlatın.  <br/> ![iOS için OneDrive oturum açma ekranının resmi](./media/onedrive-ios-sign-in.png)
 2. İş hesabı kullanıcı adınızı yazın. İş kimlik bilgilerinizi girmeniz için Office 365 kimlik doğrulaması sayfasına yönlendirilirsiniz. <br/> ![Office 365 oturum açma sayfasının resmi](./media/o365-sign-in-ios.png)
-3. Kimlik bilgileriniz Azure Active Directory tarafından başarıyla doğrulandıktan sonra mobil uygulama yönetimi (MAM) ilkeleri uygulanır ve OneDrive İş uygulamasını yeniden başlatmanız istenir.  <br/>![iOS için yeniden başlatma isteminin resmi](./media/ios-restart-prompt.png)
->[!NOTE]
->Yeniden başlatma gerekli iletisi yalnızca, Intune’da kayıtlı olmayan cihazlarda görüntülenir.
+3. Kimlik bilgileriniz Azure Active Directory tarafından başarıyla doğrulandıktan sonra uygulama koruma ilkeleri uygulanır ve OneDrive İş uygulamasını yeniden başlatmanız istenir.  <br/>![iOS için yeniden başlatma isteminin resmi](./media/ios-restart-prompt.png)    
+  > [!NOTE]
+  > Yeniden başlatma gerekli iletisi yalnızca, Intune’da kayıtlı olmayan cihazlarda görüntülenir.
 
 
-4. OneDrive İş uygulamasını yeniden başlatın. Uygulama, MAM ilkeleri açık olarak başlatılır ve cihaz için bir PIN ayarlamanız istenir (henüz cihaz için bir PIN yapılandırmadıysanız). <br/> ![PIN oluşturma isteminin resmi](./media/pin-prompt-ios.png)
-
->[!NOTE]
->Kullanıcılarınızın çoğu bu bilgi istemini görmez. Yalnızca iOS cihazlarında PIN’i etkinleştirmemiş olan kullanıcılar bu bilgi istemini görür.
+4. OneDrive İş uygulamasını yeniden başlatın. Uygulama, uygulama koruma ilkeleri açık olarak başlatılır ve cihaz için bir PIN ayarlamanız istenir (henüz cihaz için bir PIN yapılandırmadıysanız). <br/> ![PIN oluşturma isteminin resmi](./media/pin-prompt-ios.png)    
+  > [!NOTE]
+  > Kullanıcılarınızın çoğu bu bilgi istemini görmez. Yalnızca iOS cihazlarında PIN’i etkinleştirmemiş olan kullanıcılar bu bilgi istemini görür.
 
 
 5. PIN’i ayarlayıp onayladıktan sonra, OneDrive İş uygulamasına dönün. BT yöneticinizin artık OneDrive’daki iş verilerinizi koruduğuna ilişkin tek seferlik bir bildirim görürsünüz. <br/> ![BT yöneticinizden gelen tek seferlik bildirimin resmi](./media/one-time-notice.png)
@@ -70,9 +69,9 @@ Bu makalede, Intune tarafından yönetilen bir uygulamada kullanıcının deneyi
 
 1. Oturum açma sayfasını açmak için OneDrive İş uygulamasını başlatın.  <br/> ![OneDrive uygulaması hoş geldiniz ekranının resmi](./media/onedrive-android-welcome.png)
 2. İş hesabı kullanıcı adınızı yazın. İş kimlik bilgilerinizi girmeniz için Office 365 kimlik doğrulaması sayfasına yönlendirilirsiniz. <br/> ![Android’de O365 oturum açma işleminin resmi](./media/o365-sign-in-android.png)
-3. Kimlik bilgileriniz Azure AD Active Directory tarafından başarıyla doğrulandıktan sonra, Şirket Portalı uygulaması cihaza henüz yüklenmediyse, uygulamayı yükleme yönergelerini içeren bir ileti görürsünüz. Devam etmek için **Mağazaya git**’e dokunun. <br/> ![Şirket Portalı uygulamasını alma iletisinin resmi](./media/get-company-portal-android.png) <br/>Şirket Portalı uygulaması telefonunuza zaten yüklenmişse, OneDrive İş uygulaması otomatik olarak başlatılır ve son nota atlayabilirsiniz.
->[!IMPORTANT]
->Android’de, Office uygulamalarının MAM ilkesi tarafından yönetilmesini ayarladıktan sonra, son kullanıcının aslında e-postaları veya belgeleri okumak için Şirket Portalı uygulamasını açması veya bu uygulamada oturum açması gerekmese bile, cihaz kullanıcısının iş e-postalarına ve belgelerine erişmek için bu uygulamayı yüklemesi **gerekir**.
+3. Kimlik bilgileriniz Azure AD Active Directory tarafından başarıyla doğrulandıktan sonra, Şirket Portalı uygulaması cihaza henüz yüklenmediyse, uygulamayı yükleme yönergelerini içeren bir ileti görürsünüz. Devam etmek için **Mağazaya git**’e dokunun. <br/> ![Şirket Portalı uygulamasını alma iletisinin resmi](./media/get-company-portal-android.png) <br/>Şirket Portalı uygulaması telefonunuza zaten yüklenmişse, OneDrive İş uygulaması otomatik olarak başlatılır ve son nota atlayabilirsiniz.    
+  > [!IMPORTANT]
+  > Android’de, Office uygulamalarının bir uygulama koruma ilkesi tarafından yönetilmesini ayarladıktan sonra, son kullanıcının aslında e-postaları veya belgeleri okumak için Şirket Portalı uygulamasını açması veya bu uygulamada oturum açması gerekmese bile, iş e-postalarına ve belgelerine erişmek için bu uygulamayı yüklemesi **gerekir**.
 
 4. Şu anda Şirket Portalı uygulamasını indirip yükleyebileceğiniz Google Play mağazasındasınız. Uygulama, verilerinizi güvende tutmaya ve korumaya yardımcı olur. <br/> ![Google Play mağazasındaki uygulamanın resmi](./media/google-play-get-app-android.png)
 5. Uygulama yüklemesini tamamladıktan sonra koşulları kabul etmek için **Kabul Et**’i seçin. OneDrive İş uygulaması otomatik olarak başlatılır.
@@ -118,9 +117,9 @@ Bu makalede, Intune tarafından yönetilen bir uygulamada kullanıcının deneyi
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Uygulama PIN ilkesi neden yalnızca Android cihazlar için yapılandırılır?
 Şifreleme iOS ile Android’de ayrı çalışır.
 
-iOS’ta bir Intune MAM ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada ve işletim sistemi tarafından sağlanan cihaz düzeyinde şifreleme ile şifrelenir. Dolayısıyla, uygulama şifreleme ilkesini açtığınızda otomatik olarak kullanıcının bir PIN belirlemesini ve iş verilerine erişmek için bunu girmesini zorunlu tutmuş olursunuz. Cihazında henüz bir cihaz PIN’i yapılandırmamış olan kullanıcıların cihaz PIN’i oluşturması istenir.
+iOS’ta bir Intune uygulama koruma ilkesiyle ilişkilendirilmiş uygulamalarda veriler, kullanılmadıkları sırada işletim sistemi tarafından sağlanan cihaz düzeyinde şifreleme ile şifrelenir. Dolayısıyla, uygulama şifreleme ilkesini açtığınızda otomatik olarak kullanıcının bir PIN belirlemesini ve iş verilerine erişmek için bunu girmesini zorunlu tutmuş olursunuz. Cihazında henüz bir cihaz PIN’i yapılandırmamış olan kullanıcıların cihaz PIN’i oluşturması istenir.
 
-Android’de bir Intune MAM ilkesiyle ilişkilendirilmiş olan uygulamalarda veriler, dosya G/Ç görevleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolamasındaki içerik her zaman şifrelenir. MDM ile yönetilmeyen cihazlarda, MAM ilkesi cihaz PIN’i gereksinimini zorunlu tutamaz. Kullanıcıların iş verilerine erişmek için PIN kullanmasının gerekli olduğundan emin olmak için, cihaz uygulama PIN ilkesini etkinleştirir.
+Android’de bir Intune uygulama koruma ilkesiyle ilişkilendirilmiş olan uygulamalarda veriler, dosya G/Ç görevleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolamasındaki içerik her zaman şifrelenir. MDM ile yönetilmeyen cihazlarda, uygulama koruma ilkesi cihaz PIN’i gereksinimini zorunlu tutamaz. Kullanıcıların iş verilerine erişmek için PIN kullanmasının gerekli olduğundan emin olmak için, cihaz uygulama PIN ilkesini etkinleştirir.
 
 Kuruluşunuzun gereksinimlerine uygun olması için bu ilke ayarlarını istediğiniz zaman düzenleyebilirsiniz.
 

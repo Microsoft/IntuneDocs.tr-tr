@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 978e32476069183865f7e729de9791e13bc81ebc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,13 @@ Uyumluluk durumu üç farklı yerden izlenebilir:
 
 ![Intune mobil uygulama yönetimi dikey penceresinde Özet kutucuğu](./media/app-protection-user-status-summary.png)
 
--   **Kullanıcılar:** Şirketinizde ilkeyle ilişkilendirilmiş uygulamaları kullanan kullanıcıların toplam sayısı.
+-   **Kullanıcılar**: Şirketinizde, iş bağlamında bir ilkeyle ilişkili uygulama kullanan kullanıcıların toplam sayısı.
 
--   **İLKEYLE YÖNETİLEN**: Uygulamalardan en az birini iş bağlamında kullanmış olan kullanıcıların sayısı.
+-   **İLKEYLE YÖNETİLEN**: Kendisine iş bağlamında bir ilke atanmış bir uygulama kullanan kullanıcı sayısı.
 
--   **İLKE YOK**: İlkeyle ilişkilendirilmiş uygulamaları kullanan ancak ilkenin hedeflediği kullanıcılar arasında yer almayan kullanıcıların sayısı. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
+-   **İLKE YOK**: İş bağlamında hiçbir ilke tarafından hedeflenmeyen bir uygulamayı kullanan kullanıcı sayısı. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
+    > [!NOTE]
+    > Platform başına birden çok ilkeniz varsa bir kullanıcıya atanmış en az bir ilke olduğunda bu kullanıcının ilke ile yönetildiği kabul edilir.
 
 - **Bayrak eklenen kullanıcılar:** Sorun yaşayan kullanıcıların sayısı. Şu anda yalnızca jailbreak uygulanmış cihazlara sahip kullanıcılar, **Bayrak eklenen kullanıcılar** kapsamında raporlanır.
 

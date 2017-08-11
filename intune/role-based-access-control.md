@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
+ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Intune ile rol tabanlı yönetim denetimi (RBAC)
 
@@ -44,7 +44,7 @@ Yeni Intune portalından başlayarak **Azure Active Directory (Azure AD)**, Intu
     > Intune Hizmet Yöneticisi rolü Azure AD'nin koşullu erişim ayarlarını yönetme olanağı sağlamaz.
 
     > [!TIP]
-    > Intune ayrıca, **Kullanıcılar**, **Gruplar** ve **Koşullu erişim** olmak üzere Azure AD RBAC ile denetlenen üç Azure AD uzantısı gösterir. Bunlara ek olarak, **Kullanıcı Hesabı Yöneticisi** yalnızca AAD kullanıcısı/grubu etkinliklerini gerçekleştirir ve Intune'daki tüm etkinlikleri gerçekleştirme izinlerinin tümüne sahip değildir. Daha fazla ayrıntı için bkz. [Azure AD ile RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+    > Intune ayrıca **Kullanıcılar**, **Gruplar**, ve **Koşullu erişim** olmak üzere Azure AD RBAC ile denetlenen üç Azure AD uzantısı gösterir. Bunlara ek olarak, **Kullanıcı Hesabı Yöneticisi** yalnızca AAD kullanıcısı/grubu etkinliklerini gerçekleştirir ve Intune'daki tüm etkinlikleri gerçekleştirme izinlerinin tümüne sahip değildir. Daha fazla ayrıntı için bkz. [Azure AD ile RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ## <a name="roles-created-in-the-intune-classic-console"></a>Intune klasik konsolunda oluşturulan roller
 
@@ -57,9 +57,9 @@ Intune klasik konsolundan Azure'da Intune'a yalnızca "Tüm" izinlere sahip Intu
 
 Aşağıdaki roller Intune'da yerleşiktir ve bunları ek yapılandırma gerekmeden gruplara atayabilirsiniz:
 
-- **Yardım Masası Operatörü**: Kullanıcılar ve cihazlar üzerinde uzaktan görevler gerçekleştirir, kullanıcılara ve cihazlara uygulama veya ilke atayabilir. 
+- **Yardım Masası Operatörü**: Kullanıcılar ve cihazlar üzerinde uzak görevler gerçekleştirir, kullanıcılara ve cihazlara uygulama veya ilke atayabilir.
 - **İlke ve Profil Yöneticisi**: Uyumluluk ilkesini, yapılandırma profillerini, Apple kaydını ve kurumsal cihaz tanımlayıcılarını yönetir.
-- **Salt Okuma Operatörü**: Kullanıcı, cihaz, kayıt, yapılandırma ve uygulama bilgilerini görüntüler, ancak Intune'da değişiklik yapamaz.
+- **Salt Okuma Operatörü**: Kullanıcı, cihaz, kayıt, yapılandırma ve uygulama bilgilerini görüntüler. Intune’da değişiklik yapamaz.
 - **Uygulama Yöneticisi**: Mobil ve yönetilen uygulamaları yönetir ve cihaz bilgilerini okuyabilir.
 
 ### <a name="to-assign-a-built-in-role"></a>Yerleşik bir rol atamak için
@@ -68,9 +68,9 @@ Aşağıdaki roller Intune'da yerleşiktir ve bunları ek yapılandırma gerekme
 
 2. <*Rol adı*> - **Özellikler** dikey penceresinde **Yönet**'i, ardından **Atamalar**'ı seçin.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Yerleşik rolleri silemez ve düzenleyemezsiniz
-    
+
 3. Özel rol dikey penceresinde, **Ata**'yı seçin.
 
 4. **Rol Atamaları** dikey penceresinde, atama için **Ad** ve isteğe bağlı olarak **Açıklama** girin, sonra da aşağıdakileri seçin:
@@ -85,7 +85,7 @@ Aşağıdaki roller Intune'da yerleşiktir ve bunları ek yapılandırma gerekme
 
 ## <a name="custom-roles"></a>Özel roller
 
-Belirli bir işi yapmak için gereken izinleri içeren özel bir rol oluşturabilirsiniz. Örneğin, bir BT departmanı grubu uygulamaları, ilkeleri ve yapılandırma profillerini yönetiyorsa tüm bu izinleri birlikte tek bir özel role ekleyebilirsiniz.
+Belirli bir işi yapmak için gereken izinleri içeren özel bir rol oluşturabilirsiniz. Örneğin bir BT departmanı grubu, uygulamaları, ilkeleri ve yapılandırma profillerini yönetiyorsa tüm bu izinleri tek bir özel role ekleyebilirsiniz.
 
 > [!IMPORTANT]
 > Rolleri oluşturmak, düzenlemek ve atamak için, hesabınızın Azure AD’de aşağıdaki izinlerden birine sahip olması gerekir:
