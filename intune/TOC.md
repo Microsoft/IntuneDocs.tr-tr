@@ -74,6 +74,7 @@
 #### [Kısıtlamalar](enrollment-restrictions-set.md)
 #### [Apple MDM anında iletme sertifikası](apple-mdm-push-certificate-get.md)
 #### [Kurumsal tanımlayıcılar](corporate-identifiers-add.md)
+#### [Çok faktörlü kimlik doğrulaması](multi-factor-authentication.md)
 #### [Cihaz kayıt yöneticisi](device-enrollment-manager-enroll.md)
 #### [Cihazları gruplarla eşleme](device-group-mapping.md)
 ### Windows kaydını ayarlama
@@ -291,7 +292,7 @@
 ## [Intune Grafik API'sini kullanma](intune-graph-apis.md)
 ## [Intune Grafik API’si](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 ## [Intune Veri Ambarı API’si](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [REST istemcisi ile Veri Ambarı API'sinden veri al](reports-proc-data-rest.md)
 ### [Veri Ambarı AP’si uç noktası](reports-api-url.md)
 ### [Veri Ambarı veri modeli](reports-ref-data-model.md)
 #### [Veri varlığı için başvuru](reports-ref-date.md)
@@ -300,6 +301,6 @@
 #### [Cihaz varlıkları için başvuru](reports-ref-devices.md)
 #### [Uygulama varlıkları için başvuru](reports-ref-application.md)
 #### [İlke varlıkları için başvuru](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [Sözlük](intune-glossary.md)
