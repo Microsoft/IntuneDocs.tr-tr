@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9e009e94fb4d9bdb99960e0d238d5471d1f4b50
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android ve Samsung KNOX Standard cihaz kısıtlama ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Cihazları kuruluşunuzda yapılandırmak için bu ayarları bir Android cihaz kısıtlama ilkesiyle birlikte kullanın.
+
+>[!TIP]
+>İstediğiniz ayarlar mevcut değilse cihazlarınızı bir [özel profil](custom-settings-android.md) kullanarak yapılandırabilirsiniz. 
 
 ## <a name="general"></a>Genel
 
@@ -132,3 +135,8 @@ Bilgi noktası ayarları, Samsung KNOX Standard cihazlar için geçerlidir.
     - **Yönetilen uygulamalar ekleme**.
 - **Ekran uyku düğmesi** - Ekranda uykuya geçme ve uyandırma düğmesini etkinleştirir veya devre dışı bırakır.
 - **Ses düğmeleri** - Cihazdaki ses düğmelerinin kullanımını etkinleştirir veya devre dışı bırakır.
+
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Cihaz kısıtlama profilini oluşturmak ve sonra atamak için [Cihaz kısıtlama ayarlarını yapılandırma](device-restrictions-configure.md) makalesindeki yönergeleri kullanarak devam edin.

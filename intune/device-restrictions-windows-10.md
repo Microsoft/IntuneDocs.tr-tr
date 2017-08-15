@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 ve üzeri cihaz kısıtlama ayarları
 
@@ -72,7 +72,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
 ## <a name="privacy"></a>Gizlilik
 
--   **Girişi kişiselleştirme** – Cortana, dikte etme veya Windows Mağazası uygulamaları için bulut tabanlı konuşma hizmeti kullanılmasına izin verme. Bu hizmetlere izin verirseniz Microsoft, hizmeti geliştirmek için sesli veri toplayabilir.
+-   **Girişi kişiselleştirme** – Cortana, dikte veya Microsoft Mağazası uygulamaları için bulut tabanlı konuşma hizmeti kullanılmasına izin vermez. Bu hizmetlere izin verirseniz Microsoft, hizmeti geliştirmek için sesli veri toplayabilir.
 -   **Eşleştirme ve gizlilik kullanıcı onayı istemlerini otomatik kabul et** – Windows'un, uygulama çalıştırırken eşleştirme ve gizlilik onay iletilerini otomatik olarak kabul etmesine izin ver.
 
 
@@ -82,7 +82,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 -   **İşlem merkezi bildirimleri (yalnızca mobil)** - Cihaz kilitleme ekranında İşlem Merkezi bildiriminin görünmesine izin verir (yalnızca Windows 10 Mobile).
 -   **Kilit ekranı resmi URL'si (yalnızca masaüstü)** - Windows kilit ekranı duvar kağıdı olarak kullanılacak PNG, JPG veya JPEG biçiminde bir resim URL'si belirtin. Kullanıcıların bunu değiştirmesi mümkün olmayacaktır.
 -   **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)** – Kullanıcıların süreyi yapılandırmasına izin verir 
--   **Kilitleme ekranında Cortana (yalnızca masaüstü) ** – Cihaz kilitleme ekranındayken kullanıcının Cortana ile etkileşim kurmasına izin vermez (yalnızca Windows 10 masaüstü).
+-   **Kilitleme ekranında Cortana (yalnızca masaüstü)**  – Cihaz kilitleme ekranındayken kullanıcının Cortana ile etkileşim kurmasına izin vermez (yalnızca Windows 10 masaüstü).
 -   **Kilitli ekranda bildirimler** – Cihaz kilitleme ekranında uyarı iletileri gösterilmesini engelleyin.
 -   **Ekran zaman aşımı (yalnızca mobil)** - Ekranın kapanarak kilitlenmesi için geçecek süreyi saniye olarak belirtir.
 
@@ -91,12 +91,12 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 ## <a name="app-store"></a>Uygulama Mağazası
 
 -   **Uygulama mağazası (yalnızca mobil)** - Windows 10 Mobile cihazlarında uygulama mağazasının kullanılmasını etkinleştirin veya engelleyin.
--   **Mağaza uygulamalarını otomatik güncelleştir** -Windows Mağazası'ndan yüklenen uygulamaların otomatik olarak güncelleştirilmesine izin verir.
+-   **Mağaza uygulamalarını otomatik güncelleştir** - Microsoft Mağazası'ndan yüklenen uygulamaların otomatik olarak güncelleştirilmesine izin verir.
 -   **Güvenilir uygulama yüklemesi** - Güvenilir bir sertifikayla imzalanan uygulamaların dışarıdan yüklenmesine izin verir.
 -   **Geliştirici kilidini açma** - Dışarıdan yüklenen uygulamaların son kullanıcı tarafından değiştirilmesine izin verme gibi Windows geliştirici ayarlarına izin verir.
 -   **Paylaşılan kullanıcı uygulaması verileri** - Uygulamaların aynı cihazdaki farklı kullanıcılar arasında veri paylaşmasına izin verir.
 -   **Yalnızca özel mağaza kullan** - Son kullanıcıların yalnızca özel mağazanızdan uygulama indirmesine izin vermek için bu ayarı etkinleştirin.
--   **Mağaza kaynaklı uygulama başlatma** - Cihaza önceden yüklenmiş veya Windows Mağazası'ndan indirilmiş tüm uygulamaları devre dışı bırakmak için kullanılır.
+-   **Mağaza kaynaklı uygulama başlatma** - Cihaza önceden yüklenmiş veya Microsoft Mağazası'ndan indirilmiş tüm uygulamaları devre dışı bırakmak için kullanılır.
 -   **Uygulama verilerini sistem birimine yükle** - Uygulamaların cihazın sistem birimine veri depolamasını engeller.
 -   **Uygulamaları sistem sürücüsüne yükle** - Uygulamaların cihazın sistem sürücüsüne veri depolamasını engeller.
 -   **Oyun DVR (yalnızca masaüstü)** - Oyun kaydetme ve yayınlamaya izin verilip verilmediğini yapılandırır.
@@ -107,7 +107,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 ## <a name="edge-browser"></a>Edge Tarayıcısı
 -   **Microsoft Edge tarayıcısı (yalnızca mobil)** - Cihazda Microsoft Edge web tarayıcısının kullanılmasına izin verin.
 -   **Adres çubuğu aşağı açılan listesi (yalnızca masaüstü)** – Yazdığınızda Edge'in açılan bir listede bir dizi öneri göstermesini durdurmak için bunu kullanın. Edge ile Microsoft hizmetleri arasında ağ bant genişliği kullanımını en aza indirmeye yardımcı olur.
--   **Microsoft tarayıcıları arasında sık kullanılanları eşitle (yalnızca masaüstü) ** – Windows'un Internet Explorer ve Edge arasında sık kullanılanları eşitlemesine izin verir.
+-   **Microsoft tarayıcıları arasında sık kullanılanları eşitle (yalnızca masaüstü)**  – Windows'un Internet Explorer ve Edge arasında sık kullanılanları eşitlemesine izin verir.
 -   **Kullanıcıyı-izleme üst bilgileri gönderme** - Edge tarayıcısını, kullanıcıların ziyaret ettiği web sitelerine izleme (DNT) üst bilgileri gönderecek şekilde yapılandırır.
 -   **Tanılama bilgileri** - Tarayıcının İnternet tanımlama bilgilerini cihaza kaydetmesine olanak tanır.
 -   **JavaScript** - Edge tarayıcısında JavaScript gibi betiklerin çalıştırılmasına izin verir.

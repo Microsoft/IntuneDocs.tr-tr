@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>Intune ile KCG'yi Etkinleştirme
 
@@ -75,14 +75,14 @@ Intune ile şunları kolayca yapabilirsiniz:
 * [Mağaza uygulamalarını yönetilen cihazlara gönderme](apps-deploy.md)
 * Şirket portalı web sitesini kullanarak uygulamaları, yönetilmeyen cihazlara gönderme
 
-Ayrıca, iOS uygulama mağazasından ve İş İçin Windows Mağazası’ndan toplu olarak satın aldığınız uygulamaları Intune ile yönetebilirsiniz. Bu durum, toplu satın alınan uygulamaları izlemeye yönelik yönetim yükünü azaltmanıza yardımcı olabilir.
+Ayrıca, iOS uygulama mağazasından ve İş İçin Microsoft Mağazası’ndan toplu olarak satın aldığınız uygulamaları Intune ile yönetebilirsiniz. Bu durum, toplu satın alınan uygulamaları izlemeye yönelik yönetim yükünü azaltmanıza yardımcı olabilir.
 
 > [!TIP]
 > [Azure AD Connect ile Çoklu Oturum Açma’yı (SSO) yapılandırabilirsiniz](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). SSO ile kullanıcılar, şirkette kullandıkları etki alanı kullanıcı adı ve parolaları ile uygulamalarda oturum açabilir. Ayrıca Azure Active Directory Uygulama Proxy’si ile [şirket içinde barındırılan web uygulamalarına İnternet üzerinden erişim sağlayabilirsiniz](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 -   [iOS cihazları için toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md). [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) ile iOS için birden çok lisans satın alabilirsiniz. Apple web sitesinden bir Apple VPP hesabı ayarlamanız ve Apple VPP belirtecini Intune’a yüklemeniz gerekir. Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz.
 
--   [İş İçin Windows Mağazası’ndan satın alınan uygulamaları yönetme](windows-store-for-business.md). [İş İçin Windows Mağazası](https://www.microsoft.com/business-store), kuruluşunuz için uygulamaları tek tek veya toplu olarak bulabileceğiniz ve satın alabileceğiniz bir yerdir. Mağazayı Intune’a bağlayarak, toplu satın alınan uygulamaları Intune portalından yönetebilirsiniz.
+-   [İş İçin Microsoft Mağazası’ndan satın alınan uygulamaları yönetme](windows-store-for-business.md). [İş İçin Microsoft Mağazası](https://www.microsoft.com/business-store), kuruluşunuz için uygulamaları tek tek veya toplu olarak bulabileceğiniz ve satın alabileceğiniz bir yerdir. Mağazayı Intune’a bağlayarak, toplu satın alınan uygulamaları Intune portalından yönetebilirsiniz.
 
 ## <a name="protect-company-data"></a>Şirket verilerini koruma
 
@@ -105,10 +105,10 @@ Kullanıcılarınızın iOS ve Android cihazları tarafından erişilen şirket 
 
 Bu işlemi yönetilen Windows 10 cihazlarda yapmak için [Windows Bilgi Koruması (WIP) ilkelerini](app-protection-policies-configure-windows-10.md) kullanın. Bu ilkeler, çalışanların deneyimini etkilemeden çalışır. Ağ ortamınız veya diğer uygulamalarınızda değişiklik gerektirmez.
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Kişisel verileri korurken şirket verilerini silme
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Kişisel verileri korurken şirket verilerini silme
 
-Bir cihazın iş için artık gerekli olmadığı, kullanım amacının değiştirildiği veya kaybolduğu durumlarda bu cihazdan şirket uygulamaları ve verilerini kaldırabilirsiniz. Bunu yapmak için Intune’un seçmeli silme ve tam silme özelliklerini kullanabilirsiniz. Kullanıcılarınız, Intune yönetimine kaydettikleri kişisel cihazlarını Intune Şirket Portalı aracılığıyla uzaktan da silebilir.
+Bir cihazın iş için artık gerekli olmadığı, kullanım amacının değiştirildiği veya kaybolduğu durumlarda bu cihazdan şirket uygulamaları ve verilerini kaldırabilirsiniz. Bunu yapmak için Intune'un şirket verilerini ve kaldırma ve fabrika sıfırlaması özelliklerini kullanabilirsiniz. Kullanıcılarınız, Intune yönetimine kaydettikleri kişisel cihazlarını Intune Şirket Portalı aracılığıyla uzaktan da sıfırlayabilir.
 
-[Tam temizleme](devices-wipe.md), cihazı fabrika varsayılan ayarlarına geri yükler ve tüm şirket ve kullanıcı verileriyle ayarlarını kaldırır. [Seçmeli silme](devices-wipe.md#selective-wipe), cihazdan yalnızca şirket verilerini siler ve kullanıcının kişisel verilerine dokunmaz.
+[Fabrika sıfırlaması](devices-wipe.md), cihazı fabrika varsayılan ayarlarına geri yükler, kullanıcı verileri ile ayarlarını kaldırır ve cihazı Intune yönetiminden kaldırır. [Şirket verilerini kaldırma](devices-wipe.md#remove-company-data) işlemi, cihazdan yalnızca şirket verilerini kaldırır ve kullanıcının kişisel verilerine dokunmaz.
 
-Seçmeli silme başlatıldıktan sonra cihaz, yönetimden kaldırmak için anında işlemi başlatır. İşlem tamamlandığında, tüm şirket verileri silinir ve cihaz adı Intune portalından kaldırılır. Böylece cihaz yönetimi yaşam döngüsü sonlanır.
+Cihaz başlatıldıktan hemen sonra sıfırlama işlemine başlar. İşlem tamamlandığında, tüm şirket verileri silinir ve cihaz adı Intune’dan kaldırılır. Böylece cihaz yönetimi yaşam döngüsü sonlanır.
