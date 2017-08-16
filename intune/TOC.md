@@ -291,7 +291,7 @@
 ### [Intune Uygulama SDK’sı Xamarin bileşeni](app-sdk-xamarin.md)
 ## [Intune Grafik API'sini kullanma](intune-graph-apis.md)
 ## [Intune Grafik API’si](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-## [Intune Veri Ambarı API’si](reports-nav-intune-date-warehouse.md)
+## [Intune Veri Ambarı API’si](reports-nav-intune-data-warehouse.md)
 ### [REST istemcisi ile Veri Ambarı API'sinden veri al](reports-proc-data-rest.md)
 ### [Veri Ambarı AP’si uç noktası](reports-api-url.md)
 ### [Veri Ambarı veri modeli](reports-ref-data-model.md)
