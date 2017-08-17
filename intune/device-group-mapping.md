@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="map-device-groups"></a>Cihaz gruplarını eşleme
 
@@ -43,8 +43,8 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>1. Adım - Azure Portal’ın Intune dikey penceresinde cihaz kategorileri oluşturma
 1. Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihazları kaydet**’i seçin.
-3. **Kayıt** dikey penceresinde **Cihaz Kategorileri**’ni seçin.
+3. **Intune** dikey penceresinde **Cihaz Kaydı**'nı seçin.
+3. **Cihaz Kaydı** dikey penceresinde **Cihaz Kategorileri**’ni seçin.
 4. **Cihaz Kategorileri** sayfasında, yeni kategori eklemek için **Oluştur**’u seçin.
 5. Sonraki dikey pencerede, yeni kategori için bir **Ad** ve isteğe bağlı **Açıklama** girin.
 6. İşiniz bittiğinde **Oluştur**’a tıklayın. Yeni oluşturduğunuz kategoriyi kategoriler listesinde görürsünüz.

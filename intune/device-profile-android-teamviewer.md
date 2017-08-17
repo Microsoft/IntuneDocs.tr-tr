@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15a005ae2b84c7bd4f913f892089965c10f3b23e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: bf25ec3fbdec76fb1defb5e4cb12be6dcdf03b0d
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-android-devices"></a>Intune ile yönetilen Android cihazlar için uzaktan yardım sağlama
 
-Intune, Android cihaz çalıştıran kullanıcılarınıza uzaktan yardım etmenizi sağlamak için, ayrı satın alınan [TeamViewer](https://www.teamviewer.com) yazılımını kullanabilir. Ayarlarınızı yapıp kullanmaya başlamak için bu konu başlığındaki bilgileri kullanın.
+Intune, Android cihazı kullanıcılarına uzaktan yardım etmenizi sağlamak için ayrı satın alınan [TeamViewer](https://www.teamviewer.com) yazılımını kullanabilir. Başlamak için bu konu başlığındaki bilgileri kullanın.
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
@@ -31,7 +31,7 @@ Intune, Android cihaz çalıştıran kullanıcılarınıza uzaktan yardım etmen
 
 Azure portalının kullanıcısına bir [Intune rolü](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control) olarak aşağıdaki izinlerin atandığından emin olun:
 - Yöneticinin TeamViewer bağlayıcısı ayarlarını değiştirmesine izin vermek için **Uzaktan Yardımı Güncelleştirme** iznini verin.
-- Yöneticinin yeni uzaktan yardım ayarları oluşturmasına izin vermek için, **Uzak Yardım İste** iznini verin. Bu izne sahip kullanıcılar, herhangi bir kullanıcı için bir oturum başlatmayı isteyebilir; bu, herhangi bir Intune rolü atama kapsamı ile sınırlı değildir. Intune rol atama kapsamları, Uzaktan Yardım isteklerinin başlatılabileceği cihaz veya kullanıcıları sınırlamaz.
+- Yöneticinin yeni uzaktan yardım isteği oluşturmasına izin vermek için **Uzaktan Yardım İsteme** izni verin. **Uzaktan Yardım İsteme** iznine sahip kullanıcılar herhangi bir kullanıcı için bir oturum başlatma isteğinde bulunabilir. Herhangi bir Intune rol atama kapsamı tarafından sınırlanmazlar. Intune rol atama kapsamları, Uzaktan Yardım isteklerinin başlatılabileceği cihaz veya kullanıcıları sınırlamaz.
 
 >[!NOTE]
 >TeamViewer'ı etkinleştirerek TeamViewer for Intune Connector'ın TeamViewer oturumları oluşturmasına, Active Directory verilerini okumasına ve TeamViewer hesap erişim belirtecini kaydetmesine izin vermiş olursunuz.
@@ -67,5 +67,5 @@ TeamViewer penceresinde, Android cihazda, cihazın uzaktan kontrol edilmesi dahi
 
 ## <a name="end-user-notifications"></a>Son kullanıcı bildirimleri
 
-Son kullanıcı, cihazındaki Şirket Portalı uygulaması simgesinde bir bildirim bayrağı ve uygulamayı açtığında da bir bildirim görür. Daha sonra bu uzaktan yardım isteğini kabul edebilir.
+Son kullanıcı, cihazındaki Intune Şirket Portalı uygulaması simgesinde bir bildirim bayrağı ve uygulamayı açtığında da bir bildirim görür. Daha sonra bu uzaktan yardım isteğini kabul edebilir.
 

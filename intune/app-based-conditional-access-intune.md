@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0893d511c73e4154c61063d96e26937ea2825467
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim
 
@@ -34,10 +34,12 @@ Uygulama tabanlı koşullu erişim ve mobil uygulama yönetimi Exchange online v
 Exchange Online'a yalnızca Microsoft Outlook uygulamasının erişmesine izin verdiğinizde, iOS ve Android üzerindeki yerleşik posta uygulamalarını engelleyebilirsiniz. Ayrıca, Intune uygulama koruma ilkelerinin uygulanmadığı uygulamaların SharePoint Online'a erişmesini engelleyebilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
-Bir Uygulama tabanlı koşullu erişim ilkesi oluşturmadan önce aşağıdakilere sahip olmanız gerekir:
+Bir uygulama tabanlı koşullu erişim ilkesi oluşturmadan önce aşağıdakilere sahip olmanız gerekir:
 
-- **Enterprise Mobility + Security veya Azure Active Directory premium aboneliğiniz** olmalıdır ve kullanıcılar EMS veya Azure AD lisansına sahip olmalıdır.
-    - Daha fazla ayrıntı için bkz. [Enterprise Mobility fiyatlandırma sayfası](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma sayfası](https://azure.microsoft.com/pricing/details/active-directory/).
+- **Enterprise Mobility + Security (EMS)** veya bir **Azure Active Directory (AD) Premium aboneliği**
+- Kullanıcıların EMS veya Azure AD lisansına sahip olması gerekir
+
+Daha fazla bilgi için bkz. [Enterprise Mobility fiyatlandırma](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## <a name="supported-apps"></a>Desteklenen uygulamalar
 
@@ -53,14 +55,13 @@ Bir Uygulama tabanlı koşullu erişim ilkesi oluşturmadan önce aşağıdakile
 <br></br>
 - **Microsoft Teams**
 
-    > [!NOTE] 
-    > Uygulama tabanlı koşullu erişim [LOB uygulamalarını destekler](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), ancak bu uygulamaların [Office 365 modern kimlik doğrulaması](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) kullanması gerekir.
+Uygulama tabanlı koşullu erişim [iş kolu (LOB) uygulamalarını da destekler](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), ancak bu uygulamaların [Office 365 modern kimlik doğrulaması](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) kullanması gerekir.
 
 ## <a name="how-app-based-conditional-access-works"></a>Uygulama tabanlı koşullu erişim nasıl çalışır?
 
 Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamış, ardından Outlook uygulamasını kurumsal e-postaya erişirken kullanılabilecek onaylı uygulamalar listesine ekleyen bir koşullu erişim ilkesi eklemiştir.
 
-> [!NOTE] 
+> [!NOTE]
 > Aşağıdaki akış çizelgesi yapısı diğer yönetilen uygulamalar için kullanılabilir.
 
 ![Intune akış çizelgesi ile uygulama tabanlı koşullu erişim](./media/ca-intune-common-ways-3.png)
@@ -69,8 +70,7 @@ Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamı�
 
 2.  Kullanıcı ilk kez kimlik doğrulamaya çalıştığında, aracı bir uygulama yüklemek üzere uygulama mağazasına yönlendirilir. Aracı uygulama, iOS için Microsoft Authenticator ya da Android cihazlar için Microsoft Şirket portalı olabilir.
 
-    > [!NOTE]
-    > Bu senaryoda, kullanıcılar yerel bir e-posta uygulaması kullanmaya çalışırsa, önce uygulama mağazasına yeniden yönlendirilirler ve ardından Outlook uygulamasını yüklemeleri gerekir.
+ Kullanıcılar yerel bir e-posta uygulaması kullanmaya çalışırsa önce uygulama mağazasına yeniden yönlendirilir ve ardından Outlook uygulamasını yüklemeleri gerekir.
 
 3.  Aracı uygulama cihaza yüklenir.
 
@@ -80,7 +80,7 @@ Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamı�
 
 6.  Aracı uygulama, kullanıcı kimlik doğrulama işleminin bir parçası olarak Uygulama İstemci kimliğini Azure AD’ye gönderir ve böylece bunun onaylı ilke listesinde olup olmadığı denetlenebilir.
 
-7.  Azure AD, kullanıcının onaylı ilke listesine dayalı olarak uygulamanın kimliğini doğrulamasına ve kullanmasına olanak sağlar. Uygulama onaylı ilke listesinde değilse, Azure AD uygulamaya erişimi engeller.
+7.  Azure AD, kullanıcının onaylı ilke listesine dayalı olarak uygulamanın kimliğini doğrulamasına ve kullanmasına olanak sağlar. Uygulama listede yoksa Azure AD uygulamaya erişimi engeller.
 
 8.  Outlook uygulaması, Exchange Online ile iletişim başlatmak için Outlook Bulut Hizmeti ile iletişim kurar.
 

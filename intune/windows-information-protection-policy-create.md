@@ -15,23 +15,23 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 1704 sürümden itibaren, Windows 10’da kaydolmasız mobil uygulama yönetimi (MAM) senaryosunda uygulama koruma ilkeleri kullanabilirsiniz.
+Intune 1704 sürümünden itibaren, uygulamaları cihaz kaydı olmaksızın korumak için Windows 10 ile uygulama koruma ilkeleri kullanabilirsiniz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 Bir WIP ilkesi eklerken kullanılan birkaç kavram hakkında konuşalım.
 
-### <a name="list-of-allowed-and-exempt-apps"></a>İzin Verilen ve Muaf uygulamaların listesi
+### <a name="list-of-allowed-and-exempt-apps"></a>İzin verilen ve muaf uygulamaların listesi
 
 -   **İzin verilen uygulamalar:** Bunlar, bu ilkeye bağlı kalması gereken uygulamalardır.
 
@@ -39,17 +39,15 @@ Bir WIP ilkesi eklerken kullanılan birkaç kavram hakkında konuşalım.
 
 ### <a name="types-of-apps"></a>Uygulama türleri
 
--   **Önerilen uygulamalar:** yöneticilerin ilkeye kolayca içe aktarmalarına izin veren (çoğu Microsoft Office) uygulamaların önceden doldurulmuş bir listesi.
+-   **Önerilen uygulamalar:** İlkeye kolayca içe aktarmanıza izin veren (çoğu Microsoft Office) uygulamaların önceden doldurulmuş bir listesi. <!---I really don't know what you mean by "easily import into policy"--->
 
--   **Mağaza uygulamalar:** Yönetici, Windows mağazasındaki tüm uygulamaları ilkeye ekleyebilir.
+-   **Mağaza uygulamaları:** Windows mağazasındaki tüm uygulamaları ilkeye ekleyebilirsiniz.
 
--   **Windows masaüstü uygulamaları:** Yönetici ilkeye geleneksel Windows masaüstü uygulamalarını ekleyebilir (exe, dll vs.)
+-   **Windows masaüstü uygulamaları:** İlkeye tüm geleneksel Windows masaüstü uygulamalarını ekleyebilirsiniz (örneğin .exe, .dll)
 
 ## <a name="pre-requisites"></a>Ön koşullar
 
-Bir WIP uygulama koruma ilkesi oluşturabilmeniz için önce MAM sağlayıcısını yapılandırmanız gerekir.
-
--   [MAM sağlayıcınızı Intune ile yapılandırma](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md) hakkında daha fazla bilgi edinin.
+Bir WIP uygulama koruma ilkesi oluşturabilmeniz için önce MAM sağlayıcısını yapılandırmanız gerekir. [MAM sağlayıcınızı Intune ile yapılandırma](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md) hakkında daha fazla bilgi edinin.
 
 Ayrıca, aşağıdakilere de sahip olmanız gerekir:
 
@@ -58,12 +56,13 @@ Ayrıca, aşağıdakilere de sahip olmanız gerekir:
 
 > [!IMPORTANT]
 > WIP birden çok kimliği desteklemez; aynı anda yalnızca bir yönetilen kimlik olabilir.
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>Bir WIP ilkesi eklemek için
 
-Kuruluşunuzda Intune'u kurduktan sonra [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) aracılığıyla WIP’ye özel bir ilke oluşturabilirsiniz.
+Kuruluşunuzda Intune'u kurduktan sonra [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) aracılığıyla WIP’ye özel bir ilke oluşturabilirsiniz. <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  **Intune mobil uygulama yönetimi panosuna** gidin, **Tüm ayarlar**’ı, ardından **Uygulama ilkesi**’ni seçin.
+1.  **Intune mobil uygulama yönetimi panosuna** gidin, **Tüm ayarlar**, > **Uygulama ilkesi**’ni seçin.
 
 2.  **Uygulama ilkesi** dikey penceresinde, **İlke ekle**’yi seçin, ardından aşağıdaki değerleri girin:
 
@@ -105,9 +104,9 @@ Kuruluşunuzda Intune'u kurduktan sonra [Azure portal](https://docs.microsoft.co
 > [!NOTE]
 > Aynı anda birden fazla Mağaza uygulaması eklemek için, uygulama satırının sonundaki **(…)** menüsüne tıklayabilir, sonra başka uygulamalar eklemeye devam edebilirsiniz. İşiniz bittiğinde **Tamam**’ı seçin.
 
-## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>İzin verilen uygulamalar listenize bir Masaüstü uygulaması ekleme
+## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>İzin verilen uygulamalar listenize bir masaüstü uygulaması ekleme
 
-**Bir Masaüstü uygulaması ekleme**
+**Bir masaüstü uygulaması ekleme**
 
 1.  **Uygulama ilkesi** dikey penceresinden, ilkenizin adını, ardından **İzin verilen uygulamalar**’ı seçin. **İzin verilen uygulamalar** dikey penceresi açılarak size bu uygulama koruma ilkesi için daha önceden listeye eklenmiş tüm uygulamaları gösterir.
 
@@ -118,67 +117,66 @@ Kuruluşunuzda Intune'u kurduktan sonra [Azure portal](https://docs.microsoft.co
 4.  Alanlara bilgileri girdikten sonra uygulamayı **İzin verilen uygulamalar** listenize eklemek için **Tamam**’ı seçin.
 
 > [!NOTE]
-> Aynı anda birden fazla **Masaüstü uygulaması** eklemek için, uygulama satırının sonundaki **(…)** menüsüne tıklayabilir, sonra başka uygulamalar eklemeye devam edebilirsiniz. İşiniz bittiğinde **Tamam**’ı seçin.
+> Aynı anda birden fazla **masaüstü uygulaması** eklemek için uygulama satırının sonundaki **(…)** menüsüne tıklayabilir, sonra başka uygulamalar eklemeye devam edebilirsiniz. İşiniz bittiğinde **Tamam**’ı seçin.
 
-## <a name="windows-information-protection-wip-learning"></a>Windows Bilgi Koruması (WIP) Öğrenme
-
+## <a name="wip-learning"></a>WIP Öğrenme
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 WIP ile korumak istediğiniz uygulamaları ekledikten sonra, **WIP Öğrenme** kullanarak bir koruma modu uygulamanız gerekir.
 
 ### <a name="before-you-begin"></a>Başlamadan önce
 
-Windows Bilgi Koruması (WIP) Öğrenme, yöneticilerin WIP bilinmeyen uygulamalarını izlemelerini sağlayan bir rapordur. Bilinmeyen uygulamalar, kuruluşunuzun BT departmanı tarafından dağıtılmayan uygulamalardır. Yönetici, üretkenliğin kesintiye uğramaması için, WIP’yi “Geçersiz Kılmayı Gizle” modunda uygulatmadan önce bu uygulamaları rapordan dışa aktarıp kendi WIP ilkesine ekleyebilir.
+WIP Öğrenme, WIP-bilinmeyen uygulamalarınızı izlemenize olanak tanıyan bir rapordur. Bilinmeyen uygulamalar, kuruluşunuzun BT departmanı tarafından dağıtılmayan uygulamalardır. Üretkenliğin kesintiye uğramaması için WIP’yi “Geçersiz Kılmayı Gizle” modunda zorlamadan önce bu uygulamaları rapordan dışarı aktarıp kendi WIP ilkelerinize ekleyebilirsiniz.
 
 **Sessiz** veya **Geçersiz Kılmalara İzin Ver** ile başlayarak izin verilen uygulamalar listenizde doğru uygulamalar bulunduğunu küçük bir grupla doğrulamanızı öneririz. Bu denemeyi bitirdikten sonra, son uygulatma ilkenizi **Geçersiz Kılmaları Gizle** olarak değiştirebilirsiniz.
 
-#### <a name="what-the-protection-modes-are"></a>Koruma modları nelerdir?
+### <a name="what-are-the-protection-modes"></a>Koruma modları nelerdir?
 
-- **Geçersiz Kılmaları Gizle:**
-    - WIP, uygunsuz veri paylaşımı durumları arar ve kullanıcının işlemi tamamlamasını engeller.
-    - Bunlar arasında kurumsal olarak korunmayan uygulamalar arasında bilgi paylaşımı ve kuruluşunuz dışındaki kişi ve cihazlarla kurumsal veri paylaşımı sayılabilir.
-<br></br>
+#### <a name="hide-overrides"></a>Geçersiz Kılmaları Gizle
+WIP, uygunsuz veri paylaşımı durumları arar ve kullanıcının işlemi tamamlamasını engeller. Bunlar arasında kurumsal olarak korunmayan uygulamalar arasında bilgi paylaşımı ve kuruluşunuz dışındaki kişi ve cihazlarla kurumsal veri paylaşımı sayılabilir.
 
-- **Geçersiz Kılmalara İzin Ver:**
-    - WIP, uygunsuz veri paylaşımını arayarak, güvensiz olabilecek bir şey yapıyorlarsa kullanıcıları uyarır.
-    - Ancak bu mod kullanıcının ilkeyi geçersiz kılıp veri paylaşmasına izin vererek işlemi denetleme günlüğünüze kaydeder.
-<br></br>
-- **Sessiz:**
-    - WIP sessiz çalışarak uygunsuz veri paylaşımını, Geçersiz Kılma modunda çalışandan işlem yapmasının istenmesine neden olabilecek herhangi bir şeyi engellemeden günlüğe kaydeder.
-    - Uygulamaların bir ağ kaynağına veya WIP ile korunan verilere uygunsuz bir şekilde erişmeye çalışması gibi izin verilmeyen eylemler yine durdurulur.
-<br></br>
-- **Kapalı (önerilmez):**
-    - WIP kapalıdır ve verilerinizin korunmasına veya denetlenmesine yardımcı olmaz.
-    - WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiketlenmiş dosyaların şifrelemesi çözülmeye çalışılır. WIP’yi tekrar açarsanız, daha önceki şifreleme ilkenizin otomatik olarak yeniden uygulanmadığını unutmayın.
+#### <a name="allow-overrides"></a>Geçersiz Kılmalara İzin Ver
+WIP, uygunsuz veri paylaşımını arayarak, güvensiz olabilecek bir şey yapıyorlarsa kullanıcıları uyarır. Ancak bu mod kullanıcının ilkeyi geçersiz kılıp veri paylaşmasına izin vererek işlemi denetleme günlüğünüze kaydeder.
 
-### <a name="to-add-a-protection-mode"></a>Koruma modu uygulamak için
+#### <a name="silent"></a>Sessiz
+WIP sessiz çalışarak uygunsuz veri paylaşımını, Geçersiz Kılma modunda çalışandan işlem yapmasının istenmesine neden olabilecek herhangi bir şeyi engellemeden günlüğe kaydeder. Uygulamaların bir ağ kaynağına veya WIP ile korunan verilere uygunsuz bir şekilde erişmeye çalışması gibi izin verilmeyen eylemler yine durdurulur.
 
-1.  **İlke ekle** dikey penceresinden ilkenizin adını seçin, ardından **İlke Ekle** dikey penceresinden **Gerekli ayarlar**’a tıklayın.
+#### <a name="off-not-recommended"></a>Kapalı (önerilmez)
+WIP kapalıdır ve verilerinizin korunmasına veya denetlenmesine yardımcı olmaz.
+
+WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiketlenmiş dosyaların şifrelemesi çözülmeye çalışılır. WIP’yi tekrar açarsanız, daha önceki şifreleme ilkenizin otomatik olarak yeniden uygulanmadığını unutmayın.
+
+### <a name="add-a-protection-mode"></a>Koruma modu ekleme
+
+1.  **Uygulama ilkesi** dikey penceresinden, ilkenizin adını, ardından **Gerekli ayarlar**’ı seçin.
 
     ![Öğrenme Modu ekran görüntüsü](./media/learning-mode-sc1.png)
 
 1.  **Kaydet**’i seçin.
 
-### <a name="to-use-wip-learning"></a>WIP Öğrenme’yi kullanmak için
+### <a name="use-wip-learning"></a>WIP Öğrenme’yi kullanma
 
-1. Azure Panosuna gidin.
+1. Azure Panosuna gidin. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. Soldaki menüden **Daha fazla hizmet**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
 
 3. **Intune**’u seçin, **Intune panosu** açılır; **Mobil Uygulamalar**’ı seçin.
 
-4. **İzleme** bölümünden **WIP Öğrenme**’yi seçin. WIP Öğrenme tarafından günlüğe kaydedilmiş bilinmeyen uygulamalar görürsünüz.
+4. **İzleme** altında **WIP Öğrenme**’yi seçin. WIP Öğrenme tarafından günlüğe kaydedilmiş bilinmeyen uygulamalar görürsünüz.
 
 > [!IMPORTANT]
 > Uygulamaların WIP Öğrenme günlük raporunda görünmesini sağladıktan sonra bunları uygulama koruma ilkelerine alabilirsiniz.
 
-## <a name="to-deploy-your-wip-app-protection-policy"></a>WIP uygulama koruma ilkenizi dağıtmak için
+## <a name="deploy-your-wip-app-protection-policy"></a>WIP uygulama koruma ilkenizi dağıtma
 
 > [!IMPORTANT]
-> Bu, kayıt senaryosu olmadan mobil uygulama yönetimi (MAM) ile WIP için geçerlidir.
+> Bu, cihaz kaydı olmayan WIP için geçerlidir.
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 WIP uygulama koruma ilkenizi oluşturduktan sonra, bu ilkeyi MAM’yi kullanarak kuruluşunuza dağıtmanız gerekir.
 
-1.  **Uygulama ilkesi** dikey penceresinde, yeni oluşturduğunuz uygulama koruma ilkesini, **Kullanıcı grupları**’nı, ardından **Kullanıcı grubu ekle**’yi seçin.
+1.  **Uygulama ilkesi** dikey penceresinde, yeni oluşturduğunuz uygulama koruma ilkesini, **Kullanıcı grupları** > **Kullanıcı grubu ekle**’yi seçin.
 
     Azure Active Directory’nizdeki tüm güvenlik gruplarından oluşan kullanıcı grupları listesi, **Kullanıcı grubu ekle** dikey penceresinde açılır.
 
-1.  İlkenizin uygulanmasını istediğiniz grubu seçin, ardından ilkeyi dağıtmak için **Seç**’e tıklayın.
+1.  İlkenizin uygulanmasını istediğiniz grubu seçin, ardından ilkeyi dağıtmak için **Seç** öğesini belirleyin.

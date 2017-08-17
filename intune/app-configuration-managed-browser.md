@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e85306934b68f64bad8c223ac117190607db8473
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
+ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/05/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile Managed Browser ilkelerini kullanarak İnternet erişimini yönetme
 
@@ -49,6 +49,11 @@ Aşağıdaki cihaz türleri için Managed Browser ilkeleri oluşturabilirsiniz:
 -   Android 4 ve üzeri çalıştıran cihazlar
 
 -   iOS 8.0 ve üzerini çalıştıran cihazlar
+
+>[!IMPORTANT]
+>Ekim 2017 itibariyle Android uygulamasındaki Intune Managed Browser uygulaması yalnızca Android 4.4 ve sonraki sürümleri çalıştıran cihazları destekleyecektir. iOS’taki Intune Managed Browser uygulaması yalnızca iOS 9.0 ve sonraki sürümleri çalıştıran cihazları destekleyecektir.
+>Android ve iOS’un daha eski sürümleri Managed Browser'ı kullanmaya devam edebilecek, ancak uygulamanın yeni sürümlerinin yükleyemeyecek ve uygulamanın tüm özelliklerine erişemeyecektir. Bu cihazların desteklenen işletim sistemi sürümüne güncelleştirmenizi öneririz.
+
 
 Intune Managed Browser, [Microsoft Intune uygulama iş ortaklarının](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) web içeriklerini açmayı destekler.
 
@@ -84,19 +89,15 @@ Ayarları Azure AD kullanıcı gruplarına atayın. Bu kullanıcı Managed Brows
 
 Intune Managed Browser ve [Azure AD Uygulama Proxy’si]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started), iOS ve Android cihaz kullanıcıları için şu senaryoları desteklemek amacıyla birlikte kullanılabilir:
 
-- Bir kullanıcı Microsoft Outlook uygulamasını indirir ve burada oturum açar.  Intune uygulama koruma ilkeleri otomatik olarak uygulanır. Bu ilkeler, kayıtlı verileri şifreler ve kullanıcıların şirket dosyalarını cihazdaki yönetilmeyen uygulamalara veya konumlara aktarmasını engeller. Daha sonra kullanıcı Outlook’ta bir İntranet site bağlantısına tıkladığında bağlantının başka bir tarayıcı yerine Managed Browser uygulamasında açılacağını belirtebilirsiniz.
-Managed Browser bu İntranet sitenin kullanıcıya Uygulama Proxy’si aracılığıyla sunulduğunu algılar. Kullanıcı, İntranet siteye ulaşmadan önce Uygulama Proxy’sinden herhangi bir uygun çok faktörlü kimlik doğrulamasında ve koşullu erişimde kimlik doğrulamak üzere yönlendirilir. Önceden, kullanıcı uzakken bulunamayan bu site artık erişilebilir durumdadır ve Outlook’taki bağlantı olması gerektiği gibi çalışır.  
-
-- Bir uzak kullanıcı Managed Browser uygulamasını açar ve dahili URL’yi kullanarak bir İntranet siteye gider. Managed Browser bu İntranet sitenin kullanıcıya Uygulama Proxy’si aracılığıyla sunulduğunu algılar. Kullanıcı, İntranet siteye ulaşmadan önce Uygulama Proxy’sinden herhangi bir uygun çok faktörlü kimlik doğrulamasında ve koşullu erişimde kimlik doğrulamak üzere yönlendirilir.
-Önceden, kullanıcı uzakken bulunamayan bu site artık erişilebilir durumdadır.  
+- Bir kullanıcı Microsoft Outlook uygulamasını indirir ve burada oturum açar. Intune uygulama koruma ilkeleri otomatik olarak uygulanır. Bu ilkeler, kayıtlı verileri şifreler ve kullanıcıların şirket dosyalarını cihazdaki yönetilmeyen uygulamalara veya konumlara aktarmasını engeller. Daha sonra kullanıcı Outlook’ta bir İntranet site bağlantısına tıkladığında bağlantının başka bir tarayıcı yerine Managed Browser uygulamasında açılacağını belirtebilirsiniz. Managed Browser bu İntranet sitenin kullanıcıya Uygulama Proxy’si aracılığıyla sunulduğunu algılar. Kullanıcı, İntranet siteye ulaşmadan önce Uygulama Proxy’sinden herhangi bir uygun çok faktörlü kimlik doğrulamasında ve koşullu erişimde kimlik doğrulamak üzere yönlendirilir. Önceden, kullanıcı uzakken bulunamayan bu site artık erişilebilir durumdadır ve Outlook’taki bağlantı olması gerektiği gibi çalışır.
+- Bir uzak kullanıcı Managed Browser uygulamasını açar ve dahili URL’yi kullanarak bir İntranet siteye gider. Managed Browser bu İntranet sitenin kullanıcıya Uygulama Proxy’si aracılığıyla sunulduğunu algılar. Kullanıcı, İntranet siteye ulaşmadan önce Uygulama Proxy’sinden herhangi bir uygun çok faktörlü kimlik doğrulamasında ve koşullu erişimde kimlik doğrulamak üzere yönlendirilir. Önceden, kullanıcı uzakken bulunamayan bu site artık erişilebilir durumdadır.
 
 ### <a name="before-you-start"></a>Başlamadan önce
 
-- Dahili uygulamalarınızın Azure AD Uygulama Proxy’si aracılığıyla yayımlandığından emin olun.
-- Uygulama Proxy’sini yapılandırmak ve uygulama yayımlamak için bkz. [kurulum belgeleri]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
-- Managed Browser uygulamasının 1.2.0 veya üzeri bir sürümünü kullanıyor olmanız gerekir.
-- Managed Browser uygulamasının kullanıcıları, uygulamaya atanmış bir [Intune uygulama koruma ilkesine]( app-protection-policy.md) sahiptir.
-- Bir kullanıcı, yalnızca kendisine atanmış uygulama proxy’si uygulamalarındaki otomatik yeniden yönlendirmeleri görebilir.
+- Dahili uygulamalarınızı Azure AD Uygulama Proxy’si aracılığıyla ayarlayın.
+    - Uygulama Proxy’sini yapılandırmak ve uygulama yayımlamak için bkz. [kurulum belgeleri]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
+    - Managed Browser uygulamasının 1.2.0 veya üzeri bir sürümünü kullanıyor olmanız gerekir.
+    - Managed Browser uygulamasının kullanıcıları, uygulamaya atanmış bir [Intune uygulama koruma ilkesine]( app-protection-policy.md) sahiptir.
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>1. adım: Outlook'tan Managed Browser’a otomatik yeniden yönlendirmeyi etkinleştirme
 Outlook’un, **Managed Browser’da görüntülenecek içeriği kısıtla** ayarına imkan veren bir uygulama koruma ilkesiyle yapılandırılması gereklidir.

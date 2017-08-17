@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
@@ -64,7 +64,7 @@ Aşağıdaki adımlar, gerekli sertifikayı almanıza ve uygulamaları imzalaman
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Örnek: Windows cihazlar için Şirket Portalı uygulamasını indirme, imzalama ve dağıtma
 
-Şirket Portalı uygulamasını Windows Phone ve Windows 10 Mobile cihazları dahil olmak üzere Windows cihazlarına Windows Mağazası’ndan yüklemek yerine Intune ile dağıtabilirsiniz. Şirket Portalı uygulamasını indirmeniz ve sertifikanızla imzalamanız gerekir.  Bu yalnızca, kullanıcılar Şirket Deposunu kullanmayacaksa ve Şirket Portalı’nı Windows Phone 8.1 cihazlara dağıtmak istiyorsanız gereklidir.
+Intune Şirket Portalı uygulamasını Windows Phone ve Windows 10 Mobile cihazları dahil olmak üzere Windows cihazlarına Microsoft Mağazası’ndan yüklemek yerine Intune ile dağıtabilirsiniz. Şirket Portalı uygulamasını indirmeniz ve sertifikanızla imzalamanız gerekir.  Bu yalnızca, kullanıcılar Şirket Deposunu kullanmayacaksa ve Şirket Portalı’nı Windows Phone 8.1 cihazlara dağıtmak istiyorsanız gereklidir.
 
 
 1.  **Şirket Portalı’nı indirme**
@@ -75,7 +75,7 @@ Aşağıdaki adımlar, gerekli sertifikayı almanıza ve uygulamaları imzalaman
 
     -   WinPhoneCompanyPortal.ps1 – Windows Phone 8.1 cihazlarına dağıtılabilmesi amacıyla Şirket Portalı uygulama dosyasını imzalamak için kullanabileceğiniz bir PowerShell betiği.
 
-    Alternatif olarak, Windows Phone 8.1 Şirket Portalı (çevrimdışı lisanslı paket) uygulamasını veya Windows 10 Şirket Portalı’nı (çevrimdışı lisanslı paket) [İş İçin Windows Mağazası](http://businessstore.microsoft.com/)'ndan indirebilirsiniz. Şirket Portalı uygulamasının çevrimdışı lisansla alınması ve çevrimdışı kullanım için uygun paketin indirilmesi gerekir. Seçilen Windows 8 ve Windows Phone 8 platformu örnekleri, 8.1 yerine kullanılamaz. Bunun Intune’da nasıl yapılacağına ilişkin ayrıntılar için bkz. [İş için Windows Mağazası'ndan satın aldığınız uygulamaları yönetme](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Alternatif olarak, Windows Phone 8.1 Şirket Portalı (çevrimdışı lisanslı paket) uygulamasını veya Windows 10 Şirket Portalı’nı (çevrimdışı lisanslı paket) [İş İçin Microsoft Mağazası](http://businessstore.microsoft.com/)'ndan indirebilirsiniz. Şirket Portalı uygulamasının çevrimdışı lisansla alınması ve çevrimdışı kullanım için uygun paketin indirilmesi gerekir. Seçilen Windows 8 ve Windows Phone 8 platformu örnekleri, 8.1 yerine kullanılamaz. Bunun Intune’da nasıl yapılacağına ilişkin ayrıntılar için bkz. [İş için Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 2.  **Windows Phone SDK'sını indirme** [Windows Phone SDK 8.0'ı indirin] (http://go.microsoft.com/fwlink/?LinkId=615570) ve SDK'yı bilgisayarınıza yükleyin. Bu SDK, bir uygulama kaydı belirteci oluşturmak için gereklidir.
 
@@ -144,12 +144,12 @@ Belirli Windows ve Windows Phone mobil uygulamalarını dağıtmak için kullan�
 5.  Yeni sertifikayı kullanarak tüm yeni ve güncelleştirilmiş kurumsal iş kolu uygulamalarını imzalayın. Mevcut uygulamaların yeniden imzalanması ve dağıtılması gerekmez.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Windows 10 Şirket Portalı uygulamasını el ile dağıtma
-Intune ile İş İçin Windows Mağazası’nı tümleştirmiş olmasanız bile Windows 10 Şirket Portalı uygulamasını doğrudan Intune'dan dağıtabilirsiniz.
+Intune ile İş İçin Microsoft Mağazası’nı tümleştirmiş olmasanız bile Windows 10 Şirket Portalı uygulamasını doğrudan Intune'dan dağıtabilirsiniz.
 
  > [!NOTE]
  > Bu seçeneğin kullanılması, her uygulama güncelleştirmesi yayımlandığında el ile güncelleştirme dağıtılmasını gerektirir.
 
-1. [İş İçin Windows Mağazası](https://www.microsoft.com/business-store)’ndaki hesabınızda oturum açın ve Şirket Portalı uygulamasının **çevrimdışı lisanslı** sürümünü edinin.  
+1. [İş İçin Microsoft Mağazası](https://www.microsoft.com/business-store)’ndaki hesabınızda oturum açın ve Intune Şirket Portalı uygulamasının **çevrimdışı lisanslı** sürümünü edinin.  
 2. Uygulamayı aldıktan sonra **Envanter** sayfasında uygulamayı seçin.  
 3. **Platform** olarak **Windows 10 tüm cihazlar**’ı ve uygun **Mimari**’yi seçip sonra indirin. Bu uygulama için bir uygulama lisans dosyası gerekmez.
 ![İndirme işlemi için Windows 10 tüm cihazlar ve Mimari X86 Paketi ayrıntılarının görüntüsü](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Windows 10 Şirket Portalı uygulaması bu şekilde imzalanır ve dağıtılırs
 Uygulamanın bu şekilde nasıl imzalanıp dağıtılacağı aşağıda açıklanmaktadır:
 
 1. Microsoft Intune Windows 10 Şirket Portalı Uygulamasını İmzalama Betiğini [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) adresinden indirin.  Bu betik, Windows 10 için Windows SDK’nın ana bilgisayara yüklenmiş olmasını gerektirir. Windows 10 için Windows SDK’yı indirmek için [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) adresini ziyaret edin.
-2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Windows Mağazası'ndan indirin.  
+2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Microsoft Mağazası'ndan indirin.  
 3. Betik üst bilgisinde açıklanan giriş parametrelerini (ayıklanmış hali aşağıdadır) kullanıp betiği çalıştırarak Windows 10 Şirket Portalı uygulamasını imzalayın. Bağımlılıkların betiğe geçirilmesi gerekmez. Bunlar, yalnızca uygulama Intune Yönetici Konsolu’na yüklenirken gereklidir.
 
 |Parametre | Açıklama|
