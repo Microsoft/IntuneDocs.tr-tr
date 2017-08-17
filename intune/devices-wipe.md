@@ -1,12 +1,12 @@
 ---
-title: "Intune kullanarak cihazlarda tam veya seçmeli silme"
+title: "Intune kullanılan cihazlarda fabrika sıfırlaması kullanma veya şirket verilerini kaldırma"
 titleSuffix: Intune on Azure
-description: "Cihazda şirket verilerini seçmeli temizleme işlemi yapmayı veya cihazda tam temizleme işlemi yapıp fabrika ayarlarına sıfırlamayı öğrenin.\""
+description: "Bir cihazdaki şirket verilerini kaldırmayı veya cihazı fabrika ayarlarına sıfırlamayı öğrenin."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,64 +14,40 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
-# <a name="use-full-or-selective-wipe"></a>Tam veya seçmeli temizleme kullanma
+# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan ve Intune tarafından yönetilen cihazlardaki uygulamaları ve verileri temizleyebilirsiniz. Bunu yapmak için, Intune seçmeli temizleme ve tam temizleme özellikleri sağlar. Kullanıcılar ayrıca Intune'a kayıtlı şahsi cihazlara Intune Şirket Portalı uygulamasından uzaktan cihaz temizleme komutu da verebilir.
+Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan cihazları Intune’dan kaldırabilirsiniz. Bu işlemi **şirket verilerini kaldırma** veya **fabrika ayarlarına sıfırlama** komutu vererek yapabilirsiniz. Kullanıcılar Intune'a kayıtlı kişisel cihazlara Intune Şirket Portalı’ndan uzaktan komut da verebilir.
 
-  > [!NOTE]
-  > Bu konu yalnızca, Intune mobil cihaz yönetimi tarafından yönetilen cihazların temizlenmesi ile ilgilidir. Aynı zamanda [Azure portalını](https://portal.azure.com) kullanarak da [şirket verilerini uygulamalardan silebilirsiniz](https://docs.microsoft.com/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune). [Intune istemci yazılımıyla yönetilen bilgisayarları devre dışı bırakma](https://docs.microsoft.com/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune) seçeneğine de sahipsiniz.
+> [!NOTE]
+> Bir kullanıcıyı Azure Active Directory'den kaldırmadan önce, bu kullanıcı ile ilişkili tüm cihazlara **fabrika ayarlarına sıfırlama** veya **şirket verilerini kaldırma** komutu verin. Azure Active Directory'den yönetilen cihazların kullanıcılarını kaldırırsanız, Intune bu cihazlara fabrika sıfırlaması veya şirket verilerini kaldırma komutu veremez.
 
-## <a name="full-wipe"></a>Tam temizleme
+## <a name="factory-reset"></a>Fabrika sıfırlaması
 
-**Tam temizleme**, tüm şirket ve kullanıcı verileriyle ayarlarını kaldırarak cihazı fabrika varsayılan ayarlarına geri yükler. Cihaz Intune’dan kaldırılır. Cihazı yeni bir kullanıcıya vermeden önce sıfırlamak için ya da cihazın kaybolması veya çalınması durumunda, tam temizleme yararlı olur.  **Tam temizlemeyi seçerken dikkatli olun. Cihazdaki veriler kurtarılamaz**.
+**Fabrika sıfırlaması**, tüm şirket ve kullanıcı verileriyle ayarlarını kaldırarak cihazı fabrika varsayılan ayarlarına geri yükler. Cihaz Intune yönetiminden kaldırılır. Cihazı yeni bir kullanıcıya vermeden önce sıfırlamak için ya da cihazın kaybolması veya çalınması durumunda, fabrika sıfırlaması yararlı olur. Fabrika sıfırlamasını seçerken dikkatli olun. Cihazdaki veriler kurtarılamaz.
 
+### <a name="to-factory-reset-a-device"></a>Bir cihazı fabrika ayarlarına sıfırlamak için
 
-> [!Warning]
-> 4 GB’tan az RAM’i olan Windows 10 RTM cihazları (Windows 10 sürüm 1511’den önceki cihazlar), temizlendiğinde erişilemez duruma gelebilir. Yanıt vermemeye başlayan Windows 10 cihazına erişmek için cihazı bir USB sürücüsünden yeniden başlatabilirsiniz.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+3. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
+4. Fabrika sıfırlamasını uygulamak istediğiniz cihazın adını seçin.
+5. Cihazın adını gösteren dikey pencerede **Fabrika sıfırlaması**’nı seçin ve ardından onaylamak için **Evet**’i seçin.
 
+Cihaz açık ve bağlı olduğu sürece, bir fabrika sıfırlaması komutunun tüm cihaz türlerine yayılması 15 dakikadan kısa sürer.
 
-**Cihazda tam temizleme (fabrika sıfırlaması) yapmak için**:
+## <a name="remove-company-data"></a>Şirket verilerini kaldırma
 
-1.  **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
+**Şirket verilerini kaldırma** komutu, (uygunsa) yönetilen uygulama verilerini, ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. Şirket verilerini kaldırma, kullanıcının kişisel verilerini cihazda bırakır. Cihaz Intune yönetiminden kaldırılır. Aşağıdaki tablolarda, şirket verileri kaldırıldıktan sonra, hangi verilerin kaldırıldığı ve bu işlemin cihazda kalan veriler üzerindeki etkisi açıklanmıştır.
 
-2.  Temizlemek istediğiniz cihazın adını seçin.
-
-3.  Cihazın adını gösteren dikey pencerede **Fabrika sıfırlaması**’nı seçin ve ardından temizleme işlemini onaylamak için **Evet**’i seçin.
-
-Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz türlerine yayılması 15 dakikadan kısa sürer.
-
-### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory portalında cihazları silmek için
-
-1.  [Http://aka.ms/accessaad](http://aka.ms/accessaad) bağlantısına göz atın veya [https://portal.office.com](https://portal.office.com) adresinde **Yönetici** &gt; **Azure AD**’yi seçin.
-
-2.  Sayfanın sol tarafındaki bağlantıyı kullanarak Kuruluş Kimliğinizle oturum açın.
-
-3.  Azure Aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez (**Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
-
-4.  **Active Directory** ’yi ve sonra da kuruluşunuzu seçin.
-
-5.  **Kullanıcılar** sekmesini seçin.
-
-6.  Cihazlarını silmek istediğiniz kullanıcıyı seçin.
-
-7.  **Cihazlar**’ı seçin.
-
-8.  Artık kullanımda olmayan veya tanımları yanlış olan cihazlar gibi uygun cihazları kaldırın.
-
-
-## <a name="selective-wipe"></a>Seçmeli temizleme
-
-**Seçmeli silme**, cihazdan şirket verilerini mobil uygulama yönetimi (MAM) verileri de dahil (uygun durumlarda), ayarlarını ve e-posta profillerini kaldırır. Seçmeli temizleme, kullanıcının kişisel verilerini cihazda bırakır. Cihaz Intune’dan kaldırılır. Aşağıdaki tablolarda, seçmeli silme işleminden sonra, hangi verilerin kaldırıldığı ve bu işlemin cihazda kalan veriler üzerindeki etkisi açıklanmıştır. (Tablolar platforma göre düzenlenmiştir.)
-
-**iOS**
+### <a name="ios"></a>iOS
 
 |Veri türü|iOS|
 |-------------|-------|
@@ -82,10 +58,10 @@ Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz tür
 |Yönetim Aracısı|Yönetim profili kaldırılır.|
 |E-posta|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|
 |Outlook|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|
-|Azure Active Directory (AAD) Ayrılma|AAD Kaydı kaldırılır.|
-|Kişiler | Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
+|Azure Active Directory (AD) Ayrılma|Azure AD kaydı kaldırılır.|
+|Kişiler | Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 
-**Android**
+### <a name="android"></a>Android
 
 |Veri türü|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
@@ -100,30 +76,42 @@ Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz tür
 |Yönetim Aracısı|Cihaz Yöneticisi ayrıcalığı iptal edilir.|Cihaz Yöneticisi ayrıcalığı iptal edilir.|
 |E-posta|yok (e-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|
 |Outlook|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|
-|Azure Active Directory (AAD) Ayrılma|AAD Kaydı kaldırılır.|AAD Kaydı kaldırılır.|
-|Kişiler | Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.|Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
+|Azure Active Directory (AD) Ayrılma|Azure AD Kaydı kaldırıldı.|Azure AD Kaydı kaldırıldı.|
+|Kişiler | Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.|Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 
-**Android for Work**
+### <a name="android-for-work"></a>Android for Work
 
-Bir İş için Android cihazında seçmeli temizleme gerçekleştirilmesi, cihazdaki iş profilinde bulunan tüm verileri, uygulamaları ve ayarları kaldırır. Bu, cihazın Intune ile yönetilmesini devre dışı bırakır. İş için Android’de tam temizleme desteklenmez.
+Bir Android for Work cihazından şirket verilerinin kaldırılması, cihazdaki iş profilinde bulunan tüm verileri, uygulamaları ve ayarları kaldırır. Bu, cihazın Intune ile yönetilmesini devre dışı bırakır. Fabrika sıfırlaması Android for Work’te desteklenmez.
 
-**Windows**
+### <a name="windows"></a>Windows
 
 |Veri türü|Windows 8.1 (MDM) ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|EFS tarafından korunan dosyaların anahtarı iptal edilmez ve kullanıcı dosyaları açamaz.|Şirket uygulamalarını kaldırmaz.|İlk olarak şirket portalı üzerinden yüklenen uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.|Uygulamalar ve dışarıdan yükleme anahtarları kaldırılır.|
+|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|EFS tarafından korunan dosyaların anahtarı iptal edilmez ve kullanıcı dosyaları açamaz.|Şirket uygulamalarını kaldırmaz.|İlk olarak şirket portalı üzerinden yüklenen uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.|Uygulamalar ve dışarıdan yükleme anahtarları kaldırılır.<br>Windows 10 sürüm 1703 (Creator Update) ve üzerinde Office 365 ProPlus uygulamaları kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|Desteklenmez.|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|Sertifikalar kaldırılır ve iptal edilir.|Desteklenmez.|Sertifikalar kaldırılır ve iptal edilir.|
 |E-posta|Windows e-posta ve ekleri için Posta uygulamasını da içeren EFS özellikli e-postalar kaldırılır.|Desteklenmez.|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|Windows e-posta ve ekleri için Posta uygulamasını da içeren EFS özellikli e-postalar kaldırılır. Intune tarafından sağlanan posta hesaplarını kaldırır.|
-|Azure Active Directory (AAD) Ayrılma|Hayır.|Hayır.|AAD Kaydı kaldırılır.|Yok. Windows 10, Azure Active Directory’ye katılmış cihazlarda seçmeli temizlemeyi desteklemez.|
+|Azure Active Directory (AD) Ayrılma|Hayır.|Hayır.|Azure AD Kaydı kaldırıldı.|Yok. Windows 10, Azure Active Directory’ye katılmış cihazlarda şirket verilerinin kaldırılmasını desteklemez.|
 
-**Seçmeli temizleme yapmak için**:
+### <a name="to-remove-company-data"></a>Şirket verilerini kaldırmak için
 
-1.  **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+3. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
+4. Şirket verilerini kaldırmak istediğiniz cihazın adını seçin.
+5. Cihazın adını gösteren dikey pencerede **Şirket verilerini kaldır**’ı seçin ve ardından onaylamak için **Evet**’i seçin.
 
-2.  Temizlemek istediğiniz cihazın adını seçin.
+Cihaz açık ve bağlı olduğu sürece, verileri kaldırma komutunun tüm cihaz türlerine yayılması 15 dakikadan kısa sürer.
 
-3.  Cihazın adını gösteren dikey pencerede **Şirket veri...** (Şirket verilerini kaldır) öğesini seçin ve ardından temizleme işlemini onaylamak için **Evet**’i seçin.
+## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Azure Active Directory portalından cihazları silme
 
-Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz türlerine yayılması 15 dakikadan kısa sürer.
+İletişim sorunları veya eksik cihazlar nedeniyle, cihazları Azure Active Directory’den (AD) silmeniz gerekebilir. Sil komutu bir cihazı yönetimden kaldırmaz ancak ulaşılamaz olduğunu ve Azure ile yeniden iletişim kurmasının pek olası olmadığını bildiğiniz cihaz kayıtlarını Azure konsolundan kaldırmak için **Sil** komutunu kullanabilirsiniz.
+
+1.  Yönetici kimlik bilgilerinizle [Azure portalında Azure Active Directory](http://aka.ms/accessaad)’de oturum açın. Ayrıca [Office 365 portalında](https://portal.office.com) oturum açarak ve ardından sayfanın sol tarafındaki bağlantıyı kullanarak **Yönetici** &gt; **Azure AD**’yi seçebilirsiniz.
+3.  Azure aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez (**Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
+4.  **Active Directory** ’yi ve sonra da kuruluşunuzu seçin.
+5.  **Kullanıcılar** sekmesini seçin.
+6.  Cihazlarını silmek istediğiniz kullanıcıyı seçin.
+7.  **Cihazlar**’ı seçin.
+8.  Artık kullanımda olmayan veya tanımları yanlış olan cihazlar gibi uygun cihazları kaldırın.

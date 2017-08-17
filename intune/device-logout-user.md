@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc01055995747a74782680ff2f64fb0bec6f4883
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: 1de2069b7b25ee5e5c21a8e4caa7512f13d4ca0e
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Intune tarafından yönetilen iOS cihazlarında geçerli kullanıcı oturumunu kapatma
 
@@ -26,7 +26,17 @@ ms.lasthandoff: 07/14/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-**Mevcut kullanıcı oturumunu kapat** eylemi, iOS Classroom uygulamasını [iOS eğitim profili](education-settings-configure-ios.md) ile yönetmek üzere yapılandırılmış, paylaşılan bir iPad cihazdaki mevcut kullanıcının oturumunu kapatır. 
+**Mevcut kullanıcı oturumunu kapat** eylemi, iOS Classroom uygulamasını [iOS eğitim profili](education-settings-configure-ios.md) kullanarak yönetmek üzere yapılandırılmış, paylaşılan bir iPad cihazdaki mevcut kullanıcının oturumunu kapatır. 
+
+## <a name="supported-platforms"></a>Desteklenen platformlar
+
+- Windows - Desteklenmiyor
+- Windows Phone - Desteklenmiyor
+- iOS - iOS 9.3 ve üzerinde desteklenir (yalnızca paylaşılan iPad cihazlar)
+- macOS - Desteklenmiyor
+- Android - Desteklenmiyor
+
+## <a name="how-to-logout-the-current-user"></a>Geçerli kullanıcının oturumunu kapatma
 
 1.  Azure Portal’da oturum açın.
 2.  **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.

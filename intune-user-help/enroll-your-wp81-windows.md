@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1 cihazınızı Intune'a kaydetme
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 07/01/2017
 
 Phone 8.1 cihazınızı Intune’a kaydetmek için, şirketiniz veya okulunuz için geçerli yönergeleri izleyin:
 
--   [Şirketiniz Windows Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [Şirketiniz Microsoft Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [Windows Phone’unuzdan Windows Mağazası’na erişmenize izin verilmiyorsa veya bir Microsoft Hesabınız yoksa](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [Windows Phone’unuzdan Microsoft Mağazası’na erişmenize izin verilmiyorsa veya bir Microsoft Hesabınız yoksa](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Şirketiniz Windows Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>Şirketiniz Microsoft Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa
 Cihazınıza Şirket Portalı uygulamasını yükleyin:
 
 1.  **Başlat** &gt; **Mağaza**’ya dokunun.
@@ -72,7 +72,7 @@ Cihazınızı kaydedin:
 
     ![Hesap eklendi ekranı](./media/WP81-enroll-4-account-added.png)
 
-## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Windows Phone’unuzdan Windows Mağazası’na erişmenize izin verilmiyorsa veya bir Microsoft Hesabı’nız yoksa
+## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Windows Phone’unuzdan Microsoft Mağazası’na erişmenize izin verilmiyorsa veya bir Microsoft Hesabınız yoksa
 
 1.  **Ayarlar** &gt; **iş yeri**’ne dokunun.
 

@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -87,7 +87,7 @@ Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygu
 
 ### <a name="monitor"></a>İzle
 - **Lisanslı Uygulamalar** - Uygulama mağazalarından toplu satın alınan uygulamaları görüntüleyin, atayın ve izleyin.
-    - [İş İçin Windows Mağazası’ndan toplu satın alınan uygulamalar](windows-store-for-business.md)
+    - [İş İçin Microsoft Mağazası’ndan toplu satın alınan uygulamalar](windows-store-for-business.md)
 - **Bulunan Uygulamalar** - Intune tarafından atanan ve bir cihaza yüklenen tüm uygulamaları gösterir.
 - **Uygulama Yükleme Durumu** - Oluşturduğunuz uygulama atamasının durumunu gösterir.
 - **Uygulama koruma durumu** - Seçtiğiniz kullanıcı için uygulama koruma ilkesinin durumunu gösterir.
@@ -97,7 +97,7 @@ Ayrıntılar için bkz. [Uygulamaları izleme](apps-monitor.md)
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **İş İçin Windows Mağazası** - İş İçin Windows Mağazası’na tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz.
-    - [İş İçin Windows Mağazası’ndan toplu satın alınan uygulamalar](windows-store-for-business.md)
+- **İş İçin Microsoft Mağazası** - İş İçin Microsoft Mağazası’na tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz.
+    - [İş İçin Microsoft Mağazası’ndan toplu satın alınan uygulamalar](windows-store-for-business.md)
 - **Şirket Portalı markası** - Şirket Portalı’nı özelleştirerek şirketinizin markasını ekleyin.
     - [Şirket portalı yapılandırması](company-portal-app.md)

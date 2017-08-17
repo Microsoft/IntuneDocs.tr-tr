@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI ile Veri Ambarına bağlanma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune kiracınız için etkileşimli ve dinamik olarak oluşturulmuş raporlar yüklemenizi mümkün kılan bir dosyayı Microsoft Power BI ile kullanmak üzere indirebilirsiniz. Veri Ambarı Power BI dosyası (pbix) kiracınız için bağlantı ayarlarını ve aşağıdaki rapor ve grafik örneklerini barındırır: 
+Intune kiracınız için etkileşimli ve dinamik olarak oluşturulmuş raporlar yüklemenizi mümkün kılan bir dosyayı Microsoft Power BI ile kullanmak üzere indirebilirsiniz. Veri Ambarı Power BI dosyası (pbix) kiracınız için bağlantı ayarlarını ve aşağıdaki rapor ve grafik örneklerini barındırır:  
 
   -  Cihazlar
   -  Kayıt
@@ -46,8 +46,11 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adres
 
 Power BI dosyası (pbix), kiracınızın bağlantısı bilgisini ve Veri Ambarı veri modeline bağlı olarak önceden oluşturulmuş bir raporlar kümesini barındırır. Dosyayı Power BI Desktop’ta açın ve Azure AD’de oturum açın. Rapor, Intune kiracınızdan verileri yükler.
 
+> [!Important]  
+> Her Power BI dosyası (pbix) kiracı konumuna bağlı olarak farklı olabilir. Birden çok Intune kiracısı yönetiyorsanız, bu kiracı için oturum açık durumdayken Azure portalından indirilen dosyayı kullandığınızdan emin olun.  
+
 1.  Azure portalında oturum açın ve **İzleme + Yönetim** > **Intune**’u seçin. Ayrıca **Intune** için kaynak araması da yapabilirsiniz.  
-2.  **Microsoft Intune Veri Ambarı API’si (önizleme)** dikey penceresini açın.
+2.  **Microsoft Intune Veri Ambarı API’si (Önizleme)** dikey penceresini açın.
 3.  **Power BI dosyasını indir**’e tıklayın. (pbix) uzantılı dosya, belirttiğiniz konuma indirme yapar.
 4.  Dosyayı Power BI ile açın. *Intune Veri Ambarı Raporları* yüklenir ancak kiracı verilerinizi alması birkaç saniye sürebilir.
 5.  Kiracı verilerinizi yüklemek için **Yenile**’ye tıklayın ve raporları gözden geçirin.

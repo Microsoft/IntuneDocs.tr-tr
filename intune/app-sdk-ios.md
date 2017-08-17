@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a5f7ffa14a78cecd613dcf6b7523acc0afb427cf
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 29911cf5a8fa3488640813efd8f33ee07c951c31
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -465,6 +465,7 @@ BackgroundColor| Dize| Başlangıç ve PIN ekranlarının arka plan rengini beli
 ForegroundColor| Dize| Metin rengi gibi, başlangıç ve PIN ekranlarının ön plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.  | İsteğe bağlı. Varsayılan olarak siyahtır. |
 AccentColor | Dize| PIN ekranının düğme metni rengi ve kutu vurgu rengi gibi tema rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.| İsteğe bağlı. Varsayılan olarak sistem mavisidir. |
 MAMTelemetryDisabled| Boole değeri| SDK’nın arka ucuna herhangi bir telemetri verisi gönderip göndermeyeceğini belirtir.| İsteğe bağlı. |
+WebViewHandledURLSchemes | Dize Dizisi | Uygulamanızın WebView’unun işlediği URL şemalarını belirtir. | Uygulamanız URL'leri bağlantılar ve/veya javascript aracılığıyla işleyen bir WebView kullanıyorsa gereklidir. |  
 
 > [!NOTE]
 > Uygulamanız App Store’da yayınlanacaksa `MAMPolicyRequired`, App Store standartlarına göre"HAYIR" olarak ayarlanmalıdır.

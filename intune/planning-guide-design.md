@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,16 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 3f08f110163159c1219492539107cc6b33c8012d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.custom: 
+ms.openlocfilehash: 73e9a634e579b85ac5acabebf38c8a08bc1af86c
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Kılavuzun bu bölümü, Bölüm 2'deki diğer konular ile paralel olarak kullanılmalıdır. Bu tasarım, bu kılavuzun önceki bölümlerini tamamlarken topladığınız bilgilere ve aldığınız kararlara dayanır. Bu tasarım bölümünde, Microsoft bulut tabanlı bir hizmet olan tek başına Intune'a odaklanacağız.
-
-Şirket içi altyapı gereksinimleri minimal olsa da, hedeflerinizi, amaçlarınızı ve gereksinimlerinizi karşılayan doğru mobil cihaz yönetimi çözümüne sahip olduğunuzdan emin olmak için bir tasarım planı üzerinde çalışmanız önerilir.
-
-Ayrıca, uygulama ve test etme aşamaları sırasında genellikle tasarım değişiklikleri gerçekleştiğinden, bu değişiklikleri ve nedenlerini meydana geldikleri anda belgelemeye özen gösterin. Tasarım, aşağıdaki alanları içerir:
+Intune tasarımınız, [bu kılavuzun diğer bölümlerini](planning-guide.md) tamamlarken topladığınız bilgilere ve aldığınız kararlara dayanır. Şunları bir araya getirmenize yardımcı olur:
 
 -   Mevcut ortam
 
@@ -40,60 +34,63 @@ Ayrıca, uygulama ve test etme aşamaları sırasında genellikle tasarım deği
 
 -   Sağlanacak gereksinimler  
 
+Şirket içi altyapı gereksinimleri minimal olsa da, hedeflerinizi, amaçlarınızı ve gereksinimlerinizi karşılayan doğru mobil cihaz yönetimi çözümüne sahip olduğunuzdan emin olmak için bir tasarım planı yine de yararlıdır.
+
 Bu alanların her birini daha ayrıntılı bir şekilde gözden geçirelim. 
 
-## <a name="record-your-environment"></a>Ortamınızı kaydetme
+## <a name="record-your-current-environment"></a>Geçerli ortamınızı kaydetme
+Ayrıca, uygulama ve test aşamaları sırasında tasarım değişiklikleri yaygın olarak gerçekleşir. Bu değişiklikleri ve gerekçelerini, değişiklikler gerçekleştikçe belgelemek için tasarım planınızı kullanın.
 
-Tasarımınızı oluşturmadan önce ilk olarak mevcut ortamınızı kaydetmeniz gerekir. Mevcut ortam, tasarım kararlarını etkileyebilir ve diğer Intune tasarım kararları verilirken mevcut ortam belgelenmeli ve buna başvurulmalıdır. Aşağıda mevcut ortamın nasıl kaydedileceğine ilişkin birkaç örnek verilmiştir:
+Mevcut ortamınız, tasarım kararlarını etkileyebilir ve diğer Intune tasarım kararlarını verdiğinizde mevcut ortam belgelenmeli ve buna başvurulmalıdır. Aşağıda mevcut ortamın nasıl kaydedileceğine ilişkin birkaç örnek verilmiştir:
 
 -   **Buluttaki kimlik**
 
     -   DirSync veya Azure Active Directory (Azure AD) Connect kullanıyor musunuz?
 
-    -   Ortamınız şirket dışında mı?
+    -   Ortamınız federe mi?
 
-    -   Çok faktörlü kimlik doğrulaması etkin mi?
+    -   Çok faktörlü kimlik doğrulaması (MFA) etkin mi?
 
 -   **E-posta ortamı**
 
-    -   Exchange kullanılıyor mu ve kullanılıyorsa şirket içinde mi yoksa bulutta mı kullanılıyor?
+    -   Exchange kullanıyor musunuz? Şirket içinde mi, bulutta mı?
 
     -   Exchange’i buluta geçirme projesinin ortasında mısınız?
 
--   **Geçerli MDM çözümü**
+-   **Geçerli mobil cihaz yönetimi (MDM) çözümü**
 
     -   Şu anda diğer MDM çözümlerini kullanıyor musunuz?
 
     -   Şirket ve KCG kullanım örneği senaryoları için hangi MDM çözümlerini kullanıyorsunuz?
 
-    -   Hangi özellikleri kullanıyorsunuz (örneğin uygulama cihaz ayarları, Wi-Fi yapılandırmaları vb.)?
+    -   Hangi özellikleri kullanıyorsunuz (örneğin uygulama cihaz ayarları, Wi-Fi yapılandırmaları)?
 
     -   Hangi cihaz platformları destekleniyor?
 
     -   MDM çözümü hangi gruplar ve kaç kullanıcı tarafından kullanılıyor?
 
--   **Sertifika Çözümü**
+-   **Sertifika çözümü**
 
     -   Bir sertifika çözümü uyguladınız mı?
 
     -   Hangi sertifika türlerini kullanıyorsunuz?
 
--   **Sistem Yönetimi**
+-   **Sistem yönetimi**
 
     -   PC ve sunucu ortamınızı nasıl yönetiyorsunuz?
 
-    -   System Center Configuration Manager kullanılıyor mu? Bir üçüncü taraf sistem yönetimi platformu kullanıyor musunuz?
+    -   System Center Configuration Manager’ı kullanıyor musunuz? Bir üçüncü taraf sistem yönetimi platformu kullanıyor musunuz?
 
--   **VPN Çözümü**
+-   **VPN çözümü**
 
     -   VPN çözümünüz nedir?
 
-    -   Hem şirket hem de KCG örneği senaryolarında kullanılıyor mu?
+    -   Hem şirket hem de KCG örneği senaryolarında kullanıyor musunuz?
 
-Mevcut MDM ortamını kaydederken ortamınızda değişiklik yapabilmek için hazırlanan tüm projeleri ve planları not aldığınızdan emin olun. Intune tasarımınızı oluştururken yardımcı olmak üzere mevcut ortamı kaydetme yoluna ilişkin bir örnek aşağıda verilmiştir:
+Geçerli MDM ortamını kaydederken ortamınızı etkileyebilecek tüm projeleri ve planları not aldığınızdan emin olun. Intune tasarımınızı oluştururken mevcut ortamı kaydetme yoluna ilişkin bir örnek aşağıda verilmiştir:
 
 | **Çözüm alanı** | **Mevcut ortam** | **Yorumlar** |
-|:---:|:---:|:---:|
+|---|---|---|
 | **Kimlik** | Azure AD, Azure AD Connect, şirket dışında değil, MFA yok | Yıl sonundan itibaren MFA’yı etkinleştirme projesi geçerli |                 
 | **E-posta ortamı** | Şirket İçi Exchange, Exchange Online | Şu anda Şirket İçi Exchange sürümünden Exchange Online sürümüne geçiriliyor. Posta kutularının % 75’i geçirildi. Kalan %25 Intune Pilot başlamadan önce geçirilecektir. |                
 | **SharePoint** | Şirket İçi SharePoint | SharePoint Online sürümüne geçirme planı yok |  
@@ -102,11 +99,12 @@ Mevcut MDM ortamını kaydederken ortamınızda değişiklik yapabilmek için ha
 | **Sistem Yönetimi** | System Center Configuration Manager CB 1606 | Intune karma çözümün araştırılması isteniyor |
 | **VPN çözümü** | Cisco AnyConnect |  |
 
+
+Intune tasarım planınızı geliştirmek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+
 ## <a name="choose-an-intune-deployment-option"></a>Bir Intune dağıtım seçeneği belirleyin
 
-Intune iki dağıtım seçeneği sunar: Tek başına ve karma. İş gereksinimlerinize hangisinin uyduğuna karar verin. Tek başına, bulut ortamında çalışan Intune hizmeti anlamına gelirken karma, Intune'un System Center Configuration Manager ile tümleştirilmesini belirtir.
-
-- [Tek başına Microsoft Intune ve System Center Configuration Manager ile karma mobil cihaz yönetimi (MDM) arasında seçim yapma](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) hakkında daha fazla bilgi edinin
+Intune iki dağıtım seçeneği sunar: Tek başına ve karma. Tek başına, bulut ortamında çalışan Intune hizmeti anlamına gelirken karma, Intune'un System Center Configuration Manager ile tümleştirilmesini belirtir. Bu kılavuz öncelikle tek başına seçeneğinin kullanılmasına yönelik tasarlanmıştır. [İş gereksinimlerinize hangi seçeneğin uyduğuna karar verin](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 ## <a name="intune-tenant-location"></a>Intune kiracı konumu
 
@@ -123,59 +121,61 @@ Kuruluşunuz küresel olarak faaliyet gösteriyorsa, hizmete abone olurken kirac
 
 ## <a name="external-dependencies"></a>Dış bağımlılıklar
 
-Dış bağımlılıklar Intune'dan ayrı ancak aynı zamanda Intune gereksinimi olan veya Intune ile tümleşebilen hizmet ve ürünlerdir. Herhangi bir dış bağımlılığın gereksinimlerini ve nasıl yapılandırılacağını belirlemek önemlidir. Yaygın dış bağımlılıklara bazı örnekler aşağıda listelenmiştir.
+Dış bağımlılıklar Intune'dan ayrı ancak aynı zamanda Intune gereksinimi olan veya Intune ile tümleşebilen hizmet ve ürünlerdir. Herhangi bir dış bağımlılığın gereksinimlerini ve nasıl yapılandırılacağını belirlemek önemlidir. Yaygın dış bağımlılıklara bazı örnekler:
 
 -   Kimlik
 
 -   Kullanıcı ve cihaz grupları
 
--   PKI
+-   Ortak anahtar altyapısı (PKI)
 
 Bu yaygın dış bağımlılıkları aşağıda daha ayrıntılı bir şekilde inceleyeceğiz
 
 ### <a name="identity"></a>Kimlik
 
-Kuruluşunuzda bulunan ve bir cihazı kaydeden kullanıcılar kimlik aracılığıyla tanımlanır. Intune, kullanıcı kimlik sağlayıcısı olarak Azure Active Directory (Azure AD) gerektirir. Bu hizmeti zaten kullanıyorsanız bulutta varolan kimliğinizden yararlanmanız mümkün olacaktır. Ayrıca Azure AD Connect, şirket içi kullanıcı kimliklerinizi Microsoft bulut hizmetleri ile eşitlemek için önerilen araçtır. Kuruluşunuzda zaten Office 365 kullanılıyorsa Intune’un aynı Azure Active Directory ortamını kullanması önemlidir.
+Kuruluşunuzda bulunan ve bir cihazı kaydeden kullanıcılar kimlik aracılığıyla tanımlanır. Intune, kullanıcı kimlik sağlayıcısı olarak Azure Active Directory (Azure AD) gerektirir. Bu hizmeti zaten kullanıyorsanız bulutta varolan kimliğinizi kullanabilirsiniz. Ayrıca Azure AD Connect, şirket içi kullanıcı kimliklerinizi Microsoft bulut hizmetleri ile eşitlemek için önerilen araçtır. Kuruluşunuzda zaten Office 365 kullanılıyorsa, Intune’un aynı Azure AD ortamını kullanması önemlidir.
 
-Aşağıda Intune'un kimlik gereksinimleri hakkında daha fazla bilgi bulabilirsiniz.
+Aşağıdaki Intune kimlik gereksinimleri hakkında daha fazla bilgi edinin:
 
--   [Kimlik gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview) hakkında daha fazla bilgi edinin.
+- [Kimlik gereksinimleri](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions).
 
--   [Dizin eşitleme gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements) hakkında daha fazla bilgi edinin.
+- [Dizin eşitlemesi gereksinimleri](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
 
--   [Çok faktörlü kimlik doğrulaması gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements) hakkında daha fazla bilgi edinin.
+- [Çok faktörlü kimlik doğrulaması gereksinimleri](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 
 ### <a name="user-and-device-groups"></a>Kullanıcı ve cihaz grupları
 
-Kullanıcı ve cihaz grupları bir dağıtımın hedefini belirler. İlkeler, uygulamalar ve profiller için dağıtım hedeflemesi içerebilir. Yalnızca bulutt çalışan Intune kullanıcı ve cihaz gruplarını destekler. Hangi kullanıcı ve cihaz gruplarının gerekli olacağını belirlemeniz gerekir. Tüm grupların şirket içi Active Directory'de oluşturulması, sonra Azure Active Directory ile eşitlenmesi önerilir. Aşağıda kullanıcı ve cihaz grubu planlama ve oluşturma hakkında daha fazla bilgi bulabilirsiniz.
+Kullanıcı ve cihaz grupları, ilkeler, uygulamalar ve profiller de dahil olmak üzere bir dağıtımın hedefini belirler. Hangi kullanıcı ve cihaz gruplarının gerekli olacağını belirlemeniz gerekir.
 
--   [Kullanıcı ve cihaz gruplarınızı planlama](/intune-classic/deploy-use/plan-your-user-and-device-groups) hakkında daha fazla bilgi edinin.
+Tüm grupları şirket içi Active Directory içinde oluşturup, ardından Azure AD ile eşitlemenizi öneririz. Kullanıcı ve cihaz gruplarını planlama hakkında daha fazla bilgi edinin:
 
--   [Kullanıcı ve cihaz gruplarının nasıl oluşturulacağını](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) öğrenin.
+-   [Kullanıcı ve cihaz gruplarınızı planlayın](users-add.md).
 
-### <a name="public-key-infrastructure-pki"></a>Ortak Anahtar Altyapısı (PKI)
+-   [Kullanıcı ve cihaz grupları oluşturun](groups-add.md).
 
-Ortak Anahtar Altyapısı, bir hizmette güvenli kimlik doğrulaması yapabilmek için cihazlara veya kullanıcılara sertifika sağlar. Intune, Microsoft PKI altyapısını destekler. Sertifika tabanlı kimlik doğrulama gereksinimlerini karşılamak için cihaz ve kullanıcı sertifikaları bir mobil cihaza sağlanabilir. Sertifikaları uygulamadan önce, sertifikaların gerekli olup olmadığını, ağ altyapısının sertifika tabanlı kimlik doğrulamasını destekleyip desteklemediğini ve sertifikaların şu anda mevcut ortamda kullanılıp kullanılmadığını belirlemeniz gerekir.
+### <a name="public-key-infrastructure-pki"></a>Ortak anahtar altyapısı (PKI)
+Ortak anahtar altyapısı, bir hizmette güvenli kimlik doğrulaması yapabilmek için cihazlara veya kullanıcılara sertifika sağlar. Intune, Microsoft PKI altyapısını destekler. Sertifika tabanlı kimlik doğrulama gereksinimlerini karşılamak için cihaz ve kullanıcı sertifikaları bir mobil cihaza sağlanabilir. Sertifikaları kullanmadan önce, bunların gerekli olup olmadığını, ağ altyapısının sertifika tabanlı kimlik doğrulamasını destekleyip desteklemediğini ve sertifikaların şu anda mevcut ortamda kullanılıp kullanılmadığını belirlemeniz gerekir.
 
-Sertifikaları VPN, Wi-Fi veya Intune ile e-posta profilleriyle kullanmayı planlıyorsanız sertifika ilkeleri oluşturmaya ve dağıtmaya hazır, desteklenen bir [PKI altyapısına sahip olduğunuzdan](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) emin olmanız gerekir.
+Sertifikaları VPN, Wi-Fi veya Intune ile e-posta profilleriyle kullanmayı planlıyorsanız sertifika ilkeleri oluşturmaya ve dağıtmaya hazır, desteklenen bir [PKI altyapısına sahip olduğunuzdan](certificates-configure.md) emin olun.
 
 Ayrıca, SCEP sertifikaları sağlanacaksa hangi sunucunun Ağ Cihazı Kayıt Hizmeti (NDES) özelliğini barındıracağını ve iletişimin nasıl olacağını belirlemeniz gerekir.
 
-Intune’da sertifikaları yapılandırma hakkında daha fazla bilgi için aşağıdakilere bakın:
+Daha fazla bilgi:
 
--   [SCEP için sertifika altyapısını yapılandırma](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep).
+-   [Intune sertifika profillerini yapılandırma](certificates-configure.md)
 
--   [PFX için sertifika altyapısını yapılandırma](/intune-classic/deploy-use/configure-certificate-infrastructure-for-pfx).
+-   [SCEP için sertifika altyapısını yapılandırma](certificates-scep-configure.md)
 
--   [Intune sertifika profillerini yapılandırma](/intune-classic/deploy-use/configure-intune-certificate-profiles).
+-   [PFX için sertifika altyapısını yapılandırma](certficates-pfx-configure.md)
 
--   [Kaynak erişim ilkelerini yapılandırma](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune).
 
-## <a name="device-platform-considerations"></a>Cihaz Platformunda Dikkat Edilecek Noktalar
 
-Cihazlarınızı doğru şekilde anlamak için daha yakından incelemeniz gerekir.
 
--   Desteklenen cihaz platformlarını belirleme
+## <a name="device-platform-considerations"></a>Cihaz platformunda dikkat edilecek noktalar
+
+Cihazlarınızı nasıl doğru bir şekilde yöneteceğinizi anlamak için cihazların şu yönlerini yakından inceleyin.
+
+-   Desteklenen cihaz platformları
 
 -   Cihazlar
 
@@ -189,13 +189,11 @@ Bu alanları daha ayrıntılı bir şekilde gözden geçirelim.
 
 Ortamda hangi cihazların olacağını bilmeniz ve tasarımınızı oluştururken bunların Intune tarafından desteklenip desteklenmediğini doğrulamanız gerekir. Intune; iOS, Android ve Windows platformlarını destekler.
 
--   [Intune Tarafından Desteklenen Cihazlar](/intune/supported-devices-browsers) hakkında daha fazla bilgi edinin.
+[Intune desteklenen cihazların tam listesi](supported-devices-browsers.md).
 
 ### <a name="devices"></a>Cihazlar
 
-Intune, kurumsal verilerin güvenliğini sağlamak ve son kullanıcılara daha fazla konumda çalışma olanağı sunmak için mobil cihazları yönetir. Intune birden çok cihaz platformunu desteklediğinden, kuruluşunuzun tasarımında desteklenecek cihazların ve işletim sistemi platformlarının belgelenmesi önerilir. Bu, bölümde oluşturulan cihazları ve platformları (durum gereksinimlerini kullanın) genişletir.
-
-Ayrıca, cihaz özelliklerini işletim sistemi platformu ve sürümüne göre denetlerken listeye başvurmak için sürümleri bilmeniz de önerilir. Örnek aşağıda verilmiştir:
+Intune, kurumsal verilerin güvenliğini sağlamak ve son kullanıcılara daha fazla konumda çalışma olanağı sunmak için mobil cihazları yönetir. Intune birden çok cihaz platformunu desteklediğinden, kuruluşunuzun tasarımında desteklenecek cihazları, işletim sistemi platformlarını ve sürümlerini belgelemeniz önerilir. Örneğin:
 
 | **Cihaz platformu** | **İşletim Sistemi Sürümleri** |
 |:---:|:---:|
@@ -204,52 +202,55 @@ Ayrıca, cihaz özelliklerini işletim sistemi platformu ve sürümüne göre de
 | Android – Samsung Knox Standard | 4.0+ |
 | Windows 10 tablet | 10+ |
 
+
+Cihaz listenizi geliştirmek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 ### <a name="device-ownership"></a>Cihaz sahipliği
 
-Intune, şirket ve KCG sahipliğini destekler. Bir Cihaz, cihaz kayıt yöneticisi tarafından veya cihaz kayıt programı ile kaydedilmişse şirkete ait olarak kabul edilir. Örneğin bir cihaz Apple DEP aracılığıyla kaydedilmiş, şirkete ait olarak işaretlenmiş ve hedeflenen şirket ilkelerini ve uygulamalarını alan bir cihaz grubuna yerleştirilmiş olabilir.
+Intune, hem şirkete ait cihazları hem de kişisel cihazları destekler. Bir cihaz, cihaz kayıt yöneticisi tarafından veya cihaz kayıt programı ile kaydedilmişse şirkete ait olarak kabul edilir. Örneğin bir cihaz Apple Aygıt Kayıt Programı (DEP) aracılığıyla kaydedilmiş, şirkete ait olarak işaretlenmiş ve hedeflenen şirket ilkelerini ve uygulamalarını alan bir cihaz grubuna yerleştirilmiştir.
 
 Şirket ve KCG kullanım örnekleri hakkında daha fazla bilgi için [Bölüm 3: Kullanım örneği senaryosu gereksinimleri](planning-guide-requirements.md) bölümüne başvurun.
 
 ### <a name="bulk-enrollment"></a>Toplu kayıt
 
-Şirket portalı üzerinden kendi kendine kayıt işlemini tamamlamak için Intune’a cihaz kaydetmeye yönelik birden çok kayıt seçeneği vardır. Toplu kayıt, platforma bağlı olarak farklı yollarla gerçekleştirilebilir. Toplu kayıt gerekli olursa önce toplu kayıt yöntemini belirleyin ve tasarımınıza dahil edin. Farklı toplu kayıt yöntemleri hakkında daha fazla bilgiyi aşağıda bulabilirsiniz.
-
--   [Toplu kayıt](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) hakkında daha fazla bilgi edinin.
+ Platforma bağlı olarak cihazları farklı şekillerde toplu olarak kaydedebilirsiniz. Toplu kayıt gerekli olursa önce [toplu kayıt yöntemini belirleyin](device-enrollment.md) ve tasarımınıza dahil edin.
 
 ## <a name="feature-requirements"></a>Özellik gereksinimleri
 
 Bu bölümlerde, kullanım örneği senaryo gereksinimlerinize uygun aşağıdaki özellikleri ve yetenekleri inceleyeceğiz:
 
--   Hüküm ve Koşullar İlkeleri
+-   Hüküm ve koşullar ilkeleri
 
--   İlke
+-   Yapılandırma ilkeleri
 
--   Kaynak Profilleri
+-   Kaynak profilleri
 
 -   Uygulamalar
 
--   Uyumluluk İlkesi
+-   Uyumluluk ilkesi
 
--   Koşullu Erişim
+-   Koşullu erişim
 
 Bu alanların her birini daha ayrıntılı bir şekilde gözden geçirelim.
 
-### <a name="terms-and-conditions-policies"></a>Hüküm ve Koşullar ilkeleri
+### <a name="terms-and-conditions-policies"></a>Hüküm ve koşullar ilkeleri
 
-Hüküm ve Koşullar, bir son kullanıcının kayıt öncesi kabul etmesi gereken ilkeleri veya koşulları açıklamak için kullanılabilir. Intune, kullanıcı gruplarına birden çok hüküm ve koşullar ilkesi ekleme ve dağıtma yeteneğini destekler. Hüküm ve koşul ilkelerinin gerekli olup olmadığını belirlemeniz gerekir. Gerekliyse kuruluşta bu bilgiyi sağlamaktan kimin sorumlu olacağını belirlemelisiniz.
+Bir son kullanıcının kayıt öncesi kabul etmesi gereken ilkeleri veya koşulları açıklamak için [hüküm ve koşullar](terms-and-conditions-create.md) kullanabilirsiniz. Intune, kullanıcı gruplarına birden çok hüküm ve koşullar ilkesi ekleme ve dağıtma yeteneğini destekler.
 
--   Intune’da [hüküm ve koşul ilkeleri oluşturma](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) hakkında bilgi edinin. Hüküm ve koşullar ilkesinin nasıl belgeleneceğine ilişkin bir örnek aşağıda verilmiştir.
+Hüküm ve koşul ilkelerinin gerekli olup olmadığını belirlemeniz gerekir. Gerekliyse kuruluşta bu bilgiyi sağlamaktan kimin sorumlu olacağını belirlemelisiniz. Hüküm ve koşullar ilkesinin nasıl belgeleneceğine ilişkin bir örnek aşağıda verilmiştir.
 
 | **Hüküm ve Koşullar adı** | **Kullanım örneği** | **Hedeflenen grup** |
 |:---:|:---:|:---:|
 | Kurumsal Hüküm ve Koşullar | Kurumsal | Kurumsal kullanıcılar |                 
 | KCG Hüküm ve Koşulları | KCG | KCG kullanıcıları |                
 
+
+Hüküm ve koşullarınızı kullanıcı gruplarınıza eşlemek için [yukarıdaki tablonun şablonu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+
 ### <a name="configuration-policies"></a>Yapılandırma ilkeleri
 
-Yapılandırma ilkeleri bir cihazdaki güvenlik ayarlarını ve özelliklerini yönetmek için kullanılır. Yapılandırma ilkelerinizi tasarlarken, Intune cihazları için gerekli yapılandırmaları belirlemek için kullanım örneği gereksinimleri bölümüne bakın. Hangi ayarların ve bunların nasıl yapılandırılacağını ve ayrıca hangi kullanıcıya veya cihaz gruplarına hedefleneceğini belgeleyin.
+Bir cihazdaki güvenlik ayarlarını ve özelliklerini yönetmek için yapılandırma ilkeleri kullanın. Yapılandırma ilkelerinizi tasarlarken, Intune cihazları için gerekli yapılandırmaları belirlemek için kullanım örneği gereksinimleri bölümüne bakın. Ayarları ve nasıl yapılandırılmaları gerektiğini belgeleyin. Ayrıca bunların hangi kullanıcı veya cihaz gruplarına hedefleneceğini belgeleyin.
 
-Platform başına en az bir Yapılandırma İlkesi oluşturmanız gerekir. Gerekirse her platform için birden çok Yapılandırma İlkesi oluşturabilirsiniz. Aşağıda farklı platformlar ve kullanım örneği senaryoları için dört farklı yapılandırma ilkesi tasarlamaya örnek verilmiştir.
+Platform başına en az bir yapılandırma ilkesi oluşturmanız gerekir. Gerekirse her platform için birden çok yapılandırma ilkesi oluşturabilirsiniz. Aşağıda farklı platformlar ve kullanım örneği senaryoları için dört farklı yapılandırma ilkesi tasarlamaya örnek verilmiştir.
 
 | **İlke adı** | **Cihaz platformu** | **Ayarlar** | **Hedef grup** |   
 |:---:|:---:|:---:|:---:|
@@ -258,9 +259,12 @@ Platform başına en az bir Yapılandırma İlkesi oluşturmanız gerekir. Gerek
 | KCG – iOS  | iOS | PIN gereklidir, Uzunluğu: 4 | KCG cihazlar |
 | KCG – Android  | Android | PIN gereklidir, Uzunluğu: 4 | KCG cihazlar |
 
+
+Yapılandırma ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+
 ### <a name="profiles"></a>Profiller
 
-Profiller, son kullanıcının şirket verilerine bağlanmasına yardımcı olmak için kullanılır. Intune birçok profil türünü destekler. [Profillerin](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune) ne zaman yapılandırılacağını belirlemek için kullanım örneklerine ve gereksinimlerine başvurun. Tüm cihaz profilleri platform türüne göre kategorize edilir ve tasarım belgelerine eklenmelidir.
+Son kullanıcının şirket verilerine bağlanmasına yardımcı olmak için profiller kullanın. Intune birçok profil türünü destekler. Profillerin ne zaman yapılandırılacağını belirlemek için kullanım örneklerine ve gereksinimlerine başvurun. Tüm cihaz profilleri platform türüne göre kategorize edilir ve tasarım belgelerine eklenmelidir.
 
 -   Sertifika profilleri
 
@@ -272,7 +276,7 @@ Profiller, son kullanıcının şirket verilerine bağlanmasına yardımcı olma
 
 Her profil türünü daha ayrıntılı bir şekilde inceleyelim.
 
-##### <a name="certificate-profiles"></a>Sertifika profilleri
+#### <a name="certificate-profiles"></a>Sertifika profilleri
 
 Sertifika profilleri Intune’un bir kullanıcı veya cihaza sertifika vermesine olanak tanır. Intune aşağıdakileri destekler:
 
@@ -282,10 +286,10 @@ Sertifika profilleri Intune’un bir kullanıcı veya cihaza sertifika vermesine
 
 -   PFX sertifikası.
 
-Hangi kullanıcı grubunun sertifikaya ihtiyacı olduğu, kaç sertifika profili gerekeceği ve bunların hangi kullanıcı gruplarına dağıtılacağının belgelenmesi önerilir.
+Hangi kullanıcı grubunun sertifikaya ihtiyacı olduğunu, kaç sertifika profili gerekeceğini ve bunların hangi kullanıcı gruplarına dağıtılacağını belgelemeniz önerilir.
 
 >[!NOTE]
-> Güvenilen kök sertifikanın SCEP sertifikası için gerekli olduğunu unutmayın ve SCEP sertifikası için hedeflenen tüm kullanıcıların aynı zamanda güvenilen kök sertifika alacağından emin olun. SCEP sertifikaları gerekiyorsa hangi SCEP sertifika şablonlarının gerekli olacağını tasarlayın ve belgeleyin.
+> Güvenilen kök sertifikanın SCEP sertifikası için gerekli olduğunu unutmayın ve SCEP sertifikası için hedeflenen tüm kullanıcıların aynı zamanda güvenilen kök sertifika alacağından emin olun. SCEP sertifikaları gerekiyorsa, hangi SCEP sertifika şablonlarına gerek duyduğunuzu tasarlayın ve belgeleyin.
 
 Tasarım sırasında sertifikaları belgelemeye dair bir örnek aşağıda verilmiştir:
 
@@ -294,11 +298,12 @@ Tasarım sırasında sertifikaları belgelemeye dair bir örnek aşağıda veril
 | Kök CA | Kurumsal Kök CA | Android, iOS, Windows mobile | Kurumsal, KCG  |                                                           
 | SCEP | Kullanıcı Sertifikası | Android, iOS, Windows mobile | Kurumsal, KCG |                                                           
 
-##### <a name="wi-fi-profile"></a>Wi-Fi profili
 
-Wi-Fi profilleri, bir mobil cihazı otomatik olarak kablosuz ağa bağlamak için kullanılır. Intune, Wi-Fi profillerinin desteklenen tüm platformlara dağıtılmasını destekler.
+Sertifika profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
--   [Intune’un Wi-Fi profillerini nasıl desteklediği](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) hakkında daha fazla bilgi edinin.
+#### <a name="wi-fi-profile"></a>Wi-Fi profili
+
+Wi-Fi profilleri, bir mobil cihazı otomatik olarak kablosuz ağa bağlamak için kullanılır. Intune, Wi-Fi profillerinin desteklenen tüm platformlara dağıtılmasını destekler. [Intune’un Wi-Fi profillerini nasıl desteklediği](wi-fi-settings-configure.md) hakkında daha fazla bilgi edinin.
 
 Bir Wi-Fi profili için bir tasarım örneği aşağıda verilmiştir:
 
@@ -307,11 +312,12 @@ Bir Wi-Fi profili için bir tasarım örneği aşağıda verilmiştir:
 | Wi-Fi | Asya Wi-Fi profili | Android | Kurumsal, KCG Asya bölgesi|                                                           
 | Wi-Fi | Kuzey Amerika Wi-Fi profili | Android, iOS, Windows 10 Mobile | Kurumsal, KCG Kuzey Amerika bölgesi |                                                           
 
-##### <a name="vpn-profile"></a>VPN profili
 
-VPN profilleri, kullanıcıların ağınıza uzak konumlardan güvenli bir şekilde erişmesini sağlar. Intune, yerel mobil VPN bağlantıları ve üçüncü taraf satıcılarından VPN profillerini destekler.
+Wi-Fi profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
--   [Intune tarafından desteklenen VPN profilleri ve satıcıları](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune) hakkında daha fazla bilgi edinin.
+#### <a name="vpn-profile"></a>VPN profili
+
+VPN profilleri, kullanıcıların ağınıza uzak konumlardan güvenli bir şekilde erişmesini sağlar. Intune, yerel mobil VPN bağlantıları ve üçüncü taraf satıcılarından VPN profillerini destekler. [Intune tarafından desteklenen VPN profilleri ve satıcıları](vpn-settings-configure.md) hakkında daha fazla bilgi edinin.
 
 Bir VPN profili tasarımının belgelenmesine ilişkin bir örnek aşağıda verilmiştir.
 
@@ -320,11 +326,11 @@ Bir VPN profili tasarımının belgelenmesine ilişkin bir örnek aşağıda ver
 | VPN | VPN Cisco herhangi bir bağlantı Profili | Android, iOS, Windows 10 Mobile | Kurumsal, KCG Kuzey Amerika ve Almanya|                                                           
 | VPN | Pulse Secure | Android | Kurumsal, KCG Asya bölgesi |                                                           
 
-##### <a name="email-profile"></a>E-posta profili
 
-E-posta profilleri, bir e-posta istemcisinin bağlantı bilgileriyle otomatik olarak kurulmasına ve e-posta yapılandırmasını ayarlamasına olanak tanır. Intune, bazı cihazlarda e-posta profillerini destekler.
+VPN profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+#### <a name="email-profile"></a>E-posta profili
 
--   [E-posta profilleri](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) ve hangi platformların desteklendiği hakkında daha fazla bilgi edinin.
+E-posta profilleri, bir e-posta istemcisinin bağlantı bilgileriyle ve e-posta yapılandırması ile otomatik olarak ayarlamasına olanak tanır. Intune, bazı cihazlarda e-posta profillerini destekler. [E-posta profilleri ve hangi platformların desteklendiği](email-settings-configure.md) hakkında daha fazla bilgi edinin.
 
 E-posta profillerinin tasarımının belgelenmesine dair bir örnek aşağıda verilmiştir:
 
@@ -333,19 +339,21 @@ E-posta profillerinin tasarımının belgelenmesine dair bir örnek aşağıda v
 | E-posta profili | iOS e-posta profili | iOS | Kurumsal – KCG bilgi çalışanı |                                                           
 | E-posta profili | Android Knox e-posta profili | Android Knox | KCG |
 
+
+E-posta profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 ### <a name="apps"></a>Uygulamalar
 
-Intune, kullanıcılara veya cihazlara uygulama sağlamayı birden çok yolla destekler. Sağlanan uygulama türü; yazılım yükleme uygulamaları, genel uygulama mağazasından uygulamalar, dış bağlantılar veya yönetilen iOS uygulamaları olabilir. Tek tek uygulama dağıtımlarına ek olarak toplu satın alınan uygulamalar, iOS ve Windows için toplu satın alma programları aracılığıyla yönetilebilir ve dağıtılabilir. Intune’un uygulamaları ve toplu satın alma programlarını nasıl desteklediği hakkında daha fazla bilgi aşağıda verilmiştir.
+Kullanıcılara veya cihazlara uygulamaları çeşitli yollarla sunmak için Intune kullanabilirsiniz. Uygulama türü yazılım yükleme uygulamalarını, genel uygulama mağazası uygulamalarını, dış bağlantıları veya yönetilen iOS uygulamalarını içerir. Tek tek uygulama dağıtımlarına ek olarak, iOS ve Windows için toplu satın alma programları aracılığıyla edinilen toplu satın alınan uygulamaları yönetilebilir ve dağıtılabilirsiniz. Daha fazla bilgi:
 
--   [Uygulama türleri](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) hakkında daha fazla bilgi edinin
+-   [Sağlayabileceğiniz uygulama türleri](app-management.md)
 
--   [iOS İş için Volume Purchase Program (VPP)](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune) hakkında daha fazla bilgi edinin.
+-   [iOS İş için Toplu Satın Alma Programı (VPP)](vpp-apps-ios.md)
 
--   [İş için Windows Mağazası](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) hakkında daha fazla bilgi edinin.
+-   [İş için Windows Mağazası uygulamaları](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Uygulama türü gereksinimleri
 
-Uygulamalar kullanıcılara ve cihazlara dağıtılabildiği için hangi uygulamaların Intune tarafından yönetileceğine karar vermeniz önerilir. Listeyi oluştururken aşağıdaki soruları yanıtlamayı deneyin:
+Uygulamalar kullanıcılara ve cihazlara dağıtılabildiği için hangi uygulamaların Intune tarafından yönetileceğine karar vermenizi öneririz. Listeyi oluştururken aşağıdaki soruları yanıtlamayı deneyin:
 
 -   Uygulamalar bulut hizmetleriyle tümleştirme gerektiriyor mu?
 
@@ -357,24 +365,25 @@ Uygulamalar kullanıcılara ve cihazlara dağıtılabildiği için hangi uygulam
 
 -   Uygulamalar kullanıcının cihazlarından İnternet erişimini gerektiriyor mu?
 
--   Uygulamalar bir uygulama mağazasında genel olarak kullanılabilir mi ya da özel İş Kolu Uygulamaları mı?
+-   Uygulamalar bir uygulama mağazasında genel olarak kullanılabilir mi ya da özel iş kolu uygulamaları (LOB) mı?
 
-
->[!TIP]
-> [Intune’un desteklediği farklı türde uygulamalara](/intune-classic/deploy-use/add-apps) göz atın.
 
 #### <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
 
-Uygulama koruma ilkeleri, uygulamanın kurumsal verileri nasıl yönettiğini tanımlayarak veri kaybını en aza indirir. Intune, mobil uygulama yönetimi ile çalışması için oluşturulan tüm uygulamalarda uygulama koruma ilkelerini destekler. Uygulama koruma ilkesi tasarlarken, belirli bir uygulamada şirket verilerine hangi kısıtlamaları getireceğinizi belirlemeniz gerekir. [Uygulama koruma ilkelerinin](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) nasıl çalıştığını gözden geçirmeniz önerilir. Aşağıda mevcut uygulamaların nasıl belgeleneceği ve hangi korumanın gerektiğine ilişkin bir örnek verilmiştir.
+Uygulama koruma ilkeleri, uygulamanın kurumsal verileri nasıl yönettiğini tanımlayarak veri kaybını en aza indirir. Intune, mobil uygulama yönetimi ile çalışması için oluşturulan tüm uygulamalarda uygulama koruma ilkelerini destekler. Uygulama koruma ilkesi tasarlarken, belirli bir uygulamada şirket verilerine hangi kısıtlamaları getirmek istediğinizi belirlemeniz gerekir. [Uygulama koruma ilkelerinin](app-protection-policy.md) nasıl çalıştığını gözden geçirmenizi öneririz. Aşağıda mevcut uygulamaların nasıl belgeleneceği ve hangi korumanın gerektiğine ilişkin bir örnek verilmiştir.
 
 | **Uygulama** | **Amaç** | **Platformlar** | **Kullanım örneği** | **Uygulama koruma ilkesi** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook mobile  | Kullanılabilir | iOS | Kurumsal - Yöneticiler | Jailbreak uygulanmış olamaz, dosyaları şifreleyin |                                                         
 | Word | Kullanılabilir | iOS, Android - Samsung Knox, Knox harici, Windows 10 mobile | Kurumsal, KCG | Jailbreak uygulanmış olamaz, dosyaları şifreleyin |                                                         
 
+
+Uygulama koruma ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="compliance-policies"></a>Uyumluluk ilkeleri
 
-Uyumluluk ilkeleri, bir cihazın belirli gereksinimlere uygun olup olmadığını belirler. Intune, bir cihazın uyumlu veya uyumsuz olarak kabul edileceğini belirlemek için uyumluluk ilkeleri kullanır. Bundan sonra, şirket kaynaklarına erişimi kısıtlamak için uyumluluk durumu kullanılabilir. Koşullu erişim gerekiyorsa bir [cihaz uyumluluk ilkesi](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) tasarlamanız önerilir. Kaç cihaz uyumluluk ilkesi gerektiğini ve hangi kullanıcı gruplarının hedef kullanıcı grupları olduğunu belirlemek için gereksinimlere ve kullanım örneklerine başvurun. Ek olarak, bir cihazın uyumsuz olarak kabul edilmesi için oturum açmadan önce ne kadar süre çevrimdışı kalabileceğini de belirlemeniz gerekir.
+Uyumluluk ilkeleri, bir cihazın belirli gereksinimlere uygun olup olmadığını belirler. Intune, bir cihazın uyumlu veya uyumsuz olarak kabul edileceğini belirlemek için uyumluluk ilkeleri kullanır. Bundan sonra, şirket kaynaklarına erişimi kısıtlamak veya erişime izin vermek için uyumluluk durumu kullanılabilir. Koşullu erişim gerekiyorsa bir [cihaz uyumluluk ilkesi](device-compliance.md) tasarlamanızı öneririz.
+
+Kaç cihaz uyumluluk ilkesine gerek duyduğunuzu ve hangi kullanıcı gruplarının hedef kullanıcı grupları olduğunu belirlemek için gereksinimlere ve kullanım örneklerine başvurun. Ek olarak, bir cihazın uyumsuz olarak kabul edilmesi için oturum açmadan önce ne kadar süre çevrimdışı kalabileceğine de karar vermeniz gerekir.
 
 Bir uyumluluk ilkesi tasarlamaya ilişkin bir örnek aşağıda verilmiştir:
 
@@ -382,21 +391,17 @@ Bir uyumluluk ilkesi tasarlamaya ilişkin bir örnek aşağıda verilmiştir:
 |:---:|:---:|:---:|:---:|
 | Uyumluluk ilkesi | iOS, Android - Samsung Knox, Knox harici, Windows 10 mobile | PIN - gerekli, jailbreak uygulanmış olamaz | Kurumsal, KCG |
 
+
+Uyumluluk ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="conditional-access-policies"></a>Koşullu erişim ilkeleri
 
-Koşullu Erişim yalnızca uyumlu cihazların şirket kaynaklarına erişmesine izin vermek için kullanılır. Intune şirket kaynaklarına erişimi denetlemek için tüm Enterprise Mobility + Security (EMS) ile birlikte çalışır. Koşullu erişimin gerekli olup olmadığını ve neyin korunması gerektiğini belirlemeniz gerekir.
+Koşullu erişim yalnızca uyumlu cihazların e-postaya ve diğer şirket kaynaklarına erişmesine izin vermek için kullanılır. Intune şirket kaynaklarına erişimi denetlemek için Enterprise Mobility + Security (EMS) ile birlikte çalışır. Koşullu erişimin gerekli olup olmadığına ve neyin korunması gerektiğine karar vermeniz gerekir. [Koşullu erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
 
--   [Koşullu Erişim](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) hakkında daha fazla bilgi edinin.
-
-Çevrimiçi erişim için hangi platformların ve kullanıcı gruplarının koşullu erişim ilkeleri tarafından hedefleneceğini belirleyin.
-
-Ek olarak, Exchange Online veya Şirket İçi Exchange için Intune hizmetten hizmete bağlayıcısını yüklemeniz/yapılandırmanızın gerekli olup olmadığını belirlemeniz gerekir.
-
-Intune hizmetten hizmete bağlayıcılarının nasıl yükleneceği ve yapılandırılacağı hakkında daha fazla bilgi edinin:
+Çevrimiçi erişim için hangi platformların ve kullanıcı gruplarının koşullu erişim ilkeleri tarafından hedefleneceğine karar verin. Ayrıca, Exchange Online veya Şirket İçi Exchange için Intune hizmetten hizmete bağlayıcısını yüklemeniz veya yapılandırmanızın gerekli olup olmadığını belirleyin. Intune hizmetten hizmete bağlayıcılarının nasıl yükleneceği ve yapılandırılacağı hakkında daha fazla bilgi edinin: <!---these links are correct--->
 
 -   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
 
--   [Exchange Şirket İçi](/intune-classic/deploy-use/intune-on-premises-exchange-connector)
+-   [Şirket İçi Exchange](exchange-connector-install.md)
 
 Aşağıda, koşullu erişim ilkelerinin belgelenmesine dair bir örnek verilmiştir:
 
@@ -405,6 +410,8 @@ Aşağıda, koşullu erişim ilkelerinin belgelenmesine dair bir örnek verilmi�
 | Exchange Online | iOS, Android | Intune’un desteklediği platformlarda uyumlu olmayan cihazları engelle | Kurumsal, KCG |
 | SharePoint Online | iOS, Android |  | Kurumsal, KCG |
 
-## <a name="next-section"></a>Sonraki Bölüm
+Koşullu erişim ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+
+## <a name="next-steps"></a>Sonraki adımlar
 
 Sonraki bölümde [Intune uygulama süreci](planning-guide-onboarding.md) hakkında yönergeler sağlanır.

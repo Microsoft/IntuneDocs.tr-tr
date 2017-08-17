@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80aa0e5afd1f8862b181d455ff6b545e462f90c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c6035ce5119b618ed63cf817082dd3eedc6eda7
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Kaybolan veya çalınan iOS cihazlarının yerini Intune ile bulma
 
@@ -26,6 +26,16 @@ ms.lasthandoff: 07/01/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 **Cihazı Bul** cihaz eylemi, kayıp veya çalınan bir iOS cihazının konumunu bir haritada görüntüler. Cihazın DEP aracılığıyla kaydedilen ve denetimli modda olan, şirkete ait bir iOS cihazı olması gerekir. Bu eylemi kullanabilmek için önce cihazın [kayıp moduna](/intune-azure/manage-devices/lost-mode.md) geçirilmiş olması gerekir.
+
+## <a name="supported-platforms"></a>Desteklenen platformlar
+
+- Windows - Desteklenmiyor
+- Windows Phone - Desteklenmiyor
+- iOS - iOS 9.3 ve üzeri (Kayıp modunda), denetimli ve şirkete ait için desteklenir
+- macOS - Desteklenmiyor
+- Android - Desteklenmiyor
+
+## <a name="how-to-locate-a-lost-or-stolen-device"></a>Kaybolan veya çalınan bir cihazın yerini bulma
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
@@ -44,3 +54,8 @@ ms.lasthandoff: 07/01/2017
 - Veriler 24 saat depolandıktan sonra kaldırılır. Konum verilerini el ile kaldıramazsınız.
 - Konum verileri hem depolanma hem de aktarım sırasında şifrelenir.
 - Kayıp modunu yapılandırdığınızda, kilitleme ekranında girdiğiniz iletinin, bulan kişinin cihazı iade etmesine yardımcı olan bilgiler içermesini öneririz.
+
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Az önce gerçekleştirdiğiniz işlemin durumunu görmek için **Cihazlar ve gruplar** dikey penceresinde **Cihaz Eylemleri**'ni seçin.

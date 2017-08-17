@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 45a3a8fe4960cc1bb8c5f2150f57d34d59c08e0a
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune’da Android cihazları için özel ayarlar
 
@@ -40,3 +40,13 @@ Bu özellik, Intune ilkeleri ile yapılandırılamayan Android ayarlarını atam
     - **OMA-URI** - Ayar sağlamak istediğiniz OMA-URI’yi belirtin.
     - **Değer** - Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz değeri girin.
 4. Bitirdiğinizde **Tamam**’a tıklayın, ardından gereken diğer ayarları eklemeye devam edin.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Ayarları tamamladığınızda profil oluşturulur ve profil listesi dikey penceresinde görüntülenir. Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).
+
+Kullanabileceğiniz özel ayarlara bazı örnekler için bkz.
+
+- [Microsoft Intune özel cihaz profili kullanarak önceden paylaşılan anahtara sahip Wi-Fi profili oluşturma](/intune/wi-fi-profile-shared-key)
+- [Microsoft Intune özel profili kullanarak Android cihazları için uygulama başına VPN profili oluşturma](/intune/android-pulse-secure-per-app-vpn)
+- [Microsoft Intune’da özel ilkeler kullanarak Samsung KNOX Standart cihazları için uygulamalara izin verme veya bunları engelleme](/intune/samsung-knox-apps-allow-block)

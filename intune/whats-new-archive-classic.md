@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f55d99ccf2fb5263ac9c7e0c4c8d0db8208456f5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 90ce9ae6c1f48b6a42cf62f8873621499ba05256
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="whats-new-in-the-intune-classic-console---previous-months"></a>Intune klasik konsoldaki yenilikler - önceki aylar
 
@@ -232,8 +232,8 @@ Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kı
 
 Önce ve sonra görüntülerini [UI güncelleştirmeleri sayfasında](whats-new-app-ui.md) bulabilirsiniz.
 
-### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>İş İçin Windows Mağazası’yla birden çok yönetim aracını ilişkilendirme<!--926135-->
-İş İçin Windows Mağazası uygulamalarını dağıtmak için birden fazla yönetim aracı kullanmanız durumunda önceden bunların yalnızca birini İş İçin Windows Mağazası ile ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz. Ayrıntılar için bkz. [Microsoft Intune ile İş İçin Windows Mağazası'ndan satın aldığınız uygulamaları yönetme](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
+### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>İş İçin Microsoft Mağazası’yla birden çok yönetim aracını ilişkilendirme<!--926135-->
+İş İçin Microsoft Mağazası uygulamalarını dağıtmak için birden fazla yönetim aracı kullanmanız durumunda önceden bunların yalnızca birini İş İçin Microsoft Mağazası ile ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz. Ayrıntılar için bkz. [Microsoft Intune ile İş İçin Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure’da Intune yönetici deneyiminin genel önizlemesindeki yenilikler<!--736542-->
 
@@ -346,7 +346,7 @@ __Intune AV Player, Image Viewer ve PDF Viewer uygulamaları Android’de artık
 
 __Windows 10 cihazları için Yeni Microsoft Intune Şirket Portalı__ Microsoft, [Windows 10 cihazları için yeni bir Microsoft Intune Şirket Portalı uygulaması](https://www.microsoft.com/store/apps/9wzdncrfj3pz) piyasaya sürdü. Yeni Windows 10 Evrensel biçiminden yararlanan bu uygulama, kullanıcıya uygulama içinden güncelleştirilmiş bir kullanıcı deneyimi ve kullanıcının bugün kullanmakta olduğu işlevselliğin tümünü olanaklı kılmaya devam ederken, ister bilgisayar ister Mobil tüm Windows 10 cihazlarında aynı deneyimi sunacak.
 
-Yeni uygulama, kullanıcının Windows 10 cihazlarında çoklu oturum açma (SSO) ve sertifika tabanlı kimlik doğrulama gibi ek platform özelliklerinden yararlanmasını da sağlar. Uygulama, mevcut Windows 8.1 Şirket Portalı ve Windows Phone 8.1 Şirket Portalı için güncelleştirme olarak Windows Mağazası'ndan yüklenir. Daha fazla ayrıntı için bkz. [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
+Yeni uygulama, kullanıcının Windows 10 cihazlarında çoklu oturum açma (SSO) ve sertifika tabanlı kimlik doğrulama gibi ek platform özelliklerinden yararlanmasını da sağlar. Uygulama, mevcut Windows 8.1 Şirket Portalı ve Windows Phone 8.1 Şirket Portalı için güncelleştirme olarak Microsoft Mağazası'ndan yüklenir. Daha fazla ayrıntı için bkz. [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
 
 > [!IMPORTANT]
 > __Intune ve Android for Work hakkında bir Güncelleştirme__ Android for Work uygulamalarını __Gerekli__ eylemiyle dağıtabilirsiniz ancak uygulamaları __Kullanılabilir__ olarak dağıtmak için Intune gruplarınızın yeni Azure AD grupları deneyimine geçirilmiş olması gerekir.

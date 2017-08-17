@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows mağazası uygulamalarını Microsoft Intune’a ekleme
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>Windows 10 Şirket Portalı uygulamasını el ile atama
-Son kullanıcılar cihazları yönetmek ve uygulama yüklemek için Şirket Portalı uygulamasını Windows Mağazası'ndan yükleyebilir. Ancak şirketiniz, Şirket Portalı uygulamasını sizin atamanızı gerektiriyorsa Intune ile İş İçin Windows Mağazası'nı tümleştirmiş olmasanız bile Windows 10 Şirket Portalı uygulamasını doğrudan Intune'dan atayabilirsiniz.
+Son kullanıcılar cihazları yönetmek ve uygulama yüklemek için Intune Şirket Portalı uygulamasını Microsoft Mağazası'ndan yükleyebilir. Ancak şirketiniz, Intune Şirket Portalı uygulamasını sizin atamanızı gerektiriyorsa Intune ile İş İçin Microsoft Mağazası'nı tümleştirmiş olmasanız bile Windows 10 Şirket Portalı uygulamasını doğrudan Intune'dan atayabilirsiniz.
 
  > [!NOTE]
  > Bu seçeneğin kullanılması, her uygulama güncelleştirmesi yayımlandığında el ile güncelleştirme atanmasını gerektirir.
 
-1. [İş İçin Windows Mağazası](https://www.microsoft.com/business-store)’ndaki hesabınızda oturum açın ve Şirket Portalı uygulamasının **çevrimdışı lisanslı** sürümünü edinin.  
+1. [İş İçin Microsoft Mağazası](https://www.microsoft.com/business-store)’ndaki hesabınızda oturum açın ve Intune Şirket Portalı uygulamasının **çevrimdışı lisanslı** sürümünü edinin.  
 2. Uygulamayı aldıktan sonra **Envanter** sayfasında uygulamayı seçin.  
 3. **Platform** olarak **Windows 10 tüm cihazlar**’ı ve uygun **Mimari**’yi seçip sonra indirin. Bu uygulama için bir uygulama lisans dosyası gerekmez.
 ![İndirme işlemi için Windows 10 tüm cihazlar ve Mimari X86 Paketi ayrıntılarının görüntüsü](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ Windows 10 Şirket Portalı uygulaması bu şekilde imzalanır ve atanırsa, ma�
 Uygulamanın bu şekilde nasıl imzalanıp atanacağı aşağıda açıklanmaktadır:
 
 1. Microsoft Intune Windows 10 Şirket Portalı Uygulamasını İmzalama Betiğini [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) adresinden indirin.  Bu betik, Windows 10 için Windows SDK’nın ana bilgisayara yüklenmiş olmasını gerektirir. Windows 10 için Windows SDK’yı indirmek için [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) adresini ziyaret edin.
-2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Windows Mağazası'ndan indirin.  
+2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Microsoft Mağazası'ndan indirin.  
 3. Betik üst bilgisinde açıklanan giriş parametrelerini (ayıklanmış hali aşağıdadır) kullanıp betiği çalıştırarak Windows 10 Şirket Portalı uygulamasını imzalayın. Bağımlılıkların betiğe geçirilmesi gerekmez. Bunlar, yalnızca uygulama Intune Yönetici Konsolu’na yüklenirken gereklidir.
 
 |Parametre | Açıklama|

@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
@@ -159,7 +159,7 @@ Son kullanıcıların Android cihazları Intune’a kaydederken karşılaşabile
 |Hata iletisi|Sorun|Çözüm|
 |---|---|---|
 |**Erişim için BT yöneticisinin lisans ataması gerekiyor**<br>BT yöneticiniz, bu uygulamayı kullanmanız için size erişim vermemiş. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Cihaz kaydedilemiyor çünkü bu kullanıcının hesabında gerekli lisans yok.|Cihazlar kaydedilmeden önce kullanıcılara gerekli lisans atanmış olmalıdır. Bu ileti kullanıcının belirlenen mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin, mobil cihaz yönetimi yetkilisi olarak Intune belirlendiyse ve kullanıcı bir System Center 2012 R2 Configuration Manager lisansı kullanıyorsa bu hatayı alır.<br><br>[Kullanıcı hesaplarınıza Intune lisansları atama](/intune/licenses-assign.md) hakkında bilgi alın.
-|**BT yöneticisinin MDM yetkilisi ayarlaması gerekiyor<br>Görünüşe göre BT yöneticiniz MDM yetkilisi ayarlamamış. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Mobil cihaz yönetimi yetkilisi tanımlanmadı.|Intune’da mobil cihaz yönetimi yetkilisi belirlenmemiştir. [Mobil cihaz yönetimi yetkilisini ayarlama](/intune/mdm-authority-set.md) hakkında bilgi edinin.|
+|**BT yöneticisinin MDM yetkilisi ayarlaması gerekiyor**<br>Görünüşe göre BT yöneticiniz MDM yetkilisi ayarlamamış. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Mobil cihaz yönetimi yetkilisi tanımlanmadı.|Intune’da mobil cihaz yönetimi yetkilisi belirlenmemiştir. [Mobil cihaz yönetimi yetkilisini ayarlama](/intune/mdm-authority-set.md) hakkında bilgi edinin.|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Cihazlar Intune hizmetini denetlemiyor ve Intune yönetici konsolunda "Uygun olmayan durumda" olarak görüntüleniyor

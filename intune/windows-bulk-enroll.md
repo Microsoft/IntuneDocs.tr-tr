@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 4e9dae27b981533dfff2080a5b7f9ca961509cd8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 67af5f6545a0ef4a833c6f709fc4685de7f64113
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
@@ -37,7 +37,7 @@ Windows cihazları toplu kaydetmek için aşağıdakiler gereklidir:
 
 ## <a name="create-a-provisioning-package"></a>Sağlama paketi oluşturma
 
-1. Windows Mağazası'ndan [Windows Yapılandırma Tasarımcısı (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) uygulamasını indirin.
+1. Microsoft Mağazası'ndan [Windows Yapılandırma Tasarımcısı (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) uygulamasını indirin.
 ![Windows Yapılandırma Tasarımcısı uygulamasının Mağaza ekran görüntüleri ve açıklamasının ekran görüntüsü](media/bulk-enroll-store.png)
 
 2. **Windows Yapılandırma Tasarımcısı** uygulamasını açın ve **Masaüstü cihazları sağla** seçeneğini belirleyin.
