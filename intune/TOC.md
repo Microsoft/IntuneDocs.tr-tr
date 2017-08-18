@@ -17,11 +17,12 @@
 ## [Bilinen sorunlar](known-issues.md)
 ## [Destek alın](get-support.md)
 
-# [Başlarken](get-started-evaluation.md)
-## [Grup oluşturma](get-started-groups.md)
+# [Intune kullanmaya başlama](get-started-evaluation.md)
+## [Azure portalında gezinme](get-started-azure.md)
 ## [Kullanıcı oluşturma](get-started-users.md)
-## [Cihazları kaydetme](get-started-enroll.md)
+## [Grup oluşturma](get-started-groups.md)
 ## [İlke atama](get-started-policies.md)
+## [Cihazları kaydetme](get-started-enroll.md)
 ## [Uygulamaları atama](get-started-apps.md)
 
 
