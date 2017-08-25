@@ -1,16 +1,111 @@
 # Intune için kullanıcı yardımı
+
 ## [İşleri halletmek için yönetilen cihazları kullanma](use-managed-devices-to-get-work-done.md)
+
 ## [Şirketim, Intune ile hangi bilgileri görüntüleyebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+
 ## [Cihazımı sıfırladığımda ne olur?](what-happens-if-you-reset-your-device-cpwebsite.md)
+
 ## [Şirket Portalı’nda oturum açma](sign-in-to-the-company-portal.md)
+
 ## [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
 ### [Bir Android cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+### [Cihazınızı kaydetme](enroll-your-device-in-Intune-android.md)
+#### [Android for Work ile cihazınızı kaydetme](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+### [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-android.md)
+### [Cihazınızı şifreleme](encrypt-your-device-android.md)
+### [PIN veya parolanızı ayarlama](set-your-pin-or-password-android.md)
+### [Cihazımı sıfırladığımda ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+### [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
+### [Kilitleme süresini ayarlama](set-the-amount-of-time-before-your-device-is-locked-android.md)
+### [VPN'yi yükleme](install-your-companys-virtual-private-network-VPN-android.md)
+### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-android.md)
+### [Cihazınızın Intune kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+#### [Cihazınızın kaydını silme](unenroll-your-device-from-intune-android.md)
+#### [Kullanım Koşulları’nı reddettiyseniz cihazınızın kaydını silme](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+
 ### [Android cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-android.md)
+#### [Cihaz uyumluluğunu denetleme](check-compliance-on-your-device-android.md)
+
+#### [Sorunları gidermek için günlükleri kullanma]
+##### [Ayrıntılı günlük kaydını açma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+##### [E-posta kullanarak günlükleri gönderme](send-logs-to-your-it-admin-by-email-android.md)
+##### [USB kablosu kullanarak günlükleri gönderme](send-logs-to-your-it-admin-using-cable-android.md)
+##### [Kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-admin-android.md)
+
+### İşletim sistemi soruları
+#### [Cihazınızı güncelleştirme](you-need-to-update-your-android-device.md)
+#### [Desteklenmeyen sürüm](your-android-version-isnt-yet-supported.md)
+#### [Cihazınıza kök erişim izni verilmiş ve bağlanamıyorsunuz](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Gerekli bir sertifika eksik](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Bilinmeyen kaynakları kapatma](you-need-to-turn-off-unknown-sources-android.md)
+#### [USB hata ayıklamasını kapatma](you-need-to-turn-off-usb-debugging-android.md)
+#### [Güvenlik tehditleri taramasını açma](you-need-to-turn-on-scanning-for-security-threats-android.md)
+#### [Desteklenmeyen güvenlik yaması](you-need-to-update-your-device-OS-security-patch-android.md)
+#### [Şifreleme hataları olan cihazlar](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
+
+### Mobile Threat Defense
+#### [Mobile Threat Defense uygulaması yükleme](you-are-prompted-to-install-mtd-android.md)
+#### [Tehdidi çözümleme](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+
+
 ## [iOS veya Mac OS cihazınızı Intune ile kullanma](using-your-iOS-or-macOS-device-with-intune.md)
 ### [Bir iOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [Şirket Portalı'nı yükleme ve uygulamada oturum açma](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
+### [iOS cihazınızı kaydetme](enroll-your-device-in-intune-ios.md)
+### [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos.md)
+### [macOS cihazınızı Şirket Portalı'yla kaydetme](enroll-your-device-in-intune-macos-cp.md)
+
+### [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)
+### [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
+### [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+### [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
+### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-ios.md)
+### [Cihazınızın kaydını silme](unenroll-your-device-from-intune-ios.md)
+#### [Cihazınızın kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
+### [Cihazınızı el ile eşitleme](sync-your-device-manually-ios.md)
+
 ### [iOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-iOS.md)
-## [Windows cihazınızı Intune ile kullanma](using-your-windows-device-with-intune.md)
+#### [Ele geçirilen bir iOS cihazı yeniden bağlama](how-to-reconnect-a-compromised-ios-device.md)
+#### [Hataları şirketinize gönderme](send-errors-to-your-it-admin-ios.md)
+#### [Hataları Microsoft'a gönderme](send-logs-to-microsoft-ios.md)
+#### [Hata gösterildi](you-get-an-error-while-using-the-company-portal-app-ios.md)
+#### [Cihazınızı tanımlama](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
+#### [Seri numaranızı bulma](how-do-i-find-the-serial-number-on-my-device-ios.md)
+#### [iOS cihazınızı güncelleştirme](you-need-to-update-your-ios-device.md)
+#### [Kullandığım iOS sürümü henüz desteklenmiyor](your-ios-version-isnt-yet-supported.md)
+
+### Mobile Threat Defense
+#### [Mobile Threat Defense uygulaması yükleme](you-are-prompted-to-install-mtd-ios.md)
+#### [Tehdidi çözümleme](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
+
+
+## [Windows cihazınızı kullanma](using-your-windows-device-with-intune.md)
 ### [Bir Windows 10 cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Bir Windows cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Windows cihazını başka bir Windows sürümüyle kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+
+### [Windows cihazınızı kaydetme](enroll-your-device-in-intune-windows.md)
+### [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
+
+### [Cihazınızı şifreleme](encrypt-your-device-windows.md)
+### [Parolanızı ayarlama veya değiştirme](set-or-change-your-password-windows.md)
+### [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-windows.md)
+### [Cihazınızın kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+### [Cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-windows.md)
+### [Cihazınızı el ile eşitleme](sync-your-device-manually-windows.md)
+
 ### [Windows cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-windows.md)
+#### [Windows 10 cihazımı kaydedemiyorum](troubleshoot-your-windows-10-device-windows.md)
+#### [Windows cihazınızı güncelleştirme](you-need-to-update-your-windows-device.md)
+#### [Günlükleri Şirket Portalı uygulamasından gönderme](send-logs-to-your-it-admin-cp-windows.md)
+#### [Günlükleri Ayarlar uygulamasından gönderme](send-logs-to-your-it-admin-settings-windows.md)
+#### [Windows sürümüm henüz desteklenmiyor](your-windows-version-isnt-yet-supported.md)
+#### [Windows şifrelemeyi etkinleştirme](you-need-to-enable-windows-encryption.md)
+#### [Cihazımda kötü amaçlı yazılımdan koruma yazılımı olması gerekiyor](your-device-needs-antimalware-software.md)
+#### [Güvenli Önyüklemeyi Etkinleştirme](you-need-to-enable-secure-boot-windows.md)
+#### [Kod Bütünlüğünü Etkinleştirme](you-need-to-enable-code-integrity.md)
+
+
 ## [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
