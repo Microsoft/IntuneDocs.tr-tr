@@ -1,12 +1,12 @@
 ---
 title: "Kullanıcılar ile çalışmaya başlama"
 titleSuffix: Intune on Azure
-description: 
+description: "Mobil cihazlarda şirket kaynaklarına erişmesini sağlamak için Intune’a bir kullanıcı ekleyin."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,23 +15,21 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 1559a265b28627281b484c8250d1c597d2f094c6
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="get-started-with-users"></a>Kullanıcılar ile çalışmaya başlama
+# <a name="get-started-with-managing-users"></a>Kullanıcıları yönetmeye başlama
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Azure Active Directory, kuruluşunuzun cihaz ve uygulama gibi nesne gruplarını ve ayrıca kullanıcı gruplarını yönetir. Her cihazı ayrı yönetmek zorunda kalmak yerine kullanıcıları veya cihazları gruplayabilirsiniz. Bu, büyük sayıda kullanıcı ve cihaza kolayca uygulama ve ayar atamanıza izin verir.
+Kuruluşunuzdaki tüm farklı kişileri düşünün. Şirket kaynaklarını kullanan herkesin, Intune’da bu kaynaklara erişimi yönetmesi için bir kullanıcıya ihtiyacı vardır. 
 
 ## <a name="how-do-i-create-a-user"></a>Bir kullanıcı nasıl oluşturulur?
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Kaynak ara**'yı kullanarak **Kullanıcılar ve gruplar**’ı arayın.
-3. **Kullanıcılar ve gruplar** dikey penceresini açtıktan sonra **Tüm kullanıcılar**'ı, sonra **+Yeni kullanıcı**'yı seçin.
+2. **Kaynak ara**'yı kullanarak **Intune**'u arayın.
+3. **Microsoft Intune** dikey penceresini açtıktan sonra **Kullanıcılar**’ı seçin. **Tüm Kullanıcılar** sayfasında **+ Yeni kullanıcı**’yı seçin.
 4. Kullanıcının **Ad** ve **Kullanıcı adı** gibi ayrıntılarını girin. Kullanıcı adının etki alanı adı kısmı, "contoso.onmicrosoft.com" gibi ilk varsayılan etki alanı adı veya "contoso.com" gibi doğrulanmış, federasyon olmayan bir etki alanı adı olmalıdır.
 5. **Gruplar**'ın altından kullanıcının ekleneceği sınama grubunu seçin.
 6. Bir sınama cihazında oturum açmak üzere kullanabilmek için otomatik olarak oluşturulan kullanıcı parolasını kaydedin. Bu parolayı, hatırlayabilecekleri normal bir parola ile değiştirebilmeleri için kullanıcılara vermelisiniz.
@@ -50,3 +48,7 @@ Bir kullanıcı oluşturduktan sonra, bu kullanıcıya bir Intune lisansı atama
  > Bu işlem, kullanıcı için lisanslarınızdan birini kullanır. Yayındaki ortamınızı kullanıyorsanız bu lisansın kullanımını, daha sonra gerçek bir kullanıcıya yeniden atayabilmek için kapatabilirsiniz.
 
 5. **Kaydet**’i seçin.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+[Grupları kullanmaya başlama](get-started-groups.md) - Erişebilecekleri ilke ve uygulamaların yönetimini kolaylaştırmak için kullanıcıları gruplara ayırın.

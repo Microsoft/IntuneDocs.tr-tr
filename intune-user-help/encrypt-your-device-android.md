@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
+ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Android cihazınızı şifreleme kullanarak koruma
 
@@ -33,8 +33,8 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 
 1.  Cihazınız için bir ekran kilidi PIN veya parolasının ayarlandığından emin olun.
 
-2.  **Ayarlar**’da, **Güvenlik** &gt; **Cihazı Şifrele**’yi seçin.
-    (Bazı telefonlarda, "Şifrele" seçeneğini bulmak için **Depolama** &gt; **Depolama şifresi** veya **Depolama** &gt; **Kilit ekranı ve güvenlik** &gt; **Diğer güvenlik ayarları**’nı seçmeniz gerekebilir).
+2.  **Ayarlar**’da, **Güvenlik** > **Cihazı Şifrele**’yi seçin.
+    (Bazı telefonlarda, “Şifrele” seçeneğini bulmak için **Depolama** > **Depolama şifresi** veya **Depolama** > **Kilit ekranı ve güvenlik** > **Diğer güvenlik ayarları**’nı seçmeniz gerekebilir).
 
 3.  Ekrandaki yönergeleri takip edin. Şifreleme sırasında, cihazınız birkaç kere yeniden başlatılabilir.
 
@@ -54,14 +54,16 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 - Cihazınızda bir PIN veya parola ayarladığınızdan emin olun.
 - Cihazınızda zaten bir PIN veya parola ayarladıysanız, daha güvenli hale getirmek için BT yöneticinizin yapmanızı şart koşabileceği aşağıdaki adımları deneyin. Menü adları, sahip olduğunuz Android cihazın türüne bağlı olarak adımlarda gördüğünüzden biraz farklı olabilir.
 
-    1. **Ayarlar** > **Güvenlik** > **Ekran kilidi**’ne gidin. Geçerli PIN veya parolanızı onaylayın.
+    1. **Ayarlar** > **Kilit Ekranı ve Güvenlik** > **Ekran kilidi**’ne gidin. Geçerli PIN veya parolanızı onaylayın.
 
-    2. **Ekran kilidi seç** ekranında, kullanmak istediğiniz ekran kilidi türünü seçin.
+    2. **Ekran kilidi seç** ekranında, kullanmak istediğiniz ekran kilidi türünü seçin. 
 
-    3. **Güvenli başlatma** ekranında **Cihazı başlatmak için PIN gerektir**’e ve **Devam**’a dokunun.
+    3. Ekran kilidini seçtikten sonra **Kilit Ekranı ve Güvenlik** ekranına dönün ve **Güvenli Başlatma**’yı seçin. 
+    
+    4. **Güvenli başlatma** ekranında **Cihazı başlatmak için PIN gerektir**’e ve **Devam**’a dokunun.
 
-    4. Bir PIN seçin (daha önce girdiğiniz kodun aynısını girebilirsiniz) ve **PIN’inizi onaylayın**’a dokunun.
+    5. Bir PIN seçin (daha önce girdiğiniz kodun aynısını girebilirsiniz) ve **PIN’inizi onaylayın**’a dokunun.
 
-    5. Cihazınızda Şirket Portalı uygulamasını açın ve **Uyumluluğu Denetle**’yi seçin.
+    6. Cihazınızda Şirket Portalı uygulamasını açın ve **Uyumluluğu Denetle**’yi seçin.
 
 Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.

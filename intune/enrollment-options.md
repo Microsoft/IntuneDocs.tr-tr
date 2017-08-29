@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: dcc97e5bcffb35752b65e8ce275d38b9578da6fa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: 3514b580a4e35cc9e0813d6dd7fd0e1eee550d7c
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="enrollment-options-for-intune"></a>Intune için kayıt seçenekleri
 
@@ -41,6 +41,9 @@ iOS ve macOS cihaz kaydı için bir MDM anında iletme sertifikası gereklidir. 
 ## <a name="corporate-identifiers"></a>Kurumsal tanımlayıcılar
 
 Şirkete ait cihazları belirlemek için uluslararası mobil cihaz tanımlayıcısı (IMEI) numaralarını ve seri numaraları listeleyebilirsiniz. [Kurumsal tanımlayıcılar](corporate-identifiers-add.md) hakkında daha fazla bilgi edinin.
+## <a name="multi-factor-authentication"></a>Çok faktörlü kimlik doğrulaması
+
+Kullanıcıların bir cihaz kaydederken telefon, PIN veya biyometrik veri gibi ilave doğrulama yöntemleri kullanmasını gerekli kılabilirsiniz. [Çok faktörlü kimlik doğrulaması](multi-factor-authentication.md) hakkında daha fazla bilgi edinin.
 
 ## <a name="device-enrollment-manager"></a>Cihaz kayıt yöneticisi
 Kullanıcıları, cihaz kayıt yöneticileri yapabilirsiniz.  DEM kullanıcıları, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetebilir. Cihaz kayıt yöneticisi (DEM) hesabı, 1.000’e kadar cihazı kaydedebilir. [Cihaz kayıt yöneticileri](device-enrollment-manager-enroll.md) hakkında daha fazla bilgi edinin.

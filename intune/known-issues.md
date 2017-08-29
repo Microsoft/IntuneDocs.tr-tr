@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
+ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -41,26 +41,28 @@ Klasik Intune’dan Azure portalına geçiş yaptığınızda **Tüm Kullanıcı
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Seçilen özellikler için gerekli ikincil geçiş
 
-Ocak 2017’den önce oluşturulan Intune hesaplarının, bu özelliklerin Azure portalında kullanılabilmesi için geçişi yapılmalıdır:
+Aşağıdaki özelliklerin Azure portalında kullanılabilmesi için Ocak 2017’den önce oluşturulan Intune hesapları geçirilmelidir:
 
 - Şirket Cihaz Kayıt profilleri
 - Apple Cihaz Kaydı Programı
-- iOS seri numarası grubuna göre ön kayıtlı şirket cihazları
-- Cihaz Kayıt Yöneticileri
+- Şirket cihazlarını iOS seri numarasına göre önceden bildirme
+- Cihaz Kayıt Yöneticisi hesapları
 - Apple Volume Purchase Program
 
-Bu özellikler hem klasik Silverlight hem Azure konsolları tarafından yönetilemediğinden, geçiş işlemi:
+Bu özellikler hem klasik Intune (Silverlight) konsolu hem Azure portalından yönetilemediği için geçiş işlemi:
 - Bunları klasik konsolda devre dışı bırakır
-- Azure konsolunda etkinleştirir  
+- Azure portalında etkinleştirir  
+
+11 Eylül 2017 tarihinden sonra, bu özelliklerin geçişi ile birincil Azure geçişi birleştirilecektir. Hesabınız zaten Azure portalını kullanmak üzere geçirilmişse bu ikinci geçiş, 11-22 Eylül 2017 tarihleri arasında gerçekleşecektir. Hesabınızın geçişi, başladığı gün tamamlanır. Geçiş, bu özelliklerin Klasik Intune konsolunda devre dışı bırakıldığı süreden itibaren 6 saat kadar sürebilir.
 
 Artık Intune özelliklerini Azure portalında yönetiyorsanız aşağıdaki hususları göz önünde bulundurun:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Apple DEP’te varsayılan Kurumsal Cihaz Kaydı profillerini kaldırır
-Azure portalı, Apple Aygıt Kayıt Programı (DEP) cihazları için varsayılan bir Şirket Cihaz Kaydı profili desteklemez. Klasik Silverlight Intune konsolunda sağlanan bu işlevsellik, profillerin yanlışlıkla atanmasını önlemek için kullanımdan kaldırılmıştır. Azure portalında DEP seri numaraları eşitlenirken, hiçbir Şirket Cihaz Kaydı profili atanmaz. Cihaz kullanılmadan önce bir kayıt profili atanmalıdır.
+Azure portalı, Apple Aygıt Kayıt Programı (DEP) cihazları için varsayılan bir Şirket Cihaz Kaydı profili desteklemez. Klasik Intune (Silverlight) konsolunda sağlanan bu işlevsellik, profillerin yanlışlıkla atanmasını önlemek için kullanımdan kaldırılmıştır. Azure portalında DEP seri numaraları eşitlenirken, hiçbir Şirket Cihaz Kaydı profili atanmaz. Cihaz kullanılmadan önce bir kayıt profili atanmalıdır.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP belirtecinin geçiş ile geri yüklenmesi
 
-Intune klasik (Silverlight) portalında Apple Aygıt Kayıt Programı belirtecini sildiyseniz ve Azure portalına yeni bir belirteç yüklemezseniz geçiş yaptığınızda özgün belirteç Azure portalına geri yüklenir. Bu belirteci kaldırmak ve DEP kaydını önlemek için belirteci Azure portalından silin.
+Klasik Intune (Silverlight) portalında bir Apple Aygıt Kayıt Programı belirtecini sildiyseniz ve Azure portalına yeni bir belirteç yüklemezseniz geçiş yaptığınızda özgün belirteç Azure portalına geri yüklenir. Bu belirteci kaldırmak ve DEP kaydını önlemek için belirteci Azure portalından silin.
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Geçirilen ilkeler için durum dikey pencereleri çalışmıyor
 
@@ -72,7 +74,7 @@ Azure portalındaki klasik portaldan geçirilen ilkeler için durum bilgilerini 
 iOS toplu satın alınan uygulamaları, yalnızca Intune hesabınız ile aynı ülke kodunda görüntülenir ve atanabilir. Intune yalnızca Intune kiracı hesabı ülke kodu ile aynı iTunes bölgesindeki uygulamaları eşitler. Örneğin, Intune hesabınız Almanca ise ve yalnızca ABD mağazasında bulunan bir uygulamayı satın alırsanız Intune bu uygulamayı göstermez.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Aynı iOS toplu satın alınan programının birden fazla kopyası karşıya yükleniyor
-Aynı VPP belirteci için **Karşıya Yükle** düğmesine birden çok kez tıklamayın. Bu, yinelenen VPP belirteçlerinin karşıya yüklenmesine ve uygulamaların aynı VPP belirteci için birden çok kez eşitlenmesine neden olur. 
+Aynı VPP belirteci için **Karşıya Yükle** düğmesine birden çok kez tıklamayın. Bu, yinelenen VPP belirteçlerinin karşıya yüklenmesine ve uygulamaların aynı VPP belirteci için birden çok kez eşitlenmesine neden olur.
 
 <!-- ## Groups -->
 
@@ -84,8 +86,9 @@ Intune'a kayıtlı olmayan cihazlarda, bir Windows Bilgi Koruması ilkesi için 
 Ek etki alanları eklerseniz (**Gelişmiş ayarlar** > **Ağ çevresi** > **Korumalı bir etki alanı ekle** kullanarak), ilkeyi kaydedemezsiniz. Gördüğünüz hata iletisi yakında daha doğru hale getirilecektir.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN istemci desteği
- 
-Cisco AnyConnect VPN istemcisinin en son sürümü (4.0.07072) şu anda Intune ile uyumlu değildir. Intune'un gelecekteki bir güncelleştirmesi, bu VPN istemci sürümüyle uyumluluğu içerecektir. O zamana kadar Cisco AnyConnect VPN istemcinizi güncelleştirmemenizi ve mevcut sürümü kullanmaya devam etmenizi öneririz.
+
+Cisco AnyConnect VPN istemcisinin en son sürümü (4.0.07072) şu anda Intune ile uyumlu değildir.
+Intune'un gelecekteki bir güncelleştirmesi, bu VPN istemci sürümüyle uyumluluğu içerecektir. O zamana kadar Cisco AnyConnect VPN istemcinizi güncelleştirmemenizi ve mevcut sürümü kullanmaya devam etmenizi öneririz.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>macOS Sierra cihazlarda sayısal parola türü kullanma
 
@@ -118,16 +121,3 @@ Yönetilen cihazlardaki kullanıcılar için mevcut olan [iOS için uygulama kor
 Genel Yöneticiler (Kiracı Yöneticileri olarak da bilinir) ayrı bir Intune veya Enterprise Mobility Suite (EMS) lisansı olmadan günlük yönetim görevlerine devam edebilir. Ancak, kendi cihazlarını veya bir şirket cihazını kaydetme gibi amaçlarla hizmeti kullanmak ya da Intune Şirket Portalı’nı kullanmak isterlerse bir Intune veya EMS lisansına ihtiyaçları olur.
 
 <!-- ## Additional items -->
-
-
-
-
-
-
-
-
-
-
-
-
- 

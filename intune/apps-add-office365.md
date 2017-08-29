@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e41eceed55a323a7f3c07c7b5d8ab2da7764ff53
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 ProPlus 2016 uygulamalarını Windows 10 cihazlara atama
 
@@ -35,7 +35,6 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 ProPlus 2016 
 - Intune, yalnızca Office 365 ProPlus 2016 paketinden Office uygulamaları eklemeyi destekler.
 - Intune uygulama paketini yüklerken herhangi bir Office uygulaması açıksa kaydedilmeyen dosyalardaki veriler kaybedilebilir.
 - Bu yükleme yöntemi, Windows 10S cihazlarda desteklenmez.
-- Bu uygulama türünü Uygun olarak atar ve farklı atamaları birden çok kullanıcıya hedeflerseniz kullanıcılar yalnızca son hedeflenen atamayı görür.
 - Intune, daha önce Intune ile Office 365 uygulamalarını dağıttığınız bir cihaza Windows Mağazası’ndan Office 365 masaüstü uygulamalarının (Office Centennial uygulamaları olarak bilinir) yüklenmesini desteklemez. Bu yapılandırmayı yüklerseniz veri kaybına veya bozulmasına neden olabilir.
 
 

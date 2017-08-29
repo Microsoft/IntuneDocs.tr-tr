@@ -175,7 +175,6 @@
 ### [iOS eğitim ayarlarını yapılandırma](education-settings-configure-ios.md)
 ### [iOS eğitim paylaşılan cihazlarını yapılandırma](education-settings-configure-ios-shared.md)
 ### [İOS güncelleştirme ilkelerini yapılandırma](software-updates-ios.md)
-### [İş ayarları için Windows Update’i yapılandırma](windows-update-for-business-configure.md)
 ### [Sertifikaları yapılandırma](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
@@ -237,7 +236,7 @@
 <!-- ### Protect devices with remote actions -->
 
 ## [Rolleri yönetme](role-based-access-control.md)
-
+## [Yazılım güncelleştirmelerini yönetme](windows-update-for-business-configure.md)
 
 ## [Yazılım aracısıyla bilgisayarları yönetme](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Bilgisayar yönetimini karşılaştırma](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)

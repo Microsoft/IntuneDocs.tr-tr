@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a0da2e96e6e80672f666b8bbca160a1fc1515d1c
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 51b61fdc20c8d532be23a26f751be8d52cc21f9f
+ms.sourcegitcommit: a4a9bd7c432b58fea738e4bc3455d1221eb314c1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Android uygulama koruma ilkesi ayarları
 Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -83,6 +83,6 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penc
 | **Erişim için kurumsal kimlik bilgileri gerektir** | Kullanıcının uygulama erişimi için PIN girmek yerine iş veya okul hesabıyla oturum açmasını zorunlu kılmak için **Evet**’i seçin. **Evet** olarak ayarlarsanız, bu ayar PIN veya Touch ID gereksinimlerini geçersiz kılar.  | Hayır |
 | **Yönetilen cihazların, jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelle** |Bu uygulamaya jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engellemek için **Evet**’i seçin. Kullanıcı kişisel görevler için uygulamaları kullanmaya devam edebilir, ancak bu uygulamada iş veya okul verilerine erişmek için farklı bir cihaz kullanması gerekir. | Evet |
 | **Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)** | Aşağıdaki ayarları yapılandırın: <ul><li>**Zaman Aşımı**: Erişim gereksinimleri (daha önce ilkelerde tanımlanmıştır) yeniden denetlenmeden önce geçmesi gereken dakika sayısıdır. Örneğin, yönetici ilkede PIN’i etkinleştirirse, kullanıcı bir MAM uygulamasını açtığında bir PIN girmesi gerekir. Bu ayar kullanıldığında, kullanıcının **30 dakika** (varsayılan değer) boyunca herhangi bir MAM uygulamasında PIN girmesi gerekmez.</li><li>**Çevrimdışı yetkisiz kullanım süresi**: Uygulama için erişim gereksinimleri yeniden denetlenmeden önce MAM uygulamalarının çevrimdışı çalışabileceği dakika sayısıdır. Varsayılan değer = **720** dakika (12 saat). Bu süre dolduktan sonra, uygulama, çalışmaya devam edebilmesi için kullanıcının AAD’de kimliğini doğrulamasını ister.</li></ul>| Zaman Aşımı: 30 <br><br> Çevrimdışı: 720 |
-| **Uygulama verileri silinmeden önceki çevrimdışı zaman aralığı (gün)** | Belirtilen sayıda (yönetici tarafından tanımlanır) gün boyunca çevrimdışı çalışıldıktan sonra, uygulama kendi kendine bir seçmeli temizleme gerçekleştirir. Bu seçmeli temizleme, MAM temizleme iş akışında yönetici tarafından başlatılabilen temizlemeyle aynıdır. <br><br> | 90 gün |
+| **Uygulama verileri silinmeden önceki çevrimdışı zaman aralığı (gün)** | Yönetici tarafından tanımlanan bu süre boyunca çevrimdışı çalıştığında uygulama, kullanıcıdan ağa bağlanmasını ve yeniden kimlik doğrulamasını ister. Kullanıcı başarıyla oturum açarsa, verilerine erişmeye devam edebilir ve çevrimdışı zaman aralığı sıfırlanır.  Kullanıcı kimlik doğrulaması başarısız olursa uygulama, kullanıcı hesabı ve verilerinde seçmeli silme gerçekleştirir.  Seçmeli silme ile hangi verilerin silindiği hakkında daha fazla bilgi için bkz. [Intune ile yönetilen uygulamalarda yalnızca şirket verilerini silme](https://docs.microsoft.com/en-us/intune/apps-selective-wipe).<br><br> | 90 gün |
 | **Ekran görüntüsü yakalamayı ve Android Assistant uygulamasını (Android 6.0+) engelle** | Uygulama kullanılırken cihazın ekran yakalama ve **Android Assistant** özelliklerini engellemek için **Evet**’i seçin. **Evet**’i seçmek, bu uygulama bir iş veya okul hesabıyla kullanılırken Uygulama değiştirici önizleme görüntüsünü de bulanık hale getirir. | Hayır |
 | **Cihaz PIN’i yönetildiği zaman uygulama PIN’ini devre dışı bırak** | Kayıtlı bir cihazda bir cihaz kilidi algılandığında, uygulama PIN’ini devre dışı bırakmak için **Evet**’i seçin. | Hayır |

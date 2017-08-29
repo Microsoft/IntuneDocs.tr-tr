@@ -15,17 +15,17 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6cc079b05037cc18b7d27dd0d2674e87e1d54d0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d6adeca6189f9452c7e07bd0dea26564c62e1804
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazları için VPN ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden bazıları yapılandırılabilir değildir.
+Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden bazıları yapılandırılamaz.
 
 ## <a name="base-vpn-settings"></a>Temel VPN ayarları
 
@@ -33,7 +33,7 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 **Bağlantı adı** - Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan son kullanıcılar bu adı görür.
 - **IP adresi veya FQDN** - Cihazların bağlanacağı VPN sunucusunun IP adresini veya tam etki alanı adını sağlayın. Örnekler: **192.168.1.1**, **vpn.contoso.com**.
 - **Kimlik doğrulama yöntemi** - Cihazların VPN sunucusuna kimliklerini nasıl doğrulayacaklarını seçin:
-    - **Sertifikalar** - **Kimlik doğrulama sertifikası**’nın altında, bağlantının kimliğini doğrulamak için daha önce oluşturduğunuz SCEP veya PKCS sertifika profilini seçin. Sertifika profilleri hakkındaki diğer ayrıntılar için bkz. [Sertifikaları yapılandırma](certificates-configure.md).
+    - **Sertifikalar** - **Kimlik doğrulama sertifikası**’nın altında, bağlantının kimliğini doğrulamak için daha önce oluşturduğunuz SCEP veya PKCS sertifika profilini seçin. Sertifika profilleri hakkındaki daha fazla bilgi için bkz. [Sertifikaları yapılandırma](certificates-configure.md).
     - **Kullanıcı adı ve parola** - Son kullanıcıların VPN sunucusunda oturum açmak için kullanıcı adı ve parola sağlaması gerekir.
 - **Bağlantı türü** - Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
     - **Check Point Capsule VPN**
@@ -44,7 +44,7 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
     - **Cisco (IPSec)**
     - **Citrix**
     - **Özel VPN**
-- **Bölünmüş tünel** - Trafiğe bağlı olarak hangi bağlantının kullanılacağına cihazların karar vermesini sağlayan bu seçeneği **etkinleştirin** veya **devre dışı bırakın**. Örneğin, oteldeki bir kullanıcı çalışma dosyalarına erişmek için VPN bağlantısını, ama normal web’e göz atmak için otelin standart ağını kullanır.
+- **Bölünmüş tünel** - Trafiğe bağlı olarak hangi bağlantının kullanılacağına cihazların karar vermesini sağlayan bu seçeneği **Etkinleştirin** veya **Devre Dışı Bırakın**. Örneğin, oteldeki bir kullanıcı çalışma dosyalarına erişmek için VPN bağlantısını, web’e göz atmak için ise otelin standart ağını kullanır.
 
 
 ## <a name="custom-vpn-settings"></a>Özel VPN ayarları
@@ -56,17 +56,17 @@ Bağlantı türü olarak **Özel VPN**’yi seçtiyseniz şu ek ayarları yapıl
 
 ## <a name="apps-per-app-vpn-settings"></a>Uygulama (uygulama başına VPN) ayarları
 
-- **Uygulama başına VPN** - İsterseniz, Safari tarayıcısından ziyaret edildiğinde VPN bağlantısını etkinleştirecek olan URL’ler için bu seçeneği etkinleştirin. Bunu yapılandırmak için, temel VPN ayarlarında kimlik doğrulama yöntemi olarak **Sertifikalar**’ı seçmiş olmalısınız.
+- **Uygulama başına VPN** - Safari tarayıcısından ziyaret edildiğinde VPN bağlantısını etkinleştirecek URL’ler isterseniz bu seçeneği etkinleştirin. Bunu yapılandırmak için, temel VPN ayarlarında kimlik doğrulama yöntemi olarak **Sertifikalar**’ı seçmiş olmalısınız.
 - **Safari tarayıcısını kullanırken VPN bağlantısını etkinleştirecek URL'leri belirtin** - Bir veya birden çok web sitesi URL’si eklemek için Ekle’ye tıklayın. Bu URL’ler ziyaret edildiğinde, VPN bağlantısı etkinleştirilir.
 
 - **İsteğe bağlı kurallar** - VPN bağlantısının ne zaman başlatılacağını denetleyen koşullu kuralları yapılandırmanıza olanak tanır. Örneğin, yalnızca cihaz şirketinizin Wi-Fi ağlarından birine bağlı olmadığında VPN bağlantısının kullanılacağına ilişkin bir koşul oluşturabilirsiniz. Alternatif olarak, cihazın belirttiğiniz DNS arama etki alanına erişememesi durumunda VPN bağlantısının başlatılmayacağına ilişkin bir koşul da oluşturmanız mümkündür.
 
     - **SSID’ler veya DNS arama etki alanları** - Bu koşulun kablosuz ağ **SSID’lerini** mi yoksa **DNS arama etki alanlarını** mı kullanacağını seçin. Bir veya birden çok SSID veya arama etki alanı yapılandırmak için Ekle’yi seçin.
-    - **URL dizesi araştırması** - İsteğe bağlı olarak, kuralın test için kullanacağı bir URL sağlayın. Bu profilin yüklü olduğu cihaz bu URL’ye yeniden yönlendirmesiz erişebiliyorsa, VPN bağlantısı başlatılır ve cihaz hedef URL’ye bağlanır. Kullanıcı, URL araştırma dizesi sitesini görmez. URL araştırma dizesine örnek, VPN’i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusunun adresidir. Başka bir seçenek de URL’nin, cihazı VPN aracılığıyla hedef URL’ye bağlamadan önce VPN’in bir siteye bağlanma yeteneğini test etmesidir.
-    - **Etki alanı eylemi** - Aşağıdakilerden birini seçin:
+    - **URL dizesi araştırması** - İsteğe bağlı olarak, kuralın test için kullanacağı bir URL sağlayın. Bu profilin yüklü olduğu cihaz bu URL’ye yeniden yönlendirmesiz erişebiliyorsa VPN bağlantısı başlatılır ve cihaz hedef URL’ye bağlanır. Kullanıcı, URL araştırma dizesi sitesini görmez. URL araştırma dizesine örnek, VPN’i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusunun adresidir. Başka bir seçenek de URL’nin, cihazı VPN aracılığıyla hedef URL’ye bağlamadan önce VPN’in bir siteye bağlanma yeteneğini sınamasıdır.
+    - **Etki alanı eylemi** - Aşağıdaki öğelerden birini seçin:
         - Gerekirse bağlan - 
         - Hiçbir zaman bağlanma - 
-    - **Eylem** - Aşağıdakilerden birini seçin:
+    - **Eylem** - Aşağıdaki öğelerden birini seçin:
         - Bağlan - 
         - Bağlantıyı değerlendir - 
         - Yoksay - 

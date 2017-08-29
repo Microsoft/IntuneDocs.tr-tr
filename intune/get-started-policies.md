@@ -1,12 +1,12 @@
 ---
 title: "İlkelerle çalışmaya başlama"
 titleSuffix: Intune on Azure
-description: 
+description: "Kullanıcıların cihazları ile yetkilendirilmedikleri şeyler yapmasını önlemek için ilkeler oluşturun."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-policies"></a>İlkelerle çalışmaya başlama
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-policies"></a>İlkeleri kullanmaya başlama
 
 Intune ile çalışmaya başlamanın ana hedeflerinden biri, kurumsal ilkelerle uyumlu olduklarından emin olmak için cihazları kaydetmektir. Uyumluluk ilkeleri, yalnızca şirkete ait bilgi noktası gibi özelleştirilmiş cihaz türlerini değil ayrıca kişisel (Kendi Cihazını Getir) cihazları, tabletleri ve kullanıcısız cihazları da yönetmenize yardımcı olur.
 
@@ -56,3 +54,12 @@ __Nasıl ilke oluşturulur?__
 7. **İlke oluştur** dikey penceresine dönün ve **Oluştur**'u seçin.
 8. İlke oluşturulduktan sonra ilkeyi sınama grubunuza atamak için **Atamalar**'ı seçin. İçinde sınama kullanıcınız olması gereken sınama grubunuzu seçin, sonra **Kaydet**'e tıklayarak ilkeyi bu gruba atayın.
 9. Birkaç dakika bekleyin; kaydettiğiniz cihaz, kurumsal ilkeyle uyumlu kalmak için güncelleştirilmiş bir parola gerektiğini size bildirir. Bunu, **iOS için Şirket Portalı uygulaması**'nda cihaz adına, sonra **Eşitle** düğmesine dokunarak el ile de denetleyebilirsiniz.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+[Cihazları kaydetmeye başlama](get-started-enroll.md) - Bir iOS cihazın tam kayıt deneyimini yaşayarak kayıt deneyimi hakkında bilgi edinin.
+
+## <a name="learn-more"></a>Daha fazlasını öğrenin
+
+* [Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)
+* [Intune ile koşullu erişim ilkelerini kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md)

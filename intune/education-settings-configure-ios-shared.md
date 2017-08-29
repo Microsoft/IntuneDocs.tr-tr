@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2637f9d06fbfd3d2be01d515be9ae25ecb99dfae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b95133d402b40085a61dedfdbd4abbb4eae73855
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
 
@@ -28,13 +28,13 @@ ms.lasthandoff: 07/01/2017
 Giriş Intune, öğretmenlerin sınıf içindeki öğrenimi yönlendirmesine ve öğrenci cihazlarını denetlemesine yardımcı olan iOS Classroom uygulamasını destekler. Classroom uygulamasına ek olarak Apple, öğrenci iPad cihazlarının, birden çok öğrenci tek bir cihazı paylaşacak şekilde yapılandırılmasını destekler. Bu belge, Intune ile bu hedefe ulaşmada size yol gösterir.
 Ayrılmış (1:1) iPad cihazlarını Classroom uygulamasında kullanmak üzere yapılandırma hakkında daha fazla bilgi için bkz. [Intune ayarlarını iOS Classroom uygulaması için yapılandırma](education-settings-configure-ios.md).
 
-## <a name="before-you-start"></a>Başlamadan önce 
+## <a name="before-you-start"></a>Başlamadan önce
 
-Paylaşılan iPad özelliklerini kullanmak için önkoşullar şunlardır: 
+Paylaşılan iPad özelliklerini kullanmak için önkoşullar şunlardır:
 
-- Apple School Manager ve School Data Sync'i (SDS) kurma.
-- Apple School Manager kurulumunun bir parçası olarak [Apple kimliklerini yönet](http://help.apple.com/schoolmanager/#/tes78b477c81)'i öğrenciler için yapılandırın. [Yönetilen Apple kimlikleri hakkında daha fazla bilgi edinin](https://support.apple.com/en-us/HT205918). 
-- Apple School Manager'dan eşitlenmiş cihaz seri numaraları için bir kayıt profili oluşturun. 
+- [Apple School Manager](apple-school-manager-set-up-ios.md) ve [School Data Sync (SDS)](https://support.office.com/article/Apple-School-Manager-integration-with-Intune-for-Education-and-School-Data-Sync-974bd1f9-2c7a-45cb-9447-b58166108617)’i kurma.
+- Apple School Manager kurulumunun bir parçası olarak [Apple kimliklerini yönet](http://help.apple.com/schoolmanager/#/tes78b477c81)'i öğrenciler için yapılandırın. [Yönetilen Apple kimlikleri hakkında daha fazla bilgi edinin](https://support.apple.com/en-us/HT205918).
+- Apple School Manager'dan eşitlenmiş cihaz seri numaraları için bir kayıt profili oluşturun.
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>1. Adım - Okul verilerinizi Azure Active Directory'ye aktarın
 
@@ -57,151 +57,151 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 - [Azure Active Directory'de lisanslama hakkında daha fazla bilgi edinin](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>2. Adım - Intune’da bir iOS Eğitim profili oluşturun ve atayın 
+## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>2. Adım - Intune’da bir iOS Eğitim profili oluşturun ve atayın
 
-### <a name="configure-general-settings"></a>Genel ayarları yapılandırma 
+### <a name="configure-general-settings"></a>Genel ayarları yapılandırma
 
-1. Azure Portal’da oturum açın. 
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin. 
-3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin. 
-4. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin. 
-5. Profiller dikey penceresinde **Profil Oluştur**’u seçin. 
-6. **Profil Oluştur** dikey penceresinde, iOS eğitim profili için **Ad** ve **Açıklama** girin. 
-7. **Platform** açılan listesinden **iOS**’yi seçin. 
-8. **Profil türü** açılan listesinde **Eğitim**’i seçin. 
-9. **Ayarlar** > **Yapılandır**’ı seçin. 
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
+4. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
+5. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
+6. **Profil Oluştur** dikey penceresinde, iOS eğitim profili için **Ad** ve **Açıklama** girin.
+7. **Platform** açılan listesinden **iOS**’yi seçin.
+8. **Profil türü** açılan listesinde **Eğitim**’i seçin.
+9. **Ayarlar** > **Yapılandır**’ı seçin.
 
-Ardından, öğretmen ve öğrencilerin iPad cihazları arasında bir güven ilişkisi kurmak için sertifikalara ihtiyacınız olacaktır. Sertifikalar, kullanıcı adları ve parolaları girmeye gerek olmadan cihazlar arasında bağlantıların kimliğini sorunsuz ve sessiz bir şekilde doğrulamak için kullanılır. 
+Ardından, öğretmen ve öğrencilerin iPad cihazları arasında bir güven ilişkisi kurmak için sertifikalara ihtiyacınız olacaktır. Sertifikalar, kullanıcı adları ve parolaları girmeye gerek olmadan cihazlar arasında bağlantıların kimliğini sorunsuz ve sessiz bir şekilde doğrulamak için kullanılır.
 
->[!Important] 
->Kullandığınız öğretmen ve öğrenci sertifikalarının farklı sertifika yetkilileri (CA'lar) tarafından verilmiş olması gerekir. Mevcut sertifika altyapınıza bağlı iki yeni alt CA oluşturmanız gerekir; biri öğretmenler, diğeri öğrenciler için. 
+>[!Important]
+>Kullandığınız öğretmen ve öğrenci sertifikalarının farklı sertifika yetkilileri (CA'lar) tarafından verilmiş olması gerekir. Mevcut sertifika altyapınıza bağlı iki yeni alt CA oluşturmanız gerekir; biri öğretmenler, diğeri öğrenciler için.
 
-iOS eğitim profilleri yalnızca PFX sertifikalarını destekler. SCEP sertifikaları desteklenmez. 
+iOS eğitim profilleri yalnızca PFX sertifikalarını destekler. SCEP sertifikaları desteklenmez.
 
-Oluşturduğunuz sertifikaların, kullanıcı kimlik doğrulamasına ek olarak sunucu kimlik doğrulamasını da desteklemesi gerekir. 
+Oluşturduğunuz sertifikaların, kullanıcı kimlik doğrulamasına ek olarak sunucu kimlik doğrulamasını da desteklemesi gerekir.
 
-### <a name="configure-teacher-certificates"></a>Öğretmen sertifikalarını yapılandırma 
+### <a name="configure-teacher-certificates"></a>Öğretmen sertifikalarını yapılandırma
 
-**Eğitim** dikey penceresinde, **Öğretmen sertifikaları**’nı seçin. 
+**Eğitim** dikey penceresinde, **Öğretmen sertifikaları**’nı seçin.
 
-#### <a name="configure-teacher-root-certificate"></a>Öğretmen kök sertifikasını yapılandırma 
+#### <a name="configure-teacher-root-certificate"></a>Öğretmen kök sertifikasını yapılandırma
 
-**Öğretmen kök sertifikası** altında, .cer (DER veya Base64 ile kodlanmış) veya .P7B (tam zincir içeren veya içermeyen) uzantısına sahip öğretmen kök sertifikasını seçmek için gözat düğmesini seçin. 
+**Öğretmen kök sertifikası** altında, .cer (DER veya Base64 ile kodlanmış) veya .P7B (tam zincir içeren veya içermeyen) uzantısına sahip öğretmen kök sertifikasını seçmek için gözat düğmesini seçin.
 
-#### <a name="configure-teacher-pkcs12-certificate"></a>Öğretmen PKCS#12 sertifikasını yapılandırma 
+#### <a name="configure-teacher-pkcs12-certificate"></a>Öğretmen PKCS#12 sertifikasını yapılandırma
 
-**Öğretmen PKCS #12 sertifikası** altında aşağıdaki değerleri yapılandırın: 
+**Öğretmen PKCS #12 sertifikası** altında aşağıdaki değerleri yapılandırın:
 
-- **Konu adı biçimi** - Intune, öğretmen sertifikası için **lider**, öğrenci sertifikası içinse **üye** ön ekini sertifika ortak adına otomatik olarak ekler. 
-- **Sertifika yetkilisi** - Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Kuruluş Sertifika Yetkilisi (CA). Tek Başına CA desteklenmez. 
-- **Sertifika yetkilisi adı** - Sertifika yetkilinizin adını girin. 
-- **Sertifika şablonu adı **- Bir sertifika verme yetkilisine eklenmiş sertifika şablonunun adını girin. 
-- **Yenileme eşiği (%)** - Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini belirtin. 
-- **Sertifika geçerlilik süresi** - Sertifikanın süresi dolmadan önce kalan süreyi belirtin. Belirtilen sertifika şablonundaki geçerlilik süresinden düşük bir değer belirtebilirsiniz, daha yüksek bir değer belirtemezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa, beş yıl değerini belirtemez ancak bir yıl değerini belirtebilirsiniz. Değerin, sertifika verme yetkilisinin sertifikası için kalan geçerlilik süresinden düşük olması gerekir. 
+- **Konu adı biçimi** - Intune, öğretmen sertifikası için **lider**, öğrenci sertifikası içinse **üye** ön ekini sertifika ortak adına otomatik olarak ekler.
+- **Sertifika yetkilisi** - Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Kuruluş Sertifika Yetkilisi (CA). Tek Başına CA desteklenmez.
+- **Sertifika yetkilisi adı** - Sertifika yetkilinizin adını girin.
+- **Sertifika şablonu adı **- Bir sertifika verme yetkilisine eklenmiş sertifika şablonunun adını girin.
+- **Yenileme eşiği (%)** - Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini belirtin.
+- **Sertifika geçerlilik süresi** - Sertifikanın süresi dolmadan önce kalan süreyi belirtin. Belirtilen sertifika şablonundaki geçerlilik süresinden düşük bir değer belirtebilirsiniz, daha yüksek bir değer belirtemezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa, beş yıl değerini belirtemez ancak bir yıl değerini belirtebilirsiniz. Değerin, sertifika verme yetkilisinin sertifikası için kalan geçerlilik süresinden düşük olması gerekir.
 
-Öğretmen sertifikalarını yapılandırmayı bitirdiğinizde **Tamam**'ı seçin. 
+Öğretmen sertifikalarını yapılandırmayı bitirdiğinizde **Tamam**'ı seçin.
 
-### <a name="configure-student-certificates"></a>Öğrenci sertifikalarını yapılandırma 
+### <a name="configure-student-certificates"></a>Öğrenci sertifikalarını yapılandırma
 
-1. **Eğitim dikey penceresinde**, **Öğrenci sertifikalarını** seçin. 
-2. **Öğrenci sertifikaları** dikey penceresinde, **Öğrenci cihaz sertifikaları türü** listesinden **Paylaşılan iPad**'i seçin. 
+1. **Eğitim dikey penceresinde**, **Öğrenci sertifikalarını** seçin.
+2. **Öğrenci sertifikaları** dikey penceresinde, **Öğrenci cihaz sertifikaları türü** listesinden **Paylaşılan iPad**'i seçin.
 
-#### <a name="configure-student-root-certificate"></a>Öğrenci kök sertifikasını yapılandırma 
+#### <a name="configure-student-root-certificate"></a>Öğrenci kök sertifikasını yapılandırma
 
-**Cihaz kök sertifikası** altından, uzantısı .cer (DER veya Base64 ile kodlanmış) veya .P7B (tam zincir içeren veya içermeyen) olan öğrenci kök sertifikasını seçmek için gözat düğmesini seçin. 
+**Cihaz kök sertifikası** altından, uzantısı .cer (DER veya Base64 ile kodlanmış) veya .P7B (tam zincir içeren veya içermeyen) olan öğrenci kök sertifikasını seçmek için gözat düğmesini seçin.
 
-#### <a name="configure-device-pkcs12-certificate"></a>Cihaz PKCS#12 sertifikasını yapılandırma 
+#### <a name="configure-device-pkcs12-certificate"></a>Cihaz PKCS#12 sertifikasını yapılandırma
 
-**Öğrenci PKCS #12 sertifikası** altında aşağıdaki değerleri yapılandırın: 
+**Öğrenci PKCS #12 sertifikası** altında aşağıdaki değerleri yapılandırın:
 
-- **Konu adı biçimi** - Intune, öğretmen sertifikası için lider, cihaz sertifikası içinse üye ön ekini sertifika ortak adına otomatik olarak ekler. 
-- **Sertifika yetkilisi** - Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Kuruluş Sertifika Yetkilisi (CA). Tek Başına CA desteklenmez. 
-- **Sertifika yetkilisi adı** - Sertifika yetkilinizin adını girin. 
-- **Sertifika şablonu adı** - Sertifika verme yetkilisine eklenmiş bir sertifika şablonunun adını girin. 
-- **Yenileme eşiği (%)** - Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini belirtin. 
-- **Sertifika geçerlilik süresi** - Sertifikanın süresi dolmadan önce kalan süreyi belirtin. Belirtilen sertifika şablonundaki geçerlilik süresinden düşük bir değer belirtebilirsiniz, daha yüksek bir değer belirtemezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa, beş yıl değerini belirtemez ancak bir yıl değerini belirtebilirsiniz. Değerin, sertifika verme yetkilisinin sertifikası için kalan geçerlilik süresinden düşük olması gerekir. 
+- **Konu adı biçimi** - Intune, öğretmen sertifikası için lider, cihaz sertifikası içinse üye ön ekini sertifika ortak adına otomatik olarak ekler.
+- **Sertifika yetkilisi** - Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Kuruluş Sertifika Yetkilisi (CA). Tek Başına CA desteklenmez.
+- **Sertifika yetkilisi adı** - Sertifika yetkilinizin adını girin.
+- **Sertifika şablonu adı** - Sertifika verme yetkilisine eklenmiş bir sertifika şablonunun adını girin.
+- **Yenileme eşiği (%)** - Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini belirtin.
+- **Sertifika geçerlilik süresi** - Sertifikanın süresi dolmadan önce kalan süreyi belirtin. Belirtilen sertifika şablonundaki geçerlilik süresinden düşük bir değer belirtebilirsiniz, daha yüksek bir değer belirtemezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa, beş yıl değerini belirtemez ancak bir yıl değerini belirtebilirsiniz. Değerin, sertifika verme yetkilisinin sertifikası için kalan geçerlilik süresinden düşük olması gerekir.
 
-Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin. 
+Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 
-### <a name="complete-certificate-setup"></a>Sertifika Kurulumunu Tamamlama 
+### <a name="complete-certificate-setup"></a>Sertifika Kurulumunu Tamamlama
 
-1. **Eğitim** dikey penceresinde **Tamam**'ı seçin. 
-2. **Profil Oluştur** dikey penceresinde, **Oluştur**’u seçin. 
+1. **Eğitim** dikey penceresinde **Tamam**'ı seçin.
+2. **Profil Oluştur** dikey penceresinde, **Oluştur**’u seçin.
 
-Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir. 
+Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 
-## <a name="step-3---create-a-device-category"></a>3. Adım - Bir cihaz kategorisi oluşturun 
+## <a name="step-3---create-a-device-category"></a>3. Adım - Bir cihaz kategorisi oluşturun
 
-1. Azure Portal’da oturum açın. 
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin. 
-3. **Intune** dikey penceresinde **Cihaz kaydı**'nı seçin. 
-4. **Kayıt - Genel Bakış** dikey penceresinde, **Cihaz Kategorileri**'ni seçin. 
-5. **Kayıt - Cihaz Kategorileri** dikey penceresinde, **Oluştur**'u seçin. 
-6. **Cihaz kategorisi oluştur** dikey penceresinde, kategori için bir **Ad** ve **Açıklama** girin. 
-7. **Cihaz kategorisi oluştur** dikey penceresinde, **Oluştur**'u seçin. 
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Cihaz kaydı**'nı seçin.
+4. **Kayıt - Genel Bakış** dikey penceresinde, **Cihaz Kategorileri**'ni seçin.
+5. **Kayıt - Cihaz Kategorileri** dikey penceresinde, **Oluştur**'u seçin.
+6. **Cihaz kategorisi oluştur** dikey penceresinde, kategori için bir **Ad** ve **Açıklama** girin.
+7. **Cihaz kategorisi oluştur** dikey penceresinde, **Oluştur**'u seçin.
 
-Cihaz kategorisi **Kayıt – Cihaz Kategorileri** dikey penceresinde oluşturulur. 
+Cihaz kategorisi **Kayıt – Cihaz Kategorileri** dikey penceresinde oluşturulur.
 
-## <a name="step-4--create-a-dynamic-group"></a>4. Adım – Dinamik bir grup oluşturun 
+## <a name="step-4--create-a-dynamic-group"></a>4. Adım – Dinamik bir grup oluşturun
 
-1. Azure Portal’da oturum açın. 
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin. 
-3. **Intune** dikey penceresinde **Gruplar**'ı seçin. 
-4. **Kullanıcılar ve Gruplar – Tüm Gruplar** dikey penceresinde, **Yeni Grup**'u seçin. 
-5. **Grup** dikey penceresinde, grup için bir **Ad** ve **Açıklama** girin. 
-6. **Üyelik Türü** açılan listesinde, **Dinamik Cihaz**'ı seçin. 
-7. Üyelik kuralları oluşturmak için **Dinamik cihaz üyeleri**'ni seçin. 
-8. **Dinamik üyelik kuralları** dikey penceresinde: 
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Gruplar**'ı seçin.
+4. **Kullanıcılar ve Gruplar – Tüm Gruplar** dikey penceresinde, **Yeni Grup**'u seçin.
+5. **Grup** dikey penceresinde, grup için bir **Ad** ve **Açıklama** girin.
+6. **Üyelik Türü** açılan listesinde, **Dinamik Cihaz**'ı seçin.
+7. Üyelik kuralları oluşturmak için **Dinamik cihaz üyeleri**'ni seçin.
+8. **Dinamik üyelik kuralları** dikey penceresinde:
 1. Açılan **Şu koşullara uyan cihaz ekle** listesinden **deviceCategory**'yi seçin.
-2. **Eşittir**'i seçin 
-3. Oluşturduğunuz cihaz kategorisini boş metin kutusuna girin 
-9. **Dinamik üyelik kuralları** dikey penceresinde, **Sorgu ekle**'yi seçin. 
-10. **Grup** dikey penceresinde **Oluştur**'u seçin. 
+2. **Eşittir**'i seçin
+3. Oluşturduğunuz cihaz kategorisini boş metin kutusuna girin
+9. **Dinamik üyelik kuralları** dikey penceresinde, **Sorgu ekle**'yi seçin.
+10. **Grup** dikey penceresinde **Oluştur**'u seçin.
 
-Dinamik grup **Kullanıcılar ve Gruplar – Tüm Gruplar** dikey penceresinde oluşturulur. 
+Dinamik grup **Kullanıcılar ve Gruplar – Tüm Gruplar** dikey penceresinde oluşturulur.
 
-## <a name="step-5--assign-a-device-to-a-category-carts"></a>5. Adım – Bir kategoriye cihaz atayın (Sepetler) 
+## <a name="step-5--assign-a-device-to-a-category-carts"></a>5. Adım – Bir kategoriye cihaz atayın (Sepetler)
 
-1. Azure Portal’da oturum açın. 
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin. 
-3. **Intune** dikey penceresinde **Cihazlar**’ı seçin. 
-4. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin. 
-5. **Cihazlar – Tüm cihazlar** dikey penceresinde bir cihaz seçin. 
-6. Cihaz dikey penceresinde **Özellikler**'i seçin. 
-7. Cihazın özellikler dikey penceresinde, **Cihaz kategorisi** metin kutusuna cihaz kategorisini girin. 
-8. Cihaz dikey penceresinde **Kaydet**'i seçin. 
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
+4. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin.
+5. **Cihazlar – Tüm cihazlar** dikey penceresinde bir cihaz seçin.
+6. Cihaz dikey penceresinde **Özellikler**'i seçin.
+7. Cihazın özellikler dikey penceresinde, **Cihaz kategorisi** metin kutusuna cihaz kategorisini girin.
+8. Cihaz dikey penceresinde **Kaydet**'i seçin.
 
-Cihaz artık cihaz kategorisiyle ilişkilendirilmiştir. Bu işlemi, oluşturduğunuz cihaz kategorisiyle ilişkilendirmek istediğiniz tüm cihazlar için yineleyin. 
+Cihaz artık cihaz kategorisiyle ilişkilendirilmiştir. Bu işlemi, oluşturduğunuz cihaz kategorisiyle ilişkilendirmek istediğiniz tüm cihazlar için yineleyin.
 
-## <a name="step-6--create-classroom-profiles"></a>6. Adım – Sınıf profilleri oluşturma 
+## <a name="step-6--create-classroom-profiles"></a>6. Adım – Sınıf profilleri oluşturma
 
-1. Azure Portal’da oturum açın. 
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin. 
-3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin. 
-4. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Sepet Profilleri**'ni seçin. 
-5. Profiller dikey penceresinde **Profil Oluştur**’u seçin. 
-6. **İlişkilendirme Oluştur** dikey penceresinde, bir **Ad** ve **Açıklama** girin. 
-7. Grupları Sepet Profili ile ilişkilendirmek için **Sınıf Seç** > **Yapılandır** seçeneklerini belirleyin. 
-8. Sepet Profili'ne dahil edilecek sınıfları seçin sonra **Seç**'i işaretleyin.  
-9. Grupları Sepet Profili ile ilişkilendirmek için **Sepet Seç** > **Yapılandır**'ı seçin. 
-10. Sepet Profili'ne dahil etmek istediğiniz grupları seçin, sonra **Seç**'i işaretleyin. 
-11. **İlişkilendirme Oluştur** dikey penceresinde, Sepet Profili'ni kaydetmek için **Kaydet**'i seçin. 
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
+4. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Sepet Profilleri**'ni seçin.
+5. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
+6. **İlişkilendirme Oluştur** dikey penceresinde, bir **Ad** ve **Açıklama** girin.
+7. Grupları Sepet Profili ile ilişkilendirmek için **Sınıf Seç** > **Yapılandır** seçeneklerini belirleyin.
+8. Sepet Profili'ne dahil edilecek sınıfları seçin sonra **Seç**'i işaretleyin. 
+9. Grupları Sepet Profili ile ilişkilendirmek için **Sepet Seç** > **Yapılandır**'ı seçin.
+10. Sepet Profili'ne dahil etmek istediğiniz grupları seçin, sonra **Seç**'i işaretleyin.
+11. **İlişkilendirme Oluştur** dikey penceresinde, Sepet Profili'ni kaydetmek için **Kaydet**'i seçin.
 
-Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir. 
+Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 
-## <a name="step-7---assign-the-cart-profile-to-classes"></a>7. Adım - Sepet Profilini Sınıflara Atama 
+## <a name="step-7---assign-the-cart-profile-to-classes"></a>7. Adım - Sepet Profilini Sınıflara Atama
 
-1. Azure Portal’da oturum açın. 
-2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin. 
-3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin. 
-4. **Cihaz Yapılandırması** dikey penceresinde, **İzle** > **Atama durumu**'nu seçin. 
-5. **Atama durumu** dikey penceresinde, oluşturduğunuz **Sepet Profili**'ni seçin. 
-6. **Sepet Profili** dikey penceresinde **Atamalar**'ı seçin, sonra **Dahil Et** altından **Dahil edilecek grupları seç**'i işaretleyin. 
-7. Sepet profilinin hedeflemesini istediğiniz sınıfları seçin (bir grup seçmeyin), sonra **Seç**'i işaretleyin.  
-8. İşiniz bittiğinde **Kaydet**’i seçin. 
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler** > **Diğer** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
+4. **Cihaz Yapılandırması** dikey penceresinde, **İzle** > **Atama durumu**'nu seçin.
+5. **Atama durumu** dikey penceresinde, oluşturduğunuz **Sepet Profili**'ni seçin.
+6. **Sepet Profili** dikey penceresinde **Atamalar**'ı seçin, sonra **Dahil Et** altından **Dahil edilecek grupları seç**'i işaretleyin.
+7. Sepet profilinin hedeflemesini istediğiniz sınıfları seçin (bir grup seçmeyin), sonra **Seç**'i işaretleyin. 
+8. İşiniz bittiğinde **Kaydet**’i seçin.
 
-Atama tamamlanır ve Intune, sınıf atamasını temel alarak Classroom profilini hedeflenen cihazlara dağıtır. 
+Atama tamamlanır ve Intune, sınıf atamasını temel alarak Classroom profilini hedeflenen cihazlara dağıtır.
 
-## <a name="next-steps"></a>Sonraki Adımlar 
+## <a name="next-steps"></a>Sonraki Adımlar
 
-Artık öğrenciler cihazları aralarında paylaşabilir ve sınıftaki herhangi bir iPad'i alıp, bir PIN ile oturum açıp iPad'i kendi içerikleriyle kişiselleştirebilir. Paylaşılan iPad'ler hakkında daha fazla bilgi için [Apple web sitesine](https://www.apple.com/education/it/) bakın. 
+Artık öğrenciler cihazları aralarında paylaşabilir ve sınıftaki herhangi bir iPad'i alıp, bir PIN ile oturum açıp iPad'i kendi içerikleriyle kişiselleştirebilir. Paylaşılan iPad'ler hakkında daha fazla bilgi için [Apple web sitesine](https://www.apple.com/education/it/) bakın.
