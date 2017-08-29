@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 43ab9e906f05a069b1399ab53a4861d7289b7024
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma aracılığıyla satın aldığınız iOS e-Kitaplarını yönetme
 
@@ -44,7 +44,6 @@ Başlamadan önce, Apple'dan bir VPP belirteci alın ve Intune hesabınıza yük
 * Varsayılan olarak Intune, Apple VPP hizmetiyle günde iki kez eşitlenir. Dilediğiniz zaman bir el ile eşitleme başlatabilirsiniz.
 * VPP belirtecini Intune'da içeri aktardıktan sonra aynı belirteci başka bir cihaz yönetimi çözümüne aktarmayın. Bunun yapılması lisans atama ve kullanıcı kayıtlarının kaybına neden olabilir.
 * Intune ile iOS kitaplarını kullanmaya başlamadan önce, diğer mobil cihaz yönetimi (MDM) satıcıları ile oluşturulan mevcut tüm VPP kullanıcı hesaplarını kaldırın. Intune, bir güvenlik önlemi olarak bu kullanıcı hesaplarını Intune ile eşitlemez. Intune yalnızca Intune tarafından oluşturulan Apple VPP hizmetinin verilerini eşitler.
-* Şu anda kitapları yalnızca **Gerekli** yükleme olarak atayabilirsiniz. Kitabı **Gerekli** bir yükleme olarak atadığınızda, yükleyen her kullanıcı kitap için bir lisans kullanır.
 * Bir cihaza bir kitap atadığınızda, cihazda yerleşik iBooks uygulamasının yüklü olması gerekir. Değilse, kitabı okuyabilmek için son kullanıcının uygulamayı yeniden yüklemesi gerekir. Şu anda kaldırılan yerleşik uygulamaları kurtarmak için Intune’u kullanamazsınız.
 * Yalnızca Apple Volume Purchase Program sitesinden kitapları atayabilirsiniz. Şirket içinde oluşturduğunuz kitapları karşıya yükleyip, sonra atayamazsınız.
 * Kitaplar henüz, uygulamalarda olduğu gibi son kullanıcı kategorilerine atanamamaktadır.
@@ -72,10 +71,10 @@ Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
 1. **e-Kitaplar** iş yükünde **Yönet** > **Tüm e-Kitaplar**'ı seçin.
-2. Kitap listesi dikey penceresinde, atamak istediğiniz kitabı seçip '**...**' seçeneğini işaretleyin > **Grupları Ata**.
+2. Kitap listesi dikey penceresinde, atamak istediğiniz kitabı ve daha sonra ‘**...**’ > **Grup Ata**’yı seçin.
 3. <*kitap adı*> - **Atanan Gruplar** dikey penceresinde **Yönet** > **Atanan Gruplar**'ı seçin.
 4. **Grupları Ata**'yı, ardından **Grup seç** dikey penceresinde kitabı atamak istediğiniz Azure AD gruplarını seçin. Cihaz grupları henüz desteklenmemektedir.
-Atama eylemini **Gerekli** olarak seçin. 
+**Kullanılabilir** veya **Gerekli** atama eylemlerinden birini seçin. 
 5. İşiniz bittikten sonra **Kaydet**’i seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar

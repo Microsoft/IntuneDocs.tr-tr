@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
+ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’daki Windows 10 cihazlar için VPN ayarları
 
@@ -96,10 +96,13 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 
 ## <a name="conditional-access"></a>Koşullu Erişim
 
-**Bu VPN bağlantısı için koşullu erişim** -
-**Alternatif sertifikayla çoklu oturum açma (SSO)** -
-**Genişletilmiş anahtar kullanımı** -
-**Veren karması** -
+**VPN bağlantısı için koşullu erişim** - İstemciden cihaz uyumluluk akışını etkinleştirir. Bu etkinleştirildiğinde VPN istemcisi, kimlik doğrulama için kullanmak üzere bir sertifika almak üzere Azure Active Directory ile iletişime geçmeye çalışır. VPN’in sertifika kimlik doğrulamasını kullanacak şekilde ayarlanmış olması ve VPN sunucusunun Azure Active Directory tarafından gönderilen sunucuya güvenmesi gerekir.
+
+**Alternatif sertifika ile çoklu oturum açma (SSO)** - Cihaz uyumluluğu amacıyla Kerberos kimlik doğrulaması için VPN kimlik doğrulama sertifikasından farklı bir sertifika kullanın. Aşağıdaki ayarlarla sertifikayı belirtin: 
+
+- **Genişletilmiş anahtar kullanımı** - Genişletilmiş anahtar kullanımı (EKU) için ad.
+- **Nesne Tanımlayıcısı** - EKU için nesne tanımlayıcısı.
+- **Sertifikayı veren karması** - SSO sertifikası için parmak izi.
 
 ## <a name="dns-settings"></a>DNS Ayarları
 

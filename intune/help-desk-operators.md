@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Kullanıcılara yardımcı olmak için sorun giderme portalını kullanın
 
@@ -29,7 +29,6 @@ Sorun giderme portalı, yardım masası operatörlerinin ve Intune yöneticileri
 Örneğin, bir kullanıcı Intune ile ilgili teknik bir sorun için destekle bağlantı kurduğunda, yardım masası operatörü kullanıcının adını girer. Intune, şunlar dahil olmak üzere pek çok katman 1 sorununu çözmeye yardımcı veri sunar:
 - Kullanıcı durumu
 - Atamalar
-- Uygulama yükleme hatası
 - Uyumluluk sorunları
 - Cihaz yanıt vermiyor
 -   Cihaz VPN veya Wi-Fi ayarlarını alamıyor
@@ -41,7 +40,7 @@ Bir Intune yöneticisi olarak bir kullanıcı grubuna Yardım Masası Operatör�
 Yardım masası kullanıcıları eklemek için:
 1. Gerekirse [Intune’a kullanıcı ekleyin](users-add.md).
 2. [Bir yardım masası grubu oluşturun](groups-add.md) ve kullanıcıları gruba ekleyin.
-3. [RBAC Yardım Masası Operatörü rolünü atama](role-based-access-control.md#built-in-roles)
+3. [RBAC Yardım Masası Operatörü rolünü atama](role-based-access-control.md#built-in-roles).
 
   ![Intune rollerinin ve Yardım Masası Operatörü gibi yerleşik rollerin listesinin vurgulandığı Intune portalı ekran görüntüsü](./media/help-desk-user-add.png) Ayrıca, yardım masası operatörlerine erişim vermek için daha sonra değiştirebileceğiniz [bir özel rol oluşturabilirsiniz](role-based-access-control.md#custom-roles).  Yardım masası operatörleri, kullanıcı sorunlarını gidermenize yardımcı olmak için aşağıdaki izinleri gerektirir:
     - MobileApps: Okuma
@@ -61,8 +60,6 @@ Yardım masası personeli ve Intune yöneticileri sorun giderme portalına iki y
 - Azure portalında oturum açın, **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’a ve daha sonra **Yardım ve Destek** > **Sorun Giderme**’ye gidin.
 
 **Kullanıcı seç**’e tıklayarak bir kullanıcıyı ve ayrıntılarını görüntüleyin.
-
-![Kullanıcı Seç bağlantısı ile Intune Sorun Giderme iş yükü ekran görüntüsü](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>Sorun giderme portalını kullanma
 

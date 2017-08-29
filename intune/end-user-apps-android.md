@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4f0364750edf2e97e2b621c27fb25bea8e0f537c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android kullanıcılarınız uygulamalarını nasıl alır
 
@@ -32,6 +32,14 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son k
 | ------------- |-------------| -----|
 | Kullanılabilir uygulamalar      | Kullanıcılar Şirket Portalı’nda **yükle**’ye dokunur. Bir bildirim görüntülenir ve kullanıcılar buna dokunarak yüklemeyi başlatır. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. | Kullanıcılar Şirket Portalı’nda uygulamaya dokunur ve Play Store’da uygulamanın sayfasına ulaşır; burada yüklemeyi başlatabilirler.|
 | Gerekli uygulamalar      | Kullanıcılara bir bildirim gösterilir. Bu bildirimi kapatamazlar ve bu, uygulamayı yüklemeleri gerektiğini gösterir. Kullanıcılar yüklemeyi başlatmak için bildirime dokunur. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır.    | Kullanıcılara bir bildirim gösterilir. Bu bildirimi kapatamazlar ve bu, uygulamayı yüklemeleri gerektiğini gösterir. Kullanıcılar bildirime dokunur ve Play Store’da uygulamanın sayfasına ulaşır; burada yüklemeyi başlatabilirler. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. |
+
+[LOB uygulamalarını](lob-apps-android.md) yüklemek için son kullanıcılarınızın, bilinmeyen kaynaklardan yüklemeye izin vermesi gerekir. Bunlar genellikle iki farklı yerde bulunur:
+
+* **Android 7.1.2 ve altı sürümler**: **Ayarlar** > **Güvenlik** > **Bilinmeyen kaynaklar**
+* **Android 8.0 ve üzeri sürümler**: **Ayarlar** > **Uygulamalar ve bildirimler** > **Özel uygulama erişimi** > **Bilinmeyen uygulama yükleme** > **Şirket Portalı** > **Bu kaynağa izin ver**
+
+Bu durumda Şirket Portalı uygulaması, son kullanıcıya bilgi verip onu doğrudan uygun ayara yönlendirecektir. 
+
 
 ## <a name="samsung-knox-standard-android-devices"></a>Samsung Knox Standard Android cihazlar
 

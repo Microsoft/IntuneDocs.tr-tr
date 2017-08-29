@@ -1,12 +1,12 @@
 ---
 title: "Cihazları kaydetmeye başlama"
 titleSuffix: Intune on Azure
-description: 
+description: "Bir iOS cihazın tam kayıt deneyimini yaşayarak kayıt deneyimi hakkında bilgi edinin."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>Cihazları kaydetmeye başlama
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>Cihazları kaydetmeye başlama
 
 Microsoft Intune, şirket verilerinizi korurken iş gücünüze mobil cihazlar sağlamaya yardımcı olur. Son kullanıcılarınız Intune ile yönetici konsolundan çok cihazlarından etkileşimde bulunacakları için kayıt deneyimine hakim olduğunuzdan emin olmalısınız. Böylece deneyimi, özenle oluşturulmuş uyumluluk ilkeleriyle birleştirip kullanıcılarınıza kolaylık sağlayabilirsiniz. Bu özellikle önemli bir konudur çünkü kullanıcılarınız, yönetici olarak sizin hangi bilgileri görebildiğinizden haberdar olacaktır:
 
-## <a name="what-it-cannot-see"></a>BT’nin göremedikleri
-* Arama ve web tarama geçmişi
-* Konum
-* Kişisel e-posta
-* SMS mesajları
-* Kişiler
-* Kişisel hesaplarınızın parolaları
-* Takvim etkinlikleri
-* Fotoğraflar uygulamasında veya film rulosunda yer alanları da içeren resimler
-
-## <a name="what-it-can-see"></a>BT’nin görebildikleri
-* Model
-* Seri numarası
-* İşletim sistemi sürümü
-* Uygulama adları
-* Sahip
-* Cihaz adı
-* Üretici (Apple tarafından üretilmeyen cihazlar için)
-* Telefon numarası (İş cihazları için numaranın tamamı. Kişisel cihazlar için yalnızca son dört rakamı.)
+| BT’nin göremedikleri | BT’nin görebildikleri |
+|---|---|
+| Arama ve web tarama geçmişi | Model |
+| Konum | Seri numarası |
+| Kişisel e-posta | İşletim sistemi sürümü |
+| SMS mesajları | Uygulama adları |
+| Kişiler | Sahip |
+| Kişisel hesaplarınızın parolaları | Cihaz adı |
+| Takvim etkinlikleri | Üretici (Apple tarafından üretilmeyen cihazlar için) |
+| Fotoğraflar uygulamasında veya film rulosunda yer alanları da içeren resimler | Telefon numarası (İş cihazları için numaranın tamamı. Kişisel cihazlar için yalnızca son dört rakamı.) |
 
 ## <a name="how-do-i-enroll-a-device"></a>Cihazlar nasıl kaydedilir?
 
@@ -67,3 +56,13 @@ Cihaz kaydı, şirket kaynaklarına erişirken pek çok son kullanıcının ilk 
 14. Ekran değişerek profilin yüklenmesinin tamamlandığını gösterdiğinde, **Bitti**’ye dokunun.
 15. Ekranda bir “Cihaz kaydediliyor” iletisi görüntülenir ve daha sonra cihazın başarıyla kaydedildiği yazar. Bir açılır pencerede, sayfayı Şirket Portalı’nda açmak için izin istenecektir. **Aç**’a dokunun.
 16. **Şirket Erişimi Kurulumu** ekranına dönersiniz. Hiçbir sınama ilkesi ayarlamadıysanız cihaz uyumlu olarak görünecektir. Sınama ilkeleriniz varsa **Cihaz Uyumluluğu**’na dokunarak cihazı güvenli hale getirmek için yapmanız gereken şeyler olduğunu görebilirsiniz.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+[Uygulama eklemeye başlama](get-started-apps.md) - Çalışanlarınızın işlerini yapabilmeleri için uygulamalar bulun ve bunları cihazlara ekleyin.
+
+## <a name="learn-more"></a>Daha fazlasını öğrenin
+
+* [Intune için kayıt seçenekleri](enrollment-options.md)
+* [Intune ile kendi cihazını getirmeyi etkinleştirme](byod-enable.md)
+* [Son kullanıcılarınızı kayıt ve cihaz yönetimi hakkında bilgilendirme](end-user-educate.md)

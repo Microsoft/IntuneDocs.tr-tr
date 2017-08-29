@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8013d7f091c154709f0dd98dcda2e7f5f09056d2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 2dad8cf3e9a38625b4657e284f8d8bb53ba289c0
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
@@ -261,96 +261,41 @@ ms.lasthandoff: 08/04/2017
 |---------|------------|
 | DateKey |Günü gösteren tarih tablosuna başvuru |
 | DeviceKey |Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur |
-| DeviceModel |Cihazın modeli |
-| İşletim sistemi |Cihazın işletim sistemi |
 | DeviceName |Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılabilir olamaz. |
-| SoftwareVersion |Bu, çoğu zaman işletim sistemi sürümüdür ancak Apple platformlarında işletim sistemi sürümünden farklıdır. |
-| Imei |IMEI numarası |
-| HardwareInventoryTimeUtc |Cihaz için envanterin ilk raporlandığı an. |
-| InventoryModifiedTimeUtc |Bu anlık görüntü alındığında envanterin son depolandığı an |
-| InventoryReportingTimeUtc |Cihaz için envanterin ilk toplandığı an. |
-| ExchangeActiveSyncId |Exchange ActiveSync Cihaz Kimliği |
-| ComputerSystemDescription |Sistem açıklaması |
-| ComputerSystemName |Sistem Adı |
-| ComputerSystemManufacturer |Sistem Üreticisi |
-| ComputerSystemModel |Sistem Modeli |
-| UserName |Kullanıcı adı |
-| OSType |İşletim Sistemi Türü |
-| OSCaption |İşletim Sistemi Açıklamalı Alt Yazısı |
-| OSName |İşletim Sistemi Adı |
-| OSManufacturer |İşletim Sistemi Üreticisi |
-| OSProductSuite |İşletim Sistemi Ürün Paketi |
-| OSProductType |İşletim Sistemi Ürün Türü |
-| Yerel Ayar |İşletim Sistemi Yerel Ayarı |
-| PhysicalMemoryCapacity |Fiziksel Bellek Kapasitesi (bayt cinsinden) |
-| PhysicalMemoryRemovable |Çıkarılabilir Fiziksel Bellek (bayt cinsinden) |
-| SystemEnclosureChassisTypesInnerText |Cihaz için sistem gövdesi türünü tanımlar. Numaralar aşağıdaki değerleri temsil eder: 0 veya Boş = Bilinmeyen   1 = Masaüstü   2 = Dizüstü  3 = İş İstasyonu  4 = Kuruluş Server  100 = Telefon  101 = Tablet  102/103 = Diğer bir bilinmeyen Mobil cihaz türü |
-| SystemEnclosureModel |Sistem Kutusu modeli |
-| SystemEnclosureSerialNumber |Sistem Kutusu Seri numarası |
-| NetworkAdapterConfigurationText |Ağ bağdaştırıcısından yapılandırma metni |
-| MacAddress |MAC adresi |
-| SmsID |Intune cihaz kimliği |
-| CertExpiry |MDM yönetim sertifikasının sona erme tarihi |
-| DeviceClientAgentVersion |İstemci Aracısı Sürümü |
-| DeviceClientID |Cihaz İstemci Kimliği |
-| SerialNumber |Seri Numarası |
-| DeviceManufacturer |Aygıt Üreticisi |
-| DMVersion |DM sürümü |
-| FirmwareVersion |Bellenim Sürümü |
-| HardwareVersion |Donanım Sürümü |
-| PlatformType |Platform Türü |
-| ProcessorLevel |İşlemci düzeyi |
-| ProcessorRevision |İşlemci Düzeltme |
-| Ürün |Ürün |
-| ProductVersion |Ürün sürümü |
-| OEM |Özgün Ekipman üreticisi |
-| DeviceBuildVersion |Cihaz Derleme sürümü |
-| Meid |Mobil ekipman tanımlayıcısı. |
-| PhoneNumber |Telefon numarası |
-| SubscriberCarrierNetwork |Telefon Taşıyıcısı Ağ Adı |
-| CellularTechnology |Telefon Taşıyıcısı Ağ Türü (CDMA/GSM) |
-| Imsi |IMSI numarası |
-| JailBroken |Cihazda Jailbreak veya Kök belirtme uygulandıysa True şeklindedir. |
-| IsActivationLockEnabled |Etkinleştirme Kilidi etkinse True şeklindedir |
-| DeviceType |Cihaz Türü |
-| IsSupervised |Denetimli |
-| DeviceDisplayNumberOfColors |Cihaz ekranı Renk Sayısı |
-| HorizontalResolution |Cihaz yatay ekran çözünürlüğü |
-| VerticalResolution |Cihazın dikey ekran çözünürlüğü |
-| StorageFree |Boş depolama alanı (bayt cinsinden) |
-| StorageTotal |Toplam depolama alanı (bayt cinsinden) |
-| ProgramFree |Boş Program belleği (bayt cinsinden) |
-| ProgramTotal |Toplam Program belleği (bayt cinsinden) |
-| RemovableStorageFree |Boş çıkarılabilir depolama birimi (bayt cinsinden) |
-| RemovableStorageTotal |Toplam çıkarılabilir depolama alanı (bayt cinsinden) |
-| DeviceMemoryDeviceCapacity |Cihaz bellek kapasitesi |
-| DeviceMemoryAvailableDeviceCapacity |Cihaz belleğinin kullanılabilir kapasitesi |
-| DeviceOSVersion |İşletim Sistemi Sürümü |
-| DeviceOSPlatform |İşletim Sistemi platformu |
-| DeviceOSLanguage |İşletim Sistemi Dili |
-| PasswordMaxAttemptsBeforeWipe |Cihaz silinmeden önce izin verilen parola denemesi üst sınırı |
-| PasswordMinComplexChars |Parolada olması gereken karmaşık karakter sayısı alt sınırı |
-| PasswordMinLength |Gereken en düşük parola uzunluğu |
-| PasswordHistory |Parola - Kabul edilmeyen eski şifre alt sınırı |
-| PasswordEnabled |Parola - Etkin? |
-| PasswordExpiration |Parola - Sona erme tarihi |
-| AllowRecoveryPassword |Parola kurtarmaya izin ver |
-| PasswordAutoLockTimeout |Parola - Otomatik kilit zaman aşımı |
-| PasswordType |Parola Türü |
-| BacklightACTimeout |Bir güç kaynağına bağlıyken arka ışık zaman aşımı |
-| BacklightBatTimeout |Pilde arka ışık zaman aşımı |
-| PowerBackupPercent |Güç yedekleme yüzdesi |
-| BatteryPercent |Kalan pil yüzdesi. |
-| PlatformID |Platform kimliği |
-| ExchangeDeviceID |Exchange Cihaz Kimliği |
-| SmsProcessorDescription |İşlemci açıklaması |
-| OwnerEmailAddress |Kullanıcının e-posta adresi |
-| DeviceOSName |İşletim Sistemi Adı |
-| WifiMac |WIFI Mac adresi |
-| EthernetMac |Ethernet MAC adresi |
-| RequireEncryption |Cihazın şifreli olup olmadığını gösterir. |
-| ActivationLockBypassCode |Etkinleştirme kilidi Atlama kodu |
-
+| DeviceTypeKey |Cihaz için cihaz türü özniteliğinin anahtarı |
+| ClientRegisterationStateKey |Cihaz için istemci kayıt durumu özniteliğinin anahtarı |
+| OwnerTypeKey |Cihaz için sahip türü özniteliğinin anahtarı: şirket, kişisel veya bilinmeyen. |
+| objectSourceKey |Bu sütunu yoksayın. |
+| CreatedDate |Cihazın kaydedildiği tarih |
+| LastContact |Cihazın bilinen son Intune yer bildirimi |
+| LastContactNotification |Intune’un, cihazı Intune’da bildirim yapması için en son uyardığı an |
+| LastContactWorkplaceJoin |Cihaz için bilinen son Workplace Join durumunu gösteren zaman damgası. |
+| ManagementAgentKey |Cihazla ilişkili yönetim aracısının anahtarı. |
+| ManagementStateKey |Cihazla ilişkili yönetim durumunun anahtarı, bir uzak eylemin en son durumunu veya cihazda jailbreak/kök belirtme yapılıp yapılmadığını gösterir. |
+| ReferenceId |Cihazın Azure Active Directory’deki kimliği |
+| WorkPlaceJoinStateKey |Cihazla ilişkili iş yeri katılım durumunun anahtarı. |
+| CategoryId |Bu sütunu yoksayın. |
+| EnrollmentTypeKey |Cihazla ilişkili kayıt türünün anahtarı, kayıt yöntemini gösterir. |
+| CertExpirationDate |MDM yönetim sertifikasının sona erme tarihi. |
+| MdmStatusKey |MdmStatus anahtarı |
+| OSFamily |İşletim Sistemi Ailesi (Windows, iOS, Android vb.) |
+| OSVersion |İşletim sistemi sürümü |
+| OSMajorVersion |İşletim sistemi sürümünün ana sürüm bileşeni (major.minor.build.revision) |
+| OSMinorVersion |İşletim sistemi sürümünün alt sürüm bileşeni (major.minor.build.revision) |
+| OSBuildNumber |İşletim sistemi sürümünün derleme sürümü bileşeni (major.minor.build.revision) |
+| OSRevisionNumber |İşletim sistemi sürümünün düzeltme sürümü bileşeni (major.minor.build.revision) |
+| EasID |Cihaz Exchange Active Sync ile yönetiliyorsa cihazın EAS kimliği. |
+| GraphDeviceIsManaged |Intune’un AAD’de ayarladığı son yönetim durumu |
+| GraphDeviceIsCompliant |Intune’un AAD’de ayarladığı son uyumluluk durumu |
+| SerialNumber |Kullanılabilir ise cihazın seri numarası |
+| EnrolledByUser |Kullanıcı tablosundaki userId sütununa başvuran ve cihazı kaydeden kullanıcının kimliği. |
+| RowLastModifiedDateTimeUTC |Bu kaydın son değiştirildiği tarih. |
+| ProcessorArchitecture |İşlemci mimarisi |
+| DeviceAction |Yapılan son cihaz eylemi, Şimdilik yoksayın. |
+| Üretici |Cihazın üreticisi |
+| Model |Cihazın modeli |
+| LastPolicyUpdateUtc |Cihazda en son bir ilke güncelleştirildiği an |
+| LastExchangeStatusUtc |Cihazın Exchange ile son eşitlendiği an. |
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
 **MdmDeviceInventoryHistories** varlığı, MDM ile yönetilen cihazların envanter verileri için son 90 günlük anlık görüntülerini barındırır. DateKey sütunu, satır için günü gösterir. Bazı özellikler tüm cihazlarda uygulanamayabilir veya doldurulamayabilir, o nedenle daha fazla ayrıntı için bu sayfadan yardım alın. Daha fazla bilgi için bkz. [Microsoft Intune’da envanterli cihazlarınızı anlama](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).

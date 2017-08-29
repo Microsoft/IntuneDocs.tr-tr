@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
@@ -52,9 +52,9 @@ ms.lasthandoff: 08/04/2017
 | IsCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir |Doğru/Yanlış |
 | RowLastModifiedDateTimeUTC |Bu uygulama sürümü veri ambarında son değiştirildiğinde UTC’de tarih ve saat |23.11.2016 12:00:00 |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-**AppInstallerTypes** varlığı, bir uygulamanın yükleme kaynağını listeler.
+**AppTypes** varlığı, bir uygulamanın yükleme kaynağını listeler.
 
 | Özellik  | Açıklama |
 |---------|------------|
@@ -80,44 +80,6 @@ ms.lasthandoff: 08/04/2017
 | 11 |Windows Mobile MSI |Bir MSI iş kolu uygulaması |
 | 12 |Windows Phone LOB uygulaması |Bir Windows Phone iş kolu uygulaması |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-**ApplicationTypes** varlığı, olası uygulama türlerini listeler.
-
-| Özellik  | Açıklama |
-|---------|------------|
-| ApplicationTypeID |Tür kimliği |
-| ApplicationTypeKey |Anahtar için yedek anahtar |
-| ApplicationTypeName |Uygulama türü |
-
-## <a name="example"></a>Örnek
-
-| ApplicationTypeID  | Ad | Açıklama |
-|---------|------------|--------|
-| 0 |InHouse |Şirket içinde geliştirilen bir uygulama |
-| 1 |DeepLink |Bir uygulama mağazasındaki uygulamaya giden bağlantı |
-| 2 |WebLink |Bir web uygulamasına giden bağlantı |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-**ManagedSoftwareTypes** varlığı, bir uygulamanın olası yönetilen yazılım türlerini listeler.
-
-| Özellik  | Açıklama |
-|---------|------------|
-| SoftwareTypeID |Tür kimliği |
-| SoftwareTypeKey |Anahtar için yedek anahtar |
-| SoftwareTypeName |Yazılım türü |
-
-## <a name="example"></a>Örnek
-
-| SoftwareTypeID  | Ad | Açıklama |
-|---------|------------|--------|
-| 0 |Masaüstü |Bir masaüstü uygulama |
-| 2 |Güncelleştirme |Bir Windows güncelleştirmesi |
-| 5 |SideCarAgent | |
-| 1 |Mobil |Bir mobil uygulama |
-| 3 |WebLink |Bir web bağlantısı |
-| 4 |VppDeepLink |Bir uygulama mağazasında, VPP’nin (Volume Purchase Program) parçası olan bir uygulamaya giden bağlantı |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 
