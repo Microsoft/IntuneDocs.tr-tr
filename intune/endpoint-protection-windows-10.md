@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4994656afcf1cdb97fdcd3877f6dabdadfb7d374
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f38320ca84a734f645c3d8554c5aef53836fd1be
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune'da Windows 10 ve sonrası için Endpoint Protection ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Endpoint Protection profili, Windows 10 cihazlarda BitLocker gibi güvenlik özelliklerini denetlemenize izin verir.
+Endpoint Protection profili, Windows 10 cihazlarda BitLocker ve Windows Defender gibi güvenlik özelliklerini denetlemenize izin verir.
 
 Bu konudaki bilgileri Endpoint Protection profilleri oluşturmak için kullanın.
 
@@ -38,13 +38,18 @@ Bu konudaki bilgileri Endpoint Protection profilleri oluşturmak için kullanın
 3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
 4. **Profil Oluştur** dikey penceresinde, cihaz özellikleri profili için **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden **Windows 10 ve üzeri**’ni seçin.
-6. **Profil türü** açılan listesinden **Endpoint protection**'ı seçin. 
+6. **Profil türü** açılan listesinden **Endpoint protection**'ı seçin.
 7. **Windows şifrelemesi** dikey penceresinde istediğiniz ayarları yapılandırın. Bu konunun ayrıntılarını, her ayarın ne yaptığını anlamanıza yardımcı olması için kullanın. İşiniz bittiğinde **Tamam**’ı seçin.
 8. **Profil Oluştur** dikey penceresine dönün ve **Oluştur**'u seçin.
 
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 
-## <a name="endpoint-protection-profile-settings-reference"></a>Endpoint protection profil ayarları başvurusu
+## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen ayarları
+
+- **Uygulamalar ve dosyalar için SmartScreen** - Dosya yürütme ve uygulama çalıştırma için Windows SmartScreen’i etkinleştirin.
+- **Doğrulanmamış dosyaların yürütülmesi** - Son kullanıcının, Windows SmartScreen tarafından doğrulanmamış dosyaları çalıştırmasını engelleyin.
+
+## <a name="windows-encryption-settings"></a>Windows şifreleme ayarları
 
 ### <a name="windows-settings"></a>Windows Ayarları
 
@@ -62,16 +67,16 @@ Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker işletim sistemi sürücüsü ayarları
 
-- **Başlangıçta ek kimlik doğrulaması gerektir** - 
-    - **Uyumlu bir TPM yongası olmayan cihazlarda BitLocker'ı engelle** - 
-    - **TPM başlangıcı** - TPM yongasına izin verilip verilmeyeceğini veya yonganın gerekli olup olmadığını yapılandırın. 
-    - **TPM başlangıç PIN'i** - TPM yongasıyla bir PIN’e izin verilip verilmeyeceğini veya PIN'in gerekli olup olmadığını yapılandırın. 
-    - **TPM başlangıç anahtarı** - TPM yongasıyla bir anahtara izin verilip verilmeyeceğini veya anahtarın gerekli olup olmadığını yapılandırın. 
+- **Başlangıçta ek kimlik doğrulaması gerektir** -
+    - **Uyumlu olmayan TPM yongası ile BitLocker** -
+    - **TPM başlangıcı** - TPM yongasına izin verilip verilmeyeceğini veya yonganın gerekli olup olmadığını yapılandırın.
+    - **TPM başlangıç PIN'i** - TPM yongasıyla bir PIN’e izin verilip verilmeyeceğini veya PIN'in gerekli olup olmadığını yapılandırın.
+    - **TPM başlangıç anahtarı** - TPM yongasıyla bir anahtara izin verilip verilmeyeceğini veya anahtarın gerekli olup olmadığını yapılandırın.
     - **TPM başlangıç anahtarı ve PIN** - TPM yongasıyla bir anahtar ve PIN’e izin verilip verilmeyeceğini veya anahtar ve PIN'in gerekli olup olmadığını yapılandırın.
 - **En Düşük PIN Uzunluğu** - TPM başlangıç PIN'inin en düşük uzunluğunu yapılandırmak için bu ayarı etkinleştirin.
     - **En düşük karakter sayısı** - Başlangıç PIN'i için gereken **4**-**20** arasındaki karakter sayısını girin.
 - **İşletim sistemi sürücüsünü kurtarmayı etkinleştir** - BitLocker ile korunan işletim sistemi sürücülerinin, gerekli başlatma bilgileri olmadığında nasıl kurtarılacağını denetlemek için bu ayarı etkinleştirin.
-    - **Sertifika tabanlı veri kurtarma aracısına izin ver** - BitLocker korumalı işletim sistemi sürücülerinde veri kurtarma aracıları kullanılabilmesini istiyorsanız bu ayarı etkinleştirin.
+    - **Sertifika tabanlı veri kurtarma aracısı** - BitLocker korumalı işletim sistemi sürücülerinde veri kurtarma aracıları kullanılabilmesini istiyorsanız bu ayarı etkinleştirin.
     - **Kullanıcının kurtarma anahtarı oluşturması** - Kullanıcıların 48 basamaklı bir kurtarma parolası oluşturmasına izin verilip verilmeyeceğini veya bunun gerekli olup olmadığını yapılandırın.
     - **Kullanıcının kurtarma anahtarı oluşturması** - Kullanıcıların 256 bitlik kurtarma anahtarı oluşturmasına izin verilip verilmeyeceğini veya bunun gerekli olup olmadığını yapılandırın.
     - **BitLocker kurulum sihirbazında kurtarma seçeneklerini gizle** - Kullanıcıların BitLocker'ı açtıklarında kurtarma seçeneklerini görmesini veya değiştirmesini engellemek için bu ayarı etkinleştirin.
@@ -92,7 +97,7 @@ Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 
 - **BitLocker tarafından korunmayan sabit veri sürücüsüne yazma erişimini engelle** - Etkinleştirilirse üzerine yazılabilmesi için tüm sabit veya yerleşik veri sürücülerinde BitLocker koruması etkinleştirilmelidir.
 - **Sabit sürücü kurtarmayı etkinleştir** - Gerekli başlatma bilgileri olmadığında BitLocker korumalı sabit sürücülerin kurtarılma biçimini denetlemek için bu ayarı etkinleştirin.
-    - **Veri kurtarma aracısına izin ver** - BitLocker korumalı sabit sürücülerle veri kurtarma aracıları kullanılmasını istiyorsanız bu ayarı etkinleştirin.
+    - **Veri kurtarma aracısı** - BitLocker korumalı sabit sürücülerle veri kurtarma aracıları kullanılmasını istiyorsanız bu ayarı etkinleştirin.
     - **Kullanıcının kurtarma anahtarı oluşturması** - Kullanıcıların 48 basamaklı bir kurtarma parolası oluşturmasına izin verilip verilmeyeceğini veya bunun gerekli olup olmadığını yapılandırın.  
     - **Kullanıcının kurtarma anahtarı oluşturması** - Kullanıcıların 256 bitlik kurtarma anahtarı oluşturmasına izin verilip verilmeyeceğini veya bunun gerekli olup olmadığını yapılandırın.
     - **BitLocker kurulum sihirbazında kurtarma seçeneklerini gizle** - Kullanıcıların BitLocker'ı açtıklarında kurtarma seçeneklerini görmesini veya değiştirmesini engellemek için bu ayarı etkinleştirin.
@@ -113,5 +118,3 @@ Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).
-
-

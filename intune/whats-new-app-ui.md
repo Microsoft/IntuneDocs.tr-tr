@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune ve son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu yenilikler, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
 
+## <a name="week-of-august-21-2017"></a>21 Ağustos 2017 Haftası
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune Mobil Uygulama Yönetimi (MAM) iletişim kutularının modern arabirimi olacak <!-- 1199015 -->
+
+Intune Mobil Uygulama Yönetimi (MAM) iletişim kutuları, modern bir görünüm ve hisse sahip olmak için güncelleştirilecek. İletişim kutuları, önceden olduğu gibi çalışmaya devam edecek.
+
+**Önceki deneyim**
+
+![eski arabirim](media\NewUI_Old_AttachFileHandler.jpg)
+
+**Modern deneyim**
+
+![modern arabirim](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>14 Ağustos 2017 Haftası
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Windows 10 için Şirket Portalı uygulamasının “Cihaz Ayrıntıları”sayfasına güncelleştirmeler
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10 için Şirket Portalı uygulamasının “Cihaz Ayrıntıları” sayfasına güncelleştirmeler <!---1287448--->
 
 Windows 10 için Şirket Portalı uygulaması, __Kategori__ etiketini başlığın altından __Cihaz Ayrıntıları__ sayfasındaki bir özelliğe taşıyor.
 
 ![Windows için Şirket Portalı uygulaması, “Kategoriler” alanını “Cihaz Ayrıntıları” ekranındaki başlığın altında göstermek yerine artık bir özellik olarak gösteriyor.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>31 Temmuz 2017 Haftası
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Uygulama ayrıntıları sayfaları, Android cihazlar için yeni bilgiler görüntüler <!--1287476-->
+
+Android için Şirket Portalı uygulamasının uygulama ayrıntıları sayfası, BT yöneticisinin bu uygulama için tanımlamış olduğu uygulama kategorilerini görüntüler.
+
+![Yeni uygulama ayrıntıları sayfası](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Tüm platformlar için Şirket Portalı uygulamalarında gelişmiş oturum açma deneyimi <!--User Story 1132123-->
 
@@ -128,7 +149,7 @@ Kullanıcı geri bildirimi doğrultusunda, Android için Şirket Portalı uygula
 
 ## <a name="week-of-june-5-2017"></a>5 Haziran 2017 haftası
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>iOS için Şirket Portalı uygulamasındaki uygulama kutucukları geliştirmeleri
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>iOS için Şirket Portalı uygulamasında uygulama kutucukları iyileştirmeleri <!--1230777-->
 Şirket Portalı için ayarladığınız marka rengini yansıtmak için giriş sayfasındaki uygulama kutucuklarının tasarımı güncelleştirildi.
 
 **Önce**

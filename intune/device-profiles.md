@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5288bfc3aebbd119b49ef5261944840fd863afa5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 95ce3b6a307a71431b9717abdc3980f15a916a18
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profilleri nedir?
 
@@ -74,7 +74,7 @@ Bu profil türü, Windows 10'un bazı sürümlerini çalıştıran cihazları ot
 Daha fazla bilgi için bkz. [Windows 10 sürüm yükseltmelerini yapılandırma](edition-upgrade-configure-windows-10.md) Yalnızca Windows 10'u destekler.
 
 ## <a name="endpoint-protection"></a>Endpoint protection
-Bu profil türü, Windows 10 cihazları için BitLocker ayarlarını yapılandırmanızı sağlar.
+Bu profil türü, Windows 10 cihazları için BitLocker ve Windows Defender ayarlarını yapılandırmanızı sağlar.
 Daha fazla bilgi için bkz. [Windows 10 için Endpoint protection ayarları ](endpoint-protection-windows-10.md) Yalnızca Windows 10'u destekler.
 
 ## <a name="windows-information-protection"></a>Windows Bilgi Koruması

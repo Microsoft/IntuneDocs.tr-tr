@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/22/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 12556e394e2e09307c4f89e1ae56bb3f268b28ae
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
-# <a name="add-corporate-identifiers"></a>Kurumsal tanımlayıcılar ekleme
+# <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,15 +31,13 @@ Aşağıdaki koşullardan herhangi biri doğru olduğunda, bir cihaz şirkete ai
 
 - [Cihaz kayıt yöneticisi](device-enrollment-manager-enroll.md) hesabıyla kaydedildi (tüm platformlar)
 - Apple [Aygıt Kayıt Programı](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) veya [Apple Configurator](apple-configurator-enroll-ios.md) ile kaydedildi (yalnızca iOS)
-- Bir uluslararası mobil ekipman tanımlayıcısı (IMEI) numarası (IMEI numarası olan tüm platformlar) veya seri numarası (iOS ve Android) ile önceden bildirildi
-- Azure Active Directory veya Enterprise Mobility Suite’e bir Windows 10 Enterprise cihazı olarak kaydedildi (yalnızca Windows 10)
-- Cihazın **Özellikler**’inde **Şirket** olarak belirtildi
+- Bir uluslararası mobil ekipman tanımlayıcısı (IMEI) numarası (IMEI numarası olan tüm platformlar) veya seri numarası (iOS ve Android) ile [kayıttan önce şirkete ait olarak tanımlandı](#identify-corporate-owned-devices-with-imei-or-serial-number)
+- Azure Active Directory veya Enterprise Mobility + Security’ye bir Windows 10 Enterprise cihazı olarak kaydedildi (yalnızca Windows 10)
+- Cihazın özelliklerinde [cihaz sahipliği şirket](#change-device-ownership) olarak listelenmiş
 
-Şirkete ait cihazların Intune cihaz kaydı **Sahiplik** sütununda **Şirket** ifadesi görüntülenir. Bunu görüntülemek için **Cihazlar** > **Tüm cihazlar**’a gidin.
+## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Şirkete ait cihazları IMEI veya seri numarası ile belirleme
 
-## <a name="predeclare-a-device-with-imei-or-serial-number"></a>IMEI veya seri numarası ile bir cihazı önceden bildirme
-
-Bir Intune yöneticisi olarak, IMEI numaralarını veya seri numaraları listeleyen bir virgülle ayrılmış değer (.csv) dosyası oluşturup içeri aktarabilirsiniz. Intune, cihaz sahipliğini şirket olarak belirtmek için bu tanımlayıcıları kullanır. Desteklenen tüm platformlar için IMEI numaraları bildirebilirsiniz. Yalnızca iOS ve Android cihazlar için seri numarası bildirebilirsiniz. Listede her IMEI numarası veya seri numarasının yönetim amacıyla belirtilen ayrıntıları bulunabilir.
+Bir Intune yöneticisi olarak, IMEI numaralarını veya seri numaraları listeleyen bir virgülle ayrılmış değer (.csv) dosyası oluşturup içeri aktarabilirsiniz. Intune, cihaz kaydı sırasında cihaz sahipliğini şirket olarak belirtmek için bu tanımlayıcıları kullanır. Desteklenen tüm platformlar için IMEI numaraları bildirebilirsiniz. Yalnızca iOS ve Android cihazlar için seri numarası bildirebilirsiniz. Listede her IMEI numarası veya seri numarasının yönetim amacıyla belirtilen ayrıntıları bulunabilir.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -80,7 +78,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 İçeri aktarılan cihazlar her zaman kaydedilmez. Cihazlar, **Kayıtlı** veya **Bağlantı kurulmadı** durumunda olabilir. **Bağlantı kurulmadı**, cihazın Intune hizmetiyle hiç iletişim kurmadığı anlamına gelir.
 
-## <a name="delete-corporate-identifiers"></a>Kurumsal tanımlayıcıları silme
+### <a name="delete-corporate-identifiers"></a>Kurumsal tanımlayıcıları silme
 
 1. Azure portalında Intune’da **Cihaz kaydı** > **Kurumsal Cihaz Tanımlayıcıları**’nı seçin.
 2. Silmek istediğiniz cihaz tanımlayıcılarını seçin ve **Sil**’e dokunun.
@@ -88,5 +86,16 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 Kayıtlı bir cihazın şirket tanımlayıcısını silmek, cihaz sahipliğini değiştirmez. Cihaz sahipliğini değiştirmek için **Cihazlar** > **Tüm cihazlar**’a gidin, cihazı seçin, **Özellikler**’i seçin ve **Cihaz sahipliği**’ni değiştirin.
 
-## <a name="imei-specifications"></a>IMEI belirtimleri
+### <a name="imei-specifications"></a>IMEI belirtimleri
 Uluslararası Mobil Donanım Kimlikleri (IMEI) hakkındaki ayrıntılı belirtimler için bkz. [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
+
+## <a name="change-device-ownership"></a>Cihaz sahipliğini değiştirme
+
+Intune’daki tüm cihaz kayıtlarının cihaz özelliklerinde **Sahiplik** görüntülenir. Yönetici olarak, cihazları **Kişisel** veya **Şirkete ait** olarak belirtebilirsiniz.
+
+**Cihaz sahipliğini değiştirmek için:**
+1. Azure portalında Intune’da, **Cihazlar** > **Tüm cihazlar**’a gidin ve cihazı seçin.
+3. **Özellikler**’i seçin.
+4. **Cihaz sahipliği**’ni **Kişisel** veya **Şirkete ait** olarak belirtin.
+
+  ![Cihaz kategorisi ve Cihaz sahipliği seçeneklerini gösteren cihaz özellikleri ekran görüntüsü.](./media/device-properties.png)

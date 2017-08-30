@@ -14,11 +14,11 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 68b02a52dce49db470b11cbdf32308a74688ca45
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: 1a1c853aa16b771eff47d1d179f8870d7c1036a8
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows kullanıcılarınız uygulamalarını nasıl alır
 
@@ -30,9 +30,9 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları kullanıcıla
 
 **Kullanılabilir uygulamalar** Şirket Portalı uygulama listesinde sağlanır ve kullanıcılar bunları yüklemeyi seçebilir.
 
-**Yönetilen uygulamalar**, ilkeler aracılığıyla yönetilebilen ve Intune tarafından “sarmalanmış” veya Intune Mobil Uygulama Yönetimi (MAM) Yazılım Geliştirme Seti (SDK) ile oluşturulmuş uygulamalardır. Bu uygulamalar Intune tarafından yönetilebilir ve uygulama ilkeleri uygulanabilir.
+**Yönetilen uygulamalar**, ilkeler aracılığıyla yönetilebilen ve Intune tarafından “sarmalanmış” veya Intune Uygulama Yazılım Geliştirme Seti (SDK) ile oluşturulmuş uygulamalardır. Bu uygulamalar Intune tarafından yönetilebilir ve bunlara uygulama koruma ilkeleri uygulanabilir.
 
-**Yönetilmeyen uygulamalar**, ilkeler aracılığıyla yönetilebilen ve Intune tarafından sarmalanmamış veya Intune MAM SDK’sini içermeyen uygulamalardır. Uygulama ilkeleri bu uygulamalara uygulanamaz.
+**Yönetilmeyen uygulamalar**, ilkeler aracılığıyla yönetilebilen ve Intune tarafından sarmalanmamış veya Intune Uygulama SDK’sını içermeyen uygulamalardır. Bu uygulamalara uygulama koruma ilkeleri uygulanamaz.
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Android kullanıcılarınız uygulamalarını nasıl alır?](end-user-apps-android.md)
