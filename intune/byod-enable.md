@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enable-byod-with-intune"></a>Intune ile KCG'yi Etkinleştirme
 
@@ -44,11 +44,11 @@ Başlamışken [şirket portalını da özelleştirebilirsiniz](company-portal-c
 
 Intune hizmetini hazırladıktan sonra, yönetmek istediğiniz cihaz türleri için çeşitli kayıt gereksinimlerini karşılamanız gerekir. Cihazları yönetime kaydetme işlemi oldukça basittir ancak çeşitli cihaz türlerine göre biraz farklılık gösterir.
 
--   **iOS ve Mac cihazlar** iPad, iPhone veya MacOS cihazları kaydetmek için bir [Apple MDM anında iletme sertifikası](apple-mdm-push-certificate-get.md) almanız gerekir. MDM anında iletme sertifikanızı Intune’a yükledikten sonra kullanıcılar, [iOS cihazlarını kaydetmek](/intune-user-help/enroll-your-device-in-intune-ios) için Şirket Portalı uygulamasını, [MacOS cihazlarını kaydetmek](/intune-user-help/enroll-your-device-in-intune-macos) içinse Şirket Portalı web sitesini kullanabilir.
+-   **iOS ve Mac cihazlar** iPad, iPhone veya macOS cihazları kaydetmek için [bir Apple MDM anında iletme sertifikası almanız](apple-mdm-push-certificate-get.md) gerekir. MDM anında iletme sertifikanızı Intune’a yükledikten sonra kullanıcılar, [iOS cihazlarını kaydetmek](/intune-user-help/enroll-your-device-in-intune-ios) için Şirket Portalı uygulamasını, [MacOS cihazlarını kaydetmek](/intune-user-help/enroll-your-device-in-intune-macos) içinse Şirket Portalı web sitesini kullanabilir.
 
 -   **Android cihazlar** Intune hizmetini Android cihazların kaydına hazır hale getirmek için yapmanız gereken bir şey yoktur. Kullanıcılar Google Play’den edinilebilecek Şirket Portalı uygulamasını kullanarak [Android cihazlarını yönetime kaydedebilir](/intune-user-help/enroll-your-device-in-intune-android).
 
--   **Windows Phone ve bilgisayarlar** Windows cihazlar ek yapılandırma ile kaydedilebilir. Kullanıcılarınızın deneyimini kolaylaştırmak için Azure Active Directory (AD) Premium’da Windows 10 bilgisayarlar ve Windows 10 mobil cihazlar için otomatik kaydı etkinleştirebilirsiniz. Azure AD Premium’a sahip değilseniz veya Windows 8.1’i desteklemeniz gerekiyorsa kaydı kolaylaştırmak üzere [kayıt sunucusu için bir DNS diğer adı](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) oluşturabilirsiniz.
+-   **Windows Phone ve bilgisayarlar** Windows cihazlar ek yapılandırma ile kaydedilebilir. Azure Active Directory (AD) Premium’da Windows 10 bilgisayarlar ve Windows 10 mobil cihazlar için otomatik kaydı etkinleştirerek kullanıcılarınızın deneyimini kolaylaştırabilirsiniz. Azure AD Premium’a sahip değilseniz veya Windows 8.1’i desteklemeniz gerekiyorsa kaydı kolaylaştırmak üzere [kayıt sunucusu için bir DNS diğer adı](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) oluşturabilirsiniz.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Yönetilen cihazların, temel güvenlik gereksinimlerini karşıladığından emin olma
@@ -59,7 +59,7 @@ Bir kullanıcıya [uyumluluk ilkesi dağıttığınızda](device-compliance-get-
 
 ## <a name="provide-access-to-company-resources"></a>Şirket kaynaklarına erişim sağlama
 
-Çalışanlarınızın çoğu, mobil cihazlarından şirket e-posta ve belgelerine erişmek ister. Bunun, karmaşık adımlarla uğraşmadan veya yardım masasını aramadan ayarlanmasını beklerler. Intune, mobil cihazlara önceden yüklenen yerel e-posta uygulamaları için [e-posta ayarları oluşturup dağıtmanızı](email-settings-configure.md) kolaylaştırır.
+Çalışanlarınızın çoğu, mobil cihazlarından ilk olarak şirket e-posta ve belgelerine erişmek ister. Bunu, karmaşık adımlarla uğraşmadan veya yardım masasını aramadan ayarlamayı beklerler. Intune, mobil cihazlara önceden yüklenen yerel e-posta uygulamaları için [e-posta ayarları oluşturup dağıtmanızı](email-settings-configure.md) kolaylaştırır.
 
 
 > [!NOTE]
@@ -86,7 +86,7 @@ Ayrıca, iOS uygulama mağazasından ve İş İçin Microsoft Mağazası’ndan 
 
 ## <a name="protect-company-data"></a>Şirket verilerini koruma
 
-Intune, şirket verilerini pek çok teknoloji katmanıyla korur. Kimlik katmanında koşullu erişim, hizmetlere erişimi korur. Koşullu erişim, yalnızca yönetilen ve uyumlu cihazların şirket kaynaklarına erişmesine izin verir. İstemci uygulama katmanında mobil uygulama yönetimi (MAM), veri kaybını önler.  Uygulama koruma ilkeleri, verilerin korunmayan uygulamalara veya depolama konumlarına taşınmasını engeller. Bu ilkeler ayrıca, bir cihaz kaybolduğunda veya çalındığında tüm şirket verilerini silmenize imkan tanır.
+Intune, şirket verilerini pek çok teknoloji katmanıyla korur. Kimlik katmanında koşullu erişim, hizmetlere erişimi korur. Koşullu erişim, yalnızca yönetilen ve uyumlu cihazların şirket kaynaklarına erişmesine izin verir. Uygulama koruma ilkeleri, istemci uygulama katmanında veri kaybına karşı koruma sağlar. Uygulama koruma ilkeleri, verilerin korunmayan uygulamalara veya depolama konumlarına taşınmasını engeller. Bu ilkeler ayrıca, bir cihaz kaybolduğunda veya çalındığında tüm şirket verilerini silmenize imkan tanır.
 
 ### <a name="enforce-conditional-access-to-company-resources"></a>Şirket kaynaklarına koşullu erişimi zorunlu kılma
 
@@ -97,13 +97,13 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 > [!IMPORTANT]
 > Uyumluluğu doğrulayacak herhangi bir uyumluluk ilkesi yoksa koşullu erişim ilkeleri çalışmaz.
 
-### <a name="prevent-data-loss-of-company-data-with-application-protection-policies"></a>Uygulama koruma ilkeleriyle şirket verilerinin kaybını önleme
+### <a name="prevent-data-loss-of-company-data-with-app-protection-policies"></a>Uygulama koruma ilkeleriyle şirket verilerinin kaybını önleme
 
 Intune’un uygulama koruma ilkelerini kullanarak, verilerinize erişim için cihazların kayıtlı olmasını gerektirmeyi seçebilirsiniz. Bu seçim, şirket verilerini korumanıza yardımcı olur ve bir kullanıcı, cihazını Intune’a kaydetmese bile şirket verilerine güvenli bir şekilde erişebilir.
 
-Kullanıcılarınızın iOS ve Android cihazları tarafından erişilen şirket verilerini korumaya yardımcı olmak için [Intune uygulama koruma ilkelerini](app-protection-policies.md) kullanabilirsiniz. Bu uygulama düzeyinde ilkeleri uyguladığınızda, cihazın Intune tarafından yönetilmediği durumlarda dahi şirket verilerinin çalışanlar tarafından nasıl kullanıldığını ve paylaşıldığını denetleyebilirsiniz
+iOS ve Android cihazlar tarafından erişilen şirket verilerini korumaya yardımcı olmak için [Intune uygulama koruma ilkelerini](app-protection-policies.md) kullanabilirsiniz. Bu uygulama düzeyinde ilkeleri uyguladığınızda, cihazın Intune tarafından yönetilmediği durumlarda dahi şirket verilerinin çalışanlar tarafından nasıl kullanıldığını ve paylaşıldığını denetleyebilirsiniz
 
-Bu işlemi yönetilen Windows 10 cihazlarda yapmak için [Windows Bilgi Koruması (WIP) ilkelerini](app-protection-policies-configure-windows-10.md) kullanın. Bu ilkeler, çalışanların deneyimini etkilemeden çalışır. Ağ ortamınız veya diğer uygulamalarınızda değişiklik gerektirmez.
+Bu işlemi yönetilen Windows 10 cihazlarda yapmak için [Windows Bilgi Koruması](app-protection-policies-configure-windows-10.md)’nı (WIP) kullanın. Bu ilkeler, çalışanların deneyimini etkilemeden çalışır. Ağ ortamınız veya diğer uygulamalarınızda değişiklik gerektirmez.
 
 ### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Kişisel verileri korurken şirket verilerini silme
 

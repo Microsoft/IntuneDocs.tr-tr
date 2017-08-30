@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 237e141eacb413eb130b17217116b6d0c7e085f8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d5db079d224f145336b5d3c9b9963f8a5f2c306a
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="common-ways-to-use-intune"></a>Intune'u kullanmanın yaygın yolları
 
@@ -40,9 +40,9 @@ Aşağıda, Intune’a dayalı en yaygın altı senaryoya kısa giriş bilgileri
 Kurumsal mobil çalışma stratejilerinin çoğu çalışanların internete bağlanan mobil cihazlarıyla e-postaya güvenli erişimini sağlama planıyla başlar. Birçok kuruluşun hala kurumsal ağlarında barındırdıkları Microsoft Exchange gibi şirket içi veri ve uygulama sunucuları vardır.
 
 
-Intune ve Microsoft Enterprise Mobility + Security (EMS), bir cihaz Intune'a kaydedilmedikçe cihazdaki hiçbir mobil uygulamanın e-postaya erişememesini sağlayan, Exchange Server için benzersiz bir şekilde tümleştirilmiş [koşullu erişim çözümü](conditional-access.md) ([Klasik portal](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) sunmaktadır. Bunu, kurumsal ağınızın en önüne başka bir ağ geçidi makinesi daha dağıtmak zorunda kalmadan yapabilirsiniz!
+Intune ve Microsoft Enterprise Mobility + Security (EMS), bir cihaz Intune'a kaydedilmedikçe cihazdaki hiçbir mobil uygulamanın e-postaya erişememesini sağlayan, Exchange Server için benzersiz bir şekilde tümleştirilmiş [koşullu erişim çözümü](conditional-access.md) ([Klasik portal](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) sunmaktadır. Bunu, kurumsal ağınızın en önüne başka bir ağ geçidi makinesi daha dağıtmak zorunda kalmadan yapabilirsiniz.
 
-Intune bir iş kolu uygulama sunucusu gibi şirket içi verilere güvenli erişim gerektiren mobil uygulamalara erişim sağlamayı da destekler. Bu tipik olarak, erişim denetimi için [Intune tarafından yönetilen sertifikaları](certificates-configure.md) ([Klasik portal](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) çevredeki standart bir VPN ağ geçidi veya ara sunucusuyla, örneğin Microsoft Azure Active Directory Uygulama Ara Sunucusu’yla birlikte kullanarak gerçekleştirilir.  
+Intune bir iş kolu uygulama sunucusu gibi şirket içi verilere güvenli erişim gerektiren mobil uygulamalara erişim sağlamayı da destekler. Bu tipik olarak, erişim denetimi için [Intune tarafından yönetilen sertifikaları](certificates-configure.md) ([Klasik portal](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) çevredeki standart bir VPN ağ geçidi veya ara sunucusuyla, örneğin Microsoft Azure Active Directory Uygulama Ara Sunucusu’yla birlikte kullanarak gerçekleştirilir. 
 
 Böyle durumlarda, şirket verilerine erişmenin tek yolu cihazı yönetime kaydetmektir. Yönetim sistemi, kaydedilen cihazların şirket verilerine erişmeden önce ilkelerinizle uyumlu olmasını sağlar. Buna ek olarak, erişilen verilerin iş kolu uygulamanız içinde tutulmasına ve böylelikle şirket verilerinin tüketici uygulamalarına veya hizmetlerine geçirilememesine yardımcı olmak için Intune’un [Uygulama Kaydırma Aracı ve Uygulama SDK’sı](apps-prepare-mobile-application-management.md) kullanılabilir.
 
@@ -61,7 +61,7 @@ Uygulama mağazalarındaki Office mobil uygulamaları, Intune üzerinden yapıla
 Yaygın bir Office 365 dağıtım uygulaması, şirkete ait cihazlardaki yaygın bir senaryo olarak şirket uygulamaları, sertifikalar, Wi-Fi veya VPN yapılandırmaları ile tam olarak ayarlanması gereken cihazların yönetime kaydolmalarını gerektirmektir.  
 
 
-Öte yandan, kişilere ait cihazlarda çoğunlukla olduğu gibi, kullanıcının yalnızca şirket e-postasına ve belgelerine erişmesi gerekiyorsa, kullanıcının Office mobil uygulamalarını ([uygulama koruma ilkeleri uyguladığınız](app-protection-policies.md) ([Klasik portal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) uygulamalar) kullanmalarını gerektirebilir ve cihazı kaydetme işlemini tamamen atlayabilirsiniz!  
+Öte yandan, kişilere ait cihazlarda çoğunlukla olduğu gibi, kullanıcınızın yalnızca şirket e-postasına ve belgelerine erişmesi gerekiyorsa, kullanıcının Office mobil uygulamalarını ([uygulama koruma ilkeleri](app-protection-policies.md) uyguladığınız ([Klasik portal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) uygulamalar) kullanmalarını gerektirebilir ve cihazı kaydetme işlemini tamamen atlayabilirsiniz.  
 
 
 
@@ -75,7 +75,7 @@ Donanım harcamalarını azaltmaya veya çalışanlar için mobil üretkenlik se
 
 Cihaz kaydının uygulanabilir bir seçenek olmadığı durumlarda, Intune alternatif bir KCG yaklaşımı olarak [şirket verilerini içeren uygulamaları yönetme](app-protection-policies.md) ([Klasik portal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) yaklaşımını sunar. Intune, Office mobil uygulamalarında olduğu gibi söz konusu uygulamanın hem şirket verilerine hem de kişisel verilere eriştiği durumlarda bile şirket verilerini korur.  
 
-Bir yönetici olarak, kullanıcıların Office mobil uygulamalarına Office 365’ten erişmelerini ve uygulamaları, verileri koruma altına alan (şifreleme, pin ile koruma vs.) ilkelerle yapılandırmalarını zorunlu tutabilirsiniz. Bu ilkeler, yönetilmeyen uygulamalara ve bu uygulamaların içindeki ve dışındaki depolama konumlarına veri kaybetmeyi önler. Örneğin, ilkeler kullanıcın şirket e-posta profilinden tüketici e-posta profiline (her iki profil de Outlook Mobile içinde yapılandırılmış olsa bile) metin kopyalamasını önler. KCG kullanıcılarınıza gereken diğer hizmetler ve uygulamalar için de benzer yapılandırmalar dağıtılabilir.
+Bir yönetici olarak, kullanıcıların Office mobil uygulamalarına Office 365’ten erişmelerini ve uygulamaları, verileri koruma altına alan (şifreleme, pin ile koruma vs.) ilkelerle yapılandırmalarını zorunlu tutabilirsiniz. Bu uygulama koruma ilkeleri, yönetilmeyen uygulamalardan ve bu uygulamaların içindeki ve dışındaki depolama konumlarından veri kaybetmeyi önler. Örneğin, ilkeler kullanıcın şirket e-posta profilinden tüketici e-posta profiline (her iki profil de Outlook Mobile içinde yapılandırılmış olsa bile) metin kopyalamasını önler. KCG kullanıcılarınıza gereken diğer hizmetler ve uygulamalar için de benzer yapılandırmalar dağıtılabilir.
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 

@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>Uygulama tabanlı koşullu erişim ilkeleri ayarlama
 
@@ -59,9 +59,30 @@ Bu konu, onaylı uygulamalar listesinin parçası olan uygulamalar için uygulam
 2. Silme seçeneklerini görmek için üç nokta işaretine tıklayın.
 3. Kullanıcı grubunu listeden silmek için **Sil**’i seçin.
 
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Azure AD iş yükünde uygulama tabanlı koşullu erişim ilkeleri oluşturma
+
+Intune 1708 sürümünden başlayarak BT yöneticileri, Azure AD iş yükünden uygulama tabanlı koşullu erişim ilkeleri oluşturabilirler. Böylece Azure ve Intune iş yükleri arasında değişim yapmanız gerekmez ve işiniz kolaylaşır.
+
+> [!IMPORTANT]
+> Intune Azure portalından Azure AD koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>Uygulama tabanlı bir koşullu erişim ilkesi oluşturmak için
+
+> [!IMPORTANT]
+> Uygulama tabanlı koşullu erişim ilkelerini kullanmadan önce uygulamalarınıza [Intune uygulama koruma ilkeleri](app-protection-policies.md) uygulamanız gerekir.
+
+1. **Intune Panosu**’nda, **Koşullu erişim**’i seçin.
+
+2. **İlkeler** dikey penceresinde **Yeni ilke**’yi seçerek yeni uygulama tabanlı koşullu erişim ilkenizi oluşturun.
+
+4. İlke için bir ad girip **Atamalar** kısmından uygun ayarları yapılandırdıktan sonra **Erişim denetimleri** bölümünden **Ver**’i seçin.
+
+5. **Onaylı istemci uygulama gerektir**’i, **Seç**’i ve daha sonra **Tamam**’ı seçerek yeni ilkeyi kaydedin.
+
 ## <a name="next-steps"></a>Sonraki adımlar
 [Modern kimlik doğrulaması olmayan uygulamaları engelleme](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>Ayrıca bkz.
 
-[Uygulama verilerini uygulama koruma ilkeleriyle koruma](app-protection-policies.md)
+[Uygulama koruma ilkeleriyle uygulama verilerini koruma](app-protection-policies.md)
+[Azure Active Directory’de Koşullu Erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
