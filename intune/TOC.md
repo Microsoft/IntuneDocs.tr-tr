@@ -40,6 +40,8 @@
 ### [Ek kaynaklar](planning-guide-resources.md)
 ## Senaryo uygulama kılavuzları
 ### [BYOD](byod-enable.md)
+### [Exchange Online Koruma](exchange-online-protect.md)
+### [Yardım masası maliyetlerini azaltma](password-reset.md)
 <!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
