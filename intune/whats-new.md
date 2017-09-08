@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77f433037e4e576b29cf5800e9666008300ce568
-ms.sourcegitcommit: 3d1ec7a68977e6f5727821366ffd25657b459818
+ms.openlocfilehash: b50856bdc500cab4b206a105275b4842680d4423
+ms.sourcegitcommit: 71cdf99d639530e70dbe48d611d399e52c3150b0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -62,9 +62,15 @@ Ayrıca, filtre bölmesini kullanarak cihazları telefon numarasına göre araya
  
 Cihaz envanteri hakkında daha fazla ayrıntı için bkz. [Intune cihaz envanterini görüntüleme](device-inventory.md).
 
-#### <a name="conditional-access-support-for-mac-devices"></a>Mac cihazlar için koşullu erişim desteği 
+#### <a name="conditional-access-support-for-macos-devices"></a>macOS cihazlar için koşullu erişim desteği 
 <!-- 720172 -->
 Artık Mac cihazların Intune’a kaydedilmesi ve Intune cihaz uyumluluk ilkeleriyle uyumlu olmasını gerektiren bir koşullu erişim ilkesi ayarlayabilirsiniz. Örneğin kullanıcılar, macOS için Intune Şirket Portalı uygulamasını indirebilir ve Mac cihazlarını Intune’a kaydedebilir. Intune ise PIN, şifreleme, işletim sistemi sürümü ve Sistem Bütünlüğü gibi gereksinimleri kullanarak Mac cihazın uyumlu olup olmadığını değerlendirir.
+
+- [macOS cihazlar için koşullu erişim desteği](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) hakkında daha fazla bilgi edinin.
+
+#### <a name="company-portal-app-for-macos-is-in-public-preview----1484796---"></a>macOS için Intune Şirket Portalı uygulaması genel önizlemede <!---1484796--->
+macOS için Şirket Portalı uygulaması artık Enterprise Mobility + Security’de koşullu erişim için genel önizlemenin bir parçası olarak kullanılabilir. Bu sürüm, macOS 10.11 ve üzerini destekler. Uygulamayı [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal) adresinden edinin. 
+
 
 #### <a name="new-device-restriction-settings-for-windows-10"></a>Windows 10 için yeni cihaz kısıtlama ayarları    
 <!--1063965, 1308850  -->
@@ -87,12 +93,29 @@ Daha fazla bilgi için bkz. [Windows 10 ve üzeri sürümler için Endpoint Prot
 #### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Android Şirket Portalı ve Uygulama Koruma İlkesi kullanıcıları için yeni oturum açma deneyimi <!-- 621669 -->
 Son kullanıcılar artık Android Şirket Portalı’nı kullanarak cihazlarını kaydetmeden uygulamalara göz atabilir, cihazları yönetebilir ve BT iletişim bilgilerini görüntüleyebilir. Ayrıca, son kullanıcı zaten Intune Uygulama Koruma İlkeleri ile korunan bir uygulama kullanıyorsa ve Android Şirket Portalı'nı başlatırsa artık cihazı kaydetmek için bir istem almaz.
 
+### <a name="new-setting-in-the-android-company-portal-app-to-toggle-battery-optimization---1405990--"></a>Android Şirket Portalı uygulamasında pil iyileştirmesini değiştirmek için yeni bir ayar <!--1405990-->
+Android için Şirket Portalı uygulamasında **Ayarlar** sayfası, kullanıcıların Şirket Portalı ve Microsoft Authenticator uygulamaları için pil iyileştirmesini kolaylıkla kapatmalarına izin veren yeni bir ayara sahip. Ayarda gösterilen uygulama adı, hangi uygulamanın iş hesabını yönettiğine bağlı olarak değişecektir. E-posta ve veri eşitleyen iş uygulamalarının daha iyi çalışması için kullanıcıların pil iyileştirmesini kapatmalarını öneririz. 
+
 #### <a name="multi-identity-support-for-onenote-for-ios---------1234281---"></a>iOS için OneNote’da çoklu kimlik desteği      <!-- 1234281 -->
 Son kullanıcılar artık, iOS için Microsoft OneNote ile farklı hesaplar (iş ve kişisel) kullanabilir. Kullanıcıların kişisel not defterlerini etkilemeksizin iş not defterlerinde şirket verilerine uygulama koruma ilkeleri uygulanabilir. Örneğin bir ilke, bir kullanıcının iş not defterlerinde istediği bilgileri bulmasına izin verirken iş not defterlerinden kişisel not defterine şirket verilerini kopyalayıp yapıştırmasını engelleyebilir.
  
 - Intune ile [uygulama koruması ve çoklu kimlik](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) destekleyen uygulamalar hakkında daha fazla bilgi edinin.
 
+#### <a name="new-settings-to-allow-and-block-apps-on-samsung-knox-standard-devices"></a>Samsung KNOX Standard cihazlarda uygulamalara izin vermek veya bunları engellemek için yeni ayarlar
+<!-- 1305423 -->  
+Bu sürümde, aşağıdaki uygulama listelerini belirtmenizi sağlayan yeni [cihaz kısıtlama ayarları](device-restrictions-android.md) ekliyoruz:
+ 
+- Kullanıcıların yüklemesine izin verilen uygulamalar
+- Kullanıcıların çalıştırması engellenen uygulamalar
+- Cihazda kullanıcıdan gizlenen uygulamalar
+ 
+Uygulamayı URL, paket adı ile veya yönettiğiniz uygulamalar listesinden belirtebilirsiniz.
 
+#### <a name="new-azure-ad-app-based-conditional-access-policy-ui-link-from-intune"></a>Intune’dan yeni Azure AD uygulama tabanlı koşullu erişim ilkesi kullanıcı arabirimi bağlantısı
+
+BT yöneticileri artık, Azure AD iş yükünde yeni koşullu erişim ilkesi kullanıcı arabirimi aracılığıyla uygulama tabanlı ilkeler ayarlayabilir. Azure portalındaki Intune Uygulama Koruması bölümünde bulunan uygulama tabanlı koşullu erişim şimdilik orada kalacak ve yan yana uygulanacaktır. Ayrıca Intune iş yükünde, yeni koşullu erişim ilkesi kullanıcı arabirimine kolay bir bağlantı da bulunur.
+
+- [Azure AD’de uygulama tabanlı koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) hakkında daha fazla bilgi edinin.
 
 
 ## <a name="notices"></a>Bildirimler
@@ -112,6 +135,9 @@ Klasik Intune portalında (Silverlight) kullanılan mevcut mobil uygulama yönet
 
 
 ## <a name="whats-coming"></a>Yakında
+
+#### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail uygulaması OAuth destekleyecek <!---1196951--->
+Intune ile koşullu erişim, OAuth bulunan iOS cihazlarda daha güvenli kimlik doğrulamasını destekler. Bunu desteklemek üzere daha güvenli kimlik doğrulamasına imkan vermek için artık iOS için Şirket Portalı uygulamasında farklı bir akış bulunacak. Son kullanıcılar, Mail uygulamasında yeni bir Exchange hesabıyla oturum açmaya çalıştığında web görünümlü bir istem alacaklar. Intune’a kaydolduktan sonra kullanıcılar, yerel Mail uygulamasının sertifikaya erişmesine izin vermek için bir komut istemi görecekler. Pek çok son kullanıcı artık, karantinaya alınmış e-posta görmeyecek. Mevcut posta hesapları, temel kimlik doğrulama protokolünü kullanmaya devam edecek, bu yüzden bu kullanıcılar karantinaya alınmış e-postalar almaya devam edecektir. Son kullanıcılar için bu oturum açma deneyimi, Office mobil uygulamalarına benzerdir.
 
 ### <a name="end-of-support-for-ios-80----1164477---"></a>iOS 8.0 desteğinin son bulması <!---1164477--->
 Yönetilen uygulamalar ve iOS için Şirket Portalı uygulaması, şirket kaynaklarına erişim için iOS 9.0 ve üzeri sürümleri gerektirecek. Eylül ayından önce güncelleştirmeyen cihazlar, Şirket Portalı veya diğer uygulamalara erişemeyecek. 

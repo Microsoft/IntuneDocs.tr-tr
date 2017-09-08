@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune ve son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu yenilikler, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
+
+## <a name="week-of-august-28-2017"></a>28 Ağustos 2017 Haftası
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail uygulaması OAuth destekleyecek <!---1196951--->
+
+Intune ile koşullu erişim, OAuth bulunan iOS cihazlarda daha güvenli kimlik doğrulamasını destekler. Bunu desteklemek üzere daha güvenli kimlik doğrulamasına imkan vermek için artık iOS için Şirket Portalı uygulamasında farklı bir akış bulunacak. Son kullanıcılar, Mail uygulamasında yeni bir Exchange hesabıyla oturum açmaya çalıştığında web görünümlü bir istem alacaklar. Intune’a kaydolduktan sonra kullanıcılar, yerel Mail uygulamasının sertifikaya erişmesine izin vermek için bir komut istemi görecekler. Pek çok son kullanıcı artık, karantinaya alınmış e-posta görmeyecek. Mevcut posta hesapları, temel kimlik doğrulama protokolünü kullanmaya devam edecek, bu yüzden bu kullanıcılar karantinaya alınmış e-postalar almaya devam edecektir. Son kullanıcılar için bu oturum açma deneyimi, Office mobil uygulamalarına benzerdir.
+
+![Yerel posta uygulamasında hesap türü seçme.](./media/ios-11-ca-email-after-1708-01.png)
+
+![Exchange’i seçtikten sonra iOS cihaz, e-posta adresi ve hesap adını ister.](./media/ios-11-ca-email-after-1708-02.png)
+
+![E-posta adresi ve hesap adını sağlayın.](./media/ios-11-ca-email-after-1708-03.png)
+
+![Harici Microsoft oturum açma sayfasına gönderildi.](./media/ios-11-ca-email-after-1708-04.png)
+
+![Microsoft sayfasında parola sağlama.](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft, kullanıcıdan cihazı yönetime kaydetmesini ister.](./media/ios-11-ca-email-after-1708-06.png)
+
+![Kullanıcıdan cihazı Şirket Portalı web sitesinden kaydetmesi istenir.](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>21 Ağustos 2017 Haftası
 
@@ -31,11 +52,11 @@ Intune Mobil Uygulama Yönetimi (MAM) iletişim kutuları, modern bir görünüm
 
 **Önceki deneyim**
 
-![eski arabirim](media\NewUI_Old_AttachFileHandler.jpg)
+![eski arabirim](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **Modern deneyim**
 
-![modern arabirim](media\NewUI_Modern_AttachFileHandler.jpg)
+![modern arabirim](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>14 Ağustos 2017 Haftası
