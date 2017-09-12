@@ -1,6 +1,6 @@
 ---
 title: "iOS güncelleştirme ilkelerini yapılandırma"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Denetimli iOS cihazlarını otomatik olarak en yeni yazılım güncelleştirmesini yüklemeye zorlamak üzere iOS için güncelleştirme ilkelerini yapılandırın."
 keywords: 
 author: dougeby
@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
-ms.openlocfilehash: d4af2d58ec21c54362cf451eac1a33b2088885d5
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: a119f00cc8a92aa6cf7a1009f910df817593e0e8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-ios-update-policies"></a>iOS güncelleştirme ilkelerini yapılandırma
 iOS için güncelleştirme ilkeleri, denetimli iOS cihazlarını otomatik olarak en yeni yazılım güncelleştirmesini yüklemeye zorlamanıza olanak sağlar. Cihazların güncelleştirmeyi yüklemesini istemediğinizde, gün ve saat yapılandırma seçeneğine sahip olursunuz.

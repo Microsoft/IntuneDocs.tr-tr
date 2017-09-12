@@ -1,6 +1,6 @@
 ---
 title: "iOS cihazları için Intune e-posta ayarları"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "iOS cihazlarında e-posta bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcac410ae5c20b5942bf37f5eaa9a46205a4cc07
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b9b175d22ea58b104f3888e297de59f0bd41fc7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazları için e-posta profili ayarları
 

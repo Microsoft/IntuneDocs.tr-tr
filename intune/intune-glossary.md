@@ -1,6 +1,6 @@
 ---
 title: "Intune sözlüğü"
-titleSuffix: 
+titleSuffix: Azure portal
 description: "Microsoft Intune’da kullanılan terimlerin bir kısmı hakkında bilgi edinin"
 keywords: 
 author: robstackmsft
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 8eaf82e995e3b572d897b63aaf36480424603ce6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune sözlüğü
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 08/03/2017
 ## <a name="i"></a>I
 |||
 |-|-|
-|Intune portalı|Çoğu Intune yönetim işlemi için kullanmakta olduğunuz Azure portalı.|
+|Azure portalı|Çoğu Intune yönetim işlemi için kullanmakta olduğunuz Azure portalı.|
 |Intune yazılım istemcisi|Hangi yöntemin kullanılacağına karar vermek üzere yardımcı olması için [bazı Windows bilgisayarları yönetmenin](/intune-classic/get-started/choose-how-to-manage-devices) alternatif bir yolu.|
 |Intune Software Publisher|[Dağıtmak istediğiniz uygulamaları tanımlamak ve bunları bulut depolama alanınıza yüklemek](/intune-classic/deploy-use/add-apps) için kullandığınız bir araçtır.|
 |Envanter|Yönettiğiniz cihazların [donanımını ve üzerlerinde yüklü olan yazılımları](/intune/device-inventory) görüntülemek için kullanın.|

@@ -1,6 +1,6 @@
 ---
 title: "Android ve Android for Work cihazları için Intune e-posta ayarları"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Android cihazlarında e-posta bağlantıları yapılandırmak için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1f80e09241609b420a186011ff8dd059f0dd8df
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 436db2f645a3f2e787cb27a8c110630a8fbb1f38
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Microsoft Intune'da Android cihazları için e-posta profili ayarları
 

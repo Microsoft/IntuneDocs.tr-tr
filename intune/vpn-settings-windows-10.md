@@ -1,6 +1,6 @@
 ---
 title: "Windows 10 cihazları için Intune VPN ayarları"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Windows 10 cihazlarında VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
-ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
+ms.openlocfilehash: d4c2b865a7101a7486ecf9c9badbfb69d9efbeab
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’daki Windows 10 cihazlar için VPN ayarları
 

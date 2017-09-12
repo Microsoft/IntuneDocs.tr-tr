@@ -1,6 +1,6 @@
 ---
 title: "Windows 8.1 için Intune cihaz kısıtlama ayarları"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Windows 8.1 cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: d1b4745e1d05d2790de71b947eafc3e6cc1a7a43
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 8.1 ve üzeri cihaz kısıtlama ayarları
 

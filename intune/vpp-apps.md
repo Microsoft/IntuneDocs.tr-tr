@@ -1,6 +1,6 @@
 ---
 title: "Toplu satın alınan uygulama ve kitapları Intune ile yönetme"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Mağazalardan toplu satın alınan uygulama ve kitaplarınızın kullanımını yönetmek ve izlemek için Intune'u nasıl kullanabileceğinizi öğrenin.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fced0a52db719fe2228d6cd91786b7de8f539f57
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 76f6cedf638a5e1957a35da584ecf275afd7cd17
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Toplu satın alınan uygulama ve kitapları Microsoft Intune ile yönetme
 
