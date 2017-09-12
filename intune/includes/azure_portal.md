@@ -1,4 +1,4 @@
-|Uygulama hedefi: Azure’da Intune |
+|Uygulama hedefi: Azure portalında Intune |
 |--|
-|Klasik konsolda Intune hakkında belge mi arıyorsunuz? [Buraya](/intune/introduction-intune?toc=/intune-classic/toc.json) gidin.|
+|Klasik portalda Intune hakkında belgeler mi arıyorsunuz? [Buraya gidin](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
