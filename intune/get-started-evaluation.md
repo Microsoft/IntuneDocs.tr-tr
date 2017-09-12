@@ -1,10 +1,10 @@
 ---
 title: "Intune’u kullanmaya başlama"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune hakkında bilgi edinmek için bir dizi pratik alıştırma yapın."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5dc7a76ddac12dd3e002c8780541d3dd4e976896
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: abfd1c1a05ce0eac3e6ab835d6ac8b017c9a6d77
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune şirketim için ne yapabilir?
 
@@ -27,7 +27,7 @@ Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerin
 
 ![Microsoft Intune için yüksek düzey mimari diyagramı](/intune/media/intunearchitecture.svg)
 
-Şirketiniz adına pek çok farklı karar almanız gerekeceği için mobil cihaz yönetimine başlamanın zor olabileceğinin farkındayız. Bu alıştırmalar, Intune’un şirket kaynaklarınızı korumak amacıyla nasıl kullanılabileceğini anlamanıza yardımcı bazı görevler sağlar. 
+Şirketiniz adına pek çok farklı karar almanız gerekeceği için mobil cihaz yönetimine başlamanın zor olabileceğinin farkındayız. Bu alıştırmalar, Intune’un şirket kaynaklarınızı korumak amacıyla nasıl kullanılabileceğini anlamanıza yardımcı bazı görevler sağlar.
 
 ## <a name="what-are-the-exercises"></a>Alıştırmalar nelerdir?
 
