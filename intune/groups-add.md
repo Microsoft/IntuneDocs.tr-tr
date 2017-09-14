@@ -1,6 +1,6 @@
 ---
 title: "Intune’da kayıt kısıtlamalarını ayarlama"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune’da platforma göre kaydı kısıtlama ve cihaz kayıt sınırı ayarlama. \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b74faadfc93485023ea71f42b703f3b102aaa5b3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-groups-in-intune"></a>Intune’a grup ekleme
 Intune, cihaz ve kullanıcıları yönetmek için Azure Active Directory (AD) gruplarını kullanır. Bir Intune yöneticisi olarak grupları, kuruluş gereksinimlerinize uyacak şekilde ayarlayabilirsiniz. Kullanıcı veya cihazları coğrafi konum, departman veya donanım özelliklerine göre düzenlemek için grup oluşturun. Büyük ölçekli görevleri yönetmek için grupları kullanın. Örneğin pek çok kullanıcı için ilkeler ayarlayabilir veya bir cihaz kümesine uygulamalar dağıtabilirsiniz.
@@ -33,8 +33,8 @@ Aşağıdaki grup türlerini ekleyebilirsiniz:
 ## <a name="add-a-new-group"></a>Yeni bir grup ekleme
 
 Yeni bir grup oluşturmak için aşağıdaki adımları kullanın.
-1. Intune portalında **Gruplar**’a gidin ve sonra **Tüm gruplar** dikey penceresinde **Yeni grup**’u seçin.
-  ![Yeni Grubun seçili olduğu Intune portalı ekran görüntüsü](./media/groups-add-new.png)
+1. Azure portalında **Gruplar**’a gidin ve sonra **Tüm gruplar** dikey penceresinde **Yeni grup** seçeneğini belirleyin.
+  ![Yeni Grup seçeneğinin belirlendiği Intune portalı ekran görüntüsü](./media/groups-add-new.png)
 2. Yeni grup için **Ad** ve **Açıklama** belirtin. Bu özellikler, yalnızca yönetim portalında görüntülenir ve kullanıcılara gösterilmez.
 
 3. **Üyelik türü** seçin:

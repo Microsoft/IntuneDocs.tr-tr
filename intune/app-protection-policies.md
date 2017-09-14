@@ -1,6 +1,6 @@
 ---
 title: "Uygulama koruma ilkelerini oluşturma ve dağıtma"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Intune uygulama koruma ilkelerinin, yönettiğiniz uygulamalarda kullanılan şirket verilerinin korunmasına nasıl yardımcı olabileceğini öğrenin.\""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47cafd6fa252ca7db9ca1129c5dcc5bd0d70d154
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 2e535b2aa11401d51edb33cbad54e9222fd6da6a
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/09/2017
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Intune Klasik konsolunda yönergeler arıyorsanız bkz. [uygulama koruma ilkeleri oluşturma](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
+Klasik Intune portalında yönergeler arıyorsanız bkz. [uygulama koruma ilkeleri oluşturma](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
 
 Uygulama koruma ilkeleri, Intune tarafınızdan yönetilen veya yönetilmeyen cihazlarda çalışan uygulamalara uygulanabilir. Uygulama koruma ilkelerinin çalışmasıyla ve Intune uygulama koruma ilkeleri tarafından desteklenen senaryolarla ilgili daha ayrıntılı bir açıklama için bkz. [Microsoft Intune uygulama koruma ilkeleri nedir](app-protection-policy.md).
 

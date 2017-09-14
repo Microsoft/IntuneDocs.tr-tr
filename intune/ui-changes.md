@@ -1,7 +1,7 @@
 ---
 title: "Azure'daki Intune özelliğim nereye gitti?"
-titleSuffix: Intune on Azure
-description: "Azure konsolunda Intune özellikleri bulmanıza yardımcı olur.\""
+titlesuffix: Azure portal
+description: "Azure portalında Intune özellikleri bulmanıza yardımcı olur.”"
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure'daki Intune özelliğim nereye gitti?
-Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekilde organize ettik. Ancak her geliştirme sonrasında atlatılması gereken bir yeni düzene alışma süreci vardır. Bu nedenle klasik konsoldan Intune'a aşina olanlar ve Intune'da yapılan bir eylemi Azure'da nasıl gerçekleştireceğini merak edenler için bu başvuru kılavuzunu hazırladık. Aradığınız özellik bu makalede yoksa ekleyebilmemiz için lütfen aşağıya yorum yazın.
+Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekilde organize ettik. Ancak her geliştirme sonrasında atlatılması gereken bir yeni düzene alışma süreci vardır. Bu nedenle klasik portalda Intune’a aşina olanlar ve bir işlemi Azure portalında Intune’da nasıl gerçekleştireceğini merak edenler için bu başvuru kılavuzunu hazırladık. Aradığınız özellik bu makalede yoksa ekleyebilmemiz için lütfen aşağıya yorum yazın.
 ## <a name="quick-reference-guide"></a>Hızlı başvuru kılavuzu
-|Özellik |Klasik konsolda yol|Azure’da Intune’daki yol|
+|Özellik |Klasik portalda yol|Azure portalında Intune’da yol|
 |------------|---------------|---------------|
 |Aygıt Kayıt Programı (DEP) |Yönetici > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Aygıt Kayıt Programı|[Cihaz kaydı > Apple Kaydı > Kayıt Programı Belirteci](#where-did-apple-dep-go) |
 |Aygıt Kayıt Programı (DEP)| Yönetici > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Aygıt Kayıt Programı |[Cihaz kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-apple-dep-go) |
@@ -39,10 +39,10 @@ Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekil
 
 
 ## <a name="where-do-i-manage-groups"></a>Grupları nereden yönetebilirim?
-Azure'daki Intune'da grup yönetimi için [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) kullanılmaktadır.
+Azure portalında Intune’da grupları yönetmek için [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) kullanılır.
 
 ## <a name="where-did-enrollment-rules-go"></a>Kayıt kuralları nereye gitti?
-Klasik konsolda mobil ve modern Windows ve macOS cihazlarının MDM kaydını yöneten kurallar belirleme imkanına sahiptiniz:
+Klasik portalda mobil ve modern Windows ve macOS cihazlarının MDM kaydını yöneten kurallar belirleme imkanına sahiptiniz:
 
 ![Klasik mobil cihaz kayıt kuralları görüntüsü](./media/01-classic-rules.png)
 
@@ -50,11 +50,11 @@ Bu kurallar, özel durum olmadan Intune hesabınızdaki tüm kullanıcılar içi
 
 ![Azure mobil cihaz kaydı kısıtlamalarının görüntüsü](./media/02-azure-enroll-restrictions.png)
 
-Varsayılan Cihaz Sınırı Kısıtlaması, klasik konsoldaki Cihaz Kaydı Sınırına karşılık gelmektedir:
+Varsayılan Cihaz Sınırı Kısıtlaması, klasik portaldaki Cihaz Kaydı Sınırına karşılık gelmektedir:
 
 ![Azure cihaz sınırı kısıtlamalarının görüntüsü](./media/03-azure-device-limit.png)
 
-Varsayılan Cihaz Türü Kısıtlaması, klasik konsoldaki Platform Kısıtlamalarına karşılık gelmektedir:
+Varsayılan Cihaz Türü Kısıtlaması, klasik portaldaki Platform Kısıtlamalarına karşılık gelmektedir:
 
 ![Azure cihaz türü kısıtlamalarının görüntüsü](./media/04-azure-platform-restrictions.png)
 
@@ -65,7 +65,7 @@ Kişisel cihazlara izin verme veya bu cihazları engelleme özelliği artık Cih
 Yeni kısıtlama özellikleri yalnızca Azure Portalına eklenecektir.
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP nereye gitti?
-Klasik konsolda Intune'u Apple'ın Cihaz Kayıt Programı ile tümleştirebiliyor ve Apple'ın hizmetiyle el ile eşitleme isteğinde bulunuyordunuz:
+Klasik portalda Intune’u Apple’ın Aygıt Kayıt Programı ile tümleştirebiliyor ve Apple’ın hizmetiyle el ile eşitleme isteğinde bulunuyordunuz:
 
 ![Klasik DEP belirtecinin görüntüsü](./media/06-classic-dep-token.png)
 
@@ -73,13 +73,13 @@ Azure portalında Apple Cihaz Kayıt Programı kurulumunu Intune klasik ile ayn�
 
 ![Azure DEP belirtecinin görüntüsü](./media/07-azure-dep-token.png)
 
-Ancak klasik konsoldaki **Eşitle** seçeneği, el ile yapılan eşitleme sonuçlarının görüneceği seri numarası yönetimi iş akışına taşındı:
+Ancak klasik portaldaki **Eşitle** seçeneği, el ile yapılan eşitleme sonuçlarının görüneceği seri numarası yönetimi iş akışına taşındı:
 
 ![Azure DEP eşitleme görüntüsü](./media/08-azure-dep-sync.png)
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>Kurumsal ön kayıtlı cihazlar nereye gitti?
 ### <a name="by-ios-serial-number"></a>iOS seri numarasına göre
-Klasik konsolda Apple Cihaz Kayıt Programı (DEP) ve Apple Configurator aracıyla iOS cihazlarını kaydedebiliyordunuz. İki yöntemde de cihazların seri numarasına göre ön kayıt yapıyor ve özel Kurumsal Cihaz Kayıt profilleri atıyordunuz. Kayıt işleminden önce kayıt profili atama işlemi **iOS Seri Numarasına Göre Kurumsal Ön Kayıtlı Cihazlar** cihaz grubundan yönetilebilir:
+Klasik portalda Apple Aygıt Kayıt Programı (DEP) ve Apple Configurator aracıyla iOS cihazlarını kaydedebilirsiniz. İki yöntemde de cihazların seri numarasına göre ön kayıt yapıyor ve özel Kurumsal Cihaz Kayıt profilleri atıyordunuz. Kayıt işleminden önce kayıt profili atama işlemi **iOS Seri Numarasına Göre Kurumsal Ön Kayıtlı Cihazlar** cihaz grubundan yönetilebilir:
 
 ![Klasik Apple seri numaralarının görüntüsü](./media/09-classic-apple-serials.png)
 
@@ -93,18 +93,18 @@ Bu listede hem Apple DEP hem de Configurator kayıtları bir arada görüntülen
 
 ### <a name="by-imei-all-platforms"></a>IMEI'ye göre (tüm platformlar)
 
-Klasik konsolda cihazların IMEI numaralarını önceden listeleyerek Intune'a kaydolduklarında kuruluş cihazı olarak işaretleyebilirsiniz:
+Klasik portalda cihazların IMEI numaralarını önceden listeleyerek cihazlar Intune’a kaydolduklarında bunları kuruluş cihazı olarak işaretleyebilirsiniz:
 
 ![Klasik IMEI numarası listesinin görüntüsü](./media/12-classic-corp-imei.png)
 
-Azure konsolunda aynı IMEI ile Kurumsal Cihaz Tanımlayıcıları listesini virgülle ayrılmış değerler (CSV) dosyası olarak yüklemeniz gerekir. Yeni portalda IMEI numaralarının el ile girişi desteklenmez:
+Azure portalında aynı IMEI ile Kurumsal Cihaz Tanımlayıcıları listesini virgülle ayrılmış değerler (CSV) dosyası olarak yüklemeniz gerekir. Yeni portalda IMEI numaralarının el ile girişi desteklenmez:
 
 ![Azure IMEI numarası listesinin görüntüsü](./media/13-azure-corp-imei.png)
 
 Azure portalındaki Intune, gelecekte ortaya çıkabilecek IMEI haricindeki tanımlayıcı türlerini destekleyecek şekilde tasarlanmıştır ancak şu an için yalnızca IMEI numaralarının listelenmesine izin verilmektedir.
 
 ## <a name="where-did-corporate-device-enrollment-profiles-go"></a>Kurumsal Cihaz Kayıt profilleri nereye gitti?
-iOS cihazlarını Apple Cihaz Kayıt Programı veya Apple Configurator aracıyla kaydetmek için cihaza atanacak bir Kurumsal Cihaz Kayıt profili sağlamanız gerekir. Klasik konsolda bu profillerin oluşturulması ve yönetilmesi tek bir listeden yapılıyordu:
+iOS cihazlarını Apple Cihaz Kayıt Programı veya Apple Configurator aracıyla kaydetmek için cihaza atanacak bir Kurumsal Cihaz Kayıt profili sağlamanız gerekir. Klasik portalda bu profillerin oluşturulması ve yönetilmesi tek bir listeden yapılıyordu:
 
 ![Klasik cihaz kayıt profillerinin görüntüsü](./media/14-classic-corp-profiles.png)
 

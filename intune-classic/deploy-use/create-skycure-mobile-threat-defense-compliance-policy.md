@@ -1,6 +1,6 @@
 ---
 title: "Skycure Mobile Threat Defense uyumluluk ilkesi oluşturma"
-description: "Intune klasik konsolunda Skycure Mobile Threat Defense uyumluluk ilkesi oluşturun."
+description: "Klasik Intune portalında Skycure Mobile Threat Defense uyumluluk ilkesi oluşturun."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29caf162500e25c2a0151be92aabe4cc432e241b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e8f7b6c5c1e8497ca698b83215525ba9b4056f59
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Skycure Mobile Threat Defense uyumluluk ilkesi oluşturma
 
@@ -38,7 +38,7 @@ Skycure Mobile Threat Defense kurulumunun bir parçası olarak, Skycure konsolun
 
 ## <a name="to-create-skycure-compliance-policy"></a>Skycure uyumluluk ilkesi oluşturmak için
 
-1.  [Intune klasik konsoluna](https://manage.microsoft.com/) gidin ve kimlik bilgilerinizi girin.
+1.  [Klasik Intune portalına](https://manage.microsoft.com/) gidin ve kimlik bilgilerinizi girin.
 
 2.  **İlke** &gt; **Uyumluluk İlkeleri**’ni seçin. Mevcut bir uyumluluk ilkesi kullanabilir veya yeni bir tane oluşturabilirsiniz.
 

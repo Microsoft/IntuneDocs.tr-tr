@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7873481ccd33d2eaf4ec1a4c7fadf30c61b8d42e
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 2384bede0ef4ed68072d1884d235e091cc625fa5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Kullanıcı ekleme ve Intune'a yönetici izni verme
 
@@ -29,7 +29,7 @@ Bu konuda, yöneticilerin kullanıcıları Intune’a nasıl ekleyebilecekleri v
 Yönetici olarak, kullanıcıları doğrudan ekleyebilir veya şirket içi Active Directory'den eşitleyebilirsiniz. Eklendikten sonra, kullanıcılar cihazlarını kaydedebilir ve şirket kaynaklarına erişebilir. Ayrıca kullanıcılara *genel yönetici* ve *hizmet yöneticisi* izinleri gibi ek izinler verebilirsiniz.
 
 ## <a name="add-users-to-intune"></a>Intune’a kullanıcı ekleme
-Intune aboneliğinize [Office 365 portalı](https://www.office.com/signin) veya [Azure Intune portalı](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) aracılığıyla el ile kullanıcı ekleyebilirsiniz. Bir yönetici, Intune lisansları atamak için kullanıcı hesaplarını düzenleyebilir. Office 365 portalından veya Intune Azure portalından lisans atayabilirsiniz. Office 365 portalını kullanma konusunda daha fazla bilgi için bkz. [Office 365 portalına tek tek veya topluca kullanıcı ekleme](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Intune aboneliğinize [Office 365 portalı](https://www.office.com/signin) veya [Azure portalı](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) aracılığıyla el ile kullanıcı ekleyebilirsiniz. Bir yönetici, Intune lisansları atamak için kullanıcı hesaplarını düzenleyebilir. Office 365 portalından veya Intune Azure portalından lisans atayabilirsiniz. Office 365 portalını kullanma konusunda daha fazla bilgi için bkz. [Office 365 portalına tek tek veya topluca kullanıcı ekleme](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="add-intune-users-in-the-office-365-admin-center"></a>Office 365 Yönetim Merkezi’nde Intune’a kullanıcı ekleme
 1. Bir genel yönetici veya kullanıcı yönetimi yönetici hesabıyla [Office 365 portalında](https://www.office.com/signin) oturum açın.
@@ -52,7 +52,7 @@ Intune aboneliğinize [Office 365 portalı](https://www.office.com/signin) veya 
 5. Bir Intune lisansı atayın. **Ürün lisansları**’nda ürün lisansını seçin. Intune’u barındıran bir lisans gereklidir.
 6. Yeni kullanıcı oluşturmak için **Ekle**'yi seçin.
 
-### <a name="add-intune-users-in-the-azure-intune-portal"></a>Azure Intune portalında Intune’a kullanıcı ekleme
+### <a name="add-intune-users-in-the-azure-portal"></a>Azure portalında Intune kullanıcıları ekleme
 1. [Azure portalında](https://portal.azure.com) oturum açın ve **Diğer hizmetler** > **İzleme + Yönetim** > **Intune**’a gidin. Ayrıca **Intune** için *kaynak araması* da yapabilirsiniz.
 2. **Kullanıcılar**’ı seçin.
 3. Yönetim merkezinde **Yeni kullanıcı**’yı seçin.
@@ -84,16 +84,16 @@ Intune aboneliğinize kullanıcı ekledikten sonra, bazı kullanıcılara yönet
 ![Office 365 portalı Rol atama görüntüsü.](./media/office-assign-roles.png)
 6. **Kaydet**’i seçin.
 
-### <a name="give-admin-permissions-in-the-intune-portal"></a>Intune portalında yönetici izinleri verme
-1. [Intune portalında](https://www.office.com/signin) bir genel yönetici hesabıyla oturum açın.
-2. Intune portalında **Kullanıcı**’yı ve ardından yönetici izinleri vermek istediğiniz kullanıcıyı seçin.
+### <a name="give-admin-permissions-in-the-azure-portal"></a>Azure portalında yönetici izinleri verme
+1. [Azure portalında](https://www.office.com/signin) bir genel yönetici hesabıyla oturum açın.
+2. Azure portalında **Kullanıcı**’yı ve ardından yönetici izinleri vermek istediğiniz kullanıcıyı seçin.
 3. **Dizin rolü**’nü ve ardından vereceğiniz izni seçin.
   ![Ekran görüntüsü](./media/add-intune-directory-role.png)
 4. **Kaydet**’i seçin.
 
 ### <a name="types-of-administrators"></a>Yönetici türleri
 
-Kullanıcılara bir veya daha fazla yönetici izni atayın. Bu izinler, kullanıcıların yönetim kapsamını ve yönetebilecekleri görevleri tanımlar. Yönetici izinleri, farklı Microsoft bulut hizmetlerinde ortak kullanılır ancak bazı hizmetler bazı izinleri desteklemeyebilir. Intune ve Office 365 portallarında Intune tarafından kullanılmayan sınırlı yönetici izinlerini listelenir. Intune yönetici izinleri aşağıdaki seçenekleri içerir:
+Kullanıcılara bir veya daha fazla yönetici izni atayın. Bu izinler, kullanıcıların yönetim kapsamını ve yönetebilecekleri görevleri tanımlar. Yönetici izinleri, farklı Microsoft bulut hizmetlerinde ortak kullanılır ancak bazı hizmetler bazı izinleri desteklemeyebilir. Azure ve Office 365 portallarında Intune tarafından kullanılmayan sınırlı yönetici rolleri listelenir. Intune yönetici izinleri aşağıdaki seçenekleri içerir:
 
 - **Genel yönetici** - (Office 365 ve Intune) Intune’daki tüm yönetim özelliklerine erişir. Varsayılan olarak Intune için kaydolan kişi Genel yönetici olur. Diğer yönetici rollerini yalnızca genel yöneticiler atayabilir. Kuruluşunuzda birden fazla genel yönetici olabilir. İş riskinizi azaltmak için, şirketinizde yalnızca birkaç kişinin bu role sahip olmasını öneririz.
 - **Parola yöneticisi** - (Office 365 ve Intune) Parolaları sıfırlar, hizmet isteklerini yönetir ve hizmetin sistem durumunu izler. Parola yöneticileri yalnızca kullanıcıların parolalarını sıfırlayabilir.
@@ -102,9 +102,9 @@ Kullanıcılara bir veya daha fazla yönetici izni atayın. Bu izinler, kullanı
 - **Kullanıcı yöneticisi** - (Office 365 ve Intune) Parolaları sıfırlar, hizmetin sistem durumunu izler, kullanıcı hesapları ekleyip siler ve hizmet isteklerini yönetir. Kullanıcı yönetimi yöneticisi bir genel yöneticiyi silemez, başka yönetici rolleri oluşturamaz veya diğer yöneticilerin parolalarını sıfırlayamaz.
 - **Intune Hizmet yöneticisi** - **Dizin Rolü** seçenekleriyle yönetici oluşturma izni hariç tüm Intune Genel yönetici izinlerine sahiptir.
 
-Microsoft Intune aboneliğinizi oluşturmak için kullandığınız hesap bir genel yöneticidir. Günlük yönetim görevleri için bir genel yönetici kullanmamanız önerilir. Bir yöneticinin Intune portalına erişmesi için Intune lisansı gerekmez. 
+Microsoft Intune aboneliğinizi oluşturmak için kullandığınız hesap bir genel yöneticidir. Günlük yönetim görevleri için bir genel yönetici kullanmamanız önerilir. Bir yöneticinin Azure portalına erişmesi için Intune lisansı gerekmez. 
 
-Office 365 portalına erişmek için hesabınızın **Oturum açmaya izinli** olması gerekir. Erişime izin vermek için Intune portalında **Profil** altında, **Oturum açmayı engelle**’yi **Hayır** yapın. Bu durum, aboneliğin lisansına sahip olmaktan farklıdır. Varsayılan olarak, tüm kullanıcı hesapları **İzin Verildi** durumundadır. Yönetici izinleri olmayan kullanıcılar Intune parolalarını sıfırlamak için Office 365 portalını kullanabilir.
+Office 365 portalına erişmek için hesabınızın **Oturum açmaya izinli** olması gerekir. Erişime izin vermek için Azure portalındaki **Profil**’in altında **Oturum açmayı engelle**’yi **Hayır** olarak ayarlayın. Bu durum, aboneliğin lisansına sahip olmaktan farklıdır. Varsayılan olarak, tüm kullanıcı hesapları **İzin Verildi** durumundadır. Yönetici izinleri olmayan kullanıcılar Intune parolalarını sıfırlamak için Office 365 portalını kullanabilir.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Active Directory’yi eşitleme ve Intune’a kullanıcı ekleme
 Şirket içi Active Directory'nizden Microsoft Azure Active Directory’ye (Azure AD) kullanıcı hesaplarını aktarmak için dizin eşitlemeyi yapılandırabilirsiniz ve bu, Intune kullanıcılarını da içerir. Şirket içi Active Directory hizmetinizi tüm Azure Active Directory tabanlı hizmetlere bağlamak kullanıcı kimliği yönetimini daha kolay hale getirir. Kullanıcılarınız için kimlik doğrulaması deneyimini tanıdık ve kolay hale getirmek isterseniz, çoklu oturum açma özelliklerini de yapılandırabilirsiniz. Aynı [Azure AD kiracısını](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) birden çok hizmete bağlayarak, önceden eşitlediğiniz kullanıcı hesaplarını tüm bulut tabanlı hizmetler için kullanabilirsiniz.

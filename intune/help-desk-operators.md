@@ -1,6 +1,6 @@
 ---
 title: "Yardım masası sorun giderme portalı"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Yardım masası personeli, kullanıcıların teknik sorunlarını çözmek için sorun giderme portalını kullanır"
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Kullanıcılara yardımcı olmak için sorun giderme portalını kullanın
 
@@ -35,14 +35,14 @@ Sorun giderme portalı, yardım masası operatörlerinin ve Intune yöneticileri
 -   Uygulama yükleme hatası
 
 ## <a name="add-help-desk-operators"></a>Yardım masası operatörleri ekleme
-Bir Intune yöneticisi olarak bir kullanıcı grubuna Yardım Masası Operatörü rolü atayabilirsiniz. Bu grubun üyeleri, kullanıcı sorunlarını gidermek için yönetici portalını kullanabilir. Intune portalına erişmek için her yardım masası operatörünün bir Intune lisansı olması gerekir. [Intune kullanıcı lisanslarını atamayı](licenses-assign.md) öğrenin.
+Bir Intune yöneticisi olarak bir kullanıcı grubuna Yardım Masası Operatörü rolü atayabilirsiniz. Bu grubun üyeleri, kullanıcıların sorunlarını gidermek için Azure portalını kullanabilir. Azure portalına erişmek için yardım masası operatörlerinin bir Intune lisansı olması gerekir. [Intune kullanıcı lisanslarını atamayı](licenses-assign.md) öğrenin.
 
 Yardım masası kullanıcıları eklemek için:
 1. Gerekirse [Intune’a kullanıcı ekleyin](users-add.md).
 2. [Bir yardım masası grubu oluşturun](groups-add.md) ve kullanıcıları gruba ekleyin.
 3. [RBAC Yardım Masası Operatörü rolünü atama](role-based-access-control.md#built-in-roles).
 
-  ![Intune rollerinin ve Yardım Masası Operatörü gibi yerleşik rollerin listesinin vurgulandığı Intune portalı ekran görüntüsü](./media/help-desk-user-add.png) Ayrıca, yardım masası operatörlerine erişim vermek için daha sonra değiştirebileceğiniz [bir özel rol oluşturabilirsiniz](role-based-access-control.md#custom-roles).  Yardım masası operatörleri, kullanıcı sorunlarını gidermenize yardımcı olmak için aşağıdaki izinleri gerektirir:
+  ![Intune rollerinin ve Yardım Masası Operatörü gibi yerleşik rollerin listesinin gösterildiği Azure portalı ekran görüntüsü](./media/help-desk-user-add.png) Ayrıca yardım masası operatörlerine erişim vermek için daha sonra değiştirebileceğiniz [bir özel rol oluşturabilirsiniz](role-based-access-control.md#custom-roles).  Yardım masası operatörleri, kullanıcı sorunlarını gidermenize yardımcı olmak için aşağıdaki izinleri gerektirir:
     - MobileApps: Okuma
     - ManagedApps: Okuma
     - ManagedDevices: Okuma

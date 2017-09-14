@@ -1,6 +1,6 @@
 ---
-title: "Azure’da Microsoft Intune bilinen sorunları"
-titleSuffix: Intune on Azure
+title: "Azure portalında Microsoft Intune’da bilinen sorunlar"
+titlesuffix: Azure portal
 description: "Intune’da bilinen sorunlar hakkında okuyun\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
-ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
+ms.openlocfilehash: 7570e7b2f612d1d2a017f82967cdc5baf798a761
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -37,7 +37,7 @@ Intune için yeni bir özellik talep etmek istiyorsanız, [Uservoice](https://mi
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Geçiş sırasında Intune tarafından oluşturulan gruplar diğer Microsoft ürünlerinin işlevlerini etkileyebilir
 
-Klasik Intune’dan Azure portalına geçiş yaptığınızda **Tüm Kullanıcılar - b0b08746-4dbe-4a37-9adf-9e7652c0b421** adlı yeni bir grup görebilirsiniz. Bu grupta yalnızca Intune lisanslı kullanıcılar değil Azure Active Directory'niz içindeki tüm kullanıcılar bulunur. Mevcut kullanıcılardan bazılarının veya yeni kullanıcıların herhangi bir gruba üye olmamasını bekliyorsanız bu kullanım diğer Microsoft ürünlerinde sorunlara neden olabilir.
+Intune’dan Azure portalına geçiş yaptığınızda **Tüm Kullanıcılar - b0b08746-4dbe-4a37-9adf-9e7652c0b421** adlı yeni bir grup görebilirsiniz. Bu grupta yalnızca Intune lisanslı kullanıcılar değil Azure Active Directory'niz içindeki tüm kullanıcılar bulunur. Mevcut kullanıcılardan bazılarının veya yeni kullanıcıların herhangi bir gruba üye olmamasını bekliyorsanız bu kullanım diğer Microsoft ürünlerinde sorunlara neden olabilir.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Seçilen özellikler için gerekli ikincil geçiş
 
@@ -49,20 +49,20 @@ Aşağıdaki özelliklerin Azure portalında kullanılabilmesi için Ocak 2017�
 - Cihaz Kayıt Yöneticisi hesapları
 - Apple Volume Purchase Program
 
-Bu özellikler hem klasik Intune (Silverlight) konsolu hem Azure portalından yönetilemediği için geçiş işlemi:
-- Bunları klasik konsolda devre dışı bırakır
+Bu özellikler hem Intune (Silverlight) konsolu hem Azure portalından yönetilemediği için geçiş işlemi:
+- Bunları klasik portalda devre dışı bırakır
 - Azure portalında etkinleştirir  
 
-11 Eylül 2017 tarihinden sonra, bu özelliklerin geçişi ile birincil Azure geçişi birleştirilecektir. Hesabınız zaten Azure portalını kullanmak üzere geçirilmişse bu ikinci geçiş, 11-22 Eylül 2017 tarihleri arasında gerçekleşecektir. Hesabınızın geçişi, başladığı gün tamamlanır. Geçiş, bu özelliklerin Klasik Intune konsolunda devre dışı bırakıldığı süreden itibaren 6 saat kadar sürebilir.
+11 Eylül 2017 tarihinden sonra, bu özelliklerin geçişi ile birincil Azure geçişi birleştirilecektir. Hesabınız zaten Azure portalını kullanmak üzere geçirilmişse bu ikinci geçiş, 11-22 Eylül 2017 tarihleri arasında gerçekleşecektir. Hesabınızın geçişi, başladığı gün tamamlanır. Geçiş, bu özelliklerin klasik Intune portalında devre dışı bırakıldığı süreden itibaren 6 saat kadar sürebilir.
 
 Artık Intune özelliklerini Azure portalında yönetiyorsanız aşağıdaki hususları göz önünde bulundurun:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Apple DEP’te varsayılan Kurumsal Cihaz Kaydı profillerini kaldırır
-Azure portalı, Apple Aygıt Kayıt Programı (DEP) cihazları için varsayılan bir Şirket Cihaz Kaydı profili desteklemez. Klasik Intune (Silverlight) konsolunda sağlanan bu işlevsellik, profillerin yanlışlıkla atanmasını önlemek için kullanımdan kaldırılmıştır. Azure portalında DEP seri numaraları eşitlenirken, hiçbir Şirket Cihaz Kaydı profili atanmaz. Cihaz kullanılmadan önce bir kayıt profili atanmalıdır.
+Azure portalı, Apple Aygıt Kayıt Programı (DEP) cihazları için varsayılan bir Şirket Cihaz Kaydı profili desteklemez. Intune (Silverlight) konsolunda sağlanan bu işlevsellik, profillerin yanlışlıkla atanmasını önlemek için kullanımdan kaldırılmıştır. Azure portalında DEP seri numaraları eşitlenirken, hiçbir Şirket Cihaz Kaydı profili atanmaz. Cihaz kullanılmadan önce bir kayıt profili atanmalıdır.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP belirtecinin geçiş ile geri yüklenmesi
 
-Klasik Intune (Silverlight) portalında bir Apple Aygıt Kayıt Programı belirtecini sildiyseniz ve Azure portalına yeni bir belirteç yüklemezseniz geçiş yaptığınızda özgün belirteç Azure portalına geri yüklenir. Bu belirteci kaldırmak ve DEP kaydını önlemek için belirteci Azure portalından silin.
+Intune (Silverlight) portalında bir Apple Aygıt Kayıt Programı belirtecini sildiyseniz ve Azure portalına yeni bir belirteç yüklemezseniz geçiş yaptığınızda özgün belirteç Azure portalına geri yüklenir. Bu belirteci kaldırmak ve DEP kaydını önlemek için belirteci Azure portalından silin.
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Geçirilen ilkeler için durum dikey pencereleri çalışmıyor
 
@@ -101,8 +101,9 @@ Bu ayarlar hakkında daha fazla bilgi için bkz. [Microsoft Intune’da macOS ci
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Intune'daki uyumluluk ilkeleri yeni konsolda gösterilmez
 
-Klasik portalda oluşturduğunuz uyumluluk ilkeleri geçirilir, ancak Azure portalındaki tasarım değişiklikleri nedeniyle Azure portalında görüntülenmez. Klasik Intune portalında oluşturduğunuz uyumluluk ilkeleri uygulanmaya devam eder ancak bunları klasik Intune portalında görüntülemeniz ve düzenlemeniz gerekir.
-Ayrıca Azure portalında oluşturduğunuz yeni uyumluluk ilkeleri klasik Intune portalında görünmez.
+Klasik portalda oluşturduğunuz uyumluluk ilkeleri geçirilir, ancak Azure portalındaki tasarım değişiklikleri nedeniyle Azure portalında görüntülenmez. Klasik Intune portalında oluşturduğunuz uyumluluk ilkeleri uygulanmaya devam eder ancak bunları klasik portalda görüntülemeniz ve düzenlemeniz gerekir.
+
+Ayrıca Azure portalında oluşturduğunuz yeni uyumluluk ilkeleri klasik portalda görünmez.
 
 Daha fazla bilgi için bkz. [Cihaz uyumluluğu nedir?](device-compliance.md)
 

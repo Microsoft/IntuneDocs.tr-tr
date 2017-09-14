@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune'daki yenilikler
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune Azure portalındaki yenilikleri keşfedin"
 keywords: 
 author: brenduns
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50856bdc500cab4b206a105275b4842680d4423
-ms.sourcegitcommit: 71cdf99d639530e70dbe48d611d399e52c3150b0
+ms.openlocfilehash: c4787c716f94e95ab98badf924273af5d02751f8
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -102,7 +102,7 @@ Son kullanıcılar artık, iOS için Microsoft OneNote ile farklı hesaplar (iş
 - Intune ile [uygulama koruması ve çoklu kimlik](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) destekleyen uygulamalar hakkında daha fazla bilgi edinin.
 
 #### <a name="new-settings-to-allow-and-block-apps-on-samsung-knox-standard-devices"></a>Samsung KNOX Standard cihazlarda uygulamalara izin vermek veya bunları engellemek için yeni ayarlar
-<!-- 1305423 -->  
+<!-- 1305423 822899-->  
 Bu sürümde, aşağıdaki uygulama listelerini belirtmenizi sağlayan yeni [cihaz kısıtlama ayarları](device-restrictions-android.md) ekliyoruz:
  
 - Kullanıcıların yüklemesine izin verilen uygulamalar
@@ -112,7 +112,7 @@ Bu sürümde, aşağıdaki uygulama listelerini belirtmenizi sağlayan yeni [cih
 Uygulamayı URL, paket adı ile veya yönettiğiniz uygulamalar listesinden belirtebilirsiniz.
 
 #### <a name="new-azure-ad-app-based-conditional-access-policy-ui-link-from-intune"></a>Intune’dan yeni Azure AD uygulama tabanlı koşullu erişim ilkesi kullanıcı arabirimi bağlantısı
-
+<!-- 1016201 -->
 BT yöneticileri artık, Azure AD iş yükünde yeni koşullu erişim ilkesi kullanıcı arabirimi aracılığıyla uygulama tabanlı ilkeler ayarlayabilir. Azure portalındaki Intune Uygulama Koruması bölümünde bulunan uygulama tabanlı koşullu erişim şimdilik orada kalacak ve yan yana uygulanacaktır. Ayrıca Intune iş yükünde, yeni koşullu erişim ilkesi kullanıcı arabirimine kolay bir bağlantı da bulunur.
 
 - [Azure AD’de uygulama tabanlı koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) hakkında daha fazla bilgi edinin.
@@ -124,7 +124,7 @@ BT yöneticileri artık, Azure AD iş yükünde yeni koşullu erişim ilkesi kul
 Güvenlik duvarı proxy ayarları için [güncelleştirilmiş DNS adları ve IP adresleri listesi](/intune/network-bandwidth-use) kullanılabilir.
 
 ### <a name="use-azure-active-directory-for-conditional-access----967947---"></a>Koşullu erişim için Azure Active Directory kullanın <!-- 967947 -->
-Koşullu erişim Azure konsolundaki Azure Active Directory bölümünde kullanılabilir ve Office 365 Exchange Online ve SharePoint Online gibi bulut uygulamalarında ilkeleri ayarlamak için daha güçlü ve esnek bir çerçeve sağlar.  İlkeleri yapılandırmak için klasik Intune konsolu yerine **Azure Active Directory'de koşullu erişim** dikey penceresini kullanın. Klasik Intune konsolundaki mevcut ilkelerin Azure konsolunda yeniden oluşturulması gerekir. Daha fazla bilgi için bkz. [Azure AD koşullu erişim ilkeleri oluşturma](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
+Koşullu erişim, Azure portalındaki Azure Active Directory bölümünde kullanılabilir ve Office 365 Exchange Online ve SharePoint Online gibi bulut uygulamalarında ilkeleri ayarlamak için daha güçlü ve esnek bir çerçeve sağlar.  İlkeleri yapılandırmak için Intune konsolu yerine **Azure Active Directory’de koşullu erişim** dikey penceresini kullanın. Intune konsolundaki mevcut ilkelerin Azure portalında yeniden oluşturulması gerekir. Daha fazla bilgi için bkz. [Azure AD koşullu erişim ilkeleri oluşturma](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Apple kayıt senaryolarına doğrudan erişim <!--951869-->
 Intune, Azure portalındaki Cihaz Kaydetme iş yükünü kullanarak Apple kayıt senaryolarına doğrudan erişimi Ocak 2017 sonrasında oluşturulan Intune hesapları için etkinleştirdi. Daha önce, Apple kayıt önizleme sürümüne yalnızca klasik Intune portalı bağlantıları ile erişilebiliyordu. Bu özelliklerin Azure’da kullanılabilmesi için Ocak 2017 öncesi oluşturulan Intune hesaplarında tek seferlik bir geçiş yapılması gerekir. Geçiş için zaman çizelgesi henüz açıklanmamıştır, ancak konuya ilişkin ayrıntılar olabildiğince çabuk duyurulacaktır. Mevcut hesabınız Azure portalına erişemiyorsa yeni deneyimi sınamak için bir deneme hesabı oluşturmanızı kesinlikle öneririz.

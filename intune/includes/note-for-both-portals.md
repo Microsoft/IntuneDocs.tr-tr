@@ -1,4 +1,4 @@
 |Şunlar için geçerlidir: Intune |
 |--|
-|Bu konu, gerek Azure portalında, gerekse klasik konsolda Intune için geçerlidir.|
+|Bu konu, Azure portalında ve klasik portalda Intune için geçerlidir.|
 | |

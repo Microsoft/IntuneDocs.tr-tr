@@ -1,7 +1,7 @@
 ---
 title: "Şirket içi EAS için Exchange bağlayıcısını Intune ile ayarlama"
-titleSuffix: Intune Azure
-description: "Intune Azure: Exchange ActiveSync MDM - Bağlayıcı aracını kullanarak, Intune ve şirket içi Exchange Server arasında iletişimi etkinleştirin"
+titleSuffix: Azure portal
+description: "Bağlayıcı aracını kullanarak Intune ve şirket içi Exchange Server arasında iletişimi etkinleştirme"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dd5143ce6c604f416af1c6b6b1df684346e2f6d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: f9dc93cf0a24032eba051f770af1b35f9932acc9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure’da Intune şirket içi Exchange Bağlayıcısını ayarlama
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/14/2017
 
 Microsoft Intune’un şirket içi Exchange Server ile iletişim kurmasını sağlayan bir bağlantı ayarlamak için aşağıdaki adımları izlemeniz gerekir:
 
-1.  Intune şirket içi Exchange Connector’ı Intune portalından indirin.
+1.  Intune şirket içi Exchange Connector’ı Azure portalından indirin.
 2.  Intune şirket içi Exchange bağlayıcısını yükleyin ve yapılandırın.
 3.  Exchange bağlantısını doğrulayın.
 

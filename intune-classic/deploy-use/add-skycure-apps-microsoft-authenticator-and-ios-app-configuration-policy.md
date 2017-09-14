@@ -1,6 +1,6 @@
 ---
 title: "Skycure uygulamalarını, Microsoft Authenticator uygulamasını ve iOS yapılandırma ilkesini ekleme"
-description: "Skycure uygulamalarını, Microsoft Authenticator uygulamasını ve iOS yapılandırma ilkesini Intune klasik konsoluna ekleyin."
+description: "Skycure uygulamalarını, Microsoft Authenticator uygulamasını ve iOS yapılandırma ilkesini klasik Intune portalına ekleyin."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 018d26f4-4a75-4e27-bb04-54f54106cb2f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 425b86e92281bb6e3657a6c806be269ccae94311
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d762e1aed998642db66908549b2d15d54601aed
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-skycure-apps-microsoft-authenticator-app-and-ios-configuration-policy"></a>Skycure uygulamalarını, Microsoft Authenticator uygulamasını ve iOS yapılandırma ilkesini ekleme
 
@@ -30,9 +30,9 @@ Buna ek olarak, kullanıcıların kimliklerinin Azure AD tarafından denetlenebi
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
--   Aşağıdaki adımlar, [Intune klasik konsolunda](https://manage.microsoft.com/) tamamlanmalıdır.
+-   Aşağıdaki adımlar, [klasik Intune portalında](https://manage.microsoft.com/) tamamlanmalıdır.
 
--   Daha önce Skycure Yönetim konsolunda yapılandırılmış olan Azure AD hesabını kullanın. Bu, Intune klasik konsolunda oturum açarken kullanılanla aynı hesap olmalıdır.
+-   Daha önce Skycure Yönetim konsolunda yapılandırılmış olan Azure AD hesabını kullanın. Bu, klasik Intune portalında oturum açarken kullanılan hesap olmalıdır.
 
 -   Skycure tümleştirme dosyasını kullanıma hazır durumda elinizin altında bulundurmalısınız. Bu, daha önce Skycure Yönetim konsolundan indirilen ve iOS uygulama yapılandırma ilkesi parametrelerinin bulunduğu **skycure\_configuration.plist** dosyasını içeren .zip dosyasıdır.
 
@@ -44,7 +44,7 @@ Buna ek olarak, kullanıcıların kimliklerinin Azure AD tarafından denetlenebi
 
 ## <a name="to-add-the-skycure-app-for-android"></a>Android için Skycure uygulaması eklemek için
 
-1.  Intune klasik konsolunda **Uygulamalar** &gt; **Uygulama Ekle**’yi seçerek Intune Yazılım Yayımcısı’nı başlatın ve ardından **İleri**’ye tıklayın.
+1.  Klasik Intune portalında **Uygulamalar** &gt; **Uygulama Ekle**’yi seçerek Intune Yazılım Yayımcısı’nı başlatın ve ardından **İleri**’ye tıklayın.
 
 2.  **Yazılım kurulumu** sayfasında **Dış bağlantı**’yı seçin, sonra **URL’yi belirtin** alanının altına [Android için Skycure uygulaması url’sini](https://play.google.com/store/apps/details?id=com.skycure.skycure) yapıştırın.
 
@@ -58,7 +58,7 @@ Buna ek olarak, kullanıcıların kimliklerinin Azure AD tarafından denetlenebi
 
 ## <a name="to-add-the-skycure-app-for-ios"></a>iOS için Skycure uygulaması eklemek için
 
-1.  Intune klasik konsolunda **Uygulamalar** &gt; **Uygulama Ekle**’yi seçerek Intune Yazılım Yayımcısı’nı başlatın ve ardından **İleri**’ye tıklayın.
+1.  Klasik Intune portalında **Uygulamalar** &gt; **Uygulama Ekle**’yi seçerek Intune Yazılım Yayımcısı’nı başlatın ve ardından **İleri**’ye tıklayın.
 
 2.  **Yazılım kurulumu** sayfasında **Uygulama Mağazası’ndan Yönetilen iOS Uygulaması**’nı seçin, sonra da **URL’yi belirtin** alanının altına [iOS için Skycure uygulaması url’sini](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) yapıştırın.
 
@@ -74,7 +74,7 @@ Buna ek olarak, kullanıcıların kimliklerinin Azure AD tarafından denetlenebi
 
 ## <a name="to-add-the-microsoft-authenticator-app-for-ios"></a>iOS için Microsoft Authenticator uygulaması eklemek için
 
-1.  Intune klasik konsolunda **Uygulamalar** &gt; **Uygulama Ekle**’yi seçerek Intune Yazılım Yayımcısı’nı başlatın ve ardından **İleri**’ye tıklayın.
+1.  Klasik Intune portalında **Uygulamalar** &gt; **Uygulama Ekle**’yi seçerek Intune Yazılım Yayımcısı’nı başlatın ve ardından **İleri**’ye tıklayın.
 
 2.  **Yazılım kurulumu** sayfasında **Uygulama Mağazası’ndan Yönetilen iOS Uygulaması**’nı seçin, sonra da **URL’yi belirtin** alanının altına [iOS için Microsoft Authenticator uygulaması url’sini](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) yapıştırın.
 
@@ -90,7 +90,7 @@ Buna ek olarak, kullanıcıların kimliklerinin Azure AD tarafından denetlenebi
 
 ## <a name="to-add-the-skycure-ios-app-configuration-policy"></a>Skycure iOS uygulaması yapılandırma ilkesini eklemek için
 
-1.  Intune klasik konsolunda **İlke** &gt; **Genel Bakış &gt; İlke Ekle**’yi seçin.
+1.  Klasik Intune portalında **İlke** &gt; **Genel Bakış &gt; İlke Ekle**’yi seçin.
 
 2.  İlkeler listesinde **iOS**’u genişletin, **Mobil Uygulama Yapılandırma İlkesi (iOS 8.0 ve üstü)** öğesini ve ardından **İlke Oluştur**’u seçin.
 

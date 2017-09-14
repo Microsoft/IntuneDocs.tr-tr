@@ -1,6 +1,6 @@
 ---
 title: "Android for Work için Intune özel profil ayarları"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Android for Work cihazları için Intune özel profil ayarları oluşturmayı öğrenin.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work cihazları için Intune özel profil ayarları oluşturma
 
@@ -32,7 +32,7 @@ Bu özellik, Intune ilkeleri ile yapılandırılamayan Android ayarlarını atam
 1. Başlamak için, [Özel cihaz ayarlarını yapılandırma](custom-settings-configure.md) konusunda verilen yönergeleri kullanın.
 2. Yeni ayar eklemek için **Özel OMA-URI Ayarları** dikey penceresinde **Ekle**’yi seçin.
 3. **Satır Ekle** dikey penceresinde aşağıdakileri yapılandırın:
-    - **Ad** - Intune portalında tanımlamanıza yardımcı olması için Android for Work özel ayarlarına benzersiz bir ad girin.
+    - **Ad** - Azure portalında tanımlamanıza yardımcı olması için Android for Work özel ayarlarına benzersiz bir ad girin.
     - **Açıklama** - Android özel ilkesine genel bakış ve onu bulmanıza yardımcı olacak diğer ilgili bilgileri sunan bir açıklama sağlayın.
     - **OMA-URI** - Ayar sağlamak istediğiniz OMA-URI’yi girin.
     - **Veri türü** - Bu OMA-URI ayarını belirteceğiniz veri türünü seçin. **Dize**, **Dize (XML dosyası)**, **Tarih ve saat**, **Tamsayı**, **Kayan nokta**, **Boole** veya **Base64 (dosya)** seçeneklerinden birini belirleyin.

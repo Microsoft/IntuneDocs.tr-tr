@@ -1,11 +1,11 @@
 ---
 title: "Windows cihazlarını kaydetme"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Windows cihazları için Intune mobil cihaz yönetimini (MDM) etkinleştirin.\""
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 06/30/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b873e72e39c5c6f1d96ddac138f920be9dc673dd
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 067009356171184fa34dd51c9a0b01b41f14cab7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-windows-devices"></a>Windows cihazlarını kaydetme
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 07/03/2017
 Bu konu, BT yöneticilerinin Windows kaydını kullanıcıları için kolaylaştırmasına yardımcı olmaktadır. [Intune’u kurduğunuzda](setup-steps.md) kullanıcılar, iş veya okul hesaplarıyla [oturum açarak](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) Windows cihazlarını kaydederler.  
 
 Bir Intune yöneticisi olarak kayıt sürecini aşağıdaki yollarla kolaylaştırabilirsiniz:
-- Otomatik kaydı etkinleştirmek (Azure AD Premium gereklidir)
-- CNAME kaydı
-- Toplu kaydı etkinleştirmek (Azure AD Premium ve Windows Yapılandırma Tasarımcısı gereklidir)
+- [Otomatik kaydı etkinleştirme](#enable-windows-10-automatic-enrollment) (Azure AD Premium gereklidir)
+- [CNAME kaydı]()
+- Toplu kaydı etkinleştirme (Azure AD Premium ve Windows Yapılandırma Tasarımcısı gereklidir)
 
 Windows cihaz kaydını nasıl basit hale getirebileceğinizi iki faktör belirler:
 
@@ -48,17 +48,18 @@ Windows 10 Creators Update çalıştıran ve Azure Active Directory etki alanın
 
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium olmadan Windows kaydını etkinleştirme
-Kayıt isteklerini otomatik olarak Intune sunucularına yönlendiren bir DNS diğer adı (CNAME kayıt türü) oluşturarak kullanıcılarınız için kayıt işlemini kolaylaştırabilirsiniz. Bir DNS CNAME kaynak kaydı oluşturmazsanız Intune’a bağlanmaya çalışan kullanıcılar kayıt sırasında Intune sunucu adını girmek zorunda kalırlar.
+## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium olmadan Windows kaydını kolaylaştırma
+Kayıt isteklerini otomatik olarak Intune sunucularına yönlendiren bir etki alanı adı sunucusu (DNS) diğer adı (CNAME kayıt türü) oluşturarak kullanıcılarınız için kayıt işlemini kolaylaştırabilirsiniz. Bir DNS CNAME kaynak kaydı oluşturmazsanız Intune’a bağlanmaya çalışan kullanıcılar kayıt sırasında Intune sunucu adını girmek zorunda kalırlar.
 
 **1. Adım: CNAME oluşturma** (isteğe bağlı)<br>
 Şirketinizin etki alanı için CNAME DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden enterpriseenrollment-s.manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz.
 
 CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. CNAME kaydı bulunamazsa, kullanıcıların MDM sunucu adını (enrollment.manage.microsoft.com) el ile girmesi istenir.
 
-|Tür|Konak adı|Şunu gösterir:|TTL|  
+|Tür|Konak adı|Şunu gösterir:|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 saat|
+|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Saat|
 
 Birden fazla UPN sonekiniz varsa her etki alanı için bir CNAME oluşturmanız ve EnterpriseEnrollment-s.manage.microsoft.com adresine yönlendirmeniz gerekir. Contoso kullanıcıları name@contoso.com adresini kullanıyor ancak e-posta/UPN olarak name@us.contoso.com ve name@eu.constoso.com öğelerini de kullanıyorlarsa Contoso DNS yöneticisinin aşağıdaki CNAME’leri oluşturması gerekir:
 
@@ -73,7 +74,7 @@ Birden fazla UPN sonekiniz varsa her etki alanı için bir CNAME oluşturmanız 
 DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yaygınlaştırılıncaya kadar Intune’da DNS değişikliğini doğrulayamazsınız.
 
 **2. Adım: CNAME'i doğrulama** (isteğe bağlı)<br>
-Azure Intune portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**'u seçin. Intune dikey penceresinde **Cihazları kaydet** > **Windows Kaydı**’nı seçin. **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin URL'sini girin ve ardından **Otomatik Algılamayı Sına**’yı seçin.
+Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin. Intune dikey penceresinde **Cihazları kaydet** > **Windows Kaydı**’nı seçin. **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin URL'sini girin ve ardından **Otomatik Algılamayı Sına**’yı seçin.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Kullanıcılara Windows cihazlarını nasıl kaydedeceklerini anlatma
 Kullanıcılara Windows cihazlarını nasıl kaydedeceklerini ve cihazları yönetilmeye başladıktan sonra nelerle karşılaşabileceklerini anlatın. Son kullanıcı kayıt talimatları için bkz. [Windows cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Ayrıca kullanıcılara [BT yöneticim cihazımda neleri görebilir?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) sayfasındaki bilgilere göz atmalarını da söyleyebilirsiniz.

@@ -5,20 +5,20 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 07/05/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: a28305aab1fff16a46b8142e5869bfa25008017c
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -456,8 +456,9 @@ Aşağıda, uygulamanın ADAL ile yapılandırılabilmesinin yaygın yolları a�
     |--|--|
     | Yetkili | AAD hesaplarının yapılandırıldığı, tercih edilen ortam |
     | İstemci Kimliği | Uygulamanın İstemci Kimliği (uygulama kaydedilirken Azure AD tarafından oluşturulur) |
-    | NonBrokerRedirectURI | Uygulama için geçerli bir yeniden yönlendirme URI’si veya varsayılan olarak `urn:ietf:wg:oauth:2.0:oob`. <br><br> Değeri, uygulamanızın İstemci Kimliği için kabul edilebilir bir yeniden yönlendirme URI’si olarak yapılandırdığınızdan emin olun.
-    | SkipBroker | False |
+    | NonBrokerRedirectURI | Uygulama için geçerli bir yeniden yönlendirme URI’si veya `urn:ietf:wg:oauth:2.0:oob` 
+    . <br><br> Değeri, uygulamanızın İstemci Kimliği için kabul edilebilir bir yeniden yönlendirme URI’si olarak yapılandırdığınızdan emin olun.
+   | SkipBroker | False |
 
 
 3. **Uygulama ADAL’ı tümleştirir ama aracılı kimlik doğrulaması/cihaz genelinde SSO’yu desteklemek:**
@@ -1355,7 +1356,7 @@ Aşağıda izin verilen stil özniteliklerinin, bunların denetledikleri UI öğ
 
 ## <a name="telemetry"></a>Telemetri
 
-Android için Intune Uygulama SDK’sı, uygulamanızdan veri toplanmasını denetlemez. Şirket Portalı uygulaması, varsayılan olarak aşağıdaki kullanım olaylarına ilişkin telemetri verilerini günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir. Microsoft İlkesi uyarınca kişisel bilgileri toplamıyoruz.
+Android için Intune Uygulama SDK’sı, uygulamanızdan veri toplanmasını denetlemez. Şirket Portalı uygulaması, varsayılan olarak telemetri verilerini günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir. Microsoft İlkesi uyarınca kişisel bilgileri toplamıyoruz.
 
 > [!NOTE]
 > Son kullanıcılar bu verileri göndermemeyi tercih ederse, Şirket Portalı uygulamasının Ayarlar bölümünde telemetriyi kapatmaları gerekir. Daha fazla bilgi için bkz. [Microsoft kullanım verilerini toplamayı devre dışı bırakma](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 

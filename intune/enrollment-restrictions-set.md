@@ -1,6 +1,6 @@
 ---
 title: "Intune’da kayıt kısıtlamalarını ayarlama"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune’da platforma göre kaydı kısıtlama ve cihaz kayıt sınırı ayarlama. \""
 keywords: 
 author: nathbarn
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47dc35e5b50670027a85f395f674345b934d377b
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 06c0c58992a2119aff7fd5be54ae90be886d2a53
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bir Intune yöneticisi olarak hangi cihazların Intune yönetimine kaydedilebileceğini belirleyebilirsiniz. Aşağıdaki cihaz kayıt kısıtlamalarını ayarlamak için Intune portalını kullanın:
+Bir Intune yöneticisi olarak hangi cihazların Intune yönetimine kaydedilebileceğini belirleyebilirsiniz. Aşağıdaki cihaz kayıt kısıtlamalarını ayarlamak için Azure portalını kullanın:
 
 - Kayıtlı cihaz sayısı üst sınırı
 - Kaydedilebilecek cihaz platformları:
@@ -68,7 +68,7 @@ Varsayılan kayıt kısıtlamaları tüm kullanıcılar için geçerlidir.
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
-4. Intune portalında, **Cihaz kaydı**’nı seçtikten sonra **Kayıt kısıtlamaları**’nı seçin.
+4. Azure portalında **Cihaz kaydı**’nı seçtikten sonra **Kayıt kısıtlamaları**’nı seçin.
 5. **Kayıt kısıtlamaları** > **Cihaz Sınır Kısıtlamaları**’nı seçin.
 6. **Tüm Kullanıcılar** altında **Cihaz Sınırı**’nı seçin. Kullanıcı başına düşen kayıtlı cihaz sayısı üst sınırını belirtin.  
 ![Cihaz sınır kısıtlamaları ile cihaz sınır kısıtlamaları dikey penceresinin ekran görüntüsü.](./media/device-restrictions-limit.png)

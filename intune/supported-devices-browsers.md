@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 00fc685062c090b40e20ed3dfa30afbeeb5c9780
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="supported-devices-and-browsers"></a>Desteklenen cihazlar ve tarayıcılar
 
@@ -31,7 +31,7 @@ Microsoft Intune’u kurmaya başlamadan önce, aşağıdaki gereksinimleri göz
 - [Desteklenen cihazlar ve bilgisayarlar](#intune-supported-devices)
 - [Intune kullanan desteklenen web tarayıcıları listesi](#intune-supported-web-browsers)
 
-Ayrıca [Intune ağ bant genişliği kullanımı](network-bandwidth-use.md) ([Klasik konsol](/intune-classic/get-started/network-bandwidth-use)) hakkında da bilgi edinmelisiniz.
+Ayrıca [Intune ağ bant genişliği kullanımı](network-bandwidth-use.md) ([klasik portal](/intune-classic/get-started/network-bandwidth-use)) hakkında da bilgi edinmelisiniz.
 
 ## <a name="intune-supported-devices"></a>Intune desteklenen cihazlar
 
@@ -43,7 +43,7 @@ Intune Windows Server işletim sistemlerini yönetmek için kullanılamaz.
 
 ### <a name="windows-pc-software-client"></a>Windows bilgisayarı yazılım istemcisi
 
-Bir [Intune yazılım istemcisi](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) alternatif bir kayıt yöntemi olarak Windows bilgisayarlara dağıtılabilir ve yüklenebilir. Bu işlev, yalnızca Intune klasik konsolunda bulunur. Intune yazılım istemcisini, Windows 7 ve üzerini (Windows 10 Home Edition dışında) çalıştıran bilgisayarları yönetmek için kullanabilirsiniz.
+Bir [Intune yazılım istemcisi](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) alternatif bir kayıt yöntemi olarak Windows bilgisayarlara dağıtılabilir ve yüklenebilir. Bu işlev, yalnızca klasik Intune portalında kullanılabilir. Intune yazılım istemcisini, Windows 7 ve üzerini (Windows 10 Home Edition dışında) çalıştıran bilgisayarları yönetmek için kullanabilirsiniz.
 
 <!--  ### Exchange ActiveSync management
 
@@ -54,7 +54,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 Farklı yönetim görevleri aşağıdaki yönetim web sitelerinden birini kullanmanızı gerektirir.
 
 - [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Intune portalı](https://portal.azure.com/)
+- [Azure portalı](https://portal.azure.com/)
 
 Bu portallar için aşağıdaki tarayıcılar desteklenir:
 - Microsoft Edge (en son sürüm)
@@ -73,6 +73,6 @@ Aşağıdaki Silverlight tarayıcıları klasik Intune konsolunu destekler:
 - Silverlight etkinleştirilmiş olarak Mozilla Firefox [Daha fazla bilgi](https://go.microsoft.com/fwlink/?linkid=836872)
 
 > [!Note]
-> Microsoft Edge ve mobil tarayıcılar, [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx)'ı desteklemediklerinden klasik Intune konsolu için desteklenmez.
+> Microsoft Edge ve mobil tarayıcılar, [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx)’ı desteklemediklerinden klasik Intune portalı için desteklenmez.
 
 Yalnızca hizmet yöneticisi izinlerine sahip olan veya genel yönetici rolüne sahip bir kiracı yöneticisi olan kullanıcılar bu portalda oturum açabilir. Yönetim konsoluna erişmek için hesabınız Intune kullanma lisansına ve **İzin Verildi** oturum açma durumuna sahip olmalıdır.

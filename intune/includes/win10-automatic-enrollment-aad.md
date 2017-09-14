@@ -23,9 +23,12 @@ Otomatik kayıt, kullanıcıların Windows 10 cihazlarını Intune’a kaydetmes
 
 4. **MDM Kullanıcı kapsamını** yapılandırın. Cihazları Microsoft Intune tarafından yönetilecek kullanıcıları belirtin. Bu Windows 10 cihazlar, Microsoft Intune ile yönetim için otomatik olarak kaydedilebilir.
 
-  - **Yok.**
-  - **Bazı**
-  - **Tümü**
+  - **Hiçbiri** - MDM otomatik kayıt devre dışı
+  - **Bazıları** - Windows 10 cihazlarını otomatik olarak kaydedebilecek **Grupları** seçin
+  - **Tümü** - Tüm kullanıcılar Windows 10 cihazlarını otomatik olarak kaydedebilir
+
+      > [!IMPORTANT]
+      > Bir grup için hem **MAM kullanıcı kapsamı** hem de MDM kaydı (**MDM kullanıcı kapsamı**) etkinse yalnızca MAM etkinleştirilir. Gruptaki kullanıcılar kişisel cihazlarını iş yerine eklediklerinde yalnızca MAM eklenir. Cihazlar otomatik olarak MDM’ye kaydedilmez.
 
    ![Azure portalının ekran görüntüsü](../media/auto-enroll-scope.png)
 
@@ -33,9 +36,6 @@ Otomatik kayıt, kullanıcıların Windows 10 cihazlarını Intune’a kaydetmes
     - **MDM Kullanım Koşulları URL’si**
     - **MDM Bulma URL’si**
     - **MDM Uyumluluğu URL’si**
-
-    > [!IMPORTANT]
-    > Bir grup için hem **MAM kullanıcı kapsamı** hem de MDM kaydı (**MDM kullanıcı kapsamı**) etkinse yalnızca MAM etkinleştirilir. Gruptaki kullanıcılar kişisel cihazlarını iş yerine eklediklerinde yalnızca MAM eklenir. Cihazlar otomatik olarak MDM’ye kaydedilmez.
 
 6. **Kaydet**’i seçin.
 

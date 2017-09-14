@@ -1,6 +1,6 @@
 ---
 title: "Intune ile kullanmak üzere Skycure iOS uygulama yapılandırma ilkesini indirme"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune ile kullanmak üzere Skycure iOS uygulama yapılandırma ilkesini indirin."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 1bdc2ecf-32d0-4b6a-80b4-dbcdb9909010
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffe1027e90203d4e300a2446f15e72cc5bf53973
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 296d5545530e8001c0648bafac3101b94f45529d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>Skycure iOS uygulaması yapılandırma ilkesini indirme
 
@@ -43,7 +43,7 @@ Sonraki adımları gerçekleştirmek için Skycure Yönetim Konsolu’nda oturum
 
 3.  **Ayarlar** &gt; **Cihaz Yönetimi Tümleştirmeleri** &gt; **EMM Tümleştirme Seçimi**’ne gidin, **Microsoft Intune**’u seçin ve ardından seçiminizi kaydedin.
 
-4.  **Tümleştirme kurulum dosyaları** bağlantısına tıklayın ve oluşturulan \*.zip dosyasını kaydedin. Bu .zip dosyası, Intune klasik konsolunda iOS uygulaması yapılandırma ilkesini oluşturmak için kullanılacak olan **skycure\_configuration.plist** dosyasını içerir.
+4.  **Tümleştirme kurulum dosyaları** bağlantısına tıklayın ve oluşturulan \*.zip dosyasını kaydedin. Bu .zip dosyası, klasik Intune portalında iOS uygulaması yapılandırma ilkesini oluşturmak için kullanılacak olan **skycure\_configuration.plist** dosyasını içerir.
 
 ![Skycure Tümleştirmesi kurulum dosyaları](./media/skycure-ios-app-2.png)
 

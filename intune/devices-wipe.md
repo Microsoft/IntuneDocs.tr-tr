@@ -1,12 +1,12 @@
 ---
 title: "Intune kullanılan cihazlarda fabrika sıfırlaması kullanma veya şirket verilerini kaldırma"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Bir cihazdaki şirket verilerini kaldırmayı veya cihazı fabrika ayarlarına sıfırlamayı öğrenin."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
 
@@ -106,7 +106,7 @@ Cihaz açık ve bağlı olduğu sürece, verileri kaldırma komutunun tüm cihaz
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Azure Active Directory portalından cihazları silme
 
-İletişim sorunları veya eksik cihazlar nedeniyle, cihazları Azure Active Directory’den (AD) silmeniz gerekebilir. Sil komutu bir cihazı yönetimden kaldırmaz ancak ulaşılamaz olduğunu ve Azure ile yeniden iletişim kurmasının pek olası olmadığını bildiğiniz cihaz kayıtlarını Azure konsolundan kaldırmak için **Sil** komutunu kullanabilirsiniz.
+İletişim sorunları veya eksik cihazlar nedeniyle, cihazları Azure Active Directory’den (AD) silmeniz gerekebilir. Sil komutu bir cihazı yönetimden kaldırmaz ancak ulaşılamaz olduğunu ve Azure ile yeniden iletişim kurmasının pek olası olmadığını bildiğiniz cihaz kayıtlarını Azure portalından kaldırmak için **Sil** komutunu kullanabilirsiniz.
 
 1.  Yönetici kimlik bilgilerinizle [Azure portalında Azure Active Directory](http://aka.ms/accessaad)’de oturum açın. Ayrıca [Office 365 portalında](https://portal.office.com) oturum açarak ve ardından sayfanın sol tarafındaki bağlantıyı kullanarak **Yönetici** &gt; **Azure AD**’yi seçebilirsiniz.
 3.  Azure aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez (**Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).

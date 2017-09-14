@@ -1,6 +1,6 @@
 ---
 title: Intune ile RBAC
-titleSuffix: Intune Azure preview
+titleSuffix: Azure portal
 description: "Intune Azure önizlemesi: RBAC’nin, işlem gerçekleştirebilecek ve değişiklik yapabilecek kişileri denetlemenize nasıl yardımcı olduğunu öğrenin."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Intune ile rol tabanlı yönetim denetimi (RBAC)
 
@@ -32,7 +32,7 @@ RBAC, kuruluşunuzda çeşitli Intune görevlerini kimin gerçekleştirebileceğ
 
 ![Intune RBAC örneği](./media/intune-rbac-1.PNG)
 
-Yeni Intune portalından başlayarak **Azure Active Directory (Azure AD)**, Intune ile kullanılabilecek iki Dizin Rolü sağlar. Bu rollere Intune'da tüm etkinlikleri gerçekleştirmek için tam izin verilir:
+Yeni Azure portalıyla artık **Azure Active Directory (Azure AD)**, Intune ile kullanılabilecek iki Dizin Rolü sağlar. Bu rollere Intune'da tüm etkinlikleri gerçekleştirmek için tam izin verilir:
 
 - **Genel Yönetici:** Bu roldeki kullanıcılar, Azure AD'deki tüm yönetim özelliklerine, ayrıca Azure AD federasyonu kullanan Exchange Online, SharePoint Online ve Skype Kurumsal Çevrimiçi Sürüm gibi tüm hizmetlere erişebilir. Azure AD kiracısı olarak kaydolan kişi genel yönetici olur. Yalnızca genel yöneticiler diğer Azure AD yönetici rollerini atayabilir. Kuruluşunuzda birden fazla genel yönetici olabilir. Genel yöneticiler, tüm kullanıcıların ve diğer tüm yöneticilerin parolalarını sıfırlayabilir.
 
@@ -46,12 +46,12 @@ Yeni Intune portalından başlayarak **Azure Active Directory (Azure AD)**, Intu
     > [!TIP]
     > Intune ayrıca **Kullanıcılar**, **Gruplar**, ve **Koşullu erişim** olmak üzere Azure AD RBAC ile denetlenen üç Azure AD uzantısı gösterir. Bunlara ek olarak, **Kullanıcı Hesabı Yöneticisi** yalnızca AAD kullanıcısı/grubu etkinliklerini gerçekleştirir ve Intune'daki tüm etkinlikleri gerçekleştirme izinlerinin tümüne sahip değildir. Daha fazla ayrıntı için bkz. [Azure AD ile RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
-## <a name="roles-created-in-the-intune-classic-console"></a>Intune klasik konsolunda oluşturulan roller
+## <a name="roles-created-in-the-intune-classic-portal"></a>Klasik Intune portalında oluşturulan roller
 
-Intune klasik konsolundan Azure'da Intune'a yalnızca "Tüm" izinlere sahip Intune **Hizmet Yöneticileri** kullanıcıları geçirilir. "Salt Okunur" ve "Yardım Masası" erişimli Intune **Hizmet Yöneticileri** kullanıcılarını Azure portalında Intune rollerine yeniden atamanız ve bunları klasik portaldan kaldırmanız gerekir.
+Yalnızca “Tam” izinlere sahip Intune **Hizmet Yöneticileri** kullanıcıları, klasik Intune portalından Azure portalında Intune’a geçirilir. "Salt Okunur" ve "Yardım Masası" erişimli Intune **Hizmet Yöneticileri** kullanıcılarını Azure portalında Intune rollerine yeniden atamanız ve bunları klasik portaldan kaldırmanız gerekir.
 
 > [!IMPORTANT]
-> Yöneticilerinizin Intune'u kullanarak bilgisayar yönetmek için hala erişimlerinin olması gerekiyorsa klasik konsoldaki Intune Hizmet Yöneticisi erişimini tutmanız gerekebilir.
+> Yöneticilerinizin bilgisayarları Intune ile yönetmek için hala erişimlerinin olması gerekiyorsa klasik portaldaki Intune Hizmet Yöneticisi erişimini saklamanız gerekebilir.
 
 ## <a name="built-in-roles"></a>Yerleşik roller
 

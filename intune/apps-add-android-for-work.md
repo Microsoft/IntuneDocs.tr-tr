@@ -1,6 +1,6 @@
 ---
 title: Android for Work cihazlara uygulama atama
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Google Play for Work Store’dan Android for Work cihazlarına uygulama eşitlemek ve atamak için bu konuyu kullanın.\""
 keywords: 
 author: mattbriggs
@@ -15,18 +15,18 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bbe5be4afead5d80f38e2ef56d12c0b26351dfd8
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Intune ile Android for Work cihazlara uygulama atama
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Android for Work cihazlara uygulama atama işlemi, standart Android cihazlara atamaktan farklı bir yolla yapılır. Android for Work için yüklediğiniz tüm uygulamalar Google Play for Work mağazasından gelir. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız.
-Ardından uygulama, Intune portalının **Lisanslı uygulamalar** düğümünde görüntülenir. Buradan, uygulamanın atamasını, herhangi başka bir uygulamanın atamasıyla aynı şekilde yönetebilirsiniz.
+Ardından uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görüntülenir. Buradan, uygulamanın atamasını, herhangi başka bir uygulamanın atamasıyla aynı şekilde yönetebilirsiniz.
 
 Ayrıca, kendi iş kolu (LOB) uygulamalarınızı oluşturduysanız, bunları aşağıdaki gibi atayabilirsiniz:
 - Google Play Store'daki özel bir alanda uygulama yayımlamanıza olanak tanıyan bir Google Developer hesabı için kaydolun.
@@ -34,7 +34,7 @@ Ayrıca, kendi iş kolu (LOB) uygulamalarınızı oluşturduysanız, bunları a�
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
-Intune ve Android for Work’ü Intune konsolunun **Cihaz kaydı** iş yüküyle birlikte çalışacak şekilde yapılandırdığınızdan emin olun.
+Intune ve Android for Work’ü Azure portalının **Cihaz kaydı** iş yüküyle birlikte çalışacak şekilde yapılandırdığınızdan emin olun.
 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Google Play for Work mağazasından uygulama eşitleme
 

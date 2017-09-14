@@ -1,7 +1,7 @@
 ---
 title: "Intune'a MTD uygulamaları ekleme ve atama"
-titleSuffix: Intune on Azure
-description: "Azure'da Intune'a MTD uygulamaları, Microsoft Authenticator uygulaması ve iOS yapılandırma ilkesi ekleme"
+titleSuffix: Azure portal
+description: "Azure portalında Intune ile MTD uygulamaları, Microsoft Authenticator uygulaması ve iOS yapılandırma ilkesi ekleme"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7edd80c7bae429c1f4032cf59aaaf8d91786f92c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 6d0802107353eee9359e0eff17b69037d9a237a6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama
 
@@ -115,7 +115,7 @@ iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere 
 
 ### <a name="for-skycure"></a>Skycure için
 
--   Daha önce [Skycure Yönetim konsolunda](https://aad.skycure.com) yapılandırılmış olan Azure AD hesabını kullanın. Bu, Intune klasik konsolunda oturum açarken kullanılan hesapla aynı olmalıdır.
+-   Daha önce [Skycure Yönetim konsolunda](https://aad.skycure.com) yapılandırılmış olan Azure AD hesabını kullanın. Bu, klasik Intune portalında oturum açarken kullanılan hesap olmalıdır.
 
 -   iOS uygulama yapılandırma ilkesi dosyasını **indirmeniz** gerekir: 
     -   [Skycure Yönetim konsoluna](https://aad.skycure.com) gidin ve yönetici kimlik bilgilerinizle oturum açın.
