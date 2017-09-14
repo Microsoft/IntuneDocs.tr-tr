@@ -1,6 +1,6 @@
 ---
 title: "Intune’da Skycure Mobile Threat Defense’i etkinleştirme"
-description: "Intune klasik konsolunda Skycure Mobile Threat Defense’i etkinleştirin."
+description: "Klasik Intune portalında Skycure Mobile Threat Defense’i etkinleştirin."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9fe3c59e52d9d7732267ecfb28eac3b5c7368ed9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Intune’da Skycure Mobile Threat Defense’i etkinleştirme
 
@@ -28,11 +28,11 @@ Skycure mobil tehdit korumasını etkinleştirmek için [Skycure konsolunda Intu
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Intune'da Skycure MTD bağlantısını etkinleştirmek için
 
-1.  [Intune klasik konsoluna](https://manage.microsoft.com/) gidin ve kimlik bilgilerinizi girin.
+1.  [Klasik Intune portalına](https://manage.microsoft.com/) gidin ve kimlik bilgilerinizi girin.
 
 2.  **Yönetici** &gt; **Üçüncü Taraf Hizmet Tümleştirmesi**’ni seçin, sonra **Skycure Durumu**’nu seçin ve iki durumlu düğmeyi kullanarak **MTD ile Eşitleme**’yi etkinleştirin.
 
-    ![Intune klasik konsolunda Skycure’u Etkinleştirme iki durumlu düğmesi](../media/mtp/enable-skycure-1.png)
+    ![Klasik Intune portalında Skycure iki durumlu düğmeyi etkinleştirme](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
 > Uyumluluk ilkesi kuralları oluşturmadan ve koşullu erişimi yapılandırmadan önce Skycure uygulamalarını yapılandırmanız gerekir. Bu, uygulamanın, e-postaya veya diğer şirket kaynaklarına erişim sağlamadan önce son kullanıcılar için hazır ve kullanılabilir olmasını sağlar.

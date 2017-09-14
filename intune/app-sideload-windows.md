@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 2a8754d684896f2c945e11ed0fc2577114459069
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
@@ -55,7 +55,7 @@ Aşağıdaki adımlar, gerekli sertifikayı almanıza ve uygulamaları imzalaman
 6.  **Uygulamayı Intune'a yükleme**<br>
     İmzalanmış uygulama dosyasını ve kod imzalama sertifikanızı karşıya yükleyerek uygulamayı son kullanıcılarınızın kullanımına sunun.
 
-    1.  Intune portalında, **Yönetim** &gt; **Windows Phone**’a tıklayın.
+    1.  Azure portalında **Yönetim** &gt; **Windows Phone**’a tıklayın.
 
     2.  **İmzalanmış Uygulama Dosyasını Karşıya Yükle** 'ye tıklayın ve Intune Yönetici Kimliğinizle oturum açın.
 
@@ -118,7 +118,7 @@ Intune Şirket Portalı uygulamasını Windows Phone ve Windows 10 Mobile cihazl
 
     -   `-EnterpriseId` - Kuruluş kimliği. Bu bağımsız değişken veya ‘AetxPath’ sağlanmalıdır. Bu bağımsız değişken sağlanmazsa, AETX dosyasından kuruluş kimliği okunur. Örneğin, 1000000001
 
-6.  Windows Phone 8.1 Şirket Portalı (SSP.appx) uygulamasını dağıtın. Yönergeler için, bkz. [Windows Phone iş kolu (LOB) uygulamalarını ekleme](lob-apps-windows-phone.md) ([Klasik konsol](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
+6.  Windows Phone 8.1 Şirket Portalı (SSP.appx) uygulamasını dağıtın. Yönergeler için bkz. [Windows Phone iş kolu (LOB) uygulamaları ekleme](lob-apps-windows-phone.md) ([klasik portal](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Symantec kurumsal kod imzalama sertifikasını yenileme
 
@@ -136,7 +136,7 @@ Belirli Windows ve Windows Phone mobil uygulamalarını dağıtmak için kullan�
 
 1.  İş kolu uygulamanızın son sürümünü imzalayın.
 
-2.  Intune konsolunu açın ve **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows Phone**’a gidip **İmzalı Uygulamayı Karşıya Yükle**’ye tıklayın.
+2.  Azure portalını açın ve **Yönetici** &gt; **Mobil Cihaz Yönetimi** &gt; **Windows Phone**’a gidip **İmzalı Uygulamayı Karşıya Yükle**’ye tıklayın.
 
 3.  Yeni imzalanan Şirket Portalı'nı karşıya yükleyin. Yeni imzalanan SSP.xap ile Symantec'ten aldığınız yeni .PFX dosyasına ya da bu yeni .PFX dosyasıyla oluşturulmuş uygulama kayıt belirtecine ihtiyacınız olacaktır.
 

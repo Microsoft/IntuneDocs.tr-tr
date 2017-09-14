@@ -1,6 +1,6 @@
 ---
 title: "Cihazları kaydetme - cihaz kayıt yöneticisi"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune'a cihaz kaydetmek için cihaz kayıt yöneticisi hesabını kullanın. \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Cihaz kayıt yöneticisini kullanarak cihazları kaydetme
 
@@ -36,7 +36,7 @@ Kullanıcıların, cihaz kayıt yöneticileri olarak eklenmesi için Azure porta
 
 Bir restoran, garsonlar için 50 satış noktası tableti, mutfak çalışanları içinse sipariş izleyici istiyor. Çalışanların hiçbir zaman şirket verilerine erişmesi veya kullanıcı olarak oturum açması gerekmiyor. Intune yöneticisi, cihaz kayıt yöneticisi hesabı oluşturur ve DEM yetenekleri vermek için restoran yöneticisini DEM hesabına ekler. Yönetici, artık DEM kimlik bilgilerini kullanarak 50 tableti kaydedebilir.
 
-Yalnızca Intune konsolundaki kullanıcılar cihaz kayıt yöneticileri olabilir. Cihaz kayıt yöneticisi bir Intune yöneticisi olamaz.
+Yalnızca Azure portalındaki kullanıcılar cihaz kayıt yöneticileri olabilir. Cihaz kayıt yöneticisi bir Intune yöneticisi olamaz.
 
 DEM kullanıcısı şunları yapabilir:
 
@@ -95,5 +95,5 @@ Cihaz kayıt yöneticisinin kaldırılması, kayıtlı cihazları etkilemez. Cih
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisinin özelliklerini görüntüleme
 
-1. Intune portalında **Cihaz kaydı**'nı seçin, ardından **Cihaz Kayıt Yöneticileri**'ni seçin.
+1. Azure portalında **Cihaz kaydı**’nı ve ardından **Cihaz Kayıt Yöneticileri**’ni seçin.
 2. **Cihaz Kayıt Yöneticileri** dikey penceresinde DEM kullanıcısına sağ tıklayın ve **Özellikler**’ı seçin.

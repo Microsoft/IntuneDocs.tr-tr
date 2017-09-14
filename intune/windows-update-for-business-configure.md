@@ -1,6 +1,6 @@
 ---
-title: "Yazılım güncelleştirmelerini yönetme"
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: "Intune’da İş İçin Windows Update ayarlarını yapılandırma"
+titleSuffix: Azure portal
 description: "Windows 10 cihazlarına yönelik güncelleştirmeleri denetlemek amacıyla Intune’da İş İçin Windows Update ayarlarını yapılandırmayı öğrenin.\""
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>Yazılım güncelleştirmelerini yönetme
 
@@ -54,20 +54,20 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
     Bu ayarı el ile yapılandırabilir veya Windows 10 ve üzeri sürümlerine yönelik bir Intune cihaz kısıtlama profili kullanabilirsiniz. Bunu gerçekleştirmek için **Genel** > **Tanılama verisi gönderme** ayarını en az **Temel** olarak yapılandırın. Cihaz profilleri hakkında daha fazla bilgi için bkz. [Cihaz kısıtlama ayarlarını yapılandırma](device-restrictions-configure.md).
 
-- Klasik Intune yönetim konsolunda yazılım güncelleştirmelerinin davranışını denetleyen dört ayar vardır. Bu ayarlar, Windows 10 masaüstü ve Windows 10 Mobile cihazlarına ait genel yapılandırma ilkesinin bir parçasıdır:
+- Intune yönetim konsolunda yazılım güncelleştirmelerinin davranışını denetleyen dört ayar vardır. Bu ayarlar, Windows 10 masaüstü ve Windows 10 Mobile cihazlarına ait genel yapılandırma ilkesinin bir parçasıdır:
     - **Otomatik güncelleştirmelere izin ver**
     - **Yayın öncesi özelliklere izin ver**
     - **Zamanlanan Yükleme Günü**
     - **Zamanlanan Yükleme Saati**
 
-  Ayrıca klasik konsoldaki cihaz yapılandırma profilinde de sınırlı sayıda Windows 10 güncelleştirme ayarı bulunur. Klasik Intune yönetim konsolunda bu ayarlardan herhangi birini yapılandırdıysanız Azure portalına geçiş sırasında aşağıdakileri yapmanız önemle önerilir:
+  Ayrıca klasik portaldaki cihaz yapılandırma profilinde de sınırlı sayıda Windows 10 güncelleştirme ayarı bulunur. Intune yönetim konsolunda bu ayarlardan herhangi birini yapılandırdıysanız Azure portalına geçiş sırasında aşağıdakileri yapmanız kesinlikle önerilir:
 
 1. Azure portalında ihtiyaç duyduğunuz ayarlara sahip Windows 10 güncelleştirme kademeleri oluşturun. **Yayın öncesi özelliklere izin ver** ayarı, en son Windows 10 derlemelerinde geçerli olmadığından Azure portalında desteklenmez. Windows 10 güncelleştirme kademeleri oluştururken kalan üç ayarı ve diğer Windows 10 güncelleştirme ayarlarını yapılandırabilirsiniz.
 
   > [!NOTE]
-  > Klasik konsolda oluşturulan Windows 10 güncelleştirme ayarları geçişten sonra Azure portalında görüntülenmez. Ancak, bu ayarlar uygulanamaya devam edilir. Bu ayarlardan herhangi birini geçirdiyseniz ve geçirilen ilkeyi Azure portalından düzenlerseniz, söz konusu ayarlar ilkeden kaldırılır.
+  > Klasik portalda oluşturulan Windows 10 güncelleştirme ayarları geçişten sonra Azure portalında görüntülenmez. Ancak, bu ayarlar uygulanamaya devam edilir. Bu ayarlardan herhangi birini geçirdiyseniz ve geçirilen ilkeyi Azure portalından düzenlerseniz, söz konusu ayarlar ilkeden kaldırılır.
 
-2. Güncelleştirme ayarlarını klasik konsolda silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme kademesine ekledikten sonra olası ilke çakışmalarını önlemek için ayarları klasik portalda silmeniz gerekir. Örneğin, aynı ayar farklı değerlerle yapılandırıldığında bir çakışma oluşur ve klasik konsolda yapılandırdığınız ayar Azure portalında görüntülenmediğinden bunun fark edilmesi çok zor olabilir.
+2. Güncelleştirme ayarlarını klasik portaldan silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme kademesine ekledikten sonra olası ilke çakışmalarını önlemek için ayarları klasik portalda silmeniz gerekir. Örneğin, aynı ayar farklı değerlerle yapılandırıldığında bir çakışma oluşur ve klasik portalda yapılandırdığınız ayar Azure portalında görüntülenmediğinden bunun fark edilmesi zor olabilir.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Güncelleştirme kademeleri oluşturma ve atama
 

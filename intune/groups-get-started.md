@@ -1,6 +1,6 @@
 ---
 title: "Azure portalında klasik Intune grupları"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Intune Azure portalında gruplarla ilgili yenilikleri öğrenin"
 keywords: 
 author: nathbarn
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: c51c3102cc78cf095e27da4ff199cb3fb5ae14a6
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-classic-groups-in-the-azure-portal"></a>Azure portalında klasik Intune grupları
 
@@ -38,7 +38,7 @@ Intune gruplarının daha önce kullanıyor olabileceğiniz bazı özellikleri A
 - Bir gruptan **Belirli üyeleri hariç tut** seçeneği Azure Portal’da bulunmamaktadır. Ancak, bu davranışı tekrarlamak için gelişmiş kurallara sahip bir Azure AD güvenlik grubu kullanabilirsiniz. Örneğin, Satış departmanınızda çalışan herkesi bir güvenlik grubuna dahil eden ancak unvanında “Asistan” kelimesi bulunanları gruptan dışlayan gelişmiş bir kural oluşturmak için aşağıdaki gelişmiş kuralı kullanabilirsiniz:
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
-- Intune konsolundaki **Tüm Exchange ActiveSync Tarafından Yönetilen Cihazlar** grubu Azure AD’ye geçirilmemiştir. Ancak, EAS tarafından yönetilen cihazlar hakkındaki bilgilere Azure portalından erişmeye devam edebilirsiniz.
+- Klasik Intune konsolundaki **Tüm Exchange ActiveSync Tarafından Yönetilen Cihazlar** grubu Azure AD’ye geçirilmemiştir. Ancak, EAS tarafından yönetilen cihazlar hakkındaki bilgilere Azure portalından erişmeye devam edebilirsiniz.
 
 ## <a name="how-to-get-started"></a>Nereden başlayacaksınız?
 
@@ -51,9 +51,9 @@ Intune gruplarının daha önce kullanıyor olabileceğiniz bazı özellikleri A
 
 
 ## <a name="what-happened-to-intune-groups"></a>Intune gruplarına ne oldu?
-Gruplar, klasik Intune portalından Azure portalında Intune’a geçirilirken aşağıdaki kurallar uygulanır:
+Gruplar Azure portalından Azure portalında Intune’a geçirilirken aşağıdaki kurallar uygulanır:
 
-| Klasik Intune grupları|Azure AD grupları|
+| Intune'da Gruplar|Azure AD grupları|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Statik kullanıcı grubu|Statik Azure AD güvenlik grubu|
 |Dinamik kullanıcı grubu|Bir Azure AD güvenlik grubu hiyerarşisi ile statik Azure AD güvenlik grupları|
@@ -65,7 +65,7 @@ Gruplar, klasik Intune portalından Azure portalında Intune’a geçirilirken a
 
 ## <a name="group-hierarchy"></a>Grup hiyerarşisi
 
-Klasik Intune konsolunda tüm grupların bir üst grubu vardı. Gruplar yalnızca üst gruplarının üyelerini içerebiliyordu. Azure AD’de alt gruplar, üst gruplarında yer almayan üyeler içerebilir.
+Intune konsolunda tüm grupların bir üst grubu vardı. Gruplar yalnızca üst gruplarının üyelerini içerebiliyordu. Azure AD’de alt gruplar, üst gruplarında yer almayan üyeler içerebilir.
 
 ## <a name="group-attributes"></a>Grup öznitelikleri
 Öznitelikler, grupları tanımlamak için kullanılabilen cihaz özellikleridir. Bu tablo, bu ölçütlerin Azure AD güvenlik gruplarına nasıl geçirileceğini açıklar.
@@ -84,4 +84,4 @@ Klasik Intune konsolunda tüm grupların bir üst grubu vardı. Gruplar yalnızc
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>Daha önce dağıtmış olduğunuz ilkelere ve uygulamalara ne olur?
 
-İlkeler ve uygulamalar daha önce olduğu gibi gruplara dağıtılmaya devam edilecektir. Ancak artık bu grupları klasik Intune konsolu yerine Azure portalından yöneteceksiniz.
+İlkeler ve uygulamalar daha önce olduğu gibi gruplara dağıtılmaya devam edilecektir. Ancak artık bu grupları Intune konsolu yerine Azure portalından yöneteceksiniz.

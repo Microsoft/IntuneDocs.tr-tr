@@ -1,10 +1,10 @@
 ---
 title: "Azure portalını kullanmaya başlama"
-titleSuffix: Intune on Azure
-description: "Azure’da Intune ile pano oluşturma ve paylaşma hakkında bilgi edinin."
+titlesuffix: Azure portal
+description: "Azure portalında Intune ile pano oluşturma ve paylaşma hakkında bilgi edinin."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27ae85160573f6757b20c885e95a280eb7f1155
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Azure portalında Intune’u kullanmaya başlama
 
@@ -52,7 +52,7 @@ Bu özellik, Intune’a kullanıcı ve gruplar gibi daha fazla içerik eklediği
 
 ## <a name="using-services"></a>Hizmetleri kullanma
 
-Intune’u veya Azure’da herhangi bir hizmeti açtığınızda bu, bir **dikey pencerede** görüntülenir. Intune’da **Kullanıcılar**, **Gruplar** ve **Mobil uygulamalar** gibi ilk kullandığınız iş yükleri tam ekran bir dikey pencerede görüntülenir. İş yükünü seçtiğinizde bu dikey pencere tam sayfada açılır. Diğer dikey pencereler, açıldıklarında dikey pencerenin sağ tarafından kayar ve geldikleri ana pencerenin altında daralır. 
+Intune’u veya Azure’da herhangi bir hizmeti açtığınızda bu, bir **dikey pencerede** görüntülenir. Intune’da **Kullanıcılar**, **Gruplar** ve **Mobil uygulamalar** gibi ilk kullandığınız iş yükleri tam ekran bir dikey pencerede görüntülenir. İş yükünü seçtiğinizde bu dikey pencere tam sayfada açılır. Diğer dikey pencereler, açıldıklarında dikey pencerenin sağ tarafından kayar ve geldikleri ana pencerenin altında daralır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

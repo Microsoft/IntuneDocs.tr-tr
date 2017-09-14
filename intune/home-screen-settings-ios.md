@@ -1,6 +1,6 @@
 ---
 title: "iOS cihazları için Intune Giriş ekranı düzen ayarları"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "iOS cihazlarındaki giriş sayfasını ve dock’ı özelleştirmek için kullanabileceğiniz ayarları öğrenin.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 4a3f175337d521c92c909db9972d844ac6997cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>iOS cihazları için Intune Giriş ekranı düzen ayarları
 
@@ -60,7 +60,7 @@ Giriş ekranında görünmesini istediğiniz sayfaları ve her sayfada görünec
 
 
 1. **Sayfalar** dikey penceresinde **Ekle**’yi seçin.
-2. **Satır Ekle** dikey penceresinde, bir **Sayfa adı** girin. Bu ad, Intune portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
+2. **Satır Ekle** dikey penceresinde, bir **Sayfa adı** girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
 3. **Ekle**’yi seçin ve ardından **Uygulama** veya **Klasör** seçiminizi belirtin.
 4. Bu konudaki bilgileri kullanarak sayfada görüntülenmesini istediğiniz uygulama ve klasörleri yapılandırın.
 
@@ -76,7 +76,7 @@ Bu örnekte **Contoso** adlı yeni bir sayfa yapılandırdınız. Sayfa yalnızc
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Listeye uygulama ekleme
 
-1. **Uygulama Adı** girin. Bu ad, Intune portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
+1. **Uygulama Adı** girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
 2. Görüntülemek istediğiniz uygulamanın **Uygulama Paket Kimliği**’ni girin. Yardım için bu konu başlığının ileri bölümlerindeki **Yerleşik iOS uygulamaları için Paket Kimliği başvurusu** konusuna bakın.
 3. **Tamam**’a tıklayın ve cihaz dock’ı için en fazla **6**, cihaz sayfası içinse en fazla **60** olacak şekilde öğe eklemeye devam edin.
 4. İşiniz bittiğinde **Tamam**'a tıklayın.
@@ -87,8 +87,8 @@ Bir klasördeki sayfaya ekleyeceğiniz uygulamalar, listede belirtildikleri sır
 
 1. **Klasör adı** girin. Bu ad, kullanıcıların cihazlarında görüntülenir.
 2. Klasörde bir sayfa oluşturmak için **Ekle**’yi seçin. En fazla 20 sayfa ekleyebilirsiniz.
-3. **Satır Ekle** dikey penceresinde, bir sayfa adı girin. Bu ad, Intune portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
-3. **Uygulama Adı** girin. Bu ad, Intune portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
+3. **Satır Ekle** dikey penceresinde, bir sayfa adı girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
+3. **Uygulama Adı** girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
 2. Görüntülemek istediğiniz uygulamanın **Uygulama Paket Kimliği**’ni girin. Yardım için bkz. **Listeye uygulama ekleme**.
 3. **Ekle**’yi seçin. En fazla 60 öğe ekleyebilirsiniz.
 4. İşiniz bittiğinde **Tamam**'a tıklayın.

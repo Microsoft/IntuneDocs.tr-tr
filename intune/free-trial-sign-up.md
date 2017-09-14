@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune'un 30 günlük ücretsiz deneme sürümüne kaydolma"
-titleSuffix: 
+titleSuffix: Azure portal
 description: "Intune’un 30 günlük ücretsiz deneme sürümüne kaydolma.”"
 keywords: 
 author: lindavr
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 21ee75ab006c1770bc61039facc28d8a0118e706
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune ücretsiz denemesine kaydolma
 
@@ -47,11 +47,11 @@ Deneme için kaydolduğunuzda, kayıt işlemi sırasında sağladığınız e-po
 Intune Azure portalı için kullandığınız üç portal vardır:
 - [Azure Portal’da Intune özelliklerini](what-is-intune.md) gözden geçirebileceğiniz Azure’daki Intune panosu ([portal.azure.com](https://portal.azure.com)).
 - Kullanıcıları eklemek ve yönetmek için Azure Active Directory’yi kullanmıyorsanız, bu işlemleri yapabileceğiniz Office 365 Yönetim merkezi ([portal.office.com](https://portal.office.com)). Ayrıca hesabınızın faturalama ve destek gibi diğer yönlerini de yönetebilirsiniz.
-- Henüz Azure’a eklenmemiş olan özellikleri gözden geçirebileceğiniz klasik Intune yönetim konsolu ([manage.microsoft.com](https://manage.microsoft.com)).
+- Henüz Azure’a eklenmemiş olan özellikleri gözden geçirebileceğiniz Intune yönetim konsolu ([manage.microsoft.com](https://manage.microsoft.com)).
 
 Normalde, işlerinizi aşağıda gösterildiği gibi Intune panosunda yaparsınız. Burası; gruplarınızı, ilkelerinizi, cihazlarınızı ve uygulamalarınızı kurduğunuz ve yönettiğiniz sitedir.
 
-Panonuzun en üstündeki **Klasik portal**'ı seçerek panodan klasik Intune yönetim konsoluna gidebilirsiniz.
+Panonuzun en üstündeki **Klasik portal**’ı seçerek panodan Intune yönetim konsoluna gidebilirsiniz.
 
 Intune Azure portala dönmek için tarayıcınızın adres çubuğuna https://portal.azure.com yazın ve ardından hizmetler listesinden **Intune**’u yeniden seçin.
 
@@ -68,7 +68,7 @@ Intune’dan Office 365 Yönetim merkezine geri dönmek için tarayıcınızın 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-### <a name="intune-on-azure"></a>Azure’da Intune
+### <a name="intune-in-the-azure-portal"></a>Azure portalında Intune
 [Azure portalında Intune](what-is-intune.md) hakkında daha fazla bilgi edinin
 
 ### <a name="integration-with-other-products"></a>Diğer ürünlerle tümleştirme

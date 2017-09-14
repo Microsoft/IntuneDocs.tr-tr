@@ -1,12 +1,12 @@
 ---
 title: "Android için Intune cihaz kısıtlama ayarları"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Android cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: db7287dcccf45e0ce98a6fcae3c953dbebc2bb82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android ve Samsung KNOX Standard cihaz kısıtlama ayarları
 
@@ -67,8 +67,8 @@ Cihazları kuruluşunuzda yapılandırmak için bu ayarları bir Android cihaz k
 <sup>1</sup> Bu ayarı cihazlara atamadan önce, Şirket Portalı uygulamasının bu cihazlarda en son sürüme güncelleştirilmiş olduğundan emin olun.
 
 **Sayısal karmaşık** ayarını yapılandırıp, bunu Android 5.0 öncesi bir sürümü çalıştıran cihaza atarsanız aşağıdaki davranış uygulanır.
-- Şirket Portalı uygulaması 1704 öncesi bir sürümü çalıştırıyorsa cihaza PIN ilkesi uygulanmaz ve Intune portalında bir hata görüntülenir.
-- Şirket Portalı uygulaması 1704 veya üzeri bir sürüm çalıştırıyorsa yalnızca basit bir PIN uygulanabilir. Android 5.0 öncesi sürümlerde bu ayar desteklenmez. Intune portalında herhangi bir hata görüntülenmez.
+- Şirket Portalı uygulaması 1704 öncesi bir sürümü çalıştırıyorsa cihaza PIN ilkesi uygulanmaz ve Azure portalında bir hata görüntülenir.
+- Şirket Portalı uygulaması 1704 veya üzeri bir sürüm çalıştırıyorsa yalnızca basit bir PIN uygulanabilir. Android 5.0 öncesi sürümlerde bu ayar desteklenmez. Azure portalında herhangi bir hata görüntülenmez.
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -79,7 +79,7 @@ Cihazları kuruluşunuzda yapılandırmak için bu ayarları bir Android cihaz k
 
 Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini hem Android hem de Samsung KNOX Standard cihazları için yapılandırabilirsiniz:
 
-**Yasak uygulamalar** listesi - Intune tarafından yönetilmeyen ve kullanıcıların yüklemesine ve çalıştırmasına izin verilmeyen uygulamaları listeleyin.
+**Yasak uygulamalar** listesi - Kullanıcılar yükleyip çalıştırdığında raporlanacak uygulamaları (Intune tarafından yönetilmeyenler) listeler.
 **Onaylı uygulamalar** listesi - Kullanıcıların yüklemesine izin verilen uygulamaları listeleyin. Uyumluluğun korunması için kullanıcılar diğer uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.
 Kısıtlı uygulama ayarlarını içeren cihaz profilleri kullanıcı gruplarına atanmalıdır.
 
@@ -107,6 +107,21 @@ Listeyi bir csv dosyasından almak için **İçeri Aktar**’a da tıklayabilirs
 - **Javascript (yalnızca Samsung KNOX)** - Cihazdaki web tarayıcısının Java betiklerini çalıştırmasına izin verir.
 - **Açılır pencereler (yalnızca Samsung KNOX)** - Web tarayıcısında açılır pencere engelleyicisinin kullanımına izin verir.
 
+## <a name="allow-or-block-apps"></a>Uygulamalara izin verme veya uygulamaları engelleme
+
+Bu ayarlar, yalnızca Samsung KNOX Standard çalıştıran cihazlara yüklenebilen veya bu cihazlarda başlatılabilen uygulamaları belirtmek için kullanılabilir.
+Ayrıca, cihaz kullanıcısından gizlenecek yüklü uygulamaları da belirtebilirsiniz. Kullanıcılar bu uygulamaları çalıştıramaz.
+
+- **Yüklenmesine izin verilen uygulamalar (yalnızca Samsung KNOX Standard)**
+- **Başlatılması engellenen uygulamalar (yalnızca Samsung KNOX Standard)**
+- **Kullanıcıdan gizlenen uygulamalar (yalnızca Samsung KNOX Standard)**
+
+Her ayar için aşağıdakilerden birini kullanarak bir uygulama listesi yapılandırın:
+
+- **Paket adına göre uygulama ekleme** - Öncelikli olarak iş kolu uygulamaları için kullanılır. Uygulamanın ve uygulama paketinin adını girin. 
+- **URL’ye göre uygulama ekleme** - Uygulamanın adını ve Google Play mağazası URL’sini girin.
+- **Yönetilen uygulamalar ekleme** - Intune ile yönettiğiniz uygulamalar listesinden ihtiyacınız olan uygulamayı seçin.
+
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 
 - **Google yedekleme (yalnızca Samsung KNOX)** - Google yedeklemesinin kullanımına izin verir.
@@ -127,9 +142,9 @@ Listeyi bir csv dosyasından almak için **İçeri Aktar**’a da tıklayabilirs
 
 ## <a name="kiosk"></a>Bilgi noktası
 
-Bilgi noktası ayarları, Samsung KNOX Standard cihazlar için geçerlidir.
+Bilgi noktası ayarları yalnızca Samsung KNOX Standard cihazlarda ve Intune ile yönettiğiniz uygulamalarda geçerlidir.
 
-- **Yönetilen bir uygulama seçin** - Cihaz bilgi noktası modunda olduğunda çalışabilen bir veya daha fazla uygulama eklemek için aşağıdaki seçeneklerden birini belirleyin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.
+- **Yönetilen bir uygulama seçin** - Cihaz bilgi noktası modunda olduğunda çalışabilen bir veya daha fazla yönetilen uygulama eklemek için aşağıdaki seçeneklerden birini belirleyin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.
     - **Paket adına göre uygulama ekleme**
     - **URL’ye göre uygulama ekleme**
     - **Yönetilen uygulamalar ekleme**.

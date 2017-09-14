@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune’da cihaz profili sorunlarını giderme"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Takıldıysanız, bu konu Intune cihaz profilleriyle ilgili sorunları çözmenize yardımcı olabilir.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili sorunlarını giderme
 
@@ -59,7 +59,7 @@ Aynı kullanıcı veya cihaza iki veya daha fazla ilke atandığında, hangi aya
 
 -   Farklı bir uyumluluk ilkesindeki aynı ayarla karşılaştırılarak değerlendirildiğinde, en kısıtlayıcı uyumluluk ilkesi ayarı uygulanır.
 
--   Bir yapılandırma ilkesi ayarı, farklı bir yapılandırma ilkesindeki bir ayarla çakışıyorsa, bu çakışma Intune konsolunda görüntülenir. Bu gibi çakışmaları el ile çözümlemeniz gerekir.
+-   Bir yapılandırma ilkesi ayarı farklı bir yapılandırma ilkesindeki bir ayarla çakışıyorsa bu çakışma Azure portalında görüntülenir. Bu gibi çakışmaları el ile çözümlemeniz gerekir.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Uygulama koruma ilkeleri birbiriyle çakışırsa ne olur? Uygulamaya hangisi uygulanır?
 Bir uygulama koruma ilkesinde, sayı giriş alanları (sıfırlamadan önce PIN deneme sayısı gibi) haricinde, en kısıtlayıcı ayarlar çakışma değerleridir.  Sayı giriş alanları, konsolda önerilen ayarlar seçeneğini kullanarak bir MAM ilkesi oluşturduğunuzda alacağı değerlerle aynı değerlere ayarlanır.

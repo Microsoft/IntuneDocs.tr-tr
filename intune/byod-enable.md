@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>Intune ile KCG'yi Etkinleştirme
 
@@ -48,7 +48,7 @@ Intune hizmetini hazırladıktan sonra, yönetmek istediğiniz cihaz türleri i�
 
 -   **Android cihazlar** Intune hizmetini Android cihazların kaydına hazır hale getirmek için yapmanız gereken bir şey yoktur. Kullanıcılar Google Play’den edinilebilecek Şirket Portalı uygulamasını kullanarak [Android cihazlarını yönetime kaydedebilir](/intune-user-help/enroll-your-device-in-intune-android).
 
--   **Windows Phone ve bilgisayarlar** Windows cihazlar ek yapılandırma ile kaydedilebilir. Azure Active Directory (AD) Premium’da Windows 10 bilgisayarlar ve Windows 10 mobil cihazlar için otomatik kaydı etkinleştirerek kullanıcılarınızın deneyimini kolaylaştırabilirsiniz. Azure AD Premium’a sahip değilseniz veya Windows 8.1’i desteklemeniz gerekiyorsa kaydı kolaylaştırmak üzere [kayıt sunucusu için bir DNS diğer adı](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) oluşturabilirsiniz.
+-   **Windows Phone ve bilgisayarlar** Windows cihazlar ek yapılandırma ile kaydedilebilir. Azure Active Directory (AD) Premium’da Windows 10 bilgisayarlar ve Windows 10 mobil cihazlar için otomatik kaydı etkinleştirerek kullanıcılarınızın deneyimini kolaylaştırabilirsiniz. Azure AD Premium’a sahip değilseniz veya Windows 8.1’i desteklemeniz gerekiyorsa kaydı kolaylaştırmak üzere [kayıt sunucusu için bir DNS diğer adı](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium) oluşturabilirsiniz.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Yönetilen cihazların, temel güvenlik gereksinimlerini karşıladığından emin olma
@@ -82,7 +82,7 @@ Ayrıca, iOS uygulama mağazasından ve İş İçin Microsoft Mağazası’ndan 
 
 -   [iOS cihazları için toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md). [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) ile iOS için birden çok lisans satın alabilirsiniz. Apple web sitesinden bir Apple VPP hesabı ayarlamanız ve Apple VPP belirtecini Intune’a yüklemeniz gerekir. Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz.
 
--   [İş İçin Microsoft Mağazası’ndan satın alınan uygulamaları yönetme](windows-store-for-business.md). [İş İçin Microsoft Mağazası](https://www.microsoft.com/business-store), kuruluşunuz için uygulamaları tek tek veya toplu olarak bulabileceğiniz ve satın alabileceğiniz bir yerdir. Mağazayı Intune’a bağlayarak, toplu satın alınan uygulamaları Intune portalından yönetebilirsiniz.
+-   [İş İçin Microsoft Mağazası’ndan satın alınan uygulamaları yönetme](windows-store-for-business.md). [İş İçin Microsoft Mağazası](https://www.microsoft.com/business-store), kuruluşunuz için uygulamaları tek tek veya toplu olarak bulabileceğiniz ve satın alabileceğiniz bir yerdir. Mağazayı Intune’a bağlayarak, toplu satın alınan uygulamaları Azure portalından yönetebilirsiniz.
 
 ## <a name="protect-company-data"></a>Şirket verilerini koruma
 

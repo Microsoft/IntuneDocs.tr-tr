@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/03/2016
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1f19b7e9d57350f90baca96562a99b2fde66f91a
+ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’daki Windows 10 cihazları için Intune ilke ayarları
 
@@ -41,9 +41,9 @@ Intune konsolunda tanımanıza yardımcı olması için bu ilke için bir ad ve 
 
 ### <a name="oma-uri-settings"></a>OMA-URI ayarları
 
-Eklemek istediğiniz her OMA-URI ayarı için aşağıdaki bilgileri girin. Kullanabileceğiniz ayarlar hakkında bilgi edinmek için bu konuda bulunan [Windows 10 URI ayarları başvurusunu](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) kullanın:
+Eklemek istediğiniz her OMA-URI ayarı için aşağıdaki bilgileri girin:
 
-- **Ayar adı**: Ayar listesinde tanımanıza yardımcı olması için OMA-URI ayarı için benzersiz bir ad girin.
+- **Ayar adı**: Ayar listesinde tanımanıza yardımcı olması için OMA-URI ayarı için benzersiz bir ad girin. [İlke Yapılandırma Hizmet Sağlayıcısı (İlke CSP’si)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) bölümünde URI ayarları hakkında daha fazla bilgi bulabilirsiniz.
 - **Ayar açıklaması**: İsterseniz ayar için bir açıklama girin.
 - **Veri türü**: Aşağıdaki veri türleri arasından seçim yapın:
     - **Dize**
