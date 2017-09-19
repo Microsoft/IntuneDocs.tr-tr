@@ -2,8 +2,8 @@
 title: "Raporları kullanarak işlemleri anlama"
 description: "Kuruluşunuzdaki yazılımlar, donanımlar ve yazılım lisansları hakkında raporlar oluşturun ve bu raporları yönetin."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 04/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 51140a1ef2739abbbc7eb7b8fd49b1cee7318362
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Raporları kullanarak Microsoft Intune işlemlerini anlayın
 
