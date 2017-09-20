@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 9/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a08296770ee3a326411d3267705ed6a912ab17bd
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 040ce88c47eb12bbe9b228189d90ca422e5185e7
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -35,13 +35,6 @@ Bir WIP ilkesi eklerken kullanılan birkaç kavram hakkında konuşalım.
 -   **İzin verilen uygulamalar:** Bunlar, bu ilkeye bağlı kalması gereken uygulamalardır.
 
 -   **Muaf uygulamalar:** Bu uygulamalar bu ilkeden muaftır ve kurumsal verilere kısıtlamasız erişebilir.
-
-> [!IMPORTANT]  
-> Intune, Intune Şirket Portalı uygulamasının düzgün çalışmasını sağlamak için muaf listesine eklenmesini önerir. Bunu yapmak için aşağıdaki **Mağaza uygulamasını** **Muaf tutulan uygulamalar** listesine ekleyin:  
->   - Ad: Şirket Portalı  
->   - Yayımcı: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
->   - Ürün Adı: Microsoft.CompanyPortal  
-
 
 ### <a name="types-of-apps"></a>Uygulama türleri
 
