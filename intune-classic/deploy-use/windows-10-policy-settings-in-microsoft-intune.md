@@ -2,8 +2,8 @@
 title: "Windows 10 ilke ayarları"
 description: "Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında yerleşik ve özel ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f19b7e9d57350f90baca96562a99b2fde66f91a
-ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
+ms.openlocfilehash: 3264bd25f3a30e12930cc6d89c18baea558ffccc
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’daki Windows 10 cihazları için Intune ilke ayarları
 

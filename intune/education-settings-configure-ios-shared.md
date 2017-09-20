@@ -3,8 +3,8 @@ title: "iOS Classroom uygulaması için Intune paylaşılan cihaz ayarları"
 titlesuffix: Azure portal
 description: "iOS cihazlarındaki Classroom uygulamasının ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 860efd0fb312aab13e543b9a2b4114f408e7137e
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 9149b4d9d263a5d68fdd73e0a3754a24a74ad973
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
 
