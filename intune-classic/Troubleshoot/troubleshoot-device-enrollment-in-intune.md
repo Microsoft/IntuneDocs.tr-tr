@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/16/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: d553f62ed2ee1c9e5a6b9121b766e6e427d06bf7
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
@@ -370,7 +370,14 @@ Bu günlük dosyalarında nelerin aranması gerektiğine ilişkin örnekler yak�
 ### <a name="other-ios-enrollment-errors"></a>Diğer iOS kayıt hataları
 iOS kayıt hatalarının bir listesi, cihaz-kullanıcı belgelerimizdeki [Cihazınızı Intune'a kaydetmeye çalışırken hatalar görüyorsunuz](/intune-user-help/using-your-iOS-or-macOS-device-with-intune) bölümünde verilmiştir.
 
-## <a name="pc--issues"></a>PC Sorunları
+## <a name="pc-issues"></a>Bilgisayar Sorunları
+
+
+|Hata iletisi|Sorun|Çözüm|
+|---|---|---|
+|**Erişim için BT yöneticisinin lisans ataması gerekiyor**<br>BT yöneticiniz, bu uygulamayı kullanmanız için size erişim vermemiş. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Cihaz kaydedilemiyor çünkü bu kullanıcının hesabında gerekli lisans yok.|Cihazlar kaydedilmeden önce kullanıcılara gerekli lisans atanmış olmalıdır. Bu ileti kullanıcının belirlenen mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin, mobil cihaz yönetimi yetkilisi olarak Intune belirlendiyse ve kullanıcı bir System Center 2012 R2 Configuration Manager lisansı kullanıyorsa bu hatayı alır.<br>[Kullanıcı hesaplarınıza Intune lisansları atama](https://docs.microsoft.com/intune/licenses-assign) hakkında bilgi alın.|
+
+
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>Makine zaten kaydoldu - Hata hr 0x8007064c
 **Sorun:** Kayıt işlemi **Makine zaten kaydoldu** hatasıyla başarısız oluyor. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.

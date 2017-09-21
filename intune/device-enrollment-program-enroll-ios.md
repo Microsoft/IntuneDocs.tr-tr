@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -43,7 +43,6 @@ DEP kaydının [cihaz kayıt yöneticisiyle](device-enrollment-manager-enroll.md
 - [Apple Aygıt Kayıt Programı](http://deploy.apple.com)’nda satın alınmış cihazlar
 - [MDM Yetkilisi](mdm-authority-set.md)
 - [Apple MDM Anında İletme sertifikası](apple-mdm-push-certificate-get.md)
-- Kullanıcı benzeşimi [WS-Trust 1.3 Kullanıcı adı/Karma uç noktası](https://technet.microsoft.com/library/adfs2-help-endpoints) gerektirir. [Daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
 > [!NOTE]
 > Çok faktörlü kimlik doğrulaması (MFA), kullanıcı benzeşimi için ayarlanmış DEP kaydı sırasında çalışmaz. Kayıttan sonra MFA, cihazlarda beklendiği gibi çalışır. Cihazlar, ilk defa oturum açıldığında parolalarını değiştirmesi gereken kullanıcılara istemde bulunamaz. Ayrıca, parolalarının süresi dolmuş olan kullanıcılardan kayıt sırasında parolalarını sıfırlamaları istenmez. Kullanıcıların, parolayı sıfırlamak için farklı bir cihaz kullanmaları gerekir.
@@ -109,7 +108,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
   **Kullanıcı Benzeşimi** için bu profile sahip cihazların atanan kullanıcıyla mı yoksa atanan kullanıcı olmadan mı kaydedileceğini seçin.
 
- - **Kullanıcı benzeşimi ile kaydetme** - Kullanıcılara ait olan ve uygulamaları yükleme gibi hizmetler için şirket portalını kullanması gereken cihazlar için seçin.
+ - **Kullanıcı benzeşimi ile kaydetme** - Kullanıcılara ait olan ve uygulamaları yükleme gibi hizmetler için şirket portalını kullanması gereken cihazlar için seçin. Kullanıcı benzeşimi [WS-Trust 1.3 Kullanıcı adı/Karma uç noktası](https://technet.microsoft.com/library/adfs2-help-endpoints) gerektirir. [Daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - **Kullanıcı benzeşimi olmadan kaydetme** - Tek bir kullanıcıyla bağlantılı olmayan bir cihaz seçin. Yerel kullanıcı verilerine erişmeden görevleri yerine getiren cihazlar için kullanın. Şirket Portalı uygulaması gibi uygulamalar çalışmaz.
 
@@ -119,6 +118,8 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
     - **Denetimli** - Daha fazla yönetim seçeneğini etkinleştiren ve varsayılan olarak Etkinleştirme Kilidi’ni devre dışı bırakan yönetim modu. Onay kutusunu boş bırakırsanız, sınırlı yönetim özelliklerine sahip olursunuz.
 
     - **Kilitli kayıt** - (Yönetim Modu = Denetimli seçimini gerektirir) Yönetim profilini kaldırmaya izin verebilecek iOS ayarlarını devre dışı bırakır. Onay kutusunu boş bırakırsanız, yönetim profilinin Ayarlar menüsünden kaldırılmasına izin verir. Cihazı kaydettikten sonra, cihaza fabrika sıfırlaması yapmadan bu ayarı değiştiremezsiniz.
+
+  - **Paylaşılan iPad’i etkinleştir** - Apple’ın Aygıt Kayıt Programı, paylaşılan iPad’i desteklemez.
 
     - **Eşleştirmeye İzin Ver** - iOS cihazlarının bilgisayarlarla eşitlenip eşitlenemeyeceğini belirtir. **Sertifikaya göre Apple Configurator’a izin ver**’i seçerseniz **Apple Configurator Sertifikaları**’nın altında bir sertifika seçmeniz gerekir.
 

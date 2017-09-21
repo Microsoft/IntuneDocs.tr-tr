@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android cihazınızı Intune’a kaydetme
 
@@ -54,14 +54,14 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
 6.  **Şirket Erişimi Kurulumu** ekranında **BAŞLA**’ya dokunun.
 
-    ![Şirket erişimi kurulum ekranı](./media/and-enroll-4a-comp-access-setup.png)
+    ![Şirket erişimi kurulum ekranı](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > Sarı üçgenler herhangi bir hata olduğu anlamına gelmez. Bu simgeler, kayıt işleminde hala tamamlanması gereken adımlar olduğunu gösterir.
 
-7. **Cihazınızı neden kaydetmelisiniz?** ekranında, cihazınızı kaydettiğinizde neler yapabileceğinizi okuyun ve sonra **DEVAM**’a dokunun.
+7. **Cihaz yönetiminin faydaları** ekranında, cihazınızı kaydettiğinizde neler yapabileceğinizi okuyun ve sonra **DEVAM**’a dokunun.
 
-    ![Cihazınız neden kaydetmelisiniz ekranı](./media/and-enroll-4b-why-enroll.png)
+    ![Cihaz yönetiminin faydaları ekranı](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  BT yöneticinizin cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirip **DEVAM**’a dokunun.
 
@@ -114,13 +114,13 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
 14. **Şirket Erişimi Kurulumu** ekranı görüntülendiğinde **DEVAM**’a dokunun. Cihazınızın uyumsuz olduğunu belirten bir ileti görürseniz sorunu düzeltmek için yönergeleri izleyin ve sonra **DEVAM**’a dokunun.
 
-    ![Cihaz uyumlu değil ancak kaydedildi](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![Cihaz uyumlu değil ancak kaydedildi](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![Çözümlenmesi gereken cihaz uyumluluk sorunlarını göründü](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Çözümlenmesi gereken cihaz uyumluluk sorunlarını göründü](/intune/media/android_cp_enroll_03_post_1709.png)
 
     Sorunlara dokunarak bunlar hakkında daha fazla bilgi edinebilirsiniz.
 
-    ![Cihaz uyumluluk sorunları genişletildi](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Cihaz uyumluluk sorunları genişletildi](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![Şirket erişimi kurulum ekranı](./media/and-enroll-9d-comp-access-setup.png)  
 

@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Son kullanıcıların Şirket Portalı uygulama iletilerini anlamasına yardımcı olma
 
@@ -95,6 +95,17 @@ Kullanıcılar, erişimi reddettikten sonra Şirket Portalı uygulamasında ikin
 ### <a name="how-to-explain-this-to-your-users"></a>Bunu kullanıcılarınıza açıklama
 Kullanıcılarınızı [Günlükleri e-posta ile BT yöneticinize gönderme](/intune-user-help/send-logs-to-your-it-admin-by-email-android) bölümüne yönlendirin. İki yöntemi kıyaslamalarına izin vermek isterseniz, onları [Günlükleri kablo ile BT yöneticinize gönderme](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) bölümüne de yönlendirebilirsiniz.
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>Şirketinizin destek birimi, size şirket kaynakları erişimi sağlamalıdır
+
+### <a name="where-it-appears"></a>Göründüğü yer
+Şirket Portalı uygulamasını **İzin verilen uygulamalar** veya **Muaf uygulamalar** listelerine eklemediyseniz ve bir kullanıcı oturum açmaya çalışırsa oturum açma işlemi başarısız olur. Aşağıdaki ileti görüntülenir:
+
+> **Şirketinizin destek birimi, size şirket kaynakları erişimi sağlamalıdır**  
+> Şirketiniz, cihazınızı korumak için Windows Bilgi Koruması ilkeleri kullanıyor. Şirketinizin destek birimi, Şirket Portalı’na bunlar için erişim sağladığından emin olmalıdır.
+
+### <a name="what-it-means"></a>Anlamı
+
+Şirket Portalı’nı Windows Bilgi Koruması (WIP) uygulama koruma ilkesindeki **İzin verilen uygulamalar** veya **Muaf uygulamalar** listelerine ekleyin. Daha fazla bilgi için bkz. [Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Son kullanıcılarınıza Intune kullanma hakkında söylemeniz gerekenler](end-user-educate.md)

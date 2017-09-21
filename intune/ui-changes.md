@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure'daki Intune özelliğim nereye gitti?
 Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekilde organize ettik. Ancak her geliştirme sonrasında atlatılması gereken bir yeni düzene alışma süreci vardır. Bu nedenle klasik portalda Intune’a aşina olanlar ve bir işlemi Azure portalında Intune’da nasıl gerçekleştireceğini merak edenler için bu başvuru kılavuzunu hazırladık. Aradığınız özellik bu makalede yoksa ekleyebilmemiz için lütfen aşağıya yorum yazın.
 ## <a name="quick-reference-guide"></a>Hızlı başvuru kılavuzu
 |Özellik |Klasik portalda yol|Azure portalında Intune’da yol|
 |------------|---------------|---------------|
-|Aygıt Kayıt Programı (DEP) |Yönetici > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Aygıt Kayıt Programı|[Cihaz kaydı > Apple Kaydı > Kayıt Programı Belirteci](#where-did-apple-dep-go) |
-|Aygıt Kayıt Programı (DEP)| Yönetici > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Aygıt Kayıt Programı |[Cihaz kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-apple-dep-go) |
+|Aygıt Kayıt Programı (DEP) [yalnızca iOS]|Yönetici > Mobil Cihaz Yönetimi > iOS > Aygıt Kayıt Programı|[Cihaz kaydı > Apple Kaydı > Kayıt Programı Belirteci](#where-did-apple-dep-go) |
+|Aygıt Kayıt Programı (DEP) [yalnızca iOS]| Yönetici > Mobil Cihaz Yönetimi > iOS ve Mac OS X > Aygıt Kayıt Programı |[Cihaz kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-apple-dep-go) |
 |Kayıt Kuralları |Yönetici > Mobil Cihaz Yönetimi > Kayıt Kuralları|[Cihaz kaydı > Kayıt Kısıtlamaları](#where-did-enrollment-rules-go) |
 |iOS Seri Numarasına göre gruplar |Gruplar > Tüm Cihazlar > Ön Kayıtlı Şirket cihazları > iOS Seri Numarasına Göre|[Cihaz kaydı > Apple Kaydı > Kayıt Programı Seri Numaraları](#where-did-corporate-pre-enrolled-devices-go) |
 |iOS Seri Numarasına göre gruplar |Gruplar > Tüm Cihazlar > Ön Kayıtlı Şirket cihazları > iOS Seri Numarasına Göre| [Cihaz kaydı > Apple Kaydı > AC Seri numaraları](#where-did-corporate-pre-enrolled-devices-go)|
