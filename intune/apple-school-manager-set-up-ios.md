@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager ile iOS cihaz kaydını etkinleştirme
 
@@ -38,17 +38,8 @@ Bu arada, Apple School Manager kaydı [Apple Aygıt Kayıt Programı](device-enr
 - Kullanıcı benzeşimi [WS-Trust 1.3 Kullanıcı adı/Karma uç noktası](https://technet.microsoft.com/library/adfs2-help-endpoints) gerektirir. [Daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - [Apple School Management](http://school.apple.com) programından satın alınan cihazlar
 
-**Apple School Manager Kayıt adımları**
-1. [Apple School Manager belirteci alma ve cihaz atama](#get-the-apple-token-and-assign-devices)
-2. [Kayıt profili oluşturma](#create-an-apple-enrollment-profile)
-3. [Okul Veri Eşitlemeye bağlanma](#connect-school-data-sync) (isteğe bağlı)
-4. [Apple School Manager ile yönetilen cihazları eşitleme](#sync-managed-devices)
-5. [Cihazlara Apple School Manager profili atama](#assign-a-profile-to-devices)
-6. [Cihazları kullanıcılara dağıtma](#distribute-devices-to-users)
-
 >[!NOTE]
 >Çok faktörlü kimlik doğrulaması (MFA), kullanıcı benzeşimi özellikli Apple School Manager cihazlarda kayıt sırasında çalışmaz. Kayıttan sonra MFA bu cihazlar üzerinde beklendiği gibi çalışır. Kayıttan sonra MFA, cihazlarda beklendiği gibi çalışır. Cihazlar, ilk defa oturum açıldığında parolalarını değiştirmesi gereken kullanıcılara istemde bulunamaz. Ayrıca, parolalarının süresi dolmuş olan kullanıcılardan kayıt sırasında parolalarını sıfırlamaları istenmez. Kullanıcıların, parolayı sıfırlamak için farklı bir cihaz kullanmaları gerekir.
-
 
 ## <a name="get-the-apple-token-and-assign-devices"></a>Apple belirteci alma ve cihaz atama
 
@@ -104,7 +95,8 @@ Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları
     - **Denetimli** - Daha fazla yönetim seçeneğini etkinleştiren ve varsayılan olarak Etkinleştirme Kilidi’ni devre dışı bırakan yönetim modu. Onay kutusunu boş bırakırsanız, sınırlı yönetim özelliklerine sahip olursunuz.
 
      - **Kilitli kayıt** - (Yönetim Modu = Denetimli seçimini gerektirir) Yönetim profilini kaldırmaya izin verebilecek iOS ayarlarını devre dışı bırakır. Onay kutusunu boş bırakırsanız, yönetim profilinin Ayarlar menüsünden kaldırılmasına izin verir.
-   - **Paylaşılan iPad** - (**Kullanıcı Benzeşimi olmadan Kaydolma** ve **Denetimli** mod gerektirir.) Birden çok kullanıcının yönetilen Apple kimliği kullanarak kayıtlı iPad’lerde oturum açmasına izin verir. Yönetilen Apple kimlikleri Apple School Manager portalında oluşturulur. [Paylaşılan iPad](education-settings-configure-ios-shared.md) hakkında daha fazla bilgi edinin.
+   - **Paylaşılan iPad** - (**Kullanıcı Benzeşimi olmadan Kaydolma** ve **Denetimli** mod gerektirir.) Birden çok kullanıcının yönetilen Apple kimliği kullanarak kayıtlı iPad’lerde oturum açmasına izin verir. Yönetilen Apple kimlikleri Apple School Manager portalında oluşturulur. [Paylaşılan iPad](education-settings-configure-ios-shared.md) hakkında daha fazla bilgi edinin. [Apple’ın paylaşılan iPad gereksinimlerini](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) de gözden geçirmelisiniz.
+
    >[!NOTE]
    >**Kullanıcı Benzeşimi** özelliği **Kullanıcı benzeşimli** olarak ayarlıysa veya **Denetimli** modu **Kapalı** olarak belirtildiyse,  bu kayıt profili için paylaşılan iPad modu devre dışıdır.
 

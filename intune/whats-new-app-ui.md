@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,31 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: a43c15f7fb7323a17b8fe24f26128834288e0dec
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune ve son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu yenilikler, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
 
-## <a name="week-of-august-28-2017"></a>28 Ağustos 2017 Haftası
+## <a name="week-of-september-11-2017"></a>11 Eylül 2017 haftası
 
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android için Şirket Portalı uygulamasında daha kolay anlaşılır bir dil <!---1396349--->  
+
+Android için Şirket Portalı uygulamasında kayıt işlemi, son kullanıcıların kaydını kolaylaştırmak adına yeni metinlerle düzenlendi. Özel kayıt belgeleriniz varsa bunları, değişiklikleri yansıtması için güncelleştirmelisiniz. Örnek görüntüleri aşağıda bulabilirsiniz:
+
+|Önce|Sonra|
+|---|---|
+|![01](./media/android_cp_enroll_01_before_1709.png)|![01](./media/android_cp_enroll_01_post_1709.png)|
+|![02](./media/android_cp_enroll_02_before_1709.png)|![02](./media/android_cp_enroll_02_post_1709.png)|
+|![03](./media/android_cp_enroll_03_before_1709.png)|![03](./media/android_cp_enroll_03_post_1709.png)|
+|![04](./media/android_cp_enroll_04_before_1709.png)|![04](./media/android_cp_enroll_04_post_1709.png)|
+|![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
+
+
+## <a name="week-of-august-28-2017"></a>28 Ağustos 2017 Haftası
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail uygulaması OAuth destekleyecek <!---1196951--->
 

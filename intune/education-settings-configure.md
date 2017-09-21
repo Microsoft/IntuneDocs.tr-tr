@@ -3,10 +3,10 @@ title: "Windows 10 için Intune eğitim ayarlarını yapılandırma"
 titleSuffix: Azure portal
 description: "Yönettiğiniz cihazlarda Windows 10 Education ayarlarını yapılandırmak için Intune’u kullanmayı öğrenin.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c18eaa0416a41e802f82bbe12b57a4d25118892c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 12e36761320557f6af9554d3b671fc133253c13c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 Education ayarlarını yapılandırma
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/09/2017
 
 Eğitim profilleri Windows Sınav Zamanı uygulamasının yapılandırıldığı hesap ayrıntıları ve sınav URL’si gibi ayrıntıları belirtmenize olanak tanır. Bunu yapılandırdığınızda, Sınav Zamanı uygulaması sizin belirttiğiniz sınavla başlar ve sınav tamamlanana kadar cihazda başka hiçbir uygulama çalıştırılamaz.
 
-Bu konu başlığı altında verilen bilgileri kullanarak cihaz kısıtlama profillerini yapılandırmanın temellerini öğrenin ve sonra cihaza özgü bilgiler için her platformla ilgili olarak sağlanan konuları okuyun.
+Sınav Zamanı uygulaması hakkında ayrıntılar için bkz. [Windows 10’da sınava girme](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Eğitim profili ayarlarını içeren bir cihaz profili oluşturma
 
@@ -47,6 +47,9 @@ Bu konu başlığı altında verilen bilgileri kullanarak cihaz kısıtlama prof
 8. Bitirdiğinizde, **Profil Oluştur** dikey penceresine gidin ve **Oluştur**’a basın.
 
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
 Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).
 
 

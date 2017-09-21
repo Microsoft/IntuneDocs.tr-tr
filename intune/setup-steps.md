@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 09/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fba27041fb55cfbef1cbba39e3679ce6884cd5f0
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 7fcdd4e7679bc969a7fa000e515b59882973a3da
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="set-up-intune"></a>Intune’u ayarlama
 
@@ -37,7 +37,7 @@ Intune aboneliği ayarlama ve MDM yetkilisi ayarlama gibi bazı adımlar, çoğu
 
 | Adımlar | Durum  |
 | ------------- |-------------|
-| 1  | [Önkoşullar](supported-devices-browsers.md) - Başlamadan önce bilmeniz gerekenler. Bunlar arasında desteklenen yapılandırmalar ve ağ gereksinimleri vardır.|
+| 1  | [Desteklenen yapılandırmalar](supported-devices-browsers.md) - Başlamadan önce bilmeniz gerekenler. Bunlar arasında desteklenen yapılandırmalar ve ağ gereksinimleri vardır.|
 | 2 |  [Intune’da oturum açma](account-sign-up.md) - Deneme aboneliğinizde oturum açın veya yeni bir Intune aboneliği oluşturun. |  
 | 3 | [Etki alanı adı yapılandırma](custom-domain-name-configure.md) - Şirketinizin etki alanı adını Intune’a bağlamak için DNS kaydı ayarlayın. Böylece, Intune’a bağlanırken ve kaynakları kullanırken kullanıcılara tanıdık bir etki alanı sağlarsınız.  |
 | 4 | [Kullanıcı ekleme](users-add.md) - Kullanıcıları el ile ekleyin veya Intune ile eşitlemek için Active Directory'ye bağlanın. Cihazlarınız, “kullanıcısız” bilgi noktası cihazları gibi cihazlar değilse gereklidir. |

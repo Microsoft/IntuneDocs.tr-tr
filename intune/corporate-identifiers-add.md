@@ -15,24 +15,24 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85303c503e068ec23c8321b9359760775bbdb6f8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 58dac14dcc38329cfa0a98746e667bf6e5438170
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune yöneticisi olarak çeşitli yollarla bir cihazı şirkete ait olarak tanımlayabilirsiniz. Intune, şirkete ait cihazlardan ek bilgi toplayabilir. Şirkete ait olmayan cihazların kaydını önlemek için cihaz kısıtlamaları da ayarlayabilirsiniz.
+Bir Intune yöneticisi olarak cihazları şirkete ait olarak tanımlayabilir, böylece yönetim ve tanımlama işlemlerini geliştirebilirsiniz. Intune, ek yönetim görevleri gerçekleştirebilir ve tam telefon numarası ile şirkete ait cihazların uygulama envanteri gibi ilave bilgiler toplayabilir. Şirkete ait olmayan cihazların kaydını engellemek için cihaz kısıtlamaları da ayarlayabilirsiniz.
 
 Aşağıdaki koşullardan herhangi biri doğru olduğunda, bir cihaz şirkete ait olarak tanımlanır:
 
 - [Cihaz kayıt yöneticisi](device-enrollment-manager-enroll.md) hesabıyla kaydedildi (tüm platformlar)
 - Apple [Aygıt Kayıt Programı](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) veya [Apple Configurator](apple-configurator-enroll-ios.md) ile kaydedildi (yalnızca iOS)
 - Bir uluslararası mobil ekipman tanımlayıcısı (IMEI) numarası (IMEI numarası olan tüm platformlar) veya seri numarası (iOS ve Android) ile [kayıttan önce şirkete ait olarak tanımlandı](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- Azure Active Directory veya Enterprise Mobility + Security’ye bir Windows 10 Enterprise cihazı olarak kaydedildi (yalnızca Windows 10)
+- Azure Active Directory veya Enterprise Mobility + Security’ye bir Windows 10 Enterprise cihazı olarak kaydedildi
 - Cihazın özelliklerinde [cihaz sahipliği şirket](#change-device-ownership) olarak listelenmiş
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Şirkete ait cihazları IMEI veya seri numarası ile belirleme
