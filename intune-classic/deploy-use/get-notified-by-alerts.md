@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Microsoft Intune’dan bildirim almak için uyarıları kullanma
 
@@ -61,6 +61,8 @@ Ayrıca, Intune’u, bir uyarı oluşturulduğunda sizi e-posta ile bilgilendirm
 
 ## <a name="working-with-alerts"></a>Uyarılarla çalışma
 
+[Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) uyarıları görüntülemek için önce **Uyarılar**'ı, sonra görüntülenecek uyarı türünü seçin.
+
 Intune Yönetim Konsolu'nda uyarılar üzerine çalışmanıza yardımcı olan aşağıdaki seçenekleri kullanın.
 
 |Seçenek|Açıklama|
@@ -70,11 +72,12 @@ Intune Yönetim Konsolu'nda uyarılar üzerine çalışmanıza yardımcı olan a
 |**Bir uyarıyı kapatma**|Uyarı listesinden kapatılacak uyarıyı seçin ve sonra da **Uyarıyı Kapat**’ı seçin.<br /><br />Kapatılan uyarılar 90 gün sonra kalıcı olarak silinir.|
 |**Kapatılan bir uyarıyı yeniden etkinleştirme**|Uyarı listesindeki **Filtreler** açılan menüsünü **Kapalı** olarak ayarlayın.<br /><br />Kapatılan uyarılar listesinde yeniden etkinleştirmek istediğiniz uyarıyı seçin ve sonra da **Uyarıyı Yeniden Etkinleştir**’i seçin.|
 
-Intune uyarıları şu durumlara kadar etkin kalır:
+Intune uyarıları 30 gün boyunca veya aşağıdakiler yapılıncaya kadar etkin kalır:
 
-- Uyarıya neden olan sorun çözüldüğünde
-- Uyarıyı kendiniz kapattığınızda
-- Uyarının oluşturulmasının üzerinden 45 gün geçtiğinde
+- Uyarıya neden olan sorun çözüldüğünde.
+- Uyarı el ile kapatıldığında.
+
+Kapatılan uyarılar kapatıldıktan sonra 30 gün boyunca yeniden etkinleştirilebilir. 30 günden sonra, kapalı veya etkin olmayan uyarılar Intune'dan kaldırılır.
 
 > [!TIP]
 > Farklı işletim sistemleri çalıştıran cihazlarda aynı uyarı oluşturulduysa, uyarılar listesinde aynı uyarının birden fazla sürümünü görebilirsiniz.

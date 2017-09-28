@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2cffc21ba78cbd54edfb75eaa892df1539ad62b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2e9b1a3dc42a9c18d61fc9b55d5a7b71f00c3e29
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune ile Mobile Threat Defense (MTD) cihaz uyumluluk ilkesi oluşturma
 
@@ -35,8 +35,6 @@ MTD kurulumunun parçası olarak, MTD iş ortağı konsolunda çeşitli tehditle
 MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
 -   Intune ile MTD tümleştirmesini ayarlama
-
--   Intune'da MTD bağlayıcısını etkinleştirme
 
 ## <a name="to-create-a-mtd-device-compliance-policy"></a>MTD cihaz uyumluluk ilkesi oluşturmak için
 
@@ -77,3 +75,7 @@ Kullanıcılara bir cihaz uyumluluk ilkesi atamak için daha önce yapılandırd
 
     > [!NOTE] 
     > İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için denetlenecek.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [MTD'yi Intune ile etkinleştirme](mtd-connector-enable.md)
