@@ -15,18 +15,18 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ed7ac5467fe3a37a133aac61a9ccffe2e6119e6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d818581ca74e64bf27c968b39969afd889b6fbda
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>Intune’da Mobile Threat Defense’i etkinleştirme
 
 > [!NOTE] 
 > Bu konu, tüm Mobile Threat Defense iş ortakları için geçerlidir.
 
-Intune'da Mobile Threat Defense (MTD) bağlantısını etkinleştirmek için MTD çözüm konsolunda Intune Bağlayıcısı'nı zaten yapılandırmış olmanız gerekir.
+Intune'da Mobile Threat Defense (MTD) bağlantısını etkinleştirmek için MTD ortağı konsolunda daha önce Intune Bağlayıcısı'nı yapılandırmış olmanız gerekir.
 
 ## <a name="to-enable-the-mtd-connector"></a>MTD bağlayıcısını etkinleştirmek için
 
@@ -65,7 +65,3 @@ Kuruluşunuzun gereksinimlerine göre hangi MTD geçiş seçeneklerini etkinleş
 
 > [!TIP]
 > Intune ve MTD iş ortağı arasındaki **Bağlantı durumu** ve **Son eşitleme** zamanını Mobile Threat Defense dikey penceresinden görebilirsiniz.
-
-## <a name="next-steps"></a>Sonraki adımlar
-
-[Intune ile Mobile Threat Defense cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)

@@ -1,17 +1,16 @@
 
 
 ### <a name="apple"></a>Apple
-  - Apple iOS 8.0 ve üzeri
+  - Apple iOS 9.0 ve üzeri
   - Mac OS X 10.9 ve üzeri
 
 ### <a name="windows"></a>Windows
   - Windows 10 (Home, Pro, Education ve Enterprise sürümleri) çalıştıran bilgisayarlar
-  - Windows Phone 8.1 ve üzeri
-  - Windows 8.1 RT
-  - Windows 8.1 çalıştıran bilgisayarlar
+  - Windows 10 Mobile
   - Windows 10 IoT Enterprise (x86, x64) çalıştıran cihazlar
   - Windows 10 IoT Mobile Enterprise çalıştıran cihazlar
-  - Windows Holographic ve Windows Holographic Enterprise
+  - Windows Holographic &amp; Windows Holographic Enterprise
+  - Windows Phone 8.1, Windows 8.1 RT ve Windows 8.1 (Sürdürme modu) çalıştıran bilgisayarlar
 
   Enterprise Management + Security  (EMS) kullanan müşteriler [Windows 10 cihazlarını kaydetmek için Azure Active Directory (AAD) de kullanabilir](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 

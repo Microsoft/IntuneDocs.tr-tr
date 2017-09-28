@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77021ddc681f10d735ed0e680738122667608bdf
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6a9925b91b009f43c08533222a5fdfc765ea51c2
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
 
@@ -130,5 +130,7 @@ Lookout Mobile Threat Defense, çeşitli türlerdeki mobil tehditleri sınıflan
 
 ## <a name="watching-enrollment"></a>Kayıt izleme
 Kurulum tamamlandıktan sonra, Lookout Mobile Threat Defense belirlenen kayıt gruplarına karşılık gelen cihazlar için Azure AD’yi yoklamaya başlar.  Kayıtlı cihazlar hakkındaki bilgileri Cihazlar modülünde bulabilirsiniz.  Cihazların ilk durumu, beklemede olarak gösterilir.  Cihaz durumu Lookout for Work uygulaması cihaza yüklendikten, açıldıktan ve etkinleştirildikten sonra değişir.  Cihaza gönderilen Lookout for Work uygulamasının nasıl alınacağına yönelik ayrıntılar için [Intune ile Lookout for Work uygulamaları ekleme](mtd-apps-ios-app-configuration-policy-add-assign.md) konusuna bakın.
+
 ## <a name="next-steps"></a>Sonraki adımlar
-[Intune ile Lookout MTD bağlantısını etkinleştirme](mtd-connector-enable.md)
+
+[Lookout uygulamalarını ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)
