@@ -27,7 +27,7 @@
 ### [Android cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-android.md)
 #### [Cihaz uyumluluğunu denetleme](check-compliance-on-your-device-android.md)
 
-#### [Sorunları gidermek için günlükleri kullanma]
+#### Sorunları gidermek için günlükleri kullanma
 ##### [Ayrıntılı günlük kaydını açma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [E-posta kullanarak günlükleri gönderme](send-logs-to-your-it-admin-by-email-android.md)
 ##### [USB kablosu kullanarak günlükleri gönderme](send-logs-to-your-it-admin-using-cable-android.md)
