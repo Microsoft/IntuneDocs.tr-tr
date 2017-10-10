@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b5bbaf1d475eeb8f6e468d61996131baf9c772b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5c2c27f48eec08724b1ced23d564e3df6ab18303
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Windows cihazınızı güncelleştirmeniz gerekiyor
 
@@ -35,4 +35,4 @@ Windows çalıştıran bilgisayarlarda **işletim sistemi** için arama yapın v
 
 Windows 10 ve Windows 8.1 için __arama çubuğuna__ __Windows sürümü__ yazın. __Yardımcı olabilir miyim?__ altında __windows sürümü__ seçeneğini belirleyin. Sürüm numarası görüntülenir. Bu numara şuna benzer: __10.0.14393.447__.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

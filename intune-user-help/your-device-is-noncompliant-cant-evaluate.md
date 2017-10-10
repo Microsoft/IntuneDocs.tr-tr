@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c111993248e900f663640cf45db4525dc7c7df95
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d61887174830c9892c854d7b067fafe6fc50da59
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-device-is-noncompliant"></a>Cihazınız uyumsuz
 
@@ -28,4 +28,4 @@ Cihazınız kuruluşunuzun güvenlik ilkelerinden en az biriyle uyumsuz, ancak h
 
 Şirket Portalı uygulamasında **Uyumluluğu Denetle**’ye dokunun. Böylece Şirket Portalı uygulaması cihazınızın uyumsuz olmasına neden olan durumu bildirir.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

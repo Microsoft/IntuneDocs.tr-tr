@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a36efd88949f18618fef2afe0d99fcca8bbdf538
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="unenroll-your-windows-device-from-intune"></a>Windows cihazınızın Intune kaydını silme
 
@@ -62,4 +62,4 @@ Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde g�
 
 4.  **Hesabı sil** iletişim kutusunda **Sil**’e dokunun.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

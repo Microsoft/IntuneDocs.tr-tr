@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be200787cf628e79e95ca40f5f733123aa2e58f9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a91b01f21d6f42f2f216443b146dbf69c3974bd7
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-encryption"></a>Şifrelemeyi etkinleştirmeniz gerekiyor
 
@@ -28,4 +28,4 @@ Bir cihazı şifrelediğinizde cihazdaki bilgileri, yetkisiz kişilerin erişmes
 
 BitLocker sürücünüzü şifreleyen ve verilerinizi korumaya yardımcı olan bir yazılımdır. BitLocker'ı Windows 10 cihazlarda nasıl etkinleştireceğinizi öğrenmek için [bu yönergeleri](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) uygulayın.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

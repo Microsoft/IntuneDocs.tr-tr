@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ab021708898fe87c2c5acf7d8b33df5a57e36c84
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 32a46b1c82bbe38cf1918ff4053bf650bfe7d26a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Android için Şirket Portalı uygulamasını yükleme
 
@@ -44,4 +44,4 @@ ms.lasthandoff: 07/01/2017
 
 Şirket Portalı uygulamasını indirdikten sonra, iş bilgilerinize tam erişim elde etmek için [cihazınızı Intune’a kaydetmeniz](enroll-your-device-in-Intune-android.md) gerekecektir. Ayrıca [başka bir cihaz kullanarak da oturum açabilirsiniz](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
