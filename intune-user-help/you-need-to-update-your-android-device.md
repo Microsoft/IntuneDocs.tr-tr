@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 242dda15ab89d16ccfead940f6c2e61469f205e2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5ee663c6fe5e2f90bd1a92ef32ad747d72515f13
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-update-your-android-device"></a>Android cihazınızı güncelleştirmeniz gerekiyor
 
@@ -28,4 +28,4 @@ ms.lasthandoff: 07/01/2017
 
 Android cihazınızı güncelleştirmek için **Ayarlar** > **Telefon hakkında**’ya dokunun. __Ayarlar__ bölümünde, __Güncelleştirmeleri Denetle__’ye dokunun ve mevcut güncelleştirmeyi yükleyin.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

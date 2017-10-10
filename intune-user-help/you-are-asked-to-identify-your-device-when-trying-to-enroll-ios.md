@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 847b08efc2424da7ae9483db355f2804ac1e00c1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d5d59f5b9c0401e84dddbe21a274b0fed91e5dce
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Kaydetme işlemi için iOS cihazınızı tanımlamanız gerekiyor
 
@@ -30,4 +30,4 @@ iOS veya Mac OS X cihazınızı Intune’a kaydetmeye çalışırken cihazınız
 2. **Devam**’a dokunun.
 3. Intune’un cihazınızın kayıtlı olduğunu onaylaması için cihazınızın seri numarasının son dört karakterini girin. Seri numaranızı bulmak için bkz. [Cihazımda seri numarasını nasıl bulabilirim?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

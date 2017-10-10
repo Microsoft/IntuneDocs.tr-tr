@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e29819ec65325ad69c51fd155047afa19769ccfa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: c06146c2a8abe15f346be532cf02e1fe6d97cc99
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>iOS cihazınızı Intune’a Aygıt Kayıt Programı ile kaydedin
 
@@ -33,4 +33,4 @@ Aygıt Kayıt Programı, iOS cihazlarının yönetiminde ilk kullanıcı deneyim
 5.  **Hüküm ve Koşullar**’ı onaylayın ve Apple’a tanılama bilgileri göndermek isteyip istemediğinizi seçin.
 6.  Kaydınızı tamamladığınızda, cihazınız daha fazla eylem gerçekleştirmenizi isteyebilir. Bu eylemler arasında e-posta erişimi için parolanızı girmek, geçiş kodu ayarlamak, tamamen şirketinizin Intune yöneticisi tarafından kararlaştırılan uygulamaların indirilmesine onay vermek olabilir.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

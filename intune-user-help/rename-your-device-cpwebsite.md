@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b3a9ea6fb7134f2be6b05f883e5dab2d1aef1d59
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8023e3a75dbf9a3275654b7ed8f917546d401168
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı yeniden adlandırma
 
-Cihazınızı daha kolay tanımlamak için yeniden adlandırmak isteyebilirsiniz. Bunu [Şirket Portalı web sitesinden](http://portal.manage.microsoft.com) yapabilirsiniz. Şirket Portalı web sitesi, BT bölümünüz tarafından yönetilmesi için kaydettiğiniz bilgisayarları ve cihazları yönetmek üzere kullanabileceğiniz bir web sayfasıdır.
+Cihazınızı daha kolay tanımlamak için yeniden adlandırmak isteyebilirsiniz. Bunu [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) yapabilirsiniz. Şirket Portalı web sitesi, BT bölümünüz tarafından yönetilmesi için kaydettiğiniz bilgisayarları ve cihazları yönetmek üzere kullanabileceğiniz bir web sayfasıdır.
 
 Cihazınızı yeniden adlandırmak için:
 
-1.  [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
+1.  [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
 
 2. __Cihazlarım__ sayfasında, yeniden adlandırmak istediğiniz cihazın adını seçin.
 
@@ -40,4 +40,4 @@ Cihazınızı yeniden adlandırmak için:
 
 4.  Cihazınızın adının göründüğü kutuya yeni bir ad girin ve ardından **Yeniden adlandır** düğmesine dokunun. Cihazınız artık yeni adıyla görünür.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
