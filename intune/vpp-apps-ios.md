@@ -1,12 +1,12 @@
 ---
-title: "Toplu satın alınan iOS uygulamalarını yönetme"
+title: "iOS toplu satın alınan uygulamaları yönetme | Microsoft Docs"
 titlesuffix: Azure portal
 description: "iOS mağazasından toplu satın aldığınız uygulamaları Intune’a eşitlemeyi, ardından bunların kullanımını yönetmeyi ve izlemeyi öğrenin.\""
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/18/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8be922d6cc839708ff26de2ebe792241b9bf357a
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: dc3160d40d4ddabcd0a7d8d5557b07b4086eea7c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
-# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın aldığınız iOS uygulamalarını yönetme
+# <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -48,12 +48,17 @@ Bir cihaza toplu satın alınan uygulamalar atadığınızda, cihaz son kullanı
 Kullanıcılara bir uygulama atadığınızda yalnızca bir uygulama lisansı kullanılır ve bu lisans kullanıcıyla ilişkili olur. Uygulama, kullanıcının sahip olduğu birden fazla cihazda (Apple tarafından denetlenen bir sınır ile) çalıştırılabilir.
 Kullanıcılara toplu satın alınan uygulamalar atadığınızda, tüm son kullanıcılar mağazaya erişmek için geçerli ve benzersiz bir Apple kimliği belirtmek zorundadır.
 
-
 Ayrıca, Apple Volume Purchase Program mağazasından satın aldığınız kitapları Intune ile eşitleyebilir, yönetebilir ve atayabilirsiniz. Daha fazla bilgi için bkz. [Bir toplu satın alma programı aracılığıyla satın aldığınız iOS e-Kitaplarını yönetme](vpp-ebooks-ios.md).
 
-
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>iOS cihazları için toplu satın alınan uygulamaları yönetme
+
+### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>iOS cihazlar için Apple Volume Purchase Program ile toplu satın alınan uygulamaları destekler
+
 [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) veya [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store) aracılığıyla iOS uygulamaları için birden çok lisans satın alın. Bu sürece Apple web sitesinden bir Apple VPP hesabının ayarlanması ve Apple VPP belirtecinin Intune’a yüklenmesi dahildir.  Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz.
+
+### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>iOS cihazlar için İşletmeler Arası toplu satın alınan uygulamaları destekler
+
+Ayrıca üçüncü taraf geliştiriciler de iTunes Connect’te belirtilen yetkilendirilmiş İş için Volume Purchase Program üyelerine özel olarak uygulama dağıtabilir. Bu İş için VPP üyeleri, Volume Purchase Program App Store’da oturum açabilir ve uygulamalarını satın alabilir. Son kullanıcı tarafından satın alınan İş için VPP uygulamaları, kullanıcının Intune kiracılarıyla eşitlenecektir.
 
 ## <a name="before-you-start"></a>Başlamadan önce
 Başlamadan önce Apple'dan bir VPP belirteci almanız ve Intune hesabınıza yüklemeniz gerekir. Ayrıca, aşağıdaki ölçütleri de anlamanız gerekir:
@@ -64,12 +69,9 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve Intune hesabınıza y�
 * Varsayılan olarak Intune, Apple VPP hizmetiyle günde iki kez eşitlenir. Dilediğiniz zaman bir el ile eşitleme başlatabilirsiniz.
 * Intune ile iOS VPP kullanmaya başlamadan önce diğer mobil cihaz yönetimi (MDM) satıcıları ile oluşturulan tüm var olan VPP kullanıcı hesaplarını kaldırın. Intune, bir güvenlik önlemi olarak bu kullanıcı hesaplarını Intune ile eşitlemez. Intune yalnızca Intune tarafından oluşturulan Apple VPP hizmeti verilerini eşitler.
 * Intune, 256’ya kadar VPP belirtecinin eklenmesini destekler.
-* Cihaz Kayıt Profili ya da Apple Configurator aracılığıyla kaydedilmiş bir cihaz için toplu satın alınmış bir uygulamayı atarsanız yalnızca cihazları hedefleyen uygulamalar çalışır. Toplu satın alınmış uygulamaları, kullanıcı benzeşimi olmayan bir DEP cihazının kullanıcılarına hedefleyemezsiniz.
-Bunun sebebi, iOS VPP kullanıcı lisanslamanın aynı kullanıcı hesabıyla binlerce hesabın kaydına izin verebilmesidir. iOS VPP kullanıcı lisanslama, bir son kullanıcının 5-10 cihazda uygulama yüklemesine izin verir.
-Yani ilk birkaç DEM kayıtlı cihaz, VPP uygulamasını kullanıcı lisanslama ile alırken diğer cihazlar uygulamayı almaz.”
+* Apple’ın Aygıt Kayıt Profili (DEP) programı, mobil cihaz yönetimi (MDM) kaydını otomatikleştirir. DEP kullanarak kuruluş cihazlarına dokunmadan onları yapılandırabilirsiniz. Apple’ın VPP’sinde kullandığınız program aracı hesabıyla DEP programına kaydolabilirsiniz. Apple Kayıt Programı kimliği, [Apple Dağıtım Programları](https://deploy.apple.com) web sitesinde listelenen programlara özeldir ve iTunes mağazası gibi Apple hizmetlerinde oturum açmak için kullanılamaz. 
 * Bir VPP belirtecinin aynı anda yalnızca bir Intune hesabında kullanılması desteklenir. Aynı VPP belirtecini birden çok Intune kiracısı için yeniden kullanmayın.
-* Kullanıcı lisans modelini kullanan VPP uygulamalarını kullanıcılara veya (kullanıcı benzeşimi olan) cihazlara atadığınızda, her Intune kullanıcısının, cihazında Apple hüküm ve koşullarını kabul ettiğinde, benzersiz bir Apple kimliği ya da bir e-posta adresi ile ilişkilendirilmesi gerekir.
-Yeni bir Intune kullanıcısı için bir cihaz ayarladığınızda, cihazı kullanıcının benzersiz Apple kimliği veya e-posta adresi ile yapılandırdığınızdan emin olun. Apple kimliği veya e-posta adresi ve Intune kullanıcısı, 5 adede kadar cihazda kullanılabilecek benzersiz bir çift oluşturur.
+* Kullanıcı lisans modelini kullanan VPP uygulamalarını kullanıcılara veya (kullanıcı benzeşimi olan) cihazlara atadığınızda, her Intune kullanıcısının, cihazında Apple hüküm ve koşullarını kabul ettiğinde, benzersiz bir Apple kimliği ya da bir e-posta adresi ile ilişkilendirilmesi gerekir. Apple Dağıtım Programı kimliği için kullanılan Apple kimliğini kullanmayın. Yeni bir Intune kullanıcısı için cihaz ayarladığınızda, cihazı kullanıcının benzersiz Apple kimliği veya e-posta adresi ile yapılandırdığınızdan emin olun. Apple kimliği veya e-posta adresi ve Intune kullanıcısı, benzersiz bir çift oluşturur ve en fazla beş cihazda kullanılabilir.
 
 >[!IMPORTANT]
 >VPP belirtecini Intune'da içeri aktardıktan sonra aynı belirteci başka bir cihaz yönetimi çözümüne aktarmayın. Bunun yapılması lisans atama ve kullanıcı kayıtlarının kaybına neden olabilir.
@@ -78,17 +80,13 @@ Yeni bir Intune kullanıcısı için bir cihaz ayarladığınızda, cihazı kull
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-1.  **Mobil Uygulamalar** iş yükünde **Kurulum** > **iOS VPP Belirteçleri**’ni seçin.
-2.  VPP belirteçleri listesi dikey penceresinde **Ekle**’ye tıklayın.
-3.  **Yeni VPP Belirteci** dikey penceresinde aşağıdaki bilgileri girin:
+2.  VPP belirteçleri listesi dikey penceresinde **Oluştur**’a tıklayın.
+4. **VPP belirteci oluştur** dikey penceresinde aşağıdaki bilgileri girin:
     - **VPP belirteç dosyası** - Henüz kaydolmadıysanız Volume Purchase Program for Business veya Education programına kaydolun. Kaydolduktan sonra hesabınıza yönelik Apple VPP belirtecini indirin ve burada seçin.
-    - **Apple Kimliği** - Toplu satın alma programıyla ilişkilendirilmiş hesabın Apple kimliğini girin.
-    - **VPP hesabı türü** - **İş** veya **Eğitim**’i seçin.
+    - **Otomatik uygulama güncelleştirmeleri** - **Açık** veya **Kapalı** olarak ayarlayın. Bu seçenek etkinleştirildiğinde Intune, cihaz bildirim yaptığında belirtilen belirteç için satın alınan tüm uygulamaları güncelleştirir. uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılayacak ve cihaz bildirim yaptığında bunları cihaza otomatik olarak gönderecektir.
 4. İşiniz bittiğinde **Karşıya Yükle**‘ye tıklayın.
 
 Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
-
 
 İstediğiniz zaman **Şimdi eşitle**’yi seçerek Apple tarafından tutulan verileri Intune ile eşitleyebilirsiniz.
 
@@ -97,12 +95,11 @@ Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
-1.  **Mobil Uygulamalar** iş yükünde **Yönet** > **Uygulama Lisansları**’nı seçin.
-2.  Uygulama listesi dikey penceresinde atamak istediğiniz uygulamayı ve daha sonra ‘**...**’ > **Grup Ata**’yı seçin.
-3.  *<app name>* - **Atamalar** dikey penceresinde **Yönet** > **Atamalar**’ı seçin.
-4.  **Grupları Seç**’e tıklayın, daha sonra **Grupları seç** dikey penceresinde uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
+1.  **Intune** dikey penceresinde **Yönet** altında bulunan **Mobil uygulamalar** > **Uygulamalar**’ı seçin.
+2.  Uygulama listesi dikey penceresinde atamak istediğiniz uygulamayı ve daha sonra **Atamalar**’ı seçin.
+3.  ***Uygulama adı*** - **Atamalar** dikey penceresinde **Grupları Seç**’e tıklayın, daha sonra **Grupları seç** dikey penceresinde uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
 5.  Seçtiğiniz her grup için aşağıdaki ayarları yapılandırın:
-    - **Tür** - Uygulamanın **Uygun** mu (son kullanıcılar uygulamayı Şirket Portalı’ndan indirebilirler) **Gerekli** mi (son kullanıcıların cihazlarında uygulama otomatik olarak yüklenir) olacağını seçin.
+    - **Tür** - Uygulamanın **Kullanılabilir** mi (son kullanıcılar uygulamayı Şirket Portalı’ndan indirebilirler) **Gerekli** mi (son kullanıcıların cihazlarında uygulama otomatik olarak yüklenir) olacağını seçin.
     - **Lisans türü** - **Kullanıcı lisanslama** veya **Cihaz lisanslama**’yı seçin.
 6.  İşiniz bittikten sonra **Kaydet**’i seçin.
 

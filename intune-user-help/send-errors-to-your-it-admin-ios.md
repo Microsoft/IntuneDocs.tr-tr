@@ -1,5 +1,5 @@
 ---
-title: "BT yöneticinize hataları gönderme | Microsoft Docs"
+title: "Şirketinizin destek birimine hata gönderme | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 12fe4702217ad180a94dcf4d79326dd6840a7839
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-errors-to-your-it-admin-for-issues-with-your-ios-device"></a>iOS cihazınızdaki sorunlar için BT yöneticinize hata gönderme
+# <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS cihazınızla ilgili sorunlar için şirketinizin destek birimine hata gönderme
 
-Şirket Portalı uygulamasını kullanırken iOS cihazınızda hata alırsanız, BT yöneticinizin sorunu gidermesine yardımcı olmak için bilgileri gönderebilirsiniz. Hata bilgilerini farklı yollarla gönderebilirsiniz:
+Şirket Portalı uygulamasını kullanırken iOS cihazınızda hata alırsanız, şirketinizin destek biriminin sorunu gidermesine yardımcı olmak için bilgi gönderebilirsiniz. Hata bilgilerini farklı yollarla gönderebilirsiniz:
 
 -   Hata uyarı iletilerinde **Rapor**’a dokunun.
 
@@ -32,4 +32,4 @@ ms.lasthandoff: 07/01/2017
 
 -   Şirket Portalı uygulamasında, cihazınızı sallayın ve ardından tanılama uyarısı görüntülendiğinde **Tanılama Raporu Gönder**’e dokunun. Cihazı salladığınızda uyarı görüntülenmezse **Ayarlar** > **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

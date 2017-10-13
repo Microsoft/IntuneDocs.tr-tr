@@ -1,6 +1,6 @@
 ---
 title: "Android’de Lookout for Work’ün bulduğu tehditleri çözümleme | Microsoft Docs"
-description: 
+description: "Android’de Lookout for Work tarafından bulunan bir tehdidi nasıl düzelteceğinizi öğrenin."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,13 +14,13 @@ ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f4f878f6cd46c4ded709d833c799bb2d310adeb9
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work’ün bulduğu bir tehdidi gidermeniz gerekiyor
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work tarafından bulunan bir tehdidi çözme
 
 Lookout for Work, cihazınızda potansiyel bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için sorunu düzeltmeniz gerekiyor. Gördüğünüz ileti şuna benzeyebilir:
 
@@ -34,7 +34,7 @@ Kayıtlı cihazınızda bir virüs veya başka bir güvenlik tehdidi varsa ve ş
 
 ![Şirket Portalı web sitesine bağlantı ile Lookout for Work hata iletisi](./media/mtd-go-to-device-management-portal-android.png)
 
-Sorunu düzeltmek için yönergeler göreceğiniz [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) gitmek için **cihaz yönetim portalına** dokunun.
+Sorunu düzeltmek için yönergeler göreceğiniz [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) gitmek için **cihaz yönetim portalına** dokunun.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Lookout for Work’ün tehdit olarak gördüğü bir uygulama örneği
 
@@ -44,4 +44,4 @@ Lookout for Work’ün tehdit olarak gördüğü bir uygulama yüklediyseniz aş
 
 Uygulamayı kaldırdıktan sonra şirket e-postanıza ve verilerinize hemen erişim elde edersiniz. Uygulamayı kaldırma isteğini yoksayarsanız, uygulamayı kaldırana kadar e-postanıza ve verilerinize erişiminizi kaybedersiniz.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

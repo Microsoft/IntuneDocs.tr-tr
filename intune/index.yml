@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 08/06/2017
+  ms.date: 10/07/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -68,12 +68,12 @@ sections:
             title: Intune Veri Ambarı’nda rapor oluşturma (önizleme)
             image:
               src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/'
-            title: '[Blog] Yeni rol tabanlı erişim denetimleri hakkında bilgi edinin'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/'
+            title: '[Blog] Intune Sertifika Bağlayıcısı’nı kullanarak verilen PFX sertifikaları'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/'
-            title: '[Blog] Intune hizmet durumunu anlama'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/'
+            title: '[Blog] MAM ile yönetilen ve MDM ile yönetilen uygulamalar arasında iletişim kurma'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
   - title: Videolar
@@ -128,6 +128,7 @@ sections:
       - type: list
         style: unordered
         items:
+          - html: '<a href="https://fasttrack.microsoft.com/ems">150''den fazla lisansa mı ihtiyacınız var? FastTrack avantajlarınızı kullanın</a>'
           - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">Enterprise Mobility and Security blogunu okuyun</a>'
           - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/">Intune destek blogunda yardım alın</a>'
           - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">UserVoice ile Intune hizmeti hakkında geri bildirimde bulunun</a>'

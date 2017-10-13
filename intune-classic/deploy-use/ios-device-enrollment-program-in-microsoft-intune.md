@@ -1,6 +1,6 @@
 ---
 title: "iOS cihazları için Apple DEP yönetimi"
-description: "Apple cihazlarını yönetmek için iOS Aygıt Kayıt Programı (DEP) aracılığıyla “uzaktan” satın alınmış iOS cihazlarını kaydeden bir kayıt profili dağıtın."
+description: "Apple cihazlarını yönetmek için iOS Aygıt Kayıt Programı (DEP) aracılığıyla uzaktan satın alınmış iOS cihazlarını kaydeden bir kayıt profili dağıtın."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,11 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 75d2a54f065e04b3f6c923dc4e83cfea498ead76
+ms.sourcegitcommit: c36f74323b57c9d9ef972322082923c449a1a74f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Şirkete ait Cihaz Kayıt Programı iOS cihazlarını kaydetme
 
@@ -28,7 +28,7 @@ Microsoft Intune, Aygıt Kayıt Programı (DEP) aracılığıyla “uzaktan” s
 
 >[!NOTE]
 >DEP kaydı, [cihaz kayıt yöneticisi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) yöntemiyle birlikte kullanılamaz.
->Ayrıca, kullanıcılar iOS cihazları kaydederse (ör. Şirket Portalı uygulamasını kullanarak) ve bu cihazların seri numaraları daha sonra içeri aktarılıp bunlara bir DEP profili atandıysa cihazın Intune kaydı kaldırılır.
+>Ayrıca, kullanıcıların iOS cihazları kaydetmeleri (yani Şirket Portalı uygulamasını kullanmaları) ve bu cihazların seri numaralarının daha sonra içeri aktarılıp bunlara bir DEP profili atanması halinde cihazın Intune kaydı kaldırılır.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Apple DEP yönetimini kullanarak iOS cihazlarını kaydetme önkoşulları
 

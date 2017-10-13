@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak Android cihazınızı sıfırlarsanız ne olur?
 
@@ -28,8 +28,8 @@ Android cihazınızı sıfırlamak için Şirket Portalı’nı kullandığını
 
 Samsung KNOX cihazınız varsa Şirket Portalı’ndan **cihaz kaldırma** seçeneğini kullanarak "seçmeli silme" yapabilirsiniz. Seçmeli temizleme yalnızca aşağıdakileri kaldırır:
 
-- BT yöneticinizin kullanımınıza sunduğu iş uygulamaları.
+- Şirketinizin destek biriminin kullanımınıza sunduğu iş uygulamaları.
 - E-posta, VPN ve Wi-Fi.
-- BT yöneticinizin bazı ayarları zorunlu tutma yetisi.
+- Şirketinizin destek biriminin bazı ayarları zorunlu tutma yetisi.
 
-Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

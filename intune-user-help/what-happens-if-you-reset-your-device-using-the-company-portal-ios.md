@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be7a0e7650e798babba66344e50abe7f958f1dda
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cf3c9d121f2e2578219137161a972d5d58255058
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak iOS cihazınızı sıfırlarsanız ne olur?
 
 iPhone veya iPad cihazınızı sıfırlamak için Şirket Portalı’nı kullandığınızda bazı kişisel bilgileriniz dahil olmak üzere cihazınızdaki bazı uygulamalar ve ayarlar silinebilir. Her cihazda ne olacağı, aşağıdaki listede açıklandığı gibi cihazı nasıl kullandığınıza bağlıdır.
 
-**Mobil cihazınızı BT yöneticiniz yönetir**
+**Şirketinizin destek birimi, mobil cihazınızı yönetiyor**
 
 -   Cihazınız artık Şirket Portalı’nda gösterilmez.
 
@@ -38,4 +38,4 @@ iPhone veya iPad cihazınızı sıfırlamak için Şirket Portalı’nı kulland
 
 -   Şirket e-posta hesabınız ve kayıtlı olmayan e-postalarınız silinir.
 
-Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

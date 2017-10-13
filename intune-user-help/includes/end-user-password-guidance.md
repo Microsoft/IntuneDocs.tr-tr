@@ -1,2 +1,2 @@
   > [!NOTE]
-  > Doğru yerlerde doğru parolaları kullandığınızdan emin olun. İş veya okul hesabı parolanız cihazınızda oturum açmak için kullandığınız paroladan farklı olabilir ve bir cihazın parolası diğer cihazla yanı olmayabilir. Parolalarınızla ilgili sorun yaşıyorsanız yardım için BT yöneticinize başvurun.
+  > Doğru yerlerde doğru parolaları kullandığınızdan emin olun. İş veya okul hesabı parolanız cihazınızda oturum açmak için kullandığınız paroladan farklı olabilir ve bir cihazın parolası diğer cihazla yanı olmayabilir. Parolalarınızla ilgili sorun yaşıyorsanız yardım için şirketinizin destek birimine başvurun.

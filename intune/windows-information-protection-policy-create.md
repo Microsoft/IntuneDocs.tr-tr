@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -143,7 +143,7 @@ WIP sessiz çalışarak uygunsuz veri paylaşımını, Geçersiz Kılma modunda 
 #### <a name="off-not-recommended"></a>Kapalı (önerilmez)
 WIP kapalıdır ve verilerinizin korunmasına veya denetlenmesine yardımcı olmaz.
 
-WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiketlenmiş dosyaların şifrelemesi çözülmeye çalışılır. WIP’yi tekrar açarsanız, daha önceki şifreleme ilkenizin otomatik olarak yeniden uygulanmadığını unutmayın.
+WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiketlenmiş dosyaların şifrelemesi çözülmeye çalışılır. WIP’yi tekrar açarsanız, daha önceki şifreleme ilkesinin otomatik olarak yeniden uygulanmadığını unutmayın.
 
 ### <a name="add-a-protection-mode"></a>Koruma modu ekleme
 
@@ -155,16 +155,13 @@ WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiket
 
 ### <a name="use-wip-learning"></a>WIP Öğrenme’yi kullanma
 
-1. Azure Panosuna gidin. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Azure Portalı’nı açın. **Diğer hizmetler**’i seçin. Metin kutusu filtresine **Intune** yazın.
 
-2. Soldaki menüden **Daha fazla hizmet**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
+3. **Intune** > **Mobil Uygulamalar**’ı seçin.
 
-3. **Intune**’u seçin, **Intune panosu** açılır; **Mobil Uygulamalar**’ı seçin.
-
-4. **İzleme** altında **WIP Öğrenme**’yi seçin. WIP Öğrenme tarafından günlüğe kaydedilmiş bilinmeyen uygulamalar görürsünüz.
-
-> [!IMPORTANT]
-> Uygulamaların WIP Öğrenme günlük raporunda görünmesini sağladıktan sonra bunları uygulama koruma ilkelerine alabilirsiniz.
+4. **Uygulama koruma durumu** > **Raporlar** > **Windows Bilgi Koruması öğrenme**’yi seçin.  
+ 
+    Uygulamaların WIP Öğrenme günlük raporunda görünmesini sağladıktan sonra bunları uygulama koruma ilkelerinize ekleyebilirsiniz.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>WIP uygulama koruma ilkenizi dağıtma
 
@@ -175,7 +172,7 @@ WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiket
 
 WIP uygulama koruma ilkenizi oluşturduktan sonra, bu ilkeyi MAM’yi kullanarak kuruluşunuza dağıtmanız gerekir.
 
-1.  **Uygulama ilkesi** dikey penceresinde, yeni oluşturduğunuz uygulama koruma ilkesini, **Kullanıcı grupları** > **Kullanıcı grubu ekle**’yi seçin.
+1.  **Uygulama ilkesi** dikey penceresinde, yeni oluşturduğunuz uygulama koruma ilkesini ve **Kullanıcı grupları** > **Kullanıcı grubu ekle**’yi seçin.
 
     Azure Active Directory’nizdeki tüm güvenlik gruplarından oluşan kullanıcı grupları listesi, **Kullanıcı grubu ekle** dikey penceresinde açılır.
 

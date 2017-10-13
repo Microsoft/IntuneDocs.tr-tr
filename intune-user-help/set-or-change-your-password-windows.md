@@ -14,20 +14,20 @@ ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a92a64cdb94376991dfe8bea2e928316201b566
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Doğru parola ile cihazınızı daha güvenli hale getirin
 
 E-posta ve belgeler gibi şirket kaynaklarına erişmek, insanların Windows cihazlarından her gün yapması gereken bir şeydir. Kuruluşunuz cihazınızın bunu güvenli bir şekilde yaptığından emin olmak ister. Cihazınızın bu kaynaklara güvenli bir şekilde eriştiğinden emin olmanın bir yolu, cihazların parola kullanmasını gerekli hale getirmektir. Bu parolalar, örneğin kilit ekranından cihazınıza erişmek için kullanılır.
 
-Windows cihazınız, BT yöneticinizin parola ilkesiyle uyumlu değilse sorunu kısaca açıklayan ve parolanızın gereksinimlere uymasını sağlamak için yapmanız gerekenleri anlatan bir ileti görürsünüz.
+Windows cihazınız, şirketinizin destek biriminin belirlediği parola ilkesiyle uyumlu değilse sorunu kısaca açıklayan ve parolanızın gereksinimlere uymasını sağlamak için yapmanız gerekenleri anlatan bir ileti görürsünüz.
 
 > [!Note]
-> BT yöneticiniz birden çok parola gereksinimi ayarlayabilir. Örneğin, parolanın belirli sayıda karakter içermesi veya sayılarla harflerin karışımından oluşması gerekebilir. Birden çok gereksinim ayarlanmış olabileceğinden, bu yönergelerde yalnızca parolanızı nasıl ayarlayacağınız veya değiştireceğiniz açıklanır. Mümkün olan tüm gereksinim bileşimleri açıklanmaz.
+> Şirketinizin destek birimi, birden çok parola gereksinimi ayarlayabilir. Örneğin, parolanın belirli sayıda karakter içermesi veya sayılarla harflerin karışımından oluşması gerekebilir. Birden çok gereksinim ayarlanmış olabileceğinden, bu yönergelerde yalnızca parolanızı nasıl ayarlayacağınız veya değiştireceğiniz açıklanır. Mümkün olan tüm gereksinim bileşimleri açıklanmaz.
 
 ## <a name="to-change-your-password-on-windows-phone-81"></a>Windows Phone 8.1’de parolanızı değiştirmek için
 
@@ -44,4 +44,4 @@ Windows cihazınız, BT yöneticinizin parola ilkesiyle uyumlu değilse sorunu k
 3. **Yeni parola** kutusuna yeni parolanızı girin ve **Parolayı onayla** kutusuna yeniden girin.
 4. **Bitti**’yi seçin.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

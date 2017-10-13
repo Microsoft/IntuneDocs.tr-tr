@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4fad2b78b8224fc1a90ad8c81d350917b17e3d57
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-code-integrity"></a>Kod Bütünlüğünü etkinleştirmeniz gerekiyor
 
@@ -29,8 +29,8 @@ Kuruluş bilgilerinizi kayıt altında tutma, farklı türde sorunları önlemek
 Sisteminizde Güvenli Önyükleme etkin bir şekilde kullanılıyorsa Kod Bütünlüğü otomatik olarak etkinleştirilir.
 
 > [!Tip]
-> Güvenli Önyükleme özelliğinin etkinleştirilmesi gelişmiş bir görevdir. Bu görevle ilgili yardım almak için BT yöneticinize başvurmanızı öneririz.
+> Güvenli Önyükleme özelliğinin etkinleştirilmesi gelişmiş bir görevdir. Bu görevle ilgili yardım almak için şirketinizin destek birimine başvurmanızı öneririz.
 
 Devam etme konusunda kendinize güveniyorsanız [Güvenli Önyüklemeyi Devre Dışı Bırakma](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) sayfasındaki “Güvenli Önyüklemeyi yeniden etkinleştirmek için” bölümüne bakarak Güvenli Önyüklemeyi kendi başınıza etkinleştirmeyi deneyebilirsiniz.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

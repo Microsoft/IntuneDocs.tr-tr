@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 cihazınızı Intune'a kaydetme
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Oturum aç](./media/W10-enroll-4-sign-in.png)
 
-İş veya okul e-postalarınıza, dosyalarınıza veya diğer verilerinize hâlâ erişemiyor musunuz? Erişim sağlamak için [hesabınızla ilgili sorun giderme adımlarını](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) uygulayın. Bu adımlar da işe yaramazsa, ek yardım için BT yöneticinizle iletişime geçmeniz gerekir.
+İş veya okul e-postalarınıza, dosyalarınıza veya diğer verilerinize hâlâ erişemiyor musunuz? Erişim sağlamak için [hesabınızla ilgili sorun giderme adımlarını](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) uygulayın. Bu adımlar da işe yaramazsa, ek yardım için şirketinizin destek birimiyle iletişime geçmeniz gerekir.
 
-BT yöneticinizden yardım almanın kolay yollarından biri, Şirket Portalı uygulamasındaki iletişim bilgilerini kullanmaktır. Bu uygulama sayesinde günlük işleriniz için önerilen uygulamaları da bulabilir ve indirebilirsiniz. Şirket Portalı uygulaması cihazınıza önceden yüklenmiş olabilir. Kontrol etmek için __Şirket Portalı__ uygulamasını __Tüm uygulamalar__ listesinde arayın.
+Şirketinizin destek biriminden yardım almanın kolay yollarından biri, Şirket Portalı uygulamasındaki iletişim bilgilerini kullanmaktır. Bu uygulama sayesinde günlük işleriniz için önerilen ve gereken uygulamaları da bulabilir ve indirebilirsiniz. Şirket Portalı uygulaması cihazınıza önceden yüklenmiş olabilir. Kontrol etmek için __Şirket Portalı__ uygulamasını __Tüm uygulamalar__ listesinde arayın.
 
 Uygulama listenizde Şirket Portalı’nı görmüyorsanız, yüklemek için aşağıdaki adımları izleyin.
 

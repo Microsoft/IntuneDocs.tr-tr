@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dda7108aedcc4d3878fe3743ee0b88b26fabbe6f
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="what-is-device-enrollment"></a>Cihaz kaydı nedir?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Cihazları kaydetme biçiminiz, cihaz türüne, sahipliğine ve size gereken yö
 ## <a name="overview-of-device-enrollment-methods"></a>Cihaz kayıt yöntemlerine genel bakış
 
 Aşağıdaki tabloda Intune kayıt yöntemlerine, özelliklerine ve aşağıda açıklanan gereksinimlerine genel bir bakış sunulur.
+
 **Gösterge**
 
 - **Sıfırlama gerekli** - Cihaz kayıt sırasında fabrika ayarlarına sıfırlanır.
@@ -79,18 +80,59 @@ Aşağıdaki tabloda Intune kayıt yöntemlerine, özelliklerine ve aşağıda a
 Cihaz kayıt yöneticisi (DEM), şirkete ait birden çok cihazı kaydetmek ve yönetmek için kullanılan özel bir kullanıcı hesabıdır. Yöneticiler Şirket Portalı’nı yükleyebilir ve kullanıcısı olmayan birçok cihazı kaydedebilir. [DEM](./device-enrollment-manager-enroll.md) hakkında daha fazla bilgi edinin.
 
 ### <a name="dep"></a>DEP
-Apple Aygıt Kayıt Programı (DEP) yönetimi, “havadan” ilke oluşturmanıza ve DEP ile satın alınan ve yönetilen iOS cihazlara dağıtmanıza olanak sağlar. Cihaz, kullanıcı cihazı ilk açtığında ve iOS Ayarlama Yardımcısı’nı çalıştırdığında kaydedilir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod aşağıdaki işlevlere olanak tanır:
+Apple Aygıt Kayıt Programı (DEP) yönetimi, “havadan” ilke oluşturmanıza ve DEP ile satın alınan ve yönetilen iOS cihazlara dağıtmanıza olanak sağlar. Cihaz, kullanıcı cihazı ilk açtığında ve iOS Ayarlama Yardımcısı’nı çalıştırdığında kaydedilir. Bu yöntem, iOS Denetimli modunu destekler ve bu mod, bir cihazın aşağıdaki işlevlerle yapılandırılmasına olanak tanır:
 
-  - Kilitli kayıt
-  - Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
+- Uygulama Kilidi (Tek Uygulama Modu) 
+- Genel HTTP Proxy’si 
+- Etkinleştirme Kilidini Atlama 
+- Otonom Tek Uygulama Modu 
+- Web İçeriği Filtresi 
+- Arka plan ve kilit ekranı ayarlama 
+- Uygulamaları Sessiz Gönderme 
+- Her Zaman Açık VPN 
+- Yönetilen uygulama yüklemesine özel olarak izin verme 
+- iBookstore 
+- iMessages 
+- Oyun Merkezi 
+- AirDrop 
+- AirPlay 
+- Konak eşleştirme 
+- Bulut Eşitleme 
+- Spotlight arama 
+- İletim 
+- Cihaz silme 
+- Kısıtlamalar kullanıcı arabirimi 
+- Kullanıcı arabirimine göre yapılandırma profili yüklemesi 
+- News 
+- Klavye kısayolları 
+- Geçiş kodu değişiklikleri 
+- Cihaz adı değişiklikleri 
+- Duvar kağıdı değişiklikleri 
+- Otomatik uygulama indirme 
+- Kurumsal uygulama güvenine yapılan değişiklikler 
+- Apple Music 
+- Posta bırakma 
+- Apple Watch ile eşleştirme 
+
+> [!NOTE]
+> Apple, 2018’de bazı ayarların yalnızca denetimli hale geleceğini doğruladı. Apple’ın bu ayarları yalnızca denetimli moduna aktarmasını beklemek yerine ayarları kullanırken, bu durumu göz önünde bulundurmanızı öneririz:
+> - Uygulama yükleme
+> - Uygulama kaldırma
+> - FaceTime
+> - Safari
+> - iTunes
+> - Müstehcen içerik
+> - iCloud belgeleri ve verileri
+> - Çok oyunculu oyun
+> - Oyun Merkezi Arkadaşları Ekleyin
 
 iOS DEP kaydı hakkında daha fazla bilgi edinin:
 
-- [iOS cihazlarının nasıl kaydedileceğini belirleme](enrollment-method-choose-ios.md)
+- [iOS cihazlarının nasıl kaydedileceğini belirleme](ios-enroll.md)
 - [Cihaz Kayıt Programı’nı kullanarak iOS cihazlarını kaydetme](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
-BT yöneticileri, şirkete ait tüm cihazları Kurulum Yardımcısı kullanarak el ile kaydetme işlemine hazırlamak için USB aracılığıyla Apple Configurator kullanır. BT yöneticisi bir kayıt profili oluşturur ve bunu Apple Configurator’a aktarır. Kullanıcılar cihazlarını aldığında, bu cihazları kaydetmek için Kurulum Yardımcısını çalıştırmaları istenir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod aşağıdaki özellikleri etkinleştirir:
+BT yöneticileri, şirkete ait tüm cihazları Kurulum Yardımcısı kullanarak el ile kaydetme işlemine hazırlamak için USB aracılığıyla Apple Configurator kullanır. BT yöneticisi bir kayıt profili oluşturur ve bunu Apple Configurator’a aktarır. Kullanıcılar cihazlarını aldığında, bu cihazları kaydetmek için Kurulum Yardımcısını çalıştırmaları istenir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod da aşağıdaki özellikleri etkinleştirir:
   - Kilitli kayıt
   - Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
 
