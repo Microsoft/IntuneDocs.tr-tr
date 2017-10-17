@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>İşleri halletmek için yönetilen cihazları kullanma
 Microsoft Intune, kuruluşların cihazları (akıllı telefonlar, tabletler ve bilgisayarlar gibi), uygulamaları ve e-posta gibi diğer şirket kaynaklarını yönetmesine olanak tanıyan bir yazılım parçasıdır. Bu yazılım, çalışanların hemen her yerden ve hemen her cihazdan çalışma bilgilerine erişmesini sağlarken, kurumsal bilgilerin güvenliğini korumaya da yardımcı olur.
@@ -33,8 +33,8 @@ Cihazlarınızı Intune ile yönetilmek üzere kaydettiğinizde, BT departmanın
 ## <a name="how-do-i-get-the-company-portal"></a>Şirket Portalı’nı nasıl alabilirim?
 Şirket Portalı’nı iki farklı yolla alabilirsiniz:
 
-- Cihazınıza Şirket Portalı uygulamasını yükleyerek. Normalde Şirket Portalı uygulamasını cihazınızda uygulama mağazasına giderek alabilirsiniz, ama BT yöneticiniz de Şirket Portalı uygulamasını sizin için yükleyebilir.
-- BT yöneticinizin kurduğu [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) giderek.
+- Cihazınıza Şirket Portalı uygulamasını yükleyerek. Normalde Şirket Portalı uygulamasını cihazınızda uygulama mağazasına giderek alabilirsiniz ancak şirketinizin destek birimi de Şirket Portalı uygulamasını sizin için yükleyebilir.
+- Şirketinizin destek biriminin ayarladığı [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) giderek.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Uygulamayla web sitesi arasındaki fark nedir?
 Şirket Portalı uygulamasıyla Şirket Portalı web sitesi arasında birkaç küçük fark vardır, ama aynı görevleri çoğunlukla her ikisinde de gerçekleştirebilirsiniz. Gerçekleştirebileceğiniz görevlerden bazıları:
@@ -54,9 +54,9 @@ Cihazlarınızı Intune ile yönetilmek üzere kaydettiğinizde, BT departmanın
 - [Şirket portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Şirket Portalı’na bir bilgisayar veya cihaz eklediğinizde ne olur?
-Şirket Portalı’na bir bilgisayar veya cihaz eklediğinizde bazı yazılımlar yüklenebilir ya da bir uygulama indirilebilir (cihaza bağlı olarak). Aynı zamanda, BT yöneticinize cihazınızdaki şirket bilgilerinin korunmasına yardımcı olmak için cihazınızı yönetme izni vermiş olursunuz.
+Şirket Portalı’na bir bilgisayar veya cihaz eklediğinizde bazı yazılımlar yüklenebilir ya da bir uygulama indirilebilir (cihaza bağlı olarak). Aynı zamanda, cihazınızdaki şirket bilgilerinin korunmasına yardımcı olmak için şirketinizin destek birimine cihazınızı yönetme izni vermiş olursunuz.
 
-BT yöneticinizin cihazınızda neleri görebileceğini, neleri göremeyeceğini öğrenmek için, kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
+Şirketinizin destek biriminin cihazınızda neleri görüp göremeyeceğini öğrenmek için, kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
 
 - [Android için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [iOS ve macOS için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -96,4 +96,4 @@ Microsoft, öncelikle sorunu yardım almadan düzeltmeyi denemenizi önerir. Int
 - [iOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-ios.md)
 - [Windows cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-windows.md)
 
-Yardım istemek için aşağıya bir yorum girebilirsiniz, ancak her kuruluşun gereksinimleri farklı olduğundan sorularınızı yanıtlamak her zaman mümkün olmayabilir. Yardım için BT yöneticinize başvurmak büyük ihtimalle sizi en hızlı ve alakalı yanıta götürür. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) ulaşabilirsiniz.
+Yardım istemek için aşağıya bir yorum girebilirsiniz, ancak her kuruluşun gereksinimleri farklı olduğundan sorularınızı yanıtlamak her zaman mümkün olmayabilir. Yardım için şirketinizin destek birimine başvurursanız, en hızlı ve ilgili yanıta ulaşmanız kolaylaşacaktır. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) ulaşabilirsiniz.

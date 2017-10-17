@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78f65a197be9017461b0480d4ead35c81f39a419
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 280de651037abcfa68e76f886adc07a749f7da7c
+ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
 
@@ -32,8 +32,8 @@ Bu konudaki bilgileri kullanarak iOS iş kolu uygulamalarını Intune’a ekleme
 
 ## <a name="step-1---specify-the-software-setup-file"></a>1. Adım - Yazılım kurulum dosyasını belirtme
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. Azure portalında oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
 4. **Mobil uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
@@ -49,24 +49,36 @@ Bu konudaki bilgileri kullanarak iOS iş kolu uygulamalarını Intune’a ekleme
 ## <a name="step-3---configure-app-information"></a>Adım 3 - Uygulama bilgilerini yapılandırma
 
 1. **Uygulama ekle** dikey penceresinde **Uygulama paketi**’ni seçin.
-2. **Uygulama bilgileri** dikey penceresinde aşağıdaki bilgileri yapılandırın. Seçtiğiniz uygulamaya bağlı olarak, dikey penceredeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
-    - **Ad** - Uygulamanın şirket portalında görüntülenecek olan adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa, uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
-    - **Açıklama** - Uygulama için bir açıklama girin. Bu, şirket portalında kullanıcılara görüntülenir.
+2. **Uygulama bilgileri** dikey penceresinde uygulamanızın ayrıntılarını ekleyin. Seçtiğiniz uygulamaya bağlı olarak, dikey penceredeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
+    - **Ad** - Şirket portalında görüntülenmek üzere bir uygulama adı girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa, uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
+    - **Açıklama** - Şirket portalında kullanıcılara görüntülenmek üzere bir uygulama açıklaması girin.
     - **Yayımcı** - Uygulamanın yayımcısının adını girin.
     - **Minimum İşletim Sistemi** - Listeden uygulamanın yüklenebileceği minimum işletim sistemi sürümünü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
-    - **Kategori** - Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Bu, kullanıcıların şirket portalına göz atarken uygulamaları daha kolay bulabilmesini sağlar.
+    - **Kategori** - Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Böylelikle, şirket portalına göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
     - **Bunu Şirket Portalı'nda öne çıkan uygulama olarak görüntüle** - Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
     - **Bilgi URL’si** - İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Gizlilik URL’si**- İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Geliştirici** - İsteğe bağlı olarak, uygulama geliştiricinin adını girin.
     - **Sahip** - İsteğe bağlı olarak, bu uygulamanın sahibi olarak **İK bölümü** gibi bir ad girin.
     - **Notlar** - Bu uygulamayla ilişkilendirmek isteyebileceğiniz notları girin.
-    - **Logo** - Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek olan simgedir.
+    - **Logo** - Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülen simgedir.
 3. İşiniz bittiğinde **Tamam**’ı seçin.
 
 ## <a name="step-4---finish-up"></a>Adım 4 - Bitirme
 
-1. **Uygulama ekle** dikey penceresinde, yapılandırdığınız bilgilerin doğru olduğunu doğrulayın.
+1. **Uygulama ekle** dikey penceresinde uygulama ayrıntılarınızı doğrulayın.
 2. Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
 
 Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
+
+## <a name="step-5---update-a-line-of-business-app"></a>5. Adım - Bir iş kolu uygulamasını güncelleştirme
+
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir. Artık seçtiğiniz gruplara bu uygulamayı atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
+
+Uygulamanızın özelliklerini ve atamasını izleme yolları hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Uygulama bilgilerini ve atamalarını izleme](apps-monitor.md).
+
+Intune’da uygulamanızın bağlamı hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Cihaz ve uygulama yaşam döngülerine genel bakış](introduction-device-app-lifecycles.md)

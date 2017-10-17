@@ -2,9 +2,9 @@
 title: "iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu"
 description: "iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini mobil uygulama yönetimi (MAM) biçiminde iOS uygulamanıza eklemenizi sağlar."
 keywords: 
-author: mtillman
+author: mattbriggs
 manager: angrobe
-ms.author: mtillman
+ms.author: mabriggs
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0485f7c93baec13c6e0a26f391f159006fa530ec
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: cc4ba554b498e3b41df5fb1051f1d7a0bd4fb89e
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -474,7 +474,7 @@ MAM'ı hedefleyen yapılandırma, bir uygulamanın Intune Uygulama SDK'sı arac�
 * Uygulama Yapılandırma Nesnesini almak için ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` öğesini çağırın.
 * ```IntuneMAMAppConfig``` nesnesinde uygun seçiciyi çağırın. Örneğin, uygulamanızın anahtarı bir dizeyse ```stringValueForKey``` veya ```allStringsForKey``` kullanmanız uygun olur. ```IntuneMAMAppConfig.h header``` dosyası, döndürülen değerlerden/hata koşullarından bahseder.
 
-Grafik API'sinin MAM'ı hedefleyen yapılandırma değerlerine göre özellikleri hakkında daha fazla bilgi için bkz. [MAM'ı Hedefleyen Yapılandırma Grafik API'si Başvurusu](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+Graph API'sinin MAM'ı hedefleyen yapılandırma değerlerine göre özellikleri hakkında daha fazla bilgi için bkz. [MAM'ı Hedefleyen Yapılandırma Graph API'si Başvurusu](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
 
 iOS'da MAM'ı hedefleyen bir uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi için [iOS için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios) konusunun MAM'ı hedefleyen uygulama yapılandırması hakkındaki bölümüne bakın.
 

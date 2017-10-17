@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 87704687947aee7c1169b36009ea1960bec37edd
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Android cihazınızı telekomünikasyon gider yönetimine kaydetme
 
@@ -30,7 +30,7 @@ Kuruluşunuz, veri ve ses planlarının kabul edilebilir sınırlar içinde kull
 
 Uygun seçeneği belirlediğinizde Google Play Mağazası’ndan [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) uygulamasını yüklemek için bir bildirim alırsınız. Datalert uygulaması kuruluşunuzun veri kullanımını ölçmesine yöneliktir. Kuruluşunuz iş veya okul kayıt seçeneğini yapılandırmışsa, iş veya okul hesabınızla oturum açmanız gerekir. Bu etkinleştirilmemişse, telefon numaranız gibi bilgiler sağlamanız ve Datalert hizmetine uygulamadan kaydolmak için bir kod kullanarak cihazınızı doğrulamanız gerekir.
 
-Devam etmek için ekranın sağ üst köşesindeki __ileri__ okuna dokunun. BT yöneticiniz oturum açmak için __Microsoft iş veya okul hesabı__ veya __telefon numaranızı__ kullanmanız gerektiğini söylemelidir.
+Devam etmek için ekranın sağ üst köşesindeki __ileri__ okuna dokunun. Şirketinizin destek birimi, oturum açmak için __Microsoft iş veya okul hesabı__ veya __telefon numaranızı__ kullanmanız gerektiğini size bildirmelidir.
 
   ![Datalert uygulamasının veri planınızdan en iyi şekilde faydalanmanızı nasıl sağlayacağına ilişkin kısa bir açıklamadan sonra sonraki ekrana geçmenizi belirten Datalert uygulaması hoş geldiniz ekranının ekran görüntüsü.](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -62,4 +62,4 @@ Devam etmek için ekranın sağ üst köşesindeki __ileri__ okuna dokunun. BT y
 
 Kaydolduktan sonra, veri kullanımınızı Datalert uygulamasında görmeye başlarsınız.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

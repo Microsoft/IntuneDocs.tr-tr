@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43737ac3c2a8e84f1909c0f0cfcf450937301872
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 635f99a0fd4857e9c0c2266371713c102ce37912
+ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Android uygulama koruma ilkesi ayarları
 Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -30,7 +30,7 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penc
 | Ayar | Nasıl kullanılır? | Varsayılan değer (veya değerler) |
 |------|------|------|
 | **Android yedeklemelerini engelle** | Bu uygulamanın iş veya okul verilerini **Android Yedekleme Hizmeti**’ne yedeklemesini engellemek için [Evet](https://developer.android.com/google/backup/index.html)’i, bu uygulamanın iş veya okul verilerini yedeklemesine izin vermek için **Hayır**’ı seçin.| Evet |
-| **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** | Hangi uygulamaların bu uygulamadan veri alabileceğini belirtin: <ul><li> **İlke ile yönetilen uygulamalar**: Yalnızca diğer ilkeyle yönetilen uygulamalara aktarım yapılmasına izin verilir.</li> <li>**Tüm uygulamalar**: Herhangi bir uygulamaya aktarıma izin verilir. </li> <li>**Hiçbiri**: İlkeyle yönetilen diğer uygulamalar da dahil olmak üzere hiçbir uygulamaya veri aktarmaya izin verilmez.</li></ul> <p>Intune’un veri aktarımı hedefi olarak izin verebileceği bazı muaf uygulamalar ve hizmetler vardır. Uygulama ve hizmetlerin tam listesi için bkz. [Veri aktarımı muafiyetleri](#Data-transfer-exemptions).| Tüm uygulamalar |
+| **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** | Hangi uygulamaların bu uygulamadan veri alabileceğini belirtin: <ul><li> **İlke ile yönetilen uygulamalar**: Yalnızca diğer ilkeyle yönetilen uygulamalara aktarım yapılmasına izin verilir.</li> <li>**Tüm uygulamalar**: Herhangi bir uygulamaya aktarıma izin verilir. </li> <li>**Hiçbiri**: İlkeyle yönetilen diğer uygulamalar da dahil olmak üzere hiçbir uygulamaya veri aktarmaya izin verilmez.</li></ul> <p>Intune’un veri aktarımı hedefi olarak izin verebileceği bazı muaf uygulamalar ve hizmetler vardır. Uygulama ve hizmetlerin tam listesi için bkz. [Veri aktarımı muafiyetleri](#Data-transfer-exemptions).<p>**Not:** Intune, şu anda Android Instant Apps özelliğini desteklemiyor. Intune, uygulamaya gelen veya uygulamadan giden tüm veri bağlantılarını engelleyecektir.  [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) hakkında daha fazla bilgi için Android Geliştirici belgelerine bakın.</p>| Tüm uygulamalar |
 | **Uygulamanın diğer uygulamalardan veri almasına izin ver** | Hangi uygulamaların bu uygulamaya veri aktarabileceğini belirtin: <ul><li>**İlke ile yönetilen uygulamalar**: Yalnızca diğer ilkeyle yönetilen uygulamalardan aktarım yapılmasına izin verilir.</li><li>**Tüm uygulamalar**: Herhangi bir uygulamadan veri aktarımına izin verilir.</li><li>**Hiçbiri**: İlkeyle yönetilen diğer uygulamalar da dahil olmak üzere hiçbir uygulamadan veri aktarmaya izin verilmez. </li></ul> <p>Intune’un veri aktarımı kaynağı olarak izin verebileceği bazı muaf uygulamalar ve hizmetler vardır. Uygulama ve hizmetlerin tam listesi için bkz. [Veri aktarımı muafiyetleri](#Data-transfer-exemptions). | Tüm uygulamalar |
 | **“Farklı Kaydet”i engelle** | Bu uygulamada Farklı Kaydet seçeneğinin kullanımını devre dışı bırakmak için **Evet**’i seçin. Farklı Kaydet’in kullanılmasına izin vermek istiyorsanız **Hayır** ’ı seçin. <p><br>**Şirket verilerinin kaydedilebileceği depolama hizmetlerini seçin** <br>Kullanıcılar seçili hizmetlere (OneDrive İş, SharePoint ve Yerel Depolama) kaydedebilir. Diğer tüm hizmetler engellenir.</p> | Hayır <br><br> 0 seçili |
 | **Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtlama** | Bu uygulamada kes, kopyala ve yapıştır eylemlerinin ne zaman kullanılabileceğini belirtin. Aşağıdakilerden birini seçin: <ul><li>**Engellendi**: Bu uygulama ve diğer herhangi bir uygulama arasında kesme, kopyalama ve yapıştırma eylemlerine izin verilmez.</li><li>**İlkeyle yönetilen uygulamalar**: Bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında kesme, kopyalama ve yapıştırma eylemlerine izin verilir.</li><li>**Yapıştırma seçeneğiyle ilke ile yönetilen**: Bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında kesme veya kopyalama eylemine izin verilir. Herhangi bir uygulamadan verilerin bu uygulamaya yapıştırılmasına izin verir.</li><li>**Herhangi bir uygulama**: Bu uygulamaya veya bu uygulamadan kesme, kopyalama ve yapıştırma eylemleriyle ilgili bir kısıtlama olmaz. | Herhangi bir uygulama |

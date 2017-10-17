@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a213a46066de4244df23d0cd532b5fb4596ede77
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3976327decf6b1850baed8e781609e458d375aa1
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı uzaktan kilitleme
 
@@ -28,7 +28,7 @@ Kazalar olabilir ve bazen cihazlar kaybolabilir. Cihazınız kaybolur veya çal�
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-Cihazınızın güvende olması için [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) Uzaktan Kilitleme seçeneğini kullanarak cihazınızı kilitleyebilirsiniz. Uzaktan Kilitleme şunlar için çalışır:
+Cihazınızın güvende olması için [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) Uzaktan Kilitleme seçeneğini kullanarak cihazınızı kilitleyebilirsiniz. Uzaktan Kilitleme şunlar için çalışır:
 
 * Android
 * iOS
@@ -38,7 +38,7 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](http://po
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Cihazınızı kilitlemek üzere Uzaktan Kilitleme’yi kullanmak için
 
-1.  [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
+1.  [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
 
   ![Giriş, Tüm Uygulamalar, Cihazlarım, Yardım Masası ve Oturumu Kapat düğmeleriyle ekranın sol tarafında genişletilmiş bir yan menü ile Şirket Portalı web sitesinin bir görüntüsü.](/media/iwp-expanded-sidebar.png)
 
@@ -61,8 +61,8 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](http://po
     * Sayfanın **Cihazlarım** bölümünde cihaz adını gösteren kutucuk.
 
 > [!Note]
-> "Uzaktan Kilitleme başarısız oldu" bildirimini görürseniz, birkaç dakika bekleyin ve cihazınızı kilitlemeyi yeniden deneyin. Yeniden denemek üzere başlattığınızda, durum tekrar "Uzaktan kilitleme bekliyor." olarak değişir. Yeniden deneme işe yaramazsa, BT yöneticinize ulaşmanız gerekir.
+> "Uzaktan Kilitleme başarısız oldu" bildirimini görürseniz, birkaç dakika bekleyin ve cihazınızı kilitlemeyi yeniden deneyin. Yeniden denemek üzere başlattığınızda, durum tekrar "Uzaktan kilitleme bekliyor." olarak değişir. Yeniden deneme işe yaramazsa, şirketinizin destek birimiyle iletişime geçmeniz gerekir.
 
 Cihazınızı bulursanız ve Uzaktan Kilitleme kullandıktan sonra onun kilidini açmak istiyorsanız, tek yapmanız gereken geçiş kodunu girmektir.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

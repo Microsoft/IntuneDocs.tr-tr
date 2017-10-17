@@ -14,15 +14,15 @@ ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7b4206d49731195dc08fed5e91942f6071789724
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d6b1addbc03664e5eeaff34eef3042503a1470e
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-device-in-intune"></a>Cihazınızı Intune’a kaydetme
 
-Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazınızı kaydedebilirsiniz. Cihazlarınızın kaydedilmesi kuruluşunuzda şirket verilerinin güvenli tutulabilmesini sağlar. Kayıt hakkında daha fazla bilgi edinmek ve BT yöneticinizin cihazınızda neleri görebileceğini, neleri göremeyeceğini öğrenmek için, bu konunun en altındaki bağlantıları gözden geçirin.
+Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazınızı kaydedebilirsiniz. Cihazlarınızın kaydedilmesi kuruluşunuzda şirket verilerinin güvenli tutulabilmesini sağlar. Kayıt hakkında daha fazla bilgi edinmek ve şirketinizin destek biriminin cihazınızda neleri görüp göremeyeceğini öğrenmek için bu konunun en altındaki bağlantıları gözden geçirin.
 
 Kayıt yönergelerini görmek için, kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
 

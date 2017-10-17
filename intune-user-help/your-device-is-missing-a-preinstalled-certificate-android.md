@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 63595e9905a220c326c315f5932379a9b743d3de
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 52070573560b798044c929b0fa9476cf1f7bbf89
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Android cihazınızda, genellikle telefonunuzda yüklü olarak gelen bir sertifika eksik
 
@@ -42,9 +42,9 @@ Bu sorunu [Digicert'in sertifika sayfasından](https://www.digicert.com/digicert
 
 5. Tarayıcınızı ve Şirket Portalı uygulamasını kapatın.
 
-6. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Şirket Portalı uygulamasını hâlâ kullanamıyorsanız, daha fazla yönerge için [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) sağlanan bilgileri kullanarak BT yöneticinize başvurun.
+6. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Şirket Portalı uygulamasını hala kullanamıyorsanız, daha fazla yönerge için [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) sağlanan bilgileri kullanarak şirketinizin destek birimine başvurun.
 
 >[!NOTE]
 > Bu sertifikayı yüklemek sorunu çözmezse ve farklı bir “eksik sertifika” hatası alırsanız, [eksik sertifikayı yüklemek için](your-device-is-missing-an-IT-required-certificate-android.md) ek adımlar uygulamanız gerekir.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

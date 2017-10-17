@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -29,7 +29,10 @@ Bu konu, Apple’ın [Aygıt Kayıt Programı (DEP)](https://deploy.apple.com) y
 
 DEP kaydını etkinleştirmek için Intune ve Apple DEP portallarını birlikte kullanmanız gerekir. Cihazlarınızı, Intune ile yönetilmek üzere atayabilmeniz için seri numaraları listesi veya sipariş numarası gereklidir. Kayıt sırasında cihazlara uygulanan ayarları içeren DEP kayıt profilleri oluşturun.
 
-DEP kaydının [cihaz kayıt yöneticisiyle](device-enrollment-manager-enroll.md) birlikte kullanılamayacağına dikkat edin.
+Bu arada, DEP kaydının [cihaz kayıt yöneticisiyle](device-enrollment-manager-enroll.md) birlikte kullanılamayacağına dikkat edin.
+
+## <a name="what-is-supervised-mode"></a>Denetimli mod nedir?
+Apple, iOS 5 sürümünde denetimli modu kullanıma sundu. Denetimli moddaki herhangi bir iOS cihaz, daha fazla denetimle yönetilebilir. O neden bu mod, özellikle şirkete ait cihazlar için kullanışlıdır. Intune, Apple Aygıt Kayıt Programı’nın (DEP) bir parçası olarak denetimli mod için cihazların yapılandırılmasını destekler. 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -77,7 +80,6 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
 5. **Ekle &lt;ServerName&gt;** iletişim kutusu açılır ve **Ortak Anahtarınızı Yükleyin** ifadesi yazar. **Dosya Seç…** öğesini seçin .pem dosyasını karşıya yükleyin ve ardından **İleri**'yi seçin.
 
-6.  **&lt;SunucuAdı&gt; Ekle** iletişim kutusunda **Sunucu Belirteciniz** bağlantısı gösterilir. Sunucu belirteci (.p7m) dosyasını bilgisayarınıza indirin ve ardından **Bitti**'yi seçin.
 
 7. **Dağıtım Programları** &gt; **Cihaz Kayıt Programı** &gt; **Cihazları Yönet**'e gidin.
 8. **Cihazları Şuna Göre Seç:** öğesinin altında cihazların nasıl tanımlanacağını belirtin:
@@ -114,10 +116,13 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
 4. Aşağıdaki profil ayarlarını yapılandırmak için **Cihaz Yönetim Ayarları**’nı seçin:
 
-  ![Yönetim modunu seçme işleminin ekran görüntüsü. Cihaz aşağıdaki ayarlara sahiptir: Denetimli, kilitli kayıt, eşleşmeye izin ver tümünü reddet olarak ayarlı. Apple Configurator Sertifikaları, yeni bir kayıt programı profili için devre dışıdır.](./media/enrollment-program-profile-mode.png)
-    - **Denetimli** - Daha fazla yönetim seçeneğini etkinleştiren ve varsayılan olarak Etkinleştirme Kilidi’ni devre dışı bırakan yönetim modu. Onay kutusunu boş bırakırsanız, sınırlı yönetim özelliklerine sahip olursunuz.
+  ![Yönetim modunu seçme işleminin ekran görüntüsü. Cihaz aşağıdaki ayarlara sahiptir: denetimli, kilitli kayıt, eşleşmeye izin ver tümünü reddet olarak ayarlı. Apple Configurator Sertifikaları, yeni bir kayıt programı profili için devre dışıdır.](./media/enrollment-program-profile-mode.png)
+    - **Denetimli** - Daha fazla yönetim seçeneğini etkinleştiren ve varsayılan olarak Etkinleştirme Kilidi’ni devre dışı bırakan yönetim modu. Onay kutusunu boş bırakırsanız, sınırlı yönetim özelliklerine sahip olursunuz. Microsoft, özellikle fazla sayıda iOS cihaz dağıtan kuruluşlar için denetimli modu etkinleştirme mekanizması olarak DEP’in kullanılmasını önerir.
 
-    - **Kilitli kayıt** - (Yönetim Modu = Denetimli seçimini gerektirir) Yönetim profilini kaldırmaya izin verebilecek iOS ayarlarını devre dışı bırakır. Onay kutusunu boş bırakırsanız, yönetim profilinin Ayarlar menüsünden kaldırılmasına izin verir. Cihazı kaydettikten sonra, cihaza fabrika sıfırlaması yapmadan bu ayarı değiştiremezsiniz.
+ > [!NOTE]
+ > Bir cihaz kaydedildikten sonra, Intune kullanarak cihazı denetimli mod için yapılandırmak mümkün olmayacaktır. Kayıt sonrasında denetimli modu etkinleştirmenin tek yolu, bir USB kablosuyla iOS cihazı bir Mac’e bağlamak ve Apple Configurator kullanmaktır. Böylece cihaz sıfırlanır ve denetimli mod için yapılandırılabilir. Bu konu hakkında daha fazla bilgi için [Apple Configurator belgelerine](http://help.apple.com/configurator/mac/2.3) bakın. Denetimli bir cihazın kilit ekranında “Bu iPhone, Contoso tarafından yönetilmektedir.” ifadesi ve **Ayarlar** > **Genel** > **Hakkında** bölümünde “Bu iPhone denetimlidir. Contoso, internet trafiğinizi izleyebilir ve cihazın konumunu belirleyebilir.” ifadesi yer alır.
+
+    - **Kilitli kayıt** - (Yönetim Modu = denetimli seçimini gerektirir) Yönetim profilini kaldırmaya izin verebilecek iOS ayarlarını devre dışı bırakır. Onay kutusunu boş bırakırsanız, yönetim profilinin Ayarlar menüsünden kaldırılmasına izin verir. Cihazı kaydettikten sonra, cihaza fabrika sıfırlaması yapmadan bu ayarı değiştiremezsiniz.
 
   - **Paylaşılan iPad’i etkinleştir** - Apple’ın Aygıt Kayıt Programı, paylaşılan iPad’i desteklemez.
 
@@ -146,6 +151,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
         - **Tanılama Verileri**
 
     **Kaydet**’i seçin.
+
 9. Profil ayarlarını kaydetmek için **Kayıt Profili Oluştur** dikey penceresinde **Oluştur**’u seçin. Kayıt profili, Apple Kayıt Programı Kayıt Profilleri listesinde görünür.
 
 ## <a name="sync-managed-devices"></a>Yönetilen cihazları eşitleme

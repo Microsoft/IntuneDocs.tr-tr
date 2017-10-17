@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32ce7f134d2774483023c090caa6ef2b4d422604
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 60776df3774d4f9ca7404ef04b1cc94536bcd164
+ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Windows Phone iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="step-1---specify-the-software-setup-file"></a>1. Adım - Yazılım kurulum dosyasını belirtme
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. Azure portalında oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
 4. **Mobil uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
@@ -66,4 +66,8 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
+Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir. Artık seçtiğiniz gruplara bu uygulamayı atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
+
+Uygulamanızın özelliklerini ve atamasını izleme yolları hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Uygulama bilgilerini ve atamalarını izleme](apps-monitor.md).
+
+Intune’da uygulamanızın bağlamı hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Cihaz ve uygulama yaşam döngülerine genel bakış](introduction-device-app-lifecycles.md)

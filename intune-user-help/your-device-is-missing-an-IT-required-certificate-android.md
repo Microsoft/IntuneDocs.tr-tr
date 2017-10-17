@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>Android cihazınızda, BT yöneticinizin gerekli kıldığı bir sertifika eksik
+# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android cihazınızda şirketinizin destek biriminin gerekli kıldığı bir sertifika eksik
 
-Cihazınız Intune’a kayıtlı değilse ve BT yöneticiniz tarafından gerekli kılınan bir sertifika cihazınızda bulunmuyorsa, Şirket Portalı uygulamasında oturum açamazsınız. Oturum açmaya çalıştığınızda şu iletiyi görürsünüz:
+Cihazınız Intune’a kayıtlı değilse ve şirketinizin destek birimi tarafından gerekli kılınan bir sertifika cihazınızda bulunmuyorsa, Şirket Portalı uygulamasında oturum açamazsınız. Oturum açmaya çalıştığınızda şu iletiyi görürsünüz:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -35,15 +35,15 @@ Bu sorunu düzeltmek ve gerekli sertifikayı almak için uygulamanız gereken ik
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Bir şirket veya okul bilgisayarına bakarak eksik sertifikayı belirleme
 
-1. Bir bilgisayarda Internet Explorer’ı açın. Bu amaçla kullanabileceğiniz bir bilgisayarınız yoksa, BT yöneticinize başvurun. BT yöneticinizin iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın.
+1. Bir bilgisayarda Internet Explorer’ı açın. Bu amaçla kullanabileceğiniz bir bilgisayarınız yoksa, şirketinizin destek birimine başvurun. Şirketinizin destek biriminin iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) bakın.
 
-2. [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) gidin ve iş veya okul kimlik bilgilerinizle oturum açın.
+2. [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) gidin ve iş veya okul kimlik bilgilerinizle oturum açın.
 
 3. Tarayıcı adres çubuğunun sağ ucunda, aşağıdaki ekran görüntüsünde gösterildiği gibi asma kilide benzeyen simgeyi seçin.
 
     ![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-    Asma kilit simgesini görmüyorsanız, durun ve BT yöneticinize başvurun. Kilit simgesi güvenli oturum açtığınız anlamına gelir; dolayısıyla bu simgeyi görmüyorsanız devam etmemelisiniz.
+    Asma kilit simgesini görmüyorsanız, devam etmeyin ve şirketinizin destek birimine başvurun. Kilit simgesi güvenli oturum açtığınız anlamına gelir; dolayısıyla bu simgeyi görmüyorsanız devam etmemelisiniz.
 
 4. **Sertifikaları görüntüle**’yi seçin.
 
@@ -67,6 +67,6 @@ Bu sorunu düzeltmek ve gerekli sertifikayı almak için uygulamanız gereken ik
 
 6. Şirket Portalı uygulamasını kapatın.
 
-7. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin.
+7. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Yardıma ihtiyacınız olursa şirketinizin destek birimiyle iletişime geçin.
 
-Az önce gösterilenle aynı "eksik sertifika" iletisini görüyorsanız ve yordamı zaten izlediyseniz, büyük olasılıkla BT yöneticinizin yüklemenize yardımcı olması gereken bir sertifika daha vardır. Yardım için [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) bulunan iletişim bilgilerini kullanarak BT yöneticinize başvurun.
+Önceki gösterilenle aynı “eksik sertifika” iletisini görüyorsanız ve yordamı zaten izlediyseniz, büyük olasılıkla şirketinizin destek biriminin yüklemenize yardımcı olması gereken bir sertifika daha vardır. Yardım için [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) bulunan iletişim bilgilerini kullanarak şirketinizin destek birimine başvurun.

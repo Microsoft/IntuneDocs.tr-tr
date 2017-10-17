@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 075435a190fba28d548b1fa54ba7bafeec3ba217
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c75d7bee46f87bf171d105b6ebbf1ec0636e32df
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Android cihazınızın Intune kaydını sildiğinizde ne olur?
 
 Android cihazınızın Intune kaydını sildiğinizde:
 
--   BT yöneticiniz artık cihazı yönetmez.
+-   Şirketinizin destek birimi, artık mobil cihazınızı yönetmiyor.
 
 -   Şirket verilerine ve kaynaklarına erişimi kaybedersiniz.
 
@@ -40,4 +40,4 @@ Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve c
 
 Kaydın nasıl silineceği hakkında yönergeler için bkz. [Şirket Portalı uygulamasını kullanarak cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md).
 
-Yardıma mı ihtiyacınız var? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.
+Yardıma mı ihtiyacınız var? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.

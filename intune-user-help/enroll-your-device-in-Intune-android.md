@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/11/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 621468db51e7e6172d142501a4637794e4cb57b8
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android cihazınızı Intune’a kaydetme
 
@@ -30,21 +30,19 @@ ms.lasthandoff: 09/14/2017
 
 Bu kayıt yönergeleri, yerel ve Samsung KNOX Android cihazlara yöneliktir. Samsung KNOX, bazı Samsung cihazlarının yerel Android tarafından sağlanan korumanın dışında ek koruma sağlamak için kullandığı bir güvenlik türüdür. Samsung KNOX cihazınız olup olmadığını denetlemek için **Ayarlar** > **Telefon hakkında** kısmına gidin. Bu listede "KNOX sürümü" ifadesini görmüyorsanız yerel bir Android cihazına sahipsinizdir.
 
-Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi şekilde açıklayan bir kategoriyi seçmeniz istenebilir. BT yöneticiniz bu kategoriyi erişiminiz olan uygulamaları denetlemek için kullanır.
-
-Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yöneticinize kayıt hataları gönderebilirsiniz](send-enrollment-errors-to-your-it-admin-android.md).
+Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi şekilde açıklayan bir kategoriyi seçmeniz istenebilir. Şirketinizin destek birimi, erişiminiz olan uygulamaları denetlemek için bu kategoriyi kullanır.
 
 **Android cihazınızı kaydetmek için:**
 
 1.  [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’den ücretsiz Intune Şirket Portalı uygulamasını yükleyin.
 
-2.  Microsoft Intune Şirket Portalı uygulamasını açın.
+2.  Şirket Portalı uygulamasını açın.
 
 3.  Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve ardından iş veya okul hesabınızla oturum açın.
 
     ![Kullanıcıdan gerekli iş veya okul hesabıyla oturum açmasını isteyen Android için Şirket Portalı uygulaması hoş geldiniz ekranı. Microsoft hesapları ve diğer kişisel hesapların kabul edilmediği konusunda da uyarmaktadır.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  BT yöneticiniz şirket hüküm ve koşullarını ayarladıysa, koşulları kabul etmek için **KABUL ET**’e dokunun. Kullanmakta olduğunuz Android sürümüne bağlı olarak bu ekran aşağıdaki görüntüden biraz farklı olabilir.
+4.  Şirketinizin destek birimi şirket hüküm ve koşulları ayarladıysa, koşulları kabul etmek için **KABUL ET**’e dokunun. Kullanmakta olduğunuz Android sürümüne bağlı olarak bu ekran aşağıdaki görüntüden biraz farklı olabilir.
 
     ![android-şirket-portalı-oturum-açma](./media/and-enroll-3-accept-terms.png)
 
@@ -52,28 +50,24 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     ![android-şirket-portalı-oturum-açma](./media/and-enroll-2-cp-sign-in.png)
 
-6.  **Şirket Erişimi Kurulumu** ekranında **BAŞLA**’ya dokunun.
+6.  **Şirket Erişimi Kurulumu** ekranında, **DEVAM**’a dokunun.
 
-    ![Şirket erişimi kurulum ekranı](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Şirket erişimi kurulum ekranı](/intune/media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > Sarı üçgenler herhangi bir hata olduğu anlamına gelmez. Bu simgeler, kayıt işleminde hala tamamlanması gereken adımlar olduğunu gösterir.
 
-7. **Cihaz yönetiminin faydaları** ekranında, cihazınızı kaydettiğinizde neler yapabileceğinizi okuyun ve sonra **DEVAM**’a dokunun.
+7.  Şirketinizin destek biriminin cihazınızda neleri görüp göremeyeceğini içeren listeyi gözden geçirin ve ardından **DEVAM**’a dokunun.
 
-    ![Cihaz yönetiminin faydaları ekranı](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Gizlilik ayarları](/intune/media/android_cp_enroll_02_after_1710.png)
 
-8.  BT yöneticinizin cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirip **DEVAM**’a dokunun.
+9.  **Sırada ne var?** ekranında, kayıt sırasında ne olduğunu okuyun ve **KAYDET**’e dokunun.
 
-    ![Gizlilik ayarları](./media/and-enroll-4c-we-care-privacy.png)
-
-9.  **Sıradaki** ekranında kayıt sırasında ne olduğunu okuyun ve ardından **KAYDET**’e dokunun.
-
-    ![Sıradaki ekranı](./media/and-enroll-4d-what-comes-next.png)
+    ![Sıradaki ekranı](/intune/media/android_cp_enroll_03_after_1710.png)
 
 10.  Android 6.0 veya üzeri kullanıyorsanız, bu adımı uygulayın. Aksi halde, sonraki adıma geçin.
 
-    BT yöneticiniz belirli ilkeleri ayarladıysa, aşağıdaki iletileri görebilirsiniz:
+    Şirketinizin destek birimi belirli ilkeler ayarladıysa, aşağıdaki iletileri görebilirsiniz:
     -   **Şirket Portalı’nın telefon çağrıları yapmasına ve çağrıları yönetmesine izin verilsin mi?**
 
         ![android-şirket-portalı-oturum-açma](./media/and-enroll-3a-allow-phone-access.png)
@@ -96,9 +90,9 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 
     Cihaz yöneticisi rolü, Şirket Portalı’na cihazınızı yönetmesi için gereken roldür. Yöneticinizin bazı öğeleri (ekranınızın kilidini açmayı kaç kez denediğiniz gibi) görmesine ve bazı önlemler almasına olanak tanır.
 
-    Anımsanması gereken önemli nokta, bunların güvenlik adına alınan önlemler olduğudur. BT yöneticiniz gizliliğinizi ihlal etmeye ve hiç nedensiz bilgilerinizi silmeye çalışmaz; ancak şirket verilerinin güvenlik altında olduğundan emin olmak ister.
+    Anımsanması gereken önemli nokta, bunların güvenlik adına alınan önlemler olduğudur. Şirketinizin destek birimi gizliliğinizi ihlal etmeye ve hiç nedensiz bilgilerinizi silmeye çalışmaz; ancak şirket verilerinin güvenlik altında olduğundan emin olmak ister.
 
-    Bu ileti Microsoft’un denetiminde değildir ve iletide kullanılan ifadenin biraz sert göründüğünün farkındayız. Şirket Portalı’nın yalnızca kuruluşunuzla ilgili olan kısıtlamaları ve erişimi göstermesinin bir yolu yoktur. Bunların tümü, bu ekranda aynı anda verilir. Kendi kuruluşunuzun kullanımına özgü sorularınız varsa, daha fazla bilgi edinmek için [Şirket Portalı web sitesindeki](http://portal.manage.microsoft.com) iletişim bilgilerini kullanarak BT yöneticinizle bağlantı kurun.
+    Bu ileti Microsoft’un denetiminde değildir ve iletide kullanılan ifadenin biraz sert göründüğünün farkındayız. Şirket Portalı’nın yalnızca kuruluşunuzla ilgili olan kısıtlamaları ve erişimi göstermesinin bir yolu yoktur. Bunların tümü, bu ekranda aynı anda verilir. Kendi kuruluşunuzun kullanımına özgü sorularınız varsa, daha fazla bilgi edinmek için [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com) iletişim bilgilerini kullanarak şirketinizin destek birimiyle bağlantı kurun.
 
 12.  Yönergeleri izleyerek PIN’i veya parolayı girin. Bu cihazda zaten bir PIN veya parola ayarladıysanız, bu ekranı görmezsiniz ya da yeni bir PIN veya parola girmeniz gerekmez.
 
@@ -133,4 +127,6 @@ Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [BT yön
 > [!Note]
 > Kuruluşunuzda telekomünikasyon gider yönetimi yazılımı kullanılıyorsa, cihazınız tam olarak kaydedilmeden önce tamamlamanız gereken ek birkaç adım vardır. Daha fazla bilgiyi [burada](enroll-your-device-with-telecom-expense-management-android.md) bulabilirsiniz.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.
+Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [şirketinizin destek birimine kayıt hataları gönderebilirsiniz](send-enrollment-errors-to-your-it-admin-android.md).
+
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.

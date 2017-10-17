@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0ac0d1fd2f618339f847201f333d3f32561ca6b1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f2e11a7fbe226932206f6946ef0603307e76c69c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2017"></a>Microsoft Intune için erken sürüm - Eylül 2017
 
@@ -184,6 +184,14 @@ Bu durum, Intune hizmeti ile yönetilen Windows Phone 8.1 cihazlar üzerinde do�
 
 
 ## <a name="intune-apps"></a>Intune uygulamaları
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Şirket Portalı web sitesine arama iyileştirmeleri <!--1331697-->
+[Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) başlayarak uygulama arama becerilerimizi iyileştiriyoruz. Artık aramalar, Ad ve Açıklama alanlarına ek olarak uygulama kategorilerinde de gerçekleştirilecek. Varsayılan olarak sonuçlar, azalan ilgi düzeyine göre sıralanacak. 
+
+Şirket Portalı web sitesi, iOS için Şirket Portalı uygulamasının da bir parçası olarak kullanıldığı için bu değişikliği iOS kullanıcıları da alacaktır. Android ve Windows için Şirket Portalı uygulamaları, gelecek aylar içerisinde benzer güncelleştirmeler alacaktır. 
+
+Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıyoruz, bu nedenle lütfen Şirket Portalı web sitesinin en altında bulunan “Geri Bildirim” bağlantısını kullanarak bizi konuyla ilgili bilgilendirin.
+
 ### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>Windows 10 için Şirket Portalı uygulamasına yenileme eylemi eklendi <!--1132468-->
 Windows 10 için Şirket Portalı uygulaması, mobil cihazlarda aşağı çekerek veya masaüstü cihazlarda F5’e basarak kullanıcılara uygulamadaki verileri yenileme imkanı sunacak.
 

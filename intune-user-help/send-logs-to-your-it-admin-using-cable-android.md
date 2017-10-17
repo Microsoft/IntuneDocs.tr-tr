@@ -1,5 +1,5 @@
 ---
-title: "Günlükleri USB kablosu kullanarak BT yöneticinize gönderme | Microsoft Docs"
+title: "USB kablosu kullanarak günlükleri şirketinizin destek birimine gönderme | Microsoft Docs"
 description: "USB kablosu kullanarak veri günlüklerini gönderme"
 keywords: 
 author: barlanmsft
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Günlükleri USB kablosu kullanarak BT yöneticinize gönderme
+# <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>USB kablosu kullanarak günlükleri şirketinizin destek birimine gönderme
 
-Android cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsanız BT yöneticinizin sorunu gidermesine yardımcı olmak için bilgileri e-posta ile gönderebilirsiniz. Bu bilgiler, cihazınızda _tanılama günlüğü_ adlı özel bir belgede tutulur.
+Android cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsanız, şirketinizin destek biriminin sorunu gidermesine yardımcı olmak için bilgileri e-posta ile gönderebilirsiniz. Bu bilgiler, cihazınızda _tanılama günlüğü_ adlı özel bir belgede tutulur.
 
 > [!Note]
-> Başlamadan önce, BT yöneticinizin e-posta adresini bildiğinizden emin olun. Bu e-posta adresini [Şirket Portalı web sitesinde](http://portal.manage.microsoft.com) veya Şirket Portalı uygulamanızda bulabilirsiniz.
+> Başlamadan önce, şirketinizin destek biriminin e-posta adresini bildiğinizden emin olun. Bu e-posta adresini [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) veya Şirket Portalı uygulamanızda bulabilirsiniz.
 
 1.  Hata ekranında **Bilgi Gönder**’e dokunun. Günlükleri göndermek için hangi yöntemi kullanmak istediğinizi soran bir ileti gördüğünüzde, dosyaları cihazınıza kaydedecek seçeneği işaretleyin.
 
@@ -35,6 +35,6 @@ Android cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsan
 
 3.  Bilgisayarda, cihazınızın adına sahip bir dizini arayın. Söz konusu dizinde, **Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\** yolunu bulun.
 
-4.  Dosyaları seçin ve bir e-postaya ekleyin. Bu e-postayı BT yöneticinize gönderin.
+4.  Dosyaları seçin ve bir e-postaya ekleyin. Bu e-postayı şirketinizin destek birimine gönderin.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

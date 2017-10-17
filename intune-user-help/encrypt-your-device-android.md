@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
-ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
+ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Android cihazınızı şifreleme kullanarak koruma
 
 Bir cihazı şifrelediğinizde cihazdaki bilgileri, yetkisiz kişilerin erişmesini engelleyen koruyucu bir kod katmanı içine sarmalamış olursunuz. Bilgilerinizin güvende olduğundan emin olmak için kuruluşunuz; şirket dosyalarına, e-postalara veya verilere erişebilmeniz için Android cihazınızı şifrelemenizi istiyor.
 
 > [!Note]
-> BT yöneticiniz gerekli kılmışsa, şifrelemeden önce bir PIN veya parola ayarlamanız istenebilir.
+> Şirketinizin destek birimi gerekli kılmışsa, şifrelemeden önce bir PIN veya parola ayarlamanız istenebilir.
 
 Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 
@@ -52,7 +52,7 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 
 - Cihazınızın şarjının dolu olduğundan ve prize takılı olduğundan emin olun.
 - Cihazınızda bir PIN veya parola ayarladığınızdan emin olun.
-- Cihazınızda zaten bir PIN veya parola ayarladıysanız, daha güvenli hale getirmek için BT yöneticinizin yapmanızı şart koşabileceği aşağıdaki adımları deneyin. Menü adları, sahip olduğunuz Android cihazın türüne bağlı olarak adımlarda gördüğünüzden biraz farklı olabilir.
+- Cihazınızda zaten bir PIN veya parola ayarladıysanız, daha güvenli hale getirmek için şirketinizin destek biriminin yapmanızı şart koşabileceği aşağıdaki adımları deneyin. Menü adları, sahip olduğunuz Android cihazın türüne bağlı olarak adımlarda gördüğünüzden biraz farklı olabilir.
 
     1. **Ayarlar** > **Kilit Ekranı ve Güvenlik** > **Ekran kilidi**’ne gidin. Geçerli PIN veya parolanızı onaylayın.
 
@@ -66,4 +66,4 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 
     6. Cihazınızda Şirket Portalı uygulamasını açın ve **Uyumluluğu Denetle**’yi seçin.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.

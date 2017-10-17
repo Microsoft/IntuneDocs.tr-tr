@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,21 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f94a7cdb4feeea19527efec6486d09efcaca9b67
-ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
+ms.openlocfilehash: 6dba55de8d4c4551ff1e09bb0dffe797f0cf3190
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Android cihazınıza Symantec Endpoint Protection Mobile yüklemeniz gerekiyor
+# <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Android cihazınıza Symantec Endpoint Protection Mobile yükleme
 
-Şirketinizin destek bölümü, çalışmanıza erişebilmeniz için Symantec Endpoint Protection (SEP) Mobile uygulamasını yüklemenizi ister. Bu uygulama olası güvenlik tehditlerini bularak cihazınızın korunmasına yardımcı olur.
+Şirketiniz, çalışmanıza erişebilmeniz için Symantec Endpoint Protection (SEP) Mobile uygulamasını yüklemenizi istiyor. Bu uygulama olası güvenlik tehditlerini bularak cihazınızın korunmasına yardımcı olur.
 
 Yüklemeyle ilgili bir sorun yaşarsanız bu konunun sonundaki sorun giderme adımlarını deneyin.
 
-**Yapmanız gerekenler:**
+## <a name="what-you-need-to-do"></a>Yapmanız gerekenler
 
 1. Bildirimler çubuğunu açmak için ekranın üstünden aşağı doğru sürükleyin ve ardından **Gerekli uygulama – Play Store’dan Skycure’u Yükle**’ye tıklayın. Bunu ayrıca, __Uyumluluk Ayrıntıları__ altında Şirket Portalı uygulamasının içinde de bulabilirsiniz.
-
-  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
 2. Play Store’da SEP Mobile yükleme sayfasına yönlendirilirsiniz. SEP Mobile’ı yükleyin ve ardından uygulamanın cihazınıza erişmesine izin vermek için **KABUL ET**’e dokunun.
 
@@ -46,20 +44,16 @@ Yüklemeyle ilgili bir sorun yaşarsanız bu konunun sonundaki sorun giderme ad�
 
 8. SEP Mobile, cihazınızdaki güvenlik tehditlerini hemen denetlemeye başlar.
 
-  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
+  * SEP Mobile cihazınızda güvenlik tehdidi bulursa sorunun nasıl çözüleceğini gösteren yönergeler karşınıza çıkar.
 
-  SEP Mobile cihazınızda güvenlik tehdidi bulursa sorunun nasıl çözüleceğini gösteren yönergeler karşınıza çıkar.
+  * Herhangi bir tehdit bulunmazsa, üç tehdit türü de yeşil görünür.
 
-  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
-
-  Herhangi bir tehdit bulunmazsa, üç tehdit türü de yeşil görünür.
-
-    Şirket Portalı’ndaki **Cihaz Ayrıntıları** ekranı, artık şirketinizin güvenlik gereksinimlerine uyduğunuzu gösterir.
+    * Şirket Portalı’ndaki **Cihaz Ayrıntıları** ekranı, artık şirketinizin güvenlik gereksinimlerine uyduğunuzu gösterir.
 
     ![Cihazınız artık ilkelerle uyumludur](./media/mtd-device-now-compliant-android.png)
 
-**Yükleme çalışmazsa**
+## <a name="if-the-installation-doesnt-work"></a>Yükleme çalışmazsa
 
 Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle başarısız olabilir. Bu durumda SEP Mobile’ı [Play Store’dan el ile](https://play.google.com/store/apps/details?id=com.skycure.skycure) yüklemeyi deneyin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

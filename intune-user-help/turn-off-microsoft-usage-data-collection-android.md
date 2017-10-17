@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5c76ad3ea5a2fb7aafe7a40aa2e258a083c2d6c8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e7375e6670c15fe186f5e77876e7b46f9021ad9d
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>Microsoft kullanım verilerini toplamayı devre dışı bırakma
 
-Microsoft, ürünlerimiz ve hizmetlerimizle ilgili belirli verileri otomatik olarak toplar. Şirket Portalı uygulaması da dahil olmak üzere ürünlerimizin güvenilirliği ve performansını artırmak için bunu yaparız. Bu veriler gizli olsa da, bazı kullanıcılar bu toplama işleminden rahatsız olabilir. BT yöneticiniz bu verilerin toplanması üzerinde denetim sahibi değildir ve bu ayar için yaptığınız seçimi değiştiremez.
+Microsoft, ürünlerimiz ve hizmetlerimizle ilgili belirli verileri otomatik olarak toplar. Şirket Portalı uygulaması da dahil olmak üzere ürünlerimizin güvenilirliği ve performansını artırmak için bunu yaparız. Bu veriler gizli olsa da, bazı kullanıcılar bu toplama işleminden rahatsız olabilir. Şirketinizin destek birimi, bu verilerin toplanması konusunda denetim sahibi değildir ve bu ayar için yaptığınız seçimi değiştiremez.
 
 Android cihazınızda söz konusu verilerin toplanmasını devre dışı bırakmak istiyorsanız Şirket Portalı uygulamasındaki **Kullanım Verileri** ayarını açın.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

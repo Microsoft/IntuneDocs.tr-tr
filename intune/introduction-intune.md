@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 4946404a4bdb4968c47904549a581c9c39f6e9e0
-ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
+ms.openlocfilehash: 527a2a1578fcf9ef8e8f80c68091e582f8f2ebd2
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="what-is-intune"></a>Intune nedir?
 
@@ -37,7 +37,7 @@ Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerin
 * [Çalışanlarınıza şirketin sahip olduğu telefonları verme](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
 * [Tüm çalışanlara kendi cihazını getir (KCG) veya kişisel cihaz programı sunma](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
 * [Çalışanlarınızın yönetilmeyen genel bir bilgi noktasından Office 365'e güvenle erişmesini sağlama](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
-* [Görevlerde çalışanlarınıza sınırlı kullanımı olan paylaşılan tabletler verme](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
+* [Görev çalışanlarınıza sınırlı kullanımlı paylaşılan tabletler verme](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 
 ## <a name="how-does-intune-work"></a>Intune nasıl çalışır?

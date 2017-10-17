@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 56d1f2598c7489fdd09b1c27c6c76c5d80fb6e7e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 41f79bcccd4868f5d8a73926cd47d73c904c8df5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Windows cihazınızı şifreleme
 
-Şirket veya okul verilerinizi korumak için BT yöneticinizin Windows cihazınızı şifrelemenizi gerektirebilir. Windows Phone cihazınız varsa ve kaydettiyseniz, şifreleme gerekiyorsa cihazınız otomatik olarak şifrelenir.
+Şirketinizin destek birimi, şirket veya okul verilerinizi korumak için Windows cihazınızı şifrelemenizi gerektirebilir. Windows Phone cihazınız varsa ve kaydettiyseniz, şifreleme gerekiyorsa cihazınız otomatik olarak şifrelenir.
 
 Bir masaüstü cihazınız varsa, cihazı şifrelemek için aşağıdaki yönergeleri izleyin.
 
@@ -32,4 +32,4 @@ Bir masaüstü cihazınız varsa, cihazı şifrelemek için aşağıdaki yönerg
 
 2.  **BitLocker'ı Aç**'a tıklayın ve ardından sürücülerinizin her birini şifrelemek için gösterilen yönergeleri izleyin.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

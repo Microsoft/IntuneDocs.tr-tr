@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Şirket Portalı uygulamasını yüklerseniz ve Windows 10 cihazınızı Intune’a kaydederseniz ne olur?
 
@@ -34,22 +34,22 @@ ms.lasthandoff: 08/03/2017
 
 -   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz.
 
-Kayıt adımları için bkz. [Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune'a kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md). BT yöneticinizin cihazınızda neleri görebileceğini öğrenmek için bkz. [Cihazımı Intune’a kaydettiğimde BT yöneticim neleri görebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+Kayıt adımları için bkz. [Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune'a kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md). Şirketinizin destek biriminin cihazınızda neleri görebileceğini öğrenmek için bkz. [Cihazımı Intune’a kaydettiğimde şirketimin destek birimi neleri görebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 Bir bilgisayarı eklediğinizde:
 
--   BT yöneticinizin bilgisayarı yönetmesine olanak tanımak, böylelikle uygulamalar ve destek bilgileri gibi şirket kaynaklarına erişmenizi sağlamak için bilgisayarınıza yazılım yüklenir. BT yöneticiniz bu yazılımı otomatik olarak güncelleştirebilir.
+-   Şirketinizin destek biriminin bilgisayarı yönetmesine olanak tanımak ve uygulamalar ile destek bilgileri gibi şirket kaynaklarına erişmenizi sağlamak için bilgisayarınıza yazılım yüklenir. Şirketinizin destek birimi bu yazılımı otomatik olarak güncelleştirebilir.
 
 -   Intune Endpoint Protection bilgisayarınızda yüklü olabilir. Bu yazılım, bilgisayarı virüs ve kötü amaçlı yazılımlara karşı denetler.
 
--   BT yöneticiniz, kişisel olarak yüklediğiniz yazılımlar dahil olmak üzere bilgisayarda yüklü tüm yazılımların bir envanterini alabilir.
+-   Şirketinizin destek birimi, kişisel olarak yüklediğiniz yazılımlar dahil olmak üzere bilgisayarda yüklü tüm yazılımların bir envanterini alabilir.
 
 -   Hüküm ve koşulları kabul etmeniz gerekebilir.
 
--   BT yöneticiniz bilgisayarınızın sabit sürücüsünden veri toplayabilir veya onları silebilir. BT yöneticiniz sabit sürücünün tamamını da silebilir.
+-   Şirketinizin destek birimi bilgisayarınızın sabit sürücüsünden veri toplayabilir veya onları silebilir. Şirketinizin destek birimi sabit sürücünün tamamını da silebilir.
 
--   BT yöneticiniz aynı zamanda bilgisayarınıza uygulama ve güncelleştirme de yükleyebilir.
+-   Şirketinizin destek birimi aynı zamanda bilgisayarınıza uygulama ve güncelleştirme de yükleyebilir.
 
--   BT yöneticiniz bilgisayarınızda ilkelerin uygulanmasını şart koşabilir. Örneğin, bilgisayarda bir parola veya PIN ayarlamanız gerekebilir. BT yöneticiniz ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda bilgisayarınızı kilitleyebilir ve bilgisayarınızın sabit diskindeki tüm verileri silebilir.
+-   Şirketinizin destek birimi bilgisayarınızda ilkelerin uygulanmasını şart koşabilir. Örneğin, bilgisayarda bir parola veya PIN ayarlamanız gerekebilir. Şirketinizin destek birimi ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda bilgisayarınızı kilitleyebilir ve bilgisayarınızın sabit diskindeki tüm verileri silebilir.
 
-Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

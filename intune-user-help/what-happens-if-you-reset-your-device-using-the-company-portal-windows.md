@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak Windows cihazınızı sıfırlarsanız ne olur?
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 07/01/2017
 
 |Cihaz yapılandırması ve yönetimi|Cihaz türü|
 |---------------------------------------|---------------|
-|Mobil cihazınızı BT yöneticiniz yönetir|**Windows 10 ve Windows Phone 8.1**</br>Cihazınız artık şirket portalında görünmez ve şirket portalı, cihazı üreticinin varsayılan ayarlarına geri döndürmeyi dener. Kişisel verileriniz, uygulamalarınız ve ayarlarınız kaldırılır. <br /><br />**Windows 10 Mobile**</br>Cihazınızın kaydını silmenin tek yolu cihazı sıfırlamaktır.|
+|Şirketinizin destek birimi, mobil cihazınızı yönetiyor|**Windows 10 ve Windows Phone 8.1**</br>Cihazınız artık şirket portalında görünmez ve şirket portalı, cihazı üreticinin varsayılan ayarlarına geri döndürmeyi dener. Kişisel verileriniz, uygulamalarınız ve ayarlarınız kaldırılır. <br /><br />**Windows 10 Mobile**</br>Cihazınızın kaydını silmenin tek yolu cihazı sıfırlamaktır.|
 |Cihazınız yalnızca şirket e-postalarına erişebilir|**Windows Phone 8.1**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows 7 veya Windows Vista**<br />Windows 7 veya daha önceki bir sürümünü çalıştıran ve yalnızca e-postalar için kullanılan bir bilgisayarı sıfırlayamazsınız.<br /><br />**Windows 8.1 ve Windows 8**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız ve kaydedilmemiş e-postalarınız silinir.|
 |Masaüstü ve dizüstü bilgisayarlar|**Windows 8.1 ve Windows 8**<br />Windows 8 veya Windows 8.1 çalıştıran bilgisayarları yalnızca e-postalar için kullanıldıkları sürece sıfırlayamazsınız.<br /><br />**Windows 7 veya Windows Vista**<br />Windows 7 veya önceki bir sürümünü çalıştıran bilgisayarları sıfırlayamazsınız.|
 
-Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
