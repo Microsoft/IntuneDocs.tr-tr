@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c17389164df2f458ad5e3185f37a92791a83b129
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 778ba1445361a15c43edf0d09f154750beacd3ad
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>Android cihazınızın Intune kaydını silme
 
@@ -36,6 +36,6 @@ Cihazınızın Intune kaydını silmek ve Şirket Portalı uygulamasını kaldı
 
 3. Açılan bir onay penceresi Şirket Portalı'nı kaldırmak istediğinizden emin olup olmadığınızı sorar. Cihazınızın kaydını sildiğinizde neler olacağı hakkında bazı bilgiler verir. Bu iletiyi okuduktan sonra uygulamayı kaldırmak için **Tamam**'a dokunun. 
 
-  ![Eylem menüsünden "şirket portalını kaldır" seçeneği işaretlendikten sonra görünen onay iletişim kutusunun bir görüntüsü. İletişim kutusu, kullanıcıyı "şirket portalını kaldırdığınızda, cihazınız artık BT yöneticiniz tarafından yönetilmeyecek ve şirket verilerine, şirket uygulamalarına ve şirket e-postasına erişim kaldırılabilir" metniyle bilgilendirir. Ardından kullanıcıdan Şirket Portalı uygulamasını kaldırmak istediğini "Evet"'i seçerek onaylamasını ister.](./media/android_remove_cp_menu_confirmation_after_1705.png)
+  ![Eylem menüsünden "şirket portalını kaldır" seçeneği işaretlendikten sonra görünen onay iletişim kutusunun bir görüntüsü. İletişim kutusu, kullanıcıyı “şirket portalını kaldırdığınızda, cihazınız artık şirketinizin destek birimi tarafından yönetilmeyecek ve bu durumda cihazın şirket verilerine, şirket uygulamalarına ve şirket e-postasına erişimi kaldırılabilir” metniyle bilgilendirir. Ardından kullanıcıdan Şirket Portalı uygulamasını kaldırmak istediğini "Evet"'i seçerek onaylamasını ister.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

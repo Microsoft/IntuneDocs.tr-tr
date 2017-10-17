@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d376157af142567f5186fc58c5815221439edf96
-ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
+ms.openlocfilehash: d1cf33486f53b5b5a25b134a9dcf71f4e7e37b10
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft’un veri toplamasını devre dışı bırakma
 
-Microsoft, ürünlerimiz ve hizmetlerimizle ilgili belirli verileri otomatik olarak toplar. Şirket Portalı uygulaması da dahil olmak üzere ürünlerimizin güvenilirliği ve performansını artırmak için bunu yaparız. Bu veriler gizli olsa da, bazı kullanıcılar bu toplama işleminden rahatsız olabilir. BT yöneticiniz bu verilerin toplanması üzerinde denetim sahibi değildir ve bu ayar için yaptığınız seçimi değiştiremez.
+Microsoft, ürünlerimiz ve hizmetlerimizle ilgili belirli verileri otomatik olarak toplar. Şirket Portalı uygulaması da dahil olmak üzere ürünlerimizin güvenilirliği ve performansını artırmak için bunu yaparız. Bu veriler gizli olsa da, bazı kullanıcılar bu toplama işleminden rahatsız olabilir. Şirketinizin destek birimi, bu verilerin toplanması konusunda denetim sahibi değildir ve bu ayar için yaptığınız seçimi değiştiremez.
 
 iOS cihazınızda kullanım verilerinin toplanmasını devre dışı bırakmak için **Ayarlar**’a gidin, **Şirket Portalı**’na dokunun, sonra **Kullanım Verileri** ayarını kapatın. MacOS cihazlarında, **Şirket Portalı** menüsü > **Tercihler**'i açın, sonra **Microsoft'un kullanım verileri toplamasına izin ver**'in işaretini kaldırın.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

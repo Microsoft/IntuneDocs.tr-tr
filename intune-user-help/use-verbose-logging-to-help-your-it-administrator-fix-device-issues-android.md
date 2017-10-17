@@ -1,6 +1,6 @@
 ---
-title: "Ayrıntılı günlük kaydı ile BT yöneticinize cihaz sorunlarını çözmesine yardımcı olma | Microsoft Docs"
-description: "Ayrıntılı günlük kaydı kullanarak BT yöneticinizin cihaz sorunlarını çözmesine yardımcı olma"
+title: "Ayrıntılı günlük kaydı ile şirketinizin destek birimine cihaz sorunlarını çözmede yardımcı olma | Microsoft Docs"
+description: "Ayrıntılı günlük kaydı kullanarak şirketinizin destek birimine cihaz sorunlarını çözmede yardımcı olma"
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1756f05fed15bf50c5bb8981e62f87789f14daab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a8364778943171bb1a949f61ad696427ff914c99
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="help-your-it-admin-fix-device-issues-with-verbose-logging"></a>Ayrıntılı günlük kaydı ile BT yöneticinize cihaz sorunlarını çözmesine yardımcı olma
+# <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Ayrıntılı günlük kaydı ile şirketinizin destek birimine cihaz sorunlarını çözmede yardımcı olma
 
-Android cihazınız Intune’a kaydolduğunda, Şirket Portalı uygulamasının ve Intune tarafından yönetilen uygulamaların cihazınızda olup bitenler hakkında ayrıntılı günlükler kaydetmesini sağlamak için *ayrıntılı günlük kaydı* kullanabilirsiniz. Bu günlükler BT yöneticinizin, Şirket Portalı’nı veya Intune tarafından yönetilen bir uygulamayı kullanırken karşılaşabileceğiniz sorunları çözmesine yardımcı olur. Ayrıntılı günlük kaydı bilgisayarınızda varsayılan olarak etkindir ve BT yöneticinize gönderilen günlük kayıtları e-posta adresinizi içerir.
+Android cihazınız Intune’a kaydolduğunda, Şirket Portalı uygulamasının ve Intune tarafından yönetilen uygulamaların cihazınızda olup bitenler hakkında ayrıntılı günlükler kaydetmesini sağlamak için *ayrıntılı günlük kaydı* kullanabilirsiniz. Bu günlükler, şirketinizin destek birimine, Şirket Portalı’nı veya Intune tarafından yönetilen bir uygulamayı kullanırken karşılaşabileceğiniz sorunları çözmesi konusunda yardımcı olur. Ayrıntılı günlük kaydı bilgisayarınızda varsayılan olarak etkindir ve şirketinizin destek birimine gönderilen günlük kayıtları e-posta adresinizi içerir.
 
 Ayrıntılı günlük kaydı özelliğini açmak veya kapatmak için iş veya okul kimlik bilgilerinizi kullanarak Şirket Portalı uygulamasında oturum açın, **Ayarlar**’a dokunun ve sonra da **Ayrıntılı Günlük Kaydı**’nın yanındaki açık/kapalı düğmesine dokunun.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

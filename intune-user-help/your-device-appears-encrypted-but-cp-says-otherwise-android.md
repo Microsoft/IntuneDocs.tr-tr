@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 370fbcf8bb424030eb7b7dbaba66fa943f08aa42
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
+ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android cihazınızı şifreli gibi görünüyor, ancak Şirket Portalı aksini söylüyor
 
@@ -38,7 +38,7 @@ Belirli Android cihazları, cihazınızın güvenli olduğundan emin olmak için
 
 ### <a name="downgrade-your-version-of-android"></a>Android sürümünüzü düşürme
 
-Cihazınız Android 6.0+ sürümüne düşürme seçeneği sunuyorsa, bunu yapın. Cihazınızın sürümünü düşürmeyi denediğinizde veri kaybı riski vardır. Aksi takdirde, bu sorunu çözmek için BT yöneticinize başvurmanızı öneririz. BT yöneticinizin iletişim bilgilerini [Şirket Portalı web sitesinden](http://portal.manage.microsoft.com) alabilirsiniz.
+Cihazınız Android 6.0+ sürümüne düşürme seçeneği sunuyorsa, bunu yapın. Cihazınızın sürümünü düşürmeyi denediğinizde veri kaybı riski vardır. Aksi takdirde, bu sorunu çözmek için şirketinizin destek birimine başvurmanızı öneririz. Şirketinizin destek biriminin iletişim bilgilerini [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) alabilirsiniz.
 
 ## <a name="specific-manufacturer-issues"></a>Belirli üretici sorunları
 
@@ -54,12 +54,11 @@ Cihazınız Android 6.0+ sürümüne düşürme seçeneği sunuyorsa, bunu yapı
 Aşağıdaki cihazlardan birine sahipseniz cihazınızı Android’in en son sürümüne güncelleştirmediğiniz durumda bu sorunla karşılaşabilirsiniz. Bu cihaz güncelleştirmelerini yüklemek için **Ayarlar** > **Güncelleştirme** bölümüne gidin. 
 
 - [Huawei Honor 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
-- [Huawei P9](http://consumer.huawei.com/mobile-phones/p9/index.html)
+- [Huawei P9](http://consumer.huawei.com/en/phones/p9/)
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Bu sorunu gidermek için şu anda güncelleştirilebilir olmayan bilinen cihazlar
 
 Aşağıdaki cihazlarda bu sorun çözülememektedir. Şirket kaynaklarına erişmek için başka bir cihaz kullanmanız gerekebilir. 
 
 - [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [Huawei Mate 9](http://consumer.huawei.com/en/phones/mate9/)
 - [Xiaomi Mi akıllı telefonlar](https://xiaomi-mi.com/mi-smartphones/)

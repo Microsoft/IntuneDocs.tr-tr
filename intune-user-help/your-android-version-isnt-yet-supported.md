@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7568ce8f8a5cb648f1f250751f1a03c7c55a0fd2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6a2a14548a57e26fe322d0c28cb515e6590acb69
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>Android cihazınızın işletim sistemi sürümü henüz desteklenmiyor
 
-Teknolojinin hızla gelişmesiyle, cihazınız bazı durumlarda BT yöneticinizin sınama şansı edindiği cihazdan daha gelişmiş olabilir. En yeni Android sürümü, şirketinizde kullanılan bazı diğer araçlar ile çalışmayabilir.
+Teknolojinin hızla gelişmesiyle, cihazınız bazı durumlarda şirketinizin destek biriminin sınama şansı edindiği cihazdan daha gelişmiş olabilir. En yeni Android sürümü, şirketinizde kullanılan bazı diğer araçlar ile çalışmayabilir.
 
-Bu sorunu çözmek için BT yöneticinize başvurmanız gerekecektir. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu sorunu çözmek için şirketinizin destek birimine başvurmanız gerekecektir. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

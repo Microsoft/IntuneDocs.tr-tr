@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 393a1aa0f9e917d2a124f4deaa086f0369ded4ef
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-your-pin-or-password"></a>PIN veya parolanızı ayarlama
 
-BT yöneticiniz, iş veya okul verilerinize erişmek için Intune kullandığınızda Android cihazınızda bir PIN veya parola ayarlamanızı zorunlu tutabilir. Daha güvenli olması için PIN veya parolanızı daha uzun veya karmaşık hale getirmenizi gerekli kılan iletiler de görebilirsiniz. Bu geçiş kodları, örneğin kilit ekranından cihazınıza erişmek için kullanılır.
+Şirketinizin destek birimi, iş veya okul verilerinize erişmek için Intune kullandığınızda Android cihazınızda bir PIN veya parola ayarlamanızı gerekli hale getirebilir. Daha güvenli olması için PIN veya parolanızı daha uzun veya karmaşık hale getirmenizi gerekli kılan iletiler de görebilirsiniz. Bu geçiş kodları, örneğin kilit ekranından cihazınıza erişmek için kullanılır.
 
 Bir PIN veya parola ayarlamak için aşağıdaki adımları kullanabilirsiniz.
 
@@ -33,4 +33,4 @@ Bir PIN veya parola ayarlamak için aşağıdaki adımları kullanabilirsiniz.
 2.  Yeni parolanızı seçin ve onaylayın.
 
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

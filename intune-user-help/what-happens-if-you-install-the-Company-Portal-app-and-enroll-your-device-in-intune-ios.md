@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Şirket Portalı uygulamasını yüklerseniz ve iOS veya Mac OS X cihazınızı Intune’a kaydederseniz ne olur?
 
@@ -34,9 +34,9 @@ ms.lasthandoff: 07/01/2017
 
 -   Şirket e-posta hesabınızı otomatik olarak oluşturabilirsiniz.
 
-Cihazınızı Intune’a kaydettikten sonra, BT yöneticinize cihazınızdaki şirket bilgilerinin korunmasına yardımcı olmak için cihazınızı yönetme izni vermiş olursunuz.
+Cihazınızı Intune’a kaydettikten sonra, şirketinizin destek biriminin cihazınızdaki şirket bilgilerinin korumasına yardımcı olmak için onlara cihazınızı yönetme izni vermiş olursunuz.
 
-Cihazınız kaydolduğunda, BT yöneticiniz şunları yapabilir:
+Cihazınız kaydolduğunda, şirketinizin destek birimi şunları yapabilir:
 
 -   Cihazınız kaybolur veya çalınırsa, cihazı üretici varsayılan ayarlarına sıfırlayabilir.
 
@@ -62,4 +62,4 @@ Cihazınız kaydolduğunda, BT yöneticiniz şunları yapabilir:
 
 -   Dolaşım modundayken, cihazınızda otomatik dosya eşitlemesini etkinleştirebilir veya devre dışı bırakabilir. Otomatik dosya eşitlemesine izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
 
-Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

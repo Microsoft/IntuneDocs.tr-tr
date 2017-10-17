@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: b40801633a130ac79b0ae5b4e1669320c70909e2
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
@@ -48,4 +48,4 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişmek; işinizi y
 
 8. Mac’iniz yönetime kaydedilmeye başlar. Bu sırada bilgisayarınızın oturum açma bilgilerini sağlamanız istenebilir. Bu kayıt birkaç dakika sürebilir. Bu süre boyunca bilgisayarınızda başka şeyler yapabilirsiniz. Şirket Portalı Kurulumu tamamlandıktan sonra işiniz bittiğine dair bir ileti alırsınız.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. İletişim bilgilerine [Şirket Portalı web sitesinden](http://portal.manage.microsoft.com) ulaşabilirsiniz.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) ulaşabilirsiniz.

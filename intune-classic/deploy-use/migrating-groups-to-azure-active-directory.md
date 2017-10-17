@@ -11,12 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 3a71f2dc4507d59ea3c11fa034340b5e8535c3c4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 5eb6a72abd28b566b7588e56647787dc669706bc
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="a-new-way-of-using-groups-in-intune"></a>Intune'da grupları kullanmanın yeni bir yolu
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 09/15/2017
 Geri bildirimlerinizi aldık ve Microsoft Intune’da gruplarla çalışma konusunda bazı değişiklikler yapıyoruz.
 Tüm müşterilerimizin Intune gruplarını Azure Active Directory güvenlik gruplarına geçirme aşamasındayız.
 
-Bunun yararı, aynı grup deneyimini tüm Enterprise Mobility + Security ve Azure AD uygulamalarında kullanabilecek olmanızdır. Ayrıca, bu yeni işlevi genişletmek ve özelleştirmek için PowerShell ve Grafik API’si kullanmanız mümkün olacaktır.
+Bunun yararı, aynı grup deneyimini tüm Enterprise Mobility + Security ve Azure AD uygulamalarında kullanabilecek olmanızdır. Ayrıca, bu yeni işlevi genişletmek ve özelleştirmek için PowerShell ve Graph API’si kullanmanız mümkün olacaktır.
 
 Azure AD güvenlik grupları hem kullanıcılara hem de cihazlara tüm Intune dağıtımı türlerini destekler. Ayrıca, sağladığınız özniteliklere bağlı olarak otomatik güncelleştirilen Azure AD dinamik gruplarını kullanabilirsiniz. Örneğin, iOS 9 çalıştıran cihazlardan bir grup oluşturabilirsiniz. iOS 9 çalıştıran yeni bir cihaz kaydedildiğinde dinamik gruba otomatik olarak eklenir.
 

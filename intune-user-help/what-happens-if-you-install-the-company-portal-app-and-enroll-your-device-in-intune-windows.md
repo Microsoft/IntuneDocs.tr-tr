@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 926e09173918488d6beb1f0e3f725a0cff2971b4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Şirket Portalı uygulamasını yüklerseniz ve Windows cihazınızı Intune’a kaydederseniz ne olur?
 
-Şirket Portalı uygulamasını yüklediğinizde ve bu uygulamayı kullanarak bir Windows veya Windows Phone cihazı kaydettiğinizde, BT yöneticinize şirket veya okul verilerinin güvenliğini sağlamak üzere cihazınızı yönetme izni vermiş olursunuz. Windows 10’dan önceki işletim sistemlerini çalıştıran cihazlarda neler olacağı bu konuda açıklanmıştır. Windows 10 cihazlar için bkz. [ilgili konu](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Şirket Portalı uygulamasını yüklediğinizde ve bu uygulamayı kullanarak bir Windows veya Windows Phone cihazı kaydettiğinizde, şirketinizin destek birimine şirket veya okul verilerinin güvenliğini sağlamak üzere cihazınızı yönetme izni vermiş olursunuz. Windows 10’dan önceki işletim sistemlerini çalıştıran cihazlarda neler olacağı bu konuda açıklanmıştır. Windows 10 cihazlar için bkz. [ilgili konu](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Kayıttan sonra tüm Windows cihazlarına ne olur?
 Windows veya Windows Phone cihazınızı Intune’a kaydettiğinizde:
@@ -37,15 +37,15 @@ Windows veya Windows Phone cihazınızı Intune’a kaydettiğinizde:
 
 -   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz.
 
-Cihazınızı kaydettiğinizde, BT yöneticinize şu tür işlemleri yapma izni vermiş olursunuz:
+Cihazınızı kaydettiğinizde, şirketinizin destek birimine şu tür işlemleri yapma izni vermiş olursunuz:
 
 -   Cihazınızı üretici varsayılan ayarlarına geri döndürebilir. Cihaz çalındıysa veya kaybolduysa bu yararlıdır.
 
 -   Yalnızca şirketle ilgili dosyaları ve iş uygulamalarını kaldırabilir. *Kişisel ayarlarınız ve verileriniz kaldırılmaz.*
 
--   BT yöneticiniz, kişisel olarak yüklediğiniz yazılımlar dahil olmak üzere bilgisayarda yüklü olan tüm yazılımları görüntüleyebilir.
+-   Şirketinizin destek birimi, kişisel olarak yüklediğiniz yazılımlar dahil olmak üzere bilgisayarda yüklü olan tüm yazılımları görüntüleyebilir.
 
--   Şirket verilerini korumaya yardımcı olmak için cihazınızda parola veya PIN kullanmanızı zorunlu kılma gibi gereksinimler ayarlayabilir. BT yöneticiniz ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda cihazınızı kilitleyebilir.
+-   Şirket verilerini korumaya yardımcı olmak için cihazınızda parola veya PIN kullanmanızı zorunlu kılma gibi gereksinimler ayarlayabilir. Şirketinizin destek birimi ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda cihazınızı kilitleyebilir.
 
 -   Cihazınızın kaybolması veya çalınması durumunda şirket verilerinizin korunmasına yardımcı olmak için cihazınızdaki verileri şifrelemenizi isteyebilir.
 
@@ -55,22 +55,22 @@ Cihazınızı kaydettiğinizde, BT yöneticinize şu tür işlemleri yapma izni 
 
 ## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Kayıttan sonra tüm Windows bilgisayarlarına ne olur?
 
--  BT yöneticinizin bilgisayarı yönetmesine olanak tanımak, böylelikle uygulamalar ve destek bilgileri gibi şirket kaynaklarına erişmenizi sağlamak için bilgisayarınıza yazılım yüklenir. BT yöneticiniz bu yazılımı otomatik olarak güncelleştirebilir.
+-  Şirketinizin destek biriminin bilgisayarı yönetmesine olanak tanımak ve uygulamalar ile destek bilgileri gibi şirket kaynaklarına erişmenizi sağlamak için bilgisayarınıza yazılım yüklenir. Şirketinizin destek birimi bu yazılımı otomatik olarak güncelleştirebilir.
 
 -  Intune Endpoint Protection bilgisayarınızda yüklü olabilir. Bu yazılım, bilgisayarı virüs ve kötü amaçlı yazılımlara karşı denetler.
 
--  BT yöneticiniz, bilgisayarınızın sabit sürücüsünden veri toplayabilir veya onları silebilir.
+-  Şirketinizin destek birimi bilgisayarınızın sabit sürücüsünden veri toplayabilir veya onları silebilir.
 
--  BT yöneticiniz aynı zamanda bilgisayarınıza uygulama ve güncelleştirme de yükleyebilir.
+-  Şirketinizin destek birimi aynı zamanda bilgisayarınıza uygulama ve güncelleştirme de yükleyebilir.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Cihaz kaydından sonra her sekiz saatte bir ne olur?
 
 Yaklaşık her sekiz saatte bir, kayıtlı cihazlarda aşağıdakiler yapılır:
 
--   BT yöneticinizin kullanılabilir hale getirdiği ilke veya uygulama güncelleştirmeleri indirilir.
+-   Şirketinizin destek biriminin kullanılabilir hale getirdiği ilkeleri ve uygulama güncelleştirmelerini indirin.
 
 -   Tüm donanım envanteri güncelleştirmeleri gönderilir.
 
 -   Tüm şirket uygulaması envanteri güncelleştirmeleri gönderilir.
 
-Sorularınız varsa BT yöneticinizle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.

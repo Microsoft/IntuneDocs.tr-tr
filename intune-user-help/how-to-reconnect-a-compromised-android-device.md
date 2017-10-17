@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a51857a6e5ffd020888af6a7c0a3b85efa91fe20
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1d1447887f63edf9671fc954dbc69bfd7766ca73
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Ele geçirilen bir Android cihazı yeniden bağlama
 
-BT yöneticiniz kökü belirtilmiş bir cihaz kullandığınızı belirledi. "Köke erişildi" ifadesi, cihazın, güvenliği tehlikeye atabilecek ve şirketinizin kaynakları için tehdit oluşturabilecek şekilde işletim sistemine erişim için değiştirildiğini anlatır. Bu söz konusu olduğunda, cihazınız artık şirket kaynaklarına erişemez.
+Şirketinizin destek birimi, kökü belirtilmiş bir cihaz kullandığınızı saptadı. "Köke erişildi" ifadesi, cihazın, güvenliği tehlikeye atabilecek ve şirketinizin kaynakları için tehdit oluşturabilecek şekilde işletim sistemine erişim için değiştirildiğini anlatır. Bu söz konusu olduğunda, cihazınız artık şirket kaynaklarına erişemez.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.

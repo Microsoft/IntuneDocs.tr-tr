@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator ile iOS cihazlarını kaydetme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) kullanarak iOS cihazlarının kaydedilmesini destekler. Apple Configurator ile kaydetme işlemi, kurumsal kaydı ayarlamak için her iOS cihazını bir Mac bilgisayara USB ile bağlamanızı gerektirir. Apple Configurator ile Intune'a cihazları iki yolla kaydedebilirsiniz:
+Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) kullanarak iOS cihazlarının kaydedilmesini destekler. Apple Configurator ile kaydetme işlemi, kurumsal kaydı ayarlamak için her iOS cihazını bir Mac bilgisayara USB ile bağlamanızı gerektirir. Apple Configurator ile Intune'a cihazları iki yolla kaydedebilirsiniz:
 - **Kurulum Yardımcısı kaydı** - Cihazı fabrika ayarlarına sıfırlar ve Kurulum Yardımcısı sırasında kayda hazırlar.
 - **Doğrudan kayıt** - Cihazı fabrika ayarlarına sıfırlamaz ve iOS ayarları aracılığıyla kaydeder. Bu yöntem, yalnızca **kullanıcı benzeşimi olmayan** cihazları destekler.
 
@@ -38,7 +38,7 @@ Apple Configurator kayıt yöntemleri [cihaz kaydı yöneticisi](device-enrollme
 - [Apple MDM anında iletme sertifikası](apple-mdm-push-certificate-get.md)
 - Cihaz seri numaraları (yalnızca Kurulum Yardımcısı kaydı)
 - USB bağlantı kabloları
-- [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) çalıştıran Mac bilgisayar
+- [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344) çalıştıran macOS bilgisayar
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>Cihazlar için Apple Configurator profili oluşturma
 
@@ -69,7 +69,7 @@ Bir cihaz kayıt profili kayıt sırasında uygulanan ayarları tanımlar. Bu ay
 
 **Intune’a Apple Configurator seri numaralarını eklemek için**
 
-1. İki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. Seri numarasını sol sütuna, ayrıntıları sağ sütuna ekleyin. Liste için geçerli üst sınır 500 satırdır. Metin düzenleyicisinde .csv listesi aşağıdaki gibi görünür:
+1. İki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. Seri numarasını sol sütuna, ayrıntıları sağ sütuna ekleyin. Liste için geçerli üst sınır 5.000 satırdır. Metin düzenleyicisinde .csv listesi aşağıdaki gibi görünür:
 
     F7TLWCLBX196,cihaz ayrıntıları</br>
     DLXQPCWVGHMJ,cihaz ayrıntıları

@@ -15,21 +15,21 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Android cihazınızdaki yaygın sorunları çözme
 
-Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](http://portal.manage.microsoft.com) iletişim bilgilerini kullanarak BT yöneticinize ulaşmanızı öneririz.
+Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com) iletişim bilgilerini kullanarak şirketinizin destek birimine ulaşmanızı öneririz.
 
 - [Android cihazınızda uyumluluk denetimi](check-compliance-on-your-device-android.md)
-- [BT yöneticinizin cihaz sorunları gidermesine yardımcı olmak için Ayrıntılı Günlük Kaydı kullanma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [E-posta kullanarak BT yöneticinize günlük gönderme](send-logs-to-your-it-admin-by-email-android.md)
-- [Günlükleri USB kablosu kullanarak BT yöneticinize gönderme](send-logs-to-your-it-admin-using-cable-android.md)
-- [BT yöneticinize kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-admin-android.md)
+- [Ayrıntılı günlük kaydı kullanarak şirketinizin destek birimine cihaz sorunlarını çözmede yardımcı olma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [E-posta kullanarak günlükleri şirketinizin destek birimine gönderme](send-logs-to-your-it-admin-by-email-android.md)
+- [USB kablosu kullanarak günlükleri şirketinizin destek birimine gönderme](send-logs-to-your-it-admin-using-cable-android.md)
+- [Şirketinizin destek birimine kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-admin-android.md)
 - [Android cihazınızı güncelleştirmeniz gerekiyor](you-need-to-update-your-android-device.md)
 - [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](your-android-version-isnt-yet-supported.md)
 - [Cihazınıza kök erişim izni verilmiş ve bağlanamıyorsunuz](your-device-is-rooted-and-you-cant-connect-android.md)

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>İş profili oluşturduğunuzda ne olur?
 
@@ -28,9 +28,9 @@ Bir iş profili, iş veya okul e-postalarınızı, uygulamalarınızı ve dosyal
 
 Bir iş profili oluşturduğunuzda:
 
-- BT yöneticiniz, cihazınızdaki kişisel uygulamalarınızı veya verilerinizi değil, yalnızca iş ile ilgili e-postaları, uygulamaları, ayarları ve verileri yönetebilir.
+- Şirketinizin destek birimi; cihazınızdaki kişisel uygulamalarınızı veya verilerinizi değil, yalnızca iş ile ilgili e-postaları, uygulamaları, ayarları ve verileri yönetebilir.
 
-- Play Store for Work’ten iş uygulamaları alırsınız. Kişisel uygulamalar almak için normalde kişisel uygulamalarınızı almak için kullandığınız Google Play Store’a gitmeye devam edersiniz. BT yöneticisi kişisel uygulamalarınızı göremez veya yönetemez.
+- Play Store for Work’ten iş uygulamaları alırsınız. Kişisel uygulamalar almak için normalde kişisel uygulamalarınızı almak için kullandığınız Google Play Store’a gitmeye devam edersiniz. Şirketinizin destek birimi kişisel uygulamalarınızı göremez ve yönetemez.
 
 - İş uygulamaları, kişisel uygulamalardan ayrılır, ancak her ikisi de giriş ekranınızda aynı anda görünebilir. Ne görebileceğinize ilişkin bir örnek aşağıda verilmiştir. Sizin ekranınız bundan biraz farklı görünebilir.
 
@@ -38,9 +38,9 @@ Bir iş profili oluşturduğunuzda:
 
     ![Android Play Store for Work](./media/afw-google-play-store-for-work.png)
 
-- İş profiliniz şirketinize veya okulunuza aittir ve bu nedenle BT yöneticiniz profilinize iş uygulamaları ekleyebilir veya bunları kaldırabilir, ancak kişisel uygulamalarınıza veya verilerinize dokunamaz.
-- BT yöneticiniz cihazınızı sıfırlayamaz veya tamamen silemez.
+- İş profiliniz şirketinize veya okulunuza aittir ve bu nedenle şirketinizin destek birimi profilinize iş uygulamaları ekleyebilir veya bunları kaldırabilir, ancak kişisel uygulamalarınıza veya verilerinize dokunamaz.
+- Şirketinizin destek birimi cihazınızı sıfırlayamaz veya tamamen silemez.
 
 İş profili oluşturma adımları için bkz. [İş profili oluşturma ve cihazınızı kaydetme](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
