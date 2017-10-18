@@ -62,6 +62,7 @@
 ### [iOS cihazınızı kaydetme](enroll-your-device-in-intune-ios.md)
 ### [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos.md)
 ### [macOS cihazınızı Şirket Portalı'yla kaydetme](enroll-your-device-in-intune-macos-cp.md)
+### [Bu cihaz biraz farklıdır](device-little-different-jamf.md)
 
 ### [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)
 ### [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)

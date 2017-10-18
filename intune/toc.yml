@@ -316,6 +316,8 @@
               href: vpn-settings-android.md
             - name: iOS
               href: vpn-settings-ios.md
+            - name: iOS cihazlar için Uygulama Başına VPN’i yapılandırma
+              href: vpn-setting-configure-per-app.md
             - name: Mac OS
               href: vpn-settings-macos.md
             - name: Windows 8.1
