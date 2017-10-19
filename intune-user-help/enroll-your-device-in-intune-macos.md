@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology:
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope: User help
 ROBOTS: 
-ms.reviewer: jieyang
+ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ec1120f8fe040227d513fa5de2c096b34611ed7a
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>macOS cihazınızı Intune'a kaydetme
 
 Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişerek işinizi yapmaya devam edebilirsiniz. İş için bir macOS cihazı kullanıyorsanız, __Yönetim Profili__ yüklemeniz gerekir. Bu yalnızca, şirketinizin destek birimi tarafından ayarlanan ve ayarlarla erişim bilgilerini Mac cihazınıza yükleyen bir dosyadır. Daha fazla bilgi edinmek istiyor musunuz? [Şirket Portalı uygulamasını yükler ve cihazınızı Intune'a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) sayfasını inceleyin.
-
-  > [!NOTE]
-  > iPhone veya iPad gibi bir iOS cihazını kaydetmek istiyorsanız [buradaki talimatları uygulayın](enroll-your-device-in-intune-ios.md).
 
 1. Cihazınızın __Dock__ bölümünde __Safari__'yi bulun, yeni bir pencere açın ve ardından [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) ziyaret edin.
 2. İş veya okul hesabınızla Şirket Portalı web sitesinde oturum açın.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. Oturum açtığınızda, kullanılabilir tüm __Giriş__, __Uygulamalar__ ve __Kategoriler__ sekmelerini görürsünüz. Bu sayfada yükleyebileceğiniz tüm uygulamalar gösterilir. Henüz kayıtlı cihazınız yoksa, **Size herhangi bir uygulama gösteremiyoruz** şeklinde bir bildirim görürsünüz. __Cihazlarım__’ı seçerek devam edebilirsiniz.
+3. Oturum açtıktan sonra sayfanın sol üst köşesindeki **Menü**’ye tıklayın ve **Cihazlarım**’ı seçin.
 
  ![Henüz herhangi bir uygulamanın yüklenemeyeceğini gösteren web portalı ve altında Cihazlarım düğmesi ile web portalı giriş sayfasının ekran görüntüsü.](./media/macOS_enroll_001_landing_page.png)
 
-4. __Cihazlarım__ sayfasında, kayıtlı cihazların bir listesini veya yalnızca bir başlık görürsünüz. Bu, macOS veya başka bir kayıtlı cihazınız olup olmadığına bağlıdır. Listede olmayan bir cihazı kaydetmek için şu ifadeye sahip başlığı seçin: __Cihazınız listedeyse, tanımlamak için buraya dokunun. Listede değilse, yine buraya tıklayarak cihazınızı kaydedebilirsiniz__.
+4. __Cihazlarım__ sayfasında, kayıtlı cihazların bir listesini veya yalnızca bir başlık görürsünüz. Bu, macOS veya başka bir kayıtlı cihazınız olup olmadığına bağlıdır. Listede olmayan bir cihazı kaydetmek için şu ifadeye sahip başlığı seçin: __Cihazınız listedeyse, tanımlamak için buraya dokunun. Listede değilse, yine buraya tıklayarak cihazınızı kaydedebilirsiniz__. Kayıtlı cihazınız yoksa başlıkta **Kayıtlı cihazınız yok ifadesi yer alır. Buraya dokunarak bu cihazı kaydedin.**
 
   ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
 
@@ -64,5 +61,7 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişerek işinizi y
 9. Mac cihazınızda profille ilgili ayrıntılı bilgiler içeren veya __Yükleme__ konusunda emin olup olmadığınızı soran ek iletiler görüntülenebilir. Devam etmek için bu pencerelerde __Devam__ ve __Yükle__ seçeneklerini belirleyin. Yükleme tamamlandıktan sonra yeni yüklediğiniz __Yönetim Profili__ bilgilerini __Cihaz Profilleri__ bölümünde görüntüleyebilirsiniz.
 
  ![macOS Profili Yüklendi](./media/macOS_enroll_007_sysprefs_installed_profile.png)
+
+Bazı profiller **Doğrulanmamış** olarak görüntülenebilir, şirketinizden oldukları sürece bu durum normaldir.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) ulaşabilirsiniz.
