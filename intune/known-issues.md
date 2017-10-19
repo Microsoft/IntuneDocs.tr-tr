@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -53,7 +53,7 @@ Bu özellikler hem Intune (Silverlight) konsolu hem Azure portalından yönetile
 - Bunları klasik portalda devre dışı bırakır
 - Azure portalında etkinleştirir  
 
-11 Eylül 2017 tarihinden sonra, bu özelliklerin geçişi ile birincil Azure geçişi birleştirilecektir. Hesabınız zaten Azure portalını kullanmak üzere geçirilmişse bu ikinci geçiş, 11-22 Eylül 2017 tarihleri arasında gerçekleşecektir. Hesabınızın geçişi, başladığı gün tamamlanır. Geçiş, bu özelliklerin klasik Intune portalında devre dışı bırakıldığı süreden itibaren 6 saat kadar sürebilir.
+22 Eylül 2017 tarihinden sonra, bu özelliklerin geçişi ile birincil Azure geçişi birleştirilecektir. Hesabınız zaten Azure portalını kullanmak üzere geçirilmişse bu ikinci geçiş zaten tamamlanmış olabilir. Tamamlanmamışsa da bu işlevler Kasım ayına kadar Azure’a geçirilecektir. Hesabınızın geçişi, başladığı gün tamamlanır. Geçiş, bu özelliklerin klasik Intune portalında devre dışı bırakıldığı süreden itibaren 6 saat kadar sürebilir.
 
 Artık Intune özelliklerini Azure portalında yönetiyorsanız aşağıdaki hususları göz önünde bulundurun:
 
