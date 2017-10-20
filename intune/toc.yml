@@ -536,6 +536,8 @@
       items:
         - name: Power BI ile Veri Ambarına bağlanma
           href: reports-proc-get-a-link-powerbi.md
+        - name: OData akışına Power BI ile bir rapor oluşturma
+          href: reports-proc-create-with-odata.md
 - name: Otomatikleştirme ve özelleştirme
   items:
     - name: Özel cihaz ayarlarını yapılandırma
