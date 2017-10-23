@@ -162,6 +162,8 @@
               href: windows-enroll.md
             - name: Toplu kayıt
               href: windows-bulk-enroll.md
+            - name: Windows AutoPilot Dağıtım Programı
+              href: enrollment-autopilot.md
         - name: Android kaydını ayarlama
           href: android-enroll.md
         - name: iOS kaydını ayarlama
@@ -601,11 +603,9 @@
               href: reports-ref-devices.md
             - name: Uygulama varlıkları için başvuru
               href: reports-ref-application.md
-            - name: İlke varlıkları için başvuru
-              href: reports-ref-policy.md
+            - name: Kullanıcı cihazı ilişkilendirme varlığı için başvuru
+              href: reports-ref-userdeviceassociations.md
     - name: Windows uygulamalarını dışarıdan yükleme
-      href: app-sideload-windows.md
-    - name: Intune için Graph API’leri kullanma
       href: intune-graph-apis.md
       items:
         - name: Intune Başvurusu için Graph API’ler
