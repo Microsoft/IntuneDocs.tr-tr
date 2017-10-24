@@ -461,6 +461,8 @@
           href: windows-hello.md
     - name: Rolleri yönetme
       href: role-based-access-control.md
+    - name: İşletim sistemi sürümlerini yönetme
+      href: manage-os-versions.md
     - name: Yazılım güncelleştirmelerini yönetme
       href: windows-update-for-business-configure.md
     - name: Yazılım aracısıyla bilgisayarları yönetme
