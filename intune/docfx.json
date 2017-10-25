@@ -36,6 +36,16 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "intune-azure"
+    "dest": "intune-azure",
+    "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  }
   }
 }
