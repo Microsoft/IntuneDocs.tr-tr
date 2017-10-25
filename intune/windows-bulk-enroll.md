@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 3e374f383275b1e74e22ac037ecaec282eeaa87c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 372cc50fb4ac36ec875d84a71f3d3437917a2d1a
+ms.sourcegitcommit: 93c8c7e5abe433e35d88cb3b8d3d1e7216d7fe9b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
@@ -92,6 +92,10 @@ Sağlama, yeni Windows cihazlarda kullanılmak üzere tasarlanmıştır. Sağlam
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Toplu kayıt ve Şirket Portalı ile ilgili sorunlar
 Bir kullanıcı, daha önce Şirket Portalı kullanılarak toplu olarak kaydedilmiş bir cihazı kaydetmeye çalışırsa cihazının kurulum veya kayıt gibi ek eylemler gerektirdiğine dair uyarılar alır. Cihaz kaydedilir ancak kayıt, Şirket Portalı uygulaması veya web sitesi tarafından tanınmaz.
+
+### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi ile toplu kayıt 
+
+Toplu kayıtlı cihazlar, kullanıcı hedefli sertifikaları ve Wi-Fi dağıtımını kullanamaz. Bu bağlantıları yönetmek için [cihaz düzeyinde sertifikalara](certificates-configure.md) ihtiyaç duyacaksınız. 
 
 ### <a name="conditional-access"></a>Koşullu erişim
 Koşullu erişim, toplu kayıt kullanılarak kaydedilen Windows cihazlar için kullanılamaz.
