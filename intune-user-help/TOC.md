@@ -26,6 +26,7 @@
 
 ### [Android cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-android.md)
 #### [Cihaz uyumluluğunu denetleme](check-compliance-on-your-device-android.md)
+#### [Outlook e-postasını pil koruyucu modu ile eşitleme](power-saving-mode-android.md)
 
 #### Sorunları gidermek için günlükleri kullanma
 ##### [Ayrıntılı günlük kaydını açma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
