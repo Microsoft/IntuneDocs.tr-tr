@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: e536a31443a7140785a1f30af6fe676451e6f62c
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile Managed Browser ilkelerini kullanarak İnternet erişimini yönetme
 
@@ -37,7 +37,11 @@ Uygulamanın Intune SDK’sıyla tümleştirmesi olduğundan, buna aşağıdakil
 
 Ayrıntılar için bkz. [Uygulama koruma ilkesi nedir?](/intune/app-protection-policy)
 
-Bu ayarları Intune’a kayıtlı cihazlara, başka bir cihaz yönetim ürününe kayıtlı cihazlara veya yönetilmeyen cihazlara uygulayabilirsiniz.
+Bu ayarları şunlara uygulayabilirsiniz:
+
+- Intune’a kayıtlı cihazlar
+- Başka bir MDM ürününe kayıtlı cihazlar
+- Yönetilmeyen cihazlar
 
 Kullanıcılar Managed Browser’ı uygulama mağazasından yüklemişse ve Intune tarafından yönetilmiyorsa Microsoft MyApps sitesi üzerinden Çoklu Oturum Açma desteğiyle birlikte temel bir web tarayıcısı olarak kullanılabilir. Kullanıcılar, sağlanan tüm SaaS uygulamalarını görebilecekleri MyApps sitesine doğrudan yönlendirilir.
 Managed Browser, Intune tarafından yönetilmediğinde Intune tarafından yönetilen diğer uygulamaların verilerine erişemez. 

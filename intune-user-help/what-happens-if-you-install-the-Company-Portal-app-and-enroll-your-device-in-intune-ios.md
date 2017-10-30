@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 8d697a18ca812b9ccd39a5678dce7f7692aa97e5
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Şirket Portalı uygulamasını yüklerseniz ve iOS veya Mac OS X cihazınızı Intune’a kaydederseniz ne olur?
 
@@ -46,7 +46,7 @@ Cihazınız kaydolduğunda, şirketinizin destek birimi şunları yapabilir:
 
 -   Hüküm ve koşulları kabul etmenizi gerektirebilir.
 
--   Hassas şirket verilerinin fotoğrafını çekmenizi engellemek için cihaz kameranızı etkinleştirebilir veya devre dışı bırakabilir.
+-   Hassas şirket verilerinin fotoğrafını çekmenizi engellemek için cihaz kameranızı devre dışı bırakın.
 
 -   Cihazınızda web tarayıcısını etkinleştirebilir veya devre dışı bırakabilir.
 

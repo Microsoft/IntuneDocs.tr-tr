@@ -14,11 +14,11 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune Veri Ambarı API’si
 
@@ -41,9 +41,12 @@ Bu başvuru bölümünde, uç noktalar, desteklenen HTTP yöntemleri, dönüş y
 
 ## <a name="odata-custom-client"></a>OData özel istemcisi
 
-Intune Veri Ambarı veri modeline, RESTful uç noktaları yoluyla erişebilirsiniz. Verilerinize erişim kazanmak için istemcinizin OAuth 2.0 kullanarak Microsoft Azure Active Directory’de (Azure AD) yetkilendirilmesi gerekir. Önce Azure’da bir web uygulaması ve istemci uygulaması ayarlar ve istemciye izinler verirsiniz. Yerel istemciniz yetkilendirilir ve daha sonra Veri Ambarı uç noktaları ile iletişime geçebilir.
+Intune Veri Ambarı veri modeline, RESTful uç noktaları yoluyla erişebilirsiniz. Verilerinize erişim kazanmak için istemcinizin OAuth 2.0 kullanarak Azure Active Directory’de (Azure AD) yetkilendirilmesi gerekir. Önce Azure’da bir web uygulaması ve istemci uygulaması ayarlar ve istemciye izinler verirsiniz. Yerel istemciniz yetkilendirilir ve daha sonra Veri Ambarı uç noktaları ile iletişime geçebilir.
 
 Daha fazla bilgi için bkz. [Bir REST istemcisi ile Veri Ambarı API’sinden veri alma](reports-proc-data-rest.md)
+
+> [!Note]  
+> Kod örnekleri için GitHub’da [GitHub Intune Veri Ambarı deposuna](https://github.com/Microsoft/Intune-Data-Warehouse) erişebilirsiniz.
 
 ## <a name="interacting-with-the-api"></a>API ile etkileşim kurma
 
@@ -58,6 +61,8 @@ OData, istemcilerin herhangi bir veri kaynağı tarafından kullanıma sunulan b
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Azure AD için Kimlik Doğrulaması Senaryoları](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData 4.0 Sürümü](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+[Azure AD için Kimlik Doğrulaması Senaryoları](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios) makalesini okuyarak Azure AD ile çalışma hakkında daha fazla bilgi edinin.
+
+[odata.org](http://www.odata.org)’da OData kaynaklarını bulabilirsiniz.
+  
+[OData Sürüm 4.0]’da OData Sürüm 4.0 Standart’a göz atın. (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

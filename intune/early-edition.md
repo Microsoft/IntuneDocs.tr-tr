@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 10/09/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: abb5612545174e3fd134c38fb763e02d379b50d0
-ms.sourcegitcommit: b330045a4f9a807e6e2772c4ed4e1e1148e1f1f9
+ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>Microsoft Intune için erken sürüm - Ekim 2017
 
@@ -73,7 +73,7 @@ Windows Defender Exploit Guard; uygulamaların kötüye kullanımını azaltacak
 ### <a name="app-conditional-launch-support----1193313---"></a>Uygulama koşullu başlatma desteği <!-- 1193313 -->
 Artık BT yöneticileri, uygulama başlatıldığında mobil uygulama yönetiminde (MAM) sayısal PIN yerine bir geçiş kodu kullanılmasını zorlamak için Azure yönetici portalında bir gereksinim ayarlayabilir. Bu gereksinim ayarlanırsa kullanıcının, MAM etkin uygulamalara erişim almadan önce bir geçiş kodu ayarlaması ve istendiğinde bunu kullanması gerekir. Geçiş kodu, en az bir özel karakter veya büyük/küçük harf içeren sayısal PIN’dir. Intune’un bu sürümünde bu özellik, **yalnızca iOS’ta** geçerli olacaktır. Intune, sayısal PIN’e benzer bir geçiş kodunu destekler, uzunluk alt sınırı belirler ve karakter ile dizi tekrarlarına izin verir. Bu özellik, geçiş kodu ayarlarının hedeflenen uygulamalarda zorlanabilmesi için uygulamaların katılımının (WXP, Outlook, Managed Browser, Yammer) Intune Uygulama SDK’sıyla bu özellik için gereken kodu birleştirmesini gerektirir.
 
-### <a name="app-version-number-for-line-of-business-in-device-install-status-report----1233999---"></a>Cihaz yükleme durum raporunda iş kolu için Uygulama Sürüm numarası <!-- 1233999 -->  
+### <a name="app-version-number-for-line-of-business-in-device-install-status-report----1233999---"></a>Cihaz yükleme durum raporunda iş kolu için uygulama sürüm numarası <!-- 1233999 -->  
 Cihaz yükleme durum raporu, iOS ve Android için iş kolu uygulamalarında uygulama sürüm numarasını görüntüleyecek. Bu bilgiyi kullanarak uygulamalarınızda sorun giderebilir veya eski uygulama sürümleri çalıştıran cihazları bulabilirsiniz.
 
 ### <a name="co-management-for-windows-10-devices-----124445---"></a>Windows 10 cihazlar için ortak yönetim <!-- 124445 -->
@@ -131,66 +131,6 @@ Dosya engelleme düzeyini varsayılan **Yapılandırmadı** düzeyine ayarlaman�
 Intune artık Symantec Cloud CA’yı desteklemektedir. Böylece Intune Sertifika Bağlayıcısı, Symantec Cloud’dan Intune ile yönetilen cihazlara PKCS sertifikaları verebilir. Intune Sertifika Bağlayıcısı’nı Microsoft Sertifika Yetkilisi (CA) ile kullanıyorsanız, Symantec CA desteğini eklemesi için mevcut Intune Sertifika Bağlayıcısı kurulumundan yararlanabilirsiniz.
 
 
-### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>Şirket Portalı’nda cihaz kurulum iş akışı iyileştirmeleri <!--1490692-->  
-Android için Şirket Portalı uygulamasında cihaz kurulum iş akışını iyileştiriyoruz. Dil kolay anlaşılır ve şirketinize özgü bir hale gelecek ve ekranlar mümkün olduğunca birleştirilecektir. 
-
-### <a name="block-unsupported-samsung-knox-device-activation------1490695----"></a>Desteklenmeyen Samsung Knox cihaz etkinleştirmesini engelleme <!--- 1490695 --->  
-Şirket Portalı uygulaması, yalnızca cihazın [desteklenen KNOX cihazlar listesinde](https://www.samsungknox.com/knox-supported-devices/knox-workspace) görüntülendiği durumlarda MDM kaydı sırasında Samsung KNOX etkinleştirmesi yapmaya çalışır. Böylece MDM kaydını önleyen KNOX kayıt hatalarının önüne geçilir. Samsung KNOX etkinleştirmesini desteklemeyen cihazlar, standart Android cihazlar olarak kaydedilir. Bir Samsung cihazın KNOX’u destekleyen model numaraları olabilir, diğerlerinin olamaz. Samsung cihazlar satın alıp dağıtmadan önce, cihazınızın kurumsal bayisinden Knox uyumluluğunu doğrulayın.
-
-Aşağıdaki Samsung cihaz modelleri KNOX’u desteklemez ve Android için Şirket Portalı uygulaması tarafından yerel Android cihazlar olarak kaydedilir:
-
-| **Cihaz Adı** | **Cihaz Model Numaraları** |
-| --- | --- |
-| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
-| Galaxy A5 | SM-A500G |
-| Galaxy Alpha | SM-G850M |
-| Galaxy Avant | SM-G386T |
-| Galaxy C9/C9 Pro | SM-C900F |
-| Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
-| Galaxy Core Lite | SM-G3588V |
-| Galaxy Core Prime | SM-G360H |
-| Galaxy Core LTE | SM-G386F<br>SM-G386W |
-| Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
-| Galaxy Grand 3 | SM-G7200 |
-| Galaxy Grand Neo | GT-I9060I |
-| Galaxy Grand Prime | SM-G530M |
-| Galaxy Grand Prime Value Edition | SM-G531H |
-| Galaxy J Max | SM-T285YD |
-| Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
-| Galaxy J1 Ace | SM-J110F<br>SM-J110H |
-| Galaxy J1 Mini | SM-J105M |
-| Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
-| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
-| Galaxy J5 | SM-J500G |
-| Galaxy J7 | SM-J710F |
-| Galaxy J7 Prime | SM-J727T1 |
-| Galaxy K Zoom | SM-C115 |
-| Galaxy Light | SGH-T399N |
-| Galaxy Note 3 | SM-N9002<br>SM-N9009 |
-| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
-| Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
-| Galaxy Note 10.1 3G | SM-P602 |
-| Galaxy NotePRO 12.2&quot; | SM-P902 |
-| Galaxy On5 | SM-G570MSM-G570Y |
-| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
-| Galaxy S2 Plus | GT-I9105P |
-| Galaxy S3 Mini | SM-G730A<br>SM-G730V |
-| Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
-| Galaxy S4 | SM-S975L |
-| Galaxy S4 Active | GT-I9295 |
-| Galaxy S4 Neo | SM-G318ML |
-| Galaxy S5 | SM-G9006W<br>SM-G900M |
-| Galaxy S5 Neo | SM-G903M |
-| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
-| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
-| Galaxy Tab A 9.7&quot; | SM-P555M |
-| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
-| Galaxy Tab 3 8.0&quot; | SM T311 |
-| Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
-| Galaxy Trend 2 Lite | SM-G318H |
-| Galaxy V Plus | SM-G318HZ |
-| Galaxy Young 2 Duos | SM-G130BU |
-
 
 ### <a name="citrix-vpn-added-for-windows-10-devices----1512457---"></a>Windows 10 cihazlar için Citrix VPN eklendi <!-- 1512457 -->  
 Müşteriler, Windows 10 cihazları için Citrix VPN’i yapılandırabilecekler. Windows 10 ve üzeri sürümler için bir VPN yapılandırırken, **Temel VPN** dikey penceresinde bulunan *Bağlantı türü seçin* listesinden Citrix VPN’i seçebilirsiniz.
@@ -207,64 +147,12 @@ Müşteriler, Windows 10 cihazları için Citrix VPN’i yapılandırabilecekler
 ### <a name="google-play-protect-support-on-android----908720----"></a>Android’de Google Play Protect desteği <!-- 908720  -->  
 Android Oreo sürümüyle Google, kuruluşların güvenli uygulamalar çalıştırmasına ve Android görüntülerinin güvenliğini sağlamasına imkan veren Google Play Protect adlı bir güvenlik özellikleri paketi piyasaya sunuyor. Intune, SafetyNet uzak kanıtlama dahil olmak üzere Google Play Protect özelliklerini destekleyecektir.  Yöneticiler, Google Play Protect’ın yapılandırılması ve iyi durumda olmasını gerektiren uyumluluk ilke gereksinimleri ayarlayabilir. **SafetyNet cihaz kanıtlama** ayarı, cihazın iyi durumda olduğu ve güvenliğinin aşılmadığını doğrulamak için cihazın bir Google hizmetiyle bağlanmasını gerektirir. Yöneticiler ayrıca, yüklenen uygulamaların Google Play hizmetleri tarafından doğrulanmasını gerektiren bir Android for Work yapılandırma profili ayarı da ayarlayabilir.  Koşullu erişim, bir cihaz Google Play Protect gereksinimleriyle uyumlu olmadığında kullanıcıların şirket kaynaklarına erişimini engelleyebilir. 
 
-### <a name="prevent-users-of-android-devices-from-changing-their-device-date-and-time-----1333292---"></a>Android cihaz kullanıcılarının cihaz tarih ve saatini değiştirmelerini önleme <!-- 1333292 -->
-Android cihaz kullanıcılarının cihaz tarih ve saatini değiştirmelerini önlemek için bir [Android özel cihaz ilkesi](custom-settings-android.md) kullanabilirsiniz.
-Bunun için bir Android özel ilkesini ./Vendor/MSFT/PolicyManager/My/System/AllowDateTimeChange ayar URI’si ile yapılandırın, **TRUE** olarak ayarlayın ve gerekli gruplara atayın.
-
-### <a name="view-app-protection-policy-assignments-for-troubleshooting-----1475003---"></a>Sorun giderme için uygulama koruma ilke atamalarını görüntüleme <!--  1475003 -->
-Gelecek sürümde, sorun giderme dikey penceresinde bulunan **Atamalar** açılan listesine **Uygulama koruma ilkesi** seçeneği eklenecek. Artık, uygulama koruma ilkelerini seçerek seçili kullanıcılara atanan uygulama koruma ilkelerini görebileceksiniz.
-
-### <a name="create-ios-apps-limited-to-specific-regional-apple-app-stores----1281692---"></a>Belirli bölgesel Apple App Store’lar ile sınırlı iOS uygulamaları oluşturma <!-- 1281692 -->
-Bir Apple App Store yönetilen uygulaması oluştururken ülke yerel ayarını belirtebileceksiniz.
-
-> [!NOTE]  
-> Şu anda yalnızca ABD mağazasında kullanılabilen Apple App Store yönetilen uygulamaları oluşturabilirsiniz.
-
-### <a name="select-apple-country-store-to-sync-vpp-apps-----1332311---"></a>VPP uygulamalarını eşitlemek için Apple ülke mağazası seçme <!-- 1332311 -->  
-VPP belirtecinizi karşıya yüklerken Volume Purchase Program (VPP) ülke mağazasını yapılandırabileceksiniz. Intune, belirtilen VPP ülke mağazasındaki tüm yerel ayarlarla VPP uygulamaları eşitler.
-
-> [!NOTE]  
-> Şu anda Intune, yalnızca Intune kiracısının oluşturulduğu Intune yerel ayarına uyan VPP ülke mağazasındaki VPP uygulamaları eşitliyor.
-
-###  <a name="update-ios-vpp-user-and-device-licensed-apps-----1305564---"></a>iOS VPP kullanıcı ve cihaz lisanslı uygulamaları güncelleştirme <!-- 1305564 -->  
-Intune hizmeti yoluyla belirteç için satın alınmış tüm uygulamaları güncelleştirmek için bu iOS VPP belirtecini yapılandırabileceksiniz. Intune, uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılayacak ve cihaz iade edildiğinde bunları cihaza otomatik olarak gönderecektir.
-
-### <a name="new-settings-for-windows-10-team-device-restriction-profile------1308838----"></a>Windows 10 Team cihaz kısıtlama profili için yeni ayarlar <!--- 1308838  -->
-Surface Hub cihazları denetlemenizi kolaylaştırmak için Windows 10 Team cihaz kısıtlama profiline pek çok yeni ayar ekliyoruz.
-Bu profil hakkında daha fazla bilgi için bkz. [Windows 10 Team cihaz kısıtlama ayarları](device-restrictions-windows-10-teams.md).
 
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Windows 10 sürüm yükseltme ilkesi desteği <!-- 903672(archived), 1119689 -->  
 Windows 10 cihazları; Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education ve Windows 10 Professional Education N’e yükselten bir Windows 10 sürüm yükseltme ilkesi oluşturabileceksiniz. Windows 10 sürüm yükseltmeleri hakkında daha fazla bilgi için bkz. [Windows 10 sürüm yükseltmelerini yapılandırma](edition-upgrade-configure-windows-10.md).
 
-### <a name="remote-support-for-windows-and-windows-mobile-devices-----1070473---"></a>Windows ve Windows Mobile cihazlar için uzak destek <!-- 1070473 -->    
-Intune, Windows ve Windows Mobile cihazlar çalıştıran kullanıcılarınıza uzaktan yardım etmenizi sağlamak için ayrıca satın alınan [TeamViewer](https://www.teamviewer.com) yazılımını kullanabilecek.
 
-### <a name="scan-devices-with-windows-defender----1280988--1280990-----"></a>Windows Defender ile cihazları tarama <!-- 1280988  1280990   -->
-Yönetilen Windows 10 cihazlarda Windows Defender Virüsten Koruma ile **Hızlı Tarama**, **Tam Tarama** ve **İmza güncelleştirme** işlemleri yapabileceksiniz. Cihazın genel bakış dikey penceresinden cihazda çalıştırılacak eylemi seçin. Komut cihaza gönderilmeden önce eylemi onaylamanız istenir. 
-
-**Hızlı tarama**: Hızlı tarama, kayıt defteri anahtarı ve bilinen Windows başlangıç klasörleri gibi kötü amaçlı yazılımların başladığı konumları tarar. Bir hızlı tarama ortalama beş dakika sürer. Bir dosya açıldığında, kapandığında ve bir kullanıcı bir klasöre gittiğinde dosyaları tarayan **Her zaman açık gerçek zamanlı koruma** ayarıyla birlikte kullanıldığında hızlı tarama, sistemde veya çekirdekte olması mümkün kötü amaçlı yazılımlara karşı koruma sağlamaya yardımcı olur. Tarama bittiğinde kullanıcılar, sonuçları cihazlarında görebilir. 
-
-**Tam tarama**: Tam tarama, etkin olmayan bileşenleri bulunan ve daha kapsamlı bir temizlik gerektiren kötü amaçlı yazılım tehditleriyle karşı karşıya kalan cihazlarda gereklidir ve isteğe bağlı taramalar yapmaya yarar. Tam taramanın tamamlanması bir saati bulabilir. Tarama bittiğinde kullanıcılar, sonuçları cihazlarında görebilir. 
-
-**İmza güncelleştirme**: İmza güncelleştirme komutu, Windows Defender Virüsten Koruma kötü amaçlı yazılım tanımlarını ve imzalarını güncelleştirir. Böylece Windows Defender Virüsten Koruma’nın kötü amaçlı yazılımı algılamada her zaman etkili olması sağlanır. Bu özellik yalnızca Windows 10 cihazlar içindir ve cihaz İnternet bağlantısı gerektirir. 
-
-### <a name="bitlocker-device-configuration----1397398---"></a>BitLocker cihaz yapılandırması <!-- 1397398 -->  
-**Windows Şifreleme > Temel Ayarlar** yeni bir **Başka bir disk şifreleme için uyarı** ayarı barındıracak. Bu ayar, kullanıcının cihazında kullanımda olabilecek bir diğer disk şifreleme için [uyarı istemini](https://docs.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp#allowarningforotherdiskencryption) devre dışı bırakmanızı sağlayacak.  Uyarı istemi, cihazda BitLocker’ı kurmadan önce kullanıcı onayı gerektirir ve son kullanıcı tarafından onaylanana kadar BitLocker kurulumunu engeller.  Bu yeni ayar, son kullanıcı uyarısını devre dışı bırakır.
-
-### <a name="company-portal-for-windows-81-and-windows-phone-81-moving-to-sustaining-mode---1428681--"></a>Windows 8.1 ve Windows Phone 8.1 için Şirket Portalı, dayanıklılık moduna geçiyor <!--1428681-->
-Ekim 2017’den itibaren Windows 8.1 ve Windows Phone 8.1 için Şirket Portalı uygulamaları, dayanıklılık moduna geçecek. Yani kayıt ve uyumluluk gibi mevcut senaryolar bu platformlarda desteklenmeye devam edecek. Bu uygulamalar Microsoft Mağazası gibi mevcut yayın kanallarından hala indirilebilir. 
-
-Dayanıklılık moduna geçtikten sonra bu uygulamalar, yalnızca kritik güvenlik güncelleştirmelerini alacak. Bu uygulamalar için ek güncelleştirmeler veya özellikler yayımlanmayacak. Yeni özellikler için cihazları Windows 10 veya Windows 10 Mobile’a güncelleştirmenizi öneririz. 
-
-###  <a name="block-copy-and-paste-between-work-and-personal-profiles-in-android-for-work----1098994---"></a>Android for Work’te iş hesapları ve kişisel hesaplar arasında kopyalama ve yapıştırmayı engelleme <!-- 1098994 -->   
-Android for Work iş profilini kopyalama ve yapıştırmayı engelleyecek şekilde yapılandırabilirsiniz. Bu yeni ayarı **İş profili ayarları** altında bulunan **Android for Work** Platformunun **Cihaz kısıtlamaları** profilinde bulabilirsiniz.
-
-### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles----1485783---"></a>İş profilleri bulunan Android için Şirket Portalı uygulamasında yeni davranışlar <!---1485783--->
-Bir Android for Work cihazını iş profiliyle kaydettiğinizde cihazda yönetim görevlerini gerçekleştiren uygulama, iş profilindeki Şirket Portalı’dır. Kişisel profilde MAM özellikli uygulama kullanmıyorsanız Android için Şirket Portalı uygulamasının artık hiçbir kullanımı yoktur. İş profili deneyimini iyileştirmek için Intune, başarılı bir iş profili kaydından sonra kişisel Şirket Portalı uygulamasını otomatik olarak saklar.
-
-İstediğiniz zaman [Play Store’da Şirket Portalı](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) araması yapıp **Etkinleştir**’e dokunarak kişisel profilinizde Android için Şirket Portalı uygulamasını etkinleştirebilirsiniz.
-
-### <a name="intune-mam--outlook-for-android-add-ins-----1450688---"></a>Intune MAM ve Android için Outlook eklentileri <!-- 1450688 -->
+### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Android eklentileri için Intune MAM ve Outlook  <!-- 1450688 -->
 Birkaç hafta içerisinde Office ekibi, Android için Outlook eklentilerini duyuracak. Bu eklenti özellikleri kümesi Windows, iOS, web ve Mac için Outlook uygulamalarında zaten mevcuttur. Eklentiler Exchange yoluyla yönetildiğinden, eklentilere erişim Exchange yöneticiniz tarafından kapatılmadığı sürece, kullanıcılar Outlook’ta ve yönetilmeyen eklenti uygulamalarda veri ve iletileri kopyalayabilir ve paylaşabilir. 
 
 Eklentilere kullanıcı izinlerini yönetmek için MAM veri koruma ilkelerinizin eklentilerde de geçerli olduğundan emin olmak adına Exchange yöneticinizle görüşün.
@@ -277,9 +165,6 @@ Exchange’deki ayar değişikliği Outlook’un Windows, iOS, web, Mac ve mobil
 #### <a name="what-do-i-need-to-do"></a>Neler yapmam gerekir?
 Hemen Exchange ilkelerinizi gözden geçirin. BT ve yardım masası çalışanlarınızı bilgilendirin. Sorularınız veya aklınıza takılanlar konusunda destek ekibimizle iletişime geçin. 
 
-### <a name="user-device-association-entity-collection-added-to-intune-data-warehouse-data-model----1187917---"></a>Intune Veri Ambarı veri modeline kullanıcı cihaz ilişkisi varlığı eklendi <!-- 1187917 -->
-Kullanıcı ve cihaz varlık koleksiyonlarını ilişkilendiren kullanıcı cihaz ilişki bilgilerini kullanarak rapor ve veri görselleştirmeleri oluşturabileceksiniz. OData uç noktası veya özel bir istemci geliştirme yoluyla Veri Ambarı Intune sayfasından alınan Power BI dosyasından (PBIX) veri modeline erişebilirsiniz.
-
 
 
 
@@ -288,15 +173,6 @@ Kullanıcı ve cihaz varlık koleksiyonlarını ilişkilendiren kullanıcı ciha
 ### <a name="actions-for-non-compliance----730266--846515---"></a>Uyumsuzluk için eylemler <!--730266  846515 -->     
 *Uyumsuzluk için eylemler*, uyumsuz cihazlar üzerinde eylem gerçekleştirmenize olanak tanıyan yeni bir uyumluluk ilkeleri özelliğidir. Tek veya birden çok eylem belirtebilir ve bu eylemlerin gerçekleştirilmesi gereken zaman aralığını belirtebilirsiniz. Örneğin, uyumsuz cihaz kullanıcılarını cihazlar uyumsuz hale geldiği anda e-posta yoluyla haberdar edebilir veya Koşullu Erişim aracılığıyla 3 günlük yetkisiz kullanım süresi ardından uyumsuz cihazların kurumsal kaynaklara erişimini engelleyebilirsiniz.
 
-### <a name="new-report-that-lists-ios-devices-with-older-ios-versions------1352223---"></a>Eski iOS sürümleri ile iOS cihazlarını listeleyen yeni rapor   <!-- 1352223 -->
-**Güncel olmayan iOS Cihazları** raporu, **Yazılım güncelleştirmeleri** çalışma alanında kullanılabilecektir. Raporda, bir iOS güncelleştirme ilkesi tarafından hedeflenen ve kullanılabilir güncelleştirmelere sahip denetimli iOS cihazların listesini görüntüleyebilirsiniz. Her cihaz için cihazın neden otomatik olarak güncelleştirilmediğiyle ilgili bir durum görüntüleyebilirsiniz. 
-
-### <a name="new-settings-for-windows-10-device-restriction-profile"></a>Windows 10 cihaz kısıtlama profili için yeni ayarlar
-<!--- 978575, 1308849, -->
-Windows Defender SmartScreen kategorisinde Windows 10 cihaz kısıtlama profiline yeni ayarlar ekliyoruz.
-
-Windows 10 cihaz kısıtlama profili hakkında ayrıntılar için bkz. [Windows 10 ve üzeri cihaz kısıtlama ayarları]( device-restrictions-windows-10.md).
-
 ### <a name="android-for-work-support-for-lookout----1087312---"></a>Lookout için Android for Work desteği <!-- 1087312 -->   
 Lookout kullanan Intune bağlayıcısı, Lookout for Work uygulamasını kullanan Android for Work cihazlarını destekleyecektir. Lookout uygulamasını kapsayıcının içinde veya dışında dağıtabilirsiniz.
 
@@ -304,9 +180,6 @@ Lookout kullanan Intune bağlayıcısı, Lookout for Work uygulamasını kullana
 Cihazları ve uygulamaları Citrix XenMobile MDX ve Microsoft Intune bileşimi ile yönetebilirsiniz. Bu, Citrix’in mVPN teknolojisini kullanırken uygulamaları Intune uygulama koruması ilkesiyle yönetmenize olanak sağlar.
 
 iOS ve Android için Citrix MDX mVPN teknolojisiyle tümleştiren, Intune Uygulama Sarmalama Aracı ve Intune Uygulama SDK’sını içeren bir kod deposu bulabilirsiniz.
-
-### <a name="zimperium---new-mobile-threat-defense-partner------954681---"></a>Zimperium - Yeni Mobile Threat Defense iş ortağı  <!-- 954681 -->
-Microsoft Intune ile tümleştirilen Mobile Threat Defense çözümü Zimperium tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz.
 
 #### <a name="how-integration-with-intune-works"></a>Intune ile tümleştirme nasıl çalışır?
 Risk, Zimperium çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir. Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Zimperium risk değerlendirmesine dayalı EMS koşullu erişim ilkelerini yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumlu olmayan cihazların şirket kaynaklarına erişmesine izin vermek veya erişimini engellemek için bu ilkeleri kullanabilirsiniz.
@@ -318,17 +191,7 @@ Risk, Zimperium çalıştıran cihazlardan toplanan telemetriye göre değerlend
 Exchange bağlayıcısı günlüklerini ayrıştırmanıza yardımcı olmak amacıyla Exchange bağlayıcısı için System Center Operations Manager yönetim paketi kullanıma sunulacak. Bu yönetim paketi, sorun gidermeniz gerektiğinde Intune'u izlemek için size farklı yollar sunar.
 
 
-### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Android 4.3 ve altı sürümler için desteğin son bulması<!---1171127, 1326920 --->
-Yönetilen uygulamalar ve Android için Şirket Portalı uygulaması, şirket kaynaklarına erişim için Android 4.4 ve üzeri sürümleri gerektirecek. Ekim ayının başından önce güncelleştirmeyen cihazlar, Şirket Portalı veya diğer uygulamalara erişemeyecek. Aralık ayında ise tüm kayıtlı cihazlar zorla devre dışı bırakılacak ve böylece şirket kaynaklarına erişimi kaybedeceklerdir. MDM’siz uygulama koruma ilkeleri kullanıyorsanız uygulamalar güncelleştirme almayacak ve deneyimlerinin kalitesi zamanla düşecek.
-
-
 ## <a name="intune-apps"></a>Intune uygulamaları
-
-### <a name="improved-guidance-around-the-request-for-access-to-contacts-on-android-devices---1484985--"></a>Android cihazlarda kişilere erişim isteği için iyileştirilmiş rehber <!--1484985-->   
-Android için Şirket Portalı uygulaması genellikle son kullanıcının Kişiler izni vermesini gerektirir. Son kullanıcı bu erişimi reddederse kendisini koşullu erişim için bu izni vermesi konusunda uyaran bir uygulama içi bildirim alacak.
-
-### <a name="secure-startup-remediation-for-android---1490712--"></a>Android için güvenli başlangıç düzeltmesi <!--1490712-->     
-Android cihazı olan son kullanıcılar, Şirket Portalı uygulamasında uyumsuzluk sebebine dokunabilecek. Buna dokunmaları mümkün olduğunda, ayarlar uygulamasında sorunu çözebilecekleri konuma gidecekler.
 
 
 ### <a name="redirecting-macos-users-to-our-new-company-portal-app---1380728--"></a>macOS kullanıcılarını yeni Şirket Portalı uygulamamıza yönlendirme <!--1380728-->   
@@ -339,22 +202,11 @@ iOS için Şirket Portalı’na sertifika tabanlı kimlik doğrulaması (CBA) de
 
 <!-- the following are present prior to 1710 -->
 
-### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Şirket Portalı web sitesine arama iyileştirmeleri <!--1331697-->  
-[Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) başlayarak uygulama arama becerilerimizi iyileştiriyoruz. Artık aramalar, Ad ve Açıklama alanlarına ek olarak uygulama kategorilerinde de gerçekleştirilecek. Varsayılan olarak sonuçlar, azalan ilgi düzeyine göre sıralanacak. 
-
-Şirket Portalı web sitesi, iOS için Şirket Portalı uygulamasının da bir parçası olarak kullanıldığı için bu değişikliği iOS kullanıcıları da alacaktır. Android ve Windows için Şirket Portalı uygulamaları, gelecek aylar içerisinde benzer güncelleştirmeler alacaktır.
-
-Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıyoruz, bu nedenle lütfen Şirket Portalı web sitesinin en altında bulunan “Geri Bildirim” bağlantısını kullanarak bizi konuyla ilgili bilgilendirin.
-
-### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>Windows 10 için Şirket Portalı uygulamasına yenileme eylemi eklendi <!--1132468-->  
-Windows 10 için Şirket Portalı uygulaması, mobil cihazlarda aşağı çekerek veya masaüstü cihazlarda F5’e basarak kullanıcılara uygulamadaki verileri yenileme imkanı sunacak.
 
 
 ### <a name="apps-that-are-available-with-or-without-enrollment-can-now-be-installed-without-being-prompted-for-enrollment----1334712---"></a>Kayıt durumuna bakılmaksızın kullanılabilir olan uygulamalar artık kayıt istemi yapılmadan yüklenebilir. <!-- 1334712 -->
 Android Şirket Portalı uygulamasındaki kayıt durumuna bakılmaksızın kullanılabilir olan şirket uygulamaları, kayıt için istem yapılmadan yüklenebilir.
 
-### <a name="ios-company-portal-display-large-icons----1454593---"></a>iOS Şirket Portalı’nda büyük simgeler görüntüleme <!-- 1454593 -->
-iOS Şirket Portalı’nın uygulama kutucuğunda simgeleri görüntülemesiyle ilgili bilinen bir sorunu çözüyoruz. 120x120 veya daha büyük boyutlu uygulama simgeleri yüklerseniz bunlar artık [Şirket portalı web sitesinde] (https://portal.manage.microsoft.com) ve iOS Şirket Portalı uygulama sayfalarında bütün uygulama kutucuğunu kaplayacak şekilde görüntülenecek.
 
 <!-- the following are present prior to 1709 -->
 
@@ -375,19 +227,8 @@ Artık Intune’un mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM)
 
 [Intune destek ekibi blogundan](https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/) MDM ve MAM değişiklikleri hakkında daha fazla bilgi edinebilirsiniz.
 
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->   
-Apple, 2017 baharından itibaren, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayacağını açıkladı. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS Şirket Portalı uygulamaları kullanan Intune müşterilerini etkiler. Daha fazla ayrıntı için bkz. [Intune destek blogu](https://aka.ms/compportalats).
 
 
-### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>Yönetilen cihazlar için Graph API’de yeni yol <!-- 1586728 -->  
-Ekim ayının Intune hizmet sürümünde, Graph API’nin beta sürümünde yönetilen cihazlara erişmek için kullanılan yolda değişiklik yapıyoruz.
-
-| | |
-|--|--|
-| Geçerli yol |  https://graph.microsoft.com/beta/managedDevices |
-| Yeni yol | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
-
-Ekim ayı süresince her iki yol da kullanılabilir. Ekim hizmet sürümünden sonra ise yalnızca yeni yol geçerli olacaktır.  Yönetilen cihazlara erişmek için Graph API kullanıyorsanız betik ve uygulamalarınızı yeni yol ile güncelleştirip doğrulayın. İlave değişiklikler için aylık [Graph API değişiklik günlüğünü](https://developer.microsoft.com/en-us/graph/docs/concepts/changelog) kontrol edin.
 
 ### <a name="see-also"></a>Ayrıca bkz.
 Son geliştirmelere ilişkin ayrıntılar için bkz. [Microsoft Intune’daki Yenilikler](whats-new.md).
