@@ -14,27 +14,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7723bb42eedcd97142f039ca52b60911fa91838b
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune Veri Ambarı API uç noktası
 
 Intune Veri Ambarı API’sini, belirli rol tabanlı erişim denetimlerine ve Azure AD kimlik bilgilerine sahip bir hesapla kullanabilirsiniz. Daha sonra REST istemcinizi, OAuth 2.0 kullanarak Azure AD’de yetkilendirirsiniz. Ve son olarak, veri ambarı kaynağı olarak kullanılacak anlamlı bir URL oluşturursunuz.
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Azure AD ve Intune kimlik bilgisi gereksinimleri
-
-Kimlik doğrulaması ve yetkilendirme, Azure AD kimlik bilgileri ve Intune rol tabanlı erişim denetimine (RBAC) bağlıdır. Varsayılan olarak kiracınızdaki tüm genel yöneticiler ve hizmet yöneticilerinin API’ye erişimi vardır. Intune rolleri ile **Raporlama kaynağı** erişimi vererek daha fazla kullanıcının API’ye erişmesini sağlayabilirsiniz.
-
-API erişimi için gereksinimler şöyledir:
-
-  -  Kullanıcıya Intune lisansı atanmış olmalıdır
-  -  Kullanıcı şunlardan biri olmalıdır:
-      -  Azure AD genel yöneticisi
-      -  Intune hizmet yöneticisi
-      -  **Raporlar** kaynağına rol tabanlı erişimi olan kullanıcı
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Yetkilendirme
 
@@ -64,4 +54,4 @@ API’nin geçerli sürümü şudur: `beta`.
 
 ## <a name="odata-query-options"></a>OData sorgu seçenekleri
 
-Mevcut sürüm, şu OData sorgu parametrelerini destekler: `$skip, $top, $filter, $orderby`.
+Mevcut sürüm, aşağıdaki OData sorgu parametrelerini destekler: `$filter, $orderby, $select, $skip,` ve `$top`.

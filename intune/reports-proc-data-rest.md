@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bbb0e8ba84e221df3a434da79c513939267648b
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -58,7 +58,7 @@ Azure’da yerel bir uygulama oluşturun. Bu yerel uygulama, istemci uygulamadı
 
 Artık Azure’da tanımlanan bir uygulamanız var. Yerel uygulamadan Microsoft Intune API’sine erişim verin.
 
-1.  Yerel uygulamaya tıklayın. Uygulamanın adı Intune Veri Ambarı İstemcisi gibi bir şey olmalıdır.
+1.  Yerel uygulamaya tıklayın. Uygulamanızın adı **Intune Veri Ambarı İstemcisi** benzeri bir ada sahip olmalıdır.
 2.  **Ayarlar** dikey penceresinde **Gerekli izinler**’e tıklayın
 3.  **Gerekli izinler** dikey penceresinde **Ekle**’ye tıklayın.
 4.  **Bir API Seç**’e tıklayın.
@@ -152,14 +152,14 @@ Aşağıdaki örnek, bir basit REST istemcisi içerir. Kod, .Net kitaplığında
 1.  **Microsoft Visual Studio**’yu açın.
 2.  **Dosya** > **Yeni Proje**’yi seçin. **Visual C#**’yi genişletin ve **Konsol Uygulaması (.Net Framework)** öğesini seçin. 
 3.  Projeyi ` IntuneDataWarehouseSamples` olarak adlandırın, projeyi kaydetmek istediğiniz konuma göz atın ve **Tamam**’a tıklayın.
-3.  Çözüm Gezgini’nde çözümün adına sağ tıklayın ve daha sonra **Çözüm için NuGet Paketlerini Yönetme**’ye tıklayın. **Göz at**’a tıklayın ve arama kutusuna “Microsoft.IdentityModel.Clients.ActiveDirectory” yazın.
-4. Paketi seçin, Çözümünüz için Paketleri Yönetme altında **IntuneDataWarehouseSamples**’a tıklayın ve daha sonra **Yükle**’yi seçin. 
-5. NuGet paket lisansını kabul etmek için **Kabul Ediyorum**’a tıklayın.
-6. Çözüm Gezgini’nde `Program.cs` öğesini açın.
+4.  Çözüm Gezgini’nde çözümün adına sağ tıklayın ve daha sonra **Çözüm için NuGet Paketlerini Yönetme**’ye tıklayın. **Gözat**’a tıklayın, daha sonra arama kutusuna `Microsoft.IdentityModel.Clients.ActiveDirectory` yazın.
+5. Paketi seçin, Çözümünüz için Paketleri Yönetme altında **IntuneDataWarehouseSamples**’a tıklayın ve daha sonra **Yükle**’yi seçin. 
+6. NuGet paket lisansını kabul etmek için **Kabul Ediyorum**’a tıklayın.
+7. Çözüm Gezgini’nde `Program.cs` öğesini açın.
 
     ![Visual Studio’da Proje](media\reports-get_rest_data_in.png)
 
-7.  Program.cs’deki kodu aşağıdaki kodla değiştirin:  
+8.  Program.cs’deki kodu aşağıdaki kodla değiştirin:  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -214,12 +214,12 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  Örnek koddaki `TODO` öğelerini değiştirin.
-9.  Intune.DataWarehouseAPIClient istemcisini derlemek ve Hata Ayıklama modunda yürütmek için **Ctrl + F5**’e basın.
+9.  Örnek koddaki `TODO` öğelerini değiştirin.
+10.  Intune.DataWarehouseAPIClient istemcisini derlemek ve Hata Ayıklama modunda yürütmek için **Ctrl + F5**’e basın.
 
     ![JSON biçiminde alınan tarih varlığı.](media\reports-get_rest_data_output.png)
 
-10.  Konsol çıkışını gözden geçirin. Çıkış, Intune kiracınızdaki **tarihler** varlığından çekilen verileri JSON biçiminde barındırır.
+11.  Konsol çıkışını gözden geçirin. Çıkış, Intune kiracınızdaki **tarihler** varlığından çekilen verileri JSON biçiminde barındırır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

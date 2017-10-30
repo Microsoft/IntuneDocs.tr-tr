@@ -14,17 +14,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9257af29c65dbe27667738abc8ee06203177124f
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="data-warehouse-data-model"></a>Veri Ambarı veri modeli
 
 Intune Veri Ambarı, sürekli değişen mobil ortamınızın geçmiş bilgilerini görüntülemenizi sağlamak için günlük olarak veri örnekleri alır.
 
-Kiracınızdan alınan veriler, veri ambarına eklenir. Ambar, sormak istediğiniz türde sorulara karşılık gelen varlıklar ve ilişkiler kümesidir. Örneğin, yüklemelerde artan bir eğilim olup olmadığını değerlendirmek için şirket içinde geliştirilmiş bir Android uygulamasının geçen hafta içerisindeki günlük yüklenme miktarına göz atabilirsiniz. Veri ambarının yapısı, mobil ortamınız hakkında öngörü kazanmanızı sağlayacak şekildedir. Buna karşılık olarak Microsoft Power BI gibi analitik araçlar ise Veri Ambarı veri modelini kullanarak görselleştirmeler ve dinamik panolar oluşturur.
+Kiracınızdan alınan veriler, veri ambarına eklenir. Ambar, sormak istediğiniz türde sorulara karşılık gelen varlıklar ve ilişkiler kümesidir. Örneğin, yüklemelerde artan bir eğilim olup olmadığını değerlendirmek için şirket içinde geliştirilmiş bir Android uygulamasının geçen hafta içerisindeki günlük yüklenme miktarına göz atabilirsiniz. Veri ambarının yapısı, mobil ortamınız hakkında öngörü kazanmanızı sağlayacak şekildedir. Buna karşılık olarak Microsoft Power BI gibi analiz araçları ise Veri Ambarı veri modelini kullanarak görselleştirmeler ve dinamik panolar oluşturur.
 
 Intune Veri Ambarı yapısı, yıldız şeması modelini kullanır. Bir yıldız şeması, olguları zaman boyutunca düzenler. Model bağlamında bir *olgu*; cihaz sayısı, uygulama sayısı veya kayıt zamanı gibi nicel bir ölçüdür. Model bağlamında bir *boyut* ise bir kategoriler kümesi ve bunların hiyerarşik ilişkisidir. Örneğin günler aylara göre, aylar yıllara göre gruplanır. Yıldız şeması modeli, esneklik ve veri çözümlemesi için iyileştirilmiştir. Böylece değişen mobil ortamınızı anlamanız için gereken raporları oluşturabilirsiniz.
 
@@ -44,6 +44,7 @@ Varlık kümeleri, veri modelinde adı olan varlık koleksiyonlarıdır. Bu küm
   -  [Cihazlar](reports-ref-devices.md)
   -  [Uygulama](reports-ref-application.md)
   -  [İlke](reports-ref-policy.md)
+  -  [Kullanıcı cihaz ilişkisi](reports-ref-userdeviceassociations.md)
 
 <!-- ## Data Model relationships
 

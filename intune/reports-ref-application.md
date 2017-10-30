@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cd684feec1df6b20f9349052496a21895527710b
-ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
+ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
@@ -36,21 +36,21 @@ ms.lasthandoff: 09/21/2017
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| AppKey |Uygulamanın benzersiz tanımlayıcısı |123 |
+| AppKey |Uygulamanın benzersiz tanımlayıcısı. |123 |
 | ApplicationId |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
-| Revizyon |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm |2 |
-| Başlık |Uygulama başlığı |Excel |
-| Yayımcı |Uygulama yayımcısı |Microsoft |
-| UploadState |Uygulamanın karşıya yükleme durumu |1 |
+| Revizyon |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
+| Başlık |Uygulama başlığı. |Excel |
+| Yayımcı |Uygulama yayımcısı. |Microsoft |
+| UploadState |Uygulamanın karşıya yüklenme durumu. |1 |
 | AppTypeKey |Aşağıdaki bölümde açıklanan AppType özelliğine başvuru. | |
-| VppProgramTypeKey |Aşağıda açıklanan VppProgramType özelliğine başvuru | |
-| CreationTime |Düzeltmenin oluşturulduğu zaman |23.11.2016 12:00:00 |
-| ModifiedTime |Bu düzeltmeyle ilgili herhangi bir şeyin en son değiştirildiği an |23.11.2016 12:00:00 |
-| Boyut |İkili boyutu | |
-| StartDateInclusiveUTC |Bu uygulama düzeltmesi veri ambarında oluşturulduğunda UTC tarih ve saati |23.11.2016 12:00:00 |
-| EndDateExclusiveUTC |Bu uygulama düzeltmesi kullanımdan kalktığında UTC tarih ve saati |23.11.2016 12:00:00 |
-| IsCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir |Doğru/Yanlış |
-| RowLastModifiedDateTimeUTC |Bu uygulama sürümü veri ambarında son değiştirildiğinde UTC’de tarih ve saat |23.11.2016 12:00:00 |
+| VppProgramTypeKey |Aşağıda açıklanan VppProgramType özelliğine başvuru. | |
+| CreationTime |Düzeltmenin oluşturulduğu zaman. |23.11.2016 12:00:00 |
+| ModifiedTime |Bu düzeltmeyle ilgili herhangi bir şeyin en son değiştirildiği an. |23.11.2016 12:00:00 |
+| Boyut |İkili boyutu. | |
+| StartDateInclusiveUTC |Bu uygulama düzeltmesi, veri ambarında oluşturulduğunda tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+| EndDateExclusiveUTC |Bu uygulama düzeltmesi kullanımdan kalktığında tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+| IsCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir. |Doğru/Yanlış |
+| RowLastModifiedDateTimeUTC |Bu uygulama sürümü, veri ambarında son değiştirildiğinde tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 
 ## <a name="apptypes"></a>AppTypes
 
@@ -66,19 +66,19 @@ ms.lasthandoff: 09/21/2017
 
 | AppTypeID  | Ad | Açıklama |
 |---------|------------|--------|
-| 0 |Android mağazası uygulaması |Bir Android mağazası uygulaması |
-| 1 |Android LOB uygulaması |Bir Android iş kolu uygulaması |
-| 2 |Yönetilen Android mağazası uygulaması (MAM) |Yönetimi etkin bir Android mağazası uygulaması |
-| 3 |iOS mağazası uygulaması |Bir iOS mağazası uygulaması |
-| 4 |iOS LOB uygulaması |Bir iOS iş kolu uygulaması |
-| 5 |Yönetilen iOS mağazası uygulaması (MAM?) |Yönetimi etkin bir iOS mağazası uygulaması |
-| 6 |O365 Pro Plus Suite |Windows 10 için Office 365 Pro Plus Suite |
-| 7 |Web uygulaması |Bir web uygulaması |
-| 8 |Windows Phone 8.1 mağazası uygulaması |Bir Windows Phone 8.1 mağazası uygulaması |
-| 9 |Windows mağazası uygulaması |Bir Windows mağazası uygulaması |
-| 10 |Windows LOB uygulaması |Bir Windows AppX iş kolu uygulaması |
-| 11 |Windows Mobile MSI |Bir MSI iş kolu uygulaması |
-| 12 |Windows Phone LOB uygulaması |Bir Windows Phone iş kolu uygulaması |
+| 0 |Android mağazası uygulaması | Bir Android mağazası uygulaması. |
+| 1 |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
+| 2 |Yönetilen Android mağazası uygulaması (MAM) | Yönetimi etkin bir Android mağazası uygulaması. |
+| 3 |iOS mağazası uygulaması | Bir iOS mağazası uygulaması. |
+| 4 |iOS LOB uygulaması | Bir iOS iş kolu uygulaması. |
+| 5 |Yönetilen iOS mağazası uygulaması (MAM?) | Yönetimi etkin bir iOS mağazası uygulaması. |
+| 6 |O365 Pro Plus Suite | Windows 10 için Office 365 Pro Plus Suite. |
+| 7 |Web uygulaması | Bir web uygulaması. |
+| 8 |Windows Phone 8.1 mağazası uygulaması | Bir Windows Phone 8.1 mağazası uygulaması. |
+| 9 |Windows mağazası uygulaması | Bir Windows mağazası uygulaması. |
+| 10 |Windows LOB uygulaması | Bir Windows AppX iş kolu uygulaması. |
+| 11 |Windows Mobile MSI | Bir MSI iş kolu uygulaması. |
+| 12 |Windows Phone LOB uygulaması | Bir Windows Phone iş kolu uygulaması. |
 
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
@@ -87,17 +87,17 @@ ms.lasthandoff: 09/21/2017
 
 | Özellik  | Açıklama |
 |---------|------------|
-| VppProgramTypeID |Tür kimliği |
-| VppProgramTypeKey |Anahtar için yedek anahtar |
-| VppProgramTypeName |VPP program türü |
+| VppProgramTypeID | Tür kimliği. |
+| VppProgramTypeKey | Anahtar için vekil anahtar. |
+| VppProgramTypeName | VPP Program türü. |
 
 ## <a name="example"></a>Örnek
 
 | VppProgramID  | Ad | Açıklama |
 |---------|------------|--------|
-| 3DDA2474-470B-4503-9830-2665C21C1945 |Microsoft |Microsoft’un VPP programı |
-| 00000000-0000-0000-0000-000000000000 |Henüz kullanılamıyor |Varsayılan değer, No VPP |
-| B54814E0-68EA-4BA4-8088-B5AAB58E737B |Apple |Apple’ın VPP programı |
+| 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft’un VPP programı. |
+| 00000000-0000-0000-0000-000000000000 | Henüz kullanılamıyor | Varsayılan değer, No VPP. |
+| B54814E0-68EA-4BA4-8088-B5AAB58E737B | Apple | Apple’ın VPP programı. |
 
 
 
@@ -107,8 +107,8 @@ ms.lasthandoff: 09/21/2017
 
 | Özellik  | Açıklama |
 |---------|------------|
-| DeviceKey |Bu, Intune cihaz kimliğini içeren Cihaz tablosuna bir başvurudur |
-| DateKey |Envanterin alındığı günü gösteren tarih tablosuna başvuru |
-| ApplicationName |Uygulama Adı |
-| ApplicationVersion |Uygulamanın sürümü |
-| BundleSize |Uygulamanın bayt cinsinden boyutu |
+| DeviceKey | Bu, Intune cihaz kimliğini içeren Cihaz tablosuna bir başvurudur. |
+| DateKey | Envanterin alındığı günü gösteren tarih tablosuna başvuru. |
+| ApplicationName | Uygulama adı. |
+| ApplicationVersion | Uygulamanın sürümü. |
+| BundleSize | Uygulamanın bayt cinsinden boyutu. |

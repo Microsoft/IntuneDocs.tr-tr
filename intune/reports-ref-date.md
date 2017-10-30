@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 766d7619f2438d4291210ad8adfbc8d3eb9b2381
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 894617cd47e5221be6988c377608c82bad2c7a67
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-date-entity"></a>Tarih varlığı için başvuru
 
@@ -30,21 +30,21 @@ ms.lasthandoff: 08/04/2017
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| DateKey |Veri ambarında tarihin benzersiz tanımlayıcısı | 20160703 |
-| FullDate |Tarihin tam Tarih/Saat biçiminde temsili | 3.7.2016 12:00:00 |
-| DayOfWeek |Haftanın kaçıncı günü olduğu |1 |
-| DayOfMonth |Ayın kaçıncı günü olduğu |3 |
-| DayOfYear |Yılın kaçıncı günü olduğu |185 |
-| WeekOfYear |Yılın kaçıncı haftası olduğu |28 |
-| MonthOfYear |Yılın kaçıncı ayı olduğu |7 |
-| CalendarQuarter |Takvim çeyreği |3 |
-| CalendarYear |Takvim yılı |2016 |
-| DateKey |Veri ambarında tarihin benzersiz tanımlayıcısı |20160703 |
-| FullDate |Tarihin tam Tarih/Saat biçiminde temsili | 3.7.2016 12:00:00 |
-| DayOfWeek |Haftanın kaçıncı günü olduğu |1 |
-| DayOfMonth |Ayın kaçıncı günü olduğu |3 |
-| DayOfYear |Yılın kaçıncı günü olduğu |185 |
-| WeekOfYear |Yılın kaçıncı haftası olduğu |28 |
-| MonthOfYear |Yılın kaçıncı ayı olduğu |7 |
-| CalendarQuarter |Takvim çeyreği |3 |
-| CalendarYear |Takvim yılı |2016 |
+| DateKey | Veri ambarında bu tarihin benzersiz tanımlayıcısı. | 20160703 |
+| FullDate | Bu tarihin tam Tarih/Saat biçiminde temsili. | 3.7.2016 12:00:00 |
+| DayOfWeek | Haftanın kaçıncı günü olduğu | 1 |
+| DayOfMonth | Ayın kaçıncı günü olduğu | 3 |
+| DayOfYear | Yılın kaçıncı günü olduğu | 185 |
+| WeekOfYear | Yılın kaçıncı haftası olduğu | 28 |
+| MonthOfYear | Yılın kaçıncı ayı olduğu | 7 |
+| CalendarQuarter | Takvim çeyreği | 3 |
+| CalendarYear | Takvim yılı | 2016 |
+| DateKey | Veri ambarında bu tarihin benzersiz tanımlayıcısı. | 20160703 |
+| FullDate | Bu tarihin tam Tarih/Saat biçiminde temsili. | 3.7.2016 12:00:00 |
+| DayOfWeek | Haftanın kaçıncı günü olduğu | 1 |
+| DayOfMonth | Ayın kaçıncı günü olduğu | 3 |
+| DayOfYear | Yılın kaçıncı günü olduğu | 185 |
+| WeekOfYear | Yılın kaçıncı haftası olduğu | 28 |
+| MonthOfYear | Yılın kaçıncı ayı olduğu | 7 |
+| CalendarQuarter | Takvim çeyreği | 3 |
+| CalendarYear | Takvim yılı | 2016 |

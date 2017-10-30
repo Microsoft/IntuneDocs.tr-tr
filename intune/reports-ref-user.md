@@ -14,11 +14,11 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2b9739299c52c668117116f54c08715f1218d130
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: be8b7041882539c4e379074cffea385f582f686e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-user-entity"></a>Kullanıcı varlığı için başvuru
 
@@ -30,14 +30,14 @@ ms.lasthandoff: 08/04/2017
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| UserKey |Veri ambarındaki kullanıcının benzersiz tanımlayıcısı - vekil anahtar |123 |
-| UserId |Kullanıcının benzersiz tanımlayıcısı - UserKey’e benzer ancak doğal anahtardır |b66bc706-ffff-7437-0340-032819502773 |
-| UserEmail |Kullanıcının e-posta adresi |John@constoso.com |
-| GörünenAd |Kullanıcının görünen adı |John |
+| UserKey |Veri ambarındaki kullanıcının benzersiz tanımlayıcısı - vekil anahtar. |123 |
+| UserId |Kullanıcının benzersiz tanımlayıcısı - UserKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
+| UserEmail |Kullanıcının e-posta adresi. |John@constoso.com |
+| GörünenAd |Kullanıcının görünen adı. |John |
 | IntuneLicensed |Kullanıcının Intune lisansı olup olmadığını belirtir. |Doğru/Yanlış |
 | IsDeleted |Kullanıcı kaydının güncelleştirilip güncelleştirilmediğini gösterir.  True- bu tabloda kullanıcının güncelleştirilmiş alanlarla birlikte yeni bir kaydı vardır. False- kullanıcı için en son kayıt. |Doğru/Yanlış |
-| StartDateInclusiveUTC |veri ambarında kullanıcının oluşturulduğu UTC tarih ve saati |23.11.2016 12:00:00 |
-| EndDateExclusiveUTC |IsDeleted özelliğinin True olarak değiştirildiği UTC tarih ve saati |23.11.2016 12:00:00 |
-| IsCurrent |Kullanıcı kaydının, veri ambarında mevcut olup olmadığını gösterir |Doğru/Yanlış |
-| RowLastModifiedDateTimeUTC |Kullanıcının veri ambarında son değiştirildiği UTC tarih ve saati |23.11.2016 12:00:00 |
+| StartDateInclusiveUTC |Veri ambarında kullanıcının oluşturulduğu tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+| EndDateExclusiveUTC |IsDeleted değerinin True olarak değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+| IsCurrent |Bu kullanıcı kaydının, veri ambarında mevcut olup olmadığını gösterir. |Doğru/Yanlış |
+| RowLastModifiedDateTimeUTC |Kullanıcının veri ambarında son değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 

@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 
@@ -35,14 +35,14 @@ ms.lasthandoff: 08/04/2017
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| PolicyKey |Veri ambarında ilkeyi temsil eden benzersiz anahtar |123 |
-| PolicyId |Veri ambarında ilkeyi temsil eden benzersiz tanıtıcı |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |İlkenin Adı |"Windows 10 Temel" |
+| PolicyKey |Veri ambarında ilkeyi temsil eden Benzersiz Anahtar. |123 |
+| PolicyId |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |İlkenin Adı. |"Windows 10 Temel" |
 | PolicyVersion |Yapılandırmanın Sürümü. İlke düzenlendiğinde veya değiştirildiğinde, daha yeni bir sürüm oluşturulur. |1, 2, 3 |
-| IsDeleted |Bu MAM uygulaması kaydının güncelleştirilip güncelleştirilmediğini gösterir.  True- ilkenin güncelleştirilmiş alanları içeren yeni bir kaydı var. False- ilke için en son kayıt. |Doğru/Yanlış |
-| StartDateInclusiveUTC |Bu ilkenin veri ambarında oluşturulduğu tarih ve saat (UTC) |23/11/2016 00:00:00 |
-| DeletedDateUTC |IsDeleted değerinin True olarak değiştirildiği tarih ve saat (UTC) |23/11/2016 00:00:00 |
-| RowLastModifiedDateTimeUTC |Bu ilkenin veri ambarında son değiştirildiği tarih ve saat (UTC) |23/11/2016 00:00:00 |
+| IsDeleted |Bu MAM uygulaması kaydının güncelleştirilip güncelleştirilmediğini gösterir.  <br>True- ilkenin güncelleştirilmiş alanları içeren yeni bir kaydı var. <br>False- ilke için en son kayıt. |Doğru/Yanlış |
+| StartDateInclusiveUTC |Bu ilkenin veri ambarında oluşturulduğu tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+| DeletedDateUTC |IsDeleted değerinin True olarak değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+| RowLastModifiedDateTimeUTC |Bu ilkenin veri ambarında son değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 
 ## <a name="policytype"></a>PolicyType
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 08/04/2017
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| PolicyTypeId |İlkenin kaynak sistemindeki benzersiz tanıtıcısı |123 |
-| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanıtıcısı |1 |
-| PolicyTypeName |İlke türünün adı. |Windows 10 Uyumluluk İlkesi |
+| PolicyTypeId |İlkenin kaynak sistemindeki benzersiz tanımlayıcısı. |123 |
+| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1 |
+| PolicyTypeName |İlke türünün adı. |Windows 10 Uyumluluk ilkesi. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -60,11 +60,11 @@ ms.lasthandoff: 08/04/2017
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| DateKey |Cihaz Yapılandırma Profilinin iade etme işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı |20160703 |
-| Bekleniyor |Bekleme durumundaki benzersiz cihazların sayısı |123 |
-| Başarılı |Başarı durumundaki benzersiz cihazların sayısı |12 |
-| Hata |Hata durumundaki benzersiz cihazların sayısı |10 |
-| Başarısız |Başarısız durumundaki benzersiz cihazların sayısı |2 |
+| DateKey |Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |20160703 |
+| Bekleniyor |Bekleme durumundaki benzersiz cihazların sayısı. |123 |
+| Başarılı |Başarı durumundaki benzersiz cihazların sayısı. |12 |
+| Hata |Hata durumundaki benzersiz cihazların sayısı. |10 |
+| Başarısız |Başarısız durumundaki benzersiz cihazların sayısı. |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -72,11 +72,11 @@ ms.lasthandoff: 08/04/2017
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| DateKey |Cihaz Yapılandırma Profilinin iade etme işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı |20160703 |
-| Bekleniyor |Bekleme durumundaki benzersiz kullanıcıların sayısı |123 |
-| Başarılı |Başarı durumundaki benzersiz kullanıcıların sayısı |12 |
-| Hata |Hata durumundaki benzersiz kullanıcıların sayısı |10 |
-| Başarısız |Başarısız durumundaki benzersiz kullanıcıların sayısı |2 |
+| DateKey |Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |20160703 |
+| Bekleniyor |Bekleme durumundaki benzersiz kullanıcıların sayısı. |123 |
+| Başarılı |Başarı durumundaki benzersiz kullanıcıların sayısı. |12 |
+| Hata |Hata durumundaki benzersiz kullanıcıların sayısı. |10 |
+| Başarısız |Başarısız durumundaki benzersiz kullanıcıların sayısı. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ ms.lasthandoff: 08/04/2017
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| DateKey |Cihaz Yapılandırma Profilinin iade etme işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı |20160703 |
-| PolicyKey |İlke Anahtarı; İlke ile birleştirilerek ilke adı elde edilebilir |Windows 10 temel |
-| PolicyTypeKey |İlke Anahtarı türü; İlke Türü ile birleştirilerek ilke türü adı elde edilebilir |Windows 10 Uyumluluk İlkesi |
-| Bekleniyor |Bekleme durumundaki benzersiz cihazların sayısı |123 |
-| Başarılı |Başarı durumundaki benzersiz cihazların sayısı |12 |
-| Hata |Hata durumundaki benzersiz cihazların sayısı |10 |
-| Başarısız- |Başarısız durumundaki benzersiz cihazların sayısı |2 |
+| DateKey |Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |20160703 |
+| PolicyKey |İlke Anahtarı, İlke ile birleştirilerek ilke adı elde edilebilir. |Windows 10 temel |
+| PolicyTypeKey |İlke Anahtarı türü, İlke Türü ile birleştirilerek ilke türü adı elde edilebilir. |Windows 10 Uyumluluk İlkesi |
+| Bekleniyor |Bekleme durumundaki benzersiz cihazların sayısı. |123 |
+| Başarılı |Başarı durumundaki benzersiz cihazların sayısı. |12 |
+| Hata |Hata durumundaki benzersiz cihazların sayısı. |10 |
+| Başarısız- |Başarısız durumundaki benzersiz cihazların sayısı. |2 |

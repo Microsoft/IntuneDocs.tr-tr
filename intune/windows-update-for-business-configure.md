@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-software-updates"></a>Yazılım güncelleştirmelerini yönetme
 
@@ -26,10 +26,10 @@ ms.lasthandoff: 09/09/2017
 
 Hizmet olarak Windows, Windows 10 cihazları güncelleştirmenin yoludur. Windows 10 ile yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri kapsar. Böylece, en son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın tamamen güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
 
-İşletmeler için Windows Update’i kullanarak güncelleştirme yönetimi deneyimini, cihaz grupları için tek tek güncelleştirmelerin onaylanması gerekmeyecek şekilde basitleştirebilirsiniz. Ortamlarınızdaki riski yönetmek amacıyla bir güncelleştirme dağıtım stratejisi yapılandırabilirsiniz. Böylece Windows Update güncelleştirmelerin doğru zamanda yüklenmesini sağlar. Microsoft Intune, cihazlarda güncelleştirme ayarlarının yapılandırılabilmesini sağlar ve güncelleştirme yüklemelerini erteleme olanağı tanır. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. **Windows 10 güncelleştirme kademelerini** yapılandırmak ve yönetmek için Intune’u kullanın. Güncelleştirme kademesi, Windows 10 güncelleştirmelerinin ne zaman ve nasıl yükleneceğini yapılandıran bir dizi ayar içerir. Örneğin, aşağıdakileri yapılandırabilirsiniz:
+İşletmeler için Windows Update’i kullanarak güncelleştirme yönetimi deneyimini, cihaz grupları için tek tek güncelleştirmelerin onaylanması gerekmeyecek şekilde basitleştirebilirsiniz. Ortamlarınızdaki riski yönetmek amacıyla bir güncelleştirme dağıtım stratejisi yapılandırabilirsiniz. Böylece Windows Update güncelleştirmelerin doğru zamanda yüklenmesini sağlar. Microsoft Intune, cihazlarda güncelleştirme ayarlarının yapılandırılabilmesini sağlar ve güncelleştirme yüklemelerini erteleme olanağı tanır. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. **Windows 10 güncelleştirme halkalarını** yapılandırmak ve yönetmek için Intune kullanın. Güncelleştirme kademesi, Windows 10 güncelleştirmelerinin ne zaman ve nasıl yükleneceğini yapılandıran bir dizi ayar içerir. Örneğin, aşağıdakileri yapılandırabilirsiniz:
 
 - **Windows 10 Bakım Dalı**: Cihaz gruplarının güncelleştirmeleri Güncel Dalı üzerinden mi yoksa İş İçin Güncel Dalı üzerinden mi alacağını seçin.  
-- **Erteleme Ayarları**: Cihaz gruplarının güncelleştirme yüklemelerini erteleyen erteleme ayarlarını yapılandırın. Böylece, aşamalı bir güncelleştirme dağıtımı oluşturarak ilerleme durumunu güncelleştirme boyunca gözden geçirebilirsiniz.
+- **Erteleme Ayarları**: Cihaz gruplarının güncelleştirme yüklemelerini erteleyen erteleme ayarlarını yapılandırın. Aşamalı bir güncelleştirme dağıtımı oluşturarak güncelleştirme boyunca ilerleme durumunu gözden geçirmek için bu ayarları kullanın.
 - **Duraklatma**: Güncelleştirme dağıtımı sırasında herhangi bir noktada bir sorun keşfederseniz güncelleştirmelerin yüklenmesini erteleyin.
 - **Bakım penceresi**: Güncelleştirmelerin hangi saatler arasında yüklenebileceğini yapılandırın.
 - **Güncelleştirme türü**: Yüklenecek güncelleştirme türlerini seçin. Örneğin, Kalite Güncelleştirmeleri, Özellik Güncelleştirmeleri veya sürücüleri seçebilirsiniz.
@@ -65,7 +65,7 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 1. Azure portalında ihtiyaç duyduğunuz ayarlara sahip Windows 10 güncelleştirme kademeleri oluşturun. **Yayın öncesi özelliklere izin ver** ayarı, en son Windows 10 derlemelerinde geçerli olmadığından Azure portalında desteklenmez. Windows 10 güncelleştirme kademeleri oluştururken kalan üç ayarı ve diğer Windows 10 güncelleştirme ayarlarını yapılandırabilirsiniz.
 
   > [!NOTE]
-  > Klasik portalda oluşturulan Windows 10 güncelleştirme ayarları geçişten sonra Azure portalında görüntülenmez. Ancak, bu ayarlar uygulanamaya devam edilir. Bu ayarlardan herhangi birini geçirdiyseniz ve geçirilen ilkeyi Azure portalından düzenlerseniz, söz konusu ayarlar ilkeden kaldırılır.
+  > Klasik portalda oluşturulan Windows 10 güncelleştirme ayarları geçişten sonra Azure portalında görüntülenmez. Ancak, bu ayarlar uygulanamaya devam edilir. Bu ayarlardan herhangi birini geçirdiyseniz ve geçirilen ilkeyi Azure portalından düzenlerseniz söz konusu ayarlar ilkeden kaldırılır.
 
 2. Güncelleştirme ayarlarını klasik portaldan silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme kademesine ekledikten sonra olası ilke çakışmalarını önlemek için ayarları klasik portalda silmeniz gerekir. Örneğin, aynı ayar farklı değerlerle yapılandırıldığında bir çakışma oluşur ve klasik portalda yapılandırdığınız ayar Azure portalında görüntülenmediğinden bunun fark edilmesi zor olabilir.
 
@@ -103,14 +103,35 @@ Yeni güncelleştirme kademesi, güncelleştirme kademeleri listesinde görünü
 2. Sonraki sekmede **Grup Seç**‘i ve sonra bu kademeyi atamak istediğiniz grupları seçin.
 3. İşiniz bittiğinde **Seç**’i seçerek atama işlemini tamamlayın.
 
-
-
 ## <a name="update-compliance-reporting"></a>Güncelleştirme uyumluluğunu raporlama
+Güncelleştirme uyumluluğunu, Intune’da veya Operations Management Suite’teki (OMS) Güncelleştirme Uyumluluğu adlı ücretsiz bir çözümü kullanarak görüntüleyebilirsiniz.
+
+### <a name="review-update-compliance-in-intune"></a>Intune’da güncelleştirme uyumluluğunu gözden geçirme 
+<!-- 1352223 -->
+Yapılandırdığınız Windows 10 güncelleştirme halkalarının dağıtım durumunu görüntülemek için bir ilke raporunu gözden geçirin. 
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Yazılım Güncelleştirmeleri**’ni seçin.
+4. **Yazılım Güncelleştirmeleri** dikey penceresinde **Genel Bakış**’ı seçin. Burada, atadığınız tüm güncelleştirme halkalarının durumu hakkında genel bilgileri bulabilirsiniz.
+5. Aşağıdaki raporlardan birini açın: 
+     
+   **Tüm dağıtım halkaları için:**
+   1. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları** dikey penceresinde. 
+   2. **İzle** bölümünde **Uygulama başına halka dağıtım durumu**’nu seçin.
+                   
+   **Belirli dağıtım halkaları için:** 
+   1. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları** dikey penceresinde, gözden geçirmek istediğiniz dağıtım halkasını seçin.
+   2. **İzle** bölümünde, güncelleştirme halkası hakkında ayrıntılı bilgileri görüntülemek için aşağıdaki raporlardan birini seçin:
+      - **Cihazlar için güncelleştirme halkası dağıtımı**
+      - **Kullanıcılar için güncelleştirme halkası dağıtımı**
+      - **Ayar başına dağıtım durumu**
+
+### <a name="review-update-compliance-using-oms"></a>OMS kullanarak güncelleştirme uyumluluğunu gözden geçirme
 Windows 10 güncelleştirme dağıtımlarını, Operations Management Suite’teki (OMS) Güncelleştirme Uyumluluğu adlı ücretsiz bir çözümü kullanarak izleyebilirsiniz. Ayrıntılı bilgi için bkz. [Windows Güncelleştirmelerini Güncelleştirme Uyumluluğu ile İzleme](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Bu çözümü kullandığınızda, güncelleştirme uyumluluğunu raporlamak istediğiniz Intune tarafından yönetilen herhangi bir Windows 10 cihazınıza bir ticari kimlik dağıtabilirsiniz.
 
 Intune konsolunda özel bir ilkenin OMA-URI ayarlarını kullanarak ticari kimliği yapılandırabilirsiniz. Ayrıntılı bilgi için bkz. [Microsoft Intune’daki Windows 10 cihazları için Intune ilke ayarları](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
-Ticari kimliği yapılandırmaya ilişkin OMA-URI (büyük/küçük harfe duyarlı) yolu: ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+Ticari kimliği yapılandırmaya ilişkin OMA-URI (büyük/küçük harfe duyarlı) yolu: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 Örneğin, **OMA-URI Ayarı Ekle veya Düzenle** bölümünde aşağıdaki değerleri kullanabilirsiniz:
 
@@ -121,18 +142,6 @@ Ticari kimliği yapılandırmaya ilişkin OMA-URI (büyük/küçük harfe duyarl
 - **Değer**: <*OMS çalışma alanınızdaki Windows Telemetri sekmesinde gösterilen GUID’yi kullanın*>
 
 ![Tanılama ve kullanım verileri için Windows ayarı](./media/commID.png)
-
-<!--
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Software Updates**.
-4. On the **Software Updates** blade, choose **Overview**. From here you can see general information about the status of any update rings you assigned.
-4. On the **Windows 10 Updates** blade, choose **Monitor** > **Update ring deployment for devices**, **Update ring deployment for users**, or **Per-setting deployment state** to view more detailed information about update ring assignments.
--->
-
-
-
-
 
 ## <a name="how-to-pause-updates"></a>Güncelleştirmeleri duraklatma
 Bir cihazın Özellik Güncelleştirmeleri veya Kalite Güncelleştirmeleri almasını en çok 35 günlük bir süre boyunca duraklatabilirsiniz. En fazla gün sayısı kadar bir süre geçtikten sonra duraklatma işlevi otomatik olarak sona erer ve cihaz, kullanılabilecek güncelleştirmeleri bulmak için Windows Güncelleştirmelerini tarar. Bu taramanın ardından güncelleştirmeleri yeniden duraklatabilirsiniz.
