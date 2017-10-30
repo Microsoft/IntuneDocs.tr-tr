@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 ve üzeri cihaz kısıtlama ayarları
 
@@ -64,7 +64,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
     -   **Önceki parolaların yeniden kullanılmasını engelle** - Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.
     -   **Cihaz boşta kalma durumundan çıktığında parola isteme (yalnızca mobil)** - Cihazın kilidini açmak için kullanıcının parola girmesi gerektiğini belirtir (yalnızca Windows 10 Mobile).
     -   **Basit parolalar** – 1111 ve 1234 gibi basit parolalar kullanılmasına izin verir. Bu ayar, Windows resimli parolalarının kullanımına izin verir veya bunu engeller.
--   **Şifreleme** - Hedeflenen cihazlarda şifrelemeyi etkinleştirin (yalnızca Windows 10 Mobile).
+-   **Şifreleme** - Hedeflenen cihazlarda şifrelemeyi etkinleştir.
 
 ## <a name="personalization"></a>Kişiselleştirme
 
@@ -82,7 +82,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 -   **İşlem merkezi bildirimleri (yalnızca mobil)** - Cihaz kilitleme ekranında İşlem Merkezi bildiriminin görünmesine izin verir (yalnızca Windows 10 Mobile).
 -   **Kilit ekranı resmi URL'si (yalnızca masaüstü)** - Windows kilit ekranı duvar kağıdı olarak kullanılacak PNG, JPG veya JPEG biçiminde bir resim URL'si belirtin. Kullanıcıların bunu değiştirmesi mümkün olmayacaktır.
 -   **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)** – Kullanıcıların süreyi yapılandırmasına izin verir 
--   **Kilitleme ekranında Cortana (yalnızca masaüstü) ** – Cihaz kilitleme ekranındayken kullanıcının Cortana ile etkileşim kurmasına izin vermez (yalnızca Windows 10 masaüstü).
+-   **Kilitleme ekranında Cortana (yalnızca masaüstü)**  – Cihaz kilitleme ekranındayken kullanıcının Cortana ile etkileşim kurmasına izin vermez (yalnızca Windows 10 masaüstü).
 -   **Kilitli ekranda bildirimler** – Cihaz kilitleme ekranında uyarı iletileri gösterilmesini engelleyin.
 -   **Ekran zaman aşımı (yalnızca mobil)** - Ekranın kapanarak kilitlenmesi için geçecek süreyi saniye olarak belirtir.
 
@@ -107,7 +107,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 ## <a name="edge-browser"></a>Edge Tarayıcısı
 -   **Microsoft Edge tarayıcısı (yalnızca mobil)** - Cihazda Microsoft Edge web tarayıcısının kullanılmasına izin verin.
 -   **Adres çubuğu aşağı açılan listesi (yalnızca masaüstü)** – Yazdığınızda Edge'in açılan bir listede bir dizi öneri göstermesini durdurmak için bunu kullanın. Edge ile Microsoft hizmetleri arasında ağ bant genişliği kullanımını en aza indirmeye yardımcı olur.
--   **Microsoft tarayıcıları arasında sık kullanılanları eşitle (yalnızca masaüstü) ** – Windows'un Internet Explorer ve Edge arasında sık kullanılanları eşitlemesine izin verir.
+-   **Microsoft tarayıcıları arasında sık kullanılanları eşitle (yalnızca masaüstü)**  – Windows'un Internet Explorer ve Edge arasında sık kullanılanları eşitlemesine izin verir.
 -   **Kullanıcıyı-izleme üst bilgileri gönderme** - Edge tarayıcısını, kullanıcıların ziyaret ettiği web sitelerine izleme (DNT) üst bilgileri gönderecek şekilde yapılandırır.
 -   **Tanılama bilgileri** - Tarayıcının İnternet tanımlama bilgilerini cihaza kaydetmesine olanak tanır.
 -   **JavaScript** - Edge tarayıcısında JavaScript gibi betiklerin çalıştırılmasına izin verir.

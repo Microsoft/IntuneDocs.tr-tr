@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/30/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 053f6449ebe3a4ad375c51d7bbc4ccc9709fdcf7
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Şirket Portalı uygulamasını yüklerseniz ve Android cihazınızı Intune’a kaydederseniz ne olur?
 
@@ -44,7 +44,7 @@ Android cihazınızı kaydettiğinizde, şirketinizin destek birimine cihazını
 
 -   Hüküm ve koşulları kabul etmenizi gerektirebilir.
 
--   Paylaşılmaması gereken hassas iş malzemelerinin fotoğrafını çekmenizi engellemek için kamerayı devre dışı bırakabilir. (yalnızca Samsung KNOX cihazları için geçerlidir, Nexus cihazlarında kullanılamaz).
+-   Paylaşılmaması gereken hassas iş malzemelerinin fotoğrafını çekmenizi engellemek için kamerayı devre dışı bırakabilir.
 
 -   Cihazınızın kaybolma veya çalınma durumunda verilerin korunmasına yardımcı olmak amacıyla cihazınızdaki tüm verilerin şifrelenmesini zorunlu kılabilir.
 

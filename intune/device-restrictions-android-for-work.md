@@ -15,18 +15,19 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c749b72949399dbe709b8ac5554cd919e2b09bc
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android for Work cihaz kısıtlama ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>İş profili ayarları
-- **İş ve kişisel profiller arasında veri paylaşımı** - İş profilindeki uygulamaların kişisel profildeki uygulamalarla paylaşıp paylaşamayacağını denetlemek için bu ayarı kullanın. Bu ayar, uygulamalar içindeki paylaşma eylemlerini (Chrome tarayıcısı uygulamasındaki **Paylaş...** seçeneği gibi) denetler ve kopyala/yapıştır pano davranışında geçerli değildir. [Uygulama koruma ilkesi ayarlarından](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) farklı olarak, cihaz kısıtlama ayarları Azure portalından yönetilir ve yönetilen uygulamaları yalıtmak için Android for Work iş profili bölümünü kullanır. Aşağıdakilerden birini seçin:
+-   **İş profilleri ve kişisel profiller arasında kopyalama ve yapıştırma** - İş uygulamaları ve kişisel uygulamalar arasında kopyalama ve yapıştırma işlemlerini denetler. Engellemeyi etkinleştirmek için **Engelle**’yi seçin. Engellemeyi devre dışı bırakmak için **Yapılandırılmadı**’yı seçin.
+- **İş ve kişisel profiller arasında veri paylaşımı** - İş profilindeki uygulamaların kişisel profildeki uygulamalarla paylaşıp paylaşamayacağını denetlemek için bu ayarı kullanın. Bu ayar, uygulamalar içindeki paylaşma eylemlerini (Chrome tarayıcısı uygulamasındaki **Paylaş...** seçeneği gibi) denetler ve kopyala/yapıştır pano davranışında geçerli değildir. [Uygulama koruma ilkesi ayarlarından](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) farklı olarak, cihaz kısıtlama ayarları Intune portalından yönetilir ve yönetilen uygulamaları yalıtmak için Android for Work iş profili ayrımını kullanır. Aşağıdakilerden birini seçin:
     - **Varsayılan paylaşım kısıtlamaları** - Bu ayar, cihazın çalıştırdığı Android sürümüne göre farklılık gösteren varsayılan paylaşım davranışıdır. Kişisel profilden iş profiline paylaşmaya varsayılan olarak izin verilir. Buna karşın iş profilinden kişisel profile paylaşma varsayılan olarak engellenir. Bu ayar, iş profilinden kişisel profile veri paylaşılmasını önler. Google, 6.0 ve sonrası sürümleri çalıştıran cihazlarda, kişisel profilden iş profiline verileri paylaşmayı engellemek için bir yol sunmaz.   
     - **İş profilindeki uygulamalar kişisel profilden gelen paylaşım isteklerini işleyebilir** - Kişisel profilden iş profiline paylaşıma izin veren bu yerleşik Android özelliğini etkinleştirmek için bu seçeneği kullanın. Etkinleştirildiğinde, kişisel profildeki bir uygulamadan gelen bir paylaşım isteği, iş profilindeki uygulamalarla paylaşım kullanabilir. Bu ayar, 6.0 öncesi sürümleri çalıştıran Android cihazlarının varsayılan davranışıdır.
     - **Sınırların ötesinde paylaşıma izin ver** - İş profili sınırının ötesinde her iki yönde paylaşımı etkinleştirir. Bu ayarı seçtiğinizde, iş profilinizdeki uygulamalar kişisel profildeki rozetsiz uygulamalar ile veri paylaşabilir. Bu ayar ile iş profilindeki yönetilen uygulamalar, cihazın yönetilmeyen kısmındaki uygulamalarla paylaşım yapabilir. O yüzden bu ayarı kullanırken dikkatli olun.

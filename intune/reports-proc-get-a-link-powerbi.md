@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b3436a22543eb07cedb0780984766bcb7faa284
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI ile Veri Ambarına bağlanma
 
@@ -38,6 +38,8 @@ Ayrıca kayıt, uyumluluk, cihaz yapılandırma profili ve yazılım güncelleş
 
 Aşağıdaki adımlar, Power BI dosyasını nasıl indireceğinizi ve OData bağlantısını Power BI ile nasıl kullanacağınızı gösterir.
 
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+
 ## <a name="install-power-bi"></a>Power BI yükleme
 
 En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adresten indirebilirsiniz: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop)
@@ -54,7 +56,7 @@ Power BI dosyası (pbix), kiracınızın bağlantısı bilgisini ve Veri Ambarı
 3.  **Power BI dosyasını indir**’e tıklayın. (pbix) uzantılı dosya, belirttiğiniz konuma indirme yapar.
 4.  Dosyayı Power BI ile açın. *Intune Veri Ambarı Raporları* yüklenir ancak kiracı verilerinizi alması birkaç saniye sürebilir.
 5.  Kiracı verilerinizi yüklemek için **Yenile**’ye tıklayın ve raporları gözden geçirin.
-6.  Power BI’da Azure Active Directory kimlik bilgilerinizle kimlik doğrulamadıysanız, Power BI sizden kimlik bilgilerinizi sağlamanızı ister. Kimlik bilgilerinizi seçerken kimlik doğrulama yöntemi olarak **İş hesabı**’nı seçin.
+6.  Power BI’da Azure Active Directory kimlik bilgilerinizle kimlik doğrulamadıysanız, Power BI sizden kimlik bilgilerinizi sağlamanızı ister. Kimlik bilgilerinizi seçerken kimlik doğrulama yöntemi olarak **Kuruluş hesabı**’nı seçin.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Power BI’da OData bağlantısını kullanarak verileri yükleme
 
@@ -68,8 +70,8 @@ Azure AD’de istemci kimliği doğrulandığı zaman OData URL’si, Veri Ambar
 6. **Temel**’i seçin.
 7. URL kutusuna **OData URL’sini** yazın veya yapıştırın.
 8. **Tamam**’a tıklayın.
-9. Power BI Desktop istemcisinden Azure AD’de kiracınızın kimliğini doğrulamadıysanız, kimlik bilgilerinizi girin.  
-    1.  **İş hesabı**’nı seçin.  
+9. Power BI Desktop istemcisinden Azure AD’de kiracınızın kimliğini doğrulamadıysanız, kimlik bilgilerinizi girin. Verilerinize erişim kazanmak için OAuth 2.0 kullanarak Azure Active Directory’de (Azure AD) yetkilendirilmeniz gerekir.  
+    1.  **Kuruluş hesabını** seçin.  
     2.  Kullanıcı adınızı ve parolanızı yazın.  
     3.  **Oturum Aç**’a tıklayın.  
     4.  **Bağlan**'a tıklayın.  
