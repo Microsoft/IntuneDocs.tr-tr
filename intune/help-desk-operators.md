@@ -1,12 +1,12 @@
 ---
-title: "Yardım masası sorun giderme portalı"
+title: "Yardım masası sorun giderme portalı | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Yardım masası personeli, kullanıcıların teknik sorunlarını çözmek için sorun giderme portalını kullanır"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,58 +14,228 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Kullanıcılara yardımcı olmak için sorun giderme portalını kullanın
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Sorun giderme portalı, yardım masası operatörlerinin ve Intune yöneticilerinin kullanıcı yardım isteklerini ele almak için kullanıcı bilgilerini görüntülemesine izin verir. Kadrolarının bir parçası olarak yardım masası operatörleri olan kuruluşlar **Yardım masası operatörünü** bir grup kullanıcıya atayabilir ve operatör daha sonra kullanıcılara yardım etmek için Sorun Giderme dikey penceresini kullanabilir.
+Sorun giderme portalı, yardım masası operatörlerinin ve Intune yöneticilerinin kullanıcı yardım isteklerini ele almak için kullanıcı bilgilerini görüntülemesine izin verir. Yardım masası bulunan kuruluşlar, kullanıcı gruplarına **Yardım masası işletmeni** atayabilir. Yardım masası işletmeni rolü, **Sorun Giderme** dikey penceresini kullanabilir.
 
-Örneğin, bir kullanıcı Intune ile ilgili teknik bir sorun için destekle bağlantı kurduğunda, yardım masası operatörü kullanıcının adını girer. Intune, şunlar dahil olmak üzere pek çok katman 1 sorununu çözmeye yardımcı veri sunar:
+Bir yardım masası işletmeni rolü atama adımları için bkz. [Intune ile rol tabanlı yönetim denetimi (RBAC)](/intune/role-based-access-control)
+
+Bir kullanıcı, Intune ile ilgili teknik bir sorun için destekle bağlantı kurduğunda yardım masası işletmeni kullanıcının adını girer. Intune, şunlar dahil olmak üzere pek çok katman 1 sorununu çözmeye yardımcı veri sunar:
+
 - Kullanıcı durumu
 - Atamalar
 - Uyumluluk sorunları
 - Cihaz yanıt vermiyor
--   Cihaz VPN veya Wi-Fi ayarlarını alamıyor
--   Uygulama yükleme hatası
+- Cihaz VPN veya Wi-Fi ayarlarını alamıyor
+- Uygulama yükleme hatası
 
-## <a name="add-help-desk-operators"></a>Yardım masası operatörleri ekleme
-Bir Intune yöneticisi olarak bir kullanıcı grubuna Yardım Masası Operatörü rolü atayabilirsiniz. Bu grubun üyeleri, kullanıcıların sorunlarını gidermek için Azure portalını kullanabilir. Azure portalına erişmek için yardım masası operatörlerinin bir Intune lisansı olması gerekir. [Intune kullanıcı lisanslarını atamayı](licenses-assign.md) öğrenin.
+## <a name="to-review-troubleshooting-details"></a>Sorun giderme ayrıntılarını gözden geçirmek için
 
-Yardım masası kullanıcıları eklemek için:
-1. Gerekirse [Intune’a kullanıcı ekleyin](users-add.md).
-2. [Bir yardım masası grubu oluşturun](groups-add.md) ve kullanıcıları gruba ekleyin.
-3. [RBAC Yardım Masası Operatörü rolünü atama](role-based-access-control.md#built-in-roles).
+Sorun giderme dikey penceresinde **Kullanıcı seç**’e tıklayarak kullanıcı bilgilerini görüntüleyin. Kullanıcı bilgileri, kullanıcıların ve cihazlarının geçerli durumunu anlamanıza yardımcı olabilir.  
 
-  ![Intune rollerinin ve Yardım Masası Operatörü gibi yerleşik rollerin listesinin gösterildiği Azure portalı ekran görüntüsü](./media/help-desk-user-add.png) Ayrıca yardım masası operatörlerine erişim vermek için daha sonra değiştirebileceğiniz [bir özel rol oluşturabilirsiniz](role-based-access-control.md#custom-roles).  Yardım masası operatörleri, kullanıcı sorunlarını gidermenize yardımcı olmak için aşağıdaki izinleri gerektirir:
-    - MobileApps: Okuma
-    - ManagedApps: Okuma
-    - ManagedDevices: Okuma
-    - Organization: Okuma
-    - DeviceCompliancePolices: Okuma
-    - DeviceConfigurations: Okuma
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Sorun gider**’i seçin.
+4. **Kullanıcı seç**’e tıklayın.
+5. Adını veya e-posta adresini yazarak bir kullanıcı seçin. **Seçin**’e tıklayın. Kullanıcı için sorun giderme bilgileri, Sorun Giderme dikey penceresinde görüntülenir. Aşağıdaki tablolarda bilgiler açıklanmıştır.
 
-4. Yardım masası operatörlerine hizmet durumunu görüntüleme ve Intune için destek bileti açma izinleri vermek için bir **Hizmet yöneticisi** hesabıyla [kullanıcılara yönetici izinleri verin](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal). **Intune Hizmet yöneticisi** iznini vermeyin çünkü bu dizin rolünde yardım masası operatörleri için gerekenden fazla hak vardır.
+> [!Note]  
+> **Sorun giderme** dikey penceresine ayrıca tarayıcınızı [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) adresine yönlendirerek de erişebilirsiniz.
 
-## <a name="access-the-troubleshooting-portal"></a>Sorun giderme portalına erişme
+## <a name="areas-of-troubleshooting-dashboard"></a>Sorun giderme panosunun alanları
 
-Yardım masası personeli ve Intune yöneticileri sorun giderme portalına iki yolla erişebilir:
-- Bir web tarayıcısında [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) adresine gidin ve yalnızca sorun giderme portalını görüntüleyin.
-  ![Sorun Giderme konsolu ekran görüntüsü](./media/help-desk-console.png)
-- Azure portalında oturum açın, **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’a ve daha sonra **Yardım ve Destek** > **Sorun Giderme**’ye gidin.
+Kullanıcı bilgilerini gözden geçirmek için **Sorun Giderme** dikey penceresini kullanabilirsiniz. 
 
-**Kullanıcı seç**’e tıklayarak bir kullanıcıyı ve ayrıntılarını görüntüleyin.
+![](/intune/media/troubleshooting-dash.png)
 
-## <a name="use-the-troubleshooting-portal"></a>Sorun giderme portalını kullanma
+| Alan | Ad | Açıklama |
+| ---  | ---  | ---         |
+| 1.   | Hesap durumu  | Geçerli Intune kiracısının durumunu **Etkin** veya **Etkin Değil** olarak gösterir.       |
+| 2.   | Kullanıcı seçimi  | Seçili kullanıcının adı. Yeni bir kullanıcı seçmek için **Kullanıcı değiştir**’e tıklayın.       |
+| 3.   | Kullanıcı durumu  | Kullanıcının Intune lisansı, cihaz sayısı, cihazların uyumluluk durumu, uygulama sayısı ve uygulamaların uyumluluk durumunu görüntüler.       |
+| 4.   | Kullanıcı bilgileri  | Dikey pencerede gözden geçirmek istediğiniz ayrıntıları seçmek için listeyi kullanın. <br>Şunları seçebilirsiniz: <ul><li>Mobil uygulamalar<li>Uygulama koruma ilkeleri<li>Uyumluluk ilkeleri<li> Yapılandırma ilkeleri</ul>      |
+| 5.   | Grup üyeliği  | Yadda       |
 
-Sorun giderme portalında, kullanıcıların bilgilerini görüntülemek için **Kullanıcı seç**’e tıklayın. Kullanıcı bilgileri, kullanıcıların ve cihazlarının geçerli durumunu anlamanıza yardımcı olabilir. Sorun giderme portalı aşağıdaki sorun giderme ayrıntılarını gösterir:
-- **Hesap durumu**
-- **Kullanıcı durumu**
-- **Cihazlar** ile cihaz eylemleri
-- **Grup üyeliği**
-- **Uygulama koruma durumu**
+## <a name="mobile-apps-reference"></a>Mobil uygulama başvurusu
+
+Cihazlarda çalışan uygulamalar veya Intune ve Azure Active Directory (AD) ile yönetilen kullanıcılara ait cihazlar.
+
+### <a name="properties"></a>Özellikler
+
+Mobil uygulamaların özellikleri.
+
+| Özellik      | Açıklama                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ad          | Uygulamanın adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| İşletim sistemi            | Cihazda yüklü işletim sistemi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Tür          | Her uygulama için bir atama türü seçebilirsiniz.  <br> **Kullanılabilir** Kullanıcılar Şirket Portalı’ndan veya web sitesinden uygulamayı yükler.  <br> **Uygulanamaz** - Uygulama yüklenmez veya Şirket Portalı’nda gösterilmez. <br> **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.  <br> **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. |
+| Son Değiştirme | Cihaz türünün adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+
+### <a name="devices"></a>Cihazlar
+
+Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
+
+| Özellik           | Açıklama                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Cihaz adı        | Cihaz türünün adı.                                                                                                     |
+| Yöneten         | İlkenin değiştirildiği zaman damgası.                                                                                              |
+| Azure AD katılım türü | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| Sahibi          | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir.                                               |
+| Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
+| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| İşletim sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
+| Son iade      | Cihaz türünün adı.                                                                                                     |
+
+### <a name="app-protection-status"></a>Uygulama koruma durumu
+
+Enterprise Mobility Solution (EMS) teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu, şirket verileriniz Office uygulamaları dahil olmak üzere mobil uygulamalara indirildiğinde, veriler için temel bir koruma sağlar. 
+
+| Özellik    | Açıklama                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Durum      | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir. |
+| Uygulama adı    | Uygulamanın adı                                                           |
+| Cihaz adı | Cihaz türünün adı.                                                       |
+| Cihaz türü | Cihaz türünün adı.                                                       |
+| İlkeler    | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir. |
+| Son eşitleme   | Cihazın Intune ile son eşitlendiği zaman damgası.                   |
+
+## <a name="app-protection-policies-reference"></a>Uygulama koruma ilkeleri başvurusu
+
+EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu, şirket verileriniz Office uygulamaları dahil olmak üzere mobil uygulamalara indirildiğinde, veriler için temel bir koruma sağlar. 
+
+### <a name="properties"></a>Özellikler
+
+Tabloda, Intune ile yönetilen cihazlar için uygulama koruma ilkeleri durumu özetlenmiştir.
+
+| Özellik    | Açıklama                                                                                                                                |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Ad        | Uygulamanın adı.                                                                                                        |
+| Dağıtıldı    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| Platform    | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir.                                               |
+| Kayıt  | Cihaz türünün adı.                                                                                                     |
+| Son Güncelleme | İlkenin değiştirildiği zaman damgası.                                                                                              |
+
+### <a name="devices"></a>Cihazlar
+
+Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
+
+| Özellik           | Metin                                                                                                                                |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Aygıt Adı        | Cihaz türünün adı.                                                                                                     |
+| Yöneten         | İlkenin değiştirildiği zaman damgası.                                                                                              |
+| Azure AD katılım türü | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| Sahibi          | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir.                                               |
+| Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
+| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| İşletim sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
+| Son İade      | Cihaz türünün adı.                                                                                                     |
+
+## <a name="compliance-policies-reference"></a>Uyumluluk ilkeleri başvurusu
+
+Şirket uygulamalarına ve verilerine erişmek için kullanılan cihazların, cihaza erişim için PIN kullanma ve cihazda depolanan verileri şifreleme gibi belirli kurallara uyduğundan emin olmanız gerekir.
+
+### <a name="properties"></a>Özellikler
+
+Uyumluluk ilkelerinin özellikleri.
+
+| Özellik      | Açıklama                                                                                                                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| Ad          | Uygulamanın adı.                                                                                                        |
+| İşletim sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
+| İlke Türü   | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir.                                               |
+| Son Değiştirme | Cihaz türünün adı.                                                                                                     |
+
+### <a name="devices"></a>Cihazlar
+
+Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
+
+| Özellik           | Açıklama                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Cihaz adı        | Cihaz türünün adı.                                                                                                     |
+| Yöneten         | İlkenin değiştirildiği zaman damgası.                                                                                              |
+| Azure AD katılım türü | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| Sahibi          | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir.                                               |
+| Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
+| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| İşletim sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
+| Son iade      | Cihaz türünün adı.                                                                                                     |
+
+### <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
+
+EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu, şirket verileriniz Office uygulamaları dahil olmak üzere mobil uygulamalara indirildiğinde, veriler için temel bir koruma sağlar. 
+
+| Özellik    | Açıklama                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Durum      | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir. |
+| Uygulama adı    | Uygulamanın adı                                                           |
+| Cihaz adı | Cihaz türünün adı.                                                       |
+| Cihaz türü | Cihaz türünün adı.                                                       |
+| İlkeler    | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir. |
+| Son eşitleme   | Cihazın Intune ile son eşitlendiği zaman damgası.                   |
+
+## <a name="configuration-policies-reference"></a>Yapılandırma ilkeleri başvurusu
+
+Satıcıya özgü yapılandırmaları olan mobil uygulamalar için bir uygulama koruma ilkesi kullanılabilir. 
+
+### <a name="properties"></a>Özellikler
+
+Yapılandırma ilkelerinin özellikleri.
+
+| Özellik      | Açıklama                                                                                                                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| Ad          | Uygulamanın adı.                                                                                                        |
+| İşletim sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
+| İlke Türü   | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir.                                               |
+| Son Değiştirme | Cihaz türünün adı.                                                                                                     |
+
+### <a name="devices"></a>Cihazlar
+
+Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
+
+| Özellik           | Açıklama                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Cihaz adı        | Cihaz türünün adı.                                                                                                     |
+| Yöneten         | İlkenin değiştirildiği zaman damgası.                                                                                              |
+| Azure AD katılım türü | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| Sahibi          | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir.                                               |
+| Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
+| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| İşletim sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
+| Son iade      | Cihaz türünün adı.                                                                                                     |
+
+
+### <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
+
+EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu, şirket verileriniz Office uygulamaları dahil olmak üzere mobil uygulamalara indirildiğinde, veriler için temel bir koruma sağlar. 
+
+| Özellik    | Açıklama                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Durum      | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir. |
+| Uygulama adı    | Uygulamanın adı                                                           |
+| Cihaz adı | Cihaz türünün adı.                                                       |
+| Cihaz türü | Cihaz türünün adı.                                                       |
+| İlkeler    | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir. |
+| Son eşitleme   | Cihazın Intune ile son eşitlendiği zaman damgası.                   |
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Kuruluş cihazınızda, mobil uygulama yönetiminde ve veri koruma görevlerinde rol tanımlamak için Rol tabanlı yönetim denetimi (RBAC) hakkında daha fazla bilgi edinebilirsiniz. Daha fazla bilgi için bkz. [Intune ile rol tabanlı yönetim denetimi (RBAC)](/intune/role-based-access-control).
+
+Microsoft Intune’daki tüm bilinen sorunlar hakkında bilgi edinin. Daha fazla bilgi için bkz. [Microsoft Intune’da bilinen sorunlar](/intune/known-issues).
+
+Bir destek biletini oluşturma ve gerektiğinde yardım alma hakkında bilgi edinin. [Destek alın](/intune/get-support).

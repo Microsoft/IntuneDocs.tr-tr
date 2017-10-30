@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/04/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: 04b6d24d5174e49dd6e3f86b534bc59b94344002
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Cihazımı kaydettiğimde şirketim hangi bilgileri görebilir?
 
@@ -46,5 +46,6 @@ Bir cihazı yönetilmek üzere kaydettiğinizde, cihazdaki şirket verilerini ko
 
 **Şirketinizin görme olasılığı olan şeyler**
 
--  Telefon numarası: **Şirkete** ait cihazlarda tam telefon numaranız görülebilir. **Kişisel** cihazlarda ise numaranızın yalnızca son dört hanesi şirketiniz tarafından görülebilir. Tüm cihazlarda **Cihaz Ayrıntıları** sayfasını açarak cihazın **Sahiplik Türü**’nü görebilirsiniz. 
+-  Telefon numarası: **Şirkete** ait cihazlarda tam telefon numaranız görülebilir. **Kişisel** cihazlarda ise numaranızın yalnızca son dört hanesi şirketiniz tarafından görülebilir. Tüm cihazlarda **Cihaz Ayrıntıları** sayfasını açarak cihazın **Sahiplik Türü**’nü görebilirsiniz.
 -  Konum: Şirketiniz asla cihazınızın konumunu göremez ancak denetimli bir iOS cihazını kaybetmeniz durumunda cihaz konumu görülebilir. [Nasıl bilgi edinirim?](https://go.microsoft.com/fwlink/?linkid=853816)
+- Uygulama envanteri: şirketiniz Mobil Tehdit Savunması kullanıyorsa cihazınızdaki uygulamalar hakkında daha fazla ayrıntı görüntüleyebilecektir. [Mobil Tehdit Savunması](you-are-prompted-to-install-mtd-ios.md) hakkında daha fazla bilgi edinin.

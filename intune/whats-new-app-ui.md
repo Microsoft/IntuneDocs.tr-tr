@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune ve son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu yenilikler, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
+
+## <a name="week-of-october-16-2017"></a>16 Ekim 2017 Haftası
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Şirket Portalı web sitesine arama iyileştirmeleri <!--1331697-->
+[Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) başlayarak uygulama arama becerilerimizi iyileştiriyoruz. Artık aramalar, Ad ve Açıklama alanlarına ek olarak uygulama kategorilerinde de gerçekleştirilecek. Varsayılan olarak sonuçlar, azalan ilgi düzeyine göre sıralanacak. 
+
+Şirket Portalı web sitesi, iOS için Şirket Portalı uygulamasının da bir parçası olarak kullanıldığı için bu değişikliği iOS kullanıcıları da alacaktır. Android ve Windows için Şirket Portalı uygulamaları, gelecek aylar içerisinde benzer güncelleştirmeler alacaktır.
+
+Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıyoruz, bu nedenle lütfen Şirket Portalı web sitesinin en altında bulunan “Geri Bildirim” bağlantısını kullanarak bizi konuyla ilgili bilgilendirin.
+
+
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>iOS Şirket Portalı büyük simgeler görüntülüyor <!-- 1454593 -->
+Bu sürümde iOS Şirket Portalı’nın uygulama kutucuğunda simgeleri görüntülemesiyle ilgili bilinen bir sorunu çözüyoruz. 120x120 piksel veya daha büyük boyutlu uygulama simgeleri yüklerseniz bunlar artık [Şirket portalı web sitesinde](https://portal.manage.microsoft.com) ve iOS Şirket Portalı uygulama sayfalarında bütün uygulama kutucuğunu kaplayacak şekilde görüntülenecek.
+
+
+
+
+
 
 ## <a name="week-of-october-2-2017"></a>2 Ekim 2017 haftası
 
@@ -67,7 +85,7 @@ Android için Şirket Portalı uygulamasında kayıt işlemi, son kullanıcılar
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="week-of-august-28-2017"></a>28 Ağustos 2017 Haftası
+## <a name="august-2017"></a>Ağustos 2017
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail uygulaması OAuth destekleyecek <!---1196951--->
 
@@ -87,7 +105,7 @@ Intune ile koşullu erişim, OAuth bulunan iOS cihazlarda daha güvenli kimlik d
 
 ![Kullanıcıdan cihazı Şirket Portalı web sitesinden kaydetmesi istenir.](./media/ios-11-ca-email-after-1708-07.png)
 
-## <a name="week-of-august-21-2017"></a>21 Ağustos 2017 Haftası
+
 
 ### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune Mobil Uygulama Yönetimi (MAM) iletişim kutularının modern arabirimi olacak <!-- 1199015 -->
 
@@ -102,15 +120,13 @@ Intune Mobil Uygulama Yönetimi (MAM) iletişim kutuları, modern bir görünüm
 ![modern arabirim](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## <a name="week-of-august-14-2017"></a>14 Ağustos 2017 Haftası
-
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10 için Şirket Portalı uygulamasının “Cihaz Ayrıntıları” sayfasına güncelleştirmeler <!---1287448--->
 
 Windows 10 için Şirket Portalı uygulaması, __Kategori__ etiketini başlığın altından __Cihaz Ayrıntıları__ sayfasındaki bir özelliğe taşıyor.
 
 ![Windows için Şirket Portalı uygulaması, “Kategoriler” alanını “Cihaz Ayrıntıları” ekranındaki başlığın altında göstermek yerine artık bir özellik olarak gösteriyor.](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="week-of-july-31-2017"></a>31 Temmuz 2017 Haftası
+## <a name="july-2017"></a>Temmuz 2017
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Uygulama ayrıntıları sayfaları, Android cihazlar için yeni bilgiler görüntüler <!--1287476-->
 
@@ -164,7 +180,7 @@ Bir tarayıcı başlatın ve [https://aka.ms/devicelogin](https://aka.ms/devicel
 
 ![Kimlik doğrulama işleminden sonra, Şirket Portalı uygulaması oturum açar ve bunu bir yükleme çubuğuyla belirtir.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="week-of-june-12-2017"></a>12 Haziran 2017 haftası
+## <a name="june-2017"></a>Haziran 2017
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Android için Şirket Portalı uygulamasının artık Uygulama Koruma İlkeleri için yeni bir son kullanıcı deneyimi vardır <!--1305217-->
 Müşteri geri bildirimi doğrultusunda, Android için Şirket Portalı uygulamasını bir **Şirket İçeriğine Eriş** düğmesi gösterecek şekilde değiştirdik. Amaç, son kullanıcıların yalnızca, Intune mobil uygulama yönetiminin bir özelliği olan Uygulama Koruma İlkelerini destekleyen uygulamalara erişmek için gereksiz yere kayıt işlemi yapmalarını engellemektir.
@@ -210,8 +226,6 @@ Kullanıcı geri bildirimi doğrultusunda, Android için Şirket Portalı uygula
 ![Android Şirket Portalı uygulamasının bir görüntüsü, eylem menüsüyle birlikte sağ üst köşede açılır. Yeni "şirket portalını kaldır" seçeneği; "profilim" ve "ayarlar" seçeneklerinin altında ve "hüküm ve koşullar", "yardım ve geri bildirim" ve "hakkında" seçeneklerinin üstünde üçüncü bir seçenek olarak bulunur.](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![Eylem menüsünden "şirket portalını kaldır" seçeneği işaretlendikten sonra görünen onay iletişim kutusunun bir görüntüsü. İletişim kutusu, kullanıcıyı "şirket portalını kaldırdığınızda, cihazınız artık BT yöneticiniz tarafından yönetilmeyecek ve şirket verilerine, şirket uygulamalarına ve şirket e-postasına erişim kaldırılabilir" metniyle bilgilendirir. Ardından kullanıcıdan Şirket Portalı uygulamasını kaldırmak istediğini "Evet"'i seçerek onaylamasını ister.](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## <a name="week-of-june-5-2017"></a>5 Haziran 2017 haftası
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>iOS için Şirket Portalı uygulamasında uygulama kutucukları iyileştirmeleri <!--1230777-->
 Şirket Portalı için ayarladığınız marka rengini yansıtmak için giriş sayfasındaki uygulama kutucuklarının tasarımı güncelleştirildi.

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab24b147b32c94ba51728c0c223de3e6c92dd215
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
+ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>En son ilkeleri ve eylemleri almak için cihazları Intune ile eşitleme
 
@@ -29,11 +29,11 @@ Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorl
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
-- Windows - Desteklenir
-- Windows Phone - Desteklenir
-- iOS - Desteklenir
-- macOS - Desteklenir
-- Android - Desteklenir
+- Windows
+- Windows Phone
+- iOS
+- Mac OS
+- Android
 
 ## <a name="how-to-sync-a-device"></a>Bir cihazı eşitleme
 
@@ -43,6 +43,26 @@ Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorl
 4. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
 5. Yönettiğiniz cihazların listesinden bir cihaz seçin, sonra **Eşitle** uzak işlemini seçin.
 7. Eylemi doğrulamak için **Evet** 'i seçin.
+
+
+## <a name="retriable-error-codes"></a>Yeniden denenebilir hata kodları
+
+Bir yönetici **Eşitle** cihaz eylemini çalıştırdığında, başarısız olan ancak yeniden denenebilir bir hata kodu veren iOS ve Android uygulamaları o cihaz için kullanılabilir. Ancak yeniden denenemez bir hata kodu vermiş uygulamalar, cihaz için kullanılabilir hale gelmeden önce yedi gün beklemek zorundadır.
+
+
+| Hata Kodu  | Önerilen Açıklama                                                                                                                  | Yeniden denenebilir |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 2016330898 | Bilinmeyen bir hata oluştu.                                                                                                             | Hayır        |
+| 2016330897 | Intune bağlantınız zaman aşımına uğradı. Bağlantınızı sıfırlayın                                                                             | Evet       |
+| 2016330896 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın.                                                                            | Evet       |
+| 2016330895 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın.                                                                            | Evet       |
+| 2016330894 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın.                                                                            | Evet       |
+| 2016330893 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın.                                                                            | Evet       |
+| 2016330892 | Uluslararası dolaşım devre dışı bırakıldı.                                                                                                     | Hayır        |
+| 2016330891 | Telefon görüşmesi yapılırken bu cihaz için hücresel veri bağlantısına erişilemez. Görüşmenin sonlanmasını bekleyin. | Evet       |
+| 2016330890 | Bu cihaz için hücresel ağ. Bu cihazlar şu anda kullanılamıyor.                                                   | Hayır        |
+| 2016330889 | Güvenli bağlantı başarısız oldu. Bağlantınızı sıfırlayın.                                                                                   | Evet       |
+| 2016330888 | Sunucu güven değerlendirmesi başarısız oldu.                                                                                                | Hayır        |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
