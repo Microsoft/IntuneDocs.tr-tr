@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>Microsoft Intune için erken sürüm - Ekim 2017
 
@@ -151,19 +151,6 @@ Android Oreo sürümüyle Google, kuruluşların güvenli uygulamalar çalışt�
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Windows 10 sürüm yükseltme ilkesi desteği <!-- 903672(archived), 1119689 -->  
 Windows 10 cihazları; Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education ve Windows 10 Professional Education N’e yükselten bir Windows 10 sürüm yükseltme ilkesi oluşturabileceksiniz. Windows 10 sürüm yükseltmeleri hakkında daha fazla bilgi için bkz. [Windows 10 sürüm yükseltmelerini yapılandırma](edition-upgrade-configure-windows-10.md).
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Android eklentileri için Intune MAM ve Outlook  <!-- 1450688 -->
-Birkaç hafta içerisinde Office ekibi, Android için Outlook eklentilerini duyuracak. Bu eklenti özellikleri kümesi Windows, iOS, web ve Mac için Outlook uygulamalarında zaten mevcuttur. Eklentiler Exchange yoluyla yönetildiğinden, eklentilere erişim Exchange yöneticiniz tarafından kapatılmadığı sürece, kullanıcılar Outlook’ta ve yönetilmeyen eklenti uygulamalarda veri ve iletileri kopyalayabilir ve paylaşabilir. 
-
-Eklentilere kullanıcı izinlerini yönetmek için MAM veri koruma ilkelerinizin eklentilerde de geçerli olduğundan emin olmak adına Exchange yöneticinizle görüşün.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Exchange ilkeleriniz zaten eklentileri dışarıdan yüklemeyi veya yüklemeyi önleyecek şekilde ayarlıysa burayı okumanıza gerek yoktur. MAM ilkeleriniz beklendiği gibi uygulanacaktır. Ancak Android’de Outlook dahilinde kesme, kopyalama ve yapıştırma işlemlerini kısıtlayacak şekilde MAM’da ilkeler ayarladıysanız ve Exchange’de eklenti ilkenizi ayarlamadıysanız varsayılan olarak kullanıcıların Outlook’a eklenti yükleyebileceğini bilmeniz gerekir. Bu eklentiler ileti gövdesine, konusuna ve diğer ileti özelliklerine erişebilir. Exchange Yöneticinize “Market Uygulamalarım” ve “Özel Uygulamalarım” rollerini kaldırarak kullanıcıların eklenti yüklemesini engelleyebilirsiniz.
-
-Exchange’deki ayar değişikliği Outlook’un Windows, iOS, web, Mac ve mobil sürümlerinde geçerli olacaktır. 
-
-#### <a name="what-do-i-need-to-do"></a>Neler yapmam gerekir?
-Hemen Exchange ilkelerinizi gözden geçirin. BT ve yardım masası çalışanlarınızı bilgilendirin. Sorularınız veya aklınıza takılanlar konusunda destek ekibimizle iletişime geçin. 
 
 
 
