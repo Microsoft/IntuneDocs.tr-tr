@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 76b709f97b349966fbca7115959f64a56741380b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows AutoPilot Dağıtım Programını kullanarak Windows cihazları kaydetme
 Windows AutoPilot Dağıtım Programı, cihaz sağlamayı kolaylaştırır. Bugün, özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman almaktadır. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de çok vakit harcayabilirsiniz. Microsoft Intune ve AutoPilot ile özel işletim sistemi görüntülerini derleme, bakım ve uygulama zahmetine katlanmanız gerekmeden son kullanıcılarınıza yeni cihazlar verebilirsiniz. AutoPilot cihazları yönetmek için Intune kullandığınızda cihazlar kaydedildikten sonra ilkeler, profiller, uygulamalar gibi özellikleri yönetebilirsiniz. Faydalar, senaryolar ve önkoşullara genel bir bakış için bkz. [Windows AutoPilot’a Genel Bakış](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -47,13 +47,16 @@ AutoPilot dağıtım profilleri, AutoPilot cihazları yapılandırmak için kull
    - **Gizlilik ayarları**: Gizlilik ayarlarının kullanıcılara gösterilip gösterilmeyeceğini seçin. 
    - **Son kullanıcı lisans sözleşmesi (EULA)**: EULA’nın kullanıcılara gösterilip gösterilmeyeceğini seçin.
    - **Kullanıcı hesap türü**: Kullanıcı hesabının türünün **Yönetici** mi **Standart** mı olacağını seçin.
+
+     > [!Note]    
+     > Bu ayar, Genel Yönetici veya Şirket Yöneticisi hesapları için geçerli değildir. Bu hesaplar, Azure AD’deki tüm yönetim özelliklerine erişebildikleri için standart kullanıcılar olamaz.
 8. Profili oluşturmak için **Oluştur**’a tıklayın. AutoPilot dağıtım profili artık cihazlara atanmak üzere hazırdır.
      
-   > [!Note]    
-   > Aşağıdaki ayarlar, tüm AutoPilot dağıtım profillerinde yapılandırılır:
-   > - Skip Cortana, OneDrive ve OEM kayıt kurulum sayfaları
-   > - İş veya okul için otomatik olarak ayarlama
-   > - Şirket veya okul markasıyla oturum açma deneyimi    
+> [!Note]    
+> Aşağıdaki ayarlar, tüm AutoPilot dağıtım profillerinde yapılandırılır:
+> - Skip Cortana, OneDrive ve OEM kayıt kurulum sayfaları
+> - İş veya okul için otomatik olarak ayarlama
+> - Şirket veya okul markasıyla oturum açma deneyimi    
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Bir AutoPilot dağıtım profili atama
 AutoPilot dağıtım profilleri oluşturduktan sonra bunları seçili cihazlara atayabilirsiniz.

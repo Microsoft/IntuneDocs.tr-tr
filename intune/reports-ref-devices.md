@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
@@ -130,10 +130,23 @@ ms.lasthandoff: 10/20/2017
 
 **MdmStatuses** varlığı, cihazın uyumluluk durumunu gösterir.
 
-| Özellik  | Açıklama | Örnek |
+| Özellik  | Açıklama |
+|---------|------------|
+| MdmStatusID |Uyumluluk durumu için benzersiz tanımlayıcı |
+| MdmStatusKey |Veri ambarındaki uyumluluk durumunun benzersiz tanımlayıcısı - vekil anahtar | 
+| ComplianceStatus |Cihaz uyumluluk durumu aşağıdaki tablodaki değerlerden birine sahip olmalıdır | 
+
+
+## <a name="example"></a>Örnek
+
+| MdmStatusID  | ComplianceStatus | Açıklama |
 |---------|------------|--------|
-| MdmStatusName |MdmStatus Tanımlayıcısı |0 - Bilinmeyen <br>1 - Uyumlu <br>2 - Uyumlu Değil |
-| MdmStatusKey |Veri ambarındaki uyumluluk durumunun benzersiz tanımlayıcısı - vekil anahtar | |
+| 0 |Bilinmiyor |Cihaz uyumluluk durumu bilinmiyor. |
+| 1 |Uyumlu |Cihaz uyumlu. |
+| 2 |Uyumsuz |Cihaz uyumlu değil. |
+| 3 |Çakışma |Cihazın uyumluluğu çakışma ile sonuçlandı. |
+| 4 |Hata |Cihazın uyumluluk durumunda bir okuma hatası vardı. |
+
 
 ## <a name="managementstates"></a>ManagementStates
 
@@ -217,8 +230,8 @@ ms.lasthandoff: 10/20/2017
 | DeviceKey | Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. |
 | DeviceId | Cihazın benzersiz tanımlayıcısı. |
 | DeviceName | Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılabilir olamaz. |
-| DeviceTypeKey | Cihaz için cihaz türü özniteliğinin anahtarı. |
-| ClientRegisterationStateKey | Cihaz için istemci kayıt durumu özniteliğinin anahtarı. |
+| DeviceTypeKey | Bu cihaz için cihaz türü özniteliğinin anahtarı. |
+| ClientRegisterationStateKey | Bu cihaz için istemci kayıt durumu özniteliğinin anahtarı. |
 | OwnerTypeKey | Cihaz için sahip türü özniteliğinin anahtarı: şirket, kişisel veya bilinmeyen. |
 | objectSourceKey | Bu sütunu yoksayın. |
 | CreatedDate | Cihazın kaydedildiği tarih. |

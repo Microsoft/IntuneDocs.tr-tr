@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 82b839943d21cd44c1be457cc8436928f41fe73c
-ms.sourcegitcommit: b6a2d55d9c4e3248ff7ef738393f458f1978de44
+ms.openlocfilehash: 8dce9dea82673ebabd4170c74e4212c1da26382c
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -45,7 +45,7 @@ Bir Intune yöneticisi olarak, IMEI numaralarını veya seri numaraları listele
 [Android cihazlarda seri numaranızı bulmayı öğrenin](https://support.google.com/store/answer/3333000).
 
 ## <a name="add-corporate-identifiers"></a>Kurumsal tanımlayıcılar ekleme
-Listeyi oluşturmak için iki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. IMEI numaralarını veya seri numaraları sol sütuna, ayrıntıları sağ sütuna ekleyin. Tek bir .csv dosyasında yalnızca tek bir kimlik türü: IMEI veya seri numarası içeri aktarılabilir. Ayrıntılar 128 karakterle sınırlıdır ve yalnızca yönetimsel kullanım içindir. Ayrıntılar cihazda görüntülenmez. Her .csv dosyası için geçerli sınır 500 satırdır.
+Listeyi oluşturmak için iki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. IMEI numaralarını veya seri numaraları sol sütuna, ayrıntıları sağ sütuna ekleyin. Tek bir .csv dosyasında yalnızca tek bir kimlik türü: IMEI veya seri numarası içeri aktarılabilir. Ayrıntılar 128 karakterle sınırlıdır ve yalnızca yönetimsel kullanım içindir. Ayrıntılar cihazda görüntülenmez. Her .csv dosyası için geçerli sınır 5.000 satırdır.
 
 **Seri numaraları olan bir .csv dosyası yükleme** – Üst bilgi içermeyen, iki sütunlu, virgülle ayrılmış değer (.csv) listesini oluşturun ve .csv dosyası başına 5.000 cihaz veya 5 MB ile sınırlayın.
 

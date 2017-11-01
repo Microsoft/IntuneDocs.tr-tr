@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,47 +15,44 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d18ef2119ed0f8adc63f6675024c8e694235ee35
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 09f3edbe8b53371514ae4826246c99201c005762
+ms.sourcegitcommit: b5692ee05e8be1842cb1007facf80c9bce972dc4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bir Windows 10 uygulama koruma ilkesi oluşturmadan önce, Azure AD’de MAM sağlayıcıyı kurarak Windows 10 için mobil uygulama yönetimini (MAM) etkinleştirmeniz gerekir. Bu yapılandırma, Intune ile yeni bir Windows Bilgi Koruması (WIP) ilkesi oluştururken kayıt durumunu tanımlamanızı sağlar.
-
-> [!NOTE]
-> Kayıt durumu MAM ya da mobil cihaz yönetimi (MDM) olabilir.
-
-## <a name="to-configure-the-mam-provider"></a>MAM sağlayıcısını yapılandırmak için
-
-1.  [Azure Portal](https://portal.azure.com/)’a gidin ve Intune kimlik bilgilerinizle oturum açın.
-
-2.  Sol menüden **Azure Active Directory**’yi seçin.
-
-    ![MAM sağlayıcı yapılandırması](./media/mam-provider-sc-1.png)
-
-3.  **Azure AD** dikey penceresi açıldığında, **Mobility (MDM ve MAM)** seçeneğini işaretleyin, ardından **Microsoft Intune**’a tıklayın.
-
-    ![Mobility MDM ve MAM](./media/mam-provider-sc-1.png)
-
-4.  Yapılandırma dikey penceresi açıldığında, önce **Varsayılan MAM URL'lerini geri yükle**’yi seçin, sonra şunları yapılandırın:
-
-    a.  MAM kullanıcı kapsamı: MAM’yi Windows 10 cihazları kullanan belirli bir kullanıcı grubundaki veya tüm kullanıcılardaki kurumsal verileri korumak için kullanabilirsiniz.
-
-    b.  MAM kullanım koşulları URL’si: MAM hizmetinin kullanım koşulları uç noktasının URL'si. Son kullanıcılara MAM hizmetinin koşullarını görüntülemek için kullanılır.
-
-    c.  MAM bulma URL'si: Uygulama koruma ilkeleri uygulamaları gerektiğinde cihazların aradığı URL’dir.
-
-    d.  MDM uyumluluğu URL’si:
-
-5.  Bu ayarları yapılandırdıktan sonra **Kaydet**’i seçin.
+Azure AD’de MAM sağlayıcısını ayarlayarak Windows 10 için mobil uygulama yönetimini (MAM) etkinleştirin. Azure AD’de bir MAM sağlayıcısı ayarlamak, Intune ile yeni bir Windows Bilgi Koruması (WIP) ilkesi oluştururken kayıt durumunu belirtmenizi sağlar. Kayıt durumu MAM ya da mobil cihaz yönetimi (MDM) olabilir.
 
 > [!NOTE]
 > MAM kayıt durumu olan cihazların Azure AD’ye katılması gereklidir.
+
+## <a name="to-configure-the-mam-provider"></a>MAM sağlayıcısını yapılandırmak için
+
+1. Azure portalında oturum açın ve **Azure Active Directory** seçeneğini belirleyin.
+
+2. **Yönet** grubunda **Mobilite (MDM ve MAM)** öğesini seçin.
+
+3. **Microsoft Intune**’a tıklayın.
+
+4. **Yapılandır** dikey penceresinde **Varsayılan MAM URL’lerini geri yükle** grubundaki ayarları yapılandırın.
+
+    **MAM kullanıcı kapsamı**  
+      Çalışanlarınızın Windows cihazlarındaki kurumsal verileri yönetmek için MAM otomatik kaydı kullanın. MAM otomatik kayıt, kendi cihazını getir senaryoları için yapılandırılacaktır.<ul><li>**Yok.**<br>Tüm kullanıcıların MAM’a kayıt olup olamayacağını seçin.</li><li>**Bazı**<br>MAM’a kayıt olacak kullanıcıları içeren Azure AD gruplarını seçin.</li><li>**Tümü**<br>Tüm kullanıcıların MAM’a kayıt olup olamayacağını seçin.</li></ul>
+
+    **MDM kullanım koşulları URL’si**  
+     MAM hizmeti uç noktasının kullanım koşulları URL’si. Uç nokta kullanım koşulları, son kullanıcılar cihazlarını yönetime kaydetmeden önce kullanım koşullarını göstermek için kullanılır. Kullanım koşulları metni, mobil cihazda zorlanan ilkeler hakkında kullanıcıyı bilgilendirir.
+
+    **MDM bulma URL’si**  
+    MAM hizmeti kayıt uç noktası URL'si. Kayıt uç noktası, cihazları MAM hizmetine yönetim için kaydetmek üzere kullanılır.
+
+    **MAM uyumluluğu URL’si**  
+      MAM hizmeti uyumluluk uç noktası URL’si. Bir kullanıcının uyumlu olmayan bir cihazdaki kaynağa erişimi reddedilirse kullanıcıya uyumluluk URL’sine bir bağlantı gösterilir. Kullanıcılar, cihazlarının neden uyumlu olmadığını görmek isterse MAM hizmeti tarafından barındırılan bu URL’ye gidebilir. Kullanıcılar, cihazlarını uyumlu hale getirip kaynaklara erişmeye devam etmek için self servis düzeltme de başlatabilir.
+
+5.  **Kaydet**'e tıklayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

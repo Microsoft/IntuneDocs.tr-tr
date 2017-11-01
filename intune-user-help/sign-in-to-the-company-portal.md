@@ -1,11 +1,11 @@
 ---
 title: "Şirket Portalı uygulamasında oturum açma | Microsoft Docs"
-description: 
+description: "Birden çok platformdaki Şirket Portalı uygulamasında oturum açmayı öğrenin."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Şirket Portalı uygulamasında nasıl oturum açarım? <!--User Story 1132123-->
 
@@ -50,6 +50,16 @@ Aşağıdaki resimler iOS için olsa da Android ve Windows cihazlar için de sü
 4. Şirket Portalı, oturum açma bilgilerinizi kabul ettikten sonra oturumunuzu açar ve siz de şirket kaynaklarınıza erişebilirsiniz.   
 
   ![Kimlik doğrulama işleminden sonra, Şirket Portalı uygulaması oturum açar ve bunu bir yükleme çubuğuyla belirtir.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="signing-in-with-certificate-based-authentication"></a>Sertifika tabanlı kimlik doğrulaması ile oturum açma
+
+1.  Cihazınızda Şirket Portalı uygulamasını açın.
+
+2.  **İş veya okul hesabınızı** girin.
+
+3.  **Sertifika ile oturum açma** bağlantısına dokunun.
+
+4.  Sertifikayı kullanmak için **Devam**’a dokunun.
 
 ## <a name="signing-in-from-another-device"></a>Başka bir cihazdan oturum açma
 
