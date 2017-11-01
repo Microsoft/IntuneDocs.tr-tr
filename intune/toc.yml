@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: Uygulamaları izleme
           href: apps-monitor.md
-        - name: iOS uygulama yapılandırma profilleri
-          href: app-configuration-policies-use-ios.md
-        - name: Android uygulama yapılandırma profilleri
-          href: app-configuration-policies-use-android.md
+        - name: Uygulama yapılandırma ilkeleri
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS yönetilen cihazlar
+              href: app-configuration-policies-use-ios.md
+            - name: Android yönetilen cihazlar
+              href: app-configuration-policies-use-android.md
+            - name: Yönetilen uygulamalar
+              href: app-configuration-policies-managed-app.md
         - name: iOS uygulama sağlama profillerini kullanma
           href: app-provisioning-profile-ios.md
         - name: Uygulamaları seçmeli silme
@@ -381,6 +386,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows ilkesi oluşturma
           href: compliance-policy-create-windows.md
+        - name: Uyumsuzluğa yönelik eylemler
+          href: actions-for-noncompliance.md
         - name: Cihaz uyumluluğunu izleme
           href: compliance-policy-monitor.md
     - name: Koşullu erişimi ayarlama
