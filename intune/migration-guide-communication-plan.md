@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 59b978fa9c9084c5a70c912ca6a9b1e6c364722c
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="plan-communications"></a>İletişimi planlama
 
@@ -52,6 +52,8 @@ Intune’un, kullanıcılarınızı cihaz kaydına teşvik etmek için kullanabi
 -   [Son kullanıcılarınızı Microsoft Intune hakkında eğitme](end-user-educate.md) başlığında, mobil işletim sistemi platformuna göre kayıt adımları ayrıntılı olarak açıklanmıştır.
 
 -   [BT yöneticileri için Intune son kullanıcı kayıt şablonu](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a); Android, iOS ve Mac cihazların Intune’a nasıl kaydedileceğini açıklayan, özelleştirilebilir bir Word dosyasıdır.
+
+-   [EMS için FastTrack nasıl yapılır kılavuzları ve e-postaları](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c), Intune ve EMS’nin kuruluşunuzda benimsenmesini artırmak için şirketinizin logosuyla özelleştirilebilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
