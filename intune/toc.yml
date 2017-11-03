@@ -545,6 +545,8 @@
     - name: Intune Veri Ambarını kullanma
       href: reports-nav-create-intune-reports.md
       items:
+        - name: Değişiklik günlüğü için veri ambarı
+          href: reports-changelog.md
         - name: Power BI ile Veri Ambarına bağlanma
           href: reports-proc-get-a-link-powerbi.md
         - name: OData akışına Power BI ile bir rapor oluşturma
@@ -602,18 +604,20 @@
         - name: Veri Ambarı veri modeli
           href: reports-ref-data-model.md
           items:
-            - name: Tarih varlığı için başvuru
-              href: reports-ref-date.md
-            - name: Kullanıcı varlığı için başvuru
-              href: reports-ref-user.md
-            - name: Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
-              href: reports-ref-mobile-app-management.md
-            - name: Cihaz varlıkları için başvuru
-              href: reports-ref-devices.md
             - name: Uygulama varlıkları için başvuru
               href: reports-ref-application.md
-            - name: Kullanıcı cihazı ilişkilendirme varlığı için başvuru
-              href: reports-ref-userdeviceassociations.md
+            - name: Veri varlığı için başvuru
+              href: reports-ref-date.md
+            - name: Cihaz varlıkları için başvuru
+              href: reports-ref-devices.md
+            - name: Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
+              href: reports-ref-mobile-app-management.md
+            - name: İlke varlıkları için başvuru
+              href: reports-ref-policy.md
+            - name: Kullanıcı Cihaz İlişkisi için başvuru
+              href: reports-ref-user-device.md
+            - name: Kullanıcı varlığı için başvuru
+              href: reports-ref-user.md
     - name: Windows uygulamalarını dışarıdan yükleme
       href: intune-graph-apis.md
       items:
