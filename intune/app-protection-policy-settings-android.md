@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Android uygulama koruma ilkesi ayarları
 Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -90,4 +90,3 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penc
 | **En düşük Android işletim sistemini zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük Android işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazdaki Android sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir. | Hayır |
 | **En düşük uygulama sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük uygulama sürümünü zorunlu tutmak üzere **Evet**’i seçin. Cihazın uygulama sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.<br><br>Hedeflenecek uygulamaları seçerken uygulamalar arasında genellikle farklı sürüm oluşturma düzenleri gerektiğini unutmayın.<br><br> | Hayır | 
 | **En düşük uygulama sürümünü zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük uygulama sürümünü önermek için **Evet**’i seçin. Cihazdaki uygulama sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.<br><br>Hedeflenecek uygulamaları seçerken uygulamalar arasında genellikle farklı sürüm oluşturma düzenleri gerektiğini unutmayın.<br><br> | Hayır | 
-
