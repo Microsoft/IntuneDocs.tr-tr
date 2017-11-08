@@ -610,6 +610,8 @@
               href: reports-ref-date.md
             - name: Cihaz varlıkları için başvuru
               href: reports-ref-devices.md
+            - name: Intune yönetim uzantısı için başvuru
+              href: reports-ref-intunemanagementextension.md
             - name: Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
               href: reports-ref-mobile-app-management.md
             - name: İlke varlıkları için başvuru
