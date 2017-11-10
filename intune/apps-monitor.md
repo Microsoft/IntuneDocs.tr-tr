@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 Intune, yönettiğiniz uygulamanın özelliklerini ve bunların atama durumunu izleyebilmeniz için çeşitli yollar sağlar.
 
-1. **Mobil Uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
-2. Uygulama listesi dikey penceresinde bilgilerini görmek istediğiniz uygulamayı seçin. <*uygulama adı*> **Cihaz yükleme durumu** dikey penceresi görüntülenmelidir: ![Uygulama yükleme durumu dikey penceresi.](./media/monitor-apps.png)
+1. Azure portalında oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
+3. **Mobil uygulamalar** iş yükünde **Yönet** grubunda **Uygulamalar**’ı seçin.
+     
+    ![Uygulama yükleme durumu dikey penceresi.](./media/monitor-apps.png)
+5. Uygulama listesi dikey penceresinde bir uygulama seçin. <*uygulama adı*> **Cihaz yükleme durumu** dikey penceresi görüntülenir.
+
+Cihaz yükleme durumu raporu aşağıdaki sütunları içerir:
+
+1.  **Cihaz Adı** Cihaz türünün adı.
+2.  **Kullanıcı Adı** Kullanıcı adı.
+3.   **Platform** Cihazda yüklü işletim sistemi.
+4.  **Sürüm** Uygulamanın sürüm numarası.
+5.   **Durum** Uygulamalar için olası durumlar şunlardır: **Yüklü**, **Yüklü Değil**, **Yükleme Bekleniyor** ve **Hata**.
+6. **Durum Ayrıntıları** Cihazdaki uygulama durumunun okunabilir bir açıklaması.
+7. **Son İade** Cihazın Intune’a son iade edilme zamanı.
 
 Ardından, uygulamalarınız ve onların atamaları hakkında daha fazla bilgi edinmek için aşağıdaki işlemlerden birini yapın.
 

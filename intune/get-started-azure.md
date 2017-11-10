@@ -1,12 +1,12 @@
 ---
 title: "Azure portalını kullanmaya başlama"
 titlesuffix: Azure portal
-description: "Azure portalında Intune ile pano oluşturma ve paylaşma hakkında bilgi edinin."
+description: "Azure portalında Intune için pano oluşturma ve paylaşma hakkında bilgi edinin."
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Azure portalında Intune’u kullanmaya başlama
 
-Azure portalı, Intune hizmetini bulabileceğiniz yerdir. Azure portalında, birçoğunu düzenli olarak kullanmayacağınız bir sürü hizmet mevcuttur. Panonuzu ve kenar çubuğunuzu özelleştirmek, Intune ile cihaz yönetmek üzere her oturum açtığınızda doğru bilgileri hızla bulmanıza yardımcı olur.
+Azure portalı, Intune hizmetini bulabileceğiniz yerdir. Azure’da, birçoğunu düzenli olarak kullanamayacağınız birçok hizmet mevcuttur. Panonuzu ve kenar çubuğunuzu özelleştirmek, Intune ile cihaz yönetmek üzere her oturum açtığınızda doğru bilgileri hızla bulmanıza yardımcı olur.
 
 ## <a name="changing-the-sidebar"></a>Kenar çubuğunu değiştirme
 
@@ -52,7 +52,7 @@ Bu özellik, Intune’a kullanıcı ve gruplar gibi daha fazla içerik eklediği
 
 ## <a name="using-services"></a>Hizmetleri kullanma
 
-Intune’u veya Azure’da herhangi bir hizmeti açtığınızda bu, bir **dikey pencerede** görüntülenir. Intune’da **Kullanıcılar**, **Gruplar** ve **Mobil uygulamalar** gibi ilk kullandığınız iş yükleri tam ekran bir dikey pencerede görüntülenir. İş yükünü seçtiğinizde bu dikey pencere tam sayfada açılır. Diğer dikey pencereler, açıldıklarında dikey pencerenin sağ tarafından kayar ve geldikleri ana pencerenin altında daralır.
+Intune’u veya Azure’da herhangi bir hizmeti açtığınızda, hizmet bir **dikey pencerede** görüntülenir. Intune’da **Kullanıcılar**, **Gruplar** ve **Mobil uygulamalar** gibi ilk kullandığınız iş yükleri tam ekran bir dikey pencerede görüntülenir. İş yükünü seçtiğinizde bu dikey pencere tam sayfada açılır. Diğer dikey pencereler, açıldıklarında dikey pencerenin sağ tarafından kayar ve geldikleri ana pencerenin altında daralır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
