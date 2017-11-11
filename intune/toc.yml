@@ -560,11 +560,11 @@
     - name: Özel cihaz ayarlarını yapılandırma
       href: custom-settings-configure.md
       items:
+        - name: Önceden paylaşılan anahtar ile Wi-Fi profili
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: Önceden paylaşılan anahtar ile Wi-Fi profili
-              href: wi-fi-profile-shared-key.md
             - name: Uygulama başına VPN profili
               href: android-pulse-secure-per-app-vpn.md
             - name: Samsung KNOX Standard için uygulamalara izin verme veya uygulamaları engelleme
