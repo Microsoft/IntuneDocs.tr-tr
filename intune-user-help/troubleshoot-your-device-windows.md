@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 483b2155c2f1935a5b0d79b84ab65db1f9fc182d
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: a9da0ecabadc856c54bc8c10ec71520d549ca50c
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Windows cihazınızdaki yaygın sorunları çözme
 
@@ -34,3 +34,7 @@ Bazen Windows cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar or
 - [Cihazımda kötü amaçlı yazılımdan koruma yazılımı olması gerekiyor](your-device-needs-antimalware-software.md)
 - [Güvenli Önyüklemeyi etkinleştirmem gerekir](you-need-to-enable-secure-boot-windows.md)
 - [Kod Bütünlüğünü etkinleştirmem gerekiyor](you-need-to-enable-code-integrity.md)
+- [Güvenlik Duvarımı etkinleştirmek istiyorum](you-need-to-enable-defender-firewall-windows.md)
+- [UAC’yi etkinleştirmek istiyorum](you-need-to-enable-uac-windows.md)
+- [Windows’u güncelleştirmek istiyorum](you-need-to-update-os-build-version-windows.md)
+- [Windows Defender'ı etkinleştirmek istiyorum](turn-on-defender-windows.md)

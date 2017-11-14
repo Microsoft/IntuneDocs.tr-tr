@@ -3,10 +3,10 @@ title: "Intune cihaz envanterini görüntüleme"
 titlesuffix: Azure portal
 description: "Intune ile yönettiğiniz cihazları görüntüleme ve bunların donanımını ve yüklü uygulamalarını anlama hakkında bilgi edinin.\""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 09/05/2017
+author: arob98
+ms.author: angrobe
+nmanager: angrobe
+ms.date: 11/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3e74651acf11ff0ea88531460d030e03749520a
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 17916d513b338716a62f165545bdf44a3216bbe9
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>Intune cihaz envanterini görüntüleme
 
@@ -39,19 +39,11 @@ Cihaz envanterini görüntülemek için:
 - **Yönet** - Yönettiğiniz tüm cihazların listesini görmek için **Tüm Cihazlar**’ı seçin.
     Listedeki cihazlardan birini seçerek <*cihaz adı*> **Genel Bakış** dikey penceresini açın. Burada aşağıdakilerden birini seçebilirsiniz:
     - **Genel bakış**  - Cihaz hakkında adı, sahibi, bir KCG cihazı olup olmadığı, ne zaman iade edildiği ve daha fazlasıyla ilgili genel bilgileri görün.
-    ![Cihaza genel bakış](./media/device-overview.png)
     - **Donanım** - Cihaz hakkında boş depolama alanı, modeli ve üreticisi gibi daha ayrıntılı bilgileri görün.
-    ![Yönetilen cihaz donanım envanteri](./media/hardware-inventory.png)
     - **Bulunan uygulamalar** - Intune'un cihazda yüklü olduğunu bulduğu tüm uygulamaların bir listesini görüntüler.
-    ![Bulunan uygulamalar düğümü](./media/detected-applications.png)
-    
-
-
     - **Cihaz uyumluluğu** - Cihaza atanan tüm uyumluluk ilkelerinin uyumluluk durumunu görüntüler.
     - **Cihaz yapılandırması** - Cihaza atanmış tüm cihaz yapılandırma ilkelerinin uyumluluk durumunu görüntüler.
 - **İzleme** Yönettiğiniz cihazlarda yapılan cihaz eylemlerinin bir listesini ve bunların geçerli durumunu görmek için **Cihaz Eylemleri**'ni seçin.
 - **Kurulum** > **TeamViewer Bağlayıcısı** - Cihazlarda TeamViewer yazılımını kullanarak uzaktan yönetimi yapılandırmanızı sağlar. Ayrıntılar için bkz. [Intune ile yönetilen Android cihazları için uzaktan yardım sağlama](/intune/device-profile-android-teamviewer).
 
->[!NOTE]
-> Intune, yalnızca şirkete ait cihazlarda uygulama envanteri toplar. Uygulamalar, kişisel cihazlarda envantere alınmaz. Şirkete ait Windows 10 bilgisayarlarda yalnızca modern uygulama envanteri toplanır. Intune, cihazdaki Win32 uygulamalar hakkında bilgi toplamaz.
-> Cihazlarda kullandığınız operatöre bağlı olarak tüm envanter öğeleri toplanmayabilir.
+Intune, yalnızca şirkete ait cihazlarda uygulama envanteri toplar. Uygulamalar, kişisel cihazlarda envantere alınmaz. Şirkete ait Windows 10 bilgisayarlarda yalnızca modern uygulama envanteri toplanır. Intune, cihazdaki Win32 uygulamalar hakkında bilgi toplamaz. Cihazlarda kullandığınız operatöre bağlı olarak tüm envanter öğeleri toplanmayabilir.

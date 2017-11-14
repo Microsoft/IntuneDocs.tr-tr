@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b0891541de125220aa278a4f4ebc0dec0d9a27b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 651df0e6ba3f8b3b2727d3194c8bf5e1a40cffc3
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 cihaz kaydı sorunlarınızı giderme
 [Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune’a kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md) bölümündeki adımları uyguladıysanız, ancak iş veya okul e-postalarınıza ve dosyalarınıza yine de erişemiyorsanız, bu sorun giderme adımlarını uygulayın.
@@ -57,6 +57,6 @@ Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza, dosyaları
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>“İş veya okul hesabı ayarlama”yı görüyorsanız izlenecek sorun giderme adımları
 
-__“Girdiğiniz kullanıcı adıyla eşleşen bir yönetim uç noktası otomatik bulunamadı” şeklinde bir ileti görürseniz lütfen kullanıcı adınızı kontrol edin ve oturum açmayı yeniden deneyin. Yönetim uç noktanızın URL’sini biliyorsanız lütfen girin.__ Daha sonra kullanıcı adınız ve parolanızı yeniden girmeyi deneyin. Sorun yaşamaya devam ederseniz **Yönetim uç noktası** metin kutusunda sağlamanız gereken web sitesi için şirketinizin destek birimiyle görüşün. Bu web sitesi büyük olasılıkla şu şekilde olacaktır: **www.şirketiniz.onmicrosoft.com**. 
+__“Girdiğiniz kullanıcı adıyla eşleşen bir yönetim uç noktası otomatik bulunamadı” şeklinde bir ileti görürseniz lütfen kullanıcı adınızı kontrol edin ve oturum açmayı yeniden deneyin. Yönetim uç noktanızın URL’sini biliyorsanız lütfen girin.__ Daha sonra kullanıcı adınız ve parolanızı yeniden girmeyi deneyin. Sorun yaşamaya devam ederseniz **Yönetim uç noktası** metin kutusunda sağlamanız gereken web sitesi için şirketinizin destek birimiyle görüşün. Bu web sitesi büyük olasılıkla şu şekilde olacaktır: **www.şirketiniz.onmicrosoft.com**.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
