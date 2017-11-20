@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 12/15/2016
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -113,8 +113,50 @@ Microsoft Intune, uygulamanızdaki kullanım istatistikleri hakkında veri topla
 
     * Uygulamanızdan Microsoft Intune’a SDK telemetri verileri göndermek istemiyorsanız IntuneMAMSettings sözlüğündeki `MAMTelemetryDisabled` özelliğini “EVET” olarak ayarlayarak telemetri iletimini devre dışı bırakmanız gerekir.
 
-
 * **Android için Intune Uygulama SDK’sı**: Telemetri verileri SDK aracılığıyla günlüğe kaydedilmez.
+
+ iOS ve Android iş kolu uygulaması sürüm numarası görünürdür <!-- 1380712 -->
+
+## <a name="line-of-business-app-version-numbers"></a>İş kolu uygulaması sürüm numaraları
+
+Intune’da iş kolu uygulamaları artık iOS ve Android uygulamaları için sürüm numarasını görüntüler. Numara, Azure portalındaki uygulama listesinde ve uygulama genel bakış dikey penceresinde görüntülenir. Son kullanıcılar, uygulama numarasını Şirket Portalı uygulamasında ve web portalında görebilir.
+
+### <a name="full-version-number"></a>Tam sürüm numarası
+
+Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800)
+
+Tam sürüm numarası iki bileşenden oluşur:
+
+ - **Sürüm**  
+   Sürüm numarası uygulamanın insan tarafından okunabilir yayın numarasıdır. Bu, son kullanıcılar tarafından uygulamanın farklı yayınlarını tanımlamak için kullanılır.
+
+ - **Derleme Numarası**  
+    Derleme numarası, uygulama algılamada ve uygulamayı programlı olarak yönetmek için kullanılabilen dahili bir numaradır. Derleme numarası, uygulamanın koddaki değişikliklere başvuran bir yinelemesini ifade eder.
+
+### <a name="version-and-build-number-in-android-and-ios"></a>Android ve iOS’te sürüm ve derleme numarası
+
+Android ve iOS, uygulamalar için hem sürüm hem de derleme numaralarını kullanır. Ancak her iki işletim sisteminin de işletim sistemine özgü anlamları vardır. Aşağıdaki tabloda bu terimlerin arasındaki ilişkiler açıklanmaktadır.
+
+Intune’da kullanmak üzere bir iş kolu uygulaması geliştirirken, sürüm ve derleme numarasını birlikte kullanmayı unutmayın. Intune Uygulama yönetimi özellikleri anlamlı bir **CFBundleVersion** (iOS için) ve **PackageVersionCode** (Android için) kullanır. Bu numaralar, uygulama bildirimine eklenir. 
+
+Intune|iOS|Android|Açıklama|
+|---|---|---|---|
+Sürüm numarası|CFBundleShortVersionString|PackageVersionName |Bu numara, son kullanıcılara yönelik belirli bir uygulama yayınını gösterir.|
+Yapı numarası|CFBundleVersion|PackageVersionCode |Bu numara, uygulama kodunda bir yinelemeyi gösterir.|
+
+#### <a name="ios"></a>iOS
+
+- **CFBundleShortVersionString**  
+    Paket yayımlanma sürümü numarasını belirtir. Bu numara, uygulamanın yayımlanma sürümünü tanımlar. Numara, son kullanıcılar tarafından uygulamaya başvurmak için kullanılır.
+ - **CFBundleVersion**  
+    Paketin bir yinelemesini tanımlayan paket derleme sürümü. Numara, yayımlanmış veya yayımlanmamış bir paketi tanımlayabilir. Numara, uygulama algılama için kullanılır.
+
+#### <a name="android"></a>Android
+
+ - **PackageVersionName**  
+    Kullanıcılara gösterilen sürüm numarası. Bu öznitelik bir ham dize veya bir dize kaynağına başvuru olarak ayarlanabilir. Dizenin kullanıcılara görüntülenmekten başka bir amacı yoktur.
+ - **PackageVersionCode**  
+    Dahili sürüm numarası. Bu numara yalnızca bir sürümün diğerinden daha yeni olup olmadığını belirlemek için kullanılır; daha yüksek numaralar daha yeni sürümleri gösterir. Bu sürüm değildir 
 
 ## <a name="next-steps-after-integration"></a>Tümleştirmeden sonraki adımlar
 

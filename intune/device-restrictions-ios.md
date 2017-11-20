@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da iOS cihaz kısıtlama ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Genel
-    
+
 -   **Tanılama verileri gönderme** - Cihazın Apple’a tanılama verileri göndermesine izin verin veya bunu engelleyin.
 -   **Ekran yakalama** - Kullanıcının ekran içeriğini resim olarak yakalamasına izin verin.
     - **Classroom uygulamasıyla ekranı uzaktan izleme (yalnızca denetimli)** - Apple Classroom uygulamasının iOS cihazlarda ekranı izlemesine izin verin veya bunu engelleyin.
@@ -44,6 +44,54 @@ Bu durum, Posta, Kişiler, Takvim, Facebook ve Twitter gibi iOS ayarları uygula
 - **Yapılandırma profilindeki değişiklikler** - Kullanıcının yapılandırma profilleri yüklemesine izin verin.
 - **Etkinleştirme Kilidi (yalnızca denetimli)** - Denetimli iOS cihazlarda Etkinleştirme Kilidi’ni etkinleştirin.
 
+## <a name="configurations-requiring-supervision"></a>Denetim gerektiren yapılandırmalar
+
+iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz kurulumu sırasında veya Apple Configurator kullanılarak etkinleştirilebilir. Denetimli mod etkinleştirildikten sonra, Intune şu işlevleri kullanarak bir cihazı yapılandırabilir:
+
+- Uygulama Kilidi (Tek Uygulama Modu) 
+- Genel HTTP Proxy’si 
+- Etkinleştirme Kilidini Atlama 
+- Otonom Tek Uygulama Modu 
+- Web İçeriği Filtresi 
+- Arka plan ve kilit ekranı ayarlama 
+- Uygulamaları Sessiz Gönderme 
+- Her Zaman Açık VPN 
+- Yönetilen uygulama yüklemesine özel olarak izin verme 
+- iBookstore 
+- iMessages 
+- Oyun Merkezi 
+- AirDrop 
+- AirPlay 
+- Konak eşleştirme 
+- Bulut Eşitleme 
+- Spotlight arama 
+- İletim 
+- Cihaz silme 
+- Kısıtlamalar kullanıcı arabirimi 
+- Kullanıcı arabirimine göre yapılandırma profili yüklemesi 
+- News 
+- Klavye kısayolları 
+- Geçiş kodu değişiklikleri 
+- Cihaz adı değişiklikleri 
+- Duvar kağıdı değişiklikleri 
+- Otomatik uygulama indirme 
+- Kurumsal uygulama güvenine yapılan değişiklikler 
+- Apple Music 
+- Posta bırakma 
+- Apple Watch ile eşleştirme 
+
+> [!NOTE]
+> Apple, 2018’de bazı ayarların yalnızca denetimli hale geleceğini doğruladı. Apple’ın bu ayarları yalnızca denetimli moduna aktarmasını beklemek yerine ayarları kullanırken, bu durumu göz önünde bulundurmanızı öneririz:
+> - Son kullanıcılar tarafından uygulama yükleme
+> - Uygulama kaldırma
+> - FaceTime
+> - Safari
+> - iTunes
+> - Müstehcen içerik
+> - iCloud belgeleri ve verileri
+> - Çok oyunculu oyun
+> - Oyun Merkezi Arkadaşları Ekleyin
+
 ## <a name="password"></a>Parola
 -   **Parola** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
     -   **Basit parolalar** - 0000 ve 1234 gibi basit parolalara izin verin.
@@ -56,7 +104,7 @@ Bu durum, Posta, Kişiler, Takvim, Facebook ve Twitter gibi iOS ayarları uygula
     -   **Parola kullanım süresi sonu (gün)** - Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtin.
     -   **Önceki parolaların yeniden kullanılmasını engelle** - Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtin.
     -   **Parmak iziyle kilit açma** - Uyumlu cihazların kilidini açmak için parmak izi kullanmaya izin verin.
-- **Geçiş kodu değişikliği (yalnızca denetimli)** - Geçiş kodunun değiştirilmesi, eklenmesi veya kaldırılmasını durdurur. 
+- **Geçiş kodu değişikliği (yalnızca denetimli)** - Geçiş kodunun değiştirilmesi, eklenmesi veya kaldırılmasını durdurur.
     - **Parmak izi değişikliği (yalnızca denetimli)** - Kullanıcının TouchID ayarlarını değiştirmesi, eklemesi veya kaldırmasını engeller.
 
 <sup>1</sup>**Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** ve **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**, ayarlarını yapılandırdığınızda, bunlar sırayla uygulanır. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
@@ -89,7 +137,7 @@ Bu durum, Posta, Kişiler, Takvim, Facebook ve Twitter gibi iOS ayarları uygula
 
 ## <a name="built-in-apps"></a>Yerleşik Uygulamalar
 
--   **Kamera** - Cihazdaki kameranın kullanılıp kullanılamayacağını seçin. 
+-   **Kamera** - Cihazdaki kameranın kullanılıp kullanılamayacağını seçin.
     -   **FaceTime** - Cihazda FaceTime uygulamasının kullanılmasına izin verin.
 -   **Siri** - Cihazda Siri ses yardımcısının kullanımına izin verin.
     -   **Cihaz kilitliyken Siri** - Cihaz kilitliyken cihazda Siri ses yardımcısının kullanımına izin verin.
@@ -124,9 +172,7 @@ Kısıtlı uygulama ayarlarını içeren cihaz profilleri kullanıcı grupların
 Örnek: iPad için Microsoft Word ifadesini aratın. Kullandığınız URL https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 olacaktır.
 
 > [!Note]
-> iTunes yazılımını kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL'sini alabilirsiniz.
-
-
+> iTunes kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** komutuyla uygulama URL’sini alabilirsiniz.
 
 ### <a name="additional-options"></a>Ek seçenekler
 
@@ -247,7 +293,7 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 **Web Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Belgeler belirttiğiniz etki alanlarından indirildiğinde yönetilen belgeler olarak değerlendirilir. Bu ayar yalnızca Safari tarayıcısı kullanılarak indirilen belgeler için geçerlidir.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Safari otomatik parola doldurma etki alanları
+### <a name="safari-password-autofill-domains"></a>Safari parola otomatik doldurma etki alanları
 
 **Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Kullanıcılar yalnızca bu listedeki URL’lerdeki parolaları kaydedebilir. Bu ayar yalnızca Safari tarayıcısı ve denetimli moddaki iOS 9.3 ve üzeri cihazlar için geçerlidir. Herhangi bir URL belirtmezseniz, parolalar tüm web sitelerinden kaydedilebilir.

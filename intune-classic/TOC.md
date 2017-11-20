@@ -95,6 +95,7 @@
 #### [Lisans sözleşmelerini yönetme](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ### [İlke çakışmalarını çözme](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 ### [Uyarıları yönetme](deploy-use/get-notified-by-alerts.md)
+### [Azure’da Intune](deploy-use/intune-on-azure.md)
 ## Cihazları yapılandırma
 ### [İlkelerle cihazlarınızda ayarları ve özellikleri yönetme](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS ayarları](deploy-use/ios-policy-settings-in-microsoft-intune.md)

@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/25/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Cihaz kayıt yöneticisini kullanarak cihazları kaydetme
 
@@ -54,6 +54,7 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
   - Şirket Portalı uygulamasında veya web sitesinde yalnızca yerel cihaz görünür.
   - Kullanıcılar, uygulama yönetimi için kullanıcı başına Apple ID gereksinimlerinden dolayı Apple Volume Purchase Program (VPP) uygulamalarını kullanamaz.
   - (Yalnızca iOS) iOS cihazlarını kaydetmek için DEM kullanıyorsanız, cihaz kaydetmek için Apple Configurator, Apple Aygıt Kayıt Programı (DEP) veya Apple School Manager (ASM) kullanamazsınız.
+  - (Yalnızca Android) Tek bir DEM hesabıyla kaydedilebilen Android for Work cihaz sayısı sınırlıdır. DEM hesabı başına en fazla on Android iş profili cihazı kaydedilebilir. Bu sınırlama eski Android kayıtları için geçerli değildir.
   - Her cihaz bir cihaz lisansı gerektirir. [Kullanıcı ve cihaz lisansları](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services) hakkında daha fazla bilgi edinin.
 
 

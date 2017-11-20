@@ -8,7 +8,7 @@
 
 ## [Şirket Portalı’nda oturum açma](sign-in-to-the-company-portal.md)
 
-## [Android cihazınızı Intune ile kullanma](using-your-android-device-with-intune.md)
+## [Android cihazınızı kullanma](using-your-android-device-with-intune.md)
 ### [Bir Android cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Cihazınızı kaydetme](enroll-your-device-in-Intune-android.md)
 #### [Android for Work ile cihazınızı kaydetme](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
@@ -57,13 +57,10 @@
 ##### [SandBlast Mobile Protect’i Kullanma](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 ##### [Zimperium zIPS’i Kullanma](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
-## [iOS veya Mac OS cihazınızı Intune ile kullanma](using-your-iOS-or-macOS-device-with-intune.md)
+## [iOS cihazınızı kullanma](using-your-iOS-device-with-intune.md)
 ### [Bir iOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Şirket Portalı'nı yükleme ve uygulamada oturum açma](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS cihazınızı kaydetme](enroll-your-device-in-intune-ios.md)
-### [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos.md)
-### [macOS cihazınızı Şirket Portalı'yla kaydetme](enroll-your-device-in-intune-macos-cp.md)
-### [Bu cihaz biraz farklıdır](device-little-different-jamf.md)
 
 ### [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)
 ### [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
@@ -96,6 +93,11 @@
 ##### [SandBlast Mobile Protect’i Kullanma](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Zimperium zIPS’i Kullanma](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
+## [macOS cihazınızı kullanma](using-your-macos-device-with-intune.md)
+### [Bir macOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+### [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-cp.md)
+### [Eski macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-legacy.md)
+### [Bu cihaz biraz farklıdır](device-little-different-jamf.md)
 
 ## [Windows cihazınızı kullanma](using-your-windows-device-with-intune.md)
 ### [Bir Windows 10 cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
@@ -123,6 +125,9 @@
 #### [Cihazımda kötü amaçlı yazılımdan koruma yazılımı olması gerekiyor](your-device-needs-antimalware-software.md)
 #### [Güvenli Önyüklemeyi Etkinleştirme](you-need-to-enable-secure-boot-windows.md)
 #### [Kod Bütünlüğünü Etkinleştirme](you-need-to-enable-code-integrity.md)
-
+#### [Güvenlik Duvarımı etkinleştirmek istiyorum](you-need-to-enable-defender-firewall-windows.md)
+#### [UAC’yi etkinleştirmek istiyorum](you-need-to-enable-uac-windows.md)
+#### [Windows’u güncelleştirmek istiyorum](you-need-to-update-os-build-version-windows.md)
+#### [Windows Defender'ı etkinleştirmek istiyorum](turn-on-defender-windows.md) 
 
 ## [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)

@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e399c36d4c6a855766ee956b3ca24c503a1f974b
-ms.sourcegitcommit: e57512698a479df0d25ece6ece4492ec0e4f0f3e
+ms.openlocfilehash: d485f0d53ac57a2f159ebd56b6b3823a8a49d5ad
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="use-the-intune-data-warehouse"></a>Intune Veri Ambarını kullanma
 
@@ -35,8 +35,12 @@ Veri Ambarı, mobil ortamınız hakkında Azure portalına kıyasla daha fazla b
   -  Günlük olarak yenilenen veriler
   -  OData standardı kullanan bir veri modeli
 
+> [!Note]
+> System Center Configuration Manager ve Microsoft Intune ile bir karma mobil cihaz yönetimi (MDM) kullanıyorsanız, verilerinizi SCCM’den almak istersiniz. Intune Veri Ambarı yalnızca Intune verilerini içerir. Özel raporlarınız için bir SCCM Power BI panosu kullanabilirsiniz. Daha fazla bilgi için bkz. "[System Center Configuration Manager için Power BI çözüm şablonu duyurusu]( https://powerbi.microsoft.com/blog/sccm-solution-template)." ve "[Power BI raporu ve panosu oluşturma](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard)."
+
+
 > [!Important]  
-> Beta sürümünü kullanarak Veri Ambarı’nın en son işlevlerini deneyebilirsiniz. Beta sürümünü kullanabilmeniz için URL’nizin `api-version=beta` sorgu parametresini içermesi gerekir. Özellikler, desteklenen bir hizmet olarak herkesin kullanımına açılmadan önce beta sürümünde sunulur. Intune yeni özellikler ekledikçe beta sürümünün davranışında ve veri anlaşmalarında değişiklikler olabilir. Beta sürümüne bağımlı herhangi bir özel kod veya raporlama araçları, devam eden güncelleştirmelerle birlikte kesilebilir. <!-- If you experience problems with the beta service, follow [link to feedback process]() to report the issue or provide feedback.-->
+> Beta sürümünü kullanarak Veri Ambarı’nın en yeni işlevlerini deneyebilirsiniz. Beta sürümünü kullanabilmeniz için URL’nizin `api-version=beta` sorgu parametresini içermesi gerekir. Özellikler, desteklenen bir hizmet olarak herkesin kullanımına açılmadan önce beta sürümünde sunulur. Intune yeni özellikler ekledikçe beta sürümünün davranışında ve veri anlaşmalarında değişiklikler olabilir. Beta sürümüne bağımlı herhangi bir özel kod veya raporlama araçları, devam eden güncelleştirmelerle birlikte kesilebilir.
 
 **Sonraki adımlar**
 

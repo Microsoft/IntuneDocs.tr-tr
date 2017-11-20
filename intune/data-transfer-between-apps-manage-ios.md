@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>iOS uygulamaları arasında veri aktarımını yönetme
 ## <a name="manage-ios-apps"></a>iOS uygulamalarını yönetme
@@ -30,6 +30,7 @@ ms.lasthandoff: 09/09/2017
 -   Uygulamaları **MDM kanalı** üzerinden de dağıtıp yönetebilirsiniz.  Bunun için cihazların MDM çözümüne kaydedilmesi gerekir. Bunlar **ilkeyle yönetilen** uygulamaları veya diğer yönetilen uygulamalar olabilir.
 
 iOS cihazları için **Yönetimde açma** özelliği, dosya aktarımlarını yalnızca **MDM kanalı** aracılığıyla dağıtılan uygulamalar arasında gerçekleşecek şekilde sınırlandırabilir. Yönetimde açma kısıtlamaları, yapılandırma ayarlarında belirlenir ve MDM çözümünüz aracılığıyla dağıtılır.  Kullanıcı dağıtılan uygulamayı yüklendiğinde, ayarladığınız kısıtlamalar uygulanır.
+
 ##  <a name="using-app-protection-with-ios-apps"></a>Uygulama korumayı iOS uygulamalarıyla kullanma
 Uygulama koruma ilkeleri iOS **Yönetimde açma** özelliğiyle birlikte kullanıldığında, şirket verileri aşağıdaki yollarla korunabilir:
 
@@ -40,30 +41,25 @@ Uygulama koruma ilkeleri iOS **Yönetimde açma** özelliğiyle birlikte kullan�
 -   **Üçüncü taraf MDM çözümü tarafından yönetilen cihazlar:** iOS **Yönetimde açma** özelliğini kullanarak veri aktarımını yalnızca yönetilen uygulamalarla kısıtlayabilirsiniz.
 Üçüncü taraf MDM çözümünüzü kullanarak dağıttığınız uygulamaların Intune’da yapılandırdığınız uygulama koruma ilkeleriyle de ilişkilendirildiğinden emin olmak için, [Kullanıcı UPN ayarını yapılandırma](#configure-user-upn-setting-for-third-party-emm) yönergesinde açıklandığı gibi kullanıcı UPN ayarını yapılandırmalısınız.  Uygulamalar kullanıcı UPN ayarı ile dağıtılırken, son kullanıcı iş hesabını kullanarak oturum açtığında uygulamaya uygulama koruma ilkeleri uygulanır.
 
-> [!IMPORTANT]
-> Kullanıcı UPN ayarı yalnızca bir üçüncü taraf MDM tarafından yönetilen cihazlara dağıtılan uygulamalar için gereklidir.  Intune ile yönetilen cihazlar için bu ayar gerekli değildir.
-
-
-## <a name="configure-user-upn-setting-for-third-party-emm"></a>Üçüncü taraf EMM için kullanıcı UPN ayarını yapılandırma
-Kullanıcı UPN ayarını yapılandırmak, üçüncü taraf EMM çözümü tarafından yönetilen cihazlar için **gereklidir**. Aşağıda açıklanan yordam, UPN ayarının ve bundan ortaya çıkan son kullanıcı deneyiminin nasıl yapılandırılacağı hakkında genel bir akış sunmaktadır:
-
+## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Microsoft Intune veya üçüncü taraf EMM için kullanıcı UPN ayarını yapılandırma
+Kullanıcı UPN ayarını yapılandırmak, Intune veya üçüncü taraf EMM çözümü tarafından yönetilen cihazlar için **gereklidir**. Aşağıda açıklanan yordam, UPN ayarının nasıl yapılandırılacağı ve ortaya çıkan son kullanıcı deneyimi hakkında genel bir bakış sunar:
 
 1.  [Azure portalında](https://portal.azure.com), iOS için [bir uygulama koruma ilkesi oluşturup bunu atayın](app-protection-policies.md). İlke ayarlarını şirket gereksinimlerinize göre yapılandırın ve bu ilkeye sahip olacak iOS uygulamalarını seçin.
 
-2.  Aşağıdaki genelleştirilmiş adımları kullanarak, **üçüncü taraf MDM çözümünüz aracılığıyla** yönetilmesini istediğiniz uygulamaları ve e-posta profilini dağıtın. Bu deneyim Örnek 1’de de ele alınmıştır.
+2.  Aşağıda genelleştirilen adımları kullanarak, Intune veya üçüncü taraf MDM çözümünüz aracılığıyla yönetilmesini istediğiniz uygulamaları ve e-posta profilini dağıtın. Bu deneyim Örnek 1’de de ele alınmıştır.
 
-  1.  Uygulamayı, aşağıdaki uygulama yapılandırma ayarlarıyla dağıtın:
+3.  Uygulamayı, aşağıdaki uygulama yapılandırma ayarlarıyla dağıtın:
 
       **anahtar** = IntuneMAMUPN,  **değer** = <username@company.com>
 
       Örnek: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Üçüncü taraf MDM sağlayıcınızı kullanarak kayıtlı cihazlara, Birlikte açma yönetimi ilkesini dağıtın.
+4.  Intune veya üçüncü taraf MDM sağlayıcınızı kullanarak kayıtlı cihazlara, **Birlikte açma yönetimi** ilkesini dağıtın.
 
 
-### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Örnek 1: Üçüncü taraf MDM konsolunda yönetici deneyimi
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>Örnek 1: Intune veya üçüncü taraf MDM konsolunda yönetici deneyimi
 
-1. Üçüncü taraf MDM sağlayıcınızın yönetici konsoluna gidin. Uygulama yapılandırma ayarlarını kayıtlı iOS cihazlarına dağıttığınız konsol bölümüne gidin.
+1. Intune veya üçüncü taraf MDM sağlayıcınızın yönetici konsoluna gidin. Uygulama yapılandırma ayarlarını kayıtlı iOS cihazlarına dağıttığınız konsol bölümüne gidin.
 
 2. Uygulama Yapılandırması bölümünde aşağıdaki ayarı girin:
 
@@ -73,6 +69,7 @@ Kullanıcı UPN ayarını yapılandırmak, üçüncü taraf EMM çözümü taraf
 
 |Üçüncü taraf MDM sağlayıcısı| Yapılandırma Anahtarı | Değer Türü | Yapılandırma Değeri|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | Dize | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | Dize | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Dize | ${userUPN} **veya** ${userEmailAddress} |
 

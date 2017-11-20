@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 10/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-device-enrollment"></a>Cihaz kaydı nedir?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -80,56 +80,12 @@ Aşağıdaki tabloda Intune kayıt yöntemlerine, özelliklerine ve aşağıda a
 Cihaz kayıt yöneticisi (DEM), şirkete ait birden çok cihazı kaydetmek ve yönetmek için kullanılan özel bir kullanıcı hesabıdır. Yöneticiler Şirket Portalı’nı yükleyebilir ve kullanıcısı olmayan birçok cihazı kaydedebilir. [DEM](./device-enrollment-manager-enroll.md) hakkında daha fazla bilgi edinin.
 
 ### <a name="dep"></a>DEP
-Apple Aygıt Kayıt Programı (DEP) yönetimi, “havadan” ilke oluşturmanıza ve DEP ile satın alınan ve yönetilen iOS cihazlara dağıtmanıza olanak sağlar. Cihaz, kullanıcı cihazı ilk açtığında ve iOS Ayarlama Yardımcısı’nı çalıştırdığında kaydedilir. Bu yöntem, iOS Denetimli modunu destekler ve bu mod, bir cihazın aşağıdaki işlevlerle yapılandırılmasına olanak tanır:
-
-- Uygulama Kilidi (Tek Uygulama Modu) 
-- Genel HTTP Proxy’si 
-- Etkinleştirme Kilidini Atlama 
-- Otonom Tek Uygulama Modu 
-- Web İçeriği Filtresi 
-- Arka plan ve kilit ekranı ayarlama 
-- Uygulamaları Sessiz Gönderme 
-- Her Zaman Açık VPN 
-- Yönetilen uygulama yüklemesine özel olarak izin verme 
-- iBookstore 
-- iMessages 
-- Oyun Merkezi 
-- AirDrop 
-- AirPlay 
-- Konak eşleştirme 
-- Bulut Eşitleme 
-- Spotlight arama 
-- İletim 
-- Cihaz silme 
-- Kısıtlamalar kullanıcı arabirimi 
-- Kullanıcı arabirimine göre yapılandırma profili yüklemesi 
-- News 
-- Klavye kısayolları 
-- Geçiş kodu değişiklikleri 
-- Cihaz adı değişiklikleri 
-- Duvar kağıdı değişiklikleri 
-- Otomatik uygulama indirme 
-- Kurumsal uygulama güvenine yapılan değişiklikler 
-- Apple Music 
-- Posta bırakma 
-- Apple Watch ile eşleştirme 
-
-> [!NOTE]
-> Apple, 2018’de bazı ayarların yalnızca denetimli hale geleceğini doğruladı. Apple’ın bu ayarları yalnızca denetimli moduna aktarmasını beklemek yerine ayarları kullanırken, bu durumu göz önünde bulundurmanızı öneririz:
-> - Uygulama yükleme
-> - Uygulama kaldırma
-> - FaceTime
-> - Safari
-> - iTunes
-> - Müstehcen içerik
-> - iCloud belgeleri ve verileri
-> - Çok oyunculu oyun
-> - Oyun Merkezi Arkadaşları Ekleyin
+Apple Aygıt Kayıt Programı (DEP) yönetimi, “havadan” ilke oluşturmanıza ve DEP ile satın alınan ve yönetilen iOS cihazlara dağıtmanıza olanak sağlar. Cihaz, kullanıcı cihazı ilk açtığında ve iOS Ayarlama Yardımcısı’nı çalıştırdığında kaydedilir. Bu yöntem, iOS denetimli modunu destekler ve bu mod, bir cihazın belirli işlevlerle yapılandırılmasına olanak tanır.
 
 iOS DEP kaydı hakkında daha fazla bilgi edinin:
 
 - [iOS cihazlarının nasıl kaydedileceğini belirleme](ios-enroll.md)
-- [Cihaz Kayıt Programı’nı kullanarak iOS cihazlarını kaydetme](device-enrollment-program-enroll-ios.md)
+- [Cihaz Kayıt Programı’nı kullanarak iOS cihazlarını kaydetme](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
 
 ### <a name="usb-sa"></a>USB-SA
 BT yöneticileri, şirkete ait tüm cihazları Kurulum Yardımcısı kullanarak el ile kaydetme işlemine hazırlamak için USB aracılığıyla Apple Configurator kullanır. BT yöneticisi bir kayıt profili oluşturur ve bunu Apple Configurator’a aktarır. Kullanıcılar cihazlarını aldığında, bu cihazları kaydetmek için Kurulum Yardımcısını çalıştırmaları istenir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod da aşağıdaki özellikleri etkinleştirir:

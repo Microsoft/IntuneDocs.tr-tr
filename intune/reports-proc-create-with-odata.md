@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>OData akışına Power BI ile bir rapor oluşturma
 
@@ -60,16 +60,16 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adres
 
     ![OData akışı](media/reports-create-01-odatafeed.png)
 
-9. **Tamam**’a tıklayın.
+9. **Tamam**’ı seçin.
 10. **Kuruluş hesabı**’nı seçin ve Intune kimlik bilgilerinizle oturum açın. 
 
     ![Kuruluş hesabı kimlik bilgileri](media/reports-create-02-org-account.png)
 
-11. **Bağlan**'a tıklayın. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir. 
+11. **Bağlan**’ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir. 
 
     ![Gezgin](media/reports-create-02-loadentities.png)
 
-12. **cihazlar** ve **ownerTypes** tablolarını seçin.  **Yükle**’ye tıklayın. Power BI modele veri yükler.
+12. **cihazlar** ve **ownerTypes** tablolarını seçin.  **Yükle**’yi seçin. Power BI modele veri yükler.
 
 ## <a name="create-a-relationship"></a>Bir ilişki oluşturma 
 
@@ -77,7 +77,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adres
 
 ![İlişkileri yönetme](media/reports-create-03-managerelationships.png)
 
-1. **İlişkileri Yönetme**’ye tıklayın.
+1. **İlişkileri Yönet**’i seçin.
 2. Power BI ilişkileri henüz algılamadıysa **Otomatik algıla...** seçeneğine tıklayın.  
 İlişki, Kaynak ve Hedef sütunlarında görüntülenir. Bu örnekte **cihazlar** tablosundaki **ownerTypeKey** veri alanı, **ownerTypes** tablosundaki **ownerTypeKey** veri alanına bağlantı sağlar. Bu ilişkiyi kullanarak cihaz türü kodunun düz adını **cihazlar** tablosunda arayabilirsiniz.
 
@@ -100,7 +100,7 @@ Artık kuruluşunuzdaki cihaz üreticisi dağılımını gösteren bir görselin
 
 Uygulamanızı kullanarak ilave sorular yanıtlayabilmek için ağaç haritanıza bir filtre ekleyebilirsiniz. 
 
-1. Rapor tuvaline tıklayın ve daha sonra **Görselleştirmeler** altında bulunan **Dilimleyici simgesine** ( ![Verilerle ağaç haritası](media/reports-create-slicer.png) ) tıklayarak filtre ekleyin.
+1. Rapor tuvalini seçin ve daha sonra **Görselleştirmeler** altında bulunan **Dilimleyici simgesine** ( ![Verilerle ağaç haritası](media/reports-create-slicer.png) ) tıklayarak filtre ekleyin.
 2. **ownerTypes** tablosunu bulun ve **ownerTypeName** veri alanını **Görselleştirmeler** panelindeki **Filtreler**’in altına sürükleyin.  
    Cihazlar tablosu altında **OwnerTypeKey** adlı bir veri alanı vardır. Bu veri alanı, cihazın şirkete ait veya kişisel olmasıyla ilgili bir kod barındırır. Bu filtrede kolay adlar kullanmayı tercih edeceğiniz için **ownerTypes** tablosunu bulun ve **ownerTypeName**’i sürükleyin. Bu, veri modelinin tablolar arasındaki ilişkiyi nasıl desteklediğine bir örnekti.
 

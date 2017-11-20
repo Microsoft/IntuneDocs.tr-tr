@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Dağıtım Programı
               href: enrollment-autopilot.md
+            - name: Kayıt Durum Ekranı
+              href: windows-enrollment-status.md
         - name: Android kaydını ayarlama
           href: android-enroll.md
         - name: iOS kaydını ayarlama
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: Windows Bilgi Koruması ayarlarını yapılandırma
           href: windows-information-protection-configure.md
+        - name: PowerShell betiklerini yönetme
+          href: intune-management-extension.md
         - name: Telekom giderlerini izleme
           href: telecom-expenses-monitor.md
         - name: Profil atama
@@ -556,11 +560,11 @@
     - name: Özel cihaz ayarlarını yapılandırma
       href: custom-settings-configure.md
       items:
+        - name: Önceden paylaşılan anahtar ile Wi-Fi profili
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: Önceden paylaşılan anahtar ile Wi-Fi profili
-              href: wi-fi-profile-shared-key.md
             - name: Uygulama başına VPN profili
               href: android-pulse-secure-per-app-vpn.md
             - name: Samsung KNOX Standard için uygulamalara izin verme veya uygulamaları engelleme

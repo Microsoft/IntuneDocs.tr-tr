@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33f0fe5d049fd033ee28dcd68e5951f1c9af6a39
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2da3bd9ef8170482cff15995911b57666c128ebc
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/09/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS uygulama koruma ilkesi ayarları
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -65,7 +65,7 @@ Intune uygulama koruma ilkesinin, belirli senaryolarda veri aktarımına hedef v
 
 | Ayar | Nasıl kullanılır? | Varsayılan değer |
 |------|------|------|
-| **Erişim için PIN’i zorunlu kıl** | Bu uygulamayı kullanmak için PIN’i zorunlu kılmak üzere **Evet**’i seçin. Uygulamayı iş veya okul bağlamında ilk kez çalıştırdığında kullanıcıdan bu PIN’i ayarlaması istenir. Varsayılan değer = **Evet**.<br><br> PIN gücü için aşağıdaki ayarları yapılandırın: <ul><li>**PIN sıfırlamadan önceki deneme sayısı**: Kullanıcının PIN’ini sıfırlamak zorunda kalmadan önce başarılı bir şekilde girmesi gereken deneme sayısını belirtin. Varsayılan değer = **5**.</li><li> **Basit PIN’e izin ver:** Kullanıcıların 1234 veya 1111 gibi basit PIN dizileri kullanmasına izin vermek için **Evet**’i seçin. Basit PIN dizileri kullanmalarını engellemek için **Hayır**’ı seçin. Varsayılan değer = **Evet**. </li><li> **PIN uzunluğu:** PIN dizisindeki basamak sayısı alt sınırını belirtin. Varsayılan değer = **4**. </li><li> **PIN yerine parmak izine izin ver (iOS 8.0+)**: Uygulama erişiminde bir PIN yerine **Touch ID** kullanmasına izin vermek için [Evet](https://support.apple.com/HT201371)’i seçin. Varsayılan değer = **Evet**</li></ul> iOS cihazlarda, kullanıcıların kimliklerini kanıtlamak için PIN yerine [Touch ID](https://support.apple.com/HT201371) kullanmasına izin verebilirsiniz. Kullanıcı, iş veya okul hesabıyla bu uygulamayı kullanmayı denediğinde, PIN girmek yerine parmak izi kimliğini vermesi istenir. Bu ayar etkinleştirildiğinde, Uygulama Değiştirici önizleme resmi iş veya okul hesabı kullanılırken bulanıklaştırılır. </li></ul>| PIN’i zorunlu kıl: Evet <br><br> PIN sıfırlama girişimi: 5 <br><br> Basit PIN’e izin ver: Evet <br><br> PIN uzunluğu: 4 <br><br> Parmak izine izin ver: Evet |
+| **Erişim için PIN’i zorunlu kıl** | Bu uygulamayı kullanmak için PIN’i zorunlu kılmak üzere **Evet**’i seçin. Uygulamayı iş veya okul bağlamında ilk kez çalıştırdığında kullanıcıdan bu PIN’i ayarlaması istenir. Varsayılan değer = **Evet**.<br><br> PIN gücü için aşağıdaki ayarları yapılandırın: <ul><li>**PIN sıfırlamadan önceki deneme sayısı**: Kullanıcının PIN’ini sıfırlamak zorunda kalmadan önce başarılı bir şekilde girmesi gereken deneme sayısını belirtin. Varsayılan değer = **5**.</li><li> **Basit PIN’e izin ver:** Kullanıcıların 1234 veya 1111 gibi basit PIN dizileri kullanmasına izin vermek için **Evet**’i seçin. Basit PIN dizileri kullanmalarını engellemek için **Hayır**’ı seçin. Varsayılan değer = **Evet**. </li><li> **PIN uzunluğu:** PIN dizisindeki basamak sayısı alt sınırını belirtin. Varsayılan değer = **4**. </li><li> **Geçiş kodu ayarla**: Uygulama koruma ilkeleri uygulanmış bir uygulamaya erişirken istenirse bir geçiş kodu ayarlayabilirsiniz. Geçiş kodu, en az 1 harf veya özel karakter ile tanımlanabilir. Geçiş kodu, çevrimiçi ve çevrimdışı çalışırken uygulanır. </li><li> **PIN yerine parmak izine izin ver (iOS 8.0+)**: Uygulama erişiminde bir PIN yerine **Touch ID** kullanmasına izin vermek için [Evet](https://support.apple.com/HT201371)’i seçin. Varsayılan değer = **Evet**</li></ul> iOS cihazlarda, kullanıcıların kimliklerini kanıtlamak için PIN yerine [Touch ID](https://support.apple.com/HT201371) kullanmasına izin verebilirsiniz. Kullanıcı, iş veya okul hesabıyla bu uygulamayı kullanmayı denediğinde, PIN girmek yerine parmak izi kimliğini vermesi istenir. Bu ayar etkinleştirildiğinde, Uygulama Değiştirici önizleme resmi iş veya okul hesabı kullanılırken bulanıklaştırılır. </li></ul>| PIN’i zorunlu kıl: Evet <br><br> PIN sıfırlama girişimi: 5 <br><br> Basit PIN’e izin ver: Evet <br><br> PIN uzunluğu: 4 <br><br> Parmak izine izin ver: Evet |
 | **Erişim için kurumsal kimlik bilgileri gerektir** | Kullanıcının uygulama erişimi için PIN girmek yerine iş veya okul hesabıyla oturum açmasını zorunlu kılmak için **Evet**’i seçin. **Evet** olarak ayarlarsanız, bu ayar PIN veya Touch ID gereksinimlerini geçersiz kılar.  | Hayır |
 | **Yönetilen cihazların, jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelle** |  Bu uygulamaya jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engellemek için **Evet**’i seçin. Kullanıcı kişisel görevler için uygulamaları kullanmaya devam edebilir, ancak bu uygulamada iş veya okul verilerine erişmek için farklı bir cihaz kullanması gerekir. | Evet |
 | **Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)** | Aşağıdaki ayarları yapılandırın: <ul><li>**Zaman Aşımı**: Erişim gereksinimleri (daha önce ilkelerde tanımlanmıştır) yeniden denetlenmeden önce geçmesi gereken dakika sayısıdır. Örneğin, yönetici ilkede PIN’i etkinleştirirse, kullanıcı bir MAM uygulamasını açtığında bir PIN girmesi gerekir. Bu ayar kullanıldığında, kullanıcının **30 dakika** (varsayılan değer) boyunca herhangi bir MAM uygulamasında PIN girmesi gerekmez.</li><li>**Çevrimdışı yetkisiz kullanım süresi**: Uygulama için erişim gereksinimleri yeniden denetlenmeden önce MAM uygulamalarının çevrimdışı çalışabileceği dakika sayısıdır. Varsayılan değer = **720** dakika (12 saat). Bu süre dolduktan sonra, uygulama, çalışmaya devam edebilmesi için kullanıcının AAD’de kimliğini doğrulamasını ister.</li></ul>| Zaman Aşımı: 30 <br><br> Çevrimdışı: 720 |

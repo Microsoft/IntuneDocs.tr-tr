@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="data-warehouse-data-model"></a>Veri Ambarı veri modeli
 
@@ -38,14 +38,11 @@ Ambar, verileri aşağıdaki üst düzey kategorilerde kullanıma sunar:
 
 Varlık kümeleri, veri modelinde adı olan varlık koleksiyonlarıdır. Bu kümeler, modelde toplanan verileri tanımlayan varlıkları barındırır. Her bir valık kümesi, Veri Ambarı veri modeli için bir erişim noktası sağlar. Aşağıdaki varlık kategorileri hakkında ayrıntılar bulabilirsiniz:
 
-  -  [Tarih](reports-ref-date.md)
-  -  [Kullanıcı](reports-ref-user.md)
-  -  [Mobil Uygulama Yönetimi (MAM)](reports-ref-mobile-app-management.md)
-  -  [Cihazlar](reports-ref-devices.md)
   -  [Uygulama](reports-ref-application.md)
+  -  [Tarih](reports-ref-date.md)
+  -  [Cihazlar](reports-ref-devices.md)
+  -  [Intune Yönetim Uzantısı](reports-ref-intunemanagementextension.md)
   -  [İlke](reports-ref-policy.md)
-  -  [Kullanıcı cihaz ilişkisi](reports-ref-userdeviceassociations.md)
-
-<!-- ## Data Model relationships
-
-For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md). -->
+  -  [Mobil Uygulama Yönetimi (MAM)](reports-ref-mobile-app-management.md)
+  -  [Kullanıcı](reports-ref-user.md)
+  -  [Kullanıcı Cihaz İlişkileri](reports-ref-user-device.md)

@@ -1,12 +1,12 @@
 ---
-title: "iOS için Intune uygulama yapılandırma ilkelerini kullanma"
+title: "Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme | Microsoft Docs"
 titlesuffix: Azure portal
-description: "iOS uygulaması çalıştırıldığında uygulamaya yapılandırma verilerini sağlamak için uygulama yapılandırma ilkelerini kullanmayı öğrenin.\""
+description: "iOS uygulaması çalıştırıldığında uygulamaya yapılandırma verilerini sağlamak için uygulama yapılandırma ilkelerini kullanmayı öğrenin."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,31 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc42f3cafa83b5f7ba053d03dbd066b725bb1fee
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>iOS için Microsoft Intune uygulama yapılandırma ilkelerini kullanma
+# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Kullanıcılar bir iOS uygulamasını çalıştırdığında kullanılan ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Örneğin, bir uygulama kullanıcıların şunları belirtmesini gerektirebilir:
-
--   Özel bağlantı noktası numarası.
-
--   Dil ayarları.
-
--   Güvenlik ayarları.
-
--   Bir şirket logosu gibi marka ayarları.
-
-Kullanıcılar, bu ayarları hatalı şekilde girerse yardım masanız üzerindeki yük artabilir ve yeni uygulamaların benimsenmesi yavaşlayabilir.
-
-Uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalıştırmadan önce bu ayarları bir ilke ile kullanıcılara atamanıza imkan vererek bu sorunları ortadan kaldırmanıza yardımcı olabilir. Daha sonra ayarlar otomatik olarak sağlanır ve kullanıcıların herhangi bir eylem yapması gerekmez. Uygulamalar, uygulama yapılandırmaları kullanımını desteklemek üzere yazılmış olmalıdır. Daha fazla bilgi için uygulama satıcınıza başvurun.
-
-Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından ilke denetimi gerçekleştirildiğinde (genellikle ilk çalıştırıldığında) kullanılır.
+Kullanıcılar bir iOS uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde, genellikle ilk çalıştırıldığında kullanılır.
 
 > [!TIP]
 > Bu ilke türü şu anda yalnızca iOS 8.0 ve üzeri sistemleri çalıştıran cihazlar için kullanılabilir. Aşağıdaki uygulama yükleme türlerini destekler:
@@ -50,67 +36,60 @@ Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, 
 > Uygulama yükleme türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](apps-add.md).
 
 ## <a name="create-an-app-configuration-policy"></a>Uygulama yapılandırma ilkesi oluşturma
-1.  Azure Portal’da oturum açın.
-2.  **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3.  **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-4.  **Mobil uygulamalar** iş yükünde **Yönet** > **Tüm Uygulama Yapılandırma İlkeleri**’ni seçin.
-5.  İlke listesi dikey penceresinde **Ekle**’yi seçin.
-6.  **Yapılandırma İlkesi Ekle** dikey penceresinde, uygulama yapılandırma ilkesi için **Ad** ve isteğe bağlı bir **Açıklama** sağlayın.
-7.  **Cihaz kayıt türü** için şunlardan birini seçin:
-    - **Intune’a kaydedilmiş** - Intune tarafından yönetilen uygulamalar için.
-    - **Intune’a kaydedilmemiş** - Intune tarafından yönetilmeyen veya başka bir çözüm tarafından yönetilen uygulamalar için.
-8.  **Platform** için **iOS**’u seçin (yalnızca Intune’a kaydedilmiş cihazlar için)
-9.  **İlişkili Uygulama**’yı seçin ve ardından **İlişkili Uygulama** dikey penceresinde, yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı seçin.
-10. **Yapılandırma İlkesi Ekle** dikey penceresinde **Yapılandırma ayarları**’nı seçin
-11. **Yapılandırma Ayarları** dikey penceresinde, yapılandırma profilini oluşturan XML değerlerini nasıl belirtmek istediğinizi seçin:
-    - **XML verisi gir** (yalnızca Intune’a kaydedilmiş cihazlar için) - İstediğiniz uygulama yapılandırma ayarlarını içeren XML özellik listesini girin veya yapıştırın. XML özellik listesinin biçimi, yapılandırdığınız uygulamaya bağlı olarak değişir. Kullanılacak tam biçim hakkında ayrıntılı bilgi için uygulamanın sağlayıcısına başvurun.
-Intune, girdiğiniz XML kodunun geçerli bir biçimde olup olmadığını denetler. XML özellik listesinin ilişkilendirildiği uygulama ile çalışıp çalışmayacağını denetlemez.
-XML özellik listeleri hakkında daha fazla bilgi için iOS Geliştirici Kitaplığı’ndaki [XML Özellik Listelerini Anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
-    - **Yapılandırma tasarımcısını kullan** (cihazın Intune’a kaydedilmiş olup olmamasından bağımsız olarak) - XML anahtar ve değer çiftlerini doğrudan portalda belirtmenize olanak tanır.
-11. Bitirdiğinizde, **Yapılandırma İlkesi Ekle** dikey penceresine gidin ve **Oluştur**’a basın.
 
-İlke oluşturulur ve ilke listesi dikey penceresinde görüntülenir.
+1. Azure portalında oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
+3. **Mobil uygulamalar** iş yükünü seçin.
+4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
+5. Aşağıdaki bilgileri ayarlayın:
+    - **Ad**<br>
+      Azure portalında görünecek profil adı.
+    - **Açıklama**<br>
+      Azure portalında görünecek profil açıklaması.
+    - **Cihaz kaydı türü**<br>
+      **Yönetilen cihazlar**’ı seçin.
+6. **Platform** için **iOS**’u seçin.
+7.  **İlişkili Uygulama**’yı seçin. Daha sonra **İlişkili Uygulama** dikey penceresinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı seçin.
+8.  **Yapılandırma İlkesi Ekle** dikey penceresinde **Yapılandırma ayarları**’nı seçin.
+9. **Yapılandırma ayarları biçimi**’ni seçin. Aşağıdakilerden birini seçin:
+    - **[Yapılandırma tasarımcısını kullanma](#Use-the-configuration-designer)**
+    - **[XML Verilerini girme](#enter-xml-data)**
+10. **Tamam**’ı ve daha sonra **Ekle**’yi seçin.
 
+## <a name="use-configuration-designer"></a>Yapılandırma tasarımcısı kullanma
 
+Intune’a kaydedilen veya kaydedilmeyen cihazlardaki uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Tasarımcı, belirli yapılandırma anahtarları ve değerleri yapılandırmanıza imkan tanır. Ayrıca her bir değer için veri türünü belirtmeniz gerekir. Uygulamalar yüklendiğinde ayarlar bunlara otomatik olarak sağlanır.
 
->[!Note]
->Cihazın Intune’a kaydedilmiş olup olmamasından bağımsız olarak, iş kolu uygulamalarını Intune uygulama koruma ilkeleri ve uygulama yapılandırma ilkeleri tarafından yönetilmeye hazırlamak için [Intune Uygulama SDK’sini](https://docs.microsoft.com/intune/app-sdk-ios) kullanabilirsiniz. Örneğin [Intune Managed Browser](app-configuration-managed-browser.md)’da izin verilen ve engellenen URL’leri yapılandırmak için bir uygulama yapılandırma ilkesi kullanabilirsiniz. Bir uygulama bu ilkelerle uyumlu hale geldiğinde, bir ilke kullanarak bu ilkeleri yapılandırabilirsiniz.
+### <a name="add-a-setting"></a>Ayar ekle
 
+1. Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
+   - **Yapılandırma anahtarı**<br>
+     Belirli ayar yapılandırmalarını benzersiz olarak tanımlayan anahtar.
+   - **Değer türü**<br>
+     Yapılandırma değerinin veri türü. Türler Tamsayı, Gerçek, Dize ve Boole değerlerini içerir.
+   - **Yapılandırma değeri**<br>
+     Yapılandırmanın değeri.
+2. Yapılandırma ayarlarınızı yapmak için **Tamam**’a tıklayın.
 
-Atanan uygulama bir cihazda çalıştırıldığında, uygulama yapılandırma ilkesinde yapılandırdığınız ayarlarla çalışır.
-Bir veya daha fazla uygulama yapılandırma ilkesi çakıştığında ne olacağı hakkında bilgi için yapılandırdığınız uygulamaya ait belgelere bakın.
+### <a name="delete-a-setting"></a>Bir ayarı silme
 
->[!Tip]
->Ayrıca bu görevleri tamamlamak için Grafik API’si de kullanabilirsiniz. Ayrıntılar için bkz. [Grafik API’si Başvurusu MAM Hedefli Yapılandırma](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
-
-
-## <a name="information-about-the-xml-file-format"></a>XML dosya biçimi hakkında bilgi
-
-Intune, bir özellik listesinde aşağıdaki veri türlerini destekler:
-
-- &lt;tamsayı&gt;
-- &lt;gerçek&gt;
-- &lt;dize&gt;
-- &lt;dizi&gt;
-- &lt;sözlük&gt;
-- &lt;true /&gt; veya &lt;false /&gt;
-
-Veri türleri hakkında daha fazla bilgi için iOS Geliştirici Kitaplığı’ndaki [Özellik Listeleri Hakkında](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) konusuna bakın.
-
-Ayrıca, Intune özellik listesinde aşağıdaki belirteç türlerini destekler:
-- \{\{userprincipalname\}\} - (Örnek: **John@contoso.com**)
-- \{\{mail\}\} - (Örnek: **John@contoso.com**)
-- \{\{partialupn\}\} - (Örnek: **John**)
-- \{\{accountid\}\} - (Örnek: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (Örnek: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (Örnek: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (Örnek: **John Doe**)
-- \{\{serialnumber\}\} - (Örnek: **F4KN99ZUG5V2**) iOS cihazlar için
-- \{\{serialnumberlast4digits\}\} - (Örnek: **G5V2**) iOS cihazlar için
+1. Ayarların yanındaki üç nokta simgesini (**...**) seçin.
+2. **Sil**’i seçin.
 
 \{\{ ve \}\} karakterleri yalnızca belirteç türleri tarafından kullanılır ve başka bir amaçla kullanılmamalıdır.
 
-## <a name="example-format-for-an-app-configuration-xml-file"></a>Uygulama yapılandırma XML dosyası için örnek biçim
+## <a name="enter-xml-data"></a>XML verilerini girme
+
+Intune’a kaydedilmiş cihazlar için uygulama yapılandırma ayarlarını içeren bir XML özellik listesi girebilir veya yapıştırabilirsiniz. XML özellik listesinin biçimi, yapılandırdığınız uygulamaya bağlı olarak değişir. Kullanılacak tam biçim hakkında ayrıntılı bilgi için uygulamanın sağlayıcısına başvurun.
+
+Intune XML biçimini doğrular. Ancak Intune, XML özellik listesinin (PList) hedef uygulama ile çalışıp çalışmayacağını denetlemez.
+
+XML özellik listeleri hakkında daha fazla bilgi edinmek için:
+
+  -  [iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)’yı okuyun.
+  -  iOS Geliştirici Kitaplığı’nda [XML Özellik Listelerini anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
+
+### <a name="example-format-for-an-app-configuration-xml-file"></a>Uygulama yapılandırma XML dosyası için örnek biçim
 
 Uygulama yapılandırma dosyasını oluşturduğunuzda, bu biçimi kullanarak aşağıdaki değerlerden birini veya daha fazlasını belirtebilirsiniz:
 
@@ -137,8 +116,30 @@ Uygulama yapılandırma dosyasını oluşturduğunuzda, bu biçimi kullanarak a�
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
+### <a name="supported-xml-plist-data-types"></a>Desteklenen XML PList veri türleri
+
+Intune, bir özellik listesinde aşağıdaki veri türlerini destekler:
+
+- &lt;tamsayı&gt;
+- &lt;gerçek&gt;
+- &lt;dize&gt;
+- &lt;dizi&gt;
+- &lt;sözlük&gt;
+- &lt;true /&gt; veya &lt;false /&gt;
+
+### <a name="tokens-used-in-the-property-list"></a>Özellik listesinde kullanılan belirteçler
+
+Ayrıca, Intune özellik listesinde aşağıdaki belirteç türlerini destekler:
+- \{\{userprincipalname\}\}—örneğin, **John@contoso.com**
+- \{\{mail\}\}—örneğin, **John@contoso.com**
+- \{\{partialupn\}\}—örneğin, **John**
+- \{\{accountid\}\}—örneğin, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\}—örneğin, **b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\}—örneğin, **3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\}—örneğin, **John Doe**
+- \{\{serialnumber\}\}—örneğin, **F4KN99ZUG5V2** (iOS cihazlar için)
+- \{\{serialnumberlast4digits\}\}—örneğin, **G5V2** (iOS cihazlar için)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

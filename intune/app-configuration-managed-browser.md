@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/10/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
+ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile Managed Browser ilkelerini kullanarak İnternet erişimini yönetme
 
@@ -68,7 +68,7 @@ Intune Managed Browser, [Microsoft Intune uygulama iş ortaklarının](https://w
 3.  Yönetim listesinin **Mobil uygulamalar** dikey penceresinde **Uygulama yapılandırma ilkeleri**’ni seçin.
 4.  **Uygulama Yapılandırma ilkeleri** dikey penceresinde **Ekle**’yi seçin.
 5.  **Uygulama yapılandırması ekle** dikey penceresinde, uygulama yapılandırma ayarları için bir **Ad** ve isteğe bağlı bir **Açıklama** girin.
-6.  **Cihaz kaydı** türü için **Yönetilen cihazlar** veya **Yönetilen uygulamalar**’ı seçin.
+6.  **Cihaz kayıt** türü için **Yönetilen uygulamalar**’ı seçin.
 7.  **Gerekli uygulamaları seç**’e tıklayın ve ardından **Hedeflenen uygulamalar** dikey penceresinde iOS için, Android için veya her ikisi için **Managed Browser**’ı seçin.
 8.  **Tamam**’ı seçerek **Uygulama yapılandırması ekle** dikey penceresine dönün.
 9.  **Yapılandırma Ayarları**’nı seçin. **Yapılandırma** dikey penceresinde, Managed Browser için yapılandırmaları sağlamak üzere anahtar ve değer çiftlerini tanımlayın. Tanımlayabileceğiniz farklı anahtar ve değer çiftleri hakkında bilgi edinmek için bu makalenin ilerleyen bölümlerine göz atın.
@@ -202,6 +202,22 @@ Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aş
     -   http://www.contoso.com:&#42;
 
     -   http://www.contoso.com: /&#42;
+
+## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS’ta Managed Browser kullanarak yönetilen uygulama günlüklerine erişme
+
+iOS cihazlarında Managed Browser yüklü olan son kullanıcılar, tüm Microsoft uygulamalarının yönetim durumunu görüntüleyebilirler. Yönetilen iOS uygulamalarında sorun gidermek için günlükleri gönderebilirler.
+
+1. iOS **Ayarlar**’ı açın.
+2. **Managed Browser** uygulama ayarlarını seçin.
+3. **Intune Tanılamayı Etkinleştir**’i açarak tarayıcıyı sorun giderme moduna ayarlayın.
+4. **Managed Browser**’ı açın. **Intune Uygulama Durumunu Görüntüle**’ye tıklayarak uygulamaların kendi ilke ayarlarını gözden geçirin.
+5. **Başla** ve **Günlük Paylaş** veya **Günlükleri Microsoft’a Gönder**’i seçerek sorun giderme günlüklerini BT yöneticinize veya Microsoft’a gönderin.
+
+Browser’ı ayrıca uygulama içerisinden de sorun giderme modunda açabilirsiniz.
+
+1. Managed Browser’ı açın.
+2. Adres kutusuna `about:intunehelp` yazın.
+Browser sorun giderme modunda açılacaktır.
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser için güvenlik ve gizlilik
 

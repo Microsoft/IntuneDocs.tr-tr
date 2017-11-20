@@ -1,12 +1,12 @@
 ---
-title: "Intune ile bir cihaz geçiş kodunu sıfırlama"
+title: "Intune ile cihaz geçiş kodlarını sıfırlama ve kaldırma"
 titlesuffix: Azure portal
-description: "Intune ile yönettiğiniz cihazlarda geçiş kodunu sıfırlama hakkında bilgi edinin.\""
+description: "Intune ile yönettiğiniz cihazlarda geçiş kodunu sıfırlama ve kaldırma hakkında bilgi edinin."
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 11/06/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,20 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3defec3624944918d14b9c4527487c368c487dd6
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: dfa94d11f978bbe4d23b6672423c849e1f061986
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="reset-the-passcode-on-intune-managed-devices"></a>Intune tarafından yönetilen cihazlardaki geçiş kodunu sıfırlama
+# <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>Intune tarafından yönetilen cihazlardaki geçiş kodunu sıfırlama ve kaldırma
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Geçiş kodunu sıfırla** işlemi, cihaz için <*cihaz adı*> **Genel Bakış** dikey penceresinde görüntülenen yeni bir geçiş kodu oluşturur.
+*Kaldırma* ve *sıfırlama* terimleri bu makalede değişimli olarak kullanılmıştır.
+
+**Geçiş kodunu kaldır** eylemi, cihaz için <*cihaz adı*> **Genel Bakış** dikey penceresinde görüntülenen yeni bir geçiş kodu oluşturur.
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
@@ -41,7 +43,7 @@ ms.lasthandoff: 09/15/2017
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
 4. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
-5. Yönettiğiniz cihazların listesinden bir cihaz seçin, sonra **Geçiş kodunu sıfırla** uzak cihaz işlemini seçin.
+5. Yönettiğiniz cihazların listesinden bir cihaz seçin, sonra **Geçiş kodunu kaldır** uzak cihaz eylemini seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

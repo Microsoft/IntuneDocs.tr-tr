@@ -1,12 +1,12 @@
 ---
-title: "Android for Work için Intune uygulama yapılandırma ilkelerini kullanma"
+title: "Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme | Microsoft Docs"
 titlesuffix: Azure portal
-description: "Android for Work uygulaması çalıştırıldığında uygulamaya yapılandırma verilerini sağlamak için uygulama yapılandırma ilkelerini kullanmayı öğrenin.\""
+description: "Android for Work uygulaması çalıştırıldığında uygulamaya yapılandırma verilerini sağlamak için uygulama yapılandırma ilkelerini kullanmayı öğrenin."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,82 +15,88 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4b73202a1a68bd2dd3dcbfa86c21cb09ae00056c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f3fcc589010e9a153ee105aaf4b161ebcbcbfbb4
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Android for Work için Microsoft Intune uygulama yapılandırma ilkelerini kullanma
+# <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Kullanıcılar bir Android for Work uygulamasını çalıştırdığında kullanılabilecek ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Uygulama yapılandırmasını tüm uygulamalar desteklemez. Uygulamanın, uygulama yapılandırma ilkelerini destekleyecek şekilde oluşturulup oluşturulmadığını görmek için uygulamanın geliştiricisine danışın.
+Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde, genellikle ilk çalıştırıldığında kullanılır.
 
-Uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalıştırmadan önce kullanıcılarınız için kullanılabilir uygulama ayarlarını önceden yapılandırmanıza yardımcı olabilir. Bazı Android uygulamaları, Azure portalında [yapılandırma tasarımcısı](#use-configuration-designer) ile yapılandırabileceğiniz yönetilen yapılandırma seçeneklerini destekler. Uygulamalardaki (örneğin, Paket türleri içerenler) bazı yapılandırma ayarları yapılandırma tasarımcısı ile yapılandırılamaz.  Bu değerler için [JSON düzenleyici](#use-json-editor) kullanmanız gerekir.   Uygulama yüklendiğinde ayarlar uygulamalara otomatik olarak sağlanır.
+> [!Note]  
+> Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın, uygulama yapılandırma ilkelerini destekleyecek şekilde oluşturulup oluşturulmadığını öğrenmek için uygulamanın geliştiricisine başvurun.
 
-Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde, genellikle ilk çalıştırıldığında kullanılır).
+1. Azure portalında oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
+3. **Mobil uygulamalar** iş yükünü seçin.
+4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
+5. Aşağıdaki bilgileri ayarlayın:
+    - **Ad**  
+      Azure portalında görünecek profil adı.
+    - **Açıklama**  
+      Azure portalında görünecek profil açıklaması.
+    - **Cihaz kaydı türü**  
+      **Yönetilen cihazlar**’ı seçin.
+6. **Platform** için **Android**’i seçin.
+7. Bir uygulama yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın.
+8. **Yapılandırma ayarlarını** seçin. Yapılandırmaları ayarlamak için şunları kullanabilirsiniz:
+    - [Yapılandırma tasarımcısı](#Use-the-configuration-designer)
+    - [JSON düzenleyicisi](#Enter-the-JSON-editor)
+9. **Tamam**’ı ve daha sonra **Ekle**’yi seçin.
 
-## <a name="use-configuration-designer"></a>Yapılandırma tasarımcısı kullanma
+## <a name="use-the-configuration-designer"></a>Yapılandırma tasarımcısını kullanma
 
-1. Azure portalında **Mobil uygulamalar**’ı seçin. **Yönet** altında, **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
-2. Aşağıdaki bilgileri ayarlayın:
-    - **Ad** - Azure portalında görünecek profil adı
-    - **Açıklama** - Azure portalında görünecek profil açıklaması
-    - **Platform** - **Android**’i seçin
-    - **Cihaz kayıt türü** - **Intune'a Kayıtlı** sizin için önceden seçilmiştir.
-3. Bir yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin.  Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın
-4. **Yapılandırma ayarlarını** seçin.
-5. **Yapılandırma ayarları biçimi** için **Yapılandırma tasarımcısını kullan**’ı seçin.
-6. **Ekle**’yi seçin. Kullanılabilir yapılandırma ayarlarının listesi görüntülenir. Liste şunları içerir:
-    - **Yapılandırma anahtarları** - Ayarın adı.
-    - **Değer türü** - Yapılandırılabilir ayar, örneğin **Boolean** veya **Dize**.
-    - **Açıklama** - Yapılandırma ayarının açıklaması.
-7. Bu profille yapılandırmak istediğiniz ayarların onay kutularını işaretleyip **Tamam**’a tıklayın.
-8. Seçtiğiniz ayarların listesi kullanılabilir **Yapılandırma değeri** ile birlikte görüntülenir. Her ayar için bir değer belirtin ve ardından **Tamam**’a tıklayın.
+Intune’a kaydedilen veya kaydedilmeyen cihazlardaki uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Tasarımcı, belirli yapılandırma anahtarları ve değerleri yapılandırmanıza imkan tanır. Ayrıca her bir değer için veri türünü belirtmeniz gerekir.
 
-## <a name="use-json-editor"></a>JSON düzenleyicisini kullanma
+Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
 
-1. Azure portalında **Mobil uygulamalar**’ı seçin. **Yönet** altında, **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
-2. Aşağıdaki bilgileri ayarlayın:
-    - **Ad** - Azure portalında görünecek profil adı
-    - **Açıklama** - Azure portalında görünecek profil açıklaması
-    - **Platform** - **Android**’i seçin
-    - **Cihaz kayıt türü** - **Intune'a Kayıtlı** sizin için önceden seçilmiştir.
-3. Bir yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin.  Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın.
-5. **Yapılandırma Ayarları**’nı seçin.
-6. **Yapılandırma ayarları biçimi** için **JSON düzenleyicisine gir**’i seçin.
-7. Düzenleyicide, yapılandırma ayarları için JSON değerlerini tanımlayabilirsiniz. Örnek bir dosya indirip ardından yapılandırmak için **JSON şablonu indir**’i seçebilirsiniz.
-8. İşiniz bittiğinde **Tamam**’ı seçip **Ekle**’ye tıklayın.
+  - **Yapılandırma anahtarı**  
+     Belirli ayar yapılandırmalarını benzersiz olarak tanımlayan anahtar.
+  - **Değer türü**  
+    Yapılandırma değerinin veri türü. Türler Tamsayı, Gerçek, Dize ve Boole değerlerini içerir.
+  - **Yapılandırma değeri**  
+    Yapılandırmanın değeri. 
+
+## <a name="enter-the-json-editor"></a>JSON düzenleyicisini girme
+
+Uygulamalardaki (örneğin, Paket türleri içerenler) bazı yapılandırma ayarları yapılandırma tasarımcısı ile yapılandırılamaz. Bu değerler için JSON düzenleyicisini kullanmanız gerekir. Uygulama yüklendiğinde ayarlar uygulamalara otomatik olarak sağlanır.
+
+1. **Yapılandırma ayarları biçimi** için **JSON düzenleyicisine gir**’i seçin.
+2. Düzenleyicide, yapılandırma ayarları için JSON değerlerini tanımlayabilirsiniz. Örnek bir dosya indirip ardından yapılandırmak için **JSON şablonu indir**’i seçebilirsiniz.
+3. **Tamam**’ı ve daha sonra **Ekle**’yi seçin.
 
 İlke oluşturulur ve ilke listesi dikey penceresinde görüntülenir.
 
-
-
 Atanan uygulama bir cihazda çalıştırıldığında, uygulama yapılandırma ilkesinde yapılandırdığınız ayarlarla çalışır.
 
-## <a name="preconfigure-permissions-grant-state-for-apps"></a>Uygulamalar için izin verme durumunu önceden yapılandırma
+## <a name="preconfigure-the-permissions-grant-state-for-apps"></a>Uygulamalar için izin verme durumunu önceden yapılandırma
 
-Uygulamaların Android cihaz özelliklerine erişmesi iznini de önceden yapılandırabilirsiniz. Varsayılan olarak, konuma veya cihaz kamerasına erişim gibi cihaz izinlerine ihtiyacı olan Android uygulamaları kullanıcıdan izinleri kabul etmesini veya reddetmesini ister. Örneğin, uygulama cihazın mikrofonunu kullanıyorsa, son kullanıcıdan mikrofonu kullanmak için uygulamaya izin vermesi istenir.
+Uygulamaların Android cihaz özelliklerine erişmesi iznini de önceden yapılandırabilirsiniz. Varsayılan olarak, konuma veya cihaz kamerasına erişim gibi cihaz izinlerine ihtiyacı olan Android uygulamaları kullanıcıdan izinleri kabul etmesini veya reddetmesini ister. Örneğin, uygulama cihazın mikrofonunu kullanıyorsa, kullanıcıdan mikrofonu kullanmak için uygulamaya izin vermesi istenir.
 
-1. Azure portalında **Mobil uygulamalar**’ı seçin. **Yönet** altında, **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
-2. Aşağıdaki bilgileri ayarlayın:
-    - **Ad** - Azure portalında görünecek profil adı
-    - **Açıklama** - Azure portalında görünecek profil açıklaması
-    - **Platform** - **Android**’i seçin
-    - **Cihaz kayıt türü** - **Intune'a Kayıtlı** sizin için önceden seçilmiştir.
-3. Bir yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin.  Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın.
-5. **İzinler** ve ardından **Ekle**’yi seçin.
-6. Kullanılabilir uygulama izinleri listesinden seçim yapın ve ardından **Tamam**’ı seçin.
-7. Bu ilkeyle verilecek her izin için bir seçenek belirleyin:
-    - **Sor** - Kullanıcıdan kabul etmesini veya reddetmesini isteme.
-    - **Otomatik olarak izin ver** - Kullanıcıya bildirmeden otomatik olarak onaylama.
-    - **Otomatik olarak reddet** - Kullanıcıya bildirmeden otomatik olarak reddetme.
-8. Uygulama yapılandırma ilkesi atamak için uygulama yapılandırma ilkesini seçin, **Atama**’yı ve ardından **Grupları Seç**’i seçin.
-9. Atanacak kullanıcı gruplarını seçin ve **Seç**’i seçin.
-10. İlkeyi atamak için **Kaydet**’i seçin.
+1. Azure portalında oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
+3. **Mobil uygulamalar**’ı seçin. **Yönet** altında, **Uygulama yapılandırma ilkelerini** seçip **Ekle**’ye tıklayın.
+4. Aşağıdaki bilgileri ayarlayın:
+    - **Ad**. Azure portalında görünecek profil adı.
+    - **Açıklama**. Azure portalında görünecek profil açıklaması.
+    - **Platform**. **Android**’i seçin.
+    - **Cihaz kaydı türü**. **Yönetilen cihazlar** sizin için önceden seçilmiştir.
+5. Bir yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın.
+6. **İzinler** ve ardından **Ekle**’yi seçin.
+7. Kullanılabilir uygulama izinleri listesinden seçim yapın ve ardından **Tamam**’ı seçin.
+8. Bu ilkeyle verilecek her izin için bir seçenek belirleyin:
+    - **Sor**. Kullanıcıdan kabul etmesini veya reddetmesini isteme.
+    - **Otomatik olarak izin ver**. Kullanıcıya bildirmeden otomatik olarak onayla.
+    - **Otomatik olarak reddet**. Kullanıcıya bildirmeden otomatik olarak reddet.
+9. Uygulama yapılandırma ilkesi atamak için uygulama yapılandırma ilkesini seçin, **Atama**’yı ve ardından **Grupları Seç**’i seçin.
+10. Atanacak kullanıcı gruplarını seçin ve **Seç**’i seçin.
+11. İlkeyi atamak için **Kaydet**’i seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Normal yollarla, uygulamayı [atama](apps-deploy.md) ve [izleme](apps-monitor.md) işlemlerine devam edin.
+Uygulamayı [atamaya](apps-deploy.md) ve [izlemeye](apps-monitor.md) devam edin.
 
