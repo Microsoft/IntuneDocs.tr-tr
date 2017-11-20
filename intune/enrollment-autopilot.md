@@ -5,17 +5,17 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows AutoPilot Dağıtım Programını kullanarak Windows cihazları kaydetme
 Windows AutoPilot Dağıtım Programı, cihaz sağlamayı kolaylaştırır. Bugün, özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman almaktadır. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de çok vakit harcayabilirsiniz. Microsoft Intune ve AutoPilot ile özel işletim sistemi görüntülerini derleme, bakım ve uygulama zahmetine katlanmanız gerekmeden son kullanıcılarınıza yeni cihazlar verebilirsiniz. AutoPilot cihazları yönetmek için Intune kullandığınızda cihazlar kaydedildikten sonra ilkeler, profiller, uygulamalar gibi özellikleri yönetebilirsiniz. Faydalar, senaryolar ve önkoşullara genel bir bakış için bkz. [Windows AutoPilot’a Genel Bakış](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -57,6 +57,13 @@ AutoPilot dağıtım profilleri, AutoPilot cihazları yapılandırmak için kull
 > - Skip Cortana, OneDrive ve OEM kayıt kurulum sayfaları
 > - İş veya okul için otomatik olarak ayarlama
 > - Şirket veya okul markasıyla oturum açma deneyimi    
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows AutoPilot’ta atanmamış cihazlar için uyarılar  <!-- 163236 -->
+Windows AutoPilot’ta atanmamış cihazlar için bir uyarı görüntüleyebilir ve böylece AutoPilot programında kaç tane cihaza AutoPilot dağıtım profili atanmadığını görebilirsiniz. Uyarıdaki bilgileri kullanarak profiller oluşturun ve bunları profil atanmamış cihazlara atayın. Uyarıya tıkladığınızda, Windows AutoPilot cihazların tam listesini ve cihazlar hakkında ayrıntılı bilgileri görürsünüz. 
+1. [Azure](https://portal.azure.com/)’da oturum açın. 
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Cihaz kaydı**'nı seçin.
+4. **Genel Bakış**’ı seçerek uyarıyı görüntüleyin. Uyarıya tıklayarak AutoPilot cihazların listesine ulaşın.  
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Bir AutoPilot dağıtım profili atama
 AutoPilot dağıtım profilleri oluşturduktan sonra bunları seçili cihazlara atayabilirsiniz.

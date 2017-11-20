@@ -3,10 +3,10 @@ title: "Intune’da kayıt kısıtlamalarını ayarlama"
 titlesuffix: Azure portal
 description: "Intune’da platforma göre kaydı kısıtlama ve cihaz kayıt sınırı ayarlama. \""
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0117d3249f7fd2568201762b7dd16af9cc26392c
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 463278e4dc9ad677f654754d4710b110b376cc2d
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -33,7 +33,7 @@ Bir Intune yöneticisi olarak hangi cihazların Intune yönetimine kaydedilebile
   - iOS
   - Mac OS
   - Windows
-- Platform işletim sistemi sürümü (yalnızca iOS ve Android)
+- iOS, Android ve Windows (yalnızca Windows 10 sürümleri kullanılabilir, Windows 8.1’e izin verilmişse bu alanı boş bırakın) için platform işletim sistemi sürümü
   - En düşük sürüm
   - En yüksek sürüm
 - Kişisel cihazları kısıtlama (yalnızca iOS, Android ve macOS)
@@ -55,7 +55,7 @@ Varsayılan kayıt kısıtlamaları tüm kullanıcılar ve kullanıcısız kayı
 
   **Kaydet**'e tıklayın.
 6. **Tüm Kullanıcılar** altında **Platform Yapılandırmaları**’nı seçin ve aşağıdaki yapılandırmaları belirleyin. İzin verilen her platform için aşağıdaki seçenekleri yapılandırabilirsiniz:
-  - **Sürümler** - Android ve iOS cihazları için **En Düşük** ve **En Yüksek** platform işletim sistemi sürümlerini belirtin. İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen cihazlar için geçerli değildir.
+  - **Sürümler** - Android, iOS ve Windows cihazlar için **En Düşük** ve **En Yüksek** platform işletim sistemi sürümlerini belirtin. Android major.minor.rev.build destekler. iOS major.minor.rev destekler. Windows, yalnızca Windows 10 için major.minor.rev.build destekler. İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir. 
   - **Kişisel** - Android, iOS ve macOS cihazlar için **İzin Ver** veya **Engelle** seçeneklerinden birini belirtin.
   ![Varsayılan cihaz platform yapılandırmaları ile cihaz kısıtlamaları iş alanının, kişisel ayarların yapılandırıldığını gösteren ekran görüntüsü.](media/device-restrictions-platform-configurations.png)
   **Kaydet**'e tıklayın.

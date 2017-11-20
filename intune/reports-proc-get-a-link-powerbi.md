@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: aa559d946456f215d4db925c8a2e8a42cfacf209
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI ile Veri Ambarına bağlanma
 
@@ -69,13 +69,13 @@ Azure AD’de istemci kimliği doğrulandığı zaman OData URL’si, Veri Ambar
 5. **Giriş** > **Veri Al**’ı seçin. **OData akışı**’nı seçin.
 6. **Temel**’i seçin.
 7. URL kutusuna **OData URL’sini** yazın veya yapıştırın.
-8. **Tamam**’a tıklayın.
+8. **Tamam**’ı seçin.
 9. Power BI Desktop istemcisinden Azure AD’de kiracınızın kimliğini doğrulamadıysanız, kimlik bilgilerinizi girin. Verilerinize erişim kazanmak için OAuth 2.0 kullanarak Azure Active Directory’de (Azure AD) yetkilendirilmeniz gerekir.  
     1.  **Kuruluş hesabını** seçin.  
     2.  Kullanıcı adınızı ve parolanızı yazın.  
-    3.  **Oturum Aç**’a tıklayın.  
-    4.  **Bağlan**'a tıklayın.  
-10. **Yükle**’ye tıklayın.
+    3.  **Oturum aç**’ı seçin.  
+    4.  **Bağlan**’ı seçin.  
+10. **Yükle**’yi seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

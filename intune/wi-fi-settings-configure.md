@@ -15,11 +15,11 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3333a5addfd0c4ab757121e22e19ac66c0b3e1d
-ms.sourcegitcommit: ec8561b8c63515e0b5f21a858984108dc5dbd5d3
+ms.openlocfilehash: ae5210cb3da5503c4cf1b85be8b8522fa1cfd6ce
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/10/2017
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune’da Wi-Fi ayarlarını yapılandırma
 
@@ -58,9 +58,7 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
     - **Android**
     - **macOS**
     - **Windows 8.1 ve üzeri (profili içeri aktarın)**
-6. **Profil** türü açılan listesinden **Wi-Fi temel** veya **Wi-Fi kurumsal**’ı seçin.
-    >[!TIP]
-    >Ağ adı ve SSID gibi temel özellikleri sağlamak için **Wi-Fi temel**’i kullanın. **Wi-Fi kurumsal**, Wi-Fi ağınız kullanıyorsa Genişletilebilir Kimlik Doğrulama Protokolü (EAP) gibi daha gelişmiş bilgileri sağlamanıza olanak tanır. **Wi-Fi içeri aktarma** (Windows 8.1 ve Windows 10 için), Wi-Fi ayarlarını daha önce başka cihazdan dışarı aktarmış olduğunuz bir XML dosyası olarak içeri aktarmanıza olanak tanır.
+6. **Profil** türü açılan listesinden **Wi-Fi temel** veya **Wi-Fi kurumsal**’ı seçin. Ağ adı ve SSID gibi temel özellikleri sağlamak için **Wi-Fi temel**’i kullanabilirsiniz. **Wi-Fi kurumsal**, Wi-Fi ağınız kullanıyorsa Genişletilebilir Kimlik Doğrulama Protokolü (EAP) gibi daha gelişmiş bilgileri sağlamanıza olanak tanır. **Wi-Fi içeri aktarma** (Windows 8.1 ve Windows 10 için), Wi-Fi ayarlarını daha önce başka cihazdan dışarı aktarmış olduğunuz bir XML dosyası olarak içeri aktarmanıza olanak tanır.
 7. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
     - [Android ve Android for Work ayarları](wi-fi-settings-android.md)
     - [iOS ayarları](wi-fi-settings-ios.md)

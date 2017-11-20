@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>İşleri halletmek için yönetilen cihazları kullanma
 Microsoft Intune, kuruluşların cihazları (akıllı telefonlar, tabletler ve bilgisayarlar gibi), uygulamaları ve e-posta gibi diğer şirket kaynaklarını yönetmesine olanak tanıyan bir yazılım parçasıdır. Bu yazılım, çalışanların hemen her yerden ve hemen her cihazdan çalışma bilgilerine erişmesini sağlarken, kurumsal bilgilerin güvenliğini korumaya da yardımcı olur.
@@ -28,7 +28,7 @@ Microsoft Intune, kuruluşların cihazları (akıllı telefonlar, tabletler ve b
 Cihazlarınızı Intune ile yönetilmek üzere kaydettiğinizde, BT departmanınız bu iş veya okul kaynaklarını yönetebilir, cihazın güvenli kalmasını sağlayabilir ve siz çalışanlara işlerinizi halletmek için tercih ettiğiniz cihazı kullanma özgürlüğünü tanıyabilir. Bunu yapmanın birincil yolu, Şirket Portalı aracılığıyla cihazı yönetime kaydetmektir.
 
 ## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Cihazımı Intune’a kaydettiğimde şirketim hangi bilgileri görebilir?
-Şirketinizin BT departmanı işle ilgili bilgileri görebilir, ancak kişisel bilgilerinizi göremez. Özellikle işte kullanmak için kişisel bir cihazı kaydettiğinizde bunu bilmeniz önemlidir. [Ne görüp ne göremedikleri bir sonraki kullanıcı yardımı makalesinde](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) ayrıntılı olarak açıklanmıştır.
+Şirketinizin destek birimi işle ilgili bilgileri görebilir, ancak kişisel bilgilerinizi göremez. Özellikle işte kullanmak için kişisel bir cihazı kaydettiğinizde bunu bilmeniz önemlidir. [Ne görüp ne göremedikleri bir sonraki kullanıcı yardımı makalesinde](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) ayrıntılı olarak açıklanmıştır.
 
 ## <a name="how-do-i-get-the-company-portal"></a>Şirket Portalı’nı nasıl alabilirim?
 Şirket Portalı’nı iki farklı yolla alabilirsiniz:
@@ -49,7 +49,8 @@ Cihazlarınızı Intune ile yönetilmek üzere kaydettiğinizde, BT departmanın
 Şirket Portalı web sitesiyle yapabileceklerinizi cihazınızdaki Şirket Portalı uygulamasını kullanarak yapabileceklerinizle karşılaştırmak için aşağıdaki bağlantılardan birini seçin:
 
 - [Android cihazınızı kullanma](using-your-android-device-with-intune.md)
-- [iOS veya macOS cihazınızı kullanma](using-your-ios-or-macOS-device-with-intune.md)
+- [iOS cihazınızı kullanma](using-your-ios-device-with-intune.md)
+- [macOS cihazınızı kullanma](using-your-macos-device-with-intune.md)
 - [Windows cihazınızı kullanma](using-your-windows-device-with-intune.md)
 - [Şirket portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 

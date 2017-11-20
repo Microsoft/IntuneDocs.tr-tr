@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="manage-software-updates"></a>Yazılım güncelleştirmelerini yönetme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Hizmet olarak Windows, Windows 10 cihazları güncelleştirmenin yoludur. Windows 10 ile yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri kapsar. Böylece, en son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın tamamen güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
+Hizmet olarak Windows, Windows 10 cihazları güncelleştirmenin yoludur. Windows 10 ile yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri kapsar. Böylece, en son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
 
 İşletmeler için Windows Update’i kullanarak güncelleştirme yönetimi deneyimini, cihaz grupları için tek tek güncelleştirmelerin onaylanması gerekmeyecek şekilde basitleştirebilirsiniz. Ortamlarınızdaki riski yönetmek amacıyla bir güncelleştirme dağıtım stratejisi yapılandırabilirsiniz. Böylece Windows Update güncelleştirmelerin doğru zamanda yüklenmesini sağlar. Microsoft Intune, cihazlarda güncelleştirme ayarlarının yapılandırılabilmesini sağlar ve güncelleştirme yüklemelerini erteleme olanağı tanır. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. **Windows 10 güncelleştirme halkalarını** yapılandırmak ve yönetmek için Intune kullanın. Güncelleştirme kademesi, Windows 10 güncelleştirmelerinin ne zaman ve nasıl yükleneceğini yapılandıran bir dizi ayar içerir. Örneğin, aşağıdakileri yapılandırabilirsiniz:
 
-- **Windows 10 Bakım Dalı**: Cihaz gruplarının güncelleştirmeleri Güncel Dalı üzerinden mi yoksa İş İçin Güncel Dalı üzerinden mi alacağını seçin.  
+- **Windows 10 Bakım Kanalı**: Cihaz gruplarının güncelleştirmeleri Yarı Yıllık Kanal (Hedefli) veya Yarı Yıllık Kanal’ın hangisinden almasını istediğinizi seçin.  
 - **Erteleme Ayarları**: Cihaz gruplarının güncelleştirme yüklemelerini erteleyen erteleme ayarlarını yapılandırın. Aşamalı bir güncelleştirme dağıtımı oluşturarak güncelleştirme boyunca ilerleme durumunu gözden geçirmek için bu ayarları kullanın.
 - **Duraklatma**: Güncelleştirme dağıtımı sırasında herhangi bir noktada bir sorun keşfederseniz güncelleştirmelerin yüklenmesini erteleyin.
 - **Bakım penceresi**: Güncelleştirmelerin hangi saatler arasında yüklenebileceğini yapılandırın.
@@ -78,7 +78,7 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 5. Güncelleştirme kademeleri listesinin gösterildiği dikey pencerede **Oluştur**’u seçin.
 6. **Güncelleştirme Kademesi Oluştur** dikey penceresinde güncelleştirme kademesi için bir ad ve isteğe bağlı olarak bir açıklama girin ve sonra **Ayarlar**’ı seçin.
 7. **Ayarlar** dikey penceresinde aşağıdaki bilgileri yapılandırın:
-    - **Bakım dalı**: Cihazın hangi dalın Windows güncelleştirmelerini alacağını ayarlayın (Güncel Dalı veya İş İçin Güncel Dalı).
+    - **Bakım kanalı**: Cihazın Windows güncelleştirmelerini alacağı kanalı ayarlayın (Yarı Yıllık Kanal (Hedefli) veya Yarı Yıllık Kanal).
     - **Microsoft güncelleştirmeleri**: Microsoft Update’ten uygulama güncelleştirmeleri için tarama yapılıp yapılmayacağını seçin.
     - **Windows sürücüleri**: Güncelleştirmeler sırasında Windows Update sürücülerini hariç tutmak isteyip istemediğinizi seçin.
     - **Otomatik güncelleştirme davranışı**: Tarama, indirme ve güncelleştirmeleri yükleme ile ilgili otomatik güncelleştirme davranışlarının nasıl yönetileceğini seçin. Ayrıntılı bilgi için bkz. [Güncelleştir/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
@@ -87,12 +87,12 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
     Kalite Güncelleştirmeleri, genellikle mevcut Windows işlevselliğine yönelik düzeltme ve iyileştirmelerdir. Normal olarak her ayın ilk salı günü yayımlanırlar ancak Microsoft tarafından herhangi bir zamanda yayımlanmaları mümkündür. Kullanıma sunulduktan sonra Kalite Güncelleştirmelerinin alınmasını ertelemek isteyip istemediğinizi ve ne kadar süreyle erteleyeceğinizi tanımlayabilirsiniz.
     - **Özellik güncelleştirmesi erteleme dönemi (gün)**: Özellik Güncelleştirmelerinin kaç gün erteleneceğini belirtin. Bu Özellik Güncelleştirmelerini almayı yayımlanmalarından sonra 180 güne kadar erteleyebilirsiniz.
 
-    Özellik Güncelleştirmeleri genellikle Windows’un yeni özellikleridir. **Bakım dalı** ayarını yapılandırmanızın ardından (**Güncel Dalı** veya **İş İçin Güncel Dalı**), Microsoft tarafından Windows Update'te kullanıma sunulduktan sonra Özellik Güncelleştirmelerinin alınmasını ertelemek isteyip istemediğinizi ve ne kadar süreyle erteleyeceğinizi tanımlayabilirsiniz.
+    Özellik Güncelleştirmeleri genellikle Windows’un yeni özellikleridir. **Bakım kanalı** ayarını yapılandırmanızın ardından (Yarı Yıllık Kanal (Hedefli) veya Yarı Yıllık Kanal), Microsoft tarafından Windows Update'te kullanıma sunulduktan sonra Özellik Güncelleştirmelerinin alınmasını ertelemek isteyip istemediğinizi ve ne kadar süreyle erteleyeceğinizi tanımlayabilirsiniz.
 
     Örneğin:  
-    **Bakım dalı, Güncel Dalı olarak ayarlanmışsa ve erteleme süresi 30 günse**: X Özellik Güncelleştirmesinin, Windows Update'te Güncel Dalı kapsamında ilk olarak Ocak ayında genel kullanıma sunulduğunu varsayalım. Cihaz bu güncelleştirmeyi Şubat ayına kadar (30 gün sonra) almaz.
+    **Bakım kanalı Yarı Yıllık Kanal (Hedefli) olarak ayarlı ve erteleme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi Windows Update’te önce herkese açık şekilde ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. Cihaz bu güncelleştirmeyi Şubat ayına kadar (30 gün sonra) almaz.
 
-    **Bakım dalı, İş İçin Güncel Dalı olarak ayarlanmışsa ve erteleme süresi 30 günse**: X Özellik Güncelleştirmesinin, Windows Update'te Güncel Dalı kapsamında ilk olarak Ocak ayında genel kullanıma sunulduğunu varsayalım. X Özellik Güncelleştirmesi, dört ay sonra Nisan’da İş İçin Güncel Dalı kapsamında yayımlanıyor. Cihaz, Özellik Güncelleştirmesini bu İş İçin Güncel Dalı sürümünden 30 gün sonra alır ve Mayıs ayında güncelleştirilir.
+    **Bakım kanalı Yarı Yıllık Kanal olarak ayarlı ve erteleme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi Windows Update’te önce herkese açık şekilde ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. X Özellik Güncelleştirmesi, dört ay sonra nisanda Yarı Yıllık Kanal kapsamında yayımlanıyor. Cihaz, Özellik Güncelleştirmesini bu Yarı Yıllık Kanal sürümünden 30 gün sonra alır ve mayıs ayında güncelleştirilir.
 
     - **Teslim iyileştirme**: Cihazların Windows güncelleştirmelerini indireceği yöntemi seçin. Ayrıntılar için bkz. [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
 8. İşiniz bittiğinde **Tamam**’a ve sonra da **Güncelleştirme Kademesi Oluştur** dikey penceresinde **Oluştur**’a tıklayın.

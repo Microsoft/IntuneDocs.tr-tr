@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 09/01/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cc4ba554b498e3b41df5fb1051f1d7a0bd4fb89e
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -159,7 +159,24 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
 11. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentifiers` anahtarı altındaki **IntuneMAMSettings** sözlüğüne bir dize dizisi olarak ekleyin.
 
+## <a name="using-the-intune-mam-configurator-tool"></a>Intune MAM Yapılandırıcı Aracı’nı kullanma
 
+Intune MAM Yapılandırıcı Aracı artık, SDK’mızı el ile tümleştirmek için gereken tüm info.plist işlemesini yapıyor. Bu aracı, iOS için Intune Uygulama SDK’sı deposunda bulabilirsiniz. Çoklu kimlik, AAD ayarları vb. gibi uygulamaya özel ayarlarla bu araç ilgilenmez. Aracın 3 parametresi vardır:
+ 
+|Özellik|Kullanımı|
+|---------------|--------------------------------|
+|- i |  `<Path to the input plist>` |
+|- e | Yetkilendirme dosyaları |
+|- o |  (İsteğe bağlı) `<Path for the changed input plist>` |
+    
+Intune MAM Yapılandırıcı Aracı şunları güncelleştirmek için kullanılabilir:
+* Uygulamanızın IntuneMAMSettings’deki herhangi bir Ana Görsel Taslak ve/veya Ana Nib dosyaları.
+* Uygulamanızın, -intunemam son ekiyle biten Info.plist dosyasındaki herhangi bir tanımlı URL düzeni.
+* Uygulamanızın Info.plist dosyasındaki herhangi bir tanımlı Belge türü, her öğenin “Belge İçeriği Türü UTI’leri” dizisi için her dizeye “com.microsoft.intune.mam” ön eki ile yinelenen bir giriş ekleyin. ekleyin.
+* Uygulamanızın yetkilendirilmelerinde tanımlı herhangi bir uygulama grubu, bu grupları AppGroupIdentitifiers anahtarı altındaki IntuneMAMSettings sözlüğüne bir dize dizisi olarak ekleyin.
+
+    
+>[!NOTE] Info.plist işlemesi yerine bu aracı kullanmaya karar verirseniz, uygulamanızın info.plist’inde veya yetkilendirilmelerinde değişiklikler yapıldığında aracı yeniden çalıştırmanızı öneririz.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Kimlik Doğrulama Kitaplığı'nı (ADAL) Yapılandırma
 

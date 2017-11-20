@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 ve üzeri cihaz kısıtlama ayarları
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **El ile kayıt kaldırma** - Kullanıcının iş yeri hesabını cihazdan el ile silmesine olanak sağlar.
 -   **Elle kök sertifika yüklemesi (yalnızca mobil)** - Kullanıcının elle kök sertifikaları ve ara CAP sertifikaları yüklemesini engeller.
 -   **Tanılama verileri gönderme** - Olası değerler şunlardır:
-    -       **Hiçbiri** Microsoft’a hiç veri gönderilmez
-    -       **Temel** Microsoft’a sınırlı bilgi gönderilir
-    -       **Gelişmiş** Microsoft’a gelişmiş tanılama bilgileri gönderilir
-    -       **Tam** Gelişmiş ayarıyla aynı veriler, artı olarak cihazın durumuyla ilgili ek veriler gönderilir
+    - **Hiçbiri** - Microsoft’a hiç veri gönderilmez
+    - **Temel** - Microsoft’a sınırlı bilgi gönderilir
+    - **Gelişmiş** - Microsoft’a gelişmiş tanılama bilgileri gönderilir
+    - **Tam** Gelişmiş ayarıyla aynı veriler, artı olarak cihazın durumuyla ilgili ek veriler gönderilir
 -   **Kamera** - Cihazdaki kameranın kullanılmasına izin verin veya bunu engelleyin.
 -   **OneDrive dosya eşitleme** - Cihazın dosyaları OneDrive’a eşitlemesini engeller.
 -   **Çıkarılabilir depolama** - SD kartı gibi dış depolama cihazlarının cihazla kullanılıp kullanılamayacağını belirtir.
@@ -105,6 +105,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
 
 ## <a name="edge-browser"></a>Edge Tarayıcısı
+
 -   **Microsoft Edge tarayıcısı (yalnızca mobil)** - Cihazda Microsoft Edge web tarayıcısının kullanılmasına izin verin.
 -   **Adres çubuğu aşağı açılan listesi (yalnızca masaüstü)** – Yazdığınızda Edge'in açılan bir listede bir dizi öneri göstermesini durdurmak için bunu kullanın. Edge ile Microsoft hizmetleri arasında ağ bant genişliği kullanımını en aza indirmeye yardımcı olur.
 -   **Microsoft tarayıcıları arasında sık kullanılanları eşitle (yalnızca masaüstü)**  – Windows'un Internet Explorer ve Edge arasında sık kullanılanları eşitlemesine izin verir.
@@ -180,6 +181,44 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
     -   **Erişim Kolaylığı** - Ayarlar uygulamasının erişim kolaylığı alanına erişimini engeller.
     -   **Gizlilik** - Ayarlar uygulamasının gizlilik alanına erişimini engeller.
     -   **Güncelleştirme ve Güvenlik** - Ayarlar uygulamasının güncelleştirmeler ve güvenlik alanına erişimini engeller.
+
+## <a name="kiosk"></a>Bilgi noktası
+
+-   **Bilgi noktası modu** - İlke tarafından desteklenen [bilgi noktası modu](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) türünü belirler.  Şu seçenekler mevcuttur:
+
+      - **Yapılandırılmamış** (varsayılan) - İlke, bilgi noktası modunu etkinleştirmez. 
+      - **Tek uygulama bilgi noktası** - Profil, cihazı tek bir uygulama bilgi noktası olarak etkinleştirir.
+      - **Çoklu uygulama bilgi noktası** - Profil, cihazı çoklu uygulama bilgi noktası olarak etkinleştirir.
+
+    Tek uygulama bilgi noktaları, aşağıdaki ayarları gerektirir:
+
+      - **Kullanıcı hesabı**: Yerel (cihaz için) kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgilerini belirtir.  Azure AD etki alanlarına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
+
+         Ortak ortamlardaki cihazlar için olabilecek en az ayrıcalıklı hesaplar kullanarak yetkilendirilmemiş etkinliklerin önüne geçin.  
+
+      - **Bir uygulamanın uygulama kullanıcı modeli kimliği (AUMID)** - Bilgi noktası uygulamasının AUMID’ini belirtir.  Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+    Çoklu bilgi noktaları, bilgi noktası yapılandırması gerektirir.  **Ekle** düğmesini kullanarak bir bilgi noktası yapılandırması oluşturun veya mevcut bir taneyi seçin.
+
+    Çoklu uygulama bilgi noktası yapılandırmaları, aşağıdaki ayarları içerir:
+
+    - **Bilgi noktası yapılandırma adı** - Bir yapılandırmayı ayırt etmek için kullanılan kolay bir ad.
+
+    - Şunlardan oluşan bir veya daha fazla **bilgi noktası uygulaması**:
+
+        - Bilgi noktası uygulamasının türünü belirten **Uygulama Türü**.  Desteklenen değerler şunlardır:   
+
+            - **Win32 Uygulaması** - Geleneksel bir masaüstü uygulaması.  (Yürütülebilir dosyanın cihaza ait mutlak yol adına ihtiyacınız vardır.)
+
+            - **UWP Uygulaması** - Bir Evrensel Windows uygulaması.  [Uygulamanın AUMID’ine](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ihtiyacınız vardır.
+
+        - **Uygulama Tanımlayıcı** - Yürütülebilir dosyanın mutlak yol adını (Win32 uygulamaları) veya [uygulamanın AUMID’ini](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP uygulamaları) belirtir.
+
+    - **Görev çubuğu**, bilgi noktasında görev çubuğunun görüntüleneceğini (**Etkin**) veya gizleneceğini (**Yapılandırılmamış**) gösterir.
+
+    - **Başlangıç menüsü düzeni** - Uygulamaların [Başlangıç menüsünde nasıl göründüğünü](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) açıklayan bir XML dosyasını belirtir.
+
+    - **Atanan kullanıcılar** - bilgi noktası yapılandırmasıyla ilişkili bir veya daha fazla kullanıcı hesabı belirtir.  Hesap, cihazda yerel olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgileri olabilir.  Etki alanına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
 
 ## <a name="defender"></a>Defender
 

@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure’da Intune şirket içi Exchange Bağlayıcısını ayarlama
 
@@ -134,13 +134,18 @@ Exchange Connector bağlantıyı ayarladıktan sonra, Exchange Connector’da y�
 > [!NOTE]
 > Şirket İçi Exchange Connector'ı yüklediyseniz ve ileride Exchange bağlantısını silerseniz, Şirket İçi Exchange Connector'ı yüklü olduğu bilgisayardan kaldırmanız gerekir.
 
-## <a name="validate-the-exchange-connection"></a>Exchange bağlantısını doğrulama
+## <a name="monitor-the-exchange-connector-activity"></a>Exchange bağlayıcısı etkinliğini izleme
 
 Exchange Bağlayıcısı’nı başarıyla yapılandırdıktan sonra, bağlantının durumunu ve son başarılı eşitleme girişimini görüntüleyebilirsiniz. Exchange Connector bağlantısını doğrulamak için:
 
-- Intune Panosu’nda, **Şirket içi erişim**’i seçin. **Yönet** altında, **şirket içi Exchange erişimi**’ni seçerek bağlantı durumunu doğrulayın.
+1. Intune Panosu’nda, **Şirket içi erişim**’i seçin.
+2. **Yönet** altında, **şirket içi Exchange erişimi**’ni seçerek bağlantı durumunu doğrulayın.
 
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) yönetim paketi
+
+Intune 1710 sürümünden itibaren [Exchange bağlayıcısı ve Intune için SCOM yönetim paketi](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) kullanabilirsiniz. Bu yönetim paketi, sorun gidermeniz gerektiğinde Exchange bağlayıcısını izlemek için size farklı yollar sunar.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Şirket içi Exchange için koşullu erişim ilkesi oluşturma](conditional-access-exchange-create.md)

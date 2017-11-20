@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -40,49 +40,54 @@ Kullanıcılar bir iOS uygulamasını çalıştırdığında ayarları sağlamak
 1. Azure portalında oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
 3. **Mobil uygulamalar** iş yükünü seçin.
-4. **Yönet** grubunda, **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
+4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
 5. Aşağıdaki bilgileri ayarlayın:
-    - **Ad**  
+    - **Ad**<br>
       Azure portalında görünecek profil adı.
-    - **Açıklama**  
+    - **Açıklama**<br>
       Azure portalında görünecek profil açıklaması.
-    - **Cihaz kaydı türü**  
+    - **Cihaz kaydı türü**<br>
       **Yönetilen cihazlar**’ı seçin.
 6. **Platform** için **iOS**’u seçin.
-7.  **İlişkili Uygulama**’yı seçin ve ardından **İlişkili Uygulama** dikey penceresinde, yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı seçin.
-8.  **Yapılandırma İlkesi Ekle** dikey penceresinde **Yapılandırma ayarları**’nı seçin
-9. **Yapılandırma ayarları biçimi**’ni seçin. Birini seçin:
+7.  **İlişkili Uygulama**’yı seçin. Daha sonra **İlişkili Uygulama** dikey penceresinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı seçin.
+8.  **Yapılandırma İlkesi Ekle** dikey penceresinde **Yapılandırma ayarları**’nı seçin.
+9. **Yapılandırma ayarları biçimi**’ni seçin. Aşağıdakilerden birini seçin:
     - **[Yapılandırma tasarımcısını kullanma](#Use-the-configuration-designer)**
     - **[XML Verilerini girme](#enter-xml-data)**
-10. **Tamam**’a ve **Ekle**’ye tıklayın.
+10. **Tamam**’ı ve daha sonra **Ekle**’yi seçin.
 
 ## <a name="use-configuration-designer"></a>Yapılandırma tasarımcısı kullanma
 
-Intune’a kaydedilen veya kaydedilmeyen cihazlardaki uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Tasarımcı, belirli yapılandırma anahtarları ve değerlerini yapılandırmanıza olanak sağlar. Ayrıca her bir değer için veri türünü belirtmeniz gerekir. Uygulama yüklendiğinde ayarlar uygulamalara otomatik olarak sağlanır.
+Intune’a kaydedilen veya kaydedilmeyen cihazlardaki uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Tasarımcı, belirli yapılandırma anahtarları ve değerleri yapılandırmanıza imkan tanır. Ayrıca her bir değer için veri türünü belirtmeniz gerekir. Uygulamalar yüklendiğinde ayarlar bunlara otomatik olarak sağlanır.
 
 ### <a name="add-a-setting"></a>Ayar ekle
 
-1. Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın: <ul><li>**Yapılandırma anahtarı**<br>Bu, belirli ayar yapılandırmalarını benzersiz olarak tanımlamak için kullanılır.</li><li>**Değer Türü**<br>Yapılandırma değerinin veri türü. Türler Tamsayı, Gerçek, Dize ve Boole değerlerini içerir.</li><li>**Yapılandırma değeri**<br>Yapılandırmanın değeri.</li></ul>
+1. Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
+   - **Yapılandırma anahtarı**<br>
+     Belirli ayar yapılandırmalarını benzersiz olarak tanımlayan anahtar.
+   - **Değer türü**<br>
+     Yapılandırma değerinin veri türü. Türler Tamsayı, Gerçek, Dize ve Boole değerlerini içerir.
+   - **Yapılandırma değeri**<br>
+     Yapılandırmanın değeri.
 2. Yapılandırma ayarlarınızı yapmak için **Tamam**’a tıklayın.
 
 ### <a name="delete-a-setting"></a>Bir ayarı silme
 
-1. Ayarın yanındaki üç nokta işaretine (...) tıklayın.
+1. Ayarların yanındaki üç nokta simgesini (**...**) seçin.
 2. **Sil**’i seçin.
 
 \{\{ ve \}\} karakterleri yalnızca belirteç türleri tarafından kullanılır ve başka bir amaçla kullanılmamalıdır.
 
-## <a name="enter-xml-data"></a>XML Verilerini girme
+## <a name="enter-xml-data"></a>XML verilerini girme
 
 Intune’a kaydedilmiş cihazlar için uygulama yapılandırma ayarlarını içeren bir XML özellik listesi girebilir veya yapıştırabilirsiniz. XML özellik listesinin biçimi, yapılandırdığınız uygulamaya bağlı olarak değişir. Kullanılacak tam biçim hakkında ayrıntılı bilgi için uygulamanın sağlayıcısına başvurun.
 
-Intune XML biçimini doğrular. Ancak Intune, XML özellik listesinin hedef uygulama ile çalışıp çalışmayacağını denetlemez.
-XML özellik listeleri hakkında daha fazla bilgi için [XML Özellik Listelerini Anlama] konusuna bakın
+Intune XML biçimini doğrular. Ancak Intune, XML özellik listesinin (PList) hedef uygulama ile çalışıp çalışmayacağını denetlemez.
 
 XML özellik listeleri hakkında daha fazla bilgi edinmek için:
 
   -  [iOS uygulamalarını Microsoft Intune’da mobil uygulama yapılandırma ilkeleriyle yapılandırma](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)’yı okuyun.
-  -  iOS Geliştirici Kitaplığı’nda [XML Plist’i anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
+  -  iOS Geliştirici Kitaplığı’nda [XML Özellik Listelerini anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>Uygulama yapılandırma XML dosyası için örnek biçim
 
@@ -126,15 +131,15 @@ Intune, bir özellik listesinde aşağıdaki veri türlerini destekler:
 ### <a name="tokens-used-in-the-property-list"></a>Özellik listesinde kullanılan belirteçler
 
 Ayrıca, Intune özellik listesinde aşağıdaki belirteç türlerini destekler:
-- \{\{userprincipalname\}\} - (Örnek: **John@contoso.com**)
-- \{\{mail\}\} - (Örnek: **John@contoso.com**)
-- \{\{partialupn\}\} - (Örnek: **John**)
-- \{\{accountid\}\} - (Örnek: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (Örnek: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (Örnek: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (Örnek: **John Doe**)
-- \{\{serialnumber\}\} - (Örnek: **F4KN99ZUG5V2**) iOS cihazlar için
-- \{\{serialnumberlast4digits\}\} - (Örnek: **G5V2**) iOS cihazlar için
+- \{\{userprincipalname\}\}—örneğin, **John@contoso.com**
+- \{\{mail\}\}—örneğin, **John@contoso.com**
+- \{\{partialupn\}\}—örneğin, **John**
+- \{\{accountid\}\}—örneğin, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\}—örneğin, **b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\}—örneğin, **3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\}—örneğin, **John Doe**
+- \{\{serialnumber\}\}—örneğin, **F4KN99ZUG5V2** (iOS cihazlar için)
+- \{\{serialnumberlast4digits\}\}—örneğin, **G5V2** (iOS cihazlar için)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

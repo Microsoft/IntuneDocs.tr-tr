@@ -3,10 +3,10 @@ title: "Önceden paylaşılan anahtar ile Wi-Fi profili oluşturma"
 titleSuffix: Azure portal
 description: "Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için bir Intune özel profili kullanın.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/10/2017
 ---
-# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Microsoft Intune özel cihaz profili kullanarak önceden paylaşılan anahtara sahip Wi-Fi profili oluşturma
+# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel cihaz profili kullanma
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Burada, Intune'un **Özel cihaz profillerini**, önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için nasıl kullanabileceğiniz açıklanır. Bu konuda, bir EAP tabanlı Wi-Fi profili oluşturmaya bir örnek de yer almaktadır.
@@ -205,3 +205,12 @@ Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
     Doğru olanı bulmak için her profili aramanız gerekeceğinden, çok sayıda kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir.
 3.     Doğru ada sahip olanı bulmak üzere XML dosyalarını arayın.
 4.     Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının Veri alanına yapıştırın.
+
+## <a name="best-practices"></a>En iyi uygulamalar
+PSK ile bir Wi-Fi profili dağıtmadan önce cihazın uç noktaya doğrudan bağlanabildiğini doğrulayın.
+
+Anahtarları (parolaları) döndürürken kesintiler olabilir, dağıtımları buna göre planlayın. Yeni Wi-Fi profillerini çalışma saatleri dışında itmeyi düşünebilirsiniz. Ayrıca bağlantının bu durumdan etkilenebileceği konusunda kullanıcıları uyarın.
+ 
+Sorunsuz bir geçiş deneyimi sağlamak ve ilke güncelleştirmelerini zamanında sunmak için cihazların Intune’a en az bir açık iletişim kanalı olması gerekir. Bunu yapmak için hücresel bağlantı kullanın veya kullanıcıları yalnızca Intune uç noktalarına bağlayan konuk Wi-Fi erişimi sağlayın.
+
+

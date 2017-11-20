@@ -15,20 +15,20 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>Intune için uygulama yapılandırma ilkeleri
 
 Kullanıcılar Microsoft Intune’daki uygulama yapılandırma ilkeleriyle bir iOS veya Android uygulamasını çalıştırdığında ayarları sağlayın. Örneğin, bir uygulama kullanıcıların şunları belirtmesini gerektirebilir:
 
-- Özel bağlantı noktası numarası
-- Dil ayarları
-- Güvenlik ayarları
-- Bir şirket logosu gibi marka ayarları
+- Özel bağlantı noktası numarası.
+- Dil ayarları.
+- Güvenlik ayarları.
+- Bir şirket logosu gibi marka ayarları.
 
 Kullanıcılar, bu ayarları hatalı şekilde girerse yardım masanız üzerindeki yük artabilir ve yeni uygulamaların benimsenmesi yavaşlayabilir.
 
@@ -38,13 +38,13 @@ Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, 
 
 Intune’la uygulama yapılandırmalarını kullanmak için iki seçeneğiniz vardır:
  - **Yönetilen cihazlar**  
-   Cihaz MDM sağlayıcısı olarak Intune tarafından yönetilir.
+   Cihaz mobil cihaz yetkilisi (MDM) sağlayıcısı olarak Intune tarafından yönetilir.
  - **Yönetilen uygulamalar**  
    Uygulama cihaz kaydı olmadan yönetilir.
 
 ## <a name="apps-that-support-app-configuration"></a>Uygulama yapılandırmasını destekleyen uygulamalar
 
-Destekleyen uygulamalar için uygulama yapılandırma ilkelerini kullanabilirsiniz. Intune Uygulamalarında uygulama yapılandırmasını desteklemek için, uygulamalar, uygulama yapılandırmaları kullanımını desteklemek üzere yazılmış olmalıdır. Ayrıntılar için uygulama satıcınıza başvurun.
+Destekleyen uygulamalar için uygulama yapılandırma ilkelerini kullanabilirsiniz. Intune uygulamalarında uygulama yapılandırmasını desteklemek için uygulamalar, uygulama yapılandırmaları kullanımını desteklemek üzere yazılmış olmalıdır. Ayrıntılar için uygulama satıcınıza başvurun.
 
 Intune Uygulama SDK’sını uygulamaya ekleyerek veya uygulamayı geliştirildikten sonra sarmalayarak iş kolu uygulamalarınızı hazırlayabilirsiniz. iOS ve Android için kullanılabilen Intune uygulama SDK'sı, uygulamanızı Intune uygulama koruma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](app-sdk.md).
 

@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="data-warehouse-data-model"></a>Veri Ambarı veri modeli
 
@@ -41,6 +41,7 @@ Varlık kümeleri, veri modelinde adı olan varlık koleksiyonlarıdır. Bu küm
   -  [Uygulama](reports-ref-application.md)
   -  [Tarih](reports-ref-date.md)
   -  [Cihazlar](reports-ref-devices.md)
+  -  [Intune Yönetim Uzantısı](reports-ref-intunemanagementextension.md)
   -  [İlke](reports-ref-policy.md)
   -  [Mobil Uygulama Yönetimi (MAM)](reports-ref-mobile-app-management.md)
   -  [Kullanıcı](reports-ref-user.md)

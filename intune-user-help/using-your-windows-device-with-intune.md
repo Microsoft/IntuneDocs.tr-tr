@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/08/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c8ddc8902a6b9687e9b36cae7b1ff9b554f63841
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="using-your-windows-device-with-intune"></a>Windows cihazınızı Intune ile kullanma
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/01/2017
 
 Intune şu anda Windows’un aşağıdaki sürümlerini desteklemektedir.
 
-* Windows 10 (Home, Pro, Education ve Enterprise sürümleri)
+* Windows 10 (Home, Pro, Education, S ve Enterprise sürümleri)
 * Windows Phone 8.1 ve üzeri
 * Windows 8.1 RT
 * Windows 8.1
