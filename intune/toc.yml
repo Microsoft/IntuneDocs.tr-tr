@@ -608,19 +608,23 @@
         - name: Veri Ambarı veri modeli
           href: reports-ref-data-model.md
           items:
+            - name: Intune Veri Ambarı’nda kullanıcı ömrü gösterimi
+              href: reports-ref-user-timeline.md
             - name: Uygulama varlıkları için başvuru
               href: reports-ref-application.md
+            - name: Mevcut kullanıcı varlığı için başvuru
+              href: reports-ref-current-user.md
             - name: Veri varlığı için başvuru
               href: reports-ref-date.md
             - name: Cihaz varlıkları için başvuru
               href: reports-ref-devices.md
-            - name: Intune yönetim uzantısı için başvuru
+            - name: Intune yönetim uzantısı varlığı için başvuru
               href: reports-ref-intunemanagementextension.md
             - name: Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
               href: reports-ref-mobile-app-management.md
             - name: İlke varlıkları için başvuru
               href: reports-ref-policy.md
-            - name: Kullanıcı Cihaz İlişkisi için başvuru
+            - name: Kullanıcı cihaz ilişkisi varlığı için başvuru
               href: reports-ref-user-device.md
             - name: Kullanıcı varlığı için başvuru
               href: reports-ref-user.md
