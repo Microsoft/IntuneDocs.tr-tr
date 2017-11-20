@@ -365,6 +365,8 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: Symantec PKI Manager Web Hizmeti
+              href: certificates-symantec-configure.md
         - name: Windows Bilgi Koruması ayarlarını yapılandırma
           href: windows-information-protection-configure.md
         - name: PowerShell betiklerini yönetme
@@ -425,6 +427,8 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS ayarları
                   href: app-protection-policy-settings-ios.md
+                - name: Managed Browser’da uygulama koruma günlüklerini gözden geçirin
+                  href: app-protection-policy-settings-log.md
             - name: Uygulama koruma ilkelerini doğrulama
               href: app-protection-policies-validate.md
             - name: Uygulama koruma kullanıcı durumunu izleme
