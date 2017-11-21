@@ -2,8 +2,8 @@
 title: "Intune cihaz kaydı için çok faktörlü kimlik doğrulaması"
 description: "Azure AD’de cihaz kaydı için çok faktörlü kimlik doğrulaması isteme."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angerobe
 ms.date: 02/17/2017
 ms.topic: article
@@ -11,13 +11,13 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
-ROBOTS: 
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 805ca79932788786636d365109e06aee836d8a0e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d8a13033486256da171847646bd95fe77c978c8
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Intune cihaz kayıtları için çok faktörlü kimlik doğrulaması
 
