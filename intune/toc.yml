@@ -386,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: Android for Work ilkesi oluşturma
           href: compliance-policy-create-android-for-work.md
+        - name: Google Play Koruma’yı etkinleştirmek için bir ilke oluşturun
+          href: compliance-policy-create-google-play-protect.md
         - name: iOS ilkesi oluşturma
           href: compliance-policy-create-ios.md
         - name: macOS ilkesi oluşturma
