@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -95,6 +95,10 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
         > [!NOTE]
         > `PATH_TO_LIB` öğesini bulmak için `libIntuneMAM.a` dosyasını seçin ve **Dosya** menüsünden **Bilgi Al** öğesini belirleyin. **Nerede** bilgisini (yol) **Bilgi** penceresinin **Genel** bölümünden kopyalayıp yapıştırın.
 
+    `IntuneMAMResources.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
+
+    ![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+
 3. Aşağıdaki iOS çerçevelerini projeye ekleyin:
     * MessageUI.framework
     * Security.framework
@@ -106,12 +110,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-
-4. `IntuneMAMResources.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
-
-    ![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-
-5. Mobil uygulamanız, Info.plist dosyası içinde bir ana nib veya görsel taslak dosyası tanımlıyorsa **Ana Görsel Taslak** veya **Ana Nib** alanlarını kesin. Info.plist içinde, bu alanları ve karşılık gelen değerlerini **IntuneMAMSettings** adlı yeni bir sözlük altına aşağıdaki anahtar adlarından uygun olanıyla birlikte ekleyin:
+4. Mobil uygulamanız, Info.plist dosyası içinde bir ana nib veya görsel taslak dosyası tanımlıyorsa **Ana Görsel Taslak** veya **Ana Nib** alanlarını kesin. Info.plist içinde, bu alanları ve karşılık gelen değerlerini **IntuneMAMSettings** adlı yeni bir sözlük altına aşağıdaki anahtar adlarından uygun olanıyla birlikte ekleyin:
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -121,7 +120,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
     Dosya gövdesinin herhangi bir yerine sağ tıklayıp, görünüm türünü **Ham Anahtarları/Değerleri Göster** olarak değiştirerek Info.plist dosyasını ham biçimde görüntüleyebilirsiniz (anahtar adlarını görmek için).
 
-6. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
+5. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
 
   > [!NOTE]
     > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bunu denetlemek için .mobileprovision dosyasını bir metin düzenleyicide açıp **keychain-access-groups** araması yapın ve bir joker karakter kullandığınızdan emin olun. Örneğin:
@@ -132,7 +131,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
     </array>
     ```
 
-7. Anahtarlık paylaşımını etkinleştirdikten sonra Intune Uygulama SDK'sı verilerinin depolanacağı ayrı bir erişim grubu oluşturmak için aşağıdaki adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. UI öğelerini anahtarlık erişim grubu oluşturmak için kullanıyorsanız aşağıdaki adımları izleyin:
+6. Anahtarlık paylaşımını etkinleştirdikten sonra Intune Uygulama SDK'sı verilerinin depolanacağı ayrı bir erişim grubu oluşturmak için aşağıdaki adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. UI öğelerini anahtarlık erişim grubu oluşturmak için kullanıyorsanız aşağıdaki adımları izleyin:
 
     1. Mobil uygulamanızda tanımlanmış bir anahtarlık erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
 
@@ -140,24 +139,23 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
     3. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
 
-        4. `com.microsoft.workplacejoin` öğesini var olan erişim gruplarınıza ekleyin.
-            ![Intune Uygulama SDK'sı iOS: Anahtarlık paylaşımı](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune Uygulama SDK’sı iOS: Anahtarlık paylaşımı](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    5. Anahtarlık paylaşımı erişim grubunu oluşturmak için yetkilendirme dosyasını kullanıyorsanız, yetkilendirme dosyasında anahtarlık erişim grubunun başına `$(AppIdentifierPrefix)` ekleyin. Örneğin:
+    4. Anahtarlık erişim gruplarını oluşturmak için yukarıda gösterilen Xcode UI'ı kullanmak yerine doğrudan yetkilendirme dosyalarını düzenliyorsanız, anahtarlık erişim gruplarını `$(AppIdentifierPrefix)` öğesinin önüne ekleyin (Xcode bunu otomatik olarak işler). Örneğin:
 
             * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > Yetkilendirme dosyası mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır.
+    > Yetkilendirme dosyası mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır. Uygulamanızın önceden bir yetkilendirme dosyası yoksa, anahtarlık paylaşımının etkinleştirilmesi (6. adım) Xcode'un uygulamanız için bir dosya oluşturmasına neden olacaktır.
 
-8. Uygulama URL şemalarını Info.plist dosyasında tanımlıyorsa, her URL şeması için `-intunemam` sonekiyle başka bir şema ekleyin.
+7. Uygulama URL şemalarını Info.plist dosyasında tanımlıyorsa, her URL şeması için `-intunemam` sonekiyle başka bir şema ekleyin.
 
-9. Uygulama, Belge türlerini Info.plist dosyasında tanımlarsa her öğenin “Belge İçeriği Türü UTI’leri” dizisi için her dizeye “com.microsoft.intune.mam” ön eki ile yinelenen bir giriş ekleyin.
+8. Uygulama, Belge türlerini Info.plist dosyasında tanımlarsa her öğenin “Belge İçeriği Türü UTI’leri” dizisi için her dizeye “com.microsoft.intune.mam” ön eki ile yinelenen bir giriş ekleyin.
 
-10. iOS 9+ üzerinde geliştirilen mobil uygulamalarda, uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Ayrıca, listelenen her protokol için yeni bir protokol ekleyin ve bu protokole `-intunemam` ekleyin. Diziye ayrıca `http-intunemam`, `https-intunemam`ve `ms-outlook-intunemam` öğelerini dahil etmeniz gerekir.
+9. iOS 9+ üzerinde geliştirilen mobil uygulamalarda, uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Ayrıca, listelenen her protokol için yeni bir protokol ekleyin ve bu protokole `-intunemam` ekleyin. Diziye ayrıca `http-intunemam`, `https-intunemam`ve `ms-outlook-intunemam` öğelerini dahil etmeniz gerekir.
 
-11. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentifiers` anahtarı altındaki **IntuneMAMSettings** sözlüğüne bir dize dizisi olarak ekleyin.
+10. Uygulamanın yetkilendirmelerinde tanımlanan uygulama grupları varsa, bu grupları `AppGroupIdentifiers` anahtarı altındaki **IntuneMAMSettings** sözlüğüne bir dize dizisi olarak ekleyin.
 
 ## <a name="using-the-intune-mam-configurator-tool"></a>Intune MAM Yapılandırıcı Aracı’nı kullanma
 
