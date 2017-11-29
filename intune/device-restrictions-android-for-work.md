@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: a6f13e4c741a59eddc352a322d5da68a27a0ba45
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android for Work cihaz kısıtlama ayarları
 
@@ -78,6 +78,13 @@ ms.lasthandoff: 10/20/2017
 - **Önceki parolaların yeniden kullanılmasını engelle** -Eski bir parolanın yeniden kullanılabilmesi için kullanılmış olması gereken yeni parola sayısını girin (**1**-**24** arası).
 - **Parmak izi ile kilit açma** - Bir son kullanıcının cihaz kilidini açmak için parmak izi tarayıcısını kullanmasını engeller.
 - **Akıllı Kilit ve diğer güven aracıları** - Uyumlu cihazlarda Akıllı Kilit özelliğini denetlemenize olanak tanır. Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken (örneğin, belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda) cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.
+
+## <a name="system-security"></a>Sistem güvenliği
+
+ - **Uygulamalarda tehdit taraması** - İş profillerinde ve kişisel profillerde **Uygulamaları Doğrula** ayarının açık olmasını zorunlu tutar.
+
+   > [!Note]  
+   > Bu ayar yalnızca Android O ve üstü cihazlarda çalışır. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
