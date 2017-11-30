@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Şirket kaynaklarına erişimi ayarlama
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/15/2017
 |![Azure AD parola istemi.](./media/ios-0b-cp-enroll-1711.png)|Parolanızı girin ve ardından **Oturum Aç**’a dokunun.|
 |![Şirket kaynaklarının açılış ekranı yükleniyor.](./media/ios-1-cp-enroll-1711.png)|Yüklenmesini bekleyin.|
 |![Hüküm ve Koşullar.](./media/ios-2-cp-enroll-1711.png)|Hüküm ve Koşulları okuyun ve **Hepsini Kabul Edin**.|
-|![Şirket erişim ekranını ayarla. Hem yönetim hem de ayarlar şu anda çözülmeye ihtiyaç duyuyor.](./media/ios-3-cp-enroll-1711.png)|Cihazınızın şirket kaynaklarına erişebilmesi sürecini başlatmak için **Cihazınızı yönetin**’e dokunun. Bunu şimdi yapamazsan, işlemi **Erteleyebilirsin**, ancak e-posta,belge ve daha pek çok şey alamayacağınız anlamına gelir.|
+|![Şirket erişim ekranını ayarla. Hem yönetim hem de ayarlar şu anda çözülmeye ihtiyaç duyuyor.](./media/ios-3-cp-enroll-1711.png)|Cihazınızın şirket kaynaklarına erişebilmesi sürecini başlatmak için **Başlat**’a dokunun. Bunu şimdi yapamazsan, işlemi **Erteleyebilirsin**, ancak e-posta,belge ve daha pek çok şey alamayacağınız anlamına gelir.|
 |![Şirket ekranım ne görebilir?](./media/ios-4-cp-enroll-1711.png)|En altındaki bağlantıya dokunarak şirketinizin neyi görebileceği hakkında **daha fazla bilgi edinebilirsiniz**. Aksi takdirde **Devam**’a dokunun.|
 |![Sırada ne var ekranı.](./media/ios-5-cp-enroll-1711.png)|Bu ekran, kurulumda olan biten hakkında sizi bilgilendirir. Bu işlemi tamamlamak için Safari, Ayarlar uygulaması ve Şirket Portalı uygulamasında vakit geçireceksiniz. **İleri**’ye dokunun.|
 |![Sırada ne var?'a dokunduktan sonra yükleme ekranı.](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/15/2017
 |![Şirket kaynaklarının ekranı yükleniyor.](./media/ios-18-cp-enroll-1711.png)|Yüklenmesini bekleyin.|
 |![Şirket portalı uygulamasında cihaz kategorisini seçin.](./media/ios-19-cp-enroll-1711.png)|Cihazınız için en uygun kategoriyi seçin. Bu genellikle cihazın sahibi kiminle veya genelde nerede bulunduğuyla ilgilidir.|
 |![Kategori seçildi.](./media/ios-20-cp-enroll-1711.png)||
-|![Cihaz yönetimi başarılı; şimdi ayarları güncelleştirmeniz gerekir.](./media/ios-21-cp-enroll-1711.png)|Cihazınızı başarıyla yönettiniz. Şirketinizin güncelleştirme yapması gerekebileceği, şifrenizin uzunluğu gibi muhtemel ayarlar hala mevcut. Devam etmek için **Cihaz ayarlarını güncelleştirin**’e dokunun.|
+|![Cihaz yönetimi başarılı; şimdi ayarları güncelleştirmeniz gerekir.](./media/ios-21-cp-enroll-1711.png)|Cihazınızı başarıyla yönettiniz. Şirketinizin güncelleştirme yapması gerekebileceği, şifrenizin uzunluğu gibi muhtemel ayarlar hala mevcut. Devam etmek için **Devam**’a dokunun.|
 |![Cihaz ayarları onaylanıyor.](./media/ios-22-cp-enroll-1711.png)|Şirket Portalı, ayarlarınızdan herhangi birinin güncelleştirilmesinin gerekip gerekmediğini kontrol edecektir.|
 |![Ayarlar denetimi, yanlış bir işletim sistemi sürümü ile tamamlandı](./media/ios-23-cp-enroll-1711.png)|Şirket Portalı, ayarlarınızla ilgili tüm sorunları nasıl çözebileceğiniz konusunda yönergeler verecektir. Sorunlarını giderme tamamladıktan sonra **Ayarları Denetle**’ye dokunun.|
 |![Cihaz ayarları yükleme ekranını onaylama](./media/ios-24-cp-enroll-1711.png)|Cihazınız ayarlarınızın şirket kaynaklarına erişecek kadar güvenli olup olmadığını kontrol edecektir.|
