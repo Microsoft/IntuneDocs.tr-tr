@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/23/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a75cf12fb1e03873d4ef3307e9c377ab6df6b75a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d3509dbf1bc0b415803bb003c342f5b5df69e235
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişim kullanmanın yaygın yolları
 
@@ -62,7 +62,7 @@ EAS kaydı yeni bir kayıtsa ve Intune bu kaydı tanımıyorsa, Intune e-posta e
 
 ![CA akış grafiği olan şirket içi Exchange](./media/ca-intune-common-ways-1.png)
 
-1.  Kullanıcı şirket içi Exchange 2010 SP1 veya sonrasında barındırılan kurumsal e-postaya erişmeye çalışır.
+1.  Kullanıcı, Exchange'de kurum içi 2010 SP1 veya sonraki bir sürümü üzerinde barındırılan kurumsal e-postalara erişmeye çalışır.
 
 2.  Cihaz Intune tarafından yönetilmiyorsa, e-postaya erişimi engellenir. Intune, EAS istemcisine engelleme bildirimi gönderir.
 
@@ -90,7 +90,7 @@ Intune cihaz durumunu değerlendirir ve yönetir.
 
 Exchange sunucusu, cihazları karantinaya taşımak için gerekli API'yi ve altyapıyı sağlar.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Cihazın uyumluluk açısından değerlendirilebilmesi için, cihazı kullanan kullanıcıya atanmış bir uyumluluk profili olması gerektiğini unutmayın. Kullanıcıya hiçbir uyumluluk ilkesi dağıtılmadıysa, cihaz uyumlu olarak kabul edilir ve hiçbir erişim kısıtlaması uygulanmaz.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Ağ erişim denetimine bağlı koşullu erişim
@@ -105,9 +105,9 @@ Kullanıcı kurumsal Wi-Fi'ye veya VPN kaynaklarına erişmeye çalışırken, c
 
 Intune; mobil cihazlardaki kötü amaçlı yazılımı, Truva atlarını ve diğer tehditleri algılamak için güvenlik çözümleri sağlayan Mobil Tehdit Savunması satıcılarıyla iş ortaklıkları kurmuştur.
 
-#### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Intune ve mobil tehdit savunması tümleştirmesi nasıl çalışır
+#### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Intune ve Mobil Tehdit Savunması Tümleştirmesi nasıl çalışır
 
-Mobil cihazlar mobil tehdit savunması aracısını yüklediklerinde, aracı, mobil cihazın kendisinde bir tehdit bulunduysa, Intune raporlamaya uyumluluk durumu iletileri gönderebilir.
+Mobil cihazlar Mobil Tehdit Savunması aracısını yüklediklerinde, aracı, mobil cihazın kendisinde bir tehdit bulunduysa, Intune raporlamaya uyumluluk durumu iletileri gönderebilir.
 
 Intune ve mobil tehdit savunması tümleştirmesi, cihaz riskine bağlı olarak alınan koşullu kararlarında rol oynar.
 
@@ -127,7 +127,7 @@ Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetene
 
     -   Bilgisayar şifrelenmiş mi?
 
-    -   Kötü amaçlı yazılı yüklü mü? Güncel mi?
+    -   Kötü amaçlı yazılım yüklü mü? Güncel mi?
 
     -   Cihazın yazılım kilidi kırılmış mı veya kök dizinine erişilmiş mi?
 

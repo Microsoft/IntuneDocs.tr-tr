@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune ve son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu yenilikler, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
 
+## <a name="week-of-november-13-2017"></a>13 Kasım 2017 Haftası
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Sürüm 2.9.0'da iOS için Şirket Portalı'nda cihaz kurulum iş akışındaki iyileştirmeler <!---1417174--->
+
+IOS için Şirket Portalı uygulamasında cihaz kurulum iş akışını geliştirdik. Dil artık daha kullanıcı dostu ve mümkün olan yerlerde ekranları birleştirdik. Ayrıca kurulum metninde şirket adınızı kullanarak dilinizi firmanıza özel hale getirdik.
+
+> [!NOTE]
+> Azure Portal'da **Microsoft Intune** > **Mobil Uygulamalar** > **Şirket Portalı markası** > **Şirket adı** altında ayarladığınız şirket adını kullanıyoruz. Bu değeri ayarlamadıysanız, **Azure Active Directory** > **Özellikler** > **Ad**'da ayarlanan kiracı adını kullanacağız. Şirket Portalı markalamasında bir şirket adı belirlemediyseniz ve kiracınızın adının görüntülenmesini istemiyorsanız, şirketin adını Şirket Portalı marka sekmesinde ayarlamanızı öneririz. Bu dizenin Şirket Portalı’ndaki başlıkta gösterilmesini istemiyorsanız, "Şirket adını logonun yanında gösterin" onay kutusunun seçimini kaldırabilirsiniz.
+
+|Önce|Sonra|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*Önceki adımla birlikte*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>6 Kasım 2017 Haftası
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Windows 10 için Şirket Portalı uygulamasındaki güncelleştirmeler <!--1299474-->
+Windows 10 için Şirketi Portalı uygulamasındaki Ayarlar sayfası, ayarların ve amaçlanan kullanıcı işlemlerinin tüm ayarlarda daha tutarlı olmasını sağlamak için güncelleştirildi. Ayrıca, diğer Windows uygulamalarının düzeniyle eşleşecek şekilde güncelleştirildi.
+
+|Önce|Sonra|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Şirket Portalı uygulamaları ve web sitesinde arama iyileştirmeleri <!--1418189-->
 Şirket Portalı uygulamaları artık kategoriler, adlar ve açıklamalarda arama yapabilir. Sonuçlar, azalan ilgi düzeyine göre sıralanır. Bu güncelleştirmelere [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) de ulaşabilirsiniz.
 
 Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıyoruz, bu nedenle lütfen Şirket Portalı web sitesinin en altında bulunan “Geri Bildirim” bağlantısını kullanarak bizi konuyla ilgili bilgilendirin.
-
-
 
 ## <a name="week-of-october-16-2017"></a>16 Ekim 2017 Haftası
 
@@ -45,10 +70,6 @@ Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıy
 
 ### <a name="ios-company-portal-displays-large-icons----1454593---"></a>iOS Şirket Portalı büyük simgeler görüntülüyor <!-- 1454593 -->
 Bu sürümde iOS Şirket Portalı’nın uygulama kutucuğunda simgeleri görüntülemesiyle ilgili bilinen bir sorunu çözüyoruz. 120x120 piksel veya daha büyük boyutlu uygulama simgeleri yüklerseniz bunlar artık [Şirket portalı web sitesinde](https://portal.manage.microsoft.com) ve iOS Şirket Portalı uygulama sayfalarında bütün uygulama kutucuğunu kaplayacak şekilde görüntülenecek.
-
-
-
-
 
 
 ## <a name="week-of-october-2-2017"></a>2 Ekim 2017 haftası

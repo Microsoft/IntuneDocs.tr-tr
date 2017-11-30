@@ -1,11 +1,11 @@
 ---
-title: "Android cihazınız şifrelenmiş görünüyor"
+title: "Android cihazınız şifrelenmiş görünüyor | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
-ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
+ms.openlocfilehash: 04ce17615055d67f38e49158bec806de9f322bfd
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android cihazınızı şifreli gibi görünüyor, ancak Şirket Portalı aksini söylüyor
 
@@ -40,7 +40,7 @@ Belirli Android cihazları, cihazınızın güvenli olduğundan emin olmak için
 
 Cihazınız Android 6.0+ sürümüne düşürme seçeneği sunuyorsa, bunu yapın. Cihazınızın sürümünü düşürmeyi denediğinizde veri kaybı riski vardır. Aksi takdirde, bu sorunu çözmek için şirketinizin destek birimine başvurmanızı öneririz. Şirketinizin destek biriminin iletişim bilgilerini [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) alabilirsiniz.
 
-### <a name="encrypt-the-entire-device"></a>Tüm cihazı şifreleme
+### <a name="encrypt-the-entire-device"></a>Tüm cihazı şifreleyin
 
 Bazı cihazlar size, tüm cihazı veya yalnızca kullanılan alanı şifreleme seçeneği sunar. “Yalnızca kullanılan alan” yerine tüm cihazı şifreleme seçeneğini belirleyin. Yalnızca kullanılan alanı şifrelediyseniz:
 
@@ -69,5 +69,7 @@ Aşağıdaki cihazlardan birine sahipseniz cihazınızı Android’in en son sü
 
 Aşağıdaki cihazlarda bu sorun çözülememektedir. Şirket kaynaklarına erişmek için başka bir cihaz kullanmanız gerekebilir. 
 
-- [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [OPPO cihazları](http://www.oppo.com/en/smartphones)
+- [Vivo cihazları](https://www.vivo.co.in)
 - [Xiaomi Mi akıllı telefonlar](https://xiaomi-mi.com/mi-smartphones/)

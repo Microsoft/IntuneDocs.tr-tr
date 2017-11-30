@@ -1,11 +1,11 @@
 ---
 title: "Windows 10 cihazlar için şirketinizin destek birimine günlük gönderme | Microsoft Docs"
-description: "Windows 10 1511 cihazını Intune'a kaydetme"
+description: "Windows 10 1511+ cihazını Intune'a kaydetme"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f2287700e96c798be7033eac35539e3490bc3f8a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4c114a8267fd38da173e8aafcd6089dcfb4472fd
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Windows 10 cihazlar için Şirket Portalı uygulamasından şirketinizin destek birimine günlük gönderme
 
@@ -30,8 +30,8 @@ Windows 10 cihazınızda Şirket Portalı uygulamasını kullanırken hata alır
 2.  **Ayarlar** dişlisini, ardından **Günlükleri Gönder**'i seçin.
 3.  **Paylaşım** açılır. **Posta**'yı seçin. Bu eylem, Şirket Portalı günlükleri eklenmiş olarak şirketinizin destek birimine gönderilebilecek bir e-posta iletisi oluşturur.
 
-  ![Şirket Portalı uygulamasının Ayarlar sayfasından Günlükleri Gönder iletişim kutusu. Tıklanacak bağlantının metni “Günlükleri gönder - Şirket Portalı’ndaki sorunları çözmesine yardımcı olmak için şirketinizin destek birimine tanılama günlükleri gönderin.” şeklindedir.](./media/w10-share-logs.png)
+  ![Şirket Portalı uygulamasının Ayarlar sayfasından Günlükleri Gönder iletişim kutusu. Tıklanacak bağlantının metni “Günlükleri gönder - Şirket Portalı’ndaki sorunları çözmesine yardımcı olmak için şirketinizin destek birimine tanılama günlükleri gönderin.” şeklindedir.](./media/w10-share-logs-after-1711.png)
 
-Ayrıca, bulabileceği herhangi bir sorunu gidermeye çalışırken şirketinizin destek birimine daha fazla yardımcı olmak için [Ayarlar uygulamasından günlükler](send-logs-to-your-it-admin-settings-windows.md) göndermeniz de gerekebilir. 
+Ayrıca, bulabileceği herhangi bir sorunu gidermeye çalışırken şirketinizin destek birimine daha fazla yardımcı olmak için [Ayarlar uygulamasından günlükler](send-logs-to-your-it-admin-settings-windows.md) göndermeniz de gerekebilir.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
