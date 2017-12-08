@@ -46,7 +46,7 @@
       href: get-started-azure.md
     - name: Bir kullanıcı oluşturun
       href: get-started-users.md
-    - name: Grup oluşturma
+    - name: Bir grup oluşturun
       href: get-started-groups.md
     - name: İlke atama
       href: get-started-policies.md
@@ -89,7 +89,7 @@
           href: data-outside-protect.md
         - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
           href: data-leak-prevention.md
-        - name: KCG
+        - name: BYOD
           href: byod-enable.md
     - name: Geçiş kılavuzu
       href: migration-guide.md
@@ -142,7 +142,7 @@
         - name: Kayıt seçenekleri
           href: enrollment-options.md
           items:
-            - name: hüküm ve koşullar
+            - name: Hüküm ve koşullar
               href: terms-and-conditions-create.md
             - name: Kısıtlamalar
               href: enrollment-restrictions-set.md
@@ -152,7 +152,7 @@
               href: corporate-identifiers-add.md
             - name: Çok faktörlü kimlik doğrulaması
               href: multi-factor-authentication.md
-            - name: Cihaz kayıt yöneticisi
+            - name: Cihaz kaydı yöneticisi
               href: device-enrollment-manager-enroll.md
             - name: Cihazları gruplarla eşleme
               href: device-group-mapping.md
@@ -284,6 +284,8 @@
               href: app-notification-settings-ios.md
             - name: iOS için paylaşılan cihazlar
               href: shared-device-settings-ios.md
+            - name: Intune'u iOS cihazında tekli oturum açma için yapılandırma
+              href: sso-ios.md
             - name: iOS için web filtresi ayarları
               href: web-content-filter-settings-ios.md
         - name: Cihaz kısıtlamalarını yapılandırma
@@ -519,7 +521,7 @@
             - name: Windows Güvenlik Duvarı
               href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
               maintainContext: true
-            - name: Endpoint Protection
+            - name: Uç Nokta Koruma
               href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
               maintainContext: true
         - name: Intune istemci bilgisayarları için uygulama ekleme
