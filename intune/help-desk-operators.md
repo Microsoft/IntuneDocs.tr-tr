@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Kullanıcılara yardımcı olmak için sorun giderme portalını kullanın
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Sorun giderme portalı, yardım masası operatörlerinin ve Intune yöneticilerinin kullanıcı yardım isteklerini ele almak için kullanıcı bilgilerini görüntülemesine izin verir. Yardım masası bulunan kuruluşlar, kullanıcı gruplarına **Yardım masası işletmeni** atayabilir. Yardım masası işletmeni rolü, **Sorun Giderme** dikey penceresini kullanabilir.
+
+**Sorun Giderme** dikey penceresi kullanıcı kayıt sorunlarını da gösterir. Sorunun ayrıntıları ve önerilen düzeltme adımları, yönetici ve yardım masası çalışanlarının sorunları çözmesine yardımcı olabilir. Bazı kayıt sorunları burada yer almaz ve bazı hatalar için düzeltme önerileri bulunmayabilir. 
 
 Bir yardım masası işletmeni rolü atama adımları için bkz. [Intune ile rol tabanlı yönetim denetimi (RBAC)](/intune/role-based-access-control)
 
@@ -33,7 +35,7 @@ Bir kullanıcı, Intune ile ilgili teknik bir sorun için destekle bağlantı ku
 - Kullanıcı durumu
 - Atamalar
 - Uyumluluk sorunları
-- Cihaz yanıt vermiyor
+- Cihaz 
 - Cihaz VPN veya Wi-Fi ayarlarını alamıyor
 - Uygulama yükleme hatası
 

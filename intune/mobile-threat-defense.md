@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f928b214642c5954561f2c56b30b71b36ecd57eb
-ms.sourcegitcommit: 012f262660fa9fb321ac3470f5dba165b8e5256a
+ms.openlocfilehash: 16402b30895e61d9a4ff8393fd4d4c6efa061e9e
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi
 
@@ -37,6 +37,22 @@ Geçmişte, şirketler bilgisayarları saldırıdan koruma konusunda proaktif ol
 Bağlayıcı, Intune ve seçtiğiniz Mobile Threat Defense satıcınız arasında bir iletişim kanalı oluşturarak şirket kaynaklarını korur. Intune Mobile Threat Defense iş ortakları, raporlama veya uygulama amaçlarıyla, Intune ile paylaşmak üzere tehdit bilgilerini etkin bir şekilde tarayan ve analiz eden mobil cihazlar için sezgisel, dağıtımı kolay uygulamalar sunar. 
 
 Örneğin, bağlı bir Mobile Threat Defense uygulaması, Mobile Threat Defense satıcısına ağınızdaki bir telefonun Bağlantıyı İzinsiz İzleme saldırılarına karşı korunmasız bir ağa bağlandığını bildirirse, bu bilgi paylaşılır ve uygun bir risk düzeyinde (düşük/orta/yüksek) sınıflandırılır ve ardından cihaz ele geçirildiği sırada seçtiğiniz belirli kaynaklara erişimin kaldırılıp kaldırılmayacağını belirlemek için Intune’da yapılandırdığınız risk düzeyi izinleriyle karşılaştırılabilir.
+
+## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune, Mobile Threat Defense için hangi verileri topluyor?
+
+Intune, kişisel ve kuruluşa ait cihazlardan uygulama envanter bilgilerini toplayarak Lookout for Work gibi Mobile Threat Defense (MTD) sağlayıcıları tarafından alınabilir hale getirir. iOS 11+ cihazlarının kullanıcılarından uygulama envanteri toplayabilirsiniz.
+
+**Uygulama envanteri**  
+Şirkete ait iOS 11+ ve kişisel cihazlar için envanterler MTD hizmet sağlayıcınıza gönderilir. Uygulama envanterindeki veriler şunları içerir:
+
+ - Uygulama Kimliği
+ - Uygulama Sürümü
+ - Uygulama Kısa Sürümü
+ - Uygulama Adı
+ - Uygulama Paketi Boyutu
+ - Uygulama Dinamik Boyutu
+ - Uygulamanın doğrulanıp doğrulanmadığı
+ - Uygulamanın yönetilip yönetilmediği
 
 ## <a name="sample-scenarios"></a>Örnek senaryolar
 

@@ -5,7 +5,7 @@ description: "Windows cihazları için Intune mobil cihaz yönetimini (MDM) etki
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 11/08/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02563b85a6bcac12c60537af4a998b09bca3b6ee
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 0c4c245829a7819c9427a8ebe8ad9e166b58da97
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enroll-windows-devices"></a>Windows cihazlarını kaydetme
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 11/09/2017
 
 Bu konu, BT yöneticilerinin Windows kaydını kullanıcıları için kolaylaştırmasına yardımcı olmaktadır. [Intune’u kurduğunuzda](setup-steps.md) kullanıcılar, iş veya okul hesaplarıyla [oturum açarak](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) Windows cihazlarını kaydederler.  
 
-Bir Intune yöneticisi olarak kayıt sürecini aşağıdaki yollarla kolaylaştırabilirsiniz:
+Bir Intune yöneticisi olarak, kayıt sürecini aşağıdaki yollarla basitleştirebilirsiniz:
 - [Otomatik kaydı etkinleştirme](#enable-windows-10-automatic-enrollment) (Azure AD Premium gereklidir)
 - [CNAME kaydı](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Toplu kaydı etkinleştirme](windows-bulk-enroll.md) (Azure AD Premium ve Windows Yapılandırma Tasarımcısı gereklidir)
@@ -78,6 +78,15 @@ DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebil
 Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin. Intune dikey penceresinde **Cihazları kaydet** > **Windows Kaydı**’nı seçin. **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin URL'sini girin ve ardından **Otomatik Algılamayı Sına**’yı seçin.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Kullanıcılara Windows cihazlarını nasıl kaydedeceklerini anlatma
-Kullanıcılara Windows cihazlarını nasıl kaydedeceklerini ve cihazları yönetilmeye başladıktan sonra nelerle karşılaşabileceklerini anlatın. Son kullanıcı kayıt talimatları için bkz. [Windows cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Ayrıca kullanıcılara [BT yöneticim cihazımda neleri görebilir?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) sayfasındaki bilgilere göz atmalarını da söyleyebilirsiniz.
+Kullanıcılara Windows cihazlarını nasıl kaydedeceklerini ve cihazları yönetilmeye başladıktan sonra nelerle karşılaşabileceklerini anlatın.
+
+> [!NOTE]
+> Windows'un belirli sürümlerinde, son kullanıcıların atadığınız Windows uygulamalarını görüntüleyebilmesi için Şirket Portalı web sitesinde Microsoft Edge üzerinden erişmesi gerekir. Google Chrome, Mozilla Firefox ve Internet Explorer gibi diğer tarayıcılar bu filtreleme türünü desteklemez.
+
+Son kullanıcı kayıt yönergeleri için bkz. [Windows cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Ayrıca kullanıcılara [BT yöneticim cihazımda neleri görebilir?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) sayfasındaki bilgilere göz atmalarını da söyleyebilirsiniz.
 
 Son kullanıcı görevleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](end-user-educate.md).
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [Azure'da Inture kullanarak Windows cihazlarını yönetirken dikkat edilmesi gerekenler](/intune-classic/deploy-use/intune-on-azure.md).

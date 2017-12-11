@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b37ffd23f8cf8764ba457b0803dfc308cf1c071
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
@@ -54,18 +54,18 @@ Intune'u Jamf Pro’ya şu şekilde bağlayabilirsin:
 
 ## <a name="create-a-new-application-in-azure-active-directory"></a>Azure Active Directory'de yeni bir uygulama oluşturma
 
-1. **Azure Active Directory** >  **Uygulama Kaydı** 'nı açın.
+1. **Azure Active Directory** > **Uygulama Kayıtları**'nı açın.
 2. **+Yeni uygulama kaydı**'na tıklayın.
 3. **Jamf Koşullu Erişim** gibi bir **görünen ad** girin.
 4. **Web uygulaması / API**’yi seçin.
-5. Jamf Pro için **oturum açma URL'si** belirtin.
+5. Jamf Pro örneği URL'nizi kullanarak **Oturum Açma URL'si** değerini belirtin.
 6. **Uygulama oluştur**’a tıklayın.
-7. Yeni bir Uygulama Anahtarı oluşturmak için yeni oluşturulan **Uygulama Kimliği**'ni kaydedin ve ardından **Tüm Ayarlar** >  **Anahtarlar**’ı açın. Uygulama Anahtarını kaydedin.
+7. Yeni oluşturulan **Uygulama Kimliği**'ni kaydedin, ardından yeni bir Uygulama Anahtarı oluşturmak için **Ayarlar**'ı açın ve **API Erişimi** > **Anahtarlar**'a gidin. **Açıklama**'yı ve **Süresi Dolmadan** ne kadar bekleneceğini girin, sonra da Uygulama Anahtarı'nı kaydedin. 
 
-  > [!NOTE]
+  > [!IMPORTANT]
   > Uygulama Anahtarı yalnızca bir kez bu işlem sırasında gösterilir. Kolayca alabileceğiniz bir yere kaydettiğinizden emin olun.
 
-8. **Tüm Ayarlar** > **API Erişimi** > **Gerekli İzinler**'e gidin ve tüm izinleri silin.
+8. **Ayarlar**'ı açın, **API Erişimi** > **Gerekli İzinler**'e gidin ve tüm izinleri silin.
 
   > [!NOTE]
   > Yeni bir gerekli izni ekleyin. Uygulama yalnızca tek gerekli izni varsa düzgün çalışabilir.
@@ -79,16 +79,20 @@ Intune'u Jamf Pro’ya şu şekilde bağlayabilirsin:
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Jamf Pro ile tümleştirmek için Intune’u etkinleştirme
 
-1. Microsoft Azure portalında **Microsoft Intune** > **Cihaz Uyumluluğu** > **Jamf için Uyum Bağlayıcı**’yı açın.
+1. Microsoft Azure portalında **Microsoft Intune** > **Cihaz Uyumluluğu** > **İş ortağı cihaz yönetimi**’ni açın.
 2. Uygulama Kimliği'ni **Jamf Azure Active Directory Uygulama Kimliği** alanına yapıştırarak Jamf için Uygunluk Bağlayıcı'yı etkinleştirin.
 3. **Kaydet**'e tıklayın.
 
-## <a name="configure-conditional-access-in-jamf-pro"></a>Jamf Pro’daki koşullu erişim ilkelerini yapılandırma
+## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro'da Microsoft Intune tümleştirmesini yapılandırma
 
-1. Jamf Pro'da **Küresel Yönetim** > **Şartlı Erişim**'e gidin. **Microsoft** sekmesi üzerinde **Düzenle** düğmesine tıklayın.
-2. **Microsoft ile Şartlı Erişimi Etkinleştir** için onay kutusunu işaretleyin.
+1. Jamf Pro'da **Küresel Yönetim** > **Şartlı Erişim**'e gidin. **Microsoft Intune Tümleştirmesi** sekmesinde **Düzenle** düğmesine tıklayın.
+2. **Microsoft Intune Tümleştirmesini Etkinleştir** onay kutusunu seçin.
 3. Önceki adımlardan kaydettiğiniz **Yer**, **Alan Adı**, **Uygulama Kimliği** ve **Uygulama Anahtarı** de dahil olmak üzere Azure kiracısı hakkında gerekli bilgileri sağlayın.
 4. **Kaydet**'e tıklayın. Jamf Pro, ayarlarınızı test edecek ve başarınızı doğrulayacaktır.
+
+## <a name="set-up-compliance-policies-and-register-devices"></a>Uyumluluk ilkelerini ayarlama ve cihazları kaydetme
+
+Intune ile Jamf arasındaki tümleştirmenin yapılandırmasını bitirdikten sonra, [Jamf ile yönetilen cihazlara uyumluluk ilkeleri uygulamanız](conditional-access-assign-jamf.md) gerekir.
 
 ## <a name="information-shared-from-jamf-pro-to-intune"></a>Jamf Pro'dan Intune'a paylaşılan bilgiler
 

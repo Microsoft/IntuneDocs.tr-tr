@@ -46,7 +46,7 @@
       href: get-started-azure.md
     - name: Bir kullanıcı oluşturun
       href: get-started-users.md
-    - name: Bir grup oluşturun
+    - name: Grup oluşturma
       href: get-started-groups.md
     - name: İlke atama
       href: get-started-policies.md
@@ -89,8 +89,8 @@
           href: data-outside-protect.md
         - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
           href: data-leak-prevention.md
-        - name: BYOD
-          href: byod-enable.md
+        - name: MDM ve MAM’i karşılaştırın
+          href: byod-technology-decisions.md
     - name: Geçiş kılavuzu
       href: migration-guide.md
       items:
@@ -142,7 +142,7 @@
         - name: Kayıt seçenekleri
           href: enrollment-options.md
           items:
-            - name: Hüküm ve koşullar
+            - name: hüküm ve koşullar
               href: terms-and-conditions-create.md
             - name: Kısıtlamalar
               href: enrollment-restrictions-set.md
@@ -152,7 +152,7 @@
               href: corporate-identifiers-add.md
             - name: Çok faktörlü kimlik doğrulaması
               href: multi-factor-authentication.md
-            - name: Cihaz kaydı yöneticisi
+            - name: Cihaz kayıt yöneticisi
               href: device-enrollment-manager-enroll.md
             - name: Cihazları gruplarla eşleme
               href: device-group-mapping.md
@@ -521,7 +521,7 @@
             - name: Windows Güvenlik Duvarı
               href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
               maintainContext: true
-            - name: Uç Nokta Koruma
+            - name: Endpoint Protection
               href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
               maintainContext: true
         - name: Intune istemci bilgisayarları için uygulama ekleme

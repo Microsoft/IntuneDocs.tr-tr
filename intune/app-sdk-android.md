@@ -5,7 +5,7 @@ keywords: SDK
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 09/01/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 27725d28ac621bae9500d0e6639a82d6f033e4dc
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: f6a7df413cb8107e8dabc6e1de6ddabd441eaeca
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -35,6 +35,7 @@ Intune Uygulama SDK’sı aşağıdaki dosyalardan oluşur:
 * **Microsoft.Intune.MAM.SDK.aar**: Support.V4 ve Support.V7 JAR dosyaları dışındaki SDK bileşenleri. Derleme sisteminiz AAR dosyalarını destekliyorsa bu dosya, tek bileşenlerin yerine kullanılabilir.
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar**: Android v4 destek kitaplığını kullanan uygulamalarda MAM özelliğini etkinleştirmek için gereken arabirimler. Bu desteğe ihtiyaç duyan uygulamalar JAR dosyasına doğrudan başvurmalıdır.
 * **Microsoft.Intune.MAM.SDK.Support.v7.jar**: Android v7 destek kitaplığını kullanan uygulamalarda MAM özelliğini etkinleştirmek için gereken arabirimler. Bu desteğe ihtiyaç duyan uygulamalar JAR dosyasına doğrudan başvurmalıdır.
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: Bu jar dosyası, yalnızca daha yeni cihazlarda bulunan ama MAMActivity içindeki yöntemlerde başvurulan Android sistem sınıfları için saplamalar içerir. Daha yeni cihazlarda bu saplama sınıfları yoksayılır. Bu jar dosyası yalnızca uygulamanızın MAMActivity'den türetilen sınıflarla yansıtma yaptığı durumlarda gereklidir ve uygulamaların çoğunun bu dosyayı içermesi gerekmez. Bu jar dosyasını kullanırsanız, tüm sınıflarını ProGuard'ın dışında tutmaya dikkat etmelisiniz. Bunlar, "android" kök paketinin altında olacaktır
 * **proguard.txt**: ProGuard ile oluşturuluyorsa, uygulanması gereken ProGuard kurallarını içerir.
 * **CHANGELOG.txt**: Her SDK sürümünde yapılmış değişikliklerin kaydını sağlar.
 * **THIRDPARTYNOTICES.TXT**:  Uygulamanıza derlenecek üçüncü taraf ve/veya OSS kodunu tanıyan bir öznitelik bildirimi.
@@ -47,8 +48,7 @@ Oluşturma sisteminiz AAR dosyalarını desteklemiyorsa, Microsoft.Intune.MAM.SD
 
 ## <a name="requirements"></a>Gereksinimler
 
-Intune Uygulama SDK'sı, derlenmiş bir Android projesidir. Sonuç olarak, uygulamanın en düşük veya hedef API sürümleri için kullandığı Android sürümünden büyük ölçüde etkilenmez. SDK; Android API 25 (Android 7.1) üzerinden Android API 19 (Android 4.4+) destekler.
-
+Intune Uygulama SDK'sı, derlenmiş bir Android projesidir. Sonuç olarak, uygulamanın en düşük veya hedef API sürümleri için kullandığı Android sürümünden büyük ölçüde etkilenmez. SDK; Android API 26 (Android 8.0) üzerinden Android API 19 (Android 4.4+) destekler.
 
 
 ### <a name="company-portal-app"></a>Şirket Portalı uygulaması
@@ -88,7 +88,7 @@ Tipik Android uygulamaları tek bir moda sahiptir ve sisteme [**Context**](https
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>Sınıfları, yöntemleri ve etkinlikleri MAM eşdeğerleriyle değiştirme
 
-Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bunu yapmak için aşağıdaki tabloda listelenen sınıfların tüm örneklerini bulun ve bunları Intune Uygulama SDK'sındaki eşdeğerleriyle değiştirin.
+Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bunu yapmak için aşağıdaki tabloda listelenen sınıfların tüm örneklerini bulun ve bunları Intune Uygulama SDK'sındaki eşdeğerleriyle değiştirin. Bunların çoğu uygulama sınıflarınızın devralınacağı sınıflardır, ancak bazıları (örn. MediaPlayer) uygulamanızın türetmede kullanacağı sınıflar olacaktır.
 
 | Android temel sınıf | Intune Uygulama SDK'sı karşılığı |
 |--|--|
@@ -103,7 +103,7 @@ Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bun
 | android.app.LauncherActivity | MAMLauncherActivity |
 | android.app.ListActivity | MAMListActivity |
 | android.app.NativeActivity | MAMNativeActivity |
-| android.app.PendingIntent | MAMPendingIntent (aşağıdaki notlara bakın) |
+| android.app.PendingIntent | MAMPendingIntent (bkz. [Pending Intent](#pendingintent)) |
 | android.app.Service | MAMService |
 | android.app.TabActivity | MAMTabActivity |
 | android.app.TaskStackBuilder | MAMTaskStackBuilder |
@@ -114,9 +114,13 @@ Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bun
 | android.content.BroadcastReceiver | MAMBroadcastReceiver |
 | android.content.ContentProvider | MAMContentProvider |
 | android.os.Binder | MAMBinder (Yalnızca Bağlayıcı, Android Arabirimi Tanım Dili (AIDL) arabiriminden oluşturulmadığında gereklidir) |
+| android.media.MediaPlayer | MAMMediaPlayer |
+| android.media.MediaMetadataRetriever | MAMMediaMetadataRetriever |
 | android.provider.DocumentsProvider | MAMDocumentsProvider |
 | android.preference.PreferenceActivity | MAMPreferenceActivity |
 
+> [!NOTE]
+> Uygulamanıza türetilen kendi `Application` sınıfı gerekmiyor olsa da, [aşağıdaki `MAMApplication` bölümüne bakın](#mamapplication)
 
 ### <a name="microsoftintunemamsdksupportv4jar"></a>Microsoft.Intune.MAM.SDK.Support.v4.jar:
 
@@ -125,6 +129,7 @@ Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bun
 | android.support.v4.app.DialogFragment | MAMDialogFragment
 | android.support.v4.app.FragmentActivity | MAMFragmentActivity
 | android.support.v4.app.Fragment | MAMFragment
+| android.support.v4.app.JobIntentService | MAMJobIntentService
 | android.support.v4.app.TaskStackBuilder | MAMTaskStackBuilder
 | android.support.v4.content.FileProvider | MAMFileProvider
 
@@ -132,14 +137,15 @@ Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bun
 
 |Android Sınıfı | Intune Uygulama SDK'sı karşılığı |
 |--|--|
-|android.support.v7.app.ActionBarActivity | MAMActionBarActivity |
-
+|android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 
 ### <a name="renamed-methods"></a>Yeniden Adlandırılan Yöntemler
 
 
 Birçok durumda, Android sınıfında kullanılabilir olan bir yöntem, MAM değiştirme sınıfında kesin olarak işaretlenmiştir. Bu durumda, MAM değiştirme sınıfı benzer ada sahip olup (genellikle `MAM` son ekini alır) geçersiz kılmanız gereken bir yöntem sağlar. Örneğin, `MAMActivity`’i geçersiz kılıp `onCreate()` çağırmak yerine `super.onCreate()`’den türetilirken, `Activity`, `onMAMCreate()`’i geçersiz kılmalı ve `super.onMAMCreate()` çağırmalıdır. Java derleyicisi, MAM eşdeğeri yerine özgün metodun yanlışlıkla geçersiz kılınmasını önleyen kesin kısıtlamalar uygulamalıdır.
 
+### <a name="mamapplication"></a>MAMApplication
+MAM SDK'sı içindeki kısıtlamalara bağlı olarak, bir `com.microsoft.intune.mam.client.app.MAMApplication` alt sınıfı **oluşturmalı** ve bildiriminizde kullanılan `Application` sınıfının adına ayarlamalısınız. `MAMApplication` soyuttur ve `byte[] getADALSecretKey` için bir geçersiz kılma gerektirir; nasıl uygulanacağı konusunda daha fazla bilgi için lütfen bu işlevle ilgili Javadoc'a bakın.
 ### <a name="pendingintent"></a>PendingIntent
 `PendingIntent.get*` yerine `MAMPendingIntent.get*` yöntemini kullanmanız gerekir. Bundan sonra her zamanki gibi `PendingIntent` sonucunu kullanabilirsiniz.
 
@@ -256,6 +262,15 @@ boolean getIsManagedBrowserRequired();
 boolean getIsContactSyncAllowed();
 
 /**
+ * This method is intended for diagnostic/telemetry purposes only. It can be used to discover whether
+ * file encryption is in use. File encryption is transparent to the app, and the app should not need
+ * to make any business logic decisions based on this.
+ * 
+ * @return True if file encryption is in use.
+ */
+boolean diagnosticIsFileEncryptionInUse();
+
+/**
  * Return the policy in string format to the app.
  *  
  * @return The string representing the policy.
@@ -274,7 +289,8 @@ String toString();
 Uygulamanın kendi PIN kullanıcı deneyimi varsa, BT yöneticisi SDK’yı uygulama PIN’ini isteyecek şekilde yapılandırdıysa, uygulamanın deneyimini devre dışı bırakmak isteyebilirsiniz. BT yöneticisinin bu uygulamada uygulama PIN ilkesini dağıtıp dağıtmadığını belirlemek için, geçerli son kullanıcı için aşağıdaki yöntemi çağırın:
 
 ```java
-MAMComponents.get(AppPolicy.class).getIsPinRequired();
+
+MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
 ### <a name="example-determine-the-primary-intune-user"></a>Örnek: Birincil Intune kullanıcısını belirleme
@@ -312,9 +328,9 @@ Birçok uygulama, son kullanıcının dosyaları yerel olarak veya bir bulut dep
 İlkenin zorunlu tutulup tutulmadığını belirlemek için aşağıdaki çağrıyı yapın:
 
 ```java
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
-```
+``````
 
 ... burada `service`, aşağıdaki SaveLocation değerlerinden biridir:
 
@@ -344,13 +360,13 @@ Uygulamanızın `MAMNotificationReceiver` oluşturup `MAMNotificationReceiverReg
 ```java
 @Override
 public void onCreate() {
-    super.onCreate();
-    MAMComponents.get(MAMNotificationReceiverRegistry.class)
-        .registerReceiver(
-            new ToastNotificationReceiver(),
-            MAMNotificationType.WIPE_USER_DATA);
-    }
-```
+  super.onCreate();
+  MAMComponents.get(MAMNotificationReceiverRegistry.class)
+    .registerReceiver(
+      new ToastNotificationReceiver(),
+      MAMNotificationType.WIPE_USER_DATA);
+  }
+``````
 
 ### <a name="mamnotificationreceiver"></a>MAMNotificationReceiver
 
@@ -456,9 +472,8 @@ Aşağıda, uygulamanın ADAL ile yapılandırılabilmesinin yaygın yolları a�
     |--|--|
     | Yetkili | AAD hesaplarının yapılandırıldığı, tercih edilen ortam |
     | İstemci Kimliği | Uygulamanın İstemci Kimliği (uygulama kaydedilirken Azure AD tarafından oluşturulur) |
-    | NonBrokerRedirectURI | Uygulama için geçerli bir yeniden yönlendirme URI’si veya `urn:ietf:wg:oauth:2.0:oob` 
-    . <br><br> Değeri, uygulamanızın İstemci Kimliği için kabul edilebilir bir yeniden yönlendirme URI’si olarak yapılandırdığınızdan emin olun.
-   | SkipBroker | False |
+    | NonBrokerRedirectURI | Uygulama için geçerli bir yeniden yönlendirme URI’si veya varsayılan olarak `urn:ietf:wg:oauth:2.0:oob`. <br><br> Değeri, uygulamanızın İstemci Kimliği için kabul edilebilir bir yeniden yönlendirme URI’si olarak yapılandırdığınızdan emin olun.
+    | SkipBroker | False |
 
 
 3. **Uygulama ADAL’ı tümleştirir ama aracılı kimlik doğrulaması/cihaz genelinde SSO’yu desteklemek:**
@@ -797,16 +812,15 @@ Aşağıdaki `MAMPolicyManager` yöntemleri kimlik ayarlamak ve önceden ayarlan
 
   public static String getCurrentThreadIdentity();
 
-  /**
-   * Get the currently applicable app policy. Same as
-   * MAMComponents.get(AppPolicy.class). This method does
-   * not take the context identity into account.
+/**
+   * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy();
 
   /**
-  * Get the current app policy. This does NOT take the UI (Context) identity into account.
-   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
+  * Get the current app policy. This DOES take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use this function.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -929,7 +943,33 @@ Uygulamanın kimlik ayarlayabilme özelliğine ek olarak, bir iş parçacığı 
 
   İstenen kimlik yönetiliyorsa (denetlemek için `MAMPolicyManager.getIsIdentityManaged` kullanın), ancak uygulama bu hesabı kullanamıyorsa (mesela e-posta hesapları gibi hesapların, ilk olarak uygulamada ayarlanması gerektiği için) kimlik anahtarı reddedilir.
 
+### <a name="preserving-identity-in-async-operations"></a>Zaman Uyumsuz İşlemlerde Kimliği Koruma
+UI iş parçacığındaki işlemler için arka plan görevlerinin başka bir iş parçacığına gönderilmesi yaygın bir durumdur. Çok kimlikli bir uygulama, bu arka plan görevlerinin uygun kimlikle çalıştırıldığından emin olmak ister; bu kimlik çoğunlukla bunları gönderen etkinliğin kullandığı kimliktir. MAM SDK'sı, kimliği koruma konusunda yardımcı olmak için `MAMAsyncTask` ve `MAMIdentityExecutors` sağlar.
+#### <a name="mamasynctask"></a>MAMAsyncTask
 
+`MAMAsyncTask` kullanmak için, AsyncTask yerine bundan devralın, sonra da `doInBackground` ve `onPreExecute` geçersiz kılmalarını sırasıyla `doInBackgroundMAM` ve `onPreExecuteMAM` ile değiştirin. `MAMAsyncTask` oluşturucusu bir etkinlik bağlamı alır. Örneğin:
+
+```java
+  AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
+
+    @Override
+    protected Object doInBackgroundMAM(final Object[] params) {
+        // Do operations.
+    }
+    
+    @Override
+    protected void onPreExecuteMAM() {
+        // Do setup.
+    };
+```
+
+### <a name="mamidentityexecutors"></a>MAMIdentityExecutors
+`MAMIdentityExecutors`, `Executor`/`ExecutorService` öğesini `wrapExecutor` ve `wrapExecutorService` yöntemleriyle koruyarak mevcut `Executor` veya `ExecutorService` örneğini bir kimlik olarak sarmalamanıza olanak tanır. Örneğin
+
+```java
+  Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
+  ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
+```
 
   ### <a name="file-protection"></a>Dosya Koruması
 
@@ -1122,7 +1162,7 @@ public final class MAMDataProtectionManager {
 
 ### <a name="content-providers"></a>İçerik Sağlayıcıları
 
-Uygulama **ContentProvider** aracılığıyla **ParcelFileDescriptor** dışında kurumsal veriler sağlıyorsa, uygulamanın `MAMContentProvider` içinde `isProvideContentAllowed(String)` yöntemini çağırması, içerik için sahip kimliğinin UPN’sini (kullanıcı asıl adı) geçirmesi gerekir. Bu işlev false döndürürse, içerik çağrıyı yapana *döndürülemez*. İçerik sağlayıcısı aracılığıyla döndürülen dosya tanımlayıcıları dosya kimliğine göre otomatik olarak işlenir.
+Uygulama **ContentProvider** aracılığıyla **ParcelFileDescriptor** dışında kurumsal veriler sağlıyorsa, uygulamanın `MAMContentProvider` içinde `isProvideContentAllowed(String)` yöntemini çağırması, içerik için sahip kimliğinin UPN’sini (kullanıcı asıl adı) geçirmesi gerekir. Bu işlev false döndürürse, içerik çağrıyı yapana *döndürülmemelidir*. İçerik sağlayıcısı aracılığıyla döndürülen dosya tanımlayıcıları dosya kimliğine göre otomatik olarak işlenir.
 
 ### <a name="selective-wipe"></a>Seçmeli Silme
 
@@ -1342,6 +1382,8 @@ Aşağıda izin verilen stil özniteliklerinin, bunların denetledikleri UI öğ
 
  Intune Uygulama SDK’sına dahil edilen AndroidManifest.xml dosyası, **MAMNotificationReceiverService** öğesini içerir. Bu öğenin, Şirket Portalı’nın kullanan bir uygulamaya bildirim göndermesine izin vermek üzere dışarı aktarılan bir hizmet olması gerekir. Hizmet, yalnızca Şirket Portalı’nın bildirim göndermesine izin verildiğinden emin olmak için çağıranı denetler.
 
+### <a name="reflection-limitations"></a>Yansıma sınırlamaları
+MAM tabanlı sınıflardan bazıları (örn. MAMActivity, MAMDocumentsProvider), yalnızca belirli API düzeylerinin üstünde var olan parametre veya dönüş türlerinin kullanıldığı yöntemler (özgün Android tabanlı sınıflar temelinde) kullanır. Bu nedenle, uygulama bileşenlerinin tüm yöntemlerini listelemek için yansıma kullanmak her zaman mümkün olmayabilir. Bu kısıtlama MAM ile sınırlı değildir; uygulamanın kendisi Android tabanlı sınıflardan bu yöntemleri uyguladığında da aynı kısıtlama geçerli olabilir.
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK tüketicisinin beklentileri
 
 İlkeleri zorunlu kılma işlemi sonucunda hata koşulları daha sık tetiklenebilir, ancak Intune SDK’sı, Android API’si tarafından sağlanan sözleşmeyi korur. Aşağıda belirtilen Android’e yönelik en iyi uygulamalar, hata olasılığını azaltır:

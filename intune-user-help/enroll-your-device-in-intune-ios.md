@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Şirket kaynaklarına erişimi ayarlama
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/21/2017
 - Başladığınızda tüm işlemi tamamladığınızdan emin olun. Birkaç dakikadan daha uzun süre duraklatmak genellikle ilerlemenizi durdurur ve baştan başlamanızı gerektirir.
 - Bu işlemin başarısız olması durumunda, yeniden denemek için Şirket Portalı uygulamasına dönmeniz gerekir.
 - Wi-Fi'nin çalıştığından ve Safari'nin cihazınızda çalıştığından emin olun.
-- [Yükleme’yi indirin ve Intune Şirket Portalı uygulamasında](install-and-sign-in-to-the-intune-company-portal-app-ios.md) oturum açın.
+- [Intune Şirket Portalı uygulamasını](install-and-sign-in-to-the-intune-company-portal-app-ios.md) indirin ve yükleyin.
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Şirket kaynaklarına erişimi ayarlamak için Şirket Portalı uygulamasını kullanma
