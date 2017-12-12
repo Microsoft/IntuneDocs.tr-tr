@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 446b395aab311d13ebc7ac6b8c3ed7c740070729
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: d2a7cd5cc4c201a73570f73892563463cb0bdcc7
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Şirket kaynaklarına erişmek için Windows Defender’ı etkinleştirme
 
@@ -48,4 +48,4 @@ Erişim sorunlarını düzeltmek için Windows Defender’ınızda değiştirmen
 
 **Başlangıç**’a gidip **Windows Defender Güvenlik Merkezi** için arama yaparak antivirüs tanımlarınızın güncel olduğundan emin olun. **Koruma güncelleştirmeleri**’ni seçin ve **Güncelleştirmeleri denetle**’ye tıklayarak cihazınızın virüslere karşı korumasının güncel olduğundan emin olun. Bu seçenek görünmüyorsa, [Gerçek Zamanlı Korumayı etkinleştirme](turn-on-defender-windows.md#turn-on-real-time-protection) adımlarını izleyin
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

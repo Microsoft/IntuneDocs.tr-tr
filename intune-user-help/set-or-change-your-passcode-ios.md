@@ -14,11 +14,11 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 5feec496d0f7952b1ae35ed1d905cbfc526bc387
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 80cd4b97aafd3307fee310ea742d82a5ff215680
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-or-change-your-passcode"></a>Geçiş kodunuzu ayarlama veya değiştirme
 
@@ -41,4 +41,4 @@ Geçiş kodu gereksinimlerine uyan bir geçiş kodu ayarlama konusunda sorun ya�
 2. **Parolayı Değiştir**'e dokunun ve eski geçiş kodunuzu girin.
 3. Şirketinizin destek biriminin belirlediği gereksinimlerini karşılayan yeni bir geçiş kodu girin ve ardından doğrulamak için bu geçiş kodunu yeniden girin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

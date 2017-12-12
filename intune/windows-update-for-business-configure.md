@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="manage-software-updates"></a>Yazılım güncelleştirmelerini yönetme
 
@@ -94,8 +94,8 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
     **Bakım kanalı Yarı Yıllık Kanal olarak ayarlı ve erteleme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi Windows Update’te önce herkese açık şekilde ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. X Özellik Güncelleştirmesi, dört ay sonra nisanda Yarı Yıllık Kanal kapsamında yayımlanıyor. Cihaz, Özellik Güncelleştirmesini bu Yarı Yıllık Kanal sürümünden 30 gün sonra alır ve mayıs ayında güncelleştirilir.
 
-    - **Teslim iyileştirme**: Cihazların Windows güncelleştirmelerini indireceği yöntemi seçin. Ayrıntılar için bkz. [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
-8. İşiniz bittiğinde **Tamam**’a ve sonra da **Güncelleştirme Kademesi Oluştur** dikey penceresinde **Oluştur**’a tıklayın.
+    - **Teslim iyileştirme**: Cihazların Windows güncelleştirmelerini indireceği yöntemi seçin. Ayrıntılar için bkz. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. İşiniz bittiğinde **Tamam**’a ve sonra da **Güncelleştirme Kademesi Oluştur** dikey penceresinde **Oluştur**’a tıklayın.
 
 Yeni güncelleştirme kademesi, güncelleştirme kademeleri listesinde görünür.
 

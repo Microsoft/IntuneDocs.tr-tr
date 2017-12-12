@@ -14,11 +14,11 @@ ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7842d55eb6f43cf7ada47324f5d5846212630501
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: b66871ce4fa968e61152ffc99741a78a454f6579
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>iOS cihazınıza Symantec Endpoint Protection Mobile yükleme
 
@@ -44,5 +44,5 @@ SEP Mobile cihazınızda güvenlik tehdidi bulursa sorunun nasıl çözüleceği
 
 Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle başarısız olabilir. Bu durumda SEP Mobile’ı [App Store’dan el ile](https://itunes.apple.com/app/sep-mobile/id695620821) yüklemeyi deneyin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
 

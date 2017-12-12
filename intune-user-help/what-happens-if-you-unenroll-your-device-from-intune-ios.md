@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dfcb60d16a4412c66c81db53ed5bbc9dd2b46bba
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: b7568a658a655b5c061ced64449d17ee6f6053ae
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>iOS veya macOS cihazınızın Intune kaydını sildiğinizde ne olur?
 
@@ -42,4 +42,4 @@ iOS veya macOS cihazınızın Intune kaydını sildiğinizde:
 
 Kaydın nasıl silineceği hakkında yönergeler için bkz. [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-ios.md).
 
-Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

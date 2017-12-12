@@ -14,11 +14,11 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6dba55de8d4c4551ff1e09bb0dffe797f0cf3190
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 50707eb19dc8dd876dea256094e5790d587d7087
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Android cihazınıza Symantec Endpoint Protection Mobile yükleme
 
@@ -56,4 +56,4 @@ Yüklemeyle ilgili bir sorun yaşarsanız bu konunun sonundaki sorun giderme ad�
 
 Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle başarısız olabilir. Bu durumda SEP Mobile’ı [Play Store’dan el ile](https://play.google.com/store/apps/details?id=com.skycure.skycure) yüklemeyi deneyin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

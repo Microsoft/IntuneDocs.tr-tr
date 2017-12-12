@@ -14,11 +14,11 @@ ms.assetid: 754f4ea5-cff4-414d-8cd1-900238f79e84
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: cb5f58232b46eac911c48fd80569ec54644d6745
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 287917669523e257a42b47d0132de7cc0dcf18e0
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Android cihazınıza Sandblast Mobile Protect uygulamasını yüklemeniz gerekiyor
 
@@ -56,4 +56,4 @@ Yüklemeyle ilgili bir sorun yaşarsanız bu konunun sonundaki sorun giderme ad�
 
 Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle başarısız olabilir. Böyle bir durumda Sandblast Mobile Protect’i [Play Store’dan el ile](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) yüklemeyi deneyin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

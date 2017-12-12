@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 21d9e6678c9981b3c1d918f337322d50aa0fecb5
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: dc363dbf6f9153401c510594358b905643647869
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Bir mevcut şirket e-posta hesabı bulundu
 
@@ -34,4 +34,4 @@ Kuruluşunuz veya şirketiniz için zaten bir e-posta hesabınız var ve şimdi 
 
 3.  Yeni e-posta ayarlarının cihazınıza otomatik olarak uygulanması için kısa bir süre bekleyin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ea734e83cfab3fff22c775764ac9814012d52b6
-ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
+ms.openlocfilehash: 35bf193563deb34ac59df245c622bbc011d80b76
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2017"></a>Microsoft Intune için Erken Sürüm - Aralık 2017
 
@@ -60,9 +60,6 @@ Bu değişiklikle, IT yöneticileri hangi NAC yönetim cihazlarının kendi NAC 
 
 ### <a name="new-ios-device-action------1244701---"></a>Yeni iOS cihaz eylemi  <!-- 1244701 -->
 IOS 10.3 denetlenen cihazları kapatabilirsin. Bu eylem, son kullanıcıya herhangi bir uyarı yapılmadan cihazı hemen kapatır. **Cihaz** iş yükünde bir cihaz seçtiğinde, cihaz özelliklerinde **Kapat (yalnızca denetimli)** eylemi bulunabilir.
-
-### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>Palo Alto VPN şimdi destekleniyor <!-- 1333680 eeready -->
-Temel VPN'inizi yapılandırdığında, **Bağlantı türü** listesinde Palo Alto VPN bulunur.
 
 ### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>SCEP ve PFX sertifika işleme için birden çok bağlayıcı desteği <!-- 1361755 eeready -->
 Şirket içi NDES bağlayıcısı kullanan müşteriler, tek bir kiracıda birden fazla bağlayıcıyı yapılandırarak sertifikaları cihazlara teslim edebilir.

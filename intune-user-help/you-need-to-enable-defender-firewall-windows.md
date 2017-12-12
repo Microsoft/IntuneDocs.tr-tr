@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a54f618cd03b2aed5a25cd65a7418a7908f513f2
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 4b619f0d42a88fb0cdc2f71c57c6ffeea4191d6e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>Windows Defender Güvenlik Duvarınızı açma
 
@@ -30,4 +30,4 @@ ms.lasthandoff: 11/09/2017
 2. **Sistem ve Güvenlik** > **Windows Defender Güvenlik Duvarı**’nı açın.
 3. Etki alanı, özel ve ortak ağlar için **Ayarları Özelleştir** > **Windows Güvenlik Duvarını aç veya kapa**’yı seçin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ac9b138edeb77eee3dc223eee8a35dc4cfd4e273
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: c71ac6ec64bb60bf4cdd06639e1c178c1b236e4c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Şirket Portalı uygulamasını yükleme ve uygulamada oturum açma
 
@@ -36,4 +36,4 @@ ms.lasthandoff: 11/15/2017
 
     Şirket Portalı uygulamasında ilk kez oturum açıyorsanız ve şirketinizde veya okulunuzda Intune kullanılıyorsa, cihazınızı Intune’a kaydetmeniz istenir. Kaydetmek için [Cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) bölümündeki adımları izleyin. Ayrıca [başka bir cihaz kullanarak da oturum açabilirsiniz](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

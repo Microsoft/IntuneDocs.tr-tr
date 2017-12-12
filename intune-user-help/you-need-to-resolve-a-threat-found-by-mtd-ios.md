@@ -14,11 +14,11 @@ ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 399a910e9aa2ad9fdd4ceefe446c637aa5076c12
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 4cfbcc84e77632ca17387b083f519b8a297e9503
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Bir Mobile Threat Defense uygulaması tarafından bulunan tehditleri çözme
 
@@ -38,5 +38,5 @@ Mobile Threat Defense’in tehdit olarak algıladığı bir uygulama yüklediyse
 
 Uygulamayı kaldırdıktan sonra e-postanıza veya diğer şirket ya da okul verilerinize hemen erişim elde edersiniz. Uygulamayı kaldırma isteğini yoksayarsanız, uygulamayı kaldırana kadar şirket e-postanıza ve verilerinize erişiminizi kaybedersiniz.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
 

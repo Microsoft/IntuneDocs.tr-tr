@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e6d5bb79925588e78d2536e3c322ccbf5dd970c5
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f4a6ed7d399806b2b8ac8fb24d9a29675ffe00b3
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Android’de pil iyileştirme açık olduğunda Outlook yönetilen e-postaları eşitlemez
 
 > [!IMPORTANT]
-> Konuyla ilgili rapor gönderen müşteri sayısı gittikçe arttığı için bu soruna burada değiniyoruz. Bu adımları tamamladıktan sonra sorununuz hala devam ederse yardım için [şirketinizin destek birimine](https://portal.manage.microsoft.com) başvurun.
+> Konuyla ilgili rapor gönderen müşteri sayısı gittikçe arttığı için bu soruna burada değiniyoruz. Bu adımları tamamladıktan sonra sorununuz hala devam ederse yardım için [şirketinizin destek birimine](https://portal.manage.microsoft.com#HelpDeskDialog) başvurun.
 
 Cihazınızı Intune’a kaydetmek, şirket kaynaklarına erişmenizi sağlar. En yaygın kaynaklardan biri e-posta erişimidir. Outlook ile e-postaya erişim konusunda yaşanan sorunların, güç iyileştirme açıkken meydana geldiğini gördük. Pil iyileştirme, cihazınızın olabildiğince uzun süre çalışmasını sağlamak için otomatik olarak açılabilir. Pil iyileştirme, e-postaların otomatik indirilmesini durdurmaya çalışarak size kısmen yardımcı olur.
 
@@ -73,4 +73,4 @@ Bu ayarları bulmanın bir diğer yolu da sistem ayarlarında arama yapmaktır. 
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

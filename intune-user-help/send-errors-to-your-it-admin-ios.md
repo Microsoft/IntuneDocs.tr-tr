@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 2aa8ee8803e3001abeb8da92fb61c93c81ffb135
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS cihazınızla ilgili sorunlar için şirketinizin destek birimine hata gönderme
 
@@ -32,4 +32,4 @@ ms.lasthandoff: 09/28/2017
 
 -   Şirket Portalı uygulamasında, cihazınızı sallayın ve ardından tanılama uyarısı görüntülendiğinde **Tanılama Raporu Gönder**’e dokunun. Cihazı salladığınızda uyarı görüntülenmezse **Ayarlar** > **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

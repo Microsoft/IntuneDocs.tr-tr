@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca9ef81acb4d1535649d4e13e1b5b2e18ed109a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: e4180a20fdbc3181fe631f1b57ec6758a9e16ee4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Şirketinizin Sanal Özel Ağını (VPN) yükleme
 
@@ -33,4 +33,4 @@ ms.lasthandoff: 09/28/2017
 3.  **Kuruluş VPN profilini yükle**’ye dokunun, yönergeleri izleyin. Şirketinizin kullandığı VPN sağlayıcısına bağlı olarak, yükleme adımları biraz farklı olabilir.
 
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
