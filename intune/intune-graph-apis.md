@@ -1,10 +1,10 @@
 ---
-title: "Intune Grafik API’sine erişmek için Azure AD kullanma"
-description: "Intune Grafik API’sine erişmek üzere Azure AD kullanmak için uygulamalarda gereken adımları açıklar"
+title: "Intune Graph API’sine erişmek için Azure AD kullanma"
+description: "Intune Graph API’sine erişmek üzere Azure AD kullanmak için uygulamalarda gereken adımları açıklar"
 keywords: intune graphapi c# powershell permission roles
-author: lleonard-msft
+author: vhorne
 manager: angrobe
-ms.author: alleonar
+ms.author: victorh
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ff36855e7a20aa7696444416d8993f9be62cbe5
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 12/12/2017
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Intune Grafik API’sine erişmek için Azure AD kullanma
+# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Intune Graph API’sine erişmek için Azure AD kullanma
 
-[Microsoft Graph API](https://developer.microsoft.com/graph/)’si artık belirli API’ler ve izin rolleriyle Microsoft Intune’u destekliyor.  Grafik API’si kimlik doğrulama ve erişim denetimi için Azure Active Directory (Azure AD) kullanır.  
-Intune Grafik API'sine erişim şunları gerektirir:
+[Microsoft Graph API](https://developer.microsoft.com/graph/)’si artık belirli API’ler ve izin rolleriyle Microsoft Intune’u destekliyor.  Graph API’si kimlik doğrulama ve erişim denetimi için Azure Active Directory (Azure AD) kullanır.  
+Intune Graph API'sine erişim şunları gerektirir:
 
 - Aşağıdakileri içeren bir uygulama kimliği:
 
-    - Azure AD ve Grafik API'leri çağırma izni.
+    - Azure AD ve Graph API'leri çağırma izni.
     - Belirli uygulama görevleri ile ilgili izin kapsamları.
 
 - Aşağıdaki özelliklere sahip kimlik bilgilerini kullanın:
@@ -38,11 +38,11 @@ Intune Grafik API'sine erişim şunları gerektirir:
 
 Bu makalede:
 
-- Grafik API'si ve ilgili izin rollerine erişimi olan bir uygulamanın nasıl kaydedileceği gösterilir.
+- Graph API'si ve ilgili izin rollerine erişimi olan bir uygulamanın nasıl kaydedileceği gösterilir.
 
-- Intune Grafik API’si izin rolleri açıklanır.
+- Intune Graph API’si izin rolleri açıklanır.
 
-- C# ve PowerShell için Intune Grafik API’si kimlik doğrulama örnekleri verilir.
+- C# ve PowerShell için Intune Graph API’si kimlik doğrulama örnekleri verilir.
 
 - Birden çok kiracının nasıl destekleneceği açıklanır
 
@@ -53,9 +53,9 @@ Daha fazla bilgi için bkz:
 - [Uygulamaları Azure Active Directory ile tümleştirme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [OAuth 2.0’ı anlama](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Grafik API'sini kullanmak için uygulamaları kaydetme
+## <a name="register-apps-to-use-graph-api"></a>Graph API'sini kullanmak için uygulamaları kaydetme
 
-Grafik API'sini kullanmak için uygulamaları kaydetmek üzere:
+Graph API'sini kullanmak için uygulamaları kaydetmek üzere:
 
 1.  Yönetici kimlik bilgilerini kullanarak [Azure portalında](https://portal.azure.com) oturum açın.
 
@@ -97,7 +97,7 @@ Grafik API'sini kullanmak için uygulamaları kaydetmek üzere:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    İlgili adların soluna onay işareti koyarak uygulamanız için gereken rolleri seçin.  Belirli Intune izin kapsamları hakkında bilgi edinmek için bkz. [Intune izin kapsamları](#user-content-intune-permission-scopes).  Diğer Grafik API'si izin kapsamları hakkında bilgi edinmek için bkz. [Microsoft Graph izinleri başvurusu](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+    İlgili adların soluna onay işareti koyarak uygulamanız için gereken rolleri seçin.  Belirli Intune izin kapsamları hakkında bilgi edinmek için bkz. [Intune izin kapsamları](#user-content-intune-permission-scopes).  Diğer Graph API'si izin kapsamları hakkında bilgi edinmek için bkz. [Microsoft Graph izinleri başvurusu](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
     En iyi sonuçlar için, uygulamanızı uygulamak için gereken en düşük rolü seçin.
 
@@ -127,15 +127,15 @@ Bu noktada, ayrıca:
 
 ## <a name="intune-permission-scopes"></a>Intune izin kapsamları
 
-Azure AD ve Grafik API'si kurumsal kaynaklara erişimi denetlemek için izin kapsamlarını kullanır.  
+Azure AD ve Graph API'si kurumsal kaynaklara erişimi denetlemek için izin kapsamlarını kullanır.  
 
-İzin kapsamları (_OAuth kapsamları_ olarak da bilinir) belirli Intune varlıkları ve bunların özelliklerine erişimi denetler. Bu bölümde Intune Grafik API'si özellikleri için izin kapsamları özetlenir.
+İzin kapsamları (_OAuth kapsamları_ olarak da bilinir) belirli Intune varlıkları ve bunların özelliklerine erişimi denetler. Bu bölümde Intune Graph API'si özellikleri için izin kapsamları özetlenir.
 
 Daha fazlasını öğrenin:
 - [Azure AD kimlik doğrulaması](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Uygulama izin kapsamları](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Grafik API'sine izin verdiğinizde, Intune özelliklerine erişimi denetlemek için aşağıdaki kapsamları belirtebilirsiniz: Intune Grafik API'si izin kapsamları aşağıdaki tabloda özetlenmiştir.  İlk sütun özelliğin adını Azure portalında görüntülenen şekliyle gösterir ve ikinci sütun izin kapsam adını sağlar.
+Graph API'sine izin verdiğinizde, Intune özelliklerine erişimi denetlemek için aşağıdaki kapsamları belirtebilirsiniz: Intune Graph API'si izin kapsamları aşağıdaki tabloda özetlenmiştir.  İlk sütun özelliğin adını Azure portalında görüntülenen şekliyle gösterir ve ikinci sütun izin kapsam adını sağlar.
 
 _Erişimi Etkinleştir_ ayarı | Kapsam adı
 :--|:--
@@ -153,7 +153,7 @@ __Microsoft Intune yapılandırmasını okuma__ | [DeviceManagementServiceConfig
 
 Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıdaki bölümlerde kapsamlar alfabetik sırayla açıklanır.
 
-Şu anda tüm Intune izin kapsamları yönetici erişimi gerektirir.  Başka bir deyişle, Intune Grafik API'si kaynaklarına erişen uygulamaları veya betikleri çalıştırırken ilgili kimlik bilgilerine sahip olmanız gerekir.
+Şu anda tüm Intune izin kapsamları yönetici erişimi gerektirir.  Başka bir deyişle, Intune Graph API'si kaynaklarına erişen uygulamaları veya betikleri çalıştırırken ilgili kimlik bilgilerine sahip olmanız gerekir.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ Her iki örnek sınanırken, aşağıdakine benzer HTTP durumu 403 (Yasak) hatal
 
 Bu durumda, aşağıdakileri doğrulayın:
 
-- Uygulama kimliğini Grafik API'sini ve `DeviceManagementManagedDevices.Read.All` izni kapsamını kullanmaya yetkili biri için güncelleştirdiniz.
+- Uygulama kimliğini Graph API'sini ve `DeviceManagementManagedDevices.Read.All` izni kapsamını kullanmaya yetkili biri için güncelleştirdiniz.
 
 - Kiracı kimlik bilgileriniz yönetimsel işlevleri destekliyor.
 
