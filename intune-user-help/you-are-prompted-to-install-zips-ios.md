@@ -14,11 +14,11 @@ ms.assetid: 3fcbd09f-9b96-40fb-96fe-9e5173dc6179
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: dffe2584f4721a6549bdadcff61d8c1e796e6e84
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 60c0c4b05899669a535e868992d15dcd36280333
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>iOS cihazınıza Zimperium zIPS yükleme
 
@@ -44,4 +44,4 @@ Zimperium zIPS cihazınızda güvenlik tehdidi bulursa sorunun nasıl çözülec
 
 Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle başarısız olabilir. Böyle bir durumda Zimperium zIPS’i [App Store’dan el ile](https://itunes.apple.com/app/zimperium-zips/id1030924459) yüklemeyi deneyin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

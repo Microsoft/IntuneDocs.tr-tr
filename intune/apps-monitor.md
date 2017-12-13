@@ -1,12 +1,12 @@
 ---
 title: "Uygulama bilgilerini ve atamaları izleme"
 titlesuffix: Azure portal
-description: "Kullanıcılara veya cihazlara uygulama atadıktan sonra, atamanın durumunu izlemenize yardımcı olması için bu bilgileri kullanın.\""
+description: "Kullanıcılara veya cihazlara uygulama atadıktan sonra, atamanın durumunu izlemenize yardımcı olması için bu bilgileri kullanın."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 0298fc255b3c11a12b5bf225968d6f2303192053
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -30,32 +30,74 @@ Intune, yönettiğiniz uygulamanın özelliklerini ve bunların atama durumunu i
 1. Azure portalında oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
 3. **Mobil uygulamalar** iş yükünde **Yönet** grubunda **Uygulamalar**’ı seçin.
-     
-    ![Uygulama yükleme durumu dikey penceresi.](./media/monitor-apps.png)
 5. Uygulama listesi dikey penceresinde bir uygulama seçin. <*uygulama adı*> **Cihaz yükleme durumu** dikey penceresi görüntülenir.
 
-Cihaz yükleme durumu raporu aşağıdaki sütunları içerir:
+## <a name="app-overview-blade"></a>Uygulamaya genel bakış dikey penceresi
 
-1.  **Cihaz Adı** Cihaz türünün adı.
-2.  **Kullanıcı Adı** Kullanıcı adı.
-3.   **Platform** Cihazda yüklü işletim sistemi.
-4.  **Sürüm** Uygulamanın sürüm numarası.
-5.   **Durum** Uygulamalar için olası durumlar şunlardır: **Yüklü**, **Yüklü Değil**, **Yükleme Bekleniyor** ve **Hata**.
-6. **Durum Ayrıntıları** Cihazdaki uygulama durumunun okunabilir bir açıklaması.
-7. **Son İade** Cihazın Intune’a son iade edilme zamanı.
+Ortamınızdaki uygulamanın durumu hakkındaki ayrıntıları gözden geçirmek için <*uygulama adı*> **Cihaz yükleme durumu** dikey penceresini kullanabilirsiniz.
 
-Ardından, uygulamalarınız ve onların atamaları hakkında daha fazla bilgi edinmek için aşağıdaki işlemlerden birini yapın.
+### <a name="essentials"></a>Temel Parçalar
 
-## <a name="general"></a>Genel
+**Temel Parçalar** bölümünde, uygulama hakkında aşağıdaki bilgiler yer alır:
 
-- **Genel bakış** - Uygulamanın temel genel bakış bilgilerini ve o uygulamaya ilişkin atamaların durum bilgilerini sağlar. **Cihaz yükleme durumu** veya **Kullanıcı yükleme durumu** dikey penceresini açıp daha ayrıntılı bilgilere ulaşmak için grafiklerden birini seçebilirsiniz.
+ - **Yayımcı**  
+Uygulama yayımcısı.
+ - **İşletim sistemi**  
+Uygulamanın işletim sistemi (Windows, iOS, Android, vb.)
+ - **Oluştur**  
+Düzeltmenin oluşturulduğu zaman.
+ - **Atanan**  
+Uygulama atandıysa **Evet** veya **Hayır**.
 
-## <a name="manage"></a>Bilgisayarlarda
+### <a name="status"></a>Durum
+Her graf, aşağıdaki durum için sayıları gösterir:
 
-- **Özellikler** - Seçilen uygulama hakkındaki bilgileri görüntülemenizi ve değiştirmenizi sağlar. Uygulama özellikleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](apps-add.md).
-- **Atamalar** - Bu uygulamaya ilişkin atamalar hakkında bilgi sağlar. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md).
+ - **Yüklendi**  
+Yüklenen uygulamaların sayısı.
+ - **Yüklü Değil**  
+Yüklenmemiş uygulamaların sayısı.
+ - **Yükleme Bekletiliyor**  
+Yüklenme sürecinde olan uygulamaların sayısı.
+ - **Başarısız**  
+Başarısız olan yüklemelerin sayısı.
+ - **Bilinmiyor**  
+Durumu bilinmeyen uygulamaların sayısı.
 
-## <a name="monitor"></a>İzle
+### <a name="device-status"></a>Cihaz durumu
 
-- **Cihaz yükleme durumu** - Seçili uygulamayı atadığınız her cihazla ilgili ayrıntılı bilgileri (cihaz adı, işletim sistemi, cihazın Intune’a son iade edilme zamanı ve uygulama yüklemesinin durumu) sağlar.
-- **Kullanıcı yükleme durumu** - Seçili uygulamayı atadığınız kullanıcıyla ilgili ayrıntılı bilgileri (kullanıcının tüm cihazlarındaki uygulama yüklenme sayısıyla ilgili bilgiler dahil olmak üzere) ve yükleme hatalarıyla ilgili bilgileri sağlar.
+Cihaz durumu. Cihazlardaki uygulamanın yükleme durumunu görüntüleyen halka grafik. Cihaz durumu hakkındaki ayrıntı listesini açmak için grafiğe tıklayın. Ayrıntı tablosunda aşağıdaki sütunlar vardır:
+
+ - **Cihaz adı**  
+Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılabilir olamaz.
+ - **Kullanıcı adı**  
+Kullanıcının adı.
+ - **Platform**  
+Cihazın işletim sistemi (Windows, iOS, Android, vb.)
+ - **Sürüm**  
+Uygulamanın sürüm numarası. İş kolu uygulamaları için, uygulamanın tam sürüm numarası görüntülenir. Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800)
+ - **Durum**  
+Uygulamanın durumu.
+ - **Durum ayrıntıları**  
+Durumun ayrıntıları.
+ - **Son iade etme**  
+Cihazın Intune ile son eşitlendiği tarih.
+
+
+### <a name="user-status"></a>Kullanıcı durumu
+
+Kullanıcı durumu. Kullanıcılar için uygulamanın yükleme durumunu görüntüleyen halka grafik. Cihaz durumu hakkındaki ayrıntı listesini açmak için grafiğe tıklayın. Ayrıntı tablosunda aşağıdaki sütunlar vardır:
+ - **Ad**  
+Kullanıcının Azure AD'deki adı.
+ - **Kullanıcı adı**  
+Kullanıcının benzersiz adı.
+ - **Yüklemeler**  
+Kullanıcı tarafından kullanılan uygulama yüklemelerinin sayısı.
+ - **Hatalar**  
+Kullanıcıya göre başarısız yükleme sayısı.
+ - **Yüklü değil**  
+Kullanıcıya göre yüklenmemiş uygulamaların sayısı.
+
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Intune verilerinizle çalışma hakkında daha fazla bilgi edinmek için bkz. [Intune Veri Ambarı'nı kullanma](reports-nav-create-intune-reports.md).

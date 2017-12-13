@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 115f32989cfbb991e097404c5297e7997f28f796
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: f46d9cc4fad54415aeea8deaf1b8daa0c274c1dc
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-legacy-macos-device-in-intune"></a>Eski macOS cihazınızı Intune’a kaydetme
 
@@ -28,7 +28,7 @@ Bu yönergeler, OS X Yosemite 10.10 ve öncesi sürümleri çalıştıran macOS 
 
 Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişerek işinizi yapmaya devam edebilirsiniz. İş için bir macOS cihazı kullanıyorsanız, __Yönetim Profili__ yüklemeniz gerekir. Bu yalnızca, şirketinizin destek birimi tarafından ayarlanan ve ayarlarla erişim bilgilerini Mac cihazınıza yükleyen bir dosyadır. Daha fazla bilgi edinmek istiyor musunuz? [Şirket Portalı uygulamasını yükler ve cihazınızı Intune'a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) sayfasını inceleyin.
 
-1. Cihazınızın __Dock__ bölümünde __Safari__'yi bulun, yeni bir pencere açın ve ardından [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) ziyaret edin.
+1. Cihazınızın __Dock__ bölümünde __Safari__'yi bulun, yeni bir pencere açın ve ardından [Şirket Portalı web sitesini](https://portal.manage.microsoft.com#HelpDeskDialog) ziyaret edin.
 2. İş veya okul hesabınızla Şirket Portalı web sitesinde oturum açın.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -66,4 +66,4 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişerek işinizi y
 
 Bazı profiller **Doğrulanmamış** olarak görüntülenebilir, şirketinizden oldukları sürece bu durum normaldir.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) ulaşabilirsiniz.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com#HelpDeskDialog) ulaşabilirsiniz.

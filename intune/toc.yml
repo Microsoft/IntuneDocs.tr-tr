@@ -89,8 +89,8 @@
           href: data-outside-protect.md
         - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
           href: data-leak-prevention.md
-        - name: KCG
-          href: byod-enable.md
+        - name: MDM ve MAM’i karşılaştırın
+          href: byod-technology-decisions.md
     - name: Geçiş kılavuzu
       href: migration-guide.md
       items:
@@ -164,8 +164,6 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Dağıtım Programı
               href: enrollment-autopilot.md
-            - name: Kayıt Durum Ekranı
-              href: windows-enrollment-status.md
         - name: Android kaydını ayarlama
           href: android-enroll.md
         - name: iOS kaydını ayarlama
@@ -286,6 +284,8 @@
               href: app-notification-settings-ios.md
             - name: iOS için paylaşılan cihazlar
               href: shared-device-settings-ios.md
+            - name: Intune'u iOS cihazında tekli oturum açma için yapılandırma
+              href: sso-ios.md
             - name: iOS için web filtresi ayarları
               href: web-content-filter-settings-ios.md
         - name: Cihaz kısıtlamalarını yapılandırma

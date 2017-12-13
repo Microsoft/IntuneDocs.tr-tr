@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 8e3805c46d357f5e07090a13d613751b7eab4c8a
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-your-pin-or-password"></a>PIN veya parolanızı ayarlama
 
@@ -28,9 +28,10 @@ ms.lasthandoff: 09/28/2017
 
 Bir PIN veya parola ayarlamak için aşağıdaki adımları kullanabilirsiniz.
 
-1.  **Ayarlar** &gt; **Güvenlik** &gt; **Ekran Kilidi** &gt; **Parola**’ya dokunun.
+1.  **Ayarlar** > **Güvenlik** > **Ekran Kilidi** > **Parola**’ya dokunun.
 
 2.  Yeni parolanızı seçin ve onaylayın.
 
+Bazı cihazlar için, ekran parolanızın yanı sıra başlangıç PIN'i ayarlamanız gerekebilir. Bu seçeneği etkinleştirmek için ayarlar uygulamanızda bir konum bularak bu sorunu gidermeyi deneyebilirsiniz. Örneğin, Samsung Galaxy S7’de, Güvenli Başlatma’yı **Ayarlar** > **Kilit Ekranı ve Güvenlik** > **Güvenli Başlatma** ekranına giderek etkinleştirirsiniz. Daha fazlasını [burada](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise) bulabilirsiniz. 
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

@@ -3,8 +3,8 @@ title: "Android için Intune cihaz kısıtlama ayarları"
 titlesuffix: Azure portal
 description: "Android cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 09/07/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ffddf9e5fcdf8359c729eb048a6f8052a1b3286f
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android ve Samsung KNOX Standard cihaz kısıtlama ayarları
 
@@ -42,7 +42,7 @@ Cihazları kuruluşunuzda yapılandırmak için bu ayarları bir Android cihaz k
 - **Ekran yakalama (yalnızca Samsung KNOX)** - Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
 - **Sesli yardımcı (yalnızca Samsung KNOX)** - Cihazda sesli yardım yazılımının kullanımına izin verir.
 - **YouTube (yalnızca Samsung KNOX)** - Cihazda YouTube uygulamasının kullanımına izin verir.
-- **Paylaşılan cihazlar** - Yönetilen bir Samsung KNOX Standard cihazını paylaşılan cihaz olarak yapılandırın. Bu modda, son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da yönetilmeye devam eder.<br>Oturum açan kullanıcılar kendilerine atanan uygulamalara ilkelere otomatik olarak erişir. Kullanıcılar oturumu kapattığında tüm veriler silinir.
+- **Paylaşılan cihazlar (yalnızca Samsung KNOX)** - Yönetilen bir Samsung KNOX Standard cihazını paylaşılan cihaz olarak yapılandırın. Bu modda, son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da yönetilmeye devam eder.<br>SCEP sertifika profiliyle birlikte kullanıldığında, bu özellik son kullanıcıların, tüm kullanıcılar için aynı uygulama kümesini içeren ancak kendi SCEP kullanıcı sertifikası olan bir cihazı paylaşmalarına olanak tanır.  Kullanıcılar oturumu kapattığında tüm veriler silinir.  Bu özellik yalnızca LOB uygulamalarıyla sınırlıdır.
 
 ## <a name="password"></a>Parola
 

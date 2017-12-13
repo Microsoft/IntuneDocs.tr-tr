@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3976327decf6b1850baed8e781609e458d375aa1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı uzaktan kilitleme
 
@@ -28,7 +28,7 @@ Kazalar olabilir ve bazen cihazlar kaybolabilir. Cihazınız kaybolur veya çal�
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-Cihazınızın güvende olması için [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) Uzaktan Kilitleme seçeneğini kullanarak cihazınızı kilitleyebilirsiniz. Uzaktan Kilitleme şunlar için çalışır:
+Cihazınızın güvende olması için [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog) Uzaktan Kilitleme seçeneğini kullanarak cihazınızı kilitleyebilirsiniz. Uzaktan Kilitleme şunlar için çalışır:
 
 * Android
 * iOS
@@ -38,7 +38,7 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](https://p
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Cihazınızı kilitlemek üzere Uzaktan Kilitleme’yi kullanmak için
 
-1.  [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
+1.  [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
 
   ![Giriş, Tüm Uygulamalar, Cihazlarım, Yardım Masası ve Oturumu Kapat düğmeleriyle ekranın sol tarafında genişletilmiş bir yan menü ile Şirket Portalı web sitesinin bir görüntüsü.](/media/iwp-expanded-sidebar.png)
 
@@ -65,4 +65,4 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](https://p
 
 Cihazınızı bulursanız ve Uzaktan Kilitleme kullandıktan sonra onun kilidini açmak istiyorsanız, tek yapmanız gereken geçiş kodunu girmektir.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

@@ -2,9 +2,9 @@
 title: "iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu"
 description: "iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini mobil uygulama yönetimi (MAM) biçiminde iOS uygulamanıza eklemenizi sağlar."
 keywords: 
-author: mattbriggs
+author: erikre
 manager: angrobe
-ms.author: mabriggs
+ms.author: erikre
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
-ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
+ms.openlocfilehash: 6ff0e98c710676c257822c14661e6908849ae053
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -172,9 +172,9 @@ Intune MAM Yapılandırıcı Aracı şunları güncelleştirmek için kullanıla
 * Uygulamanızın, -intunemam son ekiyle biten Info.plist dosyasındaki herhangi bir tanımlı URL düzeni.
 * Uygulamanızın Info.plist dosyasındaki herhangi bir tanımlı Belge türü, her öğenin “Belge İçeriği Türü UTI’leri” dizisi için her dizeye “com.microsoft.intune.mam” ön eki ile yinelenen bir giriş ekleyin. ekleyin.
 * Uygulamanızın yetkilendirilmelerinde tanımlı herhangi bir uygulama grubu, bu grupları AppGroupIdentitifiers anahtarı altındaki IntuneMAMSettings sözlüğüne bir dize dizisi olarak ekleyin.
-
     
->[!NOTE] Info.plist işlemesi yerine bu aracı kullanmaya karar verirseniz, uygulamanızın info.plist’inde veya yetkilendirilmelerinde değişiklikler yapıldığında aracı yeniden çalıştırmanızı öneririz.
+> [!Note]
+> Info.plist işlemesi yerine bu aracı kullanmaya karar verirseniz, uygulamanızın info.plist’inde veya yetkilendirilmelerinde değişiklikler yapıldığında aracı yeniden çalıştırmanızı öneririz.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Kimlik Doğrulama Kitaplığı'nı (ADAL) Yapılandırma
 

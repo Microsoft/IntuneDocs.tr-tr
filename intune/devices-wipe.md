@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
+ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
 
@@ -39,7 +39,21 @@ Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan ciha
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
 4. Fabrika sıfırlamasını uygulamak istediğiniz cihazın adını seçin.
-5. Cihazın adını gösteren dikey pencerede **Fabrika sıfırlaması**’nı seçin ve ardından onaylamak için **Evet**’i seçin.
+5. Cihazın adını gösteren dikey pencerede **Fabrika sıfırlaması**’nı seçin.
+6. Windows 10 sürüm 1709 veya üstünde, fazladan "Kayıt durumunu ve kullanıcı hesabını tut" seçeneği vardır. 
+    
+    |Fabrika sıfırlaması aracılığıyla tutuldu|Tutulmadı|
+    | -------------|------------|
+    |Cihazla ilişkilendirilen kullanıcı hesapları|Kullanıcı dosyaları|
+    |Makine durumu \(etki alanına katılım, Azure Active Directory'ye katılım)| Kullanıcı tarafından yüklenen uygulamalar \(mağaza ve Win32 uygulamaları)|
+    |MDM kaydı|Varsayılan olmayan cihaz ayarları|
+    |OEM tarafından yüklenen uygulamalar \(mağaza ve Win32 uygulamaları)||
+    |Kullanıcı profili||
+    |Kullanıcı profili dışındaki kullanıcı verileri||
+    |Kullanıcı otomatik oturum açma|| 
+    
+         
+7. Fabrika sıfırlamasını onaylamak için **Evet**'i seçin.
 
 Cihaz açık ve bağlı olduğu sürece, bir fabrika sıfırlaması komutunun tüm cihaz türlerine yayılması 15 dakikadan kısa sürer.
 
