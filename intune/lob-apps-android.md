@@ -15,11 +15,11 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca60013503820077b25328db1089d175f2fb6a73
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: 141d0499f055441ff099a5bec1c4ea695f77326c
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Android iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
 
@@ -69,7 +69,7 @@ Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygu
 
 ## <a name="step-5---update-a-line-of-business-app"></a>5. Adım - Bir iş kolu uygulamasını güncelleştirme
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)] Not: Yeni bir APK dosyasını cihaza başarılı bir şekilde dağıtmak için Intune hizmetinde APK paketinizdeki AndroidManifest.xml dosyasında android: versionCode dizesini artırmanız gerekir
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

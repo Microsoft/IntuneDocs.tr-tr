@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 162e2262067d38d792e23c8a98d52e81cf548bbe
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 2533146dcbb8261aba614c743a5220d4b693eb83
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>iOS cihazınızın işletim sistemi sürümü henüz desteklenmiyor
 
 Teknolojinin hızla gelişmesiyle, cihazınız bazı durumlarda şirketinizin destek biriminin sınama şansı edindiği cihazdan daha gelişmiş olabilir. En yeni iOS sürümü, şirketinizde kullanılan bazı diğer araçlar ile çalışmayabilir.
 
-Bu sorunu çözmek için şirketinizin destek birimine başvurmanız gerekecektir. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu sorunu çözmek için şirketinizin destek birimine başvurmanız gerekecektir. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

@@ -3,8 +3,8 @@ title: "Managed Browser uygulaması ile web erişimini yönetme"
 titlesuffix: Azure portal
 description: "Web’e gözatmayı ve web verilerinin başka uygulamalara aktarımını kısıtlamak için Managed Browser uygulamasını dağıtın.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/06/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
-ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
+ms.openlocfilehash: 7619efc305881f1ad56a7c14e5d92c05fb0c6d77
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile Managed Browser ilkelerini kullanarak İnternet erişimini yönetme
 
@@ -100,8 +100,9 @@ Intune Managed Browser ve [Azure AD Uygulama Proxy’si]( https://docs.microsoft
 
 - Dahili uygulamalarınızı Azure AD Uygulama Proxy’si aracılığıyla ayarlayın.
     - Uygulama Proxy’sini yapılandırmak ve uygulama yayımlamak için bkz. [kurulum belgeleri]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
-    - Managed Browser uygulamasının 1.2.0 veya üzeri bir sürümünü kullanıyor olmanız gerekir.
-    - Managed Browser uygulamasının kullanıcıları, uygulamaya atanmış bir [Intune uygulama koruma ilkesine]( app-protection-policy.md) sahiptir.
+- Managed Browser uygulamasının 1.2.0 veya üzeri bir sürümünü kullanıyor olmanız gerekir.
+- Managed Browser uygulamasının kullanıcıları, uygulamaya atanmış bir [Intune uygulama koruma ilkesine]( app-protection-policy.md) sahiptir.
+Not: Güncelleştirilmiş Uygulama Ara Sunucu’nun yeniden yönlendirme verilerinin Yönetilen Tarayıcı'da etkinleşmesi 24 saate kadar sürebilir.
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>1. adım: Outlook'tan Managed Browser’a otomatik yeniden yönlendirmeyi etkinleştirme
 Outlook’un, **Managed Browser’da görüntülenecek içeriği kısıtla** ayarına imkan veren bir uygulama koruma ilkesiyle yapılandırılması gereklidir.
@@ -218,6 +219,8 @@ Browser’ı ayrıca uygulama içerisinden de sorun giderme modunda açabilirsin
 1. Managed Browser’ı açın.
 2. Adres kutusuna `about:intunehelp` yazın.
 Browser sorun giderme modunda açılacaktır.
+
+Uygulama günlüklerinde saklanan ayarların bir listesi için, bkz. [Yönetilen Tarayıcı’da uygulama koruma günlüklerini inceleyin](app-protection-policy-settings-log.md).
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser için güvenlik ve gizlilik
 

@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
-ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
+ms.openlocfilehash: 98bc92eeba4c92a38aacf05f0eab1ea742dff031
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı sıfırlama
 
-Cihazınızı kaybolur veya çalınırsa, verilerinize yetkisiz erişimi önlemek için cihazı fabrika varsayılan ayarlarına sıfırlamak isteyebilirsiniz. [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) kullanarak cihazınızı uzaktan sıfırlayabilirsiniz. Şirket Portalı web sitesi, Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek için kullanabileceğiniz bir web sayfasıdır. Şirket Portalı uygulaması kullanırken yapabileceğiniz görevlerin çoğunu yapmak için bu web sitesini kullanabilirsiniz.
+Cihazınızı kaybolur veya çalınırsa, verilerinize yetkisiz erişimi önlemek için cihazı fabrika varsayılan ayarlarına sıfırlamak isteyebilirsiniz. [Şirket Portalı web sitesini](https://portal.manage.microsoft.com#HelpDeskDialog) kullanarak cihazınızı uzaktan sıfırlayabilirsiniz. Şirket Portalı web sitesi, Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek için kullanabileceğiniz bir web sayfasıdır. Şirket Portalı uygulaması kullanırken yapabileceğiniz görevlerin çoğunu yapmak için bu web sitesini kullanabilirsiniz.
 
 Cihazınızı sıfırlarsanız, cihaz artık Şirket Portalı'nda listelenmez ve fabrika varsayılan ayarlarına sıfırlanır.
 
@@ -33,7 +33,7 @@ Cihazınızı sıfırlarsanız, cihaz artık Şirket Portalı'nda listelenmez ve
 
 Cihazınızı sıfırlamak için:
 
-1.  [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) __menü__ düğmesine dokunun ve daha sonra __Cihazlarım__’ı seçin.
+1.  [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog) __menü__ düğmesine dokunun ve daha sonra __Cihazlarım__’ı seçin.
 
 2. __Cihazlarım__ sayfasında, yeniden adlandırmak istediğiniz cihazın adını seçin.
 
@@ -47,4 +47,4 @@ Cihazınızı sıfırlamak için:
 
 Cihazınız artık sıfırlanmıştır.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2fe506fc871dd331240823deff5045d2ed5e4dd1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 19f121e8dc1f8604f4eee77f1a6da7d3b4d5496c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>Cihazımda seri numarasını nasıl bulabilirim?
 
@@ -30,4 +30,4 @@ Cihazınızın seri numarası, cihazınızı benzersiz kılar ve cihazınızı y
 2. __Ayarlar__ uygulamasına ve __Genel__’e dokunun.
 3. __Hakkında__’ya dokunun ve __Seri Numarası__’na kaydırın.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

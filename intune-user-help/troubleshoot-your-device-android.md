@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Android cihazınızdaki yaygın sorunları çözme
 
-Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com) iletişim bilgilerini kullanarak şirketinizin destek birimine ulaşmanızı öneririz.
+Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com#HelpDeskDialog) iletişim bilgilerini kullanarak şirketinizin destek birimine ulaşmanızı öneririz.
 
 - [Android cihazınızda uyumluluk denetimi](check-compliance-on-your-device-android.md)
 - [Ayrıntılı günlük kaydı kullanarak şirketinizin destek birimine cihaz sorunlarını çözmede yardımcı olma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

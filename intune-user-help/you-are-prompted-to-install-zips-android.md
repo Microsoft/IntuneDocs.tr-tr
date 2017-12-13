@@ -14,11 +14,11 @@ ms.assetid: eb1884b2-d760-4a14-800b-378a33774a41
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 395afad276db8502896f6d903c8d97d1578ca5dd
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 5d151953ef2ccb5ae46c603be6073695f134f308
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Android cihazınıza Zimperium zIPS yükleme
 
@@ -56,4 +56,4 @@ Yüklemeyle ilgili bir sorun yaşarsanız bu konunun sonundaki sorun giderme ad�
 
 Bazen yükleme işlemleri kontrol edemeyeceğiniz teknik sorunlar nedeniyle başarısız olabilir. Böyle bir durumda Zimperium zIPS’i [Play Store’dan el ile](https://play.google.com/store/apps/details?id=com.zimperium.zips) yüklemeyi deneyin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

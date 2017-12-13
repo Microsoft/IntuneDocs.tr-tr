@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 8ad13a8534f142ec97fc15759bf863e04c36d266
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Android cihazınızı şifreleme kullanarak koruma
 
 Bir cihazı şifrelediğinizde cihazdaki bilgileri, yetkisiz kişilerin erişmesini engelleyen koruyucu bir kod katmanı içine sarmalamış olursunuz. Bilgilerinizin güvende olduğundan emin olmak için kuruluşunuz; şirket dosyalarına, e-postalara veya verilere erişebilmeniz için Android cihazınızı şifrelemenizi istiyor.
 
 > [!Note]
-> Şirketinizin destek birimi gerekli kılmışsa, şifrelemeden önce bir PIN veya parola ayarlamanız istenebilir.
+> Bazı Huawei ve Vivo ve OPPO, tarafından yapılan belirli Android cihazlar şifrelenemez. Daha fazla bilgiyi [burada](your-device-appears-encrypted-but-cp-says-otherwise-android.md) bulabilirsiniz.
 
 Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 
@@ -37,9 +37,6 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
     (Bazı telefonlarda, “Şifrele” seçeneğini bulmak için **Depolama** > **Depolama şifresi** veya **Depolama** > **Kilit ekranı ve güvenlik** > **Diğer güvenlik ayarları**’nı seçmeniz gerekebilir).
 
 3.  Ekrandaki yönergeleri takip edin. Şifreleme sırasında, cihazınız birkaç kere yeniden başlatılabilir.
-
-> [!Note]
-> Belirli Android cihazlar şifrelenemez. Daha fazla bilgiyi [burada](your-device-appears-encrypted-but-cp-says-otherwise-android.md) bulabilirsiniz.
 
 ### <a name="what-to-do-if-you-have-issues"></a>Sorunlarınız varsa yapmanız gerekenler
 **Sorun**: Cihazınızı zaten şifrelediyseniz ve aşağıdakilerden biriyle karşılaşıyorsanız:
@@ -66,4 +63,4 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 
     6. Cihazınızda Şirket Portalı uygulamasını açın ve **Uyumluluğu Denetle**’yi seçin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.

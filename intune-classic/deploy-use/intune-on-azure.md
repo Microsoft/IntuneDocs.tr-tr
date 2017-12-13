@@ -1,0 +1,66 @@
+---
+title: "Inture on Azure ile Windows cihazlarını yönetirken dikkat edilmesi gerekenler"
+description: "Azure'de Intune'u kuruluşunuzdaki Windows cihazlarını yönetmek için kullanırken dikkat edilecek hususlar."
+keywords: 
+author: ErikjeMS
+ms.author: erikje
+manager: angrobe
+ms.date: 11/14/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 
+ms.reviewer: owenyen
+ms.suite: ems
+ms.custom: intune-classic
+ms.openlocfilehash: f4018f505626b05dc84be509ca1e42cefff94b90
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 11/14/2017
+---
+# <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure konsolu ve eski Intune PC İstemcisi'ndeki Intune
+
+Intune yakın bir zamanda Azure tabanlı SaaS uygulama hizmeti mimarisi altına taşındı. Azure, ölçek, kapasite ve performans açısından önemli gelişmeler sağlar. Bu geçiş, Azure portalında gelişmiş Intune yönetim deneyimleri ve iyileştirilmiş iş akışları da sunar. 
+
+Kuruluşunuzun Windows aygıtlarını yönetmek için Azure'de Intune kullanırken, aşağıdaki noktaları göz önünde bulundurun:
+
+## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Eski PC İstemcisi özellikleri yalnızca Silverlight konsolunda bulunur
+
+Intune PC İstemci yönetimi iş akışları, [Silverlight tabanlı Intune Yönetici Konsolu](https://manage.microsoft.com/)'nu kullanır; bu da aşağıdaki sonuçları doğurur:
+
+- Intune bilgisayar istemcisini kullanarak tüm gruplandırma olmayan yönetim görevleri için Silverlight konsolunu kullanmanız gerekir.
+- Grupları yönetirken [Intune on Azure portal](https://portal.azure.com/)'ı kullanmalısınız. Bu gereklilik, Intune artık eski Intune Grupları yerine Azure AD Gruplarını kullandığı için ortaya çıkar. 
+
+Azure AD Gruplarına geçiş nedeniyle, Silverlight konsolu gösterge panosu görünümlerinde "grup tabanlı" filtreleme biraz değişti. Güncelleştirilmiş Silverlight Arabiriminde filtre uygulamak için şu adımları izleyin:
+
+1. Bir görünüm seçin.
+2. **Filtreler** kutusuna filtrelemek istediğiniz grubun adını girin ve enter tuşuna basın. Bu liste görünümü belirli bu gruptaki cihazlar için filtre uygular.
+
+   ![](media/intune_on_azure/image01.png)
+
+## <a name="manage-windows-10-devices-by-using-mdm"></a>MDM kullanarak Windows 10 cihazları yönetme
+
+Eski Intune PC istemcisini kullanmak yerine Windows 10 cihazlarınızı yönetmek için [Mobil Cihaz Yönetimi'ni (MDM)](https://docs.microsoft.com/intune/device-restrictions-windows-10) kullanmanızı öneririz. MDM aracılığıyla Windows 10'u yönetme olanağı Intune on Azure portalında bulunur. Windows 10 MDM, eski Intune PC istemcisi aracılığıyla bulunmayan pek çok yeni yönetim ve güvenlik özelliği sunar.
+
+## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Intune PC Client'ı kullanarak Windows 7'yi yönetmeye devam etme
+
+MDM kullanarak yönetilemeyen Windows 7 için yalnızca var olan Silverlight konsolundaki Intune PC Client özelliklerini desteklemeye devam edeceğiz. Windows 10'a yükselttiğinizde MDM yönetimine geçmeyi düşünün.
+
+## <a name="mdm-capabilities"></a>MDM Özellikleri
+
+PC İstemcisi ve MDM özellikleri arasında ayrıntılı bir karşılaştırma için bkz. [Windows PC'leri bilgisayarlar veya mobil cihazlar olarak yönetmeyi karşılaştırma](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison). MDM güncellemeleri, Win 32 uygulamaları için seçenekler de dahil olmak üzere MDM'ye kaydolan Windows 10 cihazlarına yeni yönetim özellikleri getirmeye devam edecektir. Hizmete en son sürüm eklemeleri için [Yenilikler](https://docs.microsoft.com/intune/whats-new)'i görüntüleyin.
+
+## <a name="switch-from-pc-client-to-mdm"></a>PC istemciden MDM’ye geçiş yapmak için
+
+Intune PC İstemcisi ile Windows 10 cihazlarını yönetmekten MDM ile yönetime geçiş yapmak için şu adımları izleyin:
+
+1. Silverlight konsolunda, cihazın kaydını PC İstemcisi'nden kaldırmak için bir **Seçmeli silme** gerçekleştirin.
+  ![](media/intune_on_azure/image02.png)
+2. [MDM (ve/veya Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll)'i kullanarak cihazı yeniden kaydedin. 
+
+## <a name="next-steps"></a>Sonraki adımlar
+[Windows cihazlarını kaydetme](https://docs.microsoft.com/intune/windows-enroll)
+
+ 

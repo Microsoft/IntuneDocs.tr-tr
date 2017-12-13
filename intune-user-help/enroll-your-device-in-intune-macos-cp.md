@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 1559692de1a8c9c356a3f5b30e80d1abd31853d2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
@@ -29,7 +29,7 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişmek; işinizi y
 > [!NOTE]
 > Öncekii macOS sürümlerini çalıştıran macOS cihazları kaydetme yönergelerini [burada](enroll-your-device-in-intune-macos-legacy.md) bulabilirsiniz.
 
-1. Cihazınızın __Dock__ bölümünde __Safari__'yi bulun, yeni bir pencere açın ve ardından [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) ziyaret edin.
+1. Cihazınızın __Dock__ bölümünde __Safari__'yi bulun, yeni bir pencere açın ve ardından [Şirket Portalı web sitesini](https://portal.manage.microsoft.com#HelpDeskDialog) ziyaret edin.
 
 2. İş veya okul hesabınızla Şirket Portalı web sitesinde oturum açın.
 
@@ -62,4 +62,4 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişmek; işinizi y
 
 11. Mac’iniz yönetime kaydedilmeye başlar. Bu sırada bilgisayarınızın oturum açma bilgilerini sağlamanız istenebilir. Bu kayıt birkaç dakika sürebilir. Bu süre boyunca bilgisayarınızda başka şeyler yapabilirsiniz. Şirket Portalı Kurulumu tamamlandıktan sonra işiniz bittiğine dair bir ileti alırsınız.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) ulaşabilirsiniz.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com#HelpDeskDialog) ulaşabilirsiniz.

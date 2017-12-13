@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4fad2b78b8224fc1a90ad8c81d350917b17e3d57
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 1b0d1df8e34a6a942a3fbb16baba4311fc1083d4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-enable-code-integrity"></a>Kod Bütünlüğünü etkinleştirmeniz gerekiyor
 
@@ -33,4 +33,4 @@ Sisteminizde Güvenli Önyükleme etkin bir şekilde kullanılıyorsa Kod Bütü
 
 Devam etme konusunda kendinize güveniyorsanız [Güvenli Önyüklemeyi Devre Dışı Bırakma](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) sayfasındaki “Güvenli Önyüklemeyi yeniden etkinleştirmek için” bölümüne bakarak Güvenli Önyüklemeyi kendi başınıza etkinleştirmeyi deneyebilirsiniz.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

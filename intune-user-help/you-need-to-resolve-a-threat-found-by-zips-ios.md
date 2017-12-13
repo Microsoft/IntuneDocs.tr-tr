@@ -14,11 +14,11 @@ ms.assetid: eaccd9c0-cd46-48e2-8675-4c022c74f672
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6b435156b89bf0ba55e83158c2c5ac62c590cdf4
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 32bd0436c6d883bb351a4e00bda181ab820a94d4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>Zimperium zIPS’in bulduğu bir tehdidi çözmeniz gerekiyor
 
@@ -30,7 +30,7 @@ Bu sorunu düzeltmek için Zimperium zIPS uygulamasını açın ve uygulamada g�
 
 Kayıtlı cihazınızda virüs veya başka bir güvenlik tehdidi varsa ve şirket e-postanıza veya dosyalarınıza erişmeyi denerseniz, Zimperium zIPS’ten gelen bir ileti sizden harekete geçmenizi ister.
 
-Sorunu düzeltmek için yönergeler göreceğiniz [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) gitmek için **cihaz yönetim portalı** bağlantısına dokunun.
+Sorunu düzeltmek için yönergeler göreceğiniz [Şirket Portalı web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) gitmek için **cihaz yönetim portalı** bağlantısına dokunun.
 
 ## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Zimperium zIPS’in tehdit olarak gördüğü bir uygulama örneği
 
@@ -38,4 +38,4 @@ Zimperium zIPS’in tehdit olarak gördüğü bir uygulama yüklediyseniz, uygul
 
 Böyle bir durumda, şirket e-postanıza ve verilerinize derhal erişim elde etmek için uygulamayı kaldırın. Uygulamayı kaldırmazsanız, kaldırana kadar e-posta ve verilerinize erişimi kaybedersiniz.
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

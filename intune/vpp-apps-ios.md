@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,35 +15,37 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b2f2e174c459508dc30a63ab9de3bf1cc069173
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-iOS uygulama deposu, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak sağlar. Bir uygulamanın birden fazla kopyasını satın almak, uygulamaların satın alınmış birden fazla kopyasını izlemenin getirdiği ek yönetim yükünü azaltmanıza yardımcı olur.
+iOS uygulama deposu, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak sağlar. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur.
 
-Microsoft Intune, bu program aracılığıyla satın aldığınız uygulamaları yönetmenize şu şekilde yardımcı olur:
+Microsoft Intune, bu program aracılığıyla satın aldığınız birden fazla kopyayı yönetmenize şu şekilde yardımcı olur:
 
-- Uygulama mağazasından lisans bilgilerini raporlama
-- Kaç lisans kullandığınızı izleme
-- Uygulamanın sahip olduğunuzdan daha fazla kopyasını yüklemenizi engelleme
+- Uygulama mağazasından lisans bilgilerini raporlama.
+- Kaç lisans kullandığınızı izleme.
+- Uygulamanın sahip olduğunuzdan daha fazla kopyasını yüklemenizi engelleme.
 
 Toplu satın alınan uygulamaları atamak için kullanabileceğiniz iki yöntem vardır:
 
 ### <a name="device-licensing"></a>Cihaz lisanslama
 
-Cihazlara bir uygulama atadığınızda yalnızca bir uygulama lisansı kullanılır ve bu lisans, atadığınız cihazla ilişkili olur.
+Cihazlara bir uygulama atadığınızda yalnızca bir uygulama lisansı kullanılır ve bu lisans, atadığınız cihazla ilişkili olur. 
+
 Bir cihaza toplu satın alınan uygulamalar atadığınızda, cihaz son kullanıcısının mağazaya erişmek için bir Apple kimliği belirtmesi gerekmez. 
 
 ### <a name="user-licensing"></a>Kullanıcı lisanslama
 
 Bir kullanıcıya uygulama atadığınızda yalnızca bir uygulama lisansı kullanılır ve bu lisans kullanıcıyla ilişkilendirilir. Uygulama, kullanıcının sahip olduğu birden fazla cihazda (Apple tarafından denetlenen bir sınır ile) çalıştırılabilir.
+
 Kullanıcılara toplu satın alınan uygulamalar atadığınızda, tüm son kullanıcılar mağazaya erişmek için geçerli ve benzersiz bir Apple kimliği belirtmek zorundadır.
 
 Ayrıca, Apple Volume Purchase Program (VPP) mağazasından satın aldığınız kitapları Intune ile eşitleyebilir, yönetebilir ve atayabilirsiniz. Daha fazla bilgi için bkz. [Bir toplu satın alma programı aracılığıyla satın aldığınız iOS e-Kitaplarını yönetme](vpp-ebooks-ios.md).
@@ -97,9 +99,6 @@ Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
 
 İstediğiniz zaman **Şimdi eşitle**’yi seçerek Apple tarafından tutulan verileri Intune ile eşitleyebilirsiniz.
 
-> [!NOTE]
-> Microsoft Intune, yalnızca iTunes Store aracılığıyla herkese açık uygulamaların bilgilerini eşitleyebilir. **iOS için Özel B2B Uygulamaları** henüz desteklenmemektedir. Senaryonuz bu tür uygulamaları hedefliyorsa uygulama bilgileri eşitlenmez.
-
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
 1.  **Intune** dikey penceresinde **Yönet** altında bulunan **Mobil uygulamalar** > **Uygulamalar**’ı seçin.
@@ -134,7 +133,7 @@ Son kullanıcı, birkaç senaryoda VPP uygulama yüklemesi için istem alır. A�
 
 ## <a name="further-information"></a>Daha fazla bilgi
 
-Bir lisansı geri kazanmak için atama eylemini Kaldır olarak değiştirmeniz gerekir. Uygulama kaldırıldıktan sonra lisans geri kazanılır. Kullanıcıya atanmış bir uygulamayı kaldırırsanız Intune, bu kullanıcı ile ilişkili tüm uygulama lisanslarını geri almaya çalışır.
+Lisansı geri kazanmak için atama eylemini **Kaldır** olarak değiştirmeniz gerekir. Uygulama kaldırıldıktan sonra lisans geri kazanılır. Kullanıcıya atanmış bir uygulamayı kaldırırsanız Intune, bu kullanıcı ile ilişkili tüm uygulama lisanslarını geri almaya çalışır.
 
 Uygun cihaza sahip bir kullanıcı, bir VPP uygulamasını cihaza ilk kez yüklemeye çalıştığında, kullanıcıdan Apple Volume Purchase Program’e katılması istenir. Uygulamanın yüklenmeye devam etmesi için önce katılmaları gerekir. Apple Volume Purchase programına katılma daveti, kullanıcının, iOS cihazında iTunes uygulamasını kullanabilmesini gerektirir. iTunes Store uygulamasını devre dışı bırakmak için bir ilke belirlediyseniz VPP uygulamaları için kullanıcı tabanlı lisanslama çalışmaz. Çözüm, ilkeyi kaldırarak iTunes uygulamasına izin vermek veya cihaz tabanlı lisanslama kullanmaktır.
 

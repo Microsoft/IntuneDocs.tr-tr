@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
@@ -192,8 +192,9 @@ Uygulamanın bu şekilde nasıl imzalanıp dağıtılacağı aşağıda açıkla
 
 |Parametre | Açıklama|
 | ------------- | ------------- |
-|InputWin10AppxBundle |Kaynak appxbundle dosyasının bulunduğu konumun yolu |
-|OutputWin10AppxBundle |İmzalı appxbundle dosyası için çıkış yolu.  Win81Appx Windows 8.1 veya Windows Phone 8.1 Şirket Portalı (. APPX) dosyasının bulunduğu konumun yolu.|
+|InputWin10AppxBundle |Kaynak appxbundle dosyasının bulunduğu yol. |
+|OutputWin10AppxBundle |İmzalı appxbundle dosyası için çıkış yolu. |
+|Win81Appx | Windows 8.1 veya Windows Phone 8.1 Şirket Portalı (.APPX) dosyasının bulunduğu yol.|
 |PfxFilePath |Symantec Enterprise Mobil Kod İmza Sertifikası (.PFX) dosyasının yolu. |
 |PfxPassword| Symantec Enterprise Mobil Kod İmza Sertifikası’nın parolası. |
 |PublisherId |Kuruluşun Yayımcı Kimliği. Yoksa, Symantec Kurumsal Mobil Kod İmzalama Sertifikası’nın 'Konu' alanı kullanılır.|

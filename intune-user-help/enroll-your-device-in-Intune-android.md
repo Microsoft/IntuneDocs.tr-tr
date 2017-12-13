@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 621468db51e7e6172d142501a4637794e4cb57b8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android cihazınızı Intune’a kaydetme
 
@@ -92,7 +92,7 @@ Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi �
 
     Anımsanması gereken önemli nokta, bunların güvenlik adına alınan önlemler olduğudur. Şirketinizin destek birimi gizliliğinizi ihlal etmeye ve hiç nedensiz bilgilerinizi silmeye çalışmaz; ancak şirket verilerinin güvenlik altında olduğundan emin olmak ister.
 
-    Bu ileti Microsoft’un denetiminde değildir ve iletide kullanılan ifadenin biraz sert göründüğünün farkındayız. Şirket Portalı’nın yalnızca kuruluşunuzla ilgili olan kısıtlamaları ve erişimi göstermesinin bir yolu yoktur. Bunların tümü, bu ekranda aynı anda verilir. Kendi kuruluşunuzun kullanımına özgü sorularınız varsa, daha fazla bilgi edinmek için [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com) iletişim bilgilerini kullanarak şirketinizin destek birimiyle bağlantı kurun.
+    Bu ileti Microsoft’un denetiminde değildir ve iletide kullanılan ifadenin biraz sert göründüğünün farkındayız. Şirket Portalı’nın yalnızca kuruluşunuzla ilgili olan kısıtlamaları ve erişimi göstermesinin bir yolu yoktur. Bunların tümü, bu ekranda aynı anda verilir. Kendi kuruluşunuzun kullanımına özgü sorularınız varsa, daha fazla bilgi edinmek için [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com#HelpDeskDialog) iletişim bilgilerini kullanarak şirketinizin destek birimiyle bağlantı kurun.
 
 12.  Yönergeleri izleyerek PIN’i veya parolayı girin. Bu cihazda zaten bir PIN veya parola ayarladıysanız, bu ekranı görmezsiniz ya da yeni bir PIN veya parola girmeniz gerekmez.
 
@@ -129,4 +129,4 @@ Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi �
 
 Cihazınızı Intune’a kaydetmeye çalışırken bir hata alırsanız [şirketinizin destek birimine kayıt hataları gönderebilirsiniz](send-enrollment-errors-to-your-it-admin-android.md).
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.

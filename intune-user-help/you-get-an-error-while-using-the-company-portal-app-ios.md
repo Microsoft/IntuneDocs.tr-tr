@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 407ef838fca1f47a191b5a99648dcc68433621f6
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 55fd0e87545666220721c4e874bcf0cc6e9b5e88
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Şirket Portalı uygulamasını kullanırken bir hata iletisi alıyorsunuz
 
@@ -32,4 +32,4 @@ iOS cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsanız 
 
 -   Şirket Portalı uygulamasındayken cihazınızı sallayın ve ardından tanılama uyarısı görüntülendiğinde **E-posta**’ya dokunun. Cihazı salladığınızda uyarı görüntülenmezse **Ayarlar** > **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

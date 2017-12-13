@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4a771416273ee29d0b44cb74b6b32d9535e43e41
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android cihazınızda şirketinizin destek biriminin gerekli kıldığı bir sertifika eksik
 
@@ -35,9 +35,9 @@ Bu sorunu düzeltmek ve gerekli sertifikayı almak için uygulamanız gereken ik
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Bir şirket veya okul bilgisayarına bakarak eksik sertifikayı belirleme
 
-1. Bir bilgisayarda Internet Explorer’ı açın. Bu amaçla kullanabileceğiniz bir bilgisayarınız yoksa, şirketinizin destek birimine başvurun. Şirketinizin destek biriminin iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) bakın.
+1. Bir bilgisayarda Internet Explorer’ı açın. Bu amaçla kullanabileceğiniz bir bilgisayarınız yoksa, şirketinizin destek birimine başvurun. Şirketinizin destek biriminin iletişim bilgileri için [Şirket Portalı web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
 
-2. [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) gidin ve iş veya okul kimlik bilgilerinizle oturum açın.
+2. [Şirket Portalı web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) gidin ve iş veya okul kimlik bilgilerinizle oturum açın.
 
 3. Tarayıcı adres çubuğunun sağ ucunda, aşağıdaki ekran görüntüsünde gösterildiği gibi asma kilide benzeyen simgeyi seçin.
 
@@ -69,4 +69,4 @@ Bu sorunu düzeltmek ve gerekli sertifikayı almak için uygulamanız gereken ik
 
 7. Şirket Portalı uygulamasını yeniden açın. Artık Şirket Portalı uygulamasında oturum açabilmeniz gerekir. Yardıma ihtiyacınız olursa şirketinizin destek birimiyle iletişime geçin.
 
-Önceki gösterilenle aynı “eksik sertifika” iletisini görüyorsanız ve yordamı zaten izlediyseniz, büyük olasılıkla şirketinizin destek biriminin yüklemenize yardımcı olması gereken bir sertifika daha vardır. Yardım için [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) bulunan iletişim bilgilerini kullanarak şirketinizin destek birimine başvurun.
+Önceki gösterilenle aynı “eksik sertifika” iletisini görüyorsanız ve yordamı zaten izlediyseniz, büyük olasılıkla şirketinizin destek biriminin yüklemenize yardımcı olması gereken bir sertifika daha vardır. Yardım için [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog) bulunan iletişim bilgilerini kullanarak şirketinizin destek birimine başvurun.

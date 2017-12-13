@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: a9da0ecabadc856c54bc8c10ec71520d549ca50c
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 17d8fd46e46586510bed2f95c502f89ae67c95be
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Windows cihazınızdaki yaygın sorunları çözme
 
-Bazen Windows cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com) iletişim bilgilerini kullanarak şirketinizin destek birimine ulaşmanızı öneririz.
+Bazen Windows cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com#HelpDeskDialog) iletişim bilgilerini kullanarak şirketinizin destek birimine ulaşmanızı öneririz.
 
 - [Windows 10 cihazımı kaydedemiyorum](troubleshoot-your-windows-10-device-windows.md)
 - [Windows cihazımı güncelleştirmem gerekiyor](you-need-to-update-your-windows-device.md)
