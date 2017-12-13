@@ -552,6 +552,8 @@
   items:
     - name: Kullanıcıların sorunları gidermesine yardımcı olma
       href: help-desk-operators.md
+    - name: Intune etkinlikleri için denetleme günlükleri
+      href: monitor-audit-logs.md
     - name: Intune Veri Ambarını kullanma
       href: reports-nav-create-intune-reports.md
       items:
