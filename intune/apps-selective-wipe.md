@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/07/2016
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9aeb3525016bf820dc23402659c2c953143385c9
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 206aef4185934448418d7b080ab94af94e792e74
+ms.sourcegitcommit: ad97d658682bf563638521856931e2709e40e14b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune tarafından yönetilen uygulamalardan kurumsal verileri temizleme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıldığında, şirket uygulama verilerinin cihazdan kaldırıldığından emin olmak istersiniz. Ancak, özellikle de çalışanın kendi cihazından kişisel verilerin kaldırılmasını istemeyebilirsiniz.
+
+>[!NOTE]
+> Şu anda Intune yönetilen uygulamalarından şirket verilerinin silinmesini destekleyen iki platform iOS ve Android platformlarıdır.
 
 Şirket uygulaması verilerini seçmeli olarak silmek için bu konu başlığındaki adımları kullanarak bir silme isteği oluşturun. İstek tamamlandıktan sonra, uygulama cihaz üzerinde ilk kez çalıştığında şirket verileri uygulamadan kaldırılır.
 
@@ -36,11 +39,11 @@ Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıld�
 
 1.  [Azure portalı](https://portal.azure.com)’nda oturum açın.
 
-2.  **Diğer Hizmetler**’i seçin, filtre metin kutusuna **Intune** yazın ve **Intune**’u seçin. Intune dikey penceresi açıldığında, **Uygulamaları yönet** dikey penceresini seçin.
+2.  **Diğer Hizmetler**’i seçin, filtre metin kutusuna **Intune** yazın ve **Intune**’u seçin. Intune dikey penceresi açıldığında, **Mobil uygulamalar** dikey penceresini seçin.
 
-    ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](./media/intune-azure-preview-blade.png)
+    ![Microsoft Intune dikey penceresinin ekran görüntüsü](./media/apps-selective-wipe01.png)
 
-3.  **Mobil Uygulamalar** dikey penceresinde **Yeni temizleme isteği**’ni seçin. **Yeni temizleme isteği** dikey penceresi açılır.
+3.  **Mobil uygulamalar** dikey penceresinde **Uygulama seçmeli silme**’yi seçin.
 
 4.  **Yeni temizleme isteği**’ni seçin. **Yeni temizleme isteği** dikey penceresi açılır.
 
@@ -48,9 +51,9 @@ Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıld�
 
 5.  **Kullanıcı**'yı seçerek **Kullanıcı** dikey penceresini açın ve uygulama verilerini temizlemek istediğiniz kullanıcıyı seçin.
 
-6.  **Cihaz**’ı seçin. Bu, seçilen kullanıcıyla ilişkilendirilmiş tüm cihazları listeleyen ve aynı zamanda biri cihaz adı (kullanıcı tarafından tanımlanan kolay ad) ve diğeri de cihaz türü (cihaz platformu) olmak üzere iki sütun sağlayan **Cihaz** dikey penceresini açar. Silmek istediğiniz cihazı seçin.
+6.  Ardından, **Yeni temizleme isteği** dikey penceresinde **Cihaz**'ı seçin. Bu, seçilen kullanıcıyla ilişkilendirilmiş tüm cihazları listeleyen ve aynı zamanda biri cihaz adı (kullanıcı tarafından tanımlanan kolay ad) ve diğeri de cihaz türü (cihaz platformu) olmak üzere iki sütun sağlayan **Cihaz Seç** dikey penceresini açar. Silmek istediğiniz cihazı seçin.
 
-7.  Şimdi **Yeni temizleme isteği** dikey penceresine geri dönersiniz. Temizleme isteğinde bulunmak için **Tamam**’ı seçin. 
+7.  Şimdi **Yeni temizleme isteği** dikey penceresine geri dönersiniz. Temizleme isteğinde bulunmak için **Tamam**’ı seçin.
 
 Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur ve bu isteklerle temizleme isteği ile ilişkilendirilmiş kullanıcıyı izler.
 
@@ -58,9 +61,9 @@ Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur 
 
 Temizleme isteğinin genel durumunu gösteren ve bekleyen isteklerle hataların sayısını içeren bir özet raporunuz olabilir. Daha fazla bilgi almak için şu adımları izleyin:
 
-1.  **Mobil Uygulamalar - Uygulama Seçmeli Silme** dikey penceresinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
+1.  **Mobil Uygulamalar - Uygulama seçmeli silme** dikey penceresinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
 
-    ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](./media/wipe-request-status-1.png)
+    ![Uygulama seçmeli silme dikey penceresinde temizleme isteği durumunun ekran görüntüsü](./media/wipe-request-status-1.png)
 
 Buna ek olarak, cihaz adını ve cihaz türünü görebilirsiniz; bunlar raporları okurken yararlı olabilir.
 
@@ -71,11 +74,11 @@ Buna ek olarak, cihaz adını ve cihaz türünü görebilirsiniz; bunlar raporla
 
 Bekleme durumundaki silmeler, siz bunları elle silinceye kadar görüntülenir.  Temizleme isteğini el ile silmek için:
 
-1.  **Silme isteği** dikey penceresinde, **Silme isteği** dikey penceresini açmak için **Silme isteği**kutucuğunu seçin.
+1.  **Mobil Uygulamalar - Uygulama seçmeli silme** dikey penceresinde.
 
-2.  Silmek istediğiniz temizleme isteğine sağ tıklayın ve **Temizleme isteğini sil**’i seçin.
+2.  Listede silmek istediğiniz temizleme isteğine sağ tıklayın ve **Temizleme isteğini sil**’i seçin.
 
-    ![Yeni temizleme isteği dikey penceresinin ekran görüntüsü](./media/delete-wipe-request.png)
+    ![Uygulama seçmeli silme dikey penceresinde temizleme isteği listesinin ekran görüntüsü](./media/delete-wipe-request.png)
 
 3.  Silme işlemini onaylamanız istenir; **Evet** veya **Hayır**’ı seçin, sonra da **Tamam**’a tıklayın.
 

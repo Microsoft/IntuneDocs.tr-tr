@@ -1,11 +1,11 @@
 ---
-title: "Bu cihaz biraz farklı | Microsoft Docs"
+title: "Jamf Self Service kullanıyorsanız görebileceğiniz hatalar | Microsoft Docs"
 description: "Jamf tarafından yönetilen Intune etkin macOS cihazınız hakkında bilgi edinin."
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 14db11738b1ef34a9180515e5f909ff1960bfbb0
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 080bc7c287dcc068ac18a3aec60295e777840368
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Jamf tarafından yönetilen macOS cihazda eylem gerçekleştirme
 
@@ -28,4 +28,8 @@ ms.lasthandoff: 11/08/2017
 
 Jamf tarafından yönetilen ve uyumluluk sorunları olan macOS cihazdaysanız **Çözümle**’ye tıklayarak **Self Servis**’i başlatın.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) ulaşabilirsiniz.
+__"AccountNotOnboarded" veya "Cihaz zaten kayıtlı" görüyorsanız ne yapmalısınız?__
+
+Şirket Portalı uygulamasını açtıysanız ve "AccountNotOnboarded" iletisi gösteriliyorsa, Şirket Portalı uygulamasından çıkmanız ve **Uygulamalar** > **Self Servis**'e gitmeniz gerekir. Şirketinizin, yüklemeniz gereken bir cihaz kayıt ilkesi olacaktır. İlkeyi yüklemek için tıklayın ve ardından Şirket Portalı'nı yeniden açın.
+
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com#HelpDeskDialog) ulaşabilirsiniz.

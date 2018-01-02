@@ -1,9 +1,9 @@
 ---
-title: "Windows ve Windows Phone için dışarıdan yükleme uygulamaları"
+title: "Intune için Windows ve Windows Phone uygulamalarını dışarıdan yükleme"
 description: "Intune'u kullanarak dağıtmak için iş kolu uygulamalarını nasıl imzalayacağınızı öğrenin."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
-ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
+ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
@@ -31,8 +31,8 @@ Intune yöneticisi olarak Şirket Portalı uygulaması dahil olmak üzere iş ko
 Aşağıdaki adımlar, gerekli sertifikayı almanıza ve uygulamaları imzalamanıza yardımcı olur. Microsoft geliştiricisi olarak kaydolmanız ve ardından Symantec sertifikası satın almanız gerekir.
 
 
-1. **Microsoft geliştiricisi olarak kaydolma**<br>Şirket hesabınızı satın alırken oturum açtığınız kurumsal hesap bilgilerini kullanarak 
-   [bir Microsoft geliştiricisi olarak kaydolun](http://go.microsoft.com/fwlink/?LinkId=268442). Bu istek, kod imzalama sertifikası sizin tarafınızdan alınmadan önce bir şirket yetkilisi tarafından yetkilendirilmelidir.
+1. **Microsoft geliştiricisi olarak kaydolma**<br>
+   Şirket hesabınızı satın alırken oturum açtığınız kurumsal hesap bilgilerini kullanarak [bir Microsoft geliştiricisi olarak kaydolun](http://go.microsoft.com/fwlink/?LinkId=268442). Bu istek, kod imzalama sertifikası sizin tarafınızdan alınmadan önce bir şirket yetkilisi tarafından yetkilendirilmelidir.
 
 2. **Şirket Symantec sertifikası alma**<br>
   Symantec ID'nizi kullanarak [Symantec web sitesinden](http://go.microsoft.com/fwlink/?LinkId=268441) bir sertifika satın alın. Sertifikayı satın aldıktan sonra, Microsoft geliştiricisi olarak kaydolurken belirlediğiniz kurum onay sorumlusu sertifika isteğini onaylamasını isteyen bir e-posta alır. Symantec sertifika gereksinimi hakkında daha fazla bilgi için bkz. [Windows Phone neden Symantec sertifikası gerektiriyor?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows cihaz kaydı SSS.
