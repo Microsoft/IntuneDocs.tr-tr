@@ -15,11 +15,11 @@ ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3adc3c01d4657accfdb5cd70970ff191d06a9aef
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 85eb19a07ce42dcaf61ce34637644761880cb0b9
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="automate-actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemleri otomatikleştirme
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 10/23/2017
 
 İki tür eylem vardır:
 
--   **Son kullanıcıları e-posta ile bilgilendir**: Son kullanıcıya göndermeden önce e-posta bildiriminizi özelleştirebilirsiniz. Intune konu, ileti gövdesi, şirket logosunun dahil edilmesi, iletişim bilgileri ve ek alıcılar ile ilgili özelleştirme yapılmasına olanak sağlar.
+-   **Son kullanıcıları e-posta ile bilgilendir**: Son kullanıcıya göndermeden önce e-posta bildiriminizi özelleştirebilirsiniz. Intune, şirket logosu da dahil olmak üzere konu, ileti gövdesi ve kişi bilgilerini özelleştirmeye olanak sağlar.
 
 -   **Cihazı uyumsuz olarak işaretle**: Cihazın uyumsuz olarak işaretleneceği gün sayısını belirleyebilirsiniz. Bu engelleme anında olabilir ancak kullanıcıya cihazını uyumluluk ilkeleriniz ile uyumlu hale getirmesi için bir mehil süresi de tanıyabilirsiniz.
 

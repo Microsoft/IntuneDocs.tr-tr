@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 68d93fe98b89f27c947e07d79eca9a0e02dea582
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="enroll-android-devices"></a>Android cihazlarını kaydetme
 
@@ -69,6 +69,17 @@ Henüz yapmadıysanız, [mobil cihaz yönetimi yetkilisini](mdm-authority-set.md
    - **Tüm cihazları Android olarak yönet**. Android for Work destekleyen cihazlar da dahil olmak üzere tüm Android cihazlar geleneksel Android cihaz olarak kaydedilir.
    - **Desteklenen cihazları Android for Work olarak yönet**. Android for Work destekleyen tüm cihazlar Android for Work cihazlar olarak kaydedilir. Android for Work desteklemeyen herhangi bir Android cihaz, geleneksel Android cihaz olarak kaydedilir.
    - **Yalnızca bu kullanıcı gruplarındaki kullanıcılar için desteklenen cihazları Android for Work olarak yönet**. Android for Work yönetimini sınırlı bir kullanıcı kümesine hedefleyebilirsiniz. Yalnızca Android for Work destekleyen bir cihaz kaydeden seçili grupların üyeleri Android for Work cihazlar olarak kaydedilir. Diğerlerinin tümü Android cihaz olarak kaydedilir. Bu, Android for Work pilot çalışmalarında kullanışlıdır.
+
+## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Yönetilen Google Play Store'da Şirket Portalı uygulamasını onaylama
+Android için Şirket Portalı uygulamasının otomatik uygulama güncelleştirmelerini alabilmesi için, bu uygulamayı yönetilen Google Play Store'da onaylamanız gerekir. Onaylamazsanız, Şirket Portalı zamanla güncelliğini yitirir ve Microsoft'un kullanıma sunduğu önemli hata düzeltmelerini veya yeni özellikleri alamaz.
+
+Intune Şirket Portalı'nı onaylamak için aşağıdaki adımları izleyin:
+
+1.  [Yönetilen Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)'dan Şirket Portalı uygulamasını indirin.
+2.  Yönetilen Google Play Store'da, Android for Work bağlamasını yapılandırırken kullandığınız Google hesabıyla oturum açın.
+3.  **Onayla**'ya tıklayın.  Yeni bir iletişim kutusu açılır.
+4.  Bu iletişim kutusunda izinleri gözden geçirin ve ardından **Onayla**'ya tıklayın. Şirket Portalı uygulamasının cihazdaki iş profilini yönetmesine olanak tanımak için bu izinlerin verilmesi gerekir.
+5.  **Uygulama yeni izinler istediğinde onaylı durumda tut** öğesini seçin ve **Kaydet**'e tıklayın.
 
 <!--  ## Next steps for Android for Work
 After configuring the Android for Work binding and settings, you can do the following:

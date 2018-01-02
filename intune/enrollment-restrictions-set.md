@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 376236634ba9579e6496fa252c6a3638197fbcb9
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: bdb89d3426bd2dd040b184c8f7c23397bbed576b
+ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -28,7 +28,10 @@ ms.lasthandoff: 12/01/2017
 Intune yöneticisi olarak, Intune ile yönetime kaydedilebilecek cihazların sayısını ve türlerini tanımlayan kayıt kısıtlamaları oluşturabilir ve bunları yönetebilirsiniz. Birden çok kısıtlama oluşturabilir ve bunları farklı kullanıcı gruplarına uygulayabilirsiniz. Farklı kısıtlamalarınız için [öncelik sırası](#change-enrollment-restriction-priority) ayarlayabilirsiniz.
 
 >[!NOTE]
->Kayıt kısıtlamaları güvenlik özellikleri değildir. Güvenliği aşılan cihazlar karakterlerini yanlış gösterebilir. Bu kısıtlamalar, kötü amaçlı olmayan kullanıcılara yönelik olabilecek en iyi engeldir. 
+>Kayıt kısıtlamaları güvenlik özellikleri değildir. Güvenliği aşılan cihazlar karakterlerini yanlış gösterebilir. Bu kısıtlamalar, kötü amaçlı olmayan kullanıcılara yönelik olabilecek en iyi engeldir.
+
+>[!NOTE]
+>Gruba atanan kayıt kısıtlaması ve aşağıda sözü edilen öncelik işlevi, Intune müşteri tabanı geneline dağıtım aşamasındadır. Bu dağıtım tamamlanana kadar, grup ve öncelik özelliklerine erişemeyebilirsiniz. 
 
 Özel olarak şu kayıt kısıtlamalarını oluşturabilirsiniz:
 

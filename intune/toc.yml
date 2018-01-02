@@ -198,7 +198,7 @@
           href: device-logout-user.md
         - name: Kullanıcıyı kaldır
           href: device-remove-user.md
-        - name: Android için uzaktan denetim
+        - name: Uzaktan denetimli mobil cihazlar
           href: device-profile-android-teamviewer.md
         - name: Windows 10 PIN sıfırlama
           href: device-windows-pin-reset.md
@@ -236,6 +236,8 @@
               href: apps-add-android-for-work.md
             - name: Windows 10 için Office 365 uygulamaları
               href: apps-add-office365.md
+            - name: macOS için Office 365 uygulamaları
+              href: apps-add-office365-macos.md
         - name: Uygulamaları atama
           href: apps-deploy.md
         - name: Uygulamaları izleme
@@ -417,6 +419,10 @@
           href: app-modern-authentication-block.md
         - name: Koşullu erişim uyumluluğunu izleme
           href: conditional-access-exchange-monitor.md
+        - name: Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
+          href: conditional-access-integrate-jamf.md
+        - name: Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
+          href: conditional-access-assign-jamf.md
     - name: Uygulama ve cihaz verilerini koruma
       items:
         - name: Uygulama koruma ilkeleri kullanma

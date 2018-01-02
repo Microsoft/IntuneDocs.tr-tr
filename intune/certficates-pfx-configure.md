@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: angrobe
-ms.date: 11/16/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
-ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
+ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve yönetme
 
@@ -101,22 +101,20 @@ VPN, WiFi ve diğer kaynaklarla kimlik doğrulama yapmak için her cihazda bir k
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Intune**, **Cihaz yapılandırması**, **Sertifika Yetkilisi**’ne gidin ve **Sertifika Bağlayıcı’yı indir**’e tıklayın.
-   * İndirmeyi, onu yükleyeceğiniz sunucuda erişebileceğiniz bir konuma kaydedin.
-3. Microsoft Intune Sertifika Bağlayıcı’yı yükleyeceğiniz sunucuda oturum açın.
-4. Yükleyiciyi çalıştırın ve varsayılan konumu kabul edin. Bağlayıcıyı C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe konumuna yükler.
+1. Azure Portal'da **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+2. **Intune** dikey penceresinde **Cihaz Yapılandırması**’nı seçin. 
+3. **Cihaz Yapılandırması** dikey penceresinde **Sertifika Yetkilisi**’ni seçin. 
+4. **Ekle**'ye tıklayın ve **Bağlayıcı dosyasını indir**'i seçin. İndirilen dosyayı, onu yükleyeceğiniz sunucuda erişebileceğiniz bir konuma kaydedin. 
+5.  Microsoft Intune Sertifika Bağlayıcı’yı yükleyeceğiniz sunucuda oturum açın.
+6.  Yükleyiciyi çalıştırın ve varsayılan konumu kabul edin. Bağlayıcıyı C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe konumuna yükler.
+    1. Yükleyici Seçenekleri sayfasında **PFX Dağıtımı**’nı seçin ve **İleri**’ye tıklayın.
+    2. **Yükle**’ye tıklayın ve yüklemenin tamamlanmasını bekleyin.
+    3. Tamamlama sayfasında **Intune Bağlayıcı’yı Başlat** etiketli kutunun seçili olduğunu kontrol edin ve **Son**’a tıklayın.
+7.  NDES Bağlayıcı penceresi şimdi **Kayıt** sekmesine açılmalıdır. Intune bağlantısını etkinleştirmek için **Oturum Aç**’a tıklayın ve yönetim izinleri olan bir hesap sağlayın.
+8.  **Gelişmiş** sekmesinde, radyo düğmesini **Bu bilgisayarın SİSTEM hesabını (varsayılan) kullan**’ı seçili bırakabilirsiniz.
+9.  **Uygula**’ya tıklayın ardından **Kapat**.
+10. Şimdi Azure portalına geri gidin. Birkaç dakika sonra, **Intune** > **Cihaz Yapılandırması** > **Sertifika Yetkilisi**'ndeki **Bağlantı durumu**'nun altında yeşil bir onay işareti ve **Etkin** sözcüğünü görmelisiniz. Bu onay, bağlayıcı sunucunuzun Intune ile iletişim kurabildiğini bilmenizi sağlar.
 
-      a. Yükleyici Seçenekleri sayfasında **PFX Dağıtımı**’nı seçin ve **İleri**’ye tıklayın.
-
-   b. **Yükle**’ye tıklayın ve yüklemenin tamamlanmasını bekleyin.
-
-   c. Tamamlama sayfasında **Intune Bağlayıcı’yı Başlat** etiketli kutunun seçili olduğunu kontrol edin ve **Son**’a tıklayın.
-
-5. NDES Bağlayıcı penceresi şimdi **Kayıt** sekmesine açılmalıdır. Intune bağlantısını etkinleştirmek için **Oturum Aç**’a tıklamalı ve yönetimsel izinleri olan bir hesap sağlamalısınız.
-6. **Gelişmiş** sekmesinde, radyo düğmesini **Bu bilgisayarın SİSTEM hesabını (varsayılan) kullan**’ı seçili bırakabilirsiniz.
-7. **Uygula**’ya tıklayın ardından **Kapat**.
-8. Şimdi Azure portalına geri gidin. **Intune**, **Cihaz yapılandırması**, **Sertifika Yetkilisi** altında yeşil onay işareti ve birkaç dakika sonra **Bağlantı durumu** altında **Etkin** kelimesini görmeniz gerekir. Bu onay, bağlayıcı sunucunuzun Intune ile iletişim kurabildiğini bilmenizi sağlar.
 
 ## <a name="create-a-device-configuration-profile"></a>Bir cihaz yapılandırma profili oluşturma
 
@@ -169,4 +167,4 @@ VPN, WiFi ve diğer kaynaklarla kimlik doğrulama yapmak için her cihazda bir k
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Azure portalında Intune'a gidin ve güvenilen bir sertifika için yeni bir profil oluşturun"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Bir profili oluşturun ve güvenilen bir sertifika yükleyin"
-[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "Azure portalından sertifika bağlayıcıyı indirin"
+[ConnectorDownload]: ./media/certificates-download-connector.png "Azure portalından sertifika bağlayıcıyı indirin"  
