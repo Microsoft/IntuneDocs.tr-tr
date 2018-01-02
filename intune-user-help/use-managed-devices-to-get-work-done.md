@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>İşleri halletmek için yönetilen cihazları kullanma
 Microsoft Intune, kuruluşların cihazları (akıllı telefonlar, tabletler ve bilgisayarlar gibi), uygulamaları ve e-posta gibi diğer şirket kaynaklarını yönetmesine olanak tanıyan bir yazılım parçasıdır. Bu yazılım, çalışanların hemen her yerden ve hemen her cihazdan çalışma bilgilerine erişmesini sağlarken, kurumsal bilgilerin güvenliğini korumaya da yardımcı olur.
@@ -34,7 +34,7 @@ Cihazlarınızı Intune ile yönetilmek üzere kaydettiğinizde, BT departmanın
 Şirket Portalı’nı iki farklı yolla alabilirsiniz:
 
 - Cihazınıza Şirket Portalı uygulamasını yükleyerek. Normalde Şirket Portalı uygulamasını cihazınızda uygulama mağazasına giderek alabilirsiniz ancak şirketinizin destek birimi de Şirket Portalı uygulamasını sizin için yükleyebilir.
-- Şirketinizin destek biriminin ayarladığı [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) giderek.
+- Şirketinizin destek biriminin ayarladığı [Şirket Portalı web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) giderek.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Uygulamayla web sitesi arasındaki fark nedir?
 Şirket Portalı uygulamasıyla Şirket Portalı web sitesi arasında birkaç küçük fark vardır, ama aynı görevleri çoğunlukla her ikisinde de gerçekleştirebilirsiniz. Gerçekleştirebileceğiniz görevlerden bazıları:
@@ -60,8 +60,9 @@ Cihazlarınızı Intune ile yönetilmek üzere kaydettiğinizde, BT departmanın
 Şirketinizin destek biriminin cihazınızda neleri görüp göremeyeceğini öğrenmek için, kullanmakta olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
 
 - [Android için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS ve macOS için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [Windows için Şirket Portalı uygulamasını yükleme](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [iOS için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [macOS için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [Windows için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Şirket Portalı’na ne tür bilgisayarları veya cihazları ekleyebilirsiniz?
 -   iOS kullanan Apple cihazları (iPhone ve iPad gibi) ve macOS (MacBook ve iMac gibi)
@@ -78,7 +79,8 @@ Bir bilgisayarı veya cihazı Şirket Portalı’ndan kaldırabilir ya da sıfı
 Bir bilgisayarı veya cihazı Şirket Portalı’ndan *kaldırdığınızda*, cihazınızın Intune kaydını kaldırmış olursunuz. Kaydını kaldırdıktan sonra, Şirket Portalı’na artık bu cihazdan erişemezsiniz ve bazı şirket verileri cihazınızdan kaldırılabilir. Cihazınızı Şirket Portalı’ndan nasıl kaldıracağınızı görmek için, aşağıdaki bağlantılardan birini seçin:
 
 - [Android cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-android.md)
-- [iOS veya macOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-ios.md)
+- [iOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-ios.md)
+- [macOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-macos.md)
 - [Windows cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-windows.md)
 
 Bilgisayarı veya cihazı *sıfırladığınızda* Şirket Portalı bilgisayarınızı veya cihazınızı üreticinin varsayılan ayarlarına geri döndürmeye çalışır. Cihazınız sıfırlandığında, tüm şirket verileriyle kişisel veriler cihazdan kaldırılır! Cihazınızı kaybettiyseniz, cihazı Şirket Portalı web sitesinden uzaktan da sıfırlayabilirsiniz.
@@ -95,6 +97,7 @@ Microsoft, öncelikle sorunu yardım almadan düzeltmeyi denemenizi önerir. Int
 
 - [Android cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-android.md)
 - [iOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-ios.md)
+- [macOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-macos.md)
 - [Windows cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-windows.md)
 
-Yardım istemek için aşağıya bir yorum girebilirsiniz, ancak her kuruluşun gereksinimleri farklı olduğundan sorularınızı yanıtlamak her zaman mümkün olmayabilir. Yardım için şirketinizin destek birimine başvurursanız, en hızlı ve ilgili yanıta ulaşmanız kolaylaşacaktır. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) ulaşabilirsiniz.
+Yardım istemek için aşağıya bir yorum girebilirsiniz, ancak her kuruluşun gereksinimleri farklı olduğundan sorularınızı yanıtlamak her zaman mümkün olmayabilir. Yardım için şirketinizin destek birimine başvurursanız, en hızlı ve ilgili yanıta ulaşmanız kolaylaşacaktır. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com#HelpDeskDialog) ulaşabilirsiniz.

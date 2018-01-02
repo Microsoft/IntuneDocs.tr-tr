@@ -3,8 +3,8 @@ title: "iOS için Intune cihaz kısıtlamaları ayarları"
 titleSuffix: Azure portal
 description: "iOS cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da iOS cihaz kısıtlama ayarları
 
@@ -41,7 +41,7 @@ Bu durum, Posta, Kişiler, Takvim, Facebook ve Twitter gibi iOS ayarları uygula
 - **Bildirim ayarlarının değiştirilmesi (yalnızca denetimli)** - Kullanıcının cihazın bildirim ayarlarını değiştirmesine izin verin.
 - **Duvar kağıdı değişikliği (yalnızca denetimli)** - Kullanıcının cihazın duvar kağıdını değiştirmesine izin verin.
 - **Kurumsal uygulama güven ayarlarının değiştirilmesi (yalnızca denetimli)** - Kullanıcının uygulama mağazasından indirilmemiş uygulamalara güvenmeyi seçmesine izin verir.
-- **Yapılandırma profilindeki değişiklikler** - Kullanıcının yapılandırma profilleri yüklemesine izin verin.
+- **Yapılandırma profilindeki değişiklikler (yalnızca denetimli)** - Kullanıcının yapılandırma profilleri yüklemesine izin verin.
 - **Etkinleştirme Kilidi (yalnızca denetimli)** - Denetimli iOS cihazlarda Etkinleştirme Kilidi’ni etkinleştirin.
 
 ## <a name="configurations-requiring-supervision"></a>Denetim gerektiren yapılandırmalar

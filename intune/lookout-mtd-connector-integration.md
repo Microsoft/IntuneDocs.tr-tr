@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a9925b91b009f43c08533222a5fdfc765ea51c2
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 6d63ddcd8f60ac3491087e3e76949f2a49cf7b9b
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
 
@@ -72,7 +72,8 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 2.  Azure AD kiracınızı kaydetmek için Lookout konsolunda ilk kez oturum açma işleminin Azure AD rolü Genel Yönetici olan bir kullanıcı hesabı kullanılarak yapılması gerekir. Daha sonra, oturum açma işleminin bu Azure AD ayrıcalık düzeyinde yapılmasına gerek yoktur. Bir onay sayfası görüntülenir. Kaydı tamamlamak için **Kabul Et**’i seçin. Kabul edip onay verdikten sonra Lookout Konsolu'na yönlendirilirsiniz.
 
     ![Lookout konsolunda ilk defa oturum açma sayfasının ekran görüntüsü](./media/lookout_mtp_initial_login.png)
-    > [NOT] Oturum açma sorunları ile ilgili yardım için bkz. [Lookout tümleştirme sorunlarını giderme](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration).
+    > [!NOTE] 
+    > Oturum açma sorunları ile ilgili yardım için bkz. [Lookout tümleştirme sorunlarını giderme](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration).
 
 3.  [Lookout Konsolu](https://aad.lookout.com)’nda, **Sistem** modülünde, **Bağlayıcılar** sekmesine tıklayın ve **Intune**’u seçin.
 
@@ -85,7 +86,8 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 ## <a name="configure-enrollment-groups"></a>Kayıt gruplarını yapılandırma
 1. En iyi uygulama olarak, Lookout tümleştirmesini sınamak için [Azure AD yönetim portalında](https://manage.windowsazure.com) az sayıda kullanıcı içeren bir Azure AD güvenlik grubu oluşturun.
 
-    > [NOT] Azure AD’de bir kayıt grubundaki tanımlanan ve desteklenen, Lookout desteği bulunan ve Intune’a kayıtlı olan tüm kullanıcıların cihazları kaydedilir ve Lookout MTD konsolunda etkinleştirilme için uygundur.
+    > [!NOTE] 
+    > Azure AD’de bir kayıt grubundaki tanımlanan ve desteklenen, Lookout desteği bulunan ve Intune’a kayıtlı olan tüm kullanıcıların cihazları kaydedilir ve Lookout MTD konsolunda etkinleştirilme için uygundur.
 
 2. [Lookout Konsolu](https://aad.lookout.com)’nda, **Sistem** modülünden **Bağlayıcılar** sekmesini seçin ve cihazları Lookout’a kaydedilmesi gereken kullanıcı gruplarını tanımlamak için **Kayıt Yönetimi**’ni seçin. Kayıt için Azure AD güvenlik grubunun **Görünen Adı**’nı ekleyin.
 
