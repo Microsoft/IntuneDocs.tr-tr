@@ -4,7 +4,7 @@
 
 ## [Şirketim, Intune ile hangi bilgileri görüntüleyebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Cihazımı sıfırladığımda ne olur?](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [Cihazımı sıfırlama](what-happens-if-you-reset-your-device-cpwebsite.md)
 
 ## [Şirket Portalı’nda oturum açma](sign-in-to-the-company-portal.md)
 
@@ -66,15 +66,15 @@
 ### [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
 ### [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 ### [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
-### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-ios.md)
 ### [Cihazınızın kaydını silme](unenroll-your-device-from-intune-ios.md)
 #### [Cihazınızın kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Cihazınızı el ile eşitleme](sync-your-device-manually-ios.md)
 
-### [iOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-iOS.md)
+#### [iOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-iOS.md)
 #### [Ele geçirilen bir iOS cihazı yeniden bağlama](how-to-reconnect-a-compromised-ios-device.md)
 #### [Hataları şirketinize gönderme](send-errors-to-your-it-admin-ios.md)
 #### [Hataları Microsoft'a gönderme](send-logs-to-microsoft-ios.md)
+#### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Hata gösterildi](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Cihazınızı tanımlama](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Seri numaranızı bulma](how-do-i-find-the-serial-number-on-my-device-ios.md)
@@ -97,11 +97,20 @@
 ### [Bir macOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-cp.md)
 ### [Eski macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-legacy.md)
-### [Bu cihaz biraz farklıdır](device-little-different-jamf.md)
+### [macOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-macos.md)
+
+### [macOS cihazındaki yaygın sorunları çözme](troubleshoot-your-device-macos.md)
+#### [Kullandığım macOS sürümü henüz desteklenmiyor](your-macos-version-isnt-yet-supported.md)
+#### [macOS cihazınızı güncelleştirme](you-need-to-update-your-macos-device.md)
+#### [Şirket Portalı hatalarını gönderme](send-errors-macos.md)
+#### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-macos.md)
+#### [Bu cihaz biraz farklıdır](device-little-different-jamf.md)
+#### [Seri numaranızı bulma](how-do-i-find-the-serial-number-on-my-device-macos.md)
+#### [Cihazınızı tanımlama](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Windows cihazınızı kullanma](using-your-windows-device-with-intune.md)
-### [Bir Windows 10 cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Windows cihazını başka bir Windows sürümüyle kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Windows 10 cihazlarını kaydetme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [Windows'un diğer sürümlerini kaydetme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
 ### [Windows cihazınızı kaydetme](enroll-your-device-in-intune-windows.md)
 ### [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
@@ -128,6 +137,6 @@
 #### [Güvenlik Duvarımı etkinleştirmek istiyorum](you-need-to-enable-defender-firewall-windows.md)
 #### [UAC’yi etkinleştirmek istiyorum](you-need-to-enable-uac-windows.md)
 #### [Windows’u güncelleştirmek istiyorum](you-need-to-update-os-build-version-windows.md)
-#### [Windows Defender'ı etkinleştirmek istiyorum](turn-on-defender-windows.md) 
+#### [Windows Defender'ı etkinleştirmek istiyorum](turn-on-defender-windows.md)
 
 ## [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)

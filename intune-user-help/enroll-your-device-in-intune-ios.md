@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Şirket kaynaklarına erişimi ayarlama
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/01/2017
 |![Ayarlarda profil açık durumdadır.](./media/ios-9-cp-enroll-1711.png)|**Yükle**’ye dokunun.|
 |![Profil kalıcı iletişim kutusunu ekranın alt kısmında yükleme.](./media/ios-10-cp-enroll-1711.png)|**Yükle**’ye dokunun.|
 |![Profili yükleme ekranını yüklüyor.](./media/ios-11-cp-enroll-1711.png)|Yüklenmesini bekleyin.|
-|![Profil yönetimi uyarı ekranı.](./media/ios-12-cp-enroll-1711.png)|Apple tarafından yazılan bu uyarı, yönetilen bir cihazda hangi tür işlemlerin yapılabileceği hakkında daha fazla bilgi sağlar. [Şirketinizin hangi bilgileri görebileceği](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) hakkında daha fazla bilgi|
+|![Profil yönetimi uyarı ekranı.](./media/ios-12-cp-enroll-1711.png)|Apple tarafından yazılan bu uyarı, yönetilen bir cihazda hangi tür işlemlerin yapılabileceği hakkında daha fazla bilgi sağlar. [Şirketinizin hangi bilgileri görebileceği](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) hakkında daha fazla bilgi.|
 |![Uzaktan yönetim güveni hakkında soran sistem istemi.](./media/ios-13-cp-enroll-1711.png)|Şirketinizin cihazınızdaki kurumsal bilgileri ve ayarları yönetmesine izin vermek için **Güven** 'e dokunun.|
 |![Profil sonlandırma yükleme ekranını yüklüyor.](./media/ios-14-cp-enroll-1711.png)|Yüklenmesini bekleyin.|
 |![Profil ekranı yükledi.](./media/ios-15-cp-enroll-1711.png)|Profiliniz yüklendi ve cihazınızın kurumsal bilgileri ve ayarları yönetilmeye çok daha yakın.|
@@ -75,4 +75,4 @@ ms.lasthandoff: 12/01/2017
 > [!Note]
 > Cihazınız tamamen yönetilmeden önce birkaç adım daha kaldı. [Telekom gider yönetimini kullanarak cihazınızı kaydetme](enroll-your-device-with-telecom-expense-management-ios.md) hakkında daha fazla bilgi edinin. Kuruluşunuz Apple’ın Aygıt Kayıt Programı’nı kullanıyorsa [buraya](enroll-your-device-dep-ios.md) tıklayarak daha fazla bilgi edinebilirsiniz.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

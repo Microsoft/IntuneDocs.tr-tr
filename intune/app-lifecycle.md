@@ -1,9 +1,9 @@
 ---
-title: "Uygulama yaşam döngüsüne genel bakış"
+title: "Intune için uygulama yaşam döngüsüne genel bakış"
 description: "Intune yönetilen uygulamalarının, eklenmesinden başlayıp sonunda devre dışı bırakılmasına kadar tüm yaşam döngüsü hakkında bilgi edinin."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 01648e20704c9cfc0121ded3b95d99e4661f4f53
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 1e50e3af525be48bf058dd32bfb7b93508d500a3
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="overview-of-the-app-lifecycle"></a>Uygulama yaşam döngüsüne genel bakış
 
