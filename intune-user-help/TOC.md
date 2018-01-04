@@ -27,12 +27,14 @@
 ### [Android cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-android.md)
 #### [Cihaz uyumluluğunu denetleme](check-compliance-on-your-device-android.md)
 #### [Outlook e-postasını pil koruyucu modu ile eşitleme](power-saving-mode-android.md)
+#### [Samsung Knox ile sık karşılaşılan sorunları çözme](samsung-knox-errors-android.md)
 
 #### Sorunları gidermek için günlükleri kullanma
 ##### [Ayrıntılı günlük kaydını açma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [E-posta kullanarak günlükleri gönderme](send-logs-to-your-it-admin-by-email-android.md)
 ##### [USB kablosu kullanarak günlükleri gönderme](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [Kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-admin-android.md)
+##### [Hataları Microsoft'a gönderme](send-logs-to-microsoft-android.md)
 
 ### İşletim sistemi soruları
 #### [Cihazınızı güncelleştirme](you-need-to-update-your-android-device.md)
@@ -74,6 +76,7 @@
 #### [Ele geçirilen bir iOS cihazı yeniden bağlama](how-to-reconnect-a-compromised-ios-device.md)
 #### [Hataları şirketinize gönderme](send-errors-to-your-it-admin-ios.md)
 #### [Hataları Microsoft'a gönderme](send-logs-to-microsoft-ios.md)
+#### [Bir mevcut şirket e-posta hesabı bulundu](existing-company-email-account-found.md)
 #### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Hata gösterildi](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Cihazınızı tanımlama](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -109,13 +112,13 @@
 #### [Cihazınızı tanımlama](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Windows cihazınızı kullanma](using-your-windows-device-with-intune.md)
-### [Windows 10 cihazlarını kaydetme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Windows'un diğer sürümlerini kaydetme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-
+### [Bir Windows 10 cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+#### [Diğer Windows sürümlerini kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Windows cihazınızı kaydetme](enroll-your-device-in-intune-windows.md)
-### [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+#### [Windows 10 cihazınızı kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetme](enroll-your-w81-or-rt81-windows.md)
+#### [Windows Phone 8.1 cihazınızı kaydetme](enroll-your-wp81-windows.md)
 ### [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
-
 ### [Cihazınızı şifreleme](encrypt-your-device-windows.md)
 ### [Parolanızı ayarlama veya değiştirme](set-or-change-your-password-windows.md)
 ### [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-windows.md)

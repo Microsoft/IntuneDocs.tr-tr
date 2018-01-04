@@ -517,7 +517,7 @@
             - name: Uzaktan yardım
               href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune
               maintainContext: true
-        - name: Windows bilgisayarlarını koruma ilkeleri
+        - name: Windows bilgisayarları koruma ilkeleri
           href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
           maintainContext: true
           items:
@@ -527,7 +527,7 @@
             - name: Windows Güvenlik Duvarı
               href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
               maintainContext: true
-            - name: Endpoint Protection
+            - name: Uç Nokta Koruma
               href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
               maintainContext: true
         - name: Intune istemci bilgisayarları için uygulama ekleme
