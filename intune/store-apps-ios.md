@@ -3,8 +3,8 @@ title: "iOS mağazası uygulamalarını Intune’a ekleme | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Intune'a iOS mağazası uygulamaları ekleme hakkında bilgi edinin.\""
 keywords: Intune
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 09/18/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c5d18f217659c9be59c116670fbf92a6d1b2ab4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 7dcb857127b3c36d2b90208aac9b8ad901e31d89
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS mağazası uygulamalarını Microsoft Intune’a ekleme
 

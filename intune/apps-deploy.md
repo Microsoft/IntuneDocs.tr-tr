@@ -3,8 +3,8 @@ title: "Uygulamaları gruplara ekleme"
 titlesuffix: Azure portal
 description: "Intune'a uygulama ekledikten sonra, bu uygulamayı kullanıcı veya cihaz gruplarına atamak isteyeceksiniz.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 7121cffaf1deb206aa88373a3aa77ce23bdf030e
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -48,7 +48,7 @@ Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uy
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde, **Mobil uygulamalar**’ı seçin.
+3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
 1. **Mobil Uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 2. Uygulama listesi dikey penceresinde, atamak istediğiniz uygulamaya tıklayın.
 3. <*uygulama adı*> - **Genel Bakış** dikey penceresinde **Yönet** > **Atamalar**’ı seçin.

@@ -2,8 +2,8 @@
 title: "Intune Veri Ambarı API uç noktası | Microsoft Docs"
 description: "Başvuru konusu, API URL yapısını açıklar."
 keywords: "Intune Veri Ambarı"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6dd9098a7db7004f0b7273fc4628d5dd1b535d6d
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune Veri Ambarı API uç noktası
 
@@ -41,7 +41,7 @@ https://fef.{***konum***}.manage.microsoft.com/ReportingService/DataWarehouseFES
 
 Bu URL aşağıdaki öğeleri içerir:
 
-| Öğe | Örnek | Açıklama |
+| Öğe | Örnek | Description |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | Temel URL, Azure portalında Veri Ambarı API’si dikey penceresinde bulunabilir. |
 | varlık-koleksiyonu | tarihler | OData varlık koleksiyonu adı. Veri modelindeki koleksiyonlar ve varlıklar hakkında daha fazla bilgi için bkz. [Veri Modeli](reports-ref-data-model.md). |

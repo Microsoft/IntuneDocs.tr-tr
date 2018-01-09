@@ -2,8 +2,8 @@
 title: "Mobil Uygulama Yönetimi (MAM) | Microsoft Docs"
 description: "Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Mobil Uygulama Yönetimi kategorisi için başvuru konusu."
 keywords: "Intune Veri Ambarı"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 32b5f3515c0b77ea8f411c1c1f42e7b44669ca23
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 4951ec43b2abdb52af091b2d1366bd23a9c2ab5b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/20/2017
 
 **MamApplication** varlığı, Mobil Uygulama Yönetimi (MAM) aracılığıyla yönetilen ancak kuruluşunuza kayıtlı olmayan iş kolu (LOB) uygulamalarını listeler.
 
-| Özellik | Açıklama | Örnek |
+| Özellik | Description | Örnek |
 |---------|------------|--------|
 | ApplicationKey |Veri ambarındaki MAM uygulamasının benzersiz tanımlayıcısı. |123 |
 | ApplicationName |MAM uygulamasının adı. |“Word” |
@@ -50,12 +50,12 @@ ms.lasthandoff: 10/20/2017
 
 **MamApplicationInstance** varlığı, Mobil Uygulama Yönetimi (MAM) uygulamalarını kullanıcı ve cihaz başına tekil örnekler olarak listeler. Varlıkta listelenen tüm kullanıcılar ve cihazlar korunur. Örneğin, hepsine en az bir MAM İlkesi atanmıştır.
 
-| Özellik | Açıklama | Örnek |
+| Özellik | Description | Örnek |
 |---------|------------|--------|
 | ApplicationInstanceKey |Veri ambarındaki MAM uygulaması örneğinin benzersiz tanımlayıcısı - vekil anahtar. |123 |
 | UserId |Bu MAM uygulamasını yükleyen kullanıcının kullanıcı kimliği. |b66bc706-ffff-7437-0340-032819502773 |
 | ApplicationInstanceId |MAM uygulaması örneğinin benzersiz tanımlayıcısı - ApplicationInstanceKey ile benzer ancak tanımlayıcı, bir doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationID |Bu MAM uygulamasının uygulama kimliği |com.microsoft.groupies-daily.<IOS> |
+| ApplicationId |Bu MAM uygulamasının uygulama kimliği |com.microsoft.groupies-daily.<IOS> |
 | ApplicationVersion |Bu MAM uygulamasının uygulama sürümü. |2 |
 | CreatedDate |Bu MAM uygulama örneği kaydının oluşturulduğu tarih. Değer null olabilir. |23/11/2016 00:00:00 |
 | Platform |MAM uygulamasının yüklü olduğu cihazın platformu. |2 |
@@ -75,7 +75,7 @@ ms.lasthandoff: 10/20/2017
 > [!Note]  
 > Bir uygulama örneği gün içinde birden çok kez iade etme işlemi yaparsa, veri ambarı bunu tek bir iade etme işlemi olarak depolar.
 
-| Özellik | Açıklama | Örnek |
+| Özellik | Description | Örnek |
 |---------|------------|--------|
 | DateKey |MAM uygulamasının iade işleminin, veri ambarına kaydedildiği zamanı belirten tarih anahtarı. | 20160703 |
 | ApplicationInstanceKey |Bu MAM uygulamasının iade işlemiyle ilişkili uygulama örneğinin anahtarı. |2/5/1900 00:00:00 |
@@ -84,13 +84,13 @@ ms.lasthandoff: 10/20/2017
 | DeviceHealthKey |Bu MAM uygulamasının iade işlemiyle ilişkili DeviceHealth için anahtar. |2/1/1900 00:00:00 |
 | PlatformKey |Bu MAM uygulamasının iade işlemiyle ilişkili cihaz platformunu temsil eder. |1/1/1900 00:00:00 |
 | EffectiveAppliedPolicyKey |İade etme işlemi yapan MAM uygulamasıyla ile ilişkili olarak uygulanan geçerli ilkeyi temsil eder. Uygulanan geçerli ilke, belirli bir uygulama ve kullanıcıyla ilişkili tüm ilkelerin birleştirilmesi sonucu elde edilir. |2/5/1900 00:00:00 |
-| LastCheckInDate |Bu MAM uygulamasının en son iade etme işlemi yaptığı tarih ve saat. Değer null olabilir. |23/11/2016 00:00:00 |
+| LastCheckInDate |Bu MAM uygulamasının en son iade etme işlemi yaptığı tarih ve saat. Değer null olabilir. |23.11.2016 12:00:00 |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
 
 **MamDeviceHealth** varlığı, işletim sistemi kısıtlamaları kaldırılmış olsa bile Mobil Uygulama Yönetimi (MAM) ilkelerinin dağıtıldığı cihazları temsil eder.
 
-| Özellik | Açıklama | Örnek |
+| Özellik | Description | Örnek |
 |---------|------------|--------|
 | DeviceHealthKey |Cihazın ve cihazla ilişkili sistem durumunun, veri ambarındaki benzersiz tanımlayıcısı - vekil anahtar. |1/1/1900 00:00:00 |
 | DeviceHealth |Cihazın ve cihazla ilişkili sistem durumunun benzersiz tanımlayıcısı - DeviceHealthKey ile benzer ancak tanımlayıcı, doğal bir anahtardır. |1/1/1900 00:00:00 |
@@ -101,28 +101,28 @@ ms.lasthandoff: 10/20/2017
 
 **MamEffectivePolicy** varlığı, kuruluşunuzda Mobil Uygulama Yönetimi (MAM) uygulanan tüm geçerli ilkeleri listeler. Uygulanan geçerli ilke, belirli bir uygulama ve kullanıcıyla ilişkili tüm ilkelerin birleştirilmesi sonucu elde edilir.
 
-| Özellik | Açıklama | Örnek |
+| Özellik | Description | Örnek |
 |---------|------------|--------|
 | EffectivePolicyKey |MAM geçerli ilkesinin, veri ambarındaki benzersiz tanımlayıcısı. |2 |
 | RealPolicyKey |MAM ilkesinin, BT uzmanı tarafından yazılan benzersiz tanıtıcısı. |1 |
-| RowCreatedDateTimeUtc |Bu geçerli ilkenin, veri ambarında oluşturulduğu tarih ve saat (UTC). |23/11/2016 00:00:00 |
+| RowCreatedDateTimeUtc |Bu geçerli ilkenin, veri ambarında oluşturulduğu tarih ve saat (UTC). |23.11.2016 12:00:00 |
 
 ## <a name="mamglobalapplication"></a>MamGlobalApplication
 
 **MamGlobalApplication** varlığı, Mobil Uygulama Yönetimi (MAM) aracılığıyla yönetilen ancak kuruluşunuza kayıtlı olmayan mağaza uygulamaları listeler.
 
-| Özellik | Açıklama | Örnek |
+| Özellik | Description | Örnek |
 |---------|------------|--------|
 | ApplicationKey |Veri ambarındaki mağaza uygulamasının benzersiz tanıtıcısı - vekil anahtar olarak bilinir. |123 |
-| ApplicationID |Mağaza uygulamasının benzersiz tanıtıcısı. Tanıtıcı, ApplicationKey ile benzer ancak doğal bir anahtardır. |com.microsoft.skydrive.<ios> |
+| ApplicationId |Mağaza uygulamasının benzersiz tanıtıcısı. Tanıtıcı, ApplicationKey ile benzer ancak doğal bir anahtardır. |com.microsoft.skydrive.<ios> |
 | ApplicationName |MAM Genel Uygulama Adı. |Skydrive |
-| RowLastModifiedDateTimeUtc |Bu MAM Genel Uygulamasının, veri ambarında son değiştirildiği tarih ve saat (UTC). |23/11/2016 00:00:00 |
+| RowLastModifiedDateTimeUtc |Bu MAM Genel Uygulamasının, veri ambarında son değiştirildiği tarih ve saat (UTC). |23.11.2016 12:00:00 |
 
 ## <a name="mamplatform"></a>MamPlatform
 
 **MamPlatform** varlığı, Mobil Uygulama Yönetimi (MAM) uygulamasının yüklendiği platform adlarını ve türlerini listeler.
 
-| Özellik | Açıklama | Örnek |
+| Özellik | Description | Örnek |
 |---------|------------|--------|
 | PlatformKey |Veri ambarındaki platformun benzersiz tanımlayıcısı - vekil anahtar. |123 |
 | Platform |Platformun benzersiz tanımlayıcısı; PlatformKey ile benzer ancak doğal bir anahtardır. |123 |

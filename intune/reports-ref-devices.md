@@ -2,8 +2,8 @@
 title: "Cihazlar - Intune Veri Ambarı | Microsoft Docs"
 description: "Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Cihazlar kategorisi için başvuru konusu."
 keywords: "Intune Veri Ambarı"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 24260c9e6a9929c74b47e5d83bf4d1be867b6b2e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/02/2017
 
 **DeviceTypes** varlığı, diğer veri ambarı varlıkları tarafından başvurulan cihaz türünü temsil eder. Cihaz türü genellikle cihaz modelini, üreticisini veya her ikisini de belirtir.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | DeviceTypeID |Cihaz türünün benzersiz tanımlayıcısı |
 | DeviceTypeKey |Veri ambarındaki cihaz türünün benzersiz tanımlayıcısı - vekil anahtar |
@@ -45,7 +45,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="example"></a>Örnek
 
-| deviceTypeID  | Ad | Açıklama |
+| deviceTypeID  | Ad | Description |
 |---------|------------|--------|
 | 0 |Masaüstü |Windows Masaüstü cihaz |
 | 1 |WindowsRT |WindowsRT cihaz |
@@ -72,7 +72,7 @@ ms.lasthandoff: 11/02/2017
 
 **ClientRegistrationStateTypes** varlığı, diğer veri ambarı tabloları tarafından başvurulan kayıt türünü temsil eder.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | clientRegisterationStateID |Kayıt durumu için benzersiz tanımlayıcı |
 | clientRegisterationStateKey |Veri ambarındaki kayıt durumunun benzersiz tanımlayıcısı - vekil anahtar |
@@ -80,7 +80,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="example"></a>Örnek
 
-| ClientRegisterationStateID  | Ad | Açıklama |
+| ClientRegisterationStateID  | Ad | Description |
 |---------|------------|--------|
 | 0 |NotRegistered |NotRegistered |
 | 1 |SMSIDConflict |SMS ID çakışması |
@@ -96,7 +96,7 @@ ms.lasthandoff: 11/02/2017
 
 **EnrollmentTypes** varlığı, bir cihazın nasıl kaydedildiğini gösterir. Kayıt türü, kayıt yöntemini yakalar. Örnekler, farklı kayıt türlerini ve bunların ne anlama geldiğini listeler.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | managementStateID |Yönetim durumunun benzersiz tanımlayıcısı. |
 | managementStateKey |Veri ambarındaki yönetim durumunun benzersiz tanımlayıcısı - vekil anahtar. |
@@ -104,7 +104,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="example"></a>Örnek
 
-| enrollmentTypeID  | Ad | Açıklama |
+| enrollmentTypeID  | Ad | Description |
 |---------|------------|--------|
 | 0 |Bilinmiyor |Kayıt türü toplanmadı |
 | 1 |UserEnrollment |Kullanıcı tarafından başlatılan kayıt |
@@ -120,7 +120,7 @@ ms.lasthandoff: 11/02/2017
 
 **EnrollmentTypes** varlığı; bir cihazın sahipliğinin şirket, kişisel veya bilinmeyen olduğunu gösterir.
 
-| Özellik  | Açıklama | Örnek |
+| Özellik  | Description | Örnek |
 |---------|------------|--------|
 | ownerTypeID |Sahip türünün benzersiz tanımlayıcısı. | |
 | ownerTypeKey |Veri ambarındaki sahip türünün benzersiz tanımlayıcısı - vekil anahtar. | |
@@ -130,7 +130,7 @@ ms.lasthandoff: 11/02/2017
 
 **MdmStatuses** varlığı, cihazın uyumluluk durumunu gösterir.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | MdmStatusID |Uyumluluk durumu için benzersiz tanımlayıcı |
 | MdmStatusKey |Veri ambarındaki uyumluluk durumunun benzersiz tanımlayıcısı - vekil anahtar | 
@@ -139,7 +139,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="example"></a>Örnek
 
-| MdmStatusID  | ComplianceStatus | Açıklama |
+| MdmStatusID  | ComplianceStatus | Description |
 |---------|------------|--------|
 | 0 |Bilinmiyor |Cihaz uyumluluk durumu bilinmiyor. |
 | 1 |Uyumlu |Cihaz uyumlu. |
@@ -152,7 +152,7 @@ ms.lasthandoff: 11/02/2017
 
 **ManagementStates** varlığı, cihazın durumu hakkında ayrıntılar sağlar. Ayrıntılar; uzak eylemlerin uygulandığı, cihaza jailbreak uygulandığı veya cihazın kökünün belirtildiği durumlarda faydalı olabilir.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | managementStateID | Yönetim durumunun benzersiz tanımlayıcısı. |
 | managementStateKey | Veri ambarındaki yönetim durumunun benzersiz tanımlayıcısı - vekil anahtar. |
@@ -160,7 +160,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="example"></a>Örnek
 
-| managementStateID  | Ad | Açıklama |
+| managementStateID  | Ad | Description |
 |---------|------------|--------|
 | 0 |Yönetilen | Hiçbir bekleyen uzak eylem olmadan yönetilir. |
 | 1 |RetirePending | Cihaz için bekleyen bir devre dışı bırakma komutu vardır. |
@@ -179,7 +179,7 @@ ms.lasthandoff: 11/02/2017
 
 **WorkPlaceJoinStateTypes** varlığı, cihazın Azure Active Directory Workplace Join durumunu temsil eder.  Kayıt iş akışı, doğrulama yapmak veya kimlik doğrulamak için bir ya da daha fazla sertifika kullanabilir. Bir cihaz WorkPlace’i kaydedildiğinde, cihazı ve kullanıcıyı doğrulamak için bu sertifikalar kullanılır. Sertifikaların verilmesi, SCEP (Basit Sertifika Kayıt Noktası) sunucusu yoluyla olur. Varlıktaki değerler, cihazın bu işlem sırasında geçebileceği çeşitli durumları gösterir. Bu durumlardan bazıları, gerekli bir sertifikanın verilmesinin (SCEP sunucusundan) başarısız olması sebebiyle WorkPlace katılımının başarısız olduğuna işaret eder. Cihaz bu iş akışından hiç geçmediyse, bu değer Bilinmeyen olarak gösterilir.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | WorkPlaceJoinStateID | İş yeri katılım durumunun benzersiz tanımlayıcısı |
 | WorkPlaceJoinStateKey | Veri ambarındaki iş yeri katılım durumunun benzersiz tanımlayıcısı - vekil anahtar |
@@ -187,7 +187,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="example"></a>Örnek
 
-| workPlaceJoinStateID  | Ad | Açıklama |
+| workPlaceJoinStateID  | Ad | Description |
 |---------|------------|--------|
 | 0 |Bilinmiyor |Bir cihaz iş yerine katılmamışsa, Bilinmeyen durumundadır |
 | 1 |Başarılı |İş yerine katılma başarılı |
@@ -203,7 +203,7 @@ ms.lasthandoff: 11/02/2017
 
 **ManagementAgentTypes** varlığı, bir cihazı yönetmek için kullanılan aracıları temsil eder.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | ManagementAgentTypeID | Yönetim aracısı türünün benzersiz tanımlayıcısı. |
 | ManagementAgentTypeKey | Veri ambarındaki yönetim aracısı türünün benzersiz tanımlayıcısı - vekil anahtar. |
@@ -211,7 +211,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="example"></a>Örnek
 
-| ManagementAgentTypeID  | Ad | Açıklama |
+| ManagementAgentTypeID  | Ad | Description |
 |---------|------------|--------|
 | 1 |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
 | 2 |MDM | Cihaz bir MDM aracısı kullanılarak yönetiliyor |
@@ -225,7 +225,7 @@ ms.lasthandoff: 11/02/2017
 
 **Cihazlar** varlığı, yönetime kaydedilen tüm cihazları ve bunlara karşılık gelen özellikleri listeler.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | DeviceKey | Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. |
 | DeviceId | Cihazın benzersiz tanımlayıcısı. |
@@ -270,7 +270,7 @@ ms.lasthandoff: 11/02/2017
 
 **DevicePropertyHistory** varlığı, cihazlar tablosuyla aynı özelliklere sahiptir ve her cihaz kaydının son 90 gün boyunca günlük olarak anlık görüntüsünü alır. DateKey sütunu, her satır için günü gösterir.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | DateKey |Günü gösteren tarih tablosuna başvuru. |
 | DeviceKey |Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur. |
@@ -314,7 +314,7 @@ ms.lasthandoff: 11/02/2017
 
 **MdmDeviceInventoryHistories** varlığı, MDM ile yönetilen cihazların envanter verileri için son 90 günlük anlık görüntülerini barındırır. DateKey sütunu, satır için günü gösterir. Bazı özellikler tüm cihazlarda uygulanamayabilir veya doldurulamayabilir, o nedenle daha fazla ayrıntı için bu sayfadan yardım alın. Daha fazla bilgi için bkz. [Microsoft Intune’da envanterli cihazlarınızı anlama](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | DateKey | Günü gösteren tarih tablosuna başvuru. |
 | DeviceKey |Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur. |
@@ -412,7 +412,7 @@ ms.lasthandoff: 11/02/2017
 
 **ApplicationInventory** varlığı, envanter toplandığı anda cihazda bulunan uygulamaları listeler.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | DeviceKey |Cihazlar tablosuna başvuru. |
 | ApplicationKey |? (ExchangeDeviceService\DeviceApplication konumundan kopyalandı). |

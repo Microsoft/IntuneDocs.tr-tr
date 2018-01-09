@@ -3,8 +3,8 @@ title: "iOS cihazlar için Microsoft Intune’da Uygulama Başına VPN’i ayarl
 titleSuffix: Intune on Azure
 description: "Intune ile yönetilen iOS cihazlarda hangi yönetilen uygulamaların VPN’inizi kullanabileceğini belirtin."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/5/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c883ab2b96618502be20583908a4caa52ac5432b
-ms.sourcegitcommit: 6004fe51e3cee6fb34514ed0d56e20587ecafeb4
+ms.openlocfilehash: 1a37fcc372db6fec9f460fdc242cd6d2294f96e1
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>iOS cihazlar için Microsoft Intune’da Uygulama Başına VPN’i ayarlama
 
@@ -83,12 +83,12 @@ Güvenilen kök sertifika profili, iOS’un VPN sunucusuna otomatik olarak güve
 6. **Konu alternatif adı** için **Kullanıcı asıl adı (UPN)** seçin.
 7. **Anahtar kullanımı** için **Dijital imza** ve **Anahtar şifreleme**’yi seçin.
 8. **Anahtar boyutu (bit cinsinden)** için **2048**’i seçin.
-9. Kök Sertifika’ya tıklayın ve bir SCEP sertifikası seçin. **Tamam**’a tıklayın.
+9. Kök Sertifika’ya tıklayın ve bir SCEP sertifikası seçin. **Tamam**'ı tıklatın.
 10. **Genişletilmiş anahtar kullanımı**’nın **Ad**’ına `Client Authentication` yazın.
 11. **Nesne tanımlayıcısı**’na `1.3.6.1.5.5.7.3.2` yazın.
-12. **Ekle**'ye tıklayın.
+12. **Ekle**'yi tıklatın.
 13. ***Sunucu URL’sini*** yazın ve **Ekle**’ye tıklayın.
-14. **Tamam**’a tıklayın.
+14. **Tamam**'ı tıklatın.
 15. **Oluştur**'a tıklayın.
 
     ![Bir SCEP sertifika profili oluşturma](media\vpn-per-app-create-scep-cert.png)
@@ -115,8 +115,8 @@ VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye
 5. **Otomatik VPN**’e tıklayın. **Otomatik VPN**’de:
     1. **Otomatik VPN türü** için **Uygulama Başına VPN**’i seçin.
     2. VPN URL’sini yazın ve **Ekle**’ye tıklayın.
-    3. **Tamam**’a tıklayın.
-6. **Tamam**’a tıklayın.
+    3. **Tamam**'ı tıklatın.
+6. **Tamam**'ı tıklatın.
 7. **Oluştur**'a tıklayın.
 
     ![Uygulama Başına VPN profili oluşturma](media\vpn-per-app-create-vpn-profile.png)
