@@ -3,8 +3,8 @@ title: "Windows mağaza uygulamalarını Intune’a ekleme"
 titleSuffix: Azure portal
 description: "Intune'a Windows mağazası uygulamaları ekleme hakkında bilgi edinin.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f10da996f8587e63320e31ae57e88a5f14f3f9c2
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 19339bee8b362b1168e62da9716dbfd3144e85e7
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows mağazası uygulamalarını Microsoft Intune’a ekleme
 
@@ -96,7 +96,7 @@ Uygulamanın bu şekilde nasıl imzalanıp atanacağı aşağıda açıklanmakta
 2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Microsoft Mağazası'ndan indirin.  
 3. Betik üst bilgisinde açıklanan giriş parametrelerini (ayıklanmış hali aşağıdadır) kullanıp betiği çalıştırarak Windows 10 Şirket Portalı uygulamasını imzalayın. Bağımlılıkların betiğe geçirilmesi gerekmez. Bunlar, yalnızca uygulama Intune Yönetici Konsolu’na yüklenirken gereklidir.
 
-|Parametre | Açıklama|
+|Parametre | Description|
 | ------------- | ------------- |
 |InputWin10AppxBundle |Kaynak appxbundle dosyasının bulunduğu konumun yolu |
 |OutputWin10AppxBundle |İmzalı appxbundle dosyası için çıkış yolu.  Win81Appx Windows 8.1 veya Windows Phone 8.1 Şirket Portalı (. APPX) dosyasının bulunduğu konumun yolu.|

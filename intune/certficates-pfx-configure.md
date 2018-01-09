@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: a51d260718e0d0c3984966fab69e202b854c1847
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve yönetme
 
@@ -55,10 +55,11 @@ VPN, WiFi ve diğer kaynaklarla kimlik doğrulama yapmak için her cihazda bir k
 
    Örneğin:
 
+4.  Sihirbaz tamamlandıktan sonra, sihirbazı kapatmadan önce, **Sertifika Bağlayıcısı Kullanıcı Arabirimini Başlat**'a tıklayın.
+
    `certutil -ca.cert certnew.cer`
 
    Daha fazla bilgi için bkz: [Sertifikaları yönetmek için Certutil görevleri](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
-
 
 ## <a name="configure-certificate-templates-on-the-certification-authority"></a>Sertifika yetkilisinde sertifika şablonlarını yapılandırma
 
