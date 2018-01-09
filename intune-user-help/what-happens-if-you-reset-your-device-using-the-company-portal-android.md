@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4095ffc0da85501ec4649940d886b4d9a4719c7a
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak Android cihazınızı sıfırlarsanız ne olur?
 
 Android cihazınızı sıfırlamak için Şirket Portalı’nı kullandığınızda, cihazınızdaki tüm uygulamalar, ayarlar ve kişisel veriler silinir. Bu sıfırlama, cihazınızı varsayılan fabrika ayarlarına döndürür.
 
-Samsung KNOX cihazınız varsa Şirket Portalı’ndan **cihaz kaldırma** seçeneğini kullanarak "seçmeli silme" yapabilirsiniz. Seçmeli temizleme yalnızca aşağıdakileri kaldırır:
+Samsung Knox cihazınız varsa Şirket Portalı’ndan **cihaz kaldırma** seçeneğini kullanarak "seçmeli silme" yapabilirsiniz. Seçmeli temizleme yalnızca aşağıdakileri kaldırır:
 
 - Şirketinizin destek biriminin kullanımınıza sunduğu iş uygulamaları.
 - E-posta, VPN ve Wi-Fi.

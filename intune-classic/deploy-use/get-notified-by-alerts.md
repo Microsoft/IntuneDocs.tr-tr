@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 8/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: microsoft intune
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 287e8f3736082e427481d7a8a363947d4c42cdd6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/09/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Microsoft Intune’dan bildirim almak için uyarıları kullanma
 
@@ -54,7 +54,7 @@ Ayrıca, Intune’u, bir uyarı oluşturulduğunda sizi e-posta ile bilgilendirm
 
 [Microsoft Intune yönetici konsolunda](https://manage.microsoft.com) **Yönetici** &gt; **Uyarılar ve Bildirimler**’i seçin ve daha sonra aşağıdaki görevlerden birini seçin:
 
-|Görev|Açıklama|
+|Görev|Description|
 |---|------|
 |**Uyarı Türleri**|Yapılandırmak istediğiniz uyarı türünü seçin ve aşağıdakilerden birini yapın:<br /><br />**Yapılandır**’ı seçin. **Uyarı Türünü Yapılandır** iletişim kutusunda istediğiniz ayarları yapılandırın ve ardından **Tamam**’ı seçin.<br /><br />Uyarı için **Etkinleştir** veya **Devre Dışı Bırak** seçeneğini belirleyin.<br /><br />Yalnızca belirli bir kategorideki uyarı türlerini görüntülemek için, **Uyarı Türleri** düğümünü genişletin ve o kategoriyi seçin.|
 |**Alıcılar**|Ayarladığınız e-posta bildirimlerini alacak yeni bir e-posta adresi eklemek için **Ekle**’yi seçin.<br /><br />Ayrıca, mevcut alıcıları **Düzenleyebilir** veya **Silebilirsiniz** .<br /><br />Bildirimleri almak için bu e-posta adresini **Bildirim Kuralları** bölümünde bir alıcı olarak da eklemelisiniz.|
@@ -66,7 +66,7 @@ Ayrıca, Intune’u, bir uyarı oluşturulduğunda sizi e-posta ile bilgilendirm
 
 Intune Yönetim Konsolu'nda uyarılar üzerine çalışmanıza yardımcı olan aşağıdaki seçenekleri kullanın.
 
-|Seçenek|Açıklama|
+|Seçenek|Description|
 |-----|----|
 |**Etkin uyarıları görüntüleme**|Aşağıdakilerden birini seçin:<br /><br />**Uyarı özetini görüntüleme**   **Pano** çalışma alanındaki Uyarılar bölmesinde en önemli hatalar gösterilir. Daha ayrıntılı bilgi için bölmeyi seçin.<br /><br />Ayrıca, **Uyarılar** çalışma alanının **Genel Bakış** sayfasında uyarıların bir özetini görüntüleyebilirsiniz.<br /><br />**Tüm uyarıları görüntüleme**   **Uyarılar** çalışma alanında **Tüm Uyarılar**’ı seçin.|
 |**Bildirimleri görüntüleme**|Aşağıdakilerden birini seçin:<br /><br />**Pano** çalışma alanında **Bildirimler**’i seçin.<br /><br />**Uyarılar** çalışma alanında **Tüm Uyarılar** &gt; **Bildirimler**’i seçin.|

@@ -3,10 +3,10 @@ title: "iOS toplu satın alınan uygulamaları yönetme | Microsoft Docs"
 titlesuffix: Azure portal
 description: "iOS mağazasından toplu satın aldığınız uygulamaları Intune’a eşitlemeyi, ardından bunların kullanımını yönetmeyi ve izlemeyi öğrenin.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 
@@ -38,9 +38,9 @@ Toplu satın alınan uygulamaları atamak için kullanabileceğiniz iki yöntem 
 
 ### <a name="device-licensing"></a>Cihaz lisanslama
 
-Cihazlara bir uygulama atadığınızda yalnızca bir uygulama lisansı kullanılır ve bu lisans, atadığınız cihazla ilişkili olur. 
+Cihazlara bir uygulama atadığınızda yalnızca bir uygulama lisansı kullanılır ve bu lisans, atadığınız cihazla ilişkili olur.
 
-Bir cihaza toplu satın alınan uygulamalar atadığınızda, cihaz son kullanıcısının mağazaya erişmek için bir Apple kimliği belirtmesi gerekmez. 
+Bir cihaza toplu satın alınan uygulamalar atadığınızda, cihaz son kullanıcısının mağazaya erişmek için bir Apple kimliği belirtmesi gerekmez.
 
 ### <a name="user-licensing"></a>Kullanıcı lisanslama
 
@@ -92,7 +92,8 @@ Yeni bir Intune kullanıcısı için bir cihaz ayarladığınızda, cihazı kull
         > Ülkeyi değiştirmek, bu belirteç ile oluşturulan uygulamalar için Apple hizmetiyle bir sonraki eşitlemede uygulamanın meta verilerini ve mağaza URL’sini güncelleştirir. Uygulama, yeni ülke mağazasında yoksa güncelleştirilmez.
 
     - **VPP hesabı türü** - **İş** veya **Eğitim**’i seçin.
-    - **Otomatik uygulama güncelleştirmeleri** - **Açık** veya **Kapalı** olarak ayarlayın. Bu seçenek etkinleştirildiğinde Intune, cihaz bildirim yaptığında belirtilen belirteç için satın alınan tüm uygulamaları güncelleştirir. uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılayacak ve cihaz bildirim yaptığında bunları cihaza otomatik olarak gönderecektir.
+    - **Otomatik uygulama güncelleştirmeleri** - **Açık** veya **Kapalı** olarak ayarlayın. Bu seçenek etkinleştirildiğinde Intune, cihaz bildirim yaptığında belirtilen belirteç için satın alınan tüm uygulamaları güncelleştirir.
+uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılayacak ve cihaz bildirim yaptığında bunları cihaza otomatik olarak gönderecektir.
 4. İşiniz bittiğinde **Karşıya Yükle**‘ye tıklayın.
 
 Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
@@ -134,6 +135,8 @@ Son kullanıcı, birkaç senaryoda VPP uygulama yüklemesi için istem alır. A�
 ## <a name="further-information"></a>Daha fazla bilgi
 
 Lisansı geri kazanmak için atama eylemini **Kaldır** olarak değiştirmeniz gerekir. Uygulama kaldırıldıktan sonra lisans geri kazanılır. Kullanıcıya atanmış bir uygulamayı kaldırırsanız Intune, bu kullanıcı ile ilişkili tüm uygulama lisanslarını geri almaya çalışır.
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
 
 Uygun cihaza sahip bir kullanıcı, bir VPP uygulamasını cihaza ilk kez yüklemeye çalıştığında, kullanıcıdan Apple Volume Purchase Program’e katılması istenir. Uygulamanın yüklenmeye devam etmesi için önce katılmaları gerekir. Apple Volume Purchase programına katılma daveti, kullanıcının, iOS cihazında iTunes uygulamasını kullanabilmesini gerektirir. iTunes Store uygulamasını devre dışı bırakmak için bir ilke belirlediyseniz VPP uygulamaları için kullanıcı tabanlı lisanslama çalışmaz. Çözüm, ilkeyi kaldırarak iTunes uygulamasına izin vermek veya cihaz tabanlı lisanslama kullanmaktır.
 

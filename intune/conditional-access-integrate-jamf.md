@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |Klasik portalda Intune hakkında belgeler mi arıyorsunuz? [Buraya gidin](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
 
-|Şu anda özel olarak incelenmektedir|
-|--|
-|Bu konuda açıklanan özellikler, yalnızca şu anda önizlemede olan müşteriler tarafından kullanılabilir. Özellikler tüm müşterilerin kullanımına sunulduğunda bu ileti kaldırılacaktır.|
-| |
-
 Kuruluşunuz son kullanıcılarınızın Mac'lerini yönetmek için [Jamf Pro](https://www.jamf.com) kullanıyorsa, kuruluşunuzdaki cihazların uyumlu olmasını sağlamak için Azure Active Directory koşullu erişimiyle Microsoft Intune uyum ilkelerini kullanabilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 Jamf Pro ile koşullu erişimi yapılandırmak için aşağıdakiler gerekir:
 
-- MacOS koşullu erişim için Intune özel Önizleme erişimi
 - Jamf Pro 10.1.0 veya daha yenisi
 - [MacOS için Şirket Portalı uygulaması](https://aka.ms/macoscompanyportal)
 - OS X 10.11 ile Yosemite veya sonrası olan macOS cihazları
@@ -60,7 +54,7 @@ Intune'u Jamf Pro’ya şu şekilde bağlayabilirsin:
 4. **Web uygulaması / API**’yi seçin.
 5. Jamf Pro örneği URL'nizi kullanarak **Oturum Açma URL'si** değerini belirtin.
 6. **Uygulama oluştur**’a tıklayın.
-7. Yeni oluşturulan **Uygulama Kimliği**'ni kaydedin, ardından yeni bir Uygulama Anahtarı oluşturmak için **Ayarlar**'ı açın ve **API Erişimi** > **Anahtarlar**'a gidin. **Açıklama**'yı ve **Süresi Dolmadan** ne kadar bekleneceğini girin, sonra da Uygulama Anahtarı'nı kaydedin. 
+7. Yeni oluşturulan **Uygulama Kimliği**'ni kaydedin, ardından yeni bir Uygulama Anahtarı oluşturmak için **Ayarlar**'ı açın ve **API Erişimi** > **Anahtarlar**'a gidin. **Açıklama**'yı ve **Süresi Dolmadan** ne kadar bekleneceğini girin, sonra da Uygulama Anahtarı'nı kaydedin.
 
   > [!IMPORTANT]
   > Uygulama Anahtarı yalnızca bir kez bu işlem sırasında gösterilir. Kolayca alabileceğiniz bir yere kaydettiğinizden emin olun.

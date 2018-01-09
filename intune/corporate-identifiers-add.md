@@ -3,8 +3,8 @@ title: "Intune’a kurumsal tanımlayıcılar ekleme"
 titlesuffix: Azure portal
 description: "Microsoft Intune’a kurumsal tanımlayıcıları (kayıt yöntemi, IMEI ve seri numaraları) eklemeyi öğrenin. \""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 08/23/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dce9dea82673ebabd4170c74e4212c1da26382c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 1095ef736488754296eca4f21b2bf10226b43847
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -42,7 +42,7 @@ Bir Intune yöneticisi olarak, IMEI numaralarını veya seri numaraları listele
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
 [Apple cihaz seri numarasını bulmayı öğrenin](https://support.apple.com/HT204308).<br>
-[Android cihazlarda seri numaranızı bulmayı öğrenin](https://support.google.com/store/answer/3333000).
+[Android cihaz seri numaranızı bulmayı öğrenin](https://support.google.com/store/answer/3333000).
 
 ## <a name="add-corporate-identifiers"></a>Kurumsal tanımlayıcılar ekleme
 Listeyi oluşturmak için iki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. IMEI numaralarını veya seri numaraları sol sütuna, ayrıntıları sağ sütuna ekleyin. Tek bir .csv dosyasında yalnızca tek bir kimlik türü: IMEI veya seri numarası içeri aktarılabilir. Ayrıntılar 128 karakterle sınırlıdır ve yalnızca yönetimsel kullanım içindir. Ayrıntılar cihazda görüntülenmez. Her .csv dosyası için geçerli sınır 5.000 satırdır.

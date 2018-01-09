@@ -3,8 +3,8 @@ title: "Yardım masası sorun giderme portalı | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Yardım masası personeli, kullanıcıların teknik sorunlarını çözmek için sorun giderme portalını kullanır"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 09/26/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 845b225fe60ecde71f364b224a0984638662a3db
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Kullanıcılara yardımcı olmak için sorun giderme portalını kullanın
 
@@ -58,7 +58,7 @@ Kullanıcı bilgilerini gözden geçirmek için **Sorun Giderme** dikey penceres
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Alan | Ad | Açıklama |
+| Alan | Ad | Description |
 | ---  | ---  | ---         |
 | 1.   | Hesap durumu  | Geçerli Intune kiracısının durumunu **Etkin** veya **Etkin Değil** olarak gösterir.       |
 | 2.   | Kullanıcı seçimi  | Seçili kullanıcının adı. Yeni bir kullanıcı seçmek için **Kullanıcı değiştir**’e tıklayın.       |
@@ -74,7 +74,7 @@ Cihazlarda çalışan uygulamalar veya Intune ve Azure Active Directory (AD) ile
 
 Mobil uygulamaların özellikleri.
 
-| Özellik      | Açıklama                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Özellik      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ad          | Uygulamanın adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | İşletim sistemi            | Cihazda yüklü işletim sistemi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -85,7 +85,7 @@ Mobil uygulamaların özellikleri.
 
 Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
 
-| Özellik           | Açıklama                                                                                                                         |
+| Özellik           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Cihaz adı        | Cihaz türünün adı.                                                                                                     |
 | Yöneten         | İlkenin değiştirildiği zaman damgası.                                                                                              |
@@ -101,7 +101,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 
 Enterprise Mobility Solution (EMS) teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu, şirket verileriniz Office uygulamaları dahil olmak üzere mobil uygulamalara indirildiğinde, veriler için temel bir koruma sağlar. 
 
-| Özellik    | Açıklama                                                                           |
+| Özellik    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Durum      | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir. |
 | Uygulama adı    | Uygulamanın adı                                                           |
@@ -118,7 +118,7 @@ EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi 
 
 Tabloda, Intune ile yönetilen cihazlar için uygulama koruma ilkeleri durumu özetlenmiştir.
 
-| Özellik    | Açıklama                                                                                                                                |
+| Özellik    | Description                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Ad        | Uygulamanın adı.                                                                                                        |
 | Dağıtıldı    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
@@ -151,7 +151,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 
 Uyumluluk ilkelerinin özellikleri.
 
-| Özellik      | Açıklama                                                                                                                         |
+| Özellik      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
 | Ad          | Uygulamanın adı.                                                                                                        |
@@ -163,7 +163,7 @@ Uyumluluk ilkelerinin özellikleri.
 
 Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
 
-| Özellik           | Açıklama                                                                                                                         |
+| Özellik           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Cihaz adı        | Cihaz türünün adı.                                                                                                     |
 | Yöneten         | İlkenin değiştirildiği zaman damgası.                                                                                              |
@@ -179,7 +179,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 
 EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu, şirket verileriniz Office uygulamaları dahil olmak üzere mobil uygulamalara indirildiğinde, veriler için temel bir koruma sağlar. 
 
-| Özellik    | Açıklama                                                                           |
+| Özellik    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Durum      | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir. |
 | Uygulama adı    | Uygulamanın adı                                                           |
@@ -196,7 +196,7 @@ Satıcıya özgü yapılandırmaları olan mobil uygulamalar için bir uygulama 
 
 Yapılandırma ilkelerinin özellikleri.
 
-| Özellik      | Açıklama                                                                                                                         |
+| Özellik      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
 | Ad          | Uygulamanın adı.                                                                                                        |
@@ -208,7 +208,7 @@ Yapılandırma ilkelerinin özellikleri.
 
 Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
 
-| Özellik           | Açıklama                                                                                                                         |
+| Özellik           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Cihaz adı        | Cihaz türünün adı.                                                                                                     |
 | Yöneten         | İlkenin değiştirildiği zaman damgası.                                                                                              |
@@ -225,7 +225,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 
 EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu, şirket verileriniz Office uygulamaları dahil olmak üzere mobil uygulamalara indirildiğinde, veriler için temel bir koruma sağlar. 
 
-| Özellik    | Açıklama                                                                           |
+| Özellik    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
 | Durum      | Cihaz sahipliği türü. Bu **Şirket**, **Kişisel** veya **Bilinmeyen** olabilir. |
 | Uygulama adı    | Uygulamanın adı                                                           |

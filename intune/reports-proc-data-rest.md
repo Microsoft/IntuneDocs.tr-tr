@@ -2,8 +2,8 @@
 title: "REST istemcisi ile Veri Ambarı API’sinden veri alma"
 description: "Bir RESTful API’si kullanarak Intune Veri Ambarı’ndan veri alın."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fb75d895a2100172fab337dcd740c076ff5e85b7
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 4991a2b26b97428fc54234ff35871d446107b950
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -58,7 +58,7 @@ Artık Azure’da tanımlanan bir uygulamanız var. Yerel uygulamadan Microsoft 
 4.  **Bir API Seç**’e tıklayın.
 5.  Web uygulaması adını aratın. Bu uygulamanın adı **Microsoft Intune API’sidir**.
 6.  Listeden uygulamaya tıklayın.
-7.  **Seç**’i seçin.
+7.  **Seç**’e tıklayın.
 8.  **Microsoft Intune’dan veri ambarı bilgileri almak** için **Temsilcili İzinler**’e tıklayın.
 
     ![Erişimi etkinleştirin](media\reports-get_rest_data_client_access.png)
@@ -76,7 +76,7 @@ Postman gibi genel bir REST istemcisi kullanarak Intune Veri Ambarı API’siyle
 
 Postman kullanarak REST araması yapmak için aşağıdaki bilgilere ihtiyacınız vardır:
 
-| Öznitelik        | Açıklama                                                                                                                                                                          | Örnek                                                                                       |
+| Öznitelik        | Description                                                                                                                                                                          | Örnek                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Geri Çağırma URL’si     | Uygulama ayarları sayfasında bunu, geri arama URL’si olarak ayarlayın.                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | Belirteç Adı       | Kimlik bilgilerini Azure uygulamasına geçirmek için kullanılan dize. İşlem, belirtecinizi oluşturur ve böylece Veri Ambarı API’sine arama yapabilirsiniz.                          | Taşıyıcı                                                                                        |
