@@ -6,6 +6,8 @@
 
 ## [Cihazımı sıfırlama](what-happens-if-you-reset-your-device-cpwebsite.md)
 
+## [Parolamı güncelleştirme](password-does-not-meet-it-administrator-requirements.md)
+
 ## [Şirket Portalı’nda oturum açma](sign-in-to-the-company-portal.md)
 
 ## [Android cihazınızı kullanma](using-your-android-device-with-intune.md)
@@ -72,7 +74,7 @@
 #### [Cihazınızın kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Cihazınızı el ile eşitleme](sync-your-device-manually-ios.md)
 
-#### [iOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-iOS.md)
+### [iOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-iOS.md)
 #### [Ele geçirilen bir iOS cihazı yeniden bağlama](how-to-reconnect-a-compromised-ios-device.md)
 #### [Hataları şirketinize gönderme](send-errors-to-your-it-admin-ios.md)
 #### [Hataları Microsoft'a gönderme](send-logs-to-microsoft-ios.md)
@@ -116,6 +118,7 @@
 #### [Diğer Windows sürümlerini kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Windows cihazınızı kaydetme](enroll-your-device-in-intune-windows.md)
 #### [Windows 10 cihazınızı kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### ["Access iş veya okul" aracılığıyla Windows 10 cihazınızı kaydetme](enroll-your-w10-device-access-work-or-school.md)
 #### [Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetme](enroll-your-w81-or-rt81-windows.md)
 #### [Windows Phone 8.1 cihazınızı kaydetme](enroll-your-wp81-windows.md)
 ### [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
