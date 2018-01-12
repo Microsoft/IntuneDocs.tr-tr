@@ -642,7 +642,7 @@
               href: reports-ref-user-device.md
             - name: Kullanıcı varlığı için başvuru
               href: reports-ref-user.md
-    - name: Windows uygulamalarını dışarıdan yükleme
+    - name: Intune Graph API
       href: intune-graph-apis.md
       items:
         - name: Intune Başvurusu için Graph API’ler
