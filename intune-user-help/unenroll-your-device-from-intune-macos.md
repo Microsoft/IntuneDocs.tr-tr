@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 84a430da9484bc32e6dd20799059d72efaef09d8
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 504d732e00e296ad370d364e553989cacbd124d0
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>macOS cihazınızın Intune kaydını silme
 
-iOS cihazınızın Intune kaydını sildiğinizde, cihazınız artık şirket kaynaklarına erişemez ve Intune tarafından yönetilmez.
+macOS cihazınızın Intune kaydını kaldırdığınızda cihazınız şirket kaynaklarına bir daha erişemez.
 
 macOS cihazınızın yönetim kaydını silmek için bu adımları izleyin:
 
@@ -34,11 +34,11 @@ macOS cihazınızın yönetim kaydını silmek için bu adımları izleyin:
 
 Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 
--   Cihazınız artık Şirket Portalı’nda gösterilmez.
+-   Cihazınız Şirket Portalı’nda gösterilmez.
 
--   Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
+-   Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
--   Cihazı eklediğinizde değiştirilen tüm ayarlar (örneğin, kamerayı devre dışı bırakma veya belirli bir parola uzunluğu gerekliliği) artık geçerliliğini kaybeder.
+-   Cihazı eklediğinizde değiştirilmiş olan ayarların (parola uzunluğu gibi) hiçbiri artık geçerli değildir.
 
 -   Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
 
@@ -46,8 +46,6 @@ Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 
 -   Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
 
--   Şirket e-posta profilleri cihazdan kaldırılır.
-
--   Yalnızca e-posta için yapılandırılan cihazlar artık Şirket Portalı uygulamasında veya web sitesinde gösterilmez.
+-   Şirket e-posta erişimi cihazdan kaldırılabilir.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
