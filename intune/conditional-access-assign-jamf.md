@@ -1,12 +1,12 @@
 ---
-title: "Jamf tarafından yönetilen cihazlar için uyumluluk ilkelerini uygula"
+title: "Jamf tarafından yönetilen cihazlar için uyumluluk ilkelerini zorunlu tutma"
 titlesuffix: Azure portal
 description: "Jamf tarafından yönetilen cihazların güvenliğini sağlamak için uyumluluk kullanın."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,17 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
-ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
+ms.openlocfilehash: c72de87b87775155672994163140e342b7ba99b4
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
 
 |Uygulama hedefi: Azure portalında Intune |
 |--|
 |Klasik portalda Intune hakkında belgeler mi arıyorsunuz? [Buraya gidin](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
-
-|Şu anda özel olarak incelenmektedir|
-|--|
-|Bu konuda açıklanan özellikler, yalnızca şu anda önizlemede olan müşteriler tarafından kullanılabilir. Özellikler tüm müşterilerin kullanımına sunulduğunda bu ileti kaldırılacaktır.|
 | |
 
 Azure Active Directory'yi ve Microsoft Intune koşullu erişim ilkelerini son kullanıcılarınızın kuruluş gereksinimleriyle uyumlu olmasını sağladığından emin olmak için kullanabilirsin. Bu politikaları, [Jamf Pro](conditional-access-integrate-jamf.md) ile yönetilen Mac'lere uygulayabilirsiniz. Bu hem Intune hem de Jamf Pro konsollarına erişim gerektirir.
@@ -48,7 +43,7 @@ Aşağıdaki yordamı izlemeli ve Jamf Pro'da macOS için Şirket Portalı uygul
 2. Jamf Pro açın ve **Bilgisayar Yönetimi** > **Paketleri**’ne gidin.
 3. MacOS için Şirket Portalı uygulamasıyla yeni bir paket oluşturun, ardından  **Kaydet** 'e tıklayın.
 4. **Bilgisayarlar** > **İlkeler** ve ardından **Yeni**’yi seçin.
-5. **Genel** yükünü kullanarak ilkenin ayarlarını yapılandırın. Bu ayarlar şöyle olmalıdır: 
+5. **Genel** yükünü kullanarak ilkenin ayarlarını yapılandırın. Bu ayarlar şöyle olmalıdır:
    - Tetikleyici: **Kayıt Tamamlandı** ve **Yinelenen İade Etme**'yi seçin
    - Yürütme Sıklığı: **Bilgisayar başına bir kez**'i seçin
 6. **Paketler** yükünü seçin ve **Yapılandır**'ı tıklayın.

@@ -3,8 +3,8 @@ title: Intune'da cihaz kategorilerini kullanma
 titleSuffix: Azure portal
 description: "Kullanıcıların cihazlarını Intune'a kaydederken seçebilecekleri cihaz kategorilerini kullanmayı öğrenin.\""
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c100193c7db2be1a5655a1b77e1eec452a189d64
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="map-device-groups"></a>Cihaz gruplarını eşleme
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 12/12/2017
 Cihazların yönetimini kolaylaştırmak için cihazları kendi tanımladığınız kategorilere göre otomatik olarak gruplara eklemek için Microsoft Intune cihaz kategorilerini kullanın.
 
 Cihaz kategorileri aşağıdaki iş akışını kullanır:
-1. Kullanıcıların cihazlarını kaydederken arasından seçim yapacağı kategoriler oluşturma
-3. iOS ve Android cihazlarının son kullanıcıları cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Bir Windows cihazına bir kategori atamak için, son kullanıcıların Şirket Portalı web sitesini kullanmaları gerekir (ayrıntılar için bu konu başlığındaki **Cihaz gruplarını yapılandırdıktan sonra** bölümüne bakın).
-4. Ardından bu gruplara ilkeler ve uygulamalar dağıtabilirsiniz.
+1. Kullanıcıların cihazlarını kaydederken arasından seçim yapabileceği kategoriler oluşturma
+2. iOS ve Android cihazlarının son kullanıcıları cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Bir Windows cihazına bir kategori atamak için, son kullanıcıların Şirket Portalı web sitesini kullanmaları gerekir (diğer ayrıntılar için bu makaledeki **Cihaz gruplarını yapılandırdıktan sonra** bölümüne bakın).
+3. Ardından bu gruplara ilkeler ve uygulamalar dağıtabilirsiniz.
 
 İstediğiniz herhangi bir cihaz kategori oluşturabilirsiniz, örneğin:
 - Satış noktası cihazı
@@ -46,14 +46,14 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 3. **Cihaz Kaydı** dikey penceresinde **Cihaz Kategorileri**’ni seçin.
 4. **Cihaz Kategorileri** sayfasında, yeni kategori eklemek için **Oluştur**’u seçin.
 5. Sonraki dikey pencerede, yeni kategori için bir **Ad** ve isteğe bağlı **Açıklama** girin.
-6. İşiniz bittiğinde **Oluştur**’a tıklayın. Yeni oluşturduğunuz kategoriyi kategoriler listesinde görürsünüz.
+6. İşiniz bittiğinde **Oluştur**’a tıklayın. Kategori listesinde yeni kategoriyi görebilirsiniz.
 
 2. adımda Azure Active Directory güvenlik grupları oluştururken cihaz kategorisi adını kullanacaksınız.
 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>2. Adım - Active Directory güvenlik grupları oluşturma
 Bu adımda, Azure portalında cihaz kategorisi ve cihaz kategorisi adına dayalı dinamik gruplar oluşturacaksınız.
 
-Devam etmek için Azure Active Directory belgelerindeki [Gelişmiş kurallar oluşturmak için öznitelikleri kullanma](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) konusuna bakın.
+Devam etmek için Azure Active Directory belgelerindeki [Gelişmiş kurallar oluşturmak için öznitelikleri kullanma](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) makalesine bakın.
 
 **deviceCategory** özniteliğini kullanarak gelişmiş bir kural ile bir cihaz grubu oluşturmak için bu bölümdeki bilgilerden yararlanın. Örneğin, (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
@@ -88,6 +88,6 @@ Platformları ne olursa olsun, son kullanıcılarınız cihazlarını kaydettikt
 Bir kategori seçtikten sonra cihaz, oluşturduğunuz karşılık gelen gruba otomatik olarak eklenir. Cihaz siz kategorileri yapılandırmadan önce kaydedildiyse, son kullanıcı Şirket Portalı web sitesinde cihaz hakkında bir bildirim görür ve Şirket Portalı uygulamasına iOS veya Android üzerinde bir daha eriştiğinde kendisinden bir kategori seçmesi istenir.
 
 ## <a name="further-information"></a>Daha fazla bilgi
-- Azure Portal’da cihaz kategorisini düzenleyebilirsiniz; ama bunu yaparsanız, bu kategoriye başvuran tüm Azure Active Directory Güvenlik gruplarını el ile güncelleştirmeniz gerekir.
+- Azure Portal’da cihaz kategorisini düzenleyebilirsiniz; ama bu kategoriye başvuran tüm Azure Active Directory Güvenlik gruplarını el ile güncelleştirmeniz gerekir.
 
-- Bir kategoriyi silerseniz, bu kategoriye atanmış olan tüm cihazlar sonunda **Atanmamış** kategori adını görüntüler.
+- Bir kategoriyi silerseniz, bu kategoriye atanmış olan tüm cihazlar **Atanmamış** kategori adını görüntüler.

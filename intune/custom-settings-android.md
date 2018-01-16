@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 86f5b505923a709cd8f8ab4e2d91c6a891e2acc6
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3b1ccb3b0b7b2ce024ff6a09d7f9d8366896fb67
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune’da Android cihazları için özel ayarlar
 
@@ -31,7 +31,7 @@ Bu özellik, Intune ilkeleri ile yapılandırılamayan aşağıdaki Android ayar
 
 - [Microsoft Intune özel cihaz profili kullanarak önceden paylaşılan anahtara sahip Wi-Fi profili oluşturma](/intune/wi-fi-profile-shared-key)
 - [Microsoft Intune özel profili kullanarak Android cihazları için uygulama başına VPN profili oluşturma](/intune/android-pulse-secure-per-app-vpn)
-- [Microsoft Intune’da özel ilkeler kullanarak Samsung KNOX Standart cihazları için uygulamalara izin verme veya bunları engelleme](/intune/samsung-knox-apps-allow-block)
+- [Microsoft Intune’da özel ilkeler kullanarak Samsung Knox Standard cihazları için uygulamalara izin verme veya bunları engelleme](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
 >Şu anda yalnızca yukarıda listelenen ayarlar bu profil türü tarafından yapılandırılabilir. Android cihazlar, yapılandırabileceğiniz OMA-URI ayarlarının tam bir listesini sunmaz. Eklenen diğer ayarları görmek istiyorsanız lütfen [Intune UserVoice sitesinde](https://microsoftintune.uservoice.com/forums/291681-ideas) bunlar için istekte bulunun.

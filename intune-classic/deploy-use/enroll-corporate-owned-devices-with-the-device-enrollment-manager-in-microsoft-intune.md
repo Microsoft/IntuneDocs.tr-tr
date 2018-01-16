@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b37cf4c93d3eb7e56be3716de6b1b5ffb373673
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b55c5d588eb366487a9e1594a46f88551e0b6ee2
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Şirkete ait cihazları Microsoft Intune'daki cihaz kayıt yöneticisi ile kaydetme
 
@@ -30,7 +30,7 @@ Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek
 Kullanıcıların, cihaz kayıt yöneticileri olarak eklenmesi için Azure portalında mevcut olmaları gerekir. En iyi güvenlik için DEM kullanıcısının Intune yöneticisi olmaması gerekir.
 
 >[!NOTE]
->DEM kayıt yöntemi, [Apple Configurator Kurulum Yardımcısı](ios-setup-assistant-enrollment-in-microsoft-intune.md) veya [doğrudan kayıt](ios-direct-enrollment-in-microsoft-intune.md) ya da [DEP kayıt yöntemi](ios-device-enrollment-program-in-microsoft-intune.md) ile birlikte kullanılamaz.
+>DEM kayıt yöntemi, [Apple Configurator Kurulum Yardımcısı](ios-setup-assistant-enrollment-in-microsoft-intune.md) veya [doğrudan kayıt](ios-direct-enrollment-in-microsoft-intune.md), macOS kaydı ve [DEP kayıt yöntemi](ios-device-enrollment-program-in-microsoft-intune.md) ile birlikte kullanılamaz.
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Cihaz kayıt yöneticisi senaryo örneği
 

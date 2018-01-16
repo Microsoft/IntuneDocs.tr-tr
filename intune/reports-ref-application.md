@@ -2,10 +2,10 @@
 title: Uygulama | Microsoft Docs
 description: "Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Uygulama kategorisi için başvuru konusu."
 keywords: "Intune Veri Ambarı"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6698ff8d333d386c1401f942b2bbd4a75d86943c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 10/20/2017
 
 **AppRevision** varlığı, uygulamaların tüm sürümlerini listeler.
 
-| Özellik  | Açıklama | Örnek |
+| Özellik  | Description | Örnek |
 |---------|------------|--------|
 | AppKey |Uygulamanın benzersiz tanımlayıcısı. |123 |
 | ApplicationId |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
@@ -56,15 +56,15 @@ ms.lasthandoff: 10/20/2017
 
 **AppTypes** varlığı, bir uygulamanın yükleme kaynağını listeler.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | AppTypeID |Tür kimliği |
 | AppTypeKey |Anahtar için yedek anahtar |
 | AppTypeName |Uygulama türü |
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
-| AppTypeID  | Ad | Açıklama |
+| AppTypeID  | Ad | Description |
 |---------|------------|--------|
 | 0 |Android mağazası uygulaması | Bir Android mağazası uygulaması. |
 | 1 |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
@@ -85,15 +85,15 @@ ms.lasthandoff: 10/20/2017
 
 **VppProgramTypes** varlığı, bir uygulama için olası VPP program türlerini listeler.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | VppProgramTypeID | Tür kimliği. |
 | VppProgramTypeKey | Anahtar için vekil anahtar. |
 | VppProgramTypeName | VPP Program türü. |
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
-| VppProgramID  | Ad | Açıklama |
+| VppProgramID  | Ad | Description |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft’un VPP programı. |
 | 00000000-0000-0000-0000-000000000000 | Henüz kullanılamıyor | Varsayılan değer, No VPP. |
@@ -105,10 +105,33 @@ ms.lasthandoff: 10/20/2017
 
 **ApplicationInventory** varlığı, envanter toplandığında cihazda bulunan uygulamaları listeler.
 
-| Özellik  | Açıklama |
+| Özellik  | Description |
 |---------|------------|
 | DeviceKey | Bu, Intune cihaz kimliğini içeren Cihaz tablosuna bir başvurudur. |
 | DateKey | Envanterin alındığı günü gösteren tarih tablosuna başvuru. |
 | ApplicationName | Uygulama adı. |
 | ApplicationVersion | Uygulamanın sürümü. |
 | BundleSize | Uygulamanın bayt cinsinden boyutu. |
+
+## <a name="mobileappinstallstate"></a>MobileAppInstallState
+
+**MobileAppInstallState** varlığı, mobil uygulama cihazları, kullanıcıları veya her ikisini de içeren bir gruba atandıktan sonra bu uygulamanın yükleme durumunu gösterir.
+
+| Özellik | Description |
+|---|---|
+| AppInstallStateKey | Hesabınız için uygulama yükleme durumunun benzersiz kimliği. |
+| AppInstallState | Uygulama yükleme durumunun Enum değeri. |
+| AppInstallStateName | Uygulama yükleme durumunun adı. |
+
+## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
+
+**MobileAppDeviceUserInstallStatus** belirli bir cihaz ve kullanıcı için mobil uygulama yükleme durumunu gösterir.
+
+| Özellik | Description |
+|---|---|
+| DateKey | Uygulama yükleme durumunun kaydedildiği tarihin anahtarı. |
+| AppKey | AppRevision örneğini tanımlamak için kullanılan mobil uygulamanın anahtarı. |
+| DeviceKey | Device örneğini tanımlamak için kullanılan hedef cihazın anahtarı. |
+| UserKey | User örneğini tanımlamak için kullanılan hedef kullanıcının anahtarı. |
+|AppInstallStateKey | MobileAppInstallState örneğini tanımlamak için kullanılan uygulama yükleme durumunun anahtarı. |
+| ErrorCode | Uygulama yükleyicisi, mobil platform veya uygulamanın yüklemesiyle ilgili hizmet tarafından döndürülen hata kodu. |

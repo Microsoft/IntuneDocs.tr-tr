@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: 46e850cdda27444d18354b972d10b0cd02c036d9
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Intune ile yönetilen cihazlar için uzaktan yardım sağlama
 
@@ -32,7 +32,7 @@ Intune, yönettiğiniz cihazlar hakkında kullanıcılara uzaktan yardım etmeni
 Intune ile yönetilen Android ve Windows cihazlar, uzaktan yönetimi destekler.
 
 >[!NOTE]
->Windows Holographic (HoloLens), Windows Team (Surface Hub) ve Windows 10 S, TeamViewer yazılımı tarafından desteklenmemektedir. 
+>Windows Holographic (HoloLens), Windows Team (Surface Hub) ve Windows 10 S, TeamViewer yazılımı tarafından desteklenmemektedir. Yine de klasik Intune portalında [PC istemcisini](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) kullanarak cihazları yönetmeniz gerekir.
 
 
 
@@ -77,4 +77,3 @@ TeamViewer penceresinde, cihaz üzerinde cihazın uzaktan kontrol edilmesi dahil
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Son kullanıcı, cihazındaki Intune Şirket Portalı uygulaması simgesinde bir bildirim bayrağı ve uygulamayı açtığında da bir bildirim görür. Daha sonra bu uzaktan yardım isteğini kabul edebilir.
-

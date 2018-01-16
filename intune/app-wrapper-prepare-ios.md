@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -158,7 +158,8 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
   ![Şirket içi sağlama profilini seçin](./media/iOS-provisioning-profile-1.png)
 
-5. **Devam**'a tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
+5. 
+              **Devam**'a tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
 
 6. Profilinizi (.mobileprovision uzantısı ile) Mac OS bilgisayarınıza yükleme adımlarını izleyin.
 
@@ -309,7 +310,7 @@ Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>iOS için Uygulama Sarmalama Aracı’nda desteklenen yetenekler
 
-|Özellik|Açıklama|Önerilen yönerge|
+|Özellik|Description|Önerilen yönerge|
 |--------------|---------------|------------------------|
 |Uygulama grupları|Birden çok uygulamanın paylaşılan kapsayıcılara erişimine ve uygulamalar arasında işlemler arası ek iletişime olanak tanımak için uygulama gruplarını kullanın.<br /><br />Uygulama gruplarını etkinleştirmek için, **Yetenekler** bölmesini açın ve **Uygulama Grupları** bölümünde **AÇIK**’a tıklayın. Uygulama grupları ekleyebilir veya var olanları seçebilirsiniz.|Uygulama Grupları’nı kullanırken, ters DNS gösterimini kullanın:<br /><br />*grup.com.şirketAdı.UygulamaGrubu*|
 |Arka plan modları|Arka plan modlarının etkinleştirilmesi, iOS uygulamanızın arka planda çalışmaya devam etmesine olanak tanır.||
@@ -395,7 +396,19 @@ Uygulama Sarmalama Aracını kullanırken, güvenlik ve gizlilik açısından a�
 
 -   Cihazınızdaki belgeler klasörünü sarmalanan bir uygulamadan izliyorsanız, .msftintuneapplauncher adında bir klasör görebilirsiniz. Bu dosyayı değiştirir veya silerseniz, bu, kısıtlanan uygulamaların düzgün çalışmasını etkileyebilir.
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="getting-logs-for-your-wrapped-applications"></a>Sarmalanmış uygulamalarınız için günlükleri alma
+Sorun giderme sırasında sarmalanmış uygulamalarınızın günlüklerini almak için aşağıdaki adımları kullanın.
+
+1. Cihazınızda iOS Ayarları uygulamasına gidin ve LOB uygulamanızı seçin.
+2. **Tanılama Konsolu** düğmesini **Açık** duruma getirin.
+3. LOB uygulamanızı başlatın.
+4. "Başlarken" bağlantısına tıklayın.
+5. Artık uygulamaları e-posta aracılığıyla veya bir OneDrive konumuna kopyalayarak paylaşabilirsiniz.
+
+>[!NOTE]
+Günlük işlevi, Intune Uygulama Sarmalama Aracı sürüm 7.1.13 veya üstüyle sarmalanmış uygulamalar için etkinleştirilir.
+
+### <a name="see-also"></a>Ayrıca bkz:
 - [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](apps-prepare-mobile-application-management.md)</br>
 - [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
