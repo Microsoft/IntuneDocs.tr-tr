@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae53ced489542ba7e675e547740f1858d761c7ab
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: c5645e337e34c6310c82a76d537fe6539e04e71e
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune Uygulama SDK'sı Xamarin Bileşeni
 
@@ -78,6 +78,7 @@ Intune Uygulama SDK’sı Xamarin Bileşeni ile derlenen Xamarin uygulamaları a
 1.  Intune Uygulama SDK'sını iOS mobil uygulamasına tümleştirmek için gereken genel adımları izleyin. [iOS için Intune Uygulama SDK'si Geliştirici Kılavuzu](app-sdk-ios.md#build-the-sdk-into-your-mobile-app)'nda verilen tümleştirme yönergelerinin 3. adımıyla başlayabilirsiniz.
     **Önemli**: Visual Studio'da uygulama için anahtarlık paylaşımını etkinleştirme işlemi Xcode'dakinden biraz farklıdır. Uygulamanın Yetkilendirmeler plist dosyasını açın, "Anahtarlığı Etkinleştir" seçeneğinin etkinleştirildiğinden ve uygun anahtarlık paylaşım gruplarının bu bölüme eklendiğinden emin olun. Ardından, tüm uygun Yapılandırma/Platform bileşimleri için projenin "iOS Paketi İmzalama" seçeneklerindeki "Özel Yetkilendirmeler" alanında Yetkilendirmeler plist dosyasının belirtildiğinden emin olun.
 2.  Bileşen eklendikten ve uygulama düzgün bir şekilde yapılandırıldıktan sonra, uygulamanız Intune SDK'sının API'lerini kullanmaya başlayabilir. Bunu yapmak için, aşağıdaki ad alanını eklemelisiniz:
+
       ```csharp
       using Microsoft.Intune.MAM;
       ```
