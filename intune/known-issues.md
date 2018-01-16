@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
+ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -43,31 +43,6 @@ Azure Portal üzerinde Intune'da Windows 10'u yönetme özelliği, Windows MDM k
 
 Intune’dan Azure portalına geçiş yaptığınızda **Tüm Kullanıcılar - b0b08746-4dbe-4a37-9adf-9e7652c0b421** adlı yeni bir grup görebilirsiniz. Bu grupta yalnızca Intune lisanslı kullanıcılar değil Azure Active Directory'niz içindeki tüm kullanıcılar bulunur. Mevcut kullanıcılardan bazılarının veya yeni kullanıcıların herhangi bir gruba üye olmamasını bekliyorsanız bu kullanım diğer Microsoft ürünlerinde sorunlara neden olabilir.
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>Seçilen özellikler için gerekli ikincil geçiş
-
-Aşağıdaki özelliklerin Azure portalında kullanılabilmesi için Ocak 2017’den önce oluşturulan Intune hesapları geçirilmelidir:
-
-- Şirket Cihaz Kayıt profilleri
-- Apple Cihaz Kaydı Programı
-- Şirket cihazlarını iOS seri numarasına göre önceden bildirme
-- Cihaz Kayıt Yöneticisi hesapları
-- Apple Volume Purchase Program
-
-Bu özellikler hem Intune (Silverlight) konsolu hem Azure portalından yönetilemediği için geçiş işlemi:
-- Bunları klasik portalda devre dışı bırakır
-- Azure portalında etkinleştirir  
-
-22 Eylül 2017 tarihinden sonra, bu özelliklerin geçişi ile birincil Azure geçişi birleştirilecektir. Hesabınız zaten Azure portalını kullanmak üzere geçirilmişse bu ikinci geçiş zaten tamamlanmış olabilir. Tamamlanmamışsa da bu işlevler Kasım ayına kadar Azure’a geçirilecektir. Hesabınızın geçişi, başladığı gün tamamlanır. Geçiş, bu özelliklerin klasik Intune portalında devre dışı bırakıldığı süreden itibaren 6 saat kadar sürebilir.
-
-Artık Intune özelliklerini Azure portalında yönetiyorsanız aşağıdaki hususları göz önünde bulundurun:
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Apple DEP’te varsayılan Kurumsal Cihaz Kaydı profillerini kaldırır
-Azure portalı, Apple Aygıt Kayıt Programı (DEP) cihazları için varsayılan bir Şirket Cihaz Kaydı profili desteklemez. Intune (Silverlight) konsolunda sağlanan bu işlevsellik, profillerin yanlışlıkla atanmasını önlemek için kullanımdan kaldırılmıştır. Azure portalında DEP seri numaraları eşitlenirken, hiçbir Şirket Cihaz Kaydı profili atanmaz. Cihaz kullanılmadan önce bir kayıt profili atanmalıdır.
-
-#### <a name="apple-dep-token-restored-with-migration"></a>Apple DEP belirtecinin geçiş ile geri yüklenmesi
-
-Intune (Silverlight) portalında bir Apple Aygıt Kayıt Programı belirtecini sildiyseniz ve Azure portalına yeni bir belirteç yüklemezseniz geçiş yaptığınızda özgün belirteç Azure portalına geri yüklenir. Bu belirteci kaldırmak ve DEP kaydını önlemek için belirteci Azure portalından silin.
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Geçirilen ilkeler için durum dikey pencereleri çalışmıyor
 
 Azure portalındaki klasik portaldan geçirilen ilkeler için durum bilgilerini görüntüleyemezsiniz. Ancak, bu ilkelerin raporlarını klasik portalda görüntülemeye devam edebilirsiniz. Geçirilen yapılandırma ilkelerinin durum bilgilerini görüntülemek için bunları Azure portalında yeniden oluşturun.
@@ -79,6 +54,9 @@ iOS toplu satın alınan uygulamaları, yalnızca Intune hesabınız ile aynı �
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Aynı iOS toplu satın alınan programının birden fazla kopyası karşıya yükleniyor
 Aynı VPP belirteci için **Karşıya Yükle** düğmesine birden çok kez tıklamayın. Bu, yinelenen VPP belirteçlerinin karşıya yüklenmesine ve uygulamaların aynı VPP belirteci için birden çok kez eşitlenmesine neden olur.
+
+### <a name="assigning-office-365-to-macos-devices"></a>macOS cihazlarına Office 365'i atama
+Microsoft Intune'la macOS cihazlarına Office 365'i atama özelliği, kullanıcı arabirimi güncelleştirmemiz tamamlandıktan sonra kullanıma sunulacaktır.
 
 <!-- ## Groups -->
 

@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 237d6d090d0aae7f9a0853839b72d55618f4607e
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 1bdd9002c70ea8d9e8b16b73d4d8416eeec3341b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 cihazlar için Intune’da PowerShell betiklerini yönetme
 Intune yönetim uzantısı, Intune’da PowerShell betiklerini Windows 10 cihazlarda çalıştırmak için karşıya yüklemenize olanak sağlar. Yönetim uzantısı Windows 10 mobil cihaz yönetimi (MDM) özelliklerini tamamlar ve modern yönetime geçiş yapmayı kolaylaştırır.
@@ -57,7 +57,7 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
   ![PowerShell betiği dikey penceresi ekleme](./media/mgmt-extension-assignments.png)
  
 6. Kullanılabilir Azure AD gruplarını listelemek için **Grupları Seç**’i seçin. 
-7. Grupları seçin ve daha sonra ilkeyi seçili gruplara atamak için **Seç**’e tıkayın.
+7. Cihazları betiği alacak olan kullanıcıların bulunduğu bir veya birden çok grup seçin ve ardından **Seç**'e tıklayarak seçili gruplara ilkeyi atayın.
 
 Intune yönetim uzantısı saatte bir kez Intune ile eşitlenir. İlkeyi Azure AD gruplarına atadıktan sonra, PowerShell betiği çalıştırılır ve çalıştırma sonuçları raporlanır. 
  

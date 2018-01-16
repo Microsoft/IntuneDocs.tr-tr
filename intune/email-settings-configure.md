@@ -15,11 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dc9c67db2a93b6cd0f1db1894b079183ee9c945
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f697b575a5cdc1fa4009d08a14452508eacb8de1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune’da e-posta ayarlarını yapılandırma
 
@@ -31,7 +31,7 @@ Platformların çoğunda yerleşik posta istemcisi desteklenir. Üçüncü taraf
 
 Aşağıdaki cihaz türlerinde yerel e-posta istemcisini yapılandırmak için e-posta profillerini kullanabilirsiniz:
 
-- Android Samsung KNOX Standard 4.0 ve üzeri
+- Android Samsung Knox Standard 4.0 ve üzeri
 - Android for Work
 - iOS 8.0 ve üzeri
 - Windows Phone 8.1 ve üzeri
@@ -48,14 +48,14 @@ Bu konu başlığı altında verilen bilgileri kullanarak e-posta profilini yap�
 3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
 4. **Profil Oluştur** dikey penceresinde, e-posta profili için bir **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden, e-posta ayarlarını uygulamak istediğiniz cihaz platformunu seçin. Şu anda, e-posta cihaz ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
-    - **Android** (yalnızca Samsung Android KNOX Standard)
+    - **Android** (yalnızca Samsung Android Knox Standard)
     - **Android for Work**
-    - **Android**
+    - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 ve üzeri**
 6. **Profil** türü açılan listesinden **E-posta**’yı seçin.
-7. Seçtiğiniz platforma bağlı olarak , yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
-    - [Android for Work ve Samsung KNOX Standard ayarları](email-settings-android.md)
+7. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
+    - [Android for Work ve Samsung Knox Standard ayarları](email-settings-android.md)
     - [iOS ayarları](email-settings-ios.md)
     - [Windows Phone 8.1 ayarları](email-settings-windows-phone-8-1.md)
     - [Windows 10 ayarları](email-settings-windows-10.md)
@@ -86,7 +86,7 @@ Kullanıcı zaten bir e-posta hesabı yapılandırmışsa, Intune e-posta profil
 
 - **iOS:** Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Yinelenen e-posta profili, Intune profilinin atamasını engeller. Bu durumda, Şirket Portalı kullanıcıya uyumlu olmadığını bildirir ve kullanıcıdan el ile yapılandırılan profili kaldırmasını ister. Bu sorunun önüne geçilmesine yardımcı olmak için, kullanıcılarınızdan e-posta profilini yüklemeden önce kaydolmalarını isteyin. Bu, Intune’un profili ayarlamasına olanak tanır.
 - **Windows:** Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Intune kullanıcı tarafından oluşturulmuş, var olan e-posta profilinin üzerine yazar.
-- **Android Samsung KNOX Standard** E-posta adresine bağlı olarak mevcut ve yinelenen bir e-posta profili algılanmış ve Intune profili bunun üzerine yazılmıştır.
+- **Android Samsung Knox Standard** E-posta adresine bağlı olarak mevcut ve yinelenen bir e-posta profili algılanmış ve Intune profili bunun üzerine yazılmıştır.
 Android’in profili algılamak için konak adını kullanmaması nedeniyle, farklı konaklarda aynı e-posta adresinde kullanmak üzere birden çok e-posta profili oluşturursanız bunlar birbirinin üzerine yazılacağından, bunu yapmamanızı öneririz.
 - **Android for Work** Intune; Gmail ve Nine Work e-posta uygulamaları için birer tane olmak üzere iki Android for Work profili sağlar. Bu uygulamalar Google Play Store’da mevcuttur, cihaz iş profiline yüklenir ve bu yüzden yinelenen profiller oluşturmazlar. Her iki uygulama da Exchange bağlantılarını destekler. E-posta bağlantısını etkinleştirmek için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın ve ardından uygun e-posta profilini oluşturup dağıtın. Nine Work gibi e-posta uygulamaları ücretsiz olmayabilir. Uygulamanın lisanslama ayrıntılarını gözden geçirin veya sorunuz varsa uygulama şirketine başvurun.
 

@@ -3,8 +3,8 @@ title: "Windows 10 için toplu kayıt"
 titlesuffix: Azure portal
 description: "Microsoft Intune için toplu kayıt paketi oluşturma"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: Erikje
+ms.author: erikje
 manager: angrobe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
@@ -29,8 +29,6 @@ Bir yönetici olarak çok sayıda yeni Windows cihazını Azure Active Directory
 Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan Intune ilkelerini ve gerekli uygulamaları alırlar. Self Servis ve Şirket Portalı senaryoları şu anda desteklenmiyor.
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows cihazları toplu kaydetme önkoşulları
-
-Windows cihazları toplu kaydetmek için aşağıdakiler gereklidir:
 
 - Windows 10 Creator Update veya üzerini çalıştıran cihazlar
 - [Windows otomatik kayıt](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -43,15 +41,15 @@ Windows cihazları toplu kaydetmek için aşağıdakiler gereklidir:
 2. **Windows Yapılandırma Tasarımcısı** uygulamasını açın ve **Masaüstü cihazları sağla** seçeneğini belirleyin.
 ![Windows Yapılandırma Tasarımcısı uygulamasında Masaüstü cihazları sağla seçeneğini belirlemenin ekran görüntüsü](media/bulk-enroll-select.png)
 
-3. Aşağıdakileri belirttiğiniz **Yeni proje** penceresi açılır:
+3. Aşağıdaki bilgileri belirttiğiniz **Yeni proje** penceresi açılır:
   - **Ad** - Projenizin adı
-  - **Proje klasörü** - Projenizin kaydedileceği yer
+  - **Proje klasörü** - Projenin kaydetme konumu
   - **Açıklama** - Proje için isteğe bağlı bir açıklama ![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-name.png)
 
 4.  Cihazlarınız için benzersiz bir ad girin. Adlar bir seri numarası (%%SERIAL%%) veya rastgele bir karakter kümesi içerebilir. İsteğe bağlı olarak Windows sürümünü yükseltiyor, cihazı paylaşımlı kullanım için yapılandırıyor ve önceden yüklenmiş yazılımları kaldırıyorsanız bir ürün anahtarı girebilirsiniz.
 ![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-device.png)
 
-5.  İsteğe bağlı olarak, cihazları ilk kez başlattığınızda bağlanacakları Wi-Fi ağını yapılandırabilirsiniz.  Yapılandırılmadıysa, cihaz ilk başlatıldığında kablolu bir ağ bağlantısı gerekir.
+5.  İsteğe bağlı olarak, cihazları ilk kez başlattığınızda bağlanacakları Wi-Fi ağını yapılandırabilirsiniz.  Ağ cihazları yapılandırılmadıysa, cihaz ilk başlatıldığında kablolu bir ağ bağlantısı gerekir.
 ![Windows Yapılandırma Tasarımcısı uygulamasında Ağ SSID’si ve Ağ türü seçeneklerini içeren Wi-Fi etkinleştirme ekran görüntüsü](media/bulk-enroll-network.png)
 
 6.  **Azure AD'ye Kaydet**’i seçin, bir **Toplu Belirteç Süre Sonu** tarihi girin ve ardından **Toplu Belirteç Al**’ı seçin.
@@ -77,7 +75,7 @@ Windows cihazları toplu kaydetmek için aşağıdakiler gereklidir:
 
  Sağlama paketi uygulama ile ilgili adım adım yönergeler için bkz. [Sağlama paketi uygulama](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
-3. Paketi uyguladıktan sonra, cihaz 1 dakika içinde otomatik olarak yeniden başlatılır.
+3. Paketi uyguladıktan sonra, cihaz bir dakika içinde otomatik olarak yeniden başlatılır.
  ![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-add.png)
 
 4. Cihaz yeniden başlatıldığında, Azure Active Directory'ye bağlanır ve Microsoft Intune’a kaydedilir.
@@ -88,14 +86,14 @@ Windows cihazları toplu kaydetmek için aşağıdakiler gereklidir:
 Sağlama, yeni Windows cihazlarda kullanılmak üzere tasarlanmıştır. Sağlama hataları cihazın fabrika ayarlarına sıfırlanmasını veya bir önyükleme görüntüsünden kurtarılmasını gerektirebilir. Bu örneklerde sağlama hatalarının bazı nedenleri açıklanır:
 
 - Yerel bir hesap oluşturmayan bir Active Directory etki alanına veya Azure Active Directory kiracısına katılmayı deneyen bir sağlama paketinin, ağ bağlantısı olmaması nedeniyle etki alanına katılma işlemi başarısız olursa cihaza ulaşılamayabilir.
-- Sağlama paketi tarafından çalıştırılan betikler sistem bağlamında çalışır ve cihazın dosya sistemi ve yapılandırmalarında rastgele değişiklikler yapabilir. Kötü amaçlı veya hatalı bir betik, cihazın yalnızca yeniden görüntü oluşturma veya fabrika ayarlarına sıfırlama yollarıyla kurtarılabilecek bir duruma gelmesine neden olabilir.
+- Sağlama paketi tarafından çalıştırılan betikler, sistem bağlamında çalıştırılır. Betikler cihaz dosya sisteminde ve yapılandırmalarında rastgele değişiklikler yapabilir. Kötü amaçlı veya hatalı bir betik, cihazın yalnızca yeniden görüntü oluşturma veya fabrika ayarlarına sıfırlama yollarıyla kurtarılabilecek bir duruma gelmesine neden olabilir.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Toplu kayıt ve Şirket Portalı ile ilgili sorunlar
 Bir kullanıcı, daha önce Şirket Portalı kullanılarak toplu olarak kaydedilmiş bir cihazı kaydetmeye çalışırsa cihazının kurulum veya kayıt gibi ek eylemler gerektirdiğine dair uyarılar alır. Cihaz kaydedilir ancak kayıt, Şirket Portalı uygulaması veya web sitesi tarafından tanınmaz.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi ile toplu kayıt 
 
-Toplu kayıtlı cihazlar, kullanıcı hedefli sertifikaları ve Wi-Fi dağıtımını kullanamaz. Bu bağlantıları yönetmek için [cihaz düzeyinde sertifikalara](certificates-configure.md) ihtiyaç duyacaksınız. 
+Toplu kayıtlı cihazlar, kullanıcı hedefli sertifikaları ve Wi-Fi dağıtımını kullanamaz. Bu bağlantıları yönetmek için [cihaz düzeyinde sertifikalara](certificates-configure.md) ihtiyacınız vardır. 
 
 ### <a name="conditional-access"></a>Koşullu erişim
 Koşullu erişim, toplu kayıt kullanılarak kaydedilen Windows cihazlar için kullanılamaz.

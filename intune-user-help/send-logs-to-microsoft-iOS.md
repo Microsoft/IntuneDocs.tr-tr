@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 082acce8d82d50be28e0328c76e63c4440608983
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 28c83baeea59f1722744ea63ac19c21599fccebf
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Günlükleri, iOS cihazları için Şirket Portalı geliştiricilerine gönderme
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/12/2017
 Bu sorunla karşılaşıyorsanız Şirket Portalı ekibi, kök nedeni tanılamak için bazı bilgilere ihtiyaç duyar. Yapmanız gerekenler şunlardır:
 
 1.  Sorunu yeniden ortaya çıkarmaya çalışın. Yapamıyorsanız önemli değildir, ancak yapabilirseniz bir sonraki adım daha kolay olacaktır.
-2.  __Ayarlar__ > __Gizlilik__ > __Tanılama ve Kullanım__ > __Tanılama ve Kullanım Verileri__’ne gidin. Bu, kilitlenmelerden genel kullanım kalıplarına kadar gerçekleşen uygulama etkinliklerinin bir listesidir ve herhangi bir kişisel bilgi içermez. Bu liste, en yeniden en eskiye doğru düzenlenmiştir. Sorunu yeniden oluşturmayı başardıysanız, bu sayfadaki uygulama etkinliği listesinde ilk maddede görmeniz gerekir. Sorunu yeniden oluşturamadıysanız, listede "Şirket Portalı" ile başlayan ilk maddeyi bulana kadar aşağı kaydırın ve dokunarak bu maddeyi açın.
+2.  __Ayarlar__ > __Gizlilik__ > __Analiz__ > __Analiz Verileri__'ne gidin. Bu, kilitlenmelerden genel kullanım kalıplarına kadar gerçekleşen uygulama etkinliklerinin bir listesidir ve herhangi bir kişisel bilgi içermez. Bu liste, en yeniden en eskiye doğru düzenlenmiştir. Sorunu yeniden oluşturmayı başardıysanız, bu sayfadaki uygulama etkinliği listesinde ilk maddede görmeniz gerekir. Sorunu yeniden oluşturamadıysanız, listede "Şirket Portalı" ile başlayan ilk maddeyi bulana kadar aşağı kaydırın ve dokunarak bu maddeyi açın.
 3.  Basılı tutup küçük mavi noktaları yukarı ve aşağı doğru sürükleyerek rapordaki tüm metni seçin. Açılır menüde __Kopyala__’ya dokunun.
 4.  E-posta uygulamanızı açın ve bu içeriği e-postanın gövdesine yapıştırın. Bu e-postayı <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a> adresine gönderin.
 

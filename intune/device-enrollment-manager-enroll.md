@@ -3,10 +3,10 @@ title: "Cihazları kaydetme - cihaz kayıt yöneticisi"
 titlesuffix: Azure portal
 description: "Intune'a cihaz kaydetmek için cihaz kayıt yöneticisi hesabını kullanın. \""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 03facdde2ff5652799cc3d2113a48ea5ae772ea9
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Cihaz kayıt yöneticisini kullanarak cihazları kaydetme
 
@@ -30,7 +30,7 @@ Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek
 Kullanıcıların, cihaz kayıt yöneticileri olarak eklenmesi için Azure portalında mevcut olmaları gerekir. En iyi güvenlik için DEM kullanıcısının Intune yöneticisi olmaması gerekir.
 
 >[!NOTE]
->DEM kayıt yöntemi şu kayıt yöntemleriyle birlikte kullanılamaz: [Kurulum Yardımcısı ile Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md), [doğrudan kayıt ile Apple Configurator](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) veya [Cihaz Kayıt Programı (DEP)](device-enrollment-program-enroll-ios.md).
+>DEM kayıt yöntemi şu kayıt yöntemleriyle birlikte kullanılamaz: [Kurulum Yardımcısı ile Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md), [doğrudan kayıt ile Apple Configurator](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) veya [Cihaz Kayıt Programı (DEP)](device-enrollment-program-enroll-ios.md). Ayrıca macOS cihazlarını kaydetmek için de kullanılamaz. 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Cihaz kayıt yöneticisi senaryo örneği
 

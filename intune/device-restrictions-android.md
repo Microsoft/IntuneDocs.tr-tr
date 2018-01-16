@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,35 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffddf9e5fcdf8359c729eb048a6f8052a1b3286f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c89d253f28a26a560251b159a3705016b4c7fad3
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android ve Samsung KNOX Standard cihaz kısıtlama ayarları
+# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android ve Samsung Knox Standard cihaz kısıtlama ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Cihazları kuruluşunuzda yapılandırmak için bu ayarları bir Android cihaz kısıtlama ilkesiyle birlikte kullanın.
 
 >[!TIP]
->İstediğiniz ayarlar mevcut değilse cihazlarınızı bir [özel profil](custom-settings-android.md) kullanarak yapılandırabilirsiniz. 
+>İstediğiniz ayarlar mevcut değilse cihazlarınızı bir [özel profil](custom-settings-android.md) kullanarak yapılandırabilirsiniz.
 
 ## <a name="general"></a>Genel
 
 - **Kamera** - Cihaz kamerasının kullanılmasına izin verir.
-- **Kopyala ve Yapıştır (yalnızca Samsung KNOX)** - Cihazda kopyalama ve yapıştırma işlevlerine izin verir.
-- **Uygulamalar arasında pano paylaşımı (yalnızca Samsung KNOX)** - Uygulamalar arasında kopyalama ve yapıştırma işlemleri için panonun kullanımına izin verir.
-- **Tanılama verileri gönderme (yalnızca Samsung KNOX)** - Kullanıcının cihazdan tanılama verileri göndermesini durdurur.
-- **Fabrika sıfırlaması (yalnızca Samsung KNOX)** - Kullanıcının cihazda fabrika sıfırlaması gerçekleştirmesine izin verir.
-- **Coğrafi konum (yalnızca Samsung KNOX)** - Cihazın konum bilgilerini kullanmasına izin verir.
-- **Kapatma (yalnızca Samsung KNOX)** - Kullanıcının cihazı kapatmasına izin verir.<br>Devre dışı bırakılırsa **Cihaz silinmeden önceki oturum açma hatası sayısı** ayarlanamaz.
-- **Ekran yakalama (yalnızca Samsung KNOX)** - Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
-- **Sesli yardımcı (yalnızca Samsung KNOX)** - Cihazda sesli yardım yazılımının kullanımına izin verir.
-- **YouTube (yalnızca Samsung KNOX)** - Cihazda YouTube uygulamasının kullanımına izin verir.
-- **Paylaşılan cihazlar (yalnızca Samsung KNOX)** - Yönetilen bir Samsung KNOX Standard cihazını paylaşılan cihaz olarak yapılandırın. Bu modda, son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da yönetilmeye devam eder.<br>SCEP sertifika profiliyle birlikte kullanıldığında, bu özellik son kullanıcıların, tüm kullanıcılar için aynı uygulama kümesini içeren ancak kendi SCEP kullanıcı sertifikası olan bir cihazı paylaşmalarına olanak tanır.  Kullanıcılar oturumu kapattığında tüm veriler silinir.  Bu özellik yalnızca LOB uygulamalarıyla sınırlıdır.
+- **Kopyala ve Yapıştır (yalnızca Samsung Knox)** - Cihazda kopyalama ve yapıştırma işlevlerine izin verir.
+- **Uygulamalar arasında pano paylaşımı (yalnızca Samsung Knox)** - Uygulamalar arasında kopyalama ve yapıştırma işlemleri için panonun kullanımına izin verir.
+- **Tanılama verileri gönderme (yalnızca Samsung Knox)** - Kullanıcının cihazdan tanılama verileri göndermesini durdurur.
+- **Fabrika sıfırlaması (yalnızca Samsung Knox)** - Kullanıcının cihazda fabrika sıfırlaması gerçekleştirmesine izin verir.
+- **Coğrafi konum (yalnızca Samsung Knox)** - Cihazın konum bilgilerini kullanmasına izin verir.
+- **Kapatma (yalnızca Samsung Knox)** - Kullanıcının cihazı kapatmasına izin verir.<br>Devre dışı bırakılırsa **Cihaz silinmeden önceki oturum açma hatası sayısı** ayarlanamaz.
+- **Ekran yakalama (yalnızca Samsung Knox)** - Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
+- **Sesli yardımcı (yalnızca Samsung Knox)** - Cihazda sesli yardım yazılımının kullanımına izin verir.
+- **YouTube (yalnızca Samsung Knox)** - Cihazda YouTube uygulamasının kullanımına izin verir.
+- **Paylaşılan cihazlar (yalnızca Samsung Knox)** - Yönetilen bir Samsung Knox Standard cihazını paylaşılan cihaz olarak yapılandırın. Bu modda, son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da yönetilmeye devam eder.<br>SCEP sertifika profiliyle birlikte kullanıldığında, bu özellik son kullanıcıların, tüm kullanıcılar için aynı uygulama kümesini içeren ancak kendi SCEP kullanıcı sertifikası olan bir cihazı paylaşmalarına olanak tanır.  Kullanıcılar oturumu kapattığında tüm veriler silinir.  Bu özellik yalnızca LOB uygulamalarıyla sınırlıdır.
+- **Tarih ve saat değişikliklerini engelle (Samsung Knox)** - Kullanıcının cihazda tarih ve saat ayarlarını değiştirmesini engelleyin. 
 
 ## <a name="password"></a>Parola
 
@@ -60,8 +61,8 @@ Cihazları kuruluşunuzda yapılandırmak için bu ayarları bir Android cihaz k
     - **En az alfasayısal**
     - **En az simgeler ile alfasayısal**
 - **Önceki parolaların yeniden kullanılmasını engelle** - Son kullanıcının daha önce kullanmış olduğu bir parolayı oluşturmasını durdurur.
-- **Parmak izi ile kilit açmaya izin ver (yalnızca Samsung KNOX)** - Desteklenen cihazların kilidini açmak için parmak izi kullanımına izin verir.
-- **Akıllı Kilitleme ve diğer güven aracıları** - Uyumlu Android cihazlarda Akıllı Kilitleme özelliğini denetlemenize olanak tanır (Samsung KNOX Standard 5.0 ve üstü). Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Örneğin, cihaz belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda bu kullanılabilir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.
+- **Parmak izi ile kilit açmaya izin ver (yalnızca Samsung Knox)** - Desteklenen cihazların kilidini açmak için parmak izi kullanımına izin verir.
+- **Akıllı Kilitleme ve diğer güven aracıları** - Uyumlu Android cihazlarda Akıllı Kilitleme özelliğini denetlemenize olanak tanır (Samsung Knox Standard 5.0 ve üstü). Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Örneğin, cihaz belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda bu kullanılabilir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.
 - **Şifreleme** - Cihazdaki dosyaların şifrelenmesini gerektirir.
 
 <sup>1</sup> Bu ayarı cihazlara atamadan önce, Şirket Portalı uygulamasının bu cihazlarda en son sürüme güncelleştirilmiş olduğundan emin olun.
@@ -73,11 +74,11 @@ Cihazları kuruluşunuzda yapılandırmak için bu ayarları bir Android cihaz k
 
 ## <a name="google-play-store"></a>Google Play Store
 
-- **Google Play Store (yalnızca Samsung KNOX)** - Kullanıcının cihazda Google Play Store’a erişmesine izin verir.
+- **Google Play Store (yalnızca Samsung Knox)** - Kullanıcının cihazda Google Play Store’a erişmesine izin verir.
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
 
-Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini hem Android hem de Samsung KNOX Standard cihazları için yapılandırabilirsiniz:
+Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini hem Android hem de Samsung Knox Standard cihazları için yapılandırabilirsiniz:
 
 **Yasak uygulamalar** listesi - Kullanıcılar yükleyip çalıştırdığında raporlanacak uygulamaları (Intune tarafından yönetilmeyenler) listeler.
 **Onaylı uygulamalar** listesi - Kullanıcıların yüklemesine izin verilen uygulamaları listeleyin. Uyumluluğun korunması için kullanıcılar diğer uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.
@@ -101,48 +102,48 @@ Listeyi bir csv dosyasından almak için **İçeri Aktar**’a da tıklayabilirs
 
 ## <a name="browser"></a>Tarayıcı
 
-- **Web tarayıcısı (yalnızca Samsung KNOX)** - Cihazın varsayılan web tarayıcısının kullanılıp kullanılamayacağını belirtir.
-- **Otomatik doldurma (yalnızca Samsung KNOX)** - Kullanılacak web tarayıcısının otomatik doldurma işlevine izin verir.
-- **Tanımlama bilgileri (yalnızca Samsung KNOX)** - Cihazdaki web tarayıcısının tanımlama bilgileri kullanmasına izin verir.
-- **Javascript (yalnızca Samsung KNOX)** - Cihazdaki web tarayıcısının Java betiklerini çalıştırmasına izin verir.
-- **Açılır pencereler (yalnızca Samsung KNOX)** - Web tarayıcısında açılır pencere engelleyicisinin kullanımına izin verir.
+- **Web tarayıcısı (yalnızca Samsung Knox)** - Cihazın varsayılan web tarayıcısının kullanılıp kullanılamayacağını belirtir.
+- **Otomatik doldurma (yalnızca Samsung Knox)** - Kullanılacak web tarayıcısının otomatik doldurma işlevine izin verir.
+- **Tanımlama bilgileri (yalnızca Samsung Knox)** - Cihazdaki web tarayıcısının tanımlama bilgileri kullanmasına izin verir.
+- **Javascript (yalnızca Samsung Knox)** - Cihazdaki web tarayıcısının Java betiklerini çalıştırmasına izin verir.
+- **Açılır pencereler (yalnızca Samsung Knox)** - Web tarayıcısında açılır pencere engelleyicisinin kullanımına izin verir.
 
 ## <a name="allow-or-block-apps"></a>Uygulamalara izin verme veya uygulamaları engelleme
 
-Bu ayarlar, yalnızca Samsung KNOX Standard çalıştıran cihazlara yüklenebilen veya bu cihazlarda başlatılabilen uygulamaları belirtmek için kullanılabilir.
+Bu ayarlar, yalnızca Samsung Knox Standard çalıştıran cihazlara yüklenebilen veya bu cihazlarda başlatılabilen uygulamaları belirtmek için kullanılabilir.
 Ayrıca, cihaz kullanıcısından gizlenecek yüklü uygulamaları da belirtebilirsiniz. Kullanıcılar bu uygulamaları çalıştıramaz.
 
-- **Yüklenmesine izin verilen uygulamalar (yalnızca Samsung KNOX Standard)**
-- **Başlatılması engellenen uygulamalar (yalnızca Samsung KNOX Standard)**
-- **Kullanıcıdan gizlenen uygulamalar (yalnızca Samsung KNOX Standard)**
+- **Yüklenmesine izin verilen uygulamalar (yalnızca Samsung Knox Standard)**
+- **Başlatılması engellenen uygulamalar (yalnızca Samsung Knox Standard)**
+- **Kullanıcıdan gizlenen uygulamalar (yalnızca Samsung Knox Standard)**
 
 Her ayar için aşağıdakilerden birini kullanarak bir uygulama listesi yapılandırın:
 
-- **Paket adına göre uygulama ekleme** - Öncelikli olarak iş kolu uygulamaları için kullanılır. Uygulamanın ve uygulama paketinin adını girin. 
+- **Paket adına göre uygulama ekleme** - Öncelikli olarak iş kolu uygulamaları için kullanılır. Uygulamanın ve uygulama paketinin adını girin.
 - **URL’ye göre uygulama ekleme** - Uygulamanın adını ve Google Play mağazası URL’sini girin.
 - **Yönetilen uygulamalar ekleme** - Intune ile yönettiğiniz uygulamalar listesinden ihtiyacınız olan uygulamayı seçin.
 
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 
-- **Google yedekleme (yalnızca Samsung KNOX)** - Google yedeklemesinin kullanımına izin verir.
-- **Google hesabı otomatik eşitlemesi (yalnızca Samsung KNOX)** - Google hesabı ayarlarının otomatik olarak eşitlenmesine izin verir.
-- **Çıkarılabilir depolama birimi (yalnızca Samsung KNOX)** - Cihazın SD kartı gibi bir çıkarılabilir depolama birimi kullanmasına izin verir.
-- **Depolama kartlarında şifreleme (yalnızca Samsung KNOX)** - Cihaz depolama kartını şifrelemenin gerekip gerekmediğini belirtir.
+- **Google yedekleme (yalnızca Samsung Knox)** - Google yedeklemesinin kullanımına izin verir.
+- **Google hesabı otomatik eşitlemesi (yalnızca Samsung Knox)** - Google hesabı ayarlarının otomatik olarak eşitlenmesine izin verir.
+- **Çıkarılabilir depolama birimi (yalnızca Samsung Knox)** - Cihazın SD kartı gibi bir çıkarılabilir depolama birimi kullanmasına izin verir.
+- **Depolama kartlarında şifreleme (yalnızca Samsung Knox)** - Cihaz depolama kartını şifrelemenin gerekip gerekmediğini belirtir.
 
 ## <a name="cellular-and-connectivity"></a>Hücresel ve Bağlantı
 
-- **Veri dolaşımı (yalnızca Samsung KNOX)** - Cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
-- **SMS/MMS mesajları (yalnızca Samsung KNOX)** - Cihazda SMS ve MMS mesajlarının kullanımına izin verir.
-- **Sesli arama (yalnızca Samsung KNOX)** - Cihazda sesli arama özelliğini etkinleştirir veya devre dışı bırakır.
-- **Ses dolaşımı (yalnızca Samsung KNOX)** - Cihaz hücresel ağ üzerindeyken ses dolaşımına izin verir.
-- **Bluetooth (yalnızca Samsung KNOX)** - Cihazda Bluetooth’un kullanımına izin verir.
-- **NFC (yalnızca Samsung KNOX)** - Desteklenen cihazlarda yakın alan iletişimi kullanan işlemlere izin verir.
-- **Wi-Fi (yalnızca Samsung KNOX)** - Cihazın Wi-Fi özelliklerinin kullanımına izin verir.
-- **Wi-Fi paylaşımı (yalnızca Samsung KNOX)** - Cihazda Wi-Fi paylaşımının kullanılmasına izin verir.
+- **Veri dolaşımı (yalnızca Samsung Knox)** - Cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
+- **SMS/MMS mesajları (yalnızca Samsung Knox)** - Cihazda SMS ve MMS mesajlarının kullanımına izin verir.
+- **Sesli arama (yalnızca Samsung Knox)** - Cihazda sesli arama özelliğini etkinleştirir veya devre dışı bırakır.
+- **Ses dolaşımı (yalnızca Samsung Knox)** - Cihaz hücresel ağ üzerindeyken ses dolaşımına izin verir.
+- **Bluetooth (yalnızca Samsung Knox)** - Cihazda Bluetooth’un kullanımına izin verir.
+- **NFC (yalnızca Samsung Knox)** - Desteklenen cihazlarda yakın alan iletişimi kullanan işlemlere izin verir.
+- **Wi-Fi (yalnızca Samsung Knox)** - Cihazın Wi-Fi özelliklerinin kullanımına izin verir.
+- **Wi-Fi paylaşımı (yalnızca Samsung Knox)** - Cihazda Wi-Fi paylaşımının kullanılmasına izin verir.
 
 ## <a name="kiosk"></a>Bilgi noktası
 
-Bilgi noktası ayarları yalnızca Samsung KNOX Standard cihazlarda ve Intune ile yönettiğiniz uygulamalarda geçerlidir.
+Bilgi noktası ayarları yalnızca Samsung Knox Standard cihazlarda ve Intune ile yönettiğiniz uygulamalarda geçerlidir.
 
 - **Yönetilen bir uygulama seçin** - Cihaz bilgi noktası modunda olduğunda çalışabilen bir veya daha fazla yönetilen uygulama eklemek için aşağıdaki seçeneklerden birini belirleyin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.
     - **Paket adına göre uygulama ekleme**

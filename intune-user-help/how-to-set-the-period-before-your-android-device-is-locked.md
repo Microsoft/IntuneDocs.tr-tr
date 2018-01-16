@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c4813649092dd12b6be2c07b900d6c1af957bcb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 13ad914f076f00d1a505510b726f84645ba22cc1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Android cihaz ekranı kilitlemeden önce geçmesi gereken süreyi ayarlama | Microsoft Docs
 
 Çalışmanıza yeniden bağlanmak için, sahip olduğunuz cihaz türü için verilen adımları izleyerek cihazınızda parola zaman aşımını ayarlamanız gerekir.
 
-## <a name="native-non-samsung-knox-device"></a>Yerel (Samsung KNOX olmayan) cihaz
+## <a name="native-non-samsung-knox-device"></a>Yerel (Samsung Knox olmayan) cihaz
 
 1.  Cihazınızın **Ayarlar** bölümünde **Güvenlik** &gt; **Otomatik Olarak Kilitle**’ye dokunun (bu, bazı cihazlarda **Şu kadar işlem yapılmadığında telefonu kilitle** olarak görünür).
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/12/2017
 
 2.  Parola zaman aşımı değerini seçin.
 
-## <a name="samsung-knox-device"></a>Samsung KNOX cihazı
+## <a name="samsung-knox-device"></a>Samsung Knox cihazı
 
 1.  Cihazınızın **Ayarlar** bölümünde, **Kilit ekranı ve güvenlik** &gt; **Otomatik olarak kilitle**’ye dokunun.
 

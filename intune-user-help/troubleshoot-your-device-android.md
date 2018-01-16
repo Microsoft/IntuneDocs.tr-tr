@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/10/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: a83d938abbaefe35d028e50ed13c422b97bc3987
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Android cihazınızdaki yaygın sorunları çözme
 
@@ -30,6 +30,7 @@ Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar or
 - [E-posta kullanarak günlükleri şirketinizin destek birimine gönderme](send-logs-to-your-it-admin-by-email-android.md)
 - [USB kablosu kullanarak günlükleri şirketinizin destek birimine gönderme](send-logs-to-your-it-admin-using-cable-android.md)
 - [Şirketinizin destek birimine kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-admin-android.md)
+- [Hataları Microsoft'a gönderme](send-logs-to-microsoft-android.md)
 - [Android cihazınızı güncelleştirmeniz gerekiyor](you-need-to-update-your-android-device.md)
 - [Cihaz en yüksek işletim sistemi sürümü ile uyumlu değil](your-android-version-isnt-yet-supported.md)
 - [Cihazınıza kök erişim izni verilmiş ve bağlanamıyorsunuz](your-device-is-rooted-and-you-cant-connect-android.md)
@@ -41,3 +42,4 @@ Bazen Android cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar or
 - [Android cihazınızı şifreli gibi görünüyor, ancak Şirket Portalı aksini söylüyor](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [Android cihazınıza bir Cihaz Tehdit Koruması uygulaması yüklemeniz istendi](you-are-prompted-to-install-mtd-android.md)
 - [Cihaz Tehdit Koruması uygulamasının Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+- [Samsung Knox cihazlarında hataları düzeltme](samsung-knox-errors-android.md)

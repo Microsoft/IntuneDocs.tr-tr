@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
 
@@ -77,7 +77,7 @@ Cihaz açık ve bağlı olduğu sürece, bir fabrika sıfırlaması komutunun t�
 
 ### <a name="android"></a>Android
 
-|Veri türü|Android|Android Samsung KNOX Standard|
+|Veri türü|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web bağlantıları|Kaldırıldı.|Kaldırıldı.|
 |Yönetilmeyen Google Play uygulamaları|Uygulamalar ve veriler yüklü kalır.|Uygulamalar ve veriler yüklü kalır.|
@@ -89,7 +89,7 @@ Cihaz açık ve bağlı olduğu sürece, bir fabrika sıfırlaması komutunun t�
 |Sertifika profili ayarları|Sertifikaları iptal edilir, ancak kaldırılmaz.|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim Aracısı|Cihaz Yöneticisi ayrıcalığı iptal edilir.|Cihaz Yöneticisi ayrıcalığı iptal edilir.|
 |E-posta|yok (e-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır ve cihazın önbelleğindeki e-postalar silinir.|
-|Outlook|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|Android için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|
+|Outlook|Yalnızca Outlook MAM ilkeleriyle korunuyorsa, Android için Microsoft Outlook uygulaması tarafından alınan e-posta kaldırılır. Aksi takdirde, kayıt kaldırıldığında Outlook temizlenmez.|Yalnızca Outlook MAM ilkeleriyle korunuyorsa, Android için Microsoft Outlook uygulaması tarafından alınan e-posta kaldırılır. Aksi takdirde, kayıt kaldırıldığında Outlook temizlenmez.|
 |Azure Active Directory (AD) Ayrılma|Azure AD Kaydı kaldırıldı.|Azure AD Kaydı kaldırıldı.|
 |Kişiler | Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.|Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır.  Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 
