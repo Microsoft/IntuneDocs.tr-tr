@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel cihaz profili kullanma
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -28,9 +28,9 @@ Burada, Intune'un **Özel cihaz profillerini**, önceden paylaşılan anahtarla 
 
 > [!NOTE]
 -   Aşağıda anlatıldığı gibi kodu söz konusu ağa bağlanan bir bilgisayardan kopyalamak size daha kolay gelebilir.
-- Android için, Johnathon Biersack tarafından sağlanan bu [Android PSK Oluşturucu](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)’yu kullanma seçeneğiniz de vardır.
+- Android için, Johnathon Biersack tarafından sağlanan bu [Android PSK Oluşturucu](http://intunepskgenerator.johnathonb.com/)’yu kullanma seçeneğiniz de vardır.
 -   Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
--  iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın. Alternatif olarak, Johnathon Biersack tarafından sağlanan bu [iOS PSK Mobile Config Oluşturucu](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)’yu kullanın.
+-  iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın. Alternatif olarak, Johnathon Biersack tarafından sağlanan bu [iOS PSK Mobile Config Oluşturucu](http://intunepskgenerator.johnathonb.com/)’yu kullanın.
 
 
 1.  Android veya Windows için önceden paylaşılan anahtarla bir Wi-Fi profili oluşturmak veya EAP tabanlı bir Wi-Fi profili oluşturmak için, cihaz profilini oluştururken bu cihaz platformu için bir Wi-Fi profili yerine **Özel**’i seçin.

@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6b981afba73b5308351f9e5501db904b42389c7
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: bd7d48a6511b1ae8ecf5a6f413ae2f682434244c
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -139,7 +139,7 @@ Android ve iOS, uygulamalar için hem sürüm hem de derleme numaralarını kull
 
 Intune’da kullanmak üzere bir iş kolu uygulaması geliştirirken, sürüm ve derleme numarasını birlikte kullanmayı unutmayın. Intune Uygulama yönetimi özellikleri anlamlı bir **CFBundleVersion** (iOS için) ve **PackageVersionCode** (Android için) kullanır. Bu numaralar, uygulama bildirimine eklenir. 
 
-Intune|iOS|Android|Açıklama|
+Intune|iOS|Android|Description|
 |---|---|---|---|
 Sürüm numarası|CFBundleShortVersionString|PackageVersionName |Bu numara, son kullanıcılara yönelik belirli bir uygulama yayınını gösterir.|
 Yapı numarası|CFBundleVersion|PackageVersionCode |Bu numara, uygulama kodunda bir yinelemeyi gösterir.|

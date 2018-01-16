@@ -6,7 +6,7 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21fe439a229dfa81b11c001b71df073e4522a752
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 309994268b061f844e26dea8df8ce3c0fd237e95
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="create-groups-to-organize-users-and-devices"></a>Kullanıcıları ve cihazları düzenlemek için grup oluşturma
 
@@ -77,7 +77,7 @@ Yazılım ve cihaz ilkelerini dağıtmak için kullanıcı gruplarını kullanı
 
 4.  **Şu güvenlik gruplarındaki üyeleri çıkar:**seçeneğinin yanında **Gözat**’ı seçin ve ardından **Şirket Yöneticisi**'ni seçin. Bu dışlama, Şirket Yöneticisi hesabını (kiracı yönetici olarak da bilinir) etkilemeden Intune Kullanıcıları grubunu yönetmenize olanak verir.
 
-5.  **Doğrudan Üyeliği Tanımla** sayfasında **İleri**'yi seçin. Intune Kullanıcıları grubunun, Şirket Yöneticisi dışında tüm kullanıcıları içermesini istediğinizden, burada bir şey yapmanız gerekmez.
+5.  **Doğrudan Üyeliği Tanımla** sayfasında, **İleri**'yi seçin. Intune Kullanıcıları grubunun, Şirket Yöneticisi dışında tüm kullanıcıları içermesini istediğinizden, burada bir şey yapmanız gerekmez.
 
 6.  **Özet** sayfasında, gerçekleştirilecek eylemleri gözden geçirin ve ardından **Son**'u seçin.
 
