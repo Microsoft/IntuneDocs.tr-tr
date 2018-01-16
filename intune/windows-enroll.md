@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 308522e0a54d47595294b8f1c31e92a965a09ef4
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: de3f36a7d04e06d27f1ed942366502ca92d08c59
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="enroll-windows-devices"></a>Windows cihazlarını kaydetme
 
@@ -60,7 +60,7 @@ CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıt
 |Tür|Konak adı|Şunu gösterir:|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 saat|
-|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Saat|
+|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 saat|
 
 Birden fazla UPN sonekiniz varsa her etki alanı için bir CNAME oluşturmanız ve EnterpriseEnrollment-s.manage.microsoft.com adresine yönlendirmeniz gerekir. Contoso kullanıcıları name@contoso.com adresini kullanıyor ancak e-posta/UPN olarak name@us.contoso.com ve name@eu.constoso.com öğelerini de kullanıyorlarsa Contoso DNS yöneticisinin aşağıdaki CNAME’leri oluşturması gerekir:
 

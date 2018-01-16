@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/19/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7317a60a9640df0b95444a2b032c12b3ca9f20b
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 337b5407026c5415f8fbac1a0626181f9b042a06
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Windows 10 cihazlarınızı Intune'a kaydetme
 
@@ -47,6 +47,6 @@ Daha fazla bilgi edinmek istiyor musunuz? [Cihazınızı Intune'a kaydettiğiniz
 1.  __Başlat__ sayfasında __Tüm uygulamalar__ listesini kaydırın ve __Ayarlar__ uygulamasını seçin.        
 2.  __Sistem__'e ve ardından __Hakkında__'ya dokunun.       
 3.  __Cihaz bilgileri__ bölümünde __Daha fazla bilgi__'ye dokunun. Cihazınız hakkındaki bilgilerin listesini göreceksiniz. Bu listede __Sürüm__'ü bulun.        
-4.  Sürümünüz __1607__ ise [bu adımlara](enroll-your-w10-device-access-work-or-school.md) geçin. Sürümünüz __1511 veya daha düşükse__, [bu adımlarla](enroll-your-w10-device-your-account.md) devam edin.
+4.  Sürümünüz __1607 veya üzeriyse__ [bu adımlarla](enroll-your-w10-device-access-work-or-school.md) devam edin. Sürümünüz __1511 veya daha düşükse__, [bu adımlarla](enroll-your-w10-device-your-account.md) devam edin.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

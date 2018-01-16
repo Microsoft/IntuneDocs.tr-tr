@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f16bd212c7a23d847da0929933fbd4b497099d0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 54c298e751f2cb63e8c9fd60aa14ed626ab9a0b1
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>iOS cihazlarında kayıp modunu etkinleştirme
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/15/2017
 4. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
 5. Yönettiğiniz cihazların listesinden bir iOS cihazını seçin, sonra **Kayıp modu** uzak eylemini seçin.
 6. **Kayıp modu** dikey penceresinde, kayıp modu etkinleştirin. Ardından, görüntülenecek iletiyi ve isteğe bağlı olarak, bir irtibat telefonu numarası girin.
-7. **Tamam**’a tıklayın.
+7. **Tamam**'ı tıklatın.
 
 Kayıp modunu etkinleştirdiğinizde cihazın tüm kullanımını engellemiş olursunuz. Siz kayıp modunu devre dışı bırakmadıkça son kullanıcı cihaza erişemez. Kayıp modu etkin durumdayken **Cihazı bul** eylemini kullanarak cihazın nerede olduğunu bulabilirsiniz.
 Kayıp modu kullanmak için cihazın denetimli modda olan, şirkete ait bir iOS cihazı olması gerekir.

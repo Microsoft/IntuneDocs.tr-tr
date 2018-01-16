@@ -11,21 +11,21 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd4cedd20f427966dc3cfb7c2748f57b4d0746ab
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 9589231878ddfe80ce0b259f8f4e3a439f55535d
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune Uygulama SDK'sı Cordova Eklentisi
 
 > [!NOTE]
 > Öncelikle, desteklenen platformlarda tümleştirme için nasıl hazırlık yapıldığını açıklayan [Intune Uygulama SDK’sını Kullanmaya Başlama](app-sdk-get-started.md) makalesini okumanız önerilir.
 
-## <a name="overview"></a>Genel Bakış
+## <a name="overview"></a>Genel bakış
 
 iOS ve Android uygulamalarında Cordova ile oluşturulmuş [Intune Uygulama SDK’sı Cordova Eklentisi](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune). Eklenti, geliştiricilerin Intune uygulama ve veri koruma özelliklerini Cordova tabanlı uygulamalarıyla tümleştirmelerini sağlar.
 

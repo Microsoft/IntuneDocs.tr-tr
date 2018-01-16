@@ -16,13 +16,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bb39ff625034c00f70d5e7f28a7982fc1f40d0f2
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 726c3d052b62dbcab82f75cc82ce39b72bcbef94
+ms.sourcegitcommit: 4401890db054657954a8b3947de1f4308f4da170
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
-## <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft’un veri toplamasını devre dışı bırakma
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft’un veri toplamasını devre dışı bırakma
 
 Microsoft, ürünlerimiz ve hizmetlerimizle ilgili belirli verileri otomatik olarak toplar. Şirket Portalı uygulaması da dahil olmak üzere ürünlerimizin güvenilirliği ve performansını artırmak için bunu yaparız. Bu veriler gizli olsa da, bazı kullanıcılar bu toplama işleminden rahatsız olabilir. Şirketinizin destek birimi, bu verilerin toplanması konusunda denetim sahibi değildir ve bu ayar için yaptığınız seçimi değiştiremez.
 

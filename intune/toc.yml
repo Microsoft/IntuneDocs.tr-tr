@@ -1,4 +1,4 @@
-- name: Giriş
+- name: Genel bakış
   href: introduction-intune.md
   expanded: true
   items:
@@ -22,24 +22,13 @@
           href: whats-new-archive.md
         - name: Yenilikler arşivi (klasik portal)
           href: whats-new-archive-classic.md
-    - name: Üst düzey mimari
-      href: high-level-architecture.md
-    - name: Cihaz ve uygulama yaşam döngüleri
-      href: introduction-device-app-lifecycles.md
-      items:
-        - name: Cihaz yaşam döngüsü
-          href: device-lifecycle.md
-        - name: Uygulama yaşam döngüsü
-          href: app-lifecycle.md
-    - name: Yaygın senaryolar
-      href: common-scenarios.md
     - name: Hizmet açıklaması
       href: microsoft-intune-service-description.md
     - name: Bilinen sorunlar
       href: known-issues.md
     - name: Destek alın
       href: get-support.md
-- name: Intune kullanmaya başlayın
+- name: Hızlı girişler
   href: get-started-evaluation.md
   items:
     - name: Azure portalında gezinme
@@ -54,6 +43,31 @@
       href: get-started-enroll.md
     - name: Uygulamaları atama
       href: get-started-apps.md
+- name: Senaryo uygulama kılavuzları
+  items:
+    - name: Exchange Online’ı Koruma
+      href: exchange-online-protect.md
+    - name: Yardım masası maliyetlerini azaltma
+      href: password-reset.md
+    - name: Yetkisiz erişimi engelleme
+      href: data-outside-protect.md
+    - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
+      href: data-leak-prevention.md
+    - name: MDM ve MAM’i karşılaştırın
+      href: byod-technology-decisions.md
+- name: Kavramlar
+  items:
+    - name: Üst düzey mimari
+      href: high-level-architecture.md
+    - name: Cihaz ve uygulama yaşam döngüleri
+      href: introduction-device-app-lifecycles.md
+      items:
+        - name: Cihaz yaşam döngüsü
+          href: device-lifecycle.md
+        - name: Uygulama yaşam döngüsü
+          href: app-lifecycle.md
+    - name: Yaygın senaryolar
+      href: common-scenarios.md
 - name: Dağıtım planlama
   items:
     - name: Planlama kılavuzu
@@ -79,18 +93,6 @@
           href: planning-guide-test-validation.md
         - name: Ek kaynaklar
           href: planning-guide-resources.md
-    - name: Senaryo uygulama kılavuzları
-      items:
-        - name: Exchange Online’ı Koruma
-          href: exchange-online-protect.md
-        - name: Yardım masası maliyetlerini azaltma
-          href: password-reset.md
-        - name: Yetkisiz erişimi engelleme
-          href: data-outside-protect.md
-        - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
-          href: data-leak-prevention.md
-        - name: MDM ve MAM’i karşılaştırın
-          href: byod-technology-decisions.md
     - name: Geçiş kılavuzu
       href: migration-guide.md
       items:
@@ -114,7 +116,7 @@
               href: migration-guide-drive-adoption.md
             - name: Tipik geçiş döngüsü
               href: migration-guide-cycle.md
-- name: Nasıl yapılır
+- name: Nasıl Yapılır Kılavuzları
   items:
     - name: Intune’u ayarlama
       href: setup-steps.md
@@ -214,35 +216,39 @@
         - name: Uygulamaları ekleme
           href: apps-add.md
           items:
-            - name: Android mağaza uygulamaları
-              href: store-apps-android.md
-            - name: Android LOB uygulamaları
-              href: lob-apps-android.md
-            - name: iOS mağaza uygulamaları
-              href: store-apps-ios.md
-            - name: iOS LOB uygulamaları
-              href: lob-apps-ios.md
+            - name: Mağaza uygulamaları
+              items:
+                - name: Android mağaza uygulamaları
+                  href: store-apps-android.md
+                - name: iOS mağaza uygulamaları
+                  href: store-apps-ios.md
+                - name: Windows Phone 8.1 mağaza uygulamaları
+                  href: store-apps-windows-phone-8-1.md
+                - name: Microsoft Mağazası uygulamaları
+                  href: store-apps-windows.md
+                - name: Android for Work uygulamaları
+                  href: apps-add-android-for-work.md
+                - name: Windows 10 için Office 365 uygulamaları
+                  href: apps-add-office365.md
+                - name: macOS için Office 365 uygulamaları
+                  href: apps-add-office365-macos.md
+            - name: Uygulamanızı (LOB) oluşturun
+              items:
+                - name: Android LOB uygulamaları
+                  href: lob-apps-android.md
+                - name: iOS LOB uygulamaları
+                  href: lob-apps-ios.md
+                - name: Windows Phone LOB uygulamaları
+                  href: lob-apps-windows-phone.md
+                - name: Windows LOB uygulaması
+                  href: lob-apps-windows.md
             - name: Web uygulamaları
               href: web-app.md
-            - name: Windows Phone 8.1 mağaza uygulamaları
-              href: store-apps-windows-phone-8-1.md
-            - name: Windows Phone LOB uygulamaları
-              href: lob-apps-windows-phone.md
-            - name: Microsoft Mağazası uygulamaları
-              href: store-apps-windows.md
-            - name: Windows LOB uygulaması
-              href: lob-apps-windows.md
-            - name: Android for Work uygulamaları
-              href: apps-add-android-for-work.md
-            - name: Windows 10 için Office 365 uygulamaları
-              href: apps-add-office365.md
-            - name: macOS için Office 365 uygulamaları
-              href: apps-add-office365-macos.md
-        - name: Uygulamaları atama
+        - name: Uygulama dağıtma
           href: apps-deploy.md
         - name: Uygulamaları izleme
           href: apps-monitor.md
-        - name: Uygulama yapılandırma ilkeleri
+        - name: Uygulama yapılandırma
           href: app-configuration-policies-overview.md
           items:
             - name: iOS yönetilen cihazlar
@@ -251,23 +257,25 @@
               href: app-configuration-policies-use-android.md
             - name: Yönetilen uygulamalar
               href: app-configuration-policies-managed-app.md
-        - name: iOS uygulama sağlama profillerini kullanma
-          href: app-provisioning-profile-ios.md
-        - name: Uygulamaları seçmeli silme
-          href: apps-selective-wipe.md
-        - name: Toplu satın alınan uygulamalar ve kitaplarla çalışma
-          href: vpp-apps.md
+            - name: iOS uygulama sağlama profillerini kullanma
+              href: app-provisioning-profile-ios.md
+            - name: Toplu satın alınan uygulamalar ve kitaplarla çalışma
+              href: vpp-apps.md
+              items:
+                - name: iOS VPP uygulamaları
+                  href: vpp-apps-ios.md
+                - name: İş uygulamaları için Microsoft Mağazası
+                  href: windows-store-for-business.md
+                - name: iOS e-Kitapları
+                  href: vpp-ebooks-ios.md
+            - name: Şirket Portalı uygulamasını yapılandırma
+              href: company-portal-app.md
+            - name: Managed Browser’ı yapılandırma
+              href: app-configuration-managed-browser.md
+        - name: Uygulamaları koruma
           items:
-            - name: iOS VPP uygulamaları
-              href: vpp-apps-ios.md
-            - name: İş uygulamaları için Microsoft Mağazası
-              href: windows-store-for-business.md
-            - name: iOS e-Kitapları
-              href: vpp-ebooks-ios.md
-        - name: Şirket Portalı uygulamasını yapılandırma
-          href: company-portal-app.md
-        - name: Managed Browser’ı yapılandırma
-          href: app-configuration-managed-browser.md
+            - name: Uygulamaları seçmeli silme
+              href: apps-selective-wipe.md
     - name: Cihazları yapılandırma
       href: device-profiles.md
       items:
@@ -435,8 +443,6 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS ayarları
                   href: app-protection-policy-settings-ios.md
-                - name: Managed Browser’da uygulama koruma günlüklerini gözden geçirin
-                  href: app-protection-policy-settings-log.md
             - name: Uygulama koruma ilkelerini doğrulama
               href: app-protection-policies-validate.md
             - name: Uygulama koruma kullanıcı durumunu izleme
@@ -554,45 +560,42 @@
           href: end-user-apps-ios.md
         - name: Windows uygulamalarını edinme
           href: end-user-apps-windows.md
-- name: İzleme ve sorun giderme
-  items:
-    - name: Kullanıcıların sorunları gidermesine yardımcı olma
-      href: help-desk-operators.md
-    - name: Intune etkinlikleri için denetleme günlükleri
-      href: monitor-audit-logs.md
-    - name: Intune Veri Ambarını kullanma
-      href: reports-nav-create-intune-reports.md
+    - name: İzleme ve sorun giderme
       items:
-        - name: Değişiklik günlüğü için veri ambarı
-          href: reports-changelog.md
-        - name: Power BI ile Veri Ambarına bağlanma
-          href: reports-proc-get-a-link-powerbi.md
-        - name: OData akışına Power BI ile bir rapor oluşturma
-          href: reports-proc-create-with-odata.md
-- name: Otomatikleştirme ve özelleştirme
-  items:
-    - name: Özel cihaz ayarlarını yapılandırma
-      href: custom-settings-configure.md
+        - name: Kullanıcıların sorunları gidermesine yardımcı olma
+          href: help-desk-operators.md
+        - name: Intune etkinlikleri için denetleme günlükleri
+          href: monitor-audit-logs.md
+        - name: Uygulama koruma günlüklerini gözden geçirme
+          href: app-protection-policy-settings-log.md
+    - name: Otomatikleştirme ve özelleştirme
       items:
-        - name: Önceden paylaşılan anahtar ile Wi-Fi profili
-          href: wi-fi-profile-shared-key.md
-        - name: Android
-          href: custom-settings-android.md
+        - name: Özel cihaz ayarlarını yapılandırma
+          href: custom-settings-configure.md
           items:
-            - name: Uygulama başına VPN profili
-              href: android-pulse-secure-per-app-vpn.md
-            - name: Samsung KNOX Standard için uygulamalara izin verme veya uygulamaları engelleme
-              href: samsung-knox-apps-allow-block.md
-        - name: iOS
-          href: custom-settings-ios.md
-        - name: Mac OS
-          href: custom-settings-macos.md
-        - name: Windows Phone 8.1
-          href: custom-settings-windows-phone-8-1.md
-        - name: Windows 10
-          href: custom-settings-windows-10.md
-        - name: Android for Work
-          href: custom-settings-android-for-work.md
+            - name: Önceden paylaşılan anahtar ile Wi-Fi profili
+              href: wi-fi-profile-shared-key.md
+            - name: Android
+              href: custom-settings-android.md
+              items:
+                - name: Uygulama başına VPN profili
+                  href: android-pulse-secure-per-app-vpn.md
+                - name: Samsung KNOX Standard için uygulamalara izin verme veya uygulamaları engelleme
+                  href: samsung-knox-apps-allow-block.md
+            - name: iOS
+              href: custom-settings-ios.md
+            - name: Mac OS
+              href: custom-settings-macos.md
+            - name: Windows Phone 8.1
+              href: custom-settings-windows-phone-8-1.md
+            - name: Windows 10
+              href: custom-settings-windows-10.md
+            - name: Android for Work
+              href: custom-settings-android-for-work.md
+        - name: Windows iş kolu uygulamalarını dışarıdan yükleme
+          href: app-sideload-windows.md
+- name: Geliştirici kılavuzu
+  items:
     - name: Intune Uygulama SDK’sı ile uygulama koruma
       href: app-sdk.md
       items:
@@ -612,6 +615,15 @@
           href: app-sdk-cordova.md
         - name: Intune Uygulama SDK’sı Xamarin bileşeni
           href: app-sdk-xamarin.md
+    - name: Intune Veri Ambarını kullanma
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: Değişiklik günlüğü için veri ambarı
+          href: reports-changelog.md
+        - name: Power BI ile Veri Ambarına bağlanma
+          href: reports-proc-get-a-link-powerbi.md
+        - name: OData akışına Power BI ile bir rapor oluşturma
+          href: reports-proc-create-with-odata.md
     - name: Intune Veri Ambarı API’si kullanarak raporlama
       href: reports-nav-intune-data-warehouse.md
       items:
@@ -647,5 +659,7 @@
       items:
         - name: Intune Başvurusu için Graph API’ler
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
-- name: Sözlük
-  href: intune-glossary.md
+- name: Kaynaklar
+  items:
+    - name: Sözlük
+      href: intune-glossary.md

@@ -79,6 +79,7 @@
 #### [Hataları şirketinize gönderme](send-errors-to-your-it-admin-ios.md)
 #### [Hataları Microsoft'a gönderme](send-logs-to-microsoft-ios.md)
 #### [Bir mevcut şirket e-posta hesabı bulundu](existing-company-email-account-found.md)
+#### [Cihaz sınırına ulaşıldı](device-limit-wpj-ios.md)
 #### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Hata gösterildi](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Cihazınızı tanımlama](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -112,6 +113,7 @@
 #### [Bu cihaz biraz farklıdır](device-little-different-jamf.md)
 #### [Seri numaranızı bulma](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [Cihazınızı tanımlama](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+#### [Cihaz sınırına ulaşıldı](device-limit-wpj-macos.md)
 
 ## [Windows cihazınızı kullanma](using-your-windows-device-with-intune.md)
 ### [Bir Windows 10 cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
