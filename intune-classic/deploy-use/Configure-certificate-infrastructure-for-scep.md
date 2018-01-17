@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>SCEP için sertifika altyapısını yapılandırma
 
@@ -338,6 +338,9 @@ NDES Sunucusu'nda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandı
 5.  **Sertifika Bağlayıcısı** kullanıcı arabiriminde:
 
     **Oturum Aç**'a tıklayın ve Intune hizmet yöneticisi kimlik bilgilerinizi veya genel yönetim izni olan bir kiracı yöneticiye ait kimlik bilgilerini girin.
+
+    > [!NOTE]
+    > NDESConnectorUI.exe’de oturum açarken **Kullanıcı adı tanınmıyor** hatası alırsanız, bu genellikle geçerli bir Intune lisansı olmayan bir hesap kullandığınız anlamına gelir. Hesaba bir Intune veya EMS lisansı atayın ve işlemi yeniden deneyin.
 
     Kuruluşunuz bir ara sunucu kullanıyorsa ve NDES sunucusunun İnternet'e erişmesi için ara sunucu gerekliyse, **Ara sunucuyu kullan**'a tıklayın ve bağlanmak için ara sunucu adını, bağlantı noktasını ve hesap kimlik bilgilerini girin.
 
