@@ -654,11 +654,11 @@
               href: reports-ref-user-device.md
             - name: Kullanıcı varlığı için başvuru
               href: reports-ref-user.md
-    - name: Intune Graph API
+    - name: Microsoft Graph Intune API'lere erişmek için Azure AD kullanın
       href: intune-graph-apis.md
       items:
-        - name: Intune Başvurusu için Graph API’ler
-          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Intune API başvurusu
+          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Kaynaklar
   items:
     - name: Sözlük
