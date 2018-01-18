@@ -5,20 +5,20 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/10/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 031ae18fb88a04cd02ca3ced5c39a33e49610bef
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 942e7ceb8d42240c46387889677cb4620a9da103
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -29,9 +29,9 @@ iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Xcode 8 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayara ihtiyaç duyacaksınız.
+* Xcode 9 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayara ihtiyaç duyacaksınız.
 
-* Uygulamanızın iOS 9 veya üzeri sürümler için hedeflenmesi gerekir.
+* Uygulamanızın iOS 9.3.5 veya üzeri sürümler için hedeflenmesi gerekir.
 
 * [iOS için Intune Uygulama SDK'sı Lisans Koşulları](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)'nı gözden geçirmelisiniz. Kendi kayıtlarınız için lisans koşullarının bir kopyasını yazdırmalı ve saklamalısınız. iOS için Intune Uygulama SDK'sını indirip kullandığınızda bu lisans koşullarını kabul etmiş olursunuz.  Kabul etmiyorsanız, yazılımı kullanmayın.
 
@@ -208,7 +208,7 @@ Uygulamanız ADAL kullanmıyorsa, Intune Uygulama SDK'sı ADAL parametrelerinin 
 ## <a name="receiving-app-protection-policy"></a>Uygulama koruma ilkesini alma
 
 ### <a name="overview"></a>Genel bakış
-Intune uygulama koruma ilkesini almak için, uygulamaların Intune hizmetiyle bir kayıt isteği başlatmaları gerekir. Uygulamalar, Intune konsolunda cihaz kaydıyla veya cihaz kaydı olmadan uygulama koruma ilkesini almak için yapılandırılabilir. Kayıt olmadan uygulama koruma ilkesi (**APP-WE** veya MAM-WE olarak da bilinir), uygulamaların Intune mobil cihaz yönetimine (MDM) kaydedilmeden Intune tarafından yönetilmesine izin verir. Her iki durumda da, ilkeyi almak için Intune hizmetine kaydolmak gereklidir.
+Intune uygulama koruma ilkesini almak için, uygulamaların Intune MAM hizmetiyle bir kayıt isteği başlatmaları gerekir. Uygulamalar, Intune konsolunda cihaz kaydıyla veya cihaz kaydı olmadan uygulama koruma ilkesini almak için yapılandırılabilir. Kayıt olmadan uygulama koruma ilkesi (**APP-WE** veya MAM-WE olarak da bilinir), uygulamaların Intune mobil cihaz yönetimine (MDM) kaydedilmeden Intune tarafından yönetilmesine izin verir. Her iki durumda da, ilkeyi almak için Intune MAM hizmetine kaydolmak gereklidir.
 
 ### <a name="apps-that-use-adal"></a>ADAL kullanan uygulamalar
 
@@ -235,7 +235,7 @@ Bu API çağrıldıktan sonra, uygulama normal çalışmasına devam edebilir. K
 
 ### <a name="apps-that-do-not-use-adal"></a>ADAL kullanılmayan uygulamalar
 
-Kullanıcının ADAL kullanarak oturum açmasını sağlamayan bir uygulama, API’yi çağırıp SDK’nın söz konusu kimlik doğrulamasını gerçekleştirmesini sağlayarak Intune hizmetinden uygulama koruma ilkesi alabilir. Azure AD ile bir kullanıcının kimlik doğrulamasını gerçekleştirmeyip, yine de verilerin korunmasına yardımcı olmak için uygulama koruma ilkesini alması gereken uygulamaların bu tekniği kullanması gerekir. Örneğin uygulamada oturum açmak için başka bir kimlik doğrulaması hizmeti kullanılıyor veya uygulama oturum açmayı hiç desteklemiyorsa. Bunu yapmak için, uygulamanın `IntuneMAMEnrollmentManager`örneğinden `loginAndEnrollAccount` yöntemini çağırması gerekir:
+Kullanıcının ADAL kullanarak oturum açmasını sağlamayan bir uygulama, API’yi çağırıp SDK’nın söz konusu kimlik doğrulamasını gerçekleştirmesini sağlayarak Intune MAM hizmetinden uygulama koruma ilkesi alabilir. Azure AD ile bir kullanıcının kimlik doğrulamasını gerçekleştirmeyip, yine de verilerin korunmasına yardımcı olmak için uygulama koruma ilkesi alması gereken uygulamaların bu tekniği kullanması gerekir. Örneğin uygulamada oturum açmak için başka bir kimlik doğrulaması hizmeti kullanılıyor veya uygulama oturum açmayı hiç desteklemiyorsa. Bunu yapmak için, uygulamanın `IntuneMAMEnrollmentManager`örneğinden `loginAndEnrollAccount` yöntemini çağırması gerekir:
 
 ```objc
 /**
@@ -248,7 +248,7 @@ Kullanıcının ADAL kullanarak oturum açmasını sağlamayan bir uygulama, API
 
 ```
 
-Mevcut herhangi bir belirteç bulunamazsa, SDK bu yöntemi çağırarak kullanıcıdan kimlik bilgilerini ister. Ardından SDK, sağlanan kullanıcı hesabı adına uygulamayı Intune hizmetine kaydetmeyi dener. Yöntem, "nil" kimliği ile çağrılabilir. Bu durumda SDK cihazdaki mevcut yönetilen kullanıcıyı kaydeder (MDM'de) veya mevcut kullanıcı bulunamazsa kullanıcıdan kullanıcı adı girmesini ister.
+Mevcut herhangi bir belirteç bulunamazsa, SDK bu yöntemi çağırarak kullanıcıdan kimlik bilgilerini ister. Ardından SDK, sağlanan kullanıcı hesabı adına uygulamayı Intune MAM hizmetine kaydetmeyi dener. Yöntem, "nil" kimliği ile çağrılabilir. Bu durumda SDK cihazdaki mevcut yönetilen kullanıcıyı kaydeder (MDM'de) veya mevcut kullanıcı bulunamazsa kullanıcıdan kullanıcı adı girmesini ister.
 
 Kayıt başarısız olursa, uygulama hatanın ayrıntılarına bağlı olarak bu API’yi gelecekte yeniden çağırmayı göz önünde bulundurmalıdır. Uygulama, bir temsilci yoluyla herhangi bir kayıt isteğinin sonuçlarıyla ilgili [bildirim](#Status-result-and-debug-notifications) alabilir.
 
@@ -287,7 +287,7 @@ Kullanıcı oturumunu kapatmadan önce, uygulamanın `IntuneMAMEnrollmentManager
 
 ```
 
-Bu yöntem, kullanıcı hesabının Azure AD belirteçleri silinmeden önce çağrılmalıdır. SDK, kullanıcı adına Intune hizmetinde belirli isteklerde bulunmak için kullanıcı hesabının AAD uygulama belirtecine gerek duyar.
+Bu yöntem, kullanıcı hesabının Azure AD belirteçleri silinmeden önce çağrılmalıdır. SDK, kullanıcı adına Intune MAM hizmetinde belirli isteklerde bulunmak için kullanıcı hesabının AAD uygulama belirtecine gerek duyar.
 
 Uygulama kullanıcının şirket verilerini kendi kendine silerse, `doWipe` bayrağı false olarak ayarlanabilir. Aksi takdirde uygulama, seçmeli temizleme işlemini SDK’nın başlatmasını sağlayabilir. Bu, uygulamanın seçmeli silme temsilcisine çağrı yapılmasına neden olur.
 
@@ -453,10 +453,10 @@ WebViewHandledURLSchemes | Dize Dizisi | Uygulamanızın WebView’unun işledi�
 > Uygulamanız App Store’da yayınlanacaksa `MAMPolicyRequired`, App Store standartlarına göre"HAYIR" olarak ayarlanmalıdır.
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>iOS uygulamalarınız için MAM'ı hedefleyen yapılandırmayı etkinleştirme
-MAM'ı hedefleyen yapılandırma, bir uygulamanın Intune Uygulama SDK'sı aracılığıyla yapılandırma verileri almasını sağlar. Bu verilerin biçimi ve çeşitleri, uygulamanın sahibi/geliştiricisi tarafından tanımlanmalı ve Intune müşterilerine anlatılmalıdır. Intune yöneticileri, yapılandırma verilerini Intune Azure portalı aracılığıyla hedefleyip dağıtabilir. iOS (v 7.0.1) için Intune Uygulama SDK'sından sonra, MAM'ı hedefleyen yapılandırmaya dahil olan uygulamalar, MAM Hizmeti aracılığıyla MAM'ı hedefleyen yapılandırma verileri sağlayabilmektedir. Uygulama yapılandırma verileri MDM kanalı yerine uygulamaya doğrudan MAM Hizmetimiz aracılığıyla iletilir. Intune Uygulama SDK'sı, bu konsollardan alınan verilere erişmesine erişmek için bir sınıf sağlar. Aşağıdakileri önkoşul olarak dikkate alın: <br>
-* MAM'ı hedefleyen yapılandırma kullanıcı arabirimine erişebilmeniz için uygulamanın MAM-WE'ye kaydedilmiş olması gerekir. MAM-WE hakkında daha fazla bilgi için bkz. [Intune Uygulama SDK’sı kılavuzundaki cihaz kaydı olmadan uygulama koruma ilkesi](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
+MAM'ı hedefleyen yapılandırma, bir uygulamanın Intune Uygulama SDK'sı aracılığıyla yapılandırma verileri almasını sağlar. Bu verilerin biçimi ve çeşitleri, uygulamanın sahibi/geliştiricisi tarafından tanımlanmalı ve Intune müşterilerine anlatılmalıdır. Intune yöneticileri, yapılandırma verilerini Intune Azure portalı aracılığıyla hedefleyip dağıtabilir. iOS için Intune Uygulama SDK’sının 7.0.1 sürümü itibarıyla, MAM’ı hedefleyen yapılandırmaya dahil olan uygulamalar, MAM Hizmeti aracılığıyla MAM’ı hedefleyen yapılandırma verileri sağlayabilmektedir. Uygulama yapılandırma verileri MDM kanalı yerine uygulamaya doğrudan MAM Hizmetimiz aracılığıyla iletilir. Intune Uygulama SDK'sı, bu konsollardan alınan verilere erişmesine erişmek için bir sınıf sağlar. Aşağıdakileri önkoşul olarak dikkate alın: <br>
+* MAM’ı hedefleyen yapılandırma kullanıcı arabirimine erişebilmeniz için uygulamanın Intune MAM hizmetine kaydedilmiş olması gerekir. Daha fazla bilgi için bkz. [Uygulama koruma ilkesi alma](#receiving-app-protection-policy).
 * Uygulamanızın kaynak dosyasına ```IntuneMAMAppConfigManager.h``` öğesini dahil edin.
-* Uygulama Yapılandırma Nesnesini almak için ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` öğesini çağırın.
+* Uygulama Yapılandırma Nesnesini almak için ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` öğesini çağırın.
 * ```IntuneMAMAppConfig``` nesnesinde uygun seçiciyi çağırın. Örneğin, uygulamanızın anahtarı bir dizeyse ```stringValueForKey``` veya ```allStringsForKey``` kullanmanız uygun olur. ```IntuneMAMAppConfig.h header``` dosyası, döndürülen değerlerden/hata koşullarından bahseder.
 
 Graph API'sinin MAM'ı hedefleyen yapılandırma değerlerine göre özellikleri hakkında daha fazla bilgi için bkz. [MAM'ı Hedefleyen Yapılandırma Graph API'si Başvurusu](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>

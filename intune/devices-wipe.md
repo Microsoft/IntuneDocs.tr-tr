@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/31/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 343078bf802aa45ec0cd0a3f2e554ab74e1f0b8a
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
 
@@ -96,6 +96,18 @@ Cihaz açık ve bağlı olduğu sürece, bir fabrika sıfırlaması komutunun t�
 ### <a name="android-for-work"></a>Android for Work
 
 Bir Android for Work cihazından şirket verilerinin kaldırılması, cihazdaki iş profilinde bulunan tüm verileri, uygulamaları ve ayarları kaldırır. Bu, cihazın Intune ile yönetilmesini devre dışı bırakır. Fabrika sıfırlaması Android for Work’te desteklenmez.
+
+
+### <a name="macos"></a>Mac OS
+
+|Veri türü|Mac OS|
+|-------------|-------|
+|Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz ve kullanıcılar ayarları değiştirebilir.|
+|Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
+|Sertifika profili ayarları|MDM üzerinden dağıtılan sertifikalar kaldırılır ve iptal edilir.|
+|Yönetim Aracısı|Yönetim profili kaldırılır.|
+|Outlook|Koşullu erişim etkinse, cihaz yeni e-posta almayacaktır.|
+|Azure Active Directory (AD) Ayrılma|Azure AD kaydı kaldırılır.|
 
 ### <a name="windows"></a>Windows
 

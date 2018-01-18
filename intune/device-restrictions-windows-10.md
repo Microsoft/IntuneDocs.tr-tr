@@ -6,51 +6,51 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 ve üzeri cihaz kısıtlama ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Genel
--   **Ekran yakalama (yalnızca mobil)** - Kullanıcının cihaz ekranını resim olarak yakalamasına olanak sağlar.
--   **Kopyala ve yapıştır (yalnızca mobil)** - Cihazda uygulamalar arasında kopyalama ve yapıştırma eylemlerine izin verin.
--   **El ile kayıt kaldırma** - Kullanıcının iş yeri hesabını cihazdan el ile silmesine olanak sağlar.
--   **Elle kök sertifika yüklemesi (yalnızca mobil)** - Kullanıcının elle kök sertifikaları ve ara CAP sertifikaları yüklemesini engeller.
--   **Tanılama verileri gönderme** - Olası değerler şunlardır:
+- **Ekran yakalama (yalnızca mobil)** - Kullanıcının cihaz ekranını resim olarak yakalamasına olanak sağlar.
+- **Kopyala ve yapıştır (yalnızca mobil)** - Cihazda uygulamalar arasında kopyalama ve yapıştırma eylemlerine izin verin.
+- **El ile kayıt kaldırma** - Kullanıcının iş yeri hesabını cihazdan el ile silmesine olanak sağlar.
+- **Elle kök sertifika yüklemesi (yalnızca mobil)** - Kullanıcının elle kök sertifikaları ve ara CAP sertifikaları yüklemesini engeller.
+- **Tanılama verileri gönderme** - Olası değerler şunlardır:
     - **Hiçbiri** - Microsoft’a hiç veri gönderilmez
     - **Temel** - Microsoft’a sınırlı bilgi gönderilir
     - **Gelişmiş** - Microsoft’a gelişmiş tanılama bilgileri gönderilir
     - **Tam** Gelişmiş ayarıyla aynı veriler, artı olarak cihazın durumuyla ilgili ek veriler gönderilir
--   **Kamera** - Cihazdaki kameranın kullanılmasına izin verin veya bunu engelleyin.
--   **OneDrive dosya eşitleme** - Cihazın dosyaları OneDrive’a eşitlemesini engeller.
--   **Çıkarılabilir depolama** - SD kartı gibi dış depolama cihazlarının cihazla kullanılıp kullanılamayacağını belirtir.
--   **Coğrafi konum** - Cihazın konum hizmetleri bilgilerini kullanıp kullanamayacağını belirtir.
--   **İnternet paylaşımı** - Cihazda İnternet bağlantısı paylaşımının kullanımına izin verin.
--   **Telefon sıfırlama** - Kullanıcının cihazını fabrika ayarlarına sıfırlayıp sıfırlayamayacağını denetler.
--   **USB bağlantısı (yalnızca mobil)** - Cihazların USB bağlantısı aracılığıyla harici depolama cihazlarına erişip erişemeyeceğini denetler.
--   **Hırsızlık Önleme modu (yalnızca mobil)** - Windows Hırsızlık Önleme modunun etkin olup olmadığını yapılandırın.
--   **Cortana** - Cortana sesli yardımcısını etkinleştirin veya devre dışı bırakın.
--   **Ses kaydı (yalnızca mobil)** - Cihaz ses kaydedicisinin kullanılmasına izin verin veya bunu engelleyin.
--   **Cihaz adındaki değişiklikler** - Son kullanıcının cihaz adını değiştirmesini engeller (yalnızca Windows 10 Mobile)
--   **Sağlama paketleri ekleme** - Sağlama paketleri yükleyen çalışma zamanı yapılandırma aracısını engeller.
--   **Sağlama paketlerini kaldırma** - Sağlama paketlerini kaldıran çalışma zamanı yapılandırma aracısını engeller.
--   **Cihaz bulma** - Bir cihazın diğer cihazlar tarafından bulunmasını engelleyin.
--   **Görev Değiştirici (yalnızca mobil)** - Cihazdaki görev değiştiriciyi engeller.
--   **SIM kart hatası iletişim kutusu (yalnızca mobil)** -SIM kart algılanmazsa cihazda bir hata iletisinin görüntülenmesini engeller.
+- **Kamera** - Cihazdaki kameranın kullanılmasına izin verin veya bunu engelleyin.
+- **OneDrive dosya eşitleme** - Cihazın dosyaları OneDrive’a eşitlemesini engeller.
+- **Çıkarılabilir depolama** - SD kartı gibi dış depolama cihazlarının cihazla kullanılıp kullanılamayacağını belirtir.
+- **Coğrafi konum** - Cihazın konum hizmetleri bilgilerini kullanıp kullanamayacağını belirtir.
+- **İnternet paylaşımı** - Cihazda İnternet bağlantısı paylaşımının kullanımına izin verin.
+- **Telefon sıfırlama** - Kullanıcının cihazını fabrika ayarlarına sıfırlayıp sıfırlayamayacağını denetler.
+- **USB bağlantısı (yalnızca mobil)** - Cihazların USB bağlantısı aracılığıyla harici depolama cihazlarına erişip erişemeyeceğini denetler.
+- **Hırsızlık Önleme modu (yalnızca mobil)** - Windows Hırsızlık Önleme modunun etkin olup olmadığını yapılandırın.
+- **Cortana** - Cortana sesli yardımcısını etkinleştirin veya devre dışı bırakın.
+- **Ses kaydı (yalnızca mobil)** - Cihaz ses kaydedicisinin kullanılmasına izin verin veya bunu engelleyin.
+- **Cihaz adındaki değişiklikler** - Son kullanıcının cihaz adını değiştirmesini engeller (yalnızca Windows 10 Mobile)
+- **Sağlama paketleri ekleme** - Sağlama paketleri yükleyen çalışma zamanı yapılandırma aracısını engeller.
+- **Sağlama paketlerini kaldırma** - Sağlama paketlerini kaldıran çalışma zamanı yapılandırma aracısını engeller.
+- **Cihaz bulma** - Bir cihazın diğer cihazlar tarafından bulunmasını engelleyin.
+- **Görev Değiştirici (yalnızca mobil)** - Cihazdaki görev değiştiriciyi engeller.
+- **SIM kart hatası iletişim kutusu (yalnızca mobil)** -SIM kart algılanmazsa cihazda bir hata iletisinin görüntülenmesini engeller.
+- **Otomatik yeniden dağıtım** - Yönetici haklarına sahip olan kullanıcıların cihaz kilidi ekranında **CTRL + Win + R** tuşunu kullanarak tüm kullanıcı verilerini ve ayarlarını silmelerini sağlar. Cihaz otomatik olarak yeniden yapılandırılacak ve yönetime yeniden kaydedilir.
 
 
 ## <a name="password"></a>Parola
@@ -68,19 +68,68 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
 ## <a name="personalization"></a>Kişiselleştirme
 
--   **Masaüstü arka plan resmi URL'si (Yalnızca masaüstü)** - Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz PNG, JPG veya JPEG biçiminde bir resmin URL'sini belirtin. Kullanıcıların bunu değiştirmesi mümkün olmayacaktır.
+- **Masaüstü arka plan resmi URL'si (Yalnızca masaüstü)** - Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz PNG, JPG veya JPEG biçiminde bir resmin URL'sini belirtin. Kullanıcılar bunu değiştiremez.
 
 ## <a name="privacy"></a>Gizlilik
 
 -   **Girişi kişiselleştirme** – Cortana, dikte veya Microsoft Mağazası uygulamaları için bulut tabanlı konuşma hizmeti kullanılmasına izin vermez. Bu hizmetlere izin verirseniz Microsoft, hizmeti geliştirmek için sesli veri toplayabilir.
 -   **Eşleştirme ve gizlilik kullanıcı onayı istemlerini otomatik kabul et** – Windows'un, uygulama çalıştırırken eşleştirme ve gizlilik onay iletilerini otomatik olarak kabul etmesine izin ver.
 
+Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **Uygulama başına gizlilik özel durumları**'nı kullanarak uygulama başına özel durumlar tanımlayabilirsiniz.
+
+### <a name="exceptions"></a>Özel Durumlar
+
+- **Hesap bilgileri** - Bu uygulamanın kullanıcı adına, resmine ve diğer kişi bilgilerine erişip erişemeyeceğini tanımlayın.
+- **Arka plan uygulamaları** - Bu uygulamanın arka planda çalıştırılıp çalıştırılamayacağını tanımlayın.
+- **Takvim** - Bu uygulamanın takvime erişip erişemeyeceğini tanımlayın.
+- **Arama geçmişi** - Bu uygulamanın arama geçmişime erişip erişemeyeceğini tanımlayın.
+- **Kamera** - Bu uygulamanın kameraya erişip erişemeyeceğini tanımlayın.
+- **Kişiler** - Bu uygulamanın kişilere erişip erişemeyeceğini tanımlayın.
+- **E-posta** - Bu uygulamanın e-postaya erişip erişemeyeceğini ve e-posta gönderip gönderemeyeceğini tanımlayın.
+- **Konum** - Bu uygulamanın konum bilgilerine erişip erişemeyeceğini tanımlayın.
+- **Mesajlaşma** - Bu uygulamanın SMS veya MMS mesajları okuma veya gönderme işlemleri yapıp yapamayacağını tanımlayın.
+- **Mikrofon** - Bu uygulamanın mikrofon kullanıp kullanamayacağını tanımlayın.
+- **Hareket** - Bu uygulamanın cihaz hareketi bilgilerine erişip erişemeyeceğini tanımlayın.
+- **Bildirimler** - Bu uygulamanın bildirimlere erişip erişemeyeceğini tanımlayın.
+- **Telefon** - Bu uygulamanın kameraya erişip erişemeyeceğini tanımlayın.
+- **Radyolar** - Bazı uygulamalar verileri gönderip almak için cihazınızdaki radyoları (örneğin, Bluetooth) kullanır ve bu radyoları açması veya kapatması gerekir. Bu uygulamanın bu radyoları denetleyip denetleyemeyeceğini tanımlayın.
+- **Görevler** - Bu uygulamanın görevlerinize erişip erişemeyeceğini tanımlayın.
+- **Güvenilen cihazlar** - Bu uygulamanın güvenilen cihazları (zaten bağlantılı olduğunuz ya da bu PC, tablet veya telefonla birlikte gelen donanımlar) kullanıp kullanamayacağını tanımlayın. Örneğin: televizyonlar, projektörler, vb.
+- **Geri bildirim ve tanılamalar** - Bu uygulamanın tanılama bilgilerine erişip erişemeyeceğini tanımlayın.
+- **Cihazlarla eşitle** - Bu uygulamanın bu PC, tablet veya telefonla açıkça eşleştirilmemiş kablosuz cihazlarla otomatik olarak bilgi paylaşma ve eşitleme işlemleri yapıp yapamayacağını tanımlayın.
+
+## <a name="per-app-privacy-exceptions"></a>Uygulama başına gizlilik özel durumları
+
+"Varsayılan gizlilik" altında tanımladığınızdan farklı bir gizlilik davranışı olması gereken uygulamaları ekleyebilirsiniz.
+
+- **Paket Adı** -Uygulama paketi ailesi adı.
+- **Uygulama Adı** - Uygulamanın adı.
+
+### <a name="exceptions"></a>Özel Durumlar
+
+- **Hesap bilgileri** - Bu uygulamanın kullanıcı adına, resmine ve diğer kişi bilgilerine erişip erişemeyeceğini tanımlayın.
+- **Arka plan uygulamaları** - Bu uygulamanın arka planda çalıştırılıp çalıştırılamayacağını tanımlayın.
+- **Takvim** - Bu uygulamanın takvime erişip erişemeyeceğini tanımlayın.
+- **Arama geçmişi** - Bu uygulamanın arama geçmişime erişip erişemeyeceğini tanımlayın.
+- **Kamera** - Bu uygulamanın kameraya erişip erişemeyeceğini tanımlayın.
+- **Kişiler** - Bu uygulamanın kişilere erişip erişemeyeceğini tanımlayın.
+- **E-posta** - Bu uygulamanın e-postaya erişip erişemeyeceğini ve e-posta gönderip gönderemeyeceğini tanımlayın.
+- **Konum** - Bu uygulamanın konum bilgilerine erişip erişemeyeceğini tanımlayın.
+- **Mesajlaşma** - Bu uygulamanın SMS veya MMS mesajları okuma veya gönderme işlemleri yapıp yapamayacağını tanımlayın.
+- **Mikrofon** - Bu uygulamanın mikrofon kullanıp kullanamayacağını tanımlayın.
+- **Hareket** - Bu uygulamanın cihaz hareketi bilgilerine erişip erişemeyeceğini tanımlayın.
+- **Bildirimler** - Bu uygulamanın bildirimlere erişip erişemeyeceğini tanımlayın.
+- **Telefon** - Bu uygulamanın kameraya erişip erişemeyeceğini tanımlayın.
+- **Radyolar** - Bazı uygulamalar verileri gönderip almak için cihazınızdaki radyoları (örneğin, Bluetooth) kullanır ve bu radyoları açması veya kapatması gerekir. Bu uygulamanın bu radyoları denetleyip denetleyemeyeceğini tanımlayın.
+- **Görevler** - Bu uygulamanın görevlerinize erişip erişemeyeceğini tanımlayın.
+- **Güvenilen cihazlar** - Bu uygulamanın güvenilen cihazları (zaten bağlantılı olduğunuz ya da bu PC, tablet veya telefonla birlikte gelen donanımlar) kullanıp kullanamayacağını tanımlayın. Örneğin: televizyonlar, projektörler, vb.
+- **Geri bildirim ve tanılamalar** - Bu uygulamanın tanılama bilgilerine erişip erişemeyeceğini tanımlayın.
+- **Cihazlarla eşitle** - Bu uygulamanın bu PC, tablet veya telefonla açıkça eşleştirilmemiş kablosuz cihazlarla otomatik olarak bilgi paylaşma ve eşitleme işlemleri yapıp yapamayacağını tanımlayın.
 
 ## <a name="locked-screen-experience"></a>Kilit ekranı deneyimi
 
-
--   **İşlem merkezi bildirimleri (yalnızca mobil)** - Cihaz kilitleme ekranında İşlem Merkezi bildiriminin görünmesine izin verir (yalnızca Windows 10 Mobile).
--   **Kilit ekranı resmi URL'si (yalnızca masaüstü)** - Windows kilit ekranı duvar kağıdı olarak kullanılacak PNG, JPG veya JPEG biçiminde bir resim URL'si belirtin. Kullanıcıların bunu değiştirmesi mümkün olmayacaktır.
+- **İşlem merkezi bildirimleri (yalnızca mobil)** - Cihaz kilitleme ekranında İşlem Merkezi bildiriminin görünmesine izin verir (yalnızca Windows 10 Mobile).
+- **Kilit ekranı resmi URL'si (yalnızca masaüstü)** - Windows kilit ekranı duvar kağıdı olarak kullanılacak PNG, JPG veya JPEG biçiminde bir resim URL'si belirtin. Kullanıcılar bunu değiştiremez.
 -   **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)** – Kullanıcıların süreyi yapılandırmasına izin verir 
 -   **Kilitleme ekranında Cortana (yalnızca masaüstü)**  – Cihaz kilitleme ekranındayken kullanıcının Cortana ile etkileşim kurmasına izin vermez (yalnızca Windows 10 masaüstü).
 -   **Kilitli ekranda bildirimler** – Cihaz kilitleme ekranında uyarı iletileri gösterilmesini engelleyin.
@@ -125,17 +174,17 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
     -   **İlk çalıştırma URL'si** – Bir kullanıcı ilk kez Edge’i çalıştırdığında görüntülenen sayfanın URL'sini belirtir (yalnızca Windows 10 Mobile).
 -   **Ana sayfalar** - Edge tarayıcısında giriş sayfası olarak kullanmak istediğiniz sitelerin bir listesini ekler (yalnızca masaüstü).
 -   **Başlangıç sayfasındaki değişiklikler** – Kullanıcıların Edge açıldığında görüntülenen başlangıç sayfalarını değiştirmesine izin verir. Edge başladığında açılan sayfayı veya sayfa listesini oluşturmak için Giriş sayfaları ayarını kullanın.
--   **about:flags erişimini engelle** - Son kullanıcının Edge’deki geliştirici ayarları ve deneysel ayarlar içeren about:flags sayfasına erişimini engelleyin.
+-   **About flags sayfasına erişimi engelle** - Son kullanıcının Edge’deki geliştirici ayarları ve deneysel ayarlar içeren about:flags sayfasına erişimini engelleyin.
 -   **WebRtc localhost IP adresi** - Web RTC protokolü kullanarak telefon araması yaparken kullanıcıların localhost IP adresinin görüntülenmesini engelleyin.
 -   **Varsayılan arama motoru** - Kullanılacak varsayılan arama motorunu belirtin. Son kullanıcılar bu değeri istediği zaman değiştirebilir.
 -   **Çıkışta tarama verilerini temizle** – Kullanıcı Edge'den çıktığında geçmişi ve tarama verilerini temizler.
 -   **Canlı Kutucuk verisi toplama** – Kullanıcı, Edge'den başlatma menüsüne bir site sabitlediğinde Windows'un Canlı Kutucuk’tan bilgi toplamasını durdurur.
 
-## <a name="edge-browser-smartscreen"></a>Edge Tarayıcısı SmartScreen
+## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
--   **SmartScreen** - Sahte web sitelerini engelleyen SmartScreen’i etkinleştirir veya devre dışı bırakır.
--   **Akıllı ekran komut istemini geçersiz kılma** - Son kullanıcının olası kötü amaçlı web siteleri hakkındaki SmartScreen filtre uyarılarını atlamasına izin verin.
--   **Dosyalar için akıllı ekran komut istemini geçersiz kılma** - Son kullanıcının olası kötü amaçlı dosyaları indirme hakkındaki SmartScreen filtre uyarılarını atlamasına izin verin.
+- **SmartScreen for Microsoft Edge** - Site ve dosya indirmelerine erişmek için Edge SmartScreen'i etkinleştirin.
+- **Kötü niyetli site erişimi** - Kullanıcıların Windows Defender SmartScreen Filtresi uyarılarını yoksaymasını ve siteye gitmesini engelleyin.
+- **Doğrulanmamış dosyayı indirme** - Kullanıcıların Windows Defender SmartScreen Filtresi uyarılarını yoksaymasını ve doğrulanmamış dosyaları indirmesini engelleyin.
 
 ## <a name="search"></a>Ara
 - **Güvenli Arama (yalnızca mobil)** - Cortana’nın yetişkinlere yönelik içeriği arama sonuçlarında nasıl filtreleyeceğini denetleyin. **Katı**, **Orta** değerlerini seçebilir ya da son kullanıcının kendi ayarlarını seçmesine izin verebilirsiniz.
@@ -182,9 +231,30 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
     -   **Gizlilik** - Ayarlar uygulamasının gizlilik alanına erişimini engeller.
     -   **Güncelleştirme ve Güvenlik** - Ayarlar uygulamasının güncelleştirmeler ve güvenlik alanına erişimini engeller.
 
-## <a name="kiosk"></a>Bilgi noktası
+## <a name="start"></a>Başlangıç
 
--   **Bilgi noktası modu** - İlke tarafından desteklenen [bilgi noktası modu](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) türünü belirler.  Şu seçenekler mevcuttur:
+- **Uygulamaları görev çubuğundan kaldır** - Kullanıcıların uygulamaları Başlat menüsünden kaldırmasını engelleyin.
+- **Başlat Menüsünde Belgeler** - Windows Başlat menüsündeki Belgeler klasörünü gösterin veya gizleyin.
+- **Başlat Menüsünde İndirilenler** - Windows Başlat menüsündeki İndirilenler klasörünü gösterin veya gizleyin.
+- **Başlat Menüsünde Dosya Gezgini** - Windows Başlat menüsündeki Dosya Gezgini uygulamasını gösterin veya gizleyin.
+- **Başlat Menüsünde Ev Grubu** - Windows Başlat menüsündeki Ev Grubu klasörünü gösterin veya gizleyin.
+- **Başlat Menüsünde Müzik** - Windows Başlat menüsündeki Müzik klasörünü gösterin veya gizleyin.
+- **Başlat Menüsünde Ağ** - Windows Başlat menüsündeki Ağ klasörünü gösterin veya gizleyin.
+- **Başlat Menüsünde Kişisel klasörü** - Windows Başlat menüsündeki Kişisel klasörünü gösterin veya gizleyin.
+- **Başlat Menüsünde Resimler** - Windows Başlat menüsündeki Resimler klasörünü gösterin veya gizleyin.
+- **Başlat Menüsünde Ayarlar** - Windows Başlat menüsündeki Ayarlar uygulamasını gösterin veya gizleyin.
+- **Başlat Menüsünde Videolar** - Windows Başlat menüsündeki Videolar klasörünü gösterin veya gizleyin.
+
+## <a name="display"></a>Görüntüle
+
+- **Uygulamalar için GDI ölçeklendirmeyi aç**
+- **Uygulamalar için GDI ölçeklendirmeyi kapat**
+
+  GDI DPI Ölçeklendirme, DPI kullanmayan uygulamaların monitör başına DPI kullanır duruma gelmesini sağlar. GDI DPI Ölçeklendirme'nin açıldığı eski uygulamaları belirtin. GDI DPI Ölçeklendirme bir uygulamada hem açılacak hem de kapatılacak şekilde yapılandırıldığında, uygulama için ölçeklendirme kapatılır.
+
+## <a name="kiosk-preview"></a>Bilgi noktası (Önizleme)
+
+-   **Bilgi noktası modu** - İlke tarafından desteklenen [bilgi noktası modu](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) türünü belirler. Şu seçenekler mevcuttur:
 
       - **Yapılandırılmamış** (varsayılan) - İlke, bilgi noktası modunu etkinleştirmez. 
       - **Tek uygulama bilgi noktası** - Profil, cihazı tek bir uygulama bilgi noktası olarak etkinleştirir.
@@ -192,15 +262,15 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
     Tek uygulama bilgi noktaları, aşağıdaki ayarları gerektirir:
 
-      - **Kullanıcı hesabı**: Yerel (cihaz için) kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgilerini belirtir.  Azure AD etki alanlarına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
+      - **Kullanıcı hesabı**: Yerel (cihaz için) kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgilerini belirtir. Azure AD etki alanlarına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
 
          Ortak ortamlardaki cihazlar için olabilecek en az ayrıcalıklı hesaplar kullanarak yetkilendirilmemiş etkinliklerin önüne geçin.  
 
-      - **Bir uygulamanın uygulama kullanıcı modeli kimliği (AUMID)** - Bilgi noktası uygulamasının AUMID’ini belirtir.  Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **Bir uygulamanın uygulama kullanıcı modeli kimliği (AUMID)** - Bilgi noktası uygulamasının AUMID’ini belirtir. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Çoklu bilgi noktaları, bilgi noktası yapılandırması gerektirir.  **Ekle** düğmesini kullanarak bir bilgi noktası yapılandırması oluşturun veya mevcut bir taneyi seçin.
+    Birden çok uygulamalı bilgi noktaları, bilgi noktası yapılandırması gerektirir. **Ekle** düğmesini kullanarak bir bilgi noktası yapılandırması oluşturun veya mevcut bir taneyi seçin.
 
-    Çoklu uygulama bilgi noktası yapılandırmaları, aşağıdaki ayarları içerir:
+    Birden çok uygulamalı bilgi noktası yapılandırmaları, aşağıdaki ayarları içerir:
 
     - **Bilgi noktası yapılandırma adı** - Bir yapılandırmayı ayırt etmek için kullanılan kolay bir ad.
 
@@ -208,9 +278,9 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
         - Bilgi noktası uygulamasının türünü belirten **Uygulama Türü**.  Desteklenen değerler şunlardır:   
 
-            - **Win32 Uygulaması** - Geleneksel bir masaüstü uygulaması.  (Yürütülebilir dosyanın cihaza ait mutlak yol adına ihtiyacınız vardır.)
+            - **Win32 Uygulaması** - Geleneksel bir masaüstü uygulaması. (Yürütülebilir dosyanın cihaza göre mutlak yol adına ihtiyacınız vardır.)
 
-            - **UWP Uygulaması** - Bir Evrensel Windows uygulaması.  [Uygulamanın AUMID’ine](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ihtiyacınız vardır.
+            - **UWP Uygulaması** - Bir Evrensel Windows uygulaması. [Uygulamanın AUMID’sine](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ihtiyacınız vardır.
 
         - **Uygulama Tanımlayıcı** - Yürütülebilir dosyanın mutlak yol adını (Win32 uygulamaları) veya [uygulamanın AUMID’ini](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP uygulamaları) belirtir.
 
@@ -218,9 +288,9 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
     - **Başlangıç menüsü düzeni** - Uygulamaların [Başlangıç menüsünde nasıl göründüğünü](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) açıklayan bir XML dosyasını belirtir.
 
-    - **Atanan kullanıcılar** - bilgi noktası yapılandırmasıyla ilişkili bir veya daha fazla kullanıcı hesabı belirtir.  Hesap, cihazda yerel olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgileri olabilir.  Etki alanına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
+    - **Atanan kullanıcılar** - bilgi noktası yapılandırmasıyla ilişkili bir veya daha fazla kullanıcı hesabı belirtir. Hesap, cihazda yerel olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgileri olabilir. Etki alanına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Windows Defender Virüsten Koruma
 
 -   **Gerçek zamanlı izleme** - Kötü amaçlı yazılım, casus yazılım ve istenmeyen diğer yazılımlar için gerçek zamanlı taramayı etkinleştirir.
 -   **Davranış izleme** - Defender’ın cihazlarda bilinen şüpheli etkinlik düzenlerini denetlemesine olanak sağlar.
@@ -256,7 +326,7 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
 
 
 
-## <a name="defender-exclusions"></a>Klasör Dışlamaları
+### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender Virüsten Koruma Dışlamaları
 
 -   **Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosyalar ve klasörler** - Dışlama listesine **C:\Yol** veya **%ProgramFiles%\Yol\dosyaadı.exe** gibi bir veya birden çok dosya ve klasör ekler. Bu dosya ve klasörler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
 -   **Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosya uzantıları** - Dışlama listesine **jpg** veya **txt** gibi bir veya birden çok dosya uzantısı ekleyin. Bu uzantıya sahip dosyaların hiçbiri gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
@@ -294,16 +364,41 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
 - **Bu bilgisayara yansıtma** - Diğer cihazların yansıtma için bilgisayarı bulmasını engeller.
 - **Eşleştirme için PIN gerektir** - Bir projeksiyon cihazına bağlanırken PIN gerekmesini sağlayın.
 
-## <a name="start"></a>Başlangıç
+## <a name="cloud-printer"></a>Bulut Yazıcı
 
-- **Uygulamaları görev çubuğundan kaldır** - Kullanıcıların uygulamaları Başlat menüsünden kaldırmasını engelleyin.
-- **Başlat Menüsünde Belgeler** - Windows Başlat menüsündeki Belgeler klasörünü gösterin veya gizleyin.
-- **Başlat Menüsünde İndirilenler** - Windows Başlat menüsündeki İndirilenler klasörünü gösterin veya gizleyin.
-- **Başlat Menüsünde Dosya Gezgini** - Windows Başlat menüsündeki Dosya Gezgini uygulamasını gösterin veya gizleyin.
-- **Başlat Menüsünde Ev Grubu** - Windows Başlat menüsündeki Ev Grubu klasörünü gösterin veya gizleyin.
-- **Başlat Menüsünde Müzik** - Windows Başlat menüsündeki Müzik klasörünü gösterin veya gizleyin.
-- **Başlat Menüsünde Ağ** - Windows Başlat menüsündeki Ağ klasörünü gösterin veya gizleyin.
-- **Başlat Menüsünde Kişisel klasörü** - Windows Başlat menüsündeki Kişisel klasörünü gösterin veya gizleyin.
-- **Başlat Menüsünde Resimler** - Windows Başlat menüsündeki Resimler klasörünü gösterin veya gizleyin.
-- **Başlat Menüsünde Ayarlar** - Windows Başlat menüsündeki Ayarlar uygulamasını gösterin veya gizleyin.
-- **Başlat Menüsünde Videolar** - Windows Başlat menüsündeki Videolar klasörünü gösterin veya gizleyin.
+- **Yazıcı bulma URL'si** -Bulut yazıcılarını bulma uç noktası.
+- **Yazıcı erişim yetkilisi URL'si** - OAuth belirteçlerini almak için kimlik doğrulama uç noktası.
+- **Azure yerel istemci uygulama GUID'si** - OAuthAuthority'den OAuth belirteçlerini almak için yetkilendirilen istemci uygulamasının GUID'si.
+- **Yazdırma hizmeti kaynak URI'si** - Azure Portal'da yapılandırıldığı şekliyle yazdırma hizmetinin OAuth kaynak URI'si.
+- **Sorgulanacak en fazla yazıcı sayısı (Yalnızca mobil)** - Bulma uç noktasından sorgulanacak yazıcı sayısı üst sınırı.
+- **Yazıcı bulma hizmeti kaynak URI'si** - Azure Portal'da yapılandırıldığı şekliyle yazıcı bulma hizmetinin OAuth kaynak URI'si.
+
+## <a name="reporting-and-telemetry"></a>Raporlama ve Telemetri
+
+- **Kullanım verilerini paylaş** - Tanılama verilerinin gönderim düzeyini seçin.
+- **Telemetri proxy sunucusu**
+
+  Güvenli Yuva Katmanı (SSL) bağlantısı kullanılarak Bağlı Kullanıcı Deneyimleri ve Telemetri isteklerinin iletileceği proxy sunucusunun tam etki alanı adını (FQDN) veya IP adresini belirtin. Bu ayarın biçimi *sunucu*:*bağlantı noktası* olur. Adlandırılmış proxy başarısız olursa veya bu ilke etkinleştirildiğinde belirtilmiş bir proxy yoksa, Bağlı Kullanıcı Deneyimleri ve Telemetri verileri iletilmez ve yerel cihazda kalır.
+
+   Örnek biçimler:
+
+   IPv4: 192.246.246.106:100<br>
+ IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN: www.contoso.com:345
+
+## <a name="messaging"></a>İleti
+
+- **İleti eşitleme (yalnızca mobil)** - Her Yerden Mesajlaşma ve metin iletisi yedekleme ve kurtarmayı devre dışı bırakın.
+- **MMS (yalnızca mobil)** - Cihazdaki MMS gönderme ve alma işlevini devre dışı bırakın.
+- **RCS (yalnızca mobil)** - Cihazdaki Zengin İletişim Hizmetleri gönderme ve alma işlevini devre dışı bırakın.
+
+
+
+
+
+
+
+
+
+
+
+

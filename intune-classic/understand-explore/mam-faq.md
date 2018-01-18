@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
@@ -91,29 +91,30 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 
 **Çoklu kimlik desteğinin amacı nedir?** Çoklu kimlik desteği hem “kurumsal” kitleye hem de tüketici kitlesine sahip uygulamaların (yani Office uygulamalarının), “kurumsal” hesaplara yönelik Intune uygulama koruma özellikleri ile genel kullanım için yayımlanabilmesine olanak tanır.
 
-**PIN ekranı ne zaman görüntülenir?** Intune PIN ekranı yalnızca, kullanıcı uygulamadaki “kurumsal” verilere erişmeye çalıştığında gösterilir. Örneğin, Word/Excel/PowerPoint uygulamalarında, son kullanıcı OneDrive İş üzerinden bir belgeyi açmayı denediğinde gösterilir (PIN’i zorunlu kılan bir uygulama koruma ilkesini başarıyla dağıttığınız varsayılırsa).
-
 **Outlook'ta çoklu kimlik desteği nasıl işler?** Outlook’ta kişisel ve “kurumsal” e-postalar birleştirilmiş bir e-posta görünümünde gösterildiği için, Outlook uygulamasını başlattığınız zaman Intune PIN’i istenir.
 
 **Intune uygulama PIN’i nedir?** Kişisel Kimlik Numarası (PIN), bir uygulamadaki kuruluş verilerine doğru kullanıcının eriştiğini doğrulamak için kullanılan bir paroladır.
 
   1. **Ne zaman kullanıcıdan PIN’ini girmesi istenir?** Intune, kullanıcının uygulama PIN’ini yalnızca kullanıcı “kurumsal” verilere erişmek üzereyken ister. Word/Excel/PowerPoint gibi çok kimlikli uygulamalarda, kullanıcı “kurumsal” bir belge veya dosyayı açmaya çalıştığında kullanıcıdan PIN’ini girmesi istenir. Intune Uygulaması Sarmalama Aracı kullanılan iş kolu uygulamaları gibi tek kimlikli uygulamalarda, Intune Uygulama SDK’sı kullanıcının uygulamadaki deneyiminin her zaman “kurumsal” nitelikli olduğunu bildiğinden, uygulama başlatıldığında PIN girilmesi istenir.
 
-  2. **PIN güvenli midir?** PIN, uygulamadaki kuruluş verilerine yalnızca doğru kullanıcının erişmesine izin verir. Bu nedenle son kullanıcıların, Intune uygulama PIN’lerini ayarlamak veya sıfırlamak için iş veya okul hesaplarında oturum açmaları gerekir. Bu kimlik doğrulaması, Azure Active Directory tarafından güvenli belirteç değişimi ile işlenir ve Intune Uygulama SDK’sı tarafından görülmez. Güvenlik açısından, iş veya okul verilerini korumanın en iyi yolu verileri şifrelemektir. Şifreleme, uygulama PIN’i ile ilişkili değildir; ayrı bir uygulama koruma ilkesidir.
+2. **Kullanıcıdan ne sıklıkta Intune PIN’i istenecek?**
+BT yöneticisi, Intune yönetici konsolunda “(dakika) sonra erişim gereksinimlerini yeniden denetle” Intune uygulama koruma ilkesini tanımlayabilir. Bu ayar, cihazda erişim gereksinimlerini denetlenmeden önce geçmesi gereken süresi belirtir ve uygulama PIN ekranı yeniden gösterilir. Ancak kullanıcıdan PIN istenme sıklığını etkileyen önemli PIN ayrıntıları şöyledir: 
 
-  3. **Intune, PIN’i deneme yanılma saldırılarına karşı nasıl koruyor?** Uygulama PIN’i ilkesinin parçası olarak BT yöneticisi, bir kullanıcının uygulama kilitlenmeden önce PIN’ini doğrulamayı en fazla kaç kez deneyebileceğini belirleyebilir. Deneme sayısına ulaşıldıktan sonra, Intune Uygulama SDK’sı uygulamadaki “kurumsal” verileri temizleyebilir.
+* **Kullanılabilirliği iyileştirmek için PIN, aynı yayımcının uygulamaları arasında paylaşılır:** iOS’ta bir uygulama PIN’i **aynı yayımcıya ait** tüm uygulamalar arasında paylaşılır. Android’de bir uygulama PIN’i tü uygulamalar arasında paylaşılır.
+* **PIN ile ilişkili zamanlayıcının kayıt yapısı:** Bir uygulamaya (uygulama A) erişmek için bir PIN girildiğinde ve uygulama ön plandan (ana girdi odağı) ayrıldığında, bu PIN için PIN zamanlayıcısı sıfırlanır. Bu PIN’i paylaşan başka bir uygulama (uygulama B), zamanlayıcı sıfırlandığı için kullanıcıdan PIN girmesini istemeyecektir. “(dakika) sonra erişim gereksinimlerini yeniden denetle” değeri yeniden karşılandığında istem yeniden görüntülenecektir. 
+
+>[!NOTE] 
+> Kullanıcının erişim gereksinimlerini (yani PIN istemini) daha sık doğrulamak için, “(dakika) sonra erişim gereksinimlerini yeniden denetle” ayarındaki değeri azaltmanız önerilir. 
+
+  3. **PIN güvenli midir?** PIN, uygulamadaki kuruluş verilerine yalnızca doğru kullanıcının erişmesine izin verir. Bu nedenle son kullanıcıların, Intune uygulama PIN’lerini ayarlamak veya sıfırlamak için iş veya okul hesaplarında oturum açmaları gerekir. Bu kimlik doğrulaması, Azure Active Directory tarafından güvenli belirteç değişimi ile işlenir ve Intune Uygulama SDK’sı tarafından görülmez. Güvenlik açısından, iş veya okul verilerini korumanın en iyi yolu verileri şifrelemektir. Şifreleme, uygulama PIN’i ile ilişkili değildir; ayrı bir uygulama koruma ilkesidir.
+
+  4. **Intune, PIN’i deneme yanılma saldırılarına karşı nasıl koruyor?** Uygulama PIN’i ilkesinin parçası olarak BT yöneticisi, bir kullanıcının uygulama kilitlenmeden önce PIN’ini doğrulamayı en fazla kaç kez deneyebileceğini belirleyebilir. Deneme sayısına ulaşıldıktan sonra, Intune Uygulama SDK’sı uygulamadaki “kurumsal” verileri temizleyebilir.
   
-**Intune uygulama PIN’i sayısal tür ve geçiş kodu türü arasında nasıl çalışır?**
-MAM şu anda Intune APP SDK’sının iOS ile tümleştirilmesi için uygulamaların (örneğin WXP, Outlook, Managed Browser, Yammer) katılımını gerektiren alfasayısal ve özel karakterler (‘geçiş kodu’ denilir) içeren uygulama düzeyi PIN’e (iOS) izin verir. Bu olmadan geçiş kodu ayarları, hedeflenmiş uygulamalar için doğru şekilde zorlanır. Uygulamalar, sıralı bir şekilde tümleştirileceği için geçiş kodu ve sayısal PIN arasındaki davranış son kullanıcı için geçici olarak değiştirilir ve önemli bir açıklama gerektirir. Intune’un Ekim 2017 sürümü için davranış aşağıdaki gibidir...
+  5. **Ayın yayımcının uygulamalarında PIN'i neden iki kez ayarlamam gerekiyor?**
+MAM (iOS üzerinde) şu anda Intune APP SDK’sının iOS ile tümleştirilmesi için uygulamaların (örneğin WXP, Outlook, Managed Browser, Yammer) katılımını gerektiren alfasayısal ve özel karakterler (‘geçiş kodu’ denilir) içeren uygulama düzeyi PIN’e (iOS) izin verir. Bu olmadan geçiş kodu ayarları, hedeflenmiş uygulamalar için doğru şekilde zorlanır. Bu, iOS için Intune SDK'sı 7.1.12 sürümünde kullanıma sunulmuş olan bir özellikti. <br> Bu özelliği desteklemek ve iOS için Intune SDK'sının önceki sürümleriyle geriye dönük uyumluluğu güvence altına almak için, 7.1.12+ sürümlerinde tüm PIN'ler (sayısal veya geçiş kodu) SDK'nın önceki sürümlerindeki sayısal PIN'den ayrı işlenir. Bu nedenle, cihazda aynı yayımcının iOS için Intune SDK'sının 7.1.12 öncesi VE 7.1.12 sonrası sürümlerini içeren uygulamalar varsa, iki PIN ayarlamaları gerekir. <br><br> Bununla birlikte, iki PIN (her uygulama için) herhangi bir şekilde birbiriyle ilgili değildir; uygulamaya uygulanan uygulama koruma ilkesine uygun olmaları gerekir. Dolayısıyla, *ancak* A ve B uygulamalarına aynı ilkeler uygulandıysa (PIN'e göre), kullanıcı aynı PIN'i iki kez ayarlayabilir. <br><br> Bu davranış Intune Mobil Uygulama Yönetimi'nin etkinleştirildiği iOS uygulamalardaki PIN'e özgüdür. Zaman içinde, uygulamalar iOS için Intune SDK'sının daha yeni sürümlerini benimsedikçe aynı yayımcıdan gelen uygulamalarda iki kez PIN ayarlama gereği sorun olmaktan çıkar. Örnek görmek için lütfen aşağıdaki nota bakın.
 
-Uygulamalar şunlara sahip olmalıdır:
-1. aynı uygulama yayımcısı
-2. konsol üzerinden hedeflenen bir geçiş kodu PIN’i ve 
-3. bu özellikle (v 7.1.12+) SDK’yı benimseyenler, bu uygulamalar arasında geçiş kodunu paylaşabilir. 
-
-Uygulamalar şunlara sahip olmalıdır:
-1. aynı uygulama yayımcısı
-2. konsol üzerinden hedeflenen sayısal bir PIN, bu uygulamalar arasında sayısal PIN’i paylaşabilir. 
+>[!NOTE]
+> Örneğin, aynı yayımcının A uygulaması 7.1.12 öncesi bir sürümle oluşturulduysa ve B uygulaması 7.1.12 ile veya sonraki bir sürümle oluşturulduysa, iOS cihazında her iki uygulamanın da yüklü olması durumunda son kullanıcının A ve B için ayrı PIN'ler ayarlaması gerekir. <br> Cihazda SDK sürümü 7.1.9 olan bir C uygulaması yüklüyse, A uygulamasıyla aynı PIN'i paylaşır. <br> Sürümü 7.1.14 olan D uygulaması, B uygulamasıyla aynı PIN'i paylaşır. <br> Cihazda yalnızca A ve C uygulamaları yüklüyse, tek bir PIN'in ayarlanması yeterli olur. Cihazda yalnızca B ve D uygulamaları yüklü olduğunda da aynı durum geçerlidir.
 
 **Şifreleme nasıl çalışır?** BT yöneticileri uygulama verilerinin şifrelenmesini gerektiren bir uygulama koruma ilkesi dağıtabilir. İlkenin bir parçası olarak BT yöneticisi, içeriğin ne zaman şifreleneceğini de belirtebilir.
 
@@ -146,7 +147,7 @@ Uygulamalar şunlara sahip olmalıdır:
 
 **Veri aktarımı ilkesi “yalnızca yönetilen uygulamalar” veya “uygulama yok” olarak ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS paylaşım uzantısını kullanabiliyorum. Bu veri sızıntısına neden olmaz mı?** Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_. Bunu, “kurumsal” dosyayı yönetilen uygulama dışında açmaya çalışarak doğrulayabilirsiniz. Bu dosya şifrelenmiş olmalı ve yönetilen bir uygulama dışında açılamamalıdır.
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 - [Microsoft Intune’da Android mobil uygulama yönetim ilkesi ayarları](../deploy-use/android-mam-policy-settings.md)
 - [iOS mobil uygulama yönetim ilkesi ayarları](../deploy-use/ios-mam-policy-settings.md)
 - [Mobil uygulama yönetimi kurulumunuzu doğrulama](../deploy-use/validate-mobile-application-management.md)
