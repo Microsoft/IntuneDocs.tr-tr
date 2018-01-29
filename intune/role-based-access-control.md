@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Intune ile rol tabanlı yönetim denetimi (RBAC)
 
@@ -61,6 +61,18 @@ Aşağıdaki roller Intune'da yerleşiktir ve bunları ek yapılandırma gerekme
 - **İlke ve Profil Yöneticisi**: Uyumluluk ilkesini, yapılandırma profillerini, Apple kaydını ve kurumsal cihaz tanımlayıcılarını yönetir.
 - **Salt Okuma Operatörü**: Kullanıcı, cihaz, kayıt, yapılandırma ve uygulama bilgilerini görüntüler. Intune’da değişiklik yapamaz.
 - **Uygulama Yöneticisi**: Mobil ve yönetilen uygulamaları yönetir ve cihaz bilgilerini okuyabilir.
+- **Okul Yöneticisi**: [Eğitim için Intune](introduction-intune-education.md)’da Windows 10 cihazları yönetir ve aşağıdaki eylemleri gerçekleştirebilir: 
+
+|İzin|İşlem|
+|---|---|
+|Veri Denetleme|Okuma|
+|DeviceConfigurations|Atama, Oluşturma, Silme, Okuma, Güncelleştirme|
+|Cihaz Kayıt Yöneticileri|Okuma, Güncelleştirme|
+|Yönetilen Cihazlar|Okuma, Güncelleştirme<!--, Delete [To be added in 1803]-->|
+|Mobil uygulamalar|Atama, Oluşturma, Silme, Okuma, Güncelleştirme|
+|Reports|Okuma|
+|Uzak Eylemler|Bilgisayar Temizleme, Yeniden Başlatma, Uzak Kilit, Devre Dışı Bırakma, Cihaz Eşitleme, Silme|
+|Kuruluş|Okuma|
 
 ### <a name="to-assign-a-built-in-role"></a>Yerleşik bir rol atamak için
 

@@ -5,7 +5,7 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/03/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bd7d48a6511b1ae8ecf5a6f413ae2f682434244c
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 546c5d3f373b863e75afa05b7e9bd842f8a8eb46
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -34,7 +34,7 @@ Uygulamanızı kaydetmeniz *gerekmez*. BT yöneticisi, uygulamayı dahili iş ko
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Uygulamanız Apple App Store veya Google Play gibi bir genel uygulama mağazasında yayınlanacaksa:
 
-Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_. Bundan sonra BT yöneticileri, uygulama koruma ilkesini bir Intune uygulama iş ortağı olarak listelenen uygulamaya uygulayabilir.
+Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_. Bundan sonra BT yöneticileri, uygulama koruma ilkesini bir Intune uygulama iş ortağı olarak listelenen yönetilen uygulamaya uygulayabilir.
 
 Kayıt tamamlanıp Microsoft Intune ekibi tarafından onaylanana kadar, Intune yöneticilerinin uygulamanızın ayrıntılı bağlantısına uygulama koruma ilkesi uygulama seçeneği olmaz. Microsoft ayrıca uygulamanızı kendi [Microsoft Intune İş Ortakları sayfasına](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) ekler. Sayfada Intune uygulama koruma ilkelerini desteklediğini göstermek üzere uygulamanın simgesi görüntülenir.
 
@@ -60,8 +60,6 @@ Uygulamanızın ayrıntılı bağlantısı gelecekte değişirse, uygulamanızı
 > [!NOTE]
 > Uygulamanızı Intune Uygulama SDK'sının yeni bir sürümüyle güncelleştirirseniz bunu lütfen bize bildirin.
 
-
-
 ## <a name="download-the-sdk-files"></a>SDK dosyalarını indirme
 
 Yerel iOS ve Android için Intune Uygulama SDK'ları bir Microsoft GitHub hesabında barındırılır. Bu genel depolar sırasıyla yerel iOS ve Android için SDK dosyalarını içerir:
@@ -75,10 +73,6 @@ Uygulamanız bir Xamarin veya Cordova uygulaması ise lütfen şu SDK çeşitler
 * [Intune Uygulama SDK’sı Cordova Eklentisi](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Depolarımızdan çatallama ve çekme işlemleri yaparken kullanabileceğiniz bir GitHub hesabı oluşturmanız iyi olabilir. GitHub, geliştiricilerin ürün ekibimizle iletişim kurmasına, soru sorup hızlı yanıtlar almasına, sürüm notlarını görüntülemesine ve Microsoft'a geri bildirim sağlamasına olanak tanır. Intune Uygulama SDK’sı Github'ındaki sorular için şuraya başvurun: msintuneappsdk@microsoft.com.
-
-
-
-
 
 ## <a name="enable-your-ios-or-android-app-for-app-protection-policy"></a>iOS veya Android uygulamanızı uygulama koruma ilkesi için etkinleştirme
 
@@ -102,9 +96,6 @@ Intune Uygulama SDK'sı ile uygulamanızı tümleştirmenize yardımcı olması 
  
  * Uygulamanız için [AAD İstemci kimliği](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application), farklı iOS ve Android platformlarında benzersiz olmalıdır.
  
- 
- 
-
 ## <a name="configure-telemetry-for-your-app"></a>Uygulamanızda Telemetriyi yapılandırma
 
 Microsoft Intune, uygulamanızdaki kullanım istatistikleri hakkında veri toplar.
@@ -113,7 +104,10 @@ Microsoft Intune, uygulamanızdaki kullanım istatistikleri hakkında veri topla
 
     * Uygulamanızdan Microsoft Intune’a SDK telemetri verileri göndermek istemiyorsanız IntuneMAMSettings sözlüğündeki `MAMTelemetryDisabled` özelliğini “EVET” olarak ayarlayarak telemetri iletimini devre dışı bırakmanız gerekir.
 
-* **Android için Intune Uygulama SDK’sı**: Telemetri verileri SDK aracılığıyla günlüğe kaydedilmez.
+* **Android için Intune Uygulama SDK’sı**: Android için Intune Uygulama SDK’sı, uygulamanızdan veri toplanmasını denetlemez. Şirket Portalı uygulaması, varsayılan olarak telemetri verilerini günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir. Microsoft İlkesi uyarınca kişisel bilgileri toplamıyoruz. 
+
+    * Son kullanıcılar bu verileri göndermemeyi tercih ederse, Şirket Portalı uygulamasının Ayarlar bölümünde telemetriyi kapatmaları gerekir. Daha fazla bilgi için bkz. [Microsoft kullanım verilerini toplamayı devre dışı bırakma](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+
 
  iOS ve Android iş kolu uygulaması sürüm numarası görünürdür <!-- 1380712 -->
 
@@ -123,7 +117,7 @@ Intune’da iş kolu uygulamaları artık iOS ve Android uygulamaları için sü
 
 ### <a name="full-version-number"></a>Tam sürüm numarası
 
-Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800)
+Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin 2.2(2.2.17560800). 
 
 Tam sürüm numarası iki bileşenden oluşur:
 
@@ -163,7 +157,7 @@ Yapı numarası|CFBundleVersion|PackageVersionCode |Bu numara, uygulama kodunda 
 ### <a name="test-your-app"></a>Uygulamanızı test etme
 iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek için gerekli adımları bitirdikten sonra, kullanıcı ile BT yöneticisi için tüm uygulama koruma ilkelerinin etkinleştirildiğinden ve çalıştığından emin olmanız gerekir. Tümleşik uygulamanızı sınamak için aşağıdakiler gerekir:
 
-* **Microsoft Intune sınama hesabı**: Intune özelliğinin tanıtıldığı uygulamanızı Intune uygulama koruma özelliklerine karşı sınamak için bir Microsoft Intune hesabınız olması gerekir.
+* **Microsoft Intune sınama hesabı**: Intune ile yönetilen uygulamanızı Intune uygulama koruma özelliklerine karşı sınamak için bir Microsoft Intune hesabınız olması gerekir.
 
     * iOS veya Android mağazası uygulamalarınızı Intune uygulama koruma ilkesi için etkinleştiren bir ISV iseniz Microsoft Intune kaydını, kayıt adımında belirtilen şekilde bitirdikten sonra bir promosyon kodu alırsınız. Promosyon kodu, bir yıllık uzatılmış kullanım sağlayan Microsoft Intune denemesine kaydolmanıza olanak tanır.
 
@@ -171,7 +165,7 @@ iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek içi
 
 * **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı sınamak amacıyla her ilke ayarı için beklenen davranışı bilmeniz gerekir. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](/intune-classic/deploy-use/ios-mam-policy-settings) ve [Android uygulama koruma ilkeleri](/intune-classic/deploy-use/android-mam-policy-settings).
 
-* **Sorun giderme**: Uygulamanızın kullanıcı deneyimini el ile sınarken herhangi bir sorunla karşılaşırsanız bkz. [MAM Sorun Giderme](/intune-classic/troubleshoot/troubleshoot-mam). Bu makalede Intune özelliğinin tanıtıldığı uygulamalarda yaşanabilen yaygın sorunlar, iletişim kutuları ve hata iletileri için yardım sağlanır. 
+* **Sorun giderme**: Uygulamanızın kullanıcı deneyimini el ile sınarken herhangi bir sorunla karşılaşırsanız bkz. [MAM Sorun Giderme](/intune-classic/troubleshoot/troubleshoot-mam). Bu makalede Intune ile yönetilen uygulamalarda yaşanabilen yaygın sorunlar, iletişim kutuları ve hata iletileri için yardım sağlanır. 
 
 ### <a name="badge-your-app-optional"></a>Uygulamanıza rozet ekleyin (isteğe bağlı)
 

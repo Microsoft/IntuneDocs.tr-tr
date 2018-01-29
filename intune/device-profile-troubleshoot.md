@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/09/2017
+ms.date: 1/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff950ce35c491ca576dc9cc77ab561e2cfef0381
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 0bc5ad6e0467fe8a8c98c1ad2d71b967c18b8233
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili sorunlarını giderme
 
@@ -45,28 +45,30 @@ Bu sorunu gidermek için, kurumsal Wi-Fi başarısız olduğunda bağlanılabile
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>İlke veya uygulamalar atandıktan sonra mobil cihazların bunları alması ne kadar sürer?
 Bir ilke veya uygulama atandığında, Intune tarafından cihaza hemen Intune hizmetinde giriş yapılması gerektiği konusunda bildirim gönderilmeye başlanır. Bu işlem genellikle beş dakikadan kısa sürer.
 
-İlk bildirim gönderildikten sonra cihaz ilkeyi almak üzere giriş yapmazsa, Intune üç deneme daha yapar.  Cihaz çevrimdışıysa (örneğin, kapalıysa veya ağa bağlı değilse), bildirimleri almayabilir. Bu durumda cihaz, ilkeyi bir sonraki zamanlanmış Intune hizmeti girişinde aşağıdaki gibi alır:
+İlk bildirim gönderildikten sonra cihaz ilkeyi almak üzere giriş yapmazsa, Intune üç deneme daha yapar. Cihaz çevrimdışıysa (örneğin, kapalıysa veya ağa bağlı değilse), bildirimleri almayabilir. Bu durumda cihaz, ilkeyi bir sonraki zamanlanmış Intune hizmeti girişinde aşağıdaki gibi alır:
 
-- iOS ve macOS: 6 saatte bir.
-- Android: 8 saatte bir.
-- Windows Phone: 8 saatte bir.
-- Cihaz olarak kaydedilen Windows 8.1 ve Windows 10 bilgisayarları: 8 saatte bir.
+- iOS ve macOS: Altı saatte bir.
+- Android: Sekiz saatte bir.
+- Windows Phone: Sekiz saatte bir.
+- Cihaz olarak kaydedilen Windows 8.1 ve Windows 10 bilgisayarları: Sekiz saatte bir.
 
-Cihaz daha yeni kaydedilmişse, giriş sıklığı aşağıda gösterildiği gibi daha fazla olacaktır:
+Cihaz daha yeni kaydedilmişse, giriş sıklığı aşağıda gösterildiği gibi daha fazla olur:
 
-- iOS ve macOS: 6 saat boyunca 15 dakikada bir ve daha sonra 6 saatte bir.
-- Android: 15 dakika boyunca 3 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir.
-- Windows Phone: 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir.
-- Cihaz olarak kaydedilen Windows bilgisayarları: 30 dakika boyunca 3 dakikada bir ve daha sonra 8 saatte bir.
+- iOS ve macOS: Altı saat boyunca 15 dakikada bir ve daha sonra altı saatte bir.
+- Android: 15 dakika boyunca üç dakikada bir, sonraki iki saat boyunca 15 dakikada bir ve daha sonra sekiz saatte bir.
+- Windows Phone: 15 dakika boyunca beş dakikada bir, sonraki iki saat boyunca 15 dakikada bir ve daha sonra sekiz saatte bir.
+- Cihaz olarak kaydedilen Windows bilgisayarları: 30 dakika boyunca üç dakikada bir ve daha sonra sekiz saatte bir.
 
 Ayrıca, kullanıcılar ilkeyi istedikleri zaman denetlemek için Şirket Portalı uygulamasını açıp cihazı eşitleyebilir.
 
+Kullanıcı benzeşimi olmayan cihazlar için kaydı takip eden eşitleme sıklığı, birkaç saat ile bir gün veya daha fazlası arasında değişebilir. Intune, bir cihazın hizmete bildirim yapması için belirli aralıklarla istek gönderir. Ancak bunu yapıp yapmamak yine de cihaza bağlıdır. Bir cihazın ilk kaydından sonra cihaz kayıt türü ve cihaza atanan ilkelerle profiller sebebiyle cihazın bu bildirimi tamamlama süresi tahmin edilemez. Ancak cihaz, kaydedildikten ve tüm ilk ilkeler uygulandıktan sonra yaklaşık altı saatte bir yeni ilkeleri denetleyecektir.
+
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Hangi eylemler cihaza Intune tarafından anında bildirim gönderilmesine neden olur?
-Cihazlar Intune hizmetine giriş yapmaları gerektiğini söyleyen bir bildirim aldığında veya düzenli zamanlanmış giriş zamanlarında hizmete giriş yapar.  Temizleme, kilitleme, geçiş kodu sıfırlama, uygulama atama, profil atama (Wi-Fi, VPN, e-posta vb.) veya ilke atama gibi bir eylemle özel olarak bir cihazı veya kullanıcıyı hedeflediğinizde, Intune bu güncelleştirmeleri hemen almak için Intune hizmetine giriş yapması gerektiğini cihaza bildirmeye çalışır.
+Cihazlar Intune hizmetine giriş yapmaları gerektiğini söyleyen bir bildirim aldığında veya düzenli zamanlanmış giriş zamanlarında hizmete giriş yapar. Temizleme, kilitleme, geçiş kodu sıfırlama, uygulama atama, profil atama (Wi-Fi, VPN, e-posta vb.) veya ilke atama gibi bir eylemle özel olarak bir cihazı veya kullanıcıyı hedeflediğinizde, Intune bu güncelleştirmeleri hemen almak için Intune hizmetine giriş yapması gerektiğini cihaza bildirmeye çalışır.
 
 Şirket portalındaki kişi bilgilerinin düzeltilmesi gibi diğer değişiklikler, cihazlara anında bildirim gönderilmesine neden olmaz.
 
-## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Aynı kullanıcı veya cihaza birden çok ilke atanıyorsa hangi ayarların uygulanacağını nasıl bilebilirim?
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Aynı kullanıcı veya cihaza birden çok ilke atanıyorsa hangi ayarların uygulanacağını nasıl bilebilirim?
 Aynı kullanıcı veya cihaza iki veya daha fazla ilke atandığında, hangi ayarın uygulanacağını belirleyen değerlendirme tek ayar düzeyinde yapılır:
 
 -   Uyumluluk ilkesi ayarları, her zaman yapılandırma ilkesi ayarlarından önceliklidir.
@@ -75,10 +77,10 @@ Aynı kullanıcı veya cihaza iki veya daha fazla ilke atandığında, hangi aya
 
 -   Bir yapılandırma ilkesi ayarı farklı bir yapılandırma ilkesindeki bir ayarla çakışıyorsa bu çakışma Azure portalında görüntülenir. Bu gibi çakışmaları el ile çözümlemeniz gerekir.
 
-## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Uygulama koruma ilkeleri birbiriyle çakışırsa ne olur? Uygulamaya hangisi uygulanır?
-Bir uygulama koruma ilkesinde, sayı giriş alanları (sıfırlamadan önce PIN deneme sayısı gibi) haricinde, en kısıtlayıcı ayarlar çakışma değerleridir.  Sayı giriş alanları, konsolda önerilen ayarlar seçeneğini kullanarak bir MAM ilkesi oluşturduğunuzda alacağı değerlerle aynı değerlere ayarlanır.
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Uygulama koruma ilkeleri birbiriyle çakışırsa ne olur? Uygulamaya hangisi uygulanır?
+Bir uygulama koruma ilkesinde, sayı giriş alanları (sıfırlamadan önce PIN deneme sayısı gibi) haricinde, en kısıtlayıcı ayarlar çakışma değerleridir. Sayı giriş alanları, konsolda önerilen ayarlar seçeneğini kullanarak bir MAM ilkesi oluşturduğunuzda alacağı değerlerle aynı değerlere ayarlanır.
 
-İki profil ayarı aynıysa çakışmalar oluşur.  Örneğin, kopyala/yapıştır ayarı dışında birbirinin aynı olan iki MAM ilkesi yapılandırdığınızı düşünün.  Bu senaryoda, kopyala/yapıştır ayarı en kısıtlayıcı değer olarak ayarlanır, ancak ayarların geri kalanı yapılandırıldığı gibi uygulanır.
+İki profil ayarı aynıysa çakışmalar oluşur. Örneğin, kopyala/yapıştır ayarı dışında birbirinin aynı olan iki MAM ilkesi yapılandırdığınızı düşünün. Bu senaryoda, kopyala/yapıştır ayarı en kısıtlayıcı değer olarak ayarlanır, ancak ayarların geri kalanı yapılandırıldığı gibi uygulanır.
 
 Bir profilin uygulamaya atanıp geçerli olmasından sonra ikinci bir ilke atanırsa, ilk atanan ilke öncelikli olup geçerli kalırken ikinci ilke çakışmada görünür. Her ikisi de aynı zamanda uygulanırsa, yani bir profil diğerinden önce değilse, her ikisi de çakışmada olur. Çakışmadaki ayarlarda, en kısıtlayıcı olan değerler kullanılır.
 
@@ -98,7 +100,7 @@ Profili sildiğinizde veya bir cihazı profilin atandığı gruptan kaldırdığ
     - **Windows Phone 8.1 cihazları**: Aşağıdaki ayarlar kaldırılır:
         - Mobil cihazların kilidini açmak için bir parola gerektir
         - Basit parolalara izin ver
-        - Minimum parola uzunluğu
+        - Parola uzunluğu alt sınırı
         - Gerekli parola türü
         - Parola geçerlilik süresi (gün)
         - Parola geçmişini anımsa
@@ -131,7 +133,7 @@ Profili sildiğinizde veya bir cihazı profilin atandığı gruptan kaldırdığ
 Windows Phone cihazlarında, MDM veya EAS yoluyla ayarlamış olduğunuz güvenlik ilkelerinin azaltılmasına izin verilmez. Örneğin, **Parolanın karakter sayısı alt sınırı** olarak 8 ayarlayın ve sonra bunu 4’e indirmeyi deneyin. Cihaza zaten daha kısıtlayıcı bir profil uygulanmıştır.
 
 Cihaz platformuna bağlı olarak, profili daha az güvenli bir değerle değiştirmek isterseniz, güvenlik ilkelerini sıfırlamanız gerekebilir.
-Örneğin Windows’ta, masaüstünde sağdan içeri doğru çekerek **Düğmeler** çubuğunu açın ve **Ayarlar** &gt; **Denetim Masası**’nı seçin.  **Kullanıcı Hesapları** uygulamasını seçin.
+Örneğin Windows’ta, masaüstünde sağdan içeri doğru çekerek **Düğmeler** çubuğunu açın ve **Ayarlar** &gt; **Denetim Masası**’nı seçin. **Kullanıcı Hesapları** uygulamasını seçin.
 Sol taraftaki gezinti menüsünde, en altta bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır. O bağlantıyı seçin ve ardından **İlkeleri Sıfırla** düğmesini seçin.
 Android, Windows Phone 8.1 ve üzeri ve iOS gibi diğer MDM cihazlarında, daha az kısıtlayıcı bir profil uygulayabilmeniz için cihazın devre dışı bırakılması ve sonra hizmete yeniden kaydedilmesi gerekebilir.
 

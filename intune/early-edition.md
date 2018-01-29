@@ -5,7 +5,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac9cb0ad7d1b5e2c29e80f16c172f41c08d3a15d
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: 12f4a09fe10ec792abe8183369a21f53c23f5d1a
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2018"></a>Microsoft Intune için erken sürüm - Ocak 2018
 
@@ -33,7 +33,7 @@ Bu sayfa düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha 
 <!--
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
-## Notices 
+## Notices
 -->
 
 
@@ -41,7 +41,7 @@ Bu sayfa düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha 
 
 ### <a name="easier-resolution-of-compliance-issues-for-the-company-portal-app-for-windows-10---676546---"></a>Windows 10 için Şirket Portalı'ndaki uyumluluk sorunlarının daha kolay çözümü<!--676546 -->
 
-Windows cihazı olan son kullanıcılar, Şirket Portalı uygulamasında uyumsuzluk nedenine dokunabilecek. Buna dokunmaları mümkün olduğunda, ayarlar uygulamasında sorunu çözebilecekleri konuma gidecekler. 
+Windows cihazı olan son kullanıcılar, Şirket Portalı uygulamasında uyumsuzluk nedenine dokunabilecek. Buna dokunmaları mümkün olduğunda, ayarlar uygulamasında sorunu çözebilecekleri konuma gidecekler.
 
 ### <a name="new-option-for-user-authentication-for-apple-bulk-enrollment----747625---"></a>Apple toplu kaydında kullanıcı kimlik doğrulaması için yeni seçenek <!-- 747625 -->
 Intune, aşağıdaki kayıt yöntemlerinde size Şirket Portalı uygulamasını kullanarak cihazların kimliğini doğrulama seçeneği sağlayacak:
@@ -59,16 +59,16 @@ Intune, sayıları 100'e varan farklı Apple Aygıt Kayıt Programı (DEP) veya 
 
 Geçişten sonra, Graph üzerinden Apple DEP veya ASM yönetimi için beta Graph API'leri ve yayımlanan betikler artık çalışmayacak. Yeni beta Graph API'leri geliştirme aşamasındadır ve geçiş sonrasında yayınlanacaktır.
 
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>İş Yeri veya Okula Erişme ayarlarını kullanarak cihaz kategorilerini seçme <!-- 1058963 eeready --> 
+### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>İş Yeri veya Okula Erişme ayarlarını kullanarak cihaz kategorilerini seçme <!-- 1058963 eeready -->
 [Cihaz grubu eşlemeyi](https://docs.microsoft.com/en-us/intune/device-group-mapping) etkinleştirdiyseniz, Windows 10'daki kullanıcılardan **Ayarlar** > **Hesaplar** > **İş yeri veya okula eriş** altındaki **Bağlan** düğmesi aracılığıyla veya ilk kez çalıştırma deneyimi sırasında kaydolduktan sona cihaz kategorisini seçmeleri istenecek.
 
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>Uyumluluk ilkelerinde cihaz gruplarındaki cihazları hedefleme <!--1307012 -->
 
-Uyumluluk ilkelerinde kullanıcı gruplarındaki kullanıcıları hedefleyebileceksiniz. Uyumluluk ilkelerinde cihaz gruplarındaki cihazları hedefleyebileceksiniz. 
+Uyumluluk ilkelerinde kullanıcı gruplarındaki kullanıcıları hedefleyebileceksiniz. Uyumluluk ilkelerinde cihaz gruplarındaki cihazları hedefleyebileceksiniz.
 
 ### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>Gruplar temelinde uygulama atamasını dahil etme ve hariç tutma <!-- 1406920 -->
 
-Uygulama ataması sırasında ve bir atama türü seçtikten sonra, hem dahil edilecek hem de hariç tutulacak grupları seçebilirsiniz. Ayrıca, dahil edilen gruplar olarak önceden oluşturulmuş grupları da (Tüm Kullanıcılar, Tüm Cihazlar ve Tüm Kullanıcılar+Cihazlar) kullanabilirsiniz.
+Uygulama ataması sırasında ve bir atama türü seçtikten sonra, hem dahil edilecek hem de hariç tutulacak grupları seçebilirsiniz.
 
 ### <a name="remote-erase-command-support----1438084---"></a>Uzaktan "Sil" komutu desteği <!-- 1438084 -->
 
@@ -93,7 +93,7 @@ Intune, Windows Bilgi Koruması (WIP) Öğrenme modunun bir uzantısını kullan
 
 Uyumsuz bir cihazı raporlamak amacıyla e-posta gönderildiğinde, uyumsuz cihaz hakkındaki ayrıntılar da eklenecek. Şu makale, bu olguyu belirtecek şekilde güncelleştirilecek: [Uyumsuzluğa yönelik eylemleri otomatikleştirme](#actions-for-noncompliance).
 
-### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>Intune için Koşullu Erişim ilkeleri yalnızca Azure Portal'dan sağlanır  <!-- 1737088 1634311 --> 
+### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>Intune için Koşullu Erişim ilkeleri yalnızca Azure Portal'dan sağlanır  <!-- 1737088 1634311 -->
 Koşullu erişimi yapılandıracağınız ve yöneteceğiniz yeri basitleştireceğiz. İlkelerinizi [Azure Portal](https://portal.azure.com)'daki **Azure Active Directory** > **Koşullu Erişim**'de yapılandıracak ve yöneteceksiniz. Size kolaylık olması için, Azure Portal'daki **Intune** > **Koşullu Erişim** konumundan da erişebileceksiniz.
 
 ###  <a name="alerts-for-expired-tokens-and-tokens-that-will-soon-expire----1639263---"></a>Süresi dolan ve dolmak üzere olan belirteçler için uyarılar <!-- 1639263 -->
@@ -105,8 +105,11 @@ PrinterOn’un kablosuz mobil yazdırma çözümleri kullanıcıların güvenli 
 ### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>Android for Work için Şirket Portalı uygulamasını onaylama <!--1797090 -->
 Kuruluşunuzda Android for Work kullanılıyorsa, yönetilen Google Play Store'dan otomatik güncelleştirmeleri almaya devam edebilmesini sağlamak üzere Android için Şirket Portalı uygulamasını el ile onaylamanız gerekecek.
 
+### <a name="faceid-on-ios-devices----1807377---"></a>iOS cihazlarda FaceID <!-- 1807377 -->
+Intune uygulama koruma ilkeleri artık iOS cihazlarda FaceID’yi kontrol eden bir ayar destekliyor. Bu ayar, FaceID işlevselliğini destekleyen cihazlar (şimdilik yalnızca iPhone X) içindir. Bu ayar, mevcut durumda desteklenen TouchID denetimlerinden ayrıdır. Kuruluşlar, TouchID denetimlerine alternatif olarak FaceID’yi geçerli bir PIN istemi olarak kullanıp kullanmamakta serbesttir.
+
 ### <a name="microsoft-graph-api-for-intune---general-availability-----1833289---"></a>Intune için Microsoft Graph API'si - Genel Kullanılabilirlik  <!-- 1833289 -->
-Microsoft Graph'te Intune API'leri, Intune hizmetinde yönetim eylemlerini otomatik hale getirmek için verilere ve yöntemlere programlı erişim sağlayacak.  Bu API'lerin **Genel Kullanılabilirlik** aşaması geldiğinde, müşteriler, iş ortakları ve geliştiriciler API'lerden yararlanarak Intune'la ilgili olan veya Intune desteği gerektiren şirket içi veya ticari çözümleri ya da Microsoft Graph üzerinden sağlanan diğer Microsoft hizmetlerini tümleştirebilecek. 
+Microsoft Graph'te Intune API'leri, Intune hizmetinde yönetim eylemlerini otomatik hale getirmek için verilere ve yöntemlere programlı erişim sağlayacak.  Bu API'lerin **Genel Kullanılabilirlik** aşaması geldiğinde, müşteriler, iş ortakları ve geliştiriciler API'lerden yararlanarak Intune'la ilgili olan veya Intune desteği gerektiren şirket içi veya ticari çözümleri ya da Microsoft Graph üzerinden sağlanan diğer Microsoft hizmetlerini tümleştirebilecek.
 
 <!-- the following are present prior to 1801 -->
 
@@ -118,13 +121,6 @@ Bir veya daha fazla iOS Toplu Satın Alma Programı (VPP) uygulaması olan belir
 
 ### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>Bir iOS Toplu Satın Alma Programı belirteci için lisansları iptal et <!-- 820870 -->
 Belirli bir VPP Belirteci için tüm iOS Toplu Satın Alma Programı (VPP) uygulamalarının lisansını iptal edebilirsiniz.
-
-### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>Ağ Erişim Denetimi (NAC) cihaz iade raporlama <!-- 1232250 -->
-Bu değişiklikten önce BT yöneticileri, NAC tarafından yönetilen bir cihazın Intune tarafında kendi NAC çözümü ile iletişim kurup kurmadığını belirleyemedi. NAC tarafından yönetilen bir cihaz kendi NAC çözümü ile iletişim kurmadığında, cihaz NAC çözümüyle uyumlu değildir ve bu nedenle NAC çözümü tarafından engellenmiş ve daha sonra cihaz uyumluluk durumuna bağlı koşullu erişim ilkeleri tarafından engellenmiştir.
-
-Bu değişiklikle, IT yöneticileri hangi NAC yönetim cihazlarının kendi NAC çözümleriyle başarıyla iletişim kurup kuramadıklarını görebilirler. Bu yeni yetenek, Intune içindeki Cihaz uyumluluk iş yükünde bulunan iki yeni izleme işlevinden oluşur; istatistikler aşağıda gösterilmiştir:
-- **Son bir saatteki ortalama NAC çağrıları**
-- **Son NAC gelen istek (tarih / saat)**
 
 ### <a name="new-ios-device-action------1244701---"></a>Yeni iOS cihaz eylemi  <!-- 1244701 -->
 IOS 10.3 denetlenen cihazları kapatabilirsin. Bu eylem, son kullanıcıya herhangi bir uyarı yapılmadan cihazı hemen kapatır. **Cihaz** iş yükünde bir cihaz seçtiğinde, cihaz özelliklerinde **Kapat (yalnızca denetimli)** eylemi bulunabilir.
@@ -185,6 +181,14 @@ Bu değişiklikler, Kasım güncelleştirmesi ile sunulmaya başlanacaktır anca
 ### <a name="configure-an-ios-app-pin----1586774---"></a>iOS uygulama PIN’i yapılandırma <!-- 1586774 -->
 Yakında, hedeflenen iOS uygulamaları için bir PIN’i zorunlu kılmanız mümkün olacaktır. PIN gereksinimini ve sona erme tarihi gün sayısını Azure portalında yapılandırabilirsiniz. Gerektiğinde, kullanıcının bir iOS uygulamasına erişmeden önce yeni bir PIN ayarlaması ve kullanması gerekli olacaktır. Yalnızca Intune Uygulama SDK’sı ile uygulama koruması etkinleştirilmiş iOS uygulamaları bu özelliği destekler.
 
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS için Şirket Portalı uygulamasında kullanıcı deneyimi güncelleştirmesi <!--1412866-->
+
+iOS için Şirket Portalı uygulamasına büyük bir kullanıcı deneyimi güncelleştirmesi yayımlayacağız. Bu güncelleştirmede, artırılmış kullanılabilirlik ve erişim ile modern bir görüntü ve his veren baştan aşağı yeni bir görsel tasarım yer alacak. Tüm mevcut iOS Şirket Portalı işlevselliği korunacaktır.
+
+Güncelleştirilmiş iOS için Şirket Portalı uygulamasını kullanıp geri bildirimde bulunmanız için Apple TestFlight programı aracılığıyla uygulamanın yayın öncesi sürümünü sunuyoruz. TestFlight erişimi için https://aka.ms/intune_ios_cp_testflight adresine kaydolun. 
+
+![yeni ios şirket portalı uygulamasının teaser görüntüleri](./media/ios-cp-app-redesign-1801-teaser.png)
+
 
 <!-- the following are present prior to 1711 -->
 
@@ -204,10 +208,6 @@ Windows 10 cihazları; Windows 10 Education, Windows 10 Education N, Windows 10 
 
 <!-- the following are present prior to 1709 -->
 
-
-
-### <a name="android-for-work-support-for-lookout----1087312---"></a>Lookout için Android for Work desteği <!-- 1087312 -->   
-Lookout kullanan Intune bağlayıcısı, Lookout for Work uygulamasını kullanan Android for Work cihazlarını destekleyecektir. Lookout uygulamasını kapsayıcının içinde veya dışında dağıtabilirsiniz.
 
 ### <a name="intune-app-protection-and-citrix-mdx-development-tools----709185---"></a>Intune Uygulama Koruması ve Citrix MDX Geliştirme Araçları<!-- 709185 -->
 Cihazları ve uygulamaları Citrix XenMobile MDX ve Microsoft Intune bileşimi ile yönetebilirsiniz. Bu, Citrix’in mVPN teknolojisini kullanırken uygulamaları Intune uygulama koruması ilkesiyle yönetmenize olanak sağlar.
