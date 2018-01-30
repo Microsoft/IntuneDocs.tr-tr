@@ -5,7 +5,7 @@ description: "Android cihazları için uyumluluk ilkesi oluşturmayı öğrenin.
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64e16233a9acb021c0a50b32f3eb750125eb0638
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune'da Android cihazları için cihaz uyumluluk ilkesi oluşturma
 
@@ -114,10 +114,10 @@ Aşağıdaki tabloda, uyumluluk ilkesi bir koşullu erişim ilkesi ile kullanıl
 | **PIN veya Parola yapılandırması** |  Karantinaya Alındı |
 | **Cihaz şifrelemesi** | Karantinaya Alındı |
 | **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | Karantinaya Alındı (ayar değil) |
-| **e-posta profili** | Uygulanamaz |
+| **e-posta profili** | Geçerli değil |
 | **En düşük işletim sistemi sürümü** | Karantinaya Alındı |
 | **En yüksek işletim sistemi sürümü** |   Karantinaya Alındı |
-| **Windows durum kanıtlama** | Uygulanamaz |
+| **Windows durum kanıtlama** | Geçerli değil |
 
 --------------------------
 

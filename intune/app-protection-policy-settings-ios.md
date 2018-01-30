@@ -5,7 +5,7 @@ description: "Bu konu başlığı altında iOS cihazları için uygulama koruma 
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f4b5ee3d8dc5c01d2c4021bfee51aedba8c49aa
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: 494eda1c9f953a78e13ae7cf0caee84f29c4d7d8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/25/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS uygulama koruma ilkesi ayarları
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -71,8 +71,8 @@ Intune uygulama koruma ilkesinin, belirli senaryolarda veri aktarımına hedef v
 | **Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika)** | Aşağıdaki ayarları yapılandırın: <ul><li>**Zaman Aşımı**: Erişim gereksinimleri (daha önce ilkelerde tanımlanmıştır) yeniden denetlenmeden önce geçmesi gereken dakika sayısıdır. Örneğin, yönetici ilkede PIN’i etkinleştirirse, kullanıcı Intune ile yönetilen bir uygulama açtığında bir PIN girmesi gerekir. Bu ayar kullanıldığında, kullanıcının **30 dakika** (varsayılan değer) boyunca herhangi bir MAM uygulamasında PIN girmesi gerekmez. <br><br>**Not:** iOS’ta PIN, **aynı yayımcıya ait** tüm Intune ile yönetilen uygulamalar arasında paylaşılır. Uygulama cihazda ön plandan ayrıldığında, belirli bir PIN’e ait PIN zamanlayıcısı sıfırlanır. Bu ayarda tanımlanan zaman aşımı süresince PIN’ini paylaşan Intune ile yönetilen herhangi bir uygulamada, kullanıcının bir PIN girmesi gerekmez. <br><br> Bu ilke ayarı biçimi pozitif tamsayıyı destekler.</li><li>**Çevrimdışı yetkisiz kullanım süresi**: Uygulama için erişim gereksinimleri yeniden denetlenmeden önce MAM uygulamalarının çevrimdışı çalışabileceği dakika sayısıdır. Varsayılan değer = **720** dakika (12 saat). Bu süre dolduktan sonra, uygulama, çalışmaya devam edebilmesi için kullanıcının AAD’de kimliğini doğrulamasını ister.<br><br> Bu ilke ayarı biçimi pozitif tamsayıyı destekler.</li></ul>| Zaman Aşımı: 30 <br><br> Çevrimdışı: 720 |
 | **Uygulama verileri silinmeden önceki çevrimdışı zaman aralığı (gün)** | Yönetici tarafından tanımlanan bu süre boyunca çevrimdışı çalıştığında uygulama, kullanıcıdan ağa bağlanmasını ve yeniden kimlik doğrulamasını ister. Kullanıcı başarıyla oturum açarsa, verilerine erişmeye devam edebilir ve çevrimdışı zaman aralığı sıfırlanır.  Kullanıcı kimlik doğrulaması başarısız olursa uygulama, kullanıcı hesabı ve verilerinde seçmeli silme gerçekleştirir.  Seçmeli silme ile hangi verilerin silindiği hakkında daha fazla bilgi için bkz. [Intune ile yönetilen uygulamalarda yalnızca şirket verilerini silme](https://docs.microsoft.com/en-us/intune/apps-selective-wipe). <br><br> Bu ilke ayarı biçimi pozitif tamsayıyı destekler. | 90 gün |
 | **Cihaz PIN’i yönetildiği zaman uygulama PIN’ini devre dışı bırak** | Kayıtlı bir cihazda bir cihaz kilidi algılandığında, uygulama PIN’ini devre dışı bırakmak için **Evet**’i seçin. <br><br> **Not:** Uygulamanın Intune SDK sürüm 7.0.1 veya üstü olmasını gerektirir. | Hayır |
-| **En düşük iOS işletim sistemini zorunlu tut** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. <br><br> Bu ilke ayarı biçimi tek ondalık ayırıcıyı destekler; iOS 10.3 gibi. <br><br> **Not:** Uygulamanın Intune SDK sürüm 7.0.1 veya üstü olmasını gerektirir. | Hayır |
-| **En düşük iOS işletim sistemini zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir. <br><br> Bu ilke ayarı biçimi tek ondalık ayırıcıyı destekler; iOS 10.3 gibi. <br><br> **Not:** Uygulamanın Intune SDK sürüm 7.0.1 veya üstü olmasını gerektirir. | Hayır |
+| **En düşük iOS işletim sistemini zorunlu tut** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. <br> **Not:** Uygulamanın Intune SDK sürüm 7.0.1 veya üstü olmasını gerektirir. | Hayır |
+| **En düşük iOS işletim sistemini zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük iOS işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın iOS sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir. <br> **Not:** Uygulamanın Intune SDK sürüm 7.0.1 veya üstü olmasını gerektirir. | Hayır |
 | **En düşük uygulama sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük uygulama sürümünü zorunlu tutmak üzere **Evet**’i seçin. Cihazın uygulama sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.<br><br>Uygulamalar arasında genellikle farklı sürüm şemaları bulunduğundan, en az bir uygulama sürümünün bir uygulamayı (örneğin, "Outlook sürüm ilkesi") hedeflediği bir ilke oluşturun. <br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler. <br><br> **Not:** Uygulamanın Intune SDK sürüm 7.0.1 veya üstü olmasını gerektirir. | Hayır | 
 | **En düşük uygulama sürümünü zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük uygulama sürümünü önermek için **Evet**’i seçin. Cihazdaki uygulama sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.<br><br>Uygulamalar arasında genellikle farklı sürüm şemaları bulunduğundan, en az bir uygulama sürümünün bir uygulamayı (örneğin, "Outlook sürüm ilkesi") hedeflediği bir ilke oluşturun. <br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler. <br><br> **Not:** Uygulamanın Intune SDK sürüm 7.0.1 veya üstü olmasını gerektirir. | Hayır | 
 | **En düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tutmak için **Evet**’i seçin. Cihazın Intune uygulama koruma ilkesi SDK sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. <br> <br> Intune uygulama koruma ilkesi SDK’sı hakkında daha fazla bilgi için bkz. [Intune Uygulama SDK'sına genel bakış](app-sdk.md). <br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler. <br><br> **Not:** Uygulamanın Intune SDK sürüm 7.0.1 veya üstü olmasını gerektirir. | Hayır |
