@@ -142,7 +142,7 @@
 ## [Uygulama dağıtma](deploy-use/deploy-apps.md)
 ### [Cihazlara ve bilgisayarlara uygulama dağıtma](deploy-use/deploy-apps-in-microsoft-intune.md)
 ### [Android for Work cihazlara uygulama dağıtma](deploy-use/android-for-work-apps.md)
-### [Uygulamaları izleme](deploy-use/monitor-apps-in-microsoft-intune.md)
+### [Uygulamalarını izleme](deploy-use/monitor-apps-in-microsoft-intune.md)
 ### [Toplu satın alınan uygulamaları yönetme](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [Toplu satın alınan iOS uygulamalarını yönetme](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 #### [Toplu satın alınan Windows uygulamalarını yönetme](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
