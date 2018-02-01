@@ -5,7 +5,7 @@ description: "Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için bi
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel cihaz profili kullanma
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -210,7 +210,5 @@ Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
 PSK ile bir Wi-Fi profili dağıtmadan önce cihazın uç noktaya doğrudan bağlanabildiğini doğrulayın.
 
 Anahtarları (parolaları) döndürürken kesintiler olabilir, dağıtımları buna göre planlayın. Yeni Wi-Fi profillerini çalışma saatleri dışında itmeyi düşünebilirsiniz. Ayrıca bağlantının bu durumdan etkilenebileceği konusunda kullanıcıları uyarın.
- 
-Sorunsuz bir geçiş deneyimi sağlamak ve ilke güncelleştirmelerini zamanında sunmak için cihazların Intune’a en az bir açık iletişim kanalı olması gerekir. Bunu yapmak için hücresel bağlantı kullanın veya kullanıcıları yalnızca Intune uç noktalarına bağlayan konuk Wi-Fi erişimi sağlayın.
 
-
+Sorunsuz bir geçiş deneyimi için son kullanıcının cihazında alternatif bir İnternet bağlantısı olduğundan emin olun. Intune ile iletişim kurmak için son kullanıcının örneğin Konuk WiFi ağına (veya diğer bir WiFi ağına) geri dönebiliyor olması veya hücresel bağlantısı olması gerekir. Bu, cihazda şirket WiFi Profili güncelleştirilirken kullanıcının ilke güncelleştirmeleri almaya devam etmesini sağlar.
