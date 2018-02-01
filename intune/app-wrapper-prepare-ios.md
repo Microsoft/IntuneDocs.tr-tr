@@ -4,21 +4,21 @@ description: "iOS uygulamalarınızı, uygulamanın kendi kodunda değişiklik y
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 12/12/2017
+manager: dougeby
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
+ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -53,7 +53,6 @@ Uygulama Sarmalama Aracı’nı çalıştırmadan önce bazı genel önkoşullar
   * Intune Uygulama Sarmalama Aracı tarafından işlenmeden önce giriş uygulaması yetkilendirmelerinin ayarlanmış olması gerekir. [Yetkilendirmeler](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) uygulamaya normal olarak verilenlerin ötesinde ek izinler ve yetenekler verir. Yönergeler için bkz. [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements).
 
 ## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için Apple Geliştirici önkoşulları
-
 
 Sarmalanan uygulamaları kuruluşunuzun kullanıcılarına özel olarak dağıtmak için [Apple Geliştirici Kurumsal Programı](https://developer.apple.com/programs/enterprise/)’na sahip bir hesaba ve Apple Geliştirici hesabınıza bağlı olan ve uygulama imzalamak için gereken çeşitli varlıklara ihtiyacınız vardır.
 
@@ -177,6 +176,9 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 4.  **IntuneMAMPackager** klasörünü açın ve içeriğini macOS bilgisayarınıza kaydedin. Artık Uygulama Sarmalama Aracını çalıştırmaya hazırsınız.
 
+> [!NOTE]
+> Intune MAM Paketleyici, macOS bilgisayarınıza ayrı olarak takılabilir ve sarmalama komutlarını çalıştırırken bir “dosya bulunamadı” hatasına neden olabilir. Bu nedenle IntuneMAMPackager klasörünün içeriğini taşımak, sarmalama sırasında paketleyici yolunun bulunmasına olanak verir.
+
 ## <a name="run-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını çalıştırma
 
 ### <a name="use-terminal"></a>Terminal kullanma
@@ -207,8 +209,8 @@ Aşağıdaki komut satırı parametrelerini Uygulama Sarmalama Aracı ile birlik
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Uygulama Sarmalama Aracı için kullanılabilir komut satırı özellikleri hakkında ayrıntılı kullanım bilgilerini gösterir.|
 |**-v**|(İsteğe bağlı) Konsola ayrıntılı ileti çıkışı yapar. Bu bayrağın hataları ayıklamak için kullanılması önerilir.|
-|**-e**| (İsteğe bağlı) Uygulama Sarmalama Aracının uygulamayı işlerken eksik yetkilendirmeleri kaldırmasını sağlamak için bu bayrağı kullanın. Daha fazla ayrıntı için Uygulama yetkilendirmelerini ayarlama bölümüne bakın.|
-|**-xe**| (İsteğe bağlı) Uygulamadaki iOS uzantıları hakkında bilgi ve bunları kullanmak için hangi yetkilendirmelerin gerektiğini yazdırır. Daha fazla ayrıntı için Uygulama yetkilendirmelerini ayarlama bölümüne bakın. |
+|**-e**| (İsteğe bağlı) Uygulama Sarmalama Aracının uygulamayı işlerken eksik yetkilendirmeleri kaldırmasını sağlamak için bu bayrağı kullanın. Daha fazla ayrıntı için [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements) bölümüne bakın.|
+|**-xe**| (İsteğe bağlı) Uygulamadaki iOS uzantıları hakkında bilgi ve bunları kullanmak için hangi yetkilendirmelerin gerektiğini yazdırır. Daha fazla ayrıntı için [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements) bölümüne bakın. |
 |**-x**| (İsteğe bağlı) `<An array of paths to extension provisioning profiles>`. Uygulamanızda uzantı sağlayan profiller gerekiyorsa bunu kullanın.|
 |**-f**|(İsteğe bağlı) `<Path to a plist file specifying arguments.>` -i, -o ve -p gibi geri kalan IntuneMAMPackager özelliklerini belirtmek için plist şablonu kullanmayı tercih ederseniz bu bayrağı [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) dosyasının önünde kullanın. Bağımsız değişkenler girişi için bir plist kullanma bölümüne bakın. |
 |**-b**|(İsteğe bağlı) Sarmalanan çıkış uygulamasının giriş uygulamasıyla aynı paket sürümüne sahip olmasını isterseniz (önerilmez), -b’yi bağımsız değişken olmadan kullanın. <br/><br/> Sarmalanan uygulamanın özel CFBundleVersion içermesini istiyorsanız `-b <custom bundle version>` kullanın. Özel CFBundleVersion belirtmek isterseniz, yerel uygulamanın CFBundleVersion’unun en az önemli bileşen tarafından artırılması iyi bir fikirdir, ör. 1.0.0 -> 1.0.1. |
@@ -247,6 +249,16 @@ Sarmalanan uygulama, daha önce belirttiğiniz çıkış klasörüne kaydedilir.
 > Sarmalanan bir uygulama karşıya yüklenirken, uygulamanın eski bir sürümünü, eski sürüm (sarmalanan veya yerel) zaten Intune’da dağıtılmışsa güncelleştirmeyi deneyebilirsiniz. Bir hatayla karşılaşırsanız, uygulamayı yeni bir uygulama olarak karşıya yükleyip eski sürümü silin.
 
 Artık uygulamayı kullanıcı gruplarınıza dağıtabilir ve uygulama için uygulama koruma ilkelerini hedefleyebilirsiniz. Uygulama cihazda belirttiğiniz uygulama ilkeleri kullanılarak çalıştırılır.
+
+## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamamı ne sıklıkta yeniden sarmalamalıyım?
+Uygulamalarınızı yeniden sarmalamanız gereken ana senaryolar aşağıdaki gibidir:
+* Uygulamanın yeni bir sürümünü yayınlandı. Uygulamanın önceki sürümü sarmalandı ve Intune konsoluna yüklendi.
+* iOS için Intune Uygulama Sarmalama Aracı uygulamasının hata düzeltmeleri veya yeni, belirli Intune uygulama koruma ilkesi özellikleri içeren yeni bir sürümü yayınlandı. Bu, [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) için 6-8 hafta sonra bir GitHub deposundan gerçekleşir.
+
+iOS için, uygulamayı imzalamak için kullanılan asıl sertifika/sağlama profilinden farklı bir tanesi ile sarmalamak mümkün olsa da, uygulamada belirtilen yetkilendirmeler yeni sağlama profilinde mevcut değilse sarmalama başarısız olacaktır. Uygulamadaki eksik yetkilendirmeleri kaldıran “-e” komut satırı seçeneği kullanılarak sarmalama işleminin başarısız olmamaya zorlanması, uygulamada bozuk işlevselliğe yol açabilir.
+
+Yeniden sarmalama için bazı en iyi uygulamalar şunlardır:
+* Farklı bir sağlama profilinin önceki sağlama profillerindeki tüm gerekli yetkilendirmelere sahip olduğundan emin olmak. 
 
 ## <a name="error-messages-and-log-files"></a>Hata iletileri ve günlük dosyaları
 Uygulama sarmalama aracında karşılaştığınız sorunları gidermek için aşağıdaki bilgileri kullanın.

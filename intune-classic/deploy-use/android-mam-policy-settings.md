@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9707858ba2b0462edade4847dba09404a895fb34
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b289e69d834d43d29725a32c48b3ca0a19ee07ec
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 
@@ -48,13 +48,13 @@ Bu konuda açıklanan uygulama ilkesi ayarları, Azure portalındaki **Ayarlar**
 
   ## <a name="data-transfer-exemptions"></a>Veri aktarımı muafiyetleri
 
-  Intune uygulama koruma ilkesinin, veri aktarımına hedef ve kaynak olarak izin verebileceği bazı muaf uygulamalar ve platform hizmetleri vardır. Örneğin, Android’deki tüm Intune kullanan uygulamalar, Google Metin Okuma’ya ve Google Metin Okuma’dan veri aktarımı gerçekleştirebilmelidir. Böylece mobil cihazınızın ekranındaki metin sesli okunabilir. Bu liste değiştirilebilir ve güvenli verimlilik için kullanışlı olarak nitelendirilen hizmetleri ve uygulamaları yansıtır.
+  Intune uygulama koruma ilkesinin, veri aktarımına hedef ve kaynak olarak izin verebileceği bazı muaf uygulamalar ve platform hizmetleri vardır. Örneğin, Android’deki tüm Intune özellikli uygulamalar, Google Metin Okuma’ya ve Google Metin Okuma’dan veri aktarımı gerçekleştirebilmelidir. Böylece mobil cihazınızın ekranındaki metin sesli okunabilir. Bu liste değiştirilebilir ve güvenli verimlilik için kullanışlı olarak nitelendirilen hizmetleri ve uygulamaları yansıtır.
 
   ### <a name="full-exemptions"></a>Tam muafiyetler
 
   Bu uygulama ve hizmetlere, Intune tarafından yönetilen uygulamalara ve uygulamalardan veri aktarımına tam olarak izin verilir.
 
-  |Uygulama/hizmet adı | Açıklama |
+  |Uygulama/hizmet adı | Description |
   | ------ | ---- |
   | com.android.phone | Yerel telefon uygulaması
   | com.android.vending | Google Play Store |
@@ -69,7 +69,7 @@ Bu konuda açıklanan uygulama ilkesi ayarları, Azure portalındaki **Ayarlar**
   ### <a name="conditional-exemptions"></a>Koşullu muafiyetler
   Bu uygulama ve hizmetlere, yalnızca belirli koşullar altında Intune tarafından yönetilen uygulamalara ve uygulamalardan veri aktarımına izin verilir.
 
-  |Uygulama/hizmet adı | Açıklama | Muafiyet koşulu|
+  |Uygulama/hizmet adı | Description | Muafiyet koşulu|
   | ------ | ---- | --- |
   | com.android.chrome | Google Chrome Tarayıcısı | Chrome, Android 7.0+ sürümünde bazı WebView bileşenleri için kullanılır ve görünümden asla gizlenmez. Ancak uygulamaya giden ve uygulamadan gelen veri akışı her zaman kısıtlandırılır.
   | com.skype.raider | Skype | Skype uygulamasına yalnızca telefon aramasıyla biten belirli eylemlerde izin verilir. |
