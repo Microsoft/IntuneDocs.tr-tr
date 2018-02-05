@@ -5,8 +5,8 @@ description: "iOS cihazlarını Intune’la yönetmek için Apple MDM Anında İ
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
-ms.date: 10/04/2017
+manager: dougeby
+ms.date: 1/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67c2cb238d354ccd9801ec0b5c9f8ccb49c6715
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 8fca2a1f32cd15752758802ee6ae44b8ae33b696
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM anında iletme sertifikası alma
 
@@ -56,7 +56,10 @@ Sertifika, onu oluşturmak için kullanılan Apple Kimliği ile ilişkilidir. MD
 2. **CSR’nizi indirin** öğesini seçerek istek dosyasını indirin ve yerel olarak kaydedin. Bu dosya, Apple Anında İletme Sertifikaları Portalı’ndan bir güven ilişkisi sertifikası istemek için kullanılır.
 3. Yenilemek istediğiniz sertifikayı bulun ve **Yenile**’yi seçin.
 4. **Anında İletme Sertifikasını Yenileme** ekranında, ileride sertifikayı tanımanıza yardımcı olacak notlar sağlayın, indirdiğiniz yeni istek dosyasına gözatmak için **Dosya Seç**’e tıklayın ve **Karşıya Yükle**’yi seçin.
-5. **Onay** ekranında **İndir**’i seçin ve .pem dosyasını yerel olarak kaydedin.
-6. Azure portalında **Apple MDM anında iletme sertifikası** göz atma simgesini ve ardından Apple’dan indirilen .pem dosyasını seçin ve **Karşıya Yükle**’yi seçin.
+   > [!TIP]
+   > Bir Sertifika, UID’si ile tanımlanabilir. UID’nin GUID kısmını bulmak için sertifika ayrıntılarında **Konu Kimliği**’ni inceleyin. Veya kayıtlı bir iOS cihazda **Ayarlar** > **Genel** > **Cihaz** **Yönetim** > **Yönetim Profili** > **Daha Fazla Ayrıntı** > **Yönetim Profili**’ne gidin. İkinci satırdaki **Konu** öğesi, Apple Anında İletme Sertifikaları portalındaki sertifikayla eşleştirebileceğiniz benzersiz GUID’i barındırır.
+ 
+6. **Onay** ekranında **İndir**’i seçin ve .pem dosyasını yerel olarak kaydedin.
+7. Azure portalında **Apple MDM anında iletme sertifikası** göz atma simgesini ve ardından Apple’dan indirilen .pem dosyasını seçin ve **Karşıya Yükle**’yi seçin.
 
 Apple MDM anında iletme sertifikanız artık **Etkin** olarak görünür ve süresinin dolmasına 365 gün vardır.

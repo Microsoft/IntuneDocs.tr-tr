@@ -3,7 +3,7 @@ title: "Şirket verilerine yetkisiz erişimi engelleme"
 description: "Şirket ağı dışında paylaşılırken şirket verilerine yetkisiz erişimi engelleyebilirsiniz."
 keywords: "Office 365 O365 Azure Information Protection verileri şirket verilerini ağ dışında koruma"
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85e4712a204032497cb7fd31dbee910d52ac08b7
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="prevent-unauthorized-access-to-company-data"></a>Şirket verilerine yetkisiz erişimi engelleme 
 

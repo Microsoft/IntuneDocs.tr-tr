@@ -5,7 +5,7 @@ description: "Symantec PKI Manager Web Hizmeti’nden Intune tarafından yöneti
 keywords: 
 author: MicrosoftGuyJFlo
 ms.author: joflore
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31e48d84ec7044102575a6c49837330c139e993c
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 449eaf2a22ca3a700eda2385af05a56e406f0c15
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Symantec PKI Manager Web Hizmeti için Intune Sertifika Bağlayıcı'yı Ayarlama
 
@@ -278,7 +278,7 @@ Sertifika Profili OID Symantec CA’da Sertifika Profili şablonuyla ilişkilend
    > [!IMPORTANT]
    > PKCS Sertifika Profilinin aşağıdaki parametreleri, Symantec CA'dan Intune Sertifika Bağlayıcısı aracılığıyla PKCS Sertifikaları yayınlamak için ekran görüntüsünde gösterildiği gibi aşağıdaki tabloda belirtilen değerlerle yapılandırılmalıdır. 
 
-    |PKCS Sertifika Parametresi | Değer | Açıklama |
+    |PKCS Sertifika Parametresi | Değer | Description |
     | --- | --- | --- |
     | Sertifika yetkilisi | pki-ws.symauth.com | Bu değer sondaki eğik çizgi olmadan Symantec CA temel hizmet FQDN'si olmalıdır.  Symantec CA aboneliğiniz için doğru temel hizmet FQDN'si olup olmadığından emin değilseniz, Symantec Müşteri desteğine başvurun. <br><br> Bu FQDN yanlışsa, Intune Sertifika Bağlayıcı Symantec CA'sından PKCS sertifikasını yayımlamaz.| 
     | Sertifika yetkilisi adı | Symantec | Bu değer bir dize olmalıdır **Symantec**. <br><br> Bu değerde herhangi bir değişiklik varsa, Intune Sertifika Bağlayıcı, Symantec CA'dan PKCS Sertifikaları yayımlamaz.|
@@ -304,7 +304,7 @@ Intune Sertifika Bağlayıcı Hizmet günlükleri `%ProgramFiles%\Microsoft Intu
 
 | Sorun/Hata İletisi | Çözüm adımları |
 | --- | --- |
-| NDES Bağlayıcı Kullanıcı Arayüzünde Intune kiracı yönetici hesabıyla oturum açılamıyor | Bu, kurum içi Sertifika Bağlayıcı, Intune yönetim portalında etkinleştirilmediğinde ortaya çıkabilir. Bu sorunu çözmek için, aşağıdaki adımları uygulayın: <br><br> Silver Light Kullanıcı Arabiriminden: <br> 1. [Intune Yönetici portalı](https://admin.manage.microsoft.com)’nda oturum açın <br> 2. YÖNETİCİ'ye tıklayın <br> 3. Mobil Cihaz Yönetimi > Sertifika Bağlayıcı’yı seçin <br> 4. **Şirket İçi Sertifika Bağlayıcı’yı Yapılandır**'a tıklayın. <br> 5. **Sertifika Bağlayıcı’yı Etkinleştir** onay kutusunu seçin <br> 6. **Tamam**’a tıklayın. <br><br>Veya <br><br> Azure portalı Kullanıcı Arabiriminden: <br> 1. [Azure portalı](https://portal.azure.com)’nda oturum açın. <br> 2. Microsoft Intune'a gidin <br> 3. **Cihaz Yapılandırması** > **Sertifika Yetkilisi**’ni seçin <br> 4. **Etkinleştir**'e tıklayın. <br><br> Silver Light Kullanıcı Arabirimi veya Azure portalından önceki adımları tamamladıktan sonra, NDES Bağlayıcı Kullanıcı Arabirimi'ndeki aynı Intune kiracı yönetici hesabıyla oturum açmayı deneyin. |
+| NDES Bağlayıcı Kullanıcı Arayüzünde Intune kiracı yönetici hesabıyla oturum açılamıyor | Bu, kurum içi Sertifika Bağlayıcı, Intune yönetim portalında etkinleştirilmediğinde ortaya çıkabilir. Bu sorunu çözmek için, aşağıdaki adımları uygulayın: <br><br> Silver Light Kullanıcı Arabiriminden: <br> 1. [Intune Yönetici portalı](https://admin.manage.microsoft.com)’nda oturum açın <br> 2. YÖNETİCİ'ye tıklayın <br> 3. Mobil Cihaz Yönetimi > Sertifika Bağlayıcı’yı seçin <br> 4. **Şirket İçi Sertifika Bağlayıcı’yı Yapılandır**'a tıklayın. <br> 5. **Sertifika Bağlayıcı’yı Etkinleştir** onay kutusunu seçin <br> 6. **Tamam**'ı tıklatın. <br><br>Veya <br><br> Azure portalı Kullanıcı Arabiriminden: <br> 1. [Azure portalı](https://portal.azure.com)’nda oturum açın. <br> 2. Microsoft Intune'a gidin <br> 3. **Cihaz Yapılandırması** > **Sertifika Yetkilisi**’ni seçin <br> 4. **Etkinleştir**'e tıklayın. <br><br> Silver Light Kullanıcı Arabirimi veya Azure portalından önceki adımları tamamladıktan sonra, NDES Bağlayıcı Kullanıcı Arabirimi'ndeki aynı Intune kiracı yönetici hesabıyla oturum açmayı deneyin. |
 | NDES Bağlayıcı Sertifikası bulunamadı. <br><br> System.ArgumentNullException: Değer null olamaz. | Intune kiracı yönetici hesabı NDES Bağlayıcı Kullanıcı Arabirimi'nde hiç oturum açmadıysa, Intune Sertifika Bağlayıcı bu hatayı gösterir. <br><br> Bu hata devam ederse, Intune Hizmet Bağlayıcıyı yeniden başlatın. <br><br> 1. Services.msc dosyasını açın <br> 2. **Intune Bağlayıcı Hizmeti**’ni seçin. <br> 3. Sağ tıklayın ve **Yeniden Başlat**’ı seçin.|
 | NDES Bağlayıcısı - IssuePfx- Genel Özel Durumu: <br> System.NullReferenceException: Nesne başvurusu bir nesnenin örneğine ayarlı değil. | Bu geçici bir hatadır. Intune Hizmet Bağlayıcıyı yeniden başlatın. <br><br> 1. Services.msc dosyasını açın <br> 2. **Intune Bağlayıcı Hizmeti**’ni seçin. <br> 3. Sağ tıklayın ve **Yeniden Başlat**’ı seçin. |
 | Symantec Sağlayıcı - Symantec ilkesi "İşlem zaman aşımına uğradı" alınamadı | Intune Sertifika Bağlayıcı Symantec CA ile iletişim kurarken işlemi zaman aşımı hatası aldı. Bu hata devam ederse, bağlantı zaman aşımı değerini artırın ve yeniden deneyin. <br><br> Bağlantı zaman aşımını artırmak için: <br> 1. NDES Bağlayıcısı bilgisayarına gidin. <br>2. `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` dosyasını Not Defteri’nde açın. <br> 3. Aşağıdaki parametre için zaman aşımı değerini artırın: <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Intune Bağlayıcı Hizmeti’ni yeniden başlatın. <br><br> Sorun devam ederse, Symantec müşteri desteğine başvurun. |

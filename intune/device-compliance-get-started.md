@@ -5,7 +5,7 @@ description: "Microsoft Intune’da cihaz uyumluluğunu öğrenmek için bu konu
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa78383233950e342c5ab0f83095bba3c8fda1f9
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 1e6d758d10a3527e0dc350115f2f8f10e2c62322
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Intune cihaz uyumluluk ilkelerini kullanmaya başlama
 
@@ -136,6 +136,6 @@ Aşağıdaki platformlar için bir cihaz uyumluluk ilkesi oluşturun:
 
 - [Android](compliance-policy-create-android.md)
 - [Android for Work](compliance-policy-create-android-for-work.md)
-- [Android](compliance-policy-create-ios.md)
+- [iOS](compliance-policy-create-ios.md)
 - [macOS](compliance-policy-create-mac-os.md)
 - [Windows](compliance-policy-create-windows.md)

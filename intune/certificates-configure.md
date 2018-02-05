@@ -5,7 +5,7 @@ description: "Wi-Fi, VPN ve diğer bağlantıların güvenliğini sağlamaya yar
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c74ee1daf6602a4958d9955c3955b465495e013
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 0245491540a2ade2dbb453a865ee73312fc759e0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Microsoft Intune’da sertifika yapılandırma
 
@@ -94,8 +94,8 @@ SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen se
 3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
 4. **Profil Oluştur** dikey penceresinde, güvenilen sertifika profili için **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinde, bu güvenilen sertifika için cihaz platformunu seçin. Şu anda, sertifika ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
-    - **Outlook Web Access (OWA)**
     - **Android**
+    - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 ve üzeri**

@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
-ms.date: 02/23/2017
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 3926b64bacb1acde29146aed9d3030729e8b9b17
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı uzaktan kilitleme
 
@@ -33,14 +34,13 @@ Cihazınızın güvende olması için [Şirket Portalı web sitesinde](https://p
 * Android
 * iOS
 * Mac OS
+* Windows 10
 * Windows 10 Mobile (cihazın zaten bir geçiş kodu kümesi varsa)
 * Windows Phone 8.1 (cihazın zaten bir geçiş kodu kümesi varsa)
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Cihazınızı kilitlemek üzere Uzaktan Kilitleme’yi kullanmak için
 
-1.  [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
-
-  ![Giriş, Tüm Uygulamalar, Cihazlarım, Yardım Masası ve Oturumu Kapat düğmeleriyle ekranın sol tarafında genişletilmiş bir yan menü ile Şirket Portalı web sitesinin bir görüntüsü.](/media/iwp-expanded-sidebar.png)
+1.  [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog) __menü__ düğmesine dokunun ve daha sonra __Cihazlarım__’ı seçin.
 
 2. __Cihazlarım__ sayfasında, kilitlemek istediğiniz cihazın adını seçin.
 
