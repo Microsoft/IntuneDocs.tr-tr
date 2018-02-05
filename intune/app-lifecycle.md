@@ -4,7 +4,7 @@ description: "Intune yönetilen uygulamalarının, eklenmesinden başlayıp sonu
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e50e3af525be48bf058dd32bfb7b93508d500a3
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 87bd0ceed846052444e4dac4366e3a0304b1452c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-the-app-lifecycle"></a>Uygulama yaşam döngüsüne genel bakış
 
@@ -32,7 +32,7 @@ Intune uygulama yaşam döngüsü, bir uygulama eklendiğinde başlar, ek aşama
 
 Uygulama dağıtımında ilk adım, yönetmek ve atamak istediğiniz uygulamayı Intune’a eklemektir. Birçok farklı uygulama türüyle çalışabilecek olmanıza karşın, temel yordamlar aynıdır. Intune ile hem [kayıtlı cihazlar](apps-add.md) ([Klasik portal](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)) için, hem de [Intune istemci yazılımıyla yönettiğiniz Windows bilgisayarları](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune) için uygulama ekleyebilirsiniz.
 
-## <a name="deploy"></a>Dağıtma
+## <a name="deploy"></a>Dağıt
 
 Uygulamayı Intune’a ekledikten sonra, [yönettiğiniz kullanıcılara ve cihazlara dağıtabilirsiniz](apps-deploy.md) ([Klasik portal](/intune-classic/deploy-use/deploy-apps)). Intune bu işlemi kolaylaştırır ve uygulama dağıtıldıktan sonra Intune yönetim konsolundan dağıtımın [başarısını izleyebilirsiniz](apps-monitor.md) ([Klasik portal](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)). Buna ek olarak, [Apple](vpp-apps-ios.md) ve ([Klasik portal](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)) ve [Windows](windows-store-for-business.md) ([Klasik portal](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)) uygulama mağazaları gibi bazı uygulama mağazalarında şirketinize toplu uygulama lisansları satın alabilirsiniz. Bu tür uygulamalarda doğrudan Intune yönetim konsolundan lisans dağıtımı yapabilmeniz ve lisans kullanımını izleyebilmeniz için Intune verileri bu mağazalarla eşitleyebilir.
 

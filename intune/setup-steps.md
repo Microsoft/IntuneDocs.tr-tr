@@ -4,8 +4,8 @@ description: "Intune aboneliğinizi kullanmaya başlamak için gereksinimler ve 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54f2bdd4a415cb8a4432a8bdcf93c56ba995c201
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-up-intune"></a>Intune’u ayarlama
 
@@ -47,3 +47,4 @@ Intune aboneliği ayarlama ve MDM yetkilisi ayarlama gibi bazı adımlar, çoğu
 | 8 | [Cihaz yapılandırma](device-profiles.md) - Cihaz ayarlarını yöneten profiller ayarlayın. Cihaz profilleri; e-posta, VPN, Wi-Fi ve cihaz özellikleri için ayarları önceden yapılandırabilir. Ayrıca cihazları ve verileri korumak için cihazları kısıtlayabilir.  |
 | 9 | [Şirket Portalı’nı Özelleştirme](company-portal-app.md) - Kullanıcıların cihaz kaydetmek ve uygulama yüklemek için kullandığı Intune Şirket Portalı’nı özelleştirin. Bu ayarlar hem Şirket Portalı uygulamasında hem de Intune Şirket Portalı web sitesinde bulunur. |
 | 10 | [Cihaz kaydını etkinleştirme](mdm-authority-set.md) - MDM yetkilisini ayarlayarak ve belirli platformları etkinleştirerek iOS, Windows, Android ve Mac cihazların Intune yönetimini etkinleştirin. |
+| 11 | [Uygulama ilkeleri yapılandırma](app-protection-policy.md) - Microsoft Intune’da uygulama koruma ilkelerine bağlı olarak belirli ayarları sağlayın. |

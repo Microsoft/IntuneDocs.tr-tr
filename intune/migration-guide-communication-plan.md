@@ -4,7 +4,7 @@ description: "Bu makalede, bir geçiş iletişim planı ve stratejisi sağlanmak
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: e36e917c035d4bbadccd629ef4cc21552cc62ec6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="plan-communications"></a>İletişimi planlama
 
@@ -30,14 +30,14 @@ Aşağıdaki e-posta iletişim planını öneririz. İletişim planınıza uyarl
 -   **E-posta \#1:** Avantajları, beklentileri ve zaman çizelgesini açıklayın. Intune tarafından yönetilen cihazlarda erişim izni verilecek diğer yeni hizmetleri göstermek için bu fırsattan yararlanın.<br/><br/>
 
 
-    -   [E-posta \#1 şablonu](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
- indirme<br></br>
+    -   [E-posta indir \#1 şablon](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+<br></br>
 
 -   **E-posta \#2:** Hizmetlerin Intune üzerinden erişime hazır olduğunu bildirin. Kullanıcılara şimdi kaydolmalarını söyleyin. Kullanıcılara geçişin avantajlarını ve stratejik nedenlerini hatırlatın.<br/><br/>
 
 
-    -   [E-posta \#2 şablonu](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
- indirme<br></br>
+    -   [E-posta indir \#2 şablon](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+<br></br>
 
 -   **E-posta\#3:** Erişimleri etkilenmeden önce kullanıcılara bir zaman çizelgesi verin. Yine kullanıcılara geçişin avantajlarını ve stratejik nedenlerini hatırlatın. E-posta zamanlaması, aşamaları eşleştiren bir kayan pencereye sahip olmalıdır. Örneğin Haziran ayında e-posta \#1 şablonunu 1. aşama kullanıcılarına, e-posta \#2 şablonunu 2. aşama kullanıcılarına ve e-posta \#3 şablonunu 3. aşama kullanıcılarına gönderin.<br/><br/>
 

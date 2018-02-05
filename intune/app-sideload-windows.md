@@ -4,7 +4,7 @@ description: "Intune'u kullanarak dağıtmak için iş kolu uygulamalarını nas
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
 ms.prod: 
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: f94e95ec93ba98c55ca69ee5ef59cd20d16eff37
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
@@ -190,7 +190,7 @@ Uygulamanın bu şekilde nasıl imzalanıp dağıtılacağı aşağıda açıkla
 2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Microsoft Mağazası'ndan indirin.  
 3. Betik üst bilgisinde açıklanan giriş parametrelerini (ayıklanmış hali aşağıdadır) kullanıp betiği çalıştırarak Windows 10 Şirket Portalı uygulamasını imzalayın. Bağımlılıkların betiğe geçirilmesi gerekmez. Bunlar, yalnızca uygulama Intune Yönetici Konsolu’na yüklenirken gereklidir.
 
-|Parametre | Açıklama|
+|Parametre | Description|
 | ------------- | ------------- |
 |InputWin10AppxBundle |Kaynak appxbundle dosyasının bulunduğu yol. |
 |OutputWin10AppxBundle |İmzalı appxbundle dosyası için çıkış yolu. |

@@ -4,7 +4,7 @@ description: "Intune cihaz yönetimi için desteklenen cihaz platformlarını ve
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -14,28 +14,28 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 1e6b14d5152df8420c5d358ccd9057d7ba427800
+ms.sourcegitcommit: d9de1e92c3913f731d5da3c51a5e1e9b2686894b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="supported-devices-and-browsers"></a>Desteklenen cihazlar ve tarayıcılar
+# <a name="supported-operating-systems-and-browsers"></a>Desteklenen işletim sistemleri ve tarayıcılar
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Bu makale, kuruluşta cihaz yönetiminden sorumlu olan yöneticilere yöneliktir. Telefonunuza Intune yüklerken yardım almak için bkz. [İşleri halletmek için yönetilen cihazları kullanma](/intune-user-help/company-portal-frequently-asked-questions).
+Bu makale, kuruluşta cihaz yönetiminden sorumlu olan yöneticilere yöneliktir. Cihazınıza Intune yüklerken yardım almak için bkz. [İşleri halletmek için yönetilen cihazları kullanma](/intune-user-help/company-portal-frequently-asked-questions).
 
 Microsoft Intune’u kurmaya başlamadan önce, aşağıdaki gereksinimleri gözden geçirin:
 
-- [Desteklenen cihazlar ve bilgisayarlar](#intune-supported-devices)
+- [Desteklenen işletim sistemleri](#intune-supported-operating-systems)
 - [Intune kullanan desteklenen web tarayıcıları listesi](#intune-supported-web-browsers)
 
 Ayrıca [Intune ağ bant genişliği kullanımı](network-bandwidth-use.md) ([klasik portal](/intune-classic/get-started/network-bandwidth-use)) hakkında da bilgi edinmelisiniz.
 
-## <a name="intune-supported-devices"></a>Intune desteklenen cihazlar
+## <a name="intune-supported-operating-systems"></a>Intune tarafından desteklenen işletim sistemleri
 
-Intune mobil cihaz yönetimi kullanarak aşağıdaki cihazları yönetebilirsiniz:
+Aşağıdaki işletim sistemlerini çalıştıran cihazları yönetebilirsiniz:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
@@ -85,7 +85,6 @@ Aşağıdaki Samsung cihaz modelleri Knox’u desteklemez ve Android için Şirk
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Intune Windows Server işletim sistemlerini yönetmek için kullanılamaz.
 
 ### <a name="windows-pc-software-client"></a>Windows bilgisayarı yazılım istemcisi
 

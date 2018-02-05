@@ -5,21 +5,20 @@ description: "Android for Work cihazlarında cihaz ayarlarını ve işlevselliğ
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 08/01/2017
+manager: dougeby
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: beb8368aa2db33df84bb64985177b47beebc80ac
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android for Work cihaz kısıtlama ayarları
 
@@ -44,7 +43,7 @@ ms.lasthandoff: 12/12/2017
 ### <a name="work-profile-password"></a>İş profili parolası
 - **İş Profili Parolası İste** - (iş profili etkin olarak Android 7.0 ve üstü) Yalnızca iş profilindeki uygulamalar için geçerli olan bir geçiş kodu ilkesi tanımlayın. Son kullanıcının varsayılan olarak iki ayrı tanımlı PIN kullanma veya bunlardan güçlü olanını tercih etme seçeneği bulunur.
 - **En düşük parola uzunluğu** - Kullanıcı parolalarında olması gereken en düşük rakam veya karakter sayısını belirtin (**4**-**16** arası)
-- **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** - İş profili kilitlenmeden önce geçmesi gereken süre miktarını seçin. Daha sonra kullanıcının kimlik bilgilerini girerek tekrar erişim kazanması gerekir.
+- **İş profili kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** - İş profili kilitlenmeden önce geçmesi gereken süre miktarını seçin. Daha sonra kullanıcının kimlik bilgilerini girerek tekrar erişim kazanması gerekir.
 - **Cihaz silinmeden önceki oturum açma hatası sayısı** - İş profili cihazdan silinmeden önce girilebilecek hatalı parola sayısını girin.
 - **Parola kullanım süresi sonu (gün)** - Son kullanıcı parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını girin (**1**-**255** arası).
 - **Gerekli parola türü** - Cihazda ayarlanması gereken parola türünü seçin. Aşağıdakilerden birini seçin:

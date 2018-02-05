@@ -30,8 +30,9 @@
 #### [Cihaz uyumluluğunu denetleme](check-compliance-on-your-device-android.md)
 #### [Outlook e-postasını pil koruyucu modu ile eşitleme](power-saving-mode-android.md)
 #### [Samsung Knox ile sık karşılaşılan sorunları çözme](samsung-knox-errors-android.md)
+#### [Outlook yüklemek için cihazınızı güncelleştirin](update-device-outlook-android.md)
 
-#### Sorunları gidermek için günlükleri kullanma
+#### Sorunları gidermeye yardım etmek için günlükleri kullanma
 ##### [Ayrıntılı günlük kaydını açma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [E-posta kullanarak günlükleri gönderme](send-logs-to-your-it-admin-by-email-android.md)
 ##### [USB kablosu kullanarak günlükleri gönderme](send-logs-to-your-it-admin-using-cable-android.md)
@@ -85,6 +86,7 @@
 #### [Cihazınızı tanımlama](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Seri numaranızı bulma](how-do-i-find-the-serial-number-on-my-device-ios.md)
 #### [iOS cihazınızı güncelleştirme](you-need-to-update-your-ios-device.md)
+#### [Outlook yüklemek için cihazınızı güncelleştirin](update-device-outlook-ios.md)
 #### [Kullandığım iOS sürümü henüz desteklenmiyor](your-ios-version-isnt-yet-supported.md)
 
 ### Mobile Threat Defense

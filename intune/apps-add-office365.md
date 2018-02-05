@@ -5,7 +5,7 @@ description: "Windows 10 cihazlarda Office 365 uygulamalarını yüklemeyi kolay
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 ProPlus 2016 uygulamalarını Windows 10 cihazlara atama
 
@@ -35,7 +35,7 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 ProPlus 2016 
 - Intune, yalnızca Office 365 ProPlus 2016 paketinden Office uygulamaları eklemeyi destekler.
 - Intune uygulama paketini yüklerken herhangi bir Office uygulaması açıksa kaydedilmeyen dosyalardaki veriler kaybedilebilir.
 - Bu yükleme yöntemi, Windows 10S cihazlarda desteklenmez.
-- Intune, daha önce Intune ile Office 365 uygulamalarını dağıttığınız bir cihaza Windows Mağazası’ndan Office 365 masaüstü uygulamalarının (Office Centennial uygulamaları olarak bilinir) yüklenmesini desteklemez. Bu yapılandırmayı yüklerseniz veri kaybına veya bozulmasına neden olabilir.
+- Intune, daha önce Intune ile Office 365 uygulamalarını dağıttığınız bir cihaza Microsoft Mağazası’ndan Office 365 masaüstü uygulamalarının (Office Centennial uygulamaları olarak bilinir) yüklenmesini desteklemez. Bu yapılandırmayı yüklerseniz veri kaybına veya bozulmasına neden olabilir.
 
 
 ## <a name="get-started"></a>Başlarken
@@ -63,7 +63,7 @@ Bu adımda, cihazlara atamak istediğiniz Office uygulamalarını seçin.
 Bu adımda, uygulama paketi hakkında bilgi sağlayın. Bu bilgiler, Intune’da paketi bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı uygulamasında paketi bulması kolaylaşır.
 
 1.  **Uygulama Ekle** dikey penceresinde **Uygulama Paketi Bilgileri**’ni seçin.
-2.  **Uygulama Paketi Bilgileri** dikey penceresinde aşağıdaki bilgileri belirtin: 
+2.  **Uygulama Paketi Bilgileri** dikey penceresinde aşağıdaki bilgileri belirtin:
     - **Paket Adı** - Uygulama paketinin şirket portalında görüntülenen adını girin. Kullandığınız tüm paket adlarının benzersiz olduğundan emin olun. Aynı uygulama paketi adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
     - **Paket Açıklaması** - Uygulama paketi için bir açıklama girin. Örneğin dahil etmek üzere seçtiğiniz uygulamaları listeleyebilirsiniz.
     - **Yayımcı** - Uygulamanın yayımcısının adını girin.
@@ -82,9 +82,9 @@ Bu adımda, uygulama paketi hakkında bilgi sağlayın. Bu bilgiler, Intune’da
 Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Pakete eklenen tüm uygulamalar için bu ayarlar uygulanır.
 
 1.  **Uygulama ekle** dikey penceresinde **Uygulama Paketi Ayarları**’nı seçin.
-2.  **Uygulama Paketi Ayarları** dikey penceresinde aşağıdaki bilgileri belirtin: 
+2.  **Uygulama Paketi Ayarları** dikey penceresinde aşağıdaki bilgileri belirtin:
     - **Office sürümü** - Office’in hangi sürümünü atamak istediğinizi seçin, 32 bit veya 64 bit. 32 bit sürümünü hem 32 bit hem de 64 bit cihazlara yükleyebilirsiniz ancak 64 bit sürümü yalnızca 64 bit cihazlara yüklenebilir.
-    - **Güncelleştirme Kanalı** - Office’in cihazlarda nasıl güncelleştirileceğini seçin. Farklı güncelleştirme kanalları hakkında bilgi için bkz. Office 365 ProPlus güncelleştirme kanallarına genel bakış. Aşağıdakilerden birini seçin: 
+    - **Güncelleştirme Kanalı** - Office’in cihazlarda nasıl güncelleştirileceğini seçin. Farklı güncelleştirme kanalları hakkında bilgi için bkz. Office 365 ProPlus güncelleştirme kanallarına genel bakış. Aşağıdakilerden birini seçin:
         - **Geçerli**
         - **Gecikmeli**
         - **Geçerli Kanalın İlk Sürümü**
@@ -104,19 +104,19 @@ Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Paket
 
 Karşınıza çıkabilecek hata kodları ve anlamları, aşağıdaki tabloda listelenmiştir.
 
-### <a name="status-for-office-csp"></a>Office CSP durumu: 
+### <a name="status-for-office-csp"></a>Office CSP durumu:
 
 ||||
 |-|-|-|
-|Durum|Aşama|Açıklama|
+|Durum|Aşama|Description|
 |1460 (ERROR_TIMEOUT)|İndir|Office Dağıtım Aracı’nı indirme başarısız|    
-|13 (ERROR_INVALID_DATA)|-|İndirilen Office Dağıtım Aracı’nın imzası doğrulanamıyor| 
+|13 (ERROR_INVALID_DATA)|-|İndirilen Office Dağıtım Aracı’nın imzası doğrulanamıyor|
 |CertVerifyCertificateChainPolicy hata kodu|-|İndirilen Office Dağıtım Aracı için sertifika denetimi başarısız|    
-|997|Süren İş|Yükleniyor| 
+|997|Süren İş|Yükleniyor|
 |0|Yükleme sonrası|Yükleme başarılı|    
 |1603 (ERROR_INSTALL_FAILURE)|-|Önkoşul denetimi başarısız, örneğin:<br>- SxS (2016 MSI yüklüyken yüklenmeye çalışıldı)<br>- sürüm uyumsuzluğu<br>- vb.|     
 |0x8000ffff (E_UNEXPECTED)|-|Makinede Tıkla-Çalıştır Office yokken kaldırılmaya çalışıldı.|    
-|17002|-|Senaryoyu tamamlama başarısız (yükleme). Olası nedenler:<br>- Yükleme kullanıcı tarafından iptal edildi<br>- Yükleme başka bir yükleme tarafından iptal edildi<br>- Yükleme sırasında disk alanı tükendi<br>- Bilinmeyen dil kimliği| 
+|17002|-|Senaryoyu tamamlama başarısız (yükleme). Olası nedenler:<br>- Yükleme kullanıcı tarafından iptal edildi<br>- Yükleme başka bir yükleme tarafından iptal edildi<br>- Yükleme sırasında disk alanı tükendi<br>- Bilinmeyen dil kimliği|
 |17004|-|Bilinmeyen SKU’lar|   
 
 
@@ -124,15 +124,15 @@ Karşınıza çıkabilecek hata kodları ve anlamları, aşağıdaki tabloda lis
 
 |||||
 |-|-|-|-|
-|Senaryo|Dönüş kodu|Kullanıcı Arabirimi|Not| 
-|Etkin bir Tıkla-Çalıştır yükleme yokken kaldırma çabası|-2147418113, 0x8000ffff veya 2147549183|Hata Kodu: 30088-1008<br>Hata Kodu: 30125-1011 (404)|Office Dağıtım Aracı| 
-|MSI sürümü yüklü olduğunda yükleyin|1603|-|Office Dağıtım Aracı| 
-|Yükleme, kullanıcı veya başka bir yükleme tarafından iptal edildi|17002|-|Tıkla-çalıştır| 
-|32 bit yüklü olan bir cihaza 64 bit yüklemeyi deneyin.|1603|-|Office Dağıtım Aracı dönüş kodu| 
-|Bilinmeyen bir SKU yüklemeyi deneyin (yalnızca geçerli SKU’lardan geçmemiz gerektiğinden, Office CSP için yasal bir kullanım durumu değildir)|17004|-|Tıkla-çalıştır| 
-|Yetersiz alan|17002|-|Tıkla-çalıştır| 
-|Tıkla-çalıştır istemci başlatılamadı (beklenmeyen)|17000|-|Tıkla-çalıştır| 
-|Tıkla-çalıştır istemci, senaryoyu sıraya alamadı (beklenmeyen)|17001|-|Tıkla-çalıştır| 
+|Senaryo|Dönüş kodu|Kullanıcı Arabirimi|Not|
+|Etkin bir Tıkla-Çalıştır yükleme yokken kaldırma çabası|-2147418113, 0x8000ffff veya 2147549183|Hata Kodu: 30088-1008<br>Hata Kodu: 30125-1011 (404)|Office Dağıtım Aracı|
+|MSI sürümü yüklü olduğunda yükleyin|1603|-|Office Dağıtım Aracı|
+|Yükleme, kullanıcı veya başka bir yükleme tarafından iptal edildi|17002|-|Tıkla-çalıştır|
+|32 bit yüklü olan bir cihaza 64 bit yüklemeyi deneyin.|1603|-|Office Dağıtım Aracı dönüş kodu|
+|Bilinmeyen bir SKU yüklemeyi deneyin (yalnızca geçerli SKU’lardan geçmemiz gerektiğinden, Office CSP için yasal bir kullanım durumu değildir)|17004|-|Tıkla-çalıştır|
+|Yetersiz alan|17002|-|Tıkla-çalıştır|
+|Tıkla-çalıştır istemci başlatılamadı (beklenmeyen)|17000|-|Tıkla-çalıştır|
+|Tıkla-çalıştır istemci, senaryoyu sıraya alamadı (beklenmeyen)|17001|-|Tıkla-çalıştır|
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
