@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 ve üzeri cihaz kısıtlama ayarları
 
@@ -254,7 +254,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 
 ## <a name="kiosk-preview"></a>Bilgi noktası (Önizleme)
 
--   **Bilgi noktası modu** - İlke tarafından desteklenen [bilgi noktası modu](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) türünü belirler. Şu seçenekler mevcuttur:
+-   **Bilgi noktası modu** - İlke tarafından desteklenen [bilgi noktası modu](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) türünü belirler. Şu seçenekler mevcuttur:
 
       - **Yapılandırılmamış** (varsayılan) - İlke, bilgi noktası modunu etkinleştirmez. 
       - **Tek uygulama bilgi noktası** - Profil, cihazı tek bir uygulama bilgi noktası olarak etkinleştirir.
@@ -266,7 +266,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 
          Ortak ortamlardaki cihazlar için olabilecek en az ayrıcalıklı hesaplar kullanarak yetkilendirilmemiş etkinliklerin önüne geçin.  
 
-      - **Bir uygulamanın uygulama kullanıcı modeli kimliği (AUMID)** - Bilgi noktası uygulamasının AUMID’ini belirtir. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **Bir uygulamanın uygulama kullanıcı modeli kimliği (AUMID)** - Bilgi noktası uygulamasının AUMID’ini belirtir. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
     Birden çok uygulamalı bilgi noktaları, bilgi noktası yapılandırması gerektirir. **Ekle** düğmesini kullanarak bir bilgi noktası yapılandırması oluşturun veya mevcut bir taneyi seçin.
 
@@ -280,13 +280,13 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 
             - **Win32 Uygulaması** - Geleneksel bir masaüstü uygulaması. (Yürütülebilir dosyanın cihaza göre mutlak yol adına ihtiyacınız vardır.)
 
-            - **UWP Uygulaması** - Bir Evrensel Windows uygulaması. [Uygulamanın AUMID’sine](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ihtiyacınız vardır.
+            - **UWP Uygulaması** - Bir Evrensel Windows uygulaması. [Uygulamanın AUMID’sine](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ihtiyacınız vardır.
 
-        - **Uygulama Tanımlayıcı** - Yürütülebilir dosyanın mutlak yol adını (Win32 uygulamaları) veya [uygulamanın AUMID’ini](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP uygulamaları) belirtir.
+        - **Uygulama Tanımlayıcı** - Yürütülebilir dosyanın mutlak yol adını (Win32 uygulamaları) veya [uygulamanın AUMID’ini](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP uygulamaları) belirtir.
 
     - **Görev çubuğu**, bilgi noktasında görev çubuğunun görüntüleneceğini (**Etkin**) veya gizleneceğini (**Yapılandırılmamış**) gösterir.
 
-    - **Başlangıç menüsü düzeni** - Uygulamaların [Başlangıç menüsünde nasıl göründüğünü](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) açıklayan bir XML dosyasını belirtir.
+    - **Başlangıç menüsü düzeni** - Uygulamaların [Başlangıç menüsünde nasıl göründüğünü](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) açıklayan bir XML dosyasını belirtir.
 
     - **Atanan kullanıcılar** - bilgi noktası yapılandırmasıyla ilişkili bir veya daha fazla kullanıcı hesabı belirtir. Hesap, cihazda yerel olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgileri olabilir. Etki alanına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
 

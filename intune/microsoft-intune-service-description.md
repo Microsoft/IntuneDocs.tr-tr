@@ -14,11 +14,11 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 115a2ac3b4eb35591a2742143fdd29dde09c7de7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune hizmet açıklaması
 
@@ -55,7 +55,7 @@ Mobil cihaz yönetimi ekosistemi, işletim sistemi güncelleştirmeleri ve mobil
 
 - [Microsoft Intune'daki yenilikler](whats-new.md). Bu konu, aylık hizmet güncelleştirmesiyle ve örneğin Şirket Portalı uygulaması gibi uygulamalar yayımlandığında haftalık olarak güncelleştirilir.
 
-- [Office 365 yönetim portalı](https://portal.office.com/Admin/Default.aspx) İleti Merkezi'nde ayrıca önemli hizmet güncelleştirmeleri de duyurulur. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz. [Office 365 İleti Merkezi](https://support.office.com/en-US/client/results?Shownav=true&lcid=1033&ns=O365ENTADMIN&version=15&omkt=en-US&ver=15&HelpID=O365E_MCManageUpdates) ile çalışma hakkında bilgi edinin.
+- [Office 365 yönetim portalı](https://portal.office.com/Admin/Default.aspx) İleti Merkezi'nde ayrıca önemli hizmet güncelleştirmeleri de duyurulur. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz. [Office 365 İleti Merkezi](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates) ile çalışma hakkında bilgi edinin.
 
     Birkaç faydalı ipucu:
 

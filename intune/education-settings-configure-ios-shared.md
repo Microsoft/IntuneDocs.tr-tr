@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c183af24e953f87e12e87654f767dd9a30f8509f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 044f3aaa81a2bb02662bec3d20ea51a2339b91a6
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
 
@@ -34,7 +34,7 @@ Ayrılmış (1:1) iPad cihazlarını Classroom uygulamasında kullanmak üzere y
 Paylaşılan iPad özelliklerini kullanmak için önkoşullar şunlardır:
 
 - [Apple School Manager](apple-school-manager-set-up-ios.md) ve [School Data Sync (SDS)](https://support.office.com/article/Apple-School-Manager-integration-with-Intune-for-Education-and-School-Data-Sync-974bd1f9-2c7a-45cb-9447-b58166108617)’i kurma.
-- Apple School Manager kurulumunun bir parçası olarak [Apple kimliklerini yönet](http://help.apple.com/schoolmanager/#/tes78b477c81)'i öğrenciler için yapılandırın. [Yönetilen Apple kimlikleri hakkında daha fazla bilgi edinin](https://support.apple.com/en-us/HT205918).
+- Apple School Manager kurulumunun bir parçası olarak [Apple kimliklerini yönet](http://help.apple.com/schoolmanager/#/tes78b477c81)'i öğrenciler için yapılandırın. [Yönetilen Apple kimlikleri hakkında daha fazla bilgi edinin](https://support.apple.com/HT205918).
 - Apple School Manager'dan eşitlenmiş cihaz seri numaraları için bir kayıt profili oluşturun.
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>1. Adım - Okul verilerinizi Azure Active Directory'ye aktarın
