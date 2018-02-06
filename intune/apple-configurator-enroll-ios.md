@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3554623db2a153fd7f281a3b8453bedf1de3c77a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator ile iOS cihazlarını kaydetme
 
@@ -71,8 +71,8 @@ Bir cihaz kayıt profili kayıt sırasında uygulanan ayarları tanımlar. Bu ay
 
 1. İki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. Seri numarasını sol sütuna, ayrıntıları sağ sütuna ekleyin. Liste için geçerli üst sınır 5.000 satırdır. Metin düzenleyicisinde .csv listesi aşağıdaki gibi görünür:
 
-    F7TLWCLBX196,cihaz ayrıntıları</br>
-    DLXQPCWVGHMJ,cihaz ayrıntıları
+  F7TLWCLBX196,cihaz ayrıntıları</br>
+  DLXQPCWVGHMJ,cihaz ayrıntıları
 
    [iOS cihaz seri numarasını bulmayı](https://support.apple.com/HT204073) öğrenin.
 2. Azure portalında Intune’da **Cihaz kaydı**'nı, ardından **Apple Kaydı**'nı seçin.
@@ -164,3 +164,5 @@ iOS cihazlarını Apple Configurator ile doğrudan kaydederken, cihazın seri nu
 7. iOS cihazında **Ayarlar**’ı açın ve **Genel** > **Cihaz Yönetimi** > **Yönetim Profili**’ne gidin. Profil yüklemesinin listelendiğini onaylayın, iOS ilke kısıtlamalarını ve yüklü uygulamaları denetleyin. İlke kısıtlamaları ve uygulamaların cihazda görünmesi 10 dakika kadar sürebilir.
 
 8. Cihazları dağıtın. iOS cihazı Intune’a kaydedilmiştir ve yönetilmektedir.
+
+
