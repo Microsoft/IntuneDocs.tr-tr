@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: Yaygın senaryolar
       href: common-scenarios.md
+    - name: MAM İLE İLGİLİ SSS
+      href: mam-faq.md
 - name: Dağıtım planlama
   items:
     - name: Planlama kılavuzu
