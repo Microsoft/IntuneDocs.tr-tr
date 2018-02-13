@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -52,7 +52,7 @@ Intune, ihtiyacınız olan uygulamaları istediğiniz cihazlara almanıza yardı
 |Cihazlara uygulamaları zorunlu yükleme (Gerekli)<sup>2</sup>|Evet|Evet|Evet|Evet|
 |Şirket Portalı’ndan cihazlara isteğe bağlı yükleme (Kullanılabilir yükleme)|Evet|Evet|Evet|Evet|
 |Web’deki bir uygulamanın kısayolunu yükleme (web klibi)|Evet|Evet|Evet|Evet|
-|Şirket içi (iş kolu) uygulamalar|Evet|Evet|Hayır|Hayır|
+|Şirket içi (iş kolu) uygulamalar|Evet|Evet|Hayır|Evet|
 |Mağazadan uygulamalar|Evet|Evet|Evet|Evet|
 |Uygulamaları güncelleştirme|Evet|Evet|Evet|Evet|
 
