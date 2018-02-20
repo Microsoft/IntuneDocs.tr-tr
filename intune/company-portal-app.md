@@ -43,7 +43,7 @@ Microsoft Intune şirket portalı, kullanıcıların şirket verilerine erişti�
 |**BT departmanı telefon numarası**|20|Bu iletişim numarası **BT'ye Başvur** sayfasında gösterilir.|        
 |BT departmanı e-posta adresi|40|Bu iletişim adresi **BT'ye Başvur** sayfasında gösterilir. **alias@domainname.com** biçiminde geçerli bir e-posta adresi girmeniz gerekir.|     
 |**Ek bilgiler**|120|**BT'ye Başvur** sayfasında gösterilir.|      
-|**Şirket gizlilik bildirimi URL'si**|79|Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. **Https://www.contoso.com** biçiminde geçerli bir URL girmelisiniz.|        
+|**Şirket gizlilik bildirimi URL'si**|79|Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. **https://www.contoso.com** biçiminde geçerli bir URL girmelisiniz.|        
 
 ## <a name="support-contacts"></a>Destek kişileri     
 Şirket Portalı’nda kullanıcılara, çevrimiçi desteğe erişebilmeleri için destek web sitesi gösterilir.        
