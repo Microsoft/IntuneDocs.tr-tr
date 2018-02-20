@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02b130ed13b3bb8869e35b035e787c97b76b5e85
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70c3de614b0f5ed5075b669ecdffc08e1226817d
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Microsoft Intune'da Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturma ve atama
 
@@ -65,7 +65,7 @@ Koşullu erişim yapılandırabilmek için önce aşağıdakileri doğrulayın:
 - EAS posta istemcileri **Android for Work cihazlar:** Android for Work cihazlarda yalnızca **iş profilindeki** **Gmail** ve **Nine Work** uygulamaları desteklenir. Android for Work cihazlarda koşullu erişimin çalışması için Gmail veya Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız. Ayrıca bu uygulamaları da zorunlu yükleme olarak dağıtmanız gerekir.
 
 > [!NOTE]
-> Android ve iOS için Microsoft Outlook uygulaması desteklenmez. Android for Work, Intune kiracılarında önümüzdeki birkaç ay için kullanıma sunulacaktır.
+> Android ve iOS için Microsoft Outlook uygulaması desteklenmez. 
 
 ### <a name="support-for-pcs"></a>Bilgisayarlar için destek
 
@@ -124,6 +124,6 @@ Intune 1704 sürümünden başlayarak, yöneticiler, Intune Azure portalından A
 
 2. **İlkeler** dikey penceresinde **Yeni ilke**’yi seçerek yeni Azure AD koşullu erişim ilkenizi oluşturun.
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Azure Active Directory’de Koşullu Erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
