@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -31,7 +31,7 @@ Intune yöneticisi olarak, Intune ile yönetime kaydedilebilecek cihazların say
 >Kayıt kısıtlamaları güvenlik özellikleri değildir. Güvenliği aşılan cihazlar karakterlerini yanlış gösterebilir. Bu kısıtlamalar, kötü amaçlı olmayan kullanıcılara yönelik olabilecek en iyi engeldir.
 
 >[!NOTE]
->Gruba atanan kayıt kısıtlaması ve aşağıda sözü edilen öncelik işlevi, Intune müşteri tabanı geneline dağıtım aşamasındadır. Bu dağıtım tamamlanana kadar, grup ve öncelik özelliklerine erişemeyebilirsiniz. 
+>Gruba atanan kayıt kısıtlaması ve aşağıda sözü edilen öncelik işlevi, Intune müşteri tabanı geneline dağıtım aşamasındadır. Bu dağıtım tamamlanana kadar, grup ve öncelik özelliklerine erişemeyebilirsiniz.
 
 Özel olarak şu kayıt kısıtlamalarını oluşturabilirsiniz:
 
@@ -80,7 +80,7 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
   - Android ve Android for Work major.minor.rev.build destekler.
   - iOS major.minor.rev destekler.
   - Windows, yalnızca Windows 10 için major.minor.rev.build destekler.
-  İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir. 
+  İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir.
 8. Listelenen her platformda **Kişiye ait** cihazlar için **İzin Ver** veya **Engelle**'yi seçin.
 
     ![Varsayılan cihaz platform yapılandırmaları ile cihaz kısıtlamaları iş alanının, kişisel ayarların yapılandırıldığını gösteren ekran görüntüsü.](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ Aşağıdaki adımları izleyerek bir cihaz sınırı kısıtlamasının ayarlar
     ![Cihaz sınır kısıtlamaları ile cihaz sınır kısıtlamaları dikey penceresinin ekran görüntüsü.](./media/device-restrictions-limit.png)
 6. **Kaydet**'e tıklayın.
 
+Son kullanıcınız, kayıtlı cihaz sınırına ulaştığında bunu belirten bir bildirim görecektir. Örneğin iOS’ta bu, şu şekilde görünür:
+
+![iOS cihazı sınır bildiriminin ekran görüntüsü](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>Kayıt kısıtlama önceliğini değiştirme
 
-Kullanıcı kısıtlamalar atanmış birden çok grupta yer alıyorsa, öncelik kullanılır. Kullanıcılar, yalnızca içinde bulundukları gruba atanmış olan en yüksek öncelik kısıtlamasına uymak zorundadır. Örneğin, Ali öncelik düzeyi 5 olan kısıtlamaların atandığı A grubunda ve öncelik düzeyi 2 olan kısıtlamaların atandığı B grubunda yer alıyordur. Ali yanızca öncelik düzeyi 2 olan kısıtlamalara uymak zorundadır. 
+Kullanıcı kısıtlamalar atanmış birden çok grupta yer alıyorsa, öncelik kullanılır. Kullanıcılar, yalnızca içinde bulundukları gruba atanmış olan en yüksek öncelik kısıtlamasına uymak zorundadır. Örneğin, Ali öncelik düzeyi 5 olan kısıtlamaların atandığı A grubunda ve öncelik düzeyi 2 olan kısıtlamaların atandığı B grubunda yer alıyordur. Ali yanızca öncelik düzeyi 2 olan kısıtlamalara uymak zorundadır.
 
 Kısıtlama oluşturduğunuzda, bu listede varsayılanın hemen üstüne eklenir.
 
-Cihaz kaydı, hem cihaz türü hem de cihaz sınırı kısıtlamaları için varsayılan kısıtlamalar içerir. Daha yüksek öncelikli kısıtlamalarla geçersiz kılınmadığı sürece, bu iki kısıtlama tüm kullanıcılara uygulanır. 
+Cihaz kaydı, hem cihaz türü hem de cihaz sınırı kısıtlamaları için varsayılan kısıtlamalar içerir. Daha yüksek öncelikli kısıtlamalarla geçersiz kılınmadığı sürece, bu iki kısıtlama tüm kullanıcılara uygulanır.
 
-Varsayılan kısıtlamalar dışındaki tüm kısıtlamaların önceliğini değiştirebilirsiniz. 
+Varsayılan kısıtlamalar dışındaki tüm kısıtlamaların önceliğini değiştirebilirsiniz.
 
 **Kısıtlama önceliğini değiştirmek için**
 
@@ -120,8 +124,3 @@ Varsayılan kısıtlamalar dışındaki tüm kısıtlamaların önceliğini değ
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. Öncelik listesinde kısıtlamanın üzerine gelin.
 5. Üç dikey noktayı kullanarak, önceliği listede dilediğiniz konuma sürükleyin.
-
-
-
-
-

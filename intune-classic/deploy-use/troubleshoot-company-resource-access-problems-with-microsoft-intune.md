@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46a25f60e43b2106446904c36ee6aa10fceff579
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 48c7c0a2da845416bdf6280a0ba9ac29c8fb37ba
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune ile şirket kaynak erişimi sorunlarını giderme
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/12/2017
 
 Microsoft Intune eylemi bir hata kodu döndürdüğünde sorunları gidermenize yardımcı olması için bu konu başlığı altında verilen hata ve durum kodlarını kullanın.
 
-Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](../troubleshoot/how-to-get-support-for-microsoft-intune.md).
+Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](../troubleshoot/how-to-get-support-for-microsoft-intune.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM ile yönetilen Windows cihazları için durum kodları
 
