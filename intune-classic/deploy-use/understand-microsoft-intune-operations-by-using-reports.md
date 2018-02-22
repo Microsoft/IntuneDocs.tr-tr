@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f812a740f5a703479e001fa2c5b6d1fd3336a2e2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f8c1df81e8d5b4f41fa5df26aadf8e8dd0f18bd
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Raporları kullanarak Microsoft Intune işlemlerini anlayın
 
@@ -32,9 +32,9 @@ Intune raporları, kuruluşunuzdaki yazılımlar, donanımlar ve yazılım lisan
 
 ## <a name="report-types"></a>Rapor türleri
 
-|Rapor türü|Açıklama|
+|Rapor türü|Description|
 |---------------|---------------|
-|**Güncelleştirme Raporları**|Kuruluşunuzda başarılı olan yazılım güncelleştirmelerini gösterir. Ayrıca başarısız, bekleyen veya gerekli güncelleştirmeleri de gösterir. Yazılım güncelleştirmeleri hakkında daha fazla bilgi için bkz. [Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
+|**Güncelleştirme Raporları**|Kuruluşunuzda başarılı olan yazılım güncelleştirmelerini gösterir. Ayrıca başarısız, bekleyen veya gerekli güncelleştirmeleri de gösterir. Yazılım güncelleştirmeleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’da yazılım güncelleştirmeleri ile Windows bilgisayarları güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
 |**Algılanan Yazılım raporları**|Kuruluşunuzdaki bilgisayarlarda yüklü yazılımı gösterir. Yazılım sürümleri dahil edilir. Görüntülenen bilgileri yazılım yayımcısına ve yazılım kategorisine göre filtreleyebilirsiniz. Liste öğesinin yanındaki yön okunu seçerek (bir güncelleştirmenin yüklü olduğu bilgisayarlar gibi) daha fazla ayrıntı göstermek için listedeki güncelleştirmeleri genişletebilirsiniz.<br /><br />Intune’da bilgisayarları devre dışı bıraktığınızda veya grup üyeliklerini değiştirdiğinizde, bu değişikliklerin Algılanan Yazılım raporuna yansıtılması birkaç dakika sürebilir. En doğru yazılım envanteri verileri için bilgisayarları kullanımdan kaldırdıktan veya bilgisayarların grup üyeliklerini değiştirdikten sonra, bu bilgisayarları içeren bir algılanan yazılım raporu çalıştırmadan önce birkaç dakika bekleyin.|
 |**Bilgisayar Envanteri Raporları**|Kuruluşunuzdaki yönetilen bilgisayarlar hakkında bilgi gösterir. Donanım satın almayı planlamak ve kuruluşunuzdaki kullanıcıların donanım gereksinimlerini daha iyi anlamak için bu raporu kullanın. Yönetilen bilgisayarlarla çalışma hakkında daha fazla bilgi için bkz. [Microsoft Intune ile Windows bilgisayarlarını yönetme](manage-windows-pcs-with-microsoft-intune.md).|
 |**Mobil Cihaz Envanteri Raporları**|Kuruluşunuzdaki mobil cihazlarla ilgili bilgileri gösterir. Görüntülenen bilgileri gruplara, cihazın engellemeleri kaldırılmış veya kök erişim izni verilmiş olup olmadığına ve işletim sistemine göre filtreleyebilirsiniz.|

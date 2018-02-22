@@ -2,10 +2,10 @@
 title: "Microsoft Intune Uygulama SDK'sı Cordova Eklentisi"
 description: 
 keywords: sdk, Cordova, intune
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,23 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00c1c805dbbf661bdcd4ad6b153fee8b2bbba9ee
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune Uygulama SDK'sı Cordova Eklentisi
 
-> [!NOTE]
-> Öncelikle, desteklenen platformlarda tümleştirme için nasıl hazırlık yapıldığını açıklayan [Intune Uygulama SDK’sını Kullanmaya Başlama](app-sdk-get-started.md) makalesini okumanız önerilir.
+> [!IMPORTANT]
+> Intune, Microsoft Intune Uygulama SDK’sı Cordova Eklentisi için desteği 1 Mayıs 2018 tarihinde kesiyor. Bunun yerine Intune Uygulama Sarmalama Aracı kullanmanızı öneririz. Uygulama Sarmalama Aracı hakkında daha fazla bilgi için bkz. [iOS için Uygulama Sarmalama Aracı](app-wrapper-prepare-ios.md) ve [Android için Uygulama Sarmalama Aracı](app-wrapper-prepare-android.md). Bu değişiklik hakkında daha fazla bilgi için [Intune’daki yenilikler](whats-new.md) makalesinin [Bildirimler](whats-new.md#notices) bölümüne bakın.
 
 ## <a name="overview"></a>Genel bakış
 
 iOS ve Android uygulamalarında Cordova ile oluşturulmuş [Intune Uygulama SDK’sı Cordova Eklentisi](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune). Eklenti, geliştiricilerin Intune uygulama ve veri koruma özelliklerini Cordova tabanlı uygulamalarıyla tümleştirmelerini sağlar.
+
+> [!NOTE]
+> Öncelikle, desteklenen platformlarda tümleştirme için nasıl hazırlık yapıldığını açıklayan [Intune Uygulama SDK’sını Kullanmaya Başlama](app-sdk-get-started.md) makalesini okumanız önerilir.
 
 Uygulamanızın davranışını değiştirmeden SDK özelliklerini etkinleştirebileceğinizi göreceksiniz. Eklentiyi iOS veya Android uygulamanızda derlemeden önce Microsoft Intune yöneticisi çeşitli veri koruma özelliklerini içeren Intune uygulama koruma ilkesini dağıtabilecek. Eklenti, adımlarının çoğunun Cordova derleme işleminde otomatik olarak gerçekleştirileceği şekilde derlenmiştir. Bu sayede uygulamanızı hızlı bir şekilde Intune uygulama korumasına uygun hale getirebileceksiniz. Başlamak için aşağıdaki adımlardan hedef platformunuza uygun olanları izleyin.
 
@@ -65,7 +68,7 @@ Intune Uygulama SDK'sı Cordova Eklentisi ile derlenen Cordova uygulamaları art
 
 
 
-## <a name="quick-start"></a>Hızlı başlangıç
+## <a name="quickstart"></a>Hızlı Başlangıç
 
 1. ADAL sürümünü güncelleştirme:
 

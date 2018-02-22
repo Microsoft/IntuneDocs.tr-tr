@@ -15,11 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
@@ -133,7 +133,7 @@ Cihaz ilkesi ayarının kendisinin üzerine tıkladığınızda yönetici taraf�
 
 ### <a name="per-policy-device-compliance-report"></a>İlkeye göre cihaz uyumluluğu raporu
 
-Bu raporda, uyumluluk ilkesine göre görünüm ve her bir uyumluluk durumundaki toplam cihaz sayısı sunulmaktadır. **İlke uyumluluğu** kutucuğuna **Cihaz uyumluluk panosu**‘ndan erişilebilir. Bu kutucuk, daha önce yönetici tarafından oluşturulan tüm ilkeleri, ilkenin uygulandığı platformları, uyumlu olan ve olmayan cihazların sayısını gösterir.
+Bu raporda, uyumluluk ilkesine göre görünüm ve her bir uyumluluk durumundaki toplam cihaz sayısı sunulmaktadır. **İlke uyumluluğu** kutucuğuna **Cihaz uyumluluk panosu**’ndan erişilebilir. Bu kutucuk; daha önce yönetici tarafından oluşturulan tüm ilkeleri, ilkenin uygulandığı platformları, uyumlu olan ve olmayan cihazların sayısını gösterir.
 
 ![İlkeye göre cihaz uyumluluğu raporu](./media/idc-8.png)
 
@@ -143,7 +143,7 @@ Bu raporda, uyumluluk ilkesine göre görünüm ve her bir uyumluluk durumundaki
 
 ### <a name="per-setting-device-compliance-report"></a>Ayara göre cihaz uyumluluğu raporu
 
-Bu raporu kullanarak uyumluluk ayarına göre her bir uyumluluk durumundaki toplam cihaz sayısını görüntüleyebilirsiniz. **Ayar uyumluluğu** kutucuğuna **Cihaz uyumluluk panosu**‘ndan erişilebilir. Bu kutucuk, yönetici tarafından oluşturulan tüm cihaz uyumluluk ilkelerinin tüm cihaz uyumluluk ilkesi ayarlarını, ilke ayarlarının uygulandığı platformları, uyumlu olmayan cihazların sayısını gösterir.
+Bu raporu kullanarak uyumluluk ayarına göre her bir uyumluluk durumundaki toplam cihaz sayısını görüntüleyebilirsiniz. **Ayar uyumluluğu** kutucuğuna **Cihaz uyumluluk panosu**’ndan erişilebilir. Bu kutucuk; yönetici tarafından oluşturulan tüm cihaz uyumluluk ilkelerinin tüm cihaz uyumluluk ilkesi ayarlarını, ilke ayarlarının uygulandığı platformları, uyumlu olmayan cihazların sayısını gösterir.
 
 ![Ayara göre cihaz uyumluluğu raporu](./media/idc-10.png)
 

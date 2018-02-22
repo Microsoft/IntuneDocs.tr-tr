@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 362c7f4dc9acfe574eb6a98819339e2db44cb9ec
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a3075aa4ecae75b2c422b1e59b9fa0ce5281a2d7
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme
 
@@ -166,7 +166,7 @@ Intune, Apple yapılandırma dosyalarının veya özel bir Open Mobile Alliance 
     - **Windows Phone 8.1 cihazları**: Aşağıdaki ayarlar kaldırılır:
         - Mobil cihazların kilidini açmak için bir parola gerektir
         - Basit parolalara izin ver
-        - Minimum parola uzunluğu
+        - Parola uzunluğu alt sınırı
         - Gerekli parola türü
         - Parola geçerlilik süresi (gün)
         - Parola geçmişini anımsa
@@ -198,7 +198,7 @@ Intune, Apple yapılandırma dosyalarının veya özel bir Open Mobile Alliance 
 #### <a name="windows-pcs-running-the-intune-client-software"></a>Intune istemci yazılımını çalıştıran Windows bilgisayarları
 
 - **Endpoint Protection ayarları**: Ayarlar önerilen değerlere geri yüklenir. Tek özel durum, varsayılan değeri **Hayır** olan **Microsoft Active Protection Hizmeti'ne Katıl** ayarıdır. Ayrıntılar için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
-- **Yazılım güncelleştirmeleri ayarları**: Ayarlar, işletim sistemi için varsayılan duruma sıfırlanır. Ayrıntılar için bkz. [Microsoft Intune'da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+- **Yazılım güncelleştirmeleri ayarları**: Ayarlar, işletim sistemi için varsayılan duruma sıfırlanır. Ayrıntılar için bkz. [Microsoft Intune’da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutma](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **Microsoft Intune Center ayarları**: İlke tarafından yapılandırılan tüm destek iletişim bilgileri bilgisayarlardan silinir.
 - **Windows Güvenlik Duvarı ayarları**: Ayarlar, bilgisayar işletim sisteminin varsayılan değerlerine sıfırlanır. Ayrıntılar için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 

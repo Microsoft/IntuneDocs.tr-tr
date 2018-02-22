@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 449eaf2a22ca3a700eda2385af05a56e406f0c15
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5c02ea2df53b1524933cea72a8bcc3de89772e62
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Symantec PKI Manager Web Hizmeti için Intune Sertifika Bağlayıcı'yı Ayarlama
 
@@ -33,7 +33,7 @@ Bu makale boyunca Symantec PKI Manager Web Hizmetine Symantec CA adı verilmekte
 * Bir Microsoft CA'dan SCEP Sertifikaları
 * Bir Symantec CA'dan PKCS Sertifikaları
 
-Intune Sertifika Bağlayıcı'yı Microsoft CA ve Symantec CA için kullanmak istiyorsanız, öncelikle Microsoft CA için Intune Sertifika Bağlayıcı doğrulamasını tamamlamanız ve ardından Symantec CA yapılandırması için bu adımları uygulamanız gerekir.  Microsoft CA'ya Intune Sertifika Bağlayıcısı yapılandırma hakkındaki diğer ayrıntılar için bkz. [Microsoft Intune'da sertifikaları yapılandırma](certificates-configure.md).
+Intune Sertifika Bağlayıcısı’nı Microsoft CA ve Symantec CA için kullanmak istiyorsanız, öncelikle Microsoft CA için Intune Sertifika Bağlayıcı doğrulamasını tamamlamanız ve ardından Symantec CA yapılandırması için bu adımları uygulamanız gerekir.  Microsoft CA'ya Intune Sertifika Bağlayıcısı yapılandırma hakkındaki diğer ayrıntılar için bkz. [Microsoft Intune'da sertifikaları yapılandırma](certificates-configure.md).
 
 ## <a name="prepare-to-install-intune-certificate-connector"></a>Intune Sertifika Bağlayıcı'yı yüklemeye hazırlanma
 

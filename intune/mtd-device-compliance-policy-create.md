@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23155cbb84c2d170f1b0216981621e35fd3ac0f1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ae6947de91da43dc13c7544a6611e71ee15b58b
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune ile Mobile Threat Defense (MTD) cihaz uyumluluk ilkesi oluşturma
 
@@ -52,11 +52,11 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
 7.  **Cihaz Sistem Durumu** dikey penceresinden **Cihazın Mobile Threat Defense Düzeyi'nde veya altında olmasını gerektir**'in altındaki açılan listeden Mobile Threat Düzeyini seçin.
 
-    a.  **Güvenli**: En güvenli ayardır. Cihazda herhangi bir tehdit mevcut olamaz ve yine de şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunduğunda, cihaz uyumsuz olarak değerlendirilir.
+    a.  **Güvenli**: En güvenli ayardır. Cihazda herhangi bir tehdit mevcut olamaz ve yine de şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
 
     b.  **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumludur. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
 
-    c.  **Orta**: Cihazda bulunan tehditler düşük veya orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumlu değil olarak değerlendirilir.
+    c.  **Orta**: Cihazda bulunan tehditler düşük veya orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
 
     d.  **Yüksek**: Bu en az güvenli seçenektir. Bu, tüm tehdit düzeylerine izin verir ve Mobile Threat Defense’i yalnızca raporlama amacıyla kullanır. Cihazlar, bu ayar ile MTD uygulamasının etkin olmasını gerektirir.
 

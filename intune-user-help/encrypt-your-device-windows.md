@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,18 +17,21 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0cd9107462348e92c9b1a3122c19591bcab6a00e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ed8475956a13e2f35d37b57f0d404f916c239998
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Windows cihazınızı şifreleme kullanarak koruma
 
-Bir cihazı şifrelediğinizde cihazdaki bilgileri, yetkisiz kişilerin erişmesini engelleyen koruyucu bir kod katmanı içine sarmalamış olursunuz. Bilgilerinizin güvende olduğundan emin olmak için kuruluşunuz; şirket veya okul verilerine erişebilmeniz için Windows cihazınızı şifrelemenizi istiyor.
+Bir cihazı şifrelediğinizde cihazdaki bilgileri, yetkisiz kişilerin erişmesini engelleyen koruyucu bir kod katmanı içine sarmalamış olursunuz. Bilgilerinizin güvende olduğundan emin olmak için kuruluşunuz; şirket veya okul verilerine erişebilmeniz için Windows cihazınızı şifrelemenizi istiyor. 
+
+Windows Phone cihazınız varsa ve kaydettiyseniz, şifreleme gerekiyorsa cihazınız otomatik olarak şifrelenir.
 
 > [!Note]
-> Windows Phone cihazınız varsa ve kaydettiyseniz, şifreleme gerekiyorsa cihazınız otomatik olarak şifrelenir.
+> Şifreleme, Windows 10 Home’da desteklenmez. Bilgisayarınızı [Windows 10 Home’dan Windows 10 Pro’ya](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro) nasıl yükselteceğinizi öğrenin.
+
 
 Bir masaüstü cihazınız varsa, cihazın nasıl şifreleneceği aşağıdaki yönergelerde açıklanır.
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1dbac49ad8fe94e9000e609dea8ae8dd6749be52
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Microsoft Intune yapılandırma ilkesi başvurusu
 
@@ -113,10 +113,10 @@ Microsoft Intune’da artık her cihaz platformu için ayrı **yapılandırma il
 
 |İlke adı|Şunları yapmak istediğinizde kullanın|
 |---------------|------------------------|
-|**Microsoft Intune Aracısı Ayarları**|Aşağıdakilerle ilgili ayarlar dahil olmak üzere bilgisayarlarda Intune bilgisayar istemcisini yapılandırın:<br /><br />-   Endpoint Protection<br />-   Yazılım güncelleştirmeleri<br />-   İlke denetimi zamanlaması<br /><br />Bu tür bir ilke yalnızca cihaz gruplarına dağıtılabilir.<br /><br />Intune istemcileri yeni ve güncelleştirilmiş ilkeyi varsayılan olarak sekiz saatlik **Güncelleştirme ve uygulama algılama sıklığı** ayarına göre indirir. Ancak, istediğiniz zaman bilgisayarlarda ilke yenileme uygulayabilirsiniz.<br /><br />Ayrıntılar için bkz. [Microsoft Intune'da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
+|**Microsoft Intune Aracısı Ayarları**|Aşağıdakilerle ilgili ayarlar dahil olmak üzere bilgisayarlarda Intune bilgisayar istemcisini yapılandırın:<br /><br />-   Endpoint Protection<br />-   Yazılım güncelleştirmeleri<br />-   İlke denetimi zamanlaması<br /><br />Bu tür bir ilke yalnızca cihaz gruplarına dağıtılabilir.<br /><br />Intune istemcileri yeni ve güncelleştirilmiş ilkeyi varsayılan olarak sekiz saatlik **Güncelleştirme ve uygulama algılama sıklığı** ayarına göre indirir. Ancak, istediğiniz zaman bilgisayarlarda ilke yenileme uygulayabilirsiniz.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da yazılım güncelleştirmeleriyle Windows bilgisayarlarını güncel tutma](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
 |**Microsoft Intune Center Ayarları**|Yönetilen bilgisayarlarda, Microsoft Intune Merkezi'nde gösterilen ayrıntıları yapılandırın.<br /><br />Bu tür bir ilke yalnızca cihaz gruplarına dağıtılabilir.<br /><br />Ayrıntılar için bkz. [Microsoft Intune bilgisayar istemcisiyle ortak Windows bilgisayarı yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Windows Güvenlik Duvarı Ayarları**|Bilgisayarlarda aşağıdakiler dahil Windows Güvenlik Duvarı ayarları ve ortak ağ iletişimi için özel durumları yapılandırır:<br /><br />-   BranchCache<br />-   Uzaktan yardım<br />-   Medya paylaşımı<br /><br />Bu tür bir ilke yalnızca cihaz gruplarına dağıtılabilir.<br /><br />Ayrıntılar için bkz. [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

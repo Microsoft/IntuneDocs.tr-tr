@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6645261e2a90ea3890dc22b42fe65d6af4af6e5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -72,6 +72,7 @@ Windows cihazları şu anda desteklenmez. Ancak, Windows 10 cihazlarını Intune
 ![Uygulama koruma ilkeleri devrede olmadığında verilerin uygulamalar arasında serbestçe taşınabildiğini gösteren resim](./media/apps-without-protection-policies.png)
 
 Uygulamalar kısıtlama olmadan kullanıldığında, şirket verileri ile kişisel veriler birbirine karışabilir.  Şirket verileri, kişisel depolama alanı gibi konumlara düşebilir veya kapsamınızın dışındaki uygulamalara aktarılarak veri kaybına neden olabilir. Şemadaki oklar, uygulamalar arasındaki (şirket ve kişisel) ve depolama konumlarına yönelik kısıtlanmamış veri hareketlerini gösterir.
+
 
 ### <a name="data-protection-with-app-protection-policies"></a>Uygulama koruma ilkeleriyle verileri koruma
 
@@ -134,3 +135,6 @@ Uygulama koruma ilkeleri uygulamalar yalnızca iş bağlamında kullanılırken 
 ##  <a name="next-steps"></a>Sonraki adımlar
 
 [Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma](app-protection-policies.md)
+
+## <a name="see-also"></a>Ayrıca bkz:
+Salesforce mobil uygulaması gibi üçüncü taraf uygulamalar, Intune ile özel şekillerde çalışarak şirket verilerini korur. Doğrudan Salesforce uygulamasının Intune ile nasıl çalıştığını (MDM uygulama yapılandırma ayarları dahil) öğrenmek için bkz. [Salesforce Uygulaması ve Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

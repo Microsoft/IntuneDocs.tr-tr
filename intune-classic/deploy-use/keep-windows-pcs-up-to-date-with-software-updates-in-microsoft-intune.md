@@ -14,13 +14,13 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85299c97c2b0c605adbb83a7c6e8017360511609
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c31d1e44b4b96995223f4294655d8e0730170f47
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
-# <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun
+# <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune’da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutma
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -253,5 +253,5 @@ Listeden bir güncelleştirme seçtiğinizde, aşağıdaki tabloda gösterildiğ
 6.  Güncelleştirme hakkında anımsatma iletileri için **Tüm Güncelleştirmeler** sayfasının altındaki ayrıntılar bölmesini denetleyebilirsiniz.
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)

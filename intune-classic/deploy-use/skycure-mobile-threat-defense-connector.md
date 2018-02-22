@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51f26d630537901ad39a215062f820a2c243e077
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 096cd7f2f7895531b00d77c5d26413471fb9bbcf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense bağlayıcısı
 
@@ -43,7 +43,7 @@ Android veya iOS için Skycure mobil uygulaması dosya sistemi, ağ yığını, 
 
 Intune cihaz uyumluluğu ilkesi, Skycure risk değerlendirmesini temel alan bir Skycure mobil tehdit korumasına yönelik bir kural içerir. Bu kural etkinleştirildiğinde Intune, cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
 
-Cihaz uyumsuz bulunursa Exchange Online ve SharePoint Online gibi kaynaklara erişim engellenir. Engellenen cihazlardaki kullanıcılar Skycure mobil uygulamasından sorunu çözmek ve şirket kaynaklarına yeniden erişim kazanmak için yol gösteren yönergeler alır.
+Cihaz uyumsuz bulunursa Exchange Online ve SharePoint Online gibi kaynaklara erişimi engellenir. Engellenen cihazlardaki kullanıcılar Skycure mobil uygulamasından sorunu çözmek ve şirket kaynaklarına yeniden erişim kazanmak için yol gösteren yönergeler alır.
 
 Intune, Skycure ile iki tümleştirme modunu destekler:
 

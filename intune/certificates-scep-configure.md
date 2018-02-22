@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aea88aa8898380c54867090650bd16d8bf60f3c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve yönetme
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,7 +35,7 @@ Bu konuda, altyapınızın nasıl yapılandırılacağı ve ardından Intune ile
 -  **NDES Sunucusu**: Windows Server 2012 R2 veya üstünü çalıştıran bir sunucuya Ağ Cihazı Kayıt Hizmeti’ni (NDES) kurmalısınız. Intune, Kuruluş CA ile aynı sunucuda çalıştırılan NDES’nin kullanımını desteklemez. Windows Server 2012 R2’yi Ağ Cihazı Kayıt Hizmeti’ni barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](http://technet.microsoft.com/library/hh831498.aspx).
 NDES sunucusu CA’yı barındıran etki alanına katılmış olmalı ve CA ile aynı sunucuda yer almamalıdır. NDES sunucusunu ayrı bir ormanda, yalıtılmış ağda veya iç etki alanında dağıtma hakkında daha fazla bilgi, [Ağ Cihazı Kayıt Hizmeti ile İlke Modülü Kullanma](https://technet.microsoft.com/library/dn473016.aspx) başlığı altında bulunabilir.
 
--  **Microsoft Intune Sertifika Bağlayıcısı**: **Sertifika Bağlayıcısı** yükleyicisini (**ndesconnectorssetup.exe**) indirmek için Azure portalını kullanın. Ardından, Sertifika Bağlayıcısı'nı yüklemek istediğiniz bilgisayarda **ndesconnectorssetup.exe** dosyasını çalıştırabilirsiniz. 
+-  **Microsoft Intune Sertifika Bağlayıcısı**: **Sertifika Bağlayıcısı** yükleyicisini (**ndesconnectorssetup.exe**) indirmek için Azure portalını kullanın. Ardından, Sertifika Bağlayıcısı’nı yüklemeniz gereken Basit Sertifika Kayıt Protokolü (NDES) rolünü barındıran sunucuda **ndesconnectorssetup.exe** dosyasını çalıştırabilirsiniz. 
 -  **Web Uygulaması Ara Sunucusu** (isteğe bağlı): Web Uygulaması Ara Sunucusu (WAP) olarak Windows Server 2012 R2 veya üzerini çalıştıran bir sunucu kullanın. Bu yapılandırma:
     -  Cihazların bir İnternet bağlantısını kullanarak sertifikaları almasını sağlar.
     -  Cihazlar sertifikaları almak ve yenilemek için İnternet üzerinden bağlanıyorsa güvenlik açısından önerilir.
@@ -299,7 +299,7 @@ Bu görevde şunları yapacaksınız:
 Bu görevde şunları yapacaksınız:
 
 - Intune’da NDES desteğini etkinleştirme.
-- Ortamınızdaki bir sunucuda Sertifika Bağlayıcısı'nı indirme, yükleme ve yapılandırma. Yüksek kullanılabilirliği desteklemek için, farklı sunuculara birden çok Sertifika Bağlayıcısı yükleyebilirsiniz.
+- Basit Sertifika Kayıt Protokolü (NDES) rolünü barındıran sunucuda Sertifika Bağlayıcısı’nı indirin, yükleyin ve yapılandırın. Kuruluşunuzdaki NDES uygulamasının ölçeklenebilirliğini artırmak için istediğiniz sayıda NDES sunucusuna Microsoft Intune Sertifika Bağlayıcısı yükleyebilirsiniz.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Sertifika bağlayıcısını indirmek, yüklemek ve yapılandırmak için
 ![ConnectorDownload](./media/certificates-download-connector.png)   
@@ -309,7 +309,7 @@ Bu görevde şunları yapacaksınız:
 3. **Intune** dikey penceresinde **Cihaz Yapılandırması**’nı seçin.
 4. **Cihaz Yapılandırması** dikey penceresinde **Sertifika Yetkilisi**’ni seçin.
 5. **Ekle**'ye tıklayın ve **Bağlayıcı dosyasını indir**'i seçin. İndirilen dosyayı, onu yükleyeceğiniz sunucuda erişebileceğiniz bir konuma kaydedin. 
-6.  Yükleme tamamlandıktan sonra, indirilen yükleyiciyi (**ndesconnectorssetup.exe**) bir Windows Server 2012 R2 sunucusunda çalıştırın. Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. (CRP Web Hizmeti, CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.)
+6.  İndirme tamamlandıktan sonra Basit Sertifika Kayıt Protokolü (NDES) rolünü barındıran sunucuda indirilen yükleyiciyi (**ndesconnectorssetup.exe**) çalıştırın. Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. (CRP Web Hizmeti, CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.)
 
     > [!NOTE]
     > Tek başına Intune için NDES yüklediğinizde, CRP hizmeti Sertifika Bağlayıcısı ile otomatik olarak yüklenir. Intune’u Configuration Manager ile kullandığınızda, Sertifika Kayıt Noktası'nı ayrı bir site sistem rolü olarak yüklersiniz.

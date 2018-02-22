@@ -18,9 +18,9 @@
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
 - Windows 10 IoT Mobile Enterprise
-- Windows Holographic ve Windows Holographic Enterprise
+- Windows 10 Holographic for Business
 
-  Microsoft HoloLens cihazları yönetme hakkında bilgi için bkz. [MDM’de HoloLens’i kaydetme](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
+  Windows Holographic for Business çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [Window Holographic for Business desteği](../windows-holographic-for-business.md).
 
 - Windows Phone 8.1, Windows 8.1 RT, Windows 8.1 (Sürdürme modu) çalıştıran bilgisayarlar
 

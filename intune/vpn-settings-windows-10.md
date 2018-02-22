@@ -13,28 +13,31 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d126853051bb4a6c2f1ea6fbd54195ae06254b51
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’daki Windows 10 cihazlar için VPN ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden bazıları yapılandırılamayacaktır.
+Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden bazıları yapılandırılamaz.
+
+> [!NOTE]
+> Bu ayarlar, Windows Holographic for Business çalıştıran cihazlar için de geçerlidir.
 
 
 ## <a name="base-vpn-settings"></a>Temel VPN ayarları
 
 
 - **Bağlantı adı** - Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan son kullanıcılar bu adı görür.
-- **Sunucular** - Cihazların bağlanacağı bir veya birden çok VPN sunucusu ekleyin.
+- **Sunucular** - Cihazların bağlandığı bir veya birden çok VPN sunucusu ekleyin.
     - **Ekle** - Aşağıdaki bilgileri belirtebileceğiniz **Satır Ekle** dikey penceresini açar:
         - **Açıklama** - Sunucu için **Contoso VPN sunucusu** gibi açıklayıcı bir ad belirtin.
         - **IP adresi veya FQDN** - Cihazların bağlanacağı VPN sunucusunun IP adresini veya tam etki alanı adını sağlayın. Örnekler: **192.168.1.1**, **vpn.contoso.com**.
-        - **Varsayılan sunucu** - Bu sunucuyu cihazların bağlantı oluşturmak için kullanacağı varsayılan sunucu olarak etkinleştirir. Varsayılan sunucu olarak tek bir sunucu ayarladığınızdan emin olun.
+        - **Varsayılan sunucu** - Bu sunucuyu, cihazların bağlantı oluşturmak için kullandığı varsayılan sunucu olarak etkinleştirir. Varsayılan sunucu olarak tek bir sunucu ayarladığınızdan emin olun.
     - **İçeri aktar** - Açıklama, IP adresi veya FQDN, Varsayılan sunucu biçiminde virgülle ayrılmış bir sunucu listesi içeren bir dosyaya göz atın. Bunları **Sunucular** listesine içeri aktarmak için **Tamam**’ı seçin.
     - **Dışarı aktar** - Sunucu listesini virgülle ayrılmış değerler (csv) dosyasına aktarır.
 
@@ -80,7 +83,7 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 
 Özel XML komutları yazma hakkında daha fazla bilgi için her bir üreticinin VPN belgelerine başvurun.
 
-Özel EAP XML oluşturma hakkında daha fazla bilgi için bkz. [EAP yapılandırması](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration).
+Özel EAP XML oluşturma hakkında daha fazla bilgi için bkz. [EAP yapılandırması](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
 
 **Bölünmüş tünel** - Trafiğe bağlı olarak hangi bağlantının kullanılacağına cihazların karar vermesini sağlayan bu seçeneği **etkinleştirin** veya **devre dışı bırakın**. Örneğin, oteldeki bir kullanıcı çalışma dosyalarına erişmek için VPN bağlantısını, ama normal web’e göz atmak için otelin standart ağını kullanır.
 - **Bu VPN bağlantısının tünel oluşturma rotalarını ayırma** - Üçüncü taraf VPN sağlayıcıları için isteğe bağlı rotalar ekleyin. Hedef önekini ve her birinin önek boyutunu belirtin.
@@ -88,7 +91,7 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 ## <a name="apps-and-traffic-rules"></a>Uygulamalar ve Trafik Kuralları
 
 **VPN bağlantısını bu uygulamalarla kısıtlama** - Yalnızca belirttiğiniz uygulamaların VPN bağlantısını kullanmasını istiyorsanız bu seçeneği etkinleştirin.
-**İlişkili Uygulamalar** - VPN bağlantısını otomatik olarak kullanacak uygulamaların listesini sağlayın. Uygulamanın türü uygulama tanımlayıcısını belirler. Bir evrensel uygulama için paket aile adını belirtin. Bir masaüstü uygulaması için söz konusu uygulamanın dosya yolunu belirtin.
+**İlişkili Uygulamalar** - VPN bağlantısını otomatik olarak kullanan uygulamaların listesini sağlayın. Uygulamanın türü uygulama tanımlayıcısını belirler. Bir evrensel uygulama için paket aile adını belirtin. Bir masaüstü uygulaması için söz konusu uygulamanın dosya yolunu belirtin.
 
 >[!IMPORTANT]
 >Uygulama başına VPN yapılandırmasında kullanılması için derlediğiniz tüm uygulama listelerini güvenlik altına almanızı öneririz. Yetkisiz bir kullanıcı listenizde değişiklik yaparsa ve bunu uygulama başına VPN uygulama listesine aktarırsanız, erişimi olmaması gereken uygulamalara VPN erişimi yetkisi verme olasılığınız vardır. Uygulama listelerini güvenlik altına almanın yollarından biri, erişim denetim listesi (ACL) kullanmaktır.
@@ -117,7 +120,7 @@ Her sunucu için. şunları belirtin:
 ## <a name="proxy-settings"></a>Proxy ayarları
 
 - **Proxy ayarlarını otomatik olarak algıla** - VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, cihazların bağlantı ayarlarını otomatik olarak algılamasını isteyip istemediğinizi belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
-- **Otomatik yapılandırma betiği** - Proxy sunucusunu yapılandırmak için bir dosya kullanın. Yapılandırma dosyasını içeren **Proxy sunucu URL’si** (örneğin **http://proxy.contoso.com**) değerini girin.
+- **Otomatik yapılandırma betiği** - Proxy sunucusunu yapılandırmak için bir dosya kullanın. Yapılandırma dosyasını içeren **Proxy sunucu URL’si** (örneğin **http://proxy.contoso.com) değerini girin.
 - **Proxy sunucusu kullan** - Proxy sunucusu ayarlarını el ile girmek istiyorsanız bu seçeneği etkinleştirin.
     - **Adres** - Proxy sunucusu adresini (IP adresi olarak) girin.
     - **Bağlantı noktası numarası** - Proxy sunucusuyla ilişkilendirilmiş bağlantı noktası numarasını girin.

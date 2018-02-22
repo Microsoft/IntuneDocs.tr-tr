@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac18336efe36a5bed952ab3d89c7ae80e1fbbfc5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile Android uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -50,7 +50,7 @@ Aracı çalıştırmadan önce bkz. [Uygulama Sarmalama Aracını çalıştırma
     > [!NOTE]
     > Bazı durumlarda, Java’nın 32 bit sürümü bellek sorunlarına yol açabilir. 64-bit sürümü yüklemek iyi bir fikirdir.
 
-- Android tüm uygulama paketlerinin (.apk) imzalanmasını gerektirir. Mevcut sertifikaları **yeniden kullanma** hakkında bilgi ve imza sertifikaları rehberine ulaşmak için bkz. [İmza sertifikaları ve sarmalama uygulamalarını yeniden kullanma](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). Sarmalanan çıkış uygulamasını imzalamak için gereken **yeni** kimlik bilgilerini oluşturmak için yürütülebilir Java keytool.exe kullanılır. Ayarlanan parolaların güvenle saklanması gerekir ancak daha sonra Uygulama Sarmalama Aracını çalıştırırken gerekeceği için bu parolaları not alın.
+- Android tüm uygulama paketlerinin (.apk) imzalanmasını gerektirir. Mevcut sertifikaları **yeniden kullanma** hakkında bilgi ve imza sertifikaları rehberine ulaşmak için bkz. [İmza sertifikaları ve sarmalama uygulamalarını yeniden kullanma](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). Sarmalanan çıkış uygulamasını imzalamak için gereken **yeni** kimlik bilgilerini oluşturmak için yürütülebilir Java keytool.exe kullanılır. Ayarlanan parolaların güvenle saklanması gerekir ancak daha sonra Uygulama Sarmalama Aracını çalıştırırken gerekeceği için bu parolaları not alın.
 
 ## <a name="install-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını yükleme
 
@@ -119,7 +119,7 @@ Uygulamalarınızı yeniden sarmalamanız gereken ana senaryolar aşağıdaki gi
 * Android için Intune Uygulama Sarmalama Aracı uygulamasının hata düzeltmeleri veya yeni, belirli Intune uygulama koruma ilkesi özellikleri içeren yeni bir sürümü yayınlandı. Bu, [Android için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) için her 6-8 haftada bir GitHub deposundan gerçekleşir.
 
 Yeniden sarmalama için bazı en iyi uygulamalar şunlardır: 
-* Derleme işleminde kullanılan imzalama sertifikalarının bakımı, bkz. [İmzalama sertifikalarını yeniden kullanma ve uygulamaları sarmalama](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+* Derleme işleminde kullanılan imzalama sertifikalarının bakımı, bkz. [İmzalama sertifikalarını yeniden kullanma ve uygulamaları sarmalama](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>İmzalama sertifikalarını yeniden kullanma ve uygulamaları sarmalama
 Android cihazlara yüklenecek uygulamaların tamamının geçerli bir sertifika tarafından imzalanmış olması gerekir.
@@ -158,7 +158,7 @@ Aşağıdakiler; otomatik bir APP-WE hizmet kaydı (buna bu bölümde **varsayı
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK’sı ile çalışma
 Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulamalarına özgüdür.
 
-1. [Android için Intune SDK’sı kılavuzu](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)’nda açıklanan adımları kullanarak ADAL’ı yapılandırın.
+1. [Android için Intune SDK’sı kılavuzu](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)’nda açıklanan adımları kullanarak ADAL’ı yapılandırın.
 > [!NOTE] 
 > Uygulamanıza bağlanan “istemci kimliği” terimi, Azure portalından uygulamanıza bağlanan “uygulama kimliği” terimi ile aynı şeydir. 
 * SSO’yu etkinleştirmek için gereken şey “Yaygın ADAL yapılandırması” #2’dir.
@@ -174,4 +174,4 @@ Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri g
 ### <a name="see-also"></a>Ayrıca bkz:
 - [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](apps-prepare-mobile-application-management.md)
 
-- [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu](app-sdk-android.md)

@@ -3,10 +3,10 @@ title: "Microsoft Intune’a uygulama ekleme"
 titlesuffix: Azure portal
 description: "Bu yordamlar, uygulamalarınızı Intune’a kullanıcılara ve cihazlara atanmaya hazır durumda almanıza yardımcı olur. \""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f84adced59d2057cd4d18f05ff6953293f7c44cc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -33,6 +33,7 @@ Intune aşağıdaki uygulama türlerini eklemenize ve atamanıza izin verir:
 | Web’deki uygulamalar                           | Intune, cihaz giriş ekranında web uygulaması için bir kısayol oluşturur          | Uygulama güncelleştirmeleri otomatik olarak yapılır     |
 | Şirket içinde yazılan (iş kolu) uygulamalar  | Intune uygulamayı cihaza yükler (yükleme dosyasını siz sağlarsınız)    | Uygulamayı güncelleştirmeniz gerekir       |
 | Mağazadan uygulamalar                       | Intune uygulamayı cihaza yükler                                       | Uygulama güncelleştirmeleri otomatik olarak yapılır     |
+| Yerleşik uygulamalar                        | Intune uygulamayı cihaza yükler                                       | Uygulama güncelleştirmeleri otomatik olarak yapılır     |
 
 
 Web uygulamalarının yanı sıra Intune, mağaza uygulamaları ve LOB uygulamaları için aşağıdaki belirli platformları da destekler:
@@ -49,6 +50,7 @@ Web uygulamalarının yanı sıra Intune, mağaza uygulamaları ve LOB uygulamal
     - iOS iş kolu (LOB) uygulamaları
     - Windows Phone iş kolu (LOB) uygulamaları (.xap dosyaları)
     - Windows iş kolu (LOB) uygulamaları (yalnızca .msi dosyaları)
+- Yerleşik uygulamalar    
 
 >[!TIP]
 > İş kolu (LOB) uygulaması, bir uygulama yükleme dosyasından eklediğiniz bir uygulamadır. Örneğin bir iOS LOB uygulaması yüklemek için, **Uygulama ekle** dikey penceresinde **Uygulama türü** olarak **İş kolu uygulaması**’nı seçerek uygulamayı eklersiniz. Ardından uygulama paket dosyası uzantısını (.ipa) seçersiniz. Bu tür uygulamalar genellikle şirket içinde yazılanlardır.
@@ -147,4 +149,5 @@ Her platform için Intune’a uygulamaların nasıl eklendiğini öğrenmek içi
 - [Windows Mağazası uygulamaları](store-apps-windows.md)
 - [Windows LOB uygulaması](lob-apps-windows.md)
 - [ Windows 10 için Office 365 uygulamaları](apps-add-office365.md)
+- [Yerleşik uygulamalar](apps-add-built-in.md)
 

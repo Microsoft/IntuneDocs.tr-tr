@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97f9407c8ba93307059e44c8becf4f7a36c6861a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 940c4bc17face7ecef2b6888e199ba47073659ba
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -125,9 +125,11 @@ WIP ile korumak istediğiniz uygulamaları ekledikten sonra, **WIP Öğrenme** k
 
 ### <a name="before-you-begin"></a>Başlamadan önce
 
-WIP Öğrenme, WIP-bilinmeyen uygulamalarınızı izlemenize olanak tanıyan bir rapordur. Bilinmeyen uygulamalar, kuruluşunuzun BT departmanı tarafından dağıtılmayan uygulamalardır. "Blok" modunda WIP uygulamasını zorlamadan önce bu uygulamaları raporunuzdan dışa aktarabilir ve üretkenliğin kesintiye uğramaması için WIP ilkelerinize ekleyebilirsiniz.
+WIP Öğrenme, WIP etkin ve WIP bilinmeyen uygulamalarınızı izlemenize olanak tanıyan bir rapordur. Bilinmeyen uygulamalar, kuruluşunuzun BT departmanı tarafından dağıtılmayan uygulamalardır. "Blok" modunda WIP uygulamasını zorlamadan önce bu uygulamaları raporunuzdan dışa aktarabilir ve üretkenliğin kesintiye uğramaması için WIP ilkelerinize ekleyebilirsiniz.
 
-**Sessiz** veya **Geçersiz Kılmalara İzin Ver** ile başlayarak izin verilen uygulamalar listenizde doğru uygulamalar bulunduğunu küçük bir grupla doğrulamanızı öneririz. Bu denemeyi bitirdikten sonra, son uygulatma ilkenizi **Blok** olarak değiştirebilirsiniz.
+<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+
+WIP etkin ve WIP bilinmeyen uygulamalarla çalışırken, **Sessiz** veya **Geçersiz Kılmalara İzin Ver** ile başlayarak izin verilen uygulamalar listenizde doğru uygulamalar bulunduğunu küçük bir grupla doğrulamanızı öneririz. Bu denemeyi bitirdikten sonra, son uygulatma ilkenizi **Blok** olarak değiştirebilirsiniz.
 
 ### <a name="what-are-the-protection-modes"></a>Koruma modları nelerdir?
 

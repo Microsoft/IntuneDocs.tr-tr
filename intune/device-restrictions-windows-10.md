@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 ve üzeri cihaz kısıtlama ayarları
 
@@ -268,7 +268,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 
       - **Bir uygulamanın uygulama kullanıcı modeli kimliği (AUMID)** - Bilgi noktası uygulamasının AUMID’ini belirtir. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Birden çok uygulamalı bilgi noktaları, bilgi noktası yapılandırması gerektirir. **Ekle** düğmesini kullanarak bir bilgi noktası yapılandırması oluşturun veya mevcut bir taneyi seçin.
+    [Birden çok uygulamalı bilgi noktaları](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune), bilgi noktası yapılandırması gerektirir. **Ekle** düğmesini kullanarak bir bilgi noktası yapılandırması oluşturun veya mevcut bir taneyi seçin.
 
     Birden çok uygulamalı bilgi noktası yapılandırmaları, aşağıdaki ayarları içerir:
 

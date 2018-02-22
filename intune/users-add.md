@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ce84f51dcfb61ec16c78a6216135c2a7639657f
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Kullanıcı ekleme ve Intune'a yönetici izni verme
 
@@ -102,7 +102,7 @@ Kullanıcılara bir veya daha fazla yönetici izni atayın. Bu izinler, kullanı
 - **Kullanıcı yöneticisi** - (Office 365 ve Intune) Parolaları sıfırlar, hizmetin sistem durumunu izler, kullanıcı hesapları ekleyip siler ve hizmet isteklerini yönetir. Kullanıcı yönetimi yöneticisi bir genel yöneticiyi silemez, başka yönetici rolleri oluşturamaz veya diğer yöneticilerin parolalarını sıfırlayamaz.
 - **Intune Hizmet yöneticisi** - **Dizin Rolü** seçenekleriyle yönetici oluşturma izni hariç tüm Intune Genel yönetici izinlerine sahiptir.
 
-Microsoft Intune aboneliğinizi oluşturmak için kullandığınız hesap bir genel yöneticidir. Günlük yönetim görevleri için bir genel yönetici kullanmamanız önerilir. Bir yöneticinin Azure portalına erişmesi için Intune lisansı gerekmez. 
+Microsoft Intune aboneliğinizi oluşturmak için kullandığınız hesap bir genel yöneticidir. Günlük yönetim görevleri için bir genel yönetici kullanmamanız önerilir. Bir yöneticinin Azure portalında Intune’a erişmek için Intune lisansına ihtiyacı olmasa da, Exchance Hizmet Bağlayıcısını ayarlamak gibi belirli yönetim görevlerini yerine getirmek için bir Intune lisansı gereklidir. 
 
 Office 365 portalına erişmek için hesabınızın **Oturum açmaya izinli** olması gerekir. Erişime izin vermek için Azure portalındaki **Profil**’in altında **Oturum açmayı engelle**’yi **Hayır** olarak ayarlayın. Bu durum, aboneliğin lisansına sahip olmaktan farklıdır. Varsayılan olarak, tüm kullanıcı hesapları **İzin Verildi** durumundadır. Yönetici izinleri olmayan kullanıcılar Intune parolalarını sıfırlamak için Office 365 portalını kullanabilir.
 
