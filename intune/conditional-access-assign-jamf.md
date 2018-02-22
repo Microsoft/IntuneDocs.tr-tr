@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0844852aaa1e5833e0d5013ac9dea8862d7d752b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
 
@@ -66,6 +66,12 @@ Son kullanıcılar, cihazı Jamf Pro tarafından yönetilen bir cihaz olarak Azu
 2. Tetikleyici ve yürütme sıklığı da dahil olmak üzere **Microsoft Intune Tümleştirmesi** yükünü yapılandırın.
 3. **Kapsam** sekmesine tıklayın ve ilkeyi hedeflenen tüm cihazlara göre kapsamlaştırın.
 4. İlkeyi Jamf Self Servis'te sunmak için **Self Servis** sekmesine tıklayın. İlkeyi **Cihaz Uyumluluğu** kategorisine ekleyin. **Kaydet**'e tıklayın.
+
+## <a name="removing-a-jamf-managed-device-from-intune"></a>Jamf ile yönetilen bir cihazı Intune’dan kaldırma
+
+Jamf ile yönetilen bir cihazı Intune’dan kaldıramazsınız. Jamf ile yönetilen cihazları Jamf Pro’dan kaldırmanız gerekir, böylece bu cihazlar Intune’dan da kaldırılır. 
+
+Jamf ile yönetilen bir cihazı nasıl kaldıracağınızı [Jamf Pro belgelerinden](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information) öğrenin. Daha fazla yardım için [Jamf destek](https://www.jamf.com/support/) ekibine bir destek bileti de gönderebilirsiniz. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

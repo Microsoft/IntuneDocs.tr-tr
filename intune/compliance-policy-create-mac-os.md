@@ -1,25 +1,24 @@
 ---
 title: "MacOS için uyumluluk ilkesi oluşturma"
 titleSuffix: Azure portal
-description: "MacOS cihazlar için uyumluluk ilkesi oluşturmayı öğrenin.”"
+description: "MacOS cihazlar için uyumluluk ilkesi oluşturmayı öğrenin."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune ile macOS cihazlar için cihaz uyumluluk ilkesi oluşturma
 
@@ -33,27 +32,23 @@ Yeni bir cihaz uyumluluk ilkesi oluşturmadan önce Intune cihaz uyumluluk ilkes
 - Cihaz uyumluluk ilkeleri hakkında daha fazla bilgi için bkz. [cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance.md).
 
 > [!IMPORTANT]
-> Her platform için cihaz uyumluluk ilkeleri oluşturmanız gerekir. Intune cihaz uyumluluk ilkeleri, platform becerileridir. Bu beceriler ise MDM protokolüyle ortaya çıkan ayarlardır.
+> Her platform için cihaz uyumluluk ilkeleri oluşturmanız gerekir. Intune cihaz uyumluluk ilkeleri, platform işlevlerine bağlıdır. Bu işlevler ise MDM protokolüyle ortaya çıkan ayarlardır.
 
-Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır.
-
--------------------------------
+Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır:
 
 
-| **İlke ayarı** | **macOS 10.11 ve üzeri** |
+| İlke ayarı | macOS 10.11 ve üzeri |
 | --- | --- |
 | **PIN veya Parola yapılandırması** | Çözümlendi |   
 | **Cihaz şifrelemesi** | Çözümlendi (PIN ayarlanarak) |
 | **E-posta profili** | Karantinaya Alındı |
 |**En düşük işletim sistemi sürümü** | Karantinaya Alındı |
 | **En yüksek işletim sistemi sürümü** | Karantinaya Alındı |  
-| **Windows durum kanıtlama** | Geçerli değil |  
-----------------------------
 
 
 **Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)
 
-**Karantinaya alındı** = Cihazın işletim sistemi uyumluluğu mecbur kılmaz. (Örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz.) Cihazlar uyumsuz olduğunda, aşağıdaki işlemler yapılır:
+**Karantinaya alındı** = Cihazın işletim sistemi uyumluluğu mecbur kılmaz. (Örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz.) Cihaz uyumsuz olduğunda, aşağıdaki işlemler yapılır:
 
 - Kullanıcı için geçerli bir koşullu erişim ilkesi varsa cihaz engellenir.
 - Şirket portalı, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
@@ -74,23 +69,23 @@ Intune ile yeni bir cihaz uyumluluk ilkesi oluştururken, farklı kategorilerdek
 
 ### <a name="device-properties"></a>Cihaz özellikleri
 
-- **En düşük işletim sistemi sürümü** : Cihaz, en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Kullanıcı cihazını yükseltmeyi seçebilir. Bundan sonra, şirket kaynaklarına erişebilir.
+- **En düşük işletim sistemi sürümü** - Cihaz, en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Kullanıcı cihazını yükseltmeyi seçebilir. Bundan sonra, şirket kaynaklarına erişebilir.
 
-- **En yüksek işletim sistemi sürümü** : Cihaz, kuralda belirtilenin üzerinde bir işletim sistemi sürümünü kullandığında, cihazın şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
+- **En yüksek işletim sistemi sürümü** - Cihaz, kuralda belirtilenin üzerinde bir işletim sistemi sürümünü kullandığında, cihazın şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
 
 ### <a name="system-security-settings"></a>Sistem güvenliği ayarları
 
 #### <a name="password"></a>Parola
 
-- **Mobil cihazların kilidini açmak için parola gerektir** : Bunu **Gerektir** şeklinde ayarlayarak, kullanıcılardan cihazlarına erişebilmeleri için bir parola girmelerini isteyin.
+- **Mobil cihazların kilidini açmak için parola gerektir** - Bunu **Gerektir** şeklinde ayarlayarak, kullanıcılardan cihazlarına erişebilmeleri için bir parola girmelerini isteyin.
 
-- **Basit parolalar** : Bunu **Engelle** şeklinde ayarlayarak, kullanıcıların **1234** veya **1111** gibi basit parolalar oluşturmasının önüne geçin.
+- **Basit parolalar** - Bunu **Engelle** şeklinde ayarlayarak, kullanıcıların **1234** veya **1111** gibi basit parolalar oluşturmasının önüne geçin.
 
-- **Minimum parola uzunluğu**: Parolada bulunması gereken rakam veya karakter sayısı alt sınırını belirtin.
+- **Minimum parola uzunluğu** - Parolada bulunması gereken rakam veya karakter sayısı alt sınırını belirtin.
 
-- **Parola türü** : Kullanıcıların oluşturacağı parolanın **Alfasayısal** veya **Sayısal** parola olması gerektiğini belirtin.
+- **Parola türü** - Kullanıcıların oluşturacağı parolanın **Alfasayısal** veya **Sayısal** parola olması gerektiğini belirtin.
 
-- **Paroladaki alfasayısal olmayan karakter sayısı** : **Gerekli parola türü** **Alfasayısal** olarak ayarlandıysa bu ayarı kullanarak parolanın içermesi gereken karakter kümesi sayısı alt sınırını belirtin. 
+- **Paroladaki alfasayısal olmayan karakter sayısı** - **Gerekli parola türü** **Alfasayısal** olarak ayarlandıysa bu ayarı kullanarak parolanın içermesi gereken karakter kümesi sayısı alt sınırını belirtin. 
 
     > [!NOTE]
     > Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir.
@@ -98,14 +93,14 @@ Intune ile yeni bir cihaz uyumluluk ilkesi oluştururken, farklı kategorilerdek
     > [!IMPORTANT]
     > MacOS cihazlar için bu ayar, parolaya eklenmesi gereken özel karakterlerin (örneğin, **!** , **#**, **&amp;**) sayısını gösterir.
 
-- **Parola istenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** : Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi belirtin.
+- **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı** - Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi belirtin.
 
-- **Parola kullanım süresi (gün)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını (1-250 gün arasında) seçin.
+- **Parola kullanım süresi (gün)** - Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını (1-250 gün arasında) seçin.
 
-- **Yeniden kullanılması engellenen eski parola sayısı** : Önceki parolalardan kaç tanesinin yeniden kullanılamayacağını belirtin.
+- **Yeniden kullanılması engellenen eski parola sayısı** - Önceki parolalardan kaç tanesinin yeniden kullanılamayacağını belirtin.
 
     > [!IMPORTANT]
-    > Bir macOS cihazda parola gerekliliği değiştirildiğinde, kullanıcı parolasını değiştirene kadar bu değişiklik gerçekleşmez. Örneğin parola uzunluğu sekiz basamakla kısıtlıyken macOS cihazın 6 basamaklı bir parolası varsa, kullanıcı cihazda şifresini güncelleştirene kadar cihaz uyumlu kalır.
+    > Bir macOS cihazda parola gerekliliği değiştirildiğinde, kullanıcı parolasını değiştirene kadar bu değişiklik gerçekleşmez. Örneğin parola uzunluğu sekiz basamakla kısıtlıyken macOS cihazın altı basamaklı bir parolası varsa, kullanıcı cihazda şifresini güncelleştirene kadar cihaz uyumlu kalır.
 
 ## <a name="to-create-a-device-compliance-policy"></a>Cihaz uyumluluk ilkesi oluşturmak için
 
@@ -121,7 +116,7 @@ Intune ile yeni bir cihaz uyumluluk ilkesi oluştururken, farklı kategorilerdek
 
 6. **İlke Oluştur**’u seçin.
 
-7. Ad ve açıklama yazın, bu ilkenin uygulanmasını istediğiniz platformu seçin.
+7. Ad ve açıklama yazın ve bu ilkenin uygulanmasını istediğiniz platformu seçin.
 
 8. **MacOS uyumluluk ilkesi** dikey penceresi açılır; burada **Güvenlik**, **Cihaz sistem durumu** ve **Cihaz özelliği** uyumluluk ayarı kategorilerini seçerek ayarlarınızı belirtin.
 
@@ -142,7 +137,7 @@ Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkey
 4. Cihaz uyumluluk ilkesini gruplarınıza atamayı bitirdiğinizde **Atamalar** dikey penceresini kapatabilirsiniz.
 
     > [!TIP]
-    > Cihazlar, varsayılan olarak her 8 saatte bir uyumluluk denetimi yapar ancak kullanıcılar, Intune şirket portalı uygulaması aracılığıyla bu işlemi zorlayabilir.
+    > Cihazlar, varsayılan olarak her sekiz saatte bir uyumluluk denetimi yapar ancak kullanıcılar, Intune şirket portalı uygulaması aracılığıyla bu işlemi zorlayabilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

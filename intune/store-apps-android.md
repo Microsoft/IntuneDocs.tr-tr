@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,43 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eed5bc9fe478582a25284f4d3ea3ba0e7e0a1c7f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cdf00d8adc5a854f90b59c6066d6f0ab7c6ae94a
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Android mağazası uygulamalarını Microsoft Intune’a ekleme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Bir cihaza veya kullanıcı grubuna uygulama atamadan önce uygulamayı ilk olarak Microsoft Intune’a eklemeniz gerekir. Aşağıdaki adımlar, Azure portalından Intune’a bir Android mağaza uygulaması eklemeyi gösterir.
 
-1. Azure Portal’da oturum açın.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. Intune dikey penceresinde **Uygulamaları yönetme**’yi seçin.
-4. **Mobil uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
+3. **Microsoft Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
+4. **Mobil uygulamalar** iş yükündeki **Yönet** grubu altında **Uygulamalar**’ı seçin.
 5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
-6. **Uygulama Ekle** dikey penceresinde **Uygulama Bilgileri**’ni seçin.
-7. **Uygulamayı Düzenle** dikey penceresinde aşağıdaki bilgileri yapılandırın. Bitirdiğinizde, **Ekle**’ye tıklayın. Seçtiğiniz uygulamaya bağlı olarak, dikey penceredeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
-    - **Uygulama Adı** - Uygulamanın şirket portalında görüntülenecek olan adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa, uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
-    - **Uygulama Açıklaması** - Uygulama için bir açıklama girin. Bu, şirket portalında kullanıcılara görüntülenir.
+6. **Uygulama Ekle** dikey penceresinde kullanılabilir **Mağaza uygulaması** türlerinden **Android**’i seçin.
+7. **Yapılandır**’ı seçerek aşağıdaki uygulama bilgilerini yapılandırın. Seçtiğiniz uygulamaya bağlı olarak bu dikey penceredeki bazı değerler otomatik olarak doldurulmuş olabilir:
+    - **Ad** - Uygulamanın şirket portalında görüntülenecek olan adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa, uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
+    - **Açıklama** - Uygulama için bir açıklama girin. Bu açıklama, Şirket Portalı’nda kullanıcılara görüntülenir.
     - **Yayımcı** - Uygulamanın yayımcısının adını girin.
     - **Uygulama mağazası URL’si** - Oluşturmak istediğiniz uygulamanın uygulama mağazası URL’sini girin.
-    - **Minimum İşletim Sistemi** - Listeden uygulamanın yüklenebileceği minimum işletim sistemi sürümünü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
+    - **En Düşük İşletim Sistemi** - Listeden uygulamanın yüklenebileceği en düşük işletim sistemi sürümünü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
     - **Kategori (isteğe bağlı)** - Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Bu, kullanıcıların şirket portalına göz atarken uygulamaları daha kolay bulabilmesini sağlar.
     - **Bunu Şirket Portalı'nda öne çıkan uygulama olarak görüntüle** - Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
-    - **Bilgi URL’si** - İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Gizlilik URL’si**- İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Geliştirici** - İsteğe bağlı olarak, uygulama geliştiricinin adını girin.
-    - **Sahip** - İsteğe bağlı olarak, bu uygulamanın sahibi olarak **İK bölümü** gibi bir ad girin.
-    - **Notlar** - Bu uygulamayla ilişkilendirmek isteyebileceğiniz notları girin.
-    - **Simgeyi Karşıya Yükle** - Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek olan simgedir.
-8. İşiniz bittiğinde, **Uygulama Ekle** dikey penceresinde **Kaydet**’i seçin.
+    - **Bilgi URL’si** (isteğe bağlı) - Bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Gizlilik URL’si** (isteğe bağlı) - Bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Geliştirici** (isteğe bağlı) - Uygulama geliştiricisinin adını girin.
+    - **Sahip** (isteğe bağlı) - Bu uygulamanın sahibi olarak **İK departmanı** gibi bir ad girin.
+    - **Notlar** (isteğe bağlı) - Bu uygulamayla ilişkilendirmek isteyebileceğiniz notları girin.
+    - **Logo** - (isteğe bağlı) Uygulamayla ilişkilendirilecek simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
+8. Uygulama bilgilerini ayarlamayı bitirdiğinizde **Tamam**’a tıklayın.
+9. Uygulamayı eklemek için **Ekle**’ye tıklayın.
 
-Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
+Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. 
+
+##<a name="next-steps"></a>Sonraki adımlar
+
+- [Uygulamaları gruplara ekleme](apps-deploy.md)

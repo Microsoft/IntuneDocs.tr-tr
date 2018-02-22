@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune'da Windows 10 ve sonrası için Endpoint Protection ayarları
 
@@ -225,7 +225,9 @@ Exploit protection’ı etkinleştirmek için sistemi ve dilediğiniz uygulama r
 
 Windows Defender Uygulama Denetimi tarafından denetlenmesi gereken veya çalıştırılmasına güvenilen ek uygulamaları seçmek için **Uygulama denetimi kod bütünlüğü ilkeleri**’ni kullanın. Windows mağazasındaki Windows bileşenlerinin ve tüm uygulamaların çalıştırılmasına otomatik olarak güvenilir.
 
-Uygulamalar, “yalnızca denetimli” modunda çalıştırıldığında engellenmeyecektir. “Yalnızca denetim” modu, tüm olayları yerel istemci günlüklerine kaydeder.
+Uygulamalar, **yalnızca denetimli** modunda çalıştırıldığında engellenmeyecektir. **Yalnızca denetimli** modu, tüm olayları yerel istemci günlüklerine kaydeder.
+
+Uygulama Denetimi etkinleştirildiğinde, yalnızca modun **Zorla**’dan **Yalnızca denetimli**’ye değiştirilmesiyle devre dışı bırakılabilir. Modun **Zorla**’dan **Yapılandırılmadı**’ya değiştirilmesi, Uygulama Denetimi’nin atanmış cihazlarda zorlanmaya devam etmesiyle sonuçlanır.
 
 ## <a name="windows-defender-security-center"></a>Windows Defender Güvenlik Merkezi
 
