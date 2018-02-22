@@ -138,6 +138,8 @@
           href: groups-add.md
         - name: Lisans atayın
           href: licenses-assign.md
+        - name: Intune lisansları
+          href: licenses.md
         - name: MDM yetkilisini ayarlama
           href: mdm-authority-set.md
     - name: Cihazları kaydetme
@@ -194,6 +196,8 @@
           href: device-locate.md
         - name: iOS kayıp modunu etkinleştirme
           href: device-lost-mode.md
+        - name: iOS denetimli modunu açma
+          href: device-supervised-mode.md
         - name: Cihazı kilitleme
           href: device-remote-lock.md
         - name: Geçiş kodunu sıfırla
@@ -251,7 +255,7 @@
             - name: Web uygulamaları
               href: web-app.md
             - name: Yerleşik uygulamalar
-              href: apps-add-bulit-in.md
+              href: apps-add-built-in.md
         - name: Uygulama dağıtma
           href: apps-deploy.md
           items:
