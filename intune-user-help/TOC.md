@@ -104,7 +104,6 @@
 ## [macOS cihazınızı kullanma](using-your-macos-device-with-intune.md)
 ### [Bir macOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-cp.md)
-### [Eski macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-legacy.md)
 ### [macOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-macos.md)
 
 ### [macOS cihazındaki yaygın sorunları çözme](troubleshoot-your-device-macos.md)
@@ -140,6 +139,7 @@
 #### [Günlükleri Şirket Portalı uygulamasından gönderme](send-logs-to-your-it-admin-cp-windows.md)
 #### [Günlükleri Ayarlar uygulamasından gönderme](send-logs-to-your-it-admin-settings-windows.md)
 #### [Windows sürümüm henüz desteklenmiyor](your-windows-version-isnt-yet-supported.md)
+#### [Windows 10 cihazınıza Office 365 yükleme](install-office-windows.md)
 #### [Windows şifrelemeyi etkinleştirme](you-need-to-enable-windows-encryption.md)
 #### [Cihazımda kötü amaçlı yazılımdan koruma yazılımı olması gerekiyor](your-device-needs-antimalware-software.md)
 #### [Güvenli Önyüklemeyi Etkinleştirme](you-need-to-enable-secure-boot-windows.md)
