@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 111cbc1aa2dd9c537a7f5581d0dd6f2e75d8c7f3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1d9321838cdf7721410a1ba204dd02bd868dcd72
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihaz geçiş kodunuzu sıfırlama
 
@@ -57,7 +57,7 @@ Geçiş kodunuzu sıfırlamak için:
   > [!NOTE]
   > Android 7.0 ve üzerini kullanan cihazlarda geçiş kodunu sıfırlayamazsınız. Parolanızı unutursanız cihazı fabrika ayarlarına sıfırlamanız gerekir.
 
-  **iOS**: Geçiş kodunu kaldırır ve geçici bir geçiş kodu oluşturmaz. Cihazınızı açmak veya satın alma işlemleri         yapmak için Touch ID parmak izi tarayıcısını kullanıyorsanız, yeniden kurmanız gerekecektir.
+  **iOS**: Geçiş kodunu kaldırır ve geçici bir geçiş kodu oluşturmaz. Cihazınızı açmak veya satın alma işlemleri yapmak için Touch ID parmak izi tarayıcısını kullanıyorsanız, bunu yeniden kurmanız gerekecektir.
 
   **Windows 10 Mobile**: Mevcut geçiş kodunu kaldırır ve hem harfler hem de sayılarla geçici bir geçiş kodu oluşturur. Oturum açmak için Windows Hello yüz tanıma kullanıyorsanız, hala desteklenecektir.
     

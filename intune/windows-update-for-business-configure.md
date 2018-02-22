@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>Yazılım güncelleştirmelerini yönetme
 
@@ -45,8 +44,9 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 - Windows Update, Windows 10'un aşağıdaki sürümlerini destekler:
     - Windows 10
     - Windows 10 Team (Surface Hub cihazları için)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- Windows 10 Mobile ve Windows 10 Holographic çalıştıran cihazlar desteklenmez.
+ Windows 10 Mobile çalıştıran cihazlar desteklenmez.
 
 - Windows cihazlarında **Geri Bildirim ve Tanılama** > **Tanılama ve kullanım verileri** seçeneği, en az **Temel** olarak ayarlanmış olmalıdır.
 
@@ -89,8 +89,7 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
     Özellik Güncelleştirmeleri genellikle Windows’un yeni özellikleridir. **Bakım kanalı** ayarını yapılandırmanızın ardından (Yarı Yıllık Kanal (Hedefli) veya Yarı Yıllık Kanal), Microsoft tarafından Windows Update'te kullanıma sunulduktan sonra Özellik Güncelleştirmelerinin alınmasını ertelemek isteyip istemediğinizi ve ne kadar süreyle erteleyeceğinizi tanımlayabilirsiniz.
 
-    Örneğin:  
-    **Bakım kanalı Yarı Yıllık Kanal (Hedefli) olarak ayarlı ve erteleme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi Windows Update’te önce herkese açık şekilde ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. Cihaz bu güncelleştirmeyi Şubat ayına kadar (30 gün sonra) almaz.
+    Örneğin: **Bakım kanalı Yarı Yıllık Kanal (Hedefli) olarak ayarlı ve erteleme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi Windows Update’te önce herkese açık şekilde ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. Cihaz bu güncelleştirmeyi Şubat ayına kadar (30 gün sonra) almaz.
 
     **Bakım kanalı Yarı Yıllık Kanal olarak ayarlı ve erteleme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi Windows Update’te önce herkese açık şekilde ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. X Özellik Güncelleştirmesi, dört ay sonra nisanda Yarı Yıllık Kanal kapsamında yayımlanıyor. Cihaz, Özellik Güncelleştirmesini bu Yarı Yıllık Kanal sürümünden 30 gün sonra alır ve mayıs ayında güncelleştirilir.
 
@@ -154,3 +153,11 @@ Bir cihazın Özellik Güncelleştirmeleri veya Kalite Güncelleştirmeleri alma
 > [!IMPORTANT]
 > Bir duraklatma komutu verdiğinizde, cihazlar bu komutu hizmete bir sonraki giriş yaptıkları sırada alır. Bu nedenle, hizmete giriş yapmadan önce, zamanlanmış bir güncelleştirmenin yüklenmesi mümkündür.
 > Ayrıca, hedeflenen bir cihaz duraklatma komutunu verdiğiniz sırada kapalıysa bu cihaz açıldığında Intune’u denetlemeden önce, zamanlanmış güncelleştirmeleri indirip yükleyebilir.
+
+## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business Desteği
+
+Windows Holographic for Business, aşağıdaki ayarları destekler:
+
+- **Otomatik güncelleştirme davranışı**
+- **Microsoft ürün güncelleştirmeleri**
+- **Hizmet kanalı**

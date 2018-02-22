@@ -287,6 +287,26 @@
           items:
             - name: Uygulamaları seçmeli silme
               href: apps-selective-wipe.md
+            - name: Uygulama koruma ilkeleri kullanma
+              href: app-protection-policy.md
+              items:
+                - name: Uygulama koruma ilkeleri oluşturma
+                  href: app-protection-policies.md
+                  items:
+                    - name: Android ayarları
+                      href: app-protection-policy-settings-android.md
+                    - name: iOS ayarları
+                      href: app-protection-policy-settings-ios.md
+                - name: Uygulama koruma ilkelerini doğrulama
+                  href: app-protection-policies-validate.md
+                - name: Uygulama koruma kullanıcı durumunu izleme
+                  href: app-protection-policies-monitor.md
+                - name: WIP uygulama koruma ilkelerine hazırlanma
+                  href: app-protection-policies-configure-windows-10.md
+                - name: WIP uygulama koruma ilkelerini oluşturma ve atama
+                  href: windows-information-protection-policy-create.md
+                - name: iOS uygulamaları arasında veri aktarımını yönetme
+                  href: data-transfer-between-apps-manage-ios.md
     - name: Cihazları yapılandırma
       href: device-profiles.md
       items:
@@ -444,28 +464,8 @@
           href: conditional-access-integrate-jamf.md
         - name: Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
           href: conditional-access-assign-jamf.md
-    - name: Uygulama ve cihaz verilerini koruma
+    - name: Cihaz verilerini koruma
       items:
-        - name: Uygulama koruma ilkeleri kullanma
-          href: app-protection-policy.md
-          items:
-            - name: Uygulama koruma ilkeleri oluşturma
-              href: app-protection-policies.md
-              items:
-                - name: Android ayarları
-                  href: app-protection-policy-settings-android.md
-                - name: iOS ayarları
-                  href: app-protection-policy-settings-ios.md
-            - name: Uygulama koruma ilkelerini doğrulama
-              href: app-protection-policies-validate.md
-            - name: Uygulama koruma kullanıcı durumunu izleme
-              href: app-protection-policies-monitor.md
-            - name: WIP uygulama koruma ilkelerine hazırlanma
-              href: app-protection-policies-configure-windows-10.md
-            - name: WIP uygulama koruma ilkelerini oluşturma ve atama
-              href: windows-information-protection-policy-create.md
-            - name: iOS uygulamaları arasında veri aktarımını yönetme
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
@@ -651,6 +651,8 @@
           href: reports-proc-data-rest.md
         - name: Veri Ambarı API’si uç noktası
           href: reports-api-url.md
+        - name: Veri ambarı yalnızca kimlik doğrulama uygulaması
+          href: data-warehouse-app-only-auth.md
         - name: Veri Ambarı veri modeli
           href: reports-ref-data-model.md
           items:

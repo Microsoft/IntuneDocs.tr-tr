@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 161b0de7d697a4ed2d8f80dffdef71296eb6ced2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune’da Wi-Fi ayarlarını yapılandırma
 
@@ -33,6 +31,8 @@ Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcıla
 2. Profili, iOS cihazlarının tüm kullanıcılarını içeren bir gruba atayın.
 3. Kullanıcılar yeni Contoso Wi-Fi ağını cihazlarındaki kablosuz ağ listesinde bulur ve bu ağa kolayca bağlanabilir.
 
+## <a name="supported-device-platforms"></a>Desteklenen cihaz platformları
+
 Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
 - Android 4 ve üzeri
@@ -40,7 +40,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 - iOS 8.0 ve üzeri
 - macOS (Mac OS X 10.9 ve üzeri)
 
-Windows 8.1, Windows 10 ve Windows 10 Mobile çalıştıran cihazlar için, daha önce başka bir cihazdan dışarı aktarılmış olan bir Wi-Fi yapılandırmasını içeri aktarabilirsiniz.
+Windows 8.1, Windows 10, Windows 10 Mobile ve Windows Holographic for Business çalıştıran cihazlarda, daha önce başka bir cihazdan dışarı aktarılmış olan bir Wi-Fi yapılandırmasını içeri aktarabilirsiniz.
 
 Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapılandırmanın temellerini öğrenin ve sonra cihaza özgü bilgiler için her platformla ilgili olarak sağlanan konuları okuyun.
 
@@ -58,13 +58,22 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
     - **Android**
     - **macOS**
     - **Windows 8.1 ve üzeri (profili içeri aktarın)**
-6. **Profil** türü açılan listesinden **Wi-Fi temel** veya **Wi-Fi kurumsal**’ı seçin. Ağ adı ve SSID gibi temel özellikleri sağlamak için **Wi-Fi temel**’i kullanabilirsiniz. **Wi-Fi kurumsal**, Wi-Fi ağınız kullanıyorsa Genişletilebilir Kimlik Doğrulama Protokolü (EAP) gibi daha gelişmiş bilgileri sağlamanıza olanak tanır. **Wi-Fi içeri aktarma** (Windows 8.1 ve Windows 10 için), Wi-Fi ayarlarını daha önce başka cihazdan dışarı aktarmış olduğunuz bir XML dosyası olarak içeri aktarmanıza olanak tanır.
-7. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
+
+   > [!IMPORTANT]
+   > Windows Holographic for Business dahil olmak üzere Windows 10 çalıştıran cihazlar için bir profil oluşturuyorsanız, **Windows 8.1 ve üzeri** platformunu seçmeniz gerekir. **Windows 10 ve üzeri** platformu bir Wi-Fi profil türü içermez. 
+
+6. Apple ve Android cihazlarda, açılan **WiFi türü** listesinden **Temel** veya **Kurumsal** türlerinden birini seçin. Ağ adı ve SSID gibi temel özellikleri sağlamak için **Temel**’i kullanabilirsiniz. **Kurumsal**, Wi-Fi ağınız kullanıyorsa Genişletilebilir Kimlik Doğrulama Protokolü (EAP) gibi daha gelişmiş bilgileri sağlamanıza olanak tanır. 
+
+   **Wi-Fi içeri aktarma** profili (Windows 8.1 ve üzeri için), Wi-Fi ayarlarını daha önce başka cihazdan dışarı aktarmış olduğunuz bir XML dosyası olarak içeri aktarmanıza olanak tanır.
+1. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
     - [Android ve Android for Work ayarları](wi-fi-settings-android.md)
     - [iOS ayarları](wi-fi-settings-ios.md)
     - [macOS ayarları](wi-fi-settings-macos.md)
-    - [Windows Phone 8.1 ayarları](wi-fi-settings-import-windows-8-1.md)
-8. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
+    - [Windows 8.1 ve üzeri ayarları](wi-fi-settings-import-windows-8-1.md) (Windows Holographic for Business dahil)
+1. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
 
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
 Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).

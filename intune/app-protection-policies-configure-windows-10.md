@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3254adc66c5fd5dc991364c3a33aabef8ac2030b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma
 
@@ -50,7 +50,7 @@ Azure AD’de MAM sağlayıcısını ayarlayarak Windows 10 için mobil uygulama
     MAM hizmeti kayıt uç noktası URL'si. Kayıt uç noktası, cihazları MAM hizmetine yönetim için kaydetmek üzere kullanılır.
 
     **MAM uyumluluğu URL’si**  
-      MAM hizmeti uyumluluk uç noktası URL’si. Bir kullanıcının uyumlu olmayan bir cihazdaki kaynağa erişimi reddedilirse kullanıcıya uyumluluk URL’sine bir bağlantı gösterilir. Kullanıcılar, cihazlarının neden uyumlu olmadığını görmek isterse MAM hizmeti tarafından barındırılan bu URL’ye gidebilir. Kullanıcılar, cihazlarını uyumlu hale getirip kaynaklara erişmeye devam etmek için self servis düzeltme de başlatabilir.
+      MAM hizmeti uyumluluk uç noktası URL’si. Bir kullanıcının uyumlu olmayan bir cihazdaki kaynağa erişimi reddedilirse kullanıcıya uyumluluk URL’sine giden bir bağlantı gösterilir. Kullanıcılar, cihazlarının neden uyumlu olmadığını görmek isterse MAM hizmeti tarafından barındırılan bu URL’ye gidebilir. Kullanıcılar, cihazlarını uyumlu hale getirip kaynaklara erişmeye devam etmek için self servis düzeltme de başlatabilir.
 
 5.  **Kaydet**'e tıklayın.
 

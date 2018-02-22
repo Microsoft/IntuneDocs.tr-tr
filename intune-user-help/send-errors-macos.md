@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9859e13d8d1b39975d53bab159b204ef27560365
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0490f32629fb4ecbb6d66589c71cecce5172536
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Yönetilen macOS cihazınızla ilgili hataları doğru kişilere gönderme
 
@@ -41,6 +41,6 @@ ms.lasthandoff: 01/25/2018
 
 Şirket Portalı uygulaması, bazen beklenmedik şekilde davranabilir. Bunlar, uygulama geliştiricilerinin öğrenmek istedikleri sorunlardır. Çünkü böylece, uygulamanın size daha iyi hizmet vermesini ve garip davranışların bir daha tekrarlanmamasını sağlayabiliriz. Bu bilgiler, cihazınızda _tanılama raporu_ adlı özel bir belgede tutulur.
 
-Şirket Portalı uygulamasını geliştiren Microsoft ekibine tanılama raporları göndermeniz gerekiyorsa, sorunun kökenini tanılamaya çalışmak için bazı bilgiler sağlamalısınız. Bunu şirketinizin destek ekibine göndermek yerine, <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">bu e-posta şablonunu</a> kullanarak Microsoft'a gönderin.
+Şirket Portalı uygulamasını geliştiren Microsoft ekibine tanılama raporları göndermeniz gerekiyorsa, sorunun kök nedenini tanılamaya yardımcı olmak için bazı bilgiler sağlamalısınız. Bunu şirketinizin destek ekibine göndermek yerine, <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">bu e-posta şablonunu</a> kullanarak Microsoft'a gönderin.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

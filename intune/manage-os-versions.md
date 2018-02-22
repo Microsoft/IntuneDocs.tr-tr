@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: ede4be83b995bbb415184275c34f0e1b4feb4091
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78abef01e968b59b81a74dcd6b67df31dbf29def
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune ile işletim sistemi sürümlerini yönetme
 Modern mobil ve masaüstü platformlarda önemli güncelleştirmeler, düzeltme ekleri ve yeni sürümler sık sık yayınlanır. Windows üzerinde güncelleştirmeleri ve düzeltme eklerini yönetmek için tam denetiminiz olsa da iOS ve Android gibi diğer platformlarda son kullanıcılarınızın da bu işlemde yer alması gerekir.  Microsoft Intune, farklı platformlarda işletim sistemi sürümü yönetiminizi yapılandırmak için farklı işlevlere sahiptir.
@@ -35,7 +35,7 @@ Kuruluşlar, aşağıdaki ayarları kullanarak kuruluş kaynaklarına erişimi d
 1. Kuruluşunuzda son kullanıcıların geçerli ve desteklenen platformları kullanmasını sağlamak için en düşük işletim sistemi sürümünü kullanın. 
 2. En yüksek işletim sistemini belirtmeyin (sınırsız) veya yeni işletim sistemi sürümlerinin dahili olarak sınanmasına izin vermek için en son doğrulanmış sürüme ayarlayın.
 
-Ayrıntılar için bkz. [Cihaz türü kısıtlamaları ayarlama](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions).
+Ayrıntılar için bkz. [Cihaz türü kısıtlamaları ayarlama](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions).
  
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>İşletim sistemi sürüm raporlama ve Intune MDM cihaz uyumluluk ilkeleriyle uyumluluk
 Intune MDM cihaz uyumluluk ilkeleri size aşağıdaki araçları sağlar: 
@@ -50,7 +50,7 @@ Kayıt kısıtlamalarına benzer şekilde cihaz uyumluluk ilkeleri de en düşü
 ### <a name="in-practice"></a>Uygulama
 Kuruluşlar, cihaz uyumluluk ilkelerini kayıt kısıtlamaları ile aynı senaryolar için kullanır. Bu ilkeler kullanıcıların kuruluşunuzdaki geçerli, doğrulanmış işletim sistemlerini kullanmalarını sağlar. Son kullanıcı cihazları uyumsuz hale gelirse son kullanıcılar kuruluşunuzda desteklenen işletim sistemi aralığına dönene kadar kuruluş kaynaklarına erişim koşullu erişim aracılığıyla engellenebilir. Son kullanıcılar, uyumlu olmadıklarına dair bir ileti alır ve erişimi yeniden kazanmak için gerekli adımlar onlara sağlanır.   
 
-Ayrıntılar için bkz. [Cihaz uyumluluğuna başlama](https://docs.microsoft.com/en-us/intune/device-compliance-get-started).
+Ayrıntılar için bkz. [Cihaz uyumluluğuna başlama](https://docs.microsoft.com/intune/device-compliance-get-started).
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Intune uygulama koruma ilkelerini kullanarak işletim sistemi sürüm denetimleri    
 Intune uygulama koruma ilkeleri ve mobil uygulama yönetimi (MAM) erişim ayarları, uygulama katmanında en düşük işletim sistemi düzeyini belirtmenize imkan verir. Böylece son kullanıcılarınızın işletim sistemlerini belirtilen bir en düşük sürüme güncelleştirmelerini teşvik edebilir veya gerekli kılabilirsiniz.
@@ -82,6 +82,6 @@ Belirlediğiniz zaman çizelgesi içinde kuruluşunuzu yeni bir işletim sistemi
 ## <a name="next-steps"></a>Sonraki adımlar
 Kuruluşunuzda işletim sistemi sürümlerini yönetmek için aşağıdaki kaynakları kullanın: 
 
-- [Cihaz türü kısıtlamalarını ayarlama](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)
-- [Cihaz uyumluluğuna başlama](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)
+- [Cihaz türü kısıtlamalarını ayarlama](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [Cihaz uyumluluğuna başlama](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [Uygulama koruma ilkeleri oluşturma ve atama](https://docs.microsoft.com/intune/app-protection-policies)

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: c076bc52495d1b74a18e1d655376b6183dc5fe16
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator ile iOS cihazlarını kaydetme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>Geçici kullanıcı arabirimi farklılıkları
+>
+>Bu sayfada açıklanan özellikler için kullanıcı arabirimleri, güncelleştirilme sürecindedir. Bu güncelleştirmeler, Nisan sonunda tüm kullanıcı hesaplarına sunulacaktır.
+>
+>**Cihaz kaydı** sayfanız aşağıdaki görüntüdeki gibi görünüyorsa hesabınız henüz yeni kullanıcı arabirimine güncelleştirilmemiştir ve bu yardım sayfasını kullanabilirsiniz.
+>
+>![Eski kullanıcı arabirimi](./media/appleenroll-oldui.png)
+>
+>**Cihaz kaydı** sayfanız aşağıdaki görüntüdeki gibi görünüyorsa güncelleştirilmiş kullanıcı arabirimini kullanıyorsunuzdur.  [Bu yardım sayfasına](apple-configurator-enroll-ios-newui.md) gidin.
+>
+>![Yeni kullanıcı arabirimi](./media/appleenroll-newui.png)
 
 Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) kullanarak iOS cihazlarının kaydedilmesini destekler. Apple Configurator ile kaydetme işlemi, kurumsal kaydı ayarlamak için her iOS cihazını bir Mac bilgisayara USB ile bağlamanızı gerektirir. Apple Configurator ile Intune'a cihazları iki yolla kaydedebilirsiniz:
 - **Kurulum Yardımcısı kaydı** - Cihazı fabrika ayarlarına sıfırlar ve Kurulum Yardımcısı sırasında kayda hazırlar.

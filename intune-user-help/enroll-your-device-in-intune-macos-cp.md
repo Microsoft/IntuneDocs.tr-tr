@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0da2ba5d842a004f167a4bbeca62d4b00f756612
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4f01a5aa9567ea914da2c36756e8c3f12f55c58d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
@@ -34,7 +34,7 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişmek; işinizi y
 
 2. İş veya okul hesabınızla Şirket Portalı web sitesinde oturum açın.
 
-[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
 3. Oturum açtıktan sonra sayfanın sol üst köşesindeki **Menü**’ye tıklayın ve **Cihazlarım**’ı seçin.
 
@@ -59,7 +59,7 @@ Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişmek; işinizi y
 
 9. Şirket Portalı uygulamasında ilk gördüğünüz ekran, sizden Şirket Portalı web sitesinde oturum açmak için kullandığınız iş veya okul hesabıyla **oturum açmanızı** isteyecektir.
 
-10. Şirket Portalı, hesap bilgilerinizi onaylar ve daha sonra **Cihaz Kaydı** ve **Cihaz Uyumluluğu** durumunuzu gösterir. Mac’inizi iş için kullanmanın güvenli olduğundan emin olmanız için gerçekleştirmeniz gereken eylemler olduğunu işaret eden bazı sarı üçgenler görürsünüz. [Cihazınızı yönetime kaydetmeye](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) başlamak için **Başla**’ya tıklayın.
+10. Şirket Portalı, hesap bilgilerinizi onaylar ve daha sonra **Cihaz Kaydı** ve **Cihaz Uyumluluğu** durumunuzu gösterir. Mac’inizi iş için kullanmanın güvenli olduğundan emin olmanız adına gerçekleştirmeniz gereken eylemler olduğunu işaret eden bazı sarı üçgenler görürsünüz. [Cihazınızı yönetime kaydetmeye](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) başlamak için **Başla**’ya tıklayın.
 
 11. Mac’iniz yönetime kaydedilmeye başlar. Bu sırada bilgisayarınızın oturum açma bilgilerini sağlamanız istenebilir. Bu kayıt birkaç dakika sürebilir. Bu süre boyunca bilgisayarınızda başka şeyler yapabilirsiniz. Şirket Portalı Kurulumu tamamlandıktan sonra işiniz bittiğine dair bir ileti alırsınız.
 

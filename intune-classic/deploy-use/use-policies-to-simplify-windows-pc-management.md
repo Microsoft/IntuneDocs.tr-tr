@@ -14,11 +14,11 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d67bf344be7a20853e21cf580939f1156d1a723
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: dc32063a952b198e830f061e0d8d3c0598a631d8
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma
 
@@ -52,13 +52,13 @@ Microsoft Intune Center, tüm yönetilen bilgisayarlarda yüklüdür. Intune ilk
 
 Windows bilgisayarlarda yapılandırabileceğiniz ilkeler ve ayarlar hakkında bilgi için aşağıdaki kaynaklara bakın:
 
-- [Microsoft Intune'da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - Bu ilkeler yönetilen bilgisayarların Microsoft ve üçüncü taraf yazılım güncelleştirmelerini denetlemesini ve indirmesini sağlar. Bu güncelleştirmeler, işletim sistemi yükseltmelerini (Windows 7’den Windows 10’a yükseltme veya bir Windows 10 sürümünden sonraki bir sürüme yükseltme gibi) kapsamaz.
+- [Microsoft Intune’da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutun](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - Bu ilkeler, yönetilen bilgisayarların Microsoft ve üçüncü taraf yazılım güncelleştirmelerini denetlemesini ve indirmesini sağlar. Bu güncelleştirmeler, işletim sistemi yükseltmelerini (Windows 7’den Windows 10’a yükseltme veya bir Windows 10 sürümünden sonraki bir sürüme yükseltme gibi) kapsamaz.
 
 - [Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) - Bu ayarlar zamanlanmış taramaları ve kötü amaçlı yazılım algılandığında yapılacak işlemleri içerebilir.
 
 - [Microsoft Intune’da Windows Güvenlik Duvarı ilkelerini kullanarak Windows bilgisayarlarının korunmasına yardımcı olma](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - Bu ilkeler, yönetilen bilgisayarlarda Windows Güvenlik Duvarı ayarlarını yönetmeyi kolay hale getirir.
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 
 [Intune yazılım istemcisi ile genel Windows bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -150,3 +150,4 @@
 #### [Windows Defender'ı etkinleştirmek istiyorum](turn-on-defender-windows.md)
 
 ## [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
+### [Cihazlarınızı uzaktan kilitleme](remote-lock-your-device-cpwebsite.md)
