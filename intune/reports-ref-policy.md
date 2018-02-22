@@ -5,20 +5,19 @@ keywords: "Intune Veri Ambarı"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b3178b8469b5c92e4124ab00f9a635e63568d77
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 
@@ -51,7 +50,7 @@ ms.lasthandoff: 01/25/2018
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
 | PolicyTypeId |İlkenin kaynak sistemindeki benzersiz tanımlayıcısı. |123 |
-| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1 |
+| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1. |
 | PolicyTypeName |İlke türünün adı. |Windows 10 Uyumluluk ilkesi. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
@@ -66,9 +65,9 @@ ms.lasthandoff: 01/25/2018
 | Hata |Hata durumundaki benzersiz cihazların sayısı. |10 |
 | Başarısız |Başarısız durumundaki benzersiz cihazların sayısı. |2 |
 
-## <a name="userconfiguration"></a>UserConfiguration
 
-**UserConfigurationProfileDeviceActivity** varlığı, başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısını listeler. Bu sayı, varlığa atanmış Cihaz Yapılandırma Profillerini gösterir. Örneğin, bir kullanıcı kendisine atanan tüm ilkeler için başarılı durumunda ise ilgili gün için başarılı sayacı bir artar. Bir kullanıcıya biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa, kullanıcıyı hata durumunda olarak değerlendiririz.  **UserConfigurationProfileDeviceActivity** varlığı, son 30 gün içindeki belirli bir gün için kaç kullanıcının hangi durumda olduğunu listeler.
+
+**DeviceConfigurationProfileUserActivity** varlığı; başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısını listeler. Bu sayı, varlığa atanmış Cihaz Yapılandırma Profillerini gösterir. Örneğin, bir kullanıcı kendisine atanan tüm ilkeler için başarılı durumunda ise ilgili gün için başarılı sayacı bir artar. Bir kullanıcıya biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa, kullanıcı hata durumunda olarak değerlendirilir.  **DeviceConfigurationProfileUserActivity** varlığı, son 30 gün içindeki belirli bir gün için kaç kullanıcının hangi durumda olduğunu listeler.
 
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
@@ -90,4 +89,77 @@ ms.lasthandoff: 01/25/2018
 | Bekleniyor |Bekleme durumundaki benzersiz cihazların sayısı. |123 |
 | Başarılı |Başarı durumundaki benzersiz cihazların sayısı. |12 |
 | Hata |Hata durumundaki benzersiz cihazların sayısı. |10 |
-| Başarısız- |Başarısız durumundaki benzersiz cihazların sayısı. |2 |
+| Başarısız |Başarısız durumundaki benzersiz cihazların sayısı. |2 |
+
+## <a name="compliance-policy"></a>Uyumluluk İlkesi
+
+Uyumluluk İlkesi API’si, cihazlara atanmış uyumluluk ilkeleriyle ilgili durum bilgisi içeren varlıklar barındırır.
+
+### <a name="compliancepolicystatusdeviceactivities"></a>CompliancePolicyStatusDeviceActivities
+
+Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu özetler. Ve her bir uyumluluk durumunda bulunan cihaz sayısını listeler.
+
+
+|Özellik     |Description  |Örnek  |
+|---------|---------|---------|
+|DateKey  |Uyumluluk ilkesi için özetin oluşturulduğu tarihin anahtarı.|20161204 |
+|Bilinmiyor  |Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı. |5|
+|NotApplicable      |Yönetici tarafından hedeflenen cihaz uyumluluk ilkelerinin uygulanabilir olmadığı cihaz sayısı.|201 |
+|Uyumlu      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesini başarıyla uygulayan cihaz sayısı. |4083 |
+|InGracePeriod      |Uyumlu olmayan ancak yönetici tarafından belirlenen mehil süresinde olan cihaz sayısı. |57|
+|NonCompliant      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamayan veya kullanıcısı yönetici tarafından hedeflenen ilkeler ile uyum sağlayamayan cihaz sayısı.|43 |
+|Hata      |Intune veya Azure AD ile iletişim kuramayan ve hata iletisi veren cihaz sayısı. |3|
+
+### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
+
+Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başına ve ilke türü başına olacak şekilde özetler. Ve her atanmış uyumluluk ilkesi için her bir uyumluluk durumunda bulunan cihaz sayısını listeler.
+
+
+
+|Özellik  |Description  |Örnek  |
+|---------|---------|---------|
+|DateKey  |Uyumluluk ilkesi için özetin oluşturulduğu tarihin anahtarı.|20161219|
+|PolicyKey     |Özetin oluşturulduğu uyumluluk ilkesi için anahtar. |10178 |
+|PolicyPlatformKey      |Özetin oluşturulduğu uyumluluk ilkesinin platform türü için anahtar.|5|
+|Bilinmiyor     |Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı.|13|
+|NotApplicable     |Yönetici tarafından hedeflenen cihaz uyumluluk ilkelerinin uygulanabilir olmadığı cihaz sayısı.|3|
+|Uyumlu      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesini başarıyla uygulayan cihaz sayısı. |45|
+|InGracePeriod      |Uyumlu olmayan ancak yönetici tarafından belirlenen mehil süresinde olan cihaz sayısı. |3|
+|NonCompliant      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamayan veya kullanıcısı yönetici tarafından hedeflenen ilkeler ile uyum sağlayamayan cihaz sayısı.|7|
+|Hata      |Intune veya Azure AD ile iletişim kuramayan ve hata iletisi veren cihaz sayısı. |3|
+
+### <a name="policyplatformtypes"></a>PolicyPlatformTypes
+
+Aşağıdaki tablo, tüm atanmış ilkelerin platform türlerini içerir. Hiçbir cihaza atanmamış ilkelerin platform türleri bu tabloda yer almamaktadır.
+
+
+|Özellik  |Description  |Örnek  |
+|---------|---------|---------|
+|PolicyPlatformTypeKey      |İlke platform türü için benzersiz anahtar. |20170519 |
+|PolicyPlatformTypeId      |İlke platform türü için benzersiz tanımlayıcı.|1.|
+|PolicyPlatformTypeName      |İlke platform türünün adı.|AndroidForWork |
+
+### <a name="policydeviceactivity"></a>PolicyDeviceActivity
+
+Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki cihazların günlük sayısını listeler. Bu sayı, İlke Türü profillerindeki verileri yansıtır. Örneğin, bir cihaz kendisine atanan tüm ilkeler için başarılı durumunda ise ilgili gün için başarılı sayacı bir artar. Cihaza biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa varlık, başarılı sayacını artırır ve cihazı hata durumuna geçirir. PolicyDeviceActivity varlığı, son 30 gün içindeki belirli bir gün için kaç cihazın hangi durumda olduğunu listeler.
+
+|Özellik  |Description  |Örnek  |
+|---------|---------|---------|
+|DateKey|Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı.|20160703|
+|Bekleniyor|Bekleme durumundaki benzersiz cihazların sayısı.|123|
+|Başarılı|Başarı durumundaki benzersiz cihazların sayısı.|12|
+PolicyKey|İlke Anahtarı, İlke ile birleştirilerek ilke adı elde edilebilir.|Windows 10 temel|
+|Hata|Hata durumundaki benzersiz cihazların sayısı.|10|
+|Başarısız|Başarısız durumundaki benzersiz cihazların sayısı.|2|
+
+### <a name="policyuseractivity"></a>PolicyUserActivity 
+
+Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısını listeler. Bu sayı, İlke Türü profillerindeki verileri yansıtır. Örneğin, bir kullanıcı kendisine atanan tüm ilkeler için başarılı durumunda ise ilgili gün için başarılı sayacı bir artar. Bir kullanıcıya biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa, kullanıcı hata durumunda olarak değerlendirilir. PolicyUserActivity varlığı, son 30 gün içindeki belirli bir gün için kaç kullanıcının hangi durumda olduğunu listeler.
+
+|Özellik  |Description  |Örnek  |
+|---------|---------|---------|
+|DateKey|Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı.|20160703|
+|Bekleniyor|Bekleme durumundaki benzersiz cihazların sayısı.|123|
+|Başarılı|Başarı durumundaki benzersiz cihazların sayısı.|12|
+PolicyKey|İlke Anahtarı, İlke ile birleştirilerek ilke adı elde edilebilir.|Windows 10 temel|
+|Hata|Hata durumundaki benzersiz cihazların sayısı.|10|

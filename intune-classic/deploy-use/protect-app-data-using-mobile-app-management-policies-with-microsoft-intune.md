@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune ile uygulama koruma ilkelerini kullanarak uygulama verilerini koruma
 
@@ -57,9 +57,7 @@ MDM'yi uygulama koruma ilkeleriyle kullanmanın başka avantajları da vardır v
 - **Uygulama koruma ilkeleri, uygulama katmanındaki korumaların etkin olmasını sağlar.** Örneğin, bir uygulamanın iş bağlamında açılması için PIN gerektiren, uygulamalar arasında veri paylaşılmasını engelleyen ve şirket uygulama verilerinin kişisel bir depolama konumuna kaydedilmesini engelleyen bir ilkeniz olabilir.
 
 ## <a name="devices-that-support-mam"></a>MAM'ı destekleyen cihazlar
-Uygulama koruma ilkeleri şu anda aşağıdakilerde desteklenmektedir:
--   iOS 8.1 veya üzeri
--   Android 4 veya üzeri
+Intune uygulama koruma ilkeleri platformu desteği, Office uygulama platformu desteği ile uyumludur. Ayrıntılar için bkz. [Office Sistem Gereksinimleri](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >Windows cihazları, kayıt senaryoları olmadan MAM’de desteklenmez. Ancak, Windows 10 cihazlarını Intune'a kaydettiğinizde, benzer bir işlevsellik sunan Windows Bilgi Koruması’nı kullanabilirsiniz. Ayrıntılar için bkz. [Windows Bilgi Koruması’nı (WIP) kullanarak kurumsal verilerinizi koruma](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
@@ -132,4 +130,4 @@ Uygulama koruma ilkeleri uygulamalar yalnızca iş bağlamında kullanılırken 
 ##  <a name="next-steps"></a>Sonraki adımlar
 - [Uygulama koruma ilkelerini yapılandırmaya hazırlanın](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-- [Microsoft Intune ile uygulama koruma ilkeleri oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+- [Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
