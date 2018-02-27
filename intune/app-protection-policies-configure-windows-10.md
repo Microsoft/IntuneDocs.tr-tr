@@ -3,10 +3,10 @@ title: "Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma"
 titlesuffix: Azure portal
 description: "Azure AD’de mobil uygulama yönetimi (MAM) sağlayıcısı kurma"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 5514ea423f67e5bc824b4ee947f630c7f1b43d8f
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma
 
@@ -40,17 +40,17 @@ Azure AD’de MAM sağlayıcısını ayarlayarak Windows 10 için mobil uygulama
 
 4. **Yapılandır** dikey penceresinde **Varsayılan MAM URL’lerini geri yükle** grubundaki ayarları yapılandırın.
 
-    **MAM kullanıcı kapsamı**  
-      Çalışanlarınızın Windows cihazlarındaki kurumsal verileri yönetmek için MAM otomatik kaydı kullanın. MAM otomatik kayıt, kendi cihazını getir senaryoları için yapılandırılacaktır.<ul><li>**Yok.**<br>Tüm kullanıcıların MAM’a kayıt olup olamayacağını seçin.</li><li>**Bazı**<br>MAM’a kayıt olacak kullanıcıları içeren Azure AD gruplarını seçin.</li><li>**Tümü**<br>Tüm kullanıcıların MAM’a kayıt olup olamayacağını seçin.</li></ul>
+   **MAM kullanıcı kapsamı**  
+   Çalışanlarınızın Windows cihazlarındaki kurumsal verileri yönetmek için MAM otomatik kaydı kullanın. MAM otomatik kayıt, kendi cihazını getir senaryoları için yapılandırılacaktır.<ul><li>**Yok.**<br>Tüm kullanıcıların MAM’a kayıt olup olamayacağını seçin.</li><li>**Bazı**<br>MAM’a kayıt olacak kullanıcıları içeren Azure AD gruplarını seçin.</li><li>**Tümü**<br>Tüm kullanıcıların MAM’a kayıt olup olamayacağını seçin.</li></ul>
 
-    **MDM kullanım koşulları URL’si**  
-     MAM hizmeti uç noktasının kullanım koşulları URL’si. Uç nokta kullanım koşulları, son kullanıcılar cihazlarını yönetime kaydetmeden önce kullanım koşullarını göstermek için kullanılır. Kullanım koşulları metni, mobil cihazda zorlanan ilkeler hakkında kullanıcıyı bilgilendirir.
+   **MDM kullanım koşulları URL’si**  
+   MAM kullanım koşulları URL’si Microsoft Intune’da desteklenmez. Koruma ilkelerinin uygulanması için bu giriş kutusu boş bırakılmalıdır.
 
-    **MDM bulma URL’si**  
-    MAM hizmeti kayıt uç noktası URL'si. Kayıt uç noktası, cihazları MAM hizmetine yönetim için kaydetmek üzere kullanılır.
+   **MDM bulma URL’si**  
+   MAM hizmeti kayıt uç noktası URL'si. Kayıt uç noktası, cihazları MAM hizmetine yönetim için kaydetmek üzere kullanılır.
 
-    **MAM uyumluluğu URL’si**  
-      MAM hizmeti uyumluluk uç noktası URL’si. Bir kullanıcının uyumlu olmayan bir cihazdaki kaynağa erişimi reddedilirse kullanıcıya uyumluluk URL’sine giden bir bağlantı gösterilir. Kullanıcılar, cihazlarının neden uyumlu olmadığını görmek isterse MAM hizmeti tarafından barındırılan bu URL’ye gidebilir. Kullanıcılar, cihazlarını uyumlu hale getirip kaynaklara erişmeye devam etmek için self servis düzeltme de başlatabilir.
+   **MAM uyumluluğu URL’si**  
+   MAM uyumluluk URL’si Microsoft Intune’da desteklenmez. Koruma ilkelerinin uygulanması için bu giriş kutusu boş bırakılmalıdır. 
 
 5.  **Kaydet**'e tıklayın.
 

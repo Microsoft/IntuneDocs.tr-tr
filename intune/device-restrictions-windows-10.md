@@ -1,24 +1,23 @@
 ---
 title: "Windows 10 için Intune cihaz kısıtlama ayarları"
 titlesuffix: Azure portal
-description: "Windows 10 cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
+description: "Windows 10 cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 ve üzeri cihaz kısıtlama ayarları
 
@@ -28,6 +27,8 @@ ms.lasthandoff: 02/09/2018
 - **Ekran yakalama (yalnızca mobil)** - Kullanıcının cihaz ekranını resim olarak yakalamasına olanak sağlar.
 - **Kopyala ve yapıştır (yalnızca mobil)** - Cihazda uygulamalar arasında kopyalama ve yapıştırma eylemlerine izin verin.
 - **El ile kayıt kaldırma** - Kullanıcının iş yeri hesabını cihazdan el ile silmesine olanak sağlar.
+   - Cihaz Azure Active Directory’ye katılmışsa ve otomatik kayıt etkinse, bu ilke ayarı uygulanmaz. 
+   - Bu ilke ayarı, Windows 10 Home çalıştıran bilgisayarlara uygulanmaz.
 - **Elle kök sertifika yüklemesi (yalnızca mobil)** - Kullanıcının elle kök sertifikaları ve ara CAP sertifikaları yüklemesini engeller.
 - **Tanılama verileri gönderme** - Olası değerler şunlardır:
     - **Hiçbiri** - Microsoft’a hiç veri gönderilmez
@@ -68,7 +69,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
 ## <a name="personalization"></a>Kişiselleştirme
 
-- **Masaüstü arka plan resmi URL'si (Yalnızca masaüstü)** - Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz PNG, JPG veya JPEG biçiminde bir resmin URL'sini belirtin. Kullanıcılar bunu değiştiremez.
+- **Masaüstü arka plan resmi URL’si (Yalnızca masaüstü)** - Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz JPEG biçiminde bir resmin URL’sini belirtin. Kullanıcılar bunu değiştiremez.
 
 ## <a name="privacy"></a>Gizlilik
 

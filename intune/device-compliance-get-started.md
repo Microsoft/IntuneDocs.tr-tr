@@ -3,23 +3,21 @@ title: Intune cihaz uyumluluk ilkeleri
 titleSuffix: Azure portal
 description: "Microsoft Intune’da cihaz uyumluluğunu öğrenmek için bu konuyu kullanın\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 07/18/2017
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f4a9f70762c3d30a49a686bcf1cfa9de4851b6c
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Intune cihaz uyumluluk ilkelerini kullanmaya başlama
 
@@ -101,7 +99,61 @@ Intune’da cihaz uyumluluk ilkeleri kullanmak için aşağıdaki hizmetlere abo
 
 Bir cihaz Intune’a kaydedildiğinde Azure AD kayıt işlemi gerçekleşir. Bu işlem, Azure AD’de cihazın özniteliklerini güncelleştirerek daha fazla bilgi ekler. En önemli bilgilerden biri, koşullu erişim ilkelerinin e-posta veya diğer şirket kaynaklarına erişimi denetlemek için kullandığı cihaz uyumluluk durumu bilgisidir.
 
-- [Azure AD kayıt işlemi](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview) hakkında daha fazla bilgi edinin.
+- [Azure AD kayıt işlemi](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) hakkında daha fazla bilgi edinin.
+
+### <a name="assigning-a-resulting-device-configuration-profile-status"></a>Tek bir cihaz yapılandırma profili durumu atama
+
+Bir cihaza atanmış birden fazla yapılandırma profili varsa ve cihazın bu atanmış yapılandırma profillerinden iki veya daha fazlası için farklı uyumluluk durumları varsa, cihaza tek bir uyumluluk durumu atanması gerekir. Bu atama, uyumluluk durumlarına atanan kavramsal önem derecesi düzeyine dayalı olarak yapılır. Uyumluluk durumlarının önem derecesi aşağıdaki gibidir:
+
+
+|Durum  |Önem Derecesi  |
+|---------|---------|
+|Bekleniyor     |1|
+|Başarılı     |2|
+|Başarısız     |3|
+|Hata     |4|
+
+Cihaza atanmış tüm profiller arasındaki en yüksek önem derecesi seçilerek iki veya daha fazla yapılandırma profilinin son durumu atanır.
+
+Örneğin bir cihaza üç profil atandığını düşünelim: biri Bekleniyor durumunda (önem derecesi = 1), biri Başarılı durumunda (önem derecesi = 2) ve biri Hatalı durumunda (önem derecesi = 4). Hatalı durumu en yüksek önem derecesine sahip olduğu için bu üç profil için de son uyumluluk durumu olarak bu atanır.
+
+### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>Atanmış bir uyumluluk ilkesi için YetkisizKullanımSüresinde durumu atama
+
+Bir uyumluluk ilkesi için YetkisizKullanımSüresinde durumu, cihazın yetkisiz kullanım durumu ve atanmış uyumluluk ilkesi için asıl durumunun birleşimi göz önünde bulundurularak belirlenen bir değerdir. 
+
+Yani bir cihazın atanmış bir uyumluluk ilkesi için Uyumsuz durumu varsa ve:
+
+- kendisine atanmış bir yetkisiz kullanım süresi yoksa, uyumluluk ilkesi için atanan değer Uyumsuz olur.
+- kendisine atanmış yetkisiz kullanım süresi dolmuşsa, uyumluluk ilkesi için atanan değer Uyumsuz olur.
+- kendisine atanmış yetkisiz kullanım süresi henüz dolmamışsa, uyumluluk ilkesi için atanan değer YetkisizKullanımSüresinde olur.
+
+Aşağıdaki tabloda bu seçenekler özetlenmektedir:
+
+
+|Asıl uyumluluk durumu|Atanmış yetkisiz kullanım süresi değeri|Geçerli uyumluluk durumu|
+|---------|---------|---------|
+|Uyumsuz |Bir yetkisiz kullanım süresi atanmamış |Uyumsuz |
+|Uyumsuz |Önceki günün tarihi|Uyumsuz|
+|Uyumsuz |Sonraki günün tarihi|YetkisizKullanımSüresinde|
+
+Cihaz uyumluluk ilkelerini izleme hakkında daha fazla bilgi için bkz. [Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md).
+
+### <a name="assigning-a-resulting-compliance-policy-status"></a>Tek bir uyumluluk ilkesi durumu atama
+
+Bir cihaza atanmış birden fazla uyumluluk ilkesi varsa ve cihazın bu atanmış uyumluluk ilkelerinden iki veya daha fazlası için farklı uyumluluk durumları varsa, cihaza tek bir uyumluluk durumu atanması gerekir. Bu atama, uyumluluk durumlarına atanan kavramsal önem derecesi düzeyine dayalı olarak yapılır. Uyumluluk durumlarının önem derecesi aşağıdaki gibidir: 
+
+|Durum  |Önem Derecesi  |
+|---------|---------|
+|Bilinmiyor     |1|
+|NotApplicable     |2|
+|Uyumlu|3|
+|YetkisizKullanımSüresinde|4|
+|Uyumsuz|5|
+|Hata|6|
+
+Cihaza atanmış tüm ilkeler arasındaki en yüksek önem derecesi seçilerek iki veya daha fazla uyumluluk ilkesinin son durumu belirlenir.
+ 
+Örneğin bir cihaza üç uyumluluk ilkesi atandığını düşünelim: biri Bilinmiyor durumunda (önem derecesi = 1), biri Uyumlu durumunda (önem derecesi = 3) ve biri YetkisizKullanımSüresinde durumunda (önem derecesi = 4). YetkisizKullanımSüresinde durumu en yüksek önem derecesine sahip olduğu için bu üç profil için de son uyumluluk durumu olarak bu atanır.  
 
 ##  <a name="ways-to-use-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini kullanma yolları
 
@@ -112,6 +164,10 @@ E-postaya ve diğer kurumsal kaynaklara yalnızca, bir veya daha fazla cihaz uyu
 Cihaz uyumluluk ilkelerini koşullu erişimden bağımsız olarak da kullanabilirsiniz. Uyumluluk ilkelerini bağımsız olarak kullandığınızda, hedeflenen cihazlar değerlendirilir ve uyumluluk durumları raporlanır. Örneğin, kaç cihazın şifrelenmediği ya da hangi cihazlarda işletim sistemi engellemelerinin kaldırıldığı veya kök erişim izni verildiği konusunda bir rapor alabilirsiniz. Ancak uyumluluk ilkelerini bağımsız olarak kullandığınızda, şirket kaynaklarına yönelik erişim kısıtlaması olmaz.
 
 Uyumluluk ilkesini kullanıcılara siz dağıtırsınız. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının cihazlarında uyumluluk denetimi yapılır. İlke dağıtıldıktan sonra mobil cihazların ilke almasının ne kadar sürdüğü hakkında bilgi edinmek için bkz. [Microsoft Intune’da cihaz profillerindeki sorunları giderme](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
+#### <a name="actions-for-non-compliance"></a>Uyumsuzluk için eylemler
+
+Uyumsuzluk için eylemler, uyumluluk ilkesi ölçütlerini sağlamayan cihazlara uygulanacak zamana göre sıralı bir dizi eylem yapılandırmanıza olanak sağlar. Daha fazla bilgi için bkz. [Uyumsuzluk için eylemleri otomatikleştirme](actions-for-noncompliance.md).
 
 ##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Cihaz uyumluluk ilkeleri kullanımının karşılaştırması: klasik Intune portalı ve Azure portalı
 
@@ -132,10 +188,12 @@ Azure portalındaki yeni cihaz uyumluluk özelliklerinden yararlanmak istiyorsan
 
 ##  <a name="next-steps"></a>Sonraki adımlar
 
-Aşağıdaki platformlar için bir cihaz uyumluluk ilkesi oluşturun:
+- Aşağıdaki platformlar için bir cihaz uyumluluk ilkesi oluşturun:
 
-- [Android](compliance-policy-create-android.md)
-- [Android for Work](compliance-policy-create-android-for-work.md)
-- [iOS](compliance-policy-create-ios.md)
-- [macOS](compliance-policy-create-mac-os.md)
-- [Windows](compliance-policy-create-windows.md)
+   - [Android](compliance-policy-create-android.md)
+   - [Android for Work](compliance-policy-create-android-for-work.md)
+   - [iOS](compliance-policy-create-ios.md)
+   - [macOS](compliance-policy-create-mac-os.md)
+   - [Windows](compliance-policy-create-windows.md)
+
+- Intune Veri Ambarı ilke varlıkları hakkında bilgi için bkz. [İlke varlıkları için başvuru](reports-ref-policy.md).
