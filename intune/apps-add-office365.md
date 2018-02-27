@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 ProPlus 2016 uygulamalarını Windows 10 cihazlara atama
+# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 ProPlus 10 uygulamalarını Windows 10 cihazlara atama
 
-Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 ProPlus 2016 uygulamaları atamanızı kolaylaştırır. Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 için Microsoft Visio Pro için de uygulama yükleyebilirsiniz. İstediğiniz uygulamalar Intune konsolundaki uygulama listesinde tek bir girdi olarak gösterilir.
+Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 ProPlus 10 uygulamaları atamanızı kolaylaştırır. Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 için Microsoft Visio Pro için de uygulama yükleyebilirsiniz. İstediğiniz uygulamalar Intune konsolundaki uygulama listesinde tek bir girdi olarak gösterilir.
 
 
 ## <a name="before-you-start"></a>Başlamadan önce
@@ -32,7 +32,7 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 ProPlus 2016 
 >Bu Office yükleme yöntemi, yalnızca cihazda başka Microsoft Office sürümleri yüklü olmadığında desteklenir.
 
 - Bu uygulamaları dağıtacağınız cihazların Windows 10 Creators Update veya üzerini çalıştırıyor olması gerekir.
-- Intune, yalnızca Office 365 ProPlus 2016 paketinden Office uygulamaları eklemeyi destekler.
+- Intune, yalnızca Office 365 ProPlus paketinden Office uygulamaları eklemeyi destekler.
 - Intune uygulama paketini yüklerken herhangi bir Office uygulaması açıksa yükleme başarısız olabilir ve son kullanıcılar kaydedilmeyen dosyalardaki veriler kaybedebilir.
 - Bu yükleme yöntemi Windows 10S, Windows Home, Windows Team, Windows Holographic ve Windows Holographic for Business çalıştıran cihazlarda desteklenmez.
 - Intune, daha önce Intune ile Office 365 uygulamalarını dağıttığınız bir cihaza Microsoft Mağazası’ndan Office 365 masaüstü uygulamalarının (Office Centennial uygulamaları olarak bilinir) yüklenmesini desteklemez. Bu yapılandırmayı yüklerseniz veri kaybına veya bozulmasına neden olabilir.

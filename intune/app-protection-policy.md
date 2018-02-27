@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 0ee95990afa08aa55e0f9101329b31bd8b3041f4
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -61,8 +61,7 @@ MDM'yi Uygulama koruma ilkeleriyle kullanmanın başka avantajları da vardır v
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>Uygulama koruma ilkeleri için desteklenen platformlar
--   iOS 9 veya üzeri
--   Android 4.4 veya üzeri
+Intune uygulama koruma ilkeleri platformu desteği, Office uygulama platformu desteği ile uyumludur. Ayrıntılar için bkz. [Office Sistem Gereksinimleri](https://products.office.com/en-US/office-system-requirements).
 
 Windows cihazları şu anda desteklenmez. Ancak, Windows 10 cihazlarını Intune'a kaydettiğinizde, benzer bir işlevsellik sunan Windows Bilgi Koruması’nı kullanabilirsiniz. Ayrıntılar için bkz. [Windows Bilgi Koruması’nı (WIP) kullanarak kurumsal verilerinizi koruma](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Uygulama koruma ilkeleri uygulama verilerini nasıl korur

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>Microsoft Intune için erken sürüm - Şubat 2018
 
@@ -40,6 +40,10 @@ Bu sayfa düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha 
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Yeni kayıt hatası eğilim grafiği ve hatanın nedenleri tablosu <!-- 1471783 -->
+
+Kayıt Genel Bakış sayfasında kayıt hatalarının eğilimini ve hataların ilk beş sebebini görüntüleyebileceksiniz. Grafiğe veya tabloya tıklayarak sorun giderme tavsiyeleri ve düzeltme önerileri almak üzere ayrıntıları inceleyebileceksiniz.
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Son kullanıcıların iş profiline hesap eklemesini veya profilden hesap çıkarmasını önleme <!-- 1728700 -->    
 Bir Android for Work profiline Gmail uygulamasını dağıttığınızda, Android for Work cihaz kısıtlama profilindeki **Hesap ekle veya kaldır** ayarını kullanarak son kullanıcıların iş profilinde hesap ekleme veya kaldırma işlemleri yapmasını önleyebilirsiniz.
@@ -76,9 +80,6 @@ Belirli yönetilmeyen uygulamaları açmak için Intune Mobil Uygulama Yönetimi
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561-eeready--"></a>Şirket Portalı temalarınızı onaltılık kodlarla özelleştirme <!--1049561 eeready-->
 
 Onaltılık kodlar kullanarak Şirket Portalı uygulamalarında tema rengini özelleştirebileceksiniz. Onaltılık kodunuzu girdiğinizde Intune, [WCAG 2.0 standartlarına](http://www.w3.org/TR/WCAG20) göre metin rengi ile arka plan rengi arasında en yüksek düzeyde kontrast sağlayan metin rengini belirler. **Mobil uygulamalar** > **Şirket Portalı**’nda metin renginin ve bu renk ile şirket logonuzun önizlemesini görüntüleyebilirsiniz. 
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>İş Yeri veya Okula Erişme ayarlarını kullanarak cihaz kategorilerini seçme <!-- 1058963 --> 
-[Cihaz grubu eşlemeyi](https://docs.microsoft.com/intune/device-group-mapping) etkinleştirdiyseniz, Windows 10'daki kullanıcılardan **Ayarlar** > **Hesaplar** > **İş yeri veya okula eriş** altındaki **Bağlan** düğmesi aracılığıyla veya ilk kez çalıştırma deneyimi sırasında kaydolduktan sona cihaz kategorisini seçmeleri istenecek.
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Endpoint Protection ayarlarına yeni Windows Defender Credential Guard ayarları eklendi <!--1102252 --> 
 

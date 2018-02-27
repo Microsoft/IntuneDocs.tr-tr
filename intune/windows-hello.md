@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="use-windows-hello-for-business"></a>İş İçin Windows Hello’yu kullanma
 
@@ -50,7 +50,7 @@ PIN’i denetlemek için iki ilke türünü de ayarladıysanız, İş için Wind
 
 1.  Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2.  Intune dikey penceresinde **Uç Nokta Koruması**’nı seçin ve sonra da **Yönet** > **İş İçin Windows Hello**’yu seçin.
+2.  Intune dikey penceresinde **Cihaz kaydı**’nı ve ardından **Windows kaydı** > **İş İçin Windows Hello**’yu seçin.
 
 3.  Açılan dikey pencerede **Varsayılan** ayarları seçin.
 
