@@ -606,6 +606,10 @@
           href: end-user-apps-ios.md
         - name: Windows uygulamalarını edinme
           href: end-user-apps-windows.md
+        - name: Intune’un Apple’a gönderdiği veriler
+          href: data-intune-sends-to-apple.md
+        - name: Intune’un Google’a gönderdiği veriler
+          href: data-intune-sends-to-google.md
     - name: İzleme ve sorun giderme
       items:
         - name: Kullanıcıların sorunları gidermesine yardımcı olma
