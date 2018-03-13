@@ -236,6 +236,9 @@
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft Mağazası uygulamaları
                   href: store-apps-windows.md
+                  items:
+                    - name: Şirket Portalı uygulamasını elle ekle
+                      href: store-apps-company-portal-app.md
                 - name: Android for Work uygulamaları
                   href: apps-add-android-for-work.md
                 - name: Windows 10 için Office 365 uygulamaları
@@ -441,6 +444,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows ilkesi oluşturma
           href: compliance-policy-create-windows.md
+        - name: İlkeyi Değerlendir
+          href: policy-evaluate.md
         - name: Uyumsuzluğa yönelik eylemler
           href: actions-for-noncompliance.md
         - name: Cihaz uyumluluğunu izleme
