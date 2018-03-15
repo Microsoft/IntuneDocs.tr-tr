@@ -14,11 +14,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c40fd13a46a61ec0ee05efba7ece7653f5de90ca
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e4e1febb5f12de038d2ddd543be883f71ef79005
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/05/2018
 
 2. **Microsoft Intune**’da, **Cihaz yapılandırması**’nı seçin, **Profiller**’i seçin ve ardından **Profil Oluştur**’u seçin.
 
-3. Aşağıdaki özellikleri girin: 
+3. Aşağıdaki özellikleri girin:
 
     - **Ad**: Yeni profil için açıklayıcı bir ad girin
     - **Açıklama**: İsteğe bağlıdır ancak önerilir. Profil için bir açıklama girin.
@@ -59,7 +59,7 @@ ms.lasthandoff: 03/05/2018
 
     ![Bir cihaz profili oluşturmak için ayarları girin](./media/create-device-profile.png)
 
-4. Bitince **Oluştur**’u seçin. 
+4. Bitince **Oluştur**’u seçin.
 
 Profil oluşturulur ve listede görüntülenir. Bu profili gruplara atamak için bkz. [Cihaz profillerini atama](device-profile-assign.md).
 
