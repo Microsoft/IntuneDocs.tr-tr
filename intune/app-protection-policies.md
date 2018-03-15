@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd92e787fd3c1abaa8b20ce1d75141b46ab17934
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -37,14 +37,14 @@ Uygulama koruma ilkeleri, Intune tarafınızdan yönetilen veya yönetilmeyen ci
 MAM destekli uygulamalar listesi arıyorsanız bkz. [MAM uygulamaları listesi](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
-1.  **Mobil uygulamalar** iş yükünde, **Yönet** bölümünden **Uygulama koruma ilkeleri**’ni seçin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar. 
-2. **İlke ekle**‘yi seçin. 
+1.  **Mobil uygulamalar** iş yükünde, **Yönet** bölümünden **Uygulama koruma ilkeleri**’ni seçin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar.
+2. **İlke ekle**‘yi seçin.
 
   ![“İlke ekle” dikey penceresinin ekran görüntüsü](./media/app-protection-add-policy.png)
 
 3.  İlke için bir ad yazın, kısa bir açıklama ekleyin ve ilkeniz için platform türünü seçin. Gerekirse, her platform için birden çok ilke oluşturabilirsiniz.
 
-4.  Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**'ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçin. 
+4.  Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**'ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçin.
 5. Uygulamaları seçtikten sonra seçiminizi kaydetmek için **Seç**’i seçin.
 
     > [!IMPORTANT]
@@ -59,7 +59,7 @@ MAM destekli uygulamalar listesi arıyorsanız bkz. [MAM uygulamaları listesi](
     > Bu ilke ayarları, yalnızca uygulamalar iş bağlamında kullanılırken uygulanır. Son kullanıcı, uygulamayı kişisel bir görev için kullanırken bu ilkelerden etkilenmez.
 
 7.  Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** bölmesine geri dönersiniz. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
-8. Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** dikey penceresine geri dönersiniz. 
+8. Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** dikey penceresine geri dönersiniz.
 9. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
 
 İlke oluşturmayı önceki yordamda açıklandığı şekilde tamamladığınızda, ilke kullanıcılara dağıtılmaz. Bir ilkeyi dağıtmak için bkz. [Bir ilkeyi kullanıcılara dağıtma](app-protection-policies.md#deploy-a-policy-to-users).
@@ -74,7 +74,7 @@ MAM destekli uygulamalar listesi arıyorsanız bkz. [MAM uygulamaları listesi](
    ![Dahil edilecek grupları seçin menü seçeneği vurgulanmış olarak Atamalar bölmesinin ekran görüntüsü](./media/app-protection-policy-add-users.png)
 
 2.  **Kullanıcı grubu ekle** bölmesinde kullanıcı gruplarının listesi gösterilir. Bu liste **Azure Active Directory**’nizdeki tüm güvenlik gruplarını gösterir. Bu ilkenin geçerli olmasını istediğiniz kullanıcı gruplarını seçin ve sonra da **Seç**'i belirleyin. **Seç** öğesi seçildiğinde, ilke kullanıcılara dağıtılır.
-  
+
     ![Azure Active Directory kullanıcılarının listesini gösteren Kullanıcı grubu ekle bölmesinin ekran görüntüsü](./media/azure-ad-user-group-list.png)
 
 Bir ilke oluşturdunuz ve kullanıcılara dağıttınız.
