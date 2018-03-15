@@ -1,12 +1,12 @@
 ---
-title: "Windows mağaza uygulamalarını Intune’a ekleme"
-titleSuffix: Azure portal
-description: "Intune'a Windows mağazası uygulamaları ekleme hakkında bilgi edinin.\""
+title: "Windows mağazası uygulamalarını Microsoft Intune’a ekleme"
+titleSuffix: 
+description: "Microsoft Intune'a Windows mağazası uygulamaları ekleme hakkında bilgi edinin."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,38 +15,40 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdc1696175f26dc4bb89fcdd005d88bc0948f86d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 815f780ef9f04870f19e75481ed74f0a1c3601f3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows mağazası uygulamalarını Microsoft Intune’a ekleme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune’a eklemelisiniz. Aşağıdaki adımlar Microsoft Intune'a bir Windows mağaza uygulaması eklemenizi sağlar.
 
-1. Azure Portal’da oturum açın.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
-4. **Mobil uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
-5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
-6. **Uygulama Ekle** dikey penceresinde **Uygulama Bilgileri**’ni seçin.
-7. **Uygulamayı Düzenle** dikey penceresinde aşağıdaki bilgileri yapılandırın. Bitirdiğinizde, **Ekle**’ye tıklayın. Seçtiğiniz uygulamaya bağlı olarak, dikey penceredeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
+4. **Mobil uygulamalar** iş yükündeki **Yönet** bölümünden **Uygulamalar**’ı seçin.
+5. Listenin üstündeki **Ekle**’yi seçin.
+6. Listedeki kullanılabilir **Mağaza uygulaması** türlerinden **Windows**’u seçin.
+7. **Uygulama bilgileri**’ni seçerek uygulama bilgilerini yapılandırın.
+8. **Uygulama bilgileri** dikey penceresinde aşağıdaki bilgileri yapılandırın: Seçtiğiniz uygulamaya bağlı olarak bu bölmedeki bazı değerler otomatik olarak doldurulmuş olabilir:
     - **Uygulama Adı** - Uygulamanın şirket portalında görüntülenecek olan adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa, uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
-    - **Uygulama Açıklaması** - Uygulama için bir açıklama girin. Bu, şirket portalında kullanıcılara görüntülenir.
+    - **Açıklama** - Uygulama için bir açıklama girin. Bu açıklama, Şirket Portalı’nda kullanıcılara görüntülenir.
     - **Yayımcı** - Uygulamanın yayımcısının adını girin.
-    - **Uygulama mağazası URL’si** - Oluşturmak istediğiniz uygulamanın uygulama mağazası URL’sini girin.
-    - **Minimum İşletim Sistemi** - Listeden uygulamanın yüklenebileceği minimum işletim sistemi sürümünü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
-    - **Kategori (isteğe bağlı)** - Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Bu, kullanıcıların şirket portalına göz atarken uygulamaları daha kolay bulabilmesini sağlar.
+    - **Uygulama mağazası URL’si** - Oluşturmak istediğiniz uygulamanın uygulama mağazası URL’sini girin. 
+    - **Kategori** (isteğe bağlı) - Uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Bu bilgiyi eklemek, kullanıcıların şirket portalına göz atarken uygulamaları daha kolay bulabilmesini sağlar.
     - **Bunu Şirket Portalı'nda öne çıkan uygulama olarak görüntüle** - Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
-    - **Bilgi URL’si** - İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Gizlilik URL’si**- İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Geliştirici** - İsteğe bağlı olarak, uygulama geliştiricinin adını girin.
-    - **Sahip** - İsteğe bağlı olarak, bu uygulamanın sahibi olarak **İK bölümü** gibi bir ad girin.
-    - **Notlar** - Bu uygulamayla ilişkilendirmek isteyebileceğiniz notları girin.
-    - **Simgeyi Karşıya Yükle** - Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek olan simgedir.
-8. İşiniz bittiğinde, **Uygulama Ekle** dikey penceresinde **Kaydet**’i seçin.
+    - **Bilgi URL’si** (isteğe bağlı) - Bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Gizlilik URL’si** (isteğe bağlı) - Bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Geliştirici** (isteğe bağlı) - Uygulama geliştiricisinin adını girin.
+    - **Sahip** (isteğe bağlı) - Bu uygulamanın sahibi olarak **İK departmanı** gibi bir ad girin.
+    - **Notlar** (isteğe bağlı) - Bu uygulamayla ilişkilendirmek isteyebileceğiniz notları girin.
+    - **Simgeyi Karşıya Yükle** - Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenir.
+1. Gerekli tüm uygulama bilgilerini girdiğinizde **Tamam**’a tıklayın.
+2. **Uygulama ekle** dikey penceresinde **Ekle**’ye tıklayın.
 
 Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
 
@@ -59,16 +61,22 @@ Son kullanıcılar cihazları yönetmek ve uygulama yüklemek için Intune Şirk
 1. [İş İçin Microsoft Mağazası](https://www.microsoft.com/business-store)’ndaki hesabınızda oturum açın ve Intune Şirket Portalı uygulamasının **çevrimdışı lisanslı** sürümünü edinin.  
 2. Uygulamayı aldıktan sonra **Envanter** sayfasında uygulamayı seçin.  
 3. **Platform** olarak **Windows 10 tüm cihazlar**’ı ve uygun **Mimari**’yi seçip sonra indirin. Bu uygulama için bir uygulama lisans dosyası gerekmez.
-![İndirme işlemi için Windows 10 tüm cihazlar ve Mimari X86 Paketi ayrıntılarının görüntüsü](./media/Win10CP-all-devices.png)
+
+    ![İndirme işlemi için Windows 10 tüm cihazlar ve Mimari X86 Paketi ayrıntılarının görüntüsü](./media/Win10CP-all-devices.png)
+
 4. "Gerekli Çerçeveler" başlığı altındaki tüm paketleri indirin. Bu işlem x86, x64 ve ARM mimarileri için gerçekleştirilmelidir. Böylece aşağıda gösterildiği gibi toplam 9 paket gerekir.
 
-![İndirilecek bağımlılık dosyalarının görüntüsü ](./media/Win10CP-dependent-files.png)
-5. Şirket Portalı uygulamasını Intune’a yüklemeden önce, paketlerin aşağıdaki şekilde yapılandırıldığı bir klasör (ör. C:&#92;Company Portal) oluşturun:
-  1. Şirket Portalı paketini C:\Company Portal adresine koyun. Bu konumda bir Dependencies alt klasörü oluşturun.  
-  ![APPXBUN dosyasıyla kaydedilen Dependencies klasörünün görüntüsü](./media/Win10CP-Dependencies-save.png)
-  2. Dokuz bağımlılık paketini Dependencies klasörüne yerleştirin.  
-  Bağımlılıklar, bu biçimde yerleştirilmezse Intune tarafından tanınamazlar ve paketin karşıya yüklenmesi sırasında karşıya yüklenemezler. Bu durumda, karşıya yükleme aşağıdaki hatayı vererek başarısız olur.  
-  ![Bu yazılım yükleyicisine ait Windows uygulama bağımlılığı, uygulama klasöründe bulunamadı. Bu uygulamayı oluşturmaya ve atamaya devam edebilirsiniz ancak uygulama, eksik Windows uygulama bağımlılığı sağlanmadıkça çalışmayacaktır.](./media/Win10CP-error-message.png)
+    ![İndirilecek bağımlılık dosyalarının görüntüsü](./media/Win10CP-dependent-files.png)
+
+5. Şirket Portalı uygulamasını Intune’a yüklemeden önce, paketlerin aşağıdaki şekilde yapılandırıldığı bir klasör (ör: C:&#92;Şirket Portalı) oluşturun:
+  - Şirket Portalı paketini C:\Company Portal adresine koyun. Bu konumda bir Dependencies alt klasörü oluşturun.  
+  
+    ![APPXBUN dosyasıyla kaydedilen Dependencies klasörünün görüntüsü](./media/Win10CP-Dependencies-save.png)
+
+  - Dokuz bağımlılık paketini Dependencies klasörüne yerleştirin. Bağımlılıklar, bu biçimde yerleştirilmezse Intune tarafından tanınamazlar ve paketin karşıya yüklenmesi sırasında karşıya yüklenemezler. Bu durumda, karşıya yükleme aşağıdaki hatayı vererek başarısız olur: 
+
+      ![Bu yazılım yükleyicisine ait Windows uygulama bağımlılığı, uygulama klasöründe bulunamadı. Bu uygulamayı oluşturmaya ve atamaya devam edebilirsiniz ancak uygulama, eksik Windows uygulama bağımlılığı sağlanmadıkça çalışmayacaktır.](./media/Win10CP-error-message.png)
+
 6. Intune'a dönün ve Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. Uygulamayı, istenen hedef kullanıcı kümesine gerekli bir uygulama olarak atayın.  
 
 Intune’un Evrensel uygulamaların bağımlılıklarını nasıl işlediği hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune MDM aracılığıyla bağımlılıkları olan bir appxbundle dağıtma](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  
@@ -77,14 +85,14 @@ Intune’un Evrensel uygulamaların bağımlılıklarını nasıl işlediği hak
 Kullanıcılarınız, Windows 8.1 veya Windows Phone 8.1 Şirket Portalı uygulamalarını Mağaza'dan zaten yüklemişlerse sizin ya da kullanıcınızın herhangi bir işlemde bulunmasına gerek kalmadan bu uygulamalar otomatik olarak yeni sürüme güncelleştirilecektir. Bu güncelleştirme gerçekleşmezse, kullanıcılarınızdan cihazlarında Mağaza uygulamaları için otomatik güncelleştirmeleri etkinleştirdiklerini denetlemelerini isteyin.   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Dışarıdan yüklenen Windows 8.1 Şirket Portalı uygulamamı Windows 10 Şirket Portalı uygulamasına nasıl yükseltebilirim?
-Önerdiğimiz geçiş yolu, Windows 8.1 Şirket Portalı uygulaması için atama eylemini "Kaldır" şeklinde ayarlayarak atamayı silmektir. Bunu yaptıktan sonra Windows 10 Şirket Portalı uygulaması yukarıdaki seçeneklerden herhangi biri kullanılarak atanabilir.  
+Önerdiğimiz geçiş yolu, Windows 8.1 Şirket Portalı uygulaması için atama eylemini "Kaldır" şeklinde ayarlayarak atamayı silmektir. Bu ayar yapıldıktan sonra Windows 10 Şirket Portalı uygulaması yukarıdaki seçeneklerden herhangi biri kullanılarak atanabilir.  
 
 Uygulamayı dışarıdan yüklemeniz gerekiyorsa ve Windows 8.1 Şirket Portalı’nı Symantec Sertifikasıyla imzalamadan atadıysanız, yükseltmeyi tamamlamak için yukarıdaki Doğrudan Intune aracılığıyla atama bölümünde sunulan adımları izleyin.
 
 Uygulamayı dışarıdan yüklemeniz gerekiyorsa ve Windows 8.1 Şirket Portalı’nı Symantec kod imzalama sertifikası ile imzalayıp atadıysanız aşağıdaki bölümde sunulan adımları izleyin.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Dışarıdan yüklenmiş ve imzalı Windows Phone 8.1 veya Windows 8.1 Şirket Portalı uygulamamı Windows 10 Şirket Portalı uygulamasına nasıl yükseltebilirim?
-Önerdiğimiz geçiş yolu, Windows Phone 8.1 veya Windows 8.1 Şirket Portalı uygulaması için atama eylemini "Kaldır" şeklinde ayarlayarak mevcut atamayı silmektir. Bunu yaptıktan sonra Windows 10 Şirket Portalı uygulaması normal bir biçimde atanabilir.  
+Önerdiğimiz geçiş yolu, Windows Phone 8.1 veya Windows 8.1 Şirket Portalı uygulaması için atama eylemini "Kaldır" şeklinde ayarlayarak mevcut atamayı silmektir. Bu ayar yapıldıktan sonra Windows 10 Şirket Portalı uygulaması normal bir biçimde atanabilir.  
 
 Aksi takdirde, yükseltme yoluna uyulduğundan emin olmak için Windows 10 Şirket Portalı uygulamasının uygun şekilde güncelleştirilmesi ve imzalanması gerekir.  
 

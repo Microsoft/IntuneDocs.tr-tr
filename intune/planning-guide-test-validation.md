@@ -1,9 +1,10 @@
 ---
 title: "Intune’u sınama ve doğrulama"
-description: "Ortamınızda, bir Intune yalnızca bulut çözümünü sınarken ve doğrularken göz önünde bulundurmanız gereken ayrıntılar."
+titlesuffix: Microsoft Intune
+description: "Çevrenizdeki Intune bulut çözümünüzde sınama ve doğrulama yapma."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Intune’u sınama ve doğrulama
 
-Sınama aşaması, uygulama aşamasından önce ve sonra gelir. Önceden belirlediğiniz BT (yönetici) ve son kullanıcı (kullanım örneği) senaryolarını sınamak için sınama hesapları, grupları ve cihazlarına ihtiyacınız vardır.
+Microsoft Intune uygulamasını sınarken, işlevsel doğrulama ve kullanım örneği doğrulamasını dikkate alın. İşlevsel doğrulama, her bileşeni ve yapılandırmayı sınama ve düzgün çalışıp çalışmadığını belirleme aşamalarından oluşur. Kullanım örneği doğrulaması, bir dizi görev içeren senaryonun beklendiği gibi çalıştığını doğrulamak için sınama işlemi içerir. 
 
 Destek belgelerinin oluşturulması ve BT destek ve yardım masası personelinin ürünü zorlanmadan destekleyebilmesi için, sınama aşamasına BT destek ve yardım masası personelini dahil etmenizi öneririz. Bir bileşen ya da senaryo kullanım örneklerine dayalı olarak çalışmıyorsa gerekli değişiklikleri belgelediğinizden ve değişikliğin nedenini eklediğinizden emin olun.
 

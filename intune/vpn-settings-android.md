@@ -1,36 +1,34 @@
 ---
-title: "Android cihazları için Intune VPN ayarları"
-titlesuffix: Azure portal
-description: "Android cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi edinin"
+title: "Android çalıştıran cihazlar için Microsoft Intune VPN ayarları"
+titlesuffix: 
+description: "Android çalıştıran cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi edinin"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ec20a5c808df1fa30a4357f973c9544dc6664b5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fe05b5fdd87e92f5acc35c0a750287f8fd01b92
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune’da Android cihazları için VPN ayarları
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Android çalıştıran cihazlar için Microsoft Intune'da VPN ayarlarını yapılandırın 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bir Intune yöneticisi olarak aşağıdaki platformlar için VPN ayarları yapılandırabilirsiniz:
+Aşağıdaki platformlar için VPN ayarları yapılandırabilirsiniz:
 
 - [Android](#android-vpn-settings)
 - [Android for Work](#android-for-work-vpn-settings)
 
-Seçtiğiniz ayarlara bağlı olarak, aşağıda listelenen değerlerden bazıları yapılandırılamaz.
+Seçtiğiniz ayarlara bağlı olarak, aşağıdaki değerlerden bazıları yapılandırılamaz.
 
 ## <a name="android-vpn-settings"></a>Android VPN ayarları
 **Bağlantı adı** - Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan son kullanıcılar bu adı görür.
@@ -46,7 +44,7 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıda listelenen değerlerden bazıla
     - **Pulse Secure**
     - **Citrix**
 
-- **Parmak izi** (yalnızca Check Point Capsule VPN) - VPN sunucusunun güvenilir olduğunu doğrulamak için kullanılacak bir dize (örneğin "Contoso Parmak İzi Kodu") belirtin. Parmak izi, bağlanırken aynı parmak izini sunan herhangi bir sunucuya güvenmesi için istemciye gönderilebilir. Cihazda henüz parmak izi yoksa, parmak izini gösterirken kullanıcıdan bağlandığı VPN sunucusuna güvenmesini ister (kullanıcı parmak izini el ile doğrular ve bağlanmak için güven’i seçer).
+- **Parmak izi** (yalnızca Check Point Capsule VPN) - VPN sunucusunun güvenilir olduğunu doğrulamak için kullanılan bir dize (örneğin "Contoso Parmak İzi Kodu") belirtin. Parmak izi, bağlanırken aynı parmak izini sunan herhangi bir sunucuya güvenmesi için istemciye gönderilebilir. Cihazda henüz parmak izi yoksa, parmak izini gösterirken kullanıcıdan bağlandığı VPN sunucusuna güvenmesini ister (kullanıcı parmak izini el ile doğrular ve bağlanmak için güven’i seçer).
 - **Citrix VPN öznitelikleri için anahtar ve değer çiftleri girin** (yalnızca Citrix) - VPN bağlantısının özelliklerini yapılandırmak için, Citrix tarafından sağlanan anahtar ve değer çiftlerini girin.
 
 ## <a name="android-for-work-vpn-settings"></a>Android for Work VPN ayarları

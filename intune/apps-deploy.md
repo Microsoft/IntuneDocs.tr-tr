@@ -1,12 +1,12 @@
 ---
-title: "Uygulamaları gruplara ekleme"
-titlesuffix: Azure portal
-description: "Intune'a uygulama ekledikten sonra, bu uygulamayı kullanıcı veya cihaz gruplarına atamak isteyeceksiniz.\""
+title: "Microsoft Intune’da uygulamaları gruplara atama"
+titlesuffix: 
+description: "Microsoft Intune'a uygulama ekledikten sonra, bu uygulamayı kullanıcı veya cihaz gruplarına atamak isteyeceksiniz.”"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc4732043153662ac83beac950d53246caff1b94
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -38,29 +38,30 @@ Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uy
 |Uygulamaları Kullanılabilir olarak atama|Evet|Evet|
 |Uygulamalarını Gerekli olarak atama|Evet|Hayır|
 |Uygulamaları kaldırma|Evet|Hayır|
+|Intune’dan uygulama güncelleştirmelerini alma|Evet|Hayır|
 |Son kullanıcıların Şirket Portalı uygulamasından kullanılabilir uygulamaları yüklemesi|Evet|Hayır|
 |Son kullanıcıların web tabanlı Şirket Portalı’ndan kullanılabilir uygulamaları yüklemesi|Evet|Evet|
 
 > [!NOTE]
-> Şu anda, iOS ve Android uygulamalarını (hem iş kolu uygulamaları hem de mağazadan satın uygulamalar), Intune’a kaydedilmeyen cihazlara atayabilirsiniz.
+> Şu anda, iOS ve Android uygulamalarını (hem iş kolu uygulamaları hem de mağazadan satın uygulamalar), Intune’a kaydedilmeyen cihazlara atayabilirsiniz.<br></br><br></br>
+> Intune'da kayıtlı olmayan cihazlarda uygulama güncelleştirmeleri almak için, cihaz kullanıcılarının kendi şirket portallarına gitmeleri ve uygulama güncelleştirmelerini el ile yüklemeleri gerekir.
 
 ## <a name="how-to-assign-an-app"></a>Uygulama atama
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
 1. **Mobil Uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 2. Uygulama listesi dikey penceresinde, atamak istediğiniz uygulamaya tıklayın.
-3. <*uygulama adı*> - **Genel Bakış** dikey penceresinde **Yönet** > **Atamalar**’ı seçin.
-4. **Grup Seç** öğesini seçin, ardından **Grupları seçin** dikey penceresinde uygulamayı atamak istediğiniz Azure AD gruplarını seçin.
+3. **Genel Bakış** dikey penceresinde, **Yönet** > **Atamalar**’ı seçin.
+4. Ardından **Grup ekle** dikey penceresinde **Grup Ekle**’yi seçin, uygulamayı atamasına dahil edilecek veya atamadan hariç tutulacak Azure AD gruplarını seçin.
 5. Seçtiğiniz her uygulama için, **atama türü** olarak aşağıdakilerden birini seçin:
-    - **Kullanılabilir** Kullanıcılar Şirket Portalı’ndan veya web sitesinden uygulamayı yükler.
-    - **Uygulanamaz** - Uygulama yüklenmez veya Şirket Portalı’nda gösterilmez.
+    - **Kayıtlı cihazlar için kullanılabilir** - Kullanıcılar, Şirket Portalı uygulamasından veya web sitesinden uygulamayı yükler.
+    - **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın.
     - **Gerekli** - Uygulama, seçili gruplardaki cihazlara yüklenir.
     - **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
-    - **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın.
 6. **Yalnızca iOS uygulamalar için** - Uygulamaya göre VPN ayarları barındıran bir iOS VPN profili oluşturduysanız **VPN** altında bu profili seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
-6. İşiniz bittikten sonra **Kaydet**’i seçin.
+6. İşiniz bittikten sonra **Tamam**’ı ve sonra **Kaydet**’i seçin.
 
 Uygulama artık seçtiğiniz gruplara atanır.
 

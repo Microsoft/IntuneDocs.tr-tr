@@ -1,6 +1,6 @@
 ---
-title: "Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme | Microsoft Docs"
-titlesuffix: Azure portal
+title: "Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme"
+titlesuffix: Microsoft Intune
 description: "iOS uygulaması çalıştırıldığında uygulamaya yapılandırma verilerini sağlamak için uygulama yapılandırma ilkelerini kullanmayı öğrenin."
 keywords: 
 author: erikre
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: bdaec3150062dce5da5566fa9534425e11f3cdec
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/03/2018
 
 Kullanıcılar bir iOS uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde, genellikle ilk çalıştırıldığında kullanılır.
 
-Birtakım dahil etme ve dışlama atamaları kullanarak kullanıcı ve cihaz gruplarına bir uygulama yapılandırma ilkesi atayabilirsiniz. Bir uygulama yapılandırma ilkesini ekledikten sonra bu uygulama yapılandırma ilkesi için atamaları ayarlayabilirsiniz. İlke için atamaları ayarladıktan sonra ilkenin uygulanacağı kullanıcı gruplarını dahil etme veya dışlamayı seçebilirsiniz. Bir veya daha fazla grubu dahil etmeyi seçtiğinizde, belirli grupları dahil etmeyi veya yerleşik grupları kullanmayı seçebilirsiniz. Yerleşik gruplar **Tüm Kullanıcılar**, **Tüm Cihazlar** ve **Tüm Kullanıcılar + Tüm Cihazlar** şeklindedir. 
+Birtakım dahil etme ve dışlama atamaları kullanarak kullanıcı ve cihaz gruplarına bir uygulama yapılandırma ilkesi atayabilirsiniz. Bir uygulama yapılandırma ilkesini ekledikten sonra bu uygulama yapılandırma ilkesi için atamaları ayarlayabilirsiniz. İlke için atamaları ayarladıktan sonra ilkenin uygulandığı kullanıcı gruplarını dahil etmeyi veya dışlamayı seçebilirsiniz. Bir veya daha fazla grubu dahil etmeyi seçtiğinizde, belirli grupları dahil etmeyi veya yerleşik grupları kullanmayı seçebilirsiniz. Yerleşik gruplar **Tüm Kullanıcılar**, **Tüm Cihazlar** ve **Tüm Kullanıcılar + Tüm Cihazlar** şeklindedir. 
 
 >[!NOTE]
 >Intune size kolaylık sağlamak adına konsolda önceden oluşturulmuş ve yerleşik iyileştirmeleri bulunan **Tüm Kullanıcılar** ve **Tüm Cihazlar** gruplarını sağlar. Tüm kullanıcı ve cihazları hedeflemek için kendi oluşturacağınız “Tüm kullanıcılar” veya “Tüm cihazlar” grupları yerine bu grupları kullanmanızı kesinlikle öneririz.
@@ -44,34 +44,34 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 
 ## <a name="create-an-app-configuration-policy"></a>Uygulama yapılandırma ilkesi oluşturma
 
-1. Azure portalında oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Mobil uygulamalar** iş yükünü seçin.
 4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
 5. Aşağıdaki bilgileri ayarlayın:
     - **Ad**<br>
-      Azure portalında görünecek profil adı.
+      Azure portalında görünen profil adı.
     - **Açıklama**<br>
-      Azure portalında görünecek profil açıklaması.
+      Azure portalında görünen profil açıklaması.
     - **Cihaz kaydı türü**<br>
       **Yönetilen cihazlar**’ı seçin.
 6. **Platform** için **iOS**’u seçin.
-7.  **İlişkili Uygulama**’yı seçin. Daha sonra **İlişkili Uygulama** dikey penceresinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı seçin.
-8.  **Yapılandırma İlkesi Ekle** dikey penceresinde **Yapılandırma ayarları**’nı seçin.
+7.  **İlişkili uygulama**’yı seçin. Daha sonra **İlişkili uygulama** bölmesinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı ve ardından **Tamam**’ı seçin.
+8.  **Yapılandırma ilkesi ekle** bölmesinde **Yapılandırma ayarları**’nı seçin.
 9. **Yapılandırma ayarları biçimi**’ni seçin. Aşağıdakilerden birini seçin:
     - **[Yapılandırma tasarımcısını kullanma](#use-configuration-designer)**
     - **[XML Verilerini girme](#enter-xml-data)**
-10. XML bilgilerinizi ekledikten sonra **Tamam**’ı seçin ve yapılandırma ilkesini eklemek üzere **Ekle**’yi seçin. Yapılandırma ilkesi için genel bakış dikey penceresi görüntülenir.
+10. XML bilgilerinizi ekledikten sonra **Tamam**’ı seçin ve yapılandırma ilkesini eklemek üzere **Ekle**’yi seçin. Yapılandırma ilkesi için genel bakış bölmesi görüntülenir.
 11. **Atamalar**’ı seçerek dahil etme ve dışlama seçeneklerini görüntüleyin. 
 
-    ![İlke atamaları](./media/app-config-policy01.png)
+    ![İlke atamaları Ekle sekmesinin ekran görüntüsü](./media/app-config-policy01.png)
 12. **Dahil Et** sekmesinde **Tüm Kullanıcılar**’ı seçin.
 
-    ![İlke Atamaları - Tüm Kullanıcılar](./media/app-config-policy02.png)
+    ![İlke atamaları - Tüm Kullanıcılar açılan seçeneğinin ekran görüntüsü](./media/app-config-policy02.png)
 13. **Dışla** sekmesini seçin. 
-14. İlgili dikey pencerede **Dışlanacak grupları seç**’e tıklayın.
+14. İlgili bölmeyi görüntülemek için **Dışlanacak grupları seçin**’e tıklayın.
 
-    ![İlke atamaları - Dışlanacak grupları seç](./media/app-config-policy03.png)
+    ![İlke atamaları - Dışlanacak grupları seçin dikey penceresinin ekran görüntüsü](./media/app-config-policy03.png)
 15. Dışlamak istediğiniz grupları seçin ve **Seç**’e tıklayın.
 
     >[!NOTE]

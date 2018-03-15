@@ -1,12 +1,12 @@
 ---
-title: "iOS mağazası uygulamalarını Intune’a ekleme | Microsoft Docs"
-titlesuffix: Azure portal
-description: "Intune'a iOS mağazası uygulamaları ekleme hakkında bilgi edinin.\""
+title: "iOS mağazası uygulamalarını Microsoft Intune’a ekleme"
+titlesuffix: 
+description: "Microsoft Intune'a iOS mağazası uygulamaları ekleme hakkında bilgi edinin."
 keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e013b5c995274365978ee0c2ba2f45bfeef54baa
-ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
+ms.openlocfilehash: b5315d683abfc38a7f42d2f322cc77c625270e3c
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS mağazası uygulamalarını Microsoft Intune’a ekleme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Bu konudaki bilgileri kullanarak iOS mağaza uygulamalarını Intune’a eklemeyi öğrenin.
+Bu makaledeki bilgileri kullanarak iOS mağaza uygulamalarını Microsoft Intune’a eklemeyi öğrenin. iOS mağaza uygulamaları, Intune'un bir kullanıcı cihazına yüklediği uygulamalardır. Kullanıcı, şirketinizin iş gücünün bir parçasıdır. iOS mağaza uygulamaları otomatik olarak güncelleştirilir. 
 
 >[!NOTE]
 >iOS kullanıcıları bazı yerleşik iOS uygulamalarını kaldırabilir (Stocks ve Harita gibi) ancak siz bu uygulamaları yeniden dağıtmak için Intune’u kullanamazsınız. Son kullanıcılar bu uygulamaları silerse uygulama mağazasına gidip el ile yeniden indirmeleri gerekir.
@@ -40,25 +40,25 @@ Bu yöntemi kullanarak yalnızca uygulama mağazasında ücretsiz olan uygulamal
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>1. Adım - Mağazada uygulama arama
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
-4. **Mobil uygulamalar** iş yükünde **Yönet** > Uygulamalar’ı seçin.
-5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
-6. **Uygulama Ekle** dikey penceresinde **App Store'da Ara**’yı seçin.
-7. **Apple App Store** dikey penceresinde App Store ülke yerel ayarını seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
+4. **Mobil uygulamalar** iş yükündeki **Yönet** grubu altında **Uygulamalar**’ı seçin.
+5. **Uygulamalar** bölmesinin sağ tarafındaki **Ekle**’yi seçin.
+6. **Uygulama türü** listesinde kullanılabilir **Mağaza uygulaması** türleri altından **iOS**’u seçin.
+6. **App Store’da Ara**’yı seçin.
+7. **App Store’da Ara** dikey penceresinde App Store ülke yerel ayarını seçin.
 8. Adı (veya adın bir kısmını) arama kutusuna yazın. Intune, mağazada arama yapar ve ilgili sonuçların listesini getirir.
-9. Listeden istediğiniz uygulamayı seçin ve ardından **Tamam**’a tıklayın.
+9. Listeden istediğiniz uygulamayı seçin ve ardından **Seçin**’e tıklayın.
 
 ## <a name="step-2---configure-app-information"></a>2. Adım - Uygulama bilgilerini yapılandırma
 
-1. **Uygulama Ekle** dikey penceresinde **Uygulama Bilgileri**’ni seçin.
-2. **Uygulamayı Düzenle** dikey penceresinde uygulama bilgilerini yapılandırın. Bitirdiğinizde, **Ekle**’ye tıklayın. Seçtiğiniz uygulamaya bağlı olarak, dikey penceredeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
+1. Uygulamayı yapılandırmak için **Uygulama ekle** dikey penceresinde **Uygulama bilgileri**’ni seçin.
+2. **Uygulama bilgileri** dikey penceresinde uygulama bilgilerini ekleyin. Seçtiğiniz uygulamaya bağlı olarak, dikey penceredeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
 - **Ad** -- Şirket portalında görüntülenmek üzere bir uygulama adı yazın. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa Şirket Portalı uygulamalardan yalnızca birini kullanıcılara görüntüler.
 - **Açıklama** -- Şirket Portalı’nda kullanıcılara görüntülenmek üzere bir uygulama açıklaması yazın.
 - **Yayımcı** -- Uygulamanın yayımcısının adını yazın.
 - **Uygulama mağazası URL’si** -- Oluşturmak istediğiniz uygulamanın uygulama mağazası URL’sini yazın.
-- **Mağaza ülkesi/bölgesi** -- Uygulama mağazası ülke yerel ayarını seçin.
 - **En Düşük İşletim Sistemi** -- Listeden uygulamanın yüklenebileceği en düşük işletim sistemi sürümünü seçin. Uygulama, daha önceki bir işletim sistemini çalıştıran cihazlara yüklenmeyecektir.
 - **Geçerli cihaz türü** -- Uygulama tarafından kullanılan cihazları listeden seçin.
 - **Kategori** (isteğe bağlı). Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Kategoriler, kullanıcıların şirket portalına göz atarken uygulamayı daha kolay bulabilmesini sağlar.
@@ -69,6 +69,11 @@ Bu yöntemi kullanarak yalnızca uygulama mağazasında ücretsiz olan uygulamal
 - **Sahip** -- İsteğe bağlı olarak, bu uygulamanın sahibi olarak örneğin **İK bölümü** yazın.  Bu alan yalnızca bir yönetici tarafından görülebilir, son kullanıcılar tarafından görülemez.
 - **Notlar** -- Bu uygulamayla ilişkilendirmek isteyebileceğiniz notları yazın. Bu alan yalnızca bir yönetici tarafından görülebilir, son kullanıcılar tarafından görülemez.
 - **Logo** -- Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenir.
-3. İşiniz bittiğinde, **Uygulama Ekle** dikey penceresinde **Tamam**’ı seçin.
+3. İşiniz bittiğinde **Bilgi ekle** dikey penceresinde **Tamam**’a tıklayın.
+4. **Uygulama ekle** dikey penceresinde **Ekle**’ye tıklayın. 
 
-Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
+Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. 
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [Uygulamaları gruplara ekleme](apps-deploy.md)

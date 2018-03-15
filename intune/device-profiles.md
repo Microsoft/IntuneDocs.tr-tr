@@ -1,12 +1,11 @@
 ---
-title: "Microsoft Intune’da cihaz profilleri nelerdir?"
-titlesuffix: Azure portal
-description: "Intune cihaz profillerini ve bunların şirketinizdeki cihazların yönetilmesine ve korunmasına nasıl yardımcı olabileceğini öğrenin.\""
+title: "Microsoft Intune - Azure’da cihaz profilleri | Microsoft Docs"
+description: "Özellikler, kısıtlamalar, e-posta, wifi, VPN, eğitim, sertifikalar, Windows 10, BitLocker ve Windows defender, Windows Bilgi Koruması ve Azure portalındaki özel cihaz yapılandırma ayarları gibi farklı Microsoft Intune cihaz profillerine genel bakış. Şirketinizdeki verileri ve cihazları yönetmek ve korumak için bu profili kullanın."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/23/2017
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,75 +14,125 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c745f9f745802e0de7a58e3dd7570c0e363ab5d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profilleri nedir?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Yönettiğiniz cihazların tümünde ayarları ve özellikleri yönetmek için Microsoft Intune **Cihaz yapılandırması** iş yükünü kullanın. Bu iş yükünü çoğunlukla, cihazlarda bir dizi farklı özelliği ve işlevselliği yönetmenize ve denetlemenize izin veren cihaz profilleri oluşturmak için kullanırsınız.
+Microsoft Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarları ve özellikleri içerir. Bu ayarlar ve özellikler, profiller kullanılarak yönetilir. Bazı profil örnekleri şunlardır: 
 
-Bu iş yükünü açtığınızda, aşağıdaki seçenekleri görürsünüz:
+- Kurumsal WiFi'nize farklı cihazlara erişim sağlayan bir WiFi profili
+- Kurumsal ağınızda VPN sunucunuza farklı cihaz erişimi veren bir VPN profili
 
-- **Genel Bakış** - Bu sayfa size, kullanıcılara ve cihazlara atadığınız cihaz yapılandırmalarını izlemenize yardımcı olan durum bilgilerini ve raporları sağlar.
-- **Profilleri Yönet** - Cihaz yapılandırma profilleri oluşturmak için bu bölüme gidersiniz. Bu konuda aşağıda, oluşturabileceğiniz tüm profil türlerinin bir listesini bulabilirsiniz.
-- **Sertifika Yetkilisi Kurulumu** - Bu iş akışı, Intune sertifika profillerini yapılandırmak için gereken adımları gösterir.
+Bu konu, cihazlarınız için oluşturabileceğiniz farklı profillere genel bir bakış sunar. Cihazlardaki bazı özelliklere izin vermek veya bunları engellemek için bu profilleri kullanın.
 
-## <a name="getting-started"></a>Başlarken
+## <a name="before-you-begin"></a>Başlamadan önce
+Kullanılabilir özellikleri görmek için [Azure portalı](https://portal.azure.com)'nı açın ve Intune kaynağınızı açın. 
 
-Cihaz profillerini oluşturma iş akışı, tüm profiller için benzer çalışır. Bilgi için [Microsoft Intune cihaz yapılandırma profilleri oluşturma](device-profile-create.md) konusunu okuyun. Sonra, her profil türünün ayarlarını oluşturma hakkındaki özel bilgileri okuyun.
+**Cihaz yapılandırması** aşağıdaki seçenekleri içerir:
 
-Cihazlarınızda aşağıdaki özellikleri yönetebilirsiniz:
+- **Genel Bakış**: Profillerinizin durumunu listeler, kullanıcılara ve cihazlara atadığınız profiller hakkında ek ayrıntılar sağlar
+- **Yönet**: Cihaz profilleri oluşturun ve profil içinde çalışmak üzere özel [PowerShell betiklerini](intune-management-extension.md) karşıya yükleyin
+- **İzle**: Bir profilin başarı veya başarısızlık durumunu denetleyin ve ayrıca profillerinize ilişkin günlükleri görüntüleyin
+- **Kurulum**: Bir sertifika yetkilisi (SCEP veya PFX) ekleyin veya profilde Telekomünikasyon Gider Yönetimi’ni etkinleştirin
 
-## <a name="device-features"></a>Cihaz özellikleri
+## <a name="create-the-profile"></a>Profili oluşturma
 
-Cihaz özellikleri, iOS ve macOS cihazlarda AirPrint, bildirimler ve paylaşılan cihaz yapılandırmaları gibi özellikleri denetlemenize olanak tanır.
-Daha fazla bilgi için bkz. [Cihaz özelliği ayarlarını yapılandırma](device-features-configure.md) iOS ve macOS’u destekler.
+[Cihaz profilleri oluşturma](device-profile-create.md), bir profil oluşturmak için adım adım yönergeler sağlar. 
 
-## <a name="device-restrictions"></a>Cihaz kısıtlamaları
-Cihaz kısıtlamaları, yönettiğiniz cihazlarda güvenlik, donanım ve veri paylaşma ayarları gibi kategoriler dahil olmak üzere birçok ayarı denetlemenize izin verir. Örneğin, iOS cihazı kullanıcılarının cihaz kamerasına erişmesini engelleyen bir cihaz kısıtlama profili oluşturabilirsiniz.
-Daha fazla bilgi için bkz. [Cihaz kısıtlama ayarlarını yapılandırma](device-restrictions-configure.md) Android, iOS, macOS, Windows 10 ve Windows 10 Team'i destekler.
+## <a name="device-features-profile"></a>Cihaz özellikleri profili
 
-## <a name="email"></a>E-posta
-E-posta profilleri, yönettiğiniz cihazlarda Exchange ActiveSync e-posta ayarları oluşturmanıza, atamanıza ve izlemenize olanak tanır. E-posta profilleri tutarlılık sağlar, destek çağrılarını azaltır ve son kullanıcıların, herhangi bir kurulum yapmalarına gerek kalmadan kendi cihazlarından şirket e-postasına erişmelerini sağlar.
-Daha fazla bilgi için bkz. [E-posta ayarlarını yapılandırma](email-settings-configure.md) Android, iOS, Windows Phone 8.1 ve Windows 10'u destekler.
+[Cihaz özellikleri](device-features-configure.md), iOS ve macOS cihazlarda AirPrint, bildirimler ve paylaşılan cihaz yapılandırmaları gibi özellikleri denetler.
 
-## <a name="wi-fi"></a>Wi-Fi
-Kablosuz ağ ayarlarını kuruluşunuzdaki kullanıcılara ve cihazlara atamak için Wi-Fi profillerini kullanın. Bir Wi-Fi profili atadığınızda, kullanıcılarınız kurumsal Wi-Fi ağınıza, ağı kendileri yapılandırmak zorunda kalmadan erişim elde eder.
-Daha fazla bilgi için bkz. [Wi-Fi ayarlarını yapılandırma](wi-fi-settings-configure.md) Android, iOS, macOS ve Windows 8.1'i (yalnızca içeri aktarma) destekler.
+Bu özellik şunları destekler:  
+- iOS 
+- Mac OS
 
-## <a name="vpn"></a>VPN
-Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. VPN profillerini, ağa kolay ve güvenli bir şekilde bağlanabilmeleri için kuruluşunuzdaki kullanıcılara ve cihazlara atayın.
-Daha fazla bilgi için [VPN ayarlarını yapılandırma](vpn-settings-configure.md) konusuna bakın.
-Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 ve Windows 10'u destekler.
+## <a name="device-restrictions-profile"></a>Cihaz kısıtlamaları profili
+[Cihaz kısıtlamaları](device-restrictions-configure.md) cihazlarda güvenlik, donanım, veri paylaşımı ve daha fazla ayarı denetler. Örneğin, iOS cihaz kullanıcılarının cihazın kamerasını kullanmasını engelleyen bir cihaz kısıtlama profili oluşturun. 
 
-## <a name="education"></a>Eğitim
-Windows Sınav Zamanı uygulamasının seçeneklerini yapılandırmanıza olanak tanır. Bu seçenekleri yapılandırdığınızda, sınav tamamlanana kadar cihazda başka uygulama çalıştırılamaz.
-Daha fazla bilgi için bkz. [Eğitim ayarlarını yapılandırma](education-settings-configure.md)
+Bu özellik şunları destekler: 
 
-## <a name="certificates"></a>Sertifikalar
-Bu profil türü cihazlara atanabilen ve Wi-Fi, VPN ve e-posta profillerinin kimliğini doğrulamak için kullanılan güvenilen, SCEP ve PKCS sertifikalarını yapılandırmanıza olanak tanır.
-Daha fazla bilgi için bkz. [Sertifikaları yapılandırma](certificates-configure.md) Android, iOS, Windows Phone 8.1 ve Windows 8.1 ve Windows 10'u destekler.
+- Android
+- iOS
+- Mac OS
+- Windows 10
+- Windows 10 Team
 
-## <a name="edition-upgrade"></a>Sürüm yükseltme
-Bu profil türü, Windows 10'un bazı sürümlerini çalıştıran cihazları otomatik olarak yeni bir sürüme yükseltmenizi sağlar.
-Daha fazla bilgi için bkz. [Windows 10 sürüm yükseltmelerini yapılandırma](edition-upgrade-configure-windows-10.md) Yalnızca Windows 10'u destekler.
+## <a name="email-profile"></a>E-posta profili
+[E-posta ayarları](email-settings-configure.md) profili, cihazlarda Exchange ActiveSync e-posta ayarları oluşturur, atar ve izler. E-posta profilleri tutarlılık sağlar, destek çağrılarını azaltır ve son kullanıcıların, herhangi bir kurulum yapmalarına gerek kalmadan kendi cihazlarından şirket e-postasına erişmelerini sağlar. 
 
-## <a name="endpoint-protection"></a>Endpoint protection
-Bu profil türü, Windows 10 cihazları için BitLocker ve Windows Defender ayarlarını yapılandırmanızı sağlar.
-Daha fazla bilgi için bkz. [Windows 10 için Endpoint protection ayarları ](endpoint-protection-windows-10.md) Yalnızca Windows 10'u destekler.
+Bu özellik şunları destekler: 
 
-## <a name="windows-information-protection"></a>Windows Bilgi Koruması
-Windows Bilgi Koruması, çalışanın deneyimine başka hiçbir şekilde müdahale etmeden veri sızıntılarına karşı koruma sağlamaya yardımcı olur. Ayrıca, ortamınızda veya diğer uygulamalarda değişiklik yapmaya gerek kalmadan, kuruluşa ait cihazlarda ve çalışanların iş yerine getirdiği kişisel cihazlarda yanlışlıkla ortaya çıkabilecek veri sızıntılarına karşı kurumsal uygulamaları ve verileri korumaya da yardımcı olur.
-Daha fazla bilgi için [Windows Bilgi Koruması’nı yapılandırma](windows-information-protection-configure.md) konusuna bakın. Yalnızca Windows 10’u destekler.
+- Android
+- iOS
+- Windows Phone 8.1
+- Windows 10
 
-## <a name="custom"></a>Özel
-Özel ayarlar, Intune’da yerleşik olarak sağlanmayan cihaz ayarlarını atamanıza olanak tanır. Android cihazlarda, örneğin cihazı yapılandıran OMA-URI değerlerini belirtebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz.
-Daha fazla bilgi için bkz. [Özel ayarları yapılandırma](custom-settings-configure.md) Android, iOS, macOS ve Windows Phone 8.1'i destekler.
+## <a name="wi-fi-profile"></a>Wi-Fi profili
+[Wi-Fi ayarları](wi-fi-settings-configure.md), kullanıcılar ve cihazlar için kablosuz ağ ayarları atar. Bir Wi-Fi profili atadığınızda, kullanıcılar kurumsal Wi-Fi ağınıza, ağı kendileri yapılandırmak zorunda kalmadan erişim elde eder. 
 
-## <a name="next-steps"></a>Sonraki adımlar
-Cihazları yapılandırmaya başlamak için listedeki profil türlerinden birini seçin.
+Bu özellik şunları destekler: 
+
+- Android
+- iOS
+- Mac OS
+- Windows 8.1 (yalnızca içeri aktarma)
+
+## <a name="vpn-profile"></a>VPN profili
+[VPN ayarları](vpn-settings-configure.md), kuruluşunuzdaki kullanıcılara ve cihazlara VPN profilleri atar, böylece ağa kolayca ve güvenli bir şekilde bağlanabilirler. 
+
+Sanal özel ağlar (VPN’ler), kullanıcılara şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. 
+
+Bu özellik şunları destekler: 
+
+- Android
+- iOS
+- Mac OS
+- Windows Phone 8.1
+- Windows 8.1
+- Windows 10
+
+## <a name="education-profile"></a>Eğitim profili
+[Eğitim ayarları](education-settings-configure.md), [Windows Sınav Zamanı uygulamasının](https://education.microsoft.com/gettrained/win10takeatest) seçeneklerini yapılandırır. Bu seçenekleri yapılandırdığınızda, sınav tamamlanana kadar cihazda başka uygulama çalıştırılamaz.
+
+## <a name="certificates-profile"></a>Sertifika profili
+[Sertifikalar](certificates-configure.md), cihazlara atanabilen ve Wi-Fi, VPN ve e-posta profillerinin kimliğini doğrulamak için kullanılan güvenilen, SCEP ve PKCS sertifikalarını yapılandırır.
+
+Bu özellik şunları destekler: 
+
+- Android
+- iOS
+- Windows Phone 8.1
+- Windows 8.1
+- Windows 10
+
+## <a name="edition-upgrade-profile"></a>Sürüm yükseltme profili
+[Windows 10 sürüm yükseltmeleri](edition-upgrade-configure-windows-10.md), Windows 10'un bazı sürümlerini çalıştıran cihazları otomatik olarak yeni bir sürüme yükseltmenizi sağlar.
+
+Bu özellik şunları destekler: Yalnızca Windows 10
+
+## <a name="endpoint-protection-profile"></a>Endpoint protection profili
+[Windows 10 için Endpoint protection ayarları](endpoint-protection-windows-10.md) Windows 10 cihazları için BitLocker'ı ve Windows Defender ayarlarını yapılandırır.
+
+Bu özellik şunları destekler: Yalnızca Windows 10
+
+## <a name="windows-information-protection-profile"></a>Windows Bilgi Koruması profili
+[Windows Bilgi Koruması](windows-information-protection-configure.md), çalışanın deneyimine müdahale etmeden veri sızıntılarına karşı koruma sağlamaya yardımcı olur. Ayrıca, çalışanların işte kullandıkları kuruluşa ait cihazlardaki ve kişisel cihazlardaki kazayla veri sızıntılarına karşı kurumsal uygulamaların ve verilerin korunmasına yardımcı olur. Bunu ortamınızda veya diğer uygulamalarda değişiklik yapmaya gerek kalmadan yapar.
+
+Bu özellik şunları destekler: Yalnızca Windows 10
+
+## <a name="custom-profile"></a>Özel profil
+[Özel ayarlar](custom-settings-configure.md), Intune’da yerleşik olarak sağlanmayan cihaz ayarlarını atamanıza olanak tanır. Örneğin, Android cihazlarda, OMA-URI değerleri girebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz. 
+
+Bu özellik şunları destekler: 
+
+- Android
+- iOS
+- Mac OS
+- Windows Phone 8.1

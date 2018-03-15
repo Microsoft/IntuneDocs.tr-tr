@@ -1,10 +1,10 @@
 ---
 title: "Cihaz uyumluluğunu izleme"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Cihaz uyumluluğunu izleme hakkında bilgi edinin.\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,26 +15,26 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9cd8bb0486164dd9dfe020261da9079ea5a68633
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 708ed5a335d3475c213a536da9072afb1ad32ef9
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-monitor-device-compliance-in-intune"></a>Intune'da cihaz uyumluluğunu izleme
+# <a name="monitor-device-compliance-in-intune"></a>Intune'da cihaz uyumluluğunu izleme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 **Genel Bakış** dikey penceresinde **uyumluluk profillerinizin** durumunun özetini görüntüleyebilirsiniz.
-Detaya gitmek için grafiklere tıklayarak etkileşimli çalışabilirsiniz. Yapılandırılmış birden çok uyumluluk profiliniz varsa, ilke dikey penceresine gidip **Yönet** bölümünde **Raporlar**’ı seçerek her ilkenin durumunu da görüntüleyebilirsiniz.  Bulunan raporların ayrıntıları aşağıda listelenmiştir.
+Detaya gitmek için grafiklere tıklayarak etkileşimli çalışabilirsiniz. Yapılandırılmış birden çok uyumluluk profiliniz varsa, ilke durumunu **Yönet** > **Raporlar** altındaki ilke dikey penceresinde görebilirsiniz.
 
 ##  <a name="device-compliance"></a>Cihaz uyumluluğu
 
-Cihaz uyumluluğu raporunun özetlenmiş görünümü, size aşağıdaki değerlendirmelerden biriyle raporlanan cihaz sayısı hakkında toplu bilgileri gösterir:
+Cihaz uyumluluğu raporunun özet görünümü, aşağıdaki durumlardan birinde raporlama yapan cihaz sayısı hakkında toplu bilgileri listeler:
 
-- **Uyumlu**: Cihaz belirttiğiniz uyumluluk profili ayarlarına göre kısa süre önce uyumluluk açısından değerlendirilmiş ve uyumlu olduğu saptanmıştır.
+- **Uyumlu**: Cihaz yakın zamanda değerlendirilmiş olup, belirttiğiniz uyumluluk profili ayarları ile uyumludur.
 - **Uyumsuz**: Cihaz değerlendirilmiş ve uyumsuz olduğu saptanmıştır.  Profilde bir yetkisiz kullanım süresi belirtilmişse, yetkisiz kullanım süresi sona erdiğinden cihaz uyumsuz duruma gelmiştir.
-- **Yetkisiz kullanım süresi**: Cihaz değerlendirilmiş ve uyumsuz olduğu saptanmıştır. Bununla birlikte, cihaz gerçekten uyumsuz olarak işaretlenmeden önce yetkisiz kullanım süresi geçerli olacaktır.
+- **Yetkisiz kullanım süresi**: Cihaz değerlendirilmiş ve uyumsuz olduğu saptanmıştır. Bununla birlikte, cihaz uyumsuz olarak işaretlenmeden önce yetkisiz kullanım süresi geçerli olacaktır.
 
 Tek tek cihazlar ve kullanıcılarla ilgili diğer ayrıntıları görmek için, her bölümde detaya gidebilirsiniz.
 

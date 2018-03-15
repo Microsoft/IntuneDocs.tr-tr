@@ -1,9 +1,9 @@
 ---
 title: "Intune ile uygulama tabanlı koşullu erişim"
-description: "Uygulama tabanlı koşullu erişimin Intune ile nasıl çalıştığına ilişkin kavramları anlayın."
+description: "Intune ile uygulama tabanlı koşullu erişimin nasıl çalıştığı hakkında bilgi edinin."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43421ac02fc3791e2827d980adcb708619cde9b8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim
 
@@ -54,7 +54,7 @@ Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamı�
 > [!NOTE]
 > Aşağıdaki akış çizelgesi yapısı diğer yönetilen uygulamalar için kullanılabilir.
 
-![Intune akış çizelgesi ile uygulama tabanlı koşullu erişim](./media/ca-intune-common-ways-3.png)
+![Akış grafiğinde gösterilen uygulama tabanlı koşullu erişim süreci](./media/ca-intune-common-ways-3.png)
 
 1.  Kullanıcı, Azure AD kimlik doğrulamasını Outlook uygulamasından gerçekleştirmeye çalışır.
 

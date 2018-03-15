@@ -1,13 +1,13 @@
 ---
-title: "Azure portalını kullanmaya başlama"
-titlesuffix: Azure portal
-description: "Azure portalında Intune için pano oluşturma ve paylaşma hakkında bilgi edinin."
+title: "Azure portalında Microsoft Intune’u kullanmaya başlama"
+titlesuffix: 
+description: "Azure portalında Microsoft Intune için pano oluşturma, paylaşma ve gezinme hakkında bilgi edinin."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
-ms.topic: article
+ms.date: 02/22/2018
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,21 +15,21 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27567c8a8b8b406bbffceafc1d742b202999425f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="getting-started-with-intune-in-the-azure-portal"></a>Azure portalında Intune’u kullanmaya başlama
+# <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Azure portalında Microsoft Intune’u kullanmaya başlama
 
-Azure portalı, Intune hizmetini bulabileceğiniz yerdir. Azure’da, birçoğunu düzenli olarak kullanamayacağınız birçok hizmet mevcuttur. Panonuzu ve kenar çubuğunuzu özelleştirmek, Intune ile cihaz yönetmek üzere her oturum açtığınızda doğru bilgileri hızla bulmanıza yardımcı olur.
+Azure portalı, Microsoft Intune hizmetini bulabileceğiniz yerdir. Azure’da birçoğunu düzenli olarak kullanamayacağınız çok sayıda hizmet mevcuttur. Azure’da panonuzu ve kenar çubuğunuzu özelleştirmek, Intune ile cihaz yönetmek üzere her oturum açtığınızda doğru bilgileri hızla bulmanıza yardımcı olur.
 
 ## <a name="changing-the-sidebar"></a>Kenar çubuğunu değiştirme
 
-Azure portalının sol tarafındaki __kenar çubuğu__, size kullanılabilir Azure hizmetlerinin bir listesini gösterir. Bu kapsamlı listenin varsayılan görüntüsünü değiştirerek sizin için önemli olan hizmetleri sürekli görüntüleyebilirsiniz. Bu örnekte, listenin başına eklenecek hizmet olarak Intune’u kullanacağız.
+Azure portalının sol tarafındaki __kenar çubuğu__, size kullanılabilir Azure hizmetlerinin bir listesini gösterir. Bu kapsamlı listenin varsayılan görüntüsünü değiştirerek sizin için önemli olan hizmetleri sürekli görüntüleyebilirsiniz. Aşağıdaki bilgilerde listenin başına eklenecek hizmet örneği olarak Intune kullanılır.
 
-![“Diğer hizmetler” listesinde Intune’u arayan bir kullanıcı.](./media/azure-add-intune1.png)
+![‘Diğer hizmetler’ listesinde Microsoft Intune’u arayan bir kullanıcı.](./media/azure-add-intune1.png)
 
 1. Sayfanın solundaki kenar çubuğunun altında **Diğer hizmetler**’i seçin.
 2. Filtre kutusunda **Intune**’u arayın.
@@ -38,11 +38,11 @@ Azure portalının sol tarafındaki __kenar çubuğu__, size kullanılabilir Azu
 
 ## <a name="changing-the-dashboard"></a>Panoyu değiştirme
 
-Varsayılan giriş sayfanız **panodur**. Burada, sizin için önem taşıyan bilgileri göstermek üzere kutucukları özelleştirirsiniz.
+Varsayılan giriş sayfanız **panodur**. Bu sayfada, sizin için önem taşıyan bilgileri göstermek üzere kutucukları özelleştirirsiniz.
 
 ![Genel yeni panonun görüntüsü. Tüm hizmetleri soldaki kenar çubuğunda ve ana panoyu ortada görüntüler. Pano değiştirme düğmelerinin yanı sıra tüm kaynaklara, hızlı başlangıç eğiticilerine, hizmet durumuna ve Azure marketine erişim sağlayan kutucuklar da üsttedir.](./media/azure-default-dashboard.png)
 
-Geçerli panonuzu değiştirmek için **Panoyu düzenle** düğmesini seçin. Varsayılan panonuzu değiştirmek istemiyorsanız **Yeni bir pano** da oluşturabilirsiniz. Yeni bir pano oluşturmak size **Kutucuk Galerisi** olan boş, özel bir pano sağlar. Bu galeri, kutucuk eklemenize veya düzenlemenize izin verir. Kutucukları **Genel** kategorilerinden ve **Türlerinden**, **Arama** ile veya bir **Kaynak grubu** veya**Etiket** aracılığıyla bulabilirsiniz.
+Geçerli panonuzu değiştirmek için **Panoyu düzenle** düğmesini seçin. Varsayılan panonuzu değiştirmek istemiyorsanız **Yeni bir pano** da oluşturabilirsiniz. Yeni bir pano oluşturmak, size **Kutucuk Galerisi** olan boş, özel bir pano sağlar ve burada kutucuk ekleyebilir veya bunları yeniden düzenleyebilirsiniz. Kutucukları **Genel** kategorilerinden ve **Türlerinden**, **Arama** ile veya bir **Kaynak grubu** veya**Etiket** aracılığıyla bulabilirsiniz.
 
 Ayrıca herhangi bir **üç nokta** düğmesine tıklayıp **Panoya sabitle**’yi seçerek kutucukları doğrudan panonuza ekleyebilirsiniz.
 
@@ -52,7 +52,7 @@ Bu özellik, Intune’a kullanıcı ve gruplar gibi daha fazla içerik eklediği
 
 ## <a name="using-services"></a>Hizmetleri kullanma
 
-Intune’u veya Azure’da herhangi bir hizmeti açtığınızda, hizmet bir **dikey pencerede** görüntülenir. Intune’da **Kullanıcılar**, **Gruplar** ve **Mobil uygulamalar** gibi ilk kullandığınız iş yükleri tam ekran bir dikey pencerede görüntülenir. İş yükünü seçtiğinizde bu dikey pencere tam sayfada açılır. Diğer dikey pencereler, açıldıklarında dikey pencerenin sağ tarafından kayar ve geldikleri ana pencerenin altında daralır.
+Microsoft Intune’u veya Azure’da herhangi bir hizmeti açtığınızda, hizmet bir **dikey pencerede** görüntülenir. Intune’da **Kullanıcılar**, **Gruplar** ve **Mobil uygulamalar** gibi ilk kullandığınız iş yükleri tam ekran bir dikey pencerede görüntülenir. İş yükünü seçtiğinizde bu dikey pencere tam sayfada açılır. Diğer dikey pencereler, açıldıklarında dikey pencerenin sağ tarafından kayar ve geldikleri ana pencerenin altında daralır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

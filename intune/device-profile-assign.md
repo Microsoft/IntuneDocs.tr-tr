@@ -1,12 +1,11 @@
 ---
-title: Intune ile cihaz profilleri atama
-titlesuffix: Azure portal
-description: "Intune cihaz profilini oluşturduktan sonra, bu profili cihazlara atamayı öğrenmek için bu konuyu kullanın.\""
+title: "Microsoft Intune’da cihaz profilleri atama | Microsoft Docs"
+description: "Kullanıcılara ve cihazlara cihaz profilleri ve ilkeleri atamak için Azure portalını kullanma ve Microsoft Intune'da profil atamalarından grupların hariç tutulması"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 07/05/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,45 +14,44 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef03eeab32050559d34d3d7d580c06c21f5ffb05
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 512b9a0506241f87b5e0c19cf19cd6fe629fb291
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-assign-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profillerini atama
+# <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama 
+
+Bir profil oluşturduktan sonra, profili Azure Active Directory gruplarına atayabilirsiniz.
 
 ## <a name="assign-a-device-profile"></a>Bir cihaz profili atama
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
-1. **Cihaz yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
-2. Profil listesi dikey penceresinde yönetmek istediğiniz profili seçin ve ardından <*profil adı*> **Raporlar** dikey penceresinde **Yönet** > **Atamalar**’ı seçin.
-3. Gelecek dikey pencerede **Dahil et** (grupları dahil etmek için) veya **Dışla** (grupları dışlamak için) seçeneklerinden birini belirtin, daha sonra **Grup seç**’e tıklayın.
-![Grupları bir profil atamasına dahil etme veya atamadan dışlama](./media/group-include-exclude.png)
-4. **Grup seç** dikey penceresinde, atamaya dahil etmek veya atamadan dışlamak istediğiniz Azure AD gruplarını seçin. **CTRL** tuşunu basılı tutarak birden çok grup seçebilirsiniz.
-4. Bitirdiğinizde, **Grupları seçin** dikey penceresinde **Seç** düğmesini seçin.
+1. [Azure portalında](https://portal.azure.com), **Tüm Hizmetler**’i seçin ve **Microsoft Intune** araması yapın.
+2. **Microsoft Intune**’da, **Cihaz yapılandırması**’nı ve **Profiller**’i seçin. 
+3. Profil listesinde, atamak istediğiniz profili ve ardından **Atamalar**’ı seçin.
+4. Grupları **Dahil Etmeyi** veya **Dışlamayı** seçin ve ardından **Grupları seçin**:  
 
+    ![Grupları bir profil atamasına dahil etme veya atamadan dışlama](./media/group-include-exclude.png)
 
+5. Gruplarınızı seçtiğinizde, bir Azure Activity Directory grubu seçersiniz. Birden çok grup seçmek için **CTRL** tuşunu basılı tutun.
+6. İşiniz bittiğinde, değişikliklerinizi **Kaydedin**.
 
-## <a name="how-to-exclude-groups-from-a-device-profile-assignment"></a>Grupları bir cihaz profil atamasından dışlama
+## <a name="exclude-groups-from-a-profile-assignment"></a>Grupları bir profil atamasından dışlama
 
 Intune cihaz yapılandırma profilleri, grupları ilke atamasından dışlamanıza olanak tanır. Örneğin **Tüm şirket kullanıcıları** grubuna bir cihaz profili atayabilir ve **Üst Düzey Yönetim Kadrosu** grubundan istediğiniz üyeleri dışlayabilirsiniz.
 
-Bir atamadan grupları dışlarken yalnızca kullanıcı veya yalnızca cihaz gruplarını dışlayın, grupları karışık olarak dışlamayın. Intune, grupları dışlarken kullanıcı cihaz ilişkisini göz önünde bulundurmaz. Kullanıcı gruplarını dahil ederken cihaz gruplarını dışlamak, istediğiniz sonuçları vermeyebilir. Karışık gruplar kullanmanız veya başka çakışmaların ortaya çıkması durumunda, dahil etme işleminin dışlama işlemine önceliği vardır.
+Grupları bir atamadan dışladığınızda, yalnızca kullanıcıları dışlayın ya da yalnızca cihaz gruplarını dışlayın (grupların bir karışımını değil); Intune herhangi bir kullanıcı-cihaz ilişkisini dikkate almaz. Kullanıcı gruplarını dahil ederken cihaz gruplarını dışlamak, istediğiniz sonuçları vermeyebilir. Karışık gruplar kullanmanız veya başka çakışmaların ortaya çıkması durumunda, dahil etme işleminin dışlama işlemine önceliği vardır.
 
 Örneğin kuruluşunuzda bilgi noktası cihazları hariç tüm cihazlara cihaz profilleri atamak istiyorsunuz. Bunun için **Tüm Kullanıcılar** grubunu dahil edip **Tüm Cihazlar** grubunu dışlıyorsunuz.
 
 Bu durumda, cihazı **Tüm Cihazlar** grubunun parçası olan kullanıcılar bile dahil olmak üzere tüm kullanıcılarınız ve onların cihazları bu ilkeyi alır. 
 
-Dışlama işlemi yalnızca grupların doğrudan üyesi olanları değerlendirmeye alır ve bir kullanıcıyla ilişkili cihazları dikkate almaz. Ancak kullanıcısı olmayan cihazlar bu ilkeyi almaz çünkü bu cihazların **Tüm Kullanıcılar** grubuyla bir ilişkisi yoktur. 
+Dışlama işlemi yalnızca grupların doğrudan üyesi olanları değerlendirmeye alır ve bir kullanıcıyla ilişkili cihazları dikkate almaz. Ancak, bir kullanıcısı olmayan cihazlara ilke uygulanmaz. Bunun nedeni, bu cihazların **Tüm Kullanıcılar** grubuyla ilişkisi olmamasıdır. 
 
-**Tüm Cihazlar** grubunu dahil edip **Tüm Kullanıcılar** grubunu dışlarsanız ilkeyi tüm gruplar alacaktır. Bu örnekteki amaç, ilişkili kullanıcısı olan cihazları bu ilkeden dışlamaktır. Ancak cihazlar dışlanamaz çünkü dışlama özelliği, yalnızca grupların doğrudan üyesi olanları hesaba katar. 
+**Tüm Cihazlar** grubunu dahil edip **Tüm Kullanıcılar** grubunu dışlarsanız ilkeyi tüm gruplar alacaktır. Bu senaryodaki amaç, ilişkili kullanıcısı olan cihazları bu ilkeden dışlamaktır. Ancak cihazlar dışlanmaz çünkü dışlama, yalnızca grupların doğrudan üyesi olanları hesaba katar. 
 
->[!Tip]
->Dışlama özelliği, uyumluluk ilkeleri ve uygulama atama için şu anda kullanılabilir değildir. Üyeleri bir atamadan dışlamak için Kullanılabilir ve Uygulanamaz atama amaçlarını kullanabilirsiniz. Örneğin bir uygulamayı **Kullanılabilir** amacıyla **Tüm şirket kullanıcıları** grubuna, **Uygulanamaz** amacıyla **Üst Düzey Yönetim Kadrosu** grubuna atarsanız uygulama, **Üst Düzey Yönetim Kadrosu** grubundaki kullanıcılar *hariç* tüm kullanıcılara atanır. Uygulamayı **Gerekli** amacıyla **Tüm şirket kullanıcıları** grubuna atarsanız **Üst Düzey Yönetim Kadrosu** grubundaki kullanıcılar dışlanmaz.
- 
+>[!TIP]
+>Dışlamalar, uyumluluk ilkeleri ve uygulama atama için kullanılabilir değildir. Üyeleri bir atamadan dışlamak için **Kullanılabilir** ve **Uygulanamaz** atamalarını kullanabilirsiniz. Örneğin bir uygulamayı **Kullanılabilir** amacıyla **Tüm şirket kullanıcıları** grubuna ve uygulamayı **Uygulanamaz** amacıyla **Üst Düzey Yönetim Kadrosu** grubuna atarsınız. Uygulama, **Üst Düzey Yönetim Kadrosu** grubundaki kullanıcılar *hariç* tüm kullanıcılara atanır. Uygulamayı **Gerekli** amacıyla **Tüm şirket kullanıcıları** grubuna atarsanız **Üst Düzey Yönetim Kadrosu** grubundaki kullanıcılar da dahil edilir.
     
 ## <a name="next-steps"></a>Sonraki adımlar
-Cihaz profili atamalarını izlemenize yardımcı olacak bilgiler için bkz. [Cihaz profillerini izleme](device-profile-monitor.md).
+Cihaz profili atamaları izleme hakkında yönergeler için [Cihaz profillerini izleme](device-profile-monitor.md) konusuna bakın.

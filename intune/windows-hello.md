@@ -1,32 +1,32 @@
 ---
-title: "İş İçin Windows Hello’yu kullanma"
-titleSuffix: Azure portal
+title: "İş için Windows Hello ile Microsoft Intune tümleştirmesi"
+titleSuffix: 
 description: "Yönetilen cihazlarda İş İçin Windows Hello kullanımını denetlemeye yönelik bir ilke oluşturmayı öğrenin.\""
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-windows-hello-for-business"></a>İş İçin Windows Hello’yu kullanma
+# <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>İş için Windows Hello ile Microsoft Intune tümleştirmesi
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune bir parolayı, akıllı kartı ya da sanal akıllı kartı değiştirmek için Active Directory veya bir Azure Active Directory hesabını kullanıldığı alternatif bir oturum açma yöntemi olan İş İçin Windows Hello (eskiden İş için Microsoft Passport) ile tümleşir.
+İş için Windows Hello (önceki adıyla İş İçin Microsoft Passport) ile Microsoft Intune’u tümleştirebilirsiniz.
 
-İş İçin Hello, oturum açmak için parola yerine bir *kullanıcı hareketi* kullanmanıza izin verir. Kullanıcı hareketi basit bir PIN, Windows Hello gibi bir biyometrik kimlik doğrulaması ya da parmak izi okuyucu gibi harici bir cihaz olabilir.
+ İş İçin Hello bir parolayı, akıllı kartı ya da sanal akıllı kartı değiştirmek için Active Directory veya bir Azure Active Directory hesabı kullanan alternatif bir oturum açma yöntemidir. Oturum açmak için parola yerine bir *kullanıcı hareketi* kullanmanıza imkan tanır. Kullanıcı hareketi basit bir PIN, Windows Hello gibi bir biyometrik kimlik doğrulaması ya da parmak izi okuyucu gibi harici bir cihaz olabilir.
 
 Intune, İş İçin Hello ile iki şekilde tümleşir:
 
@@ -50,17 +50,17 @@ PIN’i denetlemek için iki ilke türünü de ayarladıysanız, İş için Wind
 
 1.  Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2.  Intune dikey penceresinde **Cihaz kaydı**’nı ve ardından **Windows kaydı** > **İş İçin Windows Hello**’yu seçin.
+2.  Intune sayfasında **Cihaz kaydı**’nı ve ardından **Windows kaydı** > **İş İçin Windows Hello**’yu seçin.
 
-3.  Açılan dikey pencerede **Varsayılan** ayarları seçin.
+3.  Açılan sayfada **Varsayılan** ayarları seçin.
 
-4.  **Tüm Kullanıcılar** dikey penceresinde **Özellikler**’e tıklayın, ardından İş İçin Windows Hello ayarları için **Ad** ve isteğe bağlı olarak **Açıklama** girin.
+4.  **Tüm Kullanıcılar** sayfasında **Özellikler**’e tıklayın, ardından İş İçin Windows Hello ayarları için **Ad** ve isteğe bağlı olarak **Açıklama** girin.
 
-5. **Tüm Kullanıcılar** dikey penceresinde **Ayarlar**’a tıklayın ve **İş İçin Windows Hello’yu yapılandır** seçeneği için aşağıdakilerden birini seçin:
+5. **Tüm Kullanıcılar** sayfasında **Ayarlar**’a tıklayın ve **İş İçin Windows Hello’yu yapılandır** seçeneği için aşağıdakilerden birini seçin:
 
     - **Devre Dışı**. İş İçin Windows Hello’yu kullanmak istemiyorsanız, bu ayarı seçin. Bu durumda, ekrandaki tüm diğer ayarlar kullanılamaz hale gelir.
     - **Etkin**. İş İçin Windows Hello ayarlarını yapılandırmak istiyorsanız bu ayarı seçin.
-    - **Yapılandırılmadı**. Intune’un İş İçin Windows Hello ayarlarını denetlemesini istemiyorsanız bu ayarı seçin. Windows 10 cihazlarında bulunan İş için Windows Hello ayarları değiştirilmez. Dikey penceredeki diğer ayarlardan hiçbiri kullanılamaz.
+    - **Yapılandırılmadı**. Intune’un İş İçin Windows Hello ayarlarını denetlemesini istemiyorsanız bu ayarı seçin. Windows 10 cihazlarında bulunan İş için Windows Hello ayarları değiştirilmez. Sayfadaki diğer ayarlardan hiçbiri kullanılamaz.
 
 6.  Önceki adımda **Etkin**’i seçtiyseniz, tüm kayıtlı Windows 10 ve Windows 10 Mobile cihazlarına uygulanacak olan gerekli ayarları yapılandırın.
 

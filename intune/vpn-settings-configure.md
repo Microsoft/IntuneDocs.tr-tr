@@ -1,7 +1,7 @@
 ---
-title: "Intune VPN ayarlarını yapılandırma"
-titleSuffix: Azure portal
-description: "Intune’u, yönettiğiniz cihazlarda VPN bağlantılarını yapılandırmak için kullanmayı öğrenin.\""
+title: "Microsoft Intune’da VPN ayarlarını yapılandırma"
+titleSuffix: 
+description: "Microsoft Intune’u yönettiğiniz cihazlarda sanal özel ağ (VPN) bağlantılarını yapılandırmak için kullanmayı öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Microsoft Intune’da VPN ayarlarını yapılandırma
 
@@ -48,7 +48,7 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 
 
 > [!IMPORTANT]
-> Bir cihaza atanan VPN profillerini kullanmadan önce profil için geçerli VPN uygulamasını yüklemeniz gerekir. Uygulamayı Intune kullanarak atamanıza yardımcı olması için [Microsoft Intune'da uygulama yönetimi nedir](app-management.md) konusunda verilen bilgileri kullanabilirsiniz.  
+> Bir cihaza atanan VPN profillerini kullanmadan önce profil için geçerli VPN uygulamasını yüklemeniz gerekir. Uygulamayı Intune kullanarak atamanıza yardımcı olması için [Microsoft Intune'da uygulama yönetimi nedir?](app-management.md) makalesinde verilen bilgileri kullanabilirsiniz.  
 
 [Özel VPN profilleri oluşturma](custom-vpn-profiles-create.md) konu başlığı altında verilen URI ayarlarını kullanarak özel VPN profilleri oluşturmayı öğrenin.     
 
@@ -88,7 +88,7 @@ VPN profilleri, farklı üreticilerden farklı bağlantı türleri ve farklı pr
 
 ### <a name="certificates"></a>Sertifikalar
 
-VPN profilini oluştururken, Intune’da önceden oluşturduğunuz bir SCEP veya PKCS sertifika profilini seçersiniz. Bu kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için oluşturduğunuz bir güvenilir sertifika profiline (veya *kök sertifikaya*) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, VPN bağlantısının kimliğini doğrulayan bilgisayara atanır. Bu, genellikle VPN sunucusudur.
+VPN profilini oluştururken, Intune’da önceden oluşturduğunuz bir SCEP veya PKCS sertifika profilini seçersiniz. Bu profil, kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini belirtmek için oluşturduğunuz bir güvenilir sertifika profiline (veya *kök sertifikaya*) göre kimlik doğrulaması yapmak için kullanılır. Güvenilir sertifika, VPN bağlantısının kimliğini doğrulayan bilgisayara atanır. Bu, genellikle VPN sunucusudur.
 
 Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [Microsoft Intune ile sertifikaları yapılandırma](certificates-configure.md).
 

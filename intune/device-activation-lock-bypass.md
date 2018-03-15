@@ -1,10 +1,10 @@
 ---
 title: "Intune ile iOS Etkinleştirme Kilidini atlama"
-titlesuffix: Azure portal
-description: "Intune'u, kilitli cihazlara erişmek üzere iOS Etkinleştirme Kilidini atlamak için nasıl kullanacağınızı öğrenin.\""
+titlesuffix: Microsoft Intune
+description: "Intune'u kilitli cihazlara erişmek üzere iOS Etkinleştirme Kilidini atlamak için nasıl kullanacağınızı öğrenin."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15c288b31ab3fb31080aff72d2461dc1d24ec5ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6141b325c5087544a1b78e03209322023f2374e3
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Denetimli iOS cihazlarda Intune ile Etkinleştirme Kilidini atlama
 
@@ -69,11 +69,11 @@ Cihazlarda Etkinleştirme Kilidi’ni atlayabilmeniz için aşağıdaki yönerge
 
 Intune **Etkinleştirme Kilidini Atla** uzak cihaz eylemi, bir iOS cihazından etkinleştirme kilidini kullanıcının Apple Kimliği ve parolası olmadan kaldırır. Siz etkinleştirme kilidini atladıktan sonra, iPhone’umu Bul uygulaması başlatıldığında cihaz etkinleştirme kilidini yeniden açar. Etkinleştirme kilidini, ancak cihaza fiziksel erişiminiz varsa atlayın.
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
-4. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
-5. Yönettiğiniz cihazların listesinden denetimli bir iOS cihazı seçin, ardından **Etkinleştirme Kilidini Atla** uzak cihaz eylemini seçin.
+4. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin.
+5. Yönettiğiniz cihazların listesinden denetimli bir iOS cihazı seçin, **...Daha Fazla**’yı ve ardından **Etkinleştirme Kilidini Atla** uzak cihaz eylemini seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

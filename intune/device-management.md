@@ -1,12 +1,12 @@
 ---
-title: "Intune ile cihazları yönetme"
-titleSuffix: Intune on Azure
-description: "Intune ile yönettiğiniz cihazları görmeyi ve bu cihazlar üzerinde çeşitli işlemler yapmayı öğrenin.\""
+title: "Microsoft Intune ile cihazları yönetme"
+titleSuffix: 
+description: "Intune ile yönettiğiniz cihazları gözden geçirin ve bu cihazlar üzerinde çeşitli işlemler yapın."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/31/2017
+ms.date: 02/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b034e144aa43d239874b484acb2a40be12aff7c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir?
 
@@ -29,8 +29,8 @@ BT yöneticisi olarak, yönetilen cihazların son kullanıcılarınızın işler
 
 **Cihazlar** iş yükü, yönettiğiniz cihazlarla ilgili bilgi sahibi olmanızı sağlar ve bu cihazlar üzerinde uzak görevler gerçekleştirmenize olanak tanır. İş yüküne erişmek için:
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune**’da **Cihazlar**’ı seçin.
 4. Cihaz bilgilerini görüntüleyebilir ve aşağıdaki uzak cihaz eylemlerini gerçekleştirebilirsiniz:
     - **Genel bakış** - Yönetebileceğiniz kayıtlı cihazların anlık görüntüsü.
@@ -38,10 +38,12 @@ BT yöneticisi olarak, yönetilen cihazların son kullanıcılarınızın işler
     - **Azure AD cihazları** - Azure Active Directory (AD) ile kaydedilen veya bu hizmete katılan cihazların listesi. [Azure AD cihaz yönetimi](https://docs.microsoft.com/azure/active-directory/device-management-introduction) hakkında daha fazla bilgi edinin.
     - **Cihaz eylemleri** - Eylem, eylemin durumu, eylemi kimin başlattığı ve süresi dahil olmak üzere cihazda gerçekleştirilen uzak eylemlerin geçmişi.
 
-    ![Cihaz eylemlerini izleme](./media/monitor-device-actions.png)
+        ![Cihaz eylemlerini izleme ekran görüntüsü](./media/monitor-device-actions.png)
 
-    - **TeamViewer** - TeamViewer hizmeti, Intune ile yönetilen Android cihazlarda kullanıcıların BT yöneticilerinden uzaktan yardım almasını sağlar. [TeamViewer](device-profile-android-teamviewer.md) hakkında daha fazla bilgi edinin.
-
+    - **Denetim günlükleri** - Denetim günlükleri size, Microsoft Intune'da değişiklik yaratan etkinliklerin kaydını sağlar. [Denetim günlükleri](monitor-audit-logs.md) hakkında daha fazla bilgi edinin.
+    - **TeamViewer Bağlayıcısı** - TeamViewer hizmeti, Intune ile yönetilen Android cihazlarda kullanıcıların BT yöneticilerinden uzaktan yardım almasını sağlar. [TeamViewer](device-profile-android-teamviewer.md) hakkında daha fazla bilgi edinin.
+    - **Yardım ve Destek** - Sorun giderin, destek isteyin veya Intune durumunu görüntüleyin.  
+    
 ## <a name="available-device-actions"></a>Kullanılabilir cihaz eylemleri
 Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağlıdır.
 
@@ -63,4 +65,4 @@ Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağ
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Yönettiğiniz cihazlarda gerçekleştirilen eylemlerin durumunu görmek için **Cihaz Eylemleri**’ni seçin.
+- Yönettiğiniz cihazlarda gerçekleştirilen eylemlerin durumunu görmek için **Cihaz eylemleri**’ni seçin.

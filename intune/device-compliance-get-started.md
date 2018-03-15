@@ -1,29 +1,28 @@
 ---
-title: Intune cihaz uyumluluk ilkeleri
-titleSuffix: Azure portal
-description: "Microsoft Intune’da cihaz uyumluluğunu öğrenmek için bu konuyu kullanın\""
+title: Microsoft Intune cihaz uyumluluk ilkeleri
+titleSuffix: 
+description: "Microsoft Intune’da cihaz uyumluluğu hakkında bilgi edinin"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Intune cihaz uyumluluk ilkelerini kullanmaya başlama
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Microsoft Intune cihaz uyumluluk ilkelerini kullanmaya başlama
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-## <a name="what-is-device-compliance-in-intune"></a>Intune'da cihaz uyumluluğu nedir?
 
 Intune cihaz uyumluluk ilkeleri, bir cihazın Intune tarafından uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlar.
 
@@ -43,7 +42,7 @@ Bu kurallar aşağıdakileri içerir:
 
 Cihaz uyumluluk ilkelerini, cihazlarınızdaki uyumluluk durumunu izlemek için de kullanabilirsiniz.
 
-### <a name="device-compliance-requirements"></a>Cihaz uyumluluk gereksinimleri
+## <a name="device-compliance-requirements"></a>Cihaz uyumluluk gereksinimleri
 
 Uyumluluk gereksinimleri temelde, PIN veya şifreleme isteme gibi kurallardır. Bir uyumluluk ilkesinde bunun gerekli olduğunu veya gerekli olmadığını belirtebilirsiniz.
 

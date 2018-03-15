@@ -1,25 +1,26 @@
 ---
-title: "Windows 10 için Intune cihaz kısıtlama ayarları"
-titlesuffix: Azure portal
-description: "Windows 10 cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
+title: "Windows 10 için Microsoft Intune cihaz kısıtlama ayarları"
+titlesuffix: 
+description: "Windows 10 çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Microsoft Intune ayarlarını öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 ve üzeri cihaz kısıtlama ayarları
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune Windows 10 ve üzeri cihaz kısıtlama ayarları
+Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - Cihaz Azure Active Directory’ye katılmışsa ve otomatik kayıt etkinse, bu ilke ayarı uygulanmaz. 
    - Bu ilke ayarı, Windows 10 Home çalıştıran bilgisayarlara uygulanmaz.
 - **Elle kök sertifika yüklemesi (yalnızca mobil)** - Kullanıcının elle kök sertifikaları ve ara CAP sertifikaları yüklemesini engeller.
-- **Tanılama verileri gönderme** - Olası değerler şunlardır:
-    - **Hiçbiri** - Microsoft’a hiç veri gönderilmez
-    - **Temel** - Microsoft’a sınırlı bilgi gönderilir
-    - **Gelişmiş** - Microsoft’a gelişmiş tanılama bilgileri gönderilir
-    - **Tam** Gelişmiş ayarıyla aynı veriler, artı olarak cihazın durumuyla ilgili ek veriler gönderilir
+
 - **Kamera** - Cihazdaki kameranın kullanılmasına izin verin veya bunu engelleyin.
 - **OneDrive dosya eşitleme** - Cihazın dosyaları OneDrive’a eşitlemesini engeller.
 - **Çıkarılabilir depolama** - SD kartı gibi dış depolama cihazlarının cihazla kullanılıp kullanılamayacağını belirtir.
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **Cihaz bulma** - Bir cihazın diğer cihazlar tarafından bulunmasını engelleyin.
 - **Görev Değiştirici (yalnızca mobil)** - Cihazdaki görev değiştiriciyi engeller.
 - **SIM kart hatası iletişim kutusu (yalnızca mobil)** -SIM kart algılanmazsa cihazda bir hata iletisinin görüntülenmesini engeller.
+- **Ink Çalışma Alanı** - Kullanıcıların Ink çalışma alanına erişmesini engelleyin. Bu ayar yapılandırılmadığında, Ink çalışma alanı etkinleştirilir (özellik açılır) ve kullanıcının bunu kilit ekranının üst tarafında kullanmasına izin verilir.
 - **Otomatik yeniden dağıtım** - Yönetici haklarına sahip olan kullanıcıların cihaz kilidi ekranında **CTRL + Win + R** tuşunu kullanarak tüm kullanıcı verilerini ve ayarlarını silmelerini sağlar. Cihaz otomatik olarak yeniden yapılandırılacak ve yönetime yeniden kaydedilir.
 
 
@@ -75,6 +73,9 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
 -   **Girişi kişiselleştirme** – Cortana, dikte veya Microsoft Mağazası uygulamaları için bulut tabanlı konuşma hizmeti kullanılmasına izin vermez. Bu hizmetlere izin verirseniz Microsoft, hizmeti geliştirmek için sesli veri toplayabilir.
 -   **Eşleştirme ve gizlilik kullanıcı onayı istemlerini otomatik kabul et** – Windows'un, uygulama çalıştırırken eşleştirme ve gizlilik onay iletilerini otomatik olarak kabul etmesine izin ver.
+- **Kullanıcı etkinliklerini yayımla**: Bunu **Engelle** şeklinde ayarlayarak, görev değiştiricide paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önleyin.
+- **Yalnızca yerel etkinlikler**: Bunu **Engelle** şeklinde ayarlayarak, görev değiştiricide yalnızca yerel etkinliklere bağlı olan paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önleyin.
+
 
 Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **Uygulama başına gizlilik özel durumları**'nı kullanarak uygulama başına özel durumlar tanımlayabilirsiniz.
 
@@ -130,7 +131,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 ## <a name="locked-screen-experience"></a>Kilit ekranı deneyimi
 
 - **İşlem merkezi bildirimleri (yalnızca mobil)** - Cihaz kilitleme ekranında İşlem Merkezi bildiriminin görünmesine izin verir (yalnızca Windows 10 Mobile).
-- **Kilit ekranı resmi URL'si (yalnızca masaüstü)** - Windows kilit ekranı duvar kağıdı olarak kullanılacak PNG, JPG veya JPEG biçiminde bir resim URL'si belirtin. Kullanıcılar bunu değiştiremez.
+- **Kilit ekranı resmi URL'si (yalnızca masaüstü)** - Windows kilit ekranı duvar kağıdı olarak kullanılacak JPEG biçiminde bir resim URL'si belirtin. Kullanıcılar bunu değiştiremez.
 -   **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)** – Kullanıcıların süreyi yapılandırmasına izin verir 
 -   **Kilitleme ekranında Cortana (yalnızca masaüstü)**  – Cihaz kilitleme ekranındayken kullanıcının Cortana ile etkileşim kurmasına izin vermez (yalnızca Windows 10 masaüstü).
 -   **Kilitli ekranda bildirimler** – Cihaz kilitleme ekranında uyarı iletileri gösterilmesini engelleyin.
@@ -180,6 +181,8 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 -   **Varsayılan arama motoru** - Kullanılacak varsayılan arama motorunu belirtin. Son kullanıcılar bu değeri istediği zaman değiştirebilir.
 -   **Çıkışta tarama verilerini temizle** – Kullanıcı Edge'den çıktığında geçmişi ve tarama verilerini temizler.
 -   **Canlı Kutucuk verisi toplama** – Kullanıcı, Edge'den başlatma menüsüne bir site sabitlediğinde Windows'un Canlı Kutucuk’tan bilgi toplamasını durdurur.
+-  **Sık Kullanılanlar Listesi** - Sık Kullanılanlar dosyasının yolunu tanımlar. Örneğin, http://contoso.com/favorites.html.
+-  **Sık Kullanılanlarda değişikliği kısıtlama** - Kullanıcıların Sık Kullanılanlar listesine ekleme, sıralama veya düzenleme işlemleri uygulamasını engellemek için bunu **Engelle** olarak ayarlayın. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 

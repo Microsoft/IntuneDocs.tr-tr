@@ -1,7 +1,7 @@
 ---
-title: "Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme | Microsoft Docs"
-titlesuffix: Azure portal
-description: "Android for Work uygulaması çalıştırıldığında uygulamaya yapılandırma verilerini sağlamak için uygulama yapılandırma ilkelerini kullanmayı öğrenin."
+title: "Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme"
+titlesuffix: Microsoft Intune
+description: "Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbf1466b02da66e5c7d115d60aa43912322ebeb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 206e229e95633ce553637bcedef708ee5630864c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -30,8 +30,8 @@ Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarla
 > [!Note]  
 > Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın, uygulama yapılandırma ilkelerini destekleyecek şekilde oluşturulup oluşturulmadığını öğrenmek için uygulamanın geliştiricisine başvurun.
 
-1. Azure portalında oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Mobil uygulamalar** iş yükünü seçin.
 4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
 5. Aşağıdaki bilgileri ayarlayın:
@@ -41,7 +41,7 @@ Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarla
       Azure portalında görünecek profil açıklaması.
     - **Cihaz kaydı türü**  
       **Yönetilen cihazlar**’ı seçin.
-6. **Platform** için **Android**’i seçin.
+6. **Platform** için **Android for Work**’u seçin.
 7. Bir uygulama yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın.
 8. **Yapılandırma ayarlarını** seçin. Yapılandırmaları ayarlamak için şunları kullanabilirsiniz:
     - [Yapılandırma tasarımcısı](#Use-the-configuration-designer)
@@ -77,14 +77,15 @@ Atanan uygulama bir cihazda çalıştırıldığında, uygulama yapılandırma i
 
 Uygulamaların Android cihaz özelliklerine erişmesi iznini de önceden yapılandırabilirsiniz. Varsayılan olarak, konuma veya cihaz kamerasına erişim gibi cihaz izinlerine ihtiyacı olan Android uygulamaları kullanıcıdan izinleri kabul etmesini veya reddetmesini ister. Örneğin, uygulama cihazın mikrofonunu kullanıyorsa, kullanıcıdan mikrofonu kullanmak için uygulamaya izin vermesi istenir.
 
-1. Azure portalında oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
-3. **Mobil uygulamalar**’ı seçin. **Yönet** altında, **Uygulama yapılandırma ilkelerini** seçip **Ekle**’ye tıklayın.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Mobil uygulamalar**’ı seçin.
+3. **Yönet** altında, **Uygulama yapılandırma ilkelerini** seçip **Ekle**’ye tıklayın.
 4. Aşağıdaki bilgileri ayarlayın:
     - **Ad**. Azure portalında görünecek profil adı.
     - **Açıklama**. Azure portalında görünecek profil açıklaması.
-    - **Platform**. **Android**’i seçin.
-    - **Cihaz kaydı türü**. **Yönetilen cihazlar** sizin için önceden seçilmiştir.
+    - **Cihaz kaydı türü**. **Yönetilen cihazlar**’ı seçin.
+    - **Platform**. **Android for Work**’u seçin.
 5. Bir yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın.
 6. **İzinler** ve ardından **Ekle**’yi seçin.
 7. Kullanılabilir uygulama izinleri listesinden seçim yapın ve ardından **Tamam**’ı seçin.

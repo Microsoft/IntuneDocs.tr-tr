@@ -1,25 +1,25 @@
 ---
-title: "Intune'u iOS cihazında tekli oturum açma için yapılandırma"
-titlesuffix: Azure portal
-description: "Intune'u iOS cihazında tekli oturum açma için yapılandırmayı öğrenin.\""
+title: "Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırma"
+titlesuffix: 
+description: "Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırmayı öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>Intune'u iOS cihazında tekli oturum açma için yapılandırma
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,16 +35,16 @@ iOS cihazı Çoklu Oturum Açma özelliğinden yararlanmak için, aşağıdaki k
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
-2. **Cihaz yapılandırması** dikey penceresinde **Profiller**’i seçin.
-3. Profiller dikey penceresinde **Profil Oluştur**'u seçin, ad ve açıklama sağlayın, sonra da aşağıdaki ayarları yapılandırın:
+3. **Intune** sayfasında, **Cihaz yapılandırması**’nı seçin.
+2. **Cihaz yapılandırması** sayfasında **Profiller**’i seçin.
+3. Profiller sayfasında **Profil Oluştur**'u seçin, ad ve açıklama sağlayın, sonra da aşağıdaki ayarları yapılandırın:
    - **Platform**: **iOS** platformunu seçin. 
    - **Profil türü**: **Cihaz özellikleri**'ni seçin.
-4. **Cihaz özellikleri** dikey penceresinde **Çoklu Oturum Açma**’yı seçin.
+4. **Cihaz özellikleri** sayfasında **Çoklu Oturum Açma**’yı seçin.
 
-   ![Çoklu Oturum Açma dikey penceresi](./media/sso-blade.png)
+   ![Çoklu Oturum Açma sayfası](./media/sso-blade.png)
 
-2. Aşağıdaki özet tablosunun yardımıyla **Çoklu Oturum Açma** dikey penceresindeki alanları doldurun. Ayrıntılar için, tablodan sonraki bölümlere bakın.
+2. Aşağıdaki özet tablosunun yardımıyla **Çoklu Oturum Açma** sayfasındaki alanları doldurun. Ayrıntılar için, tablodan sonraki bölümlere bakın.
    
    |Alan  |Notlar|
    |---------|---------|
@@ -82,7 +82,7 @@ Kuruluşunuzda bulunan ve kullanıcı kimlik doğrulaması gerektiren tüm URL'l
 > [!NOTE]
 > Bu URL'ler düzgün biçimlendirilmiş FQDN'ler olmalıdır. Apple bunların `http://<yourURL.domain>` biçiminde olmasını gerektirir.
 
-URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit dize eşleştirmesi kullanılır; dolayısıyla `http://www.contoso.com/` URL ön eki `http://www.contoso.com:80/` ile eşleşmez. Öte yandan iOS 9.0 veya üstünde, tüm eşleşen değerleri belirtmek için tek bir * joker karakteri kullanılabilir. Örneğin, `http://*.contoso.com/` hem `http://store.contoso.com/` hem de `http://www.contoso.com` ile eşleşir.
+URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit dize eşleştirmesi kullanılır; dolayısıyla `http://www.contoso.com/` URL ön eki `http://www.contoso.com:80/` ile eşleşmez. Öte yandan iOS 9.0 veya üstünde, tüm eşleşen değerleri belirtmek için tek bir joker karakter \* kullanılabilir. Örneğin, `http://*.contoso.com/` hem `http://store.contoso.com/` hem de `http://www.contoso.com` ile eşleşir.
 `http://.com` ve `https://.com` desenleri sırasıyla tüm HTTP ve HTTPS URL'leriyle eşleşir.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Çoklu Oturum Açma kullanan uygulamalar

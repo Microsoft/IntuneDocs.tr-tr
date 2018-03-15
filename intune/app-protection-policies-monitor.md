@@ -1,7 +1,7 @@
 ---
 title: Uygulama koruma ilkelerini izleme
-titleSuffix: Azure portal
-description: "Kaç kullanıcının ilkeyi kullandığını görün, diğer ayrıntıları öğrenmek için detaya gidin.\""
+titleSuffix: Microsoft Intune
+description: "Intune'da mobil uygulama yönetimi ilkelerinin uyumluluk durumunu izleyin."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fb777bb8f04adb708f8c01c6f0bfcd08f7c663f5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 **Azure portalında değilseniz** bu konu başlığı altında klasik Intune portalında [uygulama koruma ilkelerinin nasıl oluşturulacağı](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) anlatılır.
 
 
-Kullanıcılara uyguladığınız mobil uygulama yönetimi (MAM) ilkelerinin uygunluk durumunu [Azure portalı](https://portal.azure.com) üzerindeki Intune uygulama koruması dikey penceresinden izleyebilirsiniz. MAM ilkelerinden etkilenen kullanıcılar hakkında bilgileri, uyumluluk durumu ve kullanıcılarınızın karşılaşmış olabileceği sorunları burada bulabilirsiniz.
+Kullanıcılara uyguladığınız mobil uygulama yönetimi (MAM) ilkelerinin uygunluk durumunu [Azure portalı](https://portal.azure.com) üzerindeki Intune uygulama koruması bölmesinden izleyin. MAM ilkelerinden etkilenen kullanıcılar hakkında bilgileri, uyumluluk durumu ve kullanıcılarınızın karşılaşmış olabileceği sorunları burada bulabilirsiniz.
 
 Uyumluluk durumu üç farklı yerden izlenebilir:
 
@@ -39,12 +39,12 @@ Uyumluluk durumu üç farklı yerden izlenebilir:
 
 ## <a name="summary-view"></a>Özet görünümü
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-4. **Mobil uygulamalar** iş yükünde, özet görünümü görmek için **İzle** > **Uygulama koruma kullanıcı durumu**’nu seçin:
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
+4. **Mobil uygulamalar** iş yükünde, özet görünümü görmek için **İzle** > **Uygulama koruma durumu**’nu seçin:
 
-![Intune mobil uygulama yönetimi dikey penceresinde Özet kutucuğu](./media/app-protection-user-status-summary.png)
+![Intune mobil uygulama yönetimi bölmesinde Özet kutucuğu](./media/app-protection-user-status-summary.png)
 
 -   **Kullanıcılar**: Şirketinizde, iş bağlamında bir ilkeyle ilişkili uygulama kullanan kullanıcıların toplam sayısı.
 
@@ -61,7 +61,7 @@ Uyumluluk durumu üç farklı yerden izlenebilir:
 **Kullanıcı durumu** kutucuğunu (cihazın işletim sistemi platformuna göre ve **Bayrak eklenen kullanıcılar** kutucuğunu seçerek özetin ayrıntılı görünümünü elde edebilirsiniz.
 
 ### <a name="user-status"></a>Kullanıcı durumu
-Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumunu denetleyebilirsiniz. **Uygulama raporlama** dikey penceresinde, seçilen kullanıcı için aşağıdaki bilgiler görüntülenir:
+Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumunu denetleyebilirsiniz. **Uygulama raporlama** bölmesinde, seçilen kullanıcı için aşağıdaki bilgiler görüntülenir:
 - Kullanıcı hesabıyla ilişkilendirilmiş cihazlar
 
 - Cihazda MAM ilkesine sahip uygulamalar
@@ -79,13 +79,13 @@ Kullanıcının raporlamasını görmek için şu adımları izleyin:
 
 1.  Kullanıcı seçmek için **Özet** kutucuğunu işaretleyin.
 
-    ![Ekran görüntüsü 3](./media/MAM-reporting-6.png)
+    ![Intune mobil uygulama yönetiminde Özet kutucuğunu vurgulayan ekran görüntüsü, Ayarlar dikey penceresi](./media/MAM-reporting-6.png)
 
-2. Açılan **Uygulama raporlama** dikey penceresinde Bir Azure Active Directory kullanıcısını aramak için **Kullanıcı seç** öğesini seçin.
+2. Açılan **Uygulama raporlama** bölmesinde bir Azure Active Directory kullanıcısını aramak için **Kullanıcı seçin** öğesini belirleyin.
 
-    ![Uygulama raporlama dikey penceresinde kullanıcı seç seçeneği](./media/MAM-reporting-2.png)
+    ![Uygulama raporlama bölmesinde Seçili kullanıcı seçeneğinin vurgulandığı ekran görüntüsü](./media/MAM-reporting-2.png)
 
-3. Listeden kullanıcı seçin. Bu kullanıcı için uyumluluk durumuna ilişkin ayrıntıları görürsünüz.
+3. Listeden kullanıcı seçin. Bu kullanıcı için uyumluluk durumuna ilişkin ayrıntıları görebilirsiniz.
 
 ### <a name="flagged-users"></a>Bayrak eklenen kullanıcılar
 Ayrıntılı görünümde; hata iletisi, hata oluştuğunda erişilmiş olan uygulama, etkilenen cihaz işletim sistemi platformu ve zaman damgası gösterilir.
@@ -94,7 +94,7 @@ Ayrıntılı görünümde; hata iletisi, hata oluştuğunda erişilmiş olan uyg
 
 Ayrıntılı görünümde, aynı raporlara ek olarak MAM ilkesi uyumluluk durumuyla ilgili bilgi almanıza yardımcı olacak diğer raporları bulabilirsiniz:
 
-![Ekran görüntüsü-4](./media/MAM-reporting-7.png)
+![Ayarlar bölmesinde kullanılabilir 2 raporun vurgulandığı ekran görüntüsü](./media/MAM-reporting-7.png)
 
 -   **Uygulama koruması kullanıcı raporu:** Yukarıdaki Ayrıntılı görünüm bölümünde gösterilen **Kullanıcı durumu** raporunda bulabileceğiniz bilgileri özetler.
 
@@ -110,7 +110,7 @@ Ayrıntılı görünümde, aynı raporlara ek olarak MAM ilkesi uyumluluk durumu
 
         -   Tüm uygulamalar giriş yapmış, ancak henüz MAM ilkelerini almıyor olabilir.
 
-![Ekran görüntüsü-2](./media/MAM-reporting-4.png)
+![Bir kullanıcının Uygulama raporlama dikey penceresini 3 kayıtlı uygulama için bir ayrıntı tablosuyla gösteren ekran görüntüsü](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Tablo gruplandırma
 
@@ -125,13 +125,13 @@ Uygulama koruma ilkesi etkinliklerinizin tümünü tek bir .csv dosyasına dış
 
 Uygulama koruması raporu oluşturmak için bu adımları izleyin:
 
-1. Intune mobil uygulama yönetimi dikey penceresinde Uygulama koruması raporunu seçin.
+1. Intune mobil uygulama yönetimi bölmesinde **Uygulama koruması raporu**’nu seçin.
 
-    ![Ekran görüntüsü-6](./media/app-protection-report-csv-2.png)
+    ![Intune mobil uygulama yönetimi bölmesindeki Uygulama koruma indirme bağlantısını vurgulayan ekran görüntüsü](./media/app-protection-report-csv-2.png)
 
 2. Raporunuzu kaydetmek için Evet’i seçin, ardından Farklı Kaydet’i seçin ve raporun kaydedilmesini istediğiniz klasörü belirtin.
 
-    ![Ekran görüntüsü-7](./media/app-protection-report-csv-1.png)
+    ![Raporu kaydet onay kutusunun ekran görüntüsü](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Ayrıca bkz:
 [iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md)

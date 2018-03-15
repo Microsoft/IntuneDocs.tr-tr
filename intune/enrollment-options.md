@@ -1,6 +1,7 @@
 ---
-title: "Intune için kayıt seçenekleri"
-description: 
+title: "Microsoft Intune tarafından yönetilen cihazlar için kayıt seçenekleri"
+titleSuffix: 
+description: "Yöneticilerin Microsoft Intune tarafından yönetilen cihazlar için ayarlayabilecekleri kayıt seçeneklerinin bir listesi."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 2672ebec94387ad876443c975f083472c2613a11
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enrollment-options-for-intune"></a>Intune için kayıt seçenekleri
+# <a name="enrollment-options-for-devices-managed-by-intune"></a>Intune tarafından yönetilen cihazlar için kayıt seçenekleri
 
 Bir Intune yöneticisi olarak kullanıcılara yardımcı olmak ve Intune yeteneklerini etkinleştirmek için cihaz kaydını yapılandırabilirsiniz.  Intune, aşağıdaki kayıt seçeneklerini sunar:
 

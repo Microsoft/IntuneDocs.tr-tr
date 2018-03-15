@@ -1,25 +1,25 @@
 ---
 title: "Windows 8.1 ve üzeri için Wi-Fi ayarlarını içeri aktarma"
-titleSuffix: Azure portal
-description: "Wi-Fi ayarlarını Windows’dan Intune Wi-Fi profiline aktarma.\""
+titleSuffix: Microsoft Intune
+description: "Wi-Fi ayarlarını Windows’dan Intune Wi-Fi profiline aktarma."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b4b77f9c9c1c957e3332c20e010a5e8e8ec2b56
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 0113703cbdc58172edc9552146c7634aa1058e3b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Microsoft Intune’da Windows 8.1 ve üzeri cihazlar için Wi-Fi ayarlarını içeri aktarma
+# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Microsoft Intune’da Windows 8.1 ve üzeri cihazlar için Wi-Fi ayarlarını içeri aktarma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,20 +37,20 @@ Windows'da **netsh wlan** yardımcı programını kullanarak var olan bir Wi-Fi 
 
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
-2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
-3. Profiller dikey penceresinde **Profil Oluştur**’a tıklayın.
-4. **Profil Oluştur** dikey penceresinde, cihaz kısıtlama profili için **Ad** ve **Açıklama** girin.
+3. **Intune** sayfasında, **Cihaz yapılandırması**’nı seçin.
+2. **Cihaz Yapılandırması** sayfasında **Yönet** > **Profiller**’i seçin.
+3. Profiller sayfasında **Profil Oluştur**’a tıklayın.
+4. **Profil Oluştur** sayfasında, cihaz kısıtlama profili için **Ad** ve **Açıklama** girin.
 
    > [!WARNING]
    > Adın Wi-Fi profili xml’indeki ad özniteliği ile aynı olması **gereklidir**, yoksa işlem başarısız olur.
 
 5. **Platform** açılan listesinden **Windows 8.1 ve üzeri**’ni seçin.
 6. **Profil** türü açılan listesinden **Wi-Fi içeri aktarma**’yı seçin.
-7. **Wi-Fi Temel** dikey penceresinde aşağıdaki ayarları yapılandırın:
+7. **Wi-Fi Temel** sayfasında, aşağıdaki ayarları yapılandırın:
     - **Bağlantı adı** Wi-Fi bağlantısının adını girin. Bu ad, kullanılabilir Wi-Fi ağlarına göz atan son kullanıcılara görüntülenir.
     - **Profil XML** Intune’da içine aktarmak istediğiniz Wi-Fi profili ayarlarını içeren XML dosyasını seçmek için gözat düğmesine tıklayın.
     - **Dosya içeriği** Seçtiğiniz yapılandırma profili için XML kodunu görüntüler.
-8. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
+8. Bitirdiğinizde **Profil Oluştur** sayfasına dönün ve **Oluştur**’a basın.
 
-Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
+Profil oluşturulur ve profil listesi sayfasında görüntülenir.
