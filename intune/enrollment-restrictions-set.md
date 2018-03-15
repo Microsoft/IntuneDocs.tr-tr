@@ -1,7 +1,7 @@
 ---
-title: "Intune’da kayıt kısıtlamalarını ayarlama"
-titlesuffix: Azure portal
-description: "Intune’da platforma göre kaydı kısıtlama ve cihaz kayıt sınırı ayarlama. \""
+title: "Microsoft Intune’da kayıt kısıtlamalarını ayarlama"
+titlesuffix: 
+description: "Intune’da platforma göre kaydı kısıtlama ve cihaz kayıt sınırı ayarlama."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune yöneticisi olarak, Intune ile yönetime kaydedilebilecek cihazların sayısını ve türlerini tanımlayan kayıt kısıtlamaları oluşturabilir ve bunları yönetebilirsiniz. Birden çok kısıtlama oluşturabilir ve bunları farklı kullanıcı gruplarına uygulayabilirsiniz. Farklı kısıtlamalarınız için [öncelik sırası](#change-enrollment-restriction-priority) ayarlayabilirsiniz.
+Intune yöneticisi olarak, kayıt kısıtlamaları oluşturabilir ve yönetebilirsiniz. Bu kısıtlamalar, Intune ile yönetime kaydedilebilecek cihazların sayısını ve türlerini tanımlar. Birden çok kısıtlama oluşturabilir ve bunları farklı kullanıcı gruplarına uygulayabilirsiniz. Farklı kısıtlamalarınız için [öncelik sırası](#change-enrollment-restriction-priority) ayarlayabilirsiniz.
 
 >[!NOTE]
 >Kayıt kısıtlamaları güvenlik özellikleri değildir. Güvenliği aşılan cihazlar karakterlerini yanlış gösterebilir. Bu kısıtlamalar, kötü amaçlı olmayan kullanıcılara yönelik olabilecek en iyi engeldir.
@@ -83,7 +83,7 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
   İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir.
 8. Listelenen her platformda **Kişiye ait** cihazlar için **İzin Ver** veya **Engelle**'yi seçin.
 
-    ![Varsayılan cihaz platform yapılandırmaları ile cihaz kısıtlamaları iş alanının, kişisel ayarların yapılandırıldığını gösteren ekran görüntüsü.](media/device-restrictions-platform-configurations.png)
+    ![Kişilere ait cihazlar için yapılandırılmış varsayılan cihaz platformuyla cihaz kısıtlamaları çalışma alanının ekran görüntüsü](media/device-restrictions-platform-configurations.png)
 9. **Kaydet**'e tıklayın.
 
 >[!NOTE]
@@ -100,7 +100,7 @@ Aşağıdaki adımları izleyerek bir cihaz sınırı kısıtlamasının ayarlar
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. **Cihaz Sınırı Kısıtlamaları**'nın altında, ayarlamak istediğiniz kısıtlamayı seçin.
 5. **Cihaz Sınırı**'nı seçin ve ardından, açılan listede kullanıcının kaydedebileceği cihaz sayısı üst sınırını belirtin.
-    ![Cihaz sınır kısıtlamaları ile cihaz sınır kısıtlamaları dikey penceresinin ekran görüntüsü.](./media/device-restrictions-limit.png)
+    ![Cihaz sınırı kısıtlamaları dikey penceresinin ekran görüntüsü](./media/device-restrictions-limit.png)
 6. **Kaydet**'e tıklayın.
 
 Son kullanıcınız, kayıtlı cihaz sınırına ulaştığında bunu belirten bir bildirim görecektir. Örneğin iOS’ta bu, şu şekilde görünür:

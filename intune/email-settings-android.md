@@ -1,31 +1,29 @@
 ---
-title: "Android ve Android for Work cihazları için Intune e-posta ayarları"
-titleSuffix: Azure portal
-description: "Android cihazlarında e-posta bağlantıları yapılandırmak için kullanabileceğiniz Intune ayarlarını öğrenin.\""
+title: "Android ve Android for Work çalıştıran cihazlar için Microsoft Intune e-posta ayarları"
+titleSuffix: 
+description: "Android ve Android for Work çalıştıran cihazlarda e-posta ayarlarını yapılandırmak için kullanabileceğiniz Microsoft Intune ayarlarını öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14f726d330e1cd8e4a0f7bfcfac8fe931c66d23b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a68607be7cbd84d5a9e9080d0a8608bce85edd22
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Microsoft Intune'da Android cihazları için e-posta profili ayarları
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android ve Android for Work çalıştıran cihazlar için Microsoft Intune'da e-posta profili ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bir Intune Yöneticisi e-posta ayarları oluşturup bunları aşağıdaki Android cihazlarına atayabilirsiniz:
+Bir Intune yöneticisi olarak, e-posta ayarları oluşturup bunları aşağıdaki Android cihazlarına atayabilirsiniz:
 - [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
@@ -59,7 +57,7 @@ Bir Intune Yöneticisi e-posta ayarları oluşturup bunları aşağıdaki Androi
 
 - **E-posta uygulaması** - **Gmail**'i veya **Nine Work**'ü seçin
 - **E-posta sunucusu** - Exchange sunucunuzun konak adı.
-- **AAD'den kullanıcı adı özniteliği** - Bu ad, bu e-posta profili için kullanıcı adı oluşturmak üzere kullanılacak Active Directory (AD) veya Azure AD özniteliğidir. **Birincil SMTP Adresi** olarak user1@contoso.com gibi bir değer seçin ya da **Kullanıcı Asıl Adı**’nı (kullanıcı1 veya user1@contoso.com gibi) belirtin.
+- **AAD'den kullanıcı adı özniteliği** - Bu ad, bu e-posta profili için kullanıcı adı oluşturmak üzere kullanılan Active Directory (AD) veya Azure AD özniteliğidir. **Birincil SMTP Adresi** olarak user1@contoso.com gibi bir değer seçin ya da **Kullanıcı Asıl Adı**’nı (kullanıcı1 veya user1@contoso.com gibi) belirtin.
 - **AAD’den e-posta adresi özniteliği** - E-posta adresinin her cihazdaki kullanıcı için nasıl oluşturulacağı. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı Asıl Adı**'nı veya **Kullanıcı adı**'nı seçin.
 - **Kimlik doğrulama yöntemi** - E-posta profili tarafından kullanılan kimlik doğrulama yöntemi olarak **Kullanıcı Adı ve Parola**’yı veya **Sertifikalar**’ı seçin.
     - **Sertifika**'yı seçtiyseniz Exchange bağlantısının kimliğini doğrulamak için daha önce oluşturduğunuz istemci SCEP veya PKCS sertifika profilini seçin.

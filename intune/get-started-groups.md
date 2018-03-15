@@ -1,10 +1,10 @@
 ---
-title: "Grupları kullanmaya başlama"
-titleSuffix: Azure portal
+title: "Microsoft Intune’da bir grup oluşturma"
+titleSuffix: 
 description: "Erişebilecekleri ilke ve uygulamaları yönetmeyi kolaylaştırmak için kullanıcıları gruplara ayırın."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63a35c04a14ebd79ac55f1dab2680d70008ee0ed
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-groups"></a>Grupları kullanmaya başlama
+# <a name="create-a-group-to-manage-your-users-and-data-access"></a>Kullanıcılarınızı ve veri erişimini yönetmek için bir grup oluşturma
 
 Gruplar, kullanıcılarınızı yönetmek ve çalışanlarınızın şirket kaynaklarınıza erişimini denetlemek için kullanılır. Bu kaynaklar, dizininizin parçası veya SaaS uygulamaları ya da SharePoint siteleri gibi dış kaynaklar olabilir.
 

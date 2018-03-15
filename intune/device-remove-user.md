@@ -1,10 +1,10 @@
 ---
-title: "Intune ile bir iOS cihazından kullanıcı kaldırma"
-titlesuffix: Azure portal
-description: "Paylaşılan bir iOS cihazından Intune ile kullanıcı kaldırmayı öğrenin.\""
+title: "Microsoft Intune ile bir iOS cihazından kullanıcı kaldırma"
+titlesuffix: 
+description: "Paylaşılan bir iOS cihazından Intune ile kullanıcı kaldırmayı öğrenin."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 979614aaa450493ea0b5cc2a1baaccc10a6dd028
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1b2321de0c0541111fdf6f18345bd952ca8b5448
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a>Paylaşılan bir iOS cihazından Intune ile kullanıcı kaldırma
+# <a name="remove-a-user-from-a-shared-ios-device"></a>Paylaşılan bir iOS cihazından kullanıcı kaldırma
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +37,8 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="how-to-remove-a-user"></a>Bir kullanıcıyı kaldırma
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
 4. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin.
 5. Yönettiğiniz cihazların listesinden bir iOS cihazı seçin.
@@ -47,4 +47,4 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Az önce gerçekleştirdiğiniz işlemin durumunu görmek için **Cihazlar ve gruplar** dikey penceresinde **Cihaz Eylemleri**'ni seçin.
+Az önce gerçekleştirdiğiniz işlemin durumunu görmek için **Cihazlar** dikey penceresinde **Cihaz eylemleri**'ni seçin.

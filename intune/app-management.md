@@ -1,12 +1,12 @@
 ---
-title: "Uygulama yönetimi nedir?"
-titlesuffix: Azure portal
-description: "Microsoft Intune’la uygulama yönetimi hakkındaki temel bilgileri edinmek için bu konuyu kullanın\""
+title: "Microsoft Intune’da uygulama yönetimi nedir?"
+titlesuffix: 
+description: "Microsoft Intune ile uygulama yönetimi hakkındaki temel bilgileri öğrenin."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -27,14 +27,14 @@ ms.lasthandoff: 02/13/2018
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-BT yöneticisi olarak, son kullanıcılarınızın işlerini yapmak için ihtiyaçları olan uygulamalara erişmelerini sağlamak sizin sorumluluğunuzdur. Bu zor olabilir çünkü:
+Microsoft Intune, BT yöneticisi olarak, şirketinizin iş gücünün kullandığı mobil uygulamaları yönetmenizi sağlar. Bu işlev, cihazları yönetmeye ve verileri korumaya ek niteliğindedir. Bu işlevin bir parçası olarak, önceliklerinizden biri son kullanıcılarınızın işlerini yapmak için ihtiyaç duydukları uygulamalara erişebilmelerini sağlamaktır. Bu zor olabilir çünkü:
 - Çok çeşitli cihaz platformları ve uygulama türleri vardır.
 - Hem şirket cihazlarındaki hem de kullanıcıların kendi cihazlarındaki uygulamaları yönetmeniz gerekebilir.
 - Ağınızın ve verilerinizi güvenli kaldığından emin olmanız gerekir.
 
 Buna ek olarak, Intune’a kaydolmamış cihazlarda uygulamaları atamak ve yönetmek isteyebilirsiniz.
 
-Intune, ihtiyacınız olan uygulamaları istediğiniz cihazlara almanıza yardımcı olacak çeşitli özellikler sunar.
+Intune, ihtiyacınız olan uygulamaları istediğiniz cihazlara almanıza yardımcı olacak çeşitli özellikler sunar. Aşağıdaki tablo, uygulama yönetimi özelliklerinin bir özetini sağlar. Aşağıdaki tablo, Azure portalında Microsoft Intune'u anlamak için bir başlangıç noktasıdır. 
 
 ## <a name="app-management-capabilities-by-platform"></a>Platforma göre uygulama yönetimi özellikleri
 
@@ -64,8 +64,8 @@ Intune, ihtiyacınız olan uygulamaları istediğiniz cihazlara almanıza yardı
 
 Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygulamayla ilgili bilgilerin çoğunu bulabilirsiniz:
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
 
     ![Mobil Uygulamalar iş yükü](./media/apps-workload.png)
@@ -115,3 +115,7 @@ Diğer ayrıntılar için bkz. [Uygulamaları izleme](apps-monitor.md).
 ### <a name="help-and-support"></a>Yardım ve Destek
 - **Yardım ve destek** - Sorun giderin, destek isteyin veya Intune durumunu görüntüleyin.
     - [Sorunları giderme](help-desk-operators.md)
+    
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [Microsoft Intune’a uygulama ekleme](apps-add.md)

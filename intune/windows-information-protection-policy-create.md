@@ -3,10 +3,10 @@ title: "Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi o
 titlesuffix: Azure portal
 description: "Intune ile WIP uygulama koruma ilkesi oluşturma ve dağıtma"
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
-ms.date: 12/29/2017
+author: Erikre
+ms.author: erikre
+manager: doubeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 940c4bc17face7ecef2b6888e199ba47073659ba
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -33,7 +33,7 @@ Bir WIP ilkesi eklerken kullanılan birkaç kavram hakkında konuşalım.
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>İzin verilen ve muaf uygulamaların listesi
 
--   **İzin verilen uygulamalar:** Bunlar, bu ilkeye bağlı kalması gereken uygulamalardır.
+-   **İzin verilen uygulamalar:** Bu uygulamalar, bu ilkeye bağlı kalması gereken uygulamalardır.
 
 -   **Muaf uygulamalar:** Bu uygulamalar bu ilkeden muaftır ve kurumsal verilere kısıtlamasız erişebilir.
 
@@ -47,9 +47,9 @@ Bir WIP ilkesi eklerken kullanılan birkaç kavram hakkında konuşalım.
 
 ## <a name="pre-requisites"></a>Ön koşullar
 
-Bir WIP uygulama koruma ilkesi oluşturabilmeniz için önce MAM sağlayıcısını yapılandırmanız gerekir. [MAM sağlayıcınızı Intune ile yapılandırma](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md) hakkında daha fazla bilgi edinin.
+Bir WIP uygulama koruma ilkesi oluşturabilmeniz için önce MAM sağlayıcısını yapılandırmanız gerekir. [MAM sağlayıcınızı Intune ile yapılandırma](app-protection-policies-configure-windows-10.md) hakkında daha fazla bilgi edinin.
 
-Ayrıca, aşağıdakilere de sahip olmanız gerekir:
+Ayrıca aşağıdaki lisans ve güncelleştirmeye de sahip olmanız gerekir:
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) lisansı.
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -60,7 +60,7 @@ Ayrıca, aşağıdakilere de sahip olmanız gerekir:
 
 ## <a name="to-add-a-wip-policy"></a>Bir WIP ilkesi eklemek için
 
-Kuruluşunuzda Intune'u kurduktan sonra [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) aracılığıyla WIP’ye özel bir ilke oluşturabilirsiniz. <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+Kuruluşunuzda Intune'u kurduktan sonra [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) aracılığıyla WIP’ye özel bir ilke oluşturabilirsiniz. <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1.  **Intune mobil uygulama yönetimi panosuna** gidin, **Tüm ayarlar**, > **Uygulama ilkesi**’ni seçin.
 
@@ -80,7 +80,7 @@ Kuruluşunuzda Intune'u kurduktan sonra [Azure portal](https://docs.microsoft.co
 
 1.  **Uygulama ekle** dikey penceresinden, ilkenizin adını seçinl, ardından **İlke ekle** dikey penceresinden **İzin verilen uygulamalar**’ı seçin. **İzin verilen uygulamalar** dikey penceresi açılarak daha önceden bu uygulama koruma ilkesinin listesinde yer alan tüm uygulamalar gösterilir.
 
-2.  **İzin verilen uygulamalar** dikey penceresinden **Uygulama ekle**’yi seçin. **Uygulama ekleme** dikey penceresi açılarak bu listenin parçası olan tüm uygulamalar gösterilir.
+2.  **İzin verilen uygulamalar** dikey penceresinden **Uygulama ekle**’yi seçin. **Uygulama ekleme** bilgisinde, bu listenin parçası olan tüm uygulamalar gösterilir.
 
 3.  Şirket verilerinize erişmesini istediğiniz uygulamaları ve ardından **Tamam**’ı seçin. **İzin verilen uygulamalar** dikey penceresi güncelleştirilerek seçilen uygulamaları gösterir.
 
@@ -92,7 +92,7 @@ Kuruluşunuzda Intune'u kurduktan sonra [Azure portal](https://docs.microsoft.co
 
 2.  **İzin verilen uygulamalar** dikey penceresinden **Uygulama ekle**’yi seçin.
 
-3.  **Uygulama ekle** dikey penceresinde, aşağı açılan listeden **Mağaza uygulamaları**’nı seçin. Dikey pencere değişerek bir **yayımcı** ve bir uygulama **adı** eklemeniz için size kutular gösterir.
+3.  **Uygulama ekle** dikey penceresinde, aşağı açılan listeden **Mağaza uygulamaları**’nı seçin. Bilgi, değişerek bir **yayımcı** ve bir uygulama **adı** eklemeniz için size kutular gösterir.
 
 4.  Uygulamanın ve yayımcısının adlarını yazın ve **Tamam**’ı seçin.
 
@@ -137,7 +137,7 @@ WIP etkin ve WIP bilinmeyen uygulamalarla çalışırken, **Sessiz** veya **Geç
 WIP, uygunsuz veri paylaşımı durumları arar ve kullanıcının işlemi tamamlamasını engeller. Bunlar arasında kurumsal olarak korunmayan uygulamalar arasında bilgi paylaşımı ve kuruluşunuz dışındaki kişi ve cihazlarla kurumsal veri paylaşımı sayılabilir.
 
 #### <a name="allow-overrides"></a>Geçersiz Kılmalara İzin Ver
-WIP, uygunsuz veri paylaşımını arayarak, güvensiz olabilecek bir şey yapıyorlarsa kullanıcıları uyarır. Ancak bu mod kullanıcının ilkeyi geçersiz kılıp veri paylaşmasına izin vererek işlemi denetleme günlüğünüze kaydeder.
+WIP, uygunsuz veri paylaşımını arayarak, güvensiz olabilecek bir şey yaptığında kullanıcıları uyarır. Ancak bu mod kullanıcının ilkeyi geçersiz kılıp veri paylaşmasına izin vererek işlemi denetleme günlüğünüze kaydeder.
 
 #### <a name="silent"></a>Sessiz
 WIP sessiz çalışarak uygunsuz veri paylaşımını, Geçersiz Kılma modunda çalışandan işlem yapmasının istenmesine neden olabilecek herhangi bir şeyi engellemeden günlüğe kaydeder. Uygulamaların bir ağ kaynağına veya WIP ile korunan verilere uygunsuz bir şekilde erişmeye çalışması gibi izin verilmeyen eylemler yine durdurulur.
@@ -145,7 +145,7 @@ WIP sessiz çalışarak uygunsuz veri paylaşımını, Geçersiz Kılma modunda 
 #### <a name="off-not-recommended"></a>Kapalı (önerilmez)
 WIP kapalıdır ve verilerinizin korunmasına veya denetlenmesine yardımcı olmaz.
 
-WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiketlenmiş dosyaların şifrelemesi çözülmeye çalışılır. WIP’yi tekrar açarsanız, daha önceki şifreleme ilkesinin otomatik olarak yeniden uygulanmadığını unutmayın.
+WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiketlenmiş dosyaların şifrelemesi çözülmeye çalışılır. WIP’yi tekrar açarsanız daha önceki şifreleme ilkesinin otomatik olarak yeniden uygulanmadığını unutmayın.
 
 ### <a name="add-a-protection-mode"></a>Koruma modu ekleme
 
@@ -153,7 +153,7 @@ WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiket
 
     ![Öğrenme Modu ekran görüntüsü](./media/learning-mode-sc1.png)
 
-1.  **Kaydet**’i seçin.
+2.  **Kaydet**’i seçin.
 
 ### <a name="use-wip-learning"></a>WIP Öğrenme’yi kullanma
 
@@ -165,10 +165,23 @@ WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiket
  
     Uygulamaların WIP Öğrenme günlük raporunda görünmesini sağladıktan sonra bunları uygulama koruma ilkelerinize ekleyebilirsiniz.
 
+## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>Windows Search Dizin Oluşturucu’nun şifrelenmiş öğeleri aramasına izin ver
+Öğeler için dizin oluşturulmasına izin verir veya engeller. Bu anahtar, Windows Bilgi Koruması (WIP) tarafından korunan dosyalar gibi şifrelenmiş öğeler için dizin oluşturulup oluşturulmadığını kontrol eden Windows Search Dizin Oluşturucu içindir.
+
+Bu uygulama koruma ilkesi seçeneği, Windows Bilgi Koruması ilkesinin **Gelişmiş ayarlar** bölümündedir. Uygulama koruma ilkesi, *Windows 10* platformuna ayarlanmalı ve uygulama ilkesi **Kayıt durumu**, **Kayıt ile** olarak ayarlanmalıdır. 
+
+İlke etkinleştirildiğinde, WIP korumalı öğelerin dizini oluşturulur ve bunlar hakkındaki meta veriler şifrelenmemiş bir konumda depolanır. Meta veriler, dosya yolu ve değiştirilme tarihi gibi veriler içerir.
+
+İlke devre dışı bırakıldığında, WIP korumalı öğelerin dizini oluşturulmaz ve Cortana veya dosya gezgini sonuçlarında görünmez. Cihazda çok sayıda WIP korumalı medya dosyası varsa fotoğraflar ve Groove uygulamaları performansını da etkileyebilir.
+
+## <a name="add-encrypted-file-extensions"></a>Şifrelenmiş dosya uzantıları ekleme
+
+**Windows Search Dizin Oluşturucu’nun şifrelenmiş öğeleri aramasına izin ver** seçeneğine ek olarak, bir dosya uzantıları listesi de belirtebilirsiniz. Bu uzantılara sahip dosyalar, ağ konumu listesinde tanımlandığı şekilde şirket sınırında bir Sunucu İleti Bloğu (SMB) paylaşımından kopyalanırken şifrelenir. Bu ilke belirtilmediğinde, mevcut otomatik şifreleme davranışı uygulanır. Bu ilke yapılandırıldığında, yalnızca listededeki uzantılara sahip dosyalar şifrelenir.
+
 ## <a name="deploy-your-wip-app-protection-policy"></a>WIP uygulama koruma ilkenizi dağıtma
 
 > [!IMPORTANT]
-> Bu, cihaz kaydı olmayan WIP için geçerlidir.
+> Bu bilgi, cihaz kaydı olmayan WIP için geçerlidir.
 
 <!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
@@ -178,4 +191,8 @@ WIP uygulama koruma ilkenizi oluşturduktan sonra, bu ilkeyi MAM’yi kullanarak
 
     Azure Active Directory’nizdeki tüm güvenlik gruplarından oluşan kullanıcı grupları listesi, **Kullanıcı grubu ekle** dikey penceresinde açılır.
 
-1.  İlkenizin uygulanmasını istediğiniz grubu seçin, ardından ilkeyi dağıtmak için **Seç** öğesini belirleyin.
+2.  İlkenizin uygulanmasını istediğiniz grubu seçin, ardından ilkeyi dağıtmak için **Seç** öğesini belirleyin.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- Windows Bilgi Koruması hakkında daha fazla bilgi için bkz. [Windows Bilgi Koruması’nı (WIP) kullanarak kurumsal verilerinizi koruma](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 

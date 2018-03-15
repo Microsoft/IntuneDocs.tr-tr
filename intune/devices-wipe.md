@@ -1,6 +1,6 @@
 ---
-title: "Intune kullanılan cihazlarda fabrika sıfırlaması kullanma veya şirket verilerini kaldırma"
-titlesuffix: Azure portal
+title: "Microsoft Intune kullanılan cihazlarda fabrika sıfırlaması kullanma veya şirket verilerini kaldırma"
+titlesuffix: 
 description: "Bir cihazdaki şirket verilerini kaldırmayı veya cihazı fabrika ayarlarına sıfırlamayı öğrenin."
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
 
@@ -35,9 +35,9 @@ Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan ciha
 
 ### <a name="to-factory-reset-a-device"></a>Bir cihazı fabrika ayarlarına sıfırlamak için
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin.
 4. Fabrika sıfırlamasını uygulamak istediğiniz cihazın adını seçin.
 5. Cihazın adını gösteren dikey pencerede **Fabrika sıfırlaması**’nı seçin.
 6. Windows 10 sürüm 1709 veya üstünde, fazladan "Kayıt durumunu ve kullanıcı hesabını tut" seçeneği vardır. 
@@ -122,9 +122,9 @@ Bir Android for Work cihazından şirket verilerinin kaldırılması, cihazdaki 
 
 ### <a name="to-remove-company-data"></a>Şirket verilerini kaldırmak için
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin.
 4. Şirket verilerini kaldırmak istediğiniz cihazın adını seçin.
 5. Cihazın adını gösteren dikey pencerede **Şirket verilerini kaldır**’ı seçin ve ardından onaylamak için **Evet**’i seçin.
 
@@ -134,9 +134,9 @@ Cihaz açık ve bağlı olduğu sürece, verileri kaldırma komutunun tüm cihaz
 
 İletişim sorunları veya eksik cihazlar nedeniyle, cihazları Azure Active Directory’den (AD) silmeniz gerekebilir. Sil komutu bir cihazı yönetimden kaldırmaz ancak ulaşılamaz olduğunu ve Azure ile yeniden iletişim kurmasının pek olası olmadığını bildiğiniz cihaz kayıtlarını Azure portalından kaldırmak için **Sil** komutunu kullanabilirsiniz.
 
-1.  Yönetici kimlik bilgilerinizle [Azure portalında Azure Active Directory](http://aka.ms/accessaad)’de oturum açın. Ayrıca [Office 365 portalında](https://portal.office.com) oturum açarak ve ardından sayfanın sol tarafındaki bağlantıyı kullanarak **Yönetici** &gt; **Azure AD**’yi seçebilirsiniz.
+1.  Yönetici kimlik bilgilerinizle [Azure portalında Azure Active Directory](http://aka.ms/accessaad)’de oturum açın. Ayrıca [Office 365 portalında](https://portal.office.com) oturum açarak ve ardından sayfanın sol tarafındaki bağlantıyı kullanarak **Yönetici merkezleri** &gt; **Azure AD**’yi seçebilirsiniz.
 3.  Azure aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez (**Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
-4.  **Active Directory** ’yi ve sonra da kuruluşunuzu seçin.
+4.  **Azure Active Directory**’yi ve sonra kuruluşunuzu seçin.
 5.  **Kullanıcılar** sekmesini seçin.
 6.  Cihazlarını silmek istediğiniz kullanıcıyı seçin.
 7.  **Cihazlar**’ı seçin.

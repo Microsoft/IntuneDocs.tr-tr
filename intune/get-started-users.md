@@ -1,10 +1,10 @@
 ---
-title: "Kullanıcılar ile çalışmaya başlama"
-titlesuffix: Azure portal
-description: "Mobil cihazlarda şirket kaynaklarına erişmesini sağlamak için Intune’a bir kullanıcı ekleyin."
+title: "Kullanıcıları yönetmeye başlama"
+titlesuffix: Microsoft Intune
+description: "Intune'a bir kullanıcı ekleyin ve şirket kaynaklarına mobil cihazlardan erişebilmesi için bu kullanıcıya bir lisans atayın."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 297a9244bac8e45e14e1d22cadee9088c87f34a3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-managing-users"></a>Kullanıcıları yönetmeye başlama
+# <a name="get-started-managing-users"></a>Kullanıcıları yönetmeye başlama
 
 Kuruluşunuzdaki tüm farklı kişileri düşünün. Şirket kaynaklarını kullanan herkesin, Intune’da bu kaynaklara erişimi yönetmesi için bir kullanıcıya ihtiyacı vardır.
 

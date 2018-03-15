@@ -1,12 +1,12 @@
 ---
 title: "Uygulama koruma ilkelerini oluşturma ve dağıtma"
-titleSuffix: Azure portal
-description: "Intune uygulama koruma ilkelerinin, yönettiğiniz uygulamalarda kullanılan şirket verilerinin korunmasına nasıl yardımcı olabileceğini öğrenin.\""
+titleSuffix: Microsoft Intune
+description: "Microsoft Intune uygulama koruma ilkelerini oluşturmayı ve atamayı öğrenin."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,18 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbb9a1f6697a8339a2854e4352749ca04bb612e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cd92e787fd3c1abaa8b20ce1d75141b46ab17934
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+
+Microsoft Intune uygulama koruma ilkelerini oluşturmayı ve kullanıcılarınıza atamayı öğrenin. Bu konu, mevcut ilkelerde nasıl değişiklik yapılacağını da açıklar.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -34,49 +37,52 @@ Uygulama koruma ilkeleri, Intune tarafınızdan yönetilen veya yönetilmeyen ci
 MAM destekli uygulamalar listesi arıyorsanız bkz. [MAM uygulamaları listesi](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
-1.  **Mobil uygulamalar** iş yükünde **Yönet** > **Uygulama koruma ilkeleri**’ni seçin.
+1.  **Mobil uygulamalar** iş yükünde, **Yönet** bölümünden **Uygulama koruma ilkeleri**’ni seçin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar. 
+2. **İlke ekle**‘yi seçin. 
 
-2.  Yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** dikey penceresi açılır. **İlke ekle**‘yi seçin.
+  ![“İlke ekle” dikey penceresinin ekran görüntüsü](./media/app-protection-add-policy.png)
 
-  ![İlke ekle dikey penceresinin ekran görüntüsü](./media/app-protection-add-policy.png)
+3.  İlke için bir ad yazın, kısa bir açıklama ekleyin ve ilkeniz için platform türünü seçin. Gerekirse, her platform için birden çok ilke oluşturabilirsiniz.
 
-3.  İlke için bir ad yazın, kısa bir açıklama ekleyin ve iOS veya Android için ilke oluşturmak üzere platform türünü seçin. Her platform için birden çok ilke oluşturabilirsiniz.
-
-4.  Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**'ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçin. Uygulamaları seçtikten sonra, seçiminizi kaydetmek için **Uygulamalar** dikey penceresinin altındaki **Seç**'i kullanın.
+4.  Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**'ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçin. 
+5. Uygulamaları seçtikten sonra seçiminizi kaydetmek için **Seç**’i seçin.
 
     > [!IMPORTANT]
     > Bir ilke oluşturmak için en az bir uygulama seçmeniz gerekir.
 
-5.  **İlke ekle dikey penceresinde** **Gerekli ayarları yapılandır**’ı seçerek ilke ayarları dikey penceresini açın.
+6.  **Ayarlar**’ı açmak için **İlke ekle** dikey penceresinde **Gerekli ayarları yapılandır**’ı seçin.
 
-    İlke ayarlarının iki kategorisi vardır: **Veri konumu değiştirme** ve **Erişim**.  Veri konumu değiştirme ilkeleri, uygulama içindeki ve dışındaki veri hareketleri için geçerlidir. Erişim ilkeleri ise son kullanıcının uygulamalara iş bağlamında nasıl eriştiğini belirler.
+    İlke ayarlarının iki kategorisi vardır: **Veri konumu değiştirme** ve **Erişim**.  Veri konumunu değiştirme ilkeleri, uygulamalara giren ve çıkan veri hareketlerine uygulanabilir. Erişim ilkeleri, son kullanıcının bir çalışma bağlamında uygulamalara nasıl eriştiğini belirler.
     Başlamanıza yardımcı olması için ilke ayarlarına varsayılan değerler atanmıştır. Varsayılan değerler gereksinimlerinizi karşılıyorsa değişiklik yapmanız gerekmez.
 
     > [!TIP]
-    > Bu ilke ayarları, yalnızca uygulamalar iş bağlamında kullanılırken uygulanır.  Son kullanıcı, uygulamayı kişisel bir görev için kullanırken bu ilkelerden etkilenmez.
+    > Bu ilke ayarları, yalnızca uygulamalar iş bağlamında kullanılırken uygulanır. Son kullanıcı, uygulamayı kişisel bir görev için kullanırken bu ilkelerden etkilenmez.
 
+7.  Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** bölmesine geri dönersiniz. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
+8. Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** dikey penceresine geri dönersiniz. 
+9. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
 
-
-6.  Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** dikey penceresine geri dönersiniz. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
-
-
-İlke oluşturmayı önceki yordamda açıklandığı şekilde tamamladığınızda, ilke kullanıcılara dağıtılmaz. Bir ilkeyi dağıtmak için aşağıdaki "Bir ilkeyi kullanıcılara dağıtma" bölümüne bakın.
+İlke oluşturmayı önceki yordamda açıklandığı şekilde tamamladığınızda, ilke kullanıcılara dağıtılmaz. Bir ilkeyi dağıtmak için bkz. [Bir ilkeyi kullanıcılara dağıtma](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Bir ilkeyi kullanıcılara dağıtma
 
-1.  **İlke** dikey penceresinde  **Kullanıcı grupları**‘nı seçerek **Kullanıcı grupları** dikey penceresini açın. **Kullanıcı grupları** dikey penceresinde **Kullanıcı grubu ekle**’yi seçerek **Kullanıcı grubu ekle** dikey penceresini açın.
 
-  ![Kullanıcı grubu ekle menü seçeneğinin vurgulandığı Kullanıcı grupları dikey penceresinin ekran görüntüsü](./media/app-protection-policy-add-users.png)
+1. **Uygulama koruma ilkeleri** bölmesinde, bir ilke seçin.
 
-2.  **Kullanıcı grubu ekle** dikey penceresinde kullanıcı gruplarının listesi gösterilir. Bu liste **Azure Active Directory**’deki tüm güvenlik gruplarını içerir. Bu ilkenin geçerli olmasını istediğiniz kullanıcı gruplarını seçin ve sonra da **Seç**'i belirleyin. **Seç** öğesi seçildiğinde, ilke kullanıcılara dağıtılır.
-  ![Azure Active Directory kullanıcılarının listesini gösteren Kullanıcı grubu ekle dikey penceresinin ekran görüntüsü](./media/azure-ad-user-group-list.png)
+1. **İlke** bölmesinde **Atamaları** seçin; böylece **Intune Uygulama Koruması - Atamalar** bölmesi açılır. **Atamalar** bölmesinde **Dahil edilecek grupları seçin**’i seçerek, **Dahil edilecek grupları seçin** bölmesini açın.
+
+   ![Dahil edilecek grupları seçin menü seçeneği vurgulanmış olarak Atamalar bölmesinin ekran görüntüsü](./media/app-protection-policy-add-users.png)
+
+2.  **Kullanıcı grubu ekle** bölmesinde kullanıcı gruplarının listesi gösterilir. Bu liste **Azure Active Directory**’nizdeki tüm güvenlik gruplarını gösterir. Bu ilkenin geçerli olmasını istediğiniz kullanıcı gruplarını seçin ve sonra da **Seç**'i belirleyin. **Seç** öğesi seçildiğinde, ilke kullanıcılara dağıtılır.
+  
+    ![Azure Active Directory kullanıcılarının listesini gösteren Kullanıcı grubu ekle bölmesinin ekran görüntüsü](./media/azure-ad-user-group-list.png)
 
 Bir ilke oluşturdunuz ve kullanıcılara dağıttınız.
 
-Yalnızca Microsoft Intune lisansları atanmış kullanıcılar ilkeden etkilenir. Seçtiğiniz güvenlik grubunda olan ve atanmış Microsoft Intune lisansı bulunmayan kullanıcılar etkilenmez.
+Yalnızca Microsoft Intune lisansları atanmış kullanıcılar ilkeden etkilenir. Seçilen güvenlik grubunda atanmış Intune lisansına sahip olmayan kullanıcılar etkilenmez.
 
 >[!IMPORTANT]
-> iOS ve Android cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır. Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
+> Cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır. Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
 Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.:
 * [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-apps-android.md)
@@ -85,38 +91,37 @@ Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. D
 ##  <a name="change-existing-policies"></a>Mevcut ilkeleri değiştirme
 Mevcut ilkeyi düzenleyebilir ve bunu hedeflenen kullanıcılara uygulayabilirsiniz. Bununla birlikte, mevcut ilkeleri değiştirdiğinizde, uygulamalarda oturum açmış olan kullanıcılar bu değişiklikleri 8 saat boyunca görmez.
 
-Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama oturumunu kapatması ve yeniden oturum açması gerekecektir.
+Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama oturumunu kapatması ve yeniden oturum açması gerekir.
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>İlkeyle ilişkili uygulamalar listesini değiştirmek için
 
-1.  **Uygulama ilkesi** dikey penceresinde değiştirmek istediğiniz ilkeyi seçin. Seçtiğiniz ilkeye özel bir dikey pencere açılır.
+1.  **Uygulama koruma ilkeleri** bölmesinde yeni seçtiğiniz ilkeye özel bir bölme açmak için değiştirmek istediğiniz ilkeyi seçin.
 
-2.  İlke dikey penceresinde **Hedeflenen uygulamalar**’ı seçerek uygulama listesini açın.
+2.  İlke bölmesinde **Hedeflenen uygulamalar**’ı seçerek uygulama listesini açın.
 
 3.  Uygulamaları listeden kaldırın veya listeye ekleyin ve değişikliklerinizi kaydetmek için **Kaydet** simgesini seçin.
 
 ### <a name="to-change-the-list-of-user-groups"></a>Kullanıcı grupları listesini değiştirmek için
 
-1.  **Uygulama ilkesi** dikey penceresinde değiştirmek istediğiniz ilkeyi seçin. Seçtiğiniz ilkeye özel bir dikey pencere açılır.
 
-2.  İlke dikey penceresinde **Kullanıcı grupları**’nı seçerek, bu ilkeye sahip geçerli kullanıcı gruplarının listesini gösteren **Kullanıcı grubu** dikey penceresini açın.
+1.  **Uygulama koruma ilkeleri** bölmesinde seçtiğiniz ilkeye özel bir bölme açmak için değiştirmek istediğiniz ilkeyi seçin.
 
-3.  İlkeye yeni kullanıcı grubu eklemek için **Kullanıcı grubu ekle**'yi seçin ve sonra da kullanıcı grubunu seçin. İlkeyi seçtiğiniz gruba dağıtmak için **Seç**öğesini seçin.
+2.  İlke bölmesinde, bu ilkeye sahip mevcut kullanıcı gruplarının listesini gösteren **Intune Uygulama Koruması - Atamalar** bölmesini açmak için **Atamalar**'ı seçin.
 
-4.  Bir kullanıcı grubunu silmek için önce kaldırmak istediğiniz kullanıcı grubunu vurgulayın. Ardından üç noktaya (…) tıklayın ve **Sil**'i seçerek kullanıcı grubunu kaldırın.
-  ![Sil seçeneğinin gösterildiği ekran görüntüsü ](./media/app-protection-policy-delete-user.png)
+3.  İlkeye yeni bir kullanıcı grubu eklemek için, **Dahil Et** sekmesinde **Dahil edilecek grupları seç**’i ve kullanıcı grubunu seçin. İlkeyi seçtiğiniz gruba dağıtmak için **Seç**öğesini seçin.
+
+4.  Bir kullanıcı grubunu silmek için, **Dışla** sekmesinde **Dışlanacak grupları seç**’i ve kullanıcı grubunu seçin. Kullanıcı grubunu kaldırmak için **Seç**’i seçin.
 
 ### <a name="to-change-policy-settings"></a>İlke ayarlarını değiştirmek için
 
-1.  **Uygulama ilkesi** dikey penceresinde değiştirmek istediğiniz ilkeyi seçin. Seçtiğiniz ilkeye özel bir dikey pencere açılır.
+1.  **Uygulama koruma ilkeleri** bölmesinde yeni seçtiğiniz ilkeye özel bir bölme açmak için değiştirmek istediğiniz ilkeyi seçin.
 
-
-2.  **İlke ayarları**’nı seçerek **İlke ayarları** dikey penceresini açın.
+2.  **İlke ayarları**’nı seçerek **İlke ayarları** bölmesini açın.
 
 3.  Ayarları değiştirin ve **Kaydet** simgesini seçerek yaptığınız değişiklikleri kaydedin.
 
 ## <a name="policy-settings"></a>İlke ayarları
-iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerden birini seçin:
+iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdaki bağlantılardan birini seçin:
 
 - [iOS ilkeleri](app-protection-policy-settings-ios.md)
 - [Android ilkeleri](app-protection-policy-settings-android.md)

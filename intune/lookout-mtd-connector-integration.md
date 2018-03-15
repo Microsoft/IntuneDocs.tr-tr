@@ -3,8 +3,8 @@ title: "Intune ile Lookout tümleştirmenizi ayarlama"
 titlesuffix: Azure portal
 description: "Intune ile Lookout aboneliğinizi ayarlama"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
 
@@ -54,7 +54,7 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 2. Aboneliğinizin adını seçtiğinizde sağlanan URL abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) bakın.
 
 3. Azure AD Grup Kimliğinizi bulun. Lookout konsolu 2 erişim düzeyini destekler:  
-  * **Tam Erişim:** Azure AD yöneticisi, Tam Erişimi olacak kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak Sınırlı Erişimi olacak kullanıcılar için bir grup oluşturur.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
+  * **Tam Erişim:** Azure AD yöneticisi, Tam Erişimi olan kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak Sınırlı Erişimi olacak kullanıcılar için bir grup oluşturur.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
   * **Kısıtlı Erişim:** Bu gruptaki kullanıcılar, Lookout konsolundaki yapılandırma ve kayıtla ilgili modüllerin çoğuna erişemez. Konsolun **Güvenlik İlkesi** modülü için ise salt okunur erişimine sahip olurlar.  
 
     > [!TIP] 
@@ -94,7 +94,7 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
     ![Intune bağlayıcısı kayıt sayfasının ekran görüntüsü](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > **Görünen Ad** Azure portalındaki güvenlik grubunun **Özellikler** sayfasında gösterildiği gibi büyük/küçük harfe duyarlıdır. Aşağıdaki resimde gösterildiği gibi, başlığı tamamen küçük harflerden oluşurken, güvenlik grubunun **Görünen Ad**’ı küçük ve büyük harflerin kombinasyonundan oluşur. Lookout konsolunda **Görünen Ad** harflerini güvenlik grubu için eşleştirin.
+    > **Görünen Ad**, Azure portalındaki güvenlik grubunun **Özellikler** sayfasında gösterildiği gibi büyük/küçük harfe duyarlıdır. Aşağıdaki resimde gösterildiği gibi, başlığı tamamen küçük harflerden oluşurken, güvenlik grubunun **Görünen Ad**’ı küçük ve büyük harflerin kombinasyonundan oluşur. Lookout konsolunda **Görünen Ad** harflerini güvenlik grubu için eşleştirin.
     >![Azure portalı, Azure Active Directory hizmeti, özellikler sayfasının ekran görüntüsü](./media/aad-group-display-name.png)
 
     >[!NOTE] 
@@ -131,7 +131,7 @@ Lookout Mobile Threat Defense, çeşitli türlerdeki mobil tehditleri sınıflan
 > Intune tümleştirmesi, çalışma zamanında cihaz uyumluluğunu bu risk düzeylerine göre hesapladığından bunlar Mobile Threat Defense için önemlidir. Intune yöneticisi; bir cihazın **Yüksek**, **Orta** veya **Düşük** düzeyde etkin bir tehdidi varsa cihazı uyumsuz olarak tanımlamak için ilke içinde bir kural koyar. Lookout Mobile Threat Defense’deki tehdit sınıflandırma ilkesi, Intune’daki cihaz uyumluluk hesaplamasını doğrudan etkiler.
 
 ## <a name="watching-enrollment"></a>Kayıt izleme
-Kurulum tamamlandıktan sonra, Lookout Mobile Threat Defense belirlenen kayıt gruplarına karşılık gelen cihazlar için Azure AD’yi yoklamaya başlar.  Kayıtlı cihazlar hakkındaki bilgileri Cihazlar modülünde bulabilirsiniz.  Cihazların ilk durumu, beklemede olarak gösterilir.  Cihaz durumu Lookout for Work uygulaması cihaza yüklendikten, açıldıktan ve etkinleştirildikten sonra değişir.  Cihaza gönderilen Lookout for Work uygulamasının nasıl alınacağına yönelik ayrıntılar için [Intune ile Lookout for Work uygulamaları ekleme](mtd-apps-ios-app-configuration-policy-add-assign.md) konusuna bakın.
+Kurulum tamamlandıktan sonra, Lookout Mobile Threat Defense belirlenen kayıt gruplarına karşılık gelen cihazlar için Azure AD’yi yoklamaya başlar.  Kayıtlı cihazlar hakkındaki bilgileri Cihazlar modülünde bulabilirsiniz.  Cihazların ilk durumu, beklemede olarak gösterilir.  Cihaz durumu Lookout for Work uygulaması cihaza yüklendikten, açıldıktan ve etkinleştirildikten sonra değişir.  Cihaza gönderilen Lookout for Work uygulamasının nasıl alınacağına yönelik ayrıntılar için bkz. [Intune ile Lookout for Work uygulamaları ekleme](mtd-apps-ios-app-configuration-policy-add-assign.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

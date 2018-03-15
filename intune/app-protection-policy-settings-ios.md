@@ -1,12 +1,12 @@
 ---
 title: "iOS uygulama koruma ilkesi ayarları"
-titlesuffix: Azure portal
-description: "Bu konu başlığı altında iOS cihazları için uygulama koruma ilkesi ayarları açıklanır.\""
+titlesuffix: Microsoft Intune
+description: "Bu konu başlığı altında iOS cihazları için uygulama koruma ilkesi ayarları açıklanır."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5366062588d518a7072fb4d56e4eade0f492bebf
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 6225afab71d1f47793ea295553dfcaf169374a06
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS uygulama koruma ilkesi ayarları
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
+Bu konuda açıklanan ilke ayarları Azure portalındaki **İlke Ekle** > **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
 
 İlke ayarlarının, verileri yeniden konumlandırma ayarları ve erişim ayarları olmak üzere iki kategorisi vardır. Bu konuda, ***ilkeyle yönetilen uygulamalar*** terimi, uygulama koruma ilkeleriyle yapılandırılan uygulamaları ifade eder.
 
@@ -32,8 +32,8 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penc
 
 | Ayar | Nasıl kullanılır? | Varsayılan değer |
 |------|------|------|
-| **iTunes ve iCloud yedeklemelerini engelle** | Tüm yönetilen dosyaların iTunes ve iCloud’da yedeklenmesini devre dışı bırakmak için **Evet**’i seçin. Bu uygulamanın yönetilen dosyaları iTunes veya iCloud’da yedeklemesine izin vermek için **Hayır**’ı seçin.| Evet |
-| **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** | Hangi uygulamaların bu uygulamadan veri alabileceğini belirtin: <ul><li> **İlke ile yönetilen uygulamalar**: Yalnızca diğer ilkeyle yönetilen uygulamalara aktarım yapılmasına izin verilir.</li> <li>**Tüm uygulamalar**: Herhangi bir uygulamaya aktarıma izin verilir. </li> <li>**Hiçbiri**: İlkeyle yönetilen diğer uygulamalar da dahil olmak üzere hiçbir uygulamaya veri aktarmaya izin verilmez.</li></ul> Ayrıca, bu seçeneği **İlke ile yönetilen uygulamalar** veya **Hiçbiri** olarak ayarlarsanız uygulamaların içindeki verileri aramak için Spotlight Arama özelliğine imkan tanıyan iOS 9 özelliği engellenir. <br><br> Intune’un veri aktarımı hedefi olarak izin verebileceği bazı muaf uygulamalar ve hizmetler vardır. Uygulama ve hizmetlerin tam listesi için bkz. [Veri aktarımı muafiyetleri](#data-transfer-exemptions). | Tüm uygulamalar |
+| **iTunes ve iCloud yedeklemelerini engelle** | Bu uygulamanın iş veya okul verilerini iTunes veya iCloud’a yedeklemesini engellemek için **Evet**’i seçin. Bu uygulamanın iş veya okul verilerini iTunes veya iCloud’a yedeklemesine izin vermek için **Hayır**’ı seçin.| Evet |
+| **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** | Hangi uygulamaların bu uygulamadan veri alabileceğini belirtin: <ul><li> **İlke ile yönetilen uygulamalar**: Yalnızca diğer ilkeyle yönetilen uygulamalara aktarım yapılmasına izin verilir.</li> <li>**Tüm uygulamalar**: Herhangi bir uygulamaya aktarıma izin verilir. </li> <li>**Hiçbiri**: İlkeyle yönetilen diğer uygulamalar da dahil olmak üzere hiçbir uygulamaya veri aktarmaya izin verilmez.</li></ul> Ayrıca, bu seçeneği **İlke ile yönetilen uygulamalar** veya **Hiçbiri** olarak ayarlarsanız uygulamaların içindeki verileri aramak için Spotlight Arama özelliğine imkan tanıyan iOS 9 özelliği engellenir. <br><br> Intune’un varsayılan olarak veri aktarımı hedefi olarak izin verebileceği bazı muaf uygulamalar ve hizmetler vardır. Buna ek olarak, verilerin Intune APP'yi desteklemeyen bir uygulamaya aktarılmasına izin vermeniz gerekiyorsa kendi muafiyetlerinizi oluşturabilirsiniz. Daha fazla bilgi için bkz. [veri aktarımı muafiyetleri](#data-transfer-exemptions). | Tüm uygulamalar |
 | **Uygulamanın diğer uygulamalardan veri almasına izin ver** | Hangi uygulamaların bu uygulamaya veri aktarabileceğini belirtin: <ul><li>**İlke ile yönetilen uygulamalar**: Yalnızca diğer ilkeyle yönetilen uygulamalardan aktarım yapılmasına izin verilir.</li><li>**Tüm uygulamalar**: Herhangi bir uygulamadan veri aktarımına izin verilir.</li><li>**Hiçbiri**: İlkeyle yönetilen diğer uygulamalar da dahil olmak üzere hiçbir uygulamadan veri aktarmaya izin verilmez.</li></ul> Intune’un veri aktarımı kaynağı olarak izin verebileceği bazı muaf uygulamalar ve hizmetler vardır. Uygulama ve hizmetlerin tam listesi için bkz. [Veri aktarımı muafiyetleri](#data-transfer-exemptions). Kayıtlı olmayan iOS cihazlarındaki çok kimlikli MAM etkin uygulamalar bu ilkeyi yoksayar ve tüm gelen verilere izin verir. | Tüm uygulamalar |
 | **“Farklı Kaydet”i engelle** | Bu uygulamada Farklı Kaydet seçeneğinin kullanımını devre dışı bırakmak için **Evet**’i seçin. Farklı Kaydet’in kullanılmasına izin vermek istiyorsanız **Hayır** ’ı seçin. | Hayır |
 | **Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtlama** | Bu uygulamada kes, kopyala ve yapıştır eylemlerinin ne zaman kullanılabileceğini belirtin. Aşağıdakilerden birini seçin: <ul><li>**Engellendi**: Bu uygulama ve diğer herhangi bir uygulama arasında kesme, kopyalama ve yapıştırma eylemlerine izin verilmez.</li><li>**İlkeyle yönetilen uygulamalar**: Bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında kesme, kopyalama ve yapıştırma eylemlerine izin verilir.</li><li>**Yapıştırma seçeneğiyle ilke ile yönetilen**: Bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında kesme veya kopyalama eylemine izin verilir. Herhangi bir uygulamadan verilerin bu uygulamaya yapıştırılmasına izin verir.</li><li>**Herhangi bir uygulama**: Bu uygulamaya veya bu uygulamadan kesme, kopyalama ve yapıştırma eylemleriyle ilgili bir kısıtlama olmaz. | Herhangi bir uygulama |
@@ -53,13 +53,12 @@ Intune uygulama koruma ilkesinin, belirli senaryolarda veri aktarımına hedef v
 | Uygulama/hizmet adı | Description |
 | ---- | --- |
 |<code>tel; telprompt</code> | Yerel telefon uygulaması |
-| <code>skype</code> | Skype |
-| <code>app-settings</code> | Cihaz ayarları |
-| <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | Uygulama Mağazası |
-| <code>calshow</code> | Yerel Takvim |
+|<code>skype</code> | Skype |
+|<code>app-settings</code> | Cihaz ayarları |
+|<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | Uygulama Mağazası |
+|<code>calshow</code> | Yerel Takvim |
 
-
-
+Daha fazla bilgi için bkz. [Uygulamalar için veri aktarım ilkesi özel durumları](app-protection-policies-exception.md). 
 
 ## <a name="access-settings"></a>Erişim ayarları
 

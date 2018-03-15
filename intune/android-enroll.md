@@ -1,6 +1,6 @@
 ---
-title: "Android cihazları Intune’a kaydetme | Microsoft Docs"
-titlesuffix: Azure portal
+title: "Intune’da Android cihazları kaydetme"
+titlesuffix: Microsoft Intune
 description: "Intune’da Android cihazları kaydetmeyi öğrenin."
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-android-devices"></a>Android cihazlarını kaydetme
 
@@ -43,14 +43,14 @@ Cihaz yönetimini etkinleştirmek için, kullanıcılarınızın Intune Şirket 
 
 ## <a name="enable-enrollment-of-android-for-work-devices"></a>Android for Work cihazlarının kaydını etkinleştirme
 
-[Android for Work desteği olan](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) cihazlarda iş profilinin yönetimini etkinleştirmek için Intune'a bir Android for Work bağlaması eklemeniz gerekir. Android for Work destekleyen ancak önceden normal Android cihazlar olarak kaydedilmiş olan cihazları kaydetmek için, bu cihazların kaydını kaldırmalı ve daha sonra bunları tekrar kaydetmelisiniz.
+[Android for Work desteği olan](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) cihazlarda iş profilinin yönetimini etkinleştirmek için Intune'a bir Android for Work bağlaması eklemeniz gerekir. Android for Work’e cihaz kaydetmek istiyorsanız ancak bu cihazlar zaten normal Android cihazlar olarak kayıtlıysa, cihazların kaydını kaldırmalı ve ardından tekrar kaydetmelisiniz.
 
 Android for Work cihazları bir [Cihaz Kayıt Yöneticisi](device-enrollment-manager-enroll.md) hesabı kullanarak kaydediyorsanız, hesap başına yalnızca 10 cihaz sınırı vardır.
 
 ## <a name="add-android-for-work-binding-for-intune"></a>Intune için Android for Work Bağlaması ekleme
 
 > [!NOTE]
-> Google ve Microsoft etki alanları arasındaki etkileşim nedeniyle, bu adımı başarıyla tamamlamanız için tarayıcı ayarlarınızı değiştirmeniz gerekebilir.  Lütfen “portal.azure.com” ve “play.google.com” adreslerinin tarayıcınızda aynı güvenlik bölgesinde olduğundan emin olun.
+> Google ve Microsoft etki alanları arasındaki etkileşim nedeniyle, bu adımı başarıyla tamamlamanız için tarayıcı ayarlarınızı değiştirmeniz gerekebilir.  “portal.azure.com” ve “play.google.com” adreslerinin tarayıcınızda aynı güvenlik bölgesinde olduğundan emin olun.
 
 1. **Intune MDM’yi ayarlama**<br>
 Henüz yapmadıysanız, [mobil cihaz yönetimi yetkilisini](mdm-authority-set.md) **Microsoft Intune** olarak ayarlayarak mobil cihaz yönetimine hazırlanın.
@@ -58,7 +58,7 @@ Henüz yapmadıysanız, [mobil cihaz yönetimi yetkilisini](mdm-authority-set.md
     Bir Intune yöneticisi olarak Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**'u seçin.
 
    a. **Intune** dikey penceresinde **Cihaz kaydı** > **Android for Work Kaydı**’nı seçin ve **Yapılandır**’a tıklayarak Google Play’in Android for Work web sitesini açın. Web sitesi, tarayıcınızda yeni bir sekmede açılır.
-   ![Android for Work bağlamasını yapılandır bağlantısını gösteren ekran görüntüsü](./media/android-work-bind.png)
+   ![Android for Work kayıt ekranı](./media/android-work-bind.png)
 
    b. **Google’da oturum açma**<br>
    Google'ın oturum açma sayfasında, bu kiracı için tüm Android for Work yönetim görevleriyle ilişkilendirilecek Google hesabını girin. Bu, şirketinizin BT yöneticilerinin Play for Work konsolunda uygulama yönetmek ve yayımlamak için paylaştığı Google hesabıdır. Mevcut bir Google hesabını kullanabilir veya yeni bir tane oluşturabilirsiniz.  Seçtiğiniz hesabın bir G-Suite etki alanıyla ilişkilendirilmemiş olması gerekir.
@@ -73,13 +73,13 @@ Android for Work yalnızca belirli Android cihazlarda desteklenmektedir. Google'
 - **İzin ver**: Android for Work destekleyen tüm cihazlar Android for Work cihazlar olarak kaydedilir. Android for Work desteklemeyen herhangi bir Android cihaz, geleneksel Android cihaz olarak kaydedilir.
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Yönetilen Google Play Store'da Şirket Portalı uygulamasını onaylama
-Android için Şirket Portalı uygulamasının otomatik uygulama güncelleştirmelerini alabilmesi için, bu uygulamayı yönetilen Google Play Store'da onaylamanız gerekir. Onaylamazsanız, Şirket Portalı zamanla güncelliğini yitirir ve Microsoft'un kullanıma sunduğu önemli hata düzeltmelerini veya yeni özellikleri alamaz.
+Android için Şirket Portalı uygulamasının otomatik uygulama güncelleştirmelerini alabilmesi için bu uygulamayı yönetilen Google Play Store'da onaylamanız gerekir. Onaylamazsanız, Şirket Portalı zamanla güncelliğini yitirir ve Microsoft'un kullanıma sunduğu önemli hata düzeltmelerini veya yeni özellikleri alamaz.
 
 Intune Şirket Portalı'nı onaylamak için aşağıdaki adımları izleyin:
 
 1.  [Yönetilen Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)’da Şirket Portalı uygulamasına göz atın.
 2.  Yönetilen Google Play Store'da, Android for Work bağlamasını yapılandırırken kullandığınız Google hesabıyla oturum açın.
-3.  **Onayla**'ya tıklayın.  Yeni bir iletişim kutusu açılır.
+3.  **Onayla**’ya tıkladığınızda yeni bir iletişim kutusu açılır.
 4.  Bu iletişim kutusunda izinleri gözden geçirin ve ardından **Onayla**'ya tıklayın. Şirket Portalı uygulamasının cihazdaki iş profilini yönetmesine olanak tanımak için bu izinlerin verilmesi gerekir.
 5.  **Uygulama yeni izinler istediğinde onaylı durumda tut** öğesini seçin ve **Kaydet**'e tıklayın.
 

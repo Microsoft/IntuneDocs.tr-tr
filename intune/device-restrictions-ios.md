@@ -1,27 +1,26 @@
 ---
-title: "iOS için Intune cihaz kısıtlamaları ayarları"
-titleSuffix: Azure portal
-description: "iOS cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
+title: "iOS için Microsoft Intune cihaz kısıtlamaları ayarları"
+titleSuffix: 
+description: "iOS çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da iOS cihaz kısıtlama ayarları
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS cihaz kısıtlama ayarları
+Bu makalede, iOS çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -107,7 +106,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 - **Geçiş kodu değişikliği (yalnızca denetimli)** - Geçiş kodunun değiştirilmesi, eklenmesi veya kaldırılmasını durdurur.
     - **Parmak izi değişikliği (yalnızca denetimli)** - Kullanıcının TouchID ayarlarını değiştirmesi, eklemesi veya kaldırmasını engeller.
 
-<sup>1</sup>**Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** ve **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**, ayarlarını yapılandırdığınızda, bunlar sırayla uygulanır. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
+<sup>1</sup>**Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** ve **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**, ayarlarını yapılandırdığınızda, bunlar sırayla uygulanır. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran beş dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için beş dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki beş dakikanın sonunda cihaz kilitlenir.
 
 ## <a name="locked-screen-experience"></a>Kilit Ekranı Deneyimi
 
@@ -182,7 +181,7 @@ Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygu
 
 Uygulamaları gösterme veya gizleme listesinde, aşağıdaki listelerden birini yapılandırabilirsiniz (iOS 9.3 veya üstünü çalıştıran denetimli cihazlar gerekir).
 
-**Gizli uygulamalar** listesi - Kullanıcılardan gizlenecek uygulamaların listesini belirtin. Kullanıcılar bu uygulamaları görüntüleyemez veya başlatamaz.
+**Gizli uygulamalar** listesi - Kullanıcılardan gizlenen uygulamaların listesini belirtin. Kullanıcılar bu uygulamaları görüntüleyemez veya başlatamaz.
 **Görünür uygulamalar** listesi - Kullanıcıların görüntüleyebileceği ve başlatabileceği uygulamaların listesini belirtin. Başka hiçbir uygulama görüntülenemez veya başlatılamaz.
 
 Listeyi yapılandırmak için **Ekle**’ye tıklayın, sonra da tercih ettiğiniz bir ad (isteğe bağlı olarak uygulama yayımcısı) ve uygulamanın uygulama mağazasındaki URL'sini belirtin.
@@ -240,7 +239,7 @@ Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygu
 -   **iCloud'a belge eşitleme (yalnızca denetimli)** - iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verin.
 -   **iCloud'a fotoğraf akışı eşitlemesi** - Kullanıcıların fotoğrafların iCloud’a eşitlenmesine ve tüm kullanıcıların cihazlarında kullanılabilir olmasına olanak tanıyan **Fotoğraf Akışım**’ı cihazlarında etkinleştirmesine olanak tanır.
 -   **Şifrelenmiş yedekleme** - Tüm cihaz yedeklemelerinin şifrelenmesini zorunlu tutun.
--   **iCloud Fotoğraf Arşivi** - **Hayır** seçeneği ayarlanırsa kullanıcıların fotoğraflar ve videoları bulutta depolamasını sağlayan iCloud fotoğraf kitaplığının kullanımı devre dışı bırakılır.    Bu ayar **Hayır** olarak belirlenirse iCloud Fotoğraf Arşivi'nden cihaza tamamen indirilmeyen tüm fotoğraflar cihazdan kaldırılır.
+-   **iCloud Fotoğraf Arşivi** - **Hayır** seçeneğine ayarlanırsa kullanıcıların fotoğraflar ve videoları bulutta depolamasını sağlayan iCloud fotoğraf arşivinin kullanımı devre dışı bırakılır.   Bu ayar **Hayır** olarak belirlenirse iCloud Fotoğraf Arşivi'nden cihaza tamamen indirilmeyen tüm fotoğraflar cihazdan kaldırılır.
 -   **Yönetilen uygulamaları bulutla eşitleme** - Intune ile yönettiğiniz uygulamaların, kullanıcının iCloud hesabıyla veri eşitlemesine izin verin.
 -   **Paylaşılan fotoğraf akışı** - Cihazda **iCloud Fotoğraf Paylaşımı**’nı devre dışı bırakmak için **Hayır** olarak ayarlayın.
 -   **Etkinlik devamlılığı** - Kullanıcının bir iOS cihazında başladığı çalışmayı başka bir iOS veya macOS cihazında sürdürmesine izin verin (İletim).
@@ -251,7 +250,7 @@ Bu ayarları kullanarak iOS cihazlarını, belirtilen uygulamaları otonom tek u
 
 ### <a name="settings"></a>Ayarlar
 
-- **Uygulama adı** - Uygulamanın bu dikey penceredeki uygulamalar listesinde görünecek adını girin.
+- **Uygulama adı** - Uygulamanın bu dikey penceredeki uygulamalar listesinde görünen adını girin.
 - **Uygulama Paket Kimliği** - Uygulamanın paket kimliğini girin. Yardım için bu konu başlığındaki **Yerleşik iOS uygulamaları için Paket Kimliği başvurusu** konusuna bakın.
 
 Her uygulama adını ve paket kimliğini belirttikten sonra listeye eklemek için **Ekle**’yi seçin.
@@ -343,7 +342,7 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 
 ### <a name="unmarked-email-domains"></a>İşaretsiz e-posta etki alanları
 
-**E-posta Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Son kullanıcılar, yapılandırdığınız etki alanları dışındaki bir etki alanından e-posta aldığında, bu e-posta iOS Mail uygulamasında güvenilmeyen olarak işaretlenir.
+**E-posta Etki Alanı URL'si** alanında, listeye bir veya daha fazla URL ekleyin. Son kullanıcılar, yapılandırdığınız etki alanı dışındaki bir etki alanından e-posta aldığında, bu e-posta iOS Mail uygulamasında güvenilmeyen olarak işaretlenir.
 
 
 ### <a name="managed-web-domains"></a>Yönetilen web etki alanları

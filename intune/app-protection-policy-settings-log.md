@@ -1,7 +1,7 @@
 ---
-title: "Uygulama koruma ilkesi günlükleri"
-titlesuffix: Azure portal
-description: "Bu konu, uygulama günlüğünde saklanan uygulama koruma ilkesi ayarlarının kaydını açıklamaktadır."
+title: "Uygulama koruma ilkesi günlüklerini gözden geçirme"
+titlesuffix: Microsoft Intune
+description: "Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 
-Mobil istemcideki bir uygulama için Intune Tanı Modu'nu etkinleştirerek günlüklere erişebilirsiniz. Aşağıdaki tabloda, günlüğe kaydedilen ayarların adları ve açıklamaları gösterilmektedir.
+Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin. Mobil istemcideki bir uygulama için Intune Tanı Modu'nu etkinleştirerek günlüklere erişin. Aşağıdaki tabloda, günlüğe kaydedilen ayarların adları ve açıklamaları gösterilmektedir.
 
 ## <a name="app-protection-policy-settings"></a>Uygulama koruma ilkesi ayarları
 

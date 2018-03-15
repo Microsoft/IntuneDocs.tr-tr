@@ -1,25 +1,23 @@
 ---
 title: Intune cihaz uyumluluk ilkelerini izleme
 titlesuffix: Azure portal
-description: "Cihaz uyumluluğu ilkelerini izlemeyi öğrenin.\""
+description: "Cihaz uyumluluk ilkelerini izlemeyi öğrenin"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 03/10/2017
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
+ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
@@ -27,9 +25,9 @@ Uyumluluk raporları, yöneticilerin kuruluşlarındaki cihazların uyumluluk du
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Azure portalında **Intune Cihaz uyumluluk panosu**’nu bulmak için aşağıdaki adımları izleyin:
+Azure portalında **Intune Cihaz uyumluluk panosu**’nu bulmak için aşağıdaki adımları kullanın:
 
-1.  [Azure Portal](https://portal.azure.com)’a gidin ve Intune kimlik bilgilerinizle oturum açın.
+1.  [Azure portalı](https://portal.azure.com)’na gidin ve Intune kimlik bilgilerinizle oturum açın.
 
 2.  Soldaki menüden **Daha fazla hizmet**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
 
@@ -40,7 +38,7 @@ Azure portalında **Intune Cihaz uyumluluk panosu**’nu bulmak için aşağıda
 
 ## <a name="device-compliance-dashboard"></a>Cihaz uyumluluk panosu
 
-**Cihaz uyumluluk panosu**‘nda Cihaz uyumluluk ilkesi durumlarını izleyebilirsiniz. Farklı kutucuklar içerisinde yer alan farklı raporlar kuruluşunuzdaki cihazların uyumluluk duruşlarını gösterir. Aşağıdaki raporları görüntüleyebilirsiniz:
+**Cihaz uyumluluk panosu**’nda Cihaz uyumluluk ilkesi durumlarını izleyebilirsiniz. Farklı kutucuklar içerisinde yer alan farklı raporlar, kuruluşunuzdaki cihazların uyumluluk duruşlarını gösterir. Aşağıdaki raporları görüntüleyebilirsiniz:
 
 -   Genel cihaz uyumluluk toplamı
 
@@ -75,9 +73,9 @@ Intune’a kayıtlı tüm cihazlar için toplam uyumluluk durumunu gösteren bir
 
 #### <a name="drill-down-option"></a>Detaya gitme seçeneği
 
-**Cihaz uyumluluk panosu**‘nda Cihaz uyumluluğu kutucuğuna tıklarsanız, cihaz uyumluluk ilkeleri tarafından hedeflenen her bir cihaz için belirli bir **uyumluluk durumu**, **kullanıcının e-posta diğer adı**, **cihaz modeli** ve **konum** detayına gidebilirsiniz.
+**Cihaz uyumluluk panosu**’nda Cihaz uyumluluğu kutucuğuna tıklarsanız cihaz uyumluluk ilkeleri tarafından hedeflenen her bir cihaz için belirli bir **uyumluluk durumu**, **kullanıcının e-posta diğer adı**, **cihaz modeli** ve **konum** detayına gidebilirsiniz.
 
-![Detaya gidilmiş cihaz uyumluluk panosu](./media/idc-2.png)
+![Cihaz uyumluluk panosunun detayına gitme](./media/idc-2.png)
 
 Belirli bir kullanıcı hakkında daha fazla ayrıntı gerekiyorsa kullanıcının e-posta diğer adını yazarak Cihaz uyumluluğu grafik raporunu filtreleyebilirsiniz.
 
@@ -131,7 +129,7 @@ Cihaz ilkesi ayarının kendisinin üzerine tıkladığınızda yönetici taraf�
 
 ![Cihaz uyumluluk ayarı adı](./media/idc-7.png)
 
-### <a name="per-policy-device-compliance-report"></a>İlkeye göre cihaz uyumluluğu raporu
+## <a name="policy-compliance-report"></a>İlke uyumluluk raporu
 
 Bu raporda, uyumluluk ilkesine göre görünüm ve her bir uyumluluk durumundaki toplam cihaz sayısı sunulmaktadır. **İlke uyumluluğu** kutucuğuna **Cihaz uyumluluk panosu**’ndan erişilebilir. Bu kutucuk; daha önce yönetici tarafından oluşturulan tüm ilkeleri, ilkenin uygulandığı platformları, uyumlu olan ve olmayan cihazların sayısını gösterir.
 
@@ -141,7 +139,7 @@ Bu raporda, uyumluluk ilkesine göre görünüm ve her bir uyumluluk durumundaki
 
 ![İlke uyumluluğu kutucuğu](./media/idc-9.png)
 
-### <a name="per-setting-device-compliance-report"></a>Ayara göre cihaz uyumluluğu raporu
+## <a name="setting-compliance-report"></a>Ayar uyumluluk raporu
 
 Bu raporu kullanarak uyumluluk ayarına göre her bir uyumluluk durumundaki toplam cihaz sayısını görüntüleyebilirsiniz. **Ayar uyumluluğu** kutucuğuna **Cihaz uyumluluk panosu**’ndan erişilebilir. Bu kutucuk; yönetici tarafından oluşturulan tüm cihaz uyumluluk ilkelerinin tüm cihaz uyumluluk ilkesi ayarlarını, ilke ayarlarının uygulandığı platformları, uyumlu olmayan cihazların sayısını gösterir.
 
@@ -150,3 +148,14 @@ Bu raporu kullanarak uyumluluk ayarına göre her bir uyumluluk durumundaki topl
 Ayar uyumluluğu kutucuğuna ve sonra cihaz uyumluluk ilkesi ayarlarından birine tıkladığınızda, cihaz uyumluluk ilkesi ayarı tarafından hedeflenen her bir cihaz için **uyumluluk durumu**, **kullanıcının e-posta diğer adı**, **cihaz modeli** ve **konum** bilgilerini görebilirsiniz.
 
 ![Ayar uyumluluğu kutucuğu](./media/idc-11.png)
+
+## <a name="threat-agent-status-report"></a>Tehdit aracısı durum raporu
+
+Bu rapor, Windows Defender aracısının durumunu ve sağlığını görüntülemenizi sağlar. **Cihaz Uyumluluğu**’nda bir durum toplama raporu kullanarak, aşağıdaki işlemlerden herhangi birine ihtiyaç duyan cihazları görebilirsiniz:
+- İmza güncelleştirmesi
+- yeniden başlatıp
+- El ile müdahale
+- Tam tarama
+- Müdahale gerektiren diğer aracı durumları
+
+Her bir durum kategorisi için ayrıntılı bir rapor ile ilgilenilmesi gereken bireysel PC’ler veya **Temiz** olarak raporlanan PC’ler listelenir.

@@ -1,6 +1,6 @@
 ---
-title: "Intune lisanslarını atama"
-description: "Intune aboneliğiniz için kullanıcılara lisans atama"
+title: "Microsoft Intune lisansları atama"
+description: "Intune’a kaydolabilmeleri için kullanıcılara lisans atama"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="assign-intune-licenses-to-your-user-accounts"></a>Kullanıcı hesaplarınıza Intune lisansları atama
+# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Cihazlarını Intune’a kaydedebilmeleri için kullanıcılara lisans atama
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -36,7 +36,7 @@ Bulut tabanlı kullanıcılar eklemek ve hem bulut tabanlı kullanıcı hesaplar
 
 3.  **Intune** veya **Enterprise Mobility + Security**’i **Açık** konuma getirin ve **Kaydet**’i seçin.
 
-  ![Office 365 portalı Ürün lisansı atama görüntüsü.](./media/office-assign-license.png)
+  ![Office 365 portalı Ürün lisansları bölümünün ekran görüntüsü.](./media/office-assign-license.png)
 
 4. Kullanıcı hesabı artık hizmeti kullanmak ve yönetime cihaz kaydetmek için gereken izinlere sahiptir.
 
@@ -46,11 +46,11 @@ Bulut tabanlı kullanıcılar eklemek ve hem bulut tabanlı kullanıcı hesaplar
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Eğitim için Intune kullanıcılarına lisans atamak için School Data Sync özelliğini kullanma
 Bir eğitim kuruluşuysanız, eşitlenen kullanıcılara Eğitim için Intune lisansları atamak için School Data Sync (SDS) kullanabilirsiniz. SDS profilinizi ayarlarken Eğitim için Intune onay kutusunu işaretlemeniz yeterlidir.  
 
-![SDS profil ayarının görüntüsü](./media/i4e-sds-profile-setup-setting.png)
+![SDS profil ayarının ekran görüntüsü](./media/i4e-sds-profile-setup-setting.png)
 
 Eğitim için Intune lisansı atadığınızda, Intune A Direct lisansının da atandığından emin olun.
 
-![Ürün lisansı ayarının görüntüsü](./media/i4e-set-licenses.png)
+![Ürün lisansı ayarının ekran görüntüsü](./media/i4e-set-licenses.png)
 
 SDS hakkında daha fazla bilgi edinmek için bkz. [School Data Sync’e genel bakış](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 

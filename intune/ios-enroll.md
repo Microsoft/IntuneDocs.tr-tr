@@ -1,7 +1,7 @@
 ---
-title: "Intune’da Windows cihazları nasıl yükleyeceğinizi seçme"
-titlesuffix: Azure portal
-description: "Microsoft Intune’da Windows cihazların kaydını nasıl ayarlayacağınızı öğrenin.”"
+title: "Intune’da iOS cihazlarının nasıl kaydedileceğini belirleme"
+titlesuffix: Microsoft Intune
+description: "Microsoft Intune’da iOS cihazlarının kaydını ayarlayın."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f36e579282f7aeaec74c3e80d866e52dfa508d3d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 602c4c1da553215ad222a7e593531fdd879c996c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune’da iOS cihazları kaydetme
 
@@ -34,7 +34,7 @@ iOS cihazları etkinleştirmeden önce aşağıdaki adımları tamamlayın:
 
 ## <a name="user-owned-ios-devices-byod"></a>Kullanıcıya ait iOS cihazları (KCG)
 
-Kullanıcıların kendi cihazlarını Intune yönetimine kaydetmesine izin verebilirsiniz. Bu, “kendi cihazını getir” veya KCG olarak bilinir. Siz önkoşulları tamamlayıp kullanıcılara lisans atadıktan sonra kullanıcılar, App Store’dan iOS Şirket Portalı’nı indirip uygulamadaki kayıt yönergelerini izleyebilir.
+Kullanıcıların kendi cihazlarını Intune yönetimine kaydetmesine izin verebilirsiniz. Bu, “kendi cihazını getir” veya KCG olarak bilinir. Siz önkoşulları tamamlayıp kullanıcılara lisans atadıktan sonra kullanıcılar, App Store’dan Intune Şirket Portalı’nı indirip uygulamadaki kayıt yönergelerini izleyebilir.
 
 ## <a name="company-owned-ios-devices"></a>Şirkete ait iOS cihazlar
 Kullanıcılarına cihaz sağlayan kuruluşlar için Intune, aşağıdaki iOS şirkete ait cihaz kayıt yöntemlerini destekler:

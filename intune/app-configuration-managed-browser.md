@@ -1,7 +1,7 @@
 ---
 title: "Managed Browser uygulaması ile web erişimini yönetme"
-titlesuffix: Azure portal
-description: "Web’e gözatmayı ve web verilerinin başka uygulamalara aktarımını kısıtlamak için Managed Browser uygulamasını dağıtın.\""
+titlesuffix: Microsoft Intune
+description: "Web’e gözatmayı ve web verilerinin başka uygulamalara aktarımını kısıtlamak için Managed Browser uygulamasını dağıtın."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3d902ada21c2cf864c3e21ef02b886d16162853c
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile Managed Browser ilkelerini kullanarak İnternet erişimini yönetme
 
@@ -63,17 +63,17 @@ Intune Managed Browser, [Microsoft Intune uygulama iş ortaklarının](https://w
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Bir Managed Browser uygulama yapılandırması oluşturma
 
-1.  Azure Portal’da oturum açın.
-2.  **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3.  Yönetim listesinin **Mobil uygulamalar** dikey penceresinde **Uygulama yapılandırma ilkeleri**’ni seçin.
-4.  **Uygulama Yapılandırma ilkeleri** dikey penceresinde **Ekle**’yi seçin.
-5.  **Uygulama yapılandırması ekle** dikey penceresinde, uygulama yapılandırma ayarları için bir **Ad** ve isteğe bağlı bir **Açıklama** girin.
+4.  **Uygulama yapılandırma ilkeleri** dikey penceresinde, **Ekle**’yi seçin.
+5.  **Yapılandırma ilkesi ekle** dikey penceresinde, uygulama yapılandırma ayarları için bir **Ad** ve isteğe bağlı bir **Açıklama** girin.
 6.  **Cihaz kayıt** türü için **Yönetilen uygulamalar**’ı seçin.
-7.  **Gerekli uygulamaları seç**’e tıklayın ve ardından **Hedeflenen uygulamalar** dikey penceresinde iOS için, Android için veya her ikisi için **Managed Browser**’ı seçin.
-8.  **Tamam**’ı seçerek **Uygulama yapılandırması ekle** dikey penceresine dönün.
-9.  **Yapılandırma Ayarları**’nı seçin. **Yapılandırma** dikey penceresinde, Managed Browser için yapılandırmaları sağlamak üzere anahtar ve değer çiftlerini tanımlayın. Tanımlayabileceğiniz farklı anahtar ve değer çiftleri hakkında bilgi edinmek için bu makalenin ilerleyen bölümlerine göz atın.
+7.  **Gerekli uygulamayı seçin** öğesini belirleyin ve ardından **Hedeflenen uygulamalar** dikey penceresinde iOS ya da Android veya her ikisi için **Managed Browser**’ı seçin.
+8.  **Tamam**’ı seçerek **Yapılandırma ilkesi ekle** dikey penceresine dönün.
+9.  **Yapılandırma ayarları**’nı seçin. **Yapılandırma** dikey penceresinde, Managed Browser için yapılandırmaları sağlamak üzere anahtar ve değer çiftlerini tanımlayın. Tanımlayabileceğiniz farklı anahtar ve değer çiftleri hakkında bilgi edinmek için bu makalenin ilerleyen bölümlerine göz atın.
 10. İşiniz bittiğinde **Tamam**’ı seçin.
-11. **Uygulama yapılandırması ekle** dikey penceresinde, **Oluştur**’u seçin.
+11. **Yapılandırma ilkesi ekle** dikey penceresinde, **Ekle**’yi seçin.
 12. Yeni yapılandırma oluşturulur ve **Uygulama yapılandırması** dikey penceresinde görüntülenir.
 
 >[!IMPORTANT]
@@ -83,10 +83,10 @@ Intune Managed Browser, [Microsoft Intune uygulama iş ortaklarının](https://w
 
 Ayarları Azure AD kullanıcı gruplarına atayın. Bu kullanıcı Managed Browser uygulamasını yüklemişse uygulama belirttiğiniz ayarlarla yönetiliyordur.
 
-1. Intune mobil uygulama yönetimi panosunun **Ayarlar** dikey penceresinde, **Uygulama yapılandırması**’nı seçin.
+1. Intune mobil uygulama yönetimi panosunun **Mobil uygulamalar** dikey penceresinde, **Yapılandırma ilkeleri ekle**’yi seçin.
 2. Uygulama yapılandırmaları listesinden atamak istediğiniz birini seçin.
-3. Sonraki dikey pencerede **Kullanıcı Grupları**’nı seçin.
-4. **Kullanıcı grupları** dikey penceresinde, uygulama yapılandırmasını atamak istediğiniz Azure AD grubunu ve ardından **Tamam**’ı seçin.
+3. Sonraki dikey pencerede **Atamalar**’ı seçin.
+4. **Atamalar** dikey penceresinde, uygulama yapılandırmasını atamak istediğiniz Azure AD grubunu ve ardından **Tamam**’ı seçin.
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Managed Browser için Uygulama Proxy’si ayarlarını yapılandırma

@@ -1,12 +1,12 @@
 ---
-title: "Uygulama sağlama profilleri"
-titlesuffix: Azure portal
+title: "Microsoft Intune’da iOS uygulama sağlama profilleri"
+titlesuffix: 
 description: "Intune size süresi dolmak üzere olan uygulamaların bulunduğu cihazlara yeni sağlama profilini önceden atamak için araçlar verir.\""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/03/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa1fe56726f320d971f35cc971253707f968442
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 7637dcb3aba4f46a3e97c8de47d974b46af27b47
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Uygulamalarınızın süresinin dolmasını engellemek için iOS mobil sağlama profillerini kullanma
+# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Uygulamalarınızın süresinin dolmasını engellemek için Intune’da iOS mobil sağlama profillerini kullanma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -39,12 +39,12 @@ Sertifikanın süresi dolduktan sonra, uygulamayı yeni bir sertifikayla tekrar 
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS mobil uygulama sağlama profili oluşturma
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-1.  **Mobil uygulamalar** iş yükünde **Yönet** > **iOS sağlama profilleri** seçeneğini belirleyin.
-2.  Profil listesi dikey penceresinde **Profil oluştur**’u seçin.
-3. **Profil oluştur** dikey penceresinde aşağıdakileri değerleri yapılandırın:
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
+1.  **Mobil uygulamalar** iş yükünde **Yönet** > **iOS uygulama sağlama profilleri** seçeneğini belirleyin.
+2.  Profil listesi bölmesinde **Profil oluştur**’u seçin.
+3. **Profil oluştur** bölmesinde aşağıdakileri değerleri yapılandırın:
     - **Ad** - Bu mobil sağlama profiline bir ad verin.
     - **Açıklama** - İsteğe bağlı olarak, ilke için bir açıklama sağlayın.
     - **Profili dosyasını karşıya yükleme** - **İçeri Aktar**’ı seçin, sonra da Apple Developer web sitesinden indirdiğiniz bir Apple Mobil Yapılandırma Profili dosyasını (uzantısı **.mobileprovision** olmalı) seçin.

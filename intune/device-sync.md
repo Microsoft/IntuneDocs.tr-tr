@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>En son ilkeleri ve eylemleri almak için cihazları Intune ile eşitleme
 
@@ -37,11 +37,11 @@ Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorl
 
 ## <a name="how-to-sync-a-device"></a>Bir cihazı eşitleme
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
-4. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
-5. Yönettiğiniz cihazların listesinden bir cihaz seçin, sonra **Eşitle** uzak işlemini seçin.
+4. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin.
+5. Yönettiğiniz cihazların listesinden bir cihaz seçin, **...Daha Fazla**’yı ve ardından **Eşitle** uzak eylemini seçin.
 7. Eylemi doğrulamak için **Evet** 'i seçin.
 
 
@@ -66,4 +66,4 @@ Bir yönetici **Eşitle** cihaz eylemini çalıştırdığında, başarısız ol
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Eşitleme eyleminin durumunu görmek için **Cihaz Eylemleri**’ni seçin. 
+Eşitleme eyleminin durumunu görmek için **Cihaz eylemleri**’ni seçin. 

@@ -3,10 +3,10 @@ title: "Intune ile koşullu erişim"
 titlesuffix: Azure portal
 description: "Intune ile koşullu erişim kullanmanın yaygın yolları"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişim kullanmanın yaygın yolları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Kuruluşunuzda koşullu erişim uyumluluğunu desteklemek için, Intune mobil cihaz uyumluluk ilkesini ve Intune mobil uygulama yönetimi (MAM) özelliklerini yapılandırmanız gerekir. Intune ile koşullu erişim kullanmanın yaygın yollarından söz edelim.
+Intune ile iki ana koşullu erişim türü vardır. İlk tür cihaz tabanlı koşullu erişimdir. İkinci tür uygulama tabanlı koşullu erişimdir. Kuruluşunuzda koşullu erişim uyumluluğunu sağlamak için ilgili uyumluluk ilkelerini yapılandırmanız gerekir.
+
+Aşağıdaki bilgiler, Intune mobil *cihaz* uyumluluk özelliklerini ve Intune mobil *uygulama* yönetimi (MAM) özelliklerini nasıl kullanacağınızı anlamanıza yardımcı olur. 
 
 ## <a name="device-based-conditional-access"></a>Cihaz tabanlı koşullu erişim
 
@@ -32,7 +34,7 @@ Intune ve Azure Active Directory; e-postaya, Office 365 hizmetlerine, Hizmet Ola
 
 Intune, cihazların uyumluluk durumunu değerlendiren cihaz uyumluluk ilkesi özellikleri sunar. Uyumluluk durumu, bunu kullanıcı şirket kaynaklarına erişmeye çalıştığında Azure Active Directory'de oluşturulmuş koşullu erişim ilkesini zorlamak için kullanan Azure Active Directory'ye bildirilir.
 
-Exchange Online ve diğer Office 365 ürünleri için cihaz tabanlı koşullu erişim ilkeleri, [yeni Azure portalından](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) başlayarak Azure portalında yapılandırılır.
+Exchange Online ve diğer Office 365 ürünleri için cihaz tabanlı koşullu erişim ilkeleri, [Azure portalında](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) yapılandırılır.
 
 -   [Azure Active Directory'de koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) hakkında daha fazla bilgi edinin.
 

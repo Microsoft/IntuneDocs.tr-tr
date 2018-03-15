@@ -3,8 +3,8 @@ title: "Zimperium'u Intune ile tümleştirme"
 titleSuffix: Intune on Azure
 description: "Intune'u Zimperium ile tümleştirme"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4759bab0c302f758f3f0a4af5ca333a5f560f3b3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 062a2f0d573bd711dff75c7ab0eb3bef8ac23161
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium'u Intune ile tümleştirme
 
@@ -30,7 +30,7 @@ Zimperium Mobil Threat Defense çözümünü Intune ile tümleştirmek için aş
 > [!NOTE]
 > Aşağıdaki adımların [Zimperium MTD konsolunda](https://staging2-console.zimperium.com) tamamlanması gerekir.
 
-Zimperium'u Intune ile tümleştirme sürecini başlatmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Zimperium'u Intune ile tümleştirme sürecini başlatmadan önce aşağıdaki abonelik ve kimlik bilgilerine sahip olduğunuzdan emin olun:
 
 -   Microsoft Intune aboneliği
 
@@ -52,7 +52,7 @@ Zimperium uygulama yetkilendirme işlemi şöyledir:
 
 -   Zimperium hizmetine Intune'a cihazın sistem durumuyla ilgili bilgi iletme izni verme.
 
--   Cihazının veritabanını doldurmak için Zimperium'un Azure AD Kayıt Grubu üyeliğiyle eşitlenmesi.
+-   Zimperium, cihazının veritabanını doldurmak için Azure Active Directory (AD) Kayıt Grubu üyeliğini eşitler.
 
 -   Zimperium yönetim konsoluna Azure AD Çoklu Oturum Açma (SSO) kullanımına izin verme.
 
@@ -75,7 +75,7 @@ Zimperium uygulama yetkilendirme işlemi şöyledir:
 
 6.  Zimperium uygulamasına Intune ve Azure Active Directory ile iletişim kurma yetkisi vermek için **Kabul Et**'i işaretleyin.
 
-7.  **Zimperium zConsole** ve **zIPS iOS ve Android** uygulamaları Azure AD'ye eklendikten sonra Zimperium'un Azure AD güvenlik grubunu kendi hizmetiyle eşitleyebilmesi için Azure AD güvenlik gruplarını ekleyin.
+7.  **Zimperium zConsole** ve **zIPS iOS ve Android** uygulamaları, Azure AD'ye eklendikten sonra Azure AD güvenlik gruplarını ekleyin. Bu işlem, Zimperium'un Azure AD güvenlik grubunu kendi hizmetiyle eşitleyebilmesini sağlar.
 
 8.  Yapılandırmayı kaydetmek ve ilk Azure AD güvenlik grubu eşitlemesini başlatmak için **Sonlandır**'ı seçin.
 

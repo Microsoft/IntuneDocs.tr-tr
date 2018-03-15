@@ -1,30 +1,34 @@
 ---
-title: "Android for Work için Intune cihaz kısıtlama ayarları"
-titlesuffix: Azure portal
-description: "Android for Work cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
+title: "Android for Work için Microsoft Intune cihaz kısıtlama ayarları"
+titlesuffix: 
+description: "Android for Work çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Android for Work cihaz kısıtlama ayarları
+# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Microsoft Intune Android for Work cihaz kısıtlama ayarları
+
+Bu makalede, Android for Work çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>İş profili ayarları
+
+### <a name="general-settings"></a>Genel Ayarlar
+
 -   **İş profilleri ve kişisel profiller arasında kopyalama ve yapıştırma** - İş uygulamaları ve kişisel uygulamalar arasında kopyalama ve yapıştırma işlemlerini denetler. Engellemeyi etkinleştirmek için **Engelle**’yi seçin. Engellemeyi devre dışı bırakmak için **Yapılandırılmadı**’yı seçin.
 - **İş ve kişisel profiller arasında veri paylaşımı** - İş profilindeki uygulamaların kişisel profildeki uygulamalarla paylaşıp paylaşamayacağını denetlemek için bu ayarı kullanın. Bu ayar, uygulamalar içindeki paylaşma eylemlerini (Chrome tarayıcısı uygulamasındaki **Paylaş...** seçeneği gibi) denetler ve kopyala/yapıştır pano davranışında geçerli değildir. [Uygulama koruma ilkesi ayarlarından](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) farklı olarak, cihaz kısıtlama ayarları Intune portalından yönetilir ve yönetilen uygulamaları yalıtmak için Android for Work iş profili ayrımını kullanır. Aşağıdakilerden birini seçin:
     - **Varsayılan paylaşım kısıtlamaları** - Bu ayar, cihazın çalıştırdığı Android sürümüne göre farklılık gösteren varsayılan paylaşım davranışıdır. Kişisel profilden iş profiline paylaşmaya varsayılan olarak izin verilir. Buna karşın iş profilinden kişisel profile paylaşma varsayılan olarak engellenir. Bu ayar, iş profilinden kişisel profile veri paylaşılmasını önler. Google, 6.0 ve sonrası sürümleri çalıştıran cihazlarda, kişisel profilden iş profiline verileri paylaşmayı engellemek için bir yol sunmaz.   
@@ -39,6 +43,12 @@ ms.lasthandoff: 01/25/2018
     -   **Otomatik olarak reddet**
 
     İzinlerin verme durumu, (**Mobil Uygulamalar** > **Uygulama yapılandırma ilkeleri** altından) bir Uygulama Yapılandırma ilkesi tanımlanarak tek uygulamalar için daha da netleştirilebilir.
+
+- **Hesap ekleme ve kaldırma**
+
+   Son kullanıcıların iş profiline el ile hesap eklemesini veya profilden hesap kaldırmasını önler.
+
+   Örneğin, Gmail uygulamasını bir Android for Work profiline dağıttığınızda, son kullanıcıların bu iş profiline hesap eklemesini veya buradan kaldırmasını engelleyebilirsiniz.
 
 ### <a name="work-profile-password"></a>İş profili parolası
 - **İş Profili Parolası İste** - (iş profili etkin olarak Android 7.0 ve üstü) Yalnızca iş profilindeki uygulamalar için geçerli olan bir geçiş kodu ilkesi tanımlayın. Son kullanıcının varsayılan olarak iki ayrı tanımlı PIN kullanma veya bunlardan güçlü olanını tercih etme seçeneği bulunur.
@@ -87,4 +97,4 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Cihaz kısıtlama ayarlarını yapılandırma](device-restrictions-configure.md) konusundaki bilgileri kullanarak profili kaydedip kullanıcı ve cihazlara atayın.
+[Cihaz kısıtlama ayarlarını yapılandırma](device-restrictions-configure.md) makalesindeki bilgileri kullanarak profili kaydedip kullanıcı ve cihazlara atayın.

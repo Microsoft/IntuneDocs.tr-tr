@@ -1,12 +1,12 @@
 ---
-title: "Intune kullanarak mobil cihazlara Office 365 uygulamalarını yükleme"
-titlesuffix: Azure portal
-description: "Windows 10 cihazlarda Office 365 uygulamalarını yüklemeyi kolaylaştırmak için Intune’u nasıl kullanabileceğinizi öğrenin."
+title: "Microsoft Intune kullanarak cihazlara Office 365 uygulamalarını yükleme"
+titlesuffix: 
+description: "Windows 10 cihazlarda Office 365 uygulamalarını yüklemeyi kolaylaştırmak için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin.”"
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 ProPlus 10 uygulamalarını Windows 10 cihazlara atama
 
@@ -85,11 +85,11 @@ Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Paket
 1.  **Uygulama ekle** dikey penceresinde **Uygulama Paketi Ayarları**’nı seçin.
 2.  **Uygulama Paketi Ayarları** dikey penceresinde aşağıdaki bilgileri belirtin:
     - **Office sürümü** - Office’in hangi sürümünü atamak istediğinizi seçin, 32 bit veya 64 bit. 32 bit sürümünü hem 32 bit hem de 64 bit cihazlara yükleyebilirsiniz ancak 64 bit sürümü yalnızca 64 bit cihazlara yüklenebilir.
-    - **Güncelleştirme Kanalı** - Office’in cihazlarda nasıl güncelleştirileceğini seçin. Farklı güncelleştirme kanalları hakkında bilgi için bkz. Office 365 ProPlus güncelleştirme kanallarına genel bakış. Aşağıdakilerden birini seçin:
-        - **Geçerli**
-        - **Gecikmeli**
-        - **Geçerli Kanalın İlk Sürümü**
-        - **Gecikmeli Kanalın İlk Sürümü**
+    - **Güncelleştirme Kanalı** - Office’in cihazlarda nasıl güncelleştirileceğini seçin. Farklı güncelleştirme kanalları hakkında bilgi için bkz. [Office 365 ProPlus güncelleştirme kanallarına genel bakış](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Aşağıdakilerden birini seçin:
+        - **Aylık**
+        - **Aylık (Hedeflenen)**
+        - **Yarı Yıllık**
+        - **Yarı Yıllık (Hedeflenen)**
     - **Uygulama son kullanıcı lisans sözleşmesini otomatik olarak kabul et** - Son kullanıcıların lisans sözleşmesini kabul etmesini gerekli kılmak istemiyorsanız bunu seçin. Ardından Intune, sözleşmeyi otomatik olarak kabul eder.
     - **Paylaşılan bilgisayar etkinleştirmeyi kullan** - Paylaşılan bilgisayar etkinleştirme, birden çok kullanıcı tek bir bilgisayarı paylaşıyorsa kullanılır. Daha fazla bilgi için bkz. Office 365 ProPlus için paylaşılan bilgisayar etkinleştirmeye genel bakış.
     - **Diller** - Office, son kullanıcının bilgisayarında Windows ile yüklenen tüm dillerde otomatik olarak yüklenir. Uygulama paketiyle birlikte ilave diller yüklemek istiyorsanız bunu seçin.
