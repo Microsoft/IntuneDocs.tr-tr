@@ -1,6 +1,7 @@
 ---
-title: "Windows AutoPilot Dağıtım Programını kullanarak Windows cihazları kaydetme"
-description: "Windows AutoPilot Dağıtım programını kullanarak yeni Windows 10 cihazları kaydetmeyi öğrenin."
+title: "Windows AutoPilot Dağıtım Programını kullanarak cihazları kaydetme"
+titleSuffix: Microsoft Intune
+description: "Windows AutoPilot Dağıtım programını kullanarak Windows 10 cihazları kaydetmeyi öğrenin."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: d1276818b6c35602f768a7c10074aa6388b01547
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: dfdc712f3cf1b9ce928574ee9e9078c80bd696bb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows AutoPilot Dağıtım Programını kullanarak Windows cihazları kaydetme
+# <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Windows AutoPilot Dağıtım Programını kullanarak Windows cihazlarını kaydetme
 Windows AutoPilot Dağıtım Programı, cihaz sağlamayı kolaylaştırır. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve AutoPilot ile özel işletim sistemi görüntülerini derleme, bakım ve uygulama zahmetine katlanmanız gerekmeden son kullanıcılarınıza yeni cihazlar verebilirsiniz. AutoPilot cihazları yönetmek için Intune kullandığınızda cihazlar kaydedildikten sonra ilkeler, profiller, uygulamalar gibi özellikleri yönetebilirsiniz. Faydalar, senaryolar ve önkoşullara genel bir bakış için bkz. [Windows AutoPilot’a Genel Bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 ## <a name="prerequisites"></a>Önkoşullar
