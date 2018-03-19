@@ -6,17 +6,17 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: dfdc712f3cf1b9ce928574ee9e9078c80bd696bb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4522be0b636a72844fa6177fbb35d3350cfbd00e
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Windows AutoPilot Dağıtım Programını kullanarak Windows cihazlarını kaydetme
 Windows AutoPilot Dağıtım Programı, cihaz sağlamayı kolaylaştırır. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve AutoPilot ile özel işletim sistemi görüntülerini derleme, bakım ve uygulama zahmetine katlanmanız gerekmeden son kullanıcılarınıza yeni cihazlar verebilirsiniz. AutoPilot cihazları yönetmek için Intune kullandığınızda cihazlar kaydedildikten sonra ilkeler, profiller, uygulamalar gibi özellikleri yönetebilirsiniz. Faydalar, senaryolar ve önkoşullara genel bir bakış için bkz. [Windows AutoPilot’a Genel Bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -29,53 +29,49 @@ Windows AutoPilot Dağıtım Programı, cihaz sağlamayı kolaylaştırır. Öze
 ## <a name="synchronize-devices"></a>Cihazları eşitleme
 Kayıtlı cihazlarınızı yapılandırmak için Intune ile eşitleyin.
 
-1. [Azure](https://portal.azure.com/)’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune**'un altında **Cihaz kaydı**'nı seçin.
-4. **Windows kaydı**'nın altındaki **Windows AutoPilot Dağıtım Programı** bölümünde **Cihazlar**’ı seçin.
+4. **Windows kaydı**’nı seçin ve **Windows AutoPilot Dağıtım Programı** bölümünde, **Cihazlar**’ı seçin.
 5. **Eşitle**’ye tıklayarak kayıtlı cihazlarınızı içeri aktarın. Eşitlemenin sürdüğüne dair bir ileti görüntülenir.
 6. Yeni cihazları görmek için görüntüyü yenileyin. Kaç tane cihazın eşitlendiğine bağlı olarak işlemin tamamlanması birkaç dakikayı bulabilir.  
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Bir AutoPilot dağıtım profili oluşturma
 AutoPilot dağıtım profilleri, AutoPilot cihazları yapılandırmak için kullanılır.
-1. [Azure](https://portal.azure.com/)’da oturum açın. 
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune**'un altında **Cihaz kaydı**'nı seçin.
-4. **Windows kaydı**'nın altındaki **Windows AutoPilot Dağıtım Programı** bölümünde **Dağıtım Profilleri**’ni seçin.
-5. **Profil Oluştur**’a tıklayın ve bir ad ile isteğe bağlı bir açıklama seçin. 
-6. **Katılım türü** için **Azure AD katılımlı**’yı seçin.
-7. **İlk kez çalıştırma deneyimi (OOBE)** için aşağıdaki seçenekleri yapılandırın ve **Tamam**’a tıklayın: 
-   - **Gizlilik ayarları**: Gizlilik ayarlarının kullanıcılara gösterilip gösterilmeyeceğini seçin. 
+4. **Windows kaydı**’nı seçin ve **Windows AutoPilot Dağıtım Programı** bölümünde, **Dağıtım Profilleri**’ni seçin.
+5. **Profil Oluştur**’u ve bir ad ile isteğe bağlı bir açıklama seçin.
+6. **Azure AD’ye katılım türü** için **Azure AD katılımlı**’yı seçin.
+7. **İlk kez çalıştırma deneyimi (OOBE)** için aşağıdaki seçenekleri yapılandırın ve **Kaydet**’e tıklayın:
+
    - **Son kullanıcı lisans sözleşmesi (EULA)**: EULA’nın kullanıcılara gösterilip gösterilmeyeceğini seçin.
+   - **Gizlilik ayarları**: Gizlilik ayarlarının kullanıcılara gösterilip gösterilmeyeceğini seçin.
    - **Kullanıcı hesap türü**: Kullanıcı hesabının türünün **Yönetici** mi **Standart** mı olacağını seçin.
 
      > [!Note]    
      > Bu ayar, Genel Yönetici veya Şirket Yöneticisi hesapları için geçerli değildir. Bu hesaplar, Azure AD’deki tüm yönetim özelliklerine erişebildikleri için standart kullanıcılar olamaz.
-8. Profili oluşturmak için **Oluştur**’a tıklayın. AutoPilot dağıtım profili artık cihazlara atanmak üzere hazırdır.
-     
+
+
+6. Profili oluşturmak için **Oluştur**’a tıklayın. AutoPilot dağıtım profili artık cihazlara atanmak üzere hazırdır.
+
 > [!Note]    
 > Aşağıdaki ayarlar, tüm AutoPilot dağıtım profillerinde yapılandırılır:
 > - Skip Cortana, OneDrive ve OEM kayıt kurulum sayfaları
 > - İş veya okul için otomatik olarak ayarlama
 > - Şirket veya okul markasıyla oturum açma deneyimi    
 
-## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows AutoPilot’ta atanmamış cihazlar için uyarılar  <!-- 163236 -->
-Windows AutoPilot’ta atanmamış cihazlar için bir uyarı görüntüleyebilir ve böylece AutoPilot programında kaç tane cihaza AutoPilot dağıtım profili atanmadığını görebilirsiniz. Uyarıdaki bilgileri kullanarak profiller oluşturun ve bunları profil atanmamış cihazlara atayın. Uyarıya tıkladığınızda, Windows AutoPilot cihazların tam listesini ve cihazlar hakkında ayrıntılı bilgileri görürsünüz. 
-1. [Azure](https://portal.azure.com/)’da oturum açın. 
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune**'un altında **Cihaz kaydı**'nı seçin.
-4. Uyarıyı görüntülemek için **Genel Bakış**’ı seçin. Uyarıya tıklayarak AutoPilot cihazların listesine ulaşın.  
-
 ## <a name="assign-an-autopilot-deployment-profile"></a>Bir AutoPilot dağıtım profili atama
 AutoPilot dağıtım profilleri oluşturduktan sonra bunları seçili cihazlara atayabilirsiniz.
 
-1. [Azure](https://portal.azure.com/)’da oturum açın. 
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune**'un altında **Cihaz kaydı**'nı seçin.
-4. **Windows kaydı** dikey penceresinin **Windows AutoPilot Dağıtım Programı** bölümünde **Cihazlar**’ı seçin.
-5. Dağıtım profilini atamak istediğiniz cihazları seçin. Atanmış bir profili olmayan cihazları kolayca bulmak için **Durum** sütununda filtreleme yapabilirsiniz. 
+4. **Windows kaydı**’nı seçin ve **Windows AutoPilot Dağıtım Programı** bölümünde, **Cihazlar**’ı seçin.
+5. Dağıtım profilini atamak istediğiniz cihazları seçin. Atanmış bir profili olmayan cihazları kolayca bulmak için **Profil Durumu** sütununda filtreleme yapabilirsiniz.
 6. **Profil ata**’ya tıklayın, AutoPilot dağıtım profilini seçin ve daha sonra **Ata**’ya tıklayın. Atamanın sürdüğüne dair bir ileti görüntülenir.
-7. Profilin cihazlara atandığını görmek için görüntüyü yenileyin. Kaç tane cihaz seçtiğinize bağlı olarak işlemin tamamlanması birkaç dakikayı bulabilir. 
+7. Profilin cihazlara atandığını görmek için görüntüyü yenileyin. Kaç tane cihaz seçtiğinize bağlı olarak işlemin tamamlanması birkaç dakikayı bulabilir.
 
 > [!Note]
 > Yeni profil cihaza atanır. Intune'a zaten kaydedilmiş olan cihazlarda, cihaz sıfırlandıktan ve yeniden kaydedildikten sonra profil uygulanır.
@@ -83,18 +79,19 @@ AutoPilot dağıtım profilleri oluşturduktan sonra bunları seçili cihazlara 
 ### <a name="assign-a-different-autopilot-deployment-profile"></a>Farklı bir AutoPilot dağıtım profili atama
 Bir cihaza AutoPilot dağıtım profili atadıktan sonra farklı bir profil atamaya karar verirseniz yeni profili cihaza atayın.  
 
-## <a name="edit-an-autopilot-deployment-profile"></a>Bir AutoPilot dağıtım profilini düzenleme 
+## <a name="edit-an-autopilot-deployment-profile"></a>Bir AutoPilot dağıtım profilini düzenleme
 Bir AutoPilot dağıtım profili oluşturduktan sonra bu profilin bazı kısımlarını düzenleyebilirsiniz.   
-1. [Azure](https://portal.azure.com/)’da oturum açın. 
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune**'un altında **Cihaz kaydı**'nı seçin.
-4. **Windows kaydı**'nın altındaki **Windows AutoPilot Dağıtım Programı** bölümünde **Dağıtım Profilleri**’ni seçin. 
-5. Düzenlemek istediğiniz profili seçin. 
-6. Solda bulunan **Özellikler**’e tıklayarak dağıtım profilinin adını veya açıklamasını değiştirin. Değişiklikleri tamamladıktan sonra **Kaydet**’e tıklayın. 
-7. OOBE ayarlarında değişiklik yapmak için **Ayarlar**’a tıklayın. Değişiklikleri tamamladıktan sonra **Kaydet**’e tıklayın. 
+4. **Windows kaydı**'nın altındaki **Windows AutoPilot Dağıtım Programı** bölümünde **Dağıtım Profilleri**’ni seçin.
+5. Düzenlemek istediğiniz profili seçin.
+6. Solda bulunan **Özellikler**’e tıklayarak dağıtım profilinin adını veya açıklamasını değiştirin. Değişiklikleri tamamladıktan sonra **Kaydet**’e tıklayın.
+7. OOBE ayarlarında değişiklik yapmak için **Ayarlar**’a tıklayın. Değişiklikleri tamamladıktan sonra **Kaydet**’e tıklayın.
 
 > [!NOTE]
-> Güncelleştirilmiş profil cihazlara atanır. Ancak güncelleştirilmiş profil, Intune’a önceden kaydedilmiş cihazlarda cihaz sıfırlanıp yeniden kaydedilene kadar uygulanmaz. 
+> Güncelleştirilmiş profil cihazlara atanır. Ancak güncelleştirilmiş profil, Intune’a önceden kaydedilmiş cihazlarda cihaz sıfırlanıp yeniden kaydedilene kadar uygulanmaz.
 
 ## <a name="using-autopilot-in-other-portals"></a>AutoPilot’ı diğer portallarda kullanma
 Mobil cihaz yönetimiyle ilgilenmiyorsanız AutoPilot’ı İş İçin Microsoft Mağazası gibi bir uygulamada kullanma şansınız vardır. Diğer portalları kullanma seçeneğiniz olsa da, AutoPilot dağıtımlarınızı yönetmek için yalnızca Intune kullanmanızı öneririz. Intune ve başka bir portalı kullanırsanız Intune şunları yapamaz:
@@ -103,6 +100,15 @@ Mobil cihaz yönetimiyle ilgilenmiyorsanız AutoPilot’ı İş İçin Microsoft
 - Başka bir portalda profil atamalarında yapılmış değişiklikleri görüntüleme
 - Başka bir portalda yapılmış profil atamalarını eşitleme
 - Başka bir portal üzerinden cihaz listesine yapılmış değişiklikleri görüntüleme
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows AutoPilot’ta atanmamış cihazlar için uyarılar  <!-- 163236 -->
+Windows AutoPilot’ta atanmamış cihazlar için bir uyarı görüntüleyebilir ve böylece AutoPilot programında kaç tane cihaza AutoPilot dağıtım profili atanmadığını görebilirsiniz. Uyarıdaki bilgileri kullanarak profiller oluşturun ve bunları profil atanmamış cihazlara atayın. Uyarıya tıkladığınızda, Windows AutoPilot cihazların tam listesini ve cihazlar hakkında ayrıntılı bilgileri görürsünüz.
+
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune**'un altında **Cihaz kaydı**'nı seçin.
+4. Uyarıyı görüntülemek için **Genel Bakış**’ı seçin. Uyarıya tıklayarak AutoPilot cihazların listesine ulaşın.  
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Windows AutoPilot’ı kayıtlı Windows 10 cihazlar için yapılandırdıktan sonra bu cihazları nasıl yöneteceğinizi öğrenin. Daha fazla bilgi için bkz. [Microsoft Intune cihaz yönetimi nedir?](https://docs.microsoft.com/intune/device-management)
