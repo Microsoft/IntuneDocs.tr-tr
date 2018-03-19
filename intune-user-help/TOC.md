@@ -66,6 +66,7 @@
 ### [Bir iOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Şirket Portalı'nı yükleme ve uygulamada oturum açma](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS cihazınızı kaydetme](enroll-your-device-in-intune-ios.md)
+### [Aygıt Kayıt Programı iOS cihazlarınızı kaydetme](enroll-your-device-dep-ios.md)
 
 ### [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)
 ### [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
