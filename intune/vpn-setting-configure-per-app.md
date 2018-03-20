@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/5/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS cihazlar için Intune’da uygulama başına Sanal Özel Ağ (VPN) ayarlama
 
@@ -41,13 +41,14 @@ Sertifikayı dışarı aktarın ve CA’yı ekleyin.
 
 Uygulama Başına VPN’e erişimi olan üyeleri barındırması için Azure Active Directory’de (Azure AD) bir grup oluşturun veya mevcut bir grubu seçin.
 
-1. Azure Portalı’nı açın. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 2. **Gruplar**’ı seçin ve daha sonra **Yeni grup**’a tıklayın.
-3. Grubun **Ad**’ını yazın. 
-4. Grubun **Açıklaması**’nı yazın. 
+3. Grubun **Grup türü**’nü seçin. 
+3. Grubun **Grup adı**’nı yazın. 
+4. Grubun **Grup açıklaması**’nı yazın. 
 5. **Üyelik türü** için **Atandı**’yı seçin.
-6. **Office özelliklerini etkinleştir** için **Hayır**’ı seçin.
-7. **Üyeler** dikey penceresinde VPN kullanıcılarını adları veya e-posta adresleriyle arayın.
+7. **Üyeler** bölmesinde VPN kullanıcılarını adları veya e-posta adresleriyle arayın.
 8. Her bir kullanıcıyı seçin ve **Seç**’e tıklayın.
 9. **Oluştur**'a tıklayın.
 
@@ -55,14 +56,15 @@ Uygulama Başına VPN’e erişimi olan üyeleri barındırması için Azure Act
 
 CA tarafından verilen VPN sunucusu kök sertifikasını Intune’da oluşturulan bir profile aktarın. Güvenilen sertifika profili, iOS cihaza VPN sunucusu tarafından sunulan CA’ya otomatik olarak güvenmesi talimatını verir.
 
-1. Azure Portalı’nı açın. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 2. **Cihaz yapılandırması**’nı seçin ve daha sonra **Profiller**’e tıklayın.
-3. **+ Profil oluştur**’a tıklayın. **Profil oluştur**’da:
+3. **Profil oluştur**’a tıklayın. **Profil oluştur**’da:
     1. **Ad** yazın.
     2. **Açıklama** yazın.
     3. **Platform** için **iOS**’u seçin.
     4. **Profil türü** için **Güvenilen sertifika**’yı seçin.
-4. Klasör simgesine tıklayarak VPN yönetim konsolundan aktardığınız VPN sertifikanıza (.cer dosyası) göz atın. Tamam'ı tıklatın
+4. Klasör simgesine tıklayarak VPN yönetim konsolundan aktardığınız VPN sertifikanıza (.cer dosyası) göz atın. **Tamam**'ı tıklatın.
 5. **Oluştur**'a tıklayın.
 
     ![Güvenilen bir sertifika profili oluşturma](media\vpn-per-app-create-trusted-cert.png)
@@ -71,9 +73,10 @@ CA tarafından verilen VPN sunucusu kök sertifikasını Intune’da oluşturula
 
 Güvenilen kök sertifika profili, iOS’un VPN sunucusuna otomatik olarak güvenmesini mümkün kılar. SCEP sertifikası ise iOS VPN istemcisinden VPN sunucusuna kimlik bilgileri sağlar. Sertifika, iOS cihaz kullanıcısına kullanıcı adı ve parola için istemde bulunmaya gerek kalmaksızın cihazın sessizce kimlik doğrulamasına imkan verir. 
 
-1. Azure Portalı’nı açın. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin. 
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 2. **Cihaz yapılandırması**’nı seçin ve daha sonra **Profiller**’e tıklayın.
-3. **+ Profil oluştur**’a tıklayın. **Profil oluştur**’da:
+3. **Profil oluştur**’a tıklayın. **Profil oluştur**’da:
     1. **Ad** yazın.
     2. **Açıklama** yazın.
     3. **Platform** için **iOS**’u seçin.
@@ -97,9 +100,10 @@ Güvenilen kök sertifika profili, iOS’un VPN sunucusuna otomatik olarak güve
 
 VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye bağlantı bilgilerini ve Uygulama Başına VPN özelliğini iOS uygulaması tarafından kullanılmak üzere etkinleştirecek olan Uygulama Başına VPN bayrağını barındırır.
 
-1. Azure Portalı’nı açın. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 2. **Cihaz yapılandırması**’nı seçin ve daha sonra **Profiller**’e tıklayın.
-3. **+ Profil oluştur**’a tıklayın. **Profil oluştur**’da:
+3. **Profil oluştur**’a tıklayın. **Profil oluştur**’da:
     1. **Ad** yazın.
     2. **Açıklama** yazın.
     3. **Platform** için **iOS**’u seçin.
@@ -111,7 +115,7 @@ VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye
     4. **Kimlik doğrulama sertifikası** altında SCEP sertifikasını seçin ve **Tamam**’a tıklayın.
     5. **Bağlantı türü** için VPN’inizi seçin.
     6. Gerekirse VPN’inizin özniteliklerini yapılandırın.
-    7. **Bölmeyi Devre Dışı Bırak** tünelini seçin.
+    7. **Bölünmüş Tüneli Devre Dışı Bırak**’ı seçin.
 5. **Otomatik VPN**’e tıklayın. **Otomatik VPN**’de:
     1. **Otomatik VPN türü** için **Uygulama Başına VPN**’i seçin.
     2. VPN URL’sini yazın ve **Ekle**’ye tıklayın.
@@ -126,19 +130,21 @@ VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye
 
 VPN profilinizi ekledikten sonra, uygulamayı ve Azure AD grubunu bu profil ile ilişkilendirin.
 
-1. Azure Portalı’nı açın. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-2. **Mobil Uygulamalar**’ı seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+2. **Mobil uygulamalar**’ı seçin.
 3. **Uygulamalar**’a tıklayın.
 4. Uygulama listesinden uygulamayı seçin.
 5. **Atamalar**’a tıklayın.
-6. **Grup seç**’e tıklayın, önceden tanımladığınız grubu seçin. **Seçin**’e tıklayın.
-7. **Atamalar** dikey penceresindeki **Tür** için **Gerekli**’yi seçin.
-8. **VPNS** için VPN tanımınızı seçin.
+6. **Grup ekle**’ye tıklayın.
+7. **Grup ekle** bölmesindeki **Atama türü** için **Gerekli**’yi seçin.
+6. Daha önce tanımladığınız grubu seçip **Bu uygulamayı gerekli kıl**’ı seçin.
+8. **VPN** için VPN tanımınızı seçin.
  
     > [!NOTE]  
     > Bazen VPN tanımının değeri alması bir dakikayı bulabilir. 3-5 dakika bekledikten sonra **Kaydet**’e tıklayın.
 
-9. **Kaydet**'e tıklayın.
+9. **Tamam**’a ve **Kaydet**’e tıklayın.
 
     ![Bir uygulamayı VPN ile ilişkilendirme](media\vpn-per-app-app-to-vpn.png)
 

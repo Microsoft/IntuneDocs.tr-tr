@@ -14,17 +14,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9d181c4a6e490018c88214a2ed91c90327f2526
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune'daki cihazlarınız için sertifika profili yapılandırma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Kullanıcılarınıza VPN, Wi-Fi veya e-posta profilleri aracılığıyla şirket kaynaklarına erişim izni verdiğinizde, bu bağlantıların kimlik doğrulamasını sertifika kullanarak yapabilirsiniz. Sertifikaları kullandığınızda, bağlantıların kimlik doğrulamasını yapmak için kullanıcı adı veya parola girmeniz gerekmez 
+Kullanıcılarınıza VPN, Wi-Fi veya e-posta profilleri aracılığıyla şirket kaynaklarına erişim izni verdiğinizde, bu bağlantıların kimlik doğrulamasını sertifika kullanarak yapabilirsiniz. Sertifikaları kullandığınızda, bağlantıların kimlik doğrulamasını yapmak için kullanıcı adı veya parola girmeniz gerekmez
 
 Bu sertifikaları yönettiğiniz cihazlara atamak için Intune'u kullanabilirsiniz. Intune aşağıdaki sertifika türlerini atamayı ve yönetmeyi destekler:
 
@@ -85,10 +85,13 @@ Güvenilen sertifika profili ayarlarken bu sertifikayı içeri aktarırsınız.
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Adım 3 - Güvenilen sertifika profilleri oluşturma
 SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen sertifika profili oluşturun. Her cihaz platformu için bir güvenilen sertifika profili ve SCEP veya PKCS profili gereklidir. Güvenilen sertifikalar oluşturma adımları her cihaz platformunda benzerdir.
 
-1. [Azure portalında](https://portal.azure.com), **Tüm Hizmetler**’i seçin ve **Microsoft Intune** araması yapın.
-2. **Microsoft Intune**’da, **Cihaz yapılandırması**’nı seçin, **Profiller**’i seçin. ve ardından **Profil Oluştur**’u seçin.
-3. Güvenilen sertifika profili için bir **Ad** ve **Açıklama** girin.
-4. **Platform** için bu güvenilen sertifikanın cihaz platformunu seçin: 
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
+2. **Cihaz yapılandırması** bölmesinde **Yönet** > **Profiller**’i seçin.
+3. Profiller bölmesinde **Profil oluştur**’u seçin.
+4. **Profil oluştur** bölmesinde, güvenilen sertifika profili için **Ad** ve **Açıklama** girin.
+5. **Platform** açılan listesinde, bu güvenilen sertifika için cihaz platformunu seçin. Şu anda, sertifika ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
 
     - **Android**
     - **Android for Work**
@@ -98,15 +101,13 @@ SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen se
     - **Windows 8.1 ve üzeri**
     - **Windows 10 ve üzeri**
 
-5. **Profil türü** için **Güvenilen sertifika**’yı seçin. Daha önce (2. adım) kaydettiğiniz (*CertificateName*.cer) sertifikasına gidin.
-
-    Yalnızca Windows 8.1 ve Windows 10 cihazları için, güvenilen sertifika için **Hedef Depo** olarak şunlardan birini seçin:  
-
+6. **Profil türü** açılan listesinde **Güvenilen sertifika**’yı seçin.
+7. 1. görevde kaydettiğiniz sertifikaya gidin ve **Tamam**’a tıklayın.
+8. Yalnızca Windows 8.1 ve Windows 10 cihazları için, güvenilen sertifika için **Hedef Depo** olarak şunlardan birini seçin:
     - **Bilgisayar sertifika deposu - Kök**
     - **Bilgisayar sertifika deposu - Ara**
     - **Kullanıcı sertifika deposu - Ara**
-
-6. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin ve yeni profilinizi kaydetmek için **Oluştur**’u seçin.
+8. Bitirdiğinizde **Tamam**’ı seçin, **Profil Oluştur** bölmesine gidin ve **Oluştur**’u seçin.
 
 Profil oluşturulur ve listede görüntülenir. Bu profili gruplara atamak için bkz. [cihaz profillerini atama](device-profile-assign.md).
 

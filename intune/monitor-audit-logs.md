@@ -4,17 +4,17 @@ description: "Intune etkinliklerinin kaydedildiği denetim günlüklerini gözde
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune etkinlikleri için denetleme günlükleri
 Denetim günlükleri size, Microsoft Intune'da değişiklik yaratan etkinliklerin kaydını sağlar. Eylemleri veya uzak görevleri oluşturun, güncelleştirin (düzenleyin), silin ve atayın; gözden geçirebileceğiniz denetim olayları oluşturun. Intune iş yüklerinin çoğunda denetim günlüklerini gözden geçirebilirsiniz. Denetim tüm müşteriler için varsayılan olarak etkindir ve devre dışı bırakılamaz. Denetim olayları özelliği Aralık 2017’deki yayımlanma tarihinde kaydedilmeye başlandı; daha önceki olaylar mevcut değil.
@@ -28,8 +28,8 @@ Aşağıdaki izinlere sahip kullanıcılar denetim günlüklerini gözden geçir
 ## <a name="audit-logs-for-intune-workloads"></a>Intune iş yükleri için denetim günlükleri
 Her Intune iş yükü için, İzleme grubunda denetim günlüklerini gözden geçirebilirsiniz.  
 1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde, denetim günlüklerini gözden geçirmek istediğiniz iş yükünü seçin.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde, denetim günlüklerini gözden geçirmek istediğiniz iş yükünü seçin, örneğin **Cihazlar**.
 4. İş yükünün **İzleme** grubunda **Denetim günlükleri**'ni seçin.
 
 ## <a name="review-audit-events"></a>Denetim olaylarını gözden geçirme
@@ -39,6 +39,7 @@ Denetim günlüğünün aşağıdaki öğeleri gösteren bir varsayılan liste g
 
 - oluşma tarihi ve saati
 - Başlatan (Aktör)
+- Uygulama Adı
 - Etkinlik
 - Hedefler
 - Kategori
@@ -55,7 +56,7 @@ Liste görünümünde bir öğeye tıkladığınızda, öğe hakkında sağlanan
 
 
 ## <a name="filter-audit-events"></a>Denetim olaylarını filtreleme
-Her iş yükünün, o dikey pencereyle ilişkilendirilmiş denetim olayları kategorisine önceden filtre uygulayan bir menü öğesi vardır. Ayrı bir filtre seçeneği farklı kategorilere geçmenizi sağlar ve o kategorinin olay eylem ayrıntıları gösterilir. UPN'ye göre arama yapabilirsiniz (örneğin, eylemi gerçekleştiren kullanıcı). Tarih aralığı filtresinde 24 saat, 7 gün ve 30 gün seçenekleri sağlanır. Varsayılan olarak, son 30 günün denetim olayları görüntülenir.
+Her iş yükünün, o bölmeyle ilişkilendirilmiş denetim olayları kategorisine önceden filtre uygulayan bir menü öğesi vardır. Ayrı bir filtre seçeneği farklı kategorilere geçmenizi sağlar ve o kategorinin olay eylem ayrıntıları gösterilir. UPN'ye göre arama yapabilirsiniz (örneğin, eylemi gerçekleştiren kullanıcı). Tarih aralığı filtresinde 24 saat, 7 gün ve 30 gün seçenekleri sağlanır. Varsayılan olarak, son 30 günün denetim olayları görüntülenir.
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Denetim olaylarını almak için Graph API kullanma
 Graph API'yi kullanarak en çok bir yıllık denetim olaylarını alma konusundaki ayrıntılar için bkz. [List auditEvents](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_auditing_auditevent_list).

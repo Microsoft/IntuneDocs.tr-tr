@@ -1,10 +1,10 @@
 ---
-title: "Uyumluluk için Jamf Pro’yu Intune ile tümleştirme"
-titlesuffix: Azure portal
-description: "Jamf tarafından yönetilen cihazların güvenliğini sağlamak için uyumluluk kullanın."
+title: "Uyumluluk için Jamf Pro’yu Microsoft Intune ile tümleştirme"
+titlesuffix: 
+description: "Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 82b26d351949e6705a0438bee8cc712a9e624990
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4b040c6aa7001e8ebdd7c05571276428c7ef9bd
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 

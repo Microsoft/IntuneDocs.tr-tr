@@ -1,5 +1,6 @@
 ---
-title: Desteklenen cihazlar - Microsoft Intune
+title: "Microsoft Intune tarafından desteklenen işletim sistemleri ve tarayıcılar"
+titleSuffix: 
 description: "Intune cihaz yönetimi için desteklenen cihaz platformlarını ve tarayıcıları listeler"
 keywords: 
 author: ErikjeMS
@@ -14,24 +15,19 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Desteklenen işletim sistemleri ve tarayıcılar
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Bu makale, kuruluşta cihaz yönetiminden sorumlu olan yöneticilere yöneliktir. Cihazınıza Intune yüklerken yardım almak için bkz. [İşleri halletmek için yönetilen cihazları kullanma](/intune-user-help/company-portal-frequently-asked-questions).
+Microsoft Intune'u ayarlamadan önce, desteklenen işletim sistemleriyle tarayıcıları gözden geçirin.
 
-Microsoft Intune’u kurmaya başlamadan önce, aşağıdaki gereksinimleri gözden geçirin:
-
-- [Desteklenen işletim sistemleri](#intune-supported-operating-systems)
-- [Intune kullanan desteklenen web tarayıcıları listesi](#intune-supported-web-browsers)
-
-Ayrıca [Intune ağ bant genişliği kullanımı](network-bandwidth-use.md) ([klasik portal](/intune-classic/get-started/network-bandwidth-use)) hakkında da bilgi edinmelisiniz.
+Cihazınıza Intune yüklerken yardım almak için bkz. [İşleri halletmek için yönetilen cihazları kullanma](/intune-user-help/company-portal-frequently-asked-questions). Ayrıca [Intune ağ bant genişliği kullanımı](network-bandwidth-use.md) ([klasik portal](/intune-classic/get-started/network-bandwidth-use)) hakkında da bilgi edinmelisiniz.
 
 ## <a name="intune-supported-operating-systems"></a>Intune tarafından desteklenen işletim sistemleri
 

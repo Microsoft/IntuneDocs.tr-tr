@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e770c39a22b620bb642b7b15a456369bb4acec2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı’nı kullanarak otomatik olarak kaydetme
 
@@ -74,7 +74,7 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
 **1. Adım. Apple DEP belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.**<br>
 
-1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple kaydı** > **Kayıt Programı Belirteci**’ni seçin.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple kaydı** > **Kayıt Programı Belirteci**’ni seçin.
 
   ![Apple Sertifikaları çalışma alanındaki Kayıt Programı Belirteci paneli](./media/enrollment-program-token-add.png)
 
@@ -116,7 +116,7 @@ Sertifika (.pem) dosyasına gidin, **Aç**’ı ve sonra da **Karşıya Yükle**
 
 Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluşturabilirsiniz. Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar.
 
-1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple Kaydı**’nı seçin.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple Kaydı**’nı seçin.
 2. **Apple Kayıt Programı**'nın altından **Kayıt Programı Profilleri** > **Oluştur**'u seçin.
 3. **Kayıt Profili Oluştur** kısmında, yönetim amaçları doğrultusunda profil için bir **Ad** ve **Açıklama** girin. Kullanıcılar bu ayrıntıları göremez. Azure Active Directory’de dinamik bir grup oluşturmak için **Ad** alanını kullanabilirsiniz. enrollmentProfileName parametresini, bu kayıt profiliyle cihazlara atamak amacıyla tanımlamak için profil adını kullanın. [Azure Active Directory dinamik grupları](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects) hakkında daha fazla bilgi edinin.
 
@@ -169,7 +169,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 ## <a name="sync-managed-devices"></a>Yönetilen cihazları eşitleme
 Artık Intune’a cihazlarınızı yönetme izni verildiğine göre, yönetilen cihazlarınızı Intune’da Azure portalında görmek için Intune’u Apple ile eşitleyebilirsiniz.
 
-1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple Kaydı** > **Kayıt Programı Cihazları** > **Eşitle**’yi seçin. İlerleme çubuğu, yeniden Eşitleme istemeden önce beklemeniz gereken süreyi gösterir.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple Kaydı** > **Kayıt Programı Cihazları** > **Eşitle**’yi seçin. İlerleme çubuğu, yeniden Eşitleme istemeden önce beklemeniz gereken süreyi gösterir.
 
   ![Kayıt Programı Cihazları düğümü ve Eşitle bağlantısı seçili](./media/enrollment-program-device-sync.png)
   
@@ -190,7 +190,7 @@ Cihazların kaydedilmesi için bunlara bir kayıt programı profili atamalısın
 >[!NOTE]
 >Ayrıca, **Apple Seri Numaraları** dikey penceresinde profillere seri numaralar da atayabilirsiniz.
 
-1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple Kaydı**’nı ve ardından **Kayıt Programı Profilleri**’ni seçin.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple Kaydı**’nı ve ardından **Kayıt Programı Profilleri**’ni seçin.
 2. **Kayıt Programı Profilleri** listesinden cihazlara atamak istediğiniz profili ve ardından **Cihazlara ata**’yı seçin.
 
  ![Ata seçeneği belirlenmiş Cihaz Atamaları](./media/enrollment-program-device-assign.png)

@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/17/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01c90818cf789bdb79b3b4efe5a1db8a2cf1cdfe
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6053eba7bcda74eaf3b2d7de8eecd81487ea3a8d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma aracılığıyla satın aldığınız iOS e-Kitaplarını yönetme
 
@@ -52,28 +52,29 @@ Başlamadan önce, Apple'dan bir VPP belirteci alın ve Intune hesabınıza yük
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP belirtecini almak ve karşıya yüklemek için
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-1.  **Mobil Uygulamalar** iş yükünde **Kurulum** > **iOS VPP Belirteçleri**’ni seçin.
-2.  VPP belirteçleri listesi dikey penceresinde **Ekle**’ye tıklayın.
-3.  **Yeni VPP Belirteci** dikey penceresinde aşağıdaki bilgileri girin:
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
+1.  **Mobil uygulamalar** iş yükünde **Kurulum** > **iOS VPP Belirteçleri**’ni seçin.
+2.  VPP belirteçleri listesi bölmesinde **Oluştur**’a tıklayın.
+3.  **Yeni VPP Belirteci** bölmesinde aşağıdaki bilgileri girin:
     - **VPP belirteç dosyası** - İş İçin Volume Purchase Program veya Eğitim İçin Volume Purchase Program’e kaydolduğunuzdan emin olun. Ardından hesabınızın Apple VPP belirtecini indirin ve buradan seçin.
     - **Apple Kimliği** - Toplu satın alma programıyla ilişkilendirilmiş hesabın Apple kimliğini girin.
     - **VPP hesabı türü** - **İş** veya **Eğitim**’i seçin.
-4. İşiniz bittiğinde **Karşıya Yükle**‘ye tıklayın.
+4. İşiniz bittiğinde **Oluştur**’a tıklayın.
 
-Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
+Belirteç, belirteçler listesi bölmesinde görüntülenir.
 
 
 İstediğiniz zaman **Şimdi eşitle**’yi seçerek Apple tarafından tutulan verileri Intune ile eşitleyebilirsiniz.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
+3. **Intune** bölmesinde **eKitaplar**'ı seçin.
 1. **e-Kitaplar** iş yükünde **Yönet** > **Tüm e-Kitaplar**'ı seçin.
-2. Kitap listesi dikey penceresinde, atamak istediğiniz kitabı ve daha sonra ‘**...**’ > **Grup Ata**’yı seçin.
-3. <*kitap adı*> - **Atanan Gruplar** dikey penceresinde **Yönet** > **Atanan Gruplar**'ı seçin.
-4. **Grupları Ata**'yı, ardından **Grup seç** dikey penceresinde kitabı atamak istediğiniz Azure AD gruplarını seçin. Cihaz grupları henüz desteklenmemektedir.
+2. Kitap listesi bölmesinde, atamak istediğiniz kitabı ve daha sonra ‘**...**’ > **Grup Ata**’yı seçin.
+3. <*kitap adı*> - **Atanan Gruplar** bölmesinde **Yönet** > **Atanan Gruplar**'ı seçin.
+4. **Grupları Ata**'yı, ardından **Grup seç** bölmesinde kitabı atamak istediğiniz Azure AD gruplarını seçin. Cihaz grupları henüz desteklenmemektedir.
 **Kullanılabilir** veya **Gerekli** atama eylemlerinden birini seçin. 
 5. İşiniz bittikten sonra **Kaydet**’i seçin.
 

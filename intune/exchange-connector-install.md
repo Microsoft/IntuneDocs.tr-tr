@@ -1,12 +1,12 @@
 ---
-title: "Şirket içi EAS için Exchange bağlayıcısını Intune ile ayarlama"
-titleSuffix: Azure portal
-description: "Bağlayıcı aracını kullanarak Intune ve şirket içi Exchange Server arasında iletişimi etkinleştirme"
+title: "Microsoft Intune şirket içi Exchange bağlayıcısını ayarlama"
+titleSuffix: 
+description: "Şirket içi Exchange bağlayıcısını kullanarak Intune kaydı ve Exchange Active Sync (EAS) temelinde Exchange posta kutularına cihaz erişimini yönetin."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb82b1a9af0cc8dd2f394747ce7ed8b695260bb9
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0caea2e8b7704fe2dfcbec937b59000ac2a12ae5
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure’da Intune şirket içi Exchange Bağlayıcısını ayarlama
 
-Şirket içi Exchange Server ortamları, cihazların Intune’a kayıtlı olup olmamasına ve Intune cihaz uyumluluk ilkelerine uyup uymamasına bağlı olarak şirket içi Exchange posta kutularına erişen cihazları yönetmek için Intune şirket içi Exchange bağlayıcısını kullanabilir. Şirket içi Exchange bağlayıcısı, Intune ile mevcut Exchange Active Sync (EAS) kaydını eşitleyerek şirket içi Exchange sunucularına bağlanan mobil cihazları bulmaktan da sorumludur.
+Şirket içi Exchange Server ortamları, cihazların Intune’a kayıtlı olup olmamasına ve Intune cihaz uyumluluk ilkelerine uyup uymamasına bağlı olarak şirket içi Exchange posta kutularına cihaz erişimini yönetmek için Intune şirket içi Exchange bağlayıcısını kullanabilir. Şirket içi Exchange bağlayıcısı, Intune ile mevcut Exchange Active Sync (EAS) kaydını eşitleyerek şirket içi Exchange sunucularına bağlanan mobil cihazları bulmaktan da sorumludur.
 
 > [!IMPORTANT]
 > Intune, abonelik başına herhangi bir türde tek bir şirket içi Exchange Connector bağlantısını destekler.
@@ -70,11 +70,11 @@ Intune Exchange Bağlayıcısı tarafından kullanılacak bir Active Directory k
 
 1. Şirket İçi Exchange Connector için desteklenen bir Windows Server işletim sisteminde [Azure Portal](http://portal.azure.com)’ı açın ve şirket içi Exchange sunucusunda yönetici olan ve Exchange Server’ı kullanma lisansı bulunan bir kullanıcı hesabıyla oturum açın.
 
-2. Soldaki menüden **Daha fazla hizmet**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
+2. Soldaki menüden **Tüm hizmetler**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
 
 3. **Intune**’u seçin, Intune Panosu açılır; **Şirket içi erişim**’i seçin.
 
-4. **Şirket içi erişim - Exchange ActiveSync bağlayıcısı** dikey penceresinde, **Kurulum** bölümünden, **Şirket içi bağlayıcıyı indir**’i seçin.
+4. **Exchange ActiveSync bağlayıcısı**’nı ve **Şirket içi bağlayıcıyı indir**’i seçin.
 
 5.  Şirket İçi Exchange Connector, açılabilen veya kaydedilebilen sıkıştırılmış (.zip) bir klasörde yer alır. **Dosya İndirme** iletişim kutusunda **Kaydet**'i seçerek sıkıştırılmış klasörü güvenli bir konuma depolayın.
 
@@ -93,7 +93,7 @@ Intune Şirket İçi Exchange Connector'ı yüklemek için aşağıdaki adımlar
 
 3.  **Microsoft Intune Exchange Connector** iletişim kutusunda, **Şirket içi Microsoft Exchange Server** veya **Barındırılan Microsoft Exchange Server** seçeneklerinden birini belirleyin.
 
-  ![Exchange Server türünü seçin](./media/intune-sa-exchange-connector-config.png)
+  ![Exchange Server türünü nerede seçeceğinizi gösteren resim](./media/intune-sa-exchange-connector-config.png)
 
   Şirket içi Exchange sunucusu için **İstemci Erişimi Sunucu** rolünü barındıran Exchange sunucusunun sunucu adını veya tam etki alanı adını belirtin.
 
@@ -116,7 +116,7 @@ Intune Şirket İçi Exchange Connector'ı yüklemek için aşağıdaki adımlar
 
     5. **Kullanıcı (Etki alanı\kullanıcı)** ve **Parola** alanlarında Exchange sunucunuza bağlanmak için gereken kimlik bilgilerini sağlayın.
 
-    6.  Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken yönetici kimlik bilgilerini sağlayın. Bu bildirimleri Intune’da Koşullu Erişim ilkeleriyle yapılandırabilirsiniz.
+    6.  Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken kimlik bilgilerini sağlayın. Bu kullanıcı yalnızca bildirimlere ayrılabilir. Bildirim kullanıcısına, e-postayla bildirim gönderebilmesi için bir Exchange posta kutusu gerekir. Bu bildirimleri Intune’da koşullu erişim ilkeleriyle yapılandırabilirsiniz.  
 
         Otomatik Bulma hizmeti ve Exchange Web Hizmetleri'nin Exchange İstemci Erişimi Sunucusu'nda yapılandırıldığından emin olun. Daha fazla bilgi için bkz. [İstemci Erişimi sunucusu](https://technet.microsoft.com/library/dd298114.aspx).
 

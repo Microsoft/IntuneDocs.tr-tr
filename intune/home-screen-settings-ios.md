@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>iOS çalıştıran cihazlar için Microsoft Intune giriş ekranı düzeni ayarları 
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>iOS çalıştıran cihazlar için Microsoft Intune giriş ekranı düzeni ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -27,20 +27,21 @@ iOS çalıştıran cihazların dock ve giriş ekranındaki uygulama düzenini ve
 
 Atanmış bir profile sahip iOS çalıştıran cihazlar denetimli modda olmalı ve iOS 9.3 veya daha yeni bir sürüm çalıştırmalıdır.
 
-1. **Cihaz yapılandırması**, **Profil oluştur**, **Cihaz özellikleri** sayfasında, **Giriş Ekranı Düzeni (yalnızca denetimli)** seçeneğini belirleyin.
-2. **Giriş Ekranı Düzeni (yalnızca denetimli)** dikey penceresinde, **Dock** veya **Sayfalar** düzenlerini yapılandırmak isteyip istemediğinizi seçin.
+1. [Azure Portalı’nda Intune](https://portal.azure.com)’dan, cihaz yapılandırma alanındaki [**Cihaz özellikleri**’ne gidin](device-features-configure.md).
+2. **Cihaz özellikleri** bölmesinde **Giriş Ekranı Düzeni (yalnızca denetimli)** seçeneğini belirleyin.
+3. **Giriş Ekranı Düzeni (yalnızca denetimli)** bölmesinde, **Dock** veya **Sayfalar** düzenlerini yapılandırmak isteyip istemediğinizi seçin.
 
 ## <a name="add-items-to-the-dock"></a>Dock’a öğe ekleme
 
-**Dock** sayfasında, iOS ekranındaki dock kısmına en fazla altı öğe veya klasör ekleyebilirsiniz. Ancak birçok cihaz bundan daha az öğeyi destekler, örneğin iPhone cihazlar en fazla dört öğeyi destekler. Bu durumda, cihazda yalnızca yapılandırdığınız ilk dört öğe görüntülenecektir.
+**Dock** bölmesinde, iOS ekranındaki dock kısmına en fazla altı öğe veya klasör ekleyebilirsiniz. Ancak birçok cihaz bundan daha az öğeyi destekler, örneğin iPhone cihazlar en fazla dört öğeyi destekler. Bu durumda, cihazda yalnızca yapılandırdığınız ilk dört öğe görüntülenecektir.
 
 1. Dock’a öğe eklemek için **Ekle**’yi seçin.
-2. **Satır Ekle** sayfasında, **Uygulama** veya **Klasör** seçiminizi belirtin.
+2. **Satır Ekle** bölmesinde, **Uygulama** mı yoksa **Klasör** mü eklemek istediğinizi belirtin.
 3. Bu konudaki bilgileri kullanarak dock kısmında görüntülenmesini istediğiniz uygulama ve klasörleri yapılandırın.
-4. Öğeleri eklemeye devam edin. İşiniz bittiğinde **Profil Oluştur** sayfasına geri dönene kadar her sayfada **Tamam**’a tıklayın. **Oluştur**’u seçin.
+4. Öğeleri eklemeye devam edin. İşiniz bittiğinde **Profil Oluştur** bölmesine geri dönene kadar her bölmede **Tamam**’a tıklayın. **Oluştur**’u seçin.
 
 >[!TIP]
-> Öğeleri yeniden düzenlemek için herhangi bir Giriş ekranı ve sayfalar listesine sürükleyip bırakabilirsiniz. 
+> Öğeleri yeniden düzenlemek için herhangi bir Giriş ekranı ve sayfalar listesine sürükleyip bırakabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -56,9 +57,8 @@ Bu örnekte, dock ekranını yalnızca Safari, Mail ve Borsa uygulamalarını g�
 
 Giriş ekranında görünmesini istediğiniz sayfaları ve her sayfada görünecek uygulamaları ekleyin. Bir sayfaya ekleyeceğiniz uygulamalar, listede belirtildikleri sırada, soldan sağa düzenlenmiştir. Bir sayfaya alabileceğinden fazla uygulama eklerseniz fazla olanlar bir sonraki sayfaya taşınır.
 
-
-1. **Sayfalar** sayfasında **Ekle**’yi seçin.
-2. **Satır Ekle** sayfasında, bir **Sayfa adı** girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
+1. **Sayfalar** bölmesinde **Ekle**’yi seçin.
+2. **Satır Ekle** bölmesinde, bir **Sayfa adı** girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
 3. **Ekle**’yi seçin ve ardından **Uygulama** veya **Klasör** seçiminizi belirtin.
 4. Bu konudaki bilgileri kullanarak sayfada görüntülenmesini istediğiniz uygulama ve klasörleri yapılandırın.
 
@@ -85,7 +85,7 @@ Bir klasördeki sayfaya ekleyeceğiniz uygulamalar, listede belirtildikleri sır
 
 1. **Klasör adı** girin. Bu ad, kullanıcıların cihazlarında görüntülenir.
 2. Klasörde bir sayfa oluşturmak için **Ekle**’yi seçin. En fazla 20 sayfa ekleyebilirsiniz.
-3. **Satır Ekle** sayfasında, sayfa için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
+3. **Satır Ekle** bölmesinde, sayfa için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
 3. **Uygulama Adı** girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve iOS cihazda *görüntülenmez*.
 2. Görüntülemek istediğiniz uygulamanın **Uygulama Paket Kimliği**’ni girin. Yardım için bkz. **Listeye uygulama ekleme**.
 3. **Ekle**’yi seçin. En fazla 60 öğe ekleyebilirsiniz.
@@ -94,7 +94,7 @@ Bir klasördeki sayfaya ekleyeceğiniz uygulamalar, listede belirtildikleri sır
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için Paket Kimliği başvurusu
 
-Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun. 
+Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
 
 |||
 |-|-|

@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android ve Samsung Knox Standard cihaz kısıtlama ayarları 
 
@@ -144,7 +144,7 @@ Her ayar için aşağıdakilerden birini kullanarak bir uygulama listesi yapıla
 
 Bilgi noktası ayarları yalnızca Samsung Knox Standard cihazlarda ve Intune ile yönettiğiniz uygulamalarda geçerlidir.
 
-- **Yönetilen bir uygulama seçin** - Cihaz bilgi noktası modunda olduğunda çalışabilen bir veya daha fazla yönetilen uygulama eklemek için aşağıdaki seçeneklerden birini belirleyin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez.
+- **Yönetilen bir uygulama seçin** - Cihaz bilgi noktası modunda olduğunda çalışabilen bir veya daha fazla yönetilen uygulama eklemek için aşağıdaki seçeneklerden birini belirleyin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez. Önceden yüklenen tarayıcılar, cihaz bilgi noktası modundayken çalışmasına izin verilen bir uygulama olarak tanımlanamaz. Bir tarayıcı gerekliyse [Managed Browser](app-configuration-managed-browser.md) kullanabilirsiniz.
     - **Paket adına göre uygulama ekleme**
     - **URL’ye göre uygulama ekleme**
     - **Yönetilen uygulamalar ekleme**.

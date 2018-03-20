@@ -1,29 +1,30 @@
 ---
-title: "Windows 8.1 için Intune cihaz kısıtlama ayarları"
-titleSuffix: Azure portal
-description: "Windows 8.1 cihazlarında cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
+title: "Windows 8.1 çalıştıran cihazlar için Microsoft Intune cihaz kısıtlama ayarları"
+titleSuffix: 
+description: "Windows 8.1 çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 8.1 ve üzeri cihaz kısıtlama ayarları
+# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 ve üzeri cihaz kısıtlama ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Bu makalede, Windows 8.1 ve üstünü çalıştıran cihazlar için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları gösterilir.
+
 
 ## <a name="general"></a>Genel
 
@@ -62,7 +63,7 @@ Cihazda şifrelemeyi zorunlu tuttuğunuzda kurtarma anahtarına yalnızca kullan
 -   **Kısıtlı siteler için yüksek güvenlik** - Yasak siteler bölgesi için güvenlik düzeyini yapılandırır.
 -   **Kurumsal mod menü erişimi** - Kullanıcıların Internet Explorer’dan Kuruluş Modu menü seçeneklerine erişmesine olanak tanır.
 Bu ayarı seçerseniz, kullanıcıların Kuruluş Modu erişimine açtıkları web sitelerinin gösterildiği bir raporun URL’sini içeren **Günlük raporunun konumunu** belirtebilirsiniz.
--   **Kurumsal mod site listesi konumu** - Etkin olduğunda Kuruluş Modu’nu kullanacak web siteleri listesinin bulunduğu konumu belirtir.
+-   **Kurumsal mod site listesi konumu** - Etkin olduğunda Kuruluş Modu’nu kullanan web siteleri listesinin bulunduğu konumu belirtir.
 
 ## <a name="cellular"></a>Hücresel
 -   **Veri dolaşımı** - Cihaz cep telefonu şebekesindeyken veri dolaşımını etkinleştirir.

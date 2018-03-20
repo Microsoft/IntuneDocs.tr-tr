@@ -1,12 +1,12 @@
 ---
-title: "Intune ile koşullu erişim"
-titlesuffix: Azure portal
-description: "Microsoft Intune'da kullanıcıların ve cihazların şirket kaynaklarına erişmek için uymaları gereken koşulları tanımlamayı öğrenin.\""
+title: "Microsoft Intune ile koşullu erişim"
+titlesuffix: 
+description: "Microsoft Intune'da kullanıcıların, cihazların ve uygulamaların şirket kaynaklarına erişmek için uymaları gereken koşulları tanımlamayı öğrenin."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>Koşullu erişim nedir?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bu konu, Enterprise Mobility + Security (EMS) için geçerli olduğu haliyle Koşullu erişimi açıklamakta, ardından Intune kullanırken karşılaşılan yaygın Koşullu erişim senaryolarına geçmektedir.
+Koşullu erişim, e-postanıza ve şirket kaynaklarınıza bağlanmasına izin verilen cihazları ve uygulamaları denetlemek için kullanabileceğiniz yolları gösterir. Bu konu başlığı altında, cihaz tabanlı ve uygulama tabanlı koşullu erişim hakkında bilgi edinebilir ve koşullu erişimi Intune'la kullanmaya yönelik yaygın senaryolar bulabilirsiniz.
 
 Enterprise Mobility + Security (EMS) Koşullu Erişim, tek başına bir ürün değildir; EMS'nin parçası olan tüm ürün ve hizmetlerde yer alan bir çözümdür. Kurumsal verilerinizi güvenli tutmak için ayrıntılı erişim denetimi sağlarken, kullanıcılara herhangi bir cihazdan ve herhangi bir yerden en iyi şekilde çalışmalarına izin veren bir deneyim sunar.
 

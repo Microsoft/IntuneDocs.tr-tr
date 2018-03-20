@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
-ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
+ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 
@@ -80,11 +80,11 @@ Yeni bir Intune kullanıcısı için bir cihaz ayarladığınızda, cihazı kull
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP belirtecini almak ve karşıya yüklemek için
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-1.  **Intune** dikey penceresinde **Kurulum** altında bulunan **Mobil uygulamalar** > **iOS VPP**’yi seçin.
-2.  VPP belirteçleri listesi dikey penceresinde **Oluştur**’a tıklayın.
-4. **VPP belirteci oluştur** dikey penceresinde aşağıdaki bilgileri girin:
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1.  **Intune** bölmesinde **Kurulum** altında bulunan **Mobil uygulamalar** > **iOS VPP belirteçleri**’ni seçin.
+2.  VPP belirteçleri listesi bölmesinde **Oluştur**’u seçin.
+4. **VPP belirteci oluştur** bölmesinde aşağıdaki bilgileri girin:
     - **VPP belirteç dosyası** - Henüz kaydolmadıysanız Volume Purchase Program for Business veya Education programına kaydolun. Kaydolduktan sonra hesabınıza yönelik Apple VPP belirtecini indirin ve burada seçin.
     - **Apple Kimliği** - Toplu satın alma programıyla ilişkilendirilmiş hesabın Apple kimliğini girin.
     - **Ülke/Bölge** - VPP ülke mağazasını seçin.  Intune, belirtilen VPP ülke mağazasındaki tüm yerel ayarlarla VPP uygulamaları eşitler.
@@ -94,17 +94,17 @@ Yeni bir Intune kullanıcısı için bir cihaz ayarladığınızda, cihazı kull
     - **VPP hesabı türü** - **İş** veya **Eğitim**’i seçin.
     - **Otomatik uygulama güncelleştirmeleri** - **Açık** veya **Kapalı** olarak ayarlayın. Bu seçenek etkinleştirildiğinde Intune, cihaz bildirim yaptığında belirtilen belirteç için satın alınan tüm uygulamaları güncelleştirir.
 uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılayacak ve cihaz bildirim yaptığında bunları cihaza otomatik olarak gönderecektir.
-4. İşiniz bittiğinde **Karşıya Yükle**‘ye tıklayın.
+4. İşiniz bittiğinde **Oluştur**’u seçin.
 
-Belirteç, belirteçler listesi dikey penceresinde görüntülenir.
+Belirteç, belirteçler listesi bölmesinde görüntülenir.
 
 İstediğiniz zaman **Şimdi eşitle**’yi seçerek Apple tarafından tutulan verileri Intune ile eşitleyebilirsiniz.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
-1.  **Intune** dikey penceresinde **Yönet** altında bulunan **Mobil uygulamalar** > **Uygulamalar**’ı seçin.
-2.  Uygulama listesi dikey penceresinde atamak istediğiniz uygulamayı ve daha sonra **Atamalar**’ı seçin.
-3.  ***Uygulama adı*** - **Atamalar** dikey penceresinde **Grupları Seç**’e tıklayın, daha sonra **Grupları seç** dikey penceresinde uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
+1.  **Intune** bölmesinde **Yönet** altında bulunan **Mobil uygulamalar** > **Uygulamalar**’ı seçin.
+2.  Uygulama listesi bölmesinde atamak istediğiniz uygulamayı ve daha sonra **Atamalar**’ı seçin.
+3.  ***Uygulama adı*** - **Atamalar** bölmesinde, **Grup ekle**’yi seçin, ardından **Grup ekle** bölmesinde bir **Atama türü** seçin ve uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
 5.  Seçtiğiniz her grup için aşağıdaki ayarları yapılandırın:
     - **Tür** - Uygulamanın **Kullanılabilir** mi (son kullanıcılar uygulamayı Şirket Portalı’ndan indirebilir) yoksa **Gerekli** mi (son kullanıcıların cihazlarında uygulama otomatik olarak yüklenir) olacağını seçin.
     - **Lisans türü** - **Kullanıcı lisanslama** veya **Cihaz lisanslama**’yı seçin.

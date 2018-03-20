@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d07b025881ea78299d617205ce5ba39bb92a1231
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>Daha kolay yönetim için cihazları gruplar halinde kategorilere ayırma
 
@@ -41,12 +41,11 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 ## <a name="how-to-configure-device-categories"></a>Cihaz kategorilerini yapılandırma
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>1. Adım - Azure Portal’ın Intune dikey penceresinde cihaz kategorileri oluşturma
-1. [Azure portalında](https://portal.azure.com), **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** dikey penceresinde **Cihaz kaydı**'nı seçin.
-3. **Cihaz kaydı** dikey penceresinde **Cihaz kategorileri**’ni seçin.
-4. **Cihaz kategorileri** sayfasında, yeni kategori eklemek için **Oluştur**’u seçin.
-5. **Cihaz kategorisi oluştur** dikey penceresinde, yeni kategori için bir **Ad** ve isteğe bağlı bir **Açıklama** girin.
-6. İşiniz bittiğinde **Oluştur**’a tıklayın. Kategori listesinde yeni kategoriyi görebilirsiniz.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı**’nı seçin.
+2. **Cihaz kaydı** dikey penceresinde **Cihaz kategorileri**’ni seçin.
+3. **Cihaz kategorileri** sayfasında, yeni kategori eklemek için **Oluştur**’u seçin.
+4. **Cihaz kategorisi oluştur** dikey penceresinde, yeni kategori için bir **Ad** ve isteğe bağlı bir **Açıklama** girin.
+5. İşiniz bittiğinde **Oluştur**’a tıklayın. Kategori listesinde yeni kategoriyi görebilirsiniz.
 
 2. adımda Azure Active Directory güvenlik grupları oluştururken cihaz kategorisi adını kullanacaksınız.
 
@@ -61,23 +60,20 @@ Siz cihaz gruplarını yapılandırdıktan ve kullanıcılar cihazlarını kayde
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>Yönettiğiniz cihazların kategorilerini görüntüleme
 
-1.  [Azure portalında](https://portal.azure.com), **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1.  [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihazlar**’ı seçin.
 
-2. Azure Portal’ın Intune dikey penceresinde **Cihazlar**’ı seçin.
+2.  **Yönet**’in altında **Tüm cihazlar**’a tıklayın.
 
-3.  **Yönet**’in altında **Tüm cihazlar**’a tıklayın.
-
-4.  Cihaz listesinde **Cihaz kategorisi** sütununu inceleyin.
+3.  Cihaz listesinde **Cihaz kategorisi** sütununu inceleyin.
 
 **Cihaz kategorisi** sütunu görüntülenmiyorsa **Sütunlar**’a tıklayın, listeden **Cihaz kategorisi**’ni seçin ve **Uygula**’ya tıklayın.
 
 ### <a name="to-change-the-category-of-a-device"></a>Cihazın kategorisini değiştirmek için
 
-1. [Azure portalında](https://portal.azure.com), **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
-4. **Yönet** kısmındaki **Cihazlar** dikey penceresinde **Tüm cihazlar**’ı seçin.
-5. Cihaz listesinde istediğiniz cihazı seçin ve ardından **Yönet** kısmındaki cihaz özellikleri dikey penceresinde **Özellikler**’i seçin.
-6. Sonraki dikey pencerede, seçili cihazın **Cihaz kategorisi**’ni daha önce yapılandırmış olduğunuz herhangi bir kategori adıyla değiştirebilirsiniz.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihazlar**’ı seçin.
+2. **Yönet** kısmındaki **Cihazlar** dikey penceresinde **Tüm cihazlar**’ı seçin.
+3. Cihaz listesinde istediğiniz cihazı seçin ve ardından **Yönet** kısmındaki cihaz özellikleri dikey penceresinde **Özellikler**’i seçin.
+4. Sonraki dikey pencerede, seçili cihazın **Cihaz kategorisi**’ni daha önce yapılandırmış olduğunuz herhangi bir kategori adıyla değiştirebilirsiniz.
 
 ## <a name="after-you-configure-device-groups"></a>Cihaz gruplarını yapılandırdıktan sonra
 

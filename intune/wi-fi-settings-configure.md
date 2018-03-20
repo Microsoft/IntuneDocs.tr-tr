@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune’da Wi-Fi ayarlarını yapılandırma
 
@@ -47,17 +47,19 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Wi-Fi ayarlarını içeren bir cihaz profili oluşturma
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
-2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
-3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
-4. **Profil Oluştur** dikey penceresinde, Wi-Fi profili için **Ad** ve **Açıklama** girin.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
+2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
+3. Profiller bölmesinde **Profil oluştur**’u seçin.
+4. **Profil oluştur** bölmesinde, Wi-Fi profili için **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden, Wi-Fi ayarlarını uygulamak istediğiniz cihaz platformunu seçin. Şu anda, Wi-Fi ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
     - **Android**
     - **Android for Work**
     - **Android**
     - **macOS**
-    - **Windows 8.1 ve üzeri (profili içeri aktarın)**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 ve üzeri**
+    - **Windows 10 ve üzeri**
 
    > [!IMPORTANT]
    > Windows Holographic for Business dahil olmak üzere Windows 10 çalıştıran cihazlar için bir profil oluşturuyorsanız, **Windows 8.1 ve üzeri** platformunu seçmeniz gerekir. **Windows 10 ve üzeri** platformu bir Wi-Fi profil türü içermez. 
@@ -70,9 +72,9 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
     - [iOS ayarları](wi-fi-settings-ios.md)
     - [macOS ayarları](wi-fi-settings-macos.md)
     - [Windows 8.1 ve üzeri ayarları](wi-fi-settings-import-windows-8-1.md) (Windows Holographic for Business dahil)
-1. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
+1. Bitirdiğinizde **Profil Oluştur** bölmesine dönün ve **Oluştur**’a basın.
 
-Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
+Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

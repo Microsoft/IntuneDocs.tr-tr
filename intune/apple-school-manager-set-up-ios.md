@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager ile iOS cihaz kaydını ayarlama
 
@@ -89,7 +89,7 @@ Sertifika (.p7m) dosyasına gidin, **Aç**’ı ve sonra da **Karşıya Yükle**
 ## <a name="create-an-apple-enrollment-profile"></a>Apple kayıt profili oluşturma
 Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar.
 
-1. Azure portalında Intune’da **Cihaz kaydı**'nı, ardından **Apple Kaydı**'nı seçin.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da **Cihaz kaydı**’nı, ardından **Apple Kaydı**’nı seçin.
 2. **Kayıt Programı**'nın altından **Kayıt Programı Profilleri**'ni seçin.
 3. **Kayıt Programı Profilleri** dikey penceresinde **Oluştur**'u seçin.
 4. **Kayıt Profili Oluştur** dikey penceresinde, Intune’da görüntülenen profil için bir **Ad** ve **Açıklama** girin.
@@ -149,7 +149,7 @@ Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları
 ## <a name="sync-managed-devices"></a>Yönetilen cihazları eşitleme
 Artık Intune’a Apple School Manager cihazlarınızı yönetme izni verildiğine göre, yönetilen cihazlarınızı Intune’da görmek için Intune’u Apple School Manager hizmetiyle eşitleyebilirsiniz.
 
-1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple Kaydı** > **Kayıt Programı Cihazları** > **Eşitle**’yi seçin. İlerleme çubuğu, yeniden Eşitleme istemeden önce beklemeniz gereken süreyi gösterir.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple Kaydı** > **Kayıt Programı Cihazları** > **Eşitle**’yi seçin. İlerleme çubuğu, yeniden Eşitleme istemeden önce beklemeniz gereken süreyi gösterir.
 
   ![Kayıt Programı Cihazları düğümü ve Eşitle bağlantısı seçili](./media/enrollment-program-device-sync.png)
 2. **Eşitle** dikey penceresinde **Eşitleme İste**’yi seçin. İlerleme çubuğu, yeniden Eşitleme istemeden önce beklemeniz gereken süreyi gösterir.
@@ -166,7 +166,7 @@ Artık Intune’a Apple School Manager cihazlarınızı yönetme izni verildiği
 ## <a name="assign-a-profile-to-devices"></a>Cihazlara profil atama
 Intune tarafından yönetilen Apple School Manager cihazları kaydedilmeden önce bu cihazlara bir kayıt profili atanmalıdır.
 
-1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple Kaydı**’nı ve ardından **Kayıt Programı profilleri**’ni seçin.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple Kaydı**’nı ve ardından **Kayıt Programı profilleri**’ni seçin.
 2. **Kayıt Programı Profilleri** listesinden cihazlara atamak istediğiniz profili ve ardından **Cihaz Atamaları**’nı seçin
 
  ![Ata seçeneği belirlenmiş Cihaz Atamaları.](./media/enrollment-program-device-assign.png)

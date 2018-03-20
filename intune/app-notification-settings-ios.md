@@ -1,12 +1,11 @@
 ---
-title: "iOS cihazları için Intune uygulama bildirim ayarları"
-titlesuffix: Azure portal
-description: "iOS cihazlarındaki uygulamaların bildirimlerini denetlemek için kullanabileceğiniz ayarları öğrenin.\""
+title: "Microsoft Intune - Azure'da iOS cihazları için uygulama bildirimleri oluşturma | Microsoft Docs"
+description: "Microsoft Intune'da iOS cihazları için uygulama bildirimleri ekleyin veya oluşturun. Hangi uygulamaların bildirim göndereceğini seçin, kilit ekranındaki bildirim ayarlarını yapılandırın, sesi etkinleştirin, uyarı türünü seçin ve gösterge ekleyin."
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,41 +14,44 @@ ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 91e4b6197c7606a70862ad5fb12b10b5e0f3ed81
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 018a04bd674e4f270ed2e356c08825ab1d5878da
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="intune-app-notifications-settings-for-ios-devices"></a>iOS cihazları için Intune uygulama bildirim ayarları
+# <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>Intune'da iOS cihazlarındaki uygulama bildirimi ayarlarını yapılandırma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bir cihazda yüklü uygulamaların bildirimleri nasıl göndereceğini yapılandırmanıza olanak sağlar. Bu ayarlar, iOS 9.3 ve üzerini çalıştıran denetimli cihazları destekler.
+iOS cihazında yüklü olan uygulamaların nasıl bildirim göndereceğini yapılandırın. Bu ayarlar, iOS 9.3 ve üzerini çalıştıran denetimli cihazları destekler.
 
-## <a name="configure-settings"></a>Ayarları yapılandırma
+## <a name="add-the-app-notification"></a>Uygulama bildirimi ekleme
 
-1. Cihaz özellikleri dikey penceresinde, **Uygulama Bildirimleri (yalnızca denetimli)** seçeneğini işaretleyin.
-2. **Uygulama Bildirimleri** dikey penceresinde, **Ekle**’yi seçin ve aşağıdaki değerleri yapılandırın:
-    - **Uygulama paket kimliği** - Yapılandırmak istediğiniz uygulamanın **Uygulama Paket Kimliği**’ni girin. Yardım için bu konu başlığının ileri bölümlerindeki **Yerleşik iOS uygulamaları için Paket Kimliği başvurusu** konusuna bakın.
-    - **Uygulama adı** - Yapılandırmak istediğiniz uygulamanın adını girin. Bu ad cihazda görüntülenmez ve listedeki uygulamayı belirlemenize yardımcı olmak için kullanılır.
-    - **Yayımcı** - Yapılandırmak istediğiniz uygulama yayımcısının adını girin. Bu yayımcı adı cihazda görüntülenmez ve yalnızca listedeki uygulamayı belirlemenize yardımcı olmak için kullanılır.
-    - **Bildirimler** - Uygulamanın cihaza bildirim göndermesini etkinleştirin veya devre dışı bırakın. Bu ayarı devre dışı bırakırsanız, aşağıdaki ayarlar da devre dışı bırakılır.
-        - **Bildirim Merkezi’nde Göster** - Bu ayarı uygulamanın cihaz Bildirim Merkezi’nde bildirim göstermesine izin vermek için etkinleştirin.
-        - **Kilit Ekranında Göster** - Bu ayarı cihaz kilitleme ekranında uygulama bildirimlerini görmek için etkinleştirin.
-        - **Uyarı türü** - Cihaz kilidi aşağıdakilerden açıldığında istediğiniz bildirim türlerini seçin:
-            - **Hiçbiri** - Bildirim görüntülenmez.
-            - **Başlık** - Bildirimi gösteren başlık kısaca görüntülenir.
-            - **Kalıcı** - Bildirim görüntülenir ve kullanıcının cihazı kullanmaya devam etmesi için bunu el ile kapatması gerekir.
-        - **Uygulama simgesi üzerindeki rozet** - Bu ayarı uygulamanın bildirim gönderdiğini belirtmek üzere uygulama simgesine rozet eklemek için etkinleştirin.
-        - **Sesler** - Bu ayarı bir bildirim iletildiğinde ses çalınması için etkinleştirin.
-3. Gerektiği kadar uygulama eklemeye devam edin. İşiniz bittiğinde **Tamam**’ı seçin.
-4. **Profil Oluştur** dikey penceresine dönene kadar **Tamam**’ı ve ardından **Oluştur**’u seçin. 
+1. [Azure Portal](https://portal.azure.com)’da oturum açın.
+2. iOS veya macOS profilinde **Cihaz özellikleri**'ni seçin. [iOS veya macOS cihaz özellikleri](device-features-configure.md) altında profil oluşturma adımları listelenir.
+3. **Uygulama Bildirimleri (yanızca denetimli)** öğesini ve ardından **Ekle**'yi seçin: ![Intune'da iOS veya macOS profiline uygulama bildirimi ekleme](./media/ios-macos-app-notifications.png)
+4. Aşağıdaki özellikleri girin:
 
+  - **Uygulama paket kimliği**: Yapılandırmak istediğiniz uygulamanın **Uygulama Paket Kimliği**’ni girin. **Yerleşik iOS uygulamaları için Paket Kimliği başvurusu**  (bu makalede) biraz yardım sağlar.
+  - **Uygulama adı**: Yapılandırmak istediğiniz uygulamanın adını girin. Bu ad cihazda görüntülenmez ve listedeki uygulamayı belirlemenize yardımcı olmak için kullanılır.
+  - **Yayımcı**: Yapılandırmak istediğiniz uygulama yayımcısının adını girin. Bu yayımcı adı cihazda görüntülenmez ve yalnızca listedeki uygulamayı belirlemenize yardımcı olmak için kullanılır.
+  - **Bildirimler**: Uygulamanın cihaza bildirim göndermesini etkinleştirin veya devre dışı bırakın. Bu ayarı devre dışı bırakırsanız, aşağıdaki ayarlar da devre dışı bırakılır.
+    - **Bildirim Merkezi’nde Göster** - Bu ayarı uygulamanın cihaz Bildirim Merkezi’nde bildirim göstermesine izin vermek için etkinleştirin.
+    - **Kilit Ekranında Göster** - Bu ayarı cihaz kilitleme ekranında uygulama bildirimlerini görmek için etkinleştirin.
+    - **Uyarı türü** - Cihaz kilidi aşağıdakilerden açıldığında istediğiniz bildirim türlerini seçin:
+      - **Hiçbiri** - Bildirim görüntülenmez.
+      - **Başlık** - Bildirimi gösteren başlık kısaca görüntülenir.
+      - **Kalıcı** - Bildirim görüntülenir ve kullanıcının cihazı kullanmaya devam etmesi için bunu el ile kapatması gerekir.
+    - **Uygulama simgesi üzerindeki rozet** - Bu ayarı uygulamanın bildirim gönderdiğini belirtmek üzere uygulama simgesine rozet eklemek için etkinleştirin.
+    - **Sesler** - Bu ayarı bir bildirim iletildiğinde ses çalınması için etkinleştirin.
+
+5. Gerektiği kadar uygulama eklemeye devam edin. Uygulamaları eklemeyi bitirdiğinizde **Tamam**'ı seçin.
+6. Profilinizi kaydetmek için **Oluştur**’u seçin.
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için Paket Kimliği başvurusu
 
-Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun. 
+Aşağıdaki liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için en iyi yöntem yazılım satıcınıza başvurmaktır.
 
 |||
 |-|-|
@@ -95,4 +97,4 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Artık seçtiğiniz gruplara cihaz profilini atayabilirsiniz. Ayrıntılar için bkz. [Cihaz profilleri atama](device-profile-assign.md).
+Seçtiğiniz gruplara cihaz profilini atayın. Adımlar, [Cihaz profilleri atama](device-profile-assign.md) altında listelenir.

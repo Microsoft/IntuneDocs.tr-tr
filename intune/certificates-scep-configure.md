@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve yönetme
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -304,10 +304,10 @@ Bu görevde şunları yapacaksınız:
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Sertifika bağlayıcısını indirmek, yüklemek ve yapılandırmak için
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. Azure Portal’da oturum açın. 
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihaz Yapılandırması**’nı seçin.
-4. **Cihaz Yapılandırması** dikey penceresinde **Sertifika Yetkilisi**’ni seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
+4. **Cihaz yapılandırması** bölmesinde **Sertifika Yetkilisi**’ni seçin.
 5. **Ekle**'ye tıklayın ve **Bağlayıcı dosyasını indir**'i seçin. İndirilen dosyayı, onu yükleyeceğiniz sunucuda erişebileceğiniz bir konuma kaydedin. 
 6.  İndirme tamamlandıktan sonra Basit Sertifika Kayıt Protokolü (NDES) rolünü barındıran sunucuda indirilen yükleyiciyi (**ndesconnectorssetup.exe**) çalıştırın. Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. (CRP Web Hizmeti, CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.)
 
@@ -346,10 +346,10 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403
 
 ## <a name="how-to-create-a-scep-certificate-profile"></a>Bir SCEP sertifika profili oluşturma
 
-1. Azure Portal’da **Cihazları yapılandır** iş yükünü seçin.
-2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
-3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
-4. **Profil Oluştur** dikey penceresinde, SCEP sertifika profili için **Ad** ve **Açıklama** girin.
+1. Azure portalında **Cihaz yapılandırması** iş yükünü seçin.
+2. **Cihaz yapılandırması** bölmesinde **Yönet** > **Profiller**’i seçin.
+3. Profiller bölmesinde **Profil oluştur**’u seçin.
+4. **Profil oluştur** bölmesinde, SCEP sertifika profili için **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinde, bu SCEP sertifikası için cihaz platformunu seçin. Şu anda, cihaz kısıtlama ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
     - **Android**
     - **iOS**
@@ -358,7 +358,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403
     - **Windows 8.1 ve üzeri**
     - **Windows 10 ve üzeri**
 6. **Profil** türü açılan listesinde **SCEP sertifikası**’nı seçin.
-7. **SCEP Sertifikası** dikey penceresinde aşağıdaki ayarları yapılandırın:
+7. **SCEP Sertifikası** bölmesinde aşağıdaki ayarları yapılandırın:
     - **Sertifika geçerlilik süresi** - Veren sertifika yetkilisinde, özel bir geçerlilik süresine izin veren **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** komutunu çalıştırdıysanız, sertifikanın süresi dolmadan önce kalan zamanı belirtebilirsiniz.<br>Belirtilen sertifika şablonundaki geçerlilik süresinden düşük bir değer belirtebilirsiniz, daha yüksek bir değer belirtemezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa, beş yıl değerini belirtemez ancak bir yıl değerini belirtebilirsiniz. Değerin, yayımlayan sertifika yetkilisinin sertifikası için kalan geçerlilik süresinden de düşük olması gerekir. 
     - **Anahtar depolama sağlayıcısı (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10) - Sertifika anahtarının depolandığı yeri belirtin. Aşağıdaki değerlerden birini seçin:
         - **Varsa Güvenilir Platform Modülü (TPM) KSP'sine, aksi halde Yazılım KSP'sine kaydol**
@@ -385,9 +385,9 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve bir **403
     - **Kayıt Ayarları**
         - **Yenileme eşiği (%)** - Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini belirtin.
         - **SCEP Sunucu URL’leri** - SCEP aracılığıyla sertifika veren NDES Sunucuları için bir veya birden çok URL belirtin. 
-8. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
+8. **Tamam**'ı seçin, **Profil oluştur** bölmesine dönün ve **Oluştur**’u seçin.
 
-Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
+Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 
 ## <a name="how-to-assign-the-certificate-profile"></a>Sertifika profilini atama
 

@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Bir uygulamayı Intune'a ekledikten sonra kullanıcılara ve cihazlara atayabilirsiniz.
+Bir uygulamayı Microsoft Intune’a ekledikten sonra kullanıcılara ve cihazlara atayabilirsiniz.
 
 Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uygulamalara atanabilir. Uygulamaları kullanıcılara ve cihazlara atamaya yönelik çeşitli seçenekleri anlamanıza yardımcı olması için aşağıdaki tabloyu kullanın:
 
@@ -51,19 +51,28 @@ Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uy
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-1. **Mobil Uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
+1. **Mobil uygulamalar** iş yükündeki **Yönet** bölümünden **Uygulamalar**’ı seçin.
 2. Uygulama listesi dikey penceresinde, atamak istediğiniz uygulamaya tıklayın.
-3. **Genel Bakış** dikey penceresinde, **Yönet** > **Atamalar**’ı seçin.
-4. Ardından **Grup ekle** dikey penceresinde **Grup Ekle**’yi seçin, uygulamayı atamasına dahil edilecek veya atamadan hariç tutulacak Azure AD gruplarını seçin.
-5. Seçtiğiniz her uygulama için, **atama türü** olarak aşağıdakilerden birini seçin:
+3. Uygulamaya özgü **Genel Bakış** dikey penceresinde, **Yönet** bölümünden **Atamalar**’ı seçin.
+4. **Grup Ekle**’yi seçerek uygulamayla ilgili **Grup ekle** dikey penceresinin görüntülenmesini sağlayın.
+5. Belirli uygulama için, **atama türü** olarak aşağıdakilerden birini seçin:
     - **Kayıtlı cihazlar için kullanılabilir** - Kullanıcılar, Şirket Portalı uygulamasından veya web sitesinden uygulamayı yükler.
-    - **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın.
+    - **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. **Android for Work** türünün bu seçeneği desteklemediğini aklınızda bulundurun. 
     - **Gerekli** - Uygulama, seçili gruplardaki cihazlara yüklenir.
     - **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
-6. **Yalnızca iOS uygulamalar için** - Uygulamaya göre VPN ayarları barındıran bir iOS VPN profili oluşturduysanız **VPN** altında bu profili seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
-6. İşiniz bittikten sonra **Tamam**’ı ve sonra **Kaydet**’i seçin.
 
-Uygulama artık seçtiğiniz gruplara atanır.
+    > [!NOTE]
+    > **Yalnızca iOS uygulamalar için** - Uygulamaya göre VPN ayarları barındıran bir iOS VPN profili oluşturduysanız **VPN** altında bu profili seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
+
+6. Bu uygulama atamasından etkilenecek kullanıcı gruplarını seçmek için **Dahil Edilen Gruplar**’ı seçin.
+7. Dahil etmek üzere bir veya daha fazla grup seçtikten sonra **Seçin**’e tıklayın.
+8. Dahil edilen grup bölümünü tamamlamak için **Ata** dikey penceresinde **Tamam**’a tıklayın.
+9. Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız **Grupları Dışla**’ya tıklayın.
+10. Herhangi bir grubu dışlamayı seçtiyseniz **Grupları seçin** dikey penceresinde **Seçin**’e tıklayın.
+11. **Grup ekle** dikey penceresinde **Tamam**’a tıklayın.
+12. Atamalarınızı kaydetmek için uygulama **Atamalar** dikey penceresinde **Kaydet**’e tıklayın.
+
+Uygulama artık seçtiğiniz gruplara atanır. Uygulama atamalarını dahil etme ve dışlama hakkında daha fazla bilgi için bkz. [Uygulama atamalarını dahil etme ve dışlama](apps-inc-exl-assignments.md).
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Uygulama amaçları arasındaki çakışmalar nasıl çözümlenir
 
@@ -78,8 +87,8 @@ Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. B
 |Kullanıcı Mevcut|Kullanıcı Mevcut Değil|Kullanılamıyor|
 |Kullanıcı Mevcut|Kullanıcı Kaldır|Kaldır|
 |Kullanıcı Mevcut Değil|Kullanıcı Kaldır|Kaldır
-|Kullanıcı Gerekli|Cihaz Gerekli|İkisi de mevcut; Ağ geçidi gerekli olanı işler 
-|Kullanıcı Gerekli|Cihaz Kaldır|İkisi de mevcut, Ağ geçidi gerekli olanı çözümler 
+|Kullanıcı Gerekli|Cihaz Gerekli|İkisi de mevcut; Ağ geçidi gerekli olanı işler
+|Kullanıcı Gerekli|Cihaz Kaldır|İkisi de mevcut, Ağ geçidi gerekli olanı çözümler
 |Kullanıcı Mevcut|Cihaz Gerekli|İkisi de mevcut, Ağ geçidi gerekli olanı çözümler (Gerekli ve Kullanılabilir)
 |Kullanıcı Mevcut|Cihaz Kaldır|İkisi de mevcut, Ağ geçidi Kullanılabilir olanı çözümler.<br>Uygulama, Şirket Portalında görüntülenir.<br>Uygulama zaten yüklüyse (önceki amacıyla gerekli uygulama olarak) kaldırılır.<br>Ancak kullanıcı şirket portalından yüklemeye tıklarsa uygulama yüklenir ve kaldırma amacı yerine getirilmez.|
 |Kullanıcı Mevcut Değil|Cihaz Gerekli|Gerekli|
@@ -105,7 +114,7 @@ Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. B
 |Kullanıcı kayıt olmadan Mevcut|Cihaz Kaldır|Kaldırma ve kayıt olmadan Mevcut.<br>Kullanıcı uygulamayı şirket portalından yüklemediyse kaldırma işlemi yerine getirilir.<br>Kullanıcı uygulamayı şirket portalından yüklerse, yüklemenin kaldırmaya göre önceliği vardır.|
 
 >[!NOTE]
->Yalnızca yönetilen iOS mağazası uygulamalarını Intune’a ekleyip Gerekli olarak atadığınızda bu uygulamalar, hem Gerekli hem de Mevcut amaçlarıyla otomatik olarak oluşturulur.
+>Yalnızca yönetilen iOS mağazası uygulamalarını Microsoft Intune’a ekleyip **Gerekli** olarak atadığınızda bu uygulamalar, hem **Gerekli** hem de **Kullanılabilir** amaçlarıyla otomatik olarak oluşturulur.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

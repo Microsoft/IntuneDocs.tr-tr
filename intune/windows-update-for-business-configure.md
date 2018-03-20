@@ -6,18 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-software-updates"></a>Yazılım güncelleştirmelerini yönetme
 
@@ -71,20 +71,21 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Güncelleştirme kademeleri oluşturma ve atama
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Yazılım Güncelleştirmeleri**’ni seçin.
-4. **Yazılım Güncelleştirmeleri** dikey penceresinde **Yönet** > **Windows 10 Güncelleştirme Kademeleri**’ni seçin.
-5. Güncelleştirme kademeleri listesinin gösterildiği dikey pencerede **Oluştur**’u seçin.
-6. **Güncelleştirme Kademesi Oluştur** dikey penceresinde güncelleştirme kademesi için bir ad ve isteğe bağlı olarak bir açıklama girin ve sonra **Ayarlar**’ı seçin.
-7. **Ayarlar** dikey penceresinde aşağıdaki bilgileri yapılandırın:
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Yazılım güncelleştirmeleri**’ni seçin.
+4. **Yazılım güncelleştirmeleri** bölmesinde **Yönet** > **Windows 10 Güncelleştirme Kademeleri**’ni seçin.
+5. Güncelleştirme kademeleri listesinin gösterildiği bölmede **Oluştur**’u seçin.
+6. **Güncelleştirme Kademesi Oluştur** bölmesinde güncelleştirme kademesi için bir ad ve isteğe bağlı olarak bir açıklama girin ve sonra **Ayarlar – Yapılandır**’ı seçin.
+7. **Ayarlar** bölmesinde aşağıdaki bilgileri yapılandırın:
     - **Bakım kanalı**: Cihazın Windows güncelleştirmelerini alacağı kanalı ayarlayın (Yarı Yıllık Kanal (Hedefli) veya Yarı Yıllık Kanal).
-    - **Microsoft güncelleştirmeleri**: Microsoft Update’ten uygulama güncelleştirmeleri için tarama yapılıp yapılmayacağını seçin.
+    - **Microsoft ürün güncelleştirmeleri**: Microsoft Update’ten uygulama güncelleştirmeleri için tarama yapılıp yapılmayacağını seçin.
     - **Windows sürücüleri**: Güncelleştirmeler sırasında Windows Update sürücülerini hariç tutmak isteyip istemediğinizi seçin.
     - **Otomatik güncelleştirme davranışı**: Tarama, indirme ve güncelleştirmeleri yükleme ile ilgili otomatik güncelleştirme davranışlarının nasıl yönetileceğini seçin. Ayrıntılı bilgi için bkz. [Güncelleştir/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Kalite güncelleştirmesi erteleme dönemi (gün)**: Kalite güncelleştirmelerinin kaç gün erteleneceğini belirtin. Bu Kalite Güncelleştirmelerini almayı yayımlanmalarından sonra 30 güne kadar erteleyebilirsiniz.  
 
     Kalite Güncelleştirmeleri, genellikle mevcut Windows işlevselliğine yönelik düzeltme ve iyileştirmelerdir. Normal olarak her ayın ilk salı günü yayımlanırlar ancak Microsoft tarafından herhangi bir zamanda yayımlanmaları mümkündür. Kullanıma sunulduktan sonra Kalite Güncelleştirmelerinin alınmasını ertelemek isteyip istemediğinizi ve ne kadar süreyle erteleyeceğinizi tanımlayabilirsiniz.
+
     - **Özellik güncelleştirmesi erteleme dönemi (gün)**: Özellik Güncelleştirmelerinin kaç gün erteleneceğini belirtin. Bu Özellik Güncelleştirmelerini almayı yayımlanmalarından sonra 180 güne kadar erteleyebilirsiniz.
 
     Özellik Güncelleştirmeleri genellikle Windows’un yeni özellikleridir. **Bakım kanalı** ayarını yapılandırmanızın ardından (Yarı Yıllık Kanal (Hedefli) veya Yarı Yıllık Kanal), Microsoft tarafından Windows Update'te kullanıma sunulduktan sonra Özellik Güncelleştirmelerinin alınmasını ertelemek isteyip istemediğinizi ve ne kadar süreyle erteleyeceğinizi tanımlayabilirsiniz.
@@ -93,13 +94,13 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
     **Bakım kanalı Yarı Yıllık Kanal olarak ayarlı ve erteleme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi Windows Update’te önce herkese açık şekilde ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. X Özellik Güncelleştirmesi, dört ay sonra nisanda Yarı Yıllık Kanal kapsamında yayımlanıyor. Cihaz, Özellik Güncelleştirmesini bu Yarı Yıllık Kanal sürümünden 30 gün sonra alır ve mayıs ayında güncelleştirilir.
 
-    - **Teslim iyileştirme**: Cihazların Windows güncelleştirmelerini indireceği yöntemi seçin. Ayrıntılar için bkz. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
-1. İşiniz bittiğinde **Tamam**’a ve sonra da **Güncelleştirme Kademesi Oluştur** dikey penceresinde **Oluştur**’a tıklayın.
+    - **Teslim iyileştirme indirme modu**: Cihazların Windows güncelleştirmelerini indireceği yöntemi seçin. Ayrıntılar için bkz. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. İşiniz bittiğinde **Tamam**’a ve sonra da **Güncelleştirme Kademesi Oluştur** bölmesinde **Oluştur**’a tıklayın.
 
 Yeni güncelleştirme kademesi, güncelleştirme kademeleri listesinde görünür.
 
 1. Kademeyi atamak için, güncelleştirme kademeleri listesinde kademeyi ve sonra <*kademe adı*> sekmesinde **Atamalar**’ı seçin.
-2. Sonraki sekmede **Grup Seç**‘i ve sonra bu kademeyi atamak istediğiniz grupları seçin.
+2. Sonraki sekmede **Dahil edilecek grupları seçin** öğesini ve sonra bu kademeyi atamak istediğiniz grupları seçin.
 3. İşiniz bittiğinde **Seç**’i seçerek atama işlemini tamamlayın.
 
 ## <a name="update-compliance-reporting"></a>Güncelleştirme uyumluluğunu raporlama
@@ -108,22 +109,21 @@ Güncelleştirme uyumluluğunu, Intune’da veya Operations Management Suite’t
 ### <a name="review-update-compliance-in-intune"></a>Intune’da güncelleştirme uyumluluğunu gözden geçirme 
 <!-- 1352223 -->
 Yapılandırdığınız Windows 10 güncelleştirme halkalarının dağıtım durumunu görüntülemek için bir ilke raporunu gözden geçirin. 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Yazılım Güncelleştirmeleri**’ni seçin.
-4. **Yazılım Güncelleştirmeleri** dikey penceresinde **Genel Bakış**’ı seçin. Burada, atadığınız tüm güncelleştirme halkalarının durumu hakkında genel bilgileri bulabilirsiniz.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Yazılım güncelleştirmeleri**’ni seçin.
+4. **Yazılım güncelleştirmeleri** bölmesinde **Genel Bakış**’ı seçin. Burada, atadığınız tüm güncelleştirme halkalarının durumu hakkında genel bilgileri bulabilirsiniz.
 5. Aşağıdaki raporlardan birini açın: 
      
    **Tüm dağıtım halkaları için:**
-   1. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları** dikey penceresinde. 
+   1. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları** bölmesinde. 
    2. **İzle** bölümünde **Uygulama başına halka dağıtım durumu**’nu seçin.
                    
    **Belirli dağıtım halkaları için:** 
-   1. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları** dikey penceresinde, gözden geçirmek istediğiniz dağıtım halkasını seçin.
+   1. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları** bölmesinde, gözden geçirmek istediğiniz dağıtım kademesini seçin.
    2. **İzle** bölümünde, güncelleştirme halkası hakkında ayrıntılı bilgileri görüntülemek için aşağıdaki raporlardan birini seçin:
-      - **Cihazlar için güncelleştirme halkası dağıtımı**
-      - **Kullanıcılar için güncelleştirme halkası dağıtımı**
-      - **Ayar başına dağıtım durumu**
+      - **Cihaz durumu**
+      - **Kullanıcı durumu**
 
 ### <a name="review-update-compliance-using-oms"></a>OMS kullanarak güncelleştirme uyumluluğunu gözden geçirme
 Windows 10 güncelleştirme dağıtımlarını, Operations Management Suite’teki (OMS) Güncelleştirme Uyumluluğu adlı ücretsiz bir çözümü kullanarak izleyebilirsiniz. Ayrıntılı bilgi için bkz. [Windows Güncelleştirmelerini Güncelleştirme Uyumluluğu ile İzleme](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Bu çözümü kullandığınızda, güncelleştirme uyumluluğunu raporlamak istediğiniz Intune tarafından yönetilen herhangi bir Windows 10 cihazınıza bir ticari kimlik dağıtabilirsiniz.
@@ -136,19 +136,19 @@ Ticari kimliği yapılandırmaya ilişkin OMA-URI (büyük/küçük harfe duyarl
 
 - **Ayar Adı**: Windows Analytics Ticari Kimliği
 - **Ayar Açıklaması**: Windows Analytics çözümleri için ticari kimliği yapılandırma
-- **Veri Türü:** Dize
 - **OMA-URI** (büyük/küçük harfe duyarlı): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **Veri Türü:** Dize
 - **Değer**: <*OMS çalışma alanınızdaki Windows Telemetri sekmesinde gösterilen GUID’yi kullanın*>
 
 ![Tanılama ve kullanım verileri için Windows ayarı](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Güncelleştirmeleri duraklatma
 Bir cihazın Özellik Güncelleştirmeleri veya Kalite Güncelleştirmeleri almasını en çok 35 günlük bir süre boyunca duraklatabilirsiniz. En fazla gün sayısı kadar bir süre geçtikten sonra duraklatma işlevi otomatik olarak sona erer ve cihaz, kullanılabilecek güncelleştirmeleri bulmak için Windows Güncelleştirmelerini tarar. Bu taramanın ardından güncelleştirmeleri yeniden duraklatabilirsiniz.
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Yazılım Güncelleştirmeleri**’ni seçin.
-4. **Yazılım Güncelleştirmeleri** dikey penceresinde **Yönet** > **Windows 10 Güncelleştirme Kademeleri**’ni seçin.
-5. Güncelleştirme kademeleri listesinin gösterildiği dikey pencerede, duraklatmak istediğiniz kademeyi seçin ve sonra duraklatmak istediğiniz güncelleştirme türünü bağlı olarak **...** > **Kaliteyi Duraklat** > veya **Özelliği Duraklat**’ı seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Yazılım güncelleştirmeleri**’ni seçin.
+4. **Yazılım güncelleştirmeleri** bölmesinde **Yönet** > **Windows 10 Güncelleştirme Kademeleri**’ni seçin.
+5. Güncelleştirme kademeleri listesinin gösterildiği bölmede, duraklatmak istediğiniz kademeyi seçin ve sonra duraklatmak istediğiniz güncelleştirme türünü bağlı olarak **...** > **Kaliteyi Duraklat** > veya **Özelliği Duraklat**’ı seçin.
 
 > [!IMPORTANT]
 > Bir duraklatma komutu verdiğinizde, cihazlar bu komutu hizmete bir sonraki giriş yaptıkları sırada alır. Bu nedenle, hizmete giriş yapmadan önce, zamanlanmış bir güncelleştirmenin yüklenmesi mümkündür.

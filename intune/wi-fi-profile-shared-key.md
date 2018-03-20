@@ -1,12 +1,11 @@
 ---
-title: "Önceden paylaşılan anahtar ile Wi-Fi profili oluşturma"
-titleSuffix: Microsoft Intune
-description: "Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için bir Intune özel profili kullanın."
+title: "Önceden paylaşılan anahtar ile WiFi profili oluşturma - Microsoft Intune - Azure | Microsoft Docs"
+description: "Önceden paylaşılan bir anahtarla Wi-Fi profili oluşturmak için özel bir profil kullanma ve Microsoft Intune'da Android, Windows ve EAP tabanlı Wi-Fi profilleri için örnek XML kodu alma"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: mandia
+ms.author: MandiOhlinger
 manager: dougeby
-ms.date: 11/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,63 +14,64 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8229ac82e6854d75f569b7bbf04dd2f5e14856c7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel cihaz profili kullanma
+# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel cihaz profili kullanma - Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Burada, Intune'un **Özel cihaz profillerini**, önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için nasıl kullanabileceğiniz açıklanır. Bu konuda, bir EAP tabanlı Wi-Fi profili oluşturmaya bir örnek de yer almaktadır.
+Önceden paylaşılan anahtarlar (PSK), genellikle WiFi ağlarında ya da kablosuz LAN’larda kullanıcıların kimliklerini doğrulamak için kullanılır. Intune ile önceden paylaşılan bir anahtar kullanarak bir WiFi profili oluşturabilirsiniz. Profili oluşturmak için Intune’daki **Özel cihaz profilleri** özelliğini kullanın. Bu makalede ayrıca, EAP tabanlı bir Wi-Fi profilinin nasıl oluşturulacağına ilişkin bazı örnekler yer alır.
 
-> [!NOTE]
--   Aşağıda anlatıldığı gibi kodu söz konusu ağa bağlanan bir bilgisayardan kopyalamak size daha kolay gelebilir.
-- Android için, Johnathon Biersack tarafından sağlanan bu [Android PSK Oluşturucu](http://intunepskgenerator.johnathonb.com/)’yu kullanma seçeneğiniz de vardır.
--   Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
--  iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın. Alternatif olarak, Johnathon Biersack tarafından sağlanan bu [iOS PSK Mobile Config Oluşturucu](http://intunepskgenerator.johnathonb.com/)’yu kullanın.
+## <a name="before-you-begin"></a>Başlamadan önce
 
+- Kodu, bu makalenin sonraki bölümlerinde açıklandığı gibi, o ağa bağlanan bir bilgisayardan kopyalamak daha kolay olabilir.
+- Android için [Android PSK Oluşturucu](http://intunepskgenerator.johnathonb.com/) da kullanabilirsiniz.
+- Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
+- iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın. Ya da [iOS PSK Mobil Yapılandırma Oluşturucu](http://intunepskgenerator.johnathonb.com/) kullanın.
 
-1.  Android veya Windows için önceden paylaşılan anahtarla bir Wi-Fi profili oluşturmak veya EAP tabanlı bir Wi-Fi profili oluşturmak için, cihaz profilini oluştururken bu cihaz platformu için bir Wi-Fi profili yerine **Özel**’i seçin.
+## <a name="create-a-custom-profile"></a>Özel profil oluşturma
+Android, Windows veya EAP tabanlı bir Wi-Fi profili için önceden paylaşılan bir anahtarla özel bir profil oluşturabilirsiniz. Profili Azure portalını kullanarak oluşturmak için bkz. [Özel cihaz ayarları oluşturma](custom-settings-configure.md). Cihaz profilini oluşturduğunuzda, cihaz platformunuz için **Özel**’i seçin. Wi-Fi profilini seçmeyin. Özeli seçtiğinizde, aşağıdakileri yaptığınızdan emin olun: 
 
-2.  Bir ad ve açıklama sağlayın.
-3.  Yeni bir OMA-URI ayarı ekleyin:
+1. Profil için bir ad ve açıklama girin.
+2. Aşağıdaki özelliklere sahip yeni bir OMA-URI ayarı ekleyin: 
 
-   a.   Bu Wi-Fi ağ ayarı için bir ad girin.
+   a. Bu Wi-Fi ağ ayarı için bir ad girin
 
-   b.   OMA-URI ayarı için bir açıklama girin veya boş bırakın.
+   b. (İsteğe bağlı) OMA-URI ayarı için bir açıklama girin veya boş bırakın
 
-   c.   **Veri Türü**: **String** olarak ayarlayın.
+   c. **Veri Türü**’nü **Dize** olarak ayarlayın
 
-   d.   **OMA-URI**:
+   d. **OMA-URI**:
 
     - **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
     > [!NOTE]
-Başına nokta karakterini eklediğinizden emin olun.
+    > Başına nokta karakterini eklediğinizden emin olun.
 
-    SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin, şunu girin: `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Değer Alanı**, XML kodunuzu yapıştırdığınız yerdir. Bir örneğe bakalım. Her değer, ağ ayarlarınıza uyarlanmış olmalıdır. Bazı işaretçiler için kodun açıklamalar bölümüne bakın.
-4. **Tamam**’ı seçin, ilkeyi kaydedin ve atayın.
+  e. **Değer Alanı**, XML kodunuzu yapıştırdığınız yerdir. Bu makaledeki örneklere bakın. Her bir değeri ağ ayarlarınıza uyacak şekilde güncelleştirin. Kodun açıklamalar bölümü bazı işaretçiler içerir.
+3. **Tamam**’ı seçin, ilkeyi kaydedin ve atayın.
 
     > [!NOTE]
     > Bu ilke yalnızca kullanıcı gruplarına atabilir.
 
-Her cihaz daha sonra denetlediğinde, ilke uygulanır ve cihazda bir Wi-Fi profili oluşturulur. Cihaz ağa otomatik olarak bağlanabilecektir.
+Cihazların bir sonraki iadesinde, ilke uygulanır ve cihazda bir Wi-Fi profili oluşturulur. Cihaz daha sonra ağa otomatik olarak bağlanabilir.
 
-## <a name="android-or-windows-wi-fi-profile"></a>Android veya Windows Wi-Fi profili
+## <a name="android-or-windows-wi-fi-profile-example"></a>Android veya Windows Wi-Fi profili örneği
 
-Bir Android veya Windows Wi-Fi profili için XML kodu örneği aşağıdaki verilmiştir:
+Aşağıdaki örnek bir Android veya Windows Wi-Fi profili için XML kodu örneği içerir. 
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>`, **false** olarak ayarlanmalıdır, çünkü **true** ayarı cihazın şifreli bir parola beklemesine ve bunun şifresini çözmeye çalışmasına neden olur; bunun sonucunda bağlantı başarısız olabilir.
+> `<protected>false</protected>`, **false** olarak ayarlanmalıdır. **true** olarak ayarlandığında, cihazın şifreli bir parola beklemesine ve bunun şifresini çözmeye çalışmasına neden olur; bu da başarısız bağlantıyla sonuçlanabilir.
 >
 >  `<hex>53534944</hex>`, `<name><SSID of wifi profile></name>` onaltılı değerine ayarlanmalıdır.
->  Windows 10 cihazları yanlışlıkla *0x87D1FDE8 Düzeltme başarısız* hatasını döndürebilir, ancak yine de profille hazırlanır.
+>  Windows 10 cihazları yanlışlıkla *0x87D1FDE8 Düzeltme başarısız* hatasını döndürebilir, ancak cihaz yine de profili içerir.
 
 ```
 <!--
@@ -115,8 +115,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 </WLANProfile>
 ```
 
-## <a name="eap-based-wi-fi-profile"></a>EAP tabanlı Wi-Fi profili
-Bir EAP tabanlı Wi-Fi profili için bir XML kodu örneği aşağıdaki verilmiştir:
+## <a name="eap-based-wi-fi-profile-example"></a>EAP tabanlı Wi-Fi profili örneği
+Aşağıdaki örnek bir EAP tabanlı Wi-Fi profili için XML kodu örneği içerir:
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -199,16 +199,18 @@ Bir EAP tabanlı Wi-Fi profili için bir XML kodu örneği aşağıdaki verilmi�
 ```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>XML dosyasını mevcut bir Wi-Fi bağlantısından oluşturun
-Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
-1. Kablosuz ağa bağlanmış veya bir kablosuz ağa yakın zamanda bağlanmış bir bilgisayarda şu klasörü açın: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid.
+Aşağıdaki adımları kullanarak mevcut bir Wi-Fi bağlantısından XML dosyası da oluşturabilirsiniz: 
 
-    Doğru olanı bulmak için her profili aramanız gerekeceğinden, çok sayıda kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir.
-3.     Doğru ada sahip olanı bulmak üzere XML dosyalarını arayın.
-4.     Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının Veri alanına yapıştırın.
+1. Kablosuz ağa bağlı veya yakın bir zamanda bağlanmış bir bilgisayarda, `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` klasörünü açın.
+
+  Birçok kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir. Aksi takdirde, doğru olanı bulmak için her profili aramanız gerekebilir.
+
+2. Doğru ada sahip dosyayı bulmak için XML dosyalarını arayın.
+3. Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının **Veri** alanına yapıştırın.
 
 ## <a name="best-practices"></a>En iyi uygulamalar
-PSK ile bir Wi-Fi profili dağıtmadan önce cihazın uç noktaya doğrudan bağlanabildiğini doğrulayın.
+- PSK ile bir Wi-Fi profili dağıtmadan önce cihazın uç noktaya doğrudan bağlanabildiğini doğrulayın.
 
-Anahtarları (parolaları) döndürürken kesintiler olabilir, dağıtımları buna göre planlayın. Yeni Wi-Fi profillerini çalışma saatleri dışında itmeyi düşünebilirsiniz. Ayrıca bağlantının bu durumdan etkilenebileceği konusunda kullanıcıları uyarın.
+- Anahtarları (parola veya şifreler) döndürürken kesintiler olabilir, dağıtımlarınızı buna göre planlayın. Yeni Wi-Fi profillerini çalışma saatleri dışında itmeyi düşünebilirsiniz. Ayrıca bağlantının bu durumdan etkilenebileceği konusunda kullanıcıları uyarın.
 
-Sorunsuz bir geçiş deneyimi için son kullanıcının cihazında alternatif bir İnternet bağlantısı olduğundan emin olun. Intune ile iletişim kurmak için son kullanıcının örneğin Konuk WiFi ağına (veya diğer bir WiFi ağına) geri dönebiliyor olması veya hücresel bağlantısı olması gerekir. Bu, cihazda şirket WiFi Profili güncelleştirilirken kullanıcının ilke güncelleştirmeleri almaya devam etmesini sağlar.
+- Sorunsuz bir geçiş için son kullanıcının cihazında alternatif bir İnternet bağlantısı olduğundan emin olun. Intune ile iletişim kurmak için son kullanıcının örneğin Konuk WiFi ağına (veya diğer bir WiFi ağına) geri dönebiliyor olması veya hücresel bağlantısı olması gerekir. Bu ek bağlantı, cihazda şirket WiFi Profili güncelleştirilirken kullanıcının ilke güncelleştirmeleri almasını sağlar.

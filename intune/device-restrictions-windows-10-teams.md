@@ -1,29 +1,29 @@
 ---
-title: "Windows 10 Team için Intune cihaz kısıtlamaları"
-titlesuffix: Azure portal
-description: "Windows 10 Team cihazları için sağlanan cihaz kısıtlamalarını öğrenin.\""
+title: "Windows 10 Team için Windows Intune cihaz kısıtlamaları"
+titlesuffix: 
+description: "Windows 10 Team çalıştıran cihazlar için sağlanan cihaz kısıtlamaları hakkında bilgi edinin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3648f8b273f666d1898226f3da8580e55a6bc6f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows 10 Team cihaz kısıtlama ayarları
+# <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 Team cihaz kısıtlama ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Bu makalede, Windows 10 Team çalıştıran cihazlar için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları gösterilir.
 
 
 ## <a name="apps-and-experience"></a>Uygulamalar ve deneyim
@@ -47,7 +47,7 @@ Azure Operasyonel Öngörüler'e bağlanmak için bir **Çalışma Alanı Kimli�
 
 - **Kablosuz projeksiyon için PIN** - Cihazın kablosuz projeksiyon özelliklerini kullanabilmek için PIN girmenin gerekli olup olmadığını belirtir.
 - **Miracast kablosuz projeksiyon** - Windows 10 Team cihazlarının projeksiyon için Miracast özellikli cihazları kullanmasına izin vermek istiyorsanız bu seçeneği etkinleştirin.
-- **Miracast kablosuz yansıtma kanalı** - Bağlantı kurmak için kullanılacak Miracast kanalını seçin.
+- **Miracast kablosuz yansıtma kanalı** - Bağlantı kurmak için kullanılan Miracast kanalını seçin.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

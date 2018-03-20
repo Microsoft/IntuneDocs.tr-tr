@@ -1,12 +1,12 @@
 ---
 title: Android for Work cihazlara uygulama atama
 titlesuffix: Microsoft Intune
-description: "Google Play for Work Store’dan Android for Work cihazlarına uygulama eşitlemeyi ve atamayı öğrenin.\""
+description: "Google Play for Work Store’dan Android for Work cihazlarına uygulama eşitlemeyi ve atamayı öğrenin."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Intune ile Android for Work cihazlara uygulama atama
 
@@ -38,36 +38,35 @@ Intune ve Android for Work’ü Azure portalının **Cihaz kaydı** iş yüküyl
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Google Play for Work mağazasından uygulama eşitleme
 
 1. [Google Play for Work mağazasına](https://play.google.com/work) gidin. Intune ve Android for Work arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın.
-2. Intune kullanarak atamak istediğiniz uygulamayı mağazada arayın.
-3. Seçtiğiniz uygulamanın sayfasında **Onayla**’yı seçin. Bu örnekte, Microsoft Excel uygulamasını seçtiniz.<br>
-  ![Uygulama onaylama örneği](media/approve.png)
-4. Uygulamada bir pencere açılır ve çeşitli işlemler gerçekleştirmek için izin vermenizi ister. Devam etmek için **Onayla**'yı seçin.<br>
-  ![Uygulama izinlerini onaylama örneği](media/approve-app-permissions.png)
-5. Uygulama onaylanır ve BT yönetim konsolunda görüntülenir.
+2. Intune kullanarak atamak istediğiniz uygulamayı mağazada arayın ve seçin.
+3. Uygulamanın göründüğü sayfada **Onayla**’yı seçin. Aşağıdaki örneklerde Microsoft Excel uygulaması seçilmiştir.</br>
 
-## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Google Play for Work mağazasından bir iş kolu uygulaması yayımlama ve eşitleme
+    ![Örnek - Google Play for Work mağazasında uygulama onaylama](media/approve.png)</br>
+    
+  Uygulamada bir pencere açılır ve çeşitli işlemler gerçekleştirmek için izin vermenizi ister. 
 
-1. Google Play Geliştirici Konsolu’na gidin, [play.google.com/apps/publish](https://play.google.com/apps/publish).
-2. Intune ve Android for Work arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın. İlk kez oturum açıyorsanız, Google Geliştirici programının üyesi olmak için kaydolmanız ve bir ücret ödemeniz gerekir.
-3. Konsolda, **Yeni uygulama ekle**’yi seçin.
-4. Uygulamanızı karşıya yüklemek ve hakkında bilgi sağlamak, Google Play mağazasında herhangi bir uygulama yayımlamak ile aynı şekilde yapılır. Ancak, **Bu uygulama yalnızca kuruluşum tarafından kullanılabilsin (<*kuruluş adı*>)** ayarını seçmeniz gerekir:<br>
-  ![Uygulamayı yalnızca kuruluşunuz tarafından kullanılabilir hale getirme seçeneği](media/restrict.png)<br>
-Bu işlem, uygulamanın yalnızca kuruluşunuz tarafından kullanılabilmesini, genel Google Play mağazasında bulunmamasını sağlar.
-Android uygulamalarını karşıya yükleme ve yayımlama hakkında daha fazla bilgi için bkz. [Google Geliştirici Konsolu Yardımı](https://support.google.com/googleplay/android-developer/answer/113469).
-5. Uygulamanızı yayımladıktan sonra, [Google Play for Work mağazası](https://play.google.com/work)’na gidin. Intune ve Android for Work arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın.
-6. Mağazanın **Uygulamalar** düğümünde, yayımladığınız uygulamayı görebildiğinizi onaylayın. Uygulama, Intune ile eşitlenmesi için otomatik olarak onaylanır.
+4. Uygulama izinlerini kabul edip devam etmek için **Onayla**’yı seçin.</br>
 
-## <a name="assign-an-android-for-work-app"></a>Android for Work uygulamasını atama
+    ![Örnek - Uygulama izinlerini onaylama](media/approve-app-permissions.png)
+
+5. Yeni uygulama izni isteklerinin nasıl işleneceğini seçin. Ardından, yeni uygulama izni isteklerinin nasıl işleneceğini kaydetmek için **Kaydet**’i seçin.</br>
+
+    ![Örnek - Yeni uygulama izni isteklerini kaydetme](media/approve-app-settings.png)</br>
+
+    Uygulama onaylanır ve BT yönetim konsolunda görüntülenir. Artık, [Android for Work uygulamasını Intune ile eşitleyebilirsiniz](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+
+## <a name="sync-an-android-for-work-app-with-intune"></a>Bir Android for Work uygulamasını Intune ile eşitleme
 
 Mağazadan bir uygulamayı onayladıysanız ve **Mobil uygulamalar** iş yükünün **Lisanslı uygulamalar** düğümünde göremiyorsanız, aşağıdaki gibi bir anında eşitleme zorlayın:
 
-1. Azure Portal’da oturum açın.
-2. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-3. **Mobil uygulamalar** iş yükünde **Kurulum** > **Android for Work** öğesini seçin.
-4. Android for Work dikey penceresinde **Şimdi Eşitle**’yi seçin.
-5. Bu sayfa son eşitlemenin saatini ve durumunu da gösterir.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
+4. **Mobil uygulamalar** iş yükünde, **Kurulum** bölümünden **Android for Work**’ü seçin.
+5. Android for Work bölmesinde, **Eşitle**’yi seçin. Bu sayfa son eşitlemenin zamanını ve durumunu güncelleştirir.
+6. **Mobil uygulamalar** iş yükünde, kullanılabilir yeni Android for Work uygulamasını görmek için **Uygulamalar**’ı seçin.
 
-**Mobil uygulamalar** iş yükünün **Lisanslı uygulamalar** düğümünde görüntülendiğinde, uygulamayı, [diğer herhangi bir uygulamayı atadığınız gibi atayabilirsiniz](/intune-azure/manage-apps/deploy-apps). Uygulamayı yalnızca kullanıcı gruplarına atayabilirsiniz.
+Uygulama, **Mobil uygulamalar** iş yükünün **Uygulama lisansları** düğümünde göründüğünde, bunu [diğer herhangi bir uygulamayı atadığınız gibi atayabilirsiniz](/intune-azure/manage-apps/deploy-apps). Uygulamayı yalnızca kullanıcı gruplarına atayabilirsiniz.
 
 Uygulama atandıktan sonra, hedeflenen cihazlara yüklenir. Cihazın kullanıcısından yüklemeyi onaylaması istenmez.
 
@@ -86,5 +85,21 @@ Yeni izinleri denetlemek için yönetilen Google Play konsolunu düzenli aralık
 
 Alternatif olarak, Google Play'i uygulama izinlerini uygulama başına otomatik olarak yeniden onaylamak üzere yapılandırabilirsiniz. 
 
+## <a name="working-with-a-line-of-business-app-from-the-google-play-for-work-store"></a>Google Play for Work mağazasından bir iş kolu uygulaması ile çalışma
 
+1. Google Play Geliştirici Konsolu’na gidin, [play.google.com/apps/publish](https://play.google.com/apps/publish).
+2. Intune ve Android for Work arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın. İlk kez oturum açıyorsanız, Google Geliştirici programının üyesi olmak için kaydolmanız ve bir ücret ödemeniz gerekir.
+3. Konsolda, **Yeni uygulama ekle**’yi seçin.
+4. Uygulamanızı karşıya yüklemek ve hakkında bilgi sağlamak, Google Play mağazasında herhangi bir uygulama yayımlamak ile aynı şekilde yapılır. Ancak, **Bu uygulama yalnızca kuruluşum tarafından kullanılabilsin (<*kuruluş adı*>)** ayarını seçmeniz gerekir:</br>
+
+    ![Uygulamayı yalnızca kuruluşunuz tarafından kullanılabilir hale getirme seçeneği](media/restrict.png)</br>
+
+Bu işlem, uygulamanın yalnızca kuruluşunuz tarafından kullanılabilmesini, genel Google Play mağazasında bulunmamasını sağlar.
+Android uygulamalarını karşıya yükleme ve yayımlama hakkında daha fazla bilgi için bkz. [Google Geliştirici Konsolu Yardımı](https://support.google.com/googleplay/android-developer/answer/113469).
+5. Uygulamanızı yayımladıktan sonra, [Google Play for Work mağazası](https://play.google.com/work)’na gidin. Intune ve Android for Work arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın.
+6. Mağazanın **Uygulamalar** düğümünde, yayımladığınız uygulamayı görebildiğinizi onaylayın. Uygulama, Intune ile eşitlenmesi için otomatik olarak onaylanır.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [Uygulamaları gruplara ekleme](apps-deploy.md)
 

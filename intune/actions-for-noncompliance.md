@@ -1,105 +1,87 @@
 ---
-title: "Intune ile uyumsuzluğa yönelik eylemler"
-titleSuffix: Intune on Azure
-description: "Intune ile uyumsuzluğa yönelik eylemler oluşturmayı öğrenin"
+title: Microsoft Intune - Azure ile uyumsuzluk iletisi ve eylemleri | Microsoft Docs
+description: "Uyumlu olmayan cihazlara gönderilmek üzere bir bildirim e-postası oluşturun. Cihaz uyumlu değil olarak işaretlendikten sonraki eylemleri ekleyin. Örneğin uyumluluğu sağlamak için bir yetkisiz kullanım süresi ekleyebilir veya cihaz uyumlu duruma gelene kadar erişimi engellemek için bir zamanlama oluşturabilirsiniz. Bunu yapmak için Azure'da Microsoft Intune’u kullanın."
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/05/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 573a8b000e63576f3dd3bae1b6e8e8c47733f6bf
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="automate-actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemleri otomatikleştirme
+# <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme - Intune
 
-**Uyumsuzluğa yönelik eylemler**, uyumluluk ilkesi ölçütlerini sağlamayan cihazlara uygulanacak zamana göre sıralı bir dizi eylem yapılandırmanıza olanak sağlar. Bir cihazın uyumluluk ilkesi ölçütlerini sağlamadığı algılandığında, Intune varsayılan olarak bu cihazı derhal uyumsuz olarak işaretler ve Azure AD Koşullu Erişim de cihazı engeller. **Uyumsuzluğa yönelik eylemler**, uyumlu olmayan bir cihazla ilgili ne yapılması gerektiğine karar verirken daha fazla esneklik sağlar. Örneğin, cihazı hemen engellememeye karar verebilir ve kullanıcıya uyumlu hale gelmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
+Zamana göre sıralanmış bir eylem dizisi yapılandıran bir **Uyumsuzluk eylemleri** özelliği vardır. Bu eylemler, uyumluluk ilkenize uymayan cihazlara uygulanır. 
+
+## <a name="overview"></a>Genel bakış
+Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Ardından Azure Active Directory (AD) [koşullu erişimi](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) cihazı engeller. Cihaz uyumlu olmadığında, **uyumsuzluk eylemleri** size karar verme esnekliği de sağlar. Örneğin, cihazı hemen engellemeyebilir ve kullanıcıya uyumlu hale gelmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
 
 İki tür eylem vardır:
 
--   **Son kullanıcıları e-posta ile bilgilendir**: Son kullanıcıya göndermeden önce e-posta bildiriminizi özelleştirebilirsiniz. Intune, şirket logosu da dahil olmak üzere alıcılar, konu ve ileti gövdesi ve kişi bilgilerini özelleştirmenize olanak sağlar.
+- **Son kullanıcıları e-posta ile bilgilendir**: Son kullanıcıya göndermeden önce e-posta bildirimini özelleştirin. Şirket logosu da dahil olmak üzere alıcılar, konu ve ileti gövdesi ve kişi bilgilerini özelleştirebilirsiniz.
 
     Buna ek olarak Intune, uyumsuz cihaz hakkındaki ayrıntıları da e-posta bildiriminde gösterir.
 
--   **Cihazı uyumsuz olarak işaretle**: Cihazın uyumsuz olarak işaretleneceği gün sayısını belirleyebilirsiniz. Hemen gerçekleştirilecek eylemi yapılandırabilir veya kullanıcıya cihazını uyumluluk ilkelerinizle uyumlu hale getirmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
+- **Cihazı uyumsuz olarak işaretle**: Cihazın kaç gün sonra uyumsuz olarak işaretleneceğini gösteren bir zamanlama (gün sayısı cinsinden) oluşturun. Hemen gerçekleştirilecek eylemi yapılandırabilir veya kullanıcıya uyumlu hale getirmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Uyumsuzluğa yönelik eylem ayarlanabilmesi için en az bir adet cihaz uyumluluk ilkesi oluşturulmuş olmalıdır. 
+- Uyumsuzluk eylemlerini ayarlamak için, en az bir cihaz uyumluluk ilkesine ihtiyacınız vardır. Cihaz uyumluluk ilkesi oluşturmak için aşağıdaki platformlara bakın:
 
-- Aşağıdaki platformlar için cihaz uyumluluk ilkesi oluşturmayı öğrenin:
+  - [Android](compliance-policy-create-android.md)
+  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Android](compliance-policy-create-ios.md)
+  - [macOS](compliance-policy-create-mac-os.md)
+  - [Windows](compliance-policy-create-windows.md)
 
-    -   [Android](compliance-policy-create-android.md)
-    -   [Android for Work](compliance-policy-create-android-for-work.md)
-    -   [Android](compliance-policy-create-ios.md)
-    -   [macOS](compliance-policy-create-mac-os.md)
-    -   [Windows](compliance-policy-create-windows.md)
+- Cihazların şirket kaynaklarına erişimini engellemek için cihaz uyumluluk ilkeleri kullanıldığında, Azure AD koşullu erişiminin ayarlanmış olması gerekir. Yönergeler için [Azure Active Directory'de koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) konusuna bakın.
 
-Cihaz uyumluluk ilkelerini kullanarak cihazların kurumsal kaynakları kullanmasını engellemeyi planlıyorsanız Azure AD koşullu erişiminin ayarlanıp hazırlanmış olması gerekir. 
+- Bildirim iletisi şablonu oluşturulmalıdır. Kullanıcılarınıza e-posta göndermek için, bu şablon kullanılarak uyumsuzluk eylemleri oluşturulur.
 
-- [EMS koşullu erişiminin kurulumunu yapmayı](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access) öğrenin.
+## <a name="create-a-notification-message-template"></a>Bildirim iletisi şablonu oluşturma
 
-Ek olarak, bir bildirim iletisi şablonu oluşturulmuş olmalıdır. Bildirim iletisi şablonu, uyumsuzluğa yönelik eylem oluşturma sürecinde kullanıcılarınıza e-posta göndermek için kullanılır.
+1. [Azure portalında](https://portal.azure.com) Intune kimlik bilgilerinizle oturum açın. 
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+3. **Cihaz uyumluluğu**'nu ve ardından **Bildirimler**'i seçin. 
+4. **Bildirim oluştur**’u seçin ve ardından aşağıdaki bilgileri girin:
 
-### <a name="to-create-a-notification-message-template"></a>Bildirim iletisi şablonu oluşturmak için
+  - Ad
+  - Konu
+  - İleti
+  - E-posta üst bilgisi – Şirket logosunu ekleyin
+  - E-posta alt bilgisi – Şirket adını ekleyin
+  - E-posta alt bilgisi – İletişim bilgilerini ekleyin
 
-1. [Azure portalında Intune](https://portal.azure.com)’a gidin ve Intune kimlik bilgilerinizle oturum açın.
-2. Soldaki menüden **Daha fazla hizmet**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
-3. **Intune**’u seçin
-4. **Cihaz uyumluluğu**’nu ve daha sonra **Yönet** bölümü altında **Bildirimler**‘i seçin.
-5. **Bildirim oluştur**’u seçin ve aşağıdaki bilgileri girin:
-    - Ad
-    - Konu
-    - İleti
-    - E-posta üst bilgisi – Şirket logosunu ekle
-    - E-posta alt bilgisi – Şirket adını ekle
-    - E-posta alt bilgisi – İletişim bilgilerini ekle
-
-5. **Bildirim oluştur**’u seçin ve aşağıdaki bilgileri girin:
-
-    a. Ad
-
-    b. Konu
-
-    c.  İleti
-
-    d. e-posta üst bilgisi – Şirket logosunu ekleyin
-
-    e. e-posta alt bilgisi – Şirket adını ekleyin
-
-    f. e-posta alt bilgisi – İletişim bilgilerini ekleyin
-
-![bildirim iletisi şablonu örneği](./media/actionsfornoncompliance-1.PNG)
+  ![Intune'da örnek uyumluluk bildirimi iletisi](./media/actionsfornoncompliance-1.PNG)
 
 Bilgileri ekledikten sonra **Oluştur**’u seçin. Bildirim iletisi şablonu kullanıma hazırdır.
 
 > [!NOTE]
 > Daha önceden oluşturulmuş bir Bildirim şablonunu da düzenleyebilirsiniz.
 
-## <a name="to-create-actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylem oluşturmak için
+## <a name="add-actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemler ekleme
 
-> [!TIP]
-> Intune, varsayılan olarak uyumsuzluk eylemleri bölümünde önceden tanımlı bir eylem sağlar. Bu eylem, cihaz uyumluluk ilkesi ölçütlerinize uymadığı algılanan cihazı uyumsuz olarak işaretler. Algılamanın ardından cihazın ne kadar bir süre sonra uyumsuz olarak işaretleneceğini ayarlayabilirsiniz. Eylem kaldırılamaz.
+Varsayılan olarak, Intune uyumluluğa yönelik eylemi otomatik olarak oluşturur. Cihazlardan birin uyumluluk ilkenize uymadığında, bu eylem cihazı uyumsuz olarak işaretler. Cihazın ne kadar süreyle uyumsuz olarak işaretleneceğini ayarlayabilirsiniz. Bu eylem kaldırılamaz.
 
-Yeni bir cihaz uyumluluk ilkesi oluştururken veya mevcut cihaz uyumluluk ilkesini düzenleyerek bir eylem ekleyebilirsiniz.
+Yeni bir uyumluluk ilkesi oluştururken veya mevcut uyumluluk ilkesini düzenlerken eylem ekleyebilirsiniz. 
 
-1.  Intune iş yükünde **Cihaz uyumluluk ilkeleri** dikey penceresinden **Yönet** bölümünün altındaki **İlkeler**’i seçin.
+1. [Azure portalında](https://portal.azure.com) **Microsoft Intune**'u açın ve **Cihaz uyumluluğu**'nu seçin.
+2. **İlkeler**'i seçin, ilkelerinizden birini seçin ve sonra da **Özellikler**'i seçin. 
 
-2.  Bir cihaz uyumluluk ilkesine tıklayıp seçin, daha sonra **Yönet** bölümünün altındaki **Özellikler**’i seçin.
+  Henüz bir ilkeniz yok mu? [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) veya başka bir platform ilkesi oluşturun.
 
-3.  **Cihaz uyumluluk ilkesi özellikleri** dikey penceresi açılır. **Uyumsuzluğa yönelik eylemler**’i seçin.
+3. **Uyumsuzluk eylemleri**'ni seçin ve ardından **Ekle**'yi seçerek eylem parametrelerini girin. Önceden oluşturulmuş ileti şablonunu seçebilir, ek alıcılar ekleyebilir ve yetkisiz kullanım süresi zaman çizelgesini güncelleştirebilirsiniz. Zaman çizelgesinde gün sayısını (0 - 365 arası) girebilir ve daha sonra koşullu erişim ilkelerini zorlayabilirsiniz. Gün sayısı olarak **0** girerseniz, koşullu erişim şirket kaynaklarına erişimi **hemen** engeller.
 
-4.  **Uyumsuzluğa yönelik eylemler** dikey penceresi açılır. Eylem parametrelerini belirlemek için **Ekle**’yi seçin. Önceden oluşturulmuş ileti şablonunu, ek alıcıları ve mehil süresi zaman çizelgesini seçebilirsiniz. Zaman çizelgesinde gün sayısını (0 ila 365) belirtebilir ve daha sonra koşullu erişim ilkelerini zorlayabilirsiniz. Gün sayısı olarak **0** belirtilmesi, cihaz uyumluluk ilkeleriyle uyumsuz hale gelen cihazların kurumsal kaynaklara erişiminin koşullu erişim tarafından **hemen** engelleneceği anlamına gelir.
-
-5.  Bilgileri ekledikten sonra **Ekle** ve ardından **Tamam**’ı seçin.
+4. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Ekle** > **Tamam**'ı seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Cihaz uyumluluğu dikey penceresinde bulunan raporları çalıştırarak cihaz uyumluluğu etkinliğini izleyebilirsiniz. Ayrıntılar için bkz. [Intune ile cihaz uyumluluğunu izleme](device-compliance-monitor.md).
+Raporları çalıştırarak cihaz uyumluluk etkinliğini izleyin. [Intune ile cihaz uyumluluğunu izleme](device-compliance-monitor.md) başlığı altında bazı yönergeler sağlanır.

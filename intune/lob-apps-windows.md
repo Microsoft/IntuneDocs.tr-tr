@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b687b71f9d264364ff758fdd46b0739465c16865
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e23ddb70bb2c12e1278f4167ec074972eeba3003
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Windows iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
 
@@ -29,27 +29,28 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="step-1---specify-the-software-setup-file"></a>1. Adım - Yazılım kurulum dosyasını belirtme
 
-1. Azure portalında oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Uygulamaları yönet**’i seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
 4. **Mobil uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
-6. **Uygulama Ekle** dikey penceresinde, **İş kolu uygulaması**’nı seçin.
+6. **Uygulama ekle** bölmesinde, **İş kolu uygulaması**’nı seçin.
 
 ## <a name="step-2---configure-the-app-package-file"></a>Adım 2 - Uygulama paketi dosyasını yapılandırma
 
-1. **Uygulama ekle** dikey penceresinde **Uygulama paketi**’ni seçin.
-2. **Uygulama paketi** dosyası dikey penceresinde, gözat düğmesini seçin ve **.msi**, **.appx**, veya **.appxbundle** uzantısına sahip Windows yükleme dosyasını seçin.
+1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
+2. **Uygulama paketi** dosya bölmesinde, gözat düğmesini seçin ve **.msi**, **.appx**, veya **.appxbundle** uzantısına sahip bir Windows yükleme dosyası seçin.
 3. İşiniz bittiğinde **Tamam**’ı seçin.
 
 
 ## <a name="step-3---configure-app-information"></a>Adım 3 - Uygulama bilgilerini yapılandırma
 
-1. **Uygulama ekle** dikey penceresinde **Uygulama paketi**’ni seçin.
-2. **Uygulama bilgileri** dikey penceresinde aşağıdaki bilgileri yapılandırın (bu dikey penceredeki bazı değerler otomatik olarak doldurulabilir):
+1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
+2. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri yapılandırın (bu bölmedeki bazı değerler otomatik olarak doldurulabilir):
     - **Ad** - Uygulamanın şirket portalında görüntülenen adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
     - **Açıklama** - Uygulama için bir açıklama girin. Açıklama şirket portalında kullanıcılara görüntülenir.
     - **Yayımcı** - Uygulamanın yayımcısının adını girin.
+    - **Uygulama sürümünü yoksay** - Uygulama, uygulama geliştiricisi tarafından otomatik olarak güncelleştiriliyorsa **Evet** olarak ayarlayın.
     - **Kategori** - Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Uygulamaları kategorilerilere ayırmak, kullanıcıların şirket portalına göz atarken uygulamaları daha kolay bulabilmesini sağlar.
     - **Bunu Şirket Portalı'nda öne çıkan uygulama olarak görüntüle** - Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
     - **Bilgi URL’si** - İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
@@ -63,7 +64,7 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="step-4---finish-up"></a>Adım 4 - Bitirme
 
-1. **Uygulama ekle** dikey penceresinde, uygulama bilgilerini doğru yapılandırdığınızı doğrulayın.
+1. **Uygulama ekle** bölmesinde, uygulama bilgilerini doğru yapılandırdığınızı doğrulayın.
 2. Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
 
 ## <a name="step-5---update-a-line-of-business-app"></a>5. Adım - Bir iş kolu uygulamasını güncelleştirme
@@ -76,8 +77,8 @@ Sürüm denetim işlemini yoksaymak için bilinen bir kendi kendini güncelleşt
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir. Artık seçtiğiniz gruplara bu uygulamayı atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
+- Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir. Artık seçtiğiniz gruplara bu uygulamayı atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
 
-Uygulamanızın özelliklerini ve atamasını izleme yolları hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Uygulama bilgilerini ve atamalarını izleme](apps-monitor.md).
+- Uygulamanızın özelliklerini ve atamasını izleme yolları hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Uygulama bilgilerini ve atamalarını izleme](apps-monitor.md).
 
-Intune’da uygulamanızın bağlamı hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Cihaz ve uygulama yaşam döngülerine genel bakış](introduction-device-app-lifecycles.md)
+- Intune’da uygulamanızın bağlamı hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Cihaz ve uygulama yaşam döngülerine genel bakış](introduction-device-app-lifecycles.md)

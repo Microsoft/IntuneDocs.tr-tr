@@ -1,7 +1,7 @@
 ---
-title: Intune ile Mobile Threat Defense
-titleSuffix: Azure portal
-description: "Cihaz riskine dayalı olarak şirket kaynaklarına erişimi koruma"
+title: Microsoft Intune ile Mobile Threat Defense
+titleSuffix: 
+description: "Cihaz riskine dayalı şirket kaynaklarına erişimi korumak için Mobil Threat Defense iş ortağınız ile Intune Mobil Threat Defense (MTD) kullanın."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,13 +15,13 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 2eaba4f04d6a1daedf40b7b37d2b44ed5aff4533
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi
+# <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi nedir?
 
 
 Intune Mobile Threat Defense bağlayıcıları, uyumluluk ilkeleriniz ve koşullu erişim kurallarınız için bilgi kaynağı olarak seçtiğiniz Mobile Threat Defense satıcınızdan yararlanmasına olanak sağlar. Bu, özellikle ele geçirilen mobil cihazlardan olmak üzere, BT yöneticilerinin Exchange ve Sharepoint gibi şirket kaynaklarına bir koruma katmanı eklemesine olanak sağlar.
@@ -32,7 +32,7 @@ Intune Mobile Threat Defense bağlayıcıları, uyumluluk ilkeleriniz ve koşull
 
 Geçmişte, şirketler bilgisayarları saldırıdan koruma konusunda proaktif olarak çalışırken, mobil cihazlar izlenmiyor ve korumasız bırakılıyordu. Mobil platformlarda uygulama yalıtımı ve denetlenen tüketici uygulama mağazaları gibi yerleşik korumalar bulunmasına rağmen, bu platformlar hala karmaşık saldırılara karşı savunmasızdır. Bugün, iş için cihaz kullanan çalışan sayısı daha fazladır ve hassas bilgilere daha çok erişim ihtiyacı duyarlar. Cihazların giderek daha karmaşık hale gelen saldırılardan korunması gerekir.
 
-## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense bağlayıcıları nasıl çalışır?
+## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense bağlayıcıları nasıl çalışır?
 
 Bağlayıcı, Intune ve seçtiğiniz Mobile Threat Defense satıcınız arasında bir iletişim kanalı oluşturarak şirket kaynaklarını korur. Intune Mobile Threat Defense iş ortakları, mobil cihazlar için raporlama veya uygulama amaçlarıyla Intune ile paylaşmak üzere tehdit bilgilerini etkin bir şekilde tarayan ve analiz eden sezgisel, dağıtımı kolay uygulamalar sunar. 
 
@@ -58,11 +58,11 @@ Intune, kişisel ve kuruluşa ait cihazlardan uygulama envanter bilgilerini topl
 
 Mobile Threat Defense çözümü, bir cihazı etkilenmiş olarak kabul ettiğinde:
 
-![Mobile Threat Defense’te etkilenmiş cihaz](./media/MTD-image-1.png)
+![Mobile Threat Defense’te etkilenmiş cihazı gösteren resim](./media/MTD-image-1.png)
 
 Cihaz düzeltildiğinde erişim izni verilir:
 
-![Mobile Threat Defense Erişim verildi](./media/MTD-image-2.png)
+![Mobile Threat Defense Erişimi verildi ekranını gösteren resim](./media/MTD-image-2.png)
 
 > [!NOTE] 
 > Intune ile birden fazla Mobil Tehdit Savunması (MTD) satıcısı kullanımı desteklenmez. Birden çok MTD aracının etkin olması, tüm MTD uygulamalarını yüklenmeye ve tehditler için tüm cihazları taramaya zorlayacaktır.

@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırma
 
@@ -34,18 +34,19 @@ iOS cihazı Çoklu Oturum Açma özelliğinden yararlanmak için, aşağıdaki k
 
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** sayfasında, **Cihaz yapılandırması**’nı seçin.
-2. **Cihaz yapılandırması** sayfasında **Profiller**’i seçin.
-3. Profiller sayfasında **Profil Oluştur**'u seçin, ad ve açıklama sağlayın, sonra da aşağıdaki ayarları yapılandırın:
-   - **Platform**: **iOS** platformunu seçin. 
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
+4. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
+5. Profiller bölmesinde **Profil oluştur**’u seçin.
+6. Ad ve açıklama sağlayıp aşağıdaki ayarları yapılandırın:
+   - **Platform**: **iOS** platformunu seçin.
    - **Profil türü**: **Cihaz özellikleri**'ni seçin.
-4. **Cihaz özellikleri** sayfasında **Çoklu Oturum Açma**’yı seçin.
+7. **Cihaz özellikleri** bölmesinde **Çoklu Oturum Açma**’yı seçin.
 
-   ![Çoklu Oturum Açma sayfası](./media/sso-blade.png)
+   ![Çoklu Oturum Açma bölmesi](./media/sso-blade.png)
 
-2. Aşağıdaki özet tablosunun yardımıyla **Çoklu Oturum Açma** sayfasındaki alanları doldurun. Ayrıntılar için, tablodan sonraki bölümlere bakın.
-   
+8. Aşağıdaki özet tablosunun yardımıyla **Çoklu Oturum Açma** bölmesindeki alanları doldurun. Ayrıntılar için, tablodan sonraki bölümlere bakın.
+
    |Alan  |Notlar|
    |---------|---------|
    |**AAD'den kullanıcı adı özniteliği**|Intune'un AAD'deki her kullanıcı için baktığı ve cihaza yüklenen XML yükünü oluşturmadan önce ilgili alanı (UPN gibi) doldurduğu öznitelik.|
@@ -95,7 +96,7 @@ Son kullanıcının cihazında bulunan ve Çoklu Oturum Açma yükünü kullanı
 
 ### <a name="credential-renewal-certificate"></a>Kimlik bilgileri yenileme sertifikası
 
-Son kullanıcılarınızın kimliğini parola yerine sertifikayla doğruluyorsanız, bu alanı kullanıcıya kimlik doğrulama sertifikası olarak dağıtılmış olan SCEP veya PFX sertifikasını seçmek için kullanın. Normalde bu, kullanıcıya VPN, WiFi veya E-posta gibi diğer profiller için dağıtılan sertifikayla aynı sertifikadır.
+Son kullanıcılarınızın kimliğini parola yerine sertifikayla doğruluyorsanız, bu alanı kullanıcıya kimlik doğrulama sertifikası olarak dağıtılmış olan SCEP veya PFX sertifikasını seçmek için kullanın. Normalde bu, kullanıcıya VPN, Wi-Fi veya e-posta gibi diğer profiller için dağıtılan sertifikayla aynı sertifikadır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -1,12 +1,12 @@
 ---
 title: "Microsoft Intune kullanarak cihazlara Office 365 uygulamalarını yükleme"
 titlesuffix: 
-description: "Windows 10 cihazlarda Office 365 uygulamalarını yüklemeyi kolaylaştırmak için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin.”"
+description: "Windows 10 cihazlarda Office 365 uygulamalarını yüklemeyi kolaylaştırmak için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 ProPlus 10 uygulamalarını Windows 10 cihazlara atama
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
-Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 ProPlus 10 uygulamaları atamanızı kolaylaştırır. Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 için Microsoft Visio Pro için de uygulama yükleyebilirsiniz. İstediğiniz uygulamalar Intune konsolundaki uygulama listesinde tek bir girdi olarak gösterilir.
+Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları atamanızı kolaylaştırır. Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 için Microsoft Visio Pro için de uygulama yükleyebilirsiniz. İstediğiniz uygulamalar Intune konsolundaki uygulama listesinde tek bir girdi olarak gösterilir.
 
 
 ## <a name="before-you-start"></a>Başlamadan önce
@@ -32,7 +32,7 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 ProPlus 10 uy
 >Bu Office yükleme yöntemi, yalnızca cihazda başka Microsoft Office sürümleri yüklü olmadığında desteklenir.
 
 - Bu uygulamaları dağıtacağınız cihazların Windows 10 Creators Update veya üzerini çalıştırıyor olması gerekir.
-- Intune, yalnızca Office 365 ProPlus paketinden Office uygulamaları eklemeyi destekler.
+- Intune, yalnızca Office 365 paketinden Office uygulamaları eklemeyi destekler.
 - Intune uygulama paketini yüklerken herhangi bir Office uygulaması açıksa yükleme başarısız olabilir ve son kullanıcılar kaydedilmeyen dosyalardaki veriler kaybedebilir.
 - Bu yükleme yöntemi Windows 10S, Windows Home, Windows Team, Windows Holographic ve Windows Holographic for Business çalıştıran cihazlarda desteklenmez.
 - Intune, daha önce Intune ile Office 365 uygulamalarını dağıttığınız bir cihaza Microsoft Mağazası’ndan Office 365 masaüstü uygulamalarının (Office Centennial uygulamaları olarak bilinir) yüklenmesini desteklemez. Bu yapılandırmayı yüklerseniz veri kaybına veya bozulmasına neden olabilir.
@@ -41,12 +41,13 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 ProPlus 10 uy
 
 ## <a name="get-started"></a>Başlarken
 
-1.  Azure Portal’da oturum açın.
-2.  **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1.  [Azure portalında](https://portal.azure.com) oturum açın.
+2.  **Tüm Hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3.  **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-4.  **Mobil uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
+4.  **Mobil uygulamalar** iş yükündeki **Yönet** bölümünden **Uygulamalar**’ı seçin.
 5.  Uygulama listesinin üst kısmında **Ekle**’yi seçin.
-6.  **Uygulama ekle** dikey penceresinde **Office 365 ProPlus Suite (Windows 10)**’u seçin.
+6.  **Uygulama ekle** dikey penceresindeki **Uygulama türü** listesinde **Windows 10** seçeneğini **Office 365 Paketi** altından seçin.
+    Böylece uygulama paketini yapılandırabilirsiniz.
 
 ## <a name="configure-the-app-suite"></a>Uygulama paketini yapılandırma
 
@@ -61,7 +62,7 @@ Bu adımda, cihazlara atamak istediğiniz Office uygulamalarını seçin.
 
 ## <a name="configure-app-information"></a>Uygulama bilgilerini yapılandırma
 
-Bu adımda, uygulama paketi hakkında bilgi sağlayın. Bu bilgiler, Intune’da paketi bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı uygulamasında paketi bulması kolaylaşır.
+Bu adımda, uygulama paketi hakkında bilgi sağlamanız gerekir. Bu bilgiler, Intune’da uygulama paketini bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı uygulamasında paketi bulması kolaylaşır.
 
 1.  **Uygulama Ekle** dikey penceresinde **Uygulama Paketi Bilgileri**’ni seçin.
 2.  **Uygulama Paketi Bilgileri** dikey penceresinde aşağıdaki bilgileri belirtin:
@@ -75,7 +76,7 @@ Bu adımda, uygulama paketi hakkında bilgi sağlayın. Bu bilgiler, Intune’da
     - **Geliştirici** - İsteğe bağlı olarak, uygulama geliştiricinin adını girin.
     - **Sahip** - İsteğe bağlı olarak, bu uygulamanın sahibi olarak **İK bölümü** gibi bir ad girin.
     - **Notlar** - Bu uygulamayla ilişkilendirmek isteyebileceğiniz notları girin.
-    - **Simge Yükle** - Kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenecek bir simge yükleyin.
+    - **Logo** - Kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek bir simge yükleyin.
 3.  Bitirdiğinizde, **Tamam**’a tıklayın.
 
 ## <a name="configure-app-settings"></a>Uygulama ayarlarını yapılandırma
@@ -84,14 +85,14 @@ Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Paket
 
 1.  **Uygulama ekle** dikey penceresinde **Uygulama Paketi Ayarları**’nı seçin.
 2.  **Uygulama Paketi Ayarları** dikey penceresinde aşağıdaki bilgileri belirtin:
-    - **Office sürümü** - Office’in hangi sürümünü atamak istediğinizi seçin, 32 bit veya 64 bit. 32 bit sürümünü hem 32 bit hem de 64 bit cihazlara yükleyebilirsiniz ancak 64 bit sürümü yalnızca 64 bit cihazlara yüklenebilir.
+    - **Office sürümü** - Office’in hangi sürümünü atamak istediğinizi seçin, 32 bit veya 64 bit. 32 bit sürümünü hem 32 bit hem de 64 bit cihazlara yükleyebilirsiniz ancak 64 bit sürümünü yalnızca 64 bit cihazlara yükleyebilirsiniz.
     - **Güncelleştirme Kanalı** - Office’in cihazlarda nasıl güncelleştirileceğini seçin. Farklı güncelleştirme kanalları hakkında bilgi için bkz. [Office 365 ProPlus güncelleştirme kanallarına genel bakış](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Aşağıdakilerden birini seçin:
         - **Aylık**
         - **Aylık (Hedeflenen)**
         - **Yarı Yıllık**
         - **Yarı Yıllık (Hedeflenen)**
     - **Uygulama son kullanıcı lisans sözleşmesini otomatik olarak kabul et** - Son kullanıcıların lisans sözleşmesini kabul etmesini gerekli kılmak istemiyorsanız bunu seçin. Ardından Intune, sözleşmeyi otomatik olarak kabul eder.
-    - **Paylaşılan bilgisayar etkinleştirmeyi kullan** - Paylaşılan bilgisayar etkinleştirme, birden çok kullanıcı tek bir bilgisayarı paylaşıyorsa kullanılır. Daha fazla bilgi için bkz. Office 365 ProPlus için paylaşılan bilgisayar etkinleştirmeye genel bakış.
+    - **Paylaşılan bilgisayar etkinleştirmeyi kullan** - Paylaşılan bilgisayar etkinleştirme, birden çok kullanıcı tek bir bilgisayarı paylaşıyorsa kullanılır. Daha fazla bilgi için bkz. Office 365 için paylaşılan bilgisayar etkinleştirmeye genel bakış.
     - **Diller** - Office, son kullanıcının bilgisayarında Windows ile yüklenen tüm dillerde otomatik olarak yüklenir. Uygulama paketiyle birlikte ilave diller yüklemek istiyorsanız bunu seçin.
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Paket
 
 ## <a name="finish-up"></a>Bitirme
 
-İşiniz bittiğinde, **Uygulama Ekle** dikey penceresinde **Kaydet**’i seçin. Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir.
+İşiniz bittiğinde, **Uygulama Ekle** dikey penceresinde **Ekle**’yi seçin. Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir.
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>Uygulama paketini yüklerken çıkabilecek hata kodları
 
@@ -137,4 +138,4 @@ Karşınıza çıkabilecek hata kodları ve anlamları, aşağıdaki tabloda lis
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Artık seçtiğiniz gruplara uygulamaları atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](/intune-azure/manage-apps/deploy-apps).
+- Şimdi uygulamaları seçtiğiniz gruplara atayabilirsiniz, bkz. [Uygulamaları gruplara atama](/intune-azure/manage-apps/deploy-apps).

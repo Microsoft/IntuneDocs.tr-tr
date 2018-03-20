@@ -1,7 +1,7 @@
 ---
-title: "Check Point SandBlast ile Intune tümleştirmesini ayarlama"
-titlesuffix: Azure portal
-description: "Check Point SandBlast ile Intune tümleştirmesini ayarlama"
+title: Microsoft Intune ile Check Point SandBlast MTD
+titlesuffix: 
+description: "Şirket kaynaklarınıza mobil cihaz erişimini denetlemek için CheckPoint SandBlast Mobile Threat Defense’i (MTD) Intune ile ayarlama."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b1ea4804005abb1e2fcbc5dc3b5ef1382edd4db
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b864d78fd7bfd7fb4e177b568b3587bc1e28b209
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Check Point SandBlast’ı Intune ile tümleştirme
 
@@ -68,7 +68,7 @@ Check Point SandBlast uygulama yetkilendirme işlemi aşağıdaki gibidir:
 
 5.  MDM Hizmeti olarak Microsoft Intune’u ayarladıktan sonra, **Microsoft Intune Yapılandırması** penceresi açılır. Bu pencerede, Check Point SandBlast Mobile’a Intune ve Azure AD ile iletişim kurma yetkisi vermek amacıyla her cihaz platformu için (iOS, Android ve Windows) **Kuruluşuma ekle**’yi seçin.
 
-    ![Check Point MTD Intune yapılandırması](./media/checkpoint-MTD-1.PNG)
+    ![Check Point MTD Intune yapılandırmasını gösteren resim](./media/checkpoint-MTD-1.PNG)
 
     > [!IMPORTANT]
     > Bir sonraki adıma ilerlemek için tüm cihaz platformlarını eklemeniz gerekir.

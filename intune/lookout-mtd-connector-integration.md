@@ -1,7 +1,7 @@
 ---
-title: "Intune ile Lookout tümleştirmenizi ayarlama"
-titlesuffix: Azure portal
-description: "Intune ile Lookout aboneliğinizi ayarlama"
+title: "Microsoft Intune ile Lookout tümleştirmenizi ayarlama"
+titlesuffix: 
+description: "Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Lookout Mobile Threat Defense’i Intune ile tümleştirme hakkında bilgi edinin."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
 

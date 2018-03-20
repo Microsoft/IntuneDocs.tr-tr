@@ -1,10 +1,10 @@
 ---
-title: "Intune ile koşullu erişim"
-titlesuffix: Azure portal
-description: "Intune ile koşullu erişim kullanmanın yaygın yolları"
+title: "Microsoft Intune ile koşullu erişim"
+titlesuffix: 
+description: "Intune koşullu erişimin cihaz tabanlı ve uygulama tabanlı koşullu erişim için yaygın olarak nasıl kullanıldığını öğrenin."
 keywords: 
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişim kullanmanın yaygın yolları
+# <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune ile iki ana koşullu erişim türü vardır. İlk tür cihaz tabanlı koşullu erişimdir. İkinci tür uygulama tabanlı koşullu erişimdir. Kuruluşunuzda koşullu erişim uyumluluğunu sağlamak için ilgili uyumluluk ilkelerini yapılandırmanız gerekir.
+Intune ile kullanılan iki tür koşullu erişim vardır: Cihaz tabanlı koşullu erişim ve uygulama tabanlı koşullu erişim. Kuruluşunuzda koşullu erişim uyumluluğunu sağlamak için ilgili uyumluluk ilkelerini yapılandırmanız gerekir. Koşullu erişim, Exchange şirket içi erişimine izin verme veya erişimi engelleme, ağa erişimi denetleme veya Mobil Threat Defense çözümüyle tümleştirme gibi eylemlerde yaygın olarak kullanılır.
 
 Aşağıdaki bilgiler, Intune mobil *cihaz* uyumluluk özelliklerini ve Intune mobil *uygulama* yönetimi (MAM) özelliklerini nasıl kullanacağınızı anlamanıza yardımcı olur. 
 

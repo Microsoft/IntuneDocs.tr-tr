@@ -15,13 +15,13 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 26f81d8e6ba0fb433d714a5deeaadce9dd619c3f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="android-app-protection-policy-settings"></a>Android uygulama koruma ilkesi ayarları
+# <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu konu başlığı altında Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
 İlke ayarlarının, verileri yeniden konumlandırma ayarları ve erişim ayarları olmak üzere iki kategorisi vardır. Bu konuda, *ilkeyle yönetilen uygulamalar* terimi, uygulama koruma ilkeleriyle yapılandırılan uygulamaları ifade eder.
 
@@ -73,7 +73,7 @@ Bu konu başlığı altında Android cihazları için uygulama koruma ilkesi aya
   | com.android.providers.media | Android medya içeriği sağlayıcısı | Yalnızca zil sesi seçimi eyleminde izin verilen medya içeriği sağlayıcısı. |
   | com.google.android.gms; com.google.android.gsf | Google Play Hizmetleri paketleri | Bu paketlere, anında iletme bildirimleri gibi Google Cloud Messaging eylemleri için izin verilir. |
 
-Daha fazla bilgi için bkz. [Uygulamalar için veri aktarım ilkesi özel durumları](app-protection-policies-exception.md). 
+Daha fazla bilgi için bkz. [Uygulamalar için veri aktarım ilkesi özel durumları](app-protection-policies-exception.md).
 
 ##  <a name="access-settings"></a>Erişim ayarları
 
@@ -88,7 +88,10 @@ Daha fazla bilgi için bkz. [Uygulamalar için veri aktarım ilkesi özel duruml
 | **Cihaz PIN’i yönetildiği zaman uygulama PIN’ini devre dışı bırak** | Kayıtlı bir cihazda bir cihaz kilidi algılandığında, uygulama PIN’ini devre dışı bırakmak için **Evet**’i seçin. | Hayır |
 | **En düşük Android işletim sistemini zorunlu tut** | Bu uygulamanın kullanılabilmesi için en düşük Android işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazın Android sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.<br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler.| Hayır |
 | **En düşük Android işletim sistemini zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük Android işletim sistemini zorunlu tutmak için **Evet**’i seçin. Cihazdaki Android sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.<br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler. | Hayır |
-| **En düşük uygulama sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük uygulama sürümünü zorunlu tutmak üzere **Evet**’i seçin. Cihazın uygulama sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.<br><br>Uygulamalar arasında genellikle farklı sürüm şemaları bulunduğundan, en az bir uygulama sürümünün bir uygulamayı (örneğin, "Outlook sürüm ilkesi") hedeflediği bir ilke oluşturun. <br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler.| Hayır | 
-| **En düşük uygulama sürümünü zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük uygulama sürümünü önermek için **Evet**’i seçin. Cihazdaki uygulama sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.<br><br>Uygulamalar arasında genellikle farklı sürüm şemaları bulunduğundan, en az bir uygulama sürümünün bir uygulamayı (örneğin, "Outlook sürüm ilkesi") hedeflediği bir ilke oluşturun. <br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler.| Hayır | 
+| **En düşük uygulama sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük uygulama sürümünü zorunlu tutmak üzere **Evet**’i seçin. Cihazın uygulama sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.<br><br>Uygulamalar arasında genellikle farklı sürüm şemaları bulunduğundan, en az bir uygulama sürümünün bir uygulamayı (örneğin, "Outlook sürüm ilkesi") hedeflediği bir ilke oluşturun. <br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler.| Hayır |
+| **En düşük uygulama sürümünü zorunlu tut (Yalnızca uyarı)** | Bu uygulamanın kullanılabilmesi için en düşük uygulama sürümünü önermek için **Evet**’i seçin. Cihazdaki uygulama sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.<br><br>Uygulamalar arasında genellikle farklı sürüm şemaları bulunduğundan, en az bir uygulama sürümünün bir uygulamayı (örneğin, "Outlook sürüm ilkesi") hedeflediği bir ilke oluşturun. <br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler.| Hayır |
 | **En Düşük Android Düzeltme Eki Sürümü Gerektirir** | Google tarafından yayınlanan Android güvenlik düzeltme eklerinde alt sınır gerektirmek için **Evet**’i seçin. Cihazın Android düzeltme eki gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.<br><br> Bu ilke ayarı biçimi YYYY-AA-GG tarih biçimini destekler. | Hayır |
 | **En Düşük Android Düzeltme Eki Sürümü Gerektir (Yalnızca Uyarı)** | Google tarafından yayınlanan Android güvenlik düzeltme eklerinde alt sınır gerektirmek için **Evet**’i seçin. Cihazdaki Android güvenlik düzeltme eki gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.<br><br> Bu ilke ayarı biçimi YYYY-AA-GG tarih biçimini destekler. | Hayır |
+
+> [!NOTE]
+> Erişim bölümünde yapılandırılan birden çok Intune uygulama koruma ayarının, aynı uygulama ve kullanıcı grubu için Android’de nasıl çalıştığı hakkında daha fazla bilgi edinmek için bkz. [Intune MAM sık sorulan sorular](mam-faq.md).

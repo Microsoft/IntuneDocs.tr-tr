@@ -6,8 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.date: 02/26/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: f2d0a77c9e9e36db53c23031fd9f06f508fef15d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Azure portalında Microsoft Intune’u kullanmaya başlama
 
@@ -31,7 +31,7 @@ Azure portalının sol tarafındaki __kenar çubuğu__, size kullanılabilir Azu
 
 ![‘Diğer hizmetler’ listesinde Microsoft Intune’u arayan bir kullanıcı.](./media/azure-add-intune1.png)
 
-1. Sayfanın solundaki kenar çubuğunun altında **Diğer hizmetler**’i seçin.
+1. Sayfanın solundaki kenar çubuğundan **Tüm hizmetler**’i seçin.
 2. Filtre kutusunda **Intune**’u arayın.
 3. Intune’u sık kullanılan hizmetler listenizin altına eklemek için **yıldız** simgesini seçin.
 4. Intune hizmetinin üzerine gelin. Hizmet adının sağ tarafındaki **üç dikey noktayı** kullanarak Intune’u seçin ve sürükleyin.
@@ -52,7 +52,7 @@ Bu özellik, Intune’a kullanıcı ve gruplar gibi daha fazla içerik eklediği
 
 ## <a name="using-services"></a>Hizmetleri kullanma
 
-Microsoft Intune’u veya Azure’da herhangi bir hizmeti açtığınızda, hizmet bir **dikey pencerede** görüntülenir. Intune’da **Kullanıcılar**, **Gruplar** ve **Mobil uygulamalar** gibi ilk kullandığınız iş yükleri tam ekran bir dikey pencerede görüntülenir. İş yükünü seçtiğinizde bu dikey pencere tam sayfada açılır. Diğer dikey pencereler, açıldıklarında dikey pencerenin sağ tarafından kayar ve geldikleri ana pencerenin altında daralır.
+Intune’u veya Azure’da herhangi bir hizmeti açtığınızda, hizmet bir **bölmede** görüntülenir. Intune’da **Kullanıcılar**, **Gruplar** ve **Mobil uygulamalar** gibi ilk kullandığınız iş yükleri tam ekran bölmede görüntülenir. İş yükünü seçtiğinizde bu bölme tam sayfada açılır. Diğer bölmeler, açıldıklarında bölmenin sağ tarafından kayar ve geldikleri ana bölmenin altında daralır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08e1126e05d101669c5796e4bd7fcaf08339fa43
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7c63c817ccddd0abc6c5c6b0ae2f2a7d1cb2d9bf
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="vpn-connections-in-microsoft-intune"></a>Microsoft Intune’da VPN bağlantıları
 
@@ -52,8 +52,8 @@ Cisco AnyConnect|Evet |Evet   |Hayır    |Hayır  |Hayır    | Evet, (OMA-URI, y
 Cisco (IPSec)|Evet |Evet   |Hayır  |Hayır  |Hayır | Hayır|
 Citrix|Evet |Evet (yalnızca Android)   |Hayır  |Hayır  |Hayır | Hayır|
 Pulse Secure|Evet  |Evet |Evet   |Evet  |Evet| Evet|        
-F5 Edge Client|Evet |Evet |Evet |Evet  |   Evet |  Evet|   
-Dell SonicWALL Mobile Connect|Evet |Evet |Evet |Evet |Evet |Evet|         
+F5 Edge İstemcisi|Evet |Evet |Evet |Evet  |   Evet |  Evet|   
+SonicWall Mobile Connect|Evet |Evet |Evet |Evet |Evet |Evet|         
 CheckPoint Mobile VPN|Evet |Evet |Evet |Evet|Evet|Evet|
 Microsoft SSL (SSTP)|Hayır |Hayır |Hayır |Hayır|Hayır|VPNv1 OMA-URI*|
 Microsoft Automatic|Hayır |Hayır |Hayır |Hayır|Evet (OMA-URI)|Evet|
@@ -108,7 +108,7 @@ Ayar adı  |Daha fazla bilgi
 **Ad**     |VPN profilini Intune konsolunda tanımanıza yardımcı olması için benzersiz bir ad belirtin.         
 **Açıklama**     |VPN profiline genel bir bakış ve profili bulmanıza yardımcı olacak diğer ek bilgileri içeren bir açıklama sağlayın.         
 **VPN bağlantısı adı (kullanıcılara gösterilir)**     |VPN profili için bir ad belirtin. Bu, kullanıcıların cihazlarında kullanılabilir VPN bağlantıları listesinde göreceği addır.         
-**Bağlantı türü**     |  VPN profilinde kullanmak için aşağıdaki bağlantı türlerinden birini seçin: **Cisco AnyConnect** (Windows 8.1 veya Windows Phone 8.1’de kullanılamaz), **Pulse Secure**, **Citrix**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
+**Bağlantı türü**     |  VPN profilinde kullanmak için aşağıdaki bağlantı türlerinden birini seçin: **Cisco AnyConnect** (Windows 8.1 veya Windows Phone 8.1’de kullanılamaz), **Pulse Secure**, **Citrix**, **F5 Edge Client**, **SonicWall Mobile Connect**, **CheckPoint Mobile VPN**.
 **VPN sunucusu açıklaması**     | Cihazların bağlanacağı VPN sunucusu için bir açıklama belirtin. Örnek: **Contoso VPN Sunucusu**. Bağlantı türü **F5 Edge Client** olduğunda, sunucu açıklamaları ve IP adreslerini içeren bir liste belirtmek için **Sunucu listesi** alanını belirtin.
 **Sunucu IP adresi veya FQDN**    |Cihazların bağlanacağı VPN sunucusunun IP adresi veya tam etki alanı adını sağlayın. Örnekler: **192.168.1.1**, **vpn.contoso.com**.  Bağlantı türü **F5 Edge Client** olduğunda, sunucu açıklamaları ve IP adreslerini içeren bir liste belirtmek için **Sunucu listesi** alanını belirtin.         |         
 **Sunucu listesi**     |VPN bağlantısı için kullanmak üzere yeni bir VPN sunucusu eklemek için **Ekle**'yi seçin. Ayrıca hangi sunucunun bağlantı için varsayılan sunucu olacağını belirtebilirsiniz. Bu seçenek yalnızca bağlantı türü **F5 Edge Client** olduğunda görüntülenir.         
@@ -118,7 +118,7 @@ Ayar adı  |Daha fazla bilgi
 **İstemci kimlik doğrulaması (Kimlik Sertifikası) için bir istemci sertifikası seçin**|VPN bağlantısı kimlik doğrulaması için kullanılacak ve önceden oluşturduğunuz istemci SCEP sertifikasını seçin. Intune’da sertifika profillerini kullanma hakkında daha fazla bilgi için bkz. [Sertifika profillerini kullanarak kaynak erişiminin güvenliğini sağlama](secure-resource-access-with-certificate-profiles.md). Bu seçenek yalnızca kimlik doğrulama yöntemi **Sertifikalar** olduğunda görüntülenir.
 **Rol**| Bu bağlantıya erişimi olan kullanıcı rolünün adı belirtin. Bir kullanıcı rolü, kişisel ayarları ve seçenekleri tanımlar, belirli erişim özelliklerini etkinleştirir veya devre dışı bırakır. Bu seçenek yalnızca bağlantı türü **Pulse Secure** veya **Citrix** olduğunda görüntülenir.
 **Bölge**|Kullanmak istediğiniz kimlik doğrulaması bölgesi için ad belirtin. Bir kimlik doğrulaması bölgesi, Pulse Secure veya Citrix bağlantı türü tarafından kullanılan kimlik doğrulaması kaynakları gruplandırmasıdır. Bu seçenek yalnızca bağlantı türü **Pulse Secure** veya **Citrix** olduğunda görüntülenir.
-**Oturum açma grubu veya etki alanı**|Bağlanmak istediğiniz oturum açma grubu veya etki alanı adını belirtin. Bu seçenek yalnızca bağlantı türü **Dell SonicWALL Mobile Connect** olduğunda görüntülenir.
+**Oturum açma grubu veya etki alanı**|Bağlanmak istediğiniz oturum açma grubu veya etki alanı adını belirtin. Bu seçenek yalnızca bağlantı türü **SonicWall Mobile Connect** olduğunda görüntülenir.
 **Parmak izi**|VPN sunucusunun güvenilir olduğunu doğrulamak için kullanılacak bir dize (örneğin "Contoso Parmak İzi Kodu") belirtin. Parmak izi, bağlanırken aynı parmak izini sunan herhangi bir sunucuya güvenmesi için istemciye gönderilebilir. Cihazda parmak izi yoksa, parmak izini göstererek kullanıcıdan bağlandığı VPN sunucusuna güvenmesini ister. (Kullanıcı parmak iznini el ile doğrular ve bağlanmak için **güven** seçeneğini belirler.) Bu seçenek yalnızca bağlantı türü **CheckPoint Mobile VPN** olduğunda görüntülenir.
 **Uygulama Başına VPN**|Bu VPN bağlantısını bir Mac OS X veya iOS uygulamasıyla ilişkilendirerek bağlantının uygulama her çalıştırıldığında açılmasını sağlamak için bu seçeneği belirleyin. Yazılım dağıtımı yaparken VPN profilini bir uygulamayla ilişkilendirebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulamaları dağıtma](deploy-apps-in-microsoft-intune.md).
 **İsteğe bağlı VPN**|iOS 8.0 ve üzeri cihazlar için isteğe bağlı VPN ayarlayabilirsiniz. Bunu ayarlanmak için yönergeler [iOS cihazları için isteğe bağlı VPN](#on-demand-vpn-for-ios-devices)’de verilmiştir.
@@ -126,7 +126,7 @@ Ayar adı  |Daha fazla bilgi
 **Otomatik yapılandırma betiği kullan** (yalnızca iOS, Mac OS X, Windows 8.1 ve Windows Phone 8.1 için)|VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, ayarları tanımlamak için bir otomatik yapılandırma betiği isteyip istemediğinizi belirtin ve ardından ayarları içeren dosyaya bir URL belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
 **Proxy sunucusu kullan** (yalnızca iOS, Mac OS X, Windows 8.1 ve Windows Phone 8.1 için)|VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, bu seçeneği belirleyin ve ardından proxy sunucusu adresi ve bağlantı noktası numarasını belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
 **Yerel adresler için proxy ayarlarını atla** (yalnızca iOS, Mac OS X, Windows 8.1 ve Windows Phone 8.1 için)|VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, belirttiğiniz yerel adresler için proxy sunucusunu kullanmak istemiyorsanız, bu seçeneği belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
-**Özel XML** (Yalnızca Windows 8.1 ve üzeri ile Windows Phone 8.1 ve üzeri)|VPN bağlantısını yapılandıran özel XML komutları belirtin. **Pulse Secure** örneği: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. **CheckPoint Mobile VPN** örneği: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;. **Dell SonicWALL Mobile Connect** örneği: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. **F5 Edge İstemcisi** örneği: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;. Özel XML komutları yazma hakkında daha fazla bilgi için her bir üreticinin VPN belgelerine başvurun.
+**Özel XML** (Yalnızca Windows 8.1 ve üzeri ile Windows Phone 8.1 ve üzeri)|VPN bağlantısını yapılandıran özel XML komutları belirtin. **Pulse Secure** örneği: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. **CheckPoint Mobile VPN** örneği: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;. **SonicWall Mobile Connect** örneği: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. **F5 Edge İstemcisi** örneği: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;. Özel XML komutları yazma hakkında daha fazla bilgi için her bir üreticinin VPN belgelerine başvurun.
 **DNS Soneki arama listesi** (yalnızca Windows Phone 8.1)|Her satırda bir DNS soneki belirtin. Bir web sitesine kısa ad kullanarak bağlanılırken, belirttiğiniz her DNS soneki aranır. Örneğin, **domain1.contoso.com** ve **domain2.contoso.com** DNS son eklerini belirtip **http://mywebsite** URL’sini ziyaret ettiğinizde **http://mywebsite.domain1.contoso.com** ve **http://mywebsite.domain2.contoso.com** URL’leri aranır.
 **Şirket Wi-Fi ağına bağlıyken VPN'i atla** (yalnızca Windows Phone 8.1)|Bu seçeneği cihaz şirket Wi-Fi ağına bağlıyken VPN bağlantısının kullanılmayacağını belirtmek için kullanın.
 **Ev Wi-Fi ağına bağlıyken VPN'i atla** (yalnızca Windows Phone 8.1)|Bu seçeneği cihaz bir ev Wi-Fi ağına bağlıyken VPN bağlantısının kullanılmayacağını belirtmek için kullanın.
