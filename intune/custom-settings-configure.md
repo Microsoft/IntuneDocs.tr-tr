@@ -1,51 +1,53 @@
 ---
-title: "Intune özel cihaz ayarlarını yapılandırma"
-titleSuffix: Azure portal
-description: "Intune'u, yönettiğiniz cihazlarda özel ayar yapılandırmak için kullanmayı öğrenin.\""
+title: "Microsoft Intune - Azure'da özel cihaz ayarlarını kullanma | Microsoft Docs"
+description: "Microsoft Intune kullanarak Windows, Android ve iOS cihazlarına yönelik özel ayarları kullanmak için profil ekleme veya oluşturma"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Microsoft Intune’da özel cihaz ayarlarını yapılandırma
+# <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune'da özel ayarlarla profil oluşturma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="when-to-use-custom-settings"></a>Özel ayarlar ne zaman kullanılır
+Intune size gereken veya istediğiniz yerleşik ayarların hepsini içermeyebilir. Öte yandan başka cihaz profillerinde sağlanan bir ayarı kullanmak da isteyebilirsiniz. Bu ayarları eklemek için, bir cihaz profili oluşturun ve bu profili özel cihaz ayarlarıyla yapılandırın.
 
-Yapılandırmak istediğiniz ayarlar Intune’da yerleşik olarak bulunmadığında ve diğer cihaz profillerinden sağlanmadığında, özel cihaz ayarları yararlı olabilir.
-Özel ayarlar her platform için ayrı yapılandırılır. Örneğin Android ve Windows cihazlarıyla, cihazlardaki özellikleri denetlemek için Open Mobile Alliance Uniform Resource Identifier (OMA-URI) değerleri belirtebilirsiniz. Apple cihazları için, [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)’la oluşturduğunuz bir dosyayı içeri aktarabilirsiniz.
+Bu makalede, özel ayarlarla profil oluşturma işleminin temel adımları listelenir. Ayrıca, farklı platformlarda özel ayarlar oluşturma konusunun ayrıntılarını içeren bağlantılar da verilir.
 
-Bu konu başlığı altında verilen bilgileri kullanarak profilleri özel ayarlarla yapılandırmanın temellerini öğrenin ve sonra cihaza özgü bilgiler için her platformla ilgili olarak sağlanan konuları okuyun.
+## <a name="custom-settings-on-different-platforms"></a>Farklı platformlarda özel ayarlar
+Özel ayarlar her platform için ayrı yapılandırılır. Örneğin Android ve Windows cihazlarındaki özellikleri denetlemek için, Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı (OMA-URI) değerleri girebilirsiniz. Apple cihazları için, [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)’la oluşturduğunuz bir dosyayı içeri aktarabilirsiniz.
 
-## <a name="create-a-device-profile-containing-custom-settings"></a>Özel ayarlar içeren bir cihaz profili oluşturma
+## <a name="create-the-profile"></a>Profili oluşturma
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
-2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
-3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
-4. **Profil Oluştur** dikey penceresinde, özel profil için **Ad** ve **Açıklama** girin.
-5. **Platform** açılan listesinden, özel ayarları uygulamak istediğiniz cihaz platformunu seçin. Şu anda, özel cihaz ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
-    - **Outlook Web Access (OWA)**
-    - **iOS**
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+3. **Cihaz yapılandırması**’nı seçin, **Profiller**’i seçin ve ardından **Profil oluştur**’u seçin.
+4. Özel profil için **Ad** ve **Açıklama** girin.
+5. **Platform** açılan listesinden, özel ayarların uygulanacağı cihaz platformunu seçin. Aşağıdaki platformlardan birini seçebilirsiniz:
+
+    - **Android**
+    - **Android for Work**
+    - **Android**
     - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 ve üzeri**
     - **Windows 10 ve üzeri**
+
 6. **Profil** türü açılan listesinden **Özel**’i seçin.
-7. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
+7. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Aşağıdaki bağlantılarda, her platformun özel ayarlarıyla ilgili daha fazla ayrıntı sağlanır:
+
     - [Android ayarları](custom-settings-android.md)
     - [iOS ayarları](custom-settings-ios.md)
     - [macOS ayarları](custom-settings-macos.md)
@@ -53,7 +55,7 @@ Bu konu başlığı altında verilen bilgileri kullanarak profilleri özel ayarl
     - [Windows 10 ayarları](custom-settings-windows-10.md)
     - [Windows Holographic for Business ayarları](custom-settings-windows-holographic.md)
     - [Android for Work ayarları](custom-settings-android-for-work.md)
-8. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
 
-Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
-Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).
+8. İşiniz bittiğinde **Oluştur**’u seçin.
+
+Profil oluşturulur ve profil listesinde görüntülenir. Bu profili gruplara atamak için bkz. [Cihaz profillerini atama](device-profile-assign.md).

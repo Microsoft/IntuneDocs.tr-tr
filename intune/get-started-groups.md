@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Kullanıcılarınızı ve veri erişimini yönetmek için bir grup oluşturma
 
@@ -30,11 +30,13 @@ Microsoft Intune, şirket kaynaklarına erişimi yönetmek için Azure Active Di
 ## <a name="how-do-i-create-a-group"></a>Nasıl bir grup oluştururum?
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Kaynak ara**'yı kullanarak **Intune**'u arayın.
-3. **Microsoft Intune** dikey penceresini açtıktan sonra **Gruplar**’ı seçin.
-4. **Kullanıcılar ve gruplar – Tüm gruplar** dikey penceresinde **Yeni grup** komutunu seçin.
-5. **Grup** dikey penceresinde grup için bir **Ad** ve **Açıklama** ekleyin.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Microsoft Intune** bölmesini açtıktan sonra **Gruplar**’ı seçin.
+4. **Kullanıcılar ve gruplar – Tüm gruplar** bölmesinde **Yeni grup** komutunu seçin.
+5. **Grup** bölmesinde bir **Grup türü** seçin.
+5. Grup için bir **Ad** ve **Açıklama** ekleyin.
 6. **Üyelik türü**’nü **Atandı** olarak ayarlayın. Sınama grubu için **Office özelliklerini etkinleştir** komutunu seçmeyin.
+7. Grup için **Üyeler**’i seçin.
 7. **Oluştur**'a tıklayın.
 
 Bir grup başarıyla oluşturulduktan sonra **Tüm gruplar** listesinde yer alır. Grubunuz burada görünmüyorsa başka bir grup oluşturmayı deneyin.

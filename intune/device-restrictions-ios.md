@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS cihaz kısıtlama ayarları
-Bu makalede, iOS çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Bu makalede, iOS çalıştıran cihazlar için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları gösterilir.
+
 ## <a name="general"></a>Genel
 
+-   **Kullanım verilerini paylaşma** - Cihazın Apple’a tanılama ve kullanım telemetri verilerini göndermesine izin verin veya engelleyin.
 -   **Tanılama verileri gönderme** - Cihazın Apple’a tanılama verileri göndermesine izin verin veya bunu engelleyin.
 -   **Ekran yakalama** - Kullanıcının ekran içeriğini resim olarak yakalamasına izin verin.
     - **Classroom uygulamasıyla ekranı uzaktan izleme (yalnızca denetimli)** - Apple Classroom uygulamasının iOS cihazlarda ekranı izlemesine izin verin veya bunu engelleyin.
@@ -213,8 +215,8 @@ Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygu
 -   **Yapılandırma profilleri kullanarak yalnızca Wi-Fi ağlarına katılma (yalnızca denetimli)** - Cihazın yalnızca Intune Wi-Fi profili ile yapılandırılmış Wi-Fi ağlarına katılmasına izin verin.
 
 - **Hücresel kullanım kuralları (yalnızca yönetilen uygulamalar)** - Hücresel ağa bağlıyken yönetilen uygulamaların kullanabileceği veri türlerini tanımlamanızı sağlar. Aşağıdakilerden birini seçin:
-    - **Hücresel veri kullanımını engelle**
-    - **Dolaşımdayken hücresel veri kullanımını engelle**
+    - **Hücresel veri kullanımını engelleme** - Hücresel verilerin kullanımını ** Tüm yönetilen uygulamalar** için engelleyebilir veya **Belirli uygulamalar seçebilirsiniz**.
+    - **Dolaşım sırasında hücresel veri kullanımını engelleme** - Dolaşım sırasında hücresel verilerin kullanımını ** Tüm yönetilen uygulamalar** için engelleyebilir veya **Belirli uygulamalar seçebilirsiniz**.
 
 ## <a name="connected-devices"></a>Bağlı Cihazlar
 

@@ -1,10 +1,10 @@
 ---
-title: "Koşullu erişim ilkelerini Klasik Intune portalından Azure portalına geçirme"
-titlesuffix: Azure portal
-description: "Koşullu erişim ilkelerini Klasik Intune portalından Azure portalına geçirin."
+title: "Azure portalına koşullu erişim geçişi"
+titlesuffix: Microsoft Intune
+description: "Önceden klasik Intune portalında oluşturduğunuz koşullu erişim ilkelerini Azure portalına yeniden atayın."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdb64d4cc668bf382c39a235111547c2f4e21c9c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Koşullu erişim ilkelerini Klasik Intune portalından Azure portalına yeniden atama
 
-Yeni Azure portalı ile koşullu erişim, uygulama başına birden çok ilke için desteğin yanında artırılmış özelleştirilebilirlik sunuyor.
+Yeni Azure portalı ile koşullu erişim, uygulama başına birden çok ilke için desteğin yanında artırılmış özelleştirilebilirlik sunuyor. Önceden klasik Intune portalında koşullu erişim ilkeleri oluşturduysanız, bunları Azure portalına geçirebilirsiniz. 
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -79,7 +79,7 @@ Azure portalındaki **Intune Uygulama Koruması** dikey penceresi, yöneticileri
 
 4. **Atamalar kısmında** yeni koşullu erişim ilkesinin hedefleyeceği **Kullanıcılar ve grupları**’ı seçin.
     
-    ![Intune ve Azure portalları arasında kullanıcı grubu kullanıcı arabirimi karşılaştırması](./media/reassign-ca-1.png)
+    ![Intune ve Azure portalları arasında kullanıcı grubu kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > Klasik portal için yaptığınız bu seçim, Azure portalında yaptığınızla ilişkili olmalıdır. Örneğin klasik Intune portalında tüm kullanıcıları seçtiyseniz Azure portalında da **Tüm kullanıcılar**’ı seçin. Ayrıca klasik Intune portalında **Grupları çıkar** seçeneğini seçtiyseniz bu grupları Azure portalında da dışlayın.
@@ -94,7 +94,7 @@ Azure portalındaki **Intune Uygulama Koruması** dikey penceresi, yöneticileri
 
 9. **Bitti**’ye tıklayın.
 
-    ![Intune ve Azure portalları arasında bulut uygulaması kullanıcı arabirimi karşılaştırması](./media/reassign-ca-3.png)
+    ![Intune ve Azure portalları arasında bulut uygulaması kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > Aynı ilkeye sahip birden çok uygulamanız varsa Azure portalında bunları tek bir ilke altında birleştirmeyi tercih edebilirsiniz.
@@ -105,7 +105,7 @@ Azure portalındaki **Intune Uygulama Koruması** dikey penceresi, yöneticileri
 
 12. Cihaz platformlarını seçme işleminizi tamamladıktan sonra **Bitti**’ye iki kere tıklayın.
 
-    ![Intune ve Azure portalları arasında cihaz platformu kullanıcı arabirimi karşılaştırması](./media/reassign-ca-4.png)
+    ![Intune ve Azure portalları arasında cihaz platformu kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Klasik Intune portalında tek tek platformlar seçtiyseniz bu platformları Azure portalında da seçin.
@@ -119,7 +119,7 @@ Azure portalındaki **Intune Uygulama Koruması** dikey penceresi, yöneticileri
 
 15. İstemci uygulamayı seçme işleminizi tamamladıktan sonra **Bitti**’ye iki kere tıklayın.
 
-    ![Intune ve Azure portalları arasında istemci uygulamalar kullanıcı arabirimi karşılaştırması](./media/reassign-ca-6.png)
+    ![Intune ve Azure portalları arasında istemci uygulamaları kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-6.png)
 
 16. Klasik Intune portalında tarayıcı ayarlarınızı seçtiyseniz Azure portalında **Tarayıcı** ve **Mobil uygulamalar ve masaüstü istemciler**’i seçin. Klasik Intune portalında tarayıcı ayarlarını seçmediyseniz yalnızca **Mobil uygulamalar ve masaüstü istemciler**’i seçin. 
 
@@ -133,7 +133,7 @@ Azure portalındaki **Intune Uygulama Koruması** dikey penceresi, yöneticileri
 
 21. **Yeni** koşullu erişim ilkesi dikey penceresinde **İlkeyi etkinleştir**’i açın ve sonra **Oluştur**’a tıklayın.
 
-    ![Intune ve Azure portalları arasında koşullu erişim ilkelerini etkinleştirme kullanıcı arabirimi karşılaştırması](./media/reassign-ca-11.png)
+    ![Intune ve Azure portalları arasında koşullu erişim ilkelerini etkinleştirme kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>EAS istemcilerde Intune cihaz temelli koşullu erişim ilkelerini yeniden atama
 
@@ -147,7 +147,7 @@ Klasik Intune portalında bir Exchange Online ilkesinin parçası olarak Exchang
 
 4. **Atamalar** kısmında yeni koşullu erişim ilkesinin hedefleyeceği **Kullanıcılar ve grupları**’ı seçin.
 
-    ![Intune ve Azure portalları arasında kullanıcı grubu kullanıcı arabirimi karşılaştırması](./media/reassign-ca-12.png)
+    ![Intune ve Azure portalları arasında kullanıcı grubu kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
     > Azure portalı için yaptığınız bu seçim, Azure portalında yaptığınızla ilişkili olmalıdır. Örneğin klasik Intune portalında tüm kullanıcıları seçtiyseniz Azure portalında da **Tüm kullanıcılar**’ı seçin. Ayrıca klasik Intune portalında **Grupları çıkar** seçeneğini seçtiyseniz bu grupları Azure portalında da dışlayın.
@@ -158,14 +158,14 @@ Klasik Intune portalında bir Exchange Online ilkesinin parçası olarak Exchang
 
 7. **Bulut uygulamaları** dikey penceresinde **Uygulama seç**’e tıklayın ve **Exchange Online**’ı seçin. Daha sonra **Seç** ve **Bitti**’ye tıklayın.
 
-    ![Intune ve Azure portalları arasında bulut uygulamaları kullanıcı arabirimi karşılaştırması](./media/reassign-ca-14.png)
+    ![Intune ve Azure portalları arasında bulut uygulamaları kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > EAS istemciler için koşullu erişim ilkeleri, başka bulut uygulamalarını barındıramaz.
 
 8. **Koşullar** dikey penceresinde **İstemci uygulamalar**’ı seçin ve daha sonra uygun istemci uygulamayı seçin. Intune tarafından desteklenmeyen istemcileri engellemeyi seçtiyseniz **İlkeyi yalnızca desteklenen platformlara uygula** seçeneğini kullanın.
 
-    ![Intune ve Azure portalları arasında istemci uygulamalar kullanıcı arabirimi karşılaştırması](./media/reassign-ca-15.png)
+    ![Intune ve Azure portalları arasında istemci uygulamaları kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-15.png)
 
 9. İstemci uygulamayı seçme işleminizi tamamladıktan sonra **Bitti**’ye iki kere tıklayın.
 
@@ -173,11 +173,11 @@ Klasik Intune portalında bir Exchange Online ilkesinin parçası olarak Exchang
 
 11. **Erişim Denetimleri Ver**’in altında **Cihazın uyumlu olarak işaretlenmesini gerektir**’i seçin ve **Seç**’e tıklayın.
 
-    ![Intune ve Azure portalları arasında erişim verme kullanıcı arabirimi karşılaştırması](./media/reassign-ca-16.png)
+    ![Intune ve Azure portalları arasında erişim verme kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-16.png)
 
 12. **Yeni** koşullu erişim ilkesi dikey penceresinde **İlkeyi etkinleştir**’i açın ve sonra **Oluştur**’a tıklayın.
 
-    ![Intune ve Azure portalları arasında koşullu erişim ilkelerini etkinleştirme kullanıcı arabirimi karşılaştırması](./media/reassign-ca-17.png)
+    ![Intune ve Azure portalları arasında koşullu erişim ilkelerini etkinleştirme kullanıcı arabirimi karşılaştırmasını gösteren resim](./media/reassign-ca-17.png)
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Klasik Intune portalında koşullu erişim ilkelerini devre dışı bırakma
 
@@ -196,7 +196,7 @@ Azure portalında koşullu erişim ilkelerinizi yeniden atadıktan sonra klasik 
 
 4.  **Koşullu erişim ilkesini etkinleştir** seçeneğinin onayını kaldırın ve **Kaydet**’e tıklayın.
 
-    ![Klasik Intune portalında koşullu erişim ilkelerini devre dışı bırakma](./media/reassign-ca-18.png)
+    ![Klasik Intune portalında koşullu erişim ilkelerini devre dışı bırakmayı gösteren resim](./media/reassign-ca-18.png)
 
 ## <a name="see-also"></a>Ayrıca bkz:
 

@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c02ea2df53b1524933cea72a8bcc3de89772e62
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 0f2d37a9033464381de5c23a558d0205f85fe56a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Symantec PKI Manager Web Hizmeti için Intune Sertifika Bağlayıcı'yı Ayarlama
 
@@ -167,8 +167,11 @@ Symantec CA'dan kayıt yetkilendirme (RA) sertifikasını almak için aşağıda
 
 Var olan bir Microsoft CA için zaten en son Intune Sertifika Bağlayıcı kullanıyorsanız ve Symantec CA desteği eklemek istiyorsanız, bu adımı atlayın. Aksi takdirde, Intune Yönetim Portalı'ndan en son Intune Sertifika Bağlayıcı'yı indirin ve bu yönergeleri izleyin.
 
-1. Intune kiracı yönetici kimlik bilgilerinizi kullanarak https://portal.azure.com adresinde oturum açın ve Intune kaynakları arayın.
-2. **Microsoft Intune** > **Cihaz Yapılandırması** > **Sertifika Yetkilisi** > **Sertifika bağlayıcı bağlantısını indirin** bağlantısından NDESConnectorSetup.exe öğesini indirin
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
+4. **Cihaz yapılandırması** bölmesinde **Sertifika Yetkilisi**’ni seçin.
+5. **Ekle**'ye tıklayın ve **Bağlayıcı dosyasını indir**'i seçin. İndirilen dosyayı, onu yükleyeceğiniz sunucuda erişebileceğiniz bir konuma kaydedin. 
 3. NDESConnectorSetup.exe öğesini yükseltilmiş ayrıcalıklarla çalıştırın.
 
     a. Aşağıdaki ekran görüntüsünde gösterildiği gibi **Yükleme Seçenekleri** ekranı üzerinden, **PFX Dağıtımı**’nı seçin.  Kalan kurulumu varsayılan seçimlerle tamamlayın.
@@ -234,7 +237,7 @@ Intune tarafından yönetilen aygıtlar için dağıtılan PKCS Sertifikaları, 
 
     a. Intune kiracı yönetici kimlik bilgilerinizi kullanarak [Azure portal](https://portal.azure.com)’da oturum açın ve Intune kaynakları arayın.
 
-    b. **Microsoft Intune** > **Cihaz Yapılandırması** - **Profiller** > **Profil oluşturma**’dan bir Güvenilen Sertifika Profili oluşturma
+    b. **Microsoft Intune** > **Cihaz yapılandırması** > **Profiller** > **Profil oluşturma**’dan bir Güvenilen Sertifika Profili oluşturun.
 
     c. **Ad** ve **Açıklama** alanlarında gerekli bilgileri sağlayın ardından hedef platformu seçin. 
 
@@ -265,7 +268,7 @@ Sertifika Profili OID Symantec CA’da Sertifika Profili şablonuyla ilişkilend
 ## <a name="create-a-pkcs-certificate-profile"></a>PKCS Sertifika Profili oluşturma
 
 1. Intune kiracı yöneticisi kimlik bilgilerinizi kullanarak [Azure portalı](https://portal.azure.com)'nda oturum açın ve Intune kaynakları arayın.
-2. **Microsoft Intune** > **Cihaz Yapılandırması** > **Profiller** > **Profil oluşturma**’dan bir PKCS Sertifika profili oluşturun.
+2. **Microsoft Intune** > **Cihaz yapılandırması > Profiller** > **Profil oluşturma**’dan bir PKCS Sertifika profili oluşturun.
 
     a. **Ad** ve **Açıklama** alanlarında gerekli bilgileri sağlayın ardından hedef platformu seçin.
 

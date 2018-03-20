@@ -1,12 +1,11 @@
 ---
-title: "Intune ile PKCS sertifikalarını yapılandırma ve yönetme"
-titleSuffix: Intune on Azure
-description: "Intune ile PKCS sertifikaları oluşturun ve atayın. \""
+title: "Microsoft Intune - Azure ile PKCS sertifikalarını kullanma | Microsoft Docs"
+description: "Kök sertifikayı dışarı aktarma, sertifika şablonunu yapılandırma, Microsoft Intune Sertifika Bağlayıcısı'nı indirip yükleme, cihaz yapılandırma profili oluşturma, Azure'da ve Sertifika Yetkilinizde PKCS Sertifika profili oluşturma adımları da dahil olmak üzere Microsoft Intune ile Ortak Anahtar Şifreleme Standartları sertifikaları ekleyin ve oluşturun"
 keywords: 
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 12/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,43 +14,45 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d877a1de8e66372d36641dd863a517fecf176d69
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve yönetme
+# <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Sertifikalar VPN veya WiFi ağınız gibi şirket kaynaklarınıza erişimde kimlik doğrulaması yapmak ve güvenliği korumak için kullanılır. Bu makalede, PKCS sertifikasını dışarı aktarma ve ardından sertifikayı Intune profiline ekleme işlemleri gösterilir. 
+
 ## <a name="requirements"></a>Gereksinimler
 
-PKCS sertifikalarını Intune ile kullanmak için aşağıdaki altyapıya sahip olmanız gerekir:
+PKCS sertifikalarını Intune ile kullanmak için aşağıdaki altyapıya sahip olduğunuzdan emin olun:
 
 * Var olan bir Active Directory Etki Alanı Hizmetleri (AD DS) etki alanı yapılandırıldı.
  
-  AD DS'yi yükleme ve yapılandırma hakkında daha fazla bilgiye ihtiyacınız varsa, [AD DS Tasarımı ve Planlaması](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning) makalesine bakın.
+  AD DS'yi yükleme ve yapılandırma hakkında daha fazla bilgi için bkz. [AD DS Tasarımı ve Planlaması](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
 
 * Var olan bir Kurumsal Sertifika Yetkilisi (CA) yapılandırıldı.
 
-  Active Directory Sertifika Hizmetlerini (AD CS) yükleme ve yapılandırma hakkında daha fazla bilgiye ihtiyacınız varsa, [Active Directory Sertifika Hizmetleri Adım Adım Kılavuzu](https://technet.microsoft.com/library/cc772393) makalesine bakın.
+  Active Directory Sertifika Hizmetleri'ni (AD CS) yükleme ve yapılandırma hakkında daha fazla bilgi için bkz. [Active Directory Sertifika Hizmetleri Adım Adım Kılavuzu](https://technet.microsoft.com/library/cc772393).
 
   > [!WARNING]
   > Intune, AD CS'yi, Tek Başına bir CA yerine bir Kurumsal Sertifika Yetkilisi (CA) ile çalıştırmanızı gerektirir.
 
 * Kurumsal CA'ya bağlantı olan bir istemci.
 * Kök sertifikanızın Kurumsal CA'ndan dışa aktarılmış bir kopyası.
-* Intune Portal'ınızdan indirilen Microsoft Intune Sertifika Bağlayıcı (NDESConnectorSetup.exe).
-* Microsoft Intune Sertifika Bağlayıcı’yı (NDESConnectorSetup.exe) barındırabilen Windows Server.
+* Intune portalınızdan indirilen Microsoft Intune Sertifika Bağlayıcı (NDESConnectorSetup.exe).
+* Microsoft Intune Sertifika Bağlayıcısı'nı (NDESConnectorSetup.exe) barındıracak Windows Server.
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Kök sertifikayı Kurumsal CA'dan dışa aktarın
 
-VPN, WiFi ve diğer kaynaklarla kimlik doğrulama yapmak için her cihazda bir kök veya ara CA sertifikasına ihtiyacınız vardır. Aşağıdaki adımlar, Kurumsal CA'nızdan gerekli sertifikayı nasıl alacağınızı açıklar.
+VPN, WiFi ve diğer kaynakların kimliğini doğrulamak için, her cihazda bir kök veya ara CA sertifikası gereklidir. Aşağıdaki adımlar, Kurumsal CA'nızdan gerekli sertifikayı nasıl alacağınızı açıklar.
 
 1. Yönetici ayrıcalıklarına sahip bir hesapla Kurumsal CA’nızda oturum açın.
 2. Yönetici olarak bir komut istemi açın.
-3. Kök CA Sertifikasını, daha sonra erişebileceğiniz bir konuma dışarı aktarın.
+3. Kök CA Sertifikasını (.cer), daha sonra erişebileceğiniz bir konuma dışarı aktarın.
 
    Örneğin:
 
@@ -64,105 +65,104 @@ VPN, WiFi ve diğer kaynaklarla kimlik doğrulama yapmak için her cihazda bir k
 ## <a name="configure-certificate-templates-on-the-certification-authority"></a>Sertifika yetkilisinde sertifika şablonlarını yapılandırma
 
 1. Yönetici ayrıcalıklarına sahip bir hesapla Kurumsal CA’nızda oturum açın.
-2. **Sertifika Yetkilisi** konsolunu açın.
-3. **Sertifika Şablonları**’na sağ tıklayın, sonra da **Yönet**’i seçin.
-4. **Kullanıcı** sertifika şablonunu bulun, sağ tıklayın ve **Yinelenen Şablon**’u seçin. Bir pencere açılır, **Yeni Şablon Özellikleri**.
-5. **Uyumluluk** sekmesinde
+2. **Sertifika Yetkilisi** konsolunu açın, **Sertifika Şablonları**'na sağ tıklayın ve **Yönet**'i seçin.
+3. **Kullanıcı** sertifika şablonunu bulun, sağ tıklayın ve **Yinelenen Şablon**’u seçin. **Yeni Şablon Özellikleri** açılır.
+4. **Uyumluluk** sekmesinde: 
    * **Sertifika Yetkilisi**’ni **Windows Server 2008 R2**’ye ayarlayın
    * **Sertifika alıcısını**’nı **Windows Server 7/ 2008 R2**’ye ayarlayın
-6. **Genel** sekmesinde:
+5. **Genel** sekmesinde:
    * **Şablon görünen adı**’nı sizin için anlamlı bir şey yapın.
 
    > [!WARNING]
-   > **Şablon adı** varsayılan olarak **şablon görünen adı** ile *boşluksuz* aynıdır. Daha sonra kullanmak için şablon adını not edin.
+   > **Şablon adı** varsayılan olarak **şablon görünen adı** ile *boşluksuz* aynıdır. Şablon adını not alın çünkü daha sonra gerekecektir.
 
-7. **İstek İşleme** sekmesinde **Özel anahtar dışarı aktarılabilsin**'i kontrol edin.
-8. **Şifreleme** sekmesinde, **En az anahtar boyutu**’nun 2048 olarak ayarlandığını onaylayın.
-9. **Konu Adı** sekmesinde, radyo düğmesini **İstekte tedarik** olarak seçin.
-10. **Uzantılar** sekmesinde, **Uygulama İlkeleri** altında Şifreleme Dosya Sistemi, Güvenli E-posta ve İstemci Kimlik Doğrulamasını gördüğünüzü onaylayın.
+6. **İstek İşleme**'de **Özel anahtar dışarı aktarılabilsin**'i seçin.
+7. **Şifreleme**'de **En az anahtar boyutu**’nun 2048 olarak ayarlandığını onaylayın.
+8. **Konu Adı**'nda **İstekte sağla**'yı seçin.
+9. **Uzantılar**'da, **Uygulama İlkeleri** altında Şifreleme Dosya Sistemi, Güvenli E-posta ve İstemci Kimlik Doğrulamasını gördüğünüzü onaylayın.
     
       > [!IMPORTANT]
-      > iOS ve macOS sertifika şablonları için, **Uzantılar** sekmesinde **Anahtar Kullanımı**'nı düzenleyin ve **İmza kaynağın delilidir** öğesinin seçili olmadığından emin olun.
+      > iOS ve macOS sertifika şablonları için, **Uzantılar** sekmesine gidin, **Anahtar Kullanımı**'nı güncelleştirin ve **İmza kaynağın delilidir** öğesinin seçili olmadığını onaylayın.
 
-11. **Güvenlik** sekmesinde, Microsoft Intune Sertifika Bağlayıcı yüklediğiniz sunucunun Bilgisayar Hesabını ekleyin.
+10. **Güvenlik**'te, Microsoft Intune Sertifika Bağlayıcı yüklediğiniz sunucunun Bilgisayar Hesabını ekleyin.
     * Bu hesabın izinleri **Okuma** ve **Kaydetme**’sine izin verin.
-12. **Uygula**’ya tıklayın ardından sertifika şablonunu kaydetmek için **Tamam**’a tıklayın.
-13. **Sertifika Şablonları Konsolu**’nu kapatın.
-14. **Sertifika Yetkilisi konsolundan**, **Sertifika Şablonları**’na sağ tıklayın, **Yeni**, **Yayımlanacak Sertifika Şablonu**’na tıklayın.
-    * Önceki adımlarda oluşturduğunuz şablonu seçin ve **Tamam**’a tıklayın.
-15. Sunucunun, Intune kayıtlı cihazlar ve kullanıcılar adına sertifika yönetmesi için şu adımları izleyin:
+11. **Uygula**’yı seçin ve ardından sertifika şablonunu kaydetmek için **Tamam**’ı seçin.
+12. **Sertifika Şablonları Konsolu**’nu kapatın.
+13. **Sertifika Yetkilisi konsolundan**, **Sertifika Şablonları**’na sağ tıklayın, **Yeni**, **Yayımlanacak Sertifika Şablonu**’na tıklayın.
+    * Önceki adımlarda oluşturduğunuz şablonu seçin ve sonra da **Tamam**’ı seçin.
+14. Sunucunun, Intune kayıtlı cihazlar ve kullanıcılar adına sertifika yönetmesi için şu adımları izleyin:
 
     a. Sertifika Yetkilisine sağ tıklayın ve ardından **Özellikler**’i seçin.
 
     b. Güvenlik sekmesinde, Microsoft Intune Sertifika Bağlayıcıyı çalıştırdığınız sunucunun Bilgisayar Hesabını ekleyin.
       * **Sertifikaları Yayımla ve Yönet** ve **Sertifikaları İste**’ye izin ver, bilgisayar hesabına izin verir.
-16. Kurumsal CA'da oturumu kapatın.
+15. Kurumsal CA'da oturumu kapatın.
 
 ## <a name="download-install-and-configure-the-microsoft-intune-certificate-connector"></a>Microsoft Intune Exchange Bağlayıcı'yı İndirme, Yükleme ve Yapılandırma
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. Azure Portal'da **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-2. **Intune** dikey penceresinde **Cihaz Yapılandırması**’nı seçin. 
-3. **Cihaz Yapılandırması** dikey penceresinde **Sertifika Yetkilisi**’ni seçin. 
-4. **Ekle**'ye tıklayın ve **Bağlayıcı dosyasını indir**'i seçin. İndirilen dosyayı, onu yükleyeceğiniz sunucuda erişebileceğiniz bir konuma kaydedin. 
-5.  Microsoft Intune Sertifika Bağlayıcı’yı yükleyeceğiniz sunucuda oturum açın.
-6.  Yükleyiciyi çalıştırın ve varsayılan konumu kabul edin. Bağlayıcıyı C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe konumuna yükler.
-    1. Yükleyici Seçenekleri sayfasında **PFX Dağıtımı**’nı seçin ve **İleri**’ye tıklayın.
-    2. **Yükle**’ye tıklayın ve yüklemenin tamamlanmasını bekleyin.
-    3. Tamamlama sayfasında **Intune Bağlayıcı’yı Başlat** etiketli kutunun seçili olduğunu kontrol edin ve **Son**’a tıklayın.
-7.  NDES Bağlayıcı penceresi şimdi **Kayıt** sekmesine açılmalıdır. Intune bağlantısını etkinleştirmek için **Oturum Aç**’a tıklayın ve yönetim izinleri olan bir hesap sağlayın.
-8.  **Gelişmiş** sekmesinde, radyo düğmesini **Bu bilgisayarın SİSTEM hesabını (varsayılan) kullan**’ı seçili bırakabilirsiniz.
-9.  **Uygula**’ya tıklayın ardından **Kapat**.
-10. Şimdi Azure portalına geri gidin. Birkaç dakika sonra, **Intune** > **Cihaz Yapılandırması** > **Sertifika Yetkilisi**'ndeki **Bağlantı durumu**'nun altında yeşil bir onay işareti ve **Etkin** sözcüğünü görmelisiniz. Bu onay, bağlayıcı sunucunuzun Intune ile iletişim kurabildiğini bilmenizi sağlar.
+1. [Azure portalında](https://portal.azure.com), **Tüm hizmetler**’i seçin ve **Intune** için filtre uygulayın. **Microsoft Intune**’u seçin ve sonra da **Cihaz Yapılandırması**’nı seçin. 
+2. **Sertifika Yetkilisi**'ni, **Ekle**'yi ve sonra da **Bağlayıcı dosyasını indir**'i seçin. İndirilen dosyayı, onun yükleneceği sunucudan erişebileceğiniz bir konuma kaydedin. 
+3. Bu sunucuda oturum açın ve yükleyiciyi çalıştırın: 
 
+    1. Varsayılan konumu kabul edin. Bağlayıcı `\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe` konumuna yüklenir.
+    2. Yükleyici Seçenekleri'nde **PFX Dağıtımı**'nı ve ardından **İleri**'yi seçin.
+    3. **Yükle**'yi seçin ve yüklemenin tamamlanmasını bekleyin.
+    4. Tamamlandığında, **Intune Bağlayıcısı'nı Başlat**'ı işaretleyin ve **Son**'u seçin.
+
+4. NDES Bağlayıcı penceresinin **Kayıt** sekmesi açılmalıdır. Intune bağlantısını etkinleştirmek için **Oturum Aç**’ı seçin ve yönetim izinleri olan bir hesap girin.
+5. **Gelişmiş** sekmesinde **Bu bilgisayarın SİSTEM hesabını (varsayılan) kullan**’ı seçili bırakın.
+6. **Uygula**'yı ve ardından **Kapat**'ı seçin.
+7. Azure portalına dönün (**Intune** > **Cihaz Yapılandırması** > **Sertifika Yetkilisi**). Birkaç dakika sonra yeşil bir onay işareti görüntülenir ve **Bağlantı durumu** **Etkin** olur. Bağlayıcı sunucunuz artık Intune'la iletişim kurabilir.
 
 ## <a name="create-a-device-configuration-profile"></a>Bir cihaz yapılandırma profili oluşturma
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Intune**, **Cihaz yapılandırması**, **Profiller**’e gidin ve **Profil oluştur**’a tıklayın.
+2. **Intune**, **Cihaz yapılandırması**, **Profiller**’e gidin ve **Profil oluştur**’u seçin.
 
    ![NavigateIntune][NavigateIntune]
 
-3. Aşağıdaki bilgileri doldurun:
+3. Aşağıdaki özellikleri girin:
    * Profil için **Ad**
    * İsteğe bağlı olarak bir açıklama ayarlayın
    * Profili dağıtmak için **Platform**
    * **Profil türü**’nü **Güvenilen sertifika** olarak ayarlayın
-4. **Ayarlar**’a gidin ve Kök CA sertifikasının önceden dışarı aktardığı .cer dosyasını sağlayın.
+
+4. **Ayarlar**'a gidin ve daha önce içeri aktarmış olduğunuz .cer dosyası Kök CA Sertifikası'nı girin.
 
    > [!NOTE]
-   > **Adım 3**’te seçtiğiniz platforma bağlı olarak olabilir sertifikanın **Hedef deposunu** seçme seçeneğiniz olabilir veya olmayabilir.
+   > **Adım 3**’te seçtiğiniz platforma bağlı olarak olabilir sertifikanın **Hedef deposunu** seçebilir veya seçemeyebilirsiniz.
 
    ![ProfileSettings][ProfileSettings]
 
-5. **Tamam**’a tıklayın ardından profilinizi kaydetmek için **Oluştur**’a tıklayın.
-6. Yeni profili bir veya daha fazla cihaza atamak için bkz. [Microsoft Intune cihaz profilleri nasıl atanır](device-profile-assign.md).
+5. **Tamam**’ı ve ardından profilinizi kaydetmek için **Oluştur**’u seçin.
+6. Yeni profili bir veya daha fazla cihaza atamak için bkz. [Microsoft Intune cihaz profillerini atama](device-profile-assign.md).
 
 ## <a name="create-a-pkcs-certificate-profile"></a>PKCS Sertifika profili oluşturma
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Intune**, **Cihaz yapılandırması**, **Profiller**’e gidin ve **Profil oluştur**’a tıklayın.
-3. Aşağıdaki bilgileri doldurun:
+2. **Intune**, **Cihaz yapılandırması**, **Profiller**’e gidin ve **Profil oluştur**’u seçin.
+3. Aşağıdaki özellikleri girin:
    * Profil için **Ad**
    * İsteğe bağlı olarak bir açıklama ayarlayın
    * Profili dağıtmak için **Platform**
    * **Profil türü**’nü **PKCS sertifika** olarak ayarlayın
-4. **Ayarlar**’a gidin ve aşağıdaki bilgileri sağlayın:
+4. **Ayarlar**'a gidin ve aşağıdaki özellikleri girin:
    * **Yenileme eşiği (%)** - 20% önerilir.
-   * **Sertifika geçerlilik süresi** - Sertifika şablonunu değiştirmediyseniz bu seçenek bir yıla ayarlanmalıdır.
-   * **Sertifika yetkilisi** -Bu seçenek Kurumsal CA'nın dahili tam etki alanı adıdır (FQDN).
-   * **Sertifika yetkilisi adı** - Bu seçenek Kurumsal CA'nızın adıdır ve önceki öğeden farklı olabilir.
-   * **Sertifika şablonu adı** - Bu seçenek daha önce oluşturduğunuz şablonun adıdır. **Şablon adı**’nın varsayılan olarak **Şablon görüntü adı** ile *boşluksuz* aynı olduğunu unutmayın.
+   * **Sertifika geçerlilik süresi** - Sertifika şablonunu değiştirmediyseniz bu seçenek bir yıla ayarlanabilir.
+   * **Sertifika yetkilisi** -Kurumsal CA'nın dahili tam etki alanı adını (FQDN) görüntüler.
+   * **Sertifika yetkilisi adı** - Bu Kurumsal CA'nızın adını listeler ve önceki öğeden farklı olabilir.
+   * **Sertifika şablonu adı** - Daha önce oluşturduğunuz şablonun adı. **Şablon adı**’nın varsayılan olarak **Şablon görüntü adı** ile *boşluksuz* aynı olduğunu unutmayın.
    * **Konu adı biçimi** - Aksi gerekmedikçe, bu seçeneği **Ortak ad** olarak ayarlayın.
    * **Konu alternatif adı** - Aksi gerekmedikçe, bu seçeneği **Kullanıcı asıl adı (UPN)** olarak ayarlayın.
-   * **Genişletilmiş anahtar kullanımı** - Önceki bölümde **Sertifika yetkilisinde sertifika şablonlarını yapılandırma** bölümündeki Adım 10’da varsayılan ayarları kullandıysanız, seçim kutusunda aşağıdaki **Önceden tanımlı değerler**’i ekleyin:
+   * **Genişletilmiş anahtar kullanımı** - [Sertifika yetkilisinde sertifika şablonlarını yapılandırma](#configure-certificate-templates-on-the-certification-authority) bölümündeki (bu makalede) 10. Adım'da varsayılan ayarları kullandıysanız, seçimden aşağıdaki **Önceden tanımlı değerler**’i ekleyin:
       * **Herhangi Bir Amaç**
       * **İstemci Kimlik Doğrulaması**
       * **Güvenli E-posta**
-   * **Kök Sertifika** - (Android Profilleri için) Bu seçenek, önceki bölümde [Kök sertifikayı Kurumsal CA'dan dışa aktarma](#export-the-root-certificate-from-the-enterprise-ca) altında Adım 3’te dışa aktarılan .cer dosyasıdır.
+   * **Kök Sertifika** - (Android Profilleri için) [Kök sertifikayı Kurumsal CA'dan dışa aktarma](#export-the-root-certificate-from-the-enterprise-ca) bölümündeki (bu makalede) 3. Adım'da dışa aktarılan .cer dosyasıdır.
 
-5. **Tamam**’a tıklayın ardından profilinizi kaydetmek için **Oluştur**’a tıklayın.
+5. **Tamam**’ı ve ardından profilinizi kaydetmek için **Oluştur**’u seçin.
 6. Yeni profili bir veya daha fazla cihaza atamak için bkz. [Microsoft Intune cihaz profilleri nasıl atanır](device-profile-assign.md).
 
 

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a6466d62cf8af4e6b8a14980db5e9a244deb45c4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -53,8 +53,8 @@ Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayıla
 
 ## <a name="create-a-restriction"></a>Kısıtlama oluşturma
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. **Kısıtlama oluştur**'u seçin.
 5. Kısıtlamaya bir ad ve açıklama ekleyin.
@@ -70,8 +70,8 @@ Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayıla
 
 Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarlarını değiştirebilirsiniz:
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. **Cihaz Türü Kısıtlamaları**'nın altında, ayarlamak istediğiniz kısıtlamayı seçin.
 5. Kısıtlama adının altında (varsayılan kısıtlama için **Tüm Kullanıcılar**), **Platformlar**'ı seçin. Listelenen her platform için **İzin Ver** veya **Engelle**'yi seçin.
@@ -81,10 +81,10 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
   - iOS major.minor.rev destekler.
   - Windows, yalnızca Windows 10 için major.minor.rev.build destekler.
   İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir.
-8. Listelenen her platformda **Kişiye ait** cihazlar için **İzin Ver** veya **Engelle**'yi seçin.
+6. Listelenen her platformda **Kişiye ait** cihazlar için **İzin Ver** veya **Engelle**'yi seçin.
 
     ![Kişilere ait cihazlar için yapılandırılmış varsayılan cihaz platformuyla cihaz kısıtlamaları çalışma alanının ekran görüntüsü](media/device-restrictions-platform-configurations.png)
-9. **Kaydet**'e tıklayın.
+7. **Kaydet**'e tıklayın.
 
 >[!NOTE]
 >- Kişisel Android cihazların kaydını engellerseniz kişisel Android for Work cihazlar hala kaydedilebilir durumda olacaktır.
@@ -95,13 +95,13 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
 
 Aşağıdaki adımları izleyerek bir cihaz sınırı kısıtlamasının ayarlarını değiştirebilirsiniz:
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. **Cihaz Sınırı Kısıtlamaları**'nın altında, ayarlamak istediğiniz kısıtlamayı seçin.
 5. **Cihaz Sınırı**'nı seçin ve ardından, açılan listede kullanıcının kaydedebileceği cihaz sayısı üst sınırını belirtin.
     ![Cihaz sınırı kısıtlamaları dikey penceresinin ekran görüntüsü](./media/device-restrictions-limit.png)
-6. **Kaydet**'e tıklayın.
+4. **Kaydet**'e tıklayın.
 
 Son kullanıcınız, kayıtlı cihaz sınırına ulaştığında bunu belirten bir bildirim görecektir. Örneğin iOS’ta bu, şu şekilde görünür:
 
@@ -119,8 +119,8 @@ Varsayılan kısıtlamalar dışındaki tüm kısıtlamaların önceliğini değ
 
 **Kısıtlama önceliğini değiştirmek için**
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. Öncelik listesinde kısıtlamanın üzerine gelin.
-5. Üç dikey noktayı kullanarak, önceliği listede dilediğiniz konuma sürükleyin.
+5. Soldaki üç dikey noktayı kullanarak, önceliği listede dilediğiniz konuma sürükleyin.

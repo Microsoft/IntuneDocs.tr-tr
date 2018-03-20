@@ -1,12 +1,11 @@
 ---
-title: "Intune ile Windows cihazlarda geçiş kodunu sıfırlama"
-titlesuffix: Azure portal
-description: "Microsoft PIN Sıfırlama Hizmeti ile tümleştirilmiş Windows cihazlarda Intune’u kullanarak geçiş kodunu nasıl sıfırlayacağınızı öğrenin."
+title: "Microsoft Intune - Azure ile Windows 10 cihazlarında geçiş kodunu sıfırlama | Microsoft Docs"
+description: "Windows cihazlarında geçiş kodunu sıfırlamak için, Microsoft Pin Sıfırlama Hizmeti ve Microsoft Pin Sıfırlama İstemcisi'ni yükleyin, Azure Active Directory Dizin Kimliğinizi kullanarak bir cihaz ilkesi oluşturun ve ardından Azure portalında Microsoft Intune'u kullanarak geçiş kodunu sıfırlayın."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,60 +13,59 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6149eeb3da2da3be3a137845eee5a0a515a4e39
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 14a5654e72352b9dc8ebd51e6c926ea963e7432d
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Microsoft PIN Sıfırlama Hizmeti ile tümleştirilmiş Windows cihazlarda Intune’u kullanarak geçiş kodunu sıfırlama
+# <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Intune kullanarak Windows cihazlarında geçiş kodunu sıfırlama
 
-Windows cihazlar için geçiş kodu sıfırlama yeteneği, Microsoft PIN Sıfırlama Hizmeti ile tümleşik çalışarak Windows 10 Mobile çalıştıran cihazlarda yeni bir geçiş kodu oluşturmanıza olanak verir. Cihazların Windows 10 Creators Update veya üzerini çalıştırıyor olması gerekir.
+Windows cihazlarında geçiş kodunu sıfırlayabilirsiniz. Geçiş kodunu sıfırlama özelliği, Microsoft Pin Sıfırlama Hizmeti'ni kullanarak Windows 10 Mobile çalıştıran cihazlarda yeni bir geçiş kodu oluşturur. 
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
-- Windows - Windows 10 Creators Update ve üzerinde desteklenir (Azure AD’ye katılmış)
-- Windows Phone - Desteklenmiyor
-- iOS - Desteklenmiyor
-- macOS - Desteklenmiyor
-- Android - Desteklenmiyor
+- Windows 10 Creators Update ve üzeri (Azure AD’ye katılmış)
 
+Şu platformlar **desteklenmez**:
+- Windows Phone
+- iOS
+- Mac OS
+- Android
 
-## <a name="before-you-start"></a>Başlamadan önce
+## <a name="authorize-the-pin-reset-services"></a>PIN sıfırlama hizmetlerini yetkilendirme
 
-Yönettiğiniz Windows cihazlarda geçiş kodunu uzaktan sıfırlayabilmeniz için önce PIN sıfırlama hizmetinizi Intune kiracınıza eklemeli ve yönettiğiniz cihazları yapılandırmalısınız. Bunu ayarlamak için aşağıdaki yönergeleri izleyin:
+Windows cihazlarında geçiş kodunu sıfırlamak için, PIN sıfırlama hizmetini Intune kiracınıza ekleyin.
 
-### <a name="connect-intune-with-the-pin-reset-service"></a>Intune ile PIN sıfırlama hizmetini bağlama
+1. [Microsoft PIN Sıfırlama Hizmeti üretimine](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) gidin ve kiracı yönetici hesabını kullanarak oturum açın.
+2. PIN sıfırlama hizmetinin hesabınıza erişimini onaylamayı **kabul edin**: ![PIN Sıfırlama Sunucusu izin isteğini kabul edin](./media/pin-reset-service-home-screen.png)
+3. [Microsoft PIN Sıfırlama İstemcisi üretimine](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) gidin ve kiracı yönetici hesabını kullanarak oturum açın. PIN sıfırlama istemcisinin hesabınıza erişimini onaylamayı **kabul edin**.
+4. [Azure portalında](https://portal.azure.com), PIN sıfırlama hizmetlerinin Kurumsal uygulamalar (Tüm uygulamalar) içinde listelendiğini onaylayın: ![PIN sıfırlama hizmeti izinler sayfası](./media/pin-reset-service-application.png)
 
-1. [Microsoft PIN Sıfırlama Hizmeti Tümleştirmesi web sitesini](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) ziyaret edin ve Intune kiracınızı yönetmek için kullandığınız kiracı yönetici hesabınızla oturum açın.
-2. Oturum açtıktan sonra **Kabul Et**’e tıklayarak PIN sıfırlama hizmetinin hesabınıza erişmesine izin verin.<br>
-![PIN sıfırlama hizmeti izinleri sayfası](./media/pin-reset-service-application.png)
-3. Aşağıdaki ekran görüntüsünde gösterilen Azure portalı Kurumsal uygulamalar - Tüm uygulamalar dikey penceresinden Intune ve PIN sıfırlama hizmetinin tümleşik olduğunu doğrulayabilirsiniz:<br>
-![Azure’da PIN sıfırlama hizmeti uygulaması](./media/pin-reset-service-home-screen.png)
-4. Kiracı yönetici kimlik bilgilerinizi kullanarak [bu web sitesinde](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) oturum açın ve tekrar **Kabul Et**’e tıklayarak hizmetin hesabınıza erişmesine izin verin.
+> [!NOTE]
+> PIN sıfırlama isteklerini kabul ettikten sonra, `Page not found` iletisini alabilirsiniz veya hiçbir şey olmuyor gibi görünebilir. Bu, normal bir davranıştır. İki PIN Sıfırlama uygulamasının kiracınızda listelendiğini onaylamayı unutmayın.
 
-### <a name="configure-windows-devices-to-use-pin-reset"></a>Windows cihazları, PIN sıfırlama kullanmak üzere yapılandırma
+## <a name="configure-windows-devices-to-use-pin-reset"></a>Windows cihazları, PIN sıfırlama kullanmak üzere yapılandırma
 
-Yönettiğiniz Windows cihazlarda PIN sıfırlamayı yapılandırmak için bir [Intune Windows 10 özel cihaz ilkesi](custom-settings-windows-10.md) kullanarak bu özelliği etkinleştirin. İlkeyi, aşağıdaki Windows ilke yapılandırma hizmet sağlayıcısını (CSP) kullanarak yapılandırın:
+Yönettiğiniz Windows cihazlarında PIN sıfırlamayı yapılandırmak için bir [Intune Windows 10 özel cihaz ilkesi](custom-settings-windows-10.md) kullanın. İlkeyi, aşağıdaki Windows ilke yapılandırma hizmet sağlayıcısını (CSP) kullanarak yapılandırın:
 
+**Cihaz ilkesi kullanma** - `./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery`
 
-- **Cihazlar için** - **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery**
-
-*Kiracı kimliği* Azure Active Directory’nin **Özellikler** sayfasından elde edebileceğiniz Azure Active Directory, Dizin Kimliği’ne başvurur.
+*Kiracı kimliğini*, [Azure portalında](https://portal.azure.com) Azure Active Directory'nin **Özellikler**'i arasında listelenen Azure AD Dizin Kimliğinizle değiştirin.
 
 Bu CSP için değeri **True** olarak ayarlayın.
 
-## <a name="steps-to-reset-the-passcode"></a>Geçiş kodunu sıfırlama adımları
+> [!TIP]
+> İlkeyi oluşturduktan sonra, bunu bir gruba atarsınız (veya dağıtırsınız). İlke, kullanıcı gruplarına veya cihaz gruplarına atanabilir. Kullanıcı grubuna atarsanız, grup iOS gibi başka cihazları olan kullanıcıları içerebilir. Teknik olarak, ilke uygulanmaz ama bu cihazlar yine de durum ayrıntılarına eklenir.
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
-4. **Cihazlar** dikey penceresinde **Yönet** > **Tüm cihazlar**'ı seçin.
-5. Geçiş kodunu sıfırlamak istediğiniz cihazı seçin ve daha sonra cihaz özellikleri dikey penceresinde **Yeni geçiş kodu**’nu seçin.
-6. Görüntülenen onay ekranında **Evet**’i seçin. Böylece geçiş kodu oluşturulur ve gelecek yedi gün boyunca portalda görüntülenir.
+## <a name="reset-the-passcode"></a>Geçiş kodunu sıfırlama
 
-## <a name="next-steps"></a>Sonraki adımlar
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın. 
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+3. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
+4. Geçiş kodunu sıfırlamak istediğiniz cihazı seçin. Cihaz özelliklerinde **Yeni geçiş kodu**'nu seçin.
+5. Onaylamak için **Evet**'i seçin. Böylece geçiş kodu oluşturulur ve gelecek yedi gün boyunca portalda görüntülenir.
 
-Geçiş kodu sıfırlama başarısız olursa daha fazla bilgi almanız için portalda size bir link verilir.
+## <a name="next-step"></a>Sonraki adım
 
-
+Geçiş kodu sıfırlama başarısız olursa, portalda diğer ayrıntılara ulaşabilmeniz için bir bağlantı sağlanır.

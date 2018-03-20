@@ -1,12 +1,12 @@
 ---
-title: "MacOS için uyumluluk ilkesi oluşturma"
-titleSuffix: Azure portal
-description: "MacOS cihazlar için uyumluluk ilkesi oluşturmayı öğrenin."
+title: "Microsoft Intune’da macOS cihazı uyumluluk ilkesi oluşturma"
+titleSuffix: 
+description: "macOS cihazlarına Microsoft Intune cihaz uyumluluk ilkesi oluşturarak cihazın uyumlu olabilmesi için karşılaması gereken gereksinimleri belirtebilirsiniz."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune ile macOS cihazlar için cihaz uyumluluk ilkesi oluşturma
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+macOS için Intune cihaz uyumluluk ilkesi, macOS cihazlarının uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlar. Bu ilkeleri koşullu erişimle birlikte kullanarak şirket kaynaklarına erişime izin verebilir veya erişimi engelleyebilirsiniz; ayrıca cihaz raporları ve uyumsuzlukla ilgili önlemler alabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -108,17 +110,17 @@ Intune ile yeni bir cihaz uyumluluk ilkesi oluştururken, farklı kategorilerdek
 
 2. Başarılı bir şekilde oturum açtığınızda **Azure Panosu**’nu görebilirsiniz.
 
-3. Soldaki menüden **Daha fazla hizmet**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
+3. Soldaki menüden **Tüm hizmetler**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
 
 4. **Intune**’u seçin, **Intune Panosu**’nu görebilirsiniz.
 
 5. **Cihaz uyumluluğu** ve daha sonra **Yönet** altında **İlkeler**’i seçin.
 
-6. **İlke Oluştur**’u seçin.
+6. **İlke oluştur**’u seçin.
 
 7. Ad ve açıklama yazın ve bu ilkenin uygulanmasını istediğiniz platformu seçin.
 
-8. **MacOS uyumluluk ilkesi** dikey penceresi açılır; burada **Güvenlik**, **Cihaz sistem durumu** ve **Cihaz özelliği** uyumluluk ayarı kategorilerini seçerek ayarlarınızı belirtin.
+8. **Mac uyumluluk ilkesi** bölmesi açılır; burada **Sistem Güvenliği**, **Cihaz Durumu** ve **Cihaz Özellikleri** uyumluluk ayarı kategorilerini seçerek ayarlarınızı belirtin.
 
 10. Ayarlarınızı seçmeyi bitirdiğinizde her bir cihaz uyumluluk ayarı kategorisinin altında **Tamam**’ı seçin.
 
@@ -126,15 +128,15 @@ Intune ile yeni bir cihaz uyumluluk ilkesi oluştururken, farklı kategorilerdek
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 
-Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Uyumluluk ilkeleri** dikey penceresinde bulunabilir.
+Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Cihaz uyumluluğu - İlkeleri** bölmesinde bulunabilir.
 
-1. Kullanıcılara atamak istediğiniz cihaz uyumluluk ilkesini seçin ve sonra **Atamalar**’ı seçin. Bu işlem, **Azure Active Directory güvenlik gruplarını** seçebileceğiniz ve bunları ilkeye atayabileceğiniz dikey pencereyi açar.
+1. Kullanıcılara atamak istediğiniz cihaz uyumluluk ilkesini seçin ve sonra **Atamalar**’ı seçin. Bu işlem, **Azure Active Directory güvenlik gruplarını** seçebileceğiniz ve bunları ilkeye atayabileceğiniz bölmeyi açar.
 
-2. Azure AD güvenlik gruplarının görüntülendiği dikey pencereyi açmak için **Grupları seçin** öğesini seçin.
+2. Azure AD güvenlik gruplarının görüntülendiği bölmeyi açmak için **Seçilen gruplar**’ı seçin.
 
-3. Cihaz uyumluluk ilkesini Azure AD güvenlik gruplarına atamak için **Seç** ve **Kaydet**’i seçin.
+3. Cihaz uyumluluk ilkesini Azure AD güvenlik gruplarına atamak için **Kaydet**’i seçin.
 
-4. Cihaz uyumluluk ilkesini gruplarınıza atamayı bitirdiğinizde **Atamalar** dikey penceresini kapatabilirsiniz.
+4. Cihaz uyumluluk ilkesini gruplarınıza atamayı bitirdiğinizde **Atamalar** bölmesini kapatabilirsiniz.
 
     > [!TIP]
     > Cihazlar, varsayılan olarak her sekiz saatte bir uyumluluk denetimi yapar ancak kullanıcılar, Intune şirket portalı uygulaması aracılığıyla bu işlemi zorlayabilir.

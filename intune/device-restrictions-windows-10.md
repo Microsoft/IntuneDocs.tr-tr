@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 #<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune Windows 10 ve üzeri cihaz kısıtlama ayarları
 Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
@@ -268,7 +268,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 
       - **Kullanıcı hesabı**: Yerel (cihaz için) kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgilerini belirtir. Azure AD etki alanlarına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
 
-         Ortak ortamlardaki cihazlar için olabilecek en az ayrıcalıklı hesaplar kullanarak yetkilendirilmemiş etkinliklerin önüne geçin.  
+         Ortak ortamlardaki cihazlar için en düşük ayrıcalıklara sahip hesaplar kullanarak yetkilendirilmemiş etkinliklerin önüne geçin.  
 
       - **Bir uygulamanın uygulama kullanıcı modeli kimliği (AUMID)** - Bilgi noktası uygulamasının AUMID’ini belirtir. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 

@@ -1,12 +1,12 @@
 ---
-title: "Intune ile Mobile Threat Defense cihaz uyumluluk ilkesi oluşturma"
-titlesuffix: Azure portal
-description: "Intune'da Mobile Threat Defense cihaz uyumluluk ilkesi oluşturma"
+title: "Microsoft Intune ile MTD cihaz uyumluluk ilkesi oluşturma"
+titlesuffix: 
+description: "Bir mobil cihazın şirket kaynaklarına erişip erişemeyeceğini belirlemek için MTD iş ortağı tehdit düzeylerinizi kullanan bir Intune cihaz uyumluluğu ilkesi oluşturun."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune ile Mobile Threat Defense (MTD) cihaz uyumluluk ilkesi oluşturma
 
@@ -40,7 +40,7 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
 1.  [Azure portalı](https://portal.azure.com/)’na gidin ve Intune kimlik bilgilerinizle oturum açın.
 
-2.  **Azure Panosunda**, soldaki menüden **Diğer hizmetler**’i seçtikten sonra, metin kutusu filtresine **Intune** yazın.
+2.  **Azure Panosunda**, soldaki menüden **Tüm hizmetler**’i seçtikten sonra, metin kutusu filtresine **Intune** yazın.
 
 3.  **Intune**'u seçin, **Intune Panosu** açılır.
 
@@ -48,9 +48,9 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
 5.  **İlke oluştur**'u seçin, cihaz uyumluluğu için **Ad**, **Açıklama** girin, **Platform**'u seçin, sonra **Ayarlar** bölümünün altından **Yapılandır**'ı seçin.
 
-6.  **Uyumluluk ilkesi** dikey penceresinden **Cihaz Sistem Durumu**'nu seçin.
+6.  **Uyumluluk ilkesi** bölmesinden **Cihaz Sistem Durumu**’nu seçin.
 
-7.  **Cihaz Sistem Durumu** dikey penceresinden **Cihazın Mobile Threat Defense Düzeyi'nde veya altında olmasını gerektir**'in altındaki açılan listeden Mobile Threat Düzeyini seçin.
+7.  **Cihaz Sistem Durumu** bölmesinden **Cihazın Cihaz Tehdit Düzeyinde veya altında olmasını gerektir**'in altındaki açılan listeden Mobil Tehdit Düzeyini seçin.
 
     a.  **Güvenli**: En güvenli düzeydir. Cihazda herhangi bir tehdit mevcut olamaz ve yine de şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
 
@@ -67,11 +67,11 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>Bir MTD cihaz uyumluluk ilkesi atamak için
 
-Kullanıcılara bir cihaz uyumluluk ilkesi atamak için daha önce yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Cihaz Uyumluluk ilkeleri** dikey penceresinde bulunabilir.
+Kullanıcılara bir cihaz uyumluluk ilkesi atamak için daha önce yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Cihaz uyumluluk ilkeleri** bölmesinde bulunabilir.
 
-1. Kullanıcılara atamak istediğiniz ilkeyi seçin ve ardından **Atamalar**’ı seçin. Bu eylem, **Azure Active Directory güvenlik gruplarını** seçebileceğiniz ve bunları ilkeye atayabileceğiniz dikey pencereyi açar.
+1. Kullanıcılara atamak istediğiniz ilkeyi seçin ve ardından **Atamalar**’ı seçin. Bu eylem, **Azure Active Directory güvenlik gruplarını** seçebileceğiniz ve bunları ilkeye atayabileceğiniz bölmeyi açar.
 
-2. Azure AD güvenlik gruplarının görüntülendiği dikey pencereyi açmak için **Grupları seçin** öğesini seçin.  **Seç** öğesi seçildiğinde, ilke kullanıcılara dağıtılır.
+2. Azure AD güvenlik gruplarının görüntülendiği sayfayı açmak için **Dahil edilecek grupları seçin** öğesini seçin.  **Seç** öğesi seçildiğinde, ilke kullanıcılara dağıtılır.
 
     > [!NOTE] 
     > İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için denetlenir.

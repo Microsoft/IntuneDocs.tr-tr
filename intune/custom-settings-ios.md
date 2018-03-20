@@ -1,27 +1,25 @@
 ---
-title: "iOS cihazları için Intune özel ayarları"
+title: "iOS çalıştıran cihazlar için Microsoft Intune özel ayarları"
 titleSuffix: Azure portal
-description: "Bir iOS özel profilinde kullanabileceğiniz ayarları öğrenin.\""
+description: "iOS özel profilinde kullanabileceğiniz ayarları öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 761b19de8442e88717a5dcd52f7f0375bace91da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 40e34a2e22c9349cad63d813b892863e0e8a2933
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>iOS cihazları için Microsoft Intune özel ayarları
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>iOS çalıştıran cihazlar için Microsoft Intune özel cihaz ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,10 +29,10 @@ Bu özellik, diğer Intune profil türleriyle yapılandırılamayan iOS ayarlar�
 
 
 1. Başlamak için, [Microsoft Intune’da özel cihaz ayarlarını yapılandırma](custom-settings-configure.md) başlığı altında verilen yönergeleri kullanın.
-2. **Profil Oluştur** dikey penceresinde aşağıdakileri belirtin:
+2. **Özel Yapılandırma Profili** bölmesinde aşağıdaki ayarların her birini yapılandırın:
 
-- **Özel yapılandırma profili adı** - Cihazda ve Intune durum bilgisinde gösterileceği haliyle ilke için bir ad girin.
+- **Özel yapılandırma profili adı** - Cihazda ve Intune durum bilgisinde gösterildiği haliyle ilke için bir ad girin.
 - **Yapılandırma profili dosyası** - Apple Configurator’ı kullanarak oluşturduğunuz yapılandırma profiline gidin.
 Apple Configurator aracından dışarı aktardığınız ayarların, iOS özel ilkesini atadığınız cihazlardaki iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların nasıl çözümleneceği hakkında bilgi için, [Apple Developer](https://developer.apple.com/) web sitesinde **Yapılandırma Profili Başvurusu** ve **Mobil Cihaz Yönetim Protokolü Başvurusu** öğelerini arayın.
 
-İçeri aktardığınız dosya, dikey pencerenin **Dosya içeriği** alanında görüntülenir.
+İçeri aktardığınız dosya, bölmenin **Dosya içeriği** alanında görüntülenir.

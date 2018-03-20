@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Microsoft Intune’da VPN ayarlarını yapılandırma
 
@@ -37,7 +37,7 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 |Cisco (IPSec)|Hayır|Evet|Hayır|Hayır|Hayır|Hayır|
 |Citrix|Evet|Evet|Hayır|Hayır|Hayır|Evet|
 |F5 Edge İstemcisi|Evet|Evet|Evet|Evet|Evet|Evet|
-|Dell SonicWALL Mobile Connect|Evet|Evet|Evet|Evet|Evet|Evet|
+|SonicWall Mobile Connect|Evet|Evet|Evet|Evet|Evet|Evet|
 |Check Point Capsule VPN|Evet|Evet|Evet|Evet|Evet|Evet|
 |Cisco AnyConnect|Evet|Evet|Evet|Hayır|Hayır|Hayır|
 |Otomatik|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
@@ -54,12 +54,12 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>VPN ayarlarını içeren bir cihaz profili oluşturma
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
-2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
-3. Profiller dikey penceresinde **Profil Oluştur**’u seçin.
-4. **Profil Oluştur** dikey penceresinde, VPN profili için **Ad** ve **Açıklama** girin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
+2. **Cihaz yapılandırması** bölmesinde **Yönet** > **Profiller**’i seçin.
+3. Profiller bölmesinde **Profil oluştur**’u seçin.
+4. **Profil oluştur** bölmesinde, VPN profili için **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden, VPN ayarlarını uygulamak istediğiniz cihaz platformunu seçin. Şu anda, VPN cihaz ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
     - **Android**
     - **Android for Work**
@@ -76,9 +76,9 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
     - [Windows Phone 8.1 ayarları](vpn-settings-windows-phone-8-1.md)
     - [Windows 8.1 ayarları](vpn-settings-windows-8-1.md)
     - [Windows 10 ayarları](vpn-settings-windows-10.md) (Windows Holographic for Business dahil)
-8. Bitirdiğinizde **Profil Oluştur** dikey penceresine dönün ve **Oluştur**’a basın.
+8. Bitirdiğinizde **Profil oluştur** bölmesine dönün ve **Oluştur**’u seçin.
 
-Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
+Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).
 
 

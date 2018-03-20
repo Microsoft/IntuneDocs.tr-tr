@@ -1,6 +1,6 @@
 ---
 title: "Windows 10 için toplu kayıt"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Microsoft Intune için toplu kayıt paketi oluşturma"
 keywords: 
 author: Erikje
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 8b4c9f5685c12bb6c15d15d85c73d573dfcd66e8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 851be6ad98383937a3457a33e47115933f309cea
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
@@ -36,7 +36,7 @@ Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan I
 ## <a name="create-a-provisioning-package"></a>Sağlama paketi oluşturma
 
 1. Microsoft Mağazası'ndan [Windows Yapılandırma Tasarımcısı (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) uygulamasını indirin.
-![Windows Yapılandırma Tasarımcısı uygulamasının Mağaza ekran görüntüleri ve açıklamasının ekran görüntüsü](media/bulk-enroll-store.png)
+![Windows Yapılandırma Tasarımcısı uygulama mağazasının ekran görüntüsü](media/bulk-enroll-store.png)
 
 2. **Windows Yapılandırma Tasarımcısı** uygulamasını açın ve **Masaüstü cihazları sağla** seçeneğini belirleyin.
 ![Windows Yapılandırma Tasarımcısı uygulamasında Masaüstü cihazları sağla seçeneğini belirlemenin ekran görüntüsü](media/bulk-enroll-select.png)
@@ -47,23 +47,24 @@ Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan I
   - **Açıklama** - Proje için isteğe bağlı bir açıklama ![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-name.png)
 
 4.  Cihazlarınız için benzersiz bir ad girin. Adlar bir seri numarası (%%SERIAL%%) veya rastgele bir karakter kümesi içerebilir. İsteğe bağlı olarak Windows sürümünü yükseltiyor, cihazı paylaşımlı kullanım için yapılandırıyor ve önceden yüklenmiş yazılımları kaldırıyorsanız bir ürün anahtarı girebilirsiniz.
-![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-device.png)
+
+    ![Windows Yapılandırma Tasarımcısı uygulamasında ad ve ürün anahtarı belirtme ekran görüntüsü](media/bulk-enroll-device.png)
 
 5.  İsteğe bağlı olarak, cihazları ilk kez başlattığınızda bağlanacakları Wi-Fi ağını yapılandırabilirsiniz.  Ağ cihazları yapılandırılmadıysa, cihaz ilk başlatıldığında kablolu bir ağ bağlantısı gerekir.
 ![Windows Yapılandırma Tasarımcısı uygulamasında Ağ SSID’si ve Ağ türü seçeneklerini içeren Wi-Fi etkinleştirme ekran görüntüsü](media/bulk-enroll-network.png)
 
 6.  **Azure AD'ye Kaydet**’i seçin, bir **Toplu Belirteç Süre Sonu** tarihi girin ve ardından **Toplu Belirteç Al**’ı seçin.
-![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-account.png)
+![Windows Yapılandırma Tasarımcısı uygulamasında hesap yönetiminin ekran görüntüsü](media/bulk-enroll-account.png)
 
 7. Bir toplu belirteç almak için Azure AD kimlik bilgilerinizi sağlayın.
-![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-cred.png)
+![Windows Yapılandırma Tasarımcısı uygulamasında oturum açma ekran görüntüsü](media/bulk-enroll-cred.png)
 
 8.  **Toplu Belirteç** başarıyla alındığında **İleri**’ye tıklayın.
 
 9. İsteğe bağlı olarak, **Uygulama ekleyebilir** ve **Sertifika ekleyebilirsiniz**. Bu uygulamalar ve sertifikalar cihazda sağlanır.
 
 10. İsteğe bağlı olarak, sağlama paketinizi parola ile koruyabilirsiniz.  **Oluştur**'a tıklayın.
-![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-create.png)
+![Windows Yapılandırma Tasarımcısı uygulamasında paket koruması ekran görüntüsü](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Cihaz sağlama
 

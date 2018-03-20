@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune’da e-posta ayarlarını yapılandırma
 
@@ -39,17 +39,19 @@ Bu makalede verilen bilgileri kullanarak e-posta profilini yapılandırmanın te
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>E-posta ayarlarını içeren bir cihaz profili oluşturma
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3. **Intune** sayfasında, **Cihaz yapılandırması**’nı seçin.
-2. **Cihaz Yapılandırması** sayfasında **Yönet** > **Profiller**’i seçin.
-3. Profiller sayfasında **Profil oluştur**’u seçin.
-4. **Profil Oluştur** sayfasında, e-posta profili için bir **Ad** ve **Açıklama** girin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
+2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
+3. Profiller bölmesinde **Profil oluştur**’u seçin.
+4. **Profil oluştur** bölmesinde, e-posta profili için bir **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden, e-posta ayarlarını uygulamak istediğiniz cihaz platformunu seçin. Şu anda, e-posta cihaz ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
     - **Android** (yalnızca Samsung Android Knox Standard)
     - **Android for Work**
-    - **iOS**
+    - **Android**
+    - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 ve üzeri**
     - **Windows 10 ve üzeri**
 6. **Profil** türü açılan listesinden **E-posta**’yı seçin.
 7. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
@@ -57,9 +59,9 @@ Bu makalede verilen bilgileri kullanarak e-posta profilini yapılandırmanın te
     - [iOS ayarları](email-settings-ios.md)
     - [Windows Phone 8.1 ayarları](email-settings-windows-phone-8-1.md)
     - [Windows 10 ayarları](email-settings-windows-10.md)
-8. Bitirdiğinizde **Profil Oluştur** sayfasına dönün ve **Oluştur**’a basın.
+8. Bitirdiğinizde **Profil oluştur** bölmesine dönün ve **Oluştur**’a basın.
 
-Profil oluşturulur ve profil listesi sayfasında görüntülenir.
+Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).
 
 ## <a name="further-information"></a>Daha fazla bilgi

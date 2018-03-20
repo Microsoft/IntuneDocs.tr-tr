@@ -15,11 +15,11 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0185eebbe436da73e1920d7cd834f0897a143894
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3198a62e437e5ccaa3cfc71d1f643f073d41ed05
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Microsoft Intune'da uygulama eklemeye başlama
 
@@ -28,35 +28,24 @@ Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune
 Intune kurumsal cihazlarınıza aşağıdaki uygulama türlerini eklemenize ve atamanıza izin verir:
 - **Mağazadan uygulamalar** - App Store’da mevcut olan uygulamalarda ek mobil uygulama yönetimine gerek duyduğunuz cihazlar için.
 - **Şirket içinde yazılan uygulamalar (iş kolu)** - Kullanıcılarınızın cihazlarına indirilen bir dosyayı karşıya yüklersiniz.
-- **Yerleşik uygulamalar** - iOS ve Android cihazlara Office 365 uygulamaları gibi seçkin yönetilen uygulamaları atarsınız. 
+- **Yerleşik uygulamalar** - iOS ve Android cihazlara Office 365 uygulamaları gibi seçkin yönetilen uygulamaları atarsınız.
 - **Web’deki uygulamalar** - Intune, cihaz giriş ekranında web uygulaması için bir kısayol oluşturur.
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>Bir ortak mağaza uygulamasını nasıl atarım?
 
-Aşağıdaki örnek, Microsoft Intune'da bir iOS uygulamasının nasıl ekleneceğini adım adım açıklar.
-
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-4. **Mobil uygulamalar** iş yükündeki **Yönet** grubu altında **Uygulamalar**’ı seçin.
-5. **Uygulamalar** bölmesinin sağ tarafındaki **Ekle**’yi seçin.
-6. **Uygulama türü** listesinde kullanılabilir **Mağaza uygulaması** türleri altından **iOS**’u seçin.
-6. **App Store’da Ara**’yı seçin.
-7. **App Store’da Ara** dikey penceresinde önce App Store ülke yerel ayarını seçin.
-8. Adı (veya adın bir kısmını) arama kutusuna yazın. Intune, mağazada arama yapar ve ilgili sonuçların listesini getirir.
-9. Listeden istediğiniz uygulamayı seçin ve ardından **Seçin**’e tıklayın.
-10. **Uygulama bilgileri**’ni seçerek uygulama bilgilerini yapılandırın.
-11. (İsteğe bağlı) Bu uygulamayı düzenlemenize yardımcı olacak **Sahibi**, **Notlar**, **Geliştirici** gibi başka ayrıntılar ve bir **Gizlilik URL'si** (şirketinizin gizlilik ilkesi için) ekleyin.
-12. **Bunu Şirket Portalı'nda öne çıkan bir uygulama olarak görüntüle** için **Evet**'i seçin. 
-13. Tüm gerekli uygulama bilgilerini ekledikten sonra **Tamam**’a tıklayın.
-14. **Uygulama ekle** yatay penceresinde **Ekle**’ye tıklayın. Bu, sizi uygulamanın **Genel Bakış** kısmına götürür. 
+3. **Mobil Uygulamalar**'ı, sonra **Uygulamalar**'ı seçin.
+4. **Ekle**’yi ve ardından **Uygulama türü** olarak **iOS**’u seçin.
+5. **Uygulama seçin**’i belirleyerek **App Store’da Ara** bölmesini görüntüleyin.
+6. Metin kutusunda cihaza atayacak bir uygulama arayın. Uygulamayı seçin ve **Seç**'e tıklayın.
+7. **Uygulama ekle** bölmesinde **Uygulama bilgileri**'ni seçin, sonra tüm uygulama bilgilerinin doldurulduğundan emin olun. Bu uygulamayı düzenlemenize yardımcı olacak **Sahibi**, **Notlar**, **Geliştirici** gibi isteğe bağlı başka ayrıntılar ve şirketinizin gizlilik ilkesi için bir **Gizlilik URL'si** ekleyebilirsiniz.
+8. **Bunu Şirket Portalı'nda öne çıkan bir uygulama olarak görüntüle** için **Evet**'i seçtiğinizden emin olun, sonra **Tamam**'ı seçin.
+9. **Uygulama ekle** bölmesinde **Ekle**'yi seçerek uygulamayı ekleyin. Bu eylem, sizi uygulamanın **Genel Bakış**'ına yönlendirir. **Atamalar**'ı seçin, sonra sınama grubunuza atamak için **Grup ekle**'ye tıklayın. Uygulamayı indirebilmek için **Kullanılabilir** yapın. Uygulama artık sınama cihazınızda **Öne Çıkan Uygulama** olarak görünür.
 
-## <a name="next-steps"></a>Sonraki adımlar
-
-Artık bir uygulamayı Intune’a eklediğinize göre, hangi çalışan gruplarının uygulamayı cihazlarına ekleyebileceklerini belirleyebilirsiniz.
 
 - [Uygulamaları gruplara ekleme](apps-deploy.md)
-- 
+
 ## <a name="learn-more"></a>Daha fazlasını öğrenin
 
 * [Intune ile uygulama yönetimi nedir?](app-management.md)

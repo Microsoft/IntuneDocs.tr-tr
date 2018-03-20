@@ -5,7 +5,7 @@ keywords: intune graphapi c# powershell permission roles
 author: vhorne
 manager: dougeby
 ms.author: victorh
-ms.date: 06/20/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 7b59d4bc689daf462ac01a106457c3835a78b98b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Microsoft Graph’ta Intune API’lerine erişmek için Azure AD kullanma
 
@@ -44,7 +44,7 @@ Bu makalede:
 
 - C# ve PowerShell için Intune API’si kimlik doğrulama örnekleri verilir.
 
-- Birden çok kiracının nasıl destekleneceği açıklanır
+- Birden çok kiracının nasıl destekleneceği açıklanır.
 
 Daha fazla bilgi için bkz:
 
@@ -97,7 +97,7 @@ Uygulamaları Microsoft Graph API kullanmak üzere kaydetmek için:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    İlgili adların soluna onay işareti koyarak uygulamanız için gereken rolleri seçin.  Belirli Intune izin kapsamları hakkında bilgi edinmek için bkz. [Intune izin kapsamları](#user-content-intune-permission-scopes).  Diğer Graph API'si izin kapsamları hakkında bilgi edinmek için bkz. [Microsoft Graph izinleri başvurusu](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+    İlgili adların soluna onay işareti koyarak uygulamanız için gereken rolleri seçin.  Belirli Intune izin kapsamları hakkında bilgi edinmek için bkz. [Intune izin kapsamları](#intune-permission-scopes).  Diğer Graph API'si izin kapsamları hakkında bilgi edinmek için bkz. [Microsoft Graph izinleri başvurusu](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
     En iyi sonuçlar için, uygulamanızı uygulamak için gereken en düşük rolü seçin.
 
@@ -139,7 +139,7 @@ Microsoft Graph’a izin verdiğinizde, Intune özelliklerine erişimi denetleme
 
 _Erişimi Etkinleştir_ ayarı | Kapsam adı
 :--|:--
-__Microsoft Intune cihazlarında kullanıcıları etkileyen uzak eylemler gerçekleştirme__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Microsoft Intune cihazlarında kullanıcıları etkileyen uzak eylemler gerçekleştirme__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __Microsoft Intune cihazlarını okuma ve yazma__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Microsoft Intune cihazlarını okuma__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Microsoft Intune RBAC ayarlarını okuma ve yazma__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
@@ -585,7 +585,7 @@ Gerekirse kullanıcıyı diğer rollere de eklemeyi unutmayın. Örneğin, kulla
 
 Ayrıca:
 
-- Kullanıcı hesabınıza bir Intune lisansı atamak için http://portal.office.com adresini kullanın.
+- Kullanıcı hesabınıza bir Intune lisansı atamak için https://portal.office.com adresini kullanın.
 
 - Uygulama kodunu kendinizin değil, istemcinin Azure AD kiracısı etki alanının kimlik doğrulaması için güncelleştirin.
 

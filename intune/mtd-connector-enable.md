@@ -1,12 +1,12 @@
 ---
-title: "Intune ile Mobil Threat Defense bağlayıcısını etkinleştirme"
+title: "Microsoft Intune'da Mobile Threat Defense bağlayıcısını etkinleştirme"
 titlesuffix: Azure portal
-description: "Intune'da Mobil Threat Defense bağlayıcısını etkinleştirin."
+description: "Mobile Threat Defense (MTD) iş ortağınız ile Microsoft Intune arasında bağlayıcıyı etkinleştirin."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,30 +15,30 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b73cb0885c4d93cf91ea219ca98a8a81d67b39
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 28233965fb68ef1b83b07d14d39568b5bd997c89
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="enable-mobile-threat-defense-in-intune"></a>Intune’da Mobile Threat Defense’i etkinleştirme
+# <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune'da Mobil Threat Defense bağlayıcısını etkinleştirme
 
 > [!NOTE] 
 > Bu konu, tüm Mobile Threat Defense iş ortakları için geçerlidir.
 
-Intune'da Mobile Threat Defense (MTD) bağlantısını etkinleştirmek için MTD ortağı konsolunda daha önce Intune Bağlayıcısı'nı yapılandırmış olmanız gerekir.
+Mobile Threat Defense (MTD) kurulumu sırasında, MTD iş ortağı konsolunuzdaki tehditleri sınıflandırmak için bir ilke yapılandırdınız ve Intune’da cihaz uyumluluk ilkesi oluşturdunuz. MTD iş ortağı konsolunda Intune bağlayıcısını zaten yapılandırdıysanız, şimdi Intune’da MTD bağlantısını etkinleştirebilirsiniz.
 
 ## <a name="to-enable-the-mtd-connector"></a>MTD bağlayıcısını etkinleştirmek için
 
 1. [Azure portalı](https://portal.azure.com)’na gidin ve Intune kimlik bilgilerinizle oturum açın. Oturumunuz başarıyla açıldıktan sonra **Azure Panosu**'nu görürsünüz.
 
-2. **Azure Panosunda**, soldaki menüden **Diğer hizmetler**’i seçtikten sonra, metin kutusu filtresine **Intune** yazın.
+2. **Azure Panosu**'nda, soldaki menüden **Tüm hizmetler**’i seçtikten sonra, metin kutusu filtresine **Intune** yazın.
 
-3. **Intune**'u seçin, **Intune Panosu** açılır.
+3. **Intune**'u seçin; **Intune Panosu** açılır.
 
 4. **Intune Panosunda**, **Cihaz uyumluluğu**’nu, ardından **Mobile Threat Defense**’i **Kurulum** bölümü altında seçin.
 
-5. **Mobile Threat Defense** dikey penceresinde, **Ekle**’yi seçin.
+5. **Mobile Threat Defense** bölmesinde **Ekle**’yi seçin.
 
 6. Açılan listeden MTD çözümünü **Kurulacak Mobile Threat Defense bağlayıcısı** olarak seçin.
 
@@ -48,7 +48,7 @@ Intune'da Mobile Threat Defense (MTD) bağlantısını etkinleştirmek için MTD
 
 ## <a name="mtd-toggle-options"></a>MTD geçiş seçenekleri
 
-Kuruluşunuzun gereksinimlerine göre hangi MTD geçiş seçeneklerini etkinleştirmeniz gerektiğine karar verebilirsiniz. Daha ayrıntılı anlatmak gerekirse:
+Kuruluşunuzun gereksinimlerine göre hangi MTD geçiş seçeneklerini etkinleştirmeniz gerektiğine karar verebilirsiniz. Daha fazla ayrıntı aşağıdadır:
 
 - **Android 4.1+ cihazları, [MTD iş ortağı adı] for Work MTD'ye bağla**: Bu seçeneği etkinleştirdiğinizde, Android 4.1+ cihazların güvenlik riskini Intune’a geri raporlamasını sağlayabilirsiniz.
     - **Veri alınmazsa uyumsuz olarak işaretle**: Intune, bu platformdaki bir cihaz hakkında MTD iş ortağından herhangi bir veri almazsa cihazın uyumsuz olarak değerlendirilmesini sağlar.
@@ -64,4 +64,4 @@ Kuruluşunuzun gereksinimlerine göre hangi MTD geçiş seçeneklerini etkinleş
 > Cihaz uyumluluğunu ve koşullu erişim ilkesi kurallarını oluşturmadan önce MTD uygulamalarını ekleyip atamanız gerekir. Bu, MTD uygulamasının, e-postaya veya diğer şirket kaynaklarına erişim sağlamadan önce son kullanıcılar için hazır ve kullanılabilir olmasını sağlar.
 
 > [!TIP]
-> Intune ve MTD iş ortağı arasındaki **Bağlantı durumu** ve **Son eşitleme** zamanını Mobile Threat Defense dikey penceresinden görebilirsiniz.
+> Intune ve MTD ortağı arasındaki **Bağlantı durumu** ve **Son eşitleme** zamanını Mobile Threat Defense bölmesinden görebilirsiniz.

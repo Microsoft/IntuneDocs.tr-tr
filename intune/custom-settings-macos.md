@@ -1,27 +1,25 @@
 ---
-title: "macOS cihazları için Intune özel ayarları"
-titleSuffix: Azure portal
-description: "Bir macOS özel profilinde kullanabileceğiniz ayarları öğrenin.\""
+title: "macOS çalıştıran cihazlar için Microsoft Intune özel ayarları"
+titleSuffix: 
+description: "Bir macOS özel profilinde kullanabileceğiniz ayarları öğrenin."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88224849de0727418197fcfdb96cac3b4c2ca0e7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ccc9d48eb16ce155bbed2bbdf38793b8f3bdfda
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune’da macOS cihazları için özel ayarlar
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>macOS çalıştıran cihazlar için Microsoft Intune özel cihaz ayarları
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,10 +29,10 @@ Bu özellik, diğer Intune profil türleriyle yapılandırılamayan macOS ayarla
 
 
 1. Başlamak için, [Microsoft Intune’da özel cihaz ayarlarını yapılandırma](custom-settings-configure.md) başlığı altında verilen yönergeleri kullanın.
-2. **Profil Oluştur** dikey penceresinde aşağıdakileri belirtin:
+2. **Özel Yapılandırma Profili** bölmesinde aşağıdaki ayarların her birini yapılandırın:
 
-- **Özel yapılandırma profili adı** - Cihazda ve Intune durum bilgisinde gösterileceği haliyle ilke için bir ad girin.
+- **Özel yapılandırma profili adı** - Cihazda ve Intune durum bilgisinde gösterildiği haliyle ilke için bir ad girin.
 - **Yapılandırma profili dosyası** - Apple Configurator’ı kullanarak oluşturduğunuz yapılandırma profiline gidin.
 Apple Configurator aracından dışarı aktardığınız ayarların, macOS özel ilkesini atadığınız cihazlardaki macOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların nasıl çözümleneceği hakkında bilgi için, [Apple Developer](https://developer.apple.com/) web sitesinde **Yapılandırma Profili Başvurusu** ve **Mobil Cihaz Yönetim Protokolü Başvurusu** öğelerini arayın.
 
-İçeri aktardığınız dosya, dikey pencerenin **Dosya içeriği** alanında görüntülenir.
+İçeri aktardığınız dosya, bölmenin **Dosya içeriği** alanında görüntülenir.

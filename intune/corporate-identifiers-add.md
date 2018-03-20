@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -70,7 +70,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>Kurumsal tanımlayıcıları içeren .csv listesini ekleme
 
-1. Azure portalında Intune’da **Cihaz kaydı** > **Kurumsal Cihaz Tanımlayıcıları**’nı seçin ve **Ekle**’ye tıklayın.
+1. [Azure portalında Intune’da](https://portal.azure.com) **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları**’nı seçin ve **Ekle**’ye tıklayın.
 
  ![Kurumsal cihaz tanımlayıcısı çalışma alanı ile Ekle düğmesinin vurgulanmış hali](./media/add-corp-id.png)
 
@@ -82,11 +82,11 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 ### <a name="delete-corporate-identifiers"></a>Kurumsal tanımlayıcıları silme
 
-1. Azure portalında Intune’da **Cihaz kaydı** > **Kurumsal Cihaz Tanımlayıcıları**’nı seçin.
+1. [Azure portalında Intune’da](https://portal.azure.com) **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları**’nı seçin.
 2. Silmek istediğiniz cihaz tanımlayıcılarını seçin ve **Sil**’e dokunun.
 3. Silmeyi onaylayın.
 
-Kayıtlı bir cihazın şirket tanımlayıcısını silmek, cihaz sahipliğini değiştirmez. Cihaz sahipliğini değiştirmek için **Cihazlar** > **Tüm cihazlar**’a gidin, cihazı seçin, **Özellikler**’i seçin ve **Cihaz sahipliği**’ni değiştirin.
+Kayıtlı bir cihazın şirket tanımlayıcısını silmek, cihaz sahipliğini değiştirmez. Cihaz sahipliğini değiştirmek için **Cihazlar**’a gidip cihazı seçin, **Özellikler**’i seçin ve **Cihaz sahipliği**’ni değiştirin.
 
 ### <a name="imei-specifications"></a>IMEI belirtimleri
 Uluslararası Mobil Donanım Kimlikleri (IMEI) hakkındaki ayrıntılı belirtimler için bkz. [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
@@ -96,7 +96,7 @@ Uluslararası Mobil Donanım Kimlikleri (IMEI) hakkındaki ayrıntılı belirtim
 Intune’daki tüm cihaz kayıtlarının cihaz özelliklerinde **Sahiplik** görüntülenir. Yönetici olarak, cihazları **Kişisel** veya **Şirkete ait** olarak belirtebilirsiniz.
 
 **Cihaz sahipliğini değiştirmek için:**
-1. Azure portalında Intune’da, **Cihazlar** > **Tüm cihazlar**’a gidin ve cihazı seçin.
+1. [Azure portalında Intune](https://portal.azure.com)’da, **Cihazlar**’a gidin ve cihazı seçin.
 3. **Özellikler**’i seçin.
 4. **Cihaz sahipliği**’ni **Kişisel** veya **Şirkete ait** olarak belirtin.
 

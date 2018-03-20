@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d415628419bec26c24494b38a13bd3801051c603
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>İş için Windows Hello ile Microsoft Intune tümleştirmesi
 
@@ -48,19 +48,19 @@ PIN’i denetlemek için iki ilke türünü de ayarladıysanız, İş için Wind
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>İş İçin Windows Hello ilkesi oluşturma
 
-1.  Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1.  [Azure portalı](https://portal.azure.com)’nda **Tüm Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 
-2.  Intune sayfasında **Cihaz kaydı**’nı ve ardından **Windows kaydı** > **İş İçin Windows Hello**’yu seçin.
+2.  Intune bölmesinde **Cihaz kaydı**’nı ve ardından **Windows kaydı** > **İş İçin Windows Hello**’yu seçin.
 
-3.  Açılan sayfada **Varsayılan** ayarları seçin.
+3.  Açılan bölmede **Varsayılan** ayarları seçin.
 
-4.  **Tüm Kullanıcılar** sayfasında **Özellikler**’e tıklayın, ardından İş İçin Windows Hello ayarları için **Ad** ve isteğe bağlı olarak **Açıklama** girin.
+4.  **Tüm Kullanıcılar** bölmesinde **Özellikler**’e tıklayın, ardından İş İçin Windows Hello ayarları için **Ad** ve isteğe bağlı olarak **Açıklama** girin.
 
-5. **Tüm Kullanıcılar** sayfasında **Ayarlar**’a tıklayın ve **İş İçin Windows Hello’yu yapılandır** seçeneği için aşağıdakilerden birini seçin:
+5. **Tüm Kullanıcılar** bölmesinde **Ayarlar**’a tıklayın ve **İş İçin Windows Hello’yu yapılandır** seçeneği için aşağıdakilerden birini seçin:
 
     - **Devre Dışı**. İş İçin Windows Hello’yu kullanmak istemiyorsanız, bu ayarı seçin. Bu durumda, ekrandaki tüm diğer ayarlar kullanılamaz hale gelir.
     - **Etkin**. İş İçin Windows Hello ayarlarını yapılandırmak istiyorsanız bu ayarı seçin.
-    - **Yapılandırılmadı**. Intune’un İş İçin Windows Hello ayarlarını denetlemesini istemiyorsanız bu ayarı seçin. Windows 10 cihazlarında bulunan İş için Windows Hello ayarları değiştirilmez. Sayfadaki diğer ayarlardan hiçbiri kullanılamaz.
+    - **Yapılandırılmadı**. Intune’un İş İçin Windows Hello ayarlarını denetlemesini istemiyorsanız bu ayarı seçin. Windows 10 cihazlarında bulunan İş için Windows Hello ayarları değiştirilmez. Bölmedeki diğer ayarlardan hiçbiri kullanılamaz.
 
 6.  Önceki adımda **Etkin**’i seçtiyseniz, tüm kayıtlı Windows 10 ve Windows 10 Mobile cihazlarına uygulanacak olan gerekli ayarları yapılandırın.
 
@@ -69,9 +69,9 @@ PIN’i denetlemek için iki ilke türünü de ayarladıysanız, İş için Wind
      - **Gerekli** (varsayılan). Yalnızca erişilebilir bir TPM’si olan cihazlar İş İçin Windows Hello sağlayabilir.
      - **Tercih edilen**. Cihazlar ilk olarak bir TPM kullanmayı dener. Bu seçenek mevcut değilse yazılım şifreleme kullanabilirler.
 
- - **Minimum PIN uzunluğunu gerekli kıl**/**Maksimum PIN uzunluğunu gerekli kıl**. Cihazları, güvenli oturum açma için sizin belirttiğiniz minimum ve maksimum PIN uzunluklarını kullanacak şekilde yapılandırır. Varsayılan PIN uzunluğu altı karakterdir, ancak minimum dört karakterlik bir uzunluğu zorunlu tutabilirsiniz. Maksimum PIN uzunluğu 127 karakterdir.
+ - **En düşük PIN uzunluğu**/**En yüksek PIN uzunluğu**. Cihazları, güvenli oturum açma için sizin belirttiğiniz minimum ve maksimum PIN uzunluklarını kullanacak şekilde yapılandırır. Varsayılan PIN uzunluğu altı karakterdir, ancak minimum dört karakterlik bir uzunluğu zorunlu tutabilirsiniz. Maksimum PIN uzunluğu 127 karakterdir.
 
- - **PIN’de küçük harf kullanımını gerekli kıl**/**PIN’de büyük harf kullanımını gerekli kıl**/**PIN’de özel karakter kullanımını gerekli kıl**. PIN’de büyük harf, küçük harf ve özel karakter kullanımını gerekli kılarak daha güçlü PIN zorunluluğu getirebilirsiniz. Aşağıdakilerden birini seçin:
+ - **PIN’de küçük harfler**/**PIN’de büyük harfler**/**PIN’de özel karakterler**. PIN’de büyük harf, küçük harf ve özel karakter kullanımını gerekli kılarak daha güçlü PIN zorunluluğu getirebilirsiniz. Aşağıdakilerden birini seçin:
 
      - **İzin Verildi**. Kullanıcılar PIN kodlarında karakter türü kullanabilir ancak bu zorunlu değildir.
 
@@ -90,7 +90,7 @@ PIN’i denetlemek için iki ilke türünü de ayarladıysanız, İş için Wind
 
  - **Varsa, gelişmiş kimlik sahtekarlığına karşı koruma kullan**. Windows Hello’nun yanıltmaya karşı koruma özelliklerinin bunu destekleyen cihazlarda kullanılıp kullanılmayacağını yapılandırır (örneğin, gerçek yüz yerine yüzün fotoğrafı olduğunu algılama).<br>Bu **Evet** olarak ayarlanırsa Windows, desteklenen durumlarda yüz özellikleri için tüm kullanıcıların yanıltma koruması kullanmasını gerektirir.
 
- - **Telefonla oturum açma kullanın**. Bu seçenek **Evet** olarak ayarlanırsa, kullanıcılar masaüstü bilgisayar kimlik doğrulaması için bir taşınabilir özel cihaz olarak hizmet verecek bir uzak passport kullanabilir. Masaüstü bilgisayarının Azure Active Directory’ye katılmış ve eşlik eden cihazın bir İş İçin Windows Hello PIN’i ile yapılandırılmış olması gerekir.
+ - **Telefonla oturum açmaya izin ver**. Bu seçenek **Evet** olarak ayarlanırsa, kullanıcılar masaüstü bilgisayar kimlik doğrulaması için bir taşınabilir özel cihaz olarak hizmet verecek bir uzak passport kullanabilir. Masaüstü bilgisayarının Azure Active Directory’ye katılmış ve eşlik eden cihazın bir İş İçin Windows Hello PIN’i ile yapılandırılmış olması gerekir.
 
 ## <a name="windows-holographic-for-business-support"></a>Windows 10 Holographic for Business desteği
 

@@ -1,11 +1,12 @@
 ---
-title: "Veri Ambarı veri modeli | Microsoft Docs"
-description: "Intune Veri Ambarı, sürekli değişen mobil ortamınızın geçmiş bilgilerini görüntülemenizi sağlamak için günlük olarak veri örnekleri alır."
+title: "Veri Ambarı veri modeli"
+titlesuffix: Microsoft Intune
+description: "Microsoft Intune Veri Ambarı, sürekli değişen mobil ortamınızın geçmiş bilgilerini görüntülemenizi sağlamak için günlük olarak veri örnekleri alır."
 keywords: "Intune Veri Ambarı"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>Veri Ambarı veri modeli
 
-Intune Veri Ambarı, sürekli olarak değişen mobil cihazların bulunduğu ortamın tarihsel bir görünümünü sağlamak için verileri örnekler. Görünüm, zamanla ilgili şeylerden oluşur.
+Intune Veri Ambarı, sürekli olarak değişen mobil cihazların bulunduğu ortamın tarihsel bir görünümünü sağlamak için verileri örnekler. Görünüm, zaman içinde ilgili varlıklardan oluşur.
 
-## <a name="things-entity-sets"></a>Şeyler: Varlık kümeleri
+## <a name="entities-entity-sets"></a>Varlıklar: Varlık kümeleri
 
 Ambar, verileri aşağıdaki üst düzey kategorilerde kullanıma sunar:
 
@@ -33,7 +34,7 @@ Ambar, verileri aşağıdaki üst düzey kategorilerde kullanıma sunar:
   -  Uygulama ve yazılım envanteri
   -  Cihaz yapılandırması ve uyumluluk ilkeleri
 
-Bu alanlar, Intune ortamınızla ilişkili olan varlıkları veya şeyleri içerir. Varlıklar kümeleri ile ilgili ayrıntıları aşağıdaki konularda bulabilirsiniz:
+Bu alanlar, Intune ortamınızla ilişkili olan varlıkları içerir. Varlıklar kümeleri ile ilgili ayrıntıları aşağıdaki konularda bulabilirsiniz:
 
   -  [Uygulama](reports-ref-application.md)
   -  [Tarih](reports-ref-date.md)

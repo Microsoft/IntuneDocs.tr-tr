@@ -1,7 +1,7 @@
 ---
-title: "Intune ile Skycure tümleştirmesini kurma"
-titlesuffix: Azure portal
-description: "Microsoft Intune ile Skycure tümleştirmesini kurun."
+title: "Microsoft Intune ile Skycure tümleştirmesini ayarlama"
+titlesuffix: 
+description: "Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Microsoft Intune ile Skycure Mobile Threat Defense (MTD) çözümünü ayarlama."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,15 +15,15 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a1cea01960512ca484caa643862d90cbb867963
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Intune ile Skycure tümleştirmesini kurma
 
-Çoklu Oturum Açma özelliklerini kullanabilmek için Azure AD’ye Skycure uygulamalarını eklemelisiniz.
+Skycure Mobile Threat Defense çözümünü Intune ile tümleştirmek için aşağıdaki adımları tamamlayın. Çoklu Oturum Açma özelliklerini kullanabilmek için Azure AD’ye Skycure uygulamalarını eklemelisiniz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -62,15 +62,15 @@ Skycure, Intune ile iki tümleştirme modunu destekler:
 
 4.  **iOS Uygulaması** etiketinde **Active Directory’ye Ekle**’ye tıklayın.
 
-    ![Skycure Yönetim konsolunda iOS uygulaması](./media/skycure-setup-1.png)
+    ![Skycure Yönetim konsolunda iOS uygulamasının resmi](./media/skycure-setup-1.png)
 
 5.  Oturum açma sayfası açılır; Intune kimlik bilgilerinizi girin ve **Kabul Et**’e tıklayın.
 
-    ![iOS uygulaması Intune oturum açma istemi](./media/skycure-setup-2.png)
+    ![iOS uygulaması Intune oturum açma istemi resmi](./media/skycure-setup-2.png)
 
 6.  Uygulama Azure AD’ye eklendikten sonra, Skycure Yönetim konsolunda uygulamanın Azure AD’ye başarıyla eklendiğine ilişkin bir gösterge görebilirsiniz.
 
-    ![iOS uygulaması tamamlanma ekranı](./media/skycure-setup-3.png)
+    ![iOS uygulaması tamamlanma ekranı resmi](./media/skycure-setup-3.png)
 
 > [!NOTE]
 > **Skycure Android** ve **Yönetim** uygulamaları için de ayrı işlemi yineleyin.
@@ -79,13 +79,13 @@ Skycure, Intune ile iki tümleştirme modunu destekler:
 
 Skycure çalıştıran tüm cihazları yer aldığı Azure AD güvenlik grubunu eklemelisiniz.
 
-1.  Skycure çalıştıran cihazların tüm güvenlik gruplarını girin ve seçin, ardından **Değişiklikleri uygula**’ya tıklayın.
+-  Skycure çalıştıran cihazların tüm güvenlik gruplarını girin ve seçin, ardından **Değişiklikleri uygula**’ya tıklayın.
 
-    ![Skycure Yönetim konsolu güvenlik grubunu yapılandırma](./media/skycure-setup-4.png)
+    ![Skycure Yönetim konsolu güvenlik grubunun nereden yapılandırılacağını gösteren resim](./media/skycure-setup-4.png)
 
 Skycure, Mobile Threat Defense hizmetini çalıştıran cihazları Azure AD güvenlik gruplarıyla eşitler.
 
-![Skycure yönetim konsolunda güvenlik grubu yapılandırması tamamlandı](./media/skycure-setup-5.png)
+![Skycure yönetim konsolunda güvenlik grubu yapılandırmasının tamamlandığını gösteren resim](./media/skycure-setup-5.png)
 
 ## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>Intune ile Skycure arasında tam tümleştirmeyi ayarlama
 
@@ -103,7 +103,7 @@ Skycure, Mobile Threat Defense hizmetini çalıştıran cihazları Azure AD güv
 
 5.  **Değişiklikleri uygula**’ya tıklayın.
 
-    ![Skycure tam tümleştirmesi tamamlandı](./media/skycure-setup-6.png)
+    ![Skycure tam tümleştirmesinin tamamlandığını gösteren resim](./media/skycure-setup-6.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

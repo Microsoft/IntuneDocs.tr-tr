@@ -1,5 +1,6 @@
 ---
-title: "İlke | Microsoft Docs"
+title: "İlke"
+titlesuffix: Microsoft Intune
 description: "Intune Veri Ambarı API’sindeki varlık koleksiyonlarının İlke kategorisi için başvuru konusu."
 keywords: "Intune Veri Ambarı"
 author: Erikre
@@ -13,11 +14,11 @@ ms.technology:
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 02/15/2018
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
 | PolicyTypeId |İlkenin kaynak sistemindeki benzersiz tanımlayıcısı. |123 |
-| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1. |
+| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1 |
 | PolicyTypeName |İlke türünün adı. |Windows 10 Uyumluluk ilkesi. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
@@ -107,7 +108,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu özetler. Ve
 |NotApplicable      |Yönetici tarafından hedeflenen cihaz uyumluluk ilkelerinin uygulanabilir olmadığı cihaz sayısı.|201 |
 |Uyumlu      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesini başarıyla uygulayan cihaz sayısı. |4083 |
 |InGracePeriod      |Uyumlu olmayan ancak yönetici tarafından belirlenen mehil süresinde olan cihaz sayısı. |57|
-|NonCompliant      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamayan veya kullanıcısı yönetici tarafından hedeflenen ilkeler ile uyum sağlayamayan cihaz sayısı.|43 |
+|Uyumsuz      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamayan veya kullanıcısı yönetici tarafından hedeflenen ilkeler ile uyum sağlayamayan cihaz sayısı.|43 |
 |Hata      |Intune veya Azure AD ile iletişim kuramayan ve hata iletisi veren cihaz sayısı. |3|
 
 ### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
@@ -124,8 +125,8 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 |Bilinmiyor     |Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı.|13|
 |NotApplicable     |Yönetici tarafından hedeflenen cihaz uyumluluk ilkelerinin uygulanabilir olmadığı cihaz sayısı.|3|
 |Uyumlu      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesini başarıyla uygulayan cihaz sayısı. |45|
-|InGracePeriod      |Uyumlu olmayan ancak yönetici tarafından belirlenen mehil süresinde olan cihaz sayısı. |3|
-|NonCompliant      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamayan veya kullanıcısı yönetici tarafından hedeflenen ilkeler ile uyum sağlayamayan cihaz sayısı.|7|
+|YetkisizKullanımSüresinde      |Uyumlu olmayan ancak yönetici tarafından belirlenen mehil süresinde olan cihaz sayısı. |3|
+|Uyumsuz      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamayan veya kullanıcısı yönetici tarafından hedeflenen ilkeler ile uyum sağlayamayan cihaz sayısı.|7|
 |Hata      |Intune veya Azure AD ile iletişim kuramayan ve hata iletisi veren cihaz sayısı. |3|
 
 ### <a name="policyplatformtypes"></a>PolicyPlatformTypes
@@ -136,7 +137,7 @@ Aşağıdaki tablo, tüm atanmış ilkelerin platform türlerini içerir. Hiçbi
 |Özellik  |Description  |Örnek  |
 |---------|---------|---------|
 |PolicyPlatformTypeKey      |İlke platform türü için benzersiz anahtar. |20170519 |
-|PolicyPlatformTypeId      |İlke platform türü için benzersiz tanımlayıcı.|1.|
+|PolicyPlatformTypeId      |İlke platform türü için benzersiz tanımlayıcı.|1|
 |PolicyPlatformTypeName      |İlke platform türünün adı.|AndroidForWork |
 
 ### <a name="policydeviceactivity"></a>PolicyDeviceActivity

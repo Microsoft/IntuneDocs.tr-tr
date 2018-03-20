@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13aa627515b74d3c9fe6d091c44dd5147bd786bd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 01b26a6165db6e3016d2b3d7063a4bca60ce0266
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Google Play Koruması'nı etkinleştirmek için cihaz uyumluluk ilkesi oluşturma
 
@@ -29,14 +29,15 @@ Bu ayarları gerektiren uyumluluk ilkesi daha sonra bir grup Android kullanıcı
 
 ## <a name="create-a-compliance-policy"></a>Uyumluluk ilkesi oluşturma
 
-1. Azure portalında oturum açın. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 2. **Yönet** grubunda **Cihaz uyumluluğu**'nu seçin. 
-3. **İlkeler**'i ve **İlke Oluştur**'u seçin.
+3. **İlkeler**'i ve **İlke oluştur**'u seçin.
 4. İlke için **Ad** ve **Açıklama** yazın.
 5. Platform olarak **Android**’i seçin.
 6. **Ayarlar** > **Cihaz Durumu**'nu seçin.
 7. **Google Play Koruması** ayarlarını yapılandırın.
-8. Google Play Koruması ayarlarını yaptıktan sonra, **Güvenlik** ve **Cihaz özelliği** ayarlarını belirtin. İşiniz bittiğinde **Tamam**’ı seçin.
+8. Google Play Koruması ayarlarını yaptıktan sonra, **Sistem Güvenliği** ve **Cihaz Özellikleri** ayarlarını belirtin. İşiniz bittiğinde **Tamam**’ı seçin.
 
 ## <a name="configure-the-google-play-protect-settings"></a>Google Play Koruması ayarlarını yapılandırma
 

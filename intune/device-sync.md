@@ -1,12 +1,11 @@
 ---
-title: "Cihazları Intune ile eşitleme"
-titlesuffix: Azure portal
-description: "En son ilkeleri ve eylemleri almak için cihazları Intune ile eşitlemeyi öğrenin.\""
+title: "Microsoft Intune - Azure ile cihazları eşitleme | Microsoft Docs"
+description: "En son ilkeleri ve eylemleri almak için Microsoft Intune ile kayıtlı veya yönetilen cihazları eşitleyin. Azure portalını kullanan eşitleme adımlarını içerir ve yeniden denenebilecek hata kodlarını listeler."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +13,18 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>En son ilkeleri ve eylemleri almak için cihazları Intune ile eşitleme
+# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>En son ilkeleri ve eylemleri almak için cihazları eşitleme - Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorlar. Bir cihaz giriş yaptığında, kendisine atanan beklemedeki eylem veya ilkeleri hemen alır.  Bu eylem, atadığınız ilkeleri bir sonraki zamanlanmış iadeyi beklemenize gerek kalmadan hızla doğrulamanız ve ilkelerin sorunlarını gidermenize yardımcı olur.
+Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorlar. Bir cihaz giriş yaptığında, kendisine atanan beklemedeki eylem veya ilkeleri hemen alır. Bu özellik, atadığınız ilkeleri bir sonraki zamanlanmış iadeyi beklemenize gerek kalmadan hızla doğrulamanıza ve ilkelerin sorunlarını gidermenize yardımcı olur.
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
@@ -35,35 +34,34 @@ Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorl
 - Mac OS
 - Android
 
-## <a name="how-to-sync-a-device"></a>Bir cihazı eşitleme
+## <a name="sync-a-device"></a>Cihaz eşitleme
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
-4. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin.
-5. Yönettiğiniz cihazların listesinden bir cihaz seçin, **...Daha Fazla**’yı ve ardından **Eşitle** uzak eylemini seçin.
-7. Eylemi doğrulamak için **Evet** 'i seçin.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin. 
+3. **Intune**’da **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
+4. Yönettiğiniz cihazların listesinden bir cihaz seçin, **...Daha Fazla**’yı ve ardından **Eşitle** eylemini seçin.
+5. Onaylamak için **Evet**'i seçin.
 
 
-## <a name="retriable-error-codes"></a>Yeniden denenebilir hata kodları
+## <a name="retryable-error-codes"></a>Yeniden denenebilir hata kodları
 
 Bir yönetici **Eşitle** cihaz eylemini çalıştırdığında, başarısız olan ancak yeniden denenebilir bir hata kodu veren iOS ve Android uygulamaları o cihaz için kullanılabilir. Ancak yeniden denenemez bir hata kodu vermiş uygulamalar, cihaz için kullanılabilir hale gelmeden önce yedi gün beklemek zorundadır.
 
 
-| Hata Kodu  | Önerilen Açıklama                                                                                                                  | Yeniden denenebilir |
-|-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| 2016330898 | Bilinmeyen bir hata oluştu.                                                                                                             | Hayır        |
-| 2016330897 | Intune bağlantınız zaman aşımına uğradı. Bağlantınızı sıfırlayın                                                                             | Evet       |
-| 2016330896 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın.                                                                            | Evet       |
-| 2016330895 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın.                                                                            | Evet       |
-| 2016330894 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın.                                                                            | Evet       |
-| 2016330893 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın.                                                                            | Evet       |
-| 2016330892 | Uluslararası dolaşım devre dışı bırakıldı.                                                                                                     | Hayır        |
-| 2016330891 | Telefon görüşmesi yapılırken bu cihaz için hücresel veri bağlantısına erişilemez. Görüşmenin sonlanmasını bekleyin. | Evet       |
-| 2016330890 | Bu cihaz için hücresel ağ. Bu cihazlar şu anda kullanılamıyor.                                                   | Hayır        |
-| 2016330889 | Güvenli bağlantı başarısız oldu. Bağlantınızı sıfırlayın.                                                                                   | Evet       |
-| 2016330888 | Sunucu güven değerlendirmesi başarısız oldu.                                                                                                | Hayır        |
+| Hata Kodu  | Önerilen Açıklama | Yeniden denenebilir |
+|---|---|---|
+| 2016330898 | Bilinmeyen bir hata oluştu. | Hayır |
+| 2016330897 | Intune bağlantınız zaman aşımına uğradı. Bağlantınızı sıfırlayın. | Evet |
+| 2016330896 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın. | Evet |
+| 2016330895 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın. | Evet |
+| 2016330894 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın. | Evet |
+| 2016330893 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın. | Evet|
+| 2016330892 | Uluslararası dolaşım devre dışı bırakıldı. | Hayır|
+| 2016330891 | Telefon görüşmesi yapılırken bu cihaz için hücresel veri bağlantısına erişilemez. Görüşmenin sonlanmasını bekleyin. | Evet|
+| 2016330890 | Bu cihaz için hücresel ağ. Bu cihazlar şu anda kullanılamıyor. | Hayır|
+| 2016330889 | Güvenli bağlantı başarısız oldu. Bağlantınızı sıfırlayın. | Evet|
+| 2016330888 | Sunucu güven değerlendirmesi başarısız oldu. | Hayır|
 
-## <a name="next-steps"></a>Sonraki adımlar
+## <a name="next-step"></a>Sonraki adım
 
 Eşitleme eyleminin durumunu görmek için **Cihaz eylemleri**’ni seçin. 

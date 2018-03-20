@@ -1,30 +1,30 @@
 ---
-title: "Windows için uyumluluk ilkesi oluşturma"
-titleSuffix: Azure portal
-description: "Windows cihazları için uyumluluk ilkesi oluşturmayı öğrenin.\""
+title: "Microsoft Intune’da Windows cihaz uyumluluk ilkesi oluşturma"
+titleSuffix: 
+description: "Windows cihazlarına Microsoft Intune cihaz uyumluluk ilkesi oluşturarak cihazın uyumlu olabilmesi için karşılaması gereken gereksinimleri belirtebilirsiniz."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için cihaz uyumluluk ilkesi oluşturma
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Uyumluluk ilkeleri her platform için oluşturulur. Uyumluluk ilkesini Azure Portal’da oluşturabilirsiniz. Uyumluluk ilkesinin ne olduğu hakkında daha fazla bilgi edinmek için, [Uyumluluk ilkesi nedir](device-compliance.md) konusuna bakın. Uyumluluk ilkesi oluşturmadan önce ilgilenmeniz gereken önkoşullar hakkında bilgi edinmek için, [Cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md) konusuna bakın.
+Windows için Intune cihaz uyumluluk ilkesi, Windows cihazlarının uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlar. Cihaz uyumluluk ilkelerini koşullu erişimle kullanarak şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz ve cihaz raporları alarak uyumsuzluk için eylemler uygulayabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri hakkında daha fazla bilgi edinmek ve uyumluluk ilkesi oluşturmadan önce ilgilenmeniz gereken önkoşulları öğrenmek için, [Cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md) konusuna bakın.
 
 Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır.
 
@@ -42,7 +42,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 -------------------------------
 
-**Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)+
+**Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)
 
 **Karantinaya alındı** = Cihazın işletim sistemi uyumluluğu mecbur kılmaz. (Örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz.) Cihaz uyumsuz olduğunda, aşağıdaki işlemler yapılır:
 
@@ -51,12 +51,14 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Azure Portal’da uyumluluk ilkesi oluşturma
 
-1. **Intune** dikey penceresinde **Cihaz uyumluluğunu ayarla**’yı seçin. **Yönet**’in altında **Tüm cihaz uyumluluk ilkeleri**’ni ve sonra da **Oluştur**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. **Intune** bölmesinde **Cihaz uyumluluğu**’nu seçin. **Yönet**’in altında, **İlkeler**'i ve **İlke oluştur**'u seçin.
 2. Ad ve açıklama yazın, bu ilkenin uygulanmasını istediğiniz platformu seçin.
-3. **Uyumluluk gereksinimleri**’ni seçerek uyumluluk gereksinimleri dikey penceresini açın.  Burada **Güvenlik**, **Cihaz durumu** ve **Cihaz özelliği** ayarlarını belirtebilirsiniz. Bitirdiğinizde, **Tamam**’ı seçin.
+3. Burada **Sistem Güvenliği**, **Cihaz Sistem Durumu** ve **Cihaz Özellikleri** ayarlarını belirtmek için **Ayarları Yapılandırma**’yı seçin. İşiniz bittiğinde **Tamam**’ı seçin.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 
-Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Uyumluluk – ilkeler** dikey penceresinde bulunabilir.
+Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Cihaz uyumluluğu - İlkeler** bölmesinde bulunabilir.
 
-1. Kullanıcılara atamak istediğiniz ilkeyi seçin ve ardından **Atamalar**’ı seçin. Bu işlem, **Azure Active Directory güvenlik gruplarını** seçebileceğiniz ve bunları ilkeye atayabileceğiniz dikey pencereyi açar.
-2. Azure AD güvenlik gruplarının görüntülendiği dikey pencereyi açmak için **Grupları seçin** öğesini seçin.  **Seç** öğesi seçildiğinde, ilke kullanıcılara dağıtılır.
+1. Kullanıcılara atamak istediğiniz ilkeyi seçin ve ardından **Atamalar**’ı seçin. Bu işlem, **Azure Active Directory güvenlik gruplarını** seçebileceğiniz ve bunları ilkeye atayabileceğiniz bölmeyi açar.
+2. Azure AD güvenlik gruplarının görüntülendiği sayfayı açmak için **Seçilen gruplar**’ı seçin.  **Kaydet** seçildiğinde, ilke kullanıcılara dağıtılır.
 
 İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için denetlenecek.
 
@@ -79,7 +81,7 @@ Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkey
 
 - **Mobil cihazların kilidini açmak için parola gerektir:** Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini gerektirmek için bunu **Evet** olarak ayarlayın.
 - **Basit parolalara izin ver:** Kullanıcıların '**1234**' veya '**1111**' gibi basit parolalar oluşturmalarına izin vermek için bunu **Evet** olarak ayarlayın.
-- **Minimum parola uzunluğu:** Kullanıcı parolasının içermesi gereken rakam veya karakter sayısı alt sınırını belirtin.
+- **Minimum parola uzunluğu:** Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
 - **Gerekli parola türü:** Kullanıcıların oluşturacağı parolanın **Alfasayısal** mı, yoksa **Sayısal** mı olacağını belirtin.
 
 Windows çalıştıran ve Microsoft Hesabı ile erişilen cihazlarda, minimum parola uzunluğu sekiz karakterden fazlaysa veya minimum karakter kümesi sayısı ikiden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
@@ -128,7 +130,7 @@ HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Dur
 
 - **Minimum parola uzunluğu:** - Windows 8.1’de desteklenir.
 
-Kullanıcı parolasının içermesi gereken rakam veya karakter sayısı alt sınırını belirtin.
+Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
 
 Microsoft Hesabı ile güvenliği sağlanan cihazlar için **Minimum parola uzunluğu** sekiz karakterden fazlaysa veya **Minimum karakter kümesi sayısı** iki karakterden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
 
@@ -183,10 +185,10 @@ Cihazdaki işletim sistemi belirtilen sürümden önceki bir sürümdeyse, cihaz
 
 Bir cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisi ile iletişim kurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
 
-**Gereken en düşük işletim sistemi sürümü** ve **İzin verilen en yüksek işletim sistemi sürümü** ayarlarında kullanılacak işletim sistemi sürümünü bulmak için, komut isteminde **winver** komutunu çalıştırın. Bu winver komutu, işletim sisteminin bildirilen sürümünü döndürür.+
+**Gereken en düşük işletim sistemi sürümü** ve **İzin verilen en yüksek işletim sistemi sürümü** ayarlarında kullanılacak işletim sistemi sürümünü bulmak için, komut isteminde **winver** komutunu çalıştırın. Bu winver komutu, işletim sisteminin bildirilen sürümünü döndürür.
 
 - Windows 8.1 bilgisayarları **3** sürümünü döndürür. Windows için işletim sistemi sürüm kuralı Windows 8.1’e ayarlanırsa, cihaz Windows 8.1’e sahip olsa bile uyumsuz olarak bildirilir.
-- Windows 10 çalıştıran bilgisayarlarda, sürüm &quot;10.0&quot;+ winver komutuyla döndürülen İS Derleme numarasına ayarlanmalıdır.
+- Windows 10 çalıştıran bilgisayarlarda, sürüm "10.0"+ winver komutuyla döndürülen OS Yapı numarasına ayarlanmalıdır.
 
 ## <a name="windows-holographic-for-business-support"></a>Windows 10 Holographic for Business desteği
 

@@ -1,12 +1,12 @@
 ---
-title: "Windows 10 için Intune Endpoint Protection ayarları"
-titlesuffix: Azure portal
-description: "Windows 10 cihazlarda BitLocker gibi Endpoint Protection ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.\""
+title: "Windows 10 için Microsoft Intune Endpoint Protection ayarları"
+titlesuffix: 
+description: "Windows 10 cihazlarında BitLocker gibi Endpoint Protection ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune'da Windows 10 ve sonrası için Endpoint Protection ayarları
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune'da Windows 10 ve sonrası için Endpoint Protection ayarları oluşturma
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Endpoint Protection profili, Windows 10 cihazlarda BitLocker ve Windows Defender gibi güvenlik özelliklerini denetlemenize izin verir.
 
-Bu konudaki bilgileri Endpoint Protection profilleri oluşturmak için kullanın.
+Bu makaledeki bilgileri Endpoint Protection profilleri oluşturmak için kullanın.
 
 > [!Note]
 > Bu ayarlar, Windows 10’un Home ve Professional sürümlerinde desteklenmez.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Endpoint Protection profili oluşturma
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** dikey penceresinde **Cihaz yapılandırması**’nı seçin.
-2. **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
+2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 3. Profiller dikey penceresinde **Profil oluştur**’u seçin.
 4. **Profil oluştur** dikey penceresinde, cihaz özellikleri profili için **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden **Windows 10 ve üzeri**’ni seçin.
 6. **Profil türü** açılan listesinden **Endpoint protection**'ı seçin.
-7. İstediğiniz ayarları yapılandırın. Bu konunun ayrıntılarını, her ayarın ne yaptığını anlamanıza yardımcı olması için kullanın. İşiniz bittiğinde **Tamam**’ı seçin.
+7. İstediğiniz ayarları yapılandırın. Bu makalenin ayrıntılarını, her ayarın ne yaptığını anlamanıza yardımcı olması için kullanın. İşiniz bittiğinde **Tamam**’ı seçin.
 8. **Profil oluştur** dikey penceresine dönün ve **Oluştur**’u seçin.
 
 Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
@@ -57,6 +57,7 @@ Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. 
 - **Sanal tarayıcıdan yazdırma** - PDF, XPS, yerel yazıcılar ve/veya ağ yazıcılarının sanal tarayıcı içeriklerini yazdırmasına izin verin.
 - **Günlük toplama** - Bir Application Guard gözatma oturumunda gerçekleşen olaylara ait günlükleri toplayın.
 - **Kullanıcı tarafından oluşturulan tarayıcı verilerini koruma** - Bir Application Guard sanal gözatma oturumunda oluşturulan kullanıcı verilerinin (parolalar, favoriler ve tanımlama bilgileri gibi) kaydedilmesine izin verin.
+- **Grafik hızlandırma** - Bir sanal grafik işlemcisi birimine erişim sağlayarak Application Guard sanal göz atma oturumunda çalışırken görsel ağırlıklı web sitelerini daha hızlı yükleyin.
 
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Güvenlik Duvarı
@@ -98,9 +99,9 @@ Bu ayarlar; **Etki alanı (iş yeri) ağı**, **Özel (keşfedilebilir) ağ** ve
 - **Uygulamalar ve dosyalar için SmartScreen** - Dosya yürütme ve uygulama çalıştırma için Windows SmartScreen’i etkinleştirin.
 - **Doğrulanmamış dosyaların yürütülmesi** - Son kullanıcının, Windows SmartScreen tarafından doğrulanmamış dosyaları çalıştırmasını engelleyin.
 
-## <a name="windows-encryption"></a>Windows şifreleme
+## <a name="windows-encryption"></a>Windows Şifreleme
 
-### <a name="windows-settings"></a>Windows ayarları
+### <a name="windows-settings"></a>Windows Ayarları
 
 Bu ayarlar, tüm Windows 10 sürümleri için geçerlidir.
 

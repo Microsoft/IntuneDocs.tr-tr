@@ -1,11 +1,12 @@
 ---
 title: "REST istemcisi ile Veri Ambarı API’sinden veri alma"
+titlesuffix: Microsoft Intune
 description: "Bir RESTful API’si kullanarak Intune Veri Ambarı’ndan veri alın."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e96e1a728fbb054f412dc6c2a3610179aec18b75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 22bfcc4e2947cba54509409132da3687d51a472d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -34,9 +35,9 @@ REST istemcisi ile API’yi yetkilendirme ve buna erişmeyi öğrenmek için aş
 
 ## <a name="create-a-client-app-as-a-native-app-in-azure"></a>Azure’da yerel uygulama olarak bir istemci uygulaması oluşturma
 
-Azure’da yerel bir uygulama oluşturun. Bu yerel uygulama, istemci uygulamadır. Yerel makinenizde çalışan istemci, yerel istemci kimlik bilgileri istediğinde Intune Veri Ambarı API’sine başvurur. 
+Azure’da yerel bir uygulama oluşturun. Bu yerel uygulama, istemci uygulamadır. Yerel makinenizde çalışan istemci, yerel istemci kimlik bilgileri istediğinde Intune Veri Ambarı API’sine başvurur.
 
-1. Kiracınız için Azure portalında oturum açın. **Uygulama kayıtları** dikey penceresini açmak için **Azure Active Directory** > **Uygulama Kayıtları**’nı seçin.
+1. Kiracınız için Azure portalında oturum açın. **Uygulama kayıtları** bölmesini açmak için **Azure Active Directory** > **Uygulama Kayıtları**’nı seçin.
 2. **Yeni uygulama kaydı**’nı seçin.
 3. Uygulama ayrıntılarını yazın.
     1.  **Ad** kısmına, Intune Veri Ambarı İstemcisi gibi kolay bir ad yazın.
@@ -53,19 +54,19 @@ Azure’da yerel bir uygulama oluşturun. Bu yerel uygulama, istemci uygulamadı
 Artık Azure’da tanımlanan bir uygulamanız var. Yerel uygulamadan Microsoft Intune API’sine erişim verin.
 
 1.  Yerel uygulamaya tıklayın. Uygulamanızın adı **Intune Veri Ambarı İstemcisi** benzeri bir ada sahip olmalıdır.
-2.  **Ayarlar** dikey penceresinde **Gerekli izinler**’e tıklayın
-3.  **Gerekli izinler** dikey penceresinde **Ekle**’ye tıklayın.
+2.  **Ayarlar** bölmesinde **Gerekli izinler**’i seçin
+3.  **Gerekli izinler** bölmesinde **Ekle**’yi seçin.
 4.  **Bir API Seç**’e tıklayın.
 5.  Web uygulaması adını aratın. Bu uygulamanın adı **Microsoft Intune API’sidir**.
 6.  Listeden uygulamaya tıklayın.
 7.  **Seç**’e tıklayın.
 8.  **Microsoft Intune’dan veri ambarı bilgileri almak** için **Temsilcili İzinler**’e tıklayın.
 
-    ![Erişimi etkinleştirin](media\reports-get_rest_data_client_access.png)
+    ![Erişimi etkinleştirme - Microsot Intune API'si](media\reports-get_rest_data_client_access.png)
 
 9.  **Seç**’e tıklayın.
 10.  **Bitti**’yi seçin.
-11.  İsteğe bağlı olarak Gerekli izinler dikey penceresinde **İzin Ver**’i seçin. Böylece geçerli dizindeki tüm hesaplara erişim verirsiniz. Bu, kiracıdaki her kullanıcı için bir onay iletişim kutusu oluşturmayı önler. Daha fazla bilgi için bkz. [Uygulamaları Azure Active Directory ile tümleştirme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+11.  İsteğe bağlı olarak Gerekli izinler bölmesinde **İzin Ver**’i seçin. Böylece geçerli dizindeki tüm hesaplara erişim verirsiniz. Bu, kiracıdaki her kullanıcı için bir onay iletişim kutusu oluşturmayı önler. Daha fazla bilgi için bkz. [Uygulamaları Azure Active Directory ile tümleştirme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 12.  **Evet**’i seçin.
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Microsoft Intune API’sinden Postman ile veri alma
@@ -88,14 +89,14 @@ Postman kullanarak REST araması yapmak için aşağıdaki bilgilere ihtiyacın�
 
 ### <a name="odata-endpoint"></a>OData uç noktası
 
-Uç nokta da gerekir. Veri Ambarı uç noktanızı almak için özel akış URL’si gereklidir. OData uç noktasını Veri Ambarı dikey penceresinden alabilirsiniz.
+Uç nokta da gerekir. Veri Ambarı uç noktanızı almak için özel akış URL’si gereklidir. OData uç noktasını Veri Ambarı bölmesinden alabilirsiniz.
 
-1. Azure portalında oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** + **Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Diğer görevler** altında bulunan **Intune Veri Ambarı’nı Ayarlama**’yı seçin.
 4. **Üçüncü taraf raporlama hizmetleri kullan** altında özel akış URL’sini kopyalayın. Bu, şuna benzer olmalıdır: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-Uç nokta şu biçimdedir: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`. 
+Uç nokta şu biçimdedir: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
 
 Örneğin **tarihler** varlığı şuna benzerdir: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
@@ -151,10 +152,10 @@ Aşağıdaki örnek, bir basit REST istemcisi içerir. Kod, .Net kitaplığında
 > Aşağıdaki kod [örneğine GitHub’dan](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs) ulaşabilirsiniz. Örnekteki son değişiklikler ve güncelleştirmeler için GitHub deposuna başvurun.
 
 1.  **Microsoft Visual Studio**’yu açın.
-2.  **Dosya** > **Yeni Proje**’yi seçin. **Visual C#**’yi genişletin ve **Konsol Uygulaması (.Net Framework)** öğesini seçin. 
+2.  **Dosya** > **Yeni Proje**’yi seçin. **Visual C#**’yi genişletin ve **Konsol Uygulaması (.Net Framework)** öğesini seçin.
 3.  Projeyi ` IntuneDataWarehouseSamples` olarak adlandırın, projeyi kaydetmek istediğiniz konuma göz atın ve **Tamam**’a tıklayın.
 4.  Çözüm Gezgini’nde çözümün adına sağ tıklayın ve daha sonra **Çözüm için NuGet Paketlerini Yönetme**’ye tıklayın. **Gözat**’a tıklayın, daha sonra arama kutusuna `Microsoft.IdentityModel.Clients.ActiveDirectory` yazın.
-5. Paketi seçin, Çözümünüz için Paketleri Yönetme altında **IntuneDataWarehouseSamples**’a tıklayın ve daha sonra **Yükle**’yi seçin. 
+5. Paketi seçin, Çözümünüz için Paketleri Yönetme altında **IntuneDataWarehouseSamples**’a tıklayın ve daha sonra **Yükle**’yi seçin.
 6. NuGet paket lisansını kabul etmek için **Kabul Ediyorum**’a tıklayın.
 7. Çözüm Gezgini’nde `Program.cs` öğesini açın.
 
@@ -178,15 +179,15 @@ namespace IntuneDataWarehouseSamples
     * emailAddress - The email address of the user that you will authenticate as.
     *
     * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not 
+    *    This is inline only for simplicity in this sample. We do not
     *    recommend storing passwords in plaintext.
     *
     * applicationId - The application ID of the native app that was created in AAD.
     *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in 
+    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
     *      the Azure portal.
-    * 
-    * collectionName - The name of the warehouse entity collection you would like to 
+    *
+    * collectionName - The name of the warehouse entity collection you would like to
     *      access.
     */
    var emailAddress = "intuneadmin@yourcompany.com";
@@ -224,6 +225,6 @@ namespace IntuneDataWarehouseSamples
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Yetkilendirme, API URL yapısı ve OData uç noktaları hakkında ayrıntıları [Intune Veri Ambarı API’sini kullanma](reports-api-url.md) sayfasında bulabilirsiniz. 
+Yetkilendirme, API URL yapısı ve OData uç noktaları hakkında ayrıntıları [Intune Veri Ambarı API’sini kullanma](reports-api-url.md) sayfasında bulabilirsiniz.
 
 Ayrıca API’de bulunan veri varlıklarını bulmak için Intune Veri Ambarı Veri Modeli’ne de başvurabilirsiniz. Daha fazla bilgi için bkz. [Intune Veri Ambarı API’si Veri Modeli](reports-ref-data-model.md)

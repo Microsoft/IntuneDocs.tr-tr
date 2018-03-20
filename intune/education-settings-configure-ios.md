@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom uygulaması için Intune ayarlarını yapılandırma
 
@@ -72,12 +72,12 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 
 ### <a name="configure-general-settings"></a>Genel ayarları yapılandırma
 
-1. Azure Portal’da oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3.  **Intune** dikey penceresinde **Cihazları yapılandır**’ı seçin.
-4.  **Cihaz Yapılandırması** dikey penceresinde **Yönet** > **Profiller**’i seçin.
-5.  Profiller dikey penceresinde **Profil Oluştur**’u seçin.
-6.  **Profil Oluştur** dikey penceresinde, iOS eğitim profili için **Ad** ve **Açıklama** girin.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
+2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
+5.  Profiller bölmesinde **Profil oluştur**’u seçin.
+6.  **Profil oluştur** bölmesinde, iOS eğitim profili için **Ad** ve **Açıklama** girin.
 7.  **Platform** açılan listesinden **iOS**’yi seçin.
 8.  **Profil türü** açılan listesinde **Eğitim**’i seçin.
 9.  **Ayarlar** > **Yapılandır**’ı seçin.
@@ -94,7 +94,7 @@ Oluşturduğunuz sertifikaların, kullanıcı kimlik doğrulamasına ek olarak s
 
 ### <a name="configure-teacher-certificates"></a>Öğretmen sertifikalarını yapılandırma
 
-**Eğitim** dikey penceresinde, **Öğretmen sertifikaları**’nı seçin.
+**Eğitim** bölmesinde **Öğretmen sertifikaları**’nı seçin.
 
 #### <a name="configure-teacher-root-certificate"></a>Öğretmen kök sertifikasını yapılandırma
 
@@ -116,8 +116,8 @@ Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 
 ### <a name="configure-student-certificates"></a>Öğrenci sertifikalarını yapılandırma
 
-1.  **Eğitim** dikey penceresinde, **Öğrenci sertifikaları**’nı seçin.
-2.  **Öğrenci sertifikaları** dikey penceresinde, **Öğrenci cihaz sertifikaları** türü listesinde yazın, **1:1** seçeneğini belirleyin.
+1.  **Eğitim** bölmesinde **Öğrenci sertifikaları**’nı seçin.
+2.  **Öğrenci sertifikaları** bölmesinde, **Öğrenci cihaz sertifikaları** türü listesinde yazın, **1:1** seçeneğini belirleyin.
 
 #### <a name="configure-student-root-certificate"></a>Öğrenci kök sertifikasını yapılandırma
 
@@ -139,10 +139,10 @@ Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 
 ## <a name="finish-up"></a>Bitirme
 
-1.  **Eğitim** dikey penceresinde, Tamam'ı seçin.
-2.  **Profil Oluştur** dikey penceresinde, **Oluştur**’u seçin.
+1.  **Eğitim** bölmesinde Tamam'ı seçin.
+2.  **Profil oluştur** bölmesinde **Oluştur**’u seçin.
     
-Profil oluşturulur ve profil listesi dikey penceresinde görüntülenir.
+Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 
 Okul verilerinizi Azure AD ile eşitlediğinizde oluşturulan sınıf gruplarındaki öğrenci cihazlarına profili atayın (bkz. [Cihaz profilleri atama](device-profile-assign.md).
 
