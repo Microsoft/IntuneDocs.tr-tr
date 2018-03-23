@@ -1,25 +1,27 @@
 ---
-title: "Şirket verilerine yetkisiz erişimi engelleme"
-description: "Şirket ağı dışında paylaşılırken şirket verilerine yetkisiz erişimi engelleyebilirsiniz."
-keywords: "Office 365 O365 Azure Information Protection verileri şirket verilerini ağ dışında koruma"
-author: arob98
+title: Şirket verilerine yetkisiz erişimi engelleme
+titlesuffix: Microsoft Intune
+description: Microsoft Intune kullanarak şirket ağı dışında paylaşılan şirket verilerine yetkisiz erişimi engelleyin.
+keywords: Office 365 O365 Azure Information Protection verileri şirket verilerini ağ dışında koruma
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25f0572d65e6d651c636c8b1961903f7c2c78906
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-unauthorized-access-to-company-data"></a>Şirket verilerine yetkisiz erişimi engelleme 
+# <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Microsoft Intune kullanarak şirket verilerine yetkisiz erişimi engelleme
 
 Office 365 belgelerini ve e-postaları, verilere yalnızca yetkili kullanıcıların erişebilmesi için sınıflandırabilir, etiketleyebilir ve bunları koruyabilirsiniz. Ayarlar, BT yöneticileri veya kullanıcılar kurallar ve koşullar koyduktan sonra otomatik olarak yönetilir. Alternatif olarak BT ekibi, kullanıcıların izlemesi için önerilen ayarlar sağlayabilir. Ayrıca yöneticiler ve kullanıcılar daha önceden başkalarıyla paylaşılan verilere erişimi başka bir yetkilinin yardımı gerekmeden iptal edebilir. Bu işlemlerin sonucu, şirket ağının dışına çıktıklarında bile korumalı verileri kimin açtığını veya güncelleştirdiğini denetlemektir. 
 
@@ -44,5 +46,5 @@ Aşağıdaki koşulları yerine getirdiğinizde aşağıdaki eylem planı kullan
 
 Sonraki adımların parçası olarak, şirket verilerinizin güvenliğini arttırmak için aşağıdaki gibi diğer yollar hakkında bilgi edinebilirsiniz: 
 
-* [iOS ve Android cihazlarında Azure Information Protection] kullanmayı öğrenin (https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* [iOS ve Android cihazlarda Azure Information Protection] kullanmayı öğrenin (https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
 * Windows Phone ve Mac bilgisayarlarında [Microsoft Rights Management Özellikli Paylaşım Uygulaması](https://technet.microsoft.com/dn451248) hakkında daha fazla bilgi edinin.

@@ -1,26 +1,25 @@
 ---
-title: "Intune ile SCEP sertifikalarını yapılandırma ve yönetme"
-titlesuffix: Azure portal
-description: "Önce altyapınızı yapılandırmayı, ardından Intune SCEP sertifika profilleri oluşturup atamayı öğrenin.\""
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Microsoft Intune ile SCEP sertifikalarını yapılandırma ve yönetme
+description: Altyapınızın nasıl yapılandırılacağı ve ardından Microsoft Intune ile Intune Basit Sertifika Kayıt Protokolü (SCEP) sertifika profillerinin nasıl oluşturulup atanacağını öğrenin.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve yönetme
+# <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>Microsoft Intune ile SCEP sertifikalarını yapılandırma ve yönetme
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Bu konuda, altyapınızın nasıl yapılandırılacağı ve ardından Intune ile Basit Sertifika Kayıt Protokolü (SCEP) sertifika profillerinin nasıl oluşturulup atanacağı gösterilir.

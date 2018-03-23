@@ -1,25 +1,25 @@
 ---
-title: "Erken sürüm"
-description: 
-keywords: 
+title: Erken sürüm
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>Microsoft Intune için erken sürüm - Mart 2018
 
@@ -147,6 +147,33 @@ Android uygulamalarına yönelik en iyi yöntemlerle uyumlu olacak şekilde, And
 
 Android için Şirket Portalı uygulamasını, Android'in [Materyal Tasarım](https://material.io/) yönergelerine uyacak şekilde güncelleştireceğiz. Uygulama kullanıma sunulduğunda, yeni simgelerin resimlerini [Uygulama kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md) makalesinde yayımlayacağız. 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune uygulama koruma ilkeleri için Edge mobil desteği <!-- 1817882 -->
+
+Mobil cihazlar için Microsoft Edge tarayıcısı, Intune’da tanımlanan uygulama koruma ilkelerini destekleyecek.
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>SCEP sertifikası için konu olarak tam ayırt edici ad kullanma <!--2221763 eeready-->
+Bir SCEP sertifika profili oluşturduğunuzda Konu Adı girersiniz. Konu olarak tam ayırt edici ad kullanabileceksiniz. **Konu Adı** için **Özel**’i seçin ve `CN={{OnPrem_Distinguished_Name}}` girin. `{{OnPrem_Distinguished_Name}}` değişkenini kullanmak için [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onpremisesdistingishedname` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun. 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>15 dakikada bir iOS cihazlardan PIN istenir <!--1550837 eeready-->
+Bir iOS cihaza uyumluluk veya yapılandırma ilkesi uygulandıktan sonra her 15 dakikada bir kullanıcılardan bir PIN ayarlamaları istenir. PIN ayarlanana kadar kullanıcılara bu istem gönderilir.
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>Bluetooth kişi paylaşımını etkinleştirme - Android for Work <!--1098983 eeready-->
+Varsayılan olarak Android, iş profilindeki kişilerin Bluetooth cihazlarıyla eşitlenmesini önler. Bunun sonucunda iş profili kişileri, Bluetooth cihazlarındaki arayan kimliğinde görüntülenmez.
+
+**Android for Work** > **Cihaz kısıtlamaları** > **İş profili ayarları** kısmında bunun için yeni bir ayar olacak:
+- Bluetooth ile kişi paylaşımı
+
+Intune yöneticisi, paylaşıma izin vermek için bu ayarları yapılandırabilir. Bu; bir cihazı, eller serbest kullanım için arayan kimliğini gösteren ve arabada kullanılan bir Bluetooth cihazıyla eşitlerken kullanışlıdır. Etkinleştirildiğinde iş profili kişileri görüntülenir. Etkinleştirilmediğinde iş profili kişileri görüntülenmez.
+
+Şunlar için geçerlidir: Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları.
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>Otomatik güncelleştirmelerinizi zamanlama <!--1805514 -->
+
+Intune, [Windows Güncelleştirme Halkası ayarları](windows-update-for-business-configure.md) kullanarak otomatik güncelleştirme yüklemelerini denetlemenize olanak verir. Tekrar eden güncelleştirmeleri hafta, gün ve saat olarak zamanlayabileceksiniz. 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>Cihazı yeniden başlatma sırasında denetimleri devre dışı bırakma <!--1805490 -->
+
+Intune, size [yazılım güncelleştirmelerini yönetme](windows-update-for-business-configure.md) denetimi sağlar. **Yeniden başlatma denetimleri** özelliği eklenecek ve varsayılan olarak etkin olacaktır. Bir cihazı yeniden başlattığınızda yapılan denetimleri (etkin kullanıcılar, pil düzeyleri vb. gibi) atlamak için **Atla**’yı seçin. 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ Onaltılık kodlar kullanarak Şirket Portalı uygulamalarında tema rengini öz
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Endpoint Protection ayarlarına yeni Windows Defender Credential Guard ayarları eklendi <!--1102252 --> 
 
-**Cihaz yapılandırması** > **Profiller** > **Endpoint protection**’a yeni [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] ayarlar eklenecek. Eklenecek ayarlar aşağıdaki gibidir: 
+Yeni [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] ayarları, **Cihaz yapılandırması** > **Profiller** > **Uç nokta koruma** bölümüne eklenecek. Eklenecek ayarlar aşağıdaki gibidir: 
 
 - Platform Güvenlik Düzeyi: Bir sonraki yeniden başlatmada Platform Güvenlik Düzeyi’nin etkinleştirilip etkinleştirilmeyeceğini belirtin. Sanallaştırma tabanlı güvenlik, Güvenli Önyükleme gerektirir. Sanallaştırma tabanlı güvenlik, isteğe bağlı olarak doğrudan bellek erişimi (DMA) korumaları kullanımıyla etkinleştirilebilir. DMA korumaları, donanım desteği gerektirir ve yalnızca doğru yapılandırılmış cihazlarda etkinleştirilir.
 - Sanallaştırma Tabanlı Güvenlik: Bir sonraki yeniden başlatmada sanallaştırma tabanlı güvenliğin etkinleştirilip etkinleştirilmeyeceğini belirtin. 
@@ -185,29 +212,6 @@ Eğitim profilleri için yeni ayarlar, **Yazıcılar** kategori: **Yazıcılar**
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>iOS uygulama sağlama yapılandırması <!-- 1581650 -->
 Güvenlik gruplarını dahil ederek veya dışlayarak, uygulamalarınızın süresinin dolmasını önlemek için iOS uygulama sağlama profilleri atayabileceksiniz.
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>Yeni Windows Defender Exploit Guard ayarları <!-- 631893 -->
-
-Altı yeni **Saldırı Yüzeyi Azaltma** ayarı ve genişletilmiş **Denetimli klasör erişimi: Klasör koruması** yetenekleri kullanılabilir olacak. Bu ayarlar şurada bulunabilir: Cihaz yapılandırması\Profiller\
-Profil oluştur\Endpoint protection\Windows Defender Exploit Guard.
-
-#### <a name="attack-surface-reduction"></a>Saldırı Yüzeyini Azaltma
-
-|Ayar adı  |Ayar seçenekleri  |Description  |
-|---------|---------|---------|
-|Gelişmiş fidye yazılımı koruması|Etkin, Denetle, Yapılandırılmadı|Agresif fidye yazılımı koruması kullanır.|
-|Windows yerel güvenlik yetkilisi alt sisteminden kimlik bilgisi çalma eylemlerine bayrak ekleme|Etkin, Denetle, Yapılandırılmadı|Windows yerel güvenlik yetkilisi alt sisteminden kimlik bilgisi çalma eylemlerine bayrak ekler (lsass.exe).|
-|PSExec ve WMI komutlarından işlem oluşturma|Engelle, Denetle, Yapılandırılmadı|PSExec ve WMI komutlarından kaynaklanan işlem oluşturmalarını engeller.|
-|USB’den çalışan güvenilmeyen ve imzasız işlemler|Engelle, Denetle, Yapılandırılmadı|USB’den çalışan güvenilmeyen ve imzasız işlemleri engeller.|
-|Bir yaygınlık, yaş veya güvenilenler listesi kriterine uymayan yürütülebilir dosyalar|Engelle, Denetle, Yapılandırılmadı|Bir yaygınlık, yaş veya güvenilenler listesi kriterine uymadıkları sürece yürütülebilir dosyaları engeller.|
-
-#### <a name="controlled-folder-access"></a>Denetlenen klasör erişimi
-
-|Ayar adı  |Ayar seçenekleri  |Description  |
-|---------|---------|---------|
-|Klasör koruması (zaten uygulanmış)|Yapılandırılmamış, Etkinleştir, Yalnızca denetle (zaten uygulanmış)<br><br> **Yeni**<br>Disk değişikliğini engelle, Disk değişikliğini denetle|
-Dosya ve klasörleri kötü amaçlı uygulamaların yetkisiz değişikliklerinden korur.<br><br>**Etkinleştir**: Güvenilmeyen uygulamaların korumalı klasörlerdeki dosyaları değiştirmesini veya silmesini ve disk kesimlerine yazmasını engeller.<br><br>
-**Yalnızca disk değişikliğini engelle**:<br>Güvenilmeyen uygulamaların, disk kesimlerine yazmasını engeller. Güvenilmeyen uygulamalar hala korumalı klasörlerdeki dosyaları değiştirebilir veya silebilir.|
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Yeni Windows Defender Application Guard ayarları <!-- 1631890 -->
 

@@ -1,34 +1,35 @@
 ---
-title: "Veri Ambarı Kullanıcı Varlık Zaman Çizelgesi | Microsoft Docs"
-description: "Intune Veri Ambarı zaman çizelgesinde Kullanıcıları temsil eder."
-keywords: "Intune Veri Ambarı"
+title: Veri Ambarı Kullanıcı Varlığı Zaman Çizelgesi
+titlesuffix: Microsoft Intune
+description: Intune Veri Ambarı’nın bir zaman çizelgesinde Kullanıcıları nasıl temsil ettiğini öğrenin.
+keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Intune Veri Ambarı’nda kullanıcı ömrü gösterimi
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune Veri Ambarı’nda kullanıcı ömrü gösterimi
 
 Zaman tabanlı eğilimler hakkındaki soruları cevaplamak için Intune Veri Ambarı'nda saklanan veri anlık görüntülerini kullanabilirsiniz. Örneğin, bir ay boyunca eklenen kullanıcı sayısına bakabilirsiniz. Ayrıca, sistemden kaldırılan kullanıcıların sayısını da sorabilirsiniz.
 
-Veri ambarı, bu öngörüleri sunmak için geçmiş bilgilerini depolar. Bu, bir varlığın ömrünü izleyebileceği anlamına gelir. Ambar, öğe durumu değiştiğinde ve varlık silindiğinde bir varlık oluşturulduğunda kaydeder. Nicel ölçümlerin günlük anlık görüntüleriyle yakalanan geçmişle bir gün ile bir önceki gün karşılaştırabilir, vb.
+Veri ambarı, bu tür öngörüleri sunmak için geçmiş bilgilerini depolar. Veri ambarı, bir varlığın ömrünü izleyebilir. Ambar; bir varlık oluşturulduğunda, varlığın durumu değiştiğinde ve varlık silindiğinde bunları kaydeder. Nicel ölçümlerin günlük anlık görüntüleriyle yakalanan geçmişle bir gün ile bir önceki gün karşılaştırabilir, vb.
 
 Varlık ömürleriyle çalışmak, varlıklarınız değişir durumda olduğundan kafa karıştırıcı olabilir. Yani, 30. günde bir anlık görüntüye bakarsanız, bir kullanıcı kaydı veride etkin durumda bulunmayabilir demektir. 28-29. Günlerde varlık kaydı aktif olarak var olabilir. Ve ardında 28. günden önce, kullanıcı hiç var olmadı.
 
-Bir varlığın ömrünü incelersek bu daha net olabilir.
+Bir varlığın ömrünü incelerseniz bu senaryoyu daha iyi anlayabilirsiniz.
 
 **John Smith** adlı bir kullanıcıya 06/01/2017 tarihinde bir lisans atandığını ve ardından **Kullanıcı** tablosunun aşağıdaki girdiye sahip olacağını varsayalım: 
  
@@ -75,5 +76,5 @@ En yaygın kullanılan meta veri sütunları şunlardır:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
- - **Geçerli Kullanıcı** öğesi hakkında daha fazla bilgi edinmek için bkz. [Geçerli kullanıcı varlığı için başvuru](reports-ref-current-user.md).
+ - **Geçerli Kullanıcı** varlığı hakkında daha fazla bilgi edinmek için bkz. [Geçerli kullanıcı varlığı için başvuru](reports-ref-current-user.md).
  - **Kullanıcı** varlığı hakkında daha fazla bilgi edinmek için bkz. [Kullanıcı varlığı için başvuru](reports-ref-user.md).

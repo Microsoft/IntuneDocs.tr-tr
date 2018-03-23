@@ -1,29 +1,30 @@
 ---
-title: "Intune mobil cihaz yönetimi geçiş kılavuzu"
-description: "Bu kılavuz, bir üçüncü taraf MDM sağlayıcısından Microsoft Intune’a geçiş ile ilgili çeşitli ayrıntılar hakkında bilgi sağlar."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Intune mobil cihaz yönetimi geçiş kılavuzu
+titlesuffix: Microsoft Intune
+description: Bu kılavuz, bir üçüncü taraf MDM sağlayıcısından Microsoft Intune’a geçiş ile ilgili çeşitli ayrıntılar hakkında bilgi sağlar.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 888624530fe77f22ea9391b688fa9f9b92f0ac75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9bfefff2ef5960b6e52a8a37c2fd31466d16cbff
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-migration-guide"></a>Intune geçiş kılavuzu
 
-![Intune MDM geçiş kılavuzu görseli](./media/MDM-migration-guide-art.PNG)
+![Microsoft Intune MDM geçiş kılavuzu görseli](./media/MDM-migration-guide-art.PNG)
 
-Intune’a başarılı bir geçiş; geçerli mobil cihaz yönetimi (MDM) ortamınızı, iş hedeflerinizi ve teknik gereksinimlerinizi hesaba katan sağlam bir plan ile başlar. Ayrıca, geçiş planınızı destekleyecek ve sizinle işbirliği yapacak önemli paydaşlara sahip olmanız gerekir.
+Microsoft Intune’a başarılı bir geçiş; geçerli mobil cihaz yönetimi (MDM) ortamınızı, iş hedeflerinizi ve teknik gereksinimlerinizi hesaba katan sağlam bir plan ile başlar. Ayrıca, geçiş planınızı destekleyecek ve sizinle işbirliği yapacak önemli proje katılımcılarının olması gerekir.
 
 Bu kılavuz, bir üçüncü taraf MDM sağlayıcısından Intune’a geçiş ile ilgili çeşitli ayrıntılar hakkında bilgi sağlar.
 

@@ -1,23 +1,24 @@
 ---
-title: "Intune dağıtımını planlamak ve tasarlamak için şablonlar ve kaynaklar"
-description: "Intune dağıtım planlama ve uygulama süreci sırasında yardımcı olabilecek planlama şablonları ve ek Intune bilgileri için bağlantılar."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Intune dağıtımını planlamak ve tasarlamak için şablonlar ve kaynaklar
+titlesuffix: Microsoft Intune
+description: Microsoft Intune dağıtımını planlama ve uygulama süreci sırasında yardımcı olabilecek planlama şablonları ve ek Intune bilgileri için bağlantılar.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune dağıtımınızı planlamak için ek kaynaklar
 
@@ -50,7 +51,7 @@ Intune dağıtım planlama, tasarım ve uygulama süreci sırasında yardımcı 
 
 -   [Intune blogu](https://blogs.technet.microsoft.com/enterprisemobility/) - Intune’un büyük Enterprise Mobility resmine nasıl uyduğunu anlamanıza yardımcı olmak için gönderiler.
 
--   [Microsoft Güven Merkezi](http://www.microsoft.com/TrustCenter/default.aspx) - Microsoft’un tüm Microsoft bulut ürünlerinde ve hizmetlerindeki güvenlik, gizlilik, uyumluluk ve şeffaflık yaklaşımını öğrenin.
+-   [Microsoft Güven Merkezi](http://www.microsoft.com/TrustCenter) - Microsoft’un tüm Microsoft bulut ürünlerinde ve hizmetlerindeki güvenlik, gizlilik, uyumluluk ve şeffaflık yaklaşımını öğrenin.
 
 -   [Intune Kullanıcı Sesi](http://microsoftintune.uservoice.com/) - Bir özellik istemek veya özellikleri diğer kullanıcılarla birlikte oylamak ister misiniz? Kullanıcı Sesi aracılığıyla Intune hakkında geri bildirim sağlayın. Dinliyoruz.
 

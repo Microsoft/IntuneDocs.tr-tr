@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune Hizmeti Açıklaması"
-description: "Intune; Windows, iOS, Mac OS X, Android ve Windows Mobile cihazlarını yönetmenize yardımcı olan bulut tabanlı bir hizmettir."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Microsoft Intune Hizmeti Açıklaması
+description: Microsoft Intune; Windows, iOS, Mac OS X, Android ve Windows Mobile cihazlarını yönetmenize yardımcı olan bulut tabanlı bir hizmettir.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 7b9c3965d99e0058ae0236e1efc3daa840aebc6c
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune hizmet açıklaması
 
@@ -33,7 +33,7 @@ Intune, kimlik ve erişim denetimi için Azure Active Directory (Azure AD), veri
 Intune ile cihazları ve uygulamaları nasıl yöneteceğiniz ve kurumsal verileri nasıl koruyacağınız hakkında bilgi için bkz. [Intune belgeleri](https://docs.microsoft.com/intune/).
 
 ## <a name="30-day-free-trial"></a>30 günlük ücretsiz deneme sürümü
-Intune'u 100 kullanıcı lisansı içeren 30 günlük ücretsiz bir denemeyle kullanmaya başlayabilirsiniz. Ücretsiz denemeyi başlatmak için [Intune Kayıt sayfasına gidin](https://www.microsoft.com/server-cloud/products/microsoft-intune/). Kuruluşunuzda bir Kurumsal Anlaşma veya eşdeğer toplu lisans sözleşmesi varsa, ücretsiz deneme sürümünüzü ayarlamak için Microsoft temsilcinize başvurun.
+Intune'u 100 kullanıcı lisansı içeren 30 günlük ücretsiz bir denemeyle kullanmaya başlayabilirsiniz. Ücretsiz denemeyi başlatmak için [Intune Kayıt sayfasına gidin](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Kuruluşunuzda bir Kurumsal Anlaşma veya eşdeğer toplu lisans sözleşmesi varsa, ücretsiz deneme sürümünüzü ayarlamak için Microsoft temsilcinize başvurun.
 
 > [!NOTE]
 > Kuruluşunuzda bir Microsoft Online Services iş ya da okul hesabı varsa ve deneme süresi sona erdikten sonra üretimde bu Intune aboneliğiyle devam edecekseniz, ilgili sayfada **Oturum aç**'ı seçin ve kuruluşunuzun Genel Yönetici hesabını kullanarak kimlik doğrulaması yapın. Bu işlem Intune denemenizin mevcut iş veya okul hesabınızla ilişkilendirilmesini sağlar.

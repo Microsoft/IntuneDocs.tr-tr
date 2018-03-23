@@ -1,35 +1,30 @@
 ---
-title: "Intune ve son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler"
-description: "Son kullanıcı cihazlarında Intune ile çalışan uygulamalar için kullanıcı arabiriminde yapılan değişiklikleri keşfedin."
-keywords: 
+title: Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
+titlesuffix: Microsoft Intune
+description: Son kullanıcı cihazlarında Microsoft Intune ile çalışan uygulamalar için kullanıcı arabiriminde yapılan değişiklikleri keşfedin.
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
-# <a name="ui-updates-for-intune-end-user-apps"></a>Intune ve son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
-Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu yenilikler, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
+# <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
+Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu güncelleştirmeleri anlamak, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
 
-## <a name="week-of-december-11-2017"></a>11 Aralık 2017 haftası
-
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Hesaplar için son kullanıcı iletisi <!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-Şirket Portalı web sitesi kullanıcılarının kiracınıza yazma erişimi gerektiren eylemleri yapması engellenir. Hesaplarının bakım altında olduğunu açıklayan uygun bir hata iletisi görürler. Çok yakında Android, iOS, macOS ve Windows için Şirket Portalı uygulamalarında da benzer değişiklikler yapılacaktır.
-
-![Hesap taşıma sırasında oluşan hata iletisi](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-november-27-2017"></a>27 Kasım 2017 Haftası
 
@@ -185,11 +180,11 @@ Android için Şirket Portalı uygulamasının uygulama ayrıntıları sayfası,
 
 Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum açma deneyimini geliştirecek bir değişikliği önümüzdeki birkaç ay içinde piyasaya süreceğiz. Yeni kullanıcı deneyimi, Azure AD bu değişikliği gerçekleştirdiğinde Şirket Portalına yönelik tüm platformlarda görünecektir. Ayrıca, kullanıcılar artık tek kullanımlık bir kod ile başka bir cihazdan Şirket Portalında oturum açabilir. Bu, özellikle kullanıcıların kimlik bilgileri olmadan oturum açması gerektiğinde faydalıdır.  
 
-Aşağıda önceki oturum açma deneyimini, kimlik bilgileriyle yeni oturum açma deneyimini ve yeni başka bir cihazdan oturum açma deneyimini görebilirsiniz.
+Aşağıda; önceki oturum açma deneyimini, kimlik bilgileriyle yeni oturum açma deneyimini ve başka bir cihazdan yeni oturum açma deneyimini görebilirsiniz.
 
 __Önceki oturum açma deneyimi__
 
-![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_before_1704_001.png)
+![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik gösterimi önünde bir kişi simgesi. “Oturum aç” düğmesi, bunların altındadır. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_before_1704_001.png)
 
 ![Oturum aç düğmesine dokunduktan sonra, kullanıcı, e-posta adresi ve parolasının sorulduğu kimlik bilgilerini bu sayfaya girer ve ayrıca parola hatalarının giderilmesi için kendisine yollar önerilir.](./media/cp_ios_aad_signin_before_1704_002.png)
 
@@ -207,13 +202,13 @@ __Yeni oturum açma deneyimi__
 
 __Başka bir cihazdan oturum açarken yeni oturum açma deneyimi__
 
-![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik gösterimi önünde bir kişi simgesi. Altındaki ise "Oturum aç" düğmesidir. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
 __Başka bir cihazdan oturum aç__ bağlantısına dokunun.
 
 ![İş bilgisayarınızdan benzersiz bir geçiş kodu ile aka.ms/devicelogin sayfasına gidip oturum açmak için bu kodu kullanmaya ilişkin yönergeler sağlanır.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Bir tarayıcı başlatın ve [https://aka.ms/devicelogin](https://aka.ms/devicelogin) adresine gidin.
+Tarayıcıyı başlatın ve [https://aka.ms/devicelogin](https://aka.ms/devicelogin) adresine gidin.
 
 ![Kullanıcının Şirket Portalı uygulamasındaki tarayıcı yerine iş bilgisayarındaki tarayıcısının bir resmi. Görüntülenen "Cihaz oturum açma" sayfası kullanıcıdan Şirket Portalı uygulamasından aldığı kodu girmesini ister.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -229,7 +224,7 @@ Bir tarayıcı başlatın ve [https://aka.ms/devicelogin](https://aka.ms/devicel
 
 ## <a name="june-2017"></a>Haziran 2017
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Android için Şirket Portalı uygulamasının artık Uygulama Koruma İlkeleri için yeni bir son kullanıcı deneyimi vardır <!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>Android için Şirket Portalı uygulamasının artık Uygulama Koruma İlkeleri için yeni bir son kullanıcı deneyimi var
 Müşteri geri bildirimi doğrultusunda, Android için Şirket Portalı uygulamasını bir **Şirket İçeriğine Eriş** düğmesi gösterecek şekilde değiştirdik. Amaç, son kullanıcıların yalnızca, Intune mobil uygulama yönetiminin bir özelliği olan Uygulama Koruma İlkelerini destekleyen uygulamalara erişmek için gereksiz yere kayıt işlemi yapmalarını engellemektir.
 
 Kullanıcı, cihazı kaydetmeye başlamak yerine **Şirket İçeriğine Eriş** düğmesine dokunur.
@@ -259,9 +254,9 @@ Bu güncelleştirme yalnızca Windows 10 Yıldönümü Güncelleştirmesi (derle
 
 ![Windows 10 Şirket Portalı uygulamasının açılış sayfasının, ortada "cihazlar" listesinde bir kullanıcıya kullandıkları cihazın henüz kurumsal kullanım için ayarlanmadığını ve kullanıcının ayarı başlatmak için iletiyi seçmesi gerektiğini söyleyen bir durum iletisiyle görüntüsü.](./media/win10_guided_enroll_select_setup_after_1706.png)
 
-![Windows 10 Şirket Portalı uygulaması ayarlama sayfasının, kullanıcıyı bu cihaza bir kurumsal hesap eklemesi gerektiği, daha sonra cihazı yönetime kaydedebileceği konusunda uyaran bir görüntüsü.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
+![Windows 10 Şirket Portalı uygulaması ayarlama sayfasının, kullanıcıyı bu cihaza bir kurumsal hesap eklemesi gerektiği, daha sonra cihazı yönetime kaydedebileceği konusunda uyaran görüntüsü.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
-![Windows 10 Şirket Portalı uygulaması bu cihaza kurumsal hesap ekleme sayfasının, kullanıcıya Ayarlar uygulamasına gidip kaydı tamamlamak için "Bağlan"ı seçmesini söyleyen bir görüntüsü. Bu işlemden sonra ekran, kullanıcıya kaydı tamamlamak için Şirket Portalı uygulamasına dönmesi gerektiğini söyler.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+![Windows 10 Şirket Portalı uygulaması cihaza kurumsal hesap ekleme sayfasının, kullanıcıya Ayarlar uygulamasına gidip kaydı tamamlamak için “Bağlan”ı seçmesini söyleyen görüntüsü. Bu işlemden sonra ekran, kullanıcıya kaydı tamamlamak için Şirket Portalı uygulamasına dönmesi gerektiğini söyler.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
 ![Windows 10 Şirket Portalı uygulaması yönetime kaydolma ekranının, kullanıcı cihazının artık kayıtlı olduğunu ve devam etmek için 'ileri' düğmesine basması gerektiğini söyleyen bir tamamlanma iletisini gösteren bir görüntüsü.](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
@@ -322,13 +317,13 @@ Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıc�
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -382,11 +377,28 @@ Bunlar, kullanıcı arabirimimizi güncelleştirerek kullanıcı deneyimini geli
 > [!Note]
 > Aşağıdaki görüntülerin önizleme sürümüne ait olabileceğini ve duyurulan sürümün farklı olabileceğini lütfen unutmayın.
 
+### <a name="ui-iwp"></a> Şirket Portalı web sitesi için yeni kullanıcı deneyimi güncelleştirmesi <!--2000968-->
+
+Kullanıcı arabirimi güncelleştirmeleri, kolaylaştırılmış iş akışları ve erişilebilirlik iyileştirmeleri içeren bir Şirket Portalı web sitesi deneyimini Nisan ayında tanıtacağız. Bunun içerisinde, size daha kullanıcı dostu bir deneyim sunmak için uygulama paylaşımı ve iyileştirilmiş genel performans gibi müşteri odaklı iyileştirmeler olacak.
+
+Sizin gibi müşterilerden aldığımız geri bildirimlere dayanarak bazı yeni özellikler ekledik. Bu özellikler, geçerli işlevsellik ve kullanılabilirliği büyük oranda artıracak:
+
+-   Web sitesi üzerinde kullanıcı arabirimi iyileştirmeleri
+-   Doğrudan uygulama bağlantıları paylaşabilme seçeneği
+- Büyük uygulama katalogları için iyileştirilmiş performans
+
+Bu değişikliğe hazırlanmak için herhangi bir şey yapmanız gerekmez. Güncelleştirilmiş Şirket Portalı web sitesi kullanılabilir duruma geldiğinde size haber vereceğiz. Ancak daha sonra son kullanıcı belgelerini güncel ekran görüntüleriyle güncelleştirmeniz gerekebilir. iOS uygulamasının **Uygulamalar** bölümü web sitesi tarafından sağlandığı için iOS’ta Şirket Portalı belgelerini de güncelleştirmeniz gerekebileceğine dikkat edin.
+
+|Güncelleştirildi|Önceki|
+|---|---|
+|![Güncelleştirilmiş cihaz sayfası, tam liste üzerinde açılmak yerine cihaz bilgileri üzerinde düzgün bir şekilde hizalı olarak gösteriliyor.](./media/iwp-device-after-1803.png)|![Cihaz sayfasının önceki sürümü.](./media/iwp-device-before-1803.png)|
+|![Güncelleştirilmiş uygulama yükleme sayfası; yayımlanma tarihi, sürüm ve uygulama türü gibi çeşitli yükleme bilgileri ve açıklama üzerinde uygulamayı düzgün bir şekilde gösteriyor.](./media/iwp-app-install-after-1803.png)|![Uygulama yükleme sayfasının önceki sürümü.](./media/iwp-app-install-before-1803.png)|
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS için Şirket Portalı uygulamasında kullanıcı deneyimi güncelleştirmesi <!--1412866-->
 
 iOS için Şirket Portalı uygulamasına büyük bir kullanıcı deneyimi güncelleştirmesi yayımlayacağız. Bu güncelleştirmede, artırılmış kullanılabilirlik ve erişim ile modern bir görüntü ve his veren baştan aşağı yeni bir görsel tasarım yer alacak. Tüm mevcut iOS Şirket Portalı işlevselliği korunacaktır.
 
-Güncelleştirilmiş iOS için Şirket Portalı uygulamasını kullanıp geri bildirimde bulunmanız için Apple TestFlight programı aracılığıyla uygulamanın yayın öncesi sürümünü sunuyoruz. TestFlight erişimi için https://aka.ms/intune_ios_cp_testflight adresine kaydolun.
+Güncelleştirilmiş iOS için Şirket Portalı uygulamasını kullanıp geri bildirimde bulunmanız için Apple TestFlight programı aracılığıyla uygulamanın yayın öncesi sürümünü sunuyoruz. TestFlight erişimi için https://aka.ms/intune_ios_cp_testflight adresinde kaydolun. Bu güncelleştirme hakkında son bilgiler için bkz. https://aka.ms/iOS_companyportal_update.
 
 ![yeni ios şirket portalı uygulamasının teaser görüntüleri](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -400,5 +412,5 @@ __Öne Çıkan Uygulama Güncelleştirmeleri__ Kullanıcıların öne çıkarmak
 
 ### <a name="see-also"></a>Ayrıca bkz:
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Cloud Platform yol haritası](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Cloud Platform yol haritası](https://www.microsoft.com/cloud-platform/roadmap)
 * [Intune’daki yenilikler](https://docs.microsoft.com/intune/whats-new)

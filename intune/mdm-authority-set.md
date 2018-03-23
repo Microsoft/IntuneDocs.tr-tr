@@ -1,25 +1,25 @@
 ---
-title: "Mobil cihaz yönetimi yetkilisini ayarlayın"
+title: Mobil cihaz yönetimi yetkilisini ayarlayın
 titlesuffix: Microsoft Intune
-description: "Intune’da mobil cihaz yönetimi yetkilisini ayarlayın."
-keywords: 
+description: Intune’da mobil cihaz yönetimi yetkilisini ayarlayın.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d48a2cea096c1639cd3661521cd636454f3e0ba
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce6464cc6aa67636743479e69ad2b55c9b102ed9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobil cihaz yönetimi yetkilisini ayarlayın
 
@@ -60,7 +60,7 @@ Kaydı etkinleştirmek veya kolaylaştırmak için farklı platformlarda aşağ�
 - **iOS** - (gerekli) [Bir Apple MDM anında iletme sertifikası alma](apple-mdm-push-certificate-get.md) ve [Şirkete ait iOS cihazlar için kaydı etkinleştirme](ios-enroll.md) (isteğe bağlı).
 - **Android** - (isteğe bağlı) [Android iş profillerini etkinleştirme](android-enroll.md)
 - **Windows** - (isteğe bağlı) [Otomatik kaydı](windows-enroll.md) veya [toplu kaydı](windows-bulk-enroll.md) etkinleştirme
-- **macOS** - Gereksinim yok
+- **macOS** - (gerekli) [Bir Apple MDM Anında İletme Sertifikası alın](apple-mdm-push-certificate-get.md).
 
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM sertifikası süre sonunda mobil cihazı temizleme

@@ -1,23 +1,23 @@
 ---
-title: "Intune’da İş İçin Windows Update ayarlarını yapılandırma"
-titleSuffix: Azure portal
-description: "Windows 10 cihazlarına yönelik güncelleştirmeleri denetlemek amacıyla Intune’da İş İçin Windows Update ayarlarını yapılandırmayı öğrenin.\""
-keywords: 
+title: Microsoft Intune’da İş İçin Windows Update ayarlarını yapılandırma
+titleSuffix: ''
+description: Windows 10 cihazlarına yönelik güncelleştirmeleri denetlemek amacıyla Microsoft Intune’da İş İçin Windows Update ayarlarını yapılandırmayı öğrenin.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>Yazılım güncelleştirmelerini yönetme
 
@@ -140,7 +140,7 @@ Ticari kimliği yapılandırmaya ilişkin OMA-URI (büyük/küçük harfe duyarl
 - **Veri Türü:** Dize
 - **Değer**: <*OMS çalışma alanınızdaki Windows Telemetri sekmesinde gösterilen GUID’yi kullanın*>
 
-![Tanılama ve kullanım verileri için Windows ayarı](./media/commID.png)
+![OMA-URI Ayarı - Satır Ekle](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Güncelleştirmeleri duraklatma
 Bir cihazın Özellik Güncelleştirmeleri veya Kalite Güncelleştirmeleri almasını en çok 35 günlük bir süre boyunca duraklatabilirsiniz. En fazla gün sayısı kadar bir süre geçtikten sonra duraklatma işlevi otomatik olarak sona erer ve cihaz, kullanılabilecek güncelleştirmeleri bulmak için Windows Güncelleştirmelerini tarar. Bu taramanın ardından güncelleştirmeleri yeniden duraklatabilirsiniz.

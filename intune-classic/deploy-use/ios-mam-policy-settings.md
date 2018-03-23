@@ -1,27 +1,30 @@
 ---
-title: "iOS MAM ilkesi ayarları"
-description: "Bu konu başlığı altında, iOS cihazları için mobil uygulama yönetimi ilkesi ayarları açıklanır."
-keywords: 
+title: iOS MAM ilkesi ayarları
+description: Bu konu başlığı altında, iOS cihazları için mobil uygulama yönetimi ilkesi ayarları açıklanır.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae861de505964e830aadc1cd913561462762f282
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c4a87223a25ba26492e8db1731594f844136e003
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/20/2018
 ---
 #  <a name="ios-mobile-app-protection-policy-settings"></a>iOS mobil uygulama koruma ilkesi ayarları
+
+> [!IMPORTANT]
+> Bu sayfadaki içeriğin büyük bir kısmı artık güncel değildir çünkü Intune uygulama koruma ilkeleri tamamen Azure portalına geçirilmiştir. [Azure portalında iOS için Intune uygulama koruma ilkeleri](https://docs.microsoft.com/intune/app-protection-policy-settings-ios) hakkında daha fazla bilgi edinin.
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -51,7 +54,7 @@ Bu konuda açıklanan ilke ayarları, Azure portalındaki **Tüm Ayarlar** dikey
 
 Intune uygulama koruma ilkesinin, belirli senaryolarda veri aktarımına hedef ve kaynak olarak izin verebileceği bazı muaf uygulamalar ve platform hizmetleri vardır. Bu liste değiştirilebilir ve güvenli verimlilik için kullanışlı olarak nitelendirilen hizmetleri ve uygulamaları yansıtır.
 
-| Uygulama/hizmet adı | Açıklama |
+| Uygulama/hizmet adı | Description |
 | ---- | --- |
 |tel; telprompt | Yerel telefon uygulaması |
 | skype | Skype |

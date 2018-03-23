@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune lisansları atama"
-description: "Intune’a kaydolabilmeleri için kullanıcılara lisans atama"
-keywords: 
+title: Microsoft Intune lisansları atama
+description: Intune’a kaydolabilmeleri için kullanıcılara lisans atama
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 67d12c748c5f4daabcb64eff7a154455b39a57d0
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Cihazlarını Intune’a kaydedebilmeleri için kullanıcılara lisans atama
 
@@ -58,6 +58,17 @@ SDS hakkında daha fazla bilgi edinmek için bkz. [School Data Sync’e genel ba
 * Bir kullanıcı yazılım lisansı atadığınız her **kullanıcı** uygulamaları yönetmek için ve 15 cihaza kadar çevrimiçi hizmetlere ve ilgili yazılımlara (System Center yazılımı dahil olmak üzere) erişebilir ve bunları kullanabilir.
 * Bir cihaz yazılım lisansı atadığınız her **cihaz** herhangi bir kullanıcı sayısında kullanım için çevrimiçi hizmetlere ve ilgili yazılımlara (System Center yazılımı dahil olmak üzere) erişebilir ve bunları kullanabilir.
 * Bir cihaz birden fazla kullanıcı tarafından kullanılıyorsa, her biri için cihaz yazılım lisansı gerekir veya tüm kullanıcıların bir kullanıcı yazılım lisansı kullanması gerekir.
+
+## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Satın aldığınız lisans türünü anlama
+
+Intune’u satın alma şekliniz, abonelik bilgilerinizi belirleyen etkendir:
+
+- Intune hizmetini bir Kurumsal Anlaşma yoluyla satın aldıysanız abonelik bilgilerinizi **Abonelikler** altındaki Toplu Lisans portalında bulabilirsiniz.
+- Intune hizmetini bir Bulut Çözümü Sağlayıcısı yoluyla satın aldıysanız kurumsal bayinizle iletişime geçin.
+- Intune hizmetini bir CC# veya Fatura ile satın aldıysanız, lisanslarınız kullanıcı temelli olacaktır.
+
+
+
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>EMS kullanıcı lisanslarını seçmeli yönetmek için PowerShell kullanma
 Microsoft Enterprise Mobility + Security (eskiden Enterprise Mobility Suite) kullanan kuruluşların, yalnızca EMS paketinde Azure Active Directory Premium veya Intune hizmetleri gerektiren kullanıcıları olabilir. [Azure Active Directory PowerShell cmdlet’lerini](https://msdn.microsoft.com/library/jj151815.aspx) kullanarak hizmetlerin birini veya bir alt kümesini atayabilirsiniz.

@@ -1,30 +1,31 @@
 ---
-title: "Özel bir etki alanı adı yapılandırma"
-description: "Intune aboneliğiniz için özel etki alanı adı ekleme"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Özel bir etki alanı adı yapılandırma
+titlesuffix: Microsoft Intune
+description: Microsoft Intune aboneliğiniz için özel etki alanı adı ekleme
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>Özel bir etki alanı adı yapılandırma
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Bu konuda, yöneticilerin oturum açma deneyimlerini kolaylaştırmak ve özelleştirmek için DNS CNAME’i nasıl oluşturacakları açıklanır.
+Bu konuda, yöneticilerin oturum açma deneyimlerini kolaylaştırmak ve özelleştirmek için DNS CNAME’in nasıl oluşturulacağı açıklanır.
 
 Kuruluşunuz, Microsoft’un Intune gibi bulut tabanlı bir hizmete kaydolduğunda size Azure Active Directory’de (AD) barındırılan, **etki-alanınız.onmicrosoft.com** şeklinde bir ilk etki alanı adı verilir. Bu örnekte **etki-alanınız** kısmı, kaydolduğunuz zaman seçtiğiniz etki alanı adıdır. **onmicrosoft.com** kısmı ise aboneliğinize eklediğiniz hesaplara atanan sonektir. Intune’a erişmek için aboneliğinizle sağlanan etki alanı adı yerine kuruluşunuzun özel etki alanını kullanabilirsiniz.
 

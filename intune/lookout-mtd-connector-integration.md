@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune ile Lookout tümleştirmenizi ayarlama"
-titlesuffix: 
-description: "Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Lookout Mobile Threat Defense’i Intune ile tümleştirme hakkında bilgi edinin."
-keywords: 
+title: Microsoft Intune ile Lookout tümleştirmenizi ayarlama
+titlesuffix: ''
+description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Lookout Mobile Threat Defense’i Intune ile tümleştirme hakkında bilgi edinin.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
 
@@ -67,13 +67,11 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 
 ## <a name="configure-your-subscription"></a>Aboneliğinizi yapılandırma
 
-1. Lookout desteği Lookout Enterprise hesabınızı oluşturduktan sonra, oturum açma URL’sini içeren bir e-posta Lookout’tan şirketinizdeki birincil ilgili kişiye gönderilir: https://aad.lookout.com/les?action=consent.
+1. Lookout desteği, Lookout Enterprise hesabınızı oluşturduktan sonra oturum açma URL’sini içeren bir e-posta, Lookout’tan şirketinizdeki birincil ilgili kişiye gönderilir:https://aad.lookout.com/les?action=consent.
 
 2.  Azure AD kiracınızı kaydetmek için Lookout konsolunda ilk kez oturum açma işleminin Azure AD rolü Genel Yönetici olan bir kullanıcı hesabı kullanılarak yapılması gerekir. Daha sonra, oturum açma işleminin bu Azure AD ayrıcalık düzeyinde yapılmasına gerek yoktur. Bir onay sayfası görüntülenir. Kaydı tamamlamak için **Kabul Et**’i seçin. Kabul edip onay verdikten sonra Lookout Konsolu'na yönlendirilirsiniz.
 
     ![Lookout konsolunda ilk defa oturum açma sayfasının ekran görüntüsü](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > Oturum açma sorunları ile ilgili yardım için bkz. [Lookout tümleştirme sorunlarını giderme](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration).
 
 3.  [Lookout Konsolu](https://aad.lookout.com)’nda, **Sistem** modülünde, **Bağlayıcılar** sekmesine tıklayın ve **Intune**’u seçin.
 
