@@ -1,28 +1,28 @@
 ---
-title: "Intune'da Office 365 uygulamalarında temel veri yönetimini ayarlama"
-titlesuffix: Azure portal
-description: "Office 365 uygulamalarını yönetme sihirbazını destekleyen belgeler.\""
-keywords: 
+title: Microsoft Intune’da Office 365 uygulamalarının veri yönetimi
+titlesuffix: ''
+description: Microsoft Intune’da Office 365 uygulamalarının veri yönetimi hakkında bilgi edinin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12f5becc1f3c03af0ee6d1fab9cd7ee16f2a547
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Kullanıcılarınızın yönetilen Office 365 uygulamalarındaki temel koruma deneyimi
+# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Kullanıcılarınızın Microsoft Intune’da yönetilen Office 365 uygulamalarındaki temel koruma deneyimi
 
 **Office 365 uygulamalarını yönet** sihirbazı, her cihaz platformu için bir uygulama koruma ilkesi oluşturur.
 
@@ -46,30 +46,30 @@ Bu makalede, Intune tarafından yönetilen bir uygulamada kullanıcının deneyi
 
 ## <a name="user-experience-on-an-ios-device"></a>iOS cihazında kullanıcı deneyimi
 
-1. Oturum açma sayfasını açmak için OneDrive İş uygulamasını başlatın.  <br/> ![iOS için OneDrive oturum açma ekranının resmi](./media/onedrive-ios-sign-in.png)
-2. İş hesabı kullanıcı adınızı yazın. İş kimlik bilgilerinizi girmeniz için Office 365 kimlik doğrulaması sayfasına yönlendirilirsiniz. <br/> ![Office 365 oturum açma sayfasının resmi](./media/o365-sign-in-ios.png)
-3. Kimlik bilgileriniz Azure Active Directory tarafından başarıyla doğrulandıktan sonra uygulama koruma ilkeleri uygulanır ve OneDrive İş uygulamasını yeniden başlatmanız istenir.  <br/>![iOS için yeniden başlatma isteminin resmi](./media/ios-restart-prompt.png)    
+1. Oturum açma sayfasını açmak için OneDrive İş uygulamasını başlatın.  
+2. İş hesabı kullanıcı adınızı yazın. İş kimlik bilgilerinizi girmeniz için Office 365 kimlik doğrulaması sayfasına yönlendirilirsiniz. 
+3. Kimlik bilgileriniz Azure Active Directory tarafından başarıyla doğrulandıktan sonra uygulama koruma ilkeleri uygulanır ve OneDrive İş uygulamasını yeniden başlatmanız istenir. 
+
   > [!NOTE]
   > Yeniden başlatma gerekli iletisi yalnızca, Intune’da kayıtlı olmayan cihazlarda görüntülenir.
 
+4. OneDrive İş uygulamasını yeniden başlatın. Uygulama, uygulama koruma ilkeleri açık olarak başlatılır ve cihaz için bir PIN ayarlamanız istenir (henüz cihaz için bir PIN yapılandırmadıysanız).  
 
-4. OneDrive İş uygulamasını yeniden başlatın. Uygulama, uygulama koruma ilkeleri açık olarak başlatılır ve cihaz için bir PIN ayarlamanız istenir (henüz cihaz için bir PIN yapılandırmadıysanız). <br/> ![PIN oluşturma isteminin resmi](./media/pin-prompt-ios.png)    
   > [!NOTE]
   > Kullanıcılarınızın çoğu bu bilgi istemini görmez. Yalnızca iOS cihazlarında PIN’i etkinleştirmemiş olan kullanıcılar bu bilgi istemini görür.
 
-
-5. PIN’i ayarlayıp onayladıktan sonra, OneDrive İş uygulamasına dönün. BT yöneticinizin artık OneDrive’daki iş verilerinizi koruduğuna ilişkin tek seferlik bir bildirim görürsünüz. <br/> ![BT yöneticinizden gelen tek seferlik bildirimin resmi](./media/one-time-notice.png)
-6. OneDrive İş’teki dosyalarınıza erişmek için bu bildirimi tıklayarak geçin. <br/> ![iOS cihazındaki OneDrive dosyalarının resmi](./media/onedrive-files-ios.png) <br/>
+5. PIN’i ayarlayıp onayladıktan sonra, OneDrive İş uygulamasına dönün. BT yöneticinizin artık OneDrive’daki iş verilerinizi koruduğuna ilişkin tek seferlik bir bildirim görürsünüz. 
+6. OneDrive İş’teki dosyalarınıza erişmek için bu bildirimi tıklayarak geçin. 
 
 >[!NOTE]
 >Dağıtılan bir ilkeyi değiştirirseniz, değişiklikler uygulamayı bir sonraki açışınızda uygulanır.
-
 
 ## <a name="user-experience-on-an-android-device"></a>Android cihazında kullanıcı deneyimi
 
 1. Oturum açma sayfasını açmak için OneDrive İş uygulamasını başlatın.  <br/> ![OneDrive uygulaması hoş geldiniz ekranının resmi](./media/onedrive-android-welcome.png)
 2. İş hesabı kullanıcı adınızı yazın. İş kimlik bilgilerinizi girmeniz için Office 365 kimlik doğrulaması sayfasına yönlendirilirsiniz. <br/> ![Android’de O365 oturum açma işleminin resmi](./media/o365-sign-in-android.png)
-3. Kimlik bilgileriniz Azure AD Active Directory tarafından başarıyla doğrulandıktan sonra, Şirket Portalı uygulaması cihaza henüz yüklenmediyse, uygulamayı yükleme yönergelerini içeren bir ileti görürsünüz. Devam etmek için **Mağazaya git**’e dokunun. <br/> ![Şirket Portalı uygulamasını alma iletisinin resmi](./media/get-company-portal-android.png) <br/>Şirket Portalı uygulaması telefonunuza zaten yüklenmişse, OneDrive İş uygulaması otomatik olarak başlatılır ve son nota atlayabilirsiniz.    
+3. Kimlik bilgileriniz Azure AD Active Directory tarafından başarıyla doğrulandıktan sonra, Şirket Portalı uygulaması cihaza henüz yüklenmediyse, uygulamayı yükleme yönergelerini içeren bir ileti görürsünüz. Devam etmek için **Mağazaya git**’e dokunun. <br/> ![Şirket Portalı uygulamasını alma iletisinin resmi](./media/get-company-portal-android.png) <br/>Şirket Portalı uygulaması telefonunuza zaten yüklenmişse, OneDrive İş uygulaması otomatik olarak başlatılır ve son nota atlayabilirsiniz.   
+
   > [!IMPORTANT]
   > Android’de, Office uygulamalarının bir uygulama koruma ilkesi tarafından yönetilmesini ayarladıktan sonra, son kullanıcının aslında e-postaları veya belgeleri okumak için Şirket Portalı uygulamasını açması veya bu uygulamada oturum açması gerekmese bile, iş e-postalarına ve belgelerine erişmek için bu uygulamayı yüklemesi **gerekir**.
 
@@ -128,4 +128,4 @@ Bu ilkeleri veya Intune Azure portalında oluşturduğunuz herhangi bir ilkeyi g
 ![İlkeleri görüntülemek için kullanıcı arabirimi yolunun görüntüsü](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Uygulama koruma ilkeleri](app-protection-policy.md) hakkında daha fazla bilgi edinin.
+- [Uygulama koruma ilkeleri](app-protection-policy.md) hakkında daha fazla bilgi edinin.

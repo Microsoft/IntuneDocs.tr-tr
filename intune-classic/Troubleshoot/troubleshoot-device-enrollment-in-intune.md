@@ -1,25 +1,25 @@
 ---
-title: "Cihaz kaydıyla ilgili sorunları giderme"
-description: "Cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler."
-keywords: 
+title: Cihaz kaydıyla ilgili sorunları giderme
+description: Cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
@@ -70,7 +70,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory portalında cihazları silmek için
 
-1.  [Http://aka.ms/accessaad](http://aka.ms/accessaad) bağlantısına göz atın veya [https://portal.office.com](https://portal.office.com) adresinde **Yönetici** &gt; **Azure AD**’yi seçin.
+1.  [http://aka.ms/accessaad](http://aka.ms/accessaad) öğesine gözatın veya [https://portal.office.com](https://portal.office.com) öğesinden **Yönetici** &gt; **Azure AD**’yi seçin.
 
 2.  Sayfanın sol tarafındaki bağlantıyı kullanarak Kuruluş Kimliğinizle oturum açın.
 
@@ -99,7 +99,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 
 1.  Intune Şirket Portalı uygulamasını cihazınızdan kaldırın.
 
-2.  Cihazda tarayıcıyı, [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)adresine göz atın ve kullanıcı oturum açma işlemi yapmayı deneyin.
+2.  Cihazda tarayıcıyı açın, [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) adresine göz atın ve kullanıcı oturum açma işlemini deneyin.
 
 3.  Kullanıcı oturum açamazsa, başka bir ağ denemesini isteyin.
 
@@ -165,8 +165,8 @@ Son kullanıcıların Android cihazları Intune’a kaydederken karşılaşabile
 
 |Hata iletisi|Sorun|Çözüm|
 |---|---|---|
-|**Erişim için BT yöneticisinin lisans ataması gerekiyor**<br>BT yöneticiniz, bu uygulamayı kullanmanız için size erişim vermemiş. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Cihaz kaydedilemiyor çünkü bu kullanıcının hesabında gerekli lisans yok.|Cihazlar kaydedilmeden önce kullanıcılara gerekli lisans atanmış olmalıdır. Bu ileti kullanıcının belirlenen mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin, mobil cihaz yönetimi yetkilisi olarak Intune belirlendiyse ve kullanıcı bir System Center 2012 R2 Configuration Manager lisansı kullanıyorsa bu hatayı alır.<br><br>[Kullanıcı hesaplarınıza Intune lisansları atama](/intune/licenses-assign.md) hakkında bilgi alın.
-|**BT yöneticisinin MDM yetkilisi ayarlaması gerekiyor**<br>Görünüşe göre BT yöneticiniz MDM yetkilisi ayarlamamış. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Mobil cihaz yönetimi yetkilisi tanımlanmadı.|Intune’da mobil cihaz yönetimi yetkilisi belirlenmemiştir. [Mobil cihaz yönetimi yetkilisini ayarlama](/intune/mdm-authority-set.md) hakkında bilgi edinin.|
+|**Erişim için BT yöneticisinin lisans ataması gerekiyor**<br>BT yöneticiniz, bu uygulamayı kullanmanız için size erişim vermemiş. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Cihaz kaydedilemiyor çünkü bu kullanıcının hesabında gerekli lisans yok.|Cihazlar kaydedilmeden önce kullanıcılara gerekli lisans atanmış olmalıdır. Bu ileti kullanıcının belirlenen mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin, mobil cihaz yönetimi yetkilisi olarak Intune belirlendiyse ve kullanıcı bir System Center 2012 R2 Configuration Manager lisansı kullanıyorsa bu hatayı alır.<br><br>[Kullanıcı hesaplarınıza Intune lisansları atama](/intune/licenses-assign) hakkında bilgi alın.
+|**BT yöneticisinin MDM yetkilisi ayarlaması gerekiyor**<br>Görünüşe göre BT yöneticiniz MDM yetkilisi ayarlamamış. Lütfen BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Mobil cihaz yönetimi yetkilisi tanımlanmadı.|Intune’da mobil cihaz yönetimi yetkilisi belirlenmemiştir. [Mobil cihaz yönetimi yetkilisini ayarlama](/intune/mdm-authority-set) hakkında bilgi edinin.|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Cihazlar Intune hizmetini denetlemiyor ve Intune yönetici konsolunda "Uygun olmayan durumda" olarak görüntüleniyor
@@ -257,7 +257,7 @@ Sorunu düzeltmek için AD FS sunucusunda veya proxy’lerdeki Bilgisayar Kişis
 10. AD FS sunucularını yeniden başlatın.
 11. Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
 
-Sertifika yüklemesinin düzgün yapıldığını doğrulamak için, [https://www.digicert.com/help/](https://www.digicert.com/help/) konumunda sağlanan tanılama araçlarını kullanabilirsiniz. **Sunucu Adresi** kutusuna ADFS sunucunuzun FQDN'sini (örn: sts.contso.com) yazın ve **Sunucuyu Denetle**'ye tıklayın.
+Sertifika yüklemesinin düzgün yapıldığını doğrulamak için, [https://www.digicert.com/help/](https://www.digicert.com/help/) adresinde sağlanan tanılama araçlarını kullanabilirsiniz. **Sunucu Adresi** kutusuna ADFS sunucunuzun FQDN'sini (örn: sts.contso.com) yazın ve **Sunucuyu Denetle**'ye tıklayın.
 
 **Sertifikanın düzgün yüklendiğini doğrulamak için**:
 
@@ -332,7 +332,7 @@ Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güven
 
 2.  Cihazın zaten başka bir MDM sağlayıcısıyla kaydedilmediğini ve cihaza önceden bir yönetim profili yüklenmediğini doğrulayın.
 
-3.  [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) adresine gidin ve istendiğinde profili yüklemeyi deneyin.
+3.  [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) öğesine gidin ve istendiğinde profili yüklemeyi deneyin.
 
 4.  iOS için Safari’nin varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
@@ -377,7 +377,7 @@ Bu günlük dosyalarında nelerin aranması gerektiğine ilişkin örnekler yak�
 
 
 ### <a name="other-ios-enrollment-errors"></a>Diğer iOS kayıt hataları
-iOS kayıt hatalarının bir listesi, cihaz-kullanıcı belgelerimizdeki [Cihazınızı Intune'a kaydetmeye çalışırken hatalar görüyorsunuz](/intune-user-help/using-your-iOS-or-macOS-device-with-intune) bölümünde verilmiştir.
+iOS kayıt hatalarının listesi, [Microsoft Intune’da iOS cihaz kayıt sorunlarını giderme](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) belgelerinde sağlanmıştır.
 
 ## <a name="pc-issues"></a>Bilgisayar Sorunları
 

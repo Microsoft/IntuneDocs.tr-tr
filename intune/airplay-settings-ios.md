@@ -1,25 +1,25 @@
 ---
-title: "iOS cihazları için Intune AirPlay ayarları"
-titlesuffix: Azure portal
-description: "iOS cihazları AirPlay uyumlu cihazlara otomatik olarak bağlamaya yardımcı olması için Intune’u nasıl kullanabileceğinizi öğrenin."
-keywords: 
+title: iOS cihazları için Intune AirPlay ayarları
+titlesuffix: Microsoft Intune
+description: iOS cihazları AirPlay uyumlu cihazlara otomatik olarak bağlamaya yardımcı olması için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9de6f0e2f7c74e7aec45c27f0fa20189b26c5e22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5f941d6c6d3e1aec9e53b97ad0700d3ad3070d56
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>iOS cihazları için Intune AirPlay ayarları
 
@@ -33,7 +33,7 @@ Bu özellik ile şunları yapabilirsiniz:
 
 ## <a name="get-started"></a>Başlarken
 
-1. [Azure Portalı’nda Intune](https://portal.azure.com)’dan, cihaz yapılandırma alanındaki [**Cihaz özellikleri**’ni seçin](device-features-configure.md). 
+1. [Azure Portalı’nda Intune](https://portal.azure.com)’dan, cihaz yapılandırma alanındaki [**Cihaz özellikleri**’ne gidin](device-features-configure.md). 
 1. **Cihaz özellikleri** bölmesinde **AirPlay**’i seçin.
 2. **AirPlay** bölmesinde, aşağıdaki eylemlerden birini veya ikisini birden seçin:
 

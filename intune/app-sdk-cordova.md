@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune Uygulama SDK'sı Cordova Eklentisi"
-description: 
+title: Microsoft Intune Uygulama SDK'sı Cordova Eklentisi
+description: Intune Uygulama SDK’sı Cordova Eklentisi, geliştiricilerin Intune uygulama ve veri koruma özelliklerini Cordova tabanlı uygulamalarıyla tümleştirmelerini sağlar.
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune Uygulama SDK'sı Cordova Eklentisi
 
@@ -64,7 +64,7 @@ Intune Uygulama SDK'sı Cordova Eklentisi ile derlenen Cordova uygulamaları art
 * [Cordova için Azure Active Directory Authentication Library (ADAL) eklentisinin](https://github.com/AzureAD/azure-activedirectory-library-for-cordova) 0.8.0 üzeri sürümü gereklidir.
 
 > [!NOTE]
-> [Burada](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22) bildirilen Apache Cordova hatası nedeniyle eklenti bağımlılığına sahip olan uygulamalar eklentiyi otomatik olarak istenen sürüme yükseltmeyecektir.
+> [Burada](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22) bildirilen Apache Cordova hatası nedeniyle eklenti bağımlılığına sahip olan uygulamalar, eklentiyi otomatik olarak istenen sürüme yükseltmeyecektir.
 
 
 
@@ -96,7 +96,7 @@ Bu kurulum yalnızca tek bir hedefi destekler ve birden fazla hedef olması hali
 
 1. Bu eklentiyi güncel Cordova araçlarıyla içeri aktarın. Eklenti otomatik olarak `after_compile` adımında çağrılacaktır.
 
-2. Eklenti derleme işleminin sonunda derlenen apk (Android API 14+) dosyasının Intune özellikli sürümünü oluşturacaktır. Derleme çıktısında `[Project]-intunewrapped-[Build_Configuration].apk` bulunacaktır (ör: `helloWorld-intunewrapped-debug.apk`).
+2. Eklenti derleme işleminin sonunda derlenen apk (Android API 14+) dosyasının Intune özellikli sürümünü oluşturacaktır. Derleme çıktısında `[Project]-intunewrapped-[Build_Configuration].apk` bulunacaktır (örneğin: `helloWorld-intunewrapped-debug.apk`).
 
 > [!NOTE]
 > Eklenti yalnızca gradle derlemelerini destekler.
@@ -118,19 +118,19 @@ Eklenti aşağıdaki konumlarda bulunan Cordova'ya verdiğiniz imza bilgilerini 
 
 Beklenen biçin hakkında daha fazla bilgi için [Cordova gradle imzalama bilgilerine](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle) bakın.
 
-Şu anda `build.json` içinde veya parametreler aracılığıyla isteğe bağlı konumlarda Cordova derlemesine imza bilgisi sağlanmasını desteklemiyoruz.
+Intune şu anda `build.json` içinde veya parametreler aracılığıyla isteğe bağlı konumlarda Cordova derlemesine imza bilgisi sağlanmasını desteklemiyor.
 
 ## <a name="debugging-from-visual-studio"></a>Visual Studio'dan hata ayıklama
 
-Uygulamayı ilk kez çalıştırdığınızda, Intune tarafından yönetildiğini belirten bir iletişim kutusu görüntülenir. "Bir daha gösterme" seçeneğini işaretleyin ve kesme noktalarına ulaşılması için VS'den hata ayıkla/çalıştır düğmesine tekrar tıklayın.
+Uygulamayı ilk kez çalıştırdığınızda, uygulamanın Intune tarafından yönetildiğini belirten bir iletişim kutusu görüntülenir. "Bir daha gösterme" seçeneğini işaretleyin ve kesme noktalarına ulaşılması için VS'den hata ayıkla/çalıştır düğmesine tekrar tıklayın.
 
 ## <a name="known-limitations"></a>Bilinen Sınırlamalar
 
 ### <a name="android"></a>Android
 
 * MultiDex desteği tamamlanmadı.
-* Uygulama `minSdkVersion` 14 ve `targetSdkVersion` 24 veya altı olmalıdır. Şu anda API 25 hedefleyen uygulamaları desteklemiyoruz
-* V2 İmza Şemasıyla imzalanmış olan uygulamaları yeniden imzalayamıyoruz. V2 imzalı uygulamalar eklenti ile sarıldığında sarılan sonuç .apk dosyası imzalanmamış olur.
+* Uygulama `minSdkVersion` 14 ve `targetSdkVersion` 24 veya altı olmalıdır. Intune şu anda API 25 hedefleyen uygulamaları desteklemiyor
+* Intune, V2 İmza Şemasıyla imzalanmış olan uygulamaları yeniden imzalayamaz. V2 imzalı uygulamalar eklenti ile sarıldığında sarılan sonuç .apk dosyası imzalanmamış olur.
 *
   * Aşağıdakileri `build-extras.gradle` dosyanıza ekleyerek Cordova'nın varsayılan V2 İmzalama özelliğini devre dışı bırakabilirsiniz:
 
@@ -157,6 +157,6 @@ Uygulamayı ilk kez çalıştırdığınızda, Intune tarafından yönetildiğin
 
 ### <a name="ios"></a>iOS
 
-* **Info.plist** dosyasının **CFBundleDocumentTypes** düğümünün altındaki UTI listesini değiştirdiğinizde tekrar derlemeden önce aynı plist dosyasının (**UTImportedTypeDeclarations** düğümü) İçe Aktarılan UTI'ler bölümündeki Intune UTI'lerini temizlemeniz gerekir. Tüm Intune UTI'leri `com.microsoft.intune.mam` ön ekine sahip olacaktır.
+* **Info.plist** dosyasının **CFBundleDocumentTypes** düğümünün altındaki UTI listesini değiştirdiğinizde, tekrar derlemeden önce aynı plist dosyasının (**UTImportedTypeDeclarations** düğümü) İçeri Aktarılan UTI’lar bölümündeki Intune UTI’larını temizlemeniz gerekir. Tüm Intune UTI’ları `com.microsoft.intune.mam` ön ekine sahip olacaktır.
 
 * Cordova için Intune Uygulama SDK'sı eklentisini Cordova projenizden kaldırmak isterseniz, .xcodeproj ve .plist dosyalarındaki Intune yapılandırmalarından bazılarını geri almak için iOS platformunu da kaldırıp tekrar eklemeniz gerekir.

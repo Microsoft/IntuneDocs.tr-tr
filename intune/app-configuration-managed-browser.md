@@ -1,25 +1,25 @@
 ---
-title: "Managed Browser uygulaması ile web erişimini yönetme"
+title: Managed Browser uygulaması ile web erişimini yönetme
 titlesuffix: Microsoft Intune
-description: "Web’e gözatmayı ve web verilerinin başka uygulamalara aktarımını kısıtlamak için Managed Browser uygulamasını dağıtın."
-keywords: 
-author: erikre
+description: Web’e gözatmayı ve web verilerinin başka uygulamalara aktarımını kısıtlamak için Managed Browser uygulamasını dağıtın.
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7c36639272bd8738bff33f6039a2d26e6147729
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile Managed Browser ilkelerini kullanarak İnternet erişimini yönetme
 
@@ -35,7 +35,7 @@ Uygulamanın Intune SDK’sıyla tümleştirmesi olduğundan, buna aşağıdakil
 - Ekran yakalamayı önleme
 - Bu sayede kullanıcıların seçtiği içeriklerin bağlantılarının yalnızca diğer yönetilen uygulamalarda açıldığından emin olabilirsiniz.
 
-Ayrıntılar için bkz. [Uygulama koruma ilkesi nedir?](/intune/app-protection-policy)
+Ayrıntılar için bkz. [Uygulama koruma ilkesi nedir?](/intune/app-protection-policy.md)
 
 Bu ayarları şunlara uygulayabilirsiniz:
 
@@ -59,7 +59,47 @@ Aşağıdaki cihaz türleri için Managed Browser ilkeleri oluşturabilirsiniz:
 >Android ve iOS’un daha eski sürümleri Managed Browser'ı kullanmaya devam edebilecek, ancak uygulamanın yeni sürümlerini yükleyemeyecek ve uygulamanın tüm özelliklerine erişemeyecektir. Bu cihazların desteklenen işletim sistemi sürümüne güncelleştirmenizi öneririz.
 
 
-Intune Managed Browser, [Microsoft Intune uygulama iş ortaklarının](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) web içeriklerini açmayı destekler.
+Intune Managed Browser, [Microsoft Intune uygulama iş ortaklarının](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) web içeriklerini açmayı destekler.
+
+## <a name="conditional-access-for-the-intune-managed-browser"></a>Intune Managed Browser için Koşullu Erişim
+
+Managed Browser artık Koşullu Erişim için onaylı bir istemci uygulaması. Yani Azure AD bağlantılı web uygulamalarında mobil tarayıcı erişimini kısıtlayabilir, böylece kullanıcıların yalnızca Managed Browser kullanmasını sağlayarak Safari veya Chrome gibi korumasız tarayıcılardan erişimi engelleyebilirsiniz. Bu koruma; Exchange Online ve SharePoint Online, Office portalı ve hatta [Azure AD Uygulama Ara Sunucusu](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) yoluyla harici kullanıcılara sunduğunuz şirket içi siteler gibi Azure kaynaklarına uygulanabilir. 
+
+Azure AD bağlantılı web uygulamalarının mobil platformlarda Intune Managed Browser kullanmasını kısıtlamak için, onaylı istemci uygulamalarını gerektiren bir Azure AD Koşullu Erişim ilkesi oluşturabilirsiniz. 
+
+1. Azure portalında **Azure Active Directory** > **Kuruluş uygulamaları** > **Koşullu erişim** > **Yeni ilke**’yi seçin. 
+2. Daha sonra, dikey pencerenin **Erişim denetimleri** bölümünden **İzin Ver**’i seçin. 
+3. **Onaylı istemci uygulaması gerektir**’e tıklayın. 
+4. **İzin Ver** dikey penceresinde **Seçin**’e tıklayın. Bu ilke, yalnızca Intune Managed Browser uygulaması tarafından erişilebilir olmasını istediğiniz bulut uygulamalarına atanmalıdır.
+
+    ![Azure AD - Managed Browser koşullu erişim ilkesi](./media/managed-browser-conditional-access-01.png)
+
+5. **Atamalar** bölümünde **Koşullar** > **İstemci uygulamaları**’nı seçin. **İstemci uygulamaları** dikey penceresi görüntülenir.
+6. Belirli istemci uygulamalarında ilkeyi uygulamak için **Yapılandır** altında **Evet**’e tıklayın.
+7. **Tarayıcı**’nın, bir istemci uygulaması olarak seçildiğini doğrulayın.
+
+    ![Azure AD - Managed Browser - İstemci uygulamalarını seçme](./media/managed-browser-conditional-access-02.png)
+
+    > [!NOTE]
+    > Bu bulut uygulamalarına erişebilecek yerel uygulamaları (tarayıcı olmayan uygulamalar) kısıtlamak için **Mobil uygulamalar ve masaüstü istemciler**’i de seçebilirsiniz.
+
+8. **Atamalar** bölümünde **Kullanıcılar ve gruplar**’ı seçin ve ardından bu ilkeyi atayacağınız kullanıcı veya grupları seçin. 
+
+    > [!NOTE]
+    > Kullanıcıların da Intune Uygulama Koruma ilkesi ile hedeflenmesi gerekir. Intune Uygulama Koruma ilkeleri oluşturma hakkında daha fazla bilgi için bkz: [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).
+
+9. **Atamalar** bölümünde **Bulut uygulamaları**’nı seçerek bu ilkeyle hangi uygulamaları koruyacağınızı seçin.
+
+Yukarıdaki ilke yapılandırıldıktan sonra kullanıcılar, bu ilkeyle koruduğunuz Azure AD bağlantılı web uygulamalarına erişmek için Intune Managed Browser’ı kullanmaya zorlanacaktır. Bu senaryoda kullanıcılar yönetilmeyen bir tarayıcı kullanmaya çalışırsa, Intune Managed Browser kullanmaları gerektiğine dair bir bildirim göreceklerdir.
+
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Intune Managed Browser’da Azure AD bağlantılı web uygulamalarında çoklu oturum açma
+
+iOS ve Android’de Intune Managed Browser uygulaması, artık Azure AD bağlantılı tüm web sitelerinde (SaaS ve şirket içi) SSO’dan faydalanabilecek. iOS’ta Microsoft Authenticator uygulaması veya Android’de Intune Şirket Portalı uygulaması olduğunda; Intune Managed Browser kullanıcıları, kimlik bilgilerini yeniden girmeye gerek kalmadan Azure AD bağlantılı web uygulamalarına erişebilecekler.
+
+Intune Managed Browser’da SSO, cihazınızın iOS’ta Microsoft Authenticator uygulaması veya Android’de Intune Şirket Portalı üzerinde kayıtlı olmasını gerektirir. Authenticator uygulaması veya Şirket Portalı olan kullanıcılar, Intune Managed Browser’da Azure AD bağlantılı bir web uygulamasına gittiklerinde; kullanıcıların cihazları daha önceden başka bir uygulamaya kaydedilmemişse cihazlarını kaydetmeleri istenir. Cihaz, Intune tarafından yönetilen bir hesap ile kaydedildiğinde, bu hesapta Azure AD bağlantılı web uygulamaları için SSO etkin olacaktır. 
+
+> [!NOTE]
+> Cihaz kaydı, Azure AD hizmeti ile basit bir iade etme işlemidir. Tam cihaz kaydı gerektirmez ve BT ekibine cihaz üzerinde herhangi bir ek ayrıcalık sağlamaz.
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Bir Managed Browser uygulama yapılandırması oluşturma
 
@@ -102,7 +142,10 @@ Intune Managed Browser ve [Azure AD Uygulama Proxy’si]( https://docs.microsoft
     - Uygulama Proxy’sini yapılandırmak ve uygulama yayımlamak için bkz. [kurulum belgeleri]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - Managed Browser uygulamasının 1.2.0 veya üzeri bir sürümünü kullanıyor olmanız gerekir.
 - Managed Browser uygulamasının kullanıcıları, uygulamaya atanmış bir [Intune uygulama koruma ilkesine]( app-protection-policy.md) sahiptir.
-Not: Güncelleştirilmiş Uygulama Ara Sunucu’nun yeniden yönlendirme verilerinin Yönetilen Tarayıcı'da etkinleşmesi 24 saate kadar sürebilir.
+
+    > [!NOTE]
+    > Güncelleştirilmiş Uygulama Ara Sunucusu’nun yeniden yönlendirme verilerinin Managed Browser’da etkinleşmesi 24 saati bulabilir.
+
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>1. adım: Outlook'tan Managed Browser’a otomatik yeniden yönlendirmeyi etkinleştirme
 Outlook’un, **Managed Browser’da görüntülenecek içeriği kısıtla** ayarına imkan veren bir uygulama koruma ilkesiyle yapılandırılması gereklidir.
@@ -115,6 +158,7 @@ Bu yordam ile Managed Browser uygulamasını, uygulama proxy’si yeniden yönle
 |Anahtar|Değer|
 |**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
 
+Managed Browser ve Azure AD Uygulama Ara Sunucusu’nun şirket içi web uygulamalarına sorunsuz (ve korumalı) erişim için birlikte nasıl kullanılabileceği hakkında daha fazla bilgi için Enterprise Mobility + Security blog gönderisi [Birlikte daha güçlü: Kullanıcı erişimini iyileştirmek için Intune ve Azure Active Directory ekip çalışması yapıyor](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)’a bakın.
 
 ## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Managed Browser için giriş sayfası yapılandırma
 
@@ -247,3 +291,7 @@ Microsoft, ürün ve hizmetlerini geliştirmek için Managed Browser’ın perfo
 
 ### <a name="turn-off-usage-data"></a>Kullanım verilerini kapatma
 Microsoft, ürün ve hizmetlerini geliştirmek için Managed Browser’ın performansı ve kullanımı hakkında otomatik olarak anonim bilgiler toplar. Kullanıcılar cihazlarındaki **Kullanım Verileri** ayarını kullanarak veri toplamayı kapatabilir. Bu verilerin toplanması üzerinde denetiminiz yoktur.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [Uygulama koruma ilkeleri nedir?](app-protection-policy.md)

@@ -1,26 +1,27 @@
 ---
-title: "Intune ortama ekleme işlemi"
-description: "Bu makalede, Intune yalnızca bulut çözümünü ortamınıza eklerken göz önünde bulundurmanız gereken tüm ayrıntılar sağlanır."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Intune ortama ekleme işlemi
+titlesuffix: Microsoft Intune
+description: Bu makale, Microsoft Intune yalnızca bulut çözümünü ortamınıza eklerken göz önünde bulundurmanız gereken tüm ayrıntıları sağlar.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29560058c386c9e8f6d8734e241ea74a8b780eb1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0c88ddf84e7dfd3eed83f846ccfc3ff9c4da2d5
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="implement-your-intune-plan"></a>Intune planınızı uygulama
+# <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune planınızı uygulama
 
 Ekleme işlemi sırasında Intune’u üretim ortamınıza dağıtırsınız. Uygulama işlemi, [kullanım örneği gereksinimlerinize](planning-guide-requirements.md) dayalı olarak Intune ve (gerekirse) dış bağımlılıkların kurulması ve yapılandırılmasından oluşur.
 

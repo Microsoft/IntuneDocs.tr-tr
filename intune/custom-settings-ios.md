@@ -1,23 +1,23 @@
 ---
-title: "iOS çalıştıran cihazlar için Microsoft Intune özel ayarları"
-titleSuffix: Azure portal
-description: "iOS özel profilinde kullanabileceğiniz ayarları öğrenin."
-keywords: 
+title: iOS çalıştıran cihazlar için Microsoft Intune özel ayarları
+titleSuffix: ''
+description: Microsoft Intune’da bir iOS özel profilinde kullanabileceğiniz ayarları öğrenin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 40e34a2e22c9349cad63d813b892863e0e8a2933
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 3c92b8816dd6c5afd96cb8853b6d251ff5befaf4
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>iOS çalıştıran cihazlar için Microsoft Intune özel cihaz ayarları
 
