@@ -1,25 +1,25 @@
 ---
-title: "Mobil cihazlar için Exchange erişim kuralları"
-description: "EAS ile cihaz bağlantılarına izin vermek ya da bunları engellemek için Exchange ActiveSync erişim kuralları"
-keywords: 
+title: Mobil cihazlar için Exchange erişim kuralları
+description: EAS ile cihaz bağlantılarına izin vermek ya da bunları engellemek için Exchange ActiveSync erişim kuralları
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 097d6ee8a7ad6752d48f554ee0bc9b3729311fe2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Mobil cihazlar için Exchange erişim kuralları
 
@@ -29,7 +29,7 @@ Mobil cihazlar için Exchange erişim kuralları, bu cihazların Exchange Active
 
 Aşağıdaki tablo, Exchange ActiveSync tarafından yönetilen erişim düzeylerini içerir:
 
-|Erişim düzeyi|Açıklama|
+|Erişim düzeyi|Description|
 |----------------|---------------|
 |**Cihazların Exchange'e erişmesine izin verme**|*Erişime izin ver* durumunda, mobil cihazlar Exchange ActiveSync üzerinden eşitlenebilir; e-posta almak ve Takvimi, Kişileri, Görevleri ve Notları yönetmek için Exchange sunucusuna bağlanabilir. Kullanıcı veya söz konusu mobil cihaz Exchange yöneticisi tarafından engellenmemişse, cihaz yapılandırdığınız herhangi bir Exchange ActiveSync posta kutusu ilkesiyle uyumlu olduğu sürece bu devam eder.|
 |**Cihazların Exchange'e erişimini engelleme**|*Erişimi engelle* durumunda, mobil cihazlar engellenir ve Exchange sunucusuna bağlanmalarına izin verilmez. Cihazlar bir HTTP 403 Yasak hatası alır. Kullanıcı, Exchange sunucusundan mobil cihazın posta kutusuna erişiminin engellendiğini bildiren bir e-posta iletisi alır. Bu ileti, engellenen mobil cihazda olamaz. **Kullanıcı Bildirimi Ayarla** görevini kullanarak, cihazları engellenen kullanıcılara yönergeler sağlamak için bu iletiye özel metin ekleyebilirsiniz. |
@@ -37,7 +37,7 @@ Aşağıdaki tablo, Exchange ActiveSync tarafından yönetilen erişim düzeyler
 
 Erişim stratejisi, Exchange'e bağlanan tüm mobil cihazlar için geçerli olan **Varsayılan Kural**’ın ve **Platform Özel Durumları**'nın bir birleşimidir. Aşağıdaki tabloda bazı örnek erişim stratejileri listelenmektedir.
 
-|Erişim stratejisi|Açıklama|
+|Erişim stratejisi|Description|
 |-------------------|---------------|
 |İzin verilenler listesi|Bilinen cihazlar listesine erişim verip geri kalan tüm cihazlar için erişimi kısıtlamak üzere bir *izin verilenler listesi* kullanabilirsiniz. Bunu yapmak için kullanıcının posta kutusuna erişmesine izin verilen cihaz platformları için özel kurallar oluşturmanız gerekir. Böyle bir kural oluşturur oluşturmaz varsayılan erişim kuralını diğer tüm cihazları engelleyecek veya karantinaya alacak şekilde ayarlamanız gerekir. İzin verilenler listesine yeni bir cihaz eklemek için yeni bir özel kural oluşturun.|
 |Engellenenler listesi|Varsayılan olarak tüm cihazlara erişim vermek ancak kuruluşunuza erişmesini istemediğiniz belirli cihazlar için erişimi engellemek üzere bir *engellenenler listesi* kullanabilirsiniz. Kuruluşun posta kutularıyla eşitlenmesini istemediğiniz cihaz platformlarını engellemek için özel kurallar oluşturarak bir engellenenler listesi oluşturun. Varsayılan kuralı, mevcut kurallar ile açıkça engellenmeyen tüm cihazlara izin verecek şekilde ayarlamanızı öneririz. Engellenenler listesine yeni bir cihaz veya cihaz kümesi eklemek için, yeni bir özel kural oluşturun.|

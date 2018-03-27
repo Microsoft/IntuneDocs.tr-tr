@@ -1,25 +1,25 @@
 ---
-title: "Windows sürümü yükseltme ilkesi ayarları"
-description: "Windows 10 cihazlarını otomatik olarak Intune’un farklı bir sürümüne yükseltmeyi öğrenin."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Windows sürümü yükseltme ilkesi ayarları
+description: Windows 10 cihazlarını otomatik olarak Intune’un farklı bir sürümüne yükseltmeyi öğrenin.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 690fe1f1b2555996b2ef124cde6e3fba53e82ec7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 005f8cf2e769b1b007424e55867160a0f5828f7a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows sürümünü yükseltme ilkesi ayarları
 
@@ -52,5 +52,5 @@ Cihazları en son sürüme yükseltmeye başlamadan önce aşağıdakilerden bir
 |**Ürün Anahtarı**|Microsoft’tan aldığınız ve tüm hedeflenen Windows 10 Masaüstü cihazlarını yükseltmek için kullanılabilen ürün anahtarını belirtin.<br>Ürün anahtarı içeren bir ilke oluşturduğunuzda, ürün anahtarını daha sonra düzenleyemezsiniz. Bunun nedeni, anahtarın güvenlik nedeniyle engellenmesidir. Ürün anahtarını değiştirmek için tüm anahtarı yeniden girmeniz gerekir.
 |**Lisans Dosyası**|Microsoft’tan aldığınız ve hedeflenen cihazları yükseltmek istediğiniz Windows Holographic veya Windows 10 Mobile sürümünün lisans bilgilerini içeren lisans dosyasını seçmek için **Gözat**’ı seçin.
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

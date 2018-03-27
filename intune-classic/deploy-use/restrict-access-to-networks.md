@@ -1,25 +1,25 @@
 ---
-title: "Cisco ISE ile ağlara erişimi koruma"
-description: "Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olmasını sağlamak için, Intune ile Cisco ISE kullanabilirsiniz."
-keywords: 
-author: arob98
+title: Cisco ISE ile ağlara erişimi koruma
+description: Cihazların, Cisco ISE ile denetlenen Wi-Fi ve VPN’e erişmeden önce Intune kayıtlı ve ilke uyumlu olmasını sağlamak için, Intune ile Cisco ISE kullanabilirsiniz.
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51b3763faa95adcbfe76580e32f5a42bb615c9d9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Microsoft Intune ile Cisco ISE kullanma
 
@@ -155,7 +155,7 @@ ISE yönetim konsolunda, aşağıdaki ayar değerlerini sağlayın:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune kiracınız ve Cisco ISE sunucunuz arasında paylaşılan bilgiler
 Bu tabloda, Intune tarafından yönetilen cihazlar için, Intune kiracınız ve Cisco ISE sunucunuz arasında paylaşılan bilgiler listelenir.
 
-|Özellik|  Açıklama|
+|Özellik|  Description|
 |---------------|------------------------------------------------------------|
 |complianceState|Cihazın uyumlu veya uyumsuz olduğunu belirten true veya false dizesi.|
 |isManaged|İstemcinin Intune tarafından yönetildiğini veya yönetilmediğini belirten true veya false dizesi.|
@@ -187,6 +187,6 @@ Kullanıcı kaydolmayı seçtiğinde, Intune kayıt işlemine yönlendirilir. In
 Kullanıcı deneyiminiz için, özelleştirilmiş rehberlik oluşturmak üzere kullanabileceğiniz, [indirilebilir kayıt yönergeleri grubu](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) da vardır.
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 
 [Cisco Kimlik Hizmetleri Altyapısı Yönetici Kılavuzu, Sürüm 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)

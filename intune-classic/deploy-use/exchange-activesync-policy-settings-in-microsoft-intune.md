@@ -1,25 +1,25 @@
 ---
-title: "Exchange ActiveSync ilkesi ayarları"
-description: "Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevleri denetlemenize olanak sağlayan ayarları yapılandırmak için, Intune Exchange ActiveSync ilkesini kullanın."
-keywords: 
+title: Exchange ActiveSync ilkesi ayarları
+description: Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevleri denetlemenize olanak sağlayan ayarları yapılandırmak için, Intune Exchange ActiveSync ilkesini kullanın.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08e8fde89fc7b0b4114e9c084f8e00692bcc92b0
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Exchange ActiveSync ilkesi ayarları
 
@@ -39,7 +39,7 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 |**Cihaz silinmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Cihaz temizlenmeden önce bir kullanıcının kaç kez hatalı parola girebileceğini belirtir.|
 |**Parola kullanım süresi (gün)**|Cihaz parolasının kaç gün sonra değiştirilmesi gerektiğini belirtir.
 |**Parola geçmişini anımsa**|Önceden kullanılmış parolaların kullanımına izin verilip verilmeyeceğini belirtir.|
-|**Parola geçmişini anımsa** – **Önceki parolaların yeniden kullanılmasını önle**|Daha önce kullanılan kaç parolanın yeniden kullanılamayacağını belirtir.|
+|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Daha önce kullanılan kaç parolanın yeniden kullanılamayacağını belirtir.|
 |**Parola istenmeden önce herhangi bir işlem yapılmadan geçen dakika sayısı**|Ekran kilitlenmeden önce cihazın boşta beklemesi gereken süreyi belirtir.
 
 ## <a name="encryption-settings"></a>Şifreleme ayarları
@@ -80,5 +80,5 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

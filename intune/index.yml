@@ -4,24 +4,24 @@ title: Microsoft Intune belgeleri
 metadata:
   document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
   title: Microsoft Intune belgeleri
-  description: "Hızlıca Microsoft Intune kullanmaya başlayın. Çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olmak için bulut tabanlı kurumsal mobilite yönetim (EMM) hizmetini kullanın."
-  keywords: "koruma, şirket, veriler, Azure, Intune, EMM, cihaz, uygulama, yönetim"
-  author: arob98
-  ms.author: angrobe
+  description: Hızlıca Microsoft Intune kullanmaya başlayın. Çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olmak için bulut tabanlı kurumsal mobilite yönetim (EMM) hizmetini kullanın.
+  keywords: koruma, şirket, veriler, Azure, Intune, EMM, cihaz, uygulama, yönetim
+  author: dougeby
+  ms.author: dougeby
   manager: dougeby
   ms.date: 10/31/2017
   ms.topic: landing-page
   ms.devlang: na
   ms.service: microsoft-intune
-  ms.openlocfilehash: 134f4053e22797c547f56b2db7876b3d1a56b15c
-  ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+  ms.openlocfilehash: f359e36b07334866a1913e5eebd37a0960fc677d
+  ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 03/08/2018
+  ms.lasthandoff: 03/22/2018
 sections:
 - items:
   - type: markdown
-    text: "Hızlıca Microsoft Intune kullanmaya başlayın. Çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olmak için bulut tabanlı kurumsal mobilite yönetim (EMM) hizmetini kullanın. Intune, kimlik ve erişim denetimi için Azure Active Directory ve veri koruma için Azure Information Protection ile tümleşerek çalışır."
+    text: Hızlıca Microsoft Intune kullanmaya başlayın. Çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olmak için bulut tabanlı kurumsal mobilite yönetim (EMM) hizmetini kullanın. Intune, kimlik ve erişim denetimi için Azure Active Directory ve veri koruma için Azure Information Protection ile tümleşerek çalışır.
 - items:
   - type: list
     style: cards
@@ -29,26 +29,26 @@ sections:
     columns: 2
     items:
     - href: introduction-intune.md
-      html: "<p>Intune’un ne yaptığı ve nasıl çalıştığı hakkında bilgi edinin.</p>"
+      html: <p>Intune’un ne yaptığı ve nasıl çalıştığı hakkında bilgi edinin.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
       title: Intune nedir?
     - href: get-started-evaluation.md
-      html: "<p>Bu kolay eğitmen ile Intune’un nasıl çalıştığını öğrenin.</p>"
+      html: <p>Bu kolay eğitmen ile Intune’un nasıl çalıştığını öğrenin.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
-      title: "Başlarken"
+      title: Başlarken
     - href: get-support.md
-      html: "<p>Bir destek biletini oluşturma ve gerektiğinde yardım alma hakkında bildi edinin.</p>"
+      html: <p>Bir destek biletini oluşturma ve gerektiğinde yardım alma hakkında bildi edinin.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_support.svg
-      title: "Destek alın"
+      title: Destek alın
     - href: whats-new.md
-      html: "<p>Intune’da bu haftaki yeniliklere göz atın.</p>"
+      html: <p>Intune’da bu haftaki yeniliklere göz atın.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
       title: Yenilikler
-- title: "Yeni makaleler ve blog gönderileri"
+- title: Yeni makaleler ve blog gönderileri
   items:
   - type: paragraph
     text: Bilmeniz gereken en son ve en iyi bilgileri okuyun.
@@ -58,27 +58,27 @@ sections:
     columns: 3
     items:
     - href: what-is-intune.md
-      title: "Azure portalında Intune hakkında bilgi edinin"
+      title: Azure portalında Intune hakkında bilgi edinin
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
     - href: ui-changes.md
-      title: "Intune özelliklerinizin Azure portalında nerede olduğuna bakın"
+      title: Intune özelliklerinizin Azure portalında nerede olduğuna bakın
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
     - href: high-level-architecture.md
-      title: "Intune yüksek düzey mimarisini görüntüleyin"
+      title: Intune yüksek düzey mimarisini görüntüleyin
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
     - href: enrollment-autopilot.md
-      title: "Microsoft Intune’da Windows AutoPilot Dağıtım Programı desteği"
+      title: Microsoft Intune’da Windows AutoPilot Dağıtım Programı desteği
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
     - href: https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/
-      title: "[Blog] Intune hizmetinde güvenlik geliştirmeleri "
+      title: '[Blog] Intune hizmetinde güvenlik geliştirmeleri '
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
     - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
-      title: "[Blog] Portal sorunlarını gidermek son kullanıcı sorunlarını tanılamayı ve çözmeyi daha kolay hale getirir"
+      title: '[Blog] Portal sorunlarını gidermek son kullanıcı sorunlarını tanılamayı ve çözmeyi daha kolay hale getirir'
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
 - title: Videolar
@@ -92,49 +92,49 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/planning-guide\">Intune dağıtım planlama, tasarım ve uygulama kılavuzu</a>"
-    - html: "<a href=\"/intune/migration-guide\">Intune geçiş kılavuzu</a>"
-- title: "Nasıl yapılır makaleleri"
+    - html: <a href="/intune/planning-guide">Intune dağıtım planlama, tasarım ve uygulama kılavuzu</a>
+    - html: <a href="/intune/migration-guide">Intune geçiş kılavuzu</a>
+- title: Nasıl yapılır makaleleri
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/device-enrollment\">Cihazları kaydetme</a>"
-    - html: "<a href=\"/intune/device-management\">Cihazları yönetme</a>"
-    - html: "<a href=\"/intune/app-management\">Uygulamaları yönetme</a>"
-    - html: "<a href=\"/intune/device-profiles\">Cihazları yapılandırma</a>"
-    - html: "<a href=\"/intune/device-compliance-get-started\">Cihaz uyumluluğu ayarlama</a>"
-    - html: "<a href=\"/intune/conditional-access\">Koşullu erişimi ayarlama</a>"
-    - html: "<a href=\"/intune/app-protection-policy\">Uygulamaları koruma</a>"
-    - html: "<a href=\"/intune/mobile-threat-defense\">Mobile Threat Defense’i Kurma</a>"
-    - html: "<a href=\"/intune/network-access-control-integrate\">Ağ erişim denetimini tümleştirme</a>"
-    - html: "<a href=\"/intune/role-based-access-control\">Rolleri yönetme</a>"
-    - html: "<a href=\"/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json\">Intune yazılım istemcisi ile bilgisayarları yönetme</a>"
+    - html: <a href="/intune/device-enrollment">Cihazları kaydetme</a>
+    - html: <a href="/intune/device-management">Cihazları yönetme</a>
+    - html: <a href="/intune/app-management">Uygulamaları yönetme</a>
+    - html: <a href="/intune/device-profiles">Cihazları yapılandırma</a>
+    - html: <a href="/intune/device-compliance-get-started">Cihaz uyumluluğu ayarlama</a>
+    - html: <a href="/intune/conditional-access">Koşullu erişimi ayarlama</a>
+    - html: <a href="/intune/app-protection-policy">Uygulamaları koruma</a>
+    - html: <a href="/intune/mobile-threat-defense">Mobile Threat Defense’i Kurma</a>
+    - html: <a href="/intune/network-access-control-integrate">Ağ erişim denetimini tümleştirme</a>
+    - html: <a href="/intune/role-based-access-control">Rolleri yönetme</a>
+    - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Intune yazılım istemcisi ile bilgisayarları yönetme</a>
 - title: Sorun giderme makaleleri
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/help-desk-operators\">Sorun Giderme portalı ile kullanıcılara yardımcı olma</a>"
+    - html: <a href="/intune/help-desk-operators">Sorun Giderme portalı ile kullanıcılara yardımcı olma</a>
     - html: <a href="/intune/known-issues">Intune ile ilgili bilinen sorunlar</a>
-    - html: "<a href=\"/intune/get-support\">Destek alın</a>"
-- title: "Geliştirme ve özelleştirme makaleleri"
+    - html: <a href="/intune/get-support">Destek alın</a>
+- title: Geliştirme ve özelleştirme makaleleri
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/custom-settings-configure\">Özel cihaz ayarlarını yapılandırma</a>"
-    - html: "<a href=\"/intune/apps-prepare-mobile-application-management\">Intune Uygulama Sarmalama Aracı ile iş kolu (LOB) uygulamalarını hazırlama</a>"
-    - html: "<a href=\"/intune/app-sdk\">Intune Uygulama SDK’sı ile LOB uygulamalarını hazırlama</a>"
-    - html: "<a href=\"https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview\">Microsoft Graph’ta Intune ile çalışma</a>"
-    - html: "<a href=\"/intune/reports-nav-intune-data-warehouse\">Intune Veri Ambarı API’si</a>"
-- title: "Diğer kaynaklar"
+    - html: <a href="/intune/custom-settings-configure">Özel cihaz ayarlarını yapılandırma</a>
+    - html: <a href="/intune/apps-prepare-mobile-application-management">Intune Uygulama Sarmalama Aracı ile iş kolu (LOB) uygulamalarını hazırlama</a>
+    - html: <a href="/intune/app-sdk">Intune Uygulama SDK’sı ile LOB uygulamalarını hazırlama</a>
+    - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Microsoft Graph’ta Intune ile çalışma</a>
+    - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune Veri Ambarı API’si</a>
+- title: Diğer kaynaklar
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program\">150'den fazla lisansa mı ihtiyacınız var? FastTrack avantajlarınızı kullanın</a>"
+    - html: <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150'den fazla lisansa mı ihtiyacınız var? FastTrack avantajlarınızı kullanın</a>
     - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Enterprise Mobility and Security blogunu okuyun</a>
-    - html: "<a href=\"https://blogs.technet.microsoft.com/intunesupport/\">Intune destek blogunda yardım alın</a>"
-    - html: "<a href=\"https://microsoftintune.uservoice.com/forums/291681-ideas\">UserVoice ile Intune hizmeti hakkında geri bildirimde bulunun</a>"
-    - html: "<a href=\"https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc\">Intune tartışma forumunda soru sorun veya soruları cevaplayın</a>"
+    - html: <a href="https://blogs.technet.microsoft.com/intunesupport/">Intune destek blogunda yardım alın</a>
+    - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">UserVoice ile Intune hizmeti hakkında geri bildirimde bulunun</a>
+    - html: <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Intune tartışma forumunda soru sorun veya soruları cevaplayın</a>

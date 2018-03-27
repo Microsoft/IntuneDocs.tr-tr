@@ -1,25 +1,25 @@
 ---
-title: "Cihazları cihaz grubu eşleme ile kategorize etme"
-description: "Cihazların yönetimini kolaylaştırmak için, Microsoft Intune cihaz grubu eşleme özelliğini kullanarak bu cihazları kendi tanımladığınız kategoriler altında gruplandırın."
-keywords: 
+title: Cihazları cihaz grubu eşleme ile kategorize etme
+description: Cihazların yönetimini kolaylaştırmak için, Microsoft Intune cihaz grubu eşleme özelliğini kullanarak bu cihazları kendi tanımladığınız kategoriler altında gruplandırın.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6783f0dbf21d8bb1e652522df7ae1f37cbf4ffd
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Cihazları Microsoft Intune’da cihaz grubu eşleme ile kategorilere ayırma
 
@@ -39,7 +39,7 @@ Cihaz grubu eşleme aşağıdaki iş akışını kullanır:
 * Tanıtım cihazı
 * Satış
 * Muhasebe
-* Yönetici
+* Manager
 
 ## <a name="important-information-about-a-change-in-group-management-for-intune"></a>Intune için grup yönetimindeki bir değişiklik hakkında önemli bilgiler
 
@@ -93,5 +93,5 @@ Bir kategori seçtikten sonra cihaz, oluşturduğunuz karşılık gelen gruba ot
 
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
