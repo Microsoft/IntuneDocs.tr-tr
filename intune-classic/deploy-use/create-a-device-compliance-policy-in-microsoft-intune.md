@@ -1,25 +1,25 @@
 ---
-title: "Cihaz uyumluluğu ilkesi oluşturma"
-description: "Şirket verilerinize erişirken kullanılan mobil cihazların ve bilgisayarların güvenliğini sağlamaya yardımcı olması için bir uyumluluk ilkesi oluşturun."
-keywords: 
+title: Cihaz uyumluluğu ilkesi oluşturma
+description: Şirket verilerinize erişirken kullanılan mobil cihazların ve bilgisayarların güvenliğini sağlamaya yardımcı olması için bir uyumluluk ilkesi oluşturun.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/12/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e37e5f490254efedf56a383e612f934925be75e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Microsoft Intune’da cihaz uyumluluk ilkesi oluşturma
 
@@ -60,16 +60,16 @@ Aşağıdaki tabloda uyumluluk ilkesi ayarları ve bunların desteklendiği plat
 |-----|----|-----|-----|
 |Mobil cihazların kilidini açmak için bir parola gerektir|iOS 6 ve üzeri|Android 4.0 ve üzeri <br>Samsung KNOX Standard 4.0 ve üzeri|Windows Phone 8.1 ve üzeri|
 |Basit parolalara izin ver|iOS 6 ve üzeri|Desteklenmez|Windows Phone 8.1 ve üzeri|
-|Minimum parola uzunluğu|iOS 6 ve üzeri| Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri| Windows Phone 8.1 ve üzeri<br>Windows 8.1|
+|Parola uzunluğu alt sınırı|iOS 6 ve üzeri| Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri| Windows Phone 8.1 ve üzeri<br>Windows 8.1|
 |Gerekli parola türü|iOS 6 ve üzeri|Yok|Windows Phone 8.1 ve üzeri <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Minimum karakter kümesi sayısı|iOS 6 ve üzeri|Yok|Windows Phone 8.1 ve üzeri <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Parola kalitesi|Yok|Android 4.0 ve üzeri <br>Samsung KNOX Standard 4.0 ve üzeri|Yok|
-|Parola gerekmeden önce etkin olmama süresi (dakika)|iOS 6 ve üzeri|Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri|Windows Phone 8.1 ve üzeri<br>Windows RT ve Windows RT 8.1<br>Windows 8.1|
-|Parola geçerlilik süresi (gün)|iOS 6 ve üzeri|Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri|Windows Phone 8.1 ve üzeri<br>Windows RT ve Windows RT 8.1<br>Windows 8.1|
+|Parola istenmeden önce geçen işlem yapılmayan dakika sayısı|iOS 6 ve üzeri|Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri|Windows Phone 8.1 ve üzeri<br>Windows RT ve Windows RT 8.1<br>Windows 8.1|
+|Parola zaman aşımı (gün sayısı)|iOS 6 ve üzeri|Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri|Windows Phone 8.1 ve üzeri<br>Windows RT ve Windows RT 8.1<br>Windows 8.1|
 |Parola geçmişini anımsa|iOS 6 ve üzeri|Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri|Windows Phone 8.1 ve üzeri<br>Windows RT ve Windows RT 8.1<br>Windows 8.1|
 |Önceki parolaların yeniden kullanılmasını engelleme|iOS 6 ve üzeri|Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri|Windows Phone 8.1 ve üzeri<br>Windows RT ve Windows RT 8.1<br>Windows 8.1|
 |Cihaz boş bir durumdan döndürüldüğünde parola iste| Yok| Yok|Windows 10 Mobile|
-|Cihazda şifrelemeyi gerektir|Uygulanamaz|Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri|Windows Phone 8.1 ve üzeri<br> Windows 8.1|
+|Cihazda şifrelemeyi gerektir|Geçerli değil|Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri|Windows Phone 8.1 ve üzeri<br> Windows 8.1|
 |Cihazların sağlıklı olarak bildirilmesini gerektirme| Yok| Yok|Windows <br>Windows 10 Mobile|
 |Cihazın Güvenliğinin kırılmamış olması veya yolda kök belirtilmemesi gerekir|iOS 6 ve üzeri|Android 4.0 ve üzeri<br>Samsung KNOX Standard 4.0 ve üzeri|Yok|
 |E-posta hesabı, Intune tarafından yönetilmelidir|iOS 6 ve üzeri|Yok| Yok|
@@ -87,5 +87,5 @@ Her platformda desteklenen uyumluluk ayarları hakkında daha fazla bilgi edinme
 ## <a name="next-steps"></a>Sonraki adımlar
 [Uyumluluk ilkesini dağıtma ve izleme](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Cihaz uyumluluk ilkelerine giriş](introduction-to-device-compliance-policies-in-microsoft-intune.md)

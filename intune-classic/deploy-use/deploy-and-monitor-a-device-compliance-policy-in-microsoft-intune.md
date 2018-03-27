@@ -1,25 +1,25 @@
 ---
-title: "Uyumluluk ilkesini dağıtma ve izleme"
-description: "Cihaz uyumluluk ilkesini dağıtmak ve izlemek için, bu konu başlığı altında verilen adım adım yönergeleri kullanın."
-keywords: 
+title: Uyumluluk ilkesini dağıtma ve izleme
+description: Cihaz uyumluluk ilkesini dağıtmak ve izlemek için, bu konu başlığı altında verilen adım adım yönergeleri kullanın.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae914e755b809eda55abc5dc069c9ee2897d9ff4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e24c969206d3e1f34bfee0af46c4398c9d2739a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Microsoft Intune’da cihaz uyumluluk ilkesini dağıtma ve izleme
 
@@ -69,5 +69,5 @@ Bir cihaza birden çok Intune ilkesi uygulandığında ilke çakışmaları olab
 Kuruluşunuzdaki hizmetlere erişimi denetlemek için koşullu erişim ilkeleriyle birlikte uyumluluk ilkesini nasıl kullanacağınızı öğrenmek için bkz. [E-posta ve O365 hizmetlerine erişimi kısıtlama](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Intune’da cihaz uyumluluk ilkelerine giriş](introduction-to-device-compliance-policies-in-microsoft-intune.md)

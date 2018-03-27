@@ -1,25 +1,25 @@
 ---
-title: "Şirket e-postasına e-posta profilleriyle erişme"
-description: "E-posta profili ayarları, mobil cihazlarda belirli e-posta istemcilerinin e-posta erişim ayarlarını yapılandırmak için kullanılır."
-keywords: 
+title: Şirket e-postasına e-posta profilleriyle erişme
+description: E-posta profili ayarları, mobil cihazlarda belirli e-posta istemcilerinin e-posta erişim ayarlarını yapılandırmak için kullanılır.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 844e4a3c0006381eae156c74a680a5ec5a392c99
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Microsoft Intune ile e-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma
 
@@ -44,7 +44,7 @@ Cihazda bir e-posta hesabı ayarlamaya ek olarak, ne kadar e-postanın eşitlene
 
 Intune tarafından profil ayarlanmadan önce kullanıcı bir e-posta profili yüklediyse, Intune e-posta profili dağıtımının sonucu cihaz platformuna bağlıdır:
 
-**Android**<br>Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Kullanıcı tarafından oluşturulmuş yinelenen e-posta profili, Intune yöneticisinin oluşturduğu profilin dağıtımını engeller. iOS kullanıcıları normalde e-posta profili oluşturduğundan ve ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, el ile yapılandırılan e-posta profilinden dolayı uyumlu olmadığını kullanıcıya bildirir ve kullanıcıdan söz konusu profili kaldırmasını ister. Intune profilinin ayarlanabilmesi için, kullanıcının e-posta profilini kaldırması gerekir. Bu sorunun önüne geçmek için, kullanıcılarınızdan bir e-posta profilini yüklemeden önce kaydolmalarını ve Intune’un profili ayarlamasına izin vermelerini isteyin.
+**iOS**<br>Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Kullanıcı tarafından oluşturulmuş yinelenen e-posta profili, Intune yöneticisinin oluşturduğu profilin dağıtımını engeller. iOS kullanıcıları normalde e-posta profili oluşturduğundan ve ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, el ile yapılandırılan e-posta profilinden dolayı uyumlu olmadığını kullanıcıya bildirir ve kullanıcıdan söz konusu profili kaldırmasını ister. Intune profilinin ayarlanabilmesi için, kullanıcının e-posta profilini kaldırması gerekir. Bu sorunun önüne geçmek için, kullanıcılarınızdan bir e-posta profilini yüklemeden önce kaydolmalarını ve Intune’un profili ayarlamasına izin vermelerini isteyin.
 
 **Windows**<br>Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Intune kullanıcı tarafından oluşturulmuş, var olan e-posta profilinin üzerine yazar.
 

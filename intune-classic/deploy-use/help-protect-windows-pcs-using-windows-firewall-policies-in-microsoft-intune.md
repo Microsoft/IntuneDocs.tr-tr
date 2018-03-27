@@ -1,24 +1,24 @@
 ---
-title: "Windows bilgisayarlar için güvenlik duvarı ilkeleri"
-description: "Intune, Intune istemcisiyle yönettiğiniz bilgisayarları, Windows Güvenlik Duvarı ayarlarını yapılandırmanıza yardımcı olmak dahil olmak üzere, çeşitli yollarla güvenli hale getirmenize yardımcı olabilir."
-keywords: 
+title: Windows bilgisayarlar için güvenlik duvarı ilkeleri
+description: Intune, Intune istemcisiyle yönettiğiniz bilgisayarları, Windows Güvenlik Duvarı ayarlarını yapılandırmanıza yardımcı olmak dahil olmak üzere, çeşitli yollarla güvenli hale getirmenize yardımcı olabilir.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 61ff44a9c2c6271ae72b618c7c09697837f4a516
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3be77c1042d695ed0bed6ee7cbbc442342e91d8b
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune’da Windows Güvenlik Duvarı ilkelerini kullanarak Windows bilgisayarlarının korunmasına yardımcı olma
 
@@ -133,5 +133,5 @@ Daha önce yapılandırılmış değerlerden bağımsız olarak belirli türlerd
 |**Windows Virtual PC**<br>(Windows 7 veya üzeri)|Sanal makinelerin diğer bilgisayarlarla iletişim kurmasına olanak tanır.|
 |**Taşınabilir Kablosuz Cihazlar**|Medya Aktarım Protokolü (MTP) ile ağ bağlantısı etkin kamera veya medya cihazı verilerinin yönetilen bilgisayarlara aktarılmasına olanak tanır. Bu ayar SSDP ve UPnP ağ protokollerini kullanır.|
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)

@@ -1,25 +1,25 @@
 ---
-title: "Cihazlarda iOS Etkinleştirme Kilidi’ni yönetme"
-description: "Microsoft Intune, iOS 7.1 ve daha sonraki sürümlere sahip cihazlar için iPhone’umu Bul uygulamasının bir özelliği olan iOS Etkinleştirme Kilidi’ni yönetmenize yardımcı olabilir."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Cihazlarda iOS Etkinleştirme Kilidi’ni yönetme
+description: Microsoft Intune, iOS 7.1 ve daha sonraki sürümlere sahip cihazlar için iPhone’umu Bul uygulamasının bir özelliği olan iOS Etkinleştirme Kilidi’ni yönetmenize yardımcı olabilir.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a05c8e6a45c57f5f6f0c90d5fbb48164cde34a1c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 12363a677bc7d1ffefe224ff0bb10067903132ae
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Microsoft Intune için Etkinleştirme Kilidi’ni atlama ile iOS cihazlarının korunmasına yardımcı olma
 
@@ -101,6 +101,6 @@ Hangi cihazların Etkinleştirme Kilidi kullandığını iki yolla görebilirsin
     >Intune, Etkinleştirme Kilidi için her yedi günde bir cihazlardan envanter alır. Bu nedenle, Intune konsolunda cihazların Etkinleştirme Kilidi durumu hemen görüntülenmeyebilir.
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Cihazları devre dışı bırakma](retire-devices-from-microsoft-intune-management.md)
 [Uzak kilitleme ve parola sıfırlama özellikleriyle cihazlarınızın korunmasına yardımcı olma](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
