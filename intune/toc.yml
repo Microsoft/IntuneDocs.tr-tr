@@ -357,6 +357,13 @@
               href: device-restrictions-windows-holographic.md
             - name: Android for Work
               href: device-restrictions-android-for-work.md
+        - name: Endpoint protection’ı yapılandırma
+          href: endpoint-protection-configure.md
+          items:
+            - name: Mac OS
+              href: endpoint-protection-macos.md
+            - name: Windows 10
+              href: endpoint-protection-windows-10.md
         - name: E-posta ayarlarını yapılandırma
           href: email-settings-configure.md
           items:
@@ -398,8 +405,6 @@
               href: wi-fi-settings-import-windows-8-1.md
         - name: Windows 10 sürüm yükseltme ayarlarını yapılandırma
           href: edition-upgrade-configure-windows-10.md
-        - name: Windows 10 Endpoint Protection
-          href: endpoint-protection-windows-10.md
         - name: Windows 10 eğitim ayarlarını yapılandırma
           href: education-settings-configure.md
         - name: iOS eğitim ayarlarını yapılandırma
