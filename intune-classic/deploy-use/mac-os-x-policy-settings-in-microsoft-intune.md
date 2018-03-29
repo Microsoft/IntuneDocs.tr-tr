@@ -1,25 +1,25 @@
 ---
-title: "Mac OS X ilke ayarları"
-description: "Intune, Mac OS X cihazlarında yapılandırabileceğiniz çeşitli yerleşik genel ayarlar sağlar. Ayrıca, Intune'dan kullanılamayan özel ayarları oluşturmak için Apple Configurator aracını kullanabilirsiniz."
-keywords: 
+title: Mac OS X ilke ayarları
+description: Intune, Mac OS X cihazlarında yapılandırabileceğiniz çeşitli yerleşik genel ayarlar sağlar. Ayrıca, Intune'dan kullanılamayan özel ayarları oluşturmak için Apple Configurator aracını kullanabilirsiniz.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Mac OS X yapılandırma ilkesi ayarları
 
@@ -112,12 +112,12 @@ Başlamadan önce, Apple Configurator’ı yüklemiş ve kullanıcılara veya ci
 
 
 ### <a name="how-to-create-a-configuration-profile-file"></a>Bir yapılandırma profili dosyası oluşturma
-Özel ilke tarafından kullanılan yapılandırma profili dosyasını iki yolla oluşturabilirsiniz:
+Özel ilke tarafından kullanılan yapılandırma profili dosyasını iki yöntemle oluşturabilirsiniz:
 
 -   Dosyaya ( **.mobileconfig**uzantılı dosya) Apple Configurator aracından dışarı aktarın.
 
 -   [Apple Yapılandırma Profili Anahtar Başvurusu](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html) belgesinden uygun şemayı kullanarak dosyayı kendiniz yazın.
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

@@ -1,24 +1,24 @@
 ---
-title: "MDM yetkilinizi Configuration Manager olarak değiştirme (karma MDM)"
-description: "MDM yetkilisini tek başına Intune’dan Configuration Manager’a (karma MDM) değiştirmeyi öğrenin."
-keywords: 
+title: MDM yetkilinizi Configuration Manager olarak değiştirme (karma MDM)
+description: MDM yetkilisini tek başına Intune’dan Configuration Manager’a (karma MDM) değiştirmeyi öğrenin.
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>MDM yetkilisini değiştirme
 Configuration Manager’ın 1610 sürümünden başlayarak MDM yetkilinizi, Microsoft Desteği ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Bu bölüm, Intune’dan yapılandırılmış ve MDM yetkilisi **Microsoft Intune**’dan (tek başına) **Configuration Manager**’a (karma MDM) ayarlanmış mevcut bir Microsoft Intune kiracısını mevcut yönetilen cihazların kaydını silip yeniden kaydetmeye gerek kalmadan değiştirme adımları sağlar.

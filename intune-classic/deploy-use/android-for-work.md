@@ -1,22 +1,22 @@
 ---
-title: "Android for Work hakkında"
-description: "Intune, kullanıcılar iş için Android cihazlarını kullandıklarında ek yönetim özellikleri ve gizlilik sağlamak için Android for Work’ü yönetir."
-keywords: 
+title: Android for Work hakkında
+description: Intune, kullanıcılar iş için Android cihazlarını kullandıklarında ek yönetim özellikleri ve gizlilik sağlamak için Android for Work’ü yönetir.
+keywords: ''
 author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: d7939a20e9729487ce5824ba3f67cd84ec970032
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b6dd287bfd610d5c35f0bfeadb5fcaeae6dddf3c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>Intune ile Android for Work cihazları yönetme
 
@@ -58,7 +58,7 @@ Android for Work cihazlar için Exchange ActiveSync koşullu erişim kullanıyor
 
 ## <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
 
-Uygulaman uygulama koruma ilkeleri, iş profilinde ve kişisel profilde tümüyle desteklenir. İş kolu uygulamalarını, Android uygulama yayımlama konsolunda şu adreste yayımlayabilirsiniz: https://play.google.com/apps/publish. Bu konsol, uygulamaları kuruluşunuza özel hale getirme seçeneğine sahiptir. [Android for Work uyumluluk ilkesi ayarları](afw-compliance-policy-settings-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. Uygulama koruma ilkeleri hakkındaki genel bilgiler için bkz. [uygulama ilkeleri](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+Uygulaman uygulama koruma ilkeleri, iş profilinde ve kişisel profilde tümüyle desteklenir. İş kolu uygulamalarını, https://play.google.com/apps/publish adresindeki Android uygulama yayımlama konsolunda yayımlayabilirsiniz. Bu konsol, uygulamaları kuruluşunuza özel hale getirme seçeneğine sahiptir. [Android for Work uyumluluk ilkesi ayarları](afw-compliance-policy-settings-in-microsoft-intune.md) hakkında daha fazla bilgi edinin. Uygulama koruma ilkeleri hakkındaki genel bilgiler için bkz. [uygulama ilkeleri](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 ## <a name="vpn-profiles"></a>VPN profilleri
 

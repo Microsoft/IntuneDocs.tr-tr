@@ -1,25 +1,25 @@
 ---
-title: "Kaydolmuş cihazlar için uygulama ekleme"
-description: "Bir uygulamayı dağıtabilmeniz için, onu önce Intune'a eklemeniz gerekir. Ardından Intune konsolunda kullanılabilir hale gelir, buradan dağıtabilir ve yönetebilirsiniz."
-keywords: 
+title: Kaydolmuş cihazlar için uygulama ekleme
+description: Bir uygulamayı dağıtabilmeniz için, onu önce Intune'a eklemeniz gerekir. Ardından Intune konsolunda kullanılabilir hale gelir, buradan dağıtabilir ve yönetebilirsiniz.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c688bf0912ec1150924743a9211a1268427fb13a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Kaydolmuş cihazlar için Intune’a uygulamalar ekleme
 
@@ -48,14 +48,14 @@ Uygulamanın özelliklerini yapılandırmak ve uygulamayı bulut depolama alanı
   -   **Dış bağlantı**; uygulama mağazasının bağlantısını belirterek oluşturmak istediğiniz uygulamalar için:
 
         - **URL’yi belirtin**. Aşağıdakilerden birinin URL'sini belirtin:
-            - Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’si. Örneğin, Android için Microsoft Uzak Masaüstü uygulamasını dağıtmak istiyorsanız **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** belirtin.<br>Uygulamanın URL’sini bulmak için bir arama motoru kullanarak uygulamayı içeren mağaza sayfasını bulun. Örneğin, Uzak Masaüstü uygulamasını bulmak için **Microsoft Uzak Masaüstü Android** araması yapabilirsiniz.
+            - Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’si. Örneğin Android için Microsoft Uzak Masaüstü uygulamasını dağıtmak istiyorsanız, **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** seçeneğini belirtin.<br>Uygulamanın URL’sini bulmak için bir arama motoru kullanarak uygulamayı içeren mağaza sayfasını bulun. Örneğin, Uzak Masaüstü uygulamasını bulmak için **Microsoft Uzak Masaüstü Android** araması yapabilirsiniz.
             - Bir web sitesi. Intune, cihaza sitenin bir kısayol simgesini (web klibi olarak bilinir) dağıtır.
             - Web üzerinde bir uygulama. Intune, cihaza uygulamanın bir kısayol simgesini dağıtır.
         - **Bu bağlantıyı açmak için yönetilen bir tarayıcı isteyin (yalnızca Android ve iOS için)**. Kullanıcılara bir web sitesi veya web uygulamasının bağlantısını dağıttığınızda bunu yalnızca Intune ile yönetilen tarayıcıda açabilirler. Bu tarayıcı cihazlarında yüklü olmalıdır.<br>Yönetilen tarayıcı hakkında daha fazla bilgi için bkz. [Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme](manage-internet-access-using-managed-browser-policies.md).<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
 
   -   **Uygulama mağazasından yönetilen iOS uygulaması**; iTunes mağazasından ücretsiz sağlanan ve mobil uygulama yönetimi MAM ilkeleriyle yönetmek istediğiniz uygulamalar için aşağıdakileri belirtin:
 
-        - **URL’yi belirtin**. Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’sini girin. Örneğin, iOS için Microsoft Çalışma Klasörleri uygulamasını dağıtmak istiyorsanız **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
+        - **URL’yi belirtin**. Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’sini girin. Örneğin iOS için Microsoft Çalışma Klasörleri uygulamasını dağıtmak istiyorsanız, **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** seçeneğini belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
 
         Örneğin, cihazlara iTunes mağazasından Microsoft Word uygulamasını dağıtmak istiyorsanız, sayfa şuna benzer görünür:
 

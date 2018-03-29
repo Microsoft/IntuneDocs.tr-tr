@@ -1,25 +1,25 @@
 ---
-title: "Android ve Samsung KNOX ilke ayarları"
-description: "Intune ile yönettiğiniz Android cihazlarında ayarları ve özellikleri denetleyen ilkeler oluşturun."
-keywords: 
+title: Android ve Samsung KNOX ilke ayarları
+description: Intune ile yönettiğiniz Android cihazlarında ayarları ve özellikleri denetleyen ilkeler oluşturun.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android ve Samsung KNOX Standard ilke ayarları
 
@@ -212,5 +212,5 @@ Intune, şu anda sınırlı sayıda Android özel ilkesi destekler. Hangi ilkele
 
 Desteklenen Samsung KNOX cihazların yanı sıra [Intune tarafından desteklenen cihazlar](/intune/supported-devices-browsers.md#intune-supported-devices) listesini bulabilirsiniz.
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

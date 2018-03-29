@@ -1,25 +1,25 @@
 ---
-title: "Android for Work cihazlara uygulama dağıtma"
-description: "Google Play for Work Store’dan uygulama eşitlemek ve ardından Android for Work cihazlara dağıtmak için bu konuyu kullanın."
-keywords: 
+title: Android for Work cihazlara uygulama dağıtma
+description: Google Play for Work Store’dan uygulama eşitlemek ve ardından Android for Work cihazlara dağıtmak için bu konuyu kullanın.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22b842f2745073f0476162278c8b209a3e251f9f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 20d43882895e299b26a4130b1551b17f054c52d6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Intune ile Android for Work cihazlara uygulama dağıtma
 
@@ -82,7 +82,7 @@ Bir uygulama geliştiricisi güncelleştirilmiş izinler ile bir uygulamanın ye
 
 Yeni izinleri denetlemek için yönetilen Google Play konsolunu düzenli aralıklarla ziyaret edin. Google Play'i onaylanmış bir uygulama için yeni izinler gerekli olduğunda, size veya başkalarına e-posta göndermesi için yapılandırabilirsiniz. Bir uygulamayı atar ve cihazlarda yüklü olmadığını görürseniz, aşağıdaki adımlarla yeni izinleri denetleyin:
 
-1. http://play.google.com/work adresine gidin
+1. http://play.google.com/work adresini ziyaret edin
 2. Uygulamaları yayınlamak ve onaylamak için kullandığınız Google hesabıyla oturum açın.
 3. Herhangi bir uygulamanın güncelleştirme gerektirip gerektirmediğini görmek için **Güncelleştirmeler** sekmesini ziyaret edin.  Listelenen tüm uygulamalar yeni izinler gerektirir ve bunlar uygulanana kadar atanmaz.  
 

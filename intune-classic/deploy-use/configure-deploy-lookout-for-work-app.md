@@ -1,24 +1,24 @@
 ---
-title: "Lookout for Work uygulamasını dağıtma"
-description: "Android için Lookout for Work uygulamasını yapılandırın ve dağıtın."
+title: Lookout for Work uygulamasını dağıtma
+description: Android için Lookout for Work uygulamasını yapılandırın ve dağıtın.
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd0ad36f40463ab56f1a5ab0a11fa9eeb0c35db4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5d56dcf54c4f087dbea0dfcd95a2eebbdf384c00
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Lookout for Work uygulamasını yapılandırma ve dağıtma
 
@@ -29,7 +29,7 @@ Bu makalede, Android ve iOS cihazlarda Lookout for Work uygulamasının nasıl y
 ## <a name="android-google-play-store-app"></a>Android (Google Play Store uygulaması)
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Uygulamalar**’a gidin ve **Uygulama Ekle**’yi seçin.
-2.  Yayımcının **Yazılım Kurulumu** sayfasında **Dış bağlantıyı** seçin ve şu URL'yi belirtin: https://play.google.com/store/apps/details?id=com.lookout.enterprise
+2.  Yayımcının **Yazılım Kurulumu** sayfasında **Dış bağlantı**'yı seçin ve şu URL'yi belirtin: https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >Yönetilen tarayıcı gerekliliğine yönelik kutuya tıklamayın.
 
@@ -60,7 +60,7 @@ Bu makalede, Android ve iOS cihazlarda Lookout for Work uygulamasının nasıl y
 
 3. iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere aşağıdakileri yapın:
   1.  [Azure Active Directory yönetim portalı](https://manage.windowsazure.com)’nda oturum açın ve uygulama sayfasına gidin.
-  2.  **Lookout for Work iOS uygulamasını** **yerel istemci uygulaması** olarak ekleyin.
+  2.  **Lookout for Work iOS uygulamasını****yerel istemci uygulaması** olarak ekleyin.
   ![yerel uygulama seçeneğini gösteren uygulama ekle iletişim kutusunun ekran görüntüsü](../media/mtp/aad-add-app.png)
   3. IPA’yı imzaladığınızda seçtiğiniz müşteri paketi kimliğini **com.lookout.enterprise.yourcompanyname** ile değiştirin.
   4.  **&lt;companyportal://code/ >** ek yeniden yönlendirme URI'sini ve ardından özgün yeniden yönlendirme URI’nizin URL kodlu sürümünü ekleyin.
@@ -86,9 +86,9 @@ Bu makalede, Android ve iOS cihazlarda Lookout for Work uygulamasının nasıl y
   **Gerekli Yükleme** seçeneğini belirleyerek Lookout uygulamasının kullanıcı cihazında yüklü olmasını zorunlu hale getirin.
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Dağıtılmış uygulama cihazda açıldığında ne olur?
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Kullanıcı cihazda Lookout for Work’ü açtığında uygulamayı etkinleştirmesi ve Azure Active Directory seçeneği ile Oturum Açması istenir. Son kullanıcı akışı ile ayrıntılı bir rehber aşağıdaki konularda bulunabilir:
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Kullanıcı cihazda Lookout for Work’ü açtığında uygulamayı etkinleştirmesi ve Azure Active Directory ile oturum aç seçeneğini belirtmesi istenir. Son kullanıcı akışı ile ayrıntılı bir rehber aşağıdaki konularda bulunabilir:
 
-* [Android cihazınıza Lookout for Work uygulamasını yüklemeniz isteniyor](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+* [Android cihazınızda Lookout for Work uygulamasını yüklemeniz istendi](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 
 * [Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
