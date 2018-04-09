@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune - Azure’da cihaz profilleri oluşturma | Microsoft Docs"
-description: "Platform türünü seçme ve Azure portalı içindeki ayarları yapılandırma da dahil olmak üzere Microsoft Intune'da bir cihaz profili ekleme veya yapılandırma"
-keywords: 
+title: Microsoft Intune - Azure’da cihaz profilleri oluşturma | Microsoft Docs
+description: Platform türünü seçme ve Azure portalı içindeki ayarları yapılandırma da dahil olmak üzere Microsoft Intune'da bir cihaz profili ekleyin ve yapılandırın.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4e1febb5f12de038d2ddd543be883f71ef79005
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: e5070052c0d4cce3cfd81a7bae259bc7dfb22e7f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
@@ -27,12 +27,12 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-the-profile"></a>Profili oluşturma
 1. [Azure portalında](https://portal.azure.com), **Tüm Hizmetler**’i seçin ve **Microsoft Intune** araması yapın.
 
-2. **Microsoft Intune**’da, **Cihaz yapılandırması**’nı seçin, **Profiller**’i seçin ve ardından **Profil Oluştur**’u seçin.
+2. **Microsoft Intune**’da, **Cihaz yapılandırması**’nı ve **Profiller**’i seçin. Ardından **Profil Oluştur**'u seçin.
 
 3. Aşağıdaki özellikleri girin:
 
-    - **Ad**: Yeni profil için açıklayıcı bir ad girin
-    - **Açıklama**: İsteğe bağlıdır ancak önerilir. Profil için bir açıklama girin.
+    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
+    - **Açıklama**: Profil için bir açıklama girin. (Bu isteğe bağlıdır ama kullanılması önerilir.)
     - **Platform**: Platform türünü seçin:  
 
         - **Android**
@@ -57,11 +57,11 @@ ms.lasthandoff: 03/08/2018
         -  [Eğitim ayarları](education-settings-configure.md)
         -  [Özel ayarlar](custom-settings-configure.md)
 
-    ![Bir cihaz profili oluşturmak için ayarları girin](./media/create-device-profile.png)
+    ![Profil oluştur ekran görüntüsü](./media/create-device-profile.png)
 
 4. Bitince **Oluştur**’u seçin.
 
-Profil oluşturulur ve listede görüntülenir. Bu profili gruplara atamak için bkz. [Cihaz profillerini atama](device-profile-assign.md).
+Profil oluşturulur ve listede görüntülenir.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

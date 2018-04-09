@@ -1,25 +1,25 @@
 ---
-title: "Lookout Tümleştirmesi sorunlarını giderme"
-description: "Bu bölüm, Lookout Tümleştirmesinde sıkça meydana gelen sorun giderme konularını açıklar"
-keywords: 
+title: Lookout Tümleştirmesi sorunlarını giderme
+description: Bu bölüm, Lookout Tümleştirmesinde sıkça meydana gelen sorun giderme konularını açıklar
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6adb0bc2562a16c0111242cc7dd923afa073d84e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ec20d87da48fb52207d839da0753eb05524569af
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune ile Lookout Tümleştirmesi Sorunlarını Giderme
 
@@ -36,7 +36,7 @@ Lookout MTP yalnızca yapılandırılmış Azure AD grubundan kullanıcıların 
 
 * E-posta: enterprisesupport@lookout.com
 * [MTP Konsolunda](http://aad.lookout.com) oturum açıp **Destek** modülüne gidin.
-* Şuraya gidin: https://enterprise.support.lookout.com/hc/requests ve bir destek isteğinde bulunun.
+* https://enterprise.support.lookout.com/hc/requests adresine gidin ve destek isteğinde bulunun.
 
 ## <a name="unable-to-sign-in"></a>Oturum açılamıyor
 Azure AD genel yöneticisi ilk Lookout kurulumunu kabul etmediğinde aşağıdaki hatayı görüyorsunuz.
@@ -86,5 +86,5 @@ Yeni kullanıcı bir Lookout MTP kayıt grubundaysa Azure AD cihazı yeni kullan
 - [Lookout for Work’ün iOS cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Lookout MTP ile aboneliğinizi ayarlama](/intune-classic/deploy-use/set-up-your-subscription-with-lookout-mtp)

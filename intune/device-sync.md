@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune - Azure ile cihazları eşitleme | Microsoft Docs"
-description: "En son ilkeleri ve eylemleri almak için Microsoft Intune ile kayıtlı veya yönetilen cihazları eşitleyin. Azure portalını kullanan eşitleme adımlarını içerir ve yeniden denenebilecek hata kodlarını listeler."
-keywords: 
+title: Microsoft Intune - Azure ile cihazları eşitleme | Microsoft Docs
+description: En son ilkeleri ve eylemleri almak için Microsoft Intune ile kayıtlı veya yönetilen cihazları eşitleyin. Azure portalını kullanarak eşitleme adımlarını içerir ve yeniden denenebilecek hata kodlarını listeler.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>En son ilkeleri ve eylemleri almak için cihazları eşitleme - Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Intune ile en son ilkeleri ve eylemleri almak için cihazları eşitleme
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,19 +36,19 @@ Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorl
 
 ## <a name="sync-a-device"></a>Cihaz eşitleme
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin. 
-3. **Intune**’da **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
-4. Yönettiğiniz cihazların listesinden bir cihaz seçin, **...Daha Fazla**’yı ve ardından **Eşitle** eylemini seçin.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve ardından **Microsoft Intune**’u seçin. 
+3. **Intune**'da **Cihazlar** > **Tüm cihazlar**’ı seçin.
+4. Yönettiğiniz cihazların listesinde bir cihaz seçin, **Daha Fazla**’yı ve ardından **Eşitle**'yi seçin.
 5. Onaylamak için **Evet**'i seçin.
 
 
 ## <a name="retryable-error-codes"></a>Yeniden denenebilir hata kodları
 
-Bir yönetici **Eşitle** cihaz eylemini çalıştırdığında, başarısız olan ancak yeniden denenebilir bir hata kodu veren iOS ve Android uygulamaları o cihaz için kullanılabilir. Ancak yeniden denenemez bir hata kodu vermiş uygulamalar, cihaz için kullanılabilir hale gelmeden önce yedi gün beklemek zorundadır.
+Bir yönetici **Eşitle** cihaz eylemini çalıştırdığında, başarısız olan ancak yeniden denenebilir bir hata kodu veren iOS ve Android uygulamaları o cihazda yine kullanılabilir. Ancak yeniden denenemez bir hata kodu vermiş uygulamalar, cihaz için kullanılabilir hale gelmeden önce yedi gün beklemek zorundadır.
 
 
-| Hata Kodu  | Önerilen Açıklama | Yeniden denenebilir |
+| Hata kodu  | Önerilen açıklama | Yeniden denenebilir |
 |---|---|---|
 | 2016330898 | Bilinmeyen bir hata oluştu. | Hayır |
 | 2016330897 | Intune bağlantınız zaman aşımına uğradı. Bağlantınızı sıfırlayın. | Evet |
@@ -62,6 +62,6 @@ Bir yönetici **Eşitle** cihaz eylemini çalıştırdığında, başarısız ol
 | 2016330889 | Güvenli bağlantı başarısız oldu. Bağlantınızı sıfırlayın. | Evet|
 | 2016330888 | Sunucu güven değerlendirmesi başarısız oldu. | Hayır|
 
-## <a name="next-step"></a>Sonraki adım
+## <a name="next-steps"></a>Sonraki adımlar
 
-Eşitleme eyleminin durumunu görmek için **Cihaz eylemleri**’ni seçin. 
+- Eşitleme eyleminin durumunu görmek için **Cihaz eylemleri**’ni seçin. 

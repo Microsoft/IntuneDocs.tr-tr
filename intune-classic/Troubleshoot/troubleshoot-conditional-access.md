@@ -1,25 +1,25 @@
 ---
-title: "Koşullu erişim sorunlarını giderme"
-description: "Kullanıcıların, kaynaklara Intune koşullu erişimi üzerinden erişemediklerinde ne yapacakları açıklanır."
-keywords: 
+title: Koşullu erişim sorunlarını giderme
+description: Kullanıcıların, kaynaklara Intune koşullu erişimi üzerinden erişemediklerinde ne yapacakları açıklanır.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
 
@@ -118,7 +118,7 @@ Bu sorun giderme yordamları sorununuzu çözmüyorsa, Microsoft Desteği, OWA p
 ### <a name="exchange-connector-logs"></a>Exchange Connector günlükleri
 
 #### <a name="general-log-information"></a>Genel günlük bilgileri
-Exchange Connector günlüklerini görüntülemek için [Server Trace Viewer Tool](sunucu izleme görüntüleme aracı (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx') kullanın. Bu araç, Windows Server SDK’yı indirmenizi gerektirir.
+Exchange Connector günlüklerini görüntülemek için [Server Trace Viewer Tool] sunucu izleme görüntüleme aracı (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx') kullanın. Bu araç, Windows Server SDK’yı indirmenizi gerektirir.
 
 >[!NOTE]
 >Günlükler C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs konumundadır. Günlükler, *Connector0.log* ile başlayıp *Connector29.log* ile biten bir dizi 30 günlük dosyası içindedir. Günlükler, bir günlükte 10 MB veri biriktikten sonra birinden diğerine geçer. Günlükler Connector29’a vardıktan sonra yeniden Connector0’dan başlayarak önceki günlük dosyalarının üzerine yazılır.

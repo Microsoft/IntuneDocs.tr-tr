@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune - Azure’da cihaz profilleri | Microsoft Docs"
-description: "Özellikler, kısıtlamalar, e-posta, wifi, VPN, eğitim, sertifikalar, Windows 10, BitLocker ve Windows defender, Windows Bilgi Koruması ve Azure portalındaki özel cihaz yapılandırma ayarları gibi farklı Microsoft Intune cihaz profillerine genel bakış. Şirketinizdeki verileri ve cihazları yönetmek ve korumak için bu profili kullanın."
-keywords: 
+title: Microsoft Intune - Azure’da cihaz profilleri | Microsoft Docs
+description: Özellikler, kısıtlamalar, e-posta, wifi, VPN, eğitim, sertifikalar, Windows 10, BitLocker ve Windows defender, Windows Bilgi Koruması ve Azure portalındaki özel cihaz yapılandırma ayarları gibi farklı Microsoft Intune cihaz profillerine genel bakış. Şirketinizdeki verileri ve cihazları yönetmek ve korumak için bu profili kullanın.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e92a10f51fb403c802c1c6d3ea79ccf49a1e93fb
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profilleri nedir?
 
@@ -120,6 +120,8 @@ Bu özellik şunları destekler: Yalnızca Windows 10
 ## <a name="endpoint-protection-profile"></a>Endpoint protection profili
 [Windows 10 için Endpoint protection ayarları](endpoint-protection-windows-10.md) Windows 10 cihazları için BitLocker'ı ve Windows Defender ayarlarını yapılandırır.
 
+Microsoft Intune'a Windows Defender Gelişmiş Tehdit Koruması'nı (WDATP) eklemek için bkz. [Mobil Cihaz Yönetimi (MDM) araçlarını kullanarak uç noktaları yapılandırma](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
+
 Bu özellik şunları destekler: Yalnızca Windows 10
 
 ## <a name="windows-information-protection-profile"></a>Windows Bilgi Koruması profili
@@ -130,7 +132,7 @@ Bu özellik şunları destekler: Yalnızca Windows 10
 ## <a name="custom-profile"></a>Özel profil
 [Özel ayarlar](custom-settings-configure.md), Intune’da yerleşik olarak sağlanmayan cihaz ayarlarını atamanıza olanak tanır. Örneğin, Android cihazlarda, OMA-URI değerleri girebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz. 
 
-Bu özellik şunları destekler: 
+Bu özellik şunları destekler:
 
 - Android
 - iOS
