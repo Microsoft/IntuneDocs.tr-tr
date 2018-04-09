@@ -1,23 +1,22 @@
 ---
-title: "Microsoft Intune’da Windows cihaz uyumluluk ilkesi oluşturma"
-titleSuffix: 
-description: "Windows cihazlarına Microsoft Intune cihaz uyumluluk ilkesi oluşturarak cihazın uyumlu olabilmesi için karşılaması gereken gereksinimleri belirtebilirsiniz."
-keywords: 
+title: Microsoft Intune - Azure'da Windows cihaz uyumluluk ilkesi oluşturma | Microsoft Docs
+description: Windows cihazlarına Microsoft Intune cihaz uyumluluk ilkesi oluşturarak cihazın uyumlu olabilmesi için karşılaması gereken gereksinimleri belirtebilirsiniz.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için cihaz uyumluluk ilkesi oluşturma
 
@@ -177,7 +176,7 @@ HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Dur
 
 - **Gereken en düşük işletim sistemi:** - Windows 8.1 ve Windows 10’da desteklenir.
 
-Burada birincilsürüm.ikincilsürüm.yapı numarasını belirtin. Sürüm numarası, ```winver``` komutu tarafından döndürülen sürüme karşılık gelmelidir.
+Burada birincilsürüm.ikincilsürüm.CU numarasını belirtin. Sürüm numarası, ```winver``` komutu tarafından döndürülen sürüme karşılık gelmelidir.
 
 Cihazdaki işletim sistemi belirtilen sürümden önceki bir sürümdeyse, cihazın uyumsuz olduğu bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 

@@ -1,23 +1,23 @@
 ---
-title: "Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırma"
-titlesuffix: 
-description: "Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırmayı öğrenin."
-keywords: 
+title: Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırma
+titlesuffix: ''
+description: Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırmayı öğrenin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırma
 
@@ -35,7 +35,7 @@ iOS cihazı Çoklu Oturum Açma özelliğinden yararlanmak için, aşağıdaki k
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
+3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 4. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 5. Profiller bölmesinde **Profil oluştur**’u seçin.
 6. Ad ve açıklama sağlayıp aşağıdaki ayarları yapılandırın:
@@ -90,7 +90,7 @@ URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit 
 
 Son kullanıcının cihazında bulunan ve Çoklu Oturum Açma yükünü kullanılabilecek uygulamaları gösterir.
 
-`AppIdentifierMatches` dizisi, uygulama paketi grubu kimlikleriyle eşleşen dizeler içermelidir. Bu dizeler tam eşleşme (örneğin: `com.contoso.myapp`) olabileceği gibi, *\ joker karakterini kullanarak paket kimliğinde ön ek eşleştirmesi de belirtebilir. Joker karakterin nokta karakterinden (.) sonra kullanılması gerekir ve dizenin sonunda tek bir kez görünebilir (örneğin: `com.contoso.*`). Joker karakter eklendiğinde, paket kimlikleri bu ön ekle başlayan tüm uygulamaların hesaba erişimine izin verilir.
+`AppIdentifierMatches` dizisi, uygulama paketi grubu kimlikleriyle eşleşen dizeler içermelidir. Bu dizeler tam eşleşme (örneğin: `com.contoso.myapp`) olabileceği gibi, \* joker karakterini kullanarak paket kimliğinde ön ek eşleştirmesi de belirtebilir. Joker karakterin nokta karakterinden (.) sonra kullanılması gerekir ve dizenin sonunda tek bir kez görünebilir (örneğin: `com.contoso.*`). Joker karakter eklendiğinde, paket kimlikleri bu ön ekle başlayan tüm uygulamaların hesaba erişimine izin verilir.
 
 **Uygulama Adı** alanı, paket kimliğini tanımlamanıza yardımcı olacak bir kolay ad eklemek için kullanılır.
 

@@ -1,12 +1,11 @@
 ---
-title: Cihazları Intune ile uzaktan başlatma
-titlesuffix: Microsoft Intune
-description: Microsoft Intune’da cihazı yeniden başlatma eylemini kullanarak cihazları uzaktan yeniden başlatma hakkında bilgi edinin.
+title: Microsoft Intune - Azure ile cihazları yeniden başlatma | Microsoft Docs
+description: Azure portalında Microsoft Intune'u kullanarak Yeniden başlatma uzak eylemiyle Windows ve iOS cihazlarını yeniden başlatın.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +13,18 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1bd5a01b8aac91c3bd6ea033d62d41e19aab65f8
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 98b3403e3f45e1aa7169937a05692686d97d7362
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Cihazları Intune ile uzaktan başlatma
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Yeniden Başlat** cihaz işlemi, seçtiğiniz cihazın yeniden başlatılmasına neden olur. Yeniden başlatma işlemi cihaz sahibine otomatik olarak bildirilmez, dolayısıyla cihaz sahibi çalışmasını kaybedebilir.
+**Yeniden Başlat** cihaz işlemi, seçtiğiniz cihazın yeniden başlatılmasına neden olur. Yeniden başlatma işlemi cihaz sahibine otomatik olarak bildirilmez ve cihaz sahibi çalışmasını kaybedebilir.
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
@@ -34,18 +33,17 @@ ms.lasthandoff: 03/17/2018
 - iOS - Desteklenir
 
     > [!Note]  
-    > Bu komut, denetlenen cihazlar ve **Cihaz Kilidi** erişim hakkı gerektirir. Cihaz hemen yeniden başlatılır. Geçiş koduyla kilitli iOS cihazlar yeniden başlatmadan sonra bir Wi-Fi ağına yeniden katılmaz; yeniden başlatıldıktan sonra sunucu ile iletişim kuramayabilir.
+    > Bu komut için, denetlenen bir cihaz ve **Cihaz Kilidi** erişim hakkı gerekir. Cihaz hemen yeniden başlatılır. Geçiş koduyla kilitlenen iOS cihazları, yeniden başlatma sonrasında Wi-Fi ağına yeniden katılmaz. Yeniden başlatma sonrasında, cihaz sunucuyla iletişim kuramayabilir.
 - macOS - Desteklenmiyor
 - Android - Desteklenmiyor
 
-## <a name="how-to-restart-a-device"></a>Bir cihazı yeniden başlatma
+## <a name="restart-a-device"></a>Cihazı yeniden başlatma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
-4. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin.
-5. Yönettiğiniz cihazların listesinden bir cihaz seçin, **...Daha Fazla**’yı ve ardından **Yeniden Başlat** uzak cihaz eylemini seçin.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+3. **Cihazlar** > **Tüm cihazlar**’ı seçin.
+4. Yönettiğiniz cihazların listesinde bir cihaz seçin, **Daha Fazla**’yı ve ardından **Yeniden Başlat** uzak cihaz eylemini seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Az önce gerçekleştirdiğiniz işlemin durumunu görmek için **Cihazlar** dikey penceresinde **Cihaz eylemleri**'ni seçin.
+- **Yeniden başlat** cihaz eyleminin durumunu görmek için **Cihazlar** > **Cihaz eylemleri**'ni seçin.

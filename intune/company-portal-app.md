@@ -1,25 +1,25 @@
 ---
-title: "Şirket Portalı uygulamasını yapılandırma"
+title: Şirket Portalı uygulamasını yapılandırma
 titleSuffix: Microsoft Intune
-description: "Intune Şirket Portalı uygulamasına şirkete özgü marka uygulamayı öğrenin."
-keywords: 
+description: Intune Şirket Portalı uygulamasına şirkete özgü marka uygulamayı öğrenin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd876739fb0f3ad6d2e0fea705825a26ebc9fe03
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -41,9 +41,9 @@ Microsoft Intune şirket portalı, kullanıcıların şirket verilerine erişti�
 |**Şirket adı**|40|Bu ad Şirket Portalı’nın başlığı olarak gösterilir.|        
 |**BT departmanı ilgili kişi adı**|40|Bu ad **BT’ye Başvur**sayfasında gösterilir.|      
 |**BT departmanı telefon numarası**|20|Bu iletişim numarası **BT'ye Başvur** sayfasında gösterilir.|        
-|BT departmanı e-posta adresi|40|Bu iletişim adresi **BT'ye Başvur** sayfasında gösterilir. **alias@domainname.com** biçiminde geçerli bir e-posta adresi girmeniz gerekir.|     
+|**BT departmanı e-posta adresi**|40|Bu iletişim adresi **BT'ye Başvur** sayfasında gösterilir. **alias@domainname.com** biçiminde geçerli bir e-posta adresi girmeniz gerekir.|     
 |**Ek bilgiler**|120|**BT'ye Başvur** sayfasında gösterilir.|      
-|**Şirket gizlilik bildirimi URL'si**|79|Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. **Https://www.contoso.com** biçiminde geçerli bir URL girmelisiniz.|        
+|**Şirket gizlilik bildirimi URL'si**|79|Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. **https://www.contoso.com** biçiminde geçerli bir URL girmeniz gerekir.|        
 
 ## <a name="support-contacts"></a>Destek kişileri     
 Şirket Portalı’nda kullanıcılara, çevrimiçi desteğe erişebilmeleri için destek web sitesi gösterilir.        
@@ -52,7 +52,7 @@ Microsoft Intune şirket portalı, kullanıcıların şirket verilerine erişti�
 
 |Alan adı|Uzunluk üst sınırı|Daha fazla bilgi|        
 |-|-|-|     
-|**Destek web sitesi URL'si**|150|Kullanıcılarınızın kullanmasını istediğiniz bir destek web siteniz varsa, URL'sini burada belirtin. **URL, https://www.contoso.com biçiminde olmalıdır**. Bir URL belirtmezseniz, Şirket Portalı’ndaki **BT'ye Başvur** sayfasında destek web sitesi için hiçbir şey görünmez.|        
+|**Destek web sitesi URL'si**|150|Kullanıcılarınızın kullanmasını istediğiniz bir destek web siteniz varsa, URL'sini burada belirtin. URL, **https://www.contoso.com** biçiminde olmalıdır. Bir URL belirtmezseniz, Şirket Portalı’ndaki **BT'ye Başvur** sayfasında destek web sitesi için hiçbir şey görünmez.|        
 |**Destek web sitesi adı**|40|Bu ad destek web sitesi URL'si için görüntülenen kolay addır. Bir destek web sitesi URL'si belirtir ve bir kolay ad belirtmezseniz, Şirket Portalı’ndaki **BT'ye Başvur** sayfasında BT web sitesine gidin ifadesi gösterilir.       
 
 ## <a name="company-branding-customization"></a>Şirket markasıyla özelleştirme       

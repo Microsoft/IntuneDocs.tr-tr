@@ -1,23 +1,23 @@
 ---
-title: "iOS için Microsoft Intune cihaz kısıtlamaları ayarları"
-titleSuffix: 
-description: "iOS çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin."
-keywords: 
+title: iOS için Microsoft Intune cihaz kısıtlamaları ayarları
+titleSuffix: ''
+description: iOS çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS cihaz kısıtlama ayarları
 
@@ -40,7 +40,6 @@ Bu durum, Posta, Kişiler, Takvim, Facebook ve Twitter gibi iOS ayarları uygula
 - **Cihazdaki tüm içerikleri ve ayarları silme seçeneğinin kullanımı (yalnızca denetimli)** - Kullanıcının, cihazda tüm içeriği ve ayarları silme seçeneğini kullanmasına izin verin.
 - **Cihaz adı değişikliği (yalnızca denetimli)** - Kullanıcının cihazın adını değiştirmesine izin verin.
 - **Bildirim ayarlarının değiştirilmesi (yalnızca denetimli)** - Kullanıcının cihazın bildirim ayarlarını değiştirmesine izin verin.
-- **Duvar kağıdı değişikliği (yalnızca denetimli)** - Kullanıcının cihazın duvar kağıdını değiştirmesine izin verin.
 - **Kurumsal uygulama güven ayarlarının değiştirilmesi (yalnızca denetimli)** - Kullanıcının uygulama mağazasından indirilmemiş uygulamalara güvenmeyi seçmesine izin verir.
 - **Yapılandırma profilindeki değişiklikler (yalnızca denetimli)** - Kullanıcının yapılandırma profilleri yüklemesine izin verin.
 - **Etkinleştirme Kilidi (yalnızca denetimli)** - Denetimli iOS cihazlarda Etkinleştirme Kilidi’ni etkinleştirin.
@@ -74,7 +73,6 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 - Klavye kısayolları 
 - Geçiş kodu değişiklikleri 
 - Cihaz adı değişiklikleri 
-- Duvar kağıdı değişiklikleri 
 - Otomatik uygulama indirme 
 - Kurumsal uygulama güvenine yapılan değişiklikler 
 - Apple Music 

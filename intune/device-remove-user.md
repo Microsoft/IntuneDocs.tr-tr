@@ -1,31 +1,31 @@
 ---
-title: "Microsoft Intune ile bir iOS cihazından kullanıcı kaldırma"
-titlesuffix: 
-description: "Paylaşılan bir iOS cihazından Intune ile kullanıcı kaldırmayı öğrenin."
-keywords: 
+title: Microsoft Intune ile bir iOS cihazından kullanıcı kaldırma
+titlesuffix: ''
+description: Paylaşılan bir iOS cihazından Intune ile kullanıcı kaldırmayı öğrenin.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce1b6b439c287b67a7c9e776edf136e78e5ecf5b
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 01928439f3a4d9280036b2e1a9576175ef425050
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>Paylaşılan bir iOS cihazından kullanıcı kaldırma
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Kullanıcı kaldır** eylemi, iOS Classroom uygulamasını [iOS eğitim profili](education-settings-configure-ios.md) ile yönetmek üzere yapılandırılmış, paylaşılan bir iPad cihazdaki yerel önbellekten seçtiğiniz bir kullanıcıyı siler. 
+**Kullanıcı kaldır** eylemi, paylaşılan bir iPad cihazındaki yerel önbellekten seçtiğiniz kullanıcıyı siler. iPad cihazının, [iOS eğitim profili](education-settings-configure-ios.md) kullanılarak iOS Classroom uygulamasını yönetecek şekilde ayarlanmış olması gerekir. 
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
@@ -35,16 +35,16 @@ ms.lasthandoff: 03/08/2018
 - macOS - Desteklenmiyor
 - Android - Desteklenmiyor
 
-## <a name="how-to-remove-a-user"></a>Bir kullanıcıyı kaldırma
+## <a name="remove-a-user"></a>Kullanıcıyı kaldırma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
-4. **Cihazlar** dikey penceresinden **Tüm cihazlar**'ı seçin.
-5. Yönettiğiniz cihazların listesinden bir iOS cihazı seçin.
-6. Cihazın dikey penceresinde **Kullanıcılar**'ı seçin.
-7. Listede, kaldırmak istediğiniz kullanıcıya sağ tıklayın, ardından **Kullanıcıyı kaldır**'ı seçin.
+3. **Intune** bölmesinde **Cihazlar**’ı seçin.
+4. **Cihazlar** bölmesinde **Tüm cihazlar**'ı seçin.
+5. Yönettiğiniz cihazların listesinde, bir iOS cihazı seçin.
+6. Cihazın bölmesinde **Kullanıcılar**'ı seçin.
+7. Listede, kaldırmak istediğiniz kullanıcıya sağ tıklayın ve **Kullanıcıyı kaldır**'ı seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Az önce gerçekleştirdiğiniz işlemin durumunu görmek için **Cihazlar** dikey penceresinde **Cihaz eylemleri**'ni seçin.
+- **Kullanıcıyı kaldır** eyleminin durumunu görmek için **Cihazlar** > **Cihaz eylemleri**'ni seçin.

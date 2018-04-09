@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 99b1436fdf718b54f54f7e90835668d4a632b7ce
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>Microsoft Intune için erken sürüm - Mart 2018
 
@@ -51,11 +51,11 @@ Intune şirket içi Exchange bağlayıcısıyla, cihazın Intune'a kayıtlı olu
 iOS için Cisco AnyConnect'e yönelik oluşturulan yeni VPN profilleri Cisco AnyConnect 4.0.7x ve üstüyle çalışacaktır. Mevcut iOS Cisco AnyConnect VPN profilleri **Cisco Eski AnyConnect** olarak etiketlenecek ve bugün olduğu gibi Cisco AnyConnect 4.0.5x ile çalışmaya devam edecektir.
 
 > [!NOTE]
-> Bu değişiklik yalnızca iOS'ye yöneliktir; Android, Android for Work ve macOS için yine tek Cisco AnyConnect seçeneği olacaktır. 
+> Bu değişiklik yalnızca iOS'ye yöneliktir; Android, Android for Work ve macOS için yine tek Cisco AnyConnect seçeneği olacaktır.
 
 #### <a name="more-information"></a>Daha fazla bilgi
 
-Yeni uygulamayı desteklemek için yeni bir iOS Cisco AnyConnect VPN profili oluşturmalısınız çünkü yeni Cisco AnyConnect uygulaması ve Cisco Eski AnyConnect uygulaması ayrı uygulamalardır. Ortamınızda AnyConnect istemcisini yönetiyorsanız, yeni Cisco AnyConnect uygulamasını da dağıtmanız gerekir. Ayrıca yükseltmeyi tamamlamak için, Cisco Eski AnyConnect VPN profilini silmeli ve Cisco Eski AnyConnect uygulamasını kaldırmalısınız. 
+Yeni uygulamayı desteklemek için yeni bir iOS Cisco AnyConnect VPN profili oluşturmalısınız çünkü yeni Cisco AnyConnect uygulaması ve Cisco Eski AnyConnect uygulaması ayrı uygulamalardır. Ortamınızda AnyConnect istemcisini yönetiyorsanız, yeni Cisco AnyConnect uygulamasını da dağıtmanız gerekir. Ayrıca yükseltmeyi tamamlamak için, Cisco Eski AnyConnect VPN profilini silmeli ve Cisco Eski AnyConnect uygulamasını kaldırmalısınız.
 
 İlk sürümde yeni AnyConnect istemcisi için ağ erişim denetimi (NAC) tümleştirmesi çalışmaz. Gelecek Intune sürümlerinden birinde NAC tümleştirmesi sağlamak için Cisco'yla çalışmaları sürdürüyoruz.
 
@@ -64,7 +64,7 @@ Yeni uygulamayı desteklemek için yeni bir iOS Cisco AnyConnect VPN profili olu
 Gelişmiş jailbreak algılama, Intune'un jailbreak uygulanmış cihazları değerlendirme yöntemini geliştirecek yeni bir uyumluluk ayarıdır. Ayar cihazın Intune'a daha sık iade edilmesine neden olur; bu da cihazın konum hizmetlerini kullanır ve pil kullanımını etkiler.
 
 ### <a name="ability-to-deploy-required-line-of-business-lob-apps-to-all-users-on-windows-10-desktop-devices----1627835-rs4---"></a>Gerekli iş kolu (LOB) uygulamalarını Windows 10 Masaüstü cihazlarında Tüm Kullanıcılara dağıtabilme <!-- 1627835 RS4 -->
-Müşteriler gerekli iş kolu Windows 10 uygulamalarını cihaz bağlamlarına yüklemek üzere dağıtabilecek. Böylelikle bu uygulamalar cihazdaki tüm kullanıcılara sağlanabilir. Bu yalnızca Windows 10 Masaüstü cihazları için geçerlidir. 
+Müşteriler gerekli iş kolu Windows 10 uygulamalarını cihaz bağlamlarına yüklemek üzere dağıtabilecek. Böylelikle bu uygulamalar cihazdaki tüm kullanıcılara sağlanabilir. Bu yalnızca Windows 10 Masaüstü cihazları için geçerlidir.
 
 ### <a name="expiring-line-of-business-lob-apps-for-microsoft-intune----748789---"></a>Microsoft Intune için süresi dolan iş kolu (LOB) uygulamaları <!-- 748789 -->
 Azure portalında, Intune süresi dolmak üzere olan iş kolu uygulamaları konusunda sizi uyaracaktır. İş kolu uygulamasının yeni sürümü karşıya yüklenince, Intune süre sonu bildirimini uygulama listesinden kaldırır.
@@ -73,10 +73,10 @@ Azure portalında, Intune süresi dolmak üzere olan iş kolu uygulamaları konu
 Windows 10 derleme 1703'te ve üstünde Şirket Portalı'nı kullanarak cihaz kaydı yapan kullanıcılar, uygulamadan çıkmadan kaydın ilk adımını tamamlayabilecekler.
 
 ### <a name="new-management-name-column----1333586---"></a>Yeni Yönetim adı sütunu <!-- 1333586 -->
-Cihazlar dikey penceresine **Yönetim adı** adlı yeni bir sütun eklenecektir. Bu, aşağıdaki formül temelinde her cihaza atanan, otomatik olarak oluşturulmuş ve düzenlenemez bir addır: 
+Cihazlar dikey penceresine **Yönetim adı** adlı yeni bir sütun eklenecektir. Bu, aşağıdaki formül temelinde her cihaza atanan, otomatik olarak oluşturulmuş ve düzenlenemez bir addır:
 - Tüm cihazlar için varsayılan ad: <username>_<devicetype>_<enrollmenttimestamp>
-- Toplu eklenen cihazlar: <PaketKimliği/ProfilKimliği>_<DeviceType>_<EnrollmentTime> 
- 
+- Toplu eklenen cihazlar: <PaketKimliği/ProfilKimliği>_<DeviceType>_<EnrollmentTime>
+
 Bu, cihazlar dikey penceresinde isteğe bağlı bir sütundur. Varsayılan olarak sağlanmaz ve bu sütuna yalnızca sütun seçici üzerinden erişebilirsiniz. Cihaz adı bu yeni sütundan etkilenmez.
 
 ### <a name="new-settings-for-windows-defender-security-center-notifications-device-configuration-profile----1631906---"></a>Windows Defender Güvenlik Merkezi bildirimleri cihaz yapılandırma profilinin yeni ayarları <!-- 1631906 -->
@@ -107,19 +107,19 @@ Bu ayarlar **Cihaz yapılandırması** -> **Profil oluştur** -> **macOS** -> **
 ### <a name="configure-the-mac-application-firewall----1690461---"></a>Mac uygulaması güvenlik duvarını yapılandırma <!-- 1690461 -->
 
 Mac uygulaması güvenlik duvarını yapılandırabileceksiniz. Bunu kullanarak bağlantıları her bağlantı noktası temelinde değil her uygulama temelinde denetleyebilirsiniz. Güvenlik duvarı korumasının avantajlarından yararlanmanızı kolaylaştırır ve geçerli uygulamalar için açılmış ağ bağlantı noktalarında istenmeyen uygulamaların denetimi ele geçirmesini önlemeye yardımcı olur.
- 
+
 Bu özellik **Cihaz yapılandırması** -> **Profil oluştur** -> **macOS** -> **Uç nokta koruma** altında bulunabilir.
 
 Güvenlik Duvarı ayarını etkinleştirdikten sonra, güvenlik duvarını yapılandırmak için şu iki stratejiyi kullanabilirsiniz:
 
 - Tüm gelen bağlantıları engelleme
 
-   Hedeflenen cihazlar için tüm gelen bağlantıları engelleyebilirsiniz. Bunu yapmayı seçerseniz, tüm uygulamalar için gelen bağlantılar engellenir. 
+   Hedeflenen cihazlar için tüm gelen bağlantıları engelleyebilirsiniz. Bunu yapmayı seçerseniz, tüm uygulamalar için gelen bağlantılar engellenir.
 
 - Belirli uygulamalara izin verme veya engelleme
 
    Belirli uygulamaların gelen bağlantıları almasına izin verebilir veya bunu engelleyebilirsiniz. Ayrıca yoklama isteklerine yönelik yanıtları engellemek için gizli modu da etkinleştirebilirsiniz.
- 
+
 #### <a name="more-information"></a>Daha fazla bilgi
 
 - Tüm gelen bağlantıları engelleme
@@ -134,7 +134,7 @@ Güvenlik Duvarı ayarını etkinleştirdikten sonra, güvenlik duvarını yapı
 - Gizli mod
 
    Bilgisayarın yoklama isteklerine yanıt vermesini önlemek için bunu etkinleştirin. Bilgisayar, yetkili uygulamalardan gelen istekleri yanıtlamaya devam eder. ICMP (ping) gibi beklenmedik istekler yoksayılır.
- 
+
 
 ### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>Android için Şirket Portalı uygulamasında Yardım ve Geri Bildirim deneyimini güncelleştirme <!--1631531 -->
 
@@ -143,16 +143,16 @@ Android uygulamalarına yönelik en iyi yöntemlerle uyumlu olacak şekilde, And
 ### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>Toplu satın alma programı (VPP) eKitapları için Özel Kitap kategorileri <!-- 1488911 -->
 Özel eKitap kategorileri oluşturabilecek ve VPP eKitaplarını bu özel eKitap kategorilerine ekleyebileceksiniz. Bundan sonra son kullanıcılar yeni oluşturulan eKitap kategorilerini ve bu kategorilere atanmış olan kitapları görebilecek.
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>Android için Şirket Portalı görsel güncelleştirmeleri <!--976944 -->
+### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868--"></a>Artık cihaz listelerinde HoloLens ve Surface Hub gösteriliyor <!--1725868-->
 
-Android için Şirket Portalı uygulamasını, Android'in [Materyal Tasarım](https://material.io/) yönergelerine uyacak şekilde güncelleştireceğiz. Uygulama kullanıma sunulduğunda, yeni simgelerin resimlerini [Uygulama kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md) makalesinde yayımlayacağız. 
+Intune'a kayıtlı HoloLens ve Surface Hub cihazlarının Android için Şirket Portalı uygulamasına gösterilmesi için destek ekliyoruz.
 
 ### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Intune uygulama koruma ilkeleri için Edge mobil desteği <!-- 1817882 -->
 
 Mobil cihazlar için Microsoft Edge tarayıcısı, Intune’da tanımlanan uygulama koruma ilkelerini destekleyecek.
 
 ### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>SCEP sertifikası için konu olarak tam ayırt edici ad kullanma <!--2221763 eeready-->
-Bir SCEP sertifika profili oluşturduğunuzda Konu Adı girersiniz. Konu olarak tam ayırt edici ad kullanabileceksiniz. **Konu Adı** için **Özel**’i seçin ve `CN={{OnPrem_Distinguished_Name}}` girin. `{{OnPrem_Distinguished_Name}}` değişkenini kullanmak için [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onpremisesdistingishedname` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun. 
+Bir SCEP sertifika profili oluşturduğunuzda Konu Adı girersiniz. Konu olarak tam ayırt edici ad kullanabileceksiniz. **Konu Adı** için **Özel**’i seçin ve `CN={{OnPrem_Distinguished_Name}}` girin. `{{OnPrem_Distinguished_Name}}` değişkenini kullanmak için [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onpremisesdistingishedname` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
 
 ### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>15 dakikada bir iOS cihazlardan PIN istenir <!--1550837 eeready-->
 Bir iOS cihaza uyumluluk veya yapılandırma ilkesi uygulandıktan sonra her 15 dakikada bir kullanıcılardan bir PIN ayarlamaları istenir. PIN ayarlanana kadar kullanıcılara bu istem gönderilir.
@@ -169,11 +169,11 @@ Intune yöneticisi, paylaşıma izin vermek için bu ayarları yapılandırabili
 
 ### <a name="schedule-your-automatic-updates---1805514---"></a>Otomatik güncelleştirmelerinizi zamanlama <!--1805514 -->
 
-Intune, [Windows Güncelleştirme Halkası ayarları](windows-update-for-business-configure.md) kullanarak otomatik güncelleştirme yüklemelerini denetlemenize olanak verir. Tekrar eden güncelleştirmeleri hafta, gün ve saat olarak zamanlayabileceksiniz. 
+Intune, [Windows Güncelleştirme Halkası ayarları](windows-update-for-business-configure.md) kullanarak otomatik güncelleştirme yüklemelerini denetlemenize olanak verir. Tekrar eden güncelleştirmeleri hafta, gün ve saat olarak zamanlayabileceksiniz.
 
 ### <a name="disable-checks-on-device-restart---1805490---"></a>Cihazı yeniden başlatma sırasında denetimleri devre dışı bırakma <!--1805490 -->
 
-Intune, size [yazılım güncelleştirmelerini yönetme](windows-update-for-business-configure.md) denetimi sağlar. **Yeniden başlatma denetimleri** özelliği eklenecek ve varsayılan olarak etkin olacaktır. Bir cihazı yeniden başlattığınızda yapılan denetimleri (etkin kullanıcılar, pil düzeyleri vb. gibi) atlamak için **Atla**’yı seçin. 
+Intune, size [yazılım güncelleştirmelerini yönetme](windows-update-for-business-configure.md) denetimi sağlar. **Yeniden başlatma denetimleri** özelliği eklenecek ve varsayılan olarak etkin olacaktır. Bir cihazı yeniden başlattığınızda yapılan denetimleri (etkin kullanıcılar, pil düzeyleri vb. gibi) atlamak için **Atla**’yı seçin.
 
 <!-- 1802 start -->
 
@@ -183,15 +183,15 @@ Kayıt Genel Bakış sayfasında kayıt hatalarının eğilimini ve hataların i
 
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>Şirket Portalı temalarınızı onaltılık kodlarla özelleştirme <!--1049561 -->
 
-Onaltılık kodlar kullanarak Şirket Portalı uygulamalarında tema rengini özelleştirebileceksiniz. Onaltılık kodunuzu girdiğinizde Intune, [WCAG 2.0 standartlarına](http://www.w3.org/TR/WCAG20) göre metin rengi ile arka plan rengi arasında en yüksek düzeyde kontrast sağlayan metin rengini belirler. **Mobil uygulamalar** > **Şirket Portalı**’nda metin renginin ve bu renk ile şirket logonuzun önizlemesini görüntüleyebilirsiniz. 
+Onaltılık kodlar kullanarak Şirket Portalı uygulamalarında tema rengini özelleştirebileceksiniz. Onaltılık kodunuzu girdiğinizde Intune, [WCAG 2.0 standartlarına](http://www.w3.org/TR/WCAG20) göre metin rengi ile arka plan rengi arasında en yüksek düzeyde kontrast sağlayan metin rengini belirler. **Mobil uygulamalar** > **Şirket Portalı**’nda metin renginin ve bu renk ile şirket logonuzun önizlemesini görüntüleyebilirsiniz.
 
-### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Endpoint Protection ayarlarına yeni Windows Defender Credential Guard ayarları eklendi <!--1102252 --> 
+### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Endpoint Protection ayarlarına yeni Windows Defender Credential Guard ayarları eklendi <!--1102252 -->
 
-Yeni [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] ayarları, **Cihaz yapılandırması** > **Profiller** > **Uç nokta koruma** bölümüne eklenecek. Eklenecek ayarlar aşağıdaki gibidir: 
+Yeni [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] ayarları, **Cihaz yapılandırması** > **Profiller** > **Uç nokta koruma** bölümüne eklenecek. Eklenecek ayarlar aşağıdaki gibidir:
 
 - Platform Güvenlik Düzeyi: Bir sonraki yeniden başlatmada Platform Güvenlik Düzeyi’nin etkinleştirilip etkinleştirilmeyeceğini belirtin. Sanallaştırma tabanlı güvenlik, Güvenli Önyükleme gerektirir. Sanallaştırma tabanlı güvenlik, isteğe bağlı olarak doğrudan bellek erişimi (DMA) korumaları kullanımıyla etkinleştirilebilir. DMA korumaları, donanım desteği gerektirir ve yalnızca doğru yapılandırılmış cihazlarda etkinleştirilir.
-- Sanallaştırma Tabanlı Güvenlik: Bir sonraki yeniden başlatmada sanallaştırma tabanlı güvenliğin etkinleştirilip etkinleştirilmeyeceğini belirtin. 
-- Windows Defender Credential Guard: Sanallaştırma tabanlı güvenlik ile Credential Guard’ı etkinleştirerek, Güvenli Önyükleme ile Platform Güvenlik Düzeyi ve Sanallaştırma Tabanlı Güvenlik’in etkin olduğu bir sonraki yeniden başlatmada kimlik bilgilerinin korunmasına yardımcı olun. Kullanılabilir seçenekler **Devre dışı**, **UEFI kilidi ile etkin**, **Kilit olmadan etkin** ve **Yapılandırılmadı** şeklindedir. 
+- Sanallaştırma Tabanlı Güvenlik: Bir sonraki yeniden başlatmada sanallaştırma tabanlı güvenliğin etkinleştirilip etkinleştirilmeyeceğini belirtin.
+- Windows Defender Credential Guard: Sanallaştırma tabanlı güvenlik ile Credential Guard’ı etkinleştirerek, Güvenli Önyükleme ile Platform Güvenlik Düzeyi ve Sanallaştırma Tabanlı Güvenlik’in etkin olduğu bir sonraki yeniden başlatmada kimlik bilgilerinin korunmasına yardımcı olun. Kullanılabilir seçenekler **Devre dışı**, **UEFI kilidi ile etkin**, **Kilit olmadan etkin** ve **Yapılandırılmadı** şeklindedir.
   - “Devre dışı” seçeneği, “Kilit olmadan etkin” seçeneğiyle açılmış olan Credential Guard’ı uzaktan kapatır.
 
   - “UEFI kilidi ile etkin” seçeneği, Credential Guard’ın kayıt defteri anahtarı ile veya Grup İlkesi kullanılarak devre dışı bırakılamamasını sağlar. Bu ayarı kullandıktan sonra Credential Guard’ı devre dışı bırakmak için, UEFI’de belirtilen yapılandırmayı kaldırmak üzere Grup İlkesini “Devre Dışı” olarak ayarlamanız ve kullanıcısı fiziksel olarak mevcut olan her bir bilgisayardan güvenlik işlevselliğini kaldırmanız gerekir. UEFI yapılandırması devam ettiği sürece, Credential Guard etkindir.
@@ -208,7 +208,7 @@ Yeni Yerel Cihaz Güvenlik Seçeneği ayarlarını kullanarak Windows 10 cihazla
 
 ### <a name="new-printer-settings-for-education-profiles----1308900---"></a>Eğitim profilleri için yeni yazıcı ayarları <!-- 1308900 -->
 
-Eğitim profilleri için yeni ayarlar, **Yazıcılar** kategori: **Yazıcılar**, **Varsayılan yazıcı**, **Yeni yazıcı ekle** altında kullanılabilir olacak. 
+Eğitim profilleri için yeni ayarlar, **Yazıcılar** kategori: **Yazıcılar**, **Varsayılan yazıcı**, **Yeni yazıcı ekle** altında kullanılabilir olacak.
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>iOS uygulama sağlama yapılandırması <!-- 1581650 -->
 Güvenlik gruplarını dahil ederek veya dışlayarak, uygulamalarınızın süresinin dolmasını önlemek için iOS uygulama sağlama profilleri atayabileceksiniz.
@@ -265,5 +265,3 @@ Genel bir hata iletisi yerine, Android cihazı olan son kullanıcılar kolay, i�
 
 ### <a name="see-also"></a>Ayrıca bkz:
 Son geliştirmelere ilişkin ayrıntılar için bkz. [Microsoft Intune’daki Yenilikler](whats-new.md).
-
-

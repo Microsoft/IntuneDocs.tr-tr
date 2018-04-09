@@ -1,49 +1,42 @@
 ---
-title: "Microsoft Intune’da iOS cihazı uyumluluğu ilkesi oluşturma"
-titleSuffix: 
-description: "iOS cihazınıza, uyumlu olması için karşılaması istenen gereksinimleri belirtmek için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun."
-keywords: 
-author: msmimart
-ms.author: mimart
+title: Microsoft Intune - Azure'da iOS cihaz uyumluluk ilkesi oluşturma | Microsoft Docs
+description: E-posta hesabı girmek, jailbreak uygulanmış cihazları denetlemek, en düşük ve en yüksek işletim sistemini denetlemek ve parola uzunluğu ile cihazda işlem yapılmayan süre de dahil olmak üzere parola kısıtlamalarını ayarlamak için iOS cihazlarında Microsoft Intune cihaz uyumluluk ilkesi ayarlayın.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b024c846f9fc79fe214e3e90b094384455f2b086
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune'da iOS cihazları için cihaz uyumluluk ilkesi oluşturma
-
+# <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune'da iOS cihazları için cihaz uyumluluk ilkesi ekleme
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-iOS için Intune cihaz uyumluluk ilkesi, iOS cihazlarının uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlar. Cihaz uyumluluk ilkelerini koşullu erişimle birlikte kullandığınızda, şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri hakkında daha fazla bilgi edinmek ve uyumluluk ilkesi oluşturmadan önce ilgilenmeniz gereken önkoşulları öğrenmek için, [Cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md) konusuna bakın.
+Intune iOS cihaz uyumluluk ilkesi, iOS cihazlarının uyumlu olmak için uyması gereken kuralları ve ayarları tanımlar. Cihaz uyumluluk ilkelerini koşullu erişimle birlikte kullandığınızda, şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri hakkında daha fazla bilgi edinmek ve uyumluluk ilkesi oluşturmadan önce karşılamanız gereken önkoşulları öğrenmek için, [Cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md) konusuna bakın.
 
 Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır.
 
--------------------------------
-
-
 | **İlke ayarı** | **iOS 8.0 ve üzeri** |
 | --- | --- |
-| **PIN veya Parola yapılandırması** | Çözümlendi |   
+| **PIN veya Parola yapılandırması** | Çözümlendi |
 | **Cihaz şifrelemesi** | Çözümlendi (PIN ayarlanarak) |
 | **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | Karantinaya Alındı (ayar değil)
 | **E-posta profili** | Karantinaya Alındı |
 |**En düşük işletim sistemi sürümü** | Karantinaya Alındı |
-| **En yüksek işletim sistemi sürümü** | Karantinaya Alındı |  
-| **Windows durum kanıtlama** | Geçerli değil |  
-----------------------------
-
+| **En yüksek işletim sistemi sürümü** | Karantinaya Alındı |
+| **Windows durum kanıtlama** | Geçerli değil |
 
 **Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)
 
@@ -54,11 +47,11 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Azure Portal’da uyumluluk ilkesi oluşturma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-1. **Intune** bölmesinde **Cihaz uyumluluğu**’nu seçin. **Yönet**’in altında **İlkeler**'i ve **İlke Oluştur**'u seçin.
-2. Ad ve açıklama yazın ve bu ilkenin uygulanmasını istediğiniz platformu seçin.
-3. Burada **Sistem Güvenliği**, **Cihaz Durumu** ve **Cihaz Özelliği** ayarlarını belirtmek için **Uyumluluk gereksinimleri**’ni seçin. Bitirdiğinizde, **Tamam**’ı seçin.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+3. **Cihaz uyumluluğu** > **İlkeler** > **İlke Oluştur**'u seçin.
+4. Ad ile açıklama girin ve bu ilkenin uygulanmasını istediğiniz platformu seçin.
+5. **E-posta**, **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını girmek için **Ayarlar**'ı seçin. İşiniz bittiğinde **Tamam**’ı seçin.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -78,31 +71,7 @@ Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkey
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>Sistem güvenliği ayarları
-
-### <a name="password"></a>Parola
-
-- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek üzere bir parola girmelerini gerektirmek için **Evet** olarak ayarlayın. Parola kullanılan iOS cihazları şifrelenir.
-- **Basit parolalara izin ver**: Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmasına izin vermek için **Evet** olarak ayarlayın.
-- **Minimum parola uzunluğu**: Parolada bulunması gereken rakam veya karakter sayısı alt sınırını belirtin.
-- **Gerekli parola türü:** Kullanıcıların oluşturacağı parolanın **Alfasayısal** mı, yoksa **Sayısal** mı olacağını belirtin.
-- **Karakter kümesi sayısı alt sınırı:** **Gerekli parola türü** **Alfasayısal** olarak ayarlandıysa, bu ayar, parolanın içermesi gereken karakter kümesi sayısı alt sınırını belirtir. Dört karakter kümesi şunlardır:
-  - Küçük harfler
-  - Büyük harfler
-  - Simgeler
-  - Sayılar
-
-Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir.
-
-iOS cihazları için bu ayar, parolaya eklenmesi gereken özel karakterlerin (örneğin, **!** , **#**, **&amp;**) sayısını gösterir.
-
-- **Parola istenmeden önce herhangi bir işlem yapılmadan geçecek dakika cinsinden süre**: Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi belirtin.
-- **Parola kullanım süresi (gün):** Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
-- **Parola geçmişini anımsa:** Kullanıcının önceden kullanılan parolaları oluşturmasını engellemek için bu ayarı **Önceki parolaların yeniden kullanılmasını önle** ile birlikte kullanın.
-- **Önceki parolaların yeniden kullanılmasını önleme:** **Parola geçmişini anımsa** seçeneğini belirlediyseniz, önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin.
-- **Cihaz boşta durumundan çıkarken parola iste:** Bu ayarı, **Parola istenmeden önce herhangi bir işlem yapılmadan geçecek dakika cinsinden süre** ayarıyla birlikte kullanın. **Parola istenmeden önce herhangi bir işlem yapılmadan geçecek dakika cinsinden süre** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için kullanıcıdan bir parola girmesi istenir.
-
-### <a name="email-profile"></a>E-posta profili
+## <a name="email"></a>E-posta
 
 - **E-posta hesabı Intune tarafından yönetilmelidir:** Bu seçenek **Evet** olarak ayarlandığında, cihazın kendisine dağıtılan e-posta profilini kullanması gerekir. Aşağıdaki durumlarda cihaz uyumsuz olarak kabul edilir:
   - E-posta profili, uyumluluk ilkesi tarafından hedeflenen kullanıcı grubu dışındaki bir kullanıcı grubuna dağıtılır.
@@ -111,14 +80,34 @@ iOS cihazları için bu ayar, parolaya eklenmesi gereken özel karakterlerin (ö
 
 E-posta profili hakkında ayrıntılı bilgi için bkz. [Microsoft Intune ile e-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
 
-## <a name="device-health-settings"></a>Cihaz durumu ayarları
+## <a name="device-health"></a>Device health
 
-- **Cihaza jailbreak uygulanmamış veya kök erişim izni verilmemiş olmalıdır:** Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumlu olmaz.
+- **Jailbreak uygulanmış cihazlar**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumlu kabul edilmez.
+- **Cihazın Cihaz Tehdit Düzeyinde veya bu düzeyin altında olmasını gerekli kıl**: Cihazları uyumsuz olarak işaretlemek için maksimum tehdit düzeyini seçin. Örneğin tehdit düzeyini **Orta** olarak ayarlarsanız, orta, düşük veya güvenli düzeydeki cihazlar uyumlu olur. Tehdit düzeyi yüksek olan cihazları uyumsuzdur.
 
 ## <a name="device-properties"></a>Cihaz özellikleri
 
 - **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumlu değil olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Kullanıcı cihazını yükseltmeyi seçebilir. Bundan sonra, şirket kaynaklarına erişebilir.
-- **İzin verilen en yüksek işletim sistemi sürümü:** Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir ve kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
+- **İzin verilen en yüksek işletim sistemi sürümü**: Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir. Kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişemez.
+
+## <a name="system-security"></a>Sistem güvenliği
+
+### <a name="password"></a>Parola
+
+> [!NOTE]
+> iOS cihazına uyumluluk veya yapılandırma ilkesi uygulandıktan sonra her 15 dakikada bir kullanıcılardan bir geçiş kodu ayarlamaları istenir. Geçiş kodu ayarlanana kadar kullanıcılara sürekli bu istem gönderilir.
+
+- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek üzere bir parola girmelerini gerektirmek için **Evet** olarak ayarlayın. Parola kullanılan iOS cihazları şifrelenir.
+- **Basit parolalar**: Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmasına izin vermek için **Evet** olarak ayarlayın.
+- **Minimum parola uzunluğu**: Parolada bulunması gereken rakam veya karakter sayısı alt sınırını girin.
+- **Gerekli parola türü**: Kullanıcıların oluşturacağı parolanın **Alfasayısal** mı, yoksa **Sayısal** mı olacağını girin.
+- **Paroladaki alfasayısal olmayan karakter sayısı**: Parolada bulunması gereken simge karakterleri (&, #, %, !, vb.) sayısı alt sınırını girin.
+
+    Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir.
+
+- **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin.
+- **Parola kullanım süresi (gün):** Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
+- **Yeniden kullanılması engellenen eski parola sayısı**: Önceki parolalardan kaç tanesinin kullanılamayacağını girin.
 
 <!--- ## Next steps
 
