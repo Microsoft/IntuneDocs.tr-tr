@@ -1,4 +1,4 @@
----
+﻿---
 title: Şirketinizin destek birimine kayıt hatalarını gönderme | Microsoft Docs
 description: Yöneticinize kayıt hatalarını gönderme
 keywords: ''

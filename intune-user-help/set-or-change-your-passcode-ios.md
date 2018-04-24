@@ -1,4 +1,4 @@
----
+﻿---
 title: Geçiş kodunuzu ayarlama veya değiştirme | Microsoft Docs
 description: Geçiş kodunuzu ayarlama veya değiştirme
 keywords: ''
