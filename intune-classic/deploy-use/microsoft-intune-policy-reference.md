@@ -1,29 +1,29 @@
 ---
-title: "Yapılandırma ilkesi başvurusu"
-description: "Cihazlarınızı yönetirken hangi Microsoft Intune ilkesine ihtiyaç duyduğunuza karar vermek için bu konu başlığı altındaki bilgileri kullanın."
-keywords: 
+title: Yapılandırma ilkesi başvurusu
+description: Cihazlarınızı yönetirken hangi Microsoft Intune ilkesine ihtiyaç duyduğunuza karar vermek için bu konu başlığı altındaki bilgileri kullanın.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Microsoft Intune yapılandırma ilkesi başvurusu
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cihazlarınızı yönetirken hangi Microsoft Intune yapılandırma ilkesine ihtiyaç duyduğunuza karar vermek için bu konu başlığı altındaki bilgileri kullanın.
 
@@ -102,12 +102,13 @@ Yalnızca Windows Phone ve kayıtlı Windows cihazlar için geçerlidir.
 
 ## <a name="common-mobile-device-settings"></a>Ortak Mobil Cihaz Ayarları
 
-|İlke adı|Şunları yapmak istediğinizde kullanın|
-|---------------|------------------------|
-|**Exchange ActiveSync İlkesi**|Exchange ActiveSync tarafından yönetilen cihazlar için mobil cihaz güvenliğini ve işlev ayarlarını yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da Exchange ActiveSync ilkesi ayarları](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Mobil Cihaz Güvenlik İlkesi**|<ul><li>Şunları içeren mobil cihaz ayarlarını (tüm platformlar) yapılandırır:<br /><br /><ul><li>Güvenlik</li><li>Şifreleme</li><li>Sistem</li><li>E-posta</li><li>Uygulamalar</li></ul></li></ul>
+|                  İlke adı                   |                                                                                                                       Şunları yapmak istediğinizde kullanın                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Exchange ActiveSync İlkesi</strong>   | Exchange ActiveSync tarafından yönetilen cihazlar için mobil cihaz güvenliğini ve işlev ayarlarını yapılandırın.<br /><br />Ayrıntılar için bkz. [Microsoft Intune’da Exchange ActiveSync ilkesi ayarları](exchange-activesync-policy-settings-in-microsoft-intune.md). |
+| <strong>Mobil Cihaz Güvenlik İlkesi</strong> |                                  <ul><li>Şunları içeren mobil cihaz ayarlarını (tüm platformlar) yapılandırır:<br /><br /><ul><li>Güvenlik</li><li>Şifreleme</li><li>Sistem</li><li>E-posta</li><li>Uygulamalar</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune’da artık her cihaz platformu için ayrı **yapılandırma ilkeleri** vardır ve bu ilkeler kullanabileceğiniz en güncel ayarları içerir. Mobil cihaz güvenlik ilkesini kullanmaya devam edebilirsiniz ve var olan tüm dağıtımlar çalışmaya devam eder, ancak yeni yapılandırma ilkelerine geçmeyi en kısa sürede planlamanız gerekmektedir.<br />Ayrıntılar için bkz. [Microsoft Intune’da mobil cihaz güvenliği ilke ayarları](mobile-device-security-policy-settings-in-microsoft-intune.md).
+> Microsoft Intune’da artık her cihaz platformu için ayrı **yapılandırma ilkeleri** vardır ve bu ilkeler kullanabileceğiniz en güncel ayarları içerir. Mobil cihaz güvenlik ilkesini kullanmaya devam edebilirsiniz ve var olan tüm dağıtımlar çalışmaya devam eder, ancak yeni yapılandırma ilkelerine geçmeyi en kısa sürede planlamanız gerekmektedir.<br />Ayrıntılar için bkz. [Microsoft Intune’da mobil cihaz güvenliği ilke ayarları](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Windows bilgisayarlar için ilkeler Intune yazılım istemcisi tarafından yönetilir
 

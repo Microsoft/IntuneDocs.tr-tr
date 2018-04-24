@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5a346c321147656d748d3abde78575268b20e9ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Cihazları Microsoft Intune’da cihaz grubu eşleme ile kategorilere ayırma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cihazların yönetimini kolaylaştırmak için cihazları kendi tanımladığınız kategorilere göre otomatik olarak gruplara eklemek için Microsoft Intune **cihaz grubu eşleme** kullanın. 
 
@@ -67,10 +67,10 @@ Azure Active Directory tabanlı güvenlik gruplarının aşamalı olarak uygulan
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>1. Adım - Intune yönetim konsolunda cihaz kategorileri oluşturma
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’yi seçin.
-3. **Yönetim** çalışma alanında, **Mobil Cihaz Yönetimi**’ni genişletin ve ardından **Cihaz Kategorileri**’ni seçin.
-4. **Cihaz Kategorileri** sayfasında, cihaz kategorilerini yapılandırabileceğiniz bir liste göreceksiniz: 
-- Bir ad girip, ardından **Ekle**’ye tıklayarak bunu yeni bir cihaz kategorisi olarak ekleyebilirsiniz.
-- Ayrıca, bir kategori seçip ardından **Silebilirsiniz**.
+2. **Yönetim** çalışma alanında, **Mobil Cihaz Yönetimi**’ni genişletin ve ardından **Cihaz Kategorileri**’ni seçin.
+3. **Cihaz Kategorileri** sayfasında, cihaz kategorilerini yapılandırabileceğiniz bir liste göreceksiniz: 
+4. Bir ad girip, ardından **Ekle**’ye tıklayarak bunu yeni bir cihaz kategorisi olarak ekleyebilirsiniz.
+5. Ayrıca, bir kategori seçip ardından **Silebilirsiniz**.
 
 Adımda 2 Azure Active Directory güvenlik grupları oluştururken cihaz kategorisi adını kullanacaksınız.
 

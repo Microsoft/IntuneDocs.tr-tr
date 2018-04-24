@@ -1,35 +1,35 @@
 ---
-title: "Wi-Fi bağlantıları"
-description: "Kullanıcıların Wi-Fi ağlarınıza bağlanmasına yardımcı olmak için Wi-Fi profilleri kullanın."
-keywords: 
+title: Wi-Fi bağlantıları
+description: Kullanıcıların Wi-Fi ağlarınıza bağlanmasına yardımcı olmak için Wi-Fi profilleri kullanın.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5eebe251371d466421bfe936a1f991c988e490b0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Cihazları kurumsal Wi-Fi ağlarınıza bağlanmak üzere yapılandırma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcılara kablosuz ağ ayarlarını dağıtmak için kullanın. Bir Wi-Fi profili dağıttığınızda, kullanıcılarınız kurumsal Wi-Fi ağınıza ağı kendileri yapılandırmak zorunda kalmadan erişir.
 
 Örneğin, **Contoso Wi-Fi** adlı yeni bir Wi-Fi ağı kurdunuz ve tüm iOS cihazlarının bu ağa bağlanması ayarı yapmak istiyorsunuz. İşlem şöyledir:
 
-![Wi-Fi profili işlem özeti](..\media\wi-fi-process-diagram.png)
+![Wi-Fi profili işlem özeti](../media/wi-fi-process-diagram.png)
 
 1.   **Contoso Wi-Fi** kablosuz ağına bağlanmak için gerekli ayarları içeren bir Wi-Fi profili oluşturun.
 
@@ -67,23 +67,25 @@ Windows 8.1 veya Windows 10 masaüstü veya mobil işletim sistemi çalıştıra
 
 Bu ilke türü için önerilen ayar yok. Özel bir ilke oluşturmanız gerekir.
 
-3.  Profil için adı ve açıklamayı belirtin.
+3. Profil için adı ve açıklamayı belirtin.
 
 4. **Ağ Bağlantıları** değerlerini belirtin.
- - **SSID (Hizmet Kümesi Tanımlayıcısı)**: Kullanıcıların SSID bilgisi yerine ağ adını görmelerini istiyorsanız bu seçeneği belirleyin.
- - **Ağ adını (SSID) yayınlamadığında bağlan**: Cihazların, ağ listesinde görünmediğinde (gizli olduğu veya adını yayınlamadığı için) ağa bağlanmasına izin vermek istiyorsanız bu seçeneği belirleyin.
+   - **SSID (Hizmet Kümesi Tanımlayıcısı)**: Kullanıcıların SSID bilgisi yerine ağ adını görmelerini istiyorsanız bu seçeneği belirleyin.
+   - **Ağ adını (SSID) yayınlamadığında bağlan**: Cihazların, ağ listesinde görünmediğinde (gizli olduğu veya adını yayınlamadığı için) ağa bağlanmasına izin vermek istiyorsanız bu seçeneği belirleyin.
 
 5. Seçilen platform için **Güvenlik Ayarları** 'nı yapılandırın. Kullanılabilir ayarlar seçtiğiniz güvenlik türlerine bağlıdır. Tümü [Güvenlik ayarları](#security-settings) bölümünde açıklanmıştır.
 
 6. **Proxy Ayarlarını** yapılandırın (yalnızca iOS ve MAC OS X).
 
-    |Ayar adı|Daha fazla bilgi|Ne zaman kullanmalı|
-    |----------------|-------------------|-------------|
-    |**Bu Wi-Fi bağlantısı için proxy ayarları**|Proxy ayarları türünü seçin:<br /><br />-   **Hiçbiri** (varsayılan)<br />-   **El ile** - Proxy sunucusunun URL ve bağlantı noktası numarasını el ile belirtin.<br />-   **Otomatik** - Proxy sunucusunu yapılandırmak için bir yapılandırma dosyası kullanın.|Her zaman|
-    |**Proxy sunucu adresi** ve **Bağlantı noktası numarası**|Proxy sunucusunun URL ve bağlantı noktası numarasını belirtin.|**Bu Wi-Fi bağlantısı için proxy ayarları** değeri **El ile** olarak ayarlandıysa|
-    |**Proxy Sunucusu URL'si**|Proxy sunucusu ayarlarını içeren dosyanın URL'sini belirtin.|**Bu Wi-Fi bağlantısı için proxy ayarları** değeri **Otomatik** olarak ayarlandıysa|
 
-7.  Wi-Fi profilini kaydetme
+   |                              Ayar adı                              |                                                                                                                                Daha fazla bilgi                                                                                                                                 |                                            Ne zaman kullanmalı                                            |
+   |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+   |       <strong>Bu Wi-Fi bağlantısı için proxy ayarları</strong>        | Proxy ayarları türünü seçin:<br /><br />-   <strong>Hiçbiri</strong> (varsayılan)<br />-   <strong>El ile</strong> - Proxy sunucusunun URL ve bağlantı noktası numarasını el ile belirtin.<br />-   <strong>Otomatik</strong> - Proxy sunucusunu yapılandırmak için bir yapılandırma dosyası kullanın. |                                              Her zaman                                               |
+   | <strong>Proxy sunucu adresi</strong> ve <strong>Bağlantı noktası numarası</strong> |                                                                                                              Proxy sunucusunun URL ve bağlantı noktası numarasını belirtin.                                                                                                               |  <strong>Bu Wi-Fi bağlantısı için proxy ayarları</strong> değeri <strong>El ile</strong> olarak ayarlandıysa   |
+   |                   <strong>Proxy Sunucusu URL'si</strong>                    |                                                                                                      Proxy sunucusu ayarlarını içeren dosyanın URL'sini belirtin.                                                                                                       | <strong>Bu Wi-Fi bağlantısı için proxy ayarları</strong> değeri <strong>Otomatik</strong> olarak ayarlandıysa |
+
+
+7. Wi-Fi profilini kaydetme
 
 Yeni ilke, **İlke** çalışma alanının **Yapılandırma İlkeleri** düğümünde görüntülenir. Profili dağıtma hakkında bilgi için, bkz. **Sonraki adımlar**
 
@@ -177,5 +179,5 @@ Bu tablolar Android, iOS ve Mac OS X Wi-Fi profilleri için bulunan güvenlik ay
 |**Kimlik gizliliğini (Dış kimlik) etkinleştir**|Bir EAP kimlik isteğine yanıt olarak gönderilen metni belirtin. Bu metin herhangi bir değer olabilir.<br /><br />Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir. Ardından gerçek kimlik güvenli bir tünelde gönderilir.|**EAP türü** **PEAP**, **EAP-TTLS** veya **EAP-FAST** ise.|
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 Önceden paylaşılan anahtarla bir Wi-Fi profilinin nasıl oluşturulduğunu, [Önceden paylaşılan anahtar Wi-Fi profili](pre-shared-key-wi-fi-profile.md) başlığı altında öğrenebilirsiniz.

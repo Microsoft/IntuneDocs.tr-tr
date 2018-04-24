@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 273919a7f5a62ab6b7b625756da29d3b58339578
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: f6e5955b690eedf06872171fcc22eb86a0f7764e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Microsoft Graph’ta Intune API’lerine erişmek için Azure AD kullanma
 
@@ -118,13 +118,13 @@ Bu noktada, ayrıca:
 
     Bunu yapmak için:
 
-    1. Uygulama dikey penceresinden **Bildirim**’i seçin; böylece **Bildirimi Düzenle** dikey penceresi açılır.
+  1. Uygulama dikey penceresinden **Bildirim**’i seçin; böylece **Bildirimi Düzenle** dikey penceresi açılır.
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. `availableToOtherTenants` ayarının değerini `true` olarak değiştirin.
+  2. `availableToOtherTenants` ayarının değerini `true` olarak değiştirin.
 
-    3. Yaptığınız değişiklikleri kaydedin.
+  3. Yaptığınız değişiklikleri kaydedin.
 
 ## <a name="intune-permission-scopes"></a>Intune izin kapsamları
 

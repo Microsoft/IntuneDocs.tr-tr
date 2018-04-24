@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune için ağ gereksinimleri ve bant genişliği ayrıntıları"
-titlesuffix: 
-description: "Intune için ağ yapılandırma gereksinimlerini ve bant genişliği ayrıntılarını gözden geçirin."
-keywords: 
+title: Microsoft Intune için ağ gereksinimleri ve bant genişliği ayrıntıları
+titlesuffix: ''
+description: Intune için ağ yapılandırma gereksinimlerini ve bant genişliği ayrıntılarını gözden geçirin.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune ağ yapılandırma gereksinimleri ve bant genişliği
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Bu kılavuz Intune yöneticilerinin Intune hizmeti için ağ gereksinimlerini anlamasına yardımcı olur. Buradaki bilgileri bant genişliği gereksinimlerini ve proxy ayarları için gereken IP adresi ve bağlantı noktası ayarlarını anlamak için kullanabilirsiniz.
 
@@ -58,11 +58,13 @@ Bir ara sunucu, yinelenen indirmeleri azaltmak ve İnternet’ten alınan içeri
 
 Intune istemcileri için içerikleri önbelleğe alan bir proxy sunucunun kullandığı genel ayarlar aşağıda verilmiştir.
 
-|Ayar|Önerilen değer|Ayrıntılar|
-|-----------|---------------------|-----------|
-|Önbellek boyutu|5 GB ila 30 GB|Bu değer, ağınızdaki istemci bilgisayarların sayısına ve kullandığınız yapılandırmalara bağlı olarak değişir. Dosyaların çok kısa sürede silinmesini önlemek için ortamınıza yönelik önbellek boyutunu ayarlayın.|
-|Tek önbellek dosyası boyutu|950 MB|Bu ayar, tüm önbelleğe alan proxy sunucularında kullanılamayabilir.|
-|Önbelleğe alınacak nesne türleri|HTTP<br /><br />HTTPS<br /><br />BİT|Intune paketleri HTTP üzerinden Arka Plan Akıllı Aktarım Hizmeti (BITS) indirmesi tarafından alınan CAB dosyalarıdır.|
+
+|          Ayar           |           Önerilen değer           |                                                                                                  Ayrıntılar                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Önbellek boyutu         |             5 GB ila 30 GB             | Bu değer, ağınızdaki istemci bilgisayarların sayısına ve kullandığınız yapılandırmalara bağlı olarak değişir. Dosyaların çok kısa sürede silinmesini önlemek için ortamınıza yönelik önbellek boyutunu ayarlayın. |
+| Tek önbellek dosyası boyutu |                950 MB                 |                                                                     Bu ayar, tüm önbelleğe alan proxy sunucularında kullanılamayabilir.                                                                     |
+|   Önbelleğe alınacak nesne türleri    | HTTP<br /><br />HTTPS<br /><br />BİT |                                               Intune paketleri HTTP üzerinden Arka Plan Akıllı Aktarım Hizmeti (BITS) indirmesi tarafından alınan CAB dosyalarıdır.                                               |
+
 Önbelleğe içerik almak için proxy sunucu kullanma hakkında bilgi için proxy sunucunuzun çözümünü içeren belgelere bakın.
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>Bilgisayarlarda Arka Plan Akıllı Aktarım Hizmeti'ni kullanma
@@ -159,14 +161,16 @@ Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hiz
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri
-| Ana Bilgisayar Adı  | URL (IP adresi/alt ağ) | Protokol | Bağlantı Noktası | Cihaz |
-| --- | --- | --- | --- | --- |
-|  Yönetim Konsolu  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS ve macOS |
-| Yönetim Konsolu  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS ve macOS |
-| Yönetim Konsolu  | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS ve macOS  |
-| PI Sunucusu  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | Apple iOS ve macOS bulut mesajlaşma için. |
-| Cihaz Hizmetleri  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| Cihaz Hizmetleri  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| Cihaz Hizmetleri  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| Cihazlar (Internet/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 ve 443 | Yalnızca Apple. &#39;#&#39; 0 ile 200 arasında rastgele bir sayıdır. |
-| Cihazlar (Internet/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 veya 443 | Yalnızca Apple |
+
+|         Ana Bilgisayar Adı         |                                        URL (IP adresi/alt ağ)                                        |  Protokol  |     Bağlantı Noktası     |                          Cihaz                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      Yönetim Konsolu       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS ve macOS                    |
+|      Yönetim Konsolu       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS ve macOS                    |
+|      Yönetim Konsolu       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS ve macOS                    |
+|        PI Sunucusu         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Apple iOS ve macOS bulut mesajlaşma için.          |
+|     Cihaz Hizmetleri      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     Cihaz Hizmetleri      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     Cihaz Hizmetleri      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| Cihazlar (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 ve 443 | Yalnızca Apple. &#39;#&#39; 0 ile 200 arasında rastgele bir sayıdır. |
+| Cihazlar (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 veya 443   |                        Yalnızca Apple                         |
+

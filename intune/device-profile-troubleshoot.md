@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune - Azure’da cihaz profillerinde sorun giderme | Microsoft Docs"
-description: "Azure portalında Microsoft InTune ile ilgili bazı kullanıcılara veya cihazlara uygulanmayan profil değişiklikleri de dahil olmak üzere cihaz profilleriyle ilgili yaygın sorunlar, yeni ilkelerin cihazlara ne kadar süre uygulanacağı, birden çok ilke olduğunda hangi ayarların uygulandığı, bir profil silindiğinde veya kaldırıldığında ne olduğu ve daha fazlası"
-keywords: 
+title: Microsoft Intune - Azure’da cihaz profillerinde sorun giderme | Microsoft Docs
+description: Azure portalında Microsoft InTune ile ilgili bazı kullanıcılara veya cihazlara uygulanmayan profil değişiklikleri de dahil olmak üzere cihaz profilleriyle ilgili yaygın sorunlar, yeni ilkelerin cihazlara ne kadar süre uygulanacağı, birden çok ilke olduğunda hangi ayarların uygulandığı, bir profil silindiğinde veya kaldırıldığında ne olduğu ve daha fazlası
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73bac7c139a0dd42734ce6528172aeba2cb7b40c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da cihaz profilleri ile ilgili sık karşılaşılan sorunlar ve çözüm yolları
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune cihaz profillerini kullanarak sık karşılaşılan sorunları giderin.
 

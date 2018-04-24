@@ -1,29 +1,29 @@
 ---
-title: "Windows Phone 8.1 ilke ayarları"
-description: "Intune, Windows Phone 8.1 cihazlarında yapılandırabileceğiniz çeşitli yerleşik genel ayarlar sağlar. Bunlara ek olarak, Intune’da sağlanmayan özel ayarlar oluşturmak için OMA-URI değerleri belirtebilirsiniz."
-keywords: 
+title: Windows Phone 8.1 ilke ayarları
+description: Intune, Windows Phone 8.1 cihazlarında yapılandırabileceğiniz çeşitli yerleşik genel ayarlar sağlar. Bunlara ek olarak, Intune’da sağlanmayan özel ayarlar oluşturmak için OMA-URI değerleri belirtebilirsiniz.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 083ac6c4bbab6cdad9fd07ac68cdd7447f14fe5e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: b44215e301bb712cc4d27722515d2e51b124101b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows Phone 8.1 ilke ayarları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune, Windows Phone 8.1 cihazlarında yapılandırabileceğiniz çeşitli yerleşik genel ayarlar sağlar. Buna ek olarak, Intune’da bulunmayan özel ayarlar oluşturmak için Açık Mobil Ortaklığı Tekdüzen Kaynak Tanımlayıcısı (OMA-URI) değerleri belirtebilirsiniz.
 
@@ -43,18 +43,18 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 
 ### <a name="password-settings"></a>Parola ayarları
 
-|Ayar adı|Ayrıntılar|
-|----------------|------|
-|**Mobil cihazların kilidini açmak için bir parola iste**|Kullanıcıların cihazlarına erişmek için parola girmelerinin gerekip gerekmediğini belirtir.|
-|**Gerekli parola türü**|Gerekli parola türünü belirtir (alfasayısal veya yalnızca sayısal gibi).|
-|**Gerekli parola türü – Minimum karakter kümesi sayısı**|Parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir. Dört karakter kümesi vardır: küçük harfler, büyük harfler, rakamlar ve simgeler. Bununla birlikte, iOS cihazları için bu ayar, parolanın içermesi gereken simgelerin sayısını belirtir.|
-|**En düşük parola uzunluğu**|Parolada bulunması gereken minimum karakter sayısını belirtir.|
-|**Basit parolalara izin ver**|‘0000’ ve ‘1234’ gibi basit karakterlerin kullanılabileceğini belirtir.|
-|**Cihaz silinmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Aygıt temizlenmeden önce kullanıcının girdiği hatalı parolanın kaç kez girilebileceğini belirtir.|
-|**Ekran kapanmadan önce işlem yapılmadan geçen dakika sayısı**|Ekran otomatik olarak kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.|
-|**Parola kullanım süresi (gün)**|Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.|Evet|Evet|
-|**Parola geçmişini anımsa**|Kullanıcıların daha önce kullanılmış olan parolaları yeniden kullanmasını önlemek için önceden kullanılmış parolaların anımsanıp anımsanmayacağını belirtir.|
-|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılmış olan kaç parolanın anımsanacağını belirtir.|
+|                                           Ayar adı                                            |                                                                                                                                    Ayrıntılar                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Mobil cihazların kilidini açmak için bir parola iste</strong>                    |                                                                                                     Kullanıcıların cihazlarına erişmek için parola girmelerinin gerekip gerekmediğini belirtir.                                                                                                     |
+|                              <strong>Gerekli parola türü</strong>                              |                                                                                          Gerekli parola türünü belirtir (alfasayısal veya yalnızca sayısal gibi).                                                                                           |
+|            <strong>Gerekli parola türü – Minimum karakter kümesi sayısı</strong>             | Parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir. Dört karakter kümesi vardır: küçük harfler, büyük harfler, rakamlar ve simgeler. Bununla birlikte, iOS cihazları için bu ayar, parolanın içermesi gereken simgelerin sayısını belirtir. |
+|                             <strong>En düşük parola uzunluğu</strong>                              |                                                                                                 Parolada bulunması gereken minimum karakter sayısını belirtir.                                                                                                  |
+|                              <strong>Basit parolalara izin ver</strong>                              |                                                                                                     ‘0000’ ve ‘1234’ gibi basit karakterlerin kullanılabileceğini belirtir.                                                                                                     |
+|     <strong>Cihaz silinmeden önce izin verilen yinelenen oturum açma hatası sayısı</strong>      |                                                                                         Aygıt temizlenmeden önce kullanıcının girdiği hatalı parolanın kaç kez girilebileceğini belirtir.                                                                                         |
+|                <strong>Ekran kapanmadan önce işlem yapılmadan geçen dakika sayısı</strong>                 |                                                                                       Ekran otomatik olarak kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.                                                                                        |
+|                            <strong>Parola kullanım süresi (gün)</strong>                            |                                                                                                    Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.                                                                                                    |
+|                            <strong>Parola geçmişini anımsa</strong>                             |                                                                                     Kullanıcıların daha önce kullanılmış olan parolaları yeniden kullanmasını önlemek için önceden kullanılmış parolaların anımsanıp anımsanmayacağını belirtir.                                                                                      |
+| <strong>Parola geçmişini anımsa</strong> – <strong>Önceki parolaların tekrar kullanılmasını engeller</strong> |                                                                                                          Önceden kullanılmış olan kaç parolanın anımsanacağını belirtir.                                                                                                          |
 
 ### <a name="encryption-settings"></a>Şifreleme ayarları
 
@@ -119,14 +119,15 @@ Windows Phone 8.1 cihazlarında aşağıdaki ayarları yapılandırmak için Mic
 > [!NOTE]
 > Tek bir ilke yalnızca izin verilen uygulamaların veya engellenen uygulamaların listesini içerebilir. İkisi de aynı ilkede belirtemezsiniz.
 
-|Ayar adı|Ayrıntılar|
-|----------------|--------------------|
-|**Cihazların listelenen uygulamaları açmasını engelle**|Kullanıcıların yüklemesine ve çalıştırmasına izin verilmeyen, Intune tarafından yönetilmeyen uygulamaları listeler.|
-|**Cihazların yalnızca listelenen uygulamaları yüklemesine izin ver**|Kullanıcıların yüklemesine izin verilen uygulamaları listeler. Kullanıcılar, başka hiçbir uygulama yükleyemez. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.|
-|**Ekle**|Seçili listeye bir uygulama ekler. Tercih ettiğiniz adı, uygulamanın uygulama mağazasındaki URL'sini ve uygulama yayımcısını (isteğe bağlı) belirtin. Daha fazla yardım için, bu konunun Uygulama mağazalarının URL’lerini belirtme bölümüne bakın.
-|**Uygulamaları İçeri Aktar**|Belirttiğiniz uygulamaların virgülle ayrılmış bir listesini içeri aktarır. Dosyadaki biçimi, uygulama adını, yayımcıyı ve uygulama URL'sini kullanın.|
-|**Düzenle**|Seçilen uygulamanın adını, yayımcısını ve URL'sini düzenlemenize izin verir.|
-|**Sil**|Seçilen uygulamayı listeden siler.|
+|                          Ayar adı                          |                                                                                                      Ayrıntılar                                                                                                      |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Cihazların listelenen uygulamaları açmasını engelle</strong>   |                                                        Kullanıcıların yüklemesine ve çalıştırmasına izin verilmeyen, Intune tarafından yönetilmeyen uygulamaları listeler.                                                         |
+| <strong>Cihazların yalnızca listelenen uygulamaları yüklemesine izin ver</strong> |                                 Kullanıcıların yüklemesine izin verilen uygulamaları listeler. Kullanıcılar, başka hiçbir uygulama yükleyemez. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.                                 |
+|                      <strong>Ekle</strong>                      | Seçili listeye bir uygulama ekler. Tercih ettiğiniz adı, uygulamanın uygulama mağazasındaki URL'sini ve uygulama yayımcısını (isteğe bağlı) belirtin. Daha fazla yardım için, bu konunun Uygulama mağazalarının URL’lerini belirtme bölümüne bakın. |
+|                  <strong>Uygulamaları İçeri Aktar</strong>                  |                              Belirttiğiniz uygulamaların virgülle ayrılmış bir listesini içeri aktarır. Dosyadaki biçimi, uygulama adını, yayımcıyı ve uygulama URL'sini kullanın.                               |
+|                     <strong>Düzenle</strong>                      |                                                                          Seçilen uygulamanın adını, yayımcısını ve URL'sini düzenlemenize izin verir.                                                                          |
+|                    <strong>Sil</strong>                     |                                                                                      Seçilen uygulamayı listeden siler.                                                                                      |
+
 > [!IMPORTANT]
 > Windows Phone 8.1 cihazları için izin verilen uygulamalar listesini belirtirseniz, Şirket Portalı uygulamasını bu listeye eklemelisiniz; eklemezseniz uygulama engellenir.
 
@@ -170,5 +171,5 @@ Windows Phone cihazlar için OMA-URI ayarlarını oluşturmanıza yardımcı olm
     |**OMA-URI (büyük küçük harfe duyarlı)**|Bir ayar sağlamak istediğiniz OMA-URI’yi belirtin.|
     |**Değer**|Önceden belirttiğiniz OMA-URI ile ilişkilendirilecek değeri belirtin.|
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

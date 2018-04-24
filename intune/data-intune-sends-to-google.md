@@ -1,29 +1,29 @@
 ---
-title: "Intune’un Google’a gönderdiği veriler"
+title: Intune’un Google’a gönderdiği veriler
 titleSuffix: Microsoft Intune
-description: "Intune’un Google’a gönderdiği verilerin listesi."
-keywords: 
+description: Intune’un Google’a gönderdiği verilerin listesi.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a5c3bec4-18ed-11e8-accf-0ed5f89f718b
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63f1b07d13daad7512dff8e53f9acbafa7bffdd3
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 78fef57849b8742bb10ece1717234af5cce3f4ba
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-intune-sends-to-google"></a>Intune’un Google’a gönderdiği veriler
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bir cihazda Android cihaz yönetimi etkinleştirildiğinde Microsoft Intune, Google ile bir bağlantı kurar ve Google ile kullanıcı ve cihaz bilgilerini paylaşır. Microsoft Intune’un bağlantı kurabilmesi için önce bir Google hesabı oluşturmanız gerekir.
 

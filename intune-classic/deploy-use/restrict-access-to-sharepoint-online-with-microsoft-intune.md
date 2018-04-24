@@ -1,29 +1,29 @@
 ---
-title: "SharePoint Online'ı koruma"
-description: "SharePoint Online’daki şirket verilerini korumak ve erişimi denetlemek için koşullu erişim kullanın."
-keywords: 
+title: SharePoint Online'ı koruma
+description: SharePoint Online’daki şirket verilerini korumak ve erişimi denetlemek için koşullu erişim kullanın.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f86508d9b187e0026a74c4e82e94cdd5a4d29c3a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2b7285c272efac8eab406393b0b896795fa5d8ed
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Microsoft Intune ile SharePoint Online’a erişimi koruma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 SharePoint Online’da bulunan dosyalara erişimi denetlemek için Microsoft Intune koşullu erişimini kullanın.
 Koşullu erişim iki bileşenden oluşur:
@@ -81,16 +81,16 @@ Aşağıdakiler desteklenir:
 Aşağıdakiler desteklenir:
 - Windows 8.1 ve üzeri (Bilgisayarlar Intune’a kaydedildiğinde)
 - Windows 7.0, Windows 8.1 veya Windows 10 (Bilgisayarlar etki alanına katıldığında),
-> [!NOTE]
->Windows 10 bilgisayarlar ile koşullu erişim kullanmak için bu bilgisayarları Windows 10 Yıldönümü Güncelleştirmesi ile güncelleştirmeniz gerekir.
+  > [!NOTE]
+  >Windows 10 bilgisayarlar ile koşullu erişim kullanmak için bu bilgisayarları Windows 10 Yıldönümü Güncelleştirmesi ile güncelleştirmeniz gerekir.
 
   - Etki alanına katılmış bilgisayarları, Azure Active Directory’ye [otomatik olarak kaydedilecek](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) şekilde ayarlamanız gerekir. Azure AD Cihaz Kayıt hizmeti, Intune ve Office 365 müşterileri için otomatik olarak etkinleştirilir. ADFS Cihaz Kayıt hizmetini zaten dağıtan müşteriler, kayıtlı cihazlarını şirket içi Active Directory'de görmez.
 
   - İlke bir etki alanına katılmayı gerektirecek şekilde ayarlanmışsa ve bilgisayar etki alanına katılmamışsa, BT yöneticisine başvurulması gerektiğini belirten bir ileti görüntülenir.
 
   - İlke bir etki alanına katılmayı veya uyumluluğu gerektirecek şekilde ayarlandıysa ve bilgisayar iki gereksinimi de karşılamıyorsa, Şirket Portalı uygulamasını yükleme ve kaydetme yönergelerini içeren bir ileti görüntülenir.
-  >[!NOTE]
-  >Intune bilgisayar istemcisi çalıştıran bilgisayarlarda koşullu erişim desteklenmez.
+    >[!NOTE]
+    >Intune bilgisayar istemcisi çalıştıran bilgisayarlarda koşullu erişim desteklenmez.
 
 [Office 365 modern kimlik doğrulamasının etkin olması](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) ve en son Office güncelleştirmelerine sahip olması gerekir.
 
@@ -110,7 +110,7 @@ Bir SharePoint Online ilkesinde iki grup türü belirtebilirsiniz:
 
 Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Adım 2: Uyumluluk ilkesi yapılandırma ve dağıtma
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2. Adım: Uyumluluk ilkesi yapılandırma ve dağıtma
 Bu işlemi gerçekleştirmediyseniz, bir uyumluluk ilkesi oluşturun ve bu ilkeyi SharePoint Online ilkesinde hedeflenen kullanıcılara dağıtın.
 
 > [!NOTE]
@@ -132,24 +132,24 @@ Hazır olduğunuzda **3. Adım**’a geçin.
 > Azure AD yönetim konsolunda Intune cihazları için koşullu erişim ilkesi de oluşturabilirsiniz (ilke Azure AD’de **cihaz tabanlı koşullu erişim ilkesi** olarak adlandırılır). Ayrıca, çok faktörlü kimlik doğrulaması gibi diğer koşullu erişim ilkeleri de oluşturabilirsiniz. Salesforce ve Box gibi Azure AD tarafından desteklenen kurumsal üçüncü taraf uygulamaları için de koşullu erişim ilkeleri ayarlayabilirsiniz. Daha fazla ayrıntı için bkz. [Azure Active Directory bağlı uygulamalarda erişim denetimi için Azure Active Directory cihaz tabanlı koşullu erişim ilkesini ayarlama](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **SharePoint Online İlkesi**’ni seçin.
-![SharePoint Online İlkesi sayfasının ekran görüntüsü](../media/mdm-ca-spo-policy-configuration.png)
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **SharePoint Online İlkesi**’ni seçin.
+   ![SharePoint Online İlkesi sayfasının ekran görüntüsü](../media/mdm-ca-spo-policy-configuration.png)
 
-2.  **SharePoint Online için koşullu erişim ilkesini etkinleştir**’i seçin.
+2. **SharePoint Online için koşullu erişim ilkesini etkinleştir**’i seçin.
 
-3.  **Uygulama erişimi** altında aşağıdakilere koşullu erişim ilkesini uygulamayı seçebilirsiniz:
+3. **Uygulama erişimi** altında aşağıdakilere koşullu erişim ilkesini uygulamayı seçebilirsiniz:
 
-    -   **Tüm platformlar**
+   - **Tüm platformlar**
 
-        Bu seçenek, **SharePoint Online**’a erişmek için kullanılan tüm cihazların Intune’a kaydedilmesini ve ilkelerle uyumlu olmasını gerektirir. **Modern kimlik doğrulaması** kullanan tüm istemci uygulamaları, koşullu erişim ilkesine bağlıdır. Platform şu anda Intune tarafından desteklenmiyorsa, **SharePoint Online**’a erişim engellenir.
+     Bu seçenek, **SharePoint Online**’a erişmek için kullanılan tüm cihazların Intune’a kaydedilmesini ve ilkelerle uyumlu olmasını gerektirir. **Modern kimlik doğrulaması** kullanan tüm istemci uygulamaları, koşullu erişim ilkesine bağlıdır. Platform şu anda Intune tarafından desteklenmiyorsa, **SharePoint Online**’a erişim engellenir.
 
-        **Tüm platformlar** seçeneğinin belirlenmesi, Azure Active Directory’nin bu ilkeyi, istemci uygulaması tarafından bildirilen platformdan bağımsız olarak tüm kimlik doğrulama isteklerine uygulayacağı anlamına gelir. Aşağıdakiler dışında tüm platformların kaydolması ve uyumlu hale gelmesi gerekir:
-        *   Windows cihazların, kaydolması ve uyumlu hale gelmesi, şirket içi Active Directory ile etki alanının birleşik olması veya her ikisi gerekir.
-        * Mac gibi desteklenmeyen platformlar. Ancak, bu platformlardan gelen, modern kimlik doğrulaması kullanan uygulamalar yine de engellenir.
+     **Tüm platformlar** seçeneğinin belirlenmesi, Azure Active Directory’nin bu ilkeyi, istemci uygulaması tarafından bildirilen platformdan bağımsız olarak tüm kimlik doğrulama isteklerine uygulayacağı anlamına gelir. Aşağıdakiler dışında tüm platformların kaydolması ve uyumlu hale gelmesi gerekir:
+     *   Windows cihazların, kaydolması ve uyumlu hale gelmesi, şirket içi Active Directory ile etki alanının birleşik olması veya her ikisi gerekir.
+     * Mac gibi desteklenmeyen platformlar. Ancak, bu platformlardan gelen, modern kimlik doğrulaması kullanan uygulamalar yine de engellenir.
 
-    -   **Belirli platformlar**
+   - **Belirli platformlar**
 
-         Koşullu erişim ilkesi, belirttiğiniz platformlarda modern kimlik doğrulaması kullanan tüm istemci uygulamaları için geçerlidir.
+      Koşullu erişim ilkesi, belirttiğiniz platformlarda modern kimlik doğrulaması kullanan tüm istemci uygulamaları için geçerlidir.
 
      Windows bilgisayarları için bir bilgisayar etki alanına katılmış veya Intune ile kaydedilmiş ve uyumlu olmalıdır. Aşağıdaki gereksinimleri ayarlayabilirsiniz:
 
@@ -157,28 +157,28 @@ Hazır olduğunuzda **3. Adım**’a geçin.
 
      -   **Cihazlar uyumlu olmalıdır.** Bilgisayarların Intune ile kaydedilmiş ve uyumlu olmasını zorunlu tutmak için bu seçeneği belirtin. Bilgisayar kayıtlı değilse, kaydetme yönergelerini içeren bir ileti görüntülenir.
 
-4.   SharePoint Online ve OneDrive İş’e **Tarayıcı erişimi** altında, Exchange Online’a yalnızca desteklenen tarayıcılar üzerinden erişime izin vermeyi seçebilirsiniz: Safari (iOS) ve Chrome (Android). Diğer tarayıcılardan erişim engellenir. OneDrive için Uygulama erişimi için seçtiğiniz platform kısıtlamaları burada da geçerli olur.
+4. SharePoint Online ve OneDrive İş’e **Tarayıcı erişimi** altında, Exchange Online’a yalnızca desteklenen tarayıcılar üzerinden erişime izin vermeyi seçebilirsiniz: Safari (iOS) ve Chrome (Android). Diğer tarayıcılardan erişim engellenir. OneDrive için Uygulama erişimi için seçtiğiniz platform kısıtlamaları burada da geçerli olur.
 
-  **Android** cihazlarda, kullanıcılar tarayıcı erişimini etkinleştirmelidir. Bunu yapmak için bir kullanıcı kaydolan cihazda **Tarayıcı Erişimini Etkinleştir** seçeneğini etkinleştirmelidir:
-  1.    **Şirket Portalı** uygulamasını açın.
-  2.    Üç nokta (...) veya donanım menüsü düğmesinden **Ayarlar** sayfasına gidin.
-  3.    **Tarayıcı Erişimi Etkinleştir** düğmesine basın.
-  4.    Chrome tarayıcıda, Office 365 oturumunu kapatın ve Chrome’u yeniden başlatın.
+   **Android** cihazlarda, kullanıcılar tarayıcı erişimini etkinleştirmelidir. Bunu yapmak için bir kullanıcı kaydolan cihazda **Tarayıcı Erişimini Etkinleştir** seçeneğini etkinleştirmelidir:
+   1.    **Şirket Portalı** uygulamasını açın.
+   2.    Üç nokta (...) veya donanım menüsü düğmesinden **Ayarlar** sayfasına gidin.
+   3.    **Tarayıcı Erişimi Etkinleştir** düğmesine basın.
+   4.    Chrome tarayıcıda, Office 365 oturumunu kapatın ve Chrome’u yeniden başlatın.
 
-  **iOS** ve **Android** platformlarında, Azure Active Directory, cihazın hizmete erişmek amacıyla kullanıldığını belirlemek için cihaza bir Aktarım Katmanı Güvenliği (TLS) sertifikası yayımlar. Cihaz, sertifikayı aşağıdaki ekran görüntülerinde görüleceği gibi kullanıcıya sertifikayı seçmesi için bir istemle ekrana getirir. Kullanıcının tarayıcıyı kullanabilmesi için bu sertifikayı seçmesi gerekir.
+   **iOS** ve **Android** platformlarında, Azure Active Directory, cihazın hizmete erişmek amacıyla kullanıldığını belirlemek için cihaza bir Aktarım Katmanı Güvenliği (TLS) sertifikası yayımlar. Cihaz, sertifikayı aşağıdaki ekran görüntülerinde görüleceği gibi kullanıcıya sertifikayı seçmesi için bir istemle ekrana getirir. Kullanıcının tarayıcıyı kullanabilmesi için bu sertifikayı seçmesi gerekir.
 
-  **Android**
+   **iOS**
 
-  ![Bir iPad cihazda sertifika komut isteminin ekran görüntüsü](../media/mdm-browser-ca-ios-cert-prompt.png)
+   ![Bir iPad cihazda sertifika komut isteminin ekran görüntüsü](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Outlook Web Access (OWA)**
+   **Android**
 
-  ![Android cihazda sertifika istemi ekran görüntüsü](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  **Hedeflenen Gruplar** altında, ilkenin geçerli olacağı Azure Active Directory güvenlik gruplarını seçmek için **Değiştir**’i seçin. Bunu tüm kullanıcılara veya yalnızca seçilmiş bir kullanıcı grubuna hedefleyebilirsiniz.
+   ![Android cihazda sertifika istemi ekran görüntüsü](../media/mdm-browser-ca-android-cert-prompt.png)
+5. **Hedeflenen Gruplar** altında, ilkenin geçerli olacağı Azure Active Directory güvenlik gruplarını seçmek için **Değiştir**’i seçin. Bunu tüm kullanıcılara veya yalnızca seçilmiş bir kullanıcı grubuna hedefleyebilirsiniz.
 
-6.  **Muaf Tutulan Gruplar** altında, bu ilkeden muaf tutulan Active Directory güvenlik gruplarını seçmek için isteğe bağlı olarak **Değiştir**’i seçin.
+6. **Muaf Tutulan Gruplar** altında, bu ilkeden muaf tutulan Active Directory güvenlik gruplarını seçmek için isteğe bağlı olarak **Değiştir**’i seçin.
 
-7.  İşiniz bittiğinde **Kaydet**’i seçin.
+7. İşiniz bittiğinde **Kaydet**’i seçin.
 
 Koşullu erişim ilkesini dağıtmanız gerekmez, hemen geçerli olur.
 
@@ -193,5 +193,5 @@ Herhangi bir mobil cihaz grubu seçin. Ardından, **Cihazlar** sekmesinde aşağ
 
 -   **AAD ile kaydedilen ve uyumlu olan cihazlar**. Bu cihazlar SharePoint Online’a erişebilir.
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ile e-posta ve O365 hizmetlerine erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)

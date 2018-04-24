@@ -1,27 +1,27 @@
 ---
-title: "Android çalıştıran cihazlar için Microsoft Intune Wi-Fi ayarlarını yapılandırma"
-titleSuffix: 
-description: "Android ve Android for Work çalıştıran cihazlarda Intune Wi-Fi yapılandırma ayarlarını öğrenin."
-keywords: 
+title: Android çalıştıran cihazlar için Microsoft Intune Wi-Fi ayarlarını yapılandırma
+titleSuffix: ''
+description: Android ve Android for Work çalıştıran cihazlarda Intune Wi-Fi yapılandırma ayarlarını öğrenin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d327c2d3cadf441f74e35af86b19438159225771
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c110121ceb3d7ff871078c39f73b17606e2e7f13
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android ve Android for Work çalıştıran cihazlar için Microsoft Intune'da Wi-Fi ayarlarını yapılandırma  
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu makalede, Android ve Android for Work çalıştıran cihazlar için Microsoft Intune’da yapılandırabileceğiniz Wi-Fi ayarları gösterilir.
 
@@ -58,7 +58,8 @@ Aşağıdaki Wi-Fi ayarları hem Android hem de Android for Work cihazları içi
 #### <a name="client-authentication"></a>İstemci Kimlik Doğrulaması
 
 
-|Ayar adı|Daha fazla bilgi|Şu durumlarda kullanın|
-|----------|--------------|----------|
-|**İstemci kimlik doğrulaması için istemci sertifikası (Kimlik sertifikası)**|Bağlantı kimliğini doğrulamak için kullanılan SCEP veya PKCS sertifika profilini seçin.|EAP türü **EAP-TLS**’dir.|
-|**Kimlik doğrulama yöntemi**|Bağlantı için kimlik doğrulama yöntemini seçin:<br>Sunucuya gösterilen kimlik sertifikası olan SCEP veya PKCS istemci sertifikasını seçmek için - **Sertifikalar**.<br><br>Farklı bir kimlik doğrulama yöntemi belirtmek için - **Kullanıcı Adı ve Parola**. <br><br>**Kullanıcı Adı ve Parola**’yı seçerseniz, şunları yapılandırın:<br><br>-  **EAP dışı yöntem (iç kimlik)**, sonra da bağlantının kimliğini nasıl doğrulayacağınızı belirtmek için aşağıdakilerden birini seçin:<br>- **Yok**<br>- **Şifrelenmemiş parola (PAP)**<br>- **Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**<br>Mevcut seçenekler, seçtiğiniz EAP türüne bağlıdır.<br><br>**ve**<br><br>- **Kimlik gizliliği (dış kimlik)** - EAP kimlik isteğine yanıt olarak gönderilen metni belirtin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.|EAP türü **EAP-TTLS** veya **PEAP**’dir.|
+|                                     Ayar adı                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Daha fazla bilgi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            Şu durumlarda kullanın                            |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| <strong>İstemci kimlik doğrulaması için istemci sertifikası (Kimlik sertifikası)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Bağlantı kimliğini doğrulamak için kullanılan SCEP veya PKCS sertifika profilini seçin.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |              EAP türü <strong>EAP-TLS</strong>’dir.              |
+|                        <strong>Kimlik doğrulama yöntemi</strong>                        | Bağlantı için kimlik doğrulama yöntemini seçin:<br>Sunucuya gösterilen kimlik sertifikası olan SCEP veya PKCS istemci sertifikasını seçmek için - <strong>Sertifikalar</strong>.<br><br>Farklı bir kimlik doğrulama yöntemi belirtmek için - <strong>Kullanıcı Adı ve Parola</strong>. <br><br><strong>Kullanıcı Adı ve Parola</strong>’yı seçerseniz, şunları yapılandırın:<br><br>-  <strong>EAP dışı yöntem (iç kimlik)</strong>, sonra da bağlantının kimliğini nasıl doğrulayacağınızı belirtmek için aşağıdakilerden birini seçin:<br>- <strong>Yok</strong><br>- <strong>Şifrelenmemiş parola (PAP)</strong><br>- <strong>Karşılıklı Kimlik Doğrulama Protokolü (CHAP)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP Sürüm 2 (MS-CHAP v2)</strong><br>Mevcut seçenekler, seçtiğiniz EAP türüne bağlıdır.<br><br><strong>ve</strong><br><br>- <strong>Kimlik gizliliği (dış kimlik)</strong> - EAP kimlik isteğine yanıt olarak gönderilen metni belirtin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir. | EAP türü <strong>EAP-TTLS</strong> veya <strong>PEAP</strong>’dir. |
+

@@ -1,36 +1,36 @@
 ---
-title: "Azure portalında Intune’a giriş"
-titlesuffix: 
-description: "Microsoft Intune Azure portalında kullanılabilir. Azure portalında Intune hakkındaki temel bilgileri edinin."
-keywords: 
+title: Azure portalında Intune’a giriş
+titlesuffix: ''
+description: Microsoft Intune Azure portalında kullanılabilir. Azure portalında Intune hakkındaki temel bilgileri edinin.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure portalında Microsoft Intune’a giriş
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Diğer Azure hizmetleri gibi Microsoft Intune da Azure portalında kullanılabilir. Azure portalında **Intune**’u seçerek kuruluşunuzun mobil cihazlarını, bilgisayarlarını ve uygulamalarını yönetebilirsiniz.
 
->[!NOTE] 
+> [!NOTE]
 > Microsoft Intune’un önceki bir sürümünü kullandıysanız aşağıdaki bilgiler işinize yarayabilir:
-    * [Özelliklerim Azure’da nereye gitti?](ui-changes.md) size, Azure’a taşınma sonucu değişmiş olan iş akışları ve kullanıcı arabirimlerini gösteren bir başvurudur.
-    * [Azure portalında klasik Intune grupları](groups-get-started.md), grup yönetimi için Azure Active Directory güvenlik gruplarına geçmiş olmanın olası sonuçlarını açıklar.
+>     * [Özelliklerim Azure’da nereye gitti?](ui-changes.md) size, Azure’a taşınma sonucu değişmiş olan iş akışları ve kullanıcı arabirimlerini gösteren bir başvurudur.
+>     * [Azure portalında klasik Intune grupları](groups-get-started.md), grup yönetimi için Azure Active Directory güvenlik gruplarına geçmiş olmanın olası sonuçlarını açıklar.
 
 Azure portalında Microsoft Intune deneyiminin en önemli özellikleri şunlardır:
 

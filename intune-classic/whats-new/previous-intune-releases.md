@@ -2,8 +2,8 @@
 title: Önceki sürümler
 description: ''
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/13/2017
 ms.topic: article
@@ -14,17 +14,17 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76e53cabba9b684170d659ae5b8ef884bfe9abaa
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 57b2ab83f356eac27f668908a9a14b4f9310da19
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="previous-intune-releases"></a>Önceki Intune sürümleri
 
 Bu sayfa, [Microsoft Intune'daki Yenilikler](whats-new-in-microsoft-intune.md) sayfasında yapılan son duyuruların bir listesidir.
 
-[!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+[!INCLUDE [wit_nextref](../includes/whats-new-last-six-months.md)]
 
 ## <a name="july-2016"></a>Temmuz 2016
 
@@ -94,12 +94,12 @@ Intune’un hizmet durumu bilgileri, diğer Microsoft hizmetleriyle birlikte mer
     * Intune tarafından yönetiliyor olmalıdır
     * Dağıtılmış tüm Intune uyumluluk ilkeleriyle uyumlu olmalıdır
 
- Uyumsuz cihazları kullanan son kullanıcıların erişim elde etmek için kaydolması ve uyumluluk sorunlarını gidermesi istenir.
+  Uyumsuz cihazları kullanan son kullanıcıların erişim elde etmek için kaydolması ve uyumluluk sorunlarını gidermesi istenir.
 - **Tarayıcı için koşullu erişim.** [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) için, yalnızca yönetilen ve uyumlu iOS ile Android cihazlarda desteklenen web tarayıcılarından erişilebilmelerini sağlayacak bir koşullu erişim ilkesi ayarlayabilirsiniz. iOS ve Android cihazlarıyla Outlook Web Access (OWA) ve SharePoint sitelerinde oturum açmayı deneyen son kullanıcılardan, oturum açma işlemini tamamlayabilmek için önce cihazlarını Intune’a kaydetmeleri ve tüm uyumsuzluk sorunlarını çözmeleri istenecektir.
-<!---TFS 1175844--->
+  <!---TFS 1175844--->
 
 - **Dynamics CRM Online koşullu erişimi destekler.** [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) için, yalnızca yönetilen ve uyumlu iOS ile Android cihazları tarafından erişilebilmelerini sağlayacak bir koşullu erişim ilkesi ayarlayabilirsiniz. iOS ve Android’de Dynamics CRM mobil uygulamasında oturum açmaya çalışan son kullanıcılardan, oturum açma işlemini tamamlanabilmek için Intune’a kaydolmaları ve tüm uyumsuzluk sorunlarını çözmeleri istenecektir.
-<!---TFS1295358--->
+  <!---TFS1295358--->
 
 ### <a name="intune-company-portal-updates"></a>Intune Şirket Portalı güncelleştirmeleri
 
@@ -180,19 +180,19 @@ Bu özelliklerin tümü, karma müşteriler için de desteklenmektedir (Intune i
 
 ### <a name="app-management"></a>Uygulama yönetimi
 - **MAM kullanıcı uyumu.**
-Artık Azure Active Directory (AAD) kiracınızdaki herhangi bir kullanıcı için, uygulama yönetimi ilkelerinizin [durumunu](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) görüntüleyebilirsiniz. Buna aşağıdakiler dahildir:
-   - Cihazlar
-   - Cihazdaki uygulamalar
+  Artık Azure Active Directory (AAD) kiracınızdaki herhangi bir kullanıcı için, uygulama yönetimi ilkelerinizin [durumunu](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) görüntüleyebilirsiniz. Buna aşağıdakiler dahildir:
+  - Cihazlar
+  - Cihazdaki uygulamalar
 
-   Durum değerleri:
+    Durum değerleri:
 
-   **İade**: İlkenin kullanıcıya dağıtıldığını ve uygulamanın iş bağlamında kullanıldığını ve ilkeyi başarıyla aldığını gösterir.
+    **İade**: İlkenin kullanıcıya dağıtıldığını ve uygulamanın iş bağlamında kullanıldığını ve ilkeyi başarıyla aldığını gösterir.
 
     **İade değil**: İlkenin kullanıcıya dağıtıldığını, ancak uygulamanın o zamandan bu yana iş bağlamında kullanılmadığını gösterir.
 
 
 - **Outlook kişilerinin eşitlenmesini önlemek için MAM denetimleri (Android).**
-[Mobil uygulama yönetimi](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune) için yeni bir ayar kullanılabilir durumda, yerel adres defterine kaydedilmiş kişiler kaldırılacak. Bu yeni ayar başlangıçta Android cihazlarda Outlook uygulaması tarafından desteklenmektedir.
+  [Mobil uygulama yönetimi](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune) için yeni bir ayar kullanılabilir durumda, yerel adres defterine kaydedilmiş kişiler kaldırılacak. Bu yeni ayar başlangıçta Android cihazlarda Outlook uygulaması tarafından desteklenmektedir.
 
 ### <a name="device-management"></a>Cihaz yönetimi
 - **Şirkete ait cihazlar için telefon numarası kimliği.** “Şirket” olarak sınıflandırılmış telefonlar artık, örneğin bir mobil cihaz envanter raporu çalıştırdığınızda, tam telefon numaralarıyla tanımlanır. BYOD telefon numaraları, **** ile gizlenmeye devam edilecektir, yalnızca 4 hane görüntülenmektedir.
@@ -212,6 +212,6 @@ Artık Azure Active Directory (AAD) kiracınızdaki herhangi bir kullanıcı iç
 
 Bu durumlar eklenmeden önce, bir uygulamanın yüklenmesi uzun sürdüğünde, yalnızca, ekranda saatlerce kalabilecek “Yükleniyor” durumu gördükleri için kullanıcıların kafası karışıyordu. Yeni durumların eklenmesi, destek çağırmak yerine, kullanıcıların artık “Cihazın eşitlenmesi bekleniyor" bağlantısına dokunabileceği ve eşitleme işleminin devam etmesini zorlamak için yönergeleri izleyebileceği anlamına geliyor.
 
->[!div class="step-by-step"]
-
->[&larr; **Intune’daki yenilikler**](whats-new-in-microsoft-intune.md)    
+> [!div class="step-by-step"]
+> 
+> [&larr; **Intune’daki yenilikler**](whats-new-in-microsoft-intune.md)    

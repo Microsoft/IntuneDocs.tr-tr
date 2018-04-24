@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 79f720af293b6062e140fac9341f97a55bf598fe
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c4c98c6b279ecc99d2220a7e5071a1f92af1ea8b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>Apple Configurator kullanarak iOS cihazlarını doğrudan kaydetme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) aracı kullanarak şirketin sahip olduğu iOS cihazlarının kaydedilmesini destekler. Bu işlem cihazı fabrika ayarlarına sıfırlamaz ve önceden tanımlanmış bir ilkeyle kaydeder. Bu yöntem, **Kullanıcı benzeşimi yok** ayarına sahip cihazlar içindir ve kurumsal kayıt kurulumu için iOS cihazını USB ile bir Mac bilgisayara bağlamanız gerekir.
 
@@ -32,62 +32,63 @@ iOS cihazlarını doğrudan kaydederken, cihazın seri numarasını almadan kay�
 >[!NOTE]
 >Bu kayıt yöntemi, [cihaz kaydı yöneticisi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) yöntemiyle birlikte kullanılamaz.
 
-1.  Henüz yapmadıysanız, Apple Configurator ile kaydedilmiş iOS cihazları için bir cihaz kayıt profili oluşturun. Cihaz kayıt profili cihazlara uygulanan ayarları tanımlar.
+1. Henüz yapmadıysanız, Apple Configurator ile kaydedilmiş iOS cihazları için bir cihaz kayıt profili oluşturun. Cihaz kayıt profili cihazlara uygulanan ayarları tanımlar.
 
-    1.  [Microsoft Intune yönetici konsolu](https://manage.microsoft.com)’nda **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**’yi seçin.
+   1. [Microsoft Intune yönetici konsolu](https://manage.microsoft.com)’nda **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**’yi seçin.
 
-        ![Cihaz kayıt profili oluşturma sayfası](../media/pol-sa-corp-enroll.png)
+      ![Cihaz kayıt profili oluşturma sayfası](../media/pol-sa-corp-enroll.png)
 
-    2.  Cihaz profillerinin ayrıntılarını girin:
+   2. Cihaz profillerinin ayrıntılarını girin:
 
-        -   **Adı**: Cihaz kayıt profilinin adı. Kullanıcılar tarafından görülemez.
+      - **Adı**: Cihaz kayıt profilinin adı. Kullanıcılar tarafından görülemez.
 
-        -   **Açıklama**: Cihaz kayıt profilinin açıklaması. Kullanıcılar tarafından görülemez.
+      - **Açıklama**: Cihaz kayıt profilinin açıklaması. Kullanıcılar tarafından görülemez.
 
-        -   **Kullanıcı ilişkisi**: Cihazların nasıl kaydedildiğini belirtir. Doğrudan Kayıt için **Kullanıcı benzeşimi yok**’u seçin.
+      - **Kullanıcı ilişkisi**: Cihazların nasıl kaydedildiğini belirtir. Doğrudan Kayıt için **Kullanıcı benzeşimi yok**’u seçin.
 
-        -   **Cihaz grubu ön ataması**: Bu profile sahip tüm cihazlar başlangıçta bu gruba ait olur. Cihazları kayıttan sonra yeniden atayabilirsiniz.
+      - **Cihaz grubu ön ataması**: Bu profile sahip tüm cihazlar başlangıçta bu gruba ait olur. Cihazları kayıttan sonra yeniden atayabilirsiniz.
 
-            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+        [!INCLUDE [groups deprecated](../includes/group-deprecation.md)]
 
-    3.  Profili eklemek için **Profili Kaydet**’i seçin.
 
-5.  iOS cihazlarına dağıtılacak .mobileconfig gibi bir profili dışarı aktarma:
+   3. Profili eklemek için **Profili Kaydet**’i seçin.
 
-    1.   Oluşturduğunuz cihaz profilini seçin.
+2. iOS cihazlarına dağıtılacak .mobileconfig gibi bir profili dışarı aktarma:
 
-    2.   Görev çubuğunda **Dışarı Aktar**’ı seçin.
+   1.   Oluşturduğunuz cihaz profilini seçin.
 
-    3.   **Profili indir**’i seçin ve indirilen .mobileconfig dosyasını kaydedin.
+   2.   Görev çubuğunda **Dışarı Aktar**’ı seçin.
 
-6.  İndirilen .mobileconfig dosyasını bir Mac bilgisayara kopyalayarak dosyayı aktarın.
-    > [!NOTE]
-    > Kayıt profili URL’si dışarı aktarılmasından sonra iki hafta boyunca geçerlidir. İki hafta sonra, iOS cihazlarını Kurulum Yardımcısı ile kaydetmek için yeni bir kayıt profili URL’sini dışarı aktarmanız gerekir.
+   3.   **Profili indir**’i seçin ve indirilen .mobileconfig dosyasını kaydedin.
 
-7.  Cihazı Apple Configurator ile hazırlayın. iOS cihazlar Mac bilgisayara bağlanır ve mobil cihaz yönetimine kaydedilir.
+3. İndirilen .mobileconfig dosyasını bir Mac bilgisayara kopyalayarak dosyayı aktarın.
+   > [!NOTE]
+   > Kayıt profili URL’si dışarı aktarılmasından sonra iki hafta boyunca geçerlidir. İki hafta sonra, iOS cihazlarını Kurulum Yardımcısı ile kaydetmek için yeni bir kayıt profili URL’sini dışarı aktarmanız gerekir.
 
-    1.  Mac bilgisayarda **Apple Configurator 2.0**’ı açın.
+4. Cihazı Apple Configurator ile hazırlayın. iOS cihazlar Mac bilgisayara bağlanır ve mobil cihaz yönetimine kaydedilir.
 
-    2.  iOS cihazını bir USB kablosu ile Mac bilgisayara bağlayın. **Fotoğraflar**, **iTunes** ve cihaz algılandığında cihaz için açık olan diğer uygulamaları kapatın.
+   1.  Mac bilgisayarda **Apple Configurator 2.0**’ı açın.
 
-    3.  Apple Configurator’da, bağlı iOS cihazını ve sonra **Ekle** düğmesini seçin. Cihaza eklenebilen seçenekler aşağı açılan listede görüntülenir. **Profiller**’i seçin.
+   2.  iOS cihazını bir USB kablosu ile Mac bilgisayara bağlayın. **Fotoğraflar**, **iTunes** ve cihaz algılandığında cihaz için açık olan diğer uygulamaları kapatın.
 
-    4.  Intune’dan dışarı aktardığınız .mobileconfig dosyasını seçmek için dosya seçiciyi kullanın ve sonra **Ekle**’yi seçin. Profil cihaza eklenir.  Cihaz **Denetimsiz** ise yükleme cihazda kabul etmeyi gerektirir.
+   3.  Apple Configurator’da, bağlı iOS cihazını ve sonra **Ekle** düğmesini seçin. Cihaza eklenebilen seçenekler aşağı açılan listede görüntülenir. **Profiller**’i seçin.
 
-8.  Profili iOS cihaza yüklemeye hazırsınız. Cihaz, Kurulum Yardımcısı’nı zaten tamamlamış ve hazır olmalıdır. Kayıt için uygulama dağıtımları gerekiyorsa, uygulama dağıtımları App Store için imzalanmış bir Apple Kimliğiniz olmasını gerektireceğinden cihazda bir Apple Kimliği ayarlanmış olmalıdır.
+   4.  Intune’dan dışarı aktardığınız .mobileconfig dosyasını seçmek için dosya seçiciyi kullanın ve sonra **Ekle**’yi seçin. Profil cihaza eklenir.  Cihaz **Denetimsiz** ise yükleme cihazda kabul etmeyi gerektirir.
 
-    1.  iOS cihazının kilidini açın.
+5. Profili iOS cihaza yüklemeye hazırsınız. Cihaz, Kurulum Yardımcısı’nı zaten tamamlamış ve hazır olmalıdır. Kayıt için uygulama dağıtımları gerekiyorsa, uygulama dağıtımları App Store için imzalanmış bir Apple Kimliğiniz olmasını gerektireceğinden cihazda bir Apple Kimliği ayarlanmış olmalıdır.
 
-    2.  **Yönetim profili**’nin **Profili yükle** iletişim kutusunda **Yükle**’yi seçin.
+   1.  iOS cihazının kilidini açın.
 
-    3.  Gerekirse, **Cihaz Geçiş Kodu** veya **Apple Kimliği** belirtin.
+   2.  **Yönetim profili**’nin **Profili yükle** iletişim kutusunda **Yükle**’yi seçin.
 
-    4.  **Uyarı**’yı kabul edin ve **Yükle**’yi seçin.
+   3.  Gerekirse, **Cihaz Geçiş Kodu** veya **Apple Kimliği** belirtin.
 
-    5.  **Uzak Uyarı**’yı kabul edin ve **Güven**’i seçin.
+   4.  **Uyarı**’yı kabul edin ve **Yükle**’yi seçin.
 
-    6.  **Profil Yüklendi** kutusu profilin **Yüklü** olduğunu doğruladığında **Bitti**’yi seçin.
+   5.  **Uzak Uyarı**’yı kabul edin ve **Güven**’i seçin.
 
-9.  iOS cihazında **Ayarlar**’ı açın ve **Genel** &gt; **Cihaz Yönetimi** &gt; **Yönetim Profili**’ne gidin. Profil yüklemesinin listelendiğini onaylayın, iOS ilke kısıtlamalarını ve yüklü uygulamaları denetleyin. İlke kısıtlamaları ve uygulamaların cihazda görünmesi 10 dakika kadar sürebilir.
+   6.  **Profil Yüklendi** kutusu profilin **Yüklü** olduğunu doğruladığında **Bitti**’yi seçin.
 
-10.  Cihazları dağıtın. iOS cihazı Intune’a kaydedilmiştir ve yönetilmektedir.
+6. iOS cihazında **Ayarlar**’ı açın ve **Genel** &gt; **Cihaz Yönetimi** &gt; **Yönetim Profili**’ne gidin. Profil yüklemesinin listelendiğini onaylayın, iOS ilke kısıtlamalarını ve yüklü uygulamaları denetleyin. İlke kısıtlamaları ve uygulamaların cihazda görünmesi 10 dakika kadar sürebilir.
+
+7. Cihazları dağıtın. iOS cihazı Intune’a kaydedilmiştir ve yönetilmektedir.

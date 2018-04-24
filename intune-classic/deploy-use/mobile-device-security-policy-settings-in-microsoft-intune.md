@@ -1,29 +1,29 @@
 ---
-title: "Mobil cihaz güvenlik ilkesi ayarları"
-description: "Kuruluşunuzdaki yönetilen cihazlara dağıtabileceğiniz çeşitli ayarları yapılandırmak için Intune’u kullanın."
-keywords: 
+title: Mobil cihaz güvenlik ilkesi ayarları
+description: Kuruluşunuzdaki yönetilen cihazlara dağıtabileceğiniz çeşitli ayarları yapılandırmak için Intune’u kullanın.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa86e50ebf7e65be0ce8ace65e2cb0bc7e38658e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da mobil cihaz güvenliği ilkesi ayarları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!IMPORTANT]
 > Microsoft Intune artık her cihaz platformu için ayrı yapılandırma ilkeleri sağlamaktadır. Bu ilkeler, kullanabileceğiniz en güncel ayarları içerir. Mobil cihaz güvenliği ilkesini kullanmaya devam edebilirsiniz ve var olan dağıtımlar çalışmaya devam eder. Ancak, mobil cihaz güvenliği ilkesi yakında kaldırılacağı için, yeni yapılandırma ilkelerine geçişi en kısa sürede planlamanız gerekir.
@@ -44,36 +44,38 @@ Aşağıdaki cihaz türleri için mobil cihaz güvenlik ilkeleri oluşturabilir 
 
 > [!NOTE]
 > Bazı ayarlar bazı cihazlar için geçerli değildir. Yapılandırabileceğiniz ayarların tam listesi için aşağıdaki tabloya bakın.
-> Microsoft Intune, Ekim 2016'dan itibaren Windows 8 Şirket Portalı uygulamaları için desteği kaldıracaktır. Microsoft Intune, ayrıca Windows Phone 8 ve WinRT platformları için desteği kaldıracaktır. Bu nedenle bundan sonra herhangi bir Windows Phone 8 veya WinRT cihazını kaydetmeniz veya güncelleştirmeniz mümkün olmayacaktır. Daha önce kaydedilen Windows Phone 8, WinRT ve Windows 8 cihazlarını yönetmeye devam edebilirsiniz. Windows 8 ve Windows Phone 8 cihazlarını Windows 8.1’e ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara bir kesinti olmadan uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
+> Microsoft Intune, Ekim 2016'dan itibaren Windows 8 Şirket Portalı uygulamaları için desteği kaldıracaktır. Microsoft Intune, ayrıca Windows Phone 8 ve WinRT platformları için desteği kaldıracaktır. Bu nedenle bundan sonra herhangi bir Windows Phone 8 veya WinRT cihazını kaydetmeniz veya güncelleştirmeniz mümkün olmayacaktır. Daha önce kaydedilen Windows Phone 8, WinRT ve Windows 8 cihazlarını yönetmeye devam edebilirsiniz. Windows 8 ve Windows Phone 8 cihazlarını Windows 8.1 ve Windows Phone 8.1’e güncelleştirin ve bu cihazlara bir kesinti olmadan uygulama dağıtmaya devam etmek için ilgili Windows 8.1 ve Windows Phone 8.1 Şirket Portalı uygulamalarını kullanın.
 
 ## <a name="security-settings"></a>Güvenlik ayarları
 
-|Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Mobil cihazların kilidini açmak için bir parola iste**|Hayır|Hayır|Evet|Evet|Evet|
-|**Gerekli parola türü**<br /><br />Bu ayar, gerekli parola türünü belirtir (yalnızca sayısal veya alfasayısal gibi).|Evet|Evet|Evet|Evet|Hayır|
-|**Gerekli parola türü – Minimum karakter kümesi sayısı**<br /><br />Dört karakter kümesi vardır: küçük harfler, büyük harfler, rakamlar ve simgeler. Bu ayar parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir. Bununla birlikte, iOS cihazları için bu ayar, parolanın içermesi gereken simge karakterlerinin sayısını belirtir.|Evet|Evet|Evet|Evet|Hayır|
-|**En düşük parola uzunluğu**|Evet|Evet|Evet|Evet|Evet|
-|**Basit parolalara izin ver**<br /><br />Basit parolalar '0000' ve '1234' şeklindedir.|Hayır|Hayır|Evet|Evet|Hayır|
-|**Cihaz silinmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Evet|Evet|Evet|Evet|Evet|
-|**Ekran kapanmadan önce herhangi bir işlem yapılmadan geçen dakika sayısı**<sup>1</sup>|Evet|Evet|Evet|Evet|Evet|
-|**Parola kullanım süresi (gün)**|Evet|Evet|Evet|Evet|Evet|
-|**Parola geçmişini anımsa**|Evet|Evet|Evet|Evet|Evet|
-|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Evet|Evet|Evet|Evet|Evet|
-|**Parola kalitesi**|Hayır|Hayır|Hayır|Hayır|Evet|
-|**Resimli parolaya veya PIN’e izin ver**|Evet|Evet|Hayır|Hayır|Hayır|
-|**Parola istenmeden önce herhangi bir işlem yapılmadan geçen dakika sayısı**|Hayır|Hayır|Hayır|Evet|Hayır|
-|**Parmak izi ile kilit açmaya izin ver**|Hayır|Hayır|Hayır|iOS 7 ve üzeri|Hayır|
+|                                                                                                                                                                                        Ayar adı                                                                                                                                                                                         | Windows 8.1 ve Windows RT 8.1 | Windows RT | Windows Phone 8 ve Windows Phone 8.1 |       iOS       | Android ve Samsung KNOX Standard |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|---------------------------------------|-----------------|-----------------------------------|
+|                                                                                                                                                                <strong>Mobil cihazların kilidini açmak için bir parola iste</strong>                                                                                                                                                                 |               Hayır               |     Hayır     |                  Evet                  |       Evet       |                Evet                |
+|                                                                                                                 <strong>Gerekli parola türü</strong><br /><br />Bu ayar, gerekli parola türünü belirtir (yalnızca sayısal veya alfasayısal gibi).                                                                                                                 |              Evet               |    Evet     |                  Evet                  |       Evet       |                Hayır                 |
+| <strong>Gerekli parola türü – Minimum karakter kümesi sayısı</strong><br /><br />Dört karakter kümesi vardır: küçük harfler, büyük harfler, rakamlar ve simgeler. Bu ayar parolanın kaç farklı karakter kümesi içermesi gerektiğini belirtir. Bununla birlikte, iOS cihazları için bu ayar, parolanın içermesi gereken simge karakterlerinin sayısını belirtir. |              Evet               |    Evet     |                  Evet                  |       Evet       |                Hayır                 |
+|                                                                                                                                                                          <strong>En düşük parola uzunluğu</strong>                                                                                                                                                                           |              Evet               |    Evet     |                  Evet                  |       Evet       |                Evet                |
+|                                                                                                                                               <strong>Basit parolalara izin ver</strong><br /><br />Basit parolalar '0000' ve '1234' şeklindedir.                                                                                                                                                |               Hayır               |     Hayır     |                  Evet                  |       Evet       |                Hayır                 |
+|                                                                                                                                                  <strong>Cihaz silinmeden önce izin verilen yinelenen oturum açma hatası sayısı</strong>                                                                                                                                                   |              Evet               |    Evet     |                  Evet                  |       Evet       |                Evet                |
+|                                                                                                                                                         <strong>Ekran kapanmadan önce herhangi bir işlem yapılmadan geçen dakika sayısı</strong><sup>1</sup>                                                                                                                                                          |              Evet               |    Evet     |                  Evet                  |       Evet       |                Evet                |
+|                                                                                                                                                                         <strong>Parola kullanım süresi (gün)</strong>                                                                                                                                                                         |              Evet               |    Evet     |                  Evet                  |       Evet       |                Evet                |
+|                                                                                                                                                                         <strong>Parola geçmişini anımsa</strong>                                                                                                                                                                          |              Evet               |    Evet     |                  Evet                  |       Evet       |                Evet                |
+|                                                                                                                                              <strong>Parola geçmişini anımsa</strong> – <strong>Önceki parolaların tekrar kullanılmasını engeller</strong>                                                                                                                                              |              Evet               |    Evet     |                  Evet                  |       Evet       |                Evet                |
+|                                                                                                                                                                              <strong>Parola kalitesi</strong>                                                                                                                                                                              |               Hayır               |     Hayır     |                  Hayır                   |       Hayır        |                Evet                |
+|                                                                                                                                                                       <strong>Resimli parolaya veya PIN’e izin ver</strong>                                                                                                                                                                       |              Evet               |    Evet     |                  Hayır                   |       Hayır        |                Hayır                 |
+|                                                                                                                                                             <strong>Parola istenmeden önce herhangi bir işlem yapılmadan geçen dakika sayısı</strong>                                                                                                                                                              |               Hayır               |     Hayır     |                  Hayır                   |       Evet       |                Hayır                 |
+|                                                                                                                                                                          <strong>Parmak izi ile kilit açmaya izin ver</strong>                                                                                                                                                                          |               Hayır               |     Hayır     |                  Hayır                   | iOS 7 ve üzeri |                Hayır                 |
+
 <sup>1</sup> iOS cihazlarda **Ekran kapanmadan önce herhangi bir işlem yapılmadan geçen dakika sayısı** ve **Parola istenmeden önce herhangi bir işlem yapılmadan geçen dakika sayısı** ayarlarını sırayla uygulayarak yapılandırın. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
 
 Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığınızda, kullanıcılar geçerli parolaları ilke gereksinimlerine uysa bile parolalarını sıfırlamaya zorlanır.
 
 ## <a name="encryption-settings"></a>Şifreleme ayarları
 
-|Ayar adı|Windows 8.1 ve Windows RT 8.1|Windows RT|Windows Phone 8 ve Windows Phone 8.1|iOS|Android ve Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Mobil cihazda şifreleme iste**<sup>1</sup><br /><br />Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için **Mobil cihazların kilidini açmak için parola iste**ayarını etkinleştirin.|Evet|Hayır|Evet|Hayır|Evet|
-|**Depolama kartlarında şifreleme iste**<br /><br />Bu ayar, Exchange ActiveSync tarafından yönetilen cihazlar için de geçerlidir.|yok|yok|yok <br />Uygulamalar ve ilişkili veriler otomatik olarak şifrelenir.|yok|Evet|
+|                                                                                                                                     Ayar adı                                                                                                                                     | Windows 8.1 ve Windows RT 8.1 | Windows RT |              Windows Phone 8 ve Windows Phone 8.1              | iOS | Android ve Samsung KNOX Standard |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|-----------------------------------------------------------------|-----|-----------------------------------|
+| <strong>Mobil cihazda şifreleme iste</strong><sup>1</sup><br /><br />Windows Phone 8 cihazları için bunu <strong>Evet</strong>olarak ayarlamanız gerekir.<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için <strong>Mobil cihazların kilidini açmak için parola iste</strong>ayarını etkinleştirin. |              Evet               |     Hayır     |                               Evet                               | Hayır  |                Evet                |
+|                                                                    <strong>Depolama kartlarında şifreleme iste</strong><br /><br />Bu ayar, Exchange ActiveSync tarafından yönetilen cihazlar için de geçerlidir.                                                                     |              yok               |    yok     | yok <br />Uygulamalar ve ilişkili veriler otomatik olarak şifrelenir. | yok |                Evet                |
+
 <sup>1</sup>Windows 8.1 çalıştıran cihazlar için ek bilgiler:
 
 -   Windows 8.1 çalıştıran cihazlarda şifrelemeyi zorlamak için her bir cihaza [Windows için Aralık 2014 MDM istemci güncelleştirmesi](http://support.microsoft.com/kb/3013816) ’ni yüklemeniz gerekir.
@@ -212,5 +214,5 @@ Windows RT çalıştıran cihazlara bir parola uzunluğu ilkesi dağıttığın�
 |**Uygulamalar arasında pano paylaşımına izin ver**|Hayır|Hayır|Hayır|Hayır|Evet (Yalnızca Samsung KNOX Standard)|
 |**YouTube'a izin ver**|Hayır|Hayır|Hayır|Hayır|Evet (Yalnızca Samsung KNOX Standard)|
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

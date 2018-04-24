@@ -15,11 +15,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: eb9f63199063db34361c7d463b8cef37bb8bfa1f
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 317e884cd54b57f4892c4e101e206089ef335f0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
 
@@ -51,23 +51,24 @@ ms.lasthandoff: 03/16/2018
 
 **MamApplicationInstance** varlığı, Mobil Uygulama Yönetimi (MAM) uygulamalarını kullanıcı ve cihaz başına tekil örnekler olarak listeler. Varlıkta listelenen tüm kullanıcılar ve cihazlar korunur. Örneğin, hepsine en az bir MAM İlkesi atanmıştır.
 
-| Özellik | Description | Örnek |
-|---------|------------|--------|
-| ApplicationInstanceKey |Veri ambarındaki MAM uygulaması örneğinin benzersiz tanımlayıcısı - vekil anahtar. |123 |
-| UserId |Bu MAM uygulamasını yükleyen kullanıcının kullanıcı kimliği. |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationInstanceId |MAM uygulaması örneğinin benzersiz tanımlayıcısı - ApplicationInstanceKey ile benzer ancak tanımlayıcı, bir doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationId |Bu MAM uygulamasının uygulama kimliği |com.microsoft.groupies-daily.<IOS> |
-| ApplicationVersion |Bu MAM uygulamasının uygulama sürümü. |2 |
-| CreatedDate |Bu MAM uygulama örneği kaydının oluşturulduğu tarih. Değer null olabilir. |23/11/2016 00:00:00 |
-| Platform |MAM uygulamasının yüklü olduğu cihazın platformu. |2 |
-| PlatformVersion |Bu MAM uygulamasının yüklü olduğu cihazın platform sürümü. |2.2 |
-| SdkVersion |Bu MAM uygulamasını sarmalayan MAM SDK sürümü. |3.2 |
-| DeviceId |Bu MAM uygulamasının yüklü olduğu cihazın kimliği. |b66bc706-ffff-7437-0340-032819502773 |
-| DeviceName |Bu MAM uygulamasının yüklü olduğu cihazın adı. |"Cihazım" |
-| IsDeleted |Bu MAM uygulama örneği kaydının güncelleştirilip güncelleştirilmediğini gösterir. <br>True- bu MAM uygulaması örneğinin, bu tablodaki güncelleştirilmiş alanları içeren yeni bir kaydı var. <br>False- bu MAM uygulaması örneği için en son kayıt. |Doğru/Yanlış |
-| StartDateInclusiveUtc |Bu MAM uygulaması örneğinin, veri ambarında oluşturulduğu tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
-| DeletedDateUtc |IsDeleted değerinin True olarak değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
-| RowLastModifiedDateTimeUtc |Bu MAM uygulaması örneğinin, veri ambarında son değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+
+|          Özellik          |                                                                                                  Description                                                                                                  |               Örnek                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               Veri ambarındaki MAM uygulaması örneğinin benzersiz tanımlayıcısı - vekil anahtar.                                                                |                 123                  |
+|           UserId           |                                                                              Bu MAM uygulamasını yükleyen kullanıcının kullanıcı kimliği.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              MAM uygulaması örneğinin benzersiz tanımlayıcısı - ApplicationInstanceKey ile benzer ancak tanımlayıcı, bir doğal anahtardır.                                              | b66bc706-ffff-7437-0340-032819502773 |
+|       ApplicationId        |                                                                                        Bu MAM uygulamasının uygulama kimliği                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
+|     ApplicationVersion     |                                                                                     Bu MAM uygulamasının uygulama sürümü.                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 Bu MAM uygulama örneği kaydının oluşturulduğu tarih. Değer null olabilir.                                                                 |        23/11/2016 00:00:00        |
+|          Platform          |                                                                          MAM uygulamasının yüklü olduğu cihazın platformu.                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      Bu MAM uygulamasının yüklü olduğu cihazın platform sürümü.                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            Bu MAM uygulamasını sarmalayan MAM SDK sürümü.                                                                            |                 3.2                  |
+|          DeviceId          |                                                                          Bu MAM uygulamasının yüklü olduğu cihazın kimliği.                                                                          | b66bc706-ffff-7437-0340-032819502773 |
+|         DeviceName         |                                                                         Bu MAM uygulamasının yüklü olduğu cihazın adı.                                                                         |              "Cihazım"              |
+|         IsDeleted          | Bu MAM uygulama örneği kaydının güncelleştirilip güncelleştirilmediğini gösterir. <br>True- bu MAM uygulaması örneğinin, bu tablodaki güncelleştirilmiş alanları içeren yeni bir kaydı var. <br>False- bu MAM uygulaması örneği için en son kayıt. |              Doğru/Yanlış              |
+|   StartDateInclusiveUtc    |                                                              Bu MAM uygulaması örneğinin, veri ambarında oluşturulduğu tarih ve UTC diliminde saat.                                                               |        23.11.2016 12:00:00        |
+|       DeletedDateUtc       |                                                                             IsDeleted değerinin True olarak değiştirildiği tarih ve UTC diliminde saat.                                                                              |        23.11.2016 12:00:00        |
+| RowLastModifiedDateTimeUtc |                                                           Bu MAM uygulaması örneğinin, veri ambarında son değiştirildiği tarih ve UTC diliminde saat.                                                            |        23.11.2016 12:00:00        |
 
 ## <a name="mamcheckin"></a>MamCheckin
 
@@ -112,20 +113,23 @@ ms.lasthandoff: 03/16/2018
 
 **MamGlobalApplication** varlığı, Mobil Uygulama Yönetimi (MAM) aracılığıyla yönetilen ancak kuruluşunuza kayıtlı olmayan mağaza uygulamaları listeler.
 
-| Özellik | Description | Örnek |
-|---------|------------|--------|
-| ApplicationKey |Veri ambarındaki mağaza uygulamasının benzersiz tanıtıcısı - vekil anahtar olarak bilinir. |123 |
-| ApplicationId |Mağaza uygulamasının benzersiz tanıtıcısı. Tanıtıcı, ApplicationKey ile benzer ancak doğal bir anahtardır. |com.microsoft.skydrive.<ios> |
-| ApplicationName |MAM Genel Uygulama Adı. |Skydrive |
-| RowLastModifiedDateTimeUtc |Bu MAM Genel Uygulamasının, veri ambarında son değiştirildiği tarih ve saat (UTC). |23.11.2016 12:00:00 |
+
+|          Özellik          |                                               Description                                               |           Örnek            |
+|----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
+|       ApplicationKey       |          Veri ambarındaki mağaza uygulamasının benzersiz tanıtıcısı - vekil anahtar olarak bilinir.          |             123              |
+|       ApplicationId        | Mağaza uygulamasının benzersiz tanıtıcısı. Tanıtıcı, ApplicationKey ile benzer ancak doğal bir anahtardır.  | com.microsoft.skydrive.<ios> |
+|      ApplicationName       |                                      MAM Genel Uygulama Adı.                                       |           Skydrive           |
+| RowLastModifiedDateTimeUtc | Bu MAM Genel Uygulamasının, veri ambarında son değiştirildiği tarih ve saat (UTC). |    23.11.2016 12:00:00    |
 
 ## <a name="mamplatform"></a>MamPlatform
 
 **MamPlatform** varlığı, Mobil Uygulama Yönetimi (MAM) uygulamasının yüklendiği platform adlarını ve türlerini listeler.
 
-| Özellik | Description | Örnek |
-|---------|------------|--------|
-| PlatformKey |Veri ambarındaki platformun benzersiz tanımlayıcısı - vekil anahtar. |123 |
-| Platform |Platformun benzersiz tanımlayıcısı; PlatformKey ile benzer ancak doğal bir anahtardır. |123 |
-| PlatformName |Platform adı |Kullanılamıyor <br>Yok. <br>Windows <br>IOS <br>Android. |
-| RowLastModifiedDateTimeUtc |Bu platformun veri ambarında son değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+
+|          Özellik          |                                    Description                                    |                         Örnek                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     Veri ambarındaki platformun benzersiz tanımlayıcısı - vekil anahtar.      |                           123                           |
+|          Platform          | Platformun benzersiz tanımlayıcısı; PlatformKey ile benzer ancak doğal bir anahtardır. |                           123                           |
+|        PlatformName        |                                   Platform adı                                   | Kullanılamıyor <br>Yok. <br>Windows <br>IOS <br>Android. |
+| RowLastModifiedDateTimeUtc | Bu platformun veri ambarında son değiştirildiği tarih ve UTC diliminde saat.  |                 23.11.2016 12:00:00                  |
+

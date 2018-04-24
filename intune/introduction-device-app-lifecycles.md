@@ -1,29 +1,29 @@
 ---
-title: "Cihaz ve uygulama yaşam döngülerine genel bakış"
+title: Cihaz ve uygulama yaşam döngülerine genel bakış
 titleSuffix: Microsoft Intune
-description: "Microsoft Intune’la cihaz ve uygulama yaşam döngülerine genel bakış."
-keywords: 
+description: Microsoft Intune’la cihaz ve uygulama yaşam döngülerine genel bakış.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d262d5679ceb802320bd5aa496d91f549ec12952
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c358fff91744335080a10d45c7753293911430ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>Cihaz ve uygulama yaşam döngülerine genel bakış
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Her bir kuruluşun ihtiyaçları farklılık gösterse de tüm kuruluşların mobil cihazlarını ve mobil uygulamalarını yönetmek için sürekli izlemeleri gereken bazı ortak adımlar vardır. Bunlar, **yaşam döngüleri** terimiyle gösterilen iki ana kategoride gruplandırılabilir. Takip ettiğiniz dağıtım yaşam döngüsü, etkinleştirmeye çalıştığınız senaryoya bağlıdır. Örneğin, yalnızca cihaz yaşam döngüsüne, yalnızca uygulama yaşam döngüsüne veya her ikisine birden ihtiyacınız olabilir.
 

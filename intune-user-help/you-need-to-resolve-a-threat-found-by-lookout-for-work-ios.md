@@ -1,31 +1,29 @@
 ---
-title: "iOS’ta Lookout for Work’ün bulduğu tehditleri çözümleme | Microsoft Docs"
-description: "iOS’ta Lookout for Work tarafından bulunan bir tehdidi nasıl düzelteceğinizi öğrenin."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS’ta Lookout for Work’ün bulduğu tehditleri çözümleme | Microsoft Docs
+description: iOS’ta Lookout for Work tarafından bulunan bir tehdidi nasıl düzelteceğinizi öğrenin.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f317c8ddf89510e695b727548d5abafdf9319c25
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: be7d54cdde7e82cd0e0d4820ecfddff171e5984a
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work tarafından bulunan bir tehdidi çözme
 
-Lookout for Work, cihazınızda potansiyel bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için sorunu düzeltmeniz gerekiyor. Gördüğünüz ileti şuna benzeyebilir:
-
-![Lookout for Work’ten alınan uyumlu değil iletisi](./media/ios-lfw-noncompliant-in-ssp.png)
+Lookout for Work, cihazınızda potansiyel bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için sorunu düzeltmeniz gerekiyor.
 
 Bu sorunu çözmek için Lookout for Work uygulamasını açın ve uygulamada gösterilen yönergeleri izleyin.
 

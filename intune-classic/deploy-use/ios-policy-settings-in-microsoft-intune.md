@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9785078341c8e3469067042a3f3e8588f29c3a3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da iOS ilke ayarları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune, iOS cihazlarda yapılandırabileceğiniz bir dizi yerleşik genel ayar sunar. Ayrıca, Intune'dan kullanılamayan özel ayarları oluşturmak için Apple Configurator aracını kullanabilirsiniz.
 
@@ -45,20 +45,22 @@ Aradığınız özellik bu konu başlığı altında görünmüyorsa, [Apple Con
 ### <a name="security-settings"></a>Güvenlik ayarları
 Tüm ayarlar iOS 8.0 ve üzeri için geçerlidir.
 
-|Ayar adı|Ayrıntılar|
-|----------------|-------|
-|**Mobil cihazların kilidini açmak için bir parola iste**|Kullanıcının cihazına erişmek için parola girmesinin gerekip gerekmediğini belirtin.|
-|**Gerekli parola türü**|Gerekli parola türünü belirtin (yalnızca sayısal veya alfasayısal gibi).|
-|**Parolada gerekli karmaşık karakter sayısı**|Parolada bulunması gereken simge karakterlerinin sayısını belirtin (**#** veya **@** gibi).|
-|**En düşük parola uzunluğu**|Parolada bulunacak karakter sayısı için alt sınır belirtin.|
-|**Basit parolalara izin ver**|**0000** ve **1234** gibi basit parolalara izin verin.|
-|**Cihaz silinmeden önce izin verilen yinelenen oturum açma hatası sayısı**|Bu ayar cihazı temizlemeden önce gerçekleşebilecek başarısız oturum açma girişimlerinin sayısını belirtin.|
-|**Parola istenmeden önce geçen işlem yapılmayan dakika sayısı**<sup>1</sup>|Kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalabileceğini belirtin.|
-|**Parola kullanım süresi (gün)**|Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtin.|
-|**Parola geçmişini anımsa**|Kullanıcının önceden kullanmış olduğu parolaları kullanıp kullanamayacağını belirtin.|
-|**Parola geçmişini anımsa** – **Önceki parolaların tekrar kullanılmasını engeller**|Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtin.|
-|**Ekran kapanmadan önce herhangi bir işlem yapılmadan geçen dakika sayısı**<sup>1</sup>|Cihazın ekranı kapatılmadan önce beklenecek dakika sayısını belirtin.|
-|**Parmak izi ile kilit açmaya izin ver**|Parmak izi kullanarak cihaz kilidini açmaya izin verin.|
+
+|                                           Ayar adı                                            |                                                            Ayrıntılar                                                             |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Mobil cihazların kilidini açmak için bir parola iste</strong>                    |                        Kullanıcının cihazına erişmek için parola girmesinin gerekip gerekmediğini belirtin.                        |
+|                              <strong>Gerekli parola türü</strong>                              |                   Gerekli parola türünü belirtin (yalnızca sayısal veya alfasayısal gibi).                    |
+|                <strong>Parolada gerekli karmaşık karakter sayısı</strong>                 | Parolada bulunması gereken simge karakterlerinin sayısını belirtin (<strong>#</strong> veya <strong>@</strong> gibi). |
+|                             <strong>En düşük parola uzunluğu</strong>                              |                                   Parolada bulunacak karakter sayısı için alt sınır belirtin.                                    |
+|                              <strong>Basit parolalara izin ver</strong>                              |                          <strong>0000</strong> ve <strong>1234</strong> gibi basit parolalara izin verin.                          |
+|     <strong>Cihaz silinmeden önce izin verilen yinelenen oturum açma hatası sayısı</strong>      |                       Bu ayar cihazı temizlemeden önce gerçekleşebilecek başarısız oturum açma girişimlerinin sayısını belirtin.                        |
+|          <strong>Parola istenmeden önce geçen işlem yapılmayan dakika sayısı</strong><sup>1</sup>           |                   Kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalabileceğini belirtin.                    |
+|                            <strong>Parola kullanım süresi (gün)</strong>                            |                             Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtin.                             |
+|                            <strong>Parola geçmişini anımsa</strong>                             |                           Kullanıcının önceden kullanmış olduğu parolaları kullanıp kullanamayacağını belirtin.                           |
+| <strong>Parola geçmişini anımsa</strong> – <strong>Önceki parolaların tekrar kullanılmasını engeller</strong> |                           Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtin.                           |
+|            <strong>Ekran kapanmadan önce herhangi bir işlem yapılmadan geçen dakika sayısı</strong><sup>1</sup>             |                             Cihazın ekranı kapatılmadan önce beklenecek dakika sayısını belirtin.                             |
+|                             <strong>Parmak izi ile kilit açmaya izin ver</strong>                             |                                        Parmak izi kullanarak cihaz kilidini açmaya izin verin.                                         |
+
 <sup>1</sup> iOS cihazlarda **Ekran kapanmadan önce herhangi bir işlem yapılmadan geçen dakika sayısı** ve **Parola istenmeden önce herhangi bir işlem yapılmadan geçen dakika sayısı** ayarlarını sırayla uygulayarak yapılandırın. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran 5 dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için 5 dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki 5 dakikanın sonunda cihaz kilitlenir.
 
 ### <a name="system-settings"></a>Sistem ayarları
@@ -180,25 +182,26 @@ Uyumlu ve uyumsuz uygulama ayarlarını içeren ilkelerin kullanıcı grupların
 
 ### <a name="kiosk-mode-settings"></a>Bilgi noktası modu ayarları
 
-|Ayar adı|Ayrıntılar|
-|----------------|--------------------|
-|**Cihaz bilgi noktası modundayken çalışmasına izin verilecek yönetilen bir uygulama seçin**|**Gözat**’ı seçin ve sonra, yönetilen uygulamayı veya cihaz bilgi noktası modundayken çalışmasına izin verilecek mağaza uygulamasını belirtin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez. Daha fazla yardım için, bu konunun devamındaki “Uygulama mağazalarının URL’lerini belirtme” bölümüne bakın.|
-|**Dokunmatik ekrana izin ver**|Cihazda dokunmatik ekranı etkinleştirin veya devre dışı bırakın.|
-|**Ekran döndürmeye izin ver**|Kullanıcı, cihazı döndürdüğünde ekran yönünü değiştirmeyi etkinleştirin veya devre dışı bırakın.|
-|**Ses düzeyi düğmelerine izin ver**|Cihazdaki ses düğmelerinin kullanımını etkinleştirin veya devre dışı bırakın.|
-|**Ses açma/kapama düğmesine izin ver**|Cihazda ses açma/kapama (sessiz) düğmesini etkinleştirin veya devre dışı bırakın.|
-|**Uyku/uyandırma düğmesine izin ver**|Ekranda uykuya geçme ve uyandırma düğmesini etkinleştirin veya devre dışı bırakın.|
-|**Otomatik kilide izin ver**|Cihazın otomatik olarak kilitlenmesini etkinleştirin veya devre dışı bırakın.|
-|**Mono sesi etkinleştir**|**Mono ses**erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.|
-|**Seslendirmeyi etkinleştir**|Cihazın ekranındaki metinleri sesli olarak okuyan **VoiceOver** erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.|
-|**Seslendirme ayarlarını etkinleştir**|Kullanıcının VoiceOver işlevini ayarlamasına izin veren seslendirme ayarlarını (örneğin, ekran üzerindeki metnin ne kadar hızlı okunacağı) etkinleştirin veya devre dışı bırakın.|
-|**Yakınlaştırmayı etkinleştir**|Kullanıcının cihazın ekranını dokunarak yakınlaştırmasına olanak sağlayan **Yakınlaştırma** erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.|
-|**Yakınlaştırma ayarlarını etkinleştir**|Kullanıcının yakınlaştırma işlevini ayarlamasını sağlayan yakınlaştırma ayarlarını etkinleştirin veya devre dışı bırakın.|
-|**Renkleri ters çevirmeyi etkinleştir**|Görme bozukluğu olan kullanıcılara yardımcı olmak için ekranı ayarlayan **Renkleri ters çevir** erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.|
-|**Renkleri ters çevir ayarlarını etkinleştir**|Kullanıcının renkleri ters çevirme işlevini ayarlamasına olanak sağlayan renkleri ters çevirme ayarlarını etkinleştirin veya devre dışı bırakın.|
-|**Yardımcı dokunmayı etkinleştir**|Ekran hareketlerini gerçekleştirmekte zorlanabilecek kullanıcıların bunları yapmasına yardımcı olan **Yardımcı Dokunma** erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.|
-|**Yardımcı dokunma ayarlarını etkinleştir**|Kullanıcının yardımcı dokunma işlevini ayarlamasına olanak sağlayan yardımcı dokunma ayarlarını etkinleştirin veya devre dışı bırakın.|
-|**Seçimi seslendirmeyi etkinleştir**|Kullanıcının seçtiği metni sesli okuyabilen **Seçimi Seslendir** erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.|
+|                                            Ayar adı                                            |                                                                                                                                      Ayrıntılar                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Cihaz bilgi noktası modundayken çalışmasına izin verilecek yönetilen bir uygulama seçin</strong> | <strong>Gözat</strong>’ı seçin ve sonra, yönetilen uygulamayı veya cihaz bilgi noktası modundayken çalışmasına izin verilecek mağaza uygulamasını belirtin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez. Daha fazla yardım için, bu konunun devamındaki “Uygulama mağazalarının URL’lerini belirtme” bölümüne bakın. |
+|                                    <strong>Dokunmatik ekrana izin ver</strong>                                    |                                                                                                                  Cihazda dokunmatik ekranı etkinleştirin veya devre dışı bırakın.                                                                                                                  |
+|                               <strong>Ekran döndürmeye izin ver</strong>                               |                                                                                                Kullanıcı, cihazı döndürdüğünde ekran yönünü değiştirmeyi etkinleştirin veya devre dışı bırakın.                                                                                                 |
+|                               <strong>Ses düzeyi düğmelerine izin ver</strong>                                |                                                                                                           Cihazdaki ses düğmelerinin kullanımını etkinleştirin veya devre dışı bırakın.                                                                                                           |
+|                                <strong>Ses açma/kapama düğmesine izin ver</strong>                                |                                                                                                             Cihazda ses açma/kapama (sessiz) düğmesini etkinleştirin veya devre dışı bırakın.                                                                                                              |
+|                          <strong>Uyku/uyandırma düğmesine izin ver</strong>                           |                                                                                                           Ekranda uykuya geçme ve uyandırma düğmesini etkinleştirin veya devre dışı bırakın.                                                                                                            |
+|                                  <strong>Otomatik kilide izin ver</strong>                                  |                                                                                                                 Cihazın otomatik olarak kilitlenmesini etkinleştirin veya devre dışı bırakın.                                                                                                                 |
+|                                 <strong>Mono sesi etkinleştir</strong>                                 |                                                                                                      <strong>Mono ses</strong>erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.                                                                                                      |
+|                                 <strong>Seslendirmeyi etkinleştir</strong>                                 |                                                                               Cihazın ekranındaki metinleri sesli olarak okuyan <strong>VoiceOver</strong> erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.                                                                                |
+|                           <strong>Seslendirme ayarlarını etkinleştir</strong>                           |                                                                  Kullanıcının VoiceOver işlevini ayarlamasına izin veren seslendirme ayarlarını (örneğin, ekran üzerindeki metnin ne kadar hızlı okunacağı) etkinleştirin veya devre dışı bırakın.                                                                   |
+|                                    <strong>Yakınlaştırmayı etkinleştir</strong>                                    |                                                                         Kullanıcının cihazın ekranını dokunarak yakınlaştırmasına olanak sağlayan <strong>Yakınlaştırma</strong> erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.                                                                         |
+|                              <strong>Yakınlaştırma ayarlarını etkinleştir</strong>                              |                                                                                                  Kullanıcının yakınlaştırma işlevini ayarlamasını sağlayan yakınlaştırma ayarlarını etkinleştirin veya devre dışı bırakın.                                                                                                  |
+|                               <strong>Renkleri ters çevirmeyi etkinleştir</strong>                                |                                                                    Görme bozukluğu olan kullanıcılara yardımcı olmak için ekranı ayarlayan <strong>Renkleri ters çevir</strong> erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.                                                                    |
+|                         <strong>Renkleri ters çevir ayarlarını etkinleştir</strong>                          |                                                                                         Kullanıcının renkleri ters çevirme işlevini ayarlamasına olanak sağlayan renkleri ters çevirme ayarlarını etkinleştirin veya devre dışı bırakın.                                                                                         |
+|                              <strong>Yardımcı dokunmayı etkinleştir</strong>                               |                                                     Ekran hareketlerini gerçekleştirmekte zorlanabilecek kullanıcıların bunları yapmasına yardımcı olan <strong>Yardımcı Dokunma</strong> erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.                                                     |
+|                        <strong>Yardımcı dokunma ayarlarını etkinleştir</strong>                         |                                                                                       Kullanıcının yardımcı dokunma işlevini ayarlamasına olanak sağlayan yardımcı dokunma ayarlarını etkinleştirin veya devre dışı bırakın.                                                                                       |
+|                              <strong>Seçimi seslendirmeyi etkinleştir</strong>                              |                                                                        Kullanıcının seçtiği metni sesli okuyabilen <strong>Seçimi Seslendir</strong> erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.                                                                         |
+
 > [!NOTE]
 > aşağıdaki notlar, iOS cihazlarda bilgi noktası modu ayarları için geçerlidir:
 >
@@ -349,8 +352,6 @@ Göstermek veya gizlemek istediğiniz yerleşik iOS uygulamalarının ad, yayın
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 

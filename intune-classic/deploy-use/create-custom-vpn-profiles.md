@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 512bd38802dbb97a74d3d19d74a7d5086784d327
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Microsoft Intune VPN profilleri için özel yapılandırmalar
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="create-a-custom-configuration"></a>Özel yapılandırma oluşturma
 Aşağıdakilere yönelik VPN profilleri oluşturmak için Intune özel yapılandırma ilkeleri kullanabilirsiniz:
@@ -39,13 +39,13 @@ Standart Intune VPN ilkeleri, kullanmak istediğiniz ayarları içermiyorsa bu t
 
 ## <a name="to-create-a-custom-configuration-policy"></a>Özel yapılandırma ilkesi oluşturmak için:
 
-   1. [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **İlke Ekle** > *Platformu genişlet* > **Özel yapılandırma** > **İlke Oluştur**’u seçin.
-   2. İlke için bir ad girin.
-   3. Belirtmek istediğiniz her URI ayarı için **Ekle**’yi seçin ve istenen bilgileri sağlayın. Örnek:
+1. [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **İlke Ekle** > *Platformu genişlet* > **Özel yapılandırma** > **İlke Oluştur**’u seçin.
+2. İlke için bir ad girin.
+3. Belirtmek istediğiniz her URI ayarı için **Ekle**’yi seçin ve istenen bilgileri sağlayın. Örnek:
 
    ![VPN profili özel yapılandırması iletişim kutusu](./media/Intune_Add_VPN_URI.png)
 
-   4.  URI ayarlarının tümünü girdikten sonra **İlkeyi kaydet**’i seçin ve ilkeyi dağıtın.
+4. URI ayarlarının tümünü girdikten sonra **İlkeyi kaydet**’i seçin ve ilkeyi dağıtın.
 
 Ardından, normal şekilde [ilkeyi dağıtın](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy).
 

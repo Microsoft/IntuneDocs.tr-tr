@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
 
@@ -54,32 +54,32 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 2. Aboneliğinizin adını seçtiğinizde sağlanan URL abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) bakın.
 
 3. Azure AD Grup Kimliğinizi bulun. Lookout konsolu 2 erişim düzeyini destekler:  
-  * **Tam Erişim:** Azure AD yöneticisi, Tam Erişimi olan kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak Sınırlı Erişimi olacak kullanıcılar için bir grup oluşturur.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
-  * **Kısıtlı Erişim:** Bu gruptaki kullanıcılar, Lookout konsolundaki yapılandırma ve kayıtla ilgili modüllerin çoğuna erişemez. Konsolun **Güvenlik İlkesi** modülü için ise salt okunur erişimine sahip olurlar.  
+   * **Tam Erişim:** Azure AD yöneticisi, Tam Erişimi olan kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak Sınırlı Erişimi olacak kullanıcılar için bir grup oluşturur.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
+   * **Kısıtlı Erişim:** Bu gruptaki kullanıcılar, Lookout konsolundaki yapılandırma ve kayıtla ilgili modüllerin çoğuna erişemez. Konsolun **Güvenlik İlkesi** modülü için ise salt okunur erişimine sahip olurlar.  
 
-    > [!TIP] 
-    > İzinler hakkında daha fazla ayrıntı için Lookout Web sitesindeki [bu makaleyi](https://personal.support.lookout.com/hc/articles/114094105653) okuyun.
+     > [!TIP] 
+     > İzinler hakkında daha fazla ayrıntı için Lookout Web sitesindeki [bu makaleyi](https://personal.support.lookout.com/hc/articles/114094105653) okuyun.
 
-    > [!NOTE] 
-    > **Grup Nesne Kimliği**, **Azure AD yönetim portalında** grubun **Özellikler** sayfasında bulunur.
+     > [!NOTE] 
+     > **Grup Nesne Kimliği**, **Azure AD yönetim portalında** grubun **Özellikler** sayfasında bulunur.
 
 4. Bu bilgileri topladıktan sonra, Lookout desteği ile iletişime geçin (e-posta: enterprisesupport@lookout.com). Lookout Desteği topladığınız bilgileri kullanarak, aboneliğinizi hazırlamak ve Lookout Enterprise hesabınızı oluşturmak için aboneliğinizdeki birincil ilgili kişiyle birlikte çalışır.
 
 ## <a name="configure-your-subscription"></a>Aboneliğinizi yapılandırma
 
-1. Lookout desteği, Lookout Enterprise hesabınızı oluşturduktan sonra oturum açma URL’sini içeren bir e-posta, Lookout’tan şirketinizdeki birincil ilgili kişiye gönderilir:https://aad.lookout.com/les?action=consent.
+1. Lookout desteği, Lookout Enterprise hesabınızı oluşturduktan sonra oturum açma URL’sini içeren bir e-posta, Lookout’tan şirketinizdeki birincil ilgili kişiye gönderilir:<https://aad.lookout.com/les?action=consent>.
 
-2.  Azure AD kiracınızı kaydetmek için Lookout konsolunda ilk kez oturum açma işleminin Azure AD rolü Genel Yönetici olan bir kullanıcı hesabı kullanılarak yapılması gerekir. Daha sonra, oturum açma işleminin bu Azure AD ayrıcalık düzeyinde yapılmasına gerek yoktur. Bir onay sayfası görüntülenir. Kaydı tamamlamak için **Kabul Et**’i seçin. Kabul edip onay verdikten sonra Lookout Konsolu'na yönlendirilirsiniz.
+2. Azure AD kiracınızı kaydetmek için Lookout konsolunda ilk kez oturum açma işleminin Azure AD rolü Genel Yönetici olan bir kullanıcı hesabı kullanılarak yapılması gerekir. Daha sonra, oturum açma işleminin bu Azure AD ayrıcalık düzeyinde yapılmasına gerek yoktur. Bir onay sayfası görüntülenir. Kaydı tamamlamak için **Kabul Et**’i seçin. Kabul edip onay verdikten sonra Lookout Konsolu'na yönlendirilirsiniz.
 
-    ![Lookout konsolunda ilk defa oturum açma sayfasının ekran görüntüsü](./media/lookout_mtp_initial_login.png)
+   ![Lookout konsolunda ilk defa oturum açma sayfasının ekran görüntüsü](./media/lookout_mtp_initial_login.png)
 
-3.  [Lookout Konsolu](https://aad.lookout.com)’nda, **Sistem** modülünde, **Bağlayıcılar** sekmesine tıklayın ve **Intune**’u seçin.
+3. [Lookout Konsolu](https://aad.lookout.com)’nda, **Sistem** modülünde, **Bağlayıcılar** sekmesine tıklayın ve **Intune**’u seçin.
 
-    ![Lookout MTP konsolunu bağlayıcılar sekmesi açık ve Intune seçeneği vurgulanmış olarak gösteren ekran görüntüsü](./media/lookout_mtp_setup-intune-connector.png)
+   ![Lookout MTP konsolunu bağlayıcılar sekmesi açık ve Intune seçeneği vurgulanmış olarak gösteren ekran görüntüsü](./media/lookout_mtp_setup-intune-connector.png)
 
-4.  **Bağlayıcılar** > **Bağlantı Ayarları**’na gidin ve **Sinyal Sıklığı**’nı dakika cinsinden belirtin.
+4. **Bağlayıcılar** > **Bağlantı Ayarları**’na gidin ve **Sinyal Sıklığı**’nı dakika cinsinden belirtin.
 
-    ![bağlantı ayarları sekmesinin sinyal sıklığını gösterecek şekilde yapılandırılmış ekran görüntüsü](./media/lookout-mtp-connection-settings.png)
+   ![bağlantı ayarları sekmesinin sinyal sıklığını gösterecek şekilde yapılandırılmış ekran görüntüsü](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Kayıt gruplarını yapılandırma
 1. En iyi uygulama olarak, Lookout tümleştirmesini sınamak için [Azure AD yönetim portalında](https://manage.windowsazure.com) az sayıda kullanıcı içeren bir Azure AD güvenlik grubu oluşturun.

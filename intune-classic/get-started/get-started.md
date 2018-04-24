@@ -12,15 +12,15 @@ ms.technology: ''
 ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 591a9d0855de4703b3ffcbd71bda04788a95d6b5
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d1d71836dfc9f22a6bcfeb9116d863575f6e015e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-microsoft-intune"></a>Microsoft Intune kullanmaya başlayın
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konu başlığı, kullanıcıları için cihazları ve hizmetleri yönetmek amacıyla Microsoft Intune'u kullanmaya başlamaya hazır olan yöneticilere yardımcı olmayı amaçlamaktadır. Intune'u satın almaya hazır değilseniz [Intune deneme hesabıyla hizmeti değerlendirebilirsiniz](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune).
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konuda, **Azure portalında** uygulama koruma ilkesi oluşturma işlemi açıklanır. Azure portalı, uygulama koruma ilkelerinin oluşturulacağı yeni yönetim konsoludur ve uygulama koruma ilkelerini oluştururken bu portalı kullanmanız önerilir. Azure portalı, aşağıdaki MAM senaryolarını destekler:
 
@@ -31,23 +31,23 @@ Bu konuda, **Azure portalında** uygulama koruma ilkesi oluşturma işlemi açı
 - Üçüncü taraf MDM çözümleri tarafından yönetilen cihazlar.
 - Hiçbir MDM çözümü tarafından yönetilmeyen cihazlar (KGC).
 
->[!IMPORTANT]
-Cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız aşağıdakileri göz önünde bulundurun:
-
+> [!IMPORTANT]
+> Cihazlarınızı yönetmek için **Intune yönetici konsolunu** kullanıyorsanız aşağıdakileri göz önünde bulundurun:
+> 
 > * [Intune yönetici konsolu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanılarak Intune’a kaydedilmiş cihazlara yönelik uygulamaları destekleyen bir uygulama koruma ilkesi oluşturabilirsiniz.
 > * Intune yönetici konsolunda oluşturulan uygulama koruma ilkeleri Azure portalına aktarılamaz.  Uygulama koruma ilkeleri, Azure portalında yeniden oluşturulmalıdır.
-
+> 
 > * Intune yönetici konsolunda tüm uygulama koruma ilkesi ayarlarını göremeyebilirsiniz. Azure portalı, uygulama koruma ilkeleri oluşturmaya yönelik yeni yönetim konsoludur.
-
+> 
 > * Yönetilen uygulamaları dağıtmak için, Intune yönetici konsolunda bir uygulama koruma ilkesi oluşturmalısınız. Bu durumda, hem Intune yönetici konsolunda hem de Azure portalında uygulama koruma ilkeleri oluşturmak isteyebilirsiniz: yönetilen uygulamaları dağıtabileceğinizden emin olmak için Intune yönetici konsolunda ve tüm uygulama koruma ilkesi ayarlarını barındıran yeni yönetici konsolu olduğu için Azure portalında.
-
+> 
 > * Hem Intune yönetici konsolunda hem de Azure portalında uygulama koruma ilkeleri oluşturursanız, uygulamalara Azure portalında oluşturulan ilke uygulanır.
 
 Android ve iOS platformlarında desteklenen ilke ayarları listesini görmek için, aşağıdakilerden birini seçin:
 
 > [!div class="op_single_selector"]
-- [iOS ilkeleri](ios-mam-policy-settings.md)
-- [Android ilkeleri](android-mam-policy-settings.md)
+> - [iOS ilkeleri](ios-mam-policy-settings.md)
+> - [Android ilkeleri](android-mam-policy-settings.md)
 
 - Uygulama koruma ilkelerinin çalışmasıyla ve Intune uygulama koruma ilkeleri tarafından desteklenen senaryolarla ilgili daha ayrıntılı bir açıklama için bkz. [Uygulama koruma ilkelerini kullanarak uygulama verilerini koruma](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -129,13 +129,13 @@ Intune 1703 sürümünden başlayarak yeni uygulama koruma ilkesi oluşturma sı
 > [!IMPORTANT]
 > Yeni uygulama koruma ilkesi oluşturma adımında açılır listeden Windows 10 platformunu seçmeniz gerekir.
 
-1.  İlke ekle dikey penceresinde **İzin verilen uygulamalar** veya **Muaf uygulamalar**'ı seçerek İzin verilen veya Muaf uygulamalar dikey penceresini açın.
+1. İlke ekle dikey penceresinde **İzin verilen uygulamalar** veya **Muaf uygulamalar**'ı seçerek İzin verilen veya Muaf uygulamalar dikey penceresini açın.
 
-    > [!NOTE]
-    >
-    - **İzin verilen uygulamalar**: Bunlar, bu ilkeye bağlı kalması gereken uygulamalardır.
-    - **Muaf uygulamalar**: Bu uygulamalar bu ilkeden muaftır ve kurumsal verilere kısıtlama olmadan erişebilir.
-<br></br>
+   > [!NOTE]
+   > 
+   > - **İzin verilen uygulamalar**: Bunlar, bu ilkeye bağlı kalması gereken uygulamalardır.
+   > - **Muaf uygulamalar**: Bu uygulamalar bu ilkeden muaftır ve kurumsal verilere kısıtlama olmadan erişebilir.
+   > <br></br>
 2. İzin verilen veya Muaf uygulamalar dikey penceresinde **Uygulama ekle**'ye tıklayın. Önerilen Microsoft uygulamalarının yanı sıra mağaza veya masaüstü uygulamalarını ekleyebilirsiniz.
 
     a.  **Önerilen uygulamalar:** Yöneticilerin ilkeye kolayca aktarabilmesi için önceden doldurulmuş uygulama listesi (çoğunlukla Office uygulamaları).
@@ -210,8 +210,8 @@ Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama otu
 iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdakilerden birini seçin:
 
 > [!div class="op_single_selector"]
-- [iOS ilkeleri](ios-mam-policy-settings.md)
-- [Android ilkeleri](android-mam-policy-settings.md)
+> - [iOS ilkeleri](ios-mam-policy-settings.md)
+> - [Android ilkeleri](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Uyumluluğu ve kullanıcı durumunu izleme](monitor-mobile-app-management-policies-with-microsoft-intune.md)

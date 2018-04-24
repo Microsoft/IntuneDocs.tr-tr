@@ -1,29 +1,29 @@
 ---
-title: "Windows 10 ilke ayarları"
-description: "Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında yerleşik ve özel ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın."
-keywords: 
+title: Windows 10 ilke ayarları
+description: Kayıtlı Windows 10 masaüstü bilgisayarları ve Windows 10 mobil cihazlarında yerleşik ve özel ayarları yapılandırmanıza yardımcı olması için, bu konu başlığı altında listelenen ilke ayarlarını kullanın.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune’daki Windows 10 cihazları için Intune ilke ayarları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konu, Windows 10 cihazlarını yönetmek için kullanabileceğiniz Intune ilke ayarlarını anlamanıza yardımcı olacak bilgiler içermektedir. Bu konunun yanında [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune) makalesindeki yordamları okuyun.
 
@@ -203,12 +203,12 @@ Tüm ayarlar yalnızca Windows 10 masaüstüne yöneliktir.
 |**Bir tarama çalıştırılırken veya gerçek zamanlı koruma kullanılırken dışlanacak işlemler**|Dışlama listesine **.exe**, **.com** veya **.scr** türünde bir veya birden çok işlem ekler. Bu işlemler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.|
 
 
-### <a name="updates"></a>Updates
+### <a name="updates"></a>Güncelleştirmeler
 
 |Ayar adı|Ek bilgiler (gerekliyse)|
 |----------------|---------------|
 |**Otomatik güncelleştirmelere izin ver**|Otomatik güncelleştirmelere izin verir. Güncelleştirme davranışını denetlemek için aşağıdaki ayarlardan birini yapılandırın:<br />**İndirmeyi bildir**<br />**Bakım sırasında otomatik olarak yükle**<br />**Bakım sırasında otomatik olarak yükle ve yeniden başlat**<br />**Zamanlanan tarihte otomatik yükle ve yeniden başlat** Not: Bu seçenek belirtildiğinde şu ayarları yapılandırabilirsiniz: **Son kullanıcıya bildirimi önle** ve **Zamanlanmış güncelleştirmeler için yükleme gününü tanımla**.<br>(Yalnızca Windows 10 masaüstü)|
 |**Yayın öncesi özelliklere izin ver**|Microsoft’un Windows 10 cihazlara sürüm öncesi ayarlar ve özellikler dağıtmasına imkan tanır. Yalnızca ayarlara izin vermeyi tercih edebilirsiniz; aksi takdirde tüm sürüm öncesi ayarlar ve özellikler yüklenir.|
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

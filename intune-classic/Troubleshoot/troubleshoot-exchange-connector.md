@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0eef4e2ae3792c601bd4a32cd041d7d041091cca
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector’ın sorunlarını giderme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konu, Intune Exchange Connector ile ilgili olabilecek sorunların nasıl giderilebileceğini açıklamaktadır.
 
@@ -36,8 +36,8 @@ Exchange Connector yapılandırmasını denetleyip sorunun çözülüp çözülm
 - Exchange Connector’ı yapılandırırken, bir Exchange Connector’ı barındıran sunucuya olabildiğince yakın olan bir İstemci Erişimi Sunucusu (CAS) belirtin. CAS ile Exchange Connector arasındaki iletişim gecikmesi, özellikle O365 Dedicated kullanılırken cihaz bulma gecikmelerine neden olabilir.
 - Exchange CAS ile yapılan Exchange Connector eşitlemeleri arasında bir zaman gecikmesi olduğunu unutmayın. Tam bir eşitleme günde bir, bir delta eşitlemesi (hızlı eşitleme) iki saatte bir gerçekleşir. Yeni kaydedilmiş bir cihazı olan kullanıcının erişim edinmede bir gecikme yaşaması olasıdır.
 - 
-## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange’den bulunmayan Exchange ActiveSync cihazı
-Exchange Connector’ın Exchange sunucusu ile eşitlenip eşitlenmediğine bakın. Bunun için tam eşitleme veya delta eşitlemesi günlüklerini bulun. Bkz. Exchange Connector Günlükleri. Cihaz katıldığından bu yana bir tam eşitleme veya delta eşitlemesi başarıyla tamamlandıysa, bunun sorunun kaynağı olmadığı anlaşılmış olur. Hiçbir eşitleme gerçekleşmediyse, eşitleme günlüklerini toplayın ve destek isteğinize ekleyin.
+  ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange’den bulunmayan Exchange ActiveSync cihazı
+  Exchange Connector’ın Exchange sunucusu ile eşitlenip eşitlenmediğine bakın. Bunun için tam eşitleme veya delta eşitlemesi günlüklerini bulun. Bkz. Exchange Connector Günlükleri. Cihaz katıldığından bu yana bir tam eşitleme veya delta eşitlemesi başarıyla tamamlandıysa, bunun sorunun kaynağı olmadığı anlaşılmış olur. Hiçbir eşitleme gerçekleşmediyse, eşitleme günlüklerini toplayın ve destek isteğinize ekleyin.
 
 - Kullanıcının Intune lisansı yoksa, Exchange bağlayıcısı kullanıcının cihazlarını bulamaz.
 - Kullanıcının Birincil SMTP adresi AAD’deki UPN’sinden farklıysa, Exchange Connector bu Intune/AAD kullanıcısı için hiçbir cihaz bulamaz. Birincil SMTP adresini düzeltin.

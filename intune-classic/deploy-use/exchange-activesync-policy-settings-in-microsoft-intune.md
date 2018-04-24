@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Exchange ActiveSync ilkesi ayarları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevleri denetleyen ayarları yapılandırmak için Microsoft Intune **Exchange ActiveSync** ilkesini kullanın.
 
@@ -44,10 +44,11 @@ Exchange ActiveSync tarafından yönetilen cihazlardaki özellikleri ve işlevle
 
 ## <a name="encryption-settings"></a>Şifreleme ayarları
 
-|Ayar adı|Ayrıntılar|
-|----------------|---|
-|**Mobil cihazda şifreleme iste**<sup>1</sup>|Desteklendiği durumlarda bir cihazdaki verilerin şifrelenmesini zorunlu kılar.<br><br>Windows Phone 8 cihazları için bunu **Evet**olarak ayarlamanız gerekir.<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için **Mobil cihazların kilidini açmak için parola iste** ayarını etkinleştirin.|
-|**Depolama kartlarında şifreleme iste**|SD kartı gibi dış depolama alanlarında depolanan verilerin şifrelenmesini zorunlu kılar (desteklenen cihazlarda).
+|                           Ayar adı                           |                                                                                                                                    Ayrıntılar                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Mobil cihazda şifreleme iste</strong><sup>1</sup> | Desteklendiği durumlarda bir cihazdaki verilerin şifrelenmesini zorunlu kılar.<br><br>Windows Phone 8 cihazları için bunu <strong>Evet</strong>olarak ayarlamanız gerekir.<br /><br />iOS cihazlarda şifrelemeyi etkinleştirmek için <strong>Mobil cihazların kilidini açmak için parola iste</strong> ayarını etkinleştirin. |
+|       <strong>Depolama kartlarında şifreleme iste</strong>       |                                                                                  SD kartı gibi dış depolama alanlarında depolanan verilerin şifrelenmesini zorunlu kılar (desteklenen cihazlarda).                                                                                  |
+
 <sup>1</sup> Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
 -   Windows 8.1 çalıştıran cihazlarda şifrelemeyi zorunlu kılmak istiyorsanız [Windows için Aralık 2014 MDM istemci güncelleştirmesi](https://support.microsoft.com/kb/3013816)’ni her bir cihaza yüklemeniz gerekir.

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e023035dabea653b289b767ff08801b13068a9e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f8590fc524e770536a66c604add2ce82d0c28afc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-groups-to-organize-users-and-devices"></a>Kullanıcıları ve cihazları düzenlemek için grup oluşturma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konuda, yöneticilerin Intune’da kullanıcı gruplarını nasıl oluşturacakları açıklanır.
 
@@ -75,7 +75,7 @@ Yazılım ve cihaz ilkelerini dağıtmak için kullanıcı gruplarını kullanı
 
 3.  **Üyelik Ölçütlerini Tanımla** sayfasında **Şununla grup üyeliği başlat:** seçeneğini **Üst gruptaki tüm kullanıcılar**olarak ayarlayın.
 
-4.  **Şu güvenlik gruplarındaki üyeleri çıkar:**seçeneğinin yanında **Gözat**’ı seçin ve ardından **Şirket Yöneticisi**'ni seçin. Bu dışlama, Şirket Yöneticisi hesabını (kiracı yönetici olarak da bilinir) etkilemeden Intune Kullanıcıları grubunu yönetmenize olanak verir.
+4.  **Şu güvenlik gruplarındaki üyeleri çıkar:** seçeneğinin yanında **Gözat**’ı seçin ve ardından **Şirket Yöneticisi**'ni seçin. Bu dışlama, Şirket Yöneticisi hesabını (kiracı yönetici olarak da bilinir) etkilemeden Intune Kullanıcıları grubunu yönetmenize olanak verir.
 
 5.  **Doğrudan Üyeliği Tanımla** sayfasında, **İleri**'yi seçin. Intune Kullanıcıları grubunun, Şirket Yöneticisi dışında tüm kullanıcıları içermesini istediğinizden, burada bir şey yapmanız gerekmez.
 
@@ -83,5 +83,5 @@ Yazılım ve cihaz ilkelerini dağıtmak için kullanıcı gruplarını kullanı
 
 Yeni oluşturulan grubu **Gruplar** çalışma alanının **Tüm Kullanıcılar** bölümündeki **Gruplar** listesinde bulabilirsiniz. Ayrıca, buradan grubu düzenleyebilir veya silebilirsiniz.
 
->[!div class="step-by-step"]
-/intune/licenses-assign [&larr; **Intune lisanslarını yönetme**](/intune/licenses-assign)       [**İlkeler ve uygulamalar oluşturma** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+> [!div class="step-by-step"]
+> /intune/licenses-assign [&larr; **Intune lisanslarını yönetme**](/intune/licenses-assign)       [**İlkeler ve uygulamalar oluşturma** &rarr;](./start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4e53acad9fb2cf1e6c18b71900c6b671dd031e98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Kaydolmuş cihazlar için Intune’a uygulamalar ekleme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bir uygulamayı dağıtabilmeniz veya yönetebilmeniz için, onu önce Microsoft Intune’a eklemeniz gerekir. Bu konuda, kayıtlı cihazlar için nasıl uygulama ekleyeceğiniz gösterilir.
 
@@ -34,32 +34,32 @@ Bir uygulamayı dağıtabilmeniz veya yönetebilmeniz için, onu önce Microsoft
 ## <a name="add-the-app"></a>Uygulama ekleme
 Uygulamanın özelliklerini yapılandırmak ve uygulamayı bulut depolama alanınıza yüklemek için (uygunsa) Intune Yazılım Yayımcısı’nı kullanacaksınız. Aşağıdaki yordamı kullanın:
 
-1.  Intune Yazılım Yayımcısını başlatmak için [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda **Uygulamalar** &gt; **Uygulama Ekle**‘yi seçin.
+1. Intune Yazılım Yayımcısını başlatmak için [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda **Uygulamalar** &gt; **Uygulama Ekle**‘yi seçin.
 
-    > [!TIP]
-    > Yayımcının başlatılması için önce Intune kullanıcı adınızı ve parolanızı girmeniz gerekebilir.
+   > [!TIP]
+   > Yayımcının başlatılması için önce Intune kullanıcı adınızı ve parolanızı girmeniz gerekebilir.
 
-2.  Yayımcının **Yazılım kurulumu** sayfasında, **Bu yazılımın cihazlar için kullanılabilir duruma nasıl getirileceğini seçin** alanında aşağıdaki seçeneklerden birini belirtin:
-    - **Yazılım yükleyicisi**, uzantısı **.msi** olan uygulamalar için:
-        - **Yazılım yükleyicisi dosya türünü seçin**. Bu, dağıtmak istediğiniz yazılım türünü belirtir. Örneğin bir iOS uygulamasını yüklemek istiyorsanız, **iOS için Uygulama Paketi (&#42;.ipa dosyası)** öğesini seçin.
-        - **Yazılım kurulum dosyalarının konumunu belirtin**. Yükleme dosyalarının konumunu girin veya **Gözat**’ı seçerek bir listeden konumu seçin.
-        - **Aynı klasörden başka dosya ve alt klasör ekleme**. Bu seçenek yalnızca **Windows Installer** dosya türü içindir.<br>Windows Installer’ı kullanan bazı yazılımlar için genellikle yükleme dosyalarıyla aynı klasörde yer alan destek dosyaları gerekir. Bu dosyaları dağıtmak istiyorsanız bu seçeneği belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın bir bölümü kullanılır.
+2. Yayımcının **Yazılım kurulumu** sayfasında, **Bu yazılımın cihazlar için kullanılabilir duruma nasıl getirileceğini seçin** alanında aşağıdaki seçeneklerden birini belirtin:
+   - **Yazılım yükleyicisi**, uzantısı **.msi** olan uygulamalar için:
+       - **Yazılım yükleyicisi dosya türünü seçin**. Bu, dağıtmak istediğiniz yazılım türünü belirtir. Örneğin bir iOS uygulamasını yüklemek istiyorsanız, **iOS için Uygulama Paketi (&#42;.ipa dosyası)** öğesini seçin.
+       - **Yazılım kurulum dosyalarının konumunu belirtin**. Yükleme dosyalarının konumunu girin veya **Gözat**’ı seçerek bir listeden konumu seçin.
+       - **Aynı klasörden başka dosya ve alt klasör ekleme**. Bu seçenek yalnızca **Windows Installer** dosya türü içindir.<br>Windows Installer’ı kullanan bazı yazılımlar için genellikle yükleme dosyalarıyla aynı klasörde yer alan destek dosyaları gerekir. Bu dosyaları dağıtmak istiyorsanız bu seçeneği belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın bir bölümü kullanılır.
 
-  -   **Dış bağlantı**; uygulama mağazasının bağlantısını belirterek oluşturmak istediğiniz uygulamalar için:
+   -   **Dış bağlantı**; uygulama mağazasının bağlantısını belirterek oluşturmak istediğiniz uygulamalar için:
 
-        - **URL’yi belirtin**. Aşağıdakilerden birinin URL'sini belirtin:
-            - Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’si. Örneğin Android için Microsoft Uzak Masaüstü uygulamasını dağıtmak istiyorsanız, **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** seçeneğini belirtin.<br>Uygulamanın URL’sini bulmak için bir arama motoru kullanarak uygulamayı içeren mağaza sayfasını bulun. Örneğin, Uzak Masaüstü uygulamasını bulmak için **Microsoft Uzak Masaüstü Android** araması yapabilirsiniz.
-            - Bir web sitesi. Intune, cihaza sitenin bir kısayol simgesini (web klibi olarak bilinir) dağıtır.
-            - Web üzerinde bir uygulama. Intune, cihaza uygulamanın bir kısayol simgesini dağıtır.
-        - **Bu bağlantıyı açmak için yönetilen bir tarayıcı isteyin (yalnızca Android ve iOS için)**. Kullanıcılara bir web sitesi veya web uygulamasının bağlantısını dağıttığınızda bunu yalnızca Intune ile yönetilen tarayıcıda açabilirler. Bu tarayıcı cihazlarında yüklü olmalıdır.<br>Yönetilen tarayıcı hakkında daha fazla bilgi için bkz. [Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme](manage-internet-access-using-managed-browser-policies.md).<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
+       - **URL’yi belirtin**. Aşağıdakilerden birinin URL'sini belirtin:
+           - Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’si. Örneğin Android için Microsoft Uzak Masaüstü uygulamasını dağıtmak istiyorsanız, **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** seçeneğini belirtin.<br>Uygulamanın URL’sini bulmak için bir arama motoru kullanarak uygulamayı içeren mağaza sayfasını bulun. Örneğin, Uzak Masaüstü uygulamasını bulmak için **Microsoft Uzak Masaüstü Android** araması yapabilirsiniz.
+           - Bir web sitesi. Intune, cihaza sitenin bir kısayol simgesini (web klibi olarak bilinir) dağıtır.
+           - Web üzerinde bir uygulama. Intune, cihaza uygulamanın bir kısayol simgesini dağıtır.
+       - **Bu bağlantıyı açmak için yönetilen bir tarayıcı isteyin (yalnızca Android ve iOS için)**. Kullanıcılara bir web sitesi veya web uygulamasının bağlantısını dağıttığınızda bunu yalnızca Intune ile yönetilen tarayıcıda açabilirler. Bu tarayıcı cihazlarında yüklü olmalıdır.<br>Yönetilen tarayıcı hakkında daha fazla bilgi için bkz. [Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme](manage-internet-access-using-managed-browser-policies.md).<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
 
-  -   **Uygulama mağazasından yönetilen iOS uygulaması**; iTunes mağazasından ücretsiz sağlanan ve mobil uygulama yönetimi MAM ilkeleriyle yönetmek istediğiniz uygulamalar için aşağıdakileri belirtin:
+   -   **Uygulama mağazasından yönetilen iOS uygulaması**; iTunes mağazasından ücretsiz sağlanan ve mobil uygulama yönetimi MAM ilkeleriyle yönetmek istediğiniz uygulamalar için aşağıdakileri belirtin:
 
-        - **URL’yi belirtin**. Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’sini girin. Örneğin iOS için Microsoft Çalışma Klasörleri uygulamasını dağıtmak istiyorsanız, **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** seçeneğini belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
+       - **URL’yi belirtin**. Dağıtmak istediğiniz uygulamanın uygulama mağazası URL’sini girin. Örneğin iOS için Microsoft Çalışma Klasörleri uygulamasını dağıtmak istiyorsanız, **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** seçeneğini belirtin.<br>Bu yükleme türünde, bulut depolama alanınızın hiçbir bölümü kullanılmaz.
 
-        Örneğin, cihazlara iTunes mağazasından Microsoft Word uygulamasını dağıtmak istiyorsanız, sayfa şuna benzer görünür:
+       Örneğin, cihazlara iTunes mağazasından Microsoft Word uygulamasını dağıtmak istiyorsanız, sayfa şuna benzer görünür:
 
-        ![Intune Software Publisher](./media/publisher-for-mobile.png)
+       ![Intune Software Publisher](./media/publisher-for-mobile.png)
 
 > [!NOTE]
 > Bir mağazadan uygulama eklediğinizde ve dağıttığınızda, son kullanıcıların uygulamayı yükleyebilmesi için o mağazada bir hesapları olması gerekir.

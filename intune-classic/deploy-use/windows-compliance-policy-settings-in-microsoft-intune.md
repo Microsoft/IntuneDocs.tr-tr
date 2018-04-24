@@ -1,37 +1,37 @@
 ---
-title: "Windows cihazları için uyumluluk ilkesi ayarları"
-description: "Bu konuda, Windows cihazları için uyumluluk ilkesinde belirleyebileceğiniz kurallar ve ayarlar açıklanmaktadır."
-keywords: 
+title: Windows cihazları için uyumluluk ilkesi ayarları
+description: Bu konuda, Windows cihazları için uyumluluk ilkesinde belirleyebileceğiniz kurallar ve ayarlar açıklanmaktadır.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune’da Windows cihazları için uyumluluk ilkesi ayarları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konu başlığı altında açıklanan ilke ayarları, Windows işletim sistemini çalıştıran cihazlar için geçerlidir. Aşağıdaki bölümlerde desteklenen Windows sürümleri açıklanmıştır.
 
 Diğer platformlar hakkında bilgi arıyorsanız, aşağıdakilerden birini seçin:
 > [!div class="op_single_selector"]
-- [iOS cihazları için uyumluluk ilkesi ayarları](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Android cihazları için uyumluluk ilkesi ayarları](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Android for Work için uyumluluk ilkesi ayarları](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [iOS cihazları için uyumluluk ilkesi ayarları](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android cihazları için uyumluluk ilkesi ayarları](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android for Work için uyumluluk ilkesi ayarları](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone cihazları için uyumluluk ilkesi ayarları
 Bu bölümde listelenen ayarlar Windows Phone 8.1 ve üstünde desteklenir.
@@ -80,7 +80,7 @@ Bu bölümde listelenen ayarlar Windows Phone 8.1 ve üstünde desteklenir.
   > Cihaz sistem durumu kanıtlamanın bir parçası olarak yüklenen üçüncü taraf **Erken Başlatma Kötü Amaçlı Yazılımdan Koruma** (ELAM) yazılımları Windows cihazları tarafından desteklenmez.
 
   HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Durum Kanıtlama CSP](https://msdn.microsoft.com/library/dn934876.aspx).
-###  <a name="device-property-settings"></a>Cihaz özelliği ayarları
+  ###  <a name="device-property-settings"></a>Cihaz özelliği ayarları
 - **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumlu değil olarak bildirilir.
     Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Kullanıcı, cihazını yükselttikten sonra şirket kaynaklarına erişebilir.
 
@@ -153,4 +153,4 @@ Windows 10 cihazlarının yeni veya var olan uyumluluk ilkelerinde sağlıklı o
 - Windows 8.1 bilgisayarları **6.3** sürümünü döndürür. Windows için işletim sistemi sürüm kuralı Windows 8.1’e ayarlanırsa, cihaz Windows 8.1’e sahip olsa bile uyumsuz olarak bildirilir.
 
 - Windows 10 çalıştıran bilgisayarlarda, sürüm **10.0** artı **winver** komutuyla döndürülen OS Yapı numarasına ayarlanmalıdır. Örneğin, 10.0.10586 gibi bir numara olabilir.
-> !["Windows hakkında" iletişim kutusunda vurgulanan işletim sistemi derleme sürümü](./media/ca_win10-os-version.png)
+  > !["Windows hakkında" iletişim kutusunda vurgulanan işletim sistemi derleme sürümü](./media/ca_win10-os-version.png)

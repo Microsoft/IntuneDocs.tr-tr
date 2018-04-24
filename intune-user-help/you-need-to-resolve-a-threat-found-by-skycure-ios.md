@@ -1,31 +1,29 @@
 ---
-title: "iOS için Symantec Endpoint Protection Mobile tarafından bulunan tehditleri çözme | Microsoft Docs"
-description: "iOS cihazınızda bulunan tehditleri nasıl düzelteceğinizi öğrenin."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS için Symantec Endpoint Protection Mobile tarafından bulunan tehditleri çözme | Microsoft Docs
+description: iOS cihazınızda bulunan tehditleri nasıl düzelteceğinizi öğrenin.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: d85fd82d4af0c35c6bd6cd9bf329c5d981b6693b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8efab6aea68802da0df9b24a75812918e255a57
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile tarafından bulunan bir tehdidi çözme
 
-Symantec Endpoint Protection Mobile, cihazınızda olası bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için bu sorunu düzeltmeniz gerekiyor. Gördüğünüz ileti şuna benzeyebilir:
-
-![Symantec Endpoint Protection Mobile’dan uyumluluk sorunu iletisi](./media/ios-skycure-noncompliant-in-ssp.png)
+Symantec Endpoint Protection Mobile, cihazınızda olası bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için bu sorunu düzeltmeniz gerekiyor. 
 
 Bu sorunu çözmek için Symantec Endpoint Protection Mobile uygulamasını açın ve uygulamada gösterilen yönergeleri izleyin.
 

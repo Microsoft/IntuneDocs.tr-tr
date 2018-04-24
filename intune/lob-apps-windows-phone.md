@@ -15,15 +15,15 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4053c2f932f6101397deb6bf0c3a142fa713aec4
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 6f1a07960f4c00fa5562529a97453a61202a3913
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Windows Phone iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu makaledeki bilgiler Windows Phone iş kolu uygulamalarını Microsoft Intune’a eklemenize yardımcı olabilir. İş kolu (LOB) uygulaması, bir uygulama yükleme dosyasından Intune'a eklediğiniz uygulamadır. Bu tür uygulamalar genellikle şirket içinde yazılanlardır. Intune LOB uygulamasını kullanıcıların cihazlarına yükler. 
 

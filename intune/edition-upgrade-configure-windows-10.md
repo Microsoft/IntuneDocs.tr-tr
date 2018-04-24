@@ -1,27 +1,27 @@
 ---
-title: "Microsoft Intune - Azure ile Windows 10 cihazlarını yükseltme | Microsoft Docs"
-description: "Windows 10 cihazlarını yeni sürümlere yükseltmek için Microsoft Intune'da bir cihaz profili oluşturun. Ayrıca Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic ve Mobile için desteklenen yükseltme yollarına da bakın."
-keywords: 
+title: Microsoft Intune - Azure ile Windows 10 cihazlarını yükseltme | Microsoft Docs
+description: Windows 10 cihazlarını yeni sürümlere yükseltmek için Microsoft Intune'da bir cihaz profili oluşturun. Ayrıca Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic ve Mobile için desteklenen yükseltme yollarına da bakın.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8084f1b2fbd513de596bd97f4ffec995b6f7aac4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Intune'da Windows 10 sürüm yükseltme profilini yapılandırma
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Windows 10 sürümünü çalıştıran cihazları farklı bir sürüme otomatik olarak yükseltmek için Intune'da bir yükseltme profili yapılandırın. Ayrıca, desteklenen yükseltme yollarına da bakın.
 
@@ -128,10 +128,10 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 5. **Platform** açılan listesinden **Windows 10 ve üzeri**’ni seçin.
 6. **Profil türü** açılan listesinde **Sürüm yükseltme**’yi seçin.
 7. **Sürüm Yükseltme** özelliklerinde, aşağıdaki ayarları girin:
-  - **Yükseltilecek sürüm** - Açılan listede, hedeflenen cihazları yükselttiğiniz Windows 10 Masaüstü, Windows 10 Holographic veya Windows 10 Mobile sürümünü seçin.
-  - **Ürün Anahtarı** - Microsoft’tan aldığınız ve tüm hedeflenen Windows 10 Masaüstü cihazlarını yükseltmek için kullanılabilen ürün anahtarını girin. 
+   - **Yükseltilecek sürüm** - Açılan listede, hedeflenen cihazları yükselttiğiniz Windows 10 Masaüstü, Windows 10 Holographic veya Windows 10 Mobile sürümünü seçin.
+   - **Ürün Anahtarı** - Microsoft’tan aldığınız ve tüm hedeflenen Windows 10 Masaüstü cihazlarını yükseltmek için kullanılabilen ürün anahtarını girin. 
     Ürün anahtarı içeren bir ilke oluşturduktan sonra, anahtar güncelleştirilemez ve güvenlik nedenleriyle gizlenir. Ürün anahtarını değiştirmek için tüm anahtarı yeniden girin.
-  - **Lisans Dosyası** - Microsoft'tan aldığınız lisans dosyasını belirtmek için **Gözat**'ı seçin. Bu lisans dosyası hedeflenen cihazları yükselttiğiniz Windows Holographic veya Windows 10 Mobile sürümüne yönelik lisans bilgilerini içerir.
+   - **Lisans Dosyası** - Microsoft'tan aldığınız lisans dosyasını belirtmek için **Gözat**'ı seçin. Bu lisans dosyası hedeflenen cihazları yükselttiğiniz Windows Holographic veya Windows 10 Mobile sürümüne yönelik lisans bilgilerini içerir.
 8. İşiniz bittiğinde, değişikliklerinizi kaydetmek için **Oluştur**'u seçin.
 
 Profil oluşturulur ve profiller arasında listelenir.

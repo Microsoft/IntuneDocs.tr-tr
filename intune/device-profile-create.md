@@ -14,15 +14,15 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5070052c0d4cce3cfd81a7bae259bc7dfb22e7f
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 1. [Azure portalında](https://portal.azure.com), **Tüm Hizmetler**’i seçin ve **Microsoft Intune** araması yapın.
@@ -31,33 +31,33 @@ ms.lasthandoff: 03/20/2018
 
 3. Aşağıdaki özellikleri girin:
 
-    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-    - **Açıklama**: Profil için bir açıklama girin. (Bu isteğe bağlıdır ama kullanılması önerilir.)
-    - **Platform**: Platform türünü seçin:  
+   - **Ad**: Yeni profil için açıklayıcı bir ad girin.
+   - **Açıklama**: Profil için bir açıklama girin. (Bu isteğe bağlıdır ama kullanılması önerilir.)
+   - **Platform**: Platform türünü seçin:  
 
-        - **Android**
-        - **Android for Work**
-        - **Android**
-        - **macOS**
-        - **Windows Phone 8.1**
-        - **Windows 8.1 ve üzeri**
-        - **Windows 10 ve üzeri**
+       - **Android**
+       - **Android for Work**
+       - **Android**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 ve üzeri**
+       - **Windows 10 ve üzeri**
 
-    - **Profil türü**: Oluşturmak istediğiniz türü seçin. Liste, seçtiğiniz platforma bağlıdır.
-    - **Ayarlar**: Aşağıdaki konu başlıkları her profil türü için ayarları açıklar:
+   - **Profil türü**: Oluşturmak istediğiniz türü seçin. Liste, seçtiğiniz platforma bağlıdır.
+   - **Ayarlar**: Aşağıdaki konu başlıkları her profil türü için ayarları açıklar:
 
-        -  [Cihaz özelliği ayarları](device-features-configure.md)
-        -  [Cihaz kısıtlama ayarları](device-restrictions-configure.md)
-        -  [E-posta ayarları](email-settings-configure.md)
-        -  [VPN ayarları](vpn-settings-configure.md)
-        -  [Wi-Fi ayarları](wi-fi-settings-configure.md)
-        -  [Windows 10 sürüm yükseltme ayarları](edition-upgrade-configure-windows-10.md)
-        -  [Sertifika ayarları](certificates-configure.md)
-        -  [Windows Bilgi Koruması ayarları](windows-information-protection-configure.md)
-        -  [Eğitim ayarları](education-settings-configure.md)
-        -  [Özel ayarlar](custom-settings-configure.md)
+       -  [Cihaz özelliği ayarları](device-features-configure.md)
+       -  [Cihaz kısıtlama ayarları](device-restrictions-configure.md)
+       -  [E-posta ayarları](email-settings-configure.md)
+       -  [VPN ayarları](vpn-settings-configure.md)
+       -  [Wi-Fi ayarları](wi-fi-settings-configure.md)
+       -  [Windows 10 sürüm yükseltme ayarları](edition-upgrade-configure-windows-10.md)
+       -  [Sertifika ayarları](certificates-configure.md)
+       -  [Windows Bilgi Koruması ayarları](windows-information-protection-configure.md)
+       -  [Eğitim ayarları](education-settings-configure.md)
+       -  [Özel ayarlar](custom-settings-configure.md)
 
-    ![Profil oluştur ekran görüntüsü](./media/create-device-profile.png)
+     ![Profil oluştur ekran görüntüsü](./media/create-device-profile.png)
 
 4. Bitince **Oluştur**’u seçin.
 

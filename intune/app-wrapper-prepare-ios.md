@@ -1,28 +1,28 @@
 ---
-title: "iOS uygulamalarını Intune Uygulama Sarmalama Aracı ile sarmalama"
-description: "iOS uygulamalarınızı, uygulamanın kendi kodunda değişiklik yapmadan sarmalamayı öğrenin. Mobil uygulama yönetimi ilkelerini uygulayabilmek için uygulamaları hazırlayın."
-keywords: 
+title: iOS uygulamalarını Intune Uygulama Sarmalama Aracı ile sarmalama
+description: iOS uygulamalarınızı, uygulamanın kendi kodunda değişiklik yapmadan sarmalamayı öğrenin. Mobil uygulama yönetimi ilkelerini uygulayabilmek için uygulamaları hazırlayın.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Şirket içi iOS uygulamaları için Intune uygulama koruma özelliklerini uygulamanın kodunu değiştirmeden etkinleştirmek üzere iOS için Microsoft Intune Uygulama Sarmalama Aracı'nı kullanın.
 
@@ -99,49 +99,49 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 4. **Sertifikalar, Kimlikler ve Profiller**’e tıklayın.
 
-  ![Apple Geliştirici portalı](./media/iOS-signing-cert-1.png)
+   ![Apple Geliştirici portalı](./media/iOS-signing-cert-1.png)
 
 5. SCP ![Sağ üst köşedeki Apple Geliştirici portalı artı işaretine](./media/iOS-signing-cert-2.png) tıklayarak bir iOS sertifikası ekleyin.
 
 6. **Üretim** altında **Şirket İçi ve Geçici** bir sertifika oluşturmayı seçin.
 
-  ![Şirket içi ve Geçici sertifika seçin](./media/iOS-signing-cert-3.png)
+   ![Şirket içi ve Geçici sertifika seçin](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >Uygulamayı dağıtmayı planlamıyorsanız ve yalnızca dahili olarak test etmek istiyorsanız, Üretim sertifikası yerine bir iOS Uygulama Geliştirme sertifikası kullanabilirsiniz. Bir geliştirme sertifikası kullanıyorsanız mobil sağlama profilinin, uygulamanın yükleneceği cihazlara başvurduğundan emin olun.
+   >[!NOTE]
+   >Uygulamayı dağıtmayı planlamıyorsanız ve yalnızca dahili olarak test etmek istiyorsanız, Üretim sertifikası yerine bir iOS Uygulama Geliştirme sertifikası kullanabilirsiniz. Bir geliştirme sertifikası kullanıyorsanız mobil sağlama profilinin, uygulamanın yükleneceği cihazlara başvurduğundan emin olun.
 
 7. Sayfanın altındaki **İleri**’ye tıklayın.
 
 8. Mac OS bilgisayarınızdaki Anahtarlık Erişim uygulamasını kullanarak **Sertifika İmzalama İsteği (CSR)** oluşturma yönergelerini okuyun.
 
-  ![CSR oluşturma yönergelerini okuyun](./media/iOS-signing-cert-4.png)
+   ![CSR oluşturma yönergelerini okuyun](./media/iOS-signing-cert-4.png)
 
 9. Bir Sertifika İmzalama İsteği oluşturmak için yukarıdaki yönergeleri izleyin. Mac OS bilgisayarınızda **Anahtarlık Erişimi** uygulamasını başlatın.
 
 10. Ekranın üst kısmındaki Mac OS menüsünde **Anahtarlık Erişimi > Sertifika Yardımcısı > Bir Sertifika Yetkilisinden Sertifika İste** bölümüne gidin.  
 
-  ![Anahtarlık Erişimi’nde bir Sertifika Yetkilisinden bir sertifika isteyin](./media/iOS-signing-cert-5.png)
+    ![Anahtarlık Erişimi’nde bir Sertifika Yetkilisinden bir sertifika isteyin](./media/iOS-signing-cert-5.png)
 
 11. Bir CSR dosyasının nasıl oluşturulacağını öğrenmek için Apple geliştirici sitesindeki yönergeleri izleyin. CSR dosyasını Mac OS bilgisayarınıza kaydedin.
 
-  ![Anahtarlık Erişimi’nde bir Sertifika Yetkilisinden bir sertifika isteyin](./media/iOS-signing-cert-6.png)
+    ![Anahtarlık Erişimi’nde bir Sertifika Yetkilisinden bir sertifika isteyin](./media/iOS-signing-cert-6.png)
 
 12. Apple Geliştirici sitesine dönün. 
               **Devam**'a tıklayın. Ardından CSR dosyasını karşıya yükleyin.
 
 13. Apple imzalama sertifikanızı oluşturur. Bunu indirin ve Mac OS bilgisayarınızda hatırlayacağınız bir konuma kaydedin.
 
-  ![İmzalama sertifikanızı indirin](./media/iOS-signing-cert-7.png)
+    ![İmzalama sertifikanızı indirin](./media/iOS-signing-cert-7.png)
 
 14. Sertifikayı bir anahtarlığa eklemek için indirmiş olduğunuz sertifika dosyasına çift tıklayın.
 
 15. **Anahtarlık Erişimi**’ni yeniden açın. Sertifikanızı bulmak için sağ üst kısımdaki arama çubuğunda sertifikanızın adını aratın. Menünün görünmesini sağlamak için öğeye sağ tıklayın ve **Bilgi Al**’a tıklayın. Örnek ekranlarda üretim sertifikası yerine geliştirme sertifikası kullanıyoruz.
 
-  ![Sertifikanızı bir anahtarlığa ekleyin](./media/iOS-signing-cert-8.png)
+    ![Sertifikanızı bir anahtarlığa ekleyin](./media/iOS-signing-cert-8.png)
 
 16. Bir bilgi iletisi görüntülenir. En alta kaydırın ve **Parmak izleri** etiketinin altına bakın. Uygulama Sarmalama Aracı’nda "-c" için bağımsız değişken olarak kullanmak üzere **SHA1** dizesini (bulanıklaştırılmış) kopyalayın.
 
-  ![Sertifikanızı bir anahtarlığa ekleyin](./media/iOS-signing-cert-9.png)
+    ![Sertifikanızı bir anahtarlığa ekleyin](./media/iOS-signing-cert-9.png)
 
 
 
@@ -155,7 +155,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 4. **Dağıtım** altında bir **Şirket içi** sağlama profili oluşturmayı seçin.
 
-  ![Şirket içi sağlama profilini seçin](./media/iOS-provisioning-profile-1.png)
+   ![Şirket içi sağlama profilini seçin](./media/iOS-provisioning-profile-1.png)
 
 5. 
               **Devam**'a tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
@@ -417,8 +417,8 @@ Sorun giderme sırasında sarmalanmış uygulamalarınızın günlüklerini alma
 4. "Başlarken" bağlantısına tıklayın.
 5. Artık uygulamaları e-posta aracılığıyla veya bir OneDrive konumuna kopyalayarak paylaşabilirsiniz.
 
->[!NOTE]
-Günlük işlevi, Intune Uygulama Sarmalama Aracı sürüm 7.1.13 veya üstüyle sarmalanmış uygulamalar için etkinleştirilir.
+> [!NOTE]
+> Günlük işlevi, Intune Uygulama Sarmalama Aracı sürüm 7.1.13 veya üstüyle sarmalanmış uygulamalar için etkinleştirilir.
 
 ### <a name="see-also"></a>Ayrıca bkz:
 - [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](apps-prepare-mobile-application-management.md)</br>

@@ -1,25 +1,25 @@
 ---
-title: "Kullanıcıları yönetmeye başlama"
+title: Kullanıcıları yönetmeye başlama
 titlesuffix: Microsoft Intune
-description: "Intune'a bir kullanıcı ekleyin ve şirket kaynaklarına mobil cihazlardan erişebilmesi için bu kullanıcıya bir lisans atayın."
-keywords: 
+description: Intune'a bir kullanıcı ekleyin ve şirket kaynaklarına mobil cihazlardan erişebilmesi için bu kullanıcıya bir lisans atayın.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-managing-users"></a>Kullanıcıları yönetmeye başlama
 
@@ -44,8 +44,8 @@ Bir kullanıcı oluşturduktan sonra, bu kullanıcıya bir Intune lisansı atama
 3. Kullanıcı bilgilerinin yüklenmesi için bir süre beklemeniz gerekebilir. Yüklendikten sonra kullanıcının **Ürün lisansları** için **Düzenle**'yi seçin.
 4. Kullanıcıyı bir **Konum**'a atayın, sonra Intune'u **açık** hale getirin.
 
- > [!NOTE]
- > Bu işlem, kullanıcı için lisanslarınızdan birini kullanır. Yayındaki ortamınızı kullanıyorsanız bu lisansın kullanımını, daha sonra gerçek bir kullanıcıya yeniden atayabilmek için kapatabilirsiniz.
+   > [!NOTE]
+   > Bu işlem, kullanıcı için lisanslarınızdan birini kullanır. Yayındaki ortamınızı kullanıyorsanız bu lisansın kullanımını, daha sonra gerçek bir kullanıcıya yeniden atayabilmek için kapatabilirsiniz.
 
 5. **Kaydet**’i seçin.
 

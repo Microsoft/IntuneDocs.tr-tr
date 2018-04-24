@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4973e896109589a91891545bbf6db6ca6df45aad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Şirkete ait cihazları Microsoft Intune'daki cihaz kayıt yöneticisi ile kaydetme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek için Intune'u kullanabilir. *Cihaz kayıt yöneticisi* (DEM) hesabı, 1.000’e kadar cihazı kaydedebilen özel bir kullanıcı hesabıdır. Varolan kullanıcılara özel DEM yetenekleri vermek için kullanıcıları DEM hesabına ekleyin. Kaydedilen her cihaz tek bir lisans kullanır. Bu hesap aracılığıyla kaydedilen cihazları, kişisel ("KCG") cihazlar olarak değil paylaşılan cihazlar (kullanıcı benzeşimi olmayan) olarak kullanmanızı öneririz.  
 
@@ -67,22 +67,22 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
 
 ## <a name="add-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisi ekleme
 
-1.  DEM hesabına eklemek istediğiniz kullanıcının zaten mevcut olduğundan emin olun. Kullanıcıyı eklemeniz gerekiyorsa [Office 365 portalı](https://go.microsoft.com/fwlink/p/?LinkId=698854)’nda oturum açın ve [Kullanıcıları Office 365 portalına tek tek veya toplu halde ekleme](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) bölümündeki adımları takip edin.
+1. DEM hesabına eklemek istediğiniz kullanıcının zaten mevcut olduğundan emin olun. Kullanıcıyı eklemeniz gerekiyorsa [Office 365 portalı](https://go.microsoft.com/fwlink/p/?LinkId=698854)’nda oturum açın ve [Kullanıcıları Office 365 portalına tek tek veya toplu halde ekleme](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) bölümündeki adımları takip edin.
 
-2.  [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda yönetici kimlik bilgilerinizle oturum açın.
+2. [Microsoft Intune yönetim konsolu](https://manage.microsoft.com)’nda yönetici kimlik bilgilerinizle oturum açın.
 
-3.  Gezinti bölmesinde, **Yönetici**'yi seçin, **Yönetici Yönetimi**'ne gidin ve **Cihaz Kayıt Yöneticisi**'ni seçin. **Cihaz Kayıt Yöneticileri** sayfası açılır.
+3. Gezinti bölmesinde, **Yönetici**'yi seçin, **Yönetici Yönetimi**'ne gidin ve **Cihaz Kayıt Yöneticisi**'ni seçin. **Cihaz Kayıt Yöneticileri** sayfası açılır.
 
-4.  **Ekle...**’yi seçin. **Cihaz Kayıt Yöneticisi Ekle** iletişim kutusu açılır.
+4. **Ekle...**’yi seçin. **Cihaz Kayıt Yöneticisi Ekle** iletişim kutusu açılır.
 
-5.  Intune hesabının **Kullanıcı Kimliği**'ni girin ve ardından **Tamam**'ı seçin.
+5. Intune hesabının **Kullanıcı Kimliği**'ni girin ve ardından **Tamam**'ı seçin.
 
-    DEM kullanıcısı artık, bir son kullanıcının KCG senaryosu için Şirket Portalı’nda kullandığı yordamı kullanarak mobil cihazları kaydedebilir. Yönetici son kullanıcı, Şirket Portalı uygulamasını yükleyip, kendi DEM kimlik bilgilerini en fazla 1000 cihaz üzerinde kullanarak cihazı kaydedebilir. Her bir platformda son kullanıcı kayıt adımları için bkz.
+   DEM kullanıcısı artık, bir son kullanıcının KCG senaryosu için Şirket Portalı’nda kullandığı yordamı kullanarak mobil cihazları kaydedebilir. Yönetici son kullanıcı, Şirket Portalı uygulamasını yükleyip, kendi DEM kimlik bilgilerini en fazla 1000 cihaz üzerinde kullanarak cihazı kaydedebilir. Her bir platformda son kullanıcı kayıt adımları için bkz.
 
-  - [iOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [macOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [Android cihazınızı Intune’a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [Windows cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [iOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [macOS cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [Android cihazınızı Intune’a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [Windows cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Delete a device enrollment manager from Intune
 

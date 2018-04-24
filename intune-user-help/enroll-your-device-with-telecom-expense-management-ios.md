@@ -1,27 +1,27 @@
 ---
-title: "Intune ile iOS cihazınızı telekomünikasyon gider yönetimine kaydetme"
-description: "Bir iOS cihazının telekom gider yönetimine nasıl kaydedileceğini öğrenin."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Intune ile iOS cihazınızı telekomünikasyon gider yönetimine kaydetme
+description: Bir iOS cihazının telekom gider yönetimine nasıl kaydedileceğini öğrenin.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90b07e1f18ab3cb9c74337e2a3538f186f4ea52a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ff51405ee48851b5a48c4d6142c33bc16ed6218e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>iOS cihazınızı telekomünikasyon gider yönetimine kaydetme
 
@@ -40,11 +40,11 @@ Uygun seçeneği belirlediğinizde App Store’dan [__Datalert__](https://itunes
 
 1. __Microsoft hesabı ile kaydol__’u seçin.
 
-  ![Bir Microsoft Office 365 hesabı ve Intune aboneliğiniz olduğunda ekranın üst kısmında telefon numarası alanı ve alt kısmında "Microsoft hesabı ile kaydol" seçenekleri sunan Datalert uygulamasının Ayarlar ekranının görüntüsü.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
+   ![Bir Microsoft Office 365 hesabı ve Intune aboneliğiniz olduğunda ekranın üst kısmında telefon numarası alanı ve alt kısmında "Microsoft hesabı ile kaydol" seçenekleri sunan Datalert uygulamasının Ayarlar ekranının görüntüsü.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
 2. __"Datalert" "Authenticator"ı açmak istiyor__ şeklinde bir bildirim alırsınız. __Aç__'ı seçin.
 
-  ![Datalert uygulamasının isteği üzerine kullanıcıdan Authenticator uygulamasını açmasını isteyen açılır pencerenin görüntüsü.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
+   ![Datalert uygulamasının isteği üzerine kullanıcıdan Authenticator uygulamasını açmasını isteyen açılır pencerenin görüntüsü.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
 
 3. __Microsoft okul veya iş hesabınızla__ oturum açın. Datalert kurulumu birkaç dakika çalışıp tamamlanmalıdır. Tamamlandığında __Son__’a dokunun.
 
@@ -52,15 +52,15 @@ Uygun seçeneği belirlediğinizde App Store’dan [__Datalert__](https://itunes
 
 1. Cihazınızın telefon numarasını belirtin.
 
-  ![Datalert uygulamasında telefon numarası istenen ekran görüntüsü.](./media/ios-enroll-12-tem-datalert-phone-number.png)
+   ![Datalert uygulamasında telefon numarası istenen ekran görüntüsü.](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
 2. Ardından SMS iletisi aracılığıyla doğrulama kodu alırsınız. Kodu sağlayın ve __Tamam__’a dokunun.
 
-  ![Datalert uygulamasında SMS doğrulama kodu istenen ekran görüntüsü.](./media/ios-enroll-13-tem-datalert-sms.png)
+   ![Datalert uygulamasında SMS doğrulama kodu istenen ekran görüntüsü.](./media/ios-enroll-13-tem-datalert-sms.png)
 
 3. Doğrulama kodunu sağladıktan sonra Datalert kurulumu tamamlanır. __Son__’a dokunmanızla birlikte verilerinizi Datalert uygulamasından izlemeniz mümkün olacaktır.
 
-  ![Datalert uygulamasının bugünün veri kullanımını izleme görüntüsü.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
+   ![Datalert uygulamasının bugünün veri kullanımını izleme görüntüsü.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 
 Kaydolduktan sonra, veri kullanımınızı Datalert uygulamasında görmeye başlarsınız.
 

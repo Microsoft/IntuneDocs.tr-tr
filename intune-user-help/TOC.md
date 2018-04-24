@@ -128,7 +128,7 @@
 ### [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
 ### [Cihazınızı şifreleme](encrypt-your-device-windows.md)
 ### [Parolanızı ayarlama veya değiştirme](set-or-change-your-password-windows.md)
-### [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-windows.md)
+### [Cihazınızın Intune kaydını kaldırma](unenroll-your-device-from-intune-windows.md)
 ### [Cihazınızın kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [Cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-windows.md)

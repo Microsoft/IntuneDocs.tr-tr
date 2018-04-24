@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e07bc0eb78145d508085120e9ef764cc4b02ae4d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93ff84d263c2fe8825d2cf5a86249bbf19cb9173
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Microsoft Intune'a şirketin sahip olduğu iOS cihazları kaydetme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune, şirkete ait iOS cihazlarının Apple Aygıt Kayıt Programı (DEP) veya bir Mac bilgisayarında çalışan [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) aracı ile kaydedilmesini destekler.
 
@@ -71,11 +71,11 @@ Aşağıdakileri desteklemek için kullanıcı benzeşimi gereklidir:
 
 5. Oturum açtıktan sonra, kullanıcıdan cihazını kaydetmesi istenir. İlk adım cihazını tanımlamaktır. Uygulama, daha önce şirket için kaydedilmiş ve kullanıcının Intune hesabına atanmış iOS cihazlarının bir listesini sunar. Kullanıcı eşleşen cihazı seçmelidir.
 
-  Bu cihaz daha önce şirkete kaydedilmemişse, kullanıcı, standart kayıt akışına devam etmek için **yeni cihazı** seçmelidir.
+   Bu cihaz daha önce şirkete kaydedilmemişse, kullanıcı, standart kayıt akışına devam etmek için **yeni cihazı** seçmelidir.
 
 6. Kullanıcı, sonraki ekranda yeni cihazın seri numarasını onaylamalıdır. Kullanıcı, seri numarasını doğrulamak üzere Ayarlar uygulamasını kullanma yönergelerini başlatan **Seri Numarasını onaylayın** bağlantısına dokunabilir. Daha sonra kullanıcı, seri numarasının son dört karakterini Şirket Portalı uygulamasına girmelidir.
 
-  Bu adım, cihazın Intune’a kaydedilmiş şirket cihazı olduğunu doğrular. Cihazdaki seri numarası eşleşmezse, yanlış cihaz seçilmiş demektir. Kullanıcı önceki ekrana geri dönmeli ve farklı bir cihaz seçmelidir.
+   Bu adım, cihazın Intune’a kaydedilmiş şirket cihazı olduğunu doğrular. Cihazdaki seri numarası eşleşmezse, yanlış cihaz seçilmiş demektir. Kullanıcı önceki ekrana geri dönmeli ve farklı bir cihaz seçmelidir.
 
 7. Seri numarası doğrulandıktan sonra Şirket Portalı uygulaması, kaydı tamamlamak üzere Şirket Portalı web sitesine yönlendirir. Web sitesi daha sonra kullanıcıdan uygulamaya dönmesini ister.
 

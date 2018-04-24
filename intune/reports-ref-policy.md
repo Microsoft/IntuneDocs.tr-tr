@@ -1,24 +1,24 @@
 ---
-title: "İlke"
+title: İlke
 titlesuffix: Microsoft Intune
-description: "Intune Veri Ambarı API’sindeki varlık koleksiyonlarının İlke kategorisi için başvuru konusu."
-keywords: "Intune Veri Ambarı"
+description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının İlke kategorisi için başvuru konusu.
+keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 
@@ -157,10 +157,12 @@ PolicyKey|İlke Anahtarı, İlke ile birleştirilerek ilke adı elde edilebilir.
 
 Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısını listeler. Bu sayı, İlke Türü profillerindeki verileri yansıtır. Örneğin, bir kullanıcı kendisine atanan tüm ilkeler için başarılı durumunda ise ilgili gün için başarılı sayacı bir artar. Bir kullanıcıya biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa, kullanıcı hata durumunda olarak değerlendirilir. PolicyUserActivity varlığı, son 30 gün içindeki belirli bir gün için kaç kullanıcının hangi durumda olduğunu listeler.
 
-|Özellik  |Description  |Örnek  |
-|---------|---------|---------|
-|DateKey|Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı.|20160703|
-|Bekleniyor|Bekleme durumundaki benzersiz cihazların sayısı.|123|
-|Başarılı|Başarı durumundaki benzersiz cihazların sayısı.|12|
-PolicyKey|İlke Anahtarı, İlke ile birleştirilerek ilke adı elde edilebilir.|Windows 10 temel|
-|Hata|Hata durumundaki benzersiz cihazların sayısı.|10|
+
+| Özellik  |                                         Description                                         |       Örnek       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |      20160703       |
+|  Bekleniyor  |                         Bekleme durumundaki benzersiz cihazların sayısı.                          |         123         |
+| Başarılı |                         Başarı durumundaki benzersiz cihazların sayısı.                          |         12          |
+| PolicyKey |                İlke Anahtarı, İlke ile birleştirilerek ilke adı elde edilebilir.                 | Windows 10 temel |
+|   Hata   |                          Hata durumundaki benzersiz cihazların sayısı.                           |         10          |
+

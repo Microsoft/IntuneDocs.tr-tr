@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: eb27605108feb3a2db3072d4a8b7a296f0f74cfc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Genellikle, bir kullanıcı e-posta veya SharePoint’a erişmeye çalışır ve kaydolmak için bir istem alır. Bu istem, kullanıcıyı şirket portalına götürür.
 
@@ -49,20 +49,20 @@ Bu koşullar, Azure Yönetim Portalı’nda ve cihaz envanter raporunda her ciha
 
 ## <a name="compliance-issues"></a>Uyumluluk sorunları
 
- -  Cihaz Intune ilkesiyle uyumlu değildir. Şifreleme ve parola gereksinimleri yaygın görülen sorunlardır. Kullanıcı, şirket portalına yönlendirilir ve buradan, cihazını uyumlu olacak şekilde yapılandırabilir.
- -  Uyumluluk bilgilerinin bir cihaz için kaydolması biraz zaman alabilir. Birkaç dakika bekleyin ve tekrar deneyin.
- -  iOS aygıtları için:
-     -   Kullanıcı tarafından oluşturulmuş bir e-posta profili, Intune yöneticisinin oluşturduğu bir profili engeller. Bu, iOS kullanıcıları genellikle bir e-posta profili oluşturduğundan, ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, kullanıcıyı, el ile yapılandırılmış e-posta profilleri nedeniyle uyumlu olmadıkları konusunda bilgilendirir ve kullanıcıdan, o profili kaldırmasını ister. Kullanıcı, Intune profilinin dağıtılabilmesi için, e-posta profilini kaldırmalıdır. Sorunu önlemek için, kullanıcılarınızdan bir e-posta profili yüklemeden kayıt olmalarını ve Intune’un profili dağıtmasına izin vermelerini isteyin.
-     -   Bir iOS cihazı uyumluluk denetim durumunda takılı kalarak, kullanıcının başka bir giriş yapma işlemi başlatmasını engelleyebilir. Şirket portalını yeniden başlatmak bunu düzeltebilir ve uyumluluk durumu cihazın Intune’daki durumunu yansıtır. Bir cihaz eşitlemesinden tüm veriler toplandıktan sonra, uyumluluk denetimi hızlıdır; ortalama olarak yarım saniyenin altındadır.
+- Cihaz Intune ilkesiyle uyumlu değildir. Şifreleme ve parola gereksinimleri yaygın görülen sorunlardır. Kullanıcı, şirket portalına yönlendirilir ve buradan, cihazını uyumlu olacak şekilde yapılandırabilir.
+- Uyumluluk bilgilerinin bir cihaz için kaydolması biraz zaman alabilir. Birkaç dakika bekleyin ve tekrar deneyin.
+- iOS aygıtları için:
+  - Kullanıcı tarafından oluşturulmuş bir e-posta profili, Intune yöneticisinin oluşturduğu bir profili engeller. Bu, iOS kullanıcıları genellikle bir e-posta profili oluşturduğundan, ardından kaydolduğundan, bu yaygın görülen bir sorundur. Şirket portalı, kullanıcıyı, el ile yapılandırılmış e-posta profilleri nedeniyle uyumlu olmadıkları konusunda bilgilendirir ve kullanıcıdan, o profili kaldırmasını ister. Kullanıcı, Intune profilinin dağıtılabilmesi için, e-posta profilini kaldırmalıdır. Sorunu önlemek için, kullanıcılarınızdan bir e-posta profili yüklemeden kayıt olmalarını ve Intune’un profili dağıtmasına izin vermelerini isteyin.
+  - Bir iOS cihazı uyumluluk denetim durumunda takılı kalarak, kullanıcının başka bir giriş yapma işlemi başlatmasını engelleyebilir. Şirket portalını yeniden başlatmak bunu düzeltebilir ve uyumluluk durumu cihazın Intune’daki durumunu yansıtır. Bir cihaz eşitlemesinden tüm veriler toplandıktan sonra, uyumluluk denetimi hızlıdır; ortalama olarak yarım saniyenin altındadır.
 
-        Genelde cihazların bu durumda kalmalarının nedeni, hizmete bağlanmada güçlük çekmeleri veya eşitlemenin uzun sürmesidir.  Sorun farklı ağ yapılandırmalarında (hücresel, Wi-Fi, VPN), cihaz yeniden başlatmalarından sonra ve SSP’nin cihazda güncel olduğu doğrulandıktan sonra da devam ederse, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md)’da anlatıldığı şekilde Microsoft Desteği ile iletişim kurun.
+    Genelde cihazların bu durumda kalmalarının nedeni, hizmete bağlanmada güçlük çekmeleri veya eşitlemenin uzun sürmesidir.  Sorun farklı ağ yapılandırmalarında (hücresel, Wi-Fi, VPN), cihaz yeniden başlatmalarından sonra ve SSP’nin cihazda güncel olduğu doğrulandıktan sonra da devam ederse, [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md)’da anlatıldığı şekilde Microsoft Desteği ile iletişim kurun.
 
- - Android cihazlar için:
-    - Belirli Android cihazları şifrelenmiş görünüyor olabilir, ancak Şirket Portalı uygulaması bu cihazları şifrelenmemiş olarak tanır. 
+- Android cihazlar için:
+   - Belirli Android cihazları şifrelenmiş görünüyor olabilir, ancak Şirket Portalı uygulaması bu cihazları şifrelenmemiş olarak tanır. 
     
-        -   Bu durumda olan cihazlarda kullanıcının güvenli başlangıç geçiş kodu ayarlaması gerekir. Kullanıcı, Şirket Portalı uygulamasında, cihaz için başlangıç geçiş kodu ayarlamasının istendiği bir bildirim görür. Cihaz bildirimine dokunup, geçerli PIN veya parolayı onayladıktan sonra, **Cihazı başlatmak için PIN gerektir** seçeneğini **Güvenli başlangıç** ekranında seçin. Ardından, Şirket Portalı uygulamasında cihazın **Uyumluluk Denetimi** düğmesine dokunun. Cihazın artık şifrelenmiş olarak algılanması gerekir.
+       -   Bu durumda olan cihazlarda kullanıcının güvenli başlangıç geçiş kodu ayarlaması gerekir. Kullanıcı, Şirket Portalı uygulamasında, cihaz için başlangıç geçiş kodu ayarlamasının istendiği bir bildirim görür. Cihaz bildirimine dokunup, geçerli PIN veya parolayı onayladıktan sonra, **Cihazı başlatmak için PIN gerektir** seçeneğini **Güvenli başlangıç** ekranında seçin. Ardından, Şirket Portalı uygulamasında cihazın **Uyumluluk Denetimi** düğmesine dokunun. Cihazın artık şifrelenmiş olarak algılanması gerekir.
     
-        -   Bazı cihaz üreticileri, kullanıcı tarafından ayarlanan gizli PIN yerine varsayılan bir PIN kullanarak cihazları şifreler. Intune, varsayılan PIN kullanılarak yapılan şifrelemeyi güvensiz olarak tanır, çünkü bu şifreleme yöntemi cihaza fiziksel erişimi olan kötü amaçlı kullanıcılar nedeniyle cihazdaki verileri riske atabilir. Durum buysa, [uygulama koruma ilkeleri](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kullanmayı düşünün.
+       -   Bazı cihaz üreticileri, kullanıcı tarafından ayarlanan gizli PIN yerine varsayılan bir PIN kullanarak cihazları şifreler. Intune, varsayılan PIN kullanılarak yapılan şifrelemeyi güvensiz olarak tanır, çünkü bu şifreleme yöntemi cihaza fiziksel erişimi olan kötü amaçlı kullanıcılar nedeniyle cihazdaki verileri riske atabilir. Durum buysa, [uygulama koruma ilkeleri](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) kullanmayı düşünün.
 
 ## <a name="policy-issues"></a>İlke sorunları
 
@@ -118,22 +118,22 @@ Bu sorun giderme yordamları sorununuzu çözmüyorsa, Microsoft Desteği, OWA p
 ### <a name="exchange-connector-logs"></a>Exchange Connector günlükleri
 
 #### <a name="general-log-information"></a>Genel günlük bilgileri
-Exchange Connector günlüklerini görüntülemek için [Server Trace Viewer Tool] sunucu izleme görüntüleme aracı (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx') kullanın. Bu araç, Windows Server SDK’yı indirmenizi gerektirir.
+Exchange Connector günlüklerini görüntülemek için [Server Trace Viewer Tool] sunucu izleme görüntüleme aracı (<https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx>') kullanın. Bu araç, Windows Server SDK’yı indirmenizi gerektirir.
 
 >[!NOTE]
 >Günlükler C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs konumundadır. Günlükler, *Connector0.log* ile başlayıp *Connector29.log* ile biten bir dizi 30 günlük dosyası içindedir. Günlükler, bir günlükte 10 MB veri biriktikten sonra birinden diğerine geçer. Günlükler Connector29’a vardıktan sonra yeniden Connector0’dan başlayarak önceki günlük dosyalarının üzerine yazılır.
 
 #### <a name="locating-sync-logs"></a>Eşitleme günlüklerinin konumunu bulma
 
--    Günlüklerde bir tam eşitlemenin konumunu **full sync** ifadesini arayarak bulun. Tam eşitlemenin başlangıcında şu metin bulunur:
+- Günlüklerde bir tam eşitlemenin konumunu **full sync** ifadesini arayarak bulun. Tam eşitlemenin başlangıcında şu metin bulunur:
 
-    'İşleme komutu: Zaman filtresi (tam eşitleme) olmadan <number> kullanıcının mobil cihaz listesi alınıyor`
+  'İşleme komutu: Zaman filtresi (tam eşitleme) olmadan <number> kullanıcının mobil cihaz listesi alınıyor`
 
-    Tam eşitleme günlüğünün sonu şu şekildedir:
+  Tam eşitleme günlüğünün sonu şu şekildedir:
 
-    Zaman filtresi (tam eşitleme) olmadan 4 kullanıcının mobil cihaz listesini alma başarıyla tamamlandı. Ayrıntılar: Envanter komutu sonucu - Eşitlenen cihazlar: 0 Komut Kimliği: commandIDGUID' Exchange sistem durumu: 'Sunucu sistem durumu 'Adı: 'PowerShellExchangeServer: <Name=mymailservername>' Durum: Bağlı','
+  Zaman filtresi (tam eşitleme) olmadan 4 kullanıcının mobil cihaz listesini alma başarıyla tamamlandı. Ayrıntılar: Envanter komutu sonucu - Eşitlenen cihazlar: 0 Komut Kimliği: commandIDGUID' Exchange sistem durumu: 'Sunucu sistem durumu 'Adı: 'PowerShellExchangeServer: <Name=mymailservername>' Durum: Bağlı','
 
--   Hızlı (delta) eşitlemeyi günlüklerde **quick sync** ifadesini arayarak bulun.
+- Hızlı (delta) eşitlemeyi günlüklerde **quick sync** ifadesini arayarak bulun.
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next command özel durumları
 **Get next command** özel durumları için Exchange Connector günlüklerine bakın ve bunları Microsoft Desteği’ne verin.

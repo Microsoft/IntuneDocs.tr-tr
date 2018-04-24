@@ -1,29 +1,29 @@
 ---
-title: "Şirket İçi Exchange e-postasını koruma"
-description: "Şirket İçi Exchange’de şirket e-postasını korumak ve erişimini denetlemek için koşullu erişim kullanın."
-keywords: 
+title: Şirket İçi Exchange e-postasını koruma
+description: Şirket İçi Exchange’de şirket e-postasını korumak ve erişimini denetlemek için koşullu erişim kullanın.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bdb5fbf7bb382c9ad503f584b499f5275885ef1
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 73535e35605bbc9ca7123935e1816e90b5e60e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Intune ile Şirket İçi Exchange’e ve eski Adanmış Exchange Online ortamına e-posta erişimini koruma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune kullanarak şirket içi Exchange'e veya eski Adanmış Exchange Online ortamına koşullu erişim denetimli e-posta erişimini yapılandırabilirsiniz.
 Koşullu erişimin nasıl çalıştığı hakkında daha fazla bilgi edinmek için [E-posta ve O365 hizmetlerine erişimi koruma](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) makalesini okuyun.
@@ -53,13 +53,13 @@ Aşağıdaki noktaları doğruladığınızdan emin olun:
 
 Koşullu biçimlendirme ilkeleri yapılandırdığınızda ve bunlarla bir kullanıcı hedeflediğinizde, kullanıcının e-postasına bağlanabilmesi için önce **cihazın** şu özellikleri taşıması gerekir:
 
--  Etki alanına katılmış bir bilgisayar veya Intune ile **kaydedilmiş** olması gerekir.
+- Etki alanına katılmış bir bilgisayar veya Intune ile **kaydedilmiş** olması gerekir.
 
--  **Azure Active Directory’de kayıtlı olmalıdır**. Buna ek olarak, istemci Exchange ActiveSync kimliği Azure Active Directory’de kayıtlı olmalıdır.
+- **Azure Active Directory’de kayıtlı olmalıdır**. Buna ek olarak, istemci Exchange ActiveSync kimliği Azure Active Directory’de kayıtlı olmalıdır.
 
   Azure Active Directory Cihaz Kayıt hizmeti, Intune ve Office 365 müşterileri için otomatik olarak etkinleştirilir. ADFS Cihaz Kayıt hizmetini zaten dağıtan müşteriler, kayıtlı cihazlarını şirket içi Active Directory'de görmez. **Bu, Windows bilgisayarları ve Windows Phone cihazları için geçerli değildir**.
 
--   Söz konusu cihaza dağıtılan tüm Intune uyumluluk ilkeleriyle **uyumlu** olmalıdır.
+- Söz konusu cihaza dağıtılan tüm Intune uyumluluk ilkeleriyle **uyumlu** olmalıdır.
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Koşullu erişimin şirket içi Exchange'de çalışma şekli
 
@@ -91,35 +91,35 @@ Aşağıdakiler desteklenir:
 
 ##  <a name="configure-a-conditional-access-policy"></a>Koşullu erişim ilkesini yapılandırma
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **Şirket İçi Exchange İlkesi**’ni seçin.
-![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **Şirket İçi Exchange İlkesi**’ni seçin.
+   ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  İlkeyi size gereken ayarlarla yapılandırın: ![Şirket İçi Exchange ilkesi sayfasının ekran görüntüsü](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2. İlkeyi size gereken ayarlarla yapılandırın: ![Şirket İçi Exchange ilkesi sayfasının ekran görüntüsü](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **Cihaz uyumsuzsa veya Microsoft Intune'a kayıtlı değilse e-posta uygulamalarının Şirket İçi Exchange'e erişimini engelle:** Bu seçeneği belirttiğinizde, Intune tarafından yönetilmeyen veya bir uyumluluk ilkesiyle uyumlu olmayan cihazların Exchange hizmetlerine erişimi engellenir.
+   - **Cihaz uyumsuzsa veya Microsoft Intune'a kayıtlı değilse e-posta uygulamalarının Şirket İçi Exchange'e erişimini engelle:** Bu seçeneği belirttiğinizde, Intune tarafından yönetilmeyen veya bir uyumluluk ilkesiyle uyumlu olmayan cihazların Exchange hizmetlerine erişimi engellenir.
 
-  - **Varsayılan kuralı geçersiz kılma - Intune'a kayıtlı ve uyumlu cihazların Exchange'e erişmesine her zaman izin ver:** Bu seçeneği işaretlediğinizde, Intune’a kaydedilen ve ilkelerle uyumlu olan cihazların Exchange’e erişmesine izin verilir.
-  Bu kural **Varsayılan Kural**’ı geçersiz kılar; diğer bir deyişle, **Varsayılan Kural**’ı erişimi karantinaya alacak veya engelleyecek şekilde ayarlasanız bile, kayıtlı ve uyumlu cihazların yine de Exchange’e erişebileceği anlamına gelir.
+   - **Varsayılan kuralı geçersiz kılma - Intune'a kayıtlı ve uyumlu cihazların Exchange'e erişmesine her zaman izin ver:** Bu seçeneği işaretlediğinizde, Intune’a kaydedilen ve ilkelerle uyumlu olan cihazların Exchange’e erişmesine izin verilir.
+     Bu kural **Varsayılan Kural**’ı geçersiz kılar; diğer bir deyişle, **Varsayılan Kural**’ı erişimi karantinaya alacak veya engelleyecek şekilde ayarlasanız bile, kayıtlı ve uyumlu cihazların yine de Exchange’e erişebileceği anlamına gelir.
 
-  - **Hedeflenen Gruplar:** Exchange’e erişebilmesi için cihazını Intune ile kaydetmesi gereken Intune kullanıcı gruplarını seçin.
+   - **Hedeflenen Gruplar:** Exchange’e erişebilmesi için cihazını Intune ile kaydetmesi gereken Intune kullanıcı gruplarını seçin.
 
-  - **Muaf Tutulan Gruplar:** Koşullu erişim ilkesinden muaf tutulan Intune kullanıcı gruplarını seçin. Bu listedeki kullanıcılar, aynı zamanda **Hedeflenen Gruplar** listesinde olsalar bile muaf tutulurlar.
+   - **Muaf Tutulan Gruplar:** Koşullu erişim ilkesinden muaf tutulan Intune kullanıcı gruplarını seçin. Bu listedeki kullanıcılar, aynı zamanda **Hedeflenen Gruplar** listesinde olsalar bile muaf tutulurlar.
 
-  - **Platform Özel Durumları:** Belirtilen mobil cihaz aileleri ve modellerinde erişim düzeylerini tanımlayan bir kural yapılandırmak için **Kural Ekle**’yi seçin. Bu cihazlar herhangi bir türde olabileceğinden, Intune tarafından desteklenmeyen cihaz türlerini de yapılandırabilirsiniz.
+   - **Platform Özel Durumları:** Belirtilen mobil cihaz aileleri ve modellerinde erişim düzeylerini tanımlayan bir kural yapılandırmak için **Kural Ekle**’yi seçin. Bu cihazlar herhangi bir türde olabileceğinden, Intune tarafından desteklenmeyen cihaz türlerini de yapılandırabilirsiniz.
 
-  - **Varsayılan Kural:** Diğer kurallardan herhangi birinin kapsamında yer almayan bir cihaz söz konusu olduğunda cihazın Exchange’e erişmesine izin vermeyi, cihazı engellemeyi veya karantinaya almayı seçebilirsiniz. Kuralı, kayıtlı ve uyumlu cihazlarda erişime izin verecek şekilde ayarladığınızda, iOS, Windows ve Samsung KNOX cihazları için otomatik olarak e-posta erişimi verilir. Kullanıcının e-postasını almak için herhangi bir işlem yapması gerekmez.
-      - Samsung KNOX çalıştırmayan Android cihazlarda, e-postaya erişebilmeleri için kullanıcılar, kaydı ve uyumluluğu doğrulama işleminde yol gösteren bir karantina e-postası alır. Cihazlara erişimi engellemeye veya cihazları karantinaya almaya yönelik kural ayarlarsanız Intune’a kaydedilmiş olup olmadıklarına bakılmaksızın tüm cihazların Exchange’e erişimi engellenir. Kayıtlı ve uyumlu cihazların bu kuraldan etkilenmesini önlemek için **Varsayılan Kuralı Geçersiz Kıl** kutusunu işaretleyin.
->[!TIP]
->Amacınız e-postaya erişim vermeden önce tüm cihazları engellemekse Erişimi engelle kuralını veya Karantina kuralını seçin. Varsayılan kural tüm cihaz türleri için geçerli olacaktır, böylece Intune tarafından desteklenmeyen platform özel durumları olarak yapılandırdığınız cihaz türleri de etkilenir.
+   - **Varsayılan Kural:** Diğer kurallardan herhangi birinin kapsamında yer almayan bir cihaz söz konusu olduğunda cihazın Exchange’e erişmesine izin vermeyi, cihazı engellemeyi veya karantinaya almayı seçebilirsiniz. Kuralı, kayıtlı ve uyumlu cihazlarda erişime izin verecek şekilde ayarladığınızda, iOS, Windows ve Samsung KNOX cihazları için otomatik olarak e-posta erişimi verilir. Kullanıcının e-postasını almak için herhangi bir işlem yapması gerekmez.
+     - Samsung KNOX çalıştırmayan Android cihazlarda, e-postaya erişebilmeleri için kullanıcılar, kaydı ve uyumluluğu doğrulama işleminde yol gösteren bir karantina e-postası alır. Cihazlara erişimi engellemeye veya cihazları karantinaya almaya yönelik kural ayarlarsanız Intune’a kaydedilmiş olup olmadıklarına bakılmaksızın tüm cihazların Exchange’e erişimi engellenir. Kayıtlı ve uyumlu cihazların bu kuraldan etkilenmesini önlemek için **Varsayılan Kuralı Geçersiz Kıl** kutusunu işaretleyin.
+       >[!TIP]
+       >Amacınız e-postaya erişim vermeden önce tüm cihazları engellemekse Erişimi engelle kuralını veya Karantina kuralını seçin. Varsayılan kural tüm cihaz türleri için geçerli olacaktır, böylece Intune tarafından desteklenmeyen platform özel durumları olarak yapılandırdığınız cihaz türleri de etkilenir.
 
-  - **Kullanıcı Bildirimi:** Exchange’den gönderilen bildirim e-postasına ek olarak Intune, cihazın engelini kaldırma adımlarını içeren bir e-posta gönderir. Gereksinimlerinize göre özelleştirmek için, varsayılan iletiyi düzenleyebilirsiniz. Çözümleme yönergelerini içeren Intune bildirim e-posta iletisini (bu e-posta kullanıcının Exchange posta kutusuna teslim edilir) almadan önce cihazının engellenmesi durumunda kullanıcı, Exchange’e erişmek ve iletiyi görüntülemek için engellenmemiş bir cihaz ya da başka yöntemler kullanabilir.
-      - Bu özellikle, **Varsayılan Kural** engellemek veya karantinaya almak üzere ayarlandıysa geçerlidir. Bu durumda, kullanıcının uygulama mağazasına gitmesi, Microsoft Şirket Portalı uygulamasını indirmesi ve cihazını kaydetmesi gerekir. Bu iOS, Windows ve Samsung KNOX cihazları için geçerlidir. Samsung KNOX çalıştırmayan cihazlar için karantina e-postasını alternatif bir e-posta hesabına göndermeniz gerekir. Kayıt ve uyumluluk sürecini tamamlamak için kullanıcının e-postayı engellenen cihazına kopyalaması gerekir.
-  > [!NOTE]
-  > Exchange’in bildirim e-postası gönderebilmesi için bildirim e-postasını göndermek için kullanılan hesabı belirtmeniz gerekir.
-  >
-  > Ayrıntılar için bkz. [Şirket içi veya barındırılan Exchange için Şirket İçi Exchange bağlayıcısını yapılandırma](intune-on-premises-exchange-connector.md).
+   - **Kullanıcı Bildirimi:** Exchange’den gönderilen bildirim e-postasına ek olarak Intune, cihazın engelini kaldırma adımlarını içeren bir e-posta gönderir. Gereksinimlerinize göre özelleştirmek için, varsayılan iletiyi düzenleyebilirsiniz. Çözümleme yönergelerini içeren Intune bildirim e-posta iletisini (bu e-posta kullanıcının Exchange posta kutusuna teslim edilir) almadan önce cihazının engellenmesi durumunda kullanıcı, Exchange’e erişmek ve iletiyi görüntülemek için engellenmemiş bir cihaz ya da başka yöntemler kullanabilir.
+     - Bu özellikle, **Varsayılan Kural** engellemek veya karantinaya almak üzere ayarlandıysa geçerlidir. Bu durumda, kullanıcının uygulama mağazasına gitmesi, Microsoft Şirket Portalı uygulamasını indirmesi ve cihazını kaydetmesi gerekir. Bu iOS, Windows ve Samsung KNOX cihazları için geçerlidir. Samsung KNOX çalıştırmayan cihazlar için karantina e-postasını alternatif bir e-posta hesabına göndermeniz gerekir. Kayıt ve uyumluluk sürecini tamamlamak için kullanıcının e-postayı engellenen cihazına kopyalaması gerekir.
+       > [!NOTE]
+       > Exchange’in bildirim e-postası gönderebilmesi için bildirim e-postasını göndermek için kullanılan hesabı belirtmeniz gerekir.
+       >
+       > Ayrıntılar için bkz. [Şirket içi veya barındırılan Exchange için Şirket İçi Exchange bağlayıcısını yapılandırma](intune-on-premises-exchange-connector.md).
 
-3.  İşiniz bittiğinde **Kaydet**’i seçin.
+3. İşiniz bittiğinde **Kaydet**’i seçin.
 
 -   Koşullu erişim ilkesini dağıtmanız gerekmez, hemen geçerli olur.
 

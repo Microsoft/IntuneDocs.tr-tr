@@ -1,29 +1,29 @@
 ---
-title: "Verileri korumaya yardımcı olması için uzaktan silme kullanın"
-description: "Intune, hassas kurumsal verileri ve pek çok şirket kaynağına erişimi kaldırmak için seçmeli silme ve tam silme olanakları sunar."
-keywords: 
+title: Verileri korumaya yardımcı olması için uzaktan silme kullanın
+description: Intune, hassas kurumsal verileri ve pek çok şirket kaynağına erişimi kaldırmak için seçmeli silme ve tam silme olanakları sunar.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Microsoft Intune kullanarak tam veya seçmeli temizleme ile verilerinizin korunmasına yardımcı olma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan ve Intune tarafından yönetilen cihazlardaki uygulamaları ve verileri temizleyebilirsiniz. Bunu yapmak için, Intune seçmeli temizleme ve tam temizleme özellikleri sağlar. Kullanıcılar ayrıca Intune'a kayıtlı şahsi cihazlara Intune Şirket Portalı uygulamasından uzaktan cihaz temizleme komutu da verebilir.
 
@@ -40,37 +40,37 @@ Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan ve I
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Cihazı Intune yönetici konsolundan uzaktan silme
 
-1.  Silinecek cihazları seçin. Bu cihazları kullanıcı veya cihaza göre bulabilirsiniz.
+1. Silinecek cihazları seçin. Bu cihazları kullanıcı veya cihaza göre bulabilirsiniz.
 
-    -   **Kullanıcıya göre:**
+   - **Kullanıcıya göre:**
 
-        1.  [Intune yönetici konsolunda](https://manage.microsoft.com/) **Gruplar**&gt;**Tüm Kullanıcılar**’ı seçin.
+     1.  [Intune yönetici konsolunda](https://manage.microsoft.com/) **Gruplar**&gt;**Tüm Kullanıcılar**’ı seçin.
 
-        2.  Mobil cihazını silmek istediğiniz kullanıcının adını seçin. **Özellikleri Görüntüle**’yi seçin.
+     2.  Mobil cihazını silmek istediğiniz kullanıcının adını seçin. **Özellikleri Görüntüle**’yi seçin.
 
-        3.  Kullanıcının **Özellikler** sayfasında **Cihazlar**’ı seçin ve ardından silmek istediğiniz mobil cihazın adını seçin. Birden fazla cihaz seçmek için Ctrl’ye basılı tutarak tıklayın.
+     3.  Kullanıcının **Özellikler** sayfasında **Cihazlar**’ı seçin ve ardından silmek istediğiniz mobil cihazın adını seçin. Birden fazla cihaz seçmek için Ctrl’ye basılı tutarak tıklayın.
 
-    -   **Cihaza göre:**
+   - **Cihaza göre:**
 
-        1.  [Intune yönetici konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Mobil Cihazlar**’ı seçin.
+     1. [Intune yönetici konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Mobil Cihazlar**’ı seçin.
 
-         ![Devre dışı bırakma veya silme işlemi başlatma](../media/dev-sa-wipe.png)
+        ![Devre dışı bırakma veya silme işlemi başlatma](../media/dev-sa-wipe.png)
 
-        2.  **Cihazlar**’ı ve ardından silmek istediğiniz mobil cihazın adını seçin. Birden fazla cihaz seçmek için Ctrl’ye basılı tutarak tıklayın.
+     2. **Cihazlar**’ı ve ardından silmek istediğiniz mobil cihazın adını seçin. Birden fazla cihaz seçmek için Ctrl’ye basılı tutarak tıklayın.
 
-2.  **Devre Dışı Bırak/Sil**’i seçin.
+2. **Devre Dışı Bırak/Sil**’i seçin.
 
-3.  Cihazı devre dışı bırakmak istediğinizi onaylamanızı isteyen bir ileti görünür.
+3. Cihazı devre dışı bırakmak istediğinizi onaylamanızı isteyen bir ileti görünür.
 
-    -   Yalnızca şirket uygulamalarını ve verilerini kaldıran bir **Seçmeli temizleme** gerçekleştirmek için **Evet**'i seçin.
+   -   Yalnızca şirket uygulamalarını ve verilerini kaldıran bir **Seçmeli temizleme** gerçekleştirmek için **Evet**'i seçin.
 
-    -   Tüm uygulamaları ve verileri silip cihazı fabrika varsayılan ayarlarına döndüren **Tam silme** işlemini gerçekleştirmek için **Devre dışı bırakmadan önce cihazı sil**’i seçin. Bu eylem, Windows 8.1 dışında tüm platformlar için geçerlidir. **Tam silme işlemi ile kaldırılan verileri kurtaramazsınız**.
+   -   Tüm uygulamaları ve verileri silip cihazı fabrika varsayılan ayarlarına döndüren **Tam silme** işlemini gerçekleştirmek için **Devre dışı bırakmadan önce cihazı sil**’i seçin. Bu eylem, Windows 8.1 dışında tüm platformlar için geçerlidir. **Tam silme işlemi ile kaldırılan verileri kurtaramazsınız**.
 
 Cihaz açık ve bağlı olduğu sürece, bir temizleme komutunun tüm cihaz türlerine yayılması 15 dakikadan kısa sürer.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory portalında cihazları silmek için
 
-1.  [Http://aka.ms/accessaad](http://aka.ms/accessaad) bağlantısına göz atın veya [https://portal.office.com](https://portal.office.com) adresinde **Yönetici** &gt; **Azure AD**’yi seçin.
+1.  [http://aka.ms/accessaad](http://aka.ms/accessaad) öğesine gözatın veya [https://portal.office.com](https://portal.office.com) öğesinden **Yönetici** &gt; **Azure AD**’yi seçin.
 
 2.  Sayfanın sol tarafındaki bağlantıyı kullanarak Kuruluş Kimliğinizle oturum açın.
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c68f196ea268e61a175f643244efb855f46eaece
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Kurulum Yardımcısı’nı kullanarak Apple Configurator ile iOS cihazlarını kaydetme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) kullanarak şirketin sahip olduğu iOS cihazlarının kaydedilmesini destekler. Bu işlem cihazı fabrika ayarlarına sıfırlar ve şirketin ilkelerini cihazın yeni kullanıcısı için yükleyerek Kurulum Yardımcısı’nın çalıştırılabilmesi için hazırlar.
 
@@ -59,7 +59,7 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar.
 
 1. [Microsoft Intune yönetici konsolu](https://manage.microsoft.com)’nda **İlke** &gt; **Kurumsal Cihaz Kaydı**’na gidin ve **Ekle**’yi seçin.
 
-  ![Cihaz kayıt profili oluşturma](../media/pol-sa-corp-enroll.png)
+   ![Cihaz kayıt profili oluşturma](../media/pol-sa-corp-enroll.png)
 
 2. Cihaz profillerinin ayrıntılarını girin:
 
@@ -80,7 +80,7 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar.
 
    -  **Cihaz Kayıt Programı**&mdash; Apple Cihaz Kayıt Programı (DEP), Kurulum Yardımcısı kaydıyla birlikte kullanılamaz. Düğmenin **kapalı** olarak ayarlandığından emin olun.
 
-3.  Profili eklemek için **Profili Kaydet**’i seçin.
+3. Profili eklemek için **Profili Kaydet**’i seçin.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Kurulum Yardımcısı ile kaydedilecek iOS cihazları ekleme
 
@@ -90,29 +90,29 @@ Cihaz kayıt profili bir cihaz grubuna uygulanan ayarları tanımlar.
 
    ![Cihaz ekle iletişim kutusu](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
-   -  **Seri numaraları içeren bir CSV dosyası yükleme**&mdash;Üst bilgi içermeyen iki sütunun virgülle ayrılmış değer (.csv) listesini oluşturun ve csv dosyası başına 5,000 cihaz veya 5 MB ile sınırlayın.
+   - **Seri numaraları içeren bir CSV dosyası yükleme**&mdash;Üst bilgi içermeyen iki sütunun virgülle ayrılmış değer (.csv) listesini oluşturun ve csv dosyası başına 5,000 cihaz veya 5 MB ile sınırlayın.
 
-    |||
-    |-|-|
-    |&lt;Seri 1&gt;|&lt;Cihaz 1 Ayrıntıları&gt;|
-    |&lt;Seri 2&gt;|&lt;Cihaz 2 Ayrıntıları&gt;|
+     |||
+     |-|-|
+     |&lt;Seri 1&gt;|&lt;Cihaz 1 Ayrıntıları&gt;|
+     |&lt;Seri 2&gt;|&lt;Cihaz 2 Ayrıntıları&gt;|
 
-  Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki gibi görünür:
+   Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki gibi görünür:
 
     ```
     0000000,PO 1234
     111111111,PO 1234
     ```
 
-  -  **Cihaz ayrıntılarını el ile ekle**&mdash;En fazla 15 cihazın seri numarasını ve varsa cihaz ayrıntılarını veya notları girin.
+   -  **Cihaz ayrıntılarını el ile ekle**&mdash;En fazla 15 cihazın seri numarasını ve varsa cihaz ayrıntılarını veya notları girin.
 
-  **Cihazları Gözden Geçir** bölmesinde, seri numaralarını onaylayabilirsiniz. Ayrıca tekrar içeri aktarılan seri numaraların **Ayrıntıları** için üzerine yazma seçeneklerini belirleyebilir veya **Üzerine yaz** kutusunun işaretini kaldırarak Geçerli ayrıntıları koruyabilirsiniz.
+   **Cihazları Gözden Geçir** bölmesinde, seri numaralarını onaylayabilirsiniz. Ayrıca tekrar içeri aktarılan seri numaraların **Ayrıntıları** için üzerine yazma seçeneklerini belirleyebilir veya **Üzerine yaz** kutusunun işaretini kaldırarak Geçerli ayrıntıları koruyabilirsiniz.
 
-  > [!NOTE]
-  > Mevcut Intune yönetici konsolunda yöneticiler yüklenen CSV dosyasından ayrıntıları alabilir ve her seri numarası için geçerli ayrıntıların üzerine yazabilir. Yeni Azure portalında yalnızca tüm seri numaraları için üzerine yazma seçeneğini kullanabilecek veya tüm seri numaraları için yeni ayrıntıları yoksayabileceksiniz.
+   > [!NOTE]
+   > Mevcut Intune yönetici konsolunda yöneticiler yüklenen CSV dosyasından ayrıntıları alabilir ve her seri numarası için geçerli ayrıntıların üzerine yazabilir. Yeni Azure portalında yalnızca tüm seri numaraları için üzerine yazma seçeneğini kullanabilecek veya tüm seri numaraları için yeni ayrıntıları yoksayabileceksiniz.
 
-  > [!NOTE]
-  > Şirkete ait cihazları daha sonra Intune yönetiminden kaldırmak isterseniz, cihaz kaydını devre dışı bırakmak için **Şirkete Ait Önceden Kaydedilmiş cihazlar** altındaki **iOS Seri Numarasına Göre** cihaz grubuna gitmeniz ve cihaz seri numarasını Intune'dan kaldırmanız gerekebilir. Intune, seri numaralarını kaldırdığınız sıralarda olağanüstü durum kurtarma yordamı gerçekleştirirse, o grupta yalnızca etkin cihazların seri numaralarının bulunduğunu doğrulamanız gerekir.
+   > [!NOTE]
+   > Şirkete ait cihazları daha sonra Intune yönetiminden kaldırmak isterseniz, cihaz kaydını devre dışı bırakmak için **Şirkete Ait Önceden Kaydedilmiş cihazlar** altındaki **iOS Seri Numarasına Göre** cihaz grubuna gitmeniz ve cihaz seri numarasını Intune'dan kaldırmanız gerekebilir. Intune, seri numaralarını kaldırdığınız sıralarda olağanüstü durum kurtarma yordamı gerçekleştirirse, o grupta yalnızca etkin cihazların seri numaralarının bulunduğunu doğrulamanız gerekir.
 
 2. **İleri**’yi seçin.
 
@@ -137,7 +137,7 @@ Kullanılabilir profiller listesinden eklenen cihazlara atanacak profili belirti
 
 iOS cihazlar Mac bilgisayara bağlanır ve mobil cihaz yönetimine kaydedilir.
 
-1.  Mac bilgisayarda **Apple Configurator 2**'yi açın. Menü çubuğunda **Apple Configurator 2**’yi, sonra **Tercihler**’i seçin.
+1. Mac bilgisayarda **Apple Configurator 2**'yi açın. Menü çubuğunda **Apple Configurator 2**’yi, sonra **Tercihler**’i seçin.
 
    > [!WARNING]
    > Cihazlar kayıt işlemi sırasında fabrika yapılandırmalarına sıfırlanır. En iyi uygulama olarak cihazı sıfırlayın ve açın. Cihazı bağladığınızda cihazın **Merhaba** ekranında olması gerekir.
@@ -148,12 +148,12 @@ iOS cihazlar Mac bilgisayara bağlanır ve mobil cihaz yönetimine kaydedilir.
 
    “Sunucu URL'si doğrulanmadı” uyarısı alırsanız göz ardı edebilirsiniz. Devam etmek için sihirbaz tamamlanana kadar **İleri**’yi seçin.
 
-4.  iOS mobil cihazları bir USB bağdaştırıcısı ile Mac bilgisayara bağlayın.
+4. iOS mobil cihazları bir USB bağdaştırıcısı ile Mac bilgisayara bağlayın.
 
-    > [!WARNING]
-    > Cihazlar kayıt işlemi sırasında fabrika yapılandırmalarına sıfırlanır. En iyi uygulama olarak cihazı sıfırlayın ve açın. Kurulum Yardımcısı’nı başlattığınızda cihazlar **Merhaba** ekranında olmalıdır.
+   > [!WARNING]
+   > Cihazlar kayıt işlemi sırasında fabrika yapılandırmalarına sıfırlanır. En iyi uygulama olarak cihazı sıfırlayın ve açın. Kurulum Yardımcısı’nı başlattığınızda cihazlar **Merhaba** ekranında olmalıdır.
 
-5.  **Hazırla**’yı seçin. iOS Cihazı Hazırla bölmesinde, **El ile**’yi, sonra **İleri**’yi seçin.
+5. **Hazırla**’yı seçin. iOS Cihazı Hazırla bölmesinde, **El ile**’yi, sonra **İleri**’yi seçin.
 
 6. MDM Sunucusuna Kaydol bölmesinde, oluşturduğunuz sunucunun adını, sonra **İleri**’yi seçin.
 

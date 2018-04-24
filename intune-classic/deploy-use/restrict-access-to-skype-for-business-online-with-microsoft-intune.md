@@ -1,29 +1,29 @@
 ---
-title: "Skype Kurumsal Çevrimiçi Sürüm’ü Koruma"
-description: "Skype Kurumsal Çevrimiçi Sürüm’ü korumak ve erişimini denetlemek için koşullu erişim kullanın."
-keywords: 
+title: Skype Kurumsal Çevrimiçi Sürüm’ü Koruma
+description: Skype Kurumsal Çevrimiçi Sürüm’ü korumak ve erişimini denetlemek için koşullu erişim kullanın.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30d1abb3e7411cae73a98be51489cffdfc738e7f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Microsoft Intune ile Skype Kurumsal Çevrimiçi Sürüm’e erişimi koruma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Skype Kurumsal Çevrimiçi Sürüm’e erişimi denetlemek için **Skype Kurumsal Çevrimiçi Sürüm** için bir koşullu erişim ilkesi kullanabilirsiniz.
 Koşullu erişim iki bileşenden oluşur:
@@ -87,23 +87,23 @@ Hazır olduğunuzda **3. Adım**’a geçin.
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>3. Adım: Skype Kurumsal Çevrimiçi ilkesini yapılandırma
 İlkeyi yalnızca yönetilen ve uyumlu cihazların Skype Kurumsal Çevrimiçi’ne erişebileceği şekilde yapılandırın. Bu ilke Azure Active Directory’de depolanır.
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **Skype Kurumsal Çevrimiçi Sürüm**’e tıklayın.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** > **Koşullu Erişim** > **Skype Kurumsal Çevrimiçi Sürüm**’e tıklayın.
 
-  ![Skype Kurumsal Çevrimiçi Sürüm koşullu erişim ilkesi sayfasının ekran görüntüsü](./media/conditional_access_SFBPolicy.png)
+   ![Skype Kurumsal Çevrimiçi Sürüm koşullu erişim ilkesi sayfasının ekran görüntüsü](./media/conditional_access_SFBPolicy.png)
 
-2.  **Koşullu erişimi etkinleştir ilkesini** seçin.
+2. **Koşullu erişimi etkinleştir ilkesini** seçin.
 
-3.  **Uygulama erişimi** altında aşağıdakilere koşullu erişim ilkesini uygulamayı seçebilirsiniz:
+3. **Uygulama erişimi** altında aşağıdakilere koşullu erişim ilkesini uygulamayı seçebilirsiniz:
 
-    -   **iOS**
+   -   **iOS**
 
-    -   **Android**
+   -   **Android**
 
-4.  **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Azure Active Directory güvenlik gruplarını seçmek için **Değiştir**’i seçin. Bunu tüm kullanıcılara veya yalnızca seçilmiş bir kullanıcı grubuna hedefleyebilirsiniz.
+4. **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Azure Active Directory güvenlik gruplarını seçmek için **Değiştir**’i seçin. Bunu tüm kullanıcılara veya yalnızca seçilmiş bir kullanıcı grubuna hedefleyebilirsiniz.
 
-5.  **Muaf Tutulan Gruplar** altında, bu ilkeden muaf tutulan Active Directory güvenlik gruplarını seçmek için isteğe bağlı olarak **Değiştir**’i seçin.
+5. **Muaf Tutulan Gruplar** altında, bu ilkeden muaf tutulan Active Directory güvenlik gruplarını seçmek için isteğe bağlı olarak **Değiştir**’i seçin.
 
-6.  İşiniz bittiğinde **Kaydet**’i seçin.
+6. İşiniz bittiğinde **Kaydet**’i seçin.
 
 Artık Skype Kurumsal Çevrimiçi için koşullu erişimi yapılandırdınız. Koşullu erişim ilkesini dağıtmanız gerekmez, hemen geçerli olur.
 

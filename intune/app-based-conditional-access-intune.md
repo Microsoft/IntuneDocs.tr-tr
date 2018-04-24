@@ -1,28 +1,28 @@
 ---
-title: "Intune ile uygulama tabanlı koşullu erişim"
-description: "Intune ile uygulama tabanlı koşullu erişimin nasıl çalıştığı hakkında bilgi edinin."
-keywords: 
+title: Intune ile uygulama tabanlı koşullu erişim
+description: Intune ile uygulama tabanlı koşullu erişimin nasıl çalıştığı hakkında bilgi edinin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 35d7be91201f8cf4fc3016363770b65bcea9ed72
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 [Intune uygulama koruma ilkeleri](app-protection-policy.md) Intune’da kayıtlı cihazlarda şirket verilerinizi korumaya yardımcı olur. Uygulama koruma ilkelerini, yönetilmek üzere Intune’da kaydedilmemiş çalışan cihazları üzerinde de uygulayabilirsiniz. Bu durumda, şirketiniz cihazı yönetmiyor olmasına rağmen, şirket verilerinizin ve kaynaklarınızın korunmasını sağlamanız gerekir.
 
@@ -56,29 +56,29 @@ Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamı�
 
 ![Akış grafiğinde gösterilen uygulama tabanlı koşullu erişim süreci](./media/ca-intune-common-ways-3.png)
 
-1.  Kullanıcı, Azure AD kimlik doğrulamasını Outlook uygulamasından gerçekleştirmeye çalışır.
+1. Kullanıcı, Azure AD kimlik doğrulamasını Outlook uygulamasından gerçekleştirmeye çalışır.
 
-2.  Kullanıcı ilk kez kimlik doğrulamaya çalıştığında, aracı bir uygulama yüklemek üzere uygulama mağazasına yönlendirilir. Aracı uygulama, iOS için Microsoft Authenticator ya da Android cihazlar için Microsoft Şirket portalı olabilir.
+2. Kullanıcı ilk kez kimlik doğrulamaya çalıştığında, aracı bir uygulama yüklemek üzere uygulama mağazasına yönlendirilir. Aracı uygulama, iOS için Microsoft Authenticator ya da Android cihazlar için Microsoft Şirket portalı olabilir.
 
- Kullanıcılar yerel bir e-posta uygulaması kullanmaya çalışırsa önce uygulama mağazasına yeniden yönlendirilir ve ardından Outlook uygulamasını yüklemeleri gerekir.
+   Kullanıcılar yerel bir e-posta uygulaması kullanmaya çalışırsa önce uygulama mağazasına yeniden yönlendirilir ve ardından Outlook uygulamasını yüklemeleri gerekir.
 
-3.  Aracı uygulama cihaza yüklenir.
+3. Aracı uygulama cihaza yüklenir.
 
-4.  Aracı uygulama, Azure AD'de bir cihaz kaydı oluşturan Azure AD kayıt işlemini başlatır. Bu, mobil cihaz yönetimi (MDM) kayıt işlemi ile aynı değildir, ancak koşullu erişim ilkelerinin cihazda uygulanabilmesi için bu kayıt gereklidir.
+4. Aracı uygulama, Azure AD'de bir cihaz kaydı oluşturan Azure AD kayıt işlemini başlatır. Bu, mobil cihaz yönetimi (MDM) kayıt işlemi ile aynı değildir, ancak koşullu erişim ilkelerinin cihazda uygulanabilmesi için bu kayıt gereklidir.
 
-5.  Aracı uygulama, uygulamanın kimliğini doğrular. Aracı uygulamanın kullanıcı tarafından kullanılma yetkisi olup olmadığının doğrulayabilmesi için bir güvenlik katmanı vardır.
+5. Aracı uygulama, uygulamanın kimliğini doğrular. Aracı uygulamanın kullanıcı tarafından kullanılma yetkisi olup olmadığının doğrulayabilmesi için bir güvenlik katmanı vardır.
 
-6.  Aracı uygulama, kullanıcı kimlik doğrulama işleminin bir parçası olarak Uygulama İstemci kimliğini Azure AD’ye gönderir ve böylece bunun onaylı ilke listesinde olup olmadığı denetlenebilir.
+6. Aracı uygulama, kullanıcı kimlik doğrulama işleminin bir parçası olarak Uygulama İstemci kimliğini Azure AD’ye gönderir ve böylece bunun onaylı ilke listesinde olup olmadığı denetlenebilir.
 
-7.  Azure AD, kullanıcının onaylı ilke listesine dayalı olarak uygulamanın kimliğini doğrulamasına ve kullanmasına olanak sağlar. Uygulama listede yoksa Azure AD uygulamaya erişimi engeller.
+7. Azure AD, kullanıcının onaylı ilke listesine dayalı olarak uygulamanın kimliğini doğrulamasına ve kullanmasına olanak sağlar. Uygulama listede yoksa Azure AD uygulamaya erişimi engeller.
 
-8.  Outlook uygulaması, Exchange Online ile iletişim başlatmak için Outlook Bulut Hizmeti ile iletişim kurar.
+8. Outlook uygulaması, Exchange Online ile iletişim başlatmak için Outlook Bulut Hizmeti ile iletişim kurar.
 
-9.  Outlook Bulut Hizmeti, kullanıcı için Exchange Online hizmet erişim belirteci almak için Azure AD ile iletişim kurar.
+9. Outlook Bulut Hizmeti, kullanıcı için Exchange Online hizmet erişim belirteci almak için Azure AD ile iletişim kurar.
 
-10.  Outlook uygulaması kullanıcının şirket e-postasını almak için Exchange Online ile iletişim kurar.
+10. Outlook uygulaması kullanıcının şirket e-postasını almak için Exchange Online ile iletişim kurar.
 
-11.  Şirket e-postası kullanıcının posta kutusuna gönderilir.
+11. Şirket e-postası kullanıcının posta kutusuna gönderilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Uygulama tabanlı bir koşullu erişim ilkesi oluşturma](app-based-conditional-access-intune-create.md)

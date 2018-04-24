@@ -1,27 +1,27 @@
 ---
-title: "Android cihazınızı Intune’a kaydetme | Microsoft Docs"
-description: "Android cihazının Intune’a nasıl kaydedildiği açıklanır"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Android cihazınızı Intune’a kaydetme | Microsoft Docs
+description: Android cihazının Intune’a nasıl kaydedildiği açıklanır
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89262f4fecba6aa8d76efd7fd5bbe415d9048204
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7230f14ae9481555f457a8a8700d588c4170b39b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Android cihazınızı Intune’a kaydetme
 
@@ -35,57 +35,57 @@ Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi �
 
 **Android cihazınızı kaydetmek için:**
 
-1.  [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’den ücretsiz Intune Şirket Portalı uygulamasını yükleyin.
+1. [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’den ücretsiz Intune Şirket Portalı uygulamasını yükleyin.
 
-2.  Şirket Portalı uygulamasını açın.
+2. Şirket Portalı uygulamasını açın.
 
-3.  Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve ardından iş veya okul hesabınızla oturum açın.
+3. Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve ardından iş veya okul hesabınızla oturum açın.
 
-    ![Kullanıcıdan gerekli iş veya okul hesabıyla oturum açmasını isteyen Android için Şirket Portalı uygulaması hoş geldiniz ekranı. Microsoft hesapları ve diğer kişisel hesapların kabul edilmediği konusunda da uyarmaktadır.](./media/and-enroll-0-welcome-screen.png)   
+   ![Kullanıcıdan gerekli iş veya okul hesabıyla oturum açmasını isteyen Android için Şirket Portalı uygulaması hoş geldiniz ekranı. Microsoft hesapları ve diğer kişisel hesapların kabul edilmediği konusunda da uyarmaktadır.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Şirketinizin destek birimi şirket hüküm ve koşulları ayarladıysa, koşulları kabul etmek için **KABUL ET**’e dokunun. Kullanmakta olduğunuz Android sürümüne bağlı olarak bu ekran aşağıdaki görüntüden biraz farklı olabilir.
+4. Şirketinizin destek birimi şirket hüküm ve koşulları ayarladıysa, koşulları kabul etmek için **KABUL ET**’e dokunun. Kullanmakta olduğunuz Android sürümüne bağlı olarak bu ekran aşağıdaki görüntüden biraz farklı olabilir.
 
-    ![android-şirket-portalı-oturum-açma](./media/and-enroll-3-accept-terms.png)
+   ![android-şirket-portalı-oturum-açma](./media/and-enroll-3-accept-terms.png)
 
-5.  İş veya okul hesabınızla parolanızı kullanarak Şirket Portalı uygulamasına oturum açıp **Oturum aç**’a dokunun.
+5. İş veya okul hesabınızla parolanızı kullanarak Şirket Portalı uygulamasına oturum açıp **Oturum aç**’a dokunun.
 
-    ![android-şirket-portalı-oturum-açma](./media/and-enroll-2-cp-sign-in.png)
+   ![android-şirket-portalı-oturum-açma](./media/and-enroll-2-cp-sign-in.png)
 
-6.  **Şirket Erişimi Kurulumu** ekranında, **DEVAM**’a dokunun.
+6. **Şirket Erişimi Kurulumu** ekranında, **DEVAM**’a dokunun.
 
-    ![Şirket erişimi kurulum ekranı](/intune/media/android_cp_enroll_01_1709_new.png)
+   ![Şirket erişimi kurulum ekranı](/intune/media/android_cp_enroll_01_1709_new.png)
 
-    > [!NOTE]
-    > Sarı üçgenler herhangi bir hata olduğu anlamına gelmez. Bu simgeler, kayıt işleminde hala tamamlanması gereken adımlar olduğunu gösterir.
+   > [!NOTE]
+   > Sarı üçgenler herhangi bir hata olduğu anlamına gelmez. Bu simgeler, kayıt işleminde hala tamamlanması gereken adımlar olduğunu gösterir.
 
-7.  Şirketinizin destek biriminin cihazınızda neleri görüp göremeyeceğini içeren listeyi gözden geçirin ve ardından **DEVAM**’a dokunun.
+7. Şirketinizin destek biriminin cihazınızda neleri görüp göremeyeceğini içeren listeyi gözden geçirin ve ardından **DEVAM**’a dokunun.
 
-    ![Gizlilik ayarları](/intune/media/android_cp_enroll_02_after_1710.png)
+   ![Gizlilik ayarları](/intune/media/android_cp_enroll_02_after_1710.png)
 
-9.  **Sırada ne var?** ekranında, kayıt sırasında ne olduğunu okuyun ve **KAYDET**’e dokunun.
+8. **Sırada ne var?** ekranında, kayıt sırasında ne olduğunu okuyun ve **KAYDET**’e dokunun.
 
-    ![Sıradaki ekranı](/intune/media/android_cp_enroll_03_after_1710.png)
+   ![Sıradaki ekranı](/intune/media/android_cp_enroll_03_after_1710.png)
 
-10.  Android 6.0 veya üzeri kullanıyorsanız, bu adımı uygulayın. Aksi halde, sonraki adıma geçin.
+9. Android 6.0 veya üzeri kullanıyorsanız, bu adımı uygulayın. Aksi halde, sonraki adıma geçin.
 
-    Şirketinizin destek birimi belirli ilkeler ayarladıysa, aşağıdaki iletileri görebilirsiniz:
-    -   **Şirket Portalı’nın telefon çağrıları yapmasına ve çağrıları yönetmesine izin verilsin mi?**
+   Şirketinizin destek birimi belirli ilkeler ayarladıysa, aşağıdaki iletileri görebilirsiniz:
+   - **Şirket Portalı’nın telefon çağrıları yapmasına ve çağrıları yönetmesine izin verilsin mi?**
 
-        ![android-şirket-portalı-oturum-açma](./media/and-enroll-3a-allow-phone-access.png)
+     ![android-şirket-portalı-oturum-açma](./media/and-enroll-3a-allow-phone-access.png)
 
-    Bu iletiyi görürseniz, **İZİN VER**’e dokunun. İZİN VER’e dokunmak güvenlidir, çünkü **Microsoft hiçbir zaman telefon çağrısı yapmaz veya telefon çağrılarınızı yönetmez**! İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişime izin verdiğinizde, tüm yaptığınız cihazınızın uluslararası mobil cihaz kodunu (IMEI) Intune'a göndermesine izin vermektir. IMEI, seri numarası gibi, bir mobil cihazı benzersiz şekilde tanımlayan bir numaradır.
+   Bu iletiyi görürseniz, **İZİN VER**’e dokunun. İZİN VER’e dokunmak güvenlidir, çünkü **Microsoft hiçbir zaman telefon çağrısı yapmaz veya telefon çağrılarınızı yönetmez**! İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişime izin verdiğinizde, tüm yaptığınız cihazınızın uluslararası mobil cihaz kodunu (IMEI) Intune'a göndermesine izin vermektir. IMEI, seri numarası gibi, bir mobil cihazı benzersiz şekilde tanımlayan bir numaradır.
 
-    Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
+   Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
 
-    -   **Şirket Portalı’nın, kişilerinize erişmesine izin verilsin mi?**
+   - **Şirket Portalı’nın, kişilerinize erişmesine izin verilsin mi?**
 
-        ![android-şirket-portalı-oturum-açma](./media/and-enroll-3b-allow-contacts-access.png)
+     ![android-şirket-portalı-oturum-açma](./media/and-enroll-3b-allow-contacts-access.png)
 
-        Bu iletiyi görürseniz, **İZİN VER**’e dokunun. İZİN VER’e dokunmak güvenlidir, çünkü **Microsoft kişilerinize hiçbir zaman erişmez!** İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişim izni verdiğinizde Şirket Portalı uygulamasının yalnızca iş hesabınızı oluşturmasına, kullanmasına ve yönetmesine izin verilir.
+     Bu iletiyi görürseniz, **İZİN VER**’e dokunun. İZİN VER’e dokunmak güvenlidir, çünkü **Microsoft kişilerinize hiçbir zaman erişmez!** İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişim izni verdiğinizde Şirket Portalı uygulamasının yalnızca iş hesabınızı oluşturmasına, kullanmasına ve yönetmesine izin verilir.
 
-        Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
+     Erişimi reddederseniz Şirket Portalı’nda oturum açtığınız sonraki durumda ileti yeniden görünür, ancak **Bir daha sorma** kutusuna dokunarak gelecekteki iletileri kapatabilirsiniz. Daha sonra erişime izin vermeye karar verirseniz, **Ayarlar** &gt; **Uygulamalar** &gt; **Şirket Portalı** &gt; **İzinler** &gt; **Telefon** giderek izni açın.
 
-11.  **Cihaz yöneticisini etkinleştir** ekranında **Etkinleştir**’e dokunun.
+10. **Cihaz yöneticisini etkinleştir** ekranında **Etkinleştir**’e dokunun.
 
     ![Cihaz yöneticisini etkinleştirin ekranı](./media/and-enroll-5-activate.png)
 
@@ -95,11 +95,11 @@ Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi �
 
     Bu ileti Microsoft’un denetiminde değildir ve iletide kullanılan ifadenin biraz sert göründüğünün farkındayız. Şirket Portalı’nın yalnızca kuruluşunuzla ilgili olan kısıtlamaları ve erişimi göstermesinin bir yolu yoktur. Bunların tümü, bu ekranda aynı anda verilir. Kendi kuruluşunuzun kullanımına özgü sorularınız varsa, daha fazla bilgi edinmek için [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com#HelpDeskDialog) iletişim bilgilerini kullanarak şirketinizin destek birimiyle bağlantı kurun.
 
-12.  Yönergeleri izleyerek PIN’i veya parolayı girin. Bu cihazda zaten bir PIN veya parola ayarladıysanız, bu ekranı görmezsiniz ya da yeni bir PIN veya parola girmeniz gerekmez.
+11. Yönergeleri izleyerek PIN’i veya parolayı girin. Bu cihazda zaten bir PIN veya parola ayarladıysanız, bu ekranı görmezsiniz ya da yeni bir PIN veya parola girmeniz gerekmez.
 
     ![PIN veya parola girin](./media/and-enroll-6-PIN-native.png)
 
-13.  Bir Samsung Knox cihazı kullanıyorsanız **Onayla**’ya dokunduğunuzda cihazınızın kaydedildiğini belirten bir ileti görürsünüz. Yerel bir Android cihaz kullanıyorsanız cihazınızın kaydedildiğini gösteren alttaki ekranı fark etmeniz yeterlidir.
+12. Bir Samsung Knox cihazı kullanıyorsanız **Onayla**’ya dokunduğunuzda cihazınızın kaydedildiğini belirten bir ileti görürsünüz. Yerel bir Android cihaz kullanıyorsanız cihazınızın kaydedildiğini gösteren alttaki ekranı fark etmeniz yeterlidir.
 
     ![Samsung Knox gizlilik ilkesi](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -107,7 +107,7 @@ Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi �
 
     ![Cihazı kaydetme ekranı](./media/and-enroll-8-device-enrolling.png)
 
-14. **Şirket Erişimi Kurulumu** ekranı görüntülendiğinde **DEVAM**’a dokunun. Cihazınızın uyumsuz olduğunu belirten bir ileti görürseniz sorunu düzeltmek için yönergeleri izleyin ve sonra **DEVAM**’a dokunun.
+13. **Şirket Erişimi Kurulumu** ekranı görüntülendiğinde **DEVAM**’a dokunun. Cihazınızın uyumsuz olduğunu belirten bir ileti görürseniz sorunu düzeltmek için yönergeleri izleyin ve sonra **DEVAM**’a dokunun.
 
     ![Cihaz uyumlu değil ancak kaydedildi](/intune/media/android_cp_enroll_05_post_1709.png)
 
@@ -119,7 +119,7 @@ Kaydetme öncesinde veya sonrasında cihazı nasıl kullandığınızı en iyi �
 
     ![Şirket erişimi kurulum ekranı](./media/and-enroll-9d-comp-access-setup.png)  
 
-15. **Şirket Erişimi Kurulumu tamamlandı** ekranında **BİTTİ**’ye dokunun. Cihazınız artık kaydedilmiştir.
+14. **Şirket Erişimi Kurulumu tamamlandı** ekranında **BİTTİ**’ye dokunun. Cihazınız artık kaydedilmiştir.
 
     ![Şirket erişimi kurulumu tamamlandı ekranı](./media/and-enroll-10-comp-access-setup-complete.png)
 

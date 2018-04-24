@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b4415b7b4b1cd48accae3f0d0d39caedd9cf6b3c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9ddf972795d9ced6aff6dd01da4469d49f11c951
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune sözlüğü
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -40,11 +40,13 @@ ms.lasthandoff: 03/22/2018
 |Azure Portal|Yakında tanıtılacak yeni Intune konsolu. [Yeni portal hakkında daha fazla bilgi edinin](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |KCG|[Kendi Cihazını Getir](/intune-classic/get-started/choose-how-to-enroll-devices1). Kullanıcılar kendi cihazlarına Intune Şirket Portalı uygulamasını yükleyip cihazı kaydederek, e-posta, şirket uygulamaları, şirket verileri ve destek gibi şirket kaynaklarına erişim elde edebilirler.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Sertifika profili|Bu ilke türünü Wi-Fi, e-posta veya VPN profilleri kullanırken sertifikalarla [kurumsal kaynaklara güvenli erişim](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) için kullanırsınız.|
@@ -57,6 +59,7 @@ ms.lasthandoff: 03/22/2018
 |Özel ilke|[Bu ilkeleri](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) yalnızca genel yapılandırma ilkesi ihtiyaçlarınızı karşılayan yerleşik bir ayar içermediğinde kullanırsınız. Apple Configurator veya OMA-URI gibi diğer yollarla bir ayar oluşturmak için özel bir ilke kullanmanız mümkün olabilir.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Dağıtım|Yönettiğiniz bir cihaz veya kullanıcıya bir uygulama veya ilke gönderme eylemidir.|
@@ -65,6 +68,7 @@ ms.lasthandoff: 03/22/2018
 |Cihaz grubu eşlemesi|Siz veya son kullanıcı tarafından cihaza atanabilecek cihaz kategorisine (“Kişisel” veya “Satış” gibi) bağlı olarak, [gruplara otomatik olarak cihaz eklemenize](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) yardımcı olur.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |E-posta profili|Bu ilke, mobil cihazlardaki belirli e-posta istemcileri için [e-posta erişim ayarları](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) yapmak amacıyla kullanılabilir ve son kullanıcının yapması gereken ayarları en aza indirir.|
@@ -73,21 +77,25 @@ ms.lasthandoff: 03/22/2018
 |Kaydetme|Microsoft Intune cihazları yönetime getirmek ve kaynaklara erişim izni vermek için [kayıt](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) kullanır.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|Geçerli bir planda Intune kullanıcıları için 150 lisans içeren bir [Microsoft hizmeti](https://technet.microsoft.com/library/mt228265.aspx). Bu hizmeti kullandığınızda, Microsoft uzmanları Intune kullanmaya başlamanız için sizinle birlikte çalışır.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Gruplar|Gruplar, [kullanıcıları veya cihazları mantıksal olarak bir araya getirmenize](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) olanak tanır. Örneğin, tüm Windows bilgisayarlardan oluşan bir grup oluşturabilirsiniz. Ardından bu gruplara uygulamalar ve ilke dağıtabilirsiniz.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Karma|Intune ile [System Center Configuration Manager konsolu aracılığıyla](/intune-classic/get-started/integration-with-cloud-services) kaydedilen cihazları yönetebileceğiniz bir yapılandırmadır.|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Intune Yönetici Konsolu|Çoğu Intune yönetim işlemi için şu anda kullanmakta olduğunuz konsol.|
@@ -96,11 +104,13 @@ ms.lasthandoff: 03/22/2018
 |Envanter|Yönettiğiniz cihazların [donanımını ve üzerlerinde yüklü olan yazılımları](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) görüntülemek için kullanın.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Bilgi noktası modu|[Genel yapılandırma ilkesinin](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) bir parçası olarak yapılandırılan bu mod, cihazları kilitlemenizi sağlar. Örneğin, perakende bir cihazı yalnızca bir uygulamanın çalışmasına izin verecek şekilde yapılandırabilirsiniz.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|Microsoft Intune kullanarak kuruluşunuzda dağıtabileceğiniz bir [web’e gözatma uygulamasıdır](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). Yönetilen tarayıcı ilkesi, yönetilen tarayıcı kullanıcılarının ziyaret edebileceği web sitelerini kısıtlayan bir izin verilenler listesi veya engellenenler listesi yapılandırır.|
@@ -111,18 +121,21 @@ ms.lasthandoff: 03/22/2018
 |Mobil uygulama yapılandırma ilkesi|Şirket adı veya sunucu adresi gibi [ayarları çalıştırıldıkları zaman uyumlu iOS uygulamalarına sağlamak](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) için kullanılan bir iOS ilkesidir.|
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Mobil cihazların ve bilgisayarların özelliklerini kontrol etmeye olanak tanımak için birçok donanım üreticisi tarafından kullanılan endüstri standardı bir cihaz yönetim protokolüdür.|
 |OMA URI|Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı. Bunlar, OMA-DM standardına uygun tek tek cihaz ayarlarını tanımlar. İhtiyaçlarınızı karşılayan yerleşik herhangi bir ayar yoksa, bunların çoğu [Intune özel ilkelerde](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) kullanılabilir.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |İlke|Intune’dan bir cihaza gönderilen bir [bilgi paketidir](/intune-classic/deploy-use/microsoft-intune-policy-reference). Örneğin, cihaza güvenlik ayarlarını veya cihaz uyumluluk bilgilerini dağıtabilirsiniz.|
 |Geçiş kodu sıfırlama|Desteklenen cihazlarda son kullanıcıyı [geçiş kodunu sıfırlamaya](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) mecbur bırakmanıza olanak tanıyan bir Intune özelliğidir.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Uzaktan kilitleme|Cihaz elinizin altında olmasa bile [desteklenen cihazları kilitlemenize](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) olanak tanıyan bir Intune özelliğidir.|
@@ -131,12 +144,14 @@ ms.lasthandoff: 03/22/2018
 |Gereksinimler|Uygulama yüklenmeden önce bir cihazda karşılanması gereken gereksinimleri seçmenize olanak tanıyan bir [uygulama dağıtımı işlemidir](/intune-classic/deploy-use/add-apps). Örneğin, uygulama yüklenmeden önce yüklenmesi gereken iOS işletim sistemi sürümünü belirtebilirsiniz.|
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Seçmeli temizleme|[Seçmeli silme](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune), bir cihazdan yalnızca şirket verilerini (uygun durumlarda mobil uygulama yönetimi (MAM) verileri de dahil), ayarlarını ve e-posta profillerini kaldırır. Seçmeli temizleme, kullanıcının kişisel verilerini cihazda bırakır.|
 |Abonelik|Girdiğiniz ve bir Intune kiracısına erişmenize olanak sağlayan anlaşma.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Intune yazılım istemcisiyle yönetilen Windows bilgisayarlar için [uzaktan yardım özellikleri](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-for-windows-pcs) sağlamak üzere Intune ile birlikte çalışan bir üçüncü taraf uygulamasıdır.|
@@ -144,12 +159,15 @@ ms.lasthandoff: 03/22/2018
 |hüküm ve koşullar|Kullanıcılara dağıttığınız ve kullanıcıların kaydolmak ve işlerine erişmek için [okuyup kabul etmesi](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) gereken bilgileri içeren bir ilke türüdür.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Toplu satın alınan uygulamalar|Bazı uygulama depoları, kuruluşunuzda çalıştırmak istediğiniz bir uygulama için birden fazla lisans satın almanıza olanak sağlayabilir. Intune, lisans bilgilerini uygulama mağazasından içeri aktararak, kaç lisans kullandığınızı izleyerek ve sahip olduğunuzdan fazla uygulama kopyasını yüklemenizi önleyerek, [böyle bir program aracılığıyla satın aldığınız](/intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune) uygulamaları yönetmenize yardımcı olur.|
 |VPN profili|Yönettiğiniz cihazlara [VPN ayarları](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune) dağıtarak son kullanıcıların yapması gereken tüm ayarları en aza indiren bir ilkedir.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Wi-Fi profili|Kullanıcıların şirket ağınıza herhangi bir ayarı bilmelerine veya yapılandırmalarına gerek kalmadan bağlanmasına olanak tanımak için cihazlara [kablosuz ağ ayarları](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) dağıtan bir ilkedir.
+
+|               |                                                                                                                                                                                                                                 |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wi-Fi profili | Kullanıcıların şirket ağınıza herhangi bir ayarı bilmelerine veya yapılandırmalarına gerek kalmadan bağlanmasına olanak tanımak için cihazlara [kablosuz ağ ayarları](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) dağıtan bir ilkedir. |
+

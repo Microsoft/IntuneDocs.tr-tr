@@ -1,22 +1,22 @@
 ---
 title: Microsoft Intune - Azure ile uyumsuzluk iletisi ve eylemleri | Microsoft Docs
-description: "Uyumlu olmayan cihazlara gönderilmek üzere bir bildirim e-postası oluşturun. Cihaz uyumlu değil olarak işaretlendikten sonraki eylemleri ekleyin. Örneğin uyumluluğu sağlamak için bir yetkisiz kullanım süresi ekleyebilir veya cihaz uyumlu duruma gelene kadar erişimi engellemek için bir zamanlama oluşturabilirsiniz. Bunu yapmak için Azure'da Microsoft Intune’u kullanın."
-keywords: 
+description: Uyumlu olmayan cihazlara gönderilmek üzere bir bildirim e-postası oluşturun. Cihaz uyumlu değil olarak işaretlendikten sonraki eylemleri ekleyin. Örneğin uyumluluğu sağlamak için bir yetkisiz kullanım süresi ekleyebilir veya cihaz uyumlu duruma gelene kadar erişimi engellemek için bir zamanlama oluşturabilirsiniz. Bunu yapmak için Azure'da Microsoft Intune’u kullanın.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme - Intune
 
@@ -54,14 +54,14 @@ Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen ciha
 3. **Cihaz uyumluluğu**'nu ve ardından **Bildirimler**'i seçin. 
 4. **Bildirim oluştur**’u seçin ve ardından aşağıdaki bilgileri girin:
 
-  - Ad
-  - Konu
-  - İleti
-  - E-posta üst bilgisi – Şirket logosunu ekleyin
-  - E-posta alt bilgisi – Şirket adını ekleyin
-  - E-posta alt bilgisi – İletişim bilgilerini ekleyin
+   - Ad
+   - Konu
+   - İleti
+   - E-posta üst bilgisi – Şirket logosunu ekleyin
+   - E-posta alt bilgisi – Şirket adını ekleyin
+   - E-posta alt bilgisi – İletişim bilgilerini ekleyin
 
-  ![Intune'da örnek uyumluluk bildirimi iletisi](./media/actionsfornoncompliance-1.PNG)
+   ![Intune'da örnek uyumluluk bildirimi iletisi](./media/actionsfornoncompliance-1.PNG)
 
 Bilgileri ekledikten sonra **Oluştur**’u seçin. Bildirim iletisi şablonu kullanıma hazırdır.
 
@@ -77,7 +77,7 @@ Yeni bir uyumluluk ilkesi oluştururken veya mevcut uyumluluk ilkesini düzenler
 1. [Azure portalında](https://portal.azure.com) **Microsoft Intune**'u açın ve **Cihaz uyumluluğu**'nu seçin.
 2. **İlkeler**'i seçin, ilkelerinizden birini seçin ve sonra da **Özellikler**'i seçin. 
 
-  Henüz bir ilkeniz yok mu? [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) veya başka bir platform ilkesi oluşturun.
+   Henüz bir ilkeniz yok mu? [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) veya başka bir platform ilkesi oluşturun.
 
 3. **Uyumsuzluk eylemleri**'ni seçin ve ardından **Ekle**'yi seçerek eylem parametrelerini girin. Önceden oluşturulmuş ileti şablonunu seçebilir, ek alıcılar ekleyebilir ve yetkisiz kullanım süresi zaman çizelgesini güncelleştirebilirsiniz. Zaman çizelgesinde gün sayısını (0 - 365 arası) girebilir ve daha sonra koşullu erişim ilkelerini zorlayabilirsiniz. Gün sayısı olarak **0** girerseniz, koşullu erişim şirket kaynaklarına erişimi **hemen** engeller.
 

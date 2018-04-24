@@ -1,29 +1,29 @@
 ---
-title: "Dynamics CRM Online'ı koruma"
-description: "Dynamics CRM’i korumak ve erişimini denetlemek için koşullu erişim kullanın."
-keywords: 
+title: Dynamics CRM Online'ı koruma
+description: Dynamics CRM’i korumak ve erişimini denetlemek için koşullu erişim kullanın.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bae29ed7eba164ce19ea5db7d003ab38b4683454
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e2f720c8a6613884397111c2a421fa1cfdc0eb53
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Intune ile Dynamics CRM Online’a erişimi koruma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Dynamics CRM Online’a erişimi, iOS ve Android cihazlardan, Microsoft Intune koşullu erişim kullanarak denetleyebilirsiniz.  Intune koşullu erişimi iki bileşenden oluşur:
 * Cihazın uyumlu kabul edilmesi için uyması gereken [cihaz uyumluluk ilkesi](introduction-to-device-compliance-policies-in-microsoft-intune.md).
@@ -60,7 +60,7 @@ Dynamics CRM ilkesinde kullanmak üzere iki grup türü belirtebilirsiniz:
 
 Bir kullanıcı her iki gruptaysa ilkeden muaf tutulur.
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Adım 2: Uyumluluk ilkesi yapılandırma ve dağıtma
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>2. Adım: Uyumluluk ilkesi yapılandırma ve dağıtma
 Bir uyumluluk ilkesi [oluşturun](create-a-device-compliance-policy-in-microsoft-intune.md) ve ilkeden etkilenecek olan tüm cihazlara [dağıtın](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md). Bunlar, Hedeflenen gruplardaki kullanıcılar tarafından kullanılan tüm cihazlardır.
 
 > [!NOTE]
@@ -73,17 +73,17 @@ Hazır olduğunuzda 3. Adım‘a ilerleyin.
 ### <a name="step-3-configure-the-dynamics-crm-policy"></a>Adım 3: Dynamics CRM ilkesi yapılandırma
 Ardından, ilkeyi yalnızca yönetilen ve uyumlu cihazların Dynamics CRM’ye erişebileceği şekilde yapılandırın. Bu ilke Azure Active Directory’de depolanır.
 
-1.  Intune yönetim konsolunda, **İlke > Koşullu Erişim > Dynamics CRM Online İlkesi**’ni seçin.
+1. Intune yönetim konsolunda, **İlke > Koşullu Erişim > Dynamics CRM Online İlkesi**’ni seçin.
 
-  ![Dynamics CRM Online koşullu erişim ilkesi sayfasının ekran görüntüsü](../media/mdm-ca-dynamics-crm-policy-configuration.png)
+   ![Dynamics CRM Online koşullu erişim ilkesi sayfasının ekran görüntüsü](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  **Koşullu erişimi etkinleştir** ilkesini seçin.
-3.  **Uygulama erişimi** altında aşağıdakilere koşullu erişim ilkesini uygulamayı seçebilirsiniz:
-  * **iOS**
-  * **Android**
-4.  **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Azure Active Directory güvenlik gruplarını seçmek için **Değiştir**’i seçin. Bunu tüm kullanıcılara veya yalnızca seçilmiş bir kullanıcı grubuna hedefleyebilirsiniz.
-5.  **Muaf Tutulan Gruplar** altında, bu ilkeden muaf tutulan Active Directory güvenlik gruplarını seçmek için isteğe bağlı olarak **Değiştir**’i seçin.
-6.  İşiniz bittiğinde **Kaydet**’i seçin.
+2. **Koşullu erişimi etkinleştir** ilkesini seçin.
+3. **Uygulama erişimi** altında aşağıdakilere koşullu erişim ilkesini uygulamayı seçebilirsiniz:
+   * **iOS**
+   * **Android**
+4. **Hedeflenen Gruplar**altında, ilkenin geçerli olacağı Azure Active Directory güvenlik gruplarını seçmek için **Değiştir**’i seçin. Bunu tüm kullanıcılara veya yalnızca seçilmiş bir kullanıcı grubuna hedefleyebilirsiniz.
+5. **Muaf Tutulan Gruplar** altında, bu ilkeden muaf tutulan Active Directory güvenlik gruplarını seçmek için isteğe bağlı olarak **Değiştir**’i seçin.
+6. İşiniz bittiğinde **Kaydet**’i seçin.
 
 Artık Dynamics CRM için koşullu erişimi yapılandırdınız. Koşullu erişim ilkesini dağıtmanız gerekmez, hemen geçerli olur.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Uyumluluk ve koşullu erişim ilkeleri izleme

@@ -1,27 +1,27 @@
 ---
-title: "Bilgisayar istemci yazılımını yükleme"
-description: "Windows bilgisayarlarınızın Microsoft Intune istemci yazılımıyla yönetilmesini sağlamanıza yardımcı olması için bu kılavuzu kullanın."
-keywords: 
+title: Bilgisayar istemci yazılımını yükleme
+description: Windows bilgisayarlarınızın Microsoft Intune istemci yazılımıyla yönetilmesini sağlamanıza yardımcı olması için bu kılavuzu kullanın.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 56ae374f5b930c55fbe12305f4246c52e6213a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Windows bilgisayarlar Intune istemci yazılımı yüklenerek kaydedilebilir. Intune istemci yazılımı aşağıdaki yöntemler kullanılarak yüklenebilir:
 
@@ -39,13 +39,13 @@ Intune lisanslarından biri, Intune istemci yazılımını en fazla beş bilgisa
 
 Intune istemci yazılımının kullanıcılar tarafından yüklendiği yöntemlerin dışındaki tüm yöntemler, sonrasında yazılımın son kullanıcılara dağıtılması için BT yöneticilerinin öncelikle yazılımı indirmesini gerektirir.
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **İstemci Yazılımı İndirme**’ye tıklayın.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **Yönetici** &gt; **İstemci Yazılımı İndirme**’ye tıklayın.
 
-  ![Intune bilgisayar istemcisini indirme](../media/pc-sa-client-download.png)
+   ![Intune bilgisayar istemcisini indirme](../media/pc-sa-client-download.png)
 
 2. **İstemci Yazılımı İndirme** sayfasında, **İstemci Yazılımını İndir**'e tıklayın. Ardından yazılımı içeren **Microsoft_Intune_Setup.zip** paketini ağınızda güvenli bir yere kaydedin.
 
-  Intune istemci yazılımı yükleme paketi, hesabınızla ilgili benzersiz bilgileri içerir. Bu bilgilere ekli bir sertifika aracılığıyla erişilebilir. Yetkisiz kullanıcılar yükleme paketine erişirse paketin ekli sertifikası tarafından temsil edilen hesaba bilgisayar kaydedip şirketin kaynaklarına erişim elde edebilir.
+   Intune istemci yazılımı yükleme paketi, hesabınızla ilgili benzersiz bilgileri içerir. Bu bilgilere ekli bir sertifika aracılığıyla erişilebilir. Yetkisiz kullanıcılar yükleme paketine erişirse paketin ekli sertifikası tarafından temsil edilen hesaba bilgisayar kaydedip şirketin kaynaklarına erişim elde edebilir.
 
 3. Yükleme paketinin içeriğini ağınızda güvenli bir konuma ayıklayın.
 
@@ -244,7 +244,7 @@ Yükseltilmiş bir komut istemi kullanarak aşağıdaki komutlardan birini çal�
 
 - AgentInstaller
 - Logs
-- Updates
+- Güncelleştirmeler
 - Common
 
 ### <a name="remove-the-onlinemanagement-folder"></a>OnlineManagement klasörünü kaldırma

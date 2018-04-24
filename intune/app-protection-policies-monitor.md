@@ -1,28 +1,28 @@
 ---
 title: Uygulama koruma ilkelerini izleme
 titleSuffix: Microsoft Intune
-description: "Intune'da mobil uygulama yönetimi ilkelerinin uyumluluk durumunu izleyin."
-keywords: 
+description: Intune'da mobil uygulama yönetimi ilkelerinin uyumluluk durumunu izleyin.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100114552b05e131ff1d0d3e9e61ef08bcc2eea4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7db5a9dfe7a7da21a9b59dafb4f95cdb54a59735
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 **Azure portalında değilseniz** bu konu başlığı altında klasik Intune portalında [uygulama koruma ilkelerinin nasıl oluşturulacağı](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) anlatılır.
 

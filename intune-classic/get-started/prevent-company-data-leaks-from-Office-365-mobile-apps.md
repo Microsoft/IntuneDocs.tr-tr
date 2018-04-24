@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85233c06d9cbbc697aecabc75ba538612c0fa5fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Hızlı Başlangıç Kılavuzu: Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune, Office 365 mobil uygulamalarından veya diğer iş kolu (LOB) uygulamalarından şirket verilerinin sızmasını önlemeye yardımcı olan mobil uygulama yönetimi (MAM) ilkelerini kullanarak kuruluşunuzun verilerinin güvenliğini sağlamanıza yardımcı olabilir. Intune MAM ilkeleri, son kullanıcıların cihazlarını Intune mobil cihaz yönetimine (MDM) kaydetmesini gerektirmeden kullanılabilir. Bu nedenle, BYOD iOS veya Android mobil cihazlarını bir Microsoft MDM çözümüne (Intune, Configuration Manager veya EAS) kaydetmek istemeyen kullanıcılarınız varsa, kurumsal verileri son kullanıcı cihazlarını yönetmeden korumak istiyorsanız veya zaten Microsoft olmayan bir MDM çözümünü kullanıyorsanız, Intune şirketinizin veri güvenliğini artırmanıza yardımcı olabilir.   
 

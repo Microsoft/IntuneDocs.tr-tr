@@ -1,27 +1,27 @@
 ---
-title: "Windows 10 cihaz kaydı sorunlarınızı giderme | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Windows 10 cihaz kaydı sorunlarınızı giderme | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 936a336019c37fb5ae5f7ef8f5b1201faee553fc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 cihaz kaydı sorunlarınızı giderme
 [Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune’a kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md) bölümündeki adımları uyguladıysanız, ancak iş veya okul e-postalarınıza ve dosyalarınıza yine de erişemiyorsanız, bu sorun giderme adımlarını uygulayın.
@@ -38,15 +38,15 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>“İşe veya okula erişim”i görüyorsanız izlenecek sorun giderme adımları
 
-1.  Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza ve dosyalarınıza erişemiyorsanız, **İşe veya okula erişim** bölümüne geri dönün.
+1. Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza ve dosyalarınıza erişemiyorsanız, **İşe veya okula erişim** bölümüne geri dönün.
 
 2. Aşağıdakilerden birini yapın:
 
-    - Aşağıdaki görüntüye benzer bir bağlantı görürseniz üzerine dokunun, Yönet, Bilgi ve Bağlantıyı Kes seçeneklerini görüp görmediğinizi denetleyin. Bu seçenekleri görürseniz, bu kaydolmuş ve bağlı olduğunuz anlamına gelir.
+   - Aşağıdaki görüntüye benzer bir bağlantı görürseniz üzerine dokunun, Yönet, Bilgi ve Bağlantıyı Kes seçeneklerini görüp görmediğinizi denetleyin. Bu seçenekleri görürseniz, bu kaydolmuş ve bağlı olduğunuz anlamına gelir.
 
-    ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+     ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-    - Yukarıda gösterilen bağlantı bilgilerini göremiyorsanız veya bazı seçenekleri eksik olarak görüyorsanız **Bağlan**’a dokunup iş veya okul kimlik bilgilerinizle oturum açın. Artık bağlanmış olmanız gerekir.
+   - Yukarıda gösterilen bağlantı bilgilerini göremiyorsanız veya bazı seçenekleri eksik olarak görüyorsanız **Bağlan**’a dokunup iş veya okul kimlik bilgilerinizle oturum açın. Artık bağlanmış olmanız gerekir.
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>“Hesabınız”ı görüyorsanız izlenecek sorun giderme adımları
 
@@ -58,6 +58,6 @@ Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza, dosyaları
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>“İş veya okul hesabı ayarlama”yı görüyorsanız izlenecek sorun giderme adımları
 
-__“Girdiğiniz kullanıcı adıyla eşleşen bir yönetim uç noktası otomatik bulunamadı” şeklinde bir ileti görürseniz lütfen kullanıcı adınızı kontrol edin ve oturum açmayı yeniden deneyin. Yönetim uç noktanızın URL’sini biliyorsanız lütfen girin.__ Daha sonra kullanıcı adınız ve parolanızı yeniden girmeyi deneyin. Sorun yaşamaya devam ederseniz **Yönetim uç noktası** metin kutusunda sağlamanız gereken web sitesi için şirketinizin destek birimiyle görüşün. Bu web sitesi büyük olasılıkla şu şekilde olacaktır: **www.şirketiniz.onmicrosoft.com**.
+<strong>“Girdiğiniz kullanıcı adıyla eşleşen bir yönetim uç noktası otomatik bulunamadı” şeklinde bir ileti görürseniz lütfen kullanıcı adınızı kontrol edin ve oturum açmayı yeniden deneyin. Yönetim uç noktanızın URL’sini biliyorsanız lütfen girin.</strong> Daha sonra kullanıcı adınız ve parolanızı yeniden girmeyi deneyin. Sorun yaşamaya devam ederseniz <strong>Yönetim uç noktası</strong> metin kutusunda sağlamanız gereken web sitesi için şirketinizin destek birimiyle görüşün. Bu web sitesi büyük olasılıkla şu şekilde olacaktır: <strong>www.şirketiniz.onmicrosoft.com</strong>.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

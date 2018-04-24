@@ -1,29 +1,29 @@
 ---
-title: "Uygulama koruma ilkeleri içeren iOS uygulamaları"
+title: Uygulama koruma ilkeleri içeren iOS uygulamaları
 titlesuffix: Microsoft Intune
-description: "Koruma ilkelerine sahip bir iOS uygulamasından neler bekleyebileceğinizi öğrenin."
-keywords: 
+description: Koruma ilkelerine sahip bir iOS uygulamasından neler bekleyebileceğinizi öğrenin.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13833d41603e24e4471f0bb5fdda40d000f29a34
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 2804003a0f1acac56ecaae5e24dcf34b4eb0c256
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uygulama koruma ilkelerine sahip iOS uygulamaları için kullanıcı deneyimi hakkında bilgi edinin. Uygulama koruma ilkeleri, yalnızca uygulamalar çalışma bağlamında kullanıldığında uygulanır. Örneğin, bir iş hesabına sahip bir uygulamaya eriştiğinizde veya şirketinizin OneDrive konumunda kayıtlı dosyalara eriştiğinizde.
 ##  <a name="accessing-apps"></a>Uygulamalara erişme

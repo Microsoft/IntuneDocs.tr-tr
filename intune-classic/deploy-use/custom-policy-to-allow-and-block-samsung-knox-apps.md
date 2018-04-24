@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 22018a241664a02aa99b9a3b1a53aa559ab42db5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Özel ilkeler kullanarak Samsung KNOX Standard cihazlar için uygulamalara izin verme veya bunları engelleme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konu başlığı altındaki yordamları kullanarak, aşağıdakilerden birini oluşturan bir Microsoft Intune özel ilkesi oluşturun:
 
@@ -39,21 +39,21 @@ Bu ayarlar yalnızca Samsung KNOX Standard çalıştıran cihazlar tarafından k
 3. İlke için bir ad ve isteğe bağlı bir açıklama sağlayın, ardından **OMA-URI Ayarları** bölümünde **Ekle**’yi seçin.
 4. **OMA-URI Ayarı Ekle veya Düzenle** iletişim kutusunda şunları belirtin: Cihazda çalıştırılması engellenen uygulamalar listesi için:
     
-    - **Ayar adı.** **PreventStartPackages** girin.
-    - **Ayar açıklaması.** 'Çalıştırılması engellenen uygulamalar listesi' gibi isteğe bağlı bir açıklama girin.
-    -   **Veri türü.** Açılan listeden **Dize**’yi seçin.
-    -   **OMA-URI.** **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** girin.
-    -   **Değer.** Engellemek istediğiniz uygulama paket adlarının listesini girin. Sınırlayıcı olarak **; : ,** veya **|** kullanabilirsiniz. (Örnek: paket1;paket2;)
+   - **Ayar adı.** **PreventStartPackages** girin.
+   - **Ayar açıklaması.** 'Çalıştırılması engellenen uygulamalar listesi' gibi isteğe bağlı bir açıklama girin.
+   - **Veri türü.** Açılan listeden **Dize**’yi seçin.
+   - **OMA-URI.** **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages** girin.
+   - **Değer.** Engellemek istediğiniz uygulama paket adlarının listesini girin. Sınırlayıcı olarak **; : ,** veya **|** kullanabilirsiniz. (Örnek: paket1;paket2;)
 
-    Diğer tüm uygulamaları hariç tutarak, kullanıcıların Google Play mağazasından yüklemesine izin verilen uygulamaların listesi için:
+     Diğer tüm uygulamaları hariç tutarak, kullanıcıların Google Play mağazasından yüklemesine izin verilen uygulamaların listesi için:
 
-    - **Ayar adı.** **AllowInstallPackages** girin.
-    - **Ayar açıklaması.** 'Kullanıcıların Google Play mağazasından yükleyebilecekleri uygulamaların listesi' gibi isteğe bağlı bir açıklama girin.
-    - **Veri türü.** Açılan listeden **Dize**’yi seçin.
-    - **OMA-URI.** **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages** girin.
-    - **Değer.** İzin vermek istediğiniz uygulama paket adlarının listesini girin. Sınırlayıcı olarak **; : ,** veya **|** kullanabilirsiniz. (Örnek: paket1;paket2;)
+   - **Ayar adı.** **AllowInstallPackages** girin.
+   - **Ayar açıklaması.** 'Kullanıcıların Google Play mağazasından yükleyebilecekleri uygulamaların listesi' gibi isteğe bağlı bir açıklama girin.
+   - **Veri türü.** Açılan listeden **Dize**’yi seçin.
+   - **OMA-URI.** **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages** girin.
+   - **Değer.** İzin vermek istediğiniz uygulama paket adlarının listesini girin. Sınırlayıcı olarak **; : ,** veya **|** kullanabilirsiniz. (Örnek: paket1;paket2;)
 
-4. **Tamam**’a ve ardından **İlkeyi Kaydet**’e tıklayın. 
+5. **Tamam**’a ve ardından **İlkeyi Kaydet**’e tıklayın. 
 
 >[!TIP]
 > Uygulamanın paket kimliğini, Google Play mağazasında uygulamaya göz atarak bulabilirsiniz. Paket kimliği, uygulanın sayfasının URL’sinde yer alır. Örneğin, Microsoft Word uygulamasının paket kimliği **com.microsoft.office.word**’dür.

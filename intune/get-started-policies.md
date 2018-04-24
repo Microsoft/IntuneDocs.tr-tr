@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune’daki ilkeleri kullanmaya başlama"
-titlesuffix: 
-description: "Şirket verilerinin korunmasına yardımcı olmak ve son kullanıcıların şirket kaynaklarına erişirken kullandıkları cihazları yönetmek için ilkeler oluşturun."
-keywords: 
+title: Microsoft Intune’daki ilkeleri kullanmaya başlama
+titlesuffix: ''
+description: Şirket verilerinin korunmasına yardımcı olmak ve son kullanıcıların şirket kaynaklarına erişirken kullandıkları cihazları yönetmek için ilkeler oluşturun.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8af61eb207a8f9b2dc74650627fcab0e4d858904
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 661ef25085892e299e45156f27b3d9db959577d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-creating-policies"></a>Özel ilkeler oluşturmaya başlama
 

@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune’da uygulamaları gruplara atama"
-titlesuffix: 
-description: "Microsoft Intune'a uygulama ekledikten sonra, bu uygulamayı kullanıcı veya cihaz gruplarına atamak isteyeceksiniz.”"
-keywords: 
+title: Microsoft Intune’da uygulamaları gruplara atama
+titlesuffix: ''
+description: Microsoft Intune'a uygulama ekledikten sonra, bu uygulamayı kullanıcı veya cihaz gruplarına atamak isteyeceksiniz.”
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bir uygulamayı Microsoft Intune’a ekledikten sonra kullanıcılara ve cihazlara atayabilirsiniz.
 
@@ -51,26 +51,26 @@ Uygulamalar, Intune tarafından yönetilip yönetilmediğine bakılmaksızın uy
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-1. **Mobil uygulamalar** iş yükündeki **Yönet** bölümünden **Uygulamalar**’ı seçin.
-2. Uygulama listesi dikey penceresinde, atamak istediğiniz uygulamaya tıklayın.
-3. Uygulamaya özgü **Genel Bakış** dikey penceresinde, **Yönet** bölümünden **Atamalar**’ı seçin.
-4. **Grup Ekle**’yi seçerek uygulamayla ilgili **Grup ekle** dikey penceresinin görüntülenmesini sağlayın.
-5. Belirli uygulama için, **atama türü** olarak aşağıdakilerden birini seçin:
-    - **Kayıtlı cihazlar için kullanılabilir** - Kullanıcılar, Şirket Portalı uygulamasından veya web sitesinden uygulamayı yükler.
-    - **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. **Android for Work** türünün bu seçeneği desteklemediğini aklınızda bulundurun. 
-    - **Gerekli** - Uygulama, seçili gruplardaki cihazlara yüklenir.
-    - **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
+4. **Mobil uygulamalar** iş yükündeki **Yönet** bölümünden **Uygulamalar**’ı seçin.
+5. Uygulama listesi dikey penceresinde, atamak istediğiniz uygulamaya tıklayın.
+6. Uygulamaya özgü **Genel Bakış** dikey penceresinde, **Yönet** bölümünden **Atamalar**’ı seçin.
+7. **Grup Ekle**’yi seçerek uygulamayla ilgili **Grup ekle** dikey penceresinin görüntülenmesini sağlayın.
+8. Belirli uygulama için, **atama türü** olarak aşağıdakilerden birini seçin:
+   - **Kayıtlı cihazlar için kullanılabilir** - Kullanıcılar, Şirket Portalı uygulamasından veya web sitesinden uygulamayı yükler.
+   - **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. **Android for Work** türünün bu seçeneği desteklemediğini aklınızda bulundurun. 
+   - **Gerekli** - Uygulama, seçili gruplardaki cihazlara yüklenir.
+   - **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
 
-    > [!NOTE]
-    > **Yalnızca iOS uygulamalar için** - Uygulamaya göre VPN ayarları barındıran bir iOS VPN profili oluşturduysanız **VPN** altında bu profili seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
+     > [!NOTE]
+     > **Yalnızca iOS uygulamalar için** - Uygulamaya göre VPN ayarları barındıran bir iOS VPN profili oluşturduysanız **VPN** altında bu profili seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
 
-6. Bu uygulama atamasından etkilenecek kullanıcı gruplarını seçmek için **Dahil Edilen Gruplar**’ı seçin.
-7. Dahil etmek üzere bir veya daha fazla grup seçtikten sonra **Seçin**’e tıklayın.
-8. Dahil edilen grup bölümünü tamamlamak için **Ata** dikey penceresinde **Tamam**’a tıklayın.
-9. Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız **Grupları Dışla**’ya tıklayın.
-10. Herhangi bir grubu dışlamayı seçtiyseniz **Grupları seçin** dikey penceresinde **Seçin**’e tıklayın.
-11. **Grup ekle** dikey penceresinde **Tamam**’a tıklayın.
-12. Atamalarınızı kaydetmek için uygulama **Atamalar** dikey penceresinde **Kaydet**’e tıklayın.
+9. Bu uygulama atamasından etkilenecek kullanıcı gruplarını seçmek için **Dahil Edilen Gruplar**’ı seçin.
+10. Dahil etmek üzere bir veya daha fazla grup seçtikten sonra **Seçin**’e tıklayın.
+11. Dahil edilen grup bölümünü tamamlamak için **Ata** dikey penceresinde **Tamam**’a tıklayın.
+12. Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız **Grupları Dışla**’ya tıklayın.
+13. Herhangi bir grubu dışlamayı seçtiyseniz **Grupları seçin** dikey penceresinde **Seçin**’e tıklayın.
+14. **Grup ekle** dikey penceresinde **Tamam**’a tıklayın.
+15. Atamalarınızı kaydetmek için uygulama **Atamalar** dikey penceresinde **Kaydet**’e tıklayın.
 
 Uygulama artık seçtiğiniz gruplara atanır. Uygulama atamalarını dahil etme ve dışlama hakkında daha fazla bilgi için bkz. [Uygulama atamalarını dahil etme ve dışlama](apps-inc-exl-assignments.md).
 

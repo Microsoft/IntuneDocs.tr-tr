@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune'a MTD uygulamaları ekleme ve atama"
-titleSuffix: 
-description: "Azure portalında Intune kullanarak Mobile Threat Defense (MTD) uygulamalarını, Microsoft Authenticator uygulamasını ve iOS yapılandırma ilkesini ekleyin."
-keywords: 
+title: Microsoft Intune'a MTD uygulamaları ekleme ve atama
+titleSuffix: ''
+description: Azure portalında Intune kullanarak Mobile Threat Defense (MTD) uygulamalarını, Microsoft Authenticator uygulamasını ve iOS yapılandırma ilkesini ekleyin.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama
 
@@ -75,7 +75,7 @@ Lookout for Work iOS uygulamalarını yeniden imzalama hakkında ayrıntılı y�
 iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere aşağıdakileri yapın:
 
 1. [Azure portalı](https://portal.azure.com)'na gidin, kimlik bilgilerinizle oturum açın, sonra uygulama sayfasına gidin.
-  
+
 2. **Lookout for Work iOS uygulamasını****yerel istemci uygulaması** olarak ekleyin.
 
 3. IPA’yı imzaladığınızda seçtiğiniz müşteri paketi kimliğini **com.lookout.enterprise.yourcompanyname** ile değiştirin.
@@ -133,13 +133,13 @@ iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere 
 
 -   iOS uygulama yapılandırma ilkesi dosyasını **indirmeniz** gerekir: 
     -   [Skycure Yönetim konsoluna](https://aad.skycure.com) gidin ve yönetici kimlik bilgilerinizle oturum açın.
-    
+
     -   **Ayarlar** &gt; **Cihaz Yönetimi Tümleştirmeleri** &gt; **EMM Tümleştirme Seçimi**’ne gidin, **Microsoft Intune**’u seçin ve ardından seçiminizi kaydedin.
-    
+
     -   **Tümleştirme kurulum dosyaları** bağlantısına tıklayın ve oluşturulan \*.zip dosyasını kaydedin. Bu .zip dosyası, Intune’da iOS uygulama yapılandırma ilkesini oluşturmak için kullanılacak olan **skycure\_configuration.plist** dosyasını içerir.
-    
+
     -   Skycure iOS uygulama yapılandırma ilkesini eklemek için [iOS için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](app-configuration-policies-use-ios.md) yönergelerine bakın.
-    
+
     - **8. adımda** **XML verisi gir** seçeneğini kullanın, **skycure_configuration.plist** dosyasındaki içeriği kopyalayıp yapılandırma ilkesinin gövdesine yapıştırın.
 
 **skycure_configuration.plist** dosyasının içeriğini şuradan da kopyalayabilirsiniz:
@@ -151,7 +151,6 @@ iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere 
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>Check Point SandBlast Mobile için
 
@@ -160,7 +159,6 @@ iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere 
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>Zimperium için
@@ -179,7 +177,6 @@ iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere 
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>Uygulama atamak için (Tüm MTD iş ortakları)

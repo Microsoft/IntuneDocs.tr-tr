@@ -15,15 +15,15 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu konu, BT yöneticilerinin Windows kaydını kullanıcıları için kolaylaştırmasına yardımcı olmaktadır. [Intune’u kurduğunuzda](setup-steps.md) kullanıcılar, iş veya okul hesaplarıyla [oturum açarak](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) Windows cihazlarını kaydederler.  
 
@@ -48,7 +48,7 @@ Otomatik kayıt kullanabilen kuruluşlar, Windows Yapılandırma Tasarımcısı 
 **Çok kullanıcı desteği**<br>
 Windows 10 Creators Update çalıştıran ve Azure Active Directory etki alanına katılmış olan cihazlar artık Intune tarafından çok kullanıcılı yönetim için destekleniyor. Standart kullanıcılar, Azure AD kimlik bilgileriyle oturum açtığında kullanıcı adlarına atanmış uygulama ve ilkeleri alırlar. Kullanıcılar, uygulama yükleme gibi self servis senaryoları için Şirket Portalını şu anda kullanamaz.
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium olmadan Windows kaydını kolaylaştırma
 Kayıt isteklerini otomatik olarak Intune sunucularına yönlendiren bir etki alanı adı sunucusu (DNS) diğer adı (CNAME kayıt türü) oluşturarak kullanıcılarınız için kayıt işlemini kolaylaştırabilirsiniz. Bir DNS CNAME kaynak kaydı oluşturmazsanız Intune’a bağlanmaya çalışan kullanıcılar kayıt sırasında Intune sunucu adını girmek zorunda kalırlar.

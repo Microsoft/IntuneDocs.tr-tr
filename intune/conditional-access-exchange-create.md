@@ -1,28 +1,28 @@
 ---
-title: "Exchange koşullu erişim ilkesi oluşturma"
+title: Exchange koşullu erişim ilkesi oluşturma
 titlesuffix: Microsoft Intune
-description: "Intune'da Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişimi yapılandırın."
-keywords: 
+description: Intune'da Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişimi yapılandırın.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cfe5916668de6d8bb3c42f2fd6afb6221bbc07e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturun.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu makalede, cihaz uyumluluğuna bağlı olarak şirket içi Exchange için koşullu erişimi nasıl yapılandıracağınız gösterilir.
 

@@ -1,28 +1,28 @@
 ---
-title: "Klasik Microsoft Intune portalı arşivindeki yenilikler"
-description: "Microsoft Intune için Yenilikler duyuruları arşivi"
-keywords: 
+title: Klasik Microsoft Intune portalı arşivindeki yenilikler
+description: Microsoft Intune için Yenilikler duyuruları arşivi
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f259620f64d70bfce4ed60c2a96194028a12c38
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Klasik Intune portalındaki yenilikler - önceki aylar
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 Bu sayfa, klasik Intune portalı için [Yenilikler sayfasında](whats-new.md) daha önceden açıklanan yeni özellikleri ve bildirimleri listeler.
 
@@ -281,7 +281,7 @@ Aşağıdaki makaleler güncelleştirilmiştir:
 
 * [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](apps-prepare-mobile-application-management.md)
 * [Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını mobil uygulama yönetimi için hazırlama](app-wrapper-prepare-ios.md)
-* [Microsoft Intune Uygulama SDK’sını kullanmaya başlayın](/app-sdk-get-started.md)
+* [Microsoft Intune Uygulama SDK’sını kullanmaya başlayın](app-sdk-get-started.md)
 * [iOS için Intune Uygulama SDK’sı geliştirici kılavuzu](app-sdk-ios.md)
 
 Aşağıdaki makaleler belgeler kitaplığına yeni eklenmiştir:
@@ -359,7 +359,7 @@ __Xamarin için Intune Uygulama SDK'sı bileşeni artık kayıtsız MAM desteği
 
 __Symantec imzalama sertifikası artık yükleme için imzalanmış Windows Phone 8 Şirket Portalı gerektirmiyor__ Symantec imzalama sertifikasını yüklemek için artık imzalı Windows Phone 8 Şirket Portalı uygulaması kullanılması gerekmiyor. Sertifika tek başına yüklenebilir.
 
-###<a name="deprecations"></a>Kullanım dışı bırakılanlar
+### <a name="deprecations"></a>Kullanım dışı bırakılanlar
 
 __Windows Phone 8 Şirket Portalı Desteği__ Windows Phone 8 Şirket Portalı desteği artık kullanım dışı bırakılacak. Windows Phone 8 ve WinRT platformları için sunulan destek de Ekim 2016'da kullanım dışı bırakıldı. Windows Phone 8 Şirket Portalı için sunulan destek de Ekim 2016'da kullanım dışı bırakıldı.
 

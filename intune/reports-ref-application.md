@@ -1,25 +1,25 @@
 ---
 title: Uygulama
 titlesuffix: Microsoft Intune
-description: "Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Uygulama kategorisi için başvuru konusu."
-keywords: "Intune Veri Ambarı"
+description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Uygulama kategorisi için başvuru konusu.
+keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e7de3ab89ff75b381d0438f49fb6015b0eb28d28
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 5fd8f9744e68a19cc9411fe366aff4050cc3caa6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
@@ -128,11 +128,13 @@ ms.lasthandoff: 03/16/2018
 
 **MobileAppDeviceUserInstallStatus** belirli bir cihaz ve kullanıcı için mobil uygulama yükleme durumunu gösterir.
 
-| Özellik | Description |
-|---|---|
-| DateKey | Uygulama yükleme durumunun kaydedildiği tarihin anahtarı. |
-| AppKey | AppRevision örneğini tanımlamak için kullanılan mobil uygulamanın anahtarı. |
-| DeviceKey | Device örneğini tanımlamak için kullanılan hedef cihazın anahtarı. |
-| UserKey | User örneğini tanımlamak için kullanılan hedef kullanıcının anahtarı. |
-|AppInstallStateKey | MobileAppInstallState örneğini tanımlamak için kullanılan uygulama yükleme durumunun anahtarı. |
-| ErrorCode | Uygulama yükleyicisi, mobil platform veya uygulamanın yüklemesiyle ilgili hizmet tarafından döndürülen hata kodu. |
+
+|      Özellik      |                                                         Description                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|      DateKey       |                                  Uygulama yükleme durumunun kaydedildiği tarihin anahtarı.                                  |
+|       AppKey       |                             AppRevision örneğini tanımlamak için kullanılan mobil uygulamanın anahtarı.                              |
+|     DeviceKey      |                              Device örneğini tanımlamak için kullanılan hedef cihazın anahtarı.                               |
+|      UserKey       |                                User örneğini tanımlamak için kullanılan hedef kullanıcının anahtarı.                                 |
+| AppInstallStateKey |                     MobileAppInstallState örneğini tanımlamak için kullanılan uygulama yükleme durumunun anahtarı.                     |
+|     ErrorCode      | Uygulama yükleyicisi, mobil platform veya uygulamanın yüklemesiyle ilgili hizmet tarafından döndürülen hata kodu. |
+

@@ -14,15 +14,15 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: be8a04b28494e5806a1e5127d4d0bbdf4cd98f36
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f818c35a008c24a529967b09a37917343433ff7d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-intune"></a>Intune’u ayarlama
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Bu kurulum adımları, Intune kullanarak mobil cihaz yönetimini (MDM) etkinleştirmenize yardımcı olur. Kullanıcılara şirket kaynakları erişimi vermeniz veya cihazlarda ayarları yönetmeniz için önce bu cihazların yönetilmesi gerekir.
 
@@ -35,16 +35,17 @@ Intune aboneliği ayarlama ve MDM yetkilisi ayarlama gibi bazı adımlar, çoğu
 
 
 
-| Adımlar | Durum  |
-| ------------- |-------------|
-| 1  | [Desteklenen yapılandırmalar](supported-devices-browsers.md) - Başlamadan önce bilmeniz gerekenler. Bunlar arasında desteklenen yapılandırmalar ve ağ gereksinimleri vardır.|
-| 2 |  [Intune’da oturum açma](account-sign-up.md) - Deneme aboneliğinizde oturum açın veya yeni bir Intune aboneliği oluşturun. |  
-| 3 | [Etki alanı adı yapılandırma](custom-domain-name-configure.md) - Şirketinizin etki alanı adını Intune’a bağlamak için DNS kaydı ayarlayın. Böylece, Intune’a bağlanırken ve kaynakları kullanırken kullanıcılara tanıdık bir etki alanı sağlarsınız.  |
-| 4 | [Kullanıcı ekleme](users-add.md) - Kullanıcıları el ile ekleyin veya Intune ile eşitlemek için Active Directory'ye bağlanın. Cihazlarınız, “kullanıcısız” bilgi noktası cihazları gibi cihazlar değilse gereklidir. |
-| 5 | [Lisans atama](licenses-assign.md) - Kullanıcıların Intune’u kullanmasına izin verin. Tüm kullanıcılar veya kullanıcısız cihazların Intune’a erişmesi için bir Intune lisansı gerekir.|
-| 6 |  [Grup ekleme](groups-add.md) - Yönetim görevlerini basitleştirmek için kullanıcı ve cihaz gruplarını kullanın. Gruplar; uygulama, ayar ve diğer kaynakları atamak için kullanılır. |
-| 7 | [Uygulama ekleme](apps-add.md) - Uygulamalar otomatik olarak gruplara atanabilir veya isteğe bağlı olarak yüklenebilir. |
-| 8 | [Cihaz yapılandırma](device-profiles.md) - Cihaz ayarlarını yöneten profiller ayarlayın. Cihaz profilleri; e-posta, VPN, Wi-Fi ve cihaz özellikleri için ayarları önceden yapılandırabilir. Ayrıca cihazları ve verileri korumak için cihazları kısıtlayabilir.  |
-| 9 | [Şirket Portalı’nı Özelleştirme](company-portal-app.md) - Kullanıcıların cihaz kaydetmek ve uygulama yüklemek için kullandığı Intune Şirket Portalı’nı özelleştirin. Bu ayarlar hem Şirket Portalı uygulamasında hem de Intune Şirket Portalı web sitesinde bulunur. |
-| 10 | [Cihaz kaydını etkinleştirme](mdm-authority-set.md) - MDM yetkilisini ayarlayarak ve belirli platformları etkinleştirerek iOS, Windows, Android ve Mac cihazların Intune yönetimini etkinleştirin. |
-| 11 | [Uygulama ilkeleri yapılandırma](app-protection-policy.md) - Microsoft Intune’da uygulama koruma ilkelerine bağlı olarak belirli ayarları sağlayın. |
+| Adımlar |                                                                                                                       Durum                                                                                                                       |
+|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   1   |                                        [Desteklenen yapılandırmalar](supported-devices-browsers.md) - Başlamadan önce bilmeniz gerekenler. Bunlar arasında desteklenen yapılandırmalar ve ağ gereksinimleri vardır.                                         |
+|   2   |                                                                 [Intune’da oturum açma](account-sign-up.md) - Deneme aboneliğinizde oturum açın veya yeni bir Intune aboneliği oluşturun.                                                                  |
+|   3   |                [Etki alanı adı yapılandırma](custom-domain-name-configure.md) - Şirketinizin etki alanı adını Intune’a bağlamak için DNS kaydı ayarlayın. Böylece, Intune’a bağlanırken ve kaynakları kullanırken kullanıcılara tanıdık bir etki alanı sağlarsınız.                |
+|   4   |                                   [Kullanıcı ekleme](users-add.md) - Kullanıcıları el ile ekleyin veya Intune ile eşitlemek için Active Directory'ye bağlanın. Cihazlarınız, “kullanıcısız” bilgi noktası cihazları gibi cihazlar değilse gereklidir.                                    |
+|   5   |                                            [Lisans atama](licenses-assign.md) - Kullanıcıların Intune’u kullanmasına izin verin. Tüm kullanıcılar veya kullanıcısız cihazların Intune’a erişmesi için bir Intune lisansı gerekir.                                             |
+|   6   |                                               [Grup ekleme](groups-add.md) - Yönetim görevlerini basitleştirmek için kullanıcı ve cihaz gruplarını kullanın. Gruplar; uygulama, ayar ve diğer kaynakları atamak için kullanılır.                                                |
+|   7   |                                                                        [Uygulama ekleme](apps-add.md) - Uygulamalar otomatik olarak gruplara atanabilir veya isteğe bağlı olarak yüklenebilir.                                                                         |
+|   8   | [Cihaz yapılandırma](device-profiles.md) - Cihaz ayarlarını yöneten profiller ayarlayın. Cihaz profilleri; e-posta, VPN, Wi-Fi ve cihaz özellikleri için ayarları önceden yapılandırabilir. Ayrıca cihazları ve verileri korumak için cihazları kısıtlayabilir. |
+|   9   |       [Şirket Portalı’nı Özelleştirme](company-portal-app.md) - Kullanıcıların cihaz kaydetmek ve uygulama yüklemek için kullandığı Intune Şirket Portalı’nı özelleştirin. Bu ayarlar hem Şirket Portalı uygulamasında hem de Intune Şirket Portalı web sitesinde bulunur.       |
+|  10   |                                [Cihaz kaydını etkinleştirme](mdm-authority-set.md) - MDM yetkilisini ayarlayarak ve belirli platformları etkinleştirerek iOS, Windows, Android ve Mac cihazların Intune yönetimini etkinleştirin.                                 |
+|  11   |                                                        [Uygulama ilkeleri yapılandırma](app-protection-policy.md) - Microsoft Intune’da uygulama koruma ilkelerine bağlı olarak belirli ayarları sağlayın.                                                         |
+

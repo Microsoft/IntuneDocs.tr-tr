@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune - Azure’da sertifika profilleri oluşturma | Microsoft Docs"
-description: "Cihazlarınız için, SCEP veya PKCS sertifika ortamını yapılandırarak bir sertifika profili ekleyin veya oluşturun, ortak sertifikayı dışa aktarın, Azure portalında profili oluşturun ve ardından Azure portalında Microsoft Intune'daki sertifika profillerine SCEP veya PKCS atayın"
-keywords: 
+title: Microsoft Intune - Azure’da sertifika profilleri oluşturma | Microsoft Docs
+description: Cihazlarınız için, SCEP veya PKCS sertifika ortamını yapılandırarak bir sertifika profili ekleyin veya oluşturun, ortak sertifikayı dışa aktarın, Azure portalında profili oluşturun ve ardından Azure portalında Microsoft Intune'daki sertifika profillerine SCEP veya PKCS atayın
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune'daki cihazlarınız için sertifika profili yapılandırma
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Kullanıcılarınıza VPN, Wi-Fi veya e-posta profilleri aracılığıyla şirket kaynaklarına erişim izni verdiğinizde, bu bağlantıların kimlik doğrulamasını sertifika kullanarak yapabilirsiniz. Sertifikaları kullandığınızda, bağlantıların kimlik doğrulamasını yapmak için kullanıcı adı veya parola girmeniz gerekmez
 
@@ -87,7 +87,7 @@ SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen se
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
+3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 2. **Cihaz yapılandırması** bölmesinde **Yönet** > **Profiller**’i seçin.
 3. Profiller bölmesinde **Profil oluştur**’u seçin.
 4. **Profil oluştur** bölmesinde, güvenilen sertifika profili için **Ad** ve **Açıklama** girin.

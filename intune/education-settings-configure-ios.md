@@ -3,8 +3,8 @@ title: iOS Classroom uygulaması için Intune ayarları
 titleSuffix: Microsoft Intune
 description: iOS cihazlarındaki Classroom uygulamasının ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 063287ac1bf3441092ff7c9daea5102314384b7d
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom uygulaması için Intune ayarlarını yapılandırma
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Giriş
 [Classroom](https://itunes.apple.com/app/id1085319084), öğretmenlerin öğrenmeye yol göstermesine ve sınıftaki öğrenci cihazlarını denetlemesine yardımcı olan bir uygulamadır. Örneğin, bir öğretmen uygulamayı kullanarak şunları yapabilir:
