@@ -1,28 +1,28 @@
 ---
-title: "Bir Windows bilgisayarı devre dışı bırakma"
-description: "Intune tarafından yönetilen bir Windows bilgisayar nasıl devre dışı bırakılır?"
-keywords: 
+title: Bir Windows bilgisayarı devre dışı bırakma
+description: Intune tarafından yönetilen bir Windows bilgisayar nasıl devre dışı bırakılır?
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f842c983dd06c00574ec660a11bdaef6f41c5aa8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99dc86bf20a50710cf1661702d46a3124861a619
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-a-windows-pc"></a>Bir Windows bilgisayarı devre dışı bırakma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bilgisayar olarak yönettiğiniz masaüstü cihazları, Intune yazılımını bunlar üzerinde çalıştırarak devre dışı bırakmak için aşağıdaki adımları uygulayın. Bir bilgisayarı devre dışı bıraktığınızda, yazılım söz konusu bilgisayarı Intune yönetiminden kaldırır. Bir bilgisayarı özgün fabrika ayarlarına döndürmek için Intune’dan fabrika sıfırlaması gerçekleştiremezsiniz.
 
@@ -55,6 +55,6 @@ Bir bilgisayarı devre dışı bıraktığınızda:
 
     Endpoint Protection istemcisini kaldırma işlemi başarısız olursa daha fazla yardım için [Endpoint Protection’da sorun giderme](/intune-classic/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) konusunu okuyun.
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 
 [Intune yazılım istemcisi ile genel Windows bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

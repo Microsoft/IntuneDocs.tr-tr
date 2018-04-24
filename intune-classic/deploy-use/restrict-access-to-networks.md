@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1893410f4993d6feaa218d251dd7e2561286f5a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Microsoft Intune ile Cisco ISE kullanma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune’un Cisco Identity Services Engine (ISE) ile tümleştirmesi, Intune cihaz kaydı ve uyum durumunu kullanarak ISE ortamınızda ağ ilkeleri yazmanızı sağlar. Bu ilkeleri kullanarak, şirket ağınıza erişimin, Intune tarafından yönetilen ve Intune ilkeleriyle uyumlu cihazlarla kısıtlandığından emin olabilirsiniz.
 
@@ -70,13 +70,13 @@ b. Kilit simgesini &gt;  **Daha fazla bilgi**’yi seçin.
 
 ### <a name="obtain-a-self-signed-cert-from-ise"></a>ISE’den otomatik olarak imzalanan sertifika alma 
 
-1.  ISE konsolunda, **Yönetim** > **Sertifikalar** > **Sistem Sertifikaları** > **Otomatik Olarak İmzalanan Sertifika Oluştur**’a gidin.  
-2.       Otomatik olarak imzalanan sertifikayı dışarı aktarın.
+1. ISE konsolunda, **Yönetim** > **Sertifikalar** > **Sistem Sertifikaları** > **Otomatik Olarak İmzalanan Sertifika Oluştur**’a gidin.  
+2. Otomatik olarak imzalanan sertifikayı dışarı aktarın.
 3. Bir metin düzenleyicide, dışa aktarılan sertifikayı düzenleyin:
 
- - **-----SERTİFİKA BAŞLANGICI-----** öğesini silin
- -  **-----SERTİFİKA SONU-----** öğesini silin
- 
+   - **-----SERTİFİKA BAŞLANGICI-----** öğesini silin
+   -  **-----SERTİFİKA SONU-----** öğesini silin
+
 Tüm metnin tek bir satırda olduğundan emin olun
 
 
@@ -88,13 +88,13 @@ Tüm metnin tek bir satırda olduğundan emin olun
 5. Dosyayı, adını değiştirmeden kaydedin.
 6. Uygulamanıza, Microsoft Graph ve Microsoft Intune API için izinler sağlayın.
 
- a. Microsoft Graph için, aşağıdakileri seçin:
+   a. Microsoft Graph için, aşağıdakileri seçin:
     - **Uygulama izinleri**: Dizin verilerini oku
     - **Temsilci izinleri**:
         - Kullanıcının verilerine istendiği zaman eriş
         - Kullanıcıların oturumunu açma
 
- b. Microsoft Intune API'si için, **Uygulama izinlerinde**, **Intune'dan cihaz durumunu ve uyumluluğunu al**’ı seçin.
+   b. Microsoft Intune API'si için, **Uygulama izinlerinde**, **Intune'dan cihaz durumunu ve uyumluluğunu al**’ı seçin.
 
 7. **Uç Noktalarını Görüntüle**’yi seçin ve ISE ayarlarını yapılandırmada kullanmak için aşağıdaki değerleri kopyalayın:
 
@@ -105,23 +105,40 @@ Tüm metnin tek bir satırda olduğundan emin olun
 |Kodunuzu, İstemci kimliğinizle güncelleştirme|İstemci Kimliği|
 
 ### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>4. Adım: ISE’nin otomatik olarak imzalanan sertifikasını Azure AD'de oluşturduğunuz ISE uygulamasına yükleyin
-1.     Bir .cer X509 ortak sertifika dosyasından base64 olarak kodlanmış sertifika değerini ve parmak izini alın. Bu örnek PowerShell'i kullanmaktadır:
-   
-      
-      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
- 
-    Bir sonraki adımda kullanmak üzere $base64Thumbprint, $base64Value ve $keyid değerlerini kaydedin.
-2.       Sertifikayı bildirim dosyası ile karşıya yükleyin. [Azure Yönetim Portalı](https://manage.windowsazure.com)'nda oturum açın
-2.      Azure AD ek bileşenine girerek bir X.509 sertifikası ile yapılandırmak istediğiniz uygulamayı bulun.
-3.      Uygulama bildirim dosyasını indirin. 
-5.      Boş "KeyCredentials": [], özelliğini aşağıdaki JSON ile değiştirin.  KeyCredentials karmaşık türü [Varlık ve karmaşık tür başvurusu](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)’nda belgelenir.
+1. Bir .cer X509 ortak sertifika dosyasından base64 olarak kodlanmış sertifika değerini ve parmak izini alın. Bu örnek PowerShell'i kullanmaktadır:
 
- 
-    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
-     ], 
- 
+
+~~~
+  $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $cer.Import(“mycer.cer”)
+  $bin = $cer.GetRawCertData()
+  $base64Value = [System.Convert]::ToBase64String($bin)
+  $bin = $cer.GetCertHash()
+  $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+  $keyid = [System.Guid]::NewGuid().ToString()
+
+Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+~~~
+2. Sertifikayı bildirim dosyası ile karşıya yükleyin. [Azure Yönetim Portalı](https://manage.windowsazure.com)'nda oturum açın
+3. Azure AD ek bileşenine girerek bir X.509 sertifikası ile yapılandırmak istediğiniz uygulamayı bulun.
+4. Uygulama bildirim dosyasını indirin. 
+5. Boş "KeyCredentials": [], özelliğini aşağıdaki JSON ile değiştirin.  KeyCredentials karmaşık türü [Varlık ve karmaşık tür başvurusu](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)’nda belgelenir.
+
+
+~~~
+“keyCredentials“: [
+{
+ “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+ “keyId“: “$keyid_from_above“,
+ “type”: “AsymmetricX509Cert”,
+ “usage”: “Verify”,
+ “value”:  “$base64Value_from_above”
+ }2. 
+ ], 
+~~~
+
 Örneğin:
- 
+
     “keyCredentials“: [
     {
     “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
@@ -131,10 +148,10 @@ Tüm metnin tek bir satırda olduğundan emin olun
     “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
     }
     ],
- 
-6.      Değişiklikleri uygulama bildirim dosyasına kaydedin.
-7.      Düzenlenen uygulama bildirim dosyasını Azure yönetim portalı aracılığıyla yükleyin.
-8.      İsteğe bağlı: X.509 sertifikanızın uygulamada mevcut olduğunu denetlemek için bildirimi yeniden indirin.
+
+6. Değişiklikleri uygulama bildirim dosyasına kaydedin.
+7. Düzenlenen uygulama bildirim dosyasını Azure yönetim portalı aracılığıyla yükleyin.
+8. İsteğe bağlı: X.509 sertifikanızın uygulamada mevcut olduğunu denetlemek için bildirimi yeniden indirin.
 
 >[!NOTE]
 >

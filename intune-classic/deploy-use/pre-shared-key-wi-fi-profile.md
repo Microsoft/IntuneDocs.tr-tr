@@ -1,43 +1,43 @@
 ---
 title: PSK kullanan Wi-Fi
-description: "Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için Özel Yapılandırma’yı kullanın."
-keywords: 
+description: Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için Özel Yapılandırma’yı kullanın.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e2dff26e6dcbe1db6a9cef58af10901178e432b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a023b6829b33c3b3bff94021ecd3c90d8b41f30f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel ilke kullanma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune'un **Özel Yapılandırmasını**, önceden paylaşılan anahtar ile Wi-Fi profili oluşturmak üzere kullanma Bu konuda, bir EAP tabanlı Wi-Fi profili oluşturmaya bir örnek de yer almaktadır.
 
 > [!NOTE]
--   Aşağıda anlatıldığı gibi kodu söz konusu ağa bağlanan bir bilgisayardan kopyalamak size daha kolay gelebilir.
-- Android için, Johnathon Biersack tarafından sağlanan bu [Android PSK Oluşturucu](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)’yu kullanma seçeneğiniz de vardır.
--   Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
--  iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın. Alternatif olarak, Johnathon Biersack tarafından sağlanan bu [iOS PSK Mobile Config Oluşturucu](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)’yu kullanın.
+> -   Aşağıda anlatıldığı gibi kodu söz konusu ağa bağlanan bir bilgisayardan kopyalamak size daha kolay gelebilir.
+> - Android için, Johnathon Biersack tarafından sağlanan bu [Android PSK Oluşturucu](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/)’yu kullanma seçeneğiniz de vardır.
+> -   Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
+> -  iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın. Alternatif olarak, Johnathon Biersack tarafından sağlanan bu [iOS PSK Mobile Config Oluşturucu](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/)’yu kullanın.
 
 
-1.  Android veya Windows için önceden paylaşılan anahtar ile bir Wi-Fi profili oluşturmak veya bir EAP tabanlı Wi-Fi profili oluşturmak için, ilke oluşturduğunuzda o cihaz platformu için Wi-Fi profili yerine **Özel Yapılandırma**’yı seçin.
+1. Android veya Windows için önceden paylaşılan anahtar ile bir Wi-Fi profili oluşturmak veya bir EAP tabanlı Wi-Fi profili oluşturmak için, ilke oluşturduğunuzda o cihaz platformu için Wi-Fi profili yerine **Özel Yapılandırma**’yı seçin.
 
-2.  Bir ad ve açıklama sağlayın.
-3.  Yeni bir OMA-URI ayarı ekleyin:
+2. Bir ad ve açıklama sağlayın.
+3. Yeni bir OMA-URI ayarı ekleyin:
 
    a.   Bu Wi-Fi ağ ayarı için bir ad girin.
 
@@ -47,15 +47,15 @@ Intune'un **Özel Yapılandırmasını**, önceden paylaşılan anahtar ile Wi-F
 
    d.   **OMA-URI**:
 
-    - **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-Başına nokta karakterini eklediğinizden emin olun.
+   > [!NOTE]
+   > Başına nokta karakterini eklediğinizden emin olun.
 
-    SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+   SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
-  e. **Değer Alanı**, XML kodunuzu yapıştırdığınız yerdir. Bir örneğe bakalım. Her değer, ağ ayarlarınıza uyarlanmış olmalıdır. Bazı işaretçiler için kodun açıklamalar bölümüne bakın.
+   e. **Değer Alanı**, XML kodunuzu yapıştırdığınız yerdir. Bir örneğe bakalım. Her değer, ağ ayarlarınıza uyarlanmış olmalıdır. Bazı işaretçiler için kodun açıklamalar bölümüne bakın.
 4. **Tamam**’ı seçin, ilkeyi kaydedin ve dağıtın.
 
     > [!NOTE]
@@ -202,8 +202,8 @@ Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
 1. Kablosuz ağa bağlanmış veya bir kablosuz ağa yakın zamanda bağlanmış bir bilgisayarda şu klasörü açın: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\\{guid.
 
     Doğru olanı bulmak için her profili aramanız gerekeceğinden, çok sayıda kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir.
-3.     Doğru ada sahip olanı bulmak üzere XML dosyalarını arayın.
-4.     Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının Veri alanına yapıştırın.
+2. Doğru ada sahip olanı bulmak üzere XML dosyalarını arayın.
+3. Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının Veri alanına yapıştırın.
 
 ## <a name="deploy-the-policy"></a>İlkeyi dağıtma
 
@@ -217,5 +217,5 @@ Varolan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilirsiniz:
 
 Dağıtılan bir ilkeyi seçtiğinizde, ilkeler listesinin alt bölümünde dağıtım hakkında daha fazla bilgi görüntüleyebilirsiniz.
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune’da Wi-Fi bağlantıları](wi-fi-connections-in-microsoft-intune.md)

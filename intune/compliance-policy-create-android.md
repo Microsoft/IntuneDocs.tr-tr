@@ -1,30 +1,30 @@
 ---
-title: "Microsoft Intune’da Android cihaz uyumluluk ilkesi oluşturma"
-titleSuffix: 
-description: "Android cihazlarına Microsoft Intune cihaz uyumluluk ilkesi oluşturarak cihazın uyumlu olabilmesi için karşılaması gereken gereksinimleri belirtebilirsiniz."
-keywords: 
+title: Microsoft Intune’da Android cihaz uyumluluk ilkesi oluşturma
+titleSuffix: ''
+description: Android cihazlarına Microsoft Intune cihaz uyumluluk ilkesi oluşturarak cihazın uyumlu olabilmesi için karşılaması gereken gereksinimleri belirtebilirsiniz.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 586672bf84be6e7bcd8d3b8618aab09088620eb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune'da Android cihazları için cihaz uyumluluk ilkesi oluşturma
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android için Intune cihaz uyumluluk ilkesi Android cihazlarının uyumlu kabul edilmek için uymak zorunda olduğu kuralları ve ayarları belirtir. Bu ilkeleri koşullu erişimle birlikte kullanarak şirket kaynaklarına erişime izin verebilir veya erişimi engelleyebilirsiniz; ayrıca cihaz raporları ve uyumsuzlukla ilgili önlemler alabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri hakkında daha fazla bilgi edinmek ve uyumluluk ilkesi oluşturmadan önce ilgilenmeniz gereken önkoşulları öğrenmek için, [Cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md) konusuna bakın.
 

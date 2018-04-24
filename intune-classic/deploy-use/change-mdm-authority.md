@@ -14,11 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc73befb46f1f159d9a8c023bb5604517b9f73f4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="change-the-mdm-authority"></a>MDM yetkilisini değiştirme
 Configuration Manager’ın 1610 sürümünden başlayarak MDM yetkilinizi, Microsoft Desteği ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Bu bölüm, Intune’dan yapılandırılmış ve MDM yetkilisi **Microsoft Intune**’dan (tek başına) **Configuration Manager**’a (karma MDM) ayarlanmış mevcut bir Microsoft Intune kiracısını mevcut yönetilen cihazların kaydını silip yeniden kaydetmeye gerek kalmadan değiştirme adımları sağlar.
@@ -76,16 +76,16 @@ iOS cihazlarınız varsa Configuration Manager’da APNs sertifikalarını yapı
 
 1. **Sertifika imzalama isteği indirme**
 
-    1. Configuration Manager konsolunda **Yönetim** &gt; **Bulut Hizmetleri** &gt; **Microsoft Intune Abonelikleri**’ne gidin ve **APNs sertifika isteği oluştur**’u seçerek **Apple Anında İletilen Bildirim Servisi Sertifika İmzalama İsteği İste** iletişim kutusunu açın.  
-    2. **Gözat** ile yeni sertifika imzalama isteği (.csr) dosyasını kaydetmek istediğiniz yola gözatın. Sertifika imzalama isteği (.csr) dosyasını yerel olarak kaydedin.  
-    3. **İndir**'e tıklayın. Yeni Microsoft Intune .csr dosyası indirilir ve Configuration Manager tarafından kaydedilir.   
+   1. Configuration Manager konsolunda **Yönetim** &gt; **Bulut Hizmetleri** &gt; **Microsoft Intune Abonelikleri**’ne gidin ve **APNs sertifika isteği oluştur**’u seçerek **Apple Anında İletilen Bildirim Servisi Sertifika İmzalama İsteği İste** iletişim kutusunu açın.  
+   2. **Gözat** ile yeni sertifika imzalama isteği (.csr) dosyasını kaydetmek istediğiniz yola gözatın. Sertifika imzalama isteği (.csr) dosyasını yerel olarak kaydedin.  
+   3. **İndir**'e tıklayın. Yeni Microsoft Intune .csr dosyası indirilir ve Configuration Manager tarafından kaydedilir.   
 
-    > [!IMPORTANT]
-    > Yeni bir sertifika imzalama isteği indirmeniz gerekir. Mevcut bir dosyayı kullanırsanız başarısız olursunuz.  
+      > [!IMPORTANT]
+      > Yeni bir sertifika imzalama isteği indirmeniz gerekir. Mevcut bir dosyayı kullanırsanız başarısız olursunuz.  
 
-2.  [Apple Anında İletme Sertifikası Portalı](http://go.microsoft.com/fwlink/?LinkId=269844)’na gidin ve tek başına Intune’da kullandığınız APNs sertifikasını oluşturmak ve yenilemek için kullanılmış **aynı** Apple Kimliği ile oturum açın.
+2. [Apple Anında İletme Sertifikası Portalı](http://go.microsoft.com/fwlink/?LinkId=269844)’na gidin ve tek başına Intune’da kullandığınız APNs sertifikasını oluşturmak ve yenilemek için kullanılmış **aynı** Apple Kimliği ile oturum açın.
 
-    ![Apple Anında İletme Sertifikaları Portalı oturum açma sayfası](../media/mdm-change-apns-portal.png)
+   ![Apple Anında İletme Sertifikaları Portalı oturum açma sayfası](../media/mdm-change-apns-portal.png)
 
 3. Tek başına Intune’da kullandığınız APNs sertifikasını seçin ve daha sonra **Yenile**’ye tıklayın.
 

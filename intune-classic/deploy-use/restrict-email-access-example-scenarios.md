@@ -1,29 +1,29 @@
 ---
-title: "E-posta koruma senaryoları"
-description: "Birkaç örnek senaryo ve bunların koşullu erişimle nasıl gerçekleştirilebileceği konusunda bilgi."
-keywords: 
+title: E-posta koruma senaryoları
+description: Birkaç örnek senaryo ve bunların koşullu erişimle nasıl gerçekleştirilebileceği konusunda bilgi.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ca486ca9eab1ebb8a446b560ff5e265eb4d2712
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3116cfdb6b1ea153d914630a23e0db82a8c31d85
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Microsoft Intune ile e-postaya erişimi koruma: Örnek senaryolar
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>1. Senaryo: Kullanıcıların Exchange Online’a erişmek için uyumsuz cihazlar kullanmasını engelleyin
 ### <a name="scenario-requirements"></a>Senaryo gereksinimleri
@@ -53,9 +53,9 @@ Hangi cihazların Exchange Online’a erişebileceğine karar vermek için senar
 
 Bunu başarmak için, Şirket İçi Exchange için aşağıdaki ayarlarla bir koşullu erişim ilkesi yapılandırın:
 
--   **Cihaz uyumsuzsa veya Microsoft Intune'a kayıtlı değilse e-posta uygulamalarının Şirket İçi Exchange'e erişimini engelleyin** seçeneğini belirtin. Bu seçenek belirtildiğinde koşullu erişim ilkesini etkinleştirirsiniz. Bu ilke, tüm cihazların Exchange’e erişebilmeleri için önce Microsoft Intune’a kaydolmalarını ve uyumluluk ilkesi kurallarına uymalarını zorunlu tutar.
+- **Cihaz uyumsuzsa veya Microsoft Intune'a kayıtlı değilse e-posta uygulamalarının Şirket İçi Exchange'e erişimini engelleyin** seçeneğini belirtin. Bu seçenek belirtildiğinde koşullu erişim ilkesini etkinleştirirsiniz. Bu ilke, tüm cihazların Exchange’e erişebilmeleri için önce Microsoft Intune’a kaydolmalarını ve uyumluluk ilkesi kurallarına uymalarını zorunlu tutar.
 
--   Gelişmiş Exchange Active Sync ayarları için şunları oluşturun:
+- Gelişmiş Exchange Active Sync ayarları için şunları oluşturun:
 
   -   iOS çalıştıran cihazların Exchange’e erişmesine izin veren bir platform özel durumu.   
 

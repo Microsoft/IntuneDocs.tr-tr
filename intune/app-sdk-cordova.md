@@ -14,11 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: d32c024d6cd526062c373b56dd18bca9480c32fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune Uygulama SDK'sı Cordova Eklentisi
 
@@ -72,16 +72,16 @@ Intune Uygulama SDK'sı Cordova Eklentisi ile derlenen Cordova uygulamaları art
 
 1. ADAL sürümünü güncelleştirme:
 
-  ```shell
-  cordova plugin remove cordova-plugin-ms-adal
-  cordova plugin add cordova-plugin-ms-adal@0.8.x
-  ```
+   ```shell
+   cordova plugin remove cordova-plugin-ms-adal
+   cordova plugin add cordova-plugin-ms-adal@0.8.x
+   ```
 
 2. Cordova için Intune Uygulama SDK'sı eklentisi:
 
-  ```shell
-  cordova plugin add cordova-plugin-ms-intune-mam
-  ```
+   ```shell
+   cordova plugin add cordova-plugin-ms-intune-mam
+   ```
 
 ## <a name="build-the-plugin-into-your-ios-app"></a>Eklentiyi iOS uygulamanızda derleme
 
@@ -131,7 +131,7 @@ Uygulamayı ilk kez çalıştırdığınızda, uygulamanın Intune tarafından y
 * MultiDex desteği tamamlanmadı.
 * Uygulama `minSdkVersion` 14 ve `targetSdkVersion` 24 veya altı olmalıdır. Intune şu anda API 25 hedefleyen uygulamaları desteklemiyor
 * Intune, V2 İmza Şemasıyla imzalanmış olan uygulamaları yeniden imzalayamaz. V2 imzalı uygulamalar eklenti ile sarıldığında sarılan sonuç .apk dosyası imzalanmamış olur.
-*
+  *
   * Aşağıdakileri `build-extras.gradle` dosyanıza ekleyerek Cordova'nın varsayılan V2 İmzalama özelliğini devre dışı bırakabilirsiniz:
 
   ```gradle

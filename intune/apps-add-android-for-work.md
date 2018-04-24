@@ -1,29 +1,29 @@
 ---
 title: Android for Work cihazlara uygulama atama
 titlesuffix: Microsoft Intune
-description: "Google Play for Work Store’dan Android for Work cihazlarına uygulama eşitlemeyi ve atamayı öğrenin."
-keywords: 
+description: Google Play for Work Store’dan Android for Work cihazlarına uygulama eşitlemeyi ve atamayı öğrenin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Intune ile Android for Work cihazlara uygulama atama
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work, Android cihazlara yönelik bir programdır. Android for Work cihazlarına yüklediğiniz tüm uygulamalar Google Play for Work mağazasından gelir. Android for Work cihazlara uygulama atama işlemi, standart Android cihazlara atamaktan farklı bir yolla yapılır. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Ardından uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görüntülenir. Buradan, uygulamanın atamasını, herhangi başka bir uygulamanın atamasıyla aynı şekilde yönetebilirsiniz.
 
@@ -43,7 +43,7 @@ Intune ve Android for Work’ü Azure portalının **Cihaz kaydı** iş yüküyl
 
     ![Örnek - Google Play for Work mağazasında uygulama onaylama](media/approve.png)</br>
     
-  Uygulamada bir pencere açılır ve çeşitli işlemler gerçekleştirmek için izin vermenizi ister. 
+   Uygulamada bir pencere açılır ve çeşitli işlemler gerçekleştirmek için izin vermenizi ister. 
 
 4. Uygulama izinlerini kabul edip devam etmek için **Onayla**’yı seçin.</br>
 
@@ -79,7 +79,7 @@ Bir uygulama geliştiricisi güncelleştirilmiş izinler ile bir uygulamanın ye
 
 Yeni izinleri denetlemek için yönetilen Google Play konsolunu düzenli aralıklarla ziyaret edin. Google Play'i onaylanmış bir uygulama için yeni izinler gerekli olduğunda, size veya başkalarına e-posta göndermesi için yapılandırabilirsiniz. Bir uygulamayı atar ve cihazlarda yüklü olmadığını görürseniz, aşağıdaki adımlarla yeni izinleri denetleyin:
 
-1. http://play.google.com/work adresine gidin
+1. http://play.google.com/work adresini ziyaret edin
 2. Uygulamaları yayınlamak ve onaylamak için kullandığınız Google hesabıyla oturum açın.
 3. Herhangi bir uygulamanın güncelleştirme gerektirip gerektirmediğini görmek için **Güncelleştirmeler** sekmesini ziyaret edin.  Listelenen tüm uygulamalar yeni izinler gerektirir ve uygulama, yeni izinler uygulanana kadar atanmaz.  
 

@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2b59ed38329462ad8d8db604979c8eb725f7973a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune sözlüğü
 Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi edinin.
@@ -39,11 +39,13 @@ Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi
 |Azure Portal|Intune için yeni konsol [Daha fazla bilgi edinin](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |KCG|[Kendi Cihazını Getir](/intune/device-enrollment). Kullanıcılar kendi cihazlarına Intune Şirket Portalı uygulamasını yükleyip cihazı kaydederek, e-posta, şirket uygulamaları, şirket verileri ve destek gibi şirket kaynaklarına erişim elde edebilirler.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Sertifika profili|Bu ilke türünü Wi-Fi, e-posta veya VPN profilleri kullanırken sertifikalarla [kurumsal kaynaklara güvenli erişim](/intune/certificates-configure) için kullanırsınız.|
@@ -55,6 +57,7 @@ Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi
 |Özel ilke|[Bu ilkeleri](/intune/custom-settings-configure) yalnızca genel yapılandırma ilkesi ihtiyaçlarınızı karşılayan yerleşik bir ayar içermediğinde kullanırsınız. Apple Configurator veya OMA-URI gibi diğer yollarla bir ayar oluşturmak için özel bir ilke kullanmanız mümkün olabilir.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Dağıtım|Yönettiğiniz bir cihaz veya kullanıcıya bir uygulama veya ilke gönderme eylemidir. Bu eyleme artık *atamak* adı verilmektedir.|
@@ -62,6 +65,7 @@ Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi
 |Cihaz profilleri|[Bu profiller](/intune/device-profile-create) yönettiğiniz cihazlarda çok çeşitli güvenlik, özellik ve erişim ayarlarını yapılandırmanıza olanak sağlar.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |E-posta profili|Bu ilke, mobil cihazlarda [e-posta erişim ayarları](/intune/email-settings-configure) yapmak amacıyla kullanılabilir ve son kullanıcının yapması gereken ayarları en aza indirir.|
@@ -70,21 +74,25 @@ Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi
 |Kaydetme|Microsoft Intune cihazları yönetime getirmek ve kaynaklara erişim izni vermek için [kayıt](/intune/device-enrollment) kullanır.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|Geçerli bir planda Intune kullanıcıları için 150 lisans içeren bir [Microsoft hizmeti](https://technet.microsoft.com/library/mt228265.aspx). Bu hizmeti kullandığınızda, Microsoft uzmanları Intune kullanmaya başlamanız için sizinle birlikte çalışabilir.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Gruplar|Gruplar, [kullanıcıları veya cihazları mantıksal olarak bir araya getirmenize](/intune/groups-get-started) olanak tanır. Örneğin, tüm Windows bilgisayarlardan oluşan bir grup oluşturabilirsiniz. Ardından bu gruplara uygulamalar ve profiller atayabilirsiniz.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Karma|Intune ile System Center Configuration Manager konsolu aracılığıyla kaydedilen cihazları yönetebileceğiniz bir yapılandırmadır.|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Azure portalı|Çoğu Intune yönetim işlemi için kullanmakta olduğunuz Azure portalı.|
@@ -93,11 +101,13 @@ Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi
 |Envanter|Yönettiğiniz cihazların [donanımını ve üzerlerinde yüklü olan yazılımları](/intune/device-inventory) görüntülemek için kullanın.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Bilgi noktası modu|[Cihaz kısıtlama profilinin](/intune/device-restrictions-configure) bir parçası olarak yapılandırılan bu mod, cihazları kilitlemenizi sağlar. Örneğin, perakende bir cihazı yalnızca bazı uygulamaların çalışmasına izin verecek şekilde yapılandırabilirsiniz.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|Intune kullanarak kuruluşunuzda atayabileceğiniz bir [web’e gözatma uygulamasıdır](/intune/app-configuration-managed-browser). Yönetilen tarayıcı ilkesi, yönetilen tarayıcı kullanıcılarının ziyaret edebileceği web sitelerini kısıtlayan bir izin verilenler listesi veya engellenenler listesi yapılandırır.|
@@ -110,17 +120,20 @@ Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Mobil cihazların ve bilgisayarların özelliklerini kontrol etmeye olanak tanımak için birçok donanım üreticisi tarafından kullanılan endüstri standardı bir cihaz yönetim protokolüdür.|
 |OMA URI|Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı. Bu öğeler, OMA-DM standardına uygun tek tek cihaz ayarlarını tanımlar. İhtiyaçlarınızı karşılayan yerleşik herhangi bir ayar yoksa bu ayarlar [Intune özel profillerinde](/intune/custom-settings-configure) kullanılabilir.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Geçiş kodu sıfırlama|Desteklenen cihazlarda son kullanıcıyı [geçiş kodunu sıfırlamaya](/intune/device-passcode-reset) mecbur bırakmanıza olanak tanıyan bir Intune özelliğidir.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Uzaktan kilitleme|Cihaz elinizin altında olmasa bile [desteklenen cihazları kilitlemenize](/intune/device-remote-lock) olanak tanıyan bir Intune özelliğidir.|
@@ -128,6 +141,7 @@ Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Seçmeli temizleme|[Seçmeli silme](/intune/device-company-data-remove), bir cihazdan ayarlar ve e-posta profilleri dahil olmak üzere yalnızca uygulama koruma ilkesiyle korunan şirket verilerini kaldırır. Seçmeli temizleme, kullanıcının kişisel verilerini cihazda bırakır.|
@@ -135,6 +149,7 @@ Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi
 |Abonelik|Girdiğiniz ve bir Intune kiracısına erişmenize olanak sağlayan anlaşma.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Intune ile yönettiğiniz Android cihazı için [uzaktan yardım özellikleri](/intune/device-profile-android-teamviewer) sağlamak üzere Intune ile birlikte çalışan bir üçüncü taraf uygulamasıdır.|
@@ -142,12 +157,15 @@ Microsoft Intune’da kullanılan yaygın terimlerin tanımları hakkında bilgi
 |hüküm ve koşullar|Kullanıcılara atadığınız ve kullanıcıların kaydolmak ve işlerine erişmek için [okuyup kabul etmesi](/intune/terms-and-conditions-create) gereken bilgileri içeren bir ilke türüdür.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Toplu satın alınan uygulamalar ve kitaplar|Bazı uygulama mağazaları, kuruluşunuzda kullanmak istediğiniz uygulama veya kitap için birden fazla lisans satın almanıza olanak tanır. Intune, [bu tür bir program aracılığıyla satın aldığınız](/intune/vpp-apps) uygulama ve kitapları yönetmenize yardımcı olur. Lisans bilgilerini uygulama mağazasından içeri aktarabilir, kullandığınız lisans sayısını takip edebilir ve uygulamanın sahip olduğunuz sayıdan fazla kopyasını yüklemesini engelleyebilirsiniz.|
 |VPN profili|Yönettiğiniz cihazlara [VPN ayarları](/intune/vpn-settings-configure) atayarak son kullanıcıların yapması gereken tüm ayarları en aza indiren bir ilkedir.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Wi-Fi profili|Kullanıcıların şirket ağınıza herhangi bir ayarı bilmelerine veya yapılandırmalarına gerek kalmadan bağlanmasına olanak tanımak için cihazlara [kablosuz ağ ayarları](/intune/wi-fi-settings-configure) atayan bir ilkedir.
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wi-Fi profili | Kullanıcıların şirket ağınıza herhangi bir ayarı bilmelerine veya yapılandırmalarına gerek kalmadan bağlanmasına olanak tanımak için cihazlara [kablosuz ağ ayarları](/intune/wi-fi-settings-configure) atayan bir ilkedir. |
+

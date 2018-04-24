@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Intune sertifika profillerini yapılandırma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Altyapınızı ve sertifikalarınızı [SCEP için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-scep.md) veya [PFX için sertifika altyapısını yapılandırma](configure-certificate-infrastructure-for-pfx.md) bölümlerinde anlatıldığı gibi yapılandırdıktan sonra sertifika profilleri oluşturabilirsiniz. İşlem şöyledir:
 
@@ -92,39 +92,39 @@ Güvenilen CA sertifika profilini oluşturduktan sonra, kullanmak istediğiniz h
 
 -  Windows Phone 8.1 ve üzeri
 
-2.  Bir **SCEP Sertifika Profili** ilkesi ekleme
+2. Bir **SCEP Sertifika Profili** ilkesi ekleme
 
-    Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+   Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  SCEP sertifika profili ayarlarını yapılandırmak için, profil yapılandırma sayfasındaki yönergeleri izleyin.
-    > [!NOTE]
-    >
-    > **Konu adı biçimi**’nin altında **Özel**’i seçerek özel bir konu adı biçimi girin (yalnızca iOS profillerinde).
-    >
-    > Özel biçim için şu an desteklenen iki değişken şunlardır: `Common Name (CN)` ve `Email (E)`. Bu değişkenlerin ve statik dizelerin bir bileşimini kullanarak şunun gibi özel bir konu adı biçimi oluşturabilirsiniz:
+3. SCEP sertifika profili ayarlarını yapılandırmak için, profil yapılandırma sayfasındaki yönergeleri izleyin.
+   > [!NOTE]
+   > 
+   > **Konu adı biçimi**’nin altında **Özel**’i seçerek özel bir konu adı biçimi girin (yalnızca iOS profillerinde).
+   > 
+   > Özel biçim için şu an desteklenen iki değişken şunlardır: `Common Name (CN)` ve `Email (E)`. Bu değişkenlerin ve statik dizelerin bir bileşimini kullanarak şunun gibi özel bir konu adı biçimi oluşturabilirsiniz:
+   > 
+   >     CN={{KullanıcıAdı}},E={{EpostaAdresi}},OU=Mobil,O=Finans Grubu,L=Redmond,ST=Washington,C=US
+   > 
+   > Bu örnekte, yönetici, `CN` ve `E` değişkenlerinin yanı sıra Kuruluş Birimi, Kuruluş, Konum, Eyalet ve Ülke değerleri için dizeler kullanan bir konu adı biçimi oluşturmuştur. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) desteklenen dizeleri listeler.
 
-    >     CN={{KullanıcıAdı}},E={{EpostaAdresi}},OU=Mobil,O=Finans Grubu,L=Redmond,ST=Washington,C=US
-
-    > Bu örnekte, yönetici, `CN` ve `E` değişkenlerinin yanı sıra Kuruluş Birimi, Kuruluş, Konum, Eyalet ve Ülke değerleri için dizeler kullanan bir konu adı biçimi oluşturmuştur. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) desteklenen dizeleri listeler.
-
-4.  **İlkeyi Kaydet**’i seçin.
+4. **İlkeyi Kaydet**’i seçin.
 
 Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabilirsiniz.
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>Bir .PFX sertifika profili oluşturmak için
 
-1.  [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin ve bir cihaz platformu seçin. . PFX sertifikaları aşağıdakilerde desteklenir:
-  - Android 4 ve üzeri
-  - Android for Work
-  - Windows 10 ve üzeri
-  - Windows Phone 10 ve üzeri
-  - iOS 8.0 ve üzeri)    
+1. [Intune yönetim konsolunda](https://manage.microsoft.com) **İlke** &gt; **İlke Ekle**’yi seçin ve bir cihaz platformu seçin. . PFX sertifikaları aşağıdakilerde desteklenir:
+   - Android 4 ve üzeri
+   - Android for Work
+   - Windows 10 ve üzeri
+   - Windows Phone 10 ve üzeri
+   - iOS 8.0 ve üzeri)    
 
 
-2.  Bir **.PFX Sertifika Profili** ilkesi ekleyin.
-      Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-3.  İlke formunda istenen bilgileri girin.
-4.  **İlkeyi Kaydet**’i seçin.
+2. Bir **.PFX Sertifika Profili** ilkesi ekleyin.
+     Daha fazla bilgi edinin: [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3. İlke formunda istenen bilgileri girin.
+4. **İlkeyi Kaydet**’i seçin.
 
 Yeni ilke, **İlke** çalışma alanında gösterilir. Artık ilkeyi dağıtabilirsiniz.
 

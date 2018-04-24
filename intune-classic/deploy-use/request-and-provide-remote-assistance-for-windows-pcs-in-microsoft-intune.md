@@ -1,29 +1,28 @@
 ---
-title: "Windows bilgisayarlar için uzaktan yardım isteme ve sağlama"
-description: "Bilgisayar olarak yönetilen Windows masaüstü cihazlarına uzaktan yardım sağlamak ve bir bilgisayarı uzaktan başlatmak için son kullanıcı ve BT yönetim adımlarını açıklar."
-keywords: 
+title: Windows bilgisayarlar için uzaktan yardım isteme ve sağlama
+description: Bilgisayar olarak yönetilen Windows masaüstü cihazlarına uzaktan yardım sağlamak ve bir bilgisayarı uzaktan başlatmak için son kullanıcı ve BT yönetim adımlarını açıklar.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bfa7f1dedecd47aeb30a12c5627a137b775d12a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 245d18b89be9b9884df6c7ee41436e747c0557fe
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows bilgisayarlar için uzaktan yardım isteme ve sağlama
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konudaki bilgiler, yalnızca Intune yazılım istemcisini kullanarak bilgisayar olarak yönettiğiniz Windows masaüstü cihazlar için geçerlidir.
 
@@ -60,7 +59,7 @@ Uzaktan yardım isteklerine hazırlanmaya ve bu istekleri yanıtlamaya başlayab
 ## <a name="respond-to-a-remote-assistance-request"></a>Uzaktan yardım isteğini yanıtlama
 
 1. Kullanıcı bir uzaktan yardım isteği gönderdiğinde, bu isteği **Uyarılar** çalışma alanındaki **İzleme** > **Uzaktan Yardım**’ın altında görebilirsiniz. Örneğin:
-> ![Uzaktan yardım isteğinin ekran görüntüsü](./media/team-viewer.png)
+   > ![Uzaktan yardım isteğinin ekran görüntüsü](./media/team-viewer.png)
 
 <br>İstek 4 saatten uzun süre yanıtlanmadan kalırsa, kaldırılır.
 2. İsteği kabul etmek için, **İsteği onaylayın ve Uzaktan Yardım’ı başlatın** öğesini seçin.
@@ -84,6 +83,6 @@ Kullanıcıların sorunlarına yardımcı olurken, bilgisayarlarını ara sıra 
 
 4.  **Görev Durumu** iletişim kutusunda, geçerli uzak görevler, görev durumu, cihaz adı ve bildirilen hataları gözden geçirin.
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 
 [Intune yazılım istemcisi ile genel Windows bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -1,24 +1,24 @@
 ---
-title: "Cihaz yönetimi olmadan Exchange"
+title: Cihaz yönetimi olmadan Exchange
 titleSuffix: Microsoft Intune
-description: "Microsoft Intune'u kullanarak, bir cihaz yönetim sistemi ayarlamadan çalışanlara Office 365 Exchange Online e-postalarına erişim verin."
-keywords: "Office 365 Exchange e-posta erişimi"
+description: Microsoft Intune'u kullanarak, bir cihaz yönetim sistemi ayarlamadan çalışanlara Office 365 Exchange Online e-postalarına erişim verin.
+keywords: Office 365 Exchange e-posta erişimi
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 10/31/2017
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e677a8418aba9aca4db753695444140ea9f6f941
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: abda78bcc8aa8fcc56d90c433a6ac2cdb989b53e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Cihaz yönetimi gerektirmeden Office 365 Exchange Online’ı koruma
 

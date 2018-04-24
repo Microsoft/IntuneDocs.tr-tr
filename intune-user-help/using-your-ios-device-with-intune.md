@@ -1,27 +1,27 @@
 ---
-title: "iOS cihazınızı Intune ile kullanma | Microsoft Docs"
-description: "iOS cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS cihazınızı Intune ile kullanma | Microsoft Docs
+description: iOS cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8e6eb579968fe8499b176e58ff50b9d7635aa3c0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-your-ios-device-with-intune"></a>iOS cihazınızı Intune ile kullanma
 
@@ -41,7 +41,7 @@ Intune mevcut durumda iOS 9.0 ve üzeri sürümleri desteklemektedir.
 
 - [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)
 - [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Kaybolan veya çalınan cihazınızı sıfırlama (silme)](reset-erase-your-device-cpwebsite.md)
 - [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-ios.md)
 - [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-ios.md)

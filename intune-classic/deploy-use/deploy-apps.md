@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc2a8cb8fc07f87dd0a4e9d8f3935c04a73fe8fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları dağıtma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konu başlığı altında, Microsoft Intune’la uygulamaları dağıtmaya başlamadan önce anlamanız gereken bazı kavramlar açıklanır.
 
@@ -46,18 +46,19 @@ Uygulamaları dağıtırken aşağıdaki dağıtım eylemlerden birini seçebili
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Her yükleme türünde hangi dağıtım eylemlerinin kullanılabildiğini anlama
 
-|Yükleyici türü|Zorunlu yükleme|Kullanılabilir yükleme|Kaldır|Geçerli değil|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Windows uygulama paketi (bir kullanıcı grubuna dağıtılır)|Evet|Evet|Evet|Evet|
-|Windows uygulama paketi (bir cihaz grubuna dağıtılır)|Evet|Hayır|Evet|Evet|
-|Mobil cihazlar için uygulama paketi (bir kullanıcı grubuna dağıtılır)|Evet|Evet|Evet|Evet|
-|Mobil cihazlar için uygulama paketi (bir cihaz grubuna dağıtılır)|Evet|Hayır|Evet|Evet|
-|Windows Installer (bir kullanıcı grubuna dağıtılır)|Hayır|Evet|Hayır|Evet|
-|Windows Installer (bir cihaz grubuna dağıtılır)|Evet|Hayır|Evet|Evet|
-|Dış bağlantı (bir kullanıcı grubuna dağıtılır)|Hayır|Evet|Hayır|Evet|
-|Dış bağlantı (bir cihaz grubuna dağıtılır)|Hayır|Hayır|Hayır|Hayır|
-|Uygulama mağazasından yönetilen iOS uygulaması (bir kullanıcı grubuna dağıtılır)|Evet|Evet|Evet|Evet|
-|Uygulama mağazasından yönetilen iOS uygulaması (bir cihaz grubuna dağıtılır)|Evet|Hayır|Evet|Evet|
+|                         Yükleyici türü                          | Zorunlu yükleme | Kullanılabilir yükleme | Kaldır | Geçerli değil |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Windows uygulama paketi (bir kullanıcı grubuna dağıtılır)          |       Evet        |        Evet        |    Evet    |      Evet       |
+|        Windows uygulama paketi (bir cihaz grubuna dağıtılır)         |       Evet        |        Hayır         |    Evet    |      Evet       |
+|    Mobil cihazlar için uygulama paketi (bir kullanıcı grubuna dağıtılır)    |       Evet        |        Evet        |    Evet    |      Evet       |
+|   Mobil cihazlar için uygulama paketi (bir cihaz grubuna dağıtılır)   |       Evet        |        Hayır         |    Evet    |      Evet       |
+|          Windows Installer (bir kullanıcı grubuna dağıtılır)           |        Hayır        |        Evet        |    Hayır     |      Evet       |
+|         Windows Installer (bir cihaz grubuna dağıtılır)          |       Evet        |        Hayır         |    Evet    |      Evet       |
+|            Dış bağlantı (bir kullanıcı grubuna dağıtılır)             |        Hayır        |        Evet        |    Hayır     |      Evet       |
+|           Dış bağlantı (bir cihaz grubuna dağıtılır)            |        Hayır        |        Hayır         |    Hayır     |       Hayır       |
+|  Uygulama mağazasından yönetilen iOS uygulaması (bir kullanıcı grubuna dağıtılır)  |       Evet        |        Evet        |    Evet    |      Evet       |
+| Uygulama mağazasından yönetilen iOS uygulaması (bir cihaz grubuna dağıtılır) |       Evet        |        Hayır         |    Evet    |      Evet       |
+
 > [!TIP]
 > Uygulamaları dağıtırken hem kullanıcı hem de cihaz gruplarını seçerseniz, uygulamayı yalnızca **Kullanılabilir yükleme** olarak dağıtabilirsiniz.
 

@@ -1,29 +1,29 @@
 ---
-title: "Uygulamaları ve verileri koruma"
-description: "Bu konu başlığı altında, şirket uygulamalarınızı ve verilerinizi korumanıza yardımcı olmak için sağlanan çeşitli Intune özellikleri ve yetenekleri açıklanır."
-keywords: 
+title: Uygulamaları ve verileri koruma
+description: Bu konu başlığı altında, şirket uygulamalarınızı ve verilerinizi korumanıza yardımcı olmak için sağlanan çeşitli Intune özellikleri ve yetenekleri açıklanır.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları ve verileri koruma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune, şirket verilerini birden çok teknoloji katmanıyla korur. Kimlik katmanında, koşullu erişim, yalnızca yönetilen ve uyumlu cihazlardan erişimine izin vererek, hizmetlere erişimi korur. İstemci uygulaması katmanında, mobil uygulama yönetimi (MAM), verilerin korumalı olmayan uygulamalara veya depolama konumlarına taşınmasını engelleyerek ve bir cihaz kaybedildiğinde veya çalındığında verileri silerek veri kaybı koruması sağlar. Mobil iş gücünüzün üretkenliğini korurken veri güvenliğini sağlamak için bu iki koruma katmanının birlikte kullanılması önerilir.
 

@@ -1,27 +1,27 @@
 ---
-title: "Microsoft Intune e-posta ayarlarını yapılandırma"
-titleSuffix: 
-description: "Microsoft Intune'u yönettiğiniz cihazlarda şirket e-postasına bağlantılar oluşturmak için nasıl yapılandıracağınızı öğrenin."
-keywords: 
+title: Microsoft Intune e-posta ayarlarını yapılandırma
+titleSuffix: ''
+description: Microsoft Intune'u yönettiğiniz cihazlarda şirket e-postasına bağlantılar oluşturmak için nasıl yapılandıracağınızı öğrenin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f51854bfb198ca65cc5fc82bad0e3b3befbb173a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune’da e-posta ayarlarını yapılandırma
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Yönettiğiniz cihazları, şirket e-postasına bağlanmak ve eşitleme yapmak için gereken ayarlarla yapılandırmak için e-posta profillerini kullanabilirsiniz. Bu, tüm cihazlar genelinde standart ayarların kullanıldığından emin olmanıza yardımcı olabildiği gibi, doğru e-posta ayarlarını bilmeyen son kullanıcıların desteği daha az aramalarını sağlamaya da katkıda bulunabilir.
 
@@ -41,7 +41,7 @@ Bu makalede verilen bilgileri kullanarak e-posta profilini yapılandırmanın te
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
+3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 3. Profiller bölmesinde **Profil oluştur**’u seçin.
 4. **Profil oluştur** bölmesinde, e-posta profili için bir **Ad** ve **Açıklama** girin.

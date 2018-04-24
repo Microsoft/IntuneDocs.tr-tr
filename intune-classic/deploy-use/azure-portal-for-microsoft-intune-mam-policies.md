@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Intune uygulama koruma ilkeleri için Azure portalı
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Azure portalı, aşağıdakilere yönelik uygulama koruma ilkeleri oluşturmak ve yönetmek için kullanılır:
 
@@ -32,9 +32,9 @@ Azure portalı, aşağıdakilere yönelik uygulama koruma ilkeleri oluşturmak v
 - Herhangi bir MDM çözümüne **kaydedilmemiş** cihazlarda çalıştırılan uygulamalar.
 - **Üçüncü taraf bir MDM çözümüne kaydedilmiş** cihazlarda çalıştırılan uygulamalar.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Azure portalı, uygulama koruma ilkeleri oluşturmaya yönelik yeni yönetim konsoludur, ancak MDM senaryoları için [Intune yönetim konsolunu](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) kullanarak Intune’a kaydedilen cihazlara yönelik uygulamaları destekleyen bir uygulama koruma ilkesi de oluşturabilirsiniz.
-
+> 
 > Intune yönetim konsolunda kullanılabilir tüm uygulama koruma ilkesi ayarlarını göremeyebilirsiniz. Ayrıca, hem Intune yönetim konsolu hem de Azure portalında uygulama koruma ilkeleri oluşturursanız Azure portalında oluşturulan ilkeler, Intune yönetim konsolunda oluşturulan ilkeleri geçersiz kılar. Bu senaryoda Azure portalı uygulama koruma ilkeleri, uygulamalar için geçerli olur ve kullanıcılara dağıtılır.
 
 

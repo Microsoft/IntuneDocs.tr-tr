@@ -1,29 +1,29 @@
 ---
-title: "Intune ile Skycure tümleştirmesini kurma"
-description: "Microsoft Intune ile Skycure tümleştirmesini kurun."
-keywords: 
+title: Intune ile Skycure tümleştirmesini kurma
+description: Microsoft Intune ile Skycure tümleştirmesini kurun.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 93722f66-7641-4a3f-b1fb-3a0a58a36675
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c981d6fb927d29f0d450c5c7571933626897b4f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 63713cd46da1d1222ec5766a55a7e7344a0a0d26
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Intune ile Skycure tümleştirmesini kurma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Çoklu Oturum Açma özelliklerini kullanabilmek için Azure AD’ye Skycure uygulamalarını eklemelisiniz.
 

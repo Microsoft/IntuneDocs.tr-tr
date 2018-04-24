@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune için genel sorun giderme ipuçları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemci cihazlarıyla ilgili sorunlarla karşılaşabilirsiniz. Sorunu çözebilmeniz için soruna neden olan şeyi bulmanıza yardımcı olması için aşağıdaki kaynakları kullanın.
 
@@ -50,13 +50,13 @@ Microsoft Intune dağıtıldıktan sonra yapılandırmanızla veya istemci cihaz
 
 ## <a name="collect-available-data"></a>Kullanılabilir verileri topla
 
--   Aşağıdaki kaynaklar cihaz günlüklerini nasıl toplayacağınızı öğrenmenize yardımcı olabilir:
+- Aşağıdaki kaynaklar cihaz günlüklerini nasıl toplayacağınızı öğrenmenize yardımcı olabilir:
   - [Android tanılama veri günlüklerini USB kablosu kullanarak BT yöneticinize gönderme](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Android kayıt hatalarını BT yöneticinize gönderme](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [iOS kayıt hatalarını BT yöneticinize gönderme](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   Örneğin, ilke uygulama sorunlarına yönelik yönetici konsolu verileri için [Microsoft Intune ile kullanıcı ve cihazları yönetmek için grupları kullanma](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) bölümünde açıklandığı gibi amaçlanan ilkeyi ve ilgili ilkenin durumunu inceleyin.
+- Örneğin, ilke uygulama sorunlarına yönelik yönetici konsolu verileri için [Microsoft Intune ile kullanıcı ve cihazları yönetmek için grupları kullanma](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) bölümünde açıklandığı gibi amaçlanan ilkeyi ve ilgili ilkenin durumunu inceleyin.
 
 ## <a name="research-the-solution"></a>Çözümü arayın
 

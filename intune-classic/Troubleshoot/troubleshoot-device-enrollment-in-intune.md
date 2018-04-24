@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konuda, cihaz kayıt sorunlarının giderilmesi için tavsiyeler verilmektedir. Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](how-to-get-support-for-microsoft-intune.md).
 
@@ -87,9 +87,9 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 8.  Artık kullanımda olmayan veya tanımları yanlış olan cihazlar gibi uygun cihazları kaldırın.
 
 > [!NOTE]
-
+> 
 > Cihaz kaydı için üst sınır uygulanmasını istemiyorsanız [Şirkete ait cihazları Microsoft Intune’da Cihaz Kayıt Yöneticisi’ne kaydetme](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) bölümünde açıklandığı gibi Cihaz Kayıt Yöneticisi hesabı kullanabilirsiniz.
->
+> 
 > Bir kullanıcı oturumu için Koşullu Erişim ilkesi zorunlu tutulduysa, söz konusu kullanıcı hesabı, Cihaz Kayıt Yöneticileri hesabına eklendiğinde kaydı tamamlayamaz.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Şirket Portalı Geçici Olarak Devre Dışı
@@ -154,7 +154,7 @@ Yöneticiler, Azure Active Directory portalında cihazları silebilir.
 **Sorun:** AD FS’nize ikinci bir doğrulanmış etki alanı eklediğinizde, ikinci etki alanının kullanıcı asıl adı (UPN) sonekini taşıyan kullanıcılar portallarda oturum açamayabilir veya cihaz kaydedemeyebilir.
 
 
-**Çözüm:** AD FS 2.0 aracılığıyla çoklu oturum açma (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, @contoso.com veya @fabrikam.com) Microsoft Office 365 müşterilerinin, her sonek için ayrı bir AD FS 2.0 Federasyon Hizmeti örneği dağıtması gerekir. Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, **SupportMultipleDomain** anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu blog’a](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
+<strong>Çözüm:</strong> AD FS 2.0 aracılığıyla çoklu oturum açma (SSO) kullanan ve kuruluşlarında kullanıcıların UPN sonekleri için birden çok en üst düzey etki alanı bulunan (örneğin, @contoso.com veya @fabrikam.com) Microsoft Office 365 müşterilerinin, her sonek için ayrı bir AD FS 2.0 Federasyon Hizmeti örneği dağıtması gerekir. Şimdi, ek AD FS 2.0 sunucularına gerek kalmadan AD FS sunucusunun bu senaryoyu destekleyebilmesi için, <strong>SupportMultipleDomain</strong> anahtarıyla birlikte çalışan bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) vardır. Daha fazla bilgi için [bu blog’a](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
 
 
 ## <a name="android-issues"></a>Android sorunları
@@ -195,27 +195,27 @@ Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemel
 
 1. Cihazda Smart Manager uygulamasını başlatın.
 
-  ![Cihazda Smart Manager simgesini seçin](./media/smart-manager-app-icon.png)
+   ![Cihazda Smart Manager simgesini seçin](./media/smart-manager-app-icon.png)
 
 2. **Pil** kutucuğunu seçin.
 
-  ![Pil kutucuğunu seçin](./media/smart-manager-battery-tile.png)
+   ![Pil kutucuğunu seçin](./media/smart-manager-battery-tile.png)
 
 3. **Uygulama güç tasarrufu** veya **Uygulama optimizasyonu** bölümünde **Ayrıntı**'yı seçin.
 
-  ![Uygulama güç tasarrufu veya Uygulama optimizasyonu bölümünde Ayrıntı'yı seçin](./media/smart-manager-app-power-saving-detail.png)
+   ![Uygulama güç tasarrufu veya Uygulama optimizasyonu bölümünde Ayrıntı'yı seçin](./media/smart-manager-app-power-saving-detail.png)
 
 4. Uygulama listesinden **Şirket Portalı**'nı seçin.
 
-  ![Uygulama listesinden Şirket Portalı'nı seçin](./media/smart-manager-company-portal.png)
+   ![Uygulama listesinden Şirket Portalı'nı seçin](./media/smart-manager-company-portal.png)
 
 5. **Kapalı**'yı seçin.
 
-  ![Uygulama optimizasyon iletişim kutusundan Kapalı'yı seçin](./media/smart-manager-app-optimization-turned-off.png)
+   ![Uygulama optimizasyon iletişim kutusundan Kapalı'yı seçin](./media/smart-manager-app-optimization-turned-off.png)
 
 6. **Uygulama güç tasarrufu** veya **Uygulama optimizasyonu** altında Şirket Portalı'nın kapalı olduğunu onaylayın.
 
-  ![Şirket Portalı'nın kapalı olduğunu doğrulayın](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Şirket Portalı'nın kapalı olduğunu doğrulayın](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>Profil yüklemesi başarısız oldu

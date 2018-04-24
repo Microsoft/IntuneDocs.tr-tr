@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune ile İş İçin Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 [İş İçin Microsoft Mağazası](https://www.microsoft.com/business-store), kuruluşunuz için tek tek veya toplu olarak uygulamaları bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayla Microsoft Intune arasında bağlantı kurarak, toplu uygulama alışverişlerini Intune konsolundan yönetebilirsiniz. Örneğin:
 * Intune’la mağazadan satın aldığınız uygulamalar listesini eşitleyebilirsiniz.
@@ -57,8 +57,8 @@ Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetici**’yi seçin.
 2. **Yönetim** çalışma alanında, **Mobil Cihaz Yönetimi** > **Windows**’u genişletin ve **İş İçin Mağaza**’yı seçin.
 3. **İş İçin Microsoft Mağazası** sayfasında aşağıdakileri yapın:
- * Henüz yapmadıysanız İş İçin Microsoft Mağazası’na kaydolma bağlantısına tıklayın.
- * Kaydolduktan sonra, **Eşitleme Yapılandır**’ı seçin.
+   * Henüz yapmadıysanız İş İçin Microsoft Mağazası’na kaydolma bağlantısına tıklayın.
+   * Kaydolduktan sonra, **Eşitleme Yapılandır**’ı seçin.
 4. **İş İçin Microsoft Mağazası uygulamasının eşitlenmesini yapılandır** iletişim kutusunda **İş İçin Microsoft Mağazası eşitlemesini etkinleştirin** öğesini seçin.
 5. **Dil** açılan listesinde, İş İçin Microsoft Mağazası’ndan gelen uygulamaların Intune konsolunda görüntüleneceği dili seçin. Görüntülendikleri dilinden bağımsız olarak, bunlar uygun olduğunda son kullanıcının dilinde yüklenir.
 6. **Tamam**'ı tıklatın.

@@ -1,29 +1,29 @@
 ---
-title: "Apple Configurator’ı kullanarak iOS cihazlarını kaydetme"
+title: Apple Configurator’ı kullanarak iOS cihazlarını kaydetme
 titlesuffix: Microsoft Intune
-description: "Kurulum Yardımcısı ile şirkete ait iOS cihazlarını kaydetmek için Apple Configurator’ı kullanmayı öğrenin."
-keywords: 
+description: Kurulum Yardımcısı ile şirkete ait iOS cihazlarını kaydetmek için Apple Configurator’ı kullanmayı öğrenin.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c254d91a104b08a1bdda3f3496369607af30f2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ecdd79a029bc3d434ebb0d8ba62ea0e65215f9e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator ile iOS cihazlarını kaydetme
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Geçici kullanıcı arabirimi farklılıkları
@@ -85,8 +85,8 @@ Bir cihaz kayıt profili kayıt sırasında uygulanan ayarları tanımlar. Bu ay
 
 1. İki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. Seri numarasını sol sütuna, ayrıntıları sağ sütuna ekleyin. Liste için geçerli üst sınır 5.000 satırdır. Metin düzenleyicisinde .csv listesi aşağıdaki gibi görünür:
 
-  F7TLWCLBX196,cihaz ayrıntıları</br>
-  DLXQPCWVGHMJ,cihaz ayrıntıları
+   F7TLWCLBX196,cihaz ayrıntıları</br>
+   DLXQPCWVGHMJ,cihaz ayrıntıları
 
    [iOS cihaz seri numarasını bulmayı](https://support.apple.com/HT204073) öğrenin.
 2. [Azure portalında Intune](https://portal.azure.com)’da **Cihaz kaydı**'nı, ardından **Apple Kaydı**'nı seçin.
@@ -119,23 +119,23 @@ Profil oluşturup seri numaralarını atadıktan sonra profili Intune'dan URL ol
 1. [Azure portalında Intune’da](https://portal.azure.com), **Cihaz kaydı** > **Apple kaydı** > **AC Profilleri**’ni seçin ve sonra dışarı aktarılacak profili seçin.
 2. Profilde **Profili Dışarı Aktar**’ı seçin.
 
-  ![Kurulum Yardımcısı Kaydı için Profili Dışarı Aktar ile Profil URL’sinin vurgulanmış hali](./media/ios-apple-configurator-expor-sat.png)
+   ![Kurulum Yardımcısı Kaydı için Profili Dışarı Aktar ile Profil URL’sinin vurgulanmış hali](./media/ios-apple-configurator-expor-sat.png)
 3. Profil URL'sini kopyalayın. iOS cihazlar tarafından kullanılan Intune profilini tanımlamak için bunu daha sonra Apple Configurator'a ekleyebilirsiniz.
 
-  Ardından iOS cihazlarında kullanılan Intune profilini tanımlamak için aşağıdaki yordamda bu profili Apple Configurator’a içeri aktarırsınız.
+   Ardından iOS cihazlarında kullanılan Intune profilini tanımlamak için aşağıdaki yordamda bu profili Apple Configurator’a içeri aktarırsınız.
 
 ### <a name="enroll-devices-with-setup-assistant"></a>Kurulum Yardımcısı ile cihaz kaydetme
 
-1.  Mac bilgisayarda **Apple Configurator 2**'yi açın. Menü çubuğunda **Apple Configurator 2**’yi, sonra **Tercihler**’i seçin.
-  > [!WARNING]
-  > Cihazlar kayıt işlemi sırasında fabrika yapılandırmalarına sıfırlanır. En iyi uygulama olarak cihazı sıfırlayın ve açın. Cihazı bağladığınızda cihazın **Merhaba** ekranında olması gerekir.
+1. Mac bilgisayarda **Apple Configurator 2**'yi açın. Menü çubuğunda **Apple Configurator 2**’yi, sonra **Tercihler**’i seçin.
+   > [!WARNING]
+   > Cihazlar kayıt işlemi sırasında fabrika yapılandırmalarına sıfırlanır. En iyi uygulama olarak cihazı sıfırlayın ve açın. Cihazı bağladığınızda cihazın **Merhaba** ekranında olması gerekir.
 
 2. **Tercihler** bölmesinde **Sunucular**’ı seçin ve MDM Sunucusu sihirbazını başlatmak için (+) artı simgesini seçin. **İleri**’yi seçin.
 3. Microsoft Intune ile iOS cihazları için Kurulum Yardımcısı kaydı altındaki MDM sunucusunun **Konak adı veya URL’si** ve **kayıt URL'sini** girin. Kayıt URL’si olarak Intune’dan dışarı aktarılan kayıt profili URL’sini girin. **İleri**’yi seçin.  
 
-  “Sunucu URL'si doğrulanmadı” uyarısı alırsanız göz ardı edebilirsiniz. Devam etmek için sihirbaz tamamlanana kadar **İleri**’yi seçin.
-4.  iOS mobil cihazları bir USB bağdaştırıcısı ile Mac bilgisayara bağlayın.
-5.  Yönetmek istediğiniz iOS cihazları ve ardından **Hazırla**’yı seçin. **iOS Cihazını Hazırla** bölmesinde, **El ile**’yi, sonra **İleri**’yi seçin.
+   “Sunucu URL'si doğrulanmadı” uyarısı alırsanız göz ardı edebilirsiniz. Devam etmek için sihirbaz tamamlanana kadar **İleri**’yi seçin.
+4. iOS mobil cihazları bir USB bağdaştırıcısı ile Mac bilgisayara bağlayın.
+5. Yönetmek istediğiniz iOS cihazları ve ardından **Hazırla**’yı seçin. **iOS Cihazını Hazırla** bölmesinde, **El ile**’yi, sonra **İleri**’yi seçin.
 6. **MDM Sunucusuna Kaydol** bölmesinde, oluşturduğunuz sunucunun adını ve sonra da **İleri**’yi seçin.
 7. **Cihazları Denetle** bölmesinde, denetim düzeyini seçin, sonra **İleri**’yi seçin.
 8. **Kuruluş Oluştur** bölmesinde **Kuruluş**’u seçin veya yeni bir kuruluş oluşturun, sonra **İleri**’yi seçin.
@@ -162,13 +162,14 @@ iOS cihazlarını Apple Configurator ile doğrudan kaydederken, cihazın seri nu
 
 2. Dosyayı [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) çalıştıran bir Mac bilgisayara aktararak iOS cihazlar için doğrudan bir yönetim profili olarak gönderebilirsiniz.
 3. Aşağıdaki adımları izleyerek cihazı Apple Configurator ile hazırlayın.
-  1. Mac bilgisayarda Apple Configurator 2.0'ı açın.
-  2. iOS cihazını bir USB kablosu ile Mac bilgisayara bağlayın. Fotoğraflar’ı, iTunes’u ve cihaz algılandığında cihaz için açık olan diğer uygulamaları kapatın.
-  3. Apple Configurator’da, bağlı iOS cihazını ve sonra **Ekle** düğmesini seçin. Cihaza eklenebilen seçenekler aşağı açılan listede görüntülenir. **Profiller**’i seçin.
+   1. Mac bilgisayarda Apple Configurator 2.0'ı açın.
+   2. iOS cihazını bir USB kablosu ile Mac bilgisayara bağlayın. Fotoğraflar’ı, iTunes’u ve cihaz algılandığında cihaz için açık olan diğer uygulamaları kapatın.
+   3. Apple Configurator’da, bağlı iOS cihazını ve sonra **Ekle** düğmesini seçin. Cihaza eklenebilen seçenekler aşağı açılan listede görüntülenir. **Profiller**’i seçin.
 
-    ![Kurulum Yardımcısı Kaydı için Profili Dışarı Aktar ile Profil URL’sinin vurgulanmış hali](./media/ios-apple-configurator-add-profile.png)
+      ![Kurulum Yardımcısı Kaydı için Profili Dışarı Aktar ile Profil URL’sinin vurgulanmış hali](./media/ios-apple-configurator-add-profile.png)
 
-  4. Intune’dan dışarı aktardığınız .mobileconfig dosyasını seçmek için dosya seçiciyi kullanın ve sonra **Ekle**’yi seçin. Profil cihaza eklenir. Cihaz Denetimsiz ise, yüklemenin cihazda kabul edilmesi gerekir.
+   4. Intune’dan dışarı aktardığınız .mobileconfig dosyasını seçmek için dosya seçiciyi kullanın ve sonra **Ekle**’yi seçin. Profil cihaza eklenir. Cihaz Denetimsiz ise, yüklemenin cihazda kabul edilmesi gerekir.
+
 4. Profili iOS cihazına yüklemek için aşağıdaki adımları kullanın. Cihaz, Kurulum Yardımcısı’nı zaten tamamlamış ve hazır olmalıdır. Kayıt içinde uygulama dağıtımları da varsa uygulama dağıtımı, App Store için imzalanmış bir Apple Kimliğiniz olmasını gerektirdiğinden cihazda bir Apple Kimliği ayarlanmış olmalıdır.
    1. iOS cihazının kilidini açın.
    2. **Yönetim profili**’nin **Profili yükle** iletişim kutusunda **Yükle**’yi seçin.

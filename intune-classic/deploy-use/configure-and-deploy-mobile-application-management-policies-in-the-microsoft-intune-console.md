@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e1b4903eedaec53015a01a7711f87401dc02d24e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Microsoft Intune konsolunda mobil uygulama yönetimi ilkelerini yapılandırma ve dağıtma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune’daki Mobil uygulama yönetimi (MAM) ilkeleri, dağıttığınız uygulamaların şirketin uyumluluk ve güvenlik ilkeleriyle uyumlu olmasını sağlamak için bunların işlevselliğini değiştirmenize izin verir. Örneğin, yönetilen bir uygulama içinde kesme, kopyalama ve yapıştırma işlemlerini kısıtlayabilir veya bir uygulamayı yönetilen bir tarayıcı içindeki tüm web bağlantılarını açacak şeklide yapılandırabilirsiniz.
 
@@ -180,7 +180,7 @@ Bir mobil uygulama yönetimi ilkesiyle ilişkilendirilmiş bir uygulama oluştur
 
 4.  Durumunu görüntülemek istediğiniz mobil uygulama yönetimi ilkesini seçin. İlkenin ayrıntılarını alt bölmede görüntüleyebilir ve ayarlarını görüntülemek için düğümü genişletebilirsiniz.
 
-5.  Her bir mobil uygulama yönetim ilkesinin **Durum** sütununun altında, **Uyumlu**, **Uyumlu (Bekleniyor)**veya **Hata** seçenekleri görünür. Seçili ilkede bir veya daha fazla çakışan ayar varsa, bu alanda **Hata** ifadesi görünür.
+5.  Her bir mobil uygulama yönetim ilkesinin **Durum** sütununun altında, **Uyumlu**, **Uyumlu (Bekleniyor)** veya **Hata** seçenekleri görünür. Seçili ilkede bir veya daha fazla çakışan ayar varsa, bu alanda **Hata** ifadesi görünür.
 
 6.  Bir çakışmayı belirledikten sonra çakışan ilke ayarlarını aynı ayarı kullanacak şekilde düzeltebilir veya uygulama ve kullanıcıya yalnızca tek bir ilke dağıtabilirsiniz.
 

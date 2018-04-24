@@ -1,25 +1,25 @@
 ---
-title: "Android cihazınıza Symantec Endpoint Protection Mobile yüklemeniz gerekiyor | Microsoft Docs"
-description: "Android cihazınıza SEP Mobile yüklemeyi öğrenin."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Android cihazınıza Symantec Endpoint Protection Mobile yüklemeniz gerekiyor | Microsoft Docs
+description: Android cihazınıza SEP Mobile yüklemeyi öğrenin.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 040b7bad4b62acffa5dad1606d5beb81efc56b68
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7194f63a3d9b34be00753a66b9929c033bd10b86
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Android cihazınıza Symantec Endpoint Protection Mobile yükleme
 
@@ -45,13 +45,13 @@ Yüklemeyle ilgili bir sorun yaşarsanız bu konunun sonundaki sorun giderme ad�
 
 8. SEP Mobile, cihazınızdaki güvenlik tehditlerini hemen denetlemeye başlar.
 
-  * SEP Mobile cihazınızda güvenlik tehdidi bulursa sorunun nasıl çözüleceğini gösteren yönergeler karşınıza çıkar.
+   * SEP Mobile cihazınızda güvenlik tehdidi bulursa sorunun nasıl çözüleceğini gösteren yönergeler karşınıza çıkar.
 
-  * Herhangi bir tehdit bulunmazsa, üç tehdit türü de yeşil görünür.
+   * Herhangi bir tehdit bulunmazsa, üç tehdit türü de yeşil görünür.
 
-    * Şirket Portalı’ndaki **Cihaz Ayrıntıları** ekranı, artık şirketinizin güvenlik gereksinimlerine uyduğunuzu gösterir.
+     * Şirket Portalı’ndaki **Cihaz Ayrıntıları** ekranı, artık şirketinizin güvenlik gereksinimlerine uyduğunuzu gösterir.
 
-    ![Cihazınız artık ilkelerle uyumludur](./media/mtd-device-now-compliant-android.png)
+     ![Cihazınız artık ilkelerle uyumludur](./media/mtd-device-now-compliant-android.png)
 
 ## <a name="if-the-installation-doesnt-work"></a>Yükleme çalışmazsa
 

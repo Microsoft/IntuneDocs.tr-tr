@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 242ee454ec42c54bb9437fbdf0a7efeca926d193
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Kullanıcılarınızın Microsoft Intune’da yönetilen Office 365 uygulamalarındaki temel koruma deneyimi
 
@@ -50,13 +50,13 @@ Bu makalede, Intune tarafından yönetilen bir uygulamada kullanıcının deneyi
 2. İş hesabı kullanıcı adınızı yazın. İş kimlik bilgilerinizi girmeniz için Office 365 kimlik doğrulaması sayfasına yönlendirilirsiniz. 
 3. Kimlik bilgileriniz Azure Active Directory tarafından başarıyla doğrulandıktan sonra uygulama koruma ilkeleri uygulanır ve OneDrive İş uygulamasını yeniden başlatmanız istenir. 
 
-  > [!NOTE]
-  > Yeniden başlatma gerekli iletisi yalnızca, Intune’da kayıtlı olmayan cihazlarda görüntülenir.
+   > [!NOTE]
+   > Yeniden başlatma gerekli iletisi yalnızca, Intune’da kayıtlı olmayan cihazlarda görüntülenir.
 
 4. OneDrive İş uygulamasını yeniden başlatın. Uygulama, uygulama koruma ilkeleri açık olarak başlatılır ve cihaz için bir PIN ayarlamanız istenir (henüz cihaz için bir PIN yapılandırmadıysanız).  
 
-  > [!NOTE]
-  > Kullanıcılarınızın çoğu bu bilgi istemini görmez. Yalnızca iOS cihazlarında PIN’i etkinleştirmemiş olan kullanıcılar bu bilgi istemini görür.
+   > [!NOTE]
+   > Kullanıcılarınızın çoğu bu bilgi istemini görmez. Yalnızca iOS cihazlarında PIN’i etkinleştirmemiş olan kullanıcılar bu bilgi istemini görür.
 
 5. PIN’i ayarlayıp onayladıktan sonra, OneDrive İş uygulamasına dönün. BT yöneticinizin artık OneDrive’daki iş verilerinizi koruduğuna ilişkin tek seferlik bir bildirim görürsünüz. 
 6. OneDrive İş’teki dosyalarınıza erişmek için bu bildirimi tıklayarak geçin. 
@@ -70,8 +70,8 @@ Bu makalede, Intune tarafından yönetilen bir uygulamada kullanıcının deneyi
 2. İş hesabı kullanıcı adınızı yazın. İş kimlik bilgilerinizi girmeniz için Office 365 kimlik doğrulaması sayfasına yönlendirilirsiniz. <br/> ![Android’de O365 oturum açma işleminin resmi](./media/o365-sign-in-android.png)
 3. Kimlik bilgileriniz Azure AD Active Directory tarafından başarıyla doğrulandıktan sonra, Şirket Portalı uygulaması cihaza henüz yüklenmediyse, uygulamayı yükleme yönergelerini içeren bir ileti görürsünüz. Devam etmek için **Mağazaya git**’e dokunun. <br/> ![Şirket Portalı uygulamasını alma iletisinin resmi](./media/get-company-portal-android.png) <br/>Şirket Portalı uygulaması telefonunuza zaten yüklenmişse, OneDrive İş uygulaması otomatik olarak başlatılır ve son nota atlayabilirsiniz.   
 
-  > [!IMPORTANT]
-  > Android’de, Office uygulamalarının bir uygulama koruma ilkesi tarafından yönetilmesini ayarladıktan sonra, son kullanıcının aslında e-postaları veya belgeleri okumak için Şirket Portalı uygulamasını açması veya bu uygulamada oturum açması gerekmese bile, iş e-postalarına ve belgelerine erişmek için bu uygulamayı yüklemesi **gerekir**.
+   > [!IMPORTANT]
+   > Android’de, Office uygulamalarının bir uygulama koruma ilkesi tarafından yönetilmesini ayarladıktan sonra, son kullanıcının aslında e-postaları veya belgeleri okumak için Şirket Portalı uygulamasını açması veya bu uygulamada oturum açması gerekmese bile, iş e-postalarına ve belgelerine erişmek için bu uygulamayı yüklemesi **gerekir**.
 
 4. Şu anda Şirket Portalı uygulamasını indirip yükleyebileceğiniz Google Play mağazasındasınız. Uygulama, verilerinizi güvende tutmaya ve korumaya yardımcı olur. <br/> ![Google Play mağazasındaki uygulamanın resmi](./media/google-play-get-app-android.png)
 5. Uygulama yüklemesini tamamladıktan sonra koşulları kabul etmek için **Kabul Et**’i seçin. OneDrive İş uygulaması otomatik olarak başlatılır.
@@ -86,6 +86,7 @@ Bu makalede, Intune tarafından yönetilen bir uygulamada kullanıcının deneyi
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
 
 ## <a name="what-policies-does-this-wizard-set"></a>Bu sihirbaz hangi ilkeleri ayarlar?
+
 |     |       | |
 |----|--------|-|
 |**Ad**|Office 365 uygulamalarını yönetme| |

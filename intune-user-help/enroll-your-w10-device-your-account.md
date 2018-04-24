@@ -1,37 +1,37 @@
 ---
-title: "Windows 10 cihazınızı Intune’a kaydetme | Microsoft Docs"
-description: "Windows 10 1511 cihazını Intune'a kaydetme"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Windows 10 cihazınızı Intune’a kaydetme | Microsoft Docs
+description: Windows 10 1511 cihazını Intune'a kaydetme
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: bc9a351b24e35359f628a9af9ac906ed0c41a6ff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Windows 10 cihazınızı Intune'a kaydetme
 
   > [!NOTE]
   > Windows 10 tüm cihaz türlerinde çalışır. Masaüstü, telefon veya tablet kullandığınızda izleyeceğiniz adımlar, bu sayfadaki resimlerden biraz farklı görünse de aynıdır.
 
-1.  **Başlat**'a gidin.
+1. **Başlat**'a gidin.
 
-  - **Windows 10 masaüstü** cihaz kullanıyorsanız **Başlat menüsüne** gidin.
-  - **Windows 10 Mobil** cihaz kullanıyorsanız **Başlangıç ekranına** gidin ve **Tüm Uygulamalar** listesine doğru kaydırın.
+   - **Windows 10 masaüstü** cihaz kullanıyorsanız **Başlat menüsüne** gidin.
+   - **Windows 10 Mobil** cihaz kullanıyorsanız **Başlangıç ekranına** gidin ve **Tüm Uygulamalar** listesine doğru kaydırın.
 
 2. Arama çubuğuna “ayarlar” yazarak Windows **Ayarlar** uygulamasını bulun ve açın.
 

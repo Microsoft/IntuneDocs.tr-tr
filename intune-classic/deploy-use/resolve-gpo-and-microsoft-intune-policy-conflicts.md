@@ -1,28 +1,28 @@
 ---
-title: "GPO ve Intune ilkesi çakışmalarını çözümleme"
-description: "Grup İlkesi ile Intune yapılandırma ilkeleri arasındaki çakışmaları çözmeyi öğrenin."
-keywords: 
+title: GPO ve Intune ilkesi çakışmalarını çözümleme
+description: Grup İlkesi ile Intune yapılandırma ilkeleri arasındaki çakışmaları çözmeyi öğrenin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9764a1fec44ff5aae7ebcf63b3ebde252bb687f9
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f6d12dd886fe475161e767e63177313a729e170d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Grup İlkesi Nesneleri (GPO) ve Microsoft Intune ilke çakışmalarını çözme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune, Windows bilgisayarlarda ayarları yönetmenize yardımcı olan ilkeler kullanır. Örneğin, bilgisayarlardaki Windows Güvenlik Duvarı’nın ayarlarını denetlemek için bir ilke kullanabilirsiniz. Birçok Intune ayarı Windows Grup İlkesi'yle yapılandırdığınız ayarlara benzer. Ancak, bazen iki yöntemin birbiriyle çakışması mümkündür.
 
@@ -116,5 +116,5 @@ GPO'ları yalnızca seçili bir GPO için Grup İlkesi Yönetimi konsolunun **G�
 
 Yeni güvenlik grubu Intune hizmet değişikliklerinde kayıt olarak korunmalıdır.
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ile Windows bilgisayarları yönetme](manage-windows-pcs-with-microsoft-intune.md)

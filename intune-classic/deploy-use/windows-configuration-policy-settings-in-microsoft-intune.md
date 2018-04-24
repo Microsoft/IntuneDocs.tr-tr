@@ -1,29 +1,29 @@
 ---
-title: "Windows ilke ayarları"
-description: "Kayıtlı Windows 8 ve Windows 8.1 cihazlarının ayarlarını yapılandırmak için Intune Windows genel yapılandırma ilkesini (Windows 8.1 ve üstü) kullanın."
-keywords: 
+title: Windows ilke ayarları
+description: Kayıtlı Windows 8 ve Windows 8.1 cihazlarının ayarlarını yapılandırmak için Intune Windows genel yapılandırma ilkesini (Windows 8.1 ve üstü) kullanın.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa8d8454e9d22b2d3c36cd6449805d709c34ffa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Windows ilke ayarları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Kayıtlı Windows 8, ve Windows 8.1 ve Windows RT 8.1 cihazlarının aşağıdaki ayarlarını yapılandırmak için Microsoft Intune **Windows genel yapılandırma ilkesini (Windows 8.1 ve üstü)** kullanın:
 
@@ -49,9 +49,10 @@ Kayıtlı Windows 8, ve Windows 8.1 ve Windows RT 8.1 cihazlarının aşağıdak
 
 ## <a name="encryption-settings"></a>Şifreleme ayarları
 
-|Ayar adı|Ayrıntılar|
-|----------------|-----|
-|**Mobil cihazda şifreleme iste**<sup>1</sup>|Cihazdaki dosyaların şifrelenmesini gerektirir.|
+|                           Ayar adı                           |                     Ayrıntılar                      |
+|------------------------------------------------------------------|--------------------------------------------------|
+| <strong>Mobil cihazda şifreleme iste</strong><sup>1</sup> | Cihazdaki dosyaların şifrelenmesini gerektirir. |
+
 <sup>1</sup> Windows 8.1 çalıştıran cihazlar için ek bilgiler
 
 -   Windows 8.1 çalıştıran cihazlarda şifrelemeyi zorlamak için her bir cihaza [Windows için Aralık 2014 MDM istemci güncelleştirmesi](http://support.microsoft.com/kb/3013816) ’ni yüklemeniz gerekir.
@@ -118,5 +119,5 @@ Kayıtlı Windows 8, ve Windows 8.1 ve Windows RT 8.1 cihazlarının aşağıdak
 
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

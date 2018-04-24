@@ -1,30 +1,29 @@
 ---
-title: "Bir iOS cihazının kullanıcı oturumunu kapatma"
+title: Bir iOS cihazının kullanıcı oturumunu kapatma
 titlesuffix: Microsoft Intune
-description: "Intune ile bir iOS cihazının geçerli kullanıcı oturumunu kapatma hakkında bilgi edinin.\""
-keywords: 
+description: Intune ile bir iOS cihazının geçerli kullanıcı oturumunu kapatma hakkında bilgi edinin."
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9474a144abd02a807658af9bf243c8764089b5de
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 223906d37159ba4081f5a5c055392321ac02e0ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Intune tarafından yönetilen iOS cihazlarında geçerli kullanıcı oturumunu kapatma
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 **Mevcut kullanıcı oturumunu kapat** eylemi, iOS Classroom uygulamasını [iOS eğitim profili](education-settings-configure-ios.md) kullanarak yönetmek üzere yapılandırılmış, paylaşılan bir iPad cihazdaki mevcut kullanıcının oturumunu kapatır. 
 

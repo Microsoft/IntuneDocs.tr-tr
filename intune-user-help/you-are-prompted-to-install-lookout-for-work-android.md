@@ -1,25 +1,25 @@
 ---
-title: "Android cihazınıza Lookout for Work uygulamasını yüklemeniz gerekiyor | Microsoft Docs"
-description: "Android için Lookout for Work uygulamasını yüklemeyi öğrenin."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Android cihazınıza Lookout for Work uygulamasını yüklemeniz gerekiyor | Microsoft Docs
+description: Android için Lookout for Work uygulamasını yüklemeyi öğrenin.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3c07a84f029ee5b997b3bfe20a73de6335057cbc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6b55faeae5b68da04f1f9e75c984ebb0af2b9deb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-lookout-for-work"></a>Lookout for Work’ü yükleme
 
@@ -29,47 +29,47 @@ Yüklemeyle ilgili bir sorun yaşarsanız bu konunun sonundaki sorun giderme ad�
 
 ## <a name="what-you-need-to-do"></a>Yapmanız gerekenler
 
-1.  Bildirimler çubuğunu açmak için ekranın en üstünden aşağı doğru sürükleyin ve ardından **Gerekli uygulama – Play Store’dan Lookout for Work’ü Yükle**’ye tıklayın.
+1. Bildirimler çubuğunu açmak için ekranın en üstünden aşağı doğru sürükleyin ve ardından **Gerekli uygulama – Play Store’dan Lookout for Work’ü Yükle**’ye tıklayın.
 
-  ![Lookout for Work uygulamasını yüklemeniz gerekir](./media/lookout-required-app-install-android.png)
+   ![Lookout for Work uygulamasını yüklemeniz gerekir](./media/lookout-required-app-install-android.png)
 
-2.  Play Store’da Lookout for Work yükleme sayfasına gelirsiniz. Lookout for Work’ü yükleyin ve Lookout for Work uygulamasının cihazınıza erişmesine izin vermek için **KABUL ET**’e dokunun.
+2. Play Store’da Lookout for Work yükleme sayfasına gelirsiniz. Lookout for Work’ü yükleyin ve Lookout for Work uygulamasının cihazınıza erişmesine izin vermek için **KABUL ET**’e dokunun.
 
-  ![Lookout for Work’ün cihazınıza erişmesine izin vermek için kabul et’e dokunun](./media/lookout-accept-store-permissions-android.png)
+   ![Lookout for Work’ün cihazınıza erişmesine izin vermek için kabul et’e dokunun](./media/lookout-accept-store-permissions-android.png)
 
 3. Lookout for Work’ü açın ve **ETKİNLEŞTİR**’e dokunun.
 
-  ![Lookout for Work’ü açın ve Etkinleştir’e dokunun](./media/lookout-activate-button-android.png)
+   ![Lookout for Work’ü açın ve Etkinleştir’e dokunun](./media/lookout-activate-button-android.png)
 
 4. **Azure Active Directory ile oturum açın** seçeneğine dokunun ve ardından iş veya okul e-postası ve dosyalarına erişirken kullandığınız hesabı girin.
 
-  ![iş veya okul hesabınızla oturum açın](./media/lookout-sign-in-azure-android.png)
+   ![iş veya okul hesabınızla oturum açın](./media/lookout-sign-in-azure-android.png)
 
 5. İş veya okul e-postasına ve dosyalarına erişirken kullandığınız hesabı seçin ve ardından **HESAP EKLE**’ye dokunun.
 
-  ![iş veya okul hesabınızı seçin ve Hesap Ekle’ye dokunun](./media/lookout-pick-account-android.png)
+   ![iş veya okul hesabınızı seçin ve Hesap Ekle’ye dokunun](./media/lookout-pick-account-android.png)
 
 6. Lookout for Work’e oturumunuzu açma ve profilinizi okuma izni vermek için **Kabul Et**’e dokunun. Lookout for Work’ün Lookout Security Cloud’a bağlandığını gösteren bir ekran görüntülenir.
 
-  ![Lookout for Work’e profilinizi okuma izni vermek için Kabul Et’e dokunun](./media/lookout-needs-permission-to-view-profile-android.png)
+   ![Lookout for Work’e profilinizi okuma izni vermek için Kabul Et’e dokunun](./media/lookout-needs-permission-to-view-profile-android.png)
 
 7. Lookout’un cihazınızı nasıl koruduğunu anlatan öğeleri gözden geçirin ve ardından **Tamam**’a dokunun.
 
-  ![Lookout for Work’ün cihazınızı nasıl koruduğunu gözden geçirin](./media/lookout-how-it-protects-your-device-android.png)
+   ![Lookout for Work’ün cihazınızı nasıl koruduğunu gözden geçirin](./media/lookout-how-it-protects-your-device-android.png)
 
-  Aşağıdaki ekranı gördüğünüzde, Lookout ayarlanmış ve bağlanmış demektir.
+   Aşağıdaki ekranı gördüğünüzde, Lookout ayarlanmış ve bağlanmış demektir.
 
-  ![artık Lookout for Work’e bağlısınız](./media/lookout-you-are-now-connected-android.png)
+   ![artık Lookout for Work’e bağlısınız](./media/lookout-you-are-now-connected-android.png)
 
-  Lookout for Work, cihazınızdaki güvenlik tehditlerini hemen denetlemeye başlar. Hiçbir tehdit bulunmazsa, aşağıdaki ekranı görürsünüz.
+   Lookout for Work, cihazınızdaki güvenlik tehditlerini hemen denetlemeye başlar. Hiçbir tehdit bulunmazsa, aşağıdaki ekranı görürsünüz.
 
-  ![Lookout for Work hiçbir güvenlik tehdidi bulamadı](./media/lookout-scan-no-threats-found-android.png)
+   ![Lookout for Work hiçbir güvenlik tehdidi bulamadı](./media/lookout-scan-no-threats-found-android.png)
 
-  Şirket Portalı’ndaki Cihaz Ayrıntıları ekranı, artık şirketinizin güvenlik gereksinimlerine uyduğunuzu gösterir.
+   Şirket Portalı’ndaki Cihaz Ayrıntıları ekranı, artık şirketinizin güvenlik gereksinimlerine uyduğunuzu gösterir.
 
     ![cihazınız artık ilkelerle uyumludur](./media/mtd-device-now-compliant-android.png)
 
-  Lookout for Work cihazınızda güvenlik tehdidi bulursa, sorunun nasıl çözüleceğini gösteren yönergeleri görürsünüz.
+   Lookout for Work cihazınızda güvenlik tehdidi bulursa, sorunun nasıl çözüleceğini gösteren yönergeleri görürsünüz.
 
 ## <a name="if-the-installation-doesnt-work"></a>Yükleme çalışmazsa
 

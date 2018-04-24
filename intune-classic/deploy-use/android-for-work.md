@@ -12,15 +12,15 @@ ms.technology: ''
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b6dd287bfd610d5c35f0bfeadb5fcaeae6dddf3c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ac83eb71b04e034023d008fa4cdbb960f2c4bedb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>Intune ile Android for Work cihazları yönetme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Android for Work kişisel uygulamaları ve verileri, uygulama ve veri içeren bir iş profilinden ayıran Android cihazı özellik ve hizmet kümesidir. Android for Work, kullanıcılar Android cihazlarını iş için kullandıklarında ek yönetim özellikleri ve gizlilik sağlar. Intune, iş bilgileri ve kişisel bilgilerin ayrı olmasını sağlamak için Android for Work cihazlara uygulamalar ve şirket kaynakları dağıtmanıza yardımcı olur. Başarıyla dağıtıldığında, uygulamalar ve bunların eriştiği veriler özel olarak cihazdaki Android for Work ortamında kalır.
 

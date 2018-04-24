@@ -1,31 +1,30 @@
 ---
-title: "Microsoft Intune’da uygulama yönetimi nedir?"
-titlesuffix: 
-description: "Microsoft Intune ile uygulama yönetimi hakkındaki temel bilgileri öğrenin."
-keywords: 
+title: Microsoft Intune’da uygulama yönetimi nedir?
+titlesuffix: ''
+description: Microsoft Intune ile uygulama yönetimi hakkındaki temel bilgileri öğrenin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/09/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 86cb0dfb67e81a7abbdc8f38dcbf5539b9855adb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune, BT yöneticisi olarak, şirketinizin iş gücünün kullandığı mobil uygulamaları yönetmenizi sağlar. Bu işlev, cihazları yönetmeye ve verileri korumaya ek niteliğindedir. Bu işlevin bir parçası olarak, önceliklerinizden biri son kullanıcılarınızın işlerini yapmak için ihtiyaç duydukları uygulamalara erişebilmelerini sağlamaktır. Bu zor olabilir çünkü:
 - Çok çeşitli cihaz platformları ve uygulama türleri vardır.

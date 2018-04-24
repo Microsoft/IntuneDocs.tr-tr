@@ -1,25 +1,25 @@
 ---
-title: "iOS cihazlar için Microsoft Intune’da uygulama başına VPN ayarlama"
-titleSuffix: 
-description: "Intune ile yönetilen iOS cihazlarda hangi yönetilen uygulamaların Sanal Özel Ağınızı (VPN) kullanabileceğini belirtin."
-keywords: 
+title: iOS cihazlar için Microsoft Intune’da uygulama başına VPN ayarlama
+titleSuffix: ''
+description: Intune ile yönetilen iOS cihazlarda hangi yönetilen uygulamaların Sanal Özel Ağınızı (VPN) kullanabileceğini belirtin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS cihazlar için Intune’da uygulama başına Sanal Özel Ağ (VPN) ayarlama
 
@@ -67,7 +67,7 @@ CA tarafından verilen VPN sunucusu kök sertifikasını Intune’da oluşturula
 4. Klasör simgesine tıklayarak VPN yönetim konsolundan aktardığınız VPN sertifikanıza (.cer dosyası) göz atın. **Tamam**'ı tıklatın.
 5. **Oluştur**'a tıklayın.
 
-    ![Güvenilen bir sertifika profili oluşturma](media\vpn-per-app-create-trusted-cert.png)
+    ![Güvenilen bir sertifika profili oluşturma](./media/vpn-per-app-create-trusted-cert.png)
 
 ## <a name="create-a-scep-certificate-profile"></a>Bir SCEP sertifika profili oluşturma
 
@@ -94,7 +94,7 @@ Güvenilen kök sertifika profili, iOS’un VPN sunucusuna otomatik olarak güve
 14. **Tamam**'ı tıklatın.
 15. **Oluştur**'a tıklayın.
 
-    ![Bir SCEP sertifika profili oluşturma](media\vpn-per-app-create-scep-cert.png)
+    ![Bir SCEP sertifika profili oluşturma](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>Uygulama Başına VPN profili oluşturma
 
@@ -123,7 +123,7 @@ VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye
 6. **Tamam**'ı tıklatın.
 7. **Oluştur**'a tıklayın.
 
-    ![Uygulama Başına VPN profili oluşturma](media\vpn-per-app-create-vpn-profile.png)
+    ![Uygulama Başına VPN profili oluşturma](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Bir uygulamayı VPN profiliyle ilişkilendirme
@@ -146,7 +146,7 @@ VPN profilinizi ekledikten sonra, uygulamayı ve Azure AD grubunu bu profil ile 
 
 9. **Tamam**’a ve **Kaydet**’e tıklayın.
 
-    ![Bir uygulamayı VPN ile ilişkilendirme](media\vpn-per-app-app-to-vpn.png)
+    ![Bir uygulamayı VPN ile ilişkilendirme](./media/vpn-per-app-app-to-vpn.png)
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>iOS cihazda bağlantıyı doğrulama
 

@@ -1,29 +1,29 @@
 ---
-title: "Intune’a kurumsal tanımlayıcılar ekleme"
+title: Intune’a kurumsal tanımlayıcılar ekleme
 titlesuffix: Microsoft Intune
-description: "Microsoft Intune’a kurumsal tanımlayıcıları (kayıt yöntemi, IMEI ve seri numaraları) eklemeyi öğrenin."
-keywords: 
+description: Microsoft Intune’a kurumsal tanımlayıcıları (kayıt yöntemi, IMEI ve seri numaraları) eklemeyi öğrenin.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bir Intune yöneticisi olarak cihazları şirkete ait olarak tanımlayabilir, böylece yönetim ve tanımlama işlemlerini geliştirebilirsiniz. Intune, ek yönetim görevleri gerçekleştirebilir ve tam telefon numarası ile şirkete ait cihazların uygulama envanteri gibi ilave bilgiler toplayabilir. Şirkete ait olmayan cihazların kaydını engellemek için cihaz kısıtlamaları da ayarlayabilirsiniz.
 
@@ -72,7 +72,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 1. [Azure portalında Intune’da](https://portal.azure.com) **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları**’nı seçin ve **Ekle**’ye tıklayın.
 
- ![Kurumsal cihaz tanımlayıcısı çalışma alanı ile Ekle düğmesinin vurgulanmış hali](./media/add-corp-id.png)
+   ![Kurumsal cihaz tanımlayıcısı çalışma alanı ile Ekle düğmesinin vurgulanmış hali](./media/add-corp-id.png)
 
 2. **Tanımlayıcı Ekle** dikey penceresinde tanımlayıcı türünü belirtin: **IMEI**veya **Seri**. Önceden içeri aktarılan numaralar için **Mevcut tanımlayıcıların ayrıntılarının üzerine yazın** seçeneğini belirleyebilirsiniz.
 
@@ -97,7 +97,7 @@ Intune’daki tüm cihaz kayıtlarının cihaz özelliklerinde **Sahiplik** gör
 
 **Cihaz sahipliğini değiştirmek için:**
 1. [Azure portalında Intune](https://portal.azure.com)’da, **Cihazlar**’a gidin ve cihazı seçin.
-3. **Özellikler**’i seçin.
-4. **Cihaz sahipliği**’ni **Kişisel** veya **Şirkete ait** olarak belirtin.
+2. **Özellikler**’i seçin.
+3. **Cihaz sahipliği**’ni **Kişisel** veya **Şirkete ait** olarak belirtin.
 
-  ![Cihaz kategorisi ve Cihaz sahipliği seçeneklerini gösteren cihaz özellikleri](./media/device-properties.png)
+   ![Cihaz kategorisi ve Cihaz sahipliği seçeneklerini gösteren cihaz özellikleri](./media/device-properties.png)

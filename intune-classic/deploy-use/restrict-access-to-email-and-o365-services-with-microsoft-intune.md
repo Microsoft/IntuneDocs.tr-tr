@@ -1,29 +1,29 @@
 ---
-title: "E-postayı ve Office 365'i koruma"
-description: "Bu konu başlığı altında, SharePoint Online’daki ve diğer hizmetlerdeki şirket e-postasına ve şirket verilerine yalnızca uyumlu cihazların erişmesine izin vermek için koşullu erişimi nasıl kullanabileceğiniz açıklanır."
-keywords: 
+title: E-postayı ve Office 365'i koruma
+description: Bu konu başlığı altında, SharePoint Online’daki ve diğer hizmetlerdeki şirket e-postasına ve şirket verilerine yalnızca uyumlu cihazların erişmesine izin vermek için koşullu erişimi nasıl kullanabileceğiniz açıklanır.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab45292734c39d3eaf4a5f0403cbff6e77d9d7e6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e121a3aaf4988bd92c36eb79131b2205263fb309
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Microsoft Intune ile e-posta, Office 365 ve diğer hizmetlere erişimi koruma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Enterprise Mobility + Security (EMS) Koşullu Erişim kullanarak şirket e-postanıza, **Şirket İçi Exchange**, **Exchange Online**, **Adanmış Exchange Online**, **SharePoint Online**, **Skype Kurumsal Çevrimiçi Sürüm** gibi Office 365 hizmetlerine ve diğer hizmetlere erişimi koruyabilirsiniz. Bu özellik, şirketinizin e-postasına ve Office 365 hizmetlerine erişimin, Intune yönetim konsolunda veya Azure klasik portalında ayarladığınız koşullu erişim kurallarına uyan cihazlarla sınırlı olduğundan emin olmanızı sağlar.
 ## <a name="how-does-conditional-access-work"></a>Koşullu erişim nasıl çalışır?
@@ -72,12 +72,12 @@ Diğer Intune ilkelerinden farklı olarak, koşullu erişim ilkelerini dağıtma
 
 2. [Cihaz uyumluluğu ilkesi oluşturma](create-a-device-compliance-policy-in-microsoft-intune.md).
 
-2.  Aşağıdaki Microsoft bulut hizmetleri/ürünlerinden biri için koşullu erişim ilkesi oluşturun:
+3. Aşağıdaki Microsoft bulut hizmetleri/ürünlerinden biri için koşullu erişim ilkesi oluşturun:
 
-  - [Exchange Online için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Şirket İçi Exchange için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Yeni Ayrılmış Exchange Online için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Eski Ayrılmış Exchange Online için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [SharePoint Online için koşullu erişim ilkesi oluşturma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [Skype Kurumsal Çevrimiçi Sürüm için koşullu erişim ilkesi oluşturma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [Dynamics CRM Online için koşullu erişim ilkesi oluşturma](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+   - [Exchange Online için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Şirket İçi Exchange için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Yeni Ayrılmış Exchange Online için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Eski Ayrılmış Exchange Online için koşullu erişim ilkesi oluşturma](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [SharePoint Online için koşullu erişim ilkesi oluşturma](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+   - [Skype Kurumsal Çevrimiçi Sürüm için koşullu erişim ilkesi oluşturma](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+   - [Dynamics CRM Online için koşullu erişim ilkesi oluşturma](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)

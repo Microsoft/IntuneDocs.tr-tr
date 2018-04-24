@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93dece592ce5280b1650303484bd24169814465c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Mobil cihazlar için Exchange erişim kuralları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Mobil cihazlar için Exchange erişim kuralları, bu cihazların Exchange ActiveSync’e erişim düzeylerini belirler. Bu ayarlar, Microsoft Intune’a kaydedilmemiş olanlar da dahil olmak üzere tüm mobil cihazları etkiler. Özel bir kural uygulanmayan tüm mobil cihazlar için geçerli olan bir **Varsayılan Kural** tanımlayarak başlayabilirsiniz.
 
@@ -37,11 +37,13 @@ Aşağıdaki tablo, Exchange ActiveSync tarafından yönetilen erişim düzeyler
 
 Erişim stratejisi, Exchange'e bağlanan tüm mobil cihazlar için geçerli olan **Varsayılan Kural**’ın ve **Platform Özel Durumları**'nın bir birleşimidir. Aşağıdaki tabloda bazı örnek erişim stratejileri listelenmektedir.
 
-|Erişim stratejisi|Description|
-|-------------------|---------------|
-|İzin verilenler listesi|Bilinen cihazlar listesine erişim verip geri kalan tüm cihazlar için erişimi kısıtlamak üzere bir *izin verilenler listesi* kullanabilirsiniz. Bunu yapmak için kullanıcının posta kutusuna erişmesine izin verilen cihaz platformları için özel kurallar oluşturmanız gerekir. Böyle bir kural oluşturur oluşturmaz varsayılan erişim kuralını diğer tüm cihazları engelleyecek veya karantinaya alacak şekilde ayarlamanız gerekir. İzin verilenler listesine yeni bir cihaz eklemek için yeni bir özel kural oluşturun.|
-|Engellenenler listesi|Varsayılan olarak tüm cihazlara erişim vermek ancak kuruluşunuza erişmesini istemediğiniz belirli cihazlar için erişimi engellemek üzere bir *engellenenler listesi* kullanabilirsiniz. Kuruluşun posta kutularıyla eşitlenmesini istemediğiniz cihaz platformlarını engellemek için özel kurallar oluşturarak bir engellenenler listesi oluşturun. Varsayılan kuralı, mevcut kurallar ile açıkça engellenmeyen tüm cihazlara izin verecek şekilde ayarlamanızı öneririz. Engellenenler listesine yeni bir cihaz veya cihaz kümesi eklemek için, yeni bir özel kural oluşturun.|
-|Karma izin verme ve engelleme|İzin verme ve engelleme listeleri oluşturmaya ek olarak, kuruluşa katılan yeni mobil cihazları değerlendirmeye devam ederken karantinaya alabilirsiniz. Örneğin, kuruluşunuzda izin verilmeyen mobil cihazlar için bir engellenenler listeniz ve izin verilen mobil cihazlar için bir izin verilenler listeniz varsa, varsayılan kuralı karantina olarak ayarlayabilirsiniz. Diğer tüm cihazlar otomatik olarak karantinaya alınır. Böylece kuruluşa katılan yeni cihazları bulabilir ve bunları izin verilenler listesine mi, yoksa engellenenler listesine mi ekleyeceğinize karar verebilirsiniz.|
+
+|    Erişim stratejisi    |                                                                                                                                                                                                                                                                                       Description                                                                                                                                                                                                                                                                                        |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      İzin verilenler listesi       |                                                                                  Bilinen cihazlar listesine erişim verip geri kalan tüm cihazlar için erişimi kısıtlamak üzere bir <em>izin verilenler listesi</em> kullanabilirsiniz. Bunu yapmak için kullanıcının posta kutusuna erişmesine izin verilen cihaz platformları için özel kurallar oluşturmanız gerekir. Böyle bir kural oluşturur oluşturmaz varsayılan erişim kuralını diğer tüm cihazları engelleyecek veya karantinaya alacak şekilde ayarlamanız gerekir. İzin verilenler listesine yeni bir cihaz eklemek için yeni bir özel kural oluşturun.                                                                                  |
+|      Engellenenler listesi       |                              Varsayılan olarak tüm cihazlara erişim vermek ancak kuruluşunuza erişmesini istemediğiniz belirli cihazlar için erişimi engellemek üzere bir <em>engellenenler listesi</em> kullanabilirsiniz. Kuruluşun posta kutularıyla eşitlenmesini istemediğiniz cihaz platformlarını engellemek için özel kurallar oluşturarak bir engellenenler listesi oluşturun. Varsayılan kuralı, mevcut kurallar ile açıkça engellenmeyen tüm cihazlara izin verecek şekilde ayarlamanızı öneririz. Engellenenler listesine yeni bir cihaz veya cihaz kümesi eklemek için, yeni bir özel kural oluşturun.                               |
+| Karma izin verme ve engelleme | İzin verme ve engelleme listeleri oluşturmaya ek olarak, kuruluşa katılan yeni mobil cihazları değerlendirmeye devam ederken karantinaya alabilirsiniz. Örneğin, kuruluşunuzda izin verilmeyen mobil cihazlar için bir engellenenler listeniz ve izin verilen mobil cihazlar için bir izin verilenler listeniz varsa, varsayılan kuralı karantina olarak ayarlayabilirsiniz. Diğer tüm cihazlar otomatik olarak karantinaya alınır. Böylece kuruluşa katılan yeni cihazları bulabilir ve bunları izin verilenler listesine mi, yoksa engellenenler listesine mi ekleyeceğinize karar verebilirsiniz. |
+
 Aşağıdaki yordamda özel bir kuralın nasıl oluşturulacağı açıklanmaktadır.
 
 ## <a name="create-a-default-access-rule"></a>Varsayılan erişim kuralı oluşturma

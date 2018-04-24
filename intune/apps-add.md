@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune’a uygulama ekleme"
-titlesuffix: 
-description: "Uygulamaları kullanıcılara ve cihazlara atayabilmeniz için Microsoft Intune'a nasıl uygulama ekleyeceğinizi öğrenin. Intune,çok çeşitli uygulama türlerini destekler."
-keywords: 
+title: Microsoft Intune’a uygulama ekleme
+titlesuffix: ''
+description: Uygulamaları kullanıcılara ve cihazlara atayabilmeniz için Microsoft Intune'a nasıl uygulama ekleyeceğinizi öğrenin. Intune,çok çeşitli uygulama türlerini destekler.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 407a332e170497dbb618a2915bba6b794c4a720f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 6b4e87c36c3aa0aaeae1e1bf265902100612db15
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Microsoft Intune’a eklemelisiniz.
 

@@ -1,27 +1,27 @@
 ---
-title: "Windows 10 Team için Windows Intune cihaz kısıtlamaları"
-titlesuffix: 
-description: "Windows 10 Team çalıştıran cihazlar için sağlanan cihaz kısıtlamaları hakkında bilgi edinin."
-keywords: 
+title: Windows 10 Team için Windows Intune cihaz kısıtlamaları
+titlesuffix: ''
+description: Windows 10 Team çalıştıran cihazlar için sağlanan cihaz kısıtlamaları hakkında bilgi edinin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5d1198e8332645297ab0739bb0346c573877f0c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 Team cihaz kısıtlama ayarları
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu makalede, Windows 10 Team çalıştıran cihazlar için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları gösterilir.
 
@@ -34,10 +34,11 @@ Bu makalede, Windows 10 Team çalıştıran cihazlar için yapılandırabileceğ
     - **Düzenleyeni, saati ve konuyu göster (özel toplantılar için konu gizlidir)**
 - **Hoş Geldiniz ekranı arka plan görüntüsü URL’si** - Windows 10 Team cihazlarının **Hoş Geldiniz** ekranında, belirttiğiniz URL’den özel bir arka plan görüntülemek için bu ayarı etkinleştirin.<br>Görüntü PNG biçiminde olmalıdır ve URL **https://** ile başlamalıdır.
 
-## <a name="azure-operational-insights"></a>Azure operasyonel öngörüler
+## <a name="azure-operational-insights"></a>Azure operasyonel içgörüler
 
-- **Azure Operasyonel Öngörüler** - Microsoft Operations Manager’ın bir parçası olan Azure Operasyonel Öngörüler, Windows 10 Team cihazlarından günlük dosyası verilerini toplar, depolar ve analiz eder.
-Azure Operasyonel Öngörüler'e bağlanmak için bir **Çalışma Alanı Kimliği** ve bir **Çalışma Alanı Anahtarı** belirtmeniz gerekir.
+- 
+  **Azure Operasyonel İçgörüler** - Microsoft Operations Manager’ın bir parçası olan Azure Operasyonel İçgörüler Windows 10 Team cihazlarından günlük dosyası verilerini toplar, depolar ve analiz eder.
+Azure Operasyonel İçgörüler'e bağlanmak için bir **Çalışma Alanı Kimliği** ve bir **Çalışma Alanı Anahtarı** belirtmeniz gerekir.
 
 ## <a name="maintenance"></a>Bakım
 

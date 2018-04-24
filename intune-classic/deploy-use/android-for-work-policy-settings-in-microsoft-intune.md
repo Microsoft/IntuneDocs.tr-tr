@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e42d33b4cc69e6b2cc836e2236c508d97c2245fe
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 89c0e09a34a734ccfe704b9a89971544e9a25e86
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android for Work ilke ayarları
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune, [Android for Work cihazlarda](android-for-work.md) yapılandırabileceğiniz bir dizi yerleşik genel ayar sunar.
 

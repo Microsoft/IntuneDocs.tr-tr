@@ -1,25 +1,25 @@
 ---
-title: "Uyumluluk için Jamf Pro’yu Microsoft Intune ile tümleştirme"
-titlesuffix: 
-description: "Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın."
-keywords: 
+title: Uyumluluk için Jamf Pro’yu Microsoft Intune ile tümleştirme
+titlesuffix: ''
+description: Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b040c6aa7001e8ebdd7c05571276428c7ef9bd
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cdeb3a21af2b4cf020d3e5029eeb5b0bc31db062
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
@@ -56,20 +56,20 @@ Intune'u Jamf Pro’ya şu şekilde bağlayabilirsin:
 6. **Uygulama oluştur**’a tıklayın.
 7. Yeni oluşturulan **Uygulama Kimliği**'ni kaydedin, ardından yeni bir Uygulama Anahtarı oluşturmak için **Ayarlar**'ı açın ve **API Erişimi** > **Anahtarlar**'a gidin. **Açıklama**'yı ve **Süresi Dolmadan** ne kadar bekleneceğini girin, sonra da Uygulama Anahtarı'nı kaydedin.
 
-  > [!IMPORTANT]
-  > Uygulama Anahtarı yalnızca bir kez bu işlem sırasında gösterilir. Kolayca alabileceğiniz bir yere kaydettiğinizden emin olun.
+   > [!IMPORTANT]
+   > Uygulama Anahtarı yalnızca bir kez bu işlem sırasında gösterilir. Kolayca alabileceğiniz bir yere kaydettiğinizden emin olun.
 
 8. **Ayarlar**'ı açın, **API Erişimi** > **Gerekli İzinler**'e gidin ve tüm izinleri silin.
 
-  > [!NOTE]
-  > Yeni bir gerekli izni ekleyin. Uygulama yalnızca tek gerekli izni varsa düzgün çalışabilir.
+   > [!NOTE]
+   > Yeni bir gerekli izni ekleyin. Uygulama yalnızca tek gerekli izni varsa düzgün çalışabilir.
 
-9.  **Microsoft Intune API**’yi seçin ve **Seç**’e tıklayın.
+9. **Microsoft Intune API**’yi seçin ve **Seç**’e tıklayın.
 10. **Microsoft Intune cihaz öznitelikleri gönder**’i seçin ve **Seç**’e tıklayın.
 11. Uygulama için gerekli izinleri kaydettikten sonra **İzinleri Ver** düğmesine tıklayın.
 
-  > [!NOTE]
-  > Uygulama anahtarı süresi dolarsa, Microsoft Azure'da yeni bir Uygulama Anahtarı oluşturmalısınız ve ardından Jamf Pro koşullu erişim verileri güncelleştirin. Azure, servis kesintilerini önlemek için hem eski anahtarı hem de yeni anahtarı aktif hale getirmenizi sağlar.
+    > [!NOTE]
+    > Uygulama anahtarı süresi dolarsa, Microsoft Azure'da yeni bir Uygulama Anahtarı oluşturmalısınız ve ardından Jamf Pro koşullu erişim verileri güncelleştirin. Azure, servis kesintilerini önlemek için hem eski anahtarı hem de yeni anahtarı aktif hale getirmenizi sağlar.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Jamf Pro ile tümleştirmek için Intune’u etkinleştirme
 

@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune ile Windows cihazı yönetimini ayarlama"
-description: "Microsoft Intune ile, Windows cihazları için mobil cihaz yönetimini (MDM) etkinleştirin."
-keywords: 
+title: Microsoft Intune ile Windows cihazı yönetimini ayarlama
+description: Microsoft Intune ile, Windows cihazları için mobil cihaz yönetimini (MDM) etkinleştirin.
+keywords: ''
 author: NathBarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44559572a048a0ad8e79d6fdac837f0c71a42646
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fb2d724cc87ffdc506eda8d5ea2330ab9aacd3e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-windows-device-management"></a>Windows cihaz yönetimini ayarlama
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konu, BT yöneticilerinin Windows kaydını kullanıcıları için kolaylaştırmasına yardımcı olmaktadır.  Windows cihazları ek adım olmadan kaydedilebilir ancak kayıt işlemini kullanıcılar için kolay hale getirebilirsiniz.
 
@@ -35,7 +35,7 @@ Windows cihaz kaydını nasıl basit hale getirebileceğinizi iki faktör belirl
 |**Windows 10**|[Otomatik kayıt](#enable-windows-10-automatic-enrollment) |[Kullanıcı kaydı](#enable-windows-enrollment-without-automatic-enrollment)|
 |**Önceki Windows sürümleri**|[Kullanıcı kaydı](#enable-windows-enrollment-without-automatic-enrollment)|[Kullanıcı kaydı](#enable-windows-enrollment-without-automatic-enrollment)|
 
-[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Otomatik kayıt olmadan Windows kaydını etkinleştirme
 Kullanıcıların, Azure AD Premium otomatik kaydı olmadan cihazlarını kaydetmelerine olanak sağlayabilirsiniz. Lisans atadıktan sonra, kullanıcılar kendi iş hesabını kişisel cihazlarına ekledikten veya şirkete ait cihazlarının Azure AD'nize katılmasını sağladıktan sonra kayıt işlemini gerçekleştirebilir. DNS diğer adı (CNAME kayıt türü) oluşturmak, kullanıcıların cihazlarını kaydetmelerini kolaylaştırır. DNS CNAME kaynak kayıtları oluşturursanız, kullanıcılar sunucu adı girmek zorunda kalmadan Intune'a bağlanır ve kaydolur.
@@ -69,5 +69,5 @@ Son kullanıcı kayıt talimatları için bkz. [Windows cihazınızı Intune'a k
 
 Son kullanıcı görevleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](/intune/end-user-educate).
 
-### <a name="see-also"></a>Ayrıca bkz.
+### <a name="see-also"></a>Ayrıca bkz:
 [Microsoft Intune’da cihazları kaydetmenin önkoşulları](prerequisites-for-enrollment.md)

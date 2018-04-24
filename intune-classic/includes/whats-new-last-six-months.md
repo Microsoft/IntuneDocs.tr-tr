@@ -331,6 +331,6 @@ __Xamarin için Intune Uygulama SDK'sı bileşeni artık kayıtsız MAM desteği
 
 __Symantec imzalama sertifikası artık yükleme için imzalanmış Windows Phone 8 Şirket Portalı gerektirmiyor__ Symantec imzalama sertifikasını yüklemek için artık imzalı Windows Phone 8 Şirket Portalı uygulaması kullanılması gerekmiyor. Sertifika tek başına yüklenebilir.
 
-###<a name="deprecations"></a>Kullanım dışı bırakılanlar
+### <a name="deprecations"></a>Kullanım dışı bırakılanlar
 
 __Windows Phone 8 Şirket Portalı Desteği__ Windows Phone 8 Şirket Portalı desteği artık kullanım dışı bırakılacak. Windows Phone 8 ve WinRT platformları için sunulan destek de Ekim 2016'da kullanım dışı bırakıldı. Windows Phone 8 Şirket Portalı için sunulan destek de Ekim 2016'da kullanım dışı bırakıldı.

@@ -1,27 +1,27 @@
 ---
-title: "Intune Wi-Fi ayarlarını yapılandırma"
+title: Intune Wi-Fi ayarlarını yapılandırma
 titleSuffix: Microsoft Intune
-description: "Microsoft Intune’u yönettiğiniz cihazlarda Wi-Fi bağlantılarını yapılandırmak için kullanmayı öğrenin."
-keywords: 
+description: Microsoft Intune’u yönettiğiniz cihazlarda Wi-Fi bağlantılarını yapılandırmak için kullanmayı öğrenin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune’da Wi-Fi ayarlarını yapılandırma
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcılara kablosuz ağ ayarlarını atamak için kullanın. Bir Wi-Fi profili atadığınızda, kullanıcılarınız ağı kendileri yapılandırmak zorunda kalmadan kurumsal Wi-Fi ağınıza erişir.
 
@@ -48,7 +48,7 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
+3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 3. Profiller bölmesinde **Profil oluştur**’u seçin.
 4. **Profil oluştur** bölmesinde, Wi-Fi profili için **Ad** ve **Açıklama** girin.

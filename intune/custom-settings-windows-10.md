@@ -1,27 +1,27 @@
 ---
-title: "Windows 10 çalıştıran cihazlar için Microsoft Intune özel ayarları"
-titlesuffix: 
-description: "Bir Windows 10 özel profilinde yapılandırabileceğiniz özel ayarlar hakkında bilgi edinin."
-keywords: 
+title: Windows 10 çalıştıran cihazlar için Microsoft Intune özel ayarları
+titlesuffix: ''
+description: Bir Windows 10 özel profilinde yapılandırabileceğiniz özel ayarlar hakkında bilgi edinin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bb86d0f80a4d337e0ab63ae7f90d6c3541462d9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c8e0d56c91b710a86949844d2fd455e4183488f5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Windows 10 çalıştıran cihazlar için Microsoft Intune özel cihaz ayarları
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
  Cihazlardaki özellikleri denetlemek için kullanılabilecek OMA-URI (Open Mobile Alliance Uniform Resource Identifier) ayarları dağıtmak üzere Windows 10 ve Windows 10 Mobile için Microsoft Intune **özel** profilini kullanın. Windows 10, örneğin [İlke Yapılandırma Hizmet Sağlayıcısı (İlke CSP’si)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) aracılığıyla pek çok Yapılandırma Hizmeti Sağlayıcı (CSP) ayarını kullanıma sunar.
 Belirli bir ayarı arıyorsanız, [Windows 10 cihaz kısıtlama profilinin](device-restrictions-windows-10.md) Intune’da yerleşik olarak bulunan birçok ayarı içerdiğini ve özel değerler belirlemenize gerek olmadığını aklınızda bulundurun.

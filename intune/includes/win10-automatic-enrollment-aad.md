@@ -11,21 +11,21 @@ Otomatik kayıt, kullanıcıların Windows 10 cihazlarını Intune’a kaydetmes
 
 1. [Azure portalında](https://portal.azure.com) oturum açın ve **Azure Active Directory**’yi seçin.
 
-  ![Azure portalının ekran görüntüsü](../media/auto-enroll-azure-main.png)
+   ![Azure portalının ekran görüntüsü](../media/auto-enroll-azure-main.png)
 
 2. **Mobility (MDM ve MAM)** seçeneğini belirleyin.
 
-  ![Azure portalının ekran görüntüsü](../media/auto-enroll-mdm.png)
+   ![Azure portalının ekran görüntüsü](../media/auto-enroll-mdm.png)
 
 3. **Microsoft Intune**'u seçin.
 
-  ![Azure portalının ekran görüntüsü](../media/auto-enroll-intune.png)
+   ![Azure portalının ekran görüntüsü](../media/auto-enroll-intune.png)
 
 4. **MDM Kullanıcı kapsamını** yapılandırın. Cihazları Microsoft Intune tarafından yönetilecek kullanıcıları belirtin. Bu Windows 10 cihazlar, Microsoft Intune ile yönetim için otomatik olarak kaydedilebilir.
 
-  - **Hiçbiri** - MDM otomatik kayıt devre dışı
-  - **Bazıları** - Windows 10 cihazlarını otomatik olarak kaydedebilecek **Grupları** seçin
-  - **Tümü** - Tüm kullanıcılar Windows 10 cihazlarını otomatik olarak kaydedebilir
+   - **Hiçbiri** - MDM otomatik kayıt devre dışı
+   - **Bazıları** - Windows 10 cihazlarını otomatik olarak kaydedebilecek **Grupları** seçin
+   - **Tümü** - Tüm kullanıcılar Windows 10 cihazlarını otomatik olarak kaydedebilir
 
       > [!IMPORTANT]
       > Bir grup için hem **MAM kullanıcı kapsamı** hem de MDM kaydı (**MDM kullanıcı kapsamı**) etkinse yalnızca MAM etkinleştirilir. Gruptaki kullanıcılar kişisel cihazlarını iş yerine eklediklerinde yalnızca MAM eklenir. Cihazlar otomatik olarak MDM’ye kaydedilmez.

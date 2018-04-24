@@ -1,27 +1,27 @@
 ---
-title: "Intune ile Android cihazınızı telekomünikasyon gider yönetimine kaydetme"
-description: "Bir Android cihazının telekom gider yönetimine nasıl kaydedileceğini öğrenin."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Intune ile Android cihazınızı telekomünikasyon gider yönetimine kaydetme
+description: Bir Android cihazının telekom gider yönetimine nasıl kaydedileceğini öğrenin.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 68f760c84b1394245494809de094e603e388e59b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Android cihazınızı telekomünikasyon gider yönetimine kaydetme
 
@@ -39,11 +39,11 @@ Devam etmek için ekranın sağ üst köşesindeki __ileri__ okuna dokunun. Şir
 
 1. __Microsoft Hesabı ile kaydol__’u seçin.
 
-  ![Bir Microsoft Office 365 hesabı ve Intune aboneliğiniz olduğunda ekranın üst kısmında telefon numarası alanı ve alt kısmında "Microsoft hesabı ile kaydol" seçenekleri sunan Datalert uygulamasının Ayarlar ekranının görüntüsü.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+   ![Bir Microsoft Office 365 hesabı ve Intune aboneliğiniz olduğunda ekranın üst kısmında telefon numarası alanı ve alt kısmında "Microsoft hesabı ile kaydol" seçenekleri sunan Datalert uygulamasının Ayarlar ekranının görüntüsü.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. Kullanılabilir hesaplardan iş veya okul hesabınızı seçin. Hesabınız listelenmemişse **Hesap ekle** düğmesini kullanarak oturum açabilirsiniz.
 
-  ![Örnek bir hesap ve Hesap ekle düğmesini gösteren "Hesap seç" ekranının ekran görüntüsü.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+   ![Örnek bir hesap ve Hesap ekle düğmesini gösteren "Hesap seç" ekranının ekran görüntüsü.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 
 3. Datalert kurulumu birkaç dakika çalışıp tamamlanmalıdır. Tamamlandığında __Son__’a dokunun.
 
@@ -51,15 +51,15 @@ Devam etmek için ekranın sağ üst köşesindeki __ileri__ okuna dokunun. Şir
 
 1. Cihazınızın telefon numarasını belirtin.
 
-  ![Datalert uygulamasında telefon numarası istenen ekran görüntüsü.](./media/and-enroll-13-tem-datalert-phone-number.png)
+   ![Datalert uygulamasında telefon numarası istenen ekran görüntüsü.](./media/and-enroll-13-tem-datalert-phone-number.png)
 
 2. Ardından SMS iletisi aracılığıyla doğrulama kodu alırsınız. Kodu sağlayın ve __Tamam__’a dokunun.
 
-  ![Datalert uygulamasında SMS doğrulama kodu istenen ekran görüntüsü.](./media/and-enroll-14-tem-datalert-sms.png)
+   ![Datalert uygulamasında SMS doğrulama kodu istenen ekran görüntüsü.](./media/and-enroll-14-tem-datalert-sms.png)
 
 3. Doğrulama kodunu sağladıktan sonra Datalert kurulumu tamamlanır. __Son__’a dokunmanızla birlikte verilerinizi Datalert uygulamasından izlemeniz mümkün olacaktır.
 
-  ![Datalert uygulamasının bugünün veri kullanımını izleme görüntüsü.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
+   ![Datalert uygulamasının bugünün veri kullanımını izleme görüntüsü.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
 Kaydolduktan sonra, veri kullanımınızı Datalert uygulamasında görmeye başlarsınız.
 

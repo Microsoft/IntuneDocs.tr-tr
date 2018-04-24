@@ -15,58 +15,58 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9baa0325a90e152ffd6cf6a31cdd0a458588758a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: bdc248689f586a44f4c84568b9d9f9c1fa3e059a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>Intune konsol görünümlerini yönetici rollerine göre özelleştirme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Yöneticilerinizin yalnızca rolleri için görmeleri gereken öğeleri görmelerini sağlamak için Microsoft Intune yönetim konsolu görünümünü filtreleyebilirsiniz. Örneğin, yalnızca yönetici konsolu kullanıcılarının kötü amaçlı yazılım tanımlarını güncelleştirebilmesine veya cihazlardaki şifreyi sıfırlamasına izin verebilirsiniz. Bunu, belirli kullanıcılara atadığınız, önceden ayarlanmış **belirtimler** kullanılarak yaparsınız. Bu kullanıcılar yönetim konsoluna eriştiklerinde, yalnızca belirtimlerine özgü öğeleri görebilir.
 
 ## <a name="to-create-a-custom-view"></a>Özel bir görünüm oluşturmak için
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetim** &gt; **Hizmet Yöneticileri**’ni seçin.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com) **Yönetim** &gt; **Hizmet Yöneticileri**’ni seçin.
 
-2.  Hizmet yöneticileri listesinden, belirtimini değiştirmek istediğiniz kullanıcıyı seçin ve sonra da **Erişimi Yönet**’i seçin.
+2. Hizmet yöneticileri listesinden, belirtimini değiştirmek istediğiniz kullanıcıyı seçin ve sonra da **Erişimi Yönet**’i seçin.
 
-3.  **Erişimi Yönet** iletişim kutusunda, seçilen kullanıcıya vermek istediğiniz erişim düzeyini seçin. Şunlar arasından seçim yapabilirsiniz:
+3. **Erişimi Yönet** iletişim kutusunda, seçilen kullanıcıya vermek istediğiniz erişim düzeyini seçin. Şunlar arasından seçim yapabilirsiniz:
 
-    -   **Tam erişim**
-    -   **Salt okunur erişim**
-    -   **Yardım Masası - Gruplar düğümü**
+   -   **Tam erişim**
+   -   **Salt okunur erişim**
+   -   **Yardım Masası - Gruplar düğümü**
 
-    Tam erişim ve salt okunur erişimin anlamı kolayca anlaşılır. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
+   Tam erişim ve salt okunur erişimin anlamı kolayca anlaşılır. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
-    **Yardım Masası - Gruplar Düğümü**, yöneticinin neler görebileceğini ve yapabileceğini şu şekilde kısıtlar:
+   **Yardım Masası - Gruplar Düğümü**, yöneticinin neler görebileceğini ve yapabileceğini şu şekilde kısıtlar:
 
-    -   Kullanıcı ve cihazların listelerini görme. Yönetici, görünümü değiştirmek için filtreleri kullanamaz. Bununla birlikte, yöneticinin görebileceklerini değiştirmek için grup filtresini kullanabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+   -   Kullanıcı ve cihazların listelerini görme. Yönetici, görünümü değiştirmek için filtreleri kullanamaz. Bununla birlikte, yöneticinin görebileceklerini değiştirmek için grup filtresini kullanabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune'la kullanıcı ve cihazları yönetmek için grupları kullanma](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
-    -   Kullanıcı ve cihaz listesini yazdırma.
+   -   Kullanıcı ve cihaz listesini yazdırma.
 
-    -   Kullanıcı ve cihaz listesini dışarı aktarma.
+   -   Kullanıcı ve cihaz listesini dışarı aktarma.
 
-    -   Kullanıcı veya cihazın özelliklerini görüntüleme.
+   -   Kullanıcı veya cihazın özelliklerini görüntüleme.
 
-    -   Aşağıdaki uzak görevleri gerçekleştirin:
+   -   Aşağıdaki uzak görevleri gerçekleştirin:
 
-        -   Kötü amaçlı yazılım taraması çalıştırma
+       -   Kötü amaçlı yazılım taraması çalıştırma
 
-        -   Hızlı bir kötü amaçlı yazılım taraması çalıştırma
+       -   Hızlı bir kötü amaçlı yazılım taraması çalıştırma
 
-        -   Bilgisayarı yeniden başlatma
+       -   Bilgisayarı yeniden başlatma
 
-        -   Kötü amaçlı yazılım tanımlarını güncelleştirme
+       -   Kötü amaçlı yazılım tanımlarını güncelleştirme
 
-        -   İlkeleri yenileme
+       -   İlkeleri yenileme
 
-        -   Envanter yenileme
+       -   Envanter yenileme
 
-        -   Cihazı uzaktan kilitleme
+       -   Cihazı uzaktan kilitleme
 
-        -   Geçiş kodu sıfırlama
+       -   Geçiş kodu sıfırlama
 
 Yapılandırdığınız yöneticiye, Intune yönetim konsolunu bir sonraki açısında kendisine onun için belirttiğiniz erişim düzeyi verilir.

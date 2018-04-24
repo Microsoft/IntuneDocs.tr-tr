@@ -1,25 +1,25 @@
 ---
-title: "REST istemcisi ile Veri Ambarı API’sinden veri alma"
+title: REST istemcisi ile Veri Ambarı API’sinden veri alma
 titlesuffix: Microsoft Intune
-description: "Bir RESTful API’si kullanarak Intune Veri Ambarı’ndan veri alın."
-keywords: 
+description: Bir RESTful API’si kullanarak Intune Veri Ambarı’ndan veri alın.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22bfcc4e2947cba54509409132da3687d51a472d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ba065b53560a4e1d3f1fffbe6cea56e85da0f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -45,7 +45,7 @@ Azure’da yerel bir uygulama oluşturun. Bu yerel uygulama, istemci uygulamadı
     3.  **Oturum açma URL’si** için bir URL girin. Oturum açma URL’si belirli bir senaryoya bağlıdır ancak Postman kullanmayı planlıyorsanız `https://www.getpostman.com/oauth2/callback` yazın. Azure AD’de kimlik doğrularken istemci kimlik doğrulaması adımı için geri aramayı kullanacaksınız.
 4.  **Oluştur**’u seçin.
 
-     ![Intune Veri Ambarı API’si](media\reports-get_rest_data_client_overview.png)
+     ![Intune Veri Ambarı API’si](./media/reports-get_rest_data_client_overview.png)
 
 5. Bu uygulamanın **Uygulama kimliğini** not edin. Bu kimliği sonraki bölümde kullanacaksınız.
 
@@ -62,7 +62,7 @@ Artık Azure’da tanımlanan bir uygulamanız var. Yerel uygulamadan Microsoft 
 7.  **Seç**’e tıklayın.
 8.  **Microsoft Intune’dan veri ambarı bilgileri almak** için **Temsilcili İzinler**’e tıklayın.
 
-    ![Erişimi etkinleştirme - Microsot Intune API'si](media\reports-get_rest_data_client_access.png)
+    ![Erişimi etkinleştirme - Microsot Intune API'si](./media/reports-get_rest_data_client_access.png)
 
 9.  **Seç**’e tıklayın.
 10.  **Bitti**’yi seçin.
@@ -132,7 +132,7 @@ Postman için yeni bir erişim belirteci almak üzere Azure AD yetkilendirme URL
 
 12. **Belirteç İste**’ye tıklayın.
 
-    ![Belirteç için bilgiler](media\reports-postman_getnewtoken.png)
+    ![Belirteç için bilgiler](./media/reports-postman_getnewtoken.png)
 
 13. Active AD yetkilendirme sayfasında kimlik bilgilerinizi girin. Postman’deki belirteçler listesinde artık `Bearer` adlı belirteç de yer alır.
 14. **Belirteç Kullan**’a tıklayın. Üst bilgiler listesi, yeni Yetkilendirme anahtar değeri ve `Bearer <your-authorization-token>` değerini barındırır.
@@ -142,7 +142,7 @@ Postman için yeni bir erişim belirteci almak üzere Azure AD yetkilendirme URL
 1.  **Gönder**’i seçin.
 2.  Dönüş verileri Postman yanıt gövdesi içinde görüntülenir.
 
-    ![Postman 200OK](media\reports-postman_200OK.png)
+    ![Postman 200OK](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Intune Veri Ambarı API’sinden veri almak için bir REST istemcisi (C#) oluşturma
 
@@ -151,45 +151,45 @@ Aşağıdaki örnek, bir basit REST istemcisi içerir. Kod, .Net kitaplığında
 > [!Note]  
 > Aşağıdaki kod [örneğine GitHub’dan](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs) ulaşabilirsiniz. Örnekteki son değişiklikler ve güncelleştirmeler için GitHub deposuna başvurun.
 
-1.  **Microsoft Visual Studio**’yu açın.
-2.  **Dosya** > **Yeni Proje**’yi seçin. **Visual C#**’yi genişletin ve **Konsol Uygulaması (.Net Framework)** öğesini seçin.
-3.  Projeyi ` IntuneDataWarehouseSamples` olarak adlandırın, projeyi kaydetmek istediğiniz konuma göz atın ve **Tamam**’a tıklayın.
-4.  Çözüm Gezgini’nde çözümün adına sağ tıklayın ve daha sonra **Çözüm için NuGet Paketlerini Yönetme**’ye tıklayın. **Gözat**’a tıklayın, daha sonra arama kutusuna `Microsoft.IdentityModel.Clients.ActiveDirectory` yazın.
+1. **Microsoft Visual Studio**’yu açın.
+2. **Dosya** > **Yeni Proje**’yi seçin. **Visual C#**’yi genişletin ve **Konsol Uygulaması (.Net Framework)** öğesini seçin.
+3. Projeyi ` IntuneDataWarehouseSamples` olarak adlandırın, projeyi kaydetmek istediğiniz konuma göz atın ve **Tamam**’a tıklayın.
+4. Çözüm Gezgini’nde çözümün adına sağ tıklayın ve daha sonra **Çözüm için NuGet Paketlerini Yönetme**’ye tıklayın. **Gözat**’a tıklayın, daha sonra arama kutusuna `Microsoft.IdentityModel.Clients.ActiveDirectory` yazın.
 5. Paketi seçin, Çözümünüz için Paketleri Yönetme altında **IntuneDataWarehouseSamples**’a tıklayın ve daha sonra **Yükle**’yi seçin.
 6. NuGet paket lisansını kabul etmek için **Kabul Ediyorum**’a tıklayın.
 7. Çözüm Gezgini’nde `Program.cs` öğesini açın.
 
-    ![Visual Studio’da Proje](media\reports-get_rest_data_in.png)
+    ![Visual Studio’da Proje](./media/reports-get_rest_data_in.png)
 
-8.  Program.cs’deki kodu aşağıdaki kodla değiştirin:  
-    ```csharp
-namespace IntuneDataWarehouseSamples
-{
-    using System;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+8. Program.cs’deki kodu aşağıdaki kodla değiştirin:  
+   ```csharp
+   namespace IntuneDataWarehouseSamples
+   {
+   using System;
+   using System.Net.Http;
+   using System.Net.Http.Headers;
+   using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-    class Program
-    {
-     static void Main(string[] args)
-  {
+   class Program
+   {
+    static void Main(string[] args)
+   {
    /**
-    * TODO: Replace the below values with your own.
-    * emailAddress - The email address of the user that you will authenticate as.
-    *
-    * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not
-    *    recommend storing passwords in plaintext.
-    *
-    * applicationId - The application ID of the native app that was created in AAD.
-    *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
-    *      the Azure portal.
-    *
-    * collectionName - The name of the warehouse entity collection you would like to
-    *      access.
-    */
+   * TODO: Replace the below values with your own.
+   * emailAddress - The email address of the user that you will authenticate as.
+   *
+   * password  - The password for the above email address.
+   *    This is inline only for simplicity in this sample. We do not
+   *    recommend storing passwords in plaintext.
+   *
+   * applicationId - The application ID of the native app that was created in AAD.
+   *
+   * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
+   *      the Azure portal.
+   *
+   * collectionName - The name of the warehouse entity collection you would like to
+   *      access.
+   */
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
@@ -198,9 +198,9 @@ namespace IntuneDataWarehouseSamples
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");
    AuthenticationResult authResult = adalContext.AcquireTokenAsync(
-    resource: "https://api.manage.microsoft.com/",
-    clientId: applicationId,
-    userCredential: new UserPasswordCredential(emailAddress, password)).Result;
+   resource: "https://api.manage.microsoft.com/",
+   clientId: applicationId,
+   userCredential: new UserPasswordCredential(emailAddress, password)).Result;
 
    var httpClient = new HttpClient();
    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResult.AccessToken);
@@ -212,16 +212,16 @@ namespace IntuneDataWarehouseSamples
 
    Console.Write(response.Content.ReadAsStringAsync().Result);
    Console.ReadKey();
-  }
-    }
-    ```
+   }
+   }
+   ```
 
-9.  Örnek koddaki `TODO` öğelerini değiştirin.
-10.  Intune.DataWarehouseAPIClient istemcisini derlemek ve Hata Ayıklama modunda yürütmek için **Ctrl + F5**’e basın.
+9. Örnek koddaki `TODO` öğelerini değiştirin.
+10. Intune.DataWarehouseAPIClient istemcisini derlemek ve Hata Ayıklama modunda yürütmek için **Ctrl + F5**’e basın.
 
-    ![JSON biçiminde alınan tarih varlığı.](media\reports-get_rest_data_output.png)
+    ![JSON biçiminde alınan tarih varlığı.](./media/reports-get_rest_data_output.png)
 
-11.  Konsol çıkışını gözden geçirin. Çıkış, Intune kiracınızdaki **tarihler** varlığından çekilen verileri JSON biçiminde barındırır.
+11. Konsol çıkışını gözden geçirin. Çıkış, Intune kiracınızdaki **tarihler** varlığından çekilen verileri JSON biçiminde barındırır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

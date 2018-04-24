@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Azure portalında uygulama koruma ilkelerini yapılandırmaya hazırlanma
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Bu konuda, Azure portalında uygulama koruma ilkeleri oluşturmadan **önce** tamamlamanız gereken önkoşullar ve adımlar açıklanmaktadır.
 
@@ -74,18 +74,18 @@ Desteklenen Microsoft uygulamalarının tam listesini görmek için Microsoft In
 
 ## <a name="prerequisites"></a>Önkoşullar
 
--   **Microsoft Intune Aboneliği**. Kullanıcıların, uygulama koruma ilkeleri olan uygulamaları alabilmesi için Intune lisanslarına sahip olmaları gerekir.
-Şu anda cihazlarınızı yönetmek için Intune kullanıyorsanız Intune aboneliğiniz zaten vardır. Ayrıca, bir Enterprise Mobility Suite (EMS) lisansı satın aldıysanız da Intune aboneliğiniz vardır. MAM özelliklerini kullanıma almak için Intune’u deniyorsanız [Microsoft Intune sayfasında](https://www.microsoft.com/server-cloud/products/microsoft-intune/) bir deneme hesabı alabilirsiniz.
+- **Microsoft Intune Aboneliği**. Kullanıcıların, uygulama koruma ilkeleri olan uygulamaları alabilmesi için Intune lisanslarına sahip olmaları gerekir.
+  Şu anda cihazlarınızı yönetmek için Intune kullanıyorsanız Intune aboneliğiniz zaten vardır. Ayrıca, bir Enterprise Mobility Suite (EMS) lisansı satın aldıysanız da Intune aboneliğiniz vardır. MAM özelliklerini kullanıma almak için Intune’u deniyorsanız [Microsoft Intune sayfasında](https://www.microsoft.com/server-cloud/products/microsoft-intune/) bir deneme hesabı alabilirsiniz.
 
-    Intune aboneliğiniz olduğunu doğrulamak için **Faturalama** sayfasına gidin.  Aboneliğiniz varsa, Intune seçeneğini aboneliklerde **Etkin** olarak görmeniz gerekir.
+  Intune aboneliğiniz olduğunu doğrulamak için **Faturalama** sayfasına gidin.  Aboneliğiniz varsa, Intune seçeneğini aboneliklerde **Etkin** olarak görmeniz gerekir.
 
--   Aşağıdakiler için gereken **bir Office 365 aboneliği**:
+- Aşağıdakiler için gereken **bir Office 365 aboneliği**:
 
   - Birden çok kimliği destekleyen uygulamalara uygulama koruma ilkeleri uygulamak için.
 
   - SharePoint Online ve Exchange Online iş hesaplarını oluşturmak için. Exchange şirket içi ve SharePoint şirket içi desteklenmez.
 
--   **Modern kimlik doğrulaması için Skype Kurumsal Çevrimiçi Sürüm**. Daha fazla bilgi için bkz. [Modern kimlik doğrulamayı etkinleştirme](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+- **Modern kimlik doğrulaması için Skype Kurumsal Çevrimiçi Sürüm**. Daha fazla bilgi için bkz. [Modern kimlik doğrulamayı etkinleştirme](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Kullanıcıları oluşturmak için Azure Active Directory (Azure AD). Azure AD, uygulamayı açan ve iş kimlik bilgilerini giren kullanıcıların kimliğini doğrular.
