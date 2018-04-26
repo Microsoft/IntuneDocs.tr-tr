@@ -1,25 +1,25 @@
 ---
-title: "Uygulama koruma ilkesi günlüklerini gözden geçirme"
+title: Uygulama koruma ilkesi günlüklerini gözden geçirme
 titlesuffix: Microsoft Intune
-description: "Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin."
-keywords: 
-author: erikre
-ms.author: erikre
+description: Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin.
+keywords: ''
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 11/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e3a3d0686eca435ff8caf914afecef08c73318c3
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 

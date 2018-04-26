@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 9464b73acc43b9625560156617359c374d7100fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 787501892d0955e3396bc8f37e5da8ba0d312c74
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-about-the-vpn-settings-in-intune"></a>Intune'daki VPN ayarları hakkındaki bilgileri okuyun
 
@@ -93,6 +93,7 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
 ## <a name="apps-and-traffic-rules"></a>Uygulamalar ve Trafik Kuralları
 
 **VPN bağlantısını bu uygulamalarla kısıtlama**: Yalnızca belirli uygulamaların VPN bağlantısını kullanmasını istiyorsanız bu ayarı etkinleştirin.
+
 **İlişkili Uygulamalar**: VPN bağlantısını otomatik olarak kullanan uygulamaların listesini girin. Uygulamanın türü uygulama tanımlayıcısını belirler. Bir evrensel uygulama için paket aile adını girin. Bir masaüstü uygulaması için söz konusu uygulamanın dosya yolunu girin.
 
 >[!IMPORTANT]

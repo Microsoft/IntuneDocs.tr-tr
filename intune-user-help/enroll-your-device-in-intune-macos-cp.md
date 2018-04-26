@@ -17,18 +17,16 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
 Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişmek; işinizi yapmanız kolaylaştırır. Kuruluşunuz, [bu kaynaklara erişimi yönetmek](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md) için Intune kullanıyor ve Intune, macOS için Şirket Portalı uygulamasını indirmenizi gerektiriyor. Bu yönergeler, OS X El Capitan 10.11+ sürümü macOS cihazlar için geçerlidir.
 
-> [!NOTE]
-> Öncekii macOS sürümlerini çalıştıran macOS cihazları kaydetme yönergelerini [burada](enroll-your-device-in-intune-macos-legacy.md) bulabilirsiniz.
 
 1. Cihazınızın __Dock__ bölümünde __Safari__'yi bulun, yeni bir pencere açın ve ardından [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) ziyaret edin.
 

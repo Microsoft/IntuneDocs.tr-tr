@@ -3,8 +3,8 @@ title: Microsoft Intune ile Symantec PKCS sertifikaları verme
 titlesuffix: ''
 description: Symantec PKI Manager Web Hizmeti’nden Intune tarafından yönetilen cihazlara PKCS Sertifikaları vermek için Intune Sertifika Bağlayıcısı’nı kurun ve yapılandırın.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff642c7d8d836979fadebc799e2e7373cd299f4e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d9c9027964648ad83c552f7dd7067598cacf560e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Symantec PKI Manager Web Hizmeti için Intune Sertifika Bağlayıcı'yı Ayarlama
 

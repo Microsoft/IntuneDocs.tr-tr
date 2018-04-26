@@ -3,7 +3,7 @@ title: EMS ile KCG için teknoloji kararları
 description: KCG'yi etkinleştirmeye ve şirket verilerini Microsoft Enterprise Mobility + Security ile korumaya yönelik önemli teknoloji kararları.
 keywords: ''
 author: dougeby
-ms.author: pfetty
+ms.author: dougeby
 manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7d04abfe7886e4ef42cf168dbb495e987fdba425
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>KCG'yi Microsoft Enterprise Mobility + Security (EMS) ile etkinleştirmeye yönelik teknoloji kararları
 
@@ -78,6 +78,6 @@ Yine de, birçok kuruluşu endişelendiren belirli riskler vardır.  Aşağıdak
 |Verileri yanlışlıkla paylaşma veya güvenli olmayan konumlara kaydetme | Yazdırmayı devre dışı bırak | yok|
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Artık kuruluşunuzda KCG'yi etkinleştirirken cihaz yönetimine, uygulama yönetimine veya her ikisine de odaklanma konusunda karar vermenizin zamanı geldi. Nasıl hayata geçireceğiniz konusunda kararı siz verirsiniz ve bu arada da Azure AD'de sağlanan kimlik ve güvenlik özelliklerinin yine sağlanacağından emin olabilirsiniz.
+Artık kuruluşunuzda KCG'yi etkinleştirirken cihaz yönetimine, uygulama yönetimine veya her ikisine de odaklanma konusunda karar vermenizin zamanı geldi. Nasıl hayata geçireceğiniz konusunda kararı siz verirsiniz ve bu arada da Azure AD'de sağlanan kimlik ve güvenlik özelliklerinin yine sağlanacağından emin olabilirsiniz.  
 
 Planlamanızda bir sonraki düzeyi belirlemek için Intune [Planlama Kılavuzu](planning-guide.md)'nu kullanın.
