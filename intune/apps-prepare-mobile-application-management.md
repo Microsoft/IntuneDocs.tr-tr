@@ -1,29 +1,29 @@
 ---
-title: "İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama"
+title: İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 titlesuffix: Microsoft Intune
-description: "Özel iş kolu uygulamalarınızın Microsoft Intune'da uygulama koruma ilkelerini kullanmasını sağlamak için Uygulama sarmalama aracını ve Uygulama SDK'sını kullanın."
-keywords: 
+description: Özel iş kolu uygulamalarınızın Microsoft Intune'da uygulama koruma ilkelerini kullanmasını sağlamak için Uygulama sarmalama aracını ve Uygulama SDK'sını kullanın.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune Uygulaması Sarmalama Aracı’nı veya Intune Uygulama SDK’sını kullanarak uygulamalarınızın uygulama koruma ilkeleri kullanmasını sağlayabilirsiniz. Bu iki yöntem ve ne zaman kullanılacakları hakkında bilgi edinmek için bu bilgileri kullanın.
 
@@ -70,8 +70,8 @@ SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](app-sdk.md). S
 
 |**Intune Uygulama SDK'sı** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Evet – [Intune Uygulaması SDK Xamarin Bileşenini](app-sdk-xamarin.md) kullan.|Evet – [Intune Uygulaması SDK Cordova Eklentisini](app-sdk-cordova.md) kullan.|
-|**Android**| Evet – [Intune Uygulaması SDK Xamarin Bileşenini](app-sdk-xamarin.md) kullan.|Evet – [Intune Uygulaması SDK Cordova Eklentisini](app-sdk-cordova.md) kullan.|
+|**iOS**|Evet – [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Evet – [Intune Uygulaması SDK Cordova Eklentisini](app-sdk-cordova.md) kullan.|
+|**Android**| Evet - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Evet – [Intune Uygulaması SDK Cordova Eklentisini](app-sdk-cordova.md) kullan.|
 
 ## <a name="feature-comparison"></a>Özellik karşılaştırması
 Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğiniz ayarlar listelenmektedir.
@@ -79,30 +79,30 @@ Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğini
 > [!NOTE]
 > Uygulama Sarmalama Aracı, tek başına Intune veya Configuration Manager ile Intune ile kullanılabilir.
 
-|Özellik|Uygulama SDK'sı|Uygulama Sarmalama Aracı|
-|-----------|---------------------|-----------|
-|Web içeriğini kurumsal olarak yönetilen bir tarayıcıda görüntülemek üzere kısıtlayın|X|X|
-|Android, iTunes veya iCloud yedeklemelerini engelle|X|X|
-|Uygulamanın diğer uygulamalara veri aktarmasına izin ver|X|X|
-|Uygulamanın diğer uygulamalardan veri almasına izin ver|X|X|
-|Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla|X|X|
-|Erişim için basit PIN gerektir|X|X|
-|Intune PIN ile yerleşik uygulama PIN kodunu değiştir|X||
-|PIN sıfırlanmadan önceki deneme sayısını belirtin|X|X|
-|PIN yerine parmak izine izin ver |X|X|
-|Erişim için kurumsal kimlik bilgileri gerektir|X|X|
-|Yönetilen cihazların, jailbreak uygulanmış veya kökü belirtilmiş cihazlarda çalışmasını engelle|X|X|
-|Uygulama verilerini şifreleme|X|X|
-|Belirtilen sayıda dakika sonrasında erişim gereksinimlerini yeniden denetle|X|X|
-|Çevrimdışı kullanım süresini belirtin|X|X|
-|Ekran yakalamayı engelle (yalnızca Android)|X|X|
-|Cihaz kaydı olmadan MAM desteği|X|X|
-|Tam Temizleme|X|X|
-|Seçmeli Silme <br></br>**Not:** iOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
-|“Farklı Kaydet”i önleme |X||
-|Hedeflenen Uygulama Yapılandırması |X||
-|Çoklu Kimlik Desteği|X||
-|Özelleştirilebilir Stil |X|||
+|                                                         Özellik                                                          | Uygulama SDK'sı | Uygulama Sarmalama Aracı |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              Web içeriğini kurumsal olarak yönetilen bir tarayıcıda görüntülemek üzere kısıtlayın                              |    X    |         X         |
+|                                        Android, iTunes veya iCloud yedeklemelerini engelle                                        |    X    |         X         |
+|                                         Uygulamanın diğer uygulamalara veri aktarmasına izin ver                                         |    X    |         X         |
+|                                        Uygulamanın diğer uygulamalardan veri almasına izin ver                                         |    X    |         X         |
+|                                      Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla                                       |    X    |         X         |
+|                                              Erişim için basit PIN gerektir                                               |    X    |         X         |
+|                                         Intune PIN ile yerleşik uygulama PIN kodunu değiştir                                         |    X    |                   |
+|                                     PIN sıfırlanmadan önceki deneme sayısını belirtin                                      |    X    |         X         |
+|                                             PIN yerine parmak izine izin ver                                             |    X    |         X         |
+|                                         Erişim için kurumsal kimlik bilgileri gerektir                                         |    X    |         X         |
+|                             Yönetilen cihazların, jailbreak uygulanmış veya kökü belirtilmiş cihazlarda çalışmasını engelle                              |    X    |         X         |
+|                                                     Uygulama verilerini şifreleme                                                     |    X    |         X         |
+|                           Belirtilen sayıda dakika sonrasında erişim gereksinimlerini yeniden denetle                            |    X    |         X         |
+|                                             Çevrimdışı kullanım süresini belirtin                                             |    X    |         X         |
+|                                           Ekran yakalamayı engelle (yalnızca Android)                                            |    X    |         X         |
+|                                        Cihaz kaydı olmadan MAM desteği                                         |    X    |         X         |
+|                                                        Tam Temizleme                                                         |    X    |         X         |
+| Seçmeli Silme <br></br><strong>Not:</strong> iOS için yönetim profili kaldırıldığında uygulama da kaldırılır. |    X    |                   |
+|                                                    “Farklı Kaydet”i önleme                                                     |    X    |                   |
+|                                            Hedeflenen Uygulama Yapılandırması                                            |    X    |                   |
+|                                                Çoklu Kimlik Desteği                                                |    X    |                   |
+|                                                    Özelleştirilebilir Stil                                                    |    X    |                   |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

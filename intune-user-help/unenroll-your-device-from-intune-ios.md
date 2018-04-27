@@ -1,56 +1,74 @@
 ---
-title: "iOS cihazınızın Intune kaydını silme | Microsoft Docs"
-description: "iOS cihazının Intune kaydını nasıl silebileceğiniz açıklanır."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS cihazınızı Intune’dan kaldırma | Microsoft Docs
+description: iOS cihazını Intune’dan nasıl kaldıracağınız açıklanır
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 95258e2b2ef912b0d9c9549306559c6f91099642
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="unenroll-your-ios-device-from-intune"></a>iOS cihazınızın Intune kaydını silme
+# <a name="remove-your-ios-device-from-intune"></a>iOS cihazınızı Intune’dan kaldırma
 
-iOS cihazınızın Intune kaydını sildiğinizde, cihazınız artık şirket kaynaklarına erişemez ve Intune tarafından yönetilmez.
+iOS cihazınızı Intune’dan kaldırdığınızda, cihazınız artık şirket kaynaklarına erişemez ve Intune tarafından yönetilmez.
 
-Cihazınızın Intune kaydını silmek için aşağıdaki adımları kullanın veya bu videoyu izleyin:
 
-> [!VIDEO https://www.youtube.com/embed/6UFtBrBWUUI]
+## <a name="removing-the-device-from-my-devices"></a>Cihazı Cihazlarım’dan kaldırma
 
-1.  Şirket Portalı uygulamasındaki **Cihazlarım** bölümünden kaydını kaldırmak istediğiniz cihazı seçin.
+Cihazınızı Intune’dan kaldırmak için aşağıdaki adımları kullanın veya bu videoyu izleyin:
 
-2.  **Kaldır** > **Kaldır**’a dokunun.
 
-Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
+1.  Şirket Portalı uygulamasında **Cihazlar**’a dokunun ve kaydını kaldırmak istediğiniz cihazı seçin. Yalnızca bir cihazınız varsa **Cihazlar**’a dokunduğunuzda doğrudan cihaz ayrıntıları ekranına gidersiniz.
 
--   Cihazınız artık Şirket Portalı’nda gösterilmez.
+2.  **YENİDEN ADLANDIR**’ın yanındaki üç nokta işaretine ve **Cihaz Kaldır** > **Kaldır** seçeneklerine dokunun.  
 
--   Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
+    |![Şirket Portalı uygulaması Cihazlar ekranının kullanıcı Kaldır’a tıkladıktan sonra çıkan seçeneklerini gösteren ekran görüntüsü. “Cihazı Kaldır” düğmesi, “Fabrika Sıfırlaması” düğmesi ve “İptal Et” düğmesini gösterir.](/intune-user-help/media/cp_ios_unenroll_after_1804_001.png)|
 
--   Cihazı eklediğinizde değiştirilen tüm ayarlar (örneğin, kamerayı devre dışı bırakma veya belirli bir parola uzunluğu gerekliliği) artık geçerliliğini kaybeder.
+    |![Şirket Portalı uygulaması Cihazlar ekranının kullanıcı Cihaz Kaldır düğmesine tıkladıktan sonra çıkan seçenekleri gösteren ekran görüntüsü. Kırmızı renkle vurgulanmış “Kaldır” düğmesi ve mavi renkle vurgulanmış “Daha Fazla Bilgi” ve “İptal Et” düğmelerini gösterir.](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
--   Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
 
--   Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
+  Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 
--   Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
+  -   Cihazınız artık Şirket Portalı’nda gösterilmez.
 
--   Şirket e-posta profilleri cihazdan kaldırılır.
+  -   Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
--   Yalnızca e-posta için yapılandırılan cihazlar artık Şirket Portalı uygulamasında veya web sitesinde gösterilmez.
+  -   Cihazı eklediğinizde değiştirilen tüm ayarlar (örneğin, kamerayı devre dışı bırakma veya belirli bir parola uzunluğu gerekliliği) artık geçerliliğini kaybeder.
+
+  -   Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
+
+  -   Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
+
+  -   Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
+
+  -   Şirket e-posta profilleri cihazdan kaldırılır.
+
+  -   Yalnızca e-posta için yapılandırılan cihazlar artık Şirket Portalı uygulamasında veya web sitesinde gösterilmez.
+
+## <a name="removing-data-collected-by-the-company-portal-app"></a>Şirket Portalı uygulaması tarafından toplanan verileri kaldırma
+
+Şirket Portalı’nın cihazınızda yerel verileri depoladığı üç yer vardır.
+
+-   **Bilgi günlükleri**: Uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi Microsoft tarafından toplanan standart uygulama verileri, cihazı Şirket Portalı’ndan kaldırdığınızda otomatik olarak silinir.
+
+-   **Apple analiz**: Apple tarafından toplanan standart uygulama kilitlenme etkinlik verileri. Bu bilgiler, yalnızca cihazınızı fabrika ayarlarına sıfırlarsanız kaldırılabilir. Bu, cihazınızdaki tüm kişisel bilgileri silecektir. Bunu yapmak için **Ayarlar** > **Genel** > **Sıfırla** > **Tüm İçeriği ve Ayarları Sil**’i açın.
+
+-   **Anahtarlık**: Cihazınız, parolalarınız ve diğer oturum açma bilgilerinizi Anahtarlığınızda depolar. Microsoft uygulamaları, Microsoft Outlook ve Microsoft Authenticator dahil cihazınızdaki Microsoft tarafından geliştirilmiş tüm uygulamalar arasında oturum açma bilgilerinizi paylaşır. Apple analiz gibi bu bilgiler, yalnızca cihazınızı fabrika ayarlarına sıfırlarsanız kaldırılabilir. Bu, cihazınızdaki tüm kişisel bilgileri silecektir. Bunu yapmak için **Ayarlar** > **Genel** > **Sıfırla** > **Tüm İçeriği ve Ayarları Sil**’i açın.
+
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

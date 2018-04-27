@@ -15,15 +15,15 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 833f37808d7315de9d7e3782bae26bab67a2cde7
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 5532e00f90702b820ec5bed6bf2fdb3d5e9d37df
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Geçici kullanıcı arabirimi farklılıkları
@@ -74,8 +74,12 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
     ![Bir kayıt programı belirteci alın.](./media/device-enrollment-program-enroll-ios/image01.png)
 
-2. Şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtarınızı indirin** öğesini seçin. .pem dosyası Apple Cihaz Kayıt Programı portalından güven ilişkisi sertifikası istemek için kullanılır.
-  ![Apple Sertifikaları çalışma alanındaki Kayıt Programı Belirteci panelinde bulunan ortak anahtarı indirme öğesinin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/image02.png)
+2. **Onaylıyorum**’u seçerek Microsoft’un Apple’a kullanıcı ve cihaz bilgilerini göndermesine izin verin.
+
+   ![Apple Sertifikaları çalışma alanındaki Kayıt Programı Belirteci panelinde bulunan ortak anahtarı indirme öğesinin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
+
+3. Şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtarınızı indirin** öğesini seçin. .pem dosyası Apple Cihaz Kayıt Programı portalından güven ilişkisi sertifikası istemek için kullanılır.
+
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>2. Adım Anahtarınızı kullanarak Apple’dan bir belirteç indirin.
 
@@ -135,12 +139,12 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
     Kullanıcılara cihazlarının denetimli olduğu iki yolla bildirilir:
 
-    - Kilit ekranında “Bu iPhone, Contoso tarafından yönetilmektedir.” yazar.
-    - **Ayarlar** > **Genel** > **Hakkında** kısmında “Bu iPhone denetimlidir.” yazar. ifadesi ve
+   - Kilit ekranında “Bu iPhone, Contoso tarafından yönetilmektedir.” yazar.
+   - **Ayarlar** > **Genel** > **Hakkında** kısmında “Bu iPhone denetimlidir.” yazar. ifadesi ve
 
      > [!NOTE]
      > Denetim olmadan kaydedilen bir cihaz, yalnızca Apple Configurator kullanılarak sıfırlanıp denetimli yapılabilir. Cihazı bu şekilde sıfırlamak için bir iOS cihazı USB kablosu ile bir Mac’e bağlamak gerekir. Bu konu hakkında daha fazla bilgi için [Apple Configurator belgelerine](http://help.apple.com/configurator/mac/2.3) bakın.
-     
+
 7. Bu profili kullanan cihazlarda kilitli kayıt isteyip istemediğinizi seçin. **Kilitli kayıt**, yönetim profilinin **Ayarlar** menüsünden kaldırılmasını sağlayan iOS ayarlarını devre dışı bırakır. Cihazı kaydettikten sonra, cihaza fabrika sıfırlaması yapmadan bu ayarı değiştiremezsiniz. Bu cihazlarda **Denetimli** Yönetim Modu *Evet* olarak ayarlı olmalıdır. 
 
 8. Bu profili kullanan cihazların **Bilgisayarlarla eşitleme** imkanının olup olmayacağını seçin. **Sertifikaya göre Apple Configurator’a izin ver**’i seçerseniz, **Apple Configurator Sertifikaları**’nın altında bir sertifika seçmeniz gerekir.
@@ -151,21 +155,23 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
 11. Şu profil ayarlarını yapılandırmak için **Kurulum Yardımcısı Ayarları**’nı seçin: ![Kurulum Yardımcısı Özelleştirme.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
-    | Ayar | Description |
-    | --- | --- |
-    | **Departman Adı** | Kullanıcı, etkinleştirme sırasında **Yapılandırma Hakkında** öğesine dokunduğunda görüntülenir. |
-    | **Departman Telefonu** | Kullanıcı, etkinleştirme sırasında **Yardım Gerekli** düğmesine dokunduğunda görüntülenir. |
-    | **Kurulum Yardımcısı Seçenekleri** | Aşağıdaki isteğe bağlı ayarlar, daha sonra iOS **Ayarlar** menüsünden ayarlanabilir. |
-    | **Geçiş kodu** | Etkinleştirme sırasında geçiş kodu ister. Cihazın güvenliği sağlanmayacaksa veya erişim denetimi başka bir yolla (cihazı tek uygulamayla sınırlandıran bilgi noktası modu) uygulanmayacaksa her zaman geçiş kodu gerektirir. |
-    | **Konum Hizmetleri** | Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar. |
-    | **Geri Yükle** | Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında iCloud yedeklemesini sorar. |
-    | **iCloud ve Apple Kimliği** | Bu etkinleştirilirse Kurulum Yardımcısı, kullanıcıdan bir Apple Kimliği ile oturum açmasını ister ve Uygulamalar ve Veriler ekranında cihazın iCloud yedeğinden geri yüklenmesine izin verilir. |
-    | **Hüküm ve Koşullar** | Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında kullanıcılardan Apple’ın hüküm ve koşullarını kabul etmelerini ister. |
-    | **Touch ID** | Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar. |
-    | **Apple Pay** | Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar. |
-    | **Yakınlaştır** | Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar. |
-    | **Siri** | Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar. |
-    | **Tanılama Verileri** | Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar. |
+
+    |                 Ayar                  |                                                                                               Description                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>Departman Adı</strong>     |                                                             Kullanıcı, etkinleştirme sırasında <strong>Yapılandırma Hakkında</strong> öğesine dokunduğunda görüntülenir.                                                              |
+    |    <strong>Departman Telefonu</strong>     |                                                          Kullanıcı, etkinleştirme sırasında <strong>Yardım Gerekli</strong> düğmesine dokunduğunda görüntülenir.                                                          |
+    | <strong>Kurulum Yardımcısı Seçenekleri</strong> |                                                     Aşağıdaki isteğe bağlı ayarlar, daha sonra iOS <strong>Ayarlar</strong> menüsünden ayarlanabilir.                                                      |
+    |        <strong>Geçiş kodu</strong>         | Etkinleştirme sırasında geçiş kodu ister. Cihazın güvenliği sağlanmayacaksa veya erişim denetimi başka bir yolla (cihazı tek uygulamayla sınırlandıran bilgi noktası modu) uygulanmayacaksa her zaman geçiş kodu gerektirir. |
+    |    <strong>Konum Hizmetleri</strong>    |                                                                 Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar.                                                                  |
+    |         <strong>Geri Yükle</strong>         |                                                                Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında iCloud yedeklemesini sorar.                                                                 |
+    |   <strong>iCloud ve Apple Kimliği</strong>   |                         Bu etkinleştirilirse Kurulum Yardımcısı, kullanıcıdan bir Apple Kimliği ile oturum açmasını ister ve Uygulamalar ve Veriler ekranında cihazın iCloud yedeğinden geri yüklenmesine izin verilir.                         |
+    |  <strong>Hüküm ve Koşullar</strong>   |                                                   Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında kullanıcılardan Apple’ın hüküm ve koşullarını kabul etmelerini ister.                                                   |
+    |        <strong>Touch ID</strong>         |                                                                 Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar.                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar.                                                                 |
+    |          <strong>Yakınlaştır</strong>           |                                                                 Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar.                                                                 |
+    |          <strong>Siri</strong>           |                                                                 Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar.                                                                 |
+    |     <strong>Tanılama Verileri</strong>     |                                                                 Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar.                                                                 |
+
 
 12. **Tamam**’ı seçin.
 
@@ -175,11 +181,11 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 Artık Intune’a cihazlarınızı yönetme izni verildiğine göre, yönetilen cihazlarınızı Intune’da Azure portalında görmek için Intune’u Apple ile eşitleyebilirsiniz.
 
 1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple Kaydı** > **Kayıt programı belirteçleri** > listeden bir belirteç seçin > **Cihazlar** > **Eşitle**’yi seçin. ![Kayıt Programı Cihazları düğümünün seçili olduğu ve Eşitle bağlantısının seçildiği ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/image06.png)
-  
-  Intune, Apple’ın kabul edilebilir kayıt programı trafiği şartlarına uymak için aşağıdaki kısıtlamaları getirir:
-  - Tam eşitleme en sık yedi günde bir çalıştırılabilir. Tam eşitleme sırasında Intune, kendine atanmış tüm Apple seri numaralarını yeniler. Önceki tam eşitlemenin üzerinden yedi gün geçmeden bir tam eşitleme girişiminde bulunulursa, Intune yalnızca henüz Intune’da listelenmeyen seri numaralarını yeniler.
-  - Herhangi bir eşitleme isteğinin tamamlanması için 15 dakika verilir. Bu süre boyunca veya istek başarılı olana kadar **Eşitle** düğmesi devre dışı bırakılır.
-  - Intune, yeni ve kaldırılmış cihazları 24 saatte bir Apple ile eşitler.
+
+   Intune, Apple’ın kabul edilebilir kayıt programı trafiği şartlarına uymak için aşağıdaki kısıtlamaları getirir:
+   - Tam eşitleme en sık yedi günde bir çalıştırılabilir. Tam eşitleme sırasında Intune, kendine atanmış tüm Apple seri numaralarını yeniler. Önceki tam eşitlemenin üzerinden yedi gün geçmeden bir tam eşitleme girişiminde bulunulursa, Intune yalnızca henüz Intune’da listelenmeyen seri numaralarını yeniler.
+   - Herhangi bir eşitleme isteğinin tamamlanması için 15 dakika verilir. Bu süre boyunca veya istek başarılı olana kadar **Eşitle** düğmesi devre dışı bırakılır.
+   - Intune, yeni ve kaldırılmış cihazları 24 saatte bir Apple ile eşitler.
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>Cihazlara kayıt profili atama
 Cihazların kaydedilmesi için bunlara bir kayıt programı profili atamalısınız.

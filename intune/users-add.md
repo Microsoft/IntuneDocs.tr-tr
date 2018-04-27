@@ -15,15 +15,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Kullanıcı ekleme ve Intune'a yönetici izni verme
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Yönetici olarak, kullanıcıları doğrudan ekleyebilir veya şirket içi Active Directory'den eşitleyebilirsiniz. Eklendikten sonra, kullanıcılar cihazlarını kaydedebilir ve şirket kaynaklarına erişebilir. Ayrıca kullanıcılara *genel yönetici* ve *hizmet yöneticisi* izinleri gibi ek izinler verebilirsiniz.
 
@@ -35,16 +35,16 @@ Intune aboneliğinize [Office 365 portalı](https://www.office.com/signin) veya 
 2. Office 365 menüsünde **Yönetici**’yi seçin.
 3. Yönetim merkezinde **Kullanıcı ekle**’yi seçin.
 
-  ![Kullanıcı ekle bölümünün ekran görüntüsü](media/office-add-user.png)
+   ![Kullanıcı ekle bölümünün ekran görüntüsü](media/office-add-user.png)
 
 4. Kullanıcıya ait şu ayrıntıları belirtin:
-  - **Adı**
-  - **Soyadı**
-  - **Görünen Ad**
-  - **Kullanıcı adı** - Hizmete erişmek için kullanılan ve Azure Active Directory’de depolanan kullanıcı asıl adı (UPN)
-  - **Konum**
-  - **İletişim bilgileri** (isteğe bağlı)
-  - **Parola** - Otomatik olarak oluşturun veya kendiniz belirtin
+   - **Adı**
+   - **Soyadı**
+   - **Görünen Ad**
+   - **Kullanıcı adı** - Hizmete erişmek için kullanılan ve Azure Active Directory’de depolanan kullanıcı asıl adı (UPN)
+   - **Konum**
+   - **İletişim bilgileri** (isteğe bağlı)
+   - **Parola** - Otomatik olarak oluşturun veya kendiniz belirtin
 
      ![Yeni kullanıcı bölümünün ekran görüntüsü](media/office-add-user-details.png)
 
@@ -55,16 +55,16 @@ Intune aboneliğinize [Office 365 portalı](https://www.office.com/signin) veya 
 1. [Azure portalında](https://portal.azure.com) oturum açın ve **Tüm hizmetler** > **İzleme + Yönetim** > **Intune**’a gidin. Ayrıca **Intune** için *kaynak araması* da yapabilirsiniz.
 2. **Kullanıcılar** > **Tüm kullanıcılar**'ı seçin.
 3. Yönetim merkezinde **Yeni kullanıcı**’yı seçin.
-  ![Yeni Kullanıcı ekle için ekran görüntüsü](media/intune-add-user.png)
+   ![Yeni Kullanıcı ekle için ekran görüntüsü](media/intune-add-user.png)
 4. Kullanıcıya ait şu ayrıntıları belirtin:
-  - **Ad**
-  - **Kullanıcı adı** - Azure Active Directory portalındaki yeni ad ![Ad ve kullanıcı adı ekleme için ekran görüntüsü](media/intune-add-user-info.png) Devam etmek için **Tamam**’ı seçin.
+   - **Ad**
+   - **Kullanıcı adı** - Azure Active Directory portalındaki yeni ad ![Ad ve kullanıcı adı ekleme için ekran görüntüsü](media/intune-add-user-info.png) Devam etmek için **Tamam**’ı seçin.
 5. İsteğe bağlı olarak, aşağıdaki kullanıcı özelliklerini de belirtebilirsiniz:
-  - **Profil** - **İş unvanı** ve **Departman** dahil olmak üzere iş bilgileri
-  -  **Gruplar** - Kullanıcı için eklenecek grupları seçin
-  - **Dizin rolü** - Kullanıcıya, Intune hizmet yöneticisi rolü dahil olmak üzere yönetim izinleri verin.
+   - **Profil** - **İş unvanı** ve **Departman** dahil olmak üzere iş bilgileri
+   -  **Gruplar** - Kullanıcı için eklenecek grupları seçin
+   - **Dizin rolü** - Kullanıcıya, Intune hizmet yöneticisi rolü dahil olmak üzere yönetim izinleri verin.
 
-  Yeni kullanıcıyı Intune’a eklemek için **Oluştur**’u seçin.
+   Yeni kullanıcıyı Intune’a eklemek için **Oluştur**’u seçin.
 6. **Profil**’i seçin, daha sonra yeni kullanıcı için bir **Kullanım konumu** seçin. Yeni kullanıcıya bir Intune lisansı atayabilmeniz için kullanım konumu gerekir. Devam etmek için **Kaydet**’i seçin.
     ![Kullanım konumunun ekran görüntüsü](media/intune-add-user-loc.png)
 7. Bu kullanıcıya bir Intune lisansı atamak için **Lisanslar**’ı, ardından **Ata**’yı seçin. Cihazları kaydetmek veya şirket kaynaklarına erişmek için bir Intune lisansı gerekir. Sırasıyla **Ürünler**, lisans türü, **Seç** ve **Ata**’yı seçin.
@@ -112,7 +112,7 @@ Office 365 portalına erişmek için hesabınızın **Oturum açmaya izinli** ol
 Şirket içi Active Directory'nizden Microsoft Azure Active Directory’ye (Azure AD) kullanıcı hesaplarını aktarmak için dizin eşitlemeyi yapılandırabilirsiniz ve bu, Intune kullanıcılarını da içerir. Şirket içi Active Directory hizmetinizi tüm Azure Active Directory tabanlı hizmetlere bağlamak kullanıcı kimliği yönetimini daha kolay hale getirir. Kullanıcılarınız için kimlik doğrulaması deneyimini tanıdık ve kolay hale getirmek isterseniz, çoklu oturum açma özelliklerini de yapılandırabilirsiniz. Aynı [Azure AD kiracısını](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) birden çok hizmete bağlayarak, önceden eşitlediğiniz kullanıcı hesaplarını tüm bulut tabanlı hizmetler için kullanabilirsiniz.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>Şirket içi kullanıcılarını Azure AD ile eşitleme
-Kullanıcı hesaplarınızı Azure AD ile eşitlemek için ihtiyacınız olan tek araç [Azure AD Connect sihirbazıdır](https://www.microsoft.com/download/details.aspx?id=47594). Azure AD Connect sihirbazı, şirket içi kimlik altyapınızı buluta bağlamak için basitleştirilmiş ve kılavuzlu bir deneyim sağlar.  Topolojinizi ve ihtiyaçlarınızı seçin (tek veya birden çok dizin, parola eşitleme veya federasyon). Sihirbaz, bağlantınızı çalışır hale getirmek için gereken tüm bileşenleri dağıtır ve yapılandırır. Bunlara eşitleme hizmetleri, Active Directory Federasyon Hizmetleri (AD FS) ve Azure AD PowerShell modülü de dahildir.
+Kullanıcı hesaplarınızı Azure AD ile eşitlemek için ihtiyacınız olan tek araç [Azure AD Connect sihirbazıdır](https://www.microsoft.com/download/details.aspx?id=47594). Azure AD Connect sihirbazı, şirket içi kimlik altyapınızı buluta bağlamak için basitleştirilmiş ve kılavuzlu bir deneyim sağlar. Topolojinizi ve ihtiyaçlarınızı (tekli veya çoklu dizinler, parola karma eşitlemesi, doğrudan kimlik doğrulama veya federasyon) seçin. Sihirbaz, bağlantınızı çalışır hale getirmek için gereken tüm bileşenleri dağıtır ve yapılandırır. Bunlara eşitleme hizmetleri, Active Directory Federasyon Hizmetleri (AD FS) ve Azure AD PowerShell modülü de dahildir.
 
 > [!TIP]
 > Azure AD Connect, önceden Dirsync ve Azure AD Eşitleme olarak yayımlanan işlevselliği kapsar. [Dizin tümleştirmesi](http://technet.microsoft.com/library/jj573653.aspx) hakkında daha fazla bilgi edinebilirsiniz. Bir yerel dizindeki kullanıcı hesaplarını Azure AD’ye nasıl eşitleyeceğinizi öğrenmek için bkz. [Active Directory ve Azure AD arasındaki benzerlikler](http://technet.microsoft.com/library/dn518177.aspx).

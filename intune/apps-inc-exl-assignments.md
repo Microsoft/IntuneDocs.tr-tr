@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama"
-titlesuffix: 
-description: "Uygulama atamalarını dahil etmek ve dışlamak için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin."
-keywords: 
+title: Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama
+titlesuffix: ''
+description: Uygulama atamalarını dahil etmek ve dışlamak için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dbe8669dc2bf448e0738147758d90ba6d2d69b06
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 93fd626d580917a3dd5bb20e7696c09c109dcc0b
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama
 
@@ -33,6 +33,8 @@ Uygulama atamasından grupları dışlarken, grupları karışık olarak dışla
 >Bir uygulama için grup ataması ayarlarken, **Uygun değil** türü kullanım dışıdır ve grup dışlama işleviyle yer değiştirir. 
 >
 >Intune size kolaylık sağlamak adına konsolda önceden oluşturulmuş ve yerleşik iyileştirmeleri bulunan **Tüm Kullanıcılar** ve **Tüm Cihazlar** gruplarını sağlar. Tüm kullanıcı ve cihazları hedeflemek için kendi oluşturacağınız “Tüm kullanıcılar” veya “Tüm cihazlar” grupları yerine bu grupları kullanmanızı kesinlikle öneririz.  
+>
+>Android Enterprise (önceki adıyla Android for Work), grupları dahil etme ve hariç tutmayı destekler ancak önceden oluşturulmuş **Tüm Kullanıcılar** ve **Tüm Cihazlar** yerleşik gruplarını desteklemez.
 
 ## <a name="including-and-excluding-groups-when-assigning-apps"></a>Uygulama atarken grup dahil etme ve dışlama 
 Dahil etme ve dışlama atamasını kullanarak bir uygulamayı gruplara atamak için:

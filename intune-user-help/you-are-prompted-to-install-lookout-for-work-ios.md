@@ -1,25 +1,25 @@
 ---
-title: "iOS cihazınıza Lookout for Work uygulamasını yüklemeniz gerekiyor | Microsoft Docs"
-description: "iOS için Lookout for Work uygulamasını yüklemeyi öğrenin."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS cihazınıza Lookout for Work uygulamasını yüklemeniz gerekiyor | Microsoft Docs
+description: iOS için Lookout for Work uygulamasını yüklemeyi öğrenin.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae05df1478baa8b965cdcd11a47ffc0d694734ab
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fda95e461fe8412b26289bc601d8282588cd211c
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>iOS cihazınıza Lookout for Work yükleme
 
@@ -31,15 +31,15 @@ ms.lasthandoff: 01/25/2018
 
 1.  Aşağıdaki istemi görürseniz, cihazınıza Lookout for Work yüklenmesine izin vermek için **Yükle**’ye dokunun.
 
-  ![Lookout for Work yüklemek için yükle öğesine dokunun](./media/ios-mtd-install-app-request.png)
+      ![İptal Et ve Yükle düğmeleriyle Uygulama Yükleme isteminin ekran görüntüsü.](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 
 2. Aşağıdaki iletiyi gördüğünüzde, **Ayarlar**’a dokunun, **Konum Hizmetleri**’ni açın ve **Devam**’a dokunun.
 
-  ![Ayarlar’a ve ardından Konum Hizmetleri’ne dokunun](./media/ios-lfw-allow-location-services.png)
+      ![Ayarlar’a ve ardından Konum Hizmetleri’ne dokunun](./media/ios-lfw-allow-location-services.png)
 
 3. Lookout for Work tarafından istenen izinleri gözden geçirin ve **Devam**’a dokunun.
 
-  ![artık Lookout for Work’e bağlısınız](./media/ios-lfw-permissions-lookout-needs.png)
+      ![artık Lookout for Work’e bağlısınız](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. Lookout for Work size bildirim göndermek için izin istediğinde **İzin Ver**’e dokunun.
 

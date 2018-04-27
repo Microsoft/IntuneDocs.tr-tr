@@ -1,27 +1,26 @@
 ---
-title: "Microsoft Intune cihaz kısıtlama ayarlarını yapılandırma"
-titleSuffix: 
-description: "Microsoft Intune’u yönettiğiniz cihazlarda ayar ve özellikleri yapılandırmak için kullanmayı öğrenin."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Microsoft Intune - Azure’da cihaz kısıtlama ayarlarını yapılandırma | Microsoft Docs
+description: Microsoft Intune’da Android, macOS, iOS, Windows Phone ve Windows 10 cihazlarda özellikleri kısıtlamak için bir cihaz profili ekleme
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5ccb928b8ff3f9cebbd6f51d99cddd1f36fb074
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da cihaz kısıtlama ayarlarını yapılandırma
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da cihaz kısıtlama ayarlarını yapılandırma
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Cihaz kısıtlamaları, bir dizi kategori altında yönettiğiniz çok çeşitli ayarları ve özellikleri denetlemenize olanak tanır, örneğin:
 - Güvenlik
@@ -35,12 +34,10 @@ Cihaz kısıtlama profili temel bilgilerini öğrenin ve cihazlara özgü özell
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Cihaz kısıtlama ayarlarını içeren bir cihaz profili oluşturma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** sayfasında, **Cihaz yapılandırması**’nı seçin.
-2. **Yönet** bölümü altındaki **Cihaz yapılandırması** sayfasından **Profiler**’i seçin.
-3. **Profiller** sayfasında **Profil oluştur**’u seçin.
-4. **Profil oluştur** sayfasında, cihaz kısıtlama profili için **Ad** ve **Açıklama** girin.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+3. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+4. Cihaz kısıtlama profili için bir **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden, özel ayarları uygulamak istediğiniz cihaz platformunu seçin. Şu anda, cihaz kısıtlama ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
     - **Android**
     - **iOS**

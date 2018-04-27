@@ -1,28 +1,27 @@
 ---
-title: "Windows 10 için Microsoft Intune cihaz kısıtlama ayarları"
-titlesuffix: 
-description: "Windows 10 çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Microsoft Intune ayarlarını öğrenin."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Microsoft Intune - Azure’da Windows 10 cihaz kısıtlama ayarları | Microsoft Docs
+description: Windows 10 çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Microsoft Intune ayarlarını öğrenin.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune Windows 10 ve üzeri cihaz kısıtlama ayarları
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune’da Windows 10 (ve üzeri) cihaz kısıtlama için ayarlar
 Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Genel
 - **Ekran yakalama (yalnızca mobil)** - Kullanıcının cihaz ekranını resim olarak yakalamasına olanak sağlar.
@@ -51,7 +50,6 @@ Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz 
 - **Ink Çalışma Alanı** - Kullanıcıların Ink çalışma alanına erişmesini engelleyin. Bu ayar yapılandırılmadığında, Ink çalışma alanı etkinleştirilir (özellik açılır) ve kullanıcının bunu kilit ekranının üst tarafında kullanmasına izin verilir.
 - **Otomatik yeniden dağıtım** - Yönetici haklarına sahip olan kullanıcıların cihaz kilidi ekranında **CTRL + Win + R** tuşunu kullanarak tüm kullanıcı verilerini ve ayarlarını silmelerini sağlar. Cihaz otomatik olarak yeniden yapılandırılacak ve yönetime yeniden kaydedilir.
 
-
 ## <a name="password"></a>Parola
 -   **Parola** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
     -   **Gerekli parola türü** - Parolanın yalnızca sayısal mı yoksa alfasayısal mı olacağını belirtir.
@@ -75,7 +73,6 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 -   **Eşleştirme ve gizlilik kullanıcı onayı istemlerini otomatik kabul et** – Windows'un, uygulama çalıştırırken eşleştirme ve gizlilik onay iletilerini otomatik olarak kabul etmesine izin ver.
 - **Kullanıcı etkinliklerini yayımla**: Bunu **Engelle** şeklinde ayarlayarak, görev değiştiricide paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önleyin.
 - **Yalnızca yerel etkinlikler**: Bunu **Engelle** şeklinde ayarlayarak, görev değiştiricide yalnızca yerel etkinliklere bağlı olan paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önleyin.
-
 
 Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **Uygulama başına gizlilik özel durumları**'nı kullanarak uygulama başına özel durumlar tanımlayabilirsiniz.
 
@@ -137,8 +134,6 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 -   **Kilitli ekranda bildirimler** – Cihaz kilitleme ekranında uyarı iletileri gösterilmesini engelleyin.
 -   **Ekran zaman aşımı (yalnızca mobil)** - Ekranın kapanarak kilitlenmesi için geçecek süreyi saniye olarak belirtir.
 
-
-
 ## <a name="app-store"></a>Uygulama Mağazası
 
 -   **Uygulama mağazası (yalnızca mobil)** - Windows 10 Mobile cihazlarında uygulama mağazasının kullanılmasını etkinleştirin veya engelleyin.
@@ -152,8 +147,6 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 -   **Uygulamaları sistem sürücüsüne yükle** - Uygulamaların cihazın sistem sürücüsüne veri depolamasını engeller.
 -   **Oyun DVR (yalnızca masaüstü)** - Oyun kaydetme ve yayınlamaya izin verilip verilmediğini yapılandırır.
 -   **Yalnızca mağazadan yüklenebilen uygulamalar** - Kullanıcıların uygulama mağazası dışındaki yerlerden uygulama yükleyip yükleyemeyeceğini yapılandırır.
-
-
 
 ## <a name="edge-browser"></a>Edge Tarayıcısı
 
@@ -192,6 +185,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 
 ## <a name="search"></a>Ara
 - **Güvenli Arama (yalnızca mobil)** - Cortana’nın yetişkinlere yönelik içeriği arama sonuçlarında nasıl filtreleyeceğini denetleyin. **Katı**, **Orta** değerlerini seçebilir ya da son kullanıcının kendi ayarlarını seçmesine izin verebilirsiniz.
+- **Aramada web sonuçlarını gösterme**: Cihazda yapılan aramalarda web sonuçlarının gösterilmesini engelleyin veya buna izin verin.
 
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 -   **Microsoft hesabı** - Kullanıcının bir Microsoft hesabını cihazla ilişkilendirmesine olanak sağlar.
@@ -215,7 +209,6 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 -   **El ile Wi-Fi yapılandırması** - Kullanıcının kendi Wi-Fi bağlantılarını yapılandırıp yapılandıramayacağını veya yalnızca Wi-Fi profili tarafından yapılandırılan bağlantıları kullanıp kullanamayacağını denetleyin (yalnızca Windows 10 Mobile).
 -   **Wi-Fi tarama aralığı** – Cihazların ne sıklıkta Wi-Fi ağlarını tarayacağını belirtir. 1 (en çok) ile 500 (en az) arasında bir değer belirtin.
 -   **Bluetooth izin verilen hizmetler** – Onaltılık dize olarak izin verilen Bluetooth hizmet ve profillerinin bir listesini belirtin.
-
 
 ## <a name="control-panel-and-settings"></a>Denetim Masası ve Ayarlar
 
@@ -258,41 +251,48 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 
 ## <a name="kiosk-preview"></a>Bilgi noktası (Önizleme)
 
--   **Bilgi noktası modu** - İlke tarafından desteklenen [bilgi noktası modu](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) türünü belirler. Şu seçenekler mevcuttur:
+Bir bilgi noktası cihazı genellikle tek bir uygulama veya belirli bir uygulamalar kümesi çalıştırır. Kullanıcıların cihazda bilgi noktası uygulamaları dışında başka özellik veya işlevlere erişimi engellenmiştir.
 
-      - **Yapılandırılmamış** (varsayılan) - İlke, bilgi noktası modunu etkinleştirmez. 
-      - **Tek uygulama bilgi noktası** - Profil, cihazı tek bir uygulama bilgi noktası olarak etkinleştirir.
-      - **Çoklu uygulama bilgi noktası** - Profil, cihazı çoklu uygulama bilgi noktası olarak etkinleştirir.
+- **Bilgi noktası modu**: İlke tarafından desteklenen bilgi noktası modu türünü belirler. Şu seçenekler mevcuttur:
 
-    Tek uygulama bilgi noktaları, aşağıdaki ayarları gerektirir:
+  - **Yapılandırılmamış** (varsayılan) - İlke, bilgi noktası modunu etkinleştirmez. 
+  - **Tek uygulama bilgi noktası**: Profil, cihazı yalnızca bir uygulama çalıştıracak şekilde etkinleştirir. Kullanıcı oturum açtığında belirli bir uygulama başlar. Bu mod ayrıca kullanıcının yeni uygulamalar açmasını veya çalışan uygulamayı değiştirmesini önler.
+  - **Çoklu uygulama bilgi noktası**: Profil, cihazın birden fazla uygulama çalıştırmasına izin verir. Yalnızca eklediğiniz uygulamalar kullanıcı tarafından kullanılabilir. Bir çoklu uygulama bilgi noktasının veya sabit amaçlı cihazın yararı, yalnızca ihtiyaç duyulan uygulamalara erişim sağlayıp gerek olmayan uygulamaları göz önünden kaldırarak bireylere anlaşılması kolay bir deneyim sunmasıdır.
 
-      - **Kullanıcı hesabı**: Yerel (cihaz için) kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgilerini belirtir. Azure AD etki alanlarına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
+#### <a name="single-app-kiosks"></a>Tek uygulama bilgi noktaları
+Aşağıdaki ayarları girin:
 
-         Ortak ortamlardaki cihazlar için en düşük ayrıcalıklara sahip hesaplar kullanarak yetkilendirilmemiş etkinliklerin önüne geçin.  
+- **Kullanıcı hesabı**: Yerel (cihaz için) kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgilerini girin. Azure AD etki alanlarına katılmış hesapları `domain\username@tenant.org` biçiminde girin. 
 
-      - **Bir uygulamanın uygulama kullanıcı modeli kimliği (AUMID)** - Bilgi noktası uygulamasının AUMID’ini belirtir. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bir Azure Active Directory (AD) hesabını bilgi noktası moduna yapılandırmak için `AzureAD\user@contoso.com` biçimini kullanın.
 
-    [Birden çok uygulamalı bilgi noktaları](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune), bilgi noktası yapılandırması gerektirir. **Ekle** düğmesini kullanarak bir bilgi noktası yapılandırması oluşturun veya mevcut bir taneyi seçin.
+- **Uygulamanın uygulama kullanıcı modeli kimliği (AUMID)**: Bilgi noktası uygulamasının AUMID’sini girin. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Birden çok uygulamalı bilgi noktası yapılandırmaları, aşağıdaki ayarları içerir:
+#### <a name="multi-app-kiosks"></a>Çoklu uygulama bilgi noktaları
+[Çoklu uygulama bilgi noktaları](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune), izin verilen uygulamaları ve diğer ayarları listeleyen bir bilgi noktası yapılandırması kullanır. 
 
-    - **Bilgi noktası yapılandırma adı** - Bir yapılandırmayı ayırt etmek için kullanılan kolay bir ad.
+**Ekle** düğmesini kullanarak bir bilgi noktası yapılandırması oluşturun (veya mevcut bir yapılandırmayı seçin). Daha sonra aşağıdaki ayarları girin:
 
-    - Şunlardan oluşan bir veya daha fazla **bilgi noktası uygulaması**:
+- **Bilgi noktası yapılandırma adı**: Yapılandırmayı ayırt etmek için kullanılan kolay bir ad girin.
 
-        - Bilgi noktası uygulamasının türünü belirten **Uygulama Türü**.  Desteklenen değerler şunlardır:   
+- **Bilgi noktası uygulamaları**: Başlat menüsünde kullanılabilir olan uygulamaları girin. Kullanıcılar yalnızca eklediğiniz uygulamaları kullanabilir.
 
-            - **Win32 Uygulaması** - Geleneksel bir masaüstü uygulaması. (Yürütülebilir dosyanın cihaza göre mutlak yol adına ihtiyacınız vardır.)
+  - **Uygulama Türü**: Bilgi noktası uygulamasının türünü seçin:
+    - **Win32 Uygulaması** - Geleneksel bir masaüstü uygulaması. Yürütülebilir dosyanın cihaza göre tam yol adına ihtiyacınız vardır.
+    - **UWP Uygulaması** - Bir Evrensel Windows uygulaması. [Uygulamanın AUMID’sine](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ihtiyacınız vardır.
 
-            - **UWP Uygulaması** - Bir Evrensel Windows uygulaması. [Uygulamanın AUMID’sine](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ihtiyacınız vardır.
+  - **Tanımlayıcı**: Yürütülebilir dosyanın tam yol adını (Win32 uygulamaları) veya [uygulamanın AUMID’sini](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP uygulamaları) girin.
 
-        - **Uygulama Tanımlayıcı** - Yürütülebilir dosyanın mutlak yol adını (Win32 uygulamaları) veya [uygulamanın AUMID’ini](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP uygulamaları) belirtir.
+- **Görev Çubuğu**: Bilgi noktasında görev çubuğunu **Etkinleştirmeyi** (göster) veya **Yapılandırılmadı** (gizli) olarak bırakmayı seçebilirsiniz.
 
-    - **Görev çubuğu**, bilgi noktasında görev çubuğunun görüntüleneceğini (**Etkin**) veya gizleneceğini (**Yapılandırılmamış**) gösterir.
+- **Başlangıç menüsü düzeni**: Uygulamaların Başlangıç menüsünde nasıl göründüğünü açıklayan bir XML dosyasını girin. [Başlangıç düzenini özelleştirme ve dışarı aktarma](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout), rehberlik ve örnek XML sağlar.
 
-    - **Başlangıç menüsü düzeni** - Uygulamaların [Başlangıç menüsünde nasıl göründüğünü](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) açıklayan bir XML dosyasını belirtir.
 
-    - **Atanan kullanıcılar** - bilgi noktası yapılandırmasıyla ilişkili bir veya daha fazla kullanıcı hesabı belirtir. Hesap, cihazda yerel olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgileri olabilir. Etki alanına katılmış hesapları `domain\\username@tenant.org` biçiminde belirtin.
+  [Birden fazla uygulama çalıştıran bir Windows 10 bilgi noktası oluşturma](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file), XML dosyaları kullanma ve oluşturma hakkında daha fazla ayrıntı sağlar.
+
+- **Atanmış kullanıcılar**: Eklediğiniz uygulamaları kullanabilecek bir veya daha fazla kullanıcı hesabı ekleyin. Hesap oturum açtığında, yalnızca yapılandırmada tanımlanmış uygulamalar kullanılabilir durumda olur. Hesap, cihazda yerel olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgileri olabilir.
+
+    Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bir Azure Active Directory (AD) hesabını bilgi noktası moduna yapılandırmak için `domain\user@tenant.com` biçimini kullanın.
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender Virüsten Koruma
 
@@ -328,14 +328,11 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
     -   **Kullanıcı tanımlı**
     -   **Engelle**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender Virüsten Koruma Dışlamaları
 
 -   **Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosyalar ve klasörler** - Dışlama listesine **C:\Yol** veya **%ProgramFiles%\Yol\dosyaadı.exe** gibi bir veya birden çok dosya ve klasör ekler. Bu dosya ve klasörler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
 -   **Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosya uzantıları** - Dışlama listesine **jpg** veya **txt** gibi bir veya birden çok dosya uzantısı ekleyin. Bu uzantıya sahip dosyaların hiçbiri gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
 -   **Taramaların ve gerçek zamanlı korumanın dışında bırakılacak işlemler** - Dışlama listesine **.exe**, **.com** veya **.scr** türünde bir veya birden çok işlem ekleyin. Bu işlemleri gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
-
 
 ## <a name="network-proxy"></a>Ağ proxy’si
 
@@ -348,9 +345,7 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
     -   **Proxy özel durumları** - Proxy sunucusunu kullanmaması gereken herhangi bir URL girin. Her birini ayırmak için noktalı virgül kullanın.
     -   **Yerel adres için proxy sunucusunu atla** - İntranetinizde yerel adresler için proxy sunucuyu kullanmak istemiyorsanız bu seçeneği etkinleştirin.
 
-
 ## <a name="windows-spotlight"></a>Windows Spot
-
 
 - **Windows Spot** – Windows 10 cihazlarda tüm Windows Spot işlevselliğini engellemek için bu ayarı kullanın. Bu ayarı engellerseniz aşağıdaki ayarlar kullanılamaz.
     - **Kilitleme ekranında Windows Spot** – Windows Spot’un cihaz kilitleme ekranında bilgi görüntülemesini durdurun.
@@ -360,7 +355,6 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
     - **İşlem merkezinde Windows Spot** – Yeni uygulama veya güvenlik içeriği gibi Windows Spot önerilerinin Windows İşlem Merkezi'nde görünmesini engelleyin.
     - **Windows Spot kişiselleştirme** – Windows Spot’un sonuçları bir cihazın kullanımına göre kişiselleştirmesini durdurun.
     - **Windows karşılama deneyimi** – Kullanıcıya yeni veya güncelleştirilmiş özellikler hakkında bilgi gösteren Windows karşılama deneyimini engelleyin.
-
 
 ## <a name="projection"></a>Projeksiyon
 
@@ -394,15 +388,3 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
 - **İleti eşitleme (yalnızca mobil)** - Her Yerden Mesajlaşma ve metin iletisi yedekleme ve kurtarmayı devre dışı bırakın.
 - **MMS (yalnızca mobil)** - Cihazdaki MMS gönderme ve alma işlevini devre dışı bırakın.
 - **RCS (yalnızca mobil)** - Cihazdaki Zengin İletişim Hizmetleri gönderme ve alma işlevini devre dışı bırakın.
-
-
-
-
-
-
-
-
-
-
-
-

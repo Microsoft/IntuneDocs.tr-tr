@@ -1,25 +1,25 @@
 ---
-title: "Intune App SDK’sının yararları"
+title: Intune App SDK’sının yararları
 titlesuffix: Microsoft Intune
-description: "Intune Uygulama SDK'sı hem iOS hem de Android platformu için kullanılabilir ve Microsoft Intune ile mobil uygulama yönetim özelliklerini etkinleştirir."
-keywords: 
+description: Intune Uygulama SDK'sı hem iOS hem de Android platformu için kullanılabilir ve Microsoft Intune ile mobil uygulama yönetim özelliklerini etkinleştirir.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b34963761e9700d6cb742cb90979be30d5ae6b3e
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Intune Uygulama SDK'sına genel bakış
 iOS ve Android için kullanılabilen Intune uygulama SDK'sı, uygulamanızı Intune uygulama koruma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için API’leri kullanarak uygulamanızın davranışını, uygulama katılımınızı gerektiren özelliklere göre özelleştirebilirsiniz.
@@ -64,7 +64,7 @@ BT yöneticileri, son kullanıcıların uygulamaya erişmesinden önce cihazın 
 ### <a name="app-protection-without-device-enrollment"></a>Cihaz kaydı olmadan uygulama koruma
 
 >[!IMPORTANT]
->Intune Uygulama Sarmalama Araçları, Android için Intune Uygulama SDK’sı, iOS için Intune Uygulama SDK’sı, SDK Xamarin Bileşeni ve SDK Cordova Eklentisi ile cihaz kaydı olmaksızın Intune uygulama koruması kullanılabilir.
+>Intune Uygulama Sarmalama Araçları, Android için Intune Uygulama SDK’sı, iOS için Intune Uygulama SDK’sı, Intune Uygulama SDK’sı Xamarin Bağlamaları ve SDK Cordova Eklentisi ile cihaz kaydı olmaksızın Intune uygulama koruması kullanılabilir.
 
 Kişisel cihaz kullanan çok sayıda kullanıcı cihazını bir Mobil Cihaz Yönetimi (MDM) sağlayıcısına kaydetmeden şirket verilerine erişmeyi ister. MDM kaydı cihazın genel denetimini gerektirdiğinden, kullanıcılar genellikle kendi kişisel cihazlarının denetimini şirketlerine verme konusunda tereddütlüdür.
 

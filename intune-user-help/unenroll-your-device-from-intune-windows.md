@@ -1,39 +1,33 @@
 ---
-title: "Windows cihazınızın Intune kaydını silme | Microsoft Docs"
-description: "Windows cihazının Intune kaydını nasıl silebileceğiniz açıklanır."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Windows cihazınızı Intune’dan kaldırma| Microsoft Docs
+description: Windows cihazınızı Intune’dan nasıl kaldıracağınız açıklanır
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - User help
-ROBOTS: 
-ms.reviewer: priyar
+ROBOTS: ''
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 898501d2cf87f73243a97b8c1e99633d30bab982
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="unenroll-your-windows-device-from-intune"></a>Windows cihazınızın Intune kaydını silme
+# <a name="remove-your-windows-device-from-intune"></a>Windows cihazınızı Intune’dan kaldırma
 
-Intune’a kaydolduysanız, ancak artık iş veya okul için Windows cihazınızı kullanmak istemiyorsanız ve iş veya okul e-postalarına, uygulamalarına veya diğer kaynaklara erişmeye ihtiyacınız yoksa cihazınızın kaydını silmeniz gerekir. Cihazınızın Intune kaydını kaldırdıktan sonra artık bu kaynaklara erişemezsiniz. Cihazınızın kaydını sildiğinizde ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Cihazınız Intune’a kayıtlıysa ancak iş veya okul e-postanıza, uygulamalara veya diğer kaynaklara artık Windows cihazınızla erişmek istemiyorsanız cihazınızı yönetimden kaldırmanız gerekir. Cihazınızı Intune’dan kaldırdıktan sonra artık bu kaynaklara erişemezsiniz. Cihazınızı yönetimden kaldırdığınızda ne olacağı hakkında daha fazla bilgi için bkz. [Cihazınızı Intune’dan kaldırdığınızda ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
-Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde gösterilen ve kullandığınız cihaz türüyle eşleşen bağlantıyı kullanın:
-
--   [Windows 10 cihazınızın kaydını silme](#unenroll-your-windows-10-device)
--   [Windows 8.1 bilgisayarınızın kaydını silme](#unenroll-your-windows-81-computer)
--   [Windows Phone 8.1 cihazınızın kaydını silme](#unenroll-your-windows-phone-81-device)
-
-## <a name="unenroll-your-windows-10-device"></a>Windows 10 cihazınızın kaydını silme
+## <a name="remove-your-windows-10-device"></a>Windows 10 cihazınızı kaldırma
 
 1.  Uygulamalar listenizden **Şirket Portalı** uygulamasına dokunun.
 
@@ -43,7 +37,7 @@ Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde g�
 
 4.  **Kaldır** &gt; **Kaldır**’a dokunun.
 
-## <a name="unenroll-your-windows-81-computer"></a>Windows 8.1 bilgisayarınızın kaydını silme
+## <a name="remove-your-windows-81-computer"></a>Windows 8.1 bilgisayarınızı kaldırma
 
 1.  **Bilgisayar Ayarları** &gt; **Ağ** &gt; **Çalışma Alanı**’na gidin.
 
@@ -53,7 +47,7 @@ Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde g�
 
 4.  Açılan pencerede **Kapat**’ı seçin.
 
-## <a name="unenroll-your-windows-phone-81-device"></a>Windows Phone 8.1 cihazınızın kaydını silme
+## <a name="remove-your-windows-phone-81-mobile-device"></a>Windows Phone 8.1 mobil cihazınızı kaldırma
 
 1.  **Ayarlar** &gt; **Çalışma Alanı**’na gidin.
 
@@ -62,5 +56,22 @@ Cihazınızın kaydını silmek için, yukarıdaki "Bu Makalede" bölümünde g�
 3.  Ekranın altındaki **Sil** seçeneğine dokunun.
 
 4.  **Hesabı sil** iletişim kutusunda **Sil**’e dokunun.
+
+## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Şirket Portalı’nı kaldırdıktan sonra kişisel bilgilerinizi kaldırma
+
+Şirket Portalı’nın Windows cihazınızda depoladığı iki tür veri vardır:
+
+-   **Tanılama günlükleri**: Uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi Microsoft tarafından toplanan standart uygulama verileri, cihazı Şirket Portalı’ndan kaldırdığınızda otomatik olarak silinir.
+-   **Uygulama önbelleği**: Simge ve ayarlar gibi bir uygulamanın çalışması için gereken bazı destek dosyalarının depolanması.
+
+Bu bilgileri tamamen silmek için tamamlamanız gereken birkaç adım vardır.
+
+### <a name="uninstall-the-company-portal"></a>Şirket Portalı’nı kaldırma  
+
+[Şirket Portalı uygulamasını kaldırmak](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs), cihazınızda depolanan bazı uygulama verilerini kaldırır.  
+
+### <a name="reset-the-company-portal"></a>Şirket Portalı’nı sıfırlama
+
+Kalan Şirket Portalı uygulama verilerini sıfırlamak için uygulamayı Ayarlar’dan sıfırlayın. **Ayarlar** > **Uygulamalar ve Özellikler** > **Şirket Portalı** > **Gelişmiş seçenekler** > **Sıfırla**’yı seçin.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

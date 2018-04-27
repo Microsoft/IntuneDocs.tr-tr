@@ -1,29 +1,29 @@
 ---
-title: "Intune’da Android cihazları kaydetme"
+title: Intune’da Android cihazları kaydetme
 titlesuffix: Microsoft Intune
-description: "Intune’da Android cihazları kaydetmeyi öğrenin."
-keywords: 
+description: Intune’da Android cihazları kaydetmeyi öğrenin.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-android-devices"></a>Android cihazlarını kaydetme
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bir Intune yöneticisi olarak, Samsung Knox Standard cihazları dahil olmak üzere Android cihazları yönetebilirsiniz. Ayrıca, [Android for Work cihazlarda](#enable-enrollment-of-android-for-work-devices) iş profilini de yönetebilirsiniz.
 
@@ -47,6 +47,8 @@ Cihaz yönetimini etkinleştirmek için, kullanıcılarınızın Intune Şirket 
 
 Android for Work cihazları bir [Cihaz Kayıt Yöneticisi](device-enrollment-manager-enroll.md) hesabı kullanarak kaydediyorsanız, hesap başına yalnızca 10 cihaz sınırı vardır.
 
+Daha fazla bilgi için bkz. [Intune’un Google’a gönderdiği veriler](data-intune-sends-to-google.md).
+
 ## <a name="add-android-for-work-binding-for-intune"></a>Intune için Android for Work Bağlaması ekleme
 
 > [!NOTE]
@@ -55,15 +57,18 @@ Android for Work cihazları bir [Cihaz Kayıt Yöneticisi](device-enrollment-man
 1. **Intune MDM’yi ayarlama**<br>
 Henüz yapmadıysanız, [mobil cihaz yönetimi yetkilisini](mdm-authority-set.md) **Microsoft Intune** olarak ayarlayarak mobil cihaz yönetimine hazırlanın.
 2. **Android for Work bağlamasını yapılandırma**<br>
-    Bir Intune yöneticisi olarak [Azure portalında](https://portal.azure.com) **Tüm Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-
-   a. **Intune** bölmesinde **Cihaz kaydı** > **Android for Work Kaydı**’nı seçin ve **Yönetilen Google Play - Yapılandır**’a tıklayarak Google Play’in Android for Work web sitesini açın. Web sitesi, tarayıcınızda yeni bir sekmede açılır.
+    
+   a. [Azure portalında Intune](https://aka.ms/intuneportal)’da oturum açın, **Cihaz kaydı** > **Android kaydı** > **Yönetilen Google Play**’i seçin.
    ![Android for Work kayıt ekranı](./media/android-work-bind.png)
 
-   b. **Google’da oturum açma**<br>
+   b. **Kabul ediyorum**’u seçerek Microsoft’un [Google’a kullanıcı ve cihaz bilgilerini göndermesine](data-intune-sends-to-google.md) izin verin. 
+   
+   c. **Hemen bağlanmak için Google’ı başlat**’ı seçerek Google Play’in Android for Work web sitesini açın. Web sitesi, tarayıcınızda yeni bir sekmede açılır.
+  
+   d. **Google’da oturum açma**<br>
    Google'ın oturum açma sayfasında, bu kiracı için tüm Android for Work yönetim görevleriyle ilişkilendirilecek Google hesabını girin. Bu, şirketinizin BT yöneticilerinin Play for Work konsolunda uygulama yönetmek ve yayımlamak için paylaştığı Google hesabıdır. Mevcut bir Google hesabını kullanabilir veya yeni bir tane oluşturabilirsiniz.  Seçtiğiniz hesabın bir G-Suite etki alanıyla ilişkilendirilmemiş olması gerekir.
 
-   c. **Kuruluş ayrıntıları sağlama**<br>
+   e. **Kuruluş ayrıntıları sağlama**<br>
    Şirketinizin adını **Kuruluş adı** alanına girin. **Kurumsal mobil yönetim (EMM) sağlayıcısı** alanında **Microsoft Intune** görüntülenmelidir. Android for Work sözleşmesini kabul edin ve **Onayla**’ya tıklayın. İsteğiniz işlenir.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Android for Work kayıt ayarlarını belirtme
@@ -110,3 +115,14 @@ Android for Work kaydı ve yönetimini kapatabilirsiniz. Intune yönetim konsolu
 
 2. **Android for Work bağlamasını kaldırmayı kabul etme**<br>
   Bağlamayı silmek için **Evet**’i seçin tüm Android for Work cihazların Intune kaydını silin.
+
+## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Bir Samsung Knox cihazı kaydederken son kullanıcı deneyimi
+Samsung Knox cihazları kaydederken göz önünde bulundurulması gereken birkaç nokta vardır:
+-   Hiçbir ilke PIN gerektirmiyorsa bile cihazın kaydedilebilmesi için en az dört basamaklı bir PIN’i olmalıdır. Cihazın PIN’i yoksa, kullanıcıdan bir PIN oluşturması istenir.
+-   Workplace Join Sertifikaları (WPJ) için kullanıcı etkileşimi yoktur.
+-   Kullanıcıya Hizmet Kaydı bilgileri ve uygulamanın yapabilecekleri anlatılır.
+-   Kullanıcıya Knox Kaydı bilgileri ve Knox’un yapabilecekleri anlatılır.
+-   Bir Şifreleme İlkesi zorlanmışsa, kullanıcıların cihaz geçiş kodu olarak altı karakterlik karmaşık parola ayarlamaları gereklidir.
+-   Şirket Kaynağı Erişimi için bir hizmet tarafından gönderilen sertifikaların yüklenmesi için başka kullanıcı istemi yoktur.
+- Bazı eski Knox cihazlar, kullanıcıdan Şirket Kaynağı Erişimi için kullanılan ek sertifikalar isteyebilir.
+- Bir Samsung Mini cihaz, **Sertifika Bulunamadı** veya **Cihaz Kaydedilemedi** hataları ile WPJ’yi yükleyemezse, en son Samsung Üretici Yazılımı Güncelleştirmelerini yükleyin.

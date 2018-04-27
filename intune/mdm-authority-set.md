@@ -15,15 +15,15 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce6464cc6aa67636743479e69ad2b55c9b102ed9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: e15e1678fa93269eb650f8a5684091b430ebf1cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobil cihaz yönetimi yetkilisini ayarlayın
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mobil cihaz yönetimi (MDM) yetkili ayarı, cihazlarınızı yönetme şeklinizi belirler. Kullanıcıların yönetilmek üzere cihaz kaydedebilmeleri için, BT yöneticisi olarak bir MDM yetkilisi ayarlamanız gerekir.
 
@@ -35,26 +35,26 @@ Olası yapılandırmalar şunlardır:
 
 - **Office 365 için Mobil Cihaz Yönetimi** - Office 365’in Intune bulut çözümüyle tümleştirmesi. Office 365 Yönetim Merkezi’nden Intune’u siz yapılandırırsınız. Intune Tek Başına ile sağlanan özelliklerin bir alt kümesini içerir. MDM yetkilisini Office 365 Yönetim Merkezi’nden ayarlama.
 
->[!IMPORTANT]    
-Configuration Manager'ın 1610 veya sonraki bir sürümü ve Microsoft Intune'un 1705 sürümünde, MDM yetkilisini, Microsoft Destek ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Ayrıntılar için bkz. [Yanlış MDM yetkilisi ayarı seçilirse yapılacaklar](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
+> [!IMPORTANT]
+> Configuration Manager'ın 1610 veya sonraki bir sürümü ve Microsoft Intune'un 1705 sürümünde, MDM yetkilisini, Microsoft Destek ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Ayrıntılar için bkz. [Yanlış MDM yetkilisi ayarı seçilirse yapılacaklar](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM yetkilisini Intune olarak ayarlama
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-2. **Mobil Cihaz Yönetim Yetkilisi** ayarını açmak için turuncu başlığı seçin.
-3. **Mobil Cihaz Yönetimi Yetkilisi** altında, aşağıdakilerden birini MDM yetkiliniz olarak belirtin:
-  - **Intune MDM Yetkilisi**
-  - **System Center Configuration Manager MDM Yetkilisi**
-  - **Yok.**
+3. **Mobil Cihaz Yönetim Yetkilisi** ayarını açmak için turuncu başlığı seçin.
+4. **Mobil Cihaz Yönetimi Yetkilisi** altında, aşağıdakilerden birini MDM yetkiliniz olarak belirtin:
+   - **Intune MDM Yetkilisi**
+   - **System Center Configuration Manager MDM Yetkilisi**
+   - **Yok.**
 
-  ![Intune tarafından ayarlı mobil cihaz yönetim yetkilisi ekranının ekran görüntüsü](media/set-mdm-auth.png)
+   ![Intune tarafından ayarlı mobil cihaz yönetim yetkilisi ekranının ekran görüntüsü](media/set-mdm-auth.png)
 
-  MDM yetkilinizi başarıyla Intune olarak ayarladığınızı bildiren bir ileti görüntülenir.
+   MDM yetkilinizi başarıyla Intune olarak ayarladığınızı bildiren bir ileti görüntülenir.
 
 ## <a name="enable-device-enrollment"></a>Cihaz kaydını etkinleştirme
 
-MDM yetkiliniz olarak Intune’u ayarladığınızda kullanıcılar; kişisel cihazlarını kaydedebilir ve Şirket Portalı (iOS ve Android) uygulamasını yükleyerek, iş kimlik bilgilerini ekleyerek (Windows) veya Şirket Portalı web sitesine erişerek (iOS, Android, macOS) e-posta gibi kaynaklara erişim kazanabilir.
+MDM yetkiliniz olarak Intune’u ayarladığınızda kullanıcılar; kişisel cihazlarını kaydedebilir ve Şirket Portalı (iOS, macOS ve Android) uygulamasını yükleyerek, iş kimlik bilgilerini ekleyerek (Windows) veya Şirket Portalı web sitesine erişerek (iOS, Android, macOS) e-posta gibi kaynaklara erişim kazanabilir.
 
 Kaydı etkinleştirmek veya kolaylaştırmak için farklı platformlarda aşağıdaki gereksinimler vardır:
 - **iOS** - (gerekli) [Bir Apple MDM anında iletme sertifikası alma](apple-mdm-push-certificate-get.md) ve [Şirkete ait iOS cihazlar için kaydı etkinleştirme](ios-enroll.md) (isteğe bağlı).

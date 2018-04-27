@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0eafbe9c57051b62f6ed53a3930705eabf5aebd0
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: e3f8dd2e63702a7eff3b1808628a25df9618da1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -278,7 +278,6 @@ boolean diagnosticIsFileEncryptionInUse();
 String toString();
 
 }
-
 ```
 
 > [!NOTE]
@@ -399,7 +398,6 @@ public interface MAMNotificationReceiver {
      */
     boolean onReceive(MAMNotification notification);
 }
-
 ```
 
 ### <a name="types-of-notifications"></a>Bildirim türleri
@@ -526,7 +524,6 @@ Tüm gerekli kimlik doğrulama ve kayıt API’leri `MAMEnrollmentManager` arabi
 MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
 
 // make use of mgr
-
 ```
 
 Döndürülen `MAMEnrollmentManager` örneğinin null olmaması garanti edilir. API yöntemleri iki kategoriye ayrılır: **kimlik doğrulaması** ve **hesap kaydı**.
@@ -654,7 +651,6 @@ Uygulamaya kayıt isteğinin tamamlandığını haber vermek için yeni bir tür
 public interface MAMEnrollmentNotification extends MAMUserNotification {
     MAMEnrollmentManager.Result getEnrollmentResult();
 }
-
 ```
 
 `getEnrollmentResult()` yöntemi, kayıt isteğinin sonucunu döndürür.  `MAMEnrollmentNotification` `MAMUserNotification`‘ın kapsamını genişlettiğinden, kayıt girişiminde bulunulan kullanıcının kimliği de sağlanır. Uygulama, [SDK’dan gelen bildirimlere kaydolma](#Register-for-notifications-from-the-SDK) bölümünde ayrıntılarıyla açıklandığı gibi, bu bildirimleri almak için `MAMNotificationReceiver` arabirimini gerçekleştirmelidir.
@@ -677,7 +673,7 @@ Intune, XML’de özel kurallar tanımlama becerisi de dahil olmak üzere Androi
 1. Uygulamanız kendi özel BackupAgent’ını **kullanmıyorsa**, Intune ilkesi uyumluluğu olan otomatik tam yedeklemelere olanak tanımak için varsayılan MAMBackupAgent’ı kullanın. Bunu yaparsanız, `android:fullBackupOnly` bildirim özniteliğini yoksayabilirsiniz çünkü bu bizim yedekleme aracımıza uygulanamaz. Uygulama bildirimine aşağıdakileri yerleştirin:
 
     ```xml
-android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
+   android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
 
 
@@ -828,7 +824,6 @@ Aşağıdaki `MAMPolicyManager` yöntemleri kimlik ayarlamak ve önceden ayarlan
   public static AppPolicy getPolicyForIdentity(final String identity);
 
   public static boolean getIsIdentityManaged(final String identity);
-
   ```
 
 >[!NOTE]
@@ -924,9 +919,9 @@ Uygulamanın kimlik ayarlayabilme özelliğine ek olarak, bir iş parçacığı 
 
 `onMAMIdentitySwitchRequired` yöntemi, `MAMService.onMAMBind` öğesinden döndürülen bir Bağlayıcı aracılığıyla yapılanlar dışındaki tüm örtük kimlik değişiklikleri için çağrılır. Varsayılan `onMAMIdentitySwitchRequired` uygulamaları hemen şu çağrıyı yapar:
 
-*  Neden RESUME_CANCELLED olduğunda, `reportIdentitySwitchResult(FAILURE)`.
+* Neden RESUME_CANCELLED olduğunda, `reportIdentitySwitchResult(FAILURE)`.
 
-*  Diğer tüm durumlarda `reportIdentitySwitchResult(SUCCESS)`.
+* Diğer tüm durumlarda `reportIdentitySwitchResult(SUCCESS)`.
 
   Çoğu uygulamanın bir kimlik anahtarını farklı bir şekilde engellemesi veya geciktirmesi beklenmez, ancak bir uygulamanın böyle yapması gerekirse aşağıdaki noktaların göz önünde bulundurulması gerekir:
 
@@ -956,7 +951,7 @@ UI iş parçacığındaki işlemler için arka plan görevlerinin başka bir iş
     protected Object doInBackgroundMAM(final Object[] params) {
         // Do operations.
     }
-    
+
     @Override
     protected void onPreExecuteMAM() {
         // Do setup.
@@ -990,7 +985,7 @@ UI iş parçacığındaki işlemler için arka plan görevlerinin başka bir iş
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
-        
+
         /**
         * Protect a file obtained from a content provider. This is intended to be used for
         * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
@@ -1032,7 +1027,6 @@ UI iş parçacığındaki işlemler için arka plan görevlerinin başka bir iş
     public interface MAMFileProtectionInfo {
         String getIdentity();
     }
-
   ```
 #### <a name="app-responsibility"></a>Uygulama Sorumluluğu
 MAM, bir `Activity` öğesinde okunan dosyalar ve görüntülenen veriler arasında otomatik olarak bir ilişki çıkaramaz. Uygulamalar, şirket verilerini görüntülemeden önce kullanıcı arabirimi kimliğini uygun şekilde *ayarlamalıdır*. Bu, dosyalardan veri okumayı içerir. Bir dosya uygulama dışında geliyorsa (bir `ContentProvider` öğesinden geliyorsa veya herkesin yazılabildiği bir konumdan okunuyorsa) uygulama, dosyadan okunan bilgileri görüntülemeden önce (`MAMFileProtectionManager.getProtectionInfo` kullanarak) dosya kimliğini belirleme *girişiminde bulunmalıdır*. `getProtectionInfo` null veya boş olmayan bir kimlik rapor ederse kullanıcı arabirimi kimliği, bu kimlikle eşleşmek üzere (`MAMActivity.switchMAMIdentity` veya `MAMPolicyManager.setUIPolicyIdentity` kullanarak) *ayarlanmalıdır*. Kimlik geçişi başarısız olursa dosyadan okunan veriler *görüntülenmemelidir*.
@@ -1157,7 +1151,6 @@ public final class MAMDataProtectionManager {
      */
     public static MAMDataProtectionInfo getProtectionInfo(final byte[] input) throws IOException;
 }
-
 ```
 
 ### <a name="content-providers"></a>İçerik Sağlayıcıları
@@ -1339,7 +1332,6 @@ Stil değişikliklerinin Intune MAM görünümlerine uygulanmasını sağlamak i
         name="logo_image"
         resource="@drawable/app_logo"/>
 </styleOverrides>
-
 ```
 
 Uygulamanızın içinde zaten mevcut olan kaynakları yeniden kullanmalısınız. Örneğin, yeşil rengini colors.xml dosyasında tanımlamalı ve bu renge burada başvuruda bulunmalısınız. Onaltılı “#0000ff" renk kodunu kullanamazsınız. Uygulama logosu için boyut üst sınırı 110 dip’tir (dp). Daha küçük bir logo resmi kullanabilirsiniz, ama en iyi görünen sonuçlar en yüksek boyutta elde edilir. 110 dip sınırını aşarsanız, resmin ölçeği küçültülür ve büyük olasılıkla bulanık bir görüntü elde edilir.
@@ -1353,7 +1345,8 @@ Aşağıda izin verilen stil özniteliklerinin, bunların denetledikleri UI öğ
 | Vurgu rengi | Vurgulandığında PIN kutusu kenarlığı <br> Köprüler |accent_color | Renk |
 | Uygulama logosu | Intune uygulaması PIN ekranında gösterilen büyük simge | logo_image | Çizilebilir |
 
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Otomatik bir APP-WE hizmeti kaydı için kullanıcı oturum açma istemi gerektirme, SDK ile tümleştirilmiş Android LOB uygulamanızı kullanmak için Intune uygulama koruma ilkelerini gerektirme ve ADAL SSO’yu etkinleştirme (isteğe bağlı)
+## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>APP-WE hizmet kaydıyla, SDK ile tümleşik Android LOB uygulamasıyla ve ADAL SSO (isteğe bağlı) ile çalışma
+<!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 Aşağıdakiler; otomatik bir APP-WE hizmet kaydı (buna bu bölümde **varsayılan kayıt** adı veriyoruz) için uygulama başlatırken kullanıcı istemi gerektirme, yalnızca Intune tarafından korunan kullanıcıların SDK ile tümleştirilmiş Android LOB uygulamanızı kullanmasına izin vermek için Intune uygulama koruma ilkelerini gerektirme hakkında bir kılavuzdur. Ayrıca SDK ile tümleştirilmiş Android LOB uygulamanız için SSO’yu nasıl etkinleştireceğinizi de açıklar. Bu, Intune özelliği olmayan kullanıcılar tarafından kullanılabilen mağaza uygulamalarında geçerli **değildir**.
 
@@ -1362,22 +1355,22 @@ Aşağıdakiler; otomatik bir APP-WE hizmet kaydı (buna bu bölümde **varsayı
 
 ### <a name="general-requirements"></a>Genel Gereksinimler
 * Intune SDK’sı ekibi, uygulamanızın Uygulama Kimliğine gereksinim duyar. Bunu bulmanın bir yolu [Azure Portalı](https://portal.azure.com/)’nda, **Tüm Uygulamalar** altındaki **Uygulama Kimliği** sütunudur. Intune SDK’sı ekibine kolaylıkla ulaşmanın yolu msintuneappsdk@microsoft.com adresine e-posta göndermektir.
-     
+
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK’sı ile çalışma
 Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulamalarına özgüdür.
 
 1. [Android için Intune SDK’sı kılavuzu](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)’nda açıklanan adımları kullanarak ADAL’ı yapılandırın.
-> [!NOTE] 
-> Uygulamanıza bağlanan “istemci kimliği” terimi, Azure portalındaki “uygulama kimliği” terimi ile aynı şeydir. 
-* SSO’yu etkinleştirmek için gereken şey “Yaygın ADAL yapılandırması” #2’dir.
+   > [!NOTE] 
+   > Uygulamanıza bağlanan “istemci kimliği” terimi, Azure portalındaki “uygulama kimliği” terimi ile aynı şeydir. 
+2. SSO’yu etkinleştirmek için gereken şey “Yaygın ADAL yapılandırması” #2’dir.
 
-2. Bildirime şu değeri koyarak varsayılan kaydı etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
-> [!NOTE] 
-> Bu, uygulamadaki tek MAM-WE tümleştirmesi olmalıdır. Başka MAMEnrollmentManager API’lerini çağırma denemeleri olursa çakışmalar ortaya çıkabilir.
+3. Bildirime şu değeri koyarak varsayılan kaydı etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+   > [!NOTE] 
+   > Bu, uygulamadaki tek MAM-WE tümleştirmesi olmalıdır. Başka MAMEnrollmentManager API’lerini çağırma denemeleri olursa çakışmalar ortaya çıkabilir.
 
-3. Bildirime şu değeri koyarak gereken MAM ilkesini etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
-> [!NOTE] 
-> Böylece kullanıcı, cihaza Şirket Portalı’nı indirmeye ve bunu kullanmadan önce varsayılan kayıt akışını tamamlamaya zorlanır.
+4. Bildirime şu değeri koyarak gereken MAM ilkesini etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+   > [!NOTE] 
+   > Böylece kullanıcı, cihaza Şirket Portalı’nı indirmeye ve bunu kullanmadan önce varsayılan kayıt akışını tamamlamaya zorlanır.
 
 ## <a name="limitations"></a>Sınırlamalar
 
@@ -1403,7 +1396,7 @@ Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri g
     ```
 
     İkinci durumda birden çok kimlikli uygulamalar, iş parçacığı kimliğini uygun şekilde ayarlamaya (veya `getPolicy` çağrısına bir açık kimlik geçirmeye) özen göstermelidir.
-    
+
 ### <a name="exported-services"></a>Dışarı aktarılan hizmetler
 
  Intune Uygulama SDK’sına dahil edilen AndroidManifest.xml dosyası, **MAMNotificationReceiverService** öğesini içerir. Bu öğenin, Şirket Portalı’nın yönetilen bir uygulamaya bildirim göndermesine izin vermek üzere dışarı aktarılan bir hizmet olması gerekir. Hizmet, yalnızca Şirket Portalı’nın bildirim göndermesine izin verildiğinden emin olmak için çağıranı denetler.

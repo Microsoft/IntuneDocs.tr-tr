@@ -15,17 +15,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b09622db88288ccc5b4866cb71ba902d969c0487
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 2b25140cb5c3c8c70ff42186352362c57dcf6ee7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune Veri Ambarı API uç noktası
 
 Intune Veri Ambarı API’sini, belirli rol tabanlı erişim denetimlerine ve Azure AD kimlik bilgilerine sahip bir hesapla kullanabilirsiniz. Daha sonra REST istemcinizi, OAuth 2.0 kullanarak Azure AD’de yetkilendirirsiniz. Ve son olarak, veri ambarı kaynağı olarak kullanılacak anlamlı bir URL oluşturursunuz.
 
-[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+[!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Yetkilendirme
 
@@ -38,7 +38,7 @@ Daha fazla bilgi için bkz. [OAuth 2.0 ve Azure Active Directory kullanarak web 
 Veri Ambarı API uç noktaları, her kümenin varlıklarını okur. Bu API, bir **GET** HTTP fiili ve bir sorgu seçenekleri alt kümesini destekler.
 
 Intune URL’si aşağıdaki biçimdedir:  
-https://fef.{***konum***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{***varlık-koleksiyonu***}?api-version={***api-sürümü***}
+https://fef.{<strong><em>location</em></strong>}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{<strong><em>entity-collection</em></strong>}?api-version={<strong><em>api-version</em></strong>}
 
 Bu URL aşağıdaki öğeleri içerir:
 

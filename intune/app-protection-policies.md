@@ -1,30 +1,29 @@
 ---
-title: "Uygulama koruma ilkelerini oluşturma ve dağıtma"
+title: Uygulama koruma ilkelerini oluşturma ve dağıtma
 titleSuffix: Microsoft Intune
-description: "Microsoft Intune uygulama koruma ilkelerini oluşturmayı ve atamayı öğrenin."
-keywords: 
+description: Microsoft Intune uygulama koruma ilkelerini oluşturmayı ve atamayı öğrenin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8ffe409e376ec2d15c537fb6ac258e5b3b71cdf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune uygulama koruma ilkelerini oluşturmayı ve kullanıcılarınıza atamayı öğrenin. Bu konu, mevcut ilkelerde nasıl değişiklik yapılacağını da açıklar.
 
@@ -37,28 +36,28 @@ Uygulama koruma ilkeleri, Intune tarafınızdan yönetilen veya yönetilmeyen ci
 MAM destekli uygulamalar listesi arıyorsanız bkz. [MAM uygulamaları listesi](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
-1.  **Mobil uygulamalar** iş yükünde, **Yönet** bölümünden **Uygulama koruma ilkeleri**’ni seçin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar.
+1. **Mobil uygulamalar** iş yükünde, **Yönet** bölümünden **Uygulama koruma ilkeleri**’ni seçin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar.
 2. **İlke ekle**‘yi seçin.
 
-  ![“İlke ekle” dikey penceresinin ekran görüntüsü](./media/app-protection-add-policy.png)
+   ![“İlke ekle” dikey penceresinin ekran görüntüsü](./media/app-protection-add-policy.png)
 
-3.  İlke için bir ad yazın, kısa bir açıklama ekleyin ve ilkeniz için platform türünü seçin. Gerekirse, her platform için birden çok ilke oluşturabilirsiniz.
+3. İlke için bir ad yazın, kısa bir açıklama ekleyin ve ilkeniz için platform türünü seçin. Gerekirse, her platform için birden çok ilke oluşturabilirsiniz.
 
-4.  Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**'ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçin.
+4. Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar dikey penceresini** açmak için **Uygulamalar**'ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçin.
 5. Uygulamaları seçtikten sonra seçiminizi kaydetmek için **Seç**’i seçin.
 
     > [!IMPORTANT]
     > Bir ilke oluşturmak için en az bir uygulama seçmeniz gerekir.
 
-6.  **Ayarlar**’ı açmak için **İlke ekle** dikey penceresinde **Gerekli ayarları yapılandır**’ı seçin.
+6. **Ayarlar**’ı açmak için **İlke ekle** dikey penceresinde **Gerekli ayarları yapılandır**’ı seçin.
 
-    İlke ayarlarının iki kategorisi vardır: **Veri konumu değiştirme** ve **Erişim**.  Veri konumunu değiştirme ilkeleri, uygulamalara giren ve çıkan veri hareketlerine uygulanabilir. Erişim ilkeleri, son kullanıcının bir çalışma bağlamında uygulamalara nasıl eriştiğini belirler.
-    Başlamanıza yardımcı olması için ilke ayarlarına varsayılan değerler atanmıştır. Varsayılan değerler gereksinimlerinizi karşılıyorsa değişiklik yapmanız gerekmez.
+   İlke ayarlarının iki kategorisi vardır: **Veri konumu değiştirme** ve **Erişim**.  Veri konumunu değiştirme ilkeleri, uygulamalara giren ve çıkan veri hareketlerine uygulanabilir. Erişim ilkeleri, son kullanıcının bir çalışma bağlamında uygulamalara nasıl eriştiğini belirler.
+   Başlamanıza yardımcı olması için ilke ayarlarına varsayılan değerler atanmıştır. Varsayılan değerler gereksinimlerinizi karşılıyorsa değişiklik yapmanız gerekmez.
 
-    > [!TIP]
-    > Bu ilke ayarları, yalnızca uygulamalar iş bağlamında kullanılırken uygulanır. Son kullanıcı, uygulamayı kişisel bir görev için kullanırken bu ilkelerden etkilenmez.
+   > [!TIP]
+   > Bu ilke ayarları, yalnızca uygulamalar iş bağlamında kullanılırken uygulanır. Son kullanıcı, uygulamayı kişisel bir görev için kullanırken bu ilkelerden etkilenmez.
 
-7.  Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** bölmesine geri dönersiniz. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
+7. Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** bölmesine geri dönersiniz. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
 8. Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** dikey penceresine geri dönersiniz.
 9. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
 
@@ -119,6 +118,16 @@ Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama otu
 2.  **İlke ayarları**’nı seçerek **İlke ayarları** bölmesini açın.
 
 3.  Ayarları değiştirin ve **Kaydet** simgesini seçerek yaptığınız değişiklikleri kaydedin.
+
+## <a name="target-app-protection-policies-based-on-device-management-state"></a>Cihaz yönetim durumuna bağlı olarak uygulama koruma ilkeleri hedefleme
+Pek çok kuruluşta son kullanıcıların Intune Mobil Cihaz Yönetimi (MDM) ile yönetilen cihazları (şirkete ait cihazlar gibi) ve yalnızca Intune uygulama koruma ilkeleriyle korunan yönetilmeyen cihazları (KCG cihazlar gibi) kullanmalarına izin verilir.
+
+Intune uygulama koruma ilkeleri, bir kullanıcının kimliğine hedeflendiği için kullanıcı koruma ayarları eskiden beri hem kaydedilmiş (MDM ile yönetilen) ve kaydedilmemiş (MDM’siz) cihazlara uygulanır. Bu sebeple bir Intune uygulama koruma ilkesini Intune’a kayıtlı olan veya olmayan iOS ve Android cihazlara hedefleyebilirsiniz. Yönetilmeyen cihazlar için katı veri kaybı önleme (DLP) denetimlerinin etkin olduğu bir koruma ilkesi ve MDM ile yönetilen cihazlar için DLP denetimlerinin daha esnek olabileceği ayrı bir koruma ilkesi yapılandırabilirsiniz. 
+
+Bu ilkeleri oluşturmak için Intune konsolunda **Mobil uygulamalar** > **Uygulama koruma** ilkelerine gözatın ve **Bir ilke ekle**’ye tıklayın. Mevcut bir koruma ilkesini de düzenleyebilirsiniz. Uygulama koruma ilkesinin hem yönetilen hem yönetilmeyen cihazlara uygulanmasını istiyorsanız, **Tüm uygulama türlerine hedefle**’nin varsayılan değer olan **Evet** olarak ayarlandığını doğrulayın. Yönetim durumuna bağlı olarak ayrı atamalar yapmak istiyorsanız **Tüm uygulama türlerine hedefle** seçeneğini **Hayır** olarak ayarlayın. 
+
+> [!NOTE]
+> Yönetim durumuna bağlı uygulama koruma ilkeleri hakkında belirli iOS destek bilgilerine ulaşmak istiyorsanız bkz. [Yönetim durumuna bağlı olarak hedeflenen MAM koruma ilkeleri](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
 
 ## <a name="policy-settings"></a>İlke ayarları
 iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdaki bağlantılardan birini seçin:

@@ -1,37 +1,35 @@
 ---
-title: "Microsoft Intune’da bilinen sorunlar"
-titlesuffix: Microsoft Intune
-description: "Microsoft Intune’da bilinen sorunlar hakkında bilgi edinin."
-keywords: 
+title: Microsoft Intune - Azure’da bilinen sorunlar | Microsoft Docs
+description: Microsoft Intune’da bilinen sorunlar hakkında bilgi edinin.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 03/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02efc7e2369c590e2d21ac8c27db54ffbaae38c1
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-
-Microsoft Intune’daki tüm bilinen sorunlar hakkında bilgi edinmek için bu konuyu kullanın.
+Microsoft Intune’daki tüm bilinen sorunlar hakkında bilgi edinmek için bu makaleyi kullanın.
 
 Burada listelenmeyen bir hatayı bildirmek istiyorsanız, [bir destek isteği açın](get-support.md).
 
-Intune için yeni bir özellik talep etmek istiyorsanız, [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) sitemizde bir rapor doldurabilirsiniz.
+Intune için yeni bir özellik talep etmek istiyorsanız, [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) sitesinde bir rapor doldurabilirsiniz.
 
 ## <a name="migration"></a>Geçiş
 
@@ -45,7 +43,7 @@ Intune’dan Azure portalına geçiş yaptığınızda **Tüm Kullanıcılar - b
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Geçirilen ilkeler için durum dikey pencereleri çalışmıyor
 
-Azure portalındaki klasik portaldan geçirilen ilkeler için durum bilgilerini görüntüleyemezsiniz. Ancak, bu ilkelerin raporlarını klasik portalda görüntülemeye devam edebilirsiniz. Geçirilen yapılandırma ilkelerinin durum bilgilerini görüntülemek için bunları Azure portalında yeniden oluşturun.
+Azure portalındaki Azure klasik portalından geçirilen ilkeler için durum bilgilerini görüntüleyemezsiniz. Ancak, bu ilkelerin raporlarını klasik portalda görüntülemeye devam edebilirsiniz. Geçirilen yapılandırma ilkelerinin durum bilgilerini görüntülemek için bunları Azure portalında yeniden oluşturun.
 
 ## <a name="apps"></a>Uygulamalar
 
@@ -66,9 +64,8 @@ Intune'a kayıtlı olmayan cihazlarda, bir Windows Bilgi Koruması ilkesi için 
 Ek etki alanları eklerseniz (**Gelişmiş ayarlar** > **Ağ çevresi** > **Korumalı bir etki alanı ekle** kullanarak), ilkeyi kaydedemezsiniz. Gördüğünüz hata iletisi yakında daha doğru hale getirilecektir.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN istemci desteği
+Cisco AnyConnect VPN istemcisinin en son sürümü (4.0.07072) şu anda Intune ile uyumlu değildir. Intune'un gelecekteki bir güncelleştirmesi, bu VPN istemci sürümüyle uyumluluğu içerecektir. O zamana kadar Cisco AnyConnect VPN istemcinizi güncelleştirmemenizi ve mevcut sürümü kullanmaya devam etmenizi öneririz.
 
-Cisco AnyConnect VPN istemcisinin en son sürümü (4.0.07072) şu anda Intune ile uyumlu değildir.
-Intune'un gelecekteki bir güncelleştirmesi, bu VPN istemci sürümüyle uyumluluğu içerecektir. O zamana kadar Cisco AnyConnect VPN istemcinizi güncelleştirmemenizi ve mevcut sürümü kullanmaya devam etmenizi öneririz.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>macOS Sierra cihazlarda sayısal parola türü kullanma
 

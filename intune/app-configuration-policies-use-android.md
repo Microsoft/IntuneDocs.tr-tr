@@ -1,31 +1,31 @@
 ---
-title: "Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme"
+title: Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 titlesuffix: Microsoft Intune
-description: "Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın."
-keywords: 
+description: Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a448c33e8324492c68d509a12d5901f41ed4873a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu ilkeleri kullanıcılara ve cihazlara doğrudan atamazsınız. Bunun yerine, ilkeyi bir uygulamayla ilişkilendirir ve uygulamayı atarsınız. İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde, genellikle ilk çalıştırıldığında kullanılır.
+Android for Work uygulamalarına ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Uygulama için yapılandırma ayarlarını belirtmek adına uygulama geliştiricisinin Android yönetilen uygulama yapılandırma ayarlarını kullanıma sunması gerekir. Ayarların uygulanmasını istediğiniz kullanıcı grubuna uygulama yapılandırma ilkesini atayın.  İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde, genellikle ilk çalıştırıldığında kullanılır.
 
 > [!Note]  
 > Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın, uygulama yapılandırma ilkelerini destekleyecek şekilde oluşturulup oluşturulmadığını öğrenmek için uygulamanın geliştiricisine başvurun.
@@ -50,16 +50,27 @@ Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarla
 
 ## <a name="use-the-configuration-designer"></a>Yapılandırma tasarımcısını kullanma
 
-Intune’a kaydedilen veya kaydedilmeyen cihazlardaki uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Tasarımcı, belirli yapılandırma anahtarları ve değerleri yapılandırmanıza imkan tanır. Ayrıca her bir değer için veri türünü belirtmeniz gerekir.
+Yapılandırmayı destekleyen Android uygulamaları için yapılandırma tasarımcısını kullanabilirsiniz. Yapılandırma, Intune’a kayıtlı cihazlarda uygulanır. Tasarımcı, bir uygulamanın kullanıma sunduğuna kıyasla daha ayrıntılı yapılandırma değerleri yapılandırmanıza imkan tanır.
 
+**Ekle**’yi seçerek uygulama için belirtmek istediğiniz yapılandırma ayarları listesini seçin.  
 Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
 
-  - **Yapılandırma anahtarı**  
-     Belirli ayar yapılandırmalarını benzersiz olarak tanımlayan anahtar.
   - **Değer türü**  
-    Yapılandırma değerinin veri türü. Türler Tamsayı, Gerçek, Dize ve Boole değerlerini içerir.
+    Yapılandırma değerinin veri türü. Dize değer türleri için isteğe bağlı olarak bir değişken veya sertifika profili seçebilirsiniz.
   - **Yapılandırma değeri**  
-    Yapılandırmanın değeri. 
+    Yapılandırmanın değeri. Değer türü için bir değişken veya sertifika seçerseniz açılan yapılandırma değeri penceresindeki değişken veya sertifika profili listesinden seçim yapabilirsiniz.  Bir sertifika seçerseniz cihaza dağıtılan sertifikanın sertifika diğer adı, çalışma zamanında doldurulur.
+    
+### <a name="supported-variables-for-configuration-values"></a>Yapılandırma değerleri için desteklenen değişkenler
+
+Yapılandırma değeri olarak değişken seçerseniz şunlar arasından seçim yapabilirsiniz:
+- Kullanıcı Asıl Adı — örneğin **John@contoso.com**
+- E-posta — örneğin **John@contoso.com**
+- Kısmi UPN — örneğin **John**
+- Hesap Kimliği — örneğin **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- Cihaz Kimliği — örneğin **b9841cd9-9843-405f-be28-b2265c59ef97**
+- Kullanıcı Kimliği — örneğin **3ec2c00f-b125-4519-acf0-302ac3761822**
+- Kullanıcı Adı — örneğin **John Doe**
+
 
 ## <a name="enter-the-json-editor"></a>JSON düzenleyicisini girme
 

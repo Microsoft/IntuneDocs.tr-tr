@@ -15,15 +15,15 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile Managed Browser ilkelerini kullanarak İnternet erişimini yönetme
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Managed Browser, kuruluşunuzda kullanılmak üzere genel uygulama mağazalarından indirebileceğiniz bir web tarayıcısı uygulamasıdır. Intune ile yapılandırıldığında Manager Browser:
 - MyApps hizmeti aracılığıyla Çoklu Oturum Açma ile şirket sitelerine ve SaaS uygulamalarına erişmek ve bu esnada web verilerini korumak için kullanılabilir.
@@ -91,6 +91,8 @@ Azure AD bağlantılı web uygulamalarının mobil platformlarda Intune Managed 
 9. **Atamalar** bölümünde **Bulut uygulamaları**’nı seçerek bu ilkeyle hangi uygulamaları koruyacağınızı seçin.
 
 Yukarıdaki ilke yapılandırıldıktan sonra kullanıcılar, bu ilkeyle koruduğunuz Azure AD bağlantılı web uygulamalarına erişmek için Intune Managed Browser’ı kullanmaya zorlanacaktır. Bu senaryoda kullanıcılar yönetilmeyen bir tarayıcı kullanmaya çalışırsa, Intune Managed Browser kullanmaları gerektiğine dair bir bildirim göreceklerdir.
+
+Managed Browser, klasik Koşullu Erişim ilkelerini desteklemez. Daha fazla bilgi için bkz. [Azure portalında klasik ilkeleri geçirme](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
 
 ##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Intune Managed Browser’da Azure AD bağlantılı web uygulamalarında çoklu oturum açma
 
@@ -164,11 +166,11 @@ Managed Browser ve Azure AD Uygulama Ara Sunucusu’nun şirket içi web uygulam
 
 Bu ayar ile kullanıcıların Managed Browser’ı başlattıklarında veya yeni bir sekme oluşturduklarında karşılarına çıkacak giriş sayfasını yapılandırabilirsiniz. Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
-|||
-|-|-|
-|Anahtar|Değer|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>Örnek: **https://www.bing.com**|
 
+|                                                                   |                                                                                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+|                                Anahtar                                |                                                           Değer                                                            |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>Örnek: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Managed Browser için yer işaretleri yapılandırma
 
@@ -180,19 +182,21 @@ Bu ayar ile Managed Browser kullanıcılarına sunulmak üzere bazı yer işaret
 
 Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
-|||
-|-|-|
-|Anahtar|Değer|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|Bu yapılandırmanın değeri, bir yer işaretleri listesidir. Her bir yer işareti, yer işareti adı ve URL’sinden oluşur. Başlık ve URL’yi **&#124;** karakteriyle ayırın.<br><br>Örnek: **Microsoft Bing&#124;https://www.bing.com**<br><br>Birden çok yer işareti yapılandırmak için her bir başlık-URL ikilisini çift karakterle ayırın, **&#124;&#124;**<br><br>Örnek: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
+
+|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                Anahtar                                 |                                                                                                                                                                                                                                                         Değer                                                                                                                                                                                                                                                          |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Bu yapılandırmanın değeri, bir yer işaretleri listesidir. Her bir yer işareti, yer işareti adı ve URL’sinden oluşur. Başlık ve URL’yi <strong>&#124;</strong> karakteriyle ayırın.<br><br>Örnek: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Birden çok yer işareti yapılandırmak için her bir başlık-URL ikilisini çift karakterle ayırın, <strong>&#124;&#124;</strong><br><br>Örnek: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Managed Browser için izin verilen ve engellenen URL’leri belirtme
 
 Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
-|||
-|-|-|
-|Anahtar|Değer|
-|Aşağıdakilerden birini seçin:<br><br>- İzin verilen URL'leri belirtme (yalnızca bu URL'lere izin verilir; başka sitelere erişilemez): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Engellenen URL’leri belirtme (tüm diğer sitelere erişilebilir): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|Bir anahtara karşılık gelen değer bir URL listesidir. İzin vermek veya engellemek istediğiniz tüm URL’leri **&#124;** kanalla ayrılan tek bir değer olarak girin.<br><br>Örnekler:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+
+|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                               Anahtar                                                                                                                                                                |                                                                                                                                                                                    Değer                                                                                                                                                                                    |
+| Aşağıdakilerden birini seçin:<br><br>- İzin verilen URL'leri belirtme (yalnızca bu URL'lere izin verilir; başka sitelere erişilemez): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Engellenen URL’leri belirtme (tüm diğer sitelere erişilebilir): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | Bir anahtara karşılık gelen değer bir URL listesidir. İzin vermek veya engellemek istediğiniz tüm URL’leri <strong>&#124;</strong> kanalla ayrılan tek bir değer olarak girin.<br><br>Örnekler:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
 
 >[!IMPORTANT]
 >Her iki anahtarı birden belirtmeyin. Her iki anahtar da aynı kullanıcıya hedeflenirse en kısıtlayıcı seçenek olarak izin verme anahtarı kullanılır.
@@ -201,52 +205,52 @@ Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aş
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>İzin verilen ve engellenen URL'ler için URL biçimi
 İzin verilenler ve engellenenler listesinde URL belirtirken kullanabileceğiniz izin verilen biçimler ve joker karakterler hakkında bilgi almak için aşağıdaki bilgileri kullanın:
 
--   Joker karakter sembolünü (**&#42;**) aşağıdaki izin verilen örnekler listesinde yer alan kurallara uygun olarak kullanabilirsiniz:
+- Joker karakter sembolünü (**&#42;**) aşağıdaki izin verilen örnekler listesinde yer alan kurallara uygun olarak kullanabilirsiniz:
 
--   Tüm URL'leri listeye eklerken başlarına **http** veya **https** önekini yazdığınızdan emin olun.
+- Tüm URL'leri listeye eklerken başlarına **http** veya **https** önekini yazdığınızdan emin olun.
 
--   Adreste bağlantı noktası numaraları belirtebilirsiniz. Bir bağlantı noktası numarası belirtmezseniz, kullanılan değerler şöyle olacaktır:
+- Adreste bağlantı noktası numaraları belirtebilirsiniz. Bir bağlantı noktası numarası belirtmezseniz, kullanılan değerler şöyle olacaktır:
 
-    -   http için bağlantı noktası 80
+  -   http için bağlantı noktası 80
 
-    -   https için bağlantı noktası 443
+  -   https için bağlantı noktası 443
 
-    Bağlantı noktası numarası için joker karakter kullanımı desteklenmez. Örneğin **http&colon;//www&period;contoso&period;com:*;** ve **http&colon;//www&period;contoso&period;com: /*;** desteklenmez.
+  Bağlantı noktası numarası için joker karakter kullanımı desteklenmez. Örneğin <strong>http&colon;//www&period;contoso&period;com:*;</strong> ve <strong>http&colon;//www&period;contoso&period;com: /*;</strong> desteklenmez.
 
--   URL belirtirken kullanabileceğini izin verilen desenler hakkında bilgi almak için aşağıdaki tabloyu kullanın:
+- URL belirtirken kullanabileceğini izin verilen desenler hakkında bilgi almak için aşağıdaki tabloyu kullanın:
 
-|URL|Ayrıntılar|Eşleşir|Eşleşmez|
-|-------|---------------|-----------|------------------|
-|http://www.contoso.com|Tek bir sayfayla eşleşir|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-|http://contoso.com|Tek bir sayfayla eşleşir|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-|http://www.contoso.com/&#42;|www.contoso.com ile başlayan tüm URL'lerle eşleşir|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-|http://&#42;.contoso.com/&#42;|contoso.com altındaki tüm alt etki alanlarıyla eşleşir|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-|http://www.contoso.com/images|Tek bir klasörle eşleşir|www.contoso.com/images|www.contoso.com/images/dogs|
-|http://www.contoso.com:80|Bağlantı noktası numarası kullanarak tek bir sayfayla eşleşir|http://www.contoso.com:80|
-|https://www.contoso.com|Güvenli tek bir sayfayla eşleşir|https://www.contoso.com|http://www.contoso.com|
-|http://www.contoso.com/images/&#42;|Tek bir klasör ve tüm alt klasörleriyle eşleşir|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     Ayrıntılar                      |                                                Eşleşir                                                |                                Eşleşmez                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              Tek bir sayfayla eşleşir               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              Tek bir sayfayla eşleşir               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | www.contoso.com ile başlayan tüm URL'lerle eşleşir |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     contoso.com altındaki tüm alt etki alanlarıyla eşleşir     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             Tek bir klasörle eşleşir              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  Bağlantı noktası numarası kullanarak tek bir sayfayla eşleşir   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          Güvenli tek bir sayfayla eşleşir           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    Tek bir klasör ve tüm alt klasörleriyle eşleşir    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   Belirtemeyeceğiniz bazı girdi örnekleri aşağıda verilmiştir:
+- Belirtemeyeceğiniz bazı girdi örnekleri aşağıda verilmiştir:
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP adresleri
+  - IP adresleri
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS’ta Managed Browser kullanarak yönetilen uygulama günlüklerine erişme
 

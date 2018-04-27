@@ -1,28 +1,28 @@
 ---
-title: "Telekom gider yönetimi hizmeti ayarlama"
+title: Telekom gider yönetimi hizmeti ayarlama
 titleSuffix: Microsoft Intune
-description: "Intune'u Saaswedo telekom gider yönetimi hizmetiyle tümleştirin."
+description: Intune'u Saaswedo telekom gider yönetimi hizmetiyle tümleştirin.
 keywords: Saaswedo
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef755a1fd5f94342f551ac168136217dbc82b244
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: af81b4cca369cae69cff6ea52bb5df9ce369cd7f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune'da telekom gider yönetimi hizmeti ayarlama
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune, şirkete ait mobil cihazlarda veri kullanımından kaynaklanan telekom giderlerini yönetmenizi sağlar. Bu özelliği etkinleştirmek için Intune, üçüncü taraf yazılım geliştiricisi Saaswedo’nun Datalert telekom gider yönetimi çözümüyle tümleştirilmiştir. Datalert, telekom veri kullanımını yönetmenize olanak tanıyan gerçek zamanlı bir telekom gider yönetimi yazılımıdır. Intune tarafından yönetilen cihazlarınızda pahalı ve beklenmedik düzeyde fazla veri ve dolaşım kullanımlarını önlemeye yardımcı olur.
 
@@ -72,7 +72,7 @@ Başlamadan önce, bir Intune ve bir Datalert telekomünikasyon gider yönetimi 
 
     Aşağıdaki ekran görüntüsünde, bağlantı başarılı olduktan sonra görmeniz gereken yeşil onay işaretleri gösterilir.
 
-  ![Başarılı bağlantıyı gösteren Datalert sayfası](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Başarılı bağlantıyı gösteren Datalert sayfası](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2. Adım: Telekomünikasyon gider yönetimi özelliğinin Intune’da etkin olup olmadığını denetleme
 
@@ -88,7 +88,7 @@ Yukarıdaki 1. Adımı tamamladıktan sonra, bağlantınızın otomatik olarak e
 
    Sayfanın en üstünde **Etkin** bağlantı durumu olup olmadığına bakın.
 
-  ![Datalert bağlantı durumunu Etkin olarak gösteren Intune sayfası](./media/tem-azure-portal-enable-service.png)
+   ![Datalert bağlantı durumunu Etkin olarak gösteren Intune sayfası](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>3. Adım: Datalert uygulamasını şirket için kaydedilmiş cihazlara dağıtma
 
@@ -136,13 +136,13 @@ Her platform için Intune'da Datalert uygulamasını oluşturmak üzere şu adı
 
 4. Bir grup için uygulama yüklemeyi, gerekli mi yoksa isteğe bağlı mı yapacağınızı seçin. Aşağıdaki örnek ekran görüntüsü, yüklemenin gerekli olduğu durumu gösterir; bu durumda kullanıcıların, cihazlarını kaydettikten sonra Datalert uygulamasını yüklemeleri gerekir.
 
-  ![İlke ekle bölmesinin ekran görüntüsü](./media/tem-assign-datalert-app-to-device-group.png)
+   ![İlke ekle bölmesinin ekran görüntüsü](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. Adım: Şirket tarafından ödenen telefon hatlarını Datalert konsoluna ekleme
 
 Intune ve Datalert hizmetlerini birbiriyle iletişim kuracak şekilde yapılandırdınız. Şimdi şirket tarafından ödenen telefon hatlarınızı Datalert konsoluna eklemeniz ve şebeke kullanımı veya gezici kullanım ihlallerine yönelik eşikler ve eylemler tanımlamanız gerekir. Şirket tarafından ödenen telefon hatlarını Datalert konsoluna el ile ekleyebileceğiniz gibi, cihaz Intune’a kaydedildikten sonra bunları otomatik olarak da ekleyebilirsiniz.
 
-Bu öğeleri ayarlamak için [Microsoft Intune için Datalert kurulumu sayfasına](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup) giderek **Ayarlar** sekmesi altındaki kurulum sihirbazında sunulan adımları izleyin.
+Bu öğeleri ayarlamak için [Microsoft Intune için Datalert kurulumu sayfasına](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup)) giderek **Ayarlar** sekmesi altındaki kurulum sihirbazında sunulan adımları izleyin.
 
   ![İlke ekle bölmesinin ekran görüntüsü](./media/tem-add-phone-lines-to-datalert-console.png)
 

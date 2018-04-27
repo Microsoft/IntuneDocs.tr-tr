@@ -1,31 +1,31 @@
 ---
-title: "Windows mağazası uygulamalarını Microsoft Intune’a ekleme"
-titleSuffix: 
-description: "Microsoft Intune'a Windows mağazası uygulamaları ekleme hakkında bilgi edinin."
-keywords: 
+title: Microsoft Store uygulamalarını Microsoft Intune’a ekleme
+titleSuffix: ''
+description: Microsoft Intune’a Microsoft Store (Windows Store) uygulamalarını ekleme hakkında bilgi edinin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e2280ad72bbd353d80af316cde436e8ffc79d1f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 511cf2e01a2f5db93f0e0db9dbe2a32326c17723
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows mağazası uygulamalarını Microsoft Intune’a ekleme
+# <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store uygulamalarını Microsoft Intune’a ekleme
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune’a eklemelisiniz. Aşağıdaki adımlar Microsoft Intune'a bir Windows mağaza uygulaması eklemenizi sağlar.
+Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune’a eklemelisiniz. Aşağıdaki adımlar Microsoft Intune’a bir Microsoft Store uygulaması eklemenizi sağlar.
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
@@ -51,5 +51,4 @@ Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune
 Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
-
 - [Uygulamaları gruplara ekleme](apps-deploy.md)

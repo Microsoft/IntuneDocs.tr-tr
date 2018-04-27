@@ -1,29 +1,29 @@
 ---
-title: "Mobil cihaz kaydının önkoşulları"
-description: "Mobil cihaz yönetimi (MDM) önkoşullarını ayarlayın ve farklı işletim sistemlerini kaydetmeye hazır olun."
-keywords: 
+title: Mobil cihaz kaydının önkoşulları
+description: Mobil cihaz yönetimi (MDM) önkoşullarını ayarlayın ve farklı işletim sistemlerini kaydetmeye hazır olun.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune’da mobil cihaz yönetimi için önkoşullar
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Çalışanların kendi cihazlarını Intune’a kaydetmesini etkinleştirmek için aşağıdaki adımları uygulamanız gerekir. Şirkete ait cihazları yönetmek için de aynı adımlar gerekir.
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 10/10/2017
 
 Configuration Manager ile Intune mu arıyorsunuz?
 > [!div class="button"]
-[SCCM belgelerini görüntüleyin >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [SCCM belgelerini görüntüleyin >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>1. Adım: Bağlantıları etkinleştirme
 
@@ -80,14 +80,15 @@ Intune Şirket Portalı, kullanıcıların şirket verilerine eriştiği ve ciha
 
 Şirket adı, Şirket Portalı’nın başlığı olarak görüntülenir. Kullanıcılara kişi bilgileri ve ayrıntıları Şirket Portalı’nın BT’ye Başvur ekranında görüntülenir. Gizlilik bildirimini, kullanıcı gizlilik bağlantısına tıkladığında görüntülenir.
 
-|Alan adı|Uzunluk üst sınırı|Daha fazla bilgi|
-    |----------|------------------------|----------------|
-    |Şirket adı|40|Bu ad Şirket Portalı’nın başlığı olarak gösterilir. **Not**: Yalnızca alfasayısal karakterler. Bu alan özel karakterleri desteklemez.|
-    |BT departmanı ilgili kişi adı|40|Bu ad **BT’ye Başvur**sayfasında gösterilir.|
-    |BT departmanı telefon numarası|20|Bu iletişim numarası **BT'ye Başvur** sayfasında gösterilir.|
-    |BT departmanı e-posta adresi|40|Bu iletişim adresi **BT'ye Başvur** sayfasında gösterilir. **alias@domainname.com** biçiminde geçerli bir e-posta adresi girmeniz gerekir.|
-    |Ek bilgiler|120|Bu bilgiler **BT'ye Başvur** sayfasında gösterilir.|
-    |Şirket gizlilik bildirimi URL'si|79|Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. https://www.contoso.com biçiminde geçerli bir URL girmelisiniz.|
+
+|          Alan adı           | Uzunluk üst sınırı |                                                                                       Daha fazla bilgi                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Şirket adı          |     40     |                Bu ad Şirket Portalı’nın başlığı olarak gösterilir. <strong>Not</strong>: Yalnızca alfasayısal karakterler. Bu alan özel karakterleri desteklemez.                |
+|  BT departmanı ilgili kişi adı   |     40     |                                                                Bu ad <strong>BT’ye Başvur</strong>sayfasında gösterilir.                                                                |
+|  BT departmanı telefon numarası   |     20     |                                                           Bu iletişim numarası <strong>BT'ye Başvur</strong> sayfasında gösterilir.                                                           |
+|  BT departmanı e-posta adresi  |     40     |             Bu iletişim adresi <strong>BT'ye Başvur</strong> sayfasında gösterilir. <strong>alias@domainname.com</strong> biçiminde geçerli bir e-posta adresi girmeniz gerekir.              |
+|    Ek bilgiler     |    120     |                                                            Bu bilgiler <strong>BT'ye Başvur</strong> sayfasında gösterilir.                                                             |
+| Şirket gizlilik bildirimi URL'si |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. https://www.contoso.com biçiminde geçerli bir URL girmeniz gerekir. |
 
 ### <a name="support-contacts"></a>Destek kişileri
 Şirket Portalı’nda kullanıcılara, çevrimiçi desteğe erişebilmeleri için destek web sitesi gösterilir.

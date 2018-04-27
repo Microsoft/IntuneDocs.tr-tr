@@ -14,11 +14,11 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ab616c373482109ccd402199f7b0de69fe27348
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 74f5a7b2e4aab1758922902c1af9c385a7bff69f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
@@ -63,7 +63,7 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 - Son kullanıcının, Azure Active Directory hesabına bağlı bir [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) posta kutusuna ve lisansına sahip olması gerekir.
 
   >[!NOTE]
-  > Outlook mobil uygulaması şu anda yalnızca Microsoft Exchange Online’ı destekler ve Exchange şirket içi sürümünü veya Office 365’e Özel Exchange’i desteklemez.
+  > Outlook mobil uygulaması şu anda yalnızca Microsoft Exchange Online için Intune Uygulama Koruması’nı ve [Hibrit modern kimlik doğrulaması ile Exchange Server](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)’ı destekler ve Exchange’deki Office 365 Özel’i desteklemez.
 
 **[Word, Excel ve PowerPoint](https://products.office.com/business/office) uygulamalarını kullanmak için ek gereksinimler nelerdir?**
 

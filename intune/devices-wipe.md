@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan cihazları Intune’dan kaldırabilirsiniz. Bu işlemi **Şirket verilerini kaldır** veya **Fabrika sıfırlaması** eylemlerini kullanarak yapabilirsiniz. Kullanıcılar Intune'a kayıtlı kişiye ait cihazlara Intune Şirket Portalı’ndan uzaktan komut da verebilir.
 
@@ -72,7 +72,7 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve **Şirket verileri
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Yönetim profili kaldırılır.|
 |E-posta|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
-|Outlook|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır.|
+|Outlook|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır. Bu, önce Outlook mobil uygulamasının iOS kullanıcılarına Gerekli uygulama olarak dağıtılmasını gerektirir.|
 |Azure AD'den ayrılma|Azure AD kaydı kaldırılır.|
 |Kişiler |Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 

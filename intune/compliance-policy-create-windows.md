@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 21ff7b173bb466ee25dd82c82d3668de110b823d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için cihaz uyumluluk ilkesi oluşturma
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Windows için Intune cihaz uyumluluk ilkesi, Windows cihazlarının uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlar. Cihaz uyumluluk ilkelerini koşullu erişimle kullanarak şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz ve cihaz raporları alarak uyumsuzluk için eylemler uygulayabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri hakkında daha fazla bilgi edinmek ve uyumluluk ilkesi oluşturmadan önce ilgilenmeniz gereken önkoşulları öğrenmek için, [Cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md) konusuna bakın.
 
@@ -74,24 +74,27 @@ Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkey
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>Sistem güvenliği ayarları
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone cihazları için uyumluluk ilkesi ayarları
 
-### <a name="password"></a>Parola
+Bu bölümde listelenen ayarlar Windows Phone 8.1 ve üstünde desteklenir.
+### <a name="system-security-settings"></a>Sistem güvenliği ayarları
+
+#### <a name="password"></a>Parola
 
 - **Mobil cihazların kilidini açmak için parola gerektir:** Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini gerektirmek için bunu **Evet** olarak ayarlayın.
 - **Basit parolalara izin ver:** Kullanıcıların '**1234**' veya '**1111**' gibi basit parolalar oluşturmalarına izin vermek için bunu **Evet** olarak ayarlayın.
 - **Minimum parola uzunluğu:** Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
+
+  Windows çalıştıran ve Microsoft Hesabı ile erişilen cihazlarda, minimum parola uzunluğu sekiz karakterden fazlaysa veya minimum karakter kümesi sayısı ikiden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
 - **Gerekli parola türü:** Kullanıcıların oluşturacağı parolanın **Alfasayısal** mı, yoksa **Sayısal** mı olacağını belirtin.
-
-Windows çalıştıran ve Microsoft Hesabı ile erişilen cihazlarda, minimum parola uzunluğu sekiz karakterden fazlaysa veya minimum karakter kümesi sayısı ikiden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
-
+  
 - **Karakter kümesi sayısı alt sınırı:** **Gerekli parola türü** **Alfasayısal** olarak ayarlandıysa, bu ayar parolanın içermesi gereken karakter kümesi sayısı alt sınırını belirtir. Dört karakter kümesi şunlardır:
   - Küçük harfler
   - Büyük harfler
   - Simgeler
   - Sayılar
 
-Bu ayar için daha yüksek bir sayı ayarlandığında, kullanıcıların daha karmaşık parolalar oluşturması zorunlu tutulur. Windows çalıştıran ve Microsoft Hesabı ile erişilen cihazlarda, minimum parola uzunluğu sekiz karakterden fazlaysa veya minimum karakter kümesi sayısı ikiden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
+  Bu ayar için daha yüksek bir sayı ayarlandığında, kullanıcıların daha karmaşık parolalar oluşturması zorunlu tutulur. Windows çalıştıran ve Microsoft Hesabı ile erişilen cihazlarda, minimum parola uzunluğu sekiz karakterden fazlaysa veya minimum karakter kümesi sayısı ikiden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
 
 - **Parola istenmeden önceki bekleme süresi (dakika):** Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi belirtir.
 - **Parola kullanım süresi (gün):** Kullanıcı parolasının süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
@@ -99,15 +102,16 @@ Bu ayar için daha yüksek bir sayı ayarlandığında, kullanıcıların daha k
 - **Önceki parolaların yeniden kullanılmasını engelle:** **Parola geçmişini anımsa** seçeneği belirlenirse, önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin.
 - **Cihaz boşta durumundan çıkarken parola iste:** Bu ayar, **Parola istenmeden önceki bekleme süresi (dakika olarak)** ayarıyla birlikte kullanılmalıdır. **Parola istenmeden önceki bekleme süresi (dakika olarak)** ayarında belirtilen süre boyunca etkin olmayan bir cihaza erişmek için son kullanıcılardan bir parola girmesi istenir.
 
-**Bu ayar yalnızca Windows 10 Mobile cihazları için geçerlidir.**
+> [!NOTE]
+> Bu ayar yalnızca Windows 10 Mobile cihazları için geçerlidir.
 
-### <a name="encryption"></a>Şifreleme
+#### <a name="encryption"></a>Şifreleme
 
 - **Mobil cihazda şifreleme gerektir:** Cihazın kaynaklara bağlanmak için şifrelenmesini gerektirmek için bunu **Evet** olarak ayarlayın.
 
 
 
-## <a name="device-health-settings"></a>Cihaz durumu ayarları
+### <a name="device-health-settings"></a>Cihaz durumu ayarları
 
 - **Cihazların sağlam olarak bildirilmesini gerektir:** **Windows 10 Mobile** cihazlarının yeni veya var olan Uyumluluk İlkelerinde sağlıklı olarak bildirilmesini gerektiren bir kural ayarlayabilirsiniz. Bu ayar etkinse, Windows 10 cihazları aşağıdaki veri noktaları için Durum Kanıtlama Hizmeti (HAS) aracılığıyla değerlendirilir:
   - **BitLocker etkin:** BitLocker açık olduğunda, sistemin kapalı olduğu veya hazırda beklemeye girdiği durumlarda cihaz sürücüye depolanmış verileri yetkisiz erişimden koruyabilir. Windows BitLocker Sürücü Şifrelemesi, Windows işletim sistemi birimine depolanan tüm verileri şifreler. BitLocker, Windows işletim sistemini ve kullanıcı verilerini korumak ve bir bilgisayarın katılımsız bırakılması, kaybolması veya çalınması durumunda bile kurcalanmadığından emin olmak üzere TPM’yi kullanır. Bilgisayarda uyumlu bir TPM varsa, BitLocker verileri koruyan şifreleme anahtarlarını kilitlemek için TPM kullanır. Sonuç olarak, TPM bilgisayarın durumunu doğrulayana kadar anahtarlara erişilemez.
@@ -116,53 +120,56 @@ Bu ayar için daha yüksek bir sayı ayarlandığında, kullanıcıların daha k
 
 HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Durum Kanıtlama CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## <a name="device-property-settings"></a>Cihaz özelliği ayarları
+### <a name="device-property-settings"></a>Cihaz özelliği ayarları
 
 - **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 - **İzin verilen en yüksek işletim sistemi sürümü:** Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir ve kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
 
 <!---## Compliance policy settings for Windows PCs--->
 
-## <a name="system-security-settings"></a>Sistem güvenliği ayarları
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Windows bilgisayarları için uyumluluk ilkesi ayarları
 
-### <a name="password"></a>Parola
+Bu bölümde listelenen ayarlar Windows bilgisayarlarında desteklenir.
+### <a name="system-security-settings"></a>Sistem güvenliği ayarları
+
+#### <a name="password"></a>Parola
 
 - **Minimum parola uzunluğu:** - Windows 8.1’de desteklenir.
 
-Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
+  Kullanıcı parolasının içermesi gereken minimum rakam veya karakter sayısını belirtin.
 
-Microsoft Hesabı ile güvenliği sağlanan cihazlar için **Minimum parola uzunluğu** sekiz karakterden fazlaysa veya **Minimum karakter kümesi sayısı** iki karakterden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
+  Microsoft Hesabı ile güvenliği sağlanan cihazlar için **Minimum parola uzunluğu** sekiz karakterden fazlaysa veya **Minimum karakter kümesi sayısı** iki karakterden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
 
 - **Gerekli parola türü** - Windows RT, Windows RT 8.1 ve Windows 8.1'de desteklenir.
 
-Kullanıcıların **Alfasayısal** parola mı yoksa **Sayısal** parola mı oluşturması gerektiğini belirtin.
+  Kullanıcıların **Alfasayısal** parola mı yoksa **Sayısal** parola mı oluşturması gerektiğini belirtin.
 
 - **Karakter kümesi sayısı alt sınırı** - Windows RT, Windows RT 8.1 ve Windows 8.1'de desteklenir. **Gerekli parola türü** **Alfasayısal** olarak ayarlanırsa bu ayar parolanın içermesi gereken en az karakter kümesi sayısını belirtir. Dört karakter kümesi şunlardır:
   - Küçük harfler
   - Büyük harfler
   - Simgeler
-  - Sayılar: Bu ayar için daha yüksek bir sayı ayarlandığında, kullanıcıların daha karmaşık parolalar oluşturması zorunlu tutulur.
+  - Sayılar 
 
-Microsoft Hesabı ile güvenliği sağlanan cihazlar için **Minimum parola uzunluğu** sekiz karakterden fazlaysa veya **Minimum karakter kümesi sayısı** iki karakterden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
+    Bu ayar için daha yüksek bir sayı ayarlandığında, kullanıcıların daha karmaşık parolalar oluşturması zorunlu tutulur. Microsoft Hesabı ile güvenliği sağlanan cihazlar için **Minimum parola uzunluğu** sekiz karakterden fazlaysa veya **Minimum karakter kümesi sayısı** iki karakterden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
 
 - **Parola istenmeden önceki bekleme süresi (dakika olarak):** - Windows RT, Windows RT 8.1 ve Windows 8.1’de desteklenir.
 
-Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi belirtin.
+  Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi belirtin.
 
 - **Parola kullanım süresi (gün)** - Windows RT, Windows RT 8.1 ve Windows 8.1'de desteklenir.
 
-Kullanıcının parolasının süresi dolup yeni bir parola oluşturmaları gerekmeden önce geçmesi gereken gün sayısını seçin.
+  Kullanıcının parolasının süresi dolup yeni bir parola oluşturmaları gerekmeden önce geçmesi gereken gün sayısını seçin.
 
 - **Parola geçmişini anımsa:** - Windows RT, Windows RT 8.1 ve Windows 8.1’de desteklenir.
 
-Kullanıcının önceden kullanılan parolaları oluşturmasını sınırlamak için bu ayarı **Önceki parolaların yeniden kullanılmasını engelle** ile birlikte kullanın.
+  Kullanıcının önceden kullanılan parolaları oluşturmasını sınırlamak için bu ayarı **Önceki parolaların yeniden kullanılmasını engelle** ile birlikte kullanın.
 
 - **Önceki parolaların yeniden kullanılmasını engelle:** - Windows RT, Windows RT 8.1 ve Windows 8.1’de desteklenir.
 
-**Parola geçmişini anımsa** ayarı seçilirse, önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin.
+  **Parola geçmişini anımsa** ayarı seçilirse, önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin.
 
 
-## <a name="device-health-settings"></a>Cihaz durumu ayarları
+### <a name="device-health-settings"></a>Cihaz durumu ayarları
 
 - **Cihazların sağlam olarak bildirilmesini gerektir:** - Windows 10 cihazlarında desteklenir. Windows 10 cihazlarının yeni veya var olan Uyumluluk İlkelerinde sağlıklı olarak bildirilmesini gerektiren bir kural ayarlayabilirsiniz. Bu ayar etkinse, Windows 10 cihazları aşağıdaki veri noktaları için Durum Kanıtlama Hizmeti (HAS) aracılığıyla değerlendirilir:
   - **BitLocker etkin:** BitLocker açık olduğunda, sistemin kapalı olduğu veya hazırda beklemeye girdiği durumlarda cihaz sürücüye depolanmış verileri yetkisiz erişimden koruyabilir. Windows BitLocker Sürücü Şifrelemesi, Windows işletim sistemi birimine depolanan tüm verileri şifreler. BitLocker, Windows işletim sistemini ve kullanıcı verilerini korumak ve bir bilgisayarın katılımsız bırakılması, kaybolması veya çalınması durumunda bile kurcalanmadığından emin olmak üzere TPM’yi kullanır. Bilgisayarda uyumlu bir TPM varsa, BitLocker verileri koruyan şifreleme anahtarlarını kilitlemek için TPM kullanır. Sonuç olarak, TPM bilgisayarın durumunu doğrulayana kadar anahtarlara erişilemez.
@@ -172,17 +179,17 @@ Kullanıcının önceden kullanılan parolaları oluşturmasını sınırlamak i
 
 HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Durum Kanıtlama CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## <a name="device-property-settings"></a>Cihaz özelliği ayarları
+### <a name="device-property-settings"></a>Cihaz özelliği ayarları
 
 - **Gereken en düşük işletim sistemi:** - Windows 8.1 ve Windows 10’da desteklenir.
 
-Burada birincilsürüm.ikincilsürüm.CU numarasını belirtin. Sürüm numarası, ```winver``` komutu tarafından döndürülen sürüme karşılık gelmelidir.
+  Burada birincilsürüm.ikincilsürüm.CU numarasını belirtin. build.CU numarası, ```winver``` komutu tarafından döndürülen sürüme karşılık gelmelidir.
 
-Cihazdaki işletim sistemi belirtilen sürümden önceki bir sürümdeyse, cihazın uyumsuz olduğu bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
+  Cihazdaki işletim sistemi belirtilen sürümden önceki bir sürümdeyse, cihazın uyumsuz olduğu bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 
 - **İzin verilen en yüksek işletim sistemi sürümü:** - Windows 8.1 ve Windows 10’da desteklenir.
 
-Bir cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisi ile iletişim kurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
+  Bir cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisi ile iletişim kurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
 
 **Gereken en düşük işletim sistemi sürümü** ve **İzin verilen en yüksek işletim sistemi sürümü** ayarlarında kullanılacak işletim sistemi sürümünü bulmak için, komut isteminde **winver** komutunu çalıştırın. Bu winver komutu, işletim sisteminin bildirilen sürümünü döndürür.
 

@@ -1,26 +1,26 @@
 ---
-title: "Intune için Windows ve Windows Phone uygulamalarını dışarıdan yükleme"
-description: "Intune’u kullanarak iş kolu uygulamalarını dağıtmak için bunları nasıl imzalayacağınızı öğrenin."
-keywords: 
+title: Intune için Windows ve Windows Phone uygulamalarını dışarıdan yükleme
+description: Intune’u kullanarak iş kolu uygulamalarını dağıtmak için bunları nasıl imzalayacağınızı öğrenin.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 06922f76643a6b95e994bf4e219ee3a4a85953c5
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 9f629fce727df9f15b6357c7c624165e4443ea91
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune yöneticisi olarak Şirket Portalı uygulaması dahil olmak üzere iş kolu uygulamalarını Windows ve Windows 10 Mobile cihazlarına dağıtabilirsiniz. Windows 10 ve Windows 10 Mobile cihazlarına .appx veya .xap uygulamalarını veya Windows 8.1 ya da Windows Phone 8.1 cihazlarına iş kolu uygulamalarını dağıtmak için **Symantec Enterprise Mobil Kod İmza Sertifikası** edinmeniz gerekir. Windows cihazlarda bu uygulamalar için yalnızca Symantec sertifikasına güvenilir. Windows 10 uygulamaları ve "evrensel" uygulamalar için kendi sertifika yetkilinizi kullanabilirsiniz. Aşağıdakileri yapmak için bu sertifika gereklidir:
 
@@ -78,11 +78,11 @@ Intune Şirket Portalı uygulamasını Windows Phone ve Windows 10 Mobile cihazl
 
     Alternatif olarak, Windows Phone 8.1 Şirket Portalı (çevrimdışı lisanslı paket) uygulamasını veya Windows 10 Şirket Portalı’nı (çevrimdışı lisanslı paket) [İş İçin Microsoft Mağazası](http://businessstore.microsoft.com/)'ndan indirebilirsiniz. Şirket Portalı uygulamasının çevrimdışı lisansla alınması ve çevrimdışı kullanım için uygun paketin indirilmesi gerekir. Seçilen Windows 8 ve Windows Phone 8 platformu örnekleri, 8.1 yerine kullanılamaz. Bunun Intune’da nasıl yapılacağına ilişkin ayrıntılar için bkz. [İş için Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
-2.  **Windows Phone SDK'sını indirme** [Windows Phone SDK 8.0'ı indirin] (http://go.microsoft.com/fwlink/?LinkId=615570) ve SDK'yı bilgisayarınıza yükleyin. Bu SDK, bir uygulama kaydı belirteci oluşturmak için gereklidir.
+2.  **Windows Phone SDK’sını indirme** [Windows Phone SDK’sı 8.0’ı indirin] (http://go.microsoft.com/fwlink/?LinkId=615570)) ve SDK’yı bilgisayarınıza yükleyin. Bu SDK, bir uygulama kaydı belirteci oluşturmak için gereklidir.
 
 3.  **AETX dosyası oluşturma** Windows Phone SDK 8.0’ın parçası olan AETGenerator.exe dosyasını kullanarak Symantec PFX dosyasından bir uygulama kaydı belirteci (.aetx) dosyası oluşturun. AETX dosyasının nasıl oluşturulacağına ilişkin yönergeler için bkz. [Windows Phone için uygulama kaydı belirteci oluşturma](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
 
-4.  **Windows 8.1 için Windows SDK’sını indirme** [Windows Phone SDK’sını](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525) indirin ve yükleyin. Şirket Portalı uygulamasına dahil edilen PowerShell betiğinin varsayılan yükleme konumunu (`${env:ProgramFiles(x86)}\Windows Kits\8.1`) kullandığını unutmayın. Başka bir yere yüklerseniz, bir cmdlet parametresinde konumu eklemeniz gerekir.
+4.  **Windows 8.1 için Windows SDK’sını indirme** [Windows Phone SDK’sını](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525)) indirin ve yükleyin. Şirket Portalı uygulamasına dahil edilen PowerShell betiğinin varsayılan yükleme konumunu (`${env:ProgramFiles(x86)}\Windows Kits\8.1`) kullandığını unutmayın. Başka bir yere yüklerseniz, bir cmdlet parametresinde konumu eklemeniz gerekir.
 
 5.  **PowerShell kullanarak uygulama kodunu imzalama** Yönetici olarak, Windows SDK’sı ve Symantec Kurumsal Mobil Kod İmzalama Sertifikası yüklenmiş ana bilgisayarda **Windows PowerShell**’i açın, Sign-WinPhoneCompanyPortal.ps1 dosyasına gidin ve betiği çalıştırın.
 
@@ -128,7 +128,7 @@ Belirli Windows ve Windows Phone mobil uygulamalarını dağıtmak için kullan�
 
     Symantec sertifikaları hakkında ek bilgi için [www.symantec.com](http://www.symantec.com) adresini ziyaret edin veya 1-877-438-8776 ya da 1-650-426-3400 numaralı telefonları arayın.
 
-2.  Web sitesine gidin (örnek: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) ve sertifikayla ilişkili Symantec Yayımcı Kimliği ve e-posta adresiyle oturum açın. Yenileme işlemini başlatmak için, sertifika indirmek için kullanacağınız makineyle aynı makineyi kullanmayı unutmayın.
+2.  Web sitesine gidin (örneğin: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) ve sertifikayla ilişkili Symantec Yayımcı Kimliği ve e-posta adresi ile oturum açın. Yenileme işlemini başlatmak için, sertifika indirmek için kullanacağınız makineyle aynı makineyi kullanmayı unutmayın.
 
 3.  Yenileme onaylandıktan ve ücreti ödenen sonra, sertifikayı indirin.
 
@@ -158,11 +158,11 @@ Intune ile İş İçin Microsoft Mağazası’nı tümleştirmiş olmasanız bil
 
 ![İndirilecek bağımlılık dosyalarının görüntüsü ](./media/Win10CP-dependent-files.png)
 5. Şirket Portalı uygulamasını Intune’a yüklemeden önce, paketlerin aşağıdaki şekilde yapılandırıldığı bir klasör (ör. C:&#92;Company Portal) oluşturun:
-  1. Şirket Portalı paketini C:\Company Portal adresine koyun. Bu konumda bir Dependencies alt klasörü oluşturun.  
-  ![APPXBUN dosyasıyla kaydedilen Dependencies klasörünün görüntüsü](./media/Win10CP-Dependencies-save.png)
-  2. Dokuz bağımlılık paketini Dependencies klasörüne yerleştirin.  
-  Bağımlılıklar, bu biçimde yerleştirilmezse Intune tarafından tanınamazlar ve paketin karşıya yüklenmesi sırasında karşıya yüklenemezler. Bu durumda, karşıya yükleme aşağıdaki hatayı vererek başarısız olur.  
-  ![Bu yazılım yükleyicisine ait Windows uygulama bağımlılığı, uygulama klasöründe bulunamadı. Bu uygulamayı oluşturmaya ve dağıtmaya devam edebilirsiniz ancak uygulama, eksik Windows uygulama bağımlılığı sağlanmadıkça çalışmayacaktır.](./media/Win10CP-error-message.png)
+   1. Şirket Portalı paketini C:\Company Portal adresine koyun. Bu konumda bir Dependencies alt klasörü oluşturun.  
+   ![APPXBUN dosyasıyla kaydedilen Dependencies klasörünün görüntüsü](./media/Win10CP-Dependencies-save.png)
+   2. Dokuz bağımlılık paketini Dependencies klasörüne yerleştirin.  
+   Bağımlılıklar, bu biçimde yerleştirilmezse Intune tarafından tanınamazlar ve paketin karşıya yüklenmesi sırasında karşıya yüklenemezler. Bu durumda, karşıya yükleme aşağıdaki hatayı vererek başarısız olur.  
+   ![Bu yazılım yükleyicisine ait Windows uygulama bağımlılığı, uygulama klasöründe bulunamadı. Bu uygulamayı oluşturmaya ve dağıtmaya devam edebilirsiniz ancak uygulama, eksik Windows uygulama bağımlılığı sağlanmadıkça çalışmayacaktır.](./media/Win10CP-error-message.png)
 6. Intune'a dönün ve Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. Uygulamayı, istenen hedef kullanıcı kümesine gerekli bir uygulama olarak dağıtın.  
 
 Intune’un Evrensel uygulamaların bağımlılıklarını nasıl işlediği hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune MDM aracılığıyla bağımlılıkları olan bir appxbundle dağıtma](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  
@@ -186,17 +186,18 @@ Windows 10 Şirket Portalı uygulaması bu şekilde imzalanır ve dağıtılırs
 
 Uygulamanın bu şekilde nasıl imzalanıp dağıtılacağı aşağıda açıklanmaktadır:
 
-1. Microsoft Intune Windows 10 Şirket Portalı Uygulamasını İmzalama Betiğini [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) adresinden indirin.  Bu betik, Windows 10 için Windows SDK’nın ana bilgisayara yüklenmiş olmasını gerektirir. Windows 10 için Windows SDK’yı indirmek için [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) adresini ziyaret edin.
+1. Microsoft Intune Windows 10 Şirket Portalı Uygulaması İmzalama Betiğini [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) adresinden indirin.  Bu betik, Windows 10 için Windows SDK’nın ana bilgisayara yüklenmiş olmasını gerektirir. Windows 10 için Windows SDK’sını indirmek için [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) adresini ziyaret edin.
 2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Microsoft Mağazası'ndan indirin.  
 3. Betik üst bilgisinde açıklanan giriş parametrelerini (ayıklanmış hali aşağıdadır) kullanıp betiği çalıştırarak Windows 10 Şirket Portalı uygulamasını imzalayın. Bağımlılıkların betiğe geçirilmesi gerekmez. Bunlar, yalnızca uygulama Intune Yönetici Konsolu’na yüklenirken gereklidir.
 
-|Parametre | Description|
-| ------------- | ------------- |
-|InputWin10AppxBundle |Kaynak appxbundle dosyasının bulunduğu yol. |
-|OutputWin10AppxBundle |İmzalı appxbundle dosyası için çıkış yolu. |
-|Win81Appx | Windows 8.1 veya Windows Phone 8.1 Şirket Portalı (.APPX) dosyasının bulunduğu yol.|
-|PfxFilePath |Symantec Enterprise Mobil Kod İmza Sertifikası (.PFX) dosyasının yolu. |
-|PfxPassword| Symantec Enterprise Mobil Kod İmza Sertifikası’nın parolası. |
-|PublisherId |Kuruluşun Yayımcı Kimliği. Yoksa, Symantec Kurumsal Mobil Kod İmzalama Sertifikası’nın 'Konu' alanı kullanılır.|
-|SdkPath | Windows 10 için Windows SDK’sı kök klasörünün yolu. Bu bağımsız değişken isteğe bağlıdır ve varsayılan olarak ${env:ProgramFiles(x86)}\Windows Kits\10 değerindedir.|
+|       Parametre       |                                                                    Description                                                                    |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                             Kaynak appxbundle dosyasının bulunduğu yol.                                              |
+| OutputWin10AppxBundle |                                                  İmzalı appxbundle dosyası için çıkış yolu.                                                  |
+|       Win81Appx       |                          Windows 8.1 veya Windows Phone 8.1 Şirket Portalı (.APPX) dosyasının bulunduğu yol.                           |
+|      PfxFilePath      |                                   Symantec Enterprise Mobil Kod İmza Sertifikası (.PFX) dosyasının yolu.                                    |
+|      PfxPassword      |                                     Symantec Enterprise Mobil Kod İmza Sertifikası’nın parolası.                                      |
+|      PublisherId      |      Kuruluşun Yayımcı Kimliği. Yoksa, Symantec Kurumsal Mobil Kod İmzalama Sertifikası’nın 'Konu' alanı kullanılır.       |
+|        SdkPath        | Windows 10 için Windows SDK’sı kök klasörünün yolu. Bu bağımsız değişken isteğe bağlıdır ve varsayılan olarak ${env:ProgramFiles(x86)}\Windows Kits\10 değerindedir. |
+
 Betik, çalışması tamamlandığında Windows 10 Şirket Portalı uygulamasının imzalı sürümünü çıktı olarak sunar. Ardından Intune aracılığıyla uygulamanın imzalı sürümünü bir LOB uygulaması olarak dağıtabilirsiniz. Şu anda dağıtılmış durumdaki sürümler, bu yeni uygulamaya yükseltilir.  

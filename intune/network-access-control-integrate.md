@@ -1,25 +1,24 @@
 ---
-title: "Ağ erişim denetimini Microsoft Intune ile tümleştirme"
-titlesuffix: 
-description: "Ağ erişim denetimini (NAC) Intune ile tümleştirme"
-keywords: 
+title: Ağ erişim denetimini Microsoft Intune - Azure ile tümleştirme | Microsoft Docs
+description: Ağ erişim denetimi (NAC) çözümleri, Intune kullanan cihazlarda kayıt ve uyumluluğu denetler. NAC, belirli davranışları içerir ve koşullu erişim ile çalışır. Çözümü eklemek için adımlara bakın ve ortak çözümlerin bir listesini alın.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f54f04bc5a63c8a431eddaf4210fcb290942cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bdf6b5b71c71dd8b1a9a5c9154953d1ebc07d0dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Ağ erişim denetimini (NAC) Intune ile tümleştirme
 
@@ -27,7 +26,7 @@ Intune, cihazlar şirket içi kaynaklara erişmeye çalıştığında kuruluşla
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune ve NAC çözümleri kuruluş kaynaklarınızı korumaya nasıl yardımcı olur?
 
-NAC çözümleri, erişim denetimi kararları vermek için cihaz kaydı ve Intune ile uyumluluk durumunu kontrol etmekten sorumludur. Cihaz kayıtlı değilse veya kayıtlı ama Intune cihaz uyumluluk ilkeleriyle uyumlu değilse bu cihazın kayıt ve/veya cihaz uyumluluk denetimi için yeniden Intune’a yönlendirilmesi gerekir.
+NAC çözümleri, erişim denetimi kararları vermek için cihaz kaydını ve Intune ile uyumluluk durumunu kontrol eder. Cihaz kayıtlı değilse veya kayıtlı ama Intune cihaz uyumluluk ilkeleriyle uyumlu değilse bu cihazın kayıt ve/veya cihaz uyumluluk denetimi için yeniden Intune’a yönlendirilmesi gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -35,17 +34,17 @@ Cihaz kayıtlı ve Intune ile uyumlu ise NAC çözümü, cihazın şirket kaynak
 
 ## <a name="feature-behaviors"></a>Özellik davranışları
 
-Intune'la etkin bir şekilde eşitlenen cihazlar **Uyumlu** / **Uyumsuz**'dan **Eşitlenmedi** (veya **Bilinmiyor**) durumuna taşınamaz. Yeni kaydedilmiş ve uyumluluk için henüz değerlendirilmemiş cihazlar için **Bilinmiyor** durumu korunur.
+Intune’la etkin olarak eşitleme yapan cihazlar **Uyumlu** / **Uyumsuz**’dan **Eşitlenmedi** (veya **Bilinmiyor**) durumuna taşınamaz. Yeni kaydedilmiş ve uyumluluğu henüz değerlendirilmemiş cihazlar için **Bilinmiyor** durumu korunur.
 
 Kaynaklara erişimi engellenmiş cihazlar için, engelleme hizmetinin tüm kullanıcıları cihazın neden engellendiğini belirlemek üzere [yönetim portalına](https://portal.manage.microsoft.com) yönlendirmesi gerekir.  Kullanıcılar bu sayfayı ziyaret ederse, cihazları zaman uyumlu olarak uyumluluk için yeniden değerlendirilir.
 
 ## <a name="nac-and-conditional-access"></a>NAC ve koşullu erişim
 
-NAC, erişim denetimi kararları sağlamak için koşullu erişimle birlikte çalışır. Diğer ayrıntılar için bkz. [Intune ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
+NAC, erişim denetimi kararları sağlamak için koşullu erişimle birlikte çalışır. Daha fazla bilgi için bkz. [Intune ile koşullu erişimi kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>NAC tümleştirmesi nasıl çalışır?
 
-Burada, Intune ile tümleştirildiğinde NAC tümleştirmesinin nasıl çalıştığına genel bir bakış sağlanır. İlk üç adımda (1-3), ekleme işlemi açıklanır. 4.-9. adımlar, NAC çözümü ile Intune tümleştirildiğinde devam eden işlemi açıklamaktadır.
+Aşağıdaki listede, Intune ile tümleştirildiğinde NAC tümleştirmesinin nasıl çalıştığına genel bir bakış sağlanır. İlk üç adımda (1-3), ekleme işlemi açıklanır. 4-9. adımlar, NAC çözümü ile Intune tümleştirildiğinde devam eden işlemi açıklamaktadır.
 
 ![NAC, Intune ile nasıl çalışır?](./media/ca-intune-common-ways-2.png)
 
@@ -64,3 +63,4 @@ Burada, Intune ile tümleştirildiğinde NAC tümleştirmesinin nasıl çalışt
 - [Cisco ISE’yi Intune ile tümleştirme](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Citrix NetScaler’ı Intune ile tümleştirme](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 - [HP Aruba Clear Pass’i Intune ile tümleştirme](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [Squadra güvenlik Çıkarılabilir Medya Yöneticisi’ni (secRMM) Intune ile tümleştirme](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

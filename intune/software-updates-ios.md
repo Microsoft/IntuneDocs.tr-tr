@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>Microsoft Intune'da iOS güncelleştirme ilkelerini yapılandırma
 
@@ -54,4 +54,5 @@ Kullanıcılara bir iOS güncelleştirme ilkesi atamak için yapılandırdığı
 
 ## <a name="monitor-ios-device-installation-failures"></a>iOS cihaz yükleme hatalarını izleme
 <!-- 1352223 -->
-**iOS cihazlarında yükleme hataları** raporu, **Yazılım güncelleştirmeleri** bölmesinde sağlanır. Raporda, bir iOS güncelleştirme ilkesi tarafından hedeflenmiş, güncelleştirmeyi denemiş ancak güncelleştirilememiş denetimli iOS cihazların listesini görüntüleyebilirsiniz. Her cihaz için cihazın neden otomatik olarak güncelleştirilmediğiyle ilgili bir durum görüntüleyebilirsiniz. İyi durumda, güncel cihazlar listede gösterilmez. Güncel olma durumunu, cihazın destekleyebileceği en son güncelleştirme olarak tanımlarız.
+**iOS Cihazlarında Yükleme Hataları** raporu, **Yazılım güncelleştirmeleri** bölmesinde mevcuttur. Raporda, bir iOS güncelleştirme ilkesi tarafından hedeflenmiş, güncelleştirmeyi denemiş ancak güncelleştirilememiş denetimli iOS cihazların listesini görüntüleyebilirsiniz. Her cihaz için cihazın neden otomatik olarak güncelleştirilmediğiyle ilgili bir durum görüntüleyebilirsiniz. İyi durumda, güncel cihazlar listede gösterilmez. Güncel olma durumunu, cihazın destekleyebileceği en son güncelleştirme olarak tanımlarız.
+

@@ -1,27 +1,30 @@
 ---
 title: Microsoft Intune cihaz uyumluluk ilkelerini izleme
-titlesuffix: 
-description: "Genel cihaz uyumluluğunu izlemek, raporları görüntülemek ve ilke başına ve ayar başına cihaz uyumluluğunu izlemek için cihaz uyumluluk panosunu kullanın."
-keywords: 
+titlesuffix: ''
+description: Genel cihaz uyumluluğunu izlemek, raporları görüntülemek ve ilke başına ve ayar başına cihaz uyumluluğunu izlemek için cihaz uyumluluk panosunu kullanın.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
 Uyumluluk raporları, yöneticilerin kuruluşlarındaki cihazların uyumluluk duruşunu analiz etmesine ve kuruluşlarındaki kullanıcıların karşılaştığı uyumluluk sorunlarını hızla gidermelerine yardımcı olur. Cihazların genel uyumluluk durumunu, tek bir ayar için uyumluluk durumunu ve tek bir ilke için uyumluluk durumunu görüntüleyebilir ve tek tek cihazların ayrıntılarına inerek söz konusu cihazı etkileyen belirli ayar ve ilkelere bakabilirsiniz.
+
+> [!NOTE]
+> Mart ayında geri bildirimlerinize bağlı olarak Intune hizmetinde bazı güvenlik geliştirmeleri sunacağız. Uyumluluk ilkelerinizin yapılandırmasına bağlı olarak son kullanıcılarınızın e-posta erişimini kaybetmemeleri için eylemler gerçekleştirmeniz gerekebilir. Ayrıntılar için bkz. [Yaklaşan güvenlik geliştirmeleri](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -124,6 +127,19 @@ Ayrıca, Cihaz uyumluluk grafiğinde farklı uyumluluk durumlarına tıklayarak 
 Bir cihaza tıklandığında **Cihazlar Bölmesi** cihaz seçilmiş olarak açılır; burada bu cihaza uygulanan cihaz uyumluluğu ilkesi ayarı hakkında daha fazla ayrıntı sağlanır.
 
 Cihaz ilkesi ayarının kendisinin üzerine tıkladığınızda yönetici tarafından hedeflenen bu cihaz uyumluluk ayarının kaynağı olan cihaz uyumluluk ilkesinin adını görebilirsiniz.
+
+### <a name="devices-without-compliance-policy"></a>Uyumluluk ilkesi olmayan cihazlar
+Bu rapor, kendisine atanmış bir uyumluluk ilkesi olmayan cihazları belirler. Uyumluluk ilkesi olmayan cihazları “uyumsuz” olarak işaretleyen güvenlik ayarının sunulmasıyla birlikte bu cihazların belirlenebilmesi önem kazandı. Cihazlar belirlendikten sonra bunlara en az bir uyumluluk ilkesi atayabilirsiniz.
+
+> [!NOTE]
+> Yeni güvenlik ayarı, Intune portalında yapılandırılabilir. **Cihaz uyumluluğu**’nu seçin, **Kurulum** altında **Uyumluluk ilkesi ayarları**’na tıklayın. **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle:** seçeneğini **Uyumlu** veya **Uyumsuz** olarak ayarlamak için iki durumlu düğmeyi kullanın. Bu [Intune hizmetinde güvenlik geliştirmesi](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) hakkında daha fazla bilgi edinin.
+
+![Uyumluluk ilkesi olmayan Cihazlar raporunu gösteren görüntü](./media/idc-12.png)
+
+**Uyumluluk ilkesi olmayan cihazlar** kutucuğu Cihaz uyumluluğu panosunda bulunur ve uyumluluk ilkesi olmayan tüm cihazları, cihazın kullanıcısını, uyumluluk durumunu ve modelini gösterir.
+
+> [!NOTE]
+> Herhangi bir tür uyumluluk ilkesi atanmış kullanıcılar, cihaz platformu ne olursa olsun raporda yer almaz. Örneğin Android cihazı olan bir kullanıcıya yanlışlıkla Windows uyumluluk ilkesi atamışsanız cihaz raporda görüntülenmez. Ancak Intune, bu Android cihazı uyumsuz olarak değerlendirir. Sorunların önüne geçmek adına her bir cihaz platformu için ilke oluşturup bunları tüm kullanıcılara dağıtmanızı öneririz.
 
 ### <a name="per-policy-device-compliance-report"></a>İlkeye göre cihaz uyumluluğu raporu
 

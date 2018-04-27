@@ -1,27 +1,26 @@
 ---
-title: "iOS çalıştıran cihazlar için Microsoft Intune VPN ayarları"
-titlesuffix: 
-description: "iOS çalıştıran cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi edinin."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Microsoft Intune - Azure’da iOS cihazlar için VPN ayarları | Microsoft Docs
+description: iOS çalıştıran cihazlarda Microsoft Intune’da bağlantı ayrıntıları, kimlik doğrulama yöntemleri ve temel ayarlarda bölünmüş tünel; tanımlayıcı ile özel VPN ayarları ve anahtar ve değer çiftleri; Safari URL’lerini içeren uygulama başına VPN ayarları, SSID veya DNS arama etki alanları ile isteğe bağlı VPN’ler; bir yapılandırma betiği, IP veya FQDN adresini içermek için proxy ayarları ve TCP bağlantı noktası dahil olmak üzere kullanılabilir sanal özel ağ (VPN) yapılandırma ayarlarını görüntüleyin.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 3ce970f942d8ea20eb9ea593c23160757122926e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>iOS çalıştıran cihazlar için Microsoft Intune'da VPN ayarlarını yapılandırın
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu makale, iOS çalıştıran cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi sağlar.
 
@@ -29,52 +28,50 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 
 ## <a name="base-vpn-settings"></a>Temel VPN ayarları
 
+- **Bağlantı adı**: Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantıları listesine göz atan son kullanıcılar bu adı görür.
+- **IP adresi veya FQDN**: Cihazların bağlandığı VPN sunucusunun IP adresini veya tam etki alanı adını (FQDN) girin. Örneğin, **192.168.1.1** veya **vpn.contoso.com** yazın.
+- **Kimlik doğrulama yöntemi**: Cihazların VPN sunucusunda kimliklerini nasıl doğrulayacaklarını seçin:
+  - **Sertifikalar**: **Kimlik doğrulama sertifikası** altında, bağlantının kimliğini doğrulamak için mevcut bir SCEP veya PKCS sertifika profilini seçin. [Sertifika yapılandırma](certificates-configure.md), sertifika profilleri hakkında rehberlik sağlar.
+  - **Kullanıcı adı ve parola**: Son kullanıcıların VPN sunucusunda oturum açmak için kullanıcı adı ve parola girmesi gerekir.
+- **Bağlantı türü**: Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
+  - **Check Point Capsule VPN**
+  - **Cisco AnyConnect**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
+  - **Cisco (IPSec)**
+  - **Citrix**
+  - **Özel VPN**
 
-**Bağlantı adı** - Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan son kullanıcılar bu adı görür.
-- **IP adresi veya FQDN** - Cihazların bağlanacağı VPN sunucusunun IP adresini veya tam etki alanı adını sağlayın. Örnekler: **192.168.1.1**, **vpn.contoso.com**.
-- **Kimlik doğrulama yöntemi** - Cihazların VPN sunucusuna kimliklerini nasıl doğrulayacaklarını seçin:
-    - **Sertifikalar** - **Kimlik doğrulama sertifikası**’nın altında, bağlantının kimliğini doğrulamak için daha önce oluşturduğunuz SCEP veya PKCS sertifika profilini seçin. Sertifika profilleri hakkındaki daha fazla bilgi için bkz. [Sertifikaları yapılandırma](certificates-configure.md).
-    - **Kullanıcı adı ve parola** - Son kullanıcıların VPN sunucusunda oturum açmak için kullanıcı adı ve parola sağlaması gerekir.
-- **Bağlantı türü** - Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
-    - **Check Point Capsule VPN**
-    - **Cisco AnyConnect**
-    - **SonicWall Mobile Connect**
-    - **F5 Edge Client**
-    - **Pulse Secure**
-    - **Cisco (IPSec)**
-    - **Citrix**
-    - **Özel VPN**
-- **Bölünmüş tünel** - Trafiğe bağlı olarak hangi bağlantının kullanılacağına cihazların karar vermesini sağlayan bu seçeneği **Etkinleştirin** veya **Devre Dışı Bırakın**. Örneğin, oteldeki bir kullanıcı çalışma dosyalarına erişmek için VPN bağlantısını, web’e göz atmak için ise otelin standart ağını kullanır.
-
+- **Bölünmüş tünel**: Trafiğe bağlı olarak hangi bağlantının kullanılacağına cihazların karar vermesini sağlamak için bu seçeneği **Etkinleştirin** veya **Devre Dışı Bırakın**. Örneğin, oteldeki bir kullanıcı çalışma dosyalarına erişmek için VPN bağlantısını, web’e göz atmak için ise otelin standart ağını kullanır.
 
 ## <a name="custom-vpn-settings"></a>Özel VPN ayarları
 
-Bağlantı türü olarak **Özel VPN**’yi seçtiyseniz şu ek ayarları yapılandırın:
+Bağlantı türü olarak **Özel VPN**’i seçtiyseniz şu ayarları da yapılandırın:
 
-- **VPN tanımlayıcısı** Bu, kullandığınız VPN uygulamasının tanımlayıcısıdır ve VPN sağlayıcınız tarafından verilir.
-- **Özel VPN öznitelikleri için anahtar ve değer çiftlerini girin** VPN bağlantınızı özelleştiren **Anahtarlar** ve **Değerler**’i ekleyin veya içeri aktarın. Yinelemek gerekirse, bu değerler normalde VPN sağlayıcınız tarafından verilir.
+- **VPN tanımlayıcısı**: Kullandığınız VPN uygulamasının tanımlayıcısıdır ve VPN sağlayıcınız tarafından verilir.
+- **Özel VPN öznitelikleri için anahtar ve değer çiftlerini girin**: VPN bağlantınızı özelleştiren **Anahtarlar** ve **Değerler**’i ekleyin veya içeri aktarın. Yinelemek gerekirse, bu değerler normalde VPN sağlayıcınız tarafından verilir.
 
 ## <a name="apps-per-app-vpn-settings"></a>Uygulama (uygulama başına VPN) ayarları
 
-- **Uygulama başına VPN** - Safari tarayıcısından ziyaret edildiğinde VPN bağlantısını etkinleştirecek URL’ler isterseniz bu seçeneği etkinleştirin. Bunu yapılandırmak için, temel VPN ayarlarında kimlik doğrulama yöntemi olarak **Sertifikalar**’ı seçmiş olmalısınız.
-- **Safari tarayıcısını kullanırken VPN bağlantısını etkinleştirecek URL'leri belirtin** - Bir veya birden çok web sitesi URL’si eklemek için Ekle’ye tıklayın. Bu URL’ler ziyaret edildiğinde, VPN bağlantısı etkinleştirilir.
+- **Uygulama başına VPN**: Safari tarayıcısından ziyaret edildiğinde VPN bağlantısını etkinleştirecek URL’ler kullanmak için bu seçeneği etkinleştirin. Uygulama başına VPN’i yapılandırmak için temel VPN ayarlarında kimlik doğrulama yöntemi olarak **Sertifikalar**’ı seçmeniz gerekir.
+  - **Bu VPN’i tetikleyecek Safari URL’leri**: Eklenecek bir veya daha fazla web sitesi URL’si seçin. Bu URL’ler ziyaret edildiğinde, VPN bağlantısı etkinleştirilir.
 
-- **İsteğe bağlı kurallar** - VPN bağlantısının ne zaman başlatılacağını denetleyen koşullu kuralları yapılandırmanıza olanak tanır. Örneğin, yalnızca cihaz şirketinizin Wi-Fi ağlarından birine bağlı olmadığında VPN bağlantısının kullanılacağına ilişkin bir koşul oluşturabilirsiniz. Alternatif olarak, cihazın belirttiğiniz DNS arama etki alanına erişememesi durumunda VPN bağlantısının başlatılmayacağına ilişkin bir koşul da oluşturmanız mümkündür.
+- **İsteğe bağlı VPN**: VPN bağlantısının ne zaman başlatılacağını denetleyen koşullu kurallar yapılandırın. Örneğin, yalnızca cihaz şirketin Wi-Fi ağına bağlı olmadığında VPN bağlantısının kullanılacağına ilişkin bir koşul oluşturun. Veya cihazın belirttiğiniz DNS’in arama etki alanına erişememesi durumunda VPN bağlantısının başlatılmayacağına ilişkin bir koşul oluşturun.
 
-    - **SSID’ler veya DNS arama etki alanları** - Bu koşulun kablosuz ağ **SSID’lerini** mi yoksa **DNS arama etki alanlarını** mı kullanacağını seçin. Bir veya birden çok SSID veya arama etki alanı yapılandırmak için Ekle’yi seçin.
-    - **URL dizesi araştırması** - İsteğe bağlı olarak, kuralın test için kullanacağı bir URL sağlayın. Bu profilin yüklü olduğu cihaz bu URL’ye yeniden yönlendirmesiz erişebiliyorsa VPN bağlantısı başlatılır ve cihaz hedef URL’ye bağlanır. Kullanıcı, URL araştırma dizesi sitesini görmez. URL araştırma dizesine örnek, VPN’i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusunun adresidir. Başka bir seçenek de URL’nin, cihazı VPN aracılığıyla hedef URL’ye bağlamadan önce VPN’in bir siteye bağlanma yeteneğini sınamasıdır.
-    - **Etki alanı eylemi** - Aşağıdaki öğelerden birini seçin:
-        - Gerekirse bağlan - 
-        - Hiçbir zaman bağlanma - 
-    - **Eylem** - Aşağıdaki öğelerden birini seçin:
-        - Bağlan - 
-        - Bağlantıyı değerlendir - 
-        - Yoksay - 
-        - Bağlantıyı kes - 
-
+  - **SSID’ler veya DNS arama etki alanları**: Bu koşulun kablosuz ağ **SSID’lerini** mi yoksa **DNS arama etki alanlarını** mı kullanacağını seçin. Bir veya birden çok SSID veya arama etki alanı yapılandırmak için **Ekle**’yi seçin.
+  - **URL dizesi araştırması**: İsteğe bağlıdır. Kuralın test olarak kullanacağı bir URL girin. Bu profilin yüklü olduğu cihaz, bu URL’ye yeniden yönlendirmesiz erişebiliyorsa VPN bağlantısı başlatılır ve cihaz, hedef URL’ye bağlanır. Kullanıcı, URL araştırma dizesi sitesini görmez. URL dize yoklaması, VPN’i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusunun adresidir. Başka bir seçenek de URL’nin, cihazı VPN aracılığıyla hedef URL’ye bağlamadan önce VPN’in bir siteye bağlanma yeteneğini sınamasıdır.
+  - **Etki alanı eylemi**: Aşağıdaki öğelerden birini seçin:
+    - Gerekirse bağlan
+    - Hiçbir zaman bağlanma
+  - **Eylem**: Aşağıdaki öğelerden birini seçin:
+    - Bağlanma
+    - Bağlantıyı değerlendir
+    - Yoksay
+    - Bağlantıyı kes
 
 ## <a name="proxy-settings"></a>Proxy ayarları
 
-- **Otomatik yapılandırma betiği** - Proxy sunucusunu yapılandırmak için bir dosya kullanın. Yapılandırma dosyasını içeren **Proxy sunucu URL’si** (örneğin **http://proxy.contoso.com**) değerini girin.
-- **Adres** - Proxy sunucusu adresini (IP adresi olarak) girin.
-- **Bağlantı noktası numarası** - Proxy sunucusuyla ilişkilendirilmiş bağlantı noktası numarasını girin.
+- **Otomatik yapılandırma betiği**: Proxy sunucusunu yapılandırmak için bir dosya kullanın. Yapılandırma dosyasını içeren **Proxy sunucu URL’si** (örneğin **http://proxy.contoso.com**) değerini girin.
+- **Adres**: Proxy sunucusunun tam konak adına ait IP adresini girin.
+- **Bağlantı noktası numarası**: Proxy sunucusuyla ilişkilendirilmiş bağlantı noktası numarasını girin.

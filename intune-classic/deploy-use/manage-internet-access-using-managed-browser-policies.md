@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Yönetilen tarayıcı, Microsoft Intune kullanarak kuruluşunuzda dağıtabileceğiniz bir web tarama uygulamasıdır. Yönetilen tarayıcı ilkesi, yönetilen tarayıcı kullanıcılarının ziyaret edebileceği web sitelerini kısıtlayan bir izin verilenler listesi veya engellenenler listesi yapılandırır.
 
@@ -99,52 +99,52 @@ Microsoft, ürün ve hizmetlerini geliştirmek için yönetilen tarayıcının p
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>İzin verilen ve engellenen URL'ler için URL biçimi
 İzin verilenler ve engellenenler listesinde URL belirtirken kullanabileceğiniz izin verilen biçimler ve joker karakterler hakkında bilgi almak için aşağıdaki bilgileri kullanın:
 
--   ‘**&#42;**’ joker karakter sembolünü aşağıdaki izin verilen örnekler listesinde yer alan kurallara uygun olarak kullanabilirsiniz.
+- ‘**&#42;**’ joker karakter sembolünü aşağıdaki izin verilen örnekler listesinde yer alan kurallara uygun olarak kullanabilirsiniz.
 
--   Tüm URL'leri listeye eklerken başlarına **http** veya **https** önekini yazdığınızdan emin olun.
+- Tüm URL'leri listeye eklerken başlarına **http** veya **https** önekini yazdığınızdan emin olun.
 
--   Adreste bağlantı noktası numaraları belirtebilirsiniz. Bir bağlantı noktası numarası belirtmezseniz, kullanılan değerler şöyle olacaktır:
+- Adreste bağlantı noktası numaraları belirtebilirsiniz. Bir bağlantı noktası numarası belirtmezseniz, kullanılan değerler şöyle olacaktır:
 
-    -   http için bağlantı noktası 80
+  -   http için bağlantı noktası 80
 
-    -   https için bağlantı noktası 443
+  -   https için bağlantı noktası 443
 
-    Bağlantı noktası numarası için joker karakter kullanımı desteklenmez. Örneğin **http&colon;//www&period;contoso&period;com:*;** ve **http&colon;//www&period;contoso&period;com: /*;** desteklenmez.
+  Bağlantı noktası numarası için joker karakter kullanımı desteklenmez. Örneğin <strong>http&colon;//www&period;contoso&period;com:*;</strong> ve <strong>http&colon;//www&period;contoso&period;com: /*;</strong> desteklenmez.
 
--   URL belirtirken kullanabileceğini izin verilen desenler hakkında bilgi almak için aşağıdaki tabloyu kullanın:
+- URL belirtirken kullanabileceğini izin verilen desenler hakkında bilgi almak için aşağıdaki tabloyu kullanın:
 
-|URL|Ayrıntılar|Eşleşir|Eşleşmez|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Tek bir sayfayla eşleşir|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Tek bir sayfayla eşleşir|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|www.contoso.com ile başlayan tüm URL'lerle eşleşir|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|contoso.com altındaki tüm alt etki alanlarıyla eşleşir|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|Tek bir klasörle eşleşir|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Bağlantı noktası numarası kullanarak tek bir sayfayla eşleşir|http://www.contoso.com:80||
-    |https://www.contoso.com|Güvenli tek bir sayfayla eşleşir|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Tek bir klasör ve tüm alt klasörleriyle eşleşir|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     Ayrıntılar                      |                                                Eşleşir                                                |                                Eşleşmez                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              Tek bir sayfayla eşleşir               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              Tek bir sayfayla eşleşir               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | www.contoso.com ile başlayan tüm URL'lerle eşleşir |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     contoso.com altındaki tüm alt etki alanlarıyla eşleşir     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             Tek bir klasörle eşleşir              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  Bağlantı noktası numarası kullanarak tek bir sayfayla eşleşir   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          Güvenli tek bir sayfayla eşleşir           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    Tek bir klasör ve tüm alt klasörleriyle eşleşir    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   Belirtemeyeceğiniz bazı girdi örnekleri aşağıda verilmiştir:
+- Belirtemeyeceğiniz bazı girdi örnekleri aşağıda verilmiştir:
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP adresleri
+  - IP adresleri
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>İzin verilenler ve engellenenler listeleri arasındaki çakışmalar nasıl çözümlenir?
 Bir cihaza birden çok yönetilen tarayıcı ilkesi dağıtılır ve ayarlar çakışırsa, hem mod (izin verme veya engelleme) hem de URL listeleri çakışmalar için incelenir. Bir çakışma durumunda aşağıdaki davranış uygulanır:

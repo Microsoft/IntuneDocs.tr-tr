@@ -1,29 +1,29 @@
 ---
-title: "Windows 10 Şirket Portalı uygulamasını el ile ekleme"
+title: Windows 10 Şirket Portalı uygulamasını el ile ekleme
 titleSuffix: Microsoft Intune
-description: "Windows 10 Şirket Portalı uygulamasını el ile eklemeyi öğrenin."
-keywords: 
+description: Windows 10 Şirket Portalı uygulamasını el ile eklemeyi öğrenin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06ed9395d06e2d64edcedcaadfe819ad03f1d495
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f2c7e449e9931bccd5e736bd09c33e0b42c623e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını el ile ekleme
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Son kullanıcılar cihazları yönetmek ve uygulama yüklemek için Intune Şirket Portalı uygulamasını Microsoft Mağazası'ndan yükleyebilir. Ancak şirketiniz, Intune Şirket Portalı uygulamasını sizin atamanızı gerektiriyorsa Intune ile İş İçin Microsoft Mağazası'nı tümleştirmiş olmasanız bile Windows 10 Şirket Portalı uygulamasını doğrudan Intune'dan atayabilirsiniz.
 
@@ -48,11 +48,11 @@ Son kullanıcılar cihazları yönetmek ve uygulama yüklemek için Intune Şirk
 
 7. "Gerekli Çerçeveler" başlığı altındaki tüm paketleri indirin. Bu işlem x86, x64 ve ARM mimarileri için gerçekleştirilmelidir. Böylece toplam 12 paket gerekir.
 8. Şirket Portalı uygulamasını Intune’a yüklemeden önce, paketlerin aşağıdaki şekilde yapılandırıldığı bir klasör (ör: C:&#92;Şirket Portalı) oluşturun:
-  - Şirket Portalı paketini C:\Company Portal adresine koyun. Bu konumda bir Dependencies alt klasörü oluşturun.  
+   - Şirket Portalı paketini C:\Company Portal adresine koyun. Bu konumda bir Dependencies alt klasörü oluşturun.  
 
-    ![APPXBUN dosyasıyla kaydedilen Dependencies klasörünün görüntüsü](./media/Win10CP-Dependencies-save.png)
+     ![APPXBUN dosyasıyla kaydedilen Dependencies klasörünün görüntüsü](./media/Win10CP-Dependencies-save.png)
 
-  - Bağımlılık paketlerini *Dependencies* klasörüne yerleştirin. 
+   - Bağımlılık paketlerini *Dependencies* klasörüne yerleştirin. 
 
      > [!NOTE]
      > Bağımlılıklar, doğru biçimde yerleştirilmezse, Intune dosyaları tanıyamaz ve paket karşıya yükleme işlemi sırasında bunları karşıya yükleyemez. Bu durumda, karşıya yükleme başarısız olur ve bir hata görüntülenir.
@@ -81,18 +81,19 @@ Windows 10 Şirket Portalı uygulaması bu şekilde imzalanır ve atanırsa, ma�
 
 Uygulamanın bu şekilde nasıl imzalanıp atanacağı aşağıda açıklanmaktadır:
 
-1. Microsoft Intune Windows 10 Şirket Portalı Uygulamasını İmzalama Betiğini [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) adresinden indirin.  Bu betik, Windows 10 için Windows SDK’nın ana bilgisayara yüklenmiş olmasını gerektirir. Windows 10 için Windows SDK’yı indirmek için [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) adresini ziyaret edin.
+1. Microsoft Intune Windows 10 Şirket Portalı Uygulaması İmzalama Betiğini [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) adresinden indirin.  Bu betik, Windows 10 için Windows SDK’nın ana bilgisayara yüklenmiş olmasını gerektirir. Windows 10 için Windows SDK’sını indirmek için [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) adresini ziyaret edin.
 2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Microsoft Mağazası'ndan indirin.  
 3. Betik üst bilgisinde açıklanan giriş parametrelerini (ayıklanmış hali aşağıdadır) kullanıp betiği çalıştırarak Windows 10 Şirket Portalı uygulamasını imzalayın. Bağımlılıkların betiğe geçirilmesi gerekmez. Bunlar, yalnızca uygulama Intune Yönetici Konsolu’na yüklenirken gereklidir.
 
-|Parametre | Description|
-| ------------- | ------------- |
-|InputWin10AppxBundle |Kaynak appxbundle dosyasının bulunduğu konumun yolu |
-|OutputWin10AppxBundle |İmzalı appxbundle dosyası için çıkış yolu.  Win81Appx Windows 8.1 veya Windows Phone 8.1 Şirket Portalı (. APPX) dosyasının bulunduğu konumun yolu.|
-|PfxFilePath |Symantec Enterprise Mobil Kod İmza Sertifikası (.PFX) dosyasının yolu. |
-|PfxPassword| Symantec Enterprise Mobil Kod İmza Sertifikası’nın parolası. |
-|PublisherId |Kuruluşun Yayımcı Kimliği. Yoksa, Symantec Kurumsal Mobil Kod İmzalama Sertifikası’nın 'Konu' alanı kullanılır.|
-|SdkPath | Windows 10 için Windows SDK’sı kök klasörünün yolu. Bu bağımsız değişken isteğe bağlıdır ve varsayılan olarak ${env:ProgramFiles(x86)}\Windows Kits\10 değerindedir.|
+|       Parametre       |                                                                        Description                                                                        |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                                  Kaynak appxbundle dosyasının bulunduğu konumun yolu                                                  |
+| OutputWin10AppxBundle | İmzalı appxbundle dosyası için çıkış yolu.  Win81Appx Windows 8.1 veya Windows Phone 8.1 Şirket Portalı (. APPX) dosyasının bulunduğu konumun yolu. |
+|      PfxFilePath      |                                       Symantec Enterprise Mobil Kod İmza Sertifikası (.PFX) dosyasının yolu.                                        |
+|      PfxPassword      |                                         Symantec Enterprise Mobil Kod İmza Sertifikası’nın parolası.                                          |
+|      PublisherId      |          Kuruluşun Yayımcı Kimliği. Yoksa, Symantec Kurumsal Mobil Kod İmzalama Sertifikası’nın 'Konu' alanı kullanılır.           |
+|        SdkPath        |     Windows 10 için Windows SDK’sı kök klasörünün yolu. Bu bağımsız değişken isteğe bağlıdır ve varsayılan olarak ${env:ProgramFiles(x86)}\Windows Kits\10 değerindedir.     |
+
 Betik, çalışması tamamlandığında Windows 10 Şirket Portalı uygulamasının imzalı sürümünü çıktı olarak sunar. Ardından Intune aracılığıyla uygulamanın imzalı sürümünü bir LOB uygulaması olarak atayabilirsiniz. Şu anda atanmış durumdaki sürümler, bu yeni uygulamaya yükseltilir.  
 
 ## <a name="next-steps"></a>Sonraki adımlar

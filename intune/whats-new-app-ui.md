@@ -3,10 +3,10 @@ title: Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleş
 titlesuffix: Microsoft Intune
 description: Son kullanıcı cihazlarında Microsoft Intune ile çalışan uygulamalar için kullanıcı arabiriminde yapılan değişiklikleri keşfedin.
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/21/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,41 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e553391bb2a98c5e57edf0a4388359703b9d550
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: 8da396e41844c854cd18a9384fe97ac0bee59355
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu güncelleştirmeleri anlamak, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-2-2018"></a>2 Nisan 2018 Haftası
+
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866---"></a>iOS için Şirket Portalı uygulamasında kullanıcı deneyimi güncelleştirmesi <!--1412866 -->
+iOS için Şirket Portalı uygulamasına büyük bir kullanıcı deneyimi güncelleştirmesi yayımladık. Güncelleştirme, modern bir görünüm ve his sağlayan yepyeni bir görsel tasarım sunmaktadır. Uygulamanın işlevselliğini korurken kullanılabilirliğini ve erişilebilirliğini artırdık.  
+
+Şunları da göreceksiniz:
+- iPhone X desteği.
+- Kullanıcıların zamandan tasarruf etmesi için daha hızlı uygulama açma ve yükleme yanıtları.
+- Kullanıcılara en güncel durum bilgilerini sağlamak için ek ilerleme çubukları.
+- Herhangi bir sorunla karşılaşıldığında bunun daha kolay bildirilmesi için günlükleri karşıya yükleme işleminde iyileştirme.  
+
+|Önce|Sonra|
+|---|---|
+|![01](/intune/media/cp_iosRedesign_before_1803_01.png)|![01](/intune/media/cp_iosRedesign_after_1803_01.png)|
+|*Önceki adımla birlikte*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
+|![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
+
+#### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Windows için Şirket Portalı uygulamasında dil iyileştirmeleri <!---1683758--->
+Daha kullanıcı dostu ve şirketinize özgü olabilmesi için Windows 10 için Şirket Portalı’nda dili iyileştirdik.
+
+|Önce|Sonra|
+|---|---|
+|![01](./media/windows_enroll_before_1803.png)|![01](./media/windows_enroll_after_1803.png)|
+|![02](./media/windows_view_policy_issues_before_1803.png)|![02](./media/windows_view_policy_issues_after_1803.png)
 
 ## <a name="week-of-march-12-2018"></a>12 Mart 2018 Haftası
 
@@ -34,12 +59,13 @@ Android için Şirket Portalı uygulamasını, Android'in [Materyal Tasarım](ht
 
 |Önce|Sonra|
 |---|---|
-|![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
+|![01](./media/android_about_before_1803.png)|![01](./media/androidCP_about_after_1803.png)|
 |![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
-|![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
-|![04](./media/android_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
-|![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
+|![03](./media/android_devices_before_1803.png)|![03](./media/androidCP_devicelist_after_1803.png)|
+|![04](./media/android_device_details_before_1803.png)|![05](./media/androidCP_devicedetails_1_after1803.png)|
+|![05](./media/android_device_details_update_settings_before_1803.png)|![05](./media/androidCP_devicedetails_red_box_2_after1803.png)|
 |![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
+|![07](./media/androidCP_Setup01_before_1803.png)|![07](./media/androidCP_Setup01_after_1803.png)|
 
 
 ## <a name="week-of-november-27-2017"></a>27 Kasım 2017 Haftası
@@ -409,14 +435,6 @@ Bu değişikliğe hazırlanmak için herhangi bir şey yapmanız gerekmez. Günc
 |---|---|
 |![Güncelleştirilmiş cihaz sayfası, tam liste üzerinde açılmak yerine cihaz bilgileri üzerinde düzgün bir şekilde hizalı olarak gösteriliyor.](./media/iwp-device-after-1803.png)|![Cihaz sayfasının önceki sürümü.](./media/iwp-device-before-1803.png)|
 |![Güncelleştirilmiş uygulama yükleme sayfası; yayımlanma tarihi, sürüm ve uygulama türü gibi çeşitli yükleme bilgileri ve açıklama üzerinde uygulamayı düzgün bir şekilde gösteriyor.](./media/iwp-app-install-after-1803.png)|![Uygulama yükleme sayfasının önceki sürümü.](./media/iwp-app-install-before-1803.png)|
-
-### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS için Şirket Portalı uygulamasında kullanıcı deneyimi güncelleştirmesi <!--1412866-->
-
-iOS için Şirket Portalı uygulamasına büyük bir kullanıcı deneyimi güncelleştirmesi yayımlayacağız. Bu güncelleştirmede, artırılmış kullanılabilirlik ve erişim ile modern bir görüntü ve his veren baştan aşağı yeni bir görsel tasarım yer alacak. Tüm mevcut iOS Şirket Portalı işlevselliği korunacaktır.
-
-Güncelleştirilmiş iOS için Şirket Portalı uygulamasını kullanıp geri bildirimde bulunmanız için Apple TestFlight programı aracılığıyla uygulamanın yayın öncesi sürümünü sunuyoruz. TestFlight erişimi için https://aka.ms/intune_ios_cp_testflight adresinde kaydolun. Bu güncelleştirme hakkında son bilgiler için bkz. https://aka.ms/iOS_companyportal_update.
-
-![yeni ios şirket portalı uygulamasının teaser görüntüleri](./media/ios-cp-app-redesign-1801-teaser.png)
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Şirket Portalı web sitesine kullanıcı arabirimi güncelleştirmeleri <!--1313244 part 2-->
 

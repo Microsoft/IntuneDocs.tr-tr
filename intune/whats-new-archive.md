@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune önceki aylardaki yenilikler
+title: Microsoft Intune - Azure’da önceki aylarda yapılan yenilikler | Microsoft Docs
 titlesuffix: ''
 description: Intune’daki yenilikler sayfasından eski duyuruları gözden geçirme
 keywords: ''
@@ -16,15 +16,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2326078f57abf3101869b463aca8eba55aad2905
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: d87cf0a56a6b114a210242691d0441882c186964
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune’daki yenilikler - önceki aylar
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="october-2017"></a>Ekim 2017
 
@@ -570,7 +570,7 @@ Daha fazla bilgi için bkz. [Microsoft Intune’da Android for Work cihaz kısı
 Kablosuz ekranlar, cihaz bulma, görev geçişi ve SIM kartı hata iletileri gibi özellikleri denetleyen yeni [Windows cihaz kısıtlama ayarları](device-restrictions-windows-10.md) ekledik.
 
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>Sertifika yapılandırması güncelleştirmeleri <!-- 918991 and 823198 -->
-Bir SCEP sertifika profili oluştururken, **Konu adı biçimi** için **Özel** seçeneği iOS, Android ve Windows cihazları için kullanılabilir. Bu güncelleştirmeden önce, **Özel** alanı yalnızca iOS cihazları için kullanılabiliyordu. Daha fazla bilgi için bkz. [SCEP sertifika profili oluşturma] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile).
+Bir SCEP sertifika profili oluştururken, <strong>Konu adı biçimi</strong> için <strong>Özel</strong> seçeneği iOS, Android ve Windows cihazları için kullanılabilir. Bu güncelleştirmeden önce, <strong>Özel</strong> alanı yalnızca iOS cihazları için kullanılabiliyordu. Daha fazla bilgi için bkz. [SCEP sertifika profili oluşturma](certificates-scep-configure.md#create-a-scep-certificate-profile).
 
 Bir PKCS sertifika profili oluştururken, **Konu diğer adı** için **Özel Azure AD özniteliği** kullanılabilir. **Departman** seçeneği, **Özel Azure AD özniteliği** seçtiğinizde kullanılabilir. Daha fazla bilgi için bkz. [PKCS sertifika profili nasıl oluşturulur](certficates-pfx-configure.md#create-a-device-configuration-profile).
 

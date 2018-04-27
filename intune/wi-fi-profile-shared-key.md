@@ -1,29 +1,33 @@
 ---
-title: "Önceden paylaşılan anahtar ile WiFi profili oluşturma - Microsoft Intune - Azure | Microsoft Docs"
-description: "Önceden paylaşılan bir anahtarla Wi-Fi profili oluşturmak için özel bir profil kullanma ve Microsoft Intune'da Android, Windows ve EAP tabanlı Wi-Fi profilleri için örnek XML kodu alma"
-keywords: 
+title: Önceden paylaşılan anahtar ile WiFi profili oluşturma - Microsoft Intune - Azure | Microsoft Docs
+description: Önceden paylaşılan bir anahtarla Wi-Fi profili oluşturmak için özel bir profil kullanma ve Microsoft Intune'da Android, Windows ve EAP tabanlı Wi-Fi profilleri için örnek XML kodu alma
+keywords: ''
 author: mandia
 ms.author: MandiOhlinger
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel cihaz profili kullanma - Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Önceden paylaşılan anahtarlar (PSK), genellikle WiFi ağlarında ya da kablosuz LAN’larda kullanıcıların kimliklerini doğrulamak için kullanılır. Intune ile önceden paylaşılan bir anahtar kullanarak bir WiFi profili oluşturabilirsiniz. Profili oluşturmak için Intune’daki **Özel cihaz profilleri** özelliğini kullanın. Bu makalede ayrıca, EAP tabanlı bir Wi-Fi profilinin nasıl oluşturulacağına ilişkin bazı örnekler yer alır.
+
+> [!IMPORTANT]
+>- Windows 10 ile önceden paylaşılan bir anahtarı kullanmak, Intune’da bir düzeltme hatasına sebep olur. Bu durumda, Wi-Fi profili cihaza düzgün bir şekilde atanır ve profil beklendiği gibi çalışır.
+>- Önceden paylaşılan anahtar içeren bir Wi-Fi profilini dışarı aktarıyorsanız dosyanın korumalı olduğundan emin olun. Anahtar düz metin biçimindedir, yani anahtarı korumak sizin sorumluluğunuzdadır.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -46,15 +50,15 @@ Android, Windows veya EAP tabanlı bir Wi-Fi profili için önceden paylaşılan
 
    d. **OMA-URI**:
 
-    - **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > Başına nokta karakterini eklediğinizden emin olun.
+     > [!NOTE]
+     > Başına nokta karakterini eklediğinizden emin olun.
 
-    SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin, şunu girin: `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+     SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin, şunu girin: `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Değer Alanı**, XML kodunuzu yapıştırdığınız yerdir. Bu makaledeki örneklere bakın. Her bir değeri ağ ayarlarınıza uyacak şekilde güncelleştirin. Kodun açıklamalar bölümü bazı işaretçiler içerir.
+   e. **Değer Alanı**, XML kodunuzu yapıştırdığınız yerdir. Bu makaledeki örneklere bakın. Her bir değeri ağ ayarlarınıza uyacak şekilde güncelleştirin. Kodun açıklamalar bölümü bazı işaretçiler içerir.
 3. **Tamam**’ı seçin, ilkeyi kaydedin ve atayın.
 
     > [!NOTE]
@@ -203,7 +207,7 @@ Aşağıdaki adımları kullanarak mevcut bir Wi-Fi bağlantısından XML dosyas
 
 1. Kablosuz ağa bağlı veya yakın bir zamanda bağlanmış bir bilgisayarda, `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` klasörünü açın.
 
-  Birçok kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir. Aksi takdirde, doğru olanı bulmak için her profili aramanız gerekebilir.
+   Birçok kablosuz ağa bağlanmamış bir bilgisayar kullanmak en iyisidir. Aksi takdirde, doğru olanı bulmak için her profili aramanız gerekebilir.
 
 2. Doğru ada sahip dosyayı bulmak için XML dosyalarını arayın.
 3. Doğru XML dosyasını bulduktan sonra, XML kodunu kopyalayıp OMA-URI ayarlar sayfasının **Veri** alanına yapıştırın.

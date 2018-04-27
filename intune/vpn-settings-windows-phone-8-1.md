@@ -1,27 +1,27 @@
 ---
-title: "Windows Phone 8.1 cihazları için Microsoft Intune VPN ayarları"
-titleSuffix: 
-description: "Windows Phone 8.1 çalıştıran cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi edinin."
-keywords: 
+title: Windows Phone 8.1 cihazları için Microsoft Intune VPN ayarları
+titleSuffix: ''
+description: Windows Phone 8.1 çalıştıran cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi edinin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 786a817fbbd821d74f4f1a03fdec5a6893ed890b
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 458586a2d507e913eb702c0ee2e3c0531350f1b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1 çalıştıran cihazlar için Microsoft Intune'da VPN ayarlarını yapılandırın
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu makale, Windows Phone 8.1 çalıştıran cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi sağlar.
 
@@ -56,7 +56,7 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 - **Rol** (yalnızca Pulse Secure) - Bu bağlantıya erişimi olan kullanıcı rolünün adını belirtin. Bir kullanıcı rolü, kişisel ayarları ve seçenekleri tanımlar, belirli erişim özelliklerini etkinleştirir veya devre dışı bırakır.
 - **Bölge** (yalnızca Pulse Secure) - Kullanmak istediğiniz kimlik doğrulaması bölgesinin adını belirtin. Bir kimlik doğrulaması bölgesi, Pulse Secure bağlantı türü tarafından kullanılan kimlik doğrulaması kaynakları gruplandırmasıdır.
 
-- **DNS soneki arama listesi** - Bir veya birden çok DNS soneki **ekleyin**. Bir web sitesine kısa ad kullanarak bağlanılırken, belirttiğiniz her DNS soneki aranır. Örneğin, **domain1.contoso.com** ve **domain2.contoso.com** DNS son eklerini belirtip **http://mywebsite** URL’sini ziyaret ettiğinizde **http://mywebsite.domain1.contoso.com** ve **http://mywebsite.domain2.contoso.com** URL’leri aranır.
+- **DNS soneki arama listesi** - Bir veya birden çok DNS soneki **ekleyin**. Bir web sitesine kısa ad kullanarak bağlanılırken, belirttiğiniz her DNS soneki aranır. Örneğin **etkialanı1.contoso.com** ve **etkialanı2.contoso.com** DNS son eklerini belirtin ve **http://mywebsite** URL’sini ziyaret edin, **http://mywebsite.domain1.contoso.com** ve **http://mywebsite.domain2.contoso.com URL’leri aranır**.
 
 - **Özel XML** - VPN bağlantısını yapılandıran özel XML komutlarını belirtin.
 
@@ -64,7 +64,6 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **CheckPoint Mobile VPN örneği:**
@@ -76,13 +75,11 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 **SonicWall Mobile Connect örneği:**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **F5 Edge Client örneği:**
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 Özel XML komutları yazma hakkında daha fazla bilgi için her bir üreticinin VPN belgelerine başvurun.

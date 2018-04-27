@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune Uygulama SDK’sını kullanmaya başlayın"
-description: "Mobil uygulamanızı Microsoft Intune ile mobil uygulama yönetimi (MAM) için hızlıca etkinleştirin."
-keywords: 
+title: Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
+description: Mobil uygulamanızı Microsoft Intune ile mobil uygulama yönetimi (MAM) için hızlıca etkinleştirin.
+keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5827c82d84be45020aa2bdec16c92e0296431cf8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -69,7 +69,7 @@ Yerel iOS ve Android için Intune Uygulama SDK'ları bir Microsoft GitHub hesab�
 
 Uygulamanız bir Xamarin veya Cordova uygulaması ise lütfen şu SDK çeşitlerini kullanın:
 
-* [Intune Uygulama SDK’sı Xamarin Bileşeni](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Intune Uygulama SDK’sı Xamarin Bağlamaları](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 * [Intune Uygulama SDK’sı Cordova Eklentisi](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Depolarımızdan çatallama ve çekme işlemleri yaparken kullanabileceğiniz bir GitHub hesabı oluşturmanız iyi olabilir. GitHub, geliştiricilerin ürün ekibimizle iletişim kurmasına, soru sorup hızlı yanıtlar almasına, sürüm notlarını görüntülemesine ve Microsoft'a geri bildirim sağlamasına olanak tanır. Intune Uygulama SDK’sı Github'ındaki sorular için şuraya başvurun: msintuneappsdk@microsoft.com.
@@ -84,7 +84,7 @@ Intune Uygulama SDK'sı ile uygulamanızı tümleştirmenize yardımcı olması 
 
 * **[Intune Uygulama SDK’sı Cordova Eklentisi kılavuzu](app-sdk-cordova.md)**: Bu belge, Intune uygulama koruma ilkeleri için Cordova kullanarak iOS ve Android uygulamaları oluşturmanıza yardımcı olur.
 
-* **[Intune Uygulama SDK’sı Xamarin Bileşeni kılavuzu](app-sdk-xamarin.md)**: Bu belge, Intune uygulama koruma ilkeleri için Cordova kullanarak iOS ve Android uygulamaları oluşturmanıza yardımcı olur.
+* **[Intune Uygulama SDK’sı Xamarin Bağlamaları kılavuzu](app-sdk-xamarin.md)**: Bu belge, Intune uygulama koruma ilkeleri için Xamarin kullanarak iOS ve Android uygulamaları oluşturmanıza yardımcı olur.
 
 
 
@@ -142,7 +142,7 @@ Yapı numarası|CFBundleVersion|PackageVersionCode |Bu numara, uygulama kodunda 
 
 - **CFBundleShortVersionString**  
     Paket yayımlanma sürümü numarasını belirtir. Bu numara, uygulamanın yayımlanma sürümünü tanımlar. Numara, son kullanıcılar tarafından uygulamaya başvurmak için kullanılır.
- - **CFBundleVersion**  
+  - **CFBundleVersion**  
     Paketin bir yinelemesini tanımlayan paket derleme sürümü. Numara, yayımlanmış veya yayımlanmamış bir paketi tanımlayabilir. Numara, uygulama algılama için kullanılır.
 
 #### <a name="android"></a>Android

@@ -1,10 +1,9 @@
 ---
-title: Windows Holographic for Business cihazlar için Microsoft Intune özel ayarları
-titlesuffix: ''
-description: Bir Windows Holographic for Business özel profilinde kullanabileceğiniz ayarlar hakkında bilgi edinin.
+title: Microsoft Intune - Azure’da Windows Holographic for Business cihazlar için özel ayarlar | Microsoft Docs
+description: Microsoft Intune’da Windows Holographic for Business çalıştıran cihazlar için OMA-URI ayarlarını kullanmak üzere özel bir profil oluşturun. AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates ve ApplicationLaunchRestrictions ilke yapılandırma hizmet sağlayıcısı (CSP) ayarlarını ayarlayabilirsiniz.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.article: article
@@ -13,21 +12,22 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5cdba24c10b90756d9a2b9f08fd7d4dcd727303
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b349a61d61288f700294e04d029d825afba13445
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-holographic-for-business"></a>Windows Holographic for Business çalıştıran cihazlar için Microsoft Intune özel cihaz ayarları
+# <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Intune’da Windows Holographic for Business çalıştıran cihazlar için özel cihaz ayarları
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
  Cihazlardaki özellikleri denetlemek için kullanılabilecek OMA-URI (Open Mobile Alliance Uniform Resource Identifier) ayarları dağıtmak üzere Windows Holographic for Business için Microsoft Intune **özel** profilini kullanın. Windows Holographic for Business, pek çok yapılandırma hizmet sağlayıcıları (CSP’ler) ayarını kullanılabilir hale getirir. CSP’ye genel bakış için bkz. [BT uzmanları için yapılandırma hizmet sağlayıcılarına (CSP’ler) giriş](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers). Windows Holographic tarafından desteklenen belirli CSP’ler için bkz. [Windows Holographic’te desteklenen CSP’ler](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
 
 Belirli bir ayarı arıyorsanız, [Windows Holographic for Business cihaz kısıtlama profilinin](device-restrictions-windows-holographic.md) pek çok yerleşik ayarı içerdiğini ve özel değerler belirlemeyi gerektirmediğini aklınızda bulundurun.
 
-1. Başlamak için, [Microsoft Intune’da özel cihaz ayarlarını yapılandırma](custom-settings-configure.md) başlığı altında verilen yönergeleri kullanın.
+## <a name="create-the-custom-oma-uri-profile"></a>Özel OMA-URI profilini oluşturma
+1. Başlamak için [Microsoft Intune’da özel cihaz ayarlarını yapılandırma](custom-settings-configure.md) başlığı altında verilen yönergeleri kullanın.
 2. Bir veya birden çok OMA-URI ayarı eklemek için, **Profil Oluştur** kısmında **Ayarlar**’ı seçin.
 3. **Özel OMA-URI Ayarları** kısmında, yeni değer eklemek için **Ekle**’ye tıklayın. Ayrıca, virgülle ayrılmış değerler (.csv) dosyasında yapılandırdığınız tüm değerlerin listesini oluşturmak için **Dışarı Aktar**’a da tıklayabilirsiniz.
 4. Eklemek istediğiniz her OMA-URI ayarı için aşağıdaki bilgileri girin:
@@ -49,18 +49,56 @@ Profil oluşturulur ve profil listesinde görüntülenir.
 
 Bu ayarlar, Windows Holographic for Business çalıştıran cihazlar için faydalıdır:
 
+### <a name="allowfastreconnecthttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-authenticationauthentication-allowfastreconnect"></a>[AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)
 
-|Ayar adı|OMA URI|Veri türü  |
-|---------|---------|---------|
-|[AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Tamsayı<br>0 - izin verilmiyor<br>1 - izin veriliyor (varsayılan)|
-|[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Tamsayı<br>0 - izin verilmiyor<br>1 - izin veriliyor (varsayılan)|
-|[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Tamsayı<br>0 – Güncelleştirme hizmetine izin verilmiyor <br>1 – Güncelleştirme hizmetine izin veriliyor (varsayılan).|
-|[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Dize<br>URL - Cihaz, güncelleştirmeleri belirtilen URL’deki WSUS sunucusunda denetler.<br>Yapılandırılmamış - Cihaz, güncelleştirmeleri Microsoft Update'ten denetler.|
-|[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Tamsayı<br>0 – Yapılandırılmamış. Cihaz geçerli tüm güncelleştirmeleri yükler.<br>1 – Cihaz sadece geçerli olan güncelleştirmeleri ve Onaylanmış Güncelleştirmeler listesindekileri yükler. Dağıtımdan önce sınamanın gerektiği durumlar gibi BT, cihazlardaki güncelleştirmelerin dağıtımını kontrol etmek istiyorsa bu ilkeyi 1 olarak ayarlayın.|
-|[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**Önemli**<br>Son kullanıcılarınız adına güncelleştirme EULA'larını okumalı ve kabul etmelisiniz. Bunun yapılmaması, yasal veya sözleşmeye dayalı yükümlülüklerin ihlalidir.|Güncelleştirme onayları için düğüm ve son kullanıcı adına EULA kabulü.|
-[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Önemli**<br>AppLocker CSP makalesi, atlanan XML örneklerini kullanır. Ayarları Intune özel profilleri ile yapılandırmak için düz XML kullanmanız gerekir.|Dize<br>Daha fazla bilgi için bkz. [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) makalesi.
+---
+|OMA URI|Veri türü  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Tamsayı<br>0 - izin verilmiyor<br>1 - izin veriliyor (varsayılan)|
 
-## <a name="how-to-find-the-policies-you-can-configure"></a>Yapılandırabileceğiniz ilkeleri bulma
+### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
+
+---
+|OMA URI|Veri türü  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Tamsayı<br>0 - izin verilmiyor<br>1 - izin veriliyor (varsayılan)|
+
+### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
+
+---
+|OMA URI|Veri türü  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Tamsayı<br>0 – Güncelleştirme hizmetine izin verilmiyor <br>1 – Güncelleştirme hizmetine izin veriliyor (varsayılan).|
+
+### <a name="updateserviceurlhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-updateserviceurl"></a>[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+
+---
+|OMA URI|Veri türü  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Dize<br>URL - Cihaz, güncelleştirmeleri belirtilen URL’deki WSUS sunucusunda denetler.<br>Yapılandırılmamış - Cihaz, güncelleştirmeleri Microsoft Update'ten denetler.|
+
+### <a name="requireupdatesapprovalhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-requireupdateapproval"></a>[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
+
+---
+|OMA URI|Veri türü  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Tamsayı<br>0 – Yapılandırılmamış. Cihaz geçerli tüm güncelleştirmeleri yükler.<br>1 – Cihaz sadece geçerli olan güncelleştirmeleri ve Onaylanmış Güncelleştirmeler listesindekileri yükler. Dağıtımdan önce sınamanın gerektiği durumlar gibi BT, cihazlardaki güncelleştirmelerin dağıtımını kontrol etmek istiyorsa bu ilkeyi 1 olarak ayarlayın.|
+
+### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
+
+---
+|OMA URI|Veri türü  |
+|---------|---------|
+|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**Önemli**<br>Son kullanıcılarınız adına güncelleştirme EULA'larını okumalı ve kabul etmelisiniz. Bunun yapılmaması, yasal veya sözleşmeye dayalı yükümlülüklerin ihlalidir.|Güncelleştirme onayları için düğüm ve son kullanıcı adına EULA kabulü.|
+
+### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
+
+---
+|OMA URI|Veri türü  |
+|---------|---------|
+|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Önemli**<br>AppLocker CSP makalesi, atlanan XML örneklerini kullanır. Ayarları Intune özel profilleri ile yapılandırmak için düz XML kullanmanız gerekir.|Dize<br>Daha fazla bilgi için bkz. [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).|
+
+## <a name="find-the-policies-you-can-configure"></a>Yapılandırabileceğiniz ilkeleri bulma
 
 Windows Holographic’in desteklediği tüm yapılandırma hizmet sağlayıcılarının (CSP’ler) tam listesini [Windows Holographic’te desteklenen CSP’ler](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) bölümünde bulabilirsiniz. Tüm ayarlar, Windows Holographic sürümlerinin tümüyle uyumlu değildir. Windows makalesindeki tablo, her CSP için hangi sürümlerin desteklendiğini bildirir.
 

@@ -15,16 +15,16 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 iOS uygulama deposu, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak sağlar. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur.
 
@@ -152,6 +152,17 @@ Belirli bir VPP belirteci için tüm VPP uygulamalarının lisansını iptal etm
 ## <a name="further-information"></a>Daha fazla bilgi
 
 Uygun cihaza sahip bir kullanıcı, bir VPP uygulamasını cihaza ilk kez yüklemeye çalıştığında, kullanıcıdan Apple Volume Purchase Program’e katılması istenir. Uygulamanın yüklenmeye devam etmesi için önce katılmaları gerekir. Apple Volume Purchase programına katılma daveti, kullanıcının, iOS cihazında iTunes uygulamasını kullanabilmesini gerektirir. iTunes Store uygulamasını devre dışı bırakmak için bir ilke belirlediyseniz VPP uygulamaları için kullanıcı tabanlı lisanslama çalışmaz. Çözüm, ilkeyi kaldırarak iTunes uygulamasına izin vermek veya cihaz tabanlı lisanslama kullanmaktır.
+
+## <a name="frequently-asked-questions"></a>Sık sorulan sorular
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>Bir uygulama cihaza yüklendikten veya cihazdan kaldırıldıktan sonra portalın lisansı güncelleştirmesi ne kadar sürer?
+Lisans, bir uygulama yüklendikten veya kaldırıldıktan sonra birkaç saat içinde güncelleştirilir. Son kullanıcı uygulamayı cihazdan kaldırsa bile lisansın o kullanıcı veya cihaza atanmış olarak kalacağına dikkat edin.
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>Bir uygulamaya fazla abone atamak mümkün mü ve hangi durumlarda yapılabilir?
+Evet. Intune yöneticisi bir uygulamaya fazladan abone atayabilir. Örneğin yönetici, XYZ uygulaması için 100 lisans satın alıp uygulamayı 500 üyelik bir gruba hedefler. Bu durumda ilk 100 üye (kullanıcı veya cihaz) kendilerine atanan lisansı alır, kalan üyeler lisans atamasında başarısız olur.
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Intune’un her gün Apple ile uygulama lisanslarını eşitlediğini duydum, bu doğru mu?
+Intune, her 15 saatte bir Apple ile uygulama lisanslarını eşitler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

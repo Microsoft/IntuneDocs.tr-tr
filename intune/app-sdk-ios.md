@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 498b9ec1ab98358f73c0ca2139f156164a253a75
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -66,7 +66,7 @@ Bu kılavuz, iOS için Intune Uygulama SDK'sının aşağıdaki bileşenlerinin 
     * IntuneMAMPolicyDelegate.h
     * IntuneMAMPolicyManager.h
     * IntuneMAMVersionInfo.h
-    
+
 Geliştiriciler, yalnızca IntuneMAM.h üst bilgi dosyasını içeri aktararak yukarıdaki tüm dosyaların içeriğine erişebilir
 
 
@@ -89,66 +89,67 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
     ![Intune Uygulama SDK’sı iOS: bağlantılı çerçeveler ve kitaplıklar](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     `{PATH_TO_LIB}` öğesini Intune Uygulama SDK'sı konumu ile değiştirerek `-force_load {PATH_TO_LIB}/libIntuneMAM.a` öğesini aşağıdakilerden birine ekleyin:
-      * Projenin `OTHER_LDFLAGS` derlemesi yapılandırma ayarı
-      * Xcode UI’nin **Diğer Bağlayıcı Bayrakları**
+   * Projenin `OTHER_LDFLAGS` derlemesi yapılandırma ayarı
+   * Xcode UI’nin **Diğer Bağlayıcı Bayrakları**
 
-        > [!NOTE]
-        > `PATH_TO_LIB` öğesini bulmak için `libIntuneMAM.a` dosyasını seçin ve **Dosya** menüsünden **Bilgi Al** öğesini belirleyin. **Nerede** bilgisini (yol) **Bilgi** penceresinin **Genel** bölümünden kopyalayıp yapıştırın.
+     > [!NOTE]
+     > `PATH_TO_LIB` öğesini bulmak için `libIntuneMAM.a` dosyasını seçin ve **Dosya** menüsünden **Bilgi Al** öğesini belirleyin. **Nerede** bilgisini (yol) **Bilgi** penceresinin **Genel** bölümünden kopyalayıp yapıştırın.
 
-    `IntuneMAMResources.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
+     `IntuneMAMResources.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
 
-    ![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+     ![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-    Aşağıdaki iOS çerçevelerini projeye ekleyin:  
-            * MessageUI.framework  
-            * Security.framework  
-            * MobileCoreServices.framework  
-            * SystemConfiguration.framework  
-            * libsqlite3.tbd  
-            * libc++.tbd  
-            * ImageIO.framework  
-            * LocalAuthentication.framework  
-            * AudioToolbox.framework  
-            * QuartzCore.framework  
-            * WebKit.framework  
+     Aşağıdaki iOS çerçevelerini projeye ekleyin:  
+    * MessageUI.framework  
+    * Security.framework  
+    * MobileCoreServices.framework  
+    * SystemConfiguration.framework  
+    * libsqlite3.tbd  
+    * libc++.tbd  
+    * ImageIO.framework  
+    * LocalAuthentication.framework  
+    * AudioToolbox.framework  
+    * QuartzCore.framework  
+    * WebKit.framework
 
 3. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
 
-  > [!NOTE]
-    > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bunu denetlemek için .mobileprovision dosyasını bir metin düzenleyicide açıp **keychain-access-groups** araması yapın ve bir joker karakter kullandığınızdan emin olun. Örneğin:
-    ```xml
-    <key>keychain-access-groups</key>
-    <array>
-    <string>YOURBUNDLESEEDID.*</string>
-    </array>
-    ```
+   > [!NOTE]
+   > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bunu denetlemek için .mobileprovision dosyasını bir metin düzenleyicide açıp **keychain-access-groups** araması yapın ve bir joker karakter kullandığınızdan emin olun. Örneğin:
+   >  ```xml
+   >  <key>keychain-access-groups</key>
+   >  <array>
+   >  <string>YOURBUNDLESEEDID.*</string>
+   >  </array>
+   >  ```
 
 4. Anahtarlık paylaşımını etkinleştirdikten sonra Intune Uygulama SDK'sı verilerinin depolanacağı ayrı bir erişim grubu oluşturmak için aşağıdaki adımları izleyin. Kullanıcı arabirimini veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. UI öğelerini anahtarlık erişim grubu oluşturmak için kullanıyorsanız aşağıdaki adımları izleyin:
 
-    1. Mobil uygulamanızda tanımlanmış bir anahtarlık erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
+   1. Mobil uygulamanızda tanımlanmış bir anahtarlık erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
 
-    2. `com.microsoft.intune.mam` paylaşılan anahtarlık grubunu var olan erişim gruplarınıza ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
+   2. `com.microsoft.intune.mam` paylaşılan anahtarlık grubunu var olan erişim gruplarınıza ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
 
-    3. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
+   3. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
 
-        ![Intune Uygulama SDK’sı iOS: Anahtarlık paylaşımı](./media/intune-app-sdk-ios-keychain-sharing.png)
+       ![Intune Uygulama SDK’sı iOS: Anahtarlık paylaşımı](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    4. Anahtarlık erişim gruplarını oluşturmak için yukarıda gösterilen Xcode UI'ı kullanmak yerine doğrudan yetkilendirme dosyalarını düzenliyorsanız, anahtarlık erişim gruplarını `$(AppIdentifierPrefix)` öğesinin önüne ekleyin (Xcode bunu otomatik olarak işler). Örneğin:
+   4. Anahtarlık erişim gruplarını oluşturmak için yukarıda gösterilen Xcode UI'ı kullanmak yerine doğrudan yetkilendirme dosyalarını düzenliyorsanız, anahtarlık erişim gruplarını `$(AppIdentifierPrefix)` öğesinin önüne ekleyin (Xcode bunu otomatik olarak işler). Örneğin:
 
-            * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
+           * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+           * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
-    > [!NOTE]
-    > Yetkilendirme dosyası mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır. Uygulamanızın önceden bir yetkilendirme dosyası yoksa, anahtarlık paylaşımının etkinleştirilmesi (3. adım) Xcode'un uygulamanız için bir dosya oluşturmasına neden olacaktır.
+      > [!NOTE]
+      > Yetkilendirme dosyası mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır. Uygulamanızın önceden bir yetkilendirme dosyası yoksa, anahtarlık paylaşımının etkinleştirilmesi (3. adım) Xcode'un uygulamanız için bir dosya oluşturmasına neden olacaktır.
 
 5. Uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Sonraki adıma ilerlemeden önce değişikliklerinizi kaydettiğinizden emin olun.
 
 6. Uygulamanızın Info.plist dosyasını yapılandırmayı bitirmek için, [SDK deposuna](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) eklenen IntuneMAMConfigurator aracını kullanın. Aracın 3 parametresi vardır:
-|Özellik|Kullanımı|
-|---------------|--------------------------------|
-|- i |  `<Path to the input plist>` |
-|- e | `<Path to the entitlements file>` |
-|- o |  (İsteğe bağlı) `<Path to the output plist>` |
+
+   |Özellik|Kullanımı|
+   |---------------|--------------------------------|
+   |- i |  `<Path to the input plist>` |
+   |- e | `<Path to the entitlements file>` |
+   |- o |  (İsteğe bağlı) `<Path to the output plist>` |
 
 '-o' parametresi belirtilmezse, giriş dosyası yerinde değiştirilir. Araç bir kez etkilidir ve uygulamanın Info.plist dosyası her değiştirildiğinde veya yetkilendirmeler yapıldığında yeniden çalıştırılmalıdır. En son sürümde Info.plist yapılandırma gereksinimlerinin değişmesi durumunda, Intune SDK'sını güncelleştirirken de aracın en son sürümünü indirmeniz ve çalıştırmanız gerekir.
 
@@ -171,9 +172,9 @@ Uygulamanızla ADAL ikili dosyaları arasında bağlantı kurmak için aşağıd
 1. GitHub'dan [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) dosyalarını indirin ve Git alt modülleri veya CocoaPods kullanarak ADAL indirme [talimatlarını](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download) izleyin.
 
 2. Projenize ADAL çerçevesini (1. seçenek) veya statik kitaplığı (2. seçenek) ekleyin:
-    
+
     **1. Seçenek (önerilir)**: `ADAL.framework` öğesini proje hedefinin **Katıştırılmış İkili Dosyalar** listesine sürükleyin.
-    
+
     **2. Seçenek**: `libADALiOS.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin. `-force_load {PATH_TO_LIB}/libADALiOS.a` seçeneğini projenin `OTHER_LDFLAGS` derleme yapılandırma ayarına veya Xcode UI’deki **Diğer Bağlayıcı Bayraklar** seçeneğine ekleyin. `PATH_TO_LIB`, ADAL ikili dosyalarının konumuyla değiştirilmelidir.
 
 
@@ -210,7 +211,7 @@ Uygulamanız zaten ADAL kullanıyorsa aşağıdaki yapılandırma adımlarının
 Ayrıca, uygulamalar çalışma zamanında bu Azure AD ayarlarını geçersiz kılabilir. Bunu yapmak için `IntuneMAMPolicyManager` örneğinde `aadAuthorityUriOverride`, `aadClientIdOverride` ve `aadRedirectUriOverride` özelliklerini ayarlamanız yeterlidir.
 
 > [!NOTE]
-    > Statik olan ve çalışma zamanında saptanması gerekmeyen tüm ayarlar için Info.plist yaklaşımı önerilir. `IntuneMAMPolicyManager` özelliklerine atanan değerler, Info.plist dosyasında belirtilen ve bunlara karşılık gelen tüm değerlerden önceliklidir ve uygulama yeniden başlatıldıktan sonra bile kalıcı olmayı sürdürür. Kullanıcının kaydı silinene ya da değerler temizlenene veya değiştirilene kadar SDK ilke iadelerinde bunları kullanmaya devam edecektir.
+> Statik olan ve çalışma zamanında saptanması gerekmeyen tüm ayarlar için Info.plist yaklaşımı önerilir. `IntuneMAMPolicyManager` özelliklerine atanan değerler, Info.plist dosyasında belirtilen ve bunlara karşılık gelen tüm değerlerden önceliklidir ve uygulama yeniden başlatıldıktan sonra bile kalıcı olmayı sürdürür. Kullanıcının kaydı silinene ya da değerler temizlenene veya değiştirilene kadar SDK ilke iadelerinde bunları kullanmaya devam edecektir.
 
 ### <a name="if-your-app-does-not-use-adal"></a>Uygulamanız ADAL kullanmıyorsa
 
@@ -233,7 +234,6 @@ Zaten ADAL kullanan uygulamalar, kullanıcı başarıyla kimliğini doğruladık
  */
 
 (void)registerAndEnrollAccount:(NSString *)identity;
-
 ```
 
 SDK, `registerAndEnrollAccount` yöntemini çağırarak kullanıcı hesabını kaydeder ve uygulamayı bu hesap adına kaydetmeyi dener. Kayıt işlemi herhangi bir nedenle başarısız olursa SDK, kayıt işlemini 24 saat sonra otomatik olarak yeniden dener. Uygulama, hata ayıklama için bir temsilci yoluyla herhangi bir kayıt isteğinin sonuçlarıyla ilgili [bildirim](#Status-result-and-debug-notifications) alabilir.
@@ -256,7 +256,6 @@ Kullanıcının ADAL kullanarak oturum açmasını sağlamayan bir uygulama, API
  *  @param identity The UPN of the account to be logged in and enrolled.
  */
  (void)loginAndEnrollAccount: (NSString *)identity;
-
 ```
 
 Mevcut herhangi bir belirteç bulunamazsa, SDK bu yöntemi çağırarak kullanıcıdan kimlik bilgilerini ister. Ardından SDK, sağlanan kullanıcı hesabı adına uygulamayı Intune MAM hizmetine kaydetmeyi dener. Yöntem, "nil" kimliği ile çağrılabilir. Bu durumda SDK cihazdaki mevcut yönetilen kullanıcıyı kaydeder (MDM'de) veya mevcut kullanıcı bulunamazsa kullanıcıdan kullanıcı adı girmesini ister.
@@ -295,7 +294,6 @@ Kullanıcı oturumunu kapatmadan önce, uygulamanın `IntuneMAMEnrollmentManager
  *  @param doWipe   If YES, a selective wipe if the account is un-enrolled
  */
 (void)deRegisterAndUnenrollAccount:(NSString *)identity withWipe:(BOOL)doWipe;
-
 ```
 
 Bu yöntem, kullanıcı hesabının Azure AD belirteçleri silinmeden önce çağrılmalıdır. SDK, kullanıcı adına Intune MAM hizmetinde belirli isteklerde bulunmak için kullanıcı hesabının AAD uygulama belirtecine gerek duyar.
@@ -338,7 +336,6 @@ Bildirimler temsilci yöntemleri aracılığıyla `Headers/IntuneMAMEnrollmentDe
  */
 
 (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status;
-
 ```
 
 Bu temsilci yöntemleri aşağıdaki bilgileri içeren bir `IntuneMAMEnrollmentStatus` nesnesi getirir:
@@ -374,7 +371,6 @@ Aşağıdakiler temsilci yöntemlerine örnek uygulamalardır:
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
-
 ```
 
 ## <a name="app-restart"></a>Uygulamayı yeniden başlatma

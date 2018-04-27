@@ -1,28 +1,28 @@
 ---
-title: "iOS cihazları için Microsoft Intune web içeriği filtresi ayarları"
-titlesuffix: 
-description: "iOS çalıştıran cihazlarından web sitelerine erişim izni vermek veya erişimi engellemek için kullanabileceğiniz Microsoft Intune ayarlarını öğrenin."
-keywords: 
+title: iOS cihazları için Microsoft Intune web içeriği filtresi ayarları
+titlesuffix: ''
+description: iOS çalıştıran cihazlarından web sitelerine erişim izni vermek veya erişimi engellemek için kullanabileceğiniz Microsoft Intune ayarlarını öğrenin.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>iOS cihazları için web içeriği filtresi ayarları
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu makalede, iOS çalıştıran cihazlardan tarayıcı URL erişimini denetlemek için kullanabileceğiniz Microsoft Intune ayarları gösterilir.
 
@@ -57,13 +57,13 @@ Herhangi bir URL belirtmezseniz son kullanıcılar microsoft.com, microsoft.net 
 ## <a name="specific-websites-only"></a>Yalnızca belirli web siteleri
 
 1. **Web İçerik Filtresi** bölmesinde, izin vermek istediğiniz her web sitesi için aşağıdaki ayarları yapılandırın:
-    - **URL** - İzin vermek istediğiniz web sitesinin URL'sini girin; ör. **http://www.contoso.com**.
+    - **URL** - İzin vermek istediğiniz web sitesinin URL’sini girin; ör. **http://www.contoso.com**.
     - **Yer İşareti Yolu** - Yer işaretini kaydetmek istediğiniz yolu girin; ör. **/Contoso/İş Uygulamaları**. Bir yol eklemezseniz yer işareti cihazdaki varsayılan yer işareti klasörüne eklenir.
     - **Başlık** - Yer işareti için açıklayıcı bir başlık girin.
 2. Her web sitesinin bilgilerini girdikten sonra **Ekle**’ye tıklayın.
 3. İşiniz bittiğinde **Tamam**'a tıklayın.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Aşağıdaki URL’lere Intune tarafından otomatik olarak izin verilir.
 > - www.microsoft.com
 > - www.microsoft.net

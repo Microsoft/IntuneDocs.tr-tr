@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure'da Android for Work için cihaz kısıtlamaları | Microsoft Docs
 description: Android for Work çalıştıran cihazlarda, kopyalama ve yapıştırma, bildirimleri gösterme, uygulama izinleri, veri paylaşımı, parola uzunluğu, oturum açma hataları, kilidi açmak için parmak izi kullanma, parolaları yeniden kullanma ve Work kişileriyle Bluetooth paylaşımını etkinleştirme gibi bazı ayarları kısıtlayabilirsiniz.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/19/2018
 ms.topic: article
@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c155817e0bc9df00087908a86fcfcb675fa0ad97
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune'da Work cihaz kısıtlama ayarları
 
 Bu makalede, Android for Work çalıştıran cihazlar için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları listelenir.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>İş profili ayarları
 
@@ -48,6 +48,8 @@ Bu makalede, Android for Work çalıştıran cihazlar için yapılandırabilece�
    Son kullanıcıların iş profiline el ile hesap eklemesini veya profilden hesap kaldırmasını önler.
 
    Örneğin, Gmail uygulamasını bir Android for Work profiline dağıttığınızda, son kullanıcıların bu iş profiline hesap eklemesini veya buradan kaldırmasını engelleyebilirsiniz.
+
+- **Bluetooth ile kişi paylaşımı**: Bluetooth kullanarak eşleştirilmiş bir cihazdan, örneğin araba, iş kişilerine erişime izin verir. Bu ayar varsayılan olarak yapılandırılmamıştır ve iş profili kişileri gösterilmez. Bu paylaşıma izin verip iş profili kişilerini görüntülemek için **Etkinleştir**’i seçin. Bu ayar, Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları için geçerlidir.
 
 ### <a name="work-profile-password"></a>İş profili parolası
 
