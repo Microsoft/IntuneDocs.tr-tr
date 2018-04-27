@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile Managed Browser ilkelerini kullanarak İnternet erişimini yönetme
 
@@ -155,10 +155,9 @@ Outlook’un, **Managed Browser’da görüntülenecek içeriği kısıtla** aya
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>2. adım: Managed Browser’a atanmış bir uygulama koruma ilkesini atama.
 Bu yordam ile Managed Browser uygulamasını, uygulama proxy’si yeniden yönlendirmeyi kullanmak üzere yapılandırabilirsiniz. Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
-|||
-|-|-|
-|Anahtar|Değer|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| Anahtar                                                             | Değer    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
 Managed Browser ve Azure AD Uygulama Ara Sunucusu’nun şirket içi web uygulamalarına sorunsuz (ve korumalı) erişim için birlikte nasıl kullanılabileceği hakkında daha fazla bilgi için Enterprise Mobility + Security blog gönderisi [Birlikte daha güçlü: Kullanıcı erişimini iyileştirmek için Intune ve Azure Active Directory ekip çalışması yapıyor](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)’a bakın.
 
@@ -166,10 +165,8 @@ Managed Browser ve Azure AD Uygulama Ara Sunucusu’nun şirket içi web uygulam
 
 Bu ayar ile kullanıcıların Managed Browser’ı başlattıklarında veya yeni bir sekme oluşturduklarında karşılarına çıkacak giriş sayfasını yapılandırabilirsiniz. Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                Anahtar                                |                                                           Değer                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>Örnek: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Managed Browser için yer işaretleri yapılandırma
@@ -182,21 +179,17 @@ Bu ayar ile Managed Browser kullanıcılarına sunulmak üzere bazı yer işaret
 
 Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                Anahtar                                 |                                                                                                                                                                                                                                                         Değer                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Bu yapılandırmanın değeri, bir yer işaretleri listesidir. Her bir yer işareti, yer işareti adı ve URL’sinden oluşur. Başlık ve URL’yi <strong>&#124;</strong> karakteriyle ayırın.<br><br>Örnek: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Birden çok yer işareti yapılandırmak için her bir başlık-URL ikilisini çift karakterle ayırın, <strong>&#124;&#124;</strong><br><br>Örnek: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Managed Browser için izin verilen ve engellenen URL’leri belirtme
 
 Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               Anahtar                                                                                                                                                                |                                                                                                                                                                                    Değer                                                                                                                                                                                    |
-| Aşağıdakilerden birini seçin:<br><br>- İzin verilen URL'leri belirtme (yalnızca bu URL'lere izin verilir; başka sitelere erişilemez): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Engellenen URL’leri belirtme (tüm diğer sitelere erişilebilir): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | Bir anahtara karşılık gelen değer bir URL listesidir. İzin vermek veya engellemek istediğiniz tüm URL’leri <strong>&#124;</strong> kanalla ayrılan tek bir değer olarak girin.<br><br>Örnekler:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|Anahtar|Değer|
+|-|-|
+|Aşağıdakilerden birini seçin:<br><br>- İzin verilen URL'leri belirtme (yalnızca bu URL'lere izin verilir; başka sitelere erişilemez): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Engellenen URL’leri belirtme (tüm diğer sitelere erişilebilir): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|Bir anahtara karşılık gelen değer bir URL listesidir. İzin vermek veya engellemek istediğiniz tüm URL’leri **&#124;** kanalla ayrılan tek bir değer olarak girin.<br><br>Örnekler:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Her iki anahtarı birden belirtmeyin. Her iki anahtar da aynı kullanıcıya hedeflenirse en kısıtlayıcı seçenek olarak izin verme anahtarı kullanılır.
