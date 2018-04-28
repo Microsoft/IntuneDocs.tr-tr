@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 23d669bfd535fb08bb52d194a1852aa774b5a186
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6f92cb350a69aeb600f1d48e9bdb0b22a623cb52
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="what-is-intune"></a>Intune nedir?
 
@@ -81,7 +81,7 @@ Uygulama yapılandırma ve Intune dediğimizde, özel olarak [iOS’ta yönetile
 Intune'u diğer EMS hizmetleriyle birlikte kullanarak kuruluşunuz için mobil işletim sistemi ve uygulama yapılandırması yoluyla mobil uygulamalar tarafından sunulandan daha fazla mobil uygulama güvenliği seçeneğine sahip olabilirsiniz. EMS üzerinden yönetilen uygulamalar, aşağıdakiler de dahil olmak üzere daha fazla mobil uygulama ve veri koruma özelliğine sahip olur:
 
 * [Çoklu oturum açma](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Çok faktörlü kimlik doğrulaması](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+*   [Çok faktörlü kimlik doğrulaması](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [Uygulamaya koşullu erişim - mobil uygulamada kurumsal veriler varsa erişim izni ver](app-based-conditional-access-intune.md)
 * [Aynı uygulamadaki kurumsal verileri kişisel verilerden ayırma](app-protection-policy.md)
 * [Uygulama koruma ilkesi (PIN, şifreleme, farklı kaydet, pano vs.)](app-protection-policies.md)
