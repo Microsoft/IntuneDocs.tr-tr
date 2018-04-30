@@ -1,4 +1,4 @@
-﻿---
+---
 title: Uygulama başına VPN için bir paket aile adı (PFN) bulma
 description: Uygulama başına VPN’yi yapılandırabilmek için bir PFN bulun.
 keywords: ''
