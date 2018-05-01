@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune’a uygulama ekleme
 titlesuffix: ''
-description: Uygulamaları kullanıcılara ve cihazlara atayabilmeniz için Microsoft Intune'a nasıl uygulama ekleyeceğinizi öğrenin. Intune,çok çeşitli uygulama türlerini destekler.
+description: Uygulamaları kullanıcılara ve cihazlara atayabilmeniz için Microsoft Intune'a nasıl uygulama ekleyeceğinizi öğrenin. Intune, çok çeşitli uygulama türlerini destekler.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,109 +15,114 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b4e87c36c3aa0aaeae1e1bf265902100612db15
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-add-an-app-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
+# <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Microsoft Intune’a eklemelisiniz.
 
-Şirketinizdeki uygulama ve cihazların kullanıcılarının (şirketinizin iş gücü) çeşitli uygulama gereksinimleri olabilir. Intune'a uygulama eklemeden ve bunları iş gücünüze sunmadan önce, uygulamalara ilişkin birkaç temel bilgiyi değerlendirip anlamanız gerekir. Intune’da kullanılabilen farklı uygulama türlerini anlamanız gerekir. İş gücünüzde ihtiyaç duyulan gerekli platformlar ve özellikler gibi uygulama gereksinimlerini değerlendirmeniz gerekir. Ayrıca, cihazları (uygulamalar dahil) yönetmek için Intune'u kullanıp kullanmayacağınızı veya cihazları yönetmeden Intune'un uygulamaları yönetip yönetmeyeceğinizi belirlemeniz gerekir. İş gücünüzde farklı uygulamalara ve farklı özelliklere kimin ihtiyaç duyacağını belirlemeniz gerekir. Bu makalede sağlanan bilgiler, başlamanıza yardımcı olur.
+Şirketinizdeki uygulama ve cihaz kullanıcılarının (şirketinizin iş gücü) çeşitli uygulama gereksinimleri olabilir. Intune'a uygulama eklemeden ve bunları iş gücünüze sunmadan önce, uygulamalara ilişkin birkaç temel bilgiyi değerlendirip anlamanız gerekir. Intune’da kullanılabilen çeşitli uygulama türlerini anlamanız gerekir. İş gücünüzün ihtiyaç duyduğu platformlar ve yetenekler gibi uygulama gereksinimlerini değerlendirmeniz gerekir. Cihazları (uygulamalar dahil) yönetmek için Intune kullanılıp kullanılmayacağını veya Intune’un cihazları yönetmeden uygulamaları yönetip yönetmeyeceğini belirlemeniz gerekir. Son olarak, iş gücünüzün ihtiyacı olan uygulama ve yetenekleri ve bunlara kimin ihtiyaç duyduğunu belirlemeniz gerekir. Bu makaledeki bilgiler, başlamanıza yardımcı olacaktır.
 
 ## <a name="app-types-in-microsoft-intune"></a>Microsoft Intune’da uygulama türleri
 
-Intune,çok çeşitli uygulama türlerini destekler. Her bir uygulama türü için kullanılabilir seçenekler farklılık gösterir. Intune aşağıdaki uygulama türlerini eklemenize ve atamanıza izin verir:
+Intune, çok çeşitli uygulama türlerini destekler. Her bir uygulama türü için kullanılabilir seçenekler farklılık gösterir. Intune aşağıdaki uygulama türlerini eklemenize ve atamanıza izin verir:
 
-| **Uygulama Türleri**                                     | **Yükleme**                                                                  | **Güncelleştirmeler**                       |
-|------------------------------------------ |----------------------------------------------------------------------------   |---------------------------    |
-| Mağazadan uygulamalar (mağaza uygulamaları)          | Intune uygulamayı cihaza yükler                                       | Uygulama güncelleştirmeleri otomatik olarak yapılır     |
-| Şirket içinde yazılan (iş kolu) uygulamalar  | Intune uygulamayı cihaza yükler (yükleme dosyasını siz sağlarsınız)    | Uygulamayı güncelleştirmeniz gerekir       |
-| Yerleşik olan uygulamalar (yerleşik uygulamalar)    | Intune uygulamayı cihaza yükler                                       | Uygulama güncelleştirmeleri otomatik olarak yapılır     |
-| Web’deki uygulamalar (web bağlantısı)                | Intune, cihaz giriş ekranında web uygulaması için bir kısayol oluşturur          | Uygulama güncelleştirmeleri otomatik olarak yapılır     |
+| Uygulama türleri | Yükleme | Güncelleştirmeler |
+|---|---|---|
+| Mağazadan uygulamalar (mağaza uygulamaları) | Intune uygulamayı cihaza yükler.  | Uygulama güncelleştirmeleri otomatik olarak yapılır.   |
+| Şirket içinde yazılan (iş kolu) uygulamalar  | Intune uygulamayı cihaza yükler (yükleme dosyasını siz sağlarsınız).     | Uygulamayı güncelleştirmeniz gerekir.  |
+| Yerleşik olan uygulamalar (yerleşik uygulamalar)    | Intune uygulamayı cihaza yükler.  | Uygulama güncelleştirmeleri otomatik olarak yapılır.  |
+| Web’deki uygulamalar (web bağlantısı) | Intune, cihaz giriş ekranında web uygulaması için bir kısayol oluşturur.  | Uygulama güncelleştirmeleri otomatik olarak yapılır.    |
 
 ### <a name="specific-app-type-details"></a>Belirli uygulama türü ayrıntıları
  
-Aşağıdaki tablo, belirli uygulama türlerini ve bunları Microsoft Intune'daki **Uygulama ekle** dikey penceresinden nasıl ekleyebileceğinizi listeler:
+Aşağıdaki tablo, belirli uygulama türlerini ve bunları Intune’daki **Uygulama ekle** bölmesinde nasıl ekleyebileceğinizi listeler:
 
-| **Belirli Uygulama Türü**                         | **Genel Tür**             | **Uygulamaya Özel Yordamlar**                                                                                                                                                 |
-|---------------------------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android mağaza uygulamaları                        | Mağaza uygulaması                  | **Uygulama türü** olarak **Android**’i seçin ve uygulamanın Google Play mağazası URL'sini girin.                                                                                       |
-| iOS mağaza uygulamaları                            | Mağaza uygulaması                  | **Uygulama türü** olarak **iOS**’u seçin, uygulama için arama yapın ve uygulamayı Intune içinde seçin.                                                                                     |
-| Windows Phone 8.1 mağaza uygulamaları              | Mağaza uygulaması                  | **Uygulama türü** olarak **Windows Phone 8.1**’i seçin ve uygulamanın Microsoft mağazası URL'sini girin.                                                                               |
-| Microsoft mağaza uygulamaları                      | Mağaza uygulaması                  | **Uygulama türü** olarak **Windows**’u seçin ve uygulamanın Microsoft mağazası URL'sini girin.                                                                                         |
-| Android for Work uygulamaları                     | Mağaza uygulaması                  | Google Play for Work mağazasından Android for Work uygulamasını bulun ve onaylayın.                                                                                        |
-| Windows 10 için Office 365 uygulamaları            | Mağaza uygulaması (Office 365)     | **Uygulama türü** olarak **Office 365 Paketi** altında **Windows 10**’u, ardından da yüklemek istediğiniz Office 365 uygulamasını seçin.                                                |
-| macOS için Office 365 uygulamaları                 | Mağaza uygulaması (Office 365)     | **Uygulama türü** olarak **Office 365 Paketi** altında **macOS**’u, ardından da Office 365 uygulama paketini seçin.                                                                     |
-| Android iş kolu (LOB) uygulamaları       | İş kolu (LOB) uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.apk** uzantısına sahip bir Android yükleme dosyası girin.                    |
-| iOS iş kolu (LOB) uygulamaları           | İş kolu (LOB) uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.ipa** uzantısına sahip bir iOS yükleme dosyası girin.                        |
-| Windows Phone iş kolu (LOB) uygulamaları | İş kolu (LOB) uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.xap** uzantısına sahip bir iOS yükleme dosyası girin.                        |
-| Windows iş kolu (LOB) uygulamaları       | İş kolu (LOB) uygulaması | Uygulama türü olarak İş kolu uygulamasını seçin, Uygulama paketi dosyasını seçin ve **.msi**, **.appx** veya **.appxbundle** uzantısına sahip bir iOS yükleme dosyası girin. |
-| Yerleşik iOS uygulaması                          | Yerleşik uygulama               | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinden yerleşik uygulama seçeneğini belirleyin.                                                                  |
-| Yerleşik Android uygulaması                      | Yerleşik uygulama               | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinden yerleşik uygulama seçeneğini belirleyin.                                                                  |
-| Web uygulamaları                                  | Web uygulaması                    | **Uygulama türü** olarak **Web bağlantısı**’nı seçin ve Web uygulamasına bağlantı sağlayan geçerli bir URL girin.                                                                                        |
+| **Uygulamaya özel tür** | **Genel tür** | **Uygulamaya özel yordamlar** |
+| --- | --- | --- |
+| Android mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **Android**’i seçin ve uygulamanın Google Play mağaza URL’sini girin. |
+| iOS mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **iOS**’u seçin, Intune’da uygulama için arama yapın ve uygulamayı seçin. |
+| Windows Phone 8.1 mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **Windows Phone 8.1**’i seçin ve uygulamanın Microsoft mağaza URL’sini girin. |
+| Microsoft mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **Windows**’u seçin ve uygulamanın Microsoft mağaza URL’sini girin. |
+| Android for Work uygulamaları | Mağaza uygulaması  | Google Play for Work mağazasından Android for Work uygulamasını bulun ve onaylayın.  |
+| Windows 10 için Office 365 uygulamaları  | Mağaza uygulaması (Office 365) | **Uygulama türü** olarak **Office 365 Paketi** altında **Windows 10**’u, ardından da yüklemek istediğiniz Office 365 uygulamasını seçin.  |
+| macOS için Office 365 uygulamaları | Mağaza uygulaması (Office 365) | **Uygulama türü** olarak **Office 365 Paketi** altında **macOS**’u, ardından da Office 365 uygulama paketini seçin. |
+| Android iş kolu (LOB) uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.apk** uzantısına sahip bir Android yükleme dosyası girin.  |
+| iOS LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.ipa** uzantısına sahip bir iOS yükleme dosyası girin.  |
+| Windows Phone LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.xap** uzantısına sahip bir iOS yükleme dosyası girin.  |
+| Windows LOB uygulaması | LOB uygulaması | Uygulama türü olarak **İş kolu uygulamasını** seçin, **Uygulama paketi dosyasını** seçin ve **.msi**, **.appx** veya **.appxbundle** uzantısına sahip bir iOS yükleme dosyası girin. |
+| Yerleşik iOS uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
+| Yerleşik Android uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
+| Web uygulamaları  | Web uygulaması  | **Uygulama türü** olarak **Web bağlantısı**’nı seçin ve ardından web uygulamasına bağlantı sağlayan geçerli bir URL girin.  |
 
-   
-Microsoft Intune’da, **Mobil uygulamalar** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Uygulama ekle** dikey penceresi görüntülenir ve **Uygulama türü**’nü seçmenize olanak tanır. 
+Microsoft Intune’da, **Mobil uygulamalar** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Uygulama ekle** bölmesi görüntülenir ve **Uygulama türü**’nü seçmenize olanak tanır. 
 
 >[!TIP]
-> İş kolu (LOB) uygulaması, bir uygulama yükleme dosyasından eklediğiniz bir uygulamadır. Örneğin bir iOS LOB uygulaması yüklemek için, **Uygulama ekle** dikey penceresinde **Uygulama türü** olarak **İş kolu uygulaması**’nı seçerek uygulamayı eklersiniz. Ardından uygulama paket dosyası uzantısını (.ipa) seçersiniz. Bu tür uygulamalar genellikle şirket içinde yazılanlardır.
+> LOB uygulaması, bir uygulama yükleme dosyasından eklediğiniz bir uygulamadır. Örneğin bir iOS LOB uygulaması yüklemek için **Uygulama ekle** bölmesinde **Uygulama türü** olarak **İş kolu uygulaması**’nı seçersiniz. Ardından uygulama paket dosyası uzantısını (.ipa) seçersiniz. Bu tür uygulamalar genellikle şirket içinde yazılanlardır.
 
 ## <a name="assess-app-requirements"></a>Uygulama gereksinimlerini değerlendirme
-BT yöneticisi olarak yalnızca grubunuzun hangi uygulamaları kullanacağına karar vermeniz değil, her bir grup ve alt grup için gereken yetenekleri de belirlemeniz gerekir. Her bir uygulama için gereken platformları, uygulamaya ihtiyacı olan kullanıcı gruplarını, bu gruplara uygulanacak yapılandırma ilkelerini ve uygulanacak koruma ilkelerini belirlemeniz gerekir.  
+BT yöneticisi olarak yalnızca grubunuzun hangi uygulamaları kullanacağına karar vermeniz değil, her bir grup ve alt grup için gereken yetenekleri de belirlemeniz gerekir. Her bir uygulama için gereken platformları, uygulamaya ihtiyacı olan kullanıcı gruplarını, bu gruplara uygulanacak yapılandırma ilkelerini ve koruma ilkelerini belirlersiniz.  
 
-Ayrıca, Mobil Cihaz Yönetimi’ne (MDM) veya yalnızca Mobil Uygulama Yönetimi’ne (MAM) odaklanmak gerekip gerekmediğini belirlemeniz gerekir. Cihazı yönetmek için Intune kullanmak (Mobil cihaz Yönetimi), şu durumlarda yararlı olur:
-- Kullanıcıların verimli olmaları için bir WiFi veya VPN şirket bağlantı profiline ihtiyacı olduğunda.
+Ayrıca, Mobil Cihaz Yönetimi’ne (MDM) veya yalnızca Mobil Uygulama Yönetimi’ne (MAM) odaklanmak gerekip gerekmediğini belirlemeniz gerekir. 
+
+MDM ile cihazı yönetmek için Intune kullanmak, şu durumlarda yararlı olur:
+- Kullanıcıların verimli olmaları için bir Wi-Fi veya VPN şirket bağlantı profiline ihtiyacı olduğunda.
 - Kullanıcıların cihazlarına bir uygulama kümesi gönderilmesine ihtiyacı olduğunda.
-- Kuruluşunuzun, güvenlik veya şifreleme gibi belirli Mobil Cihaz Yönetimi (MDM) denetimlerini ilgilendiren düzenleyici ilkeler veya diğer ilkelere uyum sağlaması gerektiğinde.
+- Kuruluşunuzun, güvenlik veya şifreleme gibi belirli MDM denetimlerini ilgilendiren düzenleyici ilkeler veya diğer ilkelere uyum sağlaması gerektiğinde.
 
-Cihazı yönetmeden uygulamaları yönetmek için Intune kullanmak (Mobil Uygulama Yönetimi), şu durumlarda yararlı olur:
+MAM ile cihazı yönetmeden uygulamaları yönetmek için Intune kullanmak şu durumlarda yararlı olur:
 - Kullanıcıların kendi cihazlarını kullanmalarına izin vermek istediğinizde (KCG).
-- Kullanıcılara MAM korumalarının etkin olduğunu bildirmek için cihaz düzeyinde sürekli bildirim yerine tek seferlik bir açılır öğe sağlamak istediğinizde.
-- Kişisel cihazlarda daha az yönetim özelliği gerektiren ilkelere uyumlu sağlamak istediğinizde. Örneğin, tüm cihaz yerine yalnızca uygulamalar için şirket verilerini yönetmek istiyorsunuz.
+- Kullanıcılara MAM korumalarının etkin olduğunu bildirmek için cihaz düzeyinde sürekli bildirim yerine tek seferlik bir açılır ileti sağlamak istediğinizde.
+- Kişisel cihazlarda daha az yönetim yeteneği gerektiren ilkelerle uyumluluk sağlamak istediğinizde. Örneğin, tüm cihaz yerine yalnızca uygulamalar için şirket verilerini yönetmek istiyorsunuz.
 
 Daha fazla bilgi için bkz. [MDM ve MAM karşılaştırması](byod-technology-decisions.md).
 
 ### <a name="determine-who-will-use-the-app"></a>Uygulamayı kimin kullanacağını belirleme
 
-İş gücünüzün ihtiyaç duyduğu gerekli uygulamaları belirlerken, farklı uygulamalar kullanan farklı kullanıcı gruplarını göz önünde bulundurun. Bu grupları bilmek bir uygulamayı ekledikten sonra da yararlıdır. Bir uygulamayı ekledikten sonra, bunu kullanabilecek bir kullanıcı grubu atarsınız. Önce, uygulamanın içerdiği verilerin hassasiyetine bağlı olarak uygulamaya erişmesi uygun olan grubu belirlemelisiniz. Kuruluşunuzdaki belirli rolleri dahil etmeniz veya hariç tutmanız gerekebilir. Örneğin, satış grubunuzun yalnızca belirli LOB uygulamalarına ihtiyacı varken mühendislik, finans, insan kaynakları veya hukuki işlemlere odaklı kişilerin LOB uygulamalarını kullanmasına gerek olmayabilir. Ayrıca satış grubunuz, mobil cihazlarında dahili şirket hizmetlerine erişirken ilave veri korumasına da ihtiyaç duyabilir. Bu grubun uygulamayı kullanarak kaynaklara nasıl bağlanacağını belirlemeniz gerekir. Uygulamanın eriştiği veriler bulutta mı yoksa şirket içinde mi barınıyor? Ayrıca kullanıcılar bu uygulamayı kullanarak kaynaklara nasıl bağlanacak? Intune bir iş kolu uygulama sunucusu gibi şirket içi verilere güvenli erişim gerektiren mobil uygulamalara erişim sağlamayı da destekler. Bu erişim türü genel olarak, erişim denetimi için [Intune tarafından yönetilen sertifikaları](certificates-configure.md) çevredeki standart bir VPN ağ geçidi veya ara sunucusuyla, örneğin Microsoft Azure Active Directory Uygulama Ara Sunucusu’yla birlikte kullanarak gerçekleştirilir. Erişilen verilerin iş kolu uygulamanız içinde tutulmasına ve böylelikle şirket verilerinin tüketici uygulamalarına veya hizmetlerine geçirilememesine yardımcı olmak için Intune’un [Uygulama Kaydırma Aracı ve Uygulama SDK’sı](apps-prepare-mobile-application-management.md) kullanılabilir.
+İş gücünüzün hangi uygulamalara ihtiyaç duyduğunu belirlerken çeşitli kullanıcı gruplarını ve bunların kullandığı çeşitli uygulamaları göz önünde bulundurun. Bu grupları bilmek, bir uygulamayı ekledikten sonra da yararlıdır. Bir uygulamayı ekledikten sonra, bunu kullanabilecek bir kullanıcı grubu atarsınız. 
 
-Her bir kullanım örneği ve alt kullanım örneği uygulama senaryosu ile ilişkili kuruluşsal grupları belirlemenize yardımcı olması için [Intune dağıtım planlama, tasarlama ve uygulama kılavuzunu](planning-guide.md) kullanın. Uygulamaları gruplara atama hakkında ayrıntılar için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md).
+Önce uygulamanın içerdiği verilerin hassasiyetine bağlı olarak hangi grubun uygulamaya erişmesi gerektiğini belirlemelisiniz. Kuruluşunuzdaki belirli rolleri dahil etmeniz veya hariç tutmanız gerekebilir. Örneğin satış grubunuzun yalnızca belirli LOB uygulamalarına ihtiyacı varken mühendislik, finans, insan kaynakları veya hukuki işlemlere odaklı kişilerin LOB uygulamalarını kullanmasına gerek olmayabilir. Ayrıca satış grubunuz, mobil cihazlarında dahili şirket hizmetlerine erişirken ilave veri korumasına da ihtiyaç duyabilir. Bu grubun uygulamayı kullanarak kaynaklara nasıl bağlanacağını belirlemeniz gerekir. Uygulamanın eriştiği veriler bulutta mı yoksa şirket içinde mi barınıyor? Ayrıca kullanıcılar bu uygulamayı kullanarak kaynaklara nasıl bağlanacak? 
+
+Intune bir iş kolu uygulama sunucusu gibi şirket içi verilere güvenli erişim gerektiren mobil uygulamalara erişim sağlamayı da destekler. Bu erişim türünü genelde, erişim denetimi için [Intune tarafından yönetilen sertifikaları](certificates-configure.md), çevredeki standart bir VPN ağ geçidi veya ara sunucu ile (örneğin Azure Active Directory Uygulama Ara Sunucusu) birlikte kullanarak sağlarsınız. Erişilen verilerin iş kolu uygulamanız içinde tutulmasına ve böylelikle şirket verilerinin tüketici uygulamalarına veya hizmetlerine geçirilememesine yardımcı olmak için Intune [Uygulama Sarmalama Aracı ve Uygulama SDK’sı](apps-prepare-mobile-application-management.md) kullanılabilir.
+
+Her bir kullanım örneği ve alt kullanım örneği uygulama senaryosu ile ilişkili kuruluşsal grupları belirlemenize yardımcı olması için [Intune dağıtım planlama, tasarlama ve uygulama kılavuzunu](planning-guide.md) kullanın. Uygulamaları gruplara atama hakkında bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md).
 
 ### <a name="determine-the-type-of-app-for-your-solution"></a>Çözümünüz için uygulama türünü belirleme
 
-Aşağıdaki uygulama türleri arasında seçim yapabilirsiniz:
-- **Mağazadan uygulamalar** - Mağaza uygulaması; Microsoft mağazası, iOS mağazası veya Android mağazasına yüklenmiş bir uygulamadır. Uygulama sağlayıcı, uygulama güncelleştirmeleriyle ilgilenir ve bunları sağlar. Uygulamayı mağaza listesinden seçer ve Intune aracılığıyla bunu kullanıcılarınız için kullanılabilir uygulama olarak eklersiniz.
-- **Şirket içinde yazılmış uygulamalar (iş kolu)** - Şirket içinde yazılmış uygulamalar, iş kolu uygulamalarıdır. Bu uygulama türünün işlevselliği; Windows, iOS veya Android gibi Intune tarafından desteklenen platformlardan biri için oluşturulmuştur. Kuruluşunuz, güncelleştirmeleri ayrı bir dosya olarak oluşturur ve size gönderir. Siz de Intune aracılığıyla güncelleştirmeleri ekleyerek ve dağıtarak, bunları kullanıcılara gönderirsiniz.
-- **Web uygulamaları** - Web uygulaması, istemci-sunucu uygulamasıdır. Sunucu; kullanıcı arabirimi, içerik ve işlevleri içeren web uygulamasını sağlar. Ayrıca modern web barındırma platformları çoğu zaman güvenlik, yük dengeleme ve diğer yararlar da sunar. Bu tür bir uygulama Web’de ayrı olarak korunur. Bu uygulama türüne ulaşmak için Intune kullanırsınız. Bu uygulamaya erişebilecek kullanıcı gruplarını da atarsınız. Android’in web uygulamalarını desteklemediğini hatırlatırız.
+Aşağıdaki uygulama türlerinden birini seçebilirsiniz:
+- **Mağazadan uygulamalar**: Microsoft mağazası, iOS mağazası veya Android mağazasına yüklenmiş uygulamalar mağaza uygulamalarıdır. Bir mağaza uygulamasının sağlayıcısı, uygulama güncelleştirmeleriyle ilgilenir ve bunları sağlar. Uygulamayı mağaza listesinden seçer ve Intune aracılığıyla bunu kullanıcılarınız için mevcut bir uygulama olarak eklersiniz.
+- **Şirket içinde yazılmış uygulamalar (iş kolu)**: Şirket içinde oluşturulmuş uygulamalar, iş kolu (LOB) uygulamalarıdır. Bu uygulama türünün işlevselliği; Windows, iOS veya Android gibi Intune tarafından desteklenen platformlardan biri için oluşturulmuştur. Kuruluşunuz, güncelleştirmeleri ayrı bir dosya olarak oluşturur ve size gönderir. Siz de Intune aracılığıyla güncelleştirmeleri ekleyerek ve dağıtarak, bunları kullanıcılara gönderirsiniz.
+- **Web uygulamaları**: Web uygulamaları, istemci-sunucu uygulamalarıdır. Sunucu; kullanıcı arabirimi, içerik ve işlevleri içeren web uygulamasını sağlar. Ayrıca modern web barındırma platformları çoğu zaman güvenlik, yük dengeleme ve diğer yararlar da sunar. Bu tür bir uygulama web’de ayrı olarak korunur. Bu uygulama türüne ulaşmak için Intune kullanırsınız. Bu uygulamaya erişebilecek kullanıcı gruplarını da atarsınız. Android’in web uygulamalarını desteklemediğini hatırlatırız.
 
-Kuruluşunuz için gereken uygulamaları belirlerken bu uygulamaların bulut hizmetleriyle tümleşme durumuna, hangi verilere eriştiğine, KCG kullanıcıları için kullanılabilir olup olmadığına ve internet erişimi gerektirip gerektirmediğine dikkat edin.
+Kuruluşunuz için gereken uygulamaları belirlerken bu uygulamaların bulut hizmetleriyle tümleşme durumuna, hangi verilere eriştiğine, KCG kullanıcıları için mevcut olup olmadığına ve İnternet erişimi gerektirip gerektirmediğine dikkat edin.
 
-Kuruluşunuz için gereken uygulamaları belirleme hakkında daha fazla bilgi için [Bir tasarım oluştur](planning-guide-design.md#feature-requirements)’un **Özellik gereksinimleri** bölümündeki **Uygulamalar**’a bakın.
+Kuruluşunuzun ihtiyacı olan uygulamaları belirleme hakkında daha fazla bilgi için [Bir tasarım oluştur](planning-guide-design.md#feature-requirements)’un “Özellik gereksinimleri” bölümündeki “Uygulamalar” kısmına bakın.
 
 ### <a name="understanding-app-management-and-protection-policies"></a>Uygulama yönetim ve koruma ilkelerini anlama
 Intune, şirketinizin uyumluluk ve güvenlik ilkeleriyle uyum sağlaması için dağıttığınız uygulamaların işlevlerini değiştirmenize olanak verir. Böylece şirket verilerinizin nasıl korunduğunu belirleyebilirsiniz. Intune ile yönetilen uygulamalarda zengin bir mobil uygulama koruma ilkesi yelpazesi mevcuttur, örneğin:
 
-- Kopyala ve yapıştır ve farklı kaydet işlevlerini kısıtlama
-- Web bağlantılarını Intune Managed Browser’da açılacak şekilde yapılandırma
-- Çoklu kimlik kullanımı ve uygulama düzeyinde koşullu erişimi etkinleştirme
+- Kopyala ve yapıştır ve farklı kaydet işlevlerini kısıtlama.
+- Web bağlantılarını Intune Managed Browser’da açılacak şekilde yapılandırma.
+- Çoklu kimlik kullanımı ve uygulama düzeyinde koşullu erişimi etkinleştirme.
 
-Intune ile yönetilen uygulamalar ayrıca kayıt gerekmeksizin uygulama korumasını etkinleştirebilir, böylece kullanıcının cihazını yönetmeden veri kaybını önleme ilkelerini uygulama seçeneğine sahip olursunuz. Buna ek olarak, Intune Uygulama Yazılım Geliştirme Seti ve Uygulama Sarmalama Aracı kullanarak mobil uygulama yönetimini mobil ve iş kolu uygulamalarınızla birleştirebilirsiniz. Bu araçlar hakkında daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](app-sdk.md).
+Intune ile yönetilen uygulamalar ayrıca kayıt gerekmeksizin uygulama korumasını etkinleştirebilir, böylece kullanıcının cihazını yönetmeden veri kaybını önleme ilkelerini uygulama seçeneğine sahip olursunuz. Buna ek olarak, Intune Uygulama SDK’sı ve Uygulama Sarmalama Aracı’nı kullanarak mobil uygulama yönetimini mobil ve iş kolu uygulamalarınızla birleştirebilirsiniz. Bu araçlar hakkında daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](app-sdk.md).
 
 ### <a name="understanding-licensed-apps"></a>Lisanslı uygulamaları anlama
-Web uygulamaları, mağaza uygulamaları ve LOB uygulamalarına ek olarak toplu satın alma programı uygulamaları ve lisanslı uygulamalar hakkında da bilgi sahibi olmalısınız, örneğin:     
-- **İş için Apple Toplu Satın Alma Programı (iOS ve macOS)** - iOS uygulama deposu, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak sağlar. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur. Daha fazla bilgi için bkz. [iOS toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md).
-- **Android for Work (Android)** - Android for Work cihazlara uygulama atama işlemi, standart Android cihazlara atamaktan farklı bir yolla yapılır. Android for Work için yüklediğiniz tüm uygulamalar Google Play for Work mağazasından gelir. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Ardından uygulama, Azure portalının Lisanslı uygulamalar düğümünde görüntülenir. Buradan, uygulamanın atamasını, herhangi başka bir uygulamanın atamasıyla aynı şekilde yönetebilirsiniz.
-- **İş için Microsoft Store (Windows 10)** - İş için Microsoft Store, kuruluşunuz için tek tek veya toplu olarak uygulamalar bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayı Microsoft Intune’a bağlayarak toplu satın alınan uygulamaları Azure portalından yönetebilirsiniz. Daha fazla bilgi için bkz. [İş İçin Microsoft Mağazası’ndan uygulamaları yönetme](windows-store-for-business.md).
+Web uygulamaları, mağaza uygulamaları ve LOB uygulamalarını anlamaya ek olarak toplu satın alma programı uygulamalarının hedefi ve lisanslı uygulamalar hakkında da bilgi sahibi olmalısınız, örneğin: 
+- **İş için Apple Volume Purchasing Program (iOS ve MacOS)**: iOS App Store, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak sağlar. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur. Daha fazla bilgi için bkz. [iOS toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md).
+- **Android for Work (Android)**: Android for Work cihazlara uygulama atama işlemi, standart Android cihazlara uygulama atamaktan farklıdır. Android for Work için yüklediğiniz tüm uygulamalar Google Play for Work mağazasından gelir. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Daha sonra uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görünür ve uygulamanın atamasını diğer uygulamalarda olduğu gibi yaparsınız.
+- **İş için Microsoft Store (Windows 10)**: İş için Microsoft Store, kuruluşunuz için tek tek veya toplu olarak uygulamalar bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayı Microsoft Intune’a bağlayarak toplu satın alınan uygulamaları Azure portalında yönetebilirsiniz. Daha fazla bilgi için bkz. [İş İçin Microsoft Mağazası’ndan uygulamaları yönetme](windows-store-for-business.md).
 
 ## <a name="before-you-add-apps"></a>Uygulamaları eklemeden önce
-Uygulamaları eklemeye ve atamaya başlamadan önce aşağıdaki noktaları göz önünde bulundurun.
+Uygulamaları eklemeye ve atamaya başlamadan önce aşağıdaki noktaları göz önünde bulundurun:
 
-- Bir mağazadan uygulama eklediğinizde ve atadığınızda, son kullanıcıların uygulamayı yükleyebilmesi için o mağazada bir hesapları olması gerekir.
+- Bir mağazadan uygulama eklediğinizde ve atadığınızda, kullanıcılarınızın uygulamayı yükleyebilmesi için o mağazada bir hesapları olması gerekir.
 - Atadığınız uygulama veya öğelerden bazıları yerleşik iOS uygulamalarına bağlı olabilir. Örneğin, iOS mağazasından bir kitap atarsanız cihazda iBooks uygulaması olmalıdır. Yerleşik iBooks uygulamasını kaldırdıysanız, yeniden devreye sokmak için Intune'u kullanamazsınız.
 
 ## <a name="cloud-storage-space"></a>Bulut depolama alanı
@@ -127,30 +132,33 @@ Orijinal satın alma metodunuzu kullanarak Intune için ek depolama alanı satı
 
 Bulut depolama alanı gereksinimleri aşağıda belirtilmiştir:
 
--   Tüm uygulama yükleme dosyaları aynı klasörde olmalıdır.
--   Karşıya yüklediğiniz her dosya için dosya boyutu üst sınırı 2 GB'dir.
+- Tüm uygulama yükleme dosyaları aynı klasörde olmalıdır.
+- Karşıya yüklediğiniz her dosya için dosya boyutu üst sınırı 2 GB'dir.
 
-## <a name="how-to-create-and-edit-categories-for-apps"></a>Uygulamalar için kategorileri oluşturma ve düzenleme
+## <a name="create-and-edit-categories-for-apps"></a>Uygulamalar için kategorileri oluşturma ve düzenleme
 
-Uygulama kategorileri, kullanıcıların uygulamaları şirket portalında daha kolay bulabilmeleri için sıralamanıza yardımcı olabilir. Uygulamaya, **Geliştirici uygulamaları** veya **İletişim uygulamaları** gibi bir veya birden çok kategori atayabilirsiniz.
+Uygulama kategorileri, kullanıcıların uygulamaları şirket portalında daha kolay bulabilmeleri için sıralamanıza yardımcı olabilir. Uygulamaya, *Geliştirici uygulamaları* veya *İletişim uygulamaları* gibi bir veya birden çok kategori atayabilirsiniz.
+
 Uygulamayı Intune’a eklediğinizde, size istediğiniz kategoriyi belirtme seçeneği sağlanır. Uygulama eklemek ve kategorileri atamak için, platforma özgü konu başlıklarını kullanın. Kendi kategorilerinizi oluşturmak ve düzenlemek için aşağıdaki yordamı kullanın:
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-4. **Mobil uygulamalar** iş yükündeki **Kurulum** bölümünden **Uygulama kategorileri**’ni seçin. 
-5. **Uygulama kategorileri** dikey penceresinde geçerli kategorilerin listesi gösterilir. Aşağıdaki eylemlerden birini seçin:
-    - **Kategori oluştur** - **Kategori oluştur** dikey penceresini görüntülemek için **Ekle**’yi seçin ve yeni kategori için bir ad girin. Adlar tek bir dilde girilebilir ve Intune tarafından bunların çevirisi yapılmaz. İşiniz bittiğinde **Oluştur**’a tıklayın.
-    - **Kategori düzenle** - Listedeki herhangi bir kategori için, '**...**' düğmesini seçin. Bu seçenek, kategoride **Panoya sabitle** veya **Sil** işlemleri yapmanıza imkan veren bir açılır menü görüntüler.
+3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
+4. **Mobil uygulamalar** iş yükünde, **Kurulum** altında **Uygulama kategorileri**’ni seçin.  
+    **Uygulama kategorileri** bölmesi, mevcut kategoriler listesini görüntüler. 
+5. Aşağıdakilerden birini yapın:
+    - Bir kategori eklemek için **Kategori ekle** bölmesinde **Ekle**’yi seçin ve kategori için bir ad girin.  
+    Adlar tek bir dilde girilebilir ve Intune tarafından çevrilmez.
+    - Bir kategoriyi düzenlemek için kategorinin yanındaki üç nokta simgesini (**...**) seçin ve daha sonra **Panoya sabitle** veya **Sil**’e tıklayın.
+6. **Oluştur**’u seçin.
 
-## <a name="apps-added-automatically-by-intune"></a>Intune tarafından otomatik olarak eklenen uygulamalar
+## <a name="apps-that-are-added-automatically-by-intune"></a>Intune tarafından otomatik olarak eklenen uygulamalar
 
-Eskiden Intune’da hızlıca atayabileceğiniz birkaç yerleşik uygulama vardı. Geri bildirimlerinize dayanarak bu liste kaldırıldı, artık yerleşik uygulamaları görmeyeceksiniz.
-Ancak herhangi bir yerleşik uygulamayı önceden atadıysanız bu uygulamalar, uygulama listesinde görünmeye devam edecektir. Bu cihazları gerektiği gibi atamaya devam edebilirsiniz.
+Eskiden Intune’da hızlıca atayabileceğiniz birkaç yerleşik uygulama vardı. Intune müşteri geri bildirime dayanarak bu listeyi kaldırdık, yerleşik uygulamalar artık görüntülenmiyor. Ancak herhangi bir yerleşik uygulamayı önceden atadıysanız bu uygulamalar, uygulama listesinde görünmeye devam edecektir. Uygulamaları gerektiği gibi atamaya devam edebilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Her platform için Intune’a uygulamaların nasıl eklendiğini öğrenmek için aşağıdaki konulardan birini seçin:
+Intune’da tüm platformlar için uygulama eklemeyi öğrenmek için bkz.:
 
 - [Android mağaza uygulamaları](store-apps-android.md)
 - [Android LOB uygulamaları](lob-apps-android.md)

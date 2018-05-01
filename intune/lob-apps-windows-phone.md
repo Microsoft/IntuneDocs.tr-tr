@@ -1,7 +1,7 @@
 ---
-title: Windows Phone iş kolu uygulamalarını Microsoft Intune’a ekleme
+title: Microsoft Intune’a bir Windows Phone iş kolu uygulaması ekleme
 titlesuffix: ''
-description: Windows Phone iş kolu (LOB) uygulamalarını Intune’a ekleme hakkında bilgi edinin.
+description: Windows Phone iş kolu uygulamalarını Intune’a ekleme hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,61 +15,61 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f1a07960f4c00fa5562529a97453a61202a3913
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 25f71122fdcf932f0318923f44f3703700f48558
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Windows Phone iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
+# <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir Windows Phone iş kolu uygulaması ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bu makaledeki bilgiler Windows Phone iş kolu uygulamalarını Microsoft Intune’a eklemenize yardımcı olabilir. İş kolu (LOB) uygulaması, bir uygulama yükleme dosyasından Intune'a eklediğiniz uygulamadır. Bu tür uygulamalar genellikle şirket içinde yazılanlardır. Intune LOB uygulamasını kullanıcıların cihazlarına yükler. 
+Windows Phone iş kolu (LOB) uygulamalarını Microsoft Intune’a eklemek için bu makaledeki bilgileri kullanın. LOB uygulamaları, bir uygulama yükleme dosyasından Intune’a eklediğiniz uygulamalardır. Bu tür bir uygulama genellikle şirket içinde yazılmıştır. Intune, LOB uygulamasını kullanıcının cihazına yükler. 
 
-## <a name="step-1---specify-the-software-setup-file"></a>1. Adım - Yazılım kurulum dosyasını belirtme
+## <a name="step-1-specify-the-software-setup-file"></a>1. Adım: Yazılım kurulum dosyasını belirtme
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümündedir.
 3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
 4. **Mobil uygulamalar** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
 6. **Uygulama ekle** bölmesinde **İş kolu uygulaması**’nı seçin.
 
-## <a name="step-2---configure-the-app-package-file"></a>Adım 2 - Uygulama paketi dosyasını yapılandırma
+## <a name="step-2-configure-the-app-package-file"></a>2. Adım: Uygulama paketi dosyasını yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
-2. **Uygulama paketi dosyası** bölmesinde gözat düğmesini seçin ve sonra da **.xap** uzantısına sahip Windows Phone yükleme dosyasını seçin.
-3. İşiniz bittiğinde **Tamam**’ı seçin.
+2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra **.xap** uzantısına sahip bir Windows Phone yükleme dosyası seçin.
+3. İşiniz bittiğinde **Tamam**’a tıklayın.
 
 
-## <a name="step-3---configure-app-information"></a>Adım 3 - Uygulama bilgilerini yapılandırma
+## <a name="step-3-configure-app-information"></a>3. Adım: Uygulama bilgilerini yapılandırma
 
-1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
-2. **Uygulama bilgileri** bölmesinde uygulama bilgilerini yapılandırın. Seçtiğiniz uygulamaya bağlı olarak, bölmedeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
-    - **Ad** - Uygulamanın şirket portalında görüntülenen adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
-    - **Açıklama** - Uygulama için bir açıklama girin. Açıklama şirket portalında kullanıcılara görüntülenir.
-    - **Yayımcı** - Uygulamanın yayımcısının adını girin.
-    - **Uygulama sürümünü yoksay** - Uygulama, uygulama geliştiricisi tarafından otomatik olarak güncelleştiriliyorsa **Evet** olarak ayarlayın.
-    - **Kategori** - Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Kategorileri kullanmak, kullanıcıların şirket portalına gözatarken uygulamaları daha kolay bulabilmesini sağlar.
-    - **Bunu Şirket Portalı'nda öne çıkan uygulama olarak görüntüle** - Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
-    - **Bilgi URL’si** - İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Gizlilik URL’si**- İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Geliştirici** - İsteğe bağlı olarak, uygulama geliştiricinin adını girin.
-    - **Sahip** - İsteğe bağlı olarak, bu uygulamanın sahibi olarak **İK bölümü** gibi bir ad girin.
-    - **Notlar** - Bu uygulamayla ilişkilendirmek isteyebileceğiniz notları girin.
-    - **Logo** - Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
-3. İşiniz bittiğinde **Tamam**’ı seçin.
+1. **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
+2. **Uygulama bilgileri** bölmesinde uygulama bilgilerini yapılandırın. Seçtiğiniz uygulamaya bağlı olarak bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
+    - **Ad**: Uygulamanın Şirket Portalı’nda görünen adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri Şirket Portalı’nda kullanıcılara görüntülenir.
+    - **Açıklama**: Uygulama için bir açıklama girin. Açıklama, Şirket Portalı’nda görünür.
+    - **Yayımcı**: Uygulama yayıncısının adını girin.
+    - **Uygulama sürümünü yoksay**: Uygulama geliştiricisi uygulamayı otomatik olarak güncelleştiriyorsa bunu **Evet** olarak ayarlayın.
+    - **Kategori**: Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
+    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
+    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
+    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
+    - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
+    - **Sahip**: İsteğe bağlı olarak uygulama sahibinin adını girin. Örneğin **İK departmanı**.
+    - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+    - **Logo**: Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar Şirket Portalı’na göz atarken uygulamayla birlikte görüntülenir.
+3. İşiniz bittiğinde **Tamam**’a tıklayın.
 
-## <a name="step-4---finish-up"></a>Adım 4 - Bitirme
+## <a name="step-4-finish-up"></a>4. Adım: Bitirme
 
 1. **Uygulama ekle** bölmesinde, bilgileri doğru yapılandırdığınızı onaylayın.
 2. Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir. Artık seçtiğiniz gruplara bu uygulamayı atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
+- Oluşturduğunuz uygulama, uygulamalar listesinde görünür. Artık seçtiğiniz gruplara bu uygulamayı atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
 
-- Uygulamanızın özelliklerini ve atamasını izleme yolları hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Uygulama bilgilerini ve atamalarını izleme](apps-monitor.md).
+- Uygulamanızın özelliklerini ve atamasını izleme yolları hakkında daha fazla bilgi edinin. [Uygulama bilgilerini ve atamaları izleme](apps-monitor.md) makalesine bakın.
 
-- Intune’da uygulamanızın bağlamı hakkında daha fazla bilgi edinin. Daha fazla bilgi için bkz. [Cihaz ve uygulama yaşam döngülerine genel bakış](introduction-device-app-lifecycles.md)
+- Intune’da uygulamanızın bağlamı hakkında daha fazla bilgi edinin. [Cihaz ve uygulama yaşam döngülerine genel bakış](introduction-device-app-lifecycles.md) makalesine bakın.

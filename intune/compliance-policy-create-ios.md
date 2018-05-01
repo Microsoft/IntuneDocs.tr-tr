@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure'da iOS cihaz uyumluluk ilkesi oluşturma | Microsoft Docs
-description: E-posta hesabı girmek, jailbreak uygulanmış cihazları denetlemek, en düşük ve en yüksek işletim sistemini denetlemek ve parola uzunluğu ile cihazda işlem yapılmayan süre de dahil olmak üzere parola kısıtlamalarını ayarlamak için iOS cihazlarında Microsoft Intune cihaz uyumluluk ilkesi ayarlayın.
+description: E-posta hesabı girmek, jailbreak uygulanmış cihazları denetlemek, en düşük ve en yüksek işletim sistemini denetlemek ve parola uzunluğu ile cihazda işlem yapılmayan süre de dahil olmak üzere parola kısıtlamalarını ayarlamak için iOS cihazlarında Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 887f45cdc79aa5e45de3e8a1df5d12665d2ed8ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune'da iOS cihazları için cihaz uyumluluk ilkesi ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune iOS cihaz uyumluluk ilkesi, iOS cihazlarının uyumlu olmak için uyması gereken kuralları ve ayarları tanımlar. Cihaz uyumluluk ilkelerini koşullu erişimle birlikte kullandığınızda, şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri hakkında daha fazla bilgi edinmek ve uyumluluk ilkesi oluşturmadan önce karşılamanız gereken önkoşulları öğrenmek için, [Cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md) konusuna bakın.
+Intune iOS cihaz uyumluluk ilkesi, iOS cihazlarının uyumlu olmak için uyması gereken kuralları ve ayarları tanımlar. Cihaz uyumluluk ilkelerini koşullu erişimle birlikte kullandığınızda, şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
 Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır.
+
+---------------------------
 
 | **İlke ayarı** | **iOS 8.0 ve üzeri** |
 | --- | --- |
@@ -38,6 +40,8 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 | **En yüksek işletim sistemi sürümü** | Karantinaya Alındı |
 | **Windows durum kanıtlama** | Geçerli değil |
 
+---------------------------
+
 **Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)
 
 **Karantinaya alındı** = Cihazın işletim sistemi uyumluluğu mecbur kılmaz. (Örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz.) Cihaz uyumsuz olduğunda, aşağıdaki işlemler yapılır:
@@ -45,13 +49,10 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 - Kullanıcı için geçerli bir koşullu erişim ilkesi varsa cihaz engellenir.
 - Şirket portalı, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Azure Portal’da uyumluluk ilkesi oluşturma
+## <a name="create-a-device-compliance-policy"></a>Cihaz uyumluluğu ilkesi oluşturma
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **Cihaz uyumluluğu** > **İlkeler** > **İlke Oluştur**'u seçin.
-4. Ad ile açıklama girin ve bu ilkenin uygulanmasını istediğiniz platformu seçin.
-5. **E-posta**, **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını girmek için **Ayarlar**'ı seçin. İşiniz bittiğinde **Tamam**’ı seçin.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. **Platform** olarak **iOS**’u seçin. **Ayarları Yapılandır**’ı seçin ve **E-posta**, **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını girin. İşiniz bittiğinde **Tamam**’ı ve **Oluştur**’u seçin.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -60,22 +61,14 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
-
-Kullanıcılara uyumluluk ilkesi atamak için, yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Cihaz uyumluluğu - İlkeler** bölmesinde bulunabilir.
-
-1. Kullanıcılara atamak istediğiniz ilkeyi seçin ve ardından **Atamalar**’ı seçin. **Azure Active Directory güvenlik gruplarını** seçebileceğiniz ve bunları ilkeye atayabileceğiniz bir bölme açılır.
-2. Azure AD güvenlik gruplarının görüntülendiği sayfayı açmak için **Seçilen gruplar**’ı seçin.  **Kaydet**  öğesi seçildiğinde, ilke kullanıcılara dağıtılır.
-
-İlkeyi kullanıcılara uyguladınız.  İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için denetlenir.
-
-<!---## Compliance policy settings--->
-
 ## <a name="email"></a>E-posta
 
-- **E-posta hesabı Intune tarafından yönetilmelidir:** Bu seçenek **Evet** olarak ayarlandığında, cihazın kendisine dağıtılan e-posta profilini kullanması gerekir. Aşağıdaki durumlarda cihaz uyumsuz olarak kabul edilir:
+- **Mobil cihazların yönetilen bir e-posta profili olmasını gerektir**: Bunu Gerektir olarak ayarlarsanız, Intune ile yönetilen bir e-posta profiline sahip olmayan cihazlar uyumsuz olarak değerlendirilir. Bir cihaz doğru hedeflenmediğinde veya kullanıcı cihazda e-posta hesabını el ile ayarladığında, cihazda yönetilen bir e-posta profili olmayabilir.
+
+  Aşağıdaki durumlarda cihaz uyumsuz olarak kabul edilir:
   - E-posta profili, uyumluluk ilkesi tarafından hedeflenen kullanıcı grubu dışındaki bir kullanıcı grubuna dağıtılır.
   - Kullanıcı, cihaza dağıtılan Intune e-posta profiliyle eşleşen bir e-posta hesabını cihazda zaten ayarlamıştır. Intune, kullanıcı tarafından sağlanan profilin üzerine yazamaz ve bu nedenle yönetemez. Uyumluluğu güvence altına almak için kullanıcının mevcut e-posta ayarlarını kaldırması gerekir. Ardından, Intune yönetilen e-posta profilini yükleyebilir.
+
 - **Intune tarafından yönetilmesi gereken e-posta profilini seçin**: **E-posta hesabı Intune tarafından yönetilmelidir** ayarı seçildiyse, Intune e-posta profilini belirtmek için **Seçin**’i işaretleyin. E-posta profili cihazda mevcut olmalıdır.
 
 E-posta profili hakkında ayrıntılı bilgi için bkz. [Microsoft Intune ile e-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
@@ -83,7 +76,11 @@ E-posta profili hakkında ayrıntılı bilgi için bkz. [Microsoft Intune ile e-
 ## <a name="device-health"></a>Device health
 
 - **Jailbreak uygulanmış cihazlar**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumlu kabul edilmez.
-- **Cihazın Cihaz Tehdit Düzeyinde veya bu düzeyin altında olmasını gerekli kıl**: Cihazları uyumsuz olarak işaretlemek için maksimum tehdit düzeyini seçin. Örneğin tehdit düzeyini **Orta** olarak ayarlarsanız, orta, düşük veya güvenli düzeydeki cihazlar uyumlu olur. Tehdit düzeyi yüksek olan cihazları uyumsuzdur.
+- **Cihazın Cihaz Tehdit Düzeyinde veya bu düzeyin altında olmasını gerektir** (iOS8.0 ve daha yeni): Cihazları uyumsuz olarak işaretlemek için maksimum tehdit düzeyini seçin. Bu tehdit düzeyini aşan cihazlar, uyumsuz olarak işaretlenir:
+  - **Güvenli**: Cihazda hiçbir tehdit olmamasını gerektirdiği için bu seçenek en güvenlisidir. Herhangi bir tehdit düzeyi algılanırsa cihaz, uyumsuz olarak değerlendirilir.
+  - **Düşük**: Cihaz, yalnızca düşük düzeyde tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
+  - **Orta**: Cihazda mevcut tehditler düşük veya orta düzeydeyse cihaz uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
+  - **Yüksek**: Tüm tehdit düzeylerine izin verdiği için bu seçenek en düşük güvenliğe sahiptir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
 
 ## <a name="device-properties"></a>Cihaz özellikleri
 
@@ -97,18 +94,26 @@ E-posta profili hakkında ayrıntılı bilgi için bkz. [Microsoft Intune ile e-
 > [!NOTE]
 > iOS cihazına uyumluluk veya yapılandırma ilkesi uygulandıktan sonra her 15 dakikada bir kullanıcılardan bir geçiş kodu ayarlamaları istenir. Geçiş kodu ayarlanana kadar kullanıcılara sürekli bu istem gönderilir.
 
-- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek üzere bir parola girmelerini gerektirmek için **Evet** olarak ayarlayın. Parola kullanılan iOS cihazları şifrelenir.
-- **Basit parolalar**: Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmasına izin vermek için **Evet** olarak ayarlayın.
+- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini **gerektir**in. Parola kullanılan iOS cihazları şifrelenir.
+- **Basit parolalar**: Bunu **Engelle** şeklinde ayarlayarak, kullanıcıların **1234** veya **1111** gibi basit parolalar oluşturmalarının önüne geçin. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
 - **Minimum parola uzunluğu**: Parolada bulunması gereken rakam veya karakter sayısı alt sınırını girin.
-- **Gerekli parola türü**: Kullanıcıların oluşturacağı parolanın **Alfasayısal** mı, yoksa **Sayısal** mı olacağını girin.
+- **Gerekli parola türü**: Parolanın yalnızca **Sayısal** karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından (**Alfasayısal**) mı oluşması gerektiğini seçin.
 - **Paroladaki alfasayısal olmayan karakter sayısı**: Parolada bulunması gereken simge karakterleri (&, #, %, !, vb.) sayısı alt sınırını girin.
 
     Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir.
 
 - **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin.
-- **Parola kullanım süresi (gün):** Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
+- **Parola kullanım süresi (gün)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
 - **Yeniden kullanılması engellenen eski parola sayısı**: Önceki parolalardan kaç tanesinin kullanılamayacağını girin.
 
-<!--- ## Next steps
+## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+1. Yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler **Cihaz uyumluluğu** > **İlkeler**’de bulunur.
+2. İlkeyi, sonra da **Atamalar**’ı seçin. Azure Active Directory (AD) güvenlik gruplarını dahil edebilir veya hariç tutabilirsiniz.
+3. Azure AD güvenlik gruplarınızı görmek için **Seçili gruplar**’ı seçin. Bu ilkeyi uygulamak istediğiniz kullanıcı gruplarını seçin ve daha sonra ilkeyi kullanıcılara dağıtmak için **Kaydet**’i seçin.
+
+İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için denetlenir.
+
+## <a name="next-steps"></a>Sonraki adımlar
+[Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme](actions-for-noncompliance.md)  
+[Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)

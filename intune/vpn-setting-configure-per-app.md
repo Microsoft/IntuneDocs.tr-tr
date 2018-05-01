@@ -3,8 +3,8 @@ title: iOS cihazlar için Microsoft Intune’da uygulama başına VPN ayarlama
 titleSuffix: ''
 description: Intune ile yönetilen iOS cihazlarda hangi yönetilen uygulamaların Sanal Özel Ağınızı (VPN) kullanabileceğini belirtin.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -15,15 +15,23 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS cihazlar için Intune’da uygulama başına Sanal Özel Ağ (VPN) ayarlama
 
 Intune ile yönetilen iOS cihazlarda hangi yönetilen uygulamaların Sanal Özel Ağınızı (VPN) kullanabileceğini belirtebilirsiniz. Intune’da bir uygulama başına VPN oluşturduğunuzda, şirket belgelerine erişirken son kullanıcılar otomatik olarak VPN’iniz yoluyla bağlanır.
+
+Uygulama başına VPN şu anda şu sağlayıcılar için kullanılabilir durumda: 
+
+ - Pulse Connect Secure
+ - Checkpoint Remote Access VPN
+ - F5
+ - SonicWall
+
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>Uygulama Başına VPN Önkoşulları
 
@@ -37,7 +45,7 @@ Sertifikayı dışarı aktarın ve CA’yı ekleyin.
 4. VPN sunucusunda kimlik doğrulaması için sertifikayı veren CA’nın adını ekleyin.
     Cihazın sunduğu CA, VPN sunucusundaki Güvenilir CA listesindeki bir CA ile eşleşirse, VPN sunucusu cihazın kimliğini başarıyla doğrular.
 
-## <a name="create-a--group-for-your-vpn-users"></a>VPN kullanıcılarınız için grup oluşturma
+## <a name="create-a-group-for-your-vpn-users"></a>VPN kullanıcılarınız için grup oluşturma
 
 Uygulama Başına VPN’e erişimi olan üyeleri barındırması için Azure Active Directory’de (Azure AD) bir grup oluşturun veya mevcut bir grubu seçin.
 

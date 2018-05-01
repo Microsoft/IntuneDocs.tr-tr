@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom uygulaması için Intune ayarlarını yapılandırma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Giriş
-[Classroom](https://itunes.apple.com/app/id1085319084), öğretmenlerin öğrenmeye yol göstermesine ve sınıftaki öğrenci cihazlarını denetlemesine yardımcı olan bir uygulamadır. Örneğin, bir öğretmen uygulamayı kullanarak şunları yapabilir:
+[Classroom](https://itunes.apple.com/app/id1085319084), öğretmenlerin öğrenmeye yol göstermesine ve sınıftaki öğrenci cihazlarını denetlemesine yardımcı olan bir uygulamadır. Örneğin bu uygulama sayesinde bir öğretmen:
 
 - Öğrenci cihazlarında uygulamalar açabilir
 - iPad ekranını kilitleyebilir ve ekranın kilidini açabilir
@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
 - Öğrenci iPad’lerini bir yer işaretine veya kitaptaki bir bölüme yönlendirebilir
 - Apple TV’de bir öğrenci iPad’inin ekranını görüntüleyebilir
 
-Classroom uygulamasını ve bu uygulamayı çalıştırdığınız cihazları ayarlamak için Intune iOS **Eğitim** cihaz profilini ve bu konu başlığındaki bilgileri kullanın.
+Cihazınızda Classroom’u ayarlamak için bir Intune iOS eğitim cihaz profili oluşturmanız ve yapılandırmanız gerekir.
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
 Bu ayarları yapılandırmaya başlamadan önce, aşağıdakilere dikkat edin:
 
-- Hem öğretmen hem de öğrenci iPad cihazlarının Intune'a kayıtlı olması gerekir
+- Hem öğretmen hem de öğrenci iPad cihazlarının Intune’a kayıtlı olması gerekir.
 - Öğretmenin cihazına [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) uygulamasını yüklediğinizden emin olun. Uygulamayı el ile yükleyebilir veya [Intune uygulama yönetimi](app-management.md)'ni kullanabilirsiniz.
-- Öğretmen ve öğrenci cihazları arasındaki bağlantıların kimliğini doğrulamak için sertifikaları yapılandırmanız gerekir (bkz. 2. Adım)
-- Öğretmen ve öğrencilerin iPad cihazları aynı Wi-Fi ağında olmalı ve cihazların Bluetooth özellikleri etkin olmalıdır
-- Classroom uygulaması iOS 9.3 veya üzerini çalıştıran denetimli iPad cihazlarında çalışır
-- Bu sürümde, Intune her öğrencinin kendine ait bir iPad cihazının olduğu 1:1 senaryosunu yönetmeyi destekler
+- Öğretmen ve öğrenci cihazları arasındaki bağlantıların kimliğini doğrulamak için sertifikaları yapılandırmanız gerekir (bkz. 2. Adım, Intune’da biriOS Education profili oluşturma ve atama).
+- Öğretmen ve öğrencilerin iPad cihazları aynı Wi-Fi ağında olmalı ve cihazların Bluetooth özellikleri etkin olmalıdır.
+- Classroom uygulaması iOS 9.3 veya üzerini çalıştıran denetimli iPad cihazlarında çalışır.
+- Bu sürümde, Intune her öğrencinin kendine ait bir iPad cihazının olduğu 1:1 senaryosunu yönetmeyi destekler.
 
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>1. Adım - Okul verilerinizi Azure Active Directory'ye aktarın
@@ -82,14 +82,14 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 9.  **Ayarlar** > **Yapılandır**’ı seçin.
 
 
-Ardından, öğretmen ve öğrencilerin iPad cihazları arasında bir güven ilişkisi kurmak için sertifikalara ihtiyacınız olacaktır. Sertifikalar, kullanıcı adları ve parolaları girmeye gerek olmadan cihazlar arasında bağlantıların kimliğini sorunsuz ve sessiz bir şekilde doğrulamak için kullanılır.
+Sonraki bölümde, öğretmen ve öğrencilerin iPad cihazları arasında bir güven ilişkisi kurmak için sertifikalar oluşturacaksınız. Sertifikalar, kullanıcı adları ve parolaları girmeye gerek olmadan cihazlar arasında bağlantıların kimliğini sorunsuz ve sessiz bir şekilde doğrulamak için kullanılır.
 
 >[!IMPORTANT]
 >Kullandığınız öğretmen ve öğrenci sertifikalarının, farklı sertifika yetkilileri (CA’lar) tarafından verilmiş olması gerekir. Mevcut sertifika altyapınıza bağlı iki yeni alt CA oluşturmanız gerekir; biri öğretmenler, diğeri öğrenciler için.
 
 iOS eğitim profilleri yalnızca PFX sertifikalarını destekler. SCEP sertifikaları desteklenmez.
 
-Oluşturduğunuz sertifikaların, kullanıcı kimlik doğrulamasına ek olarak sunucu kimlik doğrulamasını da desteklemesi gerekir.
+Oluşturulan sertifikaların, kullanıcı kimlik doğrulaması ve sunucu kimlik doğrulamasını desteklemesi gerekir.
 
 ### <a name="configure-teacher-certificates"></a>Öğretmen sertifikalarını yapılandırma
 
@@ -97,13 +97,15 @@ Oluşturduğunuz sertifikaların, kullanıcı kimlik doğrulamasına ek olarak s
 
 #### <a name="configure-teacher-root-certificate"></a>Öğretmen kök sertifikasını yapılandırma
 
-**Öğretmen kök sertifikası** altında, .cer (DER veya Base64 ile kodlanmış) veya .P7B (tam zincir içeren veya içermeyen) uzantısına sahip öğretmen kök sertifikasını seçmek için gözat düğmesini seçin.
+**Öğretmen kök sertifikası** altında gözat düğmesini seçin. Kök sertifikayı şunlardan biriyle seçin:
+- .cer uzantısı (DER ve Base64 kodlanmış) 
+- .P7B uzantısı (tam zincirle veya tam zincirsiz)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>Öğretmen PKCS#12 sertifikasını yapılandırma
 
 **Öğretmen PKCS #12 sertifikası** altında aşağıdaki değerleri yapılandırın:
 
-- **Konu adı biçimi** - Intune, öğretmen sertifikası için **lider**, öğrenci sertifikası içinse **üye** ön ekini sertifika ortak adına otomatik olarak ekler.
+- **Konu adı biçimi** - Intune, öğretmen sertifikası ortak adlarının başına otomatik olarak **lider** ifadesini getirir. Öğrenci sertifikası ortak adlarının önünde **üye** ifadesi bulunur.
 - **Sertifika yetkilisi** - Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Kuruluş Sertifika Yetkilisi (CA). Tek Başına CA desteklenmez. 
 - **Sertifika yetkilisi adı** - Sertifika yetkilinizin adını girin.
 - **Sertifika şablonu adı** - Sertifika verme yetkilisine eklenmiş bir sertifika şablonunun adını girin. 
@@ -120,13 +122,15 @@ Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 
 #### <a name="configure-student-root-certificate"></a>Öğrenci kök sertifikasını yapılandırma
 
-**Öğrenci kök sertifikası** altında, .cer (DER veya Base64 ile kodlanmış) veya .P7B (tam zincir içeren veya içermeyen) uzantısına sahip öğrenci kök sertifikasını seçmek için gözat düğmesini seçin.
+**Öğrenci kök sertifikası** altında gözat düğmesini seçin. Kök sertifikayı şunlardan biriyle seçin:
+- .cer uzantısı (DER ve Base64 kodlanmış) 
+- .P7B uzantısı (tam zincirle veya tam zincirsiz)
 
 #### <a name="configure-student-pkcs12-certificate"></a>Öğrenci PKCS#12 sertifikasını yapılandırma
 
 **Öğrenci PKCS #12 sertifikası** altında aşağıdaki değerleri yapılandırın:
 
-- **Konu adı biçimi** - Intune, öğretmen sertifikası için **lider**, öğrenci sertifikası içinse **üye** ön ekini sertifika ortak adına otomatik olarak ekler.
+- **Konu adı biçimi** - Intune, öğretmen sertifikası ortak adlarının başına otomatik olarak **lider** ifadesini getirir. Öğrenci sertifikası ortak adlarının önünde **üye** ifadesi bulunur.
 - **Sertifika yetkilisi** - Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Kuruluş Sertifika Yetkilisi (CA). Tek Başına CA desteklenmez. 
 - **Sertifika yetkilisi adı** - Sertifika yetkilinizin adını girin.
 - **Sertifika şablonu adı** - Sertifika verme yetkilisine eklenmiş bir sertifika şablonunun adını girin. 
@@ -147,7 +151,7 @@ Okul verilerinizi Azure AD ile eşitlediğinizde oluşturulan sınıf grupların
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Böylece, bir öğretmen Classroom uygulamasını kullandığında, öğrenci cihazları üzerinde tam denetime sahip olur.
+Böylece bir öğretmen Classroom uygulamasını kullandığında, öğrenci cihazları üzerinde tam denetime sahip olur.
 
 Classroom uygulaması hakkında daha fazla bilgi için Apple web sitesindeki [Classroom yardımı](https://help.apple.com/classroom/ipad/2.0/) bölümüne bakın.
 

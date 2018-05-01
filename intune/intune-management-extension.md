@@ -3,8 +3,8 @@ title: Windows 10 cihazlar için Microsoft Intune’da PowerShell betiklerini y�
 titlesuffix: ''
 description: Microsoft Intune’daki PowerShell betiklerini Windows 10 cihazlarda çalıştırmak için karşıya yüklemeyi öğrenin.
 keywords: ''
-ms.author: dougeby
-author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 cihazlar için Intune’da PowerShell betiklerini yönetme
 Intune yönetim uzantısı, Intune’da PowerShell betiklerini Windows 10 cihazlarda çalıştırmak için karşıya yüklemenize olanak sağlar. Yönetim uzantısı Windows 10 mobil cihaz yönetimi (MDM) özelliklerini tamamlar ve modern yönetime geçiş yapmayı kolaylaştırır.
@@ -33,8 +33,8 @@ Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. İh
 
 ## <a name="prerequisites"></a>Önkoşullar
 Intune yönetim uzantısı şu önkoşullara sahiptir:
-- Cihazların Azure AD’ye katılmış olması gerekir
-- Cihazlar Windows 10, sürüm 1607 veya üzeri çalıştırmalıdır
+- Cihazların Azure AD’ye katılmış olması gerekir. Hibrit AD’ye katılmış cihazlar buna dahil değildir.
+- Cihazlar Windows 10, sürüm 1607 veya üzerini çalıştırmalıdır.
 
 ## <a name="create-a-powershell-script-policy"></a>PowerShell betik ilkesi oluşturma 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
@@ -43,7 +43,7 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
 4. **Cihaz yapılandırması** bölmesinde **Yönet** > **PowerShell betikleri**’ni seçin.
 5. **PowerShell betikleri** bölmesinde **Ekle**’yi seçin.
 6. **PowerShell Betiği Ekle** bölmesinde, PowerShell betiği için bir **Ad** ve **Açıklama** girin.
-7. **Betik konumu** için, PowerShell betiğine gözatın. Betik en fazla 10 KB (ASCII) veya 5 KB (Unicode) olmalıdır.
+7. **Betik konumu** için, PowerShell betiğine gözatın. Betik boyutu 200 KB’den düşük olmalıdır.
 8. **Yapılandır**’ı seçin ve ardından betiği cihazda kullanıcının kimlik bilgileriyle (**Evet**) veya sistem bağlamıyla (**Hayır**) çalıştırmak istediğinizi seçin. Varsayılan olarak, betik sistem bağlamında çalıştırılır. Betiğin sistem bağlamında çalıştırılması gerekli değilse **Evet**’i seçin. 
   ![PowerShell betiği ekleme bölmesi](./media/mgmt-extension-add-script.png)
 9. Betiğin güvenilir bir yayımcı tarafından imzalanmış olup olmaması gerektiğini seçin (**Evet**). Varsayılan olarak, betiğin imzalanmasına yönelik bir gereksinim yoktur. 

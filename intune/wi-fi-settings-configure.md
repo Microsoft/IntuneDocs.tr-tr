@@ -3,8 +3,8 @@ title: Intune Wi-Fi ayarlarını yapılandırma
 titleSuffix: Microsoft Intune
 description: Microsoft Intune’u yönettiğiniz cihazlarda Wi-Fi bağlantılarını yapılandırmak için kullanmayı öğrenin.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune’da Wi-Fi ayarlarını yapılandırma
 
@@ -38,7 +38,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 - Android 4 ve üzeri
 - Android for Work
 - iOS 8.0 ve üzeri
-- macOS (Mac OS X 10.9 ve üzeri)
+- macOS (Mac OS X 10.11 ve üzeri)
 
 Windows 8.1, Windows 10, Windows 10 Mobile ve Windows Holographic for Business çalıştıran cihazlarda, daha önce başka bir cihazdan dışarı aktarılmış olan bir Wi-Fi yapılandırmasını içeri aktarabilirsiniz.
 
