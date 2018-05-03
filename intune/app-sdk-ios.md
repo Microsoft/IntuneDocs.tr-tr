@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/10/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -458,6 +458,73 @@ WebViewHandledURLSchemes | Dize Dizisi | Uygulamanızın WebView’unun işledi�
 
 > [!NOTE]
 > Uygulamanız App Store’da yayınlanacaksa `MAMPolicyRequired`, App Store standartlarına göre"HAYIR" olarak ayarlanmalıdır.
+
+## <a name="sharing-data-via-uiactivityviewcontroller"></a>UIActivityViewController yoluyla Veri Paylaşımı 
+8.0.2+ sürümünden itibaren Intune APP SDK’sı, Intune harici paylaşım konumlarının seçime açık olabilmesi için UIActivityViewController eylemlerini filtreleyebilecek. Bu davranış, uygulama veri aktarımı ilkesi ve gelecek APP özelliği tarafından denetlenecek. Gelecek özellik, Microsoft 1. taraf uygulamalar (yani Word, Excel, Powerpoint) UIActivityViewController aracılığıyla Veri Paylaşımını desteklemek için gereken değişiklikleri yaptıktan sonra etkinleşecek. 
+ 
+### <a name="copy-to-actions"></a>“Şuraya Kopyala” eylemleri 
+UIActivityViewController ve UIDocumentInteractionController yoluyla belge paylaşırken iOS, bu belgeyi açmayı destekleyen tüm uygulamalar için “Şuraya kopyala” eylemleri görüntüler. Uygulamalar, Info.plist dosyalarındaki CFBundleDocumentTypes ayarı yoluyla destekledikleri belge türlerini bildirir. İlke yönetilmeyen uygulamalara paylaşıma izin vermezse, bu paylaşım türü artık kullanılabilir olmaz. Bunun yerine uygulamalar, UI olmayan Eylem uzantısını ekleyip bunu iOS için Intune APP SDK’sına bağlamak zorunda kalır. Eylem uzantısı, bir saplama gibi davranır. SDK, tüm dosya paylaşım davranışını uygular. SDK tümleştirme adımlarını ve aşağıdakileri izleyin: 
+ 
+1. Uygulamanızın Info.plist CFBundleURLTypes ayarı altında en az bir schemeURL tanımlanmış olmalıdır. 
+2. Uygulamanız ve eylem uzantınız en az bir Uygulama Grubu paylaşmalıdır ve bu Uygulama Grubu IntuneMAMSettings sözlüğü uygulama ve uzantısı altındaki AppGroupIdentifiers dizisi altında listelenmelidir. 
+3. Uygulama adından önce gelen “Şurada aç” eylem uzantısını adlandırın. Info.plist dosyasını ihtiyaca göre yerelleştirin. 
+4. [Apple’ın geliştirici belgelerinde](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/) açıklandığı gibi uzantısı için bir şablon tasarlayın. Alternatif olarak, bu görüntüleri uygulamanın .app dizininden oluşturmak için IntuneMAMConfigurator aracı kullanılabilir. “IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory” komutunu çalıştırın 
+5. Uzantının Info.plist dosyasındaki IntuneMAMSettings ayarında YES değerine sahip bir OpenInActionExtension Boole ayarı ekleyin. 
+6. Uygulamanın “com.microsoft.intune.mam” önekine sahip CFBundleDocumentTypes ayarından tek dosyayı ve tüm türleri desteklemek için NSExtensionActivationRule ayarını yapılandırın. Örneğin uygulama public.text ve public.image destekliyorsa, etkinleştirme kuralı şu şekilde olur: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
+).@count == 1 
+```
+
+### <a name="update-existing-share-and-action-extensions"></a>Mevcut Paylaşım ve Eylem uzantılarını güncelleştirme 
+Uygulamanız zaten Paylaşım ve Eylem uzantılarını barındırıyorsa bunların NSExtensionActivationRule ayarları, Intune türlerine izin verecek şekilde değiştirilmelidir. Uzantının desteklediği her bir tür için “com.microsoft.intune.mam.” önekli ek bir tür. Örneğin mevcut etkinleştirme kuralı şu ise:  
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+Şu şekilde değiştirilmelidir: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+>[!Note] Intune türlerini etkinleştirme kuralına eklemek için IntuneMAMConfigurator aracı kullanılabilir. Mevcut etkinleştirme kuralınız önceden tanımlı dize sabitleri (ör. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText vb.) kullanıyorsa, koşul sözdizimi hayli karmaşıklaşabilir. IntuneMAMConfigurator aracı ayrıca, Intune türlerini eklerken etkinleştirme kuralını dize sabitlerinden koşul dizesine dönüştürmek için kullanılabilir. IntuneMAMConfigurator, GitHub depomuzda bulunur. 
+
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>iOS uygulamalarınız için MAM'ı hedefleyen yapılandırmayı etkinleştirme
 MAM'ı hedefleyen yapılandırma, bir uygulamanın Intune Uygulama SDK'sı aracılığıyla yapılandırma verileri almasını sağlar. Bu verilerin biçimi ve çeşitleri, uygulamanın sahibi/geliştiricisi tarafından tanımlanmalı ve Intune müşterilerine anlatılmalıdır. Intune yöneticileri, yapılandırma verilerini Intune Azure portalı aracılığıyla hedefleyip dağıtabilir. iOS için Intune Uygulama SDK’sının 7.0.1 sürümü itibarıyla, MAM’ı hedefleyen yapılandırmaya dahil olan uygulamalar, MAM Hizmeti aracılığıyla MAM’ı hedefleyen yapılandırma verileri sağlayabilmektedir. Uygulama yapılandırma verileri MDM kanalı yerine uygulamaya doğrudan MAM Hizmetimiz aracılığıyla iletilir. Intune Uygulama SDK'sı, bu konsollardan alınan verilere erişmesine erişmek için bir sınıf sağlar. Aşağıdakileri önkoşul olarak dikkate alın: <br>

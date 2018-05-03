@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme - Intune
 
@@ -77,7 +77,10 @@ Yeni bir uyumluluk ilkesi oluştururken veya mevcut uyumluluk ilkesini düzenler
 1. [Azure portalında](https://portal.azure.com) **Microsoft Intune**'u açın ve **Cihaz uyumluluğu**'nu seçin.
 2. **İlkeler**'i seçin, ilkelerinizden birini seçin ve sonra da **Özellikler**'i seçin. 
 
-   Henüz bir ilkeniz yok mu? [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) veya başka bir platform ilkesi oluşturun.
+  Henüz bir ilkeniz yok mu? [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) veya başka bir platform ilkesi oluşturun.
+  
+  > [!NOTE]
+  > JAMF cihazlar ve cihaz grupları tarafından hedeflenen cihazlar, şu anda uyumluluk eylemleri alamaz.
 
 3. **Uyumsuzluk eylemleri**'ni seçin ve ardından **Ekle**'yi seçerek eylem parametrelerini girin. Önceden oluşturulmuş ileti şablonunu seçebilir, ek alıcılar ekleyebilir ve yetkisiz kullanım süresi zaman çizelgesini güncelleştirebilirsiniz. Zaman çizelgesinde gün sayısını (0 - 365 arası) girebilir ve daha sonra koşullu erişim ilkelerini zorlayabilirsiniz. Gün sayısı olarak **0** girerseniz, koşullu erişim şirket kaynaklarına erişimi **hemen** engeller.
 

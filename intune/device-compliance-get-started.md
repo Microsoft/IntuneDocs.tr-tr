@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama
 
@@ -80,6 +80,8 @@ Cihaz uyumluluk ilkelerini kullanmak için şunlar gereklidir:
   - Windows 10
 
 - Cihazların uyumluluk durumunun rapor edilebilmesi için Intune’a kayıtlı olmaları gerekir
+
+- Tek bir kullanıcıya kayıtlı veya birincil kullanıcısı olmayan cihazlar desteklenir. Birden fazla kullanıcı bağlamı desteklenmez.
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Intune cihaz uyumluluk ilkelerinin Azure AD ile birlikte çalışması
 
@@ -148,9 +150,9 @@ Bir cihazda birden fazla uyumluluk ilkesi varsa, bu ilkelerden en yüksek önem 
 Cihaz uyumluluk ilkelerini koşullu erişim olmadan da kullanabilirsiniz. Uyumluluk ilkelerini bağımsız olarak kullandığınızda, hedeflenen cihazlar değerlendirilir ve uyumluluk durumları raporlanır. Örneğin, kaç cihazın şifrelenmediği ya da hangi cihazlarda işletim sistemi engellemelerinin kaldırıldığı veya kök erişim izni verildiği konusunda bir rapor alabilirsiniz. Uyumluluk ilkelerini koşullu erişim olmadan kullandığınızda, şirket kaynaklarına yönelik erişim kısıtlaması olmaz.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini dağıtma yolları
-Kullanıcı gruplarındaki kullanıcılara veya cihaz gruplarındaki cihazlara uyumluluk ilkesi dağıtabilirsiniz. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının cihazlarında uyumluluk denetimi yapılır.
+Kullanıcı gruplarındaki kullanıcılara veya cihaz gruplarındaki cihazlara uyumluluk ilkesi dağıtabilirsiniz. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının tüm cihazlarında uyumluluk denetimi yapılır.
 
-Cihaz gruplarındaki cihazlar için **Uyumluluk ilkesi ayarları** (Azure portalı > Cihaz uyumluluğu) şunları barındırır
+**Uyumluluk ilkesi ayarları** (Azure portalı > Cihaz uyumluluğu) şunları barındırır:
 
 - **Kendisine hiçbir uyumluluk ilkesi atanmamış cihazları şöyle işaretle**: Bu özelliğin iki değeri vardır:
 

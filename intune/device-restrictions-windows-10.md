@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune’da Windows 10 (ve üzeri) cihaz kısıtlama için ayarlar
 Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
@@ -370,6 +370,11 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
 - **Yazdırma hizmeti kaynak URI'si** - Azure Portal'da yapılandırıldığı şekliyle yazdırma hizmetinin OAuth kaynak URI'si.
 - **Sorgulanacak en fazla yazıcı sayısı (Yalnızca mobil)** - Bulma uç noktasından sorgulanacak yazıcı sayısı üst sınırı.
 - **Yazıcı bulma hizmeti kaynak URI'si** - Azure Portal'da yapılandırıldığı şekliyle yazıcı bulma hizmetinin OAuth kaynak URI'si.
+
+## <a name="local-printer"></a>Yerel Yazıcı
+- **Yazıcılar** - Eklenmiş olan yerel yazıcı listesi.
+- **Varsayılan yazıcı** - Varsayılan yazıcıyı ayarlayın.
+- **Yeni yazıcı eklemek için kullanıcı erişimi** - Yerel yazıcı kullanımına izin verin veya bunu engelleyin.
 
 ## <a name="reporting-and-telemetry"></a>Raporlama ve Telemetri
 

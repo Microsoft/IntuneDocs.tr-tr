@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/27/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
+ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -63,9 +63,11 @@ Aynı VPP belirteci için **Karşıya Yükle** düğmesine birden çok kez tıkl
 Intune'a kayıtlı olmayan cihazlarda, bir Windows Bilgi Koruması ilkesi için ayarlardaki **Şirket Tanıma** alanında yalnızca birincil bir etki alanı belirtebilirsiniz.
 Ek etki alanları eklerseniz (**Gelişmiş ayarlar** > **Ağ çevresi** > **Korumalı bir etki alanı ekle** kullanarak), ilkeyi kaydedemezsiniz. Gördüğünüz hata iletisi yakında daha doğru hale getirilecektir.
 
-### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN istemci desteği
-Cisco AnyConnect VPN istemcisinin en son sürümü (4.0.07072) şu anda Intune ile uyumlu değildir. Intune'un gelecekteki bir güncelleştirmesi, bu VPN istemci sürümüyle uyumluluğu içerecektir. O zamana kadar Cisco AnyConnect VPN istemcinizi güncelleştirmemenizi ve mevcut sürümü kullanmaya devam etmenizi öneririz.
+### <a name="cisco-anyconnect-and-cisco-legacy-anyconnect-vpn-client-support---ios"></a>Cisco AnyConnect ve Cisco Legacy AnyConnect VPN istemci desteği - iOS
 
+iOS cihazlarda ağ erişim denetimi (NAC) tümleştirmesi, yeni Cisco AnyConnect istemcisiyle çalışmaz. NAC tümleştirmesi sağlamak için Cisco’yla çalışmaları sürdürüyoruz.
+
+[Intune’da VPN profilleri oluşturma](vpn-settings-ios.md) makalesi, Cisco AnyConnect ve Cisco Legacy AnyConnect istemcileri hakkında daha fazla ayrıntı sağlar.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>macOS Sierra cihazlarda sayısal parola türü kullanma
 

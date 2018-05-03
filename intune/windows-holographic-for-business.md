@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41c1ea3bf12b83a0f09c8535275ffb58e5f46931
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 45d8f5051d9663273c6515717b7930145ff8a964
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>Intune ile Windows Holographic çalıştıran cihazları özelleştirme
 
@@ -38,7 +38,7 @@ Uyumluluk ilkeleri, cihazların uyumlu olmak için karşılaması gereken kurall
 
 Ayrıca bkz. **[Uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md)**.
 
-## <a name="deploy-apps"></a>Uygulama dağıtma
+## <a name="deploy-and-manage-apps"></a>Uygulamaları dağıtma ve yönetme
 **[Intune’a uygulama ekleme](apps-add.md)**
 
 Intune kullanarak Windows Holographic for Business çalıştıran cihazlarınıza uygulama ekleyebilirsiniz. Uygulama dağıtmanın pek çok yolu vardır, örneğin:
@@ -46,6 +46,16 @@ Intune kullanarak Windows Holographic for Business çalıştıran cihazlarınız
 - [Microsoft Store uygulamaları ekleme](store-apps-windows.md)
 - [Oluşturduğunuz uygulamaları ekleme](lob-apps-windows.md)
 - [Gruplara uygulama ekleme](apps-deploy.md)
+
+Microsoft Intune, Windows Holographic for Business çalıştıran Microsoft HoloLens cihazlara Evrensel Windows Uygulamaları dağıtabilir. Uygulama paketlerinizi doğrudan Intune Azure portalından karşıya yükleyebilir veya İş İçin Microsoft Store’dan dağıtabilirsiniz. İlgili alanlar hakkında daha fazla bilgi için aşağıdakilere bakın:
+- Intune Azure portalını kullanarak İş Kolu (LOB) uygulamalarını dağıtmak için bkz. [Windows iş kolu uygulamalarını Microsoft Intune’a ekleme](lob-apps-windows.md).
+- İş İçin Microsoft Store kullanarak uygulama dağıtmak için bkz. [Microsoft Intune ile İş İçin Microsoft Mağazası’ndan satın aldığınız uygulamaları yönetme](windows-store-for-business.md). 
+- Microsoft Intune ile uygulama yönetimi hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune’da uygulama yönetimi nedir?](app-management.md).
+- Microsoft HoloLens için uygulama geliştirmek hakkında daha fazla bilgi edinmek için bkz. [Microsoft HoloLens için karma gerçeklik uygulamaları](https://www.microsoft.com/hololens/apps). 
+
+> [!NOTE]
+> Windows 10 Holographic for Business 1607 çalıştıran HoloLens cihazlar, İş İçin Microsoft Store’dan çevrimiçi lisanslandırılmış uygulamaları desteklemez. Daha fazla bilgi için bkz. [HoloLens’te uygulama yükleme](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
+
 
 ## <a name="device-categories-and-groups"></a>Cihaz kategorileri ve gruplar
 **[Cihazları gruplar halinde kategorilere ayırma](device-group-mapping.md)**
