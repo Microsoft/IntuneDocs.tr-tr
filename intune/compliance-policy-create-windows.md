@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için cihaz uyumluluk ilkesi ekleme
 
@@ -94,7 +94,7 @@ Windows 8.1 bilgisayarları **3** sürümünü döndürür. Windows için işlet
     - Simgeler
     - Sayılar
 
-    Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir. Windows çalıştıran ve Microsoft Hesabı ile erişilen cihazlarda, minimum parola uzunluğu sekiz karakterden fazlaysa veya minimum karakter kümesi sayısı ikiden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
+    Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir. Windows çalıştıran ve bir Microsoft Hesabı ile erişilen cihazlarda, minimum parola uzunluğu sekiz karakterden fazlaysa veya minimum karakter kümesi sayısı ikiden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
 
 - **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin.
 - **Parola kullanım süresi (gün)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
@@ -121,23 +121,23 @@ HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Sis
 
 ### <a name="device-properties"></a>Cihaz özellikleri
 
-- **Gereken en düşük işletim sistemi**: major.minor.build.CU numarasını girin. build.CU numarası, `ver` veya `winver` komutu tarafından döndürülen sürüme karşılık gelmelidir.
+- **En düşük işletim sistemi sürümü**: İzin verilen en düşük sürümü major.minor.build.CU biçiminde girin. build.CU numarası, `ver` veya `winver` komutu tarafından döndürülen sürüme karşılık gelmelidir.
 
   Cihazdaki işletim sistemi belirtilen sürümden önceki bir sürümdeyse, cihazın uyumsuz olduğu bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 
-- **İzin verilen en yüksek işletim sistemi**: major.minor.build.CU numarasını girin. build.CU numarası, `ver` veya `winver` komutu tarafından döndürülen sürüme karşılık gelmelidir.
+- **En yüksek işletim sistemi sürümü**: İzin verilen en yüksek sürümü major.minor.build.CU biçiminde girin. build.CU numarası, `ver` veya `winver` komutu tarafından döndürülen sürüme karşılık gelmelidir.
 
   Bir cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisi ile iletişim kurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
 
-- **Mobil cihazlar için gereken en düşük işletim sistemi**: major.minor.build numarasını girin.
+- **Mobil cihazlar için gereken en düşük işletim sistemi**: İzin verilen en düşük sürümü major.minor.build biçiminde girin.
 
   Cihazdaki işletim sistemi belirtilen sürümden önceki bir sürümdeyse, cihazın uyumsuz olduğu bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 
-- **Mobil cihazlar için gereken en yüksek işletim sistemi**: major.minor.build numarasını girin.
+- **Mobil cihazlar için gereken en yüksek işletim sistemi**: İzin verilen en yüksek sürümü major.minor.build biçiminde girin.
 
   Bir cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisi ile iletişim kurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
 
-- **Geçerli işletim sistemi derlemeleri**: İşletim sistemi sürümleri için en düşük ve en yüksek değerler dahil olmak üzere kabul edilebilir bir aralık girin.
+- **Geçerli işletim sistemi derlemeleri**: İşletim sistemi sürümleri için en düşük ve en yüksek değerler dahil olmak üzere kabul edilebilir bir aralık girin. Kabul edilebilir derleme numaraları için bir virgülle ayrılmış değerler (CSV) dosya listesi **Dışarı Aktarabilirsiniz**.
 
 ### <a name="system-security-settings"></a>Sistem güvenliği ayarları
 

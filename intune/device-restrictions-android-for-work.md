@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/19/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5715cca4a2f3deff925c5ba2575771c548261e53
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune'da Work cihaz kısıtlama ayarları
 
@@ -50,6 +50,12 @@ Bu makalede, Android for Work çalıştıran cihazlar için yapılandırabilece�
    Örneğin, Gmail uygulamasını bir Android for Work profiline dağıttığınızda, son kullanıcıların bu iş profiline hesap eklemesini veya buradan kaldırmasını engelleyebilirsiniz.
 
 - **Bluetooth ile kişi paylaşımı**: Bluetooth kullanarak eşleştirilmiş bir cihazdan, örneğin araba, iş kişilerine erişime izin verir. Bu ayar varsayılan olarak yapılandırılmamıştır ve iş profili kişileri gösterilmez. Bu paylaşıma izin verip iş profili kişilerini görüntülemek için **Etkinleştir**’i seçin. Bu ayar, Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları için geçerlidir. Bunu etkinleştirmek, bazı Bluetooth cihazlarının ilk bağlantı sırasında iş kişilerini önbelleğe almasına izin verebilir. İlk eşleme/eşitleme sonrasına bunu devre dışı bırakmak ise Bluetooth cihazından iş kişilerini kaldırmayabilir.
+
+- **Ekran yakalama**: İş profili olan cihazlarda ekran yakalamayı engeller. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller.
+
+- **Kişisel profilde iş kişisi arayan kimliğini görüntüle**: Etkinleştirildiğinde (Yapılandırılmadı), iş kişisi arayan ayrıntıları kişisel profilde görüntülenir. Engellendiğinde ise iş kişisi arayan numarası kişisel profilde görüntülenmez. Android işletim sistemi v6.0 ve daha yeni sürümlerde geçerlidir.
+
+- **Kamera**: İş profili olan cihazda kamerayı engeller. Kişisel taraftaki kamera, bu ayardan etkilenmez.
 
 ### <a name="work-profile-password"></a>İş profili parolası
 
