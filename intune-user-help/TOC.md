@@ -149,6 +149,6 @@
 #### [UAC’yi etkinleştirmek istiyorum](you-need-to-enable-uac-windows.md)
 #### [Windows’u güncelleştirmek istiyorum](you-need-to-update-os-build-version-windows.md)
 #### [Windows Defender'ı etkinleştirmek istiyorum](turn-on-defender-windows.md)
-
+## [Windows için Şirket Portalı uygulamasından cihazı uzaktan kilitleme](remote-lock-your-device-cp-app.md) 
 ## [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 ### [Cihazlarınızı uzaktan kilitleme](remote-lock-your-device-cpwebsite.md)
