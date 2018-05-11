@@ -15,11 +15,11 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d9a51cb4e76f5aa0f89f9160af6f5fe62f0bbbd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 58a1db63c3fef3b288c42d43ce7ffc5164d81845
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager ile iOS cihaz kaydını etkinleştirme
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Geçici kullanıcı arabirimi farklılıkları
 >
->Bu sayfada açıklanan özellikler için kullanıcı arabirimleri, güncelleştirilme sürecindedir. Bu güncelleştirmeler, Nisan sonunda tüm kullanıcı hesaplarına sunulacaktır.
+>Bu sayfada açıklanan özellikler için kullanıcı arabirimleri, güncelleştirilme sürecindedir. Bu güncelleştirmeler, mart ayının ilk haftasında tüm kullanıcı hesaplarına sunulacaktır.
 >
 >**Cihaz kaydı** sayfanız aşağıdaki görüntüdeki gibi görünüyorsa güncelleştirilmiş kullanıcı arabirimini kullanıyorsunuzdur ve bu yardım sayfasını kullanabilirsiniz.
 >

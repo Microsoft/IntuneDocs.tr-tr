@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0fcd4b04541593f41abb35be6558be2375a0131
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -67,10 +67,9 @@ Yerel iOS ve Android için Intune Uygulama SDK'ları bir Microsoft GitHub hesab�
 * [iOS için Intune Uygulama SDK'sı](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Android için Intune Uygulama SDK'sı](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Uygulamanız bir Xamarin veya Cordova uygulaması ise lütfen şu SDK çeşitlerini kullanın:
+Uygulamanız bir Xamarin uygulaması ise lütfen şu SDK çeşidini kullanın:
 
 * [Intune Uygulama SDK’sı Xamarin Bağlamaları](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Intune Uygulama SDK’sı Cordova Eklentisi](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Depolarımızdan çatallama ve çekme işlemleri yaparken kullanabileceğiniz bir GitHub hesabı oluşturmanız iyi olabilir. GitHub, geliştiricilerin ürün ekibimizle iletişim kurmasına, soru sorup hızlı yanıtlar almasına, sürüm notlarını görüntülemesine ve Microsoft'a geri bildirim sağlamasına olanak tanır. Intune Uygulama SDK’sı Github'ındaki sorular için şuraya başvurun: msintuneappsdk@microsoft.com.
 
@@ -81,8 +80,6 @@ Intune Uygulama SDK'sı ile uygulamanızı tümleştirmenize yardımcı olması 
 * **[iOS için Intune Uygulama SDK’sı Geliştirici Kılavuzu](app-sdk-ios.md)**: Bu belgede, yerel iOS uygulamanızı Intune Uygulama SDK’sı ile etkinleştirme işleminde size adım adım yol gösterilir.
 
 * **[Android için Intune Uygulama SDK’sı Geliştirici Kılavuzu](app-sdk-android.md)**: Bu belgede, yerel Android uygulamanızı Intune Uygulama SDK’sı ile etkinleştirme işleminde size adım adım yol gösterilir.
-
-* **[Intune Uygulama SDK’sı Cordova Eklentisi kılavuzu](app-sdk-cordova.md)**: Bu belge, Intune uygulama koruma ilkeleri için Cordova kullanarak iOS ve Android uygulamaları oluşturmanıza yardımcı olur.
 
 * **[Intune Uygulama SDK’sı Xamarin Bağlamaları kılavuzu](app-sdk-xamarin.md)**: Bu belge, Intune uygulama koruma ilkeleri için Xamarin kullanarak iOS ve Android uygulamaları oluşturmanıza yardımcı olur.
 

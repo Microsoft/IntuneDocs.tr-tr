@@ -17,19 +17,22 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b9bbd44fcace579803fc4e5c24324d70b8831645
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 449413a87c79645240bc18be41fb6e88d4c071f8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS cihazınızla ilgili sorunlar için şirketinizin destek birimine hata gönderme
+iOS cihazınızda Şirket Portalı uygulamasını kullanırken bazen bir hatayla karşılaşabilirsiniz. Böyle bir durumda hatanın ayrıntılarını şirketinizin destek çalışanına e-posta ile gönderebilirsiniz. Bu ayrıntılar, sorununuzu gidermek için gerekli bağlamı sağlayacaktır.
+
+Günlükleri Şirket Portalı uygulamasına yüklediğinizde bunlar önce bu uygulamada çalışan Microsoft geliştiricilerine gönderilir. Geliştiriciler bu günlükleri uygulamanın işlevselliğini iyileştirmek ve ileride ortaya çıkabilecek hataları önlemek için kullanır. Daha sonra size, şirketinizin destek çalışanıyla paylaşmanız için hatanıza özgü bir olay kimliği sağlanır. Bu kimlik, Microsoft Desteği kapsamında kullanım içindir.
 
 Şirket Portalı uygulamasını kullanırken iOS cihazınızda hata alırsanız, şirketinizin destek biriminin sorunu gidermesine yardımcı olmak için bilgi gönderebilirsiniz. Hata bilgilerini farklı yollarla gönderebilirsiniz:
 
 -   Hata uyarı iletilerinde **Rapor**’a dokunun.
 
--   Şirket Portalı uygulamasının **Hakkında** ekranında: **Tanılama Raporu Gönder**’e dokunun.
+-   Şirket Portalı uygulamasının **Diğer** sekmesinde **Yardım Al**’a dokunun.
 
 -   Şirket Portalı uygulamasında, cihazınızı sallayın ve ardından tanılama uyarısı görüntülendiğinde **Tanılama Raporu Gönder**’e dokunun. Cihazı salladığınızda uyarı görüntülenmezse **Ayarlar** > **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
 

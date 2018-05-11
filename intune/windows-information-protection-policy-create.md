@@ -5,7 +5,7 @@ description: Microsoft Intune ile Windows Bilgi Koruması (WIP) uygulama koruma 
 keywords: ''
 author: msmimart
 ms.author: mimart
-manager: doubeby
+manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
 ms.prod: ''
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7273a29eea9cd9b55e998302de2bc57d26d34e04
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f08dde25de5962eaaa11487a367b2895c6c047d4
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -33,7 +33,7 @@ Bir WIP ilkesi eklerken kullanılan birkaç kavramı anlamanız gerekir:
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>İzin verilen ve muaf uygulamaların listesi
 
--   **İzin verilen uygulamalar:** Bu uygulamalar, bu ilkeye bağlı kalması gereken uygulamalardır.
+-   **Korunan uygulamalar:** Bu uygulamalar, bu ilkeye bağlı kalması gereken uygulamalardır.
 
 -   **Muaf uygulamalar:** Bu uygulamalar bu ilkeden muaftır ve kurumsal verilere kısıtlamasız erişebilir.
 
@@ -63,7 +63,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 2. **Tüm Hizmetler** > **Intune**’u seçin.
 3. **Microsoft Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
 4. **Mobil uygulamalar** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
-5. **İlke ekle** dikey penceresini görüntülemek için **İlke ekle**’ye tıklayın.
+5. **İlke ekle** dikey penceresini görüntülemek için **İlke ekle**’yi seçin.
 6. Aşağıdaki değerleri ekleyin:
     - **Adı:** Yeni ilkeniz için bir ad yazın (gereklidir).
     - **Açıklama:** (İsteğe bağlı) Bir açıklama yazın.
@@ -71,7 +71,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
     - **Kayıt durumu:** İlkeniz için kayıt durumu olarak **Kayıt olmadan**’ı seçin.
 7.  **Oluştur**’u seçin. İlke oluşturulur ve **Uygulama koruma ilkeleri** dikey penceresindeki tabloda görüntülenir.
 
-## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>İzin verilen uygulamalar listenize önerilen uygulamalar eklemek için
+## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Korunan uygulamalar listenize önerilen uygulamalar eklemek için
 
 1. **Microsoft Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
 2. **Mobil uygulamalar** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
@@ -82,7 +82,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 7. **Tamam**'ı tıklatın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
 8. **Kaydet**'e tıklayın.
 
-## <a name="add-a-store-app-to-your-allowed-apps-list"></a>İzin verilen uygulamalar listenize bir Mağaza uygulaması ekleme
+## <a name="add-a-store-app-to-your-protected-apps-list"></a>Korunan uygulamalar listenize bir Store uygulaması eklemek için
 
 **Bir Mağaza uygulaması eklemek için**
 1. **Microsoft Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
@@ -95,7 +95,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 9. **Tamam**'ı tıklatın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
 10. **Kaydet**'e tıklayın.
 
-## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>İzin verilen uygulamalar listenize bir masaüstü uygulaması ekleme
+## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Korunan uygulamalar listenize bir masaüstü uygulaması eklemek için
 
 **Bir masaüstü uygulaması ekleme**
 1. **Microsoft Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
@@ -118,7 +118,7 @@ WIP Öğrenme, WIP etkin ve WIP bilinmeyen uygulamalarınızı izlemenize olanak
 <!-- 1631908 -->
 WIP’in etkinleştirildiği uygulamalar hakkındaki bilgileri görüntülemeye ek olarak, web siteleriyle paylaşılan iş verilerine sahip cihazların özetini de görüntüleyebilirsiniz. Bu bilgilerle, grup ve kullanıcı WIP ilkelerine hangi web sitelerinin eklenmesi gerektiğini saptayabilirsiniz. Özet, WIP özellikli uygulamalar tarafından hangi web sitesi URL'lerine erişildiğini gösterir.
 
-WIP etkin ve WIP bilinmeyen uygulamalarla çalışırken, **Sessiz** veya **Geçersiz Kılmalara İzin Ver** ile başlayarak izin verilen uygulamalar listenizde doğru uygulamalar bulunduğunu küçük bir grupla doğrulamanızı öneririz. Bu denemeyi bitirdikten sonra, son uygulatma ilkenizi **Blok** olarak değiştirebilirsiniz.
+WIP etkin ve WIP bilinmeyen uygulamalarla çalışırken, **Sessiz** veya **Geçersiz Kılmalara İzin Ver** ile başlayarak korunan uygulamalar listenizde doğru uygulamalar bulunduğunu küçük bir grupla doğrulamanızı öneririz. Bu denemeyi bitirdikten sonra, son uygulatma ilkenizi **Blok** olarak değiştirebilirsiniz.
 
 ### <a name="what-are-the-protection-modes"></a>Koruma modları nelerdir?
 

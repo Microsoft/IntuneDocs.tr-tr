@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -155,6 +155,16 @@ Uygulamayı Intune’a eklediğinizde, size istediğiniz kategoriyi belirtme se�
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Intune tarafından otomatik olarak eklenen uygulamalar
 
 Eskiden Intune’da hızlıca atayabileceğiniz birkaç yerleşik uygulama vardı. Intune müşteri geri bildirime dayanarak bu listeyi kaldırdık, yerleşik uygulamalar artık görüntülenmiyor. Ancak herhangi bir yerleşik uygulamayı önceden atadıysanız bu uygulamalar, uygulama listesinde görünmeye devam edecektir. Uygulamaları gerektiği gibi atamaya devam edebilirsiniz.
+
+## <a name="installing-updating-or-removing-required-apps"></a>Gerekli uygulamaları yükleme, güncelleştirme veya kaldırma
+
+Intune, 7 günlük yeniden değerlendirme döngüsünü beklemek yerine 24 saat içerisinde gerekli bir uygulamayı otomatik olarak tekrar yükler, güncelleştirir veya kaldırır.
+
+Intune bu işlemi şu koşullara dayalı olarak gerçekleştirir:
+- Bir son kullanıcı, cihazında yüklü olmasını gerekli kıldığınız bir uygulamayı kaldırırsa Intune, bu zamanlama geçtikten sonra uygulamayı otomatik olarak yeniden yükler.
+- Gerekli bir uygulamanın yüklemesi başarısız olursa veya uygulama bir şekilde cihazda bulunmuyorsa Intune, uyumluluğu değerlendirir ve bu zamanlama geçtikten sonra uygulamayı yeniden yükler.  
+- Yönetici, bir uygulamayı bir kullanıcı grubuna hedefler ve son kullanıcı bunu cihazda Şirket Portalı’ndan yükler. Daha sonra yönetici, uygulamayı v1’den v2’ye güncelleştirir. Bu durumda Intune, cihazda uygulamanın önceki herhangi bir sürümü mevcutsa bu zamanlama geçtikten sonra uygulamayı güncelleştirir.
+- Yönetici kaldırma amacını dağıttığı halde uygulama cihazda mevcut olup kaldırılamamışsa Intune, uyumluluğu değerlendirir ve bu zamanlama geçtikten sonra uygulamayı kaldırır.   
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

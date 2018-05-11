@@ -1,12 +1,11 @@
 ---
-title: iOS cihazlar için Microsoft Intune’da uygulama başına VPN ayarlama
-titleSuffix: ''
-description: Intune ile yönetilen iOS cihazlarda hangi yönetilen uygulamaların Sanal Özel Ağınızı (VPN) kullanabileceğini belirtin.
+title: Microsoft Intune - Azure’da iOS cihazlar için uygulama başına VPN ayarlama | Microsoft Docs
+description: iOS cihazlarda Microsoft Intune’da ön koşullara bakın, sanal özel ağ (VPN) kullanıcıları için bir grup oluşturun, SCEP sertifika profili ekleyin, uygulama başına VPN profili yapılandırın ve VPN profiline bazı uygulamalar atayın. Ayrıca cihazda VPN bağlantısını doğrulama adımları da listelenir.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +14,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46857dcf24befb0cf552769d48b99020c36e3e5b
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS cihazlar için Intune’da uygulama başına Sanal Özel Ağ (VPN) ayarlama
 
@@ -28,6 +27,7 @@ Intune ile yönetilen iOS cihazlarda hangi yönetilen uygulamaların Sanal Özel
 Uygulama başına VPN şu anda şu sağlayıcılar için kullanılabilir durumda: 
 
  - Checkpoint Remote Access VPN
+ - Cisco AnyConnect
  - F5
  - Pulse Connect Secure
  - SonicWall
@@ -49,8 +49,8 @@ Sertifikayı dışarı aktarın ve CA’yı ekleyin.
 
 Uygulama Başına VPN’e erişimi olan üyeleri barındırması için Azure Active Directory’de (Azure AD) bir grup oluşturun veya mevcut bir grubu seçin.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 2. **Gruplar**’ı seçin ve daha sonra **Yeni grup**’a tıklayın.
 3. Grubun **Grup türü**’nü seçin. 
 3. Grubun **Grup adı**’nı yazın. 
@@ -64,8 +64,8 @@ Uygulama Başına VPN’e erişimi olan üyeleri barındırması için Azure Act
 
 CA tarafından verilen VPN sunucusu kök sertifikasını Intune’da oluşturulan bir profile aktarın. Güvenilen sertifika profili, iOS cihaza VPN sunucusu tarafından sunulan CA’ya otomatik olarak güvenmesi talimatını verir.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 2. **Cihaz yapılandırması**’nı seçin ve daha sonra **Profiller**’e tıklayın.
 3. **Profil oluştur**’a tıklayın. **Profil oluştur**’da:
     1. **Ad** yazın.
@@ -81,8 +81,8 @@ CA tarafından verilen VPN sunucusu kök sertifikasını Intune’da oluşturula
 
 Güvenilen kök sertifika profili, iOS’un VPN sunucusuna otomatik olarak güvenmesini mümkün kılar. SCEP sertifikası ise iOS VPN istemcisinden VPN sunucusuna kimlik bilgileri sağlar. Sertifika, iOS cihaz kullanıcısına kullanıcı adı ve parola için istemde bulunmaya gerek kalmaksızın cihazın sessizce kimlik doğrulamasına imkan verir. 
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 2. **Cihaz yapılandırması**’nı seçin ve daha sonra **Profiller**’e tıklayın.
 3. **Profil oluştur**’a tıklayın. **Profil oluştur**’da:
     1. **Ad** yazın.
@@ -108,8 +108,8 @@ Güvenilen kök sertifika profili, iOS’un VPN sunucusuna otomatik olarak güve
 
 VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye bağlantı bilgilerini ve Uygulama Başına VPN özelliğini iOS uygulaması tarafından kullanılmak üzere etkinleştirecek olan Uygulama Başına VPN bayrağını barındırır.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 2. **Cihaz yapılandırması**’nı seçin ve daha sonra **Profiller**’e tıklayın.
 3. **Profil oluştur**’a tıklayın. **Profil oluştur**’da:
     1. **Ad** yazın.
@@ -139,7 +139,7 @@ VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye
 VPN profilinizi ekledikten sonra, uygulamayı ve Azure AD grubunu bu profil ile ilişkilendirin.
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 2. **Mobil uygulamalar**’ı seçin.
 3. **Uygulamalar**’a tıklayın.
 4. Uygulama listesinden uygulamayı seçin.
@@ -167,6 +167,7 @@ Uygulama Başına VPN’iniz ayarlı ve uygulamanızla ilişkili olduğunda, ba�
  - Desteklenen üçüncü taraf VPN uygulamasına sahip olduğunuzdan emin olun. Aşağıdaki VPN uygulamaları desteklenmektedir:
     - Pulse Secure
     - Checkpoint
+    - Cisco AnyConnect
     - F5
     - SonicWall
 

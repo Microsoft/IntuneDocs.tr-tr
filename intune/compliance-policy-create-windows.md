@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için cihaz uyumluluk ilkesi ekleme
 
@@ -121,11 +121,11 @@ HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Sis
 
 ### <a name="device-properties"></a>Cihaz özellikleri
 
-- **En düşük işletim sistemi sürümü**: İzin verilen en düşük sürümü major.minor.build.CU biçiminde girin. build.CU numarası, `ver` veya `winver` komutu tarafından döndürülen sürüme karşılık gelmelidir.
+- **En düşük işletim sistemi sürümü**: İzin verilen en düşük sürümü major.minor.build.revision biçiminde girin. build.revision numarası, `ver` veya `winver` komutu tarafından döndürülen sürüme karşılık gelmelidir.
 
   Cihazdaki işletim sistemi belirtilen sürümden önceki bir sürümdeyse, cihazın uyumsuz olduğu bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
 
-- **En yüksek işletim sistemi sürümü**: İzin verilen en yüksek sürümü major.minor.build.CU biçiminde girin. build.CU numarası, `ver` veya `winver` komutu tarafından döndürülen sürüme karşılık gelmelidir.
+- **En yüksek işletim sistemi sürümü**: İzin verilen en yüksek sürümü major.minor.build.revision sayı biçiminde girin. build.revision numarası, `ver` veya `winver` komutu tarafından döndürülen sürüme karşılık gelmelidir.
 
   Bir cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisi ile iletişim kurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
 

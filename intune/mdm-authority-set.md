@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15e1678fa93269eb650f8a5684091b430ebf1cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f903e9dfe5fb30f45806aac5694171814492f2e
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobil cihaz yönetimi yetkilisini ayarlayın
 
@@ -62,6 +62,19 @@ Kaydı etkinleştirmek veya kolaylaştırmak için farklı platformlarda aşağ�
 - **Windows** - (isteğe bağlı) [Otomatik kaydı](windows-enroll.md) veya [toplu kaydı](windows-bulk-enroll.md) etkinleştirme
 - **macOS** - (gerekli) [Bir Apple MDM Anında İletme Sertifikası alın](apple-mdm-push-certificate-get.md).
 
+### <a name="workflow-of-intune-administration-ui"></a>Intune Yönetim UI’si iş akışı
+Android veya Apple cihaz yönetimi etkinleştirildiğinde, Intune ilgili cihazları yönetmek üzere bu üçüncü taraf hizmetleriyle tümleştirme için cihaz ve kullanıcı bilgilerini gönderir.
+
+Veri pencerelerini paylaşma onayı ekleyen senaryolar şu durumlarda eklenir:
+- Android for Work’ü etkinleştirdiğinizde.
+- Apple MDM anında iletme sertifikalarını etkinleştirdiğinizde ve karşıya yüklediğinizde.
+- Aygıt Kayıt Programı, School Manager ve Volume Purchasing Program gibi Apple hizmetlerinden herhangi birini etkinleştirdiğinizde.
+
+Her durumda onay, bir BT Yöneticisi'nin Google veya Apple cihazlarına kaydolma yetkisi verdiğini doğrulaması gibi, bir mobil cihaz yönetimi hizmetinin çalıştırılmasıyla ilgilidir. Yeni iş akışları yayınlandığında hangi bilgilerin paylaşıldığına ilişkin belgeler şu konumlarda bulunabilir:
+- [Intune’un Google’a gönderdiği veriler](https://aka.ms/Data-intune-sends-to-google)
+- [Intune’un Apple’a gönderdiği veriler](https://aka.ms/data-intune-sends-to-apple)
+
+Microsoft’un Genel Veri Koruma Yönetmeliği’ne uyumu hakkında daha fazla bilgi için bkz. [Güven Merkezi - Genel Veri Koruma Yönetmeliği uyumluluğunuzu değerlendirme](https://aka.ms/trust_center_info).
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM sertifikası süre sonunda mobil cihazı temizleme
 

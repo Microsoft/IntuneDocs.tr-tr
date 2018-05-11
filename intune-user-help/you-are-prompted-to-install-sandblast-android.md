@@ -15,11 +15,11 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 889fb53fc215763b061f5165425df7b0b9960702
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e453cf1af0d065a367d636c3e6cc8e8ddd79cfda
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Android cihazınıza Sandblast Mobile Protect uygulamasını yüklemeniz gerekiyor
 
@@ -29,7 +29,7 @@ Yüklemeyle ilgili bir sorun yaşarsanız bu konunun sonundaki sorun giderme ad�
 
 **Yapmanız gerekenler:**
 
-1. Bildirimler çubuğunu açmak için ekranın üstünden aşağı doğru sürükleyin ve ardından **Gerekli uygulama – Play Store’dan Skycure’u Yükle**’ye tıklayın. Bunu ayrıca, __Uyumluluk Ayrıntıları__ altında Şirket Portalı uygulamasının içinde de bulabilirsiniz.
+1. Bildirimler çubuğunu açmak için ekranın üstünden aşağı doğru sürükleyin ve ardından **Gerekli uygulama – Play Store’dan SandBlast Mobile’ı Yükle**’ye dokunun. Bunu ayrıca, __Uyumluluk Ayrıntıları__ altında Şirket Portalı uygulamasının içinde de bulabilirsiniz.
 
 2. Play Store’da SandBlast Mobile Protect yükleme sayfasına yönlendirilirsiniz. SandBlast Mobile Protect’i yükleyin ve daha sonra **KABUL ET**’e dokunarak SandBlast Mobile Protect’in cihazınıza erişmesine izin verin.
 

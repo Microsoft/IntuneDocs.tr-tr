@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f9cc117925f59c9fb7c55d0ff10aedf09d26f93
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 5c9f81761e7e24393471f44da4cf619f017e9bbd
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -74,35 +74,35 @@ Intune Uygulama SDK’sı Xamarin Bağlamaları ile derlenen Xamarin uygulamalar
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
 
-## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>Android mobil uygulamanızda uygulama koruma ilkelerini etkinleştirme
-[Microsoft.Intune.MAM.Xamarin.Android NuGet paketini](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) Xamain.Android projenize ekleyin.
+## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Android mobil uygulamanızda Intune uygulama koruma ilkelerini etkinleştirme
 
-Xamarin.Android uygulamalarında [Android Geliştirici Kılavuzu için Intune Uygulama SDK’sını](app-sdk-android.md) baştan sona okuyup kılavuzdaki [tabloya](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) göre sınıf, yöntem ve etkinlikleri MAM eşdeğeriyle değiştirme dahil olmak üzere tamamıyla uygulamanız gerekir. 
+### <a name="xamarinandroid-integration"></a>Xamarin.Android tümleştirmesi
 
-> [!NOTE]
-> Uygulamanızda `android.app.Application` sınıfı tanımlanmıyorsa bir tane oluşturup `MAMApplication` kaynağından devraldığından emin olmanız gerekir.
+1. [Microsoft.Intune.MAM.Xamarin.Android NuGet paketinin](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) son sürümünü Xamain.Android projenize ekleyin. Bu, Intune’un uygulamanızı etkinleştirmesi için gereken başvuruları sağlar.
+
+2. [Android Geliştirici Kılavuzu için Intune Uygulama SDK’sını](app-sdk-android.md) tam olarak okuyun ve uygulayın, şu kısımlara da özellikle dikkat edin:
+    1. [Bütün sınıf ve yönetim değişimleri bölümü](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent). 
+    2. [MAMApplication bölümü](app-sdk-android.md#mamapplication). Alt sınıfınızın `[Application]` özniteliği ile doğru şekilde donatıldığından ve `(IntPtr, JniHandleOwnership)` oluşturucusunu geçersiz kıldığından emin olun.
+    3. [ADAL tümleştirmesi bölümü](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal), uygulamanız AAD’ye karşı kimlik doğrulaması gerçekleştiriyorsa.
+    4. [MAM-WE kaydı bölümü](app-sdk-android.md#app-protection-policy-without-device-enrollment), uygulamanıza MAM hizmetinden ilke almak istiyorsanız.
 
 > [!NOTE]
 > `Microsoft.Intune.MAM.Xamarin.Android` Bağlamalarındaki [Android Geliştirici Kılavuzu için Intune Uygulama SDK’sından](app-sdk-android.md) eşdeğer API’ler bulmaya çalışırken veya kılavuzdan kod parçacıkları dönüştürürken, Xamarin bağlama oluşturucusunun Android API’lerini şu yollarla değiştirdiğine dikkat edin:
-> * Tüm tanımlayıcılar Pascal durumuna dönüştürülür (com.microsoft.foo -> Com.Microsoft.Foo)
+> * Tüm tanımlayıcılar baş harfleri büyük olmak üzere bitişik yazılır (com.foo.bar -> Com.Foo.Bar)
 > * Tüm alma/ayarlama işlemleri, özellik işlemlerine dönüştürülür (ör. Foo.getBar() -> Foo.Bar, Foo.setBar("zap") -> Foo.Bar = "zap")
 > * Tüm arabirimlerin adının başına “I” karakteri eklenir (FooInterface -> IFooInterface)
 
-Xamarin.Forms kullanan uygulamalar ve diğer arabirim çerçeveleri için `Microsoft.Intune.MAM.Remapper` adında bir araç sunuyoruz. Bu araç, sınıf değişikliklerini sizin için yapacaktır. Bunu kullanmak için şunları yapın:
+### <a name="xamarinforms-integration"></a>Xamarin.Forms tümleştirmesi
 
-1.  [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet paketini projenize ekleyin.
+**Yukarıdaki adımları tamamlamanın yanında**, `Microsoft.Intune.MAM.Remapper` paketinde sağladığımız `Xamarin.Forms` uygulamaları için. Bu paket, `MAM` sınıflarını `FormsAppCompatActivity` ve `FormsApplicationActivity` gibi yaygın olarak kullanılan `Xamarin.Forms` sınıflarındaki sınıf hiyerarşisine ekleyerek sınıf değişimini sizin için yapar. Böylece `OnMAMCreate` ve `OnMAMResume` gibi işlevlerin MAM eşdeğerleri için geçersiz kılmalar sağlayarak bu sınıfları kullanmaya devam edebilirsiniz. Bunu kullanmak için şunları yapın:
 
-2.  NuGet paketinde bulunan `remapping-config.json` dosyasının derleme eylemini **RemappingConfigFile** olarak ayarlayın. Dahil edilen `remapping-config.json` yalnızca Xamarin.Forms ile çalışır. Diğer UI çerçeveleri için Remapper NuGet paketindeki Benioku dosyasına bakın.
+1.  [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet paketini projenize ekleyin. Bu, Intune APP SDK’si Xamarin bağlamalarını siz zaten eklemediyseniz otomatik olarak ekler.
 
-3.  MAMApplication’ınızın OnMAMCreate işlevinde Xamarin.Forms.Forms.Init(Context, Bundle) için bir çağrı ekleyin çünkü Intune yönetimi ile uygulamanız arka plandayken başlatılabilir.
-
-4.  Uygulamanız için geçerli diğer [Android Geliştirici Kılavuzu için Intune Uygulama SDK’sı](app-sdk-android.md) adımlarını tamamlayın.
+2.  Yukarıdaki 2.2 adımında oluşturduğunuz `MAMApplication` sınıfının `OnMAMCreate`işlevindeki `Xamarin.Forms.Forms.Init(Context, Bundle)` için bir çağrı ekleyin. Intune ile uygulamanız, arka plandayken başlatılabileceği için bu gereklidir.
 
 > [!NOTE]
-> remapping-config.json derleme eylemi, Microsoft.Intune.MAM.Remapper.Tasks paketi güncelleştirilirken bazen sıfırlanabilir ve derlemelerinizin başarısız olmasına yol açabilir.
+> Bu işlem, Visual Studio’nun Intellisense otomatik tamamlama için kullandığı bir bağımlılığı yeniden yazdığı için yeniden eşleyici değişiklikleri doğru biçimde algılamak amacıyla Intellisense’i ilk kez çalıştırdıktan sonra Visual Studio’yu yeniden başlatmanız gerekebilir. 
 
-## <a name="next-steps"></a>Sonraki adımlar
-
-Uygulamanızı Intune yönetimine hazırlamanın temel adımlarını tamamladınız. Şimdi, yukarıda listelenen platformların tümleştirme kılavuzlarındaki adımları izleyebilirsiniz.
+## <a name="support"></a>Support
 
 Kuruluşunuz zaten bir Intune müşterisiyse destek bileti açmak ve [GitHub sorunlar sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) bir sorun bileti oluşturmak için Microsoft desteği temsilcinizle birlikte çalışın, mümkün olduğunca kısa sürede size yardım ederiz. 

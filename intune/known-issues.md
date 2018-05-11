@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
-ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
+ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -46,6 +46,14 @@ Intune’dan Azure portalına geçiş yaptığınızda **Tüm Kullanıcılar - b
 Azure portalındaki Azure klasik portalından geçirilen ilkeler için durum bilgilerini görüntüleyemezsiniz. Ancak, bu ilkelerin raporlarını klasik portalda görüntülemeye devam edebilirsiniz. Geçirilen yapılandırma ilkelerinin durum bilgilerini görüntülemek için bunları Azure portalında yeniden oluşturun.
 
 ## <a name="apps"></a>Uygulamalar
+
+
+### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Belirli VPP uygulamaları için birden çok uygulama yükleme istemi
+Son kullanıcı cihazlarında zaten yüklü olan bazı VPP uygulamaları için birden çok uygulama yükleme istemi görebilirsiniz. Bu sorun, Intune Azure portalına yüklediğiniz VPP belirteci için **Otomatik uygulama güncelleştirmeleri** seçeneğini **Açık** olarak ayarladıysanız ortaya çıkar.    
+
+Bu soruna geçici çözüm olarak VPP belirteci için **Otomatik uygulama güncelleştirmeleri** seçeneğini devre dışı bırakabilirsiniz. Bunu yapmak için Azure portalında Microsoft Intune’u açın. Intune’da **Mobil uygulamalar** > **iOS VPP belirteçleri**’ni seçin. Daha sonra etkilenen uygulamayı dağıtan VPP Belirtecini seçin, **Düzenle** > **Otomatik uygulama güncelleştirmeleri** > **Kapalı** > **Kaydet**’i seçin. Alternatif olarak, etkilenen uygulamanın VPP uygulaması olarak dağıtımını durdurabilirsiniz. Böylece istemler sona erer.    
+
+Bu, geçerli sürümde bilinen bir sorundur. Bu sorunu çözmek yakında bir düzeltme sunacağız. Düzeltme uygulandığında, kullanıcılarınız artık birden çok uygulama yükleme istemi görmeyecektir.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>iOS toplu satın alınan uygulamaları, yalnızca varsayılan Intune kiracı dilinde bulunuyor
 iOS toplu satın alınan uygulamaları, yalnızca Intune hesabınız ile aynı ülke kodunda görüntülenir ve atanabilir. Intune yalnızca Intune kiracı hesabı ülke kodu ile aynı iTunes bölgesindeki uygulamaları eşitler. Örneğin, Intune hesabınız Almanca ise ve yalnızca ABD mağazasında bulunan bir uygulamayı satın alırsanız Intune bu uygulamayı göstermez.

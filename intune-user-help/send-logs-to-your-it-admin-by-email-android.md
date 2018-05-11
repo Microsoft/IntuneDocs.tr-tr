@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="email-logs-to-your-company-support"></a>Günlükleri şirketinizin destek birimine e-posta ile gönderme
 
 Android cihazınızda Şirket Portalı uygulamasını kullanırken bazen bir hatayla karşılaşabilirsiniz. Böyle bir durumda hatanın ayrıntılarını şirketinizin destek çalışanına e-posta ile gönderebilirsiniz. Bu ayrıntılar, sorununuzu gidermek için gerekli bağlamı sağlayacaktır.  
 
-Hata ayrıntıları, cihazınızda _tanılama günlüğü_ adlı özel bir belgede tutulur. Günlükleri Şirket Portalı uygulamasına yüklediğinizde bunlar önce bu uygulamada çalışan Microsoft geliştiricilerine gönderilir. Geliştiriciler bu günlükleri uygulamanın işlevselliğini iyileştirmek ve ileride ortaya çıkabilecek hataları önlemek için kullanır. Daha sonra size, şirketinizin destek çalışanıyla paylaşmanız için hatanıza özgü bir olay kimliği sağlanır.  
+Hata ayrıntıları, cihazınızda _tanılama günlüğü_ adlı özel bir belgede tutulur. Günlükleri Şirket Portalı uygulamasına yüklediğinizde bunlar önce bu uygulamada çalışan Microsoft geliştiricilerine gönderilir. Geliştiriciler bu günlükleri uygulamanın işlevselliğini iyileştirmek ve ileride ortaya çıkabilecek hataları önlemek için kullanır. Daha sonra size, şirketinizin destek çalışanıyla paylaşmanız için hatanıza özgü bir olay kimliği sağlanır. Bu kimlik, Microsoft Desteği kapsamında kullanım içindir.
 
 > [!Note]
 > Şirketinizin destek biriminin sorunun kaynağını bulmasını kolaylaştırmak için _ayrıntılı günlük kaydı_ özelliğini açın. Ayrıntılı günlük kaydı, bir hata hakkında tüm ayrıntıları kaydeder ve bunları rapora işler. [Ayrıntılı günlük kaydı özelliğinin nasıl açılacağını buradan](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) öğrenin.  
