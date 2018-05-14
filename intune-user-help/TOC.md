@@ -125,6 +125,7 @@
 #### ["Access iş veya okul" aracılığıyla Windows 10 cihazınızı kaydetme](enroll-your-w10-device-access-work-or-school.md)
 #### [Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetme](enroll-your-w81-or-rt81-windows.md)
 #### [Windows Phone 8.1 cihazınızı kaydetme](enroll-your-wp81-windows.md)
+### [Windows için Şirket Portalı’ndan uygulamaları yükleme](install-apps-cpapp-windows.md)
 ### [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
 ### [Cihazınızı şifreleme](encrypt-your-device-windows.md)
 ### [Parolanızı ayarlama veya değiştirme](set-or-change-your-password-windows.md)
