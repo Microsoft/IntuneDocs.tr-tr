@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune ile MTD cihaz uyumluluk ilkesi oluşturma"
-titlesuffix: 
-description: "Bir mobil cihazın şirket kaynaklarına erişip erişemeyeceğini belirlemek için MTD iş ortağı tehdit düzeylerinizi kullanan bir Intune cihaz uyumluluğu ilkesi oluşturun."
-keywords: 
+title: Microsoft Intune ile MTD cihaz uyumluluk ilkesi oluşturma
+titlesuffix: ''
+description: Bir mobil cihazın şirket kaynaklarına erişip erişemeyeceğini belirlemek için MTD iş ortağı tehdit düzeylerinizi kullanan bir Intune cihaz uyumluluğu ilkesi oluşturun.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune ile Mobile Threat Defense (MTD) cihaz uyumluluk ilkesi oluşturma
 
@@ -36,11 +36,11 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
 -   Intune ile MTD tümleştirmesini ayarlama
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>MTD cihaz uyumluluk ilkesi oluşturmak için
+## <a name="to-create-an-mtd-device-compliance-policy"></a>MTD cihaz uyumluluk ilkesi oluşturmak için
 
 1.  [Azure portalı](https://portal.azure.com/)’na gidin ve Intune kimlik bilgilerinizle oturum açın.
 
-2.  **Azure Panosunda**, soldaki menüden **Tüm hizmetler**’i seçtikten sonra, metin kutusu filtresine **Intune** yazın.
+2.  **Azure Panosu**'nda, soldaki menüden **Tüm hizmetler**’i seçtikten sonra, metin kutusu filtresine **Intune** yazın.
 
 3.  **Intune**'u seçin, **Intune Panosu** açılır.
 
@@ -65,7 +65,7 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 > [!IMPORTANT]
 > Office 365 veya diğer hizmetler için koşullu erişim ilkeleri oluşturursanız cihazın uyumluluğu değerlendirilir ve cihazdaki tehdit çözümlenene kadar uyumlu olmayan cihazların kurumsal kaynaklara erişimi engellenir.
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>Bir MTD cihaz uyumluluk ilkesi atamak için
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>MTD cihaz uyumluluk ilkesini atamak için
 
 Kullanıcılara bir cihaz uyumluluk ilkesi atamak için daha önce yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler, **Cihaz uyumluluk ilkeleri** bölmesinde bulunabilir.
 

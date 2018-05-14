@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune kullanarak cihazlara Office 365 uygulamalarını yükleme"
-titlesuffix: 
-description: "Windows 10 cihazlarda Office 365 uygulamalarını yüklemeyi kolaylaştırmak için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin."
-keywords: 
+title: Microsoft Intune kullanarak cihazlara Office 365 uygulamalarını yükleme
+titlesuffix: ''
+description: Windows 10 cihazlarda Office 365 uygulamalarını yüklemeyi kolaylaştırmak için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: da02a71d3801d0e00362617dd5d0cc76ffdd4722
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
+# <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
-Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları atamanızı kolaylaştırır. Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 için Microsoft Visio Pro için de uygulama yükleyebilirsiniz. İstediğiniz uygulamalar Intune konsolundaki uygulama listesinde tek bir girdi olarak gösterilir.
+Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları atamanızı kolaylaştırır. Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 için Microsoft Visio Pro için de uygulama yükleyebilirsiniz. Intune konsolundaki uygulamalar listesinde tek bir girdi olarak görüntülenmesini istediğiniz uygulamalar.
 
 
 ## <a name="before-you-start"></a>Başlamadan önce
@@ -33,80 +33,82 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları
 
 - Bu uygulamaları dağıtacağınız cihazların Windows 10 Creators Update veya üzerini çalıştırıyor olması gerekir.
 - Intune, yalnızca Office 365 paketinden Office uygulamaları eklemeyi destekler.
-- Intune uygulama paketini yüklerken herhangi bir Office uygulaması açıksa yükleme başarısız olabilir ve son kullanıcılar kaydedilmeyen dosyalardaki veriler kaybedebilir.
-- Bu yükleme yöntemi Windows 10S, Windows Home, Windows Team, Windows Holographic ve Windows Holographic for Business çalıştıran cihazlarda desteklenmez.
+- Intune uygulama paketini yüklerken herhangi bir Office uygulaması açıksa yükleme başarısız olabilir ve kullanıcılar kaydedilmeyen dosyalardaki veriler kaybedebilir.
+- Bu yükleme yöntemi Windows 10S, Windows Home, Windows Team, Windows Holographic veya Windows Holographic for Business çalıştıran cihazlarda desteklenmez.
 - Intune, daha önce Intune ile Office 365 uygulamalarını dağıttığınız bir cihaza Microsoft Mağazası’ndan Office 365 masaüstü uygulamalarının (Office Centennial uygulamaları olarak bilinir) yüklenmesini desteklemez. Bu yapılandırmayı yüklerseniz veri kaybına veya bozulmasına neden olabilir.
-- Birden fazla gerekli veya kullanılabilir uygulama ataması aynı anda çalışmaz. Bir uygulama ataması, kendinden önce yüklenmiş diğer uygulama atamalarının üzerine yazar. Örneğin ilk Office uygulamaları kümesi Word’ü barındırıyor ve sonraki barındırmıyorsa, bu durumda Word kaldırılır. Bu durum Visio ve Project uygulamaları için geçerli değildir.
+- Birden fazla gerekli veya kullanılabilir uygulama ataması aynı anda çalışmaz. Bir uygulama ataması, kendinden önce yüklenmiş diğer uygulama atamalarının üzerine yazar. Örneğin ilk Office uygulamaları kümesi Word’ü barındırıyor ve sonraki barındırmıyorsa, Word kaldırılır. Bu koşul Visio ve Project uygulamaları için geçerli değildir.
 
 
 ## <a name="get-started"></a>Başlarken
 
-1.  [Azure portalında](https://portal.azure.com) oturum açın.
-2.  **Tüm Hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3.  **Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-4.  **Mobil uygulamalar** iş yükündeki **Yönet** bölümünden **Uygulamalar**’ı seçin.
-5.  Uygulama listesinin üst kısmında **Ekle**’yi seçin.
-6.  **Uygulama ekle** dikey penceresindeki **Uygulama türü** listesinde **Windows 10** seçeneğini **Office 365 Paketi** altından seçin.
-    Böylece uygulama paketini yapılandırabilirsiniz.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm Hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
+4. **Mobil uygulamalar** iş yükü bölmesindeki **Yönet**'in altında **Uygulamalar**’ı seçin.
+5. **Ekle**’yi seçin.
+6. **Uygulama ekle** bölmesindeki **Uygulama türü** listesinde, **Office 365 Office**'in altında **Windows 10**'u seçin.
+
+Böylece uygulama paketini yapılandırabilirsiniz.
 
 ## <a name="configure-the-app-suite"></a>Uygulama paketini yapılandırma
 
-Bu adımda, cihazlara atamak istediğiniz Office uygulamalarını seçin.
+Cihazlara atamak istediğiniz Office uygulamalarını seçin.
 
-1.  **Uygulama ekle** dikey penceresinde **Uygulama Paketini Yapılandır**’ı seçin.
-2.  **Uygulama Paketini Yapılandır** dikey penceresinde, cihazlara atamak istediğiniz standart Office uygulamalarını seçin. Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 Microsoft Visio Pro için uygulama yükleyebilirsiniz.
-3.  Bitirdiğinizde, **Tamam**’a tıklayın.
+1. **Uygulama Ekle** bölmesinde **Uygulama Paketini Yapılandır**’ı seçin.
+2. **Uygulama Paketini Yapılandır** bölmesinde, cihazlara atamak istediğiniz standart Office uygulamalarını seçin.  
+    Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 Microsoft Visio Pro için uygulama yükleyebilirsiniz.
+3. **Tamam**’ı seçin.
 
 >[!IMPORTANT]
 > Uygulama paketini oluşturduktan sonra paketin özelliklerini düzenleyemezsiniz. Farklı özellikler yapılandırmak için uygulama paketini silin ve yeni bir tane oluşturun.
 
 ## <a name="configure-app-information"></a>Uygulama bilgilerini yapılandırma
 
-Bu adımda, uygulama paketi hakkında bilgi sağlamanız gerekir. Bu bilgiler, Intune’da uygulama paketini bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı uygulamasında paketi bulması kolaylaşır.
+Bu adımda, uygulama paketi hakkında bilgi sağlarsınız. Bu bilgiler, Intune'da uygulama paketini bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı'nda paketi bulması kolaylaşır.
 
-1.  **Uygulama Ekle** dikey penceresinde **Uygulama Paketi Bilgileri**’ni seçin.
-2.  **Uygulama Paketi Bilgileri** dikey penceresinde aşağıdaki bilgileri belirtin:
-    - **Paket Adı** - Uygulama paketinin şirket portalında görüntülenen adını girin. Kullandığınız tüm paket adlarının benzersiz olduğundan emin olun. Aynı uygulama paketi adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
-    - **Paket Açıklaması** - Uygulama paketi için bir açıklama girin. Örneğin dahil etmek üzere seçtiğiniz uygulamaları listeleyebilirsiniz.
-    - **Yayımcı** - Uygulamanın yayımcısının adını girin.
-    - **Kategori** - İsteğe bağlı olarak, yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz kategorilerden birini ya da birkaçını seçin. Kategorileri kullanmak, kullanıcıların şirket portalına gözatarken uygulama paketlerini daha kolay bulabilmesini sağlar.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle** - Uygulama paketini, kullanıcılar uygulamalara gözatarken Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
-    - **Bilgi URL’si** - İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Gizlilik URL’si**- İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Geliştirici** - İsteğe bağlı olarak, uygulama geliştiricinin adını girin.
-    - **Sahip** - İsteğe bağlı olarak, bu uygulamanın sahibi olarak **İK bölümü** gibi bir ad girin.
-    - **Notlar** - Bu uygulamayla ilişkilendirmek isteyebileceğiniz notları girin.
-    - **Logo** - Kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek bir simge yükleyin.
-3.  Bitirdiğinizde, **Tamam**’a tıklayın.
+1. **Uygulama Ekle** bölmesinde **Uygulama Paketi Bilgileri**’ni seçin.
+2. **Uygulama Paketi Bilgileri** bölmesinde aşağıdakileri yapın:
+    - **Paket Adı**: Uygulama paketinin Şirket Portalı’nda görüntülenen adını girin. Kullandığınız tüm paket adlarının benzersiz olduğundan emin olun. Aynı uygulama paketi adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
+    - **Paket Açıklaması**: Uygulama paketi için bir açıklama girin. Örneğin dahil etmek üzere seçtiğiniz uygulamaları listeleyebilirsiniz.
+    - **Yayımcı**: Uygulama yayımcısının adını girin.
+    - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz kategorilerden birini ya da birkaçını seçin. Bu ayar, kullanıcıların şirket portalına göz atarken uygulama paketlerini daha kolay bulabilmesini sağlar.
+    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Bu seçenek uygulama paketini, kullanıcılar uygulamalara göz atarken Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüler.
+    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
+    - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin, örneğin *İK departmanı*.
+    - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+    - **Logo**: Kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek bir simge yükleyin.
+3. **Tamam**’ı seçin.
 
 ## <a name="configure-app-settings"></a>Uygulama ayarlarını yapılandırma
 
-Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Pakete eklenen tüm uygulamalar için bu ayarlar uygulanır.
+Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Pakete eklediğiniz tüm uygulamalar için bu ayarlar uygulanır.
 
-1.  **Uygulama ekle** dikey penceresinde **Uygulama Paketi Ayarları**’nı seçin.
-2.  **Uygulama Paketi Ayarları** dikey penceresinde aşağıdaki bilgileri belirtin:
-    - **Office sürümü** - Office’in hangi sürümünü atamak istediğinizi seçin, 32 bit veya 64 bit. 32 bit sürümünü hem 32 bit hem de 64 bit cihazlara yükleyebilirsiniz ancak 64 bit sürümünü yalnızca 64 bit cihazlara yükleyebilirsiniz.
-    - **Güncelleştirme Kanalı** - Office’in cihazlarda nasıl güncelleştirileceğini seçin. Farklı güncelleştirme kanalları hakkında bilgi için bkz. [Office 365 ProPlus güncelleştirme kanallarına genel bakış](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Aşağıdakilerden birini seçin:
+1. **Uygulama Ekle** bölmesinde **Uygulama Paketi Ayarları**’nı seçin.
+2. **Uygulama Paketi Ayarları** bölmesinde aşağıdakileri yapın:
+    - **Office sürümü**: Office’in hangi sürümünü (32 bit veya 64 bit) atamak istediğinizi seçin. 32 bit sürümünü hem 32 bit hem de 64 bit cihazlara yükleyebilirsiniz ancak 64 bit sürümünü yalnızca 64 bit cihazlara yükleyebilirsiniz.
+    - **Güncelleştirme Kanalı**: Office’in cihazlarda nasıl güncelleştirileceğini seçin. Çeşitli güncelleştirme kanalları hakkında bilgi için bkz. [Office 365 ProPlus güncelleştirme kanallarına genel bakış](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Aşağıdakilerden birini seçin:
         - **Aylık**
         - **Aylık (Hedeflenen)**
         - **Yarı Yıllık**
         - **Yarı Yıllık (Hedeflenen)**
-    - **Uygulama son kullanıcı lisans sözleşmesini otomatik olarak kabul et** - Son kullanıcıların lisans sözleşmesini kabul etmesini gerekli kılmak istemiyorsanız bunu seçin. Ardından Intune, sözleşmeyi otomatik olarak kabul eder.
-    - **Paylaşılan bilgisayar etkinleştirmeyi kullan** - Paylaşılan bilgisayar etkinleştirme, birden çok kullanıcı tek bir bilgisayarı paylaşıyorsa kullanılır. Daha fazla bilgi için bkz. Office 365 için paylaşılan bilgisayar etkinleştirmeye genel bakış.
-    - **Diller** - Office, son kullanıcının bilgisayarında Windows ile yüklenen tüm dillerde otomatik olarak yüklenir. Uygulama paketiyle birlikte ilave diller yüklemek istiyorsanız bunu seçin.
+    - **Uygulama son kullanıcı lisans sözleşmesini otomatik kabul edin**: Son kullanıcıların lisans sözleşmesini kabul etmesinin gerekli olmasını istemiyorsanız bunu seçin. Ardından Intune, sözleşmeyi otomatik olarak kabul eder.
+    - **Paylaşımlı bilgisayar etkinleştirme kullanın**: Birden çok kullanıcı tek bir bilgisayarı kullanıyorsa bu seçeneği belirtin. Daha fazla bilgi için bkz. Office 365 için paylaşılan bilgisayar etkinleştirmeye genel bakış.
+    - **Diller**: Office, son kullanıcının bilgisayarında Windows ile yüklenmiş olan tüm dillerde otomatik olarak yüklenir. Uygulama paketiyle birlikte ilave diller yüklemek istiyorsanız bunu seçin.
 
 >[!IMPORTANT]
 > Uygulama paketini oluşturduktan sonra paketin özelliklerini düzenleyemezsiniz. Farklı özellikler yapılandırmak için uygulama paketini silin ve yeni bir tane oluşturun.
 
 ## <a name="finish-up"></a>Bitirme
 
-İşiniz bittiğinde, **Uygulama Ekle** dikey penceresinde **Ekle**’yi seçin. Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir.
+İşiniz bittiğinde, **Uygulama Ekle** bölmesinde **Ekle**’yi seçin. Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir.
 
-## <a name="error-codes-when-installing-the-app-suite"></a>Uygulama paketini yüklerken çıkabilecek hata kodları
+## <a name="errors-during-installation-of-the-app-suite"></a>Uygulama paketinin yüklenmesi sırasında karşılaşılan hatalar
 
-Karşınıza çıkabilecek hata kodları ve anlamları, aşağıdaki tabloda listelenmiştir.
+Karşınıza çıkabilecek yaygın hata kodları ve anlamları, aşağıdaki tablolarda listelenmiştir.
 
-### <a name="status-for-office-csp"></a>Office CSP durumu:
+### <a name="status-for-office-csp"></a>Office CSP durumu
 
 ||||
 |-|-|-|
@@ -116,13 +118,13 @@ Karşınıza çıkabilecek hata kodları ve anlamları, aşağıdaki tabloda lis
 |CertVerifyCertificateChainPolicy hata kodu|-|İndirilen Office Dağıtım Aracı için sertifika denetimi başarısız|    
 |997|Süren İş|Yükleniyor|
 |0|Yükleme sonrası|Yükleme başarılı|    
-|1603 (ERROR_INSTALL_FAILURE)|-|Önkoşul denetimi başarısız, örneğin:<br>- SxS (2016 MSI yüklüyken yüklenmeye çalışıldı)<br>- sürüm uyumsuzluğu<br>- vb.|     
-|0x8000ffff (E_UNEXPECTED)|-|Makinede Tıkla-Çalıştır Office yokken kaldırılmaya çalışıldı.|    
-|17002|-|Senaryoyu tamamlama başarısız (yükleme). Olası nedenler:<br>- Yükleme kullanıcı tarafından iptal edildi<br>- Yükleme başka bir yükleme tarafından iptal edildi<br>- Yükleme sırasında disk alanı tükendi<br>- Bilinmeyen dil kimliği|
+|1603 (ERROR_INSTALL_FAILURE)|-|Önkoşul denetimi başarısız, örneğin:<ul><li>SxS (2016 MSI yüklüyken yüklenmeye çalışıldı)</li><li>Sürüm uyumsuzluğu</li><li>Diğerleri</li></ul>|  
+|0x8000ffff (E_UNEXPECTED)|-|Makinede Tıkla-Çalıştır Office yokken kaldırılmaya çalışıldı|     
+|17002|-|Senaryoyu tamamlama başarısız (yükleme). Olası nedenler:<ul><li>Yükleme kullanıcı tarafından iptal edildi</li><li>Yükleme, başka bir yükleme tarafından iptal edildi</li><li>Yükleme sırasında disk alanı tükendi</li><li>Bilinmeyen dil kimliği</li></ul>|
 |17004|-|Bilinmeyen SKU’lar|   
 
 
-### <a name="office-deployment-tool-error-codes"></a>Office Dağıtım Aracı Hata Kodları
+### <a name="office-deployment-tool-error-codes"></a>Office Dağıtım Aracı hata kodları
 
 |||||
 |-|-|-|-|
@@ -138,4 +140,4 @@ Karşınıza çıkabilecek hata kodları ve anlamları, aşağıdaki tabloda lis
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Şimdi uygulamaları seçtiğiniz gruplara atayabilirsiniz, bkz. [Uygulamaları gruplara atama](/intune-azure/manage-apps/deploy-apps).
+- Uygulamaları seçtiğiniz gruplara atamak için bkz. [Uygulamaları gruplara atama](/intune-azure/manage-apps/deploy-apps).

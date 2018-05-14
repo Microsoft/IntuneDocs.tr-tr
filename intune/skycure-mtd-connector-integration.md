@@ -1,110 +1,151 @@
 ---
-title: "Microsoft Intune ile Skycure tümleştirmesini ayarlama"
-titlesuffix: 
-description: "Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Microsoft Intune ile Skycure Mobile Threat Defense (MTD) çözümünü ayarlama."
-keywords: 
+title: Microsoft Intune ile Symantec tümleştirmesini ayarlama
+titlesuffix: ''
+description: Şirket kaynaklarınıza mobil cihaz erişimini denetlemek için Microsoft Intune ile Symantec Endpoint Protection Mobile çözümünü ayarlama.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: e43e3ff09e30a934e22b2553b8ee7c8691d22bb3
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="set-up-the-skycure-integration-with-intune"></a>Intune ile Skycure tümleştirmesini kurma
+# <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile'ın Intune ile tümleştirmesini ayarlama
 
-Skycure Mobile Threat Defense çözümünü Intune ile tümleştirmek için aşağıdaki adımları tamamlayın. Çoklu Oturum Açma özelliklerini kullanabilmek için Azure AD’ye Skycure uygulamalarını eklemelisiniz.
+Symantec Endpoint Protection Mobile (SEP Mobile) çözümünü Intune ile tümleştirmek için aşağıdaki adımları tamamlayın. Çoklu Oturum Açma özelliklerini kullanabilmek için Azure AD’ye SEP Mobile uygulamalarını eklemelisiniz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-### <a name="azure-ad-account-used-to-integrate-intune-and-skycure"></a>Intune ile Skycure’u tümleştirmek için kullanılan Azure AD hesabı
+### <a name="azure-ad-account-used-to-integrate-intune-and-sep-mobile"></a>Intune ile SEP Mobile'ı tümleştirmek için kullanılan Azure AD hesabı
 
--   Skycure Temel kurulum işlemine başlamadan önce, [Skycure Yönetim konsolunda](https://aad.skycure.com) Azure AD hesabınızın düzgün yapılandırıldığından emin olun.
+-   SEP Mobile Temel kurulum işlemine başlamadan önce, [Symantec Endpoint Protection Mobile Yönetim konsolunda](https://aad.skycure.com) Azure AD hesabınızın düzgün yapılandırıldığından emin olun.
+- Tümleştirmeyi gerçekleştirmek için Azure AD hesabının bir genel yönetici hesabı olması gerekir.
+### <a name="network-setup"></a>Ağ Kurulumu
+
+Symantec'in [Ağ yapılandırmanızı ayarlama](https://portal.skycure.com/articles/Documentation/Setting-up-your-network-configuration-26-8-2016) makalesine bakarak ağınızın SEP Mobile kurulumuyla tümleştirme için düzgün yapılandırıldığından emin olabilirsiniz.
 
 ### <a name="full-integration-vs-read-only"></a>Tam tümleştirme - Salt okunur
 
-Skycure, Intune ile iki tümleştirme modunu destekler:
+SEP Mobile, Intune ile iki tümleştirme modunu destekler:
 
--   **Salt okunur tümleştirme (Temel kurulum):** Yalnızca Azure Active Directory’den cihazların envanterini çıkarır ve Skycure konsolunu bunlarla doldurur.
+-   **Salt okunur tümleştirme (Temel kurulum):** Yalnızca Azure Active Directory’den cihazların envanterini çıkarır ve Symantec Endpoint Protection Mobile Yönetim konsolunu bunlarla doldurur.
 <br>
-    -   Skycure Yönetim konsolunda **Cihazların durumunu ve riskini Intune’a raporla** ve **Güvenlik olaylarını da Intune’a raporla** kutuları seçili değilse tümleştirme salt okunur moddadır ve dolayısıyla Intune’da cihazların durumunu (uyumlu veya uyumsuz) asla değiştirmez.
+    -   Symantec Endpoint Protection Mobile Yönetim konsolunda **Cihazların durumunu ve riskini Intune’a raporla** ve **Güvenlik olaylarını da Intune’a raporla** kutuları seçili değilse tümleştirme salt okunur moddadır ve dolayısıyla Intune’da cihazların durumunu (uyumlu veya uyumsuz) asla değiştirmez.
 <br></br>
--   **Tam tümleştirme:** Skycure’un riskli cihazları ve güvenlik olayı ayrıntılarını Intune’a raporlamasına olanak tanır; bu da, iki bulut hizmeti arasında çift yönlü bir iletişim oluşturur.
+-   **Tam tümleştirme:** SEP Mobile'ın riskli cihazları ve güvenlik olayı ayrıntılarını Intune’a raporlamasına olanak tanır; bu da, iki bulut hizmeti arasında çift yönlü bir iletişim oluşturur.
 
-### <a name="how-the-skycure-apps-are-used-with-azure-ad-and-intune"></a>Skycure uygulamaları Azure AD ve Intune’la birlikte nasıl kullanılır?
+### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile uygulamaları Azure AD ve Intune ile nasıl kullanılır?
 
 -   **iOS uygulaması:** Son kullanıcıların iOS uygulaması kullanarak Azure AD’de oturum açmasına olanak tanır.
 
 -   **Android uygulaması:** Son kullanıcıların Android uygulaması kullanarak Azure AD’de oturum açmasına olanak tanır.
 
--   **Yönetim uygulaması:** Bu, Intune ile hizmetler arası iletişime olanak tanıyan Skycure Azure AD çok kiracılı uygulamasıdır.
+-   **Yönetim uygulaması:** Bu, Intune ile hizmetler arası iletişime olanak tanıyan SEP Mobile Azure AD çok kiracılı uygulamasıdır.
 
-## <a name="to-set-up-the-read-only-integration-between-intune-and-skycure"></a>Intune ile Skycure arasında salt okunur tümleştirme ayarlamak için
+## <a name="to-set-up-the-read-only-integration-between-intune-and-sep-mobile"></a>Intune ile SEP Mobile arasında salt okunur tümleştirme ayarlamak için
 
 > [!IMPORTANT]
-> Skycure yönetici kimlik bilgileri, Azure Active Directory’de geçerli bir kullanıcıya ait olması gereken bir e-postadır; böyle olmazsa, oturum açılamaz. Skycure, Çoklu Oturum Açma (SSO) kullanarak yöneticisinin kimliğini doğrulamak için Azure Active Directory kullanır.
+> SEP Mobile yönetici kimlik bilgileri, Azure Active Directory’de geçerli bir kullanıcıya ait bir e-postadan oluşmalıdır; aksi takdirde, oturum açılamaz. SEP Mobile, Çoklu Oturum Açma (SSO) kullanarak yöneticisinin kimliğini doğrulamak için Azure Active Directory kullanır.
 
-1.  [Skycure Yönetim Konsolu](https://aad.skycure.com)’na gidin.
+1.  [Symantec Endpoint Protection Mobile Management Console](https://aad.skycure.com)'a gidin.
 
-2.  **Skycure yönetici kimlik bilgilerinizi** girin ve **Devam**’a tıklayın.
+2.  **SEP Mobile yönetici kimlik bilgilerinizi** girin ve **Devam**'ı seçin.
 
-3.  **Ayarlar**’a gidin, **Intune Tümleştirmesi**’nin altında **Temel Kurulum**’u seçin.
+3.  **Ayarlar**’a gidin ve **Intune Tümleştirmesi**’nin altında **Temel Kurulum**’u seçin.
 
-4.  **iOS Uygulaması** etiketinde **Active Directory’ye Ekle**’ye tıklayın.
+4.  **iOS Uygulaması**'nın yanında **Active Directory'ye Ekle**'yi seçin.
 
-    ![Skycure Yönetim konsolunda iOS uygulamasının resmi](./media/skycure-setup-1.png)
+    ![[Symantec Endpoint Protection Mobile Management Console] üzerinde iOS uygulamasının resmi](./media/symantec-portal-basic-add.png)
 
-5.  Oturum açma sayfası açılır; Intune kimlik bilgilerinizi girin ve **Kabul Et**’e tıklayın.
+5.  Oturum açma sayfası açıldığında Intune kimlik bilgilerinizi girin ve **Kabul Et**’i seçin.
 
-    ![iOS uygulaması Intune oturum açma istemi resmi](./media/skycure-setup-2.png)
+    ![iOS uygulaması Intune oturum açma istemi resmi](./media/symantec-portal-basic-accept.png)
 
-6.  Uygulama Azure AD’ye eklendikten sonra, Skycure Yönetim konsolunda uygulamanın Azure AD’ye başarıyla eklendiğine ilişkin bir gösterge görebilirsiniz.
+6.  Uygulama Azure AD'ye eklendikten sonra, uygulamanın başarıyla eklendiğine ilişkin bir gösterge görürsünüz.
 
-    ![iOS uygulaması tamamlanma ekranı resmi](./media/skycure-setup-3.png)
+    ![iOS uygulaması tamamlanma ekranı resmi](./media/symantec-portal-basic-added.png)
 
-> [!NOTE]
-> **Skycure Android** ve **Yönetim** uygulamaları için de ayrı işlemi yineleyin.
+7. **SEP Mobile Android** ve **Yönetim** uygulamaları için bu adımları yineleyin.
 
-### <a name="add-an-azure-ad-security-group-into-skycure"></a>Skycure’a Azure AD Güvenlik grubu ekleme
+### <a name="add-an-azure-ad-security-group-into-sep-mobile"></a>SEP Mobile'a Azure AD Güvenlik grubu ekleme
 
-Skycure çalıştıran tüm cihazları yer aldığı Azure AD güvenlik grubunu eklemelisiniz.
+SEP Mobile çalıştıran tüm cihazların yer aldığı Azure AD güvenlik grubunu eklemelisiniz.
 
--  Skycure çalıştıran cihazların tüm güvenlik gruplarını girin ve seçin, ardından **Değişiklikleri uygula**’ya tıklayın.
+-  SEP Mobile çalıştıran cihazların tüm güvenlik gruplarını girin ve seçin, ardından değişiklikleri kaydedin.
 
-    ![Skycure Yönetim konsolu güvenlik grubunun nereden yapılandırılacağını gösteren resim](./media/skycure-setup-4.png)
+    ![SEP Mobile uygulamaları için kullanıcı gruplarını gösteren resim](./media/symantec-portal-basic-groups.png)   
 
-Skycure, Mobile Threat Defense hizmetini çalıştıran cihazları Azure AD güvenlik gruplarıyla eşitler.
+SEP Mobile, Mobile Threat Defense hizmetini çalıştıran cihazları Azure AD güvenlik gruplarıyla eşitler.
 
-![Skycure yönetim konsolunda güvenlik grubu yapılandırmasının tamamlandığını gösteren resim](./media/skycure-setup-5.png)
+![SEP Mobile yönetim konsolunda güvenlik grubu yapılandırmasının tamamlandığını gösteren resim](./media/symantec-portal-basic-status.png)
 
-## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>Intune ile Skycure arasında tam tümleştirmeyi ayarlama
+## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>Intune ile SEP Mobile arasında tam tümleştirmeyi ayarlamak için
 
-1.  [Skycure Yönetim Konsolu](https://aad.skycure.com)’na gidin.
+### <a name="retrieve-the-directory-id-in-azure-ad"></a>Azure AD'de Dizin Kimliğini alma
 
-2.  **Skycure yönetici kimlik bilgilerinizi** girin ve **Devam**’a tıklayın.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 
-3.  **Ayarlar**’a gidin, **Intune Tümleştirmesi**’nin altında **Tam Tümleştirme**’yi seçin.
+2. Arama kutusuna "Active Directory" yazın ve ardından **Azure Active Directory**'yi seçin.
 
-4.  Aşağıdaki ayarları denetleyin:
+3. **Özellikler**’i seçin.
 
-    a.  Cihazların durumunu ve riskini Intune’a raporla
+4. **Dizin Kimliği**'nin yanında, kopyala simgesini seçin ve bunu güvenli bir konuma yapıştırın. Bu kimliğe sonraki bir adımda ihtiyacınız olacaktır.
 
-    b.  Güvenlik olaylarını da Intune'a raporla
+    ![Azure portalında Dizin Kimliğini gösteren resim](./media/symantec-azure-portal-directory-ID.png)
 
-5.  **Değişiklikleri uygula**’ya tıklayın.
+### <a name="optional-create-a-dedicated-security-group-for-devices-that-need-to-run-the-sep-mobile-apps"></a>(İsteğe bağlı) SEP Mobile uygulamalarını çalıştırması gereken cihazlar için ayrılmış bir Güvenlik Grubu oluşturma
+1. [Azure portalında](https://portal.azure.com), **Yönet**'in altında **Kullanıcılar ve gruplar**'ı ve ardından **Tüm gruplar**'ı seçin.
 
-    ![Skycure tam tümleştirmesinin tamamlandığını gösteren resim](./media/skycure-setup-6.png)
+2. **Ekle** düğmesini seçin. Grup için bir **Ad** yazın. **Üyelik türü**'nün altında **Atanmış** öğesini seçin.
 
+3. **eler** dikey penceresinde grup üyelerini seçin ve sonra da **Seç** düğmesini seçin.
+
+4. **Grup** dikey penceresinde **Oluştur**'u seçin.
+
+### <a name="set-up-the-integration-between-symantec-endpoint-protection-mobile-and-intune"></a>Symantec Endpoint Protection Mobile ile Intune arasında tümleştirmeyi ayarlama
+
+1.  [Symantec Endpoint Protection Mobile Management Console](https://aad.skycure.com)'a gidin.
+
+2.  **SEP Mobile yönetici kimlik bilgilerinizi** girin ve **Devam**'ı seçin.
+
+3.  **Ayarlar** > **Tümleştirmeler** > **Intune** > **EMM Tümleştirme Seçimi** bölümüne gidin.
+
+4. **Dizin Kimliği** kutusunda, önceki bölümde Azure Active Directory'den kopyaladığınız Dizin Kimliğini yapıştırın ve ayarları kaydedin.
+
+    ![SEP Mobile portalında Dizin Kimliğini gösteren resim](./media/symantec-portal-directory-ID.png)     
+
+5. **Ayarlar** > **Tümleştirmeler** > **Intune** > **Temel Kurulum** bölümüne gidin.
+
+6. **iOS Uygulaması**'nın yanında **Active Directory'ye Ekle** düğmesini seçin.
+
+    ![iOS uygulamasını Active Directory'ye eklemeyi gösteren resim](./media/symantec-portal-basic-add.png)   
+
+7.  Dizini yöneten Office 365 hesabının Azure Active Directory kimlik bilgilerini kullanarak oturum açın.
+
+8.  SEP Mobile iOS uygulamasını Azure Active Directory'ye eklemek için **Kabul Et** düğmesini seçin.
+
+    ![Kabul et düğmesini gösteren resim](./media/symantec-portal-basic-accept.png)     
+
+9.  **Android uygulaması** ve **Yönetim Uygulaması** için de ayrı işlemi yineleyin.
+
+10. SEP Mobile uygulamalarını çalıştırmasını gereken tüm kullanıcı gruplarını, örneğin daha önce oluşturduğunuz güvenlik grubunu seçin.
+
+    ![SEP Mobile uygulamaları için kullanıcı gruplarını gösteren resim](./media/symantec-portal-basic-groups.png)   
+
+11.  SEP Mobile seçili gruplardaki cihazları eşitler ve Intune'a bilgileri raporlamayı başlatır. Tam Tümleştirme bölümünde bu verileri görüntüleyebilirsiniz. **Ayarlar** > **Tümleştirmeler** > **Intune** > **Tam Tümleştirme** bölümüne gidin.
+
+     ![SEP Mobile tam tümleştirmesinin tamamlandığını gösteren resim](media/symantec-portal-basic-status.PNG)
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Skycure uygulamalarını ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+[SEP Mobile uygulamalarını ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)

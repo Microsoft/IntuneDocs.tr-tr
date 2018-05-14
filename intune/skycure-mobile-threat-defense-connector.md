@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune ile Skycure bağlayıcısı"
-titlesuffix: 
-description: "Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Skycure Mobile Threat Defense’i Intune ile tümleştirme hakkında bilgi edinin."
-keywords: 
+title: Microsoft Intune ile Symantec bağlayıcısı
+titlesuffix: ''
+description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Symantec Endpoint Protection Mobile’ı Intune ile tümleştirme hakkında bilgi edinin.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3148a24b077dfd491ce06fcf708a81de7d12dc1
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 577eff3a5f3965065a4066973ea8c61160ab4563
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense bağlayıcısı
+# <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile bağlayıcısı
 
-Microsoft Intune ile tümleşik çalışan mobil tehdit koruması çözümü Skycure tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Skycure çalıştıran cihazlardan toplanan ve aşağıdakileri içeren telemetriye göre değerlendirilir:
+Microsoft Intune ile tümleşik çalışan mobil tehdit savunması çözümü Symantec Endpoint Protection Mobile (SEP Mobile) tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, SEP Mobile çalıştıran cihazlardan toplanan ve aşağıdakileri içeren telemetriye göre değerlendirilir:
 
 -   Fiziksel savunma
 
@@ -33,21 +33,21 @@ Microsoft Intune ile tümleşik çalışan mobil tehdit koruması çözümü Sky
 
 -   Güvenlik açıkları savunması
 
-Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Skycure risk değerlendirmesi temel alan koşullu erişim ilkelerini yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumlu olmayan cihazların şirket kaynaklarına erişimine izin vermek veya erişimini engellemek için bu ilkeler kullanılabilir.
+Intune cihaz uyumluluk ilkeleri aracılığıyla SEP Mobile risk değerlendirmesini etkinleştirebilir ve ardından algılanan tehditler temelinde şirket kaynaklarına uyumlu olmayan cihaz erişimine izin vermek veya bu erişimi engellemek için koşullu erişim ilkelerini kullanabilirsiniz.
 
-## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Intune ve Skycure şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
+## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune ve SEP Mobile şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
-Android veya iOS için Skycure mobil uygulaması dosya sistemi, ağ yığını, cihaz ve uygulama telemetrisini (varsa) yakalar ve mobil tehditlere karşı cihazın riskini değerlendirmek için bunları Skycure bulut hizmetine gönderir.
+Android veya iOS için SEP Mobile uygulaması dosya sistemi, ağ yığını, cihaz ve uygulama telemetrisini (varsa) yakalar ve mobil tehditlere karşı cihazın riskini değerlendirmek için bunları Symantec bulut hizmetine gönderir.
 
-Intune cihaz uyumluluğu ilkesi, Skycure risk değerlendirmesini temel alan bir Skycure Mobile Threat Defense’e yönelik bir kural içerir. Bu kural etkinleştirildiğinde Intune, cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
+Intune cihaz uyumluluğu ilkesi, SEP Mobile risk değerlendirmesini temel alan bir SEP Mobile’a yönelik bir kural içerir. Bu kural etkinleştirildiğinde Intune, cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
 
-Cihaz uyumsuz bulunursa Exchange Online ve SharePoint Online gibi kaynaklara erişimi engellenir. Engellenen cihazlardaki kullanıcılar Skycure mobil uygulamasından sorunu çözmek ve şirket kaynaklarına yeniden erişim kazanmak için yol gösteren yönergeler alır.
+Cihaz uyumsuz bulunursa Exchange Online ve SharePoint Online gibi kaynaklara erişimi engellenir. Engellenen cihazlardaki kullanıcılar SEP Mobile uygulamasından sorunu çözmek ve şirket kaynaklarına yeniden erişim kazanmak için yol gösteren yönergeler alır.
 
-Intune, Skycure ile iki tümleştirme modunu destekler:
+Intune, SEP Mobile ile iki tümleştirme modunu destekler:
 
--   **Temel kurulum**, Intune’daki cihazlar için Skycure görünürlüğüne olanak tanıyan salt okunur modudur.
+-   **Temel kurulum**, Intune’daki cihazlar için SEP Mobile görünürlüğüne olanak tanıyan salt okunur modudur.
 
--   **Tam tümleştirme**, Skycure’un Intune’a cihazın risk ve güvenlik olayı ayrıntılarını raporlamasına olanak tanır.
+-   **Tam tümleştirme**, SEP Mobile’ın Intune’a cihazın risk ve güvenlik olayı ayrıntılarını raporlamasına olanak tanır.
 
 ## <a name="sample-scenarios"></a>Örnek senaryolar
 
@@ -65,11 +65,11 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
-![Kötü amaçlı uygulamalar algılandı](./media/skycure-arch-1.png)
+![Kötü amaçlı uygulamalar algılandı](./media/symantec-arch-1.png)
 
 **Düzeltme ile erişim izni verildi:**
 
-![Kötü amaçlı uygulamalar algılandıktan sonra düzeltme ile erişim izni verildi](./media/skycure-arch-2.png)
+![Kötü amaçlı uygulamalar algılandıktan sonra düzeltme ile erişim izni verildi](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
 
@@ -77,11 +77,11 @@ Ağda **bağlantıyı izinsiz izleme** gibi tehditleri algılayın ve cihaz risk
 
 **Wi-Fi üzerinden ağ erişimini engelleme:**
 
-![Wi-Fi üzerinden ağ erişimini engelleme](./media/skycure-arch-3.png)
+![Wi-Fi üzerinden ağ erişimini engelleme](./media/symantec-arch-3.png)
 
 **Düzeltme ile erişim izni verildi:**
 
-![Düzeltme ile erişim izni verildi](./media/skycure-arch-4.png)
+![Düzeltme ile erişim izni verildi](./media/symantec-arch-4.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme
 
@@ -89,11 +89,11 @@ Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine
 
 **Ağ tehditleri algılandığında SharePoint Online’ı engelle:**
 
-![Ağ tehditleri algılandığında SharePoint Online’ı engelleme](./media/skycure-arch-5.png)
+![Ağ tehditleri algılandığında SharePoint Online’ı engelleme](./media/symantec-arch-5.png)
 
 **Düzeltme ile erişim izni verildi:**
 
-![Sharepoint için düzeltme ile erişim izni verme örneği](./media/skycure-arch-6.png)
+![Sharepoint için düzeltme ile erişim izni verme örneği](./media/symantec-arch-6.png)
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
@@ -107,18 +107,18 @@ Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine
 
 -   Microsoft Intune aboneliği
 
--   Skycure Mobile Threat Defense aboneliği
+-   Symantec Endpoint Protection Mobile aboneliği
 
-Daha fazla bilgi için [Skycure web sitesini](https://www.skycure.com/skycure-microsoft-integration/) gözden geçirin.
+Daha fazla bilgi için [Symantec web sitesini](https://www.skycure.com/skycure-microsoft-integration/) gözden geçirin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Burada, Intune’u Skycure ile tümleştirme işlemini tamamlamak için gereken adımlar verilmiştir:
+Burada, Intune’u SEP Mobile ile tümleştirme işlemini tamamlamak için gereken adımlar verilmiştir:
 
-- [Intune ile Skycure tümleştirmesi kurma](skycure-mtd-connector-integration.md)
+- [Intune ile SEP Mobile tümleştirmesini ayarlama](skycure-mtd-connector-integration.md)
 
-- [Skycure uygulamaları, Microsoft Authenticator ve iOS uygulama yapılandırma ilkesi ekleme ve atama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [ uygulamaları, Microsoft Authenticator ve iOS uygulama yapılandırma ilkesi ekleme ve atama](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Intune ile Skycure cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)
+- [Intune ile SEP Mobile cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)
 
-- [Intune’da Skycure MTD bağlayıcısını etkinleştirme](mtd-connector-enable.md)
+- [Intune’da SEP Mobile MTD bağlayıcısını etkinleştirme](mtd-connector-enable.md)

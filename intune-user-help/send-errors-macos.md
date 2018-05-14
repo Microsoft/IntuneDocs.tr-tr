@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/07/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,30 +17,34 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa294e5df63106f949da94aec766c04839e0171f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 52431d900ee9abe71458b8b22d8a0946f22ce583
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Yönetilen macOS cihazınızla ilgili hataları doğru kişilere gönderme
 
-Şirket Portalı uygulamasını kullanırken macOS cihazınızda hata alırsanız, şirketinizin destek biriminin sorunu gidermesine yardımcı olmak için bilgi gönderebilirsiniz.
+Şirket Portalı uygulamasında bazen açıklanamayan hatalar oluşur. Hata oluştuğunda, hatanın ayrıntılarını şirketiniz destek görevlisine e-postayla gönderebilirsiniz. Bu ayrıntılar, sorununuzu gidermek için gerekli bağlamı sağlayacaktır.
 
 ## <a name="send-errors-to-your-company-support"></a>Hataları şirketinizin desteğine gönderme
 
- Hata bilgilerini şirketinizin desteğine farklı yollarla gönderebilirsiniz:
+Şirket Portalı uygulamasındaki bir hatanın ayrıntılarını göndermek için:
 
--   Hata uyarı iletilerinde **Rapor**’a tıklayın.
+-   Aldığınız hata iletisinde **Rapor**'a tıklayın.
 
--   Şirket Portalı uygulamasının **Yardım** menüsünde **Tanılama Raporunu Kaydet**'e tıklayın. Dosyanın kaydedileceği yeri seçin. Şirketinize bağlı olarak, bu dosyayı şirketinizin desteğine e-postayla gönderebilir veya karşıya yükleyebilirsiniz.
+-   **Yardım** menüsü > **Tanılama Raporunu Kaydet**'e tıklayın. Dosyanın kaydedileceği yeri seçin. Ardından bu dosyayı şirketinizin destek görevlisine e-postayla gönderin veya yükleyin.
 
-- E-posta uygulamanız zaten yapılandırıldıysa, **Yardım** > **Tanılama Raporu Gönder**'e giderek de tanılama raporunu gönderebilirsiniz.
+-   E-posta uygulamanız yapılandırıldıysa, **Yardım** > **Tanılama Raporu Gönder**'e giderek tanılama raporunu gönderebilirsiniz. Günlükler karşıya yüklendikten sonra **E-posta ayrıntıları**'na tıklayın.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Hataları, macOS cihazları için Şirket Portalı geliştiricilerine gönderme
 
-Şirket Portalı uygulaması, bazen beklenmedik şekilde davranabilir. Bunlar, uygulama geliştiricilerinin öğrenmek istedikleri sorunlardır. Çünkü böylece, uygulamanın size daha iyi hizmet vermesini ve garip davranışların bir daha tekrarlanmamasını sağlayabiliriz. Bu bilgiler, cihazınızda _tanılama raporu_ adlı özel bir belgede tutulur.
+Şirket Portalı uygulaması bazen beklenmedik bir şekilde kapanabilir. Beklenmedik davranışlar ortaya çıktığında uygulama geliştiricileri bunları bildirmenizi ister. Onlar kök nedeni bulmak ve gelecekte yeniden oluşmasını önlemek için hata ayrıntılarını kullanır. Bu hatalar, cihazınızda _tanılama günlüğü_ adlı özel bir belgede ayrıntılı olarak bulunur. Şirket Portalı ekibinin sorunu tanılaması için Şirket Portalı’na özgü günlüklere ihtiyacı vardır.
 
-Şirket Portalı uygulamasını geliştiren Microsoft ekibine tanılama raporları göndermeniz gerekiyorsa, sorunun kök nedenini tanılamaya yardımcı olmak için bazı bilgiler sağlamalısınız. Bunu şirketinizin destek ekibine göndermek yerine, <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">bu e-posta şablonunu</a> kullanarak Microsoft'a gönderin.
+Günlükleri Microsoft’a göndermek için:
+
+1.  Şirket Portalı uygulamasını açın.
+2.  **Yardım** menüsü > **Tanılama Raporunu Gönder**'e tıklayın.  Günlükler karşıya yüklendikten sonra, bir olay kimliği alırsınız. Kimliği kopyalayın ve kaydedin.
+3.  <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">Bu şablonu</a> kullanarak Microsoft'a e-postayla gönderin.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

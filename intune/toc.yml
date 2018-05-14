@@ -255,6 +255,8 @@
                   href: lob-apps-windows-phone.md
                 - name: Windows LOB uygulaması
                   href: lob-apps-windows.md
+                - name: macOS LOB uygulamaları
+                  href: lob-apps-macos.md
             - name: Web uygulamaları
               href: web-app.md
             - name: Yerleşik uygulamalar
@@ -486,10 +488,10 @@
               items:
                 - name: Lookout ve Intune tümleştirmesi
                   href: lookout-mtd-connector-integration.md
-            - name: Skycure’u ayarlama
+            - name: Symantec'i ayarlama
               href: skycure-mobile-threat-defense-connector.md
               items:
-                - name: Skycure ve Intune tümleştirmesi
+                - name: Symantec ve Intune tümleştirmesi
                   href: skycure-mtd-connector-integration.md
             - name: Check Point’i ayarlama
               href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md

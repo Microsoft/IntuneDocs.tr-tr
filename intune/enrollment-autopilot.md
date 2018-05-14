@@ -1,30 +1,43 @@
 ---
-title: "Windows AutoPilot Dağıtım Programını kullanarak cihazları kaydetme"
+title: Windows AutoPilot Dağıtım Programını kullanarak cihazları kaydetme
 titleSuffix: Microsoft Intune
-description: "Windows AutoPilot Dağıtım programını kullanarak Windows 10 cihazları kaydetmeyi öğrenin."
-keywords: 
+description: Windows AutoPilot Dağıtım programını kullanarak Windows 10 cihazları kaydetmeyi öğrenin.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4522be0b636a72844fa6177fbb35d3350cfbd00e
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 934b80d1c174c25d37e30695f46afc88c8d8bfc3
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Windows AutoPilot Dağıtım Programını kullanarak Windows cihazlarını kaydetme
 Windows AutoPilot Dağıtım Programı, cihaz sağlamayı kolaylaştırır. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve AutoPilot ile özel işletim sistemi görüntülerini derleme, bakım ve uygulama zahmetine katlanmanız gerekmeden son kullanıcılarınıza yeni cihazlar verebilirsiniz. AutoPilot cihazları yönetmek için Intune kullandığınızda cihazlar kaydedildikten sonra ilkeler, profiller, uygulamalar gibi özellikleri yönetebilirsiniz. Faydalar, senaryolar ve önkoşullara genel bir bakış için bkz. [Windows AutoPilot’a Genel Bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 ## <a name="prerequisites"></a>Önkoşullar
-- [Cihazlar kuruluşunuza kayıtlı olmalıdır](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [Windows otomatik kayıt etkin olmalıdır](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium aboneliği olmalıdır](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="add-devices"></a>Cihazları ekleme
+
+Bilgilerini içeren CSV dosyasını içeri aktararak Windows AutoPilot cihazlarını ekleyebilirsiniz.
+
+1. [Azure portalında Intune'da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Cihazlar** > **İçeri Aktar**'ı seçin.
+
+    ![Windows AutoPilot cihazlarının ekran görüntüsü](media/enrollment-autopilot/autopilot-import-device.png)
+
+2. **Windows Autopilot cihazları ekleme** bölümünde, eklemek istediğiniz cihazların seri numaralarını, Windows ürün kimliklerini ve donanım karma değerlerini içeren CSV dosyasına gidin.
+
+    ![Windows AutoPilot cihazlarını ekleme işleminin ekran görüntüsü](media/enrollment-autopilot/autopilot-import-device2.png)
+
+3. Cihaz bilgilerini içeri aktarmayı başlatmak için **İçeri Aktar**'ı seçin. Bu işlem birkaç dakika sürebilir.
 
 ## <a name="synchronize-devices"></a>Cihazları eşitleme
 Kayıtlı cihazlarınızı yapılandırmak için Intune ile eşitleyin.
@@ -108,6 +121,16 @@ Windows AutoPilot’ta atanmamış cihazlar için bir uyarı görüntüleyebilir
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune**'un altında **Cihaz kaydı**'nı seçin.
 4. Uyarıyı görüntülemek için **Genel Bakış**’ı seçin. Uyarıya tıklayarak AutoPilot cihazların listesine ulaşın.  
+
+## <a name="delete-autopilot-devices"></a>AutoPilot cihazlarını silme
+
+Kayıtlı olmayan Windows AutoPilot cihazlarını silebilirsiniz. Cihazların kaydını kaldırabilir ve ardından bunları silebilirsiniz.
+
+1. [Azure portalında Intune'da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Cihazlar**'ı seçin.
+
+2. **Windows AutoPilot cihazları** bölümünde, silmek istediğiniz cihazları seçin ve sonra da **Sil**'i seçin.
+
+3. **Evet**'i seçerek silme işlemini onaylayın. Silme işlemi birkaç dakika sürebilir.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

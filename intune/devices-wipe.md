@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
 
@@ -58,7 +58,9 @@ Cihaz açık ve bağlı olduğu sürece, **Fabrika sıfırlaması** eyleminin t�
 
 ## <a name="remove-company-data"></a>Şirket verilerini kaldırma
 
-**Şirket verilerini kaldır** eylemi, (uygunsa) yönetilen uygulama verilerini, ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. **Şirket verilerini kaldır**, kullanıcının kişisel verilerini cihazda bırakır. Cihaz Intune yönetiminden kaldırılır. 
+**Şirket verilerini kaldır** eylemi, (uygunsa) yönetilen uygulama verilerini, ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. Cihaz Intune yönetiminden kaldırılır. Bu durum cihazın bir sonraki sefer iade edildiğinde ve **Şirket verilerini kaldır** uzak eylemini aldığında ortaya çıkar.
+
+**Şirket verilerini kaldır**, kullanıcının kişisel verilerini cihazda bırakır.  
 
 Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve **Şirket verilerini kaldır** eyleminin şirket verileri kaldırıldıktan sonra cihazda kalan veriler üzerindeki etkisi açıklanır.
 
@@ -123,13 +125,19 @@ Bir Android for Work cihazından şirket verilerinin kaldırılması, cihazdaki 
 
 ### <a name="remove-company-data"></a>Şirket verilerini kaldırma
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Cihazlar** bölmesinde **Tüm cihazlar**'ı seçin.
-4. Şirket verilerini kaldırmak istediğiniz cihazın adını seçin.
-5. Cihaz adının gösterildiği bölmede **Şirket verilerini kaldır**'ı seçin. Onaylamak için **Evet**'i seçin.
+1. [Azure portalında Intune'da](https://aka.ms/intuneportal) oturum açın.
+2. **Cihazlar** bölmesinde **Tüm cihazlar**'ı seçin.
+3. Şirket verilerini kaldırmak istediğiniz cihazın adını seçin.
+4. Cihaz adının gösterildiği bölmede **Şirket verilerini kaldır**'ı seçin. Onaylamak için **Evet**'i seçin.
 
 Cihaz açık ve bağlı olduğu sürece, **Şirket verilerini kaldır** eyleminin tüm cihaz türlerine yayılması 15 dakikadan kısa sürer.
+
+## <a name="delete-devices-from-the-intune-portal"></a>Cihazları Intune portalından silme
+
+Cihazları Intune portalından kaldırmak istiyorsanız, bunları belirli bir cihaz bölmesinden silebilirsiniz. Cihazın bir sonraki iade edilişinde, üzerindeki tüm şirket verileri kaldırılır.
+
+1. [Azure portalında Intune'da](https://aka.ms/intuneportal) oturum açın.
+2. **Cihazlar** > **Tüm cihazlar** > silmek istediğiniz cihazları seçin > **Sil**'i seçin.
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Azure Active Directory portalından cihazları silme
 

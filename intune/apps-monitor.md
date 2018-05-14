@@ -1,7 +1,7 @@
 ---
-title: Uygulama bilgilerini ve atamaları izleme
+title: Uygulama bilgilerini ve atamalarını izleme
 titlesuffix: Microsoft Intune
-description: Kullanıcılara veya cihazlara uygulama atadıktan sonra, atamanın durumunu izlemenize yardımcı olması için bu bilgileri kullanın.
+description: Kullanıcılara veya cihazlara uygulama atadıktan sonra, uygulamanın durumunu izlemenize yardımcı olması için bu bilgileri kullanın.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,74 +15,75 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01b7972a6a4dbb641f4c656190324d8572f9010c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0408ce3a4c2d4224780b4b23b0fb1b7d690471fe
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
+# <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune, yönettiğiniz uygulamanın özelliklerini ve bunların atama durumunu izleyebilmeniz için çeşitli yollar sağlar.
+Intune, yönettiğiniz uygulamanın özelliklerini izlemeniz ve uygulama atama durumunu yönetmeniz için çeşitli yollar sağlar.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** grubunda bulunur.
-3. **Mobil Uygulamalar**’ı seçin, ardından **Yönet** grubunda **Uygulamalar**’ı seçin.
-5. Uygulama listesinde izlemek istediğiniz bir uygulamayı seçin. Cihaz durumu ve kullanıcı durumuna genel bakışı içeren uygulama dikey penceresini göreceksiniz.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. **Intune** menüsünde **Mobil uygulamalar**’ı seçin.
+4. Menünün **Yönet** bölümünde **Uygulamalar**’ı seçin.
+5. Uygulama listesinde, izlenecek uygulamayı seçin. Cihaz durumuna ve kullanıcı durumuna genel bakışı içeren uygulama bölmesini göreceksiniz.
 
-## <a name="app-overview-blade"></a>Uygulamaya genel bakış dikey penceresi
+## <a name="app-overview-pane"></a>Uygulamaya genel bakış bölmesi
 
-Ortamınızdaki bir uygulamanın durumu hakkındaki ayrıntıları gözden geçirmek için bu uygulamanın uygulama dikey penceresini kullanabilirsiniz.
+Uygulama bölmesinde, ortamınızdaki bir uygulamanın durumu hakkındaki ayrıntıları gözden geçirebilirsiniz.
 
 ### <a name="essentials"></a>Temel Parçalar
 **Temel Parçalar** bölümünde, uygulama hakkında aşağıdaki bilgiler yer alır:
 
- | **Uygulama Ayrıntıları**            | **Açıklama**                                                      |
+ | **Uygulama ayrıntıları**            | **Açıklama**                                                      |
 |------------------------|------------------------------------------------------------------|
-| **Yayımcı**          | Uygulama yayımcısı.                                            |
-| **İşletim sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android vb.) |
+| **Yayımcı**          | Uygulamanın yayımcısı.                                            |
+| **İşletim sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
 | **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat.                         |
-| **Atanan**           | Uygulama atandıysa **Evet** veya **Hayır**.                  |
+| **Atanan**           | Uygulamanın atanıp atanmadığı (**Evet** veya **Hayır**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Cihaz ve kullanıcı durum grafikleri
-Grafikler aşağıdaki durumların sayısını gösterir:
+Grafikler aşağıdaki durumlar için uygulamaların sayısını gösterir:
 
-| **Cihaz Durumu**       | **Açıklama**                                       |
+| **Cihaz durumu**       | **Açıklama**                                       |
 |-----------------------|-------------------------------------------------------|
 | **Yüklendi**         | Yüklenen uygulamaların sayısı.                         |
 | **Yüklü Değil**     | Yüklenmemiş uygulamaların sayısı.                     |
 | **Başarısız**            | Başarısız olan yüklemelerin sayısı.                   |
 | **Yükleme Bekletiliyor**   | Yüklenme sürecinde olan uygulamaların sayısı. |
-| **Uygulanamaz**           | Durumun uygulanamadığı uygulama sayısı.            |
+| **Uygulanamaz**           | Durumun uygulanamadığı uygulamaların sayısı.            |
 
 ### <a name="device-install-status"></a>Cihaz yükleme durumu
 
-**İzleme** bölümünde **Cihaz yükleme durumu**’nu seçtiğinizde cihaz durum listesi görüntülenir. Ayrıntı tablosunda aşağıdaki sütunlar vardır:
+Menünün **İzleme** bölümünde **Cihaz yükleme durumu**’nu seçtiğinizde cihaz durum listesi gösterilir. Ayrıntı tablosunda aşağıdaki sütunlar vardır:
 
-| **Cihaz Sütunu**      | **Açıklama**                                                                                                                                                                                                                                            |
+| **Cihaz sütunu**      | **Açıklama**                                                                                                                                                                                                                                            |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Cihaz adı**      | Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılamaz.                                                                       |
+| **Cihaz adı**      | Cihazı adlandırmaya izin veren platformlarda cihazın adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik başka hiçbir cihazda kullanılamaz.                                                                       |
 | **Kullanıcı adı**        | Kullanıcının adı.                                                                                                                                                                                                                                      |
-| **Platform**         | Cihazın işletim sistemi (Windows, iOS, Android, vb.)                                                                                                                                                                                           |
-| **Sürüm**          | Uygulamanın sürüm numarası. İş kolu uygulamaları için, uygulamanın tam sürüm numarası görüntülenir. Tam sürüm numarası, uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin 2.2(2.2.17560800) |
+| **Platform**         | Cihazın işletim sistemi (Windows, iOS, Android, vb.).                                                                                                                                                                                           |
+| **Sürüm**          | Uygulamanın sürüm numarası. İş kolu uygulamaları için, uygulamanın tam sürüm numarası gösterilir. Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800). |
 | **Durum**           | Uygulamanın durumu.                                                                                                                                                                                                                                     |
 | **Durum ayrıntıları**   | Durumun ayrıntıları.                                                                                                                                                                                                                                     |
-| **Son iade etme**    | Cihazın Intune ile son eşitlendiği tarih.                                                                                                                                                                                                                  |
+| **Son iade etme**    | Cihazın Intune ile son eşitlenme tarihi.                                                                                                                                                                                                                  |
 
 
 ### <a name="user-install-status"></a>Kullanıcı yükleme durumu
 
-**İzleme** bölümünde **Kullanıcı yükleme durumu**’nu seçtiğinizde kullanıcı durum listesi görüntülenir. Ayrıntı tablosunda aşağıdaki sütunlar vardır:
+Menünün **İzleme** bölümünde **Kullanıcı yükleme durumu**’nu seçtiğinizde kullanıcı durum listesi gösterilir. Ayrıntı tablosunda aşağıdaki sütunlar vardır:
 
-| **Kullanıcı Sütunu**     | **Açıklama**                           |
+| **Kullanıcı sütunu**     | **Açıklama**                           |
 |---------------------|-------------------------------------------|
-| **Ad**            | Kullanıcının Azure AD'deki adı.         |
+| **Ad**            | Kullanıcının Azure Active Directory'deki adı.         |
 | **Kullanıcı adı**       | Kullanıcının benzersiz adı.              |
-| **Yüklemeler**   | Kullanıcı tarafından kullanılan uygulama yüklemelerinin sayısı. |
-| **Hatalar**        | Kullanıcıya göre başarısız yükleme sayısı.     |
-| **Yüklü değil**   | Kullanıcıya göre yüklenmemiş uygulamaların sayısı. |
+| **Yüklemeler**   | Kullanıcı tarafından yüklenen uygulamaların sayısı. |
+| **Hatalar**        | Kullanıcı için başarısız olan uygulama yüklemelerinin sayısı.     |
+| **Yüklü değil**   | Kullanıcı tarafından yüklenmeyen uygulamaların sayısı. |
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
