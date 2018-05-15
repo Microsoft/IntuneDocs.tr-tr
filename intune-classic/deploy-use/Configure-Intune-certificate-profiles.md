@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c2b17e1acff965a08245094c57df81c58f44fda
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Intune sertifika profillerini yapılandırma
 
@@ -103,7 +103,7 @@ Güvenilen CA sertifika profilini oluşturduktan sonra, kullanmak istediğiniz h
    > 
    > Özel biçim için şu an desteklenen iki değişken şunlardır: `Common Name (CN)` ve `Email (E)`. Bu değişkenlerin ve statik dizelerin bir bileşimini kullanarak şunun gibi özel bir konu adı biçimi oluşturabilirsiniz:
    > 
-   >     CN={{KullanıcıAdı}},E={{EpostaAdresi}},OU=Mobil,O=Finans Grubu,L=Redmond,ST=Washington,C=US
+   >     `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`
    > 
    > Bu örnekte, yönetici, `CN` ve `E` değişkenlerinin yanı sıra Kuruluş Birimi, Kuruluş, Konum, Eyalet ve Ülke değerleri için dizeler kullanan bir konu adı biçimi oluşturmuştur. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) desteklenen dizeleri listeler.
 

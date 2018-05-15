@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: d41ec494672340a9f5751e6fc40edf1a7b06bb40
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune'da Windows 10 VPN ayarları
 
@@ -99,17 +99,10 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
 
 ## <a name="apps-and-traffic-rules"></a>Uygulamalar ve Trafik Kuralları
 
-<<<<<<< HEAD
 - **WIP veya uygulamaları bu VPN ile ilişkilendir**: Yalnızca bazı uygulamaların VPN bağlantısını kullanmasını istiyorsanız bu ayarı etkinleştirin. Seçenekleriniz şunlardır:
 
   - **Bu bağlantıyla bir WIP'i ilişkilendir**: **Bu bağlantı için WIP etki alanını** girin
   - **Uygulamaları bu bağlantıyla ilişkilendir**: **VPN bağlantısını bu uygulamalarla kısıtlayabilir** ve ardından **İlişkili Uygulamalar** ekleyebilirsiniz. Girdiğiniz uygulamalar VPN bağlantısını otomatik olarak kullanır. Uygulamanın türü uygulama tanımlayıcısını belirler. Bir evrensel uygulama için paket aile adını girin. Bir masaüstü uygulaması için söz konusu uygulamanın dosya yolunu girin.
-=======
-**VPN bağlantısını bu uygulamalarla kısıtlama**: Yalnızca bazı uygulamaların VPN bağlantısını kullanmasını istiyorsanız bu ayarı etkinleştirin.
-
-**İlişkili Uygulamalar**: VPN bağlantısını otomatik olarak kullanan uygulamaların listesini girin. Uygulamanın türü uygulama tanımlayıcısını belirler. Bir evrensel uygulama için paket aile adını girin. Bir masaüstü uygulaması için söz konusu uygulamanın dosya yolunu girin.
->>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
-
   >[!IMPORTANT]
   >Uygulama başına VPN'ler için oluşturulan tüm uygulama listelerini güvenlik altına almanızı öneririz. Yetkisiz bir kullanıcı bu listede değişiklik yaparsa ve bunu uygulama başına VPN uygulama listesine aktarırsanız, erişimi olmaması gereken uygulamalara VPN erişimi yetkisi verme olasılığınız vardır. Uygulama listelerini güvenlik altına almanın yollarından biri, erişim denetim listesi (ACL) kullanmaktır.
 
