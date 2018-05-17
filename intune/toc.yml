@@ -308,6 +308,8 @@
                       href: app-protection-policy-settings-android.md
                     - name: iOS ayarları
                       href: app-protection-policy-settings-ios.md
+                    - name: Veri aktarımı özel durumları
+                      href: app-protection-policies-exception.md
                 - name: Uygulama koruma ilkelerini doğrulama
                   href: app-protection-policies-validate.md
                 - name: Uygulama koruma kullanıcı durumunu izleme
