@@ -14,11 +14,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22eceb7792aee714fb728d64d8bec2ae8db4167c
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune’da Windows 10 (ve sonrası) için Endpoint Protection ayarları
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/28/2018
 
 Endpoint Protection profili, Windows 10 cihazlarda BitLocker ve Windows Defender gibi güvenlik özelliklerini denetlemenize izin verir.
 
-Bu makaledeki bilgileri Endpoint Protection profilleri oluşturmak için kullanın.
+Bu makaledeki bilgileri kullanarak Endpoint Protection profilleri oluşturun. Windows Defender Virüsten Koruma’yı yapılandırmak için bkz. [Windows 10 Cihaz Kısıtlamaları](device-restrictions-windows-10.md#windows-defender-antivirus). 
 
 > [!NOTE]
 > Bu ayarlar, Windows 10’un Home ve Professional sürümlerinde desteklenmez.
@@ -276,7 +276,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 - **Yeni Microsoft hesapları ekle**: Kullanıcıların bu bilgisayara yeni Microsoft hesapları eklemesini engeller.
 - **Parola olmadan uzaktan oturum açma**: Parola korumalı olmayan yerel hesapların fiziksel cihaz dışındaki konumlardan oturum açmasını etkinleştirin.
 
-#### <a name="admin"></a>Yönetim
+#### <a name="admin"></a>Yönetici
 
 - **Yerel yönetici hesabı**: Yerel Yönetici hesabının etkin mi yoksa devre dışı mı olduğunu belirleyin.
 - **Yönetici hesabını yeniden adlandır**: Yönetici hesabının güvenlik tanımlayıcısıyla (SID) ilişkilendirilecek farklı bir hesap adı tanımlayın.

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,35 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan cihazları Intune’dan kaldırabilirsiniz. Bu işlemi **Şirket verilerini kaldır** veya **Fabrika sıfırlaması** eylemlerini kullanarak yapabilirsiniz. Kullanıcılar Intune'a kayıtlı kişiye ait cihazlara Intune Şirket Portalı’ndan uzaktan komut da verebilir.
+**Şirket verilerini kaldır** veya **Fabrika sıfırlaması** eylemlerini kullanarak artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan cihazları Intune’dan kaldırabilirsiniz. Kullanıcılar Intune'a kayıtlı kişiye ait cihazlara Intune Şirket Portalı’ndan uzaktan komut da verebilir.
 
 > [!NOTE]
 > Bir kullanıcıyı Azure Active Directory'den (Azure AD) kaldırmadan önce, bu kullanıcıyla ilişkili tüm cihazlar için **Fabrika sıfırlaması** veya **Şirket verilerini kaldır** eylemlerini kullanın. Yönetilen cihazların kullanıcılarını Azure AD'den kaldırırsanız, Intune artık bu cihazlar için fabrika sıfırlaması veya şirket verilerini kaldırma komutu veremez.
 
 ## <a name="factory-reset"></a>Fabrika sıfırlaması
 
-**Fabrika sıfırlaması** eylemi, cihazı fabrika varsayılan ayarlarına geri yükler. Fabrika sıfırlaması, tüm şirket ve kullanıcı verileri ile ayarlarını geri yükler. Cihaz Intune yönetiminden kaldırılır. Cihazı yeni bir kullanıcıya vermeden önce sıfırlamak için ya da cihaz kaybolduğunda veya çalındığında, fabrika sıfırlaması yararlı olur. **Fabrika sıfırlaması**'nı seçerken dikkatli olun. Cihazdaki veriler kurtarılamaz.
+**Fabrika sıfırlaması** eylemi, cihazı fabrika varsayılan ayarlarına geri yükler. Kullanıcı verileri, **Kayıt durumu ve kullanıcı hesabını koru** onay kutusunu seçip seçmemenize bağlı olarak saklanır veya silinir.
+
+|Fabrika sıfırlaması eylemi|**Kayıt durumu ve kullanıcı hesabını koru**|Intune yönetiminden kaldırıldı|Açıklama|
+|:-------------:|:------------:|:------------:|------------|
+|**Fabrika Sıfırlaması**| İşaretli değil | Evet | Tüm kullanıcı hesapları, verileri, MDM ilkeleri ve ayarlarını siler. İşletim sistemini varsayılan durum ve ayarlarına sıfırlar.|
+|**Fabrika Sıfırlaması**| İşaretli | Hayır | Tüm MDM ilkelerini temizler. Kullanıcı hesapları ve verilerini saklar. Kullanıcı ayarlarını varsayılana sıfırlar. İşletim sistemini varsayılan durum ve ayarlarına sıfırlar.|
+
+**Kayıt durumu ve kullanıcı hesabını koru** seçeneği yalnızca Windows 10 sürüm 1709 veya sonraki sürümlerde kullanılabilir.
+
+MDM ilkeleri, cihazın Intune’a bir sonraki bağlanışında yeniden uygulanır.
+
+Cihazı yeni bir kullanıcıya vermeden önce sıfırlamak için ya da cihaz kaybolduğunda veya çalındığında, fabrika sıfırlaması yararlı olur. **Fabrika sıfırlaması**'nı seçerken dikkatli olun. Cihazdaki veriler kurtarılamaz.
 
 ### <a name="factory-reset-a-device"></a>Cihazı fabrika ayarlarına sıfırlama
 

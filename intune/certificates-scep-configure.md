@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: f67ccf1c2fb3b708916ef4ed4209bd3be07d9a5e
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -65,7 +65,7 @@ NDES sunucusunun [Azure AD uygulama proxy’si](https://azure.microsoft.com/docu
 
 ### <a name="accounts"></a>Hesaplar
 
-|Ad|Ayrıntılar|
+|Adı|Ayrıntılar|
 |--------|-----------|
 |**NDES hizmet hesabı**|NDES Hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı girin.|
 
@@ -304,6 +304,9 @@ Bu görevde yapacaklarınız:
 6. Sertifika Bağlayıcısı için istemci sertifikası istendiğinde, **Seç** düğmesini seçin ve ardından Görev 3'te NDES Sunucunuza yüklediğiniz **istemci kimlik doğrulaması** sertifikasını seçin.
 
     İstemci kimlik doğrulaması sertifikasını seçtikten sonra, **Microsoft Intune Sertifika Bağlayıcısı için İstemci Sertifikası** yüzeyine dönersiniz. Seçtiğiniz sertifika gösterilmese de bu sertifikanın özelliklerini görüntülemek için **İleri**’ye tıklayın. **İleri**’yi ve ardından **Yükle**’yi seçin.
+    
+    > [!IMPORTANT]
+    > Intune Sertifika Bağlayıcısı, Internet Explorer Artırılmış Güvenlik Yapılandırması etkin bir cihazda etkinleştirilemez. Intune Sertifika Bağlayıcısı’nı kullanmak için [IE Artırılmış Güvenlik Yapılandırması’nı devre dışı bırakın](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
 7. Sihirbaz tamamlandıktan sonra, sihirbazı kapatmadan **Sertifika Bağlayıcısı Kullanıcı Arabirimini Başlat**’a tıklayın.
 

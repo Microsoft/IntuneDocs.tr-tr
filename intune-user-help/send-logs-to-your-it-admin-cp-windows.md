@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Windows 10 cihazlar için Şirket Portalı uygulamasından şirketinizin destek birimine günlük gönderme
 
 Windows 10 cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsanız, şirketinizin destek biriminin sorunu gidermesine yardımcı olmak için bilgileri e-posta ile gönderebilirsiniz. Bu bilgiler, cihazınızda _tanılama günlüğü_ adlı özel bir belgede tutulur.
+
+> [!Note]       
+> Kullanıcı bir sorun hakkında yardım almak için iş akışı başlattığında Windows 10 için Şirket Portalı uygulaması, uygulama günlüklerini doğrudan Microsoft’a gönderir. Böylece Microsoft’a bildirilen sorunların giderilmesi ve çözülmesi daha kolay olacak.
 
 1. **Şirket Portalı** uygulamasını açın.
 2. **Ayarlar** dişlisini, ardından **Günlükleri Gönder**'i seçin.

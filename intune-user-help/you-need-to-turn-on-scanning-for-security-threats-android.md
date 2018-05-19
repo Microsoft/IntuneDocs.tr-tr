@@ -1,6 +1,6 @@
 ---
-title: Güvenlik tehdidi taramasını açmanız gerekiyor | Microsoft Docs
-description: ''
+title: Güvenlik tehdidi taramasını açmanız gerekiyor
+description: Cihazınızda güvenlik tehdidi taramalarını nasıl etkinleştireceğinizi öğrenin
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -15,16 +15,20 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 403b3b50cd8fba7d8d0c8ee6fd6f20d0d5561b76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
-# <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>Cihazınızda güvenlik tehdidi taramasını etkinleştirmeniz gerekir
+# <a name="enable-security-threat-scans-on-your-device"></a>Cihazınızda güvenlik tehdidi taramalarını etkinleştirme 
+Farkında olmadan güvenli olmayan bir uygulama yüklerseniz cihaz verileriniz risk altında olabilir. Cihazınızdaki verileri korumak için şunları yapmanızı öneririz: 
 
-Android cihazınız, çeşitli görevler gerçekleştirebilen çok sayıda uygulama indirebilir ve yükleyebilir. Ancak, uygulamaların hepsi aynı değildir ve bazı uygulamalar sorunlara yol açabilir. Yalnızca Google Play Store gibi doğrulanmış kaynaklardan sunulan uygulamaları indirmeniz önerilir. Şirketinizin destek biriminin cihazınızdaki verilere ek koruma sağlamak için uygulayabileceği diğer bir yöntem ise indirdiğiniz uygulamaların güvenilirliğinden emin olmak amacıyla uygulamaları Google taramasından geçirmektir.
+* Yalnızca Google Play Store gibi doğrulanmış kaynaklardan sunulan uygulamaları indirin.  
+* Cihazınızda güvenlik tehdidi taramalarını etkinleştirin. Bu taramalar Google tarafından gerçekleştirilir ve uygulamaların yüklenmesinin güvenli olduğunu doğrular.  
 
-**Ayarlar** > **Google** > **Güvenlik**’e gidip **Cihazı güvenlik tehditleri için tara** seçeneğini etkinleştirerek taramayı açabilirsiniz.
+Cihazınızda taramaları etkinleştirmek için **Ayarlar** > **Google** > **Güvenlik**’e gidin. **Cihazı güvenlik tehditleri için tara** özelliğini açın.  
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bazı Samsung cihazlarda bu ayarı **Ayarlar** > **Google** > **Güvenlik** > **Google Play Koruması** altında bulabilirsiniz.
+
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın. 

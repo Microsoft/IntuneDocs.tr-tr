@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -61,6 +61,8 @@ iOS toplu satın alınan uygulamaları, yalnızca Intune hesabınız ile aynı �
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Aynı iOS toplu satın alınan programının birden fazla kopyası karşıya yükleniyor
 Aynı VPP belirteci için **Karşıya Yükle** düğmesine birden çok kez tıklamayın. Bu, yinelenen VPP belirteçlerinin karşıya yüklenmesine ve uygulamaların aynı VPP belirteci için birden çok kez eşitlenmesine neden olur.
 
+### <a name="some-managed-browser-traffic-not-routed-through-azure-app-proxy----2463492---"></a>Managed Browser trafiğinin bir kısmı, Azure Uygulama Ara Sunucusu üzerinden yönlendirilmiyor <!-- 2463492 -->
+Managed Browser ve Uygulama Ara Sunucusu tümleştirmesinde bilinen bir sorun, üçüncül trafiğin belirli bir kısmının (javascript veya AJAX çağrıları gibi) Azure Uygulama Ara Sunucusu üzerinden yönlendirilmemesidir. Bu, geçerli sürümde bilinen bir sorundur.  
 
 <!-- ## Groups -->
 

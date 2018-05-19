@@ -168,6 +168,8 @@
               href: windows-enroll.md
             - name: Toplu kayıt
               href: windows-bulk-enroll.md
+            - name: Kayıt durumu sayfası
+              href: windows-enrollment-status.md
             - name: Windows AutoPilot Dağıtım Programı
               href: enrollment-autopilot.md
         - name: Android kaydını ayarlama

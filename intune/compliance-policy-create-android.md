@@ -14,11 +14,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune’da Android cihazlar için cihaz uyumluluk ilkesi ekleme
 
@@ -35,10 +35,10 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 | **PIN veya Parola yapılandırması** |  Karantinaya Alındı |
 | **Cihaz şifrelemesi** | Karantinaya Alındı |
 | **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | Karantinaya Alındı (ayar değil) |
-| **e-posta profili** | Geçerli değil |
+| **e-posta profili** | Uygulanamaz |
 | **En düşük işletim sistemi sürümü** | Karantinaya Alındı |
 | **En yüksek işletim sistemi sürümü** |   Karantinaya Alındı |
-| **Windows durum kanıtlama** | Geçerli değil |
+| **Windows durum kanıtlama** | Uygulanamaz |
 
 --------------------------
 
@@ -63,7 +63,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 <!---##  Compliance policy settings--->
 
-## <a name="device-health"></a>Device health
+## <a name="device-health"></a>Cihaz durumu
 
 - **Kök erişim izni verilmiş cihazlar**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
 - **Cihazın Cihaz Tehdit Düzeyinde veya bunun altında olmasını gerektir**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. İzin verilen en yüksek tehdit düzeyini seçin:
@@ -87,7 +87,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 ## <a name="device-property-settings"></a>Cihaz özelliği ayarları
 
-- **En düşük işletim sistemi sürümü**: Cihaz, en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Son kullanıcı, cihazını yükseltmeyi seçip şirket kaynaklarına erişebilir.
+- **En düşük işletim sistemi sürümü**: Cihaz, en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltmenin nasıl gerçekleştirileceği hakkında bilgi içeren bir bağlantı gösterilir. Son kullanıcı, cihazını yükseltmeyi seçip şirket kaynaklarına erişebilir.
 - **En yüksek işletim sistemi sürümü**: Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir. Kullanıcıdan BT yöneticisine başvurması istenir. İşletim sistemine izin veren bir kural değişikliği oluncaya kadar bu cihaz şirket kaynaklarına erişemez.
 
 ## <a name="system-security-settings"></a>Sistem güvenliği ayarları
@@ -96,16 +96,16 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 - **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini **gerektir**in.
 - **En düşük parola uzunluğu**: Kullanıcı parolasında bulunması gereken rakam veya karakter sayısı alt sınırını girin.
-- **Gerekli parola türü**: Parolanın yalnızca sayısal karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından mı oluşması gerektiğini seçin. Aşağıdakilerden birini seçin:
+- **Gerekli parola türü**: Parolanın yalnızca sayısal karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından mı oluşacağını seçin. Aşağıdakilerden birini seçin:
   - **Cihaz Varsayılanı**
   - **Düşük güvenlik biyometriği**
   - **En az sayısal**
-  - **Sayısal karmaşıklık**
+  - **Sayısal karmaşık**: Yinelenen veya ardışık numaralara (“1111” veya “1234” gibi) izin verilmez.
   - **En az alfabetik**
   - **En az alfasayısal**
   - **En az simgeler ile alfasayısal**
 - **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin.
-- **Parola kullanım süresi (gün)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
+- **Parola kullanım süresi sonu (gün):** Kullanıcı parolasının süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
 - **Yeniden kullanılması engellenen eski parola sayısı**: Önceki parolalardan kaç tanesinin kullanılamayacağını girin. Son kullanıcının daha önce kullanılmış parolalar oluşturmasını önlemek için bu ayarı kullanın.
 
 ### <a name="encryption"></a>Şifreleme

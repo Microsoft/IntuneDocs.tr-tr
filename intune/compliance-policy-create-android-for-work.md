@@ -14,11 +14,11 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Intune’daki Android for Work cihazlarına yönelik uyumluluk ilkesi ekleme
 
@@ -35,10 +35,10 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 | **PIN veya Parola yapılandırması** |  Karantinaya Alındı |
 | **Cihaz şifrelemesi** |  Karantinaya Alındı |
 | **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | Karantinaya Alındı (ayar değil) |
-| **e-posta profili** | Geçerli değil |
+| **e-posta profili** | Uygulanamaz |
 | **En düşük işletim sistemi sürümü** | Karantinaya Alındı |
 | **En yüksek işletim sistemi sürümü** | Karantinaya Alındı |
-| **Windows durum kanıtlama** |Geçerli değil |
+| **Windows durum kanıtlama** |Uygulanamaz |
 
 **Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)+
 
@@ -59,7 +59,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="device-health"></a>Device health
+## <a name="device-health"></a>Cihaz durumu
 
 - **Kök erişim izni verilmiş cihazlar**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
 - **Cihazın Cihaz Tehdit Düzeyinde veya bunun altında olmasını gerektir**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. İzin verilen en yüksek tehdit düzeyini seçin:
@@ -91,7 +91,7 @@ Kuruluşunuzda Android iş profilleri kullanılıyorsa, kayıtlı cihazlarınız
 
 - **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini **gerektir**in.
 - **En düşük parola uzunluğu**: Kullanıcı parolasında bulunması gereken rakam veya karakter sayısı alt sınırını girin.
-- **Gerekli parola türü**: Parolanın yalnızca sayısal karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından mı oluşması gerektiğini seçin. Aşağıdakilerden birini seçin:
+- **Gerekli parola türü**: Parolanın yalnızca sayısal karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından mı oluşacağını seçin. Aşağıdakilerden birini seçin:
   - **Cihaz Varsayılanı**
   - **Düşük güvenlik biyometriği**
   - **En az sayısal**

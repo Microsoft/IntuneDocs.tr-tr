@@ -5,116 +5,127 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/19/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ms.assetid: ''
 searchScope:
 - User help
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows cihazınızı el ile eşitleme
 
-Bazen Windows cihazınıza bir uygulama yüklemeyi denemek, düşündüğünüzden daha uzun sürebilir. Bu durumda, Windows cihazınızı el ile eşitlemeyi deneyebilirsiniz. Eşitlemek yüklemenin hızını artırmaya yardımcı olabilir.
+Uygulama yükleme hızı istediğiniz kadar yüksek değilse el ile eşitlemeyi başlatın. El ile eşitlemeler, en son güncelleştirmeler ve iletişimler için cihazınızı Intune’a bağlanmaya zorlar. Cihaz eşitlemesi tamamlandıktan sonra yükleme hızı artabilir.
 
-> [!Note]
-> Daha yavaş olan veya aynı anda içerik indiren cihazların çok sayıda olduğu bir ağdaysanız uygulamaların yüklenmesi biraz zaman alabilir.
+Intune, Şirket Portalı uygulamasından ve cihazın Ayarlar uygulamasından el ile eşitlemeyi destekler. 
 
-Aşağıdaki Windows sürümleri el ile eşitlenebilir. Ne yazık ki, cihazınızda farklı bir Windows sürümü kullanılıyorsa el ile eşitleme başlatamazsınız.
+Şirket Portalı uygulaması işlevselliği, Creator’s Update (1703) ve üzerini çalıştıran Windows 10 cihazlarda desteklenir. 
+* [Şirket Portalı uygulamasından eşitleme](#Sync-from-Company-Portal-app-for-Windows)  
 
-* [Windows 10 masaüstü ile eşitleme](#windows-10-desktop)
-* [Windows 10 Mobile ile eşitleme](#windows-10-mobile)
-* [Windows Phone 8.1 ile eşitleme](#windows-phone-81)
+Aşağıdakiler dahil olmak üzere tüm Windows cihazlar, cihazın Ayarlar uygulamasından eşitlenebilir:
 
-## <a name="windows-10-desktop"></a>Windows 10 masaüstü
-Birden fazla Windows 10 sürümü olduğundan iki grup adım vardır. Hangi adımları kullanacağınızı anlamak için ekran görüntülerine bakın ve cihazınızda gördüğünüze benzeyen ekran görüntüsündeki adımları uygulayın.
+* [Windows 10 masaüstü](#windows-10-desktop)  
+* [Microsoft HoloLens](#microsoft-hololens)   
+* [Windows 10 Mobile](#windows-10-mobile)  
+* [Windows Phone 8.1](#windows-phone-81)    
 
-1. **Başlat** düğmesini ve ardından **Ayarlar**’ı seçin.
+## <a name="sync-from-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasından eşitleme
+Creator’s Update (1703) ve üzerini çalıştıran Windows 10 cihazları el ile eşitlemek için bu adımları tamamlayın.
 
-    ![Başlat düğmesi](./media/win10pc-sync-1-start-button.png)
+1.  Cihazınızda Şirket Portalı uygulamasını açın.
 
-2. **Ayarlar** sayfasında **Hesaplar**’ı seçin.
+2.  **Ayarlar** > **Eşitle**’yi seçin.
 
-    ![Ayarlar sayfasında Hesapları seçme](./media/win10pc-sync-2-settings-accounts.png)
+    ![Şirket Portalı uygulamasının Ayarlar bölümünün vurgulandığı giriş sayfasının ekran görüntüsü](./media/RS1_homePage_settings_04.png)  
+    
+    ![Şirket Portalı uygulamasının Eşitle düğmesinin vurgulandığı ayarlar sayfasının ekran görüntüsü](./media/RS1_settingspage_sync05.png)    
 
-3. Sonraki iki ekrana bakarak kendi cihazınızda gördüğünüze benzeyeni bulun. Cihazınızda gördüğünüz ekrana uyan adımları uygulayın.
+## <a name="sync-from-settings-app"></a>Ayarlar Uygulamasından eşitleme 
+Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ve Windows Phone 8.1 cihazlarınızı Ayarlar uygulamasından el ile eşitlemek için bu adımları tamamlayın.
 
-    “İşe veya okula erişim” ekranını görürseniz, [İşe veya okula Erişim seçeneğini görüyorsanız izlenecek adımlar](#steps-to-follow-if-you-see-access-work-or-school) kısmındaki yönergeleri izleyin.
+### <a name="windows-10-desktop"></a>Windows 10 masaüstü
+1. Cihazınızda **Başlat** > **Ayarlar**’ı seçin.
 
-    ![İşe veya okula erişim seçeneğini görüyorsanız izlenecek eşitleme adımları](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. **Hesaplar**’ı seçin.
 
-    “İşe erişim” ekranını görürseniz, [İşe erişim seçeneğini görüyorsanız izlenecek adımlar](#steps-to-follow-if-you-see-work-access) kısmındaki adımları izleyin.
+    ![Ayarlar sayfasında Hesapları seçme](./media/win10pc-sync-2-settings-accounts.png)  
+
+3. Masaüstü cihazlar için Windows 10’un birden çok sürümü vardır. Hangi adımlar dizisini takip etmeniz gerektiğini belirlemek için ekranınızı aşağıdaki ekran görüntüleriyle karşılaştırın. 
+
+    * Ekranınızda **İş veya okula erişme** yazıyorsa [İş veya okula erişme](#access-work-or-school) adımlarına atlayın.
+
+    ![Ayarlar uygulamasında iş veya okula erişme seçeneği](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
+
+    * Ekranınızda **İş erişimi** yazıyorsa [İş erişimi](#work-access) adımlarına atlayın.  
 
     ![Hesap türü olarak iş yeri erişimini seçme](./media/win10pc-sync-3-work-access.png)
 
-### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>İşe veya okula erişim seçeneğini görüyorsanız izlenecek adımlar
+#### <a name="access-work-or-school-steps"></a>İş veya okula erişme adımları
 
-1. **Hesaplar** sayfasında **İşe veya okula erişim**’i seçin.
+1. **İş veya okula erişme**’ye tıklayın.
 
-    ![İşe veya okula Erişim’i seçin](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![İş veya okula erişme seçeneğini gösteren ekran görüntüsü](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-2. İş veya okul hesabınızı seçin. Şirketinizin destek biriminin yaptığı ayarlara bağlı olarak, aşağıda gösterilen örneğe benzeyen iki hesap görebilirsiniz. Bir hesabın yanında bir evrak çantası, diğerinin yanında ise Microsoft logosu var.
-
-   - Evrak çantası olan hesabı görürseniz bunu seçin ve altındaki **Bilgi** düğmesini bulun.
-   - Yalnızca Microsoft logosu olan hesabı görürseniz hesabı seçin ve altındaki **Bilgi** düğmesini bulun.
+2. Yanında evrak çantası simgesi bulunan hesabı seçin. Bu hesabı görmüyorsanız şirketiniz ayarlarınızı farklı yapılandırmış olabilir. Bu durumda yanında Microsoft logosu olan hesaba tıklayın.
 
      ![Evrak çantası veya Microsoft logosu yanındaki hesabınızın adını seçin](./media/win10pc-rs1-sync-info-button.png)
 
-3. **Bilgi** düğmesini seçin. Aşağıdaki örneğe benzer bir iletişim kutusu açılır.
+3. **Bilgi**’ye tıklayın. 
 
-    ![Evrak çantası veya Microsoft logosu yanındaki hesabınızın adını seçin](./media/win10pc-rs1-sync-button.png)
+4. **Eşitle**’ye tıklayın. 
 
-4. **Eşitle** düğmesini seçin. Cihazınız Intune ile eşitlenecektir.
+#### <a name="work-access-steps"></a>İş erişimi adımları
 
-### <a name="steps-to-follow-if-you-see-work-access"></a>İşe erişim görüyorsanız uygulanacak adımlar
-
-1. **Hesaplar** sayfasında **İş yeri erişimi**’ni seçin.
+1.  **İş erişimi**’ne tıklayın.
 
     ![Hesap türü olarak iş yeri erişimini seçme](./media/win10pc-sync-3-work-access.png)
 
-2. **Cihaz yönetimine kaydol** bölümünün altında şirketinizin adını seçin.
+2. **Cihaz yönetimine kaydol**’un altında şirketinizin adını seçin.
 
     ![Cihaz yönetimi için şirket adı seçme](./media/win10pc-sync-4-tap-com-name.png)
 
-3. **Eşitle** düğmesini seçin.
+3. **Eşitle**’ye tıklayın. Eşitleme tamamlanana kadar düğme devre dışı kalır.
 
-    ![Eşitleme düğmesini seçme](./media/win10pc-sync-5-tap-sync.png)
+    ![Eşitleme düğmesini seçme](./media/win10pc-sync-5-tap-sync.png)  
 
-   Eşitleme işlemi tamamlanana kadar düğme gri gösterilir.
 
 ### <a name="windows-10-mobile"></a>Windows 10 Mobile
-Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows 10 Mobile cihazınızı el ile eşitlemek için:
 
-   1. **Tüm uygulamalar** > **Ayarlar** > **Hesaplar**’a gidin.
+   1. Cihazınızda **Tüm uygulamalar** > **Ayarlar** > **Hesaplar**’a gidin.
 
        ![Ayarları ekranında Hesapları Seçme](./media/win10m-sync-1-settings-accounts.png)
 
-   2. **İş yeri erişimi**’ni seçin.
+   2. **İş erişimi**’ni seçin.
 
        ![Hesap türü olarak iş yeri erişimini seçme](./media/win10m-sync-2-work-access.png)
 
-   3. **Cihaz yönetimine kaydol**’un altında, şirketinizin adını seçin.
+   3. **Cihaz yönetimine kaydol**’un altında şirketinizin adını seçin.
 
        ![Cihaz yönetimi için şirket adı seçme](./media/win10m-sync-3-tap-comp-name.png)
 
-   4. **Eşitle** simgesini seçin.
+   4. **Eşitle** simgesini seçin. Eşitleme tamamlanana kadar düğme devre dışı kalır.
 
-       ![Eşitleme simgesini seçme](./media/win10m-sync-4-tap-sync.png)
+       ![Eşitleme simgesini seçme](./media/win10m-sync-4-tap-sync.png)  
+### <a name="microsoft-hololens"></a>Microsoft HoloLens  
+Bu yönergeler, Windows 10 Yıldönümü Güncelleştirmesi (RS1 olarak da bilinir) çalıştıran HoloLens cihazlarda geçerlidir. 
+1.  Cihazınızda Ayarlar uygulamasını açın.  
 
-       Ekranın en üstünde “Hesabınızı eşitliyoruz” iletisi görüntülenir. Cihazınızın eşitlenmesi bitene kadar **Eşitle** düğmesi gri gösterilir.
+2.  **Hesaplar** > **İş Erişimi**’ni seçin.  
+    ![Hesaplar bağlantısının vurgulandığı HoloLens ayarlar uygulamasının ekran görüntüsü](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-## <a name="windows-phone-81"></a>Windows Phone 8.1
-Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows Phone 8.1 cihazınızı el ile eşitlemek için:
+3.  Bağlı hesabınızı ve ardından **Eşitle**’yi seçin. ![Eşitle düğmesinin vurgulandığı HoloLens ayarlar uygulamasının ekran görüntüsü](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+
+### <a name="windows-phone-81"></a>Windows Phone 8.1
 
 1. **Tüm uygulamalar** > **Ayarlar** > **çalışma alanı**’na gidin.
 
@@ -127,7 +138,5 @@ Yavaş çalışan bir uygulama yüklemesini hızlandırmak amacıyla Windows Pho
 3. **Eşitle** simgesini seçin.
 
     ![Eşitleme simgesini seçme](./media/wp81-3-sync-tap-sync-button.png)
-
-   Cihazınızın eşitlenmesi bitene kadar, ekranın en üstünde “Hesabınızı eşitliyoruz” iletisi görüntülenir.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

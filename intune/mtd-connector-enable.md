@@ -15,11 +15,11 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fec1477cf5f5f7fd6db113c8b87b6eb4068101d
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 5f0dd0d968cde26ed4fcd4a628db5ff98316bee7
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune'da Mobil Threat Defense bağlayıcısını etkinleştirme
 
@@ -56,6 +56,8 @@ Kuruluşunuzun gereksinimlerine göre hangi MTD geçiş seçeneklerini etkinleş
 - **iOS 8.0+ cihazları, [MTD iş ortağı adı] for Work MTD'ye bağla**: Bu seçeneği etkinleştirdiğinizde, Android 4.1+ cihazların güvenlik riskini Intune’a geri raporlamasını sağlayabilirsiniz.
     - **Veri alınmazsa uyumsuz olarak işaretle**: Intune, bu platformdaki bir cihaz hakkında MTD iş ortağından herhangi bir veri almazsa cihazın uyumsuz olarak değerlendirilmesini sağlar.
 <br></br>
+- **iOS Cihazlar için Uygulama Eşitlemeyi etkinleştir**: Bu Mobil Tehdit Savunması iş ortağının tehdit analizi için kullanmak amacıyla Intune’dan iOS uygulamalarının meta verilerini istemesine izin verir.
+
 - **Desteklenmeyen işletim sistemi sürümlerini engelle**: Cihaz, desteklenen en düşük sürümden düşük bir işletim sistemi çalıştırıyorsa engellenir.
 
 - **İş ortağının yanıt vermediği gün sayısı**: Bağlantı kesildiği için Intune’un iş ortağının yanıt vermiyor olarak değerlendirmesi için işlem yapılmadan geçmesi gereken gün sayısı. Intune, yanıt vermeyen MTD iş ortakları için uyumluluk durumunu yok sayar.

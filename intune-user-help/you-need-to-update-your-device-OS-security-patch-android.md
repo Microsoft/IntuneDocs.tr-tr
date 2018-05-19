@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f2622a173b33fd28c55a9a63321a9f2faa16a5d7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4a1ce01cf5d65b0bb0d6230972e5358dbe41854
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Android cihazınızın işletim sistemini güncelleştirmeniz gerekiyor
 
-“Minimum Android güvenlik düzeltme eki düzeyi yapılandırılmadı” iletisini aldıysanız, cihazınızın güvenli kalmasını sağlamak için bir güncelleştirme yüklemeniz gerekir. _Düzeltme ekleri_, yazılımların düzgün çalışmasını ve güncel kalmasını sağlamak için yayımlanır. Şirketinizin destek birimi, cihazınızdaki kurumsal verilerin mümkün olan en üst düzeyde korunduğundan emin olmak için bu düzeltme ekini yüklemenizi gerekli kılar. İhtiyacınız olan güvenlik düzeltme ekinin konumu, sahip olduğunuz Android cihaz türüne göre değişir.
+“Android güvenlik düzeltme ekinizin düzeyi çok düşük” iletisini aldıysanız cihazınızın güvenli kalmasını sağlamak için bir güncelleştirme yüklemeniz gerekir. _Düzeltme ekleri_, yazılımların düzgün çalışmasını ve güncel kalmasını sağlamak için yayımlanır. Şirketinizin destek birimi, cihazınızdaki kurumsal verilerin mümkün olan en üst düzeyde korunduğundan emin olmak için bu düzeltme ekini yüklemenizi gerekli kılar. İhtiyacınız olan güvenlik düzeltme ekinin konumu, sahip olduğunuz Android cihaz türüne göre değişir.
 
 Bir Samsung cihazınız varsa, **Ayarlar** > **Telefon hakkında**’ya giderek ekranın herhangi bir yerinde “Knox” sözcüğünün olup olmadığını kontrol edin. Varsa, aşağıdaki Samsung Knox yönergelerini izleyin.
 
