@@ -15,11 +15,11 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b03de8b2c5fca0f41a792e5004d74fe82e4a861d
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -56,7 +56,7 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 > [!NOTE]
 > Belirteci Azure’a geçirmeden önce klasik Intune portalında silerseniz Intune, silinen bir Apple DEP belirtecini geri yükleyebilir. DEP belirtecini Azure portalından tekrar silebilirsiniz. DEP belirtecini Azure portalından tekrar silebilirsiniz.
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Adım 1. Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1. Adım Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
 
 1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple kaydı** > **Kayıt Programı Belirteçleri** > **Ekle**’yi seçin.
 
@@ -69,7 +69,7 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 3. Şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtarınızı indirin** öğesini seçin. .pem dosyası Apple Cihaz Kayıt Programı portalından güven ilişkisi sertifikası istemek için kullanılır.
 
 
-### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Adım 2. Anahtarınızı kullanarak Apple’dan bir belirteç indirin.
+### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>2. Adım Anahtarınızı kullanarak Apple’dan bir belirteç indirin.
 
 1. Apple’ın Dağıtım Programı portalını açmak için **Apple’ın Aygıt Kayıt Programı için bir belirteç oluştur**’u seçin ve şirket Apple Kimliğinizle oturum açın. DEP belirtecinizi yenilemek için de bu Apple kimliğini kullanabilirsiniz.
 2.  Apple’ın [Dağıtım Programları portalında](https://deploy.apple.com), **Aygıt Kayıt Programı** için **Kullanmaya Başla**’yı seçin.
@@ -91,13 +91,13 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
    Apple portalında **Dağıtım Programları** &gt; **Aygıt Kayıt Programı** &gt; **Atama Geçmişini Görüntüle**’ye giderek cihazların listesi ile MDM sunucu atamalarına göz atabilirsiniz.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Adım 3. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. Adım. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin.
 
 Azure portalında Intune’da ileride başvurmak üzere Apple kimliğini sağlayın.
 
 ![Kayıt programı belirtecini oluşturmak için kullanılan Apple kimliğini belirtme ve kayıt programı belirtecine gözatma işleminin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>4. Adım. Belirtecinizi karşıya yükleyin.
+### <a name="step-4-upload-your-token"></a>Adım 4. Belirtecinizi karşıya yükleyin.
 **Apple belirteci** kutusunda sertifika (.pem) dosyasına gözatın, **Aç**’ı ve daha sonra **Oluştur**’u seçin. Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir. Intune, kayıt programı hesabınızı görmek için Apple ile otomatik olarak eşitlenir.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple kayıt profili oluşturma
@@ -106,8 +106,11 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
 1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple kaydı** > **Kayıt programı belirteçleri**’ni seçin.
 2. Bir belirteç seçin, **Profiller**’e ve daha sonra **Profil oluştur**’a tıklayın.
-    ![Bir profil ekran görüntüsü oluşturun.](./media/device-enrollment-program-enroll-ios/image04.png)
+
+    ![Profil ekran görüntüsü oluşturun.](./media/device-enrollment-program-enroll-ios/image04.png)
+
 3. **Profil Oluştur**’un altında, yönetim amaçları doğrultusunda profil için bir **Ad** ve **Açıklama** girin. Kullanıcılar bu ayrıntıları göremez. Azure Active Directory’de dinamik bir grup oluşturmak için **Ad** alanını kullanabilirsiniz. enrollmentProfileName parametresini, bu kayıt profiliyle cihazlara atamak amacıyla tanımlamak için profil adını kullanın. [Azure Active Directory dinamik grupları](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects) hakkında daha fazla bilgi edinin.
+
     ![Profil adı ve açıklaması.](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. **Kullanıcı Benzeşimi** için bu profile sahip cihazların atanan kullanıcıyla mı yoksa atanan kullanıcı olmadan mı kaydedilmesi gerektiğini seçin.
@@ -123,6 +126,9 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
     > Profil özelliklerini **Kullanıcı Benzeşimi ile kaydet** olarak ayarladıysanız çok faktörlü kimlik doğrulaması (MFA), DEP kaydı sırasında çalışmaz. Kayıttan sonra MFA, cihazlarda beklendiği gibi çalışır. Cihazlar, ilk defa oturum açıldığında parolalarını değiştirmesi gereken kullanıcılara istemde bulunamaz. Ayrıca, parolalarının süresi dolmuş olan kullanıcılardan kayıt sırasında parolalarını sıfırlamaları istenmez. Kullanıcıların, parolayı sıfırlamak için farklı bir cihaz kullanmaları gerekir.
 
 6. **Cihaz Yönetim Ayarları**’nı seçin ve bu profili kullanan cihazların denetlenmesini isteyip istemediğinizi seçin.
+
+    ![Cihaz Yönetimi Ayarları ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
+
     **Denetimli** cihazlar, varsayılan olarak size daha fazla yönetim seçeneği verir ve Etkinleştirme Kilidi’ni devre dışı bırakır. Microsoft, özellikle fazla sayıda iOS cihaz dağıtan kuruluşlar için denetimli modu etkinleştirme mekanizması olarak DEP’in kullanılmasını önerir.
 
     Kullanıcılara cihazlarının denetimli olduğu iki yolla bildirilir:
@@ -144,7 +150,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 11. Şu profil ayarlarını yapılandırmak için **Kurulum Yardımcısı Ayarları**’nı seçin: ![Kurulum Yardımcısı Özelleştirme.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    |                 Ayar                  |                                                                                               Açıklama                                                                                               |
+    |                 Ayar                  |                                                                                               Description                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Departman Adı</strong>     |                                                             Kullanıcı, etkinleştirme sırasında <strong>Yapılandırma Hakkında</strong> öğesine dokunduğunda görüntülenir.                                                              |
     |    <strong>Departman Telefonu</strong>     |                                                          Kullanıcı, etkinleştirme sırasında <strong>Yardım Gerekli</strong> düğmesine dokunduğunda görüntülenir.                                                          |
@@ -171,9 +177,9 @@ Artık Intune’a cihazlarınızı yönetme izni verildiğine göre, yönetilen 
 1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple Kaydı** > **Kayıt programı belirteçleri** > listeden bir belirteç seçin > **Cihazlar** > **Eşitle**’yi seçin. ![Kayıt Programı Cihazları düğümünün seçili olduğu ve Eşitle bağlantısının seçildiği ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/image06.png)
 
    Intune, Apple’ın kabul edilebilir kayıt programı trafiği şartlarına uymak için aşağıdaki kısıtlamaları getirir:
-   - Tam eşitleme en sık yedi günde bir çalıştırılabilir. Tam eşitleme sırasında Intune, kendine atanmış tüm Apple seri numaralarını yeniler. Önceki tam eşitlemenin üzerinden yedi gün geçmeden bir tam eşitleme girişiminde bulunulursa, Intune yalnızca henüz Intune’da listelenmeyen seri numaralarını yeniler.
-   - Herhangi bir eşitleme isteğinin tamamlanması için 15 dakika verilir. Bu süre boyunca veya istek başarılı olana kadar **Eşitle** düğmesi devre dışı bırakılır.
-   - Intune, yeni ve kaldırılmış cihazları 24 saatte bir Apple ile eşitler.
+   - Tam eşitleme en sık yedi günde bir çalıştırılabilir. Tam eşitleme sırasında Intune, Intune’a bağlı Apple MDM sunucusuna atanan seri numaraların tam güncelleştirilmiş bir listesini alır. Bir Kayıt Programı cihazı, Intune portalından silindikten sonra tam eşitleme gerçekleştirene kadar yeniden içeri aktarılamaz.   
+   - Eşitleme 24 saatte bir otomatik olarak çalıştırılır. **Eşitle** düğmesine basarak da eşitleyebilirsiniz (en fazla 15 dakikada bir kez). Tüm eşitleme isteklerinin tamamlanması için 15 dakika verilir. Eşitleme tamamlanana kadar **Eşitle** düğmesi devre dışı kalır. Bu eşitleme, mevcut aygıt durumunu yeniler ve Apple MDM sunucusuna atanan yeni cihazları içeri aktarır.   
+
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>Cihazlara kayıt profili atama
 Cihazların kaydedilmesi için bunlara bir kayıt programı profili atamalısınız.
@@ -196,5 +202,17 @@ Belirli bir belirteç ile kaydedilen tüm cihazlara uygulanacak varsayılan bir 
 Apple ve Intune arasında eşitlemeyi ve yönetimi etkinleştirdiniz ve DEP cihazlarınızın kaydolmasına izin vermek için bir profil atadınız. Artık cihazları kullanıcılara dağıtabilirsiniz. Kullanıcı benzeşimli cihazlar, her kullanıcıya bir Intune lisansı atanmasını gerektirir. Kullanıcı benzeşimi olmayan cihazlar, cihaz lisansı gerektirir. Etkinleştirilmiş bir cihaz, fabrika sıfırlaması yapılana kadar bir kayıt profili uygulayamaz.
 
 Bkz. [iOS cihazınızı Aygıt Kayıt Programı ile Intune’a kaydetme](/intune-user-help/enroll-your-device-dep-ios).
+
+## <a name="renew-a-dep-token"></a>DEP belirtecini yenileme  
+1. deploy.apple.com adresine gidin.  
+2. **Sunucuları Yönet** altında yenilemek istediğiniz belirteç dosyasıyla ilişkili MDM sunucunuzu seçin.
+3. **Yeni Belirteç Oluştur**’u seçin.  
+4. **Sunucu Belirteciniz**’i seçin.  
+5. [Azure portalında Intune](https://aka.ms/intuneportal)’da **Cihaz kaydı** > **Apple Kaydı** > **Kayıt programı belirteçleri**’ni seçin.  
+6. Belirteci seçin ve ardından **Belirteci yenile** seçeneğini belirleyin.  
+7. Orijinal belirtecinizi oluşturmak için kullanılan Apple kimliğini girin.  
+8. Yeni indirilen belirteci karşıya yükleyin.  
+9. **Belirteci yenile**’yi seçin. Belirtecin yenilendiğine dair onayı görürsünüz.   
+
 
 

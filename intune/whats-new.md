@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 05/08/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 9004441a41c5e7458447b5c5f7e1d91e630bd412
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: e677e15d1e4ee688a826683ecd1d8d68620d2796
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,18 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. [Yaklaşan değişiklik
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-may-7-2018"></a>7 Mayıs 2018 Haftası
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="samsung-knox-mobile-enrollment-support---1112863--"></a>Samsung Knox mobil kayıt desteği <!--1112863-->
+
+Intune’u Samsung Knox Mobil Kayıt (KME) ile birlikte kullanarak çok sayıda şirkete ait Android cihazları kaydedebilirsiniz. WiFi veya hücresel ağ kullanan kullanıcılar, cihazlarını ilk kez açtıklarında yalnızca birkaç dokunuşla kayıt yapabilir. Knox Dağıtım Uygulaması’nı kullanırken Bluetooth veya NFC yoluyla cihazlar kaydedilebilir. Daha fazla bilgi için bkz. [Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme](android-samsung-knox-mobile-enroll.md).
+
+#### <a name="requesting-help-in-the-company-portal-for-windows-10----1874137---"></a>Windows 10 için Şirket Portalı uygulamasında yardım isteme <!-- 1874137 -->
+
+Kullanıcı bir sorun hakkında yardım almak için iş akışı başlattığında Windows 10 için Şirket Portalı uygulaması artık uygulama günlüklerini doğrudan Microsoft’a gönderecek. Böylece Microsoft’a bildirilen sorunların giderilmesi ve çözülmesi daha kolay olacak.
 
 ## <a name="week-of-april-23-2018"></a>23 Nisan 2018 Haftası
 
@@ -369,12 +381,21 @@ Intune’da dağıtım kanalları oluşturma hakkında daha fazla bilgi için bk
 
 #### <a name="company-portal-enrollment-improved----1874230-eeready--"></a>Şirket Portalı kaydı geliştirildi <!-- 1874230 eeready-->
 Windows 10 derleme 1703’te ve üstünde Şirket Portalı’nı kullanarak cihaz kaydı yapan kullanıcılar, artık uygulamadan çıkmadan kaydın ilk adımını tamamlayabilirler.
-
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>Artık cihaz listelerinde HoloLens ve Surface Hub gösteriliyor <!--1725868 -->
 Intune’a kayıtlı HoloLens ve Surface Hub cihazlarının Android için Şirket Portalı uygulamasına gösterilmesi amacıyla destek ekledik.
 
 #### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>Toplu satın alma programı (VPP) eKitapları için Özel Kitap kategorileri <!-- 1488911 -->
-Özel eKitap kategorileri oluşturabilir ve VPP eKitaplarını bu özel eKitap kategorilerine ekleyebilirsiniz. Bundan sonra son kullanıcılar yeni oluşturulan eKitap kategorilerini ve bu kategorilere atanmış olan kitapları görebilecek. Daha fazla bilgi için bkz. [Toplu satın alınan uygulama ve kitapları Microsoft Intune ile yönetme](vpp-apps.md).
+Özel eKitap kategorileri oluşturabilir ve VPP eKitaplarını bu özel eKitap kategorilerine ekleyebilirsiniz. Bundan sonra son kullanıcılar yeni oluşturulan eKitap kategorilerini ve bu kategorilere atanmış olan kitapları görebilecek. Daha fazla bilgi için bkz. [Toplu satın alınan uygulama ve kitapları Microsoft Intune ile yönetme](vpp-apps.md).  
+
+#### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>Windows için Şirket Portalı’nda geri bildirim gönderme seçeneğinde destek değişiklikleri <!-- 2070166 -->
+30 Nisan 2018 tarihinden itibaren Windows için Şirket Portalı uygulamasındaki **Geri Bildirim Gönder** seçeneği, yalnızca Windows 10 Yıldönümü Güncelleştirmesi (1607) ve üzerini çalıştıran cihazlarda kullanılabilecek. Geri bildirim gönderme seçeneği, artık Windows için Şirket Portalı uygulamasını şu sürümlerle birlikte kullanırken desteklenmeyecek:  
+- Windows 10, 1507 sürümü  
+- Windows 10, 1511 sürümü  
+- Windows Phone 8.1 
+
+Cihazınız Windows 10 RS1 ve üzeri çalıştırıyorsa Store’daki Windows Şirket Portalı uygulamasının en son sürümünü indirin. Desteklenmeyen bir sürüm çalıştırıyorsanız lütfen şu kanallar yoluyla geri bildirim göndermeye devam edin: 
+- Windows 10’daki Geri Bildirim Merkezi uygulaması
+- E-posta WinCPfeedback@microsoft.com  
 
 #### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Yeni Windows Defender Application Guard ayarları <!-- 1631890 -->
 
@@ -429,7 +450,7 @@ Profil oluştur\Endpoint protection\Windows Defender Exploit Guard.
 
 #### <a name="attack-surface-reduction"></a>Saldırı Yüzeyini Azaltma
 
-|Ayar adı  |Ayar seçenekleri  |Açıklama  |
+|Ayar adı  |Ayar seçenekleri  |Description  |
 |---------|---------|---------|
 |Gelişmiş fidye yazılımı koruması|Etkin, Denetle, Yapılandırılmadı|Agresif fidye yazılımı koruması kullanır.|
 |Windows yerel güvenlik yetkilisi alt sisteminden kimlik bilgisi çalma eylemlerine bayrak ekleme|Etkin, Denetle, Yapılandırılmadı|Windows yerel güvenlik yetkilisi alt sisteminden kimlik bilgisi çalma eylemlerine bayrak ekler (lsass.exe).|
@@ -439,7 +460,7 @@ Profil oluştur\Endpoint protection\Windows Defender Exploit Guard.
 
 #### <a name="controlled-folder-access"></a>Denetlenen klasör erişimi
 
-|              Ayar adı               |                                                              Ayar seçenekleri                                                              | Açıklama |
+|              Ayar adı               |                                                              Ayar seçenekleri                                                              | Description |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Klasör koruması (zaten uygulanmış) | Yapılandırılmamış, Etkinleştir, Yalnızca denetle (zaten uygulanmış)<br><br> <strong>Yeni</strong><br>Disk değişikliğini engelle, Disk değişikliğini denetle |             |
 
@@ -464,7 +485,7 @@ Artık **Sorun Giderme** dikey penceresinde **Atamalar** listesinden **Kayıt k�
 
 Windows Defender’ın sistem durumunu anlamak, Windows bilgisayarları yönetmenin anahtarıdır.  Bu güncelleştirmeyle Intune, Windows Defender aracısının sistem durumuna yeni raporlar ve eylemler ekler. [Cihaz Uyumluluğu iş yükünde](compliance-policy-monitor.md) bir durum toplama raporu kullanarak, aşağıdakilerden herhangi birine gereksinim duyan cihazları görebilirsiniz:
 - imza güncelleştirmesi
-- Yeniden başlat
+- yeniden başlatıp
 - el ile müdahale
 - tam tarama
 - müdahale gerektiren diğer aracı durumları
@@ -518,7 +539,7 @@ Surface Hub’ın toplantıdaki konferans odası olarak görünmesi için eşsiz
 ##### <a name="attack-surface-reduction"></a>Saldırı Yüzeyini Azaltma
 
 
-|Ayar adı  |Ayar seçenekleri  |Açıklama  |
+|Ayar adı  |Ayar seçenekleri  |Description  |
 |---------|---------|---------|
 |Parola korumalı yürütülebilir içeriğin e-postadan yürütülmesi|Engelle, Denetle, Yapılandırılmadı|E-posta üzerinden indirilen parola korumalı yürütülebilir dosyaların çalıştırılmasını engelleyin.|
 |Gelişmiş fidye yazılımı koruması|Etkin, Denetle, Yapılandırılmadı|Agresif fidye yazılımı koruması kullanır.|
@@ -529,7 +550,7 @@ Surface Hub’ın toplantıdaki konferans odası olarak görünmesi için eşsiz
 
 ##### <a name="controlled-folder-access"></a>Denetlenen klasör erişimi
 
-|              Ayar adı               |                                                              Ayar seçenekleri                                                              | Açıklama |
+|              Ayar adı               |                                                              Ayar seçenekleri                                                              | Description |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Klasör koruması (zaten uygulanmış) | Yapılandırılmamış, Etkinleştir, Yalnızca denetle (zaten uygulanmış)<br><br> <strong>Yeni</strong><br>Disk değişikliğini engelle, Disk değişikliğini denetle |             |
 
@@ -818,7 +839,7 @@ Daha önceden eklediyseniz durumunuz seçtiğiniz ayara bağlıdır:
 | Ayar | Varsayılan Cihaz Türü Kısıtlamasında Android for Work durumu | Notlar |
 | --- | --- | --- |
 | **Tüm cihazları Android olarak yönetme** | Engellendi | Tüm Android cihazların Android for Work ile kaydolması gerekir. |
-| **Desteklenen cihazları Android for Work olarak yönetme** | İzin verildi | Android for Work’ü destekleyen tüm Android cihazların Android for Work ile kaydolması gerekir. |
+| **Desteklenen cihazları Android for Work olarak yönetme** | İzin Verildi | Android for Work’ü destekleyen tüm Android cihazların Android for Work ile kaydolması gerekir. |
 | **Yalnızca bu gruplardaki kullanıcılar için desteklenen cihazları Android for Work olarak yönetme** | Engellendi | Varsayılan ayarı geçersiz kılmak için ayrı bir Cihaz Türü Kısıtlama ilkesi oluşturuldu. Bu ilke önceden Android for Work kaydına izin vermek için seçtiğiniz grupları tanımlar. Seçili gruplardaki kullanıcıların Android for Work cihazlarını kaydetmesine izin verilir. Diğer tüm kullanıcıların Android for Work ile kaydolması kısıtlanır. |
 
 Tüm durumlarda, hedeflenen düzenlemeniz korunur. Ortamınızda Android for Work’e genel olarak veya grup başına verilen izinleri tutmak için herhangi bir eylem gerçekleştirmeniz gerekmez.
@@ -1111,23 +1132,6 @@ Lütfen Intune Uygulama Koruması yerine Intune’u sık kullanılan olarak etik
 
 **Ek bilgiler**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
-### <a name="plan-for-change-windows-company-portal-send-feedback-option-may-no-longer-work"></a>Değişiklik Planı: Windows Şirket Portalı Geri Bildirim Gönder seçeneği artık çalışmayabilir  
-Windows Şirket Portalı uygulamasının, kullanıcılara uygulama hakkında Microsoft’a geri bildirim gönderme imkanı veren bir **Geri Bildirim Gönder** seçeneği vardır. 30 Nisan 2018 tarihinden itibaren bu seçenek, yalnızca Windows 10 1607 (Yıldönümü Güncelleştirmesi) ve üzeri sürümlerde çalışan Windows 10 Şirket Portalı uygulamasında desteklenmeye devam edecek.  
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?  
-Son kullanıcılar için yüklenmiş Windows Şirket Portalı uygulamanız yoksa lütfen bu iletiyi görmezden gelin. Herhangi bir kullanıcınızda Şirket Portalı uygulaması varsa uygulamadaki **Geri Bildirim Gönder** düğmesinin 30 Nisan’dan itibaren şu senaryolarda çalışmayacağına dikkat edin:  
-- Windows 10 1507 ve 1511 sürümlerinde kullanılan Windows 10 Şirket Portalı uygulaması  
-- Windows Phone 8.1 Şirket Portalı uygulaması  
-
-Etkilenen cihazlarda **Geri Bildirim Gönder** seçeneği, tekrar denense bile her seferinde başarısız olacaktır. Bu platformlardaki deneyim hakkında Microsoft’a geri bildirim göndermek için daha aşağıda listelenmiş alternatif geri bildirim kanallarına bakabilirsiniz.  
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?  
-Lütfen kullanıcılarınızı bu değişiklik konusunda bilgilendirin ve gerekiyorsa mevcut kullanıcı kılavuzlarını güncelleştirin. Şirket Portalı uygulaması kullanan Windows Phone 8.1, Windows 10 1507 ve Windows 10 1511 son kullanıcılarına iki adet alternatif geri bildirim kanalı kullanabileceklerini belirtin. Bu son kullanıcılar:  
-- Windows 10’daki Geri Bildirim Hub’ı uygulamasını kullanabilirler
-- WinCPfeedback@microsoft.com adresine e-posta gönderebilir  
-
-Windows 10 RS1 ve üzeri kullanan son kullanıcılardan Store’daki en güncel Windows Şirket Portalı sürümüne güncelleştirmelerini isteyin.
-
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Değişiklik Planı: Cordova eklentisi için Microsoft Intune Uygulama SDK’sı desteğinde değişiklik
 Intune, [Microsoft Intune Uygulama SDK’sı Cordova Eklentisi](app-sdk-cordova.md) için desteği 1 Mayıs 2018 tarihinde kesiyor. Cordova temelli uygulamalarınızı yönetilebilirlik ve kullanılabilirliğe hazırlamak için Intune Uygulama Sarmalama Aracı’nı kullanmanızı öneririz. Bu değişiklik gerçekleştiğinde, Cordova eklentisi için Microsoft Intune Uygulama SDK’sı artık bakıma alınmayacak veya güncelleştirme almayacak. Uygulama geliştiriciler bu eklentiyi kullanamayacaklar. Intune, Cordova ile oluşturulmuş uygulamaları desteklemeye devam etmeyi planlamaktadır. Ancak Cordova eklentisi için Microsoft Intune Uygulama SDK’sı ile oluşturulmuş uygulamalar Intune’da düşük işlevsellikle karşı karşıya kalabilir. Intune Uygulama Sarmalama Aracı ile sarmaladıktan sonra uygulamalar, normalde olduğu gibi son kullanıcılara dağıtılabilir. Google Play Store’a yayımlanmış Cordova temelli Android uygulamalar için:
 - İlk başlatmada Intune ilkesi almak için kullanıcılardan kimlik bilgileri istenecek.
@@ -1162,7 +1166,7 @@ Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayac
 
 
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz:
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform yol haritası](https://www.microsoft.com/cloud-platform/roadmap)
 * [Şirket Portalı kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md)
