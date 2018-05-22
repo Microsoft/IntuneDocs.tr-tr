@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -127,7 +127,7 @@ Intune uygulama koruma ilkeleri, bir kullanıcının kimliğine hedeflendiği i�
 Bu ilkeleri oluşturmak için Intune konsolunda **Mobil uygulamalar** > **Uygulama koruma** ilkelerine gözatın ve **Bir ilke ekle**’ye tıklayın. Mevcut bir koruma ilkesini de düzenleyebilirsiniz. Uygulama koruma ilkesinin hem yönetilen hem yönetilmeyen cihazlara uygulanmasını istiyorsanız, **Tüm uygulama türlerine hedefle**’nin varsayılan değer olan **Evet** olarak ayarlandığını doğrulayın. Yönetim durumuna bağlı olarak ayrı atamalar yapmak istiyorsanız **Tüm uygulama türlerine hedefle** seçeneğini **Hayır** olarak ayarlayın. 
 
 > [!NOTE]
-> Yönetim durumuna bağlı uygulama koruma ilkeleri hakkında belirli iOS destek bilgilerine ulaşmak istiyorsanız bkz. [Yönetim durumuna bağlı olarak hedeflenen MAM koruma ilkeleri](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
+> Yönetim durumuna bağlı uygulama koruma ilkeleri hakkında belirli iOS destek bilgilerine ulaşmak istiyorsanız bkz. [Yönetim durumuna bağlı olarak hedeflenen MAM koruma ilkeleri](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## <a name="policy-settings"></a>İlke ayarları
 iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdaki bağlantılardan birini seçin:
