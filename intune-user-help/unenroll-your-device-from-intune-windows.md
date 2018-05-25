@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Windows cihazınızı Intune yönetiminden kaldırma
 
@@ -72,13 +72,13 @@ Bir Windows 8.1 mobil cihazı Intune’dan kaldırmak için aşağıdaki adımla
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Şirket Portalı’nı kaldırdıktan sonra kişisel bilgilerinizi kaldırma
 Şirket Portalı’nın Windows cihazınızda depoladığı iki tür veri vardır:
 
--   **Tanılama günlükleri**: Microsoft tarafından toplanan standart uygulama verileri, cihazı Şirket Portalı’ndan kaldırdığınızda otomatik olarak silinir. Uygulama etkinlik verileri, uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi verilerdir.
+-   **Tanılama günlükleri**: Microsoft’un topladığı standart uygulama etkinliği verileri. Bu, Şirket Portalı uygulamasını kaldırdığınızda otomatik olarak silinir. Uygulama etkinlik verileri, uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi verilerdir.
 -   **Uygulama önbelleği**: Simge ve ayarlar gibi bir uygulamanın çalışması için gereken destek dosyaları.
 
-Bu bilgileri tamamen silmek için tamamlamanız gereken birkaç adım vardır.
+Depolanan günlükleri ve önbelleği silmek için aşağıdaki adımlardan birini tamamlayın:
 
-1. Şirket Portalı’nı kaldırın. [Şirket Portalı uygulamasını kaldırmak](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs), cihazınızda depolanan bazı uygulama verilerini kaldırır.  
+* [Şirket Portalı uygulamasını kaldırma](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. Depolanan uygulama verilerini sıfırlamak için Şirket Portalı’nı sıfırlayın. **Ayarlar** uygulamasını açın ve **Uygulamalar** > **Şirket Portalı** > **Gelişmiş seçenekler** > **Sıfırla**’yı seçin. 
+* Şirket Portalı uygulamasını sıfırlayın. **Ayarlar** uygulamasını açın ve **Uygulamalar** > **Şirket Portalı** > **Gelişmiş seçenekler** > **Sıfırla**’yı seçin. 
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.

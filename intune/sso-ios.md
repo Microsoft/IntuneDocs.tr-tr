@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1aaffb2da1f4ec081b59ff6ca1922d983008f77
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırma
 
@@ -59,13 +59,13 @@ Aşağıdaki bölümlerde, çoklu oturum açma alanlarının her biri hakkında 
 
 ### <a name="username-attribute-from-aad-and-realm"></a>AAD'den kullanıcı adı özniteliği ve Bölge
 
-- Bu alanda **Kullanıcı Asıl Adı** seçilirse, aşağıdaki şekilde ayrıştırılır:
+- Bu alan için **Kullanıcı Asıl Adı** seçilirse aşağıdaki şekilde ayrıştırılır:
 
    ![Kullanıcı adı özniteliği](media/User-name-attribute.png)
 
    Ayrıca, **Bölge** metin kutusuna yazdığınız metinle bölge değerinin üzerine yazma seçeneğiniz de vardır.
 
-   Örneğin, Contoso'nun Avrupa, Asya ve Kuzey Amerika gibi çeşitli alt bölgeleri olabilir. Asya'daki kullanıcılarının SSO yükünü kullanmasını isteyebilirler ve uygulama *username@asia.contoso.com* biçiminde UPN gerektirir. Bu durumda, **Kullanıcı Asıl Adı**'nı seçerseniz, varsayılan olarak her kullanıcının bölgesi AAD'den alınır ve bu yalnızca *contoso.com* olabilir. Dolayısıyla özellikle Asya'daki kullanıcılar için bu yükü oluşturabilir ve bölgenin üzerine *asya.contoso.com* değerini yazabilirsiniz. Artık son kullanıcının UPN'si *username@contoso.com* değil, *username@asia.contoso.com* olur.
+   Örneğin, Contoso'nun Avrupa, Asya ve Kuzey Amerika gibi çeşitli alt bölgeleri olabilir. Asya'daki kullanıcılarının SSO yükünü kullanmasını isteyebilirler ve uygulama *username@asia.contoso.com* biçiminde UPN gerektirir. Bu durumda, **Kullanıcı Asıl Adı**’nı seçerseniz varsayılan olarak her kullanıcıdan AAD için alınan bölge yalnızca *contoso.com* olabilir. Dolayısıyla özellikle Asya'daki kullanıcılar için bu yükü oluşturabilir ve bölgenin üzerine *asya.contoso.com* değerini yazabilirsiniz. Artık son kullanıcının UPN'si *username@contoso.com* değil, *username@asia.contoso.com* olur.
 
 - **Cihaz Kimliği**'ni seçerseniz, Intune tarafından otomatik olarak Intune Cihaz Kimliği seçilir.
 

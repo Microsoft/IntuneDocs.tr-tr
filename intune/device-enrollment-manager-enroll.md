@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Cihaz kayıt yöneticisi hesabı kullanarak cihazları kaydetme
 
@@ -73,9 +73,9 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
 
 ## <a name="permissions-for-dem"></a>DEM izinleri
 
-DEM kayıt görevlerini gerçekleştirmek için, Genel Yönetici veya Intune Hizmet Yöneticisi Azure AD rolleri gerekir. Ayrıca özel Kullanıcı rolü altında RBAC izinlerinin de listelenmesine karşın, tüm DEM kullanıcılarını görmek için de bu roller gereklidir. Genel yönetici veya Intune Hizmet yöneticisi rolü atanmamış, ancak Cihaz Kayıt Yöneticileri rolü için okuma izni olan bir kullanıcı oluşturduğu DEM kullanıcılarını yalnızca görebilir. Bu özellikler için RBAC rolü desteği gelecekte duyurulacaktır.
+Genel veya Intune Hizmet Yöneticisi Azure AD rollerinin Yönetici Portalında DEM kaydıyla ilgili görevleri gerçekleştirmesi gerekir. Ayrıca özel Kullanıcı rolü altında RBAC izinlerinin de listelenmesine karşın, tüm DEM kullanıcılarını görmek için de bu roller gereklidir. Genel Yönetici veya Intune Hizmet Yöneticisi rolü atanmamış ancak Cihaz Kayıt Yöneticileri rolü için okuma izinlerine sahip bir kullanıcı yalnızca kendi oluşturduğu DEM kullanıcılarını görebilir. Bu özellikler için RBAC rolü desteği gelecekte duyurulacaktır.
 
-Kullanıcının kendisine atanmış bir Genel yönetici veya Intune Hizmet yöneticisi rolü yoksa ancak kendisine atanmış Cihaz Kayıt Yöneticileri rolü için etkinleştirilmiş okuma izni varsa yalnızca oluşturduğu DEM kullanıcılarını görebilir.
+Kullanıcıya Genel Yönetici veya Intune Hizmet Yöneticisi rolü atanmadıysa ancak Cihaz Kayıt Yöneticileri rolü için okuma izinleri etkinleştirildiyse yalnızca kendi oluşturduğu DEM kullanıcılarını görebilir.
 
 ## <a name="remove-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisini kaldırma
 

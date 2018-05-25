@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 905c51dcbc5b7731be207c25ffd368b339dbec57
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune’da bir cihazın geçiş kodunu sıfırlama veya kaldırma
 
@@ -47,7 +47,7 @@ Bir cihazda yeni bir geçiş kodu oluşturmak için **Geçiş kodunu kaldır** e
 
 ## <a name="resetting-android-for-work-passcodes"></a>Android for Work geçiş kodlarını sıfırlama
 
-Desteklenen Android for Work cihazlar, yeni bir cihaz kilidi açma parolası veya son kullanıcı için bir yönetilen profil sınaması alır. İş profiline sahip Android 7.0 veya üzeri sürümlerdeki cihazlarda ise son kullanıcılar, kayıt tamamlandıktan hemen sonra geçiş kodu sıfırlama belirteçlerini etkinleştirmek için bildirim alırlar. Bildirim, bir İş profili parolası gerekli ve ayarlıysa görüntülenir. Geçiş kodu girildikten sonra bildirim kaybolur.
+Desteklenen Android for Work cihazları, yeni bir yönetilen profil kilidini açma parolası veya son kullanıcı için bir yönetilen profil sınaması alır. İş profiline sahip Android 7.0 veya üzeri sürümlerdeki cihazlarda ise son kullanıcılar, kayıt tamamlandıktan hemen sonra geçiş kodu sıfırlama belirteçlerini etkinleştirmek için bildirim alırlar. Bildirim, bir İş profili parolası gerekli ve ayarlıysa görüntülenir. Geçiş kodu girildikten sonra bildirim kaybolur.
 
 ## <a name="resetting-ios-passcodes"></a>iOS geçiş kodlarını sıfırlama
 

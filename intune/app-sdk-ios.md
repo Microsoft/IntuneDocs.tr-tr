@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 04/06/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: ''
+ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
 > [!NOTE]
-> Öncelikle, desteklenen platformlarda tümleştirme için hazırlığın nasıl yapıldığını açıklayan [Intune Uygulama SDK’sını Kullanmaya Başlama Kılavuzu](app-sdk-get-started.md) makalesini okumanız önerilir.
+> Desteklenen platformlarda tümleştirme için hazırlığın nasıl yapıldığını açıklayan [Intune Uygulama SDK’sı Kılavuzunu Kullanmaya Başlama](app-sdk-get-started.md) makalesini okumanız önerilir.
 
 iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini (**APP** veya **MAM ilkeleri** olarak da bilinir) yerel iOS uygulamanıza eklemenizi sağlar. MAM özellikli uygulamalar Intune Uygulama SDK’sı ile tümleşik çalışır. Intune uygulamayı etkin bir şekilde yönetirken, BT yöneticileri mobil uygulamanıza uygulama koruma ilkeleri dağıtabilir.
 
@@ -81,8 +81,8 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
 1. **1. Seçenek (önerilen)**: Projenizle `IntuneMAM.framework` arasında bağlantı oluşturun. `IntuneMAM.framework` öğesini proje hedefinin **Katıştırılmış İkili Dosyalar** listesine sürükleyin.
 
-    > [!NOTE]
-    > Çerçeveyi kullanırsanız, uygulamanızı App Store’a göndermeden önce evrensel çerçeveden benzetici mimarilerini elle çıkarmanız gerekir. Daha fazla bilgi için bkz. [Uygulamanızı App Store'a gönderme](#Submit-your-app-to-the-App-Store).
+   > [!NOTE]
+   > Çerçeveyi kullanırsanız, uygulamanızı App Store’a göndermeden önce evrensel çerçeveden benzetici mimarilerini elle çıkarmanız gerekir. Daha fazla bilgi için bkz. [Uygulamanızı App Store'a gönderme](#Submit-your-app-to-the-App-Store).
 
 2. **2. Seçenek**: `libIntuneMAM.a` kitaplığı ile bağlantı oluşturun. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
 
@@ -179,7 +179,7 @@ Uygulamanızla ADAL ikili dosyaları arasında bağlantı kurmak için aşağıd
 
 
 
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Aynı sağlama profiliyle imzalanan diğer uygulamalarla ADAL belirteç önbelleğini paylaşmak mı istiyorsunuz?**
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Aynı sağlama profiliyle imzalanan diğer uygulamalarla ADAL belirteç önbelleği paylaşılsın mı?
 
 ADAL belirteçlerinin aynı sağlama profiliyle imzalanan uygulamalar arasında paylaşılmasını istiyorsanız aşağıdaki talimatları izleyin:
 
@@ -523,7 +523,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!Note] Intune türlerini etkinleştirme kuralına eklemek için IntuneMAMConfigurator aracı kullanılabilir. Mevcut etkinleştirme kuralınız önceden tanımlı dize sabitleri (ör. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText vb.) kullanıyorsa, koşul sözdizimi hayli karmaşıklaşabilir. IntuneMAMConfigurator aracı ayrıca, Intune türlerini eklerken etkinleştirme kuralını dize sabitlerinden koşul dizesine dönüştürmek için kullanılabilir. IntuneMAMConfigurator, GitHub depomuzda bulunur. 
+> [!NOTE]
+> Intune türlerini etkinleştirme kuralına eklemek için IntuneMAMConfigurator aracı kullanılabilir. Mevcut etkinleştirme kuralınız önceden tanımlı dize sabitleri (ör. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText vb.) kullanıyorsa, koşul sözdizimi hayli karmaşıklaşabilir. IntuneMAMConfigurator aracı ayrıca, Intune türlerini eklerken etkinleştirme kuralını dize sabitlerinden koşul dizesine dönüştürmek için kullanılabilir. IntuneMAMConfigurator, GitHub depomuzda bulunur. 
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>iOS uygulamalarınız için MAM'ı hedefleyen yapılandırmayı etkinleştirme

@@ -14,11 +14,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a3b98dad86b7abe5ce330ae99fdf008137cc2b11
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel cihaz profili kullanma - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ ms.lasthandoff: 04/26/2018
 - Android için [Android PSK Oluşturucu](http://intunepskgenerator.johnathonb.com/) da kullanabilirsiniz.
 - Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
 - iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın. Ya da [iOS PSK Mobil Yapılandırma Oluşturucu](http://intunepskgenerator.johnathonb.com/) kullanın.
+- PSK 64 onaltılık rakamdan oluşan bir dize veya 8 ile 63 arası yazdırılabilir ASCII karakterden oluşan bir parola gerektirir. Yıldız işareti ( * ) gibi bazı karakterler desteklenmez.
 
 ## <a name="create-a-custom-profile"></a>Özel profil oluşturma
 Android, Windows veya EAP tabanlı bir Wi-Fi profili için önceden paylaşılan bir anahtarla özel bir profil oluşturabilirsiniz. Profili Azure portalını kullanarak oluşturmak için bkz. [Özel cihaz ayarları oluşturma](custom-settings-configure.md). Cihaz profilini oluşturduğunuzda, cihaz platformunuz için **Özel**’i seçin. Wi-Fi profilini seçmeyin. Özeli seçtiğinizde, aşağıdakileri yaptığınızdan emin olun: 
@@ -42,16 +43,16 @@ Android, Windows veya EAP tabanlı bir Wi-Fi profili için önceden paylaşılan
 1. Profil için bir ad ve açıklama girin.
 2. Aşağıdaki özelliklere sahip yeni bir OMA-URI ayarı ekleyin: 
 
-   a. Bu Wi-Fi ağ ayarı için bir ad girin
+   a. Bu Wi-Fi ağ ayarı için bir ad girin.
 
-   b. (İsteğe bağlı) OMA-URI ayarı için bir açıklama girin veya boş bırakın
+   b. (İsteğe bağlı) OMA-URI ayarının bir açıklamasını girin veya boş bırakın.
 
-   c. **Veri Türü**’nü **Dize** olarak ayarlayın
+   c. **Veri Türü**’nü **Dize** olarak ayarlayın.
 
    d. **OMA-URI**:
 
-   - **Android için**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-   - **Windows için**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Android için**: ./Vendor/MSFT/WiFi/Profile/SSID/Settings
+   - **Windows için**: ./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
 
      > [!NOTE]
      > Başına nokta karakterini eklediğinizden emin olun.

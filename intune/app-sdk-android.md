@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/02/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3f8dd2e63702a7eff3b1808628a25df9618da1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 93ecf7b66be25f0f93456d5419ef1f57b8ca7efe
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -32,19 +32,12 @@ Android için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkele
 
 Intune Uygulama SDK’sı aşağıdaki dosyalardan oluşur:  
 
-* **Microsoft.Intune.MAM.SDK.aar**: Support.V4 ve Support.V7 JAR dosyaları dışındaki SDK bileşenleri. Derleme sisteminiz AAR dosyalarını destekliyorsa bu dosya, tek bileşenlerin yerine kullanılabilir.
+* **Microsoft.Intune.MAM.SDK.aar**: Support.V4 ve Support.V7 JAR dosyaları dışındaki SDK bileşenleri.
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar**: Android v4 destek kitaplığını kullanan uygulamalarda MAM özelliğini etkinleştirmek için gereken arabirimler. Bu desteğe ihtiyaç duyan uygulamalar JAR dosyasına doğrudan başvurmalıdır.
 * **Microsoft.Intune.MAM.SDK.Support.v7.jar**: Android v7 destek kitaplığını kullanan uygulamalarda MAM özelliğini etkinleştirmek için gereken arabirimler. Bu desteğe ihtiyaç duyan uygulamalar JAR dosyasına doğrudan başvurmalıdır.
 * **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: Bu jar dosyası, yalnızca daha yeni cihazlarda bulunan ama MAMActivity içindeki yöntemlerde başvurulan Android sistem sınıfları için saplamalar içerir. Daha yeni cihazlarda bu saplama sınıfları yoksayılır. Bu jar dosyası yalnızca uygulamanızın MAMActivity'den türetilen sınıflarla yansıtma yaptığı durumlarda gereklidir ve uygulamaların çoğunun bu dosyayı içermesi gerekmez. Bu jar dosyasını kullanırsanız, tüm sınıflarını ProGuard'ın dışında tutmaya dikkat etmelisiniz. Bunlar, "android" kök paketinin altında olacaktır
-* **proguard.txt**: ProGuard ile oluşturuluyorsa, uygulanması gereken ProGuard kurallarını içerir.
 * **CHANGELOG.txt**: Her SDK sürümünde yapılmış değişikliklerin kaydını sağlar.
 * **THIRDPARTYNOTICES.TXT**:  Uygulamanıza derlenecek üçüncü taraf ve/veya OSS kodunu tanıyan bir öznitelik bildirimi.
-
-Oluşturma sisteminiz AAR dosyalarını desteklemiyorsa, Microsoft.Intune.MAM.SDK.aar yerine aşağıdaki dosyaları kullanabilirsiniz.
-* **Microsoft.Intune.MAM.SDK.jar**: Intune Şirket Portalı uygulamasında MAM özelliğini ve birlikte çalışabilirliği etkinleştirmek için gereken arabirimler. Uygulamalar bunu bir Android kitaplığı başvurusu olarak belirtmelidir.
-* **Kaynak dizini**: SDK’nın bağımlı olduğu kaynaklar (dizeler gibi).
-* **AndroidManifest.xml**: Giriş noktaları ve kitaplık gereksinimleri.
-
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -63,21 +56,19 @@ Cihaz kaydı olmadan uygulama koruması için kullanıcının Şirket Portalı u
 
 ### <a name="build-integration"></a>SDK Tümleştirmesi
 
-Intune Uygulama SDK'sı dış bağımlılıkları olmayan standart bir Android kitaplığıdır. **Microsoft.Intune.MAM.SDK.jar**, hem uygulama koruma ilkesi etkinleştirmesi için gereken arabirimleri hem de Microsoft Intune Şirket Portalı uygulamasıyla birlikte çalışma için gereken kodu içerir.
+Intune Uygulama SDK'sı dış bağımlılıkları olmayan standart bir Android kitaplığıdır. **Microsoft.Intune.MAM.SDK.aar**, hem uygulama koruma ilkesi etkinleştirmesi için gereken arabirimleri hem de Microsoft Intune Şirket Portalı uygulamasıyla birlikte çalışma için gereken kodu içerir.
 
-**Microsoft.Intune.MAM.SDK.jar** bir Android kitaplık başvurusu olarak belirtilmelidir. Bunu yapmak için, uygulama projenizi Android Studio’da açın, **Dosya > Yeni > Yeni modül**’e gidin ve **.JAR/.AAR Paketini İçeri Aktar**’ı seçin. Android arşiv paketimiz Microsoft.Intune.MAM.SDK.aar’ı seçin.
+**Microsoft.Intune.MAM.SDK.aar** bir Android kitaplık başvurusu olarak belirtilmelidir. Bunu yapmak için, uygulama projenizi Android Studio’da açın, **Dosya > Yeni > Yeni modül**’e gidin ve **.JAR/.AAR Paketini İçeri Aktar**’ı seçin. Daha sonra, .AAR’miz için bir modül oluşturmak üzere Android arşiv paketimiz Microsoft.Intune.MAM.SDK.aar’ı seçin. Uygulama kodunuzu içeren modül veya modüllere sağ tıklayın ve **Modül Ayarları** > **Bağımlılıklar sekmesi** > **+ simgesi** > **Modül bağımlılığı** > Oluşturduğunuz MAM SDK AAR modülü > **Tamam**’ı seçin. Bu, projenizi derlediğinizde modülünüzün MAM SDK’sı ile derlendiğinden emin olmanızı sağlar.
 
 Buna ek olarak, **Microsoft.Intune.MAM.SDK.Support.v4** ve **Microsoft.Intune.MAM.SDK.Support.v7** sırasıyla `android.support.v4` ve `android.support.v7`‘nin Intune çeşitlemelerini içerir. Uygulamanın destek kitaplıklarını eklemek istemediği durumlarda Microsoft.Intune.MAM.SDK.aar’ın içinde yerleşik olarak bulunmaz. Bunlar Android kitaplık projeleri değil standart JAR dosyalarıdır.
 
 #### <a name="proguard"></a>ProGuard
 
-Derleme adımı olarak [ProGuard](http://proguard.sourceforge.net/) (veya başka bir daraltma/gizleme mekanizması) kullanılıyorsa, Intune SDK sınıfları hariç tutulmalıdır. ProGuard için bu, SDK ile dağıtılan proguard.txt dosyasından kurallar ekleyerek gerçekleştirilir.
+Derleme adımı olarak [ProGuard](http://proguard.sourceforge.net/) (veya başka bir daraltma/gizleme mekanizması) kullanılıyorsa, Intune SDK sınıfları hariç tutulmalıdır. Derlemenize .aar dosyasını eklerken, kurallarımız otomatik olarak ProGuard adımıyla tümleştirilir ve gerekli dosyalar tutulur. 
 
 Azure Active Directory Authentication Library’lerin (ADAL) kendi ProGuard kısıtlamaları olabilir. Uygulamanız ADAL ile tümleştiriliyorsa, bu kısıtlamalarla ilgili olarak ADAL belgelerine bakmalısınız.
 
 ### <a name="entry-points"></a>Giriş noktaları
-
-Bu izinler, Azure Active Directory Kimlik Doğrulama Kitaplığı ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) tarafından aracılık edilen kimlik doğrulaması gerçekleştirmek üzere istenir. Bu izinler uygulamaya sağlanmazsa veya kullanıcı tarafından kaldırılırsa, aracı (Şirket Portalı uygulaması) gerektiren kimlik doğrulama akışları devre dışı bırakılır.
 
 Intune Uygulama SDK'sı, Intune uygulama koruma ilkelerini etkinleştirmek için bir uygulamanın kaynak kodunda değişiklik yapılmasını gerektirir. Bu işlem, Android temel sınıflarının, **MAM** olarak adlandırılan eşdeğer Intune temel sınıflarıyla değiştirilmesi yoluyla yapılır. SDK sınıfları, Android temel sınıfı ile uygulamanın söz konusu sınıftan türettiği sürüm arasında çalışır. Örnek olarak bir etkinlik kullanıldığında elde edilen devralma hiyerarşisi şunun gibi görünür: `Activity` > `MAMActivity` > `AppSpecificActivity`.
 
@@ -102,6 +93,7 @@ Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bun
 | android.app.IntentService | MAMIntentService |
 | android.app.LauncherActivity | MAMLauncherActivity |
 | android.app.ListActivity | MAMListActivity |
+| android.app.ListFragment | MAMListFragment |
 | android.app.NativeActivity | MAMNativeActivity |
 | android.app.PendingIntent | MAMPendingIntent (bkz. [Pending Intent](#pendingintent)) |
 | android.app.Service | MAMService |
@@ -118,13 +110,14 @@ Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bun
 | android.media.MediaMetadataRetriever | MAMMediaMetadataRetriever |
 | android.provider.DocumentsProvider | MAMDocumentsProvider |
 | android.preference.PreferenceActivity | MAMPreferenceActivity |
+| android.support.multidex.MultiDexApplication | MAMMultiDexApplication |
 
 > [!NOTE]
 > Uygulamanıza türetilen kendi `Application` sınıfı gerekmiyor olsa da, [aşağıdaki `MAMApplication` bölümüne bakın](#mamapplication)
 
 ### <a name="microsoftintunemamsdksupportv4jar"></a>Microsoft.Intune.MAM.SDK.Support.v4.jar:
 
-| Android Sınıfı Intune MAM | Intune Uygulama SDK'sı karşılığı |
+| Android Sınıfı | Intune Uygulama SDK'sı karşılığı |
 |--|--|
 | android.support.v4.app.DialogFragment | MAMDialogFragment
 | android.support.v4.app.FragmentActivity | MAMFragmentActivity
@@ -132,6 +125,7 @@ Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bun
 | android.support.v4.app.JobIntentService | MAMJobIntentService
 | android.support.v4.app.TaskStackBuilder | MAMTaskStackBuilder
 | android.support.v4.content.FileProvider | MAMFileProvider
+| android.support.v4.content.WakefulBroadcastReceiver | MAMWakefulBroadcastReceiver
 
 ### <a name="microsoftintunemamsdksupportv7jar"></a>Microsoft.Intune.MAM.SDK.Support.v7.jar:
 
@@ -140,19 +134,16 @@ Android temel sınıfları, ilgili MAM eşdeğerleriyle değiştirilmelidir. Bun
 |android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 
 ### <a name="renamed-methods"></a>Yeniden Adlandırılan Yöntemler
-
-
 Birçok durumda, Android sınıfında kullanılabilir olan bir yöntem, MAM değiştirme sınıfında kesin olarak işaretlenmiştir. Bu durumda, MAM değiştirme sınıfı benzer ada sahip olup (genellikle `MAM` son ekini alır) geçersiz kılmanız gereken bir yöntem sağlar. Örneğin, `MAMActivity`’i geçersiz kılıp `onCreate()` çağırmak yerine `super.onCreate()`’den türetilirken, `Activity`, `onMAMCreate()`’i geçersiz kılmalı ve `super.onMAMCreate()` çağırmalıdır. Java derleyicisi, MAM eşdeğeri yerine özgün metodun yanlışlıkla geçersiz kılınmasını önleyen kesin kısıtlamalar uygulamalıdır.
 
 ### <a name="mamapplication"></a>MAMApplication
-MAM SDK'sı içindeki kısıtlamalara bağlı olarak, bir `com.microsoft.intune.mam.client.app.MAMApplication` alt sınıfı **oluşturmalı** ve bildiriminizde kullanılan `Application` sınıfının adına ayarlamalısınız. `MAMApplication` soyuttur ve `byte[] getADALSecretKey` için bir geçersiz kılma gerektirir; nasıl uygulanacağı konusunda daha fazla bilgi için lütfen bu işlevle ilgili Javadoc'a bakın.
+Uygulamanız bir `android.app.Application` alt sınıfı oluşturursa bunun yerine bir `com.microsoft.intune.mam.client.app.MAMApplication` alt sınıfı oluşturmanız **gerekir**. Uygulamanız `android.app.Application` alt sınıfı oluşturmazsa AndroidManifest.xml’in `<application>` etiketinde `"android:name"` özniteliği olarak `"com.microsoft.intune.mam.client.app.MAMApplication"` ayarlamanız **gerekir**.
 ### <a name="pendingintent"></a>PendingIntent
 `PendingIntent.get*` yerine `MAMPendingIntent.get*` yöntemini kullanmanız gerekir. Bundan sonra her zamanki gibi `PendingIntent` sonucunu kullanabilirsiniz.
 
 ### <a name="manifest-replacements"></a>Bildirim Değişiklikleri
 Hem bildirimde hem de Java kodunda yukarıdaki sınıf değişikliklerinden bazılarını yapmanız gerekebileceğini lütfen unutmayın. Özel not:
 * `android.support.v4.content.FileProvider` için olan bildirim başvuruları `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider` ile değiştirilmelidir.
-* Uygulamanızın kendi türetilmiş Uygulama sınıfına ihtiyacı yoksa bildirimde kullanılan Uygulama sınıfı adı olarak `com.microsoft.intune.mam.client.app.MAMApplication` ayarlanmalıdır.
 
 ## <a name="sdk-permissions"></a>SDK izinleri
 
@@ -329,7 +320,7 @@ Birçok uygulama, son kullanıcının dosyaları yerel olarak veya bir bulut dep
 ```java
 MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
-``````
+```
 
 ... burada `service`, aşağıdaki SaveLocation değerlerinden biridir:
 
@@ -341,7 +332,6 @@ SaveLocation service, String username);
 Kullanıcının ilkesinin çeşitli konumlara veri kaydetmesine izin verip vermediğini belirlemeye yönelik önceki yöntem, aynı **AppPolicy** sınıfındaki `getIsSaveToPersonalAllowed()` yöntemiydi. Bu işlev artık **kullanım dışı bırakılmıştır** ve kullanılmamalıdır; aşağıdaki çağrı `getIsSaveToPersonalAllowed()` ile eşdeğerdir:
 
 ```java
-
 MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
 ```
 
@@ -365,7 +355,7 @@ public void onCreate() {
       new ToastNotificationReceiver(),
       MAMNotificationType.WIPE_USER_DATA);
   }
-``````
+```
 
 ### <a name="mamnotificationreceiver"></a>MAMNotificationReceiver
 
@@ -406,7 +396,7 @@ Aşağıdaki bildirimler uygulamaya gönderilir ve bazıları uygulama katılım
 
 * **WIPE_USER_DATA**: Bu bildirim bir `MAMUserNotification` sınıfında gönderilir. Bu bildirim alındığında uygulamanın, `MAMUserNotification` ile geçirilen “kurumsal” kimliğiyle ilişkili tüm verileri silmesi beklenir. Bu bildirim şu anda, APP-WE hizmeti kaydını silme sırasında gönderilmektedir. Kullanıcının birincil adı, genellikle kayıt işlemi sırasında belirtilir. Bu bildirime kaydolursanız, uygulamanız tüm kullanıcı verilerinin silindiğinden emin olmalıdır. Kaydolmazsanız, varsayılan seçici silme davranışı gerçekleştirilir.
 
-* **WIPE_USER_AUXILIARY_DATA**: Uygulamalar Intune Uygulama SDK’sının varsayılan seçmeli silme davranışını gerçekleştirmesini ve diğer yandan silme gerçekleştirildiğinde bazı yardımcı verilerin kaldırılmasını isterse bu bildirime kaydolabilir.
+* **WIPE_USER_AUXILIARY_DATA**: Uygulamalar Intune Uygulama SDK’sının varsayılan seçmeli silme davranışını gerçekleştirmesini ve diğer yandan silme gerçekleştirildiğinde bazı yardımcı verilerin kaldırılmasını isterse bu bildirime kaydolabilir. Bu bildirim, tek kimlikli uygulamalar için kullanılamaz; yalnızca çok kimlikli uygulamalara gönderilir.
 
 * **REFRESH_POLICY**: Bu bildirim bir `MAMUserNotification` içinde gönderilir. Bu bildirim alındığında, önbelleğe alınan herhangi bir Intune ilkesinin geçersiz kılınması ve güncelleştirilmesi gerekir. Bu işlem genellikle SDK tarafından yapılır, ancak ilke kalıcı olarak kullanılıyorsa, uygulama tarafından yapılması gerekir.
 
@@ -442,7 +432,9 @@ Uygulamanızı yapılandırmak ve uygun kimlik doğrulamasını sağlamak için 
 
 ### <a name="adal-metadata"></a>ADAL meta verileri
 
-* **Authority**, kullanımdaki geçerli AAD yetkilisidir. Varsa, AAD hesaplarının yapılandırıldığı ortamınızı kullanmanız gerekir. Bu değer yoksa, Intune varsayılanı kullanılır.
+* **Yetkili**, kullanımdaki AAD yetkilisidir. Bu değer yoksa AAD ortak ortamı kullanılır.
+> [!NOTE]
+> Uygulamanız bağımsız bulut kullanıyorsa bu alanı ayarlamayın.
 
 * **ClientID**, kullanılacak AAD İstemci Kimliğidir. Azure AD’ye kaydedildiyse, kendi uygulamanızın ClientID değerini kullanmalısınız. Bu değer yoksa, Intune varsayılanı kullanılır.
 
@@ -455,34 +447,47 @@ Uygulamanızı yapılandırmak ve uygun kimlik doğrulamasını sağlamak için 
 
 ### <a name="common-adal-configurations"></a>Yaygın ADAL yapılandırmaları
 
-Aşağıda, uygulamanın ADAL ile yapılandırılabilmesinin yaygın yolları açıklanmıştır. Uygulamanızın yapılandırmasını bulun ve ADAL meta veri parametrelerini (yukarıda açıklanan parametreler) gerekli değerlere ayarladığınızdan emin olun.
+Aşağıda, uygulamanın ADAL ile yapılandırılabilmesinin yaygın yolları açıklanmıştır. Uygulamanızın yapılandırmasını bulun ve ADAL meta veri parametrelerini (yukarıda açıklanan parametreler) gerekli değerlere ayarladığınızdan emin olun. Tüm durumlarda, varsayılan olmayan ortamlarda istenirse Yetkili belirtilebilir ancak genellikle gerekli değildir.
 
 1. **Uygulama ADAL ile tümleştirilmezse:**
 
-    | Gerekli ADAL parametresi | Değer |
-    |--|--|
-    | Yetkili | AAD hesaplarının yapılandırıldığı, tercih edilen ortam |
-    | SkipBroker | True |
+Ek bildirim değerlerinin yapılandırılması gerekmiyor.
 
 2. **Uygulama ADAL ile tümleştirilirse:**
 
     |Gerekli ADAL parametresi| Değer |
     |--|--|
-    | Yetkili | AAD hesaplarının yapılandırıldığı, tercih edilen ortam |
     | İstemci Kimliği | Uygulamanın İstemci Kimliği (uygulama kaydedilirken Azure AD tarafından oluşturulur) |
-    | NonBrokerRedirectURI | Uygulama için geçerli bir yeniden yönlendirme URI’si veya varsayılan olarak `urn:ietf:wg:oauth:2.0:oob`. <br><br> Değeri, uygulamanızın İstemci Kimliği için kabul edilebilir bir yeniden yönlendirme URI’si olarak yapılandırdığınızdan emin olun.
     | SkipBroker | False |
 
+Gerekirse Yetkili ve NonBrokerRedirectURI belirtilebilir.
+
+Intune SDK’sı ekibi, uygulamanızın Uygulama Kimliğine (İstemci Kimliği) gereksinim duyar. Bunu [Azure Portalı](https://portal.azure.com/)’nda **Tüm Uygulamalar** altındaki **Uygulama Kimliği** sütununda bulabilirsiniz. AAD ile uygulama kaydetme hakkında daha fazla bilgi için [buraya](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) bakın. Intune SDK ekibine msintuneappsdk@microsoft.com adresinden ulaşabilirsiniz.
+
+Ayrıca aşağıdaki [Koşullu Erişim](#conditional-access) gereksinimlerini inceleyin.
 
 3. **Uygulama ADAL’ı tümleştirir ama aracılı kimlik doğrulaması/cihaz genelinde SSO’yu desteklemek:**
 
     |Gerekli ADAL parametresi| Değer |
     |--|--|
-    | Yetkili | AAD hesaplarının yapılandırıldığı, tercih edilen ortam |
     | İstemci Kimliği | Uygulamanın İstemci Kimliği (uygulama kaydedilirken Azure AD tarafından oluşturulur) |
-    | NonBrokerRedirectURI | Uygulama için geçerli bir yeniden yönlendirme URI’si veya varsayılan olarak `urn:ietf:wg:oauth:2.0:oob`. <br><br> Değeri, uygulamanızın İstemci Kimliği için kabul edilebilir bir yeniden yönlendirme URI’si olarak yapılandırdığınızdan emin olun.
     | SkipBroker | **True** |
 
+Gerekirse Yetkili ve NonBrokerRedirectURI belirtilebilir.
+
+### <a name="conditional-access"></a>Koşullu Erişim
+Koşullu Erişim (CA), AAD kaynaklarına erişimi denetlemek için kullanılabilen bir Azure Active Directory [özelliğidir](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer).  Intune yöneticileri yalnızca Intune tarafından yönetilen cihazlar veya uygulamalardan kaynak erişimine izin veren [CA kurallarını tanımlayabilir](https://docs.microsoft.com/en-us/intune/conditional-access). Uygulamanızın uygun olduğunda kaynaklara erişebildiğinden emin olmak için aşağıdaki adımları izlemeniz gerekir. Uygulamanız herhangi bir AAD erişim belirteci gerektirmiyorsa veya yalnızca CA ile korunamayan kaynaklara erişiyorsa bu adımları atlayabilirsiniz.
+
+1. [ADAL tümleştirme yönergelerini](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library) izleyin. 
+   Özellikle Aracı kullanımı için 11. Adıma bakın
+2. [Uygulamanızı Azure Active Directory ile kaydetme] (https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration). 
+   Yeniden yönlendirme URI’si, yukarıdaki ADAL tümleştirme kılavuzlarında bulunabilir.
+3. Yukarıda [Yaygın ADAL yapılandırmaları](#common-adal-configurations), öğe 2 için bildirim meta veri parametrelerini ayarlayın.
+4. [Azure portalından](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) [cihaz tabanlı CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use)’yı etkinleştirerek her şeyin doğru yapılandırıldığını sınayıp doğrulayın
+    - Uygulamanızda oturum açma, Intune Şirket Portalı’nı yüklemeyi ve portala kaydolmayı gerektirir
+    - Kayıttan sonra, uygulamanızda oturum açma başarıyla tamamlanır.
+5. Uygulamanız Intune APP SDK tümleştirmesini yaptıktan sonra, [uygulama tabanlı koşullu erişim](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) için onaylanan uygulamalar listesine eklenmek üzere msintuneappsdk@microsoft.com adresiyle iletişim kurun
+6. Uygulamanız onaylananlar listesine eklendikten sonra, [Uygulama tabanlı CA’yı yapılandırarak](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create) doğrulayın ve uygulamanıza oturum açmanın başarıyla tamamlandığından emin olun.
 ## <a name="app-protection-policy-without-device-enrollment"></a>Cihaz kaydı olmadan uygulama koruma ilkesi
 
 ### <a name="overview"></a>Genel bakış
@@ -557,6 +562,7 @@ public interface MAMEnrollmentManager {
 
     //Registration methods
     void registerAccountForMAM(String upn, String aadId, String tenantId);
+  void registerAccountForMAM(String upn, String aadId, String tenantId, String authority);
     void unregisterAccountForMAM(String upn);
     Result getRegisteredAccountStatus(String upn);
 }
@@ -584,23 +590,61 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 > SDK, belirteci almak için düzenli aralıklarla `acquireToken()` yöntemini çağırır; dolayısıyla `updateToken()` çağrısı yapmak kesin olarak gerekli değildir. Bununla birlikte, bu çağrının yapılması önerilir çünkü kayıtların ve uygulama koruma ilkesi iadelerinin zamanında tamamlanmasına yardımcı olabilir.
 
 
-### <a name="account-registration"></a>Hesap kaydı
+### <a name="account-registration"></a>Hesap Kaydı
 
 Bu bölümde, `MAMEnrollmentManager` içindeki hesap kaydı API yöntemleri ve bunların nasıl kullanıldığı açıklanır.
 
 ```java
 void registerAccountForMAM(String upn, String aadId, String tenantId);
+void registerAccountForMAM(String upn, String aadId, String tenantId, String authority);
 void unregisterAccountForMAM(String upn);
 Result getRegisteredAccountStatus(String upn);
 ```
 
-1. Hesabı yönetime kaydetmek için, uygulamanın `registerAccountForMAM()` yöntemini çağırması gerekir. Kullanıcı hesabı hem UPN değeriyle hem de AAD kullanıcı kimliğiyle tanımlanır. Kayıt verilerini kullanıcının AAD kiracısıyla ilişkilendirmek için kiracı kimliği de gereklidir. SDK, verili kullanıcı için MAM hizmetinde uygulamayı kaydetme girişiminde bulunabilir; kayıt başarısız olursa, hesabın kaydı kaldırılana kadar kaydetme işlemini düzenli aralıklarla yeniden dener. Yeniden denemeler normalde 12-24 saatte bir yapılır. SDK, bildirimler yoluyla kayıt girişimlerinin durumunu zaman uyumsuz olarak sağlar.
+1. Hesabı yönetime kaydetmek için, uygulamanın `registerAccountForMAM()` yöntemini çağırması gerekir. Kullanıcı hesabı hem UPN değeriyle hem de AAD kullanıcı kimliğiyle tanımlanır. Kayıt verilerini kullanıcının AAD kiracısıyla ilişkilendirmek için kiracı kimliği de gereklidir. Kullanıcının yetkilisi, belirli bağımsız bulutlara karşı kayda izin vermek için de sağlanabilir, daha fazla ayrıntı için bkz. [Bağımsız Bulut Kaydı](#sovereign-cloud-registration).  SDK, verili kullanıcı için MAM hizmetinde uygulamayı kaydetme girişiminde bulunabilir; kayıt başarısız olursa, hesabın kaydı kaldırılana kadar kaydetme işlemini düzenli aralıklarla yeniden dener. Yeniden denemeler normalde 12-24 saatte bir yapılır. SDK, bildirimler yoluyla kayıt girişimlerinin durumunu zaman uyumsuz olarak sağlar.
 
 2. AAD kimlik doğrulaması gerekli olduğundan, kullanıcı hesabını kaydetmek için en uygun zaman, kullanıcının uygulamada oturum açmasından ve ADAL kullanarak başarıyla kimliğini doğrulamasından sonraki bir zamandır.
     * Kullanıcının AAD kimliği ve kiracı kimliği, ADAL kimlik doğrulama çağrısından [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) nesnesinin bir parçası olarak döndürülür. Kiracı kimliği `AuthenticationResult.getTenantID()` yönteminden gelir.
     * Kullanıcı hakkındaki bilgiler `AuthenticationResult.getUserInfo()` çağrısından gelen `UserInfo` türündeki bir alt nesnede bulunur ve AAD kullanıcı kimliği `UserInfo.getUserId()` çağrısı yapılarak o nesneden alınır.
 
 3. Intune yönetiminden bir hesabın kaydını kaldırmak için, uygulamanın `unregisterAccountForMAM()` yöntemini çağırması gerekir. Hesap başarıyla kaydedilmiş ve yönetilmişse, SDK hesabın kaydını kaldırır ve verilerini temizler. Hesap için düzenli aralıklarla yapılan kayıt yeniden denemeleri durdurulur. SDK, bildirimler yoluyla kayıt kaldırma isteğinin durumunu zaman uyumsuz olarak sağlar.
+
+### <a name="sovereign-cloud-registration"></a>Bağımsız Bulut Kaydı
+
+[Bağımsız bulut kullanan](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) uygulamalar, `authority` öğesini `registerAccountForMAM()` öğesine **sağlamalıdır**.  Bu ADAL'ın [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters içinde `instance_aware=true` sağlayıp AuthenticationCallback AuthenticationResult üzerinde `getAuthority()` çağrılarak alınabilir.
+
+```
+mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
+        new AuthenticationCallback<AuthenticationResult>() {
+            @Override
+            public void onError(final Exception exc) {
+                // authentication failed
+            }
+
+            @Override
+            public void onSuccess(final AuthenticationResult result) {
+                mAuthority = result.getAuthority();
+                // handle other parts of the result
+            }
+        });
+```
+
+> [!NOTE]
+> AndroidManifest.xml meta veri yetkilisini ayarlamayın.
+<br/>
+```
+<meta-data
+    android:name="com.microsoft.intune.mam.aad.Authority"
+    android:value="https://AAD authority/" />
+```
+
+> [!NOTE]
+> `MAMServiceAuthenticationCallback::acquireToken()` yönteminizde yetkilinin doğru ayarlandığından emin olun.
+
+
+#### <a name="currently-supported-sovereign-clouds"></a>Şu Anda Desteklenen Bağımsız Bulutlar
+
+1. Arlington
 
 ### <a name="important-implementation-notes"></a>Önemli uygulama notları
 
@@ -612,6 +656,7 @@ Result getRegisteredAccountStatus(String upn);
 
 * Düzenli aralıklarla yapılan uygulama koruma ilkesi yenileme iadeleri için belirteci almak üzere uygulamanın kayıtlı `MAMServiceAuthenticationCallback` yöntemi de çağrılır. İstendiğinde uygulama belirteci sağlayamazsa bildirim almaz, ama iade sürecini hızlandırmak için bir sonraki uygun zamanda belirteci almayı ve `updateToken()` yöntemini çağırmayı denemelidir. Belirteç sağlanmazsa, geri çağırma bir sonraki iade girişiminde yine de çağrılır.
 
+* Bağımsız bulutlar için destek, yetkilinin sağlanmasını gerektirir.
 #### <a name="registration"></a>Kayıt
 
 * Size kolaylık sağlamak açısından, kayıt yöntemleri eşgüçlüdür; örneğin, `registerAccountForMAM()` yöntemi yalnızca bir hesabı kaydeder ve hesap henüz kaydedilmediyse uygulama kaydı yapmayı dener ve `unregisterAccountForMAM()` yöntemi de şu anda kaydedilmiş durumdaysa hesabın kaydını kaldırır. Birbirini izleyen çağrılar çalışmaz; dolayısıyla bu yöntemlerin birden çok kez çağrılmasının bir zararı olmaz. Buna ek olarak, bu yöntemlere yapılan çağrılar arasındaki iletişim ve sonuç bildirimleri garanti edilmez: şöyle ki, zaten kayıtlı olan bir kimlik için `registerAccountForMAM` çağrılırsa, söz konusu kimlik için yeniden bildirim gönderilmeyebilir. SDK arka planda kayıtları düzenli aralıklarla deneyebildiğinden ve Intune hizmetinden alınan silme isteklerinin tetiklediği kayıt kaldırma işlemleri olabildiğinden, bu yöntemlere yapılan çağrılardan hiçbirine karşılık gelmeyen bildirimlerin gönderilmesi de mümkündür.
@@ -641,7 +686,7 @@ Hesap ilk kez kaydedildiğinde, `PENDING` durumunda başlar. Bu, ilk MAM hizmeti
 
 `COMPANY_PORTAL_REQUIRED` Sonucu alınırsa, SDK kendisi için kayıt istenen kimliğin kullanıldığı etkinliklerin kullanımını engeller. Bunun yerine, SDK bu etkinliklerin Şirket Portalı’nı indirme istemi görüntülemesine neden olur. Uygulamanızda bu davranışı engellemek istiyorsanız, etkinlikler `MAMActivity.onMAMCompanyPortalRequired` gerçekleştirebilir.
 
-Bu yöntem, SDK varsayılan engelleme UI’sini görüntülemeden önce çağrılır. Uygulama etkinlik kimliğini değiştirirse veya kaydolmaya çalışan kullanıcının kaydını kaldırırsa, SDK etkinliği engellemez. Bu durumda, kurumsal verilerin sızdırılmasını önlemek uygulamanın tercihine bağlı olur.
+Bu yöntem, SDK varsayılan engelleme UI’sini görüntülemeden önce çağrılır. Uygulama etkinlik kimliğini değiştirirse veya kaydolmaya çalışan kullanıcının kaydını kaldırırsa, SDK etkinliği engellemez. Bu durumda, kurumsal verilerin sızdırılmasını önlemek uygulamanın tercihine bağlı olur. Yalnızca çok kimlikli uygulamaların (ilerleyen bölümlerde ele alınır) etkinlik kimliğini değiştirebileceğine dikkat edin.
 
 ### <a name="notifications"></a>Bildirimler
 
@@ -653,7 +698,7 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 }
 ```
 
-`getEnrollmentResult()` yöntemi, kayıt isteğinin sonucunu döndürür.  `MAMEnrollmentNotification` `MAMUserNotification`‘ın kapsamını genişlettiğinden, kayıt girişiminde bulunulan kullanıcının kimliği de sağlanır. Uygulama, [SDK’dan gelen bildirimlere kaydolma](#Register-for-notifications-from-the-SDK) bölümünde ayrıntılarıyla açıklandığı gibi, bu bildirimleri almak için `MAMNotificationReceiver` arabirimini gerçekleştirmelidir.
+`getEnrollmentResult()` yöntemi, kayıt isteğinin sonucunu döndürür.  `MAMEnrollmentNotification` `MAMUserNotification`‘ın kapsamını genişlettiğinden, kayıt girişiminde bulunulan kullanıcının kimliği de sağlanır. Uygulama, [SDK’dan gelen bildirimlere kaydolma](#register-for-notifications-from-the-sdk) bölümünde ayrıntılarıyla açıklandığı gibi, bu bildirimleri almak için `MAMNotificationReceiver` arabirimini gerçekleştirmelidir.
 
 Kayıt bildirimi alındığında kayıtlı kullanıcı hesabının durumu değişebilir ama bazı durumlarda da değişmez (örneğin, `AUTHORIZATION_NEEDED` bildirimi `WRONG_USER` gibi daha bilgilendirici bir sonuçtan sonra alınırsa, hesabın durumu olarak daha bilgilendirici olan sonuç korunur).
 
@@ -670,10 +715,11 @@ Ancak, `android:allowBackup` özniteliği, bildirim dosyasında `android:allowBa
 
 Intune, XML’de özel kurallar tanımlama becerisi de dahil olmak üzere Android’in sunduğu tüm [Otomatik Yedekleme özelliklerinden](https://developer.android.com/guide/topics/data/autobackup.html) faydalanmanıza olanak tanır, ancak verilerinizin güvenliğini sağlamak için aşağıdaki adımları uygulamanız gerekir:
 
-1. Uygulamanız kendi özel BackupAgent’ını **kullanmıyorsa**, Intune ilkesi uyumluluğu olan otomatik tam yedeklemelere olanak tanımak için varsayılan MAMBackupAgent’ı kullanın. Bunu yaparsanız, `android:fullBackupOnly` bildirim özniteliğini yoksayabilirsiniz çünkü bu bizim yedekleme aracımıza uygulanamaz. Uygulama bildirimine aşağıdakileri yerleştirin:
+1. Uygulamanız kendi özel BackupAgent’ını **kullanmıyorsa**, Intune ilkesi uyumluluğu olan otomatik tam yedeklemelere olanak tanımak için varsayılan MAMBackupAgent’ı kullanın. Uygulama bildirimine aşağıdakileri yerleştirin:
 
     ```xml
-   android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
+    android:fullBackupOnly="true"
+    android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
 
 
@@ -748,18 +794,18 @@ BackupAgent, hangi verilerin yedeklendiği konusunda çok daha net olmanızı sa
 
 Veri Yedekleme kılavuzu uygulamanızın verilerini geri yüklemeniz için genel bir algoritma belirler ve [BackupAgent’ı Genişletme](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) bölümünde bir kod örneği sağlar. Çok kimlikli geri yükleme işlemini başarmak için, bu kod örneğinde sağlanan genel yapıya uymalı ve aşağıdakilere özel olarak dikkat etmelisiniz:
 
-1.  Yedekleme varlıkları arasında ilerlemek için `while(data.readNextHeader())`* döngüsü kullanmalısınız.
+1. Yedekleme varlıkları arasında ilerlemek için `while(data.readNextHeader())`* döngüsü kullanmalısınız.
 
-2.  `data.getKey()`* `onBackup` içinde yazdığınız anahtarla eşleşmezse, `data.skipEntityData()`* çağrısı yapmalısınız. Bu adımı gerçekleştirmeden geri yüklemeleriniz başarılı olamaz.
+2. `data.getKey()`* `onBackup` içinde yazdığınız anahtarla eşleşmezse, `data.skipEntityData()`* çağrısı yapmalısınız. Bu adımı gerçekleştirmeden geri yüklemeleriniz başarılı olamaz.
 
-3.  `while(data.readNextHeader())`* yapısında yedekleme varlıklarını kullanırken geri dönmekten kaçının, çünkü otomatik olarak yazılan varlıklar kaybedilir.
+3. `while(data.readNextHeader())`* yapısında yedekleme varlıklarını kullanırken geri dönmekten kaçının, çünkü otomatik olarak yazılan varlıklar kaybedilir.
 
 * Burada `data`, geri yüklemede uygulamanıza geçirilen **BackupDataInput** için yerel değişken adıdır.
 
 ## <a name="multi-identity-optional"></a>Çok Kimlikli (isteğe bağlı)
 
 ### <a name="overview"></a>Genel bakış
-Varsayılan olarak Intune Uygulama SDK’sı, ilkeyi uygulamaya bir bütün halinde uygular. Çok kimlikli, ilkenin her kimlik düzeyinde uygulanmasına izin vermek üzere etkinleştirilebilen, isteğe bağlı bir Intune uygulama koruma özelliğidir. Bu, diğer uygulama koruma özelliklerine kıyasla önemli oranda daha fazla uygulama katılımı gerektirir.
+Intune Uygulama SDK’sı varsayılan olarak, ilkeyi uygulamaya bir bütün olarak uygular. Çok kimlikli, ilkenin her kimlik düzeyinde uygulanmasına izin vermek üzere etkinleştirilebilen, isteğe bağlı bir Intune uygulama koruma özelliğidir. Bu, diğer uygulama koruma özelliklerine kıyasla önemli oranda daha fazla uygulama katılımı gerektirir.
 
 Uygulama, etkin kimliği değiştirmeyi amaçladığında bunu SDK’ya bildirmek *zorundadır*. Bazı durumlarda, bir kimlik değişikliği gerektiğinde SDK bunu uygulamaya bildirir. Ancak çoğu zaman MAM, hangi verilerin kullanıcı arabiriminde görüntülendiğini veya belirli bir anda bir iş parçacığında kullanıldığını bilemez, veri sızıntısını önlemek için doğru kimliğin uygulama tarafından ayarlanması gerekir. Aşağıdaki bölümlerde, uygulama eylemi gerektiren bazı senaryolar verilmiştir.
 
@@ -837,7 +883,7 @@ Kimlik ayarlamak için kullanılan tüm yöntemler, sonuç değerlerini `MAMIden
 | Dönüş değeri | Senaryo |
 |--|--|
 | SUCCEEDED | Kimlik değişikliği başarılı oldu. |
-| NOT_ALLOWED | Kimlik değişikliğine izin verilmiyor. Kimlik değişikliğine izin verilmiyor. Bu, geçerli iş parçacığı üzerinde farklı bir kimlik ayarlanmışken kullanıcı arabirimi (Bağlam) kimliğini ayarlamak denenirse gerçekleşir. |
+| NOT_ALLOWED  | Kimlik değişikliğine izin verilmiyor. Bu, geçerli iş parçacığı üzerinde farklı bir kimlik ayarlanmışken kullanıcı arabirimi (Bağlam) kimliğini ayarlamak denenirse gerçekleşir. |
 | CANCELLED | Kullanıcı, genellikle PIN veya kimlik doğrulama istemi üzerindeki geri tuşuna basarak, kimlik değişikliğini iptal etmiştir. |
 | FAILED | Kimlik değişikliği belirlenemeyen bir nedenden dolayı başarısız oldu.|
 
@@ -965,17 +1011,16 @@ UI iş parçacığındaki işlemler için arka plan görevlerinin başka bir iş
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
   ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
 ```
+### <a name="file-protection"></a>Dosya Koruması
 
-  ### <a name="file-protection"></a>Dosya Koruması
-
-  Her dosyanın, oluşturulduğu sırada iş parçacığı ve işlem kimliğine dayalı olarak kendisiyle ilişkilendirilmiş bir kimliği vardır. Bu kimlik hem dosya şifreleme hem de seçici silme için kullanılır. Yalnızca kimliği yönetilen ve şifreleme gerektiren ilkesi bulunan dosyalar şifrelenir. SDK'nın varsayılan seçmeli silme işlevselliği, yalnızca silme işleminin istendiği yönetilen kimlikle ilişkilendirilmiş dosyaları siler. Uygulama, `MAMFileProtectionManager` sınıfını kullanarak bir dosyanın kimliğini sorgulayabilir veya değiştirebilir.
+Her dosyanın, oluşturulduğu sırada iş parçacığı ve işlem kimliğine dayalı olarak kendisiyle ilişkilendirilmiş bir kimliği vardır. Bu kimlik hem dosya şifreleme hem de seçici silme için kullanılır. Yalnızca kimliği yönetilen ve şifreleme gerektiren ilkesi bulunan dosyalar şifrelenir. SDK'nın varsayılan seçmeli silme işlevselliği, yalnızca silme işleminin istendiği yönetilen kimlikle ilişkilendirilmiş dosyaları siler. Uygulama, `MAMFileProtectionManager` sınıfını kullanarak bir dosyanın kimliğini sorgulayabilir veya değiştirebilir.
 
   ```java
     public final class MAMFileProtectionManager {
-    /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the 
-           file, and will tag the file for future protection changes.
 
+        /**
+         * Protect a file. This will synchronously trigger whatever protection is required for the 
+         * file, and will tag the file for future protection changes.
          *
          * @param identity
          *            Identity to set.
@@ -986,40 +1031,50 @@ UI iş parçacığındaki işlemler için arka plan görevlerinin başka bir iş
          */
         public static void protect(final File file, final String identity) throws IOException;
 
-        /**
-        * Protect a file obtained from a content provider. This is intended to be used for
-        * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
-        * It may also be used with descriptors referring to private files owned by this app.
-        * It is not intended to be used for files owned by other apps and such usage will fail. If
-        * creating a new file via a content provider exposed by another MAM-integrated app, the new
-        * file identity will automatically be set correctly if the ContentResolver in use was
-        * obtained via a Context with an identity or if the thread identity is set.
-        *
-        * This will synchronously trigger whatever protection is required for the file, and will tag
-        * the file for future protection changes. If an identity is set on a directory, it is set
-        * recursively on all files and subdirectories. If MAM is operating in offline mode, this
-        * method will silently do nothing.
-        *
-        * @param identity
-        *       Identity to set.
-        * @param file
-        *       File to protect.
-        *
-        * @throws IOException
-        *       If the file cannot be protected.
-
-        */
+       /**
+         * Protect a file obtained from a content provider. This is intended to be used for
+         * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+         * It may also be used with descriptors referring to private files owned by this app.
+         * It is not intended to be used for files owned by other apps and such usage will fail. If
+         * creating a new file via a content provider exposed by another MAM-integrated app, the new
+         * file identity will automatically be set correctly if the ContentResolver in use was
+         * obtained via a Context with an identity or if the thread identity is set.
+         *
+         * This will synchronously trigger whatever protection is required for the file, and will tag
+         * the file for future protection changes. If an identity is set on a directory, it is set
+         * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+         * method will silently do nothing.
+         *
+         * @param identity
+         *            Identity to set.
+         * @param file
+         *            File to protect.
+         *
+         * @throws IOException
+         *             If the file cannot be protected.
+         */
         public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
-        /**
-         * Get the protection info on a file.
-         *
-         * @param file
-         *            File or directory to get information on.
-         * @return File protection info, or null if there is no protection info.
-         * @throws IOException
-         *             If the file cannot be read or opened.
-         */
+       /**
+        * Get the protection info on a file.
+        *
+        * @param file
+        *            File or directory to get information on.
+        * @return File protection info, or null if there is no protection info.
+        * @throws IOException
+        *             If the file cannot be read or opened.
+        */
+        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
+
+       /**
+        * Get the protection info on a file.
+        *
+        * @param file
+        *            File or directory to get information on.
+        * @return File protection info, or null if there is no protection info.
+        * @throws IOException
+        *             If the file cannot be read or opened.
+        */
         public static MAMFileProtectionInfo getProtectionInfo(final ParcelFileDescriptor file) throws IOException;
 
     }
@@ -1040,7 +1095,7 @@ MAM, bir `Activity` öğesinde okunan dosyalar ve görüntülenen veriler arası
     * Sonuç başarısız olarak rapor edilirse uygulama, belgeyi görüntülemez.
   * Uygulama açılır ve dosyayı işler
 
-## <a name="offline-scenarios"></a>Çevrimdışı Senaryolar
+#### <a name="offline-scenarios"></a>Çevrimdışı Senaryolar
 
 Dosya kimliği etiketlemesi çevrimdışı moda karşı hassastır. Aşağıdaki noktalar göz önünde bulundurulmalıdır:
 
@@ -1159,9 +1214,10 @@ Uygulama **ContentProvider** aracılığıyla **ParcelFileDescriptor** dışınd
 
 ### <a name="selective-wipe"></a>Seçmeli Silme
 
-Uygulama `WIPE_USER_DATA` bildirimine kayıtlıysa, SDK’nın varsayılan seçmeli silme davranışının avantajından yararlanamaz. Çoklu kimliği tanıyan uygulamalarda, MAM varsayılan seçmeli silme yalnızca silme işleminde kimliği hedeflenen dosyaları sileceğinden bu kayıp daha önemli olabilir.
+Çok kimlikli bir uygulama `WIPE_USER_DATA` bildirimi için kaydolursa kullanıcı için bu kullanıcıya ait olarak kimlik ile etiketlenmiş tüm dosyalar dahil tüm verilerin kaldırılmasından uygulama sorumludur. Uygulama, kullanıcı verilerini bir dosyadan kaldırır ancak diğer verileri dosyada tutmayı isterse dosyanın kimliğini *değiştirmelidir* (`MAMFileProtectionManager.protect` ile bir kişisel kullanıcı veya boş kimliğe). Şifreleme ilkesi kullanımdaysa silinen kullanıcıya ait kalan dosyaların şifresi çözülmez ve silme işleminden sonra erişilemez hale gelir.
 
-Çoklu kimliği tanıyan bir uygulama MAM varsayılan seçmeli silme işleminin yapılmasını _**ve**_ silme işleminde kendi eylemlerini gerçekleştirmek isterse, `WIPE_USER_AUXILIARY_DATA` bildirimlerine kayıtlı olması gerekir. Bu bildirim, SDK tarafından MAM varsayılan seçmeli silme gerçekleştirmeden hemen önce gönderilir. Uygulama, hiçbir zaman hemen WIPE_USER_DATA hem de WIPE_USER_AUXILIARY_DATA için kaydedilmemelidir.
+`WIPE_USER_DATA` için uygulama kaydı, SDK’nın varsayılan seçmeli silme davranışının avantajından yararlanamaz. Çoklu kimliği tanıyan uygulamalarda, MAM varsayılan seçmeli silme yalnızca silme işleminde kimliği hedeflenen dosyaları sileceğinden bu kayıp daha önemli olabilir. Çoklu kimliği tanıyan bir uygulama MAM varsayılan seçmeli silme işleminin yapılmasını _**ve**_ silme işleminde kendi eylemlerini gerçekleştirmek isterse, `WIPE_USER_AUXILIARY_DATA` bildirimlerine kayıtlı olması gerekir. Bu bildirim, SDK tarafından MAM varsayılan seçmeli silme gerçekleştirmeden hemen önce gönderilir. Uygulama, hiçbir zaman hemen WIPE_USER_DATA hem de WIPE_USER_AUXILIARY_DATA için kaydedilmemelidir.
+
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android uygulamalarınız için MAM hedefli yapılandırmayı etkinleştirme (isteğe bağlı)
 Intune konsolunda uygulamaya özgü anahtar-değer çiftleri yapılandırılabilir. Bu anahtar-değer çiftleri Intune tarafından değiştirilmeden yalnızca uygulamaya geçirilir. Bu tip bir yapılandırma almak isteyen uygulamalar bunun için `MAMAppConfigManager` ve `MAMAppConfig` sınıflarını kullanabilir. Aynı uygulamaya birden çok ilke hedeflenmişse aynı anahtar için birden çok çakışan değer olabilir.
@@ -1403,6 +1459,10 @@ Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri g
 
 ### <a name="reflection-limitations"></a>Yansıma sınırlamaları
 MAM tabanlı sınıflardan bazıları (örn. MAMActivity, MAMDocumentsProvider), yalnızca belirli API düzeylerinin üstünde var olan parametre veya dönüş türlerinin kullanıldığı yöntemler (özgün Android tabanlı sınıflar temelinde) kullanır. Bu nedenle, uygulama bileşenlerinin tüm yöntemlerini listelemek için yansıma kullanmak her zaman mümkün olmayabilir. Bu kısıtlama MAM ile sınırlı değildir; uygulamanın kendisi Android tabanlı sınıflardan bu yöntemleri uyguladığında da aynı kısıtlama geçerli olabilir.
+### <a name="roboelectric"></a>Roboelectric
+Roboelectic altında MAM SDK’sını sınamak desteklenmiyor. Robelectric’te gerçek cihaz veya öykünücülerde doğru yansıtılmayan davranışlar nedeniyle MAM SDK’sını Robelectric altında çalıştırmayla ilgili bilinen sorunlar vardır.
+
+Roboelectric altında uygulamanızı sınamanız gerekiyorsa önerilen geçici çözüm, uygulama sınıfı mantığınızı bir yardımcıya taşımak ve unit-testing APK’nizi MAMApplication’dan devralmayan bir uygulama sınıfıyla üretmektir.
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK tüketicisinin beklentileri
 
 İlkeleri zorunlu kılma işlemi sonucunda hata koşulları daha sık tetiklenebilir, ancak Intune SDK’sı, Android API’si tarafından sağlanan sözleşmeyi korur. Aşağıda belirtilen Android’e yönelik en iyi uygulamalar, hata olasılığını azaltır:

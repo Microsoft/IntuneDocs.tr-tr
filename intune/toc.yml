@@ -488,6 +488,30 @@
           href: conditional-access-assign-jamf.md
     - name: Cihaz verilerini koruma
       items:
+        - name: Gizlilik ve kişisel veriler
+          href: privacy-personal-data.md
+          items:
+            - name: Veri toplama
+              href: privacy-data-collect.md
+            - name: Veri depolama ve işleme
+              href: privacy-data-store-process.md
+            - name: Veri güvenliği ve paylaşımı
+              href: privacy-data-secure-share.md
+              items:
+                - name: Apple’ın Intune’a gönderdiği veriler
+                  href: data-apple-sends-to-intune.md
+                - name: Google’ın Intune’a gönderdiği veriler
+                  href: data-google-sends-to-intune.md
+                - name: Intune’un Apple’a gönderdiği veriler
+                  href: data-intune-sends-to-apple.md
+                - name: Intune’un Google’a gönderdiği veriler
+                  href: data-intune-sends-to-google.md
+                - name: Jamf Pro'dan Intune'a paylaşılan bilgiler
+                  href: conditional-access-integrate-jamf.md
+            - name: Görünüm ve doğru kişisel veriler
+              href: privacy-data-view-correct.md
+            - name: 'Denetim, dışa aktarma, silme'
+              href: privacy-data-audit-export-delete.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:

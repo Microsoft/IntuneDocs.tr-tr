@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android ve Samsung Knox Standard cihaz kısıtlama ayarları 
 
@@ -47,6 +47,10 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
 ## <a name="password"></a>Parola
 
 - **Parola** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu kılın. |Evet|Evet|
+
+    > [!NOTE]
+    > Samsung Knox cihazlar, MDM kaydı sırasında otomatik olarak 4 basamaklı bir PIN gerektirir. Yerel Android cihazlar, koşullu erişimle uyumlu olmak için otomatik olarak bir PIN gerektirebilir.
+
 - **En az parola uzunluğu** - Kullanıcının yapılandırması gereken parolanın uzunluk alt sınırını girin (4 ile 16 karakter arasında).
 - **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** - Cihaz otomatik olarak kilitlenmeden önce işlem yapılmayan dakika sayısını belirtir.
 - **Cihaz silinmeden önceki oturum açma hatası sayısı** - Cihaz silinmeden önce başarısız oturum açma sayısını belirtir.
@@ -55,7 +59,7 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
     - **Cihaz varsayılanı**
     - **Düşük güvenlik biyometriği**
     - **En az sayısal**
-    - **Sayısal karmaşık** - ‘1111’ veya ‘1234’ gibi yinelenen veya ardışık numaralara izin verilmez<sup>1</sup>
+    - **Sayısal karmaşık** - Yinelenen veya ardışık sayılara (örneğin "1111" veya "1234") izin verilmez.<sup>1</sup>
     - **En az alfabetik**
     - **En az alfasayısal**
     - **En az simgeler ile alfasayısal**
@@ -63,6 +67,9 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
 - **Parmak izi ile kilit açmaya izin ver (yalnızca Samsung Knox)** - Desteklenen cihazların kilidini açmak için parmak izi kullanımına izin verir.
 - **Akıllı Kilitleme ve diğer güven aracıları** - Uyumlu Android cihazlarda Akıllı Kilitleme özelliğini denetlemenize olanak tanır (Samsung Knox Standard 5.0 ve üstü). Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken cihazın kilitleme ekranı parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Örneğin, cihaz belirli bir Bluetooth cihazına bağlı ya da bir NFC etiketinin yakınında olduğunda bu kullanılabilir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.
 - **Şifreleme** - Cihazdaki dosyaların şifrelenmesini gerektirir.
+
+    > [!NOTE]
+    > Bir şifreleme ilkesi uygulanırsa Samsung Knox cihazlar, kullanıcıların cihaz parolası olarak 6 karakterli karmaşık bir parola ayarlamasını gerektirir.
 
 <sup>1</sup> Bu ayarı cihazlara atamadan önce, Şirket Portalı uygulamasının bu cihazlarda en son sürüme güncelleştirilmiş olduğundan emin olun.
 

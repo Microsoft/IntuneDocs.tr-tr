@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Cihazınızı Şirket Portalı’ndan kaldırma
 
-Cihazınızın artık şirketiniz veya kuruluşunuz tarafından yönetilmesini istemediğinize karar verirseniz, [Şirket Portalı web sitesini](https://portal.manage.microsoft.com#HelpDeskDialog) kullanarak Şirket Portalı’ndan kaldırabilirsiniz. Şirket Portalı web sitesi, BT bölümünüz tarafından yönetilmesi için kaydettiğiniz bilgisayarları ve cihazları yönetmek üzere kullanabileceğiniz bir web sayfasıdır. Cihazınızı kaldırırsanız, Şirket Portalı’nda daha fazla listelenmez ve ayrıca, şirket ya da okul verilerine, uygulamalarına ve e-postalarına erişimi kaybedebilirsiniz.
+Cihazınızın artık şirketiniz veya kuruluşunuz tarafından yönetilmesini istemediğinize karar verirseniz [Şirket Portalı web sitesini](https://portal.manage.microsoft.com#HelpDeskDialog) kullanarak Şirket Portalı’ndan kaldırabilirsiniz. Cihazınızı kaldırırsanız artık Şirket Portalı’nda listelenmez. Ayrıca kuruluşunuzun verileri, uygulamaları ve e-postalarına erişiminizi kaybedebilirsiniz.
 
 Cihazınızı kaldırmak için:
 

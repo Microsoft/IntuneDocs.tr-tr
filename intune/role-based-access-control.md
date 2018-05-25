@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/17/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı yönetim denetimi (RBAC)
 
@@ -78,20 +78,18 @@ Aşağıdaki roller Intune'da yerleşiktir ve bunları ek yapılandırma gerekme
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **Intune rolleri**’ni, ve ardından **Tüm roller**’i seçin.
-1. **Intune rolleri - Tüm roller** bölmesinde atamak istediğiniz yerleşik rolü seçin.
+4. **Intune rolleri - Tüm roller** bölmesinde atamak istediğiniz yerleşik rolü seçin.
 
-2. <*Rol adı*> - **Genel bakış** bölmesinde **Yönet**'i, ardından **Atamalar**'ı seçin.
+5. <*Rol adı*> - **Genel bakış** bölmesinde **Atamalar** > **Ata**’yı seçin.
 
     > [!NOTE]
     > Yerleşik rolleri silemez ve düzenleyemezsiniz
 
-3. Özel rol bölmesinde **Ata**'yı seçin.
-
-4. **Rol Atamaları** bölmesinde, atama için **Ad** ve isteğe bağlı olarak **Açıklama** girin, sonra da aşağıdakileri seçin:
+6. **Rol Atamaları** bölmesinde, bir **Atama adı** ve isteğe bağlı olarak **Atama açıklaması** girin, sonra da aşağıdakileri seçin:
     - **Üyeler** - İzinleri vermek istediğiniz kullanıcıyı içeren grubu seçin.
-    - **Kapsam** - Yukarıda seçilen üyenin yönetmesine izin verilecek kullanıcıları içeren grubu seçin.
+    - **Kapsam** - Yukarıda seçilen üyenin yönetmesine izin verilecek kullanıcıları içeren grubu seçin. Ayrıca kapsamı **Tüm Kullanıcılar**, **Tüm Cihazlar** veya **Tüm Kullanıcılar ve Cihazlar** olarak ayarlamayı seçebilirsiniz.
 <br></br>
-5. Bitirdiğinizde, **Tamam**’a tıklayın. Yeni atama, atamalar listesinde görüntülenir.
+7. Bitirdiğinizde, **Tamam**’a tıklayın. Yeni atama, atamalar listesinde görüntülenir.
 
 ### <a name="intune-rbac-table"></a>Intune RBAC tablosu
 
@@ -128,13 +126,13 @@ Belirli bir işi yapmak için gereken izinleri içeren özel bir rol oluşturabi
 
 1. **Intune rolleri - Tüm roller** bölmesinde, atamak istediğiniz özel rolü seçin.
 
-2. <*Rol adı*> - **Genel bakış** bölmesinde **Yönet**'i, ardından **Atamalar**'ı seçin. Ayrıca bu bölmede var olan rolleri düzenleyebilir veya silebilirsiniz.
+2. <*Rol adı*> - **Genel bakış** bölmesinde **Atamalar**’ı seçin. Ayrıca bu bölmede var olan rolleri düzenleyebilir veya silebilirsiniz.
 
 3. Özel rol bölmesinde **Ata**'yı seçin.
 
 4. **Rol Atamaları** bölmesinde, atama için **Ad** ve isteğe bağlı olarak **Açıklama** girin, sonra da aşağıdakileri seçin:
     - **Üyeler** - İzinleri vermek istediğiniz kullanıcıyı içeren grubu seçin.
-    - **Kapsam** - Yukarıda seçilen üyenin yönetmesine izin verilecek kullanıcıları içeren grubu seçin.
+    - **Kapsam** - Yukarıda seçilen üyenin yönetmesine izin verilecek kullanıcıları içeren grubu seçin. Ayrıca kapsamı **Tüm Kullanıcılar**, **Tüm Cihazlar** veya **Tüm Kullanıcılar ve Cihazlar** olarak ayarlamayı seçebilirsiniz.
 <br></br>
 5. Bitirdiğinizde, **Tamam**’a tıklayın. Yeni atama, atamalar listesinde görüntülenir.
 
@@ -145,3 +143,5 @@ Belirli bir işi yapmak için gereken izinleri içeren özel bir rol oluşturabi
 ## <a name="see-also"></a>Ayrıca bkz:
 
 [Azure AD kullanarak roller atama](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+
+

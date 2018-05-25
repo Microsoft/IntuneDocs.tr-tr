@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama
 
@@ -159,7 +159,7 @@ Kullanıcı gruplarındaki kullanıcılara veya cihaz gruplarındaki cihazlara u
   - **Uyumlu**: güvenlik özelliği kapalı
   - **Uyumsuz** (varsayılan): güvenlik özelliği açık
 
-  Bir cihaza atanmış uyumluluk ilkesi yoksa, bu cihaz uyumsuz olarak değerlendirilir. Varsayılan olarak cihazlar, **Uyumsuz** olarak işaretlenir. Koşullu erişim kullanıyorsanız varsayılan **Uyumsuz** ayarını değiştirmemenizi öneririz. Bir ilke atanmadığı için son kullanıcı uyumsuzsa, Şirket Portalı `No compliance policies have been assigned` ifadesine yer verir.
+  Bir cihaza atanmış uyumluluk ilkesi yoksa, bu cihaz uyumsuz olarak değerlendirilir. Varsayılan olarak cihazlar, **Uyumlu** olarak işaretlenir. Koşullu erişim kullanıyorsanız ayarı **Uyumlu değil** olarak değiştirmenizi öneririz. Bir ilke atanmadığı için son kullanıcı uyumsuzsa, Şirket Portalı `No compliance policies have been assigned` ifadesine yer verir.
 
 - **Gelişmiş jailbreak algılama**: Etkinleştirildiğinde bu ayar, iOS cihazların Intune’a daha sık iade edilmesine yol açar. Bu özellik etkinleştirildiğinde cihazın konum hizmetleri kullanılır ve pil kullanımı bundan etkilenir. Kullanıcı konum verileri, Intune tarafından depolanmaz.
 
