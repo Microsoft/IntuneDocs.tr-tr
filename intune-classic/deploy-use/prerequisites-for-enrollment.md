@@ -88,7 +88,7 @@ Intune Şirket Portalı, kullanıcıların şirket verilerine eriştiği ve ciha
 |  BT departmanı telefon numarası   |     20     |                                                           Bu iletişim numarası <strong>BT'ye Başvur</strong> sayfasında gösterilir.                                                           |
 |  BT departmanı e-posta adresi  |     40     |             Bu iletişim adresi <strong>BT'ye Başvur</strong> sayfasında gösterilir. <strong>alias@domainname.com</strong> biçiminde geçerli bir e-posta adresi girmeniz gerekir.              |
 |    Ek bilgiler     |    120     |                                                            Bu bilgiler <strong>BT'ye Başvur</strong> sayfasında gösterilir.                                                             |
-| Şirket gizlilik bildirimi URL'si |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. https://www.contoso.com biçiminde geçerli bir URL girmeniz gerekir. |
+| Şirket gizlilik bildirimi URL'si |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. &lt;https://www.contoso.com> biçiminde geçerli bir URL girmeniz gerekir. |
 
 ### <a name="support-contacts"></a>Destek kişileri
 Şirket Portalı’nda kullanıcılara, çevrimiçi desteğe erişebilmeleri için destek web sitesi gösterilir.
