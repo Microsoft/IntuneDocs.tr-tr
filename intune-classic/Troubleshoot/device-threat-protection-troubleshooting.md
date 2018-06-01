@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 643ac4c96297ffc24d9460546fe183d2a1316654
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6262fee0051827794c49ebe10361b1a3b280b140
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34470806"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Intune ile Lookout Tümleştirmesi Sorunlarını Giderme
 
@@ -36,7 +37,7 @@ Lookout MTP yalnızca yapılandırılmış Azure AD grubundan kullanıcıların 
 
 * E-posta: enterprisesupport@lookout.com
 * [MTP Konsolunda](http://aad.lookout.com) oturum açıp **Destek** modülüne gidin.
-* https://enterprise.support.lookout.com/hc/requests adresine gidin ve destek isteğinde bulunun.
+* <https://enterprise.support.lookout.com/hc/requests> adresine gidin ve destek isteğinde bulunun.
 
 ## <a name="unable-to-sign-in"></a>Oturum açılamıyor
 Azure AD genel yöneticisi ilk Lookout kurulumunu kabul etmediğinde aşağıdaki hatayı görüyorsunuz.
@@ -81,7 +82,7 @@ Ayrıca **Lookout konsolunun** [Cihazlar](http://aad.lookout.com) modülüne gid
 Yeni kullanıcı bir Lookout MTP kayıt grubundaysa Azure AD cihazı yeni kullanıcıyla ilişkilendirdiği an cihaz görünür.
 
 ## <a name="compliance-remediation-workflows"></a>Uyumluluk düzeltmesi iş akışları
-- [Android cihazınızda Lookout for Work uygulamasını yüklemeniz istendi]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+- [Android cihazınızda Lookout for Work uygulamasını yüklemeniz istendi](http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 - [Lookout for Work’ün Android cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [Lookout for Work’ün iOS cihazınızda bulduğu bir tehdidi gidermeniz gerekiyor](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 

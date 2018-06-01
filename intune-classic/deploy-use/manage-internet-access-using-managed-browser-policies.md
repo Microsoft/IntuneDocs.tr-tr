@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1722defcb29c9cd5a15c68e01114f4ffb80e3859
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34456376"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune'la yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme
 
@@ -115,14 +116,14 @@ Microsoft, ürün ve hizmetlerini geliştirmek için yönetilen tarayıcının p
 
 |                  URL                  |                     Ayrıntılar                      |                                                Eşleşir                                                |                                Eşleşmez                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              Tek bir sayfayla eşleşir               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              Tek bir sayfayla eşleşir               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>;     | www.contoso.com ile başlayan tüm URL'lerle eşleşir |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|        http://www.contoso.com         |              Tek bir sayfayla eşleşir               |                                            <www.contoso.com>                                           |  host.contoso.com<br /><br /><www.contoso.com/images><br /><br />contoso.com/   |
+|          http://contoso.com           |              Tek bir sayfayla eşleşir               |                                             contoso.com/                                              | host.contoso.com<br /><br /><www.contoso.com/images><br /><br /><www.contoso.com>  |
+|    <http://www.contoso.com/&#42>;     | www.contoso.com ile başlayan tüm URL'lerle eşleşir  |      <www.contoso.com> <br /><br /><www.contoso.com/images><br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
 |    http://&#42;.contoso.com/&#42;     |     contoso.com altındaki tüm alt etki alanlarıyla eşleşir     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             Tek bir klasörle eşleşir              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|     http://www.contoso.com/images     |             Tek bir klasörle eşleşir              |                                        <www.contoso.com/images>                                         |                          <www.contoso.com/images/dogs>                          |
 |       http://www.contoso.com:80       |  Bağlantı noktası numarası kullanarak tek bir sayfayla eşleşir   |                                       http://www.contoso.com:80                                       |                                                                               |
 |        https://www.contoso.com        |          Güvenli tek bir sayfayla eşleşir           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>; |    Tek bir klasör ve tüm alt klasörleriyle eşleşir    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+| <http://www.contoso.com/images/&#42>; |    Tek bir klasör ve tüm alt klasörleriyle eşleşir    |                 <www.contoso.com/images/dogs><br /><br /><www.contoso.com/images/cats>                   |                            <www.contoso.com/videos>                             |
 
 - Belirtemeyeceğiniz bazı girdi örnekleri aşağıda verilmiştir:
 
@@ -130,11 +131,11 @@ Microsoft, ürün ve hizmetlerini geliştirmek için yönetilen tarayıcının p
 
   - &#42;.contoso/&#42;
 
-  - www.contoso.com/&#42;images
+  - <www.contoso.com/>&#42;images
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - <www.contoso.com/>&#42;images&#42;pigs
 
-  - www.contoso.com/page&#42;
+  - <www.contoso.com/page>&#42;
 
   - IP adresleri
 
@@ -146,7 +147,7 @@ Microsoft, ürün ve hizmetlerini geliştirmek için yönetilen tarayıcının p
 
   - http://www.contoso.com: /&#42;
 
-### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>İzin verilenler ve engellenenler listeleri arasındaki çakışmalar nasıl çözümlenir?
+### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>İzin verilenler ve engellenenler listeleri arasındaki çakışmalar nasıl çözümlenir
 Bir cihaza birden çok yönetilen tarayıcı ilkesi dağıtılır ve ayarlar çakışırsa, hem mod (izin verme veya engelleme) hem de URL listeleri çakışmalar için incelenir. Bir çakışma durumunda aşağıdaki davranış uygulanır:
 
 -   İki ilkenin modu aynı ancak URL listeleri farklıysa, URL'ler cihazda uygulanmaz.
