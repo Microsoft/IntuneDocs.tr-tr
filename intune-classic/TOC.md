@@ -17,7 +17,6 @@
 ### [Kullanıcıları ve cihazları düzenleme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [İlkeleri ve uygulamaları dağıtma](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Şirket Portalı’nı özelleştirme](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [Cihazları kaydetme](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Yapılandırma sonrası görevleri](get-started/post-configuration-tasks.md)
 ## Sonraki adımlar
 ### [Office 365 mobil uygulamalarından şirket veri sızıntılarını önleme](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [Yönetilen iOS cihazlarını geri yükleme](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android be Samsung KNOX ayarları](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için bir özel ilke kullanma](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [Özel ilke kullanarak Android cihazlar için uygulama başına VPN profili oluşturma](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [Özel ilkeler kullanarak Samsung KNOX cihazları için uygulamalara izin verme veya bunları engelleme](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Android for Work ayarları](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 ve Windows 8.1 ayarları](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [Cihazları devre dışı bırakma](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [Uygulamaları ekleme](deploy-use/add-apps.md)
-### [Kaydolmuş cihazlar için uygulama ekleme](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Windows uygulamalarını dışarıdan yükleme](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [Uygulama dağıtma](deploy-use/deploy-apps.md)
-### [Cihazlara ve bilgisayarlara uygulama dağıtma](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [Android for Work cihazlara uygulama dağıtma](deploy-use/android-for-work-apps.md)
-### [Uygulamalarını izleme](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [Toplu satın alınan uygulamaları yönetme](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [Toplu satın alınan iOS uygulamalarını yönetme](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [Toplu satın alınan Windows uygulamalarını yönetme](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## Uygulama yapılandırma
 ### [Uygulamaları güncelleştirme](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [Uygulamaları Uygulama tabanlı CA ile kullanma](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [ADAL olmadan uygulama engelleme](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Ağlara erişimi koruma (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Cihaz, ağ ve uygulama riskine dayalı olarak erişimi koruma](deploy-use/mobile-threat-defense.md)
 #### [Lookout Mobile Threat Defense bağlayıcısı](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [Uygulama koruma ilkelerini doğrulama](deploy-use/validate-mobile-application-management.md)
 #### [Uygulama koruma ilkesi uyumluluğunu izleyin](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [iOS uygulamaları arasında veri aktarımını yönetme](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [MAM ilkeleri için Intune yönetim konsolu](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [İş kolu uygulamalarını MAM için hazırlama](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## Uygulamaları ve veriler devre dışı bırakma
 ### [Tam veya seçmeli silme kullanma](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [Uygulamaları devre dışı bırakma](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Yönetilen şirket uygulama verilerini silme](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [MDM yetkilinizi değiştirme](deploy-use/change-mdm-authority.md)
