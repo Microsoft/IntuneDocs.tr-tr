@@ -1,12 +1,11 @@
 ---
-title: Windows 10 cihazlar için Microsoft Intune’da PowerShell betiklerini yönetme
-titlesuffix: ''
-description: Microsoft Intune’daki PowerShell betiklerini Windows 10 cihazlarda çalıştırmak için karşıya yüklemeyi öğrenin.
+title: Windows 10 cihazları için Microsoft Intune’da PowerShell betiklerini ekleme - Azure | Microsoft Docs
+description: PowerShell betiklerini ekleyin, Azure Active Directory gruplarına betik ilkesi atayın, betikleri izlemek için raporları kullanın ve Microsoft Intune'da Windows 10 cihazlarına eklediğiniz betikleri silme adımlarını görün.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2046a928525e974eee5f63d772d46864b21f0267
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583681"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 cihazlar için Intune’da PowerShell betiklerini yönetme
 Intune yönetim uzantısı, Intune’da PowerShell betiklerini Windows 10 cihazlarda çalıştırmak için karşıya yüklemenize olanak sağlar. Yönetim uzantısı Windows 10 mobil cihaz yönetimi (MDM) özelliklerini tamamlar ve modern yönetime geçiş yapmayı kolaylaştırır.
@@ -35,39 +35,33 @@ Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. İh
 Intune yönetim uzantısı şu önkoşullara sahiptir:
 - Cihazların Azure AD’ye katılmış olması gerekir. Hibrit AD’ye katılmış cihazlar buna dahil değildir.
 - Cihazlar Windows 10, sürüm 1607 veya üzerini çalıştırmalıdır.
+- Otomatik MDM kaydı [Azure AD'de etkinleştirilmeli](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment) ve cihazlar Intune'a otomatik olarak kaydedilmelidir.
 
 ## <a name="create-a-powershell-script-policy"></a>PowerShell betik ilkesi oluşturma 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
-4. **Cihaz yapılandırması** bölmesinde **Yönet** > **PowerShell betikleri**’ni seçin.
-5. **PowerShell betikleri** bölmesinde **Ekle**’yi seçin.
-6. **PowerShell Betiği Ekle** bölmesinde, PowerShell betiği için bir **Ad** ve **Açıklama** girin.
-7. **Betik konumu** için, PowerShell betiğine gözatın. Betik boyutu 200 KB’den düşük olmalıdır.
-8. **Yapılandır**’ı seçin ve ardından betiği cihazda kullanıcının kimlik bilgileriyle (**Evet**) veya sistem bağlamıyla (**Hayır**) çalıştırmak istediğinizi seçin. Varsayılan olarak, betik sistem bağlamında çalıştırılır. Betiğin sistem bağlamında çalıştırılması gerekli değilse **Evet**’i seçin. 
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+3. **Cihaz yapılandırması** > **PowerShell betikleri** > **Ekle**'yi seçin.
+4. PowerShell betiği için **Ad** ve **Açıklama** girin. **Betik konumu** için, PowerShell betiğine göz atın. Betiğin boyutu 200 KB'tan (ASCII) veya 100 KB'tan (Unicode) küçük olmalıdır.
+5. **Yapılandır**’ı seçin. Ardından betiği cihazda (**Evet**) veya sistem bağlamında (**Hayır**) kullanıcının kimlik bilgileriyle çalıştırmayı seçin. Varsayılan olarak, betik sistem bağlamında çalıştırılır. Betiğin sistem bağlamında çalıştırılması gerekli değilse **Evet**’i seçin. 
   ![PowerShell betiği ekleme bölmesi](./media/mgmt-extension-add-script.png)
-9. Betiğin güvenilir bir yayımcı tarafından imzalanmış olup olmaması gerektiğini seçin (**Evet**). Varsayılan olarak, betiğin imzalanmasına yönelik bir gereksinim yoktur. 
-10. **Tamam**’a tıklayın ve daha sonra betiği kaydetmek için **Oluştur**’a tıklayın.
+6. Betiğin güvenilir bir yayımcı tarafından imzalanmış olup olmaması gerektiğini seçin (**Evet**). Varsayılan olarak, betiğin imzalanmasına yönelik bir gereksinim yoktur. 
+7. **Tamam**’ı ve ardından **Oluştur**’u seçerek betiği kaydedin.
 
 ## <a name="assign-a-powershell-script-policy"></a>PowerShell betik ilkesi atama
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
-4. **Cihaz yapılandırması** bölmesinde **Yönet** > **PowerShell betikleri**’ni seçin.
-5. **PowerShell betikleri** bölmesinde, atanacak betiği seçin ve daha sonra **Yönet** > **Atamalar**’ı seçin.
+1. **PowerShell betikleri**'nde, atanacak betiği seçin ve daha sonra **Yönet** > **Atamalar**’ı seçin.
   ![PowerShell betiği ekleme bölmesi](./media/mgmt-extension-assignments.png)
  
-6. Kullanılabilir Azure AD gruplarını listelemek için **Grupları Seç**’i seçin. 
-7. Cihazları betiği alacak olan kullanıcıların bulunduğu bir veya birden çok grup seçin ve ardından **Seç**'e tıklayarak seçili gruplara ilkeyi atayın.
+2. Kullanılabilir Azure AD gruplarını listelemek için **Grupları Seç**’i seçin. 
+3. Cihazları betiği alan kullanıcıların yer aldığı bir veya birden çok grubu seçin. İlkeyi seçili gruplara atamak için **seçin**.
 
 Intune yönetim uzantısı saatte bir kez Intune ile eşitlenir. İlkeyi Azure AD gruplarına atadıktan sonra, PowerShell betiği çalıştırılır ve çalıştırma sonuçları raporlanır. 
  
 ## <a name="monitor-run-status-for-powershell-scripts"></a>PowerShell betikleri için çalıştırma durumunu izleme
 Azure portalda kullanıcılar ve cihazlar için PowerShell betiklerinin çalıştırma durumunu izleyebilirsiniz.
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
-4. **Cihaz yapılandırması** bölmesinde **Yönet** > **PowerShell betikleri**’ni seçin.
-5. **PowerShell betikleri** bölmesinde, izlenecek betiği seçin ve daha sonra **İzle**’yi ve şu raporlardan birini seçin:
+
+**PowerShell betikleri**'nde izlenecek betiği seçin, **İzle**’yi ve ardından şu raporlardan birini seçin:
    - **Cihaz durumu**
    - **Kullanıcı durumu**
+
+## <a name="delete-a-powershell-script"></a>PowerShell betiğini silme
+**PowerShell betikleri**'nde, betiği sağ tıklayın ve **Sil**'i seçin.

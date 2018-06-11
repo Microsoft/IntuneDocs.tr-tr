@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744678"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune’da Windows Defender ATP’yi koşullu erişim ile etkinleştirme
 
@@ -51,19 +52,19 @@ ATP’yi Intune ile birlikte kullanmak için aşağıdakilerin yapılandırılm�
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **Cihaz uyumluluğu** > **Windows Defender ATP** > **Windows Defender Gelişmiş Tehdit Koruması yönetici konsolunu aç**’ı seçin.
+3. **Cihaz uyumluluğu** > **Windows Defender ATP** > **Windows Defender Güvenlik Merkezi'ni açın** öğesini seçin.
 
-    ![Alternatif metin](./media/atp-device-compliance-open-windows-defender.png)
+    ![Windows Defender Güvenlik Merkezi’ni açın](./media/atp-device-compliance-open-windows-defender.png)
 
 4. **Windows Defender Güvenlik Merkezi**’nde:
     1. **Ayarlar** > **Gelişmiş özellikler**’i seçin.
     2. **Microsoft Intune bağlantısı** için **Açık** seçeneğini belirleyin:
 
-        ![Alternatif metin](./media/atp-security-center-intune-toggle.png)
+        ![Intune bağlantısını etkinleştirme](./media/atp-security-center-intune-toggle.png)
 
     3. **Tercihleri kaydet**’i seçin.
 
-5. Intune’da **Cihaz uyumluluğu** > **Windows Defender ATP**’ye geri gidin. **Windows 10.0.15063+ cihazları Windows Defender Gelişmiş Tehdit Koruması’na bağla**’yı **Açık** olarak ayarlayın.
+5. Intune’da **Cihaz uyumluluğu** > **Windows Defender ATP**’ye geri gidin. **10.0.15063 ve üstü sürümü Windows cihazları Windows Defender ATP bağlayıcısına bağla** ayarını **Açık** olarak ayarlayın.
 6. **Kaydet**’i seçin.
 
 Bu görevi genellikle bir kez yaparsınız. Bu nedenle Intune kaynağınızda ATP zaten etkinse bunu tekrar yapmanız gerekmez.
@@ -115,9 +116,9 @@ Uyumluluk ilkesi, cihazda kabul edilebilir bir risk düzeyi belirler.
 2. **Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur**’u seçin.
 3. Bir **Ad** ve **Açıklama** girin.
 4. **Platform** olarak **Windows 10 ve üzerini** seçin.
-5. **Cihaz Durumu** ayarlarında **Cihazın Cihaz Tehdit Düzeyinde veya bunun altında olmasını gerektir** seçeneğini dilediğiniz düzeye ayarlayın:
+5. **Windows Defender ATP** ayarlarında **Cihazın şu makine risk puanında veya bu değerin altında olmasını gerektirin** seçeneğini dilediğiniz düzeye ayarlayın:
 
-  - **Güvenli**: En güvenli düzeydir. Cihazda mevcut bir tehdit olamaz ancak cihaz şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
+  - **Temiz**: En güvenli düzeydir. Cihazda mevcut bir tehdit olamaz ancak cihaz şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
   - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumludur. Orta veya yüksek tehdit düzeyindeki cihazlar uyumsuzdur.
   - **Orta**: Cihazda bulunan tehditler düşük veya orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
   - **Yüksek**: Tüm tehdit düzeylerine izin verdiği için bu düzey en düşük güvenliğe sahiptir. Yüksek, orta ve düşük tehdit düzeyindeki cihazlar uyumlu olarak değerlendirilir.
