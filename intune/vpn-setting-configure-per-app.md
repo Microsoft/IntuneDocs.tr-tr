@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/30/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,31 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
+ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753901"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS cihazlar için Intune’da uygulama başına Sanal Özel Ağ (VPN) ayarlama
 
 Intune ile yönetilen iOS cihazlarda hangi yönetilen uygulamaların Sanal Özel Ağınızı (VPN) kullanabileceğini belirtebilirsiniz. Intune’da bir uygulama başına VPN oluşturduğunuzda, şirket belgelerine erişirken son kullanıcılar otomatik olarak VPN’iniz yoluyla bağlanır.
 
-Uygulama başına VPN şu anda şu sağlayıcılar için kullanılabilir durumda: 
+Uygulama başına VPN şu anda şu sağlayıcılar için kullanılabilir durumda:
 
- - Checkpoint Remote Access VPN
+ - Check Point Remote Access VPN
  - Cisco AnyConnect
+ - Citrix
  - F5
  - Pulse Connect Secure
  - SonicWall
-
+ - Palo Alto Networks GlobalProtect
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Uygulama Başına VPN Önkoşulları
+
+> [!IMPORTANT]
+> VPN satıcınızın uygulama başına VPN için belirli bir donanım veya lisanslama gibi başka bazı gereksinimleri olabilir. Satıcının belgelerini gözden geçirmeyi unutmayın ve Intune'da uygulama başına VPN'yi ayarlamadan önce önkoşulları yerine getirin.
 
 VPN sunucusu, kimliğini doğrulamak amacıyla cihaz bir istem yapmadan kabul edilmesi gereken sertifikayı sunar. Sertifikanın otomatik olarak onaylanacağından emin olmak için, Sertifika Yetkilisi (CA) tarafından verilen VPN sunucusu kök sertifikasını barındıran bir güvenilir sertifika profili oluşturun. 
 
@@ -162,14 +167,15 @@ Uygulama Başına VPN’iniz ayarlı ve uygulamanızla ilişkili olduğunda, ba�
 
 ### <a name="before-you-attempt-to-connect"></a>Bağlanmayı denemeden önce
 
- - iOS 7 veya üzerini çalıştırdığınızdan emin olun.
+ - iOS 9 veya üzerini çalıştırdığınızdan emin olun.
  - Yukarıda bahsedilen *tüm* ilkeleri aynı grup ve kullanıcılara dağıttığınızdan emin olun. Bunu yapmamanız durumunda Uygulama Başına VPN deneyimi kesinlikle başarısız olacaktır.  
  - Desteklenen üçüncü taraf VPN uygulamasına sahip olduğunuzdan emin olun. Aşağıdaki VPN uygulamaları desteklenmektedir:
-    - Pulse Secure
-    - Checkpoint
+    - Check Point Capsule Connect
     - Cisco AnyConnect
-    - F5
-    - SonicWall
+    - Citrix VPN
+    - F5 Access
+    - Pulse Secure
+    - SonicWall Mobile Connect
 
 ### <a name="connect-using-the-per-app-vpn"></a>Uygulama Başına VPN kullanarak bağlanma
 

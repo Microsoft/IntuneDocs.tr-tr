@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745001"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -153,6 +154,9 @@ Uygulamayı Intune’a eklediğinizde, size istediğiniz kategoriyi belirtme se�
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Intune tarafından otomatik olarak eklenen uygulamalar
 
 Eskiden Intune’da hızlıca atayabileceğiniz birkaç yerleşik uygulama vardı. Intune müşteri geri bildirime dayanarak bu listeyi kaldırdık, yerleşik uygulamalar artık görüntülenmiyor. Ancak herhangi bir yerleşik uygulamayı önceden atadıysanız bu uygulamalar, uygulama listesinde görünmeye devam edecektir. Uygulamaları gerektiği gibi atamaya devam edebilirsiniz.
+
+> [!NOTE]
+> İş Kolu uygulaması dışındaki gerekli uygulamaların yüklemesinde, uygulamanın algılanmaması ve uygulama yükleme durumunun *Yükleme Bekletiliyor* olmaması koşuluyla, Intune cihaz her iade edildiğinde bir yükleme komutu göndererek uygulamayı yüklemeyi dener.
 
 ## <a name="installing-updating-or-removing-required-apps"></a>Gerekli uygulamaları yükleme, güncelleştirme veya kaldırma
 

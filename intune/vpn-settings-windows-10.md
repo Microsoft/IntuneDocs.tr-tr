@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/23/2018
+ms.date: 5/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: d41ec494672340a9f5751e6fc40edf1a7b06bb40
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 61310f5baa64c43d2e818df6c61a36d232922c1c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744746"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune'da Windows 10 VPN ayarları
 
@@ -49,6 +50,7 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
   - **SonicWALL Mobile Connect**
   - **Check Point Capsule VPN**
   - **Citrix**
+  - **Palo Alto Networks GlobalProtect**
   - **Otomatik**
   - **IKEv2**
   - **L2TP**

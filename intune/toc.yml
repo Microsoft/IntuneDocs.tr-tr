@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: Bilgi Noktası ayarlarını yapılandırma
+          href: kiosk-settings.md
         - name: E-posta ayarlarını yapılandırma
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 ve Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Eğitim
+          items:
+            - name: iOS paylaşılan cihazları
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: Windows 10 sürüm yükseltme ayarlarını yapılandırma
           href: edition-upgrade-configure-windows-10.md
-        - name: Windows 10 eğitim ayarlarını yapılandırma
-          href: education-settings-configure.md
-        - name: iOS eğitim paylaşılan cihazlarını yapılandırma
-          href: education-settings-configure-ios-shared.md
         - name: iOS güncelleştirme ilkelerini yapılandırma
           href: software-updates-ios.md
         - name: Sertifikaları yapılandırın
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows ilkesi oluşturma
           href: compliance-policy-create-windows.md
+        - name: Konum tabanlı ilke
+          href: use-network-locations.md
         - name: İlkeyi Değerlendir
           href: policy-evaluate.md
         - name: Uyumsuzluğa yönelik eylemler
