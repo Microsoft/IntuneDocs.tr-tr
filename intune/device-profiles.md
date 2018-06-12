@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/22/2018
+ms.date: 05/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b942f794136ce1a1d7851b0b04d6df70ea7174c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f52c0dfc955406fa237d43632cd10c09ca0b798f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744764"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profilleri nedir?
 
@@ -29,7 +30,7 @@ Microsoft Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz 
 - Kurumsal WiFi'nize farklı cihazlara erişim sağlayan bir WiFi profili
 - Kurumsal ağınızda VPN sunucunuza farklı cihaz erişimi veren bir VPN profili
 
-Bu konu, cihazlarınız için oluşturabileceğiniz farklı profillere genel bir bakış sunar. Cihazlardaki bazı özelliklere izin vermek veya bunları engellemek için bu profilleri kullanın.
+Bu makalede, cihazlarınız için oluşturabileceğiniz farklı profillere genel bir bakış sağlanır. Cihazlardaki bazı özelliklere izin vermek veya bunları engellemek için bu profilleri kullanın.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 Kullanılabilir özellikleri görmek için [Azure portalı](https://portal.azure.com)'nı açın ve Intune kaynağınızı açın. 
@@ -45,18 +46,18 @@ Kullanılabilir özellikleri görmek için [Azure portalı](https://portal.azure
 
 [Cihaz profilleri oluşturma](device-profile-create.md), bir profil oluşturmak için adım adım yönergeler sağlar. 
 
-## <a name="device-features-profile"></a>Cihaz özellikleri profili
+## <a name="device-features---ios-and-macos"></a>Cihaz özellikleri - iOS ve macOS
 
 [Cihaz özellikleri](device-features-configure.md), iOS ve macOS cihazlarda AirPrint, bildirimler ve paylaşılan cihaz yapılandırmaları gibi özellikleri denetler.
 
-Bu özellik şunları destekler:  
+Bu özellik şunları destekler:
 - iOS 
 - Mac OS
 
-## <a name="device-restrictions-profile"></a>Cihaz kısıtlamaları profili
+## <a name="device-restrictions"></a>Cihaz kısıtlamaları
 [Cihaz kısıtlamaları](device-restrictions-configure.md) cihazlarda güvenlik, donanım, veri paylaşımı ve daha fazla ayarı denetler. Örneğin, iOS cihaz kullanıcılarının cihazın kamerasını kullanmasını engelleyen bir cihaz kısıtlama profili oluşturun. 
 
-Bu özellik şunları destekler: 
+Bu özellik şunları destekler:
 
 - Android
 - iOS
@@ -64,7 +65,22 @@ Bu özellik şunları destekler:
 - Windows 10
 - Windows 10 Team
 
-## <a name="email-profile"></a>E-posta profili
+## <a name="endpoint-protection"></a>Endpoint protection
+[Windows 10 için Endpoint protection ayarları](endpoint-protection-windows-10.md) Windows 10 cihazları için BitLocker'ı ve Windows Defender ayarlarını yapılandırır.
+
+Microsoft Intune'a Windows Defender Gelişmiş Tehdit Koruması'nı (WDATP) eklemek için bkz. [Mobil Cihaz Yönetimi (MDM) araçlarını kullanarak uç noktaları yapılandırma](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
+
+Bu özellik şunları destekler:
+- Windows 10 ve üzeri
+
+## <a name="kiosk"></a>Bilgi noktası
+
+[Bilgi noktası ayarları](kiosk-settings.md) profili, cihazı tek uygulama veya birden çok uygulama çalıştıracak şekilde yapılandırır. Ayrıca bilgi noktanızda başlat menüsü ve web tarayıcısı gibi diğer özellikleri de özelleştirebilirsiniz.
+
+Bu özellik şunları destekler:
+- Windows 10 ve üzeri
+
+## <a name="email"></a>E-posta
 [E-posta ayarları](email-settings-configure.md) profili, cihazlarda Exchange ActiveSync e-posta ayarları oluşturur, atar ve izler. E-posta profilleri tutarlılık sağlar, destek çağrılarını azaltır ve son kullanıcıların, herhangi bir kurulum yapmalarına gerek kalmadan kendi cihazlarından şirket e-postasına erişmelerini sağlar. 
 
 Bu özellik şunları destekler: 
@@ -74,20 +90,10 @@ Bu özellik şunları destekler:
 - Windows Phone 8.1
 - Windows 10
 
-## <a name="wi-fi-profile"></a>Wi-Fi profili
-[Wi-Fi ayarları](wi-fi-settings-configure.md), kullanıcılar ve cihazlar için kablosuz ağ ayarları atar. Bir Wi-Fi profili atadığınızda, kullanıcılar kurumsal Wi-Fi ağınıza, ağı kendileri yapılandırmak zorunda kalmadan erişim elde eder. 
-
-Bu özellik şunları destekler: 
-
-- Android
-- iOS
-- Mac OS
-- Windows 8.1 (yalnızca içeri aktarma)
-
-## <a name="vpn-profile"></a>VPN profili
+## <a name="vpn"></a>VPN
 [VPN ayarları](vpn-settings-configure.md), kuruluşunuzdaki kullanıcılara ve cihazlara VPN profilleri atar, böylece ağa kolayca ve güvenli bir şekilde bağlanabilirler. 
 
-Sanal özel ağlar (VPN’ler), kullanıcılara şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. 
+Sanal özel ağlar (VPN’ler), kullanıcılara şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucunuzla bağlantı başlatmak için VPN bağlantısı profilini kullanır. 
 
 Bu özellik şunları destekler: 
 
@@ -98,10 +104,34 @@ Bu özellik şunları destekler:
 - Windows 8.1
 - Windows 10
 
-## <a name="education-profile"></a>Eğitim profili
-[Eğitim ayarları](education-settings-configure.md), [Windows Sınav Zamanı uygulamasının](https://education.microsoft.com/gettrained/win10takeatest) seçeneklerini yapılandırır. Bu seçenekleri yapılandırdığınızda, sınav tamamlanana kadar cihazda başka uygulama çalıştırılamaz.
+## <a name="wi-fi"></a>Wi-Fi
+[Wi-Fi ayarları](wi-fi-settings-configure.md), kullanıcılar ve cihazlar için kablosuz ağ ayarları atar. Bir Wi-Fi profili atadığınızda, kullanıcılar kurumsal Wi-Fi ağınıza, ağı kendileri yapılandırmak zorunda kalmadan erişim elde eder. 
 
-## <a name="certificates-profile"></a>Sertifika profili
+Bu özellik şunları destekler: 
+
+- Android
+- iOS
+- Mac OS
+- Windows 8.1 (yalnızca içeri aktarma)
+
+## <a name="education"></a>Eğitim
+[Eğitim ayarları - Windows 10](education-settings-configure.md), [Windows Sınav Zamanı uygulamasının](https://education.microsoft.com/gettrained/win10takeatest) seçeneklerini yapılandırır. Bu seçenekleri yapılandırdığınızda, sınav tamamlanana kadar cihazda başka uygulama çalıştırılamaz.
+
+[Eğitim ayarları - iOS](education-settings-configure-ios-shared.md) sınıfta öğrenimi yönlendirmek ve öğrenci cihazlarını denetlemek için iOS Classroom uygulamasını kullanır. iPad cihazlarını, birden çok öğrencinin aynı cihazı paylaşmasını sağlamak için yapılandırabilirsiniz.
+
+## <a name="edition-upgrade"></a>Sürüm yükseltme
+[Windows 10 sürüm yükseltmeleri](edition-upgrade-configure-windows-10.md), Windows 10'un bazı sürümlerini çalıştıran cihazları otomatik olarak yeni bir sürüme yükseltmenizi sağlar.
+
+Bu özellik şunları destekler: 
+- Windows 10 ve üzeri
+
+## <a name="update-policies"></a>Güncelleştirme ilkeleri
+[iOS güncelleştirme ilkeleri](software-updates-ios.md), iOS cihazlarınıza yazılım güncelleştirmelerini yüklemek için iOS ilkelerini nasıl oluşturacağınızı ve atayacağınızı gösterir. Ayrıca yükleme durumunu da gözden geçirebilirsiniz.
+
+Bu özellik şunları destekler:
+- iOS
+
+## <a name="certificates"></a>Sertifikalar
 [Sertifikalar](certificates-configure.md), cihazlara atanabilen ve Wi-Fi, VPN ve e-posta profillerinin kimliğini doğrulamak için kullanılan güvenilen, SCEP ve PKCS sertifikalarını yapılandırır.
 
 Bu özellik şunları destekler: 
@@ -112,22 +142,11 @@ Bu özellik şunları destekler:
 - Windows 8.1
 - Windows 10
 
-## <a name="edition-upgrade-profile"></a>Sürüm yükseltme profili
-[Windows 10 sürüm yükseltmeleri](edition-upgrade-configure-windows-10.md), Windows 10'un bazı sürümlerini çalıştıran cihazları otomatik olarak yeni bir sürüme yükseltmenizi sağlar.
-
-Bu özellik şunları destekler: Yalnızca Windows 10
-
-## <a name="endpoint-protection-profile"></a>Endpoint protection profili
-[Windows 10 için Endpoint protection ayarları](endpoint-protection-windows-10.md) Windows 10 cihazları için BitLocker'ı ve Windows Defender ayarlarını yapılandırır.
-
-Microsoft Intune'a Windows Defender Gelişmiş Tehdit Koruması'nı (WDATP) eklemek için bkz. [Mobil Cihaz Yönetimi (MDM) araçlarını kullanarak uç noktaları yapılandırma](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
-
-Bu özellik şunları destekler: Yalnızca Windows 10
-
 ## <a name="windows-information-protection-profile"></a>Windows Bilgi Koruması profili
 [Windows Bilgi Koruması](windows-information-protection-configure.md), çalışanın deneyimine müdahale etmeden veri sızıntılarına karşı koruma sağlamaya yardımcı olur. Ayrıca, çalışanların işte kullandıkları kuruluşa ait cihazlardaki ve kişisel cihazlardaki kazayla veri sızıntılarına karşı kurumsal uygulamaların ve verilerin korunmasına yardımcı olur. Bunu ortamınızda veya diğer uygulamalarda değişiklik yapmaya gerek kalmadan yapar.
 
-Bu özellik şunları destekler: Yalnızca Windows 10
+Bu özellik şunları destekler:
+- Windows 10 ve üzeri
 
 ## <a name="custom-profile"></a>Özel profil
 [Özel ayarlar](custom-settings-configure.md), Intune’da yerleşik olarak sağlanmayan cihaz ayarlarını atamanıza olanak tanır. Örneğin, Android cihazlarda, OMA-URI değerleri girebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz. 

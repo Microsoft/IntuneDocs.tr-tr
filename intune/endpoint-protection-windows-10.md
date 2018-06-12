@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744950"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune’da Windows 10 (ve sonrası) için Endpoint Protection ayarları
 
@@ -276,7 +277,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 - **Yeni Microsoft hesapları ekle**: Kullanıcıların bu bilgisayara yeni Microsoft hesapları eklemesini engeller.
 - **Parola olmadan uzaktan oturum açma**: Parola korumalı olmayan yerel hesapların fiziksel cihaz dışındaki konumlardan oturum açmasını etkinleştirin.
 
-#### <a name="admin"></a>Yönetici
+#### <a name="admin"></a>Yönetim
 
 - **Yerel yönetici hesabı**: Yerel Yönetici hesabının etkin mi yoksa devre dışı mı olduğunu belirleyin.
 - **Yönetici hesabını yeniden adlandır**: Yönetici hesabının güvenlik tanımlayıcısıyla (SID) ilişkilendirilecek farklı bir hesap adı tanımlayın.
@@ -300,15 +301,21 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 
 - **Ekran koruyucu etkinleşmeden önceki kilit ekranında işlem yapılmadan geçen dakika sayısı**: Ekran koruyucu çalıştırılmadan önce etkileşimli masa üstünün oturum açma ekranında işlem yapılmadan geçecek en fazla dakika sayısını tanımlayın.
 - **Oturum açmak için CTRL+ALT+DEL gerektir**: Kullanıcının oturum açabilmesi için önce CTRL+ALT+DEL tuşlarına basılmasını gerektirin.
-- **Akıllı kart kaldırma davranışı**: Oturum açma kullanıcısı için akıllı kartın akıllı kart okuyucusundan çıkarılması durumunda neler olacağını belirler.
-[LocalPoliciesSecurity seçenekleri](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) başlığı altında daha fazla ayrıntı sağlanır.
+- **Akıllı kart kaldırma davranışı**: Oturum açma kullanıcısı için akıllı kartın akıllı kart okuyucusundan çıkarılması durumunda neler olacağını belirler. Seçenekleriniz şunlardır:
+
+  - **İş İstasyonunu Kilitle**: Akıllı kart çıkarıldığında iş istasyonu kilitlenir. Bu seçenek kullanıcıların akıllı kartlarını alarak alandan uzaklaşmasına ve yine de korumalı oturumu sürdürmesine olanak tanır.
+  - **Oturumu Kapatmaya Zorla**: Kullanıcı akıllı kartı çıkardığında oturumu otomatik olarak kapatılır.
+  - **Bir Uzak Masaüstü Hizmetleri oturumu bağlantısını kes**: Akıllı kartın çıkarılması kullanıcının oturumunu kapatmadan oturumu bağlantısını keser. Bu seçenek kullanıcının daha sonra yeniden oturum açmak zorunda kalmadan akıllı kartı takıp oturumu devam ettirmesine veya akıllı kart okuyucuyla donatılmış başka bir bilgisayarda bunu yapmasına olanak tanır. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.
+
+    [LocalPoliciesSecurity seçenekleri](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) başlığı altında daha fazla ayrıntı sağlanır.
 
 #### <a name="display"></a>Görüntüle
 
 - **Kilit ekranında kullanıcı bilgileri**: Oturum kilitlendiğinde görüntülenen kullanıcı bilgilerini yapılandırın. Yapılandırılmazsa, kullanıcı görünen adı, etki alanı ve kullanıcı adı gösterilir.
+  - **Yapılandırılmadı**: Kullanıcı görünen adı, etki alanı ve kullanıcı adı
+  - **Kullanıcı görünen adı, etki alanı ve kullanıcı adı**
   - **Yalnızca kullanıcı görünen adı**
   - **Kullanıcı bilgilerini görüntüleme**
-  - **Yapılandırılmadı**: Kullanıcı görünen adı, etki alanı ve kullanıcı adı
 - **Son oturum açmış kullanıcıyı gizle**: Bu cihazda oturum açmış olan son kişinin kullanıcı adını görüntülemeyin.
 - **Oturum açma sırasında kullanıcı adını gizle**: Kimlik bilgileri girildikten sonra ve cihazın masaüstü gösterilmeden önce bu cihazda oturum açan kişinin kullanıcı adını görüntülemeyin.
 - **Oturum açma ileti başlığı**: Oturum açmaya çalışan kullanıcılar için ileti başlığını ayarlayın.
@@ -316,13 +323,13 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 
 ### <a name="network-access-and-security"></a>Ağ erişimi ve güvenlik
 
-- **Adlandırılmış Kanallara ve Paylaşımlara anonim erişim**: Paylaşım ve Adlandırılmış Kanal ayarlarına anonim erişimi kısıtlar. Anonim olarak erişilebilen ayarlar için geçerlidir.
-- **SAM hesaplarının anonim olarak listelenmesi**: Anonim kullanıcıların SAM hesaplarını listelemesine izin verir. Windows anonim kullanıcılara etki alanı hesaplarının ve ağ paylaşımlarının adlarını listeleme izni verir.
-- **SAM hesaplarının ve paylaşımların anonim listelenmesi**: SAM hesaplarının ve paylaşımların anonim listelenmesi engellenebilir. Windows anonim kullanıcılara etki alanı hesaplarının ve ağ paylaşımlarının adlarını listeleme izni verir.
-- **Parola değişiminde depolanan LAN Manager karma değeri**: Bir sonraki parola değişikliğinde, yeni parolanın LAN Manager (LM) karma değerinin depolanıp depolanmayacağını seçin. Varsayılan olarak depolanmaz.
-- **PKU2U kimlik doğrulama istekleri**: Bu cihaza yönelik PKU2U kimlik doğrulama isteklerinin çevrimiçi kimlikleri kullanmasını engeller.
-- **SAM'ye uzak RPC bağlantılarını kısıtla**: Kullanıcıların ve grupların SAM'ye uzak çağrı yapmasına izin vermek veya bunu engellemek için varsayılan Güvenlik Tanımlayıcısı Tanım Dili dizesini düzenleyin.
-- **Güvenlik tanımlayıcısı**
+- **Adlandırılmış Kanallara ve Paylaşımlara anonim erişim**: **Yapılandırılmadı** (varsayılan) paylaşım ve Adlandırılmış Kanal ayarlarına anonim erişimi kısıtlar. Anonim olarak erişilebilen ayarlar için geçerlidir.
+- **SAM hesaplarının anonim olarak listelenmesi**: Anonim kullanıcıların SAM hesaplarını listelemesine **izin verin**. Windows anonim kullanıcılara etki alanı hesaplarının ve ağ paylaşımlarının adlarını listeleme izni verir.
+- **SAM hesaplarının ve paylaşımların anonim listelenmesi**: **Yapılandırılmadı** (varsayılan), anonim kullanıcıların etki alanı hesaplarıyla ağ paylaşımlarının adlarını listeleyebileceği anlamına gelir. SAM hesaplarının ve paylaşımlarının anonim listelenmesini önlemek için **Engelle** olarak ayarlayın.
+- **Parola değişiminde depolanan LAN Manager karma değeri**: Bir sonraki parola değişikliğinde, yeni parolanın karma değerini LAN Manager'da (LM) depolamaya **izin verin**. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, karma değer depolanmaz.
+- **PKU2U kimlik doğrulama istekleri**: Bu cihaza yönelik PKU2U kimlik doğrulama isteklerinin çevrimiçi kimlikleri kullanmasını **engelleyin**. **Yapılandırılmadı** (varsayılan) ayarı bu isteklere izin verir.
+- **SAM'ye uzak RPC bağlantılarını kısıtla**: Kullanıcıların ve grupların SAM'ye uzak çağrı yapmasını engellemek için varsayılan Güvenlik Tanımlayıcısı Tanım Dili dizesine **izin verin**. **Yapılandırılmadı** (varsayılan) ayarında, kullanıcıların ve grupların SAM'ye uzak çağrı yapmasına izin vermek için varsayılan Güvenlik Tanımlayıcısı Tanım Dili dizesi yapılandırılmaz.
+  - **Güvenlik tanımlayıcısı**
 
 ### <a name="recovery-console-and-shutdown"></a>Kurtarma konsolu ve kapatma
 
@@ -359,13 +366,13 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 
 ### <a name="microsoft-network-client"></a>Microsoft Ağ İstemcisi
 
-- **İletişimleri dijital olarak imzala (sunucu onaylarsa)**: SMB istemcisinin SMB paket imzalama anlaşması yapmaya çalışıp çalışmayacağını belirler. Etkinleştirildiğinde (varsayılan), Microsoft ağ istemcisi sunucudan oturum kurulumunda SMB paket imzalama gerçekleştirilmesini ister. Sunucuda paket imzalama etkinleştirildiyse, paket imzalama anlaşması yapılır. Bu ilke devre dışı bırakılırsa, SMB istemcisi hiçbir zaman SMB paket imzalama anlaşması yapmaz.
+- **İletişimleri dijital olarak imzala (sunucu onaylarsa)**: SMB istemcisinin SMB paket imzalama anlaşması yapmaya çalışıp çalışmayacağını belirler. Etkinleştirildiğinde (Yapılandırılmadı), Microsoft ağ istemcisi sunucudan oturum kurulumunda SMB paket imzalama gerçekleştirilmesini ister. Sunucuda paket imzalama etkinleştirilirse, paket imzalama anlaşması yapılır. Bu ilke devre dışı bırakılırsa, SMB istemcisi hiçbir zaman SMB paket imzalama anlaşması yapmaz.
 - **Üçüncü taraf SMB sunucularına şifrelenmemiş parola gönder**: Etkinleştirildiğinde, Sunucu İleti Bloğu (SMB) yeniden yönlendiricisinin kimlik doğrulama sırasında parola şifrelemesini desteklemeyen Microsoft dışı SMB sunucularına düz metin parolalar göndermesine izin verilir.
 
 ### <a name="microsoft-network-server"></a>Microsoft Ağ Sunucusu
 
-- **İletişimleri dijital olarak imzala (istemci onaylarsa)**: SMB sunucusunun istekte bulunan istemcilerle SMB paket imzalama anlaşması yapıp yapmayacağını belirler. Etkinleştirildiğinde, Microsoft ağ sunucusu istemci tarafından istendiği gibi SMB paket imzalama anlaşması yapar. Başka bir deyişle, istemcide paket imzalama etkinleştirildiyse paket imzalama anlaşması yapılır. Devre dışı bırakıldığında (varsayılan), SMB istemcisi hiçbir zaman SMB paket imzalama anlaşması yapmaz.
-- **İletişimleri dijital olarak imzala (her zaman)**: SMB sunucu bileşeninin paket imzalama gerektirip gerektirmediğini belirler. Etkinleştirildiğinde, Microsoft ağ istemcisi SMB paket imzalama gerçekleştirmeyi kabul etmediği sürece Microsoft ağ sunucusu istemciyle iletişim kurmaz. Devre dışı bırakıldığında (Varsayılan), istemciyle sunucu arasında SMB paket imzalama anlaşması yapılır.
+- **İletişimleri dijital olarak imzala (istemci onaylarsa)**: SMB sunucusunun istekte bulunan istemcilerle SMB paket imzalama anlaşması yapıp yapmayacağını belirler. Etkinleştirildiğinde, Microsoft ağ sunucusu istemci tarafından istendiği gibi SMB paket imzalama anlaşması yapar. Başka bir deyişle, istemcide paket imzalama etkinleştirildiyse paket imzalama anlaşması yapılır. **Yapılandırılmadığında** veya devre dışı bırakıldığında (varsayılan), SMB istemcisi hiçbir zaman SMB paket imzalama anlaşması yapmaz.
+- **İletişimleri dijital olarak imzala (her zaman)**: SMB sunucu bileşeninin paket imzalama gerektirip gerektirmediğini belirler. Etkinleştirildiğinde, Microsoft ağ istemcisi SMB paket imzalama gerçekleştirmeyi kabul etmediği sürece Microsoft ağ sunucusu istemciyle iletişim kurmaz. **Yapılandırılmadığında** veya devre dışı bırakıldığında (Varsayılan), istemciyle sunucu arasında SMB paket imzalama anlaşması yapılır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

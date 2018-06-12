@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure ile SCEP sertifikalarını kullanma | Microsoft Docs
-description: Microsoft Intune’da SCEP sertifikalarını kullanmak için şirket içi AD etki alanınızı yapılandırın, bir sertifika yetkilisi oluşturun, NDES sunucusunu ayarlayın ve Intune Sertifika Bağlayıcısı’nı yükleyin. Daha sonra bir SCEP sertifika profili oluşturun ve ardından bu profili gruplara atayın.
+description: Microsoft Intune’da SCEP sertifikalarını kullanmak için şirket içi AD etki alanınızı yapılandırın, bir sertifika yetkilisi oluşturun, NDES sunucusunu ayarlayın ve Intune Sertifika Bağlayıcısı’nı yükleyin. Daha sonra bir SCEP sertifika profili oluşturun ve ardından bu profili gruplara atayın. Ayrıca, farklı olay kimlikleriyle bunların açıklamalarını ve Intune bağlayıcı hizmeti için tanılama kodlarını görün.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 06/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f67ccf1c2fb3b708916ef4ed4209bd3be07d9a5e
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745035"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -65,7 +66,7 @@ NDES sunucusunun [Azure AD uygulama proxy’si](https://azure.microsoft.com/docu
 
 ### <a name="accounts"></a>Hesaplar
 
-|Adı|Ayrıntılar|
+|Ad|Ayrıntılar|
 |--------|-----------|
 |**NDES hizmet hesabı**|NDES Hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı girin.|
 
@@ -407,3 +408,54 @@ Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz ön�
     > iOS’ta aynı sertifika profilini kullanan birden fazla kaynak profili dağıtırsanız, yönetim profilinde bu sertifikanın birden çok kopyasını görmeniz olasıdır.
     
 Profillerin nasıl atanacağı hakkında bilgi için bkz. [Cihaz profillerini atama](device-profile-assign.md).
+
+## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune Bağlayıcısı olayları ve tanılama kodları
+
+Sürüm 6.1803.x.x'ten başlayarak, **Olay Görüntüleyicisi**'ndeki Intune Bağlayıcısı Hizmet günlükleri olayları (**Uygulama ve Hizmet Günlükleri** > **Microsoft Intune Bağlayıcısı**). Bu olayları, Intune Bağlayıcısı'nın yapılandırmasındaki olası sorunları gidermenize yardımcı olması için kullanın. Bu olaylar bir işlemin başarılarını ve başarısızlıklarını günlüğe kaydeder ve ayrıca BT yöneticisinin sorun gidermesine yardımcı olmak için tanılama kodlarıyla iletilerini içerir.
+
+### <a name="event-ids-and-descriptions"></a>Olay kimlikleri ve açıklamaları
+
+> [!NOTE]
+> Her olayın İlgili Tanılama Kodları hakkındaki ayrıntılar için, bu makaledeki **Tanılama kodları** tablosunu kullanın.
+
+| Olay Kimliği      | Olay Adı    | Olay Açıklaması | İlgili Tanılama Kodları |
+| ------------- | ------------- | -------------     | -------------            |
+| 10010 | StartedConnectorService  | Bağlayıcı hizmeti başlatıldı | 0x00000000, 0x0FFFFFFF |
+| 10020 | StoppedConnectorService  | Bağlayıcı hizmeti durduruldu | 0x00000000, 0x0FFFFFFF |
+| 10100 | CertificateRenewal_Success  | Bağlayıcı kayıt sertifikası başarıyla yenilendi | 0x00000000, 0x0FFFFFFF |
+| 10102 | CertificateRenewal_Failure  | Bağlayıcı kayıt sertifikası yenilenemedi. Bağlayıcıyı yeniden yükleyin. | 0x00000000, 0x00000405, 0x0FFFFFFF |
+| 10302 | RetrieveCertificate_Error  | Bağlayıcı kayıt sertifikası kayıt defterinden alınamadı. Bu olayla ilgili sertifika parmak izinin olay ayrıntılarını gözden geçirin. | 0x00000000, 0x00000404, 0x0FFFFFFF |
+| 10301 | RetrieveCertificate_Warning  | Olay ayrıntılarındaki tanılama bilgilerini denetleyin. | 0x00000000, 0x00000403, 0x0FFFFFFF |
+| 20100 | PkcsCertIssue_Success  | PKCS sertifikası başarıyla verildi. Bu olayla ilgili cihaz kimliği, kullanıcı kimliği, CA adı, sertifika şablonu adı ve sertifika parmak izi gibi olay ayrıntılarını gözden geçirin. | 0x00000000, 0x0FFFFFFF |
+| 20102 | PkcsCertIssue_Failure  | PKCS sertifikası verilemedi. Bu olayla ilgili cihaz kimliği, kullanıcı kimliği, CA adı, sertifika şablonu adı ve sertifika parmak izi gibi olay ayrıntılarını gözden geçirin. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
+| 20200 | RevokeCert_Success  | Sertifika başarıyla iptal edildi. Bu olayla ilgili cihaz kimliği, kullanıcı kimliği, CA adı ve sertifika seri numarası gibi olay ayrıntılarını gözden geçirin. | 0x00000000, 0x0FFFFFFF |
+| 20202 | RevokeCert_Failure | Sertifika iptal edilemedi. Bu olayla ilgili cihaz kimliği, kullanıcı kimliği, CA adı ve sertifika seri numarası gibi olay ayrıntılarını gözden geçirin. Ek bilgi için NDES SVC Günlükleri'ne bakın.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
+| 20300 | Download_Success | Sertifika imzalama, istemci sertifikası indirme veya sertifika iptal etme isteği başarıyla indirildi. İndirme ayrıntıları için olay ayrıntılarını gözden geçirin.  | 0x00000000, 0x0FFFFFFF |
+| 20302 | Download_Failure | Sertifika imzalama, istemci sertifikası indirme veya sertifika iptal etme isteği indirilemedi. İndirme ayrıntıları için olay ayrıntılarını gözden geçirin. | 0x00000000, 0x0FFFFFFF |
+| 20400 | Upload_Success | Sertifikanın istek veya iptal verileri başarıyla karşıya yüklendi. Karşıya yükleme ayrıntıları için olay ayrıntılarını gözden geçirin. | 0x00000000, 0x0FFFFFFF |
+| 20402 | Upload_Failure | Sertifikanın istek veya iptal verileri karşıya yüklenemedi. Hatanın hangi noktada oluştuğunu saptamak için olay ayrıntıları > Karşıya Yükleme Durumu'nu gözden geçirin.| 0x00000000, 0x0FFFFFFF |
+| 20500 | CRPVerifyMetric_Success  | Sertifika Kayıt Noktası istemci sınamasını başarıyla doğruladı | 0x00000000, 0x0FFFFFFF |
+| 20501 | CRPVerifyMetric_Warning  | Sertifika Kayıt Noktası isteği tamamladı ama reddetti. Diğer ayrıntılar için tanılama koduna ve iletisine bakın. | 0x00000000, 0x00000411, 0x0FFFFFFF |
+| 20502 | CRPVerifyMetric_Failure  | Sertifika Kayıt Noktası istemci sınamasını doğrulayamadı. Diğer ayrıntılar için tanılama koduna ve iletisine bakın. Sınamaya karşılık gelen Cihaz Kimliği için olay iletisi ayrıntılarına bakın. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |
+| 20600 | CRPNotifyMetric_Success  | Sertifika Kayıt Noktası bildirme işlemini başarıyla bitirdi ve sertifikayı istemci cihazına gönderdi. | 0x00000000, 0x0FFFFFFF |
+| 20602 | CRPNotifyMetric_Failure  | Sertifika Kayıt Noktası bildirme işlemini bitiremedi. İstekle ilgili bilgiler için olay iletisi ayrıntılarına bakın. NDES sunucusuyla CA arasındaki bağlantıyı doğrulayın. | 0x00000000, 0x0FFFFFFF |
+
+### <a name="diagnostic-codes"></a>Tanılama kodları
+
+| Tanılama Kodu | Tanı Adı | Tanılama İletisi |
+| -------------   | -------------   | -------------      |
+| 0x00000000 | Başarılı  | Başarılı |
+| 0x00000400 | PKCS_Issue_CA_Unavailable  | Sertifika yetkilisi geçerli değil veya yetkiliye ulaşılamıyor. Sertifika yetkilisinin kullanılabilir olduğunu ve sunucunuzun onunla iletişim kurabildiğini doğrulayın. |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Yerel sertifika deposunda Symantec Client Auth sertifikası bulunamadı. Daha fazla bilgi için [Symantec kayıt yetkilendirme sertifikası yükleme](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) makalesine bakın.  |
+| 0x00000402 | RevokeCert_AccessDenied  | Belirtilen hesabın CA'dan sertifika iptal etme izinleri yok. Veren CA'yı saptamak için olay iletisi ayrıntılarında CA Adı alanına bakın.  |
+| 0x00000403 | CertThumbprint_NotFound  | Girişinizle eşleşen bir sertifika bulunamadı. Sertifika bağlayıcısının kaydını yapın ve yeniden deneyin. |
+| 0x00000404 | Certificate_NotFound  | Sağlanan girişle eşleşen bir sertifika bulunamadı. Sertifika bağlayıcısının kaydını yeniden yapın ve bir kez daha deneyin. |
+| 0x00000405 | Certificate_Expired  | Sertifikanın süresi doldu. Sertifikayı yenilemek için sertifika bağlayıcısının kaydını yeniden yapın ve bir kez daha deneyin. |
+| 0x00000408 | CRPSCEPCert_NotFound  | CRP Şifreleme sertifikası bulunamadı. NDES ve Intune Connector'ın düzgün kurulduğunu doğrulayın. |
+| 0x00000409 | CRPSCEPSigningCert_NotFound  | İmzalama sertifikası alınamadı. Intune Bağlayıcı Hizmeti'nin düzgün yapılandırıldığını ve Intune Bağlayıcı Hizmeti'nin çalıştığını doğrulayın. Ayrıca sertifika indirme olaylarının başarılı olduğunu da doğrulayın. |
+| 0x00000410 | CRPSCEPDeserialize_Failed  | SCEP sınama isteği seri durumdan çıkarılamadı. NDES ile Intune Connector'ın düzgün kurulduğunu doğrulayın. |
+| 0x00000411 | CRPSCEPChallenge_Expired  | Sertifika sınamasının süresi dolduğundan istek reddedildi. İstemci cihazı yönetim sunucusundan yeni bir sınama aldıktan sonra bir kez daha deneyebilir. |
+| 0x0FFFFFFFF | Unknown_Error  | Bir sunucu tarafı hatası oluştuğundan isteğinizi tamamlayamadık. Lütfen tekrar deneyin. |
+
+## <a name="next-steps"></a>Sonraki adımlar
+[PKCS sertifikalarını kullanma](certficates-pfx-configure.md) veya [Symantec PKI yöneticisi web hizmetinden PKCS sertifikaları verme](certificates-symantec-configure.md).

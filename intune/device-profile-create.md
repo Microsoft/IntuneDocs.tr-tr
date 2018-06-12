@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f62e306574606ffa1eb1e6f242c3cb30b1a9c1b
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744661"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
@@ -46,16 +47,19 @@ ms.lasthandoff: 04/16/2018
    - **Profil türü**: Oluşturmak istediğiniz türü seçin. Liste, seçtiğiniz platforma bağlıdır.
    - **Ayarlar**: Aşağıdaki konu başlıkları her profil türü için ayarları açıklar:
 
-       -  [Cihaz özelliği ayarları](device-features-configure.md)
-       -  [Cihaz kısıtlama ayarları](device-restrictions-configure.md)
-       -  [E-posta ayarları](email-settings-configure.md)
-       -  [VPN ayarları](vpn-settings-configure.md)
-       -  [Wi-Fi ayarları](wi-fi-settings-configure.md)
-       -  [Windows 10 sürüm yükseltme ayarları](edition-upgrade-configure-windows-10.md)
-       -  [Sertifika ayarları](certificates-configure.md)
-       -  [Windows Bilgi Koruması ayarları](windows-information-protection-configure.md)
-       -  [Eğitim ayarları](education-settings-configure.md)
-       -  [Özel ayarlar](custom-settings-configure.md)
+       -  [Cihaz özellikleri](device-features-configure.md)
+       -  [Cihaz kısıtlamaları](device-restrictions-configure.md)
+       -  [Uç nokta koruması](endpoint-protection-configure.md)
+       -  [Bilgi noktası](kiosk-settings.md)
+       -  [E-posta](email-settings-configure.md)
+       -  [VPN](vpn-settings-configure.md)
+       -  [Wi-Fi](wi-fi-settings-configure.md)
+       -  [Windows 10](education-settings-configure.md) ve [iOS](wi-fi-settings-ios.md) için Eğitim
+       -  [Windows 10 sürüm yükseltme](edition-upgrade-configure-windows-10.md)
+       -  [iOS güncelleştirme ilkeleri](software-updates-ios.md)
+       -  [Sertifikalar](certificates-configure.md)
+       -  [Windows Bilgi Koruması](windows-information-protection-configure.md)
+       -  [Özel](custom-settings-configure.md)
 
      ![Profil oluştur ekran görüntüsü](./media/create-device-profile.png)
 
@@ -63,6 +67,5 @@ ms.lasthandoff: 04/16/2018
 
 Profil oluşturulur ve listede görüntülenir.
 
-
 ## <a name="next-steps"></a>Sonraki adımlar
-Cihaz profillerini atamak için bkz. [Microsoft Intune ile cihaz profillerini atama](device-profile-assign.md).
+[Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).

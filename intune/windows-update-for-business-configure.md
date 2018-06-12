@@ -5,18 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 5/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: c8751572ec2c072504b2442cb7e76496e969e0a2
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744899"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune’da yazılım güncelleştirmelerini yönetme
 
@@ -166,6 +167,12 @@ Bir cihazın Özellik Güncelleştirmeleri veya Kalite Güncelleştirmeleri alma
 > [!IMPORTANT]
 > Bir duraklatma komutu verdiğinizde, cihazlar bu komutu hizmete bir sonraki giriş yaptıkları sırada alır. Bu nedenle, hizmete giriş yapmadan önce, zamanlanmış bir güncelleştirmenin yüklenmesi mümkündür.
 > Ayrıca, hedeflenen bir cihaz duraklatma komutunu verdiğiniz sırada kapalıysa bu cihaz açıldığında Intune’u denetlemeden önce, zamanlanmış güncelleştirmeleri indirip yükleyebilir.
+
+### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>En son Windows 10 yazılım güncelleştirmesini kaldırma 
+Windows 10 makinelerinizde çalışmanın kesilmesine neden olan bir sorun keşfederseniz, en son özellik güncelleştirmesini veya en son kalite güncelleştirmesini kaldırmayı (geri almayı) seçebilirsiniz. Özellik veya kalite güncelleştirmesini kaldırma işlemi yalnızca hizmetin içinde açıldığı hizmet kanalında kullanılabilir. Kaldırma işlemi Windows 10 makinelerinizde önceki güncelleştirmeyi geri yüklemeye yönelik bir ilkeyi tetikler. Özellik güncelleştirmeleri için, en son sürümü kaldırma işleminin uygulanabilme süresini 2-60 gün arasıyla sınırlandırabilirsiniz. Yazılım güncelleştirmesini kaldırma seçeneklerini ayarlamak için, Azure portalının içindeki **Microsoft Intune** dikey penceresinden **Yazılım güncelleştirmeleri**'ni seçin. Ardından, **Yazılım güncelleştirmeleri** dikey penceresinden **Windows 10 Güncelleştirme Kademeleri**'ni seçin. Daha sonra da **Genel Bakış** bölümünde **Kaldır** seçeneğini belirtebilirsiniz.
+
+> [!NOTE]
+> Windows 10 makinelerinde kalite güncelleştirmesi başarıyla dağıtıldıktan sonra, son kullanıcılar **Windows ayarları** > **Güncelleştirmeler** > **Güncelleştirme Geçmişi**'ni seçerek başarıyla geri alınmış güncelleştirmeyi yine görebilir.
 
 ## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business Desteği
 

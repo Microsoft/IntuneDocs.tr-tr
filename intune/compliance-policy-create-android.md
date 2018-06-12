@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744712"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune’da Android cihazlar için cihaz uyumluluk ilkesi ekleme
 
@@ -35,10 +36,10 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 | **PIN veya Parola yapılandırması** |  Karantinaya Alındı |
 | **Cihaz şifrelemesi** | Karantinaya Alındı |
 | **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | Karantinaya Alındı (ayar değil) |
-| **e-posta profili** | Uygulanamaz |
+| **e-posta profili** | Geçerli değil |
 | **En düşük işletim sistemi sürümü** | Karantinaya Alındı |
 | **En yüksek işletim sistemi sürümü** |   Karantinaya Alındı |
-| **Windows durum kanıtlama** | Uygulanamaz |
+| **Windows durum kanıtlama** | Geçerli değil |
 
 --------------------------
 
@@ -63,7 +64,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 <!---##  Compliance policy settings--->
 
-## <a name="device-health"></a>Cihaz durumu
+## <a name="device-health"></a>Device health
 
 - **Kök erişim izni verilmiş cihazlar**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
 - **Cihazın Cihaz Tehdit Düzeyinde veya bunun altında olmasını gerektir**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. İzin verilen en yüksek tehdit düzeyini seçin:
@@ -122,6 +123,17 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 - **Şirket Portalı uygulaması çalışma zamanı bütünlüğü**: Şirket Portalı uygulamasında varsayılan çalışma zamanı ortamının yüklü olup olmadığını, doğru şekilde oturum açılıp açılmadığını ve uygulamanın bilinen bir kaynaktan indirilip indirilmediğini denetler.
 - **Cihazda USB hata ayıklamayı engelle** (Android 4.2 ve sonrası): Cihazların USB hata ayıklama özelliğini kullanmalarını engellemeyi seçin.
 - **En düşük güvenlik düzeltme eki düzeyi** (Android 6.0 ve sonrası): Bir cihazda olabilecek en eski güvenlik düzeltme eki düzeyini seçin. En az bu düzeltme eki düzeyinde olmayan cihazlar uyumsuz kabul edilir. Tarihin `YYYY-MM-DD` biçiminde girilmesi gerekir.
+
+## <a name="locations"></a>Konumlar
+
+İlkenizde, mevcut konumlar arasından seçim yapın. Henüz bir konumunuz yok mu? [Intune'da Konumları (ağ yalıtımı) kullanma](use-network-locations.md) başlığı altında bazı yönergeler sağlanır.
+
+1. **Konumları seç** öğesini seçin.
+2. Listeden konumunuzu bulun ve **Seç**'i kullanın.
+3. İlkeyi **kaydedin**.
+4. **Uyumsuzluğa yönelik eylemler**'i seçin. Varsayılan eylem cihazı hemen uyumsuz olarak işaretler. Bu eylem, en az bir konum seçtiğinizde ve cihaz seçili konumlara bağlı olmadığından uygulanır.
+
+  Cihaz uyumsuz olarak işaretlendiğinde, zamanlamayı güncelleştirmek (örneğin, bir gün sonraya) için bu eylemi değiştirebilirsiniz. Ayrıca, cihaz artık konumlarınızla uyumlu olmadığında kullanıcıya e-posta gönderen ikinci bir eylem de yapılandırabilirsiniz.
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 

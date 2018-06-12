@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703290"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler
 
@@ -39,7 +40,7 @@ Cihaz **Intune'a kayıtlı değilse**, kullanıcı uygulamayı ilk kez kullandı
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Birden çok kimlik destekli uygulamaları kullanma
 
-Uygulama koruma ilkeleri, bir kullanıcı işle ilgili verilere erişmeye çalıştığında etkinleşir.  Kullanıcı kişisel kullanım için uygulamaya erişirse farklı davranışlar görebilirsiniz. 
+Uygulama koruma ilkeleri, ancak bir kullanıcı işle ilgili verilere erişmeye çalıştığında etkinleşir. Kullanıcı kişisel kullanım için uygulamaya erişmeye çalışırsa farklı bir davranış görebilirsiniz. İlkeler henüz kaydedilmemiş olan yeni içeriğe de uygulanmaz. Yeni içeriğin şirket bilgisi olarak kabul edilmesi için SharePoint veya OneDrive İş gibi bir şirket konumuna kaydedilmiş olması gerekir.
 
 Çoklu kimliği destekleyen uygulamalar için, Intune yalnızca bir kullanıcı iş verilerine eriştiğinde uygulama koruma ilkelerini uygular.  Örneğin, bir kullanıcı bir PIN istemi alabilir.  **Outlook uygulamasında**, kullanıcı uygulamayı başlattığında bir istem oluşur. **OneDrive uygulamasında**, kullanıcı iş hesabına yazdığında istem oluşur.  Microsoft **Word**, **PowerPoint** ve **Excel**’de, bir kullanıcı şirketin OneDrive belgelerine eriştiğinde bir istem oluşur.
 ##  <a name="managing-user-accounts-on-the-device"></a>Cihazda kullanıcı hesaplarını yönetme

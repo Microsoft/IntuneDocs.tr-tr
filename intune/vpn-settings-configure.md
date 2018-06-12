@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744610"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune’da VPN profilleri oluşturma
 
@@ -41,18 +42,19 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 
 |Bağlantı türü|Android<br>Android for Work|iOS|Mac OS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Evet|Evet|Evet|Evet|Evet|Evet|
-|Cisco (IPSec)|Hayır|Evet|Hayır|Hayır|Hayır|Hayır|
-|Citrix|Evet|Evet|Hayır|Hayır|Hayır|Evet|
-|F5 Edge İstemcisi|Evet|Evet|Evet|Evet|Evet|Evet|
-|SonicWall Mobile Connect|Evet|Evet|Evet|Evet|Evet|Evet|
+|Otomatik|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
 |Check Point Capsule VPN|Evet|Evet|Evet|Evet|Evet|Evet|
 |Cisco AnyConnect|Evet|Evet|Evet|Hayır|Hayır|Hayır|
-|Otomatik|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
+|SonicWall Mobile Connect|Evet|Evet|Evet|Evet|Evet|Evet|
+|F5 Edge İstemcisi|Evet|Evet|Evet|Evet|Evet|Evet|
+|Palo Alto Networks GlobalProtect|Hayır|Evet|Hayır|Hayır|Hayır|Evet|
+|Pulse Secure|Evet|Evet|Evet|Evet|Evet|Evet|
+|Cisco (IPSec)|Hayır|Evet|Hayır|Hayır|Hayır|Hayır|
+|Citrix|Evet (yalnızca Android)|Evet|Hayır|Hayır|Hayır|Evet|
 |IKEv2|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
 |L2TP|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
 |PPTP|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
-|Özel|Hayır|Evet|Evet|Hayır|Hayır|Hayır|
+|Özel VPN|Hayır|Evet|Evet|Hayır|Hayır|Hayır|
 
 > [!IMPORTANT]
 > Bir cihaza atanan VPN profillerini kullanmadan önce profil için geçerli VPN uygulamasını yüklemeniz gerekir. Uygulamayı Intune kullanarak atamanıza yardımcı olması için [Microsoft Intune'da uygulama yönetimi nedir?](app-management.md) makalesinde verilen bilgileri kullanabilirsiniz.  
