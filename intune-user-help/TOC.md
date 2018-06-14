@@ -137,6 +137,7 @@
 ### [Cihazınızı el ile eşitleme](sync-your-device-manually-windows.md)
 
 ### [Windows cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-windows.md)
+### [Erişim noktası kısıtlamalarını çözme](resolve-access-point-restrictions.md)
 #### [Windows 10 cihazımı kaydedemiyorum](troubleshoot-your-windows-10-device-windows.md)
 #### [Windows cihazınızı güncelleştirme](you-need-to-update-your-windows-device.md)
 #### [Günlükleri Şirket Portalı uygulamasından gönderme](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [Cihazınızı kaldırma](remove-your-device-cpwebsite.md)
 ### [Cihaz geçiş kodunuzu sıfırlama](reset-your-passcode-cpwebsite.md)
 ### [Cihazınızı sıfırlama ve silme](reset-erase-your-device-cpwebsite.md)
-### [Cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)

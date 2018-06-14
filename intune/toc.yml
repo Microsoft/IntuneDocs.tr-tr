@@ -270,6 +270,8 @@
           items:
             - name: Uygulama ekleme ve çıkarma
               href: apps-inc-exl-assignments.md
+            - name: Windows 10 uygulamalarını dağıtma
+              href: apps-windows-10-app-deploy.md
         - name: Uygulamaları izleme
           href: apps-monitor.md
         - name: Uygulama yapılandırma
@@ -644,6 +646,8 @@
       items:
         - name: Kullanıcıların sorunları gidermesine yardımcı olma
           href: help-desk-operators.md
+        - name: Şirket kaynak erişimi sorunlarını giderme
+          href: troubleshoot-company-resource-access-problems.md
         - name: Intune etkinlikleri için denetleme günlükleri
           href: monitor-audit-logs.md
         - name: Uygulama koruma günlüklerini gözden geçirme
@@ -693,7 +697,9 @@
           href: app-wrapper-prepare-android.md
         - name: Android için Intune Uygulama SDK'sı
           href: app-sdk-android.md
-        - name: Intune Uygulama SDK’sı Xamarin bileşeni
+        - name: Intune Uygulama SDK’sı Cordova eklentisi
+          href: app-sdk-cordova.md
+        - name: Intune Uygulama SDK’sı Xamarin Bağlamaları
           href: app-sdk-xamarin.md
     - name: Intune Veri Ambarını kullanma
       href: reports-nav-create-intune-reports.md
