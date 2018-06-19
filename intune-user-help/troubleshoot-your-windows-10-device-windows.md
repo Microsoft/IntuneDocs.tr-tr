@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018184"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 cihaz kaydı sorunlarınızı giderme
 [Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune’a kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md) bölümündeki adımları uyguladıysanız, ancak iş veya okul e-postalarınıza ve dosyalarınıza yine de erişemiyorsanız, bu sorun giderme adımlarını uygulayın.

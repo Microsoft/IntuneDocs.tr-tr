@@ -21,6 +21,7 @@ ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "34308883"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Cihazımı kaydettiğimde şirketim hangi bilgileri görebilir?
 

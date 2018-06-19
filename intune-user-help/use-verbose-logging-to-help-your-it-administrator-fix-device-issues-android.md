@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016773"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Ayrıntılı günlük kaydı ile şirketinizin destek birimine cihaz sorunlarını çözmede yardımcı olma
 

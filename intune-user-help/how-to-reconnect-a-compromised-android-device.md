@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013033"
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Ele geçirilen bir Android cihazı yeniden bağlama
 

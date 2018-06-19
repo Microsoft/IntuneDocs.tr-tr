@@ -17,6 +17,7 @@ ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30254562"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune’da macOS Endpoint Protection ayarları
 

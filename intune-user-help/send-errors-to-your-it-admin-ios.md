@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327713"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS cihazınızla ilgili sorunlar için şirketinizin destek birimine hata gönderme
 iOS cihazınızda Şirket Portalı uygulamasını kullanırken bazen bir hatayla karşılaşabilirsiniz. Böyle bir durumda hatanın ayrıntılarını şirketinizin destek çalışanına e-posta ile gönderebilirsiniz. Bu ayrıntılar, sorununuzu gidermek için gerekli bağlamı sağlayacaktır.

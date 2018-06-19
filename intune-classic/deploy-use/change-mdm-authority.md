@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028070"
 ---
 # <a name="change-the-mdm-authority"></a>MDM yetkilisini değiştirme
 Configuration Manager’ın 1610 sürümünden başlayarak MDM yetkilinizi, Microsoft Desteği ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Bu bölüm, Intune’dan yapılandırılmış ve MDM yetkilisi **Microsoft Intune**’dan (tek başına) **Configuration Manager**’a (karma MDM) ayarlanmış mevcut bir Microsoft Intune kiracısını mevcut yönetilen cihazların kaydını silip yeniden kaydetmeye gerek kalmadan değiştirme adımları sağlar.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025442"
 ---
 # <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Intune'da Windows 10 sürüm yükseltme profilini yapılandırma
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

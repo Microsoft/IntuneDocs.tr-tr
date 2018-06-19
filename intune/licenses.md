@@ -19,6 +19,7 @@ ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34216284"
 ---
 # <a name="licenses-that-include-intune"></a>Intune barındıran lisanslar
 

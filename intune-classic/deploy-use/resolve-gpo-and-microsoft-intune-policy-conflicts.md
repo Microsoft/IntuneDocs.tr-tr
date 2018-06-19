@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31031830"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Grup İlkesi Nesneleri (GPO) ve Microsoft Intune ilke çakışmalarını çözme
 

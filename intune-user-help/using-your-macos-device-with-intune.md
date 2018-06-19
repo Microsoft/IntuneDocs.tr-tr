@@ -22,6 +22,7 @@ ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2018
+ms.locfileid: "31771865"
 ---
 # <a name="using-your-macos-device-with-intune"></a>macOS cihazınızı Intune ile kullanma
 

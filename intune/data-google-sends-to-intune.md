@@ -20,6 +20,7 @@ ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31617611"
 ---
 # <a name="data-google-sends-to-intune"></a>Google’ın Intune’a gönderdiği veriler
 

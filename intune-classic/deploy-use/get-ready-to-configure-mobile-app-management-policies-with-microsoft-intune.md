@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31024082"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Azure portalında uygulama koruma ilkelerini yapılandırmaya hazırlanma
 

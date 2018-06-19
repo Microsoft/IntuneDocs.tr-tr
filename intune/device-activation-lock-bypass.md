@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31022518"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Denetimli iOS cihazlarda Intune ile Etkinleştirme Kilidini atlama
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016314"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Windows 10 cihazlar için Ayarlar uygulamasından şirketinizin destek birimine günlük gönderme
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31831309"
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>iOS çalıştıran cihazlar için Microsoft Intune özel cihaz ayarları
 

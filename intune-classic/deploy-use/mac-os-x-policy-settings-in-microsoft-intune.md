@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31026304"
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Mac OS X yapılandırma ilkesi ayarları
 

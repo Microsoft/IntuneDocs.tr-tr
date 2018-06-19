@@ -19,6 +19,7 @@ ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/22/2018
+ms.locfileid: "30015268"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure konsolu ve eski Intune PC İstemcisi'ndeki Intune
 

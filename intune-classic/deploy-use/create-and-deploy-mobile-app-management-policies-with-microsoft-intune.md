@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31026423"
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755241"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>İşleri halletmek için yönetilen cihazları kullanma
 Microsoft Intune, kuruluşların cihazları (akıllı telefonlar, tabletler ve bilgisayarlar gibi), uygulamaları ve e-posta gibi diğer şirket kaynaklarını yönetmesine olanak tanıyan bir yazılım parçasıdır. Bu yazılım, çalışanların hemen her yerden ve hemen her cihazdan çalışma bilgilerine erişmesini sağlarken, kurumsal bilgilerin güvenliğini korumaya da yardımcı olur.

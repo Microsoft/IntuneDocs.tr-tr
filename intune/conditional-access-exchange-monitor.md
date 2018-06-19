@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Intune’da Exchange koşullu erişimi izleme"
-titlesuffix: 
-description: "Intune Azure portalı üzerinden şirket içi Exchange ve Exchange Online için koşullu erişim uyumluluğunu izleyin."
-keywords: 
+title: Microsoft Intune’da Exchange koşullu erişimi izleme
+titlesuffix: ''
+description: Intune Azure portalı üzerinden şirket içi Exchange ve Exchange Online için koşullu erişim uyumluluğunu izleyin.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29775367"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune'da şirket içi Exchange ve Exchange Online için koşullu erişim uyumluluğunu izleme
 

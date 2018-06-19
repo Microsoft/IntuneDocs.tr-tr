@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31032600"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure'daki Intune özelliğim nereye gitti?
 Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekilde organize ettik. Ancak her geliştirme sonrasında atlatılması gereken bir yeni düzene alışma süreci vardır. Bu nedenle klasik portalda Intune’a aşina olanlar ve bir işlemi Azure portalında Intune’da nasıl gerçekleştireceğini merak edenler için bu başvuru kılavuzunu hazırladık. Aradığınız özellik bu makalede yoksa , güncelleştirebilmemiz için makalenin sonuna yorumlarınızı yazın.

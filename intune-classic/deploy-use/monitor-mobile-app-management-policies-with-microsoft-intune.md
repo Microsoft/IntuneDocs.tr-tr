@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021533"
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune ile uygulama koruma ilkelerini izleme
 Kullanıcılara uyguladığınız mobil uygulama koruma ilkelerinin uyumluluk durumunu izleyebilirsiniz. Uygulama koruma ilkelerinden etkilenen kullanıcılar hakkında bilgiler, ilkelerin uyumluluk durumunu ve kullanıcılarınızın karşılaşmış olabileceği sorunları bulabilirsiniz.

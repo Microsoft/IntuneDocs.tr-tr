@@ -1,16 +1,16 @@
 ---
-title: "Zimperium MTD’yi Microsoft Intune ile tümleştirme"
-titleSuffix: 
-description: "Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Microsoft Intune ile Zimperium Mobile Threat Defense (MTD) çözümünü kurma."
-keywords: 
+title: Zimperium MTD’yi Microsoft Intune ile tümleştirme
+titleSuffix: ''
+description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Microsoft Intune ile Zimperium Mobile Threat Defense (MTD) çözümünü kurma.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29777628"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium'u Intune ile tümleştirme
 

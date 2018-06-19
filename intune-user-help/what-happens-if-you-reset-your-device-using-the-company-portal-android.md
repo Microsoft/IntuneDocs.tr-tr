@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015413"
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak Android cihazınızı sıfırlarsanız ne olur?
 

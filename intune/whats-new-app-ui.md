@@ -20,6 +20,7 @@ ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32046290"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu güncelleştirmeleri anlamak, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.

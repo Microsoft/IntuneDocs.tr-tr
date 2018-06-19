@@ -22,6 +22,7 @@ ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "34308866"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Cihazınızı Şirket Portalı’ndan kaldırma
 

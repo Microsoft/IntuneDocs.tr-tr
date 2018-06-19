@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073827"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Cihazınızda güvenlik tehdidi taramalarını etkinleştirme 
 Farkında olmadan güvenli olmayan bir uygulama yüklerseniz cihaz verileriniz risk altında olabilir. Cihazınızdaki verileri korumak için şunları yapmanızı öneririz: 

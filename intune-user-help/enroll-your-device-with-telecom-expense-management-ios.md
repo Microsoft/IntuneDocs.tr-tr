@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31031813"
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>iOS cihazınızı telekomünikasyon gider yönetimine kaydetme
 

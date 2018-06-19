@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31833226"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Self servis parola sıfırlama ile yardım masası maliyetlerini azaltma
 

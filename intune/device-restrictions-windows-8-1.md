@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31833009"
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 ve üzeri cihaz kısıtlama ayarları
 

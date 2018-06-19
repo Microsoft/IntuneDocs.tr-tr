@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030518"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS cihazınız, gerekli en düşük işletim sistemi sürümüne sahip değil
 

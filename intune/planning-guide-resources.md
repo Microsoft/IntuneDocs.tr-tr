@@ -19,6 +19,7 @@ ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/20/2018
+ms.locfileid: "29999075"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune dağıtımınızı planlamak için ek kaynaklar
 

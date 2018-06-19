@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013067"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune Erişilebilirlik Özellikleri
 Microsoft Windows'daki erişilebilirlik özelliklerine ve araçlara ek olarak, aşağıdaki özellikler Microsoft Intune’u engelli kişiler için daha erişilebilir hale getirir: Klavye kısayollarını kullanma

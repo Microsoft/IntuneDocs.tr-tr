@@ -16,6 +16,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29962455"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune etkinlikleri için denetleme günlükleri
 Denetim günlükleri size, Microsoft Intune'da değişiklik yaratan etkinliklerin kaydını sağlar. Eylemleri veya uzak görevleri oluşturun, güncelleştirin (düzenleyin), silin ve atayın; gözden geçirebileceğiniz denetim olayları oluşturun. Intune iş yüklerinin çoğunda denetim günlüklerini gözden geçirebilirsiniz. Denetim tüm müşteriler için varsayılan olarak etkindir ve devre dışı bırakılamaz. Denetim olayları özelliği Aralık 2017’deki yayımlanma tarihinde kaydedilmeye başlandı; daha önceki olaylar mevcut değil.

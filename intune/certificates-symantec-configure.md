@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31836534"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Symantec PKI Manager Web Hizmeti için Intune Sertifika Bağlayıcı'yı Ayarlama
 

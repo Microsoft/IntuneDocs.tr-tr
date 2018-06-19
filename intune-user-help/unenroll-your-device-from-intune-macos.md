@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30752963"
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>macOS cihazınızın Intune kaydını silme
 

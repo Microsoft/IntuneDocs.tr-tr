@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30751977"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work tarafından bulunan bir tehdidi çözme
 

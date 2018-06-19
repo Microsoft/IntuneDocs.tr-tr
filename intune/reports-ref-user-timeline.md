@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34223722"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune Veri Ambarı’nda kullanıcı ömrü gösterimi
 
