@@ -77,7 +77,7 @@ iOS için Azure Active Directory kimlik doğrulamasını etkinleştirmek üzere 
 
 1. [Azure portalı](https://portal.azure.com)'na gidin, kimlik bilgilerinizle oturum açın, sonra uygulama sayfasına gidin.
 
-2. **Lookout for Work iOS uygulamasını****yerel istemci uygulaması** olarak ekleyin.
+2. **Lookout for Work iOS uygulamasını yerel istemci uygulaması** olarak ekleyin.
 
 3. IPA’yı imzaladığınızda seçtiğiniz müşteri paketi kimliğini **com.lookout.enterprise.yourcompanyname** ile değiştirin.
 

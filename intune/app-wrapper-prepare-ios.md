@@ -158,8 +158,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
    ![Şirket içi sağlama profilini seçin](./media/iOS-provisioning-profile-1.png)
 
-5. 
-              **Devam**'a tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
+5. **Devam'a** tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
 
 6. Profilinizi (.mobileprovision uzantısı ile) Mac OS bilgisayarınıza yükleme adımlarını izleyin.
 
