@@ -135,6 +135,7 @@
 ### [Cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Cihazınızı el ile eşitleme](sync-your-device-manually-windows.md)
+### [Windows 10 cihazınızdan cihazları uzaktan kilitleme](remote-lock-your-device-cp-app.md) 
 
 ### [Windows cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-windows.md)
 ### [Erişim noktası kısıtlamalarını çözme](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [UAC’yi etkinleştirmek istiyorum](you-need-to-enable-uac-windows.md)
 #### [Windows’u güncelleştirmek istiyorum](you-need-to-update-os-build-version-windows.md)
 #### [Windows Defender'ı etkinleştirmek istiyorum](turn-on-defender-windows.md)
-## [Windows için Şirket Portalı uygulamasından cihazı uzaktan kilitleme](remote-lock-your-device-cp-app.md) 
+
 ## [Intune Şirket Portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
 ### [Cihazlarınızı uzaktan kilitleme](remote-lock-your-device-cpwebsite.md)
 ### [Cihazınızı yeniden adlandırma](rename-your-device-cpwebsite.md)

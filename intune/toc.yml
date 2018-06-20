@@ -672,8 +672,12 @@
           href: troubleshoot-software-updates-in-microsoft-intune.md
         - name: Uç nokta koruması sorunlarını giderme
           href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: Sorun giderme ilkeleri
+        - name: İlkelerle ilgili sorunları giderme
           href: troubleshoot-policies-in-microsoft-intune.md
+        - name: Koşullu erişim sorunlarını giderme
+          href: troubleshoot-conditional-access.md
+        - name: Exchange bağlayıcısı sorunlarını giderme
+          href: troubleshoot-exchange-connector.md
     - name: Otomatikleştirme ve özelleştirme
       items:
         - name: Özel cihaz ayarlarını yapılandırma
