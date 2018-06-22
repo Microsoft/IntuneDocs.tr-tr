@@ -578,56 +578,40 @@
     - name: Yazılım güncelleştirmelerini yönetme
       href: windows-update-for-business-configure.md
     - name: Yazılım aracısıyla bilgisayarları yönetme
-      href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune
-      maintainContext: true
+      href: manage-windows-pcs-with-microsoft-intune.md
       items:
         - name: Bilgisayar yönetimini karşılaştırma
-          href: /intune-classic/deploy-use/pc-management-comparison
-          maintainContext: true
+          href: pc-management-comparison.md
         - name: Bilgisayar istemcisini yükleme
-          href: /intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune
-          maintainContext: true
+          href: install-the-windows-pc-client-with-microsoft-intune.md
         - name: Genel bilgisayar yönetim görevleri
-          href: /intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client
-          maintainContext: true
+          href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
           items:
             - name: Bilgisayar ilkeleri
-              href: /intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management
-              maintainContext: true
+              href: use-policies-to-simplify-windows-pc-management.md
             - name: Envanteri görüntüleme
-              href: /intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune
-              maintainContext: true
+              href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
             - name: Bilgisayarları devre dışı bırakma
-              href: /intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune
-              maintainContext: true
+              href: retire-a-windows-pc-with-microsoft-intune.md
             - name: Bilgisayarları kullanıcılara bağlama
-              href: /intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune
-              maintainContext: true
+              href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
             - name: Uzaktan yardım
-              href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune
-              maintainContext: true
+              href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
         - name: Windows bilgisayarları koruma ilkeleri
-          href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
-          maintainContext: true
+          href: policies-to-protect-windows-pcs-in-microsoft-intune.md
           items:
             - name: Yazılım güncelleştirmeleri
-              href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
-              maintainContext: true
+              href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
             - name: Windows Güvenlik Duvarı
-              href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
-              maintainContext: true
+              href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
             - name: Uç Nokta Koruma
-              href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
-              maintainContext: true
+              href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
         - name: Intune istemci bilgisayarları için uygulama ekleme
-          href: /intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune
-          maintainContext: true
+          href: add-apps-for-windows-pcs-in-microsoft-intune.md
         - name: Lisans anlaşmalarını yönetme
-          href: /intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune
-          maintainContext: true
+          href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
         - name: İlke çakışmalarını çözme
-          href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
-          maintainContext: true
+          href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
     - name: Windows Holographic’i Yönetme
       href: windows-holographic-for-business.md
       items:
