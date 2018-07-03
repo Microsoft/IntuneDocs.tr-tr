@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09b94ad2109c41ad02e8da7267690c31ba296bae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 183acfc36e77aab85fa086452e00561c521dd830
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34475617"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>iOS denetimli modunu açma
 
@@ -33,7 +34,7 @@ Denetim gerektiren Apple denetimleri listesi için Apple’ın [Yük ayarları b
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>Denetimli modu kayıt sırasında açma
 
-[DEP’te bir Apple kayıt profili oluşturduğunuzda](https://docs.microsoft.com/en-us/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile) Intune’da cihazlar için denetimli modu açabilirsiniz. **Cihaz Yönetim Ayarları** altında **Denetimli** kutusunu işaretleyin.
+[DEP’te bir Apple kayıt profili oluşturduğunuzda](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile) Intune’da cihazlar için denetimli modu açabilirsiniz. **Cihaz Yönetim Ayarları** altında **Denetimli** kutusunu işaretleyin.
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>Denetimli modu kayıt sonrasında açma
 

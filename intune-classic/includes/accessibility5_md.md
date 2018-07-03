@@ -1,1 +1,1 @@
-Daha Fazla Bilgi İçin
+Ek Bilgiler

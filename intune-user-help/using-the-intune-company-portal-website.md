@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca19c189a48e8173232cfe6fde9e33eb6fb1090
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762238"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune Şirket Portalı web sitesini kullanma
 [Şirket Portalı web sitesi](https://portal.manage.microsoft.com#HelpDeskDialog), Intune’a kaydettikleri bilgisayarları ve cihazları yönetmek için son kullanıcıların kullanabileceği bir web sayfasıdır.
@@ -37,8 +38,6 @@ Kullanıcılar, Şirket Portalı web sitesinden şu görevleri gerçekleştirebi
 -   [Cihaz geçiş kodunuzu sıfırlama](reset-your-passcode-cpwebsite.md)
 
 -   [Cihazı uzaktan kilitleme](remote-lock-your-device-cpwebsite.md)
-
--   [Uygulamaların daha hızlı bir şekilde yüklenmesini sağlamak için cihazınızı el ile eşitleme](sync-your-device-manually-cpwebsite.md)
 
 -   İletişim bilgilerini siz yapılandırdıysanız, şirketinizin destek biriminin iletişim bilgilerini bulun
 

@@ -14,12 +14,12 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 88fa0d58bc982148b44233e7486a4ce0a2e8598a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e479ae9e3cd2caf6b893cb75f9af8fde2340f0c
+ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023045"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37133995"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler
 
@@ -72,9 +72,9 @@ Aşağıdaki dosya türleri desteklenir:
 * **Belgeler:** PDF, PPDF
 
 
-|**pfile**|**metin**|
-|----|----|
-|Pfile, korumalı dosyalar için şifrelenmiş içerik ve Azure Information Protection lisanslarını kapsayan genel bir "sarmalayıcı" biçimidir. Herhangi bir dosya türünü korumak için kullanılabilir.|XML, CSV, vb. gibi metin dosyaları, korumalı olduklarında dahi uygulamada görüntülenmek üzere açılabilir. Dosya türleri: .txt, .ptxt, .csv, .pcsv, .log, .plog, .xml, .pxml.|
+|**pfile**|
+|----|
+|Pfile, korumalı dosyalar için şifrelenmiş içerik ve Azure Information Protection lisanslarını kapsayan genel bir "sarmalayıcı" biçimidir. Herhangi bir dosya türünü korumak için kullanılabilir.|
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](end-user-mam-apps-ios.md)

@@ -14,11 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d27648d4d5033f2c2e849b31d19403600692b4f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "35679453"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile Android uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -124,9 +125,7 @@ Yeniden sarmalama için bazı en iyi uygulamalar şunlardır:
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>İmzalama sertifikalarını yeniden kullanma ve uygulamaları sarmalama
 Android cihazlara yüklenecek uygulamaların tamamının geçerli bir sertifika tarafından imzalanmış olması gerekir.
 
-Sarmalanmış uygulamalar, sarmalama işleminin bir parçası olarak veya bu işlemden *sonra*, mevcut imzalama araçlarınız (sarmalama tamamlanmadan önce uygulamadaki herhangi bir imzalama bilgisi) kullanılarak imzalanabilir.
- 
-Mümkünse derleme işlemi sırasında kullanılan imzalama bilgileri, sarmalama esnasında da kullanılmalıdır. Bazı kuruluşlarda bunu yapabilmek için anahtar deposu bilgilerine kim sahipse (yani uygulama derleme ekibi) onunla birlikte çalışmak gerekebilir. 
+Sarmalanmış uygulamalar, sarmalama işleminin bir parçası olarak veya bu işlemden *sonra*, mevcut imzalama araçlarınız (sarmalama tamamlanmadan önce uygulamadaki herhangi bir imzalama bilgisi) kullanılarak imzalanabilir. Mümkünse derleme işlemi sırasında kullanılan imzalama bilgileri, sarmalama esnasında da kullanılmalıdır. Bazı kuruluşlarda bunu yapabilmek için anahtar deposu bilgilerine kim sahipse (yani uygulama derleme ekibi) onunla birlikte çalışmak gerekebilir. 
 
 Önceki imzalama sertifikası kullanılamıyorsa veya uygulama daha önce dağıtılmamışsa [Android Geliştirici Kılavuzu](https://developer.android.com/studio/publish/app-signing.html#signing-manually)’ndaki yönergeleri takip ederek yeni bir imzalama sertifikası oluşturabilirsiniz.
 

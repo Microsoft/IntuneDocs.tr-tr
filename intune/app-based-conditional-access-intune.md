@@ -14,11 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a84e94c16e7c61d1fca83b7774a486f430c9407c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34561982"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim
 
@@ -45,7 +46,7 @@ Daha fazla bilgi için bkz. [Enterprise Mobility fiyatlandırma](https://www.mic
 
 Uygulama tabanlı koşullu erişimi destekleyen uygulamaların listesi [Azure Active Directory koşullu erişim teknik başvuru belgeleri](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) içinde bulunabilir.
 
-Uygulama tabanlı koşullu erişim [iş kolu (LOB) uygulamalarını da destekler](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), ancak bu uygulamaların [Office 365 modern kimlik doğrulaması](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) kullanması gerekir.
+Uygulama tabanlı koşullu erişim [iş kolu (LOB) uygulamalarını da destekler](app-modern-authentication-block.md), ancak bu uygulamaların [Office 365 modern kimlik doğrulaması](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) kullanması gerekir. 
 
 ## <a name="how-app-based-conditional-access-works"></a>Uygulama tabanlı koşullu erişim nasıl çalışır?
 
