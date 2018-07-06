@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d840bf62682621e4ec3848538a96066c0fd228fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 8c8fa146f01caae08f35ae824563ceb328c9d7f4
+ms.sourcegitcommit: 7daa778b3a5adb41acfe23495cb63754afda1c58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046273"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123410"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi nedir?
 
@@ -41,10 +41,12 @@ Bağlayıcı, Intune ve seçtiğiniz Mobile Threat Defense satıcınız arasınd
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune, Mobile Threat Defense için hangi verileri topluyor?
 
-Intune, kişisel ve kuruluşa ait cihazlardan uygulama envanter bilgilerini toplayarak Lookout for Work gibi Mobile Threat Defense (MTD) sağlayıcıları tarafından alınabilir hale getirir. iOS 11+ cihazlarının kullanıcılarından uygulama envanteri toplayabilirsiniz.
+Bu etkinleştirildiğinde Intune, kişisel ve şirkete ait cihazlardan uygulama envanter bilgilerini toplayarak Lookout for Work gibi Mobile Threat Defense (MTD) sağlayıcıları tarafından alınabilir hale getirir. iOS cihaz kullanıcılarından uygulama envanteri toplayabilirsiniz.
+
+Bu hizmet isteğe bağlıdır, varsayılan olarak hiçbir uygulama envanteri bilgisi paylaşılmaz. Uygulama envanter bilgileri paylaşılmadan önce bir Intune yöneticisinin hizmet ayarlarında iOS cihazlar için Uygulama Eşitleme’yi etkinleştirmesi gerekir.
 
 **Uygulama envanteri**  
-Şirkete ait iOS 11+ ve kişisel cihazlar için envanterler MTD hizmet sağlayıcınıza gönderilir. Uygulama envanterindeki veriler şunları içerir:
+iOS cihazlar için Uygulama Eşitleme’yi etkinleştirirseniz hem şirkete ait hem de kişisel iOS cihazlar için envanterler MTD hizmet sağlayıcınıza gönderilir. Uygulama envanterindeki veriler şunları içerir:
 
  - Uygulama Kimliği
  - Uygulama Sürümü
@@ -76,3 +78,4 @@ Cihaz, ağ ve uygulama riskine dayalı olarak şirket kaynağına erişimi korum
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
+- [Pradeo](pradeo-mobile-threat-defense-connector.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34444923"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Kaybolan veya çalınan iOS cihazlarının yerini Intune ile bulma
 
@@ -45,7 +46,7 @@ Bu özellik aşağıdaki sistemlerde desteklenmez:
     ![Azure'da Intune kullanarak Cihazı bulma eyleminin ekran görüntüsü](./media/locate-device.png)
 
 >[!NOTE]
->Gizlilik nedeniyle haritayı belirli bir oranda yakınlaştırabilirsiniz.
+>Gizlilik nedeniyle haritayı en fazla 300 metre yarıçaplık bir mesafeye kadar yakınlaştırabilirsiniz.
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>iOS cihazında kayıp modu ses uyarısını etkinleştirme
 
@@ -58,7 +59,7 @@ Kullanıcı cihazda sesi devre dışı bırakana veya cihaz kayıp modundan çı
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>Kayıp modu ve cihazı bul eylemleri için güvenlik ve gizlilik bilgileri
 - Siz bu eylemi açana kadar Intune'a hiçbir cihaz konum bilgisi gönderilmez.
-- Cihazı bul eylemini kullandığınızda, cihazın enlem ve boylam koordinatları Intune'a gönderilir ve Azure portalında gösterilir.
+- Cihazı bul eylemini kullandığınızda, cihazın enlem ve boylam koordinatları Graph API kullanılarak alınabilir.
 - Veriler 24 saat depolandıktan sonra kaldırılır. Konum verilerini el ile kaldıramazsınız.
 - Konum verileri hem depolanma hem de aktarım sırasında şifrelenir.
 - Kayıp modunu yapılandırdığınızda, kilit ekranında gösterilen iletiyi özelleştirebilirsiniz. Bu iletiye, cihazı bulan kişiye yardımcı olmak üzere, kayıp cihazı iade etmesi için belirli ayrıntıları eklediğinizden emin olun.

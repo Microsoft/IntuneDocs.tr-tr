@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
-ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
+ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
+ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37091736"
 ---
-# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma
+# <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Fabrika sıfırlamasını kullanarak, şirket verilerini kaldırarak veya cihazın kaydını el ile kaldırarak cihazları kaldırma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/11/2018
 
 **Fabrika sıfırlaması** eylemi, cihazı fabrika varsayılan ayarlarına geri yükler. Kullanıcı verileri, **Kayıt durumu ve kullanıcı hesabını koru** onay kutusunu seçip seçmemenize bağlı olarak saklanır veya silinir.
 
-|Fabrika sıfırlaması eylemi|**Kayıt durumu ve kullanıcı hesabını koru**|Intune yönetiminden kaldırıldı|Açıklama|
+|Fabrika sıfırlaması eylemi|**Kayıt durumu ve kullanıcı hesabını koru**|Intune yönetiminden kaldırıldı|Description|
 |:-------------:|:------------:|:------------:|------------|
 |**Fabrika Sıfırlaması**| İşaretli değil | Evet | Tüm kullanıcı hesapları, verileri, MDM ilkeleri ve ayarlarını siler. İşletim sistemini varsayılan durum ve ayarlarına sıfırlar.|
 |**Fabrika Sıfırlaması**| İşaretli | Hayır | Tüm MDM ilkelerini temizler. Kullanıcı hesapları ve verilerini saklar. Kullanıcı ayarlarını varsayılana sıfırlar. İşletim sistemini varsayılan durum ve ayarlarına sıfırlar.|
@@ -147,7 +148,7 @@ Cihaz açık ve bağlı olduğu sürece, **Şirket verilerini kaldır** eylemini
 
 Cihazları Intune portalından kaldırmak istiyorsanız, bunları belirli bir cihaz bölmesinden silebilirsiniz. Cihazın bir sonraki iade edilişinde, üzerindeki tüm şirket verileri kaldırılır.
 
-1. [Azure portalında Intune'da](https://aka.ms/intuneportal) oturum açın.
+1. [Azure portalında Intune’da](https://aka.ms/intuneportal) oturum açın.
 2. **Cihazlar** > **Tüm cihazlar** > silmek istediğiniz cihazları seçin > **Sil**'i seçin.
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Azure Active Directory portalından cihazları silme

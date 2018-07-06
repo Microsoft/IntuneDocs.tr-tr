@@ -14,11 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ecf7b66be25f0f93456d5419ef1f57b8ca7efe
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34449879"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -462,7 +463,7 @@ Ek bildirim değerlerinin yapılandırılması gerekmiyor.
 
 Gerekirse Yetkili ve NonBrokerRedirectURI belirtilebilir.
 
-Intune SDK’sı ekibi, uygulamanızın Uygulama Kimliğine (İstemci Kimliği) gereksinim duyar. Bunu [Azure Portalı](https://portal.azure.com/)’nda **Tüm Uygulamalar** altındaki **Uygulama Kimliği** sütununda bulabilirsiniz. AAD ile uygulama kaydetme hakkında daha fazla bilgi için [buraya](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) bakın. Intune SDK ekibine msintuneappsdk@microsoft.com adresinden ulaşabilirsiniz.
+Intune SDK’sı ekibi, uygulamanızın Uygulama Kimliğine (İstemci Kimliği) gereksinim duyar. Bunu [Azure portalında](https://portal.azure.com/) **Tüm Uygulamalar** altındaki **Uygulama Kimliği** sütununda bulabilirsiniz. Azure AD ile uygulama kaydetme hakkında daha fazla bilgi için [buraya](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) bakın. Intune SDK ekibine msintuneappsdk@microsoft.com adresinden ulaşabilirsiniz.
 
 Ayrıca aşağıdaki [Koşullu Erişim](#conditional-access) gereksinimlerini inceleyin.
 
@@ -472,22 +473,30 @@ Ayrıca aşağıdaki [Koşullu Erişim](#conditional-access) gereksinimlerini in
     |--|--|
     | İstemci Kimliği | Uygulamanın İstemci Kimliği (uygulama kaydedilirken Azure AD tarafından oluşturulur) |
     | SkipBroker | **True** |
+    
+    Gerekirse Yetkili ve NonBrokerRedirectURI belirtilebilir.
 
-Gerekirse Yetkili ve NonBrokerRedirectURI belirtilebilir.
 
 ### <a name="conditional-access"></a>Koşullu Erişim
-Koşullu Erişim (CA), AAD kaynaklarına erişimi denetlemek için kullanılabilen bir Azure Active Directory [özelliğidir](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer).  Intune yöneticileri yalnızca Intune tarafından yönetilen cihazlar veya uygulamalardan kaynak erişimine izin veren [CA kurallarını tanımlayabilir](https://docs.microsoft.com/en-us/intune/conditional-access). Uygulamanızın uygun olduğunda kaynaklara erişebildiğinden emin olmak için aşağıdaki adımları izlemeniz gerekir. Uygulamanız herhangi bir AAD erişim belirteci gerektirmiyorsa veya yalnızca CA ile korunamayan kaynaklara erişiyorsa bu adımları atlayabilirsiniz.
+
+Koşullu Erişim (CA), AAD kaynaklarına erişimi denetlemek için kullanılabilen bir Azure Active Directory [özelliğidir](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). Intune yöneticileri yalnızca Intune tarafından yönetilen cihazlar veya uygulamalardan kaynak erişimine izin veren [CA kurallarını tanımlayabilir](https://docs.microsoft.com/intune/conditional-access). Uygulamanızın uygun olduğunda kaynaklara erişebildiğinden emin olmak için aşağıdaki adımları izlemeniz gerekir. Uygulamanız herhangi bir AAD erişim belirteci gerektirmiyorsa veya yalnızca CA ile korunamayan kaynaklara erişiyorsa bu adımları atlayabilirsiniz.
 
 1. [ADAL tümleştirme yönergelerini](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library) izleyin. 
-   Özellikle Aracı kullanımı için 11. Adıma bakın
-2. [Uygulamanızı Azure Active Directory ile kaydetme] (https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration). 
-   Yeniden yönlendirme URI’si, yukarıdaki ADAL tümleştirme kılavuzlarında bulunabilir.
+   Aracı kullanımı için özellikle 11. Adıma bakın.
+
+2. [Uygulamanızı Azure Active Directory ile kaydedin](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). Yeniden yönlendirme URI’si, yukarıdaki ADAL tümleştirme kılavuzlarında bulunabilir.
+
 3. Yukarıda [Yaygın ADAL yapılandırmaları](#common-adal-configurations), öğe 2 için bildirim meta veri parametrelerini ayarlayın.
-4. [Azure portalından](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) [cihaz tabanlı CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use)’yı etkinleştirerek her şeyin doğru yapılandırıldığını sınayıp doğrulayın
-    - Uygulamanızda oturum açma, Intune Şirket Portalı’nı yüklemeyi ve portala kaydolmayı gerektirir
-    - Kayıttan sonra, uygulamanızda oturum açma başarıyla tamamlanır.
-5. Uygulamanız Intune APP SDK tümleştirmesini yaptıktan sonra, [uygulama tabanlı koşullu erişim](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) için onaylanan uygulamalar listesine eklenmek üzere msintuneappsdk@microsoft.com adresiyle iletişim kurun
-6. Uygulamanız onaylananlar listesine eklendikten sonra, [Uygulama tabanlı CA’yı yapılandırarak](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create) doğrulayın ve uygulamanıza oturum açmanın başarıyla tamamlandığından emin olun.
+
+4. [Azure portalından](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) [cihaz tabanlı CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)’yı etkinleştirerek her şeyin doğru yapılandırıldığını sınayıp doğrulayın
+* Uygulamanızda oturum açma, Intune Şirket Portalı’nı yüklemeyi ve portala kaydolmayı gerektirir
+* Kayıttan sonra, uygulamanızda oturum açma başarıyla tamamlanır.
+
+5. Uygulamanız Intune APP SDK tümleştirmesini yaptıktan sonra, [uygulama tabanlı koşullu erişim](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) için onaylanan uygulamalar listesine eklenmek üzere msintuneappsdk@microsoft.com iletişim kurun.
+
+6. Uygulamanız onaylananlar listesine eklendikten sonra, [Uygulama tabanlı CA’yı yapılandırarak](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) doğrulayın ve uygulamanıza oturum açmanın başarıyla tamamlandığından emin olun.
+
+
 ## <a name="app-protection-policy-without-device-enrollment"></a>Cihaz kaydı olmadan uygulama koruma ilkesi
 
 ### <a name="overview"></a>Genel bakış
@@ -1371,7 +1380,6 @@ MAM SDK tarafından oluşturulan görünümler, içine tümleştirildiği uygula
 
 ### <a name="how-to-customize"></a>Nasıl özelleştirilir?
 Stil değişikliklerinin Intune MAM görünümlerine uygulanmasını sağlamak için, önce bir stil geçersiz kılma XML dosyası oluşturmalısınız. Bu dosya uygulamanızın “/res/xml” dizinine yerleştirilmelidir ve bu dosyayı istediğiniz gibi adlandırabilirsiniz. Aşağıda, bu dosyanın uyması gereken biçimin örneği gösterilmektedir.
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1401,7 +1409,7 @@ Aşağıda izin verilen stil özniteliklerinin, bunların denetledikleri UI öğ
 | Vurgu rengi | Vurgulandığında PIN kutusu kenarlığı <br> Köprüler |accent_color | Renk |
 | Uygulama logosu | Intune uygulaması PIN ekranında gösterilen büyük simge | logo_image | Çizilebilir |
 
-## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>APP-WE hizmet kaydıyla, SDK ile tümleşik Android LOB uygulamasıyla ve ADAL SSO (isteğe bağlı) ile çalışma
+## <a name="default-enrollment-optional"></a>Varsayılan kayıt (isteğe bağlı)
 <!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 Aşağıdakiler; otomatik bir APP-WE hizmet kaydı (buna bu bölümde **varsayılan kayıt** adı veriyoruz) için uygulama başlatırken kullanıcı istemi gerektirme, yalnızca Intune tarafından korunan kullanıcıların SDK ile tümleştirilmiş Android LOB uygulamanızı kullanmasına izin vermek için Intune uygulama koruma ilkelerini gerektirme hakkında bir kılavuzdur. Ayrıca SDK ile tümleştirilmiş Android LOB uygulamanız için SSO’yu nasıl etkinleştireceğinizi de açıklar. Bu, Intune özelliği olmayan kullanıcılar tarafından kullanılabilen mağaza uygulamalarında geçerli **değildir**.
@@ -1413,7 +1421,7 @@ Aşağıdakiler; otomatik bir APP-WE hizmet kaydı (buna bu bölümde **varsayı
 * Intune SDK’sı ekibi, uygulamanızın Uygulama Kimliğine gereksinim duyar. Bunu bulmanın bir yolu [Azure Portalı](https://portal.azure.com/)’nda, **Tüm Uygulamalar** altındaki **Uygulama Kimliği** sütunudur. Intune SDK’sı ekibine kolaylıkla ulaşmanın yolu msintuneappsdk@microsoft.com adresine e-posta göndermektir.
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK’sı ile çalışma
-Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulamalarına özgüdür.
+Bu yönergeler, bir son kullanıcı cihazında uygulama kullanımı için Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulama geliştiricilerine özgüdür.
 
 1. [Android için Intune SDK’sı kılavuzu](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)’nda açıklanan adımları kullanarak ADAL’ı yapılandırın.
    > [!NOTE] 

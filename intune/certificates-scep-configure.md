@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
+ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745035"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36297914"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -36,12 +36,16 @@ Bu makale, altyapınızın nasıl yapılandırılacağı ve ardından Intune ile
 - **NDES Sunucusu**: Windows Server 2012 R2 veya üstünü çalıştıran bir sunucuya Ağ Cihazı Kayıt Hizmeti’ni (NDES) kurmalısınız. Intune, Kuruluş CA ile aynı sunucuda çalıştırılan NDES’nin kullanımını desteklemez. Windows Server 2012 R2’yi Ağ Cihazı Kayıt Hizmeti’ni barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](http://technet.microsoft.com/library/hh831498.aspx).
 NDES sunucusu CA’yı barındıran etki alanına katılmış olmalı ve CA ile aynı sunucuda yer almamalıdır. NDES sunucusunu ayrı bir ormanda, yalıtılmış ağda veya iç etki alanında dağıtma hakkında daha fazla bilgi, [Ağ Cihazı Kayıt Hizmeti ile İlke Modülü Kullanma](https://technet.microsoft.com/library/dn473016.aspx) başlığı altında bulunabilir.
 
-- **Microsoft Intune Sertifika Bağlayıcısı**: **Sertifika Bağlayıcısı** yükleyicisini (**ndesconnectorssetup.exe**) indirmek için Azure portalını kullanın. Ardından, Sertifika Bağlayıcısı’nı yüklemeniz gereken Basit Sertifika Kayıt Protokolü (NDES) rolünü barındıran sunucuda **ndesconnectorssetup.exe** dosyasını çalıştırabilirsiniz. 
+- **Microsoft Intune Sertifika Bağlayıcısı**: **Sertifika Bağlayıcısı** yükleyicisini (**NDESConnectorSetup.exe**) indirmek için Azure portalını kullanın. Ardından Sertifika Bağlayıcısı’nı yüklemek istediğiniz yerde Ağ Cihazı Kayıt Protokolü (NDES) rolünü barındıran sunucuda **NDESConnectorSetup.exe** dosyasını çalıştırabilirsiniz.
+
+  - NDES Sertifika bağlayıcısı, Federal Bilgi İşleme Standardı (FIPS) modunu da destekler. FIPS gerekli değildir ancak etkinleştirildiğinde sertifika verebilir ve iptal edebilirsiniz.
+
 - **Web Uygulaması Ara Sunucusu** (isteğe bağlı): Web Uygulaması Ara Sunucusu (WAP) olarak Windows Server 2012 R2 veya üzerini çalıştıran bir sunucu kullanın. Bu yapılandırma:
-  -  Cihazların bir İnternet bağlantısını kullanarak sertifikaları almasını sağlar.
-  -  Cihazlar sertifikaları almak ve yenilemek için İnternet üzerinden bağlanıyorsa güvenlik açısından önerilir.
+  - Cihazların bir İnternet bağlantısını kullanarak sertifikaları almasını sağlar.
+  - Cihazlar sertifikaları almak ve yenilemek için İnternet üzerinden bağlanıyorsa güvenlik açısından önerilir.
 
 #### <a name="additional"></a>Ek
+
 - WAP'ı barındıran sunucular, Ağ Cihazı Kayıt Hizmeti tarafından kullanılan uzun URL'ler için destek sağlayan [bir güncelleştirmeyi yüklemelidir](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) . Bu güncelleştirmeyi [Aralık 2014 güncelleştirme paketi](http://support.microsoft.com/kb/3013769)ile birlikte veya [KB3011135](http://support.microsoft.com/kb/3011135)güncelleştirmesinden tek başına edinebilirsiniz.
 - WAP sunucusunda dış istemcilere yayımlanan adla eşleşen bir SSL sertifikası olmalı ve NDES sunucusunda kullanılan SSL sertifikasına güvenilmelidir. Bu sertifikalar, WAP sunucusunun istemcilerden gelen SSL bağlantıyı sonlandırmasına ve NDES sunucusuna yeni bir SSL bağlantı oluşturmasına imkan sağlar.
 
@@ -71,17 +75,7 @@ NDES sunucusunun [Azure AD uygulama proxy’si](https://azure.microsoft.com/docu
 |**NDES hizmet hesabı**|NDES Hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı girin.|
 
 ## <a name="configure-your-infrastructure"></a>Altyapınızı yapılandırın
-Sertifika profillerini yapılandırabilmek için önce aşağıdaki görevleri tamamlayın. Bu görevler, Windows Server 2012 R2 ve Active Directory Sertifika Hizmetleri (ADCS) bilgisi gerektirir:
-
-**Adım 1**: NDES hizmet hesabı oluşturma
-
-**Adım 2**: Sertifika yetkilisinde sertifika şablonlarını yapılandırma
-
-**Adım 3**: NDES sunucusunda önkoşulları yapılandırma
-
-**Adım 4**: NDES’i Intune’la kullanılacak şekilde yapılandırma
-
-**Adım 5**: Intune Sertifika Bağlayıcısı'nı etkinleştirme, yükleme ve yapılandırma
+Sertifika profillerini yapılandırabilmek için önce aşağıdaki adımları tamamlayın. Bu adımlar, Windows Server 2012 R2 ve üzeri ile Active Directory Sertifika Hizmetleri (ADCS) bilgisi gerektirir:
 
 #### <a name="step-1---create-an-ndes-service-account"></a>Adım 1 - NDES hizmet hesabı oluşturma
 
@@ -226,7 +220,6 @@ Bu görevde yapacaklarınız:
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |
 
-
 4. IIS yöneticisinde **Varsayılan Web Sitesi** > **İstek Filtreleme** > **Özellik Ayarını Düzenle**’yi seçin. **En yüksek URL uzunluğu**’nu ve **En yüksek sorgu dizesini** aşağıda gösterildiği gibi *65534* olarak değiştirin:
 
     ![IIS en fazla URL ve sorgu uzunluğu](./media/SCEP_IIS_max_URL.png)
@@ -291,13 +284,17 @@ Bu görevde yapacaklarınız:
 - Basit Sertifika Kayıt Protokolü (NDES) rolünü barındıran sunucuda Sertifika Bağlayıcısı’nı indirin, yükleyin ve yapılandırın. Kuruluşunuzdaki NDES uygulamasının ölçeğini artırmak için istediğiniz sayıda NDES sunucusuna Microsoft Intune Sertifika Bağlayıcısı yükleyebilirsiniz.
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>Sertifika bağlayıcısını indirme, yükleme ve yapılandırma
+
 ![ConnectorDownload](./media/certificates-download-connector.png)
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihaz yapılandırması** bölmesinde **Sertifika Yetkilisi**’ni seçin.
 4. **Ekle**’ye tıklayın ve **Bağlayıcı dosyasını indir**’i seçin. İndirilen dosyayı yükleyeceğiniz sunucuda erişebileceğiniz bir konuma kaydedin.
-5. İndirme tamamlandıktan sonra Basit Sertifika Kayıt Protokolü (NDES) rolünü barındıran sunucuda indirilen yükleyiciyi (**ndesconnectorssetup.exe**) çalıştırın. Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. (CRP Web Hizmeti, CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.)
+5. İndirme tamamlandıktan sonra Ağ Cihazı Kayıt Protokolü (NDES) rolünü barındıran sunucuya gidin. Daha sonra:
+
+    1. NDES Sertifika bağlayıcısının gerektirdiği .NET 4.5 Framework’ün yüklü olduğundan emin olun. .NET 4.5 Framework, Windows Server 2012 R2 ve daha yeni sürümlere otomatik olarak eklenir.
+    2. Yükleyiciyi çalıştırın (**NDESConnectorSetup.exe**). Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. CRP Web Hizmeti yani CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.
 
     > [!NOTE]
     > Tek başına Intune için NDES yüklediğinizde, CRP hizmeti Sertifika Bağlayıcısı ile otomatik olarak yüklenir. Intune’u Configuration Manager ile kullandığınızda, Sertifika Kayıt Noktası'nı ayrı bir site sistem rolü olarak yüklersiniz.
@@ -305,7 +302,7 @@ Bu görevde yapacaklarınız:
 6. Sertifika Bağlayıcısı için istemci sertifikası istendiğinde, **Seç** düğmesini seçin ve ardından Görev 3'te NDES Sunucunuza yüklediğiniz **istemci kimlik doğrulaması** sertifikasını seçin.
 
     İstemci kimlik doğrulaması sertifikasını seçtikten sonra, **Microsoft Intune Sertifika Bağlayıcısı için İstemci Sertifikası** yüzeyine dönersiniz. Seçtiğiniz sertifika gösterilmese de bu sertifikanın özelliklerini görüntülemek için **İleri**’ye tıklayın. **İleri**’yi ve ardından **Yükle**’yi seçin.
-    
+
     > [!IMPORTANT]
     > Intune Sertifika Bağlayıcısı, Internet Explorer Artırılmış Güvenlik Yapılandırması etkin bir cihazda etkinleştirilemez. Intune Sertifika Bağlayıcısı’nı kullanmak için [IE Artırılmış Güvenlik Yapılandırması’nı devre dışı bırakın](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
@@ -335,10 +332,13 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
 
 `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
 
+> [!NOTE]
+> TLS 1.2 desteği, NDES Sertifika Bağlayıcısına dahil edilmiştir. Bu nedenle NDES Sertifika bağlayıcısı yüklü olan sunucu TLS 1.2’yi destekliyorsa TLS 1.2 kullanılır. Sunucu TLS 1.2 desteklemiyorsa TLS 1.1 kullanılır. Şu anda TLS 1.1, cihazlar ve sunucu arasında kimlik doğrulaması için kullanılmaktadır.
+
 ## <a name="create-a-scep-certificate-profile"></a>Bir SCEP sertifika profili oluşturma
 
 1. Azure portalında Microsoft Intune’u açın.
-2. **Cihaz yapılandırması**’nı, **Profiller**’i ve **Profil Oluştur**’u seçin.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. SCEP sertifika profili için bir **Ad** ve **Açıklama** girin.
 4. **Platform** açılan listesinde, bu SCEP sertifikası için cihaz platformunu seçin. Şu anda, cihaz kısıtlama ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
    - **Android**
@@ -406,12 +406,16 @@ Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz ön�
 
     > [!NOTE]
     > iOS’ta aynı sertifika profilini kullanan birden fazla kaynak profili dağıtırsanız, yönetim profilinde bu sertifikanın birden çok kopyasını görmeniz olasıdır.
-    
-Profillerin nasıl atanacağı hakkında bilgi için bkz. [Cihaz profillerini atama](device-profile-assign.md).
+
+Profillerin nasıl atanacağı hakkında bilgi için bkz. [cihaz profilleri atama](device-profile-assign.md).
+
+## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Intune Bağlayıcısı kurulumunu doğrulama ve sorun giderme
+
+Sorunları gidermek ve Intune Bağlayıcısı kurulumunu doğrulamak için bkz. [Sertifika Yetkilisi betik örnekleri](https://aka.ms/intuneconnectorverificationscript)
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune Bağlayıcısı olayları ve tanılama kodları
 
-Sürüm 6.1803.x.x'ten başlayarak, **Olay Görüntüleyicisi**'ndeki Intune Bağlayıcısı Hizmet günlükleri olayları (**Uygulama ve Hizmet Günlükleri** > **Microsoft Intune Bağlayıcısı**). Bu olayları, Intune Bağlayıcısı'nın yapılandırmasındaki olası sorunları gidermenize yardımcı olması için kullanın. Bu olaylar bir işlemin başarılarını ve başarısızlıklarını günlüğe kaydeder ve ayrıca BT yöneticisinin sorun gidermesine yardımcı olmak için tanılama kodlarıyla iletilerini içerir.
+Sürüm 6.1806.x.x’ten itibaren Intune Bağlayıcısı Hizmeti, olayları **Olay Görüntüleyicisi**’nde günlüğe kaydeder (**Uygulama ve Hizmet Günlükleri** > **Microsoft Intune Bağlayıcısı**). Bu olayları, Intune Bağlayıcısı'nın yapılandırmasındaki olası sorunları gidermenize yardımcı olması için kullanın. Bu olaylar bir işlemin başarılarını ve başarısızlıklarını günlüğe kaydeder ve ayrıca BT yöneticisinin sorun gidermesine yardımcı olmak için tanılama kodlarıyla iletilerini içerir.
 
 ### <a name="event-ids-and-descriptions"></a>Olay kimlikleri ve açıklamaları
 
@@ -430,10 +434,10 @@ Sürüm 6.1803.x.x'ten başlayarak, **Olay Görüntüleyicisi**'ndeki Intune Ba�
 | 20102 | PkcsCertIssue_Failure  | PKCS sertifikası verilemedi. Bu olayla ilgili cihaz kimliği, kullanıcı kimliği, CA adı, sertifika şablonu adı ve sertifika parmak izi gibi olay ayrıntılarını gözden geçirin. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | Sertifika başarıyla iptal edildi. Bu olayla ilgili cihaz kimliği, kullanıcı kimliği, CA adı ve sertifika seri numarası gibi olay ayrıntılarını gözden geçirin. | 0x00000000, 0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | Sertifika iptal edilemedi. Bu olayla ilgili cihaz kimliği, kullanıcı kimliği, CA adı ve sertifika seri numarası gibi olay ayrıntılarını gözden geçirin. Ek bilgi için NDES SVC Günlükleri'ne bakın.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Download_Success | Sertifika imzalama, istemci sertifikası indirme veya sertifika iptal etme isteği başarıyla indirildi. İndirme ayrıntıları için olay ayrıntılarını gözden geçirin.  | 0x00000000, 0x0FFFFFFF |
-| 20302 | Download_Failure | Sertifika imzalama, istemci sertifikası indirme veya sertifika iptal etme isteği indirilemedi. İndirme ayrıntıları için olay ayrıntılarını gözden geçirin. | 0x00000000, 0x0FFFFFFF |
-| 20400 | Upload_Success | Sertifikanın istek veya iptal verileri başarıyla karşıya yüklendi. Karşıya yükleme ayrıntıları için olay ayrıntılarını gözden geçirin. | 0x00000000, 0x0FFFFFFF |
-| 20402 | Upload_Failure | Sertifikanın istek veya iptal verileri karşıya yüklenemedi. Hatanın hangi noktada oluştuğunu saptamak için olay ayrıntıları > Karşıya Yükleme Durumu'nu gözden geçirin.| 0x00000000, 0x0FFFFFFF |
+| 20300 | Upload_Success | Sertifikanın istek veya iptal verileri başarıyla karşıya yüklendi. Karşıya yükleme ayrıntıları için olay ayrıntılarını gözden geçirin. | 0x00000000, 0x0FFFFFFF |
+| 20302 | Upload_Failure | Sertifikanın istek veya iptal verileri karşıya yüklenemedi. Hatanın hangi noktada oluştuğunu saptamak için olay ayrıntıları > Karşıya Yükleme Durumu'nu gözden geçirin.| 0x00000000, 0x0FFFFFFF |
+| 20400 | Download_Success | Sertifika imzalama, istemci sertifikası indirme veya sertifika iptal etme isteği başarıyla indirildi. İndirme ayrıntıları için olay ayrıntılarını gözden geçirin.  | 0x00000000, 0x0FFFFFFF |
+| 20402 | Download_Failure | Sertifika imzalama, istemci sertifikası indirme veya sertifika iptal etme isteği indirilemedi. İndirme ayrıntıları için olay ayrıntılarını gözden geçirin. | 0x00000000, 0x0FFFFFFF |
 | 20500 | CRPVerifyMetric_Success  | Sertifika Kayıt Noktası istemci sınamasını başarıyla doğruladı | 0x00000000, 0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | Sertifika Kayıt Noktası isteği tamamladı ama reddetti. Diğer ayrıntılar için tanılama koduna ve iletisine bakın. | 0x00000000, 0x00000411, 0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | Sertifika Kayıt Noktası istemci sınamasını doğrulayamadı. Diğer ayrıntılar için tanılama koduna ve iletisine bakın. Sınamaya karşılık gelen Cihaz Kimliği için olay iletisi ayrıntılarına bakın. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |

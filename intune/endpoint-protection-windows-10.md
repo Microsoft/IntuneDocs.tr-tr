@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: cc378a4f484852d84943b4d1094b71df5b7a530d
+ms.sourcegitcommit: 006fa8dd4d605e2873fba6e3a965ef794d6f3764
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744950"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945501"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune’da Windows 10 (ve sonrası) için Endpoint Protection ayarları
 
@@ -29,36 +29,51 @@ Endpoint Protection profili, Windows 10 cihazlarda BitLocker ve Windows Defender
 
 Bu makaledeki bilgileri kullanarak Endpoint Protection profilleri oluşturun. Windows Defender Virüsten Koruma’yı yapılandırmak için bkz. [Windows 10 Cihaz Kısıtlamaları](device-restrictions-windows-10.md#windows-defender-antivirus). 
 
-> [!NOTE]
-> Bu ayarlar, Windows 10’un Home ve Professional sürümlerinde desteklenmez.
-
 ## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard
 
-Microsoft Edge kullanırken Windows Defender Application Guard ortamınızı kuruluşunuz tarafından güvenilir olarak tanımlanmamış sitelerden korur. Kullanıcılar, yalıtılmış ağ sınırı listenizde olmayan siteleri ziyaret ettiğinde siteler Hyper-V'de sanal gözatma oturumunda açılır. Güvenilen siteler, Cihaz Yapılandırması içinde yapılandırılabilen bir ağ sınırı tarafından tanımlanır. 
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
+
+- Kurumsal 
+- Professional
+
+Microsoft Edge kullanırken Windows Defender Application Guard, ortamınızı kuruluşunuz tarafından güvenilir olarak tanımlanmayan sitelerden korur. Kullanıcılar, yalıtılmış ağ sınırı listenizde olmayan siteleri ziyaret ettiğinde siteler Hyper-V sanal gözatma oturumunda açılır. Güvenilen siteler, Cihaz Yapılandırması içinde yapılandırılabilen bir ağ sınırı tarafından tanımlanır.
 
 Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. Bu profili kullanmak, Application Guard’ı etkinleştirmek için bir Win32 bileşeni yükler.
 
-- **Application Guard**: Onaylanmamış siteleri Hyper-V sanallaştırılmış gözatma kapsayıcısında açın.
+- **Application Guard**: Onaylanmamış siteleri Hyper-V sanallaştırılmış gözatma kapsayıcısında açan bu özelliği açmak için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında tüm siteler (onaylı veya onaysız) cihazda açılır.
 - **Pano davranışı**: Yerel bilgisayar ile Application Guard sanal tarayıcısı arasında hangi kopyala/yapıştır eylemlerine izin verileceğini seçin.
-- **Kuruluş sitelerinde harici içerik**: Onaylanmamış web sitelerine ait içeriklerin yüklenmesini engelleyin.
-- **Sanal tarayıcıdan yazdırma**: PDF, XPS, yerel yazıcılar ve/veya ağ yazıcılarının sanal tarayıcı içeriklerini yazdırmasına izin verin.
-- **Günlük toplama**: Bir Application Guard gözatma oturumunda gerçekleşen olaylara ait günlükleri toplayın.
-- **Kullanıcı tarafından oluşturulan tarayıcı verilerini koruma**: Bir Application Guard sanal gözatma oturumunda oluşturulan kullanıcı verilerini (parolalar, favoriler ve tanımlama bilgileri gibi) kaydedin.
-- **Grafik hızlandırma**: Application Guard sanal gözatma oturumunda çalışırken görsel ağırlıklı web sitelerini daha hızlı yükleyin. Bir sanal grafik işleme birimine erişim etkinleştirildiğinde web siteleri daha hızlı yüklenir.
-- **Dosyaları konak dosya sistemine indirin**: Kullanıcıların sanallaştırılmış tarayıcıdan konak işletim sistemine dosya indirmesine izin verin.
+- **Kuruluş sitelerinde harici içerik**: Onaylanmamış web sitelerine ait içeriklerin yüklenmesini önlemek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında cihazda kuruluşa ait olmayan siteler açılır.
+- **Sanal tarayıcıdan yazdır**: PDF, XPS, yerel yazıcılar ve/veya ağ yazıcılarının sanal tarayıcı içeriklerini yazdırmasına izin vermek için **İzin ver** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, tüm yazdırma özelliklerini devre dışı bırakır.
+- **Günlük topla**: Bir Application Guard gözatma oturumunda gerçekleşen olaylara ait günlükleri toplamak için **İzin Ver** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, gözatma oturumunda günlük toplamaz.
+- **Kullanıcı tarafından oluşturulan tarayıcı verilerini koru**: **İzin Ver** ayarı, bir Application Guard sanal gözatma oturumunda oluşturulan kullanıcı verilerini (parolalar, favoriler ve tanımlama bilgileri gibi) kaydeder. **Yapılandırılmadı** (varsayılan) ayarı, cihaz yeniden başlatıldığında veya bir kullanıcı oturumu kapadığında kullanıcının indirdiği dosya ve verileri atar.
+- **Grafik hızlandırma**: Bir sanal grafik işleme birimi erişimi edinerek grafik açısından yoğun web sitelerini ve videoları daha hızlı yüklemek için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, grafik için cihazın CPU’sunu kullanır; sanal grafik işleme birimini kullanmaz.
+- **Dosyaları konak dosya sistemine indir**: Kullanıcıların sanallaştırılmış tarayıcıdan konak işletim sistemine dosya indirebilmesi için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, cihazdaki dosyaları yerel olarak tutar ve konak dosya sistemine indirmez.
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Güvenlik Duvarı
+
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
+- Giriş
+- Professional
+- İşletme
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
 
 ### <a name="global-settings"></a>Genel ayarlar
 
 Bu ayarlar tüm ağ türlerine uygulanabilir.
 
-- **Dosya Aktarım Protokolü**: Durum bilgisi olan FTP’leri engelleyin.
-- **Silmeden önce güvenlik ilişkilendirme boşta kalma süresi**: Güvenlik ilişkilendirmeleri, *n* saniye boyunca hiçbir ağ trafiği algılanmadığında silinir.
-- **Önceden paylaşılan anahtar kodlaması**: UTF-8 kullanarak önceden paylaşılmış anahtarlar kodlayın.
-- **IPsec muafiyetleri**: **Komşu bulma IPv6 ICMP tür kodları**, **ICMP**, **Yönlendirici bulma IPv6 ICMP tür kodları** ve **IPv4 ve IPv6 DHCP ağ trafiği** dahil olmak üzere belirli bir trafiği IPsec’ten muaf olacak şekilde yapılandırın.
-- **Sertifika iptal listesi doğrulaması**: **CRL doğrulamasını devre dışı bırak** **CRL doğrulaması yalnızca sertifika iptal edildiğinde başarısız olsun** ve **Bir hata ile karşılaşıldığında CRL doğrulaması başarısız olsun** dahil olmak üzere sertifika iptal listesi doğrulamasının nasıl uygulanacağına dair bir değer ayarlayın.
-- **Mümkün olduğunda kimlik doğrulama kümesini anahtar modülüne göre eşleştir**: Anahtar oluşturma modüllerini, bir kümedeki tüm kimlik doğrulaması paketlerini desteklemedikleri durumlarda tüm kimlik doğrulama kümesini yoksayacak şekilde ayarlayın.
+- **Dosya Aktarım Protokolü**: Durum bilgisi olan FTP’leri devre dışı bırakmak için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında güvenlik duvarı, durum bilgisi olan FTP filtrelemesi yaparak ikincil bağlantılara izin verir.
+- **Silmeden önce güvenlik ilişkilendirme boşta kalma süresi**: Güvenlik ilişkilendirmeleri, *n* saniye boyunca hiçbir ağ trafiği algılanmadığında silinir. Boşta kalma süresini saniye cinsinden girin.
+- **Önceden paylaşılan anahtar kodlaması**: UTF-8 kullanarak önceden paylaşılan anahtar kullanmak için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, yerel depo değerini kullanır.
+- **IPsec muafiyetleri**: Aşağıdakiler dahil olmak üzere bazı trafikleri IPsec’ten muaf olacak şekilde yapılandırın:
+  - **Komşu bulma IPv6 ICMP türü kodlar**
+  - **ICMP**
+  - **Yönlendirici bulma IPv6 ICMP türü kodlar**
+  - **Hem IPv4 hem de IPv6 DHCP ağ trafiği**
+- **Sertifika iptal listesi doğrulaması**: **CRL doğrulamasını devre dışı bırak**, **CRL doğrulaması yalnızca sertifika iptal edildiğinde başarısız olsun** ve **Bir hata ile karşılaşıldığında CRL doğrulaması başarısız olsun** ayarları dahil olmak üzere sertifika iptal listesi doğrulamasının nasıl uygulanacağını belirleyin.
+- **Mümkün olduğunda kimlik doğrulama kümesini anahtar modülüne göre eşleştir**: Anahtar oluşturma modüllerinin yalnızca desteklemediği kimlik doğrulaması paketlerini yoksaymak ZORUNDA kalması için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** olarak ayarlandığında, anahtar oluşturma modülleri kümede belirtilen kimlik doğrulaması paketlerinin tamamını desteklemiyorsa bütün kimlik doğrulaması kümesini yoksaymak ZORUNDA kalır.
 - **Paket sırası**: IPsec tünel ağ geçidi senaryosunda şifreli alma ve düz metin iletme için alma tarafında yazılım ölçeklendirmenin nasıl etkinleştirildiğini belirtin. Bu ayar, paket sırasının korunmasını sağlar.
 
 ### <a name="network-settings"></a>Ağ ayarları
@@ -67,68 +82,104 @@ Bu ayarlar; **Etki alanı (iş yeri) ağı**, **Özel (keşfedilebilir) ağ** ve
 
 #### <a name="general-settings"></a>Genel ayarlar
 
-- **Windows Defender Güvenlik Duvarı**: Ağ trafiğini engellemek için bu ayarı etkinleştirin.
-- **Gizli mod**: Güvenlik Duvarı’nın gizli modda çalışmasını engelleyin. Gizli modu engellemek, **IPsec güvenli paket muafiyetini** de engellemenize imkan verir.
-- **Korumalı**: Bu ayarı ve güvenlik duvarı ayarını etkinleştirmek, tüm gelen trafiği engeller.
-- **Çok noktaya yayınlara yönelik tek noktaya yayın yanıtları**: Çok noktaya yayına tek noktaya yayın yanıtlarını engelleyin. Normalde, yayın veya çok noktaya yayın iletilerine tek noktaya yayın yanıtları almak istemezsiniz. Bu yanıtlar bir hizmet reddi (DOS) saldırısına veya bilinen bir canlı bilgisayarı araştırmaya çalışan bir saldırgana işaret eder.
-- **Gelen bildirimler**: Uygulamanın bir bağlantı noktasında dinlemesi engellendiğinde kullanıcılara bildirim gösterilmesini engelleyin.
-- **Gelen bağlantılar için varsayılan eylem**: Güvenlik duvarının gelen bağlantılarda gerçekleştirdiği varsayılan eylemi engelleyin.
+- **Windows Defender Güvenlik Duvarı**: Güvenlik duvarını ve gelişmiş güvenliği açmak için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, diğer ilke ayarlarından bağımsız olarak tüm ağ trafiğine izin verir.
+- **Gizli mod**: Güvenlik duvarının gizli modda çalışmasını önlemek için **Engelle** olarak ayarlayın. Gizli modu engellemek, **IPsec güvenli paket muafiyetini** de engellemenize imkan verir. **Yapılandırılmadı** (varsayılan) ayarı, güvenlik duvarını gizli modda çalıştırarak yoklama isteklerine yanıtların önlenmesine yardımcı olur.
+- **Korumalı**: **Engelle** ayarı, bu özelliği devre dışı bırakır. **Yapılandırılmadı** (varsayılan) ayarı, bu ayarı etkinleştirir. Bu ayar ve Windows Defender Güvenlik Duvarı etkinleştirildiğinde, diğer ilke ayarlarından bağımsız olarak tüm gelen trafik engellenir.
+- **Çok noktaya yayınlar için tek noktaya yayın yanıtları**: **Engelle** olarak ayarlandığında, çok noktaya yayın için tek noktaya yayın yanıtlarını devre dışı bırakır. Normalde, yayın veya çok noktaya yayın iletilerine tek noktaya yayın yanıtları almak istemezsiniz. Bu yanıtlar bir hizmet reddi (DOS) saldırısına veya bilinen bir canlı bilgisayarı araştırmaya çalışan bir saldırgana işaret eder. **Yapılandırılmadı** (varsayılan) ayarı, bu ayarı etkinleştirir.
+- **Gelen bildirimler**: **Engelle** olarak ayarlandığında, bir uygulamanın bağlantı noktasında dinlemesi engellendiğinde kullanıcı bildirimlerini gizler. **Yapılandırılmadı** (varsayılan) ayarı, bu ayarı etkinleştirir ve bir uygulamanın bağlantı noktasında dinlemesi engellendiğinde kullanıcılara bildirim gösterebilir.
+- **Gelen bağlantılar için varsayılan eylem**: **Engelle** olarak ayarlandığında, varsayılan güvenlik duvarı eylemi gelen bağlantılarda çalıştırılmaz. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, varsayılan güvenlik duvarı eylemi gelen bağlantılarda çalıştırılır.
 
 #### <a name="rule-merging"></a>Kural birleştirme
 
-- **Yerel depodan yetkili uygulama Windows Defender Güvenlik Duvarı kuralları**: Yerel depoda yetkilendirilmiş uygulama güvenlik duvarı kurallarının tanınması ve uygulanmasını sağlayın.
-- **Yerel depodan genel bağlantı noktası Windows Defender Güvenlik Duvarı kuralları**: Yerel depoda genel bağlantı noktası güvenlik duvarı kurallarının tanınması ve uygulanmasını sağlayın.
-- **Yerel depodaki Windows Defender Güvenlik Duvarı kuralları**: Yerel depoda güvenlik duvarı kurallarının tanınması ve uygulanmasını sağlayın.
-- **Yerel depodaki IPsec kuralları**: Şema veya bağlantı güvenlik kuralı sürümlerine bakılmaksızın yerel depodan bağlantı güvenlik kuralları uygulayın.
+- **Yerel depodan yetkili uygulama Windows Defender Güvenlik Duvarı kuralları**: Yerel depoda uygulama güvenlik duvarı kurallarının tanınması ve uygulanması için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yerel depoda yetkili uygulama güvenlik duvarı kuralları yoksayılır ve uygulanmaz.
+- **Yerel depodan genel bağlantı noktası Windows Defender Güvenlik Duvarı kuralları**: Yerel depoda genel bağlantı noktası güvenlik duvarı kurallarının tanınması ve uygulanması için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yerel depoda genel bağlantı noktası güvenlik duvarı kuralları yoksayılır ve uygulanmaz.
+- **Yerel depodan Windows Defender Güvenlik Duvarı kuralları**: Yerel depoda güvenlik duvarı kurallarının tanınması ve uygulanması için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yerel depodan güvenlik duvarı kuralları yoksayılır ve uygulanmaz.
+- **Yerel depodan IPsec kuralları**: Şema veya bağlantı güvenlik kuralı sürümlerine bakılmaksızın yerel depodan bağlantı güvenlik kuralları uygulamak için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, şema veya bağlantı güvenlik kuralı sürümlerine bakılmaksızın yerel depodan bağlantı güvenlik kuralları yoksayılır ve uygulanmaz.
 
 ## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen ayarları
 
-- **Uygulamalar ve dosyalar için SmartScreen**: Dosya yürütme ve uygulama çalıştırma için Windows SmartScreen’i etkinleştirin.
-- **Doğrulanmamış dosyaları yürütme**: Son kullanıcının, Windows SmartScreen tarafından doğrulanmamış dosyaları çalıştırmasını engelleyin.
+Aşağıdaki Edge yüklü Windows 10 sürümlerinde desteklenir:
+- Giriş
+- Professional
+- İşletme
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
+
+**Ayarlar**:
+
+- **Uygulamalar ve dosyalar için SmartScreen**: Dosya yürütme ve uygulama çalıştırma için Windows SmartScreen’i **Etkinleştir** olarak ayarlayın. SmartScreen, bulut tabanlı bir kimlik avından korunma ve kötü amaçlı yazılımdan korunma bileşenidir. **Yapılandırılmadı** (varsayılan) ayarı, SmartScreen’i devre dışı bırakır.
+- **Doğrulanmamış dosyaları yürütme**: Son kullanıcının, Windows SmartScreen tarafından doğrulanmamış dosyaları çalıştırmasını önlemek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, bu özelliği devre dışı bırakır ve son kullanıcıların doğrulanmamış dosyaları çalıştırmasına izin verir.
 
 ## <a name="windows-encryption"></a>Windows Şifreleme
 
 ### <a name="windows-settings"></a>Windows Ayarları
 
-Aşağıdaki iki ayar, tüm Windows 10 sürümleri için geçerlidir:
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
 
-- **Cihazları şifrele**: Etkinleştirilirse, kullanıcılardan cihaz şifrelemesini etkinleştirmeleri istenir. Ayrıca kullanıcılardan başka bir sağlayıcının şifrelemesinin etkin olmadığını onaylamaları istenir. Başka bir şifreleme yöntemi etkinken Windows şifrelemesi açılırsa cihaz kullanılamaz hale gelebilir.
-- **Depolama kartını şifrele**: Cihazın kullandığı çıkarılabilir depolama kartlarını şifrelemek için bu ayarı etkinleştirin.
+- Professional
+- İşletme
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
 
+**Ayarlar**:
+
+- **Cihazları şifrele**: Kullanıcılardan cihaz şifrelemesini etkinleştirmelerini istemek için bunu **Gerektir** olarak ayarlayın. Windows sürümü ve sistem yapılandırmasına bağlı olarak kullanıcılardan şunlar istenebilir:  
+  - Başka bir sağlayıcı şifrelemesinin etkin olmadığını onaylama
+  - Bitlocker Sürücü Şifreleme’yi kapatma ve Bitlocker’ı tekrar açmak zorunda olma
+    
+    Başka bir şifreleme yöntemi etkinken Windows şifrelemesi açılırsa cihaz kullanılamaz hale gelebilir. 
+- **Depolama kartını şifrele (yalnızca mobil)**: Cihazın kullandığı çıkarılabilir depolama kartlarını şifrelemek için **Gerektir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, depolama kartı şifrelemesi gerektirmez ve kullanıcıdan bunu açmasını istemez. Bu ayar yalnızca Windows 10 mobil cihazlar için geçerlidir.
 
 ### <a name="bitlocker-base-settings"></a>BitLocker temel ayarları
 
-Temel ayarlar, tüm veri sürücüsü türleri için evrensel BitLocker ayarlarıdır. BitLocker Grup İlke ayarları, tüm veri sürücüsü türlerinde son kullanıcıların değiştirebileceği sürücü şifreleme görevleri veya yapılandırma seçeneklerini yönetir.
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
 
-- **Diğer disk şifrelemesi için uyarı**: Son kullanıcıların makinelerindeki diğer disk şifrelemesi için uyarı istemini devre dışı bırakın.
-- **Şifreleme yöntemlerini yapılandır**: Bu ayarı işletim sistemi, veri ve çıkarılabilir sürücüler için şifreleme algoritmalarını yapılandırmak için etkinleştirin.
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
+
+Temel ayarlar, tüm veri sürücüsü türleri için evrensel BitLocker ayarlarıdır. Bu ayarlar, tüm veri sürücüsü türlerinde son kullanıcıların değiştirebileceği sürücü şifreleme görevleri veya yapılandırma seçeneklerini yönetir.
+
+- **Başka disk şifrelemeleri için uyar**: Cihazda başka bir disk şifrelemesi olduğunda uyarı istemini devre dışı bırakmak için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, uyarının gösterilmesine izin verir.
+- **Şifreleme yöntemlerini yapılandır**: İşletim sistemi, veri ve çıkarılabilir sürücüler için şifreleme algoritmalarını yapılandırmak üzere **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında BitLocker, varsayılan şifreleme yöntemi olarak XTS-AES 128 bit kullanır veya herhangi bir kurulum betiği tarafından belirtilen şifreleme yöntemini kullanır.
   - **İşletim sistemi sürücüleri için şifreleme**: İşletim sistemi sürücüleri için şifreleme yöntemini seçin. XTS-AES algoritmasını kullanmanızı öneririz.
   - **Sabit veri sürücüleri için şifreleme**: Sabit (yerleşik) veri sürücüleri için şifreleme yöntemini seçin. XTS-AES algoritmasını kullanmanızı öneririz.
   - **Çıkarılabilir veri sürücüleri için şifreleme**: Çıkarılabilir veri sürücülerinin şifreleme yöntemini seçin. Çıkarılabilir sürücü, Windows 10 çalıştırmayan cihazlarla kullanılıyorsa AES-CBC algoritmasını kullanmanızı öneririz.
 
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker işletim sistemi sürücüsü ayarları
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
+
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
 
 Bu ayarlar, belirli işletim sistemi veri sürücüleri için geçerlidir.
 
-- **Başlangıçta ek kimlik doğrulaması**: Güvenilir Platform Modülü (TPM) kullanımı dahil olmak üzere, bilgisayar başlatma için kimlik doğrulama gereksinimlerini yapılandırın.
-  - **Uyumlu olmayan TPM yongası ile BitLocker**
+- **Başlangıçta ek kimlik doğrulaması**: Güvenilir Platform Modülü (TPM) kullanımı dahil olmak üzere, bilgisayarı başlatma için kimlik doğrulama gereksinimlerini yapılandırmak üzere **Gerektir** olarak ayarlayın. TPM kullanan cihazlarda yalnızca temel seçenekleri yapılandırmak için bunu **Yapılandırılmadı** (varsayılan) olarak ayarlayın.
+  - **Uyumsuz TPM yongası ile BitLocker**: Bir cihaz, uyumlu TPM yongasına sahip olmadığında BitLocker kullanımını engellemek için **Engelle** (devre dışı bırak) olarak ayarlayın. **Yapılandırılmadı** olarak ayarlandığında kullanıcılar, uyumlu TPM yongası olmadan BitLocker kullanabilir. BitLocker bir parola veya başlangıç anahtarı gerektirebilir.
   - **Uyumlu TPM başlatma**: TPM yongasına izin vermeyi, izin vermemeyi veya gerektirmeyi seçin.
-  - **Uyumlu TPM başlangıç PIN'i**: TPM yongasıyla bir başlangıç PIN'i kullanmaya izin vermeyi, izin vermemeyi veya gerektirmeyi seçin.
-  - **Uyumlu TPM başlangıç anahtarı**: TPM yongasıyla bir başlangıç anahtarı kullanmaya izin vermeyi, izin vermemeyi veya gerektirmeyi seçin.
-  - **Uyumlu TPM başlangıç anahtarı ve PIN'i**: TPM yongasıyla bir başlangıç anahtarı ve PIN'i kullanmaya izin vermeyi, izin vermemeyi veya gerektirmeyi seçin.
-- **En Düşük PIN Uzunluğu**: TPM başlangıç PIN'inin en düşük uzunluğunu yapılandırmak için bu ayarı etkinleştirin.
+  - **Uyumlu TPM başlangıç PIN'i**: TPM yongasıyla bir başlangıç PIN'i kullanmaya izin vermeyi, izin vermemeyi veya gerektirmeyi seçin. Başlangıç PIN’ini etkinleştirme, son kullanıcı etkileşimi gerektirir. 
+  - **Uyumlu TPM başlangıç anahtarı**: TPM yongasıyla bir başlangıç anahtarı kullanmaya izin vermeyi, izin vermemeyi veya gerektirmeyi seçin. Başlangıç anahtarını etkinleştirme, son kullanıcı etkileşimi gerektirir. 
+  - **Uyumlu TPM başlangıç anahtarı ve PIN'i**: TPM yongasıyla bir başlangıç anahtarı ve PIN'i kullanmaya izin vermeyi, izin vermemeyi veya gerektirmeyi seçin. Başlangıç anahtarı ve PIN’i etkinleştirme, son kullanıcı etkileşimi gerektirir.
+- **En Düşük PIN Uzunluğu**: TPM başlangıç PIN’inin en düşük uzunluğunu yapılandırmak için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kullanıcılar 6 ila 20 basamak arasında bir başlangıç PIN’i yapılandırabilir.
   - **En düşük karakter sayısı**: Başlangıç PIN'i için gereken **4**-**20** arasındaki karakter sayısını girin.
-- **İşletim sistemi sürücüsünü kurtarma**: BitLocker ile korunan işletim sistemi sürücülerinin, gerekli başlatma bilgileri olmadığında nasıl kurtarılacağını denetlemek için bu ayarı etkinleştirin.
-  - **Sertifika tabanlı veri kurtarma aracısı**: BitLocker korumalı işletim sistemi sürücülerinde veri kurtarma aracıları kullanılabilmesini istiyorsanız bu ayarı etkinleştirin.
+- **İşletim sistemi sürücüsü kurtarma**: BitLocker ile korunan işletim sistemi sürücülerinin, gerekli başlatma bilgileri olmadığında nasıl kurtarılacağını denetlemek için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, BitLocker kurtarma için varsayılan kurtarma seçenekleri desteklenir. Varsayılan olarak bir DRA’ya izin verilir, kurtarma parolası ve kurtarma anahtarı dahil olmak üzere kurtarma seçenekleri kullanıcı tarafından belirtilir ve kurtarma bilgileri AD DS’ye yedeklenmez.
+  - **Sertifika tabanlı veri kurtarma aracısı**: **Engelle** olarak ayarlandığında, BitLocker ile korunan işletim sistemi sürücülerinde veri kurtarma aracısını kullanamazsınız. BitLocker korumalı işletim sistemi sürücülerinde veri kurtarma aracılarının kullanılabilmesini sağlayan bu ayarı etkinleştirmek için **Yapılandırılmadı** olarak ayarlayın.
   - **Kurtarma parolasının kullanıcı tarafından oluşturması**: Kullanıcıların 48 basamaklı bir kurtarma parolası oluşturmasına izin verilip verilmeyeceğini veya bunun gerekli olup olmadığını seçin.
   - **Kurtarma anahtarının kullanıcı tarafından oluşturması**: Kullanıcıların 256 bitlik bir kurtarma anahtarı oluşturmasına izin verilip verilmeyeceğini veya bunun gerekli olup olmadığını seçin.
-  - **BitLocker kurulum sihirbazındaki kurtarma seçenekleri**: Kullanıcıların BitLocker’ı açtıklarında kurtarma seçeneklerini görmesini veya değiştirmesini engellemek için bu ayarı etkinleştirin.
-  - **BitLocker kurtarma bilgilerini AD DS'ye kaydet**: BitLocker kurtarma bilgilerinin Active Directory'ye kaydedilmesini etkinleştirir.
-  - **AD DS'ye depolanmış BitLocker kurtarma bilgileri**: BitLocker kurtarma bilgilerinin hangi bölümlerinin Active Directory’de depolanacağını yapılandırın. Aşağıdakilerden birini seçin:
+  - **BitLocker kurulum sihirbazında kurtarma seçenekleri**: Kullanıcıların kurtarma seçeneklerini görememesi ve değiştirememesi için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kullanıcılar BitLocker’ı açtığında kurtarma seçeneklerini göremez ve değiştiremez.
+  - **BitLocker kurtarma bilgilerini AD DS’ye kaydet**: BitLocker kurtarma bilgilerinin Active Directory’de (AAD) depolanması için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kurtarma bilgileri AAD’de depolanmaz.
+  - **AD DS’de depolanmış BitLocker kurtarma bilgileri**: BitLocker kurtarma bilgilerinin hangi bölümlerinin Azure AD’de depolanacağını yapılandırın. Aşağıdakilerden birini seçin:
     - **Yedekleme kurtarma parolaları ve anahtar paketleri**
     - **Yalnızca yedekleme kurtarma parolaları**
-  - **BitLocker’ı etkinleştirmeden önce kurtarma bilgilerini AD DS’de depola**: Kullanıcıların, cihaz etki alanına katılmadan ve BitLocker kurtarma bilgileri Active Directory’ye başarıyla depolanmadan BitLocker’ı açmasını engellemek için bu ayarı etkinleştirin.
-- **Önyükleme öncesi kurtarma iletisi ve URL**: Önyükleme öncesi anahtar kurtarma ekranında görüntülenen iletiyi ve URL’yi yapılandırmak için bu ayarı etkinleştirin.
+  - **BitLocker’ı etkinleştirmeden önce kurtarma bilgilerini AD DS’de depola**: BitLocker kurtarma bilgileri Active Directory’de başarıyla depolanmadan önce kullanıcıların BitLocker’ı açmasını engellemek için **Gerektir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, kurtarma bilgileri Azure Active Directory’de başarıyla depolanmamış olsa bile kullanıcıların BitLocker’ı açmasına izin verir.
+- **Önyükleme öncesi kurtarma iletisi ve URL**: Önyükleme öncesi anahtar kurtarma ekranında görüntülenen iletiyi ve URL’yi yapılandırmak için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, bu özelliği devre dışı bırakır.
   - **Önyükleme öncesi kurtarma iletisi**: Önyükleme öncesi kurtarma iletisinin kullanıcılara gösterilme şeklini yapılandırın. Aşağıdakilerden birini seçin:
     - **Varsayılan kurtarma iletisi ve URL'sini kullan**
     - **Boş kurtarma iletisi ve URL'si kullan**
@@ -137,24 +188,52 @@ Bu ayarlar, belirli işletim sistemi veri sürücüleri için geçerlidir.
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>BitLocker sabit veri sürücüsü ayarları
 
-- **BitLocker tarafından korunmayan sabit veri sürücülerine yazma erişimi**: Etkinleştirilirse üzerine yazılabilmesi için tüm sabit veya yerleşik veri sürücülerinde BitLocker koruması etkinleştirilmelidir.
-- **Sabit sürücü kurtarma**: Gerekli başlatma bilgileri olmadığında BitLocker korumalı sabit sürücülerin kurtarılma biçimini denetlemek için bu ayarı etkinleştirin.
-  - **Veri kurtarma aracısı**: BitLocker korumalı sabit sürücülerle veri kurtarma aracıları kullanılmasını istiyorsanız bu ayarı etkinleştirin.
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
+
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
+
+**Ayarlar**:
+
+- **BitLocker ile korunmayan sabit veri sürücüsüne yazma erişimi**: BitLocker ile korunmayan sabit veri sürücülerine yalnızca yazma erişimi vermek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, BitLocker tarafından korunmayan veri sürücülerine okuma ve yazma erişimleri olur.
+- **Sabit sürücü kurtarma**: Gerekli başlatma bilgileri olmadığında BitLocker korumalı sabit sürücülerin kurtarılma biçimini denetlemek için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, bu özelliği devre dışı bırakır.
+  - **Veri kurtarma aracısı**: BitLocker tarafından korunan sabit sürücü İlke Düzenleyicisi ile veri kurtarma aracısının kullanılmasını önlemek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, BitLocker ile korunan sabit sürücülerle veri kurtarma aracılarının kullanımını etkinleştirir.
   - **Kurtarma parolasının kullanıcı tarafından oluşturulması**: Kullanıcıların 48 basamaklı bir kurtarma parolası oluşturmasına izin verilip verilmeyeceğini veya bunun gerekli olup olmadığını yapılandırın.  
   - **Kurtarma anahtarının kullanıcı tarafından oluşturması** - Kullanıcıların 256 bitlik kurtarma anahtarı oluşturmasına izin verilip verilmeyeceğini veya bunun gerekli olup olmadığını yapılandırın.
-  - **BitLocker kurulum sihirbazındaki kurtarma seçenekleri**: Kullanıcıların BitLocker’ı açtıklarında kurtarma seçeneklerini görmesini veya değiştirmesini engellemek için bu ayarı etkinleştirin.
-  - **BitLocker kurtarma bilgilerini AD DS'ye kaydet**: BitLocker kurtarma bilgilerinin Active Directory'ye kaydedilmesini etkinleştirir.
-  - **AD DS’de BitLocker kurtarma bilgileri**: BitLocker kurtarma bilgilerinin hangi bölümlerinin Active Directory’de depolanacağını yapılandırın. Aşağıdakilerden birini seçin:
+  - **BitLocker kurulum sihirbazında kurtarma seçenekleri**: Kullanıcıların kurtarma seçeneklerini görememesi ve değiştirememesi için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kullanıcılar BitLocker’ı açtığında kurtarma seçeneklerini göremez ve değiştiremez.
+  - **BitLocker kurtarma bilgilerini AD DS’ye kaydet**: BitLocker kurtarma bilgilerinin Active Directory’de (AAD) depolanması için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kurtarma bilgileri AAD’de depolanmaz.
+  - **AD DS’de BitLocker kurtarma bilgileri**: BitLocker kurtarma bilgilerinin hangi bölümlerinin Azure Active Directory’de depolanacağını yapılandırın. Aşağıdakilerden birini seçin:
     - **Yedekleme kurtarma parolaları ve anahtar paketleri**
     - **Yalnızca yedekleme kurtarma parolaları**
-  - **BitLocker’ı etkinleştirmeden önce kurtarma bilgilerini AD DS’de depola**: Kullanıcıların, cihaz etki alanına katılmadan ve BitLocker kurtarma bilgileri Active Directory’ye başarıyla depolanmadan BitLocker’ı açmasını engellemek için bu ayarı etkinleştirin.
+  - **BitLocker’ı etkinleştirmeden önce kurtarma bilgilerini AD DS’de depola**: BitLocker kurtarma bilgileri Active Directory’de başarıyla depolanmadan önce kullanıcıların BitLocker’ı açmasını engellemek için **Gerektir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, kurtarma bilgileri Azure Active Directory’de başarıyla depolanmamış olsa bile kullanıcıların BitLocker’ı açmasına izin verir.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>BitLocker çıkarılabilir veri sürücüsü ayarları
 
-- **BitLocker tarafından korunmayan çıkarılabilir veri sürücülerine yazma erişimi**: BitLocker şifrelemesinin çıkarılabilir depolama sürücülerinde gerekli olup olmadığını belirtin.
-  - **Başka bir kuruluşta yapılandırılmış cihazlara yazma erişimi**: Başka bir kuruluşa ait çıkarılabilir veri sürücülerine yazılıp yazılamayacağını belirtin.
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
+
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
+
+**Ayarlar**:
+
+- **BitLocker ile korunmayan çıkarılabilir veri sürücüsüne yazma erişimi**: BitLocker ile korunmayan veri sürücülerine yalnızca yazma erişimi vermek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, BitLocker tarafından korunmayan veri sürücülerine okuma ve yazma erişimleri olur.
+  - **Başka bir kuruluşta yapılandırılmış cihazlara yazma erişimi**: **Engelle** ayarı, başka bir kuruluşta yapılandırılmış cihazlara yazma erişimi verir. **Yapılandırılmamış** (varsayılan) ayarı, yazma erişimini reddeder.
 
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard
+
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
+
+- Giriş
+- Professional
+- İşletme
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
 
 Çalışanlarınızın kullandığı uygulamalarda saldırı yüzeyini yönetmek ve azaltmak için [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) kullanın.
 
@@ -162,7 +241,7 @@ Bu ayarlar, belirli işletim sistemi veri sürücüleri için geçerlidir.
 
 - **Windows yerel güvenlik yetkilisi alt sisteminden kimlik bilgisi çalma eylemlerine bayrak ekleme**
 
-Genellikle makinelere bulaşmak için açık arayan kötü amaçlı yazılımlar tarafından kullanılan [eylem ve uygulamaları önlemeye](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) yardımcı olun.
+  Genellikle makinelere bulaşmak için açık arayan kötü amaçlı yazılımlar tarafından kullanılan [eylem ve uygulamaları önlemeye](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) yardımcı olun.
 
 #### <a name="rules-to-prevent-office-macro-threats"></a>Office Macro tehditlerini önlemek için kurallar
 
@@ -189,7 +268,7 @@ E-posta tehditlerini önlemeye yardımcı olmak için aşağıdakileri engelleyi
 
 - **E-postadan (web posta/posta istemcisi) gelen yürütülebilir içeriklerin (exe, dll, ps, js, vbs vb.) yürütülmesi**
 
-#### <a name="rules-to-protect-against-ransomware"></a>Fidye yazılımlarına karşı korunmak için kurallar
+#### <a name="rules-to-protect-against-ransomware"></a>Fidye Yazılımlarına karşı korunma kuralları
 - **Gelişmiş fidye yazılımı koruması**
 
 > [!TIP]
@@ -211,34 +290,53 @@ Uygulamaların düşük itibarlı IP/etki alanına giden bağlantılarını enge
 
 ### <a name="exploit-protection"></a>Exploit protection
 
-Bellek, denetim akışı ve ilke kısıtlamalarını yapılandırmanıza izin veren bir XML dosyasını karşıya yükleyerek **Kullanıcıların Exploit Protection arabirimini düzenlemesi**’ni engelleyin. XML dosyasındaki ayarlar bir uygulamanın açıklarından yararlanılmasını engellemek için kullanılabilir.
-
-Exploit protection’ı etkinleştirmek için sistemi ve dilediğiniz uygulama risk azaltma ayarlarını temsil eden bir XML dosyası oluşturun. İki yöntemden birini kullanarak bunu yapabilirsiniz:
+Exploit protection’ı etkinleştirmek için sistemi ve dilediğiniz uygulama risk azaltma ayarlarını içeren bir XML dosyası oluşturun. Bunun için iki yöntem vardır:
 
  1. PowerShell: Get-ProcessMitigation, Set-ProcessMitigation ve ConvertTo-ProcessMitigationPolicy PowerShell cmdlet’lerinden biri veya daha fazlasını kullanın. Cmdlet'ler risk azaltma ayarlarını yapılandırır ve bunların XML gösterimini dışarı aktarır.
 
  2. Windows Defender Güvenlik Merkezi Kullanıcı Arabirimi: Windows Defender Güvenlik Merkezi’nde Uygulama & tarayıcı denetimine tıklayın ve çıkan ekranda aşağı kaydırarak Exploit Protection’ı bulun. Önce Sistem ayarları ve Program ayarları sekmelerini kullanarak risk azaltma ayarlarını yapılandırın. Daha sonra bunların bir XML temsilini dışarı aktarmak için ekranın altında yer alan Dışarı aktarma ayarları bağlantısını bulun.
 
+Bellek, denetim akışı ve ilke kısıtlamalarını yapılandırmanıza izin veren bir XML dosyasını karşıya yükleyerek **Kullanıcıların Exploit Protection arabirimini düzenlemesi**’ni engelleyin. XML dosyasındaki ayarlar bir uygulamanın açıklarından yararlanılmasını engellemek için kullanılabilir. **Yapılandırılmadı** (varsayılan) ayarı, özel bir yapılandırma göndermez. 
+
 ## <a name="windows-defender-application-control"></a>Windows Defender Uygulama Denetimi
 
-Windows Defender Uygulama Denetimi tarafından denetlenmesi gereken veya çalıştırılmasına güvenilen ek uygulamaları seçmek için **Uygulama denetimi kod bütünlüğü ilkeleri**’ni kullanın. Windows mağazasındaki Windows bileşenlerinin ve tüm uygulamaların çalıştırılmasına otomatik olarak güvenilir.
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
 
-Uygulamalar, **yalnızca denetim** modunda çalıştırıldığında engellenmez. **Yalnızca denetimli** modu, tüm olayları yerel istemci günlüklerine kaydeder.
+**Mobil Cihaz Yönetimi (MDM)**: 
+- Professional
+- İşletme
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
+
+**Grup ilkesi yönetimi**: 
+- Kurumsal
+
+Windows Defender Uygulama Denetimi tarafından denetlenmesi gereken veya çalıştırılmasına güvenilen ek uygulamaları seçmek için **Uygulama denetimi kod bütünlüğü ilkelerini** kullanın. Windows mağazasındaki Windows bileşenlerinin ve tüm uygulamaların çalıştırılmasına otomatik olarak güvenilir.
+
+Uygulamalar, **yalnızca denetimli** modda çalıştırıldığında engellenmez. **Yalnızca denetimli** modu, tüm olayları yerel istemci günlüklerine kaydeder.
 
 Uygulama Denetimi etkinleştirildiğinde, yalnızca modun **Zorla**’dan **Yalnızca denetimli**’ye değiştirilmesiyle devre dışı bırakılabilir. Modun **Zorla**’dan **Yapılandırılmadı**’ya değiştirilmesi, Uygulama Denetimi’nin atanmış cihazlarda zorlanmaya devam etmesiyle sonuçlanır.
 
 ## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard
+
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
+
+- Kurumsal
+
 Windows Defender Credential Guard kimlik bilgileri hırsızlığı saldırılarına karşı korur. Gizli dizileri yalnızca ayrıcalıklı sistem yazılımlarının erişebileceği şekilde yalıtır.
 
 **Credential Guard** ayarları şunlardır:
 
-- **Devre dışı**: Daha önce **UEFI kilidi olmadan etkin** seçeneğiyle açılmışsa, Credential Guard’ı uzaktan kapatır.
-- **UEFI kilidi ile etkin**: Credential Guard’ın kayıt defteri anahtarı veya Grup İlkesi kullanılarak uzaktan devre dışı bırakılamamasını sağlar.
+- **Devre dışı bırak**: Daha önce **UEFI kilidi olmadan etkin** seçeneğiyle açılmışsa Credential Guard’ı uzaktan kapatır.
+
+- **UEFI kilidi ile etkinleştir**: Credential Guard, kayıt defteri anahtarı veya grup ilkesi kullanılarak uzaktan devre dışı bırakılamaz.
 
     > [!NOTE]
     > Bu ayarı kullanırsanız ve daha sonra Credential Guard'ı devre dışı bırakmak isterseniz, Grup İlkesi'ni **Devre Dışı** olarak ayarlamalısınız. Ayrıca, UEFI yapılandırma bilgilerini her bilgisayardan fiziksel olarak temizleyin. UEFI yapılandırması devam ettiği sürece, Credential Guard etkindir.
 
-- **UEFI kilidi olmadan etkin**: Credential Guard’ın Grup İlkesi kullanılarak uzaktan devre dışı bırakılmasına olanak tanır. Bu ayarı kullanan cihazların Windows 10 sürüm 1511'i veya daha yeni bir sürümü çalıştırıyor olması gerekir.
+- **UEFI kilidi olmadan etkinleştir**: Credential Guard’ın Grup İlkesi kullanılarak uzaktan devre dışı bırakılmasına izin verir. Bu ayarı kullanan cihazların Windows 10 sürüm 1511'i veya daha yeni bir sürümü çalıştırıyor olması gerekir.
 
 Credential Guard'ı etkinleştirdiğinizde, aşağıdaki gerekli özellikler de etkinleştirilir:
 
@@ -247,7 +345,17 @@ Credential Guard'ı etkinleştirdiğinizde, aşağıdaki gerekli özellikler de 
 
 ## <a name="windows-defender-security-center"></a>Windows Defender Güvenlik Merkezi
 
-Windows Defender Güvenlik Merkezi uygulaması, diğer özelliklerden her biri ayrı bir uygulama veya işlem olarak çalışır. İşlem Merkezi aracılığıyla bildirimler gösterir. Her bir özelliğin durumunu görmek ve bazı yapılandırmaları gerçekleştirmek için bir toplayıcı veya tek bir yer olarak görev yapar. [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) belgelerinden daha fazla bilgi edinin.
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
+
+- Giriş
+- Professional
+- İşletme
+- Kurumsal
+- Eğitim
+- Mobil
+- Mobile Enterprise
+
+Windows Defender Güvenlik Merkezi, diğer tüm özelliklerden ayrı bir uygulama veya işlem olarak çalışır. İşlem Merkezi aracılığıyla bildirimler gösterir. Her bir özelliğin durumunu görmek ve bazı yapılandırmaları gerçekleştirmek için bir toplayıcı veya tek bir yer olarak görev yapar. [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) belgelerinden daha fazla bilgi edinin.
 
 #### <a name="windows-defender-security-center-app-and-notifications"></a>Windows Defender Güvenlik Merkezi uygulaması ve bildirimleri
 
@@ -262,7 +370,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
 
 #### <a name="it-contact-information"></a>BT iletişim bilgileri
 
-Windows Defender Güvenlik Merkezi uygulaması ve uygulama bildirimlerinde gösterilecek BT iletişim bilgilerini sağlayın. **Uygulamada ve bildirimlerde göster**, **Yalnızca uygulamada göster**, **Yalnızca bildirimlerde göster** veya **Gösterme** seçeneklerinden birini seçebilirsiniz. **BT kuruluş adı** ile aşağıdaki iletişim seçeneklerinden en az birini girmeniz gerekir:
+Windows Defender Güvenlik Merkezi uygulaması ve uygulama bildirimlerinde gösterilecek BT iletişim bilgilerini sağlayın. **Uygulamada ve bildirimlerde göster**, **Yalnızca uygulamada göster**, **Yalnızca bildirimlerde göster** veya **Gösterme** seçeneklerinden birini seçebilirsiniz. **BT kuruluş adı** ile aşağıdaki iletişim seçeneklerinden en az birini girin:
 
 - **BT departmanı telefon numarası veya Skype kimliği**
 - **BT departmanı e-posta adresi**
@@ -270,56 +378,65 @@ Windows Defender Güvenlik Merkezi uygulaması ve uygulama bildirimlerinde göst
 
 ## <a name="local-device-security-options"></a>Yerel cihaz güvenliği seçenekleri
 
+Aşağıdaki Windows 10 sürümlerinde desteklenir:
+ 
+- Giriş
+- Professional
+- İşletme
+- Kurumsal
+- Eğitim
+
 Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu seçenekleri kullanın.
 
 ### <a name="accounts"></a>Hesaplar
 
-- **Yeni Microsoft hesapları ekle**: Kullanıcıların bu bilgisayara yeni Microsoft hesapları eklemesini engeller.
-- **Parola olmadan uzaktan oturum açma**: Parola korumalı olmayan yerel hesapların fiziksel cihaz dışındaki konumlardan oturum açmasını etkinleştirin.
+- **Yeni Microsoft hesapları ekle**: Kullanıcıların cihaza yeni Microsoft hesapları eklemesini önlemek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kullanıcılar cihazda Microsoft hesabı kullanabilir.
+- **Parola olmadan uzaktan oturum açma**: **Etkinleştir** ayarı, boş parolası olan yerel hesapların cihaz klavyesini kullanarak oturum açmasına izin verir. **Yapılandırılmadı** (varsayılan) ayarı, boş parolası olan yerel hesapların fiziksel cihaz dışındaki konumlardan oturum açmasına izin verir.
 
 #### <a name="admin"></a>Yönetim
 
-- **Yerel yönetici hesabı**: Yerel Yönetici hesabının etkin mi yoksa devre dışı mı olduğunu belirleyin.
+- **Yerel yönetici hesabı**: Yerel yönetici hesabına izin vermek için **Etkin** olarak ayarlayın. Yerel yönetici hesabını devre dışı bırakmak için **Yapılandırılmadı** (varsayılan) olarak ayarlayın.
 - **Yönetici hesabını yeniden adlandır**: Yönetici hesabının güvenlik tanımlayıcısıyla (SID) ilişkilendirilecek farklı bir hesap adı tanımlayın.
 
 #### <a name="guest"></a>Konuk
 
-- **Konuk hesabı**: Konuk hesabının etkin mi yoksa devre dışı mı olduğunu belirleyin.
+- **Guest hesabı**: Yerel guest hesabına izin vermek için **Etkin** olarak ayarlayın. Yerel guest hesabını devre dışı bırakmak için **Yapılandırılmadı** (varsayılan) olarak ayarlayın.
 - **Konuk hesabını yeniden adlandır**: Konuk hesabının güvenlik tanımlayıcısıyla (SID) ilişkilendirilecek farklı bir hesap adı tanımlayın.
 
 ### <a name="devices"></a>Cihazlar
 
-- **Oturum açma olmadan cihazı çıkar**: Taşınabilir bir bilgisayarın oturum açma gerektirmeden çıkarılmasını engelleyin.
-- **Paylaşılan yazıcılar için yazıcı sürücülerini yükle**: Paylaşılan yazıcıya bağlanma işlemi kapsamında yazıcı sürücülerini yüklemeyi yalnızca yöneticilerle kısıtlayın.
-- **CD-ROM erişimini yerel etkin kullanıcıya kısıtla**: Bu ayarın etkinleştirilmesi, yalnızca etkileşimli olarak oturum açan kullanıcının CD-ROM medyasına erişmesine izin verir
+- **Oturum açma olmadan cihazı çıkar**: Kullanıcıların yerleştirilmiş bir taşınabilir cihazın fiziksel çıkarma düğmesine basarak cihazı güvenle çıkarabilmeleri için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, cihazı çıkarmak için kullanıcının cihazda oturum açmasını ve izin almayı gerektirir.
+- **Paylaşılan yazıcılar için yazıcı sürücülerini yükle**: **Etkin** olarak ayarlandığında, herhangi bir kullanıcı, paylaşılan yazıcıya bağlanma işlemi kapsamında yazıcı sürücüsü yükleyebilir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, paylaşılan yazıcıya bağlanma işlemi kapsamında yalnızca yöneticiler yazıcı sürücüsü yükleyebilir.
+- **CD-ROM erişimini yerel etkin kullanıcıyla kısıtla**: **Etkin** olarak ayarlandığında, yalnızca etkileşimli olarak oturum açan kullanıcı CD-ROM medyasına erişebilir. Bu ilke etkinse ve kimse etkileşimli olarak oturum açmamışsa CD-ROM’a ağ üzerinden erişilir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, herkesin CD-ROM’a erişimi olur.
 - **Çıkarılabilir medyayı biçimlendir ve çıkar**: Çıkarılabilir NTFS medyasını kimlerin biçimlendirmesine ve çıkarmasına izin verileceğini tanımlayın:
   - **Yapılandırılmadı**
+  - **Yöneticiler**
   - **Yöneticiler ve Yetkili Kullanıcılar**
   - **Yöneticiler ve Etkileşimli Kullanıcılar**
 
 ### <a name="interactive-logon"></a>Etkileşimli Oturum Açma
 
-- **Ekran koruyucu etkinleşmeden önceki kilit ekranında işlem yapılmadan geçen dakika sayısı**: Ekran koruyucu çalıştırılmadan önce etkileşimli masa üstünün oturum açma ekranında işlem yapılmadan geçecek en fazla dakika sayısını tanımlayın.
-- **Oturum açmak için CTRL+ALT+DEL gerektir**: Kullanıcının oturum açabilmesi için önce CTRL+ALT+DEL tuşlarına basılmasını gerektirin.
+- **Ekran koruyucu etkinleştirilmeden önceki kilit ekranında işlem yapılmadan geçen dakika sayısı**: Ekran koruyucu çalıştırılmadan önce etkileşimli masa üstünün oturum açma ekranında işlem yapılmadan geçecek en yüksek dakika sayısını girin.
+- **Oturum açmak için CTRL + ALT + DEL gerektir**: Kullanıcıların oturum açması için CTRL+ALT+DEL tuşlarına basmayı gerektirmemek için **Etkin** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kullanıcıların Windows’da oturum açmaları için CTRL+ALT+DEL tuşlarına basmaları gerekir.
 - **Akıllı kart kaldırma davranışı**: Oturum açma kullanıcısı için akıllı kartın akıllı kart okuyucusundan çıkarılması durumunda neler olacağını belirler. Seçenekleriniz şunlardır:
 
   - **İş İstasyonunu Kilitle**: Akıllı kart çıkarıldığında iş istasyonu kilitlenir. Bu seçenek kullanıcıların akıllı kartlarını alarak alandan uzaklaşmasına ve yine de korumalı oturumu sürdürmesine olanak tanır.
   - **Oturumu Kapatmaya Zorla**: Kullanıcı akıllı kartı çıkardığında oturumu otomatik olarak kapatılır.
-  - **Bir Uzak Masaüstü Hizmetleri oturumu bağlantısını kes**: Akıllı kartın çıkarılması kullanıcının oturumunu kapatmadan oturumu bağlantısını keser. Bu seçenek kullanıcının daha sonra yeniden oturum açmak zorunda kalmadan akıllı kartı takıp oturumu devam ettirmesine veya akıllı kart okuyucuyla donatılmış başka bir bilgisayarda bunu yapmasına olanak tanır. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.
+  - **Bir Uzak Masaüstü Hizmetleri oturumu bağlantısını kes**: Akıllı kartın çıkarılması kullanıcının oturumunu kapatmadan oturumun bağlantısını keser. Bu seçenek kullanıcının daha sonra yeniden oturum açmak zorunda kalmadan akıllı kartı takıp oturumu devam ettirmesine veya akıllı kart okuyucuyla donatılmış başka bir bilgisayarda bunu yapmasına olanak tanır. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.
 
     [LocalPoliciesSecurity seçenekleri](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) başlığı altında daha fazla ayrıntı sağlanır.
 
 #### <a name="display"></a>Görüntüle
 
 - **Kilit ekranında kullanıcı bilgileri**: Oturum kilitlendiğinde görüntülenen kullanıcı bilgilerini yapılandırın. Yapılandırılmazsa, kullanıcı görünen adı, etki alanı ve kullanıcı adı gösterilir.
-  - **Yapılandırılmadı**: Kullanıcı görünen adı, etki alanı ve kullanıcı adı
+  - **Yapılandırılmadı**
   - **Kullanıcı görünen adı, etki alanı ve kullanıcı adı**
   - **Yalnızca kullanıcı görünen adı**
   - **Kullanıcı bilgilerini görüntüleme**
-- **Son oturum açmış kullanıcıyı gizle**: Bu cihazda oturum açmış olan son kişinin kullanıcı adını görüntülemeyin.
-- **Oturum açma sırasında kullanıcı adını gizle**: Kimlik bilgileri girildikten sonra ve cihazın masaüstü gösterilmeden önce bu cihazda oturum açan kişinin kullanıcı adını görüntülemeyin.
-- **Oturum açma ileti başlığı**: Oturum açmaya çalışan kullanıcılar için ileti başlığını ayarlayın.
-- **Oturum açma ileti metni**: Oturum açmaya çalışan kullanıcılar için ileti metnini ayarlayın.
+- **Son oturum açan kullanıcıyı gizle**: **Etkinleştir** ayarı, kullanıcı adını gizler. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcı adını gösterir.
+- **Oturum açma sırasında kullanıcı adını gizle**: **Etkinleştir** ayarı, kullanıcı adını gizler. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcı adını gösterir.
+- **Oturum açma ileti başlığı**: Oturum açan kullanıcılar için ileti başlığını ayarlayın.
+- **Oturum açma ileti metni**: Oturum açan kullanıcılar için ileti metnini ayarlayın.
 
 ### <a name="network-access-and-security"></a>Ağ erişimi ve güvenlik
 
@@ -333,14 +450,14 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 
 ### <a name="recovery-console-and-shutdown"></a>Kurtarma konsolu ve kapatma
 
-- **Kapatma sırasında sanal bellek disk belleği dosyasını temizle**: Cihaz kapatıldığında sanal bellek disk belleği dosyasını temizleyin.
-- **Oturum açma olmadan kapatma**: Bilgisayarı Windows oturum açma ekranından kapatma seçeneğini engelleyin. Bu durumda, kullanıcıların bir sistem kapatması gerçekleştirmek için önce bilgisayarda başarıyla oturum açmaları gerekir.
+- **Kapatma sırasında sanal bellek disk belleği dosyasını temizle**: Cihaz kapatıldığında sanal bellek disk belleği dosyasını temizlemek için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** ayarı, sanal belleği temizlemez.
+- **Oturum açmadan cihaz kapatma**: **Engelle** ayarı, Windows oturum açma ekranında kapatma seçeneğini gizler. Kullanıcıların cihazda oturum açıp ve ardından cihazı kapatması gerekir. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcıların Windows oturum açma ekranından cihazı kapatmalarına izin verir.
 
 ### <a name="user-account-control"></a>Kullanıcı hesap denetimi
 
-- **Güvenli konum olmadan UIA bütünlüğü**: Dosya sisteminde uygulamaların güvenli olmayan konumlardan UIAccess bütünlük düzeyiyle çalıştırılmasını etkinleştirin.
-- **Dosya ve kayıt defteri yazma hatalarını kullanıcı başına konumlarında sanal olarak oluştur**: Uygulama yazma hatalarının tanımlı kayıt defteri ve dosya sistemi konumlarına yeniden yönlendirilip yönlendirilmeyeceğini belirleyin. Bundan başka, uygulamanın başarısız olmasına neden olabilir.
-- **Yalnızca imzalı ve doğrulanmış yürütülebilir dosyaları yükselt**: Verili bir yürütülebilir dosyanın çalıştırılmasına izin vermeden önce bu dosya için PKI sertifika yolu doğrulamasını zorunlu tutun.
+- **Güvenli konum olmadan UIA bütünlüğü**: **Etkinleştir** olarak ayarlandığında, dosya sistemindeki güvenli konumlarda bulunan uygulamalar yalnızca UIAccess bütünlüğüyle çalıştırılır. **Yapılandırılmadı** (varsayılan) ayarı, uygulamaların dosya sistemindeki güvenli konumlarda bulunmasa bile UIAccess bütünlüğüyle çalıştırılmasına izin verir.
+- **Dosya ve kayıt defteri yazma hatalarını kullanıcı başına konumlarda sanal olarak oluştur**: **Engelle** olarak ayarlandığında, uygulama yazma hataları çalışma zamanında dosya sistemi ve kayıt defteri için tanımlı kullanıcı konumlarına yeniden yönlendirilir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, korumalı konumlara veri yazan uygulamalar başarısız olur.
+- **Yalnızca imzalı ve doğrulanmış yürütülebilir dosyaları yükselt**: Bir yürütülebilir dosyanın çalışmasına izin verilmeden önce bu dosya için PKI sertifika yolu doğrulamasını zorunlu tutmak için **Etkinleştir** olarak ayarlayın. Bir yürütülebilir dosyanın çalışabilmesi için PKI sertifika yolu doğrulamasını zorlamamak için **Yapılandırılmadı** olarak ayarlayın.
 
 #### <a name="uia-elevation-prompt-behavior-settings"></a>UIA yükseltme istemi davranışı ayarları
 
@@ -355,24 +472,24 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
   - **Yükseltme isteklerini otomatik olarak reddet**
   - **Güvenli masaüstünde kimlik bilgileri iste**
   - **Yapılandırılmadı**: Kimlik bilgileri istemi
-- **Yükseltme istemlerini kullanıcının etkileşimli masaüstüne yönlendir**: Tüm yükseltme isteklerinin güvenli masaüstü yerine etkileşimli kullanıcının masaüstüne gitmesini etkinleştirin. Yöneticiler ve standart kullanıcılar için istemci davranışı ilke ayarları kullanılır.
-- **Uygulama yüklemeleri için yükseltilmiş istem**: Yükseltilmiş ayrıcalıklar gerektiren uygulama yüklemeleri yönetici kimlik bilgileri isteyecektir.
-- **Güvenli masaüstü olmadan UIA yükseltme istemi**: UIAccess uygulamalarının güvenli masaüstü kullanmadan yükseltme isteminde bulunmasına izin verin.
+- **Yükseltme istemlerini kullanıcının etkileşimli masaüstüne yönlendir**: Tüm yükseltme isteklerinin güvenli masaüstüne değil de etkileşimli kullanıcının masaüstüne gitmesi için **Etkinleştir** olarak ayarlayın. Yöneticiler ve standart kullanıcılar için herhangi bir istem davranışı ilke ayarı kullanılır. **Yapılandırılmadı** (varsayılan) ayarı, yöneticiler ve standart kullanıcılar için istem davranışı ilke ayarlarına bakılmaksızın tüm yükseltme isteklerini güvenli masaüstüne gitmeye zorlar.
+- **Uygulama yüklemeleri için yükseltilmiş istem**: **Engelle** olarak ayarlandığında, yükseltme için uygulama yükleme paketleri algılanmaz veya istenmez. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, bir uygulama paketi yükseltilmiş ayrıcalıklar gerektirdiğinde kullanıcıdan yönetici kullanıcı adı ve parolası istenir.
+- **Güvenli masaüstü olmadan UIA yükseltme istemi**: UIAccess uygulamalarının güvenli masaüstü kullanmadan yükseltme isteminde bulunmasına izin vermek için **Etkinleştir** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yükseltme istemleri bir güvenli masaüstü kullanır.
 
 #### <a name="admin-approval-mode-settings"></a>Yönetici Onay Modu ayarları
 
-- **Yerleşik Yönetici için Yönetici Onay Modu**: Yerleşik yönetici hesabının Yönetici Onay Modunu mu kullanacağını yoksa tüm uygulamaları tam yönetici ayrıcalıklarıyla mı çalıştıracağını tanımlar.
-- **Tüm yöneticileri Yönetici Onay Modunda çalıştır**: Yönetici Onay Modunun ve tüm UAC ilke ayarlarının etkinleştirilip etkinleştirilmeyeceğini tanımlar.
+- **Yerleşik Yönetici için Yönetici Onay Modu**: **Etkin** ayarı, yerleşik Yönetici hesabının Yönetici Onay Modu kullanmasına izin verir. Ayrıcalık gerektiren herhangi bir işlem, kullanıcıdan işlemi onaylamasını ister. **Yapılandırılmadı** (varsayılan) ayarı, tam yönetici ayrıcalıkları olan tüm uygulamaları çalıştırır.
+- **Tüm yöneticileri Yönetici Onay Modunda çalıştır**: Yönetici Onay Modunu ve tüm ilgili UAC ilke ayarlarını devre dışı bırakmak için **Engelle** olarak ayarlayın. **Yapılandırılmadı** (varsayılan) ayarı, Yönetici Onay Modunu etkinleştirir.
 
 ### <a name="microsoft-network-client"></a>Microsoft Ağ İstemcisi
 
-- **İletişimleri dijital olarak imzala (sunucu onaylarsa)**: SMB istemcisinin SMB paket imzalama anlaşması yapmaya çalışıp çalışmayacağını belirler. Etkinleştirildiğinde (Yapılandırılmadı), Microsoft ağ istemcisi sunucudan oturum kurulumunda SMB paket imzalama gerçekleştirilmesini ister. Sunucuda paket imzalama etkinleştirilirse, paket imzalama anlaşması yapılır. Bu ilke devre dışı bırakılırsa, SMB istemcisi hiçbir zaman SMB paket imzalama anlaşması yapmaz.
-- **Üçüncü taraf SMB sunucularına şifrelenmemiş parola gönder**: Etkinleştirildiğinde, Sunucu İleti Bloğu (SMB) yeniden yönlendiricisinin kimlik doğrulama sırasında parola şifrelemesini desteklemeyen Microsoft dışı SMB sunucularına düz metin parolalar göndermesine izin verilir.
+- **İletişimleri dijital olarak imzala (sunucu onaylarsa)**: SMB istemcisinin SMB paket imzalama anlaşması yapıp yapmayacağını belirler. **Yapılandırılmadı** veya etkin (varsayılan) olarak ayarlandığında Microsoft ağ istemcisi, sunucudan oturum kurulumunda SMB paket imzalama işlemini çalıştırmasını ister. Sunucuda paket imzalama etkinleştirilirse, paket imzalama anlaşması yapılır. **Devre dışı bırak** olarak ayarlandığında, SMB istemcisi hiçbir zaman SMB paket imzalama anlaşması yapmaz.
+- **Üçüncü taraf SMB sunucularına şifrelenmemiş parola gönder**: **Etkin** olarak ayarlandığında, Sunucu İleti Bloğu (SMB) yeniden yönlendiricisi kimlik doğrulama sırasında parola şifrelemesini desteklemeyen Microsoft dışı SMB sunucularına düz metin parolalar gönderebilir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, parolalar şifrelenir.
 
 ### <a name="microsoft-network-server"></a>Microsoft Ağ Sunucusu
 
-- **İletişimleri dijital olarak imzala (istemci onaylarsa)**: SMB sunucusunun istekte bulunan istemcilerle SMB paket imzalama anlaşması yapıp yapmayacağını belirler. Etkinleştirildiğinde, Microsoft ağ sunucusu istemci tarafından istendiği gibi SMB paket imzalama anlaşması yapar. Başka bir deyişle, istemcide paket imzalama etkinleştirildiyse paket imzalama anlaşması yapılır. **Yapılandırılmadığında** veya devre dışı bırakıldığında (varsayılan), SMB istemcisi hiçbir zaman SMB paket imzalama anlaşması yapmaz.
-- **İletişimleri dijital olarak imzala (her zaman)**: SMB sunucu bileşeninin paket imzalama gerektirip gerektirmediğini belirler. Etkinleştirildiğinde, Microsoft ağ istemcisi SMB paket imzalama gerçekleştirmeyi kabul etmediği sürece Microsoft ağ sunucusu istemciyle iletişim kurmaz. **Yapılandırılmadığında** veya devre dışı bırakıldığında (Varsayılan), istemciyle sunucu arasında SMB paket imzalama anlaşması yapılır.
+- **İletişimleri dijital olarak imzala (istemci onaylarsa)**: SMB sunucusunun istekte bulunan istemcilerle SMB paket imzalama anlaşması yapıp yapmayacağını belirler. **Etkinleştir** olarak ayarlandığında, Microsoft ağ sunucusu istemci tarafından istendiği gibi SMB paket imzalama anlaşması yapar. Başka bir deyişle, istemcide paket imzalama etkinleştirildiyse paket imzalama anlaşması yapılır. **Yapılandırılmadığında** veya devre dışı bırakıldığında (varsayılan), SMB istemcisi hiçbir zaman SMB paket imzalama anlaşması yapmaz.
+- **İletişimleri dijital olarak imzala (her zaman)**: SMB sunucu bileşeninin paket imzalama gerektirip gerektirmediğini belirler. **Etkinleştir** olarak ayarlandığında, Microsoft ağ istemcisi SMB paket imzalamayı kabul etmediği sürece Microsoft ağ sunucusu istemciyle iletişim kurmaz. **Yapılandırılmadı** veya Devre Dışı (varsayılan) olarak ayarlandığında, istemciyle sunucu arasında SMB paket imzalama anlaşması yapılır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

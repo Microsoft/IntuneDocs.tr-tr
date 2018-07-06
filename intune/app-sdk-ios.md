@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/18/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 2effa1d63be57c938a4e5763090bce8f20f48192
+ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042820"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -84,7 +85,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
    > [!NOTE]
    > Çerçeveyi kullanırsanız, uygulamanızı App Store’a göndermeden önce evrensel çerçeveden benzetici mimarilerini elle çıkarmanız gerekir. Daha fazla bilgi için bkz. [Uygulamanızı App Store'a gönderme](#Submit-your-app-to-the-App-Store).
 
-2. **2. Seçenek**: `libIntuneMAM.a` kitaplığı ile bağlantı oluşturun. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
+   **2. Seçenek**: `libIntuneMAM.a` kitaplığı ile bağlantı oluşturun. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
 
     ![Intune Uygulama SDK’sı iOS: bağlantılı çerçeveler ve kitaplıklar](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -99,7 +100,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
      ![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-     Aşağıdaki iOS çerçevelerini projeye ekleyin:  
+2. Aşağıdaki iOS çerçevelerini projeye ekleyin:  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
@@ -152,6 +153,9 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
    |- o |  (İsteğe bağlı) `<Path to the output plist>` |
 
 '-o' parametresi belirtilmezse, giriş dosyası yerinde değiştirilir. Araç bir kez etkilidir ve uygulamanın Info.plist dosyası her değiştirildiğinde veya yetkilendirmeler yapıldığında yeniden çalıştırılmalıdır. En son sürümde Info.plist yapılandırma gereksinimlerinin değişmesi durumunda, Intune SDK'sını güncelleştirirken de aracın en son sürümünü indirmeniz ve çalıştırmanız gerekir.
+
+> [!NOTE]
+> Uygulamanız zaten FaceID kullanmıyorsa `NSFaceIDUsageDescription` info.plist anahtarının bir varsayılan iletiyle yapılandırıldığından emin olun. Bu, iOS’un kullanıcıya uygulamanın FaceID’yi nasıl kullanacağını bildirmesi için gereklidir. Intune uygulama koruma ilke ayarları, bir BT yöneticisi tarafından yapılandırılırsa FaceID’nin uygulama erişimi için bir yöntem olarak kullanılmasına imkan verir.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Kimlik Doğrulama Kitaplığı'nı (ADAL) Yapılandırma
 

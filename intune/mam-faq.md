@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c28f7cea87a58f7a01ef2fc427dd3c6d2176f8c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36329935"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
@@ -27,11 +28,14 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 ## <a name="mam-basics"></a>MAM Temel Kavramları
 
 
-**MAM nedir?** [Intune mobil uygulama yönetimi](/intune/app-lifecycle), kullanıcılarınız için mobil uygulamaları yayımlama, gönderme, yapılandırma, güvenlik altına alma, izleme ve güncelleştirme gibi eylemler gerçekleştirmenize olanak tanıyan Intune yönetim özellikleri paketini ifade eder.
+**MAM nedir?**<br></br>
+[Intune mobil uygulama yönetimi](/intune/app-lifecycle), kullanıcılarınız için mobil uygulamaları yayımlama, gönderme, yapılandırma, güvenlik altına alma, izleme ve güncelleştirme gibi eylemler gerçekleştirmenize olanak tanıyan Intune yönetim özellikleri paketini ifade eder.
 
-**MAM uygulama korumanın avantajları nedir?** MAM, bir uygulama içindeki kuruluş verilerini korur. Kayıtsız MAM (MAM-WE) ile, hassas veriler içeren iş veya okul ile ilgili uygulamalar, kendi cihazını getir (KCG) senaryolarında kişisel cihazlar dahil neredeyse her cihazdan yönetilebilir. Microsoft Office uygulamaları gibi birçok üretkenlik uygulaması, Intune MAM tarafından yönetilebilir. Genel kullanıma sunulan [Intune ile yönetilen uygulamaların](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) resmi listesine bakın.
+**MAM uygulama korumanın avantajları nedir?**<br></br>
+MAM, bir uygulama içindeki kuruluş verilerini korur. Kayıtsız MAM (MAM-WE) ile, hassas veriler içeren iş veya okul ile ilgili uygulamalar, kendi cihazını getir (KCG) senaryolarında kişisel cihazlar dahil neredeyse her cihazdan yönetilebilir. Microsoft Office uygulamaları gibi birçok üretkenlik uygulaması, Intune MAM tarafından yönetilebilir. Genel kullanıma sunulan [Intune ile yönetilen uygulamaların](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) resmi listesine bakın.
 
-**MAM hangi cihaz yapılandırmalarını destekler?** Intune MAM iki yapılandırmayı destekler:
+**MAM hangi cihaz yapılandırmalarını destekler?**<br></br>
+Intune MAM iki yapılandırmayı destekler:
 - **Intune MDM + MAM**: BT yöneticileri, yalnızca Intune mobil cihaz yönetiminde (MDM) kayıtlı cihazlarda MAM ve uygulama koruma ilkelerini kullanarak uygulamaları yönetebilir. Uygulamaları MAM-WE kullanarak yönetmek için, müşterilerin https://portal.azure.com adresindeki Azure portalında Intune konsolunu kullanması gerekir.
 
 - **Cihaz kaydı olmadan MAM**: Cihaz kaydı olmadan MAM ya da diğer adıyla MAM-WE, BT yöneticilerinin Intune MDM’de kayıtlı olmayan cihazlarda MAM ve uygulama koruma ilkelerini kullanarak uygulamaları yönetmesine olanak sağlar. Bu, uygulamaların üçüncü taraf EMM sağlayıcılarında kayıtlı cihazlarda Intune tarafından yönetilebileceği anlamına gelir. Uygulamaları MAM-WE kullanarak yönetmek için, müşterilerin http://portal.azure.com adresindeki Azure portalında Intune konsolunu kullanması gerekir. Ayrıca uygulamalar, üçüncü taraf Enterprise Mobility Management (EMM) sağlayıcıları ile kaydedilmiş veya hiçbir MDM ile kaydedilmemiş cihazlarda uygulamalar Intune ile yönetilebilir.
@@ -39,15 +43,19 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
 
 ## <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
 
-**Uygulama koruma ilkeleri nelerdir**? Uygulama koruma ilkeleri, bir kuruluşa ait verilerin güvenli veya yönetilen bir uygulamanın içinde kalmasını sağlayan kurallardır. İlke, kullanıcı “kurumsal” verilere erişmeye veya bunları taşımaya çalıştığında uygulanan bir kural veya kullanıcı uygulamadayken yasaklanan veya izlenen bir eylemler kümesi olabilir.
+**Uygulama koruma ilkeleri nelerdir**?<br></br>
+Uygulama koruma ilkeleri, bir kuruluşa ait verilerin güvenli veya yönetilen bir uygulamanın içinde kalmasını sağlayan kurallardır. İlke, kullanıcı “kurumsal” verilere erişmeye veya bunları taşımaya çalıştığında uygulanan bir kural veya kullanıcı uygulamadayken yasaklanan veya izlenen bir eylemler kümesi olabilir.
 
-**Uygulama koruma ilkelerinin örnekleri nelerdir?** Her uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi için [Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) ve [iOS uygulama koruma ilkesi ayarlarına](app-protection-policy-settings-ios.md) bakın.
+**Uygulama koruma ilkelerinin örnekleri nelerdir?**<br></br>
+Her uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi için [Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) ve [iOS uygulama koruma ilkesi ayarlarına](app-protection-policy-settings-ios.md) bakın.
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Uygulama koruma ilkeleri ile yönetebileceğiniz uygulamalar
 
-**Hangi uygulamalar uygulama koruma ilkeleri tarafından yönetilebilir?** [Intune App SDK’sı](/intune/app-sdk) ile tümleştirilmiş veya [Intune Uygulaması Sarmalama Aracı](/intune/apps-prepare-mobile-application-management) tarafından sarmalanmış herhangi bir uygulama, Intune uygulama koruma ilkeleri kullanılarak yönetilebilir. Genel kullanıma sunulan [Intune ile yönetilen uygulamaların](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) resmi listesine bakın.
+**Hangi uygulamalar uygulama koruma ilkeleri tarafından yönetilebilir?**<br></br>
+[Intune App SDK’sı](/intune/app-sdk) ile tümleştirilmiş veya [Intune Uygulaması Sarmalama Aracı](/intune/apps-prepare-mobile-application-management) tarafından sarmalanmış herhangi bir uygulama, Intune uygulama koruma ilkeleri kullanılarak yönetilebilir. Genel kullanıma sunulan [Intune ile yönetilen uygulamaların](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) resmi listesine bakın.
 
 **Intune ile yönetilen bir uygulamada uygulama koruma ilkelerini kullanmak için temel gereksinimler nelerdir?**
+
 - Son kullanıcının bir Azure Active Directory (AAD) hesabı olması gerekir. Azure Active Directory’de Intune kullanıcılarını nasıl oluşturacağınızı öğrenmek için [Kullanıcı ekleme ve Intune'a yönetici izni verme](/intune/users-permissions-add) konusuna bakın.
 
 - Son kullanıcının Azure Active Directory hesabına atanmış bir Microsoft Intune lisansının olması gerekir. Son kullanıcılara Intune lisanslarını nasıl atayacağınızı öğrenmek için [Intune lisanslarını yönetme](/intune/licenses-assign) konusuna bakın.
@@ -76,78 +84,97 @@ Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hak
   >[!NOTE]
   > Office mobil uygulamaları şu anda yalnızca SharePoint Online’ı destekler ve SharePoint şirket içi sürümünü desteklemez.
 
-**Office için neden yönetilen bir konum (örneğin OneDrive) gereklidir?** Intune, uygulamadaki tüm verileri “kurumsal” veya “kişisel” olarak işaretler. Veriler bir iş konumundan geliyorsa “kurumsal” olarak kabul edilir. Office uygulamaları söz konusu olduğunda Intune, aşağıdakileri iş konumu olarak kabul eder: e-posta (Exchange) veya bulut depolama (OneDrive İş hesabı içeren OneDrive uygulaması).
+**Office için neden yönetilen bir konum (örneğin OneDrive) gereklidir?**<br></br>
+Intune, uygulamadaki tüm verileri “kurumsal” veya “kişisel” olarak işaretler. Veriler bir iş konumundan geliyorsa “kurumsal” olarak kabul edilir. Office uygulamaları söz konusu olduğunda Intune, aşağıdakileri iş konumu olarak kabul eder: e-posta (Exchange) veya bulut depolama (OneDrive İş hesabı içeren OneDrive uygulaması).
 
-**Skype Kurumsal’ı kullanmak için ek gereksinimler nelerdir?** [Skype Kurumsal](https://products.office.com/skype-for-business/it-pros) lisans gereksinimlerine bakın.
+**Skype Kurumsal’ı kullanmak için ek gereksinimler nelerdir?**<br></br>
+[Skype Kurumsal](https://products.office.com/skype-for-business/it-pros) lisans gereksinimlerine bakın.
   >[!NOTE]
   > Skype Kurumsal mobil uygulaması şu anda yalnızca Skype Kurumsal Çevrimiçi sürümü destekler.
 
 ## <a name="app-protection-features"></a>Uygulama koruma özellikleri
 
-**Çoklu kimlik desteği nedir?** Çoklu kimlik desteği, Intune Uygulama SDK’sının, uygulama koruma ilkelerini yalnızca uygulamada oturum açan iş veya okul hesabına uygulama özelliğidir. Kişisel bir hesap uygulamada oturum açarsa, verilere koruma uygulanmaz.
+**Çoklu kimlik desteği nedir?**<br></br>
+Çoklu kimlik desteği, Intune Uygulama SDK’sının, uygulama koruma ilkelerini yalnızca uygulamada oturum açan iş veya okul hesabına uygulama özelliğidir. Kişisel bir hesap uygulamada oturum açarsa, verilere koruma uygulanmaz.
 
-**Çoklu kimlik desteğinin amacı nedir?** Çoklu kimlik desteği hem “kurumsal” kitleye hem de tüketici kitlesine sahip uygulamaların (yani Office uygulamalarının), “kurumsal” hesaplara yönelik Intune uygulama koruma özellikleri ile genel kullanım için yayımlanabilmesine olanak tanır.
+**Çoklu kimlik desteğinin amacı nedir?**<br></br>
+Çoklu kimlik desteği hem “kurumsal” kitleye hem de tüketici kitlesine sahip uygulamaların (yani Office uygulamalarının), “kurumsal” hesaplara yönelik Intune uygulama koruma özellikleri ile genel kullanım için yayımlanabilmesine olanak tanır.
 
-**Outlook'ta çoklu kimlik desteği nasıl işler?** Outlook’ta kişisel ve “kurumsal” e-postalar birleştirilmiş bir e-posta görünümünde gösterildiği için, Outlook uygulamasını başlattığınız zaman Intune PIN’i istenir.
+**Outlook'ta çoklu kimlik desteği nasıl işler?**<br></br>
+Outlook’ta kişisel ve “kurumsal” e-postalar birleştirilmiş bir e-posta görünümünde gösterildiği için, Outlook uygulamasını başlattığınız zaman Intune PIN’i istenir.
 
-**Intune uygulama PIN’i nedir?** Kişisel Kimlik Numarası (PIN), bir uygulamadaki kuruluş verilerine doğru kullanıcının eriştiğini doğrulamak için kullanılan bir paroladır.
+**Intune uygulama PIN’i nedir?**<br></br>
+Kişisel Kimlik Numarası (PIN), bir uygulamadaki kuruluş verilerine doğru kullanıcının eriştiğini doğrulamak için kullanılan bir paroladır.
 
-- **Ne zaman kullanıcıdan PIN’ini girmesi istenir?** Intune, kullanıcının uygulama PIN’ini yalnızca kullanıcı “kurumsal” verilere erişmek üzereyken ister. Word/Excel/PowerPoint gibi çok kimlikli uygulamalarda, kullanıcı “kurumsal” bir belge veya dosyayı açmaya çalıştığında kullanıcıdan PIN’ini girmesi istenir. Intune Uygulaması Sarmalama Aracı kullanılarak yönetilen iş kolu uygulamaları gibi tek kimlikli uygulamalarda, Intune Uygulama SDK’sı kullanıcının uygulamadaki deneyiminin her zaman “kurumsal” nitelikli olduğunu bildiğinden, uygulama başlatıldığında PIN girilmesi istenir.
+- **Ne zaman kullanıcıdan PIN’ini girmesi istenir?**<br></br> Intune, kullanıcının uygulama PIN’ini yalnızca kullanıcı “kurumsal” verilere erişmek üzereyken ister. Word/Excel/PowerPoint gibi çok kimlikli uygulamalarda, kullanıcı “kurumsal” bir belge veya dosyayı açmaya çalıştığında kullanıcıdan PIN’ini girmesi istenir. Intune Uygulaması Sarmalama Aracı kullanılarak yönetilen iş kolu uygulamaları gibi tek kimlikli uygulamalarda, Intune Uygulama SDK’sı kullanıcının uygulamadaki deneyiminin her zaman “kurumsal” nitelikli olduğunu bildiğinden, uygulama başlatıldığında PIN girilmesi istenir.
 
-- **Kullanıcıdan ne sıklıkta Intune PIN’i istenecek?**
-  BT yöneticisi, Intune yönetici konsolunda “(dakika) sonra erişim gereksinimlerini yeniden denetle” Intune uygulama koruma ilkesini tanımlayabilir. Bu ayar, cihazda erişim gereksinimlerini denetlenmeden önce geçmesi gereken süresi belirtir ve uygulama PIN ekranı yeniden gösterilir. Ancak kullanıcıdan PIN istenme sıklığını etkileyen önemli PIN ayrıntıları şöyledir: 
+- **Kullanıcıdan ne sıklıkta Intune PIN’i istenecek?**<br></br> BT yöneticisi, Intune yönetici konsolunda “(dakika) sonra erişim gereksinimlerini yeniden denetle” Intune uygulama koruma ilkesini tanımlayabilir. Bu ayar, cihazda erişim gereksinimlerini denetlenmeden önce geçmesi gereken süresi belirtir ve uygulama PIN ekranı yeniden gösterilir. Ancak kullanıcıdan PIN istenme sıklığını etkileyen önemli PIN ayrıntıları şöyledir: 
 
-    - **Kullanılabilirliği iyileştirmek için PIN, aynı yayımcının uygulamaları arasında paylaşılır:** iOS’ta bir uygulama PIN’i **aynı yayımcıya ait** tüm uygulamalar arasında paylaşılır. Android’de bir uygulama PIN’i tü uygulamalar arasında paylaşılır.
+    - **Kullanılabilirliği iyileştirmek için PIN, aynı yayımcının uygulamaları arasında paylaşılır:** iOS’ta bir uygulama PIN’i **aynı uygulama yayımcısına ait** tüm uygulamalar arasında paylaşılır. Android’de bir uygulama PIN’i tü uygulamalar arasında paylaşılır.
+    - **Cihaz yeniden başlatma işleminden sonra ‘(dakika) sonra erişim gereksinimlerini yeniden denetle’ davranışı:** Bir “PIN zamanlayıcısı”, Intune uygulama PIN’inin tekrar ne zaman gösterileceğini belirleyen, işlem yapılmadan geçen dakika sayısını izler. iOS’ta PIN zamanlayıcısı, cihaz yeniden başlatma işleminden etkilenmez. Bu nedenle cihazı yeniden başlatmak, Intune PIN ilkesine sahip bir iOS uygulamasında kullanıcının işlem yapmadan geçirdiği dakika sayısı üzerinde hiçbir etki yapmaz. Android’de ise PIN zamanlayıcısı, cihaz yeniden başlatıldığında sıfırlanır. Dolayısıyla Intune PIN ilkesine sahip Android uygulamaları, **cihaz yeniden başlatma işleminden sonra** büyük olasılıkla ‘(dakika) sonra erişim gereksinimlerini yeniden denetle’ ayarının değerini dikkate almaksızın bir uygulama PIN’i isteyecektir.  
     - **PIN ile ilişkili zamanlayıcının kayıt yapısı:** Bir uygulamaya (uygulama A) erişmek için bir PIN girildiğinde ve uygulama ön plandan (ana girdi odağı) ayrıldığında, bu PIN için PIN zamanlayıcısı sıfırlanır. Bu PIN’i paylaşan başka bir uygulama (uygulama B), zamanlayıcı sıfırlandığı için kullanıcıdan PIN girmesini istemeyecektir. “(dakika) sonra erişim gereksinimlerini yeniden denetle” değeri yeniden karşılandığında istem yeniden görüntülenecektir. 
 
       >[!NOTE] 
       > Kullanıcının erişim gereksinimlerini (örneğin PIN istemini) daha sık doğrulamak için “(dakika) sonra erişim gereksinimlerini yeniden denetle” ayarındaki değeri azaltmanız önerilir. 
+      
+- **Intune PIN’i, Outlook ve OneDrive için yerleşik uygulama PIN’leriyle birlikte nasıl çalışır?**<br></br>
+Intune PIN’i, işlem yapmadan geçen süreye (yani ‘(dakika) sonra erişim gereksinimlerini yeniden denetle’ değerine) dayalı olarak çalışır. Bu sebeple Intune PIN istemleri, genelde varsayılan olarak uygulama başlatmasına bağlı olan Outlook ve OneDrive için yerleşik uygulama PIN’lerinden bağımsız olarak çalışır. Kullanıcı iki PIN istemini de aynı anda alırsa beklenen davranış, Intune PIN’inin öncelik kazanmasıdır. 
 
-- **PIN güvenli midir?** PIN, uygulamadaki kuruluş verilerine yalnızca doğru kullanıcının erişmesine izin verir. Bu nedenle son kullanıcıların, Intune uygulama PIN’lerini ayarlamak veya sıfırlamak için iş veya okul hesaplarında oturum açmaları gerekir. Bu kimlik doğrulaması, Azure Active Directory tarafından güvenli belirteç değişimi ile işlenir ve Intune Uygulama SDK’sı tarafından görülmez. Güvenlik açısından, iş veya okul verilerini korumanın en iyi yolu verileri şifrelemektir. Şifreleme, uygulama PIN’i ile ilişkili değildir; ayrı bir uygulama koruma ilkesidir.
+- **PIN güvenli midir?**<br></br> PIN, uygulamadaki kuruluş verilerine yalnızca doğru kullanıcının erişmesine izin verir. Bu nedenle son kullanıcıların, Intune uygulama PIN’lerini ayarlamak veya sıfırlamak için iş veya okul hesaplarında oturum açmaları gerekir. Bu kimlik doğrulaması, Azure Active Directory tarafından güvenli belirteç değişimi ile işlenir ve Intune Uygulama SDK’sı tarafından görülmez. Güvenlik açısından, iş veya okul verilerini korumanın en iyi yolu verileri şifrelemektir. Şifreleme, uygulama PIN’i ile ilişkili değildir; ayrı bir uygulama koruma ilkesidir.
 
-- **Intune, PIN’i deneme yanılma saldırılarına karşı nasıl koruyor?** Uygulama PIN’i ilkesinin parçası olarak BT yöneticisi, bir kullanıcının uygulama kilitlenmeden önce PIN’ini doğrulamayı en fazla kaç kez deneyebileceğini belirleyebilir. Deneme sayısına ulaşıldıktan sonra, Intune Uygulama SDK’sı uygulamadaki “kurumsal” verileri temizleyebilir.
+- **Intune, PIN’i deneme yanılma saldırılarına karşı nasıl koruyor?**<br></br> Uygulama PIN’i ilkesinin parçası olarak BT yöneticisi, bir kullanıcının uygulama kilitlenmeden önce PIN’ini doğrulamayı en fazla kaç kez deneyebileceğini belirleyebilir. Deneme sayısına ulaşıldıktan sonra, Intune Uygulama SDK’sı uygulamadaki “kurumsal” verileri temizleyebilir.
   
-- **Ayın yayımcının uygulamalarında PIN'i neden iki kez ayarlamam gerekiyor?**
-  MAM (iOS üzerinde) şu anda Intune APP SDK’sının iOS ile tümleştirilmesi için uygulamaların (örneğin WXP, Outlook, Managed Browser, Yammer) katılımını gerektiren alfasayısal ve özel karakterli uygulama düzeyinde PIN’e (bunlara “geçiş kodu” adı verilir) izin verir. Bu olmadan geçiş kodu ayarları, hedeflenmiş uygulamalar için doğru şekilde zorlanır. Bu, iOS için Intune SDK'sı 7.1.12 sürümünde kullanıma sunulmuş olan bir özellikti. <br><br> Bu özelliği desteklemek ve iOS için Intune SDK'sının önceki sürümleriyle geriye dönük uyumluluğu güvence altına almak için, 7.1.12+ sürümlerinde tüm PIN'ler (sayısal veya geçiş kodu) SDK'nın önceki sürümlerindeki sayısal PIN'den ayrı işlenir. Bu nedenle, cihazda aynı yayımcının iOS için Intune SDK'sının 7.1.12 öncesi VE 7.1.12 sonrası sürümlerini içeren uygulamalar varsa, iki PIN ayarlamaları gerekir. <br><br> Bununla birlikte, iki PIN (her uygulama için) herhangi bir şekilde birbiriyle ilgili değildir; uygulamaya uygulanan uygulama koruma ilkesine uygun olmaları gerekir. Dolayısıyla, *ancak* A ve B uygulamalarına aynı ilkeler uygulandıysa (PIN'e göre), kullanıcı aynı PIN'i iki kez ayarlayabilir. <br><br> Bu davranış Intune Mobil Uygulama Yönetimi'nin etkinleştirildiği iOS uygulamalardaki PIN’e özgüdür. Zaman içinde, uygulamalar iOS için Intune SDK'sının daha yeni sürümlerini benimsedikçe aynı yayımcıdan gelen uygulamalarda iki kez PIN ayarlama gereği sorun olmaktan çıkar. Örnek görmek için lütfen aşağıdaki nota bakın.
+- **Ayın yayımcının uygulamalarında PIN'i neden iki kez ayarlamam gerekiyor?**<br></br> MAM (iOS üzerinde) şu anda Intune APP SDK’sının iOS ile tümleştirilmesi için uygulamaların (örneğin WXP, Outlook, Managed Browser, Yammer) katılımını gerektiren alfasayısal ve özel karakterli uygulama düzeyinde PIN’e (bunlara “geçiş kodu” adı verilir) izin verir. Bu olmadan geçiş kodu ayarları, hedeflenmiş uygulamalar için doğru şekilde zorlanır. Bu, iOS için Intune SDK'sı 7.1.12 sürümünde kullanıma sunulmuş olan bir özellikti. <br><br> Bu özelliği desteklemek ve iOS için Intune SDK'sının önceki sürümleriyle geriye dönük uyumluluğu güvence altına almak için, 7.1.12+ sürümlerinde tüm PIN'ler (sayısal veya geçiş kodu) SDK'nın önceki sürümlerindeki sayısal PIN'den ayrı işlenir. Bu nedenle, cihazda aynı yayımcının iOS için Intune SDK'sının 7.1.12 öncesi VE 7.1.12 sonrası sürümlerini içeren uygulamalar varsa, iki PIN ayarlamaları gerekir. <br><br> Bununla birlikte, iki PIN (her uygulama için) herhangi bir şekilde birbiriyle ilgili değildir; uygulamaya uygulanan uygulama koruma ilkesine uygun olmaları gerekir. Dolayısıyla, *ancak* A ve B uygulamalarına aynı ilkeler uygulandıysa (PIN'e göre), kullanıcı aynı PIN'i iki kez ayarlayabilir. <br><br> Bu davranış Intune Mobil Uygulama Yönetimi'nin etkinleştirildiği iOS uygulamalardaki PIN’e özgüdür. Zaman içinde, uygulamalar iOS için Intune SDK'sının daha yeni sürümlerini benimsedikçe aynı yayımcıdan gelen uygulamalarda iki kez PIN ayarlama gereği sorun olmaktan çıkar. Örnek görmek için lütfen aşağıdaki nota bakın.
 
   >[!NOTE]
   > Örneğin, aynı yayımcının A uygulaması 7.1.12 öncesi bir sürümle oluşturulduysa ve B uygulaması 7.1.12 ile veya sonraki bir sürümle oluşturulduysa, iOS cihazında her iki uygulamanın da yüklü olması durumunda son kullanıcının A ve B için ayrı PIN'ler ayarlaması gerekir. <br><br> Cihazda SDK sürümü 7.1.9 olan bir C uygulaması yüklüyse, A uygulamasıyla aynı PIN'i paylaşır. <br><br> Sürümü 7.1.14 olan D uygulaması, B uygulamasıyla aynı PIN'i paylaşır. <br><br> Cihazda yalnızca A ve C uygulamaları yüklüyse, tek bir PIN'in ayarlanması yeterli olur. Cihazda yalnızca B ve D uygulamaları yüklü olduğunda da aynı durum geçerlidir.
 
-**Şifreleme nasıl çalışır?** BT yöneticileri uygulama verilerinin şifrelenmesini gerektiren bir uygulama koruma ilkesi dağıtabilir. İlkenin bir parçası olarak BT yöneticisi, içeriğin ne zaman şifreleneceğini de belirtebilir.
+**Şifreleme nasıl çalışır?**<br></br>
+BT yöneticileri uygulama verilerinin şifrelenmesini gerektiren bir uygulama koruma ilkesi dağıtabilir. İlkenin bir parçası olarak BT yöneticisi, içeriğin ne zaman şifreleneceğini de belirtebilir.
 
-- **Intune verileri nasıl şifreliyor?** Şifreleme uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi için [Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) ve [iOS uygulama koruma ilkesi ayarlarına](app-protection-policy-settings-ios.md) bakın.
+- **Intune verileri nasıl şifreliyor?**<br></br> Şifreleme uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi için [Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) ve [iOS uygulama koruma ilkesi ayarlarına](app-protection-policy-settings-ios.md) bakın.
 
-- **Neler şifrelenir?** BT yöneticisinin uygulama koruma ilkesine uygun şekilde, yalnızca “kurumsal” olarak işaretlenen veriler şifrelenir. Veriler bir iş konumundan geliyorsa “kurumsal” olarak kabul edilir. Office uygulamaları söz konusu olduğunda Intune, aşağıdakileri iş konumu olarak kabul eder: e-posta (Exchange) veya bulut depolama (OneDrive İş hesabı içeren OneDrive uygulaması). Intune Uygulaması Sarmalama Aracı ile yönetilen iş kolu uygulamaları söz konusu olduğunda, tüm veriler “kurumsal” olarak kabul edilir.
+- **Neler şifrelenir?**<br></br> BT yöneticisinin uygulama koruma ilkesine uygun şekilde, yalnızca “kurumsal” olarak işaretlenen veriler şifrelenir. Veriler bir iş konumundan geliyorsa “kurumsal” olarak kabul edilir. Office uygulamaları söz konusu olduğunda Intune, aşağıdakileri iş konumu olarak kabul eder: e-posta (Exchange) veya bulut depolama (OneDrive İş hesabı içeren OneDrive uygulaması). Intune Uygulaması Sarmalama Aracı ile yönetilen iş kolu uygulamaları söz konusu olduğunda, tüm veriler “kurumsal” olarak kabul edilir.
 
-**Intune verileri uzaktan nasıl temizler?** Intune üç farklı şekilde uygulama verilerini temizleyebilir: tam cihaz temizleme, MDM için seçmeli temizleme ve MAM için seçmeli temizleme. MDM için uzaktan silme hakkında daha fazla bilgi için bkz. [Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma](devices-wipe.md#factory-reset). MAM kullanarak seçmeli silme hakkında daha fazla bilgi için bkz. [Şirket verilerini kaldırma](devices-wipe.md#remove-company-data) ve [Uygulamalardan yalnızca şirket verilerini temizleme](apps-selective-wipe.md).
+**Intune verileri uzaktan nasıl temizler?**<br></br>
+Intune üç farklı şekilde uygulama verilerini temizleyebilir: tam cihaz temizleme, MDM için seçmeli temizleme ve MAM için seçmeli temizleme. MDM için uzaktan silme hakkında daha fazla bilgi için bkz. [Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma](devices-wipe.md#factory-reset). MAM kullanarak seçmeli silme hakkında daha fazla bilgi için bkz. [Şirket verilerini kaldırma](devices-wipe.md#remove-company-data) ve [Uygulamalardan yalnızca şirket verilerini temizleme](apps-selective-wipe.md).
 
-- **Fabrika sıfırlaması nedir?** [Fabrika sıfırlaması](devices-wipe.md), cihazı varsayılan fabrika ayarlarına döndürerek tüm kullanıcı verilerini ve ayarlarını **cihazdan** kaldırır. Cihaz Intune’dan kaldırılır.
+- **Fabrika sıfırlaması nedir?**<br></br> [Fabrika sıfırlaması](devices-wipe.md), cihazı varsayılan fabrika ayarlarına döndürerek tüm kullanıcı verilerini ve ayarlarını **cihazdan** kaldırır. Cihaz Intune’dan kaldırılır.
   >[!NOTE]
   > Fabrika sıfırlaması yalnızca Intune mobil cihaz yönetiminde (MDM) kayıtlı cihazlarda gerçekleştirilebilir.
 
-- **MDM için seçmeli temizleme nedir?** Şirket verilerini kaldırmak hakkında bilgi edinmek için [Cihaz kaldırma - Şirket verilerini kaldırma](devices-wipe.md#remove-company-data) bölümüne bakın.
+- **MDM için seçmeli temizleme nedir?**<br></br> Şirket verilerini kaldırmak hakkında bilgi edinmek için [Cihaz kaldırma - Şirket verilerini kaldırma](devices-wipe.md#remove-company-data) bölümüne bakın.
 
-- **MAM için seçmeli temizleme nedir?** MAM için seçmeli temizleme, şirket uygulama verilerini uygulamadan kaldırır. Intune Azure portalı kullanarak istek başlatılır. Bir silme isteği başlatma hakkında bilgi edinmek için bkz. [Uygulamalardan yalnızca şirket verilerini temizleme](apps-selective-wipe.md).
+- **MAM için seçmeli temizleme nedir?**<br></br> MAM için seçmeli temizleme, şirket uygulama verilerini uygulamadan kaldırır. Intune Azure portalı kullanarak istek başlatılır. Bir silme isteği başlatma hakkında bilgi edinmek için bkz. [Uygulamalardan yalnızca şirket verilerini temizleme](apps-selective-wipe.md).
 
-- **MAM için seçmeli temizleme ne kadar sürede gerçekleşir?** Seçmeli temizleme başlatıldığında kullanıcı uygulamayı kullanıyorsa, Intune Uygulama SDK’sı her 30 dakikada bir Intune MAM hizmetinden bir seçmeli temizleme isteği gelip gelmediğini denetler. Ayrıca kullanıcı uygulamayı ilk kez başlattığında ve iş veya okul hesabı ile oturum açtığında da seçmeli temizleme isteği olup olmadığı denetlenir.
+- **MAM için seçmeli temizleme ne kadar sürede gerçekleşir?**<br></br> Seçmeli temizleme başlatıldığında kullanıcı uygulamayı kullanıyorsa, Intune Uygulama SDK’sı her 30 dakikada bir Intune MAM hizmetinden bir seçmeli temizleme isteği gelip gelmediğini denetler. Ayrıca kullanıcı uygulamayı ilk kez başlattığında ve iş veya okul hesabı ile oturum açtığında da seçmeli temizleme isteği olup olmadığı denetlenir.
 
-**Şirket İçi hizmetler neden Intune korumalı uygulamalar ile çalışmıyor?** Intune uygulama koruması, kullanıcı kimliğinin uygulama ve Intune Uygulama SDK’sı arasında tutarlı olmasına bağlıdır. Bunu garanti etmenin tek yolu modern kimlik doğrulaması yapmaktır. Uygulamaların bir şirket içi yapılandırma ile çalışabileceği senaryolar vardır, ancak bunlar tutarlı değildir ve garanti edilmez.
+**Şirket İçi hizmetler neden Intune korumalı uygulamalar ile çalışmıyor?**<br></br>
+Intune uygulama koruması, kullanıcı kimliğinin uygulama ve Intune Uygulama SDK’sı arasında tutarlı olmasına bağlıdır. Bunu garanti etmenin tek yolu modern kimlik doğrulaması yapmaktır. Uygulamaların bir şirket içi yapılandırma ile çalışabileceği senaryolar vardır, ancak bunlar tutarlı değildir ve garanti edilmez.
 
-**Web bağlantılarını yönetilen uygulamalardan açmanın güvenli bir yolu var mı?** Evet! BT yöneticisi, Microsoft Intune tarafından geliştirilen ve Intune ile kolayca yönetilebilen bir web tarayıcısı olan [Intune Managed Browser uygulamasını](app-configuration-managed-browser.md) dağıtabilir ve bunun için uygulama koruma ilkesi ayarlayabilir. BT yöneticisi, Intune ile yönetilen tüm uygulamalardaki web bağlantılarının Managed Browser uygulaması kullanılarak açılmasını gerekli kılabilir.
+**Web bağlantılarını yönetilen uygulamalardan açmanın güvenli bir yolu var mı?**<br></br>
+Evet! BT yöneticisi, Microsoft Intune tarafından geliştirilen ve Intune ile kolayca yönetilebilen bir web tarayıcısı olan [Intune Managed Browser uygulamasını](app-configuration-managed-browser.md) dağıtabilir ve bunun için uygulama koruma ilkesi ayarlayabilir. BT yöneticisi, Intune ile yönetilen tüm uygulamalardaki web bağlantılarının Managed Browser uygulaması kullanılarak açılmasını gerekli kılabilir.
+
+**Intune APP SDK’sı, Microsoft Authentication Library’yi (MSAL) veya diğer sosyal hesapları destekliyor mu?**
+Intune APP SDK’sı, SDK’nın hem 1. hem de 3. taraf sürümleri için bazı gelişmiş ADAL işlevleri kullanır. Dolayısıyla MSAL, Intune Uygulama Koruması hizmetinde kimlik doğrulaması ve koşullu başlatma gibi çoğu temel senaryomuzla birlikte düzgün çalışmaz. Henüz bunu desteklemeye yönelik bir planımız yok.
 
 ## <a name="app-experience-on-android"></a>Android’de uygulama deneyimi
 
-**Intune uygulama korumasının Android cihazlarda çalışması için neden Şirket Portalı uygulaması gerekiyor?** Uygulama koruma işlevlerinin çoğu Şirket Portalı uygulamasında yerleşik olarak bulunur. Şirket Portalı uygulaması her zaman gerekli olsa bile cihaz kaydı _gerekli değildir_. MAM-WE için son kullanıcının cihazında Şirket Portalı uygulamasının yüklü olması yeterlidir.
+**Intune uygulama korumasının Android cihazlarda çalışması için neden Şirket Portalı uygulaması gerekiyor?**<br></br>
+Uygulama koruma işlevlerinin çoğu Şirket Portalı uygulamasında yerleşik olarak bulunur. Şirket Portalı uygulaması her zaman gerekli olsa bile cihaz kaydı _gerekli değildir_. MAM-WE için son kullanıcının cihazında Şirket Portalı uygulamasının yüklü olması yeterlidir.
 
-**Aynı uygulama ve kullanıcı kümesine yapılandırılan birden çok Intune uygulama koruma erişimi ayarları Android'de nasıl çalışır?** Son kullanıcı cihazları kendi şirket hesaplarından hedeflenen uygulamaya erişmeyi denediklerinde, erişim için Intune uygulama koruma ilkeleri bu cihazlara belirli bir sırada uygulanır. Genel olarak, engelleme öncelikli olur ve ardından kapatılabilen uyarı gelir. Örneğin, belirli bir kullanıcı/uygulama için uygunsa, kullanıcıyı bir yama yükseltmesi alması için uyaran en düşük Android yama sürümü ayarı, kullanıcının erişimini engelleyen en düşük Android yama sürümü ayarından sonra uygulanacaktır. Dolayısıyla, BT yöneticisinin en düşük Android yama sürümü olarak 2018-03-01 ve en düşük Android yama sürümü (yalnızca Uyarı) olarak 2018-02-01'i ayarladığı bir senaryoda, uygulamaya erişmeye çalışan cihazın yama sürümü 2018-01-01 olduğunda, son kullanıcı erişimin engellenmesine yol açan en düşük Android yama sürümüne yönelik daha kısıtlayıcı ayar temel alınarak engellenebilir. 
+**Aynı uygulama ve kullanıcı kümesine yapılandırılan birden çok Intune uygulama koruma erişimi ayarları Android'de nasıl çalışır?**<br></br>
+Son kullanıcı cihazları kendi şirket hesaplarından hedeflenen uygulamaya erişmeyi denediklerinde, erişim için Intune uygulama koruma ilkeleri bu cihazlara belirli bir sırada uygulanır. Genel olarak, engelleme öncelikli olur ve ardından kapatılabilen uyarı gelir. Örneğin, belirli bir kullanıcı/uygulama için uygunsa, kullanıcıyı bir yama yükseltmesi alması için uyaran en düşük Android yama sürümü ayarı, kullanıcının erişimini engelleyen en düşük Android yama sürümü ayarından sonra uygulanacaktır. Dolayısıyla, BT yöneticisinin en düşük Android yama sürümü olarak 2018-03-01 ve en düşük Android yama sürümü (yalnızca Uyarı) olarak 2018-02-01'i ayarladığı bir senaryoda, uygulamaya erişmeye çalışan cihazın yama sürümü 2018-01-01 olduğunda, son kullanıcı erişimin engellenmesine yol açan en düşük Android yama sürümüne yönelik daha kısıtlayıcı ayar temel alınarak engellenebilir. 
 
 Farklı ayar türleriyle ilgilenirken, uygulama sürümü gereksinimi önceliklidir ve bunu Android işletim sistemi sürümü gereksinimi ile Android yama sürümü gereksinimi izler. Ardından, tüm ayarlar türlerine yönelik uyarılar aynı sırada denetlenir.
 
 ## <a name="app-experience-on-ios"></a>iOS’da uygulama deneyimi
 
-**Veri aktarımı ilkesi “yalnızca yönetilen uygulamalar” veya “uygulama yok” olarak ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS paylaşım uzantısını kullanabiliyorum. Bu veri sızıntısına neden olmaz mı?** Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_. Bunu, “kurumsal” dosyayı yönetilen uygulama dışında açmaya çalışarak doğrulayabilirsiniz. Bu dosya şifrelenmiş olmalı ve yönetilen bir uygulama dışında açılamamalıdır.
+**Veri aktarımı ilkesi “yalnızca yönetilen uygulamalar” veya “uygulama yok” olarak ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS paylaşım uzantısını kullanabiliyorum. Bu veri sızıntısına neden olmaz mı?**<br></br>
+Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_. Bunu, “kurumsal” dosyayı yönetilen uygulama dışında açmaya çalışarak doğrulayabilirsiniz. Bu dosya şifrelenmiş olmalı ve yönetilen bir uygulama dışında açılamamalıdır.
 
-**Aynı uygulama ve kullanıcı kümesine yapılandırılan birden çok Intune uygulama koruma erişimi ayarları iOS'da nasıl çalışır?** Son kullanıcı cihazları kendi şirket hesaplarından hedeflenen uygulamaya erişmeyi denediklerinde, erişim için Intune uygulama koruma ilkeleri bu cihazlara belirli bir sırada uygulanır. Genel olarak, temizleme öncelikli olur, ardından engelleme ve sonra da kapatılabilen uyarı gelir. Örneğin, belirli bir kullanıcı/uygulama için uygunsa, kullanıcıyı iOS sürümünü güncelleştirmesi için uyaran en düşük iOS işletim sistemi ayarı, kullanıcının erişimini engelleyen en düşük iOS işletim sistemi ayarından sonra uygulanacaktır. Dolayısıyla, BT yöneticisinin en düşük iOS işletim sistemi olarak 11.0.0.0 ve en düşük iOS işletim sistemi (yalnızca Uyarı) olarak 11.1.0.0'ı ayarladığı bir senaryoda, uygulamaya erişmeye çalışan cihazın işletim sistemi iOS 10 olduğunda, son kullanıcı erişimin engellenmesine yol açan en düşük iOS işletim sistemi sürümüne yönelik daha kısıtlayıcı ayar temel alınarak engellenebilir.
+**Aynı uygulama ve kullanıcı kümesine yapılandırılan birden çok Intune uygulama koruma erişimi ayarları iOS'da nasıl çalışır?**<br></br>
+Son kullanıcı cihazları kendi şirket hesaplarından hedeflenen uygulamaya erişmeyi denediklerinde, erişim için Intune uygulama koruma ilkeleri bu cihazlara belirli bir sırada uygulanır. Genel olarak, temizleme öncelikli olur, ardından engelleme ve sonra da kapatılabilen uyarı gelir. Örneğin, belirli bir kullanıcı/uygulama için uygunsa, kullanıcıyı iOS sürümünü güncelleştirmesi için uyaran en düşük iOS işletim sistemi ayarı, kullanıcının erişimini engelleyen en düşük iOS işletim sistemi ayarından sonra uygulanacaktır. Dolayısıyla, BT yöneticisinin en düşük iOS işletim sistemi olarak 11.0.0.0 ve en düşük iOS işletim sistemi (yalnızca Uyarı) olarak 11.1.0.0'ı ayarladığı bir senaryoda, uygulamaya erişmeye çalışan cihazın işletim sistemi iOS 10 olduğunda, son kullanıcı erişimin engellenmesine yol açan en düşük iOS işletim sistemi sürümüne yönelik daha kısıtlayıcı ayar temel alınarak engellenebilir.
 
 Farklı ayar türleriyle ilgilenirken, Intune Uygulama SDK'sı sürümü gereksinimi önceliklidir ve bunu uygulama sürümü gereksinimi ile iOS işletim sistemi sürümü gereksinimi izler. Ardından, tüm ayarlar türlerine yönelik uyarılar aynı sırada denetlenir. Intune Uygulama SDK'sı sürümü gereksiniminin, yalnızca temel engelleme senaryoları için Intune ürün ekibinin yönlendirmesiyle yapılandırılmasını öneririz.
 

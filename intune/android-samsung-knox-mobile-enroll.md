@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88cb733c688019b2fc5455a0184e968d91e77806
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
+ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915820"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964717"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
 
@@ -120,6 +120,8 @@ Bu bilgiler yardımcı olmadı mı? [Knox Mobil Kayıt Kullanıcı Kılavuzu](ht
 - **Google Cihaz Sahibi modu:** KME kullanarak Google Cihaz Sahibi moduna kaydolmak, bu Önizleme’de desteklenmez. Bu senaryo şu anda incelenmektedir.
 
 - **“Parola” alanı yoksayılır:** Knox Portalı’ndaki **Cihaz ayrıntıları**’nda **parola** alanı doldurulursa Intune Şirket Portalı uygulaması bunu yoksayar. Cihaz kaydını tamamlamak için kullanıcının cihazda bir parola girmesi gerekir.
+
+- **"Android Enterprise Kaydı** KME, Android Enterprise Kaydını desteklemez.
 
 ## <a name="getting-support"></a>Destek alma
 [Samsung KME için destek alma](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm) hakkında daha fazla bilgi edinin.

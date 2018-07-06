@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745001"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263413"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -56,8 +56,8 @@ Aşağıdaki tablo, belirli uygulama türlerini ve bunları Intune’daki **Uygu
 | macOS için Office 365 uygulamaları | Mağaza uygulaması (Office 365) | **Uygulama türü** olarak **Office 365 Paketi** altında **macOS**’u, ardından da Office 365 uygulama paketini seçin. |
 | Android iş kolu (LOB) uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.apk** uzantısına sahip bir Android yükleme dosyası girin.  |
 | iOS LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.ipa** uzantısına sahip bir iOS yükleme dosyası girin.  |
-| Windows Phone LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.xap** uzantısına sahip bir iOS yükleme dosyası girin.  |
-| Windows LOB uygulaması | LOB uygulaması | Uygulama türü olarak **İş kolu uygulamasını** seçin, **Uygulama paketi dosyasını** seçin ve **.msi**, **.appx** veya **.appxbundle** uzantısına sahip bir iOS yükleme dosyası girin. |
+| Windows Phone LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulamasını** seçin, **Uygulama paketi dosyasını** seçin ve **.xap** uzantısına sahip bir Windows Phone yükleme dosyası girin.  |
+| Windows LOB uygulaması | LOB uygulaması | Uygulama türü olarak **İş kolu** uygulamasını seçin, **Uygulama paketi dosyasını** seçin ve **.msi**, **.appx** veya **.appxbundle** uzantısına sahip bir Windows Phone yükleme dosyası girin. |
 | Yerleşik iOS uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
 | Yerleşik Android uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
 | Web uygulamaları  | Web uygulaması  | **Uygulama türü** olarak **Web bağlantısı**’nı seçin ve ardından web uygulamasına bağlantı sağlayan geçerli bir URL girin.  |
