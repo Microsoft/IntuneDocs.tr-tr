@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803848"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune’da Windows 10 (ve üzeri) cihaz kısıtlama için ayarlar
 Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
@@ -249,7 +250,9 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 
   GDI DPI Ölçeklendirme, DPI kullanmayan uygulamaların monitör başına DPI kullanır duruma gelmesini sağlar. GDI DPI Ölçeklendirme'nin açıldığı eski uygulamaları belirtin. GDI DPI Ölçeklendirme bir uygulamada hem açılacak hem de kapatılacak şekilde yapılandırıldığında, uygulama için ölçeklendirme kapatılır.
 
-## <a name="kiosk-preview"></a>Bilgi noktası (Önizleme)
+## <a name="kiosk-preview---obsolete"></a>Bilgi noktası (Önizleme) - Eski
+
+Bu ayarlar taşınıyor ve gelecek bir sürümde kaldırılacak. Yeni ayarları kullanmak için bkz. [Windows 10 ve üzeri sürümlerde bilgi noktası ayarları](kiosk-settings.md).
 
 Bir bilgi noktası cihazı genellikle tek bir uygulama veya belirli bir uygulamalar kümesi çalıştırır. Kullanıcıların cihazda bilgi noktası uygulamaları dışında başka özellik veya işlevlere erişimi engellenmiştir.
 
@@ -262,9 +265,12 @@ Bir bilgi noktası cihazı genellikle tek bir uygulama veya belirli bir uygulama
 #### <a name="single-app-kiosks"></a>Tek uygulama bilgi noktaları
 Aşağıdaki ayarları girin:
 
-- **Kullanıcı hesabı**: Yerel (cihaz için) kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgilerini girin. Azure AD etki alanlarına katılmış hesapları `domain\username@tenant.org` biçiminde girin. 
+- **Kullanıcı hesabı** - Yerel (cihaz için) kullanıcı hesabını, bir AD etki alanı hesabını veya bilgi noktası uygulamasıyla ilişkili bir Azure AD hesabının oturum açma bilgilerini girin.
+  - Yerel hesap: `devicename\accountname`, `.\accountname` veya `accountname` olarak girin
+  - Etki alanı hesabı: `domain\accountname` olarak girin
+  - Azure AD hesabı: `AzureAD\emailaddress` olarak girin. Sabit bir etki alanıymış gibi “AzureAD” girdiğinizden emin olun. Daha sonra Azure AD e-posta adresiyle devam edin. Örneğin, şunu girin: `AzureAD\user@contoso.onmicrosoft.com`.
 
-    Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bir Azure Active Directory (AD) hesabını bilgi noktası moduna yapılandırmak için `AzureAD\user@contoso.com` biçimini kullanın.
+    Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bilgi noktası modu için bir Azure AD hesabı kullanıyorsanız `AzureAD\user@yourorganization.com` girdiğinizden emin olun.
 
 - **Uygulamanın uygulama kullanıcı modeli kimliği (AUMID)**: Bilgi noktası uygulamasının AUMID’sini girin. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 

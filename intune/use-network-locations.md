@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745171"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843132"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune'da Konumları (ağ yalıtımı) kullanma
 
@@ -35,7 +35,7 @@ Aşağıdaki senaryoyu ele alalım:
 2. Bu cihazların şirket ağınıza bağlı olmasını gerektiren bir uyumluluk ilkesi oluşturun ve bu ilkeyi atayın.
 3. Cihaz üretim tesisinin dışına çıkarsa uyumsuz kabul edilir ve şirket kaynaklarına erişimi olmaz.
 
-Intune ilkelerini kullanarak bir uyumsuz cihaz bildirimi gönderebilir ve cihazı da kilitleyebilirsiniz. Cihaz yeniden şirket içine ve ağ konumuna geldiğinde, cihazın kilidi açılabilir ve şirket kaynaklarına yeniden erişim kazanabilir.
+Ayrıca [uyumsuzluk için eylemler](#configure-the-actions-for-noncompliance) de ekleyebilirsiniz. Cihaz, yeniden şirket içine ve ağ konumuna geldiğinde şirket kaynaklarına yeniden erişim kazanır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 

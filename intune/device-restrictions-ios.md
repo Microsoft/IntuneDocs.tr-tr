@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803831"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS cihaz kısıtlama ayarları
 
@@ -97,7 +98,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
     -   **Gerekli parola türü** - Gerekli parola türünü belirtin (yalnızca sayısal veya alfasayısal gibi).
     -   **Paroladaki alfasayısal olmayan karakter sayısı** - Parolada bulunması gereken simge karakterlerinin sayısını belirtin (**#** veya **@** gibi).
     -   **En az parola uzunluğu** - Parolada bulunacak karakter sayısı için alt sınır belirtin.
-    -   **Cihaz silinmeden önceki oturum açma hatası sayısı** - Bu ayar cihazı temizlemeden önce gerçekleşebilecek başarısız oturum açma girişimlerinin sayısını belirtin.
+    -   **Cihaz silinmeden önceki başarısız oturum açma sayısı** - Bu ayar, cihazı silmeden önce gerçekleşebilecek benzersiz yanlış parola girişimlerinin sayısını belirtin.
     -   **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**<sup>1</sup> - Kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalabileceğini belirtin.
     -   **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**<sup>1</sup> - Cihazın ekranı kapatılmadan önce beklenecek dakika sayısını belirtin.
     -   **Parola kullanım süresi sonu (gün)** - Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtin.

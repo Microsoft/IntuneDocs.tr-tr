@@ -15,11 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474455"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -206,13 +207,17 @@ Bkz. [iOS cihazınızı Aygıt Kayıt Programı ile Intune’a kaydetme](/intune
 ## <a name="renew-a-dep-token"></a>DEP belirtecini yenileme  
 1. deploy.apple.com adresine gidin.  
 2. **Sunucuları Yönet** altında yenilemek istediğiniz belirteç dosyasıyla ilişkili MDM sunucunuzu seçin.
-3. **Yeni Belirteç Oluştur**’u seçin.  
+3. **Yeni Belirteç Oluştur**’u seçin.
+
+    ![Yeni belirteç oluşturma ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
+
 4. **Sunucu Belirteciniz**’i seçin.  
-5. [Azure portalında Intune](https://aka.ms/intuneportal)’da **Cihaz kaydı** > **Apple Kaydı** > **Kayıt programı belirteçleri**’ni seçin.  
-6. Belirteci seçin ve ardından **Belirteci yenile** seçeneğini belirleyin.  
-7. Orijinal belirtecinizi oluşturmak için kullanılan Apple kimliğini girin.  
+5. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple Kaydı** > **Kayıt programı belirteçleri**’ne gidin ve belirteci seçin.
+    ![Kayıt programı belirteçlerinin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+
+6. **Belirteç yenile**’yi seçin ve orijinal belirteci oluşturmak için kullanılan Apple kimliğini girin.  
+    ![Yeni belirteç oluşturma ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+
 8. Yeni indirilen belirteci karşıya yükleyin.  
 9. **Belirteci yenile**’yi seçin. Belirtecin yenilendiğine dair onayı görürsünüz.   
-
-
-
+    ![Onay ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/confirmation.png)

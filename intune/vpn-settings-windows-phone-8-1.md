@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3572022b491439d2cf624b2ed3f1d53ffaf54d7d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291453"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1 çalıştıran cihazlar için Microsoft Intune'da VPN ayarlarını yapılandırın
 
@@ -56,7 +57,7 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 - **Rol** (yalnızca Pulse Secure) - Bu bağlantıya erişimi olan kullanıcı rolünün adını belirtin. Bir kullanıcı rolü, kişisel ayarları ve seçenekleri tanımlar, belirli erişim özelliklerini etkinleştirir veya devre dışı bırakır.
 - **Bölge** (yalnızca Pulse Secure) - Kullanmak istediğiniz kimlik doğrulaması bölgesinin adını belirtin. Bir kimlik doğrulaması bölgesi, Pulse Secure bağlantı türü tarafından kullanılan kimlik doğrulaması kaynakları gruplandırmasıdır.
 
-- **DNS soneki arama listesi** - Bir veya birden çok DNS soneki **ekleyin**. Bir web sitesine kısa ad kullanarak bağlanılırken, belirttiğiniz her DNS soneki aranır. Örneğin **etkialanı1.contoso.com** ve **etkialanı2.contoso.com** DNS son eklerini belirtin ve **http://mywebsite** URL’sini ziyaret edin, **http://mywebsite.domain1.contoso.com** ve **http://mywebsite.domain2.contoso.com URL’leri aranır**.
+- **DNS soneki arama listesi** - Bir veya birden çok DNS soneki **ekleyin**. Bir web sitesine kısa ad kullanarak bağlanılırken, belirttiğiniz her DNS soneki aranır. Örneğin **etkialanı1.contoso.com** ve **etkialanı2.contoso.com** DNS son eklerini belirtin ve `http://mywebsite` URL’yi ziyaret edin, böylece `http://mywebsite.domain1.contoso.com` ve `http://mywebsite.domain2.contoso.com` URL’leri aranır.
 
 - **Özel XML** - VPN bağlantısını yapılandıran özel XML komutlarını belirtin.
 

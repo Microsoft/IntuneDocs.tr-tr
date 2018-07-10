@@ -3,10 +3,10 @@ title: Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekle
 titlesuffix: Microsoft Intune
 description: Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34470874"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -35,15 +36,12 @@ Android for Work uygulamalarına ayarları sağlamak için Microsoft Intune’da
 3. **Mobil uygulamalar** iş yükünü seçin.
 4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
 5. Aşağıdaki bilgileri ayarlayın:
-    - **Ad**  
-      Azure portalında görünecek profil adı.
-    - **Açıklama**  
-      Azure portalında görünecek profil açıklaması.
-    - **Cihaz kaydı türü**  
-      **Yönetilen cihazlar**’ı seçin.
+    - **Ad** - Azure portalında görünecek profil adı.
+    - **Açıklama** - Azure portalında görünecek profil açıklaması.
+    - **Cihaz kayıt türü** - **Yönetilen uygulamalar**’ı seçin.
 6. **Platform** için **Android for Work**’u seçin.
 7. Bir uygulama yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın.
-8. **Yapılandırma ayarlarını** seçin. Yapılandırmaları ayarlamak için şunları kullanabilirsiniz:
+8. **İzinler**’i seçin. Yapılandırmaları ayarlamak için şunları kullanabilirsiniz:
     - [Yapılandırma tasarımcısı](#Use-the-configuration-designer)
     - [JSON düzenleyicisi](#Enter-the-JSON-editor)
 9. **Tamam**’ı ve daha sonra **Ekle**’yi seçin.

@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 7e722195ce1b1b34a65cd8e936ad8a702f145691
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: ad949cc9d20e0e46ab986b4646059af733018255
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308883"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232815"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Cihazımı kaydettiğimde şirketim hangi bilgileri görebilir?
 
-Bir cihazı yönetilmek üzere kaydettiğinizde, cihazdaki şirket verilerini korumaya yardımcı olmak için şirketinize, cihazınızdaki belirli bilgileri görüntüleme izni vermiş olursunuz.
+Bir cihazı Microsoft Intune’a kaydettiğinizde şirketiniz kişisel bilgilerinizi göremez. Bir cihaz kaydettiğinizde şirketinize cihazınızdaki cihaz modeli ve seri numarası gibi bazı bilgileri görüntüleme izni vermiş olursunuz. Şirketiniz, cihazdaki şirket bilgilerini korumaya yardımcı olması için bu bilgileri kullanır.
 
-**Şirketinizin asla göremeyeceği şeyler**
+**Şirketinizin asla göremeyeceği şeyler:**
 
 - Arama ve web tarama geçmişi
 - E-posta ve kısa mesajlar
@@ -36,7 +36,7 @@ Bir cihazı yönetilmek üzere kaydettiğinizde, cihazdaki şirket verilerini ko
 -   Parolalar
 - Fotoğraflar uygulamasında veya film rulosunda yer alanları da içeren resimler
 
-**Şirketinizin her zaman görebileceği şeyler**
+**Şirketinizin her zaman görebileceği şeyler:**
 
 - Google Pixel gibi cihaz modeli
 - Üretici, Microsoft gibi
@@ -46,7 +46,7 @@ Bir cihazı yönetilmek üzere kaydettiğinizde, cihazdaki şirket verilerini ko
 - Cihaz adı
 - Seri numarası
 
-**Şirketinizin görme olasılığı olan şeyler**
+**Şirketinizin görme olasılığı olan şeyler:**
 
 -  Telefon numarası: **Şirkete** ait cihazlarda tam telefon numaranız görülebilir. **Kişisel** cihazlarda ise numaranızın yalnızca son dört hanesi şirketiniz tarafından görülebilir. Tüm cihazlarda **Cihaz Ayrıntıları** sayfasını açarak cihazın **Sahiplik Türü**’nü görebilirsiniz.
 -  Konum: Şirketiniz asla cihazınızın konumunu göremez ancak denetimli bir iOS cihazını kaybetmeniz durumunda cihaz konumu görülebilir. [Nasıl bilgi edinirim?](https://go.microsoft.com/fwlink/?linkid=853816)

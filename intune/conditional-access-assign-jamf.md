@@ -1,25 +1,26 @@
 ---
-title: "Jamf cihazları için cihaz uyumluluk ilkesi"
+title: Jamf cihazları için cihaz uyumluluk ilkesi
 titlesuffix: Microsoft Intune
-description: "Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın."
-keywords: 
+description: Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482344"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
 
@@ -35,13 +36,16 @@ Azure Active Directory'yi ve Microsoft Intune koşullu erişim ilkelerini son ku
 1. Microsoft Azure'ı açın, ardından **Intune** > **Cihaz Uyumluluğu** > **İlkeleri**’ne gidin. Uyumsuz kullanıcılara ve gruplara bir dizi eylem (ör., uyarı e-postası gönderme) de dahil olmak üzere, macOS için ilkeler oluşturabilirsiniz.
 2. İstediğiniz grupları arayın, ardından ilkeleri onlara uygulayın.
 
+> [!Note]
+> Intune, uyumlu olmak için tam disk şifrelemesi gerektirir.
+
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Jamf Pro'da macOS için Şirket Portalı uygulamasını dağıtma
 
 Aşağıdaki yordamı izlemeli ve Jamf Pro'da macOS için Şirket Portalı uygulamasını arka plan yüklemesi olarak dağıtmalısınız:
 
 1. macOS cihazda, [macOS için Şirket Portalı uygulamasının](https://go.microsoft.com/fwlink/?linkid=862280) güncel sürümünü indirin. Uygulamayı yüklemeyin; uygulamanın Jamf Pro'ya yüklenecek bir kopyasına ihtiyacınız vardır.
 2. Jamf Pro açın ve **Bilgisayar Yönetimi** > **Paketleri**’ne gidin.
-3. MacOS için Şirket Portalı uygulamasıyla yeni bir paket oluşturun, ardından  **Kaydet** 'e tıklayın.
+3. MacOS için Şirket Portalı uygulamasıyla yeni bir paket oluşturun, ardından **Kaydet**'e tıklayın.
 4. **Bilgisayarlar** > **İlkeler** ve ardından **Yeni**’yi seçin.
 5. **Genel** yükünü kullanarak ilkenin ayarlarını yapılandırın. Bu ayarlar şöyle olmalıdır:
    - Tetikleyici: **Kayıt Tamamlandı** ve **Yinelenen İade Etme**'yi seçin
