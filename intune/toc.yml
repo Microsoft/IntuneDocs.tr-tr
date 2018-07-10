@@ -180,7 +180,13 @@
           items:
             - name: Android kaydını ayarlama
               href: android-enroll.md
-            - name: Android for Work cihazlarını yönetme
+            - name: Intune’u Android kurumsala bağlama
+              href: connect-intune-android-enterprise.md
+            - name: Android iş profili kaydını ayarlama
+              href: android-work-profile-enroll.md
+            - name: Android bilgi noktası kaydını ayarlama
+              href: android-kiosk-enroll.md
+            - name: Android iş profili cihazlarını yönetme
               href: android-enterprise-overview.md
             - name: Samsung Knox Mobil Kayıt
               href: android-samsung-knox-mobile-enroll.md
@@ -255,7 +261,7 @@
                   items:
                     - name: Şirket Portalı uygulamasını elle ekle
                       href: store-apps-company-portal-app.md
-                - name: Android for Work uygulamaları
+                - name: Android iş profili uygulamaları
                   href: apps-add-android-for-work.md
                 - name: Windows 10 için Office 365 uygulamaları
                   href: apps-add-office365.md
@@ -326,6 +332,8 @@
                       href: app-protection-policy-settings-android.md
                     - name: iOS ayarları
                       href: app-protection-policy-settings-ios.md
+                    - name: Erişim Eylemleri
+                      href: app-protection-policies-access-actions.md
                     - name: Veri aktarımı özel durumları
                       href: app-protection-policies-exception.md
                 - name: Uygulama koruma ilkelerini doğrulama
@@ -379,7 +387,7 @@
               href: device-restrictions-windows-10-teams.md
             - name: Windows 10 Holographic for Business
               href: device-restrictions-windows-holographic.md
-            - name: Android for Work
+            - name: Android iş profili
               href: device-restrictions-android-for-work.md
         - name: Endpoint protection’ı yapılandırma
           href: endpoint-protection-configure.md
@@ -390,6 +398,10 @@
               href: endpoint-protection-windows-10.md
         - name: Bilgi Noktası ayarlarını yapılandırma
           href: kiosk-settings.md
+        - name: Android bilgi noktası ayarlarını yapılandırma
+          href: android-kiosk-settings.md
+        - name: Android kurumsal bilgi noktası ayarları
+          href: android-enterprise-settings.md
         - name: E-posta ayarlarını yapılandırma
           href: email-settings-configure.md
           items:
@@ -465,7 +477,7 @@
       items:
         - name: Android ilkesi oluşturma
           href: compliance-policy-create-android.md
-        - name: Android for Work ilkesi oluşturma
+        - name: Android iş profili ilkesi oluşturma
           href: compliance-policy-create-android-for-work.md
         - name: Google Play Koruma’yı etkinleştirmek için bir ilke oluşturun
           href: compliance-policy-create-google-play-protect.md
@@ -691,7 +703,7 @@
               href: custom-settings-windows-10.md
             - name: Windows 10 Holographic for Business
               href: custom-settings-windows-holographic.md
-            - name: Android for Work
+            - name: Android iş profili
               href: custom-settings-android-for-work.md
 - name: Geliştirici kılavuzu
   items:
