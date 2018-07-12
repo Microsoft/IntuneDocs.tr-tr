@@ -1,7 +1,7 @@
 ---
 title: Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 titlesuffix: Microsoft Intune
-description: Kullanıcılar bir Android for Work uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın.
+description: Kullanıcılar bir Android iş profili uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,18 +15,18 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: c837f9a5a2cb1a6f267f85f888453725da6acb66
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34470874"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905759"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android for Work uygulamalarına ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Uygulama için yapılandırma ayarlarını belirtmek adına uygulama geliştiricisinin Android yönetilen uygulama yapılandırma ayarlarını kullanıma sunması gerekir. Ayarların uygulanmasını istediğiniz kullanıcı grubuna uygulama yapılandırma ilkesini atayın.  İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde, genellikle ilk çalıştırıldığında kullanılır.
+Android iş profili uygulamalarına ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Uygulama için yapılandırma ayarlarını belirtmek adına uygulama geliştiricisinin Android yönetilen uygulama yapılandırma ayarlarını kullanıma sunması gerekir. Ayarların uygulanmasını istediğiniz kullanıcı grubuna uygulama yapılandırma ilkesini atayın.  İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde, genellikle ilk çalıştırıldığında kullanılır.
 
 > [!Note]  
 > Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın, uygulama yapılandırma ilkelerini destekleyecek şekilde oluşturulup oluşturulmadığını öğrenmek için uygulamanın geliştiricisine başvurun.
@@ -39,8 +39,8 @@ Android for Work uygulamalarına ayarları sağlamak için Microsoft Intune’da
     - **Ad** - Azure portalında görünecek profil adı.
     - **Açıklama** - Azure portalında görünecek profil açıklaması.
     - **Cihaz kayıt türü** - **Yönetilen uygulamalar**’ı seçin.
-6. **Platform** için **Android for Work**’u seçin.
-7. Bir uygulama yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın.
+6. **Platform** için **Android**’i seçin.
+7. Bir uygulama yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android iş profili uygulamaları listesinden seçim yapın.
 8. **İzinler**’i seçin. Yapılandırmaları ayarlamak için şunları kullanabilirsiniz:
     - [Yapılandırma tasarımcısı](#Use-the-configuration-designer)
     - [JSON düzenleyicisi](#Enter-the-JSON-editor)
@@ -94,8 +94,8 @@ Uygulamaların Android cihaz özelliklerine erişmesi iznini de önceden yapıla
     - **Ad**. Azure portalında görünecek profil adı.
     - **Açıklama**. Azure portalında görünecek profil açıklaması.
     - **Cihaz kaydı türü**. **Yönetilen cihazlar**’ı seçin.
-    - **Platform**. **Android for Work**’u seçin.
-5. Bir yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android for Work uygulamaları listesinden seçim yapın.
+    - **Platform**. **Android**’i seçin.
+5. Bir yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android iş profili uygulamaları listesinden seçim yapın.
 6. **İzinler** ve ardından **Ekle**’yi seçin.
 7. Kullanılabilir uygulama izinleri listesinden seçim yapın ve ardından **Tamam**’ı seçin.
 8. Bu ilkeyle verilecek her izin için bir seçenek belirleyin:

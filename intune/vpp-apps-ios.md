@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547412"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905980"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 
@@ -135,8 +135,7 @@ Son kullanıcı, birkaç senaryoda VPP uygulama yüklemesi için istem alır. A�
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Uygulama lisanslarını iptal etme ve belirteçleri silme 
 
-<!-- 820863 -->  
-Bir veya daha fazla iOS Volume Purchase Program (VPP) uygulaması olan belirli bir cihaz için, cihazla ilişkili cihaza dayalı tüm uygulama lisanslarını iptal edersiniz. Bir uygulama lisansını iptal etmek ilgili VPP uygulamasını cihazdan kaldırmaz. Bir VPP uygulamasını kaldırmak ve bir lisansı geri kazanmak için VPP uygulamasının atama türünü **Kaldır** olarak değiştirmeniz gerekir. Bir kullanıcıya atanan uygulamayı kaldırırsanız Intune, kullanıcı veya cihaz lisansını geri kazanır ve uygulamayı cihazdan kaldırır.
+Belirli bir cihaz, kullanıcı veya uygulama temelinde tüm ilişkili iOS Volume Purchase Program (VPP) uygulama lisanslarını iptal edebilirsiniz. Uygulamanın artık kendisine atanmış durumda olmadığını kullanıcıya bildirebilirsiniz. Bir uygulama lisansını iptal etmek ilgili VPP uygulamasını cihazdan kaldırmaz. VPP uygulamasını kaldırmak ve kullanıcı veya cihaza atanmış olan uygulama lisansını geri kazanmak için, atama eylemini **Kaldırma** olarak değiştirmeniz gerekir. Bir kullanıcıya atanan uygulamayı kaldırdığınızda Intune, kullanıcı veya cihaz lisansını geri kazanır ve uygulamayı cihazdan kaldırır. Geri kazanılan lisans sayısı, Intune'un **Uygulama** iş yükündeki **Lisanslı Uygulamalar** düğümünde yansıtılacak. VPP uygulaması kaldırıldıktan ve uygulama lisansı geri kazanıldıktan sonra, uygulama lisansını başka bir kullanıcı veya cihaza atamayı seçebilirsiniz. 
 
 >[!NOTE]
 >Bir çalışan şirketten ayrıldığında ve artık AAD gruplarının bir parçası olmadığında, Intune tüm kullanıcı lisanslı iOS VPP uygulama lisanslarını alır.

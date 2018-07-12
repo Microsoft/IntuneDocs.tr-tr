@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232927"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906048"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobil cihaz yönetimi yetkilisini ayarlayın
 
@@ -41,9 +41,11 @@ Olası yapılandırmalar şunlardır:
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM yetkilisini Intune olarak ayarlama
 
+MDM yetkilisini henüz ayarlamadıysanız, aşağıdaki adımları izleyin. Bir MDM yetkilisinden bir diğerine geçmek için, aşağıdaki [MDM yetkilisini değiştirme](#prepare-to-change-the-mdm-authority-to-configuration-manager) bölümüne bakın.
+
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Mobil Cihaz Yönetim Yetkilisi** ayarını açmak için turuncu başlığı seçin.
+3. **Mobil Cihaz Yönetim Yetkilisi** ayarını açmak için turuncu başlığı seçin. Turuncu başlık, ancak henüz MDM yetkilisini ayarlamadıysanız görüntülenir.
 4. **Mobil Cihaz Yönetimi Yetkilisi** altında, aşağıdakilerden birini MDM yetkiliniz olarak belirtin:
    - **Intune MDM Yetkilisi**
    - **System Center Configuration Manager MDM Yetkilisi**
@@ -57,7 +59,7 @@ Olası yapılandırmalar şunlardır:
 Android veya Apple cihaz yönetimi etkinleştirildiğinde Intune, ilgili cihazları yönetmek üzere bu üçüncü taraf hizmetleriyle tümleştirmek için cihaz ve kullanıcı bilgilerini gönderir.
 
 Veri pencerelerini paylaşma onayı ekleyen senaryolar şu durumlarda eklenir:
-- Android for Work’ü etkinleştirdiğinizde.
+- Android iş profillerini etkinleştirdiğinizde.
 - Apple MDM anında iletme sertifikalarını etkinleştirdiğinizde ve karşıya yüklediğinizde.
 - Aygıt Kayıt Programı, School Manager ve Volume Purchasing Program gibi Apple hizmetlerinden herhangi birini etkinleştirdiğinizde.
 
