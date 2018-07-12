@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232242"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905844"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -158,6 +158,9 @@ Ayrıca, Intune özellik listesinde aşağıdaki belirteç türlerini destekler:
 - \{\{username\}\}—örneğin, **John Doe**
 - \{\{serialnumber\}\}—örneğin, **F4KN99ZUG5V2** (iOS cihazlar için)
 - \{\{serialnumberlast4digits\}\}—örneğin, **G5V2** (iOS cihazlar için)
+
+## <a name="monitor-ios--app-configuration-status-per-device"></a>Cihaz başına iOS uygulama yapılandırma durumunu izleme 
+Yapılandırma ilkesi atandıktan sonra, yönetilen her cihaz için iOS uygulama yapılandırma durumunu izleyebilirsiniz. Azure portalında **Microsoft Intune**'dan **Cihazlar** > **Tüm cihazlar**'ı seçin. Yönetilen cihaz listesinden belirli bir cihazı seçerek o cihazın dikey penceresini görüntüleyin. Cihaz dikey penceresinde **Uygulama yapılandırması**'nı seçin.  
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

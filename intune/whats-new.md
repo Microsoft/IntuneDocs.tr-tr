@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/29/2018
+ms.date: 07/05/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 229c97723c5774b6823699c7d0b0bc9f9b194690
-ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
+ms.openlocfilehash: e6d3640d63f16b80588860c3c36aba1a81ffbe09
+ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37134029"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37927038"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,95 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. [Yaklaşan değişiklik
 ### Role-based access control
 
 -->   
+## <a name="week-of-july-2-2018"></a>2 Temmuz 2018 Haftası
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Windows Installer için ek güvenlik ayarları <!-- 2282430 -->
+Kullanıcıların uygulama yüklemelerini denetlemesine olanak sağlayabilirsiniz. Etkinleştirilirse, aksi takdirde güvenlik ihlali nedeniyle durdurulabilecek olan yüklemelerin devam etmesine izin verilebilir. Windows Installer'ı sistemde herhangi bir program yüklerken yükseltilmiş izinler kullanmaya yönlendirebilirsiniz. Buna ek olarak, Windows Bilgi Koruması (WIP) öğelerinin dizine alınmasını ve bunlar hakkındaki meta verilerin şifrelenmemiş bir konumda depolanmasını etkinleştirebilirsiniz. İlke devre dışı bırakıldığında, WIP korumalı öğelerin dizini oluşturulmaz ve Cortana veya dosya gezgini sonuçlarında görünmez. Bu seçeneklerin işlevselliği varsayılan olarak devre dışı bırakılmıştır. 
+
+#### <a name="monitor-ios--app-configuration-status-per-device----880037---"></a>Cihaz başına iOS uygulama yapılandırması durumunu izleme <!-- 880037 -->
+Microsoft Intune yöneticisi olarak, yönetilen her cihaz için iOS uygulama yapılandırması durumunu izleyebilirsiniz. Azure portalında **Microsoft Intune**'dan **Cihazlar** > **Tüm cihazlar**'ı seçin. Yönetilen cihaz listesinden belirli bir cihazı seçerek o cihazın dikey penceresini görüntüleyin. Cihaz dikey penceresinde **Uygulama yapılandırması**'nı seçin.
+
+#### <a name="access-actions-for-app-protection-policies----1483510---"></a>Uygulama koruma ilkeleri için eylemlere erişme <!-- 1483510 -->
+Uyumsuz cihazları açık olarak silmek, engellemek veya uyarmak üzere uygulama koruma ilkeleri yapılandırabilirsiniz. *Silme* eylemi, bir cihazdan şirketinizin verilerini kaldırır. Silme işlemi gerçekleştirildiğinde, cihazın kullanıcısına silme nedeni ve düzeltme adımları bildirilir. En düşük işletim sistemi sürümü gibi bazı ayarlarda, engelleme ve silme gibi birden fazla eylem gerçekleştirebileceksiniz. Bu eylemlerin uygulama başlatıldığında tetiklendiğine dikkat edin.
+
+#### <a name="selective-wipe-of-organizations-app-data----1507030---"></a>Kuruluşun uygulama verilerini seçmeli silme <!-- 1507030 -->
+Uygulama Koruma İlkeleri (APP) Erişim ayarlarının koşullarına uyulmadığında, şimdi yöneticiler yeni bir eylem olarak kuruluş verilerinin seçmeli silinmesini yapılandırabilir.  Bu özellik yöneticilerin önceden yapılandırılmış ölçütler temelinde hassas kuruluş verilerini otomatik olarak korumasına ve uygulamalardan kaldırmasına yardımcı olur.
+
+#### <a name="revoking-an-ios-app-purchased-through-vpp----1777384---"></a>VPP üzerinden satın alınan iOS uygulamasını iptal etme <!-- 1777384 -->
+Microsoft Intune yöneticisi olarak, Volume Purchase Program (VPP) üzerinden satın alınan seçili iOS uygulamasının tüm lisanslarını iptal edebilirsiniz. Kullanıcı lisanslı uygulamanın artık kendisine atanmış durumda olmadığını kullanıcıya bildirebilirsiniz. Bir uygulama lisansını iptal etmek ilgili VPP uygulamasını cihazdan kaldırmaz. Bir VPP uygulamasını kaldırmak için, atama işlemini **Kaldır** olarak değiştirmelisiniz. Geri kazanılan lisans sayısı, Intune'un **Uygulama** iş yükündeki **Lisanslı Uygulamalar** düğümünde yansıtılacak. iOS VPP uygulamalarıyla ilgili daha fazla bilgi için bkz. [Microsoft Intune ile Volume Purchase Program üzerinden satın alınan iOS uygulamalarını yönetme](vpp-apps-ios.md).
+
+#### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>Şirket Portalı uygulamasında uyumsuzluk iletilerine güncelleştirmeler <!-- 1832222 -->
+Cihaz uyumlu olmadığında cihaz kullanıcılarının gördüğü iletileri düzelttik. İletiler özgün anlamlarını koruyor ancak daha kolay bir dil ve daha az teknik terminoloji ile güncelleştirildi. Ayrıca belge bağlantılarını ve bunları güncel tutmaya yönelik düzeltme adımlarını da yeniledik.
+Aşağıda öncesi ve sonrası gösterilen metin, göreceğiniz ileti iyileştirmelerinin bir örneğidir:
+- **Öncesi**: *Bu cihaz, BT yöneticiniz tarafından belirlenen süre içinde Intune ile iletişime geçmedi. Bu sorunu çözmek için lütfen cihazınızda şirket portalı uygulamasını açın ve Uyumluluğu Denetle düğmesine tıklayın.*
+- **Sonrası**: *Cihazınız bir süredir kuruluşunuza iade edilmedi. Bağlantıyı yeniden kurmak üzere cihazınızda Şirket Portalı uygulamasını açın ve cihazınız için Ayarları Denetle’ye dokunun.*
+
+#### <a name="revoke-ios-vpp-app-license----1863797---"></a>iOS VPP uygulama lisansını iptal etme <!-- 1863797 -->
+Yönetici olarak, bir kullanıcı veya cihaza atanmış olan iOS VPP uygulama lisansını geri kazanabilirsiniz. iOS VPP uygulamasını kaldırmak uygulama lisansını geri kazanmanıza da olanak tanıyacak. Uygulamayı kaldırmadan önce, kullanıcının veya cihazın uygulamayla hedeflenen gruptan kaldırılması gerekir. Kullanıcı veya cihazın gruptan kaldırılması, uygulamanın yeniden yüklenmesini önler. Bu adımlar tamamlandıktan sonra, uygulama lisansını başka bir kullanıcı veya cihaza atamayı seçebilirsiniz. iOS VPP uygulama lisansları hakkında daha fazla bilgi için bkz. [Microsoft Intune'da toplu satın alınan iOS uygulamalarını yönetme](vpp-apps-ios.md).
+
+#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>macOS için iş kolu (LOB) uygulamaları desteği <!-- 1895847 -->
+Microsoft Intune, macOS LOB uygulamalarının **Gerekli** veya **Kayıt sonrasında kullanılabilir** olarak dağıtılmasına olanak tanır. Son kullanıcılar, uygulamaları macOS için Şirket Portalı’ndan veya [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) **Kullanılabilir** olarak alabilirler.
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eenotready---"></a>İş Yeri veya Okula Erişme ayarlarını kullanarak cihaz kategorilerini seçme <!-- 1058963 eenotready --> 
+[Cihaz grubu eşlemeyi](https://docs.microsoft.com/en-us/intune/device-group-mapping) etkinleştirdiyseniz, Windows 10'daki kullanıcılardan şimdi **Ayarlar** > **Hesaplar** > **İş yeri veya okula eriş** altındaki **Bağlan** düğmesi aracılığıyla kaydolduktan sona cihaz kategorisini seçmeleri istenecek. 
+
+#### <a name="use-samaccountname-as-the-account-username-for-email-profiles----1500307---"></a>E-posta profilleri için hesap kullanıcı adı olarak sAMAccountName kullanın <!-- 1500307 -->
+Android, iOS ve Windows 10'da e-posta profillerinin hesap kullanıcı adı olarak şirket içi **sAMAccountName** adını kullanabilirsiniz. Ayrıca Azure Active Directory'de (Azure AD) `domain`.veya `ntdomain` özniteliğinden etki alanını da alabilirsiniz. Bunun yerine özel bir statik etki alanı girebilirsiniz.
+
+Bu özelliği kullanmak için, şirket içi Active Directory ortamınızdan Azure AD'ye `sAMAccountName` özniteliğini eşitlemeniz gerekir.
+
+[Andoid](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 ve üzeri](email-settings-windows-10.md) için geçerlidir
+
+#### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a>Çakışması olan cihaz yapılandırma profillerini görme <!-- 1556983 -->
+**Cihaz Yapılandırması**’nda mevcut profillerin bir listesi gösterilir. Bu güncelleştirme ile çakışması olan profiller hakkında ayrıntılar sağlayan yeni bir sütun eklenir. Çakışması olan ayarı ve profili görmek için çakışan bir satırı seçebilirsiniz. 
+
+[Yapılandırma profillerini yönetme](device-profile-monitor.md#view-conflicts) başlığı altında daha fazla bilgi edinebilirsiniz.
+
+#### <a name="new-status-for-devices-in-device-compliance----2308882---"></a>Cihaz uyumluluğunda cihazlar için yeni durum <!-- 2308882 -->
+**Cihaz uyumluluğu** > **İlkeler**'de bir ilke seçin ve **Genel Bakış**’ı seçin; aşağıdaki yeni durumlar eklenir:
+- başarılı
+- hata
+- çakışma
+- bekleniyor
+- uygulanamaz Farklı bir platformun cihaz sayısını gösteren bir resim de görüntülenir. Örneğin bir iOS profiline bakıyorsanız, yeni kutucuk yine bu profile atanmış olan iOS dışı cihazların sayısını gösterir. Bkz. [Cihaz uyumluluk ilkeleri](compliance-policy-monitor.md#view-status-of-device-policies).
+
+#### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>Cihaz uyumluluğu üçüncü taraf virüsten koruma çözümlerini destekler <!-- 2325484 -->
+Yeni bir cihaz uyumluluğu ilkesi oluşturduğunuzda (**Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **Platform: Windows 10 ve üzeri** > **Ayarlar** > **Sistem Güvenliği**) yeni **[Cihaz Güvenliği](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** seçenekleri olur: 
+- **Virüsten koruma**: **Gerektir** olarak ayarlandığında, Windows Güvenlik Merkezi’ne kaydedilmiş Symantec ve Windows Defender gibi virüsten koruma çözümlerini kullanarak uyumluluğu denetleyebilirsiniz. 
+- **Casus yazılım önleme**: **Gerektir** olarak ayarlandığında, Windows Güvenlik Merkezi’ne kaydedilmiş Symantec ve Windows Defender gibi casus yazılım önleme çözümlerini kullanarak uyumluluğu denetleyebilirsiniz. 
+
+Şunlar için geçerlidir: Windows 10 ve üzeri 
+
+### <a name="device-enrollment"></a>Cihaz kaydı
+
+####  <a name="devices-without-profiles-column-in-the-list-of-enrollment-program-tokens----1853904---"></a>Kayıt programı belirteçleri listesinde profil sütunu olmayan cihazlar <!-- 1853904 -->
+Kayıt programı belirteçleri listesinde, profil atanmamış olan cihazların sayısını gösteren yeni bir sütun vardır. Bu, yöneticilerin bu cihazları kullanıcılara teslim etmeden önce bunlara profil atamasına yardımcı olur. Yeni sütunu görmek için, **Cihaz kaydı** > **Apple kaydı** > **Kayıt programı belirteçleri**'ne gidin.
+
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="google-name-changes-for-android-for-work-and-play-for-work---842873---"></a>Android for Work ve Play for Work için Google ad değişiklikleri <!--842873 -->
+Intune, "Android for Work" terminolojisini Google marka değişikliklerini yansıtacak şekilde güncelleştirdi. "Android for Work" ve "Play for Work" terimleri artık kullanılmıyor. Bağlama göre farklı bir terminoloji kullanılıyor:
+- "Android kurumsal", genel olarak modern Android yönetim yığınına karşılık gelir.
+- "İş profili" veya "Profil Sahibi", iş profilleriyle yönetilen KCG cihazlarına karşılık gelir.
+- "Yönetilen Google Play", Google uygulama mağazasına karşılık gelir.
+
+#### <a name="rules-for-removing-devices----1609459---"></a>Cihaz kaldırma kuralları <!-- 1609459 -->
+Ayarladığınız süre boyunca (gün) iade edilmeyen cihazları otomatik olarak kaldırmanıza olanak tanıyan yeni kurallar kullanılabilir. Yeni kuralı görmek için **Intune** bölmesine gidin, **Cihazlar**’ı ve **Cihaz temizleme kuralları**’nı seçin.
+
+#### <a name="corporate-owned-single-cosu-use-support-for-android-devices----1630973---"></a>Android cihazları için şirkete ait, tek (COSU) kullanım desteği <!-- 1630973 -->
+
+Intune şimdi üst düzeyde yönetilen, kilitlenen, bilgi noktası stilindeki Android cihazlarını destekler. Bu sayede yöneticiler cihazın kullanımını tek uygulamayla veya küçük bir uygulama kümesiyle kilitleyebilir ve kullanıcıların cihazda başka uygulamaları etkinleştirmesini veya başka eylemler gerçekleştirmesini engelleyebilir. Android kiosku ayarlamak için, Intune > **Cihaz kaydı** > **Android kaydı** > **Kiosk ve görev cihazı kayıtları**'na gidin. Daha fazla bilgi için bkz. [Android kurumsal kiosk cihazlarının kaydını ayarlama](android-kiosk-enroll.md).
+
+#### <a name="per-row-review-of-duplicate-corporate-device-identifiers-uploaded----2203794--"></a>Karşıya yüklenmiş yinelen şirket cihazı tanımlayıcılarını satır temelinde gözden geçirme <!-- 2203794-->
+Şirket kimliklerini karşıya yüklerken, Intune şimdi tüm yinelemelerin listesini sağlar ve size mevcut bilgileri değiştirme veya koruma seçeneği verir. **Cihaz kaydı** > **Şirket Cihazı Tanımlayıcıları** > **Tanımlayıcıları Ekle**'yi seçtikten sonra yinelemeler varsa rapor görüntülenecek. 
+
+#### <a name="manually-add-corporate-device-identifiers----2203803---"></a>Şirket cihazı tanımlayıcılarını el ile ekleme <!-- 2203803 -->
+Şimdi şirket cihazı kimliklerini el ile ekleyebilirsiniz. **Cihaz kaydı** > **Şirket Cihazı Tanımlayıcıları** > **Ekle**'yi seçin. 
+
 ## <a name="week-of-june-25-2018"></a>25 Haziran 2018 Haftası
 
 ### <a name="pradeo---new-mobile-threat-defense-partner----1169249---"></a>Pradeo - Yeni Mobile Threat Defense iş ortağı <!-- 1169249 -->
@@ -340,8 +429,7 @@ iOS için yeni bir VPN profili oluştururken, şimdi iki seçenek vardır: **Cis
 macOS şirket portalının 1.3 ve 1.4 sürümleri Jamf cihazlarını Intune ile başarılı bir şekilde kaydedemiyordu. macOS portalının 1.4.2 sürümünde bu sorun çözüldü.
 
 
-## <a name="week-of-april-9-2018"></a>9 Nisan 2018 Haftası
-
+## <a name="week-of-april-9-2018"></a>9 Nisan 2018 Haftası  
 #### <a name="updated-help-experience-in-company-portal-app-for-android----1631531---"></a>Android için Şirket Portalı uygulamasında güncelleştirilmiş yardım deneyimi <!-- 1631531 -->
 
 Android platformuna yönelik en iyi uygulamalarla uyumlu olacak şekilde, Android için Şirket Portalı uygulamasında yardım deneyimini güncelleştirdik. Artık kullanıcılar uygulamada bir sorunla karşılaştıklarında **Menü** > **Yardım**’a dokunarak şunları yapabilir:
@@ -929,6 +1017,25 @@ Intune'da reddedilen uygulamaları belirtebilirsiniz. Uygulama reddedilirse, şi
 
 ## <a name="notices"></a>Bildirimler
 
+### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Değişiklik Planı: Intune, Eylül'de iOS 10 ve üzerine desteklemeye geçiyor <!-- 2454656 -->
+Eylül'de, Apple iOS 12'yi kullanıma sunmayı bekliyor. Kullanıma sunulmasından kısa süre sonra, Intune kaydını, Şirket Portalı'nı ve yönetilen tarayıcıyı iOS 10 ve üzerine desteklemeye geçireceğiz.  
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?  
+Office 365 mobil uygulamaları iOS 10 ve üzerinde destekleniyor, dolayısıyla işletim sisteminizi ve cihazlarınızı zaten yükseltmiş olabilirsiniz. Bu durumda, bu geçiş sizi etkilemez.  
+
+Öte yandan, aşağıda listelenen cihazlardan herhangi birine sahipseniz veya aşağıda listelenen cihazlardan herhangi birini kaydetmek istiyorsanız, bunların yalnızca iOS 9 ve öncesini desteklediğini bilmelisiniz.  Intune Şirket Portalı'na erişmeye devam etmek için, Eylül'e kadar bu cihazları iOS 10 ve üzerini destekleyen cihazlara yükseltmeniz gerekir:  
+
+* iPhone 4S  
+* iPod Touch  
+* iPad 2  
+* iPad (3. Nesil)  
+* iPad Mini (1. Nesil)  
+
+Temmuz'dan başlayarak, hem iOS 9 hem de Şirket Portalı içeren MDM kayıtlı cihazlarda işletim sistemini veya cihazı yükseltmeye yönelik bir ileti gösterilecek. Uygulama koruma ilkelerini kullanıyorsanız, “En düşük iOS işletim sistemi gerekir (Yalnızca uyarı)” erişim ayarını da kullanabilirsiniz.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?   
+Kuruluşunuzda etkilenen cihazları veya kullanıcıları belirleyin. Azure portalında Intune'da, Cihazlar > Tüm cihazlar'a gidin ve işletim sistemine göre filtreleyin.  İşletim sistemi sürümü gibi ayrıntıların gösterilmesi için Sütunlar'a tıklayın. Eylül'den önce kullanıcılarınızdan cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmelerini isteyin.  
+
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>Değişiklik Planı: Intune’u TLS 1.2’ye taşıma
 31 Ekim 2018 tarihinden itibaren Intune; sınıfının en iyisi şifrelemeyi sağlamak, hizmetin varsayılan olarak daha güvenli olduğundan emin olmak ve Microsoft Office 365 gibi diğer Microsoft hizmetleriyle uyum sağlamak için Aktarım Katmanı Güvenliği (TLS) protokol sürümü 1.2’yi destekleyecektir. Office, bu değişikliği MC128929 sürümünde gerçekleştirmişti.
 
@@ -982,9 +1089,9 @@ Yeni Yerel Cihaz Güvenlik Seçeneği ayarlarını kullanarak Windows 10 cihazla
 Kullanıcı arabirimi güncelleştirmeleri, kolaylaştırılmış iş akışları ve erişilebilirlik iyileştirmeleri içeren bir Şirket Portalı web sitesi deneyimini Nisan ayında tanıtacağız. Bunun içerisinde, size daha kullanıcı dostu bir deneyim sunmak için uygulama paylaşımı ve iyileştirilmiş genel performans gibi müşteri odaklı iyileştirmeler olacak.
 Sizin gibi müşterilerden aldığımız geri bildirimlere dayanarak bazı yeni özellikler ekledik. Bu özellikler, geçerli işlevsellik ve kullanılabilirliği büyük oranda artıracak:
 
--   Web sitesi üzerinde kullanıcı arabirimi iyileştirmeleri
--   Doğrudan uygulama bağlantıları paylaşabilme seçeneği
-- Büyük uygulama katalogları için iyileştirilmiş performans
+* Web sitesi üzerinde kullanıcı arabirimi iyileştirmeleri
+* Doğrudan uygulama bağlantıları paylaşabilme seçeneği
+* Büyük uygulama katalogları için iyileştirilmiş performans
 
 Bu değişikliğe hazırlanmak için herhangi bir şey yapmanız gerekmez. Güncelleştirilmiş Şirket Portalı web sitesi kullanılabilir duruma geldiğinde size haber vereceğiz. Ancak daha sonra son kullanıcı belgelerini güncel ekran görüntüleriyle güncelleştirmeniz gerekebilir. iOS uygulamasının **Uygulamalar** bölümü web sitesi tarafından sağlandığı için iOS’ta Şirket Portalı belgelerini de güncelleştirmeniz gerekebileceğine dikkat edin. [Uygulama kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md) sayfasında bunun için bir örnek görüntü görebilirsiniz.
 
