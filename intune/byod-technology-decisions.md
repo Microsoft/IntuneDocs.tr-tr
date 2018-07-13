@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832776"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844972"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>KCG'yi Microsoft Enterprise Mobility + Security (EMS) ile etkinleştirmeye yönelik teknoloji kararları
 
@@ -39,7 +39,7 @@ Exchange Online'da [koşullu erişim](https://docs.microsoft.com/azure/active-di
 **Uyumluluk** – Bazı kuruluşların belirli MDM denetimlerini çağıran yasal düzenleme ilkelerine veya başka ilkelere uyumlu olması gerekir. Örneğin, cihazın tamamını şifrelemek veya cihazdaki tüm uygulamaların raporunu oluşturmak için MDM gerekir.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Yalnızca uygulamaları yönetmek için yaygın nedenler (MAM)
-MDM olmadan MAM, KCG'yi destekleyen kuruluşlar arasında çok yaygındır. Exchange Online'a koşullu erişim ilkesi dağıtarak, kullanıcıları Outlook Mobile'dan (MAM korumalarını destekler) e-postaya erişmeye yönlendirebilirsiniz. Aşağıdaki nedenlerle yalnızca kişisel cihazlardaki uygulamaları yönetmek isteyebilirsiniz:
+MDM olmadan MAM, KCG'yi destekleyen kuruluşlar arasında çok yaygındır. Exchange Online’a koşullu erişim ilkesi dağıtarak, kullanıcıları Outlook Mobile’dan (MAM korumalarını destekler) e-postaya erişmeye yönlendirebilirsiniz. Aşağıdaki nedenlerle yalnızca kişisel cihazlardaki uygulamaları yönetmek isteyebilirsiniz:
 
 **Kullanıcı deneyimi** – MDM kaydı birçok uyarı istemi içerir (bunlar platform tarafından zorunlu tutulur) ve sonuçta çoğunlukla kullanıcı kendi kişisel cihazından e-postaya hiç erişmemeye karar verebilir. MAM kullanıcılara çok daha az uyarı verir; yalnızca bir kez açılan kutuyla MAM korumalarının yürürlükte olduğu bildirilir.
 

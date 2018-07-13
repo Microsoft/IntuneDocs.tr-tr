@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263413"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905997"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -51,12 +51,12 @@ Aşağıdaki tablo, belirli uygulama türlerini ve bunları Intune’daki **Uygu
 | iOS mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **iOS**’u seçin, Intune’da uygulama için arama yapın ve uygulamayı seçin. |
 | Windows Phone 8.1 mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **Windows Phone 8.1**’i seçin ve uygulamanın Microsoft mağaza URL’sini girin. |
 | Microsoft mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **Windows**’u seçin ve uygulamanın Microsoft mağaza URL’sini girin. |
-| Android for Work uygulamaları | Mağaza uygulaması  | Google Play for Work mağazasından Android for Work uygulamasını bulun ve onaylayın.  |
+| Android iş profili uygulamaları | Mağaza uygulaması  | Yönetilen Google Play mağazasından Android iş profili uygulamasını bulun ve onaylayın.  |
 | Windows 10 için Office 365 uygulamaları  | Mağaza uygulaması (Office 365) | **Uygulama türü** olarak **Office 365 Paketi** altında **Windows 10**’u, ardından da yüklemek istediğiniz Office 365 uygulamasını seçin.  |
 | macOS için Office 365 uygulamaları | Mağaza uygulaması (Office 365) | **Uygulama türü** olarak **Office 365 Paketi** altında **macOS**’u, ardından da Office 365 uygulama paketini seçin. |
 | Android iş kolu (LOB) uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.apk** uzantısına sahip bir Android yükleme dosyası girin.  |
 | iOS LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.ipa** uzantısına sahip bir iOS yükleme dosyası girin.  |
-| Windows Phone LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulamasını** seçin, **Uygulama paketi dosyasını** seçin ve **.xap** uzantısına sahip bir Windows Phone yükleme dosyası girin.  |
+| Windows Phone LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu** uygulamasını seçin, **Uygulama paketi dosyasını** seçin ve **.xap** uzantısına sahip bir Windows Phone yükleme dosyası girin.  |
 | Windows LOB uygulaması | LOB uygulaması | Uygulama türü olarak **İş kolu** uygulamasını seçin, **Uygulama paketi dosyasını** seçin ve **.msi**, **.appx** veya **.appxbundle** uzantısına sahip bir Windows Phone yükleme dosyası girin. |
 | Yerleşik iOS uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
 | Yerleşik Android uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
@@ -117,7 +117,7 @@ Intune ile yönetilen uygulamalar ayrıca kayıt gerekmeksizin uygulama korumas�
 ### <a name="understanding-licensed-apps"></a>Lisanslı uygulamaları anlama
 Web uygulamaları, mağaza uygulamaları ve LOB uygulamalarını anlamaya ek olarak toplu satın alma programı uygulamalarının hedefi ve lisanslı uygulamalar hakkında da bilgi sahibi olmalısınız, örneğin: 
 - **İş için Apple Volume Purchasing Program (iOS ve MacOS)**: iOS App Store, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak sağlar. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur. Daha fazla bilgi için bkz. [iOS toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md).
-- **Android for Work (Android)**: Android for Work cihazlara uygulama atama işlemi, standart Android cihazlara uygulama atamaktan farklıdır. Android for Work için yüklediğiniz tüm uygulamalar Google Play for Work mağazasından gelir. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Daha sonra uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görünür ve uygulamanın atamasını diğer uygulamalarda olduğu gibi yaparsınız.
+- **Android iş profili**: Android iş profili cihazlara uygulama atama işlemi, standart Android cihazlara uygulama atamaktan farklıdır. Android iş profili için yüklediğiniz tüm uygulamalar Yönetilen Google Play mağazasından gelir. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Daha sonra uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görünür ve uygulamanın atamasını diğer uygulamalarda olduğu gibi yaparsınız.
 - **İş için Microsoft Store (Windows 10)**: İş için Microsoft Store, kuruluşunuz için tek tek veya toplu olarak uygulamalar bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayı Microsoft Intune’a bağlayarak toplu satın alınan uygulamaları Azure portalında yönetebilirsiniz. Daha fazla bilgi için bkz. [İş İçin Microsoft Mağazası’ndan uygulamaları yönetme](windows-store-for-business.md).
 
 ## <a name="before-you-add-apps"></a>Uygulamaları eklemeden önce

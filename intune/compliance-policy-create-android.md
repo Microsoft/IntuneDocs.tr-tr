@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744712"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906201"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune’da Android cihazlar için cihaz uyumluluk ilkesi ekleme
 
@@ -77,9 +77,9 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 - **Uygulamalarda tehdit taraması**: Android **Uygulamaları Doğrula** özelliğinin etkinleştirilmesini gerektirin.
 
   > [!NOTE]
-  > Eski Android platformunda bu özellik bir uyumluluk ayarıdır. Intune yalnızca bu ayarın cihaz düzeyinde etkinleştirilip etkinleştirilmediğini denetleyebilir. İş profilleri olan cihazlarda (Android for Work), bu ayar bir yapılandırma ilkesi ayarı olarak bulunabilir. Bu, yöneticilerin ayarı cihaz için etkinleştirmesine olanak tanır.
+  > Eski Android platformunda bu özellik bir uyumluluk ayarıdır. Intune yalnızca bu ayarın cihaz düzeyinde etkinleştirilip etkinleştirilmediğini denetleyebilir. Android iş profilleri olan cihazlarda bu ayar, bir yapılandırma ilkesi ayarı olarak bulunabilir. Bu, yöneticilerin ayarı cihaz için etkinleştirmesine olanak tanır.
 
-  Kuruluşunuzda Android iş profilleri kullanılıyorsa, kayıtlı cihazlarınız için **Uygulamalarda tehdit taraması**’nı etkinleştirebilirsiniz. Bir cihaz profili oluşturun ve sistem güvenlik ayarının gerekli olmasını sağlayın. Daha fazla bilgi için bkz. [Intune’da Android for Work cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
+  Kuruluşunuzda Android iş profilleri kullanılıyorsa, kayıtlı cihazlarınız için **Uygulamalarda tehdit taraması**’nı etkinleştirebilirsiniz. Bir cihaz profili oluşturun ve sistem güvenlik ayarının gerekli olmasını sağlayın. Daha fazla bilgi için bkz. [Intune’da Android iş profili cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
 
 - **SafetyNet cihaz kanıtı**: Uyulması gereken [SafetyNet kanıtı](https://developer.android.com/training/safetynet/attestation.html) düzeyini ayarlayın. Seçenekleriniz şunlardır:
   - **Yapılandırılmadı**

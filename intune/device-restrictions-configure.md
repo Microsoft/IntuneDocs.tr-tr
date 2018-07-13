@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56ddf28bb9e81417b4b91bb18baaba14f07fbdd9
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024626"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905062"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da cihaz kısıtlama ayarlarını yapılandırma
 
@@ -56,7 +56,7 @@ Cihaz kısıtlama profili temel bilgilerini öğrenin ve cihazlara özgü özell
     - [Windows 10 ayarları](device-restrictions-windows-10.md)
     - [Windows 10 Team ayarları](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business ayarları](device-restrictions-windows-holographic.md)
-    - [Android for Work ayarları](device-restrictions-android-for-work.md)
+    - [Android iş profili ayarları](device-restrictions-android-for-work.md)
 8. Bitirdiğinizde **Profil oluştur** sayfasına dönün ve **Oluştur**'a tıklayın.
 
 Profil oluşturulur ve profil listesi sayfasında görüntülenir.

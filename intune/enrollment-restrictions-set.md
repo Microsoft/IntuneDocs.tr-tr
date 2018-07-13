@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026338"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905827"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -39,14 +39,14 @@ Intune yöneticisi olarak, Intune ile yönetime kaydedilebilecek cihazların say
 - Kayıtlı cihaz sayısı üst sınırı.
 - Kaydedilebilecek cihaz platformları:
   - Android.
-  - Android for Work.
+  - Android iş profili.
   - iOS.
   - macOS.
   - Windows.
-- iOS, Android, Android for Work ve Windows'un platform işletim sistemi sürümü. (Yalnızca Windows 10 sürümleri kullanılabilir. Windows 8.1'e izin veriliyorsa bunu boş bırakın.)
+- iOS, Android, Android iş profili ve Windows’un platform işletim sistemi sürümü. (Yalnızca Windows 10 sürümleri kullanılabilir. Windows 8.1'e izin veriliyorsa bunu boş bırakın.)
   - En düşük sürüm.
   - En yüksek sürüm.
-- Kişisel cihazları kısıtlama (yalnızca iOS, Android, Android for Work ve macOS).
+- Kişisel cihazları kısıtlama (yalnızca iOS, Android, Android iş profili ve macOS).
 
 ## <a name="default-restrictions"></a>Varsayılan kısıtlamalar
 
@@ -78,7 +78,7 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
 5. Kısıtlama adının altında (varsayılan kısıtlama için **Tüm Kullanıcılar**), **Platformlar**'ı seçin. Listelenen her platform için **İzin Ver** veya **Engelle**'yi seçin.
 6. **Kaydet**’i seçin.
 7. Kısıtlama adının altında (varsayılan kısıtlama için **Tüm Kullanıcılar**), **Platform Yapılandırmaları**'nı seçin. Sonra, listelenen platformlar için en düşük ve en yüksek **Sürümleri** seçin. Desteklenen sürümler şunlardır:
-    - Android ve Android for Work major.minor.rev.build destekler.
+    - Android iş profili desteği major.minor.rev.build.
     - iOS major.minor.rev destekler.
     - Windows, yalnızca Windows 10 için major.minor.rev.build destekler.
   İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir.
@@ -88,9 +88,9 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
 
 
 >[!NOTE]
->- Kişisel Android cihazların kaydını engellerseniz kişisel Android for Work cihazlar hala kaydedilebilir durumda olacaktır.
->- Varsayılan olarak, Android for Work cihaz ayarlarınız Android cihazlarınız için ayarlarınızla aynı olur. Android for Work ayarlarınızı değiştirdikten sonra artık bu durum oluşmaz.
->- Kişisel Android for Work kaydını engellerseniz, yalnızca kurumsal Android cihazlar Android for Work olarak kaydolabilir.
+>- Kişisel Android cihazların kaydını engellerseniz kişisel Android iş profili cihazları hala kaydedilebilir durumda olacaktır.
+>- Varsayılan olarak, Android iş profili cihaz ayarlarınız Android cihazlarınızın ayarlarıyla aynı olur. Android iş profili ayarlarınızı değiştirdikten sonra artık bu durum oluşmaz.
+>- Kişisel Android iş profili kaydını engellerseniz, yalnızca kurumsal Android cihazlar Android iş profili olarak kaydedilebilir.
 
 ## <a name="set-device-limit-restrictions"></a>Cihaz sınırı kısıtlamalarını ayarlama
 

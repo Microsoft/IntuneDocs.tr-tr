@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033389"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434275"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Desteklenen işletim sistemleri ve tarayıcılar
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033389"
 
 Microsoft Intune'u ayarlamadan önce, desteklenen işletim sistemleriyle tarayıcıları gözden geçirin.
 
-Cihazınıza Intune yüklerken yardım almak için bkz. [İşleri halletmek için yönetilen cihazları kullanma](/intune-user-help/company-portal-frequently-asked-questions). Ayrıca [Intune ağ bant genişliği kullanımı](network-bandwidth-use.md) ([klasik portal](/intune-classic/get-started/network-bandwidth-use)) hakkında da bilgi edinmelisiniz.
+Cihazınıza Intune yüklerken yardım almak için bkz. [İşleri halletmek için yönetilen cihazları kullanma](/intune-user-help/company-portal-frequently-asked-questions) ve [Intune ağ bant genişliği kullanımı](network-bandwidth-use.md) ([klasik portal](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Intune tarafından desteklenen işletim sistemleri
 
@@ -38,12 +38,12 @@ Aşağıdaki işletim sistemlerini çalıştıran cihazları yönetebilirsiniz:
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Desteklenen Samsung Knox Standard cihazları
 
-Şirket Portalı uygulaması, yalnızca cihazın [desteklenen Knox cihazları listesinde](https://www.samsungknox.com/knox-supported-devices/knox-workspace) görüntülendiği durumlarda MDM kaydı sırasında Samsung Knox etkinleştirmesi yapmaya çalışır. Böylece MDM kaydını önleyen Knox kayıt hatalarının önüne geçilir. Samsung Knox etkinleştirmesini desteklemeyen cihazlar, standart Android cihazlar olarak kaydedilir. Bir Samsung cihazının Knox’u destekleyen model numaraları olabilir, diğerlerinin olamaz. Samsung cihazlar satın alıp dağıtmadan önce, cihazınızın kurumsal bayisinden Knox uyumluluğunu doğrulayın.
+MDM kaydını önleyen Knox etkinleştirme hatalarının önüne geçmek için Şirket Portalı uygulaması, yalnızca cihazın [desteklenen Knox cihazları listesinde](https://www.samsungknox.com/knox-supported-devices/knox-workspace) görüntülendiği durumlarda MDM kaydı sırasında Samsung Knox etkinleştirmesi yapmaya çalışır. Samsung Knox etkinleştirmesini desteklemeyen cihazlar, standart Android cihazlar olarak kaydedilir. Bir Samsung cihazının Knox’u destekleyen model numaraları olabilir, diğerlerinin olamaz. Samsung cihazlar satın alıp dağıtmadan önce, cihazınızın kurumsal bayisinden Knox uyumluluğunu doğrulayın.
 
 > [!NOTE]
 > Samsung Knox cihazlarının kaydı için [Samsung sunucularına erişimi etkinleştirmeniz](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers) gerekebilir. 
 
-Aşağıdaki Samsung cihaz modelleri Knox’u desteklemez ve Android için Şirket Portalı uygulaması tarafından yerel Android cihazlar olarak kaydedilir:
+Aşağıdaki listede adı geçen Samsung cihaz modelleri, Knox desteklemez. Android için Şirket Portalı tarafından yerel Android cihazlar olarak kaydedilirler:
 
 | **Cihaz Adı** | **Cihaz Model Numaraları** |
 | --- | --- |
@@ -103,7 +103,7 @@ Bu portallar için aşağıdaki tarayıcılar desteklenir:
 - Microsoft Internet Explorer 11
 - Safari (en so sürüm, yalnızca Mac)
 - Chrome (en son sürüm)
-- Silverlight etkinleştirilmiş olarak Mozilla Firefox [Daha fazla bilgi (sürüm 52’den önceki sürümler)](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox (en son sürüm)
 
 
 

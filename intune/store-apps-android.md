@@ -15,12 +15,12 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f62cb3a99a9cfd328cc041f095b0980eacc99852
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 4fc64f672a5c488848303f8d5ea5ea1467b0b195
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224706"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869517"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Android mağazası uygulamalarını Microsoft Intune’a ekleme
 
@@ -31,12 +31,11 @@ Bir cihaza veya kullanıcı grubuna uygulama atamadan önce uygulamayı ilk olar
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin.  
     Intune, **İzleme + Yönetim** bölümünde bulunur.
-1. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
-2. **Mobil uygulamalar** iş yükü bölmesindeki **Yönet**'in altında **Uygulamalar**’ı seçin.
-3. **Ekle**’yi seçin.
-4. **Uygulama Ekle** bölmesindeki kullanılabilir **Mağaza uygulaması** türlerinden **Android**’i seçin.
-5. Uygulama bilgilerini yapılandırmak için **Yapılandırma**’yı seçin ve ardından aşağıdaki bilgileri sağlayın.  
-    Seçtiğiniz uygulamaya bağlı olarak, bazı değerler otomatik olarak doldurulmuş olabilir:
+3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
+4. **Mobil uygulamalar** iş yükü bölmesindeki **Yönet**'in altında **Uygulamalar**’ı seçin.
+5. **Ekle**’yi seçin.
+6. **Uygulama Ekle** bölmesindeki kullanılabilir **Mağaza uygulaması** türlerinden **Android**’i seçin.
+7. Uygulama bilgilerini yapılandırmak için **Yapılandırma**’yı seçin ve ardından aşağıdaki bilgileri sağlayın. Android uygulamaları için [Google Play mağazası](https://play.google.com/store)’na gidin ve dağıtmak istediğiniz uygulamayı arayın. Uygulamayı seçin ve uygulama ayrıntılarını not edin. Seçtiğiniz uygulamaya bağlı olarak, bazı değerler otomatik olarak doldurulmuş olabilir:
     - **Ad**: Şirket Portalı’nda görüntülendiği şekliyle uygulamanın adını girin. Kullandığınız uygulama adlarının benzersiz olduğundan emin olun. Bir uygulama adı iki kez kullanılırsa, Şirket Portalı’nda kullanıcılara yalnızca bir ad gösterilir.
     - **Açıklama**: Uygulama için bir açıklama girin. Bu açıklama Şirket Portalı’nda kullanıcılara görüntülenir.Açıklama şirket portalında kullanıcılara görüntülenir.
     - **Yayımcı**: Uygulama yayımcısının adını girin.

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 3c8bc523f2796f8af7cb4801cdb13a60b7e2eb5d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32017966"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905742"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme - Intune
 
@@ -39,8 +39,8 @@ Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen ciha
 - Uyumsuzluk eylemlerini ayarlamak için, en az bir cihaz uyumluluk ilkesine ihtiyacınız vardır. Cihaz uyumluluk ilkesi oluşturmak için aşağıdaki platformlara bakın:
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
-  - [Android](compliance-policy-create-ios.md)
+  - [Android iş profilleri](compliance-policy-create-android-for-work.md)
+  - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 

@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce8791eaf72f5fda969401c19e72c6cc8b538d6
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: b514efa27a2a037f2fa0492ae519e6b8c774e369
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291470"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869551"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma ilkeleri ekleme
 
@@ -49,7 +49,7 @@ Intune Uygulama SDK’sı özellikli uygulamalar, anahtar/değer çiftlerinde ya
 
 Intune bazı belirteçleri oluşturabilir ve yönetilen uygulamaya gönderebilir. Örneğin uygulama yapılandırmanız bir e-posta ayarı kullanabiliyorsa, bir belirteç kullanarak dinamik bir e-posta ekleyebilirsiniz. **Ad** alanına uygulama tarafından beklenen adı yazıp **Değer** alanına `\{\{mail\}\}` yazın.
 
-Intune yapılandırma ayarlarında aşağıdaki belirteç türlerini destekler:
+Intune, yapılandırma ayarlarında aşağıdaki belirteç türlerini destekler. Diğer özel anahtar/değer çiftleri desteklenmez.
 
 - \{\{userprincipalname\}\}—örneğin, **John@contoso.com**
 - \{\{mail\}\}—örneğin, **John@contoso.com**

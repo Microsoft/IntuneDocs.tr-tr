@@ -1,42 +1,47 @@
 ---
 title: Android çalıştıran cihazlar için Microsoft Intune Wi-Fi ayarlarını yapılandırma
 titleSuffix: ''
-description: Android ve Android for Work çalıştıran cihazlarda Intune Wi-Fi yapılandırma ayarlarını öğrenin.
+description: Android çalıştıran cihazlarda Intune Wi-Fi yapılandırma ayarlarını öğrenin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee82da997a794bb2f65929a6fd9e0de0cc776a6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0157815322488525a4ce7a3d6d2c90cbb8d3ff2a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831070"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905675"
 ---
-# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android ve Android for Work çalıştıran cihazlar için Microsoft Intune'da Wi-Fi ayarlarını yapılandırma  
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-android-work-profiles-and-android-kiosk-devices"></a>Android, Android iş profili ve Android bilgi noktası çalıştıran cihazlar için Microsoft Intune’da Wi-Fi ayarlarını yapılandırma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bu makalede, Android ve Android for Work çalıştıran cihazlar için Microsoft Intune’da yapılandırabileceğiniz Wi-Fi ayarları gösterilir.
+Bu makale, Android ve Android iş profili çalıştıran cihazlar için Microsoft Intune’da yapılandırabileceğiniz Wi-Fi ayarlarını gösterir.
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Temel ve kurumsal profiller için Wi-Fi ayarları
 
-Aşağıdaki Wi-Fi ayarları hem Android hem de Android for Work cihazları için kullanılabilir:
+Aşağıdaki Wi-Fi ayarları hem Android hem de Android iş profili cihazları için kullanılabilir:
 
 - **Ağ adı** - Bu Wi-Fi bağlantısı için bir ad girin. Bu, kullanıcıların cihazlarında kullanılabilir bağlantılar listesine göz attıklarında görecekleri addır.
 - **SSID** - Hizmet kümesi tanımlayıcısının kısaltması. Bu, cihazların bağlandığı kablosuz ağın gerçek adıdır. Bununla birlikte, bağlantıyı seçen kullanıcılar yalnızca yapılandırdığınız ağ adını görür.
 - **Otomatik olarak bağlan** - Cihazın ağ kapsamında olduğu her yerde bağlanmasını sağlar.
 - **Gizli ağ** - Bu ağın, cihazdaki kullanılabilir ağlar listesinde gösterilmesini önler.
 
+## <a name="wi-fi-settings-available-for-enterprise-kiosk-profiles"></a>Kurumsal bilgi noktası profilleri için kullanılabilen Wi-Fi ayarları
+- **Wi-Fi türü**: Bu Wi-Fi türü ayarları yalnızca **Profil türü** > **Yalnızca Cihaz Sahibi** > **Wi-Fi**’ı seçerseniz kullanılabilir.
+    - **Açık (kimlik doğrulaması yok)**
+    - **WEP-Önceden paylaşılan anahtar**: Parolayı **Önceden paylaşılan anahtar** kutusunda sağlamanız gerekir.
+    - **WPA-Önceden paylaşılan anahtar**: Parolayı **Önceden paylaşılan anahtar** kutusunda sağlamanız gerekir
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Yalnızca kurumsal profiller için Wi-Fi ayarları
+## <a name="wi-fi-settings-for-android-legacy-and-android-work-profiles-only"></a>Yalnızca eski Android cihazlar ve Android iş profilleri için Wi-Fi ayarları
 
 - **EAP türü** - Güvenli kablosuz bağlantıların kimliğini doğrulamak için kullanılan Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü seçin:
     - **EAP-TLS**

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456359"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921357"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>iOS cihazları için web içeriği filtresi ayarları
 
@@ -58,7 +58,7 @@ Herhangi bir URL belirtmezseniz son kullanıcılar microsoft.com, microsoft.net 
 ## <a name="specific-websites-only"></a>Yalnızca belirli web siteleri
 
 1. **Web İçerik Filtresi** bölmesinde, izin vermek istediğiniz her web sitesi için aşağıdaki ayarları yapılandırın:
-    - **URL** - İzin vermek istediğiniz web sitesinin URL’sini girin; ör. **http://www.contoso.com**.
+    - **URL** - İzin vermek istediğiniz web sitesinin URL’sini girin; örneğin `https://www.contoso.com`.
     - **Yer İşareti Yolu** - Yer işaretini kaydetmek istediğiniz yolu girin; ör. **/Contoso/İş Uygulamaları**. Bir yol eklemezseniz yer işareti cihazdaki varsayılan yer işareti klasörüne eklenir.
     - **Başlık** - Yer işareti için açıklayıcı bir başlık girin.
 2. Her web sitesinin bilgilerini girdikten sonra **Ekle**’ye tıklayın.

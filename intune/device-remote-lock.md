@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45ab6434245c0dd412b2e9d23e394f72871a459a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ae114b9aec2794556a8162604a533c24c11bafba
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829773"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905147"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Intune ile cihazları uzaktan kilitleme
 
@@ -31,12 +31,14 @@ ms.locfileid: "31829773"
 **Uzaktan kilitleme**, aşağıdaki platformlarda desteklenir:
 
 - Android
+- Android kurumsal bilgi noktası cihazları
+- Android kurumsal iş profili cihazlar
 - iOS
 - Mac OS
 - Windows 10 Mobile
 - Windows Phone 8.1 ve üzeri
 
-Şu platformlarda **Uzaktan kilitleme** *desteklenmez*:
+Şu platformlarda **Uzaktan kilitleme** desteklenmez:
 - Windows 10 masaüstü
 
 > [!NOTE]

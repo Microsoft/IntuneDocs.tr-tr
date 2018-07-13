@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744610"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905113"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune’da VPN profilleri oluşturma
 
@@ -27,7 +27,7 @@ Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenl
 
 Örneğin, tüm iOS cihazlara kurumsal ağ üzerindeki bir dosya paylaşımına bağlanmak için gereken ayarları sağlamak istediğinizi varsayın. Şirket ağına bağlanmak için gereken ayarları içeren bir VPN profili oluşturursunuz. Ardından bu profili iOS cihaz kullanan tüm kullanıcılara atarsınız. Kullanıcılar, VPN bağlantısını kullanılabilir ağlar listesinde görür ve ağa kolaylıkla bağlanabilir.
 
-Aşağıdaki platformlar için VPN profilleri oluştururken Intune özel yapılandırma ilkeleri kullanabilirsiniz:
+Aşağıdaki platformlar için VPN profilleri oluştururken Intune özel yapılandırma ilkelerini kullanabilirsiniz:
 
 * Android 4 ve üzeri
 * Windows 8.1 ve üzeri çalıştıran kayıtlı cihazlar
@@ -40,7 +40,7 @@ Aşağıdaki platformlar için VPN profilleri oluştururken Intune özel yapıla
 
 VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsiniz:
 
-|Bağlantı türü|Android<br>Android for Work|iOS|Mac OS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Bağlantı türü|Android<br>Android iş profilleri|iOS|Mac OS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Otomatik|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
 |Check Point Capsule VPN|Evet|Evet|Evet|Evet|Evet|Evet|
@@ -68,21 +68,21 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 3. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 4. VPN profili için bir **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden, VPN ayarlarını uygulamak istediğiniz cihaz platformunu seçin. Şu anda, VPN cihaz ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
-  - **Android**
-  - **Android for Work**
-  - **Android**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 ve üzeri**
-  - **Windows 10 ve üzeri**
+   - **Android**
+   - **Android kurumsal**
+   - **iOS**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 ve üzeri**
+   - **Windows 10 ve üzeri**
 6. **Profil** türü açılan listesinden **VPN**’yi seçin.
 7. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
-  - [Android ve Android for Work ayarları](vpn-settings-android.md)
-  - [iOS ayarları](vpn-settings-ios.md)
-  - [macOS ayarları](vpn-settings-macos.md)
-  - [Windows Phone 8.1 ayarları](vpn-settings-windows-phone-8-1.md)
-  - [Windows 8.1 ayarları](vpn-settings-windows-8-1.md)
-  - [Windows 10 ayarları](vpn-settings-windows-10.md) (Windows Holographic for Business dahil)
+   - [Android ve Android iş profili ayarları](vpn-settings-android.md)
+   - [iOS ayarları](vpn-settings-ios.md)
+   - [macOS ayarları](vpn-settings-macos.md)
+   - [Windows Phone 8.1 ayarları](vpn-settings-windows-phone-8-1.md)
+   - [Windows 8.1 ayarları](vpn-settings-windows-8-1.md)
+   - [Windows 10 ayarları](vpn-settings-windows-10.md) (Windows Holographic for Business dahil)
 8. İşiniz bittiğinde profilinizi **Oluşturun**
 
 Profil oluşturulur ve profil listesinde görüntülenir. Bu profili gruplara atamak için bkz. [cihaz profillerini atama](device-profile-assign.md).

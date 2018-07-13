@@ -10,7 +10,7 @@
   [Android ve Samsung Knox Standard ilke ayarları](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)’nda doğrulanan Samsung Knox Standard cihazlarının tam listesini bulabilirsiniz.
 
 
-- Android for Work [gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+- Android kurumsal [gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en).
 
 ### <a name="microsoft"></a>Microsoft
 

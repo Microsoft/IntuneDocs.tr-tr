@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744780"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905538"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturun.
 
@@ -54,7 +54,7 @@ Koşullu erişim yapılandırabilmek için önce aşağıdakileri doğrulayın:
 
 - Söz konusu cihaza dağıtılan cihaz uyumluluk ilkeleriyle **uyumluluk**.
 
-- Cihaz koşullu erişim ayarlarına uygun değilse, kullanıcıya oturum açtığında aşağıdaki iletilerden biri gösterilir:
+- Cihaz, koşullu erişim ayarlarına uyum sağlamıyorsa kullanıcıya oturum açtığında aşağıdaki iletilerden biri gösterilir:
     - Cihaz Intune’a kaydolmadıysa veya Azure Active Directory’de kayıtlı değilse, Şirket Portalı uygulamasını yükleme, cihazı kaydetme ve e-postayı etkinleştirme yönergelerinin bulunduğu bir ileti görüntülenir. Bu işlem cihazın Exchange ActiveSync kimliğini de Azure Active Directory’deki cihaz kaydıyla ilişkilendirir.
     - Cihaz uyumlu değilse, kullanıcıyı sorun hakkında bilgi bulabileceği ve sorunu düzeltebileceği Intune Şirket Portalı Web sitesine veya Şirket Portalı uygulamasına yönlendiren bir ileti görüntülenir.
 
@@ -63,7 +63,7 @@ Koşullu erişim yapılandırabilmek için önce aşağıdakileri doğrulayın:
 - Windows Phone 8.1 ve üzeri
 - iOS’ta yerel e-posta uygulaması.
 - Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri.
-- EAS posta istemcileri **Android for Work cihazlar:** Android for Work cihazlarda yalnızca **iş profilindeki** **Gmail** ve **Nine Work** uygulamaları desteklenir. Android for Work cihazlarda koşullu erişimin çalışması için Gmail veya Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız. Ayrıca bu uygulamaları da zorunlu yükleme olarak dağıtmanız gerekir.
+- EAS posta istemcileri **Android iş profili cihazları:** Android iş profili cihazlarında yalnızca **iş profilindeki** **Gmail** ve **Nine Work** uygulamaları desteklenir. Android iş profili cihazlarında koşullu erişimin çalışması için Gmail veya Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız. Ayrıca bu uygulamaları da zorunlu yükleme olarak dağıtmanız gerekir.
 
 > [!NOTE]
 > Android ve iOS için Microsoft Outlook uygulaması desteklenmez. 

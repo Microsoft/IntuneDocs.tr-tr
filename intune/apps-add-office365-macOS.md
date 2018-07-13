@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223620"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869515"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune ile macOS cihazlara Office 365 atama
 
-*Mağaza uygulaması* türü, macOS cihazlarına Office 365 uygulamaları atamanızı kolaylaştırır. Bu uygulama türünü kullanarak Word, Excel, PowerPoint, Outlook ve OneNote yükleyebilirsiniz. Uygulamaların daha güvende ve güncel tutulabilmesi amacıyla uygulamalar, Microsoft AutoUpdate (MAU) ile gelir. Intune konsolundaki uygulamalar listesinde tek bir uygulama olarak görüntülenmesini istediğiniz uygulamalar.
+Bu uygulama türü, macOS cihazlara Office 365 2016 uygulamaları atamanızı kolaylaştırır. Bu uygulama türünü kullanarak Word, Excel, PowerPoint, Outlook ve OneNote yükleyebilirsiniz. Uygulamaların daha güvende ve güncel tutulabilmesi amacıyla uygulamalar, Microsoft AutoUpdate (MAU) ile gelir. Intune konsolundaki uygulamalar listesinde tek bir uygulama olarak görüntülenmesini istediğiniz uygulamalar.
 
 
 ## <a name="before-you-start"></a>Başlamadan önce
@@ -70,7 +70,7 @@ Bu adımda, uygulama paketi için atamaları yapılandırın.
 2. **Office 365** bölmesinde **Atamalar**’ı seçin.
 3. Uygulama paketini kullanacak bir grup eklemek için **Grup ekle**’yi seçin.  
     **Grup ekle** bölmesi görüntülenir.
-4. **Atama türü** olarak **Gerekli** ayarlayın.
+4. **Atama türü**’nü **Gerekli** veya **Kullanılabilir** olarak ayarlayın.
 5. Paketi seçtiğiniz gruplara atayın. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md).
 
     >[!Note]

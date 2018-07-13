@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09a4d528a95d682bf12e6610480b1aa1bcbdb83
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6b68d7eda57d50c3a1cb55979590e8b07d9daf50
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829334"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904957"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Cihazları Intune ile uzaktan başlatma
 
@@ -31,12 +31,13 @@ ms.locfileid: "31829334"
 
 - Windows - Windows 8.1 ve üzerinde desteklenir
 - Windows Phone - Windows Phone 8.1 ve sonraki sürümlerde desteklenir
+- Android bilgi noktası cihazlar - Destekleniyor
 - iOS - Desteklenir
 
     > [!Note]  
     > Bu komut için, denetlenen bir cihaz ve **Cihaz Kilidi** erişim hakkı gerekir. Cihaz hemen yeniden başlatılır. Geçiş koduyla kilitlenen iOS cihazları, yeniden başlatma sonrasında Wi-Fi ağına yeniden katılmaz. Yeniden başlatma sonrasında, cihaz sunucuyla iletişim kuramayabilir.
 - macOS - Desteklenmiyor
-- Android - Desteklenmiyor
+- Android ve Android iş profili cihazları - Desteklenmiyor
 
 ## <a name="restart-a-device"></a>Cihazı yeniden başlatma
 

@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216335"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905232"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Cihaz kayıt yöneticisi hesabı kullanarak cihazları kaydetme
 
@@ -35,7 +35,7 @@ Kullanıcıların, cihaz kayıt yöneticileri olarak eklenmesi için [Azure port
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Cihaz kayıt yöneticisi senaryo örneği
 
-Bir restoran, garsonlar için 50 satış noktası tableti, mutfak çalışanları içinse sipariş izleyici istiyor. Çalışanların hiçbir zaman şirket verilerine erişmesi veya kullanıcı olarak oturum açması gerekmiyor. Intune yöneticisi, cihaz kayıt yöneticisi hesabı oluşturur ve bir restoran yöneticisini DEM hesabına ekler. Yönetici artık DEM yeteneklerine sahiptir. Yönetici, artık DEM kimlik bilgilerini kullanarak 50 tableti kaydedebilir.
+Bir restoran, garsonlar için 50 satış noktası tableti, mutfak çalışanları içinse sipariş izleyici istiyor. Çalışanların hiçbir zaman şirket verilerine erişmesi veya kullanıcı olarak oturum açması gerekmiyor. Intune yöneticisi, bir restoran yöneticisi için yeni cihaz kayıt yöneticisi hesabı oluşturur.  Bu hesap, yöneticinin birincil hesabından ayrıdır ve yalnızca paylaşılan cihazları Intune’a kaydetmek amacıyla kullanılır. Yönetici, artık DEM kimlik bilgilerini kullanarak 50 tableti kaydedebilir.
 
 Yalnızca [Azure portalındaki](https://portal.azure.com) kullanıcılar cihaz kayıt yöneticileri olabilir. Cihaz kayıt yöneticisi bir Intune yöneticisi olamaz.
 
@@ -54,7 +54,7 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
   - Şirket Portalı uygulamasında veya web sitesinde yalnızca yerel cihaz görünür.
   - Kullanıcılar, uygulama yönetimi için kullanıcı başına Apple Kimliği gereksinimlerinden dolayı kullanıcı lisanslarıyla Apple Volume Purchase Program (VPP) uygulamalarını kullanamaz.
   - (Yalnızca iOS) iOS cihazlarını kaydetmek için DEM kullanıyorsanız, cihaz kaydetmek için Apple Configurator, Apple Aygıt Kayıt Programı (DEP) veya Apple School Manager (ASM) kullanamazsınız.
-  - (Yalnızca Android) Tek bir DEM hesabıyla kaydedilebilen Android for Work cihaz sayısı sınırlıdır. DEM hesabı başına en fazla 10 Android iş profili cihazı kaydedilebilir. Bu sınırlama eski Android kayıtları için geçerli değildir.
+  - (Yalnızca Android) Tek bir DEM hesabıyla kaydedilebilen Android iş profili cihaz sayısı sınırlıdır. DEM hesabı başına en fazla 10 Android iş profili cihazı kaydedilebilir. Bu sınırlama eski Android kayıtları için geçerli değildir.
   - Cihazlar, cihaz lisansına sahipse VPP uygulamalarını yükleyebilir.
   - Her cihaz bir cihaz lisansı gerektirir. [Kullanıcı ve cihaz lisansları](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services) hakkında daha fazla bilgi edinin.
 

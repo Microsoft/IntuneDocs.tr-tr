@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832323"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905348"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune’da Wi-Fi ayarlarını yapılandırma
 
@@ -37,7 +37,7 @@ Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcıla
 Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
 - Android 4 ve üzeri
-- Android for Work
+- Android iş profilleri
 - iOS 8.0 ve üzeri
 - macOS (Mac OS X 10.11 ve üzeri)
 
@@ -55,8 +55,8 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
 4. **Profil oluştur** bölmesinde, Wi-Fi profili için **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinden, Wi-Fi ayarlarını uygulamak istediğiniz cihaz platformunu seçin. Şu anda, Wi-Fi ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
     - **Android**
-    - **Android for Work**
-    - **Android**
+    - **Android kurumsal**
+    - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 ve üzeri**
@@ -69,7 +69,7 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
 
    **Wi-Fi içeri aktarma** profili (Windows 8.1 ve üzeri için), Wi-Fi ayarlarını daha önce başka cihazdan dışarı aktarmış olduğunuz bir XML dosyası olarak içeri aktarmanıza olanak tanır.
 1. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
-    - [Android ve Android for Work ayarları](wi-fi-settings-android.md)
+    - [Android ve Android iş profili ayarları](wi-fi-settings-android.md)
     - [iOS ayarları](wi-fi-settings-ios.md)
     - [macOS ayarları](wi-fi-settings-macos.md)
     - [Windows 8.1 ve üzeri ayarları](wi-fi-settings-import-windows-8-1.md) (Windows Holographic for Business dahil)

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d917d2449e75b89db00d453b72940a93efb03321
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021889"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905011"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune'da özel ayarlarla profil oluşturma
 
@@ -39,8 +39,8 @@ Bu makalede, özel ayarlarla profil oluşturma işleminin temel adımları liste
 5. **Platform** açılan listesinden, özel ayarların uygulanacağı cihaz platformunu seçin. Aşağıdaki platformlardan birini seçebilirsiniz:
 
     - **Android**
-    - **Android for Work**
-    - **Android**
+    - **Android kurumsal**
+    - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 ve üzeri**
@@ -55,7 +55,7 @@ Bu makalede, özel ayarlarla profil oluşturma işleminin temel adımları liste
     - [Windows Phone 8.1 ayarları](custom-settings-windows-phone-8-1.md)
     - [Windows 10 ayarları](custom-settings-windows-10.md)
     - [Windows Holographic for Business ayarları](custom-settings-windows-holographic.md)
-    - [Android for Work ayarları](custom-settings-android-for-work.md)
+    - [Android iş profili ayarları](custom-settings-android-for-work.md)
 
 8. İşiniz bittiğinde **Oluştur**’u seçin.
 

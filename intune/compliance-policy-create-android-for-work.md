@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune - Azure’da Android for Work uyumluluk ilkesi oluşturma | Microsoft Docs
-description: Android for Work cihazlar için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın. Jailbreak uygulanmış cihazlara izin vermek, kabul edilebilir tehdit düzeyi ayarlamak, Google Play’i denetlemek, en düşük ve en yüksek işletim sistemi sürümü girmek, parola gereksinimlerinizi seçmek ve uygulamaları dışarıdan yüklemeye izin vermek için ilkeler yapılandırın.
+title: Microsoft Intune - Azure’da Android iş profili uyumluluk ilkesi oluşturma | Microsoft Docs
+description: Android iş profili cihazları için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın. Jailbreak uygulanmış cihazlara izin vermek, kabul edilebilir tehdit düzeyi ayarlamak, Google Play’i denetlemek, en düşük ve en yüksek işletim sistemi sürümü girmek, parola gereksinimlerinizi seçmek ve uygulamaları dışarıdan yüklemeye izin vermek için ilkeler yapılandırın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,32 +14,32 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047994"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905096"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Intune’daki Android for Work cihazlarına yönelik uyumluluk ilkesi ekleme
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Intune’daki Android iş profili cihazlarına yönelik uyumluluk ilkesi ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android for Work için Intune cihaz uyumluluk ilkesi, bu cihazların uyumlu kabul edilmek için uymak zorunda olduğu kuralları ve ayarları belirtir. Şirket kaynaklarına erişime izin vermek veya bunu engellemek için bu ilkeleri koşullu erişimle birlikte kullanabilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Farklı platformlar için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
+Android iş profili cihazları için Intune cihaz uyumluluk ilkesi, bu cihazların uyumlu kabul edilmek için uymak zorunda olduğu kuralları ve ayarları belirtir. Şirket kaynaklarına erişime izin vermek veya bunu engellemek için bu ilkeleri koşullu erişimle birlikte kullanabilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Farklı platformlar için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
 Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır.
 
 --------------------------
 
-|**ilke ayarı**| **Android for Work** |
+|**ilke ayarı**| **Android iş profili** |
 | --- | --- |
 | **PIN veya Parola yapılandırması** |  Karantinaya Alındı |
 | **Cihaz şifrelemesi** |  Karantinaya Alındı |
 | **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | Karantinaya Alındı (ayar değil) |
-| **e-posta profili** | Uygulanamaz |
+| **e-posta profili** | Geçerli değil |
 | **En düşük işletim sistemi sürümü** | Karantinaya Alındı |
 | **En yüksek işletim sistemi sürümü** | Karantinaya Alındı |
-| **Windows durum kanıtlama** |Uygulanamaz |
+| **Windows durum kanıtlama** |Geçerli değil |
 
 **Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)+
 
@@ -51,7 +51,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 ## <a name="create-a-device-compliance-policy"></a>Cihaz uyumluluğu ilkesi oluşturma
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **Platform** olarak **Android for Work**’ü seçin. **Ayarları Yapılandır**’ı seçin ve **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını girin. İşiniz bittiğinde **Tamam**’ı ve **Oluştur**’u seçin.
+5. **Platform** olarak **Android kurumsal**’ı seçin. **Ayarları Yapılandır**’ı seçin ve **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını girin. İşiniz bittiğinde **Tamam**’ı ve **Oluştur**’u seçin.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -60,7 +60,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="device-health"></a>Cihaz durumu
+## <a name="device-health"></a>Device health
 
 - **Kök erişim izni verilmiş cihazlar**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
 - **Cihazın Cihaz Tehdit Düzeyinde veya bunun altında olmasını gerektir**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. İzin verilen en yüksek tehdit düzeyini seçin:
@@ -77,9 +77,9 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 #### <a name="threat-scan-on-apps"></a>Uygulamalarda tehdit taraması
 
-İş profilleri olan cihazlarda (Android for Work), **Uygulamalarda tehdit taraması** ayarı bir yapılandırma ilkesi ayarı olarak bulunabilir. Yöneticiler, bu ayarı bir cihaz için etkinleştirebilirler.
+Android iş profili olan cihazlarda **Uygulamalarda tehdit taraması** ayarı bir yapılandırma ilkesi ayarı olarak bulunabilir. Yöneticiler, bu ayarı bir cihaz için etkinleştirebilirler.
 
-Kuruluşunuzda Android iş profilleri kullanılıyorsa, kayıtlı cihazlarınız için **Uygulamalarda tehdit taraması**’nı etkinleştirebilirsiniz. Bir cihaz profili oluşturun ve sistem güvenlik ayarının gerekli olmasını sağlayın. Daha fazla bilgi için bkz. [Intune’da Android for Work cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
+Kuruluşunuzda Android iş profilleri kullanılıyorsa, kayıtlı cihazlarınız için **Uygulamalarda tehdit taraması**’nı etkinleştirebilirsiniz. Bir cihaz profili oluşturun ve sistem güvenlik ayarının gerekli olmasını sağlayın. Daha fazla bilgi için bkz. [Intune’da iş profili cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
 
 ## <a name="device-property-settings"></a>Cihaz özelliği ayarları
 
@@ -106,13 +106,13 @@ Kuruluşunuzda Android iş profilleri kullanılıyorsa, kayıtlı cihazlarınız
 
 ### <a name="encryption"></a>Şifreleme
 
-- **Mobil cihazda şifreleme gerektir**: Android for Work cihazlarda şifreleme zorunlu olduğundan bu ayarı yapılandırmanız gerekmez.
+- **Mobil cihazda şifreleme gerektir**: Android iş profili cihazlarında şifreleme zorunlu olduğundan bu ayarı yapılandırmanız gerekmez.
 
 ### <a name="device-security"></a>Cihaz Güvenliği
 
-- **Bilinmeyen kaynaklardan gelen uygulamaları engelle**: Android for Work cihazlar bilinmeyen kaynaklardan yüklemeyi her zaman kısıtladığı için bu Android ayarını yapılandırmanız gerekmez.
+- **Bilinmeyen kaynaklardan gelen uygulamaları engelle**: Android iş profili cihazları bilinmeyen kaynaklardan yüklemeyi her zaman kısıtladığı için bu Android ayarını yapılandırmanız gerekmez.
 - **Şirket Portalı uygulaması çalışma zamanı bütünlüğü**: Şirket Portalı uygulamasında varsayılan çalışma zamanı ortamının yüklü olup olmadığını, doğru şekilde oturum açılıp açılmadığını ve uygulamanın bilinen bir kaynaktan indirilip indirilmediğini denetler.
-- **Cihazda USB hata ayıklamayı engelle**: İş için Android cihazlarında USB hata ayıklama zaten devre dışı olduğundan bu ayarları devre dışı bırakmanız gerekmez.
+- **Cihazda USB hata ayıklamayı engelle**: Android iş profili cihazlarında USB hata ayıklama zaten devre dışı olduğundan bu ayarları yapılandırmanız gerekmez.
 - **En düşük güvenlik düzeltme eki düzeyi**: Bir cihazda olabilecek en eski güvenlik düzeltme eki düzeyini seçin. En az bu düzeltme eki düzeyinde olmayan cihazlar uyumsuz kabul edilir. Tarihin `YYYY-MM-DD` biçiminde girilmesi gerekir.
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama

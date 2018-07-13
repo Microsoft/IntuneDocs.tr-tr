@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure kullanarak cihazlardaki şirket verilerini kaldırma | Microsoft Docs
-description: Microsoft Intune kullanarak cihazdaki şirket verilerini kaldırın ya da bir Android, Android for Work, iOS, macOS veya Windows cihazında fabrika sıfırlaması yapın. Ayrıca cihazı Azure Active Directory'den de silin.
+description: Microsoft Intune kullanarak cihazdaki şirket verilerini kaldırın ya da bir Android, Android iş profili, iOS, macOS veya Windows cihazda fabrika sıfırlaması yapın. Ayrıca cihazı Azure Active Directory'den de silin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091736"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906065"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Fabrika sıfırlamasını kullanarak, şirket verilerini kaldırarak veya cihazın kaydını el ile kaldırarak cihazları kaldırma
 
@@ -31,7 +31,7 @@ ms.locfileid: "37091736"
 
 ## <a name="factory-reset"></a>Fabrika sıfırlaması
 
-**Fabrika sıfırlaması** eylemi, cihazı fabrika varsayılan ayarlarına geri yükler. Kullanıcı verileri, **Kayıt durumu ve kullanıcı hesabını koru** onay kutusunu seçip seçmemenize bağlı olarak saklanır veya silinir.
+**Fabrika sıfırlaması** eylemi, cihazı fabrika varsayılan ayarlarına geri yükler. **Kayıt durumu ve kullanıcı hesabını koru** onay kutusunu seçerseniz kullanıcı verileri saklanır. Aksi takdirde sürücü güvenli bir şekilde silinir.
 
 |Fabrika sıfırlaması eylemi|**Kayıt durumu ve kullanıcı hesabını koru**|Intune yönetiminden kaldırıldı|Description|
 |:-------------:|:------------:|:------------:|------------|
@@ -108,9 +108,13 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve **Şirket verileri
 |Azure AD'den ayrılma|Azure AD kaydı kaldırılır.|Azure AD kaydı kaldırılır.|
 |Kişiler |Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.|Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Android iş profili
 
-Bir Android for Work cihazından şirket verilerinin kaldırılması, cihazdaki iş profilinde bulunan tüm verileri, uygulamaları ve ayarları kaldırır. Cihaz Intune yönetiminde devre dışı bırakıldı. Fabrika sıfırlaması Android for Work’te desteklenmez.
+Bir Android iş profili cihazdan şirket verilerinin kaldırılması, cihazdaki iş profilinde bulunan tüm verileri, uygulamaları ve ayarları kaldırır. Cihaz Intune yönetiminde devre dışı bırakıldı. Fabrika sıfırlaması Android iş profillerinde desteklenmez.
+
+### <a name="android-enterprise-kiosk-devices"></a>Android kurumsal bilgi noktası cihazları
+
+Android bilgi noktası cihazlarda yalnızca fabrika sıfırlaması yapabilirsiniz. Android bilgi noktası cihazlardan şirket verilerini kaldıramazsınız.
 
 
 ### <a name="macos"></a>Mac OS
@@ -150,6 +154,15 @@ Cihazları Intune portalından kaldırmak istiyorsanız, bunları belirli bir ci
 
 1. [Azure portalında Intune’da](https://aka.ms/intuneportal) oturum açın.
 2. **Cihazlar** > **Tüm cihazlar** > silmek istediğiniz cihazları seçin > **Sil**'i seçin.
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>Temizleme kuralları ile cihazları otomatik olarak silme
+Intune’u etkin olmayan, eski veya yanıt vermeyen cihazları otomatik olarak silmek üzere yapılandırabilirsiniz. Bu temizleme kuralları, cihaz kayıtlarınızın güncel kalması için cihazınızı kesintisiz bir şekilde izler. Bu şekilde silinen cihazlar, Intune yönetiminden kaldırılır.
+1. [Azure portalında Intune'da](https://aka.ms/intuneportal) oturum açın.
+2. **Cihazlar** > **Cihaz temizleme kuralları** > **Evet**’i seçin.
+3. **Şu kadar gün boyunca iade etme işlemi yapmayan cihazları sil** kutusuna 90 ila 270 arasında bir sayı girin.
+4. **Kaydet**’i seçin.
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Azure Active Directory portalından cihazları silme
 

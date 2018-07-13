@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6753e0232548d862b46a273f1be0105ad7f16d63
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 7f52c43f8918589c1b66034ad68908f4d5ddba6d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831954"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905130"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Android çalıştıran cihazlar için Microsoft Intune'da VPN ayarlarını yapılandırın 
 
@@ -30,7 +30,7 @@ Bu makale, Android çalıştıran cihazlarda VPN bağlantılarını yapılandır
 Aşağıdaki platformlar için VPN ayarları yapılandırabilirsiniz:
 
 - [Android](#android-vpn-settings)
-- [Android for Work](#android-for-work-vpn-settings)
+- [Android iş profili cihazları](#android-for-work-vpn-settings)
 
 Seçtiğiniz ayarlara bağlı olarak, aşağıdaki değerlerden bazıları yapılandırılamaz.
 
@@ -51,7 +51,7 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki değerlerden bazıları yapı
 - **Parmak izi** (yalnızca Check Point Capsule VPN) - VPN sunucusunun güvenilir olduğunu doğrulamak için kullanılan bir dize (örneğin "Contoso Parmak İzi Kodu") belirtin. Parmak izi, bağlanırken aynı parmak izini sunan herhangi bir sunucuya güvenmesi için istemciye gönderilebilir. Cihazda henüz parmak izi yoksa, parmak izini gösterirken kullanıcıdan bağlandığı VPN sunucusuna güvenmesini ister (kullanıcı parmak izini el ile doğrular ve bağlanmak için güven’i seçer).
 - **Citrix VPN öznitelikleri için anahtar ve değer çiftleri girin** (yalnızca Citrix) - VPN bağlantısının özelliklerini yapılandırmak için, Citrix tarafından sağlanan anahtar ve değer çiftlerini girin.
 
-## <a name="android-for-work-vpn-settings"></a>Android for Work VPN ayarları
+## <a name="android-work-profile-device-vpn-settings"></a>Android iş profili cihazları VPN ayarları
 
 **Bağlantı adı** - Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan son kullanıcılar bu adı görür.
 - **IP adresi veya FQDN** - Cihazların bağlanacağı VPN sunucusunun IP adresini veya tam etki alanı adını sağlayın. Örnekler: **192.168.1.1**, **vpn.contoso.com**.

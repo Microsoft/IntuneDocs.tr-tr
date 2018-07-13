@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223416"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869381"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
@@ -47,7 +47,7 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları
 3. **Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
 4. **Mobil uygulamalar** iş yükü bölmesindeki **Yönet**'in altında **Uygulamalar**’ı seçin.
 5. **Ekle**’yi seçin.
-6. **Uygulama ekle** bölmesindeki **Uygulama türü** listesinde, **Office 365 Office**'in altında **Windows 10**'u seçin.
+6. **Uygulama ekle** bölmesindeki **Uygulama türü** listesinde bulunan **Office 365 Suite**’in altında **Windows 10**’u seçin.
 
 Böylece uygulama paketini yapılandırabilirsiniz.
 
@@ -71,15 +71,15 @@ Bu adımda, uygulama paketi hakkında bilgi sağlarsınız. Bu bilgiler, Intune'
 2. **Uygulama Paketi Bilgileri** bölmesinde aşağıdakileri yapın:
     - **Paket Adı**: Uygulama paketinin Şirket Portalı’nda görüntülenen adını girin. Kullandığınız tüm paket adlarının benzersiz olduğundan emin olun. Aynı uygulama paketi adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
     - **Paket Açıklaması**: Uygulama paketi için bir açıklama girin. Örneğin dahil etmek üzere seçtiğiniz uygulamaları listeleyebilirsiniz.
-    - **Yayımcı**: Uygulama yayımcısının adını girin.
+    - **Yayımcı**: Yayımcı olarak Microsoft gösterilir.
     - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz kategorilerden birini ya da birkaçını seçin. Bu ayar, kullanıcıların şirket portalına göz atarken uygulama paketlerini daha kolay bulabilmesini sağlar.
     - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Bu seçenek uygulama paketini, kullanıcılar uygulamalara göz atarken Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüler.
     - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
-    - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin, örneğin *İK departmanı*.
+    - **Geliştirici**: Geliştirici olarak Microsoft gösterilir.
+    - **Sahip**: Sahip olarak Microsoft gösterilir.
     - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
-    - **Logo**: Kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek bir simge yükleyin.
+    - **Logo**: Kullanıcılar şirket portalına göz attığında uygulamayla birlikte Office 365 logosu görüntülenir.
 3. **Tamam**’ı seçin.
 
 ## <a name="configure-app-settings"></a>Uygulama ayarlarını yapılandırma

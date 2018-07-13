@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771814"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905215"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune'daki cihazlarınız için sertifika profili yapılandırma
 
@@ -43,7 +43,7 @@ Bu sertifika türlerinden her birinin kendi önkoşulları ve altyapı gereksini
     - iOS 8.0 ve üzeri
     - macOS 10.11 ve üzeri
     - Android 4.0 ve üzeri
-    - Android for Work
+    - Android iş profili
     - Windows 8.1 ve üzeri
     - Windows Phone 8.1 ve üzeri
     - Windows 10 ve üzeri
@@ -52,7 +52,7 @@ Bu sertifika türlerinden her birinin kendi önkoşulları ve altyapı gereksini
 
    - iOS 8.0 ve üzeri
    - Android 4.0 ve üzeri
-   - Android for Work
+   - Android iş profili
    - Windows 10 (masaüstü ve Mobile) ve üzeri
 
    Aşağıdaki platformları çalıştıran cihazlar için yalnızca **SCEP** sertifika profili kullanabilirsiniz:
@@ -84,7 +84,7 @@ Güvenilen Kök Sertifika Yetkilileri (CA) sertifikasını, veren CA'dan veya ve
 Güvenilen sertifika profili ayarlarken bu sertifikayı içeri aktarırsınız.
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Adım 3 - Güvenilen sertifika profilleri oluşturma
-SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen sertifika profili oluşturun. Her cihaz platformu için bir güvenilen sertifika profili ve SCEP veya PKCS profili gereklidir. Güvenilen sertifikalar oluşturma adımları her cihaz platformunda benzerdir.
+SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen sertifika profili oluşturun. Her cihaz platformu için bir güvenilen sertifika profili ve SCEP veya PKCS profili gereklidir. Güvenilen sertifikalar oluşturma adımları tüm cihaz platformlarında benzerdir.
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
@@ -95,8 +95,8 @@ SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen se
 5. **Platform** açılan listesinde, bu güvenilen sertifika için cihaz platformunu seçin. Şu anda, sertifika ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
 
     - **Android**
-    - **Android for Work**
-    - **Android**
+    - **Android kurumsal**
+    - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 ve üzeri**

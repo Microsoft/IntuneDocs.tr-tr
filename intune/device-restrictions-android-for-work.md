@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune - Azure'da Android for Work için cihaz kısıtlamaları | Microsoft Docs
-description: Android for Work çalıştıran cihazlarda, kopyalama ve yapıştırma, bildirimleri gösterme, uygulama izinleri, veri paylaşımı, parola uzunluğu, oturum açma hataları, kilidi açmak için parmak izi kullanma, parolaları yeniden kullanma ve Work kişileriyle Bluetooth paylaşımını etkinleştirme gibi bazı ayarları kısıtlayabilirsiniz.
+title: Microsoft Intune - Azure’da Android iş profili cihaz kısıtlamaları | Microsoft Docs
+description: Android iş profili cihazlarında kopyalama ve yapıştırma, bildirimleri gösterme, uygulama izinleri, veri paylaşımı, parola uzunluğu, oturum açma hataları, kilidi açmak için parmak izi kullanma, parolaları yeniden kullanma ve iş kişileriyle Bluetooth paylaşımını etkinleştirme gibi bazı ayarları kısıtlayabilirsiniz.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046324"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905946"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune'da Work cihaz kısıtlama ayarları
 
-Bu makalede, Android for Work çalıştıran cihazlar için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları listelenir.
+Bu makalede, Android iş profili cihazları için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları listelenir.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ Bu makalede, Android for Work çalıştıran cihazlar için yapılandırabilece�
 ### <a name="general-settings"></a>Genel Ayarlar
 
 - **İş profilleri ve kişisel profiller arasında kopyalama ve yapıştırma**: İş uygulamaları ve kişisel uygulamalar arasında kopyalama ve yapıştırma işlemlerini denetler. Engellemeyi etkinleştirmek için **Engelle**’yi seçin. Engellemeyi devre dışı bırakmak için **Yapılandırılmadı**’yı seçin.
-- **İş ve kişisel profiller arasında veri paylaşımı**: İş profilindeki uygulamaların kişisel profildeki uygulamalarla paylaşıp paylaşamayacağını denetleyin. Bu ayar, uygulamalar içindeki paylaşma eylemlerini (Chrome tarayıcısı uygulamasındaki **Paylaş...** seçeneği gibi) denetler ve kopyala/yapıştır pano davranışında geçerli değildir. [Uygulama koruma ilkesi ayarlarından](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) farklı olarak, cihaz kısıtlama ayarları Intune portalından yönetilir ve yönetilen uygulamaları yalıtmak için Android for Work iş profili ayrımını kullanır. Aşağıdakilerden birini seçin:
+- **İş ve kişisel profiller arasında veri paylaşımı**: İş profilindeki uygulamaların kişisel profildeki uygulamalarla paylaşıp paylaşamayacağını denetleyin. Bu ayar, uygulamalar içindeki paylaşma eylemlerini (Chrome tarayıcısı uygulamasındaki **Paylaş...** seçeneği gibi) denetler ve kopyala/yapıştır pano davranışında geçerli değildir. [Uygulama koruma ilkesi ayarlarından](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) farklı olarak, cihaz kısıtlama ayarları Intune portalından yönetilir ve yönetilen uygulamaları yalıtmak için Android iş profili bölümünü kullanır. Aşağıdakilerden birini seçin:
   - **Varsayılan paylaşım kısıtlamaları**: Cihazın, Android sürümüne göre farklılık gösteren varsayılan paylaşım davranışı. Kişisel profilden iş profiline paylaşmaya varsayılan olarak izin verilir. Buna karşın iş profilinden kişisel profile paylaşma varsayılan olarak engellenir. Bu ayar, iş profilinden kişisel profile veri paylaşılmasını önler. Google, 6.0 ve sonrası sürümleri çalıştıran cihazlarda, kişisel profilden iş profiline verileri paylaşmayı engellemek için bir yol sunmaz.
   - **İş profilindeki uygulamalar kişisel profilden gelen paylaşım isteklerini işleyebilir**: Kişisel profilden iş profiline paylaşıma izin veren yerleşik Android özelliğini etkinleştirir. Etkinleştirildiğinde, kişisel profildeki bir uygulamadan gelen bir paylaşım isteği, iş profilindeki uygulamalarla paylaşım kullanabilir. Bu ayar, 6.0 öncesi sürümleri çalıştıran Android cihazlarının varsayılan davranışıdır.
   - **Sınırlar arası paylaşıma izin ver**: İş profili sınırının ötesinde her iki yönde paylaşımı etkinleştirir. Bu ayarı seçtiğinizde, iş profilinizdeki uygulamalar kişisel profildeki rozetsiz uygulamalar ile veri paylaşabilir. Bu ayarla, iş profilindeki yönetilen uygulamalar, cihazın yönetilmeyen kısmındaki uygulamalarla paylaşım yapabilir. O yüzden bu ayarı dikkatli kullanın.
@@ -48,7 +48,7 @@ Bu makalede, Android for Work çalıştıran cihazlar için yapılandırabilece�
 
    Son kullanıcıların iş profiline el ile hesap eklemesini veya profilden hesap kaldırmasını önler.
 
-   Örneğin, Gmail uygulamasını bir Android for Work profiline dağıttığınızda, son kullanıcıların bu iş profiline hesap eklemesini veya buradan kaldırmasını engelleyebilirsiniz.
+   Örneğin, Gmail uygulamasını bir Android iş profiline dağıttığınızda, son kullanıcıların bu iş profiline hesap eklemesini veya buradan kaldırmasını engelleyebilirsiniz.
 
 - **Bluetooth ile kişi paylaşımı**: Bluetooth kullanarak eşleştirilmiş bir cihazdan, örneğin araba, iş kişilerine erişime izin verir. Bu ayar varsayılan olarak yapılandırılmamıştır ve iş profili kişileri gösterilmez. Bu paylaşıma izin verip iş profili kişilerini görüntülemek için **Etkinleştir**’i seçin. Bu ayar, Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları için geçerlidir. Bunu etkinleştirmek, bazı Bluetooth cihazlarının ilk bağlantı sırasında iş kişilerini önbelleğe almasına izin verebilir. İlk eşleme/eşitleme sonrasına bunu devre dışı bırakmak ise Bluetooth cihazından iş kişilerini kaldırmayabilir.
 

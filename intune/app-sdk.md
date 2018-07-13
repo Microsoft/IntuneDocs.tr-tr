@@ -1,27 +1,20 @@
----
-title: Intune App SDK’sının yararları
-titlesuffix: Microsoft Intune
-description: Intune Uygulama SDK'sı hem iOS hem de Android platformu için kullanılabilir ve Microsoft Intune ile mobil uygulama yönetim özelliklerini etkinleştirir.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-ms.reviewer: aanavath
-ms.suite: ems
+--
+# <a name="required-metadata"></a>gerekli meta veriler
+
+başlık: Intune Uygulama SDK’sının avantajları başlık son eki: Microsoft Intune açıklama: Intune Uygulama SDK’sı, hem iOS hem de Android platformları için kullanılabilir ve Microsoft Intune ile mobil uygulama yönetim özelliklerini etkinleştirir.
+anahtar sözcükler: yazar: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: makale ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+
+# <a name="optional-metadata"></a>isteğe bağlı meta veriler
+
+#<a name="robots"></a>ROBOTS:
+#<a name="audience"></a>audience:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: aanavath ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-classic
-ms.openlocfilehash: 33e1cb6953891fa6d62841d10bc8011768938ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
-ms.translationtype: HT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223586"
+
 ---
+
 # <a name="intune-app-sdk-overview"></a>Intune Uygulama SDK'sına genel bakış
 iOS ve Android için kullanılabilen Intune uygulama SDK'sı, uygulamanızı Intune uygulama koruma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için API’leri kullanarak uygulamanızın davranışını, uygulama katılımınızı gerektiren özelliklere göre özelleştirebilirsiniz.
 
@@ -70,3 +63,8 @@ BT yöneticileri, son kullanıcıların uygulamaya erişmesinden önce cihazın 
 Kişisel cihaz kullanan çok sayıda kullanıcı cihazını bir Mobil Cihaz Yönetimi (MDM) sağlayıcısına kaydetmeden şirket verilerine erişmeyi ister. MDM kaydı cihazın genel denetimini gerektirdiğinden, kullanıcılar genellikle kendi kişisel cihazlarının denetimini şirketlerine verme konusunda tereddütlüdür.
 
 Cihaz kaydı olmadan uygulama koruma, Microsoft Intune hizmetinin uygulama koruma ilkesini bir cihaz yönetim kanalı kullanmadan, doğrudan uygulamaya dağıtmasını sağlar.
+
+### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Citrix mVPN ile isteğe bağlı uygulama VPN bağlantıları 
+Cihazları ve uygulamaları Citrix XenMobile MDX ve Microsoft Intune bileşimi ile yönetebilirsiniz. Bu bileşim, Citrix’in mVPN teknolojisini kullanırken uygulamaları Intune uygulama koruma ilkesiyle yönetebileceğiniz anlamına gelir. Citrix ile tümleştirme, iOS ve Android için Intune Uygulama SDK’sının yanı sıra iOS ve Android için Intune Uygulama Sarmalama Aracı (-citrix bayrağı olan) ile kullanılabilir.
+ 
+Citrix MDX hakkında daha fazla bilgi edinmek için bkz. [MDX Toolkit hakkında](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [iOS için Citrix MDX uygulama sarmalayıcı](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) ve [Android için Citrix MDX uygulama sarmalayıcı](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html).

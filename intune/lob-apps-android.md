@@ -15,21 +15,21 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22470356c921eea17e4d2b3d57f796fe51568ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224492"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905045"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir Android iş kolu uygulaması ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-İş kolu (LOB) uygulaması, bir uygulama yükleme dosyasından Intune'a eklediğiniz uygulamadır. Bu tür bir uygulama genellikle şirket içinde yazılmıştır. Intune, LOB uygulamasını kullanıcının cihazlarına yükler. 
+İş kolu (LOB) uygulaması, bir uygulama yükleme dosyasından Intune'a eklediğiniz uygulamadır. Bu tür bir uygulama genellikle şirket içinde yazılmıştır. Intune, LOB uygulamasını kullanıcının cihazına yükler. 
 
 > [!Note]
-> Google Play for Work mağazasındaki LOB uygulamaları hakkında daha fazla bilgi edinmek için, bkz. [Google Play for Work mağazasından bir iş kolu uygulaması ile çalışma](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-google-play-for-work-store). 
+> Yönetilen Google Play mağazasındaki LOB uygulamaları hakkında daha fazla bilgi edinmek için bkz. [Yönetilen Google Play mağazasından bir iş kolu uygulaması ile çalışma](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store). 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>1. Adım: Yazılım kurulum dosyasını belirtme
 

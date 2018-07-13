@@ -1,23 +1,23 @@
 ---
 title: Microsoft Intune - Azure'da Windows cihaz uyumluluk ilkesi oluşturma | Microsoft Docs
-description: Windows Phone 8.1, Windows 8.1 ve sonrası, Windows 10 ve sonrası cihazlar için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın. Surface Hub ve Windows Holographic for Business da dahil olmak üzere en düşük ve en yüksek işletim sistemi, parola kısıtlamaları ve uzunluğu, BitLocker gerektirme, kabul edilebilir tehdit düzeyi ayarlama, veri deposunda şifrelemeyi etkinleştirme konularında uyumluluk denetimi yapın.
+description: Windows Phone 8.1, Windows 8.1 ve sonrası, Windows 10 ve sonrası cihazlar için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın. Surface Hub ve Windows Holographic for Business da dahil olmak üzere cihazlarda en düşük ve en yüksek işletim sistemi uyumluluğunu denetleyin, parola kısıtlamaları ve uzunluğunu ayarlayın, BitLocker’ı gerekli kılın, üçüncü taraf AV çözümlerini denetleyin, kabul edilebilir tehdit düzeyini ayarlayın ve veri deposunda şifrelemeyi etkinleştirin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744916"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909346"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için cihaz uyumluluk ilkesi ekleme
 
@@ -115,6 +115,8 @@ Windows 8.1 bilgisayarları **3** sürümünü döndürür. Windows için işlet
 
 HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Sistem Durumu Kanıtlama CSP’si](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 
+Windows Defender ATP’yi (Gelişmiş Tehdit Koruması) tehdit savunma hizmetiniz olarak ayarlamak için bkz. [Koşullu erişimle Windows Defender ATP’yi etkinleştirme](advanced-threat-protection.md).
+
 ### <a name="device-properties"></a>Cihaz özellikleri
 
 - **En düşük işletim sistemi sürümü**: İzin verilen en düşük sürümü **major.minor.build.CU** biçiminde girin. Doğru değeri almak için, komut istemini açın ve `ver` yazın. `ver` komutu, sürümü şu biçimde döndürür:
@@ -164,6 +166,11 @@ HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Sis
 #### <a name="encryption"></a>Şifreleme
 
 - **Bir cihazda veri deposu şifreleme**: Cihazlarınızda veri deposunu şifrelemek için **Gerektir**’i seçin.
+
+#### <a name="device-security"></a>Cihaz Güvenliği
+
+- **Virüsten koruma**: **Gerektir** olarak ayarlandığında, Windows Güvenlik Merkezi’ne kaydedilmiş Symantec ve Windows Defender gibi virüsten koruma çözümlerini kullanarak uyumluluğu denetleyebilirsiniz. **Yapılandırılmadı** olarak bırakıldığında, Intune cihazda herhangi bir AV çözümünün yüklü olup olmadığını denetlemez.
+- **Casus yazılımdan koruma**: **Gerektir** olarak ayarlandığında, Windows Güvenlik Merkezi’ne kaydedilmiş Symantec ve Windows Defender gibi casus yazılımdan koruma çözümlerini kullanarak uyumluluğu denetleyebilirsiniz. **Yapılandırılmadı** olarak bırakıldığında, Intune cihazda herhangi bir casus yazılımdan koruma çözümünün yüklü olup olmadığını denetlemez.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
