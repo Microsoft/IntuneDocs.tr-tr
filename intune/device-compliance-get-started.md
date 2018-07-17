@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905079"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225451"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama
 
@@ -88,7 +88,7 @@ Cihaz uyumluluk ilkelerini kullanmak için şunlar gereklidir:
 
 Bir cihaz Intune’a kaydedildiğinde Azure AD kayıt işlemi başlar. Bu işlem, Azure AD’de cihazın özniteliklerini güncelleştirir. En önemli bilgilerden biri, cihaz uyumluluk durumudur. Bu uyumluluk durumu, e-posta veya diğer şirket kaynaklarına erişimi engellemek veya mümkün kılmak için koşullu erişim ilkeleri tarafından kullanılır.
 
-[Azure AD kayıt işlemi](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) daha fazla bilgi sağlamaktadır.
+[Azure AD kayıt işlemi](https://docs.microsoft.com/azure/active-directory/device-management-introduction) daha fazla bilgi sağlamaktadır.
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>Tek bir cihaz yapılandırma profili durumu atama
 

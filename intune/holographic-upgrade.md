@@ -13,17 +13,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08763aa527f24ff7b357603be5e3bd4da5083b45
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e6a71d48e81914808b9af037692a44e4f651bf55
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830442"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224781"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Windows Holographic çalıştıran cihazları Windows Holographic for Business’a yükseltme
 
 
-Microsoft Intune ile Windows Holographic çalıştıran cihazları yönetmek için cihazları Windows Holographic’ten Windows Holographic for Business’a yükseltmeniz gerekir. Yükseltmeyi yapmak için bir Sürüm Yükseltme profili oluşturabilirsiniz. Microsoft HoloLens için ise yükseltme için gereken lisansı almak üzere Commercial Suite satın alabilirsiniz. Daha fazla bilgi için bkz. [Windows Holographic for Business özelliklerini etkinleştirme](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise).
+Microsoft Intune ile Windows Holographic çalıştıran cihazları yönetmek için cihazları Windows Holographic’ten Windows Holographic for Business’a yükseltmeniz gerekir. Yükseltmeyi yapmak için bir Sürüm Yükseltme profili oluşturabilirsiniz. Microsoft HoloLens için ise yükseltme için gereken lisansı almak üzere Commercial Suite satın alabilirsiniz. Daha fazla bilgi için bkz. [Windows Holographic for Business özelliklerini etkinleştirme](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise).
 
 ## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>Sürüm Yükseltme cihaz yapılandırma profili ayarlamak için
 
