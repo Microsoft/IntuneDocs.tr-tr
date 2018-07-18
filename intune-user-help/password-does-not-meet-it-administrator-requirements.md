@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/10/2017
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,37 +15,42 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fd221749ced3535ed72df4fda705430bc0f1f385
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6011e46a3176d55f35310292b55f4786d131f269
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017810"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38219838"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Parolanız şirketinizin destek biriminin gereksinimlerini karşılamıyor
 
-Şirket veya okul kaynaklarınıza erişmek için kullandığınız parola, şirketinizin destek biriminin ayarladığı bir veya birkaç gereksinimi karşılamıyor. Sorunu düzeltmek için cihazınızda gösterilen yönergeleri izleyin. Sorunların açıklamaları aşağıda listelenmiştir.
+Cihazınızı korumaya yardımcı olmak için şirket desteğinizin parolaya ihtiyacı vardır. Şu anda şirket veya okul kaynaklarınıza erişmek için kullandığınız parola, şirketinizin destek biriminin ayarladığı bir veya birkaç gereksinimi karşılamıyor. Sorunu düzeltmek için cihazınızda gösterilen yönergeleri izleyin. Sorunların açıklamaları aşağıda listelenmiştir.
 
-PIN veya parola ayarlama adımları için sahip olduğunuz cihaz türü ile eşleşen bağlantıyı kullanın:
+PIN değerinizi veya parolanızı ayarlama adımları için sahip olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
 
 - [Android cihazınızın PIN’ini veya parolasını ayarlama](set-your-pin-or-password-android.md)
 - [iOS cihazınızın geçiş kodunu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
 - [Windows cihazınızın parolasını ayarlama veya değiştirme](set-or-change-your-password-windows.md)
 
-PIN veya parola sorunu açıklamaları:
+> [!NOTE]
+> Parolanızı şirketinizin destek gereksinimleriyle uyumlu hale getirme konusunda sorun yaşıyorsanız, şirketinizin destek birimine başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
 
-- **Parola karmaşık karakterler içermiyor**. Şirketinizin destek birimi, parolanızda karmaşık karakterler kullanmanızı gerekli hale getirmiş. Sayılar, büyük harfler ve $, % ve # gibi semboller karmaşık karakter örnekleri olabilir.
+## <a name="pin-or-password-issue-descriptions"></a>PIN veya parola sorunu açıklamaları
 
-- **Parola fazla basit ve yeterince güvenli değil**. Basit parola örnekleri 1234 veya 1111 olabilir. Ne tür parolaları izin verildiğinden emin değilseniz, parolanızın örnekteki gibi sıralı veya tekrarlanan sayılar içermemesini sağlamayı deneyin.
+| **Sorun** | **Açıklama** |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Parola karmaşık karakterler içermiyor.** | Şirketinizin destek birimi, parolanızda karmaşık karakterler kullanmanızı gerekli hale getirmiş. Sayılar, büyük harfler ve $, % ve # gibi semboller karmaşık karakter örnekleri olabilir. |
+| **Parola fazla basit ve yeterince güvenli değil.** | Basit parola örnekleri 1234 veya 1111 olabilir. Ne tür parolaları izin verildiğinden emin değilseniz, parolanızın örnekteki gibi sıralı veya tekrarlanan sayılar içermemesini sağlamayı deneyin. |
+| **Parolanın süresi doldu.** | Parolanızın süresi dolduğu için şirketinizin destek birimi tarafından ayarlanmış gereksinimleri karşılayan yeni bir parola ayarlamanız gerekir. |
+| **Parola ayarlanmadı.** | Cihazınızda iş e-postalarınıza ve verilerinize erişebilmek için önce şirketinizin destek birimi tarafından ayarlanmış gereksinimleri karşılayan bir parola ayarlamanız gerekir. |
+| **Parola fazla kısa.** | Şirketinizin destek birimi, daha fazla karakterden oluşan daha uzun bir parola kullanmanızı gerekli hale getirmiş. |
+| **Parolanız çok kısa süre önce kullanıldı.** | Şirketinizin destek birimi, geçmişte kullandığınız parolaları kullanmanızı engelliyor. Daha önce kullanmadığınız bir parola seçin. |
+| **Parola, gereksinimleri karşılamaya yetecek kadar karmaşık değil.** | Şirketinizin destek birimi, parolanızda daha karmaşık karakterler kullanmanızı gerekli hale getirmiş. Sayılar, büyük harfler ve $, % ve # benzeri semboller gibi karakterler kullanmayı deneyin. Cihazınızdaki diğer hesaplar için de geçerli olabileceğinden, parolanızın BT tarafından cihazınız için ayarlanan gereksinimleri karşıladığından emin olmak üzere diğer iş hesaplarını da kontrol ettiğinizden emin olun. |
 
-- **Parolanın süresi doldu**. Parolanızın süresi dolduğu için şirketinizin destek birimi tarafından ayarlanmış gereksinimleri karşılayan yeni bir parola ayarlamanız gerekir.
+## <a name="next-steps"></a>Sonraki adımlar
 
-- **Parola ayarlanmadı**. Cihazınızda iş e-postalarınıza ve verilerinize erişebilmek için önce şirketinizin destek birimi tarafından ayarlanmış gereksinimleri karşılayan bir parola ayarlamanız gerekir.
+PIN değerinizi veya parolanızı ayarlama adımları için sahip olduğunuz cihaz türüyle eşleşen bağlantıyı kullanın:
 
-- **Parola fazla kısa**. Şirketinizin destek birimi, daha fazla karakterden oluşan daha uzun bir parola kullanmanızı gerekli hale getirmiş.
-
-- **Parolanız çok kısa süre önce kullanıldı**. Şirketinizin destek birimi, geçmişte kullandığınız parolaları kullanmanızı engelliyor. Daha önce kullanmadığınız bir parola seçin.
-
-- **Parola, gereksinimlerini karşılamaya yetecek kadar karmaşık değil**. Şirketinizin destek birimi, parolanızda daha karmaşık karakterler kullanmanızı gerekli hale getirmiş. Sayılar, büyük harfler ve $, % ve # benzeri semboller gibi karakterler kullanmayı deneyin. Cihazınızdaki diğer hesaplar için de geçerli olabileceğinden, parolanızın BT tarafından cihazınız için ayarlanan gereksinimleri karşıladığından emin olmak üzere diğer iş hesaplarını da kontrol ettiğinizden emin olun.
-
-Parolanızı gereksinimlerle uyumlu hale getirme konusunda sorun yaşıyorsanız, şirketinizin destek birimine başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+- [Android cihazınızın PIN’ini veya parolasını ayarlama](set-your-pin-or-password-android.md)
+- [iOS cihazınızın geçiş kodunu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
+- [Windows cihazınızın parolasını ayarlama veya değiştirme](set-or-change-your-password-windows.md)

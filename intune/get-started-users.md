@@ -15,12 +15,12 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021578"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949484"
 ---
 # <a name="get-started-managing-users"></a>Kullanıcıları yönetmeye başlama
 
@@ -31,9 +31,11 @@ Kuruluşunuzdaki tüm farklı kişileri düşünün. Şirket kaynaklarını kull
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Microsoft Intune** bölmesini açtıktan sonra **Kullanıcılar**’ı seçin. **Tüm Kullanıcılar** sayfasında **+ Yeni kullanıcı**’yı seçin.
-4. Kullanıcının **Ad** ve **Kullanıcı adı** gibi ayrıntılarını girin. Kullanıcı adının etki alanı adı kısmı, "contoso.onmicrosoft.com" gibi ilk varsayılan etki alanı adı veya "contoso.com" gibi doğrulanmış, federasyon olmayan bir etki alanı adı olmalıdır.
-5. **Gruplar**'ın altından kullanıcının ekleneceği sınama grubunu seçin.
-6. Bir sınama cihazında oturum açmak üzere kullanabilmek için otomatik olarak oluşturulan kullanıcı parolasını kaydedin. Bu parolayı, hatırlayabilecekleri normal bir parola ile değiştirebilmeleri için kullanıcılara vermelisiniz.
+4. Kullanıcının **Ad** ve **Kullanıcı adı** gibi ayrıntılarını girin. Kullanıcı adının etki alanı adı kısmı şu etki alanlarından biri olmalıdır:
+    - ilk varsayılan etki alanı adı olan “contoso.onmicrosoft.com” etki alanı adı veya
+    - doğrulanmış, federasyon olmayan “contoso.com” gibi bir etki alanı adı.
+5. **Gruplar**'ın altından kullanıcının ekleneceği bir [grup](get-started-groups.md) seçin.
+6. Bir test cihazında oturum açmak üzere kullanabilmek için otomatik olarak oluşturulan kullanıcı parolasını kaydedin. Bu parolayı, hatırlayabilecekleri normal bir parola ile değiştirebilmeleri için kullanıcılara vermelisiniz.
 7. **Kullanıcı** bölmesinde **Oluştur**’u seçin.
 
 ## <a name="assigning-licenses-to-users"></a>Kullanıcılara lisans atama

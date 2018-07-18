@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905164"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039310"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune’da bir cihazın geçiş kodunu sıfırlama veya kaldırma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bir cihazda yeni bir geçiş kodu oluşturmak için **Geçiş kodunu kaldır** eylemini kullanın.
+Bir cihazda yeni bir geçiş kodu oluşturmak için **Geçiş kodunu kaldır** eylemini kullanın. Bu eylem yalnızca iş profili için PIN sıfırlaması ister. Android iş profillerinde cihaz PIN sıfırlaması desteklenmez.
 
-## <a name="supported-platforms"></a>Desteklenen platformlar
+## <a name="work-profile-pin-reset-supported-platforms"></a>İş profili PIN sıfırlamasını destekleyen platformlar
 
-- Bir İş profiliyle kaydedilmiş sürüm 8.0 ve üzeri Android cihazlar
+- Bir iş profiliyle kaydedilmiş sürüm 8.0 ve üzeri Android cihazlar 
 - Sürüm 6.0 veya öncesi Android cihazlar
 - Android kurumsal bilgi noktası cihazları
 - iOS 
@@ -49,7 +49,9 @@ Bir cihazda yeni bir geçiş kodu oluşturmak için **Geçiş kodunu kaldır** e
 
 ## <a name="resetting-android-work-profile-passcodes"></a>Android iş profili geçiş kodlarını sıfırlama
 
-Desteklenen Android iş profili cihazları, yeni bir yönetilen profil kilidini açma parolası veya son kullanıcı için bir yönetilen profil sınaması alır. Android 8.0 İş profili cihazlarında son kullanıcılar, kayıt tamamlandıktan hemen sonra sıfırlama geçiş kodlarını etkinleştirmeleri için bir bildirim alır. Bildirim, bir İş profili parolası gerekli ve ayarlıysa görüntülenir. Geçiş kodu girildikten sonra bildirim kaybolur.
+Desteklenen Android iş profili cihazları, yeni bir yönetilen profil kilidini açma parolası veya son kullanıcı için bir yönetilen profil sınaması alır. 
+
+Android 8.0 İş profili cihazlarında son kullanıcılar, kayıt tamamlandıktan hemen sonra sıfırlama geçiş kodlarını etkinleştirmeleri için bir bildirim alır. Bildirim, bir İş profili parolası gerekli ve ayarlıysa görüntülenir. Geçiş kodu girildikten sonra bildirim kaybolur.
 
 ## <a name="resetting-ios-passcodes"></a>iOS geçiş kodlarını sıfırlama
 

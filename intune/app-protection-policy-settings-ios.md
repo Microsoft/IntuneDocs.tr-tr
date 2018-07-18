@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d0afd1f1944101b2162d9115e84ea5aaac0abf2
-ms.sourcegitcommit: 3dbd73631dd0042dd013a380f4c15dfe284576c0
+ms.openlocfilehash: 65827fe280535aa48d1d44eda9fd8482002c2c3b
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36882537"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028771"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS uygulama koruma ilkesi ayarları
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,7 +75,7 @@ Intune uygulama koruma ilkesinin, belirli senaryolarda veri aktarımına hedef v
 | **En düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tut** | Uygulamanın kullanılabilmesi için en düşük Intune uygulama koruma ilkesi SDK sürümünü zorunlu tutmak için **Evet**’i seçin. Cihazın Intune uygulama koruma ilkesi SDK sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. <br> <br> Intune uygulama koruma ilkesi SDK’sı hakkında daha fazla bilgi için bkz. [Intune Uygulama SDK'sına genel bakış](app-sdk.md). <br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler. <br><br> **Not:** Uygulamanın Intune SDK sürüm 7.0.1 veya üstü olmasını gerektirir. | Hayır |
 
 > [!NOTE]
-> Erişim bölümünde yapılandırılan birden çok Intune uygulama koruma ayarının, aynı uygulama ve kullanıcı grubu için iOS'ta nasıl çalıştığı hakkında daha fazla bilgi edinmek için bkz. [Intune MAM sık sorulan sorular](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios).
+> Erişim bölümünde yapılandırılan birden çok Intune uygulama koruma ayarının, aynı uygulama ve kullanıcı grubu için iOS'ta nasıl çalıştığı hakkında daha fazla bilgi edinmek için bkz. [Intune MAM sık sorulan sorular](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios) ve [Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silme](app-protection-policies-access-actions.md).
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook uygulaması için eklentiler
 

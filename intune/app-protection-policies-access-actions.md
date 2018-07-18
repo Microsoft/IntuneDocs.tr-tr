@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2cfd426a0ae7165a7aae60a90d104852fd834db6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909125"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993743"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -36,7 +36,7 @@ Bu ayarları kullanarak, uyumsuzluk durumunda son kullanıcının cihazından ş
 3. **Intune** bölmesinde **Mobil uygulamalar** > **Uygulama koruma ilkeleri**’ni seçin.
 4. **İlke ekle**’ye tıklayın (Mevcut bir ilkeyi de düzenleyebilirsiniz). 
 5. İlke için yapılandırmaya uygun ayarların bir listesini görmek üzere **Gerekli ayarları yapılandır**’a tıklayın. 
-6. **Ayarlar** bölmesinde aşağı kaydırın, **Erişim Eylemleri** adlı düzenlenebilir bir tablo göreceksiniz.
+6. Ayarlar bölmesinde ekranı aşağı kaydırın, **Erişim Eylemleri** adlı düzenlenebilir bir tablo göreceksiniz.
 
     ![Intune uygulama koruma erişim eylemlerinin ekran görüntüsü](./media/apps-selective-wipe-access-actions01.png)
 
@@ -50,6 +50,7 @@ Bu ayarları kullanarak, uyumsuzluk durumunda son kullanıcının cihazından ş
 
 Uygulama koruma ilkesi ayarları tablosunda **Ayar**, **Değer**, ve **Eylem** sütunları bulunur.
 
+### <a name="ios-policy-settings"></a>iOS ilke ayarları
 iOS’ta **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler yapılandırabilirsiniz:
 -  En fazla PIN denemesi
 -  Çevrimdışı kullanım süresi
@@ -58,6 +59,19 @@ iOS’ta **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler yap
 -  En düşük uygulama sürümü
 -  En düşük SDK sürümü
 -  Cihaz modeli/modelleri
+
+**Cihaz modelleri** ayarını kullanmak için iOS model tanımlayıcılarının noktalı virgülle ayrılmış bir listesini ekleyin. [HockeyApp'in destek belgelerindeki](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) Device Type sütunu altında bir iOS model tanımlayıcısı bulabilirsiniz.<br>
+Örnek giriş: *iPhone5,2; iPhone5,3*
+
+Son kullanıcı cihazlarında Intune istemcisi, Intune’un Uygulama Koruma İlkeleri'nde belirtilen cihaz modeli dizelerinin basit eşleştirmesine dayalı olarak eylem gerçekleştirir. Eşleştirme tamamen cihazın bildirdiklerine bağlıdır. BT yöneticisi olarak, çeşitli cihaz üreticileri ve modelleri temelinde ve küçük bir kullanıcı grubunu hedefleyerek bu ayarı test etmenizi ve beklenen davranışın gerçekleştiğinden emin olmanızı öneririz. Varsayılan değer **Yapılandırılmadı**'dır.<br>
+Aşağıdaki eylemlerden birini ayarlayın: 
+- Belirtilenlere izin ver (Belirtilmeyenleri engelle)
+- Belirtilenlere izin ver (Belirtilmeyenleri sil)
+
+**BT yöneticisi aynı Intune kullanıcısı için aynı uygulamaları hedefleyen ilkeler arasında farklı bir iOS model tanımlayıcısı listesi girerse ne olur?**<br>
+Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışmalar ortaya çıktığında, Intune normalde en kısıtlayıcı yaklaşımı benimser. Dolayısıyla, sonuçta hedeflenen Intune kullanıcısının açtığı hedef uygulamaya gönderilen ilke, aynı uygulama/kullanıcı bileşimini hedefleyen *İlke A* ile *İlke B*'de listelenen iOS model tanımlayıcılarının kesişimi olabilir. Örneğin, *İlke A* "iPhone5,2; iPhone5,3" öğelerini belirtirken *İlke B* "iPhone5,3" öğelerini belirtiyor olabilir. Sonuçta hem *İlke A* hem de *İlke B* ile hedeflenen Intune kullanıcısının ilkesi "iPhone5,3" olacaktır. 
+
+### <a name="android-policy-settings"></a>Android ilkesi ayarları
 
 Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler yapılandırabilirsiniz:
 -  En fazla PIN denemesi
@@ -68,6 +82,19 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 -  En düşük düzeltme eki sürümü
 -  Cihaz üreticisi/üreticileri
 
+**Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Cihazın Android üreticisini, cihaz ayarlarının altında bulabilirsiniz.<br>
+Örnek giriş: *Üretici A; Üretici B; Google* 
+
+Son kullanıcı cihazlarında Intune istemcisi, Intune’un Uygulama Koruma İlkeleri'nde belirtilen cihaz modeli dizelerinin basit eşleştirmesine dayalı olarak eylem gerçekleştirir. Eşleştirme tamamen cihazın bildirdiklerine bağlıdır. BT yöneticisi olarak, çeşitli cihaz üreticileri ve modelleri temelinde ve küçük bir kullanıcı grubunu hedefleyerek bu ayarı test etmenizi ve beklenen davranışın gerçekleştiğinden emin olmanızı öneririz. Varsayılan değer **Yapılandırılmadı**'dır.<br>
+Aşağıdaki eylemlerden birini ayarlayın: 
+- Belirtilenlere izin ver (Belirtilmeyenleri engelle)
+- Belirtilenlere izin ver (Belirtilmeyenleri engelle)
+
+**BT yöneticisi aynı Intune kullanıcısı için aynı uygulamaları hedefleyen ilkeler arasında farklı bir Android üreticileri listesi girerse ne olur?**<br>
+Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışmalar ortaya çıktığında, Intune normalde en kısıtlayıcı yaklaşımı benimser. Dolayısıyla, sonuçta hedeflenen Intune kullanıcısının açtığı hedef uygulamaya gönderilen ilke, aynı uygulama/kullanıcı bileşimini hedefleyen *İlke A* ile *İlke B*'de listelenen Android üreticilerinin kesişimi olabilir. Örneğin, *İlke A* "Google, Samsung" öğelerini belirtirken *İlke B* "Google" öğesini belirtiyor olabilir. Sonuçta hem *İlke A* hem de *İlke B* ile hedeflenen Intune kullanıcısının ilkesi "Google" olacaktır. 
+
+### <a name="additional-settings-and-actions"></a>Ek ayarlar ve eylemler 
+
 **Erişim için PIN gerektir** ayarı **Evet** olarak ayarlıysa tablo, varsayılan olarak **Çevrimdışı yetkisiz kullanım süresi** ve **En fazla PIN denemesi** için satırları yapılandırılmış ayarlarla doldurur.
  
 Bir ayarı yapılandırmak için **Ayar** sütunu altında açılan menüden ayarı seçin. Bir ayar seçildikten sonra, değerin ayarlanması gerekliyse aynı satırda **Değer** sütunu altında bulunan düzenlenebilir metin kutusu etkin hale gelir. Ayrıca **Eylem** sütunu altındaki açılan menü, ayar için geçerli koşullu başlatma eylemleri kümesi ile etkin hale gelir. 
@@ -76,8 +103,6 @@ Aşağıdaki listede yaygın eylemler verilmiştir:
 -  **Erişimi engelle** – Son kullanıcının şirket uygulamasına erişmesini engelleyin.
 -  **Verileri sil** – Son kullanıcının cihazından şirket verilerini silin.
 -  **Uyar** – Son kullanıcıya uyarı olarak bir diyalog sağlayın.
-
-### <a name="additional-settings-and-actions"></a>Ek ayarlar ve eylemler 
 
 Bazı durumlarda, örneğin **En düşük işletim sistemi sürümü** ayarında, farklı sürüm numaralarına bağlı olarak ayarı uygulanabilir tüm eylemleri gerçekleştirecek şekilde yapılandırabilirsiniz. 
 

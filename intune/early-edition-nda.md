@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906031"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949501"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Microsoft Intune için erken sürüm - Temmuz 2018
 
@@ -40,6 +40,9 @@ Bu sayfa düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha 
 ## <a name="intune-in-the-azure-portal"></a>Azure portalında Intune
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>Windows için Şirket Portalı uygulamasında daha fazla eşitleme fırsatı <!-- 2683177 -->
+Windows için Şirket Portalı uygulaması, Windows görev çubuğuna ve Başlat menüsü atlama listesine bir cihaz eşitleme eylemi ekliyor. İki konumdan birine tıklayarak cihazlarınızı hızla eşitleyin ve şirket kaynaklarına erişim sağlayın.  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Windows 10 için Şirket Portalı uygulamasından cihaz geçiş kodlarını sıfırlama <!-- 2101282 --> 
 Çalışanlarınız yakın zamanda cihazlarının PIN’i veya geçiş kodunu doğrudan Windows 10 için Şirket Portalı uygulamasından sıfırlayabilecek. Bu işlevsellik, geçiş kodu sıfırlamalarını destekleyen hem uzak hem de yerel Intune tarafından yönetilen cihazlarda kullanılabilecek. Cihaz türüne bağlı olarak, bir uzak cihaza yapılan istek ya cihazın geçerli geçiş kodunu kaldırır ya da geçici bir geçiş kodu oluşturur. Yerel bir cihaz için sıfırlama isteğinde bulunan kullanıcılar, cihazın Ayarlar uygulamasına yeniden yönlendirilir.  

@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure’da Android bilgi noktası ayarlarını görüntüleme | Microsoft Docs
 description: Android kurumsal bilgi noktası cihazlarını yapılandırın.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28eca6fa3738519602ee5b2a778bc75bde487156
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909108"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039344"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune’da Android kurumsal bilgi noktası ayarları
 
@@ -51,7 +51,7 @@ Android bilgi noktası profilleri, aşağıdaki yapılandırma ayarlarını dest
 
 ## <a name="kiosk-settings"></a>Bilgi noktası ayarları
 
-- **Bilgi noktası modu**: Cihazın tek bir uygulama mı yoksa birden fazla uygulama mı çalıştırabileceğini belirtir. Daha fazla bilgi için bkz. [Android cihazlar için bilgi noktası ayarları](android-kiosk-settings.md).
+- **Bilgi noktası modu**: Cihazın tek bir uygulama mı yoksa birden fazla uygulama mı çalıştırabileceğini belirtir. Daha fazla bilgi için bkz. [Android cihazları için bilgi noktası ayarları](android-kiosk-settings.md).
     - **Tekli uygulama bilgi noktası**: Kullanıcılar yalnızca bir uygulamaya erişebilir.
     - **Çoklu uygulama bilgi noktası**: Kullanıcılar sınırlı bir grup uygulamaya erişebilir.
 
