@@ -663,6 +663,8 @@
           href: help-desk-operators.md
         - name: Şirket kaynak erişimi sorunlarını giderme
           href: troubleshoot-company-resource-access-problems.md
+        - name: Sorun giderme uygulaması kurulum sorunları
+          href: troubleshoot-app-install.md
         - name: Intune etkinlikleri için denetleme günlükleri
           href: monitor-audit-logs.md
         - name: Uygulama koruma günlüklerini gözden geçirme
