@@ -521,6 +521,7 @@
         - name: Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
           href: conditional-access-assign-jamf.md
     - name: Cihaz verilerini koruma
+      href: device-protect.md
       items:
         - name: Gizlilik ve kişisel veriler
           href: privacy-personal-data.md
