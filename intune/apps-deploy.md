@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6ffd31e35637cf722fc2af486be4bd9101c1db
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993760"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164578"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -89,21 +89,21 @@ Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. A
 |Kullanıcı Mevcut|Kullanıcı Mevcut Değil|Kullanılamıyor|
 |Kullanıcı Mevcut|Kullanıcı Kaldır|Kaldır|
 |Kullanıcı Mevcut Değil|Kullanıcı Kaldır|Kaldır
-|Kullanıcı Gerekli|Cihaz Gerekli|İkisi de mevcut; Ağ geçidi Gerekli olanı işler
-|Kullanıcı Gerekli|Cihaz Kaldır|İkisi de mevcut; Ağ geçidi Gerekli olanı çözümler
-|Kullanıcı Mevcut|Cihaz Gerekli|İkisi de mevcut; Ağ geçidi Gerekli (Gerekli ve Kullanılabilir) olanı çözümler
-|Kullanıcı Mevcut|Cihaz Kaldır|İkisi de mevcut; Ağ geçidi Kullanılabilir olanı çözümler.<br><br>Uygulama, Şirket Portalında görüntülenir.<br><br>Uygulama zaten yüklüyse (önceki amacıyla gerekli bir uygulama olarak) kaldırılır.<br><br>Kullanıcı **Şirket Portalı'ndan yükle**'yi seçerse uygulama yüklenir ve kaldırma amacı yerine getirilmez.|
+|Kullanıcı Gerekli|Cihaz Gerekli|İkisi de mevcut, Intune Gerekli olanı işler
+|Kullanıcı Gerekli|Cihaz Kaldır|İkisi de mevcut, Intune Gerekli olanı çözümler
+|Kullanıcı Mevcut|Cihaz Gerekli|İkisi de mevcut; Intune Gerekli (Gerekli ve Kullanılabilir) olanı çözümler
+|Kullanıcı Mevcut|Cihaz Kaldır|İkisi de mevcut, Intune Kullanılabilir olanı çözümler.<br><br>Uygulama, Şirket Portalında görüntülenir.<br><br>Uygulama zaten yüklüyse (önceki amacıyla gerekli bir uygulama olarak) kaldırılır.<br><br>Kullanıcı **Şirket Portalı'ndan yükle**'yi seçerse uygulama yüklenir ve kaldırma amacı yerine getirilmez.|
 |Kullanıcı Mevcut Değil|Cihaz Gerekli|Gerekli|
 |Kullanıcı Mevcut Değil|Cihaz Kaldır|Kaldır|
-|Kullanıcı Kaldır|Cihaz Gerekli|İkisi de mevcut; Ağ geçidi Gerekli olanı çözümler|
-|Kullanıcı Kaldır|Cihaz Kaldır|İkisi de mevcut, Ağ geçidi Kaldır işlemini çözümler|
+|Kullanıcı Kaldır|Cihaz Gerekli|İkisi de mevcut, Intune Gerekli olanı çözümler|
+|Kullanıcı Kaldır|Cihaz Kaldır|İkisi de mevcut, Intune Kaldır eylemini çözümler|
 |Cihaz Gerekli|Cihaz Kaldır|Gerekli|
 |Kullanıcı Gerekli ve Mevcut|Kullanıcı Mevcut|Gerekli ve Kullanılabilir|
 |Kullanıcı Gerekli ve Mevcut|Kullanıcı Kaldır|Gerekli ve Kullanılabilir|
 |Kullanıcı Gerekli ve Mevcut|Kullanıcı Mevcut Değil|Gerekli ve Kullanılabilir|
 |Kullanıcı Gerekli ve Mevcut|Cihaz Gerekli|İkisi de mevcut; Gerekli ve Mevcut
 |Kullanıcı Gerekli ve Mevcut|Cihaz Mevcut Değil|Gerekli ve Kullanılabilir|
-|Kullanıcı Gerekli ve Mevcut|Cihaz Kaldır|İkisi de mevcut; Ağ geçidi Gerekli (Gerekli ve Kullanılabilir) olanı çözümler
+|Kullanıcı Gerekli ve Mevcut|Cihaz Kaldır|İkisi de mevcut; Intune Gerekli (Gerekli ve Kullanılabilir) olanı çözümler
 |Kullanıcı Mevcut Değil|Cihaz Mevcut Değil|Kullanılamıyor|
 |Kullanıcı Mevcut|Cihaz Mevcut Değil|Kullanılabilir|
 |Kullanıcı Gerekli|Cihaz Mevcut Değil|Gerekli|
