@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd6aee30a88906c3f6ae078e338732589d88a5f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909142"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212044"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android kurumsal bilgi noktası cihazlarının kaydını ayarlama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android; Şirkete Ait, Tek Kullanımlık (COSU) çözüm kümesi ile bilgi noktası türü cihazlarını destekler. Bu tür cihazlar tek bir amaca hizmet eder; örneğin dijital işaretler, bilet yazdırma veya envanter yönetimi gibi. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
+Android; Şirkete Ait, Tek Kullanımlık çözüm kümesi ile bilgi noktası türü cihazlarını destekler. Bu tür cihazlar tek bir amaca hizmet eder; örneğin dijital işaretler, bilet yazdırma veya envanter yönetimi gibi. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
 
 Intune, Android bilgi noktası cihazlarına uygulama ve ayar dağıtmanıza yardımcı olur. Android kurumsal hakkında belirli ayrıntıları öğrenmek için bkz. [Android kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 

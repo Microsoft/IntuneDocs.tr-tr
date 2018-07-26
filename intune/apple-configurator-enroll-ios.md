@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 180988f296894c285b078f6906c4e77b832006f9
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840283"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212129"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator ile iOS cihazlarını kaydetme
 
@@ -135,7 +135,7 @@ iOS cihazlarını Apple Configurator ile doğrudan kaydederken, cihazın seri nu
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>Profili iOS cihazlarına .mobileconfig olarak dışarı aktarma
 
 1. [Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple kaydı** > **Apple Configurator** > **Profiller** > dışarı aktarılacak profili seçin > **Profil Dışarı Aktar**’ı seçin.
-2. **Doğrudan kayıt** altında **Profil indir**’i seçin ve dosyayı kaydedin.
+2. **Doğrudan kayıt** altında **Profil indir**’i seçin ve dosyayı kaydedin. Bir kayıt profili yalnızca iki hafta geçerlidir, iki haftanın sonunda bunu yeniden oluşturmanız gerekir.
 3. Dosyayı [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) çalıştıran bir Mac bilgisayara aktararak iOS cihazlar için doğrudan bir yönetim profili olarak gönderebilirsiniz.
 4. Aşağıdaki adımları izleyerek cihazı Apple Configurator ile hazırlayın:
     1. Mac bilgisayarda Apple Configurator 2.0'ı açın.

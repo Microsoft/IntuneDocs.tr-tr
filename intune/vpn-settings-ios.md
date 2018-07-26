@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05d93f1518427201d9d96dbc22c772967fe4fa0f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d35c9e32b7a0720d5d84a93a7edde6f2bd51911f
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744576"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146637"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>iOS çalıştıran cihazlar için Microsoft Intune'da VPN ayarlarını yapılandırın
 
@@ -63,10 +63,10 @@ Bağlantı türü olarak **Özel VPN**’i seçtiyseniz şu ayarları da yapıla
 - **VPN tanımlayıcısı**: Kullandığınız VPN uygulamasının tanımlayıcısıdır ve VPN sağlayıcınız tarafından verilir.
 - **Özel VPN öznitelikleri için anahtar ve değer çiftlerini girin**: VPN bağlantınızı özelleştiren **Anahtarlar** ve **Değerler**’i ekleyin veya içeri aktarın. Yinelemek gerekirse, bu değerler normalde VPN sağlayıcınız tarafından verilir.
 
-## <a name="apps-per-app-vpn-settings"></a>Uygulama (uygulama başına VPN) ayarları
+## <a name="automatic-vpn-settings"></a>Otomatik VPN ayarları
 
-- **Uygulama başına VPN**: Safari tarayıcısından ziyaret edildiğinde VPN bağlantısını etkinleştirecek URL’ler kullanmak için bu seçeneği etkinleştirin. Uygulama başına VPN’i yapılandırmak için temel VPN ayarlarında kimlik doğrulama yöntemi olarak **Sertifikalar**’ı seçmeniz gerekir.
-  - **Bu VPN’i tetikleyecek Safari URL’leri**: Eklenecek bir veya daha fazla web sitesi URL’si seçin. Bu URL’ler ziyaret edildiğinde, VPN bağlantısı etkinleştirilir.
+- **Uygulama başına VPN**: Bu seçeneği belirtmek uygulama başına VPN’i etkinleştirir, böylece bazı uygulamalar açıldığında VPN bağlantısı otomatik olarak tetiklenir. Bu seçeneği belirtmeye ek olarak uygulamaları bu VPN profiliyle ilişkilendirmeniz gerekecektir. Daha fazla ayrıntı için [iOS için uygulama başına VPN ayarlama yönergelerine](vpn-setting-configure-per-app.md) bakın. 
+  - **Bu VPN’i tetikleyecek Safari URL’leri**: Eklenecek bir veya daha fazla web sitesi URL’si seçin. Bu URL’ler cihazda Safari tarayıcıyla ziyaret edildiğinde, VPN bağlantısı otomatik olarak kurulur.
 
 - **İsteğe bağlı VPN**: VPN bağlantısının ne zaman başlatılacağını denetleyen koşullu kurallar yapılandırın. Örneğin, yalnızca cihaz şirketin Wi-Fi ağına bağlı olmadığında VPN bağlantısının kullanılacağına ilişkin bir koşul oluşturun. Veya cihazın belirttiğiniz DNS’in arama etki alanına erişememesi durumunda VPN bağlantısının başlatılmayacağına ilişkin bir koşul oluşturun.
 

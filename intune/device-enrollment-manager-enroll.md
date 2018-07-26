@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905232"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203229"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Cihaz kayıt yöneticisi hesabı kullanarak cihazları kaydetme
 
@@ -56,7 +56,7 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
   - (Yalnızca iOS) iOS cihazlarını kaydetmek için DEM kullanıyorsanız, cihaz kaydetmek için Apple Configurator, Apple Aygıt Kayıt Programı (DEP) veya Apple School Manager (ASM) kullanamazsınız.
   - (Yalnızca Android) Tek bir DEM hesabıyla kaydedilebilen Android iş profili cihaz sayısı sınırlıdır. DEM hesabı başına en fazla 10 Android iş profili cihazı kaydedilebilir. Bu sınırlama eski Android kayıtları için geçerli değildir.
   - Cihazlar, cihaz lisansına sahipse VPP uygulamalarını yükleyebilir.
-  - Her cihaz bir cihaz lisansı gerektirir. [Kullanıcı ve cihaz lisansları](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services) hakkında daha fazla bilgi edinin.
+  - DEM kullanmak için bir Intune cihaz lisansı gerekli değildir. [Kullanıcı ve cihaz lisansları](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services) hakkında daha fazla bilgi edinin.
 
 
 > [!NOTE]

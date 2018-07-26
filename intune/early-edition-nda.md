@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: 3aed8fcefd640e5b7df46fe1ef8cd1c973a68044
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949501"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212146"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Microsoft Intune için erken sürüm - Temmuz 2018
 
@@ -79,8 +79,8 @@ Profili oluşturmak için **Cihaz Yapılandırması** > **Profiller** > **Profil
 
 Windows 10 ve üzeri için geçerlidir.
 
-###  <a name="windows-line-of-business-lob-apps-file-extension-rename----1884873---"></a>Windows iş kolu (LOB) uygulamaları dosya uzantısını yeniden adlandırma <!-- 1884873 -->
-Windows LOB uygulamaları için dosya uzantıları, *.appx* ve *.appxbundle*’dan *.msix* ve *.msixbundle*’a yeniden adlandırılacak. Microsoft Intune’da, **Mobil uygulamalar** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Bölme ekle** bölmesi görüntülenir ve **Uygulama türünü** seçmenize olanak tanır. Windows LOB uygulamaları için uygulama türü olarak **İş kolu uygulamasını** seçin, **Uygulama paketi dosyasını** seçin ve uygun uzantıya sahip bir yükleme dosyası girin.
+###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Windows iş kolu (LOB) uygulamaları dosya uzantıları <!-- 1884873 -->
+Windows LOB uygulamaları için dosya uzantıları artık *.msi*, *.appx*, *.appxbundle*, *.msix* ve *.msixbundle*’ı içerecek. Microsoft Intune’da, **Mobil uygulamalar** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Bölme ekle** bölmesi görüntülenir ve **Uygulama türünü** seçmenize olanak tanır. Windows LOB uygulamaları için uygulama türü olarak **İş kolu uygulamasını** seçin, **Uygulama paketi dosyasını** seçin ve uygun uzantıya sahip bir yükleme dosyası girin.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Windows Defender ATP yapılandırma paketi, otomatik olarak yapılandırma profiline eklenir <!-- 2144658 -->
 Şu anda Intune’da [Gelişmiş Tehdit Koruması ve ekleme](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) cihazları kullanırken bir yapılandırma paketini indirip bunu yapılandırma profilinize ekliyorsunuz. Gelecekteki bir güncelleştirmede Intune, paketi otomatik olarak Windows Defender Güvenlik Merkezi'nden alır ve profilinize ekler.

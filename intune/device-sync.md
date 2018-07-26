@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833374"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117880"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Intune ile en son ilkeleri ve eylemleri almak için cihazları eşitleme
 
@@ -43,6 +43,7 @@ Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorl
 4. Yönettiğiniz cihazların listesinde bir cihaz seçin, **Daha Fazla**’yı ve ardından **Eşitle**'yi seçin.
 5. Onaylamak için **Evet**'i seçin.
 
+Eşitleme eyleminin durumunu görmek için **Cihaz** > **Cihaz eylemleri**’ni seçin.
 
 ## <a name="retryable-error-codes"></a>Yeniden denenebilir hata kodları
 
@@ -65,4 +66,5 @@ Bir yönetici **Eşitle** cihaz eylemini çalıştırdığında, başarısız ol
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Eşitleme eyleminin durumunu görmek için **Cihaz eylemleri**’ni seçin. 
+Cihazın [ayrıntılarını denetleyebilirsiniz](device-inventory.md).
+ 

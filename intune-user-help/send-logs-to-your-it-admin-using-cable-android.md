@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015617"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117863"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>USB kablosu kullanarak günlükleri şirketinizin destek birimine gönderme
 
@@ -35,7 +35,7 @@ Android cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsan
 
 2. USB kablosunu kullanarak cihazınızı bilgisayarınıza bağlayın. Bu genellikle cihazınızı bir duvar prizine bağlayarak şarj etmek için kullandığınız kablodur.
 
-3. Bilgisayarda, cihazınızın adına sahip bir dizini arayın. Söz konusu dizinde <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong> yolunu bulun.
+3. Bilgisayarda, cihazınızın adına sahip bir dizini arayın. Söz konusu dizinde, <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong> yolunu bulun.
 
 4. Dosyaları seçin ve bir e-postaya ekleyin. Bu e-postayı şirketinizin destek birimine gönderin.
 
