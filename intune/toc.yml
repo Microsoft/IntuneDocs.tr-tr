@@ -396,12 +396,12 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
-        - name: Bilgi Noktası ayarlarını yapılandırma
-          href: kiosk-settings.md
-        - name: Android bilgi noktası ayarlarını yapılandırma
+        - name: Android kiosk ayarları
           href: android-kiosk-settings.md
         - name: Android kurumsal bilgi noktası ayarları
           href: android-enterprise-settings.md
+        - name: Windows 10 kiosk ayarları
+          href: kiosk-settings.md
         - name: E-posta ayarlarını yapılandırma
           href: email-settings-configure.md
           items:
@@ -439,7 +439,9 @@
               href: wi-fi-settings-ios.md
             - name: Mac OS
               href: wi-fi-settings-macos.md
-            - name: Windows 8.1 ve Windows 10
+            - name: Windows 10
+              href: wi-fi-settings-windows.md
+            - name: Windows 8.1
               href: wi-fi-settings-import-windows-8-1.md
         - name: Eğitim
           items:
@@ -458,6 +460,10 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: E-posta şifrelemek için S/MIME kullanma
+              href: certificates-s-mime-encryption-sign.md
+            - name: SCEP ile üçüncü taraf sertifika yetkilisi kullanma
+              href: certificate-authority-add-scep-overview.md
             - name: Symantec PKI Manager Web Hizmeti
               href: certificates-symantec-configure.md
         - name: Windows Bilgi Koruması ayarlarını yapılandırma
@@ -710,6 +716,8 @@
               href: custom-settings-android-for-work.md
 - name: Geliştirici kılavuzu
   items:
+    - name: Üçüncü taraf sertifika yetkilisi ekleme API'si
+      href: scep-libraries-apis.md
     - name: Intune Uygulama SDK’sı ile uygulama koruma
       href: app-sdk.md
       items:
