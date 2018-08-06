@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a231adf4e1f5687bc88c8c9b15241d3f89e711d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2d2fc7f697d03c1ffcb952cd30e29f4959f2b7e9
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905351"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321178"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>iOS cihazlar için e-posta profili ayarları - Intune
 
@@ -44,13 +44,13 @@ iOS çalıştıran cihazlarınızı yapılandırmak için e-posta profili ayarla
 - **AAD’den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı asıl adı**’nı (`user1@contoso.com` veya `user1`) veya Exchange’de oturum açarken birincil SMTP adresini kullanmak için **Birincil SMTP adresi**’ni (`user1@contoso.com`) seçin.
 - **Kimlik doğrulama yöntemi**: E-posta profili tarafından kullanılan kimlik doğrulama yöntemi olarak **Kullanıcı Adı ve Parola**’yı veya **Sertifikalar**’ı seçin. Azure çok faktörlü kimlik doğrulaması desteklenmez.
   - **Sertifika**’yı seçtiyseniz, Exchange bağlantısının kimliğini doğrulamak için kullanılan, daha önce oluşturduğunuz istemci SCEP veya PKCS sertifika profilini seçin.
-- **SSL**: E-posta gönderirken, e-posta alırken ve Exchange sunucusuyla iletişim kurarken Güvenli Yuva Katmanı (SSL) iletişimini kullanın.
-- **S/MIME**: S/MIME imzalama kullanarak giden e-posta gönderin.
-  - **Sertifika**'yı seçtiyseniz Exchange bağlantısının kimliğini doğrulamak için daha önce oluşturduğunuz bir PKCS sertifika profilini seçin.
+- **SSL**: E-posta gönderirken, e-posta alırken ve Exchange sunucusuyla iletişim kurarken Güvenli Yuva Katmanı (SSL) iletişimini kullanmak için **etkinleştirin**.
+- **S/MIME**: S/MIME imzalama kullanarak giden e-posta göndermek için **S/MIME'yi etkinleştirin**. Etkinleştirildiğinde, şifrelenmiş e-posta alabilen alıcılara gönderdiğiniz e-postaları şifreleyebilir ve göndericilerden aldığınız e-postaların şifresini çözebilirsiniz.
+  - **Sertifika**'yı seçtiyseniz Exchange bağlantısının kimliğini doğrulamak ve/veya e-posta iletilerini şifrelemek için daha önce oluşturduğunuz bir PKCS sertifika profilini seçin.
 - **Eşitlenecek e-posta miktarı**: Eşitlemek istediğiniz e-posta için gün sayısını seçin. Veya **Sınırsız**’ı seçerek kullanılabilir tüm e-postaları eşitleyin.
-- **İletilerin diğer e-posta hesaplarına taşınmasına izin ver**: Kullanıcıların, e-posta iletilerini cihazlarında yapılandırdıkları farklı hesaplara taşımasına izin verir.
-- **Üçüncü taraf uygulamalarından e-posta gönderilmesine izin ver**: Kullanıcının, bu profili e-posta göndermek için varsayılan hesap olarak seçmesini sağlayın ve üçüncü taraf uygulamaların yerel e-posta uygulamasında e-posta açmasına izin verin (örneğin e-postaya dosya eklemek için).
-- **Son kullanılan e-posta adreslerini eşitle**: Kullanıcıların cihazda son kullanılan e-posta adreslerinin listesini sunucuyla eşitlemelerine olanak tanır.
+- **İletilerin diğer e-posta hesaplarına taşınmasına izin ver**: **Etkinleştir** seçeneği, kullanıcıların e-posta iletilerini cihazlarında yapılandırdıkları farklı hesaplara taşımasına izin verir.
+- **Üçüncü taraf uygulamalarından e-posta gönderilmesine izin ver**: **Etkinleştir** seçeneği, kullanıcının bu profili e-posta göndermek için varsayılan hesap olarak seçmesini sağlayın ve üçüncü taraf uygulamaların yerel e-posta uygulamasında e-posta açmasına izin verir (örneğin e-postaya dosya eklemek için).
+- **Son kullanılan e-posta adreslerini eşitle**: **Etkinleştir** seçeneği, kullanıcıların cihazda son kullanılan e-posta adreslerinin listesini sunucuyla eşitlemelerine olanak tanır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Intune’da e-posta ayarlarını yapılandırma](email-settings-configure.md)

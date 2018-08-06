@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803831"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321501"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS cihaz kısıtlama ayarları
 
@@ -182,8 +182,8 @@ Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygu
 
 Uygulamaları gösterme veya gizleme listesinde, aşağıdaki listelerden birini yapılandırabilirsiniz (iOS 9.3 veya üstünü çalıştıran denetimli cihazlar gerekir).
 
-**Gizli uygulamalar** listesi - Kullanıcılardan gizlenen uygulamaların listesini belirtin. Kullanıcılar bu uygulamaları görüntüleyemez veya başlatamaz.
-**Görünür uygulamalar** listesi - Kullanıcıların görüntüleyebileceği ve başlatabileceği uygulamaların listesini belirtin. Başka hiçbir uygulama görüntülenemez veya başlatılamaz.
+- **Gizli uygulamalar** listesi - Kullanıcılardan gizlenen uygulamaların listesini belirtin. Kullanıcılar bu uygulamaları görüntüleyemez veya başlatamaz.
+- **Görünür uygulamalar** listesi - Kullanıcıların görüntüleyebileceği ve başlatabileceği uygulamaların listesini belirtin. Başka hiçbir uygulama görüntülenemez veya başlatılamaz.
 
 Listeyi yapılandırmak için **Ekle**’ye tıklayın, sonra da tercih ettiğiniz bir ad (isteğe bağlı olarak uygulama yayımcısı) ve uygulamanın uygulama mağazasındaki URL'sini belirtin.
 
@@ -259,54 +259,8 @@ Her uygulama adını ve paket kimliğini belirttikten sonra listeye eklemek içi
 - **İçeri aktarma** - Uygulama adları ve ilgili paket kimliklerinin listesini içeren virgülle ayrılmış değerler (.csv) dosyasını içeri aktarın.
 - **Dışarı aktarma** - Bir virgülle ayrılmış değerler (.csv) dosyasına yapılandırdığınız uygulama adlarını ve ilgili paket kimliklerini dışarı aktarın.
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için Paket Kimliği başvurusu
-
-Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>Bilgi noktası (yalnızca denetimli)
--   **Bilgi noktası modunda çalışan uygulama** - Intune’a eklediğiniz bir uygulamayı belirtmek için **Yönetilen Uygulama**’yı veya mağazadaki bir uygulamanın URL’sini belirtmek için **Mağaza Uygulaması**’nı seçin. Cihazda başka hiçbir uygulamanın çalışmasına izin verilmez. Daha fazla yardım için, bu konunun devamındaki “Uygulama mağazalarının URL’lerini belirtme” bölümüne bakın.
+-   **Bilgi noktası modunda çalışan uygulama** - Intune’a eklediğiniz bir uygulamayı belirtmek için **Yönetilen Uygulama**’yı, mağazadaki bir uygulamanın URL’sini belirtmek için **Mağaza Uygulaması**’nı veya yerleşik uygulamanın paket kimliğini belirtmek için **Yerleşik Uygulama**’yı seçin. Daha fazla bilgi için bkz: [Yerleşik iOS uygulamaları için Paket Kimliği başvurusu](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps) ve [Mağazadaki uygulamanın URL’sini belirtme](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1).
     -   **Yardımlı dokunma** - Ekran hareketlerini gerçekleştirmekte zorlanabilecek kullanıcıların bunları yapmasına yardımcı olan **Yardımlı Dokunma** erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.
     -   **Renkleri ters çevir** - Görsel engelli kullanıcılara yardımcı olmak için ekranı ayarlayan Renkleri Ters Çevir erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.
     -   **Mono ses** - Mono ses erişilebilirlik ayarını etkinleştirin veya devre dışı bırakın.
@@ -327,6 +281,51 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 >[!NOTE]
 > Bir iOS cihazını bilgi noktası modunda yapılandırabilmek için, önce Apple Configurator aracını veya Apple Cihaz Kayıt Programı’nı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracı hakkında daha fazla bilgi için Apple belgelerinize bakın.
 >Belirttiğiniz iOS uygulaması siz profil atadıktan sonra yüklendiyse cihaz, yeniden başlatılana kadar bilgi noktası moduna girmez.
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için Paket Kimliği başvurusu
+
+Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
+
+| Paket Kimliği                   | Uygulama Adı     | Yayımcı |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | Uygulama Mağazası    | Apple     |
+| com.apple.calculator        | Hesap Makinesi   | Apple     |
+| com.apple.mobilecal         | Takvim     | Apple     |
+| com.apple.camera            | Kamera       | Apple     |
+| com.apple.mobiletimer       | Saat        | Apple     |
+| com.apple.compass           | Pusula      | Apple     |
+| com.apple.MobileAddressBook | Kişiler     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | Arkadaşları Bul | Apple     |
+| com.apple.mobileme.fmip1    | iPhone’u Bul  | Apple     |
+| com.apple.gamecenter        | Oyun Merkezi  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Sistem Durumu       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | İletiler     | Apple     |
+| com.apple.Music             | Müzik        | Apple     |
+| com.apple.news              | News         | Apple     |
+| com.apple.mobilenotes       | Notlar        | Apple     |
+| com.apple.Numbers           | Sayılar      | Apple     |
+| com.apple.Pages             | Pages        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Fotoğraflar       | Apple     |
+| com.apple.podcasts          | Podcast’ler     | Apple     |
+| com.apple.reminders         | Anımsatıcılar    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | Ayarlar     | Apple     |
+| com.apple.stocks            | Borsa       | Apple     |
+| com.apple.tips              | İpuçları         | Apple     |
+| com.apple.videos            | Videolar       | Apple     |
+| com.apple.VoiceMemos        | Sesli Notlar   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | Watch        | Apple     |
+| com.apple.weather           | Hava Durumu      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **Safari (yalnızca denetimli)** - Cihazda Safari tarayıcısının kullanılıp kullanılamayacağını belirtin.

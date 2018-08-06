@@ -14,12 +14,12 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d8335f1bac26b1a70c4e9aeaf7c8c6d1b34fc12
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 776cb1e03730bbac1d6e7ed36f411eba0ab94cff
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34718021"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236047"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Eğitim için Intune ile Intune'daki tam cihaz yönetimi deneyimi arasında ne fark vardır?
 
@@ -27,9 +27,9 @@ Eğitim için Intune, okulunuzun verilerini korurken öğretmen ve öğrencileri
 
 ![Eğitim için Intune konsolu ile Intune konsolunun karşılaştırması.](./media/intune-azure-vs-intuneEDU.png)
 
-Eğitim için Intune, Windows 10 cihazları Intune'da bulunan tüm MDM özelliklerini kullanarak yönetmenizi sağlar. Intune ayrıca iOS ve Android gibi ek platformları yönetebilir ve aynı konsolda tüm ilke gruplarına erişmeniz için tasarlanmıştır.
+Eğitim için Intune, Windows 10 ve iOS cihazları Intune'da bulunan tüm MDM özelliklerini kullanarak yönetmenizi sağlar. Tam cihaz yönetim deneyimi sayesinde Windows, iOS ve Android cihazlarını yönetebilirsiniz.  
 
-Eğitim için Intune tek başına veya [Intune’da bulunan tam cihaz yönetimi deneyimi](introduction-intune.md) ile uyumlu bir şekilde kullanılabilir. Ayrıca, Eğitim için Intune’u Microsoft’un sunduğu diğer faydalı eğitim araçlarıyla birlikte kullanmanızı kolaylaştıran [Microsoft Education](https://microsoft.com/education) içinde bulunan diğer araçlarla birlikte kullanılabilir.
+Eğitim için Intune tek başına veya [Intune’da bulunan tam cihaz yönetimi deneyimi](introduction-intune.md) ile uyumlu bir şekilde kullanılabilir. Ayrıca, Eğitim için Intune’u Microsoft’un sunduğu diğer faydalı eğitim araçlarıyla birlikte kullanmanızı kolaylaştıran [Microsoft Education](https://microsoft.com/education) içinde bulunan diğer araçlarla birlikte kullanılabilir.  
 
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 

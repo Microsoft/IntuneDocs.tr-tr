@@ -1,59 +1,68 @@
 ---
-title: Microsoft Intune'da iOS yazılım güncelleştirme ilkelerini yapılandırma
-titlesuffix: ''
-description: Denetimli iOS cihazlarını otomatik olarak en yeni yazılım güncelleştirmesini yüklemeye zorlamak üzere iOS için güncelleştirme ilkelerini yapılandırın.
+title: Microsoft Intune'da iOS yazılım güncelleştirme ilkelerini yapılandırma - Azure | Microsoft Docs
+description: Microsoft Intune’da, Intune tarafından yönetilen veya denetlenen iOS cihazlarında otomatik olarak yüklü yazılımların güncelleştirmelerini kısıtlamak için bir yapılandırma ilkesi oluşturun veya ekleyin. Güncelleştirmelerin yükleneceği tarihi ve saati seçebilirsiniz. Bu ilkeyi gruplara, kullanıcılara veya cihazlara da atayarak yükleme hatalarını denetleyebilirsiniz.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/19/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1d4223ae4feb417f77909b320cd0295347b44461
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836597"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268847"
 ---
-# <a name="configure-ios-update-policies-in-microsoft-intune"></a>Microsoft Intune'da iOS güncelleştirme ilkelerini yapılandırma
+# <a name="configure-ios-update-policies-in-intune"></a>Intune’da iOS güncelleştirme ilkelerini yapılandırma
 
-Yazılım güncelleştirme ilkeleri, iOS 10.3 ve üstünü çalıştıran denetimli iOS cihazlarını otomatik olarak en yeni işletim sistemi güncelleştirmesini yüklemeye zorlamanıza olanak sağlar. Bu özellik yalnızca denetimli cihazlarda kullanılabilir. Cihazların güncelleştirmeyi yüklemesini istemediğinizde, gün ve saat yapılandırma seçeneğine sahip olursunuz. 
+Yazılım güncelleştirme ilkeleri, denetimli iOS cihazlarını otomatik olarak en yeni işletim sistemi güncelleştirmesini yüklemeye zorlamanıza olanak sağlar. Bu özellik yalnızca denetimli cihazlarda kullanılabilir. İlke yapılandırırken, cihazların güncelleştirme yüklemesi yapmalarını istemediğiniz gün ve saatleri ekleyebilirsiniz. 
 
-Cihaz yaklaşık 8 saatte bir güncelleştirme sağlanıp sağlanmadığını denetler ve sınırlandırma olan bir dönemde olmadığında en son işletim sistemi güncelleştirmesini indirmeyi ve yüklemeyi dener. Cihazın güncelleştirilmesi için kullanıcı etkileşimi gerekli değildir. İlke, kullanıcının işletim sistemini güncelleştirmesini engellemez.
+Cihaz, 8 saatte bir Intune’a iade edilir. Güncelleştirme varsa ve kısıtlanan saatlerde değilse, cihaz en son işletim sistemi güncelleştirmesini indirir ve yükler. Cihazın güncelleştirilmesi için kullanıcı etkileşimi gerekli değildir. İlke, kullanıcının işletim sistemini el ile güncelleştirmesini engellemez.
 
-## <a name="configure-the-ios-update-policy"></a>iOS güncelleştirme ilkesini yapılandırma
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde, **Yazılım güncelleştirmeleri** > **iOS Güncelleştirme İlkeleri**’ni seçin.
-4. İlkeler bölmesinde, **Oluştur**’u seçtikten sonra ilke için bir ad ve açıklama girin.
-5. **Ayarlar** > **Yapılandırma**’yı seçin ve iOS cihazlarının en son güncelleştirmeyi yüklemeye zorlanmadığı durumlara ilişkin ayrıntıları girin. Haftanın günlerini, saat dilimini, başlangıç ve bitiş saatlerini yapılandırabilirsiniz.
-6. Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **Güncelleştirme ilkesi oluştur** bölmesine geri dönersiniz. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
+Bu özellik iOS 10.3 ve sonraki sürümleri çalıştıran cihazları destekler.
 
-Profil oluşturulur ve iOS güncelleştirme ilkeleri listesi bölmesinde görüntülenir. Apple MDM, cihazın güncelleştirmeyi belirli bir tarih veya saatte yüklemesini zorunlu tutmaya izin vermez. 
+## <a name="configure-the-policy"></a>İlkeyi yapılandırma
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+3. **Yazılım güncelleştirilmeleri** > **iOS için güncelleştirme ilkeleri** > **Oluştur**’u seçin.
+4. İlke için bir ad ve açıklama girin.
+5. **Ayarlar**’ı seçin. 
+
+    iOS cihazlarının en son güncelleştirmeyi yüklemeye zorlanmadığı durumlara ilişkin ayrıntıları girin. Bu ayarlar kısıtlı bir zaman çerçevesi oluşturur. Haftanın günlerini, saat dilimini, başlangıç ve bitiş saatlerini yapılandırabilirsiniz.
+
+6. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin. İlkeyi oluşturmak için **Oluştur**’u seçin.
+
+Profil oluşturulur ve ilke listesinde gösterilir. Apple MDM, cihazın güncelleştirmeleri belirli bir saatte veya tarihte yüklemeye zorlanmasına izin vermez. 
 
 ## <a name="change-the-restricted-times-for-the-policy"></a>İlkeye yönelik kısıtlı saatleri değiştirme
 
-1.  **Yazılım güncelleştirmeleri** dikey penceresinde, **iOS Güncelleştirme İlkeleri**’ni seçin.
-2.  Güncelleştirmek istediğiniz iOS güncelleştirme ilkesini seçin.
-3.  **Özellikler**’i seçin ve kısıtlı saat bilgilerini güncelleştirin.
-4.  Haftanın günlerini seçin
-5.  Bu ilkenin uygulanacağı saat dilimi
-6.  Kara listeye alınan saatler için başlangıç ve bitiş saatleri
+1. **Yazılım güncelleştirmeleri**’nde **iOS için güncelleştirme ilkeleri**’ni seçin.
+2. Var olan bir ilkeyi > **Ayarlar**’ı seçin.
+3. Kısıtlı süreyi güncelleştirin:
 
-## <a name="assign-an-ios-update-policy-to-users"></a>Bir iOS güncelleştirme ilkesini kullanıcılara atama
+    1. Haftanın günlerini seçin
+    2. Bu ilkenin uygulandığı saat dilimini seçin
+    3. Kara listeye alınan saatler için başlangıç ve bitiş saatlerini girin
 
-Kullanıcılara bir iOS güncelleştirme ilkesi atamak için yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler **Yazılım güncelleştirmeleri** > **iOS Güncelleştirme İlkeleri** bölmesinde bulunur.
+    > [!NOTE]
+    > Hem **Başlangıç saati** hem de **Bitiş saati** olarak 12:00 ayarlanırsa, bakım saati denetimi devre dışı bırakılır.
 
-1. Kullanıcılara atamak istediğiniz ilkeyi seçin ve ardından **Atamalar**’ı seçin. Azure Active Directory güvenlik gruplarını seçebileceğiniz ve bunları ilkeye atayabileceğiniz bölme açılır.
-2. Azure AD güvenlik gruplarının görüntülendiği bölmeyi açmak için **Seçilen gruplar**’ı seçin. Hem dahil edilecek hem de dışlanacak grupları atayarak, ilkeye kimlerin erişebileceğini belirleyebilirsiniz.
-3. İlkeyi kullanıcılara dağıtmak için **Kaydet**’i seçin.
+## <a name="assign-the-policy-to-users"></a>Kullanıcılara ilke atama
 
-İlkeyi kullanıcılarınıza veya cihazlarınıza uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, güncelleştirme uyumluluğu için denetlenir. Bu ilke kullanıcısı olmayan cihazları da destekler.
+Var olan ilkeler gruplara, kullanıcılara ve cihazlara atanır. İlke, atandığında uygulanır.
 
-## <a name="monitor-ios-device-installation-failures"></a>iOS cihaz yükleme hatalarını izleme
+1. **Yazılım güncelleştirmeleri**’nde **iOS için güncelleştirme ilkeleri**’ni seçin.
+2. Var olan bir ilkeyi > **Atamalar**’ı seçin. 
+3. İlkeye eklemek veya ilkeden dışlamak istediğiniz Azure Active Directory grupları, kullanıcıları veya cihazlarını seçin.
+4. İlkeyi gruplarınıza dağıtmak için **Kaydet**’i seçin.
+
+İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, güncelleştirme uyumluluğu için denetlenir. Bu ilke kullanıcısı olmayan cihazları da destekler.
+
+## <a name="monitor-device-installation-failures"></a>Cihaz yükleme hatalarını izleme
 <!-- 1352223 -->
-**iOS Cihazlarında Yükleme Hataları** raporu, **Yazılım güncelleştirmeleri** bölmesinde mevcuttur. Raporda, bir iOS güncelleştirme ilkesi tarafından hedeflenmiş, güncelleştirmeyi denemiş ancak güncelleştirilememiş denetimli iOS cihazların listesini görüntüleyebilirsiniz. Her cihaz için cihazın neden otomatik olarak güncelleştirilmediğiyle ilgili bir durum görüntüleyebilirsiniz. İyi durumda, güncel cihazlar listede gösterilmez. Güncel olma durumunu, cihazın destekleyebileceği en son güncelleştirme olarak tanımlarız.
+**Yazılım güncelleştirmeleri** > **iOS cihazları için yükleme hataları** altında, güncelleştirme ilkesi tarafından hedeflenen, güncelleştirmeyi denemiş ve güncelleştirilememiş denetimli iOS cihazlarının listesi gösterilir. Her cihazda, cihazın otomatik olarak güncelleştirilememesinin nedenini açıklayan bir durum görebilirsiniz. İyi durumda, güncel cihazlar bu listede gösterilmez. “Güncel” cihazlar, cihazın desteklediği en yeni güncelleştirmeyi içerir.
 

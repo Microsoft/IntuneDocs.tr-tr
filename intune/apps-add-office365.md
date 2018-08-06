@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869381"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321484"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
@@ -60,9 +60,6 @@ Cihazlara atamak istediğiniz Office uygulamalarını seçin.
     Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 Microsoft Visio Pro için uygulama yükleyebilirsiniz.
 3. **Tamam**’ı seçin.
 
->[!IMPORTANT]
-> Uygulama paketini oluşturduktan sonra paketin özelliklerini düzenleyemezsiniz. Farklı özellikler yapılandırmak için uygulama paketini silin ve yeni bir tane oluşturun.
-
 ## <a name="configure-app-information"></a>Uygulama bilgilerini yapılandırma
 
 Bu adımda, uygulama paketi hakkında bilgi sağlarsınız. Bu bilgiler, Intune'da uygulama paketini bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı'nda paketi bulması kolaylaşır.
@@ -95,11 +92,8 @@ Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Paket
         - **Yarı Yıllık**
         - **Yarı Yıllık (Hedeflenen)**
     - **Uygulama son kullanıcı lisans sözleşmesini otomatik kabul edin**: Son kullanıcıların lisans sözleşmesini kabul etmesinin gerekli olmasını istemiyorsanız bunu seçin. Ardından Intune, sözleşmeyi otomatik olarak kabul eder.
-    - **Paylaşımlı bilgisayar etkinleştirme kullanın**: Birden çok kullanıcı tek bir bilgisayarı kullanıyorsa bu seçeneği belirtin. Daha fazla bilgi için bkz. Office 365 için paylaşılan bilgisayar etkinleştirmeye genel bakış.
+    - **Paylaşımlı bilgisayar etkinleştirme kullanın**: Birden çok kullanıcı tek bir bilgisayarı kullanıyorsa bu seçeneği belirtin. Daha fazla bilgi için bkz. [Office 365 için paylaşılan bilgisayar etkinleştirmeye genel bakış](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Diller**: Office, son kullanıcının bilgisayarında Windows ile yüklenmiş olan tüm dillerde otomatik olarak yüklenir. Uygulama paketiyle birlikte ilave diller yüklemek istiyorsanız bunu seçin.
-
->[!IMPORTANT]
-> Uygulama paketini oluşturduktan sonra paketin özelliklerini düzenleyemezsiniz. Farklı özellikler yapılandırmak için uygulama paketini silin ve yeni bir tane oluşturun.
 
 ## <a name="finish-up"></a>Bitirme
 
@@ -132,12 +126,12 @@ Karşınıza çıkabilecek yaygın hata kodları ve anlamları, aşağıdaki tab
 |Senaryo|Dönüş kodu|Kullanıcı Arabirimi|Not|
 |Etkin bir Tıkla-Çalıştır yükleme yokken kaldırma çabası|-2147418113, 0x8000ffff veya 2147549183|Hata Kodu: 30088-1008<br>Hata Kodu: 30125-1011 (404)|Office Dağıtım Aracı|
 |MSI sürümü yüklü olduğunda yükleyin|1603|-|Office Dağıtım Aracı|
-|Yükleme, kullanıcı veya başka bir yükleme tarafından iptal edildi|17002|-|Tıkla-çalıştır|
+|Yükleme, kullanıcı veya başka bir yükleme tarafından iptal edildi|17002|-|Tıkla-Çalıştır|
 |32 bit yüklü olan bir cihaza 64 bit yüklemeyi deneyin.|1603|-|Office Dağıtım Aracı dönüş kodu|
-|Bilinmeyen bir SKU yüklemeyi deneyin (yalnızca geçerli SKU’lardan geçmemiz gerektiğinden, Office CSP için yasal bir kullanım durumu değildir)|17004|-|Tıkla-çalıştır|
-|Yetersiz alan|17002|-|Tıkla-çalıştır|
-|Tıkla-çalıştır istemci başlatılamadı (beklenmeyen)|17000|-|Tıkla-çalıştır|
-|Tıkla-çalıştır istemci, senaryoyu sıraya alamadı (beklenmeyen)|17001|-|Tıkla-çalıştır|
+|Bilinmeyen bir SKU yüklemeyi deneyin (yalnızca geçerli SKU’lardan geçmemiz gerektiğinden, Office CSP için yasal bir kullanım durumu değildir)|17004|-|Tıkla-Çalıştır|
+|Yetersiz alan|17002|-|Tıkla-Çalıştır|
+|Tıkla-Çalıştır istemcisi başlatılamadı (beklenmeyen)|17000|-|Tıkla-Çalıştır|
+|Tıkla-Çalıştır istemcisi, senaryoyu kuyruğa alamadı (beklenmeyen)|17001|-|Tıkla-Çalıştır|
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

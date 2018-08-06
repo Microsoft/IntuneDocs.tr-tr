@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/16/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449879"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254408"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -463,7 +463,20 @@ Ek bildirim değerlerinin yapılandırılması gerekmiyor.
 
 Gerekirse Yetkili ve NonBrokerRedirectURI belirtilebilir.
 
-Intune SDK’sı ekibi, uygulamanızın Uygulama Kimliğine (İstemci Kimliği) gereksinim duyar. Bunu [Azure portalında](https://portal.azure.com/) **Tüm Uygulamalar** altındaki **Uygulama Kimliği** sütununda bulabilirsiniz. Azure AD ile uygulama kaydetme hakkında daha fazla bilgi için [buraya](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) bakın. Intune SDK ekibine msintuneappsdk@microsoft.com adresinden ulaşabilirsiniz.
+Aşağıdaki adımları kullanarak uygulamanızı Azure AD’ye kaydedin.
+
+Azure portalında:
+1.  **Azure Active Directory** dikey penceresine gidin.
+2.  Uygulama için **Uygulama kaydı** ayarını seçin.
+3.  **API Erişimi** başlığının altındaki **Ayarlar**’da **Gerekli İzin**’i seçin. 
+4.  **+ Ekle**’ye tıklayın.
+5.  **Bir API Seç**’e tıklayın. 
+6.  Arama kutusuna **Microsoft Mobil Uygulama Yönetimi** girin.
+7.  API’ler listesinde **Microsoft Mobil Uygulama Yönetimi**’ni seçin ve seçime tıklayın.
+8.  **Kullanıcının Uygulama Yönetim Verilerini Okuma ve Yazma**'yı seçin.
+9.  **Bitti**’ye tıklayın.
+
+Azure AD ile uygulama kaydetme hakkında daha fazla bilgi için [buraya](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) bakın. 
 
 Ayrıca aşağıdaki [Koşullu Erişim](#conditional-access) gereksinimlerini inceleyin.
 
@@ -1418,7 +1431,7 @@ Aşağıdakiler; otomatik bir APP-WE hizmet kaydı (buna bu bölümde **varsayı
 > **Varsayılan kaydın** faydaları arasında, cihazdaki bir uygulama için APP-WE hizmetinden ilke almanın basitleştirilmiş bir yöntemi de bulunur.
 
 ### <a name="general-requirements"></a>Genel Gereksinimler
-* Intune SDK’sı ekibi, uygulamanızın Uygulama Kimliğine gereksinim duyar. Bunu bulmanın bir yolu [Azure Portalı](https://portal.azure.com/)’nda, **Tüm Uygulamalar** altındaki **Uygulama Kimliği** sütunudur. Intune SDK’sı ekibine kolaylıkla ulaşmanın yolu msintuneappsdk@microsoft.com adresine e-posta göndermektir.
+* Uygulamanızın Intune mobil uygulama yönetimi hizmetine kayıtlı olduğundan emin olmak için [Yaygın ADAL yapılandırmaları no 2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations)’deki adımları izleyin.
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK’sı ile çalışma
 Bu yönergeler, bir son kullanıcı cihazında uygulama kullanımı için Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulama geliştiricilerine özgüdür.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +14,16 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4a047ceb6baa15ad59a5792430b60f2adf18c98a
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905215"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321280"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune'daki cihazlarınız için sertifika profili yapılandırma
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Kullanıcılarınıza VPN, Wi-Fi veya e-posta profilleri aracılığıyla şirket kaynaklarına erişim izni verdiğinizde, bu bağlantıların kimlik doğrulamasını sertifika kullanarak yapabilirsiniz. Sertifikaları kullandığınızda, bağlantıların kimlik doğrulamasını yapmak için kullanıcı adı veya parola girmeniz gerekmez
+Kullanıcılara VPN, Wi-Fi veya e-posta profilleri üzerinden şirket kaynaklarına erişim izni verirsiniz. Sertifikaları kullanarak bu bağlantıların kimliklerini doğrulayabilirsiniz. Sertifikaları kullandığınızda, son kullanıcılarınızın kimlik doğrulaması yapmak için kullanıcı adı veya parola girmeleri gerekmez.
 
 Bu sertifikaları yönettiğiniz cihazlara atamak için Intune'u kullanabilirsiniz. Intune aşağıdaki sertifika türlerini atamayı ve yönetmeyi destekler:
 
@@ -36,9 +34,9 @@ Bu sertifika türlerinden her birinin kendi önkoşulları ve altyapı gereksini
 
 ## <a name="overview"></a>Genel bakış
 
-1. Doğru sertifika altyapısını sağladığınızdan emin olun. [SCEP sertifikalarını](certificates-scep-configure.md) ve [PKCS sertifikalarını](certficates-pfx-configure.md) kullanabilirsiniz.
+1. Doğru sertifika altyapısının ayarlandığından emin olun. [SCEP sertifikalarını](certificates-scep-configure.md) ve [PKCS sertifikalarını](certficates-pfx-configure.md) kullanabilirsiniz.
 
-2. Her cihaza bir kök sertifika veya ara Sertifika Yetkilisi (CA) sertifikası yükleyerek cihazın Sertifika Yetkilinizin meşruluğunu tanımasını sağlayın. Bunu yapmak için **güvenilen sertifika profili** oluşturun ve atayın. Bu profili atadığınızda Intune ile yönettiğiniz cihazlar kök sertifikayı ister ve alır. Her platform için ayrı profil oluşturmanız gerekir. Aşağıdaki platformlar için güvenilen sertifika profilleri sağlanır:
+2. Her cihaza bir kök sertifika veya ara Sertifika Yetkilisi (CA) sertifikası yükleyerek cihazın Sertifika Yetkilinizin meşruluğunu tanımasını sağlayın. Bunu yapmak için **güvenilen sertifika profili** oluşturun ve atayın. Bu profili atadığınızda Intune ile yönetilen cihazlar kök sertifikayı ister ve alır. Her platform için ayrı profil oluşturmanız gerekir. Aşağıdaki platformlar için güvenilen sertifika profilleri sağlanır:
 
     - iOS 8.0 ve üzeri
     - macOS 10.11 ve üzeri
@@ -86,13 +84,11 @@ Güvenilen sertifika profili ayarlarken bu sertifikayı içeri aktarırsınız.
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Adım 3 - Güvenilen sertifika profilleri oluşturma
 SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen sertifika profili oluşturun. Her cihaz platformu için bir güvenilen sertifika profili ve SCEP veya PKCS profili gereklidir. Güvenilen sertifikalar oluşturma adımları tüm cihaz platformlarında benzerdir.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
-2. **Cihaz yapılandırması** bölmesinde **Yönet** > **Profiller**’i seçin.
-3. Profiller bölmesinde **Profil oluştur**’u seçin.
-4. **Profil oluştur** bölmesinde, güvenilen sertifika profili için **Ad** ve **Açıklama** girin.
-5. **Platform** açılan listesinde, bu güvenilen sertifika için cihaz platformunu seçin. Şu anda, sertifika ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+3. **Cihaz yapılandırması** > **Yönet** > **Profiller** > **Profil oluştur**’u seçin.
+4. Güvenilen sertifika profili için bir **Ad** ve **Açıklama** girin.
+5. **Platform** açılan listesinde, bu güvenilen sertifika için cihaz platformunu seçin. Seçenekleriniz şunlardır:
 
     - **Android**
     - **Android kurumsal**
@@ -103,12 +99,14 @@ SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen se
     - **Windows 10 ve üzeri**
 
 6. **Profil türü** açılan listesinde **Güvenilen sertifika**’yı seçin.
-7. 1. görevde kaydettiğiniz sertifikaya gidin ve **Tamam**’a tıklayın.
+7. 1. görevde kaydettiğiniz sertifikaya gidin ve **Tamam**’ı seçin.
 8. Yalnızca Windows 8.1 ve Windows 10 cihazları için, güvenilen sertifika için **Hedef Depo** olarak şunlardan birini seçin:
+
     - **Bilgisayar sertifika deposu - Kök**
     - **Bilgisayar sertifika deposu - Ara**
     - **Kullanıcı sertifika deposu - Ara**
-8. Bitirdiğinizde **Tamam**’ı seçin, **Profil Oluştur** bölmesine gidin ve **Oluştur**’u seçin.
+
+9. Bitirdiğinizde **Tamam**’ı seçin, **Profil Oluştur** bölmesine gidin ve **Oluştur**’u seçin.
 
 Profil oluşturulur ve listede görüntülenir. Bu profili gruplara atamak için bkz. [cihaz profillerini atama](device-profile-assign.md).
 
@@ -124,4 +122,6 @@ Her sertifika profili türünü yapılandırmaya ve atamaya yardımcı olması i
 Güvenilen sertifika profilini oluşturduktan sonra, kullanmak istediğiniz her platform için SCEP veya PKCS sertifika profillerini oluşturun. SCEP sertifika profilini oluştururken, aynı platform için bir güvenilen sertifika profili girin. Bu adım, iki sertifika profilini birbirine bağlasa da her profili ayrı atamalısınız.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Cihaz profillerini atama hakkındaki genel bilgiler için bkz. [Cihaz profillerini atama](device-profile-assign.md).
+[Cihaz profillerini atama](device-profile-assign.md)  
+[E-postaları imzalamak ve şifrelemek için S/MIME kullanma](certificates-s-mime-encryption-sign.md)  
+[Üçüncü taraf sertifika yetkilisi kullanma](certificate-authority-add-scep-overview.md)

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909091"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279432"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Intune hesabınızı Android kurumsal hesabınıza bağlama
 
@@ -51,7 +51,7 @@ Android iş profili cihazları ve Android bilgi noktası cihazlarını desteklem
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Android kurumsal yönetici hesabınızın bağlantısını kesme
 
-Android kurumsal kaydı ve yönetimini kapatabilirsiniz. Intune yönetim konsolunda **Bağlantıyı kes**’i seçmek, tüm Android iş profili ve bilgi noktası cihazlarının kaydını kaldırır. Ayrıca Android kurumsal hesabı ve Intune arasındaki ilişkiyi de kaldırır.
+Android kurumsal kaydı ve yönetimini kapatabilirsiniz. Bunu yapmak için, önce tüm kayıtlı Android iş profili cihazlarını devre dışı bırakmanız gerekir. Ardından, tüm Android iş profili ve bilgi noktası cihazlarının kaydını kaldırmak için Intune yönetim konsolunda **Bağlantıyı kes**’i seçin. Bu işlem Android kurumsal hesabı ile Intune arasındaki ilişkiyi de kaldırır.
 
 1. Bir Intune yöneticisi olarak [Azure portalında](https://portal.azure.com) **Tüm Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 2. **Cihaz kaydı** > **Android kaydı** > **Yönetilen Google Play** > **Bağlantıyı kes**’i seçin.

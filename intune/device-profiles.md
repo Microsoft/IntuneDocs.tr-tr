@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 07/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
+ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905198"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335835"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profilleri nedir?
 
@@ -113,6 +113,13 @@ Bu özellik şunları destekler:
 - iOS
 - Mac OS
 - Windows 8.1 (yalnızca içeri aktarma)
+
+## <a name="esim-cellular---public-preview"></a>eSIM hücresel - Genel önizleme
+
+[eSIM hücresel profilleri](esim-device-configuration.md), İnternet ve veri erişimi için yönetilen cihazlarınızda mobil İnternet tarifelerini yapılandırma olanağı sağlar.  Mobil operatörünüzden etkinleştirme kodlarını aldıktan sonra bu etkinleştirme kodlarını içeri aktarmak ve ardından eSIM uyumlu cihazlarınıza atamak için Intune’u kullanabilirsiniz.
+
+Bu özellik şunları destekler:
+- Windows 10 Fall Creators Update ve üzeri
 
 ## <a name="education"></a>Eğitim
 [Eğitim ayarları - Windows 10](education-settings-configure.md), [Windows Sınav Zamanı uygulamasının](https://education.microsoft.com/gettrained/win10takeatest) seçeneklerini yapılandırır. Bu seçenekleri yapılandırdığınızda, sınav tamamlanana kadar cihazda başka uygulama çalıştırılamaz.

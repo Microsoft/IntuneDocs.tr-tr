@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964717"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321195"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
 
@@ -32,9 +32,8 @@ Samsung KME kullanarak Intune kaydını etkinleştirmek için Intune ve Samsung 
     1. [Bir MDM profili oluşturun](#create-mdm-profile)
     2. [Cihaz ekleyin](#add-devices)
     3. [Cihazlara bir MDM profili atayın](#assign-an-mdm-profile-to-devices)
-2. Azure portalında [cihazları şirkete ait olarak tanımlayın](#identify-devices-as-corporate-owned).
-3. Knox portalında [son kullanıcı oturum açma seçeneğini yapılandırın](#configure-how-end-users-sign-in).
-4. [Cihazları dağıtın](#distribute-devices).
+2. Knox portalında [son kullanıcı oturum açma seçeneğini yapılandırın](#configure-how-end-users-sign-in).
+3. [Cihazları dağıtın](#distribute-devices).
 
 
 Knox Dağıtım Programı’nda yer alan yetkili satıcılardan cihaz satın alırken, Knox Portalı’na bir cihaz tanımlayıcıları (seri numaralar ve IMEI’ler) listesi otomatik olarak eklenir.
@@ -79,22 +78,6 @@ Cihazlara MDM profilleri atamak için aşağıdaki yöntemlerden biri kullanıla
 ## <a name="assign-an-mdm-profile-to-devices"></a>Cihazlara bir MDM profili atama
 Eklenen cihazların kaydedilebilmesi için önce Knox Portalı’nda bu cihazlara bir MDM profili atamalısınız. [Cihaz yapılandırması hakkında bilgi için Samsung Knox Kaydı Kullanıcı Kılavuzu’nu ziyaret edin](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
 
-## <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
-Kaydedilen cihazları KME kullanarak şirkete ait olarak tanımlayabilirsiniz. Bu işlem, cihazlar kaydedilmeden önce yapılmalıdır. Böylece ek yönetim görevleri gerçekleştirebilir ve tam telefon numarası ile uygulama envanteri gibi ilave bilgiler toplayabilirsiniz.
-
-Cihazları şirkete ait olarak tanımlamak için şu adımları izleyin:
-
-1. Knox Portalı’ndaki cihazlar listesini CSV dosyası olarak dışarı aktarın.
-
-2. CSV dosyasını [burada](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number) gösterildiği gibi IMEI veya seri numarası kullanarak biçimlendirin.
-
-3. CSV dosyasını Azure portalında **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** > **Ekle**’ye yükleyin.
-
-Artık kaydedilen tanımlı cihazlar, şirkete ait olarak işaretlenecektir.
-
-> [!NOTE]
->Intune, [Cihaz Kaydı Yöneticisi](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll) hesabıyla kaydedilen cihazlara şirkete ait durumunu otomatik olarak atar.
-
 ## <a name="configure-how-end-users-sign-in"></a>Son kullanıcıların nasıl oturum açacağını yapılandırma
 
 Intune’a KME kullanarak kaydedilen cihazlarda son kullanıcıların nasıl oturum açacağını aşağıdaki gibi yapılandırabilirsiniz:
@@ -121,7 +104,7 @@ Bu bilgiler yardımcı olmadı mı? [Knox Mobil Kayıt Kullanıcı Kılavuzu](ht
 
 - **“Parola” alanı yoksayılır:** Knox Portalı’ndaki **Cihaz ayrıntıları**’nda **parola** alanı doldurulursa Intune Şirket Portalı uygulaması bunu yoksayar. Cihaz kaydını tamamlamak için kullanıcının cihazda bir parola girmesi gerekir.
 
-- **"Android Enterprise Kaydı** KME, Android Enterprise Kaydını desteklemez.
+- **"Android Enterprise Kaydı:** KME, Android Enterprise Kaydını desteklemez.
 
 ## <a name="getting-support"></a>Destek alma
 [Samsung KME için destek alma](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm) hakkında daha fazla bilgi edinin.

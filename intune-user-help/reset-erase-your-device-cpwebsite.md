@@ -1,11 +1,11 @@
 ---
 title: Şirket Portalı web sitesinden cihazınızı sıfırlama | Microsoft Docs
-description: ''
+description: Şirket Portalı web sitesinden cihazınızı fabrika ayarlarına sıfırlamayı öğrenin.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/02/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,32 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: edb5f8306d728abb62b806f287a31b6a75d25cbd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f9c59b1bfccabd8489cd466c645dc4a0051e97c
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016994"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321586"
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı sıfırlama
 
-Cihazınızı kaybolur veya çalınırsa, verilerinize yetkisiz erişimi önlemek için cihazı fabrika varsayılan ayarlarına sıfırlamak isteyebilirsiniz. [Şirket Portalı web sitesini](https://portal.manage.microsoft.com#HelpDeskDialog) kullanarak cihazınızı uzaktan sıfırlayabilirsiniz. Şirket Portalı web sitesi, Intune’a kaydettiğiniz bilgisayarları ve cihazları yönetmek için kullanabileceğiniz bir web sayfasıdır. Şirket Portalı uygulaması kullanırken yapabileceğiniz görevlerin çoğunu yapmak için bu web sitesini kullanabilirsiniz.
+Kullanılmış, kayıp veya çalınan bir cihazı Şirket Portalı web sitesinden varsayılan fabrika ayarlarına sıfırlamayı öğrenin.  
 
-Cihazınızı sıfırlarsanız, cihaz artık Şirket Portalı'nda listelenmez ve fabrika varsayılan ayarlarına sıfırlanır.
+Sıfırlandıktan sonra cihaz Şirket Portalı’nda gösterilmez. Önceden var olan uygulama ve dosyalar silinir ve cihaz varsayılan fabrika ayarlarına geri yüklenir.
 
 > [!Note]
-> Şirket Portalı uygulamasını başka bir cihazda açarak ve sıfırlama işlemini tamamlamak için benzer adımları uygulayarak aşağıdaki adımları bu cihazda da gerçekleştirebilirsiniz. 
+> Ayrıca, kaydettiğiniz başka bir cihazda aşağıdaki adımları gerçekleştirebilirsiniz. Bu cihazda Şirket Portalı uygulamasını açın ve sıfırlamayı tamamlamak için benzer adımları izleyin.  
 
-Cihazınızı sıfırlamak için:
+1. [Şirket Portalı web sitesini](https://portal.manage.microsoft.com/#helpdeskDeskDialog) açın ve __Menü__ düğmesi > __Cihazlarım__’ı seçin.
 
-1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog) __menü__ düğmesine dokunun ve daha sonra __Cihazlarım__’ı seçin.
+2. Sıfırlamak istediğiniz cihazı seçin.
 
-2. __Cihazlarım__ sayfasında, yeniden adlandırmak istediğiniz cihazın adını seçin.
+    ![Tanımlanmamış, genel olarak adlandırılmış cihazları gösteren 2 kutucuğun bulunduğu Cihazlarım sayfasının ekran görüntüsü. Cihazların hemen altında gri bir başlık yer alır ve kullanıcılardan kullandıkları cihazı tanımlamalarını veya yeni bir tane eklemelerini ister.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Cihaz, bir açılan pencere içinde açılır. **Sıfırla**’yı seçin.  
 
-3. Cihaz, bir açılan pencere içinde açılır. **Sıfırla** düğmesine dokunun.
+ ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitleme dahil tüm seçenekler. ](./media/iwp-screen-with-all-options.png)
+4. Cihazınızın tüm içeriğini silmek üzere olduğunuz konusunda sizi uyaran bir ileti görüntülenir. Onaylamak için **Sıfırla**’ya dokunun.  
 
-4. Cihazınızdaki tüm içeriğin silinerek fabrika ayarlarına sıfırlanmak üzere olduğunu bildiren bir uyarı iletisi görüntülenir. Yapmak istediğiniz buysa doğrulamak için **Sıfırla**’ya dokunun.
-
-Cihazınız artık sıfırlanmıştır.
-
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com/#helpdeskDeskDialog) bakın.
