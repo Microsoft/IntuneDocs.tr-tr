@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
+ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905827"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501158"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -77,7 +77,7 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
 4. **Cihaz Türü Kısıtlamaları**'nın altında, ayarlamak istediğiniz kısıtlamayı seçin.
 5. Kısıtlama adının altında (varsayılan kısıtlama için **Tüm Kullanıcılar**), **Platformlar**'ı seçin. Listelenen her platform için **İzin Ver** veya **Engelle**'yi seçin.
 6. **Kaydet**’i seçin.
-7. Kısıtlama adının altında (varsayılan kısıtlama için **Tüm Kullanıcılar**), **Platform Yapılandırmaları**'nı seçin. Sonra, listelenen platformlar için en düşük ve en yüksek **Sürümleri** seçin. Desteklenen sürümler şunlardır:
+7. Kısıtlama adının altında (varsayılan kısıtlama için **Tüm Kullanıcılar**), **Platform Yapılandırmaları**'nı seçin. Sonra, listelenen platformlar için en düşük ve en yüksek **Sürümleri** seçin. Desteklenen sürüm biçimleri:
     - Android iş profili desteği major.minor.rev.build.
     - iOS major.minor.rev destekler.
     - Windows, yalnızca Windows 10 için major.minor.rev.build destekler.

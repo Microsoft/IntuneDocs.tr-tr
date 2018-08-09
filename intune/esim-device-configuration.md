@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336086"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400292"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune - Genel önizleme’de eSIM hücresel profilleri yapılandırma
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336086"
 
 ## <a name="introduction"></a>Giriş
 
-eSIM, katıştırılmış bir SIM yongasıdır ve [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro) gibi eSIM özellikli bir cihazdaki hücresel veri bağlantısı üzerinden İnternete bağlanmanızı sağlar. eSIM sayesinde cep telefonu operatörünüzden SIM kartı almanıza gerek kalmaz ve cep telefonu operatörleri ve mobil İnternet tarifeleri arasında hızla geçiş yapabilirsiniz.
+eSIM, katıştırılmış bir SIM yongasıdır ve [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro) gibi eSIM özellikli bir cihazdaki hücresel veri bağlantısı üzerinden İnternete bağlanmanızı sağlar. eSIM ile mobil operatörünüzden SIM kart almanız gerekmez. Genel gezgin olarak mobil operatörler ve veri planları arasında geçiş yaparak sürekli bağlantı sağlayabilirsiniz.
 
 Örneğin işiniz için bir mobil İnternet tarifeniz ve farklı bir cep telefonu operatöründe kişisel kullanım için başka bir mobil İnternet tarifeniz olduğunu varsayalım. Seyahat ederken o alandaki cep telefonu operatörlerini ve mobil İnternet tarifelerini bulup İnternete erişebilirsiniz.
 

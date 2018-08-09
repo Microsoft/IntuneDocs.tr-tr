@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321850"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575058"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API’leri kullanarak Intune’a SCEP için üçüncü taraf CA’ları ekleme
 
@@ -41,11 +41,18 @@ Yöneticiler Intune kullanarak SCEP profilleri oluşturur ve sonra bu profilleri
 - Sertifika Yetkilisinin Güvenilen Kök Sertifikası
 - Sertifika öznitelikleri ve daha fazlası
 
-Intune’a iade edilen cihazlar SCEP profiline atanır ve bu parametrelerle yapılandırılır. Dinamik olarak üretilen SCEP parolası Intune tarafından oluşturulur ve sonra cihaza atanır.
+Intune’a iade edilen cihazlar SCEP profiline atanır ve bu parametrelerle yapılandırılır. Dinamik olarak üretilen değişken SCEP parolası Intune tarafından oluşturulur ve sonra cihaza atanır.
 
-Bu parola, cihazın SCEP sunucusuna gönderdiği sertifika imzalama isteğinde beklenen parametreler hakkındaki ayrıntıları içerir. Parola ayrıca sınama süre sonunu da içerir. Intune bilgileri şifreler, şifrelenmiş blobu imzalar ve ardından bu ayrıntıları SCEP parolasında paketler.
+Bu sınama şunları içerir:
 
-Sertifika istemek için SCEP sunucusuyla iletişim kuran cihazlar da bu SCEP parolasını verir. Cihaza sertifika verilmesi için, bu parola SCEP sunucusunun doğrulamasından geçmelidir. SCEP parolası doğrulandığında aşağıdaki denetimler yapılır:
+- Dinamik olarak oluşturulan değişken parola
+- Cihazın SCEP sunucusuna gönderdiği sertifika imzalama isteğinde beklenen parametreler hakkındaki ayrıntılar
+- Sınama sona erme zamanı
+
+Intune bu bilgileri şifreler, şifrelenmiş blobu imzalar ve ardından bu ayrıntıları değişken SCEP parolasında paketler.
+
+Sertifika istemek için SCEP sunucusuyla iletişim kuran cihazlar da bu değişken SCEP parolasını verir. SCEP sunucusu SCR’yi ve şifreli değişken SCEP parolasını doğrulama için Intune’a gönderir.  Cihaza sertifika verilmesi için bu değişken parola ve CSR, SCEP sunucusunun doğrulamasından geçmelidir. SCEP değişken parolası doğrulandığında aşağıdaki denetimler yapılır:
+
 
 - Şifrelenmiş blobun imzası doğrulanır
 - Sınamanın süresinin dolmadığı doğrulanır

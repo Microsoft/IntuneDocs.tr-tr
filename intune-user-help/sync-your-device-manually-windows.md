@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.openlocfilehash: 04737d1e800094f21a8bdaf42047f8bce7f48e6a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236064"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362033"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows cihazınızı el ile eşitleme
 
 Uygulama yükleme hızı istediğiniz kadar yüksek değilse el ile eşitlemeyi başlatın. El ile eşitlemeler, en son güncelleştirmeler ve iletişimler için cihazınızı Intune’a bağlanmaya zorlar. Cihaz eşitlemesi tamamlandıktan sonra yükleme hızı artabilir.
 
-Intune, Şirket Portalı uygulamasından ve cihazın Ayarlar uygulamasından el ile eşitlemeyi destekler. 
+Intune; Şirket Portalı uygulamasından, masaüstü görev çubuğu ve Başlat menüsünden ve cihazın Ayarlar uygulamasından el ile eşitlemeyi destekler. 
 
 Şirket Portalı uygulaması işlevselliği, Creator’s Update (1703) ve üzerini çalıştıran Windows 10 cihazlarda desteklenir. 
 * [Şirket Portalı uygulamasından eşitleme](#Sync-from-Company-Portal-app-for-Windows)  
@@ -51,8 +51,19 @@ Creator’s Update (1703) ve üzerini çalıştıran Windows 10 cihazları el il
     
     ![Şirket Portalı uygulamasının Eşitle düğmesinin vurgulandığı ayarlar sayfasının ekran görüntüsü](./media/RS1_settingspage_sync05.png)  
 
+## <a name="sync-from-device-taskbar-or-start-menu"></a>Cihaz görev çubuğundan veya Başlat menüsünden eşitleme   
+
+Eşitleme denetimine uygulama dışında, cihazınızın masaüstünden de erişebilirsiniz. Uygulamayı doğrudan görev çubuğunuza veya Başlat menünüze sabitlediyseniz ve hızla eşitleme yapmak istiyorsanız bu yol kullanışlı olacaktır.  
+
+1. Görev çubuğunuzda veya Başlat menünüzde Şirket Portalı uygulaması simgesini bulun.  
+2. Uygulama simgesine sağ tıklayın, böylece uygulamanın menüsü (atlama listesi olarak da bilinir) açılır.  
+
+    ![Bir cihazın masaüstünde Windows görev çubuğunun ekran görüntüsü. Şirket Portalı uygulaması simgesi tıklanmış ve “Görev çubuğuna sabitle”, “Pencereyi kapat” ve “Bu cihazı eşitle” eylemi seçeneklerini içeren bir menü görüntülenmiştir.](./media/sync-device-from-start-menu-1807.png)  
+
+3. **Bu cihazı eşitle**’yi seçin. Şirket Portalı uygulaması, **Ayarlar** sayfasında açılır ve eşitlemenizi başlatır.  
+
 ## <a name="sync-from-settings-app"></a>Ayarlar Uygulamasından eşitleme 
-Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ve Windows Phone 8.1 cihazlarınızı Ayarlar uygulamasından el ile eşitlemek için bu adımları tamamlayın.
+Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ve Windows Phone 8.1 cihazlarınızı Ayarlar uygulamasından el ile eşitlemek için bu adımları tamamlayın.  
 
 ### <a name="windows-10-desktop"></a>Windows 10 masaüstü
 1. Cihazınızda **Başlat** > **Ayarlar**’ı seçin.

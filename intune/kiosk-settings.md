@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321866"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481130"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune’da Windows 10 (ve sonrası) için bilgi noktası ayarları
 
@@ -25,9 +25,18 @@ Bilgi noktası profilleri, Windows 10 cihazlarını bir veya birden çok uygulam
 
 ## <a name="kiosk-settings"></a>Bilgi noktası ayarları
 
-1. Bilgi noktası ortamı oluşturmak için **Ekle**'yi seçin.
-2. Bilgi noktanız için **Bilgi noktası yapılandırma adı**'nı girin. Bu ad bir uygulama grubunu, bu uygulamaların başlat menüsündeki düzenini ve bu bilgi noktası yapılandırmasına atanan kullanıcıları tanımlar.
-3. **Bilgi noktası modu**'nu seçin. **Bilgi noktası modu**, ilke tarafından desteklenen bilgi noktası modu türünü belirler. Şu seçenekler mevcuttur:
+1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil Oluştur**’u seçin.
+3. Aşağıdaki özellikleri girin:
+
+   - **Ad**: Yeni profil için açıklayıcı bir ad girin.
+   - **Açıklama**: Profil için bir açıklama girin. Bu isteğe bağlıdır ancak önerilir.
+   - **Platform**: **Windows 10 ve üzeri**’ni seçin
+   - **Profil türü**: **Bilgi Noktası (Önizleme)** seçin
+   
+4. **Bilgi Noktası** > **Ekle**’yi seçin.
+5. Bilgi noktanız için **Bilgi noktası yapılandırma adı**'nı girin. Bu ad bir uygulama grubunu, bu uygulamaların başlat menüsündeki düzenini ve bu bilgi noktası yapılandırmasına atanan kullanıcıları tanımlar.
+6. **Bilgi noktası modu**'nu seçin. **Bilgi noktası modu**, ilke tarafından desteklenen bilgi noktası modu türünü belirler. Şu seçenekler mevcuttur:
 
     - **Yapılandırılmamış** (varsayılan): İlke, bilgi noktası modunu etkinleştirmez.
     - **Tekli tam ekran uygulama bilgi noktası**: Profil, cihazın tek bir kullanıcı hesabı gibi davranmasına olanak tanır ve cihazı tek bir Evrensel Windows Platformu (UWP) uygulamasını çalıştıracak şekilde kilitler. Dolayısıyla kullanıcı oturum açtığında belirli bir uygulama başlar. Bu mod ayrıca kullanıcının yeni uygulamalar açmasını veya çalışan uygulamayı değiştirmesini önler.
