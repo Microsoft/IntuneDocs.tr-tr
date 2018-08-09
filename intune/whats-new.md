@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321569"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362067"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1123,6 +1123,16 @@ Intune'da reddedilen uygulamaları belirtebilirsiniz. Uygulama reddedilirse, şi
 
 
 ## <a name="notices"></a>Bildirimler
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Değişiklik Planı: Sonraki Kimlik Doğrulamasında Parolayı Değiştir, Intune’a eklendi<!-- 1873216 -->
+Eylül hizmet sürümünde Intune, macOS sürüm 10.13 ve üzerini çalıştıran cihazlar için Apple’ın yeni çıkan **Sonraki Kimlik Doğrulamasında Parolayı Değiştir** ayarını tümleştirmeyi planlıyor. Bu ayar olmadan MDM sağlayıcıları cihazın geçiş kodunun uyumlu olacak şekilde değiştirildiğini doğrulayamıyorlar. Intune’un yapılandırma ve uyumluluk ilkeleri, yalnızca cihazın parolası bir sonraki sefer değiştiğinde uyumlu olarak işaretleneceğini doğrular. Bu yeni Apple özelliği eklendiğinde, macOS kullanıcılarınız uyumlu olsa bile parolalarını güncelleştirmek için bir istek alır.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Bu, Intune veya karma MDM kullanan ve macOS cihaz ilkesine sahip ortamları etkileyecek. Artık Apple’ın **Sonraki Kimlik Doğrulamasında Parolayı Değiştir** ayarı olduğu için Intune, bir parola ilkesi gönderildiğinde kullanıcıları parolalarını değiştirmeye zorlayabilir. Cihaz uyumlu olarak işaretlenene kadar şirket kaynaklarını engellerseniz, son kullanıcılarınız parolalarını sıfırlayana kadar e-posta veya SharePoint siteleri gibi şirket kaynaklarına erişemeyebilirler. Gelecekte, tüm yapılandırma ve uyumluluk parola ilkeleri hedeflenen kullanıcıları parolalarını değiştirmeye zorlayacak.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
+Durumu yardım masanıza bildirin. Bu macOS cihaz ilkesini kullanmak istemiyorsanız, geçerli macOS ilkenizin atamasını kaldırmanızı veya bu ilkeyi silmenizi öneririz. Müşteri araştırmalarına göre çoğu müşteri bu değişiklikten etkilenmeyecek. Pek çok son kullanıcı, uyumlu kalmak için parolayla kaydolmaya veya parolalarını sıfırlamaya yönelik istek aldıktan sonra parolasını güncelleştiriyor.
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Değişiklik Planı: Intune, Eylül'de iOS 10 ve üzerine desteklemeye geçiyor <!-- 2454656 -->
 Eylül'de, Apple iOS 12'yi kullanıma sunmayı bekliyor. Kullanıma sunulmasından kısa süre sonra, Intune kaydını, Şirket Portalı'nı ve yönetilen tarayıcıyı iOS 10 ve üzerine desteklemeye geçireceğiz.  
