@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575092"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001919"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Microsoft Intune için erken sürüm - Ağustos 2018
 
@@ -75,7 +75,7 @@ Bir kapsam etiketi oluşturmak için **Intune rolleri** > **Kapsam (Etiketler)**
 Kapsam etiketini bir rol atamasına eklemek için **Intune rolleri** > **Tüm roller** > **İlke ve Profil Yöneticisi** > **Atamalar** > **Kapsam (Etiketler)**’i seçin.
 Kapsam etiketini bir yapılandırma profiline eklemek için **Cihaz yapılandırması** > **Profiller** > bir profil seçin > **Özellikler** > **Kapsam (Etiketler)**’i seçin.
 
-### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Bir AutoPilot cihazına kullanıcı ve kolay ad atama <!--1346521 -->
+### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Autopilot cihazına kullanıcı ve kolay ad atama <!--1346521 -->
 Gelecekteki bir genel önizleme ile yöneticiler, tek bir AutoPilot cihazına bir kullanıcı atayabilecekler.  Yöneticiler ayrıca cihazlarını AutoPilot ile ayarlayan kullanıcıları karşılaması için kolay adlar verebilecekler.
 
 Şunun için geçerlidir: Windows Insider 1809 veya sonraki derlemeler (önizlemedeyken).
@@ -99,30 +99,29 @@ Bu özelliği görmek için **Cihaz kaydı** > **Cihaz kısıtlamaları**’nı 
 Bu kısıtlamayı açtığınızda, kayıtlı olan cihazlar etkilenmez.
 Kısıtlama açıldıktan sonra Intune, tüm yeni Windows kayıt isteklerinin şirket kaydı olarak yetkilendirildiğinden emin olmak için denetim yapar. Şirket kaydı olarak yetkilendirme için aşağıdaki yöntemler uygundur:
 - Kaydeden kullanıcı [cihaz kayıt yöneticisi hesabı]( device-enrollment-manager-enroll.md) kullanıyor.
-
-- Cihaz [Windows AutoPilot](enrollment-autopilot.md) yoluyla kaydediliyor.
+- Cihaz [Windows Autopilot](enrollment-autopilot.md) yoluyla kaydediliyor.
 - Cihazın IMEI numarası **Cihaz kaydı** > **[Şirket cihaz tanımlayıcıları]( corporate-identifiers-add.md)**’nda listelenmiş.
 - Cihaz bir [toplu sağlama paketi](windows-bulk-enroll.md) ile kaydediliyor.
 - Cihaz [ortak yönetim için SCCM’den otomatik kayıt](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management) yoluyla kaydediliyor.
-Yetkilendirilmemiş kayıtlar engellenir.
-Aşağıdaki kayıtlar Intune tarafından şirket olarak işaretlenir ancak Intune yöneticisine cihaz başına denetim sağlamadığı için engellenir:
+
+Yetkilendirilmemiş kayıtlar engellenir. Aşağıdaki kayıtlar Intune tarafından şirket olarak işaretlenir ancak Intune yöneticisine cihaz başına denetim sağlamadığı için engellenir:
 - [Windows kurulumu sırasında Azure Active Directory katılımı](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
 - [Windows kurulumundan Azure Active Directory katılımı](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+
 Aşağıdaki kişisel kayıt yöntemleri de engellenir:
 - [Windows Ayarları’ndan İş Hesabı Ekleme](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
-
 - Windows Ayarları’ndan [Yalnızca MDM kaydı]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) seçeneği.
 
-### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Bir AutoPilot profilinde makine adı desenleri belirtme <!--1849855-->
-AutoPilot kaydı sırasında [bilgisayar adı](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) oluşturmak ve ayarlamak için bir bilgisayar adı belirtebileceksiniz. Bunu, **Cihaz kaydı** > **Windows kaydı** > **Windows AutoPilot Dağıtım hizmeti** > **Profiller**’de bulunan AutoPilot profilinde belirtmeniz gerekecektir. Yalnızca alfasayısal karakterler ve kısa çizgi kullanılabilir.
+### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Autopilot profilinde makine adı desenleri belirtme <!--1849855-->
+Autopilot kaydı sırasında [bilgisayar adı](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) oluşturmak ve ayarlamak için bir bilgisayar adı belirtebileceksiniz. Bunu, **Cihaz kaydı** > **Windows kaydı** > **Windows AutoPilot Dağıtım hizmeti** > **Profiller**’de bulunan Autopilot profilinde belirtmeniz gerekecektir. Yalnızca alfasayısal karakterler ve kısa çizgi kullanılabilir.
 Şunun için geçerlidir: Windows Insider 1809 veya sonraki derlemeler (önizlemedeyken).
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>iOS sürüm numarası ve derleme numarası gösteriliyor <!-- 1892471 -->
 **Cihaz uyumluluğu** > **Cihaz uyumluluğu**’nda iOS işletim sistemi sürümü gösterilir. Gelecek bir güncelleştirme ile derleme numarası da gösterilecek.
 Güvenlik güncelleştirmeleri kullanıma sunulduğunda Apple genellikle sürüm numarasını olduğu gibi bırakır ancak derleme numarasını güncelleştirir. Derleme numarasına bakarak bir güvenlik açığı güncelleştirmesinin yüklenip yüklenmediğini kolayca denetleyebilirsiniz.
 
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows AutoPilot profilleri için şirket oturum açma sayfasında ve etki alanı hata sayfasında hesap değiştirme seçeneklerini gizleme <!--1901669 -->
-Bir genel önizleme, yöneticilerin şirket oturum açma ve etki alanı hata sayfalarında hesap değiştirme seçeneklerini gizlemelerine imkan veren Windows AutoPilot profil seçeneklerini barındıracak. Bu seçenekleri gizlemek, Azure Active Directory’de Şirket Markasının yapılandırılmasını gerektirir. Şunun için geçerlidir: Windows Insider 1809 veya sonraki derlemeler (önizlemedeyken).
+### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows Autopilot profilleri için şirket oturum açma sayfasında ve etki alanı hata sayfasında hesap değiştirme seçeneklerini gizleme <!--1901669 -->
+Bir genel önizleme, yöneticilerin şirket oturum açma ve etki alanı hata sayfalarında hesap değiştirme seçeneklerini gizlemelerine imkan veren Windows Autopilot profil seçeneklerini barındıracak. Bu seçenekleri gizlemek, Azure Active Directory’de Şirket Markasının yapılandırılmasını gerektirir. Şunun için geçerlidir: Windows Insider 1809 veya sonraki derlemeler (önizlemedeyken).
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>Cihazda iOS yazılım güncelleştirmelerinin gösterilmesini geciktirme <!-- 1949583 -->
 Intune > **Yazılım Güncelleştirmeleri** > **iOS güncelleştirme ilkeleri**’nde cihazların güncelleştirme yüklemesini istemediğiniz gün ve saatleri yapılandırabilirsiniz. Gelecek bir güncelleştirme ile bir yazılım güncelleştirmesinin cihazda görüntülenmesini 1-90 gün kadar geciktirebileceksiniz. 
@@ -167,6 +166,13 @@ Windows 10 VPN profillerini, VPN arabirimine atanmış IP adreslerini özel prof
 Azure klasik portalında oluşturulan ilkeler artık kullanım dışı olacak.  Bu gerçekleştiğinde mevcut ilkeleri gözden geçirebilir ve silebilirsiniz; güncelleştiremezsiniz. İlkeleri virgülle ayrılan dosya (.csv dosyası) olarak dışarı aktarabilirsiniz. Daha sonra Intune Azure portalında bu ilkeleri yeniden oluşturmak için dosyadaki ayrıntıları kullanabilirsiniz.
 > [!IMPORTANT]
 > Azure klasik portalı kullanımdan kaldırıldığında ilkelerinize erişemeyecek ve hatta bunları göremeyeceksiniz. Bu sebeple Azure klasik portalı kullanımdan kaldırılmadan önce ilkelerinizi dışarı aktarıp Azure portalında yeniden oluşturduğunuzdan emin olun.
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>Terminolojiyi "kullanım dışı bırakma" ve "temizleme" olarak değiştirin <!-- 2175759 -->
+Graph API ile tutarlılığı sağlamak için, Intune kullanıcı arabirimi ve belgelerine aşağıdaki terim değişiklikleri yansıtılacak:
+- **Şirket verilerini kaldır** terimi, **kullanımdan kaldırma** olarak değiştirilecek
+- **Fabrika sıfırlaması** terimi **temizleme** olarak değiştirilecek
+
+
 
 <!-- 1807 start -->
 

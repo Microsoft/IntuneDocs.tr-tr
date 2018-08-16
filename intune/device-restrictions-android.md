@@ -1,12 +1,11 @@
 ---
-title: Android için Microsoft Intune cihaz kısıtlama ayarları
-titlesuffix: ''
-description: Android çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.
+title: Microsoft Intune'da Android için cihaz kısıtlama ayarları - Azure | Microsoft Docs
+description: Microsoft Intune'da denetleyebileceğiniz ve kısıtlayabileceğiniz tüm Android cihaz ayarlarının listesine bakın. Parolayı denetlemek, Google Play'e erişmek, uygulamalara izin vermek veya bunları yasaklamak, tarayıcı ayarlarını denetlemek, uygulamaları engellemek, Google bulutuna yedekleme yapmak ve mesaj, ses, veri dolaşımı, Wi-Fi ve Bluetooth bağlantı seçeneklerini denetlemek için bu ayarları kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +13,14 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
+ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190665"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39587032"
 ---
-# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android ve Samsung Knox Standard cihaz kısıtlama ayarları 
+# <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android ve Samsung Knox Standard cihaz kısıtlama ayarları - Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -53,7 +52,7 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
     > Samsung Knox cihazlar, MDM kaydı sırasında otomatik olarak 4 basamaklı bir PIN gerektirir. Yerel Android cihazlar, koşullu erişimle uyumlu olmak için otomatik olarak bir PIN gerektirebilir.
 
 - **En az parola uzunluğu** - Kullanıcının yapılandırması gereken parolanın uzunluk alt sınırını girin (4 ile 16 karakter arasında).
-- **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** - Cihaz otomatik olarak kilitlenmeden önce işlem yapılmayan dakika sayısını belirtir.
+- **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** - Ekran otomatik olarak kilitlenmeden önce izin verilecek işlem yapılmayan en fazla dakika sayısını girin. Bir cihazda, son kullanıcı profilde yapılandırılmış olan süreden daha büyük bir değer ayarlayamaz. Son kullanıcı daha düşük bir süre değeri ayarlayabilir. Örneğin, profilde 15 dakika ayarlandıysa, son kullanıcı değer olarak 5 dakika ayarlayabilir. Son kullanıcı değer olarak 30 dakika ayarlayamaz. 
 - **Cihaz silinmeden önceki oturum açma hatası sayısı** - Cihaz silinmeden önce başarısız oturum açma sayısını belirtir.
 - **Parola süresinin sonu (gün)** - Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.
 -  **Gerekli parola türü** - Gereken parola karmaşıklık düzeyini ve biyometrik cihaz kullanılıp kullanılamayacağını belirtir. Aşağıdakilerden birini seçin:
