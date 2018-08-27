@@ -4,8 +4,6 @@
 
 ## [Şirketim, Intune ile hangi bilgileri görüntüleyebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Cihazımı sıfırlama](what-happens-if-you-reset-your-device-cpwebsite.md)
-
 ## [Parolamı güncelleştirme](password-does-not-meet-it-administrator-requirements.md)
 
 ## [Şirket Portalı’nda oturum açma](sign-in-to-the-company-portal.md)
@@ -105,8 +103,8 @@
 ## [macOS cihazınızı kullanma](using-your-macos-device-with-intune.md)
 ### [Bir macOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-cp.md)
-### [macOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-macos.md)
-
+### [Şirket tarafından sağlanan macOS cihazını kaydetme](enroll-company-device-macos.md)  
+### [macOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-macos.md)  
 ### [macOS cihazındaki yaygın sorunları çözme](troubleshoot-your-device-macos.md)
 #### [Kullandığım macOS sürümü henüz desteklenmiyor](your-macos-version-isnt-yet-supported.md)
 #### [macOS cihazınızı güncelleştirme](you-need-to-update-your-macos-device.md)
