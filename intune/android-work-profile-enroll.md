@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909074"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255089"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Android iş profili cihazların kaydını ayarlama
 
@@ -34,7 +34,7 @@ Android iş profili yönetimini ayarlamak için aşağıdaki adımları izleyin:
 2. Android iş profili kayıt ayarlarını belirtin. Android iş profilleri, [yalnızca belirli Android cihazlarda desteklenmektedir](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Android iş profili destekleyen tüm cihazlar geleneksel Android yönetimini de destekler. Intune, Android iş profilini destekleyen cihazların [Kayıt Kısıtlamaları](enrollment-restrictions-set.md) içerisinde nasıl yönetileceğini belirtmenize olanak sağlar.
     - **Engelle (varsayılan ayar)**: Android iş profili destekleyen cihazlar da dahil olmak üzere tüm Android cihazlar, geleneksel Android cihaz olarak kaydedilir.
     - **İzin ver**: Android iş profili destekleyen tüm cihazlar, Android iş profili cihazları olarak kaydedilir. Android iş profilini desteklemeyen herhangi bir Android cihaz, geleneksel Android cihaz olarak kaydedilir.
-3. [Kullanıcılarınıza cihazlarını nasıl kaydedeceklerini anlatın](/intune-user-help/enroll-your-device-in-intune-android.md).
+3. [Kullanıcılarınıza cihazlarını nasıl kaydedeceklerini anlatın](/intune-user-help/enroll-your-device-in-intune-android).
 
 
 Android iş profiline cihaz kaydetmek istiyorsanız ancak bu cihazlar zaten normal Android cihazlar olarak kayıtlıysa, cihazları kaldırıp yeniden kaydetmeniz gerekir.

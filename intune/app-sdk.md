@@ -1,20 +1,27 @@
---
-# <a name="required-metadata"></a>gerekli meta veriler
-
-başlık: Intune Uygulama SDK’sının avantajları başlık son eki: Microsoft Intune açıklama: Intune Uygulama SDK’sı, hem iOS hem de Android platformları için kullanılabilir ve Microsoft Intune ile mobil uygulama yönetim özelliklerini etkinleştirir.
-anahtar sözcükler: yazar: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: makale ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# <a name="optional-metadata"></a>isteğe bağlı meta veriler
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: aanavath ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-classic
-
 ---
-
+title: Intune App SDK’sının yararları
+titlesuffix: Microsoft Intune
+description: Intune Uygulama SDK'sı hem iOS hem de Android platformu için kullanılabilir ve Microsoft Intune ile mobil uygulama yönetim özelliklerini etkinleştirir.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 05/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+ms.reviewer: aanavath
+ms.suite: ems
+ms.custom: intune-classic
+ms.openlocfilehash: 19a550b9ecdee55f29b9ac9424c009bf68c25ed1
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251627"
+---
 # <a name="intune-app-sdk-overview"></a>Intune Uygulama SDK'sına genel bakış
 iOS ve Android için kullanılabilen Intune uygulama SDK'sı, uygulamanızı Intune uygulama koruma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için API’leri kullanarak uygulamanızın davranışını, uygulama katılımınızı gerektiren özelliklere göre özelleştirebilirsiniz.
 
