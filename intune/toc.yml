@@ -675,30 +675,6 @@ items:
       href: data-apple-sends-to-intune.md
     - name: Google’ın Intune’a gönderdiği veriler
       href: data-google-sends-to-intune.md
-  - name: İzleme ve sorun giderme
-    items:
-    - name: Kullanıcıların sorunları gidermesine yardımcı olma
-      href: help-desk-operators.md
-    - name: Şirket kaynak erişimi sorunlarını giderme
-      href: troubleshoot-company-resource-access-problems.md
-    - name: Sorun giderme uygulaması kurulum sorunları
-      href: troubleshoot-app-install.md
-    - name: Intune etkinlikleri için denetleme günlükleri
-      href: monitor-audit-logs.md
-    - name: Uygulama koruma günlüklerini gözden geçirme
-      href: app-protection-policy-settings-log.md
-    - name: E-posta profilleriyle ilgili sorunları giderme
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: Yazılım güncelleştirmesi sorunlarını giderme
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Uç nokta koruması sorunlarını giderme
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: İlkelerle ilgili sorunları giderme
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: Koşullu erişim sorunlarını giderme
-      href: troubleshoot-conditional-access.md
-    - name: Exchange bağlayıcısı sorunlarını giderme
-      href: troubleshoot-exchange-connector.md
   - name: Otomatikleştirme ve özelleştirme
     items:
     - name: Özel cihaz ayarlarını yapılandırma
@@ -796,11 +772,35 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Kaynaklar
   items:
+  - name: Sorunları Gider
+    items:
+    - name: Kullanıcıların sorunları gidermesine yardımcı olma
+      href: help-desk-operators.md
+    - name: Şirket kaynak erişimi sorunlarını giderme
+      href: troubleshoot-company-resource-access-problems.md
+    - name: Sorun giderme uygulaması kurulum sorunları
+      href: troubleshoot-app-install.md
+    - name: Intune etkinlikleri için denetleme günlükleri
+      href: monitor-audit-logs.md
+    - name: Uygulama koruma günlüklerini gözden geçirme
+      href: app-protection-policy-settings-log.md
+    - name: E-posta profilleriyle ilgili sorunları giderme
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: Yazılım güncelleştirmesi sorunlarını giderme
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Uç nokta koruması sorunlarını giderme
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: İlkelerle ilgili sorunları giderme
+      href: troubleshoot-policies-in-microsoft-intune.md
+    - name: Koşullu erişim sorunlarını giderme
+      href: troubleshoot-conditional-access.md
+    - name: Exchange bağlayıcısı sorunlarını giderme
+      href: troubleshoot-exchange-connector.md
   - name: Sözlük
     href: intune-glossary.md
-ms.openlocfilehash: ab5b79b56ff430575cf3c9021ce33b573b4d0f22
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: 696173c0e1ecc8121637139ce4ada0b497ab7506
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42822959"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241771"
