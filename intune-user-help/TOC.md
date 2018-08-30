@@ -64,7 +64,7 @@
 ### [Bir iOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Şirket Portalı'nı yükleme ve uygulamada oturum açma](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS cihazınızı kaydetme](enroll-your-device-in-intune-ios.md)
-### [Aygıt Kayıt Programı iOS cihazlarınızı kaydetme](enroll-your-device-dep-ios.md)
+### [Kuruluş tarafından sağlanan iOS cihazınızı kaydetme](enroll-your-device-dep-ios.md)
 
 ### [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)
 ### [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
@@ -103,7 +103,7 @@
 ## [macOS cihazınızı kullanma](using-your-macos-device-with-intune.md)
 ### [Bir macOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-cp.md)
-### [Şirket tarafından sağlanan macOS cihazını kaydetme](enroll-company-device-macos.md)  
+### [Kuruluş tarafından sağlanan macOS cihazınızı kaydetme](enroll-company-device-macos.md)  
 ### [macOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-macos.md)  
 ### [macOS cihazındaki yaygın sorunları çözme](troubleshoot-your-device-macos.md)
 #### [Kullandığım macOS sürümü henüz desteklenmiyor](your-macos-version-isnt-yet-supported.md)
