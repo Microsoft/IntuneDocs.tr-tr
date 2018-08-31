@@ -15,18 +15,18 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
-ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
+ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203229"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255550"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Cihaz kayıt yöneticisi hesabı kullanarak cihazları kaydetme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek için Intune'u kullanabilir. *Cihaz kayıt yöneticisi* (DEM) hesabı, 1.000’e kadar cihazı kaydedebilen özel bir kullanıcı hesabıdır. Varolan kullanıcılara özel DEM yetenekleri vermek için kullanıcıları DEM hesabına ekleyin. Kaydedilen her cihaz tek bir lisans kullanır. Bu hesap aracılığıyla kaydedilen cihazları, kişisel ("KCG") cihazlar olarak değil paylaşılan cihazlar olarak kullanmanızı öneririz.  
+Kuruluşlar, çok sayıda mobil cihazı tek bir kullanıcı hesabıyla yönetmek için Intune'u kullanabilir. *Cihaz kayıt yöneticisi* (DEM) hesabı, 1.000’e kadar cihazı kaydedebilen özel bir kullanıcı hesabıdır. Varolan kullanıcılara özel DEM seçenekleri vermek için kullanıcıları DEM hesabına ekleyin. Kaydedilen her cihaz tek bir lisans kullanır. Bu hesap aracılığıyla kaydedilen cihazları, kişisel ("KCG") cihazlar olarak değil paylaşılan cihazlar olarak kullanmanızı öneririz.  
 
 Kullanıcıların, cihaz kayıt yöneticileri olarak eklenmesi için [Azure portalında](https://portal.azure.com) mevcut olmaları gerekir. En iyi güvenlik için DEM kullanıcısının Intune yöneticisi olmaması gerekir.
 
@@ -35,7 +35,7 @@ Kullanıcıların, cihaz kayıt yöneticileri olarak eklenmesi için [Azure port
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Cihaz kayıt yöneticisi senaryo örneği
 
-Bir restoran, garsonlar için 50 satış noktası tableti, mutfak çalışanları içinse sipariş izleyici istiyor. Çalışanların hiçbir zaman şirket verilerine erişmesi veya kullanıcı olarak oturum açması gerekmiyor. Intune yöneticisi, bir restoran yöneticisi için yeni cihaz kayıt yöneticisi hesabı oluşturur.  Bu hesap, yöneticinin birincil hesabından ayrıdır ve yalnızca paylaşılan cihazları Intune’a kaydetmek amacıyla kullanılır. Yönetici, artık DEM kimlik bilgilerini kullanarak 50 tableti kaydedebilir.
+Bir restoran, garsonlar için 50 satış noktası tableti, mutfak çalışanları içinse sipariş izleyici istiyor. Çalışanların hiçbir zaman şirket verilerine erişmesi veya kullanıcı olarak oturum açması gerekmiyor. Intune yöneticisi, bir restoran yöneticisi için yeni cihaz kayıt yöneticisi hesabı oluşturur.  Bu hesap, yöneticinin birincil hesabından ayrıdır ve yalnızca paylaşılan cihazları Intune’a kaydetmek için kullanılır. Yönetici, artık DEM kimlik bilgilerini kullanarak 50 tableti kaydedebilir.
 
 Yalnızca [Azure portalındaki](https://portal.azure.com) kullanıcılar cihaz kayıt yöneticileri olabilir. Cihaz kayıt yöneticisi bir Intune yöneticisi olamaz.
 
@@ -74,25 +74,24 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
 
 ## <a name="permissions-for-dem"></a>DEM izinleri
 
-Genel veya Intune Hizmet Yöneticisi Azure AD rollerinin Yönetici Portalında DEM kaydıyla ilgili görevleri gerçekleştirmesi gerekir. Ayrıca özel Kullanıcı rolü altında RBAC izinlerinin de listelenmesine karşın, tüm DEM kullanıcılarını görmek için de bu roller gereklidir. Genel Yönetici veya Intune Hizmet Yöneticisi rolü atanmamış ancak Cihaz Kayıt Yöneticileri rolü için okuma izinlerine sahip bir kullanıcı yalnızca kendi oluşturduğu DEM kullanıcılarını görebilir. Bu özellikler için RBAC rolü desteği gelecekte duyurulacaktır.
+Yönetici Portalında DEM kaydıyla ilgili görevleri tamamlamak için,
+- Genel Yönetici veya Intune Hizmet Yöneticisi Azure AD rolleri gerekir
+- Özel Kullanıcı rolü altında RBAC izinlerinin de listelenmesine karşın, tüm DEM kullanıcılarına bakın.
 
-Kullanıcıya Genel Yönetici veya Intune Hizmet Yöneticisi rolü atanmadıysa ancak Cihaz Kayıt Yöneticileri rolü için okuma izinleri etkinleştirildiyse yalnızca kendi oluşturduğu DEM kullanıcılarını görebilir.
+Genel Yönetici veya Intune Hizmet Yöneticisi rolü atanmamış ancak Cihaz Kayıt Yöneticileri rolü için okuma izinlerine sahip bir kullanıcı yalnızca kendi oluşturduğu DEM kullanıcılarını görebilir. Bu özellikler için RBAC rolü desteği gelecekte duyurulacaktır.
+
 
 ## <a name="remove-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisini kaldırma
 
-Cihaz kayıt yöneticisinin kaldırılması, kayıtlı cihazları etkilemez. Cihaz kayıt yöneticisi kaldırıldığında:
+Cihaz kayıt yöneticisi kaldırıldığında:
 
 -   Kayıtlı cihazlar bunlardan etkilenmez ve tam olarak yönetilmeye devam eder.
--   Kaldırılan cihaz kayıt yöneticisi hesabının kimlik bilgileri geçerli olmaya devam eder.
--   Kaldırılan cihaz kayıt yöneticisi yine cihazları temizleyemez ve kullanımdan kaldıramaz.
--   Kaldırılan cihaz kayıt yöneticisi, yalnızca Intune yöneticisinin yapılandırdığı kullanıcı başına cihaz sayısı sınırına kadar cihaz kaydedebilir.
+-   Kaldırılan DEM hesabı kimlik bilgileri hala geçerlidir.
+-   Kaldırılan DEM cihazları temizleyemez veya kullanım dışı bırakamaz.
+-   Kaldırılan DEM, yalnızca Intune yöneticisinin yapılandırdığı kullanıcı başına cihaz sayısı sınırına kadar cihaz kaydedebilir.
 
 **Cihaz kayıt yöneticisi kaldırmak için**
 
 1. [Azure portalında Intune](https://aka.ms/intuneportal)’da **Cihaz kaydı**’nı ve ardından **Cihaz kayıt yöneticileri**’ni seçin.
 2. **Cihaz kayıt yöneticileri** dikey penceresinde DEM kullanıcısını ve **Sil**’i seçin.
 
-## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisinin özelliklerini görüntüleme
-
-1. [Azure portalında](https://portal.azure.com) **Cihaz kaydı**’nı ve ardından **Cihaz kayıt yöneticileri**’ni seçin.
-2. **Cihaz kayıt yöneticileri** dikey penceresinde DEM kullanıcısına sağ tıklayın ve **Özellikler**’i seçin.

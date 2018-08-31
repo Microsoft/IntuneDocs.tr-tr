@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cd9db9399eb08c3ed04ff1d8920082aa0c04f06
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bedd1108ce0c9e173e6e9519a29d3948f1320c3a
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224322"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251954"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -62,6 +62,12 @@ Grafikler aşağıdaki durumlar için uygulamaların sayısını gösterir:
 | **Yükleme Bekletiliyor**   | Yüklenme sürecinde olan uygulamaların sayısı. |
 | **Uygulanamaz**           | Durumun uygulanamadığı uygulamaların sayısı.            |
 
+> [!NOTE]
+> Bulunan uygulamaların sayısı uygulama yükleme durumu sayısıyla eşleşmeyebilir. Tutarsızlıkların olası nedenleri:
+>    - Yüklü yönetilen uygulamada bir hedefleme değişikliği, durum dikey penceresindeki yükleme sayısının azalmasına neden olabilir ama algılanan uygulamalarda bildirilmeye devam eder.
+>    - Kiracıda aynı uygulamanın birden çok örneğinin hedeflenmesi, kullanıcı veya cihazların olası örtüşmesi nedeniyle farklı sayım sonuçları verebilir. Uygulamanın her örneği örtüşen kullanıcıları sayar ama bulunan uygulamaların yinelenen sayımları ortaya çıkar.
+>    - Bulunan uygulamalarla uygulama durumu farklı zaman çerçevelerinde toplanır ve bu da uygulama sayılarında tutarsızlığa neden olabilir.
+ 
 ### <a name="device-install-status"></a>Cihaz yükleme durumu
 
 Menünün **İzleme** bölümünde **Cihaz yükleme durumu**’nu seçtiğinizde cihaz durum listesi gösterilir. Ayrıntı tablosunda aşağıdaki sütunlar vardır:

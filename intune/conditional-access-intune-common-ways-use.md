@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025921"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251563"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025921"
 Intune ile kullanılan iki tür koşullu erişim vardır: Cihaz tabanlı koşullu erişim ve uygulama tabanlı koşullu erişim. Kuruluşunuzda koşullu erişim uyumluluğunu sağlamak için ilgili uyumluluk ilkelerini yapılandırmanız gerekir. Koşullu erişim, Exchange şirket içi erişimine izin verme veya erişimi engelleme, ağa erişimi denetleme veya Mobil Threat Defense çözümüyle tümleştirme gibi eylemlerde yaygın olarak kullanılır.
 
 Aşağıdaki bilgiler, Intune mobil *cihaz* uyumluluk özelliklerini ve Intune mobil *uygulama* yönetimi (MAM) özelliklerini nasıl kullanacağınızı anlamanıza yardımcı olur. 
+
+> [!NOTE]
+> Koşullu erişim, Azure Active Directory Premium lisansına eklenmiş olan bir Azure Active Directory özelliğidir. Intune, çözüme mobil cihaz uyumluluğu ve mobil uygulama yönetimi ekleyerek bu özelliği geliştirir.
 
 ## <a name="device-based-conditional-access"></a>Cihaz tabanlı koşullu erişim
 
@@ -106,7 +109,7 @@ Kullanıcı kurumsal Wi-Fi'ye veya VPN kaynaklarına erişmeye çalışırken, c
 
 ### <a name="conditional-access-based-on-device-risk"></a>Cihaz riskine bağlı olarak koşullu erişim
 
-Intune; mobil cihazlardaki kötü amaçlı yazılımı, Truva atlarını ve diğer tehditleri algılamak için güvenlik çözümleri sağlayan Mobil Tehdit Savunması satıcılarıyla iş ortaklıkları kurmuştur.
+Intune; mobil cihazlardaki kötü amaçlı yazılımı, Truva atlarını ve diğer tehditleri algılamak için güvenlik çözümleri sağlayan Mobil Tehdit Savunması satıcılarıyla iş ortaklıkları kurar.
 
 #### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Intune ve Mobil Tehdit Savunması Tümleştirmesi nasıl çalışır
 
@@ -122,7 +125,7 @@ Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetene
 
 #### <a name="corporate-owned"></a>Şirkete ait olanlar
 
--   **Şirket içi AD etki alanına katılanlar:** Kendi bilgisayarlarını zaten AD grup ilkeleri ve/veya System Center Configuration Manager aracılığıyla yönettikleri için makul düzeyde kendinden emin olan kuruluşlar için en yaygın koşullu erişim dağıtım seçeneği olmuştur.
+-   **Şirket içi AD etki alanına katılanlar:** Bu seçenek kendi bilgisayarlarını zaten AD grup ilkeleri ve/veya System Center Configuration Manager aracılığıyla yönettikleri için makul düzeyde kendinden emin olan kuruluşlar tarafından yaygın olarak kullanılır.
 
 -   **Azure AD etki alanına katılan ve Intune yönetiminde olanlar:** Bu senaryo, tipik olarak cihazların kurumsal ağa ender olarak bağlandıkları Kendi Cihazını Seç (CYOD) ve dolaşım halinde dizüstü bilgisayar senaryolarına yöneliktir. Cihaz Azure AD'ye katılır ve Intune'a kaydolur; bu da şirket içi AD'ye ve etki alanı denetleyicisine olan tüm bağımlılıkları ortadan kaldırır. Bu seçenek, kurumsal kaynaklara erişirken bir koşullu erişim ölçütü olarak kullanılabilir.
 

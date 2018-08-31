@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
-ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
+ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305442"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40253149"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -30,11 +30,11 @@ Microsoft Intune uygulama koruma ilkelerini oluşturmayı ve kullanıcılarını
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Klasik Intune portalında yönergeler arıyorsanız bkz. [uygulama koruma ilkeleri oluşturma](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
-
-Uygulama koruma ilkeleri, Intune tarafınızdan yönetilen veya yönetilmeyen cihazlarda çalışan uygulamalara uygulanabilir. Uygulama koruma ilkelerinin çalışmasıyla ve Intune uygulama koruma ilkeleri tarafından desteklenen senaryolarla ilgili daha ayrıntılı bir açıklama için bkz. [Microsoft Intune uygulama koruma ilkeleri nedir](app-protection-policy.md).
+Uygulama koruma ilkeleri, Intune tarafınızdan yönetilen veya yönetilmeyen cihazlarda çalışan uygulamalara uygulanabilir. Uygulama koruma ilkelerinin çalışmasıyla ve Intune uygulama koruma ilkeleri tarafından desteklenen senaryolarla ilgili daha ayrıntılı bir açıklama için bkz. [Microsoft Intune uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).
 
 MAM destekli uygulamalar listesi arıyorsanız bkz. [MAM uygulamaları listesi](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+Kuruluşunuzun iş kolu (LOB) uygulamalarını uygulama koruma ilkelerine hazırlamak üzere Microsoft Intune'a ekleme hakkında bilgi için bkz. [Uygulamaları Microsoft Intune'a ekleme](apps-add.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
 1. **Mobil uygulamalar** iş yükünde, **Yönet** bölümünden **Uygulama koruma ilkeleri**’ni seçin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar.

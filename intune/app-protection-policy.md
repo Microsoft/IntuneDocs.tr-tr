@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 01/19/2018
+ms.date: 08/16/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f59bd4e0f795b73d830e41d47262c10c24d9398b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e9dbda4c768bf9963a4ec168d6a613dca197995
+ms.sourcegitcommit: c5cba0f4bf01eb9a9492e4e3fb6cd756f0737057
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834287"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251832"
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -46,7 +46,7 @@ Aşağıdaki özelliklere sahip cihazlarda çalıştırılan uygulamalar için u
 - **Herhangi bir mobil cihaz yönetimi çözümünde kayıtlı değil:** Bu kategorideki cihazlar normalde Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
 
 > [!IMPORTANT]
-> Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. Uygulama koruma ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan uygulamalar için desteklenmez.
+> Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. iOS ve Android için Outlook'a yönelik olarak karma Modern Kimlik Doğrulaması ile etkinleştirilen Intune uygulama koruma ilkeleri oluşturarak Exchange şirket içi posta kutularına erişimi de koruyabilirsiniz. Bu özelliği kullanmadan önce [iOS ve Android için Outlook gereksinimlerini](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx) karşıladığınızdan emin olun. Uygulama koruma ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan diğer uygulamalar için desteklenmez.
 
 **Uygulama koruma ilkelerini kullanmanın önemli avantajları**
 

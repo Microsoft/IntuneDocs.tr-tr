@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321297"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40252601"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -129,6 +129,9 @@ Uygulamaları eklemeye ve atamaya başlamadan önce aşağıdaki noktaları göz
 - Bir mağazadan uygulama eklediğinizde ve atadığınızda, kullanıcılarınızın uygulamayı yükleyebilmesi için o mağazada bir hesapları olması gerekir.
 - Atadığınız uygulama veya öğelerden bazıları yerleşik iOS uygulamalarına bağlı olabilir. Örneğin, iOS mağazasından bir kitap atarsanız cihazda iBooks uygulaması olmalıdır. Yerleşik iBooks uygulamasını kaldırdıysanız, yeniden devreye sokmak için Intune'u kullanamazsınız.
 
+> [!IMPORTANT]
+> Uygulamayı dağıttıktan ve yükledikten sonra Intune Azure portalı aracılığıyla uygulamanın adını değiştirirseniz, uygulama artık komutlar kullanılarak hedeflenemez.
+
 ## <a name="cloud-storage-space"></a>Bulut depolama alanı
 Yazılım yükleyicisi yükleme türünü kullanarak oluşturduğunuz tüm uygulamalar (örneğin, bir iş kolu uygulaması) paketlenir ve Intune bulut depolama alanına yüklenir. Intune deneme aboneliği, yönetilen uygulamaları ve güncelleştirmeleri depolamak için kullanılan 2 gigabayt (GB) bulut tabanlı depolama alanı içerir. Tam abonelik, toplam depolama alanı miktarını sınırlamaz.
 
@@ -170,6 +173,10 @@ Intune bu işlemi şu koşullara dayalı olarak gerçekleştirir:
 - Gerekli bir uygulamanın yüklemesi başarısız olursa veya uygulama bir şekilde cihazda bulunmuyorsa Intune, uyumluluğu değerlendirir ve bu zamanlama geçtikten sonra uygulamayı yeniden yükler.  
 - Yönetici, bir uygulamayı bir kullanıcı grubuna hedefler ve son kullanıcı bunu cihazda Şirket Portalı’ndan yükler. Daha sonra yönetici, uygulamayı v1’den v2’ye güncelleştirir. Bu durumda Intune, cihazda uygulamanın önceki herhangi bir sürümü mevcutsa bu zamanlama geçtikten sonra uygulamayı güncelleştirir.
 - Yönetici kaldırma amacını dağıttığı halde uygulama cihazda mevcut olup kaldırılamamışsa Intune, uyumluluğu değerlendirir ve bu zamanlama geçtikten sonra uygulamayı kaldırır.   
+
+## <a name="app-installation-errors"></a>Uygulama yükleme hataları
+
+Intune uygulama yükleme hatalarının ayrıntıları için bkz. [Uygulama yükleme hataları](troubleshoot-app-install.md#app-installation-errors).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

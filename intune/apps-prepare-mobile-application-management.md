@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
-ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
+ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39450799"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251505"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -28,7 +28,7 @@ ms.locfileid: "39450799"
 Intune Uygulaması Sarmalama Aracı’nı veya Intune Uygulama SDK’sını kullanarak uygulamalarınızın uygulama koruma ilkeleri kullanmasını sağlayabilirsiniz. Bu iki yöntem ve ne zaman kullanılacakları hakkında bilgi edinmek için bu bilgileri kullanın.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune Uygulaması Sarmalama Aracı
-Uygulama Sarmalama Aracı öncelikle iç iş kolu (LOB) uygulamaları için kullanılır. Araç, uygulamanın çevresinde bir sarmalayıcı oluşturan ve sonra uygulamanın bir Intune uygulama koruma ilkesiyle yönetilmesine izin veren bir komut satırı uygulamasıdır.
+Uygulama Sarmalama Aracı öncelikle **iç** iş kolu (LOB) uygulamaları için kullanılır. Araç, uygulamanın çevresinde bir sarmalayıcı oluşturan ve sonra uygulamanın bir Intune uygulama koruma ilkesiyle yönetilmesine izin veren bir komut satırı uygulamasıdır. Bağımsız yazılım satıcısı (ISV) tarafından sağlanan bir uygulamayı korurken, ISV'nin sarmalanmış uygulamayı yine de destekleyip desteklemeyeceğini netleştirmek önemlidir.
 
 Aracı kullanmak için kaynak kodu gerekli değildir, ancak imzalama kimlik bilgileri gereklidir. İmzalama kimlik bilgileri hakkında daha fazla bilgi için bkz. [Intune blogu](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Uygulama Sarmalama Aracı belgeleri için bkz. [Android Uygulaması Sarmalama Aracı](app-wrapper-prepare-android.md) ve [iOS Uygulaması Sarmalama Aracı](app-wrapper-prepare-ios.md).
 
@@ -48,7 +48,7 @@ Intune’a kayıtlı olmayan cihazlarda uygulama koruma ilkeleri uygulamak için
 
 |**Uygulama Sarmalama Aracı** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Hayır - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Evet|
+|**iOS** |Evet|Evet|
 |**Android**|Hayır - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Evet|
 
 ## <a name="intune-app-sdk"></a>Intune Uygulama SDK'sı

@@ -5,23 +5,26 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 8/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d2fc7f697d03c1ffcb952cd30e29f4959f2b7e9
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2d27e90655e54051d73989202d2bc849a66208f5
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321178"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910811"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>iOS cihazlar için e-posta profili ayarları - Intune
 
 iOS çalıştıran cihazlarınızı yapılandırmak için e-posta profili ayarlarını kullanın.
+
+> [!IMPORTANT]
+> S/MIME özelliğinde, bu makalede açıklanan bazı geliştirmeler yapıyoruz. Bunun sonucu olarak, S/MIME özelliği Intune'da geçici olarak kaldırıldı. Özellik kullanıma sunulduğunda bu notu kaldıracağız.
 
 ## <a name="email-settings"></a>E-posta ayarları
 

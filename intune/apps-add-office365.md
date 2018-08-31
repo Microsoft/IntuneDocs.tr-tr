@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321484"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251510"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
@@ -29,8 +29,8 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
->[!IMPORTANT]
->Bu Office yükleme yöntemi, yalnızca cihazda başka Microsoft Office sürümleri yüklü olmadığında desteklenir.
+> [!IMPORTANT]
+> Son kullanıcının cihazında .msi Office uygulamaları varsa, bu uygulamaları güvenle kaldırmak için **MSI'yi kaldır** özelliğini kullanmalısınız. Aksi takdirde, Intune tarafından teslim edilen Office 365 uygulamaları yüklenemez.
 
 - Bu uygulamaları dağıtacağınız cihazların Windows 10 Creators Update veya üzerini çalıştırıyor olması gerekir.
 - Intune, yalnızca Office 365 paketinden Office uygulamaları eklemeyi destekler.
@@ -91,6 +91,7 @@ Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Paket
         - **Aylık (Hedeflenen)**
         - **Yarı Yıllık**
         - **Yarı Yıllık (Hedeflenen)**
+    - **Office'in (MSI) diğer sürümlerini son kullanıcı cihazlarından kaldır**: Bu özellik önceden var olan tüm Office (MSI) sürümlerini son kullanıcı makinelerinden kaldırmanızı sağlar. Bunlar **Uygulama Paketini Yapılandır** altında yükleme için seçilen uygulamalarla sınırlı değildir çünkü tüm Office (MSI) uygulamalarını son kullanıcı cihazından kaldıracaktır.
     - **Uygulama son kullanıcı lisans sözleşmesini otomatik kabul edin**: Son kullanıcıların lisans sözleşmesini kabul etmesinin gerekli olmasını istemiyorsanız bunu seçin. Ardından Intune, sözleşmeyi otomatik olarak kabul eder.
     - **Paylaşımlı bilgisayar etkinleştirme kullanın**: Birden çok kullanıcı tek bir bilgisayarı kullanıyorsa bu seçeneği belirtin. Daha fazla bilgi için bkz. [Office 365 için paylaşılan bilgisayar etkinleştirmeye genel bakış](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Diller**: Office, son kullanıcının bilgisayarında Windows ile yüklenmiş olan tüm dillerde otomatik olarak yüklenir. Uygulama paketiyle birlikte ilave diller yüklemek istiyorsanız bunu seçin.

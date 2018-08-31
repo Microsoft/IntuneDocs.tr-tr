@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822730"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255227"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune’da yazılım güncelleştirmelerini yönetme
 
@@ -115,11 +115,10 @@ Yeni güncelleştirme kademesi, güncelleştirme kademeleri listesinde görünü
 3. İşiniz bittiğinde **Seç**’i seçerek atama işlemini tamamlayın.
 
 ## <a name="update-compliance-reporting"></a>Güncelleştirme uyumluluğunu raporlama
-Güncelleştirme uyumluluğunu, Intune’da veya Operations Management Suite’teki (OMS) Güncelleştirme Uyumluluğu adlı ücretsiz bir çözümü kullanarak görüntüleyebilirsiniz.
+Güncelleştirme uyumluluğunu, Intune’da Güncelleştirme Uyumluluğu adlı ücretsiz bir çözümü kullanarak görüntüleyebilirsiniz.
 
 ### <a name="review-update-compliance-in-intune"></a>Intune’da güncelleştirme uyumluluğunu gözden geçirme 
-<!-- 1352223 -->
-Yapılandırdığınız Windows 10 güncelleştirme halkalarının dağıtım durumunu görüntülemek için bir ilke raporunu gözden geçirin.
+<!-- 1352223 --> Yapılandırdığınız Windows 10 güncelleştirme halkalarının dağıtım durumunu görüntülemek için bir ilke raporunu gözden geçirin.
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
@@ -137,7 +136,7 @@ Yapılandırdığınız Windows 10 güncelleştirme halkalarının dağıtım du
       - **Kullanıcı durumu**
 
 ### <a name="review-update-compliance-using-oms"></a>OMS kullanarak güncelleştirme uyumluluğunu gözden geçirme
-Windows 10 güncelleştirme dağıtımlarını, Operations Management Suite’teki (OMS) Güncelleştirme Uyumluluğu adlı ücretsiz bir çözümü kullanarak izleyebilirsiniz. Ayrıntılı bilgi için bkz. [Windows Güncelleştirmelerini Güncelleştirme Uyumluluğu ile İzleme](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Bu çözümü kullandığınızda, güncelleştirme uyumluluğunu raporlamak istediğiniz Intune tarafından yönetilen herhangi bir Windows 10 cihazınıza bir ticari kimlik dağıtabilirsiniz.
+Windows 10 güncelleştirme dağıtımlarını, Güncelleştirme Uyumluluğu adlı ücretsiz bir çözümü kullanarak izleyebilirsiniz. Ayrıntılı bilgi için bkz. [Windows Güncelleştirmelerini Güncelleştirme Uyumluluğu ile İzleme](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Bu çözümü kullandığınızda, güncelleştirme uyumluluğunu raporlamak istediğiniz Intune tarafından yönetilen herhangi bir Windows 10 cihazınıza bir ticari kimlik dağıtabilirsiniz.
 
 Intune konsolunda özel bir ilkenin OMA-URI ayarlarını kullanarak ticari kimliği yapılandırabilirsiniz. Ayrıntılı bilgi için bkz. [Microsoft Intune’daki Windows 10 cihazları için Intune ilke ayarları](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 

@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c7f3229c2cb4c5f3f57d84d348053f25eeeb9c9
-ms.sourcegitcommit: f70d6aaea59b52cd0d7bd3008afd243868967fd6
+ms.openlocfilehash: c64c267623db93128177d56ced29586d3a877b19
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37066224"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823061"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama
 
@@ -56,6 +56,7 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
   - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
+  - [Better Mobile](#configure-better-mobile-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work uygulamalarını yapılandırma
 
@@ -129,6 +130,16 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 
     - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). **Uygulama bilgilerini yapılandırma** bölümünün altındaki **12. adımda** bu [Pradeo uygulama mağazası URL’sini](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) kullanın.
 
+### <a name="configure-better-mobile-apps"></a>Better Mobile uygulamalarını yapılandırma
+
+ - **Android**
+
+    - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](store-apps-android.md). **7. adımda** bu [Active Shield uygulama mağazası URL'sini](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise) kullanın.
+
+ - **iOS**
+
+    - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). **Uygulama bilgilerini yapılandırma** bölümünün altındaki **12. adımda** bu [ActiveShield uygulama mağazası URL’sini](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) kullanın.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD uygulamalarınızı bir iOS uygulama yapılandırma ilkesiyle yapılandırma
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work uygulama yapılandırma ilkesi
@@ -177,6 +188,22 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 <string>{{serialnumber}}</string>
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
+</dict>
+```
+
+### <a name="better-mobile-app-configuration-policy"></a>Better Mobile uygulama yapılandırma ilkesi
+
+- Better Mobile iOS uygulama yapılandırma ilkesini eklemek için [iOS için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](app-configuration-policies-use-ios.md) yönergelerine bakın.
+    - **8. adımda** **XML verisi gir** seçeneğini kullanın, aşağıdaki içeriği kopyalayıp yapılandırma ilkesinin gövdesine yapıştırın. `https://client.bmobi.net` URL'sini uygun konsol URL'siyle değiştirin.
+
+```
+<dict>
+<key>better_server_url</key>
+<string>https://client.bmobi.net</string>
+<key>better_udid</key>
+<string>{{aaddeviceid}}</string>
+<key>better_user</key>
+<string>{{userprincipalname}}</string>
 </dict>
 ```
 

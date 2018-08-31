@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/7/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 3be9be3c290a6cbb2e68358a6810aa2dc1636065
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "35679453"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251557"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile Android uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -50,6 +50,9 @@ Aracı çalıştırmadan önce bkz. [Uygulama Sarmalama Aracını çalıştırma
     > Bazı durumlarda, Java’nın 32 bit sürümü bellek sorunlarına yol açabilir. 64-bit sürümü yüklemek iyi bir fikirdir.
 
 - Android tüm uygulama paketlerinin (.apk) imzalanmasını gerektirir. Mevcut sertifikaları **yeniden kullanma** hakkında bilgi ve imza sertifikaları rehberine ulaşmak için bkz. [İmza sertifikaları ve sarmalama uygulamalarını yeniden kullanma](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). Sarmalanan çıkış uygulamasını imzalamak için gereken **yeni** kimlik bilgilerini oluşturmak için yürütülebilir Java keytool.exe kullanılır. Ayarlanan parolaların güvenle saklanması gerekir ancak daha sonra Uygulama Sarmalama Aracını çalıştırırken gerekeceği için bu parolaları not alın.
+
+> [!NOTE]
+> Intune Uygulama Sarmalama Aracı uygulama imzalama için Google'ın v2 ve yakında çıkacak v3 imza düzenlerini desteklemiyor. Intune Uygulama Sarmalama Aracı'nı kullanarak .apk uygulamasını sarmaladıktan sonra, [Google'ın sağladığı Apksigner aracının]( https://developer.android.com/studio/command-line/apksigner) kullanılması önerilir. Bu sayede uygulama son kullanıcıların cihazlarına ulaştığında Android standartları tarafından düzgün başlatılabilir. 
 
 - (İsteğe bağlı) Giriş uygulaması içinde Multidex’i etkinleştirin. Bazen bir uygulama, sarmalama sırasına eklenen Intune MAM SDK sınıfları nedeniyle Dalvik Executable (DEX) boyut sınırına ulaşabilir. DEX dosyaları, Android uygulamaları derlemesinin bir parçasıdır. Bu senaryoda en iyi uygulama, Multidex’i uygulamanın içinde etkinleştirmektir. Bazı kuruluşlarda bunu yapabilmek için uygulamayı derleyenle (yani uygulama derleme ekibi) birlikte çalışmak gerekebilir. 
 

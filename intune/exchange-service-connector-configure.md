@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 640d1a5cbd785248cb309bc250c95631295955b3
-ms.sourcegitcommit: 71497f0215fc8bed454ac318b0548b1281a8fe0f
+ms.openlocfilehash: 141fcc4550b69d01d67e8d4aa9f0e6e05717353a
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33914164"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251853"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune ve Exchange Online için Exchange hizmet bağlayıcısını yapılandırma
 
@@ -50,7 +50,7 @@ Intune Exchange hizmet bağlayıcısı tarafından kullanılan bir Exchange Onli
 
 ## <a name="set-up-the-service-to-service-connector"></a>Hizmet Bağlayıcısı'nı ayarlama
 
-1. [Daha önce açıklanan](#exchange-cmdlet-requirements) cmdlet’ler için Exchange yönetici hak ve izinlerine sahip bir kullanıcı hesabıyla [Azure portalında](http://portal.azure.com) oturum açın. Microsoft Intune, bağlantıyı ayarlamak için o anda giriş yapmış olan kullanıcının e-posta adresini kullanır.
+1. [Daha önce açıklanan](#exchange-cmdlet-requirements) cmdlet’ler için Exchange yönetici hak ve izinlerine, geçerli bir Intune lisansına ve Genel Yönetici rolüne sahip bir kullanıcı hesabıyla [Azure portalında](http://portal.azure.com) oturum açın. Microsoft Intune, bağlantıyı ayarlamak için o anda giriş yapmış olan kullanıcının e-posta adresini kullanır.
 
 2. Soldaki menüden **Tüm hizmetler**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906116"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255378"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -38,23 +38,22 @@ Intune, ihtiyacınız olan uygulamaları çalıştırmak istediğiniz cihazlara 
 
 ## <a name="app-management-capabilities-by-platform"></a>Platforma göre uygulama yönetimi özellikleri
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8.1|Windows 10|
-|Cihazlara ve kullanıcılara uygulamaları ekleme ve atama|Evet|Evet|Evet|Evet|
-|Intune’a kayıtlı olmayan cihazlara uygulamaları atama|Evet|Evet|Hayır|Hayır|
-|Uygulamaların başlangıç davranışını denetlemek için uygulama yapılandırma ilkelerini kullanma|Hayır|Evet|Hayır|Hayır|
-|Süresi dolan uygulamaları yenilemek için mobil uygulama sağlama ilkeleri kullanma|Hayır|Evet|Hayır|Hayır|
-|Uygulama koruma ilkeleriyle uygulamalardaki şirket verilerini koruma|Evet|Evet|Hayır|Hayır<sup>1</sup>|
-|Yüklü uygulamadan yalnızca şirket verilerini kaldırma (uygulama seçmeli silme)|Evet|Evet|Evet|Evet|
-|Uygulama atamalarını izleme|Evet|Evet|Evet|Evet|
-|Uygulama mağazasından toplu satın alınan uygulamaları atama ve izleme|Hayır|Hayır|Hayır|Evet|
-|Cihazlara uygulamaları zorunlu yükleme (gerekli)<sup>2</sup>|Evet|Evet|Evet|Evet|
-|Şirket Portalı’ndan cihazlara isteğe bağlı yükleme (kullanılabilir yükleme)|Evet|Evet|Evet|Evet|
-|Web’deki bir uygulamanın kısayolunu yükleme (web bağlantısı)|Evet|Evet|Evet|Evet|
-|Şirket içi (iş kolu) uygulamalar|Evet|Evet|Hayır|Evet|
-|Mağazadan uygulamalar|Evet|Evet|Evet|Evet|
-|Uygulamaları güncelleştirme|Evet|Evet|Evet|Evet|
+|  | Android | iOS | Mac OS | Windows 10 | Windows Phone 8.1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| Cihazlara ve kullanıcılara uygulamaları ekleme ve atama | Evet | Evet | Evet | Evet | Evet |
+| Intune’a kayıtlı olmayan cihazlara uygulamaları atama | Evet | Evet | Hayır | Hayır | Hayır |
+| Uygulamaların başlangıç davranışını denetlemek için uygulama yapılandırma ilkelerini kullanma | Hayır | Evet | Hayır | Hayır | Hayır |
+| Süresi dolan uygulamaları yenilemek için mobil uygulama sağlama ilkelerini kullanma | Hayır | Evet | Hayır | Hayır | Hayır |
+| Uygulama koruma ilkeleriyle uygulamalardaki şirket verilerini koruma | Evet | Evet | Hayır | Hayır1 | Hayır |
+| Yüklü uygulamadan yalnızca şirket verilerini kaldırma (uygulama seçmeli silme) | Evet | Evet | Hayır | Evet | Evet |
+| Uygulama atamalarını izleme | Evet | Evet | Evet | Evet | Evet |
+| Uygulama mağazasından toplu satın alınan uygulamaları atama ve izleme | Hayır | Hayır | Hayır | Evet | Hayır |
+| Cihazlara uygulamaları zorunlu yükleme (gerekli)2 | Evet | Evet | Evet | Evet | Evet |
+| Şirket Portalı’ndan cihazlara isteğe bağlı yükleme (kullanılabilir yükleme) | Evet | Evet | Evet | Evet | Evet |
+| Web’deki bir uygulamanın kısayolunu yükleme (web bağlantısı) | Evet | Evet | Evet | Evet | Evet |
+| Şirket içi (iş kolu) uygulamaları | Evet | Evet | Evet | Evet | Hayır |
+| Mağazadan uygulamalar | Evet | Evet | Hayır | Evet | Evet |
+| Uygulamaları güncelleştirme | Evet | Evet | Hayır | Evet | Evet |
 
 <sup>1</sup> Windows 10 çalıştıran cihazlarda uygulamaları korumak için [Windows Bilgi Koruması](windows-information-protection-configure.md)’nu kullanmayı göz önüne alabilirsiniz.
 
@@ -95,8 +94,8 @@ Bu bölüm hakkında daha fazla bilgi için bkz. [Uygulama yönetme](app-managem
 - **Uygulama lisansları**: Uygulama mağazalarından toplu satın alınan uygulamaları görüntüleyin, atayın ve izleyin. Daha fazla bilgi için bkz.:
     - [iOS Volume-Purchased Program (VPP) uygulamaları](vpp-apps-ios.md).
     - [İş İçin Microsoft Store’dan toplu satın alınan uygulamalar](windows-store-for-business.md).
-- **Bulunan Uygulamalar**: Intune tarafından atanan ve bir cihaza yüklenen tüm uygulamaları görüntüleyin.
-- **Uygulama Yükleme Durumu** - Oluşturduğunuz uygulama atamasının durumunu gösterir.
+- **Bulunan Uygulamalar**: Intune tarafından atanan ve bir cihaza yüklenen tüm uygulamaları görüntüleyin. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md#device-and-user-status-graphs).
+- **Uygulama Yükleme Durumu** - Oluşturduğunuz uygulama atamasının durumunu gösterir. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md#device-and-user-status-graphs).
 - **Uygulama koruma durumu**: Seçtiğiniz kullanıcı için uygulama koruma ilkesinin durumunu görüntüleyin.
 - **Denetim günlükleri**: Tüm BT yöneticileri tarafından gerçekleştirilen Intune uygulamasıyla ilgili etkinlikleri görüntüleyin.
 

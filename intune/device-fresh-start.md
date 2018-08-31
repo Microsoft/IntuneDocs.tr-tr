@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5658bf2e1ee250ef9fd405b3f7ec1772b166f338
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6b66cd00f734cab3ca85f6d87f056f8c482a377d
+ms.sourcegitcommit: 2811df0f851ca6b08f6ae8c926fb2e6971c41690
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021005"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251556"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Windows 10 cihazlarını Intune ile sıfırlamak için Fresh Start kullanma
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**Yeni Başlangıç** cihaz eylemi, Creators Update çalıştıran Windows 10 bilgisayarına yüklenmiş tüm uygulamaları kaldırır. Ardından bilgisayarı otomatik olarak en son Windows sürümüne güncelleştirir.
+**Yeni Başlangıç** cihaz eylemi, Windows 10 sürüm 1703 veya üstünü çalıştıran bir bilgisayara yüklü tüm uygulamaları kaldırır. Yeni Başlangıç, genellikle yeni bir bilgisayara önceden yüklenmiş (OEM) uygulamaları kaldırmaya yardımcı olur.  
 
-Bu eylem, genellikle yeni bir bilgisayara önceden yüklenmiş (OEM) uygulamaları kaldırmaya yardımcı olur. Kullanıcının Giriş klasörünün içeriğini saklamak ve yalnızca uygulamaları ve ayarları kaldırmak için `if user data is retained` ayarını kullanın.
-
-> [!IMPORTANT]
-> Yeni Başlangıç, cihazın Intune kaydını siler ancak cihaz Azure Active Directory'ye bağlı kalmayı sürdürür.
-
-## <a name="use-fresh-start"></a>Yeni Başlangıç kullanma
-
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
-4. Yönettiğiniz cihazların listesinden bir Windows 10 masaüstü cihazını seçin, sonra **Yeni Başlangıç**’ı seçin.
-
-## <a name="next-steps"></a>Sonraki adımlar
-
-Bu eylemin durumunu görmek için **Cihaz eylemleri** (**Microsoft Intune** > **Cihazlar**) seçimi yapın.
+1. [Azure portalında](https://portal.azure.com) oturum açın ve > **Microsoft Intune** > **Cihazlar** > **Tüm cihazlar**'a gidin.
+2. Yönettiğiniz cihazların listesinden bir Windows 10 masaüstü cihazını seçin.
+3. **Yeni Başlangıç**'a tıklayın. 
+4. **Bu cihazdaki kullanıcı verilerini sakla**'yı seçerek:
+   * Cihazın Azure AD'ye katılmış durumda kalmasını sağlayın
+    * Cihazın mobil cihaz yönetimine kayıtlı kalmasını sağlayın 
+    * Kullanıcının Giriş klasörünün içeriğini saklayın ve uygulamalarla ayarları kaldırın  
+  > [!IMPORTANT]
+ > Kullanıcı verilerini saklamazsanız, cihaz hazır geldiği duruma geri yüklenir. Azure AD'den ve mobil cihaz yönetiminden kaydı kaldırılır. 
+ 
+5. **Tamam**'ı tıklatın.   
+6. Bu eylemin durumunu görmek için, **Cihazlar**'a dönün ve **Cihaz eylemleri**'ne tıklayın.  

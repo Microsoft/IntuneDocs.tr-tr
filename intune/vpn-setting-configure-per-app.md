@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753901"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40251504"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS cihazlar için Intune’da uygulama başına Sanal Özel Ağ (VPN) ayarlama
 
@@ -35,7 +35,7 @@ Uygulama başına VPN şu anda şu sağlayıcılar için kullanılabilir durumda
  - SonicWall
  - Palo Alto Networks GlobalProtect
 
-## <a name="prerequisites-for-per-app-vpn"></a>Uygulama Başına VPN Önkoşulları
+## <a name="prerequisites-for-per-app-vpn"></a>Uygulama başına VPN önkoşulları
 
 > [!IMPORTANT]
 > VPN satıcınızın uygulama başına VPN için belirli bir donanım veya lisanslama gibi başka bazı gereksinimleri olabilir. Satıcının belgelerini gözden geçirmeyi unutmayın ve Intune'da uygulama başına VPN'yi ayarlamadan önce önkoşulları yerine getirin.
@@ -109,9 +109,9 @@ Güvenilen kök sertifika profili, iOS’un VPN sunucusuna otomatik olarak güve
 
     ![Bir SCEP sertifika profili oluşturma](./media/vpn-per-app-create-scep-cert.png)
 
-## <a name="create-a-per-app-vpn-profile"></a>Uygulama Başına VPN profili oluşturma
+## <a name="create-a-per-app-vpn-profile"></a>Uygulama başına VPN profili oluşturma
 
-VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye bağlantı bilgilerini ve Uygulama Başına VPN özelliğini iOS uygulaması tarafından kullanılmak üzere etkinleştirecek olan Uygulama Başına VPN bayrağını barındırır.
+VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye bağlantı bilgilerini ve uygulama başına VPN özelliğini iOS uygulaması tarafından kullanılmak üzere etkinleştirecek olan uygulama başına VPN bayrağını barındırır.
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
@@ -136,7 +136,7 @@ VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye
 6. **Tamam**'ı tıklatın.
 7. **Oluştur**'a tıklayın.
 
-    ![Uygulama Başına VPN profili oluşturma](./media/vpn-per-app-create-vpn-profile.png)
+    ![Uygulama başına VPN profili oluşturma](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Bir uygulamayı VPN profiliyle ilişkilendirme
@@ -145,30 +145,41 @@ VPN profilinizi ekledikten sonra, uygulamayı ve Azure AD grubunu bu profil ile 
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-2. **Mobil uygulamalar**’ı seçin.
-3. **Uygulamalar**’a tıklayın.
-4. Uygulama listesinden uygulamayı seçin.
-5. **Atamalar**’a tıklayın.
-6. **Grup ekle**’ye tıklayın.
-7. **Grup ekle** bölmesindeki **Atama türü** için **Gerekli**’yi seçin.
-6. Daha önce tanımladığınız grubu seçip **Bu uygulamayı gerekli kıl**’ı seçin.
-8. **VPN** için VPN tanımınızı seçin.
+3. **Mobil uygulamalar**’ı seçin.
+4. **Uygulamalar**’a tıklayın.
+5. Uygulama listesinden uygulamayı seçin.
+6. **Atamalar**’a tıklayın.
+7. **Grup ekle**’ye tıklayın.
+8. **Grup ekle** bölmesindeki **Atama türü** için **Gerekli**’yi seçin.
+9. Daha önce tanımladığınız grubu seçip **Bu uygulamayı gerekli kıl**’ı seçin.
+10. **VPN** için VPN tanımınızı seçin.
  
     > [!NOTE]  
     > Bazen VPN tanımının değeri alması bir dakikayı bulabilir. 3-5 dakika bekledikten sonra **Kaydet**’e tıklayın.
 
-9. **Tamam**’a ve **Kaydet**’e tıklayın.
+11. **Tamam**’a ve **Kaydet**’e tıklayın.
 
     ![Bir uygulamayı VPN ile ilişkilendirme](./media/vpn-per-app-app-to-vpn.png)
 
+Aşağıdaki koşullar var olduğunda, cihazın bir sonraki iade edilişinde uygulama ile profil arasındaki ilişkilendirme kaldırılacak:
+- Uygulama gerekli yükleme amacı kullanılarak hedeflendi.
+- Hem profil hem de uygulama aynı grubu hedeflendi.
+- Uygulama başına VPN yapılandırmasını uygulama atamasından kaldırıyorsunuz.
+
+Aşağıdaki koşullar var olduğunda, son kullanıcı şirket portalından yeniden yükleme isteğinde bulunana kadar uygulamayla profil arasındaki ilişkilendirme kalır:
+- Uygulama sağlanan yükleme amacı kullanılarak hedeflendi.
+- Hem profil hem de uygulama aynı grubu hedeflendi.
+- Son kullanıcı şirket portalından uygulama yüklemesi istedi ve bunun sonucunda uygulama ve profil cihaza yüklenir.
+- Uygulama başına VPN yapılandırmasını uygulama atamasından kaldırıyorsunuz.
+
 ## <a name="verify-the-connection-on-the-ios-device"></a>iOS cihazda bağlantıyı doğrulama
 
-Uygulama Başına VPN’iniz ayarlı ve uygulamanızla ilişkili olduğunda, bağlantının çalıştığını bir cihazda doğrulayın.
+Uygulama başına VPN’niz ayarlı ve uygulamanızla ilişkili olduğunda, bağlantının çalıştığını bir cihazda doğrulayın.
 
 ### <a name="before-you-attempt-to-connect"></a>Bağlanmayı denemeden önce
 
  - iOS 9 veya üzerini çalıştırdığınızdan emin olun.
- - Yukarıda bahsedilen *tüm* ilkeleri aynı grup ve kullanıcılara dağıttığınızdan emin olun. Bunu yapmamanız durumunda Uygulama Başına VPN deneyimi kesinlikle başarısız olacaktır.  
+ - Yukarıda bahsedilen *tüm* ilkeleri aynı grup ve kullanıcılara dağıttığınızdan emin olun. Bunu yapmamanız durumunda uygulama başına VPN deneyimi kesinlikle başarısız olacaktır.  
  - Desteklenen üçüncü taraf VPN uygulamasına sahip olduğunuzdan emin olun. Aşağıdaki VPN uygulamaları desteklenmektedir:
     - Check Point Capsule Connect
     - Cisco AnyConnect
@@ -177,7 +188,7 @@ Uygulama Başına VPN’iniz ayarlı ve uygulamanızla ilişkili olduğunda, ba�
     - Pulse Secure
     - SonicWall Mobile Connect
 
-### <a name="connect-using-the-per-app-vpn"></a>Uygulama Başına VPN kullanarak bağlanma
+### <a name="connect-using-the-per-app-vpn"></a>Uygulama başına VPN kullanarak bağlanma
 
 VPN’i seçmek veya kimlik bilgilerinizi girmek zorunda kalmadan bağlanarak sıfır dokunma deneyimini dpğrulayın. Sıfır dokunma deneyimi ile:
 
@@ -191,7 +202,7 @@ iOS cihazda bağlantıyı doğrulayın.
 2. **Bağlan**’a dokunun.  
 VPN, başka bir istem yapmadan başarıyla bağlanır.
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

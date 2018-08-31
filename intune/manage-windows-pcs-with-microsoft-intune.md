@@ -15,12 +15,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a22aafdca8c049367d4c88d27a07a7c1825a01e3
-ms.sourcegitcommit: e6e93419f46e8647d4661eeca09eb1e2e460ad2b
+ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966927"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910628"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune yazılımı istemcisi ile Windows PC’leri bilgisayar olarak yönetme
 
@@ -53,10 +53,10 @@ Intune, yazılım istemcisi kullanılarak Windows PC’lerin bilgisayar olarak y
 
 |Gereksinim|Daha fazla bilgi|
 |---------------|--------------------|
-|İşletim sistemi | Windows 7 SP1 veya üstünü çalıştıran Windows cihazı. </br></br>**Home Edition sürümleri desteklenmez.**|
+|İşletim sistemi | Windows 7 SP1 ve Windows 8.1 veya üstünü çalıştıran Windows cihazı. </br></br>**Home Edition sürümleri desteklenmez.**|
 |Yönetim izinleri|İstemci yazılımını yükleyen hesabın bu cihaz üzerinde yerel yönetici izinleri olmalıdır.|
 |Windows Installer 3.1|Bilgisayarda en azından Windows Installer 3.1 olmalıdır.<br /><br />Bir bilgisayardaki Windows Installer sürümünü görüntülemek için:<br /><br />  Bilgisayarda **%windir%\System32\msiexec.exe** dosyasına sağ tıklayın ve ardından **Özellikler**’e tıklayın.<br /><br />En son Windows Installer sürümünü Microsoft Developer Network web sitesindeki [Windows Installer Yeniden Dağıtılabilir Öğeleri](http://go.microsoft.com/fwlink/?LinkID=234258) bölümünden indirebilirsiniz.|
-|Uyumsuz istemci yazılımını kaldırma|Intune istemci yazılımını yüklemeden önce, bu bilgisayardan tüm Configuration Manager, Operations Manager, Operations Management Suite ve Service Manager istemci yazılımlarını kaldırmalısınız.|
+|Uyumsuz istemci yazılımını kaldırma|Intune istemci yazılımını yüklemeden önce, bu bilgisayardan tüm Configuration Manager, Operations Manager ve Service Manager istemci yazılımlarını kaldırmalısınız.|
 
 ## <a name="deploying-the-intune-software-client"></a>Intune yazılım istemcisini dağıtma
 Bir Intune yöneticisi olarak, Intune yazılımı istemcisini çeşitli şekillerde kullanıcılara sunabilirsiniz. Yönergeler için bkz. [Windows PC’lere Intune yazılım istemcisini yükleme](install-the-windows-pc-client-with-microsoft-intune.md).

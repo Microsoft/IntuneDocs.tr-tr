@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225417"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751659"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Cihazlarını Intune’a kaydedebilmeleri için kullanıcılara lisans atama
 
@@ -61,7 +61,7 @@ SDS hakkında daha fazla bilgi edinmek için bkz. [School Data Sync’e genel ba
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Kullanıcı ve cihaz lisansları hizmetlere erişimi nasıl etkiler?
 * Bir kullanıcı yazılım lisansı atadığınız her **kullanıcı** uygulamaları yönetmek için ve 15 cihaza kadar çevrimiçi hizmetlere ve ilgili yazılımlara (System Center yazılımı dahil olmak üzere) erişebilir ve bunları kullanabilir.
-* Bir cihaz yazılım lisansı atadığınız her **cihaz** herhangi bir kullanıcı sayısında kullanım için çevrimiçi hizmetlere ve ilgili yazılımlara (System Center yazılımı dahil olmak üzere) erişebilir ve bunları kullanabilir.
+* Kullanıcı lisanslarından ayrı olarak her cihaz için lisans satın alabilirsiniz. Cihaz lisanslarının cihazlara atanması gerekmez. Çevrimiçi hizmetlere ve ilgili yazılımlara (System Center yazılımı da dahil) erişen ve bunları kullanan her cihazın bir cihaz lisansı olmalıdır.
 * Bir cihaz birden fazla kullanıcı tarafından kullanılıyorsa, her biri için cihaz yazılım lisansı gerekir veya tüm kullanıcıların bir kullanıcı yazılım lisansı kullanması gerekir.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Satın aldığınız lisans türünü anlama

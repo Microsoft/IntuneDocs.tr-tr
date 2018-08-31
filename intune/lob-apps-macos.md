@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993726"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255472"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>macOS iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993726"
 
 Bu makaledeki bilgiler macOS iş kolu uygulamalarını Microsoft Intune’a eklemenize yardımcı olabilir. İş kolu dosyanızı Microsoft Intune'a yükleyebilmek için önce *.pkg* dosyalarınızın ön işlemesini yapacak bir harici araç indirmelisiniz. *.pkg* dosyalarınızın ön işlemesi, bir macOS cihazında yapılmalıdır.
 
->[!NOTE]
->macOS kullanıcıları bazı yerleşik macOS uygulamalarını kaldırabilir (Stocks ve Harita gibi) ancak siz bu uygulamaları yeniden dağıtmak için Intune’u kullanamazsınız. Son kullanıcılar bu uygulamaları silerse uygulama mağazasına gidip el ile yeniden indirmeleri gerekir.
->
->macOS LOB uygulamalarının Microsoft Intune'a yüklemek için yalnızca *.pkg* dosyaları kullanılabilir. *.dmg*’den *.pkg*’ye yapılan dönüştürme gibi diğer biçim dönüştürme işlemleri desteklenmez.
+> [!NOTE]
+> macOS kullanıcıları bazı yerleşik macOS uygulamalarını kaldırabilir (Stocks ve Harita gibi) ancak siz bu uygulamaları yeniden dağıtmak için Intune’u kullanamazsınız. Son kullanıcılar bu uygulamaları silerse uygulama mağazasına gidip el ile yeniden indirmeleri gerekir.
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>1. Adım - Yazılım kurulum dosyanızın ön işlemesini yapma
+## <a name="before-your-start"></a>Başlamadan önce
 
-Mac için Intune Uygulama Sarmalama Aracı'nı kullanarak Mac uygulamalarının Microsoft Intune tarafından yönetilmesini sağlayın.
+İş kolu dosyanızı Microsoft Intune'a yükleyebilmek için önce *.pkg* dosyalarınızın ön işlemesini yapacak bir harici araç indirmelisiniz. *.pkg* dosyalarınızın ön işlemesi, bir macOS cihazında yapılmalıdır. Mac için Intune Uygulama Sarmalama Aracı'nı kullanarak Mac uygulamalarının Microsoft Intune tarafından yönetilmesini sağlayın.
+
+> [!IMPORTANT]
+> macOS LOB uygulamalarının Microsoft Intune'a yüklemek için yalnızca *.pkg* dosyaları kullanılabilir. *.dmg*’den *.pkg*’ye yapılan dönüştürme gibi diğer biçim dönüştürme işlemleri desteklenmez.
 
 1. [Mac için Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac)'nı indirin ve çalıştırın.
 
@@ -55,7 +56,7 @@ Mac için Intune Uygulama Sarmalama Aracı'nı kullanarak Mac uygulamalarının 
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     Bu komut, oluşturulan *.intunemac* dosyası için algılanan parametreleri ve sürümünü ayıklar.
 
-## <a name="step-2---specify-the-software-setup-file"></a>2. Adım - Yazılım kurulum dosyasını belirtme
+## <a name="step-1---specify-the-software-setup-file"></a>1. Adım - Yazılım kurulum dosyasını belirtme
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
@@ -64,14 +65,14 @@ Mac için Intune Uygulama Sarmalama Aracı'nı kullanarak Mac uygulamalarının 
 5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
 6. **Uygulama Ekle** bölmesinde **İş kolu uygulaması**’nı seçin.
 
-## <a name="step-3---configure-the-app-package-file"></a>3. Adım - Uygulama paketi dosyasını yapılandırma
+## <a name="step-2---configure-the-app-package-file"></a>Adım 2 - Uygulama paketi dosyasını yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama paketi dosyası**’nı seçin.
 2. **Uygulama paketi dosyası** bölmesinde gözat düğmesini seçin ve *.intunemac* uzantısına sahip macOS yükleme dosyasını seçin.
 3. İşiniz bittiğinde **Tamam**’ı seçin.
 
 
-## <a name="step-4---configure-app-information"></a>4. Adım - Uygulama bilgilerini yapılandırma
+## <a name="step-3---configure-app-information"></a>Adım 3 - Uygulama bilgilerini yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
 2. **Uygulama bilgileri** bölmesinde uygulamanızın ayrıntılarını ekleyin. Seçtiğiniz uygulamaya bağlı olarak, bölmedeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
@@ -89,7 +90,7 @@ Mac için Intune Uygulama Sarmalama Aracı'nı kullanarak Mac uygulamalarının 
     - **Logo** - Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu, kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülen simgedir.
 3. İşiniz bittiğinde **Tamam**’ı seçin.
 
-## <a name="step-5---finish-up"></a>5. Adım - Bitirme
+## <a name="step-4---finish-up"></a>Adım 4 - Bitirme
 
 1. **Uygulama ekle** bölmesinde uygulama ayrıntılarınızı doğrulayın.
 2. Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
@@ -99,7 +100,7 @@ Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygu
 > [!NOTE]
 > *.pkg* dosyası birden çok uygulama ve uygulama yükleyicisi içeriyorsa, cihazda tüm yüklü uygulamalar algılandığında Microsoft Intune yalnızca *uygulamanın* başarıyla yüklendiğini raporlar.
 
-## <a name="step-6---update-a-line-of-business-app"></a>6. Adım - İş kolu uygulamasını güncelleştirme
+## <a name="step-5---update-a-line-of-business-app"></a>5. Adım - Bir iş kolu uygulamasını güncelleştirme
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

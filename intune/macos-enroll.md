@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0d58cb3199405a8a32d169e74e4f0009841f5d09
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046256"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251648"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune’da macOS cihazların kaydını ayarlama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune, macOS cihazlarını yönetmenize olanak sağlar. Cihaz yönetimini etkinleştirmek için, kullanıcılarınızın [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) gidip istemleri izleyerek cihazlarını kaydetmeleri gerekir. macOS cihazlarını yönetim altına aldıktan sonra [macOS cihazlar için özel ayarlar oluşturabilirsiniz](custom-settings-macos.md). Daha fazla özellik yakında kullanıma sunulacaktır.
+Intune, kullanıcılara şirket e-postasına ve uygulamalarına erişim vermek için macOS cihazlarını yönetmenize olanak tanır.
+
+Intune yöneticisi olarak, şirkete ait macOS cihazları ile kişilere ait macOS cihazları ("kendi cihazını getir" veya KCG) için kaydı ayarlayabilirsiniz. 
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -39,27 +41,25 @@ macOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın
 - [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanıcı lisanslarını atama
 - [Bir MDM anında iletme sertifikası alma](apple-mdm-push-certificate-get.md)
 
-## <a name="user-owned-ios-devices-byod"></a>Kullanıcıya ait iOS cihazları (KCG)
+## <a name="user-owned-macos-devices-byod"></a>Kullanıcıya ait macOS cihazları (KCG)
 
-Kullanıcıların kendi cihazlarını Intune yönetimine kaydetmesine izin verebilirsiniz. Bu, “kendi cihazını getir” veya KCG olarak bilinir. Siz önkoşulları tamamlayıp kullanıcılara lisans atadıktan sonra kullanıcılar, App Store’dan macOS Şirket Portalı’nı indirip uygulamadaki kayıt yönergelerini izleyebilir.
-
-## <a name="company-owned-ios-devices"></a>Şirkete ait iOS cihazlar
-Kullanıcılarına cihaz satın alan kuruluşlar için Intune, şirkete ait olan MacOS cihazlarını bir [cihaz kayıt yöneticisi](device-enrollment-manager-enroll.md) hesabıyla kaydetmeyi destekler.
-
-## <a name="set-up-macos-enrollment"></a>macOS kaydını ayarlama
-
-Intune, macOS cihazlarının kaydına varsayılan olarak zaten izin verir.
-
-macOS cihazlarının kaydedilmesini engellemek için bkz. [Cihaz türü kısıtlamaları ayarlama](enrollment-restrictions-set.md).
-
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Kullanıcılarınıza, şirket kaynaklarına erişmek için cihazlarını nasıl kaydedeceklerini anlatın
-
-Son kullanıcılarınıza [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) gitmelerini ve istemleri izleyerek cihazlarını kaydetmelerini bildirin. Kullanıcılara, çevrimiçi kaydolma adımlarını gösteren bir bağlantı da gönderebilirsiniz: [macOS cihazınızı Intune’a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Kullanıcıların kendi cihazlarını Intune yönetimine kaydetmesine izin verebilirsiniz. Bu, “kendi cihazını getir” veya KCG olarak bilinir. Önkoşulları tamamladıktan ve kullanıcılara lisans atadıktan sonra, kullanıcılarınız cihazlarını kaydetmek için:
+- [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) gidebilir veya
+- Şirket Portalı uygulamasını indirebilir.
+Kullanıcılara, çevrimiçi kaydolma adımlarını gösteren bir bağlantı da gönderebilirsiniz: [macOS cihazınızı Intune’a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Diğer son kullanıcı görevleri hakkında daha fazla bilgi için şu makalelere bakın:
 
 - [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](end-user-educate.md)
 - [macOS cihazınızı Intune ile kullanma](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="company-owned-macos-devices"></a>Şirkete ait macOS cihazları
+Kullanıcılarına cihaz sağlayan kuruluşlar için Intune, aşağıdaki şirkete ait macOS cihazı kayıt yöntemlerini destekler:
+- [Apple'ın Aygıt Kayıt Programı (DEP)](device-enrollment-program-enroll-macos.md): Kuruluşlar, Apple’ın Aygıt Kayıt Programı (DEP) aracılığıyla macOS cihazları satın alabilir. DEP, cihazları yönetime kaydetmek için bir kayıt profilini “uzaktan” dağıtmanıza imkan tanır.
+- [Cihaz kayıt yöneticisi (DEM)](device-enrollment-manager-enroll.md): En çok 1.000 cihazı kaydetmek için DEM hesabı kullanabilirsiniz.
+
+## <a name="block-macos-enrollment"></a>macOS kaydını engelleme
+Varsayılan olarak, Intune macOS cihazlarının kaydına izin verir. macOS cihazlarının kaydedilmesini engellemek için bkz. [Cihaz türü kısıtlamaları ayarlama](enrollment-restrictions-set.md).
 
 ## <a name="enroll-virtual-macos-machines-for-testing"></a>Sanal macOS makineleri sınama için kaydetme
 
@@ -79,3 +79,7 @@ Kullanıcı Onaylı MDM kaydı, güvenlik açısından hassas bazı ayarları y�
 Kullanıcı onaylı olması için, son kullanıcının macOS Şirket Portalı aracılığıyla kaydettikten sonra Sistem Tercihleri'ni kullanarak el ile onay sağlaması gerekir. Bu işlemi yapma yönergeleri, macOS 10.13.2 veya üzerini kullanan kullanıcılar için macOS Şirket Portalı'nda sağlanır.
 
 Cihazın Kullanıcı Onaylı olup olmadığını öğrenmek için, Intune portalına gidin ve **Cihazlar** > **Tüm cihazlar**> cihaz seçin > **Donanım**'ı seçin. **Kullanıcı Onaylı** alanını işaretleyin.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+macOS cihazları kaydedildikten sonra, [macOS cihazları için özel ayarlar oluşturabilirsiniz](custom-settings-macos.md).

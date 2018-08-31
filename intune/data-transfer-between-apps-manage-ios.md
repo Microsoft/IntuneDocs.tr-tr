@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c6ba08a89417222e9741a69cdf899a4889794b67
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: 2991aa947a693d2eb71a355047ed266838dd92a4
+ms.sourcegitcommit: be67f8293b47cc08a46d328a44a50a7ab67c2052
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37927004"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251830"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 ## <a name="manage-ios-apps"></a>iOS uygulamalarını yönetme
@@ -70,7 +70,7 @@ Kullanıcı UPN ayarını yapılandırmak, Intune veya üçüncü taraf EMM çö
 
 |Üçüncü taraf MDM sağlayıcısı| Yapılandırma Anahtarı | Değer Türü | Yapılandırma Değeri|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | Dize | {UserPrincipalName}|
+|Microsoft Intune| IntuneMAMUPN | Dize | {{UserPrincipalName}}|
 |VMware AirWatch| IntuneMAMUPN | Dize | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Dize | ${userUPN} **veya** ${userEmailAddress} |
 |ManageEngine Mobil Cihaz Yöneticisi | IntuneMAMUPN | Dize | %upn% |

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212044"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903152"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android kurumsal bilgi noktası cihazlarının kaydını ayarlama
 
@@ -56,7 +56,7 @@ Bilgi noktası cihazlarınızı kaydedebilmek için bir kayıt profili oluşturm
 1. [Intune portalı](https://portal.azure.com)’na gidip **Cihaz kaydı** > **Android kaydı** > **Bilgi noktası ve görev cihazı kayıtları**’nı seçin.
 2. **Oluştur**’u seçin ve gerekli alanları doldurun.
     - **Ad**: Profili dinamik cihaz grubuna atarken kullanacağınız bir ad yazın.
-    - **Belirteç sona erme tarihi**: Belirteç süresinin dolduğu tarih. Google, en fazla 30 günü kabul eder.
+    - **Belirteç sona erme tarihi**: Belirteç süresinin dolduğu tarih. Google, en fazla 90 günü kabul eder.
 3. **Oluştur**’u seçerek profili kaydedin.
 
 ### <a name="create-a-device-group"></a>Bir cihaz grubu oluşturma
@@ -110,7 +110,7 @@ NFC destekleyen Android 5.1 ve üzeri cihazlarda özel olarak biçimlendirilmiş
 
 ### <a name="enroll-by-using-a-token"></a>Belirteç kullanarak kaydetme
 
-Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz.
+Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. **aft#setup** kayıt yöntemi kullanıldığında Android 6.1 ve üstü sürümler QR kodu taramasından da yararlanabilir.
 
 1. Fabrika ayarlarına sıfırlanmış cihazınızı açın.
 2. **Hoş Geldiniz** ekranında dili seçin.
@@ -125,6 +125,9 @@ Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz.
 ### <a name="enroll-by-using-a-qr-code"></a>QR kodu kullanarak kaydetme
 
 Android 7 ve üzeri cihazları kaydetmek için kayıt profilinden QR kodunu tarayabilirsiniz.
+
+> [!Note]
+> Tarayıcı yakınlaştırma, cihazların QR kodunu tarayamamasına neden olabilir. Tarayıcı yakınlaştırmasının artırılması sorunu çözer.
 
 1. Android cihazda QR okuması başlatmak için fabrika sıfırlaması sonrası gördüğünüz ilk ekrana birkaç kez dokunun.
 2. Android 7 ve 8 cihazlarda bir QR okuyucu yüklemeniz istenir. Android 9 ve üzeri cihazlarda bir QR okuyucu zaten yüklüdür.

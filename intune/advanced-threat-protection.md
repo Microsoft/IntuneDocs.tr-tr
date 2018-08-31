@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
+ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744678"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40251674"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune’da Windows Defender ATP’yi koşullu erişim ile etkinleştirme
 
@@ -44,7 +44,7 @@ Bu makale, şunları nasıl yapacağınızı gösterir:
 
 ATP’yi Intune ile birlikte kullanmak için aşağıdakilerin yapılandırılmış ve kullanıma hazır olduğundan emin olun:
 
-- Enterprise Mobility + Security E5 ve Windows E5 (veya Microsoft 365 Kurumsal E5) için lisanslı kiracı
+- Enterprise Mobility + Security E3 ve Windows E5 (veya Microsoft 365 Kurumsal E5) için lisanslı kiracı
 - Azure AD’ye katılmış [Intune tarafından yönetilen](windows-enroll.md) Windows 10 cihazların olduğu Microsoft Intune ortamı
 - [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) ve Windows Defender Güvenlik Merkezi (ATP portalı) erişimi
 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254544"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251588"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -81,8 +81,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 5. **Varlık Türü**’nüzü seçin ve **Devam**’a tıklayın.
 
-6. Kuruluşunuzun bilgilerini girerek formu doldurun. 
-              **Devam**'a tıklayın. Bu noktada Apple, kuruluşunuzu kaydetme yetkiniz olup olmadığını doğrulamak için sizinle irtibat kurar.
+6. Kuruluşunuzun bilgilerini girerek formu doldurun. **Devam**'a tıklayın. Bu noktada Apple, kuruluşunuzu kaydetme yetkiniz olup olmadığını doğrulamak için sizinle irtibat kurar.
 
 8. Doğrulamadan sonra **Lisansı Kabul Et**'e tıklayın.
 
@@ -127,7 +126,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
     ![Anahtarlık Erişimi’nde bir Sertifika Yetkilisinden bir sertifika isteyin](./media/iOS-signing-cert-6.png)
 
-12. Apple Geliştirici sitesine dönün. **Devam'a** tıklayın. Ardından CSR dosyasını karşıya yükleyin.
+12. Apple Geliştirici sitesine dönün. **Devam**'a tıklayın. Ardından CSR dosyasını karşıya yükleyin.
 
 13. Apple imzalama sertifikanızı oluşturur. Bunu indirin ve Mac OS bilgisayarınızda hatırlayacağınız bir konuma kaydedin.
 
@@ -157,7 +156,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
    ![Şirket içi sağlama profilini seçin](./media/iOS-provisioning-profile-1.png)
 
-5. **Devam'a** tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
+5. **Devam**'a tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
 
 6. Profilinizi (.mobileprovision uzantısı ile) Mac OS bilgisayarınıza yükleme adımlarını izleyin.
 
@@ -173,19 +172,14 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 3. Paketi bilgisayarınıza bağlayan EULA’yı kabul etmek için **Kabul et**’i seçin.
 
-4.  **IntuneMAMPackager** klasörünü açın ve içeriğini macOS bilgisayarınıza kaydedin. Artık Uygulama Sarmalama Aracını çalıştırmaya hazırsınız.
-
-> [!NOTE]
-> Intune MAM Paketleyici, macOS bilgisayarınıza ayrı olarak takılabilir ve sarmalama komutlarını çalıştırırken bir “dosya bulunamadı” hatasına neden olabilir. Bu nedenle IntuneMAMPackager klasörünün içeriğini taşımak, sarmalama sırasında paketleyici yolunun bulunmasına olanak verir.
-
 ## <a name="run-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını çalıştırma
 
 ### <a name="use-terminal"></a>Terminal kullanma
 
-macOS Terminal programını açın ve uygulama sarmalama aracı dosyalarını kaydettiğiniz klasöre gidin. Yürütülebilir aracın adı IntuneMAMPackager, bulunduğu konum IntuneMAMPackager/Contents/MacOS klasörüdür. Komutu aşağıdaki gibi çalıştırın:
+macOS Terminali'ni açın ve aşağıdaki komutu çalıştırın:
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
@@ -406,6 +400,29 @@ Uygulama Sarmalama Aracını kullanırken, güvenlik ve gizlilik açısından a�
 -   Karşıya dosya yükleme iletişim kutusu içeren iOS uygulamaları, kullanıcıların uygulama için geçerli olan kes, kopyala ve yapıştır kısıtlamalarını aşmasına imkan sağlar. Örneğin, bir kullanıcı karşıya dosya yükleme iletişim kutusunu kullanarak uygulama verilerinin ekran görüntüsünü karşıya yükleyebilir.
 
 -   Cihazınızdaki belgeler klasörünü sarmalanan bir uygulamadan izliyorsanız, .msftintuneapplauncher adında bir klasör görebilirsiniz. Bu dosyayı değiştirir veya silerseniz, bu, kısıtlanan uygulamaların düzgün çalışmasını etkileyebilir.
+
+## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Citrix MDX mVPN ile iOS için Intune Uygulama Sarmalama Aracı
+Bu özellik, iOS için Citrix MDX uygulama sarmalayıcıyla bir tümleştirmedir. Tümleştirme, gelen Intune Uygulama Sarmalama Araçları'na yönelik ek, isteğe bağlı bir komut satırı bayrağıdır (`-citrix`).
+
+### <a name="requirements"></a>Gereksinimler
+
+`-citrix` bayrağını kullanmak için, aynı macOS makinesine [iOS için Citrix MDX uygulama sarmalayıcıyı](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) da yüklemeniz gerekecektir. İndirmeler [Citrix XenMobile Downloads](https://www.citrix.com/downloads/xenmobile/) altında bulunabilir ve yalnızca oturum açtıktan sonra Citrix müşterileriyle kısıtlanmıştır. Bunun varsayılan konuma yüklendiğinden emin olun: `/Applications/Citrix/MDXToolkit`. 
+
+> [!NOTE] 
+> Intune ve Citrix tümleştirmesi desteği yalnızca iOS 10+ cihazlarıyla sınırlıdır.
+
+### <a name="use-the--citrix-flag"></a>`-citrix` bayrağını kullanma
+Yalnızca genel uygulama sarmalama komutunu sonuna `-citrix` bayrağı eklenmiş olarak çalıştırın. `-citrix` bayrağı şu anda hiçbir bağımsız değişken almamaktadır.
+
+**Kullanım biçimi**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
+```
+
+**Örnek komut**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
+```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>Sarmalanmış uygulamalarınız için günlükleri alma
 Sorun giderme sırasında sarmalanmış uygulamalarınızın günlüklerini almak için aşağıdaki adımları kullanın.
