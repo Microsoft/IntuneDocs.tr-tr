@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018184"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150705"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 cihaz kaydı sorunlarınızı giderme
 [Windows 10 Mobile veya Windows 10 masaüstü cihazınızı Intune’a kaydetme](enroll-your-w10-phone-or-w10-pc-windows.md) bölümündeki adımları uyguladıysanız, ancak iş veya okul e-postalarınıza ve dosyalarınıza yine de erişemiyorsanız, bu sorun giderme adımlarını uygulayın.
@@ -61,4 +61,4 @@ Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza, dosyaları
 
 <strong>“Girdiğiniz kullanıcı adıyla eşleşen bir yönetim uç noktası otomatik bulunamadı” şeklinde bir ileti görürseniz lütfen kullanıcı adınızı kontrol edin ve oturum açmayı yeniden deneyin. Yönetim uç noktanızın URL’sini biliyorsanız lütfen girin.</strong> Daha sonra kullanıcı adınız ve parolanızı yeniden girmeyi deneyin. Sorun yaşamaya devam ederseniz <strong>Yönetim uç noktası</strong> metin kutusunda sağlamanız gereken web sitesi için şirketinizin destek birimiyle görüşün. Bu web sitesi büyük olasılıkla şu şekilde olacaktır: <strong>www.şirketiniz.onmicrosoft.com</strong>.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0edd35aa1b202b9494c31d91a0ca5584f1cc251
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: db65c33fe90497ccb511f18c8668a876c0d352fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755275"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146408"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>iOS cihazınızdaki yaygın sorunları çözme
 
-Bazen iOS cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](https://portal.manage.microsoft.com#HelpDeskDialog) iletişim bilgilerini kullanarak şirketinizin destek birimine ulaşmanızı öneririz.
+Bazen iOS cihazınızda sorun giderme yoluyla çözebileceğiniz sorunlar ortaya çıkabilir. Yaygın olarak karşılaştığımız ve öncelikle kendi başınıza çözmeyi deneyebileceğiniz bazı sorunlar aşağıdaki listelenmiştir. Daha karmaşık sorunlarda, [Şirket Portalı web sitesindeki](https://go.microsoft.com/fwlink/?linkid=2010980) iletişim bilgilerini kullanarak şirketinizin destek birimine ulaşmanızı öneririz.
 
 - [Gizliliği tehlikeye atılan bir iOS cihazını yeniden bağlamam gerekiyor](how-to-reconnect-a-compromised-ios-device.md)
 - [Şirketimin destek birimine hata yollamam gerekiyor](send-errors-to-your-it-admin-ios.md)

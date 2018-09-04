@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ed5acd3e5af2c26a8b13872d4663352886f4bc1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 202a7cc118a4eb8a2e15c1b0de32c27450d064db
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015991"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149438"
 ---
 # <a name="your-macos-devices-operating-system-version-isnt-yet-supported"></a>macOS cihazınızın işletim sistemi sürümü henüz desteklenmiyor
 
 Teknolojinin hızla gelişmesiyle, cihazınız bazı durumlarda şirketinizin destek biriminin sınama şansı edindiği cihazdan daha gelişmiş olabilir. En yeni macOS sürümü, şirketinizde kullanılan diğer bazı araçlarla birlikte çalışmayabilir.
 
-Bu sorunu çözmek için şirketinizin destek birimine başvurmanız gerekecektir. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu sorunu çözmek için şirketinizin destek birimine başvurmanız gerekecektir. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

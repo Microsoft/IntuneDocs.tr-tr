@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308866"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150333"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Cihazınızı Şirket Portalı’ndan kaldırma
 
-Cihazınızın artık şirketiniz veya kuruluşunuz tarafından yönetilmesini istemediğinize karar verirseniz [Şirket Portalı web sitesini](https://portal.manage.microsoft.com#HelpDeskDialog) kullanarak Şirket Portalı’ndan kaldırabilirsiniz. Cihazınızı kaldırırsanız artık Şirket Portalı’nda listelenmez. Ayrıca kuruluşunuzun verileri, uygulamaları ve e-postalarına erişiminizi kaybedebilirsiniz.
+Cihazınızın artık şirketiniz veya kuruluşunuz tarafından yönetilmesini istemediğinize karar verirseniz [Şirket Portalı web sitesini](https://go.microsoft.com/fwlink/?linkid=2010980) kullanarak Şirket Portalı’ndan kaldırabilirsiniz. Cihazınızı kaldırırsanız artık Şirket Portalı’nda listelenmez. Ayrıca kuruluşunuzun verileri, uygulamaları ve e-postalarına erişiminizi kaybedebilirsiniz.
 
 Cihazınızı kaldırmak için:
 
-1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
+1. [Şirket Portalı web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
 
    ![Giriş, Tüm Uygulamalar, Cihazlarım, Yardım Masası ve Oturumu Kapat düğmeleriyle ekranın sol tarafında genişletilmiş bir yan menü ile Şirket Portalı web sitesinin bir görüntüsü.](/media/iwp-expanded-sidebar.png)
 
@@ -44,4 +44,4 @@ Cihazınızı kaldırmak için:
 
 4. Uyarı iletisini okuyun, sonra cihazınızı Şirket Portalı’ndan kaldırmak için **Kaldır**’a dokunun.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

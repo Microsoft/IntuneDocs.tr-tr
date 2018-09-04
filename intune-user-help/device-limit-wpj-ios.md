@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c8d6ba4f6f8a9885b0000e0d7c60ba0594504b5
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ffdf1d524dafa280a698ff25b5118394116cd72a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30750872"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148840"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Kaydedebileceğiniz cihaz sınırına ulaşıldı
 
@@ -33,4 +33,4 @@ Her şirkette, kişilerin şirket kaynaklarına ulaşabilmek için kullanabilece
 2. [MyApps portalında](https://myapps.microsoft.com) cihazlarınızdan birini kaldırın ve sayfanın sağ üst köşesindeki **Profil**’i seçin. 
 3. Kaydedebileceğiniz cihaz sayısını artırıp artıramayacakları konusunda şirketinizin destek birimi ile iletişime geçin. 
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 64a3a4710b8841dcc80c159d0622735fdd862e7a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 604c08e771548b9cd071ae87ba9cdcb3f9bb2d3a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031677"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147477"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft’un veri toplamasını devre dışı bırakma
 
@@ -30,4 +30,4 @@ Microsoft, ürünlerimiz ve hizmetlerimizle ilgili belirli verileri otomatik ola
 
 macOS cihazınızda kullanım verilerinin toplanmasını kapatmak istiyorsanız Şirket Portalı uygulamasını açın ve **Şirket Portalı** menüsünü seçin. **Tercihler**'i açın ve **Microsoft'a kullanım verileri gönder**'in altında **Microsoft'un veri toplamasına izin ver** kutusunun işaretini kaldırın.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eb62b7fb16b14fd723d71d2e7044fc9603f86ed1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f4cec690431ded00e7645e7ca76bd156453fb62
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020189"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148210"
 ---
 # <a name="your-device-is-noncompliant"></a>Cihazınız uyumsuz
 
@@ -30,4 +30,4 @@ Cihazınız kuruluşunuzun güvenlik ilkelerinden en az biriyle uyumsuz, ancak h
 
 Şirket Portalı uygulamasında **Uyumluluğu Denetle**’ye dokunun. Böylece Şirket Portalı uygulaması cihazınızın uyumsuz olmasına neden olan durumu bildirir.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

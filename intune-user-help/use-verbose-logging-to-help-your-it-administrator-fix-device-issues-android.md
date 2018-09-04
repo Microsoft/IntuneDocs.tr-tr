@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 390a236cf8eebae209c81b53d629cbd3f83899f8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8c1806d8d35dd2a6e16f1041e2c9f844f637a046
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016773"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149880"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Ayrıntılı günlük kaydı ile şirketinizin destek birimine cihaz sorunlarını çözmede yardımcı olma
 
@@ -30,4 +30,4 @@ Android cihazınız Intune’a kaydolduğunda, Şirket Portalı uygulamasının 
 
 Ayrıntılı günlük kaydı özelliğini açmak veya kapatmak için iş veya okul kimlik bilgilerinizi kullanarak Şirket Portalı uygulamasında oturum açın, **Ayarlar**’a dokunun ve sonra da **Ayrıntılı Günlük Kaydı**’nın yanındaki açık/kapalı düğmesine dokunun.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

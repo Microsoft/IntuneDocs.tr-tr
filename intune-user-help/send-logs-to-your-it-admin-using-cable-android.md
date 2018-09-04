@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117863"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150316"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>USB kablosu kullanarak günlükleri şirketinizin destek birimine gönderme
 
 Android cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsanız, şirketinizin destek biriminin sorunu gidermesine yardımcı olmak için bilgileri e-posta ile gönderebilirsiniz. Bu bilgiler, cihazınızda _tanılama günlüğü_ adlı özel bir belgede tutulur.
 
 > [!Note]
-> Başlamadan önce, şirketinizin destek biriminin e-posta adresini bildiğinizden emin olun. Bu e-posta adresini [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog) veya Şirket Portalı uygulamanızda bulabilirsiniz.
+> Başlamadan önce, şirketinizin destek biriminin e-posta adresini bildiğinizden emin olun. Bu e-posta adresini [Şirket Portalı web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980) veya Şirket Portalı uygulamanızda bulabilirsiniz.
 
 1. Hata ekranında **Bilgi Gönder**’e dokunun. Günlükleri göndermek için hangi yöntemi kullanmak istediğinizi soran bir ileti gördüğünüzde, dosyaları cihazınıza kaydedecek seçeneği işaretleyin.
 
@@ -39,4 +39,4 @@ Android cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsan
 
 4. Dosyaları seçin ve bir e-postaya ekleyin. Bu e-postayı şirketinizin destek birimine gönderin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 738cc313eca4c98e7cdee3dfe40f705630244a9f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 443234bea9623ccbf5ac916d179a8fe202a392dd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015753"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147787"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Windows 10 cihazınıza Office 365 yükleme
 
@@ -32,4 +32,4 @@ Office paketini Windows 10 cihazınıza yüklemenin pek çok yolu vardır. Şirk
 
 Şirketiniz Office’i kullanılabilir olarak sunduğunda yalnızca bir Office sürümü yüklemelisiniz. İkinciyi yüklerseniz, ilk yüklediğinizi cihazdan kaldırırsınız.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

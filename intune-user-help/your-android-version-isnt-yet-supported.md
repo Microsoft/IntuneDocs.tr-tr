@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4be9a33041e1717fec0b8a4e764798d719ff4499
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7172d165b8ee425a807a0926a193a7427862a526
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031232"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149105"
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>Android cihazınızın işletim sistemi sürümü henüz desteklenmiyor
 
 Teknolojinin hızla gelişmesiyle, cihazınız bazı durumlarda şirketinizin destek biriminin sınama şansı edindiği cihazdan daha gelişmiş olabilir. En yeni Android sürümü, şirketinizde kullanılan bazı diğer araçlar ile çalışmayabilir.
 
-Bu sorunu çözmek için şirketinizin destek birimine başvurmanız gerekecektir. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu sorunu çözmek için şirketinizin destek birimine başvurmanız gerekecektir. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 1ce260b010658ade6c78361b980ca928a992d113
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 235356e88dc2ba25b789ebe262c1ae9b32840793
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751450"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150894"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Samsung Knox cihazınızdaki yaygın sorunları çözme
 
@@ -51,4 +51,4 @@ Bazen Samsung Knox cihazınızda sorun giderme yoluyla çözebileceğiniz sorunl
 |---|---|
 |**Samsung Knox etkinleştirme hatası** - Samsung KNOX lisansı etkinleştirilemedi. Sorun, güç tasarrufunun etkin olmasından kaynaklanıyor olabilir. Cihaz ayarlarından güç tasarrufunu devre dışı bırakın ve tekrar deneyin. |Cihazınızın güç ayarları şirket kaynaklarınızla çalışma açısından doğru olmayabilir. [Güç tasarrufu modunu ayarlama](power-saving-mode-android.md) hakkında daha fazla bilgi edinin.|
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

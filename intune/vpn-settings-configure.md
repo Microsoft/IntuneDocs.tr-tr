@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 97bddc1a183e3a546e76b346f53f80aba6a81c50
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905113"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312882"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune’da VPN profilleri oluşturma
 
@@ -54,6 +54,7 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 |IKEv2|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
 |L2TP|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
 |PPTP|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
+|Zscaler|Hayır|Evet|Hayır|Hayır|Hayır|Hayır|
 |Özel VPN|Hayır|Evet|Evet|Hayır|Hayır|Hayır|
 
 > [!IMPORTANT]

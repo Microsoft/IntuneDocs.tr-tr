@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c61b0d62ea2b12712e47e0e83b21cc40b7d1e9ef
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9cc2cc35a29949e78e723026865c057fec548bc3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752963"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150741"
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>macOS cihazınızın Intune kaydını silme
 
@@ -50,4 +50,4 @@ Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 
 -   Şirket e-posta erişimi cihazdan kaldırılabilir.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

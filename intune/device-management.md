@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836936"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313267"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir?
 
@@ -55,8 +55,8 @@ Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağ
 
 - [Cihaz envanterini görüntüleme](device-inventory.md)
 - Uzak cihaz eylemlerini çalıştırın:
-    - [Şirket verilerini kaldır](devices-wipe.md#remove-company-data)
-    - [Fabrika sıfırlaması](devices-wipe.md#factory-reset)
+    - [Devre Dışı Bırak](devices-wipe.md#retire)
+    - [Silme](devices-wipe.md#wipe)
     - [Uzaktan kilitleme](device-remote-lock.md)
     - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
     - [Etkinleştirme Kilidini Atlama](device-activation-lock-bypass.md) (yalnızca iOS)

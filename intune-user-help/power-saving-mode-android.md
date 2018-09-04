@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 663da92e11befeae1f65467e887870a52640cbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 33b6199c25e9e36b65dfe2ca819640fa614e68b6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020580"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148232"
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Android’de pil iyileştirme açık olduğunda Outlook yönetilen e-postaları eşitlemez
 
 > [!IMPORTANT]
-> Konuyla ilgili rapor gönderen müşteri sayısı gittikçe arttığı için bu soruna burada değiniyoruz. Bu adımları tamamladıktan sonra sorununuz hala devam ederse yardım için [şirketinizin destek birimine](https://portal.manage.microsoft.com#HelpDeskDialog) başvurun.
+> Konuyla ilgili rapor gönderen müşteri sayısı gittikçe arttığı için bu soruna burada değiniyoruz. Bu adımları tamamladıktan sonra sorununuz hala devam ederse yardım için [şirketinizin destek birimine](https://go.microsoft.com/fwlink/?linkid=2010980) başvurun.
 
 Cihazınızı Intune’a kaydetmek, şirket kaynaklarına erişmenizi sağlar. En yaygın kaynaklardan biri e-posta erişimidir. Outlook ile e-postaya erişim konusunda yaşanan sorunların, güç iyileştirme açıkken meydana geldiğini gördük. Pil iyileştirme, cihazınızın olabildiğince uzun süre çalışmasını sağlamak için otomatik olarak açılabilir. Pil iyileştirme, e-postaların otomatik indirilmesini durdurmaya çalışarak size kısmen yardımcı olur.
 
@@ -75,4 +75,4 @@ Bu ayarları bulmanın bir diğer yolu da sistem ayarlarında arama yapmaktır. 
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

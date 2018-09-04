@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7190049dbc204d3cdcc4b9dcfbe23e866980ce37
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 31d5a0879f3e3c3933e6b0a8f4e9ebf7e6056419
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016586"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147865"
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>Windows için Şirket Portalı uygulamanız güncel değil
 
 Şirket e-postanız, kişileriniz ve belgeleriniz gibi öğelere erişmeye devam edebilmek için Şirket Portalı uygulamanızı güncelleştirmeniz gerekir. Bu durumu düzeltmek için **Microsoft Mağazası**’nı açın ve **Şirket Portalı** uygulamasının yeni sürümünü yükleyin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

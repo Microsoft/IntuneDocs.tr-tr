@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 345b62c115525fb3be2a2bcfdffc5388df7417af
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9e6935dd5f25e14a5cef44d899c647d2927ebbbb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751756"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147086"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Jamf tarafından yönetilen macOS cihazda eylem gerçekleştirme
 
@@ -34,4 +34,4 @@ __"AccountNotOnboarded" veya "Cihaz zaten kayıtlı" görüyorsanız ne yapmalı
 
 Şirket Portalı uygulamasını açtıysanız ve "AccountNotOnboarded" iletisi gösteriliyorsa, Şirket Portalı uygulamasından çıkmanız ve **Uygulamalar** > **Self Servis**'e gitmeniz gerekir. Şirketinizin, yüklemeniz gereken bir cihaz kayıt ilkesi olacaktır. İlkeyi yüklemek için tıklayın ve ardından Şirket Portalı'nı yeniden açın.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com#HelpDeskDialog) ulaşabilirsiniz.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://go.microsoft.com/fwlink/?linkid=2010980) ulaşabilirsiniz.

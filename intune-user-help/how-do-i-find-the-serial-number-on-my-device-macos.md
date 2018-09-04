@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 33e06cbd1ad47ee9af34c660157a5dacc3db2e80
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 14dedc8a690abe17da7e846957737f6059014859
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014342"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146731"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>Cihazımda seri numarasını nasıl bulabilirim?
 
 Cihazınızın seri numarası, cihazınızı benzersiz kılar ve cihazınızı yenisiyle değiştirme gibi belirli görevlerde şirketinizin destek birimine yardımcı olabilir. Seri numarasını bulmak için **Apple menüsü** > **Bu Mac Hakkında**'ya gidin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

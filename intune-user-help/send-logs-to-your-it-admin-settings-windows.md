@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 57c1dcfb591ceea1b85292a416d037c0b4073645
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016314"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146748"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Windows 10 cihazlar için Ayarlar uygulamasından şirketinizin destek birimine günlük gönderme
 
@@ -38,4 +38,4 @@ ms.locfileid: "31016314"
 
 Ayrıca, bulabilecekleri herhangi bir sorunu gidermeye çalışırken şirketinizin destek birimine daha fazla yardımcı olmak için [Şirket Portalı uygulamasından günlükler](send-logs-to-your-it-admin-cp-windows.md) göndermeniz de gerekebilir. 
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

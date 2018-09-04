@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755498"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149132"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak Windows cihazınızı sıfırlarsanız ne olur?
 
@@ -34,4 +34,4 @@ ms.locfileid: "30755498"
 |Cihazınız yalnızca şirket e-postalarına erişebilir|**Windows Phone 8.1**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows 7 veya Windows Vista**<br />Windows 7 veya daha önceki bir sürümünü çalıştıran ve yalnızca e-postalar için kullanılan bir bilgisayarı sıfırlayamazsınız.<br /><br />**Windows 8.1 ve Windows 8**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız ve kaydedilmemiş e-postalarınız silinir.|
 |Masaüstü ve dizüstü bilgisayarlar|**Windows 8.1 ve Windows 8**<br />Windows 8 veya Windows 8.1 çalıştıran bilgisayarları yalnızca e-postalar için kullanıldıkları sürece sıfırlayamazsınız.<br /><br />**Windows 7 veya Windows Vista**<br />Windows 7 veya önceki bir sürümünü çalıştıran bilgisayarları sıfırlayamazsınız.|
 
-Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

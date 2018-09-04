@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6011e46a3176d55f35310292b55f4786d131f269
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219838"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150930"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Parolanız şirketinizin destek biriminin gereksinimlerini karşılamıyor
 
@@ -33,7 +33,7 @@ PIN değerinizi veya parolanızı ayarlama adımları için sahip olduğunuz cih
 - [Windows cihazınızın parolasını ayarlama veya değiştirme](set-or-change-your-password-windows.md)
 
 > [!NOTE]
-> Parolanızı şirketinizin destek gereksinimleriyle uyumlu hale getirme konusunda sorun yaşıyorsanız, şirketinizin destek birimine başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+> Parolanızı şirketinizin destek gereksinimleriyle uyumlu hale getirme konusunda sorun yaşıyorsanız, şirketinizin destek birimine başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.
 
 ## <a name="pin-or-password-issue-descriptions"></a>PIN veya parola sorunu açıklamaları
 

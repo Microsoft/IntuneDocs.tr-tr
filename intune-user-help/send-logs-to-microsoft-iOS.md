@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a861a491d100fa7f7766d6f638c86f866b336369
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 334f2d14a2cf4fb79310b1a2b4e1026d42754e35
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754629"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148616"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Günlükleri, iOS cihazları için Şirket Portalı geliştiricilerine gönderme
 
@@ -35,4 +35,4 @@ Bu sorunla karşılaşıyorsanız Şirket Portalı ekibi, kök nedeni tanılamak
 3.  Basılı tutup küçük mavi noktaları yukarı ve aşağı doğru sürükleyerek rapordaki tüm metni seçin. Açılır menüde __Kopyala__’ya dokunun.
 4.  E-posta uygulamanızı açın ve bu içeriği e-postanın gövdesine yapıştırın. Bu e-postayı <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a> adresine gönderin.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

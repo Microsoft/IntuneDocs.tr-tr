@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51ef4e1e89c54587535f3ede7e8f406f54763bc9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 88caf56a2483690f9130818191b04f412a7ed641
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015073"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146846"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Android Cihazınızda uyumluluk denetimi
 
@@ -32,4 +32,4 @@ Cihazınız bir süredir Intune’da oturum açmadıysa, şirket veya okul kayna
 
 2. **Uyumluluğu Denetle**’ye dokunun.
 
-Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, şirketinizin destek biriminden cihazı sizin için sıfırlamasını isteyin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, şirketinizin destek biriminden cihazı sizin için sıfırlamasını isteyin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

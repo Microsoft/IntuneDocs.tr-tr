@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ab5e424469f0fd83e063db5361fa843b2c6f1e76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1f9bb0fc434b1cba2d9b48f6f8cef4cf6b06e932
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016212"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147327"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Windows cihazınızı güncelleştirmeniz gerekiyor
 
@@ -37,4 +37,4 @@ Windows çalıştıran bilgisayarlarda **işletim sistemi** için arama yapın v
 
 Windows 10 ve Windows 8.1 için __arama çubuğuna__ __Windows sürümü__ yazın. __Yardımcı olabilir miyim?__ altında __windows sürümü__ seçeneğini belirleyin. Sürüm numarası görüntülenir. Bu numara şuna benzer: __10.0.14393.447__.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

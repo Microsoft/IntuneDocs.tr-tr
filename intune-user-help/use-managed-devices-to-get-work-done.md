@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755241"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150675"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>İşleri halletmek için yönetilen cihazları kullanma
 Microsoft Intune, kuruluşların cihazları (akıllı telefonlar, tabletler ve bilgisayarlar gibi), uygulamaları ve e-posta gibi diğer şirket kaynaklarını yönetmesine olanak tanıyan bir yazılım parçasıdır. Bu yazılım, çalışanların hemen her yerden ve hemen her cihazdan çalışma bilgilerine erişmesini sağlarken, kurumsal bilgilerin güvenliğini korumaya da yardımcı olur.
@@ -36,7 +36,7 @@ Cihazlarınızı Intune ile yönetilmek üzere kaydettiğinizde, BT departmanın
 Şirket Portalı’nı iki farklı yolla alabilirsiniz:
 
 - Cihazınıza Şirket Portalı uygulamasını yükleyerek. Normalde Şirket Portalı uygulamasını cihazınızda uygulama mağazasına giderek alabilirsiniz ancak şirketinizin destek birimi de Şirket Portalı uygulamasını sizin için yükleyebilir.
-- Şirketinizin destek biriminin ayarladığı [Şirket Portalı web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) giderek.
+- Şirketinizin destek biriminin ayarladığı [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) giderek.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Uygulamayla web sitesi arasındaki fark nedir?
 Şirket Portalı uygulamasıyla Şirket Portalı web sitesi arasında birkaç küçük fark vardır, ama aynı görevleri çoğunlukla her ikisinde de gerçekleştirebilirsiniz. Gerçekleştirebileceğiniz görevlerden bazıları:
@@ -102,4 +102,4 @@ Microsoft, öncelikle sorunu yardım almadan düzeltmeyi denemenizi önerir. Int
 - [macOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-macos.md)
 - [Windows cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-windows.md)
 
-Yardım istemek için aşağıya bir yorum girebilirsiniz, ancak her kuruluşun gereksinimleri farklı olduğundan sorularınızı yanıtlamak her zaman mümkün olmayabilir. Yardım için şirketinizin destek birimine başvurursanız, en hızlı ve ilgili yanıta ulaşmanız kolaylaşacaktır. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com#HelpDeskDialog) ulaşabilirsiniz.
+Yardım istemek için aşağıya bir yorum girebilirsiniz, ancak her kuruluşun gereksinimleri farklı olduğundan sorularınızı yanıtlamak her zaman mümkün olmayabilir. Yardım için şirketinizin destek birimine başvurursanız, en hızlı ve ilgili yanıta ulaşmanız kolaylaşacaktır. İletişim bilgilerine [Şirket Portalı web sitesinden](https://go.microsoft.com/fwlink/?linkid=2010980) ulaşabilirsiniz.

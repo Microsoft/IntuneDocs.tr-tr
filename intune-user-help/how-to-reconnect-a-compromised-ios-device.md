@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 434ed86a92956944a2c432f9f9d9c8822f043559
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d33cadab2c9ae7b44c72eff66f761c842105fc6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014648"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148548"
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Ele geçirilen bir iOS cihazını yeniden bağlama
 
 Şirketinizin destek birimi, jailbreak uygulanmış bir cihaz kullandığınızı saptadı. "Jailbreak uygulanmış" ifadesi, cihazın, güvenliği tehlikeye atabilecek ve şirketinizin kaynakları için tehdit oluşturabilecek şekilde belirli önemli dosyalara kısıtlama olmadan erişmek üzere değiştirildiğini anlatır. 
 
-Bu durumda cihazınız artık şirket kaynaklarına erişemez ve büyük olasılıkla cihazınızı fabrika ayarlarına sıfırlamanız gerekir. Yardım için şirketinizin destek birimine başvurmanızı öneririz. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu durumda cihazınız artık şirket kaynaklarına erişemez ve büyük olasılıkla cihazınızı fabrika ayarlarına sıfırlamanız gerekir. Yardım için şirketinizin destek birimine başvurmanızı öneririz. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

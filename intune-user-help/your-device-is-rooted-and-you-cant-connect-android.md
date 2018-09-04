@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 522a300760fe4446fc6e1ff211763279ba4fc7bf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4cce70abac079ab1761994ba91040c16375e013
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021192"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149764"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Android cihazınıza kök erişim izni verildiği için bağlanamıyorsunuz
 
@@ -34,6 +34,6 @@ Cihaza kök erişim izni vermek için kullanılan birkaç yaygın yol vardır:
 
 - Cihazınıza, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir uygulama yüklemiş olabilirsiniz. Bir uygulamayı yükledikten hemen sonra bu iletiyi görürseniz uygulamayı kaldırmayı deneyin.
 
-- Cihazınızın üreticisi, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir yazılım yüklemiş olabilir. Bu durumda yardım için şirketinizin destek birimine başvurmalısınız. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) gidin.
+- Cihazınızın üreticisi, kök algılama yazılımının güvenlik riski taşıdığını düşündüğü bir yazılım yüklemiş olabilir. Bu durumda yardım için şirketinizin destek birimine başvurmalısınız. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) gidin.
 
 Cihazınıza kök erişim iznini siz verdiyseniz, işlemi iptal etmeniz ve cihazı kök erişim izni verilmemiş durumuna getirmeniz gerekir.

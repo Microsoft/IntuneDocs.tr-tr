@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4003d27bd3cbd8e0bef835df7895f7388cbd7dcd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ff7f076cf779c867ba730d8f048dd6a8a8f6d1af
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014512"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147018"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>Outlook uygulamasını yüklemek için iOS cihazınızı güncelleştirmeniz gerekiyor
 
@@ -36,4 +36,4 @@ Bazen, özellikle cihazınız güncel değilse, bir uygulamayı yükleme işlemi
 
 Güncelleştirmek için **Ayarlar** > **Genel** > **Yazılım Güncelleştirmesi**’ne dokunun.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

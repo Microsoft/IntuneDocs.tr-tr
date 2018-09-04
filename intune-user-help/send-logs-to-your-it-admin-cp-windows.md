@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915503"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146528"
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Windows 10 cihazlar için Şirket Portalı uygulamasından şirketinizin destek birimine günlük gönderme
 
@@ -39,4 +39,4 @@ Windows 10 cihazınızda Şirket Portalı uygulamasını kullanırken hata alır
 
 Ayrıca, bulabileceği herhangi bir sorunu gidermeye çalışırken şirketinizin destek birimine daha fazla yardımcı olmak için [Ayarlar uygulamasından günlükler](send-logs-to-your-it-admin-settings-windows.md) göndermeniz de gerekebilir.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.
