@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: c96f211f18168c8ae55f0ca2391c6c140caef649
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: b3c374e4ce6baeab8cc6fde3f6c45c63c48e34dd
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138737"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903084"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows AutoPilot kullanarak Windows cihazlarını kaydetme
 Windows AutoPilot, cihaz sağlamayı kolaylaştırır. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve AutoPilot ile özel işletim sistemi görüntülerini derleme, bakım ve uygulama zahmetine katlanmanız gerekmeden son kullanıcılarınıza yeni cihazlar verebilirsiniz. AutoPilot cihazları yönetmek için Intune kullandığınızda cihazlar kaydedildikten sonra ilkeler, profiller, uygulamalar ve daha fazlasını yönetebilirsiniz. Faydalar, senaryolar ve önkoşullara genel bir bakış için bkz. [Windows AutoPilot’a Genel Bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -72,8 +72,8 @@ AutoPilot dağıtım profilleri, AutoPilot cihazları yapılandırmak için kull
     - **Kendi kendine dağıtım (önizleme)**: (Windows 10 Insider Preview Derleme 17672 veya sonrası) Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkili değildir. Cihazın sağlanması için kullanıcı kimlik bilgileri gerekli değildir.
 4. **Azure AD’ye farklı katıl** kutusunda **Azure AD katılımlı**’yı seçin.
 5. **İlk kez çalıştırma deneyimi (OOBE)** öğesini seçin, aşağıdaki seçenekleri yapılandırın ve **Kaydet**’e tıklayın:
-    - **Dil (Bölge)***: Cihazda kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
-    - ***Klavyeyi otomatik olarak yapılandır***: Bir **Dil (Bölge)** seçildiyse, klavye seçimi sayfasını atlayın. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
+    - **Dil (Bölge)**\*: Cihazda kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
+    - **Klavyeyi otomatik olarak yapılandır**\*: Bir **Dil (Bölge)** seçildiyse, klavye seçimi sayfasını atlayın. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
     - **Son kullanıcı lisans sözleşmesi (EULA)**: (Windows 10, sürüm 1709 veya sonrası) EULA’nın kullanıcılara gösterilip gösterilmeyeceğini seçin.
     - **Gizlilik ayarları**: Gizlilik ayarlarının kullanıcılara gösterilip gösterilmeyeceğini seçin.
     - **Kullanıcı hesap türü**: Kullanıcı hesabının türünün **Yönetici** mi yoksa **Standart** mı olacağını seçin. 

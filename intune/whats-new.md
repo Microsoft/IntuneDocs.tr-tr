@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 08/14/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
-ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
+ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39614522"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092184"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,21 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. [Yaklaşan değişiklik
 
 -->   
 
+
+## <a name="week-of-august-27-2018"></a>27 Ağustos 2018 Haftası
+
+### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>DEP kaydı sırasında Şirket Portalı’nın ön sağlamasını yapmak için VPP cihaz lisanslarını kullanın <!-- 1608345 -->
+Artık Aygıt Kayıt Programı (DEP) kayıtları sırasında Şirket Portalı’nın ön sağlamasını yapmak için Volume Purchase Program (VPP) cihaz lisanslarını kullanabileceksiniz. Bunu yapmak için [bir kayıt profili oluşturduğunuzda veya düzenlediğinizde](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), Şirket Portalı’nı yüklemek için kullanmak istediğiniz VPP belirtecini belirtin. Belirtecinizin süresinin dolmadığından ve Şirket Portalı uygulaması için yeterli lisansınız olduğundan emin olun. Belirtecin süresi dolduğu veya yeterli lisans olmadığı durumlarda, Intune bunun yerine Uygulama Mağazası Şirket Portalı’na istek gönderir (bu, Apple kimliği ister).
+
+
+## <a name="week-of-august-14-2018"></a>14 Ağustos 2018 Haftası
+
+### <a name="macos-support-for-apple-device-enrollment-program----747651---"></a>Apple Aygıt Kayıt Programı için macOS desteği <!-- 747651 -->
+Intune, macOS cihazlarının Apple Aygıt Kayıt Programı'na (DEP) kaydedilmesini artık destekleniyor. Daha fazla bilgi için bkz. [macOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme](device-enrollment-program-enroll-macos.md).
+
 ## <a name="week-of-july-23-2018"></a>23 Temmuz 2018 haftası
 
 ### <a name="app-management"></a>Uygulama yönetimi
-
-####  <a name="windows-apps-file-extensions----1884873---"></a>Windows uygulamaları dosya uzantıları <!-- 1884873 -->
-Windows uygulamaları için dosya uzantıları artık *.msi*, *.appx*, *.appxbundle*, *.msix* ve *.msixbundle* olacak. Microsoft Intune’da, **Mobil uygulamalar** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Bölme ekle** bölmesi görüntülenir ve **Uygulama türünü** seçmenize olanak tanır. Uygulama paketi dosyası yüklemenizi sağlayan uygulama türünü seçin, **Uygulama paket dosyasını** seçin ve uygun uzantıya sahip bir yükleme dosyası girin.
 
 #### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>macOS için iş kolu (LOB) uygulamaları desteği <!-- 1895847 -->
 Microsoft Intune, macOS LOB uygulamalarının **Gerekli** veya **Kayıt sonrasında kullanılabilir** olarak dağıtılmasına olanak tanır. Son kullanıcılar, uygulamaları macOS için Şirket Portalı’ndan veya [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) **Kullanılabilir** olarak edinebilir.
@@ -1129,6 +1138,16 @@ Intune'da reddedilen uygulamaları belirtebilirsiniz. Uygulama reddedilirse, şi
 
 ## <a name="notices"></a>Bildirimler
 
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Eylem gerekiyor: Lütfen Intune'da Android cihazınızın kısıtlama veya uyumluluk ilkesi parolasını güncelleştirin
+Intune, Android 4.4 ve üstü cihazlarında sağlanan "cihaz varsayılanı" parola türünü kaldıracak. Android platformlarıyla cihaz varsayılanları arasındaki farklardan dolayı, bu ilke cihaz tarafından genellikle isteğe bağlı olarak kabul edilir. Bu ayarın Android'de ne zaman zorunlu tutulacağı konusundaki karışıklığı gidermek için, önümüzdeki sürümlerden birinde kullanıcı arabiriminden bu ayarı kaldıracağız. 
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+- Cihazlarda parolanın gerekli olmasını amaçlıyorsanız, "cihaz varsayılanı" kullanmak yerine Android platformu profillerinizi düzenleyip gerekli parola türünü açıkça ifade etmenizi öneririz.
+- Amacınız parola oluşturup oluşturmama kararını son kullanıcıya bırakmaksa, “Yapılandırılmadı” düğmesini seçin. Bu ayarı kullanıcı arabiriminden kaldırdığınızda, ayar hala ayarlanmış durumdaysa, profili bir sonraki düzenleyişinizde "Cihaz varsayılanı" dışında bir değer seçmeniz istenir.
+Bu değişikliğe hazırlanmak için ne yapmam gerek?
+Android'inizde ve Android kurumsal cihaz kısıtlaması ve uyumluluk ilkelerinde parola ayarlarını gözden geçirin. Bunlar, Uyumluluk ilkeleri için Sistem güvenliğinin altında ve Cihaz kısıtlamaları için Cihaz parolası veya İş profili ayarları altında listelenir. Ek bilgilerde, diğer ayrıntıların bağlantısı ve bu ayarların yapılandırıldığı ekranların görüntüleri vardır.
+####<a name="additional-information"></a>Ek bilgiler
+https://aka.ms/PasswordSettings 
+
 ### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Değişiklik Planı: Sonraki Kimlik Doğrulamasında Parolayı Değiştir, Intune’a eklendi<!-- 1873216 -->
 Eylül hizmet sürümünde Intune, macOS sürüm 10.13 ve üzerini çalıştıran cihazlar için Apple’ın yeni çıkan **Sonraki Kimlik Doğrulamasında Parolayı Değiştir** ayarını tümleştirmeyi planlıyor. Bu ayar olmadan MDM sağlayıcıları cihazın geçiş kodunun uyumlu olacak şekilde değiştirildiğini doğrulayamıyorlar. Intune’un yapılandırma ve uyumluluk ilkeleri, yalnızca cihazın parolası bir sonraki sefer değiştiğinde uyumlu olarak işaretleneceğini doğrular. Bu yeni Apple özelliği eklendiğinde, macOS kullanıcılarınız uyumlu olsa bile parolalarını güncelleştirmek için bir istek alır.
 
@@ -1171,22 +1190,6 @@ Ortamlarınızdaki TLS 1.0 ve 1.1 bağımlılıklarını önceden kaldırmanız�
 
 **Ek Bilgi**: [Şifreleme için Intune’un TLS 1.2’ye taşınması](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
-### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>Değişiklik Planı: Intune’da Bilgi Noktası Yapılandırması için Yeni Windows 10 Ayarı <!-- 1560072 -->
-Windows 10 1709 ve üzeri (RS3 ve üzeri) masaüstü cihazların Intune Azure portalında nerede ve nasıl yapılandırıldığını değiştiriyoruz.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek? 
-Kayıtlarımız, Windows 10 > Cihaz Kısıtlamaları > Bilgi Noktası (önizleme) ayarını kullandığınızı gösteriyor. Bu ayar, artık kullanılması önerilmediği için Mayıs ayında kullanıcı arabiriminde Windows 10 > Cihaz Kısıtlamaları > Bilgi Noktası (eski) olarak yeniden adlandırılacak. Ancak Intune’a gelecek Temmuz ayı güncelleştirmesine kadar işlevsel kalacak. Daha sonra arka uçta kullanımdan kaldırılacak ve artık çalışmayacak. Alternatif olarak Mayıs ayında yeni bir Cihaz yapılandırma profili yayımlayacağız: Windows 10 > Bilgi Noktası. Bu profil, Windows 10 RS4 ve üzeri sürümlerde Bilgi Noktalarını yapılandırmaya yönelik ayarlar barındıracak.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?  
-Intune Mayıs ayı sonuna doğru Mayıs hizmet güncelleştirmesini yayımladığında, Bilgi Noktası yapılandırmanızı Windows 10 RS3’ten Windows 10 RS4’e geçirebiliyor olduğunuzu test edip doğrulamanız için gerekli yönergeleri paylaşacağız. Bilgi Noktaları için yeni cihaz yapılandırma profilini kullanarak cihazlarınızı Bilgi Noktaları olarak yapılandırmak adına bu yönergeleri kullanabilirsiniz.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Bu değişiklik, hem tek başına Intune müşterilerini hem de karma (Configuration Manager ile Intune) müşterileri etkileyecek. Bu tümleştirme, bulut yönetim idaresini basitleştirmenize yardımcı olacak. Böylece Azure’da grupları, ilkeleri, uygulamaları ve tüm mobil cihazları yönetmek için gitmeniz gereken yalnızca bir dikey pencere olacak (Intune dikey penceresi).
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Lütfen Intune Uygulama Koruması yerine Intune’u sık kullanılan olarak etiketleyin ve Intune içerisindeki Mobil uygulama dikey penceresinde bulunan Uygulama koruma ilkesi iş akışını inceleyin. Kısa bir süreliğine yenilen yönlendirme yapacağız ancak daha sonra Uygulama Koruma dikey penceresini kaldıracağız. Intune’da tüm Uygulama Koruma ilkelerine zaten son verildiğini ve tüm koşullu erişim ilkelerinizi şu belgeleri izleyerek değiştirebileceğinizi unutmayın: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
-
-**Ek bilgiler**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Değişiklik Planı: Cordova eklentisi için Microsoft Intune Uygulama SDK’sı desteğinde değişiklik
 Intune, [Microsoft Intune Uygulama SDK’sı Cordova Eklentisi](app-sdk-cordova.md) için desteği 1 Mayıs 2018 tarihinde kesiyor. Cordova temelli uygulamalarınızı yönetilebilirlik ve kullanılabilirliğe hazırlamak için Intune Uygulama Sarmalama Aracı’nı kullanmanızı öneririz. Bu değişiklik gerçekleştiğinde, Cordova eklentisi için Microsoft Intune Uygulama SDK’sı artık bakıma alınmayacak veya güncelleştirme almayacak. Uygulama geliştiriciler bu eklentiyi kullanamayacaklar. Intune, Cordova ile oluşturulmuş uygulamaları desteklemeye devam etmeyi planlamaktadır. Ancak Cordova eklentisi için Microsoft Intune Uygulama SDK’sı ile oluşturulmuş uygulamalar Intune’da düşük işlevsellikle karşı karşıya kalabilir. Intune Uygulama Sarmalama Aracı ile sarmaladıktan sonra uygulamalar, normalde olduğu gibi son kullanıcılara dağıtılabilir. Google Play Store’a yayımlanmış Cordova temelli Android uygulamalar için:
