@@ -15,20 +15,20 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 5653e5fda04295041ebc549977007e7060b5508b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751726"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312689"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator ile iOS cihazlarını kaydetme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) kullanarak iOS cihazlarının kaydedilmesini destekler. Apple Configurator ile kaydetme işlemi, kurumsal kaydı ayarlamak için her iOS cihazını bir Mac bilgisayara USB ile bağlamanızı gerektirir. Apple Configurator ile Intune'a cihazları iki yolla kaydedebilirsiniz:
-- **Kurulum Yardımcısı kaydı** - Cihazı fabrika ayarlarına sıfırlar ve Kurulum Yardımcısı sırasında kayda hazırlar.
-- **Doğrudan kayıt** - Cihazı fabrika ayarlarına sıfırlamaz ve iOS ayarları aracılığıyla kaydeder. Bu yöntem, yalnızca **kullanıcı benzeşimi olmayan** cihazları destekler.
+- **Kurulum Yardımcısı kaydı** - Cihazı siler ve Kurulum Yardımcısı sırasında kayda hazırlar.
+- **Doğrudan kayıt** - Cihazı silmez ve iOS ayarları aracılığıyla kaydeder. Bu yöntem, yalnızca **kullanıcı benzeşimi olmayan** cihazları destekler.
 
 Apple Configurator kayıt yöntemleri [cihaz kaydı yöneticisi](device-enrollment-manager-enroll.md) ile birlikte kullanılamaz.
 
@@ -134,7 +134,7 @@ Cihazlar artık kurumsal kayıt için hazırdır. Cihazları kapatın ve kullan�
 Kullanıcıların, cihazlarını aldıktan sonra Kurulum Yardımcısı'nı tamamlamaları gerekir. Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve cihaz yönetmek için Şirket Portalı’nı yükleyip çalıştırabilir.
 
 ## <a name="direct-enrollment"></a>Doğrudan kayıt
-iOS cihazlarını Apple Configurator ile doğrudan kaydederken, cihazın seri numarasını almadan kayıt işlemini gerçekleştirebilirsiniz. Ayrıca Intune kayıt sırasında cihaz adını yakalamadan önce, cihazı tanımlama amacıyla adlandırabilirsiniz. Şirket Portalı uygulaması doğrudan kayıtlı cihazlar için desteklenmez. Bu yöntem, cihazda fabrika sıfırlaması yapmaz.
+iOS cihazlarını Apple Configurator ile doğrudan kaydederken, cihazın seri numarasını almadan kayıt işlemini gerçekleştirebilirsiniz. Ayrıca Intune kayıt sırasında cihaz adını yakalamadan önce, cihazı tanımlama amacıyla adlandırabilirsiniz. Şirket Portalı uygulaması doğrudan kayıtlı cihazlar için desteklenmez. Bu yöntem, cihazı silmez.
 
 İş kolu uygulamalarını yüklemek için kullanılan Şirket Portalı uygulaması da dahil olmak üzere kullanıcı benzeşimi gerektiren uygulamalar yüklenemez.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073844"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347806"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -33,6 +33,13 @@ Burada listelenmeyen bir hatayı bildirmek istiyorsanız, [bir destek isteği a�
 Intune için yeni bir özellik talep etmek istiyorsanız, [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) sitesinde bir rapor doldurabilirsiniz.
 
 ## <a name="migration"></a>Geçiş
+
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>Klasik Azure portalı uyumluluk ilkelerini dışarı aktararak bunları Intune Azure portalında yeniden oluşturma
+
+Azure klasik portalında oluşturulan ilkeler artık kullanım dışı olacak. Mevcut uyumluluk ilkelerini gözden geçirebilir ve silebilirsiniz ancak güncelleştiremezsiniz. Bazı mevcut uyumluluk ilkelerini geçerli Intune Azure portalına geçirmek istiyorsanız bunları virgülle ayrılmış bir dosyayla (.csv dosyası) dışarı aktarabilirsiniz. Daha sonra Intune Azure portalında bu ilkeleri yeniden oluşturmak için dosyadaki ayrıntıları kullanabilirsiniz.
+
+> [!IMPORTANT]
+> Azure klasik portalı kullanımdan kalktıktan sonra uyumluluk ilkelerinize erişme veya bunları görüntüleme şansınız olmayacak. Bu sebeple Azure klasik portalı kullanımdan kaldırılmadan önce ilkelerinizi dışarı aktarıp Azure portalında yeniden oluşturduğunuzdan emin olun.
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune eski PC istemcisi özellikleri yalnızca Silverlight konsolunda bulunur
 
@@ -52,7 +59,7 @@ Azure portalındaki Azure klasik portalından geçirilen ilkeler için durum bil
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Belirli VPP uygulamaları için birden çok uygulama yükleme istemi
 Son kullanıcı cihazlarında zaten yüklü olan bazı VPP uygulamaları için birden çok uygulama yükleme istemi görebilirsiniz. Bu sorun, Intune Azure portalına yüklediğiniz VPP belirteci için **Otomatik uygulama güncelleştirmeleri** seçeneğini **Açık** olarak ayarladıysanız ortaya çıkar.    
 
-Bu soruna geçici çözüm olarak VPP belirteci için **Otomatik uygulama güncelleştirmeleri** seçeneğini devre dışı bırakabilirsiniz. Bunu yapmak için Azure portalında Microsoft Intune’u açın. Intune’da **Mobil uygulamalar** > **iOS VPP belirteçleri**’ni seçin. Daha sonra etkilenen uygulamayı dağıtan VPP Belirtecini seçin, **Düzenle** > **Otomatik uygulama güncelleştirmeleri** > **Kapalı** > **Kaydet**’i seçin. Alternatif olarak, etkilenen uygulamanın VPP uygulaması olarak dağıtımını durdurabilirsiniz. Böylece istemler sona erer.    
+Bu soruna geçici çözüm olarak VPP belirteci için **Otomatik uygulama güncelleştirmeleri** seçeneğini devre dışı bırakabilirsiniz. Bunu yapmak için Azure portalında Microsoft Intune’u açın. Intune’da **İstemci uygulamaları** > **iOS VPP belirteçleri**’ni seçin. Daha sonra etkilenen uygulamayı dağıtan VPP Belirtecini seçin, **Düzenle** > **Otomatik uygulama güncelleştirmeleri** > **Kapalı** > **Kaydet**’i seçin. Alternatif olarak, etkilenen uygulamanın VPP uygulaması olarak dağıtımını durdurabilirsiniz. Böylece istemler sona erer.    
 
 Bu, geçerli sürümde bilinen bir sorundur. Bu sorunu çözmek yakında bir düzeltme sunacağız. Düzeltme uygulandığında, kullanıcılarınız artık birden çok uygulama yükleme istemi görmeyecektir.
 

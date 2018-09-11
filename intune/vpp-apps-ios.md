@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823078"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347527"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 
@@ -83,9 +83,9 @@ Yeni bir Intune kullanıcısı için bir cihaz ayarladığınızda, cihazı kull
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-1.  **Intune** bölmesinde **Kurulum** altında bulunan **Mobil uygulamalar** > **iOS VPP belirteçleri**’ni seçin.
-2.  VPP belirteçleri listesi bölmesinde **Oluştur**’u seçin.
-4. **VPP belirteci oluştur** bölmesinde aşağıdaki bilgileri girin:
+3.  **Intune** bölmesinde **Kurulum** altında bulunan **İstemci uygulamaları** > **iOS VPP belirteçleri**’ni seçin.
+4.  VPP belirteçleri listesi bölmesinde **Oluştur**’u seçin.
+5. **VPP belirteci oluştur** bölmesinde aşağıdaki bilgileri girin:
     - **VPP belirteç dosyası** - Henüz kaydolmadıysanız Volume Purchase Program for Business veya Education programına kaydolun. Kaydolduktan sonra hesabınıza yönelik Apple VPP belirtecini indirin ve burada seçin.
     - **Apple Kimliği** - Toplu satın alma programıyla ilişkilendirilmiş hesabın Apple kimliğini girin.
     - **Ülke/Bölge** - VPP ülke mağazasını seçin.  Intune, belirtilen VPP ülke mağazasındaki tüm yerel ayarlarla VPP uygulamaları eşitler.
@@ -93,9 +93,10 @@ Yeni bir Intune kullanıcısı için bir cihaz ayarladığınızda, cihazı kull
         > Ülkeyi değiştirmek, bu belirteç ile oluşturulan uygulamalar için Apple hizmetiyle bir sonraki eşitlemede uygulamanın meta verilerini ve mağaza URL’sini güncelleştirir. Uygulama, yeni ülke mağazasında yoksa güncelleştirilmez.
 
     - **VPP hesabı türü** - **İş** veya **Eğitim**’i seçin.
-    - **Otomatik uygulama güncelleştirmeleri** - **Açık** veya **Kapalı** olarak ayarlayın. Bu seçenek etkinleştirildiğinde Intune, cihaz bildirim yaptığında belirtilen belirteç için satın alınan tüm uygulamaları güncelleştirir.
-uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılayacak ve cihaz bildirim yaptığında bunları cihaza otomatik olarak gönderecektir.
-4. İşiniz bittiğinde **Oluştur**’u seçin.
+    - **Otomatik uygulama güncelleştirmeleri** - **Açık** veya **Kapalı** olarak ayarlayın. Bu etkinleştirildiğinde Intune, uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılar ve cihaz iade edildiğinde bunları cihaza otomatik olarak gönderir.
+        > [!NOTE]
+        > Otomatik uygulama güncelleştirmeleri, iOS sürüm 11.0 ve üzerinde cihaz ve kullanıcı lisanslı uygulamalar için kullanılabilir.
+6. İşiniz bittiğinde **Oluştur**’u seçin.
 
 Belirteç, belirteçler listesi bölmesinde görüntülenir.
 
@@ -103,7 +104,7 @@ Belirteç, belirteçler listesi bölmesinde görüntülenir.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
-1.  **Intune** bölmesinde **Yönet** altında bulunan **Mobil uygulamalar** > **Uygulamalar**’ı seçin.
+1.  **Intune** bölmesinde **Yönet** altında bulunan **İstemci uygulamaları** > **Uygulamalar**’ı seçin.
 2.  Uygulama listesi bölmesinde atamak istediğiniz uygulamayı ve daha sonra **Atamalar**’ı seçin.
 3.  ***Uygulama adı*** - **Atamalar** bölmesinde, **Grup ekle**’yi seçin, ardından **Grup ekle** bölmesinde bir **Atama türü** seçin ve uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
 5.  Seçtiğiniz her grup için aşağıdaki ayarları yapılandırın:
@@ -153,9 +154,17 @@ Belirli bir VPP belirteci için tüm VPP uygulamalarının lisansını iptal etm
 
 Apple Volume Purchase Program portalından yeni belirteç indirerek ve Intune'da mevcut belirteci güncelleştirerek Apple VPP belirtecini yenileyebilirsiniz.
 
-## <a name="further-information"></a>Daha fazla bilgi
+## <a name="deleting-an-ios-vpp-app"></a>Bir iOS VPP uygulamasını silme
+
+Şu anda bir iOS VPP uygulamasını Microsoft Intune’dan silmeniz mümkün değildir.
+
+## <a name="additional-information"></a>Ek bilgiler
 
 Uygun cihaza sahip bir kullanıcı, bir VPP uygulamasını cihaza ilk kez yüklemeye çalıştığında, kullanıcıdan Apple Volume Purchase Program’e katılması istenir. Uygulamanın yüklenmeye devam etmesi için önce katılmaları gerekir. Apple Volume Purchase programına katılma daveti, kullanıcının, iOS cihazında iTunes uygulamasını kullanabilmesini gerektirir. iTunes Store uygulamasını devre dışı bırakmak için bir ilke belirlediyseniz VPP uygulamaları için kullanıcı tabanlı lisanslama çalışmaz. Çözüm, ilkeyi kaldırarak iTunes uygulamasına izin vermek veya cihaz tabanlı lisanslama kullanmaktır.
+
+Apple, VPP belirteçleri oluşturmak ve yenilemek için doğrudan yardım sağlamaktadır. Daha fazla bilgi için Apple belgelerinin bir parçası olan [Volume Purchase Program (VPP) ile kullanıcılarınıza içerik dağıtma](https://go.microsoft.com/fwlink/?linkid=2014661) makalesine bakın. 
+
+Intune portalında **Harici bir MDM’ye atandı** yazıyorsa, VPP belirtecini Intune’da kullanmadan önce yönetici olarak bu belirteci üçüncü taraf MDM’den kaldırmanız gerekir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 

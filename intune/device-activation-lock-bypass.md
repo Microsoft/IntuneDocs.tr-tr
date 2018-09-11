@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
-ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
+ms.openlocfilehash: b37c210425fd5abf8fd0b0501966fef8196b451b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39356582"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312630"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Denetimli iOS cihazlarda Intune ile Etkinleştirme Kilidini atlama
 
@@ -78,9 +78,9 @@ Intune **Etkinleştirme Kilidini Atla** uzak cihaz eylemi, bir iOS cihazından E
 6. Cihazın “Donanım” bölümüne gidin ve **Etkinleştirme kilidi atlama kodu** değerini **Koşullu Erişim**’in altına kopyalayın.
 
     >[!NOTE]
-    >Atlama kodunu, cihazı fabrika ayarlarına sıfırlamadan önce kopyalayın. Kodu kopyalamadan önce cihaz ayarlarını sıfırlarsanız kod Azure’dan kaldırılır.
+    >Cihazı silmeden önce atlama kodunu kopyalayın. Kodu kopyalamadan önce cihaz ayarlarını sıfırlarsanız kod Azure’dan kaldırılır.
 
-7.  Cihazın **Genel bakış** dikey penceresine gidin ve **Fabrika ayarlarına sıfırla**’yı seçin.
+7.  Cihazın **Genel bakış** dikey penceresine gidin ve **Sil**’i seçin.
 8.  Cihaz sıfırlandıktan sonra *Apple kimliğiniz* ve *parolanız* istenir. *Kimlik* alanını boş bırakın ve ardından *parola* için **atlama kodunu** girin. Bu işlem, hesabı cihazdan kaldırır. 
 
 

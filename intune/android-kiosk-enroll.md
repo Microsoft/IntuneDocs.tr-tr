@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903152"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313470"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android kurumsal bilgi noktası cihazlarının kaydını ayarlama
 
@@ -112,7 +112,7 @@ NFC destekleyen Android 5.1 ve üzeri cihazlarda özel olarak biçimlendirilmiş
 
 Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. **aft#setup** kayıt yöntemi kullanıldığında Android 6.1 ve üstü sürümler QR kodu taramasından da yararlanabilir.
 
-1. Fabrika ayarlarına sıfırlanmış cihazınızı açın.
+1. Silinmiş cihazınızı açın.
 2. **Hoş Geldiniz** ekranında dili seçin.
 3. **Wi-Fi** ağınıza bağlanın ve **İLERİ**’yi seçin.
 4. Google hüküm ve koşullarını kabul edin ve ardından **İLERİ**’yi seçin.
@@ -129,7 +129,7 @@ Android 7 ve üzeri cihazları kaydetmek için kayıt profilinden QR kodunu tara
 > [!Note]
 > Tarayıcı yakınlaştırma, cihazların QR kodunu tarayamamasına neden olabilir. Tarayıcı yakınlaştırmasının artırılması sorunu çözer.
 
-1. Android cihazda QR okuması başlatmak için fabrika sıfırlaması sonrası gördüğünüz ilk ekrana birkaç kez dokunun.
+1. Android cihazda QR okuması başlatmak için silme sonrası gördüğünüz ilk ekrana birkaç kez dokunun.
 2. Android 7 ve 8 cihazlarda bir QR okuyucu yüklemeniz istenir. Android 9 ve üzeri cihazlarda bir QR okuyucu zaten yüklüdür.
 3. Kayıt profili QR kodunu taramak için QR okuyucuyu kullanın ve kaydı tamamlamak için ekrandaki istemleri takip edin.
 

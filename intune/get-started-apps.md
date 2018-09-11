@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 6b69934edc70e10ee01394cf5b6a4fed75334660
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869347"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330067"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Microsoft Intune'da uygulama eklemeye başlama
 
@@ -39,7 +39,7 @@ Intune kurumsal cihazlarınıza aşağıdaki uygulama türlerini eklemenize ve a
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Mobil Uygulamalar**'ı, sonra **Uygulamalar**'ı seçin.
+3. **İstemci uygulamaları**’nı, daha sonra **Uygulamalar**’ı seçin.
 4. **Ekle**’yi ve ardından **Uygulama türü** olarak **iOS**’u seçin.
 5. **Uygulama seçin**’i belirleyerek **App Store’da Ara** bölmesini görüntüleyin.
 6. Metin kutusunda cihaza atayacak bir uygulama arayın. Uygulamayı seçin ve **Seç**'e tıklayın.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335835"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313981"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profilleri nedir?
 
@@ -54,6 +54,7 @@ Bu özellik şunları destekler:
 - iOS 
 - Mac OS
 
+
 ## <a name="device-restrictions"></a>Cihaz kısıtlamaları
 [Cihaz kısıtlamaları](device-restrictions-configure.md) cihazlarda güvenlik, donanım, veri paylaşımı ve daha fazla ayarı denetler. Örneğin, iOS cihaz kullanıcılarının cihazın kamerasını kullanmasını engelleyen bir cihaz kısıtlama profili oluşturun. 
 
@@ -72,6 +73,13 @@ Microsoft Intune'a Windows Defender Gelişmiş Tehdit Koruması'nı (WDATP) ekle
 
 Bu özellik şunları destekler:
 - Windows 10 ve üzeri
+
+## <a name="identity-protection"></a>Kimlik koruması
+[Kimlik koruması](identity-protection-configure.md), Windows 10 ve Windows 10 Mobile cihazlarda İş İçin Windows Hello deneyimini denetler. İş İçin Windows Hello’yu kullanıcı ve cihazlar için kullanılabilir kılmak ve cihaz PIN’i ve hareketlerini belirtmek için bu ayarları yapılandırın.  
+
+Bu özellik şunları destekler:  
+- Windows 10 ve üzeri
+- Windows 10 Holographic for Business  
 
 ## <a name="kiosk"></a>Bilgi noktası
 

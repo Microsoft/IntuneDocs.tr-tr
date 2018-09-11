@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949552"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329392"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune’da Android cihazlar için bilgi noktası ayarları
 
@@ -55,7 +55,7 @@ Bir Android bilgi noktası cihazını çoklu uygulama olarak ayarlamak için şu
 
 1. [Google Play’den Yönetilen Ana Ekran sayfasına](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) gözatın ve diğer yönetilen Google Play uygulamaları için kullandığınız hesapla oturum açın.
 2. **Onayla**’yı seçin.
-3. [Intune portalı](https://portal.azure.com)’na gidin ve **Mobil uygulamalar** > **Yönetilen Google Play** > **Eşitle**’yi seçin.
+3. [Intune portalı](https://portal.azure.com)’na gidin ve **İstemci uygulamaları** > **Yönetilen Google Play** > **Eşitle**’yi seçin.
 4. **Uygulamalar** > **Yönetilen Ana Ekran** > **Atamalar** > **Grup ekle**’yi seçin.
 5. **Atama türü** altında **Gerekli**’yi seçin.
 6. Sırasıyla şunları seçin: **Dahil edilen cihazlar** > **Dahil edilecek cihazları seçin** > bilgi noktası cihazlarınız için oluşturduğunuz cihaz grubunu seçin > **Seçin** > **Tamam** > **Tamam** > **Kaydet**.
@@ -65,13 +65,13 @@ Bir Android bilgi noktası cihazını çoklu uygulama olarak ayarlamak için şu
 Bilgi noktası cihazlarında kullanılabilir olmasını istediğiniz her bir uygulama için şu adımları uygulayın:
 
 1. [Uygulamayı Intune’a ekleyin](store-apps-android.md).
-2. Sırasıyla şunları seçin: **Mobil uygulamalar** > **Uygulamalar** > uygulamayı seçin > **Atamalar** > **Grup ekle**.
+2. Sırasıyla şunları seçin: **İstemci uygulamaları** > **Uygulamalar** > uygulamayı seçin > **Atamalar** > **Grup ekle**.
 3. **Atama türü** altında **Gerekli**’yi seçin.
 4. Sırasıyla şunları seçin: **Dahil edilen cihazlar** > **Dahil edilecek cihazları seçin** > bilgi noktası cihazlarınız için oluşturduğunuz cihaz grubunu seçin > **Seçin** > **Tamam** > **Tamam** > **Kaydet**.
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>Bilgi noktası modunda kullanılabilecek web bağlantıları ekleme
 
-1. [Intune portalı](https://portal.azure.com)’na gidin ve **Mobil uygulamalar** > **Uygulamalar** > **Ekle**’yi seçin.
+1. [Intune portalı](https://portal.azure.com)’na gidin ve **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçin.
 2. **Uygulama türü** altında **Web bağlantısı**’nı seçin.
 3. **Yapılandır**’ı seçin ve gerekli bilgileri sağlayın. Logo eklemenize gerek yok çünkü logo, sitenin favicon.ico’sundan otomatik olarak alınacaktır.
 4. **Tamam** > **Ekle**’yi seçin.

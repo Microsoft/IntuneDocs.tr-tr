@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4774cdc54a526f25b006c0c3d1a745ab96005c3a
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 5b3fbd677eea9143bf5cb297253303330129ef25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33676639"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148587"
 ---
-# <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>Windows 10 için Şirket Portalı uygulamasından cihazınızı kilitleme
+# <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Windows 10 için Şirket Portalı uygulamasından cihazınızı kilitleme
 
-Windows 10 için Şirket Portalı uygulamasından kayıp veya çalınmış bir cihazı uzaktan kilitleyin. Cihazınızda destekleniyorsa, Şirket Portalı uygulaması cihazınızın ekranını cihaz nerede olursa olsun kilitleyecektir. Açmak için bir geçiş kodu gerekir.
+Windows 10 için Şirket Portalı uygulamasından kayıp veya çalınmış bir cihazı uzaktan kilitleyin. Cihazınızda destekleniyorsa, bu ayar cihazınızın ekranını cihaz nerede olursa olsun kilitleyecektir. Cihazının kilidinin açılıp tekrar kullanılabilmesi için birinin doğru geçiş kodunu girmesi gerekir.
 
 Uzaktan kilitleme, şunları çalıştıran cihazlarda desteklenir:
 
@@ -43,4 +43,4 @@ Uzaktan kilitleme, şunları çalıştıran cihazlarda desteklenir:
    ![Şirket Portalı uygulaması, Cihaz ayrıntıları sayfasının Uzaktan kilitleme onay istemi ekran görüntüsü.](./media/1804_remote_lock_Windows_CPapp_06.png)  
 4. Cihazınızı bulduğunuzda açmak için geçiş kodunuzu girin.  
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

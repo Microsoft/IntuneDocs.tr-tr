@@ -1,11 +1,11 @@
 ---
-title: Şirkete ait veya şirketin sağladığı macOS cihazınızı yönetime kaydetme | Microsoft Docs
+title: Şirketin sağladığı macOS cihazınızı yönetime kaydetme | Microsoft Docs
 description: Kuruluşunuz tarafından satın alınan ve verilen bir macOS cihazının Intune'a nasıl kaydedildiği açıklanır.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 272a82f7d3d62d117fa5506ccf446b3169ff514f
-ms.sourcegitcommit: bb56ada81e6d4950f130415918c4acc455bb52dd
+ms.openlocfilehash: a5808a0ac80390b76058827d2ca0870249b043b9
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016236"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241839"
 ---
-# <a name="get-your-company-owned-macos-device-managed"></a>Şirkete ait macOS cihazının yönetilmesini sağlama
+# <a name="enroll-your-organization-provided-macos-device-in-management"></a>Kuruluş tarafından sağlanan macOS cihazınızı yönetime kaydedin
 
-Yeni macOS cihazının Intune'da otomatik olarak yönetilmesini nasıl sağlayacağınızı öğrenin.
+Yeni macOS cihazınızı Intune yönetimine kaydetmeyi öğrenin.  
 
-İşe veya okula ait cihazlar genellikle size verilmeden önce yapılandırılır. Cihazınızı ilk kez açtığınızda ve oturum açtığınızda kuruluşunuz cihaza önceden yapılandırılmış ayarları gönderir. Cihazınızın kurulumu tamamlandıktan sonra, iş veya okul kaynaklarına erişim elde edersiniz. 
+İş veya okul tarafından sağlanan cihazlar genellikle elinize ulaşmadan önce yapılandırılmış olur. Cihazınızı ilk kez açtığınızda ve oturum açtığınızda kuruluşunuz cihaza bu önceden yapılandırılmış ayarları gönderir. Cihazınızın kurulumu tamamlandıktan sonra, iş veya okul kaynaklarınıza erişim elde edersiniz. 
 
 Yönetim kurulumuna başlamak için, cihazınızın güç düğmesini açın ve iş veya okul kimlik bilgilerinizle oturum açın. Bu makalenin kalan bölümünde Kurulum Yardımcısı'nda ilerlerken göreceğiniz adımlar ve ekranlar açıklanır.   
 
 ## <a name="what-is-apple-dep"></a>Apple DEP nedir?
-Şirkete ait bir cihazınız varsa, bu cihaz Apple Aygıt Kayıt Programı'ndan (DEP) satın alınmış olabilir. Bazı kuruluşlar Apple DEP aracılığıyla çok büyük sayılarda iOS veya macOS cihazı satın alır. Ardından kuruluşlar bu cihazları Intune gibi tercih ettikleri mobil cihaz yönetim sağlayıcısında yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi edinmek istiyorsanız, bkz. [macOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
+Kuruluşunuz cihazlarını *Apple Aygıt Kayıt Programı* (DEP) adı verilen bir hizmet yoluyla satın almış olabilir. Apple DEP, kuruluşların çok sayıda iOS veya macOS cihaz satın almasına imkan tanır. Ardından kuruluşlar bu cihazları Intune gibi tercih ettikleri bir mobil cihaz yönetim sağlayıcısında yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi edinmek istiyorsanız bkz. [macOS cihazları Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
 
 ## <a name="set-up-your-macos-device"></a>macOS cihazınızı ayarlama  
-macOS cihazınızı yönetime kaydetmek için aşağıdaki adımları tamamlayın. Şirkete ait bir cihaz yerine kendi cihazınızı kullanıyorsanız, [kişisel cihazlara ve kendi cihazını getir kapsamındaki cihazlara](enroll-your-device-in-intune-macos-cp.md) yönelik adımları izleyin.  
+macOS cihazınızı yönetime kaydetmek için aşağıdaki adımları tamamlayın. Kuruluş tarafından sağlanan bir cihaz yerine kendi cihazınızı kullanıyorsanız, [kişisel cihazlara ve kendi cihazını getir kapsamındaki cihazlara](enroll-your-device-in-intune-macos-cp.md) yönelik adımları izleyin.  
 
 1. macOS cihazınızın güç düğmesini açın. 
 2. **Dil** ayarınızı seçin ve **Devam**'a tıklayın.  
@@ -64,4 +64,4 @@ macOS cihazınızı yönetime kaydetmek için aşağıdaki adımları tamamlayı
 ## <a name="get-the-company-portal-app"></a>Şirket Portalı uygulamasını alma      
 Cihazınıza Intune Şirket Portalı uygulamasını almak için App Store'a gidin. Uygulama, cihazınızı yönetimde izlemenize, eşitlemenize, eklemenize ve kaldırmanıza, ayrıca uygulamalar yüklemenize olanak tanır.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

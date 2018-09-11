@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321847"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329656"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune’da Windows 10 ve üzeri cihazlar için Wi-Fi ayarları
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune’da Windows 10 ve üzeri cihazlar için Wi-Fi ayarları
 
 Wi-Fi ayarları, Windows 10 ve üzerini çalıştıran cihazlara uygulanan yapılandırma profilinde kullanılır. Seçenekleriniz şunlardır:
 
@@ -57,7 +58,7 @@ Wi-Fi ayarları, Windows 10 ve üzerini çalıştıran cihazlara uygulanan yapı
 - **Çoklu oturum açma (SSO)**: Kimlik bilgilerinin bilgisayar ve Wi-Fi ağı oturum açma işleminde paylaşıldığı çoklu oturum açmayı (SSO) yapılandırmanıza olanak tanır. Seçenekleriniz şunlardır:
   - **Devre dışı bırak**: SSO davranışını devre dışı bırakır. Kullanıcının ağda ayrıca kimlik doğrulaması yapması gerekir.
   - **Kullanıcı cihazda oturum açmadan önce etkinleştir**: Kullanıcı oturum açma işleminden hemen önce ağda kimlik doğrulaması yapmak için SSO kullanın.
-  - **Kullanıcı cihazda oturum açmadan sonra etkinleştir**: Kullanıcı oturum açma işlemini tamamlandıktan hemen sonra ağda kimlik doğrulaması yapmak için SSO kullanın.
+  - **Kullanıcı cihazda oturum açtıktan sonra etkinleştir**: Kullanıcı oturum açma işlemini tamamlandıktan hemen sonra ağda kimlik doğrulaması yapmak için SSO kullanın.
   - **Zaman aşımından önce kimlik doğrulanması gereken en uzun süre**: Ağda kimlik doğrulaması yapmadan önce beklenecek saniye sayısı üst sınırını (1-120 saniye arası) girin.
   - **Windows'un kullanıcıdan ek kimlik doğrulama kimlik bilgileri istemesine izin ver**: **Evet** seçildiğinde, kimlik doğrulama yöntemi gerektiriyorsa Windows sisteminin kullanıcıdan ek kimlik bilgileri istemesine izin verilir. Bu istemleri gizlemek için **Hayır**'ı seçin.
 
@@ -77,25 +78,36 @@ Wi-Fi ayarları, Windows 10 ve üzerini çalıştıran cihazlara uygulanan yapı
   - **EAP-TTLS**
   - **Korumalı PEAP** (PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>EAP türünü seçtiğinizde diğer seçenekler
+    **EAP-TLS, EAP-TTLS ve PEAP ek ayarları**:
+    
+    > [!NOTE]
+    > Şu anda, EAP türünü kullanırken yalnızca SCEP sertifika profilleri destekleniyor. PKCS sertifika profilleri desteklenmiyor. Kullanıcıdan her sertifika girişi istendiğinde, bir SCEP sertifikası seçtiğinizden emin olun.
 
-> [!NOTE]
-> Şu anda, EAP türünü kullanırken yalnızca SCEP sertifika profilleri destekleniyor. PKCS sertifika profilleri desteklenmiyor. Kullanıcıdan her sertifika girişi istendiğinde, bir SCEP sertifikası seçtiğinizden emin olun.
+      - **Sunucu Güveni**  
 
-#### <a name="server-trust"></a>Sunucu Güveni
+        **Sertifika sunucu adları**: **EAP-TLS**, **EAP-TTLS** veya **PEAP** EAP türleri ile kullanın. Güvenilen sertifika yetkiliniz (CA) tarafından verilen sertifikalarda yaygın olarak kullanılan bir veya birden çok ad girin. Bu bilgiyi girerseniz, bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven iletişim kutusunu atlayabilirsiniz.  
 
-|Ayar adı|Daha fazla bilgi|Şu durumlarda kullanın|
-|--------------|-------------|----------|
-|**Sertifika sunucu adları**|Güvenilen sertifika yetkiliniz (CA) tarafından verilen sertifikalarda yaygın olarak kullanılan bir veya birden çok ad girin. Bu bilgiyi girerseniz, bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven iletişim kutusunu atlayabilirsiniz.|EAP türü **EAP-TLS**, **EAP-TTLS** veya **PEAP**’dir.|
-|**Sunucu doğrulaması için kök sertifika**|Bağlantı kimliğini doğrulamak için kullanılan, güvenilen kök sertifika profilini seçin. |EAP türü **EAP-TLS**, **EAP-TTLS** veya **PEAP**’dir.|
-|**Kimlik gizliliği (dış kimlik)**|Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.|EAP türü **PEAP**’dir.|
+        **Sertifika doğrulaması için kök sertifika**: **EAP-TLS**, **EAP-TTLS** veya **PEAP** EAP türleri ile kullanın. Bağlantı kimliğini doğrulamak için kullanılan, güvenilen kök sertifika profilini seçin.  
 
-#### <a name="client-authentication"></a>İstemci Kimlik Doğrulaması
+        **Kimlik gizliliği (dış kimlik)**: **PEAP** EAP türü ile kullanın. Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.  
 
-| Ayar adı | Daha fazla bilgi | Şu durumlarda kullanın |
-|---|---|---|
-| **İstemci kimlik doğrulaması için istemci sertifikası (Kimlik sertifikası)** |  Bağlantı kimliğini doğrulamak için kullanılan SCEP sertifika profilini seçin. | EAP türü **EAP-TLS**’dir. |
-| **Kimlik doğrulama yöntemi** | Bağlantı için kimlik doğrulama yöntemini seçin:<br><br>- **Sertifikalar**: Sunucuya gösterilen kimlik sertifikası olan SCEP istemci sertifikasını seçin.<br><br>- **Kullanıcı Adı ve Parola**: Kimlik doğrulama için bir **EAP dışı yöntem (iç kimlik)** girin. Seçenekleriniz şunlardır:<br><br>- **Şifrelenmemiş parola (PAP)**<br>- **Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**<br><br>- **Kimlik gizliliği (dış kimlik)**: EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir. | EAP türü **EAP-TTLS** olur |
+      - **İstemci Kimlik Doğrulaması**
+
+        **İstemci kimlik doğrulaması için istemci sertifikası (Kimlik sertifikası)**: **EAP-TLS** EAP türü ile kullanın. Bağlantı kimliğini doğrulamak için kullanılan sertifika profilini seçin.
+
+        **Kimlik doğrulama yöntemi**: **EAP-TTLS** EAP türü ile kullanın. Bağlantı için kimlik doğrulama yöntemini seçin:  
+
+          - **Sertifikalar**: Sunucuya gösterilen kimlik sertifikası olan istemci sertifikasını seçin.
+          - **Kullanıcı Adı ve Parola**: Kimlik doğrulaması için bir **EAP dışı yöntem (iç kimlik)** girin. Seçenekleriniz şunlardır:
+
+            - **Şifrelenmemiş parola (PAP)**
+            - **Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**
+
+        **Kimlik gizliliği (dış kimlik)**: **EAP-TTLS** EAP türü ile kullanın. Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
+
+- **Wi-Fi profilinin Federal Bilgi İşleme Standardı (FIPS) ile uyumlu olmasını zorla** FIPS 140-2 standardıyla doğrulama yaparken bunu **Evet** olarak ayarlayın. Bu standart, şifreleme tabanlı güvenlik sistemleri kullanan tüm ABD federal resmi kurumlarında dijital olarak saklanan, hassas fakat gizli olmayan bilgileri korumak için gereklidir. **Hayır**’ı seçerseniz FIPS ile uyumlu olamazsınız.
 
 ## <a name="use-an-imported-settings-file"></a>İçeri aktarılan ayarlar dosyasını kullanma
 

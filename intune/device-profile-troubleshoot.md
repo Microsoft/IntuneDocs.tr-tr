@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026882"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312958"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da cihaz profilleri ile ilgili sık karşılaşılan sorunlar ve çözüm yolları
 
@@ -117,7 +117,7 @@ Profili sildiğinizde veya bir cihazı profile sahip olan gruptan kaldırdığı
         - Wi-Fi İnternet paylaşımına izin ver
         - Ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmaya izin ver
         - Wi-Fi etkin noktası bildirimine izin ver
-        - Fabrika sıfırlamasına izin ver
+        - Silmeye izin ver
         - Bluetooth'a izin ver
         - NFC'ye izin ver
         - Wi-Fi'a izin ver

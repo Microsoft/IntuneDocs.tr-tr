@@ -1,11 +1,11 @@
 ---
-title: Android’de Mobile Threat Defense uygulamaları tarafından bulunan tehditleri çözme | Microsoft Docs
-description: Android için Mobile Threat Defense uygulamalarını kullanarak tehditleri çözmeyi öğrenin.
+title: Android cihazlar için Mobil Tehdit Savunması tarafından bulunan bir güvenlik veya uygulama tehdidini çözme
+description: Android cihazlar için Mobil Tehdit Savunması uygulamalarını kullanarak tehditleri çözmeyi öğrenin.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,32 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 9636ff126618db62e682607afdb9e45b03a5cf91
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 68808e4a9e29ec8d965a733dae79a9b32f3c5ecd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753218"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149673"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Bir Mobile Threat Defense uygulaması tarafından bulunan tehditleri çözme
 
-Mobile Threat Defense, Android cihazınızda potansiyel bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için sorunu düzeltmeniz gerekiyor. Şirketinizin Mobile Threat Defense’i nasıl ayarladığına bağlı olarak, bu tür sorunları gidermek için aşağıdaki uygulamalardan birini kullanırsınız.
+Mobil Tehdit Savunması uygulaması, cihazınızdaki olası tehditleri algılar ve sizi bunlara karşı uyarır. Bazı kuruluşlar, Mobil Tehdit Savunması hizmetini Intune gibi bir MDM sağlayıcısı ile tümleştirir. Tümleştirildiğinde Mobil Tehdit Savunması hizmeti tehditleri (şüpheli uygulamalar, ağlar ve işletim sistemi güvenlik açıkları gibi) raporlar ve Şirket Portalı uygulamasında size bildirim gönderir. Daha sonra Mobil Tehdit Savunması uygulamasında tehdit ayrıntılarını ve düzeltme adımlarını görüntüleyebilirsiniz.
+
+Tehditler, Şirket Portalı uygulamasında çözümlenmemiş ve uyumsuz sorunlar olarak görünür. Tehditler yeterli risk seviyesine sahipse şirketiniz şirket kaynaklarına erişiminizi iptal eder. Bu tehditler cihazınızda bulunduğu sürece şunları yapamayabilirsiniz:  
+
+* Şirket e-postasına bağlanma
+* Şirket Wi-Fi ağına bağlanma
+* SharePoint Online’a bağlanma
+* OneDrive ile şirket dosyalarını eşitleme
+* Şirket uygulamalarına erişme
+
+Kuruluşunuzun ayarlamış olabileceği Android’e özgü Mobil Tehdit Savunması hizmetleri aşağıda verilmiştir. Bir uygulamanın davranışı hakkında daha fazla bilgi edinmek için uygulamayı seçin.  
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 * [Symantec Endpoint Protection Mobile](you-need-to-resolve-a-threat-found-by-skycure-android.md)
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
-* [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
+* [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)  
 
-Bu sorunu çözmek için Mobile Threat Defense uygulamasını açın ve uygulamada gösterilen yönergeleri izleyin.
+  Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. İletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın  
 
-**Mobile Threat Defense tarafından tehdit olarak algılanan bir uygulama örneği**
-
-Mobile Threat Defense’in tehdit olarak algıladığı bir uygulama yüklediyseniz tehdit içeren uygulamanın ne olduğunu bildiren bir ekran görürsünüz. Buna benzer bir şey görürseniz, ekranın en üstünde gösterilen uygulama adına dokunun ve tehdidi kaldırmak için yönergeleri izleyin.
-
-Uygulamayı kaldırdıktan sonra e-postanıza veya diğer şirket ya da okul verilerinize hemen erişim elde edersiniz. Uygulamayı kaldırma isteğini yoksayarsanız, uygulamayı kaldırana kadar şirket e-postanıza ve verilerinize erişiminizi kaybedersiniz.
-
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
 

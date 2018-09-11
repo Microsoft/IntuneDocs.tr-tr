@@ -1,11 +1,11 @@
 ---
 title: iOS’ta SandBlast Mobile Protect tarafından bulunan tehditleri çözme | Microsoft Docs
-description: iOS’ta Mobile Protect tarafından bulunan bir tehdidi nasıl düzelteceğinizi öğrenin.
+description: iOS için SandBlast Mobile Protect tarafından bulunan bir tehdidi nasıl düzelteceğinizi öğrenin.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/03/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a34e73d3209453f07523d1c841e8ba578c85aa3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755976"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148040"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>SandBlast Mobile Protect tarafından bulunan bir tehdidi çözmeniz gerekiyor
+# <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>SandBlast Mobile Protect tarafından bulunan bir tehdidi çözme
 
-SandBlast Mobile Protect, cihazınızda olası bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için bu sorunu düzeltmeniz gerekiyor. Gördüğünüz bu ileti, SandBlast Mobile Protect’in cihazınızda bulduğu soruna bağlıdır.
+SandBlast Mobile Protect, iOS cihazlarınızda olası tehditleri belirleyen ve değerlendiren bir Mobil Tehdit Savunması hizmetidir. Uygulama daha sonra tehditleri raporlar, böylece bunları Şirket Portalı uygulamasında görüntüleyebilirsiniz. Tehditler, uygulamada çözümlenmemiş ve uyumsuz sorunlar olarak görünür. Bu tehditler var olduğu sürece şunları yapamayabilirsiniz:   
 
-Bu sorunu düzeltmek için SandBlast Mobile Protect uygulamasını açın ve orada gösterilen yönergeleri izleyin.
+* Şirket e-postasına bağlanma
+* Şirket Wi-Fi ağına bağlanma
+* SharePoint Online’a bağlanma
+* OneDrive ile şirket dosyalarını eşitleme
+* Şirket uygulamalarına erişme
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Kayıtlı cihazınızın e-postaya veya dosyalara erişmesi engellenirse göreceğiniz ileti
+Bu makale, Sandblast Mobile Protect tehdit uyarılarını anlamanıza yardımcı olur ve bunları nasıl çözümleyeceğinizi açıklar.  
 
-Kayıtlı cihazınızda bir virüs veya başka bir güvenlik tehdidi varsa ve şirket e-postanıza veya dosyalarınıza erişmeyi denerseniz, SandBlast Mobile Protect’ten gelen bir ileti sizden harekete geçmenizi ister.
+## <a name="troubleshoot-virus-or-security-threat"></a>Virüs veya güvenlik tehdidini giderme  
+Bir virüs veya güvenlik tehdidi algılanırsa SandBlast Mobile Protect uygulaması kuruluşunuzun erişim ilkelerine göre hareket eder. Erişim ilkeleri; şirket ağına, uygulamalarına ve e-postasına erişmenizi önleyebilir.  
 
-Sorunu düzeltmek için yönergeler göreceğiniz [Şirket Portalı web sitesine](http://portal.manage.microsoft.com) gitmek için **cihaz yönetim portalı** bağlantısına dokunun.
+SandBlast Mobile Protect, kaybettiğiniz erişimi geri kazanmanız için bazı eylemler gerçekleştirmenizi ister. Tehdidi seçin ve uygulamadaki yönergeleri izleyerek bunu çözün.  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>SandBlast Mobile Protect’in tehdit olarak gördüğü bir uygulama örneği
+## <a name="troubleshoot-an-app-threat"></a>Bir uygulama tehdidini giderme  
 
-SandBlast Mobile Protect’in tehdit olarak gördüğü bir uygulama yüklediyseniz, SandBlast Mobile Protect sizi güvenilmeyen bir uygulama yüklendiği konusunda uyarır.
+Cihazınız için tehdit olarak görülen bir uygulama yüklerseniz Sandblast Mobile Protect uygulamasından bir bildirim alırsınız. Etkilenen uygulama cihazınızda kalırsa şirket kaynaklarına erişemezsiniz.  
 
-Böyle bir durumda, şirket e-postanıza ve verilerinize derhal erişim elde etmek için uygulamayı kaldırın. Uygulamayı kaldırmazsanız, kaldırana kadar e-posta ve verilerinize erişimi kaybedersiniz.
+Bunu çözmek için Sandblast Mobile Protect’teki tehditler listesinden uygulamayı seçin. Daha sonra yönergeleri izleyerek uygulamayı kaldırın.  
 
-Bu bilgiler yardımcı olmadı mı? BT yöneticinize başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](http://portal.manage.microsoft.com) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. İletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın

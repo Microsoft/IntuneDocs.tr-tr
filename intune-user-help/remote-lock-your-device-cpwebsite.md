@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,53 +17,51 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: feba62cac464af75a0f0d249022edb6bd5d031f3
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 2f8a65d05ecffcf87d7a84ab23ad215256286dd0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225383"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150092"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı uzaktan kilitleme
 
-Kazalar olabilir ve bazen cihazlar kaybolabilir. Cihazınız kaybolur veya çalınırsa ilk endişeniz, cihazınız her neredeyse içindeki bilgilere herkesin erişebilecek olmasıdır.
+Kayıp veya çalınmış bir cihazı Şirket Portalı web sitesini kullanarak uzaktan kilitleyin. Cihazınızda destekleniyorsa, bu ayar cihazınızın ekranını cihaz nerede olursa olsun kilitleyecektir. Cihazının kilidinin açılıp tekrar kullanılabilmesi için birinin doğru geçiş kodunu girmesi gerekir.   
 
-[!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
-
-Cihazınızın güvende olması için [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog) Uzaktan Kilitleme seçeneğini kullanarak cihazınızı kilitleyebilirsiniz. Uzaktan Kilitleme şunlar için çalışır:
+Uzaktan kilitleme ayarı şu platformlarda çalışır:
 
 * Android
 * iOS
 * Mac OS
 * Windows 10
 * Windows 10 Mobile (cihazın zaten bir geçiş kodu kümesi varsa)
-* Windows Phone 8.1 (cihazın zaten bir geçiş kodu kümesi varsa)
+* Windows Phone 8.1 (cihazın zaten bir geçiş kodu kümesi varsa)  
 
-## <a name="to-use-remote-lock-to-lock-your-device"></a>Cihazınızı kilitlemek üzere Uzaktan Kilitleme’yi kullanmak için
+1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) __Menü__ düğmesi > __Cihazlar__’ı seçin.  
 
-1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com#HelpDeskDialog) __menü__ düğmesine dokunun ve daha sonra __Cihazlarım__’ı seçin.
+2. Kilitlemek istediğiniz cihazı seçin.  
 
-2. __Cihazlarım__ sayfasında, kilitlemek istediğiniz cihazın adını seçin.
+    ![Tanımlanmamış, genel olarak adlandırılmış cihazları gösteren 2 kutucuğun bulunduğu Cihazlar sayfasının ekran görüntüsü. Cihazların hemen altında gri bir başlık yer alır ve kullanıcılardan kullandıkları cihazı tanımlamalarını veya yeni bir tane eklemelerini ister.](./media/rename-reset-device-step2-1808.png) 
 
-   ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
+3. **Uzaktan kilitleme**’ye dokunun. Kilitleme seçeneği sayfanın üst kısmında görünmüyorsa **Diğer (...)** > **Uzaktan kilitle**’yi seçin.  
 
-3. Cihaz, bir açılan pencere içinde açılır. **Uzaktan Kilitleme** düğmesine dokunun.
+   ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik cihaz ayrıntıları sayfası; üst kısmında Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitle bağlantıları ile. ](./media/rename-reset-device-1808.png) 
 
-   ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitleme dahil tüm seçenekler. ](./media/iwp-screen-with-all-options.png)
+    ![Diğer simgesinin yakınlaştırılmış ve kırmızı okla vurgulanmış görünümü.](./media/rename-reset-device-step3-more-1808.png)    
 
-4. Cihazınızı kilitlemek üzere olduğunuzu belirten bir bildirim görünecektir. **Uzaktan Kilitleme**’ye dokunduktan sonra Şirket Portalı web sitesi cihazınızı kilitlemeyi deneyecektir.
+4. Cihazınızı kilitlemek üzere olduğunuza dair sizi uyaran bir ileti görüntülenir. Onaylamak için **Uzaktan kilitle**’ye dokunun.
 
-   **Uzaktan Kilitleme**’yi seçtiğinizde, "Uzaktan kilitleme bekliyor" iletisi görünür.  Uzaktan Kilitleme başarılı olduğunda, durum "Uzaktan kilitleme için başarılı." olarak değişir.
+Onaydan sonra Şirket Portalı, cihazınızı kilitlemeye çalışır. Bu süre boyunca ekranda “Uzaktan kilitleme bekliyor” iletisi görüntülenir. Cihazınız kilitlendiğinde bu ileti “Uzaktan kilitleme başarılı.” olarak değişir.  
 
-   Uzaktan Kilitleme durumu üç yerde görüntülenir:
+Uzaktan Kilitleme durumu üç yerde görüntülenir:
 
    * Web sitesinin bildirimler alanı.
    * Cihaz için **Ayrıntılar** sayfası.
-   * Sayfanın **Cihazlarım** bölümünde cihaz adını gösteren kutucuk.
+   * Sayfanın **Cihazlar** bölümünde cihaz adını gösteren kutucuk.  
 
 > [!Note]
-> "Uzaktan Kilitleme başarısız oldu" bildirimini görürseniz, birkaç dakika bekleyin ve cihazınızı kilitlemeyi yeniden deneyin. Yeniden denemek üzere başlattığınızda, durum tekrar "Uzaktan kilitleme bekliyor." olarak değişir. Yeniden deneme işe yaramazsa, şirketinizin destek birimiyle iletişime geçmeniz gerekir.
+> Uzaktan kilitlemenin başarısız olduğu konusunda bir bildirim görürseniz birkaç dakika bekleyin. Daha sonra cihazınızı kilitlemeyi tekrar deneyin. Durum tekrar “Uzaktan kilitleme bekliyor.” olarak değişir. Yeniden deneme de işe yaramazsa yardım için şirketinizin destek birimine başvurun.
 
-Cihazınızı bulursanız ve Uzaktan Kilitleme kullandıktan sonra onun kilidini açmak istiyorsanız, tek yapmanız gereken geçiş kodunu girmektir.
+Cihazınızı bulursanız ve Uzaktan Kilitleme kullandıktan sonra onun kilidini açmak istiyorsanız, tek yapmanız gereken geçiş kodunu girmektir.  
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

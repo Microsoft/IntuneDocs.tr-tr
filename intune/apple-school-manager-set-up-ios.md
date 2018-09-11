@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 2d099d049892d71c36e4b01fb1a8af6f7ad25df1
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751811"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313418"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager ile iOS cihaz kaydını etkinleştirme
 
@@ -113,7 +113,7 @@ Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profil
      > [!NOTE]
      > Denetim olmadan kaydedilen bir cihaz, yalnızca Apple Configurator kullanılarak sıfırlanıp denetimli yapılabilir. Cihazı bu şekilde sıfırlamak için bir iOS cihazı USB kablosu ile bir Mac’e bağlamak gerekir. Bu konu hakkında daha fazla bilgi için [Apple Configurator belgelerine](http://help.apple.com/configurator/mac/2.3) bakın.
 
-7. Bu profili kullanan cihazlarda kilitli kayıt isteyip istemediğinizi seçin. **Kilitli kayıt**, yönetim profilinin **Ayarlar** menüsünden kaldırılmasını sağlayan iOS ayarlarını devre dışı bırakır. Cihazı kaydettikten sonra, cihaza fabrika sıfırlaması yapmadan bu ayarı değiştiremezsiniz. Bu cihazlarda **Denetimli** Yönetim Modu *Evet* olarak ayarlı olmalıdır. 
+7. Bu profili kullanan cihazlarda kilitli kayıt isteyip istemediğinizi seçin. **Kilitli kayıt**, yönetim profilinin **Ayarlar** menüsünden kaldırılmasını sağlayan iOS ayarlarını devre dışı bırakır. Cihazı kaydettikten sonra cihazı silmeden bu ayarı değiştiremezsiniz. Bu cihazlarda **Denetimli** Yönetim Modu *Evet* olarak ayarlı olmalıdır. 
 
 8. Kayıtlı iPad cihazlarında birden çok kullanıcının yönetilen Apple kimliği kullanarak oturum açmasına izin vermek istiyorsanız **Paylaşılan iPad** altında **Evet**’i seçin (Bu seçenek, **Kullanıcı Benzeşimi olmadan kaydet**ve **Denetimli** modunun **Evet**’e ayarlanmasını gerektirir.) Yönetilen Apple kimlikleri Apple School Manager portalında oluşturulur. [Paylaşılan iPad](education-settings-configure-ios-shared.md) ve [Apple'ın paylaşılan iPad gereksinimleri](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) hakkında daha fazla bilgi edinin.
 
@@ -179,4 +179,4 @@ Intune tarafından yönetilen Apple School Manager cihazları kaydedilmeden önc
 
 ## <a name="distribute-devices-to-users"></a>Cihazları kullanıcılara dağıtma
 
-Apple ve Intune arasında eşitlemeyi ve yönetimi etkinleştirdiniz ve Apple School  cihazlarınızın kaydolmasına izin vermek için bir profil atadınız. Artık cihazları kullanıcılara dağıtabilirsiniz. Bir iOS Apple School Manager cihazı açıldığında, Intune yönetimine kaydedilir. Cihaz etkinleştirilmişse ve kullanımdaysa, cihazda fabrika sıfırlaması yapılmadıkça profil uygulanamaz.
+Apple ve Intune arasında eşitlemeyi ve yönetimi etkinleştirdiniz ve Apple School  cihazlarınızın kaydolmasına izin vermek için bir profil atadınız. Artık cihazları kullanıcılara dağıtabilirsiniz. Bir iOS Apple School Manager cihazı açıldığında, Intune yönetimine kaydedilir. Cihaz etkinleştirilmişse ve kullanımdaysa, cihaz silinmedikçe profil uygulanamaz.

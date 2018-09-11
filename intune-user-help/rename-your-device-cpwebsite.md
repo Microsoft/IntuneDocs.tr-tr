@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,28 +17,29 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 4afa12cffbf199d271df912bfcfc1aedb4d8b23c
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321382"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150497"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı yeniden adlandırma
 
-Şirket Portalı web sitesinden kaydettiğiniz, yönetilen cihazınızı yeniden adlandırmayı öğrenin. Genel veya varsayılan model adına sahip bir cihazı, hemen belirlemenize yardımcı olabilecek şekilde yeniden adlandırın.  
+Şirket Portalı web sitesinden kaydettiğiniz yönetilen cihazınızı yeniden adlandırın. Cihazın genel veya varsayılan model adını kendi ayırt edebileceğiniz bir adla değiştirin.
 
-1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com/HelpDeskDialog) __Menü__ düğmesi > __Cihazlarım__’ı seçin.
+1. [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) açın ve __Menü__ düğmesi > __Cihazlar__’ı seçin.  
 
 2. Yeniden adlandırmak istediğiniz cihazı seçin.
 
-![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)  
+    ![Tanımlanmamış, genel olarak adlandırılmış cihazları gösteren 2 kutucuğun bulunduğu Cihazlar sayfasının ekran görüntüsü. Cihazların hemen altında gri bir başlık yer alır ve kullanıcılardan kullandıkları cihazı tanımlamalarını veya yeni bir tane eklemelerini ister.](./media/rename-reset-device-step2-1808.png)   
 
-3. **Yeniden Adlandır**'ı seçin.  
+3. **Yeniden Adlandır**'ı seçin. Yeniden adlandırma seçeneği sayfanın üst kısmında görünmüyorsa **Diğer (...)** > **Yeniden adlandır**’ı seçin.   
 
-   ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitleme dahil tüm seçenekler. ](./media/iwp-screen-with-all-options.png)  
-    
+   ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik cihaz ayrıntıları sayfası; üst kısmında Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitle bağlantıları ile. ](./media/rename-reset-device-1808.png)   
 
-4. Cihazınızın adının göründüğü kutuya cihazınız için yeni bir ad girin. Sonra **Yeniden Adlandır** düğmesine dokunun. Cihazınız artık yeni adıyla görünür.
+    ![Diğer simgesinin yakınlaştırılmış ve kırmızı okla vurgulanmış görünümü.](./media/rename-reset-device-step3-more-1808.png)  
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com/HelpDeskDialog) bakın.
+4. Cihazınızın adının göründüğü kutuya cihazınız için yeni bir ad girin. Sonra **Yeniden Adlandır** düğmesine dokunun. Cihazınız artık yeni adıyla görünür.  
+
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

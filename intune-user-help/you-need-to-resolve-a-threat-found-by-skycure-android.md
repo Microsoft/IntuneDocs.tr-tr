@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,36 +15,41 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: caac4b62c141145ac976d1515e6fdc92da90e962
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753099"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149816"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile tarafından bulunan bir tehdidi çözme
 
-Symantec Endpoint Protection Mobile, cihazınızda olası bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için bu sorunu düzeltmeniz gerekiyor. Gördüğünüz ileti şuna benzeyebilir:
+Symantec Endpoint Protection (SEP) Mobile, Android cihazlarınızda olası tehditleri belirleyen bir Mobil Tehdit Savunması hizmetidir. Bu tehditler Şirket Portalı uygulamasına raporlanır ve çözümlenmemiş, uyumsuz sorunlar olarak görünür. Cihazınız uyumsuz olarak belirlenirse şunları yapamayabilirsiniz:
 
-![Skycure cihazınızda bir tehdit buldu](./media/lookout-threat-found-android.png)
+* Şirket e-postasına bağlanma
+* Şirket Wi-Fi ağına bağlanma
+* SharePoint Online’a bağlanma
+* OneDrive ile şirket dosyalarını eşitleme
+* Şirket uygulamalarına erişme
 
-Bu sorunu düzeltmek için Symantec Endpoint Protection Mobile uygulamasını açın ve uygulamada gösterilen yönergeleri izleyin.
+Bu makale, SEP Mobile tehdit uyarılarını anlamanıza yardımcı olur ve bunları nasıl çözümleyeceğinizi açıklar. 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Kayıtlı cihazınızın e-postaya veya dosyalara erişmesi engellenirse göreceğiniz ileti
+## <a name="resolve-virus-or-security-threat"></a>Virüs veya güvenlik tehdidini çözme  
 
-Kayıtlı cihazınızda bir virüs veya başka bir güvenlik tehdidi varsa ve şirket e-postanıza veya dosyalarınıza erişmeyi denerseniz, aşağıdaki gibi bir ileti görebilirsiniz:
+1. Şirket e-postası veya web sitelerine erişmeye çalıştığınızda, aşağıdaki ekran görüntüsünde gösterildiği gibi bir ileti alırsınız. **Cihaz yönetim portalına** dokunarak [Şirket Portalı web sitesini](https://portal.manage.microsoft.com/devices) açın.
 
-![Şirket Portalı web sitesine bağlantı ile Skycure hata iletisi](./media/skycure-list-of-potential-issues-android.png)
+    ![Şirket portalı web sitesi ve mavi Tamam düğmesi ile Lookout for Work hata iletisi örnek ekran görüntüsü.](./media/mtd-go-to-device-management-portal-android.png)  
 
-Sorunu düzeltmek için yönergeler göreceğiniz [Şirket Portalı web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) gitmek için **cihaz yönetim portalına** dokunun.
+2. Cihazınızı seçin.  
+3. Cihazınızın altında görüntülenen uyarıyı okuyun. Bu uyarı, virüs veya güvenlik tehdidini düzeltmeniz için SEP Mobile’ı açmanızı söyleyecektir.     
 
-## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile’ın tehdit olarak gördüğü bir uygulama örneği
+    ![Şirket Portalı cihaz sayfasının SEP Mobile uyarısını gösteren örnek ekran görüntüsü.](./media/CP-lookout-virus-banner-1808.png)
 
-Symantec Endpoint Protection Mobile’ın tehdit olarak gördüğü bir uygulama yüklediyseniz aşağıdakine benzer bir ekran görürsünüz:
+## <a name="resolve-an-app-threat"></a>Bir uygulama tehdidini çözme  
 
-![Skycure virüs uyarısı ileti örneği](./media/skycure-virus-alert-android.png)
+Cihazınız için tehdit olarak görülen bir uygulama yüklerseniz SEP Mobile uygulamasından bir bildirim alırsınız. Etkilenen uygulama cihazınızda kalırsa şirket kaynaklarına erişemezsiniz.  
 
-Uygulamayı kaldırdıktan sonra şirket e-postanıza ve verilerinize hemen erişim elde edersiniz. Uygulamayı kaldırma isteğini yoksayarsanız, uygulamayı kaldırana kadar e-postanıza ve verilerinize erişiminizi kaybedersiniz.
+Bunu çözmek için SEP Mobile’daki tehditler listesinden uygulamayı seçin. Daha sonra ekrandaki yönergeleri izleyerek uygulamayı kaldırın.  
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  
 

@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,44 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279500"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347703"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu güncelleştirmeleri anlamak, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-august-27-2018"></a>27 Ağustos 2018 Haftası  
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Şirket Portalı web sitesi için yeni kullanıcı deneyimi güncelleştirmesi <!--2000968 -->  
+Müşterilerden gelen geri bildirim temelinde Şirket Portalı web sitesine yeni özellikler ekledik. Cihazlarınızın mevcut işlevselliğinde ve kullanılabilirliğinde önemli gelişmeler göreceksiniz. Sitenin &ndash;cihaz ayrıntıları, geri bildirim ve destek, cihaza genel bakış gibi&ndash; alanlarında yeni, modern, hızlı yanıt veren bir tasarım bulunuyor. [Intune Şirket Portalı belgeleri](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) de bu değişiklikleri yansıtacak şekilde güncelleştirildi.   
+
+Karşılaşacağınız güncelleştirmeler şunlardır:  
+
+- Tüm cihaz platformları arasında rahat iş akışları
+- Geliştirilmiş cihaz kimlik ve kayıt akışları
+- Daha yararlı hata iletileri
+- Daha rahat bir dil, daha az teknik jargon
+- Doğrudan uygulama bağlantıları paylaşabilme seçeneği
+- Büyük uygulama katalogları için iyileştirilmiş performans
+- Tüm kullanıcılar için artırılmış erişilebilirlik  
+
+|Güncelleştirildi|Önceki|
+|---|---|
+|![Güncelleştirilmiş cihaz sayfası, tam liste üzerinde açılmak yerine cihaz bilgileri üzerinde düzgün bir şekilde hizalı olarak gösteriliyor.](./media/iwp-device-after-1803.png)|![Cihaz sayfasının önceki sürümü.](./media/iwp-device-before-1803.png)|
+|![Güncelleştirilmiş uygulama yükleme sayfası; yayımlanma tarihi, sürüm ve uygulama türü gibi çeşitli yükleme bilgileri ve açıklama üzerinde uygulamayı düzgün bir şekilde gösteriyor.](./media/iwp-app-install-after-1803.png)|![Uygulama yükleme sayfasının önceki sürümü.](./media/iwp-app-install-before-1803.png)|  
+
 ## <a name="week-of-july-16-2018"></a>16 Temmuz 2018 haftası  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasında daha fazla eşitleme fırsatı   
 Windows için Şirket Portalı uygulaması artık eşitlemeyi doğrudan Windows görev çubuğu ve Başlat menüsünden başlatmanıza olanak tanır. Göreviniz yalnızca cihazları eşitlemek veya şirket kaynaklarına erişim sağlamak olduğunda, bu özellik çok kullanışlıdır. Yeni özelliğe erişmek için görev çubuğunuza veya Başlat menünüze sabitlenmiş Şirket portalı simgesine sağ tıklayın. Menü seçeneklerinde (atlama listesi olarak da bilinir) **Bu cihazı eşitle**’yi seçin. Şirket Portalı, **Ayarlar** sayfasında açılır ve eşitlemenizi başlatır.  
 
-![Bir cihazın masaüstünde Windows görev çubuğunun ekran görüntüsü. Şirket Portalı uygulaması program simgesi tıklanmış ve "Görev çubuğuna sabitle", "Pencereyi kapat" ve "Bu cihazı eşitle" eylemi seçeneklerini içeren bir menü görüntülenmiştir.](./media/sync-device-from-start-menu-1807.png)  
+![Bir cihazın masaüstünde Windows görev çubuğunun ekran görüntüsü. Şirket Portalı uygulaması program simgesi tıklanmış ve “Görev çubuğuna sabitle”, “Pencereyi kapat” ve “Bu cihazı eşitle” eylemlerini içeren bir menü görüntülenmiştir.](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasında yeni göz atma deneyimleri  
 
@@ -112,7 +132,7 @@ Android için Şirket Portalı uygulamasını, Android'in [Materyal Tasarım](ht
 IOS için Şirket Portalı uygulamasında cihaz kurulum iş akışını geliştirdik. Dil artık daha kullanıcı dostu ve mümkün olan yerlerde ekranları birleştirdik. Ayrıca kurulum metninde şirket adınızı kullanarak dilinizi firmanıza özel hale getirdik.
 
 > [!NOTE]
-> Azure Portal'da **Microsoft Intune** > **Mobil Uygulamalar** > **Şirket Portalı markası** > **Şirket adı** altında ayarladığınız şirket adını kullanıyoruz. Bu değeri ayarlamadıysanız, **Azure Active Directory** > **Özellikler** > **Ad**'da ayarlanan kiracı adını kullanacağız. Şirket Portalı markalamasında bir şirket adı belirlemediyseniz ve kiracınızın adının görüntülenmesini istemiyorsanız, şirketin adını Şirket Portalı marka sekmesinde ayarlamanızı öneririz. Bu dizenin Şirket Portalı’ndaki başlıkta gösterilmesini istemiyorsanız, "Şirket adını logonun yanında gösterin" onay kutusunun seçimini kaldırabilirsiniz.
+> Azure portalında **Microsoft Intune** > **İstemci Uygulamaları** > **Şirket Portalı markası** > **Şirket adı** altında ayarladığınız şirket adını kullanıyoruz. Bu değeri ayarlamadıysanız, **Azure Active Directory** > **Özellikler** > **Ad**'da ayarlanan kiracı adını kullanacağız. Şirket Portalı markalamasında bir şirket adı belirlemediyseniz ve kiracınızın adının görüntülenmesini istemiyorsanız, şirketin adını Şirket Portalı marka sekmesinde ayarlamanızı öneririz. Bu dizenin Şirket Portalı’ndaki başlıkta gösterilmesini istemiyorsanız, "Şirket adını logonun yanında gösterin" onay kutusunun seçimini kaldırabilirsiniz.
 
 |Önce|Sonra|
 |---|---|
@@ -458,12 +478,7 @@ Sizin gibi müşterilerden aldığımız geri bildirimlere dayanarak bazı yeni 
 -   Doğrudan uygulama bağlantıları paylaşabilme seçeneği
 - Büyük uygulama katalogları için iyileştirilmiş performans
 
-Bu değişikliğe hazırlanmak için herhangi bir şey yapmanız gerekmez. Güncelleştirilmiş Şirket Portalı web sitesi kullanılabilir duruma geldiğinde size haber vereceğiz. Ancak daha sonra son kullanıcı belgelerini güncel ekran görüntüleriyle güncelleştirmeniz gerekebilir. iOS uygulamasının **Uygulamalar** bölümü web sitesi tarafından sağlandığı için iOS’ta Şirket Portalı belgelerini de güncelleştirmeniz gerekebileceğine dikkat edin.
-
-|Güncelleştirildi|Önceki|
-|---|---|
-|![Güncelleştirilmiş cihaz sayfası, tam liste üzerinde açılmak yerine cihaz bilgileri üzerinde düzgün bir şekilde hizalı olarak gösteriliyor.](./media/iwp-device-after-1803.png)|![Cihaz sayfasının önceki sürümü.](./media/iwp-device-before-1803.png)|
-|![Güncelleştirilmiş uygulama yükleme sayfası; yayımlanma tarihi, sürüm ve uygulama türü gibi çeşitli yükleme bilgileri ve açıklama üzerinde uygulamayı düzgün bir şekilde gösteriyor.](./media/iwp-app-install-after-1803.png)|![Uygulama yükleme sayfasının önceki sürümü.](./media/iwp-app-install-before-1803.png)|
+Bu değişikliğe hazırlanmak için herhangi bir şey yapmanız gerekmez. Güncelleştirilmiş Şirket Portalı web sitesi kullanılabilir duruma geldiğinde size haber vereceğiz. Ancak daha sonra son kullanıcı belgelerini güncel ekran görüntüleriyle güncelleştirmeniz gerekebilir. iOS uygulamasının **Uygulamalar** bölümü web sitesi tarafından sağlandığı için iOS’ta Şirket Portalı belgelerini de güncelleştirmeniz gerekebileceğine dikkat edin.  
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Şirket Portalı web sitesine kullanıcı arabirimi güncelleştirmeleri <!--1313244 part 2-->
 

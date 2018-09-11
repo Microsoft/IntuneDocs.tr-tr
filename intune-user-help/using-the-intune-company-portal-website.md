@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 8275a1f542badaadc5248826c5d1d3a8f24d56c3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762238"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149504"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune Şirket Portalı web sitesini kullanma
-[Şirket Portalı web sitesi](https://portal.manage.microsoft.com#HelpDeskDialog), Intune’a kaydettikleri bilgisayarları ve cihazları yönetmek için son kullanıcıların kullanabileceği bir web sayfasıdır.
+Yönetilen cihazlarınızı görüntülemek, düzenlemek, yeni cihaz eklemek veya cihaz kaldırmak için [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) kullanın.
 
-Kullanıcılar, Şirket Portalı web sitesinden şu görevleri gerçekleştirebilir:
+Şirket Portalı web sitesinde gerçekleştirebileceğiniz eylemler şunlardır:
 
 -   [Cihazınızı yeniden adlandırma](rename-your-device-cpwebsite.md)
 
 -   [Cihazınızı kaldırma](remove-your-device-cpwebsite.md)
 
--   [Cihazınızı sıfırlama (silme)](reset-erase-your-device-cpwebsite.md)
+-   [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
 
 -   [Cihaz geçiş kodunuzu sıfırlama](reset-your-passcode-cpwebsite.md)
 
@@ -41,8 +41,8 @@ Kullanıcılar, Şirket Portalı web sitesinden şu görevleri gerçekleştirebi
 
 -   İletişim bilgilerini siz yapılandırdıysanız, şirketinizin destek biriminin iletişim bilgilerini bulun
 
--   Cihazları hakkındaki ayrıntıları, cihazın şirket veya okulunuzun ilkeleriyle uyumlu olup olmadığını görme
+-   Uyumluluk durumunu denetleme
 
--   Bilgisayarlarını uzaktan yönetme (yalnızca bilgisayarlarda kullanılabilir)
+-   Bir kişisel bilgisayarı uzaktan yönetme
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

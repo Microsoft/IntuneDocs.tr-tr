@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039344"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312905"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune’da Android kurumsal bilgi noktası ayarları
 
@@ -33,14 +33,14 @@ Android bilgi noktası profilleri, aşağıdaki yapılandırma ayarlarını dest
     - **Otomatik olarak izin ver**: İzinler otomatik olarak verilir.
     - **Otomatik olarak reddet**: İzinler otomatik reddedilir.
 - **Ses düzeyi değişiklikleri**: Kullanıcıların cihaz ses düzeyini değiştirmesini önlemek için **Engelle** olarak ayarlayın.
-- **Fabrika sıfırlaması**: Kullanıcıların cihazda fabrika sıfırlaması yapmasını önlemek için **Engelle** olarak ayarlayın.
+- **Silme**: Kullanıcıların cihazı silmesini önlemek için **Engelle** olarak ayarlayın.
 - **Güvenli önyükleme**: Kullanıcıların cihazı güvenli moda önyüklemesini önlemek için **Engelle** olarak ayarlayın.
 - **Durum çubuğu**: Kullanıcıların bildirimler ve hızlı ayarlar dahil olmak üzere durum çubuğuna erişmesini önlemek için **Engelle** olarak ayarlayın.
 - **Wi-Fi ayar değişiklikleri**: Kullanıcıların cihaz sahibi tarafından oluşturulan Wi-Fi yapılandırmalarını değiştirmesini önlemek için **Engelle** olarak ayarlayın. Kullanıcılar kendi Wi-Fi yapılandırmalarını oluşturabilir.
 - **Wi-Fi erişim noktası yapılandırması**: Kullanıcıların Wi-Fi yapılandırması oluşturmasını veya düzenlemesini önlemek için **Engelle** olarak ayarlayın.
 - **Hata ayıklama özellikleri**: Kullanıcıların hata ayıklama özellikleri kullanmasına izin vermek için **İzin Ver** olarak ayarlayın.
 - **Mikrofonu ayarlama**: Kullanıcıların mikrofon sesini ayarlamasını veya kapatmasını önlemek için **Engelle** olarak ayarlayın.
-- **Fabrika sıfırlaması koruma e-postaları**: Fabrika sıfırlamasından sonra cihazın kilidini açabilecek e-posta adreslerini (noktalı virgülle ayrılmış) tanımlamak için **Google hesabı e-posta adresleri**’ni seçin. E-posta belirtilmezse, fabrika sıfırlamasından sonra cihazın kilidini herkes açabilir.
+- **E-postaları silmeye karşı koruma**: Silme işleminden sonra cihazın kilidini açabilecek e-posta adreslerini (noktalı virgülle ayrılmış) tanımlamak için **Google hesabı e-posta adresleri**’ni seçin. E-posta belirtilmezse, silme işleminden sonra cihazın kilidini herkes açabilir.
 - **Ağ kaçış noktası**: Ağ kaçış noktası özelliğinin açılmasına izin vermek için **Etkinleştir** olarak ayarlayın. Önyükleme zamanında bir ağ bağlantısı yapılamazsa kaçış noktası, cihaz ilkesini yenilemek için kullanıcıdan geçici olarak bir ağa bağlanmasını ister. Bu ilke uygulandıktan sonra geçici ağ unutulur ve cihaz önyüklemeye devam eder. Böylece son ilkede uygun bir ağ yoksa ve cihaz bir uygulamaya görev kilitleme modunda önyükleniyorsa veya kullanıcı cihaz ayarlarına ulaşamıyorsa bir ağa bağlanamama sorunu ortadan kalkar.
 - **Bilinmeyen kaynaklardan yüklemeye izin ver**: Kullanıcıların bilinmeyen kaynaklardan yüklemesine izin vermek için **İzin Ver** olarak ayarlayın.
 - **Sistem güncelleştirmesi**: Cihazın havadan güncelleştirmeleri nasıl yöneteceğini belirlemek için bir seçenek belirtin:

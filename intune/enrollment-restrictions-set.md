@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
-ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
+ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251696"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313726"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -35,15 +35,15 @@ Intune yöneticisi olarak, Intune ile yönetime kaydedilebilecek cihazların say
 
 - Kayıtlı cihaz sayısı üst sınırı.
 - Kaydedilebilecek cihaz platformları:
-  - Android.
-  - Android iş profili.
-  - iOS.
-  - macOS.
-  - Windows.
+  - Android
+  - Android iş profili
+  - iOS
+  - Mac OS
+  - Windows
 - iOS, Android, Android iş profili ve Windows’un platform işletim sistemi sürümü. (Yalnızca Windows 10 sürümleri kullanılabilir. Windows 8.1'e izin veriliyorsa bunu boş bırakın.)
   - En düşük sürüm.
   - En yüksek sürüm.
-- Kişisel cihazları kısıtlama (yalnızca iOS, Android, Android iş profili ve macOS).
+- Kişisel cihazları kısıtlama (yalnızca iOS, Android, Android iş profili, macOS ve Windows).
 
 ## <a name="default-restrictions"></a>Varsayılan kısıtlamalar
 
@@ -66,28 +66,46 @@ Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayıla
 
 ## <a name="set-device-type-restrictions"></a>Cihaz türü kısıtlamalarını ayarlama
 
-Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarlarını değiştirebilirsiniz:
+Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarlarını değiştirebilirsiniz. Bu kısıtlamalar, zaten kayıtlı olan cihazları etkilemez. Bu özellikle [Intune PC aracısı](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md) ile kaydedilen cihazlar engellenemez.
 
 1. Azure portalında oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
-4. **Cihaz Türü Kısıtlamaları**'nın altında, ayarlamak istediğiniz kısıtlamayı seçin.
-5. Kısıtlama adının altında (varsayılan kısıtlama için **Tüm Kullanıcılar**), **Platformlar**'ı seçin. Listelenen her platform için **İzin Ver** veya **Engelle**'yi seçin.
-6. **Kaydet**’i seçin.
-7. Kısıtlama adının altında (varsayılan kısıtlama için **Tüm Kullanıcılar**), **Platform Yapılandırmaları**'nı seçin. Sonra, listelenen platformlar için en düşük ve en yüksek **Sürümleri** seçin. Desteklenen sürüm biçimleri:
+4. **Cihaz Türü Kısıtlamaları** > ayarlamak istediğiniz kısıtlamayı seçin > **Özellikler** > **Platform seçin**. Listelenen her platform için **İzin Ver** veya **Engelle**'yi seçin.
+    ![Bir platforma izin verme veya platformu engelleme ekran görüntüsü](media/enrollment-restrictions-set/platform-allow-block.png)
+5. **Tamam**’ı seçin.
+6. **Platformları yapılandır**’ı seçin.
+    ![Platform yapılandırma ekran görüntüsü](media/enrollment-restrictions-set/configure-platforms.png)
+7. Listelenen platformlar için en düşük ve en yüksek **Sürümler**’i seçin. Desteklenen sürüm biçimleri:
     - Android iş profili desteği major.minor.rev.build.
-    - iOS major.minor.rev destekler.
+    - iOS major.minor.rev destekler. İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir.
     - Windows, yalnızca Windows 10 için major.minor.rev.build destekler.
-  İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir.
-8. Listelenen her platformda **Kişiye ait** cihazlar için **İzin Ver** veya **Engelle**'yi seçin.
-    ![Kişilere ait ayarların yapılandırıldığını gösteren, varsayılan cihaz platform yapılandırmaları ile cihaz kısıtlamaları çalışma alanı](media/device-restrictions-platform-configurations.png)
-9. **Kaydet**’i seçin.
+8. Listelenen her platformda **Kişiye ait** cihazlar için **İzin Ver** veya **Engelle**’yi seçin.
+9. **Tamam**’ı seçin.
 
+### <a name="android-device-type-restrictions"></a>Android cihaz türü kısıtlamaları
+- Kişisel Android cihazların kaydını engellerseniz kişisel Android iş profili cihazları hala kaydedilebilir durumda olacaktır.
+- Varsayılan olarak, Android iş profili cihaz ayarlarınız Android cihazlarınızın ayarlarıyla aynı olur. Android iş profili ayarlarınızı değiştirdikten sonra artık bu durum oluşmaz.
+- Kişisel Android iş profili kaydını engellerseniz, yalnızca kurumsal Android cihazlar Android iş profili olarak kaydedilebilir.
 
->[!NOTE]
->- Kişisel Android cihazların kaydını engellerseniz kişisel Android iş profili cihazları hala kaydedilebilir durumda olacaktır.
->- Varsayılan olarak, Android iş profili cihaz ayarlarınız Android cihazlarınızın ayarlarıyla aynı olur. Android iş profili ayarlarınızı değiştirdikten sonra artık bu durum oluşmaz.
->- Kişisel Android iş profili kaydını engellerseniz, yalnızca kurumsal Android cihazlar Android iş profili olarak kaydedilebilir.
+### <a name="windows-device-type-restrictions"></a>Windows cihaz türü kısıtlamaları
+Windows platformu cihaz türü kısıtlaması **Engelle** olarak ayarlandıktan sonra Intune, tüm yeni Windows kayıt isteklerinin şirket kaydı olarak yetkilendirildiğinden emin olmak için denetim yapar. Yetkilendirilmemiş kayıtlar engellenir.
+
+Windows şirket kaydı olarak yetkilendirme için aşağıdaki yöntemler uygundur:
+ - Kaydeden kullanıcı [cihaz kayıt yöneticisi hesabı]( device-enrollment-manager-enroll.md) kullanıyor.
+- Cihaz [Windows AutoPilot](enrollment-autopilot.md) yoluyla kaydediliyor.
+- Cihazın IMEI numarası **Cihaz kaydı** > **[Şirket cihaz tanımlayıcıları](corporate-identifiers-add.md)**’nda listelenmiş. (Windows Phone 8.1 için desteklenmez.)
+- Cihaz bir [toplu sağlama paketi](windows-bulk-enroll.md) ile kaydediliyor.
+- Cihaz [ortak yönetim için SCCM’den otomatik kayıt](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md) yoluyla kaydediliyor.
+ 
+Aşağıdaki kayıtlar Intune tarafından şirket olarak işaretlenir ancak Intune yöneticisine cihaz başına denetim sağlamadığı için engellenir:
+ - [Windows kurulumu sırasında Azure Active Directory katılımı](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- [Windows ayarlarından Azure Active Directory katılımı](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+ 
+Aşağıdaki kişisel kayıt yöntemleri de engellenir:
+- [Windows Ayarları’ndan İş Hesabı Ekleme](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- Windows Ayarları’ndan [Yalnızca MDM kaydı]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) seçeneği.
+
 
 ## <a name="set-device-limit-restrictions"></a>Cihaz sınırı kısıtlamalarını ayarlama
 

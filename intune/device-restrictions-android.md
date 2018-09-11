@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587032"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313708"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android ve Samsung Knox Standard cihaz kısıtlama ayarları - Intune
 
@@ -35,7 +35,7 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
 - **Kopyala ve Yapıştır (yalnızca Samsung Knox)** - Cihazda kopyalama ve yapıştırma işlevlerine izin verir.
 - **Uygulamalar arasında pano paylaşımı (yalnızca Samsung Knox)** - Uygulamalar arasında kopyalama ve yapıştırma işlemleri için panonun kullanımına izin verir.
 - **Tanılama verileri gönderme (yalnızca Samsung Knox)** - Kullanıcının cihazdan tanılama verileri göndermesini durdurur.
-- **Fabrika sıfırlaması (yalnızca Samsung Knox)** - Kullanıcının cihazda fabrika sıfırlaması gerçekleştirmesine izin verir.
+- **Silme (yalnızca Samsung Knox)** - Kullanıcının cihazda [silme](devices-wipe.md) işlemi gerçekleştirmesine izin verir.
 - **Coğrafi konum (yalnızca Samsung Knox)** - Cihazın konum bilgilerini kullanmasına izin verir.
 - **Kapatma (yalnızca Samsung Knox)** - Kullanıcının cihazı kapatmasına izin verir.<br>Devre dışı bırakılırsa **Cihaz silinmeden önceki oturum açma hatası sayısı** ayarlanamaz.
 - **Ekran yakalama (yalnızca Samsung Knox)** - Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.

@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268847"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313505"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Intune’da iOS güncelleştirme ilkelerini yapılandırma
 
@@ -32,7 +32,7 @@ Bu özellik iOS 10.3 ve sonraki sürümleri çalıştıran cihazları destekler.
 4. İlke için bir ad ve açıklama girin.
 5. **Ayarlar**’ı seçin. 
 
-    iOS cihazlarının en son güncelleştirmeyi yüklemeye zorlanmadığı durumlara ilişkin ayrıntıları girin. Bu ayarlar kısıtlı bir zaman çerçevesi oluşturur. Haftanın günlerini, saat dilimini, başlangıç ve bitiş saatlerini yapılandırabilirsiniz.
+    iOS cihazlarının en son güncelleştirmeyi yüklemeye zorlanmadığı durumlara ilişkin ayrıntıları girin. Bu ayarlar kısıtlı bir zaman çerçevesi oluşturur. Haftanın **Günlerini**, **Saat dilimini**, **Başlangıç saatini**, **Bitiş saatini** ve **Yazılım güncelleştirmesinin görünürlüğünü geciktirme (gün)** seçeneğini ayarlayabilirsiniz. Yazılım güncelleştirmeleri için 1 ila 90 gün arasında bir geciktirme aralığı seçebilirsiniz. Yazılım güncelleştirmesini geciktirmek istemiyorsanız 0 değerini girin. Bu güncelleştirme ayarları, yalnızca denetimli iOS cihazlarında geçerlidir.
 
 6. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin. İlkeyi oluşturmak için **Oluştur**’u seçin.
 

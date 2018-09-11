@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f1b2af2723ddb4c89f7f3d6409ced12f7a16883a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223671"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330305"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune Veri Ambarı hesabı verilerinizi taşıma 
 
@@ -45,7 +45,7 @@ Azure portalı görünümünüzdeki bazı eğilim grafikleri sıfırlanacaktır.
 3. Raporu yerel olarak kaydedin.
  
 ### <a name="app-protection-reports"></a>Uygulama Koruma raporları  
-1. Azure portalında **Microsoft Intune** -> **Mobil Uygulamalar** -> **Uygulama koruma durumu**’na gidin.
+1. Azure portalında **Microsoft Intune** -> **İstemci Uygulamaları** -> **Uygulama koruma durumu**’na gidin.
 2. Her bir raporu kaydetmek için indirme simgesine ( ⤓ ) tıklayın.
 
 ### <a name="device-configuration-charts"></a>Cihaz Yapılandırma grafikleri 

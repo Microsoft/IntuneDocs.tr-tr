@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/11/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,50 +17,71 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224778"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147726"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
-Kuruluşunuzun uygulamalarına, verilerine ve kaynaklarına erişmek; işinizi yapmanız kolaylaştırır. Kuruluşunuz, [bu kaynaklara erişimi yönetmek](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md) için Intune kullanıyor ve Intune, macOS için Şirket Portalı uygulamasını indirmenizi gerektiriyor. Bu yönergeler, OS X El Capitan 10.11+ sürümü macOS cihazlar için geçerlidir.
+macOS cihazınızı Intune Şirket Portalı uygulamasına kaydederek kuruluşunuzun e-postası, dosyaları ve uygulamalarına güvenli erişim sağlayabilirsiniz.
+
+Kuruluşlar çoğu zaman cihazınızın özel verilere erişmesi için yönetilmesini gerektirir. Bir cihaz yönetilmeye başladığında kuruluşlar, mobil cihaz yönetimi sağlayıcısı yoluyla cihaza ilke ve uygulama gönderebilir. Cihazınızdan iş veya okul bilgilerine sürekli erişim edinmek için cihazınızı ilke ayarlarına uyum sağlayacak şekilde yapılandırmanız gerekir.  
+
+Bu makale, cihazınızın kuruluş gereksinimlerine uyum sağlaması amacıyla macOS için Intune Şirket Portalı uygulamasının cihazı kaydetmenize, yapılandırmanıza ve cihaz bakımını yapmanıza nasıl yardımcı olduğunu açıklar.
+
+## <a name="what-to-expect-from-the-company-portal-app"></a>Şirket Portalı uygulamasından bekleyebilecekleriniz
+
+İlk kurulum sırasında uygulama, kuruluşunuzda kimlik doğrulamanızı gerektirir. Daha sonra yapmanız gereken bazı cihaz ayarları varsa bunları size gösterir. Örneğin kuruluşlar genellikle uymanız gereken en düşük veya en yüksek karakterli parola gereksinimleri ayarlar.    
+
+Cihazınız kaydolduktan sonra Şirket Portalı uygulaması, cihazın koruma altında kalmasını sağlar. Örneğin güvenilmeyen bir kaynaktan uygulama yüklerseniz uygulama sizi uyarır, hatta bazen şirket verilerine erişiminizi iptal edebilir. Bunun gibi uygulama koruma ilkeleri, kuruluşlarda yaygın olarak kullanılır ve erişimi geri almanız için güvenilmeyen uygulamaları kaldırmanızı gerektirir.
+
+Kayıttan sonra kuruluşunuz, çok faktörlü kimlik doğrulaması gibi yeni bir güvenlik gereksinimi zorlarsa Şirket Portalı size bildirim gönderir. Cihazınızla çalışmaya devam edebilmek için bazı değişiklikler yapmaya vaktiniz olur.  
+
+Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklediğimde ve cihazımı kaydettiğimde ne olur?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md).  
+
+## <a name="get-your-device-managed"></a>Cihazınızı yönetime kaydetme  
+OS X El Capitan 10.11 ve sonrasını çalıştıran macOS cihazları kaydetmek için aşağıdaki adımları kullanın.   
 
 
-1. Cihazınızın __Dock__ bölümünde __Safari__'yi bulun, yeni bir pencere açın ve ardından [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) ziyaret edin.
+1. Şirket Portalı web sitesine erişmek için __Safari__’de yeni bir pencere açın ve https://portal.manage.microsoft.com adresine gidin.  
 
 2. İş veya okul hesabınızla Şirket Portalı web sitesinde oturum açın.
 
    [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
 
 
-3. Oturum açtıktan sonra sayfanın sol üst köşesindeki **Menü**’ye tıklayın ve **Cihazlarım**’ı seçin.
+3. Sayfanın sol üst köşesine gidin ve **Menü** > **Cihazlar**’a tıklayın.  
 
-   ![Henüz herhangi bir uygulamanın yüklenemeyeceğini gösteren web portalı ve altında Cihazlarım düğmesi ile web portalı giriş sayfasının ekran görüntüsü.](./media/macOS_enroll_001_landing_page.png)
+4. __Cihazlar__ sayfasında yönetilen cihazlar listesi veya bir başlık görüntülenir. Göreceğiniz şey, yönetilen bir cihazınız olup olmamasına bağlıdır. 
+    * Listede olmayan bir cihazı eklemek için **Hangi cihazı kullandığınızı bizimle paylaşmak veya yeni bir cihaz eklemek için buraya dokunun** yazılı başlığı seçin.
+    * Hiç cihazınız yoksa başlıkta şu yazar: **Yönetilen cihazınız yok. Buraya dokunup cihazı ekleyin.** Cihazınızı eklemek için başlığa tıklayın.  
 
-4. __Cihazlarım__ sayfasında, kayıtlı cihazların bir listesini veya yalnızca bir başlık görürsünüz. Bu, macOS veya başka bir kayıtlı cihazınız olup olmadığına bağlıdır. Listede olmayan bir cihazı kaydetmek için şu ifadeye sahip başlığı seçin: __Cihazınız listedeyse, tanımlamak için buraya dokunun. Listede değilse, yine buraya tıklayarak cihazınızı kaydedebilirsiniz__. Kayıtlı cihazınız yoksa başlıkta **Kayıtlı cihazınız yok ifadesi yer alır. Buraya dokunarak bu cihazı kaydedin.**
+     ![Tıklanacak yeri vurgulamak için başlık seçeneği etrafında kırmızı kare bulunan Cihazlar sayfasının ekran görüntüsü.](./media/CP-enroll-MACOS-1808.png)  
+5.  Aşağıdaki adımlardan hangisi Şirket Portalı’nda görmekte olduğunuz iletiyle eşleşiyorsa onu tamamlayın.  
+    * Bir cihazı ilk kez ekliyorsanız cihaza Şirket Portalı uygulamasını indirmeniz istenir. **İndir**’e tıklayarak devam edin.  
 
-    ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
+         ![macOS Şirket Portalı uygulamasını indirme istemi örnek ekran görüntüsü. Kullanıcının, istemin sol altındaki mavi renkli İndir düğmesine veya sağ altındaki gri renkli İptal düğmesine basma seçeneği vardır.](./media/CP-enroll-download-macOS-1808.png)  
 
-5. Kayda devam etmek için macOS cihazınıza Şirket Portalı uygulamasını indirin.
+    * Zaten yönetilen bir macOS cihazınız varsa, mevcut yönetilen cihazlarınızın listesini içeren bir istem alırsınız. **Cihazım burada listelenmemiş** > **İndir**’i seçerek eklemekte olduğunuz cihaza Şirket Portalı uygulamasını indirin.  
 
-    ![Kullanıcıdan macOS Şirket Portalı uygulamasını indirmesini isteyen uyarı. Bu uyarı, yukarıdaki adımda listelenen metni, sağ alt köşesinde “İndir” yazılı bir düğmeyi içerir.](./media/macOS_enroll_IWP_CP_app_notice.png)
+         ![macOS Şirket Portalı uygulamasını indirme istemi örnek ekran görüntüsü. Kullanıcı, *Cihazım burada listelenmemiş* seçeneğini veya sayfasının ortasından belirli bir cihazı seçebilir. İstemin sol altında mavi renkli bir İndir düğmesi ve sağ altında gri renkli bir İptal düğmesi belirir](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. Mac’iniz, **CompanyPortal.pkg** indirmesini açmanın güvenli olup olmadığını denetleyecektir. Yükleyiciyi açın ve yükleme işlemini tamamlayın.
+6. Cihazınız, **CompanyPortal.pkg** yükleme dosyasını açmanın güvenli olup olmadığını denetleyecektir. Denetim tamamlandıktan sonra yükleyicisi açın ve yüklemeyi tamamlayın.  
 
-7. Tamamladıktan sonra **Uygulamalar** klasörünüzü veya **Başlatma Çubuğu**’nu ve daha sonra **Şirket Portalı**’nı açın.
+7. Yükleyici tamamlandığında **Başlatma çubuğuna** gidin ve **Şirket Portalı**’nı açın.  
 
-8. Mac’inizde şöyle bir ileti görüntülenecektir: **“CompanyPortal” internetten indirilmiş bir uygulama. Bunu açmak istediğinize emin misiniz?** **Aç**'a tıklayın.
+8. macOS cihazınız, Şirket Portalı uygulamasını açmak istediğinizi onaylamanızı ister. **Aç**'a tıklayın.  
 
-   > [!NOTE]
-   > Cihazınızın, kuruluşunuzun kaynaklarına erişmek için yeterli güvenliğe sahip olduğunu doğrulamak için Intune'un bilgisayarınıza erişmesi gerekir. Bilgisayarınız, Şirket Portalı uygulamasını açmayı reddederse [Ağ Geçidi Denetleyicisini](https://support.apple.com/HT202491) kapatıp uygulamayı açmayı deneyin.
+   > [!TIP]
+   > Cihazınızın, kuruluşunuzun kaynaklarına erişmek için yeterli güvenliğe sahip olduğunu doğrulamak için Intune'un bilgisayarınıza erişmesi gerekir. Bilgisayarınız Şirket Portalı uygulamasını açmazsa [ağ geçidi denetleyicisini kapatın](https://support.apple.com/HT202491). Ardından uygulamayı açın.
 
-9. Şirket Portalı uygulamasında ilk gördüğünüz ekran, sizden Şirket Portalı web sitesinde oturum açmak için kullandığınız iş veya okul hesabıyla **oturum açmanızı** isteyecektir.
+9. Şirket Portalı’nda ilk göreceğiniz ekran, **oturum açmanızı** ister. Şirket Portalı web sitesinde oturum açarken kullandığınız iş veya okul hesabını kullanın.
 
-10. Şirket Portalı, hesap bilgilerinizi onaylar ve daha sonra **Cihaz Kaydı** ve **Cihaz Uyumluluğu** durumunuzu gösterir. Mac’inizi iş için kullanmanın güvenli olduğundan emin olmanız adına gerçekleştirmeniz gereken eylemler olduğunu işaret eden bazı sarı üçgenler görürsünüz. [Cihazınızı yönetime kaydetmeye](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) başlamak için **Başla**’ya tıklayın.
+10. Şirket Portalı, hesap bilgilerinizi onaylar ve daha sonra **Cihaz Kaydı** ve **Cihaz Uyumluluğu** durumunuzu gösterir. Okul veya iş için macOS cihazınızı güvenlik altına almak adına uygulamanız gereken eylemler, sarı üçgenlerle vurgulanır. Kayda başlamak için **Başla**’ya tıklayın. Bir cihaz kaydettiğinizde [kuruluşunuzun görebilecekleri](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) hakkında bilgi edinin.
 
-11. Mac’iniz yönetime kaydedilmeye başlar. Bu sırada bilgisayarınızın oturum açma bilgilerini sağlamanız istenebilir. Bu kayıt birkaç dakika sürebilir. Bu süre boyunca bilgisayarınızda başka şeyler yapabilirsiniz. Şirket Portalı Kurulumu tamamlandıktan sonra işiniz bittiğine dair bir ileti alırsınız.
+11. Bilgisayarınızın oturum açma bilgilerini sağlamanız istenebilir. Cihazınızı yönetime kaydetmek birkaç dakika alabilir. Bu süre boyunca cihazınızda başka şeyler yapabilirsiniz. Şirket Portalı kurulumu tamamlandıktan sonra işiniz bittiğine dair bir ileti alırsınız.  
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com#HelpDeskDialog) ulaşabilirsiniz.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://go.microsoft.com/fwlink/?linkid=2010980) ulaşabilirsiniz.  

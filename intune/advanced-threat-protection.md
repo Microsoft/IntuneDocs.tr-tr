@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
-ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
+ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40251674"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313800"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune’da Windows Defender ATP’yi koşullu erişim ile etkinleştirme
 
@@ -71,27 +71,15 @@ Bu görevi genellikle bir kez yaparsınız. Bu nedenle Intune kaynağınızda AT
 
 ## <a name="onboard-devices-using-a-configuration-profile"></a>Bir yapılandırma profili kullanarak cihaz ekleme
 
-Windows Defender, cihazlarda yüklü bir ekleme yapılandırma paketi içerir. Bu paket yüklediğinde, [Windows Defender ATP hizmetleri](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) ile iletişime geçerek dosyaları tarar, tehditleri algılar ve riski Windows Defender ATP’ye rapor eder. Intune ile bu yapılandırma paketini kullanan bir yapılandırma profili oluşturabilirsiniz. Daha sonra ilk kez eklediğiniz cihazlara bu profili atarsınız.
+Son kullanıcılar Intune’a kaydolduğunda bir yapılandırma profili kullanarak cihazlara farklı ayarlar gönderebilirsiniz. Bu, Windows Defender ATP için de geçerlidir.
 
-Yapılandırma paketini kullanarak bir cihaz ekledikten sonra bunu tekrar yapmanız gerekmez. Bu genellikle tek seferlik bir görevdir.
+Windows Defender; [Windows Defender ATP hizmetleri](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) ile iletişime geçerek dosyaları tarayan, tehditleri algılayan ve riski Windows Defender ATP’ye rapor eden ekli bir yapılandırma paketi içerir.
 
-[Bir grup ilkesi veya System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) kullanarak da cihaz ekleyebilirsiniz.
+Eklediğinizde Intune, Windows Defender ATP’ten otomatik olarak oluşturulan bir yapılandırma paketi alır. Profil cihaza gönderildiğinde veya dağıtıldığında bu yapılandırma paketi de cihaza gönderilir. Bu, Windows Defender ATP’nin cihazı tehditlere karşı izlemesini sağlar.
 
-Sıradaki adımlarda, Intune kullanarak uygulama ekleme gösterilecektir.
+Yapılandırma paketini kullanarak bir cihaz ekledikten sonra bunu tekrar yapmanız gerekmez. [Bir grup ilkesi veya System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) kullanarak da cihaz ekleyebilirsiniz.
 
-#### <a name="download-configuration-package"></a>Yapılandırma paketi indirme
-
-1. [Windows Defender Güvenlik Merkezi](https://securitycenter.windows.com)’nde **Ayarlar** > **Ekleme**’yi seçin.
-2. Aşağıdaki ayarları girin:
-  - **İşletim sistemi**: Windows 10
-  - **Bir makine ekle** > **Dağıtım yöntemi**: Mobil Cihaz Yönetimi / Microsoft Intune
-3. **Paket indir**’i seçin ve **WindowsDefenderATPOnboardingPackage.zip** dosyasını kaydedin. Dosyayı ayıklayın.
-
-Bu zip dosyası, sonraki adımlarda ihtiyaç duyacağınız **WindowsDefenderATP.onboarding** dosyasını içerir.
-
-#### <a name="create-the-atp-configuration-profile"></a>ATP yapılandırma profili oluşturma
-
-Bu profil, önceki adımlarda indirdiğiniz ekleme paketini kullanır.
+### <a name="create-the-configuration-profile"></a>Yapılandırma profili oluşturma
 
 1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 2. **Cihaz Yapılandırması** > **Profiller** > **Profil oluştur**’u seçin.
@@ -100,10 +88,9 @@ Bu profil, önceki adımlarda indirdiğiniz ekleme paketini kullanır.
 5. **Profil türü** olarak **Windows Defender ATP (Windows 10 Masaüstü)**’nü seçin.
 6. Şu ayarları yapılandırın:
 
-  - **Ekleme Yapılandırma Paketi**: İndirdiğiniz **WindowsDefenderATP.onboarding** dosyasına göz atın ve dosyayı seçin. Bu dosya, cihazların Windows Defender ATP hizmetine rapor vermesini sağlayan bir ayarı etkinleştirir.
-  - **Tüm dosyalar için örnek paylaşımı**: Örneklerin toplanmasına ve Windows Defender ATP ile paylaşılmasına izin verir. Örneğin şüpheli bir dosya görürseniz, bunu ayrıntılı analiz için Windows Defender ATP’ye gönderebilirsiniz.
-  - **Telemetri raporlama sıklığını artırma**: Yüksek riskli cihazlarda bu ayarı etkinleştirerek cihazların Windows Defender ATP hizmetine daha sık telemetri raporlamasını sağlayın.
-  - **Yapılandırma Paketi Çıkarma**: Windows Defender ATP izlemeyi kaldırmak veya “boşaltmak” istiyorsanız [Windows Defender Güvenlik Merkezi](https://securitycenter.windows.com)’nde bir Boşaltma paketi indirebilir ve bunu ekleyebilirsiniz. Aksi takdirde bu özelliği atlayın.
+  - **Windows Defender ATP istemci yapılandırma paketi türü**: Yapılandırma paketini profile eklemek için **Ekle**’yi seçin. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
+  - **Tüm dosyalar için örnek paylaşımı**: Örneklerin toplanmasına ve Windows Defender ATP ile paylaşılmasına izin vermek için **Etkinleştir**’i seçin. Örneğin şüpheli bir dosya görürseniz, bunu ayrıntılı analiz için Windows Defender ATP’ye gönderebilirsiniz. **Yapılandırılmadı** seçeneği, Windows Defender ATP ile örnek paylaşmaz.
+  - **Telemetri raporlama sıklığını artırma**: Yüksek riskli cihazlarda bu ayar için **Etkinleştir** seçeneğini belirterek cihazların Windows Defender ATP hizmetine daha sık telemetri raporlamasını sağlayın.
 
     [System Center Configuration Manager kullanarak Windows 10 makineler ekleme](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) makalesi, bu Windows Defender ATP ayarları hakkında daha fazla bilgi içermektedir.
 

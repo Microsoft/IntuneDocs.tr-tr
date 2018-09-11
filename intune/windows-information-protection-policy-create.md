@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61df998dae611eb7350fa144260780b5589afc61
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762255"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347316"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -62,8 +62,8 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm Hizmetler** > **Intune**’u seçin.
-3. **Microsoft Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-4. **Mobil uygulamalar** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
+3. **Microsoft Intune** dikey penceresinde **İstemci uygulamaları**’nı seçin.
+4. **İstemci uygulamaları** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
 5. **İlke ekle** dikey penceresini görüntülemek için **İlke ekle**’yi seçin.
 6. Aşağıdaki değerleri ekleyin:
     - **Adı:** Yeni ilkeniz için bir ad yazın (gereklidir).
@@ -74,8 +74,8 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Korunan uygulamalar listenize önerilen uygulamalar eklemek için
 
-1. **Microsoft Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-2. **Mobil uygulamalar** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
+1. **Microsoft Intune** dikey penceresinde **İstemci uygulamaları**’nı seçin.
+2. **İstemci uygulamaları** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
 3. **Uygulama koruma ilkeleri** dikey penceresinde değiştirmek istediğiniz ilkeyi seçin. **Intune Uygulama Koruması** dikey penceresi görüntülenir.
 4. **Intune Uygulama Koruması** dikey penceresinden **Korunan uygulamalar**’ı seçin. **Korunan uygulamalar** dikey penceresi açılarak size bu uygulama koruma ilkesi için daha önceden listeye eklenmiş tüm uygulamaları gösterir.
 5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Dikey pencerenin üst kısmındaki liste, liste filtresini değiştirmenize izin verir.
@@ -86,8 +86,8 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Korunan uygulamalar listenize bir Store uygulaması eklemek için
 
 **Bir Mağaza uygulaması eklemek için**
-1. **Microsoft Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-2. **Mobil uygulamalar** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
+1. **Microsoft Intune** dikey penceresinde **İstemci uygulamaları**’nı seçin.
+2. **İstemci uygulamaları** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
 3. **Uygulama koruma ilkeleri** dikey penceresinde değiştirmek istediğiniz ilkeyi seçin. **Intune Uygulama Koruması** dikey penceresi görüntülenir.
 4. **Intune Uygulama Koruması** dikey penceresinden **Korunan uygulamalar**’ı seçin. **Korunan uygulamalar** dikey penceresi açılarak size bu uygulama koruma ilkesi için daha önceden listeye eklenmiş tüm uygulamaları gösterir.
 5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Dikey pencerenin üst kısmındaki liste, liste filtresini değiştirmenize izin verir.
@@ -99,8 +99,8 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Korunan uygulamalar listenize bir masaüstü uygulaması eklemek için
 
 **Bir masaüstü uygulaması ekleme**
-1. **Microsoft Intune** dikey penceresinde **Mobil uygulamalar**’ı seçin.
-2. **Mobil uygulamalar** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
+1. **Microsoft Intune** dikey penceresinde **İstemci uygulamaları**’nı seçin.
+2. **İstemci uygulamaları** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
 3. **Uygulama koruma ilkeleri** dikey penceresinde değiştirmek istediğiniz ilkeyi seçin. **Intune Uygulama Koruması** dikey penceresi görüntülenir.
 4. **Intune Uygulama Koruması** dikey penceresinden **Korunan uygulamalar**’ı seçin. **Korunan uygulamalar** dikey penceresi açılarak size bu uygulama koruma ilkesi için daha önceden listeye eklenmiş tüm uygulamaları gösterir.
 5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Dikey pencerenin üst kısmındaki liste, liste filtresini değiştirmenize izin verir.
@@ -116,8 +116,7 @@ WIP ile korumak istediğiniz uygulamaları ekledikten sonra, **WIP Öğrenme** k
 
 WIP Öğrenme, WIP etkin ve WIP bilinmeyen uygulamalarınızı izlemenize olanak tanıyan bir rapordur. Bilinmeyen uygulamalar, kuruluşunuzun BT departmanı tarafından dağıtılmayan uygulamalardır. "Blok" modunda WIP uygulamasını zorlamadan önce bu uygulamaları raporunuzdan dışa aktarabilir ve üretkenliğin kesintiye uğramaması için WIP ilkelerinize ekleyebilirsiniz.
 
-<!-- 1631908 -->
-WIP’in etkinleştirildiği uygulamalar hakkındaki bilgileri görüntülemeye ek olarak, web siteleriyle paylaşılan iş verilerine sahip cihazların özetini de görüntüleyebilirsiniz. Bu bilgilerle, grup ve kullanıcı WIP ilkelerine hangi web sitelerinin eklenmesi gerektiğini saptayabilirsiniz. Özet, WIP özellikli uygulamalar tarafından hangi web sitesi URL'lerine erişildiğini gösterir.
+<!-- 1631908 --> WIP’in etkinleştirildiği uygulamalar hakkındaki bilgileri görüntülemeye ek olarak, web siteleriyle paylaşılan iş verilerine sahip cihazların özetini de görüntüleyebilirsiniz. Bu bilgilerle, grup ve kullanıcı WIP ilkelerine hangi web sitelerinin eklenmesi gerektiğini saptayabilirsiniz. Özet, WIP özellikli uygulamalar tarafından hangi web sitesi URL'lerine erişildiğini gösterir.
 
 WIP etkin ve WIP bilinmeyen uygulamalarla çalışırken, **Sessiz** veya **Geçersiz Kılmalara İzin Ver** ile başlayarak korunan uygulamalar listenizde doğru uygulamalar bulunduğunu küçük bir grupla doğrulamanızı öneririz. Bu denemeyi bitirdikten sonra, son uygulatma ilkenizi **Blok** olarak değiştirebilirsiniz.
 
@@ -149,7 +148,7 @@ WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiket
 
 1. [Azure portalı](https://portal.azure.com)’nı açın. **Tüm hizmetler**’i seçin. Metin kutusu filtresine **Intune** yazın.
 
-3. **Intune** > **Mobil Uygulamalar**’ı seçin.
+3. **Intune** > **İstemci uygulamaları**’nı seçin.
 
 4. **Uygulama koruma durumu** > **Raporlar** > **Windows Bilgi Koruması öğrenme**’yi seçin.  
 

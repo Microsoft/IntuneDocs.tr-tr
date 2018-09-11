@@ -1,11 +1,11 @@
 ---
 title: Android’de Lookout for Work’ün bulduğu tehditleri çözümleme | Microsoft Docs
-description: Android’de Lookout for Work tarafından bulunan bir tehdidi nasıl düzelteceğinizi öğrenin.
+description: Bir Android cihazda Lookout for Work uygulaması tarafından bulunan bir tehdidi nasıl düzelteceğinizi öğrenin.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,35 +15,43 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: df7055f031fb7661cc0fa3bf2d00b16fc0a082dc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0e8f10bac2c7ffc75f81572da60249842c8f4cc1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015481"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148530"
 ---
-# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work tarafından bulunan bir tehdidi çözme
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work tarafından bulunan bir tehdidi çözme  
 
-Lookout for Work, cihazınızda potansiyel bir tehdit buldu ve şirket veya okul e-postanıza, uygulamalarınıza ve dosyalarınıza tekrar erişim kazanmak için sorunu düzeltmeniz gerekiyor. Gördüğünüz ileti şuna benzeyebilir:
+Lookout for Work uygulaması, Android cihazlarınızda olası tehditleri belirleyen bir Mobil Tehdit Savunması hizmetidir. Bu tehditler Şirket Portalı uygulamasına raporlanır ve burada çözümlenmemiş, uyumsuz sorunlar olarak görünür. Bu tehditler var olduğu sürece şunları yapamayabilirsiniz:
 
-![Lookout for Work cihazınızda bir tehdit buldu](./media/lookout-threat-found-android.png)
+* Şirket e-postasına bağlanma
+* Şirket Wi-Fi ağına bağlanma
+* SharePoint Online’a bağlanma
+* OneDrive ile şirket dosyalarını eşitleme
+* Şirket uygulamalarına erişme
 
-Bu sorunu düzeltmek için Lookout for Work uygulamasını açın ve uygulamada gösterilen yönergeleri izleyin.
+Bu makale, Lookout for Work tehdit uyarılarını anlamanıza yardımcı olur ve bunları nasıl çözümleyeceğinizi açıklar. 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Kayıtlı cihazınızın e-postaya veya dosyalara erişmesi engellenirse göreceğiniz ileti
+## <a name="troubleshoot-virus-or-security-threat"></a>Virüs veya güvenlik tehdidini giderme  
+Lookout for Work uygulaması bir güvenlik veya virüs tehdidi algıladığında şirket kaynaklarına yeniden erişim kazanın.  
 
-Kayıtlı cihazınızda bir virüs veya başka bir güvenlik tehdidi varsa ve şirket e-postanıza veya dosyalarınıza erişmeyi denerseniz, aşağıdaki gibi bir ileti görebilirsiniz:
+1. Bir virüs veya güvenlik tehdidi algılanırsa aşağıdaki ekran görüntüsünde gösterilene benzer bir ileti alırsınız. **Cihaz yönetim portalına** dokunarak [Şirket Portalı web sitesini](https://portal.manage.microsoft.com/devices) açın.  
 
-![Şirket Portalı web sitesine bağlantı ile Lookout for Work hata iletisi](./media/mtd-go-to-device-management-portal-android.png)
+    ![Şirket Portalı web sitesi ve mavi Tamam düğmesi ile Lookout for Work hata iletisi örnek ekran görüntüsü.](./media/mtd-go-to-device-management-portal-android.png)
 
-Sorunu düzeltmek için yönergeler göreceğiniz [Şirket Portalı web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) gitmek için **cihaz yönetim portalına** dokunun.
+2. Cihazınızı seçin.  
+3. Cihazınızın altında görüntülenen uyarıyı okuyun. Bu uyarı, virüs veya güvenlik tehdidini düzeltmeniz için Lookout for Work’ü açmanızı söyleyecektir. 
 
-## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Lookout for Work’ün tehdit olarak gördüğü bir uygulama örneği
+    ![Şirket Portalı cihaz sayfasının Lookout for Work uyarısını gösteren örnek ekran görüntüsü.](./media/CP-lookout-virus-banner-1808.png)  
 
-Lookout for Work’ün tehdit olarak gördüğü bir uygulama yüklediyseniz aşağıdakine benzer bir ekran görürsünüz:
+## <a name="troubleshoot-an-app-threat"></a>Bir uygulama tehdidini giderme  
 
-![Lookout for Work virüs uyarı iletisi örneği](./media/lookout-virus-alert-android.png)
+Lookout for Work’ün tehdit olarak algıladığı bir uygulama yüklerseniz, aşağıdaki ekran görüntüsünde gösterilene benzer bir ileti alırsınız.  
 
-Uygulamayı kaldırdıktan sonra şirket e-postanıza ve verilerinize hemen erişim elde edersiniz. Uygulamayı kaldırma isteğini yoksayarsanız, uygulamayı kaldırana kadar e-postanıza ve verilerinize erişiminizi kaybedersiniz.
+![Lookout for Work uygulama arabiriminde Lookout Virüs Uyarısı iletisini gösteren örnek ekran görüntüsü. Üç düğme gösterir: “Kapat”, “Daha fazla bilgi”, “Kaldır”.](./media/lookout-virus-alert-android.png)  
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Şirket e-postası ve verilerine erişimi yeniden kazanmak için şüpheli uygulamayı kaldırın. Uygulama cihazınızda olduğu sürece şirket kaynaklarına erişemezsiniz.    
+
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

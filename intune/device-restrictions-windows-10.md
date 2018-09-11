@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321229"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313862"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune’da Windows 10 (ve üzeri) cihaz kısıtlama için ayarlar
 Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
@@ -37,7 +37,7 @@ Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz 
 - **Çıkarılabilir depolama** - SD kartı gibi dış depolama cihazlarının cihazla kullanılıp kullanılamayacağını belirtir.
 - **Coğrafi konum** - Cihazın konum hizmetleri bilgilerini kullanıp kullanamayacağını belirtir.
 - **İnternet paylaşımı** - Cihazda İnternet bağlantısı paylaşımının kullanımına izin verin.
-- **Telefon sıfırlama** - Kullanıcının cihazını fabrika ayarlarına sıfırlayıp sıfırlayamayacağını denetler.
+- **Telefon sıfırlama** - Kullanıcının cihazını silip silemeyeceğini denetler.
 - **USB bağlantısı (yalnızca mobil)** - Cihazların USB bağlantısı aracılığıyla harici depolama cihazlarına erişip erişemeyeceğini denetler.
 - **Hırsızlık Önleme modu (yalnızca mobil)** - Windows Hırsızlık Önleme modunun etkin olup olmadığını yapılandırın.
 - **Cortana** - Cortana sesli yardımcısını etkinleştirin veya devre dışı bırakın.
@@ -50,6 +50,7 @@ Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz 
 - **SIM kart hatası iletişim kutusu (yalnızca mobil)** -SIM kart algılanmazsa cihazda bir hata iletisinin görüntülenmesini engeller.
 - **Ink Çalışma Alanı** - Kullanıcıların Ink çalışma alanına erişmesini engelleyin. Bu ayar yapılandırılmadığında, Ink çalışma alanı etkinleştirilir (özellik açılır) ve kullanıcının bunu kilit ekranının üst tarafında kullanmasına izin verilir.
 - **Otomatik yeniden dağıtım** - Yönetici haklarına sahip olan kullanıcıların cihaz kilidi ekranında **CTRL + Win + R** tuşunu kullanarak tüm kullanıcı verilerini ve ayarlarını silmelerini sağlar. Cihaz otomatik olarak yeniden yapılandırılacak ve yönetime yeniden kaydedilir.
+- **Cihaz kurulumu sırasında kullanıcıların ağa bağlanmasını gerektir (yalnızca Windows Insider)** - Windows 10 kurulumu sırasında Ağ sayfasından ileriye gitmek için cihazın bir ağa bağlanmasını gerekli kılmak için **Gerektir** olarak ayarlayın. Bu özellik önizlemedeyken bu ayarı kullanmak için Windows Insider derleme 1809 veya sonrası gerekir.
 
 ## <a name="password"></a>Parola
 -   **Parola** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.

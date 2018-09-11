@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: b3c374e4ce6baeab8cc6fde3f6c45c63c48e34dd
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 4c268f9061ae624c1f85e386e5633b14334860b7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903084"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313147"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows AutoPilot kullanarak Windows cihazlarını kaydetme
 Windows AutoPilot, cihaz sağlamayı kolaylaştırır. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve AutoPilot ile özel işletim sistemi görüntülerini derleme, bakım ve uygulama zahmetine katlanmanız gerekmeden son kullanıcılarınıza yeni cihazlar verebilirsiniz. AutoPilot cihazları yönetmek için Intune kullandığınızda cihazlar kaydedildikten sonra ilkeler, profiller, uygulamalar ve daha fazlasını yönetebilirsiniz. Faydalar, senaryolar ve önkoşullara genel bir bakış için bkz. [Windows AutoPilot’a Genel Bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -72,11 +72,13 @@ AutoPilot dağıtım profilleri, AutoPilot cihazları yapılandırmak için kull
     - **Kendi kendine dağıtım (önizleme)**: (Windows 10 Insider Preview Derleme 17672 veya sonrası) Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkili değildir. Cihazın sağlanması için kullanıcı kimlik bilgileri gerekli değildir.
 4. **Azure AD’ye farklı katıl** kutusunda **Azure AD katılımlı**’yı seçin.
 5. **İlk kez çalıştırma deneyimi (OOBE)** öğesini seçin, aşağıdaki seçenekleri yapılandırın ve **Kaydet**’e tıklayın:
-    - **Dil (Bölge)**\*: Cihazda kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
-    - **Klavyeyi otomatik olarak yapılandır**\*: Bir **Dil (Bölge)** seçildiyse, klavye seçimi sayfasını atlayın. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
+    - **Dil (Bölge)***: Cihazda kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
+    - **Klavyeyi otomatik olarak yapılandır***: Bir **Dil (Bölge)** seçildiyse, klavye seçimi sayfasını atlamak için **Evet** olarak ayarlayın. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
     - **Son kullanıcı lisans sözleşmesi (EULA)**: (Windows 10, sürüm 1709 veya sonrası) EULA’nın kullanıcılara gösterilip gösterilmeyeceğini seçin.
     - **Gizlilik ayarları**: Gizlilik ayarlarının kullanıcılara gösterilip gösterilmeyeceğini seçin.
-    - **Kullanıcı hesap türü**: Kullanıcı hesabının türünün **Yönetici** mi yoksa **Standart** mı olacağını seçin. 
+    - **Hesap değiştirme seçeneklerini gizle (yalnızca Windows Insider)**: Şirket oturum açma ve etki alanı hatası sayfalarında hesap değiştirme seçeneklerinin görüntülenmesini önlemek için **Gizle** olarak ayarlayın. Bu seçenek, [Azure Active Directory’de şirket markasının yapılandırılmasını](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) gerektirir.
+    - **Kullanıcı hesap türü**: Kullanıcı hesabının türünün **Yönetici** mi yoksa **Standart** mı olacağını seçin.
+    - **Bilgisayar adı şablonunu uygula (yalnızca Windows Insider)**: Sağlama sırasında bir cihazı adlandırırken kullanılacak bir şablon oluşturmak için **Evet** olarak ayarlayın. Adlar en fazla 15 karakter olmalıdır; harf, sayı ve kısa çizgi içerebilir. Ancak tamamen sayıdan oluşamaz. Donanıma özgü seri numarası eklemek için [%SERIAL% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanın. Alternatif olarak, x değerinin eklenecek basamak sayısına karşılık geldiği [%RAND:x% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanarak rastgele bir sayı dizesi ekleyin. 
 
 6. Profili oluşturmak için **Oluştur**’a tıklayın. AutoPilot dağıtım profili artık cihazlara atanmak üzere hazırdır.
 
@@ -105,6 +107,22 @@ Bir AutoPilot dağıtım profili oluşturduktan sonra bu profilin bazı kısıml
 AutoPilot programından kaç tane cihaza AutoPilot dağıtım profili atanmamış olduğunu gösteren bir uyarı görüntüleyebilirsiniz. Uyarıdaki bilgileri kullanarak profiller oluşturun ve bunları profil atanmamış cihazlara atayın. Uyarıya tıkladığınızda, Windows AutoPilot cihazların tam listesini ve cihazlar hakkında ayrıntılı bilgileri görürsünüz.
 
 Atanmamış cihazlar için uyarı görmek istiyorsanız [Azure portalında Intune’da](https://aka.ms/intuneportal) **Cihaz kaydı** > **Genel bakış** > **Atanmamış cihazlar**’ı seçin.  
+
+
+## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Belirli bir Autopilot cihazına kullanıcı atama
+
+Belirli bir Autopilot cihazına kullanıcı atayabilirsiniz. Bu atama, Windows kurulumu sırasında [şirket markalı](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) oturum açma sayfasında Azure Active Directory’den bir kullanıcıyı önceden doldurur. Ayrıca özel bir karşılama adı ayarlamanıza imkan verir. Bu, Windows oturum açmayı önceden doldurmaz veya değiştirmez. Yalnızca lisanslı Intune kullanıcıları bu yolla atanabilir.
+
+Önkoşul: Azure Active Directory Şirket Portalı yapılandırılmalı.
+
+1. [Azure portalında Intune’da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Cihazlar** > cihazı seçin **Kullanıcı ata**’yı seçin.
+    ![Kullanıcı ata ekran görüntüsü](media/enrollment-autopilot/assign-user.png)
+2. Intune’u kullanmak için Azure lisanslı bir kullanıcıyı seçin ve **Seç**’e tıklayın.
+    ![Kullanıcı seçme ekran görüntüsü](media/enrollment-autopilot/select-user.png)
+3. **Kolay Ad** kutusuna kolay bir ad girin veya varsayılanı kabul edin. Bu, kullanıcı Windows kurulumu sırasında oturum açtığında görüntülenen kolay addır.
+    ![Kolay ad ekran görüntüsü](media/enrollment-autopilot/friendly-name.png)
+4. **Tamam**’ı seçin.
+
 
 ## <a name="delete-autopilot-devices"></a>AutoPilot cihazlarını silme
 

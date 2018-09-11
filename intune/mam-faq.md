@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329935"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312807"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
@@ -112,10 +112,12 @@ Kişisel Kimlik Numarası (PIN), bir uygulamadaki kuruluş verilerine doğru kul
 
     - **Kullanılabilirliği iyileştirmek için PIN, aynı yayımcının uygulamaları arasında paylaşılır:** iOS’ta bir uygulama PIN’i **aynı uygulama yayımcısına ait** tüm uygulamalar arasında paylaşılır. Android’de bir uygulama PIN’i tü uygulamalar arasında paylaşılır.
     - **Cihaz yeniden başlatma işleminden sonra ‘(dakika) sonra erişim gereksinimlerini yeniden denetle’ davranışı:** Bir “PIN zamanlayıcısı”, Intune uygulama PIN’inin tekrar ne zaman gösterileceğini belirleyen, işlem yapılmadan geçen dakika sayısını izler. iOS’ta PIN zamanlayıcısı, cihaz yeniden başlatma işleminden etkilenmez. Bu nedenle cihazı yeniden başlatmak, Intune PIN ilkesine sahip bir iOS uygulamasında kullanıcının işlem yapmadan geçirdiği dakika sayısı üzerinde hiçbir etki yapmaz. Android’de ise PIN zamanlayıcısı, cihaz yeniden başlatıldığında sıfırlanır. Dolayısıyla Intune PIN ilkesine sahip Android uygulamaları, **cihaz yeniden başlatma işleminden sonra** büyük olasılıkla ‘(dakika) sonra erişim gereksinimlerini yeniden denetle’ ayarının değerini dikkate almaksızın bir uygulama PIN’i isteyecektir.  
-    - **PIN ile ilişkili zamanlayıcının kayıt yapısı:** Bir uygulamaya (uygulama A) erişmek için bir PIN girildiğinde ve uygulama ön plandan (ana girdi odağı) ayrıldığında, bu PIN için PIN zamanlayıcısı sıfırlanır. Bu PIN’i paylaşan başka bir uygulama (uygulama B), zamanlayıcı sıfırlandığı için kullanıcıdan PIN girmesini istemeyecektir. “(dakika) sonra erişim gereksinimlerini yeniden denetle” değeri yeniden karşılandığında istem yeniden görüntülenecektir. 
+    - **PIN ile ilişkili zamanlayıcının kayıt yapısı:** Bir uygulamaya (uygulama A) erişmek için bir PIN girildiğinde ve uygulama ön plandan (ana girdi odağı) ayrıldığında, bu PIN için PIN zamanlayıcısı sıfırlanır. Bu PIN’i paylaşan başka bir uygulama (uygulama B), zamanlayıcı sıfırlandığı için kullanıcıdan PIN girmesini istemeyecektir. “(dakika) sonra erişim gereksinimlerini yeniden denetle” değeri yeniden karşılandığında istem yeniden görüntülenecektir.
+
+iOS cihazlarda PIN, farklı yayımcılardan gelen uygulamalar arasında paylaşılsa bile **(dakika) sonra erişim gereksinimlerini yeniden denetle** süresi geçtikten sonra ana giriş odağı olmayan uygulamada istem yeniden görüntülenir. Yani, örneğin bir kullanıcıda _X_ yayımcısının _A_ uygulaması ve _Y_ yayımcısının _B_ uygulaması varsa bu iki uygulama aynı PIN’i paylaşır. Kullanıcı, _A_ uygulamasına odaklanmıştır (uygulama ön plandadır) ve _B_ uygulaması simge durumuna küçültülmüştür. **(dakika) sonra erişim gereksinimlerini yeniden denetle** süresi geçtikten sonra kullanıcı _B_ uygulamasına geçerse PIN gerekir.
 
       >[!NOTE] 
-      > Kullanıcının erişim gereksinimlerini (örneğin PIN istemini) daha sık doğrulamak için “(dakika) sonra erişim gereksinimlerini yeniden denetle” ayarındaki değeri azaltmanız önerilir. 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **Intune PIN’i, Outlook ve OneDrive için yerleşik uygulama PIN’leriyle birlikte nasıl çalışır?**<br></br>
 Intune PIN’i, işlem yapmadan geçen süreye (yani ‘(dakika) sonra erişim gereksinimlerini yeniden denetle’ değerine) dayalı olarak çalışır. Bu sebeple Intune PIN istemleri, genelde varsayılan olarak uygulama başlatmasına bağlı olan Outlook ve OneDrive için yerleşik uygulama PIN’lerinden bağımsız olarak çalışır. Kullanıcı iki PIN istemini de aynı anda alırsa beklenen davranış, Intune PIN’inin öncelik kazanmasıdır. 
@@ -137,13 +139,13 @@ BT yöneticileri uygulama verilerinin şifrelenmesini gerektiren bir uygulama ko
 - **Neler şifrelenir?**<br></br> BT yöneticisinin uygulama koruma ilkesine uygun şekilde, yalnızca “kurumsal” olarak işaretlenen veriler şifrelenir. Veriler bir iş konumundan geliyorsa “kurumsal” olarak kabul edilir. Office uygulamaları söz konusu olduğunda Intune, aşağıdakileri iş konumu olarak kabul eder: e-posta (Exchange) veya bulut depolama (OneDrive İş hesabı içeren OneDrive uygulaması). Intune Uygulaması Sarmalama Aracı ile yönetilen iş kolu uygulamaları söz konusu olduğunda, tüm veriler “kurumsal” olarak kabul edilir.
 
 **Intune verileri uzaktan nasıl temizler?**<br></br>
-Intune üç farklı şekilde uygulama verilerini temizleyebilir: tam cihaz temizleme, MDM için seçmeli temizleme ve MAM için seçmeli temizleme. MDM için uzaktan silme hakkında daha fazla bilgi için bkz. [Fabrika sıfırlaması kullanarak cihazları kaldırma veya şirket verilerini kaldırma](devices-wipe.md#factory-reset). MAM kullanarak seçmeli silme hakkında daha fazla bilgi için bkz. [Şirket verilerini kaldırma](devices-wipe.md#remove-company-data) ve [Uygulamalardan yalnızca şirket verilerini temizleme](apps-selective-wipe.md).
+Intune üç farklı şekilde uygulama verilerini temizleyebilir: tam cihaz temizleme, MDM için seçmeli temizleme ve MAM için seçmeli temizleme. MDM için uzaktan silme hakkında daha fazla bilgi için bkz. [Silme veya kullanımdan kaldırma işlemlerini kullanarak cihaz kaldırma](devices-wipe.md). MAM kullanarak seçmeli silme hakkında daha fazla bilgi için bkz. [Kullanımdan kaldırma eylemi](devices-wipe.md#retire) ve [Uygulamalardan yalnızca şirket verilerini silme](apps-selective-wipe.md).
 
-- **Fabrika sıfırlaması nedir?**<br></br> [Fabrika sıfırlaması](devices-wipe.md), cihazı varsayılan fabrika ayarlarına döndürerek tüm kullanıcı verilerini ve ayarlarını **cihazdan** kaldırır. Cihaz Intune’dan kaldırılır.
+- **Silme nedir?**<br></br> [Silme](devices-wipe.md), cihazı varsayılan fabrika ayarlarına döndürerek tüm kullanıcı verilerini ve ayarlarını **cihazdan** kaldırır. Cihaz Intune’dan kaldırılır.
   >[!NOTE]
-  > Fabrika sıfırlaması yalnızca Intune mobil cihaz yönetiminde (MDM) kayıtlı cihazlarda gerçekleştirilebilir.
+  > Silme yalnızca Intune mobil cihaz yönetimine (MDM) kayıtlı cihazlarda gerçekleştirilebilir.
 
-- **MDM için seçmeli temizleme nedir?**<br></br> Şirket verilerini kaldırmak hakkında bilgi edinmek için [Cihaz kaldırma - Şirket verilerini kaldırma](devices-wipe.md#remove-company-data) bölümüne bakın.
+- **MDM için seçmeli temizleme nedir?**<br></br> Şirket verilerini kaldırma hakkında bilgi edinmek için [Cihaz kaldırma - kullanımdan kaldırma](devices-wipe.md#retire) bölümüne bakın.
 
 - **MAM için seçmeli temizleme nedir?**<br></br> MAM için seçmeli temizleme, şirket uygulama verilerini uygulamadan kaldırır. Intune Azure portalı kullanarak istek başlatılır. Bir silme isteği başlatma hakkında bilgi edinmek için bkz. [Uygulamalardan yalnızca şirket verilerini temizleme](apps-selective-wipe.md).
 

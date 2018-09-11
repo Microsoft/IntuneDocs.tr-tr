@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117931"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313187"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -34,11 +34,14 @@ Bu makalede, tüm cihazlarınızı ve özelliklerini Azure portalında nasıl g�
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihazlar** > **Tüm cihazlar**’a gidin ve listelenen cihazlarınızdan birini seçip ayrıntılarını görüntüleyin:
 
-   - **Genel Bakış**, cihazın adını gösterir ve kendi cihazını getir (KCG) cihazı olup olmadığı, ne zaman iade edildiği gibi bazı temel özellikleri listeler. **Diğer**’i seçerek yapabilecekleriniz şu şekildedir:
-     - Şirket verilerini kaldırma
-     - Cihazı silme
-     - Cihazı uzaktan kilitleme
-     - Silme
+   - **Genel Bakış**, cihazın adını gösterir ve kendi cihazını getir (KCG) cihazı olup olmadığı, ne zaman iade edildiği gibi bazı temel özellikleri listeler. Cihazda aşağıdaki işlemleri yapabilirsiniz:
+      - [Devre Dışı Bırak](devices-wipe.md#retire)
+        - [Silme](devices-wipe.md#wipe)
+        - [Uzaktan kilitleme](device-remote-lock.md)
+        - [Cihazı eşitleme](device-sync.md)
+        - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
+        - [Yeniden başlatma](device-restart.md) (yalnızca Windows)
+        - [Yeni Başlangıç](device-fresh-start.md) (yalnızca Windows)
      - Uzaktan yardım oturumu başlatma
    - **Özellikler**’i kullanarak [oluşturduğunuz bir cihaz kategorisini](device-group-mapping.md) atayabilir ve cihazın sahipliğini kişisel veya şirket olarak değiştirebilirsiniz.
    - **Donanımda** cihaz hakkında pek çok bilgi bulunur. Örneğin cihaz kimliği, işletim sistemi ve sürümü, depolama alanı, model ve üretici, koşullu erişim ayarları vb.

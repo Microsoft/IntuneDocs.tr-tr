@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
-ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
+ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2018
-ms.locfileid: "40251504"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347483"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS cihazlar için Intune’da uygulama başına Sanal Özel Ağ (VPN) ayarlama
 
@@ -34,6 +34,7 @@ Uygulama başına VPN şu anda şu sağlayıcılar için kullanılabilir durumda
  - Pulse Connect Secure
  - SonicWall
  - Palo Alto Networks GlobalProtect
+ - Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Uygulama başına VPN önkoşulları
 
@@ -145,7 +146,7 @@ VPN profilinizi ekledikten sonra, uygulamayı ve Azure AD grubunu bu profil ile 
 
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **Mobil uygulamalar**’ı seçin.
+3. **İstemci uygulamaları**’nı seçin.
 4. **Uygulamalar**’a tıklayın.
 5. Uygulama listesinden uygulamayı seçin.
 6. **Atamalar**’a tıklayın.
@@ -187,6 +188,10 @@ Uygulama başına VPN’niz ayarlı ve uygulamanızla ilişkili olduğunda, bağ
     - F5 Access
     - Pulse Secure
     - SonicWall Mobile Connect
+    - Zscaler Uygulaması
+
+    > [!NOTE]
+    > Pulse Secure VPN uygulamasını kullanıyorsanız uygulama katmanı veya paket katmanı tünelini kullanmayı seçebilirsiniz. **ProviderType** değerini uygulama katmanı tüneli için **app-proxy** olarak veya paket katmanı tüneli için **packet-tunnel** ayarlayın.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Uygulama başına VPN kullanarak bağlanma
 

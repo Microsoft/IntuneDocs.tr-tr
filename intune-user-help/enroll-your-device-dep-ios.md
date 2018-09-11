@@ -1,11 +1,11 @@
 ---
-title: iOS cihazınızı Intune’a Aygıt Kayıt Programı ile kaydetme | Microsoft Docs
-description: iOS cihazının DEP ile Intune’a nasıl kaydedildiğini açıklar
+title: Kuruluş tarafından sağlanan iOS cihazınızı yönetime kaydedin. | Microsoft Docs
+description: Kuruluşunuz tarafından satın alınan ve sağlanan bir iOS cihazın Intune’a nasıl kaydedildiğini açıklar
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9d1154d942069ad69294d4235c894f88513dd848
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b93f02011b0900b1a64ae6cb10a84a52cd40187a
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016416"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241805"
 ---
-# <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>iOS cihazınızı Intune’a Aygıt Kayıt Programı ile kaydedin
+# <a name="enroll-your-organization-provided-ios-device-in-management"></a>Kuruluş tarafından sağlanan iOS cihazınızı yönetime kaydedin
 
-Aygıt Kayıt Programı, şirketlerin fazla sayıda iOS cihazını yönetmesini kolaylaştırmak için Apple tarafından sunulan bir hizmettir. Şirketiniz kendi cihazınızı getirmenize izin verdiyse bu sayfadaki adımlar yerine [normal iOS kaydetme adımlarını](enroll-your-device-in-intune-ios.md) izleyin. Şirketiniz size bir iOS cihaz verip cihazın Aygıt Kayıt Programı’nın bir parçası olduğunu söylediyse okumaya devam edin.
+Yeni iOS cihazınızı Intune yönetimine kaydetmeyi öğrenin.  
+
+Size iş veya okul tarafından sağlanan iOS cihazlar genellikle elinize ulaşmadan önce yapılandırılmış olur. Cihazınızı ilk kez açtığınızda ve oturum açtığınızda kuruluşunuz cihaza bu önceden yapılandırılmış ayarları gönderir. Cihazınızın kurulumu tamamlandıktan sonra, iş veya okul kaynaklarınıza erişim elde edersiniz.  
+
+Kuruluma başlamak için cihazınızı açın ve iş veya okul kimlik bilgilerinizle oturum açın. Bu makalenin kalan bölümünde Kurulum Yardımcısı'nda ilerlerken göreceğiniz adımlar ve ekranlar açıklanır. 
+
+## <a name="what-is-apple-dep"></a>Apple DEP nedir?
+Kuruluşunuz cihazlarını *Apple Aygıt Kayıt Programı* (DEP) adı verilen bir hizmet yoluyla satın almış olabilir. Apple DEP, kuruluşların çok sayıda iOS veya macOS cihaz satın almasına imkan tanır. Ardından kuruluşlar bu cihazları Intune gibi tercih ettikleri bir mobil cihaz yönetim sağlayıcısında yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi edinmek istiyorsanız bkz. [iOS cihazları Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
+
+## <a name="set-up-your-ios-device"></a>iOS cihazınızı ayarlama  
+Kuruluş tarafından sağlanan bir cihaz yerine kendi iOS cihazınızı kullanıyorsanız, [kişisel cihazlara ve kendi cihazını getir kapsamındaki cihazlara](enroll-your-device-in-intune-ios.md) yönelik adımları izleyin.  
 
 1. iOS cihazınızı başlatın. 
 2. **Dil** ayarınızı yaptıktan sonra cihazınızı Wi-Fi’a bağlayın.
@@ -46,4 +56,4 @@ Aygıt Kayıt Programı, şirketlerin fazla sayıda iOS cihazını yönetmesini 
 6. **Hüküm ve Koşullar**’ı onaylayın ve Apple’a tanılama bilgileri göndermek isteyip istemediğinizi seçin.
 7. Kaydınızı tamamladığınızda, cihazınız daha fazla eylem gerçekleştirmenizi isteyebilir. Bu adımlardan bazıları, e-posta erişimi için parolanızı girmek veya bir geçiş kodu ayarlamak olabilir.
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://portal.manage.microsoft.com#HelpDeskDialog) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

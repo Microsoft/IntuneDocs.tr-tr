@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400292"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314032"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune - Genel önizleme’de eSIM hücresel profilleri yapılandırma
 
@@ -179,7 +179,7 @@ Cihazı Azure AD grubundan kaldırdığınızda eSIM profili de kaldırılır. �
 2. Azure AD grubuna gidin ve cihazı gruptan kaldırın.
 3. Kaldırılan cihaz Intune'la iletişim kurduğunda, güncelleştirilen ilke değerlendirilir ve eSIM profili kaldırılır.
 
-Ayrıca kullanıcı cihazın kaydını kaldırdığında veya cihazda [şirket verilerini kaldırma](devices-wipe.md#remove-company-data) veya [cihaz eylemini sıfırlama](devices-wipe.md#factory-reset) işlemleri çalıştırıldığında eSIM profili de kaldırılır.
+Ayrıca cihaz [kullanımdan kaldırıldığında](devices-wipe.md#retire) veya cihazda [cihazı sıfırlama uzak eylemi](devices-wipe.md#wipe) gerçekleştirildiğinde eSIM profili de kaldırılır.
 
 > [!NOTE]
 > Profilin kaldırılması faturalamayı durdurmaz. Cihazınızın faturalama durumunu denetlemek için cep telefonu operatörünüzle bağlantı kurun.

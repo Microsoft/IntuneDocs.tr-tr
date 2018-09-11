@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 51e52e26357143d214c4bcf7856dfdb75a68653c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905946"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329778"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune'da Work cihaz kısıtlama ayarları
 
@@ -42,7 +42,7 @@ Bu makalede, Android iş profili cihazları için yapılandırabileceğiniz Micr
   - **Otomatik olarak izin ver**
   - **Otomatik olarak reddet**
 
-    İzinlerin verme durumu, (**Mobil Uygulamalar** > **Uygulama yapılandırma ilkeleri** altından) bir Uygulama Yapılandırma ilkesi kullanılarak belirli uygulamalar için daha da netleştirilebilir.
+    İzinlerin verme durumu (**İstemci uygulamaları** > **Uygulama yapılandırma ilkeleri** altında), bir Uygulama Yapılandırma ilkesi kullanılarak belirli uygulamalar için daha da netleştirilebilir.
 
 - **Hesap ekleme ve kaldırma**
 

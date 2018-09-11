@@ -5,66 +5,69 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/18/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
-ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
+ms.openlocfilehash: 0af5fb071c6abb01a2819a5d9c73f4e01bf7cb7a
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132468"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312841"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
-Uyumluluk raporları, yöneticilerin kuruluşlarındaki cihazların uyumluluk duruşunu analiz etmesine ve kuruluşlarındaki kullanıcıların karşılaştığı uyumluluk sorunlarını hızla gidermelerine yardımcı olur. Cihazların genel uyumluluk durumunu, tek bir ayar için uyumluluk durumunu ve tek bir ilke için uyumluluk durumunu görüntüleyebilir ve tek tek cihazların ayrıntılarına inerek söz konusu cihazı etkileyen belirli ayar ve ilkelere bakabilirsiniz.
+Uyumluluk raporları, cihaz uyumluluğunu gözden geçirmenize ve kuruluşunuzdaki uyumlulukla ilgili sorunları gidermenize yardımcı olur. Bu raporları kullanarak şu konulardaki bilgileri görüntüleyebilirsiniz:
 
-## <a name="before-you-begin"></a>Başlamadan önce
+- Cihazların genel uyumluluk durumu
+- Ayrı bir ayarın uyumluluk durumu
+- Ayrı bir ilkenin uyumluluk durumu
+- Cihazları etkileyen belirli ayar ve ilkeleri görüntülemek için bireysel cihazların detayına gitme
 
-Azure portalında **Intune Cihaz uyumluluk panosu**’nu bulmak için şu adımları izleyin:
+## <a name="open-the-compliance-dashboard"></a>Cihaz uyumluluğu panosunu açma
 
-1. [Azure portalında](https://portal.azure.com) Intune kimlik bilgilerinizle oturum açın.
+**Intune cihaz uyumluluğu panosunu** açın:
 
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 
-3. **Cihaz uyumluluğu** > **Genel Bakış**’ı seçin. **Cihaz uyumluluğu panosu** açılacaktır.
+2. **Cihaz uyumluluğu** > **Genel Bakış**’ı seçin. **Cihaz uyumluluğu panosu** açılacaktır.
 
 > [!IMPORTANT]
 > Cihaz uyumluluk ilkelerini almak için, cihazların Intune'a kayıtlı olmaları gerekir.
 
-## <a name="device-compliance-dashboard"></a>Cihaz uyumluluk panosu
+## <a name="dashboard-overview"></a>Panoya genel bakış
 
-**Cihaz uyumluluğu panosu**’nda farklı cihazların uyumluluğunu, koruma durumunu ve daha fazlasını izleyebilirsiniz. Aşağıdaki raporları görüntüleyebilirsiniz:
+Pano açıldığında tüm uyumluluk raporları ile genel bir bakış elde edersiniz. Bu raporlarda şunları görüp denetleyebilirsiniz:
 
-- Genel cihaz uyumluluk toplamı
-
+- Genel cihaz uyumluluğu
 - İlkeye göre cihaz uyumluluğu
-
 - Ayara göre cihaz uyumluluğu
-
 - Cihaz koruma durumu
-
 - Tehdit aracısı durumu
 
-![Cihaz uyumluluk panosunu gösteren resim](./media/idc-1.png)
+![Pano görüntüsü, cihaz uyumluluğu panosunu ve farklı raporları gösterir](./media/compliance-policy-monitor/idc-1.png)
 
-Ayrıca, tek bir cihaz için geçerli olan uyumluluk ilkelerini ve ayarlarını, söz konusu ayarların cihazdaki son uyumluluk durumunu görüntüleyebilirsiniz.
+Bu raporda gezindikçe her bir ayar için uyumluluk durumu da dahil olmak üzere belirli bir cihazda geçerli bazı uyumluluk ilkeleri ve ayarlarını da görebilirsiniz.
 
-### <a name="overall-device-compliance-aggregate-report"></a>Genel cihaz uyumluluk toplamı raporu
+### <a name="device-compliance-status-report"></a>Cihaz uyumluluk durumu raporu
 
-Intune’a kayıtlı tüm cihazlar için toplam uyumluluk durumunu gösteren bir halka grafiktir. Cihaz uyumluluk durumları iki farklı veritabanında (Intune ve Azure Active Directory) tutulur. Cihaz uyumluluk ilkesi durumları hakkında daha ayrıntılı bilgiler aşağıdadır:
+Grafik, Intune’a kayıtlı tüm cihazlar için uyumluluk durumunu gösterir. Cihaz uyumluluk durumları iki farklı veritabanında tutulur: Intune ve Azure Active Directory. 
 
-- **Uyumlu**: Cihaz, yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesi ayarını başarıyla uyguladı.
+Farklı cihaz uyumluluk ilkesi durumlarının açıklamaları:
 
-- **Uyumlu değil:** Cihaz, yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamadı veya kullanıcı, yönetici tarafından hedeflenen ilkeler ile uyum sağlayamadı.
+- **Uyumlu**: Cihaz, bir veya daha fazla cihaz uyumluluk ilkesi ayarını başarıyla uyguladı.
 
-- **Yetkisiz kullanım süresi içinde:** Cihaza yönetici tarafından bir veya daha fazla cihaz uyumluluk ilkesi ayarı hedeflendi ancak kullanıcı ilkeleri henüz uygulamadı. Bu nedenle cihaz uyumlu değil, ancak yönetici tarafından tanımlanan yetkisiz kullanım süresi içinde bulunuyor.
+- **Yetkisiz kullanım süresinde:** Cihaz, bir veya daha fazla cihaz uyumluluk ilkesi ayarı tarafından hedefleniyor. Ancak kullanıcı henüz bu ilkeleri uygulamadı. Bu, cihazın uyumsuz ancak yönetici tarafından belirlenen yetkisiz kullanım süresinde olduğunu gösterir.
 
-  - Uyumlu olmayan cihazlara yönelik eylemler hakkında daha fazla bilgi edinin.
+  - [Uyumlu olmayan cihazlara yönelik eylemler](actions-for-noncompliance.md) hakkında daha fazla bilgi edinin.
+
+- **Değerlendirilmedi**: Yeni kaydedilen cihazlar için ilk durum. Veya uyumluluk ilkesi atanmamış ve uyumluluk denetimi tetikleyicisi olmayan cihazlar.
+
+- **Uyumsuz**: Cihaz, bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamadı. Veya kullanıcı ilkelere uyum sağlamadı.
 
 - **Cihaz eşitlenmedi:** Cihaz, aşağıdaki nedenlerden biri sonucunda cihaz uyumluluk ilkesi durumunu bildiremedi:
 
@@ -75,88 +78,68 @@ Intune’a kayıtlı tüm cihazlar için toplam uyumluluk durumunu gösteren bir
 > [!IMPORTANT]
 > Intune’a kaydedilmiş olan ancak hiçbir cihaz uyumluluk ilkesi tarafından hedeflenmeyen cihazlar, **Uyumlu** demeti altında bu rapora dahil edilir.
 
-#### <a name="drill-down-option"></a>Detaya gitme seçeneği
+#### <a name="drill-down-for-more-details"></a>Daha fazla bilgi için detaya gidin
 
-**Cihaz uyumluluğu panosu**’nda bir cihaz uyumluluğu kutucuğunu seçerek cihaz uyumluluk ilkeleri tarafından hedeflenen her bir cihaz için belirli bir **uyumluluk durumu**, **kullanıcının e-posta diğer adı**, **cihaz modeli** ve **konum** detayına gidebilirsiniz.
+**Cihaz uyumluluk durumu** grafiğinde bir durum seçin. Örneğin **Uyumsuz** durumunu seçin:
 
-![Cihaz uyumluluk panosu ayrıntılarını gösteren resim](./media/idc-2.png)
+![Uyumsuz durumunu seçme](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-Belirli bir kullanıcı hakkında daha fazla ayrıntı gerekiyorsa kullanıcının e-posta diğer adını yazarak Cihaz uyumluluğu grafik raporunu filtreleyebilirsiniz.
+Bu durumdaki cihazlar hakkında işletim sistemi platformu, son iade etme tarihi vb. gibi daha fazla ayrıntı görüntülenir. 
 
-![Belirli bir kullanıcı için Cihaz uyumluluk panosunu gösteren resim](./media/idc-3.png)
+![Pano görüntüsü, bu durumdaki cihazlar hakkında daha fazla ayrıntı sağlar](./media/compliance-policy-monitor/drill-down-details.png)
 
-Ayrıca, Cihaz uyumluluk grafiğinde farklı uyumluluk durumlarına tıklayarak kullanıcıya ait cihazların uyumluluk ilkesi durumları hakkında daha ayrıntılı bilgiler görebilirsiniz.
+Belirli bir kullanıcıya ait tüm cihazları görmek istiyorsanız kullanıcının e-postasını yazarak grafik raporunu filtreleyebilirsiniz:
 
-![Farklı durumlar için Cihaz uyumluluk panosunu gösteren resim](./media/idc-4.png)
+![Belirli bir kullanıcıya ait tüm cihazları göstermek için e-posta adresi filtresi](./media/compliance-policy-monitor/idc-3.png)
 
-#### <a name="filter"></a>Filtrele
+#### <a name="filter-and-columns"></a>Filtre ve sütunlar
 
-**Filtre düğmesini** seçtiğinizde aşağıdaki seçenekleri içeren filtre geçici açılır öğesi görünür:
+![Grafikteki sonuçları değiştirmek için Filtre ve Sütun’u seçme](./media/compliance-policy-monitor/filter-columns.png)
 
-- Model
+**Filtrele** düğmesini seçtiğinizde uyumluluk durumu, jailbreak uygulanmış cihazlar ve daha fazlasını içeren seçenekleri barındıran filtre öğesi açılır. Sonuçları güncelleştirmek için filtreyi **Uygulayın**.
 
-  - Serbest biçimli arama dizesi kabul eden metin kutusu
+Grafik çıkışında sütun eklemek ve kaldırmak için **Sütunlar** özelliğini kullanın. Örneğin **Kullanıcı asıl adı**, cihazda kayıtlı e-posta adreslerini gösterebilir. Sonuçları güncelleştirmek için sütunları **Uygulayın**.
 
-- Platform
+#### <a name="device-details"></a>Cihaz ayrıntıları
 
-  - Android
+Grafikten belirli bir cihaz seçin ve daha sonra **Cihaz uyumluluğu**’na tıklayın:
 
-  - iOS
+![Belirli bir cihazı ve daha sonra Cihaz Uyumluluğu’nu seçerek uygulanan uyumluluk ilkelerini görüntüleme](./media/compliance-policy-monitor/see-policies-applied-specific-device.png)
 
-  - Mac OS
-
-  - Windows
-
-  - Windows Phone
-
-- Durum
-
-  - Uyumlu
-
-  - Uyumlu Değil
-
-  - Yetkisiz Kullanım süresi içinde
-
-  - Bilinmiyor
-
-  - Hata
-
-**Güncelleştir düğmesini** seçtiğinizde geçici açılır öğe kapatılır ve sonuçlar, seçilen filtre ölçütleri kullanılarak güncelleştirilir.
-
-##### <a name="device-details"></a>Cihaz ayrıntıları
-
-Bir cihaz seçildiğinde, bu cihazın seçili olduğu **Cihazlar** bölümü açılır. Burada, söz konusu cihaz için uygulanan cihaz uyumluluk ilkesi ayarı hakkında daha ayrıntılı bilgiler sunulur.
-
-Cihaz ilkesi ayarını seçtiğinizde, yönetici tarafından hedeflenen bu cihaz uyumluluk ayarının kaynağı olan cihaz uyumluluk ilkesinin adını görebilirsiniz.
+Burada, söz konusu cihaz için uygulanan cihaz uyumluluk ilkesi ayarları hakkında daha ayrıntılı bilgiler sunulur. Belirli bir ilkeyi seçtiğinizde ilkedeki tüm ayarlar gösterilir.
 
 ### <a name="devices-without-compliance-policy"></a>Uyumluluk ilkesi olmayan cihazlar
-Bu rapor, kendisine atanmış bir uyumluluk ilkesi olmayan cihazları belirler. Uyumluluk ilkesi olmayan cihazları “uyumsuz” olarak işaretleyen güvenlik ayarının sunulmasıyla birlikte bu cihazların belirlenebilmesi önem kazandı. Cihazlar belirlendikten sonra bunlara en az bir uyumluluk ilkesi atayabilirsiniz.
+**Cihaz uyumluluğu** > **Genel bakış** bölümündeki rapor, atanmış uyumluluk ilkeleri olmayan cihazları da belirler:
 
-> [!NOTE]
-> Yeni güvenlik ayarı, Intune portalında yapılandırılabilir. **Cihaz uyumluluğu**’nu seçin, **Kurulum** altında **Uyumluluk ilkesi ayarları**’na tıklayın. **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle:** seçeneğini **Uyumlu** veya **Uyumsuz** olarak ayarlamak için iki durumlu düğmeyi kullanın. Bu [Intune hizmetinde güvenlik geliştirmesi](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) hakkında daha fazla bilgi edinin.
+![Uyumluluk ilkesi olmayan cihazları görüntüleme](./media/compliance-policy-monitor/devices-without-policies.png)
 
-![Uyumluluk ilkesi olmayan Cihazlar raporunu gösteren görüntü](./media/idc-12.png)
+Kutucuğu seçtiğinizde uyumluluk ilkeleri olmayan cihazlar görüntülenir. Ayrıca cihazın kullanıcısı, ilke dağıtım durumu ve modeli de gösterilir.
 
-**Uyumluluk ilkesi olmayan cihazlar** kutucuğu Cihaz uyumluluğu panosunda bulunur ve uyumluluk ilkesi olmayan tüm cihazları, cihazın kullanıcısını, uyumluluk durumunu ve modelini gösterir.
+#### <a name="what-you-need-to-know"></a>Bilmeniz gerekenler
 
-> [!NOTE]
-> Herhangi bir tür uyumluluk ilkesi atanmış kullanıcılar, cihaz platformu ne olursa olsun raporda yer almaz. Örneğin Android cihazı olan bir kullanıcıya yanlışlıkla Windows uyumluluk ilkesi atamışsanız cihaz raporda görüntülenmez. Ancak Intune, bu Android cihazı uyumsuz olarak değerlendirir. Sorunların önüne geçmek adına her bir cihaz platformu için ilke oluşturup bunları tüm kullanıcılara dağıtmanızı öneririz.
+- **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle** güvenlik ayarı için uyumluluk ilkesi olmayan cihazları belirlemek önemlidir. Cihazlar belirlendikten sonra bunlara en az bir uyumluluk ilkesi atayabilirsiniz.
+
+  Bu güvenlik ayarı, Intune portalında yapılandırılabilir. **Cihaz uyumluluğu** > **Uyumluluk ilkesi ayarları**’nı seçin. Daha sonra **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle** seçeneğini **Uyumlu** veya **Uyumsuz** olarak ayarlayın. 
+
+  Bu [Intune hizmetinde güvenlik geliştirmesi](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) hakkında daha fazla bilgi edinin.
+
+- Herhangi bir tür uyumluluk ilkesi atanmış kullanıcılar, cihaz platformu ne olursa olsun raporda yer almaz. Örneğin Android cihazı olan bir kullanıcıya Windows uyumluluk ilkesi atamışsanız cihaz raporda görüntülenmez. Ancak Intune, bu Android cihazı uyumsuz olarak değerlendirir. Sorunların önüne geçmek adına her bir cihaz platformu için ilke oluşturup bunları tüm kullanıcılara dağıtmanızı öneririz.
 
 ### <a name="per-policy-device-compliance-report"></a>İlkeye göre cihaz uyumluluğu raporu
 
-Bu raporda, uyumluluk ilkesine göre görünüm ve her bir uyumluluk durumundaki toplam cihaz sayısı sunulmaktadır. **İlke uyumluluğu** kutucuğuna **Cihaz uyumluluk panosu**’ndan erişilebilir. Bu kutucuk; daha önce yönetici tarafından oluşturulan tüm ilkeleri, ilkenin uygulandığı platformları, uyumlu olan ve olmayan cihazların sayısını gösterir.
+**Cihaz uyumluluğu** > **İlke uyumluluğu** raporu, ilkeleri ve uyumlu/uyumsuz cihaz sayısını gösterir. 
 
-![İlkeye göre cihaz uyumluluğu raporunu gösteren resim](./media/idc-8.png)
+![İlke listesi ile ilke için uyumlu ve uyumsuz cihaz sayısını görme](./media/compliance-policy-monitor/idc-8.png)
 
-İlke uyumluluğu kutucuğuna ve sonra cihaz uyumluluk ilkelerinden birine tıkladığınızda, cihaz uyumluluk ilkesi tarafından hedeflenen her bir cihaz için **uyumluluk durumu**, **kullanıcının e-posta diğer adı**, **cihaz modeli** ve **konum** bilgilerini görebilirsiniz.
+Belirli bir uyumluluk ilkesi seçtiğinizde bu ilkenin hedeflediği tüm cihazların **uyumluluk durumu**, **kullanıcının e-posta diğer adı**, **cihaz modeli** ve **konum** bilgilerini görebilirsiniz.
 
 ## <a name="setting-compliance-report"></a>Ayar uyumluluk raporu
 
-Bu raporu kullanarak uyumluluk ayarına göre her bir uyumluluk durumundaki toplam cihaz sayısını görüntüleyebilirsiniz. **Ayarlar uyumluluğu** başlığına **Cihaz uyumluluk panosu**’ndan erişilebilir. Bu kutucuk; yönetici tarafından oluşturulan tüm cihaz uyumluluk ilkelerinin tüm cihaz uyumluluk ilkesi ayarlarını, ilke ayarlarının uygulandığı platformları, uyumlu olmayan cihazların sayısını gösterir.
+**Cihaz uyumluluğu** > **Ayar uyumluluğu** raporu, uyumluluk ayarı başına tüm uyumluluk durumlarındaki toplam cihaz sayısını gösterir. Tüm uyumluluk ilkelerindeki bütün uyumluluk ilkesi ayarlarını, ilke ayarlarının uygulandığı platformları ve uyumsuz cihaz sayılarını gösterir.
 
-![Ayara göre cihaz uyumluluğu raporunu gösteren resim](./media/idc-10.png)
+![Farklı ilkelerdeki ayar listesini görme](./media/compliance-policy-monitor/idc-10.png)
 
-Ayar uyumluluğu kutucuğuna ve sonra cihaz uyumluluk ilkesi ayarlarından birine tıkladığınızda, cihaz uyumluluk ilkesi ayarı tarafından hedeflenen her bir cihaz için **uyumluluk durumu**, **kullanıcının e-posta diğer adı**, **cihaz modeli** ve **konum** bilgilerini görebilirsiniz.
+Belirli bir ayar seçtiğinizde bu ayarın hedeflediği tüm cihazların **uyumluluk durumu**, **kullanıcının e-posta diğer adı**, **cihaz modeli** ve **konum** bilgilerini görebilirsiniz.
 
 ## <a name="view-status-of-device-policies"></a>Cihaz ilkelerinin durumunu görüntüleme
 
@@ -167,11 +150,11 @@ Bu özellik cihaz durumu bildirimine eklenmiştir:
 1. **Cihaz uyumluluğu** > **İlkeler**'i seçin. Platform da dahil olmak üzere ilkelerin listesi, ilkenin atanıp atanmadığı ve diğer ayrıntılar gösterilir.
 2. Bir ilke seçin ve **Genel Bakış**'ı seçin. Bu görünümde, ilke ataması aşağıdaki durumları içerir:
 
-  - Başarılı: İlke uygulandı
-  - Hata: İlke uygulanamadı. Bu genellikle bir açıklamaya bağlantı veren bir hata kodu görüntüler. 
-  - Çakışma: İki ayar aynı cihaza uygulanır ve Intune çakışmayı sıralayamaz. Yöneticinin gözden geçirmesi gerekir.
-  - Bekleyen: Cihaz, ilkeyi almak için henüz Intune’a iade edilmemiş. 
-  - Uygulanamaz: Cihaz ilkeyi alamaz. Örneğin ilke, iOS 11.1’e özel bir ayarı güncelleştiriyor ancak cihaz iOS 10 kullanıyor. 
+    - Başarılı: İlke uygulandı
+    - Hata: İlke uygulanamadı. Bu ileti, genellikle bir açıklamaya bağlantı veren bir hata kodu görüntüler. 
+    - Çakışma: İki ayar aynı cihaza uygulanır ve Intune çakışmayı sıralayamaz. Yöneticinin gözden geçirmesi gerekir.
+    - Bekleyen: Cihaz, ilkeyi almak için henüz Intune’a iade edilmemiş. 
+    - Uygulanamaz: Cihaz ilkeyi alamaz. Örneğin ilke, iOS 11.1’e özel bir ayarı güncelleştiriyor ancak cihaz iOS 10 kullanıyor. 
 
 3. Bu ilkeyi kullanan cihazlarla ilgili ayrıntıları görmek için, durumlardan birini seçin. Örneğin **Başarılı**'yı seçin. Sonraki pencerede, cihaz adı ve dağıtım durumu gibi belirli cihaz ayrıntıları listelenir.
 

@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255378"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330152"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -61,16 +61,16 @@ Intune, ihtiyacınız olan uygulamaları çalıştırmak istediğiniz cihazlara 
 
 ## <a name="get-started"></a>Başlarken
 
-Aşağıda gösterilen yolla erişilen **Mobil Uygulamalar** iş yükünde, uygulamayla ilgili bilgilerin çoğunu bulabilirsiniz:
+Aşağıda gösterilen yolla erişilen **İstemci uygulamaları** iş yükünde, uygulamayla ilgili bilgilerin çoğunu bulabilirsiniz:
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin.  
     Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Microsoft Intune** bölmesinde **Mobil uygulamalar**’ı seçin.
+3. **Microsoft Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 
     ![“Mobil uygulamalar” iş yükü bölmesi](./media/apps-workload.png)
 
-Sıradaki dört bölüm, **Mobil uygulamalar** bölmesindeki kullanılabilir seçenekleri açıklar.
+Sıradaki dört bölüm, **İstemci uygulamaları** bölmesindeki kullanılabilir seçenekleri açıklar.
 
 ### <a name="manage"></a>Bilgisayarlarda
 - **Uygulamalar**: İş gücünüz tarafından kullanılan uygulamaları eklemek, görüntülemek, atamak ve izlemek için bu seçeneği belirleyin. Daha fazla bilgi için bkz.:
