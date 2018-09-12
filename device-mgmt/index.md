@@ -1,0 +1,1 @@
+# <a name="welcome-to-device-mgmt"></a>Cihaz yönetimine hoş geldiniz!
