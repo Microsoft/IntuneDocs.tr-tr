@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255550"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141618"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Cihaz kayıt yöneticisi hesabı kullanarak cihazları kaydetme
 
@@ -53,7 +53,7 @@ Bir cihaz kayıt yöneticisi hesabıyla kaydedilen cihazlarda aşağıdaki kıs�
   - DEM kullanıcısı, Şirket Portalı’nı kullanarak cihazın kendisinde DEM’e kaydedilen cihazların kaydını kaldıramaz. Intune yöneticisi kayıt silme işlemi gerçekleştirebilir.
   - Şirket Portalı uygulamasında veya web sitesinde yalnızca yerel cihaz görünür.
   - Kullanıcılar, uygulama yönetimi için kullanıcı başına Apple Kimliği gereksinimlerinden dolayı kullanıcı lisanslarıyla Apple Volume Purchase Program (VPP) uygulamalarını kullanamaz.
-  - (Yalnızca iOS) iOS cihazlarını kaydetmek için DEM kullanıyorsanız, cihaz kaydetmek için Apple Configurator, Apple Aygıt Kayıt Programı (DEP) veya Apple School Manager (ASM) kullanamazsınız.
+  - (Yalnızca iOS) iOS cihazlarını kaydetmek için DEM kullanıyorsanız, cihaz kaydetmek için Apple Configurator, Apple Aygıt Kayıt Programı (DEP) veya Apple School Manager (ASM) kullanamazsınız. Yani cihazı denetimli moda alamazsınız, bu sebeple de bazı yapılandırma seçeneklerine erişemezsiniz.
   - (Yalnızca Android) Tek bir DEM hesabıyla kaydedilebilen Android iş profili cihaz sayısı sınırlıdır. DEM hesabı başına en fazla 10 Android iş profili cihazı kaydedilebilir. Bu sınırlama eski Android kayıtları için geçerli değildir.
   - Cihazlar, cihaz lisansına sahipse VPP uygulamalarını yükleyebilir.
   - DEM kullanmak için bir Intune cihaz lisansı gerekli değildir. [Kullanıcı ve cihaz lisansları](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services) hakkında daha fazla bilgi edinin.

@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330169"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141686"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -116,7 +116,7 @@ Intune ile yönetilen uygulamalar ayrıca kayıt gerekmeksizin uygulama korumas�
 
 ### <a name="understanding-licensed-apps"></a>Lisanslı uygulamaları anlama
 Web uygulamaları, mağaza uygulamaları ve LOB uygulamalarını anlamaya ek olarak toplu satın alma programı uygulamalarının hedefi ve lisanslı uygulamalar hakkında da bilgi sahibi olmalısınız, örneğin: 
-- **İş için Apple Volume Purchasing Program (iOS ve MacOS)**: iOS App Store, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak sağlar. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur. Daha fazla bilgi için bkz. [iOS toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md).
+- **İş İçin Apple Volume Purchasing Program (iOS)**: iOS App Store, şirketinizde çalıştırmak istediğiniz uygulama için birden fazla lisans satın almanıza olanak sağlar. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur. Daha fazla bilgi için bkz. [iOS toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md).
 - **Android iş profili**: Android iş profili cihazlara uygulama atama işlemi, standart Android cihazlara uygulama atamaktan farklıdır. Android iş profili için yüklediğiniz tüm uygulamalar Yönetilen Google Play mağazasından gelir. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Daha sonra uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görünür ve uygulamanın atamasını diğer uygulamalarda olduğu gibi yaparsınız.
 - **İş için Microsoft Store (Windows 10)**: İş için Microsoft Store, kuruluşunuz için tek tek veya toplu olarak uygulamalar bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayı Microsoft Intune’a bağlayarak toplu satın alınan uygulamaları Azure portalında yönetebilirsiniz. Daha fazla bilgi için bkz. [İş İçin Microsoft Mağazası’ndan uygulamaları yönetme](windows-store-for-business.md).
 
