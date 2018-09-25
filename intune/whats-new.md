@@ -7,20 +7,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/29/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
-/ms.custom: intune-azure
-ms.openlocfilehash: 0205715a8e35d009401886af4bd0bf88fb9cf662
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: e3049fe461553ad1ba2e714d2274e0d39d169852
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347296"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254097"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -90,7 +90,8 @@ Intune Azure portalında Windows 10 için Kurumsal Wi-Fi profilleri için artık
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>Windows 10 ve üzeri cihazlarda S modunu denetleme - genel önizleme <!-- 1958649 -->
 Bu özellik güncelleştirmesi ile Windows 10 cihazı S modundan çıkaran veya kullanıcıların cihazı S modundan çıkarmasını önleyen bir cihaz yapılandırma profili oluşturabilirsiniz. Bu özellik Intune’da **Cihaz yapılandırması** > **Profiller** >  **Windows 10 ve üzeri** > **Sürüm yükseltme ve mod değiştirme** altındadır.
 [S modunda Windows 10’a giriş](https://www.microsoft.com/windows/s-mode) makalesi, S modu hakkında daha fazla bilgi sağlar.
-Şunun için geçerlidir: Windows 10 ve üzeri (1809 ve üzeri)
+Şunlar için geçerlidir: En son [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) derlemesi (önizlemedeyken).
+
 
 #### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Windows Defender ATP yapılandırma paketi, otomatik olarak yapılandırma profiline eklenir <!-- 2144658 -->
 Eskiden Intune’da [Gelişmiş Tehdit Koruması ve ekleme](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) cihazları kullanırken bir yapılandırma paketini indirip bunu yapılandırma profilinize ekliyordunuz. Bu güncelleştirme ile Intune, paketi otomatik olarak Windows Defender Güvenlik Merkezi’nden alır ve profilinize ekler.
@@ -98,6 +99,8 @@ Windows 10 ve üzeri için geçerlidir.
 
 #### <a name="require-users-to-connect-during-device-setup---2311457--"></a>Cihaz kurulumu sırasında kullanıcıların bağlanmasını gerektirme <!--2311457-->
 Artık Windows 10 kurulumu sırasında Ağ sayfasından ileri gitmeden önce cihazın bir ağa bağlanmasını gerektirecek cihaz profilleri ayarlayabilirsiniz. Bu özellik önizlemedeyken bu ayarı kullanmak için Windows Insider derleme 1809 veya sonrası gerekir.
+Şunlar için geçerlidir: En son [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) derlemesi (önizlemedeyken).
+
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>iOS ve Android Kurumsal cihazlarında uygulamaları kısıtlama ve şirket kaynaklarına erişimi engelleme <!-- 2451462 -->
 **Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **iOS** > **Sistem Güvenliği**’nde yeni **Kısıtlı uygulamalar** ayarı var. Bu yeni ayar, bazı uygulamalar cihaza yüklendiğinde cihazın şirket kaynaklarına erişimini engelleyecek bir uyumluluk ilkesi kullanır. Cihaz, kısıtlı uygulamalar kaldırılana kadar uyumsuz sayılır.
@@ -129,19 +132,24 @@ DEP kaydı sırasında bir kullanıcının kimliğini Kurulum Yardımcısı yeri
 
 #### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Autopilot cihazına kullanıcı ve kolay ad atama <!--1346521 -->
 Artık [tek bir Autopilot cihazına kullanıcı atayabilirsiniz](enrollment-autopilot.md). Yöneticiler ayrıca cihazlarını AutoPilot ile ayarlayan kullanıcıları karşılaması için kolay adlar verebilecekler.
-Şunun için geçerlidir: Windows Insider 1809 veya sonraki derlemeler (önizlemedeyken).
+Şunlar için geçerlidir: En son [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) derlemesi (önizlemedeyken).
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>DEP kaydı sırasında Şirket Portalı’nın ön sağlamasını yapmak için VPP cihaz lisanslarını kullanın <!-- 1608345 -->
 Artık Aygıt Kayıt Programı (DEP) kayıtları sırasında Şirket Portalı’nın ön sağlamasını yapmak için Volume Purchase Program (VPP) cihaz lisanslarını kullanabileceksiniz. Bunu yapmak için [bir kayıt profili oluşturduğunuzda veya düzenlediğinizde](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), Şirket Portalı’nı yüklemek için kullanmak istediğiniz VPP belirtecini belirtin. Belirtecinizin süresinin dolmadığından ve Şirket Portalı uygulaması için yeterli lisansınız olduğundan emin olun. Belirtecin süresi dolduğu veya yeterli lisans olmadığı durumlarda, Intune bunun yerine Uygulama Mağazası Şirket Portalı’na istek gönderir (bu, Apple kimliği ister).
 
+### <a name="confirmation-required-to-delete-vpp-token-that-is-being-used-for-company-portal-pre-provisioning----2237634---"></a>Şirket Portalı ön sağlaması için kullanılan bir VPP belirtecini silmek için onay gerekir <!-- 2237634 -->
+DEP kaydı sırasında Şirket Portalı’nın ön sağlaması için bir Volume Purchase Program (VPP) belirteci kullanılıyorsa artık bunu silmek için onay gerekir.
+
 #### <a name="block-windows-personal-device-enrollments----1849498---"></a>Windows kişisel cihaz kayıtlarını engelleme <!-- 1849498 -->
-[Windows kişisel cihazları engelleyerek](enrollment-restrictions-set.md#set-device-type-restrictions) Intune [mobil cihaz yönetimine](windows-enroll.md) kaydolmasını önleyebilirsiniz. Bu özellikle [Intune PC aracısı](manage-windows-pcs-with-microsoft-intune.md) ile kaydedilen cihazlar engellenemez.
+[Windows kişisel cihazları engelleyerek](enrollment-restrictions-set.md#set-device-type-restrictions) Intune [mobil cihaz yönetimine](windows-enroll.md) kaydolmasını önleyebilirsiniz. Bu özellikle [Intune PC aracısı](manage-windows-pcs-with-microsoft-intune.md) ile kaydedilen cihazlar engellenemez. Bu özellik, önümüzdeki birkaç hafta içerisinde yayımlanacak, bu nedenle kullanıcı arabiriminde özelliği hemen göremeyebilirsiniz.
 
 #### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Autopilot profilinde makine adı desenleri belirtme <!--1849855-->
-Autopilot kaydı sırasında [bilgisayar adı](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) oluşturmak ve ayarlamak için [bir bilgisayar adı şablonu](enrollment-autopilot.md#create-an-autopilot-deployment-profile) belirtebilirsiniz.
+Autopilot kaydı sırasında [bilgisayar adı](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) oluşturmak ve ayarlamak için [bir bilgisayar adı şablonu](enrollment-autopilot.md#create-an-autopilot-deployment-profile) belirtebilirsiniz. Şunlar için geçerlidir: En son [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) derlemesi (önizlemedeyken).
+
 
 #### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows Autopilot profilleri için şirket oturum açma sayfasında ve etki alanı hata sayfasında hesap değiştirme seçeneklerini gizleme <!--1901669 -->
-Yöneticilerin şirket oturum açma ve etki alanı hata sayfalarında hesap değiştirme seçeneklerini gizlemelerine imkan veren [yeni Windows Autopilot profil seçenekleri](enrollment-autopilot.md#create-an-autopilot-deployment-profile) mevcut. Bu seçenekleri gizlemek, Azure Active Directory’de Şirket Markasının yapılandırılmasını gerektirir. Şunun için geçerlidir: Windows Insider 1809 veya sonraki derlemeler (önizlemedeyken).
+Yöneticilerin şirket oturum açma ve etki alanı hata sayfalarında hesap değiştirme seçeneklerini gizlemelerine imkan veren [yeni Windows Autopilot profil seçenekleri](enrollment-autopilot.md#create-an-autopilot-deployment-profile) mevcut. Bu seçenekleri gizlemek, Azure Active Directory’de Şirket Markasının yapılandırılmasını gerektirir. Şunlar için geçerlidir: En son [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) derlemesi (önizlemedeyken).
+
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>DEP kaydı sırasında Şirket Portalı’nın ön sağlamasını yapmak için VPP cihaz lisanslarını kullanın <!-- 1608345 -->
 Artık Aygıt Kayıt Programı (DEP) kayıtları sırasında Şirket Portalı’nın ön sağlamasını yapmak için Volume Purchase Program (VPP) cihaz lisanslarını kullanabileceksiniz. Bunu yapmak için [bir kayıt profili oluşturduğunuzda veya düzenlediğinizde](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), Şirket Portalı’nı yüklemek için kullanmak istediğiniz VPP belirtecini belirtin. Belirtecinizin süresinin dolmadığından ve Şirket Portalı uygulaması için yeterli lisansınız olduğundan emin olun. Belirtecin süresi dolduğu veya yeterli lisans olmadığı durumlarda, Intune bunun yerine Uygulama Mağazası Şirket Portalı’na istek gönderir (bu, Apple kimliği ister).
@@ -1273,6 +1281,25 @@ Intune'da reddedilen uygulamaları belirtebilirsiniz. Uygulama reddedilirse, şi
 
 
 ## <a name="notices"></a>Bildirimler
+
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Değişiklik Planı: Premier müşteriler için yeni Intune destek deneyimi 
+Bir Microsoft Premier müşterisi olarak şu anda Microsoft Premier Online (MPO) portalını (premier.microsoft.com) ve Azure’da Intune’u (portal.azure.com) kullanarak Intune için destek istekleri oluşturabilirsiniz. 3 Aralık 2018 itibarıyla Premier destek deneyimini geliştirmeye devam etmek adına yalnızca Azure’da Intune ile destek istekleri oluşturabileceksiniz.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+3 Aralık’tan sonra MPO’da destek istekleri oluşturamayacaksınız.  Bunu yapmaya çalıştığınızda, kapatamayacağınız bir istem alacak ve Azure’da Intune’a yönlendirileceksiniz. Burada, sorununuzu vaktinde tanılamak ve çözümlemek için Intune’a ayrılmış Microsoft Desteği’ne yönlendirilecek bir destek isteği oluşturabilirsiniz. MPO’da oluşturulan destek istekleri Azure portalında görüntülenemez, bu nedenle MPO’da destek isteği oluşturmayı bırakmanız gerekir.  
+
+Hibrit mobil cihaz yönetimi (hibrit MDM) veya ortak yönetim kullanıyorsanız ConfigMgr için destek istekleri oluşturmak amacıyla MPO kullanmaya devam edebilirsiniz ancak Intune için destek istekleri oluşturmak amacıyla yalnızca Azure portalını kullanın. Hatırlatmış olalım, hibrit MDM kullanımdan kaldırıldığı için en yakın zamanda Azure’da Intune’a geçmeyi planlamalısınız. Daha fazla bilgi için Hibrit Mobil Cihaz Yönetiminden Azure’da Intune’a geçme konusuna bakın.
+
+Yalnızca Genel Yönetici, Intune Hizmet Yöneticisi ve Hizmet Destek Yöneticisi rollerine sahip kullanıcıların Azure portalında destek biletleri oluşturabileceğini unutmayın.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+- MPO’yu kullanmayı bırakın ve tüm Intune destek isteklerinizi Azure’da Intune kullanarak oluşturun ve yönetin.  
+- Gerekirse yardım masanızı uyarın ve belgeleri güncelleştirin.
+- MPO’da destek istekleri oluşturmakta olan Genel Yönetici veya Intune Hizmet Yöneticisi rollerine sahip kullanıcılarınız varsa onları Azure Active Directory’de Hizmet Destek Yöneticisi rolüne atayın, böylece Azure portalında destek biletleri oluşturmaya devam edebilirler.
+- Daha fazla bilgi ve yardımcı bağlantılar için Ek Bilgiler’e tıklayın.
+
+#### <a name="additional-information"></a>Ek Bilgi
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Eylem gerekiyor: Lütfen Intune'da Android cihazınızın kısıtlama veya uyumluluk ilkesi parolasını güncelleştirin
 Intune, Android 4.4 ve üstü cihazlarında sağlanan "cihaz varsayılanı" parola türünü kaldıracak. Android platformlarıyla cihaz varsayılanları arasındaki farklardan dolayı, bu ilke cihaz tarafından genellikle isteğe bağlı olarak kabul edilir. Bu ayarın Android'de ne zaman zorunlu tutulacağı konusundaki karışıklığı gidermek için, önümüzdeki sürümlerden birinde kullanıcı arabiriminden bu ayarı kaldıracağız. 

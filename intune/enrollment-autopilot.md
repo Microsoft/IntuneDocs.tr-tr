@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4c268f9061ae624c1f85e386e5633b14334860b7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a640e6d914da6fead7a64d5235c1cdeac164ac9e
+ms.sourcegitcommit: 7c70c3e0fcae7c4fa8c9e108aafb1cebb366332d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313147"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44096546"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows AutoPilot kullanarak Windows cihazlarını kaydetme
 Windows AutoPilot, cihaz sağlamayı kolaylaştırır. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve AutoPilot ile özel işletim sistemi görüntülerini derleme, bakım ve uygulama zahmetine katlanmanız gerekmeden son kullanıcılarınıza yeni cihazlar verebilirsiniz. AutoPilot cihazları yönetmek için Intune kullandığınızda cihazlar kaydedildikten sonra ilkeler, profiller, uygulamalar ve daha fazlasını yönetebilirsiniz. Faydalar, senaryolar ve önkoşullara genel bir bakış için bkz. [Windows AutoPilot’a Genel Bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -69,7 +69,7 @@ AutoPilot dağıtım profilleri, AutoPilot cihazları yapılandırmak için kull
 2. Bir **Ad** ve isteğe bağlı olarak bir **Açıklama** girin.
 3. **Dağıtım modu** için şu iki seçenekten birini belirtin:
     - **Kullanıcı temelli**: Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkilidir. Cihazın sağlanması için kullanıcı kimlik bilgileri gereklidir.
-    - **Kendi kendine dağıtım (önizleme)**: (Windows 10 Insider Preview Derleme 17672 veya sonrası) Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkili değildir. Cihazın sağlanması için kullanıcı kimlik bilgileri gerekli değildir.
+    - **Kendi kendine dağıtım (önizleme)**: (en son [Windows 10 Insider Önizleme Derlemesini](https://docs.microsoft.com/windows-insider/at-work-pro/) gerektirir) Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkili değildir. Cihazın sağlanması için kullanıcı kimlik bilgileri gerekli değildir.
 4. **Azure AD’ye farklı katıl** kutusunda **Azure AD katılımlı**’yı seçin.
 5. **İlk kez çalıştırma deneyimi (OOBE)** öğesini seçin, aşağıdaki seçenekleri yapılandırın ve **Kaydet**’e tıklayın:
     - **Dil (Bölge)***: Cihazda kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
@@ -82,7 +82,7 @@ AutoPilot dağıtım profilleri, AutoPilot cihazları yapılandırmak için kull
 
 6. Profili oluşturmak için **Oluştur**’a tıklayın. AutoPilot dağıtım profili artık cihazlara atanmak üzere hazırdır.
 
-*Hem **Dil (Bölge)** hem de **Klavyeyi otomatik olarak yapılandır** seçenekleri, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir (Windows 10 Insider Preview Derleme 17672 veya sonrası).
+*Hem **Dil (Bölge)** hem de **Klavyeyi otomatik olarak yapılandır** seçenekleri, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir (en son [Windows 10 Insider Önizleme Derlemesini](https://docs.microsoft.com/windows-insider/at-work-pro/) gerektirir).
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>AutoPilot dağıtım profilini bir cihaz grubuna atama
@@ -113,7 +113,7 @@ Atanmamış cihazlar için uyarı görmek istiyorsanız [Azure portalında Intun
 
 Belirli bir Autopilot cihazına kullanıcı atayabilirsiniz. Bu atama, Windows kurulumu sırasında [şirket markalı](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) oturum açma sayfasında Azure Active Directory’den bir kullanıcıyı önceden doldurur. Ayrıca özel bir karşılama adı ayarlamanıza imkan verir. Bu, Windows oturum açmayı önceden doldurmaz veya değiştirmez. Yalnızca lisanslı Intune kullanıcıları bu yolla atanabilir.
 
-Önkoşul: Azure Active Directory Şirket Portalı yapılandırılmalı.
+Önkoşullar: Yapılandırılmış Azure Active Directory Şirket Portalı ve en son [Windows 10 Insider Önizleme Derlemesi](https://docs.microsoft.com/windows-insider/at-work-pro/).
 
 1. [Azure portalında Intune’da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Cihazlar** > cihazı seçin **Kullanıcı ata**’yı seçin.
     ![Kullanıcı ata ekran görüntüsü](media/enrollment-autopilot/assign-user.png)
