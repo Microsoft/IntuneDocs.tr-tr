@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 140b19ac64003f9ddf481a33e0cf4d423e106ffd
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905385"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028639"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure'daki Intune özelliğim nereye gitti?
 Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekilde organize ettik. Ancak her geliştirme sonrasında atlatılması gereken bir yeni düzene alışma süreci vardır. Bu başvuru kılavuzu, klasik portalda Intune’a aşina olanlar ve bir işlemi Azure portalında Intune’da nasıl gerçekleştireceğini merak edenler için hazırlanmıştır. Aradığınız özellik bu makalede yoksa , güncelleştirebilmemiz için makalenin sonuna yorumlarınızı yazın.
@@ -70,12 +70,12 @@ Yeni kısıtlama özellikleri yalnızca Azure Portal'a eklenir.
 ## <a name="where-did-my-conditional-access-policies-go"></a>Koşullu erişim ilkelerim nereye gitti?
 Kiracınız Azure portalına geçtikten sonra kiracınızın koşullu erişim ilkeleri uygulanmaya devam eder. Ancak bunları Azure portalında Intune’da görüntüleyemez veya değiştiremezsiniz.
 
-Koşullu erişim ilkelerini görüntülemek ve ilkeler üzerinde değişiklik yapmak için Azure portalını kullanmak isterseniz klasik portaldan eski ilkeleri kaldırmanız gerekir. Daha sonra bunları Azure portalında yeniden oluşturmalısınız. Koşullu erişim ilkelerini geçirme hakkında daha fazla bilgi için bkz. [Azure Portal’da klasik ilkeleri geçirme](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration). 
+Koşullu erişim ilkelerini görüntülemek ve ilkeler üzerinde değişiklik yapmak için Azure portalını kullanmak isterseniz klasik portaldan eski ilkeleri kaldırmanız gerekir. Daha sonra bunları Azure portalında yeniden oluşturmalısınız. Koşullu erişim ilkelerini geçirme hakkında daha fazla bilgi için bkz. [Azure Portal’da klasik ilkeleri geçirme](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
 
 ## <a name="where-did-my-compliance-policies-go"></a>Uyumluluk ilkelerim nereye gitti?
 Kiracınız Azure portalına geçtikten sonra kiracınızın uyumluluk ilkeleri uygulanmaya devam eder. Ancak bunları Azure portalında Intune’da görüntüleyemez veya değiştiremezsiniz.
 
-Uyumluluk ilkelerini görüntülemek ve ilkeler üzerinde değişiklik yapmak için Azure portalını kullanmak isterseniz klasik portaldan eski ilkeleri kaldırmanız gerekir. Daha sonra bunları Azure portalında yeniden oluşturmalısınız. Cihaz uyumluluk ilkeleri hakkında daha fazla bilgi için bkz. [Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama](https://docs.microsoft.com/en-us/intune/known-issues#compliance). 
+Uyumluluk ilkelerini görüntülemek ve ilkeler üzerinde değişiklik yapmak için Azure portalını kullanmak isterseniz klasik portaldan eski ilkeleri kaldırmanız gerekir. Daha sonra bunları Azure portalında yeniden oluşturmalısınız. Cihaz uyumluluk ilkeleri hakkında daha fazla bilgi için bkz. [Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama](https://docs.microsoft.com/intune/known-issues#compliance). 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP nereye gitti?
 Klasik portalda Intune’u Apple’ın Aygıt Kayıt Programı ile tümleştirebiliyor ve Apple’ın hizmetiyle el ile eşitleme isteğinde bulunuyordunuz:

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: df2e2f81008c6dedf5660a8a9eff4bf2cfe2ec6b
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905348"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505742"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune’da Wi-Fi ayarlarını yapılandırma
 
@@ -62,8 +62,6 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
     - **Windows 8.1 ve üzeri**
     - **Windows 10 ve üzeri**
 
-   > [!IMPORTANT]
-   > Windows Holographic for Business dahil olmak üzere Windows 10 çalıştıran cihazlar için bir profil oluşturuyorsanız, **Windows 8.1 ve üzeri** platformunu seçmeniz gerekir. **Windows 10 ve üzeri** platformu bir Wi-Fi profil türü içermez. 
 
 6. Apple ve Android cihazlarda, açılan **WiFi türü** listesinden **Temel** veya **Kurumsal** türlerinden birini seçin. Ağ adı ve SSID gibi temel özellikleri sağlamak için **Temel**’i kullanabilirsiniz. **Kurumsal**, Wi-Fi ağınız bu protokolü kullanıyorsa Genişletilebilir Kimlik Doğrulama Protokolü (EAP) gibi daha gelişmiş bilgileri sağlamanıza olanak tanır. 
 

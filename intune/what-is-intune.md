@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: get-started
-ms.openlocfilehash: 3f8f0dce416c943dbc244d0e2a4366b12b305708
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 09c4f2b067d27da9761d33559a3d3fbdc6ac2d90
+ms.sourcegitcommit: cd73ef164e0df79429b97c3090adbba49592c150
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253791"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448680"
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure portalında Microsoft Intune’a giriş
 
@@ -61,33 +61,6 @@ Desteklenen tarayıcılar hakkındaki en son bilgiler için [Azure portalını](
 ## <a name="microsoft-intune-in-the-azure-portal"></a>Azure portalında Microsoft Intune
 
 [Azure portalı](https://portal.azure.com), Microsoft Intune hizmetini bulabileceğiniz yerdir. Azure’da, birçoğunu düzenli olarak kullanamayacağınız birkaç hizmet mevcuttur. Portal deneyiminizi özelleştirmeye yönelik hızlı bir kılavuz için bkz. [Azure portalında Intune’a başlarken](get-started-azure.md).
-
-## <a name="the-microsoft-intune-documentation"></a>Microsoft Intune belgeleri
-
-Bu konu ve diğer tüm Microsoft Intune belge setleri, devamlı olarak güncelleştirilmektedir. Görmek istediklerinize ilişkin önerileriniz varsa konu yorumlarında geri bildirim sağlayın. Görüşlerinizi öğrenmeyi çok isteriz.
-
-Belgeler, ihtiyacınız olan bilgileri bulmanızı kolaylaştırmak için Azure portalında Microsoft Intune düzenini (aşağıda gösterildiği gibi) yansıtır.
-
-![Azure Portal iş yükleri](./media/azure-portal-workloads.png)
-
-### <a name="documentation-guide"></a>Belge kılavuzu
-
-Microsoft Intune’un genel alanlarını kolayca bulmak ve anlamak için aşağıdaki tabloyu kullanın.
-
-| Bölüm                                                      | Description                                                                                                                                                                                                                                                                                      |
-|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Giriş ve çalışmaya başlama](introduction-intune.md)       | Intune’un temel özelliklerini kavrayın:<br /> - Yaygın çözümler<br /> - Microsoft Intune’un çalışma şekli<br /> - Intune’da cihaz yönetimi<br /> - Intune’da uygulama yönetimi<br /> - Cihaz kaydıyla veya kayıt olmaksızın Enterprise Mobility Management (EMM)                                                         |
-| [Planlama ve tasarım](planning-guide.md)                         | Microsoft Intune ortamınızı başarıyla planlamanıza ve tasarlamanıza yardımcı rehber.                                                                                                                                                                                                             |
-| [Cihaz kaydı](device-enrollment.md)                    | İş gücünüzün cihazlarını Microsoft Intune’a kaydederek Intune hizmetinin bu cihazları yönetmenize nasıl yardımcı olduğunu kavrayın. İş gücünüzün cihazlarını kaydetmek için çeşitli yöntemler vardır.                                                                                                         |
-| [Cihaz uyumluluğu](device-compliance.md)                    | Intune cihaz uyumluluk ilkeleri, bir cihazın Microsoft Intune tarafından uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlar. Örneğin cihaza erişim için bir parola gerektirme, cihaz şifreleme ve en düşük işletim sistemi sürümü gerektirme gibi işlemler uyumluluk örnekleridir. |
-| [Cihaz yapılandırması](device-profiles.md)                   | Microsoft Intune ile cihaz profilleri oluşturarak, yönettiğiniz tüm cihazlarda ayarlar ve özellikleri yapılandırın. Örneğin bildirimler, veri paylaşımı, e-posta desteği, Wi-Fi bağlantısı, sertifikalar ve uç nokta koruması gibi işlevleri yapılandırabilirsiniz.              |
-| [Cihazlar](device-management.md)                              | Yönettiğiniz cihazların, son kullanıcılarınızın işlerini yapması için gereken kaynakları sağladığından ve aynı zamanda verilerin risklerden korunduğundan emin olun. İş gücü cihaz envanterini gözden geçirerek ve uzak cihaz eylemleri gerçekleştirerek cihazları yönetin.                                                      |
-| [Mobil uygulamalar](app-management.md)                             | Uygulamaları nasıl ekleyeceğinizi, dağıtacağınızı, izleyeceğinizi, yapılandıracağınızı ve koruyacağınızı kavrayın.                                                                                                                                                                                                                             |
-| [Koşullu erişim](conditional-access.md)                  | Şirket verilerinize erişimi yöneten cihaz temelli ve uygulama temelli koşullar tanımlayın.                                                                                                                                                                                                            |
-| [Kullanıcılar](users-add.md)                                        | Yönettiğiniz cihaz ve uygulamalara nasıl kullanıcı ekleyeceğinizi öğrenin.                                                                                                                                                                                                                                           |
-| [Gruplar](groups-get-started.md)                              | Intune ile grupları nasıl oluşturacağınızı ve yöneteceğinizi öğrenin. Grupları kullanarak hızlıca cihaz ve uygulama yapılandırma ve koruma ilkeleri atayabilirsiniz.                                                                                                                                             |
-| [Intune rolleri](role-based-access-control.md)                 | Çeşitli Intune eylemlerini kimlerin gerçekleştirebileceğini ve bu eylemlerin nasıl uygulanacağını denetlemeyi öğrenin. Bazı yaygın Intune senaryolarını kapsayan yerleşik rolleri kullanabileceğiniz gibi, kendi rollerinizi de oluşturabilirsiniz.                                                                                 |
-| [Yazılım güncelleştirmeleri](windows-update-for-business-configure.md) | Windows 10 cihazlar için yazılım güncelleştirmelerini nasıl yapılandıracağınızı öğrenin.                                                                                                                                                                                                                                  |
 
 ## <a name="whats-new"></a>Yenilikler
 
