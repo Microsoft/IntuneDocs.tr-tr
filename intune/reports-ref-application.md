@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e27b07b18991ebd930bac6ed70fa489d27aa22ba
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b71e022ea99255d95aa4f06c32a98b560f903836
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224877"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602257"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
@@ -36,7 +36,7 @@ ms.locfileid: "34224877"
 
 **AppRevision** varlığı, uygulamaların tüm sürümlerini listeler.
 
-| Özellik  | Description | Örnek |
+| Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | AppKey |Uygulamanın benzersiz tanımlayıcısı. |123 |
 | ApplicationId |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
@@ -58,7 +58,7 @@ ms.locfileid: "34224877"
 
 **AppTypes** varlığı, bir uygulamanın yükleme kaynağını listeler.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | AppTypeID |Tür kimliği |
 | AppTypeKey |Anahtar için yedek anahtar |
@@ -66,7 +66,7 @@ ms.locfileid: "34224877"
 
 ### <a name="example"></a>Örnek
 
-| AppTypeID  | Ad | Description |
+| AppTypeID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |Android mağazası uygulaması | Bir Android mağazası uygulaması. |
 | 1 |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
@@ -87,7 +87,7 @@ ms.locfileid: "34224877"
 
 **VppProgramTypes** varlığı, bir uygulama için olası VPP program türlerini listeler.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | VppProgramTypeID | Tür kimliği. |
 | VppProgramTypeKey | Anahtar için vekil anahtar. |
@@ -95,7 +95,7 @@ ms.locfileid: "34224877"
 
 ### <a name="example"></a>Örnek
 
-| VppProgramID  | Ad | Description |
+| VppProgramID  | Ad | Açıklama |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft’un VPP programı. |
 | 00000000-0000-0000-0000-000000000000 | Henüz kullanılamıyor | Varsayılan değer, No VPP. |
@@ -107,7 +107,7 @@ ms.locfileid: "34224877"
 
 **ApplicationInventory** varlığı, envanter toplandığında cihazda bulunan uygulamaları listeler.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | DeviceKey | Bu, Intune cihaz kimliğini içeren Cihaz tablosuna bir başvurudur. |
 | DateKey | Envanterin alındığı günü gösteren tarih tablosuna başvuru. |
@@ -119,7 +119,7 @@ ms.locfileid: "34224877"
 
 **MobileAppInstallState** varlığı, mobil uygulama cihazları, kullanıcıları veya her ikisini de içeren bir gruba atandıktan sonra bu uygulamanın yükleme durumunu gösterir.
 
-| Özellik | Description |
+| Özellik | Açıklama |
 |---|---|
 | AppInstallStateKey | Hesabınız için uygulama yükleme durumunun benzersiz kimliği. |
 | AppInstallState | Uygulama yükleme durumunun Enum değeri. |
@@ -130,7 +130,7 @@ ms.locfileid: "34224877"
 **MobileAppDeviceUserInstallStatus** belirli bir cihaz ve kullanıcı için mobil uygulama yükleme durumunu gösterir.
 
 
-|      Özellik      |                                                         Description                                                         |
+|      Özellik      |                                                         Açıklama                                                         |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------|
 |      DateKey       |                                  Uygulama yükleme durumunun kaydedildiği tarihin anahtarı.                                  |
 |       AppKey       |                             AppRevision örneğini tanımlamak için kullanılan mobil uygulamanın anahtarı.                              |

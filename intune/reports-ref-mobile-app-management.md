@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 43292efd55ff93c2c05f49a5e3e8ceaaf91c5f2e
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 8f9313b35e6cb9da5d517e8f06e04c5a567612f4
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224689"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727549"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
 
@@ -38,7 +38,7 @@ ms.locfileid: "34224689"
 
 **MamApplication** varlığı, Mobil Uygulama Yönetimi (MAM) aracılığıyla yönetilen ancak kuruluşunuza kayıtlı olmayan iş kolu (LOB) uygulamalarını listeler.
 
-| Özellik | Description | Örnek |
+| Özellik | Açıklama | Örnek |
 |---------|------------|--------|
 | ApplicationKey |Veri ambarındaki MAM uygulamasının benzersiz tanımlayıcısı. |123 |
 | ApplicationName |MAM uygulamasının adı. |“Word” |
@@ -53,7 +53,7 @@ ms.locfileid: "34224689"
 **MamApplicationInstance** varlığı, Mobil Uygulama Yönetimi (MAM) uygulamalarını kullanıcı ve cihaz başına tekil örnekler olarak listeler. Varlıkta listelenen tüm kullanıcılar ve cihazlar korunur. Örneğin, hepsine en az bir MAM İlkesi atanmıştır.
 
 
-|          Özellik          |                                                                                                  Description                                                                                                  |               Örnek                |
+|          Özellik          |                                                                                                  Açıklama                                                                                                  |               Örnek                |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 |   ApplicationInstanceKey   |                                                               Veri ambarındaki MAM uygulaması örneğinin benzersiz tanımlayıcısı - vekil anahtar.                                                                |                 123                  |
 |           UserId           |                                                                              Bu MAM uygulamasını yükleyen kullanıcının kullanıcı kimliği.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
@@ -78,7 +78,7 @@ ms.locfileid: "34224689"
 > [!Note]  
 > Bir uygulama örneği gün içinde birden çok kez iade etme işlemi yaparsa, veri ambarı bunu tek bir iade etme işlemi olarak depolar.
 
-| Özellik | Description | Örnek |
+| Özellik | Açıklama | Örnek |
 |---------|------------|--------|
 | DateKey |MAM uygulamasının iade işleminin, veri ambarına kaydedildiği zamanı belirten tarih anahtarı. | 20160703 |
 | ApplicationInstanceKey |Bu MAM uygulamasının iade işlemiyle ilişkili uygulama örneğinin anahtarı. |2/5/1900 00:00:00 |
@@ -93,7 +93,7 @@ ms.locfileid: "34224689"
 
 **MamDeviceHealth** varlığı, işletim sistemi kısıtlamaları kaldırılmış olsa bile Mobil Uygulama Yönetimi (MAM) ilkelerinin dağıtıldığı cihazları temsil eder.
 
-| Özellik | Description | Örnek |
+| Özellik | Açıklama | Örnek |
 |---------|------------|--------|
 | DeviceHealthKey |Cihazın ve cihazla ilişkili sistem durumunun, veri ambarındaki benzersiz tanımlayıcısı - vekil anahtar. |1/1/1900 00:00:00 |
 | DeviceHealth |Cihazın ve cihazla ilişkili sistem durumunun benzersiz tanımlayıcısı - DeviceHealthKey ile benzer ancak tanımlayıcı, doğal bir anahtardır. |1/1/1900 00:00:00 |
@@ -104,7 +104,7 @@ ms.locfileid: "34224689"
 
 **MamEffectivePolicy** varlığı, kuruluşunuzda Mobil Uygulama Yönetimi (MAM) uygulanan tüm geçerli ilkeleri listeler. Uygulanan geçerli ilke, belirli bir uygulama ve kullanıcıyla ilişkili tüm ilkelerin birleştirilmesi sonucu elde edilir.
 
-| Özellik | Description | Örnek |
+| Özellik | Açıklama | Örnek |
 |---------|------------|--------|
 | EffectivePolicyKey |MAM geçerli ilkesinin, veri ambarındaki benzersiz tanımlayıcısı. |2 |
 | RealPolicyKey |MAM ilkesinin, BT uzmanı tarafından yazılan benzersiz tanıtıcısı. |1 |
@@ -115,7 +115,7 @@ ms.locfileid: "34224689"
 **MamGlobalApplication** varlığı, Mobil Uygulama Yönetimi (MAM) aracılığıyla yönetilen ancak kuruluşunuza kayıtlı olmayan mağaza uygulamaları listeler.
 
 
-|          Özellik          |                                               Description                                               |           Örnek            |
+|          Özellik          |                                               Açıklama                                               |           Örnek            |
 |----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
 |       ApplicationKey       |          Veri ambarındaki mağaza uygulamasının benzersiz tanıtıcısı - vekil anahtar olarak bilinir.          |             123              |
 |       ApplicationId        | Mağaza uygulamasının benzersiz tanıtıcısı. Tanıtıcı, ApplicationKey ile benzer ancak doğal bir anahtardır.  | com.microsoft.skydrive.<ios> |
@@ -127,7 +127,7 @@ ms.locfileid: "34224689"
 **MamPlatform** varlığı, Mobil Uygulama Yönetimi (MAM) uygulamasının yüklendiği platform adlarını ve türlerini listeler.
 
 
-|          Özellik          |                                    Description                                    |                         Örnek                         |
+|          Özellik          |                                    Açıklama                                    |                         Örnek                         |
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     Veri ambarındaki platformun benzersiz tanımlayıcısı - vekil anahtar.      |                           123                           |
 |          Platform          | Platformun benzersiz tanımlayıcısı; PlatformKey ile benzer ancak doğal bir anahtardır. |                           123                           |

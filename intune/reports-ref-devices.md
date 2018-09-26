@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05c99d2431e89f96e293bbd9edbee0753c6a26ad
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 00d7f8da28a762b5acbca379d62e0e7880f025a8
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906133"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727637"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
@@ -39,7 +39,7 @@ ms.locfileid: "37906133"
 
 **DeviceTypes** varlığı, diğer veri ambarı varlıkları tarafından başvurulan cihaz türünü temsil eder. Cihaz türü genellikle cihaz modelini, üreticisini veya her ikisini de belirtir.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | DeviceTypeID |Cihaz türünün benzersiz tanımlayıcısı |
 | DeviceTypeKey |Veri ambarındaki cihaz türünün benzersiz tanımlayıcısı - vekil anahtar |
@@ -47,7 +47,7 @@ ms.locfileid: "37906133"
 
 ## <a name="example"></a>Örnek
 
-| deviceTypeID  | Ad | Description |
+| deviceTypeID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |Masaüstü |Windows Masaüstü cihaz |
 | 1 |WindowsRT |WindowsRT cihaz |
@@ -74,7 +74,7 @@ ms.locfileid: "37906133"
 
 **ClientRegistrationStateTypes** varlığı, diğer veri ambarı tabloları tarafından başvurulan kayıt türünü temsil eder.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | clientRegisterationStateID |Kayıt durumu için benzersiz tanımlayıcı |
 | clientRegisterationStateKey |Veri ambarındaki kayıt durumunun benzersiz tanımlayıcısı - vekil anahtar |
@@ -82,7 +82,7 @@ ms.locfileid: "37906133"
 
 ## <a name="example"></a>Örnek
 
-| ClientRegisterationStateID  | Ad | Description |
+| ClientRegisterationStateID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |NotRegistered |NotRegistered |
 | 1 |SMSIDConflict |SMS ID çakışması |
@@ -98,7 +98,7 @@ ms.locfileid: "37906133"
 
 **EnrollmentTypes** varlığı, bir cihazın nasıl kaydedildiğini gösterir. Kayıt türü, kayıt yöntemini yakalar. Örnekler, farklı kayıt türlerini ve bunların ne anlama geldiğini listeler.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | managementStateID |Yönetim durumunun benzersiz tanımlayıcısı. |
 | managementStateKey |Veri ambarındaki yönetim durumunun benzersiz tanımlayıcısı - vekil anahtar. |
@@ -106,7 +106,7 @@ ms.locfileid: "37906133"
 
 ## <a name="example"></a>Örnek
 
-| enrollmentTypeID  | Ad | Description |
+| enrollmentTypeID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |Bilinmiyor |Kayıt türü toplanmadı |
 | 1 |UserEnrollment |Kullanıcı tarafından başlatılan kayıt |
@@ -122,7 +122,7 @@ ms.locfileid: "37906133"
 
 **EnrollmentTypes** varlığı; bir cihazın sahipliğinin şirket, kişisel veya bilinmeyen olduğunu gösterir.
 
-| Özellik  | Description | Örnek |
+| Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | ownerTypeID |Sahip türünün benzersiz tanımlayıcısı. | |
 | ownerTypeKey |Veri ambarındaki sahip türünün benzersiz tanımlayıcısı - vekil anahtar. | |
@@ -132,7 +132,7 @@ ms.locfileid: "37906133"
 
 **MdmStatuses** varlığı, cihazın uyumluluk durumunu gösterir.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | MdmStatusID |Uyumluluk durumu için benzersiz tanımlayıcı |
 | MdmStatusKey |Veri ambarındaki uyumluluk durumunun benzersiz tanımlayıcısı - vekil anahtar | 
@@ -141,7 +141,7 @@ ms.locfileid: "37906133"
 
 ## <a name="example"></a>Örnek
 
-| MdmStatusID  | ComplianceStatus | Description |
+| MdmStatusID  | ComplianceStatus | Açıklama |
 |---------|------------|--------|
 | 0 |Bilinmiyor |Cihaz uyumluluk durumu bilinmiyor. |
 | 1 |Uyumlu |Cihaz uyumlu. |
@@ -154,7 +154,7 @@ ms.locfileid: "37906133"
 
 **ManagementStates** varlığı, cihazın durumu hakkında ayrıntılar sağlar. Ayrıntılar; uzak eylemlerin uygulandığı, cihaza jailbreak uygulandığı veya cihazın kökünün belirtildiği durumlarda faydalı olabilir.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | managementStateID | Yönetim durumunun benzersiz tanımlayıcısı. |
 | managementStateKey | Veri ambarındaki yönetim durumunun benzersiz tanımlayıcısı - vekil anahtar. |
@@ -162,7 +162,7 @@ ms.locfileid: "37906133"
 
 ## <a name="example"></a>Örnek
 
-| managementStateID  | Ad | Description |
+| managementStateID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |Yönetilen | Hiçbir bekleyen uzak eylem olmadan yönetilir. |
 | 1 |RetirePending | Cihaz için bekleyen bir devre dışı bırakma komutu vardır. |
@@ -181,7 +181,7 @@ ms.locfileid: "37906133"
 
 **WorkPlaceJoinStateTypes** varlığı, cihazın Azure Active Directory Workplace Join durumunu temsil eder.  Kayıt iş akışı, doğrulama yapmak veya kimlik doğrulamak için bir ya da daha fazla sertifika kullanabilir. Bir cihaz WorkPlace’i kaydedildiğinde, cihazı ve kullanıcıyı doğrulamak için bu sertifikalar kullanılır. Sertifikaların verilmesi, SCEP (Basit Sertifika Kayıt Noktası) sunucusu yoluyla olur. Varlıktaki değerler, cihazın bu işlem sırasında geçebileceği çeşitli durumları gösterir. Bu durumlardan bazıları, gerekli bir sertifikanın verilmesinin (SCEP sunucusundan) başarısız olması sebebiyle WorkPlace katılımının başarısız olduğuna işaret eder. Cihaz bu iş akışından hiç geçmediyse, bu değer Bilinmeyen olarak gösterilir.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | WorkPlaceJoinStateID | İş yeri katılım durumunun benzersiz tanımlayıcısı |
 | WorkPlaceJoinStateKey | Veri ambarındaki iş yeri katılım durumunun benzersiz tanımlayıcısı - vekil anahtar |
@@ -189,7 +189,7 @@ ms.locfileid: "37906133"
 
 ## <a name="example"></a>Örnek
 
-| workPlaceJoinStateID  | Ad | Description |
+| workPlaceJoinStateID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |Bilinmiyor |Bir cihaz iş yerine katılmamışsa, Bilinmeyen durumundadır |
 | 1 |Başarılı |İş yerine katılma başarılı |
@@ -205,7 +205,7 @@ ms.locfileid: "37906133"
 
 **ManagementAgentTypes** varlığı, bir cihazı yönetmek için kullanılan aracıları temsil eder.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | ManagementAgentTypeID | Yönetim aracısı türünün benzersiz tanımlayıcısı. |
 | ManagementAgentTypeKey | Veri ambarındaki yönetim aracısı türünün benzersiz tanımlayıcısı - vekil anahtar. |
@@ -213,7 +213,7 @@ ms.locfileid: "37906133"
 
 ## <a name="example"></a>Örnek
 
-| ManagementAgentTypeID  | Ad | Description |
+| ManagementAgentTypeID  | Ad | Açıklama |
 |---------|------------|--------|
 | 1 |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
 | 2 |MDM | Cihaz bir MDM aracısı kullanılarak yönetiliyor |
@@ -227,7 +227,7 @@ ms.locfileid: "37906133"
 
 **Cihazlar** varlığı, yönetime kaydedilen tüm cihazları ve bunlara karşılık gelen özellikleri listeler.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | DeviceKey | Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. |
 | DeviceId | Cihazın benzersiz tanımlayıcısı. |
@@ -273,7 +273,7 @@ ms.locfileid: "37906133"
 
 **DevicePropertyHistory** varlığı, cihazlar tablosuyla aynı özelliklere sahiptir ve her cihaz kaydının son 90 gün boyunca günlük olarak anlık görüntüsünü alır. DateKey sütunu, her satır için günü gösterir.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | DateKey |Günü gösteren tarih tablosuna başvuru. |
 | DeviceKey |Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur. |
@@ -317,7 +317,7 @@ ms.locfileid: "37906133"
 
 **MdmDeviceInventoryHistories** varlığı, MDM ile yönetilen cihazların envanter verileri için son 90 günlük anlık görüntülerini barındırır. DateKey sütunu, satır için günü gösterir. Bazı özellikler tüm cihazlarda uygulanamayabilir veya doldurulamayabilir, o nedenle daha fazla ayrıntı için bu sayfadan yardım alın. Daha fazla bilgi için bkz. [Microsoft Intune’da envanterli cihazlarınızı anlama](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | DateKey | Günü gösteren tarih tablosuna başvuru. |
 | DeviceKey |Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur. |
@@ -416,7 +416,7 @@ ms.locfileid: "37906133"
 **ApplicationInventory** varlığı, envanter toplandığı anda cihazda bulunan uygulamaları listeler.
 
 
-|      Özellik      |                       Description                        |
+|      Özellik      |                       Açıklama                        |
 |--------------------|----------------------------------------------------------|
 |     DeviceKey      |              Cihazlar tablosuna başvuru.               |
 |   ApplicationKey   | ? (ExchangeDeviceService\DeviceApplication konumundan kopyalandı). |
