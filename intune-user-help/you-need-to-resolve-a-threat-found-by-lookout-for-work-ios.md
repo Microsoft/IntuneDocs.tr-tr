@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ffa0207729a6e0855b4534d40aa598bcb04e7847
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5866314c03eff5613b4c0cc5d46d2f2eace29a13
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150210"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828032"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work tarafından bulunan bir tehdidi çözme  
 
@@ -39,10 +39,12 @@ Lookout for Work uygulaması bir güvenlik veya uygulama tehdidi algıladığın
 
 1. Bir virüs veya güvenlik tehdidi algılanırsa aşağıdaki ekran görüntüsünde gösterilene benzer bir ileti alırsınız. **Cihaz yönetim portalına** dokunarak [Şirket Portalı web sitesini](https://portal.manage.microsoft.com/devices) açın.  
 
-    ![Şirket portalı web sitesi ve mavi Tamam düğmesi ile Lookout for Work hata iletisi örnek ekran görüntüsü.](./media/mtd-go-to-device-management-portal-android.png)  
+    ![Şirket Portalı web sitesi ve mavi Tamam düğmesi ile Lookout for Work hata iletisi örnek ekran görüntüsü.](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. Cihazınızı seçin.  
-3. Cihazınızın altında görüntülenen uyarıyı okuyun. Bu uyarı, virüs veya güvenlik tehdidini düzeltmeniz için Lookout for Work’ü açmanızı söyleyecektir.   
+3. Cihazınızın altında görüntülenen uyarıyı okuyun. Bu uyarı, virüs veya güvenlik tehdidini düzeltmeniz için Lookout for Work’ü açmanızı söyleyecektir.     
+
+    ![Şirket Portalı cihaz sayfasının Lookout for Work uyarısını gösteren örnek ekran görüntüsü.](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>Bir uygulama tehdidini giderme   
 Lookout for Work’ün tehdit olarak algıladığı bir uygulama yüklerseniz, aşağıdaki ekran görüntüsünde gösterilene benzer bir ileti alırsınız.  
@@ -50,5 +52,5 @@ Lookout for Work’ün tehdit olarak algıladığı bir uygulama yüklerseniz, a
 ![Lookout for Work tarafından algılanan Etkin ve Çözümlenmiş uygulama tehditlerini gösteren örnek ekran görüntüsü.](./media/ios-lfw-threat-example.png)    
 Ekranınızın üst kısmında gösterilen uygulama adını seçin. Daha sonra yönergeleri izleyerek uygulamayı kaldırın. Uygulama cihazınızda olduğu sürece şirket kaynaklarına erişemezsiniz.    
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://go.microsoft.com/fwlink/?linkid=2010980) ulaşabilirsiniz.    
 

@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/11/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 81fc62505d125195b07b80f7a52d9f2515fc2d3d
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: 8c72e68871f28d0537aa7f15e6d3a56f50a84c86
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291572"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799651"
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 
@@ -34,7 +34,7 @@ ms.locfileid: "35291572"
 
 **İlke** varlığı, cihaz yapılandırma profillerini, uygulama yapılandırma profillerini ve uyumluluk ilkelerini listeler. Kuruluşunuzda bir gruba Mobil Cihaz Yönetimi (MDM) ilkeleri atayabilirsiniz.
 
-| Özellik  | Description | Örnek |
+| Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | PolicyKey |Veri ambarında ilkeyi temsil eden Benzersiz Anahtar. |123 |
 | PolicyId |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |b66bc706-ffff-7437-0340-032819502773 |
@@ -49,7 +49,7 @@ ms.locfileid: "35291572"
 
 **PolicyType** varlığı, cihaz yapılandırma profillerini, uygulama yapılandırma profillerini ve Uyumluluk ilkeleri türlerini listeler. Kuruluşunuzda bir gruba Mobil Cihaz Yönetimi (MDM) ilkeleri atayabilirsiniz.
 
-| Özellik  | Description | Örnek |
+| Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | PolicyTypeId |İlkenin kaynak sistemindeki benzersiz tanımlayıcısı. |123 |
 | PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1 |
@@ -59,7 +59,7 @@ ms.locfileid: "35291572"
 
 **DeviceConfigurationProfileDeviceActivity** varlığı, başarılı, beklemede, başarısız veya hata durumundaki cihazların günlük sayısını listeler. Bu sayı, varlığa atanmış Cihaz Yapılandırma Profillerini gösterir. Örneğin, bir cihaz kendisine atanan tüm ilkeler için başarılı durumunda ise ilgili gün için başarılı sayacı bir artar. Cihaza biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa varlık, başarılı sayacını artırır ve cihazı hata durumuna geçirir. Varlık, son 30 gün içindeki belirli bir gün için kaç cihazın hangi durumda olduğunu listeler.
 
-| Özellik  | Description | Örnek |
+| Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | DateKey |Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |20160703 |
 | Bekleniyor |Bekleme durumundaki benzersiz cihazların sayısı. |123 |
@@ -71,7 +71,7 @@ ms.locfileid: "35291572"
 
 **DeviceConfigurationProfileUserActivity** varlığı; başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısını listeler. Bu sayı, varlığa atanmış Cihaz Yapılandırma Profillerini gösterir. Örneğin, bir kullanıcı kendisine atanan tüm ilkeler için başarılı durumunda ise ilgili gün için başarılı sayacı bir artar. Bir kullanıcıya biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa, kullanıcı hata durumunda olarak değerlendirilir.  **DeviceConfigurationProfileUserActivity** varlığı, son 30 gün içindeki belirli bir gün için kaç kullanıcının hangi durumda olduğunu listeler.
 
-| Özellik  | Description | Örnek |
+| Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | DateKey |Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |20160703 |
 | Bekleniyor |Bekleme durumundaki benzersiz kullanıcıların sayısı. |123 |
@@ -83,7 +83,7 @@ ms.locfileid: "35291572"
 
 **PolicyTypeActivity** varlığı, başarılı, beklemede, başarısız veya hata durumundaki cihazların toplam sayısını listeler. Bu durumları cihazın yapılandırma profiline, uygulama yapılandırma profiline veya uyumluluk ilkesine göre günlük olarak listeler.
 
-| Özellik  | Description | Örnek |
+| Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | DateKey |Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |20160703 |
 | PolicyKey |İlke Anahtarı, İlke ile birleştirilerek ilke adı elde edilebilir. |Windows 10 temel |
@@ -102,7 +102,7 @@ Uyumluluk İlkesi API’si, cihazlara atanmış uyumluluk ilkeleriyle ilgili dur
 Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu özetler. Ve her bir uyumluluk durumunda bulunan cihaz sayısını listeler.
 
 
-|Özellik     |Description  |Örnek  |
+|Özellik     |Açıklama  |Örnek  |
 |---------|---------|---------|
 |DateKey  |Uyumluluk ilkesi için özetin oluşturulduğu tarihin anahtarı.|20161204 |
 |Bilinmiyor  |Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı. |5|
@@ -118,7 +118,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 
 
 
-|Özellik  |Description  |Örnek  |
+|Özellik  |Açıklama  |Örnek  |
 |---------|---------|---------|
 |DateKey  |Uyumluluk ilkesi için özetin oluşturulduğu tarihin anahtarı.|20161219|
 |PolicyKey     |Özetin oluşturulduğu uyumluluk ilkesi için anahtar. |10178 |
@@ -135,7 +135,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 Aşağıdaki tablo, tüm atanmış ilkelerin platform türlerini içerir. Hiçbir cihaza atanmamış ilkelerin platform türleri bu tabloda yer almamaktadır.
 
 
-|Özellik  |Description  |Örnek  |
+|Özellik  |Açıklama  |Örnek  |
 |---------|---------|---------|
 |PolicyPlatformTypeKey      |İlke platform türü için benzersiz anahtar. |20170519 |
 |PolicyPlatformTypeId      |İlke platform türü için benzersiz tanımlayıcı.|1|
@@ -145,7 +145,7 @@ Aşağıdaki tablo, tüm atanmış ilkelerin platform türlerini içerir. Hiçbi
 
 Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki cihazların günlük sayısını listeler. Bu sayı, İlke Türü profillerindeki verileri yansıtır. Örneğin, bir cihaz kendisine atanan tüm ilkeler için başarılı durumunda ise ilgili gün için başarılı sayacı bir artar. Cihaza biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa varlık, başarılı sayacını artırır ve cihazı hata durumuna geçirir. PolicyDeviceActivity varlığı, son 30 gün içindeki belirli bir gün için kaç cihazın hangi durumda olduğunu listeler.
 
-|Özellik  |Description  |Örnek  |
+|Özellik  |Açıklama  |Örnek  |
 |---------|---------|---------|
 |DateKey|Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı.|20160703|
 |Bekleniyor|Bekleme durumundaki benzersiz cihazların sayısı.|123|
@@ -159,7 +159,7 @@ PolicyKey|İlke Anahtarı, İlke ile birleştirilerek ilke adı elde edilebilir.
 Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısını listeler. Bu sayı, İlke Türü profillerindeki verileri yansıtır. Örneğin, bir kullanıcı kendisine atanan tüm ilkeler için başarılı durumunda ise ilgili gün için başarılı sayacı bir artar. Bir kullanıcıya biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa, kullanıcı hata durumunda olarak değerlendirilir. PolicyUserActivity varlığı, son 30 gün içindeki belirli bir gün için kaç kullanıcının hangi durumda olduğunu listeler.
 
 
-| Özellik  |                                         Description                                         |       Örnek       |
+| Özellik  |                                         Açıklama                                         |       Örnek       |
 |-----------|---------------------------------------------------------------------------------------------|---------------------|
 |  DateKey  | Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |      20160703       |
 |  Bekleniyor  |                         Bekleme durumundaki benzersiz cihazların sayısı.                          |         123         |

@@ -3,8 +3,8 @@ title: Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma
 titleSuffix: Microsoft Intune
 description: Azure AD’de mobil uygulama yönetimi (MAM) sağlayıcısı kurun.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/21/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f8e5c6319e01404500f5a31fabd1baeb3520067
-ms.sourcegitcommit: 0f8d46d644f78609fae8bf91197ae77c7af45d23
+ms.openlocfilehash: 4034724380bdc35e2fe2c43c5e2de6bdfb35b371
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251554"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232146"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma 
 
