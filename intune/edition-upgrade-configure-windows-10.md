@@ -1,35 +1,35 @@
 ---
-title: Microsoft Intune - Azure ile Windows 10 cihazlarını yükseltme | Microsoft Docs
-description: Windows 10 cihazlarını yeni sürümlere yükseltmek için Microsoft Intune'da bir cihaz profili oluşturun. Ayrıca Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic ve Mobile için desteklenen yükseltme yollarına da bakın.
+title: Windows 10 cihazlarında Microsoft Intune - Azure ile yükseltme veya S modunu kullanma | Microsoft Docs
+description: Windows 10 cihazlarını farklı sürümlere yükseltmek için Microsoft Intune'da bir cihaz profili oluşturun. Örneğin, Windows 10 Professional sürümünden Windows 10 Enterprise sürümüne yükseltme yapabilirsiniz. Ayrıca, yapılandırma profilini kullanarak bir cihazda S modunu etkinleştirebilir veya kapatabilirsiniz. Ayrıca Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic ve Mobile için desteklenen yükseltme yollarına da bakın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: coryfe
+ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0e4ba42559a068ebefb453aba18060803dc36e0
+ms.sourcegitcommit: f3974c810e172f345853dacd7f2ca0abc11b1a5b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025442"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44389634"
 ---
-# <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Intune'da Windows 10 sürüm yükseltme profilini yapılandırma
+# <a name="use-a-configuration-profile-to-upgrade-windows-10-or-switch-from-s-mode-in-intune"></a>Windows 10 sürümünü yükseltmek ya da Intune'da S modundan geçiş yapmak için bir yapılandırma profili kullanın
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Windows 10 sürümünü çalıştıran cihazları farklı bir sürüme otomatik olarak yükseltmek için Intune'da bir yükseltme profili yapılandırın. Ayrıca, desteklenen yükseltme yollarına da bakın.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
-Cihazları en son sürüme yükseltmeden önce aşağıdakilerden birine sahip olmanız gerekir:
+Cihazları en son sürüme yükseltmeden önce aşağıdaki önkoşulları sağlamanız gerekir:
 
-- Yükseltilen Windows sürümünü ilkeyle hedeflenen tüm cihazlara yüklemek için geçerli bir ürün anahtarı (Windows 10 Masaüstü sürümleri için). İlkeyle hedeflediğiniz tüm cihazlara güncelleştirilmiş Windows sürümünü yüklemek için Çoklu Etkinleştirme Anahtarı (MAK) veya Anahtar Yönetimi Sunucusu (KMS) ya da gerekli lisans bilgilerini içeren bir Microsoft lisans dosyası kullanabilirsiniz (Windows 10 Mobile ve Windows 10 Holographic sürümleri için).
+- Yükseltilen Windows sürümünü ilkeyle hedeflenen tüm cihazlara yüklemek için geçerli bir ürün anahtarı (Windows 10 Masaüstü sürümleri için). Çoklu Etkinleştirme Anahtarları (MAK) veya Anahtar Yönetimi Sunucusu (KMS) anahtarlarından herhangi birini kullanabilirsiniz. Windows 10 Mobile ve Windows 10 Holographic sürümlerinde, ilkeyle hedeflediğiniz tüm cihazlara Windows'un güncelleştirilmiş sürümünü yüklemek için, lisans bilgilerini içeren bir Microsoft lisans dosyası kullanabilirsiniz.
 - İlkeyi atadığınız Windows 10 cihazları Microsoft Intune’a kaydedilir. Intune bilgisayar istemcisi yazılımını çalıştıran bilgisayarlar ile sürüm yükseltme ilkesini kullanamazsınız.
 
 ## <a name="supported-upgrade-paths"></a>Desteklenen yükseltme yolları
@@ -121,25 +121,45 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Cihaz kısıtlama ayarlarını içeren bir cihaz profili oluşturma
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **Cihaz yapılandırması**’nı seçin, **Profiller**’i seçin ve ardından **Profil Oluştur**’u seçin.
-4. Sürüm yükseltme profili için **Ad** ve **Açıklama** girin.
-5. **Platform** açılan listesinden **Windows 10 ve üzeri**’ni seçin.
-6. **Profil türü** açılan listesinde **Sürüm yükseltme**’yi seçin.
-7. **Sürüm Yükseltme** özelliklerinde, aşağıdaki ayarları girin:
-   - **Yükseltilecek sürüm** - Açılan listede, hedeflenen cihazları yükselttiğiniz Windows 10 Masaüstü, Windows 10 Holographic veya Windows 10 Mobile sürümünü seçin.
-   - **Ürün Anahtarı** - Microsoft’tan aldığınız ve tüm hedeflenen Windows 10 Masaüstü cihazlarını yükseltmek için kullanılabilen ürün anahtarını girin. 
-    Ürün anahtarı içeren bir ilke oluşturduktan sonra, anahtar güncelleştirilemez ve güvenlik nedenleriyle gizlenir. Ürün anahtarını değiştirmek için tüm anahtarı yeniden girin.
-   - **Lisans Dosyası** - Microsoft'tan aldığınız lisans dosyasını belirtmek için **Gözat**'ı seçin. Bu lisans dosyası hedeflenen cihazları yükselttiğiniz Windows Holographic veya Windows 10 Mobile sürümüne yönelik lisans bilgilerini içerir.
-8. İşiniz bittiğinde, değişikliklerinizi kaydetmek için **Oluştur**'u seçin.
+## <a name="upgrade-the-edition"></a>Sürümü yükseltme
+
+1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil Oluştur**’u seçin.
+3. Profil için bir **Ad** ve bir **Açıklama** girin. Örneğin `Windows 10 edition upgrade` gibi şey girin
+4. **Platform** olarak **Windows 10 ve üzeri**'ni seçin.
+5. **Profil türü** olarak **Sürüm yükseltme**'yi seçin.
+6. **Sürüm Yükseltme** özelliklerinde, aşağıdaki ayarları girin:
+
+   - **Yükseltilecek sürüm**: Yükseltme yaptığınız Windows 10 sürümünü seçin. Bu ilke tarafından hedeflenen cihazlar seçtiğiniz sürüme yükseltilir.
+   - **Ürün Anahtarı**: Microsoft'tan aldığınız ürün anahtarını girin. Ürün anahtarıyla bir ilke oluşturulduktan sonra anahtar güncelleştirilemez ve güvenlik nedeniyle gizlenir. Ürün anahtarını değiştirmek için tüm anahtarı yeniden girin.
+   - **Lisans Dosyası**: **İş için Windows 10 Holographic** veya **Windows 10 Mobile sürümü**'nde, seçmek üzere **Gözat** ile Microsoft'tan aldığınız dosyaya gidin. Bu lisans dosyası, hedeflenen cihazları yükselttiğiniz sürümlerinin lisans bilgilerini içerir.
+
+7. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin. Profili oluşturmak için **Oluştur**'u seçin.
+
+## <a name="switch-out-of-s-mode"></a>S modundan çıkma
+
+[Windows 10 S modu](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) güvenlik ve performans için tasarlanmıştır. Yalnızca Microsoft Store uygulamalarını çalıştırıyorlarsa cihazlarınızı güvenli tutmaya yardımcı olması için S modunu kullanabilirsiniz. Cihazlarınız Microsoft Store'da bulunmayan uygulamalar gerektiriyorsa, S modundan çıkın. S modundan çıkma geri alınamaz. Bir kez çıktıktan sonra Windows 10 S moduna geri dönemezsiniz.
+
+Aşağıdaki adımlar, Windows 10 (1809 veya üzeri) cihazlarda S modunu kontrol eden bir profilin nasıl oluşturulacağını göstermektedir.
+
+1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil Oluştur**’u seçin.
+3. Profil için bir **Ad** ve bir **Açıklama** girin. Örneğin, `Windows 10 switch off S mode` gibi bir şey girin
+4. **Platform** olarak **Windows 10 ve üzeri**'ni seçin.
+5. **Profil türü** olarak **Sürüm yükseltme**'yi seçin.
+6. **Mod anahtarı (yalnızca Windows)** seçeneğini belirleyip **S modundan çık** özelliğini ayarlayın. Seçenekleriniz şunlardır:
+
+    - **Yapılandırma yok**: S modundaki bir cihaz S modunda kalır. Son kullanıcı cihazı S modundan çıkarabilir.
+    - **S modunda tut**: Son kullanıcının cihazı S modundan çıkarmasını devre dışı bırakır.
+    - **Çıkış**: Cihazı S modundan çıkarır.
+
+7. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin. Profili oluşturmak için **Oluştur**'u seçin.
 
 Profil oluşturulur ve profiller arasında listelenir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu profili gruplara atamak için bkz. [Cihaz profillerini atama](device-profile-assign.md).
+Gruplarınıza [bu profili atayın](device-profile-assign.md).
 
 >[!NOTE]
->İlke atamasını daha sonra kaldırırsanız cihazdaki Windows sürümü geri alınmaz ve normal bir şekilde çalışmaya devam eder.
+>İlke atamasını daha sonra kaldırırsanız, cihazdaki Windows sürümü geri alınmaz ve normal bir şekilde çalışmaya devam eder.
