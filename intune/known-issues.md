@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4e523e4fb6505b2faaa0aa776b89454524130ba8
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347806"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187861"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -106,6 +106,15 @@ Daha fazla bilgi için bkz. [Cihaz uyumluluğu nedir?](device-compliance.md)
 
 <!-- ## Enrollment -->
 
+## <a name="conditional-access"></a>Koşullu erişim
+
+### <a name="conditional-access-settings-from-intune-do-not-show-up-in-new-console"></a>Intune'dan koşullu erişim ayarları yeni konsolda görünmüyor
+
+Kiracınız Azure portalına geçtikten sonra koşullu erişim ayarlarınız uygulanmaya devam eder; ancak bunlar Azure Intune portalında görünmez. 
+
+Bu ayarları Azure portalında görüntülemek ve yönetmek istiyorsanız, eski ayarları klasik portaldan kaldırmanız ve bunları Azure portalında yeniden oluşturmanız gerekir. 
+
+Daha fazla bilgi için bkz. [Azure Active Directory'de koşullu erişim için en iyi yöntemler](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices).
 
 ## <a name="data-protection"></a>Veri koruma
 

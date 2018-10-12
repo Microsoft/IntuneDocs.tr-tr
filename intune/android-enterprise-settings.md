@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312905"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119112"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune’da Android kurumsal bilgi noktası ayarları
 
@@ -45,9 +45,9 @@ Android bilgi noktası profilleri, aşağıdaki yapılandırma ayarlarını dest
 - **Bilinmeyen kaynaklardan yüklemeye izin ver**: Kullanıcıların bilinmeyen kaynaklardan yüklemesine izin vermek için **İzin Ver** olarak ayarlayın.
 - **Sistem güncelleştirmesi**: Cihazın havadan güncelleştirmeleri nasıl yöneteceğini belirlemek için bir seçenek belirtin:
     - **Cihaz Varsayılanı**: Cihazın varsayılan ayarını kullanın.
-    - **Otomatik**: Güncelleştirmeler otomatik olarak yüklenir.
-    - **Ertelenmiş**: Güncelleştirmeler sonraki bir tarihe ertelenir.
-    - **Bakım penceresi**: Bir bakım penceresi ile kullanıcılardan güncelleştirmeyi onaylamaları istenir.
+    - **Otomatik**: Güncelleştirmeler, kullanıcı etkileşimi olmadan otomatik olarak yüklenir. Bu ilkeyi seçmek, bekleyen tüm güncelleştirmeleri hemen yükler.
+    - **Erteleme**: Güncelleştirmeler 30 gün boyunca ertelenir. 30 günün sonunda, Android tarafından kullanıcıdan güncelleştirmeyi yüklemesi istenir. Cihaz üreticilerin veya taşıyıcıların önemli güvenli güncelleştirmelerinin ertelenmesini engellemek (muaf tutmak) mümkündür. Muaf tutulan bir güncelleştirme cihazda kullanıcıya bir sistem bildirimi gösterir. 
+    - **Bakım penceresi**: Güncelleştirmeleri Intune'da ayarladığınız bir günlük bakım penceresi içinde otomatik olarak yükler. Yükleme 30 gün boyunca günlük olarak denenir ve yeterli yer olmaması veya pil düzeyinin düşük olması durumunda başarısız olabilir. 30 günden sonra Android kullanıcıdan güncelleştirmeyi yüklemesi istenir. Bu pencere ayrıca Oynatma uygulamalarının güncelleştirmelerini yüklemek için de kullanılır. Bu seçenek, tek uygulamalı bilgi noktası ön plan uygulamaları güncelleştirilebileceğinden, bilgi noktaları gibi adanmış cihazlarda için önerilir. 
 
 ## <a name="kiosk-settings"></a>Bilgi noktası ayarları
 

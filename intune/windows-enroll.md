@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 31c3e7b6d255cd99efee134f0276fd4d15dab6b9
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223501"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403570"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bu konu, BT yöneticilerinin Windows kaydını kullanıcıları için kolaylaştırmasına yardımcı olmaktadır. [Intune’u kurduğunuzda](setup-steps.md) kullanıcılar, iş veya okul hesaplarıyla [oturum açarak](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) Windows cihazlarını kaydederler.  
+Bu makale BT yöneticilerinin kullanıcıları için Windows kaydını kolaylaştırmasına yardımcı olur. [Intune’u kurduğunuzda](setup-steps.md) kullanıcılar, iş veya okul hesaplarıyla [oturum açarak](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) Windows cihazlarını kaydederler.  
 
 Bir Intune yöneticisi olarak, kayıt sürecini aşağıdaki yollarla basitleştirebilirsiniz:
 - [Otomatik kaydı etkinleştirme](#enable-windows-10-automatic-enrollment) (Azure AD Premium gereklidir)
@@ -45,13 +45,14 @@ Windows cihaz kaydını nasıl basit hale getirebileceğinizi iki faktör belirl
 
 Otomatik kayıt kullanabilen kuruluşlar, Windows Yapılandırma Tasarımcısı uygulamasını kullanarak [cihazları toplu kaydetmeyi](windows-bulk-enroll.md) de yapılandırabilirler.
 
-**Çok kullanıcı desteği**<br>
-Windows 10 Creators Update çalıştıran ve Azure Active Directory etki alanına katılmış olan cihazlar artık Intune tarafından çok kullanıcılı yönetim için destekleniyor. Standart kullanıcılar, Azure AD kimlik bilgileriyle oturum açtığında kullanıcı adlarına atanmış uygulama ve ilkeleri alırlar. Kullanıcılar, uygulama yükleme gibi self servis senaryoları için Şirket Portalını şu anda kullanamaz.
+## <a name="multi-user-support"></a>Çok kullanıcı desteği
+
+Intune, Windows 10 Oluşturucu güncelleştirmesi çalıştıran ve Azure Active Directory etki alanına katılmış cihazlar için çoklu yönetimi destekler. Standart kullanıcılar Azure AD kimlik bilgileriyle oturum açtığında, kullanıcı adlarına atanmış uygulama ve ilkeler alırlar. Kullanıcılar uygulama yükleme gibi self servis senaryoları için Şirket Portalı'nı şu anda kullanamamaktadır.
 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium olmadan Windows kaydını kolaylaştırma
-Kayıt isteklerini otomatik olarak Intune sunucularına yönlendiren bir etki alanı adı sunucusu (DNS) diğer adı (CNAME kayıt türü) oluşturarak kullanıcılarınız için kayıt işlemini kolaylaştırabilirsiniz. Bir DNS CNAME kaynak kaydı oluşturmazsanız Intune’a bağlanmaya çalışan kullanıcılar kayıt sırasında Intune sunucu adını girmek zorunda kalırlar.
+Kaydolmayı basitleştirmek için, kayıt isteklerini Intune sunucularına yönlendiren bir etki alanı adı sunucusu (DNS) diğer adı (CNAME kayıt türü) oluşturun. Aksi takdirde Intune'a bağlanmaya çalışan kullanıcıların kayıt sırasında Intune sunucu adını girmeleri gerekir.
 
 **1. Adım: CNAME oluşturma** (isteğe bağlı)<br>
 Şirketinizin etki alanı için CNAME DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden enterpriseenrollment-s.manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz.
@@ -63,7 +64,13 @@ CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıt
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 saat|
 |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 saat|
 
-Birden fazla UPN sonekiniz varsa her etki alanı için bir CNAME oluşturmanız ve EnterpriseEnrollment-s.manage.microsoft.com adresine yönlendirmeniz gerekir. Contoso kullanıcıları name@contoso.com adresini kullanıyor ancak e-posta/UPN olarak name@us.contoso.com ve name@eu.constoso.com öğelerini de kullanıyorlarsa Contoso DNS yöneticisinin aşağıdaki CNAME’leri oluşturması gerekir:
+Şirket birden fazla UPN soneki kullanıyorsa, her etki alanı için bir CNAME oluşturmanız ve bunları EnterpriseEnrollment-s.manage.microsoft.com adresine yönlendirmeniz gerekir. Örneğin Contoso kullanıcıları e-posta/UPN'leri olarak aşağıdaki biçimleri kullanın:
+
+- name@contoso.com
+- name@us.contoso.com
+- name@eu.constoso.com\
+
+Contoso DNS yöneticisinin aşağıdaki CNAME'leri oluşturması gerekir:
 
 |Tür|Konak adı|Şunu gösterir:|TTL|  
 |----------|---------------|---------------|---|
@@ -73,10 +80,11 @@ Birden fazla UPN sonekiniz varsa her etki alanı için bir CNAME oluşturmanız 
 
 `EnterpriseEnrollment-s.manage.microsoft.com` – E-postanın etki alanı adından etki alanını tanıma ile Intune hizmetine yeniden yönlendirmeyi destekler
 
-DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yaygınlaştırılıncaya kadar Intune’da DNS değişikliğini doğrulayamazsınız.
+DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yayılıncaya kadar DNS değişikliğini Intune'da doğrulayamazsınız.
 
 **2. Adım: CNAME'i doğrulama** (isteğe bağlı)<br>
-Azure portalında **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin. Intune dikey penceresinde **Cihazları kaydet** > **Windows Kaydı**’nı seçin. **Doğrulanmış etki alanı adı belirtin** kutusuna şirket web sitesinin URL'sini girin ve ardından **Otomatik Algılamayı Sına**’yı seçin.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)'da **Cihaz kaydı** > **Windows kaydı** > **CNAME Doğrulaması**'nı seçin.
+2. **Etki Alanı** kutusuna şirket Web sitesini girin ve ardından **Test Et**'i seçin.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Kullanıcılara Windows cihazlarını nasıl kaydedeceklerini anlatma
 Kullanıcılara Windows cihazlarını nasıl kaydedeceklerini ve cihazları yönetilmeye başladıktan sonra nelerle karşılaşabileceklerini anlatın.
@@ -84,7 +92,7 @@ Kullanıcılara Windows cihazlarını nasıl kaydedeceklerini ve cihazları yön
 > [!NOTE]
 > Windows'un belirli sürümlerinde, son kullanıcıların atadığınız Windows uygulamalarını görüntüleyebilmesi için Şirket Portalı web sitesinde Microsoft Edge üzerinden erişmesi gerekir. Google Chrome, Mozilla Firefox ve Internet Explorer gibi diğer tarayıcılar bu filtreleme türünü desteklemez.
 
-Son kullanıcı kayıt yönergeleri için bkz. [Windows cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Ayrıca kullanıcılara [BT yöneticim cihazımda neleri görebilir?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) sayfasındaki bilgilere göz atmalarını da söyleyebilirsiniz.
+Son kullanıcı kayıt talimatları için bkz. [Windows cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Ayrıca kullanıcılara [BT yöneticim cihazımda neleri görebilir?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows) sayfasındaki bilgilere göz atmalarını da söyleyebilirsiniz.
 
 >[!IMPORTANT]
 > Otomatik MDM kaydını etkinleştirmediyseniz ancak Azure AD’ye katılmış Windows 10 cihazlarınız varsa, kayıt sonrasında Intune konsolunda iki kayıt görünecektir. Azure AD’ye katılmış cihazların, aynı hesabı kullanarak **Hesaplar** > **İş veya okula erişim** ve **Bağlan**’a gitmesini sağlayarak bunu önleyebilirsiniz. 

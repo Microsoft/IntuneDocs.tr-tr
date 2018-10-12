@@ -1,12 +1,11 @@
 ---
-title: Bilgisayarları istemci yazılımıyla yönetme
-titlesuffix: Microsoft Intune
+title: Microsoft Intune - Azure'da istemci yazılımı olan bilgisayarları yönetme | Microsoft Docs
 description: Windows bilgisayarlarını Intune istemci yazılımını yükleyerek yönetin.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910628"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978255"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune yazılımı istemcisi ile Windows PC’leri bilgisayar olarak yönetme
 
@@ -57,6 +56,9 @@ Intune, yazılım istemcisi kullanılarak Windows PC’lerin bilgisayar olarak y
 |Yönetim izinleri|İstemci yazılımını yükleyen hesabın bu cihaz üzerinde yerel yönetici izinleri olmalıdır.|
 |Windows Installer 3.1|Bilgisayarda en azından Windows Installer 3.1 olmalıdır.<br /><br />Bir bilgisayardaki Windows Installer sürümünü görüntülemek için:<br /><br />  Bilgisayarda **%windir%\System32\msiexec.exe** dosyasına sağ tıklayın ve ardından **Özellikler**’e tıklayın.<br /><br />En son Windows Installer sürümünü Microsoft Developer Network web sitesindeki [Windows Installer Yeniden Dağıtılabilir Öğeleri](http://go.microsoft.com/fwlink/?LinkID=234258) bölümünden indirebilirsiniz.|
 |Uyumsuz istemci yazılımını kaldırma|Intune istemci yazılımını yüklemeden önce, bu bilgisayardan tüm Configuration Manager, Operations Manager ve Service Manager istemci yazılımlarını kaldırmalısınız.|
+
+> [!WARNING]
+> Microsoft [Windows 7 desteğinin 14 Ocak 2020'de sona erdiğini](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020) duyurdu. Aynı tarihte Intune'da Windows 7 çalıştıran cihazlar için desteğini kaldıracaktır. Microsft, hizmet ve destek kesintilerini önlemek için Windows 10'a geçmenizi özellikle önerir. 
 
 ## <a name="deploying-the-intune-software-client"></a>Intune yazılım istemcisini dağıtma
 Bir Intune yöneticisi olarak, Intune yazılımı istemcisini çeşitli şekillerde kullanıcılara sunabilirsiniz. Yönergeler için bkz. [Windows PC’lere Intune yazılım istemcisini yükleme](install-the-windows-pc-client-with-microsoft-intune.md).

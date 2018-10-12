@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313726"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602155"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -83,29 +83,31 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
 8. Listelenen her platformda **Kişiye ait** cihazlar için **İzin Ver** veya **Engelle**’yi seçin.
 9. **Tamam**’ı seçin.
 
-### <a name="android-device-type-restrictions"></a>Android cihaz türü kısıtlamaları
+### <a name="blocking-personal-android-devices"></a>Kişisel Android cihazlarını engelleme
 - Kişisel Android cihazların kaydını engellerseniz kişisel Android iş profili cihazları hala kaydedilebilir durumda olacaktır.
 - Varsayılan olarak, Android iş profili cihaz ayarlarınız Android cihazlarınızın ayarlarıyla aynı olur. Android iş profili ayarlarınızı değiştirdikten sonra artık bu durum oluşmaz.
 - Kişisel Android iş profili kaydını engellerseniz, yalnızca kurumsal Android cihazlar Android iş profili olarak kaydedilebilir.
 
-### <a name="windows-device-type-restrictions"></a>Windows cihaz türü kısıtlamaları
-Windows platformu cihaz türü kısıtlaması **Engelle** olarak ayarlandıktan sonra Intune, tüm yeni Windows kayıt isteklerinin şirket kaydı olarak yetkilendirildiğinden emin olmak için denetim yapar. Yetkilendirilmemiş kayıtlar engellenir.
+### <a name="blocking-personal-windows-devices"></a>Kişisel Windows cihazlarını engelleme
+Kişisel Windows cihazlarının kayıt yapmasını engellerseniz, Intune, kurumsal bir kayıt olarak yetkilendirildiğinden emin olmak için her yeni Windows kayıt isteğini denetler. Yetkilendirilmemiş kayıtlar engellenir.
 
 Windows şirket kaydı olarak yetkilendirme için aşağıdaki yöntemler uygundur:
  - Kaydeden kullanıcı [cihaz kayıt yöneticisi hesabı]( device-enrollment-manager-enroll.md) kullanıyor.
 - Cihaz [Windows AutoPilot](enrollment-autopilot.md) yoluyla kaydediliyor.
+- Cihaz Windows Autopilot ile kaydediliyor ancak Windows Ayarları'ndan bir yalnızca MDM kaydı seçeneği değil.
 - Cihazın IMEI numarası **Cihaz kaydı** > **[Şirket cihaz tanımlayıcıları](corporate-identifiers-add.md)**’nda listelenmiş. (Windows Phone 8.1 için desteklenmez.)
 - Cihaz bir [toplu sağlama paketi](windows-bulk-enroll.md) ile kaydediliyor.
 - Cihaz [ortak yönetim için SCCM’den otomatik kayıt](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md) yoluyla kaydediliyor.
  
 Aşağıdaki kayıtlar Intune tarafından şirket olarak işaretlenir ancak Intune yöneticisine cihaz başına denetim sağlamadığı için engellenir:
- - [Windows kurulumu sırasında Azure Active Directory katılımı](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
-- [Windows ayarlarından Azure Active Directory katılımı](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+ - [Windows kurulumu sırasında Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- [Windows Ayarları'ndan Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
  
 Aşağıdaki kişisel kayıt yöntemleri de engellenir:
-- [Windows Ayarları’ndan İş Hesabı Ekleme](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md) ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- [Windows Ayarları'ndan İş Hesabı ekleme](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
 - Windows Ayarları’ndan [Yalnızca MDM kaydı]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) seçeneği.
 
+\* Bunlar, Autopilot ile kaydedilirse engellenmez.
 
 ## <a name="set-device-limit-restrictions"></a>Cihaz sınırı kısıtlamalarını ayarlama
 

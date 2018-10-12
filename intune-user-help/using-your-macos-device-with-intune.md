@@ -1,11 +1,11 @@
 ---
-title: iOS veya Mac OS X cihazınızı Intune ile kullanma | Microsoft Docs
-description: iOS veya Mac OS X mobil cihazınız Intune’a kaydolduğunda cihazda gerçekleştirebileceğiniz görevlere yönelik bağlantıların listesi
+title: Mac OS cihazınızı Intune ile kullanma | Microsoft Docs
+description: Şirket Portalı uygulamasından Mac OS mobil cihazınızın sorunlarını gidermek ve cihazı yönetmek için bağlantılar bulma
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 887b9355bc68edca314a49743b8d11728ca2361a
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771865"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168922"
 ---
-# <a name="using-your-macos-device-with-intune"></a>macOS cihazınızı Intune ile kullanma
+# <a name="using-your-macos-device-with-intune-company-portal"></a>Mac OS cihazınızı Intune Şirket Portalı ile kullanma
 
-İş yaşamınızı kolaylaştırmak için Intune ile yapabileceğiniz birçok şey vardır. Şirketiniz yapmanızı isteyebileceği en yaygın işlemlerin listesi aşağıda verilmiştir.
+Bu makale, Mac OS için Şirket Portalı'na özgü görev ve bilgileri listelemektedir. Mac OS cihazınızda sorun gidermenize ve cihazı yönetmenize yardımcı olacaktır. Daha fazla ayrıntı, adım ve ekran görüntüsü görmek için herhangi bir bağlantıya tıklayın. 
 
 ## <a name="supported-versions"></a>Desteklenen sürümler
 
-Intune şu anda macOS cihazlar için OS X El Capitan 10.11 ve üzeri sürümleri desteklemektedir.
+Mac OS için Şirket Portalı, şu anda Mac OS cihazlar için OS X El Capitan 10.11 ve üzerini desteklemektedir.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune'a kaydolma ve Şirket Portalı'nı yükleme
 

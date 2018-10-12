@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 08/16/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253689"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727586"
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -103,7 +103,7 @@ MDM çözümü:
 
 -   Şirket verilerinin tüketici uygulamalarına ve hizmetlerini sızmasını önlemeye yardımcı olma
 
--   Mobil uygulamalara kısıtlamalar (farklı kaydet, pano, PIN, vs.) uygulama
+-   İstemci uygulamalara kısıtlamalar (farklı kaydetme, pano, PIN vb.) uygulama
 
 -   Uygulamaları cihazdan kaldırmadan şirket verilerini uygulamalardan silme
 
@@ -122,6 +122,18 @@ Ancak, dikkat edilmesi gereken bazı sınırlamalar vardır, örneğin:
 -   Bu cihazlarda sertifika profillerini sağlayamazsınız.
 
 -   Bu cihazlarda şirket Wi-Fi ve VPN ayarlarını sağlayamazsınız.
+
+## <a name="app-protection-global-policy"></a>Uygulama koruma genel ilkesi
+
+Bir OneDrive yöneticisi **admin.office.com** adresine gidip **Cihaz** erişimini seçtiğinde **Mobil uygulama yönetimi** denetimlerini OneDrive ve SharePoint istemci uygulamalarına ayarlama olanağına sahiptir. 
+
+OneDrive Admin konsolundan bulunabilecek ayarlar **Genel** ilke olarak adlandırılan özel bir Intune uygulama koruma ilkesini yapılandırır. Bu genel ilke kiracınızdaki tüm kullanıcılar için geçerlidir ve ilkenin uygulanacağı nesneleri seçmenin bir yolu yoktur. 
+
+Etkinleştirildikten sonra iOS ve Android için OneDrive ve SharePoint uygulamaları varsayılan olarak seçilen ayarlar tarafından korunur. Bir BT uzmanı bu ilkeyi Intune konsolunda oluşturulduktan sonra düzenleyebilir ve hedeflenen başka uygulamalar ekleyebilir ve herhangi bir ilke ayarını değiştirebilir. 
+
+Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Kiracı başına fazladan genel ilkeler oluşturmak için [Intune Grafik API'leri](intune-graph-apis.md) kullanılabilirse de bu önerilmez. Fazladan genel ilkeler oluşturmak, böyle bir ilkenin uygulanmasındaki sorunları gidermek karmaşık hale gelebileceği için önerilmez.
+
+**Genel** ilke kiracınızdaki tüm kullanıcılar için geçerli olsa da herhangi bir standart Intune uygulama koruma ilkesi bu ayarları geçersiz kılabilir.
 
 
 ## <a name="multi-identity"></a>Çoklu kimlik

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329392"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602189"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune’da Android cihazlar için bilgi noktası ayarları
 
@@ -27,7 +27,7 @@ Cihaz yapılandırma ayarlarını kullanarak bir cihazı tekli veya çoklu uygul
 
 Bir bilgi noktası cihazının kısıtlama profili **Bilgi noktası modu** = **tekli uygulama bilgi noktası** olarak ayarlıysa, kullanıcılar yalnızca bir uygulamaya erişebilir. Bu modda yapılandırılmış cihazlar başlatıldığında, söz konusu uygulama başlar. Kullanıcılar yeni uygulamalar açamaz veya çalışan uygulamayı değiştiremez.
 
-1. Bilgi noktası cihazında kullanılmasını istediğiniz uygulamanın [cihaza dağıtıldığından](apps-deploy.md) ve uygulamayı bilgi noktası cihazlarınız için oluşturduğunuz cihaz grubuna atadığınızdan emin olun.
+1. Bilgi noktası cihazında olmasını istediğiniz uygulamanın [cihaza dağıtıldığından](apps-deploy.md) ve bunun uygulamayı bilgi noktası cihazlarınız için oluşturduğunuz cihaz grubuna atadığından emin olun.
 2. [Intune portalı](https://portal.azure.com)’na gidin ve **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**’u seçin.
 3. **Profil oluştur** dikey penceresinde aşağıdaki alanları ayarlayın:
      - **Ad**
@@ -51,7 +51,7 @@ Bir Android bilgi noktası cihazını çoklu uygulama olarak ayarlamak için şu
 2. [Bilgi noktası modunda kullanılabilecek uygulamalar ekleme ve atama](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (İsteğe bağlı) [Bilgi noktası modunda kullanılabilecek web bağlantıları ekleme](#add-web-links-that-can-be-used-in-kiosk-mode)
 
-### <a name="import-and-deply-the-managed-home-screen-app"></a>Yönetilen Ana Ekran uygulamasını içeri aktarma ve dağıtma
+### <a name="import-and-deploy-the-managed-home-screen-app"></a>Yönetilen Giriş Ekranı uygulamasını içeri aktarma ve dağıtma
 
 1. [Google Play’den Yönetilen Ana Ekran sayfasına](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) gözatın ve diğer yönetilen Google Play uygulamaları için kullandığınız hesapla oturum açın.
 2. **Onayla**’yı seçin.
@@ -59,6 +59,9 @@ Bir Android bilgi noktası cihazını çoklu uygulama olarak ayarlamak için şu
 4. **Uygulamalar** > **Yönetilen Ana Ekran** > **Atamalar** > **Grup ekle**’yi seçin.
 5. **Atama türü** altında **Gerekli**’yi seçin.
 6. Sırasıyla şunları seçin: **Dahil edilen cihazlar** > **Dahil edilecek cihazları seçin** > bilgi noktası cihazlarınız için oluşturduğunuz cihaz grubunu seçin > **Seçin** > **Tamam** > **Tamam** > **Kaydet**.
+
+> [!NOTE]
+> Yönetilen Giriş Ekranı uygulamasını çok uygulamalı bilgi noktası profiline eklediğinizde bir simge eklenir. Ancak simgeyi seçtiğinizde hiçbir şey olmaz. Bu nedenle Yönetilen Giriş Ekranı uygulamasını çok uygulamalı bilgi noktası profiline eklemeniz gerekmez.
 
 ### <a name="add-and-assign-apps-that-can-be-used-in-kiosk-mode"></a>Bilgi noktası modunda kullanılabilecek uygulamalar ekleme ve atama
 
@@ -76,7 +79,7 @@ Bilgi noktası cihazlarında kullanılabilir olmasını istediğiniz her bir uyg
 3. **Yapılandır**’ı seçin ve gerekli bilgileri sağlayın. Logo eklemenize gerek yok çünkü logo, sitenin favicon.ico’sundan otomatik olarak alınacaktır.
 4. **Tamam** > **Ekle**’yi seçin.
 
-Bilgi noktasına web tarayıcısı uygulamasını [Mobil Uygulamalar](apps-add.md)'ı kullanarak dağıttığınızdan emin olun.
+Bilgi noktası cihazlarına bir Web uygulaması dağıttığınızdan emin olun. Daha fazla bilgi için bkz: [Microsoft Intune'a Web uygulamaları ekleme](web-app.md).
 
 ### <a name="create-a-multi-app-kiosk-profile"></a>Çoklu uygulama bilgi noktası profili oluşturma
 

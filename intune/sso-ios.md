@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216267"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864617"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Microsoft Intune'u iOS cihazında çoklu oturum açma için yapılandırma
 
@@ -84,7 +84,7 @@ Kuruluşunuzda bulunan ve kullanıcı kimlik doğrulaması gerektiren tüm URL'l
 > [!NOTE]
 > Bu URL'ler düzgün biçimlendirilmiş FQDN'ler olmalıdır. Apple bunların `http://<yourURL.domain>` biçiminde olmasını gerektirir.
 
-URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit dize eşleştirmesi kullanılır; dolayısıyla `http://www.contoso.com/` URL ön eki `http://www.contoso.com:80/` ile eşleşmez. Öte yandan iOS 9.0 veya üstünde, tüm eşleşen değerleri belirtmek için tek bir joker karakter \* kullanılabilir. Örneğin, `http://*.contoso.com/` hem `http://store.contoso.com/` hem de `http://www.contoso.com` ile eşleşir.
+URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit dize eşleştirmesi kullanılır; dolayısıyla `http://www.contoso.com/` URL ön eki `http://www.contoso.com:80/` ile eşleşmez. Öte yandan iOS 10.0 veya üstünde tüm eşleşen değerleri belirtmek için tek bir \* joker karakter kullanılabilir. Örneğin, `http://*.contoso.com/` hem `http://store.contoso.com/` hem de `http://www.contoso.com` ile eşleşir.
 `http://.com` ve `https://.com` desenleri sırasıyla tüm HTTP ve HTTPS URL'leriyle eşleşir.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Çoklu Oturum Açma kullanan uygulamalar

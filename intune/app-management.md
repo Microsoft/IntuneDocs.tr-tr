@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 9529560fca1fcd30fc479c0eac8bd7bc967fa952
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253774"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562859"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-BT yöneticisi olarak, şirketinizin iş gücünün kullandığı mobil uygulamaları yönetmek için Microsoft Intune’u kullanabilirsiniz. Bu işlev, cihazları yönetmeye ve verileri korumaya ek niteliğindedir. Yöneticinin önceliklerinden biri, son kullanıcıların işlerini yapabilmeleri için gereken uygulamalara erişimleri olduğundan emin olmaktır. Bu amaca ulaşmak zor olabilir çünkü:
+BT yöneticisi olarak Microsoft Intune'u şirketinizin iş gücünün kullandığı istemci uygulamaları yönetmek için kullanabilirsiniz. Bu işlev, cihazları yönetmeye ve verileri korumaya ek niteliğindedir. Yöneticinin önceliklerinden biri, son kullanıcıların işlerini yapabilmeleri için gereken uygulamalara erişimleri olduğundan emin olmaktır. Bu amaca ulaşmak zor olabilir çünkü:
 - Çok çeşitli cihaz platformları ve uygulama türleri vardır.
 - Hem şirket cihazlarındaki hem de kullanıcıların kişisel cihazlarındaki uygulamaları yönetmeniz gerekebilir.
 - Ağınızın ve verilerinizi güvenli kaldığından emin olmanız gerekir.
@@ -68,7 +68,7 @@ Aşağıda gösterilen yolla erişilen **İstemci uygulamaları** iş yükünde,
     Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Microsoft Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 
-    ![“Mobil uygulamalar” iş yükü bölmesi](./media/apps-workload.png)
+    !["İstemci uygulamaları" iş yükü bölmesi](./media/apps-workload.png)
 
 Sıradaki dört bölüm, **İstemci uygulamaları** bölmesindeki kullanılabilir seçenekleri açıklar.
 

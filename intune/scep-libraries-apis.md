@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 31c083dcd2087de99830317d892750a42cc5ae6d
+ms.sourcegitcommit: ae62a269778cdbf1d207cd017de522f934b030e9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575058"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700991"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API’leri kullanarak Intune’a SCEP için üçüncü taraf CA’ları ekleme
 
@@ -125,6 +125,13 @@ Yapılandırma aşağıdaki özellikleri içerir:
     - AAD_APP_KEY="Ekleme işlemi sırasında alınan Azure Uygulama Anahtarı"
     - TENANT="Ekleme işlemi sırasında alınan Kiracı Kimliği"
     - PROVIDER_NAME_AND_VERSION="Ürününüzü ve sürümünü tanımlamak için kullanılan bilgiler"
+    
+Çözümünüz kimlik doğrulaması olan veya olmayan bir proxy gerektiriyorsa, aşağıdaki özellikleri ekleyebilirsiniz:
+
+    - PROXY_HOST="Proxy'nin üzerinde barındırıldığı konak."
+    - PROXY_PORT="Proxy'nin dinlediği bağlantı noktası."
+    - PROXY_USER="Proxy temel kimlik doğrulaması kullanıyorsa, girilecek kullanıcı adı."
+    - PROXY_PASS="Proxy temel kimlik doğrulaması kullanıyorsa, girilecek parola."
 
 Oluşturulanlar:
 

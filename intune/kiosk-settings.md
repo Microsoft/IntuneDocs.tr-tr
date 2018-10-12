@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481130"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562876"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune’da Windows 10 (ve sonrası) için bilgi noktası ayarları
 
@@ -45,7 +45,7 @@ Bilgi noktası profilleri, Windows 10 cihazlarını bir veya birden çok uygulam
 #### <a name="single-full-screen-app-kiosks"></a>Tekli tam ekran uygulama bilgi noktaları
 Aşağıdaki ayarları girin:
 
-- **Evrensel Windows Platformu (UWP) uygulama tanımlayıcısı**: Bilgi noktası uygulamasının **Uygulama kullanıcı modeli kimliği (AUMID)** değerini girin. İsterseniz, [Mobil Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz mevcut yönetilen uygulamalardan birini seçin.
+- **Evrensel Windows Platformu (UWP) uygulama tanımlayıcısı**: Bilgi noktası uygulamasının **Uygulama kullanıcı modeli kimliği (AUMID)** değerini girin. Veya [İstemci Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz yönetilen uygulamalardan birini seçin.
 
     Bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Modeli Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
@@ -62,7 +62,7 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
 Aşağıdaki ayarları girin:
 
 - **Win32 uygulaması ekle**: Win32 uygulaması, geleneksel bir masaüstü uygulamasıdır. **Uygulama adı**'nı ve **Tanımlayıcı**'yı girin. **Tanımlayıcı**, yürütülebilir dosyanın cihaza göre tam yol adıdır.
-- **Yönetilen uygulamaları ekle**: [Intune'da Mobil Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz mevcut yönetilen uygulamalardan birini seçin.
+- **Yönetilen uygulama ekle**: [Intune'da İstemci Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz yönetilen uygulamalardan birini seçin.
 - **AUMID ile uygulama ekle**: [Uygulamanın AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) değerini girin (UWP uygulamaları).
 - **Görev Çubuğu**: Bilgi noktasında görev çubuğunu **Etkinleştirmeyi** (göster) veya **Yapılandırılmadı** (gizli) olarak bırakmayı seçebilirsiniz.
 - **Başlangıç menüsü düzeni**: Uygulamaların sırası da dahil olmak üzere Başlat menüsünde nasıl göründüğünü açıklayan bir XML dosyası girin. [Başlangıç düzenini özelleştirme ve dışarı aktarma](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout), rehberlik ve örnek XML sağlar.
@@ -75,7 +75,7 @@ Aşağıdaki ayarları girin:
 
 ## <a name="kiosk-web-browser-settings"></a>Bilgi noktası web tarayıcısı ayarları
 
-Bu ayarlar bilgi noktasındaki web tarayıcısı uygulamasını denetler. Bilgi noktasına web tarayıcısı uygulamasını [Mobil Uygulamalar](apps-add.md)'ı kullanarak dağıttığınızdan emin olun.
+Bu ayarlar bilgi noktasındaki web tarayıcısı uygulamasını denetler. Bilgi noktasına web tarayıcısı uygulamasını [İstemci Uygulamalar](apps-add.md)'ı kullanarak dağıttığınızdan emin olun.
 
 1. Aşağıdaki ayarları girin:
 
@@ -115,7 +115,7 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
 
 Aşağıdaki ayarları girin:
 
-- **Yönetilen uygulamaları ekle**: [Intune'da Mobil Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz mevcut yönetilen uygulamalardan birini seçin.
+- **Yönetilen uygulama ekle**: [Intune'da İstemci Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz yönetilen uygulamalardan birini seçin.
 - **AUMID ile uygulama ekle**: [Uygulamanın AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) değerini girin (UWP uygulamaları).
 - **Başlangıç menüsü düzeni**: Uygulamaların sırası da dahil olmak üzere Başlat menüsünde nasıl göründüğünü açıklayan bir XML dosyası girin. [Başlangıç düzenini özelleştirme ve dışarı aktarma](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens), Windows Holographic for Business cihazları için rehberlik sağlar ve belirli bir XML dosyası içerir.
 - **Kullanıcı hesap türü**: Eklediğiniz uygulamaları kullanabilecek bir veya birden çok kullanıcı hesabı belirtin. Desteklenen seçenekler şunlardır: 

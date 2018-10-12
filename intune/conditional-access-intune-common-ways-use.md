@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: ee14a7983451ae37113462e1c8f0aac5785f2f09
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253619"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187878"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?
 
@@ -45,6 +45,13 @@ Exchange Online ve diğer Office 365 ürünleri için cihaz tabanlı koşullu er
 -   [Intune cihaz uyumluluğu](device-compliance.md) hakkında daha fazla bilgi edinin.
 
 -   [E-postayı, Office 365'i ve diğer hizmetleri Intune ile koşullu erişim kullanarak koruma](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) hakkında daha fazla bilgi edinin.
+
+> [!NOTE]
+> Android cihazlarda, Sharepoint Online için Cihaz Tabanlı Erişim'i etkinleştirdiğinizde, kullanıcıların kayıtlı cihazda **Tarayıcı Erişimini Etkinleştir** seçeneğini aşağıdaki şekilde etkinleştirmesi gerekir:
+> 1. **Şirket Portal uygulamasını** başlatın.
+> 2. Üç nokta (...) veya donanım menüsü düğmesinden **Ayarlar** sayfasına gidin.
+> 3. **Tarayıcı Erişimi Etkinleştir** düğmesine basın. 
+> 4. Chrome tarayıcıda, Office 365 oturumunu kapatın ve Chrome’u yeniden başlatın.
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Şirket içi Exchange için koşullu erişim
 

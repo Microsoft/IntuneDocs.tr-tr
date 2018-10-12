@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321246"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028741"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -82,7 +82,7 @@ Sertifika profillerini yapılandırabilmek için önce aşağıdaki adımları t
 NDES hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı oluşturun. NDES’i yükleyip yapılandırmadan önce, sertifika veren CA’da şablonları yapılandırırken bu hesabı girersiniz. Kullanıcının **Yerel Olarak Oturum Açma**, **Hizmet Olarak Oturum Açma** ve **Toplu iş olarak oturum açma** varsayılan haklarına sahip olduğundan emin olun. Bazı kuruluşların söz konusu hakları devre dışı bırakan sağlamlaştırma ilkeleri vardır.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Adım 2 - Sertifika yetkilisinde sertifika şablonlarını yapılandırma
-Bu görevde yapacaklarınız:
+Bu adımda şunları yapacaksınız:
 
 - NDES için bir sertifika şablonu yapılandırma
 - NDES için oluşturulan sertifika şablonunu yayımlama
@@ -145,7 +145,7 @@ Bu görevde yapacaklarınız:
 3. Şablonu **Sertifika Şablonları** klasöründe görüntüleyerek yayımlandığını doğrulayın.
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Adım 3 - NDES sunucusunda önkoşulları yapılandırma
-Bu görevde yapacaklarınız:
+Bu adımda şunları yapacaksınız:
 
 - NDES'i bir Windows Server'a ekleyin ve IIS'yi NDES'i destekleyecek biçimde yapılandırın
 - NDES Hizmet hesabını IIS_IUSR grubuna ekleyin
@@ -156,7 +156,7 @@ Bu görevde yapacaklarınız:
    1. Sihirbaz'da, AD CS Rol Hizmetleri'ne erişmek için **Active Directory Sertifika Hizmetleri** 'ni seçin. **Ağ Cihazı Kayıt Hizmeti**'ni seçin, **Sertifika Yetkilisi**'nin işaretini kaldırın ve ardından sihirbazı tamamlayın.
 
       > [!TIP]
-      > **Yükleme ilerlemesi**’nde **Kapat**’ı işaretlemeyin. Bunun yerine, **Hedef sunucuda Active Directory Sertifika Hizmetleri’ni Yapılandır** bağlantısını seçin. Sonraki görev için kullanacağınız **AD CS Yapılandırma** sihirbazı açılır. AD CS Yapılandırması açıldıktan sonra, Rol ve Özellik Ekle sihirbazını kapatabilirsiniz.
+      > **Yükleme ilerlemesi**’nde **Kapat**’ı işaretlemeyin. Bunun yerine, **Hedef sunucuda Active Directory Sertifika Hizmetleri’ni Yapılandır** bağlantısını seçin. Sonraki adım için kullanacağınız **AD CS Yapılandırma** sihirbazı açılır. AD CS Yapılandırması açıldıktan sonra, Rol ve Özellik Ekle sihirbazını kapatabilirsiniz.
 
    2. NDES sunucuya eklendiğinde, sihirbaz tarafından IIS de yüklenir. IIS'nin aşağıdaki yapılandırmalara sahip olduğundan emin olun:
 
@@ -181,7 +181,7 @@ Bu görevde yapacaklarınız:
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>Adım 4 - NDES’i Intune’la kullanılacak şekilde yapılandırma
-Bu görevde yapacaklarınız:
+Bu adımda şunları yapacaksınız:
 
 - NDES'i sertifika veren CA ile kullanmak için yapılandırma
 - IIS'de sunucu kimlik doğrulaması (SSL) sertifikasını bağlama
@@ -190,7 +190,7 @@ Bu görevde yapacaklarınız:
 1. NDES Sunucusunda, AD CS Yapılandırma sihirbazını açın ve aşağıdaki güncelleştirmeleri yapın:
 
     > [!TIP]
-    > Önceki görevde bulunan bağlantıya tıkladıysanız bu sihirbaz zaten açıktır. Aksi takdirde, Active Directory Sertifika Hizmetleri için dağıtım sonrası yapılandırmaya erişmek için Sunucu Yöneticisi'ni açın.
+    > Önceki adımdaki bağlantıya tıkladıysanız bu sihirbaz zaten açıktır. Aksi takdirde, Active Directory Sertifika Hizmetleri için dağıtım sonrası yapılandırmaya erişmek için Sunucu Yöneticisi'ni açın.
 
    - **Rol Hizmetleri**’nde **Ağ Cihazı Kayıt Hizmeti**’ni seçin
    - **NDES için Hizmet Hesabı**’nda NDES Hizmet Hesabı’nı belirtin
@@ -202,7 +202,7 @@ Bu görevde yapacaklarınız:
 
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
 
-    Bu anahtarı güncelleştirmek için sertifika şablonunun **Amacını** belirleyin (şablonun **İstek İşleme** sekmesinde bulunur). Daha sonra, mevcut verileri 1. Görev’de belirttiğiniz sertifika şablonu adıyla (şablonun görünen adıyla değil) değiştirerek karşılık gelen kayıt defteri girdisini güncelleştirin. Aşağıdaki tabloda, sertifika şablonu amacı ile kayıt defterindeki değerler eşleştirilmiştir:
+    Bu anahtarı güncelleştirmek için sertifika şablonunun **Amacını** belirleyin (şablonun **İstek İşleme** sekmesinde bulunur). Daha sonra, mevcut verileri 2. Adım'da belirttiğiniz sertifika şablonu adıyla (şablonun görünen adıyla değil) değiştirerek karşılık gelen kayıt defteri girdisini güncelleştirin. Aşağıdaki tabloda, sertifika şablonu amacı ile kayıt defterindeki değerler eşleştirilmiştir:
 
     |Sertifika şablonunun Amacı (İstek İşleme sekmesinde)|Düzenlenecek kayıt defteri değeri|SCEP profili için Intune yönetim konsolunda görünen değer|
     |---|---|---|
@@ -229,7 +229,7 @@ Bu görevde yapacaklarınız:
 
     ![Test NDES](./media/SCEP_NDES_URL.png)
 
-    **503 Hizmet kullanılamıyor** hatası alırsanız, olay görüntüleyicisini gözden geçirin. NDES kullanıcısı için bir hakkın eksik olması nedeniyle uygulama havuzu durdurulmuş olabilir. Bu haklar Görev 1'de açıklanmıştır.
+    **503 Hizmet kullanılamıyor** hatası alırsanız, olay görüntüleyicisini gözden geçirin. NDES kullanıcısı için bir hakkın eksik olması nedeniyle uygulama havuzu durdurulmuş olabilir. Bu haklar 1. Adım'da açıklanmıştır.
 
 ##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>NDES Sunucusu’nda sertifika yükleme ve bağlama
 
@@ -278,7 +278,7 @@ Bu görevde yapacaklarınız:
 4. NDES sunucusunu yeniden başlatın. Sunucu artık Sertifika Bağlayıcısı'nı desteklemeye hazırdır.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Adım 5 - Intune sertifika bağlayıcısını etkinleştirme, yükleme ve yapılandırma
-Bu görevde yapacaklarınız:
+Bu adımda şunları yapacaksınız:
 
 - Intune’da NDES desteğini etkinleştirme.
 - Basit Sertifika Kayıt Protokolü (NDES) rolünü barındıran sunucuda Sertifika Bağlayıcısı’nı indirin, yükleyin ve yapılandırın. Kuruluşunuzdaki NDES uygulamasının ölçeğini artırmak için istediğiniz sayıda NDES sunucusuna Microsoft Intune Sertifika Bağlayıcısı yükleyebilirsiniz.
@@ -299,7 +299,7 @@ Bu görevde yapacaklarınız:
     > [!NOTE]
     > Tek başına Intune için NDES yüklediğinizde, CRP hizmeti Sertifika Bağlayıcısı ile otomatik olarak yüklenir. Intune’u Configuration Manager ile kullandığınızda, Sertifika Kayıt Noktası'nı ayrı bir site sistem rolü olarak yüklersiniz.
 
-6. Sertifika Bağlayıcısı için istemci sertifikası istendiğinde, **Seç** düğmesini seçin ve ardından Görev 3'te NDES Sunucunuza yüklediğiniz **istemci kimlik doğrulaması** sertifikasını seçin.
+6. Sertifika Bağlayıcısı için istemci sertifikası istendiğinde **Seç** düğmesini, ardından 4. Adım'da NDES Sunucunuza yüklediğiniz **istemci kimlik doğrulaması** sertifikasını seçin.
 
     İstemci kimlik doğrulaması sertifikasını seçtikten sonra, **Microsoft Intune Sertifika Bağlayıcısı için İstemci Sertifikası** yüzeyine dönersiniz. Seçtiğiniz sertifika gösterilmese de bu sertifikanın özelliklerini görüntülemek için **İleri**’ye tıklayın. **İleri**’yi ve ardından **Yükle**’yi seçin.
 
@@ -450,7 +450,7 @@ Sürüm 6.1806.x.x’ten itibaren Intune Bağlayıcısı Hizmeti, olayları **Ol
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Başarılı  | Başarılı |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | Sertifika yetkilisi geçerli değil veya yetkiliye ulaşılamıyor. Sertifika yetkilisinin kullanılabilir olduğunu ve sunucunuzun onunla iletişim kurabildiğini doğrulayın. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Yerel sertifika deposunda Symantec Client Auth sertifikası bulunamadı. Daha fazla bilgi için [Symantec kayıt yetkilendirme sertifikası yükleme](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) makalesine bakın.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Yerel sertifika deposunda Symantec Client Auth sertifikası bulunamadı. Daha fazla bilgi için [Symantec kayıt yetkilendirme sertifikası yükleme](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) makalesine bakın.  |
 | 0x00000402 | RevokeCert_AccessDenied  | Belirtilen hesabın CA'dan sertifika iptal etme izinleri yok. Veren CA'yı saptamak için olay iletisi ayrıntılarında CA Adı alanına bakın.  |
 | 0x00000403 | CertThumbprint_NotFound  | Girişinizle eşleşen bir sertifika bulunamadı. Sertifika bağlayıcısının kaydını yapın ve yeniden deneyin. |
 | 0x00000404 | Certificate_NotFound  | Sağlanan girişle eşleşen bir sertifika bulunamadı. Sertifika bağlayıcısının kaydını yeniden yapın ve bir kez daha deneyin. |

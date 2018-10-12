@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/4/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: beee1462c1b6e683287b4d304df386ce525be820
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 0f6447f4a5cfb2638278a59414e83f744adb8c81
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141652"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978272"
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2018"></a>Microsoft Intune için erken sürüm - Eylül 2018
 
@@ -57,6 +57,9 @@ Her Zaman Açık VPN ayarı şurada olacaktır: **Cihaz yapılandırması** > **
 ### <a name="outlook-for-ios-and-android-app-configuration-policy---1828527---"></a>iOS ve Android için Outlook uygulama yapılandırma ilkesi <!--1828527 -->
 iOS’ta bir iOS için Outlook ve Android uygulama yapılandırma ilkesi oluşturabileceksiniz. Ek yapılandırma ayarları, iOS ve Android için Outlook’ta etkinleştirildikçe eklenecektir.
 
+###  <a name="windows-line-of-business-lob-app-file-extensions----1884873---"></a>Windows iş kolu (LOB) uygulaması dosya uzantıları <!-- 1884873 -->
+Windows LOB uygulamalarının dosya uzantıları arasında *.msi*, *.appx*, *.appxbundle*, *.msix* ve *.msixbundle* bulunur. Microsoft Intune'da **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Uygulama türü**'nü seçmenize izin veren **Uygulama ekle** bölmesi görüntülenir. Windows LOB uygulamalarında, uygulama türü olarak **İş kolu uygulamasını**, **Uygulama paket dosyasını** seçin ve ardından uygun uzantılı bir yükleme dosyası girin.
+
 ### <a name="remotely-lock-noncompliant-devices----2064495---"></a>Uyumsuz cihazları uzaktan kilitleme <!-- 2064495 -->
 Bir cihazın uyumlu olmadığı durumlarda, uyumluluk ilkesinde cihazı uzaktan kilitleyen bir eylem oluşturabileceksiniz. Intune > **Cihaz uyumluluğu**’nda yeni bir ilke oluşturun veya mevcut bir ilkeyi seçin. **Uyumsuzluğa yönelik eylemler** > **Ekle**’yi ve cihazı uzaktan kilitlemeyi seçin.
 Şu platformlarda desteklenir: 
@@ -72,6 +75,9 @@ iOS MDM kayıtlı cihazlarda Intune APP veri aktarımı ayarlarının denetimini
 ### <a name="use-a-pre-shared-key-in-a-windows-10-wi-fi-profile----2662938---"></a>Bir Windows 10 Wi-Fi profilinde önceden paylaşılan anahtar kullanma <!-- 2662938 -->
 Windows 10’da bir Wi-Fi yapılandırma profilinin kimliğini doğrulamak için WPA/WPA2 Kişisel güvenlik protokolü ile birlikte bir önceden paylaşılan anahtar (PSK) kullanabileceksiniz.
 Şu anda önceden paylaşılan anahtarları kullanmak için bir Wi-Fi profilini içeri aktarmanız veya özel bir profil oluşturmanız gerekiyor. [Windows 10 için Wi-Fi ayarları](wi-fi-settings-windows.md) makalesi, geçerli ayarları listeler. 
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995-eeready---"></a>Web verileri için Uygulama Koruma İlkesi (APP) ayarları <!-- 2662995 eeready -->
+Gerek Android gerekse iOS cihazlarında Web içeriği için uygulama ilke ayarları, gerek http gerekse https Web bağlantılarını, ayrıca iOS Evrensel Bağlantıları ve Android Uygulama Bağlantıları aracılığıyla veri aktarımını daha iyi işleyecek şekilde güncelleştirilecektir.  
 
 ### <a name="autopilot-device-sync-frequency-increasing-to-every-12-hours----2753673---"></a>Autopilot cihaz eşitleme sıklığı 12 saatte bir olarak artıyor <!-- 2753673 -->
 Autopilot cihazlar, 24 saatte bir yerine 12 saatte bir eşitlenecek.

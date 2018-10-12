@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329827"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46330006"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS cihaz kısıtlama ayarları
 
@@ -114,7 +114,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 
 -   **Cihaz kilitliyken Denetim Merkezi erişimi** - Cihaz kilitliyken kullanıcının denetim merkezi uygulamasına erişmesine izin verin.
 -   **Cihaz kilitliyken bildirimler** - Kullanıcının, cihazın kilidini açmadan bildirimler görünümüne erişime izin verin.
--   **Cihaz kilitliyken Passbook** - Cihaz kilitliyken kullanıcının Passbook uygulamasına erişmesine izin verin.
+-   **Cihaz kilitliyken cüzdan bildirimleri** - Kullanıcının cihaz kilitliyken Cüzdan uygulamasına erişmesini sağlar.
 -   **Cihaz kilitliyken Bugün görünümü** - Cihaz kilitliyken kullanıcının Bugün görünümünü görmesine izin verin.
 
 ## <a name="app-store-doc-viewing-gaming"></a>Uygulama Mağazası, Belge Görüntüleme, Oyun

@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 908135e93fd3980af9d9e80d9c5cf3b4a8abddc3
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 62a7f2f45ccd98612e56e253945974a8eb193f25
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058762"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562723"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune’a yerleşik uygulama ekleme
 
@@ -48,7 +48,7 @@ Microsoft Intune’da mümkün olan uygulamalara yerleşik uygulama eklemek içi
 ## <a name="configure-app-information"></a>Uygulama bilgilerini yapılandırma
 
 Yerleşik uygulama hakkındaki bilgileri değiştirebilirsiniz. Bu bilgiler, uygulamayı Intune’da bulmanıza yardımcı olur ve kullanıcıların uygulamayı Şirket Portalı’nda bulması kolaylaşır.
-1. **Mobil uygulamalar - Uygulamalar** bölmesinde değiştirmek istediğiniz yerleşik uygulamayı seçin.  
+1. **İstemci uygulamalar - Uygulamalar** bölmesinde değiştirmek istediğiniz yerleşik uygulamayı seçin.  
     Yerleşik uygulamaya ait bir bölme görüntülenecektir.
 2. **Yönet** altında **Özellikler** seçeneğine tıklayın.
 3. Yerleşik uygulama bilgilerini değiştirmek için **Yapılandır** seçeneğine tıklayın.

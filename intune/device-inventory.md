@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313187"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187810"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -63,44 +63,38 @@ Intune, yalnızca şirkete ait cihazlarda uygulama listesi toplar. Kişisel ciha
 
 ## <a name="hardware-device-details"></a>Donanım cihazı durumu
 
-### <a name="windows-and-ios-device-details"></a>Windows ve iOS cihaz ayrıntıları:
-|Ayrıntı|Description|  
-|--------------|----------------------|  
-|Ad|Cihazın adı.|
-|Yönetim adı|Yalnızca konsolda kullanılan cihaz adı. Bu adın değiştirilmesi, cihazdaki adı değiştirmez.|
-|UDID|Cihazın Benzersiz Cihaz tanımlayıcısı.|
-|Intune Cihaz Kimliği|Cihazı benzersiz şekilde tanımlayan GUID.|
-|Seri numarası|Üreticisinden cihazın seri numarası.|
-|Paylaşılan cihaz|**Evet** ise cihaz birden fazla kullanıcı tarafından paylaşılır.|
-|Kullanıcı onaylı kayıt|**Evet** ise cihazda yöneticilerin belirli cihaz güvenlik ayarlarını yönetmesini sağlayan kullanıcı onaylı kayıt vardır.|
-|İşletim sistemi|Cihazda kullanılan işletim sistemi.|
-|İşletim sistemi sürümü|Cihazdaki işletim sistemi sürümü.|
-|İşletim sistemi dili|Cihazdaki işletim sisteminin dil kümesi.|
-|Toplam depolama alanı|Cihazdaki toplam depolama alanı (gigabayt olarak).|
-|Boş depolama alanı|Cihazdaki kullanılmayan depolama alanı (gigabayt olarak).|
-
-
-### <a name="windows-ios-and-macos-device-details"></a>Windows, iOS ve macOS cihaz ayrıntıları
-|Ayrıntı|Description|  
-|--------------|----------------------|  
-|IMEI|Cihazın Uluslararası Mobil Ekipman Tanımlayıcısı.|
-|MEID|Cihazın mobil ekipman tanımlayıcısı.|
-|Üretici|Cihazın üreticisi.|
-|Model|Cihazın modeli.|
-|Telefon numarası|Cihaza atanan telefon numarası.|
-|Abone operatör|Cihazın kablosuz operatörü.|
-|Hücresel teknoloji|Cihaz tarafından kullanılan radyo sistemi.|
-|Wi-Fi MAC|Cihazın Ortam Erişim Denetimi adresi.|
-|ICCID|Entegre Devre Kart Tanımlayıcısı, yani bir SIM kartın benzersiz kimlik numarası.|
-|Kaydolma tarihi|Cihazın Intune’a kaydedildiği tarih ve saat.|
-|Son iletişim|Cihazın Intune’a son bağlandığı tarih ve saat.|
-|Etkinleştirme kilidi atlama kodu|Etkinleştirme kilidini atlamak için kullanılabilecek kod.|
-|Azure AD kayıtlı|**Evet** ise cihaz Azure Directory’ye kayıtlıdır.|
-|Uyumluluk|Cihazın uyumluluk durumu.|
-|EAS etkin|**Evet** ise cihaz Exchange posta kutusu ile eşitlenir.|
-|EAS etkinleştirme kimliği|Cihazın Exchange ActiveSync tanımlayıcısı.|
-|Denetimli|**Evet** ise yöneticiler cihaz üzerinde gelişmiş denetime sahiptir.|
-|Şifreli|**Evet** ise cihazda depolanan veriler şifrelenir.|
+|Ayrıntı|Açıklama|Platform| 
+|--------------|----------------------|----|  
+|Ad|Cihazın adı.|Windows, iOS|
+|Yönetim adı|Yalnızca konsolda kullanılan cihaz adı. Bu adın değiştirilmesi, cihazdaki adı değiştirmez.|Windows, iOS|
+|UDID|Cihazın Benzersiz Cihaz tanımlayıcısı.|Windows, iOS|
+|Intune Cihaz Kimliği|Cihazı benzersiz şekilde tanımlayan GUID.|Windows, iOS|
+|Seri numarası|Üreticisinden cihazın seri numarası.|Windows, iOS|
+|Paylaşılan cihaz|**Evet** ise cihaz birden fazla kullanıcı tarafından paylaşılır.|Windows, iOS|
+|Kullanıcı onaylı kayıt|**Evet** ise cihazda yöneticilerin belirli cihaz güvenlik ayarlarını yönetmesini sağlayan kullanıcı onaylı kayıt vardır.|Windows, iOS|
+|İşletim sistemi|Cihazda kullanılan işletim sistemi.|Windows, iOS|
+|İşletim sistemi sürümü|Cihazdaki işletim sistemi sürümü.|Windows, iOS|
+|İşletim sistemi dili|Cihazdaki işletim sisteminin dil kümesi.|Windows, iOS|
+|Toplam depolama alanı|Cihazdaki toplam depolama alanı (gigabayt olarak).|Windows, iOS|
+|Boş depolama alanı|Cihazdaki kullanılmayan depolama alanı (gigabayt olarak).|Windows, iOS|
+|IMEI|Cihazın Uluslararası Mobil Ekipman Tanımlayıcısı.|Windows, iOS, Android|
+|MEID|Cihazın mobil ekipman tanımlayıcısı.|Windows, iOS, Android|
+|Üretici|Cihazın üreticisi.|Windows, iOS, Android|
+|Model|Cihazın modeli.|Windows, iOS, Android|
+|Telefon numarası|Cihaza atanan telefon numarası.|Windows, iOS, Android|
+|Abone operatör|Cihazın kablosuz operatörü.|Windows, iOS, Android|
+|Hücresel teknoloji|Cihaz tarafından kullanılan radyo sistemi.|Windows, iOS, Android|
+|Wi-Fi MAC|Cihazın Ortam Erişim Denetimi adresi.|Windows, iOS, Android|
+|ICCID|Entegre Devre Kart Tanımlayıcısı, yani bir SIM kartın benzersiz kimlik numarası.|Windows, iOS, Android|
+|Kaydolma tarihi|Cihazın Intune’a kaydedildiği tarih ve saat.|Windows, iOS, Android|
+|Son iletişim|Cihazın Intune’a son bağlandığı tarih ve saat.|Windows, iOS, Android|
+|Etkinleştirme kilidi atlama kodu|Etkinleştirme kilidini atlamak için kullanılabilecek kod.|Windows, iOS, Android|
+|Azure AD kayıtlı|**Evet** ise cihaz Azure Directory’ye kayıtlıdır.|Windows, iOS, Android|
+|Uyumluluk|Cihazın uyumluluk durumu.|Windows, iOS, Android|
+|EAS etkin|**Evet** ise cihaz Exchange posta kutusu ile eşitlenir.|Windows, iOS, Android|
+|EAS etkinleştirme kimliği|Cihazın Exchange ActiveSync tanımlayıcısı.|Windows, iOS, Android|
+|Denetimli|**Evet** ise yöneticiler cihaz üzerinde gelişmiş denetime sahiptir.|Windows, iOS, Android|
+|Şifreli|**Evet** ise cihazda depolanan veriler şifrelenir.|Windows, iOS, Android|
 
 
 

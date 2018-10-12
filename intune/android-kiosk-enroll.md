@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c4b9b99a17e435b1d79d2e10565abbd262c89741
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313470"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187827"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android kurumsal bilgi noktası cihazlarının kaydını ayarlama
 
@@ -74,6 +74,7 @@ Uygulama ve ilkeleri, atanmış veya dinamik cihaz gruplarına hedefleyebilirsin
     - **Cihaz eklenecek konum**: enrollmentProfileName
     - Ortadaki kutudan **Eşleştir**’i seçin.
     - Son alana ise daha önce oluşturduğunuz kayıt profili adını girin.
+    Dinamik üyelik kuralları hakkında daha fazla bilgi için bkz: [AAD grupları için dinamik üyelik kuralları](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership). 
 5. **Sorgu ekle** > **Oluştur**’u seçin.
 
 ### <a name="replace-or-remove-tokens"></a>Belirteçleri kaldırma veya değiştirme

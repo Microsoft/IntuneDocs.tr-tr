@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 3f72747b1a30494304521b23054533b9f360b2fc
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329554"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562757"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune tarafından yönetilen uygulamalardan kurumsal verileri temizleme
 
@@ -44,7 +44,7 @@ Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıld�
 
     ![Microsoft Intune bölmesinin ekran görüntüsü](./media/apps-selective-wipe01.png)
 
-3.  **Mobil uygulamalar bölmesi**’nde, **Uygulama seçmeli silme**’yi seçin.
+3.  **İstemci uygulamalar bölmesi**'nde, **Uygulama seçmeli silme**'yi seçin.
 
 4.  **Yeni temizleme isteği**’ni seçin. **Yeni temizleme isteği** bölmesi açılır.
 
@@ -62,7 +62,7 @@ Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur 
 
 Temizleme isteğinin genel durumunu gösteren ve bekleyen isteklerle hataların sayısını içeren bir özet raporunuz olabilir. Daha fazla bilgi almak için şu adımları izleyin:
 
-1.  **Mobil Uygulamalar - Uygulama seçmeli silme** bölmesinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
+1.  **İstemci Uygulamalar - Uygulama seçmeli silme** bölmesinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
 
     ![Uygulama seçmeli silme bölmesinde temizleme isteği durumunun ekran görüntüsü](./media/wipe-request-status-1.png)
 
@@ -75,7 +75,7 @@ Buna ek olarak, cihaz adını ve cihaz türünü görebilirsiniz; bunlar raporla
 
 Bekleme durumundaki silmeler, siz bunları elle silinceye kadar görüntülenir. Temizleme isteğini el ile silmek için:
 
-1.  **Mobil Uygulamalar - Uygulama seçmeli silme** bölmesinde.
+1.  **İstemci Uygulamalar - Uygulama seçmeli silme** bölmesinde.
 
 2.  Listede silmek istediğiniz temizleme isteğine sağ tıklayın ve **Temizleme isteğini sil**’i seçin.
 

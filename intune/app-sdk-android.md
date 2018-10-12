@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c26d9914173c07096caad428afcbd9174625ef7
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: ca1f34f6a0db6db26f03f62dba69c4cd708b9d65
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031312"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028775"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -475,8 +475,9 @@ Azure portalında:
 7.  API’ler listesinde **Microsoft Mobil Uygulama Yönetimi**’ni seçin ve seçime tıklayın.
 8.  **Kullanıcının Uygulama Yönetim Verilerini Okuma ve Yazma**'yı seçin.
 9.  **Bitti**’ye tıklayın.
+10. **İzin ver**'e, ardından **Evet**'e tıklayın. 
 
-Azure AD ile uygulama kaydetme hakkında daha fazla bilgi için [buraya](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) bakın. 
+Azure AD ile uygulama kaydetme hakkında daha fazla bilgi için [buraya](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) bakın. 
 
 Ayrıca aşağıdaki [Koşullu Erişim](#conditional-access) gereksinimlerini inceleyin.
 
@@ -1431,7 +1432,7 @@ Aşağıdakiler; otomatik bir APP-WE hizmet kaydı (buna bu bölümde **varsayı
 > **Varsayılan kaydın** faydaları arasında, cihazdaki bir uygulama için APP-WE hizmetinden ilke almanın basitleştirilmiş bir yöntemi de bulunur.
 
 ### <a name="general-requirements"></a>Genel Gereksinimler
-* Uygulamanızın Intune mobil uygulama yönetimi hizmetine kayıtlı olduğundan emin olmak için [Yaygın ADAL yapılandırmaları no 2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations)’deki adımları izleyin.
+* Uygulamanızın Intune mobil uygulama yönetimi hizmetine kayıtlı olduğundan emin olmak için [Yaygın ADAL yapılandırmaları no 2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations)’deki adımları izleyin.
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK’sı ile çalışma
 Bu yönergeler, bir son kullanıcı cihazında uygulama kullanımı için Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulama geliştiricileri içindir.

@@ -1,13 +1,13 @@
 ---
 title: Microsoft Intune kullanmaya başlarken
 titleSuffix: ''
-description: Intune hakkında bilgi edinmek için bir dizi pratik alıştırma yapın.
+description: Intune hakkında bilgi edinmek için bir dizi kısa pratik hızlı başlangıcı gözden geçirin.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/23/2018
-ms.topic: conceptual
+ms.date: 09/20/2018
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,35 +15,35 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8066cd8c2e0fa1d0a9244383497ea6b417f6531b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 508c4826a14adfa554ff59a8095b6b5a76b41773
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253740"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403536"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune şirketim için ne yapabilir?
-
-Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olan bulut tabanlı bir kurumsal mobilite yönetim (EMM) hizmetidir.
+Microsoft Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olan bulut tabanlı bir kurumsal mobilite yönetim (EMM) hizmetidir.
 
 ![Microsoft Intune için yüksek düzey mimari diyagramı](/intune/media/intunearchitecture.svg)
 
-Şirketiniz adına pek çok farklı karar almanız gerekeceği için mobil cihaz yönetimine başlamanın zor olabileceğinin farkındayız. Bu alıştırmalar, Intune’un şirket kaynaklarınızı korumak amacıyla nasıl kullanılabileceğini anlamanıza yardımcı bazı görevler sağlar.
+Şirketiniz adına pek çok farklı karar almanız gerekeceği için mobil cihaz yönetimine başlamanın zor olabileceğinin farkındayız. Aşağıdaki hızlı başlangıçlar çok kısa bir sürede Intune'u kullanmaya başlamanıza ve bazı sık kullanılan görevleri tamamlamanıza yardımcı olur.
 
-## <a name="what-are-the-exercises"></a>Alıştırmalar nelerdir?
+## <a name="quickstarts"></a>Hızlı girişler
 
-Sayfanın solundaki içindekiler tablosunu kullanarak __Başlarken__ pratik etkinliklerini sırasıyla tamamlayabilirsiniz. Bu görevler şunlardır:
+Sayfanın solundaki içindekiler tablosunu kullanarak __Başlarken__ hızlı başlangıçlarını belirtilen sırayla tamamlayabilirsiniz.
 
-* [Azure’u kullanmaya başlama](get-started-azure.md) - Azure portalının anatomisini ve gördüğünüz sayfada nasıl değişiklik yapabileceğinizi öğrenin.
-* [Kullanıcıları yönetmeye başlama](get-started-users.md) - Mobil cihazlarda şirket kaynaklarına erişmesini sağlamak için Intune’a bir kullanıcı ekleyin.
-* [Grupları kullanmaya başlama](get-started-groups.md) - Erişebilecekleri ilke ve uygulamaların yönetimini kolaylaştırmak için kullanıcıları gruplara ayırın.
-* [İlkeleri kullanmaya başlama](get-started-policies.md) - Kullanıcıların cihazları ile yetkilendirilmedikleri şeyler yapmasını önlemek için ilkeler oluşturun.
-* [Cihazları kaydetmeye başlama](get-started-enroll.md) - Bir iOS cihazın tam kayıt deneyimini yaşayarak kayıt deneyimi hakkında bilgi edinin.
-* [Uygulama eklemeye başlama](get-started-apps.md) - Çalışanlarınızın işlerini yapabilmeleri için uygulamalar bulun ve bunları cihazlara ekleyin.
-
+- [Intune'u ücretsiz deneyin](free-trial-sign-up.md) - Intune'u bir test ortamında denemek için ücretsiz bir abonelik oluşturun.    
+- [Kullanıcı oluşturun](quickstart-create-user.md) - Mobil cihazlarda şirket kaynaklarına erişmesini sağlamak için Intune’a bir kullanıcı ekleyin.
+- [Grup oluşturun](quickstart-create-group.md) - Erişebilecekleri ilke ve uygulamaları yönetmeyi kolaylaştırmak için kullanıcıları gruplara ayırın.
+- [İlke oluşturun](quickstart-create-policy.md) - Bir Windows 10 cihazı için bir cihaz uyumluluk ilkesi oluşturun ve ilkeye bir grup atayın.
+- [Otomatik kaydı ayarlayın](quickstart-setup-auto-enrollment.md) - Microsoft Intune'u, belirli kullanıcılar Windows 10 cihazlarında oturum açtığında bu cihazları otomatik kaydetmeye ayarlayın.
+- [Özel bir rol oluşturun ve atayın](quickstart-create-custom-role.md) - Bir güvenlik işlemleri departmanı için belirli izinleri olan özel bir rol oluşturun ve atayın. 
+- [iOS için bir e-posta cihaz profili oluşturun](quickstart-email-profile.md) - iOS cihazları için bir e-posta cihaz profili oluşturun.
+<!--  [Add and assign apps](get-started-apps.md) - Add and assign apps to devices -->
 ## <a name="prerequisites"></a>Önkoşullar
 
-Başlamadan önce etkin birer Intune yönetici ve kiracı hesabınızın olması gerekir. Bu hesaplara [buradan](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) kaydolabilirsiniz. Mevcut aboneler bu etkinlikleri de etkin kiracınızda tamamlayabilir. Başlarken makaleleri, test cihazlarında çalıştığınız varsayılarak hazırlanır.
+Başlamadan önce etkin birer Intune yönetici ve kiracı hesabınızın olması gerekir. Bir test ortamında [Intune'u ücretsiz denemek](free-trial-sign-up.md) için ücretsiz bir abonelik oluşturun. Mevcut aboneler bu etkinlikleri de etkin kiracınızda tamamlayabilir. Başlarken makaleleri, test cihazlarında çalıştığınız varsayılarak hazırlanır.
 
 Ayrıca tüm Başlarken görevlerini tamamlamak için kuruluşunuzun genel yöneticisi olduğunuzdan emin olmalısınız.
 

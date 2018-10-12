@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: b92a5c7bcddbecc438aa5e72989ab2302440da7a
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141686"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562893"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -90,7 +90,7 @@ Daha fazla bilgi için bkz. [MDM ve MAM karşılaştırması](byod-technology-de
 
 Önce uygulamanın içerdiği verilerin hassasiyetine bağlı olarak hangi grubun uygulamaya erişmesi gerektiğini belirlemelisiniz. Kuruluşunuzdaki belirli rolleri dahil etmeniz veya hariç tutmanız gerekebilir. Örneğin satış grubunuzun yalnızca belirli LOB uygulamalarına ihtiyacı varken mühendislik, finans, insan kaynakları veya hukuki işlemlere odaklı kişilerin LOB uygulamalarını kullanmasına gerek olmayabilir. Ayrıca satış grubunuz, mobil cihazlarında dahili şirket hizmetlerine erişirken ilave veri korumasına da ihtiyaç duyabilir. Bu grubun uygulamayı kullanarak kaynaklara nasıl bağlanacağını belirlemeniz gerekir. Uygulamanın eriştiği veriler bulutta mı yoksa şirket içinde mi barınıyor? Ayrıca kullanıcılar bu uygulamayı kullanarak kaynaklara nasıl bağlanacak? 
 
-Intune bir iş kolu uygulama sunucusu gibi şirket içi verilere güvenli erişim gerektiren mobil uygulamalara erişim sağlamayı da destekler. Bu erişim türünü genelde, erişim denetimi için [Intune tarafından yönetilen sertifikaları](certificates-configure.md), çevredeki standart bir VPN ağ geçidi veya ara sunucu ile (örneğin Azure Active Directory Uygulama Ara Sunucusu) birlikte kullanarak sağlarsınız. Erişilen verilerin iş kolu uygulamanız içinde tutulmasına ve böylelikle şirket verilerinin tüketici uygulamalarına veya hizmetlerine geçirilememesine yardımcı olmak için Intune [Uygulama Sarmalama Aracı ve Uygulama SDK’sı](apps-prepare-mobile-application-management.md) kullanılabilir.
+Intune bir iş kolu uygulama sunucusu gibi şirket içi verilere güvenli erişim gerektiren istemci uygulamalara erişim sağlamayı da destekler. Bu erişim türünü genelde, erişim denetimi için [Intune tarafından yönetilen sertifikaları](certificates-configure.md), çevredeki standart bir VPN ağ geçidi veya ara sunucu ile (örneğin Azure Active Directory Uygulama Ara Sunucusu) birlikte kullanarak sağlarsınız. Erişilen verilerin iş kolu uygulamanız içinde tutulmasına ve böylelikle şirket verilerinin tüketici uygulamalarına veya hizmetlerine geçirilememesine yardımcı olmak için Intune [Uygulama Sarmalama Aracı ve Uygulama SDK’sı](apps-prepare-mobile-application-management.md) kullanılabilir.
 
 Her bir kullanım örneği ve alt kullanım örneği uygulama senaryosu ile ilişkili kuruluşsal grupları belirlemenize yardımcı olması için [Intune dağıtım planlama, tasarlama ve uygulama kılavuzunu](planning-guide.md) kullanın. Uygulamaları gruplara atama hakkında bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md).
 

@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27995fb643e4373e2fa6a34c7147c69905f9ccc0
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 841cfdeea1d33876c1b678a531c88663aea3759e
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312653"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403604"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -35,7 +35,7 @@ Bu arada, DEP kaydının [cihaz kayıt yöneticisiyle](device-enrollment-manager
 ## <a name="what-is-supervised-mode"></a>Denetimli mod nedir?
 Apple, iOS 5 sürümünde denetimli modu kullanıma sundu. Denetimli moddaki herhangi bir iOS cihaz, daha fazla denetimle yönetilebilir. O neden bu mod, özellikle şirkete ait cihazlar için kullanışlıdır. Intune, Apple Aygıt Kayıt Programı’nın (DEP) bir parçası olarak denetimli mod için cihazların yapılandırılmasını destekler. 
 
-Denetlenmeyen DEP cihazları için destek iOS 11'de kullanım dışı bırakıldı. iOS 11 ve üstünde, DEP yapılandırmalı cihazların her zaman denetimli olması gerekir. Gelecekteki bir iOS sürümünde DEP denetimli bayrağı yoksayılacaktır.
+Denetlenmeyen DEP cihazları destek iOS 11'de sona ermiştir. iOS 11 ve üstünde, DEP yapılandırmalı cihazların her zaman denetimli olması gerekir. Gelecekteki bir iOS sürümünde DEP denetimli bayrağı yoksayılacaktır.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -61,7 +61,7 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1. Adım Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
 
-1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple kaydı** > **Kayıt Programı Belirteçleri** > **Ekle**’yi seçin.
+1. [Azure portalında Intune'da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Apple kaydı** > **Kayıt Programı Belirteçleri** > **Ekle**'yi seçin.
 
     ![Bir kayıt programı belirteci alın.](./media/device-enrollment-program-enroll-ios/image01.png)
 
@@ -164,7 +164,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 13. Şu profil ayarlarını yapılandırmak için **Kurulum Yardımcısı özelleştirme**’yi seçin: ![Kurulum Yardımcısı Özelleştirme.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    | Departman ayarları | Description |
+    | Departman ayarları | Açıklama |
     |---|---|
     | <strong>Departman Adı</strong> | Kullanıcı, etkinleştirme sırasında <strong>Yapılandırma Hakkında</strong> öğesine dokunduğunda görüntülenir. |
     |    <strong>Departman Telefonu</strong>     | Kullanıcı, etkinleştirme sırasında <strong>Yardım Gerekli</strong> düğmesine dokunduğunda görüntülenir. |

@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/28/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb608fd5f74dfdaf8c59dd94bc4c7a3fbe0471e6
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 121c740cb07e3c15c673f936c1da468ada4e809d
+ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039361"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46466719"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -33,7 +33,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 | **Android yedeklemelerini engelle** | Bu uygulamanın iş veya okul verilerini **Android Yedekleme Hizmeti**’ne yedeklemesini engellemek için [Evet](https://developer.android.com/google/backup/index.html)’i, bu uygulamanın iş veya okul verilerini yedeklemesine izin vermek için **Hayır**’ı seçin.| Evet |
 | **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** | Hangi uygulamaların bu uygulamadan veri alabileceğini belirtin: <ul><li> **İlke ile yönetilen uygulamalar**: Yalnızca diğer ilkeyle yönetilen uygulamalara aktarım yapılmasına izin verilir.</li> <li>**Tüm uygulamalar**: Herhangi bir uygulamaya aktarıma izin verilir. </li> <li>**Hiçbiri**: İlkeyle yönetilen diğer uygulamalar da dahil olmak üzere hiçbir uygulamaya veri aktarmaya izin verilmez.</li></ul> <p>Intune’un varsayılan olarak veri aktarımı hedefi olarak izin verebileceği bazı muaf uygulamalar ve hizmetler vardır. Buna ek olarak, verilerin Intune APP'yi desteklemeyen bir uygulamaya aktarılmasına izin vermeniz gerekiyorsa kendi muafiyetlerinizi oluşturabilirsiniz. Daha fazla bilgi için bkz. [Veri aktarımı muafiyetleri](#Data-transfer-exemptions).<p>Bu ilke web içeriğinin davranışını da etkiler. Bu ilke **engellendi** olarak ayarlanırsa, kullanıcı Managed Browser da dahil olmak üzere hiçbir tarayıcıda http bağlantılarını açamaz. Ayrıca, bu ilke **yalnızca ilkeyle yönetilen** olarak ayarlanırsa, http bağlantıları yalnızca Managed Browser'da açılabilir.<p>**Not:** Intune, şu anda Android Instant Apps özelliğini desteklemiyor. Intune, uygulamaya gelen veya uygulamadan giden tüm veri bağlantılarını engelleyecektir.  [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) hakkında daha fazla bilgi için Android Geliştirici belgelerine bakın.</p>| Tüm uygulamalar |
 | **Uygulamanın diğer uygulamalardan veri almasına izin ver** | Hangi uygulamaların bu uygulamaya veri aktarabileceğini belirtin: <ul><li>**İlke ile yönetilen uygulamalar**: Yalnızca diğer ilkeyle yönetilen uygulamalardan aktarım yapılmasına izin verilir.</li><li>**Tüm uygulamalar**: Herhangi bir uygulamadan veri aktarımına izin verilir.</li><li>**Hiçbiri**: İlkeyle yönetilen diğer uygulamalar da dahil olmak üzere hiçbir uygulamadan veri aktarmaya izin verilmez. </li></ul> <p>Intune’un veri aktarımı kaynağı olarak izin verebileceği bazı muaf uygulamalar ve hizmetler vardır. Uygulama ve hizmetlerin tam listesi için bkz. [Veri aktarımı muafiyetleri](#Data-transfer-exemptions). | Tüm uygulamalar |
-| **“Farklı Kaydet”i engelle** | Bu uygulamada Farklı Kaydet seçeneğinin kullanımını devre dışı bırakmak için **Evet**’i seçin. Farklı Kaydet’in kullanılmasına izin vermek istiyorsanız **Hayır** ’ı seçin. <p><br>**Şirket verilerinin kaydedilebileceği depolama hizmetlerini seçin** <br>Kullanıcılar, seçili hizmetlere (OneDrive İş, SharePoint ve Yerel Depolama) kaydedebilir. Diğer tüm hizmetler engellenir.</p> | Hayır <br><br> 0 seçili |
+| **“Farklı Kaydet”i engelle** | Bu uygulamada Farklı Kaydet seçeneğinin kullanımını devre dışı bırakmak için **Evet**’i seçin. Farklı Kaydet’in kullanılmasına izin vermek istiyorsanız **Hayır** ’ı seçin. **Not:** Bu ayar Microsoft Excel, OneNote, PowerPoint ve Word için desteklenir. Ayrıca üçüncü taraf ve iş kolu uygulamaları tarafından da desteklenebilir. <p>**Şirket verilerinin kaydedilebileceği depolama hizmetlerini seçin** <br>Kullanıcılar, seçili hizmetlere (OneDrive İş, SharePoint ve Yerel Depolama) kaydedebilir. Diğer tüm hizmetler engellenir.</p> | Hayır<p>&nbsp;</p><p>&nbsp;</p>0 seçili |
 | **Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtlama** | Bu uygulamada kes, kopyala ve yapıştır eylemlerinin ne zaman kullanılabileceğini belirtin. Aşağıdakilerden birini seçin: <ul><li>**Engellendi**: Bu uygulama ve diğer herhangi bir uygulama arasında kesme, kopyalama ve yapıştırma eylemlerine izin verilmez.</li><li>**İlkeyle yönetilen uygulamalar**: Bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında kesme, kopyalama ve yapıştırma eylemlerine izin verilir.</li><li>**Yapıştırma seçeneğiyle ilke ile yönetilen**: Bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında kesme veya kopyalama eylemine izin verilir. Herhangi bir uygulamadan verilerin bu uygulamaya yapıştırılmasına izin verir.</li><li>**Herhangi bir uygulama**: Bu uygulamaya veya bu uygulamadan kesme, kopyalama ve yapıştırma eylemleriyle ilgili bir kısıtlama olmaz. | Herhangi bir uygulama |
 |**Managed Browser’da görüntülenen web içeriğini kısıtla** | Uygulamadaki web bağlantılarının Managed Browser uygulamasında açılmasını zorunlu kılmak için **Evet**’i seçin. <br><br> Intune’a kayıtlı olmayan cihazlarda, ilke tarafından yönetilen uygulamalardaki web bağlantıları yalnızca Managed Browser uygulamasında açılabilir. <br><br> Cihazlarınızı yönetmek için Intune kullanıyorsanız bkz. [Microsoft Intune'la Managed Browser ilkelerini kullanarak İnternet erişimini yönetme](app-configuration-managed-browser.md).<br><br> Mobil cihazlar (iOS ve Android) için Microsoft Edge tarayıcısı, Intune uygulama koruma ilkelerini destekliyor. Şirket Azure AD hesaplarıyla Edge tarayıcı uygulamasında oturum açan kullanıcılar, Intune tarafından korunacak. Edge tarayıcısı MAM SDK'yı tümleştiriyor ve şunları engelleme dışında onun tüm veri koruma ilkelerini destekliyor:<ul><li>**Farklı kaydetme**: Edge tarayıcısı kullanıcının bulut depolama sağlayıcılarına (OneDrive gibi) doğrudan, uygulama içi bağlantılar eklemesine izin vermiyor.</li><li>**Kişi eşitleme**: Edge tarayıcısı yerel kişi listelerini kaydetmiyor.</li></ul> | Hayır |
 | **Uygulama verilerini şifreleme** | Bu uygulamada iş veya okul verilerinin şifrelenmesini etkinleştirmek için **Evet**’i seçin. Intune, uygulama verilerini güvenli bir şekilde şifrelemek için Android Keystore sistemiyle birlikte OpenSSL, 128 bit AES şifreleme düzeni kullanır. Veriler, dosya GÇ görevleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolamasındaki içerik her zaman şifrelenir. <br><br> Şifreleme yöntemi FIPS 140-2 sertifikalı **değildir**.  | Evet |
@@ -52,7 +52,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 
   Bu uygulama ve hizmetlere, Intune tarafından yönetilen uygulamalara ve uygulamalardan veri aktarımına tam olarak izin verilir.
 
-  |Uygulama/hizmet adı | Description |
+  |Uygulama/hizmet adı | Açıklama |
   | ------ | ---- |
   | com.android.phone | Yerel telefon uygulaması
   | com.android.vending | Google Play Store |
@@ -67,7 +67,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
   ### <a name="conditional-exemptions"></a>Koşullu muafiyetler
   Bu uygulama ve hizmetlere, yalnızca belirli koşullar altında Intune tarafından yönetilen uygulamalara ve uygulamalardan veri aktarımına izin verilir.
 
-  |Uygulama/hizmet adı | Description | Muafiyet koşulu|
+  |Uygulama/hizmet adı | Açıklama | Muafiyet koşulu|
   | ------ | ---- | --- |
   | com.android.chrome | Google Chrome Tarayıcısı | Chrome, Android 7.0+ sürümünde bazı WebView bileşenleri için kullanılır ve görünümden asla gizlenmez. Ancak uygulamaya giden ve uygulamadan gelen veri akışı her zaman kısıtlandırılır.  | com.skype.raider | Skype | Skype uygulamasına yalnızca telefon aramasıyla biten belirli eylemlerde izin verilir. |
   | com.android.providers.media | Android medya içeriği sağlayıcısı | Yalnızca zil sesi seçimi eyleminde izin verilen medya içeriği sağlayıcısı. |

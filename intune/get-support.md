@@ -3,10 +3,10 @@ title: Microsoft Intune için destek alma
 titlesuffix: Microsoft Intune
 description: Microsoft Intune ücretli ve ücretsiz deneme abonelikleri için çevrimiçi destek ve telefon desteği alın.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
+ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843149"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187793"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
 
@@ -30,17 +30,27 @@ Microsoft, Intune için genel teknik, satış öncesi, faturalandırma ve abonel
 
 >[!IMPORTANT]
 > Intune ile birlikte çalışan üçüncü taraf ürünlerle ilgili (Saaswedo, Cisco veya Lookout gibi) teknik destek için önce ürün sağlayıcısıyla görüşün. Intune destekte bir talep açmadan önce diğer ürünü doğru yapılandırdığınızdan emin olun.
+> 
+> Microsoft Intune ile ilgili sorunları giderme hakkında daha fazla bilgi için Intune belgelerindeki [Sorun giderme bölümü](help-desk-operators.md)'ne bakın.
+
+Bir BT yöneticisi olarak, Azure portalında Intune için bir çevrimiçi destek bileti çıkartmak üzere **Yardım + Destek** seçeneğini kullanabilirsiniz. Bir destek bileti oluşturmak için hesabınıza aşağıdaki [Azure Active Directory'deki yönetici rolleri](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)'nden biri atanmalıdır: 
+
+- Intune yöneticisi 
+- Genel yönetici 
+- Hizmet yöneticisi  
+
+
+## <a name="get-context-sensitive-help"></a>Bağlama duyarlı yardım alma 
+Azure portalında oturum açıp Intune'u açtıktan sonra, belirli bir Intune alanının sık karşılaşılan sorunlarının çözümlerini görüntülemek için Azure portalındaki herhangi bir Intune dikey penceresinden **Yardım ve destek**'i seçebilirsiniz. 
+
+Yaygın çözümler yardımcı olmuyorsa, Azure'un *Yardım + destek* sayfasının **Temel Bilgiler** dikey penceresini açan yeni bir destek isteği oluşturmak için **destek isteği**'ni seçebilirsiniz. Devam etmek ve bir destek bileti oluşturmak için aşağıdaki [Çevrimiçi destek bileti oluşturma](#create-an-online-support-ticket) yordamında *3. adım*'a gidin. 
 
 ## <a name="create-an-online-support-ticket"></a>Çevrimiçi destek bileti oluşturma
 
-Bir BT yöneticisi olarak, aşağıdaki adımları kullanarak Azure portalından bir destek bileti hazırlayabilirsiniz:
->[!NOTE]
->Çevrimiçi destek bileti oluşturmak için Intune Hizmet Yöneticisi veya Genel Yönetici olmanız gerekir. Ayrıntılar için bkz. [Yönetici rolleri atama](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 1. Intune yönetici kimlik bilgilerinizle Azure portalında (<https://portal.azure.com>) oturum açın ve <strong>?</strong> işaretini seçin simgesini seçin ve daha sonra <strong>Yardım + destek</strong>’i seçerek [Azure Yardım + destek](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) sayfasına gidin.
-
     ![Yardım + destek bağlantısının vurgulandığı Azure portal yardım ve destek soru işareti bağlantısının ekran görüntüsü](./media/azure-get-support.png)
 
-2. Azure Yardım ve destek sayfasında **Yeni destek talebi**’ni seçin.
+2. Azure *Yardım _+_ destek* sayfasında **Yeni destek talebi**'ni seçin.
 
     ![Yeni destek talebi bağlantısının vurgulandığı Azure portalı yardım ve destek sayfasının ekran görüntüsü](./media/azure-support-ticket-link.png)
 
@@ -72,7 +82,7 @@ Bir BT yöneticisi olarak, aşağıdaki adımları kullanarak Azure portalından
    - **Saat**
    - **Ek veriler**
 
-     **İleri**’yi seçin.
+   **İleri**’yi seçin.
 
 5. Bu destek talebi için **İletişim bilgilerini** sağlayın. Microsoft, sizinle iletişime geçmek için bu bilgileri kullanacaktır.
 6. Destek talebinizi göndermek için **Oluştur**’u seçin.
@@ -80,7 +90,15 @@ Bir BT yöneticisi olarak, aşağıdaki adımları kullanarak Azure portalından
 >[!IMPORTANT]
 >Faturalama veya abonelikle ilgili bir sorunuz varsa [Office Yönetim Merkezi](https://portal.office.com/Support/SupportEntry.aspx)’den yardım almak için bir hizmet talebi açabilirsiniz.
 
+## <a name="view-support-requests"></a>Destek isteklerini görüntüleme
+Bir destek isteğini Azure portalının içinden görüntüleyebilirsiniz. Bunu yapmak için:
+
+1. Intune yönetici kimlik bilgilerinizle Azure'da (<https://portal.azure.com>) oturum açın, <strong>?</strong> işaretini seçin simgesini seçin ve daha sonra <strong>Yardım + destek</strong>’i seçerek [Azure Yardım + destek](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) sayfasına gidin.
+
+2. **Yardım + destek** sayfasında **Son destek istekleri**'nin listesini görüntüleyebilir ve bunları ek ayrıntılarını görüntülemek üzere seçebilirsiniz.
+
 ## <a name="additional-resources"></a>Ek kaynaklar
 - [Microsoft Intune için yardımlı telefon desteği ile iletişim kurun](phone-support-contact.md)
 - [Faturalama ve abonelik yönetimi desteği](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Toplu lisanslama](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Intune sorunlarını giderme](help-desk-operators.md)
