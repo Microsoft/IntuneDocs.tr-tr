@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,19 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 99570a30130d35a651701749628cd918acf858e0
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031592"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864567"
 ---
-# <a name="using-your-ios-device-with-intune"></a>iOS cihazınızı Intune ile kullanma
-
-İş yaşamınızı kolaylaştırmak için Intune ile yapabileceğiniz birçok şey vardır. Şirketiniz yapmanızı isteyebileceği en yaygın işlemlerin listesi aşağıda verilmiştir.
+# <a name="using-your-ios-device-with-intune-company-portal"></a>iOS cihazınızı Intune Şirket Portalı ile kullanma
+Bu makale, iOS için Şirket Portalı'na özgü görev ve bilgileri listelemektedir. iOS cihazınızda sorun gidermenize ve cihazı yönetmenize yardımcı olacaktır. Daha fazla ayrıntı, adım ve ekran görüntüsü görmek için herhangi bir bağlantıya tıklayın.
 
 ## <a name="supported-versions"></a>Desteklenen sürümler
 
-Intune mevcut durumda iOS 9.0 ve üzeri sürümleri desteklemektedir.
+iOS için Şirket Portalı şu anda iOS 10.0 ve sonrasını desteklemektedir.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune'a kaydolma ve Şirket Portalı'nı yükleme
 

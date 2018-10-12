@@ -1,11 +1,11 @@
 ---
 title: Android cihazınızı Intune ile kullanma | Microsoft Docs
-description: Android mobil cihazları Intune’a kaydolduğunda son kullanıcıların cihazda gerçekleştirebileceği görevlere yönelik bağlantıların listesi
+description: Intune'a kayıtlı Android cihazlarının sorunlarını gidermek ve bu cihazları yönetmek için bağlantılar listesi
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018677"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168956"
 ---
-# <a name="using-your-android-device-with-intune"></a>Android cihazınızı Intune ile kullanma
+# <a name="using-your-android-device-with-intune-company-portal"></a>Android cihazınızı Intune Şirket Portalı ile kullanma
 
-İş yaşamınızı kolaylaştırmak için Intune ile yapabileceğiniz birçok şey vardır. Şirketiniz yapmanızı isteyebileceği en yaygın işlemlerin listesi aşağıda verilmiştir.
+Bu makale, Android için Şirket Portalı'na özgü görev ve bilgileri listelemektedir. Android cihazınızda sorun gidermenize ve cihazı yönetmenize yardımcı olacaktır. Daha fazla ayrıntı, adım ve ekran görüntüsü görmek için herhangi bir bağlantıya tıklayın. 
 
 ## <a name="supported-versions"></a>Desteklenen sürümler
 
-Intune mevcut durumda Android 4.4 ve üzeri sürümleri desteklemektedir. Buna Samsung Knox 4.4 ve üzeri cihazlar da dahildir.
+Şirket Portalı şu anda Android 4.4 ve sonraki sürümleri desteklemektedir. Samsung Knox 4.4 ve üzeri cihazlar için destek de buna dahildir.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune'a kaydolma ve Şirket Portalı'nı yükleme
 
