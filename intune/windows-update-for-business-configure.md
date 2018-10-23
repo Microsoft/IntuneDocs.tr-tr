@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255227"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425164"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune’da yazılım güncelleştirmelerini yönetme
 
@@ -34,7 +34,7 @@ Hizmet olarak Windows, Windows 10 cihazları güncelleştirmenin yoludur. Window
   - Windows Insider &#8208; Yavaş
   - Windows Insider Yayımlama 
       
-  Kullanılabilir hizmet kanalları hakkında ayrıntılar için bkz. [Hizmet olarak Windows’a genel bakış](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels).
+  Kullanılabilir hizmet kanalları hakkında ayrıntılar için bkz. [Hizmet olarak Windows’a genel bakış](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
 - **Erteleme Ayarları**: Cihaz gruplarının güncelleştirme yüklemelerini erteleyen erteleme ayarlarını yapılandırın. Güncelleştirme dağıtımınızı aşamalandırarak güncelleştirme boyunca ilerleme durumunu gözden geçirmek için bu ayarları kullanın.
 - **Duraklatma**: Güncelleştirme dağıtımı sırasında herhangi bir noktada bir sorun keşfederseniz güncelleştirmelerin yüklenmesini erteleyin.
 - **Bakım penceresi**: Güncelleştirmelerin hangi saatler arasında yüklenebileceğini yapılandırın.

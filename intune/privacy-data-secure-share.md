@@ -14,12 +14,12 @@ ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5613c1284110e85a910db8f156ff4f62a54af4ad
-ms.sourcegitcommit: dc6979f2b14d522530577cc7f212cc822356acc9
+ms.openlocfilehash: 6dc722a3d10d68c4aec30fc6d10a2867f5f0b2d7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453553"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425334"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune’da veri güvenliği ve paylaşımı
 
@@ -68,7 +68,7 @@ Belirli üçüncü taraflarla paylaşılan veriler hakkında daha fazla bilgi i�
 
 Microsoft Intune, System Center Configuration Manager ile herhangi bir veri paylaşmaz. System Center Configuration Manager, doğrudan müşteri tarafından dağıtılan, yönetilen ve işletilen bir şirket içi ürünüdür. Configuration Manager tarafından toplanan tanılama ve kullanım verileri yalnızca gelecek sürümlerin yükleme deneyimini, kalitesini ve güvenliğini geliştirmek için kullanılır.
 
-Daha fazla bilgi edinmek için bkz. [SCCM için tanılama ve kullanım verileri](https://docs.microsoft.com/en-us/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md). 
+Daha fazla bilgi edinmek için bkz. [SCCM için tanılama ve kullanım verileri](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md). 
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
