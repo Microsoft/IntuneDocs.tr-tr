@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268915"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102064"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama
 
@@ -153,7 +153,7 @@ Cihaz uyumluluk ilkelerini koşullu erişim olmadan da kullanabilirsiniz. Uyumlu
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini dağıtma yolları
 Kullanıcı gruplarındaki kullanıcılara veya cihaz gruplarındaki cihazlara uyumluluk ilkesi dağıtabilirsiniz. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının tüm cihazlarında uyumluluk denetimi yapılır.
 
-**Uyumluluk ilkesi ayarları** (Azure portalı > Cihaz uyumluluğu) şunları barındırır:
+Varsayılan **Uyumluluk ilkesi ayarları** (Azure portalı > Cihaz uyumluluğu) şunları barındırır:
 
 - **Kendisine hiçbir uyumluluk ilkesi atanmamış cihazları şöyle işaretle**: Bu özelliğin iki değeri vardır:
 

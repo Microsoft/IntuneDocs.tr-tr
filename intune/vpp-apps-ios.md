@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4a5333f4e94db0b41b81dcb2589133956c040725
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347527"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903514"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 
@@ -93,7 +93,8 @@ Yeni bir Intune kullanıcısı için bir cihaz ayarladığınızda, cihazı kull
         > Ülkeyi değiştirmek, bu belirteç ile oluşturulan uygulamalar için Apple hizmetiyle bir sonraki eşitlemede uygulamanın meta verilerini ve mağaza URL’sini güncelleştirir. Uygulama, yeni ülke mağazasında yoksa güncelleştirilmez.
 
     - **VPP hesabı türü** - **İş** veya **Eğitim**’i seçin.
-    - **Otomatik uygulama güncelleştirmeleri** - **Açık** veya **Kapalı** olarak ayarlayın. Bu etkinleştirildiğinde Intune, uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılar ve cihaz iade edildiğinde bunları cihaza otomatik olarak gönderir.
+    - **Otomatik uygulama güncelleştirmeleri** - **Açık** veya **Kapalı** olarak ayarlayın. Bu etkinleştirildiğinde Intune, uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılar ve cihaz iade edildiğinde bunları cihaza otomatik olarak gönderir. Apple VPP uygulamaları için otomatik uygulama güncelleştirmeleri yalnızca **Gerekli** yükleme amacı ile dağıtılmış olan uygulamaları otomatik olarak güncelleştirir. **Kullanılabilir** yükleme amacıyla dağıtılmış uygulamalarda otomatik güncelleştirme bir bildirim oluşturarak sizi (yöneticiyi) uygulamanın yeni bir sürümünün bulunduğu konusunda bilgilendirir. Kullanıcının uygulamanın yeni sürümünü yüklemek için Yükle'ye tıklaması gerekir. Kullanıcı ayrıca eski bir sürümü yüklenmiş olsa dahi uygulamanın Şirket Portalında yüklü olmadığını görecektir. Kullanıcı bu durumda uygulamayı yeniden yükleyebilir.
+    
         > [!NOTE]
         > Otomatik uygulama güncelleştirmeleri, iOS sürüm 11.0 ve üzerinde cihaz ve kullanıcı lisanslı uygulamalar için kullanılabilir.
 6. İşiniz bittiğinde **Oluştur**’u seçin.

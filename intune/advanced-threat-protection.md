@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/27/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313800"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102132"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune’da Windows Defender ATP’yi koşullu erişim ile etkinleştirme
 
@@ -89,6 +89,10 @@ Yapılandırma paketini kullanarak bir cihaz ekledikten sonra bunu tekrar yapman
 6. Şu ayarları yapılandırın:
 
   - **Windows Defender ATP istemci yapılandırma paketi türü**: Yapılandırma paketini profile eklemek için **Ekle**’yi seçin. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
+  
+    > [!NOTE] 
+    > Windows Defender ATP ile doğru bir şekilde bağlantı kurduysanız Intune yapılandırma profilini sizin için otomatik olarak **Ekler**.
+  
   - **Tüm dosyalar için örnek paylaşımı**: Örneklerin toplanmasına ve Windows Defender ATP ile paylaşılmasına izin vermek için **Etkinleştir**’i seçin. Örneğin şüpheli bir dosya görürseniz, bunu ayrıntılı analiz için Windows Defender ATP’ye gönderebilirsiniz. **Yapılandırılmadı** seçeneği, Windows Defender ATP ile örnek paylaşmaz.
   - **Telemetri raporlama sıklığını artırma**: Yüksek riskli cihazlarda bu ayar için **Etkinleştir** seçeneğini belirterek cihazların Windows Defender ATP hizmetine daha sık telemetri raporlamasını sağlayın.
 

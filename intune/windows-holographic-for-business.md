@@ -1,31 +1,31 @@
 ---
-title: Microsoft Intune - Azure ile Windows Holographic cihazları yönetme | Microsoft Docs
-description: Microsoft Intune kullanarak Windows Holographic for Business çalıştıran cihazlarda Şirket Portalı’nı yapılandırmak, bir uyumluluk ilkesi oluşturmak, OMA-URI ayarlarını özelleştirmek, uygulama dağıtmak, gruplarda cihazları kategorilere ayırmak, profil oluşturmak, cihazları kısıtlamak, yazılım güncelleştirmelerini etkinleştirmek, hüküm ve koşullar ayarlamak, VPN ve Wi-Fi ayarları yapılandırmak ve İş İçin Hello kullanmak gibi farklı görevler gerçekleştirebilirsiniz.
+title: Microsoft Intune ile Windows Holographic cihazları kullanma - Azure | Microsoft Docs
+description: Microsoft Intune kullanarak Windows Holographic for Business ve HoloLens çalıştıran cihazlarda Şirket Portalı’nı yapılandırmak, bir uyumluluk ilkesi oluşturmak, OMA-URI ayarlarını özelleştirmek, uygulama dağıtmak, gruplarda cihazları kategorilere ayırmak, profil oluşturmak, cihazları kısıtlamak, yazılım güncelleştirmelerini etkinleştirmek, hüküm ve koşullar ayarlamak, VPN ve Wi-Fi ayarları yapılandırmak ve İş İçin Hello kullanmak gibi farklı görevler gerçekleştirebilir ve yönetebilirsiniz.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/11/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 81a11ce35cbf0f256f59bf26d317933977750d6e
+ms.sourcegitcommit: b33ff64514abdc5e939ff59ea722b3704cd56c78
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317922"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49065773"
 ---
-# <a name="customize-devices-running-windows-holographic-with-intune"></a>Intune ile Windows Holographic çalıştıran cihazları özelleştirme
+# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune ile Windows Holographic ve HoloLens cihazlarını yönetme ve kullanma
 
-Microsoft Intune, Windows Holographic for Business çalıştıran cihazları destekler, örneğin [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
+Microsoft Intune, [Microsoft HoloLens](https://docs.microsoft.com/hololens/) gibi Windows Holographic for Business çalıştıran cihazları yönetmenize yardımcı olan birçok özelliğe sahiptir. Intune ile cihazlarınızın kuruluş kurallarına uygun olduğunu onaylayabilir ve VPN veya WiFi profili ekleyerek cihazları özelleştirebilirsiniz. Bir diğer önemli özellik de cihazı Bilgi noktası olarak kullanmak ve belirli bir uygulamayı veya belirli bir uygulama dizisini çalıştırmaktır.
 
-Windows Holographic çalıştıran cihazları Microsoft Intune ile yönetmek için bir Sürüm Yükseltme profili oluşturmanız gerekir. Bu yükseltme profili, cihazları Windows Holographic’ten Windows Holographic for Business’a yükseltir. Microsoft HoloLens için ise yükseltme için gereken lisansı almak üzere Commercial Suite satın alabilirsiniz. Daha fazla bilgi için bkz. [Windows Holographic çalıştıran cihazları Windows Holographic for Business’a yükseltme](holographic-upgrade.md).
+Bu makaledeki görevler yazılım güncelleştirmeleri ve Windows Hello for Business kullanımı dahil olmak üzere Windows Holographic for Business çalıştıran cihazlarınızı yönetme, özelleştirme ve güvenliğini sağlama konusunda yardımcı olacaktır.
 
-Windows Holographic for Business çalıştıran cihazları yönetmenize ve özelleştirmenize yardımcı olması için bu makaledeki görevleri kullanabilirsiniz. Örneğin yazılım güncelleştirmelerini yönetebilir, VPN ayarlarını yapılandırabilir ve daha pek çok işlem yapabilirsiniz.
+Windows Holographic cihazlarını Intune ile birlikte kullanmak için bir Sürüm Yükseltme profili oluşturun. Bu yükseltme profili, cihazları Windows Holographic’ten Windows Holographic for Business’a yükseltir. Microsoft HoloLens için ise yükseltme için gereken lisansı almak üzere Commercial Suite satın alabilirsiniz. Daha fazla bilgi için bkz. [Windows Holographic çalıştıran cihazları Windows Holographic for Business’a yükseltme](holographic-upgrade.md).
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 

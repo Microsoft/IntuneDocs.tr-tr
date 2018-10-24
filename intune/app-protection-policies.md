@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 368c804fa044dc303b22e2ae9cf8d273d6cd051a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 3478308e8e2c219631d0df864ca2add6cc57cda2
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231823"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075872"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -127,7 +127,10 @@ Bu ilkeleri oluşturmak için Intune konsolunda **İstemci uygulamalar** > **Uyg
 
 ![İlke ekleme penceresinin Tüm uygulama türlerini hedefle seçili olarak ekran görüntüsü](./media/app-protection-policies-target-all.png)
 
-iOS uygulamalarının “Yönetilen” olarak görülmesi için **IntuneMAMUPN** yapılandırma ilke ayarının tüm uygulamalara dağıtılması gerekir. Daha fazla bilgi için bkz. [Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+Uygulama ayarlarının Intune'a kayıtlı cihazlardaki uygulamalara yansıtılması için iOS cihazlarda ek uygulama yapılandırma ayarları gereklidir:
+- MDM ile yönetilen tüm uygulamalarda **IntuneMAMUPN** yapılandırılmalıdır.  Daha fazla bilgi için bkz. [Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- 3. Taraf ve LOB MDM ile yönetilen tüm uygulamalarda **IntuneMAMDeviceID** yapılandırılmalıdır. **IntuneMAMDeviceID**, cihaz kimliği belirtecinde yapılandırılmalıdır. Örneğin, `key=IntuneMAMDeviceID, value={{deviceID}}`. Daha fazla bilgi için bkz. [Yönetilen iOS cihazlar için uygulama yapılandırma ilkeleri ekleme](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
+- Yalnızca **IntuneMAMDeviceID** yapılandırıldığında Intune uygulaması cihazı yönetilmeyen cihaz olarak görür.  
 
 > [!NOTE]
 > Yönetim durumuna bağlı uygulama koruma ilkeleri hakkında belirli iOS destek bilgilerine ulaşmak istiyorsanız bkz. [Yönetim durumuna bağlı olarak hedeflenen MAM koruma ilkeleri](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).

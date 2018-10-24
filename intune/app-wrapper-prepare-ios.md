@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40251588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169507"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -39,13 +39,13 @@ Uygulama Sarmalama Aracı’nı çalıştırmadan önce bazı genel önkoşullar
 
 * Github’dan [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)’nı indirin.
 
-* Xcode araç takımının sürüm 5 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayar.
+* Xcode araç takımının sürüm 9 veya üzeri yüklü olan ve OS X 10.8.5 ya da üzerini çalıştıran bir Mac OS bilgisayar.
 
 * Giriş iOS uygulaması, şirketiniz veya bağımsız bir yazılım satıcısı (ISV) tarafından geliştirilmiş ve imzalanmış olmalıdır.
 
   * Giriş uygulaması dosyasının uzantısı **.ipa** veya **.app** olmalıdır.
 
-  * Giriş uygulaması iOS 8.0 veya üzeri için derlenmiş olmalıdır.
+  * Giriş uygulaması iOS 10 veya üzeri ile derlenmelidir.
 
   * Giriş uygulaması şifrelenemez.
 
@@ -315,7 +315,7 @@ Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>iOS için Uygulama Sarmalama Aracı’nda desteklenen yetenekler
 
-|Özellik|Description|Önerilen yönerge|
+|Özellik|Açıklama|Önerilen yönerge|
 |--------------|---------------|------------------------|
 |Uygulama grupları|Birden çok uygulamanın paylaşılan kapsayıcılara erişimine ve uygulamalar arasında işlemler arası ek iletişime olanak tanımak için uygulama gruplarını kullanın.<br /><br />Uygulama gruplarını etkinleştirmek için, **Yetenekler** bölmesini açın ve **Uygulama Grupları** bölümünde **AÇIK**’a tıklayın. Uygulama grupları ekleyebilir veya var olanları seçebilirsiniz.|Uygulama Grupları’nı kullanırken, ters DNS gösterimini kullanın:<br /><br />*grup.com.şirketAdı.UygulamaGrubu*|
 |Arka plan modları|Arka plan modlarının etkinleştirilmesi, iOS uygulamanızın arka planda çalışmaya devam etmesine olanak tanır.||

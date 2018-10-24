@@ -14,12 +14,12 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 72aa45d154cc3913f5b2e3895486a8296bb7f1cf
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169456"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel cihaz profili kullanma - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -70,7 +70,7 @@ Cihazların bir sonraki iadesinde, ilke uygulanır ve cihazda bir Wi-Fi profili 
 
 ## <a name="android-or-windows-wi-fi-profile-example"></a>Android veya Windows Wi-Fi profili örneği
 
-Aşağıdaki örnek bir Android veya Windows Wi-Fi profili için XML kodu örneği içerir. 
+Aşağıdaki örnek bir Android veya Windows Wi-Fi profili için XML kodu örneği içerir. Doğru biçimi göstermek ve ayrıntı sağlamak için örnek gösterilmiştir. Bu yalnızca bir örnektir ve ortamınız için önerilen yapılandırma olarak verilmemiştir.
 
 > [!IMPORTANT]
 >
@@ -122,7 +122,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>EAP tabanlı Wi-Fi profili örneği
-Aşağıdaki örnek bir EAP tabanlı Wi-Fi profili için XML kodu örneği içerir:
+Aşağıdaki örnekte EAP tabanlı Wi-Fi profili için XML kodu verilmiştir: Doğru biçimi göstermek ve ayrıntı sağlamak için örnek gösterilmiştir. Bu yalnızca bir örnektir ve ortamınız için önerilen yapılandırma olarak verilmemiştir.
+
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">

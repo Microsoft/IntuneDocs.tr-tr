@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b39afeaf6daf8b08c58becd0b4af07299bd79e7a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330271"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102009"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -31,7 +31,8 @@ Bir iOS uygulamasına özel yapılandırma ayarları sağlamak için Microsoft I
 Bir uygulama yapılandırma ilkesini ekledikten sonra bu uygulama yapılandırma ilkesi için atamaları ayarlayabilirsiniz. İlke için atamaları ayarladıktan sonra ilkenin uygulandığı kullanıcı gruplarını dahil etmeyi veya dışlamayı seçebilirsiniz. Bir veya daha fazla grubu dahil etmeyi seçtiğinizde, belirli grupları dahil etmeyi veya yerleşik grupları kullanmayı seçebilirsiniz. Yerleşik gruplar **Tüm Kullanıcılar**, **Tüm Cihazlar** ve **Tüm Kullanıcılar + Tüm Cihazlar** şeklindedir. 
 
 >[!NOTE]
->Intune size kolaylık sağlamak adına konsolda önceden oluşturulmuş ve yerleşik iyileştirmeleri bulunan **Tüm Kullanıcılar** ve **Tüm Cihazlar** gruplarını sağlar. Tüm kullanıcı ve cihazları hedeflemek için kendi oluşturacağınız “Tüm kullanıcılar” veya “Tüm cihazlar” grupları yerine bu grupları kullanmanızı kesinlikle öneririz.
+>Intune size kolaylık sağlamak adına konsolda önceden oluşturulmuş ve yerleşik iyileştirmeleri bulunan **Tüm Kullanıcılar** ve **Tüm Cihazlar** gruplarını sağlar. Tüm kullanıcı ve cihazları hedeflemek için kendi oluşturacağınız “Tüm kullanıcılar” veya “Tüm cihazlar” grupları yerine bu grupları kullanmanızı kesinlikle öneririz.<p></p>
+>Microsoft Intune yöneticisi olarak yönetilen cihazlarda hangi kullanıcı hesaplarının Microsoft Office uygulamalarına eklendiğini denetleyebilirsiniz. Erişimi yalnızca izin verilen kullanıcı hesaplarıyla sınırlayabilecek ve kayıtlı cihazlarda kişisel hesapları engelleyebilirsiniz. Destekleyen uygulamalar, uygulama yapılandırmasını işler ve onaylanmamış hesapları kaldırıp engeller.
 
 Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışlamak üzere de belirli grupları seçebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama](apps-inc-exl-assignments.md).
 
@@ -58,7 +59,7 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 8.  **Yapılandırma ilkesi ekle** bölmesinde **Yapılandırma ayarları**’nı seçin.
 9. **Yapılandırma ayarları biçimi**’ni seçin. XML bilgileri eklemek için aşağıdakilerden birini seçin:
     - **Yapılandırma tasarımcısını kullanma**
-    - **XML verileri girme**<br></br>
+    - **XML verileri girme**<br><br>
     Yapılandırma tasarımcısını kullanma hakkında ayrıntılar için bkz. [Yapılandırma tasarımcısını kullanma](#use-configuration-designer). XML verileri girme hakkında ayrıntılar için bkz. [XML verileri girme](#enter-xml-data). 
 10. XML bilgilerinizi ekledikten sonra **Tamam**’ı seçin ve yapılandırma ilkesini eklemek üzere **Ekle**’yi seçin. Yapılandırma ilkesi için genel bakış bölmesi görüntülenir.
 11. **Atamalar**’ı seçerek dahil etme ve dışlama seçeneklerini görüntüleyin. 
@@ -95,6 +96,17 @@ Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Micros
 2. **Sil**’i seçin.
 
 \{\{ ve \}\} karakterleri yalnızca belirteç türleri tarafından kullanılır ve başka bir amaçla kullanılmamalıdır.
+
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Çok kimlikli uygulamalarda yalnızca yapılandırılmış kuruluş hesaplarına izin verme 
+
+Android cihazlarda aşağıdaki anahtar/değer çiftlerini kullanın:
+
+| **Anahtar** | IntuneMAMAllowedAccountsOnly |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Değerler** | <ul><li>**Enabled**: İzin verilen tek hesap, [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarıyla tanımlanan yönetilen kullanıcı hesabıdır.</li><li>**Disabled** (veya **Enabled** ile eşleşmeyen bir değer): Tüm hesaplara izin verilir.</li></ul> |
+
+   > [!NOTE]
+   > Çoklu kimlik ile yalnızca yapılandırılmış kuruluş hesaplarına izin vermek için iOS için OneDrive 10.34 veya üzeri ile iOS için Outlook 2.99.0 veya üzeri sürümleri kullanmanız gerekir.
 
 ## <a name="enter-xml-data"></a>XML verilerini girme
 

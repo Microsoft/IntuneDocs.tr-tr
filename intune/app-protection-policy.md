@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 64e58ef4d27d2f967eff8c503842345879799168
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: fea87d72e8d8485c1cde3038d357b8d6bc7f1c71
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232214"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102013"
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -30,48 +30,53 @@ ms.locfileid: "48232214"
 Microsoft Intune uygulama koruma ilkeleri, şirket verilerinizi korumaya ve veri kaybını önlemeye yardımcı olur.
 
 ## <a name="how-you-can-protect-app-data"></a>Uygulama verilerinizi nasıl koruyabilirsiniz?
-Çalışanlarınız hem kişisel hem de iş amaçlı görevler için mobil cihazlar kullanır.  Bir yandan çalışanlarınızın üretken olmasını sağlarken diğer yandan, isteyerek ve istemeyerek yaşanabilecek veri kayıplarını önlemek isteyebilirsiniz.  Ayrıca, tarafınızdan yönetilmediği durumda dahi cihazları kullanarak erişilen şirket verilerini koruma becerisine sahip olmak istersiniz.
+Çalışanlarınız hem kişisel hem de iş amaçlı görevler için mobil cihazlar kullanır. Bir yandan çalışanlarınızın üretken olmasını sağlarken diğer yandan, isteyerek ve istemeyerek yaşanabilecek veri kayıplarını önlemek isteyebilirsiniz. Ayrıca sizin yönetiminizde olmayan cihazlardan erişilen şirket verilerini de korumak istersiniz.
 
-Şirketinizin verilerini korumaya yardımcı olmak için Intune uygulama koruma ilkelerini kullanabilirsiniz. Intune uygulama koruma ilkeleri, **herhangi bir mobil cihaz yönetimi (MDM) çözümünden bağımsız olarak** kullanılabildiğinden, bunu şirketinizin verilerini cihazları bir cihaz yönetimi çözümüne kaydederek veya kaydetmeden korumak üzere kullanabilirsiniz. **Uygulama düzeyinde ilkeler** uygulayarak, şirket kaynaklarına erişimi kısıtlayabilir ve verileri BT departmanınızın kapsamında tutabilirsiniz.
+Intune uygulama koruma ilkelerini **mobil cihaz yönetimi (MDM) çözümlerinden bağımsız olarak** kullanabilirsiniz. Bu bağımsız kullanım imkanı, bir cihaz yönetim çözümüne dahil ettiğiniz ve etmediğiniz cihazlarda şirketinizin verilerini korumanıza yardımcı olur. **Uygulama düzeyinde ilkeler** uygulayarak, şirket kaynaklarına erişimi kısıtlayabilir ve verileri BT departmanınızın kapsamında tutabilirsiniz.
 
 Aşağıdaki özelliklere sahip cihazlarda çalıştırılan uygulamalar için uygulama koruma ilkeleri yapılandırılabilir:
 
-- **Microsoft Intune’a kayıtlı:** Bu kategorideki cihazlar normalde şirkete ait cihazlardır.
+- **Microsoft Intune’a kayıtlı:** Bu cihazlar genellikle şirkete aittir.
 
-- **Bir üçüncü taraf mobil cihaz Yönetimi (MDM) çözümde kayıtlı:**   Bu kategorideki cihazlar normalde şirkete ait cihazlardır.
+- **Bir üçüncü taraf mobil cihaz Yönetimi (MDM) çözümde kayıtlı:** Bu cihazlar genellikle şirkete aittir.
 
   > [!NOTE]
-  > mobil uygulama yönetimi ilkeleri, üçüncü taraf mobil uygulama yönetimi veya güvenli kapsayıcı çözümleri ile birlikte kullanılmamalıdır.
+  > Mobil uygulama yönetimi ilkeleri, üçüncü taraf mobil uygulama yönetimi veya güvenli kapsayıcı çözümleri ile birlikte kullanılmamalıdır.
 
-- **Herhangi bir mobil cihaz yönetimi çözümünde kayıtlı değil:** Bu kategorideki cihazlar normalde Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
+- **Herhangi bir mobil cihaz yönetimi çözümünde kayıtlı değil:** Bu cihazlar normalde Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
 
 > [!IMPORTANT]
 > Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. iOS ve Android için Outlook'a yönelik olarak karma Modern Kimlik Doğrulaması ile etkinleştirilen Intune uygulama koruma ilkeleri oluşturarak Exchange şirket içi posta kutularına erişimi de koruyabilirsiniz. Bu özelliği kullanmadan önce [iOS ve Android için Outlook gereksinimlerini](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx) karşıladığınızdan emin olun. Uygulama koruma ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan diğer uygulamalar için desteklenmez.
 
 **Uygulama koruma ilkelerini kullanmanın önemli avantajları**
 
--   Şirket verilerinizi uygulama düzeyinde koruma.  Mobil uygulama yönetimi cihaz yönetimi gerektirmediğinden, hem yönetilen hem de yönetilmeyen cihazlardaki şirket verilerini koruyabilirsiniz. Yönetim, kullanıcı kimliğine odaklandığından cihaz yönetimine gerek kalmaz.
+-   Şirket verilerinizi uygulama düzeyinde koruma. Mobil uygulama yönetimi, cihaz yönetimi gerektirmediği için şirket verilerini hem yönetilen hem de yönetilmeyen cihazlarda koruyabilirsiniz. Yönetim, kullanıcı kimliğine odaklandığından cihaz yönetimine gerek kalmaz.
 
--   Son kullanıcının üretkenliği etkilenmez ve uygulama kişisel bağlamda kullanılırken ilkeler uygulanmaz.  İlkeler yalnızca çalışma bağlamında uygulanır; böylece kişisel verilere dokunmadan şirket verilerini koruyabilirsiniz.
+-   Son kullanıcının üretkenliği etkilenmez ve uygulama kişisel bağlamda kullanılırken ilkeler uygulanmaz. İlkeler yalnızca iş bağlamında uygulanır; bu da size şirket verilerini kişisel verilere dokunmadan koruma olanağı tanır.
 
-MDM'yi Uygulama koruma ilkeleriyle kullanmanın başka avantajları da vardır ve şirketler Uygulama koruma ilkelerini aynı anda hem MDM'li hem de MDM'siz olarak kullanabilir. Örneğin, bir çalışan, şirket tarafından verilen bir telefonun yanı sıra kişisel bir tablet kullanabilir.  Bu durumda, şirket telefonu MDM’ye kaydedilir ve Uygulama koruma ilkeleriyle korunur. Kişisel cihaz ise yalnızca Uygulama koruma ilkeleriyle korunur.
+MDM'yi Uygulama koruma ilkeleriyle kullanmanın başka avantajları da vardır ve şirketler Uygulama koruma ilkelerini aynı anda hem MDM'li hem de MDM'siz olarak kullanabilir. Hem şirket telefonunu hem de kendine ait olan tableti kullanan bir çalışanı düşünün. Şirket telefonu MDM’ye kaydedilir ve Uygulama koruma ilkeleriyle korunur. Kişisel cihaz ise yalnızca Uygulama koruma ilkeleriyle korunur.
 
-- **MDM, cihazın korunmasını sağlar**.  Örneğin, cihaza erişim için PIN’i zorunlu kılabilir veya yönetilen uygulamaları cihaza dağıtabilirsiniz. Ayrıca, uygulama yönetimi üzerinde daha fazla denetime sahip olmak için uygulamaları MDM çözümünüz aracılığıyla cihazlara dağıtabilirsiniz.
+- **MDM, cihazın korunmasını sağlar**. Örneğin, cihaza erişim için PIN’i zorunlu kılabilir veya yönetilen uygulamaları cihaza dağıtabilirsiniz. Ayrıca, uygulama yönetimi üzerinde daha fazla denetime sahip olmak için uygulamaları MDM çözümünüz aracılığıyla cihazlara dağıtabilirsiniz.
 
-- **Uygulama koruma ilkeleri, uygulama katmanındaki korumaların devrede olmasını sağlar**. Örneğin, bir uygulamayı çalışma bağlamında açmak için PIN’i zorunlu kılabilir, verilerin uygulamalar arasında paylaşılıp paylaşılmayacağını belirleyebilir ya da şirket uygulama verilerinin kişisel bir depolama konumuna kaydedilmesini engelleyebilirsiniz.
+- **Uygulama koruma ilkeleri, uygulama katmanındaki korumaların devrede olmasını sağlar**. Örneğin, şunları yapabilirsiniz:
+  - Bir uygulamanın iş bağlamında açılması için PIN isteyebilirsiniz 
+  - Uygulamalar arasındaki veri paylaşımını denetleyebilirsiniz 
+  - Şirket uygulaması verilerinin kişisel depolama konumuna kaydedilmesini önleyebilirsiniz
 
 
-### <a name="supported-platforms-for-app-protection-polices"></a>Uygulama koruma ilkeleri için desteklenen platformlar
-Intune uygulama koruma ilkeleri platformu desteği, Office uygulama platformu desteği ile uyumludur. Ayrıntılar için bkz. [Office Sistem Gereksinimleri](https://products.office.com/en-US/office-system-requirements).
+### <a name="supported-platforms-for-app-protection-policies"></a>Uygulama koruma ilkeleri için desteklenen platformlar
+Intune uygulama koruma ilkeleri platformu desteği, Office mobil uygulama platformu desteği ile uyumludur. Ayrıntılar için [Office Sistem Gereksinimleri](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)'nin **Mobil uygulamalar** bölümüne bakın.
 
 Windows cihazları şu anda desteklenmez. Ancak, Windows 10 cihazlarını Intune'a kaydettiğinizde, benzer bir işlevsellik sunan Windows Bilgi Koruması’nı kullanabilirsiniz. Ayrıntılar için bkz. [Windows Bilgi Koruması’nı (WIP) kullanarak kurumsal verilerinizi koruma](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
-##  <a name="how-app-protection-policies-protect-app-data"></a>Uygulama koruma ilkeleri uygulama verilerini nasıl korur
 
-####  <a name="apps-without-app-protection-policies"></a>Uygulama koruma ilkelerinin bulunmadığı uygulamalar
+
+## <a name="how-app-protection-policies-protect-app-data"></a>Uygulama koruma ilkeleri uygulama verilerini nasıl korur
+
+#### <a name="apps-without-app-protection-policies"></a>Uygulama koruma ilkelerinin bulunmadığı uygulamalar
 
 ![Uygulama koruma ilkeleri devrede olmadığında verilerin uygulamalar arasında serbestçe taşınabildiğini gösteren resim](./media/apps-without-protection-policies.png)
 
-Uygulamalar kısıtlama olmadan kullanıldığında, şirket verileri ile kişisel veriler birbirine karışabilir.  Şirket verileri, kişisel depolama alanı gibi konumlara düşebilir veya kapsamınızın dışındaki uygulamalara aktarılarak veri kaybına neden olabilir. Şemadaki oklar, uygulamalar arasındaki (şirket ve kişisel) ve depolama konumlarına yönelik kısıtlanmamış veri hareketlerini gösterir.
+Uygulamalar kısıtlama olmadan kullanıldığında, şirket verileri ile kişisel veriler birbirine karışabilir. Şirket verileri, kişisel depolama alanı gibi konumlara düşebilir veya kapsamınızın ötesindeki uygulamalara aktarılarak veri kaybına neden olabilir. Yukarıda şemada yer alan oklar, kurumsal ve kişisel uygulamalar arasındaki ve depolama konumlarına yönelik kısıtlanmamış veri hareketlerini gösterir.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Uygulama koruma ilkeleriyle verileri koruma
@@ -79,11 +84,11 @@ Uygulamalar kısıtlama olmadan kullanıldığında, şirket verileri ile kişis
 ![Uygulama koruma ilkeleri uygulandığında şirket verilerinin nasıl korunduğunu gösteren resim ](./media/apps-with-protection-policies.png)
 
 
-Uygulama koruma ilkelerini, şirket verilerinin cihazın yerel depolama birimine kaydedilmesini önlemek ve Uygulama koruma ilkeleriyle korunmayan diğer uygulamalara veri taşınmasını kısıtlamak için kullanabilirsiniz. Uygulama koruma ilkesi ayarları aşağıdakileri içerir:
-- **Farklı Kaydetmeyi Engelle**, **Kesme, kopyalama ve yapıştırma işlemlerini kısıtla** gibi veri yer değiştirme ilkeleri.
-- **Erişim için basit PIN gerektir**, **Jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda, yönetilen uygulamaların çalışmasını engelle** gibi erişim ilkesi ayarları.
+Uygulama koruma ilkelerini kullanarak şirket verilerinin cihazın yerel depolama alanına kaydedilmesini engelleyebilirsiniz. Ayrıca Uygulama koruma ilkesi kapsamında olmayan diğer uygulamalara veri taşımayı da kısıtlayabilirsiniz. Uygulama koruma ilkesi ayarları aşağıdakileri içerir:
+- **Farklı Kaydetmeyi Engelle**, **Kesme, kopyalama ve yapıştırma işlemlerini kısıtla** gibi veri yeri değiştirme ilkeleri.
+- **Erişim için basit PIN gerektir**, **Yönetilen uygulamaların, jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelle** gibi erişim ilkesi ayarları.
 
-### <a name="data-protection-with-app-protection-policies-on-devices-managed-by-a-mdm-solution"></a>Bir MDM çözümüyle yönetilen cihazlarda uygulama koruma ilkeleriyle veri koruması
+### <a name="data-protection-with-app-protection-policies-on-devices-managed-by-a-mobile-device-management-solution"></a>Bir Mobil Cihaz Yönetimi çözümüyle yönetilen cihazlarda uygulama koruma ilkeleriyle veri koruması
 
 ![Uygulama koruma ilkelerinin KCG cihazlarında nasıl çalıştığını gösteren resim](./media/app-protection-policies-with-mdm.png)
 
@@ -103,7 +108,7 @@ MDM çözümü:
 
 -   Şirket verilerinin tüketici uygulamalarına ve hizmetlerini sızmasını önlemeye yardımcı olma
 
--   İstemci uygulamalara kısıtlamalar (farklı kaydetme, pano, PIN vb.) uygulama
+-   İstemci uygulamalara *farklı kaydetme*, *pano* veya *PIN* gibi kısıtlamalar uygulama
 
 -   Uygulamaları cihazdan kaldırmadan şirket verilerini uygulamalardan silme
 
@@ -112,26 +117,26 @@ MDM çözümü:
 
 ![Uygulama koruma ilkelerinin yönetilen cihazlarda nasıl çalıştığını gösteren resim](./media/app-protection-policies-without-mdm.png)
 
-Yukarıdaki şemada, veri koruma ilkelerinin uygulama düzeyinde MDM olmadan nasıl çalıştığı gösterilmektedir.
+Önceki şemada, veri koruma ilkelerinin uygulama düzeyinde MDM'siz nasıl çalıştığı gösterilmektedir.
 
 Herhangi bir MDM çözümüne kayıtlı olmayan KCG cihazlarında, Uygulama koruma ilkeleri şirket verilerinin uygulama düzeyinde korunmasına yardımcı olabilir.
 Ancak, dikkat edilmesi gereken bazı sınırlamalar vardır, örneğin:
 
--   Uygulamaları cihaza dağıtamazsınız.  Son kullanıcı, uygulamaları mağazadan almak zorundadır.
+-   Cihaza uygulama dağıtamazsınız. Son kullanıcı, uygulamaları mağazadan almak zorundadır.
 
--   Bu cihazlarda sertifika profillerini sağlayamazsınız.
+-   Bu cihazlarda sertifika profilleri sağlayamazsınız.
 
 -   Bu cihazlarda şirket Wi-Fi ve VPN ayarlarını sağlayamazsınız.
 
 ## <a name="app-protection-global-policy"></a>Uygulama koruma genel ilkesi
 
-Bir OneDrive yöneticisi **admin.office.com** adresine gidip **Cihaz** erişimini seçtiğinde **Mobil uygulama yönetimi** denetimlerini OneDrive ve SharePoint istemci uygulamalarına ayarlama olanağına sahiptir. 
+Bir OneDrive yöneticisi **admin.office.com** adresine gidip **Cihaz** erişimini seçtiğinde **Mobil uygulama yönetimi** denetimlerini OneDrive ve SharePoint istemci uygulamalarında ayarlayabilir. 
 
 OneDrive Admin konsolundan bulunabilecek ayarlar **Genel** ilke olarak adlandırılan özel bir Intune uygulama koruma ilkesini yapılandırır. Bu genel ilke kiracınızdaki tüm kullanıcılar için geçerlidir ve ilkenin uygulanacağı nesneleri seçmenin bir yolu yoktur. 
 
-Etkinleştirildikten sonra iOS ve Android için OneDrive ve SharePoint uygulamaları varsayılan olarak seçilen ayarlar tarafından korunur. Bir BT uzmanı bu ilkeyi Intune konsolunda oluşturulduktan sonra düzenleyebilir ve hedeflenen başka uygulamalar ekleyebilir ve herhangi bir ilke ayarını değiştirebilir. 
+Etkinleştirildikten sonra iOS ve Android için OneDrive ve SharePoint uygulamaları varsayılan olarak seçilen ayarlar tarafından korunur. Bir BT uzmanı bu ilkeyi Intune konsolunda düzenleyebilir ve hedeflenen başka uygulamalar ekleyebilir ve herhangi bir ilke ayarını değiştirebilir. 
 
-Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Kiracı başına fazladan genel ilkeler oluşturmak için [Intune Grafik API'leri](intune-graph-apis.md) kullanılabilirse de bu önerilmez. Fazladan genel ilkeler oluşturmak, böyle bir ilkenin uygulanmasındaki sorunları gidermek karmaşık hale gelebileceği için önerilmez.
+Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Ancak kiracı başına fazladan genel ilkeler oluşturmak için [Intune Grafik API'leri](intune-graph-apis.md) kullanılabilirse de bu önerilmez. Fazladan genel ilkeler oluşturmak, böyle bir ilkenin uygulanmasındaki sorunları gidermek karmaşık hale gelebileceği için önerilmez.
 
 **Genel** ilke kiracınızdaki tüm kullanıcılar için geçerli olsa da herhangi bir standart Intune uygulama koruma ilkesi bu ayarları geçersiz kılabilir.
 
@@ -140,11 +145,11 @@ Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Kirac
 
 Uygulama koruma ilkeleri uygulamalar yalnızca iş bağlamında kullanılırken uygulanırken, birden çok kimliği destekleyen uygulamalar aynı uygulamalara erişmek için farklı hesaplar (iş ve kişisel) kullanmanıza izin verir.
 
-Örneğin, bir kullanıcı OneDrive uygulamasını iş hesabını kullanarak başlattığında, kişisel bir depolama konumuna dosya taşıyamaz. Ancak OneDrive'ı kendi kişisel hesabıyla kullandığında, kişisel OneDrive'ından kısıtlamasız olarak veri kopyalayabilir ve taşıyabilir.
+Örneğin OneDrive uygulamasını iş hesabıyla başlatan bir kullanıcıyı düşünün. Bu kullanıcı iş bağlamında dosyaları kişisel depolama alanına taşıyamaz. Daha sonra OneDrive'ı kendi kişisel hesabıyla kullandığında, kişisel OneDrive'ından kısıtlamasız olarak veri kopyalayabilir ve taşıyabilir.
 
 - Intune ile [MAM ve çoklu kimlik](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) destekleyen uygulamalar hakkında daha fazla bilgi edinin.
 
-##  <a name="next-steps"></a>Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 [Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma](app-protection-policies.md)
 
