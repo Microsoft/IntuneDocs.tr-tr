@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 85dd6d0bcc4acc7864998976955e46ff7c72c990
-ms.sourcegitcommit: 006fa8dd4d605e2873fba6e3a965ef794d6f3764
+ms.openlocfilehash: ce977e295df3b5fa48c38b3c2e0d23035cc2f2d1
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36943652"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863136"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 
@@ -241,7 +241,7 @@ Yükseltilmiş bir komut istemi kullanarak aşağıdaki komutlardan birini çal�
     wmic product where name="Windows Intune" call uninstall
 
 > [!TIP]
-> İstemci kayıt silme, etkilenen istemci için eski bir sunucu tarafı kaydı bırakır. Kayıt silme işlemi zaman uyumsuzdur ve kaldırılacak dokuz aracı olduğundan tamamlanması 30 dakikaya kadar sürebilir.
+> İstemci kaydı silindiğinde, etkilenen istemci için sunucu tarafında eski bir kayıt kalır. Kayıt silme işlemi zaman uyumsuzdur ve kaldırılacak dokuz aracı olduğundan tamamlanması 30 dakikaya kadar sürebilir.
 
 ### <a name="check-the-unenrollment-status"></a>Kayıt silinme durumunu denetleme
 

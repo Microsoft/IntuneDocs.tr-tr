@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: fd58fae2f48791e8c63b9391a825838040b1202f
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150333"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863119"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Cihazınızı Şirket Portalı’ndan kaldırma
 
@@ -30,18 +30,19 @@ Cihazınızın artık şirketiniz veya kuruluşunuz tarafından yönetilmesini i
 
 Cihazınızı kaldırmak için:
 
-1. [Şirket Portalı web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980), __menü__ düğmesine dokunun ![Üç yatay çubuk paralel olarak dizili şekilde menü düğmesinin küçük bir resmi.](/Intune/whats-new/media/CP_hamburger_menu.png), ardından __Cihazlarım__’ı seçin.
+1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) __Menü__ düğmesi > __Cihazlar__’ı seçin.  
 
-   ![Giriş, Tüm Uygulamalar, Cihazlarım, Yardım Masası ve Oturumu Kapat düğmeleriyle ekranın sol tarafında genişletilmiş bir yan menü ile Şirket Portalı web sitesinin bir görüntüsü.](/media/iwp-expanded-sidebar.png)
+2. Kaldırmak istediğiniz cihazı seçin.  
 
-2. __Cihazlarım__ sayfasında, kaldırmak istediğiniz cihazın adını seçin.
+    ![Tanımlanmamış, genel olarak adlandırılmış cihazları gösteren 2 kutucuğun bulunduğu Cihazlar sayfasının ekran görüntüsü. Cihazların hemen altında gri bir başlık yer alır ve kullanıcılardan kullandıkları cihazı tanımlamalarını veya yeni bir tane eklemelerini ister.](./media/rename-reset-device-step2-1808.png) 
 
-    ![Listelenmemiş cihazları kaydetme veya tanımlanmamış cihazları tanımlama başlık isteminin üzerinde birkaç tanımlanmamış cihazın belirtildiği Cihazlarım sayfasının ekran görüntüsü.](./media/macOS_enroll_002_tap_here_banner.png)
+3. **Kaldır**’a tıklayın. Kaldırma seçeneği sayfanın üst kısmında görünmüyorsa **Diğer (...)** > **Kaldır**’ı seçin.  
 
-3. Cihaz, bir açılan pencere içinde açılır. **Kaldır** düğmesine dokunun.
+   ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik cihaz ayrıntıları sayfası; üst kısmında Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitle bağlantıları ile. ](./media/rename-reset-device-1808.png)  
+  
 
-   ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitleme dahil tüm seçenekler. ](./media/iwp-screen-with-all-options.png)
+    ![Diğer simgesinin yakınlaştırılmış ve kırmızı okla vurgulanmış görünümü.](./media/rename-reset-device-step3-more-1808.png)   
 
-4. Uyarı iletisini okuyun, sonra cihazınızı Şirket Portalı’ndan kaldırmak için **Kaldır**’a dokunun.
+4. Cihazınızı kaldırmak üzere olduğunuz konusunda sizi uyaran bir ileti görüntülenir. Onaylamak için **Kaldır**’ı seçin.  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -1,11 +1,11 @@
 ---
-title: Windows cihazınızı Intune ile kullanma | Microsoft Docs
+title: Windows cihazınızı Intune Şirket Portalı ile kullanma | Microsoft Docs
 description: Şirket Portalı'ndan Windows cihazlarınızın sorunlarını gidermek ve bu cihazları yönetmek için bağlantılar bulun
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/24/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,41 +17,61 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c4018c73c2160a3db5d5c8b8843e803b56f2caa3
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.openlocfilehash: a28f12bc57fdf134554a65518f24a79287058eeb
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168973"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866346"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Windows cihazınızı Intune Şirket Portalı ile kullanma
 
-Bu makale, Windows için Şirket Portalı'na özgü görev ve bilgileri listelemektedir. Windows cihazınızda sorun gidermenize ve cihazı yönetmenize yardımcı olacaktır. Daha fazla ayrıntı, adım ve ekran görüntüsü görmek için herhangi bir bağlantıya tıklayın.  
+Bu bölümde Windows için Şirket Portalı'na özgü görevler ve bilgiler anlatılmaktadır. Şirket Portalı'ndan Windows cihazlarınızın sorunlarını gidermenize ve bu cihazları yönetmenize yardımcı olacaktır. Daha fazla ayrıntı, adım ve ekran görüntüsü görmek için aşağıda listelenen herhangi bir bağlantıya tıklayın.  
+
+## <a name="how-to-get-company-portal"></a>Şirket Portalı'nı edinme
+Şirket Portalı'nın bir Web sitesi sürümü ve bir de indirilebilecek bir uygulaması vardır. [Şirket Portalı Web sitesine erişmek için](https://go.microsoft.com/fwlink/?linkid=2010980) iş veya okul kimlik bilgilerinizle oturum açın.  
+
+Ayrıntılı adımlar ve ekran görüntüleri için bkz. [Şirket Portalı'nda oturum açma](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal).
 
 ## <a name="supported-versions"></a>Desteklenen sürümler
 
-Şirket Portalı şu anda aşağıdaki Windows sürümlerini desteklemektedir.
+Şirket Portalı şu anda aşağıdaki Windows sürümlerini çalıştıran cihazları desteklemektedir:
 
-* Windows 10 (Home, Pro, Education, S ve Enterprise sürümleri)
+* Windows 10 (Home, Pro, Education, S modu ve Enterprise sürümleri)
 * Windows Phone 8.1 ve üzeri
 * Windows 8.1 RT
 * Windows 8.1
 
-Şirket Portalı'nda ayrıca Windows'un [Windows 10 Holographic](https://www.microsoft.com/hololens) gibi diğer sürümleri de desteklenir. Bu sürümler yalnızca belirli kullanımlara yönelik olduklarından bu makalede ele alınmamıştır.
+Şirket Portalı'nda Windows'un [Windows 10 Holographic](https://www.microsoft.com/hololens) gibi başka sürümleri de desteklenmektedir. Ancak bu sürümler yalnızca belirli kullanımlara yönelik olduklarından bu makalede ele alınmamıştır.
 
-## <a name="enrolling-your-device-and-installing-the-company-portal"></a>Cihazınızı kaydetme ve Şirket Portalı'nı yükleme
-
-- [Windows cihazınızı Intune'a kaydetme](enroll-your-device-in-intune-windows.md)
-- [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [Cihazınızı Intune’a kaydederken şirketiniz hangi bilgileri görebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
-- [Kaybolan veya çalınan cihazınızı sıfırlama (silme)](reset-erase-your-device-cpwebsite.md)
+## <a name="set-up-your-device-in-the-company-portal"></a>Şirket Portalı'nda cihazınızı kurma
+- [Windows cihazımı Şirket Portalı'nda yönettirme](enroll-your-device-in-intune-windows.md)
+- [Cihazımı *yönettirmek* ne demektir?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+- [Şirketim cihazımda hangi bilgileri görebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [Cihazımı şifreleme](encrypt-your-device-windows.md)
+- [Cihaz parolasını ayarlama veya değiştirme](set-or-change-your-password-windows.md)
 
 ## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>Cihazınız yönetime kaydedildikten sonra yapabileceğiniz şeyler
-
-- [Cihazınızı şifreleme](encrypt-your-device-windows.md)
-- [Parolanızı ayarlama veya değiştirme](set-or-change-your-password-windows.md)
-- [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-windows.md)
-- [Cihazınızın Intune kaydını sildiğinizde ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
-- [Şirket Portalı’nı kullanarak cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [Cihazımı el ile eşitleme](sync-your-device-manually-windows.md)
 - [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-windows.md)
-- [Cihazınızı el ile eşitleme](sync-your-device-manually-windows.md)
+- [Kayıp veya çalınmış bir cihazdan veri silme](reset-erase-your-device-cpwebsite.md)
+- [Cihazımı Şirket Portalı'nda sıfırladıktan sonra ne oluyor?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [Cihazımı yönetimden kaldırma](unenroll-your-device-from-intune-windows.md)
+- [Cihazımı Şirket Portalı'ndan kaldırırsam ne olur?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+
+## <a name="troubleshoot-and-maintain-your-device"></a>Cihazınızda sorun giderme ve cihazınızın bakımını yapma
+* [Erişim noktası kısıtlamalarını çözme](resolve-access-point-restrictions.md)
+* [Windows 10 cihazımı kaydedemiyorum](troubleshoot-your-windows-10-device-windows.md)
+* [Windows sürümüm desteklenmiyor](your-windows-version-isnt-yet-supported.md)
+* [Windows cihazımı güncelleştirme](you-need-to-update-your-windows-device.md)
+* [Şirket Portalı uygulamasından günlükler gönderme](send-logs-to-your-it-admin-cp-windows.md)
+* [Cihaz Ayarları uygulamasından günlükler gönderme](send-logs-to-your-it-admin-settings-windows.md)
+* [Windows 10 cihazıma Office 365 yükleme](install-office-windows.md)
+* [Cihazımın şifrelenmesi gerekiyor](you-need-to-enable-windows-encryption.md)
+* [Kötü amaçlı yazılımdan korunma yazılımı edinme](your-device-needs-antimalware-software.md)
+* [Güvenli Önyüklemeyi Etkinleştirme](you-need-to-enable-secure-boot-windows.md)
+* [Kod Bütünlüğünü Etkinleştirme](you-need-to-enable-code-integrity.md)
+* [Windows Güvenlik Duvarını etkinleştirme](you-need-to-enable-defender-firewall-windows.md)
+* [Kullanıcı Erişim Denetimini etkinleştirme](you-need-to-enable-uac-windows.md)
+* [İşletim sistemi derleme sürümlerini güncelleştirme](you-need-to-update-os-build-version-windows.md)
+* [Windows Defender'ı etkinleştirme](turn-on-defender-windows.md)

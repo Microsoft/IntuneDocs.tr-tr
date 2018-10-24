@@ -3,8 +3,8 @@ title: Jamf cihazları için cihaz uyumluluk ilkesi
 titlesuffix: Microsoft Intune
 description: Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
+ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34482344"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48812830"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
 
@@ -73,9 +73,9 @@ Son kullanıcılar, cihazı Jamf Pro tarafından yönetilen bir cihaz olarak Azu
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Jamf ile yönetilen bir cihazı Intune’dan kaldırma
 
-Jamf ile yönetilen bir cihazı Intune’dan kaldıramazsınız. Jamf ile yönetilen cihazları Jamf Pro’dan kaldırmanız gerekir, böylece bu cihazlar Intune’dan da kaldırılır. 
+**Tüm cihazlar** görünümünde **Sil**’i seçerek Jamf tarafından yönetilen bir cihazı Intune konsolundan kaldırabilirsiniz. Toplu cihaz silme işlemi birden çok cihaz seçip **Sil**’e tıklayarak etkinleştirilebilir.
 
-Jamf ile yönetilen bir cihazı nasıl kaldıracağınızı [Jamf Pro belgelerinden](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information) öğrenin. Daha fazla yardım için [Jamf destek](https://www.jamf.com/support/) ekibine bir destek bileti de gönderebilirsiniz. 
+[Jamf ile yönetilen bir cihazı nasıl kaldıracağınız hakkında, Jamf Pro belgelerinden](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information) bilgi edinebilirsiniz. Daha fazla yardım için [Jamf destek](https://www.jamf.com/support/) ekibine bir destek bileti de gönderebilirsiniz. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

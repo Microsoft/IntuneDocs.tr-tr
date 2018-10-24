@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 48bf2e6daf05dba6baebbd49be45a17a5a56e820
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028741"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828304"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu makale, altyapınızın nasıl yapılandırılacağı ve ardından Intune ile Basit Sertifika Kayıt Protokolü (SCEP) sertifika profillerinin nasıl oluşturulup atanacağını gösterir.
 
@@ -350,6 +348,113 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
 5. **Profil** türü açılan listesinde **SCEP sertifikası**’nı seçin.
 6. **SCEP Sertifikası** bölmesinde aşağıdaki ayarları yapılandırın:
 
+   - **Sertifika türü**: Kullanıcı sertifikaları için **Kullanıcı**'yı seçin. Bilgi noktası gibi kullanıcısız cihazlar için **Cihaz**'ı seçin. **Cihaz** sertifikaları aşağıdaki platformlar için bulunur:  
+     - iOS
+     - Windows 8.1 ve üzeri
+     - Windows 10 ve üzeri
+
+   - **Konu adı biçimi**: Sertifika isteğindeki konu adının Intune tarafından otomatik olarak nasıl oluşturulacağını seçin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
+
+        **Kullanıcı sertifika türü**  
+
+        Kullanıcının e-posta adresini konu alanına dahil edebilirsiniz. Aşağıdakilerden birini seçin:
+
+        - **Yapılandırılmadı**
+        - **Ortak ad**
+        - **E-postayı içeren ortak ad**
+        - **E-posta olarak ortak ad**
+        - **IMEI (Uluslararası Mobil Donanım Kimliği)**
+        - **Seri numarası**
+        - **Özel**: Bu seçeneği işaretlediğinizde bir **Özel** metin kutusu da gösterilir. Bu alanı, değişkenler dahil özel bir konu adı biçimi girmek için kullanın. Özel biçim, şu iki değişkeni destekler: **Ortak Ad (CN)** ve **E-posta (E)**. **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
+
+            - **CN={{UserName}}**: Kullanıcının kullanıcı asıl adı, örneğin janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}**: Azure Active Directory’ye (AD) yeni bir cihaz kaydettiğinizde atanan bir kimlik. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
+            - **CN={{SERIALNUMBER}}**: Genellikle üretici tarafından bir cihazı tanımlamak için kullanılan benzersiz seri numarası (SN)
+            - **CN={{IMEINumber}}**: Bir cep telefonunu tanımlamak için kullanılan Uluslararası Mobil Ekipman Kimliği (IMEI) benzersiz numarası
+            - **CN={{OnPrem_Distinguished_Name}}**: Virgülle ayrılmış bir göreli ayırt edici ad dizisi, örneğin `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+
+                `{{OnPrem_Distinguished_Name}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onpremisesdistingishedname` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
+
+            - **CN={{onPremisesSamAccountName}}**: Yöneticiler `onPremisesSamAccountName` adlı bir öznitelikte Azure AD Connect kullanarak Active Directory'deki samAccountName özniteliğini Azure AD'yle eşitleyebilir. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
+
+                `{{onPremisesSamAccountName}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onPremisesSamAccountName` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
+
+            Bu değişkenlerin ve statik dizelerin bir veya birkaç tanesinin bir bileşimini kullanarak aşağıdaki gibi özel bir konu adı biçimi oluşturabilirsiniz:  
+
+            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+
+            Bu örnekte, CN ve E değişkenlerinin yanı sıra Kuruluş Birimi, Kuruluş, Konum, Eyalet ve Ülke değerleri için dizeler kullanan bir konu adı biçimi oluşturdunuz. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx), bu işlevi ve desteklenen dizelerini açıklar.
+
+        **Cihaz sertifika türü**  
+
+        **Cihaz** sertifika türünü kullandığınızda, değer için aşağıdaki cihaz sertifika değişkenlerini de kullanabilirsiniz:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Bu değişkenler, özel bir değer metin kutusuna statik metin ile eklenebilir. Örneğin DNS özniteliği `DNS = {{AzureADDeviceId}}.domain.com` olarak eklenebilir.
+
+        > [!IMPORTANT]
+        >  - SAN'ın statik metninde küme parantezleri **{ }**, kanal simgeleri **|** ve noktalı virgüller **;** kullanılamaz. 
+        >  - Bir cihaz sertifikası değişkeni kullanırken değişkeni küme parantezleri **{ }** içine alın.
+        >  - `{{FullyQualifiedDomainName}}` yalnızca Windows ve etki alanına katılmış cihazlarda kullanılır. 
+        >  -  Bir cihaz sertifikası için konuda veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri kullanırken bunların cihaza erişimi olan birinin kandırma amacıyla değiştirilebileceğine dikkat edin.
+
+
+   - **Konu diğer adı**: Intune uygulamasının, sertifika isteğinde konu diğer adı (SAN) için değerleri otomatik olarak nasıl oluşturacağını girin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
+
+        **Kullanıcı sertifika türü**  
+
+        Aşağıdaki öznitelikler bulunur:
+
+        - E-posta adresi
+        - Kullanıcı asıl adı (UPN)
+
+            Örneğin bir kullanıcı sertifikası türü seçerseniz, konu alternatif adına kullanıcı asıl adını (UPN) ekleyebilirsiniz. İstemci sertifikası bir Ağ İlkesi Sunucusunda kimlik doğrulamak için kullanılacaksa konu alternatif adını UPN'ye ayarlayın. 
+
+        **Cihaz sertifika türü**  
+
+        Özelleştirebileceğiniz tablo biçimli bir metin kutusu. Aşağıdaki öznitelikler bulunur:
+
+        - DNS
+        - E-posta adresi
+        - Kullanıcı asıl adı (UPN)
+
+        **Cihaz** sertifika türüyle değer için aşağıdaki cihaz sertifika değişkenlerini kullanabilirsiniz:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Bu değişkenler, özel değer metin kutusuna statik metin ile eklenebilir. Örneğin DNS özniteliği `DNS = {{AzureADDeviceId}}.domain.com` olarak eklenebilir.
+
+        > [!IMPORTANT]
+        >  - SAN'ın statik metninde küme parantezleri **{ }**, kanal simgeleri **|** ve noktalı virgüller **;** kullanılamaz. 
+        >  - Bir cihaz sertifikası değişkeni kullanırken değişkeni küme parantezleri **{ }** içine alın.
+        >  - `{{FullyQualifiedDomainName}}` yalnızca Windows ve etki alanına katılmış cihazlarda kullanılır. 
+        >  -  Bir cihaz sertifikası için konuda veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri kullanırken bunların cihaza erişimi olan birinin kandırma amacıyla değiştirilebileceğine dikkat edin.
+
    - **Sertifika geçerlilik süresi**: Veren CA’da özel bir geçerlilik süresine izin veren `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` komutunu çalıştırdıysanız, sertifikanın süresi dolmadan önce kalan zamanı girebilirsiniz.<br>Sertifika şablonundaki geçerlilik süresinden düşük bir değer girebilirsiniz ancak daha yüksek bir değer giremezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa beş yıl değerini giremezsiniz ancak bir yıl değerini girebilirsiniz. Değerin, yayımlayan sertifika yetkilisinin sertifikası için kalan geçerlilik süresinden de düşük olması gerekir. 
    - **Anahtar depolama sağlayıcısı (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): Sertifika anahtarının depolandığı yeri girin. Aşağıdaki değerlerden birini seçin:
      - **Varsa Güvenilir Platform Modülü (TPM) KSP'sine, aksi halde Yazılım KSP'sine kaydol**
@@ -357,40 +462,17 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
      - **Passport'a kaydet, aksi halde hata ver (Windows 10 ve üzeri)**
      - **Software KSP’ye kaydol**
 
-   - **Konu adı biçimi**: Listeden, sertifika isteğindeki konu adının Intune tarafından otomatik olarak nasıl oluşturulacağını seçin. Sertifika bir kullanıcı içinse, konu adına kullanıcının e-posta adresini de ekleyebilirsiniz. Aşağıdakilerden birini seçin:
-     - **Yapılandırılmadı**
-     - **Ortak ad**
-     - **E-postayı içeren ortak ad**
-     - **E-posta olarak ortak ad**
-     - **IMEI (Uluslararası Mobil Donanım Kimliği)**
-     - **Seri numarası**
-     - **Özel**: Bu seçeneği belirlediğinizde, başka bir açılan alan görüntülenir. Bu alanı özel bir konu adı biçimi girmek için kullanın. Özel biçim, şu iki değişkeni destekler: **Ortak Ad (CN)** ve **E-posta (E)**. **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
-       - **CN={{UserName}}**: Kullanıcının kullanıcı asıl adı, örneğin janedoe@contoso.com
-       - **CN={{AAD_Device_ID}}**: Azure Active Directory’ye (AD) yeni bir cihaz kaydettiğinizde atanan bir kimlik. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
-       - **CN={{SERIALNUMBER}}**: Genellikle üretici tarafından bir cihazı tanımlamak için kullanılan benzersiz seri numarası (SN)
-       - **CN={{IMEINumber}}**: Bir cep telefonunu tanımlamak için kullanılan Uluslararası Mobil Ekipman Kimliği (IMEI) benzersiz numarası
-       - **CN={{OnPrem_Distinguished_Name}}**: Virgülle ayrılmış bir göreli ayırt edici ad dizisi, örneğin `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-          `{{OnPrem_Distinguished_Name}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onpremisesdistingishedname` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
-
-       - **CN={{onPremisesSamAccountName}}**: Yöneticiler `onPremisesSamAccountName` adlı bir öznitelikte Azure AD Connect kullanarak Active Directory'deki samAccountName özniteliğini Azure AD'yle eşitleyebilir. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
-
-          `{{onPremisesSamAccountName}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onPremisesSamAccountName` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
-
-       Bu değer ve statik dizelerin bir veya daha fazla bileşimini kullanarak özel bir konu adı biçimi oluşturabilirsiniz, örneğin: **CN={{UserName}},E={{EmailAddress}},OU=Mobil,O=Finans Grubu,L=Redmond,ST=Washington,C=ABD**. <br/> Bu örnekte, CN ve E değişkenlerinin yanı sıra Kuruluş Birimi, Kuruluş, Konum, Eyalet ve Ülke değerleri için dizeler kullanan bir konu adı biçimi oluşturdunuz. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx), bu işlevi ve desteklenen dizelerini açıklar.
-
-- **Konu diğer adı**: Intune uygulamasının, sertifika isteğinde konu diğer adı (SAN) için değerleri otomatik olarak nasıl oluşturacağını girin. Örneğin bir kullanıcı sertifikası türü seçerseniz, konu alternatif adına kullanıcı asıl adını (UPN) ekleyebilirsiniz. İstemci sertifikası, bir Ağ İlkesi Sunucusuna kimlik doğrulamak için kullanılıyorsa, UPN'ye konu alternatif adını ayarlamanız gerekir.
-- **Anahtar kullanımı**: Sertifika için anahtar kullanımı seçeneklerini girin. Seçenekleriniz şunlardır:
-  - **Anahtar şifreleme**: Yalnızca anahtar şifreli olduğunda anahtar değişimine izin verin
-  - **Dijital imza**: Yalnızca anahtarın korunmasına bir dijital imza yardımcı olduğunda anahtar değişimine izin verin
-- **Anahtar boyutu (bit)**: Anahtarın içerdiği bit sayısını seçin
-- **Karma algoritması** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Bu sertifika ile kullanmak için uygun karma algoritması türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
-- **Kök Sertifika**: Daha önceden yapılandırdığınız ve kullanıcıya veya cihaza atadığınız kök CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır.
-- **Genişletilmiş anahtar kullanımı**: Sertifikaların hedeflenen amacına yönelik değerler eklemek için **Ekle**’yi seçin. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimliğini doğrulayabilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz.
-- **Kayıt Ayarları**
-  - **Yenileme eşiği (%)**: Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini girin.
-  - **SCEP Sunucu URL’leri**: SCEP aracılığıyla sertifika veren NDES Sunucuları için bir veya birden çok URL girin.
-  - **Tamam**’ı seçin ve profilinizi **Oluşturun**.
+   - **Anahtar kullanımı**: Sertifika için anahtar kullanımı seçeneklerini girin. Seçenekleriniz şunlardır:
+     - **Anahtar şifreleme**: Yalnızca anahtar şifreli olduğunda anahtar değişimine izin verin
+     - **Dijital imza**: Yalnızca anahtarın korunmasına bir dijital imza yardımcı olduğunda anahtar değişimine izin verin
+   - **Anahtar boyutu (bit)**: Anahtarın içerdiği bit sayısını seçin
+   - **Karma algoritması** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Bu sertifika ile kullanmak için uygun karma algoritması türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
+   - **Kök Sertifika**: Daha önceden yapılandırdığınız ve kullanıcıya veya cihaza atadığınız kök CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır.
+   - **Genişletilmiş anahtar kullanımı**: Sertifikaların hedeflenen amacına yönelik değerler eklemek için **Ekle**’yi seçin. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimliğini doğrulayabilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz.
+   - **Kayıt Ayarları**
+     - **Yenileme eşiği (%)**: Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini girin.
+     - **SCEP Sunucu URL’leri**: SCEP aracılığıyla sertifika veren NDES Sunucuları için bir veya birden çok URL girin.
+     - **Tamam**’ı seçin ve profilinizi **Oluşturun**.
 
 Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 

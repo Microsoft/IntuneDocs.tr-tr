@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 77f6391637b8d6f8f2ed47dd84885c11b8b6f476
-ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
+ms.openlocfilehash: b707fcae4af332b13d10e343a84ace801c88c2fd
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46466787"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866431"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -207,7 +207,7 @@ Ayrıca, uygulamalar çalışma zamanında bu Azure AD ayarlarını geçersiz k�
 
 ### <a name="if-your-app-does-not-use-adal"></a>Uygulamanız ADAL kullanmıyorsa
 
-Uygulamanız ADAL kullanmıyorsa, Intune Uygulama SDK'sı ADAL parametrelerinin varsayılan değerlerini sağlar ve Azure AD kimlik doğrulamasını gerçekleştirir. Yukarıda listelenen ADAL ayarları için herhangi bir değer belirtmeniz gerekmez.
+Yukarıda belirtildiği gibi, Intune Uygulama SDK'sı, kimlik doğrulama ve koşullu başlatma senaryoları için [Azure Active Directory Kimlik Doğrulama Kitaplığı](https://github.com/AzureAD/azure-activedirectory-library-for-objc)'nı kullanır. Cihaz kayıt senaryoları olmadan yönetim için MAM hizmetinde kullanıcı kimliğini kaydetmek için de ADAL kullanır. **Uygulamanız kendi kimlik doğrulama mekanizması için ADAL kullanmıyorsa**, Intune Uygulama SDK'sı ADAL parametrelerinin varsayılan değerlerini sağlar ve Azure AD kimlik doğrulamasını yapar. Yukarıda listelenen ADAL ayarları için herhangi bir değer belirtmeniz gerekmez. Varsa uygulamanızın kullandığı kimlik doğrulama mekanizması ADAL istemlerinin üstünde gösterilir. 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune Uygulama SDK'sı ayarlarını yapılandırma
 

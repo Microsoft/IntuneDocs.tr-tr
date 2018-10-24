@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 841cfdeea1d33876c1b678a531c88663aea3759e
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: af1804f657041055467e302c4dc8913e1035749d
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403604"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799668"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -138,6 +138,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
     ![VPP ile şirket portalı yükle ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. **Şirket Portalı’nı VPP ile yükle** seçeneği için bir belirteç seçtiyseniz Kurulum Yardımcısı tamamlandıktan hemen sonra cihazı Tekli Uygulama Moduna (yani Şirket Portalı uygulaması için) kilitleme imkanınız vardır. Bunun için **Kimlik doğrulaması tamamlanana kadar Şirket Portalı’nı Tekli Uygulama Modunda çalıştır** ayarını **Evet** olarak ayarlayın. Cihazı kullanmak için kullanıcının önce Şirket Portalı’nda oturum açarak kimliğini doğrulaması gerekir.
+    Bu özellik en iyi iOS 11.3.1 ve sonrası ile çalışır. Eski sürümleri kullanmak yüklemenin uzun sürmesine neden olabilir.
 
 8. **Cihaz Yönetim Ayarları**’nı seçin ve bu profili kullanan cihazların denetlenmesini isteyip istemediğinizi seçin.
 

@@ -6,13 +6,6 @@ items:
     href: what-is-intune.md
   - name: Eğitim için Intune nedir?
     href: introduction-intune-education.md
-  - name: Azure’da Intune özellikleri
-    href: ui-changes.md
-    items:
-    - name: Gruplarda yapılan değişiklikler
-      href: groups-get-started.md
-    - name: Eski Intune bilgisayar istemcisi
-      href: intune-legacy-pc-client.md
   - name: Ücretsiz deneme için kaydolun
     href: free-trial-sign-up.md
   - name: Yenilikler
@@ -20,10 +13,6 @@ items:
     items:
     - name: Uygulama kullanıcı arabirimindeki yenilikler
       href: whats-new-app-ui.md
-    - name: Yenilikler arşivi (Azure portalı)
-      href: whats-new-archive.md
-    - name: Yenilikler arşivi (klasik portal)
-      href: whats-new-archive-classic.md
   - name: Hizmet açıklaması
     href: microsoft-intune-service-description.md
   - name: Bilinen sorunlar
@@ -34,18 +23,20 @@ items:
 - name: Hızlı girişler
   href: get-started-evaluation.md
   items:
-  - name: Azure portalında gezinme
-    href: get-started-azure.md
+  - name: Intune'u ücretsiz olarak deneyin
+    href: free-trial-sign-up.md
   - name: Bir kullanıcı oluşturun
-    href: get-started-users.md
+    href: quickstart-create-user.md
   - name: Grup oluşturma
-    href: get-started-groups.md
-  - name: İlke atama
-    href: get-started-policies.md
-  - name: Cihazları kaydetme
-    href: get-started-enroll.md
-  - name: Uygulamaları atama
-    href: get-started-apps.md
+    href: quickstart-create-group.md
+  - name: İlke oluşturma
+    href: quickstart-create-policy.md
+  - name: Otomatik kayıt ayarlama
+    href: quickstart-setup-auto-enrollment.md
+  - name: Özel bir rol oluşturup atayarak
+    href: quickstart-create-custom-role.md
+  - name: E-posta cihaz profili oluşturma
+    href: quickstart-email-profile.md
 - name: Senaryo uygulama kılavuzları
   items:
   - name: Exchange Online’ı Koruma
@@ -60,6 +51,10 @@ items:
     href: byod-technology-decisions.md
 - name: Kavramlar
   items:
+  - name: Cihaz yönetimi nedir?
+    href: what-is-device-management.md
+  - name: Azure portalında gezinme
+    href: get-started-azure.md
   - name: Üst düzey mimari
     href: high-level-architecture.md
   - name: Cihaz ve uygulama yaşam döngüleri
@@ -169,6 +164,8 @@ items:
         href: device-group-mapping.md
     - name: Windows kaydını ayarlama
       items:
+      - name: Kayıt yöntemi özellikleri
+        href: enrollment-method-capab.md
       - name: Windows kaydı
         href: windows-enroll.md
       - name: Toplu kayıt
@@ -273,6 +270,8 @@ items:
           href: apps-add-office365-macos.md
       - name: Uygulamanızı (LOB) oluşturun
         items:
+        - name: Win32 uygulama yönetimi
+          href: apps-win32-app-management.md
         - name: Android LOB uygulamaları
           href: lob-apps-android.md
         - name: iOS LOB uygulamaları
@@ -322,6 +321,8 @@ items:
         href: company-portal-app.md
       - name: Managed Browser’ı yapılandırma
         href: app-configuration-managed-browser.md
+      - name: Outlook’u yapılandırma
+        href: app-configuration-policies-outlook.md
     - name: Uygulamaları koruma
       items:
       - name: Uygulamaları seçmeli silme
@@ -377,6 +378,8 @@ items:
       items:
       - name: Android
         href: device-restrictions-android.md
+      - name: Android Kurumsal
+        href: device-restrictions-android-for-work.md
       - name: iOS
         href: device-restrictions-ios.md
       - name: Mac OS
@@ -391,8 +394,6 @@ items:
         href: device-restrictions-windows-10-teams.md
       - name: Windows 10 Holographic for Business
         href: device-restrictions-windows-holographic.md
-      - name: Android iş profili
-        href: device-restrictions-android-for-work.md
     - name: Endpoint protection’ı yapılandırma
       href: endpoint-protection-configure.md
       items:
@@ -491,7 +492,7 @@ items:
     items:
     - name: Android ilkesi oluşturma
       href: compliance-policy-create-android.md
-    - name: Android iş profili ilkesi oluşturma
+    - name: Android Kurumsal profili ilkesi oluşturma
       href: compliance-policy-create-android-for-work.md
     - name: Google Play Koruma’yı etkinleştirmek için bir ilke oluşturun
       href: compliance-policy-create-google-play-protect.md
@@ -703,7 +704,7 @@ items:
         href: custom-settings-windows-10.md
       - name: Windows 10 Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android iş profili
+      - name: Android Kurumsal
         href: custom-settings-android-for-work.md
 - name: Geliştirici kılavuzu
   items:
@@ -780,6 +781,8 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Kaynaklar
   items:
+  - name: Microsoft Intune belge kılavuzu
+    href: intune-documentation.md
   - name: Sorunları Gider
     items:
     - name: Kullanıcıların sorunları gidermesine yardımcı olma
@@ -804,11 +807,25 @@ items:
       href: troubleshoot-conditional-access.md
     - name: Exchange bağlayıcısı sorunlarını giderme
       href: troubleshoot-exchange-connector.md
+  - name: Arşiv
+    items:
+    - name: Yenilikler arşivi
+      items:
+      - name: Yenilikler arşivi (Azure portalı)
+        href: whats-new-archive.md
+      - name: Yenilikler arşivi (klasik portal)
+        href: whats-new-archive-classic.md
+    - name: Azure’da Intune klasik özellikleri
+      href: ui-changes.md
+    - name: Intune klasik grupları
+      href: groups-get-started.md
+    - name: Eski Intune bilgisayar istemcisi
+      href: intune-legacy-pc-client.md
   - name: Sözlük
     href: intune-glossary.md
-ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: a2820903d6a3609df50290af18843200ef076158
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821125"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828066"

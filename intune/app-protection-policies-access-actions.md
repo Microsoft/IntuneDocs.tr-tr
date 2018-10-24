@@ -6,21 +6,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
-ms.reviewer: mghadial
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: f96ca3075bab5c8bacaea62bb4fc04bd957cf01e
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329419"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863187"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -61,7 +61,7 @@ iOS’ta **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler yap
 -  Cihaz modeli/modelleri
 
 **Cihaz modelleri** ayarını kullanmak için iOS model tanımlayıcılarının noktalı virgülle ayrılmış bir listesini ekleyin. [HockeyApp'in destek belgelerindeki](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) Device Type sütunu altında bir iOS model tanımlayıcısı bulabilirsiniz.<br>
-Örnek giriş: *iPhone5,2; iPhone5,3*
+Örnek giriş: *iPhone5,2;iPhone5,3*
 
 Son kullanıcı cihazlarında Intune istemcisi, Intune’un Uygulama Koruma İlkeleri'nde belirtilen cihaz modeli dizelerinin basit eşleştirmesine dayalı olarak eylem gerçekleştirir. Eşleştirme tamamen cihazın bildirdiklerine bağlıdır. BT yöneticisi olarak, çeşitli cihaz üreticileri ve modelleri temelinde ve küçük bir kullanıcı grubunu hedefleyerek bu ayarı test etmenizi ve beklenen davranışın gerçekleştiğinden emin olmanızı öneririz. Varsayılan değer **Yapılandırılmadı**'dır.<br>
 Aşağıdaki eylemlerden birini ayarlayın: 
@@ -69,7 +69,7 @@ Aşağıdaki eylemlerden birini ayarlayın:
 - Belirtilenlere izin ver (Belirtilmeyenleri sil)
 
 **BT yöneticisi aynı Intune kullanıcısı için aynı uygulamaları hedefleyen ilkeler arasında farklı bir iOS model tanımlayıcısı listesi girerse ne olur?**<br>
-Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışmalar ortaya çıktığında, Intune normalde en kısıtlayıcı yaklaşımı benimser. Dolayısıyla, sonuçta hedeflenen Intune kullanıcısının açtığı hedef uygulamaya gönderilen ilke, aynı uygulama/kullanıcı bileşimini hedefleyen *İlke A* ile *İlke B*'de listelenen iOS model tanımlayıcılarının kesişimi olabilir. Örneğin, *İlke A* "iPhone5,2; iPhone5,3" öğelerini belirtirken *İlke B* "iPhone5,3" öğelerini belirtiyor olabilir. Sonuçta hem *İlke A* hem de *İlke B* ile hedeflenen Intune kullanıcısının ilkesi "iPhone5,3" olacaktır. 
+Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışmalar ortaya çıktığında, Intune normalde en kısıtlayıcı yaklaşımı benimser. Dolayısıyla, sonuçta hedeflenen Intune kullanıcısının açtığı hedef uygulamaya gönderilen ilke, aynı uygulama/kullanıcı bileşimini hedefleyen *İlke A* ile *İlke B*'de listelenen iOS model tanımlayıcılarının kesişimi olabilir. Örneğin, *İlke A* "iPhone5,2;iPhone5,3" öğelerini belirtirken *İlke B* "iPhone5,3" öğelerini belirtiyor olabilir. Sonuçta hem *İlke A* hem de *İlke B* ile hedeflenen Intune kullanıcısının ilkesi "iPhone5,3" olacaktır. 
 
 ### <a name="android-policy-settings"></a>Android ilkesi ayarları
 
@@ -83,10 +83,10 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 -  Cihaz üreticisi/üreticileri
 
 **Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Cihazın Android üreticisini, cihaz ayarlarının altında bulabilirsiniz.<br>
-Örnek giriş: *Üretici A; Üretici B* 
+Örnek giriş: *Üretici A;Üretici B* 
 
 >[!NOTE]
-> Intune kullanan cihazlardan bildirilen ve giriş olarak kullanılabilen bazı yaygın üreticiler şunlardır: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
+> Intune kullanan cihazlardan bildirilen ve giriş olarak kullanılabilen bazı yaygın üreticiler şunlardır: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 Son kullanıcı cihazlarında Intune istemcisi, Intune’un Uygulama Koruma İlkeleri'nde belirtilen cihaz modeli dizelerinin basit eşleştirmesine dayalı olarak eylem gerçekleştirir. Eşleştirme tamamen cihazın bildirdiklerine bağlıdır. BT yöneticisi olarak, çeşitli cihaz üreticileri ve modelleri temelinde ve küçük bir kullanıcı grubunu hedefleyerek bu ayarı test etmenizi ve beklenen davranışın gerçekleştiğinden emin olmanızı öneririz. Varsayılan değer **Yapılandırılmadı**'dır.<br>
 Aşağıdaki eylemlerden birini ayarlayın: 
@@ -94,7 +94,7 @@ Aşağıdaki eylemlerden birini ayarlayın:
 - Belirtilenlere izin ver (Belirtilmeyenleri engelle)
 
 **BT yöneticisi aynı Intune kullanıcısı için aynı uygulamaları hedefleyen ilkeler arasında farklı bir Android üreticileri listesi girerse ne olur?**<br>
-Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışmalar ortaya çıktığında, Intune normalde en kısıtlayıcı yaklaşımı benimser. Dolayısıyla, sonuçta hedeflenen Intune kullanıcısının açtığı hedef uygulamaya gönderilen ilke, aynı uygulama/kullanıcı bileşimini hedefleyen *İlke A* ile *İlke B*'de listelenen Android üreticilerinin kesişimi olabilir. Örneğin, *İlke A* "Google, Samsung" öğelerini belirtirken; *İlke B* "Google" öğesini belirtir. Intune kullanıcısının hem *İlke A* hem de *İlke B* ile hedeflenen sonuç ilkesi "Google" olacaktır. 
+Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışmalar ortaya çıktığında, Intune normalde en kısıtlayıcı yaklaşımı benimser. Dolayısıyla, sonuçta hedeflenen Intune kullanıcısının açtığı hedef uygulamaya gönderilen ilke, aynı uygulama/kullanıcı bileşimini hedefleyen *İlke A* ile *İlke B*'de listelenen Android üreticilerinin kesişimi olabilir. Örneğin, *İlke A* "Google;Samsung" öğelerini belirtirken; *İlke B* "Google" öğesini belirtir. Intune kullanıcısının hem *İlke A* hem de *İlke B* ile hedeflenen sonuç ilkesi "Google" olacaktır. 
 
 ### <a name="additional-settings-and-actions"></a>Ek ayarlar ve eylemler 
 
@@ -119,5 +119,3 @@ Intune uygulama koruma ilkeleri hakkında daha fazla bilgi edinmek için şu mak
 - [Uygulama koruma ilkeleri oluşturma ve atama](app-protection-policies.md)
 - [iOS uygulama koruma ilkesi ayarları](app-protection-policy-settings-ios.md)
 - [Microsoft Intune’da Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) 
-
-

@@ -2,10 +2,10 @@
 title: Microsoft Intune - Azure’da Android iş profili uyumluluk ilkesi oluşturma | Microsoft Docs
 description: Android iş profili cihazları için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın. Jailbreak uygulanmış cihazlara izin vermek, kabul edilebilir tehdit düzeyi ayarlamak, Google Play’i denetlemek, en düşük ve en yüksek işletim sistemi sürümü girmek, parola gereksinimlerinizi seçmek ve uygulamaları dışarıdan yüklemeye izin vermek için ilkeler yapılandırın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905096"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828168"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Intune’daki Android iş profili cihazlarına yönelik uyumluluk ilkesi ekleme
 
@@ -113,7 +113,11 @@ Kuruluşunuzda Android iş profilleri kullanılıyorsa, kayıtlı cihazlarınız
 - **Bilinmeyen kaynaklardan gelen uygulamaları engelle**: Android iş profili cihazları bilinmeyen kaynaklardan yüklemeyi her zaman kısıtladığı için bu Android ayarını yapılandırmanız gerekmez.
 - **Şirket Portalı uygulaması çalışma zamanı bütünlüğü**: Şirket Portalı uygulamasında varsayılan çalışma zamanı ortamının yüklü olup olmadığını, doğru şekilde oturum açılıp açılmadığını ve uygulamanın bilinen bir kaynaktan indirilip indirilmediğini denetler.
 - **Cihazda USB hata ayıklamayı engelle**: Android iş profili cihazlarında USB hata ayıklama zaten devre dışı olduğundan bu ayarları yapılandırmanız gerekmez.
-- **En düşük güvenlik düzeltme eki düzeyi**: Bir cihazda olabilecek en eski güvenlik düzeltme eki düzeyini seçin. En az bu düzeltme eki düzeyinde olmayan cihazlar uyumsuz kabul edilir. Tarihin `YYYY-MM-DD` biçiminde girilmesi gerekir.
+- **En düşük güvenlik düzeltme eki düzeyi**: Bir cihazda olabilecek en eski güvenlik düzeltme eki düzeyini seçin. En az bu düzeltme eki düzeyinde olmayan cihazlar uyumsuz kabul edilir. Tarihin *YYYY-AA-GG* biçiminde girilmesi gerekir.
+- **Kısıtlı uygulamalar**: Uygulamaların paket kimliklerini ilkeye ekleyerek bunları kısıtlayabilirsiniz. Bu durumda bir cihazda bu uygulama yüklüyse cihaz uyumsuz olarak işaretlenir. 
+   - **Uygulama Adı**: Paket kimliğini ayırt etmenize yardımcı olacak bir kolay ad ekleyin. 
+   - **Uygulama Paket Kimliği**: Uygulama sağlayıcısının benzersiz paket tanımlayıcısını girin. Android için, uygulama paket kimliği uygulamanın mağaza URL’sinden alınır. Örneğin uygulamanın mağazadaki URL’si *https://play.google.com/store/apps/details?id=com.Slack* ise Uygulama Paket Kimliği = *com.Slack* olur.
+
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 

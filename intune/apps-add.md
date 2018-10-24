@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b92a5c7bcddbecc438aa5e72989ab2302440da7a
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562893"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863153"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
 
@@ -57,10 +57,11 @@ Aşağıdaki tablo, belirli uygulama türlerini ve bunları Intune’daki **Uygu
 | Android iş kolu (LOB) uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.apk** uzantısına sahip bir Android yükleme dosyası girin.  |
 | iOS LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.ipa** uzantısına sahip bir iOS yükleme dosyası girin.  |
 | Windows Phone LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu** uygulamasını seçin, **Uygulama paketi dosyasını** seçin ve **.xap** uzantısına sahip bir Windows Phone yükleme dosyası girin.  |
-| Windows LOB uygulaması | LOB uygulaması | Uygulama türü olarak **İş kolu** uygulamasını seçin, **Uygulama paketi dosyasını** seçin ve **.msi**, **.appx**, **.appxbundle**, **.msix** ve **.msixbundle** uzantısına sahip bir Windows Phone yükleme dosyası girin. |
+| Windows LOB uygulaması | LOB uygulaması | Uygulama türü olarak **İş kolu** uygulamasını seçin, **Uygulama paketi dosyasını** seçin ve **.msi**, **.appx**, **.appxbundle**, **.msix** veya **.msixbundle** uzantılı bir Windows yükleme dosyası girin. |
 | Yerleşik iOS uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
 | Yerleşik Android uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
 | Web uygulamaları  | Web uygulaması  | **Uygulama türü** olarak **Web bağlantısı**’nı seçin ve ardından web uygulamasına bağlantı sağlayan geçerli bir URL girin.  |
+| Windows uygulaması (Win32)  | LOB uygulaması  | **Uygulama türü** olarak **Windows uygulaması (Win32)** seçeneğini belirleyin, **Uygulama paketi dosyası**'nı seçin, ardından **.intunewin** uzantılı bir yükleme dosyası seçin.  |
 
 Microsoft Intune’da, **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Uygulama ekle** bölmesi görüntülenir ve **Uygulama türü**’nü seçmenize olanak tanır. 
 
@@ -194,3 +195,4 @@ Intune’da tüm platformlar için uygulama eklemeyi öğrenmek için bkz.:
 - [ Windows 10 için Office 365 uygulamaları](apps-add-office365.md)
 - [macOS için Office 365 uygulamaları](apps-add-office365-macos.md)
 - [Yerleşik uygulamalar](apps-add-built-in.md)
+- [Win32 uygulamaları](apps-win32-app-management.md) 

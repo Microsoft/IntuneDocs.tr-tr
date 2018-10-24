@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,41 +15,39 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 8a83602d992ff7ea08be84272eee086ea364be0a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 452ee2b386130a4c7ca6dc5026d3e2489c5ea33a
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147052"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863060"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Şirket Portalı uygulamasını güncelleştirme
 
 Bu makalede, aşağıdaki durumlarda Şirket Portalı uygulaması sürümünüzü nasıl güncelleştirebileceğiniz açıklanır:  
-* Şirket Portalı uygulamasının daha yeni bir sürümü var.
-* Şirket Portalı uygulaması sürümünüz artık desteklenmiyor.
+* Şirket Portalı’nın daha yeni bir sürümü var.
+* Şirket Portalı sürümünüz artık desteklenmiyor.
 
-Bu adımlarda, uygulamanın Android, iOS ve Windows cihazlarında nasıl güncelleştirildiği açıklanır.    
+Bu adımlarda, Android, iOS ve Windows cihazlarında uygulamayı nasıl güncelleştireceğiniz veya uygulamanın en son sürümünü nasıl alacağınız açıklanır.    
 
-## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>Android cihazınızda Intune Şirket Portalı uygulamasını güncelleştirme
+## <a name="update-the-company-portal-app-on-your-android-device"></a>Android cihazınızda Şirket Portalı uygulamasını güncelleştirme  
 
-Şirket Portalı’nın yeni bir sürümü kullanılabilir olduğunda Play Store sizi uyarır. Şirket Portalı uygulamasında bilgi istemi gösterilmez. Uyarıyı seçin ve cihazınızı güncelleştirmek için sağlanan yönergeleri izleyin.  
+Şirket Portalı’nın yeni bir sürümü kullanılabilir olduğunda Google Play Store sizi uyarır. Şirket Portalı uygulamasında bilgi istemi gösterilmez. Mağazanın uyarısını seçin ve uygulamayı güncelleştirmek için sağlanan yönergeleri izleyin. 
 
-## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>iOS cihazınızda Intune Şirket Portalı uygulamasını güncelleştirme
+## <a name="update-the-company-portal-app-on-your-ios-device"></a>iOS cihazınızda Şirket Portalı uygulamasını güncelleştirme  
 
-Yeni bir sürüm çıktığında, yüklü uygulamalar listenizde uygulamaya bakarken “güncelleştir” seçeneğini görürsünüz.  
+Yeni bir sürüm kullanılabilir olduğunda, yüklü uygulamalarınızın listesindeki Şirket Portalı uygulamasının yanında **Güncelleştir** seçeneği gösterilir.  
 
-1. App Store’u açın ve **intune** için arama yapın.
+1. App Store’u açın ve **Intune** için arama yapın.  
+2. Uygulamayı bulduğunuzda, **Güncelleştir**'e dokunun.  
 
-2. Uygulamayı bulduğunuzda, **Güncelleştir**'e dokunun.
+## <a name="update-the-company-portal-app-on-your-windows-device"></a>Windows cihazınızda Şirket Portalı uygulamasını güncelleştirme
+Güncelleştirmeleri kullanıma sunuldukça almak için Microsoft Store’u açın ve **Ayarlar**’a gidin. Ardından **Uygulama güncelleştirmeleri**’ni açın. En yeni güncelleştirmeleri ve indirme kuyruğunda bekleyen uygulamaları görüntülemek için **İndirmeler ve güncelleştirmeler**’e gidin.  
 
-## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Windows cihazınızda Intune Şirket Portalı uygulamasını güncelleştirme
-
-1.  Microsoft Mağazası'na gidin ve **intune şirket portalı** için arama yapın.
-
-2.  Yükleme adımlarını izleyin.
-
-    > [!NOTE]
-    > Microsoft Mağazası’na erişemiyorsanız şirketinizin destek birimine başvurun.
+Uygulamayı el ile güncelleştirmek istiyorsanız veya **Uygulama Güncelleştirmeleri** şirketiniz tarafından devre dışı bırakıldıysa aşağıdaki adımları izleyin.  
+1. Microsoft Store’u açın.
+2. Arama çubuğuna **Şirket Portalı** yazın.
+3. En son sürümünü cihazınıza yüklemek için uygulamaya tıklayın. 
 
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

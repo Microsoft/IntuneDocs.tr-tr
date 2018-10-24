@@ -3,10 +3,10 @@ title: Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağı
 titlesuffix: Microsoft Intune
 description: Microsoft Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347316"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799634"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -46,19 +46,27 @@ Bir WIP ilkesi eklerken kullanılan birkaç kavramı anlamanız gerekir:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bir WIP uygulama koruma ilkesi oluşturabilmeniz için önce MAM sağlayıcısını yapılandırmanız gerekir. [MAM sağlayıcınızı Intune ile yapılandırma](app-protection-policies-configure-windows-10.md) hakkında daha fazla bilgi edinin.
+Bir WIP uygulama koruma ilkesi oluşturabilmeniz için önce MAM sağlayıcısını yapılandırmanız gerekir. [MAM sağlayıcınızı Intune ile yapılandırma](app-protection-policies-configure-windows-10.md) hakkında daha fazla bilgi edinin.  
+
+> [!IMPORTANT]
+> WIP birden çok kimliği desteklemez; aynı anda yalnızca bir yönetilen kimlik olabilir.
 
 Ayrıca aşağıdaki lisans ve güncelleştirmeye de sahip olmanız gerekir:
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) lisansı
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP birden çok kimliği desteklemez; aynı anda yalnızca bir yönetilen kimlik olabilir.
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>WIP uygulama koruma ilkesi ekleme
 
 Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsiniz.
+
+> [!TIP]  
+> Intune için WIP ilkeleri oluşturma hakkında, kullanılabilecek ayarlar ve bunların nasıl yapılandırıldığı dahil konuyla ilgili bilgiler için Windows Güvenlik belgeleri kitaplığındaki [Microsoft Intune için Azure portalını kullanarak MAM ile Windows Bilgi Koruması (WIP) ilkesi oluşturma](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) konusuna bakın. 
+
 
 1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm Hizmetler** > **Intune**’u seçin.
@@ -105,7 +113,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 4. **Intune Uygulama Koruması** dikey penceresinden **Korunan uygulamalar**’ı seçin. **Korunan uygulamalar** dikey penceresi açılarak size bu uygulama koruma ilkesi için daha önceden listeye eklenmiş tüm uygulamaları gösterir.
 5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Dikey pencerenin üst kısmındaki liste, liste filtresini değiştirmenize izin verir.
 6. Listeden **Masaüstü uygulamaları**’nı seçin.
-7. **Ad**, **Yayımcı**, **Ürün Adı**, **Dosya**, **En Düşük Sürüm**, **En Yüksek Sürüm** ve **Eylem** için değerleri girin. Uygulamanın şirket verilerinize erişebilmesi için **Eylem** değerini **İzin Ver** olarak ayarladığınızdan emin olun.
+7. **Ad**, **Yayımcı**, **Ürün Adı**, **Dosya**, **En Düşük Sürüm**, **En Yüksek Sürüm** ve **Eylem** için değerler girin. Uygulamanın şirket verilerinize erişebilmesi için **Eylem** değerini **İzin Ver** olarak ayarladığınızdan emin olun.
 9. **Tamam**'ı tıklatın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
 10. **Kaydet**'e tıklayın.
 
@@ -123,7 +131,7 @@ WIP etkin ve WIP bilinmeyen uygulamalarla çalışırken, **Sessiz** veya **Geç
 ### <a name="what-are-the-protection-modes"></a>Koruma modları nelerdir?
 
 #### <a name="block"></a>Engelle
-WIP, uygunsuz veri paylaşımı durumları arar ve kullanıcının işlemi tamamlamasını engeller. Bunlar arasında kurumsal olarak korunmayan uygulamalar arasında bilgi paylaşımı ve kuruluşunuz dışındaki kişi ve cihazlarla kurumsal veri paylaşımı sayılabilir.
+WIP, uygunsuz veri paylaşımı durumları arar ve kullanıcının işlemi tamamlamasını engeller. Engellenen eylemler için kurumsal olarak korunmayan uygulamalar arasında bilgi paylaşımı ve kuruluşunuz dışındaki kişi ve cihazlarla kurumsal veri paylaşımı sayılabilir.
 
 #### <a name="allow-overrides"></a>Geçersiz Kılmalara İzin Ver
 WIP, uygunsuz veri paylaşımını arayarak, güvensiz olabilecek bir şey yaptığında kullanıcıları uyarır. Ancak bu mod kullanıcının ilkeyi geçersiz kılıp veri paylaşmasına izin vererek işlemi denetleme günlüğünüze kaydeder.

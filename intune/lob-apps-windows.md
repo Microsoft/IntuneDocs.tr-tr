@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c64b915f240cab2faac84a6a78b213a5fffa0a6
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: d6880d3891891fe27a41d04a118e14ac9d4782b3
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347907"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828185"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir Windows iş kolu uygulaması ekleme
 
@@ -41,7 +41,11 @@ ms.locfileid: "43347907"
 
 1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
 2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra **.msi**, **.appx** veya **.appxbundle** uzantısına sahip bir Windows yükleme dosyası seçin.
-3. İşiniz bittiğinde **Tamam**’a tıklayın.
+
+    > [!NOTE]
+    > Windows uygulamaları için dosya uzantıları **.msi**, **.appx**, **.appxbundle**, **.msix** ve **.msixbundle**'dır.  
+
+1. İşiniz bittiğinde **Tamam**’a tıklayın.
 
 
 ## <a name="step-3-configure-app-information"></a>3. Adım: Uygulama bilgilerini yapılandırma

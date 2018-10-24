@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/26/2018
+ms.date: 9/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: faf07b58c4480689d5f6f44bf09d6100a2eae9db
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312859"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827862"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune'da Windows 10 VPN ayarları
 
@@ -43,7 +43,7 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
   - **İçeri Aktar**: Açıklama, IP adresi veya FQDN, Varsayılan sunucu biçiminde sunucu listesini içeren virgülle ayrılmış bir dosyaya göz atın. **Tamam**'ı seçerek bu sunucuları **Sunucular** listesine içeri aktarın.
   - **Dışarı aktar**: Sunucu listesini virgülle ayrılmış değerler (csv) dosyasına dışarı aktarır
 
-- **Dahili DNS ile IP adresi kaydetme** Windows 10 VPN profilinin dahili DNS ile VPN arabirimine atanmış IP adresini dinamik olarak kaydetmek için **Etkinleştir** olarak ayarlayın veya IP adreslerini dinamik olarak kaydetmek istemiyorsanız **Devre Dışı Bırak** olarak ayarlayın.
+- **Dahili DNS ile IP adresi kaydetme** Windows 10 VPN profilinin dahili DNS ile VPN arabirimine atanmış IP adresini dinamik olarak kaydetmek için **Etkinleştir**'i seçin. IP adreslerini dinamik olarak kaydetmek istemiyorsanız **Devre Dışı Bırak**’ı seçin.
 
 - **Bağlantı türü**: Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
 
@@ -59,7 +59,7 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
   - **PPTP**
 
   VPN bağlantı türünü seçtiğinizde, aşağıdaki ayarları belirtmeniz de istenebilir:  
-    - **Her Zaman Açık**: Aşağıdaki durumlar oluştuğunda VPN bağlantısına otomatik olarak bağlanmak için etkinleştirin: 
+    - **Her Zaman Açık**: Aşağıdaki olaylar gerçekleştiğinde VPN bağlantısına otomatik olarak bağlanmak için **etkinleştirin**: 
       - Kullanıcılar cihazlarında oturum açtığında
       - Cihazdaki ağ değiştiğinde
       - Cihaz ekranı kapandıktan sonra yeniden açıldığında 
@@ -114,7 +114,7 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
 
 ## <a name="conditional-access"></a>Koşullu Erişim
 
-- **VPN bağlantısı için koşullu erişim**: İstemciden cihaz uyumluluk akışını etkinleştirir. Etkinleştirildiğinde, VPN istemcisi kimlik doğrulama için kullanmak üzere bir sertifika almak üzere Azure Active Directory (AD) ile iletişime geçmeye çalışır. VPN’nin sertifika kimlik doğrulamasını kullanacak şekilde ayarlanmış olması ve VPN sunucusunun Azure AD tarafından döndürülen sunucuya güvenmesi gerekir.
+- **VPN bağlantısı için koşullu erişim**: İstemciden cihaz uyumluluk akışını etkinleştirir. Etkinleştirildiğinde, VPN istemcisi kimlik doğrulama için kullanmak üzere bir sertifika almak için Azure Active Directory (AD) ile iletişim kurar. VPN’nin sertifika kimlik doğrulamasını kullanacak şekilde ayarlanmış olması ve VPN sunucusunun Azure AD tarafından döndürülen sunucuya güvenmesi gerekir.
 
 - **Alternatif sertifika ile çoklu oturum açma (SSO)**: Cihaz uyumluluğu amacıyla Kerberos kimlik doğrulaması için VPN kimlik doğrulama sertifikasından farklı bir sertifika kullanın. Aşağıdaki ayarlarla sertifikayı girin:
 
@@ -124,7 +124,17 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
 
 ## <a name="dns-settings"></a>DNS Ayarları
 
-**Bu VPN bağlantısı için etki alanı ve sunucular**: VPN'nin kullanması için etki alanını ve DNS sunucusunu ekleyin. Bağlantı kurulduktan sonra VPN bağlantısının hangi DNS sunucularını kullanacağını seçebilirsiniz. Her sunucu için şunları girin:
+- **DNS son eki arama listesi**: **DNS son ekleri** alanına bir DNS soneki girin ve **Ekle**'yi seçin. Birden çok son ek girebilirsiniz.
+
+  DNS son ekleri kullanırken bir ağ kaynağını tam etki alanı adı (FQDN) yerine kısa adını kullanarak arayabilirsiniz. Kısa ad kullanılarak yapılan aramalarda, son ek otomatik olarak DNS sunucusu tarafından belirlenir. Örneğin, `utah.contoso.com` DNS son eki listesinde yer alır. `DEV-comp` ping yaparsınız. Bu senaryoda `DEV-comp.utah.contoso.com` olarak çözümlenir.
+
+  DNS son ekleri listelenen sırayla çözümlenir ve bu sıra değiştirilebilir. Örneğin `colorado.contoso.com` ve `utah.contoso.com` DNS son eki listesindedir ve ikisinin de `DEV-comp` adlı bir kaynağı vardır. `colorado.contoso.com` listedeki ilk öğe olduğundan, `DEV-comp.colorado.contoso.com` olarak çözümlenir.
+  
+  Sırayı değiştirmek için DNS son ekinin solundaki noktalara tıklayın ve son eki en üste sürükleyin:
+
+  ![Dns son ekini taşımak için üç noktaya tıklayın ve sürükleyin](./media/vpn-settings-windows10-move-dns-suffix.png)
+
+- **Bu VPN bağlantısı için etki alanı ve sunucular**: VPN'nin kullanması için etki alanını ve DNS sunucusunu ekleyin. Bağlantı kurulduktan sonra VPN bağlantısının hangi DNS sunucularını kullanacağını seçebilirsiniz. Her sunucu için şunları girin:
 - **Etki alanı**
 - **DNS Sunucusu**
 - **Proxy**

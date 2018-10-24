@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 61e2ec9def6ecba265521cf801322d592dd4dac9
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347441"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866363"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı 
 
 Microsoft Intune şu anda Windows 10 cihazlarında çeşitli uygulama türlerini ve dağıtım senaryolarını destekler. Intune’a bir uygulama ekledikten sonra uygulamayı kullanıcılara ve cihazlara atayabilirsiniz. Aşağıdaki bilgiler, desteklenen Windows 10 senaryolarıyla ilgili daha fazla ayrıntı sağlar. Buna ek olarak, aşağıdaki bilgilerde uygulamaları Windows'a dağıtırken dikkat edilecek önemli ayrıntılar da sağlanır. 
 
-Windows 10 cihazlarında desteklenen uygulama türleri İş kolu (LOB) uygulamaları ve İş için Microsoft Store uygulamalarıdır.
+Windows 10 cihazlarında desteklenen uygulama türleri İş kolu (LOB) uygulamaları ve İş için Microsoft Store uygulamalarıdır. Windows uygulamaları için dosya uzantıları **.msi**, **.appx**, **.appxbundle**, **.msix** ve **.msixbundle**'dır.  
 
 > [!Note]
 > Uygulamaları cihaz bağlamında dağıtmak için gereken en düşük Windows 10 güncelleştirmesi: [23 Mayıs 2018—KB4100403 (İşletim Sistemi Derlemesi 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
@@ -46,9 +46,6 @@ Uygulama türüne bağlı olarak, uygulama Windows 10 cihazına iki yoldan biriy
     - Modern iş kolu uygulamaları ve İş için Microsoft Store uygulamaları (hem çevrimiçi hem de çevrimdışı) kullanıcı bağlamında dağıtılabilir ve hem Gerekli hem de Kullanılabilir amacını destekler.
 - **Cihaz Bağlamı**: Uygulama cihaz bağlamında dağıtılırsa, yönetilen uygulama Intune tarafından doğrudan cihaza yüklenir.
     - Yalnızca modern iş kolu uygulamaları ve İş için Microsoft Store uygulamaları cihaz bağlamında dağıtılabilir ve yalnızca Gerekli amacını destekler.
-
-> [!Note]
-> Cihaz bağlamında MDM üzerinde MSI dağıtımı yapılması Windows 10 cihazlarında henüz desteklenmiyor.
 
 Bir uygulama cihaz bağlamında dağıtıldığında, yüklemenin başarılı olması için cihaz bağlamını destekleyen bir cihazın hedeflenmesi gerekir. Buna ek olarak, cihaz bağlamında dağıtım aşağıdaki koşulları destekler:
 - Uygulama cihaz bağlamında dağıtılıyorsa ve bir kullanıcıyı hedefliyorsa, yükleme işlemi başarısız olur ve yönetici konsolunda şu durum ve hata görüntülenir:

@@ -1,42 +1,40 @@
 ---
-title: Managed Browser uygulaması ile web erişimini yönetme
+title: Web erişimini ilkeyle korunan bir tarayıcı ile yönetme
 titlesuffix: Microsoft Intune
-description: Web’e gözatmayı ve web verilerinin başka uygulamalara aktarımını kısıtlamak için Managed Browser uygulamasını dağıtın.
+description: Web taramayı ve Web veri aktarımını kısıtlamak için ilkeyle korunan bir tarayıcı kullanın.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
-ms.reviewer: maxles
+ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb4a80a9de03844c6fffa5e56f09c375645f9188
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864550"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863170"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile korumalı tarayıcı ilkelerini kullanarak İnternet erişimini yönetme
+# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile korumalı tarayıcı ilkelerini kullanarak İnternet erişimini yönetme  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Korumalı tarayıcılar Microsoft Edge ve Intune Managed Browser'dır. Edge ve Managed Browser, kuruluşunuzda kullanılmak üzere genel uygulama mağazalarından indirebileceğiniz web tarayıcısı uygulamalarıdır. Intune ile yapılandırıldığında korumalı tarayıcılar:
-- MyApps hizmeti aracılığıyla Çoklu Oturum Açma ile şirket sitelerine ve SaaS uygulamalarına erişmek ve bu esnada web verilerini korumak için kullanılabilir.
-- Kurumsal bağlamda kullanıcının girebileceği siteleri kısıtlamak için kısıtlanan URL’ler ve etki alanları listesiyle önceden yapılandırılabilir.
-- Bir giriş sayfası ve belirttiğiniz yer işaretleriyle önceden yapılandırılabilir.
+Intune ilkesiyle korunan bir tarayıcı (Microsoft Edge veya Intune Managed Browser) kullanarak kurumsal Web sitelerine her zaman koruma önlemleri devrede olarak erişilmesini sağlayabilirsiniz.  Intune ile yapılandırıldığında korumalı tarayıcılar aşağıdakilerden yararlanabilir:
 
-Edge ve Managed Browser'ın Intune SDK’sıyla tümleştirmesi olduğundan, bunlara aşağıdakiler de dahil olmak üzere uygulama koruma ilkeleri de uygulayabilirsiniz:
-- Kesme, kopyalama ve yapıştırma işlemlerini denetleme
-- Ekran yakalamayı önleme
-- Bu sayede kullanıcıların seçtiği içeriklerin bağlantılarının yalnızca diğer yönetilen uygulamalarda açıldığından emin olabilirsiniz.
+- Uygulama koruma ilkeleri.
+- Koşullu erişim.
+- Çoklu oturum açma.
+- Uygulama yapılandırma ayarları.
+- Azure uygulama proxy tümleştirmesi.
 
-Ayrıntılar için bkz. [Uygulama koruma ilkesi nedir?](app-protection-policy.md)
+## <a name="getting-started"></a>Başlarken
 
 Bu ayarları şunlara uygulayabilirsiniz:
 
@@ -57,9 +55,7 @@ Aşağıdaki cihaz türleri için korumalı tarayıcı ilkeleri oluşturabilirsi
 
 >[!IMPORTANT]
 >Android ve iOS’un daha eski sürümleri Managed Browser'ı kullanmaya devam edebilecek, ancak uygulamanın yeni sürümlerini yükleyemeyecek ve uygulamanın tüm özelliklerine erişemeyecektir. Bu cihazları desteklenen işletim sistemi sürümüne güncelleştirmenizi öneririz.
-
-
-Microsoft Edge ve Intune Managed Browser, [Microsoft Intune uygulama iş ortaklarının](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) web içeriklerini açmayı destekler.
+    
 
 ## <a name="conditional-access-for-protected-browsers"></a>Korumalı tarayıcılar için Koşullu Erişim
 
@@ -94,11 +90,11 @@ Yukarıdaki ilke yapılandırıldıktan sonra kullanıcılar, bu ilkeyle korudu�
 
 Managed Browser, klasik Koşullu Erişim ilkelerini desteklemez. Daha fazla bilgi için bkz. [Azure portalında klasik ilkeleri geçirme](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
 
-##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Intune Managed Browser’da Azure AD bağlantılı web uygulamalarında çoklu oturum açma
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>İlkeyle korunan tarayıcılarda Azure AD'ye bağlanmış Web uygulamalarında Çoklu Oturum Açma
 
-iOS ve Android’de Intune Managed Browser uygulaması, artık Azure AD bağlantılı tüm web sitelerinde (SaaS ve şirket içi) SSO’dan faydalanabilecek. iOS’ta Microsoft Authenticator uygulaması veya Android’de Intune Şirket Portalı uygulaması olduğunda; Intune Managed Browser kullanıcıları, kimlik bilgilerini yeniden girmeye gerek kalmadan Azure AD bağlantılı web uygulamalarına erişebilecekler.
+iOS ve Android’de Microsoft Edge ve Intune Managed Browser Azure AD'ye bağlanmış tüm web uygulamalarında (SaaS ve şirket içi) SSO'dan yararlanabilir. iOS'ta Microsoft Authenticator uygulaması veya Android'de Intune Şirket Portalı uygulaması olduğunda, ilkeyle korunan bir tarayıcının kullanıcıları Azure AD'ye bağlanmış web uygulamalarına kimlik bilgilerini yeniden girmek zorunda kalmadan erişebilir.
 
-Intune Managed Browser’da SSO, cihazınızın iOS’ta Microsoft Authenticator uygulaması veya Android’de Intune Şirket Portalı üzerinde kayıtlı olmasını gerektirir. Authenticator uygulaması veya Şirket Portalı olan kullanıcılar, Intune Managed Browser’da Azure AD bağlantılı bir web uygulamasına gittiklerinde; kullanıcıların cihazları daha önceden başka bir uygulamaya kaydedilmemişse cihazlarını kaydetmeleri istenir. Cihaz, Intune tarafından yönetilen bir hesap ile kaydedildiğinde, bu hesapta Azure AD bağlantılı web uygulamaları için SSO etkin olacaktır. 
+SSO, cihazınızın iOS'de Microsoft Authenticator, Android'de Intune Şirket Portalı uygulaması tarafından kaydedilmiş olmasını gerektirir. Authenticator uygulaması veya Şirket Portalı olan kullanıcılardan, ilkeyle korunan bir tarayıcıda Azure AD'ye bağlanmış bir web uygulamasına gittiklerinde; daha önce başka bir uygulamaya kaydedilmemişse cihazlarını kaydetmeleri istenir. Cihaz, Intune tarafından yönetilen bir hesap ile kaydedildiğinde, bu hesapta Azure AD bağlantılı web uygulamaları için SSO etkin olacaktır. 
 
 > [!NOTE]
 > Cihaz kaydı, Azure AD hizmeti ile basit bir iade etme işlemidir. Tam cihaz kaydı gerektirmez ve BT ekibine cihaz üzerinde herhangi bir ek ayrıcalık sağlamaz.

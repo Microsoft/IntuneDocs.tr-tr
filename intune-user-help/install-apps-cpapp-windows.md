@@ -1,11 +1,11 @@
 ---
 title: Windows için Intune Şirket Portalı’ndan uygulama yükleme
-description: Şirket Portalı uygulamasından uygulama yükleme ve paylaşmayı öğrenin
+description: Windows için Şirket Portalı uygulamasından uygulama yükleme ve paylaşmayı öğrenin
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,35 +17,39 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 66e6018138760a987acedf90028b7e8057d355c3
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864481"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863102"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Cihazınızda uygulama yükleme ve paylaşma
 Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
 
 ## <a name="install-apps"></a>Uygulama yükleme
 
-1. Şirket Portalı’nı açın ve iş veya okul hesabınızla oturum açın.
-![Windows 10 için Şirket Portalı uygulaması giriş sayfası.](./media/RS1_AppDetailsPage_Installed_03.png)  
-2. Şirket Portalı uygulamasının aşağıdaki bölümlerinden birinde uygulamaları bulup yükleyin:
-    * **Giriş**: Kuruluşunuzun öne çıkan uygulamalar listesinden bir seçim yapın. 
-    * **Tümünü göster**: **Giriş sayfası** > **Uygulamalar** bölümünde **Tümünü göster**'e tıklayarak bulunan tüm uygulamaları görüntüleyin.
-    * **Tüm uygulamalar**: Yüklü olanlar ve öne çıkanlar dahil bulunan tüm uygulamaları görmek için gezinti bölmesinde bu sayfayı seçin.
-    * **Yüklü uygulamalar**: Cihazınızda yüklü tüm uygulamaları görmek için gezinti bölmesinde bu sayfayı seçin.
+1. Şirket Portalı’nı açın ve iş veya okul hesabınızla oturum açın.  
+
+    ![Windows 10 için Şirket Portalı uygulaması giriş sayfası.](./media/RS1_AppDetailsPage_Installed_03.png)    
+2. Şirket Portalı uygulamasının aşağıdaki bölümlerinden birinde uygulamaları bulup yükleyin:  
+
+    * **Giriş**: Kuruluşunuzun öne çıkan uygulamalar listesinden bir seçim yapın.  
+    * **Tümünü göster**: **Giriş sayfası** > **Uygulamalar** bölümünde **Tümünü göster**'e tıklayarak bulunan tüm uygulamaları görüntüleyin.  
+    * **Tüm uygulamalar**: Yüklü olanlar ve öne çıkanlar dahil bulunan tüm uygulamaları görmek için gezinti bölmesinde bu sayfayı seçin.  
     * **Uygulama ara**: Uygulamanın gezinti bölmesinde statik bir arama çubuğu durur.  Mevcut uygulamalarınızı bulmak için uygulama adına ve yayımcıya göre arama yapın.  
-    * **Tüm uygulamalar**: Kullanılabilir tüm uygulamaları görüntüleyin, sıralayın ve filtreleyin. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.
-3. Yüklenecek uygulamayı seçin.  
-4. Uygulama ayrıntıları sayfasında **Yükle**'ye tıklayın. Yükleme tamamlandıktan sonra **Yüklendi** durumunu göreceksiniz.
-![Windows 10 için Şirket Portalı uygulaması, uygulama ayrıntıları sayfası.](./media/RS1_AppDetailsPage_Installed_02.png)  
-![Windows 10 için Şirket Portalı uygulaması, uygulama ayrıntıları sayfası, Yüklendi durumunun gösterilmesi.](./media/RS1_AppDetailsPage_Installed_01.png)    
+    * **Tüm uygulamalar**: Kullanılabilir tüm uygulamaları görüntüleyin, sıralayın ve filtreleyin. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
+
+3. Bir uygulama seçin.   
+4. Uygulama ayrıntıları sayfasında **Yükle**'ye tıklayın. Yükleme tamamlandıktan sonra **Yüklendi** durumunu göreceksiniz.  
+
+    ![Windows 10 için Şirket Portalı uygulaması, uygulama seç, Uygulama ayrıntıları sayfası.](./media/RS1_AppDetailsPage_Installed_02.png)  
+    
+    ![Windows 10 için Şirket Portalı uygulaması, uygulama ayrıntıları sayfası, uygulama yüklendikten sonra gösterilen "Yüklendi" durumu. Yükleme düğmesi Yeniden Yükle olarak değişir.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
  Şirketinizin büyüklüğüne bağlı olarak Şirket Portalı'nda indirilebilecek birden fazla Office sürümü görebilirsiniz. Windows cihazları için Office paketi hakkında daha ayrıntılı bilgi için bkz. [Windows cihazınıza Office 365 yükleme](./install-office-windows.md).
 
-## <a name="share-apps-with-others"></a>Uygulamaları başkalarıyla paylaşma
+## <a name="share-apps-with-others"></a>Uygulamaları başkalarıyla paylaşma  
 Uygulamaları iş veya okuldaki tanıdığınız kişilerle paylaşın veya bu kişilere önerin. Aşağıdaki adımlar bir bağlantıyı doğrudan Şirket Portalı'ndan nasıl paylaşabileceğinizi anlatmaktadır.
 
 1. Şirket Portalı'nda, bir uygulamanın [bağlam menüsünü](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) açmak için üzerine sağ tıklayın veya simgeyi basılı tutun.  

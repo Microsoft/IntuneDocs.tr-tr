@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2018
+ms.date: 10/01/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 567a28679b244088af8c943eb483eb4b2b4d88be
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: 723e7584e1aaf22859b293a93ddbead56f6256e7
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403638"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866448"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,111 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. [Yaklaşan değişiklik
 
 -->   
 
+## <a name="week-of-october-1-2018"></a>1 Ekim 2018 haftası
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="user-account-access-of-intune-apps-on-managed-android-and-ios-devices----1248496---"></a>Yönetilen Android ve iOS cihazlarda Intune uygulamalarına kullanıcı hesabı erişimi <!-- 1248496 -->
+Microsoft Intune yöneticisi olarak yönetilen cihazlarda hangi kullanıcı hesaplarının Microsoft Office uygulamalarına eklendiğini denetleyebilirsiniz. Erişimi yalnızca izin verilen kullanıcı hesaplarıyla sınırlayabilecek ve kayıtlı cihazlarda kişisel hesapları engelleyebilirsiniz. 
+
+#### <a name="outlook-mobile-app-configuration-policy---1828527---"></a>Outlook Mobile uygulama yapılandırma ilkesi <!--1828527 -->
+iOS ve Android için bir Outlook Mobile uygulama yapılandırması oluşturabilirsiniz. Ek yapılandırma ayarları, Outlook Mobile uygulaması için etkinleştirildikçe eklenir.
+
+#### <a name="office-365-pro-plus-language-packs----1833450---"></a>Office 365 Pro Plus dil paketleri <!-- 1833450 -->
+Intune yöneticisi olarak, Intune aracılığıyla yönetilen Office 365 Pro Plus uygulamaları için ek dillerin dağıtımını yapabileceksiniz. Kullanılabilir diller listesi, dil paketinin **Tür** bilgisini içerir (çekirdek, kısmı ve yazım denetleme). Azure portalında **Microsoft Intune** > **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçin. **Uygulama ekle** dikey penceresindeki **Uygulama türü** listesinde **Office 365 Paketi** altından **Windows 10**'u seçin. **Uygulama Paketi Ayarları** dikey penceresinde **Diller**'i seçin.
+
+####  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Windows iş kolu (LOB) uygulamaları dosya uzantıları <!-- 1884873 -->
+Windows LOB uygulamaları için dosya uzantıları artık *.msi*, *.appx*, *.appxbundle*, *.msix* ve *.msixbundle*’ı içerecek. Microsoft Intune’da, **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Bölme ekle** bölmesi görüntülenir ve **Uygulama türünü** seçmenize olanak tanır. Windows LOB uygulamaları için uygulama türü olarak **İş kolu uygulamasını** seçin, **Uygulama paketi dosyasını** seçin ve uygun uzantıya sahip bir yükleme dosyası girin.
+
+#### <a name="windows-10-app-deployment-using-intune----2309001---"></a>Intune kullanarak Windows 10 uygulama dağıtımı <!-- 2309001 -->
+Yöneticiler, iş kolu (LOB) uygulamaları ve İş için Microsoft Store uygulamaları için mevcut destekten yararlanarak kuruluşlarındaki uygulamaların çoğunu Intune ile Windows 10 cihazlarındaki son kullanıcılara dağıtabilir. Yöneticiler, Windows 10 kullanıcıları için MSI, Setup.exe veya MSP gibi çeşitli biçimlerdeki uygulamalar ekleyebilir, yükleyebilir ve kaldırabilir. Intune, indirme ve yükleme öncesinde gereksinim kurallarını değerlendirerek, işlemin durumunu veya yeniden başlatma gereğini Windows 10 Eylem Merkezi aracılığıyla son kullanıcılara bildirebilir. Bu işlevsellik, sonuçta, bu iş yükünü Intune'a ve buluta kaydırmak isteyen kuruluşların engellemesini kaldırmış olur. Bu özellik şu anda genel önizleme aşamasındadır ve önümüzdeki birkaç ay içinde özelliğe önemli yeni olanaklar eklemeyi bekliyoruz. 
+
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10---1333668---"></a>Windows 10 çalıştıran cihazlardaki VPN yapılandırma profillerinde DNS son ekleri oluşturma<!-- 1333668 -->
+Bir VPN cihaz yapılandırma profili oluşturduğunuzda (**Cihaz yapılandırması** > **Profiller** > **Profil oluştur** > **Windows 10 ve üzeri** platform > **VPN** profil türü) bazı DNS ayarları girersiniz. Bu güncelleştirme ile Intune'da birden çok **DNS soneki** de girebilirsiniz. DNS son ekleri kullanırken bir ağ kaynağını tam etki alanı adı (FQDN) yerine kısa adını kullanarak arayabilirsiniz. Bu güncelleştirme ayrıca Intune’da DNS son eklerinin sırasını değiştirmenize de imkan verir.
+[Windows 10 VPN ayarları](vpn-settings-windows-10.md#dns-settings) makalesi, geçerli DNS ayarlarını listeler.
+Şunlar için geçerlidir: Windows 10 cihazlar
+
+#### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles----1333705---"></a>Android kurumsal iş profillerinde her zaman açık VPN desteği <!-- 1333705 -->
+Bu güncelleştirmede yönetilen iş profilleri olan Android kurumsal cihazlarda Her Zaman Açık VPN bağlantıları kullanabilirsiniz. Her zaman açık VPN bağlantıları; kullanıcı cihazının kilidini açtığında, cihaz yeniden başlatıldığında veya kablosuz ağ değiştiğinde bağlı kalır veya hemen tekrar bağlanır. Bağlantıyı “kilitli”moduna da alabilirsiniz, böylece VPN bağlantısı etkin olana kadar tüm ağ trafiği engellenir.
+Her Zaman Açık VPN'yi platform için **Cihaz yapılandırması** > **Profiller** > **Profil oluşturma**  >  **Android kurumsal**'da > **Cihaz kısıtlamaları** > **Bağlantı** ayarlarında etkinleştirebilirsiniz.
+
+#### <a name="issue-scep-certificates-to-user-less-devices----1744554---"></a>Kullanıcısız cihazlara SCEP sertifikaları verme <!-- 1744554 -->
+Şu anda sertifikalar kullanıcılara atanmaktadır. Bu güncelleştirme ile bilgi noktaları gibi kullanıcısız olanlar da dahil olmak üzere cihazlara SCEP sertifikaları çıkarılabilir (platform için **Cihaz yapılandırması** > **Profiller** > **Profil oluştur** > **Windows 10 ve üzeri** > profil için **SCEP sertifikası**). Diğer güncelleştirmeler:
+- SCEP profilindeki **Konu** özelliği, artık özel bir metin kutusundadır ve yeni değişkenler içerebilir. 
+- SCEP profilindeki **Konu diğer adı (SAN)** özelliği artık tablo biçimindedir ve yeni değişkenler içerebilir. Yöneticiler tabloda bir öznitelik ekleyebilir ve değeri özel bir metin kutusunda doldurabilir. SAN, aşağıdaki öznitelikleri destekleyecek: 
+  - DNS
+  - E-posta adresi
+  - UPN
+
+  Bu yeni değişkenler, özel bir değer metin kutusunda statik metin ile eklenebilir. Örneğin DNS özniteliği `DNS = {{AzureADDeviceId}}.domain.com` olarak eklenebilir.
+
+  > [!NOTE]
+  > Küme ayraçları, noktalı virgül ve düz çizgi işareti “ { } ; | ” SAN statik metninde kullanılmaz. Küme ayraçları, `Subject` veya `Subject alternative name` olarak kabul edilmek için yalnızca yeni cihaz sertifika değişkenlerinden birini kapatmalıdır. 
+
+Yeni cihaz sertifika değişkenleri:  
+
+```
+"{{AAD_Device_ID}}",
+"{{Device_Serial}}",
+"{{Device_IMEI}}",
+"{{SerialNumber}}",
+"{{IMEINumber}}",
+"{{AzureADDeviceId}}",
+"{{WiFiMacAddress}}",
+"{{IMEI}}",
+"{{DeviceName}}",
+"{{FullyQualifiedDomainName}}",
+"{{MEID}}",
+```
+
+> [!NOTE]
+>  - `{{FullyQualifiedDomainName}}` yalnızca Windows ve etki alanına katılmış cihazlarda kullanılır. 
+>  -  Bir cihaz sertifikası için konu veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri belirtirken cihaza erişimi olan biri tarafından kandırma amaçlı olarak farklı özellikler verilebileceğine dikkat edin. 
+
+[Bir SCEP sertifika profili oluşturma](certificates-scep-configure.md#create-a-scep-certificate-profile) makalesi, bir SCEP yapılandırma profili oluştururken geçerli değişkenleri listeler. 
+
+Şunlar için geçerlidir: Windows 10 ve üzeri ve iOS, Wi-Fi desteklenir
+
+#### <a name="remotely-lock-uncompliant-devices----2064495---"></a>Uyumsuz cihazları uzaktan kilitleme <!-- 2064495 -->
+Cihazın uyumlu olmadığı durumlarda, uyumluluk ilkesinde cihazı uzaktan kilitleyen bir eylem oluşturabilirsiniz. Intune > **Cihaz uyumluluğu**'nda yeni bir ilke oluşturun veya mevcut bir ilkeyi > **Özellikler**'i seçin. **Uyumsuzluğa yönelik eylemler** > **Ekle**’yi ve cihazı uzaktan kilitlemeyi seçin.
+Şu platformlarda desteklenir: 
+- Android
+- iOS
+- Mac OS
+- Windows 10 Mobile 
+- Windows Phone 8.1 ve üzeri 
+
+#### <a name="windows-10-and-later-kiosk-profile-improvements-in-the-azure-portal----2748224---"></a>Azure portalında Windows 10 ve üzeri Bilgi Noktası geliştirmeleri <!-- 2748224 -->
+Bu güncelleştirmede Windows 10 Bilgi Noktası cihaz yapılandırma profilinde (platform için **Cihaz yapılandırması** > **Profiller** > **Profil oluştur** > **Windows 10 ve üzeri**, profil türü için > **Bilgi noktası önizlemesi**) yapılan aşağıdaki iyileştirmeler bulunur: 
+- Şu anda aynı cihazda birden fazla bilgi noktası profili oluşturabiliyorsunuz. Bu güncelleştirme ile Intune, cihaz başına yalnızca bir bilgi noktası profilini destekleyecek. Tek bir cihazda birden fazla bilgi noktası profiline ihtiyacınız varsa bir Özel URI kullanabilirsiniz.
+- **Çok uygulamalı bilgi noktası** profilinde, uygulama kılavuzundaki **Başlangıç menüsü düzeni** için uygulama kutucuğu boyutunu ve sırasını seçebilirsiniz. Daha fazla özelleştirme isterseniz bir XML dosyasını karşıya yükleyebilirsiniz.
+- Bilgi Noktası Tarayıcısı ayarları, **Bilgi Noktası** ayarlarına taşınıyor. Şu anda **Bilgi Noktası web tarayıcısı** ayarlarının Azure portalında kendi kategorisi var.
+Şunlar için geçerlidir: Windows 10 ve üzeri
+
+
+
+
+### <a name="device-enrollment"></a>Cihaz kaydı
+
+#### <a name="apply-autopilot-profile-to-enrolled-win-10-devices-not-already-registered-for-autopilot----1558983---"></a>Autopilot’a kayıtlı olmayan kayıtlı Win 10 cihazlara Autopilot profili uygulama <!-- 1558983 -->
+Kayıtlı olduğu halde Autopilot’a kayıtlı olmayan Win 10 cihazlara Autopilot profili uygulayabilirsiniz. Autopilot profilinde **Hedeflenen tüm cihazları Autopilot’a dönüştür** seçeneğini belirterek Autopilot olmayan cihazları Autopilot dağıtım hizmetine otomatik olarak kaydedin. Kaydın işlenmesi için 48 saat kadar bekleyin. Cihazın kaydı kaldırıldığında ve cihaz sıfırlandığında Autopilot, cihazı sağlar.
+
+#### <a name="create-and-assign-multiple-enrollment-status--page-profiles-to-azure-ad-groups----2526564---"></a>Azure AD gruplarına birden fazla Kayıt Durumu Sayfası profili oluşturma ve atama <!-- 2526564 -->
+Artık Azure ADD grupları için birden fazla Kayıt Durumu Sayfası profili [oluşturup atayabilirsiniz](windows-enrollment-status.md).
+
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="restricts-apps-and-block-access-to-company-resources-on-android-devices----2451462----"></a>Android cihazlarda uygulamaları kısıtlar ve şirket kaynaklarına erişimi engeller <!-- 2451462  -->  
+**Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **Android** > **Sistem Güvenliği**'nde *Cihaz Güvenliği* bölümünde **Kısıtlı uygulamalar** adlı yeni bir ayar vardır. **Kısıtlı uygulamalar** ayarı, üzerinde belirli uygulamalar yüklü olduğunda cihazın şirket kaynaklarına erişimini engelleyecek bir uyumluluk ilkesi kullanır. Cihaz, kısıtlı uygulamalar kaldırılana kadar uyumsuz sayılır.
+Şunun için geçerlidir: 
+- Android
+
+
+
+
 ## <a name="week-of-september-24-2018"></a>24 Eylül 2018 haftası
 
 ### <a name="microsoft-365-device-management-administration-center----3078424---"></a>Microsoft 365 Cihaz Yönetimi yönetim merkezi <!-- 3078424 -->
@@ -49,6 +154,17 @@ Microsoft 365'in vadettiği en önemli şeylerden biri basitleştirilmiş yönet
 
 ### <a name="support-for-more-third-party-certification-authorities-ca----3093107---"></a>Daha çok sayıda sertifika yetkilisine (CA) destek <!-- 3093107 -->
 Basit Sertifika Kayıt Protokolü'nü (SCEP) kullanarak artık Windows, iOS, Android ve macOS kullanan mobil cihazlarda yeni sertifika verebilir ve mevcut sertifikaları yenileyebilirsiniz.
+
+### <a name="intune-moves-to-support-ios-10-and-later----2454656---"></a>Intune, iOS 10 ve üzeri sürümleri desteklemeye geçiyor <!-- 2454656 -->  
+Intune kaydı, Şirket Portalı ve yönetilen tarayıcı artık yalnızca iOS 10 ve üzerini çalıştıran iOS cihazları desteklemektedir. Kuruluşunuzda bundan etkilenen cihaz veya kullanıcıları denetlemek için Azure portalında Intune > **Cihazlar** > **Tüm cihazlar**'a gidin. İşletim sistemine göre filtreleyin, sonra işletim sistemi sürümü ayrıntılarının çıkması için **Sütunlar**'a tıklayın. Bu kullanıcılardan cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmelerini isteyin.  
+
+Aşağıda listelenen cihazlardan birine sahipseniz veya bunlardan birini kaydetmek istiyorsanız, bunların yalnızca iOS 9 ve öncesini desteklediğini bilmelisiniz.  Intune Şirket Portalı'na erişmeye devam etmek için bu cihazları iOS 10 ve üzerini destekleyen cihazlara yükseltmeniz gerekir:  
+
+* iPhone 4S 
+* iPod Touch  
+* iPad 2 
+* iPad (3. Nesil) 
+* iPad Mini (1. Nesil)  
 
 ## <a name="week-of-september-17-2018"></a>17 Eylül 2018 haftası
 
@@ -94,11 +210,11 @@ Bu özellik şu platformlarda geçerlidir:
 - Windows 10 ve üzeri
 - Windows 10 Holographic for Business
 
-#### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858-eeready---"></a>iOS’ta VPN profilleri için Zscaler bağlantısı kullanılabilir <!-- 1769858 eeready -->
+#### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858---"></a>iOS’ta VPN profilleri için Zscaler bağlantısı kullanılabilir <!-- 1769858 -->
 Bir iOS VPN cihaz yapılandırma profili oluşturduğunuzda (**Cihaz yapılandırması** > **Profiller** > **Profil oluştur** > **iOS** platform > **VPN** profil türü) Cisco, Citrix vb. gibi birkaç bağlantı türü vardır. Bu güncelleştirme ile Zscaler da bir bağlantı türü olarak eklendi. 
 [iOS çalıştıran cihazlar için VPN ayarları](vpn-settings-ios.md), kullanılabilir bağlantı türlerini listeler.
 
-#### <a name="fips-mode-for-enterprise-wi-fi-profiles-for-windows-10----1879077-eeready---"></a>Windows 10 için Kurumsal Wi-Fi profilleri için FIPS modu <!-- 1879077 eeready -->
+#### <a name="fips-mode-for-enterprise-wi-fi-profiles-for-windows-10----1879077---"></a>Windows 10 için Kurumsal Wi-Fi profilleri için FIPS modu <!-- 1879077 -->
 Intune Azure portalında Windows 10 için Kurumsal Wi-Fi profilleri için artık Federal Bilgi İşleme Standardı (FIPS) modunu etkinleştirebilirsiniz. FIPS modunu Wi-Fi profillerinizde etkinleştirirseniz Wi-Fi altyapınızda etkinleştirmeyi de unutmayın.
 [Intune’da Windows 10 ve üzeri cihazlar için Wi-Fi ayarları](wi-fi-settings-windows.md) makalesi, bir Wi-Fi profilini nasıl oluşturacağınızı gösterir.
 
@@ -203,7 +319,7 @@ Gelişmiş jailbreak algılama ayarı durumları, artık yönetici konsolundaki 
 
 ### <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
 
-#### <a name="scope-tags-for-policies---1081974-eeready--"></a>İlkeler için kapsam etiketleri <!--1081974 eeready-->
+#### <a name="scope-tags-for-policies---1081974---"></a>İlkeler için kapsam etiketleri <!--1081974 -->
 Intune kaynaklarına erişimi sınırlamak için [kapsam etiketleri oluşturabilirsiniz](scope-tags.md). Bir rol atamasına kapsam etiketi ekleyin ve daha sonra kapsam etiketini bir yapılandırma profiline ekleyin. Rolün yalnızca eşleşen kapsam etiketlerine sahip yapılandırma profillerine erişimi olacaktır.
 
 ## <a name="week-of-august-14-2018"></a>14 Ağustos 2018 Haftası
@@ -259,7 +375,7 @@ Profili oluşturmak için **Cihaz Yapılandırması** > **Profiller** > **Profil
 
 Windows 10 ve üzeri için geçerlidir.
 
-#### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998-eeready---"></a>Bilgi noktası - eski seçenek gri renkte ve değiştirilemez <!-- 2149998 eeready -->
+#### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998---"></a>Bilgi noktası - eski seçenek gri renkte ve değiştirilemez <!-- 2149998 -->
 [Bilgi noktası özelliği](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Cihaz Yapılandırması** > **Profiller** > **Profil oluştur** > **Windows 10 ve üzeri** > **Cihaz kısıtlamaları**) artık kullanılmıyor ve [Windows 10 ve üzeri için bilgi noktası ayarları](kiosk-settings.md) ile değiştirildi. Bu güncelleştirmeyle **Bilgi Noktası - Eski** özelliği gri gösterilir ve kullanıcı arabirimi değiştirilemez veya güncelleştirilemez. 
 
 Bilgi noktası modunu etkinleştirmek için bkz. [Windows 10 ve üzeri için bilgi noktası ayarları](kiosk-settings.md).
@@ -447,7 +563,7 @@ Intune artık bilgi noktası profilinde daha iyi bir yapılandırma sağlamak am
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
-#### <a name="support-for-palo-alto-networks-globalprotect-vpn-profiles----1333680-eeready----"></a>Palo Alto Networks GlobalProtect VPN profilleri için destek <!-- 1333680 eeready ! -->
+#### <a name="support-for-palo-alto-networks-globalprotect-vpn-profiles----1333680----"></a>Palo Alto Networks GlobalProtect VPN profilleri için destek <!-- 1333680 ! -->
 Bu güncelleştirme ile Intune’da VPN profilleri için VPN bağlantısı olarak Palo Alto Networks GlobalProtect’i seçebilirsiniz (**Cihaz yapılandırması** > **Profiller** > **Profil oluştur** > **Profil türü** > **VPN**). Bu sürümde aşağıdaki platformlar desteklenir: 
 
 - iOS
@@ -471,7 +587,7 @@ Bu güncelleştirmeyle birlikte kullanıcı grafiği geri geldi ve Azure portal�
 #### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>Kullanıcı kimlik doğrulaması olmadan Windows Autopilot kaydı desteği <!-- 1165118 wnready -->
 Intune şimdi kullanıcı kimlik doğrulaması olmadan Windows Autopilot kaydını destekliyor. Bu, Windows Autopilot dağıtım profilinde "Autopilot Dağıtım modu" değerinin "Kendi Kendine Dağıtım" olduğu yeni bir seçenektir.  Bu kayıt türünü başarıyla tamamlamak için cihaz, Windows 10 Insider Preview Derleme 17672 veya üzeri çalıştırmalı ve TPM 2.0 yongasına sahip olmalıdır. Kullanıcı kimlik doğrulaması gerekmediğinden, bu seçeneği yalnızca üzerinde fiziksel denetim sahibi olduğunuz cihazlara atamalısınız.
 
-#### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766-eeready---"></a>Autopilot için OOBE yapılandırırken yeni dil / bölge ayarı <!-- 1821766 eeready -->
+#### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>Autopilot için OOBE yapılandırırken yeni dil / bölge ayarı <!-- 1821766 -->
 Autopilot profilleri için İlk Çalıştırma Deneyimi sırasında dili ve bölgeyi ayarlamak için yeni bir yapılandırma ayarı kullanılabilir. Yeni ayarı görmek için, **Cihaz kaydı** > **Windows kaydı** > **Dağıtım profilleri** > **Profil oluştur** > **Dağıtım modu** = **Kendi kendine dağıtım** > **Varsayılanlar yapılandırıldı** öğesini seçin.
 
 #### <a name="new-setting-for-configuring-device-keyboard----1821768---"></a>Cihaz klavyesini yapılandırmak için yeni ayar <!-- 1821768 -->
@@ -490,7 +606,7 @@ Uygulandığı öğe: Android cihazlar 6.0 ve üzeri, güncelleştirilmiş Şirk
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Windows 10 Enterprise RS4 Autopilot cihazlarda tüketici uygulamaları ve deneyimlerini engelleme<!-- 1621980 -->
 Windows 10 Enterprise RS4 AutoPilot cihazlarınızda tüketici uygulama ve deneyimlerinin yüklenmesini önleyebileceksiniz. Bu özelliği görmek için **Intune** > **Cihaz yapılandırması** > **Profiller** > **Profil oluştur** > **Platform** = **Windows 10 veya üzeri** > **Profil türü** = **Cihaz kısıtlamaları** > **Yapılandır** > **Windows Spot** > **Tüketici özellikleri**'ne gidin. 
 
-#### <a name="uninstall-the-latest-from-windows-10-software-updates----1732948-eeready---"></a>En son Windows 10 yazılım güncelleştirmesini kaldırma <!-- 1732948 eeready -->
+#### <a name="uninstall-the-latest-from-windows-10-software-updates----1732948---"></a>En son Windows 10 yazılım güncelleştirmesini kaldırma <!-- 1732948 -->
 Windows 10 makinelerinizde çalışmanın kesilmesine neden olan bir sorun keşfederseniz, en son özellik güncelleştirmesini veya en son kalite güncelleştirmesini kaldırmayı (geri almayı) seçebilirsiniz. Özellik veya kalite güncelleştirmesini kaldırma işlemi yalnızca hizmetin içinde açıldığı hizmet kanalında kullanılabilir. Kaldırma işlemi Windows 10 makinelerinizde önceki güncelleştirmeyi geri yüklemeye yönelik bir ilkeyi tetikler. Özellik güncelleştirmeleri için, en son sürümü kaldırma işleminin uygulanabilme süresini 2-60 gün arasıyla sınırlandırabilirsiniz. Yazılım güncelleştirmesini kaldırma seçeneklerini ayarlamak için, Azure portalının içindeki **Microsoft Intune** dikey penceresinden **Yazılım güncelleştirmeleri**'ni seçin. Ardından, **Yazılım güncelleştirmeleri** dikey penceresinden **Windows 10 Güncelleştirme Kademeleri**'ni seçin. Daha sonra da **Genel Bakış** bölümünde **Kaldır** seçeneğini belirtebilirsiniz.
 
 #### <a name="search-all-devices-for-imei-and-serial-number----1793685---"></a>IMEI ve seri numarası için tüm cihazlarda arama yapma <!-- 1793685 -->
@@ -570,7 +686,7 @@ Son kullanıcı gerekli bir uygulamayı kaldırırsa Intune, 7 günlük yeniden 
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
-####  <a name="device-profile-chart-and-status-list-show-all-devices-in-a-group----1449153-eeready---"></a>Cihaz profil grafiği ve durum listesi bir gruptaki tüm cihazları gösterir <!-- 1449153 eeready -->
+####  <a name="device-profile-chart-and-status-list-show-all-devices-in-a-group----1449153---"></a>Cihaz profil grafiği ve durum listesi bir gruptaki tüm cihazları gösterir <!-- 1449153 -->
 Bir cihaz profili yapılandırdığınızda (**Cihaz yapılandırması** > **Profiller**), iOS gibi bir cihaz profili seçersiniz. Bu profili, iOS ve iOS olmayan cihazlar barındıran bir gruba atarsınız. Grafikteki sayı, profilin uygulandığı iOS *ve* iOS olmayan cihazları gösterir (**Cihaz yapılandırması** > **Profiller** > mevcut bir profili seçin > **Genel bakış**). **Genel bakış** sekmesinde grafiği seçtiğinizde, **Cihaz durumu** yalnızca gruptaki iOS cihazları değil, tüm cihazları listeler. 
 
 Bu güncelleştirme ile grafik (**Cihaz yapılandırması** > **Profiller** > mevcut bir profili seçin > **Genel bakış**) yalnızca belirli bir cihaz profili sayısını gösterir. Örneğin yapılandırma cihaz profili iOS cihazlarda geçerliyse grafik yalnızca iOS cihaz sayısını gösterecek. Grafik seçilip **Cihaz durumu** açıldığında yalnızca iOS cihazlar listelenecek.
@@ -620,7 +736,7 @@ Credential Guard yapılandırılırken aşağıdaki bağımlı teknolojiler otom
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>SCEP sertifikasında özel bir konu adı kullanma <!-- 2064190 -->
 Bir SCEP sertifika profilinde özel bir konuda **OnPremisesSamAccountName** ortak adını kullanabilirsiniz. Örneğin `CN={OnPremisesSamAccountName})` kullanabilirsiniz.
 
-####  <a name="block-camera-and-screen-captures-on-android-for-work----1098977-eeready--"></a>Android for Work’te kamera ve ekran yakalamayı engelleme <!-- 1098977 eeready-->
+####  <a name="block-camera-and-screen-captures-on-android-for-work----1098977---"></a>Android for Work’te kamera ve ekran yakalamayı engelleme <!-- 1098977 -->
 Android cihazlar için cihaz kısıtlamaları yapılandırırken iki yeni engelleme özelliği kullanılabilir: 
 - Kamera: Cihazdaki tüm kameralara erişimi engeller
 - Ekran yakalama: Ekran yakalamayı ve güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller
@@ -639,7 +755,7 @@ macOS Şirket Portalı kullanarak kaydedilen cihazlar, son kullanıcı Sistem Te
 
 ### <a name="device-management"></a>Cihaz yönetimi
 
-#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----eeready-1629303---"></a>Gelişmiş Tehdit Koruması (ATP) ve Intune tamamen tümleştirilmiştir <!-- EEready 1629303 -->
+#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----1629303---"></a>Gelişmiş Tehdit Koruması (ATP) ve Intune tamamen tümleştirilmiştir <!-- 1629303 -->
 
 [Gelişmiş Tehdit Koruması (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection), Windows 10 cihazların risk düzeyini gösterir. Windows Defender Güvenlik Merkezi'nde (ATP portalı), Microsoft Intune'a bir bağlantı oluşturabilirsiniz. Oluşturulduktan sonra, kabul edilebilir tehdit düzeyini saptamak için bir Intune uyumluluk ilkesi kullanılır. Tehdit düzeyi aşılırsa, Azure Active Directory (AD) koşullu erişim ilkesi kuruluşunuz içindeki farklı uygulamalara erişimi engelleyebilir.
 
@@ -695,7 +811,7 @@ Windows 10 için Intune Şirket Portalı, [Fluent Design System'in gezinti gör�
 
 ## <a name="week-of-april-16-2018"></a>16 Nisan 2018 Haftası
 
-#### <a name="use-cisco-anyconnect-client-for-ios----eeready-1333708---"></a>iOS için Cisco AnyConnect istemcisini kullanma <!-- EEready 1333708 -->
+#### <a name="use-cisco-anyconnect-client-for-ios----1333708---"></a>iOS için Cisco AnyConnect istemcisini kullanma <!-- 1333708 -->
 
 iOS için yeni bir VPN profili oluştururken, şimdi iki seçenek vardır: **Cisco AnyConnect** ve **Cisco Eski AnyConnect**. Cisco AnyConnect profilleri 4.0.7x ve daha yeni sürümleri destekler. Mevcut iOS Cisco AnyConnect VPN profilleri **Cisco Eski AnyConnect** olarak etiketlenir ve Cisco AnyConnect 4.0.5x ve daha eski sürümlerle bugün olduğu gibi çalışmaya devam eder.
 
@@ -835,8 +951,6 @@ Ortamlarınızdaki TLS 1.0 ve 1.1 bağımlılıklarını önceden kaldırmanız�
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Değişiklik Planı: Artık MDM yönetiminiz için Azure’da Intune kullanabilirsiniz <!-- 1227338 -->
 Bir yılı aşkın bir süre önce [Azure’da Intune’un genel önizlemesini](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) duyurup altı ay önce Intune için [yeni yönetici deneyiminin genel kullanılabilirliğini](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) yayımlamıştık. 31 Ağustos 2018 itibarıyla, tek başına Intune kullanan müşteriler için klasik Silverlight konsolunda mobil cihaz yönetimini (MDM) kaldıracağız. Bunun yerine MDM ihtiyaçlarınız için [Azure’da Intune](https://aka.ms/Intune_on_Azure) kullanabilirsiniz. MDM için hala klasik konsolu kullanıyorsanız, lütfen bundan vazgeçin ve Azure üzerinden Intune kullanmaya alışın. Bu değişiklik ile hiçbir son kullanıcı etkisi beklemiyoruz. Klasik bilgisayar yönetimi Silverlight’ta kalacaktır. [Buraya](https://aka.ms/Intune_on_Azure_mdm) tıklayarak bu değişikliğin sizi nasıl etkileyeceği hakkında daha fazla bilgi alabilirsiniz.
-
-## <a name="whats-coming"></a>Yakında
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->
 Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayacağını açıkladı. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS Şirket Portalı uygulamaları kullanan Intune müşterilerini etkiler. [Intune destek web günlüğümüzü](https://aka.ms/compportalats) ayrıntılarla güncelleyeceğiz.

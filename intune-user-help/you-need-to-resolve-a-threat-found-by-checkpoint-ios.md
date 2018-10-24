@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5eba9f6f920b4bf868e26b47e4043babe62a8945
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148040"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828049"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>SandBlast Mobile Protect tarafından bulunan bir tehdidi çözme
 
@@ -37,7 +37,12 @@ Bu makale, Sandblast Mobile Protect tehdit uyarılarını anlamanıza yardımcı
 ## <a name="troubleshoot-virus-or-security-threat"></a>Virüs veya güvenlik tehdidini giderme  
 Bir virüs veya güvenlik tehdidi algılanırsa SandBlast Mobile Protect uygulaması kuruluşunuzun erişim ilkelerine göre hareket eder. Erişim ilkeleri; şirket ağına, uygulamalarına ve e-postasına erişmenizi önleyebilir.  
 
-SandBlast Mobile Protect, kaybettiğiniz erişimi geri kazanmanız için bazı eylemler gerçekleştirmenizi ister. Tehdidi seçin ve uygulamadaki yönergeleri izleyerek bunu çözün.  
+![SEP Mobile uygulaması uyarı iletisi örnek ekran görüntüsü.](./media/skycure-list-of-potential-issues-android.png)  
+SandBlast Mobile Protect, kaybettiğiniz erişimi geri kazanmanız için bazı eylemler gerçekleştirmenizi ister. Tehdidi seçin ve uygulamadaki yönergeleri izleyerek bunu çözün.
+
+Uygulama şirketinizin MDM sağlayıcı ile tümleştirildiği için Şirket Portalı uygulamasında kısıtlı erişim hakkında bir uyarı da görürsünüz. Bu uyarı, virüs veya güvenlik tehdidini düzeltmek için SandBlast Mobile Protect uygulamasını açmanızı söyler.  
+
+  ![Şirket Portalı cihaz sayfasının Sandblast Mobile Protect uyarısını gösteren örnek ekran görüntüsü.](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>Bir uygulama tehdidini giderme  
 
@@ -45,4 +50,4 @@ Cihazınız için tehdit olarak görülen bir uygulama yüklerseniz Sandblast Mo
 
 Bunu çözmek için Sandblast Mobile Protect’teki tehditler listesinden uygulamayı seçin. Daha sonra yönergeleri izleyerek uygulamayı kaldırın.  
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. İletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://go.microsoft.com/fwlink/?linkid=2010980) ulaşabilirsiniz.  

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/4/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,46 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9060c2e573003e480319dba6715cb14a2a13e906
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: ce673ab5206d5024da1cb6822beb523aa155325f
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150015"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863034"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasında bir cihazı yeniden adlandırma
-Bir cihazı diğerlerinden ayırt etmeyi kolaylaştırmak için yeniden adlandırın. Windows için Şirket Portalı uygulaması; bağlı Windows, iOS ve Android cihazları yeniden adlandırmanıza olanak tanır. 
+Bir cihazı diğerlerinden ayırt etmeyi kolaylaştırmak için yeniden adlandırın. Windows için Şirket Portalı uygulaması aşağıdaki türlerde bağlı cihazları yeniden adlandırmanıza olanak tanır:  
+* Windows 10
+* iOS
+* Android  
 
-Bir cihazı yeniden adlandırmak için:
-1. Şirket Portalı uygulamasını açın.
-2. **Cihazlarım** bölümünde, yeniden adlandırmak istediğiniz cihazı seçin.
-3. Sayfanın sağ üst köşesinde **Yeniden adlandır** simgesini seçin. 
-4. Yeni adı girin ve **Yeniden Adlandır**’a tıklayın. Cihaz adı güncelleştirmesini uygulamada hemen görürsünüz. 
+## <a name="rename-device-from-device-details-page"></a>Cihazı **Cihaz ayrıntıları** sayfasında yeniden adlandırma  
+Şirket Portalı’nın **Cihaz ayrıntıları** sayfasından bir cihazı kaldırmak için aşağıdaki adımları tamamlayın. 
+
+1. Şirket Portalı uygulamasını açın ve **Cihazlarım**'a gidin.  
+
+    ![Windows için Şirket Portalı uygulaması Giriş sayfasının, Cihazlarım bölümü vurgulanmış olarak örnek ekran görüntüsü.](./media/1809_CheckAccess_Context_Select_Device.png)  
+2. Yeniden adlandırmak istediğiniz cihazı seçin.
+3. **Cihaz ayrıntıları** sayfasında sağ üst köşeye gidin ve **Yeniden adlandır** kalem simgesini seçin.  
+
+     ![Windows için Şirket Portalı uygulaması Cihaz ayrıntıları sayfasının, Yeniden adlandır kalem simgesi vurgulanmış olarak örnek ekran görüntüsü.](./media/1809_Rename_CPapp_Windows_icon.png) 
+4. Yeni adı girin ve **Yeniden Adlandır**’a tıklayın. Uygulamada cihaz adı hemen güncelleştirilir.  
+
+     ![Windows için Şirket Portalı uygulaması Cihaz ayrıntıları sayfasının, Yeniden adlandır açılan alanı vurgulanmış olarak örnek ekran görüntüsü.](./media/1808_RenameApp_Popup.png)  
+
+## <a name="rename-device-from-device-context-menu"></a>Cihazı bağlam menüsünden yeniden adlandırma  
+Cihazı [bağlam menüsü](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) eylemlerini kullanarak kaldırmak için aşağıdaki adımları tamamlayın.  
+
+1. Şirket Portalı uygulamasının **Giriş** sayfasında **Cihazlarım**’a gidin.
+
+    ![Windows için Şirket Portalı uygulaması Giriş sayfasının, Cihazlarım bölümü vurgulanmış olarak örnek ekran görüntüsü.](./media/1809_CheckAccess_Context_Select_Device.png)  
+2. Bağlam menüsünü açmak için cihaza sağ tıklayın veya cihazı basılı tutun.  
+
+    ![Windows için Şirket Portalı uygulaması Giriş sayfasının örnek ekran görüntüsü. Cihaz bağlam menüsü sayfanın **Cihazlarım** bölümünde görülebilir ve "Yeniden adlandır", "Kaldır" ve "Erişimi denetle" eylemlerini gösterir.](./media/1809_DeviceContextMenu_Windows_CP.png)    
+3. **Yeniden Adlandır**'ı seçin.  
+4. Yeni bir ad yazın ve **Yeniden adlandır**’ı seçin. Uygulamada cihaz adı hemen güncelleştirilir.  
+
+     ![Windows için Şirket Portalı uygulaması Giriş sayfasının örnek ekran görüntüsü. Yeniden adlandır açılan alanı, kullanıcının yeni bir ad yazıp Yeniden Adlandır veya İptal'e tıklayabileceği cihazın üst kısmında görünür.](./media/1808_RenameApp_Popup.png)  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.
+

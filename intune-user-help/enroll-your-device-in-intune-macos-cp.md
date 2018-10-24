@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147726"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260258"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
@@ -80,8 +80,17 @@ OS X El Capitan 10.11 ve sonrasını çalıştıran macOS cihazları kaydetmek i
 
 9. Şirket Portalı’nda ilk göreceğiniz ekran, **oturum açmanızı** ister. Şirket Portalı web sitesinde oturum açarken kullandığınız iş veya okul hesabını kullanın.
 
-10. Şirket Portalı, hesap bilgilerinizi onaylar ve daha sonra **Cihaz Kaydı** ve **Cihaz Uyumluluğu** durumunuzu gösterir. Okul veya iş için macOS cihazınızı güvenlik altına almak adına uygulamanız gereken eylemler, sarı üçgenlerle vurgulanır. Kayda başlamak için **Başla**’ya tıklayın. Bir cihaz kaydettiğinizde [kuruluşunuzun görebilecekleri](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) hakkında bilgi edinin.
+10. Şirket Portalı hesap bilgilerinizi onaylar ve **Cihaz Kaydı** ve **Cihaz Uyumluluğu** durumlarınızı gösterir. Okul veya iş için macOS cihazınızı güvenlik altına almak adına uygulamanız gereken eylemler, sarı üçgenlerle vurgulanır. Kayda başlamak için **Başla**’ya tıklayın. 
 
-11. Bilgisayarınızın oturum açma bilgilerini sağlamanız istenebilir. Cihazınızı yönetime kaydetmek birkaç dakika alabilir. Bu süre boyunca cihazınızda başka şeyler yapabilirsiniz. Şirket Portalı kurulumu tamamlandıktan sonra işiniz bittiğine dair bir ileti alırsınız.  
+11. İstenirse bilgisayarınızın oturum açma bilgilerini yazın.  
+
+Cihazınızı yönetime kaydetmek birkaç dakika alabilir. Bu süre boyunca cihazınızda başka şeyler yapabilirsiniz. Şirket Portalı kurulumu tamamlandıktan sonra işiniz bittiğine dair bir ileti alırsınız.  
+
+## <a name="unverified-profiles"></a>Doğrulanmamış profiller
+MacOS cihazınızda yüklü mobil cihaz yönetimi (MDM) profillerini görüntülediğinizde, bazı profiller bir **Doğrulanmamış** durumu gösterebilir. **Yönetim profili** bir **Doğrulandı** durumu gösterdiği sürece kaygılanmanız gerekmez.  
+
+MDM kanalı bağlantısını tanımlayan yönetim profilidir. Yönetim profili doğrulandığı sürece bu kanal yoluyla makineye teslim edilen profiller yönetim profilinin güvenlik özelliklerini devralır.
+
+Ayrıca, bu diğer profiller bireysel doğrulama gerektirmediğinden bunlar daha hızlı oluşturulur ve cihazlara teslim edilir. 
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://go.microsoft.com/fwlink/?linkid=2010980) ulaşabilirsiniz.  

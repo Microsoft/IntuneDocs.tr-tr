@@ -1,11 +1,11 @@
 ---
-title: Şirket Portalı uygulamasını yükleme ve uygulamada oturum açma | Microsoft Docs
+title: iOS için Şirket Portalı uygulamasını yükleme ve uygulamada oturum açma | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146384"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260207"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Şirket Portalı uygulamasını yükleme ve uygulamada oturum açma
 
-Şirket Portalı, iOS cihazınıza yükleyebileceğiniz ve şirketinizin veya okulunuzun uygulamalarına, e-postasına ve ağına erişmenizi sağlayacak bir uygulamadır. Erişim sağlayabilmek için önce Şirket Portalı uygulamasını yüklemeli ve sonra da uygulamayı kullanarak cihazınızı Microsoft Intune’a kaydetmelisiniz. Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yüklediğinizde ve cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+İş ve okul uygulamalarınıza, e-postanıza ve ağınıza erişim sağlamak için, iOS cihazınıza Şirket Portalı uygulamasını yükleyin. Cihazınızı Microsoft Intune’a kaydetmek, iş veya okulunuzun kaynaklarına erişimini güvenli hale getirmek için uygulamayı kullanın. Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yüklediğinizde ve cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 1.  **App Store**’u açın ve **intune şirket portalı** için arama yapın.
 
