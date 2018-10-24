@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e37a45122ab4950e2a85cc1c6f6696759d429a3f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652147"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>Microsoft Intune için erken sürüm - Ekim 2018
 
@@ -44,9 +44,6 @@ Bu sayfa düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha 
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Microsoft tarafından önerilen Güvenlik Taban Çizgili ayarları kullanma <!-- 2055484 -->
 Intune, Windows Defender ATP ve Office 365 ATP dahil güvenliğe odaklı diğer hizmetlerle tümleşir. Müşteriler, Microsoft 365 hizmetleri çapında ortak bir strateji ve birbiriyle bütünleşen bir dizi uçtan uca güvenlik iş akışı istiyor. Amacımız, stratejileri birbiriyle uyumlu hale getirmek ve güvenlik işlemleri ve sık kullanılan yönetici görevleri arasında bir köprü oluşturan çözümler geliştirmek. Intune olarak bu amaca Microsoft tarafından önerilen bir dizi "Güvenlik taban çizgisini" (**Intune** > **Güvenlik taban çizgileri**) yayımlayarak ulaşmayı hedefliyoruz.  Yöneticiler, doğrudan bu taban çizgilerinden güvenlik ilkeleri oluşturabilecek ve sonra bunları kullanıcılarına dağıtabilecekler. Ayrıca en iyi yöntem olan önerileri kuruluşlarının ihtiyaçlarını karşılayacak şekilde özelleştirebilirler. Intune, cihazların bu taban çizgilerle uyumlu kalmasını sağlar ve yöneticilere uyumlu olmayan kullanıcıları ve cihazları bildirir.
 
-### <a name="remove-ability-for-admins-to-wipe-personal-devices-and-reset-passcodes----2934699---"></a>Yöneticilerin kişisel cihazları silme ve geçiş kodlarını sıfırlama olanağını kaldırma <!-- 2934699 -->
-Kullanıcıların şirket yöneticilerinin kişisel cihazlarını silme olanağına sahip olmasından duydukları korkuları ortadan kaldırmak için [silme](devices-wipe.md#wipe) ve [Geçiş kodu sıfırlama](device-passcode-reset.md) uzak eylemleri artık kişisel cihazları için kullanılamayacaktır. Bu eylemleri kuruluşunuza ait cihazlarda etkinleştirmek için cihazın sahiplik türünü kurumsala çevirin.
-
 ### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>Karma Azure Active Directory alanına katılmış cihazlar için Autopilot desteği <!-- 1048100 -->
 Karma Azure Active Directory alanına katılmış cihazları Autopilot'ı kullanarak ayarlamanız mümkün olacaktır. Hibrit Autopilot özelliğini kullanmak için cihazların kuruluşunuzun ağına katılmış olması gerekir.
 
@@ -56,7 +53,7 @@ Bir kapsam etiketi oluşturmak için **Intune rolleri** > **Kapsam (Etiketler)**
 Kapsam etiketini bir rol atamasına eklemek için **Intune rolleri** > **Tüm roller** > **İlke ve Profil Yöneticisi** > **Atamalar** > **Kapsam (Etiketler)**’i seçin.
 Kapsam etiketini bir yapılandırma profiline eklemek için **Cihaz yapılandırması** > **Profiller** > bir profil seçin > **Özellikler** > **Kapsam (Etiketler)**’i seçin.
 
-## <a name="tenant-health-dashboard----1124854---"></a>Kiracı Sistem Durumu panosu <!-- 1124854 -->
+### <a name="tenant-health-dashboard----1124854---"></a>Kiracı Sistem Durumu panosu <!-- 1124854 -->
 Intune Kiracı Durumu sayfası tek bir yerde kiracı durumu bilgileri sağlayacaktır. Sayfa 4 bölüme ayrılmıştır:  
 - **Kiracı Ayrıntıları**: MDM Yetkiliniz, kiracınızdaki toplam kayıtlı cihaz sayısı ve lisans sayınız gibi bilgileri içerir. Bu bölüm, kiracınız için geçerli hizmet sürümünü de sağlanır.
 - **Bağlayıcı Durumu**: Apple VPP, İş için Windows Store ve Sertifika bağlayıcıları gibi yapılandırılmış bağlayıcıların bilgilerini içerir. Bunların geçerli durumu temel alındığında bağlayıcılar *Sağlıklı*, *Uyarı* veya *Sağlıksız* olarak işaretlenir.
