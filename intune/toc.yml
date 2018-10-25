@@ -627,41 +627,6 @@ items:
     href: manage-os-versions.md
   - name: Yazılım güncelleştirmelerini yönetme
     href: windows-update-for-business-configure.md
-  - name: Yazılım aracısıyla bilgisayarları yönetme
-    href: manage-windows-pcs-with-microsoft-intune.md
-    items:
-    - name: Bilgisayar yönetimini karşılaştırma
-      href: pc-management-comparison.md
-    - name: Bilgisayar istemcisini yükleme
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Genel bilgisayar yönetim görevleri
-      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
-      items:
-      - name: Bilgisayar ilkeleri
-        href: use-policies-to-simplify-windows-pc-management.md
-      - name: Envanteri görüntüleme
-        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
-      - name: Bilgisayarları devre dışı bırakma
-        href: retire-a-windows-pc-with-microsoft-intune.md
-      - name: Bilgisayarları kullanıcılara bağlama
-        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-      - name: Uzaktan yardım
-        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
-    - name: Windows bilgisayarları koruma ilkeleri
-      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
-      items:
-      - name: Yazılım güncelleştirmeleri
-        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-      - name: Windows Güvenlik Duvarı
-        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-      - name: Uç Nokta Koruma
-        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
-    - name: Intune istemci bilgisayarları için uygulama ekleme
-      href: add-apps-for-windows-pcs-in-microsoft-intune.md
-    - name: Lisans anlaşmalarını yönetme
-      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
-    - name: İlke çakışmalarını çözme
-      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Windows Holographic’i Yönetme
     href: windows-holographic-for-business.md
     items:
@@ -704,18 +669,18 @@ items:
           href: android-pulse-secure-per-app-vpn.md
         - name: Samsung KNOX Standard için uygulamalara izin verme veya uygulamaları engelleme
           href: samsung-knox-apps-allow-block.md
+      - name: Android Kurumsal
+        href: custom-settings-android-for-work.md
       - name: iOS
         href: custom-settings-ios.md
       - name: Mac OS
         href: custom-settings-macos.md
-      - name: Windows Phone 8.1
-        href: custom-settings-windows-phone-8-1.md
       - name: Windows 10
         href: custom-settings-windows-10.md
       - name: Windows 10 Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android Kurumsal
-        href: custom-settings-android-for-work.md
+      - name: Windows Phone 8.1
+        href: custom-settings-windows-phone-8-1.md
 - name: Geliştirici kılavuzu
   items:
   - name: Üçüncü taraf sertifika yetkilisi ekleme API'si
@@ -831,11 +796,46 @@ items:
       href: groups-get-started.md
     - name: Eski Intune bilgisayar istemcisi
       href: intune-legacy-pc-client.md
+    - name: Yazılım aracısıyla bilgisayarları yönetme
+      href: manage-windows-pcs-with-microsoft-intune.md
+      items:
+      - name: Bilgisayar yönetimini karşılaştırma
+        href: pc-management-comparison.md
+      - name: Bilgisayar istemcisini yükleme
+        href: install-the-windows-pc-client-with-microsoft-intune.md
+      - name: Genel bilgisayar yönetim görevleri
+        href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+        items:
+        - name: Bilgisayar ilkeleri
+          href: use-policies-to-simplify-windows-pc-management.md
+        - name: Envanteri görüntüleme
+          href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+        - name: Bilgisayarları devre dışı bırakma
+          href: retire-a-windows-pc-with-microsoft-intune.md
+        - name: Bilgisayarları kullanıcılara bağlama
+          href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+        - name: Uzaktan yardım
+          href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+      - name: Windows bilgisayarları koruma ilkeleri
+        href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+        items:
+        - name: Yazılım güncelleştirmeleri
+          href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+        - name: Windows Güvenlik Duvarı
+          href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+        - name: Uç Nokta Koruma
+          href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+      - name: Intune istemci bilgisayarları için uygulama ekleme
+        href: add-apps-for-windows-pcs-in-microsoft-intune.md
+      - name: Lisans anlaşmalarını yönetme
+        href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+      - name: İlke çakışmalarını çözme
+        href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Sözlük
     href: intune-glossary.md
-ms.openlocfilehash: ad9fe7c9c344cbbd244515cb9c2025b46e74eddd
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 809323f7e55e5c1fc010528744e4d0c57273f622
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643085"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983236"
